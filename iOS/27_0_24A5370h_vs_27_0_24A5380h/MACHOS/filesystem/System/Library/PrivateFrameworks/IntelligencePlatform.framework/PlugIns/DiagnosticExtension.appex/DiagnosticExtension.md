@@ -2,5 +2,14 @@
 
 > `/System/Library/PrivateFrameworks/IntelligencePlatform.framework/PlugIns/DiagnosticExtension.appex/DiagnosticExtension`
 
-Sections:
-~ __TEXT.__const : content changed
+### Same-size Content Changes
+
+- `__TEXT.__const`
+
+### Other Changes
+
+```diff
+
+-185.0.0.0.0
++186.0.1.0.0
+```

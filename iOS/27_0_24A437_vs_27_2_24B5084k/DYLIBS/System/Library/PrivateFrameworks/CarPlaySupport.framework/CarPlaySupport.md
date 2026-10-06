@@ -2,102 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/CarPlaySupport.framework/CarPlaySupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x16e988` | `0x17a794` | **`+0xbe0c`** |
+| `__TEXT.__swift5_typeref` | `0xc7f6` | `0xe11a` | **`+0x1924`** |
+| `__AUTH_CONST.__objc_const` | `0x22238` | `0x23558` | **`+0x1320`** |
+| `__TEXT.__const` | `0x3ae4` | `0x3f64` | **`+0x480`** |
+| `__DATA.__data` | `0x40f0` | `0x44b0` | **`+0x3c0`** |
+| `__TEXT.__objc_methlist` | `0xbe04` | `0xc16c` | **`+0x368`** |
+| `__TEXT.__unwind_info` | `0x2f58` | `0x31e0` | **`+0x288`** |
+| `__DATA.__bss` | `0x1860` | `0x1a90` | **`+0x230`** |
+| `__TEXT.__constg_swiftt` | `0x1b80` | `0x1da8` | **`+0x228`** |
+| `__AUTH.__objc_data` | `0x5128` | `0x5348` | **`+0x220`** |
+| `__TEXT.__eh_frame` | `0x208` | `0x3a0` | **`+0x198`** |
+| `__TEXT.__swift5_fieldmd` | `0xf98` | `0x1124` | **`+0x18c`** |
+| `__AUTH.__data` | `0xb78` | `0xcf8` | **`+0x180`** |
+| `__TEXT.__oslogstring` | `0x3395` | `0x3505` | **`+0x170`** |
+| `__DATA_CONST.__objc_selrefs` | `0x71b0` | `0x7318` | **`+0x168`** |
+| `__AUTH_CONST.__const` | `0x1850` | `0x19b0` | **`+0x160`** |
+| `__DATA_CONST.__const` | `0x3a78` | `0x3b78` | **`+0x100`** |
+| `__TEXT.__swift5_reflstr` | `0xbbc` | `0xc9c` | **`+0xe0`** |
+| `__AUTH_CONST.__auth_got` | `0x1088` | `0x1130` | **`+0xa8`** |
+| `__TEXT.__swift5_capture` | `0x2d4` | `0x36c` | **`+0x98`** |
+| `__AUTH_CONST.__cfstring` | `0x1f60` | `0x1ee0` | **`-0x80`** |
+| `__TEXT.__swift5_assocty` | `0x370` | `0x3d0` | **`+0x60`** |
+| `__DATA_CONST.__got` | `0x11f8` | `0x1248` | **`+0x50`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x1c8` | `0x180` | **`-0x48`** |
+| `__TEXT.__cstring` | `0x2937` | `0x2977` | **`+0x40`** |
+| `__DATA_CONST.__objc_protolist` | `0x380` | `0x3a0` | **`+0x20`** |
+| `__DATA_CONST.__objc_arraydata` | `0x130` | `0x118` | **`-0x18`** |
+| `__TEXT.__swift5_types` | `0x114` | `0x128` | **`+0x14`** |
+| `__DATA.__common` | `0x210` | `0x220` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x4f0` | `0x500` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x118` | `0x128` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x308` | `0x318` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0xac` | `0xbc` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0xad0` | `0xac8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -542.7.0.0.0
--  __TEXT.__text: 0x16bc98
--  __TEXT.__objc_methlist: 0xbe04
--  __TEXT.__const: 0x3ae4
--  __TEXT.__cstring: 0x2937
--  __TEXT.__oslogstring: 0x3395
 +552.3.0.0.0
-+  __TEXT.__text: 0x17771c
-+  __TEXT.__objc_methlist: 0xc16c
-+  __TEXT.__const: 0x3f64
-+  __TEXT.__cstring: 0x2977
-+  __TEXT.__oslogstring: 0x3505
-   __TEXT.__gcc_except_tab: 0x3280
-   __TEXT.__ustring: 0x4
--  __TEXT.__constg_swiftt: 0x1b80
--  __TEXT.__swift5_typeref: 0xc7f6
--  __TEXT.__swift5_reflstr: 0xbbc
--  __TEXT.__swift5_fieldmd: 0xf98
-+  __TEXT.__constg_swiftt: 0x1da8
-+  __TEXT.__swift5_typeref: 0xe11a
-+  __TEXT.__swift5_reflstr: 0xc9c
-+  __TEXT.__swift5_fieldmd: 0x1124
-   __TEXT.__swift5_builtin: 0x64
--  __TEXT.__swift5_assocty: 0x370
--  __TEXT.__swift5_capture: 0x2d4
--  __TEXT.__swift5_proto: 0xac
--  __TEXT.__swift5_types: 0x114
--  __TEXT.__unwind_info: 0x4ea0
--  __TEXT.__eh_frame: 0x208
-+  __TEXT.__swift5_assocty: 0x3d0
-+  __TEXT.__swift5_capture: 0x36c
-+  __TEXT.__swift5_proto: 0xbc
-+  __TEXT.__swift5_types: 0x128
-+  __TEXT.__unwind_info: 0x5240
-+  __TEXT.__eh_frame: 0x3a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3a78
--  __DATA_CONST.__objc_classlist: 0x4f0
-+  __DATA_CONST.__const: 0x3b78
-+  __DATA_CONST.__objc_classlist: 0x500
-   __DATA_CONST.__objc_catlist: 0xb0
--  __DATA_CONST.__objc_protolist: 0x380
-+  __DATA_CONST.__objc_protolist: 0x3a0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x71b0
--  __DATA_CONST.__objc_protorefs: 0x118
--  __DATA_CONST.__objc_superrefs: 0x308
--  __DATA_CONST.__objc_arraydata: 0x130
--  __DATA_CONST.__got: 0x11f8
--  __AUTH_CONST.__const: 0x1850
--  __AUTH_CONST.__cfstring: 0x1f60
--  __AUTH_CONST.__objc_const: 0x22238
-+  __DATA_CONST.__objc_selrefs: 0x7318
-+  __DATA_CONST.__objc_protorefs: 0x128
-+  __DATA_CONST.__objc_superrefs: 0x318
-+  __DATA_CONST.__objc_arraydata: 0x118
-+  __DATA_CONST.__got: 0x1248
-+  __AUTH_CONST.__const: 0x19b0
-+  __AUTH_CONST.__cfstring: 0x1ee0
-+  __AUTH_CONST.__objc_const: 0x23558
-   __AUTH_CONST.__objc_intobj: 0x1e0
--  __AUTH_CONST.__objc_arrayobj: 0x1c8
-+  __AUTH_CONST.__objc_arrayobj: 0x180
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x1088
--  __AUTH.__objc_data: 0x5128
--  __AUTH.__data: 0xb78
--  __DATA.__objc_ivar: 0xad0
--  __DATA.__data: 0x40f0
--  __DATA.__common: 0x210
-+  __AUTH_CONST.__auth_got: 0x1130
-+  __AUTH.__objc_data: 0x5348
-+  __AUTH.__data: 0xcf8
-+  __DATA.__objc_ivar: 0xac8
-+  __DATA.__data: 0x44b0
-+  __DATA.__common: 0x220
-   - /System/Library/Frameworks/CarPlay.framework/CarPlay
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5993
--  Symbols:   15099
+-  Symbols:   12287
 -  CStrings:  680
 +  Functions: 6340
-+  Symbols:   15715
++  Symbols:   12871
 +  CStrings:  685
- 
 Symbols:
 + -[CPSBaseTemplateViewController _barButtonsDidChange]
 + -[CPSBaseTemplateViewController _nowPlayingAffordance]
@@ -914,55 +870,6 @@ Symbols:
 + _get_witness_table 7SwiftUI19_ConditionalContentVyACyAA08ModifiedD0VyAEyAEyAEyAEyAA6VStackVyAA05TupleD0VyAA6HStackVyAIyACyACyACyAEyAEyAEyAEyAA5ImageVAA18_AspectRatioLayoutVGAA06_FrameL0VGAA24_ForegroundStyleModifierVyAA017HierarchicalShapeO0VGGARGAEyAEy14CarPlaySupport24UIImageViewRepresentable33_3BC8AA0C7504659CCCBAF336D028CCBELLVARGARGGAZGAEyAA6SpacerVARGG_AEyAEyAEyAEyAA4TextVAA022_EnvironmentKeyWritingP0VySiSgGGAA05_FlexmL0VGARGAA08_PaddingL0VGAEyAA0W0PAAE06buttonO0yQrqd__AA06ButtonO0Rd__lFQOyAA6ButtonVyAMG_0stB030CPUISwiftUIButtonConfigurationO012ActionButtonO0VQo_ARGQPGG_AEyAKyAA7ForEachVySayA_25VoiceButtonRepresentationCG10Foundation4UUIDVA_017VoiceActionButtonW0A1_LLVGGA23_GSgQPGGA23_GA23_GA23_GARGA19_GA61_GAGyACyACyAIyAEyAEyAEyA17_A14_yAA13TextAlignmentOGGAA010_FixedSizeL0VGA23_G_A9_QPGAIyA70__AEyAEyA2_A19_GA23_GA9_QPGGACyAIyAEyA8_A19_G_AGyAIyA70__A73_SgQPGGA76_A53_QPGAA05EmptyW0VGGGGAAA25_HPA62_AAA25_HPA61_AAA25_HPA60_AAA25_HPA59_AAA25_HPA58_AAA25_HPA57_AAA25_HPA56_AAA25_HPyHC_A23_AA0wP0HPyHCHC_A23_AAA87_HPyHCHC_A23_AAA87_HPyHCHC_ArAA87_HPyHCHC_A19_AAA87_HPyHCHC_A61_AAA25_HPA60_AAA25_HPA59_AAA25_HPA58_AAA25_HPA57_AAA25_HPA56_AAA25_HPyHC_A23_AAA87_HPyHCHC_A23_AAA87_HPyHCHC_A23_AAA87_HPyHCHC_ArAA87_HPyHCHC_A19_AAA87_HPyHCHCHC_A85_AAA25_HPyHCHC
 + _get_witness_table 7SwiftUI19_ConditionalContentVyACyACyAA4ViewPAAE21scrollEdgeEffectStyle_3forQrAA06ScrollghI0VSg_AA0G0O3SetVtFQOyAeAE11safeAreaBar4edge9alignment7spacing7contentQrAA08VerticalG0O_AA19HorizontalAlignmentV12CoreGraphics7CGFloatVSgqd__yXEtAaDRd__lFQOyAA08ModifiedD0VyAeAEAF_AGQrAJ_ANtFQOyAeAEAopqrSQrAU_AWA_qd__yXEtAaDRd__lFQOyAeAE0F14BounceBehavior_4axesQrAA0K14BounceBehaviorV_AA4AxisOAMVtFQOyA1_yA1_yA1_yA1_yAeAE0F10Indicators_A3_QrAA0K19IndicatorVisibilityV_A8_tFQOyAA0kE0VyACyA1_yA1_yA1_yA1_yA1_yAeAE08progresseI0yQrqd__AA08ProgresseI0Rd__lFQOyAA08ProgressE0VyAA05EmptyE0VA19_G_AA016CircularProgresseI0VQo_AA30_EnvironmentKeyWritingModifierVyAA11ControlSizeOGGAA16_FlexFrameLayoutVGAA14_PaddingLayoutVGA34_GA34_GA1_yAeAE10lineHeightyQr10Foundation16AttributedStringV0W4TextE10LineHeightVSgFQOyA1_yA1_yAA6VStackVyAA7ForEachVySaySi6offset_14CarPlaySupport26PanelSectionRepresentationC7elementtGSiA1_yA1_yA51_012PanelSectionE033_91180E1440FD36223CDAD742B4A5451CLLVA34_GA34_GGGA34_GA34_G_Qo_AA19_BackgroundModifierVyAA14GeometryReaderVyA1_yAA5ColorVAA26_PreferenceWritingModifierVyA51_0D9HeightKeyA57_LLVGGGGGGG_Qo_A67_yA69_yA1_yA71_A73_yA51_0kE9HeightKeyA57_LLVGGGGGAA25_PreferenceActionModifierVyA75_GGA92_yA85_GGA67_yA51_0kE25TouchCancellationModifierA57_LLVGG_Qo__A1_yA1_yA1_yA1_yA1_yAA6HStackVyAA05TupleD0VyA1_yAeAE06buttonI0yQrqd__AA06ButtonI0Rd__lFQOyAA6ButtonVyAA5ImageVG_07CarPlayB030CPUISwiftUIButtonConfigurationO012ActionButtonI0VQo_A34_GSg_ACyA1_yA1_yA1_yAA4TextVA25_ySiSgGGA25_yA122_14TruncationModeOGGA31_GAA6SpacerVGA118_SgQPGGA34_GA34_GA34_GAA12_FrameLayoutVGA31_GSgQo__Qo_AA011_BackgroundI8ModifierVyA71_GG_A1_yA1_yA1_yA51_011PanelButtonoE0A57_LLVA34_GA34_GA31_GQo__Qo_A1_yA150_AA06_InsetE8ModifierVyA155_GGGA19_GA150_GAaDHPA163_AaDHPA162_AaDHPqd__AaDHD2_A157_HO_A161_AaDHPA150_AaDHPqd__AaDHD2_A146_HO_A149_AA0E8ModifierHPyHCHC_A160_AAA165_HPyHCHCHC_A19_AaDHPyHCHC_A150_AaDHPqd__AaDHD2_A146_HO_A149_AAA165_HPyHCHCHC
 + _get_witness_table 7SwiftUI6VStackVyAA15ModifiedContentVyAA4ViewPAAE11buttonStyleyQrqd__AA06ButtonH0Rd__lFQOyAA0I0VyAA012_ConditionalE0VyAEyAEyAEyAEyAA5ImageVAA18_AspectRatioLayoutVGAA08_PaddingN0VGAA06_FrameN0VGAA11_ClipEffectVyAA7CapsuleVGGAEyAEyArWGA1_GGSgG_07CarPlayB030CPUISwiftUIButtonConfigurationO011VoiceActioniH0VQo_AA32_EnvironmentKeyTransformModifierVySbGGGAaFHPyHC
-+ _objc_msgSend$_accessoryButtonForBarButton:
-+ _objc_msgSend$_accessoryButtonForIdentifier:
-+ _objc_msgSend$_accessoryImageForImage:
-+ _objc_msgSend$_applyAdaptiveGlassStylingToButton:
-+ _objc_msgSend$_barButtonsDidChange
-+ _objc_msgSend$_buttonRepresentationForIdentifier:
-+ _objc_msgSend$_collapseBarForEmptyContentAnimated:
-+ _objc_msgSend$_createButtonRepresentationsFromGridButtons:
-+ _objc_msgSend$_findFocusableSubviewsInView:
-+ _objc_msgSend$_navigationBarHasContent
-+ _objc_msgSend$_nowPlayingAccessoryView
-+ _objc_msgSend$_nowPlayingAffordance
-+ _objc_msgSend$_performHideBarAnimated:hidesMapButtons:
-+ _objc_msgSend$_updateAccessoryView
-+ _objc_msgSend$_updateNavigationBarVisibilityAnimated:
-+ _objc_msgSend$accessoryViewIsMiniPlayer
-+ _objc_msgSend$buttonAction
-+ _objc_msgSend$canBecomeFocused
-+ _objc_msgSend$configurationWithFont:scale:
-+ _objc_msgSend$convertRect:toView:
-+ _objc_msgSend$defaultMetrics
-+ _objc_msgSend$destinationTimeZoneOffsetMinutesFromGMT
-+ _objc_msgSend$enabled
-+ _objc_msgSend$focusItemsInRect:
-+ _objc_msgSend$glassBarButtonWithButton:
-+ _objc_msgSend$gridTemplateHostingView
-+ _objc_msgSend$horizontalGroupWithLayoutSize:subitems:
-+ _objc_msgSend$hostingView
-+ _objc_msgSend$imageForState:
-+ _objc_msgSend$initWithArrangedSubviews:
-+ _objc_msgSend$initWithAspectRatio:hasThumbnail:useAlternateStyling:
-+ _objc_msgSend$initWithButtons:delegate:columnSpacing:rowSpacing:
-+ _objc_msgSend$initWithIdentifier:title:image:collapsible:handler:
-+ _objc_msgSend$initWithIdentifier:titleVariants:subtitleVariants:image:isEnabled:isUnread:
-+ _objc_msgSend$initWithReuseIdentifier:
-+ _objc_msgSend$initWithSize:format:
-+ _objc_msgSend$isCollapsible
-+ _objc_msgSend$preferredFormat
-+ _objc_msgSend$scaledValueForValue:
-+ _objc_msgSend$setAccessoryViewIsMiniPlayer:
-+ _objc_msgSend$setAutomaticallyUpdateForSelection:
-+ _objc_msgSend$setCornerStyle:
-+ _objc_msgSend$setGridTemplateHostingView:
-+ _objc_msgSend$setIsEnabled:
-+ _objc_msgSend$setIsRightHandDrive:
-+ _objc_msgSend$setIsUnread:
-+ _objc_msgSend$symbolConfiguration
-+ _objc_msgSend$tappedGridButton:
-+ _objc_msgSend$updateHostingControllerWithButtons:delegate:
 + _swift_dynamicCastMetatype
 + _swift_dynamicCastObjCProtocolConditional
 + _swift_unknownObjectRetain_n
@@ -1378,23 +1285,6 @@ Symbols:
 - _get_witness_table 7SwiftUI19_ConditionalContentVyACyAA08ModifiedD0VyAEyAA6VStackVyAA05TupleD0VyAEyAEyAA6HStackVyAIyACyACyACyAEyAEyAEyAEyAA5ImageVAA18_AspectRatioLayoutVGAA06_FrameL0VGAA24_ForegroundStyleModifierVyAA017HierarchicalShapeO0VGGARGAEyAEy14CarPlaySupport24UIImageViewRepresentable33_3BC8AA0C7504659CCCBAF336D028CCBELLVARGARGGAZGAEyAA6SpacerVARGG_AEyAEyAEyAA4TextVAA022_EnvironmentKeyWritingP0VySiSgGGAA05_FlexmL0VGAA08_PaddingL0VGAEyAA0W0PAAE06buttonO0yQrqd__AA06ButtonO0Rd__lFQOyAA6ButtonVyAMG_0stB030CPUISwiftUIButtonConfigurationO012ActionButtonO0VQo_ARGQPGGA22_GA19_G_AEyAEyAKyAA7ForEachVySayA_25VoiceButtonRepresentationCG10Foundation4UUIDVA_017VoiceActionButtonW0A1_LLVGGARGA22_GSgQPGGARGA19_GA60_GAGyACyACyAIyAEyAEyAEyA17_A14_yAA13TextAlignmentOGGAA010_FixedSizeL0VGA22_G_A9_QPGAIyA69__AEyAEyA2_A19_GA22_GA9_QPGGACyAIyAEyA8_A19_G_AGyAIyA69__A72_SgQPGGA75_AEyA53_A22_GQPGAA05EmptyW0VGGGGAAA24_HPA61_AAA24_HPA60_AAA24_HPA59_AAA24_HPA58_AAA24_HPyHC_ArA0wP0HPyHCHC_A19_AAA87_HPyHCHC_A60_AAA24_HPA59_AAA24_HPA58_AAA24_HPyHC_ArAA87_HPyHCHC_A19_AAA87_HPyHCHCHC_A85_AAA24_HPyHCHC
 - _get_witness_table 7SwiftUI19_ConditionalContentVyACyACyAA4ViewPAAE21scrollEdgeEffectStyle_3forQrAA06ScrollghI0VSg_AA0G0O3SetVtFQOyAeAE11safeAreaBar4edge9alignment7spacing7contentQrAA08VerticalG0O_AA19HorizontalAlignmentV12CoreGraphics7CGFloatVSgqd__yXEtAaDRd__lFQOyAA08ModifiedD0VyAeAEAF_AGQrAJ_ANtFQOyAeAEAopqrSQrAU_AWA_qd__yXEtAaDRd__lFQOyAeAE0F14BounceBehavior_4axesQrAA0K14BounceBehaviorV_AA4AxisOAMVtFQOyA1_yAA0kE0VyACyA1_yA1_yA1_yA1_yA1_yAeAE08progresseI0yQrqd__AA08ProgresseI0Rd__lFQOyAA08ProgressE0VyAA05EmptyE0VA16_G_AA016CircularProgresseI0VQo_AA30_EnvironmentKeyWritingModifierVyAA11ControlSizeOGGAA16_FlexFrameLayoutVGAA14_PaddingLayoutVGA31_GA31_GAeAE10lineHeightyQr10Foundation16AttributedStringV0W4TextE10LineHeightVSgFQOyA1_yAA10LazyVStackVyAA7ForEachVySaySi6offset_14CarPlaySupport26PanelSectionRepresentationC7elementtGSiA1_yA1_yA48_012PanelSectionE033_91180E1440FD36223CDAD742B4A5451CLLVA31_GA31_GGGA31_G_Qo_GGAA19_BackgroundModifierVyA48_0kE25TouchCancellationModifierA54_LLVGG_Qo__A1_yA1_yA1_yA1_yA1_yAA6HStackVyAA05TupleD0VyA1_yAeAE06buttonI0yQrqd__AA06ButtonI0Rd__lFQOyAA6ButtonVyAA5ImageVG_07CarPlayB030CPUISwiftUIButtonConfigurationO012ActionButtonI0VQo_A31_GSg_ACyA1_yA1_yA1_yAA4TextVA22_ySiSgGGA22_yA91_14TruncationModeOGGA28_GAA6SpacerVGA87_SgQPGGA31_GA31_GA31_GAA12_FrameLayoutVGA28_GQo__Qo_AA011_BackgroundI8ModifierVyAA5ColorVGG_A1_yA1_yA1_yA48_011PanelButtonoE0A54_LLVA31_GA31_GA28_GQo__Qo_A1_yA120_AA06_InsetE8ModifierVyA125_GGGA16_GA120_GAaDHPA133_AaDHPA132_AaDHPqd__AaDHD2_A127_HO_A131_AaDHPA120_AaDHPqd__AaDHD2_A114_HO_A119_AA0E8ModifierHPyHCHC_A130_AAA135_HPyHCHCHC_A16_AaDHPyHCHC_A120_AaDHPqd__AaDHD2_A114_HO_A119_AAA135_HPyHCHCHC
 - _get_witness_table 7SwiftUI6VStackVyAA15ModifiedContentVyAA4ViewPAAE11buttonStyleyQrqd__AA06ButtonH0Rd__lFQOyAA0I0VyAA012_ConditionalE0VyAEyAEyAEyAA5ImageVAA18_AspectRatioLayoutVGAA08_PaddingN0VGAA06_FrameN0VGAEyAEyArWGAA11_ClipEffectVyAA7CapsuleVGGGSgG_07CarPlayB030CPUISwiftUIButtonConfigurationO011VoiceActioniH0VQo_AA32_EnvironmentKeyTransformModifierVySbGGGAaFHPyHC
-- _objc_msgSend$_applicationIconImageForBundleIdentifier:format:scale:
-- _objc_msgSend$_launchApp:
-- _objc_msgSend$_setupFakeButtonIfNecessary
-- _objc_msgSend$destinationTimeZoneOffsetFromGMT
-- _objc_msgSend$fakeDashboardButton
-- _objc_msgSend$fakesDashboardSupport
-- _objc_msgSend$finishWithNoResult
-- _objc_msgSend$initWithAspectRatio:hasThumbnail:
-- _objc_msgSend$initWithFrame:gridButtons:
-- _objc_msgSend$initWithIdentifier:title:image:handler:
-- _objc_msgSend$initWithIdentifier:titleVariants:image:isEnabled:
-- _objc_msgSend$initWithTitleVariants:subtitleVariants:image:handler:
-- _objc_msgSend$proxiedApplicationBundleIdentifier
-- _objc_msgSend$setActivePlayback:
-- _objc_msgSend$setFakeDashboardButton:
-- _objc_msgSend$setGridView:
-- _objc_msgSend$setHasSetTripEstimateStyle:
 - _symbolic _____yAAyAAyAAy_____y_____yAAy_____y_____yADyAAyAAy__________y_____SgGG_____G_____yAL_Qo_GAAyAAyAE_____GAKGGSgG_____GG______Qo______GAKG_____ySbGG_____G 7SwiftUI15ModifiedContentV AA4ViewPAAE11buttonStyleyQrqd__AA06ButtonG0Rd__lFQO AA0H0V AA6VStackV AA012_ConditionalD0V AA5ImageV AA30_EnvironmentKeyWritingModifierV AA4FontV AA12_FrameLayoutV AE07CarPlayB0E20cpuiPrimaryTextColor13isHighlighted0Y7EnabledQrSb_SbtFQO AA012_AspectRatioR0V AA08_PaddingR0V AV30CPUISwiftUIButtonConfigurationO012GridTemplatehG0V AA05_FlexqR0V AA01_lm9TransformO0V AA14_OpacityEffectV
 - _symbolic _____yAAyAAy__________ySiSgGG_____G_____G 7SwiftUI15ModifiedContentV AA4TextV AA30_EnvironmentKeyWritingModifierV AA16_FlexFrameLayoutV AA08_PaddingL0V
 - _symbolic _____yAAyAAy_____yAByAByABy__________G_____G_____y_____GGAFGAByABy_____AFGAFGGALGABy_____AFGG_AByAByABy__________ySiSgGG_____G_____GABy_____y_____yACG______Qo_AFGt 7SwiftUI19_ConditionalContentV AA08ModifiedD0V AA5ImageV AA18_AspectRatioLayoutV AA06_FrameI0V AA24_ForegroundStyleModifierV AA017HierarchicalShapeL0V 14CarPlaySupport24UIImageViewRepresentable33_3BC8AA0C7504659CCCBAF336D028CCBELLV AA6SpacerV AA4TextV AA022_EnvironmentKeyWritingM0V AA05_FlexjI0V AA08_PaddingI0V AA0T0PAAE06buttonL0yQrqd__AA06ButtonL0Rd__lFQO AA6ButtonV 0pqB030CPUISwiftUIButtonConfigurationO012ActionButtonL0V

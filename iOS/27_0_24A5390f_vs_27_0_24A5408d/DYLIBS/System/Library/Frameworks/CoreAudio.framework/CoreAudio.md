@@ -2,65 +2,36 @@
 
 > `/System/Library/Frameworks/CoreAudio.framework/CoreAudio`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x54233c` | `0x542b90` | **`+0x854`** |
+| `__TEXT.__cstring` | `0x31be2` | `0x31928` | **`-0x2ba`** |
+| `__TEXT.__gcc_except_tab` | `0x58754` | `0x589e4` | **`+0x290`** |
+| `__TEXT.__realtime` | `0x29120` | `0x291c0` | **`+0xa0`** |
+| `__AUTH_CONST.__cfstring` | `0x4240` | `0x41e0` | **`-0x60`** |
+| `__AUTH_CONST.__const` | `0x34328` | `0x34388` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x19680` | `0x196b8` | **`+0x38`** |
+| `__TEXT.__const` | `0x55ed0` | `0x55ea0` | **`-0x30`** |
+| `__DATA_CONST.__const` | `0x66d8` | `0x66f8` | **`+0x20`** |
+| `__TEXT.__dlopen_cstrs` | `0x6d` | `0x58` | **`-0x15`** |
+| `__TEXT.__oslogstring` | `0x42eec` | `0x42ee0` | **`-0xc`** |
+| `__DATA_CONST.__objc_selrefs` | `0xbc8` | `0xbc0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -481.0.0.0.0
--  __TEXT.__text: 0x54233c
--  __TEXT.__realtime: 0x29120
 +482.102.0.0.0
-+  __TEXT.__text: 0x542b90
-+  __TEXT.__realtime: 0x291c0
-   __TEXT.__delay_stubs: 0x780
-   __TEXT.__delay_helper: 0x148
-   __TEXT.__objc_methlist: 0x175c
--  __TEXT.__const: 0x55ed0
--  __TEXT.__cstring: 0x31be2
--  __TEXT.__dlopen_cstrs: 0x6d
--  __TEXT.__gcc_except_tab: 0x58754
--  __TEXT.__oslogstring: 0x42eec
--  __TEXT.__unwind_info: 0x19680
-+  __TEXT.__const: 0x55ea0
-+  __TEXT.__cstring: 0x31928
-+  __TEXT.__dlopen_cstrs: 0x58
-+  __TEXT.__gcc_except_tab: 0x589e4
-+  __TEXT.__oslogstring: 0x42ee0
-+  __TEXT.__unwind_info: 0x196b8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x66d8
-+  __DATA_CONST.__const: 0x66f8
-   __DATA_CONST.__objc_classlist: 0xc0
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x20
--  __DATA_CONST.__objc_selrefs: 0xbc8
-+  __DATA_CONST.__objc_selrefs: 0xbc0
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__objc_superrefs: 0x88
-   __DATA_CONST.__objc_arraydata: 0x60
-   __DATA_CONST.__got: 0x420
--  __AUTH_CONST.__const: 0x34328
--  __AUTH_CONST.__cfstring: 0x4240
-+  __AUTH_CONST.__const: 0x34388
-+  __AUTH_CONST.__cfstring: 0x41e0
-   __AUTH_CONST.__objc_const: 0x28e8
-   __AUTH_CONST.__weak_auth_got: 0x48
-   __AUTH_CONST.__objc_intobj: 0x18
 
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 19114
--  Symbols:   35418
+-  Symbols:   35132
 -  CStrings:  7066
 +  Functions: 19122
-+  Symbols:   35427
++  Symbols:   35142
 +  CStrings:  7048
- 
 Symbols:
 + GCC_except_table1000
 + GCC_except_table10005
@@ -7192,7 +7163,6 @@ Symbols:
 - __ZTVNSt3__120__shared_ptr_emplaceIyNS_9allocatorIyEEEE
 - __ZZNK8AHAL_DSP8ADM_MOCK11ADMMockDict20debug_summary_stringEPKcENK3$_0clERKNSt3__16vectorINS0_18ADMMockDict_StreamENS5_9allocatorIS7_EEEE
 - __ZZNK8AHAL_DSP8ADM_MOCK11ADMMockDict34debug_device_configurations_stringEvENK3$_0clERKNSt3__16vectorINS0_18ADMMockDict_StreamENS3_9allocatorIS5_EEEE
-- _objc_msgSend$handleFailureInFunction:file:lineNumber:description:
 CStrings:
 + " described...\n"
 + " device"

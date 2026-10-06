@@ -2,44 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/_MusicKitInternal_SwiftUI.framework/_MusicKitInternal_SwiftUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x12f710` | `0x12f8bc` | **`+0x1ac`** |
+| `__TEXT.__swift5_typeref` | `0xd148` | `0xd218` | **`+0xd0`** |
+| `__DATA.__bss` | `0x8fe0` | `0x8f60` | **`-0x80`** |
+| `__DATA_DIRTY.__bss` | `0x780` | `0x800` | **`+0x80`** |
+| `__DATA.__data` | `0x5e70` | `0x5e80` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -4026.210.18.1.0
--  __TEXT.__text: 0x122ca4
 +4026.200.22.0.0
-+  __TEXT.__text: 0x122e20
-   __TEXT.__objc_methlist: 0x6a4
-   __TEXT.__const: 0xaf54
-   __TEXT.__constg_swiftt: 0x47a0
--  __TEXT.__swift5_typeref: 0xd148
-+  __TEXT.__swift5_typeref: 0xd218
-   __TEXT.__swift5_fieldmd: 0x2e78
-   __TEXT.__swift5_builtin: 0xc8
-   __TEXT.__swift5_reflstr: 0x42a5
 
-   __AUTH_CONST.__auth_got: 0x2a38
-   __AUTH.__objc_data: 0x210
-   __AUTH.__data: 0x1e60
--  __DATA.__data: 0x5e70
-+  __DATA.__data: 0x5e80
-   __DATA.__common: 0x3d0
-   __DATA_DIRTY.__objc_data: 0x50
-   __DATA_DIRTY.__data: 0x458
--  __DATA_DIRTY.__bss: 0x780
-+  __DATA_DIRTY.__bss: 0x800
-   __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 6663
--  Symbols:   2509
-+  Functions: 6664
-+  Symbols:   2510
-   CStrings:  261
- 
+-  Functions: 6662
+-  Symbols:   2373
++  Functions: 6663
++  Symbols:   2374
 Symbols:
 + _get_witness_table 17_MusicKit_SwiftUI08PickableA4ItemRzl0cD015ModifiedContentVyAC4ViewPACE7toolbar7contentQrqd__yXE_tAC07ToolbarH0Rd__lFQOyAEyAgCE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAEyAEyAEyAC06ScrollI0VyAC012_ConditionalH0VyAC05EmptyI0VAgCE11buttonStyleyQrqd__AC015PrimitiveButtonV0Rd__lFQOyAEyAC10LazyVStackVyAC05TupleH0VyAEyAEyAEyAEyAEyAEyAA01_A6PickerV01_ab9Internal_cD0E19ContainerHeaderCellVy_0aB05AlbumVxGAC31AccessibilityAttachmentModifierVGAC14_PaddingLayoutVGA14_GA14_GAC011_BackgroundV8ModifierVyAC5ColorVGGA2_A3_E20FailureAlertModifier33_4F1D29AA33B482183712D20C1ABD12D6LLVG_A0_yAEyAC7DividerVA14_GSg_AEyAC7ForEachVyA6_0aF10CollectionVyA6_5TrackOGA6_0aF2IDVA0_yAEyAEyAEyAgCE20accessibilityElement8childrenQrAC26AccessibilityChildBehaviorV_tFQOyA2_A3_E14AlbumTrackCellVy_xG_Qo_A11_GA14_GA14_G_AEyA30_AC14_OpacityEffectVGSgQPGGA22_GQPGSgA2_A3_E14ContainerShelfVy_A8_xGSgQPGGAC30_SafeAreaRegionsIgnoringLayoutVG_AC05PlainxV0VQo_GGA2_A3_E22GeometryReaderModifierVGA11_GA2_A3_E013NavigationBarV0Vy_xGG_Qo_AC20_TransactionModifierVG_A2_A3_E04DonelF0Vy_xGQo_A2_A3_E23FirstAppearanceModifier33_887493FF1BAC922533AEE4D53090272ALLVGAcFHPqd0__AcFHD3_A90_HO_A93_AC0I8ModifierHPyHCHC
 + _get_witness_table 25_MusicKitInternal_SwiftUI0A23PickerCellRepresentableRz01_ab1_dE008PickableA4ItemR_r0_l0dE015ModifiedContentVyAE4ViewPAEE20accessibilityElement8childrenQrAE26AccessibilityChildBehaviorV_tFQOyAiEE11hoverEffect_9isEnabledQrqd___SbtAE011CustomHoverU0Rd__lFQOyAE6VStackVyAGyAE6HStackVyAE05TupleL0VyAGyAGyAGyAC01_aF0VAAE07ArtworkM0Vy_xGAE0Q18AttachmentModifierVGAE16_OverlayModifierVyAE017StrokeBorderShapeM0VyAE16RoundedRectangleVAE5ColorVAE05EmptyM0VGGGAE14_PaddingLayoutVG_ARyAVyAGyAE4TextVA1_GSg_AGyAGyAGyAxAE0G5TitleVy_xGAE30_EnvironmentKeyWritingModifierVySiSgGGA27_y12CoreGraphics7CGFloatVGGA1_GAE012_ConditionalL0VyAGyAiEEAjKQrAM_tFQOyATyAE7ForEachVy0aB00aJ10CollectionVyA41_6ArtistVGA41_0aJ2IDVAVyAGyAiEE11buttonStyleyQrqd__AE11ButtonStyleRd__lFQOyAE14NavigationLinkVyA20_s5NeverOG_AxAE25NavigationLinkButtonStyleVQo_AE32_EnvironmentKeyTransformModifierVySbGG_AGyA20_A17_GQPGGG_Qo_A1_GA21_GSgAGyA63_A1_GSgQPGGAE6SpacerVAGyAGyAGyAiEEAN_AOQrqd___SbtAePRd__lFQOyAGyA38_yA38_yA38_yA38_yAGyAGyAE5ImageVA27_yAE4FontVSgGGA27_yA78_5ScaleOGGAGyAGyA87_A27_yA10_SgGGA1_GGA38_yAiEE08progressM5StyleyQrqd__AE08ProgressM5StyleRd__lFQOyAE08ProgressM0VyA12_A12_G_AE016CircularProgressM5StyleVQo_AGyAGyAGyAGyA78_AE24_ForegroundStyleModifierVyAE22HierarchicalShapeStyleVGGA82_GA86_GA89_GGGA12_GAGyAiEEA49_yQrqd__AE20PrimitiveButtonStyleRd__lFQOyAE6ButtonVyA112_G_AE16PlainButtonStyleVQo_A89_GGA1_G_AE09AutomaticyU0VQo_AE12_FrameLayoutVGA17_GA17_GQPGGAE01_L13ShapeModifierVyA8_GGG_A124_Qo__Qo_A1_GAeHHPqd__AeHHD2_A139_HO_A1_AE0M8ModifierHPyHCHC

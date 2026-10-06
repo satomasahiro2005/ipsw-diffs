@@ -2,15 +2,14 @@
 
 > `/usr/libexec/browserkitd`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__eh_frame`
+
+### Other Changes
 
 ```diff
 
 -7625.1.29.10.29
 +7625.1.29.10.33
-   __TEXT.__text: 0xf530
-   __TEXT.__auth_stubs: 0xd70
-   __TEXT.__objc_stubs: 0x720
 ```

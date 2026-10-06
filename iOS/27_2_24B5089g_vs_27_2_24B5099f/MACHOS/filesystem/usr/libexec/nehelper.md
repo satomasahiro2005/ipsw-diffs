@@ -2,71 +2,49 @@
 
 > `/usr/libexec/nehelper`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2588c` | `0x265d4` | **`+0xd48`** |
+| `__TEXT.__oslogstring` | `0x4ac1` | `0x4d0a` | **`+0x249`** |
+| `__DATA_CONST.__const` | `0xcf0` | `0xd90` | **`+0xa0`** |
+| `__TEXT.__gcc_except_tab` | `0x7f8` | `0x894` | **`+0x9c`** |
+| `__TEXT.__cstring` | `0x5ff2` | `0x606f` | **`+0x7d`** |
+| `__TEXT.__objc_methname` | `0x1fc7` | `0x1fed` | **`+0x26`** |
+| `__DATA_CONST.__cfstring` | `0x51c0` | `0x51e0` | **`+0x20`** |
+| `__TEXT.__objc_stubs` | `0x2a80` | `0x2aa0` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x3f0` | `0x410` | **`+0x20`** |
+| `__DATA.__objc_selrefs` | `0xb40` | `0xb48` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_const`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
 -2365.40.1.0.0
--  __TEXT.__text: 0x255b8
 +2365.40.3.0.1
-+  __TEXT.__text: 0x262f4
-   __TEXT.__auth_stubs: 0x10c0
--  __TEXT.__objc_stubs: 0x2a80
-+  __TEXT.__objc_stubs: 0x2aa0
-   __TEXT.__objc_methlist: 0x44c
-   __TEXT.__const: 0x11c
--  __TEXT.__gcc_except_tab: 0x7f8
--  __TEXT.__objc_methname: 0x1fc7
--  __TEXT.__cstring: 0x5ff2
--  __TEXT.__oslogstring: 0x4ac1
-+  __TEXT.__gcc_except_tab: 0x894
-+  __TEXT.__objc_methname: 0x1fed
-+  __TEXT.__cstring: 0x606f
-+  __TEXT.__oslogstring: 0x4d0a
-   __TEXT.__objc_classname: 0x190
-   __TEXT.__objc_methtype: 0x26e
--  __TEXT.__unwind_info: 0x4b8
--  __DATA_CONST.__const: 0xcf0
--  __DATA_CONST.__cfstring: 0x51c0
-+  __TEXT.__unwind_info: 0x4d8
-+  __DATA_CONST.__const: 0xd90
-+  __DATA_CONST.__cfstring: 0x51e0
-   __DATA_CONST.__objc_classlist: 0x80
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   __DATA_CONST.__got: 0x3c0
-   __DATA_CONST.__auth_ptr: 0x8
-   __DATA.__objc_const: 0x1788
--  __DATA.__objc_selrefs: 0xb40
-+  __DATA.__objc_selrefs: 0xb48
-   __DATA.__objc_ivar: 0xdc
-   __DATA.__objc_data: 0x500
-   __DATA.__data: 0xc8
-
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 248
 +  Functions: 254
-   Symbols:   384
+
 -  CStrings:  1707
 +  CStrings:  1725
- 
 CStrings:
 + "%@ sent an app replacement request without both bundle identifiers"
 + "(none)"

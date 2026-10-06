@@ -2,110 +2,68 @@
 
 > `/usr/libexec/wifip2pd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5cf770` | `0x5e0e88` | **`+0x11718`** |
+| `__DATA.__bss` | `0x5d650` | `0x5e250` | **`+0xc00`** |
+| `__DATA_CONST.__const` | `0x390c8` | `0x39ca0` | **`+0xbd8`** |
+| `__TEXT.__oslogstring` | `0x2199c` | `0x2249c` | **`+0xb00`** |
+| `__TEXT.__const` | `0x3f930` | `0x402b0` | **`+0x980`** |
+| `__TEXT.__eh_frame` | `0x1deb8` | `0x1e50c` | **`+0x654`** |
+| `__DATA.__data` | `0x14970` | `0x14fc0` | **`+0x650`** |
+| `__DATA.__objc_const` | `0xa6b8` | `0xac30` | **`+0x578`** |
+| `__TEXT.__swift5_fieldmd` | `0x163fc` | `0x1690c` | **`+0x510`** |
+| `__TEXT.__swift5_reflstr` | `0x14629` | `0x14b39` | **`+0x510`** |
+| `__TEXT.__cstring` | `0xf5d8` | `0xfa24` | **`+0x44c`** |
+| `__TEXT.__constg_swiftt` | `0x10030` | `0x103a0` | **`+0x370`** |
+| `__TEXT.__unwind_info` | `0x10468` | `0x10798` | **`+0x330`** |
+| `__TEXT.__objc_methname` | `0xa085` | `0xa2e5` | **`+0x260`** |
+| `__TEXT.__swift5_typeref` | `0xd067` | `0xd2b3` | **`+0x24c`** |
+| `__TEXT.__swift5_capture` | `0x7e00` | `0x7f4c` | **`+0x14c`** |
+| `__DATA_CONST.__auth_ptr` | `0x7840` | `0x7968` | **`+0x128`** |
+| `__TEXT.__objc_classname` | `0x1007` | `0x10f7` | **`+0xf0`** |
+| `__TEXT.__objc_stubs` | `0x4640` | `0x4720` | **`+0xe0`** |
+| `__TEXT.__swift5_assocty` | `0x2cb8` | `0x2d78` | **`+0xc0`** |
+| `__DATA.__objc_data` | `0x1898` | `0x1920` | **`+0x88`** |
+| `__TEXT.__auth_stubs` | `0x51e0` | `0x5250` | **`+0x70`** |
+| `__TEXT.__objc_methlist` | `0x1b94` | `0x1bf4` | **`+0x60`** |
+| `__TEXT.__swift5_proto` | `0x3010` | `0x3070` | **`+0x60`** |
+| `__TEXT.__swift5_types` | `0x1280` | `0x12d4` | **`+0x54`** |
+| `__TEXT.__swift5_builtin` | `0x16f8` | `0x1748` | **`+0x50`** |
+| `__DATA.__objc_selrefs` | `0x1698` | `0x16e0` | **`+0x48`** |
+| `__DATA_CONST.__auth_got` | `0x28f8` | `0x2930` | **`+0x38`** |
+| `__TEXT.__objc_methtype` | `0x2317` | `0x2347` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0x1c0` | `0x1e0` | **`+0x20`** |
+| `__DATA.__common` | `0xb60` | `0xb78` | **`+0x18`** |
+| `__TEXT.__swift_as_cont` | `0x5dc` | `0x5f4` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x1028` | `0x1038` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x2e0` | `0x2f0` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x1f8` | `0x204` | **`+0xc`** |
+| `__DATA_CONST.__objc_protorefs` | `0x170` | `0x178` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x1a0` | `0x1a8` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x160` | `0x168` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__cfstring`
 - `__TEXT.__swift5_entry`
 - `__TEXT.__swift5_protos`
-- `__DATA_CONST.__cfstring`
+
+### Other Changes
 
 ```diff
 
 -885.69.4.1.0
--  __TEXT.__text: 0x5cf770
--  __TEXT.__auth_stubs: 0x51e0
--  __TEXT.__objc_stubs: 0x4640
--  __TEXT.__objc_methlist: 0x1b94
--  __TEXT.__const: 0x3f930
--  __TEXT.__swift5_typeref: 0xd067
 +885.77.0.0.0
-+  __TEXT.__text: 0x5e0e88
-+  __TEXT.__auth_stubs: 0x5250
-+  __TEXT.__objc_stubs: 0x4720
-+  __TEXT.__objc_methlist: 0x1bf4
-+  __TEXT.__const: 0x402b0
-+  __TEXT.__swift5_typeref: 0xd2b3
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__cstring: 0xf5d8
--  __TEXT.__oslogstring: 0x2199c
--  __TEXT.__constg_swiftt: 0x10030
--  __TEXT.__swift5_fieldmd: 0x163fc
--  __TEXT.__swift5_types: 0x1280
--  __TEXT.__swift5_builtin: 0x16f8
--  __TEXT.__swift5_reflstr: 0x14629
--  __TEXT.__swift5_assocty: 0x2cb8
--  __TEXT.__swift5_proto: 0x3010
--  __TEXT.__objc_classname: 0x1007
--  __TEXT.__objc_methtype: 0x2317
-+  __TEXT.__cstring: 0xfa24
-+  __TEXT.__oslogstring: 0x2249c
-+  __TEXT.__constg_swiftt: 0x103a0
-+  __TEXT.__swift5_fieldmd: 0x1690c
-+  __TEXT.__swift5_types: 0x12d4
-+  __TEXT.__swift5_builtin: 0x1748
-+  __TEXT.__swift5_reflstr: 0x14b39
-+  __TEXT.__swift5_assocty: 0x2d78
-+  __TEXT.__swift5_proto: 0x3070
-+  __TEXT.__objc_classname: 0x10f7
-+  __TEXT.__objc_methtype: 0x2347
-   __TEXT.__swift5_protos: 0x108
--  __TEXT.__objc_methname: 0xa085
--  __TEXT.__swift5_capture: 0x7e00
--  __TEXT.__swift_as_entry: 0x1f8
--  __TEXT.__swift_as_ret: 0x160
--  __TEXT.__swift_as_cont: 0x5dc
--  __TEXT.__swift5_mpenum: 0x1a0
--  __TEXT.__unwind_info: 0x10468
--  __TEXT.__eh_frame: 0x1deb8
--  __DATA_CONST.__const: 0x390c8
-+  __TEXT.__swift5_capture: 0x7f4c
-+  __TEXT.__objc_methname: 0xa2e5
-+  __TEXT.__swift5_mpenum: 0x1a8
-+  __TEXT.__swift_as_entry: 0x204
-+  __TEXT.__swift_as_ret: 0x168
-+  __TEXT.__swift_as_cont: 0x5f4
-+  __TEXT.__unwind_info: 0x10798
-+  __TEXT.__eh_frame: 0x1e50c
-+  __DATA_CONST.__const: 0x39ca0
-   __DATA_CONST.__cfstring: 0x20
--  __DATA_CONST.__objc_classlist: 0x1c0
--  __DATA_CONST.__objc_protolist: 0x2e0
-+  __DATA_CONST.__objc_classlist: 0x1e0
-+  __DATA_CONST.__objc_protolist: 0x2f0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_protorefs: 0x170
--  __DATA_CONST.__auth_got: 0x28f8
--  __DATA_CONST.__got: 0x1028
--  __DATA_CONST.__auth_ptr: 0x7840
--  __DATA.__objc_const: 0xa6b8
--  __DATA.__objc_selrefs: 0x1698
--  __DATA.__objc_data: 0x1898
--  __DATA.__data: 0x14970
--  __DATA.__bss: 0x5d650
--  __DATA.__common: 0xb60
-+  __DATA_CONST.__objc_protorefs: 0x178
-+  __DATA_CONST.__auth_got: 0x2930
-+  __DATA_CONST.__got: 0x1038
-+  __DATA_CONST.__auth_ptr: 0x7968
-+  __DATA.__objc_const: 0xac30
-+  __DATA.__objc_selrefs: 0x16e0
-+  __DATA.__objc_data: 0x1920
-+  __DATA.__data: 0x14fc0
-+  __DATA.__bss: 0x5e250
-+  __DATA.__common: 0xb78
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 24672
 -  Symbols:   2311
 -  CStrings:  5424
 +  Functions: 24933
 +  Symbols:   2320
 +  CStrings:  5522
- 
 Symbols:
 + _$s10Foundation4DataV8endIndexSivg
 + _$s10Foundation8TimeZoneV19_bridgeToObjectiveCSo06NSTimeC0CyF

@@ -2,22 +2,23 @@
 
 > `/System/Library/PrivateFrameworks/PreviewShellKit.framework/PreviewShellKit`
 
-```diff
+### Section Size Changes
 
- 24.0.45.1.0
--  __TEXT.__text: 0xfd520
-+  __TEXT.__text: 0xfd51c
-   __TEXT.__objc_methlist: 0x6b4
-   __TEXT.__const: 0xb464
-   __TEXT.__cstring: 0x4a6c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfd520` | `0xfd51c` | **`-0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_297c4aaa4 -> sub_2993aeaa4 : 992 -> 984
-~ sub_297c4ae84 -> sub_2993aee7c : 980 -> 992
-~ sub_297c4baf0 -> sub_2993afaf4 : 756 -> 760
-~ sub_297c4bde4 -> sub_2993afdec : 596 -> 588
-~ sub_297c4c060 -> sub_2993b0060 : 644 -> 652
-~ sub_297c4c6c4 -> sub_2993b06cc : 748 -> 752
-~ sub_297c4ccf4 -> sub_2993b0d00 : 700 -> 704
-~ sub_297c8a36c -> sub_2993ee37c : 5048 -> 5024
-~ sub_297cbe134 -> sub_29942212c : 852 -> 856
+~ sub_297b30aa4 -> sub_299291aa4 : 992 -> 984
+~ sub_297b30e84 -> sub_299291e7c : 980 -> 992
+~ sub_297b31af0 -> sub_299292af4 : 756 -> 760
+~ sub_297b31de4 -> sub_299292dec : 596 -> 588
+~ sub_297b32060 -> sub_299293060 : 644 -> 652
+~ sub_297b326c4 -> sub_2992936cc : 748 -> 752
+~ sub_297b32cf4 -> sub_299293d00 : 700 -> 704
+~ sub_297b7036c -> sub_2992d137c : 5048 -> 5024
+~ sub_297ba4134 -> sub_29930512c : 852 -> 856
 ```

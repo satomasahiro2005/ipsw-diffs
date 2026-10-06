@@ -2,91 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/RenderBox.framework/RenderBox`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1685fc` | `0x16a70c` | **`+0x2110`** |
+| `__AUTH_CONST.__const` | `0x96c8` | `0x9970` | **`+0x2a8`** |
+| `__AUTH.__objc_data` | `0x190` | `0x320` | **`+0x190`** |
+| `__DATA_DIRTY.__objc_data` | `0xaa0` | `0x910` | **`-0x190`** |
+| `__TEXT.__unwind_info` | `0x71a0` | `0x7270` | **`+0xd0`** |
+| `__TEXT.__const` | `0x5f80` | `0x6000` | **`+0x80`** |
+| `__TEXT.__gcc_except_tab` | `0x7e9c` | `0x7f04` | **`+0x68`** |
+| `__TEXT.__cstring` | `0x67f5` | `0x6847` | **`+0x52`** |
+| `__TEXT.__objc_methlist` | `0x2cf4` | `0x2d2c` | **`+0x38`** |
+| `__AUTH_CONST.__objc_const` | `0x4978` | `0x49a0` | **`+0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1f30` | `0x1f50` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x48` | `0x60` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x880` | `0x890` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x5b8` | `0x5c8` | **`+0x10`** |
+| `__DATA_DIRTY.__common` | `0x50` | `0x58` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x2c8` | `0x2cc` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1685fc
--  __TEXT.__objc_methlist: 0x2cf4
--  __TEXT.__const: 0x5f80
--  __TEXT.__gcc_except_tab: 0x7e9c
--  __TEXT.__cstring: 0x67f5
-+  __TEXT.__text: 0x16a70c
-+  __TEXT.__objc_methlist: 0x2d2c
-+  __TEXT.__const: 0x6000
-+  __TEXT.__gcc_except_tab: 0x7f04
-+  __TEXT.__cstring: 0x6847
-   __TEXT.__oslogstring: 0x121c
--  __TEXT.__unwind_info: 0x71a0
-+  __TEXT.__unwind_info: 0x7270
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-8.0.69.0.0
++8.0.75.0.0
 
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0xb8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1f30
-+  __DATA_CONST.__objc_selrefs: 0x1f50
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0xe8
-   __DATA_CONST.__objc_arraydata: 0x10
--  __DATA_CONST.__got: 0x880
--  __AUTH_CONST.__const: 0x96c8
-+  __DATA_CONST.__got: 0x890
-+  __AUTH_CONST.__const: 0x9970
-   __AUTH_CONST.__cfstring: 0x3280
--  __AUTH_CONST.__objc_const: 0x4978
-+  __AUTH_CONST.__objc_const: 0x49a0
-   __AUTH_CONST.__weak_auth_got: 0x30
--  __AUTH_CONST.__objc_intobj: 0x48
-+  __AUTH_CONST.__objc_intobj: 0x60
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__auth_got: 0x14f8
--  __AUTH.__objc_data: 0x190
-+  __AUTH.__objc_data: 0x320
-   __AUTH.__thread_vars: 0x48
-   __AUTH.__thread_bss: 0x18
--  __DATA.__objc_ivar: 0x2c8
-+  __DATA.__objc_ivar: 0x2cc
-   __DATA.__data: 0xad4
-   __DATA.__crash_info: 0x148
-   __DATA.__bss: 0x2c8
-   __DATA.__common: 0x2c
--  __DATA_DIRTY.__objc_data: 0xaa0
-+  __DATA_DIRTY.__objc_data: 0x910
-   __DATA_DIRTY.__data: 0x4
--  __DATA_DIRTY.__common: 0x50
--  __DATA_DIRTY.__bss: 0x5b8
-+  __DATA_DIRTY.__common: 0x58
-+  __DATA_DIRTY.__bss: 0x5c8
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 7334
--  Symbols:   19328
--  CStrings:  2169
+-  Symbols:   9657
+-  CStrings:  1766
 +  Functions: 7399
-+  Symbols:   19473
-+  CStrings:  2173
- 
-Sections:
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
++  Symbols:   9734
++  CStrings:  1770
 Symbols:
 + -[CALayer kitView]
 + -[RBAnimationThread initWithDisplay:type:flags:]
@@ -233,10 +182,6 @@ Symbols:
 + __ZZNK2RB8Coverage14StrokeablePath8hit_testERKNS0_6StrokeIS1_EEDv2_dPKNS_15AffineTransformEEN3$_08__invokeEPKv
 + __ZZNK2RB8Coverage14StrokeablePath8hit_testERKNS0_6StrokeIS1_EEDv2_dPKNS_15AffineTransformEEN3$_18__invokeEPKv
 + __ZZNK2RB8Coverage14StrokeablePath8hit_testERKNS0_6StrokeIS1_EEDv2_dPKNS_15AffineTransformEEN3$_28__invokeEPKvPvPFbSD_13RBPathElementPKdSC_E
-+ _objc_msgSend$_systemDisplayIdentifier
-+ _objc_msgSend$displayLinkWithSystemIdentifier:target:selector:
-+ _objc_msgSend$hitTest:options:identifier:namespace:
-+ _objc_msgSend$traitCollection
 - -[CALayer kitScreen]
 - -[RBAnimationThread initWithScreen:flags:]
 - GCC_except_table1010
@@ -312,5 +257,4 @@ CStrings:
 + "releasing a temporary path"
 + "retaining a temporary path"
 - "8.0.69"
-
 ```

@@ -2,75 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/CoreAccessories.framework/XPCServices/ACCHWComponentAuthService.xpc/ACCHWComponentAuthService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__gcc_except_tab`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x39d14` | `0x3aaec` | **`+0xdd8`** |
+| `__TEXT.__oslogstring` | `0x6768` | `0x6ae2` | **`+0x37a`** |
+| `__TEXT.__objc_stubs` | `0xe80` | `0xf80` | **`+0x100`** |
+| `__DATA_CONST.__cfstring` | `0x1780` | `0x1860` | **`+0xe0`** |
+| `__TEXT.__cstring` | `0x2050` | `0x20ff` | **`+0xaf`** |
+| `__TEXT.__objc_methname` | `0x180b` | `0x1880` | **`+0x75`** |
+| `__TEXT.__objc_methlist` | `0x69c` | `0x704` | **`+0x68`** |
+| `__DATA.__objc_selrefs` | `0x5e8` | `0x5f8` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x6aa8` | `0x6ab8` | **`+0x10`** |
+| `__TEXT.__auth_stubs` | `0xe20` | `0xe30` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x720` | `0x728` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x138` | `0x140` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x830` | `0x838` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__gcc_except_tab`
+
+### Other Changes
 
 ```diff
 
 -1219.40.7.0.0
--  __TEXT.__text: 0x39974
--  __TEXT.__auth_stubs: 0xe20
--  __TEXT.__objc_stubs: 0xe80
--  __TEXT.__objc_methlist: 0x69c
 +1219.40.10.502.1
-+  __TEXT.__text: 0x3a74c
-+  __TEXT.__auth_stubs: 0xe30
-+  __TEXT.__objc_stubs: 0xf80
-+  __TEXT.__objc_methlist: 0x704
-   __TEXT.__const: 0x1e223
--  __TEXT.__cstring: 0x2050
--  __TEXT.__oslogstring: 0x6768
-+  __TEXT.__cstring: 0x20ff
-+  __TEXT.__oslogstring: 0x6ae2
-   __TEXT.__objc_classname: 0x9b
--  __TEXT.__objc_methname: 0x180b
-+  __TEXT.__objc_methname: 0x1880
-   __TEXT.__objc_methtype: 0x607
-   __TEXT.__gcc_except_tab: 0x270
--  __TEXT.__unwind_info: 0x1028
--  __DATA_CONST.__const: 0x6aa8
--  __DATA_CONST.__cfstring: 0x1780
-+  __TEXT.__unwind_info: 0x1060
-+  __DATA_CONST.__const: 0x6ab8
-+  __DATA_CONST.__cfstring: 0x1860
-   __DATA_CONST.__objc_classlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__objc_intobj: 0x48
--  __DATA_CONST.__auth_got: 0x720
--  __DATA_CONST.__got: 0x138
-+  __DATA_CONST.__auth_got: 0x728
-+  __DATA_CONST.__got: 0x140
-   __DATA_CONST.__auth_ptr: 0x40
-   __DATA.__objc_const: 0xb68
--  __DATA.__objc_selrefs: 0x5e8
-+  __DATA.__objc_selrefs: 0x5f8
-   __DATA.__objc_ivar: 0x64
-   __DATA.__objc_data: 0x140
-   __DATA.__data: 0x1b8
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1234
 -  Symbols:   2816
 -  CStrings:  1264
 +  Functions: 1260
 +  Symbols:   2838
 +  CStrings:  1287
- 
 Symbols:
 + -[ACCHWComponentAuthService authenticateBatteryWithChallenge:completionHandler:]
 + -[ACCHWComponentAuthService authenticateLASWithChallenge:completionHandler:updateRegistry:]

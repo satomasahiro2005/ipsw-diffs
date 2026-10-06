@@ -2,34 +2,29 @@
 
 > `/System/Library/Video/Plug-Ins/AppleVideoEncoder.bundle/AppleVideoEncoder`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e7f84` | `0x1e7edc` | **`-0xa8`** |
+| `__TEXT.__cstring` | `0x59d7c` | `0x59d85` | **`+0x9`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__init_offsets`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1e7f84
-+  __TEXT.__text: 0x1e7edc
-   __TEXT.__auth_stubs: 0x1050
-   __TEXT.__objc_stubs: 0x20
-   __TEXT.__init_offsets: 0xc
-   __TEXT.__const: 0x25528
--  __TEXT.__cstring: 0x59d7c
-+  __TEXT.__cstring: 0x59d85
-   __TEXT.__gcc_except_tab: 0x730
-   __TEXT.__objc_methname: 0xb
-   __TEXT.__unwind_info: 0x9f0
-
-   - /usr/lib/libobjc.A.dylib
-   Functions: 1958
-   Symbols:   496
--  CStrings:  7862
-+  CStrings:  7863
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__data : content changed
+-  CStrings:  7437
++  CStrings:  7438
 Functions:
 ~ sub_5ba8 : 1396 -> 1404
 ~ sub_6c294 -> sub_6c29c : 6140 -> 6144
@@ -68,5 +63,4 @@ CStrings:
 - "19:43:02"
 - "19:43:03"
 - "Jun 18 2026"
-
 ```

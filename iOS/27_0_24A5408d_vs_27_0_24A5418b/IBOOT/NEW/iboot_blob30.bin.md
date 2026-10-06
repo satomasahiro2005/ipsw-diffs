@@ -1,0 +1,6 @@
+## iboot_blob30.bin
+
+- `0CEFIJPRVWR8`
+- `PARADBCCECBDEDRECFDIGIRIONDSDURVfihiiiminisitpUpG`
+- `COFOROSOTO2@/`
+- `VKSPSSTSEW.^`

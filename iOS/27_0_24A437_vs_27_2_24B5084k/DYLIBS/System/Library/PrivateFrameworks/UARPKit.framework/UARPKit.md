@@ -2,63 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/UARPKit.framework/UARPKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14998` | `0x15ccc` | **`+0x1334`** |
+| `__AUTH_CONST.__objc_const` | `0x1f80` | `0x2270` | **`+0x2f0`** |
+| `__TEXT.__objc_methlist` | `0x15a0` | `0x1690` | **`+0xf0`** |
+| `__DATA_CONST.__objc_selrefs` | `0xdc0` | `0xe50` | **`+0x90`** |
+| `__TEXT.__cstring` | `0x1e26` | `0x1eb3` | **`+0x8d`** |
+| `__AUTH.__objc_data` | `0x1e0` | `0x230` | **`+0x50`** |
+| `__TEXT.__oslogstring` | `0x8a3` | `0x86f` | **`-0x34`** |
+| `__AUTH_CONST.__cfstring` | `0xbc0` | `0xba0` | **`-0x20`** |
+| `__TEXT.__const` | `0x90` | `0xa8` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x428` | `0x410` | **`-0x18`** |
+| `__DATA_CONST.__got` | `0xd8` | `0xe8` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x1a0` | `0x1ac` | **`+0xc`** |
+| `__DATA_CONST.__objc_catlist` | `—` | `0x8` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x58` | `0x60` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x50` | `0x58` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1587.2.3.0.0
--  __TEXT.__text: 0x14434
--  __TEXT.__objc_methlist: 0x15a0
--  __TEXT.__const: 0x90
--  __TEXT.__cstring: 0x1e26
 +1587.40.26.502.1
-+  __TEXT.__text: 0x15774
-+  __TEXT.__objc_methlist: 0x1690
-+  __TEXT.__const: 0xa8
-+  __TEXT.__cstring: 0x1eb3
-   __TEXT.__gcc_except_tab: 0x3bc
--  __TEXT.__oslogstring: 0x8a3
--  __TEXT.__unwind_info: 0x6d0
-+  __TEXT.__oslogstring: 0x86f
-+  __TEXT.__unwind_info: 0x6e0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x3e0
--  __DATA_CONST.__objc_classlist: 0x58
-+  __DATA_CONST.__objc_classlist: 0x60
-+  __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x38
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xdc0
-+  __DATA_CONST.__objc_selrefs: 0xe50
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__objc_superrefs: 0x50
--  __DATA_CONST.__got: 0xd8
--  __AUTH_CONST.__cfstring: 0xbc0
--  __AUTH_CONST.__objc_const: 0x1f80
-+  __DATA_CONST.__objc_superrefs: 0x58
-+  __DATA_CONST.__got: 0xe8
-+  __AUTH_CONST.__cfstring: 0xba0
-+  __AUTH_CONST.__objc_const: 0x2270
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x1e0
--  __DATA.__objc_ivar: 0x1a0
-+  __AUTH.__objc_data: 0x230
-+  __DATA.__objc_ivar: 0x1ac
-   __DATA.__data: 0x2a0
-   __DATA_DIRTY.__objc_data: 0x190
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
+
 -  Functions: 532
--  Symbols:   1043
+-  Symbols:   799
 -  CStrings:  253
 +  Functions: 549
-+  Symbols:   1083
++  Symbols:   827
 +  CStrings:  251
- 
 Symbols:
 + +[UARPDeviceProperties supportsSecureCoding]
 + -[NSUUID(UARP) isMatchingUUID:]
@@ -156,31 +132,6 @@ Symbols:
 + __OBJC_METACLASS_RO_$_UARPDeviceProperties
 + ___64-[UARPDeviceManager endpointControllerDelegateEndpointInactive:]_block_invoke
 + ___68-[UARPDeviceManager endpointControllerDelegateEndpointUnresponsive:]_block_invoke
-+ _objc_msgSend$areNullableNumbersEqual:thatString:
-+ _objc_msgSend$deviceAvailable
-+ _objc_msgSend$deviceInactivityTimeout:
-+ _objc_msgSend$deviceNoFirmwareUpdateAvailable:
-+ _objc_msgSend$deviceTransportAvailable
-+ _objc_msgSend$hostEndpointAvailable:endpointProperties:
-+ _objc_msgSend$hostEndpointDelegateTransportNotNeeded:
-+ _objc_msgSend$hostEndpointTransportAvailable:
-+ _objc_msgSend$initWithUUID:delegate:delegateQueue:deviceProperties:
-+ _objc_msgSend$isEqualToNumber:
-+ _objc_msgSend$noSleepWhileStaging
-+ _objc_msgSend$numPacketRetries
-+ _objc_msgSend$numberWithUnsignedInteger:
-+ _objc_msgSend$setNoSleepWhileStaging:
-+ _objc_msgSend$setNumPacketRetries:
-+ _objc_msgSend$setTimeoutActivity:
-+ _objc_msgSend$setTimeoutPacketRetry:
-+ _objc_msgSend$setTransportForStagingOnly:
-+ _objc_msgSend$timeoutActivity
-+ _objc_msgSend$timeoutPacketRetry
-+ _objc_msgSend$transportForStagingOnly
-+ _objc_msgSend$uarpDeviceManagerEndpointInactive:deviceEndpoint:
-+ _objc_msgSend$uarpDeviceManagerEndpointUnresponsive:deviceEndpoint:
-+ _objc_msgSend$uarpDeviceManagerUnknownEndpoint:endpointUUID:
-+ _objc_msgSend$unsignedLongValue
 + _objc_setProperty_atomic
 - +[UARPHostEndpointProperties supportsSecureCoding]
 - -[UARPDevice configureDeviceInactivityTimeout:error:]
@@ -251,19 +202,6 @@ Symbols:
 - __OBJC_$_CLASS_METHODS_UARPHostEndpointProperties
 - __OBJC_$_INSTANCE_METHODS_UARPDevice(Private|FeatureSupport|TapToRadar)
 - __OBJC_$_PROP_LIST_UARPDevice
-- _objc_msgSend$deviceAvailable:
-- _objc_msgSend$deviceTransportAvailable:
-- _objc_msgSend$hostEndpointAvailable:releasePolicy:endpointProperties:
-- _objc_msgSend$hostEndpointTransportAvailable:releasePolicy:
-- _objc_msgSend$inactivityTimer
-- _objc_msgSend$numberWithInteger:
-- _objc_msgSend$packetRetries
-- _objc_msgSend$packetRetryTimeout
-- _objc_msgSend$setInactivityTimer:
-- _objc_msgSend$setPacketRetries:
-- _objc_msgSend$setPacketRetryTimeout:
-- _objc_msgSend$setSupportsVoiceAssist:
-- _objc_msgSend$supportsVoiceAssist
 CStrings:
 + "%@ = %@,"
 + "%@ = YES,"

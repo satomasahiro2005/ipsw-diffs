@@ -2,61 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/caulk.framework/caulk`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x5270` | `0x48c0` | **`-0x9b0`** |
+| `__TEXT.__text` | `0x1fa04` | `0x1f298` | **`-0x76c`** |
+| `__AUTH_CONST.__const` | `0x23c0` | `0x2240` | **`-0x180`** |
+| `__TEXT.__realtime` | `0x10d4` | `0x1198` | **`+0xc4`** |
+| `__TEXT.__unwind_info` | `0x1468` | `0x1428` | **`-0x40`** |
+| `__TEXT.__gcc_except_tab` | `0x1d94` | `0x1d68` | **`-0x2c`** |
+| `__DATA_CONST.__const` | `0x178` | `0x198` | **`+0x20`** |
+| `__TEXT.__oslogstring` | `0x1d8` | `0x1f7` | **`+0x1f`** |
+
+### Other Changes
+
 ```diff
 
 -241.0.0.0.0
--  __TEXT.__text: 0x1fa04 sha256:f4f93f731f7948e1d3549251b5ad7ebedc32e6702399c8db4fa7a67ffe366189
--  __TEXT.__realtime: 0x10d4 sha256:7922d272834f3b3ed70058347a735a16941849aaab7f79dcbb0f745331d1e316
--  __TEXT.__const: 0x5270 sha256:54b3d2ad155338ef66686a977df81678a1817db4705a2cafc66db543b50b5af9
--  __TEXT.__gcc_except_tab: 0x1d94 sha256:59c7e97662d8e50a3b2ccb8c56b54931ac6a34fce98213b5768bd128e62b9799
 +245.0.0.0.0
-+  __TEXT.__text: 0x1f298 sha256:805ba1af91612afd1f134f4117bf92f3c63ab1c663ff0400cabcddb45a8810a0
-+  __TEXT.__realtime: 0x1198 sha256:736ac2d65f0cbadd64f9395bbb8c535ae7c9452cd2cfb9f0fa1fa76fc35ab3f5
-+  __TEXT.__const: 0x48c0 sha256:12fd889ae7b69f87ada9ea288e53a3e6fac3e323362a2a82260847e6c858938d
-+  __TEXT.__gcc_except_tab: 0x1d68 sha256:b2d085c5b23f57eb73eaff5a0afe06dd948259b8dd4726c3fb57c552794d548f
-   __TEXT.__cstring: 0xfe2 sha256:b57338343db6bb29bec4e3edf391fccbb1d9dd0f6facadb99c261e51553cf79c
--  __TEXT.__oslogstring: 0x1d8 sha256:44ab33dc43062e527d410e4415d0ba32706f99a4ae79a83bd2fa131d3518c489
--  __TEXT.__unwind_info: 0x1468 sha256:e691a81147f6bd14e17bcb15c70f5e6609652ef1dbd214fd45f14243f7570f4e
-+  __TEXT.__oslogstring: 0x1f7 sha256:0d4f8fb448b51ce0f479a0ae0585be536dfaaa572d879e1dab46a7be4105103c
-+  __TEXT.__unwind_info: 0x1428 sha256:665f7049bb642e44be57c5eb45b7ab88404ae24569abe7d618db5455df14cf8e
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0x178 sha256:6ef1900aa1882bd7d20368d94a53b9037bfea763df0b0bdd3ba8b2279db91f7b
-+  __DATA_CONST.__const: 0x198 sha256:d959b57a18944b7ab6f2b6396ff0282086dbe77416fcafc0c920c3e061fc4ab6
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x10 sha256:db089a9946ee2f440f1454b6bd081bc906524b106b3b9bd5745c567d00425fed
--  __DATA_CONST.__objc_selrefs: 0x8 sha256:21134d69d1d28302001991101eb451ba56417b8194d02cbc138706e44a921541
-+  __DATA_CONST.__weak_got: 0x10 sha256:c9b00cf8e5fdc159d5e0657836ccec0cbd1eddc62a50f4b3c9f634c56153dbb7
-+  __DATA_CONST.__objc_selrefs: 0x8 sha256:99cd34e7bb66b72fd320d43c57611fef46964c5835ed86c51fef2df123fe230d
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x23c0 sha256:6baf53b4fcbda025c3a51bf30464adb0269749c205a89d34266029eec3b859fc
--  __AUTH_CONST.__cfstring: 0xe0 sha256:526455c467e85a23ddf57299b72106f96ecb8c37b89bf6bbf6d4d94db3f364ed
--  __AUTH_CONST.__weak_auth_got: 0x20 sha256:9dc91fa9883da1a24a9421ae62614b67781bf2db037ec204938dcb175ea8cec4
-+  __AUTH_CONST.__const: 0x2240 sha256:35dcd5c5f43b918ddad2cded8621c2ddc7aa2b843ed3f92c604b1af2c821c602
-+  __AUTH_CONST.__cfstring: 0xe0 sha256:874434c22a32527822041e850a51ed5d686077f8f4ee1f949e081dbf8641f570
-+  __AUTH_CONST.__weak_auth_got: 0x20 sha256:caf1fb7b339bcd4669773111a861e5bccc6bf63907041f2e3d1185474748a9a2
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__data: 0x198 sha256:a201481c1eff032379969684c9e49744a8f7a3dc34adae9b4816b80ba66454f4
--  __DATA.__data: 0x10 sha256:a7e3198b77148b2d5389e39cbdd03bd8ad7ed831122ac2f1292d61959c1f2647
-+  __AUTH.__data: 0x198 sha256:91e7cfaf269abb1f10f0fa58d907578388e55c597e63716dd38b32bae10e4d81
-+  __DATA.__data: 0x10 sha256:fc7578cf65ce0a1e089f3fc24527d40b47323fb3dd5b574d86b90f6ed5b5c475
-   __DATA.__bss: 0x80 sha256:38723a2e5e8a17aa7950dc008209944e898f69a7bd10a23c839d341e935fd5ca
-   __DATA.__common: 0x8 sha256:af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc
-   __DATA_DIRTY.__bss: 0xf48 sha256:5e92ddcdeb209f0aa328c0a774a2aba1315dbcddb069e87c51b7354602e84291
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  UUID: 0E4CE7B4-F6D9-3204-9D1C-30F5158BE01B
 -  Functions: 1092
--  Symbols:   2912
--  CStrings:  215
-+  UUID: A55A1D02-47F6-3938-94D9-568CB02FCEAE
+-  Symbols:   2101
+-  CStrings:  209
 +  Functions: 1065
-+  Symbols:   2842
-+  CStrings:  216
- 
++  Symbols:   2057
++  CStrings:  210
 Symbols:
 + GCC_except_table100
 + GCC_except_table1001
@@ -610,7 +581,6 @@ Symbols:
 + __ZTVNSt3__110__function6__funcIZNK5caulk5alloc15affix_allocatorINS3_22consolidating_free_mapINS3_14page_allocatorELm10485760EEENS_5arrayIyLm4EEES9_E10introspectEmRKNS3_12introspectorEEUlNS3_12region_usageEmmE_FvSE_mmEEE
 + __ZZN5caulk5alloc9formatter24summarize_blocks_by_sizeINS0_18tracking_allocatorINS0_14page_allocatorEEEEEvRKT_mE10sizeLabels
 + ____ZN5caulk10concurrent12_GLOBAL__N_113dispatch_impl12signalWakeupEv_block_invoke
-+ ___block_descriptor_tmp.24
 + _dispatch_async
 + _objc_release_x20
 - GCC_except_table1002
@@ -1213,5 +1183,4 @@ Symbols:
 - __ZZN5caulk5alloc14base_allocator9formatter24summarize_blocks_by_sizeINS0_18tracking_allocatorINS0_14page_allocatorEEEEEvRT_mE10sizeLabels
 CStrings:
 + "messenger: mach_msg failed: %d"
-
 ```

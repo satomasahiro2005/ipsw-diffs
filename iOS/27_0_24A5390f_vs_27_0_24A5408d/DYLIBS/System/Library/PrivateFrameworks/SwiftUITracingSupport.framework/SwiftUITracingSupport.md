@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SwiftUITracingSupport.framework/SwiftUITracingSupport`
 
-```diff
+### Section Size Changes
 
- 87.0.0.0.0
--  __TEXT.__text: 0x3678b0
-+  __TEXT.__text: 0x36782c
-   __TEXT.__objc_methlist: 0x144
-   __TEXT.__const: 0x1cc78
-   __TEXT.__swift5_typeref: 0xa1f4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3678b0` | `0x36782c` | **`-0x84`** |
+
+### Other Changes
+
+```diff
 Symbols:
 + _$s21SwiftUITracingSupport10Subforest2V11descendants2of5whereSayAA10ChangelistC2IdOGAJSg_SbAJXEtF04$s21ab9Support10h66C19rebuildDisplayOrderyyF013buildViewTreefG0L_3for6offset4intoyAC2i9OSg_SiSayV29_AJtGztFSbAJcACcfu1_SbAJcfu2_AHTf1nEn_nTm
 + _$s21SwiftUITracingSupport11InterpreterC8IteratorV15TraceStatisticsV13formatSummary11useMachTime13timeFormatterSSSb_SSs6UInt64VXEtF04$s21ab9Support11d2C8e40V4readSbyAA19EvolutionTableErrorOYKFSSs6O20VcAEcfu19_SSAJcfu20_AETf1nEn_nTf4dnn_n

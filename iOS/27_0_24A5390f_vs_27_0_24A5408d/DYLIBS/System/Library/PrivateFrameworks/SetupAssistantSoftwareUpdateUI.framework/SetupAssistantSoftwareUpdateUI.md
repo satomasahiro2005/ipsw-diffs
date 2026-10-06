@@ -2,77 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/SetupAssistantSoftwareUpdateUI.framework/SetupAssistantSoftwareUpdateUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x77604` | `0x78b6c` | **`+0x1568`** |
+| `__TEXT.__cstring` | `0xf5b` | `0x104b` | **`+0xf0`** |
+| `__AUTH_CONST.__const` | `0x5190` | `0x5258` | **`+0xc8`** |
+| `__TEXT.__swift5_capture` | `0x2018` | `0x2078` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x17d8` | `0x1800` | **`+0x28`** |
+| `__AUTH.__objc_data` | `0x1620` | `0x1640` | **`+0x20`** |
+| `__TEXT.__oslogstring` | `0x1cb7` | `0x1c97` | **`-0x20`** |
+| `__TEXT.__swift5_typeref` | `0xfeb` | `0x1005` | **`+0x1a`** |
+| `__AUTH_CONST.__auth_got` | `0x870` | `0x888` | **`+0x18`** |
+| `__DATA.__data` | `0x9d0` | `0x9b8` | **`-0x18`** |
+| `__TEXT.__constg_swiftt` | `0x940` | `0x948` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x78` | `0x7c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -772.0.10.0.0
--  __TEXT.__text: 0x77604
 +772.0.20.0.0
-+  __TEXT.__text: 0x78b6c
-   __TEXT.__objc_methlist: 0x748
--  __TEXT.__cstring: 0xf5b
--  __TEXT.__swift5_typeref: 0xfeb
--  __TEXT.__swift5_capture: 0x2018
-+  __TEXT.__cstring: 0x104b
-+  __TEXT.__swift5_typeref: 0x1005
-+  __TEXT.__swift5_capture: 0x2078
-   __TEXT.__const: 0xee8
--  __TEXT.__oslogstring: 0x1cb7
--  __TEXT.__constg_swiftt: 0x940
-+  __TEXT.__oslogstring: 0x1c97
-+  __TEXT.__constg_swiftt: 0x948
-   __TEXT.__swift5_reflstr: 0x4dd
-   __TEXT.__swift5_fieldmd: 0x320
-   __TEXT.__swift5_builtin: 0x8c
 
-   __TEXT.__swift5_proto: 0x40
-   __TEXT.__swift5_types: 0x40
-   __TEXT.__swift_as_entry: 0x48
--  __TEXT.__swift_as_ret: 0x78
-+  __TEXT.__swift_as_ret: 0x7c
-   __TEXT.__swift_as_cont: 0xd4
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x17d8
-+  __TEXT.__unwind_info: 0x1800
-   __TEXT.__eh_frame: 0xff8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0x608
-   __DATA_CONST.__objc_protorefs: 0x58
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x5190
-+  __AUTH_CONST.__const: 0x5258
-   __AUTH_CONST.__objc_const: 0x37a8
--  __AUTH_CONST.__auth_got: 0x870
--  __AUTH.__objc_data: 0x1620
-+  __AUTH_CONST.__auth_got: 0x888
-+  __AUTH.__objc_data: 0x1640
-   __AUTH.__data: 0x180
--  __DATA.__data: 0x9d0
-+  __DATA.__data: 0x9b8
-   __DATA.__bss: 0x750
-   __DATA.__common: 0x60
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /System/Library/PrivateFrameworks/SoftwareUpdateUIMobile.framework/SoftwareUpdateUIMobile
-   - /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
 +  - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2110
--  Symbols:   566
+-  Symbols:   447
 -  CStrings:  190
 +  Functions: 2125
-+  Symbols:   569
++  Symbols:   450
 +  CStrings:  195
- 
 Symbols:
 + _MobileGestalt_get_current_device
 + _MobileGestalt_get_wapiCapability

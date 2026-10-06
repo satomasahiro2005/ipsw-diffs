@@ -2,22 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/HDRProcessing.framework/HDRProcessing`
 
-```diff
+### Section Size Changes
 
- 1.517.51.0.0
--  __TEXT.__text: 0xa8500
-+  __TEXT.__text: 0xa856c
-   __TEXT.__objc_methlist: 0x2548
-   __TEXT.__const: 0x4c18
--  __TEXT.__gcc_except_tab: 0x25ac
-+  __TEXT.__gcc_except_tab: 0x25a0
-   __TEXT.__oslogstring: 0xf446
-   __TEXT.__cstring: 0x85fa
--  __TEXT.__unwind_info: 0x15f0
-+  __TEXT.__unwind_info: 0x15e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa8500` | `0xa856c` | **`+0x6c`** |
+| `__TEXT.__gcc_except_tab` | `0x25ac` | `0x25a0` | **`-0xc`** |
+| `__TEXT.__unwind_info` | `0x15f0` | `0x15e8` | **`-0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[HDRProcessor initProcessingEngine:config:] : 1560 -> 1572
 ~ __ZN9HDRConfig15ReadConfigEntryE11HDRConfigID : 1460 -> 1468

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/FSEvents.framework/FSEvents`
 
-```diff
+### Section Size Changes
 
- 1433.0.0.0.0
--  __TEXT.__text: 0x926c
-+  __TEXT.__text: 0x927c
-   __TEXT.__const: 0xf0
-   __TEXT.__cstring: 0xbc0
-   __TEXT.__oslogstring: 0xf5b
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x926c` | `0x927c` | **`+0x10`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __FSEventStreamCreate : 2312 -> 2320
 ~ __FSEventStreamDeallocate : 616 -> 624

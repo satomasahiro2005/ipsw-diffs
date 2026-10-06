@@ -2,142 +2,63 @@
 
 > `/System/Library/PrivateFrameworks/CDMFoundation.framework/CDMFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x271878` | `0x270dd0` | **`-0xaa8`** |
+| `__TEXT.__const` | `0xd500` | `0xd360` | **`-0x1a0`** |
+| `__DATA.__bss` | `0x9f30` | `0x9da0` | **`-0x190`** |
+| `__AUTH_CONST.__objc_const` | `0x12770` | `0x12860` | **`+0xf0`** |
+| `__TEXT.__constg_swiftt` | `0x56a4` | `0x55d4` | **`-0xd0`** |
+| `__DATA_DIRTY.__objc_data` | `0x4a50` | `0x49b0` | **`-0xa0`** |
+| `__TEXT.__cstring` | `0x1b921` | `0x1b882` | **`-0x9f`** |
+| `__TEXT.__swift5_typeref` | `0x42b2` | `0x421e` | **`-0x94`** |
+| `__TEXT.__swift5_reflstr` | `0x30fa` | `0x306a` | **`-0x90`** |
+| `__TEXT.__eh_frame` | `0x7af8` | `0x7a74` | **`-0x84`** |
+| `__TEXT.__swift5_fieldmd` | `0x3dfc` | `0x3d80` | **`-0x7c`** |
+| `__AUTH_CONST.__objc_intobj` | `0x558` | `0x5d0` | **`+0x78`** |
+| `__AUTH_CONST.__const` | `0xc8a0` | `0xc840` | **`-0x60`** |
+| `__AUTH.__objc_data` | `0x1200` | `0x11b8` | **`-0x48`** |
+| `__DATA.__data` | `0x1cb8` | `0x1cf8` | **`+0x40`** |
+| `__DATA_DIRTY.__data` | `0x4960` | `0x4920` | **`-0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x4e28` | `0x4e50` | **`+0x28`** |
+| `__DATA_CONST.__objc_arraydata` | `0x198` | `0x1c0` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x80a0` | `0x8080` | **`-0x20`** |
+| `__DATA_CONST.__const` | `0x1e08` | `0x1e28` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x7e78` | `0x7e58` | **`-0x20`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x48` | `0x60` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0x9c0` | `0x9ac` | **`-0x14`** |
+| `__TEXT.__swift_as_ret` | `0x284` | `0x270` | **`-0x14`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5360` | `0x5350` | **`-0x10`** |
+| `__TEXT.__swift_as_cont` | `0x440` | `0x434` | **`-0xc`** |
+| `__TEXT.__swift_as_entry` | `0x248` | `0x23c` | **`-0xc`** |
+| `__TEXT.__oslogstring` | `0x1dbec` | `0x1dbe3` | **`-0x9`** |
+| `__DATA_CONST.__got` | `0x26b8` | `0x26b0` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x8d8` | `0x8d0` | **`-0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x140` | `0x148` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x80` | `0x88` | **`+0x8`** |
+| `__DATA_DIRTY.__common` | `0x4b0` | `0x4a8` | **`-0x8`** |
+| `__TEXT.__gcc_except_tab` | `0xb438` | `0xb440` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x8594` | `0x859c` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0xa0` | `0x98` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0x57c` | `0x574` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.25.7.1.1
--  __TEXT.__text: 0x271878 sha256:24f380a9e527564cd903c83ae7550b86b41599180d7154a348143ec942a5da6f
--  __TEXT.__objc_methlist: 0x8594 sha256:cd5455ec498bb3a55e29269047ea05b92a3078acd8f729fe0a041bf52c022b86
--  __TEXT.__const: 0xd500 sha256:a49a4372ebbadf0387fe21423be9428704ad2b5dac9b365e6a8f54930e56baf4
--  __TEXT.__swift5_typeref: 0x42b2 sha256:3f81118f977118c1678be534e10664d83e6da7b04cc0420f74ed8cd15f653448
--  __TEXT.__swift5_fieldmd: 0x3dfc sha256:d4774dcf3e2afb3e16d1b92cc8da48579eb3c9b845c3fb27b77d4b62bae059aa
--  __TEXT.__constg_swiftt: 0x56a4 sha256:5e0cd69fa30fe5f9543db649b21af01c2c44c9908fdf04f6696d5c8b23239588
--  __TEXT.__swift5_protos: 0xa0 sha256:6f49eef43b32f40078c7d1a2c581641fd719902f371324cd18d9f12264f467aa
--  __TEXT.__cstring: 0x1b921 sha256:3fccd0f902f45322b133ee80c15a2fe72cb69c8a6fcce6648f7e3e5f9ff2604a
--  __TEXT.__swift5_types: 0x57c sha256:8efcb43ebc7b853ef2f9d4dad15b05fa7f4df38ac57a31448805572ad8f71858
--  __TEXT.__swift5_proto: 0x9c0 sha256:ddd37efc042e1ca5393a2017cee692ce5bc36419895820e99b99f9a2a9e6f60f
--  __TEXT.__swift5_reflstr: 0x30fa sha256:6a337f0c363134c247885796f4d022a255f917b444ff587549701cb0854aa209
--  __TEXT.__oslogstring: 0x1dbec sha256:d73d50540b6f69b3f531d215273ce4bc15cac4cee87ef412b5d9bca4cfd4dd11
--  __TEXT.__swift5_assocty: 0x438 sha256:40585c5f35c30a2cedaa191278d37dfa787e2f2dbbd2b3fc45e6a35ba48c5b7e
--  __TEXT.__swift5_capture: 0x196c sha256:eb3a9cf658ee407aa8799941559ecf161fb8145b7d4866507e654d95fddff4f6
--  __TEXT.__swift5_builtin: 0xf0 sha256:faffeb3ddc1fee1e07893f1fd20cf78383256dd6305a2dab28c0915a35dc6635
--  __TEXT.__swift5_mpenum: 0x3c sha256:8c2a62dcf15f0ee6fddfe83df0e9809e49f302a5a524c6da283e99e7891d876c
--  __TEXT.__swift_as_entry: 0x248 sha256:3dcfadfcf06997311fcbbc11e2e721c8930ee29b03f1ad9e74cbc82219aefe9e
--  __TEXT.__swift_as_ret: 0x284 sha256:536036e0f8e8e2cd74b636e4d12135082011f61c238c4d0837597232f4c5b598
--  __TEXT.__swift_as_cont: 0x440 sha256:d2a2b6088bc203054707dc51623ec088b6e5f33f3b4ca7d0a777d98adfaaebf1
--  __TEXT.__gcc_except_tab: 0xb438 sha256:a1a7449ea1d950a7c5c46f3566511de88236df30c0baf5ea4749e768b8c512e5
 +3600.31.3.0.0
-+  __TEXT.__text: 0x270dd0 sha256:9a74d97bc8f52c692e0186ce2f951ff9aecaf993343299652679cad297198958
-+  __TEXT.__objc_methlist: 0x859c sha256:b83b381e64992bb7675dfe0b09d51f776f62c8361e49d51f2811aa0162c1daef
-+  __TEXT.__const: 0xd360 sha256:e2490f04ead0d85e10dd1094ada612a7b7aff6d6ddd8f00d2c6e5c3319f1c591
-+  __TEXT.__swift5_typeref: 0x421e sha256:dd4ebf314acdf1c7b70043f53d9742e6b4f53cc261fee82b41a54c056589cf87
-+  __TEXT.__swift5_fieldmd: 0x3d80 sha256:fc9e8b50ac41a9ffe3858fe106900255dcdc625c8c66d33dd272e9306e57b680
-+  __TEXT.__constg_swiftt: 0x55d4 sha256:1119d49d42fe58c52c96a9a388a7d9cd0b9d887cb4ba382bca940e9b3d1ff34f
-+  __TEXT.__swift5_protos: 0x98 sha256:f1d8a76e191a61c401f2a056b85dac4f52794a3dda21f1b0bcb3785b91d57e8a
-+  __TEXT.__cstring: 0x1b882 sha256:a6daeda020bbff1357349f4978ce6ab6533cb0de69c071d2ca9b54cb36817b99
-+  __TEXT.__swift5_types: 0x574 sha256:bf66cd98b76b05b3e965032a49797fcfe1f2381c92f3c5fa34244bb47b25a35e
-+  __TEXT.__swift5_proto: 0x9ac sha256:47148872502eebc0dfc86af5fdd74a922bbe1dcf0586e7d9e714872eda72dd0f
-+  __TEXT.__swift5_reflstr: 0x306a sha256:be490502faa309e44e3824a41ea533ad93ebf865af5b55d5c40d8d721a55855a
-+  __TEXT.__oslogstring: 0x1dbe3 sha256:672efe840186f259804a0848bed1d5fcd79818de779f19a9958aa70cf9dad5dd
-+  __TEXT.__swift5_assocty: 0x438 sha256:1f9bc0cf4e4fe75a75f7d12b54f3d9c6c0eed3a0c0b9e283743ac800bb9e12a4
-+  __TEXT.__swift5_capture: 0x196c sha256:828293fc850a4df84b3c0dd4d241a5df228ea039cbe877aad71364c16b17e71b
-+  __TEXT.__swift5_builtin: 0xf0 sha256:3e81be96c4aa7b5f93a307c947174e38db6ee9fe0f3710acdc0a5fe4bdf70ec2
-+  __TEXT.__swift5_mpenum: 0x3c sha256:8f8422b1cc214e5981b33107162ea4b5a70b8d2c6d99aba3ea222db1c888f27e
-+  __TEXT.__swift_as_entry: 0x23c sha256:a05dfd88f8297c57d161a051360f09a6ed1d8691646147ad1791d0e42ff37f22
-+  __TEXT.__swift_as_ret: 0x270 sha256:672b54ced6653c8330119553ccfd517d07b418667aa8fae78bcf13db59695983
-+  __TEXT.__swift_as_cont: 0x434 sha256:24e219cf1854db74311f416ca85d2d2887e4e796c7aa488c8eb8d9f119f9ceaa
-+  __TEXT.__gcc_except_tab: 0xb440 sha256:1ee10bbb5b425ad372b368231855d68232aa02f6fb2f5a35d63ff2d7e6499f08
-   __TEXT.__ustring: 0x17c sha256:36365d3ed8acd2e2ebd94e8e33c2abc3bbfe0884ac2c3b6774661b1538837a26
--  __TEXT.__unwind_info: 0x7e78 sha256:ceed3cbf9aec77703b00a4434ce2db04ca712d7fb77be4492eb886746fae6bed
--  __TEXT.__eh_frame: 0x7af8 sha256:f34877c116e733f4652658d4ad45dba7a260f5be9a7e7833bc1087dc4aeb1e72
-+  __TEXT.__unwind_info: 0x7e58 sha256:901c005de292b32bc205afbb54d9f0bd64f29099c2e888683aa3fa3c0f6ea68d
-+  __TEXT.__eh_frame: 0x7a74 sha256:c3869dfe04cc9bd62c3c268138935ccbf5aa4ea1daadac84b8cb630bea15b578
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1e08 sha256:3aee6f0cfe102be4e6231120dedc26534c850f350ab75e8f04c4957b2c04b384
--  __DATA_CONST.__objc_classlist: 0x8d8 sha256:8a19149d904833a3d039a85156ae486e44e999fb7960b244b9f0429c9028a06e
--  __DATA_CONST.__objc_catlist: 0x50 sha256:19f136e1ce939e57b081ff8e840621397b91016df36909d809b83900e6944002
--  __DATA_CONST.__objc_protolist: 0x140 sha256:3b7178839daafb97777a7c217c5226f080da7d548b769ee54f74ae82b0a86793
-+  __DATA_CONST.__const: 0x1e28 sha256:58947c4855523be834ebc2aeecbb8d88505e72e3445b085fadd790bd25c7ff8c
-+  __DATA_CONST.__objc_classlist: 0x8d0 sha256:0c76785583e9f5bb3d2c7cc2c0596a4c044e67eba5d67fa66ce2775411572936
-+  __DATA_CONST.__objc_catlist: 0x50 sha256:7c0442744da0fdec209129fe758ba0f932cff3158709ee92f9a0a1ca912ff9cb
-+  __DATA_CONST.__objc_protolist: 0x148 sha256:b0e7d854cc463342bfd568840876e1aa6c0ab85e11875db0acaacc755b8a1d27
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__weak_got: 0x8 sha256:baed7a8f4fe06577baf9413d1425189458482e4f64d55b4f5cc304378385a036
--  __DATA_CONST.__objc_selrefs: 0x5360 sha256:584a2de49de1b86264233a52f9a063c7058fd0ee5757c78927ba7dd32c58fcf2
--  __DATA_CONST.__objc_protorefs: 0x80 sha256:0ea5d03fe39d9dde1dabb7845bd2d626a4642e66d1af7f1a1d0ab47920754d86
--  __DATA_CONST.__objc_superrefs: 0x408 sha256:067b3299dd5b6580360c8451a1a92d867b64e523dc8de0bc020b01c4f691b3f9
--  __DATA_CONST.__objc_arraydata: 0x198 sha256:72070b8a640f577177240347386e3318d3f5b95df351bdab7b506a1313876c4c
--  __DATA_CONST.__got: 0x26b8 sha256:b0c6906aae3d586f12a513c1f17a95fdf65b06309a674186ebdfcd737e5cb7ab
--  __AUTH_CONST.__const: 0xc8a0 sha256:378aaa9a30c83dc1b93f075c6d5f9142d6552d4a3fc4138afde1f47b1ad2a565
--  __AUTH_CONST.__cfstring: 0x80a0 sha256:5d0bfca675067f69068337c63d9ce1ba1fe6ddc4f5549e12460557f6f99e3c5e
--  __AUTH_CONST.__objc_const: 0x12770 sha256:67af8ab24224a7ccec8da5fa49af7616536412121ff254a9364c6e3be4c3ee3b
--  __AUTH_CONST.__weak_auth_got: 0x28 sha256:4a7d5a6862c5431b2249d57b76660013b16903a5dadf666d8b652501384c4219
--  __AUTH_CONST.__objc_arrayobj: 0x48 sha256:efe659578a7f9d0f2fa225314f483822b79ba3dded5fd926a307fcb1911aa5d2
--  __AUTH_CONST.__objc_intobj: 0x558 sha256:26db4dff2741fb5e683c0c624a649ca2d243e63ba2463b4f1d1a7be56b1fff4a
--  __AUTH_CONST.__objc_dictobj: 0x78 sha256:068088f43685c591a95747ed11415ea9f15a57b23d9f64ccc6be9f5ee5cee96c
--  __AUTH_CONST.__objc_floatobj: 0x20 sha256:ce443276bff1360df5900016fc78d9a4e90fbe1d91f1d98cdce1e017973b4375
--  __AUTH_CONST.__objc_doubleobj: 0x10 sha256:c9567c182591d4557eb40fc412d44b99b99018233e73b27b3de96c521a587dfb
--  __AUTH_CONST.__auth_got: 0x4e28 sha256:266633ff64b1577469210c73c0527e62f1c24a91e92e934012bd34c6286c7ea9
--  __AUTH.__objc_data: 0x1200 sha256:0a2206eb99a59540eae5f9ca6626eace4acb36cdd971cdcd175b2a861d359436
--  __AUTH.__data: 0x1090 sha256:3f8a685afd925e10d5e17a140538521921dda32d7b5e354fe5856eeb256e7946
-+  __DATA_CONST.__weak_got: 0x8 sha256:0187a61bf3fae6fc3b3aa794eddabd32ea418a3c89d235dd3a82b6bd02e4fd49
-+  __DATA_CONST.__objc_selrefs: 0x5350 sha256:f5d226719fda82f83a5aece18ebb2f1c427d9e66ff75de98e49d4189291a4a56
-+  __DATA_CONST.__objc_protorefs: 0x88 sha256:2021af1105bbd042b4934476eb9ac486415c4b135f5758346a58c6d4cbeffeac
-+  __DATA_CONST.__objc_superrefs: 0x408 sha256:9a9f417e81d4cf4d857e1f35afb86fe8adbcbfbab91ae96be3fd6681481c5ac1
-+  __DATA_CONST.__objc_arraydata: 0x1c0 sha256:4fb1c367b3ac72a36a7e3f42a6914b62b059e940bbb7e66a80f51630b322673f
-+  __DATA_CONST.__got: 0x26b0 sha256:c538b765c153795d22360c01e43d851a79b79dc999642a722a5ff1549aeb29c9
-+  __AUTH_CONST.__const: 0xc840 sha256:3b326b755aa3dabe1ab8bb95f570407f1aacb6d9e99b988d72644e2027467270
-+  __AUTH_CONST.__cfstring: 0x8080 sha256:2edc0e64c8c3dbafda98f0fff28879c62456c81f40657eb73bdc9247f578482a
-+  __AUTH_CONST.__objc_const: 0x12860 sha256:ad5d48d46ffb420598ea0168c2b941da5fd12846f10df6f7185934b13ded4618
-+  __AUTH_CONST.__weak_auth_got: 0x28 sha256:ce730ac904d7ee375ed02cc55451c60f1221ea40d155b3549317863900e04169
-+  __AUTH_CONST.__objc_arrayobj: 0x60 sha256:00281736575e72ac539d4361e1fa967d69df495b3f7d03b738e9d12d2e5ee972
-+  __AUTH_CONST.__objc_intobj: 0x5d0 sha256:805ee1575136be03ac3a5b170f8cc837e5b83158b0c7e0d0154d57be5f229b0e
-+  __AUTH_CONST.__objc_dictobj: 0x78 sha256:ec0302227653923f571f0e9c2b884891e218747381d5fc00ea9d93db4c714539
-+  __AUTH_CONST.__objc_floatobj: 0x20 sha256:63307c09f4ff1ef71dea61457293214bfb15144fd647888a2c3c5a191d5f7822
-+  __AUTH_CONST.__objc_doubleobj: 0x10 sha256:feae7402f059a93ce2f1322250444bde9264a67bbf61d126a4fe8ffc7282416f
-+  __AUTH_CONST.__auth_got: 0x4e50 sha256:5898dc2c09aba93100317e205cef554a88718690a3068029bfb7d9dcdbef1f26
-+  __AUTH.__objc_data: 0x11b8 sha256:2787ff3d33dfa4fe01fa92c9ebf71bea4a9f36dfbb57fc4fb36951286d634333
-+  __AUTH.__data: 0x1090 sha256:042a75d5509ec6da3498d1728d7ce4c5bba3a3dfc51283d9600b01000f962840
-   __DATA.__objc_ivar: 0x7a4 sha256:fdd917221a7d26cd01ddd2d9a009de36477a6218dd30fa15e7fe16ac6f1b0bb0
--  __DATA.__data: 0x1cb8 sha256:cf6402ea2d14d62754a56cc2c9bd79f37f4809bcd950de910c25d6e69e274864
--  __DATA.__bss: 0x9f30 sha256:f536f107065e120358d4b9ed455eef6e35e6447089d8dadc00af93cf1b565c11
-+  __DATA.__data: 0x1cf8 sha256:de3627229871d6d8a9ed232c2fb7880f3481d28b9a04c77935b01f8e73b27ac1
-+  __DATA.__bss: 0x9da0 sha256:a669e20fa531a980eaa02a86019ffe5caecfc6bcf348963832e6c05ed1fcaca3
-   __DATA.__common: 0x380 sha256:d54f02b97ed5bc2a642756268b41d4b8f7a077e73224e1580d22436834a14db5
--  __DATA_DIRTY.__objc_data: 0x4a50 sha256:9ff5b0736e38d05057ff0fe36383fbc29f13f94a0eabf3fb07dfdc7e59097be9
--  __DATA_DIRTY.__data: 0x4960 sha256:6ad37b1cfe63cbd907792115c6742c93b6f714162da9777391d4e9f1c84790a0
-+  __DATA_DIRTY.__objc_data: 0x49b0 sha256:f7189c5334c56c57f75085769e1fe595198f3dcc5ea6a2961d050b1501dccc0a
-+  __DATA_DIRTY.__data: 0x4920 sha256:39ae192cac5ac4a672c872f411c91094d8f0dc2fbc6dea142506f61f4e4f548c
-   __DATA_DIRTY.__bss: 0x84e8 sha256:044cbba4dd9a2d6c928f9ef272fa50f1060e73aabdfd57a3641fdd1665fde148
--  __DATA_DIRTY.__common: 0x4b0 sha256:5dd12ea686362c6ab295d3a6380c78076356cd1c6e143da2622211961d2c1cee
-+  __DATA_DIRTY.__common: 0x4a8 sha256:70ee23f6423379f9536427c7375859fff3545c4039a5fe7c377824190a1e156c
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/Frameworks/Intents.framework/Intents
-   - /System/Library/Frameworks/NaturalLanguage.framework/NaturalLanguage
-   - /System/Library/Frameworks/UIKit.framework/UIKit
 -  - /System/Library/PrivateFrameworks/AIMLExperimentationAnalytics.framework/AIMLExperimentationAnalytics
-   - /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
-   - /System/Library/PrivateFrameworks/BackgroundSystemTasks.framework/BackgroundSystemTasks
-   - /System/Library/PrivateFrameworks/Categories.framework/Categories
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: 80B0250C-8914-3E3B-B6CB-1CE0B03FF57D
 -  Functions: 12825
--  Symbols:   25213
--  CStrings:  5603
-+  UUID: 2E5A5473-C368-3DDE-A422-40C0F57A9075
+-  Symbols:   8826
+-  CStrings:  4583
 +  Functions: 12808
-+  Symbols:   25319
-+  CStrings:  5594
- 
++  Symbols:   8832
++  CStrings:  4575
 Symbols:
 + +[CDMPostProcessUtils copyVocDefinedValueIdentifiers:entitySpans:fromMatchingSpans:toParseGraph:]
 + +[CDMPostProcessUtils vocSpan:matchesParentEntity:definedValue:]
@@ -385,7 +306,6 @@ Symbols:
 + GCC_except_table983
 + GCC_except_table984
 + _OUTLINED_FUNCTION_622
-+ __MergedGlobals.117
 + __OBJC_$_PROTOCOL_REFS_CDMUserInitiatedQOSCommand
 + __OBJC_CLASS_PROTOCOLS_$_CDMAssistantNLUCommand
 + __OBJC_CLASS_PROTOCOLS_$_CDMEmbeddingGraphRequestCommand
@@ -421,183 +341,16 @@ Symbols:
 + __ZNSt3__16vectorIfNS_9allocatorIfEEE16__init_with_sizeB9fqe220106IPfS5_EEvT_T0_m
 + __ZNSt3__16vectorIfNS_9allocatorIfEEE20__throw_length_errorB9fqe220106Ev
 + __ZNSt3__18optionalINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEC1B9fqe220106IPKcLi0EEEOT_
-+ ___100+[CDMDataDispatcher dispatchCdmRequestData:requestId:withCurrentServiceGraph:dataDispatcherContext:]_block_invoke.448
-+ ___141+[CDMServiceGraphNode initWithName:forHandler:usingFunction:withError:cancellationBlock:requestId:dataDispatcherContext:serviceMetricsArray:]_block_invoke.435
-+ ___141+[CDMServiceGraphNode initWithName:forHandler:usingFunction:withError:cancellationBlock:requestId:dataDispatcherContext:serviceMetricsArray:]_block_invoke.437
-+ ___141+[CDMServiceGraphNode initWithName:forHandler:usingFunction:withError:cancellationBlock:requestId:dataDispatcherContext:serviceMetricsArray:]_block_invoke.449
-+ ___26-[CDMXPCClient connection]_block_invoke.500
-+ ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.677
-+ ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.679
-+ ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.680
-+ ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.684
-+ ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.692
-+ ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.694
-+ ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.695
-+ ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.696
-+ ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.697
-+ ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.706
-+ ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.709
-+ ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.716
-+ ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.723
-+ ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.733
-+ ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.736
-+ ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.741
-+ ___32-[CDMNLUServiceGraph buildGraph]_block_invoke_2.705
-+ ___32-[CDMNLUServiceGraph buildGraph]_block_invoke_2.738
-+ ___35-[CDMNLUPreprocessGraph buildGraph]_block_invoke.663
-+ ___35-[CDMNLUPreprocessGraph buildGraph]_block_invoke.665
-+ ___35-[CDMNLUPreprocessGraph buildGraph]_block_invoke.666
-+ ___35-[CDMNLUPreprocessGraph buildGraph]_block_invoke.676
-+ ___35-[CDMNLUPreprocessGraph buildGraph]_block_invoke.685
-+ ___35-[CDMNLUPreprocessGraph buildGraph]_block_invoke.688
-+ ___35-[CDMXPCClient areAssetsAvailable:]_block_invoke.505
 + ___37-[CDMServiceCenter waitForQueueDrain]_block_invoke
-+ ___37-[CDMServiceGraph buildGraphInternal]_block_invoke.480
-+ ___38-[CDMEmbeddingServiceGraph buildGraph]_block_invoke.587
-+ ___39-[CDMHelloWorldServiceGraph buildGraph]_block_invoke.650
-+ ___41-[CDMSsuInferenceServiceGraph buildGraph]_block_invoke.645
-+ ___41-[CDMSsuInferenceServiceGraph buildGraph]_block_invoke.649
-+ ___44-[CDMServiceCenter handleSetup:forCallback:]_block_invoke.654
-+ ___44-[CDMServiceCenter handleSetup:forCallback:]_block_invoke.657
-+ ___44-[CDMServiceCenter handleSetup:forCallback:]_block_invoke.664
-+ ___44-[CDMServiceCenter handleSetup:forCallback:]_block_invoke.673
-+ ___44-[CDMServiceCenter handleSetup:forCallback:]_block_invoke.680
-+ ___44-[CDMServiceCenter handleSetup:forCallback:]_block_invoke.681
-+ ___44-[CDMServiceCenter handleSetup:forCallback:]_block_invoke.687
-+ ___44-[CDMServiceCenter handleSetup:forCallback:]_block_invoke_2.688
-+ ___44-[CDMXPCClient doHandleCommand:forCallback:]_block_invoke.525
-+ ___44-[CDMXPCClient warmupWithCompletionHandler:]_block_invoke.509
-+ ___45-[CDMServiceCenter handleWarmup:forCallback:]_block_invoke.631
-+ ___45-[CDMShortcutDetectorServiceGraph buildGraph]_block_invoke.660
-+ ___45-[CDMShortcutDetectorServiceGraph buildGraph]_block_invoke.668
-+ ___45-[CDMShortcutDetectorServiceGraph buildGraph]_block_invoke.673
-+ ___46-[CDMServiceCenter handleCommand:forCallback:]_block_invoke.619
-+ ___46-[CDMServiceCenter handleCommand:forCallback:]_block_invoke.620
-+ ___46-[CDMServiceCenter handleCommand:forCallback:]_block_invoke.622
-+ ___47-[CDMXPCClient waitForDataDispatcherCompletion]_block_invoke.521
-+ ___63-[CDMXPCClient processCDMNluRequest:nullableCompletionHandler:]_block_invoke.516
 + ___66-[CDMFoundationClient waitForDataDispatcherCompletionWithTimeout:]_block_invoke
-+ ___76+[CDMServiceGraph dispatchServiceGraphRequestLogging:dataDispatcherContext:]_block_invoke.543
-+ ___76-[CDMCATIChildService buildLegacyBloomFilterAndExactMatchDictForInvocation:]_block_invoke.507
-+ ___77+[CDMDataDispatcher dispatchCdmResponseData:requestId:dataDispatcherContext:]_block_invoke.456
-+ ___77+[CDMDataDispatcher dispatchSpanizationData:requestId:dataDispatcherContext:]_block_invoke.488
-+ ___83+[CDMSSUService(SystemEvent) fetchVoiceShortcutsWithMatcher:assetCollection:block:]_block_invoke.484
-+ ___83-[CDMCATIChildService constructWeightMatrixForInference:numModels:guids:modelType:]_block_invoke.494
-+ ___87+[CDMServiceGraph dispatchServiceGraphResponseLogging:requestId:dataDispatcherContext:]_block_invoke.548
-+ ___89+[CDMDataDispatcher dispatchCurrentTurnTokenizationData:requestId:dataDispatcherContext:]_block_invoke.466
-+ ___Block_byref_object_copy_.1033
-+ ___Block_byref_object_copy_.11074
-+ ___Block_byref_object_copy_.1296
-+ ___Block_byref_object_copy_.2354
-+ ___Block_byref_object_copy_.2448
-+ ___Block_byref_object_copy_.3145
-+ ___Block_byref_object_copy_.3939
-+ ___Block_byref_object_copy_.4098
-+ ___Block_byref_object_copy_.452
-+ ___Block_byref_object_copy_.535
-+ ___Block_byref_object_copy_.5503
-+ ___Block_byref_object_copy_.622
-+ ___Block_byref_object_copy_.6468
-+ ___Block_byref_object_copy_.7178
-+ ___Block_byref_object_copy_.7656
-+ ___Block_byref_object_copy_.8614
-+ ___Block_byref_object_copy_.9405
-+ ___Block_byref_object_dispose_.1034
-+ ___Block_byref_object_dispose_.11075
-+ ___Block_byref_object_dispose_.1297
-+ ___Block_byref_object_dispose_.2355
-+ ___Block_byref_object_dispose_.2449
-+ ___Block_byref_object_dispose_.3146
-+ ___Block_byref_object_dispose_.3940
-+ ___Block_byref_object_dispose_.4099
-+ ___Block_byref_object_dispose_.453
-+ ___Block_byref_object_dispose_.536
-+ ___Block_byref_object_dispose_.5504
-+ ___Block_byref_object_dispose_.623
-+ ___Block_byref_object_dispose_.6469
-+ ___Block_byref_object_dispose_.7179
-+ ___Block_byref_object_dispose_.7657
-+ ___Block_byref_object_dispose_.8615
-+ ___Block_byref_object_dispose_.9406
 + ___block_descriptor_40_ea8_32s_e5_v8?0ls32l8
 + ___block_descriptor_65_e8_32s40s48s56bs_e29_v32?0"<CDMService>"8Q16^B24ls32l8s40l8s56l8s48l8
-+ ___block_literal_global.10505
-+ ___block_literal_global.10686
-+ ___block_literal_global.108
-+ ___block_literal_global.10968
-+ ___block_literal_global.11310
-+ ___block_literal_global.11464
-+ ___block_literal_global.11737
-+ ___block_literal_global.1364
-+ ___block_literal_global.1567
-+ ___block_literal_global.2377
-+ ___block_literal_global.390
-+ ___block_literal_global.392
-+ ___block_literal_global.395
-+ ___block_literal_global.3950
-+ ___block_literal_global.4670
-+ ___block_literal_global.470
-+ ___block_literal_global.472
-+ ___block_literal_global.472.8699
-+ ___block_literal_global.475
-+ ___block_literal_global.4783
-+ ___block_literal_global.4914
-+ ___block_literal_global.496
-+ ___block_literal_global.509
-+ ___block_literal_global.520
-+ ___block_literal_global.520.3917
-+ ___block_literal_global.523
-+ ___block_literal_global.538
-+ ___block_literal_global.557
-+ ___block_literal_global.5791
-+ ___block_literal_global.585
-+ ___block_literal_global.6062
-+ ___block_literal_global.6300
-+ ___block_literal_global.651
-+ ___block_literal_global.653
-+ ___block_literal_global.655
-+ ___block_literal_global.656
-+ ___block_literal_global.725
-+ ___block_literal_global.7305
-+ ___block_literal_global.7605
-+ ___block_literal_global.8021
-+ ___block_literal_global.810
-+ ___block_literal_global.8197
-+ ___block_literal_global.827
-+ ___block_literal_global.8283
-+ ___block_literal_global.8765
-+ ___block_literal_global.8810
-+ ___block_literal_global.9319
 + ___definedValueIdentifierAllowList_block_invoke
-+ ___swift_closure_destructor.103
-+ ___swift_closure_destructor.78
-+ ___swift_closure_destructor.88
 + __xpc_type_data
-+ _block_copy_helper.14
-+ _block_copy_helper.54
-+ _block_copy_helper.59
-+ _block_copy_helper.66
-+ _block_descriptor.16
-+ _block_descriptor.56
-+ _block_descriptor.61
-+ _block_descriptor.68
-+ _block_destroy_helper.15
-+ _block_destroy_helper.55
-+ _block_destroy_helper.60
-+ _block_destroy_helper.67
 + _definedValueIdentifierAllowList.allowList
 + _definedValueIdentifierAllowList.onceToken
 + _dispatch_barrier_async
 + _dispatch_barrier_sync
-+ _getNameStringToEnumDict.onceToken.8282
-+ _getNameStringToEnumDict.onceToken.8809
-+ _objc_msgSend$conformsToProtocol:
-+ _objc_msgSend$copyVocDefinedValueIdentifiers:entitySpans:fromMatchingSpans:toParseGraph:
-+ _objc_msgSend$processText:requestConnectionId:nlContext:previousUtterances:completionHandler:
-+ _objc_msgSend$setPreviousTurnInputs:
-+ _objc_msgSend$vocSpan:matchesParentEntity:definedValue:
-+ _objc_msgSend$waitForDataDispatcherCompletionWithTimeout:
-+ _objc_msgSend$waitForQueueDrain
 + _xpc_create_from_plist
 + _xpc_data_get_bytes_ptr
 + _xpc_data_get_length
@@ -855,7 +608,6 @@ Symbols:
 - __INSTANCE_METHODS_NLRouterExperimentTrialController
 - __IVARS_NLRouterExperimentTrialController
 - __METACLASS_DATA_NLRouterExperimentTrialController
-- __MergedGlobals.118
 - __PROPERTIES_NLRouterExperimentTrialController
 - __ZNKSt3__114default_deleteIN4siri8ontology9MatchInfoEEclB9fqe220100EPS3_
 - __ZNSt12length_errorC1B9fqe220100EPKc
@@ -883,176 +635,9 @@ Symbols:
 - __ZNSt3__16vectorIfNS_9allocatorIfEEE16__init_with_sizeB9fqe220100IPfS5_EEvT_T0_m
 - __ZNSt3__16vectorIfNS_9allocatorIfEEE20__throw_length_errorB9fqe220100Ev
 - __ZNSt3__18optionalINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEC1B9fqe220100IPKcLi0EEEOT_
-- ___100+[CDMDataDispatcher dispatchCdmRequestData:requestId:withCurrentServiceGraph:dataDispatcherContext:]_block_invoke.442
-- ___141+[CDMServiceGraphNode initWithName:forHandler:usingFunction:withError:cancellationBlock:requestId:dataDispatcherContext:serviceMetricsArray:]_block_invoke.429
-- ___141+[CDMServiceGraphNode initWithName:forHandler:usingFunction:withError:cancellationBlock:requestId:dataDispatcherContext:serviceMetricsArray:]_block_invoke.431
-- ___141+[CDMServiceGraphNode initWithName:forHandler:usingFunction:withError:cancellationBlock:requestId:dataDispatcherContext:serviceMetricsArray:]_block_invoke.443
-- ___26-[CDMXPCClient connection]_block_invoke.494
-- ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.671
-- ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.673
-- ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.674
-- ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.678
-- ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.682
-- ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.683
-- ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.685
-- ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.686
-- ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.690
-- ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.700
-- ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.703
-- ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.710
-- ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.717
-- ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.718
-- ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.721
-- ___32-[CDMNLUServiceGraph buildGraph]_block_invoke.735
-- ___32-[CDMNLUServiceGraph buildGraph]_block_invoke_2.699
-- ___32-[CDMNLUServiceGraph buildGraph]_block_invoke_2.732
-- ___35-[CDMNLUPreprocessGraph buildGraph]_block_invoke.654
-- ___35-[CDMNLUPreprocessGraph buildGraph]_block_invoke.657
-- ___35-[CDMNLUPreprocessGraph buildGraph]_block_invoke.658
-- ___35-[CDMNLUPreprocessGraph buildGraph]_block_invoke.659
-- ___35-[CDMNLUPreprocessGraph buildGraph]_block_invoke.679
-- ___35-[CDMNLUPreprocessGraph buildGraph]_block_invoke.682
-- ___35-[CDMXPCClient areAssetsAvailable:]_block_invoke.499
-- ___37-[CDMServiceGraph buildGraphInternal]_block_invoke.474
-- ___38-[CDMEmbeddingServiceGraph buildGraph]_block_invoke.581
-- ___39-[CDMHelloWorldServiceGraph buildGraph]_block_invoke.644
-- ___41-[CDMSsuInferenceServiceGraph buildGraph]_block_invoke.639
-- ___41-[CDMSsuInferenceServiceGraph buildGraph]_block_invoke.643
-- ___44-[CDMServiceCenter handleSetup:forCallback:]_block_invoke.611
-- ___44-[CDMServiceCenter handleSetup:forCallback:]_block_invoke.612
-- ___44-[CDMServiceCenter handleSetup:forCallback:]_block_invoke.619
-- ___44-[CDMServiceCenter handleSetup:forCallback:]_block_invoke.628
-- ___44-[CDMServiceCenter handleSetup:forCallback:]_block_invoke.635
-- ___44-[CDMServiceCenter handleSetup:forCallback:]_block_invoke.636
-- ___44-[CDMServiceCenter handleSetup:forCallback:]_block_invoke.642
-- ___44-[CDMServiceCenter handleSetup:forCallback:]_block_invoke_2.643
-- ___44-[CDMXPCClient doHandleCommand:forCallback:]_block_invoke.519
-- ___44-[CDMXPCClient warmupWithCompletionHandler:]_block_invoke.503
-- ___45-[CDMServiceCenter handleWarmup:forCallback:]_block_invoke.588
-- ___45-[CDMShortcutDetectorServiceGraph buildGraph]_block_invoke.654
-- ___45-[CDMShortcutDetectorServiceGraph buildGraph]_block_invoke.662
-- ___45-[CDMShortcutDetectorServiceGraph buildGraph]_block_invoke.667
-- ___46-[CDMServiceCenter handleCommand:forCallback:]_block_invoke.572
-- ___46-[CDMServiceCenter handleCommand:forCallback:]_block_invoke.577
-- ___46-[CDMServiceCenter handleCommand:forCallback:]_block_invoke.579
-- ___47-[CDMXPCClient waitForDataDispatcherCompletion]_block_invoke.515
-- ___63-[CDMXPCClient processCDMNluRequest:nullableCompletionHandler:]_block_invoke.510
-- ___76+[CDMServiceGraph dispatchServiceGraphRequestLogging:dataDispatcherContext:]_block_invoke.537
-- ___76-[CDMCATIChildService buildLegacyBloomFilterAndExactMatchDictForInvocation:]_block_invoke.501
-- ___77+[CDMDataDispatcher dispatchCdmResponseData:requestId:dataDispatcherContext:]_block_invoke.450
-- ___77+[CDMDataDispatcher dispatchSpanizationData:requestId:dataDispatcherContext:]_block_invoke.482
-- ___83+[CDMSSUService(SystemEvent) fetchVoiceShortcutsWithMatcher:assetCollection:block:]_block_invoke.478
-- ___83-[CDMCATIChildService constructWeightMatrixForInference:numModels:guids:modelType:]_block_invoke.488
-- ___87+[CDMServiceGraph dispatchServiceGraphResponseLogging:requestId:dataDispatcherContext:]_block_invoke.542
-- ___89+[CDMDataDispatcher dispatchCurrentTurnTokenizationData:requestId:dataDispatcherContext:]_block_invoke.460
-- ___Block_byref_object_copy_.10822
-- ___Block_byref_object_copy_.1251
-- ___Block_byref_object_copy_.2262
-- ___Block_byref_object_copy_.2357
-- ___Block_byref_object_copy_.3047
-- ___Block_byref_object_copy_.3830
-- ___Block_byref_object_copy_.3987
-- ___Block_byref_object_copy_.420
-- ___Block_byref_object_copy_.529
-- ___Block_byref_object_copy_.5355
-- ___Block_byref_object_copy_.585
-- ___Block_byref_object_copy_.6295
-- ___Block_byref_object_copy_.7018
-- ___Block_byref_object_copy_.7485
-- ___Block_byref_object_copy_.8446
-- ___Block_byref_object_copy_.9236
-- ___Block_byref_object_copy_.991
-- ___Block_byref_object_dispose_.10823
-- ___Block_byref_object_dispose_.1252
-- ___Block_byref_object_dispose_.2263
-- ___Block_byref_object_dispose_.2358
-- ___Block_byref_object_dispose_.3048
-- ___Block_byref_object_dispose_.3831
-- ___Block_byref_object_dispose_.3988
-- ___Block_byref_object_dispose_.421
-- ___Block_byref_object_dispose_.530
-- ___Block_byref_object_dispose_.5356
-- ___Block_byref_object_dispose_.586
-- ___Block_byref_object_dispose_.6296
-- ___Block_byref_object_dispose_.7019
-- ___Block_byref_object_dispose_.7486
-- ___Block_byref_object_dispose_.8447
-- ___Block_byref_object_dispose_.9237
-- ___Block_byref_object_dispose_.992
 - ___block_descriptor_64_e8_32s40s48s56bs_e29_v32?0"<CDMService>"8Q16^B24ls32l8s40l8s56l8s48l8
-- ___block_literal_global.10255
-- ___block_literal_global.10433
-- ___block_literal_global.105
-- ___block_literal_global.10716
-- ___block_literal_global.11060
-- ___block_literal_global.11214
-- ___block_literal_global.11483
-- ___block_literal_global.1319
-- ___block_literal_global.1514
-- ___block_literal_global.2285
-- ___block_literal_global.384
-- ___block_literal_global.3841
-- ___block_literal_global.386
-- ___block_literal_global.389
-- ___block_literal_global.4569
-- ___block_literal_global.460
-- ___block_literal_global.464
-- ___block_literal_global.466.8531
-- ___block_literal_global.4682
-- ___block_literal_global.469
-- ___block_literal_global.4813
-- ___block_literal_global.490
-- ___block_literal_global.503
-- ___block_literal_global.514
-- ___block_literal_global.514.3808
-- ___block_literal_global.517
-- ___block_literal_global.532
-- ___block_literal_global.548
-- ___block_literal_global.551
-- ___block_literal_global.5643
-- ___block_literal_global.5889
-- ___block_literal_global.6127
-- ___block_literal_global.641
-- ___block_literal_global.643
-- ___block_literal_global.645
-- ___block_literal_global.7142
-- ___block_literal_global.717
-- ___block_literal_global.7434
-- ___block_literal_global.7850
-- ___block_literal_global.790
-- ___block_literal_global.8029
-- ___block_literal_global.8115
-- ___block_literal_global.8597
-- ___block_literal_global.8642
-- ___block_literal_global.9150
-- ___swift_closure_destructor.104
-- ___swift_closure_destructor.110
-- ___swift_closure_destructor.114
-- ___swift_closure_destructor.48
-- ___swift_closure_destructor.53
 - ___swift_closure_destructor.65Tm
-- ___swift_closure_destructor.72
-- ___swift_closure_destructor.89
 - _associated conformance 13CDMFoundation33NLRouterExperimentTrialControllerC0C5ErrorOSHAASQ
-- _block_copy_helper.55
-- _block_copy_helper.67
-- _block_copy_helper.74
-- _block_descriptor.57
-- _block_descriptor.69
-- _block_descriptor.76
-- _block_destroy_helper.56
-- _block_destroy_helper.68
-- _block_destroy_helper.75
-- _getNameStringToEnumDict.onceToken.8114
-- _getNameStringToEnumDict.onceToken.8641
-- _objc_msgSend$booleanValue
-- _objc_msgSend$clientWithIdentifier:
-- _objc_msgSend$initWithUUIDString:
-- _objc_msgSend$isNLRouterAssetAvailable:
-- _objc_msgSend$levelForFactor:withNamespaceName:
-- _objc_msgSend$levelOneOfCase
-- _objc_msgSend$skipServiceSetup:
-- _objc_msgSend$suppressRewrite
 - _symbolic $s13CDMFoundation32ExperimentationAnalyticsManagingP
 - _symbolic $s13CDMFoundation36NLRouterExperimentControllerProtocolP
 - _symbolic _____ 13CDMFoundation33NLRouterExperimentTrialControllerC
@@ -1088,5 +673,4 @@ CStrings:
 - "Unable to convert strings to UUIDs, preventing trigger logging."
 - "b3989158-e981-45c1-9299-66e46f148788"
 - "com.apple.distnoted.matching"
-
 ```

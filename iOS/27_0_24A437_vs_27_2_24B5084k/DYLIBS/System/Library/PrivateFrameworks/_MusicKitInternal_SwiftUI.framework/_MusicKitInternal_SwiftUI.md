@@ -2,85 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/_MusicKitInternal_SwiftUI.framework/_MusicKitInternal_SwiftUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x12eae8` | `0x12f710` | **`+0xc28`** |
+| `__AUTH_CONST.__const` | `0x66b0` | `0x6828` | **`+0x178`** |
+| `__TEXT.__const` | `0xae34` | `0xaf54` | **`+0x120`** |
+| `__DATA.__bss` | `0x8ee0` | `0x8fe0` | **`+0x100`** |
+| `__TEXT.__cstring` | `0x2f18` | `0x2fb7` | **`+0x9f`** |
+| `__TEXT.__swift5_typeref` | `0xd0b8` | `0xd148` | **`+0x90`** |
+| `__TEXT.__constg_swiftt` | `0x4724` | `0x47a0` | **`+0x7c`** |
+| `__TEXT.__swift5_fieldmd` | `0x2e24` | `0x2e78` | **`+0x54`** |
+| `__TEXT.__oslogstring` | `0xb6a` | `0xbba` | **`+0x50`** |
+| `__TEXT.__swift5_reflstr` | `0x4265` | `0x42a5` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x2a00` | `0x2a38` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0x3a30` | `0x3a60` | **`+0x30`** |
+| `__DATA.__data` | `0x5e50` | `0x5e70` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x1760` | `0x1780` | **`+0x20`** |
+| `__TEXT.__swift5_assocty` | `0xb78` | `0xb90` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x770` | `0x780` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x274` | `0x280` | **`+0xc`** |
+| `__TEXT.__swift5_proto` | `0x498` | `0x4a0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -4026.110.3.0.0
--  __TEXT.__text: 0x1220f0
 +4026.210.18.1.0
-+  __TEXT.__text: 0x122ca4
-   __TEXT.__objc_methlist: 0x6a4
--  __TEXT.__const: 0xae34
--  __TEXT.__swift5_typeref: 0xd0b8
--  __TEXT.__cstring: 0x2f18
--  __TEXT.__swift5_capture: 0x1a34
--  __TEXT.__constg_swiftt: 0x4724
-+  __TEXT.__const: 0xaf54
-+  __TEXT.__constg_swiftt: 0x47a0
-+  __TEXT.__swift5_typeref: 0xd148
-+  __TEXT.__swift5_fieldmd: 0x2e78
-   __TEXT.__swift5_builtin: 0xc8
--  __TEXT.__swift5_reflstr: 0x4265
--  __TEXT.__swift5_fieldmd: 0x2e24
--  __TEXT.__swift5_assocty: 0xb78
--  __TEXT.__swift5_proto: 0x498
--  __TEXT.__swift5_types: 0x274
-+  __TEXT.__swift5_reflstr: 0x42a5
-+  __TEXT.__swift5_assocty: 0xb90
-+  __TEXT.__swift5_proto: 0x4a0
-+  __TEXT.__swift5_types: 0x280
-+  __TEXT.__cstring: 0x2fb7
-+  __TEXT.__oslogstring: 0xbba
-+  __TEXT.__swift5_capture: 0x1a34
-   __TEXT.__swift_as_entry: 0x108
-   __TEXT.__swift_as_ret: 0x100
-   __TEXT.__swift_as_cont: 0x2bc
-   __TEXT.__swift5_protos: 0x20
--  __TEXT.__oslogstring: 0xb6a
-   __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__unwind_info: 0x48c8
-+  __TEXT.__unwind_info: 0x48f8
-   __TEXT.__eh_frame: 0x3e60
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x770
-+  __DATA_CONST.__objc_selrefs: 0x780
-   __DATA_CONST.__objc_protorefs: 0x40
--  __DATA_CONST.__got: 0x1760
--  __AUTH_CONST.__const: 0x66b0
-+  __DATA_CONST.__got: 0x1780
-+  __AUTH_CONST.__const: 0x6828
-   __AUTH_CONST.__objc_const: 0x1550
--  __AUTH_CONST.__auth_got: 0x2a00
-+  __AUTH_CONST.__auth_got: 0x2a38
-   __AUTH.__objc_data: 0x210
-   __AUTH.__data: 0x1e60
--  __DATA.__data: 0x5e50
-+  __DATA.__data: 0x5e70
-   __DATA.__common: 0x3d0
-   __DATA_DIRTY.__objc_data: 0x50
-   __DATA_DIRTY.__data: 0x458
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 6637
--  Symbols:   2498
+-  Functions: 6636
+-  Symbols:   2364
 -  CStrings:  257
-+  Functions: 6663
-+  Symbols:   2509
++  Functions: 6662
++  Symbols:   2373
 +  CStrings:  261
- 
 Symbols:
 + _OUTLINED_FUNCTION_184
 + _associated conformance 25_MusicKitInternal_SwiftUI05AppleA0V4LogoV0dE04ViewAA4BodyAfGP_AfG
 + _get_witness_table 25_MusicKitInternal_SwiftUI0A23PickerCellRepresentableRz01_ab1_dE008PickableA4ItemR_r0_lqd0__0dE04ViewHD3_AeFPAEE11hoverEffect_9isEnabledQrqd___SbtAE011CustomHoverM0Rd__lFQOyAE6VStackVyAE15ModifiedContentVyAE6HStackVyAE05TupleT0VyANyANyANyAC01_aF0VAAE07ArtworkK0Vy_xGAE31AccessibilityAttachmentModifierVGAE08_OverlayZ0VyAE017StrokeBorderShapeK0VyAE16RoundedRectangleVAE5ColorVAE05EmptyK0VGGGAE14_PaddingLayoutVG_ALyARyANyAE4TextVAYGSg_ANyANyANyAtAE0G5TitleVy_xGAE022_EnvironmentKeyWritingZ0VySiSgGGA23_y12CoreGraphics7CGFloatVGGAYGAE012_ConditionalT0VyANyAgEE20accessibilityElement8childrenQrAE0X13ChildBehaviorV_tFQOyAPyAE7ForEachVy0aB00aJ10CollectionVyA41_6ArtistVGA41_0aJ2IDVARyANyAgEE11buttonStyleyQrqd__AE11ButtonStyleRd__lFQOyAE14NavigationLinkVyA16_s5NeverOG_AtAE25NavigationLinkButtonStyleVQo_AE024_EnvironmentKeyTransformZ0VySbGG_ANyA16_A13_GQPGGG_Qo_AYGA17_GSgANyA63_AYGSgQPGGAE6SpacerVANyANyANyAgEEAH_AIQrqd___SbtAeJRd__lFQOyANyA34_yA34_yA34_yA34_yANyANyAE5ImageVA23_yAE4FontVSgGGA23_yA78_5ScaleOGGANyA87_A23_yA6_SgGGGA34_yAgEE08progressK5StyleyQrqd__AE08ProgressK5StyleRd__lFQOyAE08ProgressK0VyA8_A8_G_AE016CircularProgressK5StyleVQo_ANyANyANyANyA78_AE016_ForegroundStyleZ0VyAE22HierarchicalShapeStyleVGGA82_GA86_GA89_GGGA8_GANyAgEEA49_yQrqd__AE20PrimitiveButtonStyleRd__lFQOyAE6ButtonVyA111_G_AE16PlainButtonStyleVQo_A89_GGAYG_AE09AutomaticqM0VQo_AE12_FrameLayoutVGA13_GA13_GQPGGAE01_t5ShapeZ0VyA4_GGG_A123_Qo_HO
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyAA5ImageVAA18_AspectRatioLayoutVGAA31AccessibilityAttachmentModifierVGAA4ViewHPAhaLHPAeaLHPyHC_AgA0lK0HPyHCHC_AjaMHPyHCHC
-+ _objc_msgSend$bundlePath
-+ _objc_msgSend$imageNamed:inBundle:withConfiguration:
 + _symbolic _____ 25_MusicKitInternal_SwiftUI05AppleA0V
 + _symbolic _____ 25_MusicKitInternal_SwiftUI05AppleA0V4LogoV
 + _symbolic _____ 25_MusicKitInternal_SwiftUI05AppleA0V4LogoV7VariantV

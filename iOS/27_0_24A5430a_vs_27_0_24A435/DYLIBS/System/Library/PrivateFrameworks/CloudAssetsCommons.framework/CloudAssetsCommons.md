@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/CloudAssetsCommons.framework/CloudAssetsCommons`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_11 : 20 -> 12

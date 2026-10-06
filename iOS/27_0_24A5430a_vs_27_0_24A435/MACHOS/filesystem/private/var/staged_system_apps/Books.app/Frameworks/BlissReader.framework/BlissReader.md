@@ -2,32 +2,33 @@
 
 > `/private/var/staged_system_apps/Books.app/Frameworks/BlissReader.framework/BlissReader`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2a4890` | `0x2a48dc` | **`+0x4c`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__const`
+- `__TEXT.__eh_frame`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__init_offsets`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 6655.0.0.0.0
--  __TEXT.__text: 0x2a4890
-+  __TEXT.__text: 0x2a48dc
-   __TEXT.__auth_stubs: 0x2ef0
-   __TEXT.__objc_stubs: 0x60960
-   __TEXT.__init_offsets: 0xc
+```text
 Functions:
 ~ sub_3c04c : 260 -> 264
 ~ sub_49858 -> sub_4985c : 3216 -> 3176

@@ -2,72 +2,38 @@
 
 > `/System/Library/Assistant/UIPlugins/SiriFindMyUIPlugin.siriUIBundle/Frameworks/SiriFindMyUI.framework/SiriFindMyUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5213c` | `0x531c4` | **`+0x1088`** |
+| `__TEXT.__swift5_typeref` | `0x40f8` | `0x4408` | **`+0x310`** |
+| `__TEXT.__const` | `0x4d04` | `0x4f14` | **`+0x210`** |
+| `__DATA.__data` | `0x23a8` | `0x2480` | **`+0xd8`** |
+| `__DATA.__bss` | `0x3ba8` | `0x3c48` | **`+0xa0`** |
+| `__AUTH.__data` | `0x1720` | `0x17a8` | **`+0x88`** |
+| `__TEXT.__constg_swiftt` | `0x19a4` | `0x19fc` | **`+0x58`** |
+| `__TEXT.__unwind_info` | `0x1628` | `0x1670` | **`+0x48`** |
+| `__TEXT.__swift5_fieldmd` | `0x115c` | `0x119c` | **`+0x40`** |
+| `__TEXT.__swift5_reflstr` | `0xb4c` | `0xb6c` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x19f8` | `0x1a10` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0xcc0` | `0xcd8` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x610` | `0x628` | **`+0x18`** |
+| `__TEXT.__eh_frame` | `0xdf0` | `0xdec` | **`-0x4`** |
+| `__TEXT.__swift5_proto` | `0x1d8` | `0x1dc` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0x188` | `0x18c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3605.15.2.0.0
--  __TEXT.__text: 0x4e288
 +3605.18.1.0.0
-+  __TEXT.__text: 0x4f274
-   __TEXT.__objc_methlist: 0x4f4
--  __TEXT.__const: 0x4d04
--  __TEXT.__constg_swiftt: 0x19a4
--  __TEXT.__swift5_typeref: 0x40f8
--  __TEXT.__swift5_reflstr: 0xb4c
--  __TEXT.__swift5_fieldmd: 0x115c
-+  __TEXT.__const: 0x4f14
-+  __TEXT.__constg_swiftt: 0x19fc
-+  __TEXT.__swift5_typeref: 0x4408
-+  __TEXT.__swift5_reflstr: 0xb6c
-+  __TEXT.__swift5_fieldmd: 0x119c
-   __TEXT.__swift5_builtin: 0xf0
--  __TEXT.__swift5_assocty: 0x610
--  __TEXT.__swift5_proto: 0x1d8
--  __TEXT.__swift5_types: 0x188
-+  __TEXT.__swift5_assocty: 0x628
-+  __TEXT.__swift5_proto: 0x1dc
-+  __TEXT.__swift5_types: 0x18c
-   __TEXT.__swift5_capture: 0x6f4
-   __TEXT.__cstring: 0x87a
-   __TEXT.__oslogstring: 0x593
 
-   __TEXT.__swift_as_ret: 0x40
-   __TEXT.__swift_as_cont: 0x64
-   __TEXT.__swift5_mpenum: 0x14
--  __TEXT.__unwind_info: 0x1c78
--  __TEXT.__eh_frame: 0xdf0
-+  __TEXT.__unwind_info: 0x1cd0
-+  __TEXT.__eh_frame: 0xdec
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x510
-   __DATA_CONST.__objc_protorefs: 0x40
--  __DATA_CONST.__got: 0xcc0
-+  __DATA_CONST.__got: 0xcd8
-   __AUTH_CONST.__const: 0x2640
-   __AUTH_CONST.__objc_const: 0x9a0
--  __AUTH_CONST.__auth_got: 0x19f8
-+  __AUTH_CONST.__auth_got: 0x1a10
-   __AUTH.__objc_data: 0x250
--  __AUTH.__data: 0x1720
--  __DATA.__data: 0x23a8
-+  __AUTH.__data: 0x17a8
-+  __DATA.__data: 0x2480
-   __DATA.__common: 0x348
-   __DATA_DIRTY.__bss: 0x80
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2258
 -  Symbols:   1247
 +  Functions: 2289
 +  Symbols:   1263
-   CStrings:  96
- 
 Symbols:
 + _associated conformance 12SiriFindMyUI25SnippetBackgroundModifier33_05DA7EEE614B51C3B9576AFEC0ADCB9ELLV05SwiftD004ViewG0AA4BodyAeFP_AE0P0
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA012_ConditionalD0VyACyAA6ZStackVyAA05TupleD0VyACy010SiriFindMyB00iJ11MapBaseViewVAA21_TraitWritingModifierVyAA014LayoutPriorityN3KeyVGG_ACyACyAA14LinearGradientVAA08_PaddingQ0VGAA14_OpacityEffectVGACyACyACyACyACyAJ19LocationDescriptionVAA010_FlexFrameQ0VGAVGAVGAJ018TextBackgroundBlurP0VGAQGQPGGAA05_ClipX0VyAA16RoundedRectangleVGGA11_GAA012_EnvironmentsoP0VyAJ012AvatarBubbleM5StyleVGGA20_yAJ11OffsetPointVGGA20_ySdGGAA0M0HPA28_AAA31_HPA24_AAA31_HPA18_AAA31_HPA17_AAA31_HPA11_AAA31_HPyHC_A16_AA0mP0HPyHCHC_A11_AAA31_HPyHCHC_A23_AAA32_HPyHCHC_A27_AAA32_HPyHCHC_A29_AAA32_HPyHCHC

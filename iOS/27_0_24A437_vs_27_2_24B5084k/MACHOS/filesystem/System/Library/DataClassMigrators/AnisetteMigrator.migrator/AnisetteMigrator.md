@@ -2,6 +2,8 @@
 
 > `/System/Library/DataClassMigrators/AnisetteMigrator.migrator/AnisetteMigrator`
 
+### Other Changes
+
 ```diff
 Symbols:
 + /AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/local/lib/libaks.a(libaks.o)

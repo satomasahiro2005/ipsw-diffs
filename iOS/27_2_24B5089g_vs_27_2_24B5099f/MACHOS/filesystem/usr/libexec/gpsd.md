@@ -2,10 +2,13 @@
 
 > `/usr/libexec/gpsd`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+- `__TEXT.__cstring`
 - `__TEXT.__oslogstring`
+
+### Other Changes
 
 ```diff
 Symbols:
@@ -13,5 +16,11 @@ Symbols:
 - /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/CoreGPS/install/Symbols/BuiltProducts/libGPSDaemon.a(GpsdClientManager-9b7803502808571536797e426677f1e3.o)
 CStrings:
 + "#version,CoreGPS-367.0.1,machContSec,%{public}.3f,BuildTime,{Sep 27 2026,23:16:15}"
++ "23:16:12"
++ "23:19:36"
++ "Sep 27 2026"
 - "#version,CoreGPS-367.0.1,machContSec,%{public}.3f,BuildTime,{Sep 13 2026,20:05:24}"
+- "20:05:20"
+- "20:09:50"
+- "Sep 13 2026"
 ```

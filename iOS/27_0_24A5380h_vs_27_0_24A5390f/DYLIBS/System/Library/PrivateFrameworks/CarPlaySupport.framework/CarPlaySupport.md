@@ -2,110 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/CarPlaySupport.framework/CarPlaySupport`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_doubleobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1682f8` | `0x16c478` | **`+0x4180`** |
+| `__TEXT.__gcc_except_tab` | `0x2314` | `0x31e8` | **`+0xed4`** |
+| `__TEXT.__eh_frame` | `0xc0` | `0x208` | **`+0x148`** |
+| `__AUTH_CONST.__objc_const` | `0x220b0` | `0x221e8` | **`+0x138`** |
+| `__AUTH.__objc_data` | `0x5020` | `0x5108` | **`+0xe8`** |
+| `__TEXT.__objc_methlist` | `0xbd1c` | `0xbddc` | **`+0xc0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x70d8` | `0x7190` | **`+0xb8`** |
+| `__TEXT.__unwind_info` | `0x2e18` | `0x2ed0` | **`+0xb8`** |
+| `__TEXT.__cstring` | `0x2873` | `0x2917` | **`+0xa4`** |
+| `__DATA_CONST.__const` | `0x3988` | `0x3a10` | **`+0x88`** |
+| `__DATA.__bss` | `0x1748` | `0x17c8` | **`+0x80`** |
+| `__TEXT.__const` | `0x3894` | `0x3914` | **`+0x80`** |
+| `__TEXT.__constg_swiftt` | `0x1a98` | `0x1afc` | **`+0x64`** |
+| `__AUTH_CONST.__objc_intobj` | `0x180` | `0x1e0` | **`+0x60`** |
+| `__TEXT.__oslogstring` | `0x3355` | `0x3395` | **`+0x40`** |
+| `__DATA.__data` | `0x4050` | `0x4088` | **`+0x38`** |
+| `__AUTH.__data` | `0xb50` | `0xb80` | **`+0x30`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x198` | `0x1c8` | **`+0x30`** |
+| `__DATA_CONST.__objc_arraydata` | `0x100` | `0x130` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0x16c8` | `0x16a0` | **`-0x28`** |
+| `__TEXT.__swift5_fieldmd` | `0xef0` | `0xf18` | **`+0x28`** |
+| `__TEXT.__swift5_reflstr` | `0xb42` | `0xb62` | **`+0x20`** |
+| `__TEXT.__swift5_assocty` | `0x340` | `0x358` | **`+0x18`** |
+| `__TEXT.__swift5_typeref` | `0xbc54` | `0xbc6a` | **`+0x16`** |
+| `__DATA.__objc_ivar` | `0xabc` | `0xacc` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x11c0` | `0x11d0` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x290` | `0x280` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1040` | `0x1048` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x4e8` | `0x4f0` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0xa4` | `0xa8` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0x108` | `0x10c` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -537.3.0.0.0
--  __TEXT.__text: 0x1682f8
--  __TEXT.__objc_methlist: 0xbd1c
--  __TEXT.__const: 0x3894
--  __TEXT.__cstring: 0x2873
--  __TEXT.__oslogstring: 0x3355
--  __TEXT.__gcc_except_tab: 0x2314
 +540.1.0.0.0
-+  __TEXT.__text: 0x16c478
-+  __TEXT.__objc_methlist: 0xbddc
-+  __TEXT.__const: 0x3914
-+  __TEXT.__cstring: 0x2917
-+  __TEXT.__oslogstring: 0x3395
-+  __TEXT.__gcc_except_tab: 0x31e8
-   __TEXT.__ustring: 0x4
--  __TEXT.__constg_swiftt: 0x1a98
--  __TEXT.__swift5_typeref: 0xbc54
--  __TEXT.__swift5_reflstr: 0xb42
--  __TEXT.__swift5_fieldmd: 0xef0
-+  __TEXT.__constg_swiftt: 0x1afc
-+  __TEXT.__swift5_typeref: 0xbc6a
-+  __TEXT.__swift5_reflstr: 0xb62
-+  __TEXT.__swift5_fieldmd: 0xf18
-   __TEXT.__swift5_builtin: 0x50
--  __TEXT.__swift5_assocty: 0x340
--  __TEXT.__swift5_capture: 0x290
--  __TEXT.__swift5_proto: 0xa4
--  __TEXT.__swift5_types: 0x108
--  __TEXT.__unwind_info: 0x2e18
--  __TEXT.__eh_frame: 0xc0
-+  __TEXT.__swift5_assocty: 0x358
-+  __TEXT.__swift5_capture: 0x280
-+  __TEXT.__swift5_proto: 0xa8
-+  __TEXT.__swift5_types: 0x10c
-+  __TEXT.__unwind_info: 0x2ed0
-+  __TEXT.__eh_frame: 0x208
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3988
--  __DATA_CONST.__objc_classlist: 0x4e8
-+  __DATA_CONST.__const: 0x3a10
-+  __DATA_CONST.__objc_classlist: 0x4f0
-   __DATA_CONST.__objc_catlist: 0xb0
-   __DATA_CONST.__objc_protolist: 0x380
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x70d8
-+  __DATA_CONST.__objc_selrefs: 0x7190
-   __DATA_CONST.__objc_protorefs: 0x118
-   __DATA_CONST.__objc_superrefs: 0x308
--  __DATA_CONST.__objc_arraydata: 0x100
--  __DATA_CONST.__got: 0x11c0
--  __AUTH_CONST.__const: 0x16c8
-+  __DATA_CONST.__objc_arraydata: 0x130
-+  __DATA_CONST.__got: 0x11d0
-+  __AUTH_CONST.__const: 0x16a0
-   __AUTH_CONST.__cfstring: 0x1f40
--  __AUTH_CONST.__objc_const: 0x220b0
--  __AUTH_CONST.__objc_intobj: 0x180
--  __AUTH_CONST.__objc_arrayobj: 0x198
-+  __AUTH_CONST.__objc_const: 0x221e8
-+  __AUTH_CONST.__objc_intobj: 0x1e0
-+  __AUTH_CONST.__objc_arrayobj: 0x1c8
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x1040
--  __AUTH.__objc_data: 0x5020
--  __AUTH.__data: 0xb50
--  __DATA.__objc_ivar: 0xabc
--  __DATA.__data: 0x4050
--  __DATA.__bss: 0x1748
-+  __AUTH_CONST.__auth_got: 0x1048
-+  __AUTH.__objc_data: 0x5108
-+  __AUTH.__data: 0xb80
-+  __DATA.__objc_ivar: 0xacc
-+  __DATA.__data: 0x4088
-+  __DATA.__bss: 0x17c8
-   __DATA.__common: 0x210
-   - /System/Library/Frameworks/CarPlay.framework/CarPlay
-   - /System/Library/Frameworks/Contacts.framework/Contacts
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5881
--  Symbols:   14850
+-  Symbols:   12061
 -  CStrings:  672
 +  Functions: 5948
-+  Symbols:   14976
++  Symbols:   12169
 +  CStrings:  679
- 
 Symbols:
 + -[CPSInstrumentClusterCardViewController _reevaluateShowETA]
 + -[CPSInstrumentClusterCardViewController platterConstraints]
@@ -400,35 +345,6 @@ Symbols:
 + _get_witness_table 7SwiftUI19_ConditionalContentVyAA08ModifiedD0VyAA6HStackVyAA05TupleD0VyAEyAEyAEyAEyAA7AnyViewVAA30_EnvironmentKeyWritingModifierVyAA5ColorVSgGGAMyAA4FontVSgGGAMyAA5ImageV5ScaleOGGAA12_FrameLayoutVG_AEyAA4TextVAMySiSgGGQPGGA3_GAEyAA6VStackVyAIyA9__A1_QPGGAA08_PaddingS0VGGAA0I0HPA12_AAA21_HPA11_AAA21_HPyHC_A3_AA0iM0HPyHCHC_A19_AAA21_HPA16_AAA21_HPyHC_A18_AAA22_HPyHCHCHC
 + _get_witness_table 7SwiftUI19_ConditionalContentVyACyAA08ModifiedD0VyAEyAA6VStackVyAA05TupleD0VyAEyAEyAA6HStackVyAIyACyACyACyAEyAEyAEyAEyAA5ImageVAA18_AspectRatioLayoutVGAA06_FrameL0VGAA24_ForegroundStyleModifierVyAA017HierarchicalShapeO0VGGARGAEyAEy14CarPlaySupport24UIImageViewRepresentable33_3BC8AA0C7504659CCCBAF336D028CCBELLVARGARGGAZGAEyAA6SpacerVARGG_AEyAEyAEyAA4TextVAA022_EnvironmentKeyWritingP0VySiSgGGAA05_FlexmL0VGAA08_PaddingL0VGAEyAA0W0PAAE06buttonO0yQrqd__AA06ButtonO0Rd__lFQOyAA6ButtonVyAMG_0stB030CPUISwiftUIButtonConfigurationO012ActionButtonO0VQo_ARGQPGGA22_GA19_G_AEyAEyAKyAA7ForEachVySayA_25VoiceButtonRepresentationCG10Foundation4UUIDVA_017VoiceActionButtonW0A1_LLVGGARGA22_GSgQPGGARGA19_GA60_GAGyACyACyAIyAEyAEyAEyA17_A14_yAA13TextAlignmentOGGAA010_FixedSizeL0VGA22_G_A9_QPGAIyA69__AEyAEyA2_A19_GA22_GA9_QPGGACyAIyAEyA8_A19_G_AGyAIyA69__A72_SgQPGGA75_AEyA53_A22_GQPGAA05EmptyW0VGGGGAAA24_HPA61_AAA24_HPA60_AAA24_HPA59_AAA24_HPA58_AAA24_HPyHC_ArA0wP0HPyHCHC_A19_AAA87_HPyHCHC_A60_AAA24_HPA59_AAA24_HPA58_AAA24_HPyHC_ArAA87_HPyHCHC_A19_AAA87_HPyHCHCHC_A85_AAA24_HPyHCHC
 + _get_witness_table 7SwiftUI6VStackVyAA12TupleContentVyAA4ViewPAAE10fontWeightyQrAA4FontV0H0VSgFQOyAA08ModifiedE0Vy14CarPlaySupport012LabeledValueF033_9EBDA4763611E3AED5BD15069ADB5F53LLVAA30_EnvironmentKeyWritingModifierVyAJSgGG_Qo__AOyAA6HStackVyAEyAY_AA4TextVAyA7ForEachVySaySi6offset_AP30AdditionalRouteInformationItemC7elementtGSiAEyA1__AgAEAHyQrAMFQOyAOyAP014AdditionalInfoF0ARLLVAWG_Qo_QPGGSgQPGGAA16_FlexFrameLayoutVGQPGGAaFHPyHC
-+ _objc_msgSend$_focusItemsForSlots:
-+ _objc_msgSend$_navBarFocusViewsLeftToRight
-+ _objc_msgSend$_nonPanFocusSlotOrder
-+ _objc_msgSend$_panModeFocusSlotOrder
-+ _objc_msgSend$_panelHostingViewInsets
-+ _objc_msgSend$_reevaluateShowETA
-+ _objc_msgSend$_sideButtonFocusViewsTopToBottom
-+ _objc_msgSend$_updateOptionsPanelOverlayAnimated:push:completion:
-+ _objc_msgSend$beginAppearanceTransition:animated:
-+ _objc_msgSend$convertPoint:toView:
-+ _objc_msgSend$effectiveUserInterfaceLayoutDirection
-+ _objc_msgSend$endAppearanceTransition
-+ _objc_msgSend$focusGuideFromMapControlToPicker
-+ _objc_msgSend$focusGuideFromPickerToMapControl
-+ _objc_msgSend$focusGuideFromTabbarToPicker
-+ _objc_msgSend$initWithTitleVariants:subtitleVariants:avatarImage:alertImage:actions:duration:usesMinimalStyle:showsCloseButton:delegate:
-+ _objc_msgSend$initWithType:value:symbol:symbolColor:
-+ _objc_msgSend$panelsHiddenForNavigationAlert
-+ _objc_msgSend$resolvedPlaybackProgress
-+ _objc_msgSend$routeDetailsForEVWithDetails:
-+ _objc_msgSend$setFocusGuideFromMapControlToPicker:
-+ _objc_msgSend$setFocusGuideFromPickerToMapControl:
-+ _objc_msgSend$setFocusGuideFromTabbarToPicker:
-+ _objc_msgSend$setPanelsHiddenForNavigationAlert:
-+ _objc_msgSend$symbolTintColor
-+ _objc_msgSend$systemGreenColor
-+ _objc_msgSend$systemOrangeColor
-+ _objc_msgSend$updateContentWithTitleVariants:subtitleVariants:avatarImage:alertImage:actions:duration:usesMinimalStyle:showsCloseButton:
-+ _objc_msgSend$updateCornerRadius
 + _symbolic $ss12IdentifiableP
 + _symbolic SO
 + _symbolic _____ 14CarPlaySupport26AdditionalRoutePrioritizerC
@@ -659,17 +575,6 @@ Symbols:
 - _get_witness_table 7SwiftUI19_ConditionalContentVyAA6HStackVyAA05TupleD0VyAA08ModifiedD0VyAIyAIyAIyAA7AnyViewVAA30_EnvironmentKeyWritingModifierVyAA5ColorVSgGGAMyAA4FontVSgGGAMyAA5ImageV5ScaleOGGAA12_FrameLayoutVG_AIyAA4TextVAMySiSgGGQPGGAIyAA6VStackVyAGyA9__A1_QPGGAA08_PaddingS0VGGAA0I0HPA11_AAA20_HPyHC_A18_AAA20_HPA15_AAA20_HPyHC_A17_AA0iM0HPyHCHCHC
 - _get_witness_table 7SwiftUI19_ConditionalContentVyACyAA08ModifiedD0VyAEyAA6VStackVyAA05TupleD0VyAEyAEyAA6HStackVyAIyACyACyAEyAEyAEyAEyAA5ImageVAA18_AspectRatioLayoutVGAA06_FrameL0VGAA24_ForegroundStyleModifierVyAA017HierarchicalShapeO0VGGARGAZGAEyAA6SpacerVARGG_AEyAEyAEyAA4TextVAA022_EnvironmentKeyWritingP0VySiSgGGAA05_FlexmL0VGAA08_PaddingL0VGAEyAA4ViewPAAE06buttonO0yQrqd__AA06ButtonO0Rd__lFQOyAA6ButtonVyAMG_07CarPlayB030CPUISwiftUIButtonConfigurationO012ActionButtonO0VQo_ARGQPGGA15_GARG_AEyAEyAKyAA7ForEachVySay14CarPlaySupport25VoiceButtonRepresentationCG10Foundation4UUIDVA37_017VoiceActionButtonZ033_3BC8AA0C7504659CCCBAF336D028CCBELLVGGARGA15_GSgQPGGARGARGA54_GAGyACyACyAIyAEyAEyAEyA10_A7_yAA0T9AlignmentOGGAA010_FixedSizeL0VGA15_G_A2_QPGAIyA64__AEyAEyA37_07UIImageZ13RepresentableA45_LLVA12_GA15_GA2_QPGGACyAIyAEyA1_A12_G_AGyAIyA64__A69_SgQPGGA72_AEyA48_A15_GQPGAA05EmptyZ0VGGGGAAA17_HPA56_AAA17_HPA55_AAA17_HPA54_AAA17_HPA53_AAA17_HPyHC_ArA0zP0HPyHCHC_ArAA84_HPyHCHC_A54_AAA17_HPA53_AAA17_HPyHC_ArAA84_HPyHCHCHC_A82_AAA17_HPyHCHC
 - _get_witness_table 7SwiftUI6VStackVyAA12TupleContentVyAA4ViewPAAE10fontWeightyQrAA4FontV0H0VSgFQOyAA08ModifiedE0Vy14CarPlaySupport012LabeledValueF033_9EBDA4763611E3AED5BD15069ADB5F53LLVAA30_EnvironmentKeyWritingModifierVyAJSgGG_Qo__AOyAA6HStackVyAEyAY_AA4TextVAyA7ForEachVySaySi6offset_AP30AdditionalRouteInformationItemC7elementtGSiAEyA1__AgAEAHyQrAMFQOyAOyAP014AdditionalInfoF0ARLLVAWG_Qo_QPGGSgAA6SpacerVQPGGAA16_FlexFrameLayoutVGQPGGAaFHPyHC
-- _objc_msgSend$_updateOptionsPanelOverlayAnimated:push:
-- _objc_msgSend$backgroundColorFromEstimatesStyle
-- _objc_msgSend$focusEnabled
-- _objc_msgSend$initWithTitleVariants:subtitleVariants:avatarImage:alertImage:actions:duration:usesMinimalStyle:delegate:
-- _objc_msgSend$initWithType:value:symbol:labelColor:
-- _objc_msgSend$labelTintColor
-- _objc_msgSend$previouslyFocusedView
-- _objc_msgSend$setBorderWidth:
-- _objc_msgSend$setFocusEnabled:
-- _objc_msgSend$setLastNavigationBarFocusedItem:
-- _objc_msgSend$updateContentWithTitleVariants:subtitleVariants:avatarImage:alertImage:actions:duration:usesMinimalStyle:
 - _swift_retain_x28
 - _symbolic _____yAAy_____yAByAByABy__________G_____G_____y_____GGAFGALGABy_____AFGG 7SwiftUI19_ConditionalContentV AA08ModifiedD0V AA5ImageV AA18_AspectRatioLayoutV AA06_FrameI0V AA24_ForegroundStyleModifierV AA017HierarchicalShapeL0V AA6SpacerV
 - _symbolic _____yAAy_____yAByAByABy__________G_____G_____y_____GGAFGALGABy_____AFGG_AByAByABy__________ySiSgGG_____G_____GABy_____y_____yACG______Qo_AFGt 7SwiftUI19_ConditionalContentV AA08ModifiedD0V AA5ImageV AA18_AspectRatioLayoutV AA06_FrameI0V AA24_ForegroundStyleModifierV AA017HierarchicalShapeL0V AA6SpacerV AA4TextV AA022_EnvironmentKeyWritingM0V AA05_FlexjI0V AA08_PaddingI0V AA4ViewPAAE06buttonL0yQrqd__AA06ButtonL0Rd__lFQO AA0Y0V 07CarPlayB030CPUISwiftUIButtonConfigurationO06ActionyL0V

@@ -2,18 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/AppStoreComponentsDaemonKit.framework/AppStoreComponentsDaemonKit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x11a20c` | `0x11a250` | **`+0x44`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
 
-```diff
+### Other Changes
 
- 27.0.46.2.1
--  __TEXT.__text: 0x11a20c
-+  __TEXT.__text: 0x11a250
-   __TEXT.__objc_methlist: 0x4b10
-   __TEXT.__const: 0x7190
-   __TEXT.__cstring: 0x71ac
+```diff
 Functions:
 ~ sub_226ddb404 -> sub_227622404 : 364 -> 368
 ~ sub_226ddb570 -> sub_227622574 : 748 -> 752

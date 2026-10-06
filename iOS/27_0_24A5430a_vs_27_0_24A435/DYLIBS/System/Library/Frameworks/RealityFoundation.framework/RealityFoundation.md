@@ -2,40 +2,22 @@
 
 > `/System/Library/Frameworks/RealityFoundation.framework/RealityFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5e7c70` | `0x5e7d30` | **`+0xc0`** |
+| `__AUTH_CONST.__objc_const` | `0x13348` | `0x13360` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x9b10` | `0x9b18` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1488` | `0x1490` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x1a2c` | `0x1a34` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 453.2.1.0.0
--  __TEXT.__text: 0x5e7c70
--  __TEXT.__objc_methlist: 0x1a2c
-+  __TEXT.__text: 0x5e7d30
-+  __TEXT.__objc_methlist: 0x1a34
-   __TEXT.__const: 0x6b594
-   __TEXT.__constg_swiftt: 0x1d0f8
-   __TEXT.__swift5_typeref: 0x15e18
-
-   __DATA_CONST.__objc_classlist: 0x9b8
-   __DATA_CONST.__objc_protolist: 0x100
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1488
-+  __DATA_CONST.__objc_selrefs: 0x1490
-   __DATA_CONST.__objc_protorefs: 0x80
-   __DATA_CONST.__got: 0x19c8
-   __AUTH_CONST.__const: 0x9f718
--  __AUTH_CONST.__objc_const: 0x13348
--  __AUTH_CONST.__auth_got: 0x9b10
-+  __AUTH_CONST.__objc_const: 0x13360
-+  __AUTH_CONST.__auth_got: 0x9b18
-   __AUTH.__objc_data: 0x5e8
-   __AUTH.__data: 0x1a0e0
-   __DATA.__data: 0x11378
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 43934
--  Symbols:   107439
-+  Symbols:   107440
-   CStrings:  2284
- 
+-  Symbols:   107177
++  Symbols:   107178
 Symbols:
 + _swift_release_x10
 + _swift_retain_x15

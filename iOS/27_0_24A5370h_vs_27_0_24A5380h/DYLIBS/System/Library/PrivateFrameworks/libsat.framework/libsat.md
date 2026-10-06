@@ -2,65 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/libsat.framework/libsat`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x79f4` | `0x81fc` | **`+0x808`** |
+| `__TEXT.__gcc_except_tab` | `0x68` | `0xcc` | **`+0x64`** |
+| `__TEXT.__unwind_info` | `0x390` | `0x3e0` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x6c0` | `0x6c8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x79f4
-+  __TEXT.__text: 0x81fc
-   __TEXT.__objc_methlist: 0xa4
-   __TEXT.__const: 0x942
--  __TEXT.__gcc_except_tab: 0x68
-+  __TEXT.__gcc_except_tab: 0xcc
-   __TEXT.__cstring: 0x3e7
-   __TEXT.__constg_swiftt: 0x578
-   __TEXT.__swift5_typeref: 0x26c
+-109.0.0.0.1
++112.0.0.0.0
 
-   __TEXT.__swift5_types: 0x44
-   __TEXT.__swift5_capture: 0xac
-   __TEXT.__oslogstring: 0x9b
--  __TEXT.__unwind_info: 0x390
-+  __TEXT.__unwind_info: 0x3e0
-   __TEXT.__eh_frame: 0x1e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __AUTH_CONST.__cfstring: 0xc0
-   __AUTH_CONST.__objc_const: 0x6c8
-   __AUTH_CONST.__weak_auth_got: 0x10
--  __AUTH_CONST.__auth_got: 0x6c0
-+  __AUTH_CONST.__auth_got: 0x6c8
-   __AUTH.__objc_data: 0x278
-   __AUTH.__data: 0x5f0
-   __DATA.__objc_ivar: 0x4
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 290
--  Symbols:   498
--  CStrings:  52
+-  Symbols:   396
+-  CStrings:  46
 +  Functions: 305
-+  Symbols:   530
-+  CStrings:  51
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
++  Symbols:   416
++  CStrings:  45
 Symbols:
 + GCC_except_table12
 + GCC_except_table14
@@ -90,5 +57,4 @@ Symbols:
 - GCC_except_table9
 CStrings:
 - "109.0.0.0.1"
-
 ```

@@ -2,77 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/IntelligenceFlowProto.framework/IntelligenceFlowProto`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7741d8` | `0x6f3060` | **`-0x81178`** |
+| `__DATA.__bss` | `0x120c80` | `0x107d80` | **`-0x18f00`** |
+| `__TEXT.__const` | `0xc2414` | `0xb4954` | **`-0xdac0`** |
+| `__AUTH.__data` | `0x1b428` | `0x16b70` | **`-0x48b8`** |
+| `__TEXT.__eh_frame` | `0x4e0c8` | `0x49918` | **`-0x47b0`** |
+| `__DATA.__data` | `0x26ba0` | `0x22bf0` | **`-0x3fb0`** |
+| `__TEXT.__unwind_info` | `0x37088` | `0x340f0` | **`-0x2f98`** |
+| `__TEXT.__swift5_typeref` | `0x16a9a` | `0x14e36` | **`-0x1c64`** |
+| `__TEXT.__swift5_fieldmd` | `0x1a1d4` | `0x18654` | **`-0x1b80`** |
+| `__TEXT.__constg_swiftt` | `0x14af8` | `0x132a8` | **`-0x1850`** |
+| `__TEXT.__swift5_proto` | `0xa154` | `0x94dc` | **`-0xc78`** |
+| `__DATA_CONST.__const` | `0xa6f8` | `0x9c58` | **`-0xaa0`** |
+| `__TEXT.__cstring` | `0xac39` | `0xa319` | **`-0x920`** |
+| `__AUTH_CONST.__const` | `0x8e10` | `0x85f0` | **`-0x820`** |
+| `__TEXT.__swift5_reflstr` | `0x10884` | `0x10164` | **`-0x720`** |
+| `__AUTH_CONST.__objc_const` | `0x37d8` | `0x3528` | **`-0x2b0`** |
+| `__TEXT.__swift5_types` | `0x1dc0` | `0x1b78` | **`-0x248`** |
+| `__TEXT.__swift5_assocty` | `0x17a0` | `0x1680` | **`-0x120`** |
+| `__AUTH.__objc_data` | `0x410` | `0x320` | **`-0xf0`** |
+| `__TEXT.__swift5_builtin` | `0xb4` | `0x8c` | **`-0x28`** |
+| `__DATA_DIRTY.__data` | `0x2ab90` | `0x2ab70` | **`-0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x138` | `0x120` | **`-0x18`** |
+| `__TEXT.__swift5_mpenum` | `0x70` | `0x58` | **`-0x18`** |
+
+### Other Changes
+
 ```diff
 
 -3600.151.4.501.6
--  __TEXT.__text: 0x7741d8
--  __TEXT.__const: 0xc2414
--  __TEXT.__swift5_typeref: 0x16a9a
--  __TEXT.__cstring: 0xac39
--  __TEXT.__constg_swiftt: 0x14af8
--  __TEXT.__swift5_reflstr: 0x10884
--  __TEXT.__swift5_fieldmd: 0x1a1d4
--  __TEXT.__swift5_proto: 0xa154
--  __TEXT.__swift5_types: 0x1dc0
--  __TEXT.__swift5_assocty: 0x17a0
--  __TEXT.__swift5_builtin: 0xb4
--  __TEXT.__swift5_mpenum: 0x70
--  __TEXT.__unwind_info: 0x37088
--  __TEXT.__eh_frame: 0x4e0c8
 +3600.156.3.501.1
-+  __TEXT.__text: 0x6f3060
-+  __TEXT.__const: 0xb4954
-+  __TEXT.__swift5_typeref: 0x14e36
-+  __TEXT.__cstring: 0xa319
-+  __TEXT.__constg_swiftt: 0x132a8
-+  __TEXT.__swift5_reflstr: 0x10164
-+  __TEXT.__swift5_fieldmd: 0x18654
-+  __TEXT.__swift5_proto: 0x94dc
-+  __TEXT.__swift5_types: 0x1b78
-+  __TEXT.__swift5_assocty: 0x1680
-+  __TEXT.__swift5_builtin: 0x8c
-+  __TEXT.__swift5_mpenum: 0x58
-+  __TEXT.__unwind_info: 0x340f0
-+  __TEXT.__eh_frame: 0x49918
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xa6f8
--  __DATA_CONST.__objc_classlist: 0x138
-+  __DATA_CONST.__const: 0x9c58
-+  __DATA_CONST.__objc_classlist: 0x120
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x8e10
--  __AUTH_CONST.__objc_const: 0x37d8
-+  __AUTH_CONST.__const: 0x85f0
-+  __AUTH_CONST.__objc_const: 0x3528
-   __AUTH_CONST.__auth_got: 0x4c8
--  __AUTH.__objc_data: 0x410
--  __AUTH.__data: 0x1b428
--  __DATA.__data: 0x26ba0
--  __DATA.__bss: 0x120c80
-+  __AUTH.__objc_data: 0x320
-+  __AUTH.__data: 0x16b70
-+  __DATA.__data: 0x22bf0
-+  __DATA.__bss: 0x107d80
-   __DATA_DIRTY.__objc_data: 0x7d0
--  __DATA_DIRTY.__data: 0x2ab90
-+  __DATA_DIRTY.__data: 0x2ab70
-   __DATA_DIRTY.__bss: 0x21e00
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 94813
 +  Functions: 88034
-   Symbols:   77
+
 -  CStrings:  986
 +  CStrings:  945
- 
 CStrings:
 + "IntelligenceFlow.FeatureStore.SecurityValidationEventPayload"
 - "VersionedTranscript.ArchiveViewPayload"

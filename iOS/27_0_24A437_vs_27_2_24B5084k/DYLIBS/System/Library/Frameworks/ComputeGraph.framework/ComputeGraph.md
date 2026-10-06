@@ -2,67 +2,33 @@
 
 > `/System/Library/Frameworks/ComputeGraph.framework/ComputeGraph`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x143f58` | `0x14424c` | **`+0x2f4`** |
+| `__TEXT.__const` | `0x1e904` | `0x1e944` | **`+0x40`** |
+| `__DATA.__data` | `0x2a88` | `0x2ab8` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x4f80` | `0x4fa8` | **`+0x28`** |
+| `__DATA.__bss` | `0x20f90` | `0x20f70` | **`-0x20`** |
+| `__TEXT.__eh_frame` | `0x94e8` | `0x9508` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x34b0` | `0x34d0` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x1148` | `0x1138` | **`-0x10`** |
+| `__DATA_CONST.__const` | `0x4e8` | `0x4d8` | **`-0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x60c8` | `0x60d4` | **`+0xc`** |
+| `__TEXT.__constg_swiftt` | `0x40f4` | `0x40ec` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -30.0.0.0.0
--  __TEXT.__text: 0x13f370
 +30.40.1.0.0
-+  __TEXT.__text: 0x13f654
-   __TEXT.__objc_methlist: 0x12cc
--  __TEXT.__const: 0x1e904
-+  __TEXT.__const: 0x1e944
-   __TEXT.__swift5_typeref: 0x43fc
-   __TEXT.__cstring: 0x691c
--  __TEXT.__swift5_reflstr: 0x34b0
-+  __TEXT.__swift5_reflstr: 0x34d0
-   __TEXT.__swift5_assocty: 0xb60
--  __TEXT.__constg_swiftt: 0x40f4
--  __TEXT.__swift5_fieldmd: 0x60c8
-+  __TEXT.__constg_swiftt: 0x40ec
-+  __TEXT.__swift5_fieldmd: 0x60d4
-   __TEXT.__swift5_proto: 0x111c
-   __TEXT.__swift5_types: 0x83c
-   __TEXT.__swift5_builtin: 0x424
 
-   __TEXT.__swift_as_ret: 0x5c
-   __TEXT.__swift_as_cont: 0x170
-   __TEXT.__swift5_types2: 0x14
--  __TEXT.__unwind_info: 0x6110
--  __TEXT.__eh_frame: 0x9520
-+  __TEXT.__unwind_info: 0x6148
-+  __TEXT.__eh_frame: 0x9540
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4e8
-+  __DATA_CONST.__const: 0x4d8
-   __DATA_CONST.__objc_classlist: 0xa0
-   __DATA_CONST.__objc_protolist: 0x110
-   __DATA_CONST.__objc_imageinfo: 0x8
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x11db0
-   __AUTH_CONST.__objc_const: 0x32c8
--  __AUTH_CONST.__auth_got: 0x1148
-+  __AUTH_CONST.__auth_got: 0x1138
-   __AUTH.__data: 0x12c0
--  __DATA.__data: 0x2a88
-+  __DATA.__data: 0x2ab8
-   __DATA.__common: 0x568
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/Metal.framework/Metal
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7405
--  Symbols:   20650
+-  Symbols:   20549
 +  Functions: 7394
-+  Symbols:   20633
-   CStrings:  879
- 
++  Symbols:   20532
 Symbols:
 + _$s12ComputeGraph0B10DefinitionV10OutputInfoV21effectiveSubdivisionsSivg
 + _$s12ComputeGraph0B10DefinitionV10OutputInfoV21effectiveSubdivisionsSivpMV

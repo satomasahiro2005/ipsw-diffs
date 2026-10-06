@@ -2,91 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/AssistantServices.framework/assistantd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3708a8` | `0x371fcc` | **`+0x1724`** |
+| `__TEXT.__oslogstring` | `0x45808` | `0x45d7e` | **`+0x576`** |
+| `__TEXT.__objc_methname` | `0x61874` | `0x61bac` | **`+0x338`** |
+| `__TEXT.__cstring` | `0x52b52` | `0x52dfa` | **`+0x2a8`** |
+| `__TEXT.__objc_stubs` | `0x472e0` | `0x47440` | **`+0x160`** |
+| `__DATA.__objc_const` | `0x34b30` | `0x34c58` | **`+0x128`** |
+| `__TEXT.__objc_methlist` | `0x235e8` | `0x23710` | **`+0x128`** |
+| `__DATA_CONST.__cfstring` | `0x12320` | `0x123e0` | **`+0xc0`** |
+| `__DATA.__objc_selrefs` | `0x15540` | `0x155e0` | **`+0xa0`** |
+| `__TEXT.__auth_stubs` | `0x3800` | `0x3840` | **`+0x40`** |
+| `__TEXT.__gcc_except_tab` | `0x3a70` | `0x3aac` | **`+0x3c`** |
+| `__TEXT.__unwind_info` | `0xa4e8` | `0xa520` | **`+0x38`** |
+| `__TEXT.__objc_methtype` | `0xff0f` | `0xff45` | **`+0x36`** |
+| `__DATA_CONST.__auth_got` | `0x1c10` | `0x1c30` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x267c` | `0x2694` | **`+0x18`** |
+| `__DATA_CONST.__objc_intobj` | `0x8b8` | `0x8d0` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x3e80` | `0x3e78` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__eh_frame`
+
+### Other Changes
 
 ```diff
 
 -3600.68.45.0.0
--  __TEXT.__text: 0x3708a8
--  __TEXT.__auth_stubs: 0x3800
--  __TEXT.__objc_stubs: 0x472e0
--  __TEXT.__objc_methlist: 0x235e8
 +3600.68.61.11.1
-+  __TEXT.__text: 0x371fcc
-+  __TEXT.__auth_stubs: 0x3840
-+  __TEXT.__objc_stubs: 0x47440
-+  __TEXT.__objc_methlist: 0x23710
-   __TEXT.__const: 0xed40
-   __TEXT.__dlopen_cstrs: 0x99d
--  __TEXT.__gcc_except_tab: 0x3a70
--  __TEXT.__cstring: 0x52b52
--  __TEXT.__oslogstring: 0x45808
-+  __TEXT.__gcc_except_tab: 0x3aac
-+  __TEXT.__cstring: 0x52dfa
-+  __TEXT.__oslogstring: 0x45d7e
-   __TEXT.__objc_classname: 0x51d5
--  __TEXT.__objc_methname: 0x61874
--  __TEXT.__objc_methtype: 0xff0f
-+  __TEXT.__objc_methname: 0x61bac
-+  __TEXT.__objc_methtype: 0xff45
-   __TEXT.__ustring: 0x32
--  __TEXT.__unwind_info: 0xa4e8
-+  __TEXT.__unwind_info: 0xa520
-   __TEXT.__eh_frame: 0x48
-   __DATA_CONST.__const: 0x143e8
--  __DATA_CONST.__cfstring: 0x12320
-+  __DATA_CONST.__cfstring: 0x123e0
-   __DATA_CONST.__objc_classlist: 0xd40
-   __DATA_CONST.__objc_catlist: 0x630
-   __DATA_CONST.__objc_protolist: 0x728
 
-   __DATA_CONST.__objc_superrefs: 0xb10
-   __DATA_CONST.__objc_arraydata: 0x480
-   __DATA_CONST.__objc_arrayobj: 0x198
--  __DATA_CONST.__objc_intobj: 0x8b8
-+  __DATA_CONST.__objc_intobj: 0x8d0
-   __DATA_CONST.__objc_dictobj: 0x2f8
-   __DATA_CONST.__objc_doubleobj: 0x30
-   __DATA_CONST.__objc_floatobj: 0x30
--  __DATA_CONST.__auth_got: 0x1c10
--  __DATA_CONST.__got: 0x3e80
-+  __DATA_CONST.__auth_got: 0x1c30
-+  __DATA_CONST.__got: 0x3e78
-   __DATA_CONST.__auth_ptr: 0x28
--  __DATA.__objc_const: 0x34b30
--  __DATA.__objc_selrefs: 0x15540
--  __DATA.__objc_ivar: 0x267c
-+  __DATA.__objc_const: 0x34c58
-+  __DATA.__objc_selrefs: 0x155e0
-+  __DATA.__objc_ivar: 0x2694
-   __DATA.__objc_data: 0x8480
-   __DATA.__data: 0x5d60
-   __DATA.__bss: 0xdd0
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libresolv.9.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 14601
 -  Symbols:   3001
 -  CStrings:  27824
 +  Functions: 14626
 +  Symbols:   3004
 +  CStrings:  27881
- 
 Symbols:
 + _AFCanSyncIFPVoices
 + _NSStringFromAFSiriRestrictionReasons

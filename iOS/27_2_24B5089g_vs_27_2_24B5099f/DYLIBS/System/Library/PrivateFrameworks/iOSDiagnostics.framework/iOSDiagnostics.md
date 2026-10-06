@@ -2,70 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/iOSDiagnostics.framework/iOSDiagnostics`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x64c0` | `0x5c9c` | **`-0x824`** |
+| `__AUTH_CONST.__objc_const` | `0x2298` | `0x1c68` | **`-0x630`** |
+| `__TEXT.__cstring` | `0xdd4` | `0xc0c` | **`-0x1c8`** |
+| `__TEXT.__objc_methlist` | `0xc4c` | `0xa8c` | **`-0x1c0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x878` | `0x778` | **`-0x100`** |
+| `__TEXT.__oslogstring` | `0x65c` | `0x568` | **`-0xf4`** |
+| `__DATA.__data` | `0x5a0` | `0x4e0` | **`-0xc0`** |
+| `__AUTH.__objc_data` | `0x370` | `0x2d0` | **`-0xa0`** |
+| `__AUTH_CONST.__cfstring` | `0x680` | `0x5e0` | **`-0xa0`** |
+| `__AUTH_CONST.__objc_dictobj` | `0x28` | `—` | **`-0x28`** |
+| `__DATA_CONST.__got` | `0x170` | `0x148` | **`-0x28`** |
+| `__TEXT.__unwind_info` | `0x260` | `0x240` | **`-0x20`** |
+| `__DATA_CONST.__const` | `0x3c8` | `0x3b8` | **`-0x10`** |
+| `__DATA_CONST.__objc_arraydata` | `0x18` | `0x8` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x58` | `0x48` | **`-0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x78` | `0x68` | **`-0x10`** |
+| `__DATA.__objc_ivar` | `0x90` | `0x84` | **`-0xc`** |
+
+### Other Changes
+
 ```diff
 
 -1374.40.40.0.0
--  __TEXT.__text: 0x6208
--  __TEXT.__objc_methlist: 0xc4c
 +1374.40.54.0.0
-+  __TEXT.__text: 0x5a14
-+  __TEXT.__objc_methlist: 0xa8c
-   __TEXT.__const: 0x90
--  __TEXT.__cstring: 0xdd4
--  __TEXT.__oslogstring: 0x65c
-+  __TEXT.__cstring: 0xc0c
-+  __TEXT.__oslogstring: 0x568
-   __TEXT.__gcc_except_tab: 0xd4
--  __TEXT.__unwind_info: 0x2f8
-+  __TEXT.__unwind_info: 0x2c8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3c8
--  __DATA_CONST.__objc_classlist: 0x58
--  __DATA_CONST.__objc_protolist: 0x78
-+  __DATA_CONST.__const: 0x3b8
-+  __DATA_CONST.__objc_classlist: 0x48
-+  __DATA_CONST.__objc_protolist: 0x68
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x878
-+  __DATA_CONST.__objc_selrefs: 0x778
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__objc_superrefs: 0x28
--  __DATA_CONST.__objc_arraydata: 0x18
--  __DATA_CONST.__got: 0x170
-+  __DATA_CONST.__objc_arraydata: 0x8
-+  __DATA_CONST.__got: 0x148
-   __AUTH_CONST.__const: 0xa0
--  __AUTH_CONST.__cfstring: 0x680
--  __AUTH_CONST.__objc_const: 0x2298
-+  __AUTH_CONST.__cfstring: 0x5e0
-+  __AUTH_CONST.__objc_const: 0x1c68
-   __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x370
--  __DATA.__objc_ivar: 0x90
--  __DATA.__data: 0x5a0
-+  __AUTH.__objc_data: 0x2d0
-+  __DATA.__objc_ivar: 0x84
-+  __DATA.__data: 0x4e0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/UIKit.framework/UIKit
 
-   - /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 218
 -  Symbols:   547
 -  CStrings:  114
 +  Functions: 201
 +  Symbols:   501
 +  CStrings:  101
- 
 Symbols:
 - -[DAAccessorySceneDelegate .cxx_destruct]
 - -[DAAccessorySceneDelegate hostingController]

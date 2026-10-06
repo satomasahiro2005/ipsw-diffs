@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AVConference.framework/Frameworks/ViceroyTrace.framework/ViceroyTrace`
 
-```diff
+### Section Size Changes
 
- 2235.63.1.2.0
--  __TEXT.__text: 0xb9378
-+  __TEXT.__text: 0xb93fc
-   __TEXT.__objc_methlist: 0x9338
-   __TEXT.__const: 0x27f0
-   __TEXT.__cstring: 0xf46e
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb9378` | `0xb93fc` | **`+0x84`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _OUTLINED_FUNCTION_3 -> _OUTLINED_FUNCTION_7 : 16 -> 24
 ~ _OUTLINED_FUNCTION_7 -> _OUTLINED_FUNCTION_4 : 24 -> 16

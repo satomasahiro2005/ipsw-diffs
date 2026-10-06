@@ -2,80 +2,42 @@
 
 > `/System/Library/AccessibilityBundles/UIKit.axbundle/UIKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15951c` | `0x15b3b8` | **`+0x1e9c`** |
+| `__TEXT.__oslogstring` | `0x24cb` | `0x2712` | **`+0x247`** |
+| `__AUTH_CONST.__objc_const` | `0x20740` | `0x20980` | **`+0x240`** |
+| `__AUTH.__objc_data` | `0xb40` | `0xc80` | **`+0x140`** |
+| `__AUTH_CONST.__cfstring` | `0x1dfc0` | `0x1e0e0` | **`+0x120`** |
+| `__TEXT.__cstring` | `0x19341` | `0x19451` | **`+0x110`** |
+| `__TEXT.__objc_methlist` | `0xfb5c` | `0xfc24` | **`+0xc8`** |
+| `__TEXT.__unwind_info` | `0x42b8` | `0x4308` | **`+0x50`** |
+| `__DATA_CONST.__objc_classlist` | `0x1b50` | `0x1b70` | **`+0x20`** |
+| `__TEXT.__const` | `0x1a8` | `0x1c0` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0xa80` | `0xa90` | **`+0x10`** |
+| `__DATA.__bss` | `0x400` | `0x408` | **`+0x8`** |
+| `__DATA.__data` | `0x698` | `0x6a0` | **`+0x8`** |
+| `__DATA_CONST.__const` | `0x1ee0` | `0x1ee8` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0xfd0` | `0xfd8` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5d80` | `0x5d88` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x35c4` | `0x35c8` | **`+0x4`** |
+| `__DATA_DIRTY.__bss` | `0x1e9` | `0x1ea` | **`+0x1`** |
+
+### Other Changes
+
 ```diff
 
 -3045.0.0.0.0
--  __TEXT.__text: 0x15951c
--  __TEXT.__objc_methlist: 0xfb5c
 +3048.0.0.0.0
-+  __TEXT.__text: 0x15b3b8
-+  __TEXT.__objc_methlist: 0xfc24
-   __TEXT.__dlopen_cstrs: 0xb8
--  __TEXT.__const: 0x1a8
--  __TEXT.__gcc_except_tab: 0x35c4
--  __TEXT.__cstring: 0x19341
--  __TEXT.__oslogstring: 0x24cb
-+  __TEXT.__const: 0x1c0
-+  __TEXT.__gcc_except_tab: 0x35c8
-+  __TEXT.__cstring: 0x19451
-+  __TEXT.__oslogstring: 0x2712
-   __TEXT.__ustring: 0x78
--  __TEXT.__unwind_info: 0x42b8
-+  __TEXT.__unwind_info: 0x4308
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1ee0
--  __DATA_CONST.__objc_classlist: 0x1b50
-+  __DATA_CONST.__const: 0x1ee8
-+  __DATA_CONST.__objc_classlist: 0x1b70
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5d80
-+  __DATA_CONST.__objc_selrefs: 0x5d88
-   __DATA_CONST.__objc_protorefs: 0x48
--  __DATA_CONST.__objc_superrefs: 0xa80
-+  __DATA_CONST.__objc_superrefs: 0xa90
-   __DATA_CONST.__objc_arraydata: 0x160
--  __DATA_CONST.__got: 0xfd0
-+  __DATA_CONST.__got: 0xfd8
-   __AUTH_CONST.__const: 0x17c0
--  __AUTH_CONST.__cfstring: 0x1dfc0
--  __AUTH_CONST.__objc_const: 0x20740
-+  __AUTH_CONST.__cfstring: 0x1e0e0
-+  __AUTH_CONST.__objc_const: 0x20980
-   __AUTH_CONST.__objc_intobj: 0x210
-   __AUTH_CONST.__objc_dictobj: 0x140
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0xb40
-+  __AUTH.__objc_data: 0xc80
-   __DATA.__objc_ivar: 0x130
--  __DATA.__data: 0x698
--  __DATA.__bss: 0x400
-+  __DATA.__data: 0x6a0
-+  __DATA.__bss: 0x408
-   __DATA_DIRTY.__objc_data: 0x105e0
-   __DATA_DIRTY.__common: 0x8
--  __DATA_DIRTY.__bss: 0x1e9
-+  __DATA_DIRTY.__bss: 0x1ea
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 5978
--  Symbols:   14039
+-  Symbols:   11884
 -  CStrings:  4203
 +  Functions: 5998
-+  Symbols:   14086
++  Symbols:   11930
 +  CStrings:  4215
- 
 Symbols:
 + +[UIPlatformGlassInteractionViewAccessibility _accessibilityPerformValidations:]
 + +[UIPlatformGlassInteractionViewAccessibility(SafeCategory) safeCategoryBaseClass]
@@ -292,8 +254,6 @@ Symbols:
 + ___os_log_helper_16_3_4_8_0_8_66_8_66_8_65
 + __collectAccessibleDescendantFrames
 + _kAXAppRestrictionsPreflightWorkspaceIdentifier
-+ _objc_msgSend$setSelectedSegmentIndex:
-+ _objc_msgSend$voiceOverOptions
 + _objc_release_x27
 - -[UITextViewAccessibility _axShouldExposeLinksForCommandClient]
 - GCC_except_table1105
@@ -465,7 +425,6 @@ Symbols:
 - GCC_except_table811
 - GCC_except_table833
 - GCC_except_table906
-- _objc_msgSend$_accessibilityGetContextID
 CStrings:
 + "AXRemoteElement"
 + "FloatingBarItemsFrame-%p"

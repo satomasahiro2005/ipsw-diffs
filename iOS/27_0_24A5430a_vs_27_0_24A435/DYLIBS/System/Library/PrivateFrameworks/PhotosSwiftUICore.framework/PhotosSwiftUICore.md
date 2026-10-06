@@ -2,97 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/PhotosSwiftUICore.framework/PhotosSwiftUICore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x284eb8` | `0x285f8c` | **`+0x10d4`** |
+| `__TEXT.__const` | `0x2a204` | `0x2a324` | **`+0x120`** |
+| `__DATA.__bss` | `0x9ba8` | `0x9cb8` | **`+0x110`** |
+| `__TEXT.__swift5_typeref` | `0x2cd64` | `0x2ce54` | **`+0xf0`** |
+| `__TEXT.__cstring` | `0x2991` | `0x2a21` | **`+0x90`** |
+| `__AUTH_CONST.__auth_got` | `0x3678` | `0x36f0` | **`+0x78`** |
+| `__TEXT.__constg_swiftt` | `0x15488` | `0x154f4` | **`+0x6c`** |
+| `__TEXT.__swift5_reflstr` | `0xa93e` | `0xa99e` | **`+0x60`** |
+| `__DATA.__data` | `0x73b8` | `0x7408` | **`+0x50`** |
+| `__DATA_DIRTY.__data` | `0x11750` | `0x117a0` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0xbbe0` | `0xbc28` | **`+0x48`** |
+| `__DATA_CONST.__got` | `0x1aa0` | `0x1ae0` | **`+0x40`** |
+| `__AUTH_CONST.__objc_const` | `0x9b80` | `0x9bb8` | **`+0x38`** |
+| `__TEXT.__eh_frame` | `0x5318` | `0x52e0` | **`-0x38`** |
+| `__TEXT.__swift5_fieldmd` | `0xaae8` | `0xab1c` | **`+0x34`** |
+| `__AUTH_CONST.__const` | `0x15a98` | `0x15ac0` | **`+0x28`** |
+| `__TEXT.__swift5_assocty` | `0x30b0` | `0x30c8` | **`+0x18`** |
+| `__DATA_CONST.__const` | `0x1bc8` | `0x1bd8` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1ef8` | `0x1f00` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x242c` | `0x2434` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x10f8` | `0x1100` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0xbe0` | `0xbe4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.234.0.0
--  __TEXT.__text: 0x284eb8
--  __TEXT.__objc_methlist: 0x242c
--  __TEXT.__swift5_typeref: 0x2cd64
--  __TEXT.__const: 0x2a204
--  __TEXT.__constg_swiftt: 0x15488
--  __TEXT.__swift5_reflstr: 0xa93e
--  __TEXT.__swift5_assocty: 0x30b0
--  __TEXT.__swift5_fieldmd: 0xaae8
 +912.0.235.0.0
-+  __TEXT.__text: 0x285f8c
-+  __TEXT.__objc_methlist: 0x2434
-+  __TEXT.__swift5_typeref: 0x2ce54
-+  __TEXT.__const: 0x2a324
-+  __TEXT.__constg_swiftt: 0x154f4
-+  __TEXT.__swift5_reflstr: 0xa99e
-+  __TEXT.__swift5_assocty: 0x30c8
-+  __TEXT.__swift5_fieldmd: 0xab1c
-   __TEXT.__swift5_builtin: 0x3ac
--  __TEXT.__cstring: 0x2991
--  __TEXT.__swift5_proto: 0x10f8
--  __TEXT.__swift5_types: 0xbe0
-+  __TEXT.__cstring: 0x2a21
-+  __TEXT.__swift5_proto: 0x1100
-+  __TEXT.__swift5_types: 0xbe4
-   __TEXT.__oslogstring: 0x14bf
-   __TEXT.__swift5_protos: 0x100
-   __TEXT.__swift_as_entry: 0x54
 
-   __TEXT.__swift5_mpenum: 0x120
-   __TEXT.__swift_as_ret: 0x48
-   __TEXT.__swift_as_cont: 0x98
--  __TEXT.__unwind_info: 0xbbe0
--  __TEXT.__eh_frame: 0x5318
-+  __TEXT.__unwind_info: 0xbc28
-+  __TEXT.__eh_frame: 0x52e0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1bc8
-+  __DATA_CONST.__const: 0x1bd8
-   __DATA_CONST.__objc_classlist: 0x328
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x1b0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1ef8
-+  __DATA_CONST.__objc_selrefs: 0x1f00
-   __DATA_CONST.__objc_protorefs: 0xd8
--  __DATA_CONST.__got: 0x1aa0
--  __AUTH_CONST.__const: 0x15a98
-+  __DATA_CONST.__got: 0x1ae0
-+  __AUTH_CONST.__const: 0x15ac0
-   __AUTH_CONST.__cfstring: 0x20
--  __AUTH_CONST.__objc_const: 0x9b80
--  __AUTH_CONST.__auth_got: 0x3678
-+  __AUTH_CONST.__objc_const: 0x9bb8
-+  __AUTH_CONST.__auth_got: 0x36f0
-   __AUTH.__objc_data: 0x7e8
-   __AUTH.__data: 0x1d00
--  __DATA.__data: 0x73b8
-+  __DATA.__data: 0x7408
-   __DATA.__common: 0x20
-   __DATA_DIRTY.__objc_data: 0x38f8
--  __DATA_DIRTY.__data: 0x11750
-+  __DATA_DIRTY.__data: 0x117a0
-   __DATA_DIRTY.__bss: 0x18cb0
-   __DATA_DIRTY.__common: 0x178
-   - /System/Library/Frameworks/AVKit.framework/AVKit
-
-   - /System/Library/Frameworks/SensitiveContentAnalysis.framework/SensitiveContentAnalysis
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-   - /System/Library/Frameworks/Symbols.framework/Symbols
 +  - /System/Library/Frameworks/TipKit.framework/TipKit
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/PrivateFrameworks/AttributeGraph.framework/AttributeGraph
-   - /System/Library/PrivateFrameworks/CollectionsInternal.framework/CollectionsInternal
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 21866
--  Symbols:   6787
+-  Symbols:   6286
 -  CStrings:  378
 +  Functions: 21917
-+  Symbols:   6800
++  Symbols:   6299
 +  CStrings:  382
- 
 Symbols:
 + _OUTLINED_FUNCTION_84
 + _PXPhotosUIFoundationBundle

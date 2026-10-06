@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/Vision.framework/libfaceCore.dylib`
 
-```diff
+### Section Size Changes
 
- 10.0.45.0.0
--  __TEXT.__text: 0x58ea84
-+  __TEXT.__text: 0x58eb00
-   __TEXT.__objc_methlist: 0x408
-   __TEXT.__const: 0x7a0c8
-   __TEXT.__gcc_except_tab: 0x22f8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x58ea84` | `0x58eb00` | **`+0x7c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN5apple6vision9libraries8facecore3mod15facerecognition23GradientLocalDescriptor24calc_keypoint_descriptorEPfPKNS5_9_KeypointEd : 1716 -> 1720
 ~ __ZN5apple6vision9libraries8facecore3mod7filters7dericheIfEEvPT_iificj : 1200 -> 1212

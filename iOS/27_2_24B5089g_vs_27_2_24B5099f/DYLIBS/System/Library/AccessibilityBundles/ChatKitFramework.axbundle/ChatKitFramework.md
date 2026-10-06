@@ -2,46 +2,26 @@
 
 > `/System/Library/AccessibilityBundles/ChatKitFramework.axbundle/ChatKitFramework`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2bd04` | `0x2bd90` | **`+0x8c`** |
+| `__AUTH_CONST.__const` | `0x5e0` | `0x600` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x708` | `0x718` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1810` | `0x1818` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3050.3.1.0.0
--  __TEXT.__text: 0x2a9e4
 +3050.3.5.0.0
-+  __TEXT.__text: 0x2aa70
-   __TEXT.__objc_methlist: 0x4dd0
-   __TEXT.__const: 0x38
--  __TEXT.__gcc_except_tab: 0x708
-+  __TEXT.__gcc_except_tab: 0x718
-   __TEXT.__cstring: 0x8cf0
-   __TEXT.__oslogstring: 0x98
--  __TEXT.__unwind_info: 0x12b8
-+  __TEXT.__unwind_info: 0x12c0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0xb90
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1810
-+  __DATA_CONST.__objc_selrefs: 0x1818
-   __DATA_CONST.__objc_superrefs: 0x3e8
-   __DATA_CONST.__got: 0x3c8
--  __AUTH_CONST.__const: 0x5e0
-+  __AUTH_CONST.__const: 0x600
-   __AUTH_CONST.__cfstring: 0xa860
-   __AUTH_CONST.__objc_const: 0xd428
-   __AUTH_CONST.__objc_intobj: 0xa8
-
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1482
 -  Symbols:   3746
 +  Functions: 1483
 +  Symbols:   3747
-   CStrings:  1418
- 
 Symbols:
 + GCC_except_table1063
 + GCC_except_table1087
@@ -121,5 +101,5 @@ Symbols:
 Functions:
 ~ -[AppCardContainerViewControllerAccessibility viewDidLayoutSubviews] : 584 -> 656
 + ___68-[AppCardContainerViewControllerAccessibility viewDidLayoutSubviews]_block_invoke_4
-~ -[CKAudioMessageBalloonViewAccessibility accessibilityCustomActions] : 272 -> 332
+~ -[CKAudioMessageBalloonViewAccessibility accessibilityCustomActions] : 284 -> 344
 ```

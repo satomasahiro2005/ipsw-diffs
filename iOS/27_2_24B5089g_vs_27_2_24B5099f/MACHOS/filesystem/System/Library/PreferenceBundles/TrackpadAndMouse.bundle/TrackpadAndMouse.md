@@ -2,15 +2,14 @@
 
 > `/System/Library/PreferenceBundles/TrackpadAndMouse.bundle/TrackpadAndMouse`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -2027.1.4.0.0
 +2027.1.6.0.0
-   __TEXT.__text: 0xb89c
-   __TEXT.__auth_stubs: 0xd30
-   __TEXT.__objc_stubs: 0x280
 ```

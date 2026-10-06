@@ -2,130 +2,66 @@
 
 > `/System/Library/PrivateFrameworks/CoreSuggestionsUI.framework/CoreSuggestionsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf2e84` | `0x104280` | **`+0x113fc`** |
+| `__DATA_DIRTY.__objc_data` | `0xed8` | `0x31f0` | **`+0x2318`** |
+| `__AUTH.__objc_data` | `0x2838` | `0x748` | **`-0x20f0`** |
+| `__TEXT.__swift5_typeref` | `0x1af78` | `0x1bbfe` | **`+0xc86`** |
+| `__DATA_DIRTY.__data` | `0x1ef8` | `0x2b00` | **`+0xc08`** |
+| `__AUTH.__data` | `0x1328` | `0xa60` | **`-0x8c8`** |
+| `__TEXT.__oslogstring` | `0x25d4` | `0x2bd3` | **`+0x5ff`** |
+| `__AUTH_CONST.__objc_const` | `0x6300` | `0x6858` | **`+0x558`** |
+| `__TEXT.__const` | `0x97cc` | `0x9cdc` | **`+0x510`** |
+| `__AUTH_CONST.__const` | `0x58f0` | `0x5de0` | **`+0x4f0`** |
+| `__TEXT.__cstring` | `0x4247` | `0x46be` | **`+0x477`** |
+| `__TEXT.__objc_methlist` | `0x3690` | `0x39fc` | **`+0x36c`** |
+| `__TEXT.__unwind_info` | `0x37e8` | `0x3b28` | **`+0x340`** |
+| `__DATA_DIRTY.__bss` | `0x24f0` | `0x2828` | **`+0x338`** |
+| `__TEXT.__constg_swiftt` | `0x3ef0` | `0x4188` | **`+0x298`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1cb8` | `0x1f00` | **`+0x248`** |
+| `__TEXT.__swift5_reflstr` | `0x1fe0` | `0x2200` | **`+0x220`** |
+| `__DATA.__bss` | `0x3fa0` | `0x3dd0` | **`-0x1d0`** |
+| `__TEXT.__swift5_fieldmd` | `0x25d0` | `0x279c` | **`+0x1cc`** |
+| `__AUTH_CONST.__cfstring` | `0x13c0` | `0x1560` | **`+0x1a0`** |
+| `__AUTH_CONST.__auth_got` | `0x2358` | `0x24e8` | **`+0x190`** |
+| `__TEXT.__swift5_capture` | `0xfb0` | `0x112c` | **`+0x17c`** |
+| `__DATA_CONST.__got` | `0x1280` | `0x1358` | **`+0xd8`** |
+| `__DATA_DIRTY.__common` | `0x78` | `0x150` | **`+0xd8`** |
+| `__TEXT.__eh_frame` | `0x1ca8` | `0x1d60` | **`+0xb8`** |
+| `__DATA.__data` | `0x3c28` | `0x3cc8` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0xc80` | `0xd18` | **`+0x98`** |
+| `__DATA.__common` | `0x1a8` | `0x128` | **`-0x80`** |
+| `__DATA_CONST.__objc_protolist` | `0x1c8` | `0x1e0` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0xaf8` | `0xb10` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x12c` | `0x140` | **`+0x14`** |
+| `__TEXT.__swift5_types` | `0x2f0` | `0x304` | **`+0x14`** |
+| `__DATA_CONST.__objc_protorefs` | `0xf0` | `0x100` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x114` | `0x120` | **`+0xc`** |
+| `__TEXT.__swift_as_cont` | `0xd8` | `0xe4` | **`+0xc`** |
+| `__TEXT.__swift_as_entry` | `0xa0` | `0xac` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x218` | `0x220` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x8` | `0x10` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x310` | `0x318` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x98` | `0x9c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xf2e84
--  __TEXT.__objc_methlist: 0x3690
--  __TEXT.__const: 0x97cc
-+  __TEXT.__text: 0x104280
-+  __TEXT.__objc_methlist: 0x39fc
-+  __TEXT.__const: 0x9cdc
-   __TEXT.__dlopen_cstrs: 0x1e8
--  __TEXT.__cstring: 0x4247
--  __TEXT.__swift5_typeref: 0x1af78
--  __TEXT.__swift5_capture: 0xfb0
--  __TEXT.__swift5_reflstr: 0x1fe0
--  __TEXT.__swift5_assocty: 0xaf8
--  __TEXT.__constg_swiftt: 0x3ef0
--  __TEXT.__swift5_fieldmd: 0x25d0
--  __TEXT.__swift5_builtin: 0x12c
--  __TEXT.__swift5_proto: 0x310
--  __TEXT.__swift5_types: 0x2f0
-+  __TEXT.__cstring: 0x46be
-+  __TEXT.__swift5_typeref: 0x1bbfe
-+  __TEXT.__swift5_capture: 0x112c
-+  __TEXT.__swift5_reflstr: 0x2200
-+  __TEXT.__swift5_assocty: 0xb10
-+  __TEXT.__constg_swiftt: 0x4188
-+  __TEXT.__swift5_fieldmd: 0x279c
-+  __TEXT.__swift5_builtin: 0x140
-+  __TEXT.__swift5_proto: 0x318
-+  __TEXT.__swift5_types: 0x304
-   __TEXT.__swift5_protos: 0xc
--  __TEXT.__oslogstring: 0x25d4
--  __TEXT.__swift_as_entry: 0xa0
--  __TEXT.__swift_as_ret: 0x98
--  __TEXT.__swift_as_cont: 0xd8
--  __TEXT.__swift5_mpenum: 0x8
-+  __TEXT.__oslogstring: 0x2bd3
-+  __TEXT.__swift5_mpenum: 0x10
-+  __TEXT.__swift_as_entry: 0xac
-+  __TEXT.__swift_as_ret: 0x9c
-+  __TEXT.__swift_as_cont: 0xe4
-   __TEXT.__gcc_except_tab: 0x1d0
-   __TEXT.__ustring: 0x6ec
--  __TEXT.__unwind_info: 0x37e8
--  __TEXT.__eh_frame: 0x1ca8
-+  __TEXT.__unwind_info: 0x3b28
-+  __TEXT.__eh_frame: 0x1d60
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xc80
--  __DATA_CONST.__objc_classlist: 0x218
-+  __DATA_CONST.__const: 0xd18
-+  __DATA_CONST.__objc_classlist: 0x220
-   __DATA_CONST.__objc_catlist: 0x10
--  __DATA_CONST.__objc_protolist: 0x1c8
-+  __DATA_CONST.__objc_protolist: 0x1e0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1cb8
--  __DATA_CONST.__objc_protorefs: 0xf0
-+  __DATA_CONST.__objc_selrefs: 0x1f00
-+  __DATA_CONST.__objc_protorefs: 0x100
-   __DATA_CONST.__objc_superrefs: 0x70
--  __DATA_CONST.__got: 0x1280
--  __AUTH_CONST.__const: 0x58f0
--  __AUTH_CONST.__cfstring: 0x13c0
--  __AUTH_CONST.__objc_const: 0x6300
-+  __DATA_CONST.__got: 0x1358
-+  __AUTH_CONST.__const: 0x5de0
-+  __AUTH_CONST.__cfstring: 0x1560
-+  __AUTH_CONST.__objc_const: 0x6858
-   __AUTH_CONST.__objc_intobj: 0xf0
--  __AUTH_CONST.__auth_got: 0x2358
--  __AUTH.__objc_data: 0x2838
--  __AUTH.__data: 0x1328
--  __DATA.__objc_ivar: 0x114
--  __DATA.__data: 0x3c28
--  __DATA.__bss: 0x3fa0
--  __DATA.__common: 0x1a8
--  __DATA_DIRTY.__objc_data: 0xed8
--  __DATA_DIRTY.__data: 0x1ef8
--  __DATA_DIRTY.__bss: 0x24f0
--  __DATA_DIRTY.__common: 0x78
-+  __AUTH_CONST.__auth_got: 0x24e8
-+  __AUTH.__objc_data: 0x748
-+  __AUTH.__data: 0xa60
-+  __DATA.__objc_ivar: 0x120
-+  __DATA.__data: 0x3cc8
-+  __DATA.__bss: 0x3dd0
-+  __DATA.__common: 0x128
-+  __DATA_DIRTY.__objc_data: 0x31f0
-+  __DATA_DIRTY.__data: 0x2b00
-+  __DATA_DIRTY.__bss: 0x2828
-+  __DATA_DIRTY.__common: 0x150
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/ContactsUI.framework/ContactsUI
+-8.16.0.0.0
++11.0.0.0.0
 
-   - /System/Library/Frameworks/EventKitUI.framework/EventKitUI
-   - /System/Library/Frameworks/FinanceKit.framework/FinanceKit
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 +  - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-   - /System/Library/Frameworks/Symbols.framework/Symbols
-   - /System/Library/Frameworks/UIKit.framework/UIKit
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7715
--  Symbols:   11722
--  CStrings:  790
+-  Symbols:   4670
+-  CStrings:  633
 +  Functions: 8130
-+  Symbols:   12384
-+  CStrings:  850
- 
-Sections:
-~ __TEXT.__dlopen_cstrs : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
++  Symbols:   4796
++  CStrings:  680
 Symbols:
 + +[SGRadarSuggestionBase writeEMLtoDiskForMessageWithIdentifier:]
 + -[SGBannerView bannerContent:didRequestExpansion:]
@@ -215,76 +151,6 @@ Symbols:
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBP015CoreSuggestionsB0E06bannerC10Background11colorScheme17applyGlassPlatterQrAA05ColorI0O_SbtFQOyAA15ModifiedContentVyAD021BannerExpandedActionsC0VAA14_PaddingLayoutVG_Qo_HO
 + _kCACornerCurveContinuous
 + _keypath_get_selector_callerNumber
-+ _objc_msgSend$CGColor
-+ _objc_msgSend$_formattedDate:
-+ _objc_msgSend$_openTapToRadarForFlight:
-+ _objc_msgSend$_radarAttachmentPath
-+ _objc_msgSend$_writeAttributeSetJSONToDisk:
-+ _objc_msgSend$actionsForSuggestion:excludingCreateEvent:
-+ _objc_msgSend$animateWithDuration:delay:options:animations:completion:
-+ _objc_msgSend$appendFormat:
-+ _objc_msgSend$assistantActionModalPresentingViewController:didAddCalendarEvent:
-+ _objc_msgSend$attachedTopOverlap
-+ _objc_msgSend$bannerContent:didRequestExpansion:
-+ _objc_msgSend$calendar
-+ _objc_msgSend$calendarColor
-+ _objc_msgSend$callerNumber
-+ _objc_msgSend$colorWithCGColor:
-+ _objc_msgSend$configureWithActions:applyGlassPlatter:
-+ _objc_msgSend$constraintEqualToAnchor:constant:
-+ _objc_msgSend$constraintEqualToConstant:
-+ _objc_msgSend$constraintGreaterThanOrEqualToAnchor:
-+ _objc_msgSend$dataUsingEncoding:
-+ _objc_msgSend$debugDescription
-+ _objc_msgSend$defaultCalendarForNewEvents
-+ _objc_msgSend$end
-+ _objc_msgSend$estimatedArrivalDate
-+ _objc_msgSend$estimatedDepartureDate
-+ _objc_msgSend$eventStore
-+ _objc_msgSend$eventsMatchingPredicate:
-+ _objc_msgSend$expandedActionsView
-+ _objc_msgSend$extractCallerNumberFrom:
-+ _objc_msgSend$flightStatusDescription
-+ _objc_msgSend$hasCancelEventActionForSuggestion:
-+ _objc_msgSend$heightAnchor
-+ _objc_msgSend$initWithEventStore:opaqueKey:uniqueKey:extractionGroupIdentifier:
-+ _objc_msgSend$initWithSGRealtimeEvent:isCancelled:
-+ _objc_msgSend$insertSubview:belowSubview:
-+ _objc_msgSend$isCancellation
-+ _objc_msgSend$isCancelled
-+ _objc_msgSend$isNaturalLanguageSuggestedEventCalendar
-+ _objc_msgSend$isSuggestedEventCalendar
-+ _objc_msgSend$isVoiceMail:
-+ _objc_msgSend$layer
-+ _objc_msgSend$opaqueKey
-+ _objc_msgSend$originatingItemLaunchURLForAssistantActionModalBuilder:
-+ _objc_msgSend$originatingItemLaunchURLForAssistantActionModalPresentingViewController:
-+ _objc_msgSend$phoneNumbers
-+ _objc_msgSend$predicateForEventCreatedFromSuggestionWithOpaqueKey:
-+ _objc_msgSend$saveEvent:span:commit:error:
-+ _objc_msgSend$setBundleIdentifier:
-+ _objc_msgSend$setCallerNumber:
-+ _objc_msgSend$setClipsToBounds:
-+ _objc_msgSend$setConstant:
-+ _objc_msgSend$setCornerCurve:
-+ _objc_msgSend$setCornerRadius:
-+ _objc_msgSend$setExpanded:animated:
-+ _objc_msgSend$setExpansionDelegate:
-+ _objc_msgSend$setHidden:
-+ _objc_msgSend$setMaskedCorners:
-+ _objc_msgSend$setNeedsLayout
-+ _objc_msgSend$setPriority:
-+ _objc_msgSend$setSuggestionInfo:
-+ _objc_msgSend$setURL:
-+ _objc_msgSend$smartActionsByApplyingRealtimeStateOverride
-+ _objc_msgSend$sourceMessageID
-+ _objc_msgSend$sourceSearchableItem
-+ _objc_msgSend$stringWithFormat:
-+ _objc_msgSend$suggestionInfo
-+ _objc_msgSend$systemLayoutSizeFittingSize:withHorizontalFittingPriority:verticalFittingPriority:
-+ _objc_msgSend$uniqueKey
-+ _objc_msgSend$userActivityForAssistantActionModalBuilder:
-+ _objc_msgSend$userActivityForAssistantActionModalPresentingViewController:
 + _objc_release_x3
 + _objc_retain_x10
 + _objc_retain_x12
@@ -422,8 +288,6 @@ Symbols:
 - _get_witness_table 17CoreSuggestionsUI17BannerPlatterViewVy05SwiftC06HStackVyAD12TupleContentVyAD08ModifiedJ0VyAFyAHyAJyAJyAJyAD06_ShapeF0VyAD9RectangleVAD5ColorVGAD12_FrameLayoutVGAD11_ClipEffectVyAD07RoundedM0VGGAD08_PaddingP0VG_AD6VStackVyAHyAJyAD4TextVAD30_EnvironmentKeyWritingModifierVySiSgGG_AD4GridVyAHyAA0d8InfoLineF0V_A14_SgQPGGQPGGQPGGAD010_FixedSizeP0VG_AHyAD6SpacerV_AA0d7ActionsF0VQPGSgQPGGGAD0F0HPyHC
 - _get_witness_table 7SwiftUI19_ConditionalContentVyAA14NavigationViewVyAA0F0PAAE7toolbar7contentQrqd__yXE_tAA07ToolbarD0Rd__lFQOyAA06ScrollF0VyAA08ModifiedD0VyAA6VStackVyAA7ForEachVySay015CoreSuggestionsB015MultiBannerItemCGAuCyACyACyAS011ReservationrF0VSgAS06FlightrF0VSgGACyAS05OrderrF0VSgAS07ContactrF0VSgGGAS08ReminderrF0VSgGGGAA14_PaddingLayoutVGG_AA0iS0VyytAA6ButtonVyAA5ImageVGGQo_GA18_GAaFHPA29_AaFHPyHC_A18_AaFHPA15_AaFHPyHC_A17_AA0F8ModifierHPyHCHCHC
 - _get_witness_table 7SwiftUI6HStackVyAA12TupleContentVyAA08ModifiedE0VyAA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonI0Rd__lFQOyAA0K0Vy015CoreSuggestionsB006Bannerk5LabelG0VG_AA05PlainkI0VQo_AA14_OpacityEffectVGSg_AA012_ConditionalE0VyAiAEAJyQrqd__AaKRd__lFQOyAMyAN0N13ActionsToggleVG_ASQo_AiAEAJyQrqd__AaKRd__lFQOyAA4MenuVyA0_AA7ForEachVySaySo18SGSuggestionActionCGSSSgAMyAGyAGyAA4TextVAA12_FrameLayoutVGAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGGGG_ASQo_GSgQPGGAaHHPyHC
-- _objc_msgSend$initWithSGRealtimeEvent:
-- _objc_msgSend$setDateFormat:
 - _symbolic _____ 17CoreSuggestionsUI04$s17aB111UI0027BannerHeaderViewswift_ovFAhfMX68_0_33_1687A2CC5C740169F0D8FD5F058AE990Ll7PreviewfMf_15PreviewRegistryfMu_V
 - _symbolic _____ 17CoreSuggestionsUI04$s17aB111UI0027BannerHeaderViewswift_ovFAhfMX68_0_33_1687A2CC5C740169F0D8FD5F058AE990Ll7PreviewfMf_15PreviewRegistryfMu_V04makeW021DeveloperToolsSupport0W0VyKFZ05SwiftC04View_pyScMYccfU_33__P_Previewable_Transform_WrapperL_V
 - _symbolic _____ 17CoreSuggestionsUI04$s17aB112UI0028BannerPlatterViewswift_IxAFhfMX93_0_33_278CB9DA5EE7872902E8935B77102B35Ll7PreviewfMf_15PreviewRegistryfMu_V
@@ -525,5 +389,4 @@ CStrings:
 - "documentTextWithModelInputMetadata: "
 - "documentTextWithModelInputMetadata: (none)"
 - "makeActions(for:)"
-
 ```

@@ -2,87 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/SpotlightIndex.framework/SpotlightIndex`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__gcc_except_tab` | `0x43ec` | `0x3828` | **`-0xbc4`** |
+| `__TEXT.__text` | `0x4f61e8` | `0x4f6934` | **`+0x74c`** |
+| `__TEXT.__oslogstring` | `0x26eda` | `0x27558` | **`+0x67e`** |
+| `__TEXT.__cstring` | `0x35ead` | `0x36144` | **`+0x297`** |
+| `__TEXT.__const` | `0xb2c6` | `0xb203` | **`-0xc3`** |
+| `__DATA_CONST.__const` | `0xa478` | `0xa400` | **`-0x78`** |
+| `__TEXT.__unwind_info` | `0x6a98` | `0x6a30` | **`-0x68`** |
+| `__AUTH_CONST.__auth_got` | `0x2008` | `0x1fb8` | **`-0x50`** |
+| `__AUTH_CONST.__cfstring` | `0xf120` | `0xf140` | **`+0x20`** |
+| `__AUTH_CONST.__const` | `0xa270` | `0xa290` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x408` | `0x418` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x3a958` | `0x3a948` | **`-0x10`** |
+| `__DATA.__bss` | `0x3668` | `0x3660` | **`-0x8`** |
+| `__DATA_DIRTY.__data` | `0x598` | `0x590` | **`-0x8`** |
+| `__DATA_DIRTY.__common` | `0x24030` | `0x2402c` | **`-0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__ustring`
+
+### Other Changes
 
 ```diff
 
 -2454.100.0.0.0
--  __TEXT.__text: 0x4f61e8
 +2459.102.0.0.0
-+  __TEXT.__text: 0x4f6934
-   __TEXT.__objc_methlist: 0xb04
--  __TEXT.__const: 0xb2c6
--  __TEXT.__cstring: 0x35ead
--  __TEXT.__gcc_except_tab: 0x43ec
--  __TEXT.__oslogstring: 0x26eda
-+  __TEXT.__const: 0xb203
-+  __TEXT.__cstring: 0x36144
-+  __TEXT.__gcc_except_tab: 0x3828
-+  __TEXT.__oslogstring: 0x27558
-   __TEXT.__ustring: 0x13f6
-   __TEXT.__dlopen_cstrs: 0x150
-   __TEXT.__dof_mds: 0x29b
--  __TEXT.__unwind_info: 0x6a98
-+  __TEXT.__unwind_info: 0x6a30
-   __TEXT.__eh_frame: 0x220
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xa478
-+  __DATA_CONST.__const: 0xa400
-   __DATA_CONST.__objc_classlist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xc48
-   __DATA_CONST.__objc_superrefs: 0x70
-   __DATA_CONST.__objc_arraydata: 0x280
--  __DATA_CONST.__got: 0x408
--  __AUTH_CONST.__const: 0xa270
--  __AUTH_CONST.__cfstring: 0xf120
-+  __DATA_CONST.__got: 0x418
-+  __AUTH_CONST.__const: 0xa290
-+  __AUTH_CONST.__cfstring: 0xf140
-   __AUTH_CONST.__objc_const: 0x1508
-   __AUTH_CONST.__weak_auth_got: 0x28
-+  __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__objc_intobj: 0x120
--  __AUTH_CONST.__objc_doubleobj: 0x1b0
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__objc_arrayobj: 0x30
--  __AUTH_CONST.__objc_floatobj: 0x10
--  __AUTH_CONST.__auth_got: 0x2008
-+  __AUTH_CONST.__objc_doubleobj: 0x1b0
-+  __AUTH_CONST.__auth_got: 0x1fb8
-   __AUTH.__objc_data: 0x190
-   __AUTH.__data: 0x18d8
-   __DATA.__objc_ivar: 0x100
-   __DATA.__data: 0xe58
--  __DATA.__bss: 0x3668
-+  __DATA.__bss: 0x3660
-   __DATA_DIRTY.__objc_data: 0x3c0
--  __DATA_DIRTY.__data: 0x598
--  __DATA_DIRTY.__bss: 0x3a958
--  __DATA_DIRTY.__common: 0x24030
-+  __DATA_DIRTY.__data: 0x590
-+  __DATA_DIRTY.__bss: 0x3a948
-+  __DATA_DIRTY.__common: 0x2402c
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreML.framework/CoreML
 
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 8495
--  Symbols:   12087
+-  Symbols:   11752
 -  CStrings:  10393
 +  Functions: 8483
-+  Symbols:   12039
++  Symbols:   11704
 +  CStrings:  10420
- 
 Symbols:
 + GCC_except_table100
 + GCC_except_table133

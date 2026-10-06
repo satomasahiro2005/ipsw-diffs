@@ -2,99 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/CommunicationsUI.framework/CommunicationsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x319340` | `0x32d55c` | **`+0x1421c`** |
+| `__TEXT.__swift5_typeref` | `0x30aa2` | `0x33f76` | **`+0x34d4`** |
+| `__AUTH_CONST.__const` | `0x15570` | `0x16490` | **`+0xf20`** |
+| `__TEXT.__const` | `0x231c4` | `0x23d94` | **`+0xbd0`** |
+| `__DATA.__bss` | `0x13ca8` | `0x14338` | **`+0x690`** |
+| `__TEXT.__swift5_capture` | `0x4b7c` | `0x5034` | **`+0x4b8`** |
+| `__DATA.__data` | `0xd608` | `0xda38` | **`+0x430`** |
+| `__TEXT.__swift5_reflstr` | `0xacb8` | `0xb0e4` | **`+0x42c`** |
+| `__TEXT.__cstring` | `0x481e` | `0x4b9e` | **`+0x380`** |
+| `__TEXT.__swift5_fieldmd` | `0x9484` | `0x97f0` | **`+0x36c`** |
+| `__TEXT.__constg_swiftt` | `0xc410` | `0xc748` | **`+0x338`** |
+| `__TEXT.__unwind_info` | `0xa540` | `0xa7e0` | **`+0x2a0`** |
+| `__AUTH.__data` | `0x9710` | `0x9998` | **`+0x288`** |
+| `__AUTH_CONST.__objc_const` | `0x15720` | `0x15910` | **`+0x1f0`** |
+| `__TEXT.__swift5_assocty` | `0x1d20` | `0x1df8` | **`+0xd8`** |
+| `__AUTH.__objc_data` | `0x66a8` | `0x6770` | **`+0xc8`** |
+| `__TEXT.__oslogstring` | `0x3e56` | `0x3ef6` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x1410` | `0x1490` | **`+0x80`** |
+| `__AUTH_CONST.__auth_got` | `0x40c0` | `0x4138` | **`+0x78`** |
+| `__DATA_CONST.__got` | `0x2390` | `0x23f0` | **`+0x60`** |
+| `__TEXT.__eh_frame` | `0x8138` | `0x8188` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x27d0` | `0x2808` | **`+0x38`** |
+| `__TEXT.__swift5_proto` | `0x9dc` | `0xa0c` | **`+0x30`** |
+| `__TEXT.__swift5_types` | `0x964` | `0x994` | **`+0x30`** |
+| `__TEXT.__swift5_builtin` | `0x3d4` | `0x3e8` | **`+0x14`** |
+| `__DATA.__common` | `0x6a9` | `0x6b1` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x588` | `0x590` | **`+0x8`** |
+| `__DATA_DIRTY.__data` | `0x580` | `0x588` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x2fc0` | `0x2fc8` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x140` | `0x148` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x4c0` | `0x4c8` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x1a8` | `0x1ac` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -153.100.1.2.29
--  __TEXT.__text: 0x303944
--  __TEXT.__objc_methlist: 0x2fc0
--  __TEXT.__const: 0x231c4
--  __TEXT.__swift5_typeref: 0x30aa2
--  __TEXT.__constg_swiftt: 0xc410
--  __TEXT.__swift5_builtin: 0x3d4
--  __TEXT.__swift5_reflstr: 0xacb8
--  __TEXT.__swift5_fieldmd: 0x9484
--  __TEXT.__swift5_assocty: 0x1d20
--  __TEXT.__swift5_proto: 0x9dc
--  __TEXT.__swift5_types: 0x964
--  __TEXT.__swift5_capture: 0x4b7c
--  __TEXT.__cstring: 0x481e
 +156.200.70.2.2
-+  __TEXT.__text: 0x3170a8
-+  __TEXT.__objc_methlist: 0x2fc8
-+  __TEXT.__const: 0x23d94
-+  __TEXT.__swift5_typeref: 0x33f76
-+  __TEXT.__constg_swiftt: 0xc748
-+  __TEXT.__swift5_builtin: 0x3e8
-+  __TEXT.__swift5_reflstr: 0xb0e4
-+  __TEXT.__swift5_fieldmd: 0x97f0
-+  __TEXT.__swift5_assocty: 0x1df8
-+  __TEXT.__swift5_proto: 0xa0c
-+  __TEXT.__swift5_types: 0x994
-+  __TEXT.__swift5_capture: 0x5034
-+  __TEXT.__cstring: 0x4b9e
-   __TEXT.__swift_as_entry: 0x1bc
--  __TEXT.__swift_as_cont: 0x4c0
--  __TEXT.__oslogstring: 0x3e56
--  __TEXT.__swift_as_ret: 0x1a8
-+  __TEXT.__swift_as_cont: 0x4c8
-+  __TEXT.__oslogstring: 0x3ef6
-+  __TEXT.__swift_as_ret: 0x1ac
-   __TEXT.__swift5_protos: 0xd8
--  __TEXT.__swift5_mpenum: 0x140
--  __TEXT.__unwind_info: 0xcef0
--  __TEXT.__eh_frame: 0x8168
-+  __TEXT.__swift5_mpenum: 0x148
-+  __TEXT.__unwind_info: 0xd328
-+  __TEXT.__eh_frame: 0x81b8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1410
--  __DATA_CONST.__objc_classlist: 0x588
-+  __DATA_CONST.__const: 0x1490
-+  __DATA_CONST.__objc_classlist: 0x590
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x210
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x27d0
-+  __DATA_CONST.__objc_selrefs: 0x2808
-   __DATA_CONST.__objc_protorefs: 0x110
--  __DATA_CONST.__got: 0x2390
--  __AUTH_CONST.__const: 0x15570
--  __AUTH_CONST.__objc_const: 0x15720
--  __AUTH_CONST.__auth_got: 0x40c0
--  __AUTH.__objc_data: 0x66a8
--  __AUTH.__data: 0x9710
--  __DATA.__data: 0xd608
-+  __DATA_CONST.__got: 0x23f0
-+  __AUTH_CONST.__const: 0x16490
-+  __AUTH_CONST.__objc_const: 0x15910
-+  __AUTH_CONST.__auth_got: 0x4138
-+  __AUTH.__objc_data: 0x6770
-+  __AUTH.__data: 0x9998
-+  __DATA.__data: 0xda38
-   __DATA.__objc_stublist: 0x8
--  __DATA.__common: 0x6a9
-+  __DATA.__common: 0x6b1
-   __DATA_DIRTY.__objc_data: 0x178
--  __DATA_DIRTY.__data: 0x580
-+  __DATA_DIRTY.__data: 0x588
-   __DATA_DIRTY.__bss: 0xb0
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 16507
--  Symbols:   7137
+-  Symbols:   6319
 -  CStrings:  696
 +  Functions: 16914
-+  Symbols:   7279
++  Symbols:   6454
 +  CStrings:  723
- 
 Symbols:
 + __DATA__TtC16CommunicationsUI19TTRRoutingFlowModel
 + __IVARS__TtC16CommunicationsUI19TTRRoutingFlowModel
@@ -155,14 +112,6 @@ Symbols:
 + _keypath_get.15Tm
 + _keypath_get.44Tm
 + _keypath_set.15Tm
-+ _objc_msgSend$anchorWithOffsetToAnchor:
-+ _objc_msgSend$contactType
-+ _objc_msgSend$formattedPhoneNumber
-+ _objc_msgSend$initWithDouble:
-+ _objc_msgSend$lineBreakMode
-+ _objc_msgSend$marqueeRunning
-+ _objc_msgSend$setActive:withOptions:error:
-+ _objc_msgSend$systemPurpleColor
 + _swift_task_immediate
 + _swift_task_isCurrentExecutorWithFlags
 + _symbolic Ieg_SgIegg_
@@ -463,7 +412,6 @@ Symbols:
 - _keypath_get.8Tm
 - _keypath_set.12Tm
 - _keypath_set.56Tm
-- _objc_msgSend$setActive:error:
 - _symbolic SSSay_____GIegg_Ieg_______pSgSdSgIeggy_Ieg_Iegggggo_ 16CommunicationsUI15ContextCardViewV14ReadTimingInfoV s5ErrorP
 - _symbolic Say_____G 16CommunicationsUI15ContextCardViewV14ReadTimingInfoV
 - _symbolic Say_____GytIegnr_ 16CommunicationsUI15ContextCardViewV14ReadTimingInfoV

@@ -2,50 +2,41 @@
 
 > `/private/var/staged_system_apps/Books.app/Frameworks/TemplateUI.framework/TemplateUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x19e284` | `0x19deb4` | **`-0x3d0`** |
+| `__DATA_CONST.__got` | `0xd28` | `0xf90` | **`+0x268`** |
+| `__TEXT.__unwind_info` | `0x9568` | `0x9570` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__init_offsets`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x19e284
-+  __TEXT.__text: 0x19deb4
-   __TEXT.__auth_stubs: 0x1ae0
-   __TEXT.__objc_stubs: 0x243c0
-   __TEXT.__init_offsets: 0x4
-
-   __TEXT.__swift_as_entry: 0x8
-   __TEXT.__swift_as_ret: 0x8
-   __TEXT.__swift_as_cont: 0xc
--  __TEXT.__unwind_info: 0x9568
-+  __TEXT.__unwind_info: 0x9570
-   __TEXT.__eh_frame: 0x140
-   __DATA_CONST.__const: 0x67a0
-   __DATA_CONST.__cfstring: 0xb100
-
-   __DATA_CONST.__objc_doubleobj: 0x30
-   __DATA_CONST.__objc_floatobj: 0x10
-   __DATA_CONST.__auth_got: 0xd88
--  __DATA_CONST.__got: 0xd28
-+  __DATA_CONST.__got: 0xf90
-   __DATA_CONST.__auth_ptr: 0x1f0
-   __DATA.__objc_const: 0x4af38
-   __DATA.__objc_selrefs: 0xb230
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
+-6636.0.0.0.0
++6643.0.0.0.0
 Functions:
 ~ __ZN3TUI11Instruction10Evaluation20fontWeightFromSymbolEt : 1140 -> 1124
 ~ __ZN3TUI11Instruction10Evaluation18fontCapsFromSymbolEt : 940 -> 924
@@ -98,5 +89,4 @@ Functions:
 ~ sub_1581c4 -> sub_157e18 : 272 -> 260
 ~ sub_159ed4 -> sub_159b1c : 208 -> 180
 ~ sub_18e754 -> sub_18e380 : 808 -> 812
-
 ```

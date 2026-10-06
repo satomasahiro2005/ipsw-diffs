@@ -2,22 +2,21 @@
 
 > `/System/Library/PrivateFrameworks/CoreLocationTiles.framework/XPCServices/TilesService.xpc/TilesService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_protolist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__data` | `0xa40` | `0xa60` | **`+0x20`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_const`
 - `__DATA.__objc_data`
+- `__DATA_CONST.__objc_protolist`
 
-```diff
+### Other Changes
 
-   __DATA.__objc_selrefs: 0x308
-   __DATA.__objc_ivar: 0x20
-   __DATA.__objc_data: 0xf0
--  __DATA.__data: 0xa40
-+  __DATA.__data: 0xa60
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+```text
 Functions:
 ~ sub_100005778 : 44 -> 20
 ~ sub_1000057a4 -> sub_10000578c : 20 -> 44

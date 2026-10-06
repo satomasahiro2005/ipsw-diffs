@@ -2,58 +2,40 @@
 
 > `/System/Library/Frameworks/AudioToolbox.framework/libEmbeddedSystemAUs.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd3dd4` | `0xd1250` | **`-0x2b84`** |
+| `__AUTH_CONST.__const` | `0x114e8` | `0x11090` | **`-0x458`** |
+| `__AUTH_CONST.__cfstring` | `0x3be0` | `0x38c0` | **`-0x320`** |
+| `__TEXT.__cstring` | `0xa313` | `0xa026` | **`-0x2ed`** |
+| `__DATA.__data` | `0x9c8` | `0x810` | **`-0x1b8`** |
+| `__DATA_DIRTY.__data` | `0x20` | `0x1d8` | **`+0x1b8`** |
+| `__TEXT.__gcc_except_tab` | `0x7958` | `0x77a8` | **`-0x1b0`** |
+| `__DATA_CONST.__const` | `0xfd0` | `0xe50` | **`-0x180`** |
+| `__TEXT.__unwind_info` | `0x4860` | `0x46f0` | **`-0x170`** |
+| `__DATA.__bss` | `0x858` | `0x798` | **`-0xc0`** |
+| `__TEXT.__dlopen_cstrs` | `0x36d` | `0x2c1` | **`-0xac`** |
+| `__TEXT.__oslogstring` | `0xc2cc` | `0xc256` | **`-0x76`** |
+| `__AUTH_CONST.__auth_got` | `0x11d8` | `0x1200` | **`+0x28`** |
+| `__TEXT.__const` | `0xb344` | `0xb324` | **`-0x20`** |
+| `__DATA_CONST.__got` | `0x1d8` | `0x1c8` | **`-0x10`** |
+| `__TEXT.__realtime` | `0x38a84` | `0x38a88` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1638.209.1.0.0
--  __TEXT.__text: 0xd19b0
--  __TEXT.__realtime: 0x38084
--  __TEXT.__const: 0xb344
--  __TEXT.__dlopen_cstrs: 0x36d
--  __TEXT.__gcc_except_tab: 0x7958
--  __TEXT.__cstring: 0xa313
--  __TEXT.__oslogstring: 0xc2cc
--  __TEXT.__unwind_info: 0x4f00
 +1638.211.0.0.0
-+  __TEXT.__text: 0xcee80
-+  __TEXT.__realtime: 0x38088
-+  __TEXT.__const: 0xb324
-+  __TEXT.__dlopen_cstrs: 0x2c1
-+  __TEXT.__gcc_except_tab: 0x77a8
-+  __TEXT.__cstring: 0xa026
-+  __TEXT.__oslogstring: 0xc256
-+  __TEXT.__unwind_info: 0x4d80
-   __TEXT.__eh_frame: 0x108
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0xfd0
-+  __DATA_CONST.__const: 0xe50
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__got: 0x1d8
--  __AUTH_CONST.__const: 0x114e8
--  __AUTH_CONST.__cfstring: 0x3be0
-+  __DATA_CONST.__got: 0x1c8
-+  __AUTH_CONST.__const: 0x11090
-+  __AUTH_CONST.__cfstring: 0x38c0
-   __AUTH_CONST.__weak_auth_got: 0x40
--  __AUTH_CONST.__auth_got: 0x11d8
--  __DATA.__data: 0x9c8
--  __DATA_DIRTY.__data: 0x20
-+  __AUTH_CONST.__auth_got: 0x1200
-+  __DATA.__data: 0x810
-+  __DATA_DIRTY.__data: 0x1d8
-   __DATA_DIRTY.__bss: 0x128
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
 
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 4083
 -  Symbols:   6299
 -  CStrings:  1993
 +  Functions: 3957
 +  Symbols:   6142
 +  CStrings:  1957
- 
 Symbols:
 + GCC_except_table1000
 + GCC_except_table1004

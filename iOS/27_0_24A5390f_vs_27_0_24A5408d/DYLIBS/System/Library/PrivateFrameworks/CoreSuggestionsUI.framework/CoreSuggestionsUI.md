@@ -2,108 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/CoreSuggestionsUI.framework/CoreSuggestionsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1047ec` | `0x10b338` | **`+0x6b4c`** |
+| `__TEXT.__swift5_typeref` | `0x1bc2e` | `0x1d6b2` | **`+0x1a84`** |
+| `__TEXT.__oslogstring` | `0x2cc3` | `0x31b8` | **`+0x4f5`** |
+| `__TEXT.__const` | `0x9dec` | `0xa2b4` | **`+0x4c8`** |
+| `__DATA.__data` | `0x3d08` | `0x3f08` | **`+0x200`** |
+| `__DATA.__bss` | `0x3ed0` | `0x3fe0` | **`+0x110`** |
+| `__AUTH.__data` | `0xa60` | `0xb68` | **`+0x108`** |
+| `__TEXT.__cstring` | `0x46f1` | `0x47a3` | **`+0xb2`** |
+| `__AUTH_CONST.__objc_const` | `0x68b0` | `0x6928` | **`+0x78`** |
+| `__TEXT.__unwind_info` | `0x3b88` | `0x3c00` | **`+0x78`** |
+| `__TEXT.__eh_frame` | `0x1d60` | `0x1dc8` | **`+0x68`** |
+| `__AUTH_CONST.__const` | `0x5ea8` | `0x5f00` | **`+0x58`** |
+| `__TEXT.__swift5_fieldmd` | `0x27c4` | `0x281c` | **`+0x58`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1f30` | `0x1f80` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x3a34` | `0x3a7c` | **`+0x48`** |
+| `__TEXT.__swift5_reflstr` | `0x2240` | `0x2280` | **`+0x40`** |
+| `__TEXT.__constg_swiftt` | `0x41bc` | `0x41f8` | **`+0x3c`** |
+| `__DATA_CONST.__got` | `0x1360` | `0x1398` | **`+0x38`** |
+| `__AUTH_CONST.__auth_got` | `0x24c8` | `0x24f8` | **`+0x30`** |
+| `__AUTH_CONST.__cfstring` | `0x1560` | `0x1580` | **`+0x20`** |
+| `__DATA_DIRTY.__bss` | `0x2848` | `0x2828` | **`-0x20`** |
+| `__DATA_DIRTY.__data` | `0x2b00` | `0x2b20` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x120` | `0x12c` | **`+0xc`** |
+| `__DATA.__common` | `0x120` | `0x128` | **`+0x8`** |
+| `__DATA_DIRTY.__objc_data` | `0x3210` | `0x3208` | **`-0x8`** |
+| `__TEXT.__swift5_proto` | `0x320` | `0x324` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0x308` | `0x30c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -13.0.0.0.0
--  __TEXT.__text: 0x1047ec
--  __TEXT.__objc_methlist: 0x3a34
--  __TEXT.__const: 0x9dec
 +17.0.0.0.0
-+  __TEXT.__text: 0x10b338
-+  __TEXT.__objc_methlist: 0x3a7c
-+  __TEXT.__const: 0xa2b4
-   __TEXT.__dlopen_cstrs: 0x1e8
--  __TEXT.__cstring: 0x46f1
--  __TEXT.__swift5_typeref: 0x1bc2e
-+  __TEXT.__cstring: 0x47a3
-+  __TEXT.__swift5_typeref: 0x1d6b2
-   __TEXT.__swift5_capture: 0x1170
--  __TEXT.__swift5_reflstr: 0x2240
-+  __TEXT.__swift5_reflstr: 0x2280
-   __TEXT.__swift5_assocty: 0xb48
--  __TEXT.__constg_swiftt: 0x41bc
--  __TEXT.__swift5_fieldmd: 0x27c4
-+  __TEXT.__constg_swiftt: 0x41f8
-+  __TEXT.__swift5_fieldmd: 0x281c
-   __TEXT.__swift5_builtin: 0x140
--  __TEXT.__swift5_proto: 0x320
--  __TEXT.__swift5_types: 0x308
-+  __TEXT.__swift5_proto: 0x324
-+  __TEXT.__swift5_types: 0x30c
-   __TEXT.__swift5_protos: 0xc
--  __TEXT.__oslogstring: 0x2cc3
-+  __TEXT.__oslogstring: 0x31b8
-   __TEXT.__swift5_mpenum: 0x10
-   __TEXT.__swift_as_entry: 0xac
-   __TEXT.__swift_as_ret: 0x9c
-   __TEXT.__swift_as_cont: 0xe4
-   __TEXT.__gcc_except_tab: 0x1d0
-   __TEXT.__ustring: 0x6ec
--  __TEXT.__unwind_info: 0x3b88
--  __TEXT.__eh_frame: 0x1d60
-+  __TEXT.__unwind_info: 0x3c00
-+  __TEXT.__eh_frame: 0x1dc8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x1e0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1f30
-+  __DATA_CONST.__objc_selrefs: 0x1f80
-   __DATA_CONST.__objc_protorefs: 0x100
-   __DATA_CONST.__objc_superrefs: 0x70
--  __DATA_CONST.__got: 0x1360
--  __AUTH_CONST.__const: 0x5ea8
--  __AUTH_CONST.__cfstring: 0x1560
--  __AUTH_CONST.__objc_const: 0x68b0
-+  __DATA_CONST.__got: 0x1398
-+  __AUTH_CONST.__const: 0x5f00
-+  __AUTH_CONST.__cfstring: 0x1580
-+  __AUTH_CONST.__objc_const: 0x6928
-   __AUTH_CONST.__objc_intobj: 0xf0
--  __AUTH_CONST.__auth_got: 0x24c8
-+  __AUTH_CONST.__auth_got: 0x24f8
-   __AUTH.__objc_data: 0x748
--  __AUTH.__data: 0xa60
--  __DATA.__objc_ivar: 0x120
--  __DATA.__data: 0x3d08
--  __DATA.__bss: 0x3ed0
--  __DATA.__common: 0x120
--  __DATA_DIRTY.__objc_data: 0x3210
--  __DATA_DIRTY.__data: 0x2b00
--  __DATA_DIRTY.__bss: 0x2848
-+  __AUTH.__data: 0xb68
-+  __DATA.__objc_ivar: 0x12c
-+  __DATA.__data: 0x3f08
-+  __DATA.__bss: 0x3fe0
-+  __DATA.__common: 0x128
-+  __DATA_DIRTY.__objc_data: 0x3208
-+  __DATA_DIRTY.__data: 0x2b20
-+  __DATA_DIRTY.__bss: 0x2828
-   __DATA_DIRTY.__common: 0x150
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/FlightUtilities.framework/FlightUtilities
-   - /System/Library/PrivateFrameworks/FlightUtilitiesCore.framework/FlightUtilitiesCore
 +  - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
-   - /System/Library/PrivateFrameworks/IconServices.framework/IconServices
-   - /System/Library/PrivateFrameworks/InputAnalytics.framework/InputAnalytics
-   - /System/Library/PrivateFrameworks/ProactiveSupport.framework/ProactiveSupport
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8171
--  Symbols:   5635
+-  Symbols:   4806
 -  CStrings:  682
 +  Functions: 8315
-+  Symbols:   5765
++  Symbols:   4926
 +  CStrings:  707
- 
 Symbols:
 + +[SGTelemetrySession publishRichBannerEventWithAction:smartActionId:numActions:numBanners:bannerType:primaryAction:expanded:latency:]
 + -[SGFoundInSuggestionPresenter _recordPresentationLatencyForShownBanner]
@@ -197,17 +142,6 @@ Symbols:
 + _get_witness_table 7SwiftUI6HStackVyAA12TupleContentVyAA08ModifiedE0VyAA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonI0Rd__lFQOyAA0K0VyAA012_ConditionalE0Vy015CoreSuggestionsB006Bannerk5LabelG0VAA0G8ThatFitsVyAEyAGyArA30_EnvironmentKeyWritingModifierVySiSgGG_AYQPGGGG_AA05PlainkI0VQo_AA14_OpacityEffectVGSg_AOyAiAEAJyQrqd__AaKRd__lFQOyAMyAP0O13ActionsToggleVG_A3_Qo_AiAEAJyQrqd__AaKRd__lFQOyAA4MenuVyA10_AA7ForEachVySaySo18SGSuggestionActionCGSSSgAMyACyAOyAGyAGyAA4TextVAA12_FrameLayoutVGAVyAA4FontVSgGGAEyAOyAP0o4IconG0VAOyA32_A32_GGSg_A30_QPGGGGGG_A3_Qo_GSgQPGGAaHHPyHC
 + _get_witness_table 7SwiftUI6VStackVyAA7ForEachVySaySi6offset_So18SGSuggestionActionC7elementtGAhA12TupleContentVyAA08ModifiedK0VyANyANyAA9RectangleVAA12_FrameLayoutVGAA24_ForegroundStyleModifierVyAA5ColorVGGAA08_PaddingO0VG_ANyAA4ViewPAAE06buttonQ0yQrqd__AA015PrimitiveButtonQ0Rd__lFQOyAA0X0VyANyANyANyAA6HStackVyALyAA012_ConditionalK0VyA10_y015CoreSuggestionsB0010BannerIconU0VA13_GA14_GSg_ANyAA4TextVAA022_EnvironmentKeyWritingR0VyAA13TextAlignmentOGGQPGGAA05_FlexnO0VGA_GA_GG_AA010BorderlessxQ0VQo_AXGQPGGGAAA1_HPyHC
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE15dynamicTypeSizeyQrqd__SXRd__AA07DynamiceF0O5BoundRtd__lFQOyAA6HStackVyAA12TupleContentVyAA012_ConditionalK0VyANy015CoreSuggestionsB0010BannerIconC0VAQGARGSg_AJyALyALyAA4TextV_AA6SpacerVQPGSg_AO0o7ActionsC0VSgQPGGQPGG_s19PartialRangeThroughVyAFGQo_HO
-+ _objc_msgSend$_recordPresentationLatencyForShownBanner
-+ _objc_msgSend$distantPast
-+ _objc_msgSend$enumerateFlightCodesInString:usingBlock:
-+ _objc_msgSend$hasValidTime
-+ _objc_msgSend$isDeviceEligible
-+ _objc_msgSend$numberWithUnsignedLongLong:
-+ _objc_msgSend$presentationLatencyMs
-+ _objc_msgSend$publishRichBannerEventWithAction:smartActionId:numActions:numBanners:bannerType:primaryAction:expanded:latency:
-+ _objc_msgSend$secondarySystemFillColor
-+ _objc_msgSend$setPresentationLatencyMs:
-+ _objc_msgSend$unsignedLongLongValue
 + _objc_retain_x13
 + _os_unfair_lock_lock
 + _os_unfair_lock_unlock
@@ -414,7 +348,6 @@ Symbols:
 - _get_witness_table 7SwiftUI6HStackVyAA12TupleContentVyAA012_ConditionalE0VyAGy015CoreSuggestionsB014BannerIconViewVAJGAKGSg_ACyAEyAEyAA4TextV_AA6SpacerVQPGSg_AH0i7ActionsK0VSgQPGGQPGGAA0K0HPyHC
 - _get_witness_table 7SwiftUI6HStackVyAA12TupleContentVyAA08ModifiedE0VyAA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonI0Rd__lFQOyAA0K0Vy015CoreSuggestionsB006Bannerk5LabelG0VG_AA05PlainkI0VQo_AA14_OpacityEffectVGSg_AA012_ConditionalE0VyAiAEAJyQrqd__AaKRd__lFQOyAMyAN0N13ActionsToggleVG_ASQo_AiAEAJyQrqd__AaKRd__lFQOyAA4MenuVyA0_AA7ForEachVySaySo18SGSuggestionActionCGSSSgAMyAA0O0VyAGyAGyAA4TextVAA12_FrameLayoutVGAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAZyAZyAN0n4IconG0VA26_GA27_GSgGGGG_ASQo_GSgQPGGAaHHPyHC
 - _get_witness_table 7SwiftUI6VStackVyAA7ForEachVySaySi6offset_So18SGSuggestionActionC7elementtGAhA12TupleContentVyAA08ModifiedK0VyANyANyAA9RectangleVAA12_FrameLayoutVGAA24_ForegroundStyleModifierVyAA5ColorVGGAA08_PaddingO0VG_ANyAA4ViewPAAE06buttonQ0yQrqd__AA015PrimitiveButtonQ0Rd__lFQOyAA0X0VyANyANyAA6HStackVyALyAA012_ConditionalK0VyA10_y015CoreSuggestionsB0010BannerIconU0VA13_GA14_GSg_AA4TextVAA6SpacerVQPGGA_GA_GG_AA010BorderlessxQ0VQo_AXGQPGGGAAA1_HPyHC
-- _objc_msgSend$publishRichBannerEventWithAction:smartActionId:numActions:numBanners:bannerType:primaryAction:expanded:
 - _objc_retain_x10
 - _symbolic SiSo18SGSuggestionActionC_____y_____yADyADy__________G_____y_____GG_____G_ADy_____y_____yADyADy_____yACy_____yAPy_____AQGARGSg___________QPGGALGALGG______Qo_AJGQPGIegygr_ 7SwiftUI12TupleContentV AA08ModifiedD0V AA9RectangleV AA12_FrameLayoutV AA24_ForegroundStyleModifierV AA5ColorV AA08_PaddingH0V AA4ViewPAAE06buttonJ0yQrqd__AA015PrimitiveButtonJ0Rd__lFQO AA0Q0V AA6HStackV AA012_ConditionalD0V 015CoreSuggestionsB0010BannerIconN0V AA4TextV AA6SpacerV AA010BorderlessqJ0V
 - _symbolic _____ 17CoreSuggestionsUI04$s17aB111UI0027BannerHeaderViewswift_ovFAhfMX70_0_33_1687A2CC5C740169F0D8FD5F058AE990Ll7PreviewfMf_15PreviewRegistryfMu_V

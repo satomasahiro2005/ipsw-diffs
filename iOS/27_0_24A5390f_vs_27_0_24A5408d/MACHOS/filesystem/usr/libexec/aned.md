@@ -2,84 +2,55 @@
 
 > `/usr/libexec/aned`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x68888` | `0x6c3f0` | **`+0x3b68`** |
+| `__TEXT.__gcc_except_tab` | `0x4e74` | `0x5954` | **`+0xae0`** |
+| `__TEXT.__oslogstring` | `0x674e` | `0x6cd0` | **`+0x582`** |
+| `__TEXT.__objc_methname` | `0x3c5c` | `0x3ea7` | **`+0x24b`** |
+| `__TEXT.__objc_stubs` | `0x3320` | `0x34a0` | **`+0x180`** |
+| `__TEXT.__objc_methtype` | `0xdd2` | `0xeaf` | **`+0xdd`** |
+| `__DATA.__objc_const` | `0x1c18` | `0x1cb8` | **`+0xa0`** |
+| `__TEXT.__auth_stubs` | `0xed0` | `0xf70` | **`+0xa0`** |
+| `__DATA.__objc_selrefs` | `0xf58` | `0xfc0` | **`+0x68`** |
+| `__TEXT.__objc_methlist` | `0x111c` | `0x1184` | **`+0x68`** |
+| `__DATA.__objc_data` | `0x550` | `0x5a0` | **`+0x50`** |
+| `__DATA_CONST.__auth_got` | `0x780` | `0x7d0` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x1828` | `0x1868` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x26a8` | `0x26c8` | **`+0x20`** |
+| `__DATA_CONST.__objc_arrayobj` | `—` | `0x18` | **`+0x18`** |
+| `__TEXT.__objc_classname` | `0x22f` | `0x247` | **`+0x18`** |
+| `__DATA.__bss` | `0x88` | `0x98` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x3b0` | `0x3c0` | **`+0x10`** |
+| `__TEXT.__cstring` | `0x5b72` | `0x5b7d` | **`+0xb`** |
+| `__DATA_CONST.__objc_arraydata` | `—` | `0x8` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x88` | `0x90` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -382.12.0.0.0
--  __TEXT.__text: 0x68888
--  __TEXT.__auth_stubs: 0xed0
--  __TEXT.__objc_stubs: 0x3320
--  __TEXT.__objc_methlist: 0x111c
 +382.15.1.0.0
-+  __TEXT.__text: 0x6c3f0
-+  __TEXT.__auth_stubs: 0xf70
-+  __TEXT.__objc_stubs: 0x34a0
-+  __TEXT.__objc_methlist: 0x1184
-   __TEXT.__const: 0x5cfc
--  __TEXT.__gcc_except_tab: 0x4e74
--  __TEXT.__cstring: 0x5b72
--  __TEXT.__oslogstring: 0x674e
--  __TEXT.__objc_classname: 0x22f
--  __TEXT.__objc_methname: 0x3c5c
--  __TEXT.__objc_methtype: 0xdd2
--  __TEXT.__unwind_info: 0x1828
--  __DATA_CONST.__const: 0x26a8
-+  __TEXT.__gcc_except_tab: 0x5954
-+  __TEXT.__cstring: 0x5b7d
-+  __TEXT.__oslogstring: 0x6cd0
-+  __TEXT.__objc_classname: 0x247
-+  __TEXT.__objc_methname: 0x3ea7
-+  __TEXT.__objc_methtype: 0xeaf
-+  __TEXT.__unwind_info: 0x1868
-+  __DATA_CONST.__const: 0x26c8
-   __DATA_CONST.__cfstring: 0xb00
--  __DATA_CONST.__objc_classlist: 0x88
-+  __DATA_CONST.__objc_classlist: 0x90
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x60
-+  __DATA_CONST.__objc_arraydata: 0x8
-+  __DATA_CONST.__objc_arrayobj: 0x18
-   __DATA_CONST.__objc_intobj: 0x18
--  __DATA_CONST.__auth_got: 0x780
--  __DATA_CONST.__got: 0x3b0
-+  __DATA_CONST.__auth_got: 0x7d0
-+  __DATA_CONST.__got: 0x3c0
-   __DATA_CONST.__auth_ptr: 0x18
--  __DATA.__objc_const: 0x1c18
--  __DATA.__objc_selrefs: 0xf58
-+  __DATA.__objc_const: 0x1cb8
-+  __DATA.__objc_selrefs: 0xfc0
-   __DATA.__objc_ivar: 0xe8
--  __DATA.__objc_data: 0x550
-+  __DATA.__objc_data: 0x5a0
-   __DATA.__data: 0x490
--  __DATA.__bss: 0x88
-+  __DATA.__bss: 0x98
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2420
 -  Symbols:   3666
 -  CStrings:  1708
 +  Functions: 2443
 +  Symbols:   3711
 +  CStrings:  1749
- 
 Symbols:
 + +[_ANECompileFlavorPolicy nonBondedCsIdentities]
 + +[_ANECompileFlavorPolicy shouldDisableBondedForCsIdentity:]

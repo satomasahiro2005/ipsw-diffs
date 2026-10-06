@@ -2,52 +2,31 @@
 
 > `/usr/lib/libBasebandCommandDriversMIPC.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x87a6c` | `0x83f48` | **`-0x3b24`** |
+| `__TEXT.__gcc_except_tab` | `0x7940` | `0x7598` | **`-0x3a8`** |
+| `__TEXT.__cstring` | `0x1b08` | `0x1a63` | **`-0xa5`** |
+| `__TEXT.__unwind_info` | `0x22d8` | `0x2238` | **`-0xa0`** |
+| `__DATA.__data` | `0x2a0` | `0x240` | **`-0x60`** |
+| `__DATA.__common` | `0x40` | `—` | **`-0x40`** |
+| `__TEXT.__oslogstring` | `0x1f47` | `0x1f15` | **`-0x32`** |
+| `__TEXT.__init_offsets` | `0x24` | `0x18` | **`-0xc`** |
+| `__DATA_CONST.__got` | `0x398` | `0x390` | **`-0x8`** |
+| `__DATA_DIRTY.__bss` | `0x230` | `0x228` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 1594.0.0.0.0
--  __TEXT.__text: 0x860ec
--  __TEXT.__init_offsets: 0x24
-+  __TEXT.__text: 0x826f0
-+  __TEXT.__init_offsets: 0x18
-   __TEXT.__const: 0xa3f0
--  __TEXT.__gcc_except_tab: 0x7940
--  __TEXT.__cstring: 0x1b08
--  __TEXT.__oslogstring: 0x1f47
--  __TEXT.__unwind_info: 0x25c0
-+  __TEXT.__gcc_except_tab: 0x7598
-+  __TEXT.__cstring: 0x1a63
-+  __TEXT.__oslogstring: 0x1f15
-+  __TEXT.__unwind_info: 0x2528
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x4e0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x28
--  __DATA_CONST.__got: 0x398
-+  __DATA_CONST.__got: 0x390
-   __AUTH_CONST.__const: 0x3f40
-   __AUTH_CONST.__cfstring: 0x20
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__data: 0x2a0
--  __DATA.__common: 0x40
-+  __DATA.__data: 0x240
-   __DATA_DIRTY.__data: 0x8
--  __DATA_DIRTY.__bss: 0x230
-+  __DATA_DIRTY.__bss: 0x228
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMotion.framework/CoreMotion
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1513
 -  Symbols:   3233
 -  CStrings:  561
 +  Functions: 1497
 +  Symbols:   3212
 +  CStrings:  549
- 
 Symbols:
 + GCC_except_table124
 + GCC_except_table128

@@ -2,51 +2,25 @@
 
 > `/System/Library/PrivateFrameworks/SiriFlowEnvironment.framework/SiriFlowEnvironment`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x28b9c` | `0x28c30` | **`+0x94`** |
+| `__DATA.__bss` | `0xf90` | `0xf10` | **`-0x80`** |
+| `__DATA_DIRTY.__bss` | `0xe10` | `0xe90` | **`+0x80`** |
+| `__TEXT.__eh_frame` | `0x4c0` | `0x520` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0xf88` | `0xf98` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x868` | `0x870` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 3600.1.3.0.0
--  __TEXT.__text: 0x26f00
-+  __TEXT.__text: 0x26f94
-   __TEXT.__objc_methlist: 0x5c
-   __TEXT.__const: 0x2538
-   __TEXT.__gcc_except_tab: 0x34
-
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_capture: 0x88
--  __TEXT.__unwind_info: 0x1208
--  __TEXT.__eh_frame: 0x4c0
-+  __TEXT.__unwind_info: 0x1220
-+  __TEXT.__eh_frame: 0x520
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __AUTH_CONST.__const: 0xe48
-   __AUTH_CONST.__cfstring: 0x100
-   __AUTH_CONST.__objc_const: 0xaf8
--  __AUTH_CONST.__auth_got: 0x868
-+  __AUTH_CONST.__auth_got: 0x870
-   __AUTH.__objc_data: 0x50
-   __AUTH.__data: 0x388
-   __DATA.__data: 0x2f8
-   __DATA_DIRTY.__objc_data: 0x50
-   __DATA_DIRTY.__data: 0x760
--  __DATA_DIRTY.__bss: 0xe10
-+  __DATA_DIRTY.__bss: 0xe90
-   __DATA_DIRTY.__common: 0x10
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1748
 -  Symbols:   3125
 +  Functions: 1750
 +  Symbols:   3128
-   CStrings:  88
- 
 Symbols:
 + _$ss10_NativeSetV12intersectionyAByxGADFADs13_UnsafeBitsetVXEfU_SS_TG5
 + _$ss10_NativeSetV12intersectionyAByxGADFADs13_UnsafeBitsetVXEfU_SS_TG5TA

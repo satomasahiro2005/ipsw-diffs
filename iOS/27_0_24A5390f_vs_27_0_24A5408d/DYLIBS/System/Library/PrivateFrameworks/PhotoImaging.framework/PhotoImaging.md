@@ -2,105 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/PhotoImaging.framework/PhotoImaging`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x27b740` | `0x27c598` | **`+0xe58`** |
+| `__AUTH_CONST.__objc_const` | `0x28370` | `0x286f0` | **`+0x380`** |
+| `__TEXT.__cstring` | `0x46c85` | `0x46e60` | **`+0x1db`** |
+| `__AUTH_CONST.__const` | `0x54b0` | `0x5320` | **`-0x190`** |
+| `__TEXT.__oslogstring` | `0x6d75` | `0x6c42` | **`-0x133`** |
+| `__TEXT.__objc_methlist` | `0x164a0` | `0x165d0` | **`+0x130`** |
+| `__AUTH.__objc_data` | `0x288` | `0x378` | **`+0xf0`** |
+| `__AUTH_CONST.__cfstring` | `0x26cc0` | `0x26da0` | **`+0xe0`** |
+| `__TEXT.__gcc_except_tab` | `0x4a64` | `0x4b34` | **`+0xd0`** |
+| `__TEXT.__swift5_capture` | `0xf0` | `0x50` | **`-0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb528` | `0xb5b8` | **`+0x90`** |
+| `__AUTH_CONST.__auth_got` | `0x1558` | `0x14f8` | **`-0x60`** |
+| `__TEXT.__swift5_typeref` | `0x2e9` | `0x299` | **`-0x50`** |
+| `__DATA_CONST.__const` | `0x40d0` | `0x4100` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x5858` | `0x5888` | **`+0x30`** |
+| `__AUTH_CONST.__objc_dictobj` | `0x5af0` | `0x5b18` | **`+0x28`** |
+| `__DATA.__objc_ivar` | `0x1570` | `0x1594` | **`+0x24`** |
+| `__TEXT.__const` | `0x8a9c` | `0x8a7c` | **`-0x20`** |
+| `__DATA_CONST.__got` | `0x25a0` | `0x25b8` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x10d8` | `0x10f0` | **`+0x18`** |
+| `__DATA_CONST.__objc_arraydata` | `0x9340` | `0x9350` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x700` | `0x710` | **`+0x10`** |
+| `__DATA.__data` | `0x16fc` | `0x16f0` | **`-0xc`** |
+| `__DATA_DIRTY.__bss` | `0x260` | `0x258` | **`-0x8`** |
+| `__DATA_DIRTY.__data` | `0x170` | `0x178` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -910.33.102.0.0
--  __TEXT.__text: 0x27b740
 +912.0.111.0.0
-+  __TEXT.__text: 0x27c598
-   __TEXT.__delay_helper: 0x1f4
--  __TEXT.__objc_methlist: 0x164a0
--  __TEXT.__const: 0x8a9c
-+  __TEXT.__objc_methlist: 0x165d0
-+  __TEXT.__const: 0x8a7c
-   __TEXT.__dlopen_cstrs: 0x2a2
--  __TEXT.__swift5_typeref: 0x2e9
--  __TEXT.__cstring: 0x46c85
-+  __TEXT.__swift5_typeref: 0x299
-+  __TEXT.__cstring: 0x46e60
-   __TEXT.__constg_swiftt: 0x210
-   __TEXT.__swift5_reflstr: 0x35f
-   __TEXT.__swift5_fieldmd: 0x3b8
-   __TEXT.__swift5_builtin: 0x64
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_assocty: 0x48
--  __TEXT.__oslogstring: 0x6d75
-+  __TEXT.__oslogstring: 0x6c42
-   __TEXT.__swift5_proto: 0x7c
-   __TEXT.__swift5_types: 0x34
-   __TEXT.__swift_as_entry: 0x14
-   __TEXT.__swift_as_ret: 0x14
-   __TEXT.__swift_as_cont: 0x28
--  __TEXT.__swift5_capture: 0xf0
--  __TEXT.__gcc_except_tab: 0x4a64
--  __TEXT.__unwind_info: 0x5858
-+  __TEXT.__swift5_capture: 0x50
-+  __TEXT.__gcc_except_tab: 0x4b34
-+  __TEXT.__unwind_info: 0x5888
-   __TEXT.__eh_frame: 0x9f0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x40d0
--  __DATA_CONST.__objc_classlist: 0x10d8
-+  __DATA_CONST.__const: 0x4100
-+  __DATA_CONST.__objc_classlist: 0x10f0
-   __DATA_CONST.__objc_catlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x190
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb528
-+  __DATA_CONST.__objc_selrefs: 0xb5b8
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__objc_superrefs: 0x700
--  __DATA_CONST.__objc_arraydata: 0x9340
--  __DATA_CONST.__got: 0x25a0
--  __AUTH_CONST.__const: 0x54b0
--  __AUTH_CONST.__cfstring: 0x26cc0
--  __AUTH_CONST.__objc_const: 0x28370
-+  __DATA_CONST.__objc_superrefs: 0x710
-+  __DATA_CONST.__objc_arraydata: 0x9350
-+  __DATA_CONST.__got: 0x25b8
-+  __AUTH_CONST.__const: 0x5320
-+  __AUTH_CONST.__cfstring: 0x26da0
-+  __AUTH_CONST.__objc_const: 0x286f0
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x1488
--  __AUTH_CONST.__objc_dictobj: 0x5af0
-+  __AUTH_CONST.__objc_dictobj: 0x5b18
-   __AUTH_CONST.__objc_doubleobj: 0xe10
-   __AUTH_CONST.__objc_arrayobj: 0x558
-   __AUTH_CONST.__objc_floatobj: 0xd0
--  __AUTH_CONST.__auth_got: 0x1558
--  __AUTH.__objc_data: 0x288
--  __DATA.__objc_ivar: 0x1570
--  __DATA.__data: 0x16fc
-+  __AUTH_CONST.__auth_got: 0x14f8
-+  __AUTH.__objc_data: 0x378
-+  __DATA.__objc_ivar: 0x1594
-+  __DATA.__data: 0x16f0
-   __DATA.__bss: 0x1600
-   __DATA_DIRTY.__objc_data: 0xa7a0
--  __DATA_DIRTY.__data: 0x170
--  __DATA_DIRTY.__bss: 0x260
-+  __DATA_DIRTY.__data: 0x178
-+  __DATA_DIRTY.__bss: 0x258
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9130
--  Symbols:   20568
+-  Symbols:   15786
 -  CStrings:  7086
 +  Functions: 9134
-+  Symbols:   20620
++  Symbols:   15826
 +  CStrings:  7095
- 
 Symbols:
 + +[PIModularPhotosPipeline clearPipelineCache]
 + +[PIPhotographicStyleCorruptionReport reportForImageProperties:]
@@ -364,19 +308,6 @@ Symbols:
 + ___block_descriptor_64_e8_32s40s48bs56bs_e41_v32?0"NSArray"8"NSArray"16"NSError"24ls32l8s48l8s56l8s40l8
 + ___block_descriptor_72_e8_32s40s48s56bs_e20_v16?0"NUResponse"8ls56l8s32l8s40l8s48l8
 + ___block_descriptor_72_e8_32s40s48s56bs_e48_v16?0"PFWallpaperCompoundDeviceConfiguration"8ls32l8s56l8s40l8s48l8
-+ _objc_msgSend$_baseLayoutForDisplayContext:ofItem:spatialPhotoEnabled:
-+ _objc_msgSend$channelInfo
-+ _objc_msgSend$clearCache
-+ _objc_msgSend$defaultValuesForCast:smartStyleRenderingVersion:
-+ _objc_msgSend$geometryWithRoundingPolicy:
-+ _objc_msgSend$initWithKind:notes:
-+ _objc_msgSend$initWithPhotographicStyleV1Capable:photographicStyleV2Capable:mainVideoCorrupted:linearThumbnailCorrupted:skinMatteCorrupted:corruptions:
-+ _objc_msgSend$isEquivalentToDynamicDeviceConfiguration:
-+ _objc_msgSend$linearThumbnailCorrupted
-+ _objc_msgSend$mainVideoCorrupted
-+ _objc_msgSend$photographicStyleV1Capable
-+ _objc_msgSend$reportForImageProperties:
-+ _objc_msgSend$reportForVideoProperties:
 - -[PIParallaxSegmentationItem savedLayoutUsesHeadroom]
 - -[PIParallaxSegmentationItem setSavedLayoutUsesHeadroom:]
 - GCC_except_table1101
@@ -583,7 +514,6 @@ Symbols:
 - ___block_descriptor_40_e8_32s_e18_B16?0"NSString"8ls32l8
 - ___block_descriptor_40_e8_32s_e31_B16?0"NUVideoCorruptionInfo"8ls32l8
 - ___block_descriptor_56_e8_32s40bs_e20_v16?0"NUResponse"8ls40l8s32l8
-- _objc_msgSend$defaultValuesForCast:
 - _swift_deallocClassInstance
 - _swift_release_x24
 - _swift_release_x25

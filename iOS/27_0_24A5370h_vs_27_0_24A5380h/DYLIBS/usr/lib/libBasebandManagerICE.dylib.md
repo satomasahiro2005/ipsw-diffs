@@ -2,54 +2,32 @@
 
 > `/usr/lib/libBasebandManagerICE.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x27383c` | `0x2737f8` | **`-0x44`** |
+| `__TEXT.__gcc_except_tab` | `0x398f4` | `0x39918` | **`+0x24`** |
+| `__TEXT.__oslogstring` | `0xcf5d` | `0xcf7d` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0xac58` | `0xac60` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x27383c
-+  __TEXT.__text: 0x2737f8
-   __TEXT.__init_offsets: 0x17c
-   __TEXT.__objc_methlist: 0x52c
-   __TEXT.__const: 0x13d00
-   __TEXT.__dlopen_cstrs: 0x52
--  __TEXT.__gcc_except_tab: 0x398f4
--  __TEXT.__oslogstring: 0xcf5d
-+  __TEXT.__gcc_except_tab: 0x39918
-+  __TEXT.__oslogstring: 0xcf7d
-   __TEXT.__cstring: 0x8612
--  __TEXT.__unwind_info: 0xac58
-+  __TEXT.__unwind_info: 0xac60
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-1570.0.0.0.0
++1576.0.0.0.0
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libprotobuf-lite.dylib
-   - /usr/lib/libprotobuf.dylib
 -  Functions: 6828
--  Symbols:   20679
--  CStrings:  2688
+-  Symbols:   11790
+-  CStrings:  2595
 +  Functions: 6830
-+  Symbols:   20685
-+  CStrings:  2689
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__cstring : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   11794
++  CStrings:  2596
 Symbols:
 + GCC_except_table181
 + GCC_except_table229
@@ -127,5 +105,4 @@ CStrings:
 + "RFFE Scan Data is not supported"
 - "AppleBasebandManager-AppleBasebandServices_Manager-1570"
 - "AppleBasebandServices_Manager-1570"
-
 ```

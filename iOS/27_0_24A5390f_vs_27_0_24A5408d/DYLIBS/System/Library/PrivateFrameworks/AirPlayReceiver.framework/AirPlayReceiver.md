@@ -2,54 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/AirPlayReceiver.framework/AirPlayReceiver`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17bd68` | `0x17bef0` | **`+0x188`** |
+| `__TEXT.__cstring` | `0x3304b` | `0x33173` | **`+0x128`** |
+| `__TEXT.__const` | `0x275a9` | `0x275db` | **`+0x32`** |
+| `__DATA_CONST.__const` | `0x2020` | `0x2048` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0xba40` | `0xba60` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x1688` | `0x1690` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x838` | `0x834` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -980.71.1.0.0
--  __TEXT.__text: 0x17bd68
 +980.75.1.0.0
-+  __TEXT.__text: 0x17bef0
-   __TEXT.__objc_methlist: 0xaec
--  __TEXT.__const: 0x275a9
-+  __TEXT.__const: 0x275db
-   __TEXT.__dlopen_cstrs: 0xad
--  __TEXT.__gcc_except_tab: 0x838
--  __TEXT.__cstring: 0x3304b
-+  __TEXT.__gcc_except_tab: 0x834
-+  __TEXT.__cstring: 0x33173
-   __TEXT.__oslogstring: 0x2eb
--  __TEXT.__unwind_info: 0x1688
-+  __TEXT.__unwind_info: 0x1690
-   __TEXT.__eh_frame: 0x128
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2020
-+  __DATA_CONST.__const: 0x2048
-   __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   __DATA_CONST.__objc_arraydata: 0x10
-   __DATA_CONST.__got: 0x988
-   __AUTH_CONST.__const: 0x9400
--  __AUTH_CONST.__cfstring: 0xba40
-+  __AUTH_CONST.__cfstring: 0xba60
-   __AUTH_CONST.__objc_const: 0x1550
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_intobj: 0x18
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1701
--  Symbols:   3910
+-  Symbols:   3576
 -  CStrings:  5189
 +  Functions: 1703
-+  Symbols:   3913
++  Symbols:   3579
 +  CStrings:  5194
- 
 Symbols:
 + -[APAdvertiserBTLEManager dispatchSourceState:changed:]
 + GCC_except_table1001
@@ -79,7 +56,6 @@ Symbols:
 + ___55-[APAdvertiserBTLEManager dispatchSourceState:changed:]_block_invoke
 + ___audioSessionBufferedHose_handleAudioDataConnectionEvent_block_invoke
 + _kAPReceiverRequestProcessorAirPlayProperty_IsPersistentSession
-+ _objc_msgSend$dispatchSourceState:changed:
 - -[APAdvertiserBTLEManager dispatchEvent:]
 - GCC_except_table1111
 - GCC_except_table1130
@@ -105,7 +81,6 @@ Symbols:
 - __APAdvertiserHandleSourceDeviceNearbyEvent
 - ___41-[APAdvertiserBTLEManager dispatchEvent:]_block_invoke
 - _memchr
-- _objc_msgSend$dispatchEvent:
 CStrings:
 + "\n %-*s: soloSourceNearby=%s, nanSourceNearby=%s, enforceSoloAdvertising=%s"
 + "### Request denied, sender not admissible (User-Agent '%.*s'): %.*s %.*s\n"

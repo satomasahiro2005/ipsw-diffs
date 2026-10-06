@@ -2,79 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/GridZero.framework/GridZero`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8ea30` | `0x8ea04` | **`-0x2c`** |
+| `__DATA.__data` | `0x2fe8` | `0x3008` | **`+0x20`** |
+| `__AUTH.__data` | `0xc38` | `0xc20` | **`-0x18`** |
+| `__TEXT.__objc_methlist` | `0xcda0` | `0xcdb8` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0xb30` | `0xb40` | **`+0x10`** |
+| `__AUTH_CONST.__objc_const` | `0x186e0` | `0x186d8` | **`-0x8`** |
+| `__DATA.__bss` | `0x2178` | `0x2170` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7418` | `0x7420` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x1498` | `0x1494` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x8ea30
--  __TEXT.__objc_methlist: 0xcda0
-+  __TEXT.__text: 0x8ea04
-+  __TEXT.__objc_methlist: 0xcdb8
-   __TEXT.__const: 0x2af8
-   __TEXT.__swift5_typeref: 0x160c
-   __TEXT.__constg_swiftt: 0x1490
+-910.21.101.0.0
++910.27.103.0.0
 
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x388
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7418
-+  __DATA_CONST.__objc_selrefs: 0x7420
-   __DATA_CONST.__objc_protorefs: 0x98
-   __DATA_CONST.__objc_superrefs: 0x1e0
-   __DATA_CONST.__objc_arraydata: 0x210
--  __DATA_CONST.__got: 0xb30
-+  __DATA_CONST.__got: 0xb40
-   __AUTH_CONST.__const: 0x2820
-   __AUTH_CONST.__cfstring: 0x26a0
--  __AUTH_CONST.__objc_const: 0x186e0
-+  __AUTH_CONST.__objc_const: 0x186d8
-   __AUTH_CONST.__objc_intobj: 0x210
-   __AUTH_CONST.__objc_arrayobj: 0x138
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__auth_got: 0x1128
-   __AUTH.__objc_data: 0x1f20
--  __AUTH.__data: 0xc38
--  __DATA.__objc_ivar: 0x1498
--  __DATA.__data: 0x2fe8
--  __DATA.__bss: 0x2178
-+  __AUTH.__data: 0xc20
-+  __DATA.__objc_ivar: 0x1494
-+  __DATA.__data: 0x3008
-+  __DATA.__bss: 0x2170
-   __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0xf0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5094
--  Symbols:   14435
+-  Symbols:   7512
 +  Functions: 5093
-+  Symbols:   14430
-   CStrings:  966
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   7510
 Symbols:
 + -[PXAssetsSectionLayout itemsLayout:cornerRadiusForAccessoryItem:]
 + GCC_except_table1082
@@ -158,7 +110,4 @@ Symbols:
 - GCC_except_table625
 - GCC_except_table80
 - _OBJC_IVAR_$_PXPhotosGridSettings._sidebarPadding
-- _objc_msgSend$setSidebarPadding:
-- _objc_msgSend$sidebarPadding
-
 ```

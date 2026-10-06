@@ -2,31 +2,22 @@
 
 > `/System/Library/Frameworks/ColorSync.framework/ColorSync`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x688bc` | `0x68ab4` | **`+0x1f8`** |
+| `__TEXT.__cstring` | `0x710f` | `0x7144` | **`+0x35`** |
+
+### Other Changes
+
 ```diff
 
 -3926.0.0.0.0
--  __TEXT.__text: 0x688bc
 +3929.0.0.0.0
-+  __TEXT.__text: 0x68ab4
-   __TEXT.__const: 0x122910
-   __TEXT.__constg_swiftt: 0x204
-   __TEXT.__swift5_typeref: 0x156
 
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_proto: 0x4
--  __TEXT.__cstring: 0x710f
-+  __TEXT.__cstring: 0x7144
-   __TEXT.__oslogstring: 0xb
-   __TEXT.__unwind_info: 0x12b8
-   __TEXT.__eh_frame: 0x790
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   Functions: 1729
-   Symbols:   3091
 -  CStrings:  904
 +  CStrings:  905
- 
 Symbols:
 + __ZL22cdr_constrain_headroomPK14__CFDictionaryfRfbPKc
 - __ZL22cdr_constrain_headroomPK14__CFDictionaryfRfPKc

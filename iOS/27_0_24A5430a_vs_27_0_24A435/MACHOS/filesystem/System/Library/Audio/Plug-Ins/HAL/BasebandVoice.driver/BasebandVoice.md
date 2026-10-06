@@ -2,20 +2,21 @@
 
 > `/System/Library/Audio/Plug-Ins/HAL/BasebandVoice.driver/BasebandVoice`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9a0c` | `0x9a10` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 1159.0.0.0.0
--  __TEXT.__text: 0x9a0c
-+  __TEXT.__text: 0x9a10
-   __TEXT.__auth_stubs: 0x640
-   __TEXT.__const: 0x251
-   __TEXT.__gcc_except_tab: 0x55c
+```text
 Functions:
 ~ sub_e9c : 1388 -> 1392
 ```

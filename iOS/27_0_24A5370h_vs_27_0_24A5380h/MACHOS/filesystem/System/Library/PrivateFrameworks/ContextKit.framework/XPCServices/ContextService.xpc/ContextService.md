@@ -2,50 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/ContextKit.framework/XPCServices/ContextService.xpc/ContextService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2d8db0` | `0x2d85f8` | **`-0x7b8`** |
+| `__DATA_CONST.__got` | `0x798` | `0xf00` | **`+0x768`** |
+| `__TEXT.__unwind_info` | `0x107b8` | `0x107b0` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2d8db0
-+  __TEXT.__text: 0x2d85f8
-   __TEXT.__auth_stubs: 0x1890
-   __TEXT.__objc_stubs: 0x1b2a0
-   __TEXT.__objc_methlist: 0x39d40
+-305.0.0.0.0
++307.0.0.0.0
 
-   __TEXT.__cstring: 0x4a40a
-   __TEXT.__oslogstring: 0x1f84
-   __TEXT.__ustring: 0x74
--  __TEXT.__unwind_info: 0x107b8
-+  __TEXT.__unwind_info: 0x107b0
-   __DATA_CONST.__const: 0x9af40
-   __DATA_CONST.__cfstring: 0x1f880
-   __DATA_CONST.__objc_classlist: 0x3530
-
-   __DATA_CONST.__objc_dictobj: 0x28
-   __DATA_CONST.__objc_intobj: 0xd8
-   __DATA_CONST.__auth_got: 0xc58
--  __DATA_CONST.__got: 0x798
-+  __DATA_CONST.__got: 0xf00
-   __DATA_CONST.__auth_ptr: 0x30
-   __DATA.__objc_const: 0x6cef0
-   __DATA.__objc_selrefs: 0xf690
-
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/NaturalLanguage.framework/NaturalLanguage
-   - /System/Library/PrivateFrameworks/AggregateDictionary.framework/AggregateDictionary
 +  - /System/Library/PrivateFrameworks/BiomeLibrary.framework/BiomeLibrary
-   - /System/Library/PrivateFrameworks/BiomePubSub.framework/BiomePubSub
-   - /System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams
-   - /System/Library/PrivateFrameworks/ContextKit.framework/ContextKit
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__data : content changed
-~ __DATA.__bss : content changed
-~ __DATA.__common : content changed
 Functions:
 ~ _OrgApacheLuceneUtilStringHelper_intsRefToBytesRefWithOrgApacheLuceneUtilIntsRef_ : 500 -> 480
 ~ sub_100007fa8 -> sub_100007ffc : 3868 -> 3864
@@ -227,5 +210,4 @@ Functions:
 ~ sub_1002ac1c4 -> sub_1002aba78 : 216 -> 204
 ~ sub_1002ad158 -> sub_1002aca00 : 220 -> 216
 ~ sub_1002d6298 -> sub_1002d5b3c : 412 -> 424
-
 ```

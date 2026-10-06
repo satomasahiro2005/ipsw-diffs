@@ -2,24 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/Tungsten.framework/Tungsten`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfcecc` | `0xfcefc` | **`+0x30`** |
+| `__TEXT.__gcc_except_tab` | `0x350c` | `0x3510` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.234.0.0
--  __TEXT.__text: 0xfcecc
 +912.0.235.0.0
-+  __TEXT.__text: 0xfcefc
-   __TEXT.__objc_methlist: 0x11ca8
-   __TEXT.__const: 0x39c0
-   __TEXT.__constg_swiftt: 0x244
-
-   __TEXT.__swift5_fieldmd: 0x7c8
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__cstring: 0xd784
--  __TEXT.__gcc_except_tab: 0x350c
-+  __TEXT.__gcc_except_tab: 0x3510
-   __TEXT.__oslogstring: 0x25bb
-   __TEXT.__ustring: 0x3c
-   __TEXT.__unwind_info: 0x4658
 Functions:
 ~ ___101-[PXGMetalRenderer _populateEffectSprites:spriteRenderDataStore:presentationDataStore:metadataStore:]_block_invoke : 588 -> 592
 ~ -[PXGSublayoutDataStore enumerateSublayoutsInRange:options:usingBlock:] : 284 -> 288

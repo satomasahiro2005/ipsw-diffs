@@ -2,21 +2,15 @@
 
 > `/usr/lib/libprotobuf.dylib`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x540e4
-+  __TEXT.__text: 0x53f8c
-   __TEXT.__init_offsets: 0x8
-   __TEXT.__gcc_except_tab: 0x3e28
-   __TEXT.__cstring: 0x37d3
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x540e4` | `0x53f8c` | **`-0x158`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN20wireless_diagnostics6google8protobuf8internal24UTF8GenericScanFastAsciiEPKNS2_19UTF8StateMachineObjEPKciPi : 288 -> 268
 ~ __ZN20wireless_diagnostics6google8protobuf8internal15UTF8GenericScanEPKNS2_19UTF8StateMachineObjEPKciPi : 492 -> 456
@@ -34,5 +28,4 @@ Functions:
 ~ __ZN20wireless_diagnostics6google8protobuf15DelocalizeRadixEPc : 288 -> 280
 ~ __ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE17find_first_not_ofB9fqe220106EPKcm : 144 -> 140
 ~ __ZNK20wireless_diagnostics6google8protobuf8internal12ExtensionSet9Extension36SerializeFieldWithCachedSizesToArrayEiPh : 6020 -> 5848
-
 ```

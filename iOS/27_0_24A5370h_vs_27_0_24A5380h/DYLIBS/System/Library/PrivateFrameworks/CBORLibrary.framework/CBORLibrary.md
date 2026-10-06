@@ -2,99 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/CBORLibrary.framework/CBORLibrary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x28814` | `0x2b444` | **`+0x2c30`** |
+| `__TEXT.__oslogstring` | `0x75` | `0x9a2` | **`+0x92d`** |
+| `__TEXT.__cstring` | `0xab1` | `0xc6d` | **`+0x1bc`** |
+| `__AUTH.__objc_data` | `—` | `0x98` | **`+0x98`** |
+| `__DATA_DIRTY.__objc_data` | `0x2b8` | `0x220` | **`-0x98`** |
+| `__AUTH_CONST.__auth_got` | `0x9f8` | `0xa40` | **`+0x48`** |
+| `__AUTH_CONST.__const` | `0x938` | `0x978` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0xc0` | `0x100` | **`+0x40`** |
+| `__TEXT.__const` | `0x1848` | `0x1878` | **`+0x30`** |
+| `__TEXT.__eh_frame` | `0x1c40` | `0x1c70` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x590` | `0x5b0` | **`+0x20`** |
+| `__TEXT.__swift5_typeref` | `0x458` | `0x474` | **`+0x1c`** |
+| `__DATA.__data` | `0x2e0` | `0x2f8` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x238` | `0x250` | **`+0x18`** |
+| `__DATA.__common` | `0x18` | `0x28` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x100` | `0x110` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0xa38` | `0xa40` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x28814
-+  __TEXT.__text: 0x2b444
-   __TEXT.__objc_methlist: 0x604
--  __TEXT.__const: 0x1848
--  __TEXT.__cstring: 0xab1
--  __TEXT.__swift5_typeref: 0x458
-+  __TEXT.__const: 0x1878
-+  __TEXT.__cstring: 0xc6d
-+  __TEXT.__swift5_typeref: 0x474
-   __TEXT.__swift5_reflstr: 0x271
-   __TEXT.__swift5_assocty: 0x90
-   __TEXT.__swift5_fieldmd: 0x410
-   __TEXT.__constg_swiftt: 0x734
--  __TEXT.__swift5_capture: 0x100
-+  __TEXT.__swift5_capture: 0x110
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift5_proto: 0xc0
-   __TEXT.__swift5_types: 0x68
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__oslogstring: 0x75
-+  __TEXT.__oslogstring: 0x9a2
-   __TEXT.__gcc_except_tab: 0x2c
--  __TEXT.__unwind_info: 0xa38
--  __TEXT.__eh_frame: 0x1c40
-+  __TEXT.__unwind_info: 0xa40
-+  __TEXT.__eh_frame: 0x1c70
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xc0
-+  __DATA_CONST.__const: 0x100
-   __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x590
-+  __DATA_CONST.__objc_selrefs: 0x5b0
-   __DATA_CONST.__objc_superrefs: 0x28
--  __DATA_CONST.__got: 0x238
--  __AUTH_CONST.__const: 0x938
-+  __DATA_CONST.__got: 0x250
-+  __AUTH_CONST.__const: 0x978
-   __AUTH_CONST.__cfstring: 0x840
-   __AUTH_CONST.__objc_const: 0xf50
-   __AUTH_CONST.__objc_intobj: 0x210
--  __AUTH_CONST.__auth_got: 0x9f8
-+  __AUTH_CONST.__auth_got: 0xa40
-+  __AUTH.__objc_data: 0x98
-   __DATA.__objc_ivar: 0x6c
--  __DATA.__data: 0x2e0
--  __DATA.__common: 0x18
-+  __DATA.__data: 0x2f8
-+  __DATA.__common: 0x28
-   __DATA.__bss: 0x1100
--  __DATA_DIRTY.__objc_data: 0x2b8
-+  __DATA_DIRTY.__objc_data: 0x220
-   __DATA_DIRTY.__data: 0x758
-   __DATA_DIRTY.__bss: 0x700
-   - /System/Library/Frameworks/Combine.framework/Combine
+-6.0.4.0.0
++6.0.5.0.0
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 912
--  Symbols:   892
--  CStrings:  182
+-  Symbols:   563
+-  CStrings:  116
 +  Functions: 914
-+  Symbols:   925
-+  CStrings:  255
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   587
++  CStrings:  189
 Symbols:
 + _OBJC_CLASS_$_NSMutableSet
 + __NSConcreteGlobalBlock
@@ -116,11 +58,6 @@ Symbols:
 + _dispatch_once
 + _free
 + _malloc_type_calloc
-+ _objc_msgSend$containsObject:
-+ _objc_msgSend$initWithArray:
-+ _objc_msgSend$isEqual:
-+ _objc_msgSend$isEqualToArray:
-+ _objc_msgSend$isEqualToDictionary:
 + _qsort_b
 + _swift_getAssociatedConformanceWitness
 + _swift_getAssociatedTypeWitness
@@ -207,5 +144,4 @@ CStrings:
 + "Unsupported type for CodingKey "
 + "i24@?0r^v8r^v16"
 + "v8@?0"
-
 ```

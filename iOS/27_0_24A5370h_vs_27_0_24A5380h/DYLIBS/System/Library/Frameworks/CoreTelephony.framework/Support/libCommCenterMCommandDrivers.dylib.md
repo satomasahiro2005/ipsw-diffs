@@ -2,46 +2,24 @@
 
 > `/System/Library/Frameworks/CoreTelephony.framework/Support/libCommCenterMCommandDrivers.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21cc04` | `0x21c7c4` | **`-0x440`** |
+| `__TEXT.__gcc_except_tab` | `0x1e4b0` | `0x1e4ac` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x21cc04
-+  __TEXT.__text: 0x21c7c4
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__objc_methlist: 0x1cc
-   __TEXT.__const: 0x26b68
-   __TEXT.__cstring: 0xd771
--  __TEXT.__gcc_except_tab: 0x1e4b0
-+  __TEXT.__gcc_except_tab: 0x1e4ac
-   __TEXT.__oslogstring: 0x1a8ba
-   __TEXT.__unwind_info: 0xf4a8
-   __TEXT.__objc_stubs: 0x0
+-13473.1.0.0.0
++13478.3.1.3.0
 
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 12637
--  Symbols:   38655
+-  Symbols:   19624
 +  Functions: 12636
-+  Symbols:   38654
-   CStrings:  4184
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
++  Symbols:   19623
 Symbols:
 + GCC_except_table383
 + GCC_except_table432
@@ -111,5 +89,4 @@ Functions:
 ~ ____ZN26QMIActivationCommandDriver35handleChipIdAndSerialNumberResponseERKN3bsp21GetChipIdSerialNumber8ResponseE_block_invoke.21 : 396 -> 384
 ~ __ZNSt3__16vectorIN3tlv9NestedTlvILh16EN3qos3tlv9QoSFilterEEENS_9allocatorIS6_EEE22__base_destruct_at_endB9foe220106EPS6_ : 96 -> 84
 ~ __ZNSt3__16vectorIN3uim3tlv16ExtendedCardInfoENS_9allocatorIS3_EEE22__base_destruct_at_endB9foe220106EPS3_ : 96 -> 84
-
 ```

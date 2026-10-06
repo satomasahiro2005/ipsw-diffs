@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ProactiveSupport.framework/ProactiveSupport`
 
-```diff
+### Section Size Changes
 
- 423.0.1.0.0
--  __TEXT.__text: 0x5f8d8
-+  __TEXT.__text: 0x5f914
-   __TEXT.__objc_methlist: 0x3c44
-   __TEXT.__const: 0xd0c
-   __TEXT.__objc_databytes: 0x1
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5f8d8` | `0x5f914` | **`+0x3c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __PASJoinStrings : 1868 -> 1896
 ~ _xBestIndex : 2224 -> 2228

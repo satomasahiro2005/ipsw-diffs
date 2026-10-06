@@ -2,46 +2,39 @@
 
 > `/System/Library/Extensions/AppleGameControllerPersonality.kext/AppleGameControllerPersonality_development`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x1f44` | `0x2820` | **`+0x8dc`** |
+| `__DATA_CONST.__const` | `0x1388` | `0x1b20` | **`+0x798`** |
+| `__TEXT.__os_log` | `0x2e3` | `0x3a1` | **`+0xbe`** |
+| `__TEXT.__cstring` | `0x24b` | `0x2dc` | **`+0x91`** |
+| `__DATA_CONST.__kalloc_type` | `0xc0` | `0x100` | **`+0x40`** |
+| `__DATA.__common` | `0x88` | `0xb0` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0x70` | `0x80` | **`+0x10`** |
+| `__TEXT_EXEC.__auth_stubs` | `0x140` | `0x150` | **`+0x10`** |
+| `__DATA.__bss` | `0x10` | `0x18` | **`+0x8`** |
+| `__DATA_CONST.__auth_got` | `0xa0` | `0xa8` | **`+0x8`** |
+| `__DATA_CONST.__mod_init_func` | `0x18` | `0x20` | **`+0x8`** |
+| `__DATA_CONST.__mod_term_func` | `0x18` | `0x20` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -14.0.21.0.0
--  __TEXT.__cstring: 0x24b
--  __TEXT.__os_log: 0x2e3
--  __TEXT_EXEC.__text: 0x1f44
--  __TEXT_EXEC.__auth_stubs: 0x140
-+14.0.24.0.0
-+  __TEXT.__cstring: 0x2dc
-+  __TEXT.__os_log: 0x3a1
-+  __TEXT_EXEC.__text: 0x2820
-+  __TEXT_EXEC.__auth_stubs: 0x150
-   __DATA.__data: 0xc8
--  __DATA.__common: 0x88
--  __DATA.__bss: 0x10
--  __DATA_CONST.__mod_init_func: 0x18
--  __DATA_CONST.__mod_term_func: 0x18
--  __DATA_CONST.__const: 0x1388
--  __DATA_CONST.__kalloc_type: 0xc0
--  __DATA_CONST.__auth_got: 0xa0
--  __DATA_CONST.__got: 0x70
 -  Functions: 60
 -  Symbols:   370
 -  CStrings:  35
-+  __DATA.__common: 0xb0
-+  __DATA.__bss: 0x18
-+  __DATA_CONST.__mod_init_func: 0x20
-+  __DATA_CONST.__mod_term_func: 0x20
-+  __DATA_CONST.__const: 0x1b20
-+  __DATA_CONST.__kalloc_type: 0x100
-+  __DATA_CONST.__auth_got: 0xa8
-+  __DATA_CONST.__got: 0x80
++14.0.24.0.0
 +  Functions: 79
 +  Symbols:   403
 +  CStrings:  44
- 
 Symbols:
 + _GLOBAL__sub_I_SteamControllerUserEventDriver.cpp
 + __ZL34SteamControllerUserEventDriver_ktv

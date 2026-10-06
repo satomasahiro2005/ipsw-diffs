@@ -2,42 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/MTLCompiler.framework/Versions/32024/MTLCompiler`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb7a58` | `0xb8abc` | **`+0x1064`** |
+| `__TEXT.__gcc_except_tab` | `0xa548` | `0xa6c4` | **`+0x17c`** |
+| `__TEXT.__cstring` | `0x96e7` | `0x9841` | **`+0x15a`** |
+| `__AUTH_CONST.__const` | `0x16b0` | `0x1750` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x2f58` | `0x2f90` | **`+0x38`** |
+
+### Other Changes
+
 ```diff
 
- 382.5.3.0.0
--  __TEXT.__text: 0xb7a58
--  __TEXT.__gcc_except_tab: 0xa548
-+  __TEXT.__text: 0xb8abc
-+  __TEXT.__gcc_except_tab: 0xa6c4
-   __TEXT.__const: 0x1288
--  __TEXT.__cstring: 0x96e7
-+  __TEXT.__cstring: 0x9841
-   __TEXT.__oslogstring: 0x4e7
--  __TEXT.__unwind_info: 0x2f58
-+  __TEXT.__unwind_info: 0x2f90
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xf0
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x16b0
-+  __AUTH_CONST.__const: 0x1750
-   __AUTH_CONST.__cfstring: 0x220
-   __AUTH_CONST.__weak_auth_got: 0x50
-   __AUTH_CONST.__auth_got: 0x10f8
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2144
--  Symbols:   3468
+-  Symbols:   3438
 -  CStrings:  1639
 +  Functions: 2155
-+  Symbols:   3481
++  Symbols:   3451
 +  CStrings:  1653
- 
 Symbols:
 + GCC_except_table520
 + GCC_except_table523

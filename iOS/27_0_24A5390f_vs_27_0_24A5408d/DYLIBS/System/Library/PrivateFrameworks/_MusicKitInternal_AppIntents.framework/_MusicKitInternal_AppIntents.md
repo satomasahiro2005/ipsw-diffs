@@ -2,84 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/_MusicKitInternal_AppIntents.framework/_MusicKitInternal_AppIntents`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa18b4` | `0xa2bf4` | **`+0x1340`** |
+| `__DATA.__bss` | `0xed90` | `0xf010` | **`+0x280`** |
+| `__AUTH_CONST.__const` | `0x4840` | `0x4608` | **`-0x238`** |
+| `__TEXT.__const` | `0xb632` | `0xb832` | **`+0x200`** |
+| `__TEXT.__cstring` | `0x1b19` | `0x1c59` | **`+0x140`** |
+| `__TEXT.__swift5_capture` | `0x504` | `0x3c4` | **`-0x140`** |
+| `__TEXT.__eh_frame` | `0x5a34` | `0x5b4c` | **`+0x118`** |
+| `__TEXT.__swift5_reflstr` | `0x196b` | `0x1a0d` | **`+0xa2`** |
+| `__TEXT.__swift5_fieldmd` | `0x1834` | `0x1898` | **`+0x64`** |
+| `__AUTH_CONST.__auth_got` | `0x1218` | `0x1248` | **`+0x30`** |
+| `__TEXT.__constg_swiftt` | `0x12f4` | `0x1310` | **`+0x1c`** |
+| `__TEXT.__swift5_assocty` | `0xe18` | `0xe30` | **`+0x18`** |
+| `__TEXT.__swift5_typeref` | `0x32f0` | `0x32d8` | **`-0x18`** |
+| `__TEXT.__unwind_info` | `0x3258` | `0x3270` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0xa48` | `0xa5c` | **`+0x14`** |
+| `__DATA.__data` | `0x1bb8` | `0x1bc8` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x130` | `0x138` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x10` | `0x18` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x1bc` | `0x1c0` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -4026.100.89.0.0
--  __TEXT.__text: 0xa18b4
 +4026.110.2.0.0
-+  __TEXT.__text: 0xa2bf4
-   __TEXT.__objc_methlist: 0x14
--  __TEXT.__const: 0xb632
--  __TEXT.__cstring: 0x1b19
--  __TEXT.__swift5_typeref: 0x32f0
--  __TEXT.__swift5_reflstr: 0x196b
--  __TEXT.__swift5_assocty: 0xe18
--  __TEXT.__constg_swiftt: 0x12f4
--  __TEXT.__swift5_fieldmd: 0x1834
-+  __TEXT.__const: 0xb832
-+  __TEXT.__cstring: 0x1c59
-+  __TEXT.__swift5_typeref: 0x32d8
-+  __TEXT.__swift5_reflstr: 0x1a0d
-+  __TEXT.__swift5_assocty: 0xe30
-+  __TEXT.__constg_swiftt: 0x1310
-+  __TEXT.__swift5_fieldmd: 0x1898
-   __TEXT.__oslogstring: 0x1e17
-   __TEXT.__swift5_protos: 0x24
--  __TEXT.__swift5_proto: 0xa48
--  __TEXT.__swift5_types: 0x1bc
-+  __TEXT.__swift5_proto: 0xa5c
-+  __TEXT.__swift5_types: 0x1c0
-   __TEXT.__swift_as_entry: 0x30c
-   __TEXT.__swift_as_ret: 0x324
-   __TEXT.__swift_as_cont: 0x488
--  __TEXT.__swift5_capture: 0x504
-+  __TEXT.__swift5_capture: 0x3c4
-   __TEXT.__swift5_builtin: 0x28
--  __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x3258
--  __TEXT.__eh_frame: 0x5a34
-+  __TEXT.__swift5_mpenum: 0x18
-+  __TEXT.__unwind_info: 0x3270
-+  __TEXT.__eh_frame: 0x5b4c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__const: 0x460
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x130
-+  __DATA_CONST.__objc_selrefs: 0x138
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x4840
-+  __AUTH_CONST.__const: 0x4608
-   __AUTH_CONST.__objc_const: 0x120
--  __AUTH_CONST.__auth_got: 0x1218
-+  __AUTH_CONST.__auth_got: 0x1248
-   __AUTH.__objc_data: 0xb0
-   __AUTH.__data: 0x468
--  __DATA.__data: 0x1bb8
--  __DATA.__bss: 0xed90
-+  __DATA.__data: 0x1bc8
-+  __DATA.__bss: 0xf010
-   __DATA.__common: 0x28
-   __DATA_DIRTY.__data: 0xf18
-   __DATA_DIRTY.__bss: 0x4c80
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5273
--  Symbols:   2101
+-  Symbols:   2064
 -  CStrings:  345
 +  Functions: 5258
-+  Symbols:   2098
++  Symbols:   2060
 +  CStrings:  350
- 
 Symbols:
 + ___swift_memcpy66_8
 + _associated conformance 28_MusicKitInternal_AppIntents0A16ItemSnippetModelV11CellContextOSHAASQ
-+ _objc_msgSend$optionalError
 + _objc_retain_x25
 + _symbolic _____ 28_MusicKitInternal_AppIntents0A16ItemSnippetModelV11CellContextO
 + _symbolic _____Sg 12MediaIntents11AudioSearchV13RankingSignalV

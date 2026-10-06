@@ -2,71 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/AXSpringBoardServerInstance.framework/AXSpringBoardServerInstance`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3e36c` | `0x3ee34` | **`+0xac8`** |
+| `__TEXT.__oslogstring` | `0x18b9` | `0x19da` | **`+0x121`** |
+| `__AUTH_CONST.__cfstring` | `0x6ac0` | `0x6be0` | **`+0x120`** |
+| `__TEXT.__cstring` | `0x66a5` | `0x6799` | **`+0xf4`** |
+| `__TEXT.__objc_methlist` | `0x33d4` | `0x3414` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2978` | `0x29b0` | **`+0x38`** |
+| `__TEXT.__gcc_except_tab` | `0xb6c` | `0xba0` | **`+0x34`** |
+| `__AUTH_CONST.__const` | `0xcc0` | `0xca0` | **`-0x20`** |
+| `__TEXT.__unwind_info` | `0x1248` | `0x1268` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xbe8` | `0xbe0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3240.9.0.0.0
--  __TEXT.__text: 0x3cb9c
--  __TEXT.__objc_methlist: 0x33d4
 +3245.7.1.0.0
-+  __TEXT.__text: 0x3d604
-+  __TEXT.__objc_methlist: 0x3414
-   __TEXT.__const: 0x5b0
-   __TEXT.__dlopen_cstrs: 0x3ae
-   __TEXT.__swift5_typeref: 0x188
 
-   __TEXT.__swift5_reflstr: 0x34
-   __TEXT.__swift5_assocty: 0x18
-   __TEXT.__swift5_capture: 0x98
--  __TEXT.__cstring: 0x66a5
--  __TEXT.__oslogstring: 0x18b9
-+  __TEXT.__cstring: 0x6799
-+  __TEXT.__oslogstring: 0x19da
-   __TEXT.__swift5_proto: 0x34
-   __TEXT.__swift5_types: 0x20
-   __TEXT.__swift_as_entry: 0x24
-   __TEXT.__swift_as_ret: 0x24
-   __TEXT.__swift_as_cont: 0x20
--  __TEXT.__gcc_except_tab: 0xb6c
--  __TEXT.__unwind_info: 0x16f0
-+  __TEXT.__gcc_except_tab: 0xba0
-+  __TEXT.__unwind_info: 0x1710
-   __TEXT.__eh_frame: 0x320
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x200
-   __DATA_CONST.__objc_protolist: 0x78
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2978
-+  __DATA_CONST.__objc_selrefs: 0x29b0
-   __DATA_CONST.__objc_superrefs: 0x100
-   __DATA_CONST.__objc_arraydata: 0x120
-   __DATA_CONST.__got: 0x870
--  __AUTH_CONST.__const: 0xcc0
--  __AUTH_CONST.__cfstring: 0x6ac0
-+  __AUTH_CONST.__const: 0xca0
-+  __AUTH_CONST.__cfstring: 0x6be0
-   __AUTH_CONST.__objc_const: 0x3a30
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_intobj: 0x528
-   __AUTH_CONST.__objc_arrayobj: 0x60
-   __AUTH_CONST.__objc_dictobj: 0x190
--  __AUTH_CONST.__auth_got: 0xbe8
-+  __AUTH_CONST.__auth_got: 0xbe0
-   __AUTH.__objc_data: 0x520
-   __AUTH.__data: 0x250
-   __DATA.__objc_ivar: 0x10c
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1372
--  Symbols:   3707
+-  Symbols:   2704
 -  CStrings:  1116
 +  Functions: 1381
-+  Symbols:   3724
++  Symbols:   2715
 +  CStrings:  1128
- 
 Symbols:
 + -[AXSBSettingsLoader _removeStaleBuddyTripleClickOptionForReason:needsFirstBootIODFlow:]
 + -[AXSBSettingsLoader _setupModeDidChange]
@@ -177,14 +140,6 @@ Symbols:
 + ___80-[AXSpringBoardServerSideAppManager _launchEntityForApplicationOnActiveDisplay:]_block_invoke_4
 + ___80-[AXSpringBoardServerSideAppManager _launchEntityForApplicationOnActiveDisplay:]_block_invoke_5
 + ___block_descriptor_88_e8_32s40s48s56s64s_e5_v8?0ls32l8s40l8s48l8s56l8s64l8
-+ _objc_msgSend$_activeDisplayConfigurationForTransaction
-+ _objc_msgSend$_launchEntityForApplicationOnActiveDisplay:
-+ _objc_msgSend$_removeStaleBuddyTripleClickOptionForReason:needsFirstBootIODFlow:
-+ _objc_msgSend$_requestTransactionWithPrimaryEntity:sideEntity:floatingEntity:spaceConfiguration:floatingConfiguration:displayConfiguration:
-+ _objc_msgSend$_targetableActiveBuiltInScene
-+ _objc_msgSend$focusLockSpringBoardWindowScene:forAccessibilityReason:
-+ _objc_msgSend$makeKeyWindow
-+ _objc_msgSend$requestTransitionWithOptions:displayConfiguration:builder:validator:
 - -[AXSpringBoardServerSideAppManager _requestTransactionWithPrimaryEntity:sideEntity:floatingEntity:spaceConfiguration:floatingConfiguration:]
 - GCC_except_table1045
 - GCC_except_table1050
@@ -282,8 +237,6 @@ Symbols:
 - ___55-[AXSpringBoardServerSideAppManager launchApplication:]_block_invoke
 - ___76-[AXSpringBoardServerSideAppManager launchApplicationWithFullConfiguration:]_block_invoke
 - ___block_descriptor_80_e8_32s40s48s56s_e5_v8?0ls32l8s40l8s48l8s56l8
-- _objc_msgSend$_requestTransactionWithPrimaryEntity:sideEntity:floatingEntity:spaceConfiguration:floatingConfiguration:
-- _objc_msgSend$requestTransitionWithOptions:builder:validator:
 - _objc_retain_x27
 CStrings:
 + "CSNotificationDispatcher"

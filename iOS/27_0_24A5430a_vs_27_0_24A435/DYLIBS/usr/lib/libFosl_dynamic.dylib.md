@@ -2,44 +2,45 @@
 
 > `/usr/lib/libFosl_dynamic.dylib`
 
-```diff
+### Section Size Changes
 
- 302.0.0.0.0
--  __TEXT.__text: 0xfc838
-+  __TEXT.__text: 0xfc8b0
-   __TEXT.__const: 0x77a0
-   __TEXT.__cstring: 0x49898
-   __TEXT.__unwind_info: 0xabe0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfc838` | `0xfc8b0` | **`+0x78`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2bee3b058 -> sub_2bfd2b058 : 1316 -> 1312
-~ sub_2bee3c09c -> sub_2bfd2c098 : 932 -> 940
-~ sub_2bee43c44 -> sub_2bfd33c48 : 244 -> 248
-~ sub_2bee44c14 -> sub_2bfd34c1c : 88 -> 92
-~ sub_2bee47238 -> sub_2bfd37244 : 80 -> 84
-~ sub_2bee4b2d4 -> sub_2bfd3b2e4 : 60 -> 64
-~ sub_2bee4f3ec -> sub_2bfd3f400 : 124 -> 128
-~ sub_2bee4fb50 -> sub_2bfd3fb68 : 136 -> 124
-~ sub_2bee57718 -> sub_2bfd47724 : 28 -> 32
-~ sub_2bee58388 -> sub_2bfd48398 : 8 -> 12
-~ sub_2bee5840c -> sub_2bfd48420 : 68 -> 76
-~ sub_2bee589f0 -> sub_2bfd48a0c : 672 -> 680
-~ sub_2bee58c90 -> sub_2bfd48cb4 : 60 -> 64
-~ sub_2bee58ff8 -> sub_2bfd49020 : 64 -> 68
-~ sub_2bee59410 -> sub_2bfd4943c : 80 -> 84
-~ sub_2bee5b1d8 -> sub_2bfd4b208 : 364 -> 368
-~ sub_2bee5d88c -> sub_2bfd4d8c0 : 1040 -> 1044
-~ sub_2bee79428 -> sub_2bfd69460 : 44 -> 48
-~ sub_2bee80ce4 -> sub_2bfd70d20 : 88 -> 92
-~ sub_2bee8b0ec -> sub_2bfd7b12c : 80 -> 84
-~ sub_2bee8c178 -> sub_2bfd7c1bc : 320 -> 324
-~ sub_2bee93fe4 -> sub_2bfd8402c : 244 -> 248
-~ sub_2beeb2bcc -> sub_2bfda2c18 : 320 -> 328
-~ sub_2beeb619c -> sub_2bfda61f0 : 296 -> 304
-~ sub_2beecb7a4 -> sub_2bfdbb800 : 16 -> 20
-~ sub_2beecbf24 -> sub_2bfdbbf84 : 448 -> 452
-~ sub_2beecfe70 -> sub_2bfdbfed4 : 7020 -> 7024
-~ sub_2beef7674 -> sub_2bfde76dc : 40 -> 44
-~ sub_2beef769c -> sub_2bfde7708 : 52 -> 56
-~ sub_2beefa670 -> sub_2bfdea6e0 : 244 -> 248
-~ sub_2bef1ad8c -> sub_2bfe0ae00 : 80 -> 84
+~ sub_2bed60058 -> sub_2bfc3f058 : 1316 -> 1312
+~ sub_2bed6109c -> sub_2bfc40098 : 932 -> 940
+~ sub_2bed68c44 -> sub_2bfc47c48 : 244 -> 248
+~ sub_2bed69c14 -> sub_2bfc48c1c : 88 -> 92
+~ sub_2bed6c238 -> sub_2bfc4b244 : 80 -> 84
+~ sub_2bed702d4 -> sub_2bfc4f2e4 : 60 -> 64
+~ sub_2bed743ec -> sub_2bfc53400 : 124 -> 128
+~ sub_2bed74b50 -> sub_2bfc53b68 : 136 -> 124
+~ sub_2bed7c718 -> sub_2bfc5b724 : 28 -> 32
+~ sub_2bed7d388 -> sub_2bfc5c398 : 8 -> 12
+~ sub_2bed7d40c -> sub_2bfc5c420 : 68 -> 76
+~ sub_2bed7d9f0 -> sub_2bfc5ca0c : 672 -> 680
+~ sub_2bed7dc90 -> sub_2bfc5ccb4 : 60 -> 64
+~ sub_2bed7dff8 -> sub_2bfc5d020 : 64 -> 68
+~ sub_2bed7e410 -> sub_2bfc5d43c : 80 -> 84
+~ sub_2bed801d8 -> sub_2bfc5f208 : 364 -> 368
+~ sub_2bed8288c -> sub_2bfc618c0 : 1040 -> 1044
+~ sub_2bed9e428 -> sub_2bfc7d460 : 44 -> 48
+~ sub_2beda5ce4 -> sub_2bfc84d20 : 88 -> 92
+~ sub_2bedb00ec -> sub_2bfc8f12c : 80 -> 84
+~ sub_2bedb1178 -> sub_2bfc901bc : 320 -> 324
+~ sub_2bedb8fe4 -> sub_2bfc9802c : 244 -> 248
+~ sub_2bedd7bcc -> sub_2bfcb6c18 : 320 -> 328
+~ sub_2beddb19c -> sub_2bfcba1f0 : 296 -> 304
+~ sub_2bedf07a4 -> sub_2bfccf800 : 16 -> 20
+~ sub_2bedf0f24 -> sub_2bfccff84 : 448 -> 452
+~ sub_2bedf4e70 -> sub_2bfcd3ed4 : 7020 -> 7024
+~ sub_2bee1c674 -> sub_2bfcfb6dc : 40 -> 44
+~ sub_2bee1c69c -> sub_2bfcfb708 : 52 -> 56
+~ sub_2bee1f670 -> sub_2bfcfe6e0 : 244 -> 248
+~ sub_2bee3fd8c -> sub_2bfd1ee00 : 80 -> 84
 ```

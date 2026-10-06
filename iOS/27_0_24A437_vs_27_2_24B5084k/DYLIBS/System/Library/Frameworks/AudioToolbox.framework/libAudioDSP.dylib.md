@@ -2,80 +2,41 @@
 
 > `/System/Library/Frameworks/AudioToolbox.framework/libAudioDSP.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x36b3d0` | `0x37fcc8` | **`+0x148f8`** |
+| `__TEXT.__realtime` | `0x15cbf0` | `0x16cf30` | **`+0x10340`** |
+| `__TEXT.__gcc_except_tab` | `0x3045c` | `0x313f4` | **`+0xf98`** |
+| `__TEXT.__cstring` | `0x33fc9` | `0x34577` | **`+0x5ae`** |
+| `__TEXT.__const` | `0xa2690` | `0xa20f0` | **`-0x5a0`** |
+| `__DATA_CONST.__const` | `0xe3c8` | `0xe958` | **`+0x590`** |
+| `__AUTH_CONST.__const` | `0x214f8` | `0x21a30` | **`+0x538`** |
+| `__TEXT.__unwind_info` | `0xe378` | `0xe818` | **`+0x4a0`** |
+| `__AUTH_CONST.__cfstring` | `0x207e0` | `0x204c0` | **`-0x320`** |
+| `__DATA.__data` | `0x2dc8` | `0x3010` | **`+0x248`** |
+| `__TEXT.__oslogstring` | `0x2ab16` | `0x2ad27` | **`+0x211`** |
+| `__DATA_CONST.__objc_selrefs` | `0x590` | `0x540` | **`-0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x1e20` | `0x1e60` | **`+0x40`** |
+| `__DATA.__bss` | `0x2628` | `0x2648` | **`+0x20`** |
+| `__DATA_CONST.__objc_arraydata` | `0x78` | `0x58` | **`-0x20`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x48` | `0x30` | **`-0x18`** |
+| `__DATA_DIRTY.__bss` | `0x2d8` | `0x2e8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -881.117.20.0.0
--  __TEXT.__text: 0x364170
--  __TEXT.__realtime: 0x15b35c
 +881.207.0.0.0
-+  __TEXT.__text: 0x378880
-+  __TEXT.__realtime: 0x16b63c
-   __TEXT.__delay_stubs: 0xb40
-   __TEXT.__delay_helper: 0x494
-   __TEXT.__objc_methlist: 0x334
--  __TEXT.__const: 0xa2690
-+  __TEXT.__const: 0xa20f0
-   __TEXT.__dlopen_cstrs: 0x4f
--  __TEXT.__cstring: 0x33fc9
--  __TEXT.__gcc_except_tab: 0x3045c
--  __TEXT.__oslogstring: 0x2ab16
--  __TEXT.__unwind_info: 0xf4c8
-+  __TEXT.__cstring: 0x34577
-+  __TEXT.__gcc_except_tab: 0x313f4
-+  __TEXT.__oslogstring: 0x2ad27
-+  __TEXT.__unwind_info: 0xf9a0
-   __TEXT.__eh_frame: 0xf8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xe3c8
-+  __DATA_CONST.__const: 0xe958
-   __DATA_CONST.__objc_classlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x590
-+  __DATA_CONST.__objc_selrefs: 0x540
-   __DATA_CONST.__objc_superrefs: 0x20
--  __DATA_CONST.__objc_arraydata: 0x78
-+  __DATA_CONST.__objc_arraydata: 0x58
-   __DATA_CONST.__got: 0x3d0
--  __AUTH_CONST.__const: 0x214f8
--  __AUTH_CONST.__cfstring: 0x207e0
-+  __AUTH_CONST.__const: 0x21a30
-+  __AUTH_CONST.__cfstring: 0x204c0
-   __AUTH_CONST.__objc_const: 0x6a0
-   __AUTH_CONST.__weak_auth_got: 0x118
-   __AUTH_CONST.__objc_intobj: 0xa8
-   __AUTH_CONST.__objc_dictobj: 0x50
--  __AUTH_CONST.__objc_arrayobj: 0x48
-+  __AUTH_CONST.__objc_arrayobj: 0x30
-   __AUTH_CONST.__objc_doubleobj: 0x20
--  __AUTH_CONST.__auth_got: 0x1e20
-+  __AUTH_CONST.__auth_got: 0x1e60
-   __AUTH.__objc_data: 0x140
-   __AUTH.__data: 0x18
-   __DATA.__objc_ivar: 0x20
--  __DATA.__data: 0x2dc8
-+  __DATA.__data: 0x3010
-   __DATA_DIRTY.__data: 0xc
--  __DATA_DIRTY.__bss: 0x2d8
-+  __DATA_DIRTY.__bss: 0x2e8
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CoreAudio.framework/CoreAudio
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 11219
--  Symbols:   17585
--  CStrings:  10835
+-  Symbols:   17442
+-  CStrings:  10838
 +  Functions: 11402
-+  Symbols:   17869
-+  CStrings:  10978
- 
++  Symbols:   17736
++  CStrings:  10981
 Symbols:
 + GCC_except_table1
 + GCC_except_table10
@@ -4705,16 +4666,6 @@ Symbols:
 - _kDspLibToneMeisterPlistKey_PhaseCompensate
 - _kDspLibToneMeisterPlistKey_SideChain
 - _objc_autorelease
-- _objc_msgSend$cStringUsingEncoding:
-- _objc_msgSend$dictionaryWithObjectsAndKeys:
-- _objc_msgSend$indexOfObject:
-- _objc_msgSend$integerValue
-- _objc_msgSend$numberWithInteger:
-- _objc_msgSend$numberWithUnsignedLong:
-- _objc_msgSend$removeAllObjects
-- _objc_msgSend$setValue:forKey:
-- _objc_msgSend$stringByAppendingString:
-- _objc_msgSend$substringFromIndex:
 CStrings:
 + " but AU was created with only "
 + " channels\n"
@@ -4814,6 +4765,9 @@ CStrings:
 + ". "
 + "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/local/include/boost/uuid/detail/random_provider_posix.ipp"
 + "/tmp/AudioCapture/AUEchoCancelerV6"
++ "00:32:04"
++ "00:32:11"
++ "00:32:28"
 + "AUEchoCancelerV6"
 + "AUEchoCancelerV6::InitializeEC: mic %u init params differ from mic 0 — refChannelsToUse %d/%d multiChanECMode %d/%d blockSize %u/%u filterSize %u/%u ecInitConvergence %u/%u enableFast %u/%u"
 + "AUEchoCancelerV6_cpu_logging"
@@ -4895,6 +4849,7 @@ CStrings:
 + "Register NoiseGate"
 + "Scotty Center Gain"
 + "Scotty Gain Factor"
++ "Sep  3 2026"
 + "SetProperty( kAudioUnitProperty_DspLibDictionary ) Error: data did not decode to a dictionary property list\n"
 + "StaticCreepModelQ"
 + "Successfully imported "
@@ -5070,6 +5025,10 @@ CStrings:
 - "/System/Library/Audio/Tunings/Generic/CinematicSeparation/Tunings/separate_and_remix_music.austrip"
 - "/System/Library/Audio/Tunings/Generic/CinematicSeparation/Tunings/separate_and_remix_music.dspg"
 - "/System/Library/Audio/Tunings/Generic/CinematicSeparation/Tunings/separate_and_remix_music.propstrip"
+- "17:18:09"
+- "17:18:16"
+- "17:18:31"
+- "Aug  8 2026"
 - "Error dynamic EQ: missing key '%@' "
 - "Error for filter %d: %@"
 - "Failed to create new music austrip plist"

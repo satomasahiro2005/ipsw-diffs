@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/Coherence.framework/Coherence`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x410b4c` | `0x41081c` | **`-0x330`** |
+| `__AUTH_CONST.__auth_got` | `0x1df8` | `0x1df0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 240.0.0.0.0
--  __TEXT.__text: 0x410b4c
-+  __TEXT.__text: 0x41081c
-   __TEXT.__objc_methlist: 0x15dc
-   __TEXT.__const: 0x1c558
-   __TEXT.__gcc_except_tab: 0x2698
-
-   __AUTH_CONST.__cfstring: 0x780
-   __AUTH_CONST.__objc_const: 0x6a58
-   __AUTH_CONST.__weak_auth_got: 0x20
--  __AUTH_CONST.__auth_got: 0x1df8
-+  __AUTH_CONST.__auth_got: 0x1df0
-   __AUTH.__objc_data: 0x4b8
-   __AUTH.__data: 0x2eb8
-   __DATA.__objc_ivar: 0x8c
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   Functions: 13724
--  Symbols:   4151
-+  Symbols:   4150
-   CStrings:  434
- 
+-  Symbols:   3860
++  Symbols:   3859
 Symbols:
 - _swift_retain_x11
 Functions:

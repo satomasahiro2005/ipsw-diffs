@@ -2,71 +2,46 @@
 
 > `/private/var/staged_system_apps/Music.app/Frameworks/MusicApplication.framework/MusicApplication`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__objc_methtype`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa9dfc8` | `0xaa335c` | **`+0x5394`** |
+| `__TEXT.__objc_methname` | `0x30685` | `0x30645` | **`-0x40`** |
+| `__DATA.__objc_const` | `0x3b8c0` | `0x3b8d8` | **`+0x18`** |
+| `__DATA.__objc_selrefs` | `0x8198` | `0x81a0` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0xfd5c` | `0xfd64` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x21fb8` | `0x21fc0` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA.__objc_stublist`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_data`
-- `__DATA.__data`
-- `__DATA.__objc_stublist`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methtype`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
- 4026.110.1.0.0
--  __TEXT.__text: 0xa9dfc8
-+  __TEXT.__text: 0xaa335c
-   __TEXT.__auth_stubs: 0xb0d0
-   __TEXT.__objc_stubs: 0x16ea0
--  __TEXT.__objc_methlist: 0xfd5c
-+  __TEXT.__objc_methlist: 0xfd64
-   __TEXT.__objc_classname: 0xbe85
--  __TEXT.__objc_methname: 0x30685
-+  __TEXT.__objc_methname: 0x30645
-   __TEXT.__const: 0x53ba2
-   __TEXT.__cstring: 0x585ce
-   __TEXT.__ustring: 0x2a2
-
-   __TEXT.__swift_as_ret: 0x8f4
-   __TEXT.__swift_as_cont: 0x1294
-   __TEXT.__swift5_mpenum: 0x3c4
--  __TEXT.__unwind_info: 0x21fb8
-+  __TEXT.__unwind_info: 0x21fc0
-   __TEXT.__eh_frame: 0x1afd0
-   __DATA_CONST.__const: 0x6af78
-   __DATA_CONST.__cfstring: 0xcc0
-
-   __DATA_CONST.__auth_got: 0x5878
-   __DATA_CONST.__got: 0x4a38
-   __DATA_CONST.__auth_ptr: 0x9fb0
--  __DATA.__objc_const: 0x3b8c0
--  __DATA.__objc_selrefs: 0x8198
-+  __DATA.__objc_const: 0x3b8d8
-+  __DATA.__objc_selrefs: 0x81a0
-   __DATA.__objc_ivar: 0x104
-   __DATA.__objc_data: 0x400e8
-   __DATA.__data: 0x425a0
-
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 51498
-   Symbols:   20196
 -  CStrings:  12529
 +  CStrings:  12531
- 
 Functions:
 ~ sub_f9a0 : 4 -> 20
 ~ sub_f9a4 -> sub_f9b4 : 4 -> 32

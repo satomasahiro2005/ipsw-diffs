@@ -2,14 +2,15 @@
 
 > `/System/Library/Extensions/AppleMultitouchSPI.kext/PlugIns/MultitouchHID.plugin/MultitouchHID`
 
-```diff
+### Section Size Changes
 
- 10100.44.0.0.0
--  __TEXT.__text: 0x514fc
-+  __TEXT.__text: 0x51504
-   __TEXT.__objc_methlist: 0x1e4
-   __TEXT.__const: 0x1901
-   __TEXT.__cstring: 0x5456
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x514fc` | `0x51504` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _MTForceConfigGetThresholdsForStage : 16 -> 20
 ~ __ZNSt3__16vectorI7MTPointNS_9allocatorIS1_EEE6insertENS_11__wrap_iterIPKS1_EERS6_ : 496 -> 492

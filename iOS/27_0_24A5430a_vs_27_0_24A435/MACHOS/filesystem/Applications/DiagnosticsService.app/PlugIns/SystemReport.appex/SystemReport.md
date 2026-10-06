@@ -2,82 +2,50 @@
 
 > `/Applications/DiagnosticsService.app/PlugIns/SystemReport.appex/SystemReport`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methtype`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1d99c` | `0x1f1d8` | **`+0x183c`** |
+| `__DATA_CONST.__cfstring` | `0x5040` | `0x5700` | **`+0x6c0`** |
+| `__DATA.__objc_const` | `0x2f58` | `0x35b0` | **`+0x658`** |
+| `__TEXT.__cstring` | `0x3880` | `0x3cd4` | **`+0x454`** |
+| `__DATA.__objc_data` | `0x14a0` | `0x1810` | **`+0x370`** |
+| `__TEXT.__objc_methlist` | `0x1b44` | `0x1d4c` | **`+0x208`** |
+| `__TEXT.__objc_stubs` | `0x4360` | `0x44e0` | **`+0x180`** |
+| `__TEXT.__objc_classname` | `0x5c6` | `0x6de` | **`+0x118`** |
+| `__TEXT.__objc_methname` | `0x3543` | `0x3659` | **`+0x116`** |
+| `__TEXT.__oslogstring` | `0x2294` | `0x2358` | **`+0xc4`** |
+| `__DATA.__objc_selrefs` | `0x12d0` | `0x1330` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x508` | `0x568` | **`+0x60`** |
+| `__DATA_CONST.__objc_classlist` | `0x210` | `0x268` | **`+0x58`** |
+| `__TEXT.__unwind_info` | `0x658` | `0x6a8` | **`+0x50`** |
+| `__DATA_CONST.__objc_intobj` | `0x420` | `0x438` | **`+0x18`** |
+| `__TEXT.__auth_stubs` | `0xce0` | `0xcf0` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x680` | `0x688` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x260` | `0x258` | **`-0x8`** |
+| `__DATA_CONST.__objc_arraydata` | `0x120` | `0x128` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x98` | `0xa0` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_dictobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA.__data`
+- `__TEXT.__objc_methtype`
+
+### Other Changes
 
 ```diff
 
- 1374.2.2.0.0
--  __TEXT.__text: 0x1d99c
--  __TEXT.__auth_stubs: 0xce0
--  __TEXT.__objc_stubs: 0x4360
--  __TEXT.__objc_methlist: 0x1b44
--  __TEXT.__cstring: 0x3880
-+  __TEXT.__text: 0x1f1d8
-+  __TEXT.__auth_stubs: 0xcf0
-+  __TEXT.__objc_stubs: 0x44e0
-+  __TEXT.__objc_methlist: 0x1d4c
-+  __TEXT.__cstring: 0x3cd4
-   __TEXT.__const: 0x98
--  __TEXT.__oslogstring: 0x2294
--  __TEXT.__objc_classname: 0x5c6
-+  __TEXT.__oslogstring: 0x2358
-+  __TEXT.__objc_classname: 0x6de
-   __TEXT.__objc_methtype: 0x5c5
--  __TEXT.__objc_methname: 0x3543
-+  __TEXT.__objc_methname: 0x3659
-   __TEXT.__gcc_except_tab: 0x27c
--  __TEXT.__unwind_info: 0x658
--  __DATA_CONST.__const: 0x508
--  __DATA_CONST.__cfstring: 0x5040
--  __DATA_CONST.__objc_classlist: 0x210
-+  __TEXT.__unwind_info: 0x6a8
-+  __DATA_CONST.__const: 0x568
-+  __DATA_CONST.__cfstring: 0x5700
-+  __DATA_CONST.__objc_classlist: 0x268
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x98
--  __DATA_CONST.__objc_intobj: 0x420
--  __DATA_CONST.__objc_arraydata: 0x120
-+  __DATA_CONST.__objc_superrefs: 0xa0
-+  __DATA_CONST.__objc_intobj: 0x438
-+  __DATA_CONST.__objc_arraydata: 0x128
-   __DATA_CONST.__objc_dictobj: 0x50
-   __DATA_CONST.__objc_arrayobj: 0xa8
--  __DATA_CONST.__auth_got: 0x680
--  __DATA_CONST.__got: 0x260
-+  __DATA_CONST.__auth_got: 0x688
-+  __DATA_CONST.__got: 0x258
-   __DATA_CONST.__auth_ptr: 0x10
--  __DATA.__objc_const: 0x2f58
--  __DATA.__objc_selrefs: 0x12d0
-+  __DATA.__objc_const: 0x35b0
-+  __DATA.__objc_selrefs: 0x1330
-   __DATA.__objc_ivar: 0xa4
--  __DATA.__objc_data: 0x14a0
-+  __DATA.__objc_data: 0x1810
-   __DATA.__data: 0xc0
-   __DATA.__common: 0x10
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-
-   - /usr/lib/libTelephonyBasebandDynamic.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/updaters/libT200Updater.dylib
 -  Functions: 615
 -  Symbols:   327
 -  CStrings:  1655
 +  Functions: 656
 +  Symbols:   336
 +  CStrings:  1737
- 
 Symbols:
 + _IOMobileFramebufferGetMainDisplay
 + _IOMobileFramebufferGetSecondaryDisplay

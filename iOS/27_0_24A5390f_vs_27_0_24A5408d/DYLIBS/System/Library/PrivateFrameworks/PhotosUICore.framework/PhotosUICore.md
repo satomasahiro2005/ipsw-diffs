@@ -2,122 +2,62 @@
 
 > `/System/Library/PrivateFrameworks/PhotosUICore.framework/PhotosUICore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x184335c` | `0x18649e0` | **`+0x21684`** |
+| `__TEXT.__const` | `0xa1ca0` | `0xa2930` | **`+0xc90`** |
+| `__DATA.__bss` | `0xad370` | `0xadcb0` | **`+0x940`** |
+| `__TEXT.__unwind_info` | `0x5cc48` | `0x5d4f8` | **`+0x8b0`** |
+| `__AUTH_CONST.__const` | `0x7f998` | `0x80168` | **`+0x7d0`** |
+| `__TEXT.__cstring` | `0xbdc25` | `0xbe2d4` | **`+0x6af`** |
+| `__TEXT.__oslogstring` | `0x50a8b` | `0x51128` | **`+0x69d`** |
+| `__AUTH_CONST.__objc_const` | `0x15f058` | `0x15f6f0` | **`+0x698`** |
+| `__TEXT.__swift5_capture` | `0x1c340` | `0x1c800` | **`+0x4c0`** |
+| `__TEXT.__swift5_reflstr` | `0x3461a` | `0x34a2a` | **`+0x410`** |
+| `__AUTH.__data` | `0x3bac8` | `0x3bea8` | **`+0x3e0`** |
+| `__TEXT.__constg_swiftt` | `0x43d40` | `0x4407c` | **`+0x33c`** |
+| `__TEXT.__swift5_typeref` | `0x371ce` | `0x37508` | **`+0x33a`** |
+| `__TEXT.__swift5_fieldmd` | `0x29c94` | `0x29f38` | **`+0x2a4`** |
+| `__TEXT.__objc_methlist` | `0xa4d3c` | `0xa4fcc` | **`+0x290`** |
+| `__DATA.__data` | `0x40ac8` | `0x40d18` | **`+0x250`** |
+| `__DATA_CONST.__objc_selrefs` | `0x43c28` | `0x43df0` | **`+0x1c8`** |
+| `__AUTH.__objc_data` | `0x50078` | `0x501f0` | **`+0x178`** |
+| `__TEXT.__eh_frame` | `0x33af0` | `0x33a04` | **`-0xec`** |
+| `__AUTH_CONST.__auth_got` | `0xacc8` | `0xad58` | **`+0x90`** |
+| `__DATA_CONST.__const` | `0x22e60` | `0x22ef0` | **`+0x90`** |
+| `__AUTH_CONST.__cfstring` | `0x6d920` | `0x6d9a0` | **`+0x80`** |
+| `__TEXT.__gcc_except_tab` | `0x10690` | `0x10704` | **`+0x74`** |
+| `__TEXT.__swift5_types` | `0x35b4` | `0x35fc` | **`+0x48`** |
+| `__DATA.__objc_ivar` | `0xd5dc` | `0xd614` | **`+0x38`** |
+| `__DATA_CONST.__got` | `0xcf08` | `0xcf40` | **`+0x38`** |
+| `__TEXT.__swift5_proto` | `0x53c4` | `0x53f8` | **`+0x34`** |
+| `__DATA_CONST.__objc_classlist` | `0x6100` | `0x6118` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x1554` | `0x1568` | **`+0x14`** |
+| `__DATA.__common` | `0x1780` | `0x1790` | **`+0x10`** |
+| `__DATA_CONST.__objc_arraydata` | `0x4500` | `0x4510` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x37f0` | `0x3800` | **`+0x10`** |
+| `__TEXT.__swift5_assocty` | `0xdc88` | `0xdc98` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x2508` | `0x24f8` | **`-0x10`** |
+| `__DATA_CONST.__objc_catlist` | `0x380` | `0x378` | **`-0x8`** |
+| `__DATA_DIRTY.__objc_data` | `0x27c8` | `0x27d0` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x1580` | `0x1588` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x1224` | `0x1220` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -910.33.102.0.0
--  __TEXT.__text: 0x184335c
 +912.0.111.0.0
-+  __TEXT.__text: 0x18649e0
-   __TEXT.__delay_helper: 0x114
--  __TEXT.__objc_methlist: 0xa4d3c
--  __TEXT.__const: 0xa1ca0
-+  __TEXT.__objc_methlist: 0xa4fcc
-+  __TEXT.__const: 0xa2930
-   __TEXT.__dlopen_cstrs: 0x125e
--  __TEXT.__swift5_typeref: 0x371ce
--  __TEXT.__constg_swiftt: 0x43d40
--  __TEXT.__swift5_reflstr: 0x3461a
--  __TEXT.__swift5_fieldmd: 0x29c94
--  __TEXT.__swift5_builtin: 0x1554
--  __TEXT.__swift5_assocty: 0xdc88
--  __TEXT.__cstring: 0xbdc25
--  __TEXT.__swift5_capture: 0x1c340
--  __TEXT.__oslogstring: 0x50a8b
--  __TEXT.__swift5_proto: 0x53c4
--  __TEXT.__swift5_types: 0x35b4
--  __TEXT.__swift_as_entry: 0x1580
--  __TEXT.__swift_as_cont: 0x2508
-+  __TEXT.__swift5_typeref: 0x37508
-+  __TEXT.__constg_swiftt: 0x4407c
-+  __TEXT.__swift5_reflstr: 0x34a2a
-+  __TEXT.__swift5_fieldmd: 0x29f38
-+  __TEXT.__swift5_builtin: 0x1568
-+  __TEXT.__swift5_assocty: 0xdc98
-+  __TEXT.__cstring: 0xbe2d4
-+  __TEXT.__swift5_capture: 0x1c800
-+  __TEXT.__oslogstring: 0x51128
-+  __TEXT.__swift5_proto: 0x53f8
-+  __TEXT.__swift5_types: 0x35fc
-+  __TEXT.__swift_as_entry: 0x1588
-+  __TEXT.__swift_as_cont: 0x24f8
-   __TEXT.__swift5_protos: 0x2ac
--  __TEXT.__swift_as_ret: 0x1224
-+  __TEXT.__swift_as_ret: 0x1220
-   __TEXT.__swift5_mpenum: 0x184
--  __TEXT.__gcc_except_tab: 0x10690
-+  __TEXT.__gcc_except_tab: 0x10704
-   __TEXT.__ustring: 0x3c48
--  __TEXT.__unwind_info: 0x5cc48
--  __TEXT.__eh_frame: 0x33af0
-+  __TEXT.__unwind_info: 0x5d4f8
-+  __TEXT.__eh_frame: 0x33a04
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x22e60
--  __DATA_CONST.__objc_classlist: 0x6100
--  __DATA_CONST.__objc_catlist: 0x380
-+  __DATA_CONST.__const: 0x22ef0
-+  __DATA_CONST.__objc_classlist: 0x6118
-+  __DATA_CONST.__objc_catlist: 0x378
-   __DATA_CONST.__objc_protolist: 0x2188
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x43c28
-+  __DATA_CONST.__objc_selrefs: 0x43df0
-   __DATA_CONST.__objc_protorefs: 0x8d8
--  __DATA_CONST.__objc_superrefs: 0x37f0
--  __DATA_CONST.__objc_arraydata: 0x4500
-+  __DATA_CONST.__objc_superrefs: 0x3800
-+  __DATA_CONST.__objc_arraydata: 0x4510
-   __DATA_CONST.__vfx_script_tbl: 0x20
--  __DATA_CONST.__got: 0xcf08
--  __AUTH_CONST.__const: 0x7f998
--  __AUTH_CONST.__cfstring: 0x6d920
--  __AUTH_CONST.__objc_const: 0x15f058
-+  __DATA_CONST.__got: 0xcf40
-+  __AUTH_CONST.__const: 0x80168
-+  __AUTH_CONST.__cfstring: 0x6d9a0
-+  __AUTH_CONST.__objc_const: 0x15f6f0
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_doubleobj: 0x760
-   __AUTH_CONST.__objc_dictobj: 0x1220
-   __AUTH_CONST.__objc_intobj: 0x4b90
-   __AUTH_CONST.__objc_arrayobj: 0x2568
-   __AUTH_CONST.__objc_floatobj: 0x150
--  __AUTH_CONST.__auth_got: 0xacc8
--  __AUTH.__objc_data: 0x50078
--  __AUTH.__data: 0x3bac8
--  __DATA.__objc_ivar: 0xd5dc
--  __DATA.__data: 0x40ac8
-+  __AUTH_CONST.__auth_got: 0xad58
-+  __AUTH.__objc_data: 0x501f0
-+  __AUTH.__data: 0x3bea8
-+  __DATA.__objc_ivar: 0xd614
-+  __DATA.__data: 0x40d18
-   __DATA.__objc_stublist: 0x40
--  __DATA.__bss: 0xad370
--  __DATA.__common: 0x1780
--  __DATA_DIRTY.__objc_data: 0x27c8
-+  __DATA.__bss: 0xadcb0
-+  __DATA.__common: 0x1790
-+  __DATA_DIRTY.__objc_data: 0x27d0
-   __DATA_DIRTY.__data: 0x90
-   __DATA_DIRTY.__bss: 0x260
-   __DATA_DIRTY.__common: 0x4
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 145068
--  Symbols:   145973
+-  Symbols:   116674
 -  CStrings:  26968
 +  Functions: 145576
-+  Symbols:   146148
++  Symbols:   116803
 +  CStrings:  27028
- 
 Symbols:
 + +[PXAddAssetsToLastUsedAssetCollectionAction commandTitleForMostRecentlyUsedAlbumWithPhotoLibrary:]
 + +[PXAddAssetsToLastUsedAssetCollectionAction targetMostRecentlyUsedAlbumInPhotoLibrary:error:]
@@ -1556,80 +1496,6 @@ Symbols:
 + _keypath_get_selector_navigationTitlePocketBottomExtensionLibrary
 + _keypath_get_selector_navigationTitlePocketBottomExtensionOpaqueBar
 + _keypath_get_selector_scaleToDeviceInsetModeMaximumCropFraction
-+ _objc_msgSend$_avAssetForCurrentEditSource
-+ _objc_msgSend$_currentMaxConcurrentLowMemoryRequests
-+ _objc_msgSend$_executeThrottledLowMemoryRequest:resultHandler:
-+ _objc_msgSend$_finishThrottledLowMemoryRequest:
-+ _objc_msgSend$_isLoadingExpectedInitialContent
-+ _objc_msgSend$_loadCinematographyScript
-+ _objc_msgSend$_overflowMenuRepresentation
-+ _objc_msgSend$_setTitleAlignment:
-+ _objc_msgSend$_updatePocketPreferredUserInterfaceStyle
-+ _objc_msgSend$_updatePocketPreferredUserInterfaceStyleAnimated:
-+ _objc_msgSend$_updateTitleLegibilityForReduceTransparencyChange
-+ _objc_msgSend$_wantsDarkStatusBar
-+ _objc_msgSend$accessibilityLabel
-+ _objc_msgSend$addAssetsToCollectionShareByCopyingSourceAssets:creationOptionsMappedToSourceAssets:withBatchCommentText:outCreatedSharePostPlaceholder:skipSharePost:
-+ _objc_msgSend$alwaysShowWelcomeSheetDuringCreation
-+ _objc_msgSend$analysesMap
-+ _objc_msgSend$cinematicAdjustmentActive
-+ _objc_msgSend$cleanupInteractionModeTipID
-+ _objc_msgSend$countOfExclusiveAssets
-+ _objc_msgSend$createWelcomeViewControllerWithContinueHandler:
-+ _objc_msgSend$defaultValuesForCast:smartStyleRenderingVersion:
-+ _objc_msgSend$flattenLivePhotoToStillIfNeeded
-+ _objc_msgSend$hasOpaqueBars
-+ _objc_msgSend$hidePhotoWith:
-+ _objc_msgSend$includeAllPhotosData
-+ _objc_msgSend$includeLivePhotoData
-+ _objc_msgSend$includeLocationData
-+ _objc_msgSend$initWithArchivalStringValue:
-+ _objc_msgSend$initWithAssets:batchComment:metadataPreferences:selectedPostToAlbumUUID:
-+ _objc_msgSend$initWithIncludeAllPhotosData:includeLocationData:includeLivePhotoData:
-+ _objc_msgSend$initWithRequestID:startBlock:
-+ _objc_msgSend$initialContentExpectation
-+ _objc_msgSend$isContentBelowTitle
-+ _objc_msgSend$navigationTitlePocketBottomExtensionCollections
-+ _objc_msgSend$navigationTitlePocketBottomExtensionLibrary
-+ _objc_msgSend$navigationTitlePocketBottomExtensionOpaqueBar
-+ _objc_msgSend$pendingCinematicEnabled
-+ _objc_msgSend$performIntentSearch:searchOptions:resultsHandler:
-+ _objc_msgSend$pocketPreferredUserInterfaceStyle
-+ _objc_msgSend$prepareSharedAlbumCreationInPhotoLibrary:presentationEnvironment:completionHandler:
-+ _objc_msgSend$presentPickerFromView:
-+ _objc_msgSend$presentSharedCollectionsWelcomeIfNeededFromPresentationEnvironment:completionHandler:
-+ _objc_msgSend$px_setBottomEdgePocketHidden:
-+ _objc_msgSend$px_setPocketPreferredUserInterfaceStyleForTopEdge:
-+ _objc_msgSend$px_symbolImageNamed:withConfiguration:
-+ _objc_msgSend$rankedSearchResults
-+ _objc_msgSend$scaleToDeviceInsetModeMaximumCropFraction
-+ _objc_msgSend$setCinematicAdjustmentActive:
-+ _objc_msgSend$setCleanupInteractionModeTipPresentationDelegate:
-+ _objc_msgSend$setDoubleTapFloorZoomScale:
-+ _objc_msgSend$setHasOpaqueBars:
-+ _objc_msgSend$setInitialContentExpectation:
-+ _objc_msgSend$setMaxRankedSearchResults:
-+ _objc_msgSend$setMenuRepresentation:
-+ _objc_msgSend$setNavigationTitlePocketBottomExtensionCollections:
-+ _objc_msgSend$setNavigationTitlePocketBottomExtensionLibrary:
-+ _objc_msgSend$setNavigationTitlePocketBottomExtensionOpaqueBar:
-+ _objc_msgSend$setPendingCinematicEnabled:
-+ _objc_msgSend$setPresentsFromBottomOfScreen:
-+ _objc_msgSend$setScaleToDeviceInsetModeMaximumCropFraction:
-+ _objc_msgSend$setSystemPhotoLibrary:
-+ _objc_msgSend$setViEntryType:
-+ _objc_msgSend$setWellKnownPhotoLibraryIdentifiers:
-+ _objc_msgSend$sharedAlbumCreationViewControllerWithPreselectedAssets:photoLibrary:metadataPreferences:markInterventionAsAlreadyShown:createAsLegacySharedAlbum:deferredManageStorageHandler:completion:
-+ _objc_msgSend$shouldCopyLocationData
-+ _objc_msgSend$showActivity
-+ _objc_msgSend$showPlayer
-+ _objc_msgSend$showSearch
-+ _objc_msgSend$showSlideshow
-+ _objc_msgSend$showsViewOptionsOnly
-+ _objc_msgSend$simulateSlowAddAssetsCallback
-+ _objc_msgSend$startBlock
-+ _objc_msgSend$storyResourceSongAsset
-+ _objc_msgSend$targetMostRecentlyUsedAlbumInPhotoLibrary:error:
 + _sPXVKCanCheckShouldShowEnhancedSiri
 + _sPXVKCanSetVIEntryType
 + _symbolic SDySSSo22PHAssetCreationOptionsCG
@@ -3047,34 +2913,6 @@ Symbols:
 - _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAA5GroupVyAA19_ConditionalContentVyAcAE7toolbar_3forQrAA10VisibilityO_AA16ToolbarPlacementVdtFQOy12PhotosUICore019SharedAlbumCreationC0V_Qo_AQ0rs5AddToC0VGG_SaySo7UIImageCGQo_HO
 - _get_witness_table qd0__7SwiftUI4ViewHD5_AaBPAAE5alert_11isPresented7actions7messageQrqd___AA7BindingVySbGqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAcAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAklM_Qrqd___Sbyqd___qd__tctSQRd__lFQOy12PhotosUICore40SharedCollectionAccessPermissionsSectionV_So08PXSharedqR10PermissionVQo__ARQo__SSAA6ButtonVyAA4TextVGAXQo_HO
 - _keypath_get_selector_minimumMarginForInsetContent
-- _objc_msgSend$_setMinimizeBehavior:
-- _objc_msgSend$activityButtonAction
-- _objc_msgSend$additionalActionMenuElementsForPhotosBarsController:
-- _objc_msgSend$canOpenURL:
-- _objc_msgSend$defaultValuesForCast:
-- _objc_msgSend$exclusionMaskLayer
-- _objc_msgSend$fetchAssetsWithCloudIdentifiers:options:
-- _objc_msgSend$initWithAssets:batchComment:assetCreationOptions:
-- _objc_msgSend$isEnhancedSiriAvailable
-- _objc_msgSend$isValidCloudIdentifierStringValue:
-- _objc_msgSend$minimumMarginForInsetContent
-- _objc_msgSend$presentAssetsBasedConfidentialityWarningIfNeededWithCompletionHandler:
-- _objc_msgSend$presentConfidentialityWarningIfNeededForInvitingPeopleToSharedAlbum:presentationEnvironment:completionHandler:
-- _objc_msgSend$presentSensitivityInterventionIfNeededWithCompletionHandler:
-- _objc_msgSend$presentSharedCollectionFeatureConfidentialityWarningIfNeededWithCompletionHandler:
-- _objc_msgSend$px_setMinimizeBehaviorIfPossible:
-- _objc_msgSend$px_setPocketPreferredUserInterfaceStyleForVerticalEdges:
-- _objc_msgSend$resolveSharedAlbumCreationTypeInPhotoLibrary:presentationEnvironment:completionHandler:
-- _objc_msgSend$setActivityButtonAction:
-- _objc_msgSend$setMinimumMarginForInsetContent:
-- _objc_msgSend$setShouldWorkAround139627593:
-- _objc_msgSend$sharedAlbumCreationViewControllerWithPreselectedAssets:photoLibrary:assetCreationOptions:markInterventionAsAlreadyShown:createAsLegacySharedAlbum:deferredManageStorageHandler:completion:
-- _objc_msgSend$shouldShowConfidentialityWarningForInvitingPeopleToSharedAlbum:
-- _objc_msgSend$shouldShowConfidentialityWarningForUpgradingSharedAlbum
-- _objc_msgSend$showConfidentialityWarningWhenStartingMigration
-- _objc_msgSend$showConfidentialityWarningsWhenInvitingPeople
-- _objc_msgSend$stringFromItems:
-- _objc_msgSend$swift_additionalActionMenuElements
 - _symbolic Sbyc
 - _symbolic So16UIViewControllerCIegg_
 - _symbolic So16UIViewControllerCIeyBy_

@@ -2,104 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/SeymourMedia.framework/SeymourMedia`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1423b8` | `0x147e44` | **`+0x5a8c`** |
+| `__AUTH_CONST.__const` | `0xd578` | `0xda20` | **`+0x4a8`** |
+| `__TEXT.__const` | `0xa074` | `0xa2c4` | **`+0x250`** |
+| `__TEXT.__eh_frame` | `0x5ab4` | `0x5cf4` | **`+0x240`** |
+| `__AUTH_CONST.__objc_const` | `0x4de0` | `0x4fd0` | **`+0x1f0`** |
+| `__AUTH.__data` | `0x1bc0` | `0x1da0` | **`+0x1e0`** |
+| `__TEXT.__oslogstring` | `0x5503` | `0x56a3` | **`+0x1a0`** |
+| `__TEXT.__swift5_capture` | `0x3ffc` | `0x419c` | **`+0x1a0`** |
+| `__DATA.__bss` | `0x8cb0` | `0x8e30` | **`+0x180`** |
+| `__TEXT.__constg_swiftt` | `0x3bd8` | `0x3ce0` | **`+0x108`** |
+| `__TEXT.__swift5_fieldmd` | `0x2f88` | `0x3074` | **`+0xec`** |
+| `__TEXT.__swift5_typeref` | `0x4c3c` | `0x4cf8` | **`+0xbc`** |
+| `__TEXT.__unwind_info` | `0x3f70` | `0x4020` | **`+0xb0`** |
+| `__TEXT.__swift5_reflstr` | `0x28d0` | `0x2950` | **`+0x80`** |
+| `__DATA.__data` | `0x2568` | `0x25d0` | **`+0x68`** |
+| `__AUTH_CONST.__auth_got` | `0x28e8` | `0x2940` | **`+0x58`** |
+| `__DATA_CONST.__got` | `0x16a8` | `0x16d8` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x1c00` | `0x1c30` | **`+0x30`** |
+| `__DATA_DIRTY.__objc_data` | `0x530` | `0x548` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0x38c` | `0x3a0` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x1e8` | `0x1f8` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0xfb8` | `0xfc8` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0xdbc` | `0xdcc` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x548` | `0x558` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x5b4` | `0x5c0` | **`+0xc`** |
+| `__AUTH.__objc_data` | `0xe60` | `0xe68` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x150` | `0x154` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x154` | `0x158` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.146.1.4
--  __TEXT.__text: 0x1363ec
--  __TEXT.__objc_methlist: 0xdbc
--  __TEXT.__const: 0xa074
--  __TEXT.__cstring: 0x1c00
--  __TEXT.__constg_swiftt: 0x3bd8
--  __TEXT.__swift5_typeref: 0x4c3c
 +2027.1.50.0.1
-+  __TEXT.__text: 0x13bb14
-+  __TEXT.__objc_methlist: 0xdcc
-+  __TEXT.__const: 0xa2c4
-+  __TEXT.__cstring: 0x1c30
-+  __TEXT.__constg_swiftt: 0x3ce0
-+  __TEXT.__swift5_typeref: 0x4cf8
-   __TEXT.__swift5_builtin: 0x2a8
--  __TEXT.__swift5_reflstr: 0x28d0
--  __TEXT.__swift5_fieldmd: 0x2f88
-+  __TEXT.__swift5_reflstr: 0x2950
-+  __TEXT.__swift5_fieldmd: 0x3074
-   __TEXT.__swift5_assocty: 0x270
--  __TEXT.__swift5_proto: 0x5b4
--  __TEXT.__swift5_types: 0x38c
--  __TEXT.__swift5_capture: 0x3ffc
--  __TEXT.__oslogstring: 0x5503
-+  __TEXT.__swift5_proto: 0x5c0
-+  __TEXT.__swift5_types: 0x3a0
-+  __TEXT.__swift5_capture: 0x419c
-+  __TEXT.__oslogstring: 0x56a3
-   __TEXT.__swift5_protos: 0xec
--  __TEXT.__swift_as_entry: 0x150
--  __TEXT.__swift_as_ret: 0x154
--  __TEXT.__swift_as_cont: 0x548
-+  __TEXT.__swift_as_entry: 0x154
-+  __TEXT.__swift_as_ret: 0x158
-+  __TEXT.__swift_as_cont: 0x558
-   __TEXT.__swift5_mpenum: 0xa0
--  __TEXT.__unwind_info: 0x4ec8
--  __TEXT.__eh_frame: 0x5ac4
-+  __TEXT.__unwind_info: 0x4fa0
-+  __TEXT.__eh_frame: 0x5d04
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x330
--  __DATA_CONST.__objc_classlist: 0x1e8
-+  __DATA_CONST.__objc_classlist: 0x1f8
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x128
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xfb8
-+  __DATA_CONST.__objc_selrefs: 0xfc8
-   __DATA_CONST.__objc_protorefs: 0x88
-   __DATA_CONST.__objc_superrefs: 0x10
--  __DATA_CONST.__got: 0x16a8
--  __AUTH_CONST.__const: 0xd578
-+  __DATA_CONST.__got: 0x16d8
-+  __AUTH_CONST.__const: 0xda20
-   __AUTH_CONST.__cfstring: 0x20
--  __AUTH_CONST.__objc_const: 0x4de0
--  __AUTH_CONST.__auth_got: 0x28e8
--  __AUTH.__objc_data: 0xe60
--  __AUTH.__data: 0x1bc0
-+  __AUTH_CONST.__objc_const: 0x4fd0
-+  __AUTH_CONST.__auth_got: 0x2940
-+  __AUTH.__objc_data: 0xe68
-+  __AUTH.__data: 0x1da0
-   __DATA.__objc_ivar: 0x28
--  __DATA.__data: 0x2568
-+  __DATA.__data: 0x25d0
-   __DATA.__common: 0xf8
--  __DATA_DIRTY.__objc_data: 0x530
-+  __DATA_DIRTY.__objc_data: 0x548
-   __DATA_DIRTY.__data: 0x26b8
-   __DATA_DIRTY.__bss: 0xb00
-   __DATA_DIRTY.__common: 0xa8
 
-   - /System/Library/PrivateFrameworks/JetEngine.framework/JetEngine
-   - /System/Library/PrivateFrameworks/MessageDispatch.framework/MessageDispatch
-   - /System/Library/PrivateFrameworks/MessageDispatchCore.framework/MessageDispatchCore
 +  - /System/Library/PrivateFrameworks/SeymourAssetCore.framework/SeymourAssetCore
-   - /System/Library/PrivateFrameworks/SeymourClient.framework/SeymourClient
-   - /System/Library/PrivateFrameworks/SeymourClientFoundation.framework/SeymourClientFoundation
-   - /System/Library/PrivateFrameworks/SeymourClientServices.framework/SeymourClientServices
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6226
--  Symbols:   2782
+-  Symbols:   2409
 -  CStrings:  518
 +  Functions: 6302
-+  Symbols:   2811
++  Symbols:   2436
 +  CStrings:  523
- 
 Symbols:
 + -[SMCAirplaneModeObserver activate]
 + _AVContentKeyRequestRetryReasonReceivedResponseWithExpiredLease
@@ -121,8 +71,6 @@ Symbols:
 + _associated conformance 12SeymourMedia23StreamingKeyProvisionerC0D12RenewalState33_4FE801EE7969E1C2FF8B393A4C4BE02DLLOSHAASQ
 + _get_enum_tag_for_layout_string 12SeymourMedia12WiFiObserverC5State33_4E1BF95BB89397F28377D81901A6C046LLO
 + _get_enum_tag_for_layout_string 12SeymourMedia22ProfilePictureProviderC10StoreState33_EE79E350B47F2A954BB6109BD95505E7LLO
-+ _objc_msgSend$initWithAsset:automaticallyLoadedAssetKeys:
-+ _objc_msgSend$playerLooperWithPlayer:templateItem:
 + _swift_cvw_initEnumMetadataSingleCaseWithLayoutString
 + _swift_deallocPartialClassInstance
 + _symbolic So14AVPlayerLooperC

@@ -2,29 +2,18 @@
 
 > `/usr/lib/libAudioDSPCore.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5e29c` | `0x5e1ec` | **`-0xb0`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x5e29c
-+  __TEXT.__text: 0x5e1ec
-   __TEXT.__realtime: 0x14904
-   __TEXT.__objc_methlist: 0x14
-   __TEXT.__const: 0x14058
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+-881.104.0.0.0
++881.108.0.0.0
 Functions:
 ~ __ZN8AudioDSP4Core34GetAudioChannelLayoutTagFromStringENSt3__117basic_string_viewIcNS1_11char_traitsIcEEEE : 1248 -> 1216
 ~ __ZNSt3__16vectorIN2IR15FFTFilterKernelIfEENS_9allocatorIS3_EEE6resizeEm : 488 -> 468
@@ -40,5 +29,4 @@ Functions:
 ~ __ZNSt3__16vectorIN2IR15FFTFilterKernelIDF16_EENS_9allocatorIS3_EEE6resizeEm : 488 -> 468
 ~ __ZN4VBAP21delaunayTriangulationERKNSt3__16vectorIfNS0_9allocatorIfEEEERKNS1_IiNS2_IiEEEERKNS1_INS0_4listIiS7_EENS2_ISC_EEEE : 16204 -> 16196
 ~ __ZN4VBAP35calculateVirtualLoudspeakersPolygonERKNSt3__16vectorIfNS0_9allocatorIfEEEERNS1_IS4_NS2_IS4_EEEERNS1_INS1_IjNS2_IjEEEENS2_ISB_EEEE : 4804 -> 4796
-
 ```

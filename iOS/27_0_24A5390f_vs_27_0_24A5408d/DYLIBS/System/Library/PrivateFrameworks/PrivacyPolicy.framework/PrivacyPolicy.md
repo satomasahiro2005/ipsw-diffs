@@ -2,58 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/PrivacyPolicy.framework/PrivacyPolicy`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x32538` | `0x32b5c` | **`+0x624`** |
+| `__TEXT.__swift5_typeref` | `0x41aa` | `0x4316` | **`+0x16c`** |
+| `__TEXT.__const` | `0x2ac4` | `0x2b44` | **`+0x80`** |
+| `__DATA.__data` | `0xd50` | `0xd98` | **`+0x48`** |
+| `__AUTH_CONST.__auth_got` | `0xd60` | `0xda0` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0xe98` | `0xeb8` | **`+0x20`** |
+| `__DATA.__bss` | `0x1c60` | `0x1c70` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x420` | `0x430` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -7.0.0.0.0
--  __TEXT.__text: 0x32538
 +8.0.0.0.0
-+  __TEXT.__text: 0x32b5c
-   __TEXT.__objc_methlist: 0x38
--  __TEXT.__const: 0x2ac4
--  __TEXT.__swift5_typeref: 0x41aa
-+  __TEXT.__const: 0x2b44
-+  __TEXT.__swift5_typeref: 0x4316
-   __TEXT.__cstring: 0xaee
-   __TEXT.__oslogstring: 0x50e
-   __TEXT.__swift5_capture: 0x2f0
 
-   __TEXT.__swift5_assocty: 0x288
-   __TEXT.__swift5_proto: 0xd4
-   __TEXT.__swift5_types: 0xb0
--  __TEXT.__unwind_info: 0xe98
-+  __TEXT.__unwind_info: 0xeb8
-   __TEXT.__eh_frame: 0x3d4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x140
--  __DATA_CONST.__got: 0x420
-+  __DATA_CONST.__got: 0x430
-   __AUTH_CONST.__const: 0x17f0
-   __AUTH_CONST.__objc_const: 0x5d8
--  __AUTH_CONST.__auth_got: 0xd60
-+  __AUTH_CONST.__auth_got: 0xda0
-   __AUTH.__objc_data: 0xd0
-   __AUTH.__data: 0x678
--  __DATA.__data: 0xd50
--  __DATA.__bss: 0x1c60
-+  __DATA.__data: 0xd98
-+  __DATA.__bss: 0x1c70
-   __DATA.__common: 0x20
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1705
--  Symbols:   3876
+-  Symbols:   3839
 +  Functions: 1716
-+  Symbols:   3916
-   CStrings:  102
- 
++  Symbols:   3879
 Symbols:
 + _$s10Foundation23LocalizedStringResourceV13PrivacyPolicyEADO5closeACvgZ
 + _$s10Foundation23LocalizedStringResourceV13PrivacyPolicyEADO5closeACvgZTm

@@ -2,90 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/MediaExperience.framework/MediaExperience`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x254540` | `0x2f3adc` | **`+0x9f59c`** |
+| `__TEXT.__oslogstring` | `0x501a3` | `0x7b604` | **`+0x2b461`** |
+| `__TEXT.__cstring` | `0x38f4b` | `0x4f4eb` | **`+0x165a0`** |
+| `__AUTH_CONST.__cfstring` | `0x1c080` | `0x1c7e0` | **`+0x760`** |
+| `__TEXT.__unwind_info` | `0x5f90` | `0x6510` | **`+0x580`** |
+| `__TEXT.__gcc_except_tab` | `0x4eb4` | `0x5294` | **`+0x3e0`** |
+| `__AUTH_CONST.__objc_const` | `0xcf28` | `0xd2a8` | **`+0x380`** |
+| `__DATA_CONST.__const` | `0x7248` | `0x7490` | **`+0x248`** |
+| `__TEXT.__objc_methlist` | `0x88c8` | `0x8a68` | **`+0x1a0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x54c0` | `0x55d0` | **`+0x110`** |
+| `__DATA_DIRTY.__bss` | `0xce8` | `0xda0` | **`+0xb8`** |
+| `__DATA.__common` | `0x5d0` | `0x680` | **`+0xb0`** |
+| `__DATA.__bss` | `0x1380` | `0x12d8` | **`-0xa8`** |
+| `__AUTH.__objc_data` | `0x1d10` | `0x1db0` | **`+0xa0`** |
+| `__DATA.__objc_ivar` | `0xc78` | `0xcbc` | **`+0x44`** |
+| `__AUTH.__data` | `0x5f0` | `0x630` | **`+0x40`** |
+| `__DATA.__data` | `0x1410` | `0x1450` | **`+0x40`** |
+| `__DATA_DIRTY.__common` | `0x60` | `0x90` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0x4988` | `0x49a8` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0xd10` | `0xd28` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x310` | `0x320` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x2e0` | `0x2f0` | **`+0x10`** |
+| `__TEXT.__const` | `0x1d08` | `0x1d10` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -360.75.1.2.0
--  __TEXT.__text: 0x24a5c0
 +385.6.1.0.0
-+  __TEXT.__text: 0x2e946c
-   __TEXT.__delay_helper: 0x304
-   __TEXT.__lazy_helpers: 0xfc
--  __TEXT.__objc_methlist: 0x88c8
--  __TEXT.__cstring: 0x38f4b
--  __TEXT.__const: 0x1d08
--  __TEXT.__gcc_except_tab: 0x4eb4
--  __TEXT.__oslogstring: 0x501a3
-+  __TEXT.__objc_methlist: 0x8a68
-+  __TEXT.__cstring: 0x4f4eb
-+  __TEXT.__const: 0x1d10
-+  __TEXT.__gcc_except_tab: 0x5294
-+  __TEXT.__oslogstring: 0x7b604
-   __TEXT.__dlopen_cstrs: 0x613
--  __TEXT.__unwind_info: 0x8038
-+  __TEXT.__unwind_info: 0x8aa0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7248
--  __DATA_CONST.__objc_classlist: 0x310
-+  __DATA_CONST.__const: 0x7490
-+  __DATA_CONST.__objc_classlist: 0x320
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x68
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x54c0
-+  __DATA_CONST.__objc_selrefs: 0x55d0
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x2e0
-+  __DATA_CONST.__objc_superrefs: 0x2f0
-   __DATA_CONST.__objc_arraydata: 0xf8
--  __DATA_CONST.__got: 0xd10
--  __AUTH_CONST.__const: 0x4988
--  __AUTH_CONST.__cfstring: 0x1c080
--  __AUTH_CONST.__objc_const: 0xcf28
-+  __DATA_CONST.__got: 0xd28
-+  __AUTH_CONST.__const: 0x49a8
-+  __AUTH_CONST.__cfstring: 0x1c7e0
-+  __AUTH_CONST.__objc_const: 0xd2a8
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__lazy_load_got: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x78
 
-   __AUTH_CONST.__objc_dictobj: 0x118
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x1d10
--  __AUTH.__data: 0x5f0
--  __DATA.__objc_ivar: 0xc78
--  __DATA.__data: 0x1410
--  __DATA.__common: 0x5d0
-+  __AUTH.__objc_data: 0x1db0
-+  __AUTH.__data: 0x630
-+  __DATA.__objc_ivar: 0xcbc
-+  __DATA.__data: 0x1450
-+  __DATA.__common: 0x680
-   __DATA_DIRTY.__objc_data: 0x190
--  __DATA_DIRTY.__bss: 0xce8
--  __DATA_DIRTY.__common: 0x60
-+  __DATA_DIRTY.__bss: 0xda0
-+  __DATA_DIRTY.__common: 0x90
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CoreAudio.framework/CoreAudio
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  Functions: 10089
--  Symbols:   15951
--  CStrings:  9896
-+  Functions: 11685
-+  Symbols:   16360
-+  CStrings:  14386
- 
+-  Functions: 10094
+-  Symbols:   13524
+-  CStrings:  9897
++  Functions: 11688
++  Symbols:   13898
++  CStrings:  14387
 Symbols:
 + +[MXSessionManager donateMatchRingtoneVolumeDisabledSignal]
 + +[MXSessionManager(Utilities) sendVolumeFollowingToggleSnapshotTelemetry]
@@ -545,42 +502,6 @@ Symbols:
 + _kMXSystemMediaCastingControllerReplyParam_ErrorCode
 + _kMXSystemMediaCastingControllerReplyParam_Result
 + _mxsmccs_CopyActiveClient
-+ _objc_msgSend$Discoverability
-+ _objc_msgSend$Signals
-+ _objc_msgSend$alarmVolumeChangedOnPersonalRoute
-+ _objc_msgSend$canSessionsCoexistDueToSharePlay:victim:
-+ _objc_msgSend$clearCachedEndpointsForProtocol:
-+ _objc_msgSend$completeWithError:result:
-+ _objc_msgSend$completeWithError:result:beforeSendingResult:
-+ _objc_msgSend$completeWithReplyError:result:
-+ _objc_msgSend$copyMirroringSystemCastingInstance
-+ _objc_msgSend$domain
-+ _objc_msgSend$donateDiscoverabilitySignalWithContentIdentifier:context:userInfo:
-+ _objc_msgSend$donateMatchRingtoneVolumeDisabledSignal
-+ _objc_msgSend$failUnresponsiveWithError:
-+ _objc_msgSend$flushPendingHandlersWithError:
-+ _objc_msgSend$getCleanupSessionAssertionReasonString:
-+ _objc_msgSend$handleAsyncResult:
-+ _objc_msgSend$initWithClientConnection:objectID:resultOpCode:requestID:
-+ _objc_msgSend$initWithContentIdentifier:context:osBuild:userInfo:
-+ _objc_msgSend$initWithOperation:instance:timeoutNsec:completion:
-+ _objc_msgSend$isSystemSoundLocalVADOnSamePhysicalDeviceAsDefaultVAD
-+ _objc_msgSend$noteUnresponsiveExtensionForOperation:error:
-+ _objc_msgSend$populatePrimaryRouteConfig:routesInfo:systemAudioContextUUID:volumeButtonClientSession:
-+ _objc_msgSend$readHDMILatencyFromCoreAnimation
-+ _objc_msgSend$registerPendingHandler:
-+ _objc_msgSend$remoteObjectProxyWithErrorHandler:
-+ _objc_msgSend$remoteProxyForConnection:
-+ _objc_msgSend$resolveUnresponsive:error:result:
-+ _objc_msgSend$ringtoneVolumeChangedOnPersonalRoute
-+ _objc_msgSend$sendVolumeFollowingToggleSnapshotTelemetry
-+ _objc_msgSend$sendVolumeRequestForOperation:completionHandler:send:
-+ _objc_msgSend$setAlarmVolumeChangedOnPersonalRoute:
-+ _objc_msgSend$setRingtoneVolumeChangedOnPersonalRoute:
-+ _objc_msgSend$setSampleRateAndBufferSizeForOnDemandVAD
-+ _objc_msgSend$takePendingHandlerForRequestID:
-+ _objc_msgSend$typeAsAString
-+ _objc_msgSend$updateSampleRateAndBufferSizeForOnDemandVADIfNeeded:
 + _pvmCopyMappedCategoryAndMode
 + _pvmInitialize
 + _pvmRawVolumeToVolume
@@ -694,7 +615,6 @@ Symbols:
 - _gSystemSoundMaxVolume
 - _gSystemSoundVibrationPatterns
 - _mx_runningBoardServices_initializeGlobalAssertionProperties.onceToken
-- _objc_msgSend$sendTelemetryForMatchRingtoneVolumeToggleChange
 - _sCMSessionMgrAudioDeviceStartIdleSleepPreventor
 - _sCMSessionMgrAudioDeviceStartIdleSleepPreventorAllocated
 - _sCMSessionMgrAudioDeviceStartIdleSleepPreventorCreationTime
@@ -3219,6 +3139,7 @@ CStrings:
 + "-stark mode- %s: carPlayEndpoint or currentExtendedEndpoint is NULL"
 + "-stark mode- %s: controller is NULL"
 + "0 for ShadowingAudioSessionID, must be non-zero"
++ "01:08:17"
 + "<no reason>"
 + "AN"
 + "AVAILABLE"
@@ -4081,6 +4002,7 @@ CStrings:
 + "ScreenIsDarkDidChange"
 + "SendCommandCompletionCallback"
 + "SendDataCompletionCallback"
++ "Sep  4 2026"
 + "Server connection was lost"
 + "Session cannot do output mute"
 + "Session currently has an invalid category for isSharePlayMediaSession."
@@ -5229,6 +5151,8 @@ CStrings:
 - "-[MXSystemCastingExtensionInstance getVolumeForDevice:completionHandler:]_block_invoke"
 - "-[MXSystemCastingExtensionInstance increaseVolumeByCount:forDevice:completionHandler:]_block_invoke"
 - "-[MXSystemCastingExtensionInstance setVolume:forDevice:completionHandler:]_block_invoke"
+- "15:48:22"
+- "Aug  8 2026"
 - "CMSystemSoundMgrGetMaxVoiceOverVolumeOnSystemLocalVAD"
 - "FigRoutingContextUtilities_CopyPredictedEndpoints"
 - "FigRoutingManagerContextUtilities_AddCurrentlyActivatingEndpoint_block_invoke_2"

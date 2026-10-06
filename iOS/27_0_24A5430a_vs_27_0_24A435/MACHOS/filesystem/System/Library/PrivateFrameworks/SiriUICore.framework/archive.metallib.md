@@ -2,10 +2,9 @@
 
 > `/System/Library/PrivateFrameworks/SiriUICore.framework/archive.metallib`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
-- `__TEXT.__reflection`
-- `__TEXT.__vertex`
-- `__TEXT.__fragment`
 - `__TEXT.__compute`
+- `__TEXT.__fragment`
 - `__TEXT.__metallib`
+- `__TEXT.__vertex`

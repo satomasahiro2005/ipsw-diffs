@@ -2,58 +2,33 @@
 
 > `/System/Library/AccessibilityBundles/Maps.axbundle/Maps`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x157e8` | `0x159ac` | **`+0x1c4`** |
+| `__AUTH_CONST.__objc_const` | `0x8270` | `0x8390` | **`+0x120`** |
+| `__AUTH.__objc_data` | `0x140` | `0x1e0` | **`+0xa0`** |
+| `__AUTH_CONST.__cfstring` | `0x63c0` | `0x6460` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0x48f7` | `0x496e` | **`+0x77`** |
+| `__TEXT.__objc_methlist` | `0x27a0` | `0x27f0` | **`+0x50`** |
+| `__DATA_CONST.__objc_classlist` | `0x738` | `0x748` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x890` | `0x8a0` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x260` | `0x268` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3045.0.0.0.0
--  __TEXT.__text: 0x157e8
--  __TEXT.__objc_methlist: 0x27a0
 +3048.0.0.0.0
-+  __TEXT.__text: 0x159ac
-+  __TEXT.__objc_methlist: 0x27f0
-   __TEXT.__const: 0xc8
-   __TEXT.__gcc_except_tab: 0x308
--  __TEXT.__cstring: 0x48f7
-+  __TEXT.__cstring: 0x496e
-   __TEXT.__oslogstring: 0x14e
-   __TEXT.__ustring: 0x4
--  __TEXT.__unwind_info: 0x890
-+  __TEXT.__unwind_info: 0x8a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x478
--  __DATA_CONST.__objc_classlist: 0x738
-+  __DATA_CONST.__objc_classlist: 0x748
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x9f8
--  __DATA_CONST.__objc_superrefs: 0x260
-+  __DATA_CONST.__objc_superrefs: 0x268
-   __DATA_CONST.__got: 0x238
-   __AUTH_CONST.__const: 0x460
--  __AUTH_CONST.__cfstring: 0x63c0
--  __AUTH_CONST.__objc_const: 0x8270
-+  __AUTH_CONST.__cfstring: 0x6460
-+  __AUTH_CONST.__objc_const: 0x8390
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x140
-+  __AUTH.__objc_data: 0x1e0
-   __DATA.__objc_ivar: 0x4
-   __DATA.__bss: 0x90
-   __DATA_DIRTY.__objc_data: 0x46f0
 
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 731
--  Symbols:   2375
+-  Symbols:   2129
 -  CStrings:  857
 +  Functions: 736
-+  Symbols:   2390
++  Symbols:   2144
 +  CStrings:  863
- 
 Symbols:
 + +[CarZoomButtonViewAccessibility _accessibilityPerformValidations:]
 + +[CarZoomButtonViewAccessibility(SafeCategory) safeCategoryBaseClass]

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CallsSearch.framework/CallsSearch`
 
-```diff
+### Section Size Changes
 
- 153.100.1.2.29
--  __TEXT.__text: 0x32e80
-+  __TEXT.__text: 0x32e74
-   __TEXT.__objc_methlist: 0x14a0
-   __TEXT.__const: 0xa4c
-   __TEXT.__swift5_typeref: 0xbab
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x32e80` | `0x32e74` | **`-0xc`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_215752944 -> sub_215f30944 : 656 -> 644
 ~ sub_2157550a4 -> sub_215f33098 : 444 -> 448

@@ -2,26 +2,27 @@
 
 > `/Applications/HomeCaptiveViewService.app/HomeCaptiveViewService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x972c` | `0x9730` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__const`
 - `__TEXT.__const`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
 - `__TEXT.__swift5_entry`
 - `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA.__objc_data`
-- `__DATA.__data`
 
-```diff
+### Other Changes
 
- 25.0.0.0.0
--  __TEXT.__text: 0x972c
-+  __TEXT.__text: 0x9730
-   __TEXT.__auth_stubs: 0x7c0
-   __TEXT.__objc_stubs: 0x6a0
-   __TEXT.__objc_methlist: 0x710
+```text
 Functions:
 ~ sub_100002498 : 1376 -> 1380
 ```

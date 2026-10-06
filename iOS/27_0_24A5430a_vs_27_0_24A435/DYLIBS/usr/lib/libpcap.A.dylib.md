@@ -2,14 +2,15 @@
 
 > `/usr/lib/libpcap.A.dylib`
 
-```diff
+### Section Size Changes
 
- 148.0.0.0.0
--  __TEXT.__text: 0x20e10
-+  __TEXT.__text: 0x20e30
-   __TEXT.__const: 0xc330
-   __TEXT.__cstring: 0x6c4c
-   __TEXT.__unwind_info: 0x590
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x20e10` | `0x20e30` | **`+0x20`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _pcap_filter_with_aux_data : 1104 -> 1112
 ~ _bpf_optimize : 1516 -> 1520

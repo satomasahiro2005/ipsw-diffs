@@ -2,93 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/AppleIntelligenceReporting.framework/AppleIntelligenceReporting`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_selrefs`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x766e4` | `0x77ae8` | **`+0x1404`** |
+| `__DATA.__bss` | `0x1c690` | `0x1c910` | **`+0x280`** |
+| `__TEXT.__const` | `0xec1c` | `0xed9c` | **`+0x180`** |
+| `__AUTH_CONST.__const` | `0x6508` | `0x6640` | **`+0x138`** |
+| `__TEXT.__swift5_reflstr` | `0x210d` | `0x222d` | **`+0x120`** |
+| `__TEXT.__cstring` | `0x1766` | `0x1866` | **`+0x100`** |
+| `__TEXT.__swift5_fieldmd` | `0x3538` | `0x3614` | **`+0xdc`** |
+| `__TEXT.__eh_frame` | `0x3300` | `0x3360` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x28c8` | `0x2918` | **`+0x50`** |
+| `__TEXT.__swift5_mpenum` | `0x278` | `0x2a0` | **`+0x28`** |
+| `__TEXT.__constg_swiftt` | `0x2370` | `0x238c` | **`+0x1c`** |
+| `__AUTH_CONST.__auth_got` | `0x1738` | `0x1750` | **`+0x18`** |
+| `__DATA.__data` | `0x2570` | `0x2588` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x168` | `0x180` | **`+0x18`** |
+| `__TEXT.__swift5_typeref` | `0x2e0f` | `0x2e25` | **`+0x16`** |
+| `__TEXT.__swift5_proto` | `0xe7c` | `0xe90` | **`+0x14`** |
+| `__DATA_DIRTY.__data` | `0xe48` | `0xe50` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x3d8` | `0x3dc` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -212.0.0.0.0
--  __TEXT.__text: 0x766e4
--  __TEXT.__const: 0xec1c
--  __TEXT.__swift5_typeref: 0x2e0f
 +220.0.0.0.0
-+  __TEXT.__text: 0x77ae8
-+  __TEXT.__const: 0xed9c
-+  __TEXT.__swift5_typeref: 0x2e25
-   __TEXT.__oslogstring: 0x5eb
--  __TEXT.__constg_swiftt: 0x2370
--  __TEXT.__swift5_reflstr: 0x210d
--  __TEXT.__swift5_fieldmd: 0x3538
--  __TEXT.__cstring: 0x1766
--  __TEXT.__swift5_proto: 0xe7c
--  __TEXT.__swift5_types: 0x3d8
-+  __TEXT.__constg_swiftt: 0x238c
-+  __TEXT.__swift5_reflstr: 0x222d
-+  __TEXT.__swift5_fieldmd: 0x3614
-+  __TEXT.__cstring: 0x1866
-+  __TEXT.__swift5_proto: 0xe90
-+  __TEXT.__swift5_types: 0x3dc
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__swift5_assocty: 0x168
-+  __TEXT.__swift5_assocty: 0x180
-   __TEXT.__swift5_builtin: 0x3c
--  __TEXT.__swift5_mpenum: 0x278
-+  __TEXT.__swift5_mpenum: 0x2a0
-   __TEXT.__swift5_capture: 0x170
-   __TEXT.__swift_as_entry: 0xc
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x20
--  __TEXT.__unwind_info: 0x28c8
--  __TEXT.__eh_frame: 0x3300
-+  __TEXT.__unwind_info: 0x2918
-+  __TEXT.__eh_frame: 0x3360
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x30
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x6508
-+  __AUTH_CONST.__const: 0x6640
-   __AUTH_CONST.__objc_const: 0x650
--  __AUTH_CONST.__auth_got: 0x1738
-+  __AUTH_CONST.__auth_got: 0x1750
-   __AUTH.__data: 0x1a8
--  __DATA.__data: 0x2570
--  __DATA.__bss: 0x1c690
-+  __DATA.__data: 0x2588
-+  __DATA.__bss: 0x1c910
-   __DATA.__common: 0x30
-   __DATA_DIRTY.__objc_data: 0x50
--  __DATA_DIRTY.__data: 0xe48
-+  __DATA_DIRTY.__data: 0xe50
-   __DATA_DIRTY.__common: 0x30
-   __DATA_DIRTY.__bss: 0x780
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 5093
--  Symbols:   14225
+-  Symbols:   14219
 -  CStrings:  202
 +  Functions: 5136
-+  Symbols:   14319
++  Symbols:   14313
 +  CStrings:  212
- 
 Symbols:
 + _$s26AppleIntelligenceReporting0aB14InferenceEventV15requestPriorityAA07RequestG0OSgvg
 + _$s26AppleIntelligenceReporting0aB14InferenceEventV15requestPriorityAA07RequestG0OSgvpMV

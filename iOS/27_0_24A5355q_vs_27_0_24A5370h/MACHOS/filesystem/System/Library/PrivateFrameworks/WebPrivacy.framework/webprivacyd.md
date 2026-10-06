@@ -2,78 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/WebPrivacy.framework/webprivacyd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x124c4` | `0x12bf8` | **`+0x734`** |
+| `__TEXT.__oslogstring` | `0xb47` | `0xc42` | **`+0xfb`** |
+| `__TEXT.__gcc_except_tab` | `0x14d8` | `0x15a0` | **`+0xc8`** |
+| `__TEXT.__unwind_info` | `0x928` | `0x988` | **`+0x60`** |
+| `__TEXT.__objc_stubs` | `0x720` | `0x740` | **`+0x20`** |
+| `__TEXT.__objc_methname` | `0x483` | `0x497` | **`+0x14`** |
+| `__TEXT.__auth_stubs` | `0x980` | `0x970` | **`-0x10`** |
+| `__DATA.__bss` | `0x40` | `0x48` | **`+0x8`** |
+| `__DATA.__objc_selrefs` | `0x1c8` | `0x1d0` | **`+0x8`** |
+| `__DATA_CONST.__auth_got` | `0x4d0` | `0x4c8` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__const`
+
+### Other Changes
+
 ```diff
 
 -56.0.0.0.0
--  __TEXT.__text: 0x124c4 sha256:5c4ebb4763d385925713160c42a3a4f9232e05ba226c8bd99491934828efe6c7
--  __TEXT.__auth_stubs: 0x980 sha256:d9cfbb181939e6da133a78439ac034b558c033ed78a3c5b63538f10e49d40337
--  __TEXT.__objc_stubs: 0x720 sha256:451ede146fe5dd909323e7eb2cfc114c9dca1e5754b2255baa072cbef82fa833
--  __TEXT.__const: 0x19d sha256:10d133c8cfc195ca978139037f2395ed9155b04f5c464ece5875dacda8c1e916
--  __TEXT.__gcc_except_tab: 0x14d8 sha256:e72769813e4fb20a7ca8419b8cc65ccecba32f5185a80b95b14e3327c699cdd7
 +57.0.0.0.0
-+  __TEXT.__text: 0x12bf8 sha256:83a7459c79cdad11a814813b5b438b3e5f72e0145a899092ac57deaad7ef076a
-+  __TEXT.__auth_stubs: 0x970 sha256:e078d5677ac38295961a5b1a14fc4aa4b40c9f14776bba2040e9c7dfa744df85
-+  __TEXT.__objc_stubs: 0x740 sha256:b5d2edade49fb1dbb75d5ac56536217fb83d74c22127dc1a304e50fa582c7dea
-+  __TEXT.__const: 0x19d sha256:37a65b7981103db07625688d6e08a3f42b92eaa92da70dc1e0597ceb0fa9a067
-+  __TEXT.__gcc_except_tab: 0x15a0 sha256:ac76db215079907705c3962de98371de77f973827f9162c0fd925abe6536b582
-   __TEXT.__cstring: 0x4e9 sha256:e352d18a2dc6c6dca484ec2a721a2c7328e2389916ce8c4a525de2433331fdbf
--  __TEXT.__oslogstring: 0xb47 sha256:64324bf6ac1dc0030924d608f436ed949d61bd23fc8451deb63437b4fc27e9cf
--  __TEXT.__objc_methname: 0x483 sha256:28926536d8dc9e3907270f1736b442ff62c00d98cdc9c5e4a02461402934e056
--  __TEXT.__unwind_info: 0x928 sha256:a1763147aca5b0c5642036d814ef8547d58b95a59d88e9d652734c04535997a5
--  __DATA_CONST.__const: 0x920 sha256:4fc4aae5f53d91979fce7d5dcf45f88066087b89b23975c68f493842a5d80f95
--  __DATA_CONST.__cfstring: 0x600 sha256:f6635e98ed4b4cce199b659c5532334d8b531966004293d4775a286434388d3f
-+  __TEXT.__oslogstring: 0xc42 sha256:4f94d1208e0bded17695e12782dbdcd0c7c5e3c5b76b4bcbce362fb1d66b932e
-+  __TEXT.__objc_methname: 0x497 sha256:ca4cdda21981ba79f12debda72096947e89eaaa8a389d0bc40c043b558e118b5
-+  __TEXT.__unwind_info: 0x988 sha256:934d60a99a77251294f1936c357778efd5f3761f658835b31842ade2fb96f65f
-+  __DATA_CONST.__const: 0x920 sha256:5d2841cf72c57b4e7c9f6cf20a31bca3be02090acab10e5135d6af693ce010dc
-+  __DATA_CONST.__cfstring: 0x600 sha256:e0eb9e22816d6529f14d8e417a72e6072ad0b1ba448344031b87c3447a755018
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:1fa65ffcccc24c72d5d7f804a2be05ae57dfbb8769ffb33c4272ed6795b7e61c
--  __DATA_CONST.__objc_intobj: 0x18 sha256:0159dec88045f545764df04097d348f024698eee4b410e26cc373e1234d2112a
--  __DATA_CONST.__auth_got: 0x4d0 sha256:27fe95a740f5db7e3f1bc2acd412bedac0d550361f5876e4627e5e1655e5611a
--  __DATA_CONST.__got: 0x108 sha256:7224aed8285545ec7df74f74f7aa6f19de2a06dd5731302a42b18c242297d054
--  __DATA.__objc_selrefs: 0x1c8 sha256:1b33c656fa0405c9a22a3e2b2223a1c6d2c10880ba4d763efb63caff3be5315b
--  __DATA.__bss: 0x40 sha256:f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b
-+  __DATA_CONST.__objc_intobj: 0x18 sha256:a63f06ca54becceebd6a52e38868cc9406b357614ec9e3ab2dc51e5ad468c6f5
-+  __DATA_CONST.__auth_got: 0x4c8 sha256:81d64f446d6cf74488488600808458e7a9b097eca7e432178793f284bceb8e74
-+  __DATA_CONST.__got: 0x108 sha256:ff4af184829af3ef35862577b2a57eae4fc61af888b550f15d4f93714d0b4e28
-+  __DATA.__objc_selrefs: 0x1d0 sha256:e93682a82924258407f7d20227de996354e26bf8ca7642bef77893cacb6018bd
-+  __DATA.__bss: 0x48 sha256:834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  UUID: 010B8F89-0826-3ECD-A01A-72C951012970
 -  Functions: 447
--  Symbols:   2828
--  CStrings:  250
-+  UUID: 627AF1EA-6F33-3808-B118-4094B2E58C4B
+-  Symbols:   881
+-  CStrings:  202
 +  Functions: 456
-+  Symbols:   2884
-+  CStrings:  254
- 
++  Symbols:   901
++  CStrings:  206
 Symbols:
-+ /Library/Caches/com.apple.xbs/E53DD9AC-466D-4A13-88DE-600BB832DF2E/TemporaryDirectory.NDlR15/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/DerivedSources/
-+ /Library/Caches/com.apple.xbs/E53DD9AC-466D-4A13-88DE-600BB832DF2E/TemporaryDirectory.NDlR15/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/ClientInfo.o
-+ /Library/Caches/com.apple.xbs/E53DD9AC-466D-4A13-88DE-600BB832DF2E/TemporaryDirectory.NDlR15/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/Configuration.o
-+ /Library/Caches/com.apple.xbs/E53DD9AC-466D-4A13-88DE-600BB832DF2E/TemporaryDirectory.NDlR15/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/DaemonEntry.o
-+ /Library/Caches/com.apple.xbs/E53DD9AC-466D-4A13-88DE-600BB832DF2E/TemporaryDirectory.NDlR15/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/DatabaseHandle.o
-+ /Library/Caches/com.apple.xbs/E53DD9AC-466D-4A13-88DE-600BB832DF2E/TemporaryDirectory.NDlR15/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/DatabaseUpdate.o
-+ /Library/Caches/com.apple.xbs/E53DD9AC-466D-4A13-88DE-600BB832DF2E/TemporaryDirectory.NDlR15/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/DateTimeHelpers.o
-+ /Library/Caches/com.apple.xbs/E53DD9AC-466D-4A13-88DE-600BB832DF2E/TemporaryDirectory.NDlR15/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/FileOutputStream.o
-+ /Library/Caches/com.apple.xbs/E53DD9AC-466D-4A13-88DE-600BB832DF2E/TemporaryDirectory.NDlR15/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/ListUpdateFetcher.o
-+ /Library/Caches/com.apple.xbs/E53DD9AC-466D-4A13-88DE-600BB832DF2E/TemporaryDirectory.NDlR15/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/ListUpdateRequestJSONSerializer.o
-+ /Library/Caches/com.apple.xbs/E53DD9AC-466D-4A13-88DE-600BB832DF2E/TemporaryDirectory.NDlR15/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/ListUpdateResponse.o
-+ /Library/Caches/com.apple.xbs/E53DD9AC-466D-4A13-88DE-600BB832DF2E/TemporaryDirectory.NDlR15/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/OSVariantHelpers.o
-+ /Library/Caches/com.apple.xbs/E53DD9AC-466D-4A13-88DE-600BB832DF2E/TemporaryDirectory.NDlR15/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/OutputStream.o
-+ /Library/Caches/com.apple.xbs/E53DD9AC-466D-4A13-88DE-600BB832DF2E/TemporaryDirectory.NDlR15/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/Server.o
-+ /Library/Caches/com.apple.xbs/E53DD9AC-466D-4A13-88DE-600BB832DF2E/TemporaryDirectory.NDlR15/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/StringConstants.o
-+ /Library/Caches/com.apple.xbs/E53DD9AC-466D-4A13-88DE-600BB832DF2E/TemporaryDirectory.NDlR15/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/webprivacyd_vers.o
-+ /Library/Caches/com.apple.xbs/E53DD9AC-466D-4A13-88DE-600BB832DF2E/TemporaryDirectory.NDlR15/Sources/WebPrivacy/Backend/
-+ /Library/Caches/com.apple.xbs/E53DD9AC-466D-4A13-88DE-600BB832DF2E/TemporaryDirectory.NDlR15/Sources/WebPrivacy/Daemon/
-+ /Library/Caches/com.apple.xbs/E53DD9AC-466D-4A13-88DE-600BB832DF2E/TemporaryDirectory.NDlR15/Sources/WebPrivacy/Platform/
 + GCC_except_table10
 + GCC_except_table100
 + GCC_except_table103
@@ -114,8 +79,8 @@ Symbols:
 + GCC_except_table74
 + GCC_except_table9
 + _OUTLINED_FUNCTION_5
-+ _ZN7Backend13Configuration30recordStagingConnectionFailureEv.cold.1
-+ _ZNSt3__116__if_likely_elseB9fqn220106IZNS_6vectorIN10WebPrivacy10ListStatusENS_9allocatorIS3_EEE12emplace_backIJS3_EEERS3_DpOT_EUlvE_ZNS7_IJS3_EEES8_SB_EUlvE0_EEvbT_T0_.cold.1
++ _ZN7Backend13Configuration30recordStagingConnectionFailureEv
++ _ZNSt3__116__if_likely_elseB9fqn220106IZNS_6vectorIN10WebPrivacy10ListStatusENS_9allocatorIS3_EEE12emplace_backIJS3_EEERS3_DpOT_EUlvE_ZNS7_IJS3_EEES8_SB_EUlvE0_EEvbT_T0_
 + __ZN10WebPrivacy3XPC14serializeReplyIL11MessageName11EJNS_12MessageErrorEbEEEPU24objcproto13OS_xpc_object8NSObjectS6_DpOT0_
 + __ZN10WebPrivacy3XPC14serializeReplyIL11MessageName3EJEEEPU24objcproto13OS_xpc_object8NSObjectS5_DpOT0_
 + __ZN10WebPrivacy3XPC14serializeReplyIL11MessageName5EJNSt3__16vectorIiNS3_9allocatorIiEEEENS4_INS_10ListStatusENS5_IS8_EEEENS_14ServerEndpointEEEEPU24objcproto13OS_xpc_object8NSObjectSE_DpOT0_
@@ -229,25 +194,6 @@ Symbols:
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeIN7Backend10RemoteListEdEENS_22__unordered_map_hasherIS3_NS_4pairIKS3_dEENS_4hashIS3_EENS_8equal_toIS3_EEEENS_21__unordered_map_equalIS3_S8_SC_SA_EENS_9allocatorIS8_EEE16__emplace_uniqueB9fqn220106IJRKNS_21piecewise_construct_tENS_5tupleIJRS7_EEENSN_IJEEEEEENS6_INS_15__hash_iteratorIPNS_11__hash_nodeIS4_PvEEEEbEEDpOT_ENKUlSO_SM_OSP_OSQ_E_clESO_SM_S11_S12_
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeIN7Backend10RemoteListEiEENS_22__unordered_map_hasherIS3_NS_4pairIKS3_iEENS_4hashIS3_EENS_8equal_toIS3_EEEENS_21__unordered_map_equalIS3_S8_SC_SA_EENS_9allocatorIS8_EEE16__emplace_uniqueB9fqn220106IJRKNS_21piecewise_construct_tENS_5tupleIJRS7_EEENSN_IJEEEEEENS6_INS_15__hash_iteratorIPNS_11__hash_nodeIS4_PvEEEEbEEDpOT_ENKUlSO_SM_OSP_OSQ_E_clESO_SM_S11_S12_
 + _objc_msgSend$removeObjectForKey:
-- /Library/Caches/com.apple.xbs/A4A0B1C3-3E24-42A1-BAEE-75A0D9D31CAE/TemporaryDirectory.GzAhsC/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/DerivedSources/
-- /Library/Caches/com.apple.xbs/A4A0B1C3-3E24-42A1-BAEE-75A0D9D31CAE/TemporaryDirectory.GzAhsC/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/ClientInfo.o
-- /Library/Caches/com.apple.xbs/A4A0B1C3-3E24-42A1-BAEE-75A0D9D31CAE/TemporaryDirectory.GzAhsC/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/Configuration.o
-- /Library/Caches/com.apple.xbs/A4A0B1C3-3E24-42A1-BAEE-75A0D9D31CAE/TemporaryDirectory.GzAhsC/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/DaemonEntry.o
-- /Library/Caches/com.apple.xbs/A4A0B1C3-3E24-42A1-BAEE-75A0D9D31CAE/TemporaryDirectory.GzAhsC/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/DatabaseHandle.o
-- /Library/Caches/com.apple.xbs/A4A0B1C3-3E24-42A1-BAEE-75A0D9D31CAE/TemporaryDirectory.GzAhsC/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/DatabaseUpdate.o
-- /Library/Caches/com.apple.xbs/A4A0B1C3-3E24-42A1-BAEE-75A0D9D31CAE/TemporaryDirectory.GzAhsC/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/DateTimeHelpers.o
-- /Library/Caches/com.apple.xbs/A4A0B1C3-3E24-42A1-BAEE-75A0D9D31CAE/TemporaryDirectory.GzAhsC/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/FileOutputStream.o
-- /Library/Caches/com.apple.xbs/A4A0B1C3-3E24-42A1-BAEE-75A0D9D31CAE/TemporaryDirectory.GzAhsC/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/ListUpdateFetcher.o
-- /Library/Caches/com.apple.xbs/A4A0B1C3-3E24-42A1-BAEE-75A0D9D31CAE/TemporaryDirectory.GzAhsC/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/ListUpdateRequestJSONSerializer.o
-- /Library/Caches/com.apple.xbs/A4A0B1C3-3E24-42A1-BAEE-75A0D9D31CAE/TemporaryDirectory.GzAhsC/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/ListUpdateResponse.o
-- /Library/Caches/com.apple.xbs/A4A0B1C3-3E24-42A1-BAEE-75A0D9D31CAE/TemporaryDirectory.GzAhsC/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/OSVariantHelpers.o
-- /Library/Caches/com.apple.xbs/A4A0B1C3-3E24-42A1-BAEE-75A0D9D31CAE/TemporaryDirectory.GzAhsC/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/OutputStream.o
-- /Library/Caches/com.apple.xbs/A4A0B1C3-3E24-42A1-BAEE-75A0D9D31CAE/TemporaryDirectory.GzAhsC/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/Server.o
-- /Library/Caches/com.apple.xbs/A4A0B1C3-3E24-42A1-BAEE-75A0D9D31CAE/TemporaryDirectory.GzAhsC/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/StringConstants.o
-- /Library/Caches/com.apple.xbs/A4A0B1C3-3E24-42A1-BAEE-75A0D9D31CAE/TemporaryDirectory.GzAhsC/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/webprivacyd_vers.o
-- /Library/Caches/com.apple.xbs/A4A0B1C3-3E24-42A1-BAEE-75A0D9D31CAE/TemporaryDirectory.GzAhsC/Sources/WebPrivacy/Backend/
-- /Library/Caches/com.apple.xbs/A4A0B1C3-3E24-42A1-BAEE-75A0D9D31CAE/TemporaryDirectory.GzAhsC/Sources/WebPrivacy/Daemon/
-- /Library/Caches/com.apple.xbs/A4A0B1C3-3E24-42A1-BAEE-75A0D9D31CAE/TemporaryDirectory.GzAhsC/Sources/WebPrivacy/Platform/
 - GCC_except_table108
 - GCC_except_table130
 - GCC_except_table131
@@ -279,7 +225,7 @@ Symbols:
 - GCC_except_table97
 - GCC_except_table98
 - GCC_except_table99
-- _ZNSt3__116__if_likely_elseB9fqn220100IZNS_6vectorIN10WebPrivacy10ListStatusENS_9allocatorIS3_EEE12emplace_backIJS3_EEERS3_DpOT_EUlvE_ZNS7_IJS3_EEES8_SB_EUlvE0_EEvbT_T0_.cold.1
+- _ZNSt3__116__if_likely_elseB9fqn220100IZNS_6vectorIN10WebPrivacy10ListStatusENS_9allocatorIS3_EEE12emplace_backIJS3_EEERS3_DpOT_EUlvE_ZNS7_IJS3_EEES8_SB_EUlvE0_EEvbT_T0_
 - __ZN10WebPrivacy3XPC14serializeReplyIL11MessageName3EJNSt3__16vectorIiNS3_9allocatorIiEEEENS4_INS_10ListStatusENS5_IS8_EEEENS_14ServerEndpointEEEEPU24objcproto13OS_xpc_object8NSObjectSE_DpOT0_
 - __ZN10WebPrivacy3XPC14serializeReplyIL11MessageName5EJNS_12MessageErrorEEEEPU24objcproto13OS_xpc_object8NSObjectS6_DpOT0_
 - __ZN10WebPrivacy3XPC14serializeReplyIL11MessageName7EJNS_12MessageErrorENSt3__110shared_ptrIN8Platform12SharedMemoryEEEEEEPU24objcproto13OS_xpc_object8NSObjectSB_DpOT0_
@@ -392,5 +338,4 @@ CStrings:
 + "removeObjectForKey:"
 - "Failed to apply automatic retry update for %{public}@"
 - "Replying to %zu update message(s) (error: %s)"
-
 ```

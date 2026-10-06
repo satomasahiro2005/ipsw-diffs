@@ -2,95 +2,60 @@
 
 > `/private/var/staged_system_apps/Podcasts.app/Frameworks/PodcastsInsights.framework/PodcastsInsights`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_types2`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x60708` | `0x60f50` | **`+0x848`** |
+| `__DATA_CONST.__const` | `0x2198` | `0x2368` | **`+0x1d0`** |
+| `__TEXT.__const` | `0x5328` | `0x5498` | **`+0x170`** |
+| `__DATA.__bss` | `0x6d88` | `0x6e98` | **`+0x110`** |
+| `__TEXT.__swift5_typeref` | `0x60e5` | `0x61cd` | **`+0xe8`** |
+| `__TEXT.__cstring` | `0xf80` | `0xee0` | **`-0xa0`** |
+| `__TEXT.__auth_stubs` | `0x2560` | `0x24d0` | **`-0x90`** |
+| `__TEXT.__constg_swiftt` | `0x1670` | `0x16fc` | **`+0x8c`** |
+| `__TEXT.__swift5_fieldmd` | `0x1554` | `0x15d4` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x1990` | `0x19f0` | **`+0x60`** |
+| `__DATA_CONST.__auth_got` | `0x12b8` | `0x1270` | **`-0x48`** |
+| `__TEXT.__swift5_reflstr` | `0xef3` | `0xeb2` | **`-0x41`** |
+| `__TEXT.__swift5_capture` | `0x408` | `0x448` | **`+0x40`** |
+| `__TEXT.__swift5_assocty` | `0x558` | `0x588` | **`+0x30`** |
+| `__TEXT.__eh_frame` | `0x1b68` | `0x1b90` | **`+0x28`** |
+| `__DATA.__data` | `0x3da0` | `0x3d88` | **`-0x18`** |
+| `__DATA_CONST.__got` | `0x8d0` | `0x8c0` | **`-0x10`** |
+| `__DATA_CONST.__auth_ptr` | `0xc98` | `0xca0` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x35c` | `0x364` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x168` | `0x170` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_types2`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -4027.200.26.0.0
--  __TEXT.__text: 0x5cb38
--  __TEXT.__auth_stubs: 0x2560
 +4027.200.32.0.0
-+  __TEXT.__text: 0x5d2d0
-+  __TEXT.__auth_stubs: 0x24d0
-   __TEXT.__objc_stubs: 0x540
-   __TEXT.__objc_methlist: 0x384
--  __TEXT.__const: 0x5328
--  __TEXT.__constg_swiftt: 0x1670
--  __TEXT.__swift5_typeref: 0x60e5
--  __TEXT.__swift5_reflstr: 0xef3
--  __TEXT.__swift5_fieldmd: 0x1554
--  __TEXT.__swift5_assocty: 0x558
--  __TEXT.__cstring: 0xf80
-+  __TEXT.__const: 0x5498
-+  __TEXT.__constg_swiftt: 0x16fc
-+  __TEXT.__swift5_typeref: 0x61cd
-+  __TEXT.__swift5_reflstr: 0xeb2
-+  __TEXT.__swift5_fieldmd: 0x15d4
-+  __TEXT.__swift5_assocty: 0x588
-+  __TEXT.__cstring: 0xee0
-   __TEXT.__swift5_builtin: 0x14
--  __TEXT.__swift5_capture: 0x408
--  __TEXT.__swift5_proto: 0x35c
--  __TEXT.__swift5_types: 0x168
-+  __TEXT.__swift5_capture: 0x448
-+  __TEXT.__swift5_proto: 0x364
-+  __TEXT.__swift5_types: 0x170
-   __TEXT.__objc_classname: 0x250
-   __TEXT.__objc_methname: 0x937
-   __TEXT.__objc_methtype: 0x1d9
 
-   __TEXT.__swift_as_cont: 0xd8
-   __TEXT.__swift5_protos: 0xc
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0x1fb0
--  __TEXT.__eh_frame: 0x1b68
--  __DATA_CONST.__const: 0x2198
-+  __TEXT.__unwind_info: 0x2018
-+  __TEXT.__eh_frame: 0x1b90
-+  __DATA_CONST.__const: 0x2368
-   __DATA_CONST.__objc_classlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x28
--  __DATA_CONST.__auth_got: 0x12b8
--  __DATA_CONST.__got: 0x8d0
--  __DATA_CONST.__auth_ptr: 0xc98
-+  __DATA_CONST.__auth_got: 0x1270
-+  __DATA_CONST.__got: 0x8c0
-+  __DATA_CONST.__auth_ptr: 0xca0
-   __DATA.__objc_const: 0xac8
-   __DATA.__objc_selrefs: 0x2b8
-   __DATA.__objc_data: 0x290
--  __DATA.__data: 0x3da0
-+  __DATA.__data: 0x3d88
-   __DATA.__common: 0x20
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - @rpath/JetIncubation.framework/JetIncubation
-   - @rpath/PodcastsActions.framework/PodcastsActions
-   - @rpath/PodcastsLogging.framework/PodcastsLogging
 -  Functions: 2121
 -  Symbols:   1124
 -  CStrings:  262
 +  Functions: 2152
 +  Symbols:   1139
 +  CStrings:  257
- 
 Symbols:
 + _associated conformance 16PodcastsInsights19ListRowArtworkStack33_122F322799E0BAE14AC3E244533C854CLLV7SwiftUI4ViewAA4BodyAeFP_AeF
 + _associated conformance 16PodcastsInsights24WidthFillingWordmarkView33_5274D9B4802DBF50DE994ABC3839394DLLV7SwiftUI0F0AA4BodyAeFP_AeF

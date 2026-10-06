@@ -2,25 +2,22 @@
 
 > `com.apple.driver.AppleSmartIO2`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0xb488` | `0xb498` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__cstring: 0x4721
-   __TEXT.__const: 0x60
--  __TEXT_EXEC.__text: 0xb488
-+  __TEXT_EXEC.__text: 0xb498
-   __TEXT_EXEC.__auth_stubs: 0x3b0
-   __DATA.__data: 0x7f8
-   __DATA.__common: 0x1a0
-Sections:
-~ __TEXT.__cstring : content changed
-~ __DATA.__data : content changed
-~ __DATA_CONST.__mod_init_func : content changed
-~ __DATA_CONST.__mod_term_func : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__kalloc_type : content changed
-~ __DATA_CONST.__kalloc_var : content changed
-~ __DATA_CONST.__auth_got : content changed
-~ __DATA_CONST.__got : content changed
+-146.0.0.0.0
++149.0.0.0.0
 Functions:
 ~ __ZN19AppleSmartIOControl14setupMapRangesEv : 708 -> 716
 ~ __ZN19AppleSmartIOControl31populateShimPowerGatePropertiesEv : 508 -> 504
@@ -31,5 +28,4 @@ CStrings:
 + "Jun 30 2026"
 - "19:32:47"
 - "Jun 18 2026"
-
 ```

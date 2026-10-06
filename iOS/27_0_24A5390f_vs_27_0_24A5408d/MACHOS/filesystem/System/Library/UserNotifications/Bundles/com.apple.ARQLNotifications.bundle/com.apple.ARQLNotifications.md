@@ -2,14 +2,16 @@
 
 > `/System/Library/UserNotifications/Bundles/com.apple.ARQLNotifications.bundle/com.apple.ARQLNotifications`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x58` | `0x50` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -567.0.4.0.4
 +567.0.7.0.0
-   __TEXT.__text: 0x0
--  __TEXT.__const: 0x58
-+  __TEXT.__const: 0x50
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /usr/lib/libSystem.B.dylib
-   Functions: 0
 ```

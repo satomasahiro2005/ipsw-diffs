@@ -2,92 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/GameServices.framework/GameServices`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_capture`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_selrefs`
-- `__AUTH_CONST.__objc_const`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x16d83c` | `0x16f464` | **`+0x1c28`** |
+| `__TEXT.__unwind_info` | `0x88e0` | `0x8dd0` | **`+0x4f0`** |
+| `__DATA.__bss` | `0x22e30` | `0x232f0` | **`+0x4c0`** |
+| `__TEXT.__const` | `0x1e8c8` | `0x1ec08` | **`+0x340`** |
+| `__TEXT.__eh_frame` | `0x18b18` | `0x18cd8` | **`+0x1c0`** |
+| `__AUTH_CONST.__const` | `0x95b8` | `0x9658` | **`+0xa0`** |
+| `__AUTH.__data` | `0x1758` | `0x17e0` | **`+0x88`** |
+| `__TEXT.__swift5_fieldmd` | `0x41bc` | `0x4224` | **`+0x68`** |
+| `__TEXT.__constg_swiftt` | `0x3b48` | `0x3ba4` | **`+0x5c`** |
+| `__TEXT.__cstring` | `0x81c5` | `0x81f5` | **`+0x30`** |
+| `__TEXT.__swift5_acfuncs` | `0xf3c` | `0xf64` | **`+0x28`** |
+| `__TEXT.__swift5_proto` | `0x130c` | `0x1330` | **`+0x24`** |
+| `__TEXT.__swift_as_cont` | `0x1748` | `0x176c` | **`+0x24`** |
+| `__TEXT.__swift_as_entry` | `0xc14` | `0xc30` | **`+0x1c`** |
+| `__TEXT.__swift_as_ret` | `0xed4` | `0xef0` | **`+0x1c`** |
+| `__DATA.__data` | `0x24c0` | `0x24d8` | **`+0x18`** |
+| `__TEXT.__swift5_reflstr` | `0x1ec2` | `0x1ed2` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0x7be5` | `0x7bf5` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x444` | `0x44c` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -821.0.18.0.0
--  __TEXT.__text: 0x16d83c
--  __TEXT.__cstring: 0x81c5
--  __TEXT.__swift5_typeref: 0x7be5
--  __TEXT.__const: 0x1e8c8
--  __TEXT.__swift5_fieldmd: 0x41bc
--  __TEXT.__constg_swiftt: 0x3b48
--  __TEXT.__swift5_reflstr: 0x1ec2
 +821.0.20.0.0
-+  __TEXT.__text: 0x16f464
-+  __TEXT.__cstring: 0x81f5
-+  __TEXT.__swift5_typeref: 0x7bf5
-+  __TEXT.__const: 0x1ec08
-+  __TEXT.__swift5_fieldmd: 0x4224
-+  __TEXT.__constg_swiftt: 0x3ba4
-+  __TEXT.__swift5_reflstr: 0x1ed2
-   __TEXT.__swift5_protos: 0xd0
--  __TEXT.__swift5_proto: 0x130c
--  __TEXT.__swift5_types: 0x444
-+  __TEXT.__swift5_proto: 0x1330
-+  __TEXT.__swift5_types: 0x44c
-   __TEXT.__swift5_assocty: 0xb60
-   __TEXT.__swift5_builtin: 0x118
-   __TEXT.__swift5_mpenum: 0x70
--  __TEXT.__swift5_acfuncs: 0xf3c
--  __TEXT.__swift_as_entry: 0xc14
--  __TEXT.__swift_as_ret: 0xed4
--  __TEXT.__swift_as_cont: 0x1748
-+  __TEXT.__swift5_acfuncs: 0xf64
-+  __TEXT.__swift_as_entry: 0xc30
-+  __TEXT.__swift_as_ret: 0xef0
-+  __TEXT.__swift_as_cont: 0x176c
-   __TEXT.__oslogstring: 0x39e
-   __TEXT.__swift5_capture: 0x19c
--  __TEXT.__unwind_info: 0x88e0
--  __TEXT.__eh_frame: 0x18b18
-+  __TEXT.__unwind_info: 0x8dd0
-+  __TEXT.__eh_frame: 0x18cd8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x38
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x95b8
-+  __AUTH_CONST.__const: 0x9658
-   __AUTH_CONST.__objc_const: 0x1200
-   __AUTH_CONST.__auth_got: 0xcd8
--  __AUTH.__data: 0x1758
--  __DATA.__data: 0x24c0
-+  __AUTH.__data: 0x17e0
-+  __DATA.__data: 0x24d8
-   __DATA.__common: 0x8
--  __DATA.__bss: 0x22e30
-+  __DATA.__bss: 0x232f0
-   __DATA_DIRTY.__objc_data: 0x50
-   __DATA_DIRTY.__data: 0xc00
-   __DATA_DIRTY.__bss: 0x4af8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 11533
--  Symbols:   2791
+-  Symbols:   2784
 -  CStrings:  478
 +  Functions: 11606
-+  Symbols:   2799
++  Symbols:   2792
 +  CStrings:  479
- 
 Symbols:
 + _associated conformance 12GameServices27AchievementPlayerCompletionV10CodingKeys33_3B623191C5D641565F474BA865EFE21DLLOSHAASQ
 + _associated conformance 12GameServices27AchievementPlayerCompletionV10CodingKeys33_3B623191C5D641565F474BA865EFE21DLLOs0F3KeyAAs23CustomStringConvertible

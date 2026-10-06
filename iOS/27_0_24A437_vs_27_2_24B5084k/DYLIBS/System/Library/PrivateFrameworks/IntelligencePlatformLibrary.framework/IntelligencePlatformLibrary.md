@@ -2,92 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/IntelligencePlatformLibrary.framework/IntelligencePlatformLibrary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6ef544` | `0x72fc6c` | **`+0x40728`** |
+| `__AUTH_CONST.__objc_const` | `0x386c8` | `0x3db18` | **`+0x5450`** |
+| `__TEXT.__cstring` | `0x76530` | `0x7a842` | **`+0x4312`** |
+| `__AUTH_CONST.__cfstring` | `0x21800` | `0x251e0` | **`+0x39e0`** |
+| `__TEXT.__objc_methlist` | `0x21e5c` | `0x24ccc` | **`+0x2e70`** |
+| `__DATA_CONST.__const` | `0x7418` | `0x80f0` | **`+0xcd8`** |
+| `__DATA.__bss` | `0x70d80` | `0x719a0` | **`+0xc20`** |
+| `__AUTH.__objc_data` | `0xa8e8` | `0xb428` | **`+0xb40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x57a0` | `0x6118` | **`+0x978`** |
+| `__TEXT.__const` | `0x5c4c0` | `0x5ccb0` | **`+0x7f0`** |
+| `__TEXT.__unwind_info` | `0x1ea38` | `0x1f1a0` | **`+0x768`** |
+| `__DATA.__objc_ivar` | `0x2c18` | `0x30fc` | **`+0x4e4`** |
+| `__AUTH_CONST.__const` | `0x414c0` | `0x41880` | **`+0x3c0`** |
+| `__TEXT.__swift5_fieldmd` | `0x17358` | `0x175e4` | **`+0x28c`** |
+| `__TEXT.__swift5_reflstr` | `0x15e22` | `0x16052` | **`+0x230`** |
+| `__DATA_CONST.__got` | `0x1618` | `0x1738` | **`+0x120`** |
+| `__DATA_CONST.__objc_classlist` | `0x11a8` | `0x12c8` | **`+0x120`** |
+| `__TEXT.__swift5_typeref` | `0xa9ac` | `0xaa84` | **`+0xd8`** |
+| `__DATA.__data` | `0xb000` | `0xb0d0` | **`+0xd0`** |
+| `__TEXT.__swift5_assocty` | `0x4460` | `0x4520` | **`+0xc0`** |
+| `__TEXT.__constg_swiftt` | `0xa284` | `0xa2f4` | **`+0x70`** |
+| `__TEXT.__swift5_proto` | `0x66d8` | `0x6748` | **`+0x70`** |
+| `__DATA.__common` | `0x66f8` | `0x6758` | **`+0x60`** |
+| `__AUTH.__data` | `0x3bc8` | `0x3be0` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0xe18` | `0xe28` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x14b4` | `0x14c4` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -436.6.0.0.0
--  __TEXT.__text: 0x6d375c
--  __TEXT.__objc_methlist: 0x21e5c
--  __TEXT.__const: 0x5c4c0
--  __TEXT.__constg_swiftt: 0xa284
--  __TEXT.__swift5_typeref: 0xa9ac
--  __TEXT.__swift5_fieldmd: 0x17358
--  __TEXT.__swift5_types: 0x14b4
--  __TEXT.__swift5_reflstr: 0x15e22
--  __TEXT.__swift5_assocty: 0x4460
 +441.22.0.1.0
-+  __TEXT.__text: 0x7130f0
-+  __TEXT.__objc_methlist: 0x24ccc
-+  __TEXT.__const: 0x5ccb0
-+  __TEXT.__constg_swiftt: 0xa2f4
-+  __TEXT.__swift5_typeref: 0xaa84
-+  __TEXT.__swift5_fieldmd: 0x175e4
-+  __TEXT.__swift5_types: 0x14c4
-+  __TEXT.__swift5_reflstr: 0x16052
-+  __TEXT.__swift5_assocty: 0x4520
-   __TEXT.__oslogstring: 0x1f4
-   __TEXT.__swift5_capture: 0x38d0
--  __TEXT.__swift5_proto: 0x66d8
-+  __TEXT.__swift5_proto: 0x6748
-   __TEXT.__swift5_protos: 0x40
--  __TEXT.__cstring: 0x76530
-+  __TEXT.__cstring: 0x7a842
-   __TEXT.__swift5_builtin: 0x640
-   __TEXT.__swift5_mpenum: 0x608
-   __TEXT.__gcc_except_tab: 0x3c
--  __TEXT.__unwind_info: 0x27af8
-+  __TEXT.__unwind_info: 0x28838
-   __TEXT.__eh_frame: 0x21ddc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7418
--  __DATA_CONST.__objc_classlist: 0x11a8
-+  __DATA_CONST.__const: 0x80f0
-+  __DATA_CONST.__objc_classlist: 0x12c8
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x57a0
-+  __DATA_CONST.__objc_selrefs: 0x6118
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x88
--  __DATA_CONST.__got: 0x1618
--  __AUTH_CONST.__const: 0x414c0
--  __AUTH_CONST.__cfstring: 0x21800
--  __AUTH_CONST.__objc_const: 0x386c8
-+  __DATA_CONST.__got: 0x1738
-+  __AUTH_CONST.__const: 0x41880
-+  __AUTH_CONST.__cfstring: 0x251e0
-+  __AUTH_CONST.__objc_const: 0x3db18
-   __AUTH_CONST.__objc_intobj: 0x60
--  __AUTH_CONST.__auth_got: 0xe18
--  __AUTH.__objc_data: 0xa8e8
--  __AUTH.__data: 0x3bc8
--  __DATA.__objc_ivar: 0x2c18
--  __DATA.__data: 0xb000
--  __DATA.__common: 0x66f8
-+  __AUTH_CONST.__auth_got: 0xe28
-+  __AUTH.__objc_data: 0xb428
-+  __AUTH.__data: 0x3be0
-+  __DATA.__objc_ivar: 0x30fc
-+  __DATA.__data: 0xb0d0
-+  __DATA.__common: 0x6758
-   __DATA_DIRTY.__objc_data: 0xc30
-   __DATA_DIRTY.__data: 0x5f20
-   __DATA_DIRTY.__bss: 0xa6b0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 61014
--  Symbols:   27369
+-  Symbols:   25124
 -  CStrings:  10492
-+  Functions: 62137
-+  Symbols:   29201
++  Functions: 62139
++  Symbols:   26730
 +  CStrings:  10985
- 
 Symbols:
 + +[CCFitnessActivityRingsContent contentMessageClass]
 + +[CCFitnessActivityRingsContent descriptionForTypeIdentifier:]
@@ -1693,237 +1651,6 @@ Symbols:
 + _associated conformance 27IntelligencePlatformLibrary27GeneratedImageFailureReasonV19BlockingSafetyModelOSHAASQ
 + _associated conformance 27IntelligencePlatformLibrary27GeneratedImageFailureReasonV19BlockingSafetyModelOs12CaseIterableAA8AllCasessAFP_Sl
 + _associated conformance 27IntelligencePlatformLibrary27GeneratedImageFailureReasonV19BlockingSafetyModelOs25LosslessStringConvertibleAAs06CustomlM0
-+ _objc_msgSend$activityMoveMode
-+ _objc_msgSend$aggregateValue
-+ _objc_msgSend$arguments
-+ _objc_msgSend$associations
-+ _objc_msgSend$attribution
-+ _objc_msgSend$average
-+ _objc_msgSend$averageHeartRate
-+ _objc_msgSend$averagePace
-+ _objc_msgSend$awakeDuration
-+ _objc_msgSend$awakeDurationPoints
-+ _objc_msgSend$awakeInterruptionPoints
-+ _objc_msgSend$awakePoints
-+ _objc_msgSend$baselineMedialRangeMaximum
-+ _objc_msgSend$baselineMedialRangeMinimum
-+ _objc_msgSend$baselineMiddle
-+ _objc_msgSend$bedTime
-+ _objc_msgSend$biologicalSex
-+ _objc_msgSend$birthDate
-+ _objc_msgSend$birthDateComponents
-+ _objc_msgSend$bloodOxygen
-+ _objc_msgSend$bloodType
-+ _objc_msgSend$cacheIndex
-+ _objc_msgSend$caloriesBurned
-+ _objc_msgSend$caloriesBurnedGoal
-+ _objc_msgSend$cascadeStableIdentifier
-+ _objc_msgSend$categorySample
-+ _objc_msgSend$characteristics
-+ _objc_msgSend$childSensedEvents
-+ _objc_msgSend$classification
-+ _objc_msgSend$compare:
-+ _objc_msgSend$configurationForSet_FitnessActivityRings
-+ _objc_msgSend$configurationForSet_FitnessMindfulSession
-+ _objc_msgSend$configurationForSet_FitnessWorkout
-+ _objc_msgSend$configurationForSet_HealthCategorySample
-+ _objc_msgSend$configurationForSet_HealthCharacteristics
-+ _objc_msgSend$configurationForSet_HealthClassification
-+ _objc_msgSend$configurationForSet_HealthMeasurement
-+ _objc_msgSend$configurationForSet_HealthStatistics
-+ _objc_msgSend$configurationForSet_MediaSharedPlaylist
-+ _objc_msgSend$configurationForSet_ModelCatalogRequestedUseCase
-+ _objc_msgSend$contributingUserDSID
-+ _objc_msgSend$coreSleepDuration
-+ _objc_msgSend$dataStream
-+ _objc_msgSend$dayComponent
-+ _objc_msgSend$deepSleepDuration
-+ _objc_msgSend$deepSleepDurationPoints
-+ _objc_msgSend$distance
-+ _objc_msgSend$elevationGain
-+ _objc_msgSend$ethnicity
-+ _objc_msgSend$exerciseMinutes
-+ _objc_msgSend$exerciseMinutesGoal
-+ _objc_msgSend$finalHeartRate
-+ _objc_msgSend$fitnessPlusMetadata
-+ _objc_msgSend$fitzpatrickSkinType
-+ _objc_msgSend$flightsClimbed
-+ _objc_msgSend$hasAggregateValue
-+ _objc_msgSend$hasAverage
-+ _objc_msgSend$hasAverageHeartRate
-+ _objc_msgSend$hasAveragePace
-+ _objc_msgSend$hasAwakeDuration
-+ _objc_msgSend$hasAwakeDurationPoints
-+ _objc_msgSend$hasAwakeInterruptionPoints
-+ _objc_msgSend$hasAwakePoints
-+ _objc_msgSend$hasBaselineMedialRangeMaximum
-+ _objc_msgSend$hasBaselineMedialRangeMinimum
-+ _objc_msgSend$hasBaselineMiddle
-+ _objc_msgSend$hasBiologicalSex
-+ _objc_msgSend$hasBirthDate
-+ _objc_msgSend$hasBloodType
-+ _objc_msgSend$hasCacheIndex
-+ _objc_msgSend$hasCaloriesBurned
-+ _objc_msgSend$hasCaloriesBurnedGoal
-+ _objc_msgSend$hasCoreSleepDuration
-+ _objc_msgSend$hasDayComponent
-+ _objc_msgSend$hasDeepSleepDuration
-+ _objc_msgSend$hasDeepSleepDurationPoints
-+ _objc_msgSend$hasDistance
-+ _objc_msgSend$hasElevationGain
-+ _objc_msgSend$hasEnd
-+ _objc_msgSend$hasEndDate
-+ _objc_msgSend$hasEthnicity
-+ _objc_msgSend$hasExerciseMinutes
-+ _objc_msgSend$hasExerciseMinutesGoal
-+ _objc_msgSend$hasFinalHeartRate
-+ _objc_msgSend$hasFitzpatrickSkinType
-+ _objc_msgSend$hasFlightsClimbed
-+ _objc_msgSend$hasInBedDuration
-+ _objc_msgSend$hasInBedEndTime
-+ _objc_msgSend$hasInBedStartTime
-+ _objc_msgSend$hasIsGroupThread
-+ _objc_msgSend$hasIsPaused
-+ _objc_msgSend$hasIsPrimary
-+ _objc_msgSend$hasIsWheelchairUser
-+ _objc_msgSend$hasKind
-+ _objc_msgSend$hasMonthComponent
-+ _objc_msgSend$hasMostRecent
-+ _objc_msgSend$hasMoveMinutes
-+ _objc_msgSend$hasMoveMinutesGoal
-+ _objc_msgSend$hasRawValue
-+ _objc_msgSend$hasRemSleepDuration
-+ _objc_msgSend$hasRemSleepDurationPoints
-+ _objc_msgSend$hasScore
-+ _objc_msgSend$hasSleepDuration
-+ _objc_msgSend$hasSleepDurationPoints
-+ _objc_msgSend$hasSleepEndTime
-+ _objc_msgSend$hasSleepStartPunctualityPoints
-+ _objc_msgSend$hasSleepStartTime
-+ _objc_msgSend$hasStandHour
-+ _objc_msgSend$hasStandHourGoal
-+ _objc_msgSend$hasStart
-+ _objc_msgSend$hasStartDate
-+ _objc_msgSend$hasSum
-+ _objc_msgSend$hasTotalPoints
-+ _objc_msgSend$hasTotalSteps
-+ _objc_msgSend$hasUnspecifiedSleepDuration
-+ _objc_msgSend$hasValence
-+ _objc_msgSend$hasValenceClassification
-+ _objc_msgSend$hasWalkingRunningDistance
-+ _objc_msgSend$hasWeatherTemperature
-+ _objc_msgSend$hasWheelchairUse
-+ _objc_msgSend$hasYearComponent
-+ _objc_msgSend$healthKitKindType
-+ _objc_msgSend$healthKitSampleType
-+ _objc_msgSend$heartRate
-+ _objc_msgSend$heartRateVariability
-+ _objc_msgSend$inBedDuration
-+ _objc_msgSend$inBedEndTime
-+ _objc_msgSend$inBedStartTime
-+ _objc_msgSend$initWithAggregateValue:baselineMiddle:baselineMedialRangeMinimum:baselineMedialRangeMaximum:unit:error:
-+ _objc_msgSend$initWithAlternateNames:contentType:contentTypeTree:contentURL:requiresImport:importSandboxExtension:darkThumbnailURL:displayName:keywords:path:rankingHint:relatedUniqueIdentifier:thumbnailData:thumbnailURL:title:domainIdentifier:weakRelatedUniqueIdentifier:accountType:error:
-+ _objc_msgSend$initWithBedTime:wakeTime:error:
-+ _objc_msgSend$initWithBirthDate:biologicalSex:bloodType:ethnicity:fitzpatrickSkinType:wheelchairUse:error:
-+ _objc_msgSend$initWithBirthDateComponents:biologicalSex:bloodType:ethnicity:fitzpatrickSkinType:wheelchairUse:error:
-+ _objc_msgSend$initWithCacheIndex:dayComponent:monthComponent:yearComponent:caloriesBurned:caloriesBurnedGoal:moveMinutes:moveMinutesGoal:exerciseMinutes:exerciseMinutesGoal:standHour:standHourGoal:totalSteps:walkingRunningDistance:flightsClimbed:isPaused:activityMoveMode:isWheelchairUser:dayOfWeek:monthOfYear:error:
-+ _objc_msgSend$initWithContent:sessionID:role:turnIndex:createdDate:modifiedDate:appEntityReferences:conversationID:chunkPayload:turnInfo:error:
-+ _objc_msgSend$initWithDay:heartRate:bloodOxygen:respiratoryRate:wristTemperature:timeAsleep:heartRateVariability:error:
-+ _objc_msgSend$initWithDay:score:sleepSessions:sleepSchedule:error:
-+ _objc_msgSend$initWithHTMLContentData:accountHandles:accountIdentifier:additionalRecipients:authorAddresses:authorEmailAddresses:authorNames:authors:emailAddresses:hiddenAdditionalRecipients:instantMessageAddresses:likelyJunk:mailboxIdentifiers:phoneNumbers:primaryRecipients:recipientAddresses:recipientEmailAddresses:recipientNames:textContent:attachmentPaths:attachmentTypes:attachmentNames:attachmentKinds:sentDate:isFlagged:isRead:threadIdentifier:emailHeaders:isVIP:categories:categoryType:serviceIdentifier:additionalRecipientEmailAddresses:hiddenAdditionalRecipientEmailAddresses:messageType:isGroupThread:error:
-+ _objc_msgSend$initWithHour:minute:second:error:
-+ _objc_msgSend$initWithIdentifier:name:value:error:
-+ _objc_msgSend$initWithIsPrimary:inBedDuration:sleepDuration:unspecifiedSleepDuration:coreSleepDuration:deepSleepDuration:remSleepDuration:awakeDuration:sleepStartTime:sleepEndTime:inBedStartTime:inBedEndTime:timeZone:error:
-+ _objc_msgSend$initWithNaturalLanguageDescription:startTime:endTime:sources:places:persons:significance:actions:timeMetadata:visits:social:media:environment:transit:sentiment:healthMetrics:category:childSensedEvents:extraMetadata:error:
-+ _objc_msgSend$initWithParentInsightIdentifier:evidence:confidence:generationDate:workflowExecutionIdentifier:confidenceScore:rationale:attribution:insight:insightType:error:
-+ _objc_msgSend$initWithPlaylistName:contributingUserDSID:error:
-+ _objc_msgSend$initWithRecordType:sourceRecordIdentifier:source:cascadeStableIdentifier:versionedIdentifier:error:
-+ _objc_msgSend$initWithSessionIdentifier:meditationType:start:end:duration:finalHeartRate:sourceBundleIdentifier:sourceDevice:hourOfDay:dayOfWeek:monthOfYear:fitnessPlusMetadata:error:
-+ _objc_msgSend$initWithSourceItemIdentifier:dataStream:error:
-+ _objc_msgSend$initWithStartDate:endDate:healthKitKindType:unit:minimum:maximum:average:mostRecent:sum:timestamp:duration:count:error:
-+ _objc_msgSend$initWithStartDate:endDate:healthKitSampleType:unit:minimum:maximum:average:mostRecent:sum:timestamp:duration:count:measureID:error:
-+ _objc_msgSend$initWithStartDate:endDate:kind:valence:valenceClassification:labels:associations:error:
-+ _objc_msgSend$initWithStartDate:endDate:levelID:scaleID:score:measureID:error:
-+ _objc_msgSend$initWithStartDate:endDate:levelID:scaleLevelID:score:error:
-+ _objc_msgSend$initWithStartDate:endDate:rawValue:error:
-+ _objc_msgSend$initWithStartDate:endDate:rawValue:measureID:error:
-+ _objc_msgSend$initWithTotalPoints:sleepDurationPoints:deepSleepDurationPoints:remSleepDurationPoints:sleepStartPunctualityPoints:awakeInterruptionPoints:awakeDurationPoints:awakePoints:error:
-+ _objc_msgSend$initWithUseCaseIdentifier:arguments:error:
-+ _objc_msgSend$initWithUserTurnID:previousTurnID:error:
-+ _objc_msgSend$initWithWorkoutIdentifier:activityType:start:end:duration:caloriesBurned:averageHeartRate:distance:averagePace:elevationGain:sourceBundleIdentifier:sourceDevice:hourOfDay:dayOfWeek:monthOfYear:latitude:longitude:locationType:weatherCondition:weatherTemperature:fitnessPlusMetadata:error:
-+ _objc_msgSend$initWithYear:month:day:error:
-+ _objc_msgSend$isGroupThread
-+ _objc_msgSend$isPaused
-+ _objc_msgSend$isPrimary
-+ _objc_msgSend$isWheelchairUser
-+ _objc_msgSend$labels
-+ _objc_msgSend$levelID
-+ _objc_msgSend$measureID
-+ _objc_msgSend$meditationType
-+ _objc_msgSend$messageType
-+ _objc_msgSend$monthComponent
-+ _objc_msgSend$monthOfYear
-+ _objc_msgSend$mostRecent
-+ _objc_msgSend$moveMinutes
-+ _objc_msgSend$moveMinutesGoal
-+ _objc_msgSend$overnightVitalsSummary
-+ _objc_msgSend$playlistName
-+ _objc_msgSend$previousTurnID
-+ _objc_msgSend$rawValue
-+ _objc_msgSend$recordType
-+ _objc_msgSend$remSleepDuration
-+ _objc_msgSend$remSleepDurationPoints
-+ _objc_msgSend$respiratoryRate
-+ _objc_msgSend$respondsToSelector:
-+ _objc_msgSend$scaleID
-+ _objc_msgSend$scaleLevelID
-+ _objc_msgSend$score
-+ _objc_msgSend$sessionIdentifier
-+ _objc_msgSend$setValue:forKey:
-+ _objc_msgSend$sleepDaySummary
-+ _objc_msgSend$sleepDuration
-+ _objc_msgSend$sleepDurationPoints
-+ _objc_msgSend$sleepEndTime
-+ _objc_msgSend$sleepSchedule
-+ _objc_msgSend$sleepSessions
-+ _objc_msgSend$sleepStartPunctualityPoints
-+ _objc_msgSend$sleepStartTime
-+ _objc_msgSend$sortUsingComparator:
-+ _objc_msgSend$sourceBundleIdentifier
-+ _objc_msgSend$sourceDevice
-+ _objc_msgSend$sourceRecordIdentifier
-+ _objc_msgSend$standHour
-+ _objc_msgSend$standHourGoal
-+ _objc_msgSend$stateOfMindSample
-+ _objc_msgSend$statistics
-+ _objc_msgSend$sum
-+ _objc_msgSend$syncPolicyForSet_FitnessActivityRings
-+ _objc_msgSend$syncPolicyForSet_FitnessMindfulSession
-+ _objc_msgSend$syncPolicyForSet_FitnessWorkout
-+ _objc_msgSend$syncPolicyForSet_HealthCategorySample
-+ _objc_msgSend$syncPolicyForSet_HealthCharacteristics
-+ _objc_msgSend$syncPolicyForSet_HealthClassification
-+ _objc_msgSend$syncPolicyForSet_HealthMeasurement
-+ _objc_msgSend$syncPolicyForSet_HealthStatistics
-+ _objc_msgSend$syncPolicyForSet_MediaSharedPlaylist
-+ _objc_msgSend$syncPolicyForSet_MediaSharedPlaylist_Partition1
-+ _objc_msgSend$syncPolicyForSet_ModelCatalogRequestedUseCase
-+ _objc_msgSend$timeAsleep
-+ _objc_msgSend$totalPoints
-+ _objc_msgSend$totalSteps
-+ _objc_msgSend$turnInfo
-+ _objc_msgSend$unspecifiedSleepDuration
-+ _objc_msgSend$useCaseIdentifier
-+ _objc_msgSend$userTurnID
-+ _objc_msgSend$valence
-+ _objc_msgSend$valenceClassification
-+ _objc_msgSend$wakeTime
-+ _objc_msgSend$walkingRunningDistance
-+ _objc_msgSend$weatherTemperature
-+ _objc_msgSend$wheelchairUse
-+ _objc_msgSend$workoutIdentifier
-+ _objc_msgSend$wristTemperature
-+ _objc_msgSend$yearComponent
 + _symbolic Say_____G 27IntelligencePlatformLibrary27GeneratedImageFailureReasonV0fG0O
 + _symbolic Say_____G 27IntelligencePlatformLibrary27GeneratedImageFailureReasonV14SafetyCategoryO
 + _symbolic Say_____G 27IntelligencePlatformLibrary27GeneratedImageFailureReasonV17BlocklistCategoryO
@@ -1946,11 +1673,6 @@ Symbols:
 - _CCRoleFromString.sortedEnums
 - __OBJC_$_INSTANCE_METHODS_CCGenerativeInsightContent
 - __OBJC_$_INSTANCE_METHODS_CCItemField(CCHomeService_deviceType|CCHomeAccessory_deviceType|CCMediaLinkedIdentifier_type|CCPhotosPetRelationshipContent_type|CCRadioStationContent_signalType|CCSignificantLocationSubPremise_type|CCSiriCompanionContextAudioContent_mediaCategories|CCSiriCompanionContextAudioContent_subscriptionStatus|CCWalletPaymentsCommerceTrackedOrderShippingFulfillment_status|CCWalletPaymentsCommerceOrderEmailShippingInformation_status|CCWalletPaymentsCommerceOrderEmail_emailType|CCWalletExtractedOrderContentExtractedEmailOrderDetails_orderContentType|CCWalletExtractedOrderContentExtractedEmailShippingDetails_status|CCWalletExtractedOrderContentExtractedEmail_emailType|CCWalletExtractedOrderContentShippingFulfillment_status|CCWalletExtractedOrderContent_orderStatus|CCToolKitToolTypeIdentifierPrimitive_none_p|CCToolKitToolTypeIdentifierPrimitive_boolType|CCToolKitToolTypeIdentifierPrimitive_intType|CCToolKitToolTypeIdentifierPrimitive_number|CCToolKitToolTypeIdentifierPrimitive_decimal|CCToolKitToolTypeIdentifierPrimitive_string|CCToolKitToolTypeIdentifierPrimitive_date|CCToolKitToolTypeIdentifierPrimitive_dateComponents|CCToolKitToolTypeIdentifierPrimitive_url|CCToolKitToolTypeIdentifierPrimitive_dictionary|CCToolKitToolTypeIdentifierPrimitive_attributedString|CCToolKitToolTypeIdentifierPrimitive_measurement|CCToolKitToolTypeIdentifierPrimitive_currencyAmount|CCToolKitToolTypeIdentifierPrimitive_paymentMethod|CCToolKitToolTypeIdentifierPrimitive_placemark|CCToolKitToolTypeIdentifierPrimitive_person|CCToolKitToolTypeIdentifierPrimitive_file|CCToolKitToolTypeIdentifierPrimitive_app|CCToolKitToolTypeIdentifierPrimitive_searchableItem|CCToolKitToolTypeIdentifierPrimitive_intentsFile|CCToolKitToolTypeIdentifierPrimitive_shortcut|CCToolKitToolTypeIdentifierPrimitive_recurrenceRule|CCToolKitToolTypeIdentifierPrimitive_dateInterval|CCToolKitToolTypeIdentifierPrimitive_personNameComponents|CCToolKitToolTypeIdentifierPrimitive_duration|CCToolKitToolTypeIdentifierBuiltin_app|CCToolKitToolTypeIdentifierBuiltin_boundNumber|CCToolKitToolTypeIdentifierBuiltin_calendar|CCToolKitToolTypeIdentifierBuiltin_color|CCToolKitToolTypeIdentifierBuiltin_currency|CCToolKitToolTypeIdentifierBuiltin_file|CCToolKitToolTypeIdentifierBuiltin_homeArea|CCToolKitToolTypeIdentifierBuiltin_mediaRoute|CCToolKitToolTypeIdentifierBuiltin_paymentMethod|CCToolKitToolTypeIdentifierBuiltin_podcast|CCToolKitToolTypeIdentifierBuiltin_person|CCToolKitToolTypeIdentifierBuiltin_placemark|CCToolKitToolTypeIdentifierBuiltin_rideshareOption|CCToolKitToolTypeIdentifierBuiltin_vpn|CCToolKitToolTypeIdentifierBuiltin_timeZone|CCToolKitToolTypeIdentifierBuiltin_measurement|CCToolKitToolSystemTypeProtocol_unk|CCToolKitToolSystemTypeProtocol_mailAccount|CCToolKitToolSystemTypeProtocol_mailAddressee|CCToolKitToolSystemTypeProtocol_mailMessage|CCToolKitToolSystemTypeProtocol_mailbox|CCToolKitToolSystemTypeProtocol_intentMessage|CCToolKitToolSystemTypeProtocol_messageGroup|CCToolKitToolSystemTypeProtocol_messageParticipants|CCToolKitToolSystemTypeProtocol_uniqueEntity|CCToolKitToolSystemTypeProtocol_urlRepresentable|CCToolKitToolSystemTypeProtocol_visualSearch|CCToolKitToolSystemTypeProtocol_visualSearchOcr|CCToolKitToolSystemTypeProtocol_updatableEntity|CCToolKitToolSystemTypeProtocol_transientEntity|CCToolKitToolSystemTypeProtocol_indexedEntity|CCToolKitToolTypeDefinitionVersion1Entity_runtimeFlags|CCToolKitToolTypeDefinitionVersion1Enumeration_kind|CCToolKitToolTypedValuePrimitiveValueDecimal_sign|CCToolKitToolTypedValuePrimitiveValueMeasurement_unitType|CCToolKitToolTypedValuePrimitiveValuePaymentMethod_type|CCToolKitToolTypedValuePrimitiveValuePlacemark_type|CCToolKitToolTypedValuePrimitiveValuePersonHandle_type|CCToolKitToolTypedValuePrimitiveValueDateComponentsCalendar_identifier|CCToolKitToolTypedValuePrimitiveValueRecurrenceRuleRecurrenceRuleWeekday_RecurrenceRuleWeekdayWeekday|CCToolKitToolTypedValuePrimitiveValueRecurrenceRule_frequency|CCToolKitToolTypedValuePrimitiveValueRecurrenceRule_matchingPolicy|CCToolKitToolTypedValuePrimitiveValueRecurrenceRule_repeatedTimePolicy|CCToolKitToolTypedValuePrimitiveValue_noneVariant|CCToolKitToolRestrictionContextTextTypedWith_keyboardType|CCToolKitToolRestrictionContextTextTypedWith_autocorrectionType|CCToolKitToolRestrictionContextTextTypedWith_capitalizationType|CCToolKitToolRestrictionContext_personReachableAs|CCToolKitToolRestrictionContext_dateExpressibleAs|CCToolKitToolComparisonPredicateComparisonTemplate_hasValue|CCToolKitToolComparisonPredicateComparisonTemplate_hasNoValue|CCToolKitToolComparisonPredicateComparisonTemplate_isToday|CCToolKitToolComparisonPredicateComparison_hasValue|CCToolKitToolComparisonPredicateComparison_hasNoValue|CCToolKitToolComparisonPredicateComparison_isToday|CCToolKitToolCompoundPredicate_operatorType|CCToolKitToolQuery_sort|CCToolKitToolRuntimeRequirementAvailabilityAnnotation_platform|CCToolKitToolRuntimeRequirementDeviceCapability_capability|CCToolKitToolRuntimeRequirement_deviceState|CCToolKitToolSystemToolProtocolIntentSideEffect_unk|CCToolKitToolSystemToolProtocolIntentSideEffect_noSideEffect|CCToolKitToolSystemToolProtocol_unk|CCToolKitToolSystemToolProtocol_undoable|CCToolKitToolSystemToolProtocol_sessionStarting|CCToolKitToolSystemToolProtocol_urlRepresentable|CCToolKitToolSystemToolProtocol_foregroundContinuable|CCToolKitToolSystemToolProtocol_changeBinarySetting|CCToolKitToolSystemToolProtocol_requiresMdmChecks|CCToolKitToolSystemToolProtocol_cut|CCToolKitToolSystemToolProtocol_copyProtocol|CCToolKitToolSystemToolProtocol_paste|CCToolKitToolSystemToolProtocol_cancel|CCToolKitToolSystemToolProtocol_resize|CCToolKitToolSystemToolProtocol_scroll|CCToolKitToolSystemToolProtocol_undo|CCToolKitToolSystemToolProtocol_zoom|CCToolKitToolSystemToolProtocol_closeEntity|CCToolKitToolSystemToolProtocol_createEntity|CCToolKitToolSystemToolProtocol_cutEntity|CCToolKitToolSystemToolProtocol_deleteEntity|CCToolKitToolSystemToolProtocol_duplicateEntity|CCToolKitToolSystemToolProtocol_favoriteEntity|CCToolKitToolSystemToolProtocol_openEntity|CCToolKitToolSystemToolProtocol_previewEntity|CCToolKitToolSystemToolProtocol_saveEntity|CCToolKitToolSystemToolProtocol_putEntityInContainer|CCToolKitToolSystemToolProtocol_audioStarting|CCToolKitToolSystemToolProtocol_audioRecording|CCToolKitToolSystemToolProtocol_pushToTalkTransmission|CCToolKitToolSystemToolProtocol_startDive|CCToolKitToolSystemToolProtocol_startWorkout|CCToolKitToolSystemToolProtocol_pauseWorkout|CCToolKitToolSystemToolProtocol_resumeWorkout|CCToolKitToolSystemToolProtocol_enterMarkup|CCToolKitToolSystemToolProtocol_exitMarkup|CCToolKitToolSystemToolProtocol_focusConfiguration|CCToolKitToolSystemToolProtocol_widgetConfiguration|CCToolKitToolSystemToolProtocol_search|CCToolKitToolSystemToolProtocol_showSearchResultsInApp|CCToolKitToolSystemToolProtocol_showStringSearchResultsInApp|CCToolKitToolSystemToolProtocol_showInAppSearchResults|CCToolKitToolSystemToolProtocol_moveSpatial|CCToolKitToolSystemToolProtocol_navigateSequentially|CCToolKitToolSystemToolProtocol_sting|CCToolKitToolSystemToolProtocol_toggle|CCToolKitToolSystemToolProtocol_cameraCapture|CCToolKitToolSystemToolProtocol_staccatoLongPress|CCToolKitToolSystemToolProtocol_sendMail|CCToolKitToolSystemToolProtocol_setMailMessageIsRead|CCToolKitToolSystemToolProtocol_rewriteWritingTool|CCToolKitToolSystemToolProtocol_proofreadWritingTool|CCToolKitToolSystemToolProtocol_assistantInvocable|CCToolKitToolSystemToolProtocol_systemFrameworkIntent|CCToolKitToolSystemToolProtocol_progressReporting|CCToolKitToolSystemToolProtocol_controlConfiguration|CCToolKitToolSystemToolProtocol_valueSetting|CCToolKitToolSystemToolProtocol_entityGetter|CCToolKitToolToolDefinitionVersion1ParameterRelationshipRelation_isSome|CCToolKitToolToolDefinitionVersion1ParameterRelationshipRelation_isNone|CCToolKitToolToolDefinitionVersion1Parameter_flags|CCToolKitToolToolDefinitionVersion1ToolIconToolSymbolIcon_style|CCToolKitToolToolDefinitionVersion1_toolType|CCToolKitToolToolDefinitionVersion1_flags|CCToolKitToolToolDefinitionVersion1_authenticationPolicy|CCToolKitToolToolDefinitionVersion1_visibilityFlags|CCToolKitToolAppDefinitionDevice_local|CCToolKitToolAppDefinition_origin|CCToolKitToolContainerDefinitionDevice_local|CCToolKitToolContainerDefinition_containerType|CCToolKitToolContainerDefinition_origin|CCToolKitToolDisplayRepresentationDisplayValue_type|CCToolKitToolCoercionDefinition_direction|CCToolKitToolTriggerDefinitionVersion1_flags|CCToolKitToolToolInvocationOptions_interactionMode|CCToolKitToolToolInvocationOptions_interfaceIdiom|CCTextUnderstandingIdentificationDocument_kind|CCSpotlightUniformType_typeIdentifier|CCSpotlightUniformType_supertypes|CCArchetypeObservationsContent_category|CCArchetypeWritingAssistantProfilesMetadata_writingToolsButton|CCSiriTranscriptTurnContent_role|CCAppIntentsSuggestedEntityImage_displayStyle|CCAppIntentsSuggestedEntityImageData_displayStyle|CCAppIntentsSuggestedEntityValueTypeArray_capabilities|CCAppIntentsSuggestedEntityValueType_containerType|CCAppIntentsSuggestedEntityValueType_legacyIntent|CCAppIntentsSuggestedEntityValueType_measurement|CCAppIntentsSuggestedEntityValueType_primitive|CCAppIntentsSuggestedEntitySystemProtocolPropertiesByIdentifier_systemProtocolIdentifier|CCGenerativeLearningPlatformSummarizationRecordContent_cadence|CCGenerativeMotivatorBarrierResourceInsight_variant|CCGenerativeInsightContent_confidence|CCGenerativeLearningPlatformProvenance_source|CCMailImportedAttachmentMetaContent_importResult|CCSiriTranscriptConversationTitle_source|CCDocumentProcessingTestItemContent_tier|CCAmbientSensingSceneSummary_majorScene|CCAmbientSensingSceneSummary_minorScene|CCAmbientSensingSceneSummary_indoorOutdoor|CCAmbientSensingSceneSummary_groceryAisles|CCAmbientSensingPOISummary_majorPOI|CCAmbientSensingPOISummary_minorPOI|CCAmbientSensingConcurrent_activityType|CCAmbientSensingNutritionSummary_mealType|CCAmbientSensingSessionSummaryContent_activity)
-- _objc_msgSend$initWithContent:sessionID:role:turnIndex:createdDate:modifiedDate:appEntityReferences:conversationID:chunkPayload:error:
-- _objc_msgSend$initWithHTMLContentData:accountHandles:accountIdentifier:additionalRecipients:authorAddresses:authorEmailAddresses:authorNames:authors:emailAddresses:hiddenAdditionalRecipients:instantMessageAddresses:likelyJunk:mailboxIdentifiers:phoneNumbers:primaryRecipients:recipientAddresses:recipientEmailAddresses:recipientNames:textContent:attachmentPaths:attachmentTypes:attachmentNames:attachmentKinds:sentDate:isFlagged:isRead:threadIdentifier:emailHeaders:isVIP:categories:categoryType:serviceIdentifier:additionalRecipientEmailAddresses:hiddenAdditionalRecipientEmailAddresses:error:
-- _objc_msgSend$initWithNaturalLanguageDescription:startTime:endTime:sources:places:persons:significance:actions:timeMetadata:visits:social:media:environment:transit:sentiment:healthMetrics:category:extraMetadata:error:
-- _objc_msgSend$initWithParentInsightIdentifier:evidence:confidence:generationDate:workflowExecutionIdentifier:confidenceScore:rationale:insight:insightType:error:
-- _objc_msgSend$metadataModificationDate
 CStrings:
 + "\""
 + "1\x81"

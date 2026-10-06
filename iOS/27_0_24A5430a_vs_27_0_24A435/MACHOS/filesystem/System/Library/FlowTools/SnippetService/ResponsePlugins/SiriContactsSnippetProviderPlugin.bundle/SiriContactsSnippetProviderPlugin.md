@@ -2,6 +2,8 @@
 
 > `/System/Library/FlowTools/SnippetService/ResponsePlugins/SiriContactsSnippetProviderPlugin.bundle/SiriContactsSnippetProviderPlugin`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_19 : 12 -> 20

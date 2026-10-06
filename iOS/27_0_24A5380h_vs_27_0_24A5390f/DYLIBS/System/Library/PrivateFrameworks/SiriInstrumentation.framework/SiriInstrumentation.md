@@ -2,100 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd5bff4` | `0xd5eb08` | **`+0x2b14`** |
+| `__TEXT.__cstring` | `0x93c3b` | `0x94176` | **`+0x53b`** |
+| `__AUTH_CONST.__objc_const` | `0x179730` | `0x179c20` | **`+0x4f0`** |
+| `__AUTH_CONST.__cfstring` | `0x7ee00` | `0x7f220` | **`+0x420`** |
+| `__TEXT.__objc_methlist` | `0x10789c` | `0x107c6c` | **`+0x3d0`** |
+| `__DATA_CONST.__const` | `0x3d1c0` | `0x3d3f8` | **`+0x238`** |
+| `__DATA_CONST.__objc_selrefs` | `0x41fa8` | `0x420d0` | **`+0x128`** |
+| `__DATA.__bss` | `0x1f400` | `0x1f500` | **`+0x100`** |
+| `__AUTH.__objc_data` | `0x28ff0` | `0x290e0` | **`+0xf0`** |
+| `__TEXT.__const` | `0x17654` | `0x17714` | **`+0xc0`** |
+| `__TEXT.__unwind_info` | `0x33610` | `0x336d0` | **`+0xc0`** |
+| `__AUTH_CONST.__const` | `0x245a9` | `0x245e9` | **`+0x40`** |
+| `__TEXT.__constg_swiftt` | `0x7e14` | `0x7e54` | **`+0x40`** |
+| `__DATA.__objc_ivar` | `0x128ec` | `0x12920` | **`+0x34`** |
+| `__TEXT.__swift5_builtin` | `0x4984` | `0x49ac` | **`+0x28`** |
+| `__DATA.__data` | `0x3440` | `0x3458` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x6850` | `0x6868` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x6718` | `0x6730` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x66c8` | `0x66e0` | **`+0x18`** |
+| `__TEXT.__swift5_typeref` | `0x1e9a` | `0x1ea6` | **`+0xc`** |
+| `__TEXT.__swift5_proto` | `0x136c` | `0x1374` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0xf08` | `0xf10` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -3600.79.1.0.0
--  __TEXT.__text: 0xd5bff4
--  __TEXT.__objc_methlist: 0x10789c
--  __TEXT.__const: 0x17654
--  __TEXT.__swift5_typeref: 0x1e9a
--  __TEXT.__cstring: 0x93c3b
--  __TEXT.__constg_swiftt: 0x7e14
 +3600.80.1.0.0
-+  __TEXT.__text: 0xd5eb08
-+  __TEXT.__objc_methlist: 0x107c6c
-+  __TEXT.__const: 0x17714
-+  __TEXT.__swift5_typeref: 0x1ea6
-+  __TEXT.__cstring: 0x94176
-+  __TEXT.__constg_swiftt: 0x7e54
-   __TEXT.__swift5_reflstr: 0x21d
-   __TEXT.__swift5_fieldmd: 0x45c
--  __TEXT.__swift5_builtin: 0x4984
-+  __TEXT.__swift5_builtin: 0x49ac
-   __TEXT.__swift5_assocty: 0x150
--  __TEXT.__swift5_proto: 0x136c
--  __TEXT.__swift5_types: 0xf08
-+  __TEXT.__swift5_proto: 0x1374
-+  __TEXT.__swift5_types: 0xf10
-   __TEXT.__oslogstring: 0xc1
-   __TEXT.__swift5_protos: 0x24
--  __TEXT.__unwind_info: 0x33610
-+  __TEXT.__unwind_info: 0x336d0
-   __TEXT.__eh_frame: 0x47f8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3d1c0
--  __DATA_CONST.__objc_classlist: 0x6718
-+  __DATA_CONST.__const: 0x3d3f8
-+  __DATA_CONST.__objc_classlist: 0x6730
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x41fa8
-+  __DATA_CONST.__objc_selrefs: 0x420d0
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x66c8
--  __DATA_CONST.__got: 0x6850
--  __AUTH_CONST.__const: 0x245a9
--  __AUTH_CONST.__cfstring: 0x7ee00
--  __AUTH_CONST.__objc_const: 0x179730
-+  __DATA_CONST.__objc_superrefs: 0x66e0
-+  __DATA_CONST.__got: 0x6868
-+  __AUTH_CONST.__const: 0x245e9
-+  __AUTH_CONST.__cfstring: 0x7f220
-+  __AUTH_CONST.__objc_const: 0x179c20
-   __AUTH_CONST.__objc_intobj: 0xc48
-   __AUTH_CONST.__auth_got: 0x928
--  __AUTH.__objc_data: 0x28ff0
-+  __AUTH.__objc_data: 0x290e0
-   __AUTH.__data: 0x160
--  __DATA.__objc_ivar: 0x128ec
--  __DATA.__data: 0x3440
--  __DATA.__bss: 0x1f400
-+  __DATA.__objc_ivar: 0x12920
-+  __DATA.__data: 0x3458
-+  __DATA.__bss: 0x1f500
-   __DATA.__common: 0x20
-   __DATA_DIRTY.__objc_data: 0x17970
-   __DATA_DIRTY.__data: 0x238
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 92861
--  Symbols:   144554
+-  Symbols:   130655
 -  CStrings:  17350
 +  Functions: 92946
-+  Symbols:   144685
++  Symbols:   130771
 +  CStrings:  17383
- 
 Symbols:
 + +[ODSIGNALSiriSchemaODSIGNALClientEvent(InnerEventContainer) getInnerTypeStringByTag:]
 + -[ASRSchemaASRStarted deleteSpeechProfileSizeBucket]
@@ -211,21 +157,6 @@ Symbols:
 + __OBJC_METACLASS_RO_$_ASRSpeechProfileSchemaASRSpeechProfileCascadeEntitySource
 + __OBJC_METACLASS_RO_$_ODSIGNALSiriSchemaODSIGNALAppForegrounded
 + __OBJC_METACLASS_RO_$_ODSIGNALSiriSchemaODSIGNALClientEvent
-+ _objc_msgSend$addCascadeEntitySources:
-+ _objc_msgSend$appForegrounded
-+ _objc_msgSend$cascadeEntitySources
-+ _objc_msgSend$clearCascadeEntitySources
-+ _objc_msgSend$numCandidateInteractions
-+ _objc_msgSend$numEnrolledEntities
-+ _objc_msgSend$setAppForegrounded:
-+ _objc_msgSend$setNumCandidateInteractions:
-+ _objc_msgSend$setNumEnrolledEntities:
-+ _objc_msgSend$setSpeechProfileSize:
-+ _objc_msgSend$setSpeechProfileSizeBucket:
-+ _objc_msgSend$setSpeechProfileUpdateReason:
-+ _objc_msgSend$speechProfileSize
-+ _objc_msgSend$speechProfileSizeBucket
-+ _objc_msgSend$speechProfileUpdateReason
 + _symbolic _____ So022ASRSpeechProfileSchemaaB12UpdateReasonV
 + _symbolic _____ So35ASRSchemaASRSpeechProfileSizeBucketV
 CStrings:

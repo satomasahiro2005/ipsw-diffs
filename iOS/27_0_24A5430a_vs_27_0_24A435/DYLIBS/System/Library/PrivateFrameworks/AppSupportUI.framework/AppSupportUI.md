@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AppSupportUI.framework/AppSupportUI`
 
-```diff
+### Section Size Changes
 
- 43.4.0.0.0
--  __TEXT.__text: 0x1f764
-+  __TEXT.__text: 0x1f798
-   __TEXT.__objc_methlist: 0x182c
-   __TEXT.__const: 0x180
-   __TEXT.__gcc_except_tab: 0x504
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1f764` | `0x1f798` | **`+0x34`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _OUTLINED_FUNCTION_39 -> _OUTLINED_FUNCTION_0 : 32 -> 28
 ~ _OUTLINED_FUNCTION_0 : 28 -> 32

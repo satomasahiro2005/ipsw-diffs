@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/SiriCalendar.framework/SiriCalendar`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_21 : 20 -> 16

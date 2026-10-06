@@ -2,60 +2,34 @@
 
 > `/System/Library/AccessibilityBundles/Shortcuts.axbundle/Shortcuts`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_superrefs`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb00` | `0x1228` | **`+0x728`** |
+| `__AUTH_CONST.__cfstring` | `0x3c0` | `0x460` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0x286` | `0x307` | **`+0x81`** |
+| `__DATA_CONST.__objc_selrefs` | `0xe8` | `0x168` | **`+0x80`** |
+| `__DATA_CONST.__const` | `0x90` | `0x108` | **`+0x78`** |
+| `__DATA_CONST.__got` | `0x40` | `0x80` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0xb8` | `0xe0` | **`+0x28`** |
+| `__TEXT.__gcc_except_tab` | `—` | `0x18` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0xd4` | `0xec` | **`+0x18`** |
+| `__TEXT.__const` | `0x8` | `0x10` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -3042.0.0.0.0
--  __TEXT.__text: 0xb00
--  __TEXT.__objc_methlist: 0xd4
--  __TEXT.__const: 0x8
--  __TEXT.__cstring: 0x286
--  __TEXT.__unwind_info: 0xb8
 +3045.0.0.0.0
-+  __TEXT.__text: 0x1228
-+  __TEXT.__objc_methlist: 0xec
-+  __TEXT.__const: 0x10
-+  __TEXT.__gcc_except_tab: 0x18
-+  __TEXT.__cstring: 0x307
-+  __TEXT.__unwind_info: 0xe0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x90
-+  __DATA_CONST.__const: 0x108
-   __DATA_CONST.__objc_classlist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xe8
-+  __DATA_CONST.__objc_selrefs: 0x168
-   __DATA_CONST.__objc_superrefs: 0x10
--  __DATA_CONST.__got: 0x40
-+  __DATA_CONST.__got: 0x80
-   __AUTH_CONST.__const: 0x60
--  __AUTH_CONST.__cfstring: 0x3c0
-+  __AUTH_CONST.__cfstring: 0x460
-   __AUTH_CONST.__objc_const: 0x2d0
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA_DIRTY.__objc_data: 0x190
 
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 23
--  Symbols:   115
+-  Symbols:   95
 -  CStrings:  36
 +  Functions: 30
-+  Symbols:   168
++  Symbols:   132
 +  CStrings:  43
- 
 Symbols:
 + -[LibraryCellAccessibility _axAppendCustomActionsForMenuElements:intoArray:]
 + -[LibraryCellAccessibility _axAutoShortcutContextMenuCustomActions]
@@ -83,22 +57,6 @@ Symbols:
 + ___stack_chk_guard
 + _abort
 + _objc_enumerationMutation
-+ _objc_msgSend$_axAppendCustomActionsForMenuElements:intoArray:
-+ _objc_msgSend$_axAutoShortcutContextMenuCustomActions
-+ _objc_msgSend$array
-+ _objc_msgSend$arrayWithObjects:count:
-+ _objc_msgSend$axSafelyAddObject:
-+ _objc_msgSend$children
-+ _objc_msgSend$collectionView:contextMenuConfigurationForItemsAtIndexPaths:point:
-+ _objc_msgSend$countByEnumeratingWithState:objects:count:
-+ _objc_msgSend$image
-+ _objc_msgSend$indexPathForCell:
-+ _objc_msgSend$initWithName:image:actionHandler:
-+ _objc_msgSend$length
-+ _objc_msgSend$performWithSender:target:
-+ _objc_msgSend$stringByReplacingOccurrencesOfString:withString:
-+ _objc_msgSend$title
-+ _objc_msgSend$validateClass:hasProperty:withType:
 + _objc_opt_isKindOfClass
 + _objc_release_x24
 + _objc_release_x25

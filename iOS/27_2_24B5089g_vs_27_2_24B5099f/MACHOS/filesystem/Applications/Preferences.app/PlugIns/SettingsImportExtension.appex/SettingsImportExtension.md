@@ -2,15 +2,14 @@
 
 > `/Applications/Preferences.app/PlugIns/SettingsImportExtension.appex/SettingsImportExtension`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -2027.1.6.0.0
 +2027.1.8.0.0
-   __TEXT.__text: 0x478
-   __TEXT.__auth_stubs: 0x100
-   __TEXT.__objc_methlist: 0x20
 ```

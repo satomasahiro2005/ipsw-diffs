@@ -2,55 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/CarbonCore.framework/CarbonCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__bss` | `—` | `0x278` | **`+0x278`** |
+| `__DATA.__bss` | `0x11a0` | `0xf34` | **`-0x26c`** |
+| `__DATA_DIRTY.__data` | `—` | `0x160` | **`+0x160`** |
+| `__DATA.__data` | `0x440` | `0x2e8` | **`-0x158`** |
+| `__TEXT.__text` | `0x34238` | `0x342bc` | **`+0x84`** |
+| `__DATA_DIRTY.__common` | `—` | `0x18` | **`+0x18`** |
+| `__DATA.__common` | `0x48` | `0x38` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0xd00` | `0xd08` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x34238
-+  __TEXT.__text: 0x342bc
-   __TEXT.__const: 0x24d0
-   __TEXT.__cstring: 0x20126
-   __TEXT.__oslogstring: 0x4801
-   __TEXT.__gcc_except_tab: 0x230
--  __TEXT.__unwind_info: 0xd00
-+  __TEXT.__unwind_info: 0xd08
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0xf0d8
-   __DATA_CONST.__weak_got: 0x8
+-1402.0.0.0.0
++1404.0.0.0.0
 
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__auth_got: 0xa48
-   __AUTH.__data: 0x1e8
--  __DATA.__data: 0x440
-+  __DATA.__data: 0x2e8
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x11a0
--  __DATA.__common: 0x48
-+  __DATA.__bss: 0xf34
-+  __DATA.__common: 0x38
-+  __DATA_DIRTY.__data: 0x160
-+  __DATA_DIRTY.__common: 0x18
-+  __DATA_DIRTY.__bss: 0x278
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libicucore.A.dylib
 -  Functions: 1100
--  Symbols:   3016
+-  Symbols:   1609
 +  Functions: 1099
-+  Symbols:   3014
-   CStrings:  4763
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__data : content changed
++  Symbols:   1608
 Symbols:
 - _OUTLINED_FUNCTION_46
 Functions:
@@ -77,5 +52,4 @@ Functions:
 ~ _FSNodeEntry_CleanFileIDTree : 332 -> 344
 ~ _FSNodeEntry_GetByRelativePath : 608 -> 612
 ~ _FileIDTreeServerGetVRefNumForDeviceInternal : 208 -> 220
-
 ```

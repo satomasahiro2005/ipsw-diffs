@@ -2,126 +2,68 @@
 
 > `/System/Library/PrivateFrameworks/HealthRecordsPlugin.framework/HealthRecordsPlugin`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb6420` | `0xc879c` | **`+0x1237c`** |
+| `__TEXT.__oslogstring` | `0xfdb7` | `0x10747` | **`+0x990`** |
+| `__DATA.__bss` | `0x1c0` | `0x8c0` | **`+0x700`** |
+| `__AUTH_CONST.__const` | `0x1180` | `0x1838` | **`+0x6b8`** |
+| `__TEXT.__eh_frame` | `0xba0` | `0x1020` | **`+0x480`** |
+| `__TEXT.__const` | `0xa30` | `0xe80` | **`+0x450`** |
+| `__AUTH_CONST.__auth_got` | `0xae0` | `0xeb0` | **`+0x3d0`** |
+| `__TEXT.__cstring` | `0x978f` | `0x9aaf` | **`+0x320`** |
+| `__AUTH_CONST.__objc_const` | `0xb820` | `0xbb00` | **`+0x2e0`** |
+| `__TEXT.__unwind_info` | `0x2a20` | `0x2ce0` | **`+0x2c0`** |
+| `__TEXT.__swift5_typeref` | `0x463` | `0x6cf` | **`+0x26c`** |
+| `__AUTH.__objc_data` | `0x1690` | `0x1860` | **`+0x1d0`** |
+| `__TEXT.__swift5_capture` | `0x328` | `0x4f0` | **`+0x1c8`** |
+| `__TEXT.__objc_methlist` | `0x780c` | `0x79b4` | **`+0x1a8`** |
+| `__DATA.__data` | `0xdb0` | `0xf40` | **`+0x190`** |
+| `__AUTH_CONST.__cfstring` | `0x6740` | `0x68a0` | **`+0x160`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5228` | `0x5358` | **`+0x130`** |
+| `__TEXT.__constg_swiftt` | `0x370` | `0x47c` | **`+0x10c`** |
+| `__DATA_CONST.__got` | `0x11a8` | `0x12a8` | **`+0x100`** |
+| `__AUTH.__data` | `0xd8` | `0x1a8` | **`+0xd0`** |
+| `__TEXT.__swift5_fieldmd` | `0x248` | `0x304` | **`+0xbc`** |
+| `__TEXT.__swift5_reflstr` | `0x183` | `0x223` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x2f48` | `0x2fc8` | **`+0x80`** |
+| `__TEXT.__swift5_assocty` | `—` | `0x48` | **`+0x48`** |
+| `__DATA_DIRTY.__data` | `0x538` | `0x578` | **`+0x40`** |
+| `__TEXT.__swift5_proto` | `0x24` | `0x5c` | **`+0x38`** |
+| `__DATA_DIRTY.__objc_data` | `0x13f8` | `0x1420` | **`+0x28`** |
+| `__TEXT.__gcc_except_tab` | `0x1968` | `0x198c` | **`+0x24`** |
+| `__DATA_CONST.__objc_classlist` | `0x440` | `0x460` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x2c` | `0x44` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x14` | `0x28` | **`+0x14`** |
+| `__DATA_CONST.__objc_protolist` | `0x128` | `0x138` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x18` | `0x28` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x5e4` | `0x5e8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.0.72.2.7
--  __TEXT.__text: 0xb27ec
--  __TEXT.__objc_methlist: 0x780c
--  __TEXT.__const: 0xa30
--  __TEXT.__cstring: 0x978f
--  __TEXT.__oslogstring: 0xfdb7
--  __TEXT.__gcc_except_tab: 0x1968
 +7027.1.36.2.7
-+  __TEXT.__text: 0xc42f8
-+  __TEXT.__objc_methlist: 0x79b4
-+  __TEXT.__const: 0xe80
-+  __TEXT.__cstring: 0x9aaf
-+  __TEXT.__oslogstring: 0x10747
-+  __TEXT.__gcc_except_tab: 0x198c
-   __TEXT.__ustring: 0x7e
--  __TEXT.__swift5_typeref: 0x463
--  __TEXT.__swift5_capture: 0x328
--  __TEXT.__constg_swiftt: 0x370
--  __TEXT.__swift5_reflstr: 0x183
--  __TEXT.__swift5_fieldmd: 0x248
--  __TEXT.__swift5_builtin: 0x14
--  __TEXT.__swift5_types: 0x2c
-+  __TEXT.__swift5_typeref: 0x6cf
-+  __TEXT.__swift5_capture: 0x4f0
-+  __TEXT.__constg_swiftt: 0x47c
-+  __TEXT.__swift5_reflstr: 0x223
-+  __TEXT.__swift5_fieldmd: 0x304
-+  __TEXT.__swift5_builtin: 0x28
-+  __TEXT.__swift5_assocty: 0x48
-+  __TEXT.__swift5_proto: 0x5c
-+  __TEXT.__swift5_types: 0x44
-   __TEXT.__swift_as_entry: 0x70
-   __TEXT.__swift_as_ret: 0x54
-   __TEXT.__swift_as_cont: 0xac
--  __TEXT.__swift5_proto: 0x24
-   __TEXT.__swift5_protos: 0x18
--  __TEXT.__unwind_info: 0x34a8
--  __TEXT.__eh_frame: 0xba0
-+  __TEXT.__unwind_info: 0x3810
-+  __TEXT.__eh_frame: 0x1020
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2f48
--  __DATA_CONST.__objc_classlist: 0x440
-+  __DATA_CONST.__const: 0x2fc8
-+  __DATA_CONST.__objc_classlist: 0x460
-   __DATA_CONST.__objc_catlist: 0x120
--  __DATA_CONST.__objc_protolist: 0x128
-+  __DATA_CONST.__objc_protolist: 0x138
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5228
--  __DATA_CONST.__objc_protorefs: 0x18
-+  __DATA_CONST.__objc_selrefs: 0x5358
-+  __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__objc_superrefs: 0x2e0
-   __DATA_CONST.__objc_arraydata: 0x150
--  __DATA_CONST.__got: 0x11a8
--  __AUTH_CONST.__const: 0x1180
--  __AUTH_CONST.__cfstring: 0x6740
--  __AUTH_CONST.__objc_const: 0xb820
-+  __DATA_CONST.__got: 0x12a8
-+  __AUTH_CONST.__const: 0x1838
-+  __AUTH_CONST.__cfstring: 0x68a0
-+  __AUTH_CONST.__objc_const: 0xbb00
-   __AUTH_CONST.__objc_intobj: 0x4e0
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__objc_arrayobj: 0x108
-   __AUTH_CONST.__objc_dictobj: 0x50
--  __AUTH_CONST.__auth_got: 0xae0
--  __AUTH.__objc_data: 0x1690
--  __AUTH.__data: 0xd8
--  __DATA.__objc_ivar: 0x5e4
--  __DATA.__data: 0xdb0
--  __DATA_DIRTY.__objc_data: 0x13f8
--  __DATA_DIRTY.__data: 0x538
-+  __AUTH_CONST.__auth_got: 0xeb0
-+  __AUTH.__objc_data: 0x1860
-+  __AUTH.__data: 0x1a8
-+  __DATA.__objc_ivar: 0x5e8
-+  __DATA.__data: 0xf40
-+  __DATA_DIRTY.__objc_data: 0x1420
-+  __DATA_DIRTY.__data: 0x578
-   __DATA_DIRTY.__bss: 0x18
-   __DATA_DIRTY.__common: 0x18
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 +  - /usr/lib/swift/libswiftAVFoundation.dylib
 +  - /usr/lib/swift/libswiftAccelerate.dylib
-   - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
+
 +  - /usr/lib/swift/libswiftCoreImage.dylib
-   - /usr/lib/swift/libswiftCoreLocation.dylib
+
 +  - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
+
 +  - /usr/lib/swift/libswiftIntents.dylib
 +  - /usr/lib/swift/libswiftMLCompute.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3549
--  Symbols:   7806
+-  Symbols:   5510
 -  CStrings:  1779
 +  Functions: 3809
-+  Symbols:   7956
++  Symbols:   5620
 +  CStrings:  1822
- 
 Symbols:
 + +[HDCPSUpdateGatewaysOperation updateGatewaysOperationsForAccounts:manager:profile:]
 + +[HDClinicalHealthLinkSyncEntityObjcBridge syncEntityDependenciesForSyncProtocolVersion:]
@@ -251,65 +193,6 @@ Symbols:
 + _associated conformance So11HKErrorCodeV10Foundation06_ErrorB8ProtocolSC01_D4TypeAcDP_AC21_BridgedStoredNSError
 + _associated conformance So11HKErrorCodeV10Foundation06_ErrorB8ProtocolSCSQ
 + _associated conformance So24HDSMARTHealthLinkManagerC19HealthRecordsPluginE011SMARTHealthbC5ErrorOSHACSQ
-+ _objc_msgSend$_complete
-+ _objc_msgSend$_fetchCurrentAccessCredentialsWithError:
-+ _objc_msgSend$_newMedicalRecordCountForAccountRowID:medicalRecordCountBeforeExtraction:
-+ _objc_msgSend$_refreshAccessCredentialsWithCurrentCredentials:error:
-+ _objc_msgSend$accountEntityForSMARTHealthLinkHost:error:
-+ _objc_msgSend$accountIdentifierForSMARTHealthLinkParsingResult:
-+ _objc_msgSend$accountRowIDForSMARTHealthLinkParsingResult:error:
-+ _objc_msgSend$addObserver:
-+ _objc_msgSend$clinicalHealthLink
-+ _objc_msgSend$clinicalHealthLinkEntityForLinkWithIdentifier:database:error:
-+ _objc_msgSend$clinicalHealthLinkSyncIdentifierForHealthLinkWithPersistentID:database:error:
-+ _objc_msgSend$conceptIndexManager
-+ _objc_msgSend$countOfMedicalRecordsForAccountRowID:profile:error:
-+ _objc_msgSend$dateAdded
-+ _objc_msgSend$dateAddedTimezone
-+ _objc_msgSend$hasAccountSyncIdentifier
-+ _objc_msgSend$hasDateAdded
-+ _objc_msgSend$hasLinkKey
-+ _objc_msgSend$hasLinkURL
-+ _objc_msgSend$hasSuffix:
-+ _objc_msgSend$healthLinkIdentifierForSMARTHealthLinkParsingResult:
-+ _objc_msgSend$initWithHost:clinicalHealthLink:label:FHIRResources:
-+ _objc_msgSend$initWithLongLong:
-+ _objc_msgSend$initWithProfile:completion:
-+ _objc_msgSend$isEqualToIgnoringCase:
-+ _objc_msgSend$isExecuting
-+ _objc_msgSend$label
-+ _objc_msgSend$linkFlags
-+ _objc_msgSend$linkKey
-+ _objc_msgSend$linkLabel
-+ _objc_msgSend$linkPasscode
-+ _objc_msgSend$linkURL
-+ _objc_msgSend$lowercaseString
-+ _objc_msgSend$manifestData
-+ _objc_msgSend$manifestResolutionBlockedUntil
-+ _objc_msgSend$manifestResolved
-+ _objc_msgSend$medicalHistoryFeatureEvaluator
-+ _objc_msgSend$mulberry
-+ _objc_msgSend$newTokenRefresh
-+ _objc_msgSend$notifyNewMedicalRecordsObserversForAccountIdentifier:healthLinkIdentifier:
-+ _objc_msgSend$predicateWithProperty:comparisonType:subqueryDescriptor:subqueryProperties:
-+ _objc_msgSend$profileExtension:didCreateNewMedicalRecordsForAccountIdentifier:healthLinkIdentifier:
-+ _objc_msgSend$readDataToEndOfFileAndReturnError:
-+ _objc_msgSend$runIfNeededAndWait
-+ _objc_msgSend$setDateAdded:
-+ _objc_msgSend$setDateAddedTimezone:
-+ _objc_msgSend$setLinkFlags:
-+ _objc_msgSend$setLinkKey:
-+ _objc_msgSend$setLinkLabel:
-+ _objc_msgSend$setLinkPasscode:
-+ _objc_msgSend$setLinkURL:
-+ _objc_msgSend$setManifestData:
-+ _objc_msgSend$setManifestResolutionBlockedUntil:
-+ _objc_msgSend$setManifestResolved:
-+ _objc_msgSend$setMedicalHistoryFeatureEvaluator:
-+ _objc_msgSend$smartHealthLink
-+ _objc_msgSend$storeSMARTHealthLink:accountManager:error:
-+ _objc_msgSend$updateGatewaysOperationsForAccounts:manager:profile:
-+ _objc_msgSend$wait
 + _swift_allocError
 + _swift_deallocPartialClassInstance
 + _swift_dynamicCast
@@ -418,25 +301,6 @@ Symbols:
 - ___block_descriptor_104_e8_32s40s48s56s64s72s_e35_B24?0"HDDatabaseTransaction"8^16ls32l8s40l8s48l8s56l8s64l8s72l8
 - ___block_descriptor_40_e8_32bs_e58_v24?0"HKSignedClinicalDataParsingResultMux"8"NSError"16ls32l8
 - ___block_descriptor_48_e8_32s40bs_e20_v20?0B8"NSError"12ls40l8s32l8
-- _objc_msgSend$_observedDataTypes
-- _objc_msgSend$_registerDataObservation
-- _objc_msgSend$_unregisterDataObservation
-- _objc_msgSend$addObserver:forDataType:
-- _objc_msgSend$addOperationUnlessAlreadyEnqueued:
-- _objc_msgSend$categoryTypeForIdentifier:
-- _objc_msgSend$clinicalSharingManager
-- _objc_msgSend$createClinicalSharingClient
-- _objc_msgSend$createClinicalSharingManager
-- _objc_msgSend$createUpdateGatewaysOperationsForAccounts:
-- _objc_msgSend$electrocardiogramType
-- _objc_msgSend$operationQueue
-- _objc_msgSend$operations
-- _objc_msgSend$quantityTypeForIdentifier:
-- _objc_msgSend$readDataToEndOfFile
-- _objc_msgSend$removeObserver:forDataType:
-- _objc_msgSend$scheduleSharing
-- _objc_msgSend$scheduleSharingHealthDataWithReason:completion:
-- _objc_msgSend$submitDailyAnalyticsWithCompletion:
 CStrings:
 + "$."
 + "%s %@ generated %ld sync objects"

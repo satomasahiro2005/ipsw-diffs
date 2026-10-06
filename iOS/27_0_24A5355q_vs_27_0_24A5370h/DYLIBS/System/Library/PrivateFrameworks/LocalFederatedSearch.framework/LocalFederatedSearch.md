@@ -2,124 +2,71 @@
 
 > `/System/Library/PrivateFrameworks/LocalFederatedSearch.framework/LocalFederatedSearch`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4f7c0` | `0xb1348` | **`+0x61b88`** |
+| `__DATA.__bss` | `0x988` | `0x4e00` | **`+0x4478`** |
+| `__TEXT.__eh_frame` | `0x1f50` | `0x6188` | **`+0x4238`** |
+| `__TEXT.__const` | `0x1a28` | `0x55b8` | **`+0x3b90`** |
+| `__TEXT.__unwind_info` | `0x1050` | `0x3150` | **`+0x2100`** |
+| `__AUTH.__data` | `0x2f0` | `0x1838` | **`+0x1548`** |
+| `__AUTH_CONST.__const` | `0x49c0` | `0x5e90` | **`+0x14d0`** |
+| `__TEXT.__cstring` | `0x1c71` | `0x2ad8` | **`+0xe67`** |
+| `__TEXT.__swift5_fieldmd` | `0xd48` | `0x1a04` | **`+0xcbc`** |
+| `__DATA.__data` | `0x600` | `0x12a8` | **`+0xca8`** |
+| `__TEXT.__constg_swiftt` | `0x5fc` | `0x11f0` | **`+0xbf4`** |
+| `__TEXT.__swift5_reflstr` | `0xe5a` | `0x1a33` | **`+0xbd9`** |
+| `__TEXT.__swift5_typeref` | `0xb78` | `0x1676` | **`+0xafe`** |
+| `__AUTH_CONST.__objc_const` | `0x290` | `0xaf0` | **`+0x860`** |
+| `__DATA_CONST.__const` | `0x220` | `0x8c8` | **`+0x6a8`** |
+| `__TEXT.__oslogstring` | `0xfe5` | `0x15f9` | **`+0x614`** |
+| `__AUTH_CONST.__auth_got` | `0x8d0` | `0xdb0` | **`+0x4e0`** |
+| `__TEXT.__swift5_capture` | `0xcfc` | `0x110c` | **`+0x410`** |
+| `__TEXT.__swift5_proto` | `0x90` | `0x2bc` | **`+0x22c`** |
+| `__TEXT.__swift_as_cont` | `0x11c` | `0x2f4` | **`+0x1d8`** |
+| `__TEXT.__swift_as_entry` | `0xa0` | `0x1dc` | **`+0x13c`** |
+| `__TEXT.__swift_as_ret` | `0xa8` | `0x1bc` | **`+0x114`** |
+| `__TEXT.__swift5_assocty` | `0x78` | `0x150` | **`+0xd8`** |
+| `__TEXT.__swift5_types` | `0xa4` | `0x178` | **`+0xd4`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1a0` | `0x250` | **`+0xb0`** |
+| `__AUTH.__objc_data` | `—` | `0xa0` | **`+0xa0`** |
+| `__TEXT.__objc_methlist` | `—` | `0x2c` | **`+0x2c`** |
+| `__DATA_CONST.__objc_classlist` | `0x18` | `0x40` | **`+0x28`** |
+| `__TEXT.__swift5_builtin` | `0x14` | `—` | **`-0x14`** |
+| `__DATA_CONST.__objc_protolist` | `—` | `0x10` | **`+0x10`** |
+| `__DATA.__common` | `0xc0` | `0xc8` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `—` | `0x8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.54.16.1.5
--  __TEXT.__text: 0x4f7c0 sha256:50117bcaa18a75fd82ea1ccffd1536b95d3d8e7539cc9af47f4cec880db1c6a7
--  __TEXT.__const: 0x1a28 sha256:4f07ff34441854b257108a082137624f68020d9e762cf54f1d99b755550605fc
--  __TEXT.__swift5_typeref: 0xb78 sha256:89f036caf92b952a2d4b9eb4a21a3f4b06a6c86f2059452e6bf64997cd246b4a
--  __TEXT.__constg_swiftt: 0x5fc sha256:9777f49ebf8713568614ddaf874786c21ebb1bfd51d970253d0ad1bfae53521d
--  __TEXT.__swift5_builtin: 0x14 sha256:41ce94a038ddfd4220c4d3549db31530df835cdfdca961ccf49ee531c4ac3871
--  __TEXT.__swift5_reflstr: 0xe5a sha256:7da8de07044b4e7edc473ec486cb81f585db5aa48111357764ebe7da60dc50a6
--  __TEXT.__swift5_fieldmd: 0xd48 sha256:63711db1fb70c1ba9c0b3f58364e6bd6c7894cad63226119d130ef79a339ae50
--  __TEXT.__swift5_types: 0xa4 sha256:abe9529bac5aa2264409951d583a173b866cc0b13071c413d1a93da065e8849d
--  __TEXT.__cstring: 0x1c71 sha256:d5f1a8f06fab108e2c13fcc7b85e6fef1b1c69fe503bef129a8ec9b46a9d2765
--  __TEXT.__swift5_capture: 0xcfc sha256:9add2ed5158a4c2a068643fc16a4d0f2979a163d9d5f447fbc5581f2d98a191e
--  __TEXT.__swift5_proto: 0x90 sha256:2a66d33e03b46f6716008bfcacc68092b6f2648f8e22344a4d9bc54008b9f94f
--  __TEXT.__swift_as_entry: 0xa0 sha256:a099f5d9926c3eef28bf91a3542f9ededda4e5347ea49bfc7bc45bdf5c51f339
--  __TEXT.__swift_as_ret: 0xa8 sha256:f008a38b3aa51838ce716409368db41812620c6ebadc1d4dcb5f988f508de000
--  __TEXT.__swift_as_cont: 0x11c sha256:0131c9975715978ef968778eea0abe49372646cfa2eded2119b0c829d8578e08
--  __TEXT.__oslogstring: 0xfe5 sha256:329df1dd4bb86297f7e768211f13a8ecb42fe15a0d93d69a75343a9ee87a659f
--  __TEXT.__swift5_assocty: 0x78 sha256:fb972091fa199b5748c73c379d16e5427d3386a4ad7d5d72b1bcb07a9529c2ad
--  __TEXT.__swift5_protos: 0x8 sha256:7386cfe9718f3ad202fa7087a724161ee9704dee41d58efaca0da4ca50edf826
--  __TEXT.__unwind_info: 0x1050 sha256:55f1ccd9cbfb7054d5d0f21102af6e43c37c89d242bac3d1d70831ad9ae79248
--  __TEXT.__eh_frame: 0x1f50 sha256:98014f0a823b9335d27684f025cb55093f7c9dbdfd403763f2bd34aaf9a34638
 +3600.56.11.0.0
-+  __TEXT.__text: 0xb1348 sha256:07036806e3d2aa0cad973bca12191e2e8ed4a8dcfbad86655866e20438ea01bc
-+  __TEXT.__objc_methlist: 0x2c sha256:99d1e7dbbd192a377c40f749512edd911fc76374c58eed9878389d43dc18212d
-+  __TEXT.__const: 0x55b8 sha256:a5dfbbed91cfe9f362576392ef79ec25e25663e40fdb640cc1a24a1225169f32
-+  __TEXT.__swift5_typeref: 0x1676 sha256:562139b8011b2a7aca8b2fde1a347eee22bb609bd56e0e1015503032f41a1ca9
-+  __TEXT.__cstring: 0x2ad8 sha256:05c6b3b35b905921eced72d7d43d01dd2cb5b46f5442de31170996267d1e8c0a
-+  __TEXT.__constg_swiftt: 0x11f0 sha256:ad4ce45d3972c934fa41183b82195a48151d884e12f55295aa9671c6575fe58e
-+  __TEXT.__swift5_reflstr: 0x1a33 sha256:2183c861e79544d54107ea991faae86f83a3b0b7d4a12edccd7f0fc6c0f7ef85
-+  __TEXT.__swift5_fieldmd: 0x1a04 sha256:78f40020e6c36b99f853efda30672f6aad9cf181e96845376c3e12721aef56e7
-+  __TEXT.__swift5_capture: 0x110c sha256:2eccc91b6a27f4ba7b40f5c6792be386fdc91b56f32c86cc7e1d3b945a94d37d
-+  __TEXT.__swift5_proto: 0x2bc sha256:4920cecc305907d670991053c21ad43129636a07dd9a852b2a249773bdf28cd0
-+  __TEXT.__swift5_types: 0x178 sha256:29d7f1c31b1984b4b9079599fc3e6f922a862bae0344c39b8e16fc2fa7e98119
-+  __TEXT.__swift_as_entry: 0x1dc sha256:0bfffc6515b4cf791a1425e6e29094b14c07faa2a5b5d4cd73c6b3c64a9f7060
-+  __TEXT.__swift_as_ret: 0x1bc sha256:367e60b47fa0ae04881d433580b6f57193eb5a9d14f5595aed68092e7164d795
-+  __TEXT.__swift_as_cont: 0x2f4 sha256:9811e835f137c188fd6b6c1e83a781252d315835177e20970bfaf7344e439a00
-+  __TEXT.__oslogstring: 0x15f9 sha256:9c073d9e087551ace6a6dd0176b22de5caca177569b5f650472d9e19bf411a1b
-+  __TEXT.__swift5_assocty: 0x150 sha256:cfaff3140f5d32de34ce1c5bd6aeb2b2121cdffae7162293c8e23ac7f7580dbb
-+  __TEXT.__swift5_protos: 0x8 sha256:4f6adc7d1181e91c4d75234e965684045cad1325f59aca18a579f49272cebb16
-+  __TEXT.__unwind_info: 0x3150 sha256:de4c449fefbd4b488caed73c2c89911bc0bdadc782001db6abd6d7cf613e9740
-+  __TEXT.__eh_frame: 0x6188 sha256:05f4c01b5e706019d318099cb34bf779f6c2329de1b05b9db6256929cb08d9fd
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x220 sha256:e9d9107a7d25e50c18f0a3e74778149237ff843e17a8f9fa65b17b2ca989071d
--  __DATA_CONST.__objc_classlist: 0x18 sha256:42b9c7d61d41d4c9ddd6d917458153ddba9dea9b09c54eeeefbf5c448ebce77b
-+  __DATA_CONST.__const: 0x8c8 sha256:070c1b8448fa24a0537b19016b2498c5d510d43cffd801a9f3d6d5c64e9c66db
-+  __DATA_CONST.__objc_classlist: 0x40 sha256:764260b8d8879a59d458cb293870752ea45fa63786c97eea03bbb55d4bdc396e
-+  __DATA_CONST.__objc_protolist: 0x10 sha256:110b99c0b6f5408664f4298e83413867c6219d67a3d0223cc331270062d0869d
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0x1a0 sha256:4f64fbe7d5d7452ec90af0c9bb37d73f9a11f9d2b941af8cfb7311f711d95351
-+  __DATA_CONST.__objc_selrefs: 0x250 sha256:69fe7340352832e14ffd2f680cf3efc29e91d2af321df9c6ef18017ec1771b53
-+  __DATA_CONST.__objc_protorefs: 0x8 sha256:0191f6835de07610200b889edcad1070d3245394f9462f9976f28535ebf04c86
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x49c0 sha256:681744b8659c3b832adaee0848c56a7257bf4c6879ab0778c8f277524203400f
--  __AUTH_CONST.__objc_const: 0x290 sha256:041edc7c42676695ec7ab704d91f2f79c7c0929b948c81165e5ff5eeca70d385
--  __AUTH_CONST.__auth_got: 0x8d0 sha256:641088987f5f2c244a4a925160ff63e443cd935518f89d1526949d9d65cd953a
--  __AUTH.__data: 0x2f0 sha256:608ec41be62ab66cea082f234336fbd911bd7d56bb0fba2eaa59a1b60b8c2496
--  __DATA.__data: 0x600 sha256:80422bc3d307b4a25bdafcc84ac7fb01cb55a09810e8b0f37bb12e0edb5c48ca
--  __DATA.__bss: 0x988 sha256:e3341c3186e13ce5b81511d3aa442c73c704a38f108b73cb41e1ae3490ceb346
--  __DATA.__common: 0xc0 sha256:5d89f056865052bcb89c910d2d62872e029fb273c3db03f8968a52a41593c1b5
-+  __AUTH_CONST.__const: 0x5e90 sha256:5e413e3bee5f9eb930bca08d805e934e27244224051c4f5fe8fb6db4122e9c61
-+  __AUTH_CONST.__objc_const: 0xaf0 sha256:1fb6d6bf0149962143ed1233f8407ffb059845c4afc3d051cdf544e5f55426e6
-+  __AUTH_CONST.__auth_got: 0xdb0 sha256:e10c8cb376b41e426480944fa8de7a0e6796b32fbfb77e6c016529cb3a20e1f6
-+  __AUTH.__objc_data: 0xa0 sha256:c27eefdbacf45b7cccfcfb1adcfb90ecbd2206e05b683b51e2a7f41164557d9e
-+  __AUTH.__data: 0x1838 sha256:13272e60eb46612bbe0e4d5355096f02b0a1b261b57f9659e261650e116a1150
-+  __DATA.__data: 0x12a8 sha256:cde95291b88b1455b663a9e790d8295fb8e07eda1d60950591ef895c3386d2b6
-+  __DATA.__bss: 0x4e00 sha256:3c7182533c6c380fb6c7cd19ec3d024deccbd91945ee879a30216fd3c326c6b2
-+  __DATA.__common: 0xc8 sha256:6d9c54dee5660c46886f32d80e57e9dd0ffa57ee0cd2a762b036d9c8e0c3a33a
 +  - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication
-   - /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
+
 +  - /System/Library/PrivateFrameworks/CollectionsInternal.framework/CollectionsInternal
 +  - /System/Library/PrivateFrameworks/FeatureStore.framework/FeatureStore
 +  - /System/Library/PrivateFrameworks/GenerativeSearch.framework/GenerativeSearch
 +  - /System/Library/PrivateFrameworks/GenerativeSearchAdapter.framework/GenerativeSearchAdapter
 +  - /System/Library/PrivateFrameworks/IntelligencePlatform.framework/IntelligencePlatform
 +  - /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf
-   - /System/Library/PrivateFrameworks/MediaAnalysisServices.framework/MediaAnalysisServices
-   - /System/Library/PrivateFrameworks/OmniSearchTypes.framework/OmniSearchTypes
-   - /System/Library/PrivateFrameworks/ProactiveSupport.framework/ProactiveSupport
-   - /System/Library/PrivateFrameworks/SiriUtilities.framework/SiriUtilities
+
 +  - /System/Library/PrivateFrameworks/Spotlight.framework/Spotlight
 +  - /System/Library/PrivateFrameworks/SpotlightServices.framework/SpotlightServices
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
+
 +  - /usr/lib/swift/libswiftAppleArchive.dylib
-   - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
 
-   - /usr/lib/swift/libswiftIntents.dylib
-   - /usr/lib/swift/libswiftMLCompute.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
 +  - /usr/lib/swift/libswiftNaturalLanguage.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: 0B3414E2-AE02-3167-B34C-E758E82A222F
 -  Functions: 2092
--  Symbols:   6444
+-  Symbols:   3157
 -  CStrings:  299
-+  UUID: CC655405-9D19-3DBA-A532-235A1562A7E4
 +  Functions: 5528
-+  Symbols:   14837
++  Symbols:   7992
 +  CStrings:  414
- 
 Symbols:
 + _$s10Foundation12CharacterSetV21punctuationCharactersACvgZ
 + _$s10Foundation14DateComponentsV3daySiSgvs
@@ -308,14 +255,14 @@ Symbols:
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_C13MetadataEventV03hasC6MethodSbvpMV
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_C13MetadataEventV05clearC6MethodyyF
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_C13MetadataEventV12searchMethodSSvM
-+ _$s20LocalFederatedSearch025SpotlightInstrumentation_C13MetadataEventV12searchMethodSSvM.resume.0
++ _$s20LocalFederatedSearch025SpotlightInstrumentation_C13MetadataEventV12searchMethodSSvM.resume
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_C13MetadataEventV12searchMethodSSvg
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_C13MetadataEventV12searchMethodSSvpACTk
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_C13MetadataEventV12searchMethodSSvpMV
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_C13MetadataEventV12searchMethodSSvs
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_C13MetadataEventV13decodeMessage7decoderyxz_tK21InternalSwiftProtobuf7DecoderRzlF
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_C13MetadataEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM
-+ _$s20LocalFederatedSearch025SpotlightInstrumentation_C13MetadataEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume.0
++ _$s20LocalFederatedSearch025SpotlightInstrumentation_C13MetadataEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_C13MetadataEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvg
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_C13MetadataEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvpMV
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_C13MetadataEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvs
@@ -339,7 +286,7 @@ Symbols:
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_C13MetadataEventV21InternalSwiftProtobuf7MessageAadEP06decodeK07decoderyqd__z_tKAD7DecoderRd__lFTW
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_C13MetadataEventV21InternalSwiftProtobuf7MessageAadEP13isInitializedSbvgTW
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_C13MetadataEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW
-+ _$s20LocalFederatedSearch025SpotlightInstrumentation_C13MetadataEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume.0
++ _$s20LocalFederatedSearch025SpotlightInstrumentation_C13MetadataEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_C13MetadataEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvgTW
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_C13MetadataEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvsTW
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_C13MetadataEventV21InternalSwiftProtobuf7MessageAadEP4hash4intoys6HasherVz_tFTW
@@ -388,7 +335,7 @@ Symbols:
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV12hasSessionIDSbvpMV
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV13decodeMessage7decoderyxz_tK21InternalSwiftProtobuf7DecoderRzlF
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM
-+ _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume.0
++ _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvg
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvpMV
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvs
@@ -413,7 +360,7 @@ Symbols:
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV21InternalSwiftProtobuf7MessageAadEP06decodeK07decoderyqd__z_tKAD7DecoderRd__lFTW
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV21InternalSwiftProtobuf7MessageAadEP13isInitializedSbvgTW
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW
-+ _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume.0
++ _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvgTW
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvsTW
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV21InternalSwiftProtobuf7MessageAadEP4hash4intoys6HasherVz_tFTW
@@ -422,7 +369,7 @@ Symbols:
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV21InternalSwiftProtobuf7MessageAadEPxycfCTW
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV2eeoiySbAC_ACtFZ
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV5eventAA0de1_dfG6_OneOfVvM
-+ _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV5eventAA0de1_dfG6_OneOfVvM.resume.0
++ _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV5eventAA0de1_dfG6_OneOfVvM.resume
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV5eventAA0de1_dfG6_OneOfVvg
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV5eventAA0de1_dfG6_OneOfVvpMV
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV5eventAA0de1_dfG6_OneOfVvs
@@ -431,7 +378,7 @@ Symbols:
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV9hashValueSivg
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV9hashValueSivpMV
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV9sessionIDSSvM
-+ _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV9sessionIDSSvM.resume.0
++ _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV9sessionIDSSvM.resume
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV9sessionIDSSvg
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV9sessionIDSSvgTm
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventV9sessionIDSSvpACTk
@@ -471,24 +418,24 @@ Symbols:
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventVwet
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D19InstrumentableEventVwst
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV014retrievedItemsG0AA0de10_RetrievedkG0VvM
-+ _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV014retrievedItemsG0AA0de10_RetrievedkG0VvM.resume.0
++ _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV014retrievedItemsG0AA0de10_RetrievedkG0VvM.resume
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV014retrievedItemsG0AA0de10_RetrievedkG0VvM.resume.0Tm
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV014retrievedItemsG0AA0de10_RetrievedkG0Vvg
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV014retrievedItemsG0AA0de10_RetrievedkG0VvpMV
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV014retrievedItemsG0AA0de10_RetrievedkG0Vvs
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV014rrfRankedItemsG0AA0de10_RRFScoredlG0VvM
-+ _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV014rrfRankedItemsG0AA0de10_RRFScoredlG0VvM.resume.0
++ _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV014rrfRankedItemsG0AA0de10_RRFScoredlG0VvM.resume
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV014rrfRankedItemsG0AA0de10_RRFScoredlG0Vvg
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV014rrfRankedItemsG0AA0de10_RRFScoredlG0VvpMV
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV014rrfRankedItemsG0AA0de10_RRFScoredlG0Vvs
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV014searchMetadataG0AA0de1_ckG0VvM
-+ _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV014searchMetadataG0AA0de1_ckG0VvM.resume.0
++ _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV014searchMetadataG0AA0de1_ckG0VvM.resume
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV014searchMetadataG0AA0de1_ckG0Vvg
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV014searchMetadataG0AA0de1_ckG0VvpMV
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV014searchMetadataG0AA0de1_ckG0Vvs
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV014searchMetadataG0AA0de1_ckG0VvsTm
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV017cerberusQuSignalsG0AA0de18_CerberusQUSignalsG0VvM
-+ _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV017cerberusQuSignalsG0AA0de18_CerberusQUSignalsG0VvM.resume.0
++ _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV017cerberusQuSignalsG0AA0de18_CerberusQUSignalsG0VvM.resume
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV017cerberusQuSignalsG0AA0de18_CerberusQUSignalsG0Vvg
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV017cerberusQuSignalsG0AA0de18_CerberusQUSignalsG0VvpMV
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV017cerberusQuSignalsG0AA0de18_CerberusQUSignalsG0Vvs
@@ -525,7 +472,7 @@ Symbols:
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV13decodeMessage7decoderyxz_tK21InternalSwiftProtobuf7DecoderRzlFyyKXEfU2_
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV13decodeMessage7decoderyxz_tK21InternalSwiftProtobuf7DecoderRzlFyyKXEfU_
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM
-+ _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume.0
++ _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvg
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvpMV
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvs
@@ -549,7 +496,7 @@ Symbols:
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV21InternalSwiftProtobuf7MessageAadEP06decodeM07decoderyqd__z_tKAD7DecoderRd__lFTW
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV21InternalSwiftProtobuf7MessageAadEP13isInitializedSbvgTW
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW
-+ _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume.0
++ _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvgTW
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvsTW
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV21InternalSwiftProtobuf7MessageAadEP4hash4intoys6HasherVz_tFTW
@@ -558,7 +505,7 @@ Symbols:
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV21InternalSwiftProtobuf7MessageAadEPxycfCTW
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV2eeoiySbAC_ACtFZ
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV5eventAC0hi1_G0OSgvM
-+ _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV5eventAC0hi1_G0OSgvM.resume.0
++ _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV5eventAC0hi1_G0OSgvM.resume
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV5eventAC0hi1_G0OSgvg
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV5eventAC0hi1_G0OSgvpMV
 + _$s20LocalFederatedSearch025SpotlightInstrumentation_D25InstrumentableEvent_OneOfV5eventAC0hi1_G0OSgvs
@@ -1031,17 +978,17 @@ Symbols:
 + _$s20LocalFederatedSearch13LFSResultItemV11daysFromNow9queryTimeSd10Foundation4DateV_tF
 + _$s20LocalFederatedSearch13LFSScoredItemV11daysFromNow9queryTimeSd10Foundation4DateV_tF
 + _$s20LocalFederatedSearch13LFSScoredItemV11fetchSourceAC12FetchSourcesVvM
-+ _$s20LocalFederatedSearch13LFSScoredItemV11fetchSourceAC12FetchSourcesVvM.resume.0
++ _$s20LocalFederatedSearch13LFSScoredItemV11fetchSourceAC12FetchSourcesVvM.resume
 + _$s20LocalFederatedSearch13LFSScoredItemV11fetchSourceAC12FetchSourcesVvg
 + _$s20LocalFederatedSearch13LFSScoredItemV11fetchSourceAC12FetchSourcesVvpMV
 + _$s20LocalFederatedSearch13LFSScoredItemV11fetchSourceAC12FetchSourcesVvs
 + _$s20LocalFederatedSearch13LFSScoredItemV11hybridScoreAA09LFSHybridG0VSgvM
-+ _$s20LocalFederatedSearch13LFSScoredItemV11hybridScoreAA09LFSHybridG0VSgvM.resume.0
++ _$s20LocalFederatedSearch13LFSScoredItemV11hybridScoreAA09LFSHybridG0VSgvM.resume
 + _$s20LocalFederatedSearch13LFSScoredItemV11hybridScoreAA09LFSHybridG0VSgvg
 + _$s20LocalFederatedSearch13LFSScoredItemV11hybridScoreAA09LFSHybridG0VSgvpMV
 + _$s20LocalFederatedSearch13LFSScoredItemV11hybridScoreAA09LFSHybridG0VSgvs
 + _$s20LocalFederatedSearch13LFSScoredItemV11searchTermsSaySSGvM
-+ _$s20LocalFederatedSearch13LFSScoredItemV11searchTermsSaySSGvM.resume.0
++ _$s20LocalFederatedSearch13LFSScoredItemV11searchTermsSaySSGvM.resume
 + _$s20LocalFederatedSearch13LFSScoredItemV11searchTermsSaySSGvg
 + _$s20LocalFederatedSearch13LFSScoredItemV11searchTermsSaySSGvpMV
 + _$s20LocalFederatedSearch13LFSScoredItemV11searchTermsSaySSGvs
@@ -1115,13 +1062,13 @@ Symbols:
 + _$s20LocalFederatedSearch13LFSScoredItemV12FetchSourcesVs9OptionSetAAs0I7AlgebraPWb
 + _$s20LocalFederatedSearch13LFSScoredItemV12FetchSourcesVs9OptionSetAAsAFP8rawValuex03RawK0Qz_tcfCTW
 + _$s20LocalFederatedSearch13LFSScoredItemV13hasExactMatchSbvM
-+ _$s20LocalFederatedSearch13LFSScoredItemV13hasExactMatchSbvM.resume.0
++ _$s20LocalFederatedSearch13LFSScoredItemV13hasExactMatchSbvM.resume
 + _$s20LocalFederatedSearch13LFSScoredItemV13hasExactMatchSbvg
 + _$s20LocalFederatedSearch13LFSScoredItemV13hasExactMatchSbvpMV
 + _$s20LocalFederatedSearch13LFSScoredItemV13hasExactMatchSbvs
 + _$s20LocalFederatedSearch13LFSScoredItemV14exactnessScoreSdyF
 + _$s20LocalFederatedSearch13LFSScoredItemV15rawKeywordScoreSdvM
-+ _$s20LocalFederatedSearch13LFSScoredItemV15rawKeywordScoreSdvM.resume.0
++ _$s20LocalFederatedSearch13LFSScoredItemV15rawKeywordScoreSdvM.resume
 + _$s20LocalFederatedSearch13LFSScoredItemV15rawKeywordScoreSdvs
 + _$s20LocalFederatedSearch13LFSScoredItemV16DebugInformationV10kwPositionSdvg
 + _$s20LocalFederatedSearch13LFSScoredItemV16DebugInformationV10kwPositionSdvpMV
@@ -1146,27 +1093,27 @@ Symbols:
 + _$s20LocalFederatedSearch13LFSScoredItemV16DebugInformationVwst
 + _$s20LocalFederatedSearch13LFSScoredItemV16contentRelevanceSdyF
 + _$s20LocalFederatedSearch13LFSScoredItemV16keywordPhaseRankSivM
-+ _$s20LocalFederatedSearch13LFSScoredItemV16keywordPhaseRankSivM.resume.0
++ _$s20LocalFederatedSearch13LFSScoredItemV16keywordPhaseRankSivM.resume
 + _$s20LocalFederatedSearch13LFSScoredItemV16keywordPhaseRankSivg
 + _$s20LocalFederatedSearch13LFSScoredItemV16keywordPhaseRankSivpMV
 + _$s20LocalFederatedSearch13LFSScoredItemV16keywordPhaseRankSivs
 + _$s20LocalFederatedSearch13LFSScoredItemV16rankBeforeRerankSivM
-+ _$s20LocalFederatedSearch13LFSScoredItemV16rankBeforeRerankSivM.resume.0
++ _$s20LocalFederatedSearch13LFSScoredItemV16rankBeforeRerankSivM.resume
 + _$s20LocalFederatedSearch13LFSScoredItemV16rankBeforeRerankSivg
 + _$s20LocalFederatedSearch13LFSScoredItemV16rankBeforeRerankSivpMV
 + _$s20LocalFederatedSearch13LFSScoredItemV16rankBeforeRerankSivs
 + _$s20LocalFederatedSearch13LFSScoredItemV16rawSemanticScoreSdvM
-+ _$s20LocalFederatedSearch13LFSScoredItemV16rawSemanticScoreSdvM.resume.0
++ _$s20LocalFederatedSearch13LFSScoredItemV16rawSemanticScoreSdvM.resume
 + _$s20LocalFederatedSearch13LFSScoredItemV16rawSemanticScoreSdvg
 + _$s20LocalFederatedSearch13LFSScoredItemV16rawSemanticScoreSdvpMV
 + _$s20LocalFederatedSearch13LFSScoredItemV16rawSemanticScoreSdvs
 + _$s20LocalFederatedSearch13LFSScoredItemV16semanticHitBonusSdvM
-+ _$s20LocalFederatedSearch13LFSScoredItemV16semanticHitBonusSdvM.resume.0
++ _$s20LocalFederatedSearch13LFSScoredItemV16semanticHitBonusSdvM.resume
 + _$s20LocalFederatedSearch13LFSScoredItemV16semanticHitBonusSdvg
 + _$s20LocalFederatedSearch13LFSScoredItemV16semanticHitBonusSdvpMV
 + _$s20LocalFederatedSearch13LFSScoredItemV16semanticHitBonusSdvs
 + _$s20LocalFederatedSearch13LFSScoredItemV17semanticPhaseRankSivM
-+ _$s20LocalFederatedSearch13LFSScoredItemV17semanticPhaseRankSivM.resume.0
++ _$s20LocalFederatedSearch13LFSScoredItemV17semanticPhaseRankSivM.resume
 + _$s20LocalFederatedSearch13LFSScoredItemV17semanticPhaseRankSivg
 + _$s20LocalFederatedSearch13LFSScoredItemV17semanticPhaseRankSivpMV
 + _$s20LocalFederatedSearch13LFSScoredItemV17semanticPhaseRankSivs
@@ -1177,7 +1124,7 @@ Symbols:
 + _$s20LocalFederatedSearch13LFSScoredItemV23buildKeywordHybridScore9queryTime10sortValuesAA09LFSHybridI0V10Foundation4DateV_SayAA12LFSSortValueVGtF
 + _$s20LocalFederatedSearch13LFSScoredItemV23buildKeywordHybridScore9queryTime10sortValuesAA09LFSHybridI0V10Foundation4DateV_SayAA12LFSSortValueVGtFfA0_
 + _$s20LocalFederatedSearch13LFSScoredItemV24borrowedCosineSimilaritySdSgvM
-+ _$s20LocalFederatedSearch13LFSScoredItemV24borrowedCosineSimilaritySdSgvM.resume.0
++ _$s20LocalFederatedSearch13LFSScoredItemV24borrowedCosineSimilaritySdSgvM.resume
 + _$s20LocalFederatedSearch13LFSScoredItemV24borrowedCosineSimilaritySdSgvs
 + _$s20LocalFederatedSearch13LFSScoredItemV24buildSemanticHybridScore10normalizer10sortValuesAA09LFSHybridI0VAA21LFSSemanticNormalizerV_SayAA12LFSSortValueVGtF
 + _$s20LocalFederatedSearch13LFSScoredItemV24buildSemanticHybridScore10normalizer10sortValuesAA09LFSHybridI0VAA21LFSSemanticNormalizerV_SayAA12LFSSortValueVGtFfA0_
@@ -1187,15 +1134,15 @@ Symbols:
 + _$s20LocalFederatedSearch13LFSScoredItemV4item_Sd11daysFromNowtMd
 + _$s20LocalFederatedSearch13LFSScoredItemV4item_Sd5scoreSd4daystWOcTm
 + _$s20LocalFederatedSearch13LFSScoredItemV4rankSivM
-+ _$s20LocalFederatedSearch13LFSScoredItemV4rankSivM.resume.0
++ _$s20LocalFederatedSearch13LFSScoredItemV4rankSivM.resume
 + _$s20LocalFederatedSearch13LFSScoredItemV4rankSivg
 + _$s20LocalFederatedSearch13LFSScoredItemV4rankSivpMV
 + _$s20LocalFederatedSearch13LFSScoredItemV4rankSivs
 + _$s20LocalFederatedSearch13LFSScoredItemV5scoreSdvM
-+ _$s20LocalFederatedSearch13LFSScoredItemV5scoreSdvM.resume.0
++ _$s20LocalFederatedSearch13LFSScoredItemV5scoreSdvM.resume
 + _$s20LocalFederatedSearch13LFSScoredItemV5scoreSdvs
 + _$s20LocalFederatedSearch13LFSScoredItemV9debugInfoAC16DebugInformationVSgvM
-+ _$s20LocalFederatedSearch13LFSScoredItemV9debugInfoAC16DebugInformationVSgvM.resume.0
++ _$s20LocalFederatedSearch13LFSScoredItemV9debugInfoAC16DebugInformationVSgvM.resume
 + _$s20LocalFederatedSearch13LFSScoredItemV9debugInfoAC16DebugInformationVSgvg
 + _$s20LocalFederatedSearch13LFSScoredItemV9debugInfoAC16DebugInformationVSgvpMV
 + _$s20LocalFederatedSearch13LFSScoredItemV9debugInfoAC16DebugInformationVSgvs
@@ -1324,7 +1271,6 @@ Symbols:
 + _$s20LocalFederatedSearch14LFSEvalLoggingO11droppedTags6before5afterSSSayAA13LFSScoredItemVG_AItFZ
 + _$s20LocalFederatedSearch14LFSEvalLoggingO11droppedTags6before5afterSSSaySo16CSSearchableItemCG_AItFZ
 + _$s20LocalFederatedSearch14LFSEvalLoggingO15itemIdentifiers33_6528DCB115AEB30ED565333CA472CC13LL4fromAA029SpotlightInstrumentation_ItemG0VAC0P5AttrsV_tFZyAHzXEfU_TA
-+ _$s20LocalFederatedSearch14LFSEvalLoggingO15itemIdentifiers33_6528DCB115AEB30ED565333CA472CC13LL4fromAA029SpotlightInstrumentation_ItemG0VAC0P5AttrsV_tFZyAHzXEfU_TA.61
 + _$s20LocalFederatedSearch14LFSEvalLoggingO15logFinalResults5items9userQuery9queryTime6config9sessionIdySayAA13LFSScoredItemVG_SSSg10Foundation4DateVAA9LFSConfigVSStFZ
 + _$s20LocalFederatedSearch14LFSEvalLoggingO15logFinalResults5items9userQuery9queryTime6config9sessionIdySayAA13LFSScoredItemVG_SSSg10Foundation4DateVAA9LFSConfigVSStFZyAA025SpotlightInstrumentation_V19InstrumentableEventVzXEfU_
 + _$s20LocalFederatedSearch14LFSEvalLoggingO15logFinalResults5items9userQuery9queryTime6config9sessionIdySayAA13LFSScoredItemVG_SSSg10Foundation4DateVAA9LFSConfigVSStFZyAA025SpotlightInstrumentation_V19InstrumentableEventVzXEfU_TA
@@ -1494,7 +1440,7 @@ Symbols:
 + _$s20LocalFederatedSearch14LFSUserDefaultV12defaultValuexvpMV
 + _$s20LocalFederatedSearch14LFSUserDefaultV12removeObjectyyF
 + _$s20LocalFederatedSearch14LFSUserDefaultV12wrappedValuexvM
-+ _$s20LocalFederatedSearch14LFSUserDefaultV12wrappedValuexvM.resume.0
++ _$s20LocalFederatedSearch14LFSUserDefaultV12wrappedValuexvM.resume
 + _$s20LocalFederatedSearch14LFSUserDefaultV12wrappedValuexvg
 + _$s20LocalFederatedSearch14LFSUserDefaultV12wrappedValuexvpMV
 + _$s20LocalFederatedSearch14LFSUserDefaultV12wrappedValuexvplACyxGTK
@@ -1559,7 +1505,7 @@ Symbols:
 + _$s20LocalFederatedSearch15LFSSearchMethodOs12CaseIterableAAMcMK
 + _$s20LocalFederatedSearch15LFSSearchMethodOs12CaseIterableAAsADP8allCases03AllI0QzvgZTW
 + _$s20LocalFederatedSearch15LFSUserDefaultsO20searchTimeoutSecondsSdvMZ
-+ _$s20LocalFederatedSearch15LFSUserDefaultsO20searchTimeoutSecondsSdvMZ.resume.0
++ _$s20LocalFederatedSearch15LFSUserDefaultsO20searchTimeoutSecondsSdvMZ.resume
 + _$s20LocalFederatedSearch15LFSUserDefaultsO20searchTimeoutSecondsSdvgZ
 + _$s20LocalFederatedSearch15LFSUserDefaultsO20searchTimeoutSecondsSdvpZMV
 + _$s20LocalFederatedSearch15LFSUserDefaultsO20searchTimeoutSecondsSdvsZ
@@ -2075,12 +2021,12 @@ Symbols:
 + _$s20LocalFederatedSearch28LFSSemanticFreshnessStrategyVAA09LFSSearchF0A2aDP7execute11searchTerms13filterQueries14glpRequestInfo7profile6config5query5cacheAA12LFSResultSetVSaySSG_ApA010GLPRequestO0OAA10LFSProfile_pAA9LFSConfigVAA8LFSQueryVAA19LFSEmbeddingServiceC0Z5CacheCtYaFTWTQ0_
 + _$s20LocalFederatedSearch28LFSSemanticFreshnessStrategyVAA09LFSSearchF0A2aDP7execute11searchTerms13filterQueries14glpRequestInfo7profile6config5query5cacheAA12LFSResultSetVSaySSG_ApA010GLPRequestO0OAA10LFSProfile_pAA9LFSConfigVAA8LFSQueryVAA19LFSEmbeddingServiceC0Z5CacheCtYaFTWTu
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV10isInferredSbvM
-+ _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV10isInferredSbvM.resume.0
++ _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV10isInferredSbvM.resume
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV10isInferredSbvg
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV10isInferredSbvpMV
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV10isInferredSbvs
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV10isPromotedSbvM
-+ _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV10isPromotedSbvM.resume.0
++ _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV10isPromotedSbvM.resume
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV10isPromotedSbvg
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV10isPromotedSbvpMV
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV10isPromotedSbvs
@@ -2090,7 +2036,7 @@ Symbols:
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV13hasIsPromotedSbvg
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV13hasIsPromotedSbvpMV
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM
-+ _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume.0
++ _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvg
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvgTm
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvpMV
@@ -2118,7 +2064,7 @@ Symbols:
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV21InternalSwiftProtobuf7MessageAadEP06decodeJ07decoderyqd__z_tKAD7DecoderRd__lFTW
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV21InternalSwiftProtobuf7MessageAadEP13isInitializedSbvgTW
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW
-+ _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume.0
++ _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvgTW
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvsTW
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV21InternalSwiftProtobuf7MessageAadEP4hash4intoys6HasherVz_tFTW
@@ -2127,21 +2073,21 @@ Symbols:
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV21InternalSwiftProtobuf7MessageAadEPxycfCTW
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV2eeoiySbAC_ACtFZ
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV3urlSSvM
-+ _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV3urlSSvM.resume.0
++ _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV3urlSSvM.resume
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV3urlSSvg
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV3urlSSvgTm
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV3urlSSvpACTk
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV3urlSSvpMV
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV3urlSSvs
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV4nameSSvM
-+ _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV4nameSSvM.resume.0
++ _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV4nameSSvM.resume
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV4nameSSvg
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV4nameSSvgTm
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV4nameSSvpACTk
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV4nameSSvpMV
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV4nameSSvs
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV4typeSSvM
-+ _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV4typeSSvM.resume.0
++ _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV4typeSSvM.resume
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV4typeSSvM.resume.0Tm
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV4typeSSvg
 + _$s20LocalFederatedSearch29SpotlightInstrumentation_LinkV4typeSSvpACTk
@@ -2213,13 +2159,13 @@ Symbols:
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV12hasStartDateSbvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV12hasStartDateSbvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV12lastUsedDateSSvM
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV12lastUsedDateSSvM.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV12lastUsedDateSSvM.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV12lastUsedDateSSvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV12lastUsedDateSSvpACTk
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV12lastUsedDateSSvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV12lastUsedDateSSvs
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV12receivedDateSSvM
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV12receivedDateSSvM.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV12receivedDateSSvM.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV12receivedDateSSvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV12receivedDateSSvgTm
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV12receivedDateSSvpACTk
@@ -2229,7 +2175,7 @@ Symbols:
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV13clearSentDateyyFTm
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV13decodeMessage7decoderyxz_tK21InternalSwiftProtobuf7DecoderRzlF
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvs
@@ -2248,7 +2194,7 @@ Symbols:
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV17clearReceivedDateyyF
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV17clearReceivedDateyyFTm
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV19contentCreationDateSSvM
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV19contentCreationDateSSvM.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV19contentCreationDateSSvM.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV19contentCreationDateSSvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV19contentCreationDateSSvpACTk
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV19contentCreationDateSSvpMV
@@ -2268,7 +2214,7 @@ Symbols:
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV21InternalSwiftProtobuf7MessageAadEP06decodeJ07decoderyqd__z_tKAD7DecoderRd__lFTW
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV21InternalSwiftProtobuf7MessageAadEP13isInitializedSbvgTW
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvgTW
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvsTW
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV21InternalSwiftProtobuf7MessageAadEP4hash4intoys6HasherVz_tFTW
@@ -2278,7 +2224,7 @@ Symbols:
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV22hasContentCreationDateSbvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV22hasContentCreationDateSbvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV23contentModificationDateSSvM
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV23contentModificationDateSSvM.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV23contentModificationDateSSvM.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV23contentModificationDateSSvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV23contentModificationDateSSvpACTk
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV23contentModificationDateSSvpMV
@@ -2289,14 +2235,14 @@ Symbols:
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV28clearContentModificationDateyyF
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV2eeoiySbAC_ACtFZ
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV7endDateSSvM
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV7endDateSSvM.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV7endDateSSvM.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV7endDateSSvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV7endDateSSvgTm
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV7endDateSSvpACTk
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV7endDateSSvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV7endDateSSvs
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV8sentDateSSvM
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV8sentDateSSvM.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV8sentDateSSvM.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV8sentDateSSvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV8sentDateSSvgTm
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV8sentDateSSvpACTk
@@ -2310,7 +2256,7 @@ Symbols:
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV9hashValueSivg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV9hashValueSivpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV9startDateSSvM
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV9startDateSSvM.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV9startDateSSvM.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV9startDateSSvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV9startDateSSvgTm
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_DatesV9startDateSSvpACTk
@@ -2358,19 +2304,19 @@ Symbols:
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV011hasPommesL2F0SbvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV012clearRawGsL2F0yyF
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV012keywordMatchF0SdvM
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV012keywordMatchF0SdvM.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV012keywordMatchF0SdvM.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV012keywordMatchF0Sdvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV012keywordMatchF0SdvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV012keywordMatchF0Sdvs
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV012searchtoolL2F0SdvM
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV012searchtoolL2F0SdvM.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV012searchtoolL2F0SdvM.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV012searchtoolL2F0Sdvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV012searchtoolL2F0SdvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV012searchtoolL2F0Sdvs
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV013clearPommesL1F0yyF
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV013clearPommesL2F0yyF
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV014adjustedSparseF0SdvM
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV014adjustedSparseF0SdvM.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV014adjustedSparseF0SdvM.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV014adjustedSparseF0Sdvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV014adjustedSparseF0SdvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV014adjustedSparseF0Sdvs
@@ -2383,12 +2329,12 @@ Symbols:
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV017hasAdjustedSparseF0Sbvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV017hasAdjustedSparseF0SbvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV018originalTopicalityF0SdvM
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV018originalTopicalityF0SdvM.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV018originalTopicalityF0SdvM.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV018originalTopicalityF0Sdvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV018originalTopicalityF0SdvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV018originalTopicalityF0Sdvs
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV018pommesCalibratedL1F0SdvM
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV018pommesCalibratedL1F0SdvM.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV018pommesCalibratedL1F0SdvM.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV018pommesCalibratedL1F0Sdvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV018pommesCalibratedL1F0SdvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV018pommesCalibratedL1F0Sdvs
@@ -2398,14 +2344,14 @@ Symbols:
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV021hasPommesCalibratedL1F0Sbvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV021hasPommesCalibratedL1F0SbvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV021normalizedGsL1LexicalF0SdvM
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV021normalizedGsL1LexicalF0SdvM.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV021normalizedGsL1LexicalF0SdvM.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV021normalizedGsL1LexicalF0Sdvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV021normalizedGsL1LexicalF0SdvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV021normalizedGsL1LexicalF0Sdvs
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV023clearOriginalTopicalityF0yyF
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV023clearPommesCalibratedL1F0yyF
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV023normalizedGsL2RelevanceF0SdvM
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV023normalizedGsL2RelevanceF0SdvM.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV023normalizedGsL2RelevanceF0SdvM.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV023normalizedGsL2RelevanceF0Sdvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV023normalizedGsL2RelevanceF0SdvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV023normalizedGsL2RelevanceF0Sdvs
@@ -2416,19 +2362,19 @@ Symbols:
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV026hasNormalizedGsL2RelevanceF0SbvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV028clearNormalizedGsL2RelevanceF0yyF
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV03rawF0SdvM
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV03rawF0SdvM.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV03rawF0SdvM.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV03rawF0Sdvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV03rawF0SdvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV03rawF0Sdvs
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV05finalF0SdvM
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV05finalF0SdvM.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV05finalF0SdvM.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV05finalF0Sdvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV05finalF0SdvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV05finalF0Sdvs
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV06hasRawF0Sbvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV06hasRawF0SbvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV07rawGsL2F0SdvM
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV07rawGsL2F0SdvM.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV07rawGsL2F0SdvM.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV07rawGsL2F0Sdvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV07rawGsL2F0SdvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV07rawGsL2F0Sdvs
@@ -2436,27 +2382,27 @@ Symbols:
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV08hasFinalF0Sbvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV08hasFinalF0SbvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV08pommesL1F0SdvM
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV08pommesL1F0SdvM.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV08pommesL1F0SdvM.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV08pommesL1F0Sdvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV08pommesL1F0SdvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV08pommesL1F0Sdvs
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV08pommesL2F0SdvM
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV08pommesL2F0SdvM.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV08pommesL2F0SdvM.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV08pommesL2F0Sdvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV08pommesL2F0SdvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV08pommesL2F0Sdvs
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV10engagementSdvM
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV10engagementSdvM.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV10engagementSdvM.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV10engagementSdvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV10engagementSdvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV10engagementSdvs
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV10likelihoodSdvM
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV10likelihoodSdvM.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV10likelihoodSdvM.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV10likelihoodSdvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV10likelihoodSdvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV10likelihoodSdvs
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV10topicalitySdvM
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV10topicalitySdvM.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV10topicalitySdvM.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV10topicalitySdvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV10topicalitySdvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV10topicalitySdvs
@@ -2502,7 +2448,7 @@ Symbols:
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV13hasTopicalitySbvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV13hasTopicalitySbvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvs
@@ -2516,7 +2462,7 @@ Symbols:
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV17_protobuf_nameMap_WZ
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV17_protobuf_nameMap_Wz
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV19embeddingSimilaritySdvM
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV19embeddingSimilaritySdvM.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV19embeddingSimilaritySdvM.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV19embeddingSimilaritySdvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV19embeddingSimilaritySdvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV19embeddingSimilaritySdvs
@@ -2535,7 +2481,7 @@ Symbols:
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV21InternalSwiftProtobuf7MessageAadEP06decodeJ07decoderyqd__z_tKAD7DecoderRd__lFTW
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV21InternalSwiftProtobuf7MessageAadEP13isInitializedSbvgTW
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvgTW
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvsTW
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV21InternalSwiftProtobuf7MessageAadEP4hash4intoys6HasherVz_tFTW
@@ -2546,7 +2492,7 @@ Symbols:
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV22hasEmbeddingSimilaritySbvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV24clearEmbeddingSimilarityyyF
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV28projectedEmbeddingSimilaritySdvM
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV28projectedEmbeddingSimilaritySdvM.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV28projectedEmbeddingSimilaritySdvM.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV28projectedEmbeddingSimilaritySdvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV28projectedEmbeddingSimilaritySdvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV28projectedEmbeddingSimilaritySdvs
@@ -2577,7 +2523,7 @@ Symbols:
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV8traverse7visitoryxz_tK21InternalSwiftProtobuf7VisitorRzlFyAC13_StorageClass33_30AB23F3579355B24C4EE2341F9495F2LLCKXEfU_yyKXEfU9_
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV8traverse7visitoryxz_tK21InternalSwiftProtobuf7VisitorRzlFyAC13_StorageClass33_30AB23F3579355B24C4EE2341F9495F2LLCKXEfU_yyKXEfU_
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV9freshnessSdvM
-+ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV9freshnessSdvM.resume.0
++ _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV9freshnessSdvM.resume
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV9freshnessSdvg
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV9freshnessSdvpMV
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreV9freshnessSdvs
@@ -2619,19 +2565,19 @@ Symbols:
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreVwet
 + _$s20LocalFederatedSearch30SpotlightInstrumentation_ScoreVwst
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV10valueArraySaySSGvM
-+ _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV10valueArraySaySSGvM.resume.0
++ _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV10valueArraySaySSGvM.resume
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV10valueArraySaySSGvg
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV10valueArraySaySSGvpMV
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV10valueArraySaySSGvs
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV12attributeKeySSvM
-+ _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV12attributeKeySSvM.resume.0
++ _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV12attributeKeySSvM.resume
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV12attributeKeySSvg
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV12attributeKeySSvpACTk
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV12attributeKeySSvpMV
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV12attributeKeySSvs
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV13decodeMessage7decoderyxz_tK21InternalSwiftProtobuf7DecoderRzlF
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM
-+ _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume.0
++ _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvg
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvgTm
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvpMV
@@ -2660,7 +2606,7 @@ Symbols:
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV21InternalSwiftProtobuf7MessageAadEP06decodeK07decoderyqd__z_tKAD7DecoderRd__lFTW
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV21InternalSwiftProtobuf7MessageAadEP13isInitializedSbvgTW
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW
-+ _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume.0
++ _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvgTW
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvsTW
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoV21InternalSwiftProtobuf7MessageAadEP4hash4intoys6HasherVz_tFTW
@@ -2700,19 +2646,19 @@ Symbols:
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoVwet
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_MatchInfoVwst
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV10denseScoreSdvM
-+ _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV10denseScoreSdvM.resume.0
++ _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV10denseScoreSdvM.resume
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV10denseScoreSdvg
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV10denseScoreSdvpMV
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV10denseScoreSdvs
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV10finalScoreSdvM
-+ _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV10finalScoreSdvM.resume.0
++ _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV10finalScoreSdvM.resume
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV10finalScoreSdvg
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV10finalScoreSdvpMV
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV10finalScoreSdvs
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV10hasWSparseSbvg
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV10hasWSparseSbvpMV
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV10rankSparses5Int64VvM
-+ _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV10rankSparses5Int64VvM.resume.0
++ _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV10rankSparses5Int64VvM.resume
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV10rankSparses5Int64Vvg
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV10rankSparses5Int64VvgTm
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV10rankSparses5Int64VvpMV
@@ -2721,7 +2667,7 @@ Symbols:
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV11hasRawScoreSbvg
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV11hasRawScoreSbvpMV
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV11sparseScoreSdvM
-+ _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV11sparseScoreSdvM.resume.0
++ _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV11sparseScoreSdvM.resume
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV11sparseScoreSdvg
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV11sparseScoreSdvpMV
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV11sparseScoreSdvs
@@ -2737,7 +2683,7 @@ Symbols:
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV13hasRankSparseSbvg
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV13hasRankSparseSbvpMV
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM
-+ _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume.0
++ _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvg
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvpMV
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvs
@@ -2768,7 +2714,7 @@ Symbols:
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV21InternalSwiftProtobuf7MessageAadEP06decodeJ07decoderyqd__z_tKAD7DecoderRd__lFTW
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV21InternalSwiftProtobuf7MessageAadEP13isInitializedSbvgTW
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW
-+ _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume.0
++ _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvgTW
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvsTW
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV21InternalSwiftProtobuf7MessageAadEP4hash4intoys6HasherVz_tFTW
@@ -2777,17 +2723,17 @@ Symbols:
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV21InternalSwiftProtobuf7MessageAadEPxycfCTW
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV2eeoiySbAC_ACtFZ
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV6wDenseSdvM
-+ _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV6wDenseSdvM.resume.0
++ _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV6wDenseSdvM.resume
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV6wDenseSdvg
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV6wDenseSdvpMV
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV6wDenseSdvs
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV7wSparseSdvM
-+ _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV7wSparseSdvM.resume.0
++ _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV7wSparseSdvM.resume
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV7wSparseSdvg
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV7wSparseSdvpMV
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV7wSparseSdvs
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV8rawScoreSdvM
-+ _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV8rawScoreSdvM.resume.0
++ _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV8rawScoreSdvM.resume
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV8rawScoreSdvg
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV8rawScoreSdvpMV
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV8rawScoreSdvs
@@ -2802,7 +2748,7 @@ Symbols:
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV9hashValueSivg
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV9hashValueSivpMV
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV9rankDenses5Int64VvM
-+ _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV9rankDenses5Int64VvM.resume.0
++ _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV9rankDenses5Int64VvM.resume
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV9rankDenses5Int64Vvg
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV9rankDenses5Int64VvpMV
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresV9rankDenses5Int64Vvs
@@ -2840,20 +2786,20 @@ Symbols:
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresVwet
 + _$s20LocalFederatedSearch34SpotlightInstrumentation_RRFScoresVwst
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV010parsecEnumH0SdvM
-+ _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV010parsecEnumH0SdvM.resume.0
++ _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV010parsecEnumH0SdvM.resume
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV010parsecEnumH0Sdvg
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV010parsecEnumH0SdvpMV
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV010parsecEnumH0Sdvs
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV011hasOriginalfH0Sbvg
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV011hasOriginalfH0SbvpMV
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV012experimentalH0SdvM
-+ _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV012experimentalH0SdvM.resume.0
++ _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV012experimentalH0SdvM.resume
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV012experimentalH0Sdvg
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV012experimentalH0SdvgTm
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV012experimentalH0SdvpMV
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV012experimentalH0Sdvs
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV012withinBundleH0SdvM
-+ _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV012withinBundleH0SdvM.resume.0
++ _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV012withinBundleH0SdvM.resume
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV012withinBundleH0Sdvg
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV012withinBundleH0SdvpMV
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV012withinBundleH0Sdvs
@@ -2868,14 +2814,14 @@ Symbols:
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV017clearExperimentalH0yyF
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV017clearWithinBundleH0yyF
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV08originalfH0SdvM
-+ _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV08originalfH0SdvM.resume.0
++ _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV08originalfH0SdvM.resume
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV08originalfH0Sdvg
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV08originalfH0SdvgTm
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV08originalfH0SdvpMV
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV08originalfH0Sdvs
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV13decodeMessage7decoderyxz_tK21InternalSwiftProtobuf7DecoderRzlF
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM
-+ _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume.0
++ _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvg
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvpMV
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvs
@@ -2899,7 +2845,7 @@ Symbols:
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV21InternalSwiftProtobuf7MessageAadEP06decodeL07decoderyqd__z_tKAD7DecoderRd__lFTW
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV21InternalSwiftProtobuf7MessageAadEP13isInitializedSbvgTW
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW
-+ _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume.0
++ _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvgTW
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvsTW
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV21InternalSwiftProtobuf7MessageAadEP4hash4intoys6HasherVz_tFTW
@@ -2907,7 +2853,7 @@ Symbols:
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV21InternalSwiftProtobuf7MessageAadEP9isEqualTo7messageSbAdE_p_tFTW
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV21InternalSwiftProtobuf7MessageAadEPxycfCTW
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV29categoryEngagementProbabilitySdvM
-+ _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV29categoryEngagementProbabilitySdvM.resume.0
++ _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV29categoryEngagementProbabilitySdvM.resume
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV29categoryEngagementProbabilitySdvg
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV29categoryEngagementProbabilitySdvgTm
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_L2VectorScoreV29categoryEngagementProbabilitySdvpMV
@@ -2963,14 +2909,14 @@ Symbols:
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV12hasRrfScoresSbvpMV
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV13decodeMessage7decoderyxz_tK21InternalSwiftProtobuf7DecoderRzlF
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM
-+ _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume.0
++ _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvg
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvpMV
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvs
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV14clearRrfScoresyyF
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV14clearRrfScoresyyFTm
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV15itemIdentifiersAA0de1_gI0VvM
-+ _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV15itemIdentifiersAA0de1_gI0VvM.resume.0
++ _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV15itemIdentifiersAA0de1_gI0VvM.resume
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV15itemIdentifiersAA0de1_gI0VvM.resume.0Tm
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV15itemIdentifiersAA0de1_gI0Vvg
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV15itemIdentifiersAA0de1_gI0VvpMV
@@ -2995,7 +2941,7 @@ Symbols:
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV21InternalSwiftProtobuf7MessageAadEP06decodeK07decoderyqd__z_tKAD7DecoderRd__lFTW
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV21InternalSwiftProtobuf7MessageAadEP13isInitializedSbvgTW
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW
-+ _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume.0
++ _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvgTW
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvsTW
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV21InternalSwiftProtobuf7MessageAadEP4hash4intoys6HasherVz_tFTW
@@ -3008,7 +2954,7 @@ Symbols:
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV9hashValueSivg
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV9hashValueSivpMV
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV9rrfScoresAA0dE10_RRFScoresVvM
-+ _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV9rrfScoresAA0dE10_RRFScoresVvM.resume.0
++ _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV9rrfScoresAA0dE10_RRFScoresVvM.resume
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV9rrfScoresAA0dE10_RRFScoresVvg
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV9rrfScoresAA0dE10_RRFScoresVvpMV
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RRFScoredItemV9rrfScoresAA0dE10_RRFScoresVvs
@@ -3081,28 +3027,28 @@ Symbols:
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV13decodeMessage7decoderyxz_tK21InternalSwiftProtobuf7DecoderRzlF
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV13decodeMessage7decoderyxz_tK21InternalSwiftProtobuf7DecoderRzlFyAC13_StorageClass33_30AB23F3579355B24C4EE2341F9495F2LLCKXEfU_
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV13l2VectorScoreAA0de3_L2iJ0VvM
-+ _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV13l2VectorScoreAA0de3_L2iJ0VvM.resume.0
++ _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV13l2VectorScoreAA0de3_L2iJ0VvM.resume
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV13l2VectorScoreAA0de3_L2iJ0Vvg
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV13l2VectorScoreAA0de3_L2iJ0VvpMV
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV13l2VectorScoreAA0de3_L2iJ0Vvs
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV13retrievalTypeSSvM
-+ _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV13retrievalTypeSSvM.resume.0
++ _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV13retrievalTypeSSvM.resume
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV13retrievalTypeSSvg
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV13retrievalTypeSSvpACTk
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV13retrievalTypeSSvpMV
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV13retrievalTypeSSvs
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM
-+ _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume.0
++ _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvg
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvpMV
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvs
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV15documentSignalsAA0de9_DocumentI0VvM
-+ _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV15documentSignalsAA0de9_DocumentI0VvM.resume.0
++ _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV15documentSignalsAA0de9_DocumentI0VvM.resume
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV15documentSignalsAA0de9_DocumentI0Vvg
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV15documentSignalsAA0de9_DocumentI0VvpMV
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV15documentSignalsAA0de9_DocumentI0Vvs
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV15itemIdentifiersAA0de1_gI0VvM
-+ _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV15itemIdentifiersAA0de1_gI0VvM.resume.0
++ _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV15itemIdentifiersAA0de1_gI0VvM.resume
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV15itemIdentifiersAA0de1_gI0Vvg
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV15itemIdentifiersAA0de1_gI0VvpMV
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV15itemIdentifiersAA0de1_gI0Vvs
@@ -3116,7 +3062,7 @@ Symbols:
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV17_protobuf_nameMap_WZ
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV17_protobuf_nameMap_Wz
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV18additionalMetadataSayAA0de11_AdditionalI0VGvM
-+ _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV18additionalMetadataSayAA0de11_AdditionalI0VGvM.resume.0
++ _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV18additionalMetadataSayAA0de11_AdditionalI0VGvM.resume
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV18additionalMetadataSayAA0de11_AdditionalI0VGvg
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV18additionalMetadataSayAA0de11_AdditionalI0VGvpACTk
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV18additionalMetadataSayAA0de11_AdditionalI0VGvpMV
@@ -3141,7 +3087,7 @@ Symbols:
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV21InternalSwiftProtobuf7MessageAadEP06decodeK07decoderyqd__z_tKAD7DecoderRd__lFTW
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV21InternalSwiftProtobuf7MessageAadEP13isInitializedSbvgTW
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW
-+ _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume.0
++ _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvgTW
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvsTW
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV21InternalSwiftProtobuf7MessageAadEP4hash4intoys6HasherVz_tFTW
@@ -3149,19 +3095,19 @@ Symbols:
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV21InternalSwiftProtobuf7MessageAadEP9isEqualTo7messageSbAdE_p_tFTW
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV21InternalSwiftProtobuf7MessageAadEPxycfCTW
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV21searchTermsMatchTitleSbvM
-+ _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV21searchTermsMatchTitleSbvM.resume.0
++ _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV21searchTermsMatchTitleSbvM.resume
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV21searchTermsMatchTitleSbvg
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV21searchTermsMatchTitleSbvpMV
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV21searchTermsMatchTitleSbvs
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV2eeoiySbAC_ACtFZ
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV2eeoiySbAC_ACtFZSbAC13_StorageClass33_30AB23F3579355B24C4EE2341F9495F2LLC_AGt_tXEfU_
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV5datesAA0dE6_DatesVvM
-+ _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV5datesAA0dE6_DatesVvM.resume.0
++ _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV5datesAA0dE6_DatesVvM.resume
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV5datesAA0dE6_DatesVvg
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV5datesAA0dE6_DatesVvpMV
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV5datesAA0dE6_DatesVvs
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV5scoreAA0dE6_ScoreVvM
-+ _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV5scoreAA0dE6_ScoreVvM.resume.0
++ _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV5scoreAA0dE6_ScoreVvM.resume
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV5scoreAA0dE6_ScoreVvg
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV5scoreAA0dE6_ScoreVvpMV
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV5scoreAA0dE6_ScoreVvs
@@ -3180,12 +3126,12 @@ Symbols:
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV9hashValueSivg
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV9hashValueSivpMV
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV9itemIndexs6UInt32VvM
-+ _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV9itemIndexs6UInt32VvM.resume.0
++ _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV9itemIndexs6UInt32VvM.resume
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV9itemIndexs6UInt32Vvg
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV9itemIndexs6UInt32VvpMV
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV9itemIndexs6UInt32Vvs
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV9matchInfoSayAA0de6_MatchI0VGvM
-+ _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV9matchInfoSayAA0de6_MatchI0VGvM.resume.0
++ _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV9matchInfoSayAA0de6_MatchI0VGvM.resume
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV9matchInfoSayAA0de6_MatchI0VGvM.resume.0Tm
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV9matchInfoSayAA0de6_MatchI0VGvg
 + _$s20LocalFederatedSearch38SpotlightInstrumentation_RetrievedItemV9matchInfoSayAA0de6_MatchI0VGvgTm
@@ -3292,7 +3238,7 @@ Symbols:
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV03hasF18EmbeddingAvailableSbvpMV
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV05clearF18EmbeddingAvailableyyF
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV10isFileTypeSbvM
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV10isFileTypeSbvM.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV10isFileTypeSbvM.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV10isFileTypeSbvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV10isFileTypeSbvpMV
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV10isFileTypeSbvs
@@ -3344,7 +3290,7 @@ Symbols:
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV13hasIsFileTypeSbvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV13hasIsFileTypeSbvpMV
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvpMV
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvs
@@ -3355,14 +3301,14 @@ Symbols:
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV17_protobuf_nameMap_WZ
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV17_protobuf_nameMap_Wz
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV17detectedEventTypeSSvM
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV17detectedEventTypeSSvM.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV17detectedEventTypeSSvM.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV17detectedEventTypeSSvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV17detectedEventTypeSSvpACTk
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV17detectedEventTypeSSvpMV
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV17detectedEventTypeSSvs
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV17detectedEventTypeSSvsTm
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV18detectedEventTypesSSvM
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV18detectedEventTypesSSvM.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV18detectedEventTypesSSvM.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV18detectedEventTypesSSvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV18detectedEventTypesSSvpACTk
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV18detectedEventTypesSSvpMV
@@ -3384,7 +3330,7 @@ Symbols:
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV21InternalSwiftProtobuf7MessageAadEP06decodeK07decoderyqd__z_tKAD7DecoderRd__lFTW
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV21InternalSwiftProtobuf7MessageAadEP13isInitializedSbvgTW
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvgTW
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvsTW
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV21InternalSwiftProtobuf7MessageAadEP4hash4intoys6HasherVz_tFTW
@@ -3395,7 +3341,7 @@ Symbols:
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV21hasDetectedEventTypesSbvpMV
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV22clearDetectedEventTypeyyF
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV22topicalityAnonFeatDictSSvM
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV22topicalityAnonFeatDictSSvM.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV22topicalityAnonFeatDictSSvM.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV22topicalityAnonFeatDictSSvM.resume.0Tm
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV22topicalityAnonFeatDictSSvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV22topicalityAnonFeatDictSSvgTm
@@ -3404,19 +3350,19 @@ Symbols:
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV22topicalityAnonFeatDictSSvs
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV23clearDetectedEventTypesyyF
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV24isCalendarHotelEventTypeSbvM
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV24isCalendarHotelEventTypeSbvM.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV24isCalendarHotelEventTypeSbvM.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV24isCalendarHotelEventTypeSbvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV24isCalendarHotelEventTypeSbvpMV
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV24isCalendarHotelEventTypeSbvs
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV24isMailCategoryHighImpactSbvM
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV24isMailCategoryHighImpactSbvM.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV24isMailCategoryHighImpactSbvM.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV24isMailCategoryHighImpactSbvM.resume.0Tm
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV24isMailCategoryHighImpactSbvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV24isMailCategoryHighImpactSbvgTm
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV24isMailCategoryHighImpactSbvpMV
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV24isMailCategoryHighImpactSbvs
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV24isMailCategoryPromotionsSbvM
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV24isMailCategoryPromotionsSbvM.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV24isMailCategoryPromotionsSbvM.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV24isMailCategoryPromotionsSbvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV24isMailCategoryPromotionsSbvpMV
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV24isMailCategoryPromotionsSbvs
@@ -3424,17 +3370,17 @@ Symbols:
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV25hasTopicalityAnonFeatDictSbvgTm
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV25hasTopicalityAnonFeatDictSbvpMV
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV25isCalendarFlightEventTypeSbvM
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV25isCalendarFlightEventTypeSbvM.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV25isCalendarFlightEventTypeSbvM.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV25isCalendarFlightEventTypeSbvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV25isCalendarFlightEventTypeSbvpMV
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV25isCalendarFlightEventTypeSbvs
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV26documentEmbeddingAvailableSbvM
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV26documentEmbeddingAvailableSbvM.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV26documentEmbeddingAvailableSbvM.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV26documentEmbeddingAvailableSbvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV26documentEmbeddingAvailableSbvpMV
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV26documentEmbeddingAvailableSbvs
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV26startDueDateToNowInSecondss5Int64VvM
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV26startDueDateToNowInSecondss5Int64VvM.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV26startDueDateToNowInSecondss5Int64VvM.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV26startDueDateToNowInSecondss5Int64VvM.resume.0Tm
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV26startDueDateToNowInSecondss5Int64Vvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV26startDueDateToNowInSecondss5Int64VvgTm
@@ -3460,7 +3406,7 @@ Symbols:
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV29hasStartDueDateToNowInSecondsSbvgTm
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV29hasStartDueDateToNowInSecondsSbvpMV
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV29isCalendarRestaurantEventTypeSbvM
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV29isCalendarRestaurantEventTypeSbvM.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV29isCalendarRestaurantEventTypeSbvM.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV29isCalendarRestaurantEventTypeSbvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV29isCalendarRestaurantEventTypeSbvpMV
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV29isCalendarRestaurantEventTypeSbvs
@@ -3469,7 +3415,7 @@ Symbols:
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV2eeoiySbAC_ACtFZTm
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV30clearIsCalendarFlightEventTypeyyF
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV30mostRecentTimeToQueryInMinutess5Int64VvM
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV30mostRecentTimeToQueryInMinutess5Int64VvM.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV30mostRecentTimeToQueryInMinutess5Int64VvM.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV30mostRecentTimeToQueryInMinutess5Int64Vvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV30mostRecentTimeToQueryInMinutess5Int64VvpMV
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV30mostRecentTimeToQueryInMinutess5Int64Vvs
@@ -3482,7 +3428,7 @@ Symbols:
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV34clearIsCalendarRestaurantEventTypeyyF
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV35clearMostRecentTimeToQueryInMinutesyyF
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV35isCalendarOtherReservationEventTypeSbvM
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV35isCalendarOtherReservationEventTypeSbvM.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV35isCalendarOtherReservationEventTypeSbvM.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV35isCalendarOtherReservationEventTypeSbvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV35isCalendarOtherReservationEventTypeSbvpMV
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV35isCalendarOtherReservationEventTypeSbvs
@@ -3490,7 +3436,7 @@ Symbols:
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV38hasIsCalendarOtherReservationEventTypeSbvpMV
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV40clearIsCalendarOtherReservationEventTypeyyF
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV4linkAA0dE5_LinkVvM
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV4linkAA0dE5_LinkVvM.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV4linkAA0dE5_LinkVvM.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV4linkAA0dE5_LinkVvM.resume.0Tm
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV4linkAA0dE5_LinkVvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV4linkAA0dE5_LinkVvpACTkTm
@@ -3499,13 +3445,13 @@ Symbols:
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV7hasLinkSbvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV7hasLinkSbvpMV
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV8cardTypeSSvM
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV8cardTypeSSvM.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV8cardTypeSSvM.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV8cardTypeSSvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV8cardTypeSSvpACTk
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV8cardTypeSSvpMV
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV8cardTypeSSvs
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV8linkTypeSSvM
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV8linkTypeSSvM.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV8linkTypeSSvM.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV8linkTypeSSvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV8linkTypeSSvpACTk
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsV8linkTypeSSvpMV
@@ -3555,7 +3501,7 @@ Symbols:
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsVwet
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_DocumentSignalsVwst
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV02mdF10IdentifierSSvM
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV02mdF10IdentifierSSvM.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV02mdF10IdentifierSSvM.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV02mdF10IdentifierSSvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV02mdF10IdentifierSSvpACTk
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV02mdF10IdentifierSSvpMV
@@ -3565,14 +3511,14 @@ Symbols:
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV05hasMdF10IdentifierSbvpMV
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV07clearMdF10IdentifieryyF
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV10contentURLSSvM
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV10contentURLSSvM.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV10contentURLSSvM.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV10contentURLSSvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV10contentURLSSvpACTk
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV10contentURLSSvpMV
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV10contentURLSSvs
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV10contentURLSSvsTm
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV10identifierSSvM
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV10identifierSSvM.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV10identifierSSvM.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV10identifierSSvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV10identifierSSvpACTk
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV10identifierSSvpMV
@@ -3589,14 +3535,14 @@ Symbols:
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV13hasIdentifierSbvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV13hasIdentifierSbvpMV
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV13messageHeaderSSvM
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV13messageHeaderSSvM.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV13messageHeaderSSvM.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV13messageHeaderSSvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV13messageHeaderSSvpACTk
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV13messageHeaderSSvpMV
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV13messageHeaderSSvs
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV13messageHeaderSSvsTm
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvpMV
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvs
@@ -3612,7 +3558,7 @@ Symbols:
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV17_protobuf_nameMap_Wz
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV18clearMessageHeaderyyF
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV19appEntityInstanceIDSSvM
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV19appEntityInstanceIDSSvM.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV19appEntityInstanceIDSSvM.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV19appEntityInstanceIDSSvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV19appEntityInstanceIDSSvpACTk
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV19appEntityInstanceIDSSvpMV
@@ -3633,7 +3579,7 @@ Symbols:
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV21InternalSwiftProtobuf7MessageAadEP06decodeK07decoderyqd__z_tKAD7DecoderRd__lFTW
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV21InternalSwiftProtobuf7MessageAadEP13isInitializedSbvgTW
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvgTW
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvsTW
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV21InternalSwiftProtobuf7MessageAadEP4hash4intoys6HasherVz_tFTW
@@ -3645,7 +3591,7 @@ Symbols:
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV24clearAppEntityInstanceIDyyF
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV2eeoiySbAC_ACtFZ
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV4nameSSvM
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV4nameSSvM.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV4nameSSvM.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV4nameSSvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV4nameSSvgTm
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV4nameSSvpACTk
@@ -3655,7 +3601,7 @@ Symbols:
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV7hasNameSbvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV7hasNameSbvpMV
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV8bundleIDSSvM
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV8bundleIDSSvM.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV8bundleIDSSvM.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV8bundleIDSSvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV8bundleIDSSvpACTk
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV8bundleIDSSvpMV
@@ -3667,7 +3613,7 @@ Symbols:
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV9hashValueSivg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV9hashValueSivpMV
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV9messageIDSSvM
-+ _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV9messageIDSSvM.resume.0
++ _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV9messageIDSSvM.resume
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV9messageIDSSvg
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV9messageIDSSvpACTk
 + _$s20LocalFederatedSearch40SpotlightInstrumentation_ItemIdentifiersV9messageIDSSvpMV
@@ -3710,7 +3656,7 @@ Symbols:
 + _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV10clearValueyyF
 + _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV13decodeMessage7decoderyxz_tK21InternalSwiftProtobuf7DecoderRzlF
 + _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM
-+ _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume.0
++ _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume
 + _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvg
 + _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvpMV
 + _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvs
@@ -3734,7 +3680,7 @@ Symbols:
 + _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV21InternalSwiftProtobuf7MessageAadEP06decodeK07decoderyqd__z_tKAD7DecoderRd__lFTW
 + _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV21InternalSwiftProtobuf7MessageAadEP13isInitializedSbvgTW
 + _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW
-+ _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume.0
++ _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume
 + _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvgTW
 + _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvsTW
 + _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV21InternalSwiftProtobuf7MessageAadEP4hash4intoys6HasherVz_tFTW
@@ -3743,13 +3689,13 @@ Symbols:
 + _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV21InternalSwiftProtobuf7MessageAadEPxycfCTW
 + _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV2eeoiySbAC_ACtFZ
 + _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV3keySSvM
-+ _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV3keySSvM.resume.0
++ _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV3keySSvM.resume
 + _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV3keySSvg
 + _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV3keySSvpACTk
 + _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV3keySSvpMV
 + _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV3keySSvs
 + _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV5valueSSvM
-+ _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV5valueSSvM.resume.0
++ _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV5valueSSvM.resume
 + _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV5valueSSvg
 + _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV5valueSSvpACTk
 + _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataV5valueSSvpMV
@@ -3791,13 +3737,13 @@ Symbols:
 + _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataVwet
 + _$s20LocalFederatedSearch43SpotlightInstrumentation_AdditionalMetadataVwst
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RRFScoredItemsEventV09rrfScoredG0SayAA0de1_F4ItemVGvM
-+ _$s20LocalFederatedSearch44SpotlightInstrumentation_RRFScoredItemsEventV09rrfScoredG0SayAA0de1_F4ItemVGvM.resume.0
++ _$s20LocalFederatedSearch44SpotlightInstrumentation_RRFScoredItemsEventV09rrfScoredG0SayAA0de1_F4ItemVGvM.resume
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RRFScoredItemsEventV09rrfScoredG0SayAA0de1_F4ItemVGvg
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RRFScoredItemsEventV09rrfScoredG0SayAA0de1_F4ItemVGvpMV
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RRFScoredItemsEventV09rrfScoredG0SayAA0de1_F4ItemVGvs
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RRFScoredItemsEventV13decodeMessage7decoderyxz_tK21InternalSwiftProtobuf7DecoderRzlF
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RRFScoredItemsEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM
-+ _$s20LocalFederatedSearch44SpotlightInstrumentation_RRFScoredItemsEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume.0
++ _$s20LocalFederatedSearch44SpotlightInstrumentation_RRFScoredItemsEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RRFScoredItemsEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvg
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RRFScoredItemsEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvpMV
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RRFScoredItemsEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvs
@@ -3821,7 +3767,7 @@ Symbols:
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RRFScoredItemsEventV21InternalSwiftProtobuf7MessageAadEP06decodeL07decoderyqd__z_tKAD7DecoderRd__lFTW
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RRFScoredItemsEventV21InternalSwiftProtobuf7MessageAadEP13isInitializedSbvgTW
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RRFScoredItemsEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW
-+ _$s20LocalFederatedSearch44SpotlightInstrumentation_RRFScoredItemsEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume.0
++ _$s20LocalFederatedSearch44SpotlightInstrumentation_RRFScoredItemsEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RRFScoredItemsEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvgTW
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RRFScoredItemsEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvsTW
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RRFScoredItemsEventV21InternalSwiftProtobuf7MessageAadEP4hash4intoys6HasherVz_tFTW
@@ -3864,18 +3810,18 @@ Symbols:
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RRFScoredItemsEventVwet
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RRFScoredItemsEventVwst
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RetrievedItemsEventV09retrievedG0SayAA0de1_F4ItemVGvM
-+ _$s20LocalFederatedSearch44SpotlightInstrumentation_RetrievedItemsEventV09retrievedG0SayAA0de1_F4ItemVGvM.resume.0
++ _$s20LocalFederatedSearch44SpotlightInstrumentation_RetrievedItemsEventV09retrievedG0SayAA0de1_F4ItemVGvM.resume
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RetrievedItemsEventV09retrievedG0SayAA0de1_F4ItemVGvg
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RetrievedItemsEventV09retrievedG0SayAA0de1_F4ItemVGvpMV
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RetrievedItemsEventV09retrievedG0SayAA0de1_F4ItemVGvs
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RetrievedItemsEventV13decodeMessage7decoderyxz_tK21InternalSwiftProtobuf7DecoderRzlF
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RetrievedItemsEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM
-+ _$s20LocalFederatedSearch44SpotlightInstrumentation_RetrievedItemsEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume.0
++ _$s20LocalFederatedSearch44SpotlightInstrumentation_RetrievedItemsEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RetrievedItemsEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvg
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RetrievedItemsEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvpMV
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RetrievedItemsEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvs
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RetrievedItemsEventV14retrievalPhaseAA0de10_RetrievalJ0OvM
-+ _$s20LocalFederatedSearch44SpotlightInstrumentation_RetrievedItemsEventV14retrievalPhaseAA0de10_RetrievalJ0OvM.resume.0
++ _$s20LocalFederatedSearch44SpotlightInstrumentation_RetrievedItemsEventV14retrievalPhaseAA0de10_RetrievalJ0OvM.resume
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RetrievedItemsEventV14retrievalPhaseAA0de10_RetrievalJ0Ovg
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RetrievedItemsEventV14retrievalPhaseAA0de10_RetrievalJ0OvpACTk
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RetrievedItemsEventV14retrievalPhaseAA0de10_RetrievalJ0OvpMV
@@ -3903,7 +3849,7 @@ Symbols:
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RetrievedItemsEventV21InternalSwiftProtobuf7MessageAadEP06decodeL07decoderyqd__z_tKAD7DecoderRd__lFTW
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RetrievedItemsEventV21InternalSwiftProtobuf7MessageAadEP13isInitializedSbvgTW
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RetrievedItemsEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW
-+ _$s20LocalFederatedSearch44SpotlightInstrumentation_RetrievedItemsEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume.0
++ _$s20LocalFederatedSearch44SpotlightInstrumentation_RetrievedItemsEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RetrievedItemsEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvgTW
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RetrievedItemsEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvsTW
 + _$s20LocalFederatedSearch44SpotlightInstrumentation_RetrievedItemsEventV21InternalSwiftProtobuf7MessageAadEP4hash4intoys6HasherVz_tFTW
@@ -3948,7 +3894,7 @@ Symbols:
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV10hasIsFinalSbvg
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV10hasIsFinalSbvpMV
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV10intentTypeSSvM
-+ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV10intentTypeSSvM.resume.0
++ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV10intentTypeSSvM.resume
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV10intentTypeSSvg
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV10intentTypeSSvpACTk
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV10intentTypeSSvpMV
@@ -3964,7 +3910,7 @@ Symbols:
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV13hasIntentTypeSbvg
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV13hasIntentTypeSbvpMV
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM
-+ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume.0
++ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvg
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvpMV
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvs
@@ -3978,30 +3924,30 @@ Symbols:
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV17_protobuf_nameMap_WZ
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV17_protobuf_nameMap_Wz
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV17latestTokenFromQuSbvM
-+ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV17latestTokenFromQuSbvM.resume.0
++ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV17latestTokenFromQuSbvM.resume
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV17latestTokenFromQuSbvg
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV17latestTokenFromQuSbvpMV
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV17latestTokenFromQuSbvs
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV17parsedQueryFromQuSSvM
-+ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV17parsedQueryFromQuSSvM.resume.0
++ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV17parsedQueryFromQuSSvM.resume
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV17parsedQueryFromQuSSvg
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV17parsedQueryFromQuSSvpACTk
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV17parsedQueryFromQuSSvpMV
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV17parsedQueryFromQuSSvs
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV18inferredIntentTypeSSvM
-+ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV18inferredIntentTypeSSvM.resume.0
++ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV18inferredIntentTypeSSvM.resume
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV18inferredIntentTypeSSvg
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV18inferredIntentTypeSSvpACTk
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV18inferredIntentTypeSSvpMV
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV18inferredIntentTypeSSvs
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV18parsedPersonFromQuSSvM
-+ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV18parsedPersonFromQuSSvM.resume.0
++ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV18parsedPersonFromQuSSvM.resume
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV18parsedPersonFromQuSSvg
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV18parsedPersonFromQuSSvpACTk
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV18parsedPersonFromQuSSvpMV
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV18parsedPersonFromQuSSvs
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV19earliestTokenFromQuSbvM
-+ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV19earliestTokenFromQuSbvM.resume.0
++ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV19earliestTokenFromQuSbvM.resume
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV19earliestTokenFromQuSbvg
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV19earliestTokenFromQuSbvpMV
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV19earliestTokenFromQuSbvs
@@ -4010,7 +3956,7 @@ Symbols:
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV20hasParsedQueryFromQuSbvg
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV20hasParsedQueryFromQuSbvpMV
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV20userSpecifiedEndDateSSvM
-+ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV20userSpecifiedEndDateSSvM.resume.0
++ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV20userSpecifiedEndDateSSvM.resume
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV20userSpecifiedEndDateSSvg
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV20userSpecifiedEndDateSSvpACTk
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV20userSpecifiedEndDateSSvpMV
@@ -4030,7 +3976,7 @@ Symbols:
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV21InternalSwiftProtobuf7MessageAadEP06decodeL07decoderyqd__z_tKAD7DecoderRd__lFTW
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV21InternalSwiftProtobuf7MessageAadEP13isInitializedSbvgTW
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW
-+ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume.0
++ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvgTW
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvsTW
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV21InternalSwiftProtobuf7MessageAadEP4hash4intoys6HasherVz_tFTW
@@ -4046,7 +3992,7 @@ Symbols:
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV22hasEarliestTokenFromQuSbvg
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV22hasEarliestTokenFromQuSbvpMV
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV22userSpecifiedStartDateSSvM
-+ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV22userSpecifiedStartDateSSvM.resume.0
++ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV22userSpecifiedStartDateSSvM.resume
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV22userSpecifiedStartDateSSvg
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV22userSpecifiedStartDateSSvpACTk
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV22userSpecifiedStartDateSSvpMV
@@ -4060,7 +4006,7 @@ Symbols:
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV25hasUserSpecifiedStartDateSbvg
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV25hasUserSpecifiedStartDateSbvpMV
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV26hasQueryContextEmbedding_pSbvM
-+ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV26hasQueryContextEmbedding_pSbvM.resume.0
++ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV26hasQueryContextEmbedding_pSbvM.resume
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV26hasQueryContextEmbedding_pSbvg
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV26hasQueryContextEmbedding_pSbvpMV
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV26hasQueryContextEmbedding_pSbvs
@@ -4070,12 +4016,12 @@ Symbols:
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV2eeoiySbAC_ACtFZ
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV31clearHasQueryContextEmbedding_pyyF
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV4types5Int64VvM
-+ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV4types5Int64VvM.resume.0
++ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV4types5Int64VvM.resume
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV4types5Int64Vvg
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV4types5Int64VvpMV
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV4types5Int64Vvs
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV5querySSvM
-+ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV5querySSvM.resume.0
++ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV5querySSvM.resume
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV5querySSvg
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV5querySSvpACTk
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV5querySSvpMV
@@ -4083,7 +4029,7 @@ Symbols:
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV7hasTypeSbvg
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV7hasTypeSbvpMV
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV7isFinalSbvM
-+ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV7isFinalSbvM.resume.0
++ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV7isFinalSbvM.resume
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV7isFinalSbvg
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV7isFinalSbvpMV
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV7isFinalSbvs
@@ -4103,18 +4049,18 @@ Symbols:
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV9hashValueSivg
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV9hashValueSivpMV
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV9queryDateSSvM
-+ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV9queryDateSSvM.resume.0
++ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV9queryDateSSvM.resume
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV9queryDateSSvg
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV9queryDateSSvpACTk
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV9queryDateSSvpMV
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV9queryDateSSvs
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV9queryTimeSdvM
-+ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV9queryTimeSdvM.resume.0
++ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV9queryTimeSdvM.resume
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV9queryTimeSdvg
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV9queryTimeSdvpMV
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV9queryTimeSdvs
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV9queryTypeSSvM
-+ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV9queryTypeSSvM.resume.0
++ _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV9queryTypeSSvM.resume
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV9queryTypeSSvg
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV9queryTypeSSvpACTk
 + _$s20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV9queryTypeSSvpMV
@@ -4157,13 +4103,13 @@ Symbols:
 + _$s20LocalFederatedSearch7LFSRankV11globalScoreySdSayACGFZ
 + _$s20LocalFederatedSearch7LFSRankV4rank7maxRankACs6UInt64V_AGtcfC
 + _$s20LocalFederatedSearch7LFSRankV4ranks6UInt64VvM
-+ _$s20LocalFederatedSearch7LFSRankV4ranks6UInt64VvM.resume.0
++ _$s20LocalFederatedSearch7LFSRankV4ranks6UInt64VvM.resume
 + _$s20LocalFederatedSearch7LFSRankV4ranks6UInt64Vvg
 + _$s20LocalFederatedSearch7LFSRankV4ranks6UInt64VvpMV
 + _$s20LocalFederatedSearch7LFSRankV4ranks6UInt64Vvs
 + _$s20LocalFederatedSearch7LFSRankV5merge5outer5innerA2C_ACtFZ
 + _$s20LocalFederatedSearch7LFSRankV7maxRanks6UInt64VvM
-+ _$s20LocalFederatedSearch7LFSRankV7maxRanks6UInt64VvM.resume.0
++ _$s20LocalFederatedSearch7LFSRankV7maxRanks6UInt64VvM.resume
 + _$s20LocalFederatedSearch7LFSRankV7maxRanks6UInt64Vvg
 + _$s20LocalFederatedSearch7LFSRankV7maxRanks6UInt64VvpMV
 + _$s20LocalFederatedSearch7LFSRankV7maxRanks6UInt64Vvs
@@ -4320,7 +4266,6 @@ Symbols:
 + _$s20LocalFederatedSearchAAO16searchAllDomains33_859500EB5A97AFCDF42AC1D4A1B5463ELL6params6config5query9excluding12requestStateSayAA12LFSResultSetVGSDySSs11AnyHashableVG_AA9LFSConfigVAA8LFSQueryVShyAA9LFSDomainOGAA016LFSCachedRequestS0VtYaFZALScGySi_AKSgtGzYaXEfU_
 + _$s20LocalFederatedSearchAAO16searchAllDomains33_859500EB5A97AFCDF42AC1D4A1B5463ELL6params6config5query9excluding12requestStateSayAA12LFSResultSetVGSDySSs11AnyHashableVG_AA9LFSConfigVAA8LFSQueryVShyAA9LFSDomainOGAA016LFSCachedRequestS0VtYaFZALScGySi_AKSgtGzYaXEfU_7enqueueL_5index6domainySi_AUtFSi_AYtyYacfU_
 + _$s20LocalFederatedSearchAAO16searchAllDomains33_859500EB5A97AFCDF42AC1D4A1B5463ELL6params6config5query9excluding12requestStateSayAA12LFSResultSetVGSDySSs11AnyHashableVG_AA9LFSConfigVAA8LFSQueryVShyAA9LFSDomainOGAA016LFSCachedRequestS0VtYaFZALScGySi_AKSgtGzYaXEfU_7enqueueL_5index6domainySi_AUtFSi_AYtyYacfU_TA
-+ _$s20LocalFederatedSearchAAO16searchAllDomains33_859500EB5A97AFCDF42AC1D4A1B5463ELL6params6config5query9excluding12requestStateSayAA12LFSResultSetVGSDySSs11AnyHashableVG_AA9LFSConfigVAA8LFSQueryVShyAA9LFSDomainOGAA016LFSCachedRequestS0VtYaFZALScGySi_AKSgtGzYaXEfU_7enqueueL_5index6domainySi_AUtFSi_AYtyYacfU_TA.123
 + _$s20LocalFederatedSearchAAO16searchAllDomains33_859500EB5A97AFCDF42AC1D4A1B5463ELL6params6config5query9excluding12requestStateSayAA12LFSResultSetVGSDySSs11AnyHashableVG_AA9LFSConfigVAA8LFSQueryVShyAA9LFSDomainOGAA016LFSCachedRequestS0VtYaFZALScGySi_AKSgtGzYaXEfU_7enqueueL_5index6domainySi_AUtFSi_AYtyYacfU_TA.123TQ0_
 + _$s20LocalFederatedSearchAAO16searchAllDomains33_859500EB5A97AFCDF42AC1D4A1B5463ELL6params6config5query9excluding12requestStateSayAA12LFSResultSetVGSDySSs11AnyHashableVG_AA9LFSConfigVAA8LFSQueryVShyAA9LFSDomainOGAA016LFSCachedRequestS0VtYaFZALScGySi_AKSgtGzYaXEfU_7enqueueL_5index6domainySi_AUtFSi_AYtyYacfU_TA.123Tu
 + _$s20LocalFederatedSearchAAO16searchAllDomains33_859500EB5A97AFCDF42AC1D4A1B5463ELL6params6config5query9excluding12requestStateSayAA12LFSResultSetVGSDySSs11AnyHashableVG_AA9LFSConfigVAA8LFSQueryVShyAA9LFSDomainOGAA016LFSCachedRequestS0VtYaFZALScGySi_AKSgtGzYaXEfU_7enqueueL_5index6domainySi_AUtFSi_AYtyYacfU_TATQ0_
@@ -4522,73 +4467,22 @@ Symbols:
 + _$s23GenerativeSearchAdapter04MailB6ResultO4mailyAC0aB00E0VyAE0D7ContentVGcACmFWC
 + _$s23GenerativeSearchAdapter04MailB6ResultOMa
 + _$s23GenerativeSearchAdapter04MailB6ResultOMn
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.130
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.171
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.237
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.245
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.29
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.30
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.35
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.37
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.38
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.46
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.49
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.59
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.60
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.69
 + _$s2os14OSLogArgumentsV6appendyySdycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_
 + _$s2os14OSLogArgumentsV6appendyySdycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA
 + _$s2os14OSLogArgumentsV6appendyySo8NSObjectCSgycFySpys5UInt8VGz_SpyAGGSgzSpyypGSgztcfU_
 + _$s2os14OSLogArgumentsV6appendyySo8NSObjectCSgycFySpys5UInt8VGz_SpyAGGSgzSpyypGSgztcfU_TA
-+ _$s2os14OSLogArgumentsV6appendyySo8NSObjectCSgycFySpys5UInt8VGz_SpyAGGSgzSpyypGSgztcfU_TA.45
 + _$s2os14OSLogArgumentsV6appendyys5UInt8VFySpyAFGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_AFTf3nnnnpSi4_n
 + _$s2os14OSLogArgumentsV6appendyys5UInt8VFySpyAFGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_AFTf3nnnnpSi64_n
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.114
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.122
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.139
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.148
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.152
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.163
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.187
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.204
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.212
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.220
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.253
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.261
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.49
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.51
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.68
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.71
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.87
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.90
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.98
 + _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5
 + _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.126
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.167
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.233
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.241
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.25
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.26
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.31
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.33
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.34
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.42
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.45
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.55
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.56
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.65
 + _$s2os18OSLogInterpolationV06appendC0_5align7privacyyxyXA_AA0B15StringAlignmentVAA0B7PrivacyVts06CustomG11ConvertibleRzlFSSycfu_SaySSG_Tg5
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyyxyXA_AA0B15StringAlignmentVAA0B7PrivacyVts06CustomG11ConvertibleRzlFSSycfu_SaySSG_Tg5TA.16
 + _$s2os18OSLogInterpolationV06appendC0_6format5align7privacyySdyXA_AA0B15FloatFormattingVAA0B15StringAlignmentVAA0B7PrivacyVtFSdycfu_268$s20LocalFederatedSearch021LFSHierarchicalHybridC8StrategyV7execute11searchTerms13filterQueries14glpRequestInfo7profile6config5query5cacheAA12LFSResultSetVSaySSG_AnA010GLPRequestN0OAA10LFSProfile_pAA9LFSConfigVAA8LFSQueryVAA19LFSEmbeddingServiceC0Y5CacheCtYaFSdycfu14_Tf3pf_n
 + _$s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_TA
 + _$s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA
 + _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesySo8NSObjectCyXA_AA0B7PrivacyVSStFAHSgycfu_
 + _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesySo8NSObjectCyXA_AA0B7PrivacyVSStFAHSgycfu_TA
-+ _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesySo8NSObjectCyXA_AA0B7PrivacyVSStFAHSgycfu_TA.41
 + _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesys5Error_pyXA_AA0B7PrivacyVSStFSo8NSObjectCycfu_
 + _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesys5Error_pyXA_AA0B7PrivacyVSStFSo8NSObjectCycfu_TA
-+ _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesys5Error_pyXA_AA0B7PrivacyVSStFSo8NSObjectCycfu_TA.37
 + _$s7Elements10SetAlgebraPTl
 + _$s9Spotlight24SPGenerativeSearchClientC11isMailReadySbyFZTj
 + _$s9Spotlight24SPGenerativeSearchClientCMa
@@ -4751,9 +4645,9 @@ Symbols:
 + _$sSaySo16CSSearchableItemCGSayxGSlsWl
 + _$sSaySo16CSSearchableItemCGWOh
 + _$sSayxGSlsSly7ElementQz5IndexQzcirTWSo12GDRankerItemC_Tg5
-+ _$sSayxGSlsSly7ElementQz5IndexQzcirTWSo12GDRankerItemC_Tg5.resume.0
++ _$sSayxGSlsSly7ElementQz5IndexQzcirTWSo12GDRankerItemC_Tg5.resume
 + _$sSayxGSlsSly7ElementQz5IndexQzcirTWSo16CSSearchableItemC_Tg5
-+ _$sSayxGSlsSly7ElementQz5IndexQzcirTWSo16CSSearchableItemC_Tg5.resume.0
++ _$sSayxGSlsSly7ElementQz5IndexQzcirTWSo16CSSearchableItemC_Tg5.resume
 + _$sSbSgML
 + _$sScG4next9isolationxSgScA_pSgYi_tYaF
 + _$sScG4next9isolationxSgScA_pSgYi_tYaFTu
@@ -4782,24 +4676,6 @@ Symbols:
 + _$sSi9bucketIdx_Si04itemB0Sd5scoretMR
 + _$sSi9bucketIdx_Si04itemB0Sd5scoretMd
 + _$sSiIegd_SiIegr_TR268$s20LocalFederatedSearch021LFSHierarchicalHybridC8StrategyV7execute11searchTerms13filterQueries14glpRequestInfo7profile6config5query5cacheAA12LFSResultSetVSaySSG_AnA010GLPRequestN0OAA10LFSProfile_pAA9LFSConfigVAA8LFSQueryVAA19LFSEmbeddingServiceC0Y5CacheCtYaFSiycfu33_Tf3npf_n
-+ _$sSiIegd_SiIegr_TRTA.110
-+ _$sSiIegd_SiIegr_TRTA.118
-+ _$sSiIegd_SiIegr_TRTA.135
-+ _$sSiIegd_SiIegr_TRTA.144
-+ _$sSiIegd_SiIegr_TRTA.159
-+ _$sSiIegd_SiIegr_TRTA.183
-+ _$sSiIegd_SiIegr_TRTA.200
-+ _$sSiIegd_SiIegr_TRTA.208
-+ _$sSiIegd_SiIegr_TRTA.216
-+ _$sSiIegd_SiIegr_TRTA.249
-+ _$sSiIegd_SiIegr_TRTA.257
-+ _$sSiIegd_SiIegr_TRTA.45
-+ _$sSiIegd_SiIegr_TRTA.47
-+ _$sSiIegd_SiIegr_TRTA.64
-+ _$sSiIegd_SiIegr_TRTA.67
-+ _$sSiIegd_SiIegr_TRTA.83
-+ _$sSiIegd_SiIegr_TRTA.86
-+ _$sSiIegd_SiIegr_TRTA.94
 + _$sSi_20LocalFederatedSearch12LFSResultSetVSgtMR
 + _$sSi_20LocalFederatedSearch12LFSResultSetVSgtMd
 + _$sSi_20LocalFederatedSearch12LFSResultSetVSgtSgMR
@@ -5131,7 +5007,6 @@ Symbols:
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSaySSG_TG5Tu
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSi_20LocalFederatedSearch12LFSResultSetVSgt_Tg5
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSi_20LocalFederatedSearch12LFSResultSetVSgt_Tg5TA
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSi_20LocalFederatedSearch12LFSResultSetVSgt_Tg5TA.128
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSi_20LocalFederatedSearch12LFSResultSetVSgt_Tg5TA.128TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSi_20LocalFederatedSearch12LFSResultSetVSgt_Tg5TA.128Tu
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSi_20LocalFederatedSearch12LFSResultSetVSgt_Tg5TATQ0_
@@ -5386,50 +5261,9 @@ Symbols:
 + __OBJC_$_PROTOCOL_METHOD_TYPES_GDVisualIdentifierView
 + __OBJC_LABEL_PROTOCOL_$_GDVisualIdentifierView
 + __OBJC_PROTOCOL_$_GDVisualIdentifierView
-+ ___swift__destructor.73
-+ ___swift_closure_destructor.103
-+ ___swift_closure_destructor.108
-+ ___swift_closure_destructor.112
 + ___swift_closure_destructor.112Tm
-+ ___swift_closure_destructor.116
-+ ___swift_closure_destructor.120
-+ ___swift_closure_destructor.124
-+ ___swift_closure_destructor.126
-+ ___swift_closure_destructor.128
-+ ___swift_closure_destructor.13
-+ ___swift_closure_destructor.142
-+ ___swift_closure_destructor.146
-+ ___swift_closure_destructor.150
-+ ___swift_closure_destructor.154
-+ ___swift_closure_destructor.157
-+ ___swift_closure_destructor.161
-+ ___swift_closure_destructor.192
-+ ___swift_closure_destructor.195
-+ ___swift_closure_destructor.198
-+ ___swift_closure_destructor.20
-+ ___swift_closure_destructor.202
-+ ___swift_closure_destructor.225
-+ ___swift_closure_destructor.228
-+ ___swift_closure_destructor.23
-+ ___swift_closure_destructor.231
-+ ___swift_closure_destructor.235
-+ ___swift_closure_destructor.243
-+ ___swift_closure_destructor.247
 + ___swift_closure_destructor.2Tm
-+ ___swift_closure_destructor.35
-+ ___swift_closure_destructor.40
-+ ___swift_closure_destructor.43
-+ ___swift_closure_destructor.60
-+ ___swift_closure_destructor.66
-+ ___swift_closure_destructor.80
-+ ___swift_closure_destructor.84
-+ ___swift_closure_destructor.88
-+ ___swift_closure_destructor.92
-+ ___swift_closure_destructor.94
-+ ___swift_closure_destructor.96
 + ___swift_exist.box.addr_destructor.51Tm
-+ ___swift_exist.box.addr_destructor.56
-+ ___swift_exist.box.addr_destructor.59
 + ___swift_get_extra_inhabitant_index.287Tm
 + ___swift_get_extra_inhabitant_index.332Tm
 + ___swift_get_extra_inhabitant_indexTm
@@ -5534,34 +5368,11 @@ Symbols:
 + _associated conformance 20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventV21InternalSwiftProtobuf7MessageAAs28CustomDebugStringConvertible
 + _associated conformance 20LocalFederatedSearch47SpotlightInstrumentation_CerberusQUSignalsEventVSHAASQ
 + _associated conformance 20LocalFederatedSearchAAO13RetrievalTypeOSHAASQ
-+ _block_copy_helper.79
-+ _block_descriptor.81
-+ _block_destroy_helper.80
 + _flat unique So22GDVisualIdentifierView_p
 + _free
 + _get_enum_tag_for_layout_string 10Foundation4DataV15_RepresentationO
-+ _get_type_metadata 15Synchronization5MutexVySDy20LocalFederatedSearch12LFSECRClientO0F5StateC8CacheKey33_04F6F515FB4EA9EB22361BDA69F304BALLVScTySaySSGs5Error_pGGG noncopyable.5
-+ _get_type_metadata 15Synchronization5MutexVySaySo16CSSearchableItemCGG noncopyable.19
-+ _objc_msgSend$emails
-+ _objc_msgSend$entityID
-+ _objc_msgSend$initWithSuiteName:
-+ _objc_msgSend$initWithText:entityClassFilter:spans:mode:constraint:includeInferredNames:
-+ _objc_msgSend$initWithText:entityClassFilter:spans:mode:constraint:sourceIDs:kgq:includeFeatures:includeInferredNames:enableBackupSearch:
-+ _objc_msgSend$names
-+ _objc_msgSend$objectForKey:
-+ _objc_msgSend$personForIdentifier:
-+ _objc_msgSend$phoneNumbers
-+ _objc_msgSend$rankedItems
-+ _objc_msgSend$rankedResults
-+ _objc_msgSend$rankingFactsResult
-+ _objc_msgSend$removeObjectForKey:
-+ _objc_msgSend$setObject:forKey:
-+ _objc_msgSend$stringValue
-+ _objc_msgSend$termWordDistance0
-+ _objc_msgSend$termWordDistance1
-+ _objc_msgSend$termWordDistance2
-+ _objc_msgSend$termWordDistance3
-+ _objc_msgSend$termWordDistance4
++ _get_type_metadata 15Synchronization5MutexVySDy20LocalFederatedSearch12LFSECRClientO0F5StateC8CacheKey33_04F6F515FB4EA9EB22361BDA69F304BALLVScTySaySSGs5Error_pGGG noncopyable
++ _get_type_metadata 15Synchronization5MutexVySaySo16CSSearchableItemCGG noncopyable
 + _swift_checkMetadataState
 + _swift_coroFrameAlloc
 + _swift_cvw_initEnumMetadataMultiPayloadWithLayoutString
@@ -5882,7 +5693,7 @@ Symbols:
 - _$s20LocalFederatedSearch14LFSCallProfileVAA10LFSProfileA2aDP18impSearchableAttrsSaySSGvgTW
 - _$s20LocalFederatedSearch14LFSCallProfileVAA10LFSProfileA2aDP27additionalMinimalFetchAttrsSaySSGvgTW
 - _$s20LocalFederatedSearch14LFSEvalLoggingO016enableLegacyEvalE0SbvMZ
-- _$s20LocalFederatedSearch14LFSEvalLoggingO016enableLegacyEvalE0SbvMZ.resume.0
+- _$s20LocalFederatedSearch14LFSEvalLoggingO016enableLegacyEvalE0SbvMZ.resume
 - _$s20LocalFederatedSearch14LFSEvalLoggingO016enableLegacyEvalE0SbvgZ
 - _$s20LocalFederatedSearch14LFSEvalLoggingO016enableLegacyEvalE0SbvpZMV
 - _$s20LocalFederatedSearch14LFSEvalLoggingO016enableLegacyEvalE0SbvsZ
@@ -6250,7 +6061,6 @@ Symbols:
 - _$s20LocalFederatedSearchAAO16searchAllDomains33_859500EB5A97AFCDF42AC1D4A1B5463ELL6params6config5query5cacheSayAA12LFSResultSetVGSDySSs11AnyHashableVG_AA9LFSConfigVAA8LFSQueryVAA19LFSEmbeddingServiceC0X5CacheCtYaFZAKScGyAJSgGzYaXEfU_
 - _$s20LocalFederatedSearchAAO16searchAllDomains33_859500EB5A97AFCDF42AC1D4A1B5463ELL6params6config5query5cacheSayAA12LFSResultSetVGSDySSs11AnyHashableVG_AA9LFSConfigVAA8LFSQueryVAA19LFSEmbeddingServiceC0X5CacheCtYaFZAKScGyAJSgGzYaXEfU_7enqueueL_yyAA9LFSDomainOFAWyYacfU_
 - _$s20LocalFederatedSearchAAO16searchAllDomains33_859500EB5A97AFCDF42AC1D4A1B5463ELL6params6config5query5cacheSayAA12LFSResultSetVGSDySSs11AnyHashableVG_AA9LFSConfigVAA8LFSQueryVAA19LFSEmbeddingServiceC0X5CacheCtYaFZAKScGyAJSgGzYaXEfU_7enqueueL_yyAA9LFSDomainOFAWyYacfU_TA
-- _$s20LocalFederatedSearchAAO16searchAllDomains33_859500EB5A97AFCDF42AC1D4A1B5463ELL6params6config5query5cacheSayAA12LFSResultSetVGSDySSs11AnyHashableVG_AA9LFSConfigVAA8LFSQueryVAA19LFSEmbeddingServiceC0X5CacheCtYaFZAKScGyAJSgGzYaXEfU_7enqueueL_yyAA9LFSDomainOFAWyYacfU_TA.18
 - _$s20LocalFederatedSearchAAO16searchAllDomains33_859500EB5A97AFCDF42AC1D4A1B5463ELL6params6config5query5cacheSayAA12LFSResultSetVGSDySSs11AnyHashableVG_AA9LFSConfigVAA8LFSQueryVAA19LFSEmbeddingServiceC0X5CacheCtYaFZAKScGyAJSgGzYaXEfU_7enqueueL_yyAA9LFSDomainOFAWyYacfU_TA.18TQ0_
 - _$s20LocalFederatedSearchAAO16searchAllDomains33_859500EB5A97AFCDF42AC1D4A1B5463ELL6params6config5query5cacheSayAA12LFSResultSetVGSDySSs11AnyHashableVG_AA9LFSConfigVAA8LFSQueryVAA19LFSEmbeddingServiceC0X5CacheCtYaFZAKScGyAJSgGzYaXEfU_7enqueueL_yyAA9LFSDomainOFAWyYacfU_TA.18Tu
 - _$s20LocalFederatedSearchAAO16searchAllDomains33_859500EB5A97AFCDF42AC1D4A1B5463ELL6params6config5query5cacheSayAA12LFSResultSetVGSDySSs11AnyHashableVG_AA9LFSConfigVAA8LFSQueryVAA19LFSEmbeddingServiceC0X5CacheCtYaFZAKScGyAJSgGzYaXEfU_7enqueueL_yyAA9LFSDomainOFAWyYacfU_TATQ0_
@@ -6333,54 +6143,6 @@ Symbols:
 - _$s20LocalFederatedSearchAAO4find11invocations6config8rawQueryAA12LFSResultSetVSgSay04OmniC5Types07AgenticC10InvocationCG_AA9LFSConfigVSSSgtYaFZTY4_
 - _$s20LocalFederatedSearchAAO4find11invocations6config8rawQueryAA12LFSResultSetVSgSay04OmniC5Types07AgenticC10InvocationCG_AA9LFSConfigVSSSgtYaFZTu
 - _$s20LocalFederatedSearchAAO4find11invocations6config8rawQueryAA12LFSResultSetVSgSay04OmniC5Types07AgenticC10InvocationCG_AA9LFSConfigVSSSgtYaFZfA0_
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.111
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.119
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.127
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.135
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.151
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.187
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.195
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.212
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.220
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.257
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.273
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.281
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.289
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.297
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.305
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.47
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.64
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.71
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.76
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.87
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.95
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.143
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.171
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.228
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.265
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.63
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.84
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.107
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.115
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.123
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.131
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.147
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.183
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.191
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.208
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.216
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.253
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.269
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.277
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.285
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.293
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.301
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.43
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.60
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.67
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.72
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.83
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.91
 - _$s2os18OSLogInterpolationV06appendC0_5align7privacyyxyXA_AA0B15StringAlignmentVAA0B7PrivacyVts06CustomG11ConvertibleRzlFSSycfu_SaySSG_Tg5Tm
 - _$sSMsSKRzrlE14_insertionSort6within9sortedEnd2byySny5IndexSlQzG_AFSb7ElementSTQz_AItKXEtKFSry20LocalFederatedSearch13LFSScoredItemV4item_Sd5scoreSd4daysSi10matchCounttG_Tg504$s20ij206Search27LFSTieredWANDSearchStrategyV22mergeWithTieredScoring33_737AC30E5FD056ACBC730E7BD4E3152CLL_11searchTerms4topK3now14freshnessCoeff7verboseAA12LFSResultSetVSayALG_SaySSGSi10Foundation4DateVSdSbtFSbAA13lM62V4item_Sd5scoreSd4daysSi10matchCountt_AsT_SdAUSdAVSiAWttXEfU1_Tf1nncn_n
 - _$sSMsSKRzrlE14_insertionSort6within9sortedEnd2byySny5IndexSlQzG_AFSb7ElementSTQz_AItKXEtKFSry20LocalFederatedSearch13LFSScoredItemV4item_Sd5scoreSd4daystG_Tg504$s20ij137Search12LFSResultSetV19mergeWithNumMatches_10totalTerms4topK7profile3now7verboseACSayACG_S2iAA10LFSProfile_p10Foundation4DateVSbtFZSbAA13lM44V4item_Sd5scoreSd4dayst_ApQ_SdARSdASttXEfU0_Tf1nncn_n
@@ -6410,12 +6172,6 @@ Symbols:
 - _$sSdIgd_SdIegr_TR084$s20LocalFederatedSearch12LFSResultSetV4fuse_7weights1k10maxResultsACSayACG_SaySdGSgM14SitFZSdyXEfu5_Tf3npf_n
 - _$sSh8isSubset2ofSbShyxG_tFSS_Tg5
 - _$sSi6offset_20LocalFederatedSearch13LFSScoredItemV7elementtWOhTm
-- _$sSiIegd_SiIegr_TRTA.139
-- _$sSiIegd_SiIegr_TRTA.167
-- _$sSiIegd_SiIegr_TRTA.224
-- _$sSiIegd_SiIegr_TRTA.261
-- _$sSiIegd_SiIegr_TRTA.59
-- _$sSiIegd_SiIegr_TRTA.80
 - _$sSlsE3mapySayqd__Gqd__7ElementQzqd_0_YKXEqd_0_YKs5ErrorRd_0_r0_lFSD6ValuesVySS20LocalFederatedSearch13LFSScoredItemV4item_Si10matchCountSd4dayst_G_AjK_Sd5scoreSdAMSiALts5NeverOTg504$s20ef204Search27LFSTieredWANDSearchStrategyV22mergeWithTieredScoring33_737AC30E5FD056ACBC730E7BD4E3152CLL_11searchTerms4topK3now14freshnessCoeff7verboseAA12LFSResultSetVSayALG_SaySSGSi10Foundation4DateVSdSbtFAA13hI57V4item_Sd5scoreSd4daysSi10matchCounttAsT_SiAWSdAVt_tXEfU_SaySSGS4dTf1cn_n
 - _$sSo16os_unfair_lock_sVMB
 - _$sSo16os_unfair_lock_sVMF
@@ -6462,7 +6218,6 @@ Symbols:
 - _$ss6_merge3low3mid4high6buffer2bySbSpyxG_A3GSbx_xtKXEtKlFSS2id_Sd5scoret_Tg5084$s20LocalFederatedSearch12LFSResultSetV4fuse_7weights1k10maxResultsACSayACG_SaySdGSgu28SitFZSbSS2id_Sd5scoret_SSAK_U10ALttXEfU1_Tf1nnnnc_n
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTR20LocalFederatedSearch12LFSResultSetVSg_Tg5
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTR20LocalFederatedSearch12LFSResultSetVSg_Tg5TA
-- _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTR20LocalFederatedSearch12LFSResultSetVSg_Tg5TA.23
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTR20LocalFederatedSearch12LFSResultSetVSg_Tg5TA.23TQ0_
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTR20LocalFederatedSearch12LFSResultSetVSg_Tg5TA.23Tu
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTR20LocalFederatedSearch12LFSResultSetVSg_Tg5TATQ0_
@@ -6480,57 +6235,12 @@ Symbols:
 - _MDItemPhotosSeasons
 - _MDItemPixelHeight
 - _MDItemPixelWidth
-- ___swift__destructor.40
-- ___swift_closure_destructor.109
-- ___swift_closure_destructor.113
-- ___swift_closure_destructor.117
-- ___swift_closure_destructor.125
-- ___swift_closure_destructor.129
-- ___swift_closure_destructor.141
-- ___swift_closure_destructor.145
-- ___swift_closure_destructor.149
-- ___swift_closure_destructor.153
 - ___swift_closure_destructor.153Tm
-- ___swift_closure_destructor.156
-- ___swift_closure_destructor.159
-- ___swift_closure_destructor.162
-- ___swift_closure_destructor.193
-- ___swift_closure_destructor.197
-- ___swift_closure_destructor.200
-- ___swift_closure_destructor.203
-- ___swift_closure_destructor.226
-- ___swift_closure_destructor.230
-- ___swift_closure_destructor.233
-- ___swift_closure_destructor.236
-- ___swift_closure_destructor.242
-- ___swift_closure_destructor.245
-- ___swift_closure_destructor.248
-- ___swift_closure_destructor.263
-- ___swift_closure_destructor.267
-- ___swift_closure_destructor.271
-- ___swift_closure_destructor.275
-- ___swift_closure_destructor.279
-- ___swift_closure_destructor.283
-- ___swift_closure_destructor.287
-- ___swift_closure_destructor.291
-- ___swift_closure_destructor.295
-- ___swift_closure_destructor.299
-- ___swift_closure_destructor.303
 - ___swift_closure_destructor.3Tm
-- ___swift_closure_destructor.42
-- ___swift_closure_destructor.52
-- ___swift_closure_destructor.78
-- ___swift_closure_destructor.82
-- ___swift_closure_destructor.93
-- ___swift_exist.box.addr_destructor.54
-- ___swift_exist.box.addr_destructor.57
 - ___swift_memcpy144_8
 - ___swift_memcpy4_4
 - ___swift_memcpy64_8
 - ___swift_memcpy97_8
-- _block_copy_helper.46
-- _block_descriptor.48
-- _block_destroy_helper.47
 - _objc_retain_x21
 - _objc_retain_x27
 - _swift_getAtKeyPath
@@ -6795,5 +6505,4 @@ CStrings:
 - "sceneClassifications"
 - "to_me"
 - "upcoming"
-
 ```

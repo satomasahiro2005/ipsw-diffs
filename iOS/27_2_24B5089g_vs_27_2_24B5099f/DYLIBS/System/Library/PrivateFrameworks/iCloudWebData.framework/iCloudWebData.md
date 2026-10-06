@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/iCloudWebData.framework/iCloudWebData`
 
-```diff
+### Section Size Changes
 
- 71.3.0.0.0
--  __TEXT.__text: 0x202c8
-+  __TEXT.__text: 0x202cc
-   __TEXT.__const: 0x12a8
-   __TEXT.__swift5_typeref: 0x72a
-   __TEXT.__swift5_reflstr: 0x283
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21bb4` | `0x21bb8` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2bca41794 -> sub_2bc7cc794 : 124 -> 128
+~ sub_2c0b4dac8 -> sub_2c0979ac8 : 124 -> 128
 ```

@@ -2,102 +2,41 @@
 
 > `/System/Library/SubFrameworks/ARKitCore.framework/ARKitCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__objc_const` | `0x3ca38` | `0x3cc50` | **`+0x218`** |
+| `__TEXT.__text` | `0x19b484` | `0x19b2c0` | **`-0x1c4`** |
+| `__TEXT.__oslogstring` | `0x2080b` | `0x20960` | **`+0x155`** |
+| `__TEXT.__gcc_except_tab` | `0x132c4` | `0x1339c` | **`+0xd8`** |
+| `__AUTH.__objc_data` | `0x3520` | `0x35c0` | **`+0xa0`** |
+| `__TEXT.__objc_methlist` | `0x111b4` | `0x11234` | **`+0x80`** |
+| `__TEXT.__const` | `0x25d40` | `0x25d68` | **`+0x28`** |
+| `__DATA_DIRTY.__bss` | `0xa60` | `0xa80` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x6a08` | `0x6a28` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x1fe0` | `0x1ff8` | **`+0x18`** |
+| `__TEXT.__cstring` | `0x1f049` | `0x1f05e` | **`+0x15`** |
+| `__DATA_CONST.__got` | `0x15b8` | `0x15c8` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x870` | `0x880` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7db8` | `0x7dc8` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x780` | `0x790` | **`+0x10`** |
+| `__DATA.__bss` | `0x1890` | `0x1888` | **`-0x8`** |
+| `__DATA_CONST.__const` | `0x3498` | `0x3490` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -779.0.0.0.5
--  __TEXT.__text: 0x19b484 sha256:3a2d40056f68e9967fcc47a770118f0efb30a4ed4c6824d3ff3f3d84b5df2b59
--  __TEXT.__objc_methlist: 0x111b4 sha256:88f8abeed9f4807be88330e9dd1c9f6041777563e2a06050c53432bccf947d12
--  __TEXT.__const: 0x25d40 sha256:5d344456a40c4b368ccfe628f3bc575d6fd9fcb7f23ef3d2188b3d5b9866821b
--  __TEXT.__cstring: 0x1f049 sha256:822add5ea06312451594bd188f4abcaf33fb902a049085253c7f7b7150e96bc5
--  __TEXT.__gcc_except_tab: 0x132c4 sha256:a997b287b25c996889659fd9cc702728665d8c7a19fa9dd67d0b2a4be5083ec4
--  __TEXT.__oslogstring: 0x2080b sha256:68a3afcb98f48c7902f9d434652338f3e3ae2a83c538bf305735df64c3a4cc64
 +781.0.1.0.4
-+  __TEXT.__text: 0x19b2c0 sha256:8673751340bd52da75693640de299affb5a3ee5ab02b3e493caf993e363b2eb1
-+  __TEXT.__objc_methlist: 0x11234 sha256:2c3bdc427ea35f7ec7e510a6da608eace643e78db710a206127c2c260691ea94
-+  __TEXT.__const: 0x25d68 sha256:6281ff1865d3e45fd608657f8816c2a6ddd9f4354b00a62497b96b7527cc22d9
-+  __TEXT.__cstring: 0x1f05e sha256:6196df45c7a1125a4aa38518291a4cf2e97f9b3dca22f53e0285cf70820b80fc
-+  __TEXT.__gcc_except_tab: 0x1339c sha256:6e83bba44fae028ec96de3666e9fe4c7b6e2d121e220bd899c3a0aa062dede84
-+  __TEXT.__oslogstring: 0x20960 sha256:694fa0e1c2f99f0015cc496ce0e2ed77e7d7d37d1904197689f7fe1b910996ec
-   __TEXT.__ustring: 0xe6 sha256:ab8249232c37dfe7e1dafaa887be98a26601a864398dcdc8b38e9587c644bf9f
--  __TEXT.__unwind_info: 0x6a08 sha256:675b5a6a95fe17f349e1ee16cfc2fc2bc4d8487bbeb5cca83e6e5a0b91e13338
-+  __TEXT.__unwind_info: 0x6a28 sha256:1c7a8dd832dd7329602851d0ee91a5ded5889cb2dda57dd21e8819c146e0e6bb
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3498 sha256:0cae143c5851d0d8321cbccad79b75c246290d606ef24c5645198550946d53b2
--  __DATA_CONST.__objc_classlist: 0x870 sha256:80353bbd56a93cba8b5912ffe6b0e7c71b4facc9aa16fb7f7025b6a6581da5fd
--  __DATA_CONST.__objc_catlist: 0x90 sha256:b0027729e10c8f5e6d87e6495a0c88673f9ce761efe5e454528455adbb8b3b51
--  __DATA_CONST.__objc_protolist: 0x250 sha256:835d20fd491e9a1ff0d6df59e5ce7f83551c9611de34ffaff9f1a8b3b6cd78e5
-+  __DATA_CONST.__const: 0x3490 sha256:8ecf3631d265cf935a7fcd4f7b5bef098a895e07cf6ffb23a77934eb9310fd7b
-+  __DATA_CONST.__objc_classlist: 0x880 sha256:48c7cbbc784d7d33dc9822e35eb12cb044d18389bce6e002413a3d192be8952a
-+  __DATA_CONST.__objc_catlist: 0x90 sha256:b6a2092aca86e0e009bcf88c4172ade8031fa231d48766a87576d52b7435c169
-+  __DATA_CONST.__objc_protolist: 0x250 sha256:67c161208bfa4ca9d052f0f36eac443854b977111abebe7573bf2fa412f9ee90
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x18 sha256:9120e1f1ad5e96b568a0be0ed061469bf12f130dc5daaebc254c76ac1bf21438
--  __DATA_CONST.__objc_selrefs: 0x7db8 sha256:e7c3d4223b9341e9aa39c0fba7150bdf63229e5c24d6d7698f9b15eb00e50459
--  __DATA_CONST.__objc_protorefs: 0x90 sha256:d884ee1998ee9fa55d7644b1a702e5b504bf18a796eb08ccf859cbc57c3515e1
--  __DATA_CONST.__objc_superrefs: 0x780 sha256:ce4f939032d948ffe2589cf4d92355be1d529ce0899bf100fc0bdfd1ee5c830d
--  __DATA_CONST.__objc_arraydata: 0x858 sha256:955b0fd39ed1a31b4a147202371de008c02f550171d0008bc861e8e12def3428
--  __DATA_CONST.__got: 0x15b8 sha256:1900434f4cdfc9dc62c6bd9665304b404d0a796900a330e9f8e334bbb98ed93c
--  __AUTH_CONST.__const: 0x3db8 sha256:bb864c2d2b90c677509e8bdcd4f2ac37fa9035016ed31abc748aee50518cbf3a
--  __AUTH_CONST.__cfstring: 0xfea0 sha256:34c755364889c467980025ef46d22a2f0cda4bf5fce748d595d19ec13678596f
--  __AUTH_CONST.__objc_const: 0x3ca38 sha256:19dd5be63f3e4c0cc2cb12d42896897e55812a3aaa036dde65de686856444cc7
--  __AUTH_CONST.__weak_auth_got: 0x60 sha256:9671d793772c672e10483b6f913617bcdb1c242f3c5d06bd09562921a049abde
--  __AUTH_CONST.__objc_arrayobj: 0x5b8 sha256:f5bcb964ff6e1a2bb7174437bae0b83e5e60c354ca03baeedd3dcc841d049f99
--  __AUTH_CONST.__objc_intobj: 0x38a0 sha256:449bbd79a0a10fe638e02e6d7926b8d08658784cb788908203c1d4ae06423522
--  __AUTH_CONST.__objc_doubleobj: 0x390 sha256:216ceedb8e2bb621ca4c4220f05b8db791ae45de167774e846c098521c8b6b1c
--  __AUTH_CONST.__objc_floatobj: 0x10 sha256:18a03710a348e26ae01281a0fa3a89c59a6543915e90d58eb8a6431b7f2632c9
-+  __DATA_CONST.__weak_got: 0x18 sha256:e799c57cfd6d3435481552fc363c3c12f57477c60518daab2b12387ed5b2f87a
-+  __DATA_CONST.__objc_selrefs: 0x7dc8 sha256:6567cee361ba0a38aaf8c1b51790205af621e29f1f6bc25110feef62a7fa9353
-+  __DATA_CONST.__objc_protorefs: 0x90 sha256:256073b58a05212197f808d1e70f1f0aacca72b90a4cac0326971e6d6ffae076
-+  __DATA_CONST.__objc_superrefs: 0x790 sha256:b167dd74c0b13c97a03fc5c20c7263731fffa16e05b765a298089d573abbba48
-+  __DATA_CONST.__objc_arraydata: 0x858 sha256:07d1f431c73fa88f6a282c0b5bf3778c3a07f7bb877e7de77107543edce280c5
-+  __DATA_CONST.__got: 0x15c8 sha256:def516ab8ca2e1db8b3765a7991c6207a44441ce3753f0ff847851ba835c03a0
-+  __AUTH_CONST.__const: 0x3db8 sha256:c4ca0d39228f28ca7aef5ea4062f0bf3d52010aa20d43c7c45c5cb7704c33014
-+  __AUTH_CONST.__cfstring: 0xfea0 sha256:21ea80fb636bef85772ce10ea1cf50e8b15f95eca75041f456f1baaf64a8a325
-+  __AUTH_CONST.__objc_const: 0x3cc50 sha256:30a8d57afa7e3ac9ab19f9d0fef19816a796f22cf69eca6a868512056973d823
-+  __AUTH_CONST.__weak_auth_got: 0x60 sha256:4e3c925fcea287f323bea462c31bd84cc5d2305e53ea333864b8e04e7a3b5bdb
-+  __AUTH_CONST.__objc_arrayobj: 0x5b8 sha256:39d193e803e8eeae7f8ea4c3a95eabb21b189881c5d28860712934209bb4f9e4
-+  __AUTH_CONST.__objc_intobj: 0x38a0 sha256:be7a81ac52241588684b787215ec74abf018283ec0769b4db533b8facdab5983
-+  __AUTH_CONST.__objc_doubleobj: 0x390 sha256:d259e72e020ee63831b2ea63a872d8e6b708d209f949db5c3299bed8faeff378
-+  __AUTH_CONST.__objc_floatobj: 0x10 sha256:0e63860e10c590a34503302e1ad9ed0123eaf41a81860e66f46e0b4215349831
-   __AUTH_CONST.__auth_got: 0x1f10 sha256:c3d8455c6fc836ae8ae68944728caa652e20884230fb462bbb036e8879d197ba
--  __AUTH.__objc_data: 0x3520 sha256:e30493c3c184108529f14196117baaa02b394775cefb88dee249dc3ce253fdb6
--  __AUTH.__data: 0x10 sha256:851fc9f5099673ac7d1c9d3d11327d6a2e2b15d651c86bb4577037ed34206972
--  __DATA.__objc_ivar: 0x1fe0 sha256:f3bbd276065b0bdd94079652c111805042671b973ded5844bb2fb63fee03b4d1
--  __DATA.__data: 0x1c88 sha256:4b1132da002bc23671759a509f12615b0a34e6402fdade5521a8f86cc209f83c
-+  __AUTH.__objc_data: 0x35c0 sha256:157acff256022839f027da8484885aa466f39c4279eb55f2b4e2263f98996476
-+  __AUTH.__data: 0x10 sha256:c259ca5d46deef217f5169a41a1c1ae32b67cc9897fe59cbd522208154e46c6b
-+  __DATA.__objc_ivar: 0x1ff8 sha256:26d92669fc667301db6e67a0ab61b93017f654c437536e266baa947a7455b579
-+  __DATA.__data: 0x1c88 sha256:4ee6cccfe8f0f558fd1b491e1f64740e81046b4d4431b51795c24c1c52cd7a85
-   __DATA.__crash_info: 0x148 sha256:6da6349e97370e8d430272961ce52dff296ff7c22208bd465045a16f557b12e4
--  __DATA.__bss: 0x1890 sha256:fb2a140e1071e9c8ac32b688e38b5b3d53713e6874e67969c44d9d46f60dd156
-+  __DATA.__bss: 0x1888 sha256:774d87760b5da12caa47e6374713b6dd13d971a26705b3884c76814632cf2e3c
-   __DATA.__common: 0x8 sha256:af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc
--  __DATA_DIRTY.__objc_data: 0x1f40 sha256:57d707522171df3da4b0769ce522562eb31de767af75cd0ec68517ea55e5e3e7
--  __DATA_DIRTY.__data: 0x10 sha256:747bce918ff79aad6788b388b21e4e8365813758bef9207a2283d990568202e7
--  __DATA_DIRTY.__bss: 0xa60 sha256:d8d7fd075803b6883699e3b3f8b30636859f50fb3cd083dfd3a74f36a18ae730
-+  __DATA_DIRTY.__objc_data: 0x1f40 sha256:637382b5819ade11c1e01a07af105af5c3c2ece2623190b62353b159825f19fc
-+  __DATA_DIRTY.__data: 0x10 sha256:f31fb3f005cd67f8c16cf4d8bf6573785944cbeb1eab3aca1a3fbb44cd95b436
-+  __DATA_DIRTY.__bss: 0xa80 sha256:bb270d5b01806f81489807bec2d3a07d07d3df4ecca188d9390cf4323ddbbee1
-   __DATA_DIRTY.__common: 0x28 sha256:2c34ce1df23b838c5abf2a7f6437cca3d3067ed509ff25f11df6b11b582b51eb
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
 
-   - /usr/lib/libchannel.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/librealtime_safety.dylib
--  UUID: A8C4AC2E-D6E8-3F49-9D15-8C94BAC90E0D
 -  Functions: 7949
--  Symbols:   30629
--  CStrings:  6597
-+  UUID: 82D6F3F9-25C3-3D4C-8E12-CF6410CED03C
+-  Symbols:   14461
+-  CStrings:  4549
 +  Functions: 7960
-+  Symbols:   30676
-+  CStrings:  6602
- 
++  Symbols:   14491
++  CStrings:  4554
 Symbols:
 + -[ARImageRouter .cxx_destruct]
 + -[ARImageRouter faceTrackingPlusRearCamera]
@@ -109,7 +48,6 @@ Symbols:
 + -[ARUltraWideAccumulator .cxx_destruct]
 + -[ARUltraWideAccumulator init]
 + -[ARUltraWideAccumulator processImage:]
-+ -[ARWorldTrackingTechnique pushCollaborationData:].cold.4
 + GCC_except_table146
 + GCC_except_table150
 + GCC_except_table154
@@ -121,10 +59,6 @@ Symbols:
 + GCC_except_table175
 + GCC_except_table177
 + GCC_except_table181
-+ _ARDisplayCenterTransformForCaptureDevicePosition.rearCameraFromDisplayCenter.0
-+ _ARDisplayCenterTransformForCaptureDevicePosition.rearCameraFromDisplayCenter.1
-+ _ARDisplayCenterTransformForCaptureDevicePosition.rearCameraFromDisplayCenter.2
-+ _ARDisplayCenterTransformForCaptureDevicePosition.rearCameraFromDisplayCenter.3
 + _ARMobileGestaltArrayForKey
 + _ARWorldTrackingDisableSLAMUserDefaultsKey
 + _OBJC_CLASS_$_ARImageRouter
@@ -147,7 +81,6 @@ Symbols:
 + __OBJC_CLASS_RO_$_ARUltraWideAccumulator
 + __OBJC_METACLASS_RO_$_ARImageRouter
 + __OBJC_METACLASS_RO_$_ARUltraWideAccumulator
-+ __PromotedConst.542
 + __ZNKRSt3__119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEE3strB9foe220106Ev
 + __ZNKSt3__113__string_hashIcNS_9allocatorIcEEEclB9foe220106ERKNS_12basic_stringIcNS_11char_traitsIcEES2_EE
 + __ZNKSt3__114default_deleteIN5arkit16FaceTrackingDataEEclB9foe220106EPS2_
@@ -189,11 +122,8 @@ Symbols:
 + __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B9foe220106ERKNS_12basic_stringIcS2_S4_EEj
 + __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B9foe220106Ej
 + __ZNSt3__116__if_likely_elseB9foe220106IZNS_6vectorI15ARTexturedPlaneNS_9allocatorIS2_EEE12emplace_backIJRKS2_EEERS2_DpOT_EUlvE_ZNS6_IJS8_EEES9_SC_EUlvE0_EEvbT_T0_
-+ __ZNSt3__116__if_likely_elseB9foe220106IZNS_6vectorI15ARTexturedPlaneNS_9allocatorIS2_EEE12emplace_backIJRKS2_EEERS2_DpOT_EUlvE_ZNS6_IJS8_EEES9_SC_EUlvE0_EEvbT_T0_.cold.1
 + __ZNSt3__116__if_likely_elseB9foe220106IZNS_6vectorIN5arkit7IntRectENS_9allocatorIS3_EEE12emplace_backIJRKDv2_mSA_EEERS3_DpOT_EUlvE_ZNS7_IJSA_SA_EEESB_SE_EUlvE0_EEvbT_T0_
-+ __ZNSt3__116__if_likely_elseB9foe220106IZNS_6vectorIN5arkit7IntRectENS_9allocatorIS3_EEE12emplace_backIJRKDv2_mSA_EEERS3_DpOT_EUlvE_ZNS7_IJSA_SA_EEESB_SE_EUlvE0_EEvbT_T0_.cold.1
 + __ZNSt3__116__if_likely_elseB9foe220106IZNS_6vectorINS1_IfNS_9allocatorIfEEEENS2_IS4_EEE12emplace_backIJRKS4_EEERS4_DpOT_EUlvE_ZNS7_IJS9_EEESA_SD_EUlvE0_EEvbT_T0_
-+ __ZNSt3__116__if_likely_elseB9foe220106IZNS_6vectorINS1_IfNS_9allocatorIfEEEENS2_IS4_EEE12emplace_backIJRKS4_EEERS4_DpOT_EUlvE_ZNS7_IJS9_EEESA_SD_EUlvE0_EEvbT_T0_.cold.1
 + __ZNSt3__116__pad_and_outputB9foe220106IcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_
 + __ZNSt3__119__allocator_destroyB9foe220106INS_9allocatorI15ARTexturedPlaneEENS_16reverse_iteratorIPS2_EES6_EEvRT_T0_T1_
 + __ZNSt3__119__allocator_destroyB9foe220106INS_9allocatorI15ARTexturedPlaneEEPS2_S4_EEvRT_T0_T1_
@@ -201,7 +131,6 @@ Symbols:
 + __ZNSt3__119basic_istringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B9foe220106ERKNS_12basic_stringIcS2_S4_EEj
 + __ZNSt3__119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B9foe220106Ev
 + __ZNSt3__120__optional_copy_baseIKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEELb0EEC2B9foe220106ERKS8_
-+ __ZNSt3__120__optional_copy_baseIKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEELb0EEC2B9foe220106ERKS8_.cold.1
 + __ZNSt3__120__shared_ptr_emplaceI14RaycastSessionNS_9allocatorIS1_EEEC2B9foe220106IJRP15CV3DSLAMSessionRU8__strongU13block_pointerFvPK20CV3DRaycastResultMapEbES3_Li0EEES3_DpOT_
 + __ZNSt3__120__shared_ptr_emplaceI21PlaneDetectionSessionNS_9allocatorIS1_EEEC2B9foe220106IJRP15CV3DSLAMSessionRK27PlaneDetectionConfigurationRU8__strongU13block_pointerFvPK27CV3DPlaneDetectionPlaneListEES3_Li0EEES3_DpOT_
 + __ZNSt3__120__shared_ptr_emplaceI21PlaneDetectionSessionNS_9allocatorIS1_EEEC2B9foe220106IJRP15CV3DSLAMSessionRK27PlaneDetectionConfigurationRU8__strongU13block_pointerFvPK27CV3DPlaneDetectionPlaneListERU8__strongU13block_pointerFvPK37CV3DPlaneDetectionSingleShotPlaneListEES3_Li0EEES3_DpOT_
@@ -245,8 +174,6 @@ Symbols:
 + __ZNSt3__13setIjNS_4lessIjEENS_9allocatorIjEEE6insertB9foe220106ERKj
 + __ZNSt3__13setIyNS_4lessIyEENS_9allocatorIyEEE6insertB9foe220106EOy
 + __ZNSt3__14pairIN3cva6MatrixIfLj9ELj1ELb0EEEfEC2B9foe220106IRNS2_IfLj0ELj1ELb0EEERKfLi0EEEOT_OT0_
-+ __ZNSt3__14pairIN3cva6MatrixIfLj9ELj1ELb0EEEfEC2B9foe220106IRNS2_IfLj0ELj1ELb0EEERKfLi0EEEOT_OT0_.cold.1
-+ __ZNSt3__14pairIN3cva6MatrixIfLj9ELj1ELb0EEEfEC2B9foe220106IRNS2_IfLj0ELj1ELb0EEERKfLi0EEEOT_OT0_.cold.2
 + __ZNSt3__14pairIfN3cva6MatrixIfLj1ELj0ELb0EEEEC2B9foe220106IfNS1_9MatrixRefIfLj1ELj0ELb0EEELi0EEEONS0_IT_T0_EE
 + __ZNSt3__15dequeINS_4pairINS_5arrayIhLm16EEE15ARTexturedPlaneEENS_9allocatorIS5_EEE26__maybe_remove_front_spareB9foe220106Eb
 + __ZNSt3__15dequeINS_4pairINS_5arrayIhLm16EEE15ARTexturedPlaneEENS_9allocatorIS5_EEED2B9foe220106Ev
@@ -502,54 +429,6 @@ Symbols:
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEmEENS_22__unordered_map_hasherIS7_NS_4pairIKS7_mEENS_4hashIS7_EENS_8equal_toIS7_EEEENS_21__unordered_map_equalIS7_SC_SG_SE_EENS5_ISC_EEE16__emplace_uniqueB9foe220106IJRKNS_21piecewise_construct_tENS_5tupleIJOS7_EEENSQ_IJEEEEEENSA_INS_15__hash_iteratorIPNS_11__hash_nodeIS8_PvEEEEbEEDpOT_ENKUlRSB_SP_OSS_OST_E_clES14_SP_S15_S16_
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeIPKvNS_6vectorIhNS_9allocatorIhEEEEEENS_22__unordered_map_hasherIS3_NS_4pairIKS3_S7_EENS_4hashIS3_EENS_8equal_toIS3_EEEENS_21__unordered_map_equalIS3_SC_SG_SE_EENS5_ISC_EEE16__emplace_uniqueB9foe220106IJRKNS_21piecewise_construct_tENS_5tupleIJRSB_EEENSQ_IJEEEEEENSA_INS_15__hash_iteratorIPNS_11__hash_nodeIS8_PvEEEEbEEDpOT_ENKUlSR_SP_OSS_OST_E_clESR_SP_S14_S15_
 + __ZZNSt3__112__hash_tableIjNS_4hashIjEENS_8equal_toIjEENS_9allocatorIjEEE16__emplace_uniqueB9foe220106IJRKjEEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIjPvEEEEbEEDpOT_ENKUlSA_SA_E_clESA_SA_
-+ ___40-[ARWorldTrackingTechnique processData:]_block_invoke.70
-+ ___42-[ARSession runWithConfiguration:options:]_block_invoke.35
-+ ___45+[ARSession _applySessionOverrides:outError:]_block_invoke.412
-+ ___48-[ARSession _sessionShouldAttemptRelocalization]_block_invoke.455
-+ ___53-[ARSession _updateSessionWithConfiguration:options:]_block_invoke.191
-+ ___54-[ARSession getGeoLocationForPoint:completionHandler:]_block_invoke.177
-+ ___61-[ARSession technique:didOutputResultData:timestamp:context:]_block_invoke.209
-+ ___61-[ARSession technique:didOutputResultData:timestamp:context:]_block_invoke.235
-+ ___61-[ARSession technique:didOutputResultData:timestamp:context:]_block_invoke.261
-+ ___61-[ARSession technique:didOutputResultData:timestamp:context:]_block_invoke_2.241
-+ ___61-[ARWorldTrackingTechnique _initializeSLAMAndPredictorHandle]_block_invoke.142
-+ ___61-[ARWorldTrackingTechnique _initializeSLAMAndPredictorHandle]_block_invoke.145
-+ ___61-[ARWorldTrackingTechnique _initializeSLAMAndPredictorHandle]_block_invoke.147
-+ ___61-[ARWorldTrackingTechnique _initializeSLAMAndPredictorHandle]_block_invoke.149
-+ ___63-[ARWorldTrackingTechnique didReceiveKeyframesUpdatedCallback:]_block_invoke.118
-+ ___69-[ARSession captureHighResolutionFrameUsingPhotoSettings:completion:]_block_invoke.416
-+ ___77-[ARWorldTrackingTechnique _updatePoseData:forTimeStamp:updateTrackingState:]_block_invoke.171
-+ ___ARDisplayCenterTransformForCaptureDevicePosition_block_invoke.cold.2
-+ ___block_literal_global.100
-+ ___block_literal_global.102
-+ ___block_literal_global.114
-+ ___block_literal_global.122
-+ ___block_literal_global.126
-+ ___block_literal_global.155
-+ ___block_literal_global.193
-+ ___block_literal_global.202
-+ ___block_literal_global.214
-+ ___block_literal_global.216
-+ ___block_literal_global.218
-+ ___block_literal_global.238
-+ ___block_literal_global.243
-+ ___block_literal_global.248
-+ ___block_literal_global.263
-+ ___block_literal_global.268
-+ ___block_literal_global.280
-+ ___block_literal_global.288
-+ ___block_literal_global.303
-+ ___block_literal_global.305
-+ ___block_literal_global.406
-+ ___block_literal_global.426
-+ ___block_literal_global.525
-+ ___block_literal_global.528
-+ ___block_literal_global.531
-+ ___block_literal_global.536
-+ ___block_literal_global.81
-+ ___block_literal_global.98
-+ _objc_msgSend$processImage:
-+ _objc_msgSend$setFaceTrackingPlusRearCamera:
 - -[ARSession isPrimaryImageData:]
 - GCC_except_table147
 - GCC_except_table161
@@ -560,11 +439,9 @@ Symbols:
 - GCC_except_table176
 - GCC_except_table178
 - GCC_except_table182
-- _ARDisplayCenterTransformForCaptureDevicePosition.rearCameraFromDisplayCenter
 - _AROpenLoopResourceExpiredResourceDictionaryKey
 - _AROpenLoopResourceExpiredTestModeEnabledKey
 - _OBJC_IVAR_$_ARSession._latestUltraWideImageData
-- __PromotedConst.535
 - __ZNKRSt3__119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEE3strB9foe220100Ev
 - __ZNKSt3__113__string_hashIcNS_9allocatorIcEEEclB9foe220100ERKNS_12basic_stringIcNS_11char_traitsIcEES2_EE
 - __ZNKSt3__114default_deleteIN5arkit16FaceTrackingDataEEclB9foe220100EPS2_
@@ -606,11 +483,8 @@ Symbols:
 - __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B9foe220100ERKNS_12basic_stringIcS2_S4_EEj
 - __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B9foe220100Ej
 - __ZNSt3__116__if_likely_elseB9foe220100IZNS_6vectorI15ARTexturedPlaneNS_9allocatorIS2_EEE12emplace_backIJRKS2_EEERS2_DpOT_EUlvE_ZNS6_IJS8_EEES9_SC_EUlvE0_EEvbT_T0_
-- __ZNSt3__116__if_likely_elseB9foe220100IZNS_6vectorI15ARTexturedPlaneNS_9allocatorIS2_EEE12emplace_backIJRKS2_EEERS2_DpOT_EUlvE_ZNS6_IJS8_EEES9_SC_EUlvE0_EEvbT_T0_.cold.1
 - __ZNSt3__116__if_likely_elseB9foe220100IZNS_6vectorIN5arkit7IntRectENS_9allocatorIS3_EEE12emplace_backIJRKDv2_mSA_EEERS3_DpOT_EUlvE_ZNS7_IJSA_SA_EEESB_SE_EUlvE0_EEvbT_T0_
-- __ZNSt3__116__if_likely_elseB9foe220100IZNS_6vectorIN5arkit7IntRectENS_9allocatorIS3_EEE12emplace_backIJRKDv2_mSA_EEERS3_DpOT_EUlvE_ZNS7_IJSA_SA_EEESB_SE_EUlvE0_EEvbT_T0_.cold.1
 - __ZNSt3__116__if_likely_elseB9foe220100IZNS_6vectorINS1_IfNS_9allocatorIfEEEENS2_IS4_EEE12emplace_backIJRKS4_EEERS4_DpOT_EUlvE_ZNS7_IJS9_EEESA_SD_EUlvE0_EEvbT_T0_
-- __ZNSt3__116__if_likely_elseB9foe220100IZNS_6vectorINS1_IfNS_9allocatorIfEEEENS2_IS4_EEE12emplace_backIJRKS4_EEERS4_DpOT_EUlvE_ZNS7_IJS9_EEESA_SD_EUlvE0_EEvbT_T0_.cold.1
 - __ZNSt3__116__pad_and_outputB9foe220100IcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_
 - __ZNSt3__119__allocator_destroyB9foe220100INS_9allocatorI15ARTexturedPlaneEENS_16reverse_iteratorIPS2_EES6_EEvRT_T0_T1_
 - __ZNSt3__119__allocator_destroyB9foe220100INS_9allocatorI15ARTexturedPlaneEEPS2_S4_EEvRT_T0_T1_
@@ -618,7 +492,6 @@ Symbols:
 - __ZNSt3__119basic_istringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B9foe220100ERKNS_12basic_stringIcS2_S4_EEj
 - __ZNSt3__119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B9foe220100Ev
 - __ZNSt3__120__optional_copy_baseIKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEELb0EEC2B9foe220100ERKS8_
-- __ZNSt3__120__optional_copy_baseIKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEELb0EEC2B9foe220100ERKS8_.cold.1
 - __ZNSt3__120__shared_ptr_emplaceI14RaycastSessionNS_9allocatorIS1_EEEC2B9foe220100IJRP15CV3DSLAMSessionRU8__strongU13block_pointerFvPK20CV3DRaycastResultMapEbES3_Li0EEES3_DpOT_
 - __ZNSt3__120__shared_ptr_emplaceI21PlaneDetectionSessionNS_9allocatorIS1_EEEC2B9foe220100IJRP15CV3DSLAMSessionRK27PlaneDetectionConfigurationRU8__strongU13block_pointerFvPK27CV3DPlaneDetectionPlaneListEES3_Li0EEES3_DpOT_
 - __ZNSt3__120__shared_ptr_emplaceI21PlaneDetectionSessionNS_9allocatorIS1_EEEC2B9foe220100IJRP15CV3DSLAMSessionRK27PlaneDetectionConfigurationRU8__strongU13block_pointerFvPK27CV3DPlaneDetectionPlaneListERU8__strongU13block_pointerFvPK37CV3DPlaneDetectionSingleShotPlaneListEES3_Li0EEES3_DpOT_
@@ -662,8 +535,6 @@ Symbols:
 - __ZNSt3__13setIjNS_4lessIjEENS_9allocatorIjEEE6insertB9foe220100ERKj
 - __ZNSt3__13setIyNS_4lessIyEENS_9allocatorIyEEE6insertB9foe220100EOy
 - __ZNSt3__14pairIN3cva6MatrixIfLj9ELj1ELb0EEEfEC2B9foe220100IRNS2_IfLj0ELj1ELb0EEERKfLi0EEEOT_OT0_
-- __ZNSt3__14pairIN3cva6MatrixIfLj9ELj1ELb0EEEfEC2B9foe220100IRNS2_IfLj0ELj1ELb0EEERKfLi0EEEOT_OT0_.cold.1
-- __ZNSt3__14pairIN3cva6MatrixIfLj9ELj1ELb0EEEfEC2B9foe220100IRNS2_IfLj0ELj1ELb0EEERKfLi0EEEOT_OT0_.cold.2
 - __ZNSt3__14pairIfN3cva6MatrixIfLj1ELj0ELb0EEEEC2B9foe220100IfNS1_9MatrixRefIfLj1ELj0ELb0EEELi0EEEONS0_IT_T0_EE
 - __ZNSt3__15dequeINS_4pairINS_5arrayIhLm16EEE15ARTexturedPlaneEENS_9allocatorIS5_EEE26__maybe_remove_front_spareB9foe220100Eb
 - __ZNSt3__15dequeINS_4pairINS_5arrayIhLm16EEE15ARTexturedPlaneEENS_9allocatorIS5_EEED2B9foe220100Ev
@@ -919,104 +790,30 @@ Symbols:
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEmEENS_22__unordered_map_hasherIS7_NS_4pairIKS7_mEENS_4hashIS7_EENS_8equal_toIS7_EEEENS_21__unordered_map_equalIS7_SC_SG_SE_EENS5_ISC_EEE16__emplace_uniqueB9foe220100IJRKNS_21piecewise_construct_tENS_5tupleIJOS7_EEENSQ_IJEEEEEENSA_INS_15__hash_iteratorIPNS_11__hash_nodeIS8_PvEEEEbEEDpOT_ENKUlRSB_SP_OSS_OST_E_clES14_SP_S15_S16_
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeIPKvNS_6vectorIhNS_9allocatorIhEEEEEENS_22__unordered_map_hasherIS3_NS_4pairIKS3_S7_EENS_4hashIS3_EENS_8equal_toIS3_EEEENS_21__unordered_map_equalIS3_SC_SG_SE_EENS5_ISC_EEE16__emplace_uniqueB9foe220100IJRKNS_21piecewise_construct_tENS_5tupleIJRSB_EEENSQ_IJEEEEEENSA_INS_15__hash_iteratorIPNS_11__hash_nodeIS8_PvEEEEbEEDpOT_ENKUlSR_SP_OSS_OST_E_clESR_SP_S14_S15_
 - __ZZNSt3__112__hash_tableIjNS_4hashIjEENS_8equal_toIjEENS_9allocatorIjEEE16__emplace_uniqueB9foe220100IJRKjEEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIjPvEEEEbEEDpOT_ENKUlSA_SA_E_clESA_SA_
-- ___40-[ARWorldTrackingTechnique processData:]_block_invoke.64
-- ___42-[ARSession runWithConfiguration:options:]_block_invoke.34
-- ___45+[ARSession _applySessionOverrides:outError:]_block_invoke.411
-- ___48-[ARSession _sessionShouldAttemptRelocalization]_block_invoke.454
-- ___53-[ARSession _updateSessionWithConfiguration:options:]_block_invoke.189
-- ___54-[ARSession getGeoLocationForPoint:completionHandler:]_block_invoke.176
-- ___61-[ARSession technique:didOutputResultData:timestamp:context:]_block_invoke.208
-- ___61-[ARSession technique:didOutputResultData:timestamp:context:]_block_invoke.234
-- ___61-[ARSession technique:didOutputResultData:timestamp:context:]_block_invoke.259
-- ___61-[ARSession technique:didOutputResultData:timestamp:context:]_block_invoke_2.240
-- ___61-[ARWorldTrackingTechnique _initializeSLAMAndPredictorHandle]_block_invoke.136
-- ___61-[ARWorldTrackingTechnique _initializeSLAMAndPredictorHandle]_block_invoke.137
-- ___61-[ARWorldTrackingTechnique _initializeSLAMAndPredictorHandle]_block_invoke.139
-- ___61-[ARWorldTrackingTechnique _initializeSLAMAndPredictorHandle]_block_invoke.141
-- ___63-[ARWorldTrackingTechnique didReceiveKeyframesUpdatedCallback:]_block_invoke.112
-- ___69-[ARSession captureHighResolutionFrameUsingPhotoSettings:completion:]_block_invoke.415
-- ___77-[ARWorldTrackingTechnique _updatePoseData:forTimeStamp:updateTrackingState:]_block_invoke.165
-- ___block_literal_global.107
-- ___block_literal_global.109
-- ___block_literal_global.117
-- ___block_literal_global.121
-- ___block_literal_global.123
-- ___block_literal_global.125
-- ___block_literal_global.127
-- ___block_literal_global.138
-- ___block_literal_global.162
-- ___block_literal_global.211
-- ___block_literal_global.213
-- ___block_literal_global.225
-- ___block_literal_global.227
-- ___block_literal_global.235
-- ___block_literal_global.237
-- ___block_literal_global.255
-- ___block_literal_global.257
-- ___block_literal_global.267
-- ___block_literal_global.271
-- ___block_literal_global.273
-- ___block_literal_global.281
-- ___block_literal_global.296
-- ___block_literal_global.301
-- ___block_literal_global.304
-- ___block_literal_global.312
-- ___block_literal_global.314
-- ___block_literal_global.405
-- ___block_literal_global.425
-- ___block_literal_global.518
-- ___block_literal_global.521
-- ___block_literal_global.524
-- ___block_literal_global.66
-- ___block_literal_global.90
-- _objc_msgSend$isPrimaryImageData:
 CStrings:
 + "%{public}@ <%p>: SLAM disabled via user defaults, skipping CV3D initialization"
 + "%{public}@ <%p>: World tracking SLAM %@"
 + "%{public}@ <%p>: collaboration data cannot be pushed because SLAM is disabled."
-+ "/AppleInternal/Library/BuildRoots/4~CRs7ugBipLo7gOUDmr007QxWEhKu6YPzqiKe4dM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__bit_reference:113: libc++ Hardening assertion __ctz + __clz < sizeof(_StorageType) * 8 failed: __fill_masked_range called with invalid range\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRs7ugBipLo7gOUDmr007QxWEhKu6YPzqiKe4dM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__hash_table:1855: libc++ Hardening assertion __p != end() failed: unordered container::erase(iterator) called with a non-dereferenceable iterator\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRs7ugBipLo7gOUDmr007QxWEhKu6YPzqiKe4dM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1161: libc++ Hardening assertion __position != end() failed: vector::erase(iterator) called with a non-dereferenceable iterator\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRs7ugBipLo7gOUDmr007QxWEhKu6YPzqiKe4dM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1171: libc++ Hardening assertion __first <= __last failed: vector::erase(first, last) called with invalid range\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRs7ugBipLo7gOUDmr007QxWEhKu6YPzqiKe4dM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:414: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRs7ugBipLo7gOUDmr007QxWEhKu6YPzqiKe4dM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:419: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRs7ugBipLo7gOUDmr007QxWEhKu6YPzqiKe4dM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:434: libc++ Hardening assertion !empty() failed: front() called on an empty vector\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRs7ugBipLo7gOUDmr007QxWEhKu6YPzqiKe4dM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:438: libc++ Hardening assertion !empty() failed: front() called on an empty vector\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRs7ugBipLo7gOUDmr007QxWEhKu6YPzqiKe4dM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:442: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRs7ugBipLo7gOUDmr007QxWEhKu6YPzqiKe4dM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:509: libc++ Hardening assertion !empty() failed: vector::pop_back called on an empty vector\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRs7ugBipLo7gOUDmr007QxWEhKu6YPzqiKe4dM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector_bool.h:297: libc++ Hardening assertion __n < size() failed: vector<bool>::operator[] index out of bounds\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRs7ugBipLo7gOUDmr007QxWEhKu6YPzqiKe4dM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector_bool.h:302: libc++ Hardening assertion __n < size() failed: vector<bool>::operator[] index out of bounds\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRs7ugBipLo7gOUDmr007QxWEhKu6YPzqiKe4dM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/array:279: libc++ Hardening assertion __n < _Size failed: out-of-bounds access in std::array<T, N>\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRs7ugBipLo7gOUDmr007QxWEhKu6YPzqiKe4dM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/array:284: libc++ Hardening assertion __n < _Size failed: out-of-bounds access in std::array<T, N>\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRs7ugBipLo7gOUDmr007QxWEhKu6YPzqiKe4dM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/deque:1565: libc++ Hardening assertion !empty() failed: deque::front called on an empty deque\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRs7ugBipLo7gOUDmr007QxWEhKu6YPzqiKe4dM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/deque:2199: libc++ Hardening assertion !empty() failed: deque::pop_front called on an empty deque\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRs7ugBipLo7gOUDmr007QxWEhKu6YPzqiKe4dM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/deque:2213: libc++ Hardening assertion !empty() failed: deque::pop_back called on an empty deque\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRs7ugBipLo7gOUDmr007QxWEhKu6YPzqiKe4dM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/optional:1121: libc++ Hardening assertion this->has_value() failed: optional operator-> called on a disengaged value\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRs7ugBipLo7gOUDmr007QxWEhKu6YPzqiKe4dM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string_view:343: libc++ Hardening assertion (__end - __begin) >= 0 failed: std::string_view::string_view(iterator, sentinel) received invalid range\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1161: libc++ Hardening assertion __position != end() failed: vector::erase(iterator) called with a non-dereferenceable iterator\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1171: libc++ Hardening assertion __first <= __last failed: vector::erase(first, last) called with invalid range\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:414: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:419: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:434: libc++ Hardening assertion !empty() failed: front() called on an empty vector\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:438: libc++ Hardening assertion !empty() failed: front() called on an empty vector\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:442: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:509: libc++ Hardening assertion !empty() failed: vector::pop_back called on an empty vector\n"
 + "Error: %{public}@ <%p>: collaboration data cannot be pushed because SLAM is disabled."
 + "Error: No front camera offset value found for device: %@"
 + "Too many reference objects for object tracking requested, the max is: %zu, got: %lu"
 + "com.apple.arkit.worldTracking.disableSLAM"
-- "/AppleInternal/Library/BuildRoots/4~CQu3ugDKdyz5y_Zbe1vHrYXuxMW9F9OVZ8VEJGU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__bit_reference:113: libc++ Hardening assertion __ctz + __clz < sizeof(_StorageType) * 8 failed: __fill_masked_range called with invalid range\n"
-- "/AppleInternal/Library/BuildRoots/4~CQu3ugDKdyz5y_Zbe1vHrYXuxMW9F9OVZ8VEJGU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__hash_table:1855: libc++ Hardening assertion __p != end() failed: unordered container::erase(iterator) called with a non-dereferenceable iterator\n"
-- "/AppleInternal/Library/BuildRoots/4~CQu3ugDKdyz5y_Zbe1vHrYXuxMW9F9OVZ8VEJGU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1146: libc++ Hardening assertion __position != end() failed: vector::erase(iterator) called with a non-dereferenceable iterator\n"
-- "/AppleInternal/Library/BuildRoots/4~CQu3ugDKdyz5y_Zbe1vHrYXuxMW9F9OVZ8VEJGU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1156: libc++ Hardening assertion __first <= __last failed: vector::erase(first, last) called with invalid range\n"
-- "/AppleInternal/Library/BuildRoots/4~CQu3ugDKdyz5y_Zbe1vHrYXuxMW9F9OVZ8VEJGU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:413: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
-- "/AppleInternal/Library/BuildRoots/4~CQu3ugDKdyz5y_Zbe1vHrYXuxMW9F9OVZ8VEJGU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:418: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
-- "/AppleInternal/Library/BuildRoots/4~CQu3ugDKdyz5y_Zbe1vHrYXuxMW9F9OVZ8VEJGU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:433: libc++ Hardening assertion !empty() failed: front() called on an empty vector\n"
-- "/AppleInternal/Library/BuildRoots/4~CQu3ugDKdyz5y_Zbe1vHrYXuxMW9F9OVZ8VEJGU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:437: libc++ Hardening assertion !empty() failed: front() called on an empty vector\n"
-- "/AppleInternal/Library/BuildRoots/4~CQu3ugDKdyz5y_Zbe1vHrYXuxMW9F9OVZ8VEJGU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:441: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
-- "/AppleInternal/Library/BuildRoots/4~CQu3ugDKdyz5y_Zbe1vHrYXuxMW9F9OVZ8VEJGU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:494: libc++ Hardening assertion !empty() failed: vector::pop_back called on an empty vector\n"
-- "/AppleInternal/Library/BuildRoots/4~CQu3ugDKdyz5y_Zbe1vHrYXuxMW9F9OVZ8VEJGU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector_bool.h:297: libc++ Hardening assertion __n < size() failed: vector<bool>::operator[] index out of bounds\n"
-- "/AppleInternal/Library/BuildRoots/4~CQu3ugDKdyz5y_Zbe1vHrYXuxMW9F9OVZ8VEJGU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector_bool.h:302: libc++ Hardening assertion __n < size() failed: vector<bool>::operator[] index out of bounds\n"
-- "/AppleInternal/Library/BuildRoots/4~CQu3ugDKdyz5y_Zbe1vHrYXuxMW9F9OVZ8VEJGU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/array:279: libc++ Hardening assertion __n < _Size failed: out-of-bounds access in std::array<T, N>\n"
-- "/AppleInternal/Library/BuildRoots/4~CQu3ugDKdyz5y_Zbe1vHrYXuxMW9F9OVZ8VEJGU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/array:284: libc++ Hardening assertion __n < _Size failed: out-of-bounds access in std::array<T, N>\n"
-- "/AppleInternal/Library/BuildRoots/4~CQu3ugDKdyz5y_Zbe1vHrYXuxMW9F9OVZ8VEJGU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/deque:1565: libc++ Hardening assertion !empty() failed: deque::front called on an empty deque\n"
-- "/AppleInternal/Library/BuildRoots/4~CQu3ugDKdyz5y_Zbe1vHrYXuxMW9F9OVZ8VEJGU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/deque:2199: libc++ Hardening assertion !empty() failed: deque::pop_front called on an empty deque\n"
-- "/AppleInternal/Library/BuildRoots/4~CQu3ugDKdyz5y_Zbe1vHrYXuxMW9F9OVZ8VEJGU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/deque:2213: libc++ Hardening assertion !empty() failed: deque::pop_back called on an empty deque\n"
-- "/AppleInternal/Library/BuildRoots/4~CQu3ugDKdyz5y_Zbe1vHrYXuxMW9F9OVZ8VEJGU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/optional:1121: libc++ Hardening assertion this->has_value() failed: optional operator-> called on a disengaged value\n"
-- "/AppleInternal/Library/BuildRoots/4~CQu3ugDKdyz5y_Zbe1vHrYXuxMW9F9OVZ8VEJGU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string_view:343: libc++ Hardening assertion (__end - __begin) >= 0 failed: std::string_view::string_view(iterator, sentinel) received invalid range\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1146: libc++ Hardening assertion __position != end() failed: vector::erase(iterator) called with a non-dereferenceable iterator\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1156: libc++ Hardening assertion __first <= __last failed: vector::erase(first, last) called with invalid range\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:413: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:418: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:433: libc++ Hardening assertion !empty() failed: front() called on an empty vector\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:437: libc++ Hardening assertion !empty() failed: front() called on an empty vector\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:441: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:494: libc++ Hardening assertion !empty() failed: vector::pop_back called on an empty vector\n"
 - "com.apple.arkit.polaris.resourceExpiredDictionary"
 - "com.apple.arkit.polaris.resourceExpiredTestModeEnabled"
-
 ```

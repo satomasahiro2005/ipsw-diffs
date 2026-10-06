@@ -2,112 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/SpeechEngine.framework/SpeechEngine`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x126dd4` | `0x12f514` | **`+0x8740`** |
+| `__TEXT.__eh_frame` | `0xdb10` | `0xdf94` | **`+0x484`** |
+| `__AUTH.__data` | `0xb30` | `0xe80` | **`+0x350`** |
+| `__TEXT.__oslogstring` | `0x3e5f` | `0x412f` | **`+0x2d0`** |
+| `__TEXT.__constg_swiftt` | `0x4fa8` | `0x5180` | **`+0x1d8`** |
+| `__TEXT.__unwind_info` | `0x5c50` | `0x5df8` | **`+0x1a8`** |
+| `__TEXT.__const` | `0xe1e0` | `0xe380` | **`+0x1a0`** |
+| `__AUTH_CONST.__const` | `0xbd70` | `0xbec0` | **`+0x150`** |
+| `__TEXT.__swift5_fieldmd` | `0x4618` | `0x4768` | **`+0x150`** |
+| `__TEXT.__swift5_reflstr` | `0x3876` | `0x39c6` | **`+0x150`** |
+| `__AUTH_CONST.__objc_const` | `0x4ef0` | `0x5038` | **`+0x148`** |
+| `__DATA.__data` | `0x2920` | `0x2a68` | **`+0x148`** |
+| `__TEXT.__cstring` | `0x5401` | `0x5521` | **`+0x120`** |
+| `__TEXT.__swift5_typeref` | `0x37ee` | `0x390c` | **`+0x11e`** |
+| `__AUTH_CONST.__auth_got` | `0x18b8` | `0x1988` | **`+0xd0`** |
+| `__TEXT.__swift5_capture` | `0x19e8` | `0x1ab8` | **`+0xd0`** |
+| `__AUTH.__objc_data` | `0x48` | `0xe8` | **`+0xa0`** |
+| `__DATA_DIRTY.__data` | `0x5930` | `0x59d0` | **`+0xa0`** |
+| `__DATA.__common` | `0x378` | `0x3e0` | **`+0x68`** |
+| `__TEXT.__swift_as_cont` | `0xb60` | `0xb98` | **`+0x38`** |
+| `__TEXT.__swift_as_entry` | `0x3e8` | `0x404` | **`+0x1c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3e0` | `0x3f8` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0x45c` | `0x470` | **`+0x14`** |
+| `__TEXT.__swift_as_ret` | `0x3fc` | `0x410` | **`+0x14`** |
+| `__DATA_CONST.__const` | `0x208` | `0x218` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x1c0` | `0x1c8` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x9e8` | `0x9ec` | **`+0x4`** |
+| `__TEXT.__swift5_protos` | `0x38` | `0x3c` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -3600.69.1.0.0
--  __TEXT.__text: 0x126dd4
 +3600.76.1.0.0
-+  __TEXT.__text: 0x12f514
-   __TEXT.__objc_methlist: 0xdc
--  __TEXT.__const: 0xe1e0
--  __TEXT.__cstring: 0x5401
--  __TEXT.__swift5_typeref: 0x37ee
--  __TEXT.__constg_swiftt: 0x4fa8
--  __TEXT.__swift5_reflstr: 0x3876
--  __TEXT.__swift5_fieldmd: 0x4618
-+  __TEXT.__const: 0xe380
-+  __TEXT.__cstring: 0x5521
-+  __TEXT.__swift5_typeref: 0x390c
-+  __TEXT.__constg_swiftt: 0x5180
-+  __TEXT.__swift5_reflstr: 0x39c6
-+  __TEXT.__swift5_fieldmd: 0x4768
-   __TEXT.__swift5_builtin: 0x1b8
-   __TEXT.__swift5_assocty: 0x1c8
--  __TEXT.__swift5_protos: 0x38
--  __TEXT.__swift5_proto: 0x9e8
--  __TEXT.__swift5_types: 0x45c
--  __TEXT.__swift_as_entry: 0x3e8
--  __TEXT.__swift_as_ret: 0x3fc
-+  __TEXT.__swift5_protos: 0x3c
-+  __TEXT.__swift5_proto: 0x9ec
-+  __TEXT.__swift5_types: 0x470
-+  __TEXT.__swift_as_entry: 0x404
-+  __TEXT.__swift_as_ret: 0x410
-   __TEXT.__swift5_mpenum: 0x60
--  __TEXT.__swift_as_cont: 0xb60
--  __TEXT.__swift5_capture: 0x19e8
--  __TEXT.__oslogstring: 0x3e5f
--  __TEXT.__unwind_info: 0x5c50
--  __TEXT.__eh_frame: 0xdb10
-+  __TEXT.__swift_as_cont: 0xb98
-+  __TEXT.__swift5_capture: 0x1ab8
-+  __TEXT.__oslogstring: 0x412f
-+  __TEXT.__unwind_info: 0x5df8
-+  __TEXT.__eh_frame: 0xdf94
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x208
--  __DATA_CONST.__objc_classlist: 0x1c0
-+  __DATA_CONST.__const: 0x218
-+  __DATA_CONST.__objc_classlist: 0x1c8
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3e0
-+  __DATA_CONST.__objc_selrefs: 0x3f8
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xbd70
--  __AUTH_CONST.__objc_const: 0x4ef0
--  __AUTH_CONST.__auth_got: 0x18b8
--  __AUTH.__objc_data: 0x48
--  __AUTH.__data: 0xb30
--  __DATA.__data: 0x2920
-+  __AUTH_CONST.__const: 0xbec0
-+  __AUTH_CONST.__objc_const: 0x5038
-+  __AUTH_CONST.__auth_got: 0x1988
-+  __AUTH.__objc_data: 0xe8
-+  __AUTH.__data: 0xe80
-+  __DATA.__data: 0x2a68
-   __DATA.__bss: 0x13630
--  __DATA.__common: 0x378
-+  __DATA.__common: 0x3e0
-   __DATA_DIRTY.__objc_data: 0x6e8
--  __DATA_DIRTY.__data: 0x5930
-+  __DATA_DIRTY.__data: 0x59d0
-   __DATA_DIRTY.__common: 0x198
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-+  - /System/Library/PrivateFrameworks/AppleIntelligenceReporting.framework/AppleIntelligenceReporting
-   - /System/Library/PrivateFrameworks/EmbeddedAcousticRecognition.framework/EmbeddedAcousticRecognition
-   - /System/Library/PrivateFrameworks/Espresso.framework/Espresso
-   - /System/Library/PrivateFrameworks/GenerativeFunctions.framework/GenerativeFunctions
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/PrivateFrameworks/AppleIntelligenceReporting.framework/AppleIntelligenceReporting
+
 -  Functions: 8931
--  Symbols:   2422
+-  Symbols:   2307
 -  CStrings:  879
 +  Functions: 9065
-+  Symbols:   2500
++  Symbols:   2382
 +  CStrings:  899
- 
 Symbols:
 + _OBJC_CLASS_$_NSProcessInfo
 + _OBJC_CLASS_$_OS_dispatch_workloop
@@ -164,11 +106,6 @@ Symbols:
 + _dispatch_workloop_create_inactive
 + _dispatch_workloop_set_scheduler_priority
 + _mach_thread_self
-+ _objc_msgSend$initWithRelevantTextContext:
-+ _objc_msgSend$initWithlanguage:replacements:configPath:option:overrideConfigFiles:
-+ _objc_msgSend$processInfo
-+ _objc_msgSend$processTokens:donateEmojiUsage:usePersonalizedEmoji:requestContext:
-+ _objc_msgSend$thermalState
 + _qos_class_self
 + _swift_cvw_initEnumMetadataSingleCaseWithLayoutString
 + _swift_getExistentialTypeMetadata
@@ -211,8 +148,6 @@ Symbols:
 - ___swift_closure_destructor.507Tm
 - ___swift_memcpy176_8
 - ___swift_memcpy73_8
-- _objc_msgSend$initWithlanguage:replacements:configPath:option:
-- _objc_msgSend$processTokens:donateEmojiUsage:usePersonalizedEmoji:
 - _symbolic ScsySS______pG s5ErrorP
 - _symbolic _____ySS______p_G Scs12ContinuationV s5ErrorP
 - _symbolic _____ySS______p_G Scs8IteratorV s5ErrorP

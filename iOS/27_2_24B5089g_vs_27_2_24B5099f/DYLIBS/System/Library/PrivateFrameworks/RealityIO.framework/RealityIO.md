@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/RealityIO.framework/RealityIO`
 
-```diff
+### Section Size Changes
 
- 235.40.2.0.0
--  __TEXT.__text: 0xf8b90
-+  __TEXT.__text: 0xf8b94
-   __TEXT.__objc_methlist: 0x29c
-   __TEXT.__const: 0xb060
-   __TEXT.__constg_swiftt: 0x41d8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfd954` | `0xfd958` | **`+0x4`** |
+
+### Other Changes
+
+```diff
 Symbols:
 + _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVy10RealityKit17AnimationResourceC04animI0_Si11trackNumbertG_Tg503$s9f62IO15TimelineBuilderC3run6inputsyAA6InputsC_tFyyXEfU_Sb0A3Kit17hi37C04animJ0_Si11trackNumbert_AjK_SiALttU3U2_Tf1nnc_n
 + _$ss13_UnsafeBitsetV027_withTemporaryUninitializedB09wordCount4bodyxSi_xABq_YKXEtq_YKs5ErrorR_r0_lFZxSryAB4WordVGq_YKXEfU_s17_NativeDictionaryVySo19REComponentClassPtraSo8RETypeIDaG_s5NeverOTg506$ss13_ab8V013withd36B08capacity4bodyxSi_xABq_YKXEtq_YKs5i9R_r0_lFZxw12_YKXEfU_s17_kl6VySo19mn7PtraSo8p7IDaG_s5R4OTG5ABq_xRi_zRi0_zRi__Ri0__r0_lyArPIsgyrzr_Tf1nc_n06$ss17_kl47V6filteryAByxq_GSbx3key_q_5valuet_tqd__YKXEqd__yi12Rd__lFADs13_ab16Vqd__YKXEfU_So19mn8Ptra_So8p5IDas5R4OTG5APxq_Sbq0_Ri_zRi0_zRi__Ri0__Ri_0_Ri0_0_r1_lyAmoRIsgnndzr_Tf1nc_n

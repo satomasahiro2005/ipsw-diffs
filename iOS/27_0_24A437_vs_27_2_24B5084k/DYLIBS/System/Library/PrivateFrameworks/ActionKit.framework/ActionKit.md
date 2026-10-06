@@ -2,107 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/ActionKit.framework/ActionKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x40e0a0` | `0x3fc8b8` | **`-0x117e8`** |
+| `__TEXT.__cstring` | `0x54085` | `0x58cb5` | **`+0x4c30`** |
+| `__TEXT.__eh_frame` | `0x9f58` | `0x9e30` | **`-0x128`** |
+| `__TEXT.__ustring` | `0x4352` | `0x443e` | **`+0xec`** |
+| `__DATA_CONST.__const` | `0x1e030` | `0x1e110` | **`+0xe0`** |
+| `__TEXT.__oslogstring` | `0x6a00` | `0x6951` | **`-0xaf`** |
+| `__TEXT.__unwind_info` | `0xe670` | `0xe618` | **`-0x58`** |
+| `__TEXT.__swift5_typeref` | `0x3e85` | `0x3ed9` | **`+0x54`** |
+| `__DATA.__data` | `0xb5d8` | `0xb628` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x21b4c` | `0x21b9c` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x47b8` | `0x4800` | **`+0x48`** |
+| `__AUTH_CONST.__cfstring` | `0x2bc40` | `0x2bc80` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0xf7f0` | `0xf830` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x3640` | `0x3608` | **`-0x38`** |
+| `__AUTH_CONST.__const` | `0x11240` | `0x11218` | **`-0x28`** |
+| `__AUTH.__data` | `0xd70` | `0xd80` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0x1698` | `0x1688` | **`-0x10`** |
+| `__TEXT.__const` | `0x2a9d8` | `0x2a9e8` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x848` | `0x83c` | **`-0xc`** |
+| `__TEXT.__swift_as_ret` | `0x560` | `0x554` | **`-0xc`** |
+| `__AUTH.__objc_data` | `0x8000` | `0x8008` | **`+0x8`** |
+| `__DATA_DIRTY.__common` | `0x20` | `0x28` | **`+0x8`** |
+| `__TEXT.__constg_swiftt` | `0x1ec8` | `0x1ed0` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x474` | `0x470` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -5037.109.0.0.0
--  __TEXT.__text: 0x3f348c
--  __TEXT.__objc_methlist: 0x21b4c
--  __TEXT.__const: 0x2a9d8
 +5110.0.8.0.0
-+  __TEXT.__text: 0x3e1e18
-+  __TEXT.__objc_methlist: 0x21b9c
-+  __TEXT.__const: 0x2a9e8
-   __TEXT.__dlopen_cstrs: 0x2809
--  __TEXT.__cstring: 0x54085
--  __TEXT.__constg_swiftt: 0x1ec8
--  __TEXT.__swift5_typeref: 0x3e85
-+  __TEXT.__cstring: 0x58cb5
-+  __TEXT.__constg_swiftt: 0x1ed0
-+  __TEXT.__swift5_typeref: 0x3ed9
-   __TEXT.__swift5_builtin: 0x21c
-   __TEXT.__swift5_reflstr: 0x151b
-   __TEXT.__swift5_fieldmd: 0x12a4
-   __TEXT.__swift5_assocty: 0xe20
-   __TEXT.__swift5_proto: 0x750
-   __TEXT.__swift5_types: 0x210
--  __TEXT.__swift_as_entry: 0x474
--  __TEXT.__swift_as_ret: 0x560
--  __TEXT.__swift_as_cont: 0x848
-+  __TEXT.__swift_as_entry: 0x470
-+  __TEXT.__swift_as_ret: 0x554
-+  __TEXT.__swift_as_cont: 0x83c
-   __TEXT.__swift5_capture: 0xc14
-   __TEXT.__swift5_protos: 0x1c
--  __TEXT.__oslogstring: 0x6a00
-+  __TEXT.__oslogstring: 0x6951
-   __TEXT.__swift5_mpenum: 0x24
-   __TEXT.__gcc_except_tab: 0x3e28
--  __TEXT.__ustring: 0x4352
--  __TEXT.__unwind_info: 0x11a90
--  __TEXT.__eh_frame: 0x9f60
-+  __TEXT.__ustring: 0x443e
-+  __TEXT.__unwind_info: 0x11a70
-+  __TEXT.__eh_frame: 0x9e38
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1e030
-+  __DATA_CONST.__const: 0x1e110
-   __DATA_CONST.__objc_classlist: 0x1ac8
-   __DATA_CONST.__objc_nlclslist: 0x8
-   __DATA_CONST.__objc_catlist: 0x108
-   __DATA_CONST.__objc_protolist: 0x550
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xf7f0
-+  __DATA_CONST.__objc_selrefs: 0xf830
-   __DATA_CONST.__objc_protorefs: 0x1e8
-   __DATA_CONST.__objc_superrefs: 0xc90
-   __DATA_CONST.__objc_arraydata: 0xd88
--  __DATA_CONST.__got: 0x47b8
--  __AUTH_CONST.__const: 0x11240
--  __AUTH_CONST.__cfstring: 0x2bc40
-+  __DATA_CONST.__got: 0x4800
-+  __AUTH_CONST.__const: 0x11218
-+  __AUTH_CONST.__cfstring: 0x2bc80
-   __AUTH_CONST.__objc_const: 0x3e5c8
-   __AUTH_CONST.__weak_auth_got: 0x8
-   __AUTH_CONST.__objc_intobj: 0x1bc0
 
-   __AUTH_CONST.__objc_dictobj: 0xc8
-   __AUTH_CONST.__objc_floatobj: 0x30
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x3640
--  __AUTH.__objc_data: 0x8000
--  __AUTH.__data: 0xd70
-+  __AUTH_CONST.__auth_got: 0x3608
-+  __AUTH.__objc_data: 0x8008
-+  __AUTH.__data: 0xd80
-   __DATA.__objc_ivar: 0x1d5c
--  __DATA.__data: 0xb5d8
-+  __DATA.__data: 0xb628
-   __DATA.__common: 0xf8
-   __DATA_DIRTY.__objc_data: 0x9b20
--  __DATA_DIRTY.__data: 0x1698
-+  __DATA_DIRTY.__data: 0x1688
-   __DATA_DIRTY.__bss: 0x8110
--  __DATA_DIRTY.__common: 0x20
-+  __DATA_DIRTY.__common: 0x28
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 24047
--  Symbols:   38166
+-  Functions: 24046
+-  Symbols:   32368
 -  CStrings:  13241
-+  Functions: 24044
-+  Symbols:   38220
++  Functions: 24043
++  Symbols:   32414
 +  CStrings:  13476
- 
 Symbols:
 + -[WFOpenInAction cannotPrepareFileErrorWithFilename:]
 + -[WFOpenInAction proposedStagedFileURLForFilename:]
@@ -398,22 +339,6 @@ Symbols:
 + ___block_descriptor_49_e8_32s40bs_e48_v24?0"WFFileStorageServiceResult"8"NSError"16ls40l8s32l8
 + ___block_descriptor_64_e8_32s40s48s56bs_e34_v24?0"NEVPNManager"8"NSError"16ls56l8s32l8s40l8s48l8
 + _getWFRemoteExecutionLogObject
-+ _objc_msgSend$canSendDataToContentDestination:error:
-+ _objc_msgSend$cannotPrepareFileErrorWithFilename:
-+ _objc_msgSend$didSpreadModelRequestLoad
-+ _objc_msgSend$enableThenStartVPN:withManager:completionHandler:
-+ _objc_msgSend$initWithContentAttributionSets:actionName:
-+ _objc_msgSend$internalFailureErrorWithUnderlyingError:
-+ _objc_msgSend$loadManagerForVPN:completionHandler:
-+ _objc_msgSend$presentationMode
-+ _objc_msgSend$proposedStagedFileURLForFilename:
-+ _objc_msgSend$setDidSpreadModelRequestLoad:
-+ _objc_msgSend$setUpDirectories
-+ _objc_msgSend$sharedAppGroupDirectoryURL
-+ _objc_msgSend$sharedTemporaryDirectoryURL
-+ _objc_msgSend$showOpenInMenuWithUserInterface:fileRepresentation:stagedFileURL:contentManaged:
-+ _objc_msgSend$startVPNWithManager:completionHandler:
-+ _objc_msgSend$wf_sanitizedFilename
 + _swift_stdlib_random
 + _symbolic So11WFParameterC9parameter_SS3keyt
 + _symbolic _____ySo11WFParameterC9parameter_SS3keytG s23_ContiguousArrayStorageC
@@ -670,14 +595,6 @@ Symbols:
 - ___51-[WFOpenInAction runWithRemoteUserInterface:input:]_block_invoke_3
 - ___block_descriptor_56_e8_32s40s48s_e48_v24?0"WFFileStorageServiceResult"8"NSError"16ls32l8s40l8s48l8
 - ___block_descriptor_64_e8_32s40s48s56bs_e29_v24?0"NSArray"8"NSError"16ls56l8s32l8s40l8s48l8
-- _objc_msgSend$iconForApplicationIdentifier:
-- _objc_msgSend$indexOfAction:
-- _objc_msgSend$setDefaultActionTitle:
-- _objc_msgSend$setDefaultActionURL:
-- _objc_msgSend$setHasDefaultAction:
-- _objc_msgSend$setInterruptionLevel:
-- _objc_msgSend$setShouldDisplayActionsInline:
-- _objc_msgSend$setShouldSuppressDefaultAction:
 - _symbolic _____Sg 16FoundationModels32PrivateCloudComputeLanguageModelC10QuotaUsageV
 - _symbolic _____y_____G s23_ContiguousArrayStorageC 10Foundation12URLQueryItemV
 CStrings:

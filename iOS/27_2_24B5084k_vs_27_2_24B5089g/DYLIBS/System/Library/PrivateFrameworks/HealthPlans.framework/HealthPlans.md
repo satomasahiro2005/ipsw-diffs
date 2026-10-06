@@ -2,92 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/HealthPlans.framework/HealthPlans`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbd988` | `0xafe40` | **`-0xdb48`** |
+| `__DATA.__bss` | `0x189a0` | `0x17250` | **`-0x1750`** |
+| `__TEXT.__const` | `0xcb56` | `0xbcb6` | **`-0xea0`** |
+| `__AUTH_CONST.__const` | `0x6b58` | `0x5d30` | **`-0xe28`** |
+| `__TEXT.__eh_frame` | `0x5104` | `0x4b40` | **`-0x5c4`** |
+| `__AUTH_CONST.__objc_const` | `0xb50` | `0x650` | **`-0x500`** |
+| `__TEXT.__swift5_fieldmd` | `0x2b04` | `0x262c` | **`-0x4d8`** |
+| `__TEXT.__constg_swiftt` | `0x2428` | `0x2024` | **`-0x404`** |
+| `__TEXT.__unwind_info` | `0x34b8` | `0x3120` | **`-0x398`** |
+| `__AUTH.__data` | `0x1d90` | `0x1a10` | **`-0x380`** |
+| `__TEXT.__cstring` | `0x1827` | `0x1576` | **`-0x2b1`** |
+| `__TEXT.__swift5_reflstr` | `0x1ab8` | `0x1821` | **`-0x297`** |
+| `__TEXT.__swift5_typeref` | `0x1995` | `0x17bd` | **`-0x1d8`** |
+| `__DATA.__data` | `0x2908` | `0x2808` | **`-0x100`** |
+| `__TEXT.__swift5_proto` | `0xc90` | `0xbc8` | **`-0xc8`** |
+| `__AUTH.__objc_data` | `0x220` | `0x160` | **`-0xc0`** |
+| `__TEXT.__swift5_assocty` | `0x450` | `0x390` | **`-0xc0`** |
+| `__TEXT.__swift5_types` | `0x394` | `0x330` | **`-0x64`** |
+| `__TEXT.__swift_as_cont` | `0x25c` | `0x1fc` | **`-0x60`** |
+| `__TEXT.__objc_methlist` | `0x104` | `0xb4` | **`-0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1c0` | `0x178` | **`-0x48`** |
+| `__TEXT.__swift_as_ret` | `0x1ac` | `0x168` | **`-0x44`** |
+| `__TEXT.__swift_as_entry` | `0x1cc` | `0x194` | **`-0x38`** |
+| `__TEXT.__oslogstring` | `0x656` | `0x626` | **`-0x30`** |
+| `__TEXT.__swift5_capture` | `0x110` | `0xe4` | **`-0x2c`** |
+| `__DATA_CONST.__objc_classlist` | `0x60` | `0x40` | **`-0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xf78` | `0xf90` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x78` | `0x64` | **`-0x14`** |
+| `__TEXT.__swift5_protos` | `0x4c` | `0x40` | **`-0xc`** |
+| `__TEXT.__swift5_mpenum` | `0x28` | `0x20` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.36.2.7
--  __TEXT.__text: 0xb61a8
--  __TEXT.__objc_methlist: 0x104
--  __TEXT.__const: 0xcb56
--  __TEXT.__cstring: 0x1827
--  __TEXT.__swift5_typeref: 0x1995
--  __TEXT.__swift5_fieldmd: 0x2b04
--  __TEXT.__constg_swiftt: 0x2428
--  __TEXT.__swift5_reflstr: 0x1ab8
--  __TEXT.__swift5_builtin: 0x78
--  __TEXT.__swift5_assocty: 0x450
--  __TEXT.__oslogstring: 0x656
--  __TEXT.__swift5_protos: 0x4c
--  __TEXT.__swift5_proto: 0xc90
--  __TEXT.__swift5_types: 0x394
--  __TEXT.__swift5_capture: 0x110
--  __TEXT.__swift5_mpenum: 0x28
--  __TEXT.__swift_as_entry: 0x1cc
--  __TEXT.__swift_as_ret: 0x1ac
--  __TEXT.__swift_as_cont: 0x25c
--  __TEXT.__unwind_info: 0x42c0
--  __TEXT.__eh_frame: 0x5124
 +7027.1.45.2.4
-+  __TEXT.__text: 0xa9214
-+  __TEXT.__objc_methlist: 0xb4
-+  __TEXT.__const: 0xbcb6
-+  __TEXT.__cstring: 0x1576
-+  __TEXT.__swift5_typeref: 0x17bd
-+  __TEXT.__swift5_fieldmd: 0x262c
-+  __TEXT.__constg_swiftt: 0x2024
-+  __TEXT.__swift5_reflstr: 0x1821
-+  __TEXT.__swift5_builtin: 0x64
-+  __TEXT.__swift5_assocty: 0x390
-+  __TEXT.__oslogstring: 0x626
-+  __TEXT.__swift5_protos: 0x40
-+  __TEXT.__swift5_proto: 0xbc8
-+  __TEXT.__swift5_types: 0x330
-+  __TEXT.__swift5_mpenum: 0x20
-+  __TEXT.__swift_as_entry: 0x194
-+  __TEXT.__swift_as_ret: 0x168
-+  __TEXT.__swift_as_cont: 0x1fc
-+  __TEXT.__swift5_capture: 0xe4
-+  __TEXT.__unwind_info: 0x3e08
-+  __TEXT.__eh_frame: 0x4b58
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x110
--  __DATA_CONST.__objc_classlist: 0x60
-+  __DATA_CONST.__objc_classlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1c0
-+  __DATA_CONST.__objc_selrefs: 0x178
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x6b58
--  __AUTH_CONST.__objc_const: 0xb50
--  __AUTH_CONST.__auth_got: 0xf78
--  __AUTH.__objc_data: 0x220
--  __AUTH.__data: 0x1d90
--  __DATA.__data: 0x2908
-+  __AUTH_CONST.__const: 0x5d30
-+  __AUTH_CONST.__objc_const: 0x650
-+  __AUTH_CONST.__auth_got: 0xf90
-+  __AUTH.__objc_data: 0x160
-+  __AUTH.__data: 0x1a10
-+  __DATA.__data: 0x2808
-   __DATA_DIRTY.__data: 0x28
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreLocation.framework/CoreLocation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4701
--  Symbols:   1136
+-  Symbols:   1087
 -  CStrings:  220
 +  Functions: 4349
-+  Symbols:   1044
++  Symbols:   1004
 +  CStrings:  193
- 
 Symbols:
 + _associated conformance 11HealthPlans16ActionSuggestionO04TextD0V0A9Utilities35RedactedDiagnosticOutputConvertibleAaF0hiJ0
 + _associated conformance 11HealthPlans16ActionSuggestionO12PlaceContextV0A9Utilities35RedactedDiagnosticOutputConvertibleAaF0ijK0
@@ -101,8 +63,6 @@ Symbols:
 + _get_witness_table 15HealthUtilities27DiagnosticOutputConvertibleRzl0A5Plans20InternalStateWrapperV21SimplifiedContentPoolV24JSONFriendlyTagPredicateOAaBHPyHC
 + _get_witness_table 15HealthUtilities27DiagnosticOutputConvertibleRzl0A7Domains16DomainIdentifierVAaBHPyHC
 + _get_witness_table 15HealthUtilities27DiagnosticOutputConvertibleRzl0A7Domains17MeasureIdentifierVAaBHPyHC
-+ _objc_msgSend$altitude
-+ _objc_msgSend$initWithCoordinate:altitude:horizontalAccuracy:verticalAccuracy:timestamp:
 + _objc_release_x26
 + _swift_getDynamicType
 + _swift_release_x3
@@ -163,17 +123,6 @@ Symbols:
 - _associated conformance 11HealthPlans41BackgroundPoolGenerationPendingSupplementV10CodingKeys33_2A90B0679910C4BE98A074FE666C55DALLOs0H3KeyAAs23CustomStringConvertible
 - _associated conformance 11HealthPlans41BackgroundPoolGenerationPendingSupplementV10CodingKeys33_2A90B0679910C4BE98A074FE666C55DALLOs0H3KeyAAs28CustomDebugStringConvertible
 - _get_enum_tag_for_layout_string 11HealthPlans27SuggestionsInteractionValueO
-- _objc_msgSend$activePairedDeviceProductType
-- _objc_msgSend$ageWithCurrentDate:error:
-- _objc_msgSend$biologicalSexWithError:
-- _objc_msgSend$currentDate
-- _objc_msgSend$dateOfBirthComponentsWithError:
-- _objc_msgSend$environmentDataSource
-- _objc_msgSend$healthDataSource
-- _objc_msgSend$integerValue
-- _objc_msgSend$isImproveHealthAndActivityEnabled
-- _objc_msgSend$processInfo
-- _objc_msgSend$systemUptime
 - _objc_retain_x2
 - _swift_endAccess
 - _swift_release_x1

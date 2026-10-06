@@ -2,15 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/FileProviderResolver.framework/FileProviderResolver`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1521c` | `0x151fc` | **`-0x20`** |
+
+### Other Changes
+
 ```diff
 
 -4838.0.93.0.0
--  __TEXT.__text: 0x1521c
 +4838.0.125.0.0
-+  __TEXT.__text: 0x151fc
-   __TEXT.__objc_methlist: 0x100
-   __TEXT.__const: 0x540
-   __TEXT.__swift5_typeref: 0x319
 Functions:
 ~ sub_1dff00ee4 -> sub_2026e8ee4 : 1436 -> 1428
 ~ sub_1dff0199c -> sub_2026e9994 : 332 -> 320

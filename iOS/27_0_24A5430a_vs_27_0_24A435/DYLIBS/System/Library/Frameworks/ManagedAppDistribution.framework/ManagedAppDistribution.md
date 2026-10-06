@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/ManagedAppDistribution.framework/ManagedAppDistribution`
 
-```diff
+### Section Size Changes
 
- 4.0.44.0.0
--  __TEXT.__text: 0x8bf68
-+  __TEXT.__text: 0x8bfc8
-   __TEXT.__objc_methlist: 0x33c
-   __TEXT.__const: 0xf414
-   __TEXT.__constg_swiftt: 0x2654
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8bf68` | `0x8bfc8` | **`+0x60`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1ccd2489c -> sub_1cd23c89c : 396 -> 404
 ~ sub_1ccd24a28 -> sub_1cd23ca30 : 584 -> 588

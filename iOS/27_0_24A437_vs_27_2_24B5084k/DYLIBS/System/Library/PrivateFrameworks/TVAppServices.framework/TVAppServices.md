@@ -2,101 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/TVAppServices.framework/TVAppServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ec474` | `0x1fe9dc` | **`+0x12568`** |
+| `__TEXT.__eh_frame` | `0x12338` | `0x13220` | **`+0xee8`** |
+| `__TEXT.__cstring` | `0xcd97` | `0xd8d7` | **`+0xb40`** |
+| `__DATA.__bss` | `0x21310` | `0x21c10` | **`+0x900`** |
+| `__AUTH_CONST.__const` | `0x12f10` | `0x13790` | **`+0x880`** |
+| `__TEXT.__const` | `0x19cf0` | `0x1a440` | **`+0x750`** |
+| `__AUTH_CONST.__objc_const` | `0x6b40` | `0x7228` | **`+0x6e8`** |
+| `__TEXT.__unwind_info` | `0x7d38` | `0x81d0` | **`+0x498`** |
+| `__TEXT.__swift5_typeref` | `0x5f22` | `0x61d8` | **`+0x2b6`** |
+| `__TEXT.__swift5_reflstr` | `0x5ad4` | `0x5c74` | **`+0x1a0`** |
+| `__TEXT.__swift5_capture` | `0x11bc` | `0x1328` | **`+0x16c`** |
+| `__TEXT.__swift5_fieldmd` | `0x789c` | `0x7a00` | **`+0x164`** |
+| `__DATA.__data` | `0x3978` | `0x3ab8` | **`+0x140`** |
+| `__DATA_CONST.__objc_selrefs` | `0xaa8` | `0xbc8` | **`+0x120`** |
+| `__DATA_DIRTY.__data` | `0x3d10` | `0x3c00` | **`-0x110`** |
+| `__AUTH_CONST.__auth_got` | `0x1a08` | `0x1ae8` | **`+0xe0`** |
+| `__TEXT.__swift_as_cont` | `0xea8` | `0xf84` | **`+0xdc`** |
+| `__AUTH.__data` | `0x35c8` | `0x34f0` | **`-0xd8`** |
+| `__TEXT.__objc_methlist` | `0x9fc` | `0xa9c` | **`+0xa0`** |
+| `__TEXT.__swift_as_ret` | `0x7e0` | `0x870` | **`+0x90`** |
+| `__DATA_DIRTY.__bss` | `0x4c80` | `0x4c00` | **`-0x80`** |
+| `__DATA_DIRTY.__objc_data` | `0x5f8` | `0x580` | **`-0x78`** |
+| `__TEXT.__swift_as_entry` | `0x6b0` | `0x728` | **`+0x78`** |
+| `__TEXT.__constg_swiftt` | `0x6198` | `0x620c` | **`+0x74`** |
+| `__DATA_CONST.__got` | `0x920` | `0x990` | **`+0x70`** |
+| `__TEXT.__swift5_assocty` | `0x1438` | `0x1498` | **`+0x60`** |
+| `__TEXT.__swift5_proto` | `0x13cc` | `0x1410` | **`+0x44`** |
+| `__AUTH.__objc_data` | `0xe08` | `0xe30` | **`+0x28`** |
+| `__TEXT.__swift5_builtin` | `0x1cc` | `0x1e0` | **`+0x14`** |
+| `__TEXT.__swift5_types` | `0x778` | `0x78c` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x298` | `0x288` | **`-0x10`** |
+| `__DATA_DIRTY.__common` | `0x22a` | `0x21a` | **`-0x10`** |
+| `__DATA_CONST.__objc_catlist` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x94` | `0x98` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -207.0.6.0.0
--  __TEXT.__text: 0x1da1cc
--  __TEXT.__objc_methlist: 0x9fc
--  __TEXT.__const: 0x19cf0
--  __TEXT.__swift5_typeref: 0x5f22
--  __TEXT.__cstring: 0xcd97
--  __TEXT.__swift5_reflstr: 0x5ad4
--  __TEXT.__swift5_assocty: 0x1438
--  __TEXT.__constg_swiftt: 0x6198
--  __TEXT.__swift5_fieldmd: 0x789c
--  __TEXT.__swift5_builtin: 0x1cc
--  __TEXT.__swift5_proto: 0x13cc
--  __TEXT.__swift5_types: 0x778
--  __TEXT.__swift_as_entry: 0x6b0
--  __TEXT.__swift_as_ret: 0x7e0
--  __TEXT.__swift_as_cont: 0xea8
--  __TEXT.__swift5_capture: 0x11bc
--  __TEXT.__swift5_protos: 0x94
 +207.10.13.0.0
-+  __TEXT.__text: 0x1eb9cc
-+  __TEXT.__objc_methlist: 0xa9c
-+  __TEXT.__const: 0x1a440
-+  __TEXT.__swift5_typeref: 0x61d8
-+  __TEXT.__cstring: 0xd8d7
-+  __TEXT.__swift5_reflstr: 0x5c74
-+  __TEXT.__swift5_assocty: 0x1498
-+  __TEXT.__constg_swiftt: 0x620c
-+  __TEXT.__swift5_fieldmd: 0x7a00
-+  __TEXT.__swift5_builtin: 0x1e0
-+  __TEXT.__swift5_proto: 0x1410
-+  __TEXT.__swift5_types: 0x78c
-+  __TEXT.__swift_as_entry: 0x728
-+  __TEXT.__swift_as_ret: 0x870
-+  __TEXT.__swift_as_cont: 0xf84
-+  __TEXT.__swift5_capture: 0x1328
-+  __TEXT.__swift5_protos: 0x98
-   __TEXT.__oslogstring: 0x1531
-   __TEXT.__swift5_mpenum: 0x48
--  __TEXT.__unwind_info: 0x9398
--  __TEXT.__eh_frame: 0x12348
-+  __TEXT.__unwind_info: 0x9818
-+  __TEXT.__eh_frame: 0x13230
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x500
--  __DATA_CONST.__objc_classlist: 0x298
-+  __DATA_CONST.__objc_classlist: 0x288
-+  __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0xb8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xaa8
-+  __DATA_CONST.__objc_selrefs: 0xbc8
-   __DATA_CONST.__objc_protorefs: 0x60
--  __DATA_CONST.__got: 0x920
--  __AUTH_CONST.__const: 0x12f10
--  __AUTH_CONST.__objc_const: 0x6b40
--  __AUTH_CONST.__auth_got: 0x1a08
--  __AUTH.__objc_data: 0xe08
--  __AUTH.__data: 0x35c8
--  __DATA.__data: 0x3978
-+  __DATA_CONST.__got: 0x990
-+  __AUTH_CONST.__const: 0x13790
-+  __AUTH_CONST.__objc_const: 0x7228
-+  __AUTH_CONST.__auth_got: 0x1ae8
-+  __AUTH.__objc_data: 0xe30
-+  __AUTH.__data: 0x34f0
-+  __DATA.__data: 0x3ab8
-   __DATA.__common: 0x230
--  __DATA_DIRTY.__objc_data: 0x5f8
--  __DATA_DIRTY.__data: 0x3d10
--  __DATA_DIRTY.__bss: 0x4c80
--  __DATA_DIRTY.__common: 0x22a
-+  __DATA_DIRTY.__objc_data: 0x580
-+  __DATA_DIRTY.__data: 0x3c00
-+  __DATA_DIRTY.__bss: 0x4c00
-+  __DATA_DIRTY.__common: 0x21a
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/Combine.framework/Combine
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9615
--  Symbols:   3399
+-  Symbols:   3155
 -  CStrings:  1259
 +  Functions: 9866
-+  Symbols:   3474
++  Symbols:   3205
 +  CStrings:  1316
- 
 Symbols:
 + _AMSAccountFlagUnderThirteen
 + _AMSAccountGrandSlamTokenIdentifierSimpleProfileAuth
@@ -140,31 +97,6 @@ Symbols:
 + _associated conformance So12AMSErrorCodeV10Foundation06_ErrorB8ProtocolSC01_D4TypeAcDP_AC21_BridgedStoredNSError
 + _associated conformance So12AMSErrorCodeV10Foundation06_ErrorB8ProtocolSCSQ
 + _flat unique So14NSSecureCoding_p
-+ _objc_msgSend$__swift_objectForKeyedSubscript:
-+ _objc_msgSend$account
-+ _objc_msgSend$ageGroupContentPolicies
-+ _objc_msgSend$allowPurchases
-+ _objc_msgSend$ams_accountFlagValueForAccountFlag:
-+ _objc_msgSend$ams_fetchMediaRestrictionsWithTimeout:returningStaleData:
-+ _objc_msgSend$ams_iTunesAccountWithAltDSID:
-+ _objc_msgSend$ams_iTunesAccounts
-+ _objc_msgSend$ams_isSimpleProfile
-+ _objc_msgSend$ams_selectedProfileForMediaType:
-+ _objc_msgSend$ams_selectedProfileiTunesAccount
-+ _objc_msgSend$ams_setSelectedProfile:
-+ _objc_msgSend$ams_simpleProfileAccounts
-+ _objc_msgSend$ams_sponsorAccountForiTunesAccount:
-+ _objc_msgSend$authenticationResults
-+ _objc_msgSend$contentRatingID
-+ _objc_msgSend$initWithAccount:clientIdentifier:mediaType:storeFront:bag:
-+ _objc_msgSend$initWithSponsorAuthenticateResult:simpleProfileAltDSID:simpleProfileDSID:options:
-+ _objc_msgSend$isSimpleProfile
-+ _objc_msgSend$perform
-+ _objc_msgSend$recommendedContentRatings
-+ _objc_msgSend$setAuthenticationType:
-+ _objc_msgSend$setCanMakeAccountActive:
-+ _objc_msgSend$setIgnoreAccountConversion:
-+ _objc_msgSend$setServiceIdentifier:
 + _swift_getAssociatedConformanceWitness
 + _swift_getAssociatedTypeWitness
 + _swift_retain_x13

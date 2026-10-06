@@ -2,126 +2,63 @@
 
 > `/System/Library/PrivateFrameworks/ChatKit.framework/ChatKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc22174` | `0xc3699c` | **`+0x14828`** |
+| `__TEXT.__const` | `0x42924` | `0x41854` | **`-0x10d0`** |
+| `__TEXT.__oslogstring` | `0x55197` | `0x55d67` | **`+0xbd0`** |
+| `__TEXT.__swift5_typeref` | `0x489e4` | `0x4945a` | **`+0xa76`** |
+| `__AUTH_CONST.__const` | `0x3f1b8` | `0x3f948` | **`+0x790`** |
+| `__TEXT.__cstring` | `0x3f657` | `0x3f9e7` | **`+0x390`** |
+| `__AUTH_CONST.__objc_const` | `0x9dd80` | `0x9e0e0` | **`+0x360`** |
+| `__TEXT.__objc_methlist` | `0x7332c` | `0x73664` | **`+0x338`** |
+| `__TEXT.__unwind_info` | `0x31bc8` | `0x31ed0` | **`+0x308`** |
+| `__DATA.__bss` | `0x44c40` | `0x44f40` | **`+0x300`** |
+| `__DATA_CONST.__objc_selrefs` | `0x37540` | `0x37820` | **`+0x2e0`** |
+| `__AUTH.__objc_data` | `0x2c8e8` | `0x2cb78` | **`+0x290`** |
+| `__TEXT.__swift5_reflstr` | `0x12d43` | `0x12fd3` | **`+0x290`** |
+| `__TEXT.__swift5_capture` | `0x91c4` | `0x9434` | **`+0x270`** |
+| `__DATA.__data` | `0x22490` | `0x226d0` | **`+0x240`** |
+| `__TEXT.__constg_swiftt` | `0x1de7c` | `0x1e040` | **`+0x1c4`** |
+| `__TEXT.__swift5_fieldmd` | `0x10e1c` | `0x10fc8` | **`+0x1ac`** |
+| `__AUTH.__data` | `0x15b08` | `0x15ca0` | **`+0x198`** |
+| `__TEXT.__eh_frame` | `0x12d50` | `0x12e98` | **`+0x148`** |
+| `__TEXT.__gcc_except_tab` | `0x207fc` | `0x208f4` | **`+0xf8`** |
+| `__DATA_CONST.__const` | `0xf3a8` | `0xf420` | **`+0x78`** |
+| `__AUTH_CONST.__auth_got` | `0x6b68` | `0x6bd8` | **`+0x70`** |
+| `__TEXT.__dlopen_cstrs` | `0xb0c` | `0xa9e` | **`-0x6e`** |
+| `__AUTH_CONST.__cfstring` | `0x24460` | `0x244c0` | **`+0x60`** |
+| `__DATA.__common` | `0x15e0` | `0x1630` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x7d18` | `0x7d48` | **`+0x30`** |
+| `__TEXT.__swift5_assocty` | `0x4a70` | `0x4aa0` | **`+0x30`** |
+| `__DATA_DIRTY.__objc_data` | `0x65c8` | `0x65a8` | **`-0x20`** |
+| `__TEXT.__swift5_proto` | `0x1cf4` | `0x1d14` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x148c` | `0x14a4` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x3018` | `0x3028` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x13f8` | `0x1408` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x578` | `0x588` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x19f8` | `0x19e8` | **`-0x10`** |
+| `__DATA_DIRTY.__data` | `0x618` | `0x608` | **`-0x10`** |
+| `__DATA.__objc_ivar` | `0x4a24` | `0x4a18` | **`-0xc`** |
+| `__TEXT.__swift5_protos` | `0xdc` | `0xe0` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1491.100.1.2.25
--  __TEXT.__text: 0xbd05e8
 +1491.200.63.2.1
-+  __TEXT.__text: 0xbe47e0
-   __TEXT.__delay_stubs: 0x1c0
-   __TEXT.__delay_helper: 0x3050
--  __TEXT.__objc_methlist: 0x7332c
--  __TEXT.__const: 0x42924
--  __TEXT.__gcc_except_tab: 0x207fc
--  __TEXT.__cstring: 0x3f657
--  __TEXT.__oslogstring: 0x55197
--  __TEXT.__dlopen_cstrs: 0xb0c
-+  __TEXT.__objc_methlist: 0x73664
-+  __TEXT.__const: 0x41854
-+  __TEXT.__gcc_except_tab: 0x208f4
-+  __TEXT.__cstring: 0x3f9e7
-+  __TEXT.__oslogstring: 0x55d67
-+  __TEXT.__dlopen_cstrs: 0xa9e
-   __TEXT.__ustring: 0x20a
--  __TEXT.__constg_swiftt: 0x1de7c
--  __TEXT.__swift5_typeref: 0x489e4
-+  __TEXT.__constg_swiftt: 0x1e040
-+  __TEXT.__swift5_typeref: 0x4945a
-   __TEXT.__swift5_builtin: 0x9b0
--  __TEXT.__swift5_reflstr: 0x12d43
--  __TEXT.__swift5_fieldmd: 0x10e1c
--  __TEXT.__swift5_assocty: 0x4a70
--  __TEXT.__swift5_proto: 0x1cf4
--  __TEXT.__swift5_types: 0x148c
--  __TEXT.__swift5_capture: 0x91c4
-+  __TEXT.__swift5_reflstr: 0x12fd3
-+  __TEXT.__swift5_fieldmd: 0x10fc8
-+  __TEXT.__swift5_assocty: 0x4aa0
-+  __TEXT.__swift5_proto: 0x1d14
-+  __TEXT.__swift5_types: 0x14a4
-+  __TEXT.__swift5_capture: 0x9434
-   __TEXT.__swift_as_entry: 0x64c
-   __TEXT.__swift_as_ret: 0x5dc
-   __TEXT.__swift_as_cont: 0xe50
--  __TEXT.__swift5_protos: 0xdc
-+  __TEXT.__swift5_protos: 0xe0
-   __TEXT.__swift5_mpenum: 0x140
--  __TEXT.__unwind_info: 0x3d1f8
--  __TEXT.__eh_frame: 0x12d60
-+  __TEXT.__unwind_info: 0x3d588
-+  __TEXT.__eh_frame: 0x12ea8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xf3a8
--  __DATA_CONST.__objc_classlist: 0x3018
-+  __DATA_CONST.__const: 0xf420
-+  __DATA_CONST.__objc_classlist: 0x3028
-   __DATA_CONST.__objc_catlist: 0x568
--  __DATA_CONST.__objc_protolist: 0x13f8
-+  __DATA_CONST.__objc_protolist: 0x1408
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x37540
--  __DATA_CONST.__objc_protorefs: 0x578
--  __DATA_CONST.__objc_superrefs: 0x19f8
-+  __DATA_CONST.__objc_selrefs: 0x37820
-+  __DATA_CONST.__objc_protorefs: 0x588
-+  __DATA_CONST.__objc_superrefs: 0x19e8
-   __DATA_CONST.__objc_arraydata: 0xed0
--  __DATA_CONST.__got: 0x7d18
--  __AUTH_CONST.__const: 0x3f1b8
--  __AUTH_CONST.__cfstring: 0x24460
--  __AUTH_CONST.__objc_const: 0x9dd80
-+  __DATA_CONST.__got: 0x7d48
-+  __AUTH_CONST.__const: 0x3f948
-+  __AUTH_CONST.__cfstring: 0x244c0
-+  __AUTH_CONST.__objc_const: 0x9e0e0
-   __AUTH_CONST.__objc_arrayobj: 0xde0
-   __AUTH_CONST.__objc_intobj: 0xf18
-   __AUTH_CONST.__objc_doubleobj: 0x870
-   __AUTH_CONST.__objc_floatobj: 0x180
-   __AUTH_CONST.__objc_dictobj: 0x1e0
--  __AUTH_CONST.__auth_got: 0x6b68
--  __AUTH.__objc_data: 0x2c8e8
--  __AUTH.__data: 0x15b08
--  __DATA.__objc_ivar: 0x4a24
--  __DATA.__data: 0x22490
-+  __AUTH_CONST.__auth_got: 0x6bd8
-+  __AUTH.__objc_data: 0x2cb78
-+  __AUTH.__data: 0x15ca0
-+  __DATA.__objc_ivar: 0x4a18
-+  __DATA.__data: 0x226d0
-   __DATA.__objc_stublist: 0x38
--  __DATA.__common: 0x15e0
--  __DATA_DIRTY.__objc_data: 0x65c8
--  __DATA_DIRTY.__data: 0x618
-+  __DATA.__common: 0x1630
-+  __DATA_DIRTY.__objc_data: 0x65a8
-+  __DATA_DIRTY.__data: 0x608
-   __DATA_DIRTY.__bss: 0x520
-   __DATA_DIRTY.__common: 0x48
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
 
-   - /System/Library/PrivateFrameworks/SupportFlowCore.framework/SupportFlowCore
-   - /System/Library/PrivateFrameworks/SupportFlowUI.framework/SupportFlowUI
-   - /System/Library/PrivateFrameworks/SystemStatus.framework/SystemStatus
 +  - /System/Library/PrivateFrameworks/TCC.framework/TCC
-   - /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities
-   - /System/Library/PrivateFrameworks/TextInput.framework/TextInput
-   - /System/Library/PrivateFrameworks/TextUnderstanding.framework/TextUnderstanding
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 74866
--  Symbols:   96550
+-  Symbols:   73709
 -  CStrings:  13245
 +  Functions: 75143
-+  Symbols:   96781
++  Symbols:   73854
 +  CStrings:  13285
- 
 Symbols:
 + +[CKMediaObjectShareAssetActionPerformer canPerformOnImplicitSelection]
 + +[CKMediaObjectShareAssetActionPerformer canPerformWithActionManager:selectionSnapshot:]
@@ -605,143 +542,6 @@ Symbols:
 + _kTCCServiceSiriAccess
 + _nicknameIntroViewControllerCustomAssetFallbackHeight.once
 + _nicknameIntroViewControllerCustomAssetFallbackHeight.sBehavior
-+ _objc_msgSend$UIEdgeInsetsValue
-+ _objc_msgSend$__ck_appCardTrackingOffsetForComputedInsets:
-+ _objc_msgSend$__im_isChatBotPatterned
-+ _objc_msgSend$__im_isUsableAsWatermarkDate
-+ _objc_msgSend$_acceptPurgedTransfersForChatItems:
-+ _objc_msgSend$_balloonTailInsetsForBalloonSize:dataSource:
-+ _objc_msgSend$_calculateContentInsetsWithPendingInsetChange:
-+ _objc_msgSend$_chatControllerBehindAppCard:
-+ _objc_msgSend$_chatItemSizeForBalloonSize:
-+ _objc_msgSend$_configureThreadGroupsForAttributes:
-+ _objc_msgSend$_determineIndexesNeedingReloadAmongRequestedIndexes:inChatItems:visibleIndexPaths:oldChatItemSizes:oldChatItemTextAlignmentInsets:
-+ _objc_msgSend$_editAndRetractionMenuForChatItem:
-+ _objc_msgSend$_findExistingChatItemSizesForIndexes:chatItems:outSizes:outTextAlignmentInsets:
-+ _objc_msgSend$_flushDeferredInsertsAndMarkSetUp
-+ _objc_msgSend$_generateChatBotAssetsForChatItems:
-+ _objc_msgSend$_gridPopoverAnchorRectForChatItems:
-+ _objc_msgSend$_logConversationAtIndex:
-+ _objc_msgSend$_maxYAnchorAttributeForAttributes:forVisibleBounds:
-+ _objc_msgSend$_parentAutoThreadedPluginReplyToOriginator:replyTargetGUID:chat:
-+ _objc_msgSend$_pluginForThrowAnimationAtIndex:isFromTextAttachment:startingScaleMultiplier:wantsSnapshotView:
-+ _objc_msgSend$_prewarmTapbackPickerAssetsIfNecessary
-+ _objc_msgSend$_refreshStalePhotoShelfViewControllerForComposition:callerDescription:
-+ _objc_msgSend$_releaseThrowAnimationPluginControllerIfNeeded
-+ _objc_msgSend$_resendMessage:retargetToCurrentService:
-+ _objc_msgSend$_resetThrowAnimationPluginViewGeometry
-+ _objc_msgSend$_searchImmediatelyForLayoutChange
-+ _objc_msgSend$_serviceForMessage:
-+ _objc_msgSend$_shareActionForChatItems:
-+ _objc_msgSend$_shareChatItems:
-+ _objc_msgSend$_shareSheetViewControllerForMessagePartChatItems:
-+ _objc_msgSend$_updateInlineDismissButtonVisibility
-+ _objc_msgSend$_updateSecondaryColumnWidth
-+ _objc_msgSend$_updateThreadGroupEasingUpdateIdentifiersForAttributes:
-+ _objc_msgSend$addAnimationsForImageBalloonView:sendAnimationConfiguration:
-+ _objc_msgSend$addAnimationsForPluginBalloonView:sendAnimationConfiguration:
-+ _objc_msgSend$addReplyWithPartCount:toThreadOriginatorMessage:forThreadIdentifier:
-+ _objc_msgSend$appCardDidChangeEntryViewAlignmentHeight:animated:isDragging:
-+ _objc_msgSend$appCardInteractiveHeightTracking
-+ _objc_msgSend$applyDeferredContentInsetUpdateIfNeeded
-+ _objc_msgSend$assetExplorerShelfViewController
-+ _objc_msgSend$attachmentStackAggregationThreshold
-+ _objc_msgSend$backdropBalloonLayer
-+ _objc_msgSend$balloonTailInsets
-+ _objc_msgSend$becomeAnimationDelegateOfMaskLayer:
-+ _objc_msgSend$chatItemsToPrewarm
-+ _objc_msgSend$configureForThrowAnimationWithTranscriptPlugin:
-+ _objc_msgSend$customAssetViewController
-+ _objc_msgSend$customIntroAssetViewController
-+ _objc_msgSend$customIntroDetailText
-+ _objc_msgSend$customIntroTitle
-+ _objc_msgSend$dateAdded
-+ _objc_msgSend$disableTailSpaceReservation
-+ _objc_msgSend$effectViewMaskLayer
-+ _objc_msgSend$executeActionForActionType:sender:completionHandler:
-+ _objc_msgSend$generateAssets
-+ _objc_msgSend$getControlPointAtIndex:values:
-+ _objc_msgSend$hasBalloonShapeForPluginBundleID:isStagedForSend:transcriptBackgroundActive:
-+ _objc_msgSend$hostChatController
-+ _objc_msgSend$imageContentBackdropBalloonLayer
-+ _objc_msgSend$imageContentViewInsets
-+ _objc_msgSend$imageContentViewMaskLayer
-+ _objc_msgSend$initWithFlag:lane:reason:userInfoData:requestDate:
-+ _objc_msgSend$initWithOptions:capacity:
-+ _objc_msgSend$initWithStickerChatItems:thirdPartyStickerEntries:
-+ _objc_msgSend$inlineDismissButton
-+ _objc_msgSend$inlineReplyController:appCardDidChangeEntryViewAlignmentHeight:animated:isDragging:
-+ _objc_msgSend$invalidateDisplayDrivenDynamics
-+ _objc_msgSend$isDownloadExpired
-+ _objc_msgSend$keyboardAnimation
-+ _objc_msgSend$linkOverlayBalloonLayer
-+ _objc_msgSend$linkViewInsets
-+ _objc_msgSend$livePhotoViewMaskLayer
-+ _objc_msgSend$loadingIndicatorHostingController
-+ _objc_msgSend$matchesReplyThreadGroupingIdentifier:
-+ _objc_msgSend$menuBuilder:canShareChatItems:
-+ _objc_msgSend$menuBuilder:shareChatItems:
-+ _objc_msgSend$mergeChatForksIntoLeadChatIdentifier:forkChatIdentifiers:completionHandler:
-+ _objc_msgSend$muteIdentifiersForChat:
-+ _objc_msgSend$nicknameIntroViewControllerCustomAssetFallbackHeight
-+ _objc_msgSend$pendingPresentedController
-+ _objc_msgSend$performIdleWorkUntil:
-+ _objc_msgSend$pluginContainerView
-+ _objc_msgSend$pluginContainerViewInsets
-+ _objc_msgSend$pluginOverlayBalloonLayer
-+ _objc_msgSend$presentPhotoGridShareSheetForChatItems:sender:
-+ _objc_msgSend$prewarmForDisplay
-+ _objc_msgSend$recipientSelectionControllerDidTapDismissButton:
-+ _objc_msgSend$removeAllBalloonAnimationsIncludingMaskAnimations
-+ _objc_msgSend$removeInvisibleInkEffectViewMask
-+ _objc_msgSend$replyThreadGroupingIdentifier
-+ _objc_msgSend$scheduleMessageGUIDsUpToLimit:context:completionBlock:
-+ _objc_msgSend$setAppCardInteractiveHeightTracking:
-+ _objc_msgSend$setBalloonTailInsets:
-+ _objc_msgSend$setChatItemPrewarmer:
-+ _objc_msgSend$setCustomAssetViewController:
-+ _objc_msgSend$setDateAdded:
-+ _objc_msgSend$setDisableTailSpaceReservation:
-+ _objc_msgSend$setEffectViewMaskLayer:
-+ _objc_msgSend$setIdleScheduler:
-+ _objc_msgSend$setLoadingIndicatorHostingController:
-+ _objc_msgSend$setPendingPresentedController:
-+ _objc_msgSend$setRetryReason:
-+ _objc_msgSend$setShouldAnimateConfigurationUpdate:
-+ _objc_msgSend$setShowsInlineDismissButton:
-+ _objc_msgSend$setThreadReferenceBalloonBundleID:
-+ _objc_msgSend$setThreadReferenceMessageGUID:
-+ _objc_msgSend$setThrowAnimationPluginChatItem:
-+ _objc_msgSend$setThrowAnimationPluginContextIdentifier:
-+ _objc_msgSend$setTitleViewInstalled:
-+ _objc_msgSend$setTranscriptIsScrolling:
-+ _objc_msgSend$setTranscriptIsVisible:
-+ _objc_msgSend$shareableChatItemsFromChatItems:
-+ _objc_msgSend$shouldAnimateConfigurationUpdate
-+ _objc_msgSend$shouldOmitTranscriptNavigationBarTitleViewForTraitCollection:
-+ _objc_msgSend$showsInlineDismissButton
-+ _objc_msgSend$showsInlineDismissButtonForTraitCollection:
-+ _objc_msgSend$showsNavigationBarWhenCollapsedForTraitCollection:
-+ _objc_msgSend$stickerSizeInPoints
-+ _objc_msgSend$stickerSizeInPointsForImageData:
-+ _objc_msgSend$tailInsetsForBalloonSize:
-+ _objc_msgSend$thirdPartyEntriesFromChatItem:excludingAssociatedStickers:
-+ _objc_msgSend$threadReferenceBalloonBundleID
-+ _objc_msgSend$threadReferenceMessageGUID
-+ _objc_msgSend$throwAnimationGeometryForPluginAtIndex:isFromTextAttachment:startingScaleMultiplier:
-+ _objc_msgSend$throwAnimationPluginChatItem
-+ _objc_msgSend$throwAnimationPluginContextIdentifier
-+ _objc_msgSend$transcriptBackgroundDate
-+ _objc_msgSend$transcriptBackgroundPosterImageURL
-+ _objc_msgSend$transcriptBackgroundSender
-+ _objc_msgSend$transcriptLoadingIndicatorColor
-+ _objc_msgSend$transcriptPrewarmingEnabledDidChange
-+ _objc_msgSend$updateInvisibleInkEffectViewMaskFrame
-+ _objc_msgSend$updateInvisibleInkEffectViewMaskWithBalloonDescriptor:
-+ _objc_msgSend$updateScrollGeometryForReason:animationProperties:
-+ _objc_msgSend$valueWithUIEdgeInsets:
-+ _objc_msgSend$videoPlayerMaskLayer
-+ _objc_msgSend$wantsIdleProcessingTime
 + _sessionStartEntryTypeKey
 + _supportsFoundInSuggestions.sBehavior
 + _swift_unknownObjectUnownedDestroy
@@ -1190,57 +990,6 @@ Symbols:
 - _get_enum_tag_for_layout_string xq_Ri_zRi0_zRi__Ri0__r0_ly7ChatKit29SensitiveContentGalleryActionOytIsegnr_Sg
 - _get_witness_table 7SwiftUI4ListVys5NeverOAA12TupleContentVyAA7SectionVyAA9EmptyViewVAA08ModifiedF0VyAA6ButtonVyAA6HStackVyAGyAA4TextV_AGyAA6SpacerV_AA08ProgressI0VyA2KGQPGSgQPGGGAA32_EnvironmentKeyTransformModifierVySbGGASGSg_AA7ForEachVySaySi6offset_So19IMChatForkingReportC7elementtGSiAGyAIyAsGy7ChatKit04ForkyI0V15LabeledValueRowV_A19_A17_04ItemC3RowVA19_A19_A19_A19_A19_A21_QPGAKG_A9_ySaySiA10__So0wX4DiffCA13_tGSiAIyAsGyA19__AA012_ConditionalF0VyAGyA17_13ScalarDiffRowVSg_A17_17CollectionDiffRowVSgA17_17SequentialDiffRowVSgA31_A31_A31_A31_A34_QPGA17_16NoDifferencesRowVGQPGAKGGA44_A28_yAIyAkMyAMyAA6VStackVyAGyAMyAMyAA5ImageVAA01_pq7WritingS0VyAA4FontVSgGGAA016_ForegroundStyleS0VyAA5ColorVGG_ASQPGGAA16_FlexFrameLayoutVGAA14_PaddingLayoutVGAKGAIyAkMyAOyASGA4_GAKGGQPGGSgQPGGAA0I0HPyHC
 - _log
-- _objc_msgSend$_attachmentStackAggregationThreshold
-- _objc_msgSend$_calculateContentInsets
-- _objc_msgSend$_configureDisplayLink
-- _objc_msgSend$_configureThreadGroupsForAttributes:outMaxYAnchorAttribute:forVisibleBounds:
-- _objc_msgSend$_prewarmBalloonControllers
-- _objc_msgSend$_prewarmChatBotAssets
-- _objc_msgSend$_prewarmChatBotAssetsWithChatItems:
-- _objc_msgSend$_prewarmLinkPresentations
-- _objc_msgSend$_prewarmLinkPresentationsWithChatItems:
-- _objc_msgSend$_prewarmMediaPreviews
-- _objc_msgSend$_prewarmTranscriptAssetsIfNecessary
-- _objc_msgSend$_updateThreadOriginatorIMMessage:byAddingReplyWithPartCount:toThreadIdentifier:
-- _objc_msgSend$appCardDidChangeEntryViewAlignmentHeight:animated:
-- _objc_msgSend$audioMediaObject
-- _objc_msgSend$balloonImageView
-- _objc_msgSend$ck_glassScaleUpAnimationWithBeginTime:entryViewSize:initialSize:finalSize:delegate:
-- _objc_msgSend$effectViewMask
-- _objc_msgSend$entryViewLeftInsetForRecordedAudioCancelButton
-- _objc_msgSend$initWithStickerChatItems:
-- _objc_msgSend$inlineReplyController:appCardDidChangeEntryViewAlignmentHeight:animated:
-- _objc_msgSend$isReloadingTranslationChatItems
-- _objc_msgSend$isTreeStarEnabled
-- _objc_msgSend$loadingIndicatorCoverView
-- _objc_msgSend$messageEntryRecordedAudioView:mediaObjectDidFinishPlaying:
-- _objc_msgSend$messageEntryRecordedAudioViewPlaybackDidStop
-- _objc_msgSend$messageEntryRecordedAudioViewPlaybackProgressDidChange:
-- _objc_msgSend$messageEntryRecordedAudioViewPressedDelete:
-- _objc_msgSend$messageEntryRecordedAudioViewPressedPause:
-- _objc_msgSend$messageEntryRecordedAudioViewPressedPlay:
-- _objc_msgSend$minTimeLabelWidth
-- _objc_msgSend$playPauseDeleteButton
-- _objc_msgSend$preferredFrameRateRange
-- _objc_msgSend$prewarmAssets
-- _objc_msgSend$scheduleMessageGUIDsUpToLimit:flag:lane:reason:userInfo:completionBlock:
-- _objc_msgSend$setBalloonImageView:
-- _objc_msgSend$setEffectViewMaskImage:
-- _objc_msgSend$setLoadingIndicatorCoverView:
-- _objc_msgSend$setMaxPowerLevelsCount:
-- _objc_msgSend$setMinTimeLabelWidth:
-- _objc_msgSend$setReloadingTranslationChatItems:
-- _objc_msgSend$setWaveformImage:
-- _objc_msgSend$setWaveformImageView:
-- _objc_msgSend$shouldAnimatePathChanges
-- _objc_msgSend$threadGroupIdentifier
-- _objc_msgSend$updatePlayPauseDeleteButton
-- _objc_msgSend$updateWaveform
-- _objc_msgSend$waveformCurveTransform
-- _objc_msgSend$waveformImage
-- _objc_msgSend$waveformImageView
-- _objc_msgSend$waveformMinDbPowerLevel
-- _objc_msgSend$waveformUnplayedColorNewAudioMessagesFlow
 - _symbolic $s7ChatKit30CKTranscriptBackgroundProtocolP
 - _symbolic SiSo19IMChatForkingReportC_____y_____y_____ACy______AF_____A5fGQPG_____G______ySaySi6offset_So0aB4DiffC7elementtGSiADyAeCyAF______yACy_____Sg______Sg_____SgA4sUQPG_____GQPGAIGGA1_AQyADyAI_____yA2_y_____yACyA2_yA2_y__________y_____SgGG_____y_____GG_AEQPGG_____G_____GAIGADyAIA2_y_____yAEG_____ySbGGAIGGQPGIegygr_ 7SwiftUI12TupleContentV AA7SectionV AA4TextV 7ChatKit14ForkReportViewV15LabeledValueRowV AJ08ItemListN0V AA05EmptyK0V AA7ForEachV AA012_ConditionalD0V AJ010ScalarDiffN0V AJ010CollectionvN0V AJ010SequentialvN0V AJ013NoDifferencesN0V AA08ModifiedD0V AA6VStackV AA5ImageV AA30_EnvironmentKeyWritingModifierV AA4FontV AA24_ForegroundStyleModifierV AA5ColorV AA16_FlexFrameLayoutV AA14_PaddingLayoutV AA6ButtonV AA32_EnvironmentKeyTransformModifierV
 - _symbolic So23UIActivityIndicatorViewC

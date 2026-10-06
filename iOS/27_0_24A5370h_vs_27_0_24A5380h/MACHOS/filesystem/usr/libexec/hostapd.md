@@ -2,16 +2,23 @@
 
 > `/usr/libexec/hostapd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x29f14` | `0x29f10` | **`-0x4`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__eh_frame`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x29f14
-+  __TEXT.__text: 0x29f10
-   __TEXT.__auth_stubs: 0xc00
-   __TEXT.__const: 0xf6a
-   __TEXT.__cstring: 0xaf47
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
+-425.1.0.0.0
++425.2.0.0.0
 Functions:
 ~ sub_100000de0 : 836 -> 816
 ~ sub_1000027d8 -> sub_1000027c4 : 792 -> 836
@@ -26,5 +33,4 @@ Functions:
 ~ sub_100019738 -> sub_100019740 : 456 -> 448
 ~ sub_100026184 : 284 -> 292
 ~ sub_10002976c -> sub_100029774 : 232 -> 220
-
 ```

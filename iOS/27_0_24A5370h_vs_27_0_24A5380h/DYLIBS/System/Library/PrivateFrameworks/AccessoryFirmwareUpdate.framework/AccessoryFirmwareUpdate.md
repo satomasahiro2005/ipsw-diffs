@@ -2,32 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AccessoryFirmwareUpdate.framework/AccessoryFirmwareUpdate`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x1db38
-+  __TEXT.__text: 0x1db24
-   __TEXT.__objc_methlist: 0x1d4
-   __TEXT.__const: 0xd70
-   __TEXT.__constg_swiftt: 0x7d8
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1db38` | `0x1db24` | **`-0x14`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_24ace6784 -> sub_24f468784 : 344 -> 324
-
+~ sub_24abac784 -> sub_24f32e784 : 344 -> 324
 ```

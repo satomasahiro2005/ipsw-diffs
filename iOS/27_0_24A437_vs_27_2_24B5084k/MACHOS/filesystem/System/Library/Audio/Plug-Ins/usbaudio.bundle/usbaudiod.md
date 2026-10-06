@@ -2,67 +2,70 @@
 
 > `/System/Library/Audio/Plug-Ins/usbaudio.bundle/usbaudiod`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10558c` | `0x105694` | **`+0x108`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
 - `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_entry`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
 - `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -901.48.0.0.0
--  __TEXT.__text: 0x102ec0
 +910.2.0.0.0
-+  __TEXT.__text: 0x102fc8
-   __TEXT.__auth_stubs: 0x1c90
-   __TEXT.__objc_stubs: 0x1c00
-   __TEXT.__init_offsets: 0x8
 Functions:
-~ sub_100088bec : 704 -> 712
-~ sub_100088eac -> sub_100088eb4 : 616 -> 624
-~ sub_1000891d4 -> sub_1000891e4 : 620 -> 628
-~ sub_100089440 -> sub_100089458 : 620 -> 628
-~ sub_10008970c -> sub_10008972c : 624 -> 632
-~ sub_10008997c -> sub_1000899a4 : 624 -> 632
-~ sub_100089bec -> sub_100089c1c : 620 -> 628
-~ sub_100089eb8 -> sub_100089ef0 : 640 -> 648
-~ sub_10008a138 -> sub_10008a178 : 620 -> 628
-~ sub_10008a3a4 -> sub_10008a3ec : 620 -> 628
-~ sub_10008a610 -> sub_10008a660 : 624 -> 632
-~ sub_10008a8e0 -> sub_10008a938 : 640 -> 648
-~ sub_10008ab60 -> sub_10008abc0 : 624 -> 632
-~ sub_10008aea4 -> sub_10008af0c : 596 -> 604
-~ sub_10008b1cc -> sub_10008b23c : 620 -> 628
-~ sub_10008b4ac -> sub_10008b524 : 668 -> 676
-~ sub_10008b950 -> sub_10008b9d0 : 640 -> 648
-~ sub_10008bc30 -> sub_10008bcb8 : 620 -> 628
-~ sub_10008befc -> sub_10008bf8c : 640 -> 648
-~ sub_10008c23c -> sub_10008c2d4 : 636 -> 644
-~ sub_10008c58c -> sub_10008c62c : 672 -> 680
-~ sub_10008ca5c -> sub_10008cb04 : 628 -> 636
-~ sub_10008cd90 -> sub_10008ce40 : 640 -> 648
-~ sub_10008d158 -> sub_10008d210 : 620 -> 628
-~ sub_10008d774 -> sub_10008d834 : 628 -> 636
-~ sub_10008daa8 -> sub_10008db70 : 628 -> 636
-~ sub_10008dd1c -> sub_10008ddec : 620 -> 628
-~ sub_10008df88 -> sub_10008e060 : 624 -> 632
-~ sub_10008e258 -> sub_10008e338 : 640 -> 648
-~ sub_10008e538 -> sub_10008e620 : 624 -> 632
-~ sub_10008e7a8 -> sub_10008e898 : 624 -> 632
-~ sub_10008ead8 -> sub_10008ebd0 : 640 -> 648
-~ sub_1000c5c78 -> sub_1000c5d78 : 1228 -> 1236
+~ sub_10008a620 : 704 -> 712
+~ sub_10008a8e0 -> sub_10008a8e8 : 616 -> 624
+~ sub_10008ac08 -> sub_10008ac18 : 620 -> 628
+~ sub_10008ae74 -> sub_10008ae8c : 620 -> 628
+~ sub_10008b140 -> sub_10008b160 : 624 -> 632
+~ sub_10008b3b0 -> sub_10008b3d8 : 624 -> 632
+~ sub_10008b620 -> sub_10008b650 : 620 -> 628
+~ sub_10008b8ec -> sub_10008b924 : 640 -> 648
+~ sub_10008bb6c -> sub_10008bbac : 620 -> 628
+~ sub_10008bdd8 -> sub_10008be20 : 620 -> 628
+~ sub_10008c044 -> sub_10008c094 : 624 -> 632
+~ sub_10008c314 -> sub_10008c36c : 640 -> 648
+~ sub_10008c594 -> sub_10008c5f4 : 624 -> 632
+~ sub_10008c8d8 -> sub_10008c940 : 596 -> 604
+~ sub_10008cc00 -> sub_10008cc70 : 620 -> 628
+~ sub_10008cee0 -> sub_10008cf58 : 668 -> 676
+~ sub_10008d384 -> sub_10008d404 : 640 -> 648
+~ sub_10008d664 -> sub_10008d6ec : 620 -> 628
+~ sub_10008d930 -> sub_10008d9c0 : 640 -> 648
+~ sub_10008dc70 -> sub_10008dd08 : 636 -> 644
+~ sub_10008dfc0 -> sub_10008e060 : 672 -> 680
+~ sub_10008e490 -> sub_10008e538 : 628 -> 636
+~ sub_10008e7c4 -> sub_10008e874 : 640 -> 648
+~ sub_10008eb8c -> sub_10008ec44 : 620 -> 628
+~ sub_10008f1a8 -> sub_10008f268 : 628 -> 636
+~ sub_10008f4dc -> sub_10008f5a4 : 628 -> 636
+~ sub_10008f750 -> sub_10008f820 : 620 -> 628
+~ sub_10008f9bc -> sub_10008fa94 : 624 -> 632
+~ sub_10008fc8c -> sub_10008fd6c : 640 -> 648
+~ sub_10008ff6c -> sub_100090054 : 624 -> 632
+~ sub_1000901dc -> sub_1000902cc : 624 -> 632
+~ sub_10009050c -> sub_100090604 : 640 -> 648
+~ sub_1000c7cc8 -> sub_1000c7dc8 : 1236 -> 1244
 ```

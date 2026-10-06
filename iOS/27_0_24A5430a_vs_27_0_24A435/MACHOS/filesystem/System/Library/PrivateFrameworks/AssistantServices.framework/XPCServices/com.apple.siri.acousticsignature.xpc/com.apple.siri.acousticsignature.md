@@ -2,27 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/AssistantServices.framework/XPCServices/com.apple.siri.acousticsignature.xpc/com.apple.siri.acousticsignature`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__objc_methlist`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x120b4` | `0x1211c` | **`+0x68`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__init_offsets`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -3600.68.61.11.9
--  __TEXT.__text: 0x120b4
 +3600.68.61.11.11
-+  __TEXT.__text: 0x1211c
-   __TEXT.__auth_stubs: 0x4f0
-   __TEXT.__objc_stubs: 0x3c0
-   __TEXT.__init_offsets: 0x10
 Functions:
 ~ sub_1000050ac : 8604 -> 8608
 ~ sub_10000b7f8 -> sub_10000b7fc : 604 -> 612

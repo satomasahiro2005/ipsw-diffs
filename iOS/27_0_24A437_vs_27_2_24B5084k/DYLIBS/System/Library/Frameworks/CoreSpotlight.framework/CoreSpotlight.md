@@ -2,91 +2,40 @@
 
 > `/System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17c888` | `0x17cee0` | **`+0x658`** |
+| `__TEXT.__oslogstring` | `0xbb7e` | `0xbd15` | **`+0x197`** |
+| `__TEXT.__gcc_except_tab` | `0x9480` | `0x94fc` | **`+0x7c`** |
+| `__TEXT.__dlopen_cstrs` | `0x526` | `0x4c4` | **`-0x62`** |
+| `__AUTH_CONST.__objc_const` | `0x1f780` | `0x1f7c0` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x2bc05` | `0x2bc42` | **`+0x3d`** |
+| `__DATA_CONST.__const` | `0x65a8` | `0x65e0` | **`+0x38`** |
+| `__AUTH_CONST.__const` | `0x23f0` | `0x2410` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x14400` | `0x14420` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x1148` | `0x1130` | **`-0x18`** |
+| `__DATA.__bss` | `0x1990` | `0x19a0` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa4b0` | `0xa4c0` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0xa808` | `0xa7f8` | **`-0x10`** |
+| `__TEXT.__const` | `0xef8` | `0xf08` | **`+0x10`** |
+| `__DATA.__data` | `0x1c58` | `0x1c60` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x5f40` | `0x5f48` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2459.105.0.0.0
--  __TEXT.__text: 0x1759bc
--  __TEXT.__objc_methlist: 0x14400
--  __TEXT.__const: 0xef8
--  __TEXT.__gcc_except_tab: 0x9480
--  __TEXT.__cstring: 0x2bc05
--  __TEXT.__oslogstring: 0xbb7e
 +2465.1.2.0.0
-+  __TEXT.__text: 0x175ff4
-+  __TEXT.__objc_methlist: 0x14420
-+  __TEXT.__const: 0xf08
-+  __TEXT.__gcc_except_tab: 0x94fc
-+  __TEXT.__cstring: 0x2bc42
-+  __TEXT.__oslogstring: 0xbd15
-   __TEXT.__ustring: 0x218e
--  __TEXT.__dlopen_cstrs: 0x526
-+  __TEXT.__dlopen_cstrs: 0x4c4
-   __TEXT.__constg_swiftt: 0x1bc
-   __TEXT.__swift5_typeref: 0x2ba
-   __TEXT.__swift5_reflstr: 0x8e
 
-   __TEXT.__swift_as_cont: 0xc
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x7130
-+  __TEXT.__unwind_info: 0x7138
-   __TEXT.__eh_frame: 0x210
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x65a8
-+  __DATA_CONST.__const: 0x65e0
-   __DATA_CONST.__objc_classlist: 0xa90
-   __DATA_CONST.__objc_catlist: 0x60
-   __DATA_CONST.__objc_protolist: 0xa8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa4b0
-+  __DATA_CONST.__objc_selrefs: 0xa4c0
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x720
-   __DATA_CONST.__objc_arraydata: 0x11290
-   __DATA_CONST.__got: 0xe50
--  __AUTH_CONST.__const: 0x23f0
-+  __AUTH_CONST.__const: 0x2410
-   __AUTH_CONST.__cfstring: 0x2de60
--  __AUTH_CONST.__objc_const: 0x1f780
-+  __AUTH_CONST.__objc_const: 0x1f7c0
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x3ae0
-   __AUTH_CONST.__objc_dictobj: 0xaf78
-   __AUTH_CONST.__objc_intobj: 0xe58
-   __AUTH_CONST.__objc_doubleobj: 0x180
-   __AUTH_CONST.__objc_floatobj: 0x20
--  __AUTH_CONST.__auth_got: 0x1148
-+  __AUTH_CONST.__auth_got: 0x1130
-   __AUTH.__objc_data: 0x5b90
-   __AUTH.__data: 0x3a0
-   __AUTH.__thread_vars: 0x48
-   __AUTH.__thread_bss: 0x18
-   __DATA.__objc_ivar: 0x13f8
--  __DATA.__data: 0x1c58
-+  __DATA.__data: 0x1c60
-   __DATA_DIRTY.__objc_data: 0xe10
-   __DATA_DIRTY.__data: 0x20
--  __DATA_DIRTY.__bss: 0xa808
-+  __DATA_DIRTY.__bss: 0xa7f8
-   __DATA_DIRTY.__common: 0x18
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 8858
--  Symbols:   17615
+-  Symbols:   14501
 -  CStrings:  8066
 +  Functions: 8866
-+  Symbols:   17621
++  Symbols:   14507
 +  CStrings:  8075
- 
 Symbols:
 + -[CSInlineDonation _errorWithCode:description:underlying:]
 + -[CSSearchQuery didResolveFriendlyAttributeNames:resolvedFetchAttributes:]
@@ -148,11 +97,6 @@ Symbols:
 + _logForCSLogCategoryDonationTracing
 + _logForCSLogCategoryDonationTracing.onceToken
 + _logForCSLogCategoryDonationTracing.sDonationTracingLog
-+ _objc_msgSend$_errorWithCode:description:underlying:
-+ _objc_msgSend$didResolveFriendlyAttributeNames:resolvedFetchAttributes:
-+ _objc_msgSend$filterUsingPredicate:
-+ _objc_msgSend$setPredicateFrameworkGenerated:
-+ _objc_msgSend$setPredicateSearchToolGenerated:
 + _objc_retain_x10
 + _sDonationXPCTraceID
 - -[CSInlineDonation _logErrorWithCode:description:underlying:]
@@ -211,11 +155,6 @@ Symbols:
 - ___getSKGAttributeProcessorClass_block_invoke
 - _audit_stringSpotlightKnowledge
 - _getSKGAttributeProcessorClass.softClass
-- _objc_msgSend$_logErrorWithCode:description:underlying:
-- _objc_msgSend$_standardizeProcessorAttributesForBundle:protectionClass:isUpdate:
-- _objc_msgSend$didResolveFriendlyAttributeNames:fromFetchAttributes:
-- _objc_msgSend$processorAttributesForRecord:bundleID:protectionClass:isUpdate:
-- _objc_msgSend$sharedProcessor
 CStrings:
 + "?P"
 + "B24@?0@\"CSTopHitResult\"8@\"NSDictionary\"16"

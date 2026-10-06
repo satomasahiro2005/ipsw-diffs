@@ -2,31 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/FitnessFiltering.framework/FitnessFiltering`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x89910` | `0x898cc` | **`-0x44`** |
+
+### Other Changes
+
 ```diff
 
 -2027.1.54.0.0
--  __TEXT.__text: 0x85ce0
 +2027.1.63.0.0
-+  __TEXT.__text: 0x85c9c
-   __TEXT.__const: 0x9dc8
-   __TEXT.__swift5_typeref: 0x562e
-   __TEXT.__swift5_reflstr: 0xeb7
 Functions:
-~ sub_2646c63ac -> sub_2639953ac : 8756 -> 8764
-~ sub_2646d0a0c -> sub_26399fa14 : 176 -> 172
-~ sub_2646ee100 -> sub_2639bd104 : 3080 -> 3072
-~ sub_2646ef5bc -> sub_2639be5b8 : 108 -> 112
-~ sub_2646ef7ac -> sub_2639be7ac : 176 -> 172
-~ sub_2646ef85c -> sub_2639be858 : 156 -> 148
-~ sub_2646ef9ec -> sub_2639be9e0 : 292 -> 304
-~ sub_2646efb10 -> sub_2639beb10 : 300 -> 316
-~ sub_2646efc3c -> sub_2639bec4c : 268 -> 272
-~ sub_264727e90 -> sub_2639f6ea4 : 1308 -> 1292
-~ sub_2647283ac -> sub_2639f73b0 : 416 -> 408
-~ sub_2647287f0 -> sub_2639f77ec : 496 -> 488
-~ sub_26472ddcc -> sub_2639fcdc0 : 2444 -> 2428
-~ sub_26472e9e8 -> sub_2639fd9cc : 460 -> 452
-~ sub_26473b428 -> sub_263a0a404 : 1616 -> 1608
-~ sub_264740a28 -> sub_263a0f9fc : 564 -> 548
-~ sub_26474472c -> sub_263a136f0 : 832 -> 824
+~ sub_26743d3cc -> sub_26676f3cc : 8772 -> 8780
+~ sub_267447d20 -> sub_266779d28 : 176 -> 172
+~ sub_2674662b8 -> sub_2667982bc : 3132 -> 3124
+~ sub_267467830 -> sub_26679982c : 108 -> 112
+~ sub_267467a20 -> sub_266799a20 : 176 -> 172
+~ sub_267467ad0 -> sub_266799acc : 156 -> 148
+~ sub_267467c60 -> sub_266799c54 : 292 -> 304
+~ sub_267467d84 -> sub_266799d84 : 300 -> 316
+~ sub_267467eb0 -> sub_266799ec0 : 268 -> 272
+~ sub_2674a1ac4 -> sub_2667d3ad8 : 1308 -> 1292
+~ sub_2674a1fe0 -> sub_2667d3fe4 : 416 -> 408
+~ sub_2674a244c -> sub_2667d4448 : 496 -> 488
+~ sub_2674a7c78 -> sub_2667d9c6c : 2464 -> 2448
+~ sub_2674a88a8 -> sub_2667da88c : 460 -> 452
+~ sub_2674b5980 -> sub_2667e795c : 1656 -> 1648
+~ sub_2674bb204 -> sub_2667ed1d8 : 564 -> 548
+~ sub_2674bf138 -> sub_2667f10fc : 852 -> 844
 ```

@@ -2,43 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/NewsAnalytics.framework/NewsAnalytics`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x323db8` | `0x323f68` | **`+0x1b0`** |
+| `__TEXT.__unwind_info` | `0xf7b8` | `0xf7d8` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x15924` | `0x1593c` | **`+0x18`** |
+| `__TEXT.__const` | `0x3f4dc` | `0x3f4ec` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0xc2d5` | `0xc2e5` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -5934.3.0.0.0
--  __TEXT.__text: 0x301bf0
 +5960.0.0.0.0
-+  __TEXT.__text: 0x301da0
-   __TEXT.__objc_methlist: 0x3250
--  __TEXT.__const: 0x3f4dc
-+  __TEXT.__const: 0x3f4ec
-   __TEXT.__constg_swiftt: 0x9c00
-   __TEXT.__swift5_typeref: 0x6729
--  __TEXT.__swift5_reflstr: 0xc2d5
--  __TEXT.__swift5_fieldmd: 0x15924
-+  __TEXT.__swift5_reflstr: 0xc2e5
-+  __TEXT.__swift5_fieldmd: 0x1593c
-   __TEXT.__swift5_builtin: 0x118
-   __TEXT.__swift5_assocty: 0xcc0
-   __TEXT.__swift5_proto: 0x3a38
 
-   __TEXT.__swift_as_cont: 0x4
-   __TEXT.__swift_as_ret: 0x4
-   __TEXT.__swift5_mpenum: 0x28
--  __TEXT.__unwind_info: 0x13550
-+  __TEXT.__unwind_info: 0x13560
-   __TEXT.__eh_frame: 0x11458
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 23118
--  Symbols:   4453
+-  Symbols:   4183
 +  Functions: 23121
-+  Symbols:   4452
-   CStrings:  1136
- 
++  Symbols:   4182
 Symbols:
 - ___swift_memcpy128_8
 ```

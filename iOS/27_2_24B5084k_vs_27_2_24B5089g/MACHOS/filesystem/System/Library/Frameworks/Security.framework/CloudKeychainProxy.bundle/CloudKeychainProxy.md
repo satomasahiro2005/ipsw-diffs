@@ -2,15 +2,14 @@
 
 > `/System/Library/Frameworks/Security.framework/CloudKeychainProxy.bundle/CloudKeychainProxy`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -62460.40.49.502.1
 +62460.40.56.502.1
-   __TEXT.__text: 0xc164
-   __TEXT.__auth_stubs: 0xbd0
-   __TEXT.__objc_stubs: 0x1920
 ```

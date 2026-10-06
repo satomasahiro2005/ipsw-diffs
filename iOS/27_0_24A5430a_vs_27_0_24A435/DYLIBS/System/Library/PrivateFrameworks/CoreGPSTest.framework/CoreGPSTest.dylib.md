@@ -2,22 +2,21 @@
 
 > `/System/Library/PrivateFrameworks/CoreGPSTest.framework/CoreGPSTest.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x66ca0` | `0x66e6c` | **`+0x1cc`** |
+| `__TEXT.__const` | `0x64c0` | `0x6570` | **`+0xb0`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
 - `__TEXT.__oslogstring`
 
-```diff
+### Other Changes
 
- 365.0.9.0.1
--  __TEXT.__text: 0x66ca0
-+  __TEXT.__text: 0x66e6c
-   __TEXT.__init_offsets: 0xc
-   __TEXT.__objc_methlist: 0x164
--  __TEXT.__const: 0x64c0
-+  __TEXT.__const: 0x6570
-   __TEXT.__gcc_except_tab: 0x3988
-   __TEXT.__oslogstring: 0xaa72
-   __TEXT.__constg_swiftt: 0x408
+```diff
 Functions:
 ~ __ZN12MessageQueueIN6cproto4gpsd10IndicationELm16EE4pushERKS2_b : 420 -> 424
 ~ __ZN17GnssDevicePayload16flushIndicationsEv : 280 -> 284
@@ -32,5 +31,9 @@ Functions:
 ~ __ZN4cCLP8LogEntry11PrivateData6cpbHalERKNS1_20MeasurementExtensionERKNSt3__16vectorIhNS5_9allocatorIhEEEERN4gnss20MeasurementExtensionE : 744 -> 756
 CStrings:
 + "#version,CoreGPS-365.0.9.0.1,machContSec,%{public}.3f,BuildTime,{Aug 13 2026,21:42:35}"
++ "21:42:30"
++ "21:46:23"
 - "#version,CoreGPS-365.0.9.0.1,machContSec,%{public}.3f,BuildTime,{Aug 13 2026,22:26:38}"
+- "22:26:33"
+- "22:31:07"
 ```

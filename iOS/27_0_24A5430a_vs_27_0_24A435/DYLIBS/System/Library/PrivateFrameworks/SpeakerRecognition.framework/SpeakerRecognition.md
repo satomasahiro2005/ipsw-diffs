@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SpeakerRecognition.framework/SpeakerRecognition`
 
-```diff
+### Section Size Changes
 
- 3600.70.47.11.1
--  __TEXT.__text: 0xb87f8
-+  __TEXT.__text: 0xb87fc
-   __TEXT.__objc_methlist: 0x6d98
-   __TEXT.__const: 0xf78
-   __TEXT.__dlopen_cstrs: 0xa6
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb87f8` | `0xb87fc` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_20507543c -> sub_2056f943c : 1072 -> 1076
 ~ sub_20507cac0 -> sub_205700ac4 : 4740 -> 4736

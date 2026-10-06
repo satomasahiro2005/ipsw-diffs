@@ -2,38 +2,21 @@
 
 > `/System/Library/PrivateFrameworks/CoreUI.framework/CoreUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe600c` | `0xe6104` | **`+0xf8`** |
+| `__TEXT.__cstring` | `0x25cf7` | `0x25d27` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0xed00` | `0xed18` | **`+0x18`** |
+| `__TEXT.__const` | `0x64c8` | `0x64d8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
- 1010.0.0.0.0
--  __TEXT.__text: 0xe600c
-+  __TEXT.__text: 0xe6104
-   __TEXT.__delay_stubs: 0x40
-   __TEXT.__delay_helper: 0xa4
-   __TEXT.__objc_methlist: 0xa420
--  __TEXT.__const: 0x64c8
-+  __TEXT.__const: 0x64d8
-   __TEXT.__gcc_except_tab: 0x2c7c
--  __TEXT.__cstring: 0x25cf7
-+  __TEXT.__cstring: 0x25d27
-   __TEXT.__oslogstring: 0x200
-   __TEXT.__constg_swiftt: 0x2fc
-   __TEXT.__swift5_typeref: 0x38e
-
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xed00
-+  __DATA_CONST.__const: 0xed18
-   __DATA_CONST.__objc_classlist: 0x508
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x70
-
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 5828
-   Symbols:   11117
 -  CStrings:  5502
 +  CStrings:  5504
- 
 Functions:
 ~ -[CUINamedRenditionInfo attributePresent:withValue:] : 1544 -> 1564
 ~ -[CUIThemeRendition _initializeCompositingOptionsFromCSIData:version:] : 172 -> 176

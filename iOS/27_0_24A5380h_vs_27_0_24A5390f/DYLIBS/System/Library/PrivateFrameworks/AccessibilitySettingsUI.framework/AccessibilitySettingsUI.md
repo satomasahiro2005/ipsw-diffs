@@ -2,103 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/AccessibilitySettingsUI.framework/AccessibilitySettingsUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__objc_data`
-- `__DATA.__objc_stublist`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x139c20` | `0x13d8e8` | **`+0x3cc8`** |
+| `__TEXT.__swift5_typeref` | `0x1659c` | `0x173cc` | **`+0xe30`** |
+| `__TEXT.__const` | `0xc758` | `0xc9c8` | **`+0x270`** |
+| `__DATA.__bss` | `0x6658` | `0x6858` | **`+0x200`** |
+| `__AUTH_CONST.__const` | `0x61f8` | `0x6388` | **`+0x190`** |
+| `__DATA.__data` | `0x5828` | `0x5940` | **`+0x118`** |
+| `__AUTH_CONST.__auth_got` | `0x27b0` | `0x2888` | **`+0xd8`** |
+| `__TEXT.__unwind_info` | `0x3720` | `0x37b8` | **`+0x98`** |
+| `__TEXT.__swift5_reflstr` | `0x2864` | `0x28f4` | **`+0x90`** |
+| `__TEXT.__swift5_capture` | `0x1b64` | `0x1be4` | **`+0x80`** |
+| `__TEXT.__swift5_fieldmd` | `0x2408` | `0x2470` | **`+0x68`** |
+| `__DATA_CONST.__got` | `0x1370` | `0x13c8` | **`+0x58`** |
+| `__TEXT.__constg_swiftt` | `0x3fbc` | `0x4004` | **`+0x48`** |
+| `__TEXT.__swift5_assocty` | `0xcd8` | `0xd20` | **`+0x48`** |
+| `__TEXT.__eh_frame` | `0x3114` | `0x3144` | **`+0x30`** |
+| `__TEXT.__swift5_proto` | `0x2cc` | `0x2dc` | **`+0x10`** |
+| `__AUTH.__data` | `0x3280` | `0x3288` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x260` | `0x268` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -3234.5.0.0.0
--  __TEXT.__text: 0x139c20
 +3237.1.0.0.0
-+  __TEXT.__text: 0x13d8e8
-   __TEXT.__objc_methlist: 0x824
--  __TEXT.__const: 0xc758
--  __TEXT.__constg_swiftt: 0x3fbc
--  __TEXT.__swift5_typeref: 0x1659c
-+  __TEXT.__const: 0xc9c8
-+  __TEXT.__constg_swiftt: 0x4004
-+  __TEXT.__swift5_typeref: 0x173cc
-   __TEXT.__swift5_builtin: 0xa0
--  __TEXT.__swift5_reflstr: 0x2864
--  __TEXT.__swift5_fieldmd: 0x2408
--  __TEXT.__swift5_assocty: 0xcd8
--  __TEXT.__swift5_proto: 0x2cc
--  __TEXT.__swift5_types: 0x260
-+  __TEXT.__swift5_reflstr: 0x28f4
-+  __TEXT.__swift5_fieldmd: 0x2470
-+  __TEXT.__swift5_assocty: 0xd20
-+  __TEXT.__swift5_proto: 0x2dc
-+  __TEXT.__swift5_types: 0x268
-   __TEXT.__cstring: 0x31cc
--  __TEXT.__swift5_capture: 0x1b64
-+  __TEXT.__swift5_capture: 0x1be4
-   __TEXT.__swift_as_entry: 0xc8
-   __TEXT.__swift_as_ret: 0xa8
-   __TEXT.__swift_as_cont: 0x1e8
 
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__gcc_except_tab: 0x28
--  __TEXT.__unwind_info: 0x3720
--  __TEXT.__eh_frame: 0x3114
-+  __TEXT.__unwind_info: 0x37b8
-+  __TEXT.__eh_frame: 0x3144
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0x998
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__objc_superrefs: 0x10
--  __DATA_CONST.__got: 0x1370
--  __AUTH_CONST.__const: 0x61f8
-+  __DATA_CONST.__got: 0x13c8
-+  __AUTH_CONST.__const: 0x6388
-   __AUTH_CONST.__cfstring: 0x3a0
-   __AUTH_CONST.__objc_const: 0x18a0
--  __AUTH_CONST.__auth_got: 0x27b0
-+  __AUTH_CONST.__auth_got: 0x2888
-   __AUTH.__objc_data: 0xab0
--  __AUTH.__data: 0x3280
-+  __AUTH.__data: 0x3288
-   __DATA.__objc_ivar: 0x2c
--  __DATA.__data: 0x5828
-+  __DATA.__data: 0x5940
-   __DATA.__objc_stublist: 0x8
--  __DATA.__bss: 0x6658
-+  __DATA.__bss: 0x6858
-   __DATA.__common: 0x90
-   __DATA_DIRTY.__objc_data: 0x50
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5391
--  Symbols:   2767
+-  Symbols:   2578
 +  Functions: 5451
-+  Symbols:   2802
-   CStrings:  386
- 
++  Symbols:   2613
 Symbols:
 + _CGRectGetHeight
 + _CGRectGetMinX

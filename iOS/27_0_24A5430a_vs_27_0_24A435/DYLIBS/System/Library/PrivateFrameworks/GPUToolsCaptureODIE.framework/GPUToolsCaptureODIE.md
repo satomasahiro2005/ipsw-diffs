@@ -2,16 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/GPUToolsCaptureODIE.framework/GPUToolsCaptureODIE`
 
-```diff
+### Section Size Changes
 
- 2027.0.37.0.0
--  __TEXT.__text: 0x5f28
-+  __TEXT.__text: 0x5f40
-   __TEXT.__objc_methlist: 0x1b4
-   __TEXT.__const: 0x1b8
-   __TEXT.__swift5_typeref: 0xa3
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5f28` | `0x5f40` | **`+0x18`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_265ed1a10 -> sub_266beea10 : 1696 -> 1708
-~ sub_265ed2104 -> sub_266bef110 : 680 -> 684
-~ sub_265ed23ac -> sub_266bef3bc : 5268 -> 5276
+~ sub_265db3a10 -> sub_266acaa10 : 1696 -> 1708
+~ sub_265db4104 -> sub_266acb110 : 680 -> 684
+~ sub_265db43ac -> sub_266acb3bc : 5268 -> 5276
 ```

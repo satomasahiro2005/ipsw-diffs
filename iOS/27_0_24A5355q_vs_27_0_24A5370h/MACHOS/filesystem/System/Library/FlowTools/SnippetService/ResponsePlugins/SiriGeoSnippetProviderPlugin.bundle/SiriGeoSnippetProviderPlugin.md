@@ -2,124 +2,68 @@
 
 > `/System/Library/FlowTools/SnippetService/ResponsePlugins/SiriGeoSnippetProviderPlugin.bundle/SiriGeoSnippetProviderPlugin`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x46810` | `0x4b9ac` | **`+0x519c`** |
+| `__TEXT.__cstring` | `0x7d8` | `0xa18` | **`+0x240`** |
+| `__DATA_CONST.__const` | `0x1ca0` | `0x1e98` | **`+0x1f8`** |
+| `__TEXT.__oslogstring` | `0x11c2` | `0x131c` | **`+0x15a`** |
+| `__DATA_CONST.__got` | `0x508` | `0x658` | **`+0x150`** |
+| `__TEXT.__objc_stubs` | `0xde0` | `0xf00` | **`+0x120`** |
+| `__TEXT.__objc_methname` | `0x7ad` | `0x8af` | **`+0x102`** |
+| `__DATA.__bss` | `0x3e00` | `0x3f00` | **`+0x100`** |
+| `__TEXT.__auth_stubs` | `0x1a50` | `0x1b30` | **`+0xe0`** |
+| `__DATA.__data` | `0xed8` | `0xf90` | **`+0xb8`** |
+| `__TEXT.__swift5_fieldmd` | `0xb30` | `0xbd0` | **`+0xa0`** |
+| `__TEXT.__const` | `0x2df8` | `0x2e80` | **`+0x88`** |
+| `__DATA_CONST.__auth_got` | `0xd30` | `0xda0` | **`+0x70`** |
+| `__TEXT.__unwind_info` | `0xbe0` | `0xc30` | **`+0x50`** |
+| `__DATA.__objc_selrefs` | `0x378` | `0x3c0` | **`+0x48`** |
+| `__TEXT.__swift5_typeref` | `0xd56` | `0xd22` | **`-0x34`** |
+| `__TEXT.__swift5_reflstr` | `0xa0f` | `0xa3f` | **`+0x30`** |
+| `__TEXT.__constg_swiftt` | `0x7e8` | `0x810` | **`+0x28`** |
+| `__DATA_CONST.__auth_ptr` | `0x5d0` | `0x5d8` | **`+0x8`** |
+| `__TEXT.__eh_frame` | `0xb40` | `0xb48` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x224` | `0x22c` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0xd0` | `0xd4` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__objc_classlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
 -3600.30.13.0.0
--  __TEXT.__text: 0x46810 sha256:a0a21f1ef118f276e4cf77c61e30facbe23a2038093668365fe6835bf8393e38
--  __TEXT.__auth_stubs: 0x1a50 sha256:73ed571978679bc222a6791d1d903a1ab36dab3f9b8c19df7d65269fe2897454
--  __TEXT.__objc_stubs: 0xde0 sha256:dc43af8b9de0f63e182dae713a91ce21b6d63224375a63deaad25d1b8c7f8dc1
--  __TEXT.__const: 0x2df8 sha256:d0492aaadf0ed97ec853984fc8716846f5c1beb6b9b8cf967897bcb1aecc8f51
--  __TEXT.__swift5_typeref: 0xd56 sha256:3c5b55a75b4256c87dfb66eda1bc83b25ba2193bcb8623aecdd78cf63c170760
--  __TEXT.__oslogstring: 0x11c2 sha256:ebb736019d20c98eba7438c4682bcaa4667f516613888d1186270982d5d70260
--  __TEXT.__cstring: 0x7d8 sha256:80b5355e756e9ae83a2ffe0cfceb87c249326cb505c6447d1f6c94a1b4420b58
--  __TEXT.__constg_swiftt: 0x7e8 sha256:a24eb7e75d99afb60d2bbe3855c2a06c91d8acbe7ddb9486365d5e6e7b9781d5
 +3600.36.4.0.0
-+  __TEXT.__text: 0x4b9ac sha256:1c2c47367dca0a2b3248902fb2cfa2c202edb2a9a2f0601f01a1d15c4e0540ba
-+  __TEXT.__auth_stubs: 0x1b30 sha256:24e1f427cb23da510106daec9ca704df3477e72f86294c75b8c0f6a2d46b60f3
-+  __TEXT.__objc_stubs: 0xf00 sha256:3d0c72e4e38297d50f4f4e808834355af85f924fb8d17b8adec4090f5cfa2078
-+  __TEXT.__const: 0x2e80 sha256:665461f834941816ddb48ca46ad7b8307e8e7e93c624ad6328fee33ec43c1ef4
-+  __TEXT.__swift5_typeref: 0xd22 sha256:f9a869933b6ca76605d147b122c81175dcb753c9aa20f68b28e6c0641fdd335f
-+  __TEXT.__oslogstring: 0x131c sha256:638d4c42d054c498f96249bf2705219c341c9613aac502f3086765d32d0f0800
-+  __TEXT.__cstring: 0xa18 sha256:bad24777b2973ae78ac767c7dd3b9374ddc277994a1690872319d845d327c141
-+  __TEXT.__constg_swiftt: 0x810 sha256:7aa9116fba22ca918fb04cb149d58153211261f2a7ad92d01c215325d44a9e04
-   __TEXT.__objc_classname: 0x2d1 sha256:04e3c081ef378b424d7a212a20af5fea40d5f5d3052c2a26ffd4b6a3393cc41b
--  __TEXT.__swift5_fieldmd: 0xb30 sha256:a8a01070832953844c3fafbd9a512ff7821bae4ce5b28c2275fd30a21a95fef8
--  __TEXT.__swift5_types: 0xd0 sha256:d96e01071a47eb460709ce4b4ab5a341bb4536e51fabe08b89b4a913d14879f7
--  __TEXT.__swift_as_entry: 0x84 sha256:b50993159e24a1a04ccc95f81687df139c1202eaedad1f97a6e441eb01cce178
--  __TEXT.__swift_as_ret: 0x68 sha256:7d98bdacab08701c4138c47bbd8dad1b3de38d0cc986ceef737c845a13fbcf15
--  __TEXT.__swift_as_cont: 0x80 sha256:4937c238489c5007b08d8fd5ddbdd962de3ce7cbb8e5ffd303c758fead4af2d5
--  __TEXT.__swift5_reflstr: 0xa0f sha256:99f234c5ea2f740287bdff8776d336bd8f6be677e23ef54382a2e182362c3254
--  __TEXT.__swift5_proto: 0x224 sha256:845fab6204342e314cf08723b96cedb8a6971e4823c1d02813a9d58a1a50a3f5
--  __TEXT.__swift5_assocty: 0x138 sha256:932286141397587269128dd27414bdc2991a448db411441b45e1b798c7ab933a
--  __TEXT.__swift5_builtin: 0x28 sha256:035da616764fe1fbc05e85bd121f674d6be7fa5771f7076922ab5a3073bbe2b9
--  __TEXT.__swift5_mpenum: 0x1c sha256:8ee45879ac33066b58861d2147d48efa9b46b6b3c0c57ca40b34c987cd2251a4
--  __TEXT.__objc_methname: 0x7ad sha256:2a6a284a832cd05fbf8ec9c659cd2da3361934963bf3f76bf2efc9f89694c48c
-+  __TEXT.__swift5_fieldmd: 0xbd0 sha256:83edc7dc14399765c3838b43717269c374899fc81bd0b5ebe52acc495f6c386f
-+  __TEXT.__swift5_types: 0xd4 sha256:39cc92fa6f32f14846e12f0ab93797e1b698d52aabda861bc876cd89493f7b41
-+  __TEXT.__swift_as_entry: 0x84 sha256:fb70b3e3293dec523fd8edf9ba436f45b8870c85e1e93a8e469cacb8cb3c07d6
-+  __TEXT.__swift_as_ret: 0x68 sha256:abeeeb8793555a173070f3c7879620133f811ccc6885b644b8b5a5db0d9e08c8
-+  __TEXT.__swift_as_cont: 0x80 sha256:a99ccfecbf834cc4ebb9e9d2626007c30a1bf477a9b4b585027eb16514ddf8d0
-+  __TEXT.__swift5_reflstr: 0xa3f sha256:a00b49bcd7c44e64e6784d7d5de76d5957162f5351dcd3442cfa7da5a35d90a1
-+  __TEXT.__swift5_proto: 0x22c sha256:cb2d4e306fa363f027075a9aeae5bf10afb10ea21872b2aa32ed701d0c29c5d0
-+  __TEXT.__swift5_assocty: 0x138 sha256:569225762f829a203937108367a8628d441845363acce0bc7d40044a3c0d9a50
-+  __TEXT.__swift5_builtin: 0x28 sha256:6c58d1450e34568f0bad10f92cfced28013688ee2bea7ba7a5b97e0842deb641
-+  __TEXT.__swift5_mpenum: 0x1c sha256:0a3e117dc046744bb21a4d824138a4db8bdbfea7ba2d50384fe82acb3306bc93
-+  __TEXT.__objc_methname: 0x8af sha256:8b9eff563b83efdc10120e6fb9c7ff299f75e55a605e6fcd50ce03a9a7dd6d33
-   __TEXT.__objc_methtype: 0x30 sha256:46280f4e81134159dff92a5cfa32d2d4bfdaac42f23a610f4716aaad9b5e095b
--  __TEXT.__swift5_capture: 0x40 sha256:4ea63527f2dd8887c99229cfa9576b0e88aa6dd3b1c7727480b8b93b4921d98a
--  __TEXT.__swift5_protos: 0x4 sha256:0a8545c79c58f5ddf4e8fa11516bff987b649eb076c0672b40a0f78ce1519f1b
--  __TEXT.__unwind_info: 0xbe0 sha256:993090e75d6bc39e742dbb135978246dfc11054e6749f0a228f1539e13cd67ec
--  __TEXT.__eh_frame: 0xb40 sha256:b28e7271abe0b3d4479a30071515a71613ab285fc17bdf1d8d0aa24628addd5b
--  __DATA_CONST.__const: 0x1ca0 sha256:219babd0be0c8b14cda7ff6654f05812e9ec1484820f8db0596199620676eb93
--  __DATA_CONST.__objc_classlist: 0x8 sha256:58fcc225c1fbd99acca78cf7e4f44d70f18a367dd772b3fea845479d58975d9c
-+  __TEXT.__swift5_capture: 0x40 sha256:ff8d364efb65a4b73a204ff69c26063e718201d44247cb080d6d653e429cc631
-+  __TEXT.__swift5_protos: 0x4 sha256:ab8e8801555c35c5cb8b81b88bb63feb2b0b6dea56e6649b17ad7e7d98381f2c
-+  __TEXT.__unwind_info: 0xc30 sha256:3952d2a0c8259262dd6cc3091ea9aff1b133d6027b796e731baf7914faeab378
-+  __TEXT.__eh_frame: 0xb48 sha256:c710d44ca30e93649701beb424b7fd7045a862a07a362a0c625a28ba2491a576
-+  __DATA_CONST.__const: 0x1e98 sha256:e3acaa7517473dcd9fbb8b9cbf0b9e6b5d0b685b262be0c0eb88a3559b20177e
-+  __DATA_CONST.__objc_classlist: 0x8 sha256:3591846e37bc724a6d15ac312c7840c3a8531651503806867f3522fb2babc02a
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:885ce8037a15de89b0ceb0054c31fc3de725513307f685be388961916dadcdb0
--  __DATA_CONST.__auth_got: 0xd30 sha256:7b5d8bfa188d2e42fb30732ad6b8a84945d10c07865d464b6677d9c5c2b3366e
--  __DATA_CONST.__got: 0x508 sha256:24b4e48c7aa67caf35953471b2a87ef643559338779f393ffae69b755433ab3b
--  __DATA_CONST.__auth_ptr: 0x5d0 sha256:38609b71dda7ef51579e2979949dad5774b8d2ccc12a80858591198b740208d6
--  __DATA.__objc_const: 0x590 sha256:7799393ae462502315a3f608fd06f84431fb1c0fee49f5108a029e3ebb031a74
--  __DATA.__objc_selrefs: 0x378 sha256:c80b81d5b730f1320378b68eeb68d45045ee0893df8c6ce8a208227c59997742
--  __DATA.__objc_data: 0x1f8 sha256:402332dc0f5239d78797dcb00897b85ebdd5101b73ddc5287307aed81fe16e7c
--  __DATA.__data: 0xed8 sha256:4b68d4305c4d86059441981104635317c2f5c554cd5e150ca5780e9c8fd01725
-+  __DATA_CONST.__auth_got: 0xda0 sha256:89803e63231f5b1ef28b2d2eb6ee6912335c0e892909029b6549e5cdebf5ff69
-+  __DATA_CONST.__got: 0x658 sha256:04267871f0a3c1bfea18a772063ff77c4b512ccb793d71206af074cfbb42c0a8
-+  __DATA_CONST.__auth_ptr: 0x5d8 sha256:883d40c5ef15b5ae6e41491b906f0ceb7700de0cc0c26ad83bdc8709065b1f51
-+  __DATA.__objc_const: 0x590 sha256:036015dd6662e42796052f0e562bdfe7c8919f5ec82c6647377e59a2359ed3d6
-+  __DATA.__objc_selrefs: 0x3c0 sha256:c33da19519b0b49a8cdd1e576ad63e8397c521bbfdb5df1b2dae4c175a0d4e48
-+  __DATA.__objc_data: 0x1f8 sha256:042e844e41fb60ddaa1b135d575cc5202759ea69ecfe9afd403cd7bd64c2e414
-+  __DATA.__data: 0xf90 sha256:7993ca94e6176c88176f8bf5a2121d761f0f23a546485c4f08735ed775144d57
-   __DATA.__common: 0x150 sha256:52a3e0804d93dc525ec3c67ef8ac5b01756ecf0513e36f3c19435e4c82cb5d29
--  __DATA.__bss: 0x3e00 sha256:d921ac9ab0502766aa7d35657ed3efe138b7b4ded007d66e8f299c50cb4f3229
-+  __DATA.__bss: 0x3f00 sha256:b177ef17360a8f0c78b60fa0d3ff669eb4c7dc8ffc7099d2bf0b09ff6f78b306
-   - /System/Library/Frameworks/CoreLocation.framework/CoreLocation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/GeoToolbox.framework/GeoToolbox
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: BAAC7AA5-D0DB-3489-AB32-4205A2D8AFD7
 -  Functions: 1305
--  Symbols:   10698
--  CStrings:  262
-+  UUID: 95A75541-2CE4-3B2D-A3DB-A437BE48E862
+-  Symbols:   4122
+-  CStrings:  261
 +  Functions: 1338
-+  Symbols:   10999
-+  CStrings:  292
- 
++  Symbols:   4260
++  CStrings:  291
 Symbols:
-+ $s28SiriGeoSnippetProviderPlugin10CardConfigV8thirdRowSayAC0I11ElementTypeOGvM.resume.0
-+ $s28SiriGeoSnippetProviderPlugin10CardConfigV9secondRowSayAC0I11ElementTypeOGvM.resume.0
-+ $s28SiriGeoSnippetProviderPlugin10CardConfigV9thumbnailAC9ThumbnailOvM.resume.0
-+ $s28SiriGeoSnippetProviderPlugin15PlaceAttributesV10priceRangeSSSgvM.resume.0
-+ $s28SiriGeoSnippetProviderPlugin15PlaceAttributesV15placeDescriptor0B7Toolbox0fI0VSgvM.resume.0
-+ $s28SiriGeoSnippetProviderPlugin15PlaceAttributesV8entityIdSSvM.resume.0
-+ $s28SiriGeoSnippetProviderPlugin15PlaceAttributesV9thumbnailAC9ThumbnailOvM.resume.0
-+ /Library/Caches/com.apple.xbs/414DCB82-E4EC-4434-A36B-5165B22DAEA0/TemporaryDirectory.oZwF0i/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/DerivedSources/
-+ /Library/Caches/com.apple.xbs/414DCB82-E4EC-4434-A36B-5165B22DAEA0/TemporaryDirectory.oZwF0i/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/AppIntentRepresentations.o
-+ /Library/Caches/com.apple.xbs/414DCB82-E4EC-4434-A36B-5165B22DAEA0/TemporaryDirectory.oZwF0i/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/CATWrappers.o
-+ /Library/Caches/com.apple.xbs/414DCB82-E4EC-4434-A36B-5165B22DAEA0/TemporaryDirectory.oZwF0i/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/EmergencyServices.o
-+ /Library/Caches/com.apple.xbs/414DCB82-E4EC-4434-A36B-5165B22DAEA0/TemporaryDirectory.oZwF0i/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/Enums+Constants.o
-+ /Library/Caches/com.apple.xbs/414DCB82-E4EC-4434-A36B-5165B22DAEA0/TemporaryDirectory.oZwF0i/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/Extensions.o
-+ /Library/Caches/com.apple.xbs/414DCB82-E4EC-4434-A36B-5165B22DAEA0/TemporaryDirectory.oZwF0i/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/GeoCATModel.o
-+ /Library/Caches/com.apple.xbs/414DCB82-E4EC-4434-A36B-5165B22DAEA0/TemporaryDirectory.oZwF0i/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/GeoCarplaySnippetHandler.o
-+ /Library/Caches/com.apple.xbs/414DCB82-E4EC-4434-A36B-5165B22DAEA0/TemporaryDirectory.oZwF0i/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/GetCurrentLocationSnippetHandler.o
-+ /Library/Caches/com.apple.xbs/414DCB82-E4EC-4434-A36B-5165B22DAEA0/TemporaryDirectory.oZwF0i/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/IFGeoFeatureFlags.o
-+ /Library/Caches/com.apple.xbs/414DCB82-E4EC-4434-A36B-5165B22DAEA0/TemporaryDirectory.oZwF0i/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/Logger.o
-+ /Library/Caches/com.apple.xbs/414DCB82-E4EC-4434-A36B-5165B22DAEA0/TemporaryDirectory.oZwF0i/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/NavigationSessionEntitySnippetHandler.o
-+ /Library/Caches/com.apple.xbs/414DCB82-E4EC-4434-A36B-5165B22DAEA0/TemporaryDirectory.oZwF0i/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/PlaceEntityCardBuilder.o
-+ /Library/Caches/com.apple.xbs/414DCB82-E4EC-4434-A36B-5165B22DAEA0/TemporaryDirectory.oZwF0i/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/PlaceInformSnippetHandler.o
-+ /Library/Caches/com.apple.xbs/414DCB82-E4EC-4434-A36B-5165B22DAEA0/TemporaryDirectory.oZwF0i/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/SiriGeoSnippetProviderPlugin.o
-+ /Library/Caches/com.apple.xbs/414DCB82-E4EC-4434-A36B-5165B22DAEA0/TemporaryDirectory.oZwF0i/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/SiriGeoSnippetProviderPlugin.swiftmodule
-+ /Library/Caches/com.apple.xbs/414DCB82-E4EC-4434-A36B-5165B22DAEA0/TemporaryDirectory.oZwF0i/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/SiriGeoSnippetProviderPlugin_vers.o
-+ /Library/Caches/com.apple.xbs/414DCB82-E4EC-4434-A36B-5165B22DAEA0/TemporaryDirectory.oZwF0i/Sources/SiriGeo/GeoFlowDelegatePlugin/Services/
-+ /Library/Caches/com.apple.xbs/414DCB82-E4EC-4434-A36B-5165B22DAEA0/TemporaryDirectory.oZwF0i/Sources/SiriGeo/SiriGeoSnippetProviderPlugin/
-+ /Library/Caches/com.apple.xbs/414DCB82-E4EC-4434-A36B-5165B22DAEA0/TemporaryDirectory.oZwF0i/Sources/SiriGeo/SiriGeoSnippetProviderPlugin/helper/
++ $s28SiriGeoSnippetProviderPlugin10CardConfigV8thirdRowSayAC0I11ElementTypeOGvM.resume
++ $s28SiriGeoSnippetProviderPlugin10CardConfigV9secondRowSayAC0I11ElementTypeOGvM.resume
++ $s28SiriGeoSnippetProviderPlugin10CardConfigV9thumbnailAC9ThumbnailOvM.resume
++ $s28SiriGeoSnippetProviderPlugin15PlaceAttributesV10priceRangeSSSgvM.resume
++ $s28SiriGeoSnippetProviderPlugin15PlaceAttributesV15placeDescriptor0B7Toolbox0fI0VSgvM.resume
++ $s28SiriGeoSnippetProviderPlugin15PlaceAttributesV8entityIdSSvM.resume
++ $s28SiriGeoSnippetProviderPlugin15PlaceAttributesV9thumbnailAC9ThumbnailOvM.resume
 + _$s10Foundation11MeasurementVySo12NSUnitLengthCGACyxGs23CustomStringConvertibleAAWL
 + _$s10Foundation11MeasurementVyxGs23CustomStringConvertibleAAMc
 + _$s10Foundation3URLVSgWOhTm
@@ -353,28 +297,8 @@ Symbols:
 + _symbolic _____ 28SiriGeoSnippetProviderPlugin15PlaceAttributesV9ThumbnailO
 + _symbolic _____Sg 16IntelligenceFlow14SystemResponseV0D7ContextV12UserLocationV
 + _symbolic _____y_____G s23_ContiguousArrayStorageC 10GeoToolbox15PlaceDescriptorV
-- $s28SiriGeoSnippetProviderPlugin10CardConfigV8thirdRowAC05ThirdI0OvM.resume.0
-- $s28SiriGeoSnippetProviderPlugin10CardConfigV9secondRowAC06SecondI0OvM.resume.0
-- /Library/Caches/com.apple.xbs/69EE092D-BE6D-42E9-B332-EA873411E6DA/TemporaryDirectory.lNErVM/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/DerivedSources/
-- /Library/Caches/com.apple.xbs/69EE092D-BE6D-42E9-B332-EA873411E6DA/TemporaryDirectory.lNErVM/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/AppIntentRepresentations.o
-- /Library/Caches/com.apple.xbs/69EE092D-BE6D-42E9-B332-EA873411E6DA/TemporaryDirectory.lNErVM/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/CATWrappers.o
-- /Library/Caches/com.apple.xbs/69EE092D-BE6D-42E9-B332-EA873411E6DA/TemporaryDirectory.lNErVM/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/EmergencyServices.o
-- /Library/Caches/com.apple.xbs/69EE092D-BE6D-42E9-B332-EA873411E6DA/TemporaryDirectory.lNErVM/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/Enums+Constants.o
-- /Library/Caches/com.apple.xbs/69EE092D-BE6D-42E9-B332-EA873411E6DA/TemporaryDirectory.lNErVM/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/Extensions.o
-- /Library/Caches/com.apple.xbs/69EE092D-BE6D-42E9-B332-EA873411E6DA/TemporaryDirectory.lNErVM/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/GeoCATModel.o
-- /Library/Caches/com.apple.xbs/69EE092D-BE6D-42E9-B332-EA873411E6DA/TemporaryDirectory.lNErVM/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/GeoCarplaySnippetHandler.o
-- /Library/Caches/com.apple.xbs/69EE092D-BE6D-42E9-B332-EA873411E6DA/TemporaryDirectory.lNErVM/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/GetCurrentLocationSnippetHandler.o
-- /Library/Caches/com.apple.xbs/69EE092D-BE6D-42E9-B332-EA873411E6DA/TemporaryDirectory.lNErVM/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/IFGeoFeatureFlags.o
-- /Library/Caches/com.apple.xbs/69EE092D-BE6D-42E9-B332-EA873411E6DA/TemporaryDirectory.lNErVM/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/Logger.o
-- /Library/Caches/com.apple.xbs/69EE092D-BE6D-42E9-B332-EA873411E6DA/TemporaryDirectory.lNErVM/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/NavigationSessionEntitySnippetHandler.o
-- /Library/Caches/com.apple.xbs/69EE092D-BE6D-42E9-B332-EA873411E6DA/TemporaryDirectory.lNErVM/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/PlaceEntityCardBuilder.o
-- /Library/Caches/com.apple.xbs/69EE092D-BE6D-42E9-B332-EA873411E6DA/TemporaryDirectory.lNErVM/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/PlaceInformSnippetHandler.o
-- /Library/Caches/com.apple.xbs/69EE092D-BE6D-42E9-B332-EA873411E6DA/TemporaryDirectory.lNErVM/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/SiriGeoSnippetProviderPlugin.o
-- /Library/Caches/com.apple.xbs/69EE092D-BE6D-42E9-B332-EA873411E6DA/TemporaryDirectory.lNErVM/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/SiriGeoSnippetProviderPlugin.swiftmodule
-- /Library/Caches/com.apple.xbs/69EE092D-BE6D-42E9-B332-EA873411E6DA/TemporaryDirectory.lNErVM/Binaries/SiriGeo/install/TempContent/Objects/SiriGeo.build/SiriGeoSnippetProviderPlugin.build/Objects-normal/arm64e/SiriGeoSnippetProviderPlugin_vers.o
-- /Library/Caches/com.apple.xbs/69EE092D-BE6D-42E9-B332-EA873411E6DA/TemporaryDirectory.lNErVM/Sources/SiriGeo/GeoFlowDelegatePlugin/Services/
-- /Library/Caches/com.apple.xbs/69EE092D-BE6D-42E9-B332-EA873411E6DA/TemporaryDirectory.lNErVM/Sources/SiriGeo/SiriGeoSnippetProviderPlugin/
-- /Library/Caches/com.apple.xbs/69EE092D-BE6D-42E9-B332-EA873411E6DA/TemporaryDirectory.lNErVM/Sources/SiriGeo/SiriGeoSnippetProviderPlugin/helper/
+- $s28SiriGeoSnippetProviderPlugin10CardConfigV8thirdRowAC05ThirdI0OvM.resume
+- $s28SiriGeoSnippetProviderPlugin10CardConfigV9secondRowAC06SecondI0OvM.resume
 - _$s10Foundation11MeasurementVySo12NSUnitLengthCGACyxGSQAAWL
 - _$s10Foundation11MeasurementVySo12NSUnitLengthCGACyxGSQAAWl
 - _$s10Foundation11MeasurementVySo12NSUnitLengthCGSgWOhTm
@@ -510,5 +434,4 @@ CStrings:
 + "theatermasks.fill"
 - "[PlaceInformSnippetHandler] rejecting SystemResponse: parking entity must be the sole item, got %ld items"
 - "[PlaceInformSnippetHandler] secondRow decision=%s"
-
 ```

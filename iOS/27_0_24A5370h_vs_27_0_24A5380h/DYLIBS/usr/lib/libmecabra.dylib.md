@@ -2,76 +2,31 @@
 
 > `/usr/lib/libmecabra.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x278568` | `0x26b9f4` | **`-0xcb74`** |
+| `__TEXT.__cstring` | `0x1ef3f` | `0x16af0` | **`-0x844f`** |
+| `__TEXT.__unwind_info` | `0xd058` | `0xce80` | **`-0x1d8`** |
+| `__TEXT.__gcc_except_tab` | `0x1a8d8` | `0x1a7b0` | **`-0x128`** |
+| `__TEXT.__oslogstring` | `0x49d3` | `0x4a0e` | **`+0x3b`** |
+| `__AUTH_CONST.__const` | `0x435c8` | `0x435f0` | **`+0x28`** |
+| `__AUTH_CONST.__auth_got` | `0x13e8` | `0x13e0` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x438` | `0x440` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x278568
-+  __TEXT.__text: 0x26b9f4
-   __TEXT.__lazy_helpers: 0xfc
-   __TEXT.__objc_methlist: 0x3e4
-   __TEXT.__const: 0x3001c
-   __TEXT.__dlopen_cstrs: 0x152
--  __TEXT.__cstring: 0x1ef3f
--  __TEXT.__gcc_except_tab: 0x1a8d8
-+  __TEXT.__cstring: 0x16af0
-+  __TEXT.__gcc_except_tab: 0x1a7b0
-   __TEXT.__ustring: 0x32ae
--  __TEXT.__oslogstring: 0x49d3
--  __TEXT.__unwind_info: 0xd058
-+  __TEXT.__oslogstring: 0x4a0e
-+  __TEXT.__unwind_info: 0xce80
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-1148.0.0.0.0
++1151.0.0.0.0
 
-   __DATA_CONST.__objc_selrefs: 0x798
-   __DATA_CONST.__objc_superrefs: 0x18
-   __DATA_CONST.__objc_arraydata: 0x348
--  __DATA_CONST.__got: 0x438
--  __AUTH_CONST.__const: 0x435c8
-+  __DATA_CONST.__got: 0x440
-+  __AUTH_CONST.__const: 0x435f0
-   __AUTH_CONST.__cfstring: 0x9240
-   __AUTH_CONST.__objc_const: 0x3c0
-   __AUTH_CONST.__weak_auth_got: 0x60
-   __AUTH_CONST.__lazy_load_got: 0x18
-   __AUTH_CONST.__objc_arrayobj: 0x210
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x13e8
-+  __AUTH_CONST.__auth_got: 0x13e0
-   __AUTH.__data: 0x1e0
-   __AUTH.__thread_vars: 0x438
-   __AUTH.__thread_bss: 0x618
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 11208
 +  Functions: 11152
-   Symbols:   1094
--  CStrings:  5080
-+  CStrings:  5045
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__lazy_load_got : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+
+-  CStrings:  4460
++  CStrings:  4425
 Symbols:
 + _MecabraContextSetStringContext
 - __ZNSt3__132__internal_log_hardening_failureEPKc
@@ -135,5 +90,4 @@ CStrings:
 - "[MecabraAnalyzeGesturesWithContext] mecabra:%p gestures:%ld options:0x%lx context:%s"
 - "[MecabraAnalyzeStringWithContext] mecabra:%p string:%@ options:0x%lx context:%s"
 - "[MecabraFindSupplementalLexiconCandidatesWithinContext] mecabra:%p context:%s"
-
 ```

@@ -2,30 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/Visage.framework/Visage`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9d8cc` | `0x9d850` | **`-0x7c`** |
+| `__TEXT.__unwind_info` | `0x37e8` | `0x37e0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 279.0.13.0.0
--  __TEXT.__text: 0x9d8cc
-+  __TEXT.__text: 0x9d850
-   __TEXT.__objc_methlist: 0x461c
-   __TEXT.__const: 0x34e0
-   __TEXT.__gcc_except_tab: 0xf450
-   __TEXT.__cstring: 0x565c
-   __TEXT.__oslogstring: 0x6451
--  __TEXT.__unwind_info: 0x37e8
-+  __TEXT.__unwind_info: 0x37e0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 3090
 +  Functions: 3089
-   Symbols:   6144
-   CStrings:  1437
- 
 Functions:
 ~ ___58-[VGHRTFFaceCaptureProcessor processCaptureData:faceData:]_block_invoke_2 : 2604 -> 2612
 ~ __ZNSt3__114__split_bufferIPN2vg13ear_detection7EarSideENS_9allocatorIS4_EEE12emplace_backIJS4_EEEvDpOT_ : 264 -> 268

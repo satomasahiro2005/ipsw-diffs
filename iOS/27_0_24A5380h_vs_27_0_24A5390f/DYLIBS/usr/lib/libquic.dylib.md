@@ -2,73 +2,35 @@
 
 > `/usr/lib/libquic.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcd378` | `0xd0174` | **`+0x2dfc`** |
+| `__TEXT.__oslogstring` | `0x11c3e` | `0x12459` | **`+0x81b`** |
+| `__TEXT.__cstring` | `0x8700` | `0x87e1` | **`+0xe1`** |
+| `__AUTH_CONST.__const` | `0xc90` | `0xcd0` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x2558` | `0x2590` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0xd10` | `0xd28` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0xdc0` | `0xdd0` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x660` | `0x670` | **`+0x10`** |
+| `__TEXT.__const` | `0x3a5` | `0x3b5` | **`+0x10`** |
+| `__AUTH.__data` | `0x110` | `0x118` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x90` | `0x98` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -6681.0.498.502.1
--  __TEXT.__text: 0xcd378
 +6681.0.514.502.1
-+  __TEXT.__text: 0xd0174
-   __TEXT.__objc_methlist: 0x244
--  __TEXT.__const: 0x3a5
--  __TEXT.__cstring: 0x8700
--  __TEXT.__oslogstring: 0x11c3e
--  __TEXT.__unwind_info: 0xd10
-+  __TEXT.__const: 0x3b5
-+  __TEXT.__cstring: 0x87e1
-+  __TEXT.__oslogstring: 0x12459
-+  __TEXT.__unwind_info: 0xd28
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2558
-+  __DATA_CONST.__const: 0x2590
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x1e8
-   __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__got: 0x90
--  __AUTH_CONST.__const: 0xc90
-+  __DATA_CONST.__got: 0x98
-+  __AUTH_CONST.__const: 0xcd0
-   __AUTH_CONST.__cfstring: 0x1320
-   __AUTH_CONST.__objc_const: 0xf8
--  __AUTH_CONST.__auth_got: 0xdc0
-+  __AUTH_CONST.__auth_got: 0xdd0
-   __AUTH.__objc_data: 0x50
--  __AUTH.__data: 0x110
-+  __AUTH.__data: 0x118
-   __DATA.__objc_ivar: 0xc
-   __DATA.__data: 0x6c
-   __DATA.__crash_info: 0x148
-   __DATA.__bss: 0x520
-   __DATA_DIRTY.__data: 0x1c
--  __DATA_DIRTY.__bss: 0x660
-+  __DATA_DIRTY.__bss: 0x670
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/Network.framework/Network
-   - /System/Library/Frameworks/Security.framework/Security
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
+
 -  Functions: 1146
--  Symbols:   1699
+-  Symbols:   1648
 -  CStrings:  2584
 +  Functions: 1153
-+  Symbols:   1708
++  Symbols:   1657
 +  CStrings:  2604
- 
 Symbols:
 + ___quic_conn_listen_handler_added_block_invoke
 + ___quic_conn_log_send_state_block_invoke

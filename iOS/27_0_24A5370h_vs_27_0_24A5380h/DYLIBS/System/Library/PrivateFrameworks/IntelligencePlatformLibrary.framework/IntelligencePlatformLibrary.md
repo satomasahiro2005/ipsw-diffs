@@ -2,108 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/IntelligencePlatformLibrary.framework/IntelligencePlatformLibrary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6d0e54` | `0x6d9948` | **`+0x8af4`** |
+| `__TEXT.__cstring` | `0x759bb` | `0x75fae` | **`+0x5f3`** |
+| `__DATA.__bss` | `0x6fe00` | `0x70330` | **`+0x530`** |
+| `__AUTH_CONST.__const` | `0x40c68` | `0x410c0` | **`+0x458`** |
+| `__TEXT.__eh_frame` | `0x2167c` | `0x21a70` | **`+0x3f4`** |
+| `__TEXT.__const` | `0x5b998` | `0x5bd68` | **`+0x3d0`** |
+| `__AUTH.__objc_data` | `0xa668` | `0xa988` | **`+0x320`** |
+| `__AUTH_CONST.__cfstring` | `0x21620` | `0x21940` | **`+0x320`** |
+| `__AUTH_CONST.__objc_const` | `0x38120` | `0x38418` | **`+0x2f8`** |
+| `__DATA_DIRTY.__objc_data` | `0xeb0` | `0xc30` | **`-0x280`** |
+| `__TEXT.__unwind_info` | `0x1e658` | `0x1e8b8` | **`+0x260`** |
+| `__TEXT.__objc_methlist` | `0x21c5c` | `0x21e34` | **`+0x1d8`** |
+| `__DATA_DIRTY.__bss` | `0xa4d0` | `0xa650` | **`+0x180`** |
+| `__AUTH.__data` | `0x3920` | `0x3a78` | **`+0x158`** |
+| `__DATA_CONST.__const` | `0x73b0` | `0x74e0` | **`+0x130`** |
+| `__TEXT.__swift5_reflstr` | `0x15a3f` | `0x15b3f` | **`+0x100`** |
+| `__TEXT.__swift5_fieldmd` | `0x17018` | `0x1710c` | **`+0xf4`** |
+| `__TEXT.__constg_swiftt` | `0xa0f4` | `0xa1c4` | **`+0xd0`** |
+| `__DATA.__data` | `0xae98` | `0xaf08` | **`+0x70`** |
+| `__TEXT.__swift5_typeref` | `0xa85e` | `0xa8cc` | **`+0x6e`** |
+| `__TEXT.__swift5_assocty` | `0x4388` | `0x43e8` | **`+0x60`** |
+| `__TEXT.__swift5_proto` | `0x6614` | `0x6654` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5710` | `0x5748` | **`+0x38`** |
+| `__DATA_DIRTY.__data` | `0x5ee8` | `0x5f10` | **`+0x28`** |
+| `__DATA.__objc_ivar` | `0x2b7c` | `0x2b9c` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x1480` | `0x149c` | **`+0x1c`** |
+| `__DATA.__common` | `0x6668` | `0x6680` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x1608` | `0x1618` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x11a8` | `0x11b8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x6d0e54
--  __TEXT.__objc_methlist: 0x21c5c
--  __TEXT.__const: 0x5b998
--  __TEXT.__constg_swiftt: 0xa0f4
--  __TEXT.__swift5_typeref: 0xa85e
--  __TEXT.__swift5_fieldmd: 0x17018
--  __TEXT.__swift5_types: 0x1480
--  __TEXT.__swift5_reflstr: 0x15a3f
--  __TEXT.__swift5_assocty: 0x4388
-+  __TEXT.__text: 0x6d9948
-+  __TEXT.__objc_methlist: 0x21e34
-+  __TEXT.__const: 0x5bd68
-+  __TEXT.__constg_swiftt: 0xa1c4
-+  __TEXT.__swift5_typeref: 0xa8cc
-+  __TEXT.__swift5_fieldmd: 0x1710c
-+  __TEXT.__swift5_types: 0x149c
-+  __TEXT.__swift5_reflstr: 0x15b3f
-+  __TEXT.__swift5_assocty: 0x43e8
-   __TEXT.__oslogstring: 0x1f4
-   __TEXT.__swift5_capture: 0x38d0
--  __TEXT.__swift5_proto: 0x6614
-+  __TEXT.__swift5_proto: 0x6654
-   __TEXT.__swift5_protos: 0x40
--  __TEXT.__cstring: 0x759bb
-+  __TEXT.__cstring: 0x75fae
-   __TEXT.__swift5_builtin: 0x640
-   __TEXT.__swift5_mpenum: 0x608
-   __TEXT.__gcc_except_tab: 0x3c
--  __TEXT.__unwind_info: 0x1e658
--  __TEXT.__eh_frame: 0x2167c
-+  __TEXT.__unwind_info: 0x1e8b8
-+  __TEXT.__eh_frame: 0x21a70
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x73b0
--  __DATA_CONST.__objc_classlist: 0x11a8
-+  __DATA_CONST.__const: 0x74e0
-+  __DATA_CONST.__objc_classlist: 0x11b8
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5710
-+  __DATA_CONST.__objc_selrefs: 0x5748
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x88
--  __DATA_CONST.__got: 0x1608
--  __AUTH_CONST.__const: 0x40c68
--  __AUTH_CONST.__cfstring: 0x21620
--  __AUTH_CONST.__objc_const: 0x38120
-+  __DATA_CONST.__got: 0x1618
-+  __AUTH_CONST.__const: 0x410c0
-+  __AUTH_CONST.__cfstring: 0x21940
-+  __AUTH_CONST.__objc_const: 0x38418
-   __AUTH_CONST.__objc_intobj: 0x60
-   __AUTH_CONST.__auth_got: 0xe08
--  __AUTH.__objc_data: 0xa668
--  __AUTH.__data: 0x3920
--  __DATA.__objc_ivar: 0x2b7c
--  __DATA.__data: 0xae98
--  __DATA.__bss: 0x6fe00
--  __DATA.__common: 0x6668
--  __DATA_DIRTY.__objc_data: 0xeb0
--  __DATA_DIRTY.__data: 0x5ee8
--  __DATA_DIRTY.__bss: 0xa4d0
-+  __AUTH.__objc_data: 0xa988
-+  __AUTH.__data: 0x3a78
-+  __DATA.__objc_ivar: 0x2b9c
-+  __DATA.__data: 0xaf08
-+  __DATA.__bss: 0x70330
-+  __DATA.__common: 0x6680
-+  __DATA_DIRTY.__objc_data: 0xc30
-+  __DATA_DIRTY.__data: 0x5f10
-+  __DATA_DIRTY.__bss: 0xa650
-   __DATA_DIRTY.__common: 0x18
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+-420.0.0.0.0
++426.0.0.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 60412
--  Symbols:   67512
--  CStrings:  14688
+-  Symbols:   24977
+-  CStrings:  10415
 +  Functions: 60711
-+  Symbols:   67892
-+  CStrings:  14759
- 
-Sections:
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
++  Symbols:   25075
++  CStrings:  10461
 Symbols:
 + +[CCAmbientSensingActivityContent contentMessageClass]
 + +[CCAmbientSensingActivityContent descriptionForTypeIdentifier:]
@@ -206,13 +151,6 @@ Symbols:
 + _associated conformance 27IntelligencePlatformLibrary0C0O7StreamsO6UnilogO12SafariSearchO21LongTermAggregationIdOAA14StreamResourceAA9EventTypeAaLP_AA0L4Data
 + _associated conformance 27IntelligencePlatformLibrary0C0O7StreamsO6UnilogO12SafariSearchO5StageOAA14StreamResourceAA9EventTypeAaLP_AA0I4Data
 + _associated conformance 27IntelligencePlatformLibrary32PrivateMLClientRecitationMetricsVSHAASQ
-+ _objc_msgSend$configurationForSet_AmbientSensingActivity
-+ _objc_msgSend$formality
-+ _objc_msgSend$initWithCategory:reason:tone:structure:content:formality:error:
-+ _objc_msgSend$initWithLabel:shortDescription:error:
-+ _objc_msgSend$initWithSourceItemIdentifier:createdDate:expirationDate:error:
-+ _objc_msgSend$shortDescription
-+ _objc_msgSend$syncPolicyForSet_AmbientSensingActivity
 + _symbolic _____ 27IntelligencePlatformLibrary0C0O7StreamsO15PrivateMLClientO
 + _symbolic _____ 27IntelligencePlatformLibrary0C0O7StreamsO15PrivateMLClientO17RecitationMetricsO
 + _symbolic _____ 27IntelligencePlatformLibrary0C0O7StreamsO6UnilogO12SafariSearchO
@@ -234,7 +172,6 @@ Symbols:
 - __OBJC_$_INSTANCE_METHODS_CCInterpersonalContextMail
 - __OBJC_$_INSTANCE_METHODS_CCItemField(CCHomeService_deviceType|CCHomeAccessory_deviceType|CCMediaLinkedIdentifier_type|CCPhotosPetRelationshipContent_type|CCRadioStationContent_signalType|CCSignificantLocationSubPremise_type|CCSiriCompanionContextAudioContent_mediaCategories|CCSiriCompanionContextAudioContent_subscriptionStatus|CCWalletPaymentsCommerceTrackedOrderShippingFulfillment_status|CCWalletPaymentsCommerceOrderEmailShippingInformation_status|CCWalletPaymentsCommerceOrderEmail_emailType|CCWalletExtractedOrderContentExtractedEmailOrderDetails_orderContentType|CCWalletExtractedOrderContentExtractedEmailShippingDetails_status|CCWalletExtractedOrderContentExtractedEmail_emailType|CCWalletExtractedOrderContentShippingFulfillment_status|CCWalletExtractedOrderContent_orderStatus|CCToolKitToolTypeIdentifierPrimitive_none_p|CCToolKitToolTypeIdentifierPrimitive_boolType|CCToolKitToolTypeIdentifierPrimitive_intType|CCToolKitToolTypeIdentifierPrimitive_number|CCToolKitToolTypeIdentifierPrimitive_decimal|CCToolKitToolTypeIdentifierPrimitive_string|CCToolKitToolTypeIdentifierPrimitive_date|CCToolKitToolTypeIdentifierPrimitive_dateComponents|CCToolKitToolTypeIdentifierPrimitive_url|CCToolKitToolTypeIdentifierPrimitive_dictionary|CCToolKitToolTypeIdentifierPrimitive_attributedString|CCToolKitToolTypeIdentifierPrimitive_measurement|CCToolKitToolTypeIdentifierPrimitive_currencyAmount|CCToolKitToolTypeIdentifierPrimitive_paymentMethod|CCToolKitToolTypeIdentifierPrimitive_placemark|CCToolKitToolTypeIdentifierPrimitive_person|CCToolKitToolTypeIdentifierPrimitive_file|CCToolKitToolTypeIdentifierPrimitive_app|CCToolKitToolTypeIdentifierPrimitive_searchableItem|CCToolKitToolTypeIdentifierPrimitive_intentsFile|CCToolKitToolTypeIdentifierPrimitive_shortcut|CCToolKitToolTypeIdentifierPrimitive_recurrenceRule|CCToolKitToolTypeIdentifierPrimitive_dateInterval|CCToolKitToolTypeIdentifierPrimitive_personNameComponents|CCToolKitToolTypeIdentifierPrimitive_duration|CCToolKitToolTypeIdentifierBuiltin_app|CCToolKitToolTypeIdentifierBuiltin_boundNumber|CCToolKitToolTypeIdentifierBuiltin_calendar|CCToolKitToolTypeIdentifierBuiltin_color|CCToolKitToolTypeIdentifierBuiltin_currency|CCToolKitToolTypeIdentifierBuiltin_file|CCToolKitToolTypeIdentifierBuiltin_homeArea|CCToolKitToolTypeIdentifierBuiltin_mediaRoute|CCToolKitToolTypeIdentifierBuiltin_paymentMethod|CCToolKitToolTypeIdentifierBuiltin_podcast|CCToolKitToolTypeIdentifierBuiltin_person|CCToolKitToolTypeIdentifierBuiltin_placemark|CCToolKitToolTypeIdentifierBuiltin_rideshareOption|CCToolKitToolTypeIdentifierBuiltin_vpn|CCToolKitToolTypeIdentifierBuiltin_timeZone|CCToolKitToolTypeIdentifierBuiltin_measurement|CCToolKitToolSystemTypeProtocol_unk|CCToolKitToolSystemTypeProtocol_mailAccount|CCToolKitToolSystemTypeProtocol_mailAddressee|CCToolKitToolSystemTypeProtocol_mailMessage|CCToolKitToolSystemTypeProtocol_mailbox|CCToolKitToolSystemTypeProtocol_intentMessage|CCToolKitToolSystemTypeProtocol_messageGroup|CCToolKitToolSystemTypeProtocol_messageParticipants|CCToolKitToolSystemTypeProtocol_uniqueEntity|CCToolKitToolSystemTypeProtocol_urlRepresentable|CCToolKitToolSystemTypeProtocol_visualSearch|CCToolKitToolSystemTypeProtocol_visualSearchOcr|CCToolKitToolSystemTypeProtocol_updatableEntity|CCToolKitToolSystemTypeProtocol_transientEntity|CCToolKitToolSystemTypeProtocol_indexedEntity|CCToolKitToolTypeDefinitionVersion1Entity_runtimeFlags|CCToolKitToolTypeDefinitionVersion1Enumeration_kind|CCToolKitToolTypedValuePrimitiveValueDecimal_sign|CCToolKitToolTypedValuePrimitiveValueMeasurement_unitType|CCToolKitToolTypedValuePrimitiveValuePaymentMethod_type|CCToolKitToolTypedValuePrimitiveValuePlacemark_type|CCToolKitToolTypedValuePrimitiveValuePersonHandle_type|CCToolKitToolTypedValuePrimitiveValueDateComponentsCalendar_identifier|CCToolKitToolTypedValuePrimitiveValueRecurrenceRuleRecurrenceRuleWeekday_RecurrenceRuleWeekdayWeekday|CCToolKitToolTypedValuePrimitiveValueRecurrenceRule_frequency|CCToolKitToolTypedValuePrimitiveValueRecurrenceRule_matchingPolicy|CCToolKitToolTypedValuePrimitiveValueRecurrenceRule_repeatedTimePolicy|CCToolKitToolTypedValuePrimitiveValue_noneVariant|CCToolKitToolRestrictionContextTextTypedWith_keyboardType|CCToolKitToolRestrictionContextTextTypedWith_autocorrectionType|CCToolKitToolRestrictionContextTextTypedWith_capitalizationType|CCToolKitToolRestrictionContext_personReachableAs|CCToolKitToolRestrictionContext_dateExpressibleAs|CCToolKitToolComparisonPredicateComparisonTemplate_hasValue|CCToolKitToolComparisonPredicateComparisonTemplate_hasNoValue|CCToolKitToolComparisonPredicateComparisonTemplate_isToday|CCToolKitToolComparisonPredicateComparison_hasValue|CCToolKitToolComparisonPredicateComparison_hasNoValue|CCToolKitToolComparisonPredicateComparison_isToday|CCToolKitToolCompoundPredicate_operatorType|CCToolKitToolQuery_sort|CCToolKitToolRuntimeRequirementAvailabilityAnnotation_platform|CCToolKitToolRuntimeRequirementDeviceCapability_capability|CCToolKitToolRuntimeRequirement_deviceState|CCToolKitToolSystemToolProtocolIntentSideEffect_unk|CCToolKitToolSystemToolProtocolIntentSideEffect_noSideEffect|CCToolKitToolSystemToolProtocol_unk|CCToolKitToolSystemToolProtocol_undoable|CCToolKitToolSystemToolProtocol_sessionStarting|CCToolKitToolSystemToolProtocol_urlRepresentable|CCToolKitToolSystemToolProtocol_foregroundContinuable|CCToolKitToolSystemToolProtocol_changeBinarySetting|CCToolKitToolSystemToolProtocol_requiresMdmChecks|CCToolKitToolSystemToolProtocol_cut|CCToolKitToolSystemToolProtocol_copyProtocol|CCToolKitToolSystemToolProtocol_paste|CCToolKitToolSystemToolProtocol_cancel|CCToolKitToolSystemToolProtocol_resize|CCToolKitToolSystemToolProtocol_scroll|CCToolKitToolSystemToolProtocol_undo|CCToolKitToolSystemToolProtocol_zoom|CCToolKitToolSystemToolProtocol_closeEntity|CCToolKitToolSystemToolProtocol_createEntity|CCToolKitToolSystemToolProtocol_cutEntity|CCToolKitToolSystemToolProtocol_deleteEntity|CCToolKitToolSystemToolProtocol_duplicateEntity|CCToolKitToolSystemToolProtocol_favoriteEntity|CCToolKitToolSystemToolProtocol_openEntity|CCToolKitToolSystemToolProtocol_previewEntity|CCToolKitToolSystemToolProtocol_saveEntity|CCToolKitToolSystemToolProtocol_putEntityInContainer|CCToolKitToolSystemToolProtocol_audioStarting|CCToolKitToolSystemToolProtocol_audioRecording|CCToolKitToolSystemToolProtocol_pushToTalkTransmission|CCToolKitToolSystemToolProtocol_startDive|CCToolKitToolSystemToolProtocol_startWorkout|CCToolKitToolSystemToolProtocol_pauseWorkout|CCToolKitToolSystemToolProtocol_resumeWorkout|CCToolKitToolSystemToolProtocol_enterMarkup|CCToolKitToolSystemToolProtocol_exitMarkup|CCToolKitToolSystemToolProtocol_focusConfiguration|CCToolKitToolSystemToolProtocol_widgetConfiguration|CCToolKitToolSystemToolProtocol_search|CCToolKitToolSystemToolProtocol_showSearchResultsInApp|CCToolKitToolSystemToolProtocol_showStringSearchResultsInApp|CCToolKitToolSystemToolProtocol_showInAppSearchResults|CCToolKitToolSystemToolProtocol_moveSpatial|CCToolKitToolSystemToolProtocol_navigateSequentially|CCToolKitToolSystemToolProtocol_sting|CCToolKitToolSystemToolProtocol_toggle|CCToolKitToolSystemToolProtocol_cameraCapture|CCToolKitToolSystemToolProtocol_staccatoLongPress|CCToolKitToolSystemToolProtocol_sendMail|CCToolKitToolSystemToolProtocol_setMailMessageIsRead|CCToolKitToolSystemToolProtocol_rewriteWritingTool|CCToolKitToolSystemToolProtocol_proofreadWritingTool|CCToolKitToolSystemToolProtocol_assistantInvocable|CCToolKitToolSystemToolProtocol_systemFrameworkIntent|CCToolKitToolSystemToolProtocol_progressReporting|CCToolKitToolSystemToolProtocol_controlConfiguration|CCToolKitToolSystemToolProtocol_valueSetting|CCToolKitToolSystemToolProtocol_entityGetter|CCToolKitToolToolDefinitionVersion1ParameterRelationshipRelation_isSome|CCToolKitToolToolDefinitionVersion1ParameterRelationshipRelation_isNone|CCToolKitToolToolDefinitionVersion1Parameter_flags|CCToolKitToolToolDefinitionVersion1ToolIconToolSymbolIcon_style|CCToolKitToolToolDefinitionVersion1_toolType|CCToolKitToolToolDefinitionVersion1_flags|CCToolKitToolToolDefinitionVersion1_authenticationPolicy|CCToolKitToolToolDefinitionVersion1_visibilityFlags|CCToolKitToolAppDefinitionDevice_local|CCToolKitToolAppDefinition_origin|CCToolKitToolContainerDefinitionDevice_local|CCToolKitToolContainerDefinition_containerType|CCToolKitToolContainerDefinition_origin|CCToolKitToolDisplayRepresentationDisplayValue_type|CCToolKitToolCoercionDefinition_direction|CCToolKitToolTriggerDefinitionVersion1_flags|CCToolKitToolToolInvocationOptions_interactionMode|CCToolKitToolToolInvocationOptions_interfaceIdiom|CCTextUnderstandingIdentificationDocument_kind|CCSpotlightUniformType_typeIdentifier|CCSpotlightUniformType_supertypes|CCArchetypeObservationsContent_category|CCArchetypeWritingAssistantProfilesMetadata_writingToolsButton|CCSiriTranscriptTurnContent_role|CCAppIntentsSuggestedEntityImage_displayStyle|CCAppIntentsSuggestedEntityImageData_displayStyle|CCAppIntentsSuggestedEntityValueTypeArray_capabilities|CCAppIntentsSuggestedEntityValueType_containerType|CCAppIntentsSuggestedEntityValueType_legacyIntent|CCAppIntentsSuggestedEntityValueType_measurement|CCAppIntentsSuggestedEntityValueType_primitive|CCAppIntentsSuggestedEntitySystemProtocolPropertiesByIdentifier_systemProtocolIdentifier|CCGenerativeLearningPlatformSummarizationRecordContent_cadence|CCGenerativeMotivatorBarrierResourceInsight_variant|CCGenerativeInsightContent_confidence|CCGenerativeLearningPlatformProvenance_source|CCMailImportedAttachmentMetaContent_importResult|CCSiriTranscriptConversationTitle_source|CCDocumentProcessingTestItemContent_tier|CCAmbientSensingSceneSummary_majorScene|CCAmbientSensingSceneSummary_minorScene|CCAmbientSensingSceneSummary_indoorOutdoor|CCAmbientSensingSceneSummary_groceryAisles|CCAmbientSensingPOISummary_majorPOI|CCAmbientSensingPOISummary_minorPOI|CCAmbientSensingConcurrent_activityType|CCAmbientSensingNutritionSummary_mealType|CCAmbientSensingSessionSummaryContent_activity)
 - ___swift_memcpy537_8
-- _objc_msgSend$initWithCategory:reason:tone:structure:content:error:
 CStrings:
 + "0D1711B6-123F-473E-ABF7-AEF17A03E024"
 + "2D4EC876-3F41-4F68-A356-C4D8806CB486"
@@ -282,5 +219,4 @@ CStrings:
 + "shouldAutoAddToCalendar"
 + "underlyingErrorCode"
 + "underlyingErrorDomain"
-
 ```

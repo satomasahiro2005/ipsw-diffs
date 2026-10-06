@@ -2,60 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/FitnessIntelligenceGLP.framework/FitnessIntelligenceGLP`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x84` | `0x13af0` | **`+0x13a6c`** |
+| `__TEXT.__eh_frame` | `—` | `0xa84` | **`+0xa84`** |
+| `__AUTH_CONST.__auth_got` | `0x0` | `0x838` | **`+0x838`** |
+| `__TEXT.__const` | `0x9a` | `0x578` | **`+0x4de`** |
+| `__TEXT.__swift5_typeref` | `0x6` | `0x48c` | **`+0x486`** |
+| `__DATA_DIRTY.__data` | `0x98` | `0x488` | **`+0x3f0`** |
+| `__TEXT.__unwind_info` | `0x60` | `0x340` | **`+0x2e0`** |
+| `__AUTH_CONST.__const` | `—` | `0x270` | **`+0x270`** |
+| `__TEXT.__oslogstring` | `—` | `0x209` | **`+0x209`** |
+| `__TEXT.__swift5_fieldmd` | `0x10` | `0x1f8` | **`+0x1e8`** |
+| `__DATA.__data` | `—` | `0x1d8` | **`+0x1d8`** |
+| `__TEXT.__swift5_reflstr` | `—` | `0x198` | **`+0x198`** |
+| `__TEXT.__constg_swiftt` | `0x48` | `0x17c` | **`+0x134`** |
+| `__TEXT.__cstring` | `—` | `0x11d` | **`+0x11d`** |
+| `__AUTH_CONST.__objc_const` | `0x90` | `0x130` | **`+0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `—` | `0xa0` | **`+0xa0`** |
+| `__AUTH.__data` | `—` | `0x80` | **`+0x80`** |
+| `__TEXT.__swift_as_ret` | `—` | `0x78` | **`+0x78`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x5c` | **`+0x5c`** |
+| `__TEXT.__swift5_assocty` | `—` | `0x48` | **`+0x48`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x44` | **`+0x44`** |
+| `__TEXT.__swift5_capture` | `—` | `0x34` | **`+0x34`** |
+| `__DATA_CONST.__objc_protolist` | `—` | `0x30` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `—` | `0x2c` | **`+0x2c`** |
+| `__TEXT.__swift5_types` | `0x4` | `0x20` | **`+0x1c`** |
+| `__DATA_CONST.__const` | `0xa0` | `0x88` | **`-0x18`** |
+| `__DATA_CONST.__objc_protorefs` | `—` | `0x18` | **`+0x18`** |
+| `__DATA_DIRTY.__common` | `—` | `0x18` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `—` | `0xc` | **`+0xc`** |
+| `__TEXT.__swift5_protos` | `—` | `0x4` | **`+0x4`** |
+| `__DATA_CONST.__got` | `—` | `0x0` | **`+0x0`** |
+| `__TEXT.__objc_methname` | `—` | `0x0` | **`+0x0`** |
+| `__TEXT.__objc_methtype` | `—` | `0x0` | **`+0x0`** |
+| `__TEXT.__objc_stubs` | `—` | `0x0` | **`+0x0`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.77.1.3
--  __TEXT.__text: 0x84
--  __TEXT.__const: 0x9a
--  __TEXT.__constg_swiftt: 0x48
--  __TEXT.__swift5_typeref: 0x6
--  __TEXT.__swift5_fieldmd: 0x10
--  __TEXT.__swift5_types: 0x4
--  __TEXT.__unwind_info: 0x60
 +2027.1.26.0.0
-+  __TEXT.__text: 0x1292c
-+  __TEXT.__objc_methlist: 0x2c
-+  __TEXT.__const: 0x578
-+  __TEXT.__constg_swiftt: 0x17c
-+  __TEXT.__swift5_typeref: 0x48c
-+  __TEXT.__swift5_reflstr: 0x198
-+  __TEXT.__swift5_fieldmd: 0x1f8
-+  __TEXT.__oslogstring: 0x209
-+  __TEXT.__cstring: 0x11d
-+  __TEXT.__swift5_types: 0x20
-+  __TEXT.__swift_as_entry: 0x44
-+  __TEXT.__swift_as_ret: 0x78
-+  __TEXT.__swift_as_cont: 0x5c
-+  __TEXT.__swift5_assocty: 0x48
-+  __TEXT.__swift5_proto: 0xc
-+  __TEXT.__swift5_capture: 0x34
-+  __TEXT.__swift5_protos: 0x4
-+  __TEXT.__unwind_info: 0x3c8
-+  __TEXT.__eh_frame: 0xa84
-+  __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
--  __DATA_CONST.__const: 0xa0
-+  __TEXT.__objc_methname: 0x0
-+  __TEXT.__objc_methtype: 0x0
-+  __DATA_CONST.__const: 0x88
-   __DATA_CONST.__objc_classlist: 0x8
-+  __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __AUTH_CONST.__objc_const: 0x90
--  __AUTH_CONST.__auth_got: 0x0
--  __DATA_DIRTY.__data: 0x98
-+  __DATA_CONST.__objc_selrefs: 0xa0
-+  __DATA_CONST.__objc_protorefs: 0x18
-+  __DATA_CONST.__got: 0x0
-+  __AUTH_CONST.__const: 0x270
-+  __AUTH_CONST.__objc_const: 0x130
-+  __AUTH_CONST.__auth_got: 0x838
-+  __AUTH.__data: 0x80
-+  __DATA.__data: 0x1d8
-+  __DATA_DIRTY.__data: 0x488
-+  __DATA_DIRTY.__common: 0x18
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+
 -  - /System/Library/Frameworks/UIKit.framework/UIKit
 +  - /System/Library/Frameworks/HealthKit.framework/HealthKit
 +  - /System/Library/Frameworks/WeatherKit.framework/WeatherKit
@@ -69,35 +61,19 @@
 +  - /System/Library/PrivateFrameworks/MessageDispatchCore.framework/MessageDispatchCore
 +  - /System/Library/PrivateFrameworks/SeymourCore.framework/SeymourCore
 +  - /System/Library/PrivateFrameworks/SeymourCoreFoundation.framework/SeymourCoreFoundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
 
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
 -  - /usr/lib/swift/libswiftCoreImage.dylib
-   - /usr/lib/swift/libswiftCoreLocation.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
-   - /usr/lib/swift/libswiftIntents.dylib
 
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
 -  - /usr/lib/swift/libswiftSpatial.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
+
 +  - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 8
 -  Symbols:   53
 -  CStrings:  0
 +  Functions: 172
-+  Symbols:   282
++  Symbols:   264
 +  CStrings:  16
- 
 Symbols:
 + <redacted>
 + _OBJC_CLASS_$_CCFitnessActivityRingsContent
@@ -168,24 +144,6 @@ Symbols:
 + _memmove
 + _objc_allocWithZone
 + _objc_msgSend
-+ _objc_msgSend$_activitySummaryIndex
-+ _objc_msgSend$baseUnit
-+ _objc_msgSend$calories
-+ _objc_msgSend$celsius
-+ _objc_msgSend$coordinate
-+ _objc_msgSend$effectiveTypeIdentifier
-+ _objc_msgSend$finish:
-+ _objc_msgSend$fullSetDonationWithItemType:completion:
-+ _objc_msgSend$init
-+ _objc_msgSend$initWithCacheIndex:dayComponent:monthComponent:yearComponent:caloriesBurned:caloriesBurnedGoal:moveMinutes:moveMinutesGoal:exerciseMinutes:exerciseMinutesGoal:standHour:standHourGoal:totalSteps:walkingRunningDistance:flightsClimbed:isPaused:activityMoveMode:isWheelchairUser:dayOfWeek:monthOfYear:error:
-+ _objc_msgSend$initWithContent:metaContent:error:
-+ _objc_msgSend$initWithSessionIdentifier:meditationType:start:end:duration:finalHeartRate:sourceBundleIdentifier:sourceDevice:hourOfDay:dayOfWeek:monthOfYear:fitnessPlusMetadata:error:
-+ _objc_msgSend$initWithSourceItemIdentifier:error:
-+ _objc_msgSend$initWithTrainerIdentifiers:trainerInformalNames:trainerFullNames:modality:mediaType:musicGenres:bodyFocusNames:skillLevels:error:
-+ _objc_msgSend$initWithWorkoutIdentifier:activityType:start:end:duration:caloriesBurned:averageHeartRate:distance:averagePace:elevationGain:sourceBundleIdentifier:sourceDevice:hourOfDay:dayOfWeek:monthOfYear:latitude:longitude:locationType:weatherCondition:weatherTemperature:fitnessPlusMetadata:error:
-+ _objc_msgSend$meters
-+ _objc_msgSend$minutes
-+ _objc_msgSend$registerItem:error:
 + _objc_release_x19
 + _objc_release_x20
 + _objc_release_x21

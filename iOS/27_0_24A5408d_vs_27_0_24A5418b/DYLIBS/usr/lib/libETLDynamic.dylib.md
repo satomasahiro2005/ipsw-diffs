@@ -2,44 +2,27 @@
 
 > `/usr/lib/libETLDynamic.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4784c` | `0x47490` | **`-0x3bc`** |
+| `__TEXT.__cstring` | `0x5374` | `0x5069` | **`-0x30b`** |
+| `__TEXT.__gcc_except_tab` | `0x2dc` | `0x2a8` | **`-0x34`** |
+| `__AUTH_CONST.__auth_got` | `0x288` | `0x258` | **`-0x30`** |
+| `__TEXT.__unwind_info` | `0x7f8` | `0x7d8` | **`-0x20`** |
+| `__DATA.__bss` | `0x8` | `—` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 1585.0.0.0.0
--  __TEXT.__text: 0x4784c
-+  __TEXT.__text: 0x47490
-   __TEXT.__const: 0x1350
--  __TEXT.__cstring: 0x5374
--  __TEXT.__gcc_except_tab: 0x2dc
--  __TEXT.__unwind_info: 0x7f8
-+  __TEXT.__cstring: 0x5069
-+  __TEXT.__gcc_except_tab: 0x2a8
-+  __TEXT.__unwind_info: 0x7d8
-   __TEXT.__eh_frame: 0x48
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0xf8
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x218
-   __AUTH_CONST.__weak_auth_got: 0x10
--  __AUTH_CONST.__auth_got: 0x288
-+  __AUTH_CONST.__auth_got: 0x258
-   __DATA.__data: 0x2c
-   __DATA.__common: 0x2
--  __DATA.__bss: 0x8
-   __DATA_DIRTY.__data: 0x10
-   __DATA_DIRTY.__bss: 0x8
-   __DATA_DIRTY.__common: 0x8018
-
-   - /usr/lib/libTelephonyCapabilities.dylib
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 716
 -  Symbols:   892
 -  CStrings:  640
 +  Functions: 715
 +  Symbols:   881
 +  CStrings:  613
- 
 Symbols:
 - GCC_except_table10
 - _TelephonyUtilGetSystemTime

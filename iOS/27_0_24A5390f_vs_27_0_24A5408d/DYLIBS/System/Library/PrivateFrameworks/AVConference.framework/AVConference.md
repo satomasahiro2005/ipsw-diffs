@@ -2,79 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/AVConference.framework/AVConference`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7d7380` | `0x7dfa1c` | **`+0x869c`** |
+| `__TEXT.__oslogstring` | `0x13f959` | `0x141b50` | **`+0x21f7`** |
+| `__TEXT.__cstring` | `0x9eef2` | `0x9f9b5` | **`+0xac3`** |
+| `__AUTH_CONST.__cfstring` | `0x299c0` | `0x29d00` | **`+0x340`** |
+| `__AUTH_CONST.__objc_const` | `0x6ce28` | `0x6d128` | **`+0x300`** |
+| `__TEXT.__objc_methlist` | `0x3a968` | `0x3abe8` | **`+0x280`** |
+| `__DATA_CONST.__objc_selrefs` | `0x18c38` | `0x18d88` | **`+0x150`** |
+| `__TEXT.__unwind_info` | `0x124c8` | `0x12600` | **`+0x138`** |
+| `__DATA_CONST.__const` | `0x7718` | `0x77e0` | **`+0xc8`** |
+| `__DATA.__objc_ivar` | `0x76c4` | `0x7714` | **`+0x50`** |
+| `__AUTH_CONST.__const` | `0x45c8` | `0x4608` | **`+0x40`** |
+| `__TEXT.__const` | `0xc6c0` | `0xc690` | **`-0x30`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x1e0` | `0x200` | **`+0x20`** |
+| `__DATA.__bss` | `0x930` | `0x950` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x1e30` | `0x1e40` | **`+0x10`** |
+| `__DATA_CONST.__objc_arraydata` | `0x27c8` | `0x27d8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -2235.57.1.0.0
--  __TEXT.__text: 0x7d7380
--  __TEXT.__objc_methlist: 0x3a968
--  __TEXT.__const: 0xc6c0
--  __TEXT.__cstring: 0x9eef2
--  __TEXT.__oslogstring: 0x13f959
 +2235.63.1.1.0
-+  __TEXT.__text: 0x7dfa1c
-+  __TEXT.__objc_methlist: 0x3abe8
-+  __TEXT.__const: 0xc690
-+  __TEXT.__cstring: 0x9f9b5
-+  __TEXT.__oslogstring: 0x141b50
-   __TEXT.__gcc_except_tab: 0x2cf8
-   __TEXT.__ustring: 0x2d4
-   __TEXT.__dlopen_cstrs: 0x56
--  __TEXT.__unwind_info: 0x124c8
-+  __TEXT.__unwind_info: 0x12600
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7718
-+  __DATA_CONST.__const: 0x77e0
-   __DATA_CONST.__objc_classlist: 0x14b8
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x510
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x18c38
-+  __DATA_CONST.__objc_selrefs: 0x18d88
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_superrefs: 0x1268
--  __DATA_CONST.__objc_arraydata: 0x27c8
--  __DATA_CONST.__got: 0x1e30
--  __AUTH_CONST.__const: 0x45c8
--  __AUTH_CONST.__cfstring: 0x299c0
--  __AUTH_CONST.__objc_const: 0x6ce28
-+  __DATA_CONST.__objc_arraydata: 0x27d8
-+  __DATA_CONST.__got: 0x1e40
-+  __AUTH_CONST.__const: 0x4608
-+  __AUTH_CONST.__cfstring: 0x29d00
-+  __AUTH_CONST.__objc_const: 0x6d128
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x52f8
-   __AUTH_CONST.__objc_arrayobj: 0x1d88
-   __AUTH_CONST.__objc_floatobj: 0x30
--  __AUTH_CONST.__objc_doubleobj: 0x1e0
-+  __AUTH_CONST.__objc_doubleobj: 0x200
-   __AUTH_CONST.__objc_dictobj: 0x2d0
-   __AUTH_CONST.__auth_got: 0x2c38
-   __AUTH.__data: 0xf8
--  __DATA.__objc_ivar: 0x76c4
-+  __DATA.__objc_ivar: 0x7714
-   __DATA.__data: 0x7d48
--  __DATA.__bss: 0x930
-+  __DATA.__bss: 0x950
-   __DATA.__common: 0x55
-   __DATA_DIRTY.__objc_data: 0xcf30
-   __DATA_DIRTY.__data: 0x420
 
-   - /usr/lib/libspindump.dylib
-   - /usr/lib/libtailspin.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 35388
--  Symbols:   52994
+-  Symbols:   41920
 -  CStrings:  33917
 +  Functions: 35499
-+  Symbols:   53133
++  Symbols:   42021
 +  CStrings:  34064
- 
 Symbols:
 + +[AVCCameraTestUtils isDualCameraCaptureSupported]
 + +[VCHardwareSettings supportsSquarePreviewCapture]
@@ -197,44 +158,6 @@ Symbols:
 + _kVCNetworkConditionMonitorStateQueueKey
 + _localeWithMediaBlobLanguage:.onceToken
 + _mediaBlobLanguageWithLocale:.onceToken
-+ _objc_msgSend$_applySecondaryAspectRatioLocked:
-+ _objc_msgSend$addSecondaryCameraLiveForDualCapture:
-+ _objc_msgSend$anyClientNeedsMicInputWithPreferredClient:
-+ _objc_msgSend$applyCameraUIDsToCaptureBackendWithPrimaryUID:secondaryUID:aspectRatio:hasPrimary:hasSecondary:
-+ _objc_msgSend$applyDualCaptureResolutionToPrimaryCamera
-+ _objc_msgSend$applyPrimarySecondaryCameraUIDsWithPrimaryUID:secondaryUID:aspectRatio:hasPrimary:hasSecondary:hasAspectRatio:
-+ _objc_msgSend$bandwidthEstimation
-+ _objc_msgSend$batchSetCameraUIDsPrimary:secondary:
-+ _objc_msgSend$batchSetCameraUIDsPrimary:secondary:aspectRatio:
-+ _objc_msgSend$countActiveRateControllersForInterfaceType:
-+ _objc_msgSend$countInactiveRateControllersForInterfaceType:
-+ _objc_msgSend$didSetPrimarySecondaryCameraUIDsWithError:
-+ _objc_msgSend$dispatchedConfigureCaptureAnalysisSessionForAnalysisType:mediaProperties:resultsHandler:
-+ _objc_msgSend$dispatchedEnableDualCapture:
-+ _objc_msgSend$dispatchedEnableDualCapture:reapplyPrimaryFormat:
-+ _objc_msgSend$dualCameraPrimary1280SquareEncodingSize
-+ _objc_msgSend$idsChannel
-+ _objc_msgSend$notifyDidSetPrimarySecondaryCameraUIDsWithError:
-+ _objc_msgSend$onSetCurrentUplinkTargetBitrate:
-+ _objc_msgSend$rateSharingFactor
-+ _objc_msgSend$reapplyCachedPrimaryCameraFormatAfterDualCaptureDisablement:
-+ _objc_msgSend$reconcileDualCaptureEnableAfterBatchWithSecondaryUID:hasSecondary:batchSPIHandledEnable:wasDualCaptureEnabled:
-+ _objc_msgSend$removeRateControllerSharingGroup:
-+ _objc_msgSend$setCurrentTargetBitrate:
-+ _objc_msgSend$setDuckingLevel:
-+ _objc_msgSend$setDuckingLevelWasSet:
-+ _objc_msgSend$setIdsChannel:
-+ _objc_msgSend$setViewPointCorrectionDisabled:forReason:
-+ _objc_msgSend$shouldStopParticipantOnMediaDecryptionTimeout
-+ _objc_msgSend$squarePreviewAdjustedRequestSizeForCaptureSize:
-+ _objc_msgSend$stripUnspoofableInboundKeysFromDictionary:
-+ _objc_msgSend$supportsSquarePreviewCapture
-+ _objc_msgSend$tearDownSecondaryCameraResourcesLocked
-+ _objc_msgSend$updateDirectionForClient:newDirection:
-+ _objc_msgSend$updateMicAttributionForClient:shouldAdd:
-+ _objc_msgSend$updateSecondaryCameraResizeConverterForAspectRatio:
-+ _objc_msgSend$validateRemoteEndpointCount
-+ _objc_msgSend$validationErrorForPrimaryUID:secondaryUID:aspectRatio:hasAspectRatio:
 + _supportsSquarePreviewCapture.onceToken
 + _supportsSquarePreviewCapture.resolved
 - -[VCVideoCaptureServer setViewPointCorrectionEnabled:]

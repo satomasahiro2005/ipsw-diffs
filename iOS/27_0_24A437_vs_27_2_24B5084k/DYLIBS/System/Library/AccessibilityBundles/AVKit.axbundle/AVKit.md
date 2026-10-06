@@ -2,53 +2,33 @@
 
 > `/System/Library/AccessibilityBundles/AVKit.axbundle/AVKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbfb4` | `0xc184` | **`+0x1d0`** |
+| `__AUTH_CONST.__cfstring` | `0x3080` | `0x3120` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0x270e` | `0x2781` | **`+0x73`** |
+| `__AUTH_CONST.__const` | `0x220` | `0x240` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x360` | `0x380` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x788` | `0x7a0` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x1338` | `0x1350` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x178` | `0x180` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x538` | `0x540` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3048.0.0.0.0
--  __TEXT.__text: 0xbaec
--  __TEXT.__objc_methlist: 0x1338
 +3050.3.0.0.0
-+  __TEXT.__text: 0xbca4
-+  __TEXT.__objc_methlist: 0x1350
-   __TEXT.__const: 0x30
-   __TEXT.__gcc_except_tab: 0x414
--  __TEXT.__cstring: 0x270e
-+  __TEXT.__cstring: 0x2781
-   __TEXT.__ustring: 0x4
--  __TEXT.__unwind_info: 0x608
-+  __TEXT.__unwind_info: 0x610
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x360
-+  __DATA_CONST.__const: 0x380
-   __DATA_CONST.__objc_classlist: 0x338
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x788
-+  __DATA_CONST.__objc_selrefs: 0x7a0
-   __DATA_CONST.__objc_superrefs: 0x150
--  __DATA_CONST.__got: 0x178
--  __AUTH_CONST.__const: 0x220
--  __AUTH_CONST.__cfstring: 0x3080
-+  __DATA_CONST.__got: 0x180
-+  __AUTH_CONST.__const: 0x240
-+  __AUTH_CONST.__cfstring: 0x3120
-   __AUTH_CONST.__objc_const: 0x39f0
-   __AUTH_CONST.__objc_intobj: 0x18
-   __AUTH_CONST.__auth_got: 0x0
 
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 387
--  Symbols:   1263
+-  Symbols:   1090
 -  CStrings:  417
 +  Functions: 390
-+  Symbols:   1270
++  Symbols:   1095
 +  CStrings:  423
- 
 Symbols:
 + -[AVMobileGlassPlaybackControlButtonAccessibility setPlaybackControlButtonIconState:]
 + -[_AVFocusContainerViewAccessibility _axUnifiedPlayerControlsViewController]
@@ -68,8 +48,6 @@ Symbols:
 + ___104-[AVUnifiedPlayerPlaybackControlsViewControllerAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_2
 + ___NSArray0__struct
 + ___block_descriptor_32_e15_B32?08Q16^B24l
-+ _objc_msgSend$_axUnifiedPlayerControlsViewController
-+ _objc_msgSend$ax_filteredArrayUsingBlock:
 - GCC_except_table161
 - GCC_except_table163
 - GCC_except_table172
@@ -84,10 +62,10 @@ Symbols:
 - GCC_except_table351
 - GCC_except_table369
 Functions:
-~ +[AVUnifiedPlayerPlaybackControlsViewControllerAccessibility _accessibilityPerformValidations:] : 284 -> 316
-~ ___104-[AVUnifiedPlayerPlaybackControlsViewControllerAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke : 264 -> 324
+~ +[AVUnifiedPlayerPlaybackControlsViewControllerAccessibility _accessibilityPerformValidations:] : 296 -> 328
+~ ___104-[AVUnifiedPlayerPlaybackControlsViewControllerAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke : 276 -> 336
 + ___104-[AVUnifiedPlayerPlaybackControlsViewControllerAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_2
-~ +[AVMobileGlassPlaybackControlButtonAccessibility _accessibilityPerformValidations:] : 72 -> 160
+~ +[AVMobileGlassPlaybackControlButtonAccessibility _accessibilityPerformValidations:] : 72 -> 172
 ~ -[AVMobileGlassPlaybackControlButtonAccessibility setImageName:] : 208 -> 216
 + -[AVMobileGlassPlaybackControlButtonAccessibility setPlaybackControlButtonIconState:]
 + -[_AVFocusContainerViewAccessibility _axUnifiedPlayerControlsViewController]

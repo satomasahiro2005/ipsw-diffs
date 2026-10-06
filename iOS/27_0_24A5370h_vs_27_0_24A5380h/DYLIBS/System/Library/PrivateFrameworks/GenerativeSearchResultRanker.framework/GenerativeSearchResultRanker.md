@@ -2,79 +2,82 @@
 
 > `/System/Library/PrivateFrameworks/GenerativeSearchResultRanker.framework/GenerativeSearchResultRanker`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xab460` | `0x0` | **`-0xab460`** |
+| `__AUTH_CONST.__const` | `0x6450` | `—` | **`-0x6450`** |
+| `__TEXT.__const` | `0x41b0` | `0x2` | **`-0x41ae`** |
+| `__DATA.__bss` | `0x4150` | `—` | **`-0x4150`** |
+| `__TEXT.__eh_frame` | `0x3ce8` | `—` | **`-0x3ce8`** |
+| `__TEXT.__oslogstring` | `0x3ab6` | `—` | **`-0x3ab6`** |
+| `__TEXT.__swift5_fieldmd` | `0x2158` | `—` | **`-0x2158`** |
+| `__TEXT.__swift5_typeref` | `0x1f6a` | `—` | **`-0x1f6a`** |
+| `__TEXT.__swift5_reflstr` | `0x1cab` | `—` | **`-0x1cab`** |
+| `__TEXT.__unwind_info` | `0x1c50` | `—` | **`-0x1c50`** |
+| `__TEXT.__cstring` | `0x1c04` | `—` | **`-0x1c04`** |
+| `__TEXT.__swift5_capture` | `0x1380` | `—` | **`-0x1380`** |
+| `__AUTH_CONST.__auth_got` | `0x11e0` | `—` | **`-0x11e0`** |
+| `__DATA.__data` | `0xf10` | `—` | **`-0xf10`** |
+| `__TEXT.__constg_swiftt` | `0xe50` | `—` | **`-0xe50`** |
+| `__AUTH.__data` | `0xc18` | `—` | **`-0xc18`** |
+| `__DATA_DIRTY.__data` | `0x420` | `—` | **`-0x420`** |
+| `__TEXT.__swift5_proto` | `0x210` | `—` | **`-0x210`** |
+| `__TEXT.__swift_as_cont` | `0x1b8` | `—` | **`-0x1b8`** |
+| `__AUTH_CONST.__objc_const` | `0x1b0` | `—` | **`-0x1b0`** |
+| `__TEXT.__swift5_types` | `0x19c` | `—` | **`-0x19c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x170` | `—` | **`-0x170`** |
+| `__TEXT.__swift5_assocty` | `0x140` | `—` | **`-0x140`** |
+| `__TEXT.__swift_as_ret` | `0x100` | `—` | **`-0x100`** |
+| `__TEXT.__swift_as_entry` | `0xe8` | `—` | **`-0xe8`** |
+| `__DATA_CONST.__const` | `0xc0` | `0x38` | **`-0x88`** |
+| `__DATA_DIRTY.__bss` | `0x80` | `—` | **`-0x80`** |
+| `__DATA_DIRTY.__common` | `0x30` | `—` | **`-0x30`** |
+| `__TEXT.__swift5_builtin` | `0x14` | `—` | **`-0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x10` | `—` | **`-0x10`** |
+| `__TEXT.__swift5_protos` | `0xc` | `—` | **`-0xc`** |
+| `__DATA.__common` | `0x8` | `—` | **`-0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x8` | `—` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x0` | `—` | **`-0x0`** |
+| `__TEXT.__auth_stubs` | `0x0` | `—` | **`-0x0`** |
+| `__TEXT.__objc_classname` | `0x0` | `—` | **`-0x0`** |
+| `__TEXT.__objc_methname` | `0x0` | `—` | **`-0x0`** |
+| `__TEXT.__objc_methtype` | `0x0` | `—` | **`-0x0`** |
+| `__TEXT.__objc_stubs` | `0x0` | `—` | **`-0x0`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xab460
--  __TEXT.__const: 0x41b0
--  __TEXT.__oslogstring: 0x3ab6
--  __TEXT.__swift5_typeref: 0x1f6a
--  __TEXT.__swift5_reflstr: 0x1cab
--  __TEXT.__swift5_assocty: 0x140
--  __TEXT.__constg_swiftt: 0xe50
--  __TEXT.__swift5_fieldmd: 0x2158
--  __TEXT.__swift5_protos: 0xc
--  __TEXT.__swift5_proto: 0x210
--  __TEXT.__swift5_types: 0x19c
--  __TEXT.__swift_as_entry: 0xe8
--  __TEXT.__swift_as_ret: 0x100
--  __TEXT.__swift_as_cont: 0x1b8
--  __TEXT.__cstring: 0x1c04
--  __TEXT.__swift5_capture: 0x1380
--  __TEXT.__swift5_builtin: 0x14
--  __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x1c50
--  __TEXT.__eh_frame: 0x3ce8
--  __TEXT.__objc_stubs: 0x0
--  __TEXT.__auth_stubs: 0x0
--  __TEXT.__objc_classname: 0x0
--  __TEXT.__objc_methname: 0x0
--  __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xc0
--  __DATA_CONST.__objc_classlist: 0x10
-+  __TEXT.__text: 0x0
-+  __TEXT.__const: 0x2
-+  __DATA_CONST.__const: 0x38
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x170
--  __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x6450
--  __AUTH_CONST.__objc_const: 0x1b0
--  __AUTH_CONST.__auth_got: 0x11e0
--  __AUTH.__data: 0xc18
--  __DATA.__data: 0xf10
--  __DATA.__bss: 0x4150
--  __DATA.__common: 0x8
--  __DATA_DIRTY.__data: 0x420
--  __DATA_DIRTY.__bss: 0x80
--  __DATA_DIRTY.__common: 0x30
+-57.0.1.0.0
 -  - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
++59.0.1.0.0
+
 -  - /System/Library/PrivateFrameworks/BiomeLibrary.framework/BiomeLibrary
 -  - /System/Library/PrivateFrameworks/EmbeddingCore.framework/EmbeddingCore
 -  - /System/Library/PrivateFrameworks/GenerativeSearch.framework/GenerativeSearch
 -  - /System/Library/PrivateFrameworks/HybridQueryProcessing.framework/HybridQueryProcessing
 -  - /System/Library/PrivateFrameworks/MediaAnalysisServices.framework/MediaAnalysisServices
 +  - /System/Library/PrivateFrameworks/HybridSearchResultRanker.framework/HybridSearchResultRanker
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
+
 -  - /usr/lib/swift/libswiftAVFoundation.dylib
 -  - /usr/lib/swift/libswiftAccelerate.dylib
 -  - /usr/lib/swift/libswiftCompression.dylib
 -  - /usr/lib/swift/libswiftCore.dylib
 -  - /usr/lib/swift/libswiftCoreAudio.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
+
 -  - /usr/lib/swift/libswiftCoreImage.dylib
 -  - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
+
 -  - /usr/lib/swift/libswiftMLCompute.dylib
 -  - /usr/lib/swift/libswiftMetal.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
+
 -  - /usr/lib/swift/libswiftQuartzCore.dylib
 -  - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
+
 -  - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
+
 -  - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3842
 -  Symbols:   189
@@ -82,7 +85,6 @@
 +  Functions: 0
 +  Symbols:   7
 +  CStrings:  0
- 
 Symbols:
 - _BiomeLibrary
 - _OBJC_CLASS_$_BML1Score
@@ -532,5 +534,4 @@ CStrings:
 - "📊 SCORING BREAKDOWN SECTION (L2 Order)"
 - "📊%s"
 - "📊L2#%ld l1#%ld l1score:%s role:%s age:%s session:%s... content:\"%s\" final:%s | %s -> %s"
-
 ```

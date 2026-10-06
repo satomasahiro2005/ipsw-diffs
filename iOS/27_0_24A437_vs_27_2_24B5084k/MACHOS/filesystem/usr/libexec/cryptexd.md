@@ -2,68 +2,49 @@
 
 > `/usr/libexec/cryptexd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x697bc` | `0x69a0c` | **`+0x250`** |
+| `__TEXT.__oslogstring` | `0xb4e7` | `0xb597` | **`+0xb0`** |
+| `__TEXT.__cstring` | `0x5e5c` | `0x5e9c` | **`+0x40`** |
+| `__TEXT.__const` | `0xcc0` | `0xcd0` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x1220` | `0x1228` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
 - `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
 - `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__object_init`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -761.2.1.0.0
--  __TEXT.__text: 0x68428
 +761.40.23.0.0
-+  __TEXT.__text: 0x6866c
-   __TEXT.__auth_stubs: 0x2600
-   __TEXT.__objc_stubs: 0x1700
-   __TEXT.__objc_methlist: 0x9b4
--  __TEXT.__const: 0xcc0
-+  __TEXT.__const: 0xcd0
-   __TEXT.__gcc_except_tab: 0x1b68
-   __TEXT.__objc_methname: 0x1817
-   __TEXT.__objc_classname: 0x123
--  __TEXT.__cstring: 0x5e5c
-+  __TEXT.__cstring: 0x5e9c
-   __TEXT.__objc_methtype: 0x4e2
--  __TEXT.__oslogstring: 0xb4e7
-+  __TEXT.__oslogstring: 0xb597
-   __TEXT.__swift5_typeref: 0x127
-   __TEXT.__swift5_capture: 0x1bc
-   __TEXT.__constg_swiftt: 0xa4
 
-   __TEXT.__swift_as_entry: 0x3c
-   __TEXT.__swift_as_ret: 0x3c
-   __TEXT.__swift_as_cont: 0x8c
--  __TEXT.__unwind_info: 0x16e0
-+  __TEXT.__unwind_info: 0x16e8
-   __TEXT.__eh_frame: 0x9a8
-   __DATA_CONST.__const: 0x3590
-   __DATA_CONST.__cfstring: 0x320
+-  Functions: 1557
++  Functions: 1562
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
--  Functions: 1556
-+  Functions: 1561
-   Symbols:   2920
 -  CStrings:  2235
 +  CStrings:  2239
- 
 Symbols:
 + /AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/local/lib/dyld/libamfi.a(libamfi.o)
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/libcryptex_executables/install/TempContent/Objects/libcryptex_executables-761.40.23~202/cryptexd/RELEASE_ARM64E/DaemonServer.o

@@ -2,32 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/Message.framework/XPCServices/SearchIndexer.xpc/SearchIndexer`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__const`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x487608` | `0x487674` | **`+0x6c`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__const`
 - `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -3897.100.8.2.5
--  __TEXT.__text: 0x487608
 +3901.100.1.2.7
-+  __TEXT.__text: 0x487674
-   __TEXT.__auth_stubs: 0x4430
-   __TEXT.__objc_stubs: 0x1d00
-   __TEXT.__objc_methlist: 0x3b4
 Functions:
 ~ sub_1000289a0 : 4312 -> 4524
 ~ sub_1000549a4 -> sub_100054a78 : 1444 -> 1436

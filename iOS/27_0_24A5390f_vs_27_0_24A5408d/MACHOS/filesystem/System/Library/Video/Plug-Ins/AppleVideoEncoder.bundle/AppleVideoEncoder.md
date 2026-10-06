@@ -2,57 +2,39 @@
 
 > `/System/Library/Video/Plug-Ins/AppleVideoEncoder.bundle/AppleVideoEncoder`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__DATA.__objc_selrefs`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ecb20` | `0x1944b8` | **`-0x58668`** |
+| `__TEXT.__cstring` | `0x5af63` | `0x570c0` | **`-0x3ea3`** |
+| `__DATA_CONST.__const` | `0xdb90` | `0xb490` | **`-0x2700`** |
+| `__DATA_CONST.__cfstring` | `0x3600` | `0x32c0` | **`-0x340`** |
+| `__TEXT.__const` | `0x25488` | `0x252e8` | **`-0x1a0`** |
+| `__TEXT.__unwind_info` | `0xa00` | `0x968` | **`-0x98`** |
+| `__TEXT.__gcc_except_tab` | `0x730` | `0x6f4` | **`-0x3c`** |
+| `__DATA.__bss` | `0x1060` | `0x1068` | **`+0x8`** |
+| `__DATA_CONST.__auth_ptr` | `0x38` | `0x30` | **`-0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA.__objc_selrefs`
+- `__TEXT.__init_offsets`
+
+### Other Changes
 
 ```diff
 
 -913.29.1.0.0
--  __TEXT.__text: 0x1ecb20
 +913.43.1.0.0
-+  __TEXT.__text: 0x1944b8
-   __TEXT.__auth_stubs: 0x1050
-   __TEXT.__objc_stubs: 0x20
-   __TEXT.__init_offsets: 0xc
--  __TEXT.__const: 0x25488
--  __TEXT.__cstring: 0x5af63
--  __TEXT.__gcc_except_tab: 0x730
-+  __TEXT.__const: 0x252e8
-+  __TEXT.__cstring: 0x570c0
-+  __TEXT.__gcc_except_tab: 0x6f4
-   __TEXT.__objc_methname: 0xb
--  __TEXT.__unwind_info: 0xa00
--  __DATA_CONST.__const: 0xdb90
--  __DATA_CONST.__cfstring: 0x3600
-+  __TEXT.__unwind_info: 0x968
-+  __DATA_CONST.__const: 0xb490
-+  __DATA_CONST.__cfstring: 0x32c0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__auth_got: 0x838
-   __DATA_CONST.__got: 0x6e8
--  __DATA_CONST.__auth_ptr: 0x38
-+  __DATA_CONST.__auth_ptr: 0x30
-   __DATA.__objc_selrefs: 0x8
-   __DATA.__data: 0x118
--  __DATA.__bss: 0x1060
-+  __DATA.__bss: 0x1068
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1968
 -  Symbols:   496
--  CStrings:  7515
+-  CStrings:  7520
 +  Functions: 1637
 +  Symbols:   494
-+  CStrings:  7090
- 
++  CStrings:  7093
 Symbols:
 - _AVE_Plugin_AV1_CreateInstance
 - _AVE_Plugin_AV1_SetCallback
@@ -81,6 +63,9 @@ CStrings:
 + "%lld %d AVE %s: %s:%d %s | wrong params, %d %p %d %d %d\n"
 + "%lld %d AVE %s: fail to send PS %p %p %d, dropping frame"
 + "%lld %d AVE %s: fail to send PS %p %p %d, dropping frame\n"
++ "21:54:13"
++ "21:54:14"
++ "21:54:15"
 + "913.43.1"
 + "AVE_MCTFFnumChangeResetMCTF"
 + "AVE_MCTFGatingType"
@@ -97,6 +82,7 @@ CStrings:
 + "AVE_Prop_HEVC_GetMCTFPreFiltAdjType"
 + "AVE_Prop_HEVC_SetMCTFGatingType"
 + "AVE_Prop_HEVC_SetMCTFPreFiltAdjType"
++ "Aug  5 2026"
 + "MCTFGatingType"
 + "MCTFGatingType = %d\n"
 + "MCTFPreFiltAdjType"
@@ -207,6 +193,11 @@ CStrings:
 - "%lld %d AVE %s: FIG: crop bottom %d right %d\n"
 - "(0) <= iMaxQP && iMaxQP <= (255)"
 - "(0) <= iMinQP && iMinQP <= (255)"
+- "21:39:16"
+- "21:39:18"
+- "21:39:19"
+- "21:39:20"
+- "21:39:21"
 - "913.29.1"
 - "AV1_Main_2_0"
 - "AV1_Main_2_1"
@@ -566,6 +557,7 @@ CStrings:
 - "AVE_Session_AV1_StartSession"
 - "AVE_Session_AV1_StartTileSession"
 - "AVE_Session_AV1_Stop"
+- "Jul 14 2026"
 - "Professional"
 - "TileLayout"
 - "TileLayoutNumberOfColumns"

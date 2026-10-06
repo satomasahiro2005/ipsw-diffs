@@ -1,21 +1,31 @@
 ## RTKit.bin
 
-- `t 0x%04x, len=%lu, retry=%u`
-- `systemctl: reboot (%d)`
-- `systask heartbeat time-out after %lld ms`
-- `smc/thermal/componentController/basebandCC.cpp`
+- `spmi status (err=0x%08x): id = 0x%02x, read at 0x%04x, len=%lu, retry=%u`
 - `%s: %s:%d: %s, error: callback or list is NULL`
-- `%s: %s:%d: %s, Invalid CloakingCC cloakingMode  %d`
-- `Invalid baseband type %d`
-- `smc/sys_mgmt.cpp`
-- `smc/systemctl.cpp`
-- `smc/thermal/acsk/sensorInput.cpp`
-- `smc/thermal/componentController/budgetInterfaceDriver.cpp`
-- `%s: %s:%d: %s, error: registry is full`
+- `smc/utils/accum.cpp`
 - `callback && list`
-- `smc/thermal/cltm.cpp`
-- `smc/sys_task.cpp`
-- `%s: %s:%d: %lld %s %lld`
-- `smc/stacks.cpp`
-- `smc/thermal/componentController/cloakingCC.cpp`
+- `smc/smc_init.cpp`
+- `pmu_target.cpp`
+- `spmi status: rd trans=%llu recovered=%u failed=%u, wr trans=%llu recovered=%u failed=%u, last_mbse=%c%c%c%c`
+- `%s: %s:%d: %s, error: registry is full`
+- `%s: %s:%d: 0x%llx, 0x%llx`
+- `/SDKROOT/usr/local/standalone/firmware/acsk/V1_0/include/lookUpTable.h`
+- `systask heartbeat time-out after %lld ms`
+- `smc/socd.cpp`
+- `smc/ppm_task.cpp`
+- `%s: %s:%d: `
 - `idx < list_size`
+- `smc/thermal/componentController/basebandCC.cpp`
+- `smc/unilog.cpp`
+- `<<<PMU monitor crashlog end>>>`
+- `%s: %s:%d: %lld %s %lld`
+- `smc/smcmain.cpp`
+- `spmi status (err=0x%08x): id = 0x%02x, write at 0x%04x, len=%lu, retry=%u`
+- ` because of SPMI err`
+- `iBoot: failed to read Fixture Mode GPIO`
+- `smc/thermal/acsk/sensorInput.cpp`
+- `smc/smc_watchdog.cpp`
+- `smc/sys_mgmt.cpp`
+- `smc/sys_task.cpp`
+- `smc/thermal/cltm.cpp`
+- `smc/thermal/componentController/displayPwrCC.cpp`

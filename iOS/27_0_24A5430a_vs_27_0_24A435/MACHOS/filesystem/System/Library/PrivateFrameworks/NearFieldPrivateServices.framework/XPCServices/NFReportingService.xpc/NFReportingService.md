@@ -2,21 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/NearFieldPrivateServices.framework/XPCServices/NFReportingService.xpc/NFReportingService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x523c` | `0x5248` | **`+0xc`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__eh_frame`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 370.42.1.0.0
--  __TEXT.__text: 0x523c
-+  __TEXT.__text: 0x5248
-   __TEXT.__auth_stubs: 0x6b0
-   __TEXT.__objc_stubs: 0x160
-   __TEXT.__objc_methlist: 0x18c
+```text
 Functions:
 ~ sub_100005a00 : 552 -> 564
 ```

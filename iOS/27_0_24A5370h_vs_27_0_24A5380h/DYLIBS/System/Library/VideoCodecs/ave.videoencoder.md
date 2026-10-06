@@ -2,37 +2,21 @@
 
 > `/System/Library/VideoCodecs/ave.videoencoder`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x16b06c` | `0x16afb8` | **`-0xb4`** |
+| `__DATA.__bss` | `0x8` | `—` | **`-0x8`** |
+| `__DATA_DIRTY.__bss` | `0x1058` | `0x1060` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
-
--  __TEXT.__text: 0x16b06c
-+  __TEXT.__text: 0x16afb8
-   __TEXT.__init_offsets: 0xc
-   __TEXT.__const: 0x2535c
-   __TEXT.__gcc_except_tab: 0x6e4
-
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__auth_got: 0x760
-   __DATA.__data: 0x80
--  __DATA.__bss: 0x8
-   __DATA_DIRTY.__data: 0x20
--  __DATA_DIRTY.__bss: 0x1058
-+  __DATA_DIRTY.__bss: 0x1060
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
 Functions:
 ~ __ZN29H264VideoEncoderFrameReceiver9SendFrameEP16_S_AVE_FrameInfoP6Packet : 28272 -> 28220
 ~ __Z13AVC_FindLeveli : 64 -> 76
@@ -64,5 +48,4 @@ CStrings:
 + "Jun 29 2026"
 - "19:39:57"
 - "Jun 18 2026"
-
 ```

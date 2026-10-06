@@ -2,74 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/CoreUtils.framework/CoreUtils`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x114a14` | `0x114c48` | **`+0x234`** |
+| `__AUTH.__objc_data` | `0x1e78` | `0x1f90` | **`+0x118`** |
+| `__DATA_DIRTY.__objc_data` | `0x208` | `0xf0` | **`-0x118`** |
+| `__TEXT.__oslogstring` | `0x47ba` | `0x4818` | **`+0x5e`** |
+| `__AUTH_CONST.__objc_const` | `0x13870` | `0x13890` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x3968` | `0x3970` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x14c8` | `0x14cc` | **`+0x4`** |
+| `__TEXT.__cstring` | `0x1d530` | `0x1d52c` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x114a14
-+  __TEXT.__text: 0x114c48
-   __TEXT.__objc_methlist: 0x9ed0
--  __TEXT.__cstring: 0x1d530
-+  __TEXT.__cstring: 0x1d52c
-   __TEXT.__const: 0x229c
-   __TEXT.__gcc_except_tab: 0x1b14
--  __TEXT.__oslogstring: 0x47ba
--  __TEXT.__unwind_info: 0x3968
-+  __TEXT.__oslogstring: 0x4818
-+  __TEXT.__unwind_info: 0x3970
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-900.37.0.0.0
++900.48.0.0.0
 
-   __DATA_CONST.__got: 0x6a0
-   __AUTH_CONST.__const: 0x2808
-   __AUTH_CONST.__cfstring: 0x44c0
--  __AUTH_CONST.__objc_const: 0x13870
-+  __AUTH_CONST.__objc_const: 0x13890
-   __AUTH_CONST.__objc_intobj: 0x258
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__auth_got: 0x1818
--  __AUTH.__objc_data: 0x1e78
-+  __AUTH.__objc_data: 0x1f90
-   __AUTH.__data: 0xa00
--  __DATA.__objc_ivar: 0x14c8
-+  __DATA.__objc_ivar: 0x14cc
-   __DATA.__data: 0x2f50
-   __DATA.__bss: 0x13c8
-   __DATA.__common: 0x2a
--  __DATA_DIRTY.__objc_data: 0x208
-+  __DATA_DIRTY.__objc_data: 0xf0
-   __DATA_DIRTY.__data: 0x88
-   __DATA_DIRTY.__bss: 0x1d1
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 5749
--  Symbols:   16715
--  CStrings:  5372
+-  Symbols:   10110
+-  CStrings:  4816
 +  Functions: 5752
-+  Symbols:   16721
-+  CStrings:  5374
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
++  Symbols:   10113
++  CStrings:  4818
 Symbols:
 + GCC_except_table2416
 + GCC_except_table2440
@@ -279,5 +237,4 @@ CStrings:
 + "WFASubscriber start retry after failure: %d of %d"
 - "=== CUPairingManager ===\n"
 - "=== LogUtils (%s, PID %llu) ===\n"
-
 ```

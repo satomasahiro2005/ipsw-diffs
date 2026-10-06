@@ -2,91 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/AppleDepth.framework/AppleDepth`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x11410c` | `0x113d74` | **`-0x398`** |
+| `__AUTH.__objc_data` | `0xa0` | `—` | **`-0xa0`** |
+| `__DATA_DIRTY.__objc_data` | `0x38e0` | `0x3980` | **`+0xa0`** |
+| `__TEXT.__oslogstring` | `0xabd4` | `0xac21` | **`+0x4d`** |
+| `__TEXT.__gcc_except_tab` | `0x13754` | `0x1371c` | **`-0x38`** |
+| `__TEXT.__objc_methlist` | `0x7c74` | `0x7cac` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0x4080` | `0x40b0` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x450` | `0x478` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x5ec0` | `0x5ea0` | **`-0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3c68` | `0x3c88` | **`+0x20`** |
+| `__DATA_DIRTY.__bss` | `0x118` | `0x138` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xa40` | `0xa50` | **`+0x10`** |
+| `__DATA.__bss` | `0x501` | `0x4f1` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x868` | `0x858` | **`-0x10`** |
+| `__TEXT.__cstring` | `0xfefd` | `0xfeed` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x11410c
--  __TEXT.__objc_methlist: 0x7c74
-+  __TEXT.__text: 0x113d74
-+  __TEXT.__objc_methlist: 0x7cac
-   __TEXT.__const: 0x1520
--  __TEXT.__gcc_except_tab: 0x13754
--  __TEXT.__oslogstring: 0xabd4
--  __TEXT.__cstring: 0xfefd
--  __TEXT.__unwind_info: 0x4080
-+  __TEXT.__gcc_except_tab: 0x1371c
-+  __TEXT.__oslogstring: 0xac21
-+  __TEXT.__cstring: 0xfeed
-+  __TEXT.__unwind_info: 0x40b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x450
-+  __DATA_CONST.__const: 0x478
-   __DATA_CONST.__objc_classlist: 0x5c0
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x280
--  __DATA_CONST.__objc_selrefs: 0x3c68
-+  __DATA_CONST.__objc_selrefs: 0x3c88
-   __DATA_CONST.__objc_superrefs: 0x4d8
-   __DATA_CONST.__objc_arraydata: 0x250
--  __DATA_CONST.__got: 0x868
-+  __DATA_CONST.__got: 0x858
-   __AUTH_CONST.__const: 0xae8
--  __AUTH_CONST.__cfstring: 0x5ec0
-+  __AUTH_CONST.__cfstring: 0x5ea0
-   __AUTH_CONST.__objc_const: 0x13c78
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x4e0
+-170.0.0.0.0
++171.0.1.0.0
 
-   __AUTH_CONST.__objc_doubleobj: 0x190
-   __AUTH_CONST.__objc_arrayobj: 0x138
-   __AUTH_CONST.__objc_dictobj: 0x78
--  __AUTH_CONST.__auth_got: 0xa40
--  __AUTH.__objc_data: 0xa0
-+  __AUTH_CONST.__auth_got: 0xa50
-   __DATA.__objc_ivar: 0x12d0
-   __DATA.__data: 0xe8680
--  __DATA.__bss: 0x501
--  __DATA_DIRTY.__objc_data: 0x38e0
--  __DATA_DIRTY.__bss: 0x118
-+  __DATA.__bss: 0x4f1
-+  __DATA_DIRTY.__objc_data: 0x3980
-+  __DATA_DIRTY.__bss: 0x138
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3347
--  Symbols:   12589
--  CStrings:  2832
+-  Symbols:   7805
+-  CStrings:  2075
 +  Functions: 3352
-+  Symbols:   12608
-+  CStrings:  2833
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __DATA.__data : content changed
++  Symbols:   7815
++  CStrings:  2077
 Symbols:
 + +[ADNetworkProvider UAFAvailableForModelName:]
 + +[ADNetworkProvider UAFSubscriptionAllowed]
@@ -572,11 +520,6 @@ Symbols:
 + ___47+[ADNetworkProvider requestUAFSandboxExtension]_block_invoke
 + ___block_descriptor_40_ea8_32s_e17_v16?0"NSError"8ls32l8
 + _getpid
-+ _objc_msgSend$UAFAvailableForModelName:
-+ _objc_msgSend$UAFSubscriptionAllowed
-+ _objc_msgSend$downloadMethodByReplacingBestAvailable:modelName:
-+ _objc_msgSend$findCachedUAFModel:
-+ _objc_msgSend$requestUAFSandboxExtension
 + _sandbox_check
 - GCC_except_table1052
 - GCC_except_table1054
@@ -1053,7 +996,6 @@ Symbols:
 - _NSLocalizedDescriptionKey
 - _OBJC_CLASS_$_NSError
 - ___76-[ADNetworkProvider downloadUAFAssetForModelName:pipelineParameters:status:]_block_invoke
-- _objc_msgSend$errorWithDomain:code:userInfo:
 CStrings:
 + "171.0.1"
 + "Switching to download method %lu due to user 'BestAvailable' request"
@@ -1067,5 +1009,4 @@ CStrings:
 - "UAF requestSandboxExtension failed for %{public}@: %{public}@"
 - "UAF requestSandboxExtension succeeded for %{public}@"
 - "UAF requestSandboxExtension timed out after %d seconds for %{public}@"
-
 ```

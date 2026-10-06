@@ -2,20 +2,21 @@
 
 > `/System/Library/Audio/MIDI Drivers/AppleMIDINetworkDriver.plugin/AppleMIDINetworkDriver`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x393e4` | `0x393e8` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__const`
 - `__TEXT.__gcc_except_tab`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
 
-```diff
+### Other Changes
 
- 333.0.0.0.0
--  __TEXT.__text: 0x393e4
-+  __TEXT.__text: 0x393e8
-   __TEXT.__realtime: 0x5a4
-   __TEXT.__auth_stubs: 0x1080
-   __TEXT.__objc_stubs: 0x1e0
+```text
 Functions:
 ~ sub_31968 : 1732 -> 1736
 ```

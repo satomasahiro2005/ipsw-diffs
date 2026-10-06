@@ -2,63 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/Categories.framework/Categories`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb34c` | `0xb798` | **`+0x44c`** |
+| `__TEXT.__cstring` | `0x2d54` | `0x2e04` | **`+0xb0`** |
+| `__AUTH_CONST.__cfstring` | `0x36e0` | `0x3780` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x680` | `0x6e8` | **`+0x68`** |
+| `__TEXT.__objc_methlist` | `0x7c4` | `0x82c` | **`+0x68`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6c8` | `0x720` | **`+0x58`** |
+| `__AUTH_CONST.__objc_const` | `0xc70` | `0xca0` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x388` | `0x3b0` | **`+0x28`** |
+| `__DATA_CONST.__objc_arraydata` | `0xaa0` | `0xab8` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x4c` | `0x50` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -56.0.0.0.0
--  __TEXT.__text: 0xb34c
--  __TEXT.__objc_methlist: 0x7c4
 +58.0.1.0.0
-+  __TEXT.__text: 0xb798
-+  __TEXT.__objc_methlist: 0x82c
-   __TEXT.__const: 0xb0
-   __TEXT.__gcc_except_tab: 0x41c
--  __TEXT.__cstring: 0x2d54
-+  __TEXT.__cstring: 0x2e04
-   __TEXT.__oslogstring: 0x676
--  __TEXT.__unwind_info: 0x388
-+  __TEXT.__unwind_info: 0x3b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x680
-+  __DATA_CONST.__const: 0x6e8
-   __DATA_CONST.__objc_classlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6c8
-+  __DATA_CONST.__objc_selrefs: 0x720
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x28
--  __DATA_CONST.__objc_arraydata: 0xaa0
-+  __DATA_CONST.__objc_arraydata: 0xab8
-   __DATA_CONST.__got: 0x100
-   __AUTH_CONST.__const: 0x140
--  __AUTH_CONST.__cfstring: 0x36e0
--  __AUTH_CONST.__objc_const: 0xc70
-+  __AUTH_CONST.__cfstring: 0x3780
-+  __AUTH_CONST.__objc_const: 0xca0
-   __AUTH_CONST.__objc_arrayobj: 0x990
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0x50
--  __DATA.__objc_ivar: 0x4c
-+  __DATA.__objc_ivar: 0x50
-   __DATA.__data: 0x1e8
-   __DATA.__bss: 0x60
-   __DATA_DIRTY.__objc_data: 0x230
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 211
--  Symbols:   671
+-  Symbols:   512
 -  CStrings:  503
 +  Functions: 221
-+  Symbols:   695
++  Symbols:   526
 +  CStrings:  508
- 
 Symbols:
 + +[CTCategories _cacheKeyForBundleID:targetUserIsU13:]
 + +[CTCategory _bundleCategoriesLookupResultsForBundleIdentifiers:platform:withCompletionHandler:]
@@ -98,17 +69,6 @@ Symbols:
 + ___block_descriptor_65_e8_32s40r_e57_v32?0"NSString"8"CTBundleCategoriesLookupResult"16^B24ls32l8r40l8
 + ___block_descriptor_65_e8_32s40s48bs56r_e34_v24?0"NSDictionary"8"NSError"16ls32l8r56l8s40l8s48l8
 + ___block_descriptor_73_e8_32s40bs48r_e34_v24?0"NSDictionary"8"NSError"16ls32l8r48l8s40l8
-+ _objc_msgSend$_bundleCategoriesLookupResultsForBundleIdentifiers:platform:withCompletionHandler:
-+ _objc_msgSend$_cacheKeyForBundleID:targetUserIsU13:
-+ _objc_msgSend$categoriesForBundleIDs:platform:targetUserIsU13:completionHandler:
-+ _objc_msgSend$categoryForBundleID:platform:targetUserIsU13:completionHandler:
-+ _objc_msgSend$categoryForBundleIdentifiers:platform:targetUserIsU13:withCompletionHandler:
-+ _objc_msgSend$categoryForBundleIdentifiers:platform:version:targetUserIsU13:withCompletionHandler:
-+ _objc_msgSend$contentDescriptors
-+ _objc_msgSend$decodeIntegerForKey:
-+ _objc_msgSend$encodeInteger:forKey:
-+ _objc_msgSend$initWithPrimary:secondary:contentDescriptors:
-+ _objc_msgSend$resolvedIdentifierForVersion:appStoreCategories:ckIdentifier:systemOverride:targetUserIsU13:
 + _objc_retain_x5
 + _objc_retain_x6
 - +[CTCategoryResolver resolvedIdentifierForVersion:appStoreCategories:ckIdentifier:systemOverride:]
@@ -136,7 +96,6 @@ Symbols:
 - ___block_descriptor_56_e8_32bs_e34_v24?0"NSDictionary"8"NSError"16ls32l8
 - ___block_descriptor_64_e8_32s40r_e57_v32?0"NSString"8"CTBundleCategoriesLookupResult"16^B24ls32l8r40l8
 - ___block_descriptor_72_e8_32s40bs48r_e34_v24?0"NSDictionary"8"NSError"16ls32l8r48l8s40l8
-- _objc_msgSend$resolvedIdentifierForVersion:appStoreCategories:ckIdentifier:systemOverride:
 - _objc_retain_x4
 CStrings:
 + "%@|u13=%d"

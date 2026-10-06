@@ -2,40 +2,31 @@
 
 > `/System/Library/VideoProcessors/BarcodeScanner.videoprocessor`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8e58` | `0x57a0` | **`-0x36b8`** |
+| `__TEXT.__oslogstring` | `0x1117` | `—` | **`-0x1117`** |
+| `__TEXT.__cstring` | `0x895` | `0x358` | **`-0x53d`** |
+| `__AUTH_CONST.__cfstring` | `0x120` | `0xe0` | **`-0x40`** |
+| `__TEXT.__const` | `0x40` | `0x10` | **`-0x30`** |
+| `__TEXT.__unwind_info` | `0x100` | `0xe8` | **`-0x18`** |
+| `__DATA_DIRTY.__common` | `0x10` | `—` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -764.40.5.0.0
--  __TEXT.__text: 0x8e1c
--  __TEXT.__const: 0x40
--  __TEXT.__cstring: 0x895
--  __TEXT.__oslogstring: 0x1117
--  __TEXT.__unwind_info: 0x150
 +764.40.7.0.0
-+  __TEXT.__text: 0x5710
-+  __TEXT.__const: 0x10
-+  __TEXT.__cstring: 0x358
-+  __TEXT.__unwind_info: 0x120
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0xa0
--  __AUTH_CONST.__cfstring: 0x120
-+  __AUTH_CONST.__cfstring: 0xe0
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA_DIRTY.__common: 0x10
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
 
-   - /System/Library/PrivateFrameworks/CMCapture.framework/CMCapture
-   - /System/Library/PrivateFrameworks/Quagga.framework/Quagga
-   - /usr/lib/libSystem.B.dylib
 -  Functions: 65
 -  Symbols:   245
 -  CStrings:  141
 +  Functions: 54
 +  Symbols:   237
 +  CStrings:  34
- 
 Symbols:
 + _FigSignalErrorAtGM
 + _fig_log_get_emitter

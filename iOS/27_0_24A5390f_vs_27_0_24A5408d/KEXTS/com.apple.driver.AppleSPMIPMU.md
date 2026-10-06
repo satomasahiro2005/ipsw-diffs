@@ -2,19 +2,20 @@
 
 > `com.apple.driver.AppleSPMIPMU`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0xcbec` | `0xcb7c` | **`-0x70`** |
+| `__TEXT.__const` | `0x36` | `0x16` | **`-0x20`** |
+| `__TEXT.__cstring` | `0x2be7` | `0x2bf8` | **`+0x11`** |
+
+### Other Changes
+
 ```diff
 
 -1372.0.1.0.0
--  __TEXT.__const: 0x36
--  __TEXT.__cstring: 0x2be7
--  __TEXT_EXEC.__text: 0xcbec
 +1372.0.3.0.0
-+  __TEXT.__const: 0x16
-+  __TEXT.__cstring: 0x2bf8
-+  __TEXT_EXEC.__text: 0xcb7c
-   __TEXT_EXEC.__auth_stubs: 0x4d0
-   __DATA.__data: 0x320
-   __DATA.__common: 0xe8
 Functions:
 ~ __ZN18AppleDialogSPMIPMU13setPropertiesEP8OSObject : 4160 -> 4148
 ~ __ZN21AppleDialogSPMIPMURTC20_readRTCUpcountTicksEv : 936 -> 836

@@ -2,15 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/DeepVideoProcessingCore.framework/DeepVideoProcessingCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7a78c` | `0x7a7bc` | **`+0x30`** |
+
+### Other Changes
+
 ```diff
 
 -3.6.0.0.0
--  __TEXT.__text: 0x7a78c
 +3.7.0.0.0
-+  __TEXT.__text: 0x7a7bc
-   __TEXT.__objc_methlist: 0x5654
-   __TEXT.__const: 0x770
-   __TEXT.__cstring: 0x7359
 Functions:
 ~ -[ImageProcessor_Ext dealloc] : 280 -> 288
 ~ -[ImageProcessor dealloc] : 136 -> 144

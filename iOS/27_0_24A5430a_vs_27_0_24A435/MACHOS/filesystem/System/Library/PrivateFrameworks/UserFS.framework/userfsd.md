@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/UserFS.framework/userfsd`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_100003e6c : 24 -> 20

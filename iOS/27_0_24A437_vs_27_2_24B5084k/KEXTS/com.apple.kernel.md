@@ -2,77 +2,40 @@
 
 > `com.apple.kernel`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x8d6fb8` | `0x8efb6c` | **`+0x18bb4`** |
+| `__TEXT.__cstring` | `0x8ad00` | `0x8f0a0` | **`+0x43a0`** |
+| `__DATA_CONST.__kalloc_type` | `0x14fc0` | `0x153c0` | **`+0x400`** |
+| `__TEXT.__os_log` | `0x41afb` | `0x41e4b` | **`+0x350`** |
+| `__DATA.__common` | `0x68d48` | `0x69008` | **`+0x2c0`** |
+| `__BOOTDATA.__init_entry_set` | `0x141d8` | `0x143b8` | **`+0x1e0`** |
+| `__DATA.__bss` | `0xa50a0` | `0xa5270` | **`+0x1d0`** |
+| `__TEXT.__const` | `0x36e70` | `0x37010` | **`+0x1a0`** |
+| `__DATA_CONST.__assert` | `0x1004` | `0x1194` | **`+0x190`** |
+| `__DATA_CONST.__const` | `0xb8078` | `0xb8208` | **`+0x190`** |
+| `__DATA_CONST.__kalloc_var` | `0x7e90` | `0x8020` | **`+0x190`** |
+| `__DATA.__lock_grp` | `0x5d28` | `0x5e30` | **`+0x108`** |
+| `__KLDDATA.__const` | `0x3c08` | `0x3cb0` | **`+0xa8`** |
+| `__BOOTDATA.__init` | `0x17818` | `0x17898` | **`+0x80`** |
+| `__LINKINFO.__symbolsets` | `0x48d28` | `0x48d7b` | **`+0x53`** |
+| `__DATA.__data` | `0x181e9` | `0x18229` | **`+0x40`** |
+| `__DATA_CONST.__kern_brk_desc` | `0x60` | `0x78` | **`+0x18`** |
+| `__BOOTDATA.__static_if` | `0x1070` | `0x1080` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -13432.2.10.0.0
--  __TEXT.__const: 0x37130
+-  Functions: 21692
 +13432.40.144.0.1
-+  __TEXT.__const: 0x372d0
-   __TEXT.__copyio_vectors: 0x2c0
--  __TEXT.__cstring: 0x8bf19
--  __TEXT.__os_log: 0x41afb
-+  __TEXT.__cstring: 0x90308
-+  __TEXT.__os_log: 0x41e4b
-   __TEXT.__eh_frame: 0x7e0
-   __DATA_CONST.__hib_const: 0x120
--  __DATA_CONST.__const: 0x120ee0
--  __DATA_CONST.__kalloc_type: 0x14fc0
--  __DATA_CONST.__assert: 0x148c
--  __DATA_CONST.__kalloc_var: 0x7e90
-+  __DATA_CONST.__const: 0x121070
-+  __DATA_CONST.__kalloc_type: 0x153c0
-+  __DATA_CONST.__assert: 0x161c
-+  __DATA_CONST.__kalloc_var: 0x8020
-   __DATA_CONST.__exclaves_bt: 0xc0
--  __DATA_CONST.__kern_brk_desc: 0x60
-+  __DATA_CONST.__kern_brk_desc: 0x78
-   __DATA_CONST.__mod_init_func: 0x2d8
-   __DATA_CONST.__auth_ptr: 0x8
-   __DATA_SPTM.__const: 0x4c000
-   __TEXT_EXEC.__exc: 0x1000
--  __TEXT_EXEC.__text: 0x8f1638
-+  __TEXT_EXEC.__text: 0x90a63c
-   __TEXT_EXEC.__hib_text: 0x10d8
-   __TEXT_BOOT_EXEC.__bootcode: 0x6a2c
-   __KLD.__text: 0x173c
++  Functions: 21940
 
-   __LAST.__pinst: 0x8
-   __LAST.__last: 0x0
-   __KLDDATA.__cstring: 0x6e1
--  __KLDDATA.__const: 0x3eb0
-+  __KLDDATA.__const: 0x3f58
-   __KLDDATA.__mod_init_func: 0x8
-   __KLDDATA.__mod_term_func: 0x8
-   __KLDDATA.__bss: 0x1
--  __DATA.__data: 0x18269
--  __DATA.__lock_grp: 0x5cd0
-+  __DATA.__data: 0x182a9
-+  __DATA.__lock_grp: 0x5dd8
-   __DATA.__percpu: 0x7be0
--  __DATA.__common: 0x7b6c8
-+  __DATA.__common: 0x7b9a8
-   __BOOTDATA.__data: 0x18000
--  __BOOTDATA.__static_if: 0xdc0
--  __BOOTDATA.__init_entry_set: 0x14cd0
--  __BOOTDATA.__init: 0x178b8
-+  __BOOTDATA.__static_if: 0xdd0
-+  __BOOTDATA.__init_entry_set: 0x14eb0
-+  __BOOTDATA.__init: 0x17938
-   __BOOTDATA.__static_ifinit: 0x18
-   __PRELINK_TEXT.__text: 0x0
-   __PRELINK_INFO.__info: 0x0
-
-   __PLK_DATA_CONST.__data: 0x0
-   __PLK_LLVM_COV.__llvm_covmap: 0x0
-   __PLK_LINKEDIT.__data: 0x0
--  __LINKINFO.__symbolsets: 0x48d28
--  Functions: 21792
-+  __LINKINFO.__symbolsets: 0x48d7b
-+  Functions: 22041
-   Symbols:   0
--  CStrings:  20965
-+  CStrings:  21327
- 
+-  CStrings:  20883
++  CStrings:  21244
 CStrings:
 + "\n(kern_coredump_routine) : kern_dump_record_file failed with %d\n"
 + "\nBeginning coredump of %s\n"
@@ -215,7 +178,7 @@ CStrings:
 + "; stext="
 + "A dump server was not specified in the boot-args, terminating kernel core dump.\n"
 + "Attempting connection to panic server configured at IP %s, port %d\n"
-+ "B16@?0^{task={lck_mtx_s=b24b8I(lck_mtx_state={?=b28b1b1b1b1SS}IQ)}{os_refcnt=AI}BBBBIIQ^{_vm_map}{queue_entry=^{queue_entry}^{queue_entry}}^{task_watchports}^v{queue_entry=^{queue_entry}^{queue_entry}}^{restartable_ranges}^{processor_set}^{affinity_space}iIiiissiQ{recount_task=^{recount_track}^{recount_usage}}{lck_mtx_s=b24b8I(lck_mtx_state={?=b28b1b1b1b1SS}IQ)}[4^{ipc_port}][14{exception_action=^{ipc_port}iiii^{label}}]{hardened_exception_action={exception_action=^{ipc_port}iiii^{label}}II}^{ipc_port}^{ipc_port}^{ipc_port}^{ipc_port}^{ipc_port}[3^{ipc_port}]^^{ipc_port}^{ipc_space}^{task_token_data}^{ledger}{queue_entry=^{queue_entry}^{queue_entry}}iI^vQQCCACQQQiBBBB^Q^Q^Q^Q^Q^QIIIIII^{proc_ro}^{kcdata_descriptor}Q{queue_entry=^{queue_entry}^{queue_entry}}^{label}IIQQ{cpc_task=B}ACBBBBb4b4b4b4CCCCCB*^{vm_shared_region}QQQ^{thread_call}{queue_entry=^{queue_entry}^{queue_entry}}ii^{bank_task}^{ipc_importance_task}{vm_extmod_statistics=qqqqqq}{task_requested_policy=b1b1b2b2b1b1b2b1b3b3b3b1b5b3b3b1b3b1b1b3b1b3b1b1b1b4b12}{task_effective_policy=b1b1b2b1b1b1b2b1b1b3b3b1b1b1b4b1b1b1b3b3b1b1b1b1b1b26}{task_pend_token=(?={?=b1b1b1b1b1b1b1b1b1b1b1b1b1b1}I)}b1b1b1b1b1b27AI^{io_stat_info}{task_writes_counters=QQQQ}{task_writes_counters=QQQQ}{_cpu_time_qos_stats=QQQQQQQ}{_cpu_time_qos_stats=QQQQQQQ}IIQQCCCiii{queue_entry=^{queue_entry}^{queue_entry}}{lck_mtx_s=b24b8I(lck_mtx_state={?=b28b1b1b1b1SS}IQ)}b16b1b1b1b1b1b1b1b2b1b6[2^{coalition}][2{queue_entry=^{queue_entry}^{queue_entry}}]Q^vCCCCIQ{queue_entry=^{queue_entry}^{queue_entry}}{queue_entry=^{queue_entry}^{queue_entry}}IQQ[16C]Q^{_vmobject_list_output_}II^{vm_deferred_reclamation_metadata_s}^v^vIQC{task_security_config=(?={?=b1b1b1b3b1b1b1b1b1b1C}I)}AQ}8"
++ "B16@?0^{task={lck_mtx_s=b24b8I(lck_mtx_state={?=b28b1b1b1b1SS}IQ)}{os_refcnt=AI}BBBBIIQ^{_vm_map}{queue_entry=^{queue_entry}^{queue_entry}}^{task_watchports}^v{queue_entry=^{queue_entry}^{queue_entry}}^{restartable_ranges}^{processor_set}^{affinity_space}iIiiissiQ{recount_task=^{recount_track}^{recount_usage}}{lck_mtx_s=b24b8I(lck_mtx_state={?=b28b1b1b1b1SS}IQ)}[4^{ipc_port}][14{exception_action=^{ipc_port}iiii^{label}}]{hardened_exception_action={exception_action=^{ipc_port}iiii^{label}}II}^{ipc_port}^{ipc_port}^{ipc_port}^{ipc_port}^{ipc_port}[3^{ipc_port}]^^{ipc_port}^{ipc_space}^{task_token_data}^{ledger}{queue_entry=^{queue_entry}^{queue_entry}}iI^vQQCACQQQiBBBB^Q^Q^Q^Q^Q^QIIIIII^{proc_ro}^{kcdata_descriptor}Q{queue_entry=^{queue_entry}^{queue_entry}}^{label}IIQQ{cpc_task=B}ACBBBBb4b4b4b4CCCCCB*^{vm_shared_region}QQQ^{thread_call}{queue_entry=^{queue_entry}^{queue_entry}}ii^{bank_task}^{ipc_importance_task}{vm_extmod_statistics=qqqqqq}{task_requested_policy=b1b1b2b2b1b1b2b1b3b3b3b1b5b3b3b1b3b1b1b3b1b3b1b1b1b4b12}{task_effective_policy=b1b1b2b1b1b1b2b1b1b3b3b1b1b1b4b1b1b1b3b3b1b1b1b1b1b26}{task_pend_token=(?={?=b1b1b1b1b1b1b1b1b1b1b1b1b1b1}I)}b1b1b1b1b1b27AI^{io_stat_info}{task_writes_counters=QQQQ}{task_writes_counters=QQQQ}{_cpu_time_qos_stats=QQQQQQQ}{_cpu_time_qos_stats=QQQQQQQ}IIQQCCCiii{queue_entry=^{queue_entry}^{queue_entry}}{lck_mtx_s=b24b8I(lck_mtx_state={?=b28b1b1b1b1SS}IQ)}b16b1b1b1b1b1b1b1b2b1b6[2^{coalition}][2{queue_entry=^{queue_entry}^{queue_entry}}]Q^vCCCCIQ{queue_entry=^{queue_entry}^{queue_entry}}{queue_entry=^{queue_entry}^{queue_entry}}IQQ[16C]Q^{_vmobject_list_output_}II^{vm_deferred_reclamation_metadata_s}^v^vIQC{task_security_config=(?={?=b1b1b1b3b1b1b1b1b1b1C}I)}AQ}8"
 + "Boot-args specify %d MB kernel corefile\n"
 + "Controls whether applications are eligible to have their memory swapped under pressure"
 + "Corefile is not yet initialized. Cannot write a coredump to disk\n"
@@ -388,7 +351,6 @@ CStrings:
 + "lz4_stage_stream"
 + "main bin spec"
 + "memory override is too small to boot; check the maxmem/memsize boot-args @%s:%d"
-+ "memory override is too small to boot;check the maxmem/memsize boot-args @%s:%d"
 + "memory_backing_aware_buffer_stage_outproc"
 + "memorystatus: purged %llu KiB of deferred SK pages\n"
 + "memsize=%u MB leaves no memory for XNU/SPTM to manage: the iBoot carveouts alone are %llu MB @%s:%d"
@@ -452,7 +414,7 @@ CStrings:
 - "%s: mbuf %p len (%d) < off+len (%d+%d) @%s:%d"
 - "12112111111211111111"
 - "2211112121222222111222221112"
-- "B16@?0^{task={lck_mtx_s=b24b8I(lck_mtx_state={?=b28b1b1b1b1SS}IQ)}{os_refcnt=AI}BBBBIIQ^{_vm_map}{queue_entry=^{queue_entry}^{queue_entry}}^{task_watchports}^v{queue_entry=^{queue_entry}^{queue_entry}}^{restartable_ranges}^{processor_set}^{affinity_space}iIiiissiQ{recount_task=^{recount_track}^{recount_usage}}{lck_mtx_s=b24b8I(lck_mtx_state={?=b28b1b1b1b1SS}IQ)}[4^{ipc_port}][14{exception_action=^{ipc_port}iiii^{label}}]{hardened_exception_action={exception_action=^{ipc_port}iiii^{label}}II}^{ipc_port}^{ipc_port}^{ipc_port}^{ipc_port}^{ipc_port}[3^{ipc_port}]^^{ipc_port}^{ipc_space}^{task_token_data}^{ledger}{queue_entry=^{queue_entry}^{queue_entry}}iI^vQQCCACQQQiBBBB^Q^Q^Q^Q^Q^QIIIIII^{proc_ro}^{kcdata_descriptor}Q{queue_entry=^{queue_entry}^{queue_entry}}^{label}IIQQ{cpc_task=B}ACBBBBb4b4b4b4CCCCCB*^{vm_shared_region}QQQ^{thread_call}{queue_entry=^{queue_entry}^{queue_entry}}ii^{bank_task}^{ipc_importance_task}{vm_extmod_statistics=qqqqqq}{task_requested_policy=b1b1b2b2b1b1b2b1b3b3b3b1b5b3b3b1b3b1b1b3b1b3b1b1b1b4b12}{task_effective_policy=b1b1b2b1b1b1b2b1b1b3b3b1b1b1b4b1b1b1b3b3b1b1b1b1b1b26}{task_pend_token=(?={?=b1b1b1b1b1b1b1b1b1b1b1b1b1b1}I)}b1b1b1b1b1b27AI^{io_stat_info}{task_writes_counters=QQQQ}{task_writes_counters=QQQQ}{_cpu_time_qos_stats=QQQQQQQ}{_cpu_time_qos_stats=QQQQQQQ}IIQQCCCiii{queue_entry=^{queue_entry}^{queue_entry}}{lck_mtx_s=b24b8I(lck_mtx_state={?=b28b1b1b1b1SS}IQ)}b16b1b1b1b1b1b1b1b2b7[2^{coalition}][2{queue_entry=^{queue_entry}^{queue_entry}}]Q^vCCCCIQ{queue_entry=^{queue_entry}^{queue_entry}}{queue_entry=^{queue_entry}^{queue_entry}}iIQQ[16C]Q^{_vmobject_list_output_}II^{vm_deferred_reclamation_metadata_s}^v^vIQC{task_security_config=(?={?=b1b1b1b3b1b1b1b1b1b1C}I)}AQ}8"
+- "B16@?0^{task={lck_mtx_s=b24b8I(lck_mtx_state={?=b28b1b1b1b1SS}IQ)}{os_refcnt=AI}BBBBIIQ^{_vm_map}{queue_entry=^{queue_entry}^{queue_entry}}^{task_watchports}^v{queue_entry=^{queue_entry}^{queue_entry}}^{restartable_ranges}^{processor_set}^{affinity_space}iIiiissiQ{recount_task=^{recount_track}^{recount_usage}}{lck_mtx_s=b24b8I(lck_mtx_state={?=b28b1b1b1b1SS}IQ)}[4^{ipc_port}][14{exception_action=^{ipc_port}iiii^{label}}]{hardened_exception_action={exception_action=^{ipc_port}iiii^{label}}II}^{ipc_port}^{ipc_port}^{ipc_port}^{ipc_port}^{ipc_port}[3^{ipc_port}]^^{ipc_port}^{ipc_space}^{task_token_data}^{ledger}{queue_entry=^{queue_entry}^{queue_entry}}iI^vQQCACQQQiBBBB^Q^Q^Q^Q^Q^QIIIIII^{proc_ro}^{kcdata_descriptor}Q{queue_entry=^{queue_entry}^{queue_entry}}^{label}IIQQ{cpc_task=B}ACBBBBb4b4b4b4CCCCCB*^{vm_shared_region}QQQ^{thread_call}{queue_entry=^{queue_entry}^{queue_entry}}ii^{bank_task}^{ipc_importance_task}{vm_extmod_statistics=qqqqqq}{task_requested_policy=b1b1b2b2b1b1b2b1b3b3b3b1b5b3b3b1b3b1b1b3b1b3b1b1b1b4b12}{task_effective_policy=b1b1b2b1b1b1b2b1b1b3b3b1b1b1b4b1b1b1b3b3b1b1b1b1b1b26}{task_pend_token=(?={?=b1b1b1b1b1b1b1b1b1b1b1b1b1b1}I)}b1b1b1b1b1b27AI^{io_stat_info}{task_writes_counters=QQQQ}{task_writes_counters=QQQQ}{_cpu_time_qos_stats=QQQQQQQ}{_cpu_time_qos_stats=QQQQQQQ}IIQQCCCiii{queue_entry=^{queue_entry}^{queue_entry}}{lck_mtx_s=b24b8I(lck_mtx_state={?=b28b1b1b1b1SS}IQ)}b16b1b1b1b1b1b1b1b2b7[2^{coalition}][2{queue_entry=^{queue_entry}^{queue_entry}}]Q^vCCCCIQ{queue_entry=^{queue_entry}^{queue_entry}}{queue_entry=^{queue_entry}^{queue_entry}}iIQQ[16C]Q^{_vmobject_list_output_}II^{vm_deferred_reclamation_metadata_s}^v^vIQC{task_security_config=(?={?=b1b1b1b3b1b1b1b1b1b1C}I)}AQ}8"
 - "Exclaves requirements which have been relaxed"
 - "External objects are not implemented for CoW. %p %i %i %llx %llx @%s:%d"
 - "exclaves_relaxed_requirements"

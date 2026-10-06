@@ -2,19 +2,19 @@
 
 > `/usr/lib/libMatch.1.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6868` | `0x6910` | **`+0xa8`** |
+| `__TEXT.__unwind_info` | `0x158` | `0x150` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -49.0.0.0.0
--  __TEXT.__text: 0x6868
 +50.0.1.0.0
-+  __TEXT.__text: 0x6910
-   __TEXT.__const: 0x10
-   __TEXT.__cstring: 0x4f4
--  __TEXT.__unwind_info: 0x158
-+  __TEXT.__unwind_info: 0x150
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__auth_got: 0x0
 Functions:
 ~ _matchExec : 4184 -> 4104
 ~ _expandBuffers : 172 -> 284

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MessageDispatch.framework/MessageDispatch`
 
-```diff
+### Section Size Changes
 
- 2027.0.13.0.0
--  __TEXT.__text: 0x97698
-+  __TEXT.__text: 0x97b14
-   __TEXT.__objc_methlist: 0x1c8
-   __TEXT.__const: 0x5b64
-   __TEXT.__cstring: 0x1017
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x97698` | `0x97b14` | **`+0x47c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s15MessageDispatch19XPCDispatchListenerC8listener_25shouldAcceptNewConnectionSbSo13NSXPCListenerC_So15NSXPCConnectionCtFyyYacfU1_TY1_ : 160 -> 164
 ~ _$s15MessageDispatch25XPCDispatchListenerExportC8dispatch33_05DB20F793658634BC941C1F15CD1265LL11messageCode0M4Data28originatingProcessIdentifier10Foundation0O0VSgs6UInt32V_ALSiSgtYaKFTQ1_ : 484 -> 488

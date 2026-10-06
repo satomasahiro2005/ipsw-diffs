@@ -2,21 +2,22 @@
 
 > `com.apple.iokit.IOReportFamily`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x3030` | `0x3048` | **`+0x18`** |
+| `__TEXT.__cstring` | `0x238` | `0x237` | **`-0x1`** |
+
+### Other Changes
+
 ```diff
 
 -115.0.0.0.0
--  __TEXT.__cstring: 0x238
 +115.0.0.0.1
-+  __TEXT.__cstring: 0x237
-   __TEXT.__os_log: 0x4fc
--  __TEXT_EXEC.__text: 0x2f48
-+  __TEXT_EXEC.__text: 0x2f60
-   __TEXT_EXEC.__auth_stubs: 0x210
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x60
 Functions:
-~ sub_fffffe000a44095c -> sub_fffffe000a3d3fbc : 120 -> 128
-~ sub_fffffe000a4409d4 -> sub_fffffe000a3d403c : 104 -> 116
+~ sub_fffffff00a3558e8 -> sub_fffffff00a2dbac8 : 120 -> 128
+~ sub_fffffff00a355960 -> sub_fffffff00a2dbb48 : 116 -> 128
 ~ __ZN11IOReportHub17getSnapshotDeltasEyP12OSDictionaryP24IOBufferMemoryDescriptor : 1332 -> 1336
 CStrings:
 + "1211111212221212111"

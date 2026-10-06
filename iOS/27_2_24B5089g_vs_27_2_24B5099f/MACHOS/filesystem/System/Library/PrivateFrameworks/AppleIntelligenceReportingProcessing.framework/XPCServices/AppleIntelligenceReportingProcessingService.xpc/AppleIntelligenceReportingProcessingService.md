@@ -2,72 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/AppleIntelligenceReportingProcessing.framework/XPCServices/AppleIntelligenceReportingProcessingService.xpc/AppleIntelligenceReportingProcessingService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__oslogstring` | `0x5f1e` | `0x5fbe` | **`+0xa0`** |
+| `__TEXT.__text` | `0x107c78` | `0x107c38` | **`-0x40`** |
+| `__TEXT.__unwind_info` | `0x3658` | `0x3680` | **`+0x28`** |
+| `__TEXT.__cstring` | `0x5143` | `0x5133` | **`-0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_classlist`
 - `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_entry`
 - `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_builtin`
+- `__TEXT.__eh_frame`
 - `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_entry`
 - `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_mpenum`
 - `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -232.40.14.502.1
 +232.40.17.0.0
-   __TEXT.__text: 0xfe0e8
-   __TEXT.__auth_stubs: 0x2fb0
-   __TEXT.__objc_stubs: 0x1ca0
-   __TEXT.__const: 0x7666
-   __TEXT.__swift5_typeref: 0x2b6e
--  __TEXT.__cstring: 0x5143
-+  __TEXT.__cstring: 0x5133
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__constg_swiftt: 0x2528
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_types: 0x244
--  __TEXT.__oslogstring: 0x5f1e
-+  __TEXT.__oslogstring: 0x5fbe
-   __TEXT.__swift5_reflstr: 0x325d
-   __TEXT.__swift5_assocty: 0x1f8
-   __TEXT.__swift5_fieldmd: 0x3774
 
-   __TEXT.__swift_as_cont: 0x284
-   __TEXT.__swift5_mpenum: 0x10
-   __TEXT.__swift5_capture: 0x2924
--  __TEXT.__unwind_info: 0x42d0
-+  __TEXT.__unwind_info: 0x42e8
-   __TEXT.__eh_frame: 0x6570
-   __DATA_CONST.__const: 0xab98
-   __DATA_CONST.__cfstring: 0xb20
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 7290
+-  Functions: 7291
 -  Symbols:   12410
 -  CStrings:  1236
-+  Functions: 7283
++  Functions: 7284
 +  Symbols:   12408
 +  CStrings:  1237
- 
 Symbols:
 + _$s10Foundation4DateV2geoiySbAC_ACtFZ
 + _$s10Foundation4DateV2leoiySbAC_ACtFZ

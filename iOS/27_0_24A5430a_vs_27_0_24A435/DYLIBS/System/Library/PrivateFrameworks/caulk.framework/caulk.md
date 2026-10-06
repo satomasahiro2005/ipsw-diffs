@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/caulk.framework/caulk`
 
-```diff
+### Section Size Changes
 
- 247.0.0.0.0
--  __TEXT.__text: 0x1f5f0
-+  __TEXT.__text: 0x1f5fc
-   __TEXT.__realtime: 0x1198
-   __TEXT.__const: 0x48c0
-   __TEXT.__gcc_except_tab: 0x1d60
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1f5f0` | `0x1f5fc` | **`+0xc`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN5caulk5alloc22consolidating_free_mapINS0_14page_allocatorELm10485760EE22maybe_create_free_nodeEPNS3_10NodePrefixEm : 224 -> 232
 ~ __ZN5caulk14cf_preferences7monitor12_add_handlerEPK10__CFStringS4_ONSt3__18functionIFbPKvEEE : 1296 -> 1280

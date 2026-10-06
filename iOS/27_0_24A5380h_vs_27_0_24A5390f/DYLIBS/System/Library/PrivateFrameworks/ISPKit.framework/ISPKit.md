@@ -2,80 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/ISPKit.framework/ISPKit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x200f8` | `0x2068c` | **`+0x594`** |
+| `__AUTH_CONST.__objc_const` | `0x6fb8` | `0x7438` | **`+0x480`** |
+| `__TEXT.__objc_methlist` | `0x1fac` | `0x21ec` | **`+0x240`** |
+| `__AUTH_CONST.__cfstring` | `0x16a0` | `0x1740` | **`+0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x12a8` | `0x1328` | **`+0x80`** |
+| `__TEXT.__oslogstring` | `0x2f60` | `0x2fc3` | **`+0x63`** |
+| `__DATA.__objc_ivar` | `0x5bc` | `0x61c` | **`+0x60`** |
+| `__TEXT.__cstring` | `0x1764` | `0x17b1` | **`+0x4d`** |
+| `__DATA_CONST.__const` | `0x290` | `0x2b8` | **`+0x28`** |
+| `__TEXT.__const` | `0x280` | `0x298` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x660` | `0x668` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -20.55.3.0.0
--  __TEXT.__text: 0x200f8
--  __TEXT.__objc_methlist: 0x1fac
--  __TEXT.__const: 0x280
 +20.57.3.0.0
-+  __TEXT.__text: 0x2068c
-+  __TEXT.__objc_methlist: 0x21ec
-+  __TEXT.__const: 0x298
-   __TEXT.__gcc_except_tab: 0x620
--  __TEXT.__cstring: 0x1764
--  __TEXT.__oslogstring: 0x2f60
-+  __TEXT.__cstring: 0x17b1
-+  __TEXT.__oslogstring: 0x2fc3
-   __TEXT.__dlopen_cstrs: 0xa6
--  __TEXT.__unwind_info: 0x660
-+  __TEXT.__unwind_info: 0x668
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x290
-+  __DATA_CONST.__const: 0x2b8
-   __DATA_CONST.__objc_classlist: 0x1a0
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x12a8
-+  __DATA_CONST.__objc_selrefs: 0x1328
-   __DATA_CONST.__objc_superrefs: 0x140
-   __DATA_CONST.__objc_arraydata: 0x70
-   __DATA_CONST.__got: 0x1f0
-   __AUTH_CONST.__const: 0x30
--  __AUTH_CONST.__cfstring: 0x16a0
--  __AUTH_CONST.__objc_const: 0x6fb8
-+  __AUTH_CONST.__cfstring: 0x1740
-+  __AUTH_CONST.__objc_const: 0x7438
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x78
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__objc_ivar: 0x5bc
-+  __DATA.__objc_ivar: 0x61c
-   __DATA.__data: 0x180
-   __DATA.__bss: 0x78
-   __DATA_DIRTY.__objc_data: 0x1040
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 942
--  Symbols:   2092
+-  Symbols:   1688
 -  CStrings:  546
 +  Functions: 993
-+  Symbols:   2171
++  Symbols:   1767
 +  CStrings:  553
- 
 Symbols:
 + -[FrameOutCombinedEncoder encodeToCommandBuffer:inputDenoisedYUV:degammaLUT:gammaLUT:lscGainGrid:outputBand0Y:outputBand1R:outputBand1GB:outputBand1GBBytesPerRow:shaderModelInfo:lscCropParams:inputCropParams:ditherSeed:ditherStrength:artifactThreshold:uvMaskParams:]
 + -[LLVPostProcessorFrameParameters inputAWBCombBGain]
@@ -157,9 +112,7 @@ Symbols:
 + _OBJC_IVAR_$_LLVProcessorFrameParameters._inputAWBStable
 + __parseUVRects
 + _e5rt_precompiled_compute_op_create_options_set_anef_intermediate_buffer_size_hint
-+ _objc_msgSend$encodeToCommandBuffer:inputDenoisedYUV:degammaLUT:gammaLUT:lscGainGrid:outputBand0Y:outputBand1R:outputBand1GB:outputBand1GBBytesPerRow:shaderModelInfo:lscCropParams:inputCropParams:ditherSeed:ditherStrength:artifactThreshold:uvMaskParams:
 - -[FrameOutCombinedEncoder encodeToCommandBuffer:inputDenoisedYUV:degammaLUT:gammaLUT:lscGainGrid:outputBand0Y:outputBand1R:outputBand1GB:outputBand1GBBytesPerRow:shaderModelInfo:lscCropParams:inputCropParams:ditherSeed:ditherStrength:]
-- _objc_msgSend$encodeToCommandBuffer:inputDenoisedYUV:degammaLUT:gammaLUT:lscGainGrid:outputBand0Y:outputBand1R:outputBand1GB:outputBand1GBBytesPerRow:shaderModelInfo:lscCropParams:inputCropParams:ditherSeed:ditherStrength:
 CStrings:
 + "ArtifactThreshold = %f (totalGain = %f)"
 + "BilateralThresholdLUT"

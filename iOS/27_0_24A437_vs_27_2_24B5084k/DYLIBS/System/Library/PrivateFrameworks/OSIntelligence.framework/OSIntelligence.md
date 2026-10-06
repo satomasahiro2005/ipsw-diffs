@@ -2,67 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/OSIntelligence.framework/OSIntelligence`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1b5dc` | `0x1d4d4` | **`+0x1ef8`** |
+| `__TEXT.__oslogstring` | `0x2820` | `0x2c5d` | **`+0x43d`** |
+| `__AUTH_CONST.__objc_const` | `0x3188` | `0x3488` | **`+0x300`** |
+| `__AUTH_CONST.__cfstring` | `0x1660` | `0x18c0` | **`+0x260`** |
+| `__TEXT.__objc_methlist` | `0x2338` | `0x2590` | **`+0x258`** |
+| `__TEXT.__cstring` | `0x1b54` | `0x1d26` | **`+0x1d2`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1278` | `0x1410` | **`+0x198`** |
+| `__TEXT.__unwind_info` | `0x9e8` | `0xa78` | **`+0x90`** |
+| `__TEXT.__gcc_except_tab` | `0x6c8` | `0x730` | **`+0x68`** |
+| `__DATA.__objc_ivar` | `0x1e4` | `0x224` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x8f0` | `0x918` | **`+0x28`** |
+| `__TEXT.__const` | `0x1b8` | `0x1d8` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x78` | `0x90` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x1f8` | `0x208` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -286.2.1.0.0
--  __TEXT.__text: 0x1ad0c
--  __TEXT.__objc_methlist: 0x2338
--  __TEXT.__const: 0x1b8
--  __TEXT.__cstring: 0x1b54
--  __TEXT.__oslogstring: 0x2820
--  __TEXT.__gcc_except_tab: 0x6c8
--  __TEXT.__unwind_info: 0xd48
 +288.40.3.0.0
-+  __TEXT.__text: 0x1cbbc
-+  __TEXT.__objc_methlist: 0x2590
-+  __TEXT.__const: 0x1d8
-+  __TEXT.__cstring: 0x1d26
-+  __TEXT.__oslogstring: 0x2c5d
-+  __TEXT.__gcc_except_tab: 0x730
-+  __TEXT.__unwind_info: 0xe08
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x8f0
-+  __DATA_CONST.__const: 0x918
-   __DATA_CONST.__objc_classlist: 0xd8
-   __DATA_CONST.__objc_protolist: 0x78
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1278
-+  __DATA_CONST.__objc_selrefs: 0x1410
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0xa8
-   __DATA_CONST.__objc_arraydata: 0x8
--  __DATA_CONST.__got: 0x1f8
-+  __DATA_CONST.__got: 0x208
-   __AUTH_CONST.__const: 0x7a0
--  __AUTH_CONST.__cfstring: 0x1660
--  __AUTH_CONST.__objc_const: 0x3188
--  __AUTH_CONST.__objc_intobj: 0x78
-+  __AUTH_CONST.__cfstring: 0x18c0
-+  __AUTH_CONST.__objc_const: 0x3488
-+  __AUTH_CONST.__objc_intobj: 0x90
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0x1e0
--  __DATA.__objc_ivar: 0x1e4
-+  __DATA.__objc_ivar: 0x224
-   __DATA.__data: 0x5a0
-   __DATA_DIRTY.__objc_data: 0x690
-   __DATA_DIRTY.__bss: 0x98
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 938
--  Symbols:   1814
+-  Symbols:   1424
 -  CStrings:  455
 +  Functions: 1016
-+  Symbols:   1939
++  Symbols:   1509
 +  CStrings:  505
- 
 Symbols:
 + -[_OSIBLManager earlyThermalNotifyToken]
 + -[_OSIBLManager forwardFeatureGateToPerformanceControl:]
@@ -153,52 +124,10 @@ Symbols:
 + ___block_descriptor_49_e8_32s_e5_v8?0ls32l8
 + _dispatch_assert_queue$V2
 + _kOSThermalNotificationPressureLevelName
-+ _objc_msgSend$batteryLifeChallenged
-+ _objc_msgSend$clpcClient
-+ _objc_msgSend$clpcMitigationsEnabled
-+ _objc_msgSend$consoleModeActive
-+ _objc_msgSend$featureEnabled
-+ _objc_msgSend$forwardFeatureGateToPerformanceControl:
-+ _objc_msgSend$forwardThermalGateToPerformanceControl
-+ _objc_msgSend$isIBLMEnabledUnsynchronized
-+ _objc_msgSend$isThermalMitigationEnabledByDefaults
-+ _objc_msgSend$lastPushedState
-+ _objc_msgSend$lowPowerModeActive
-+ _objc_msgSend$lowPowerModeNotificationHandler
-+ _objc_msgSend$mitigationOption
-+ _objc_msgSend$numberWithLongLong:
-+ _objc_msgSend$reconcile
-+ _objc_msgSend$registerForConsoleModeChanges
-+ _objc_msgSend$registerForLowPowerModeChanges
-+ _objc_msgSend$registerForThermalChanges
-+ _objc_msgSend$resolveAndActuate:
-+ _objc_msgSend$setBatteryLifeChallenged:
-+ _objc_msgSend$setClpcMitigationsEnabled:
-+ _objc_msgSend$setConsoleModeActive:
-+ _objc_msgSend$setFeatureEnabled:
-+ _objc_msgSend$setLastPushedState:
-+ _objc_msgSend$setLowPowerModeActive:
-+ _objc_msgSend$setTestOverride:
-+ _objc_msgSend$setThermalMitigationsEnabled:
-+ _objc_msgSend$setThermallyChallenged:
-+ _objc_msgSend$setViewfinderActive:
-+ _objc_msgSend$shouldEngage
-+ _objc_msgSend$testOverride
-+ _objc_msgSend$thermalMitigationsEnabled
-+ _objc_msgSend$thermalNotificationHandler
-+ _objc_msgSend$thermallyChallenged
-+ _objc_msgSend$updateCLPCMitigationsEnabled:
-+ _objc_msgSend$updateFeatureEnabled:
-+ _objc_msgSend$updateSource:engaged:
-+ _objc_msgSend$updateSuppressor:active:
-+ _objc_msgSend$updateTestOverride:
-+ _objc_msgSend$updateThermalMitigationsEnabled:
-+ _objc_msgSend$viewfinderActive
 - -[_OSICLPCInterface updatePerformanceControlWithMitigation:]
 - ___60-[_OSICLPCInterface updatePerformanceControlWithMitigation:]_block_invoke
 - ___block_descriptor_56_e8_32s40s_e5_v8?0ls32l8s40l8
 - _notify_cancel
-- _objc_msgSend$updatePerformanceControlWithMitigation:
 CStrings:
 + "%"
 + "%{public}s IBLM mitigation for CLPC (batteryLife %d, thermal %d, consoleMode %d, viewfinder %d, LPM %d, feature %d, trial %d, thermalTrial %d, override %@)"

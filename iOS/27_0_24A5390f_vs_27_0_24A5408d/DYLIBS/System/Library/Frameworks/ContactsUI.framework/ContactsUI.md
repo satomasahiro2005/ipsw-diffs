@@ -2,104 +2,50 @@
 
 > `/System/Library/Frameworks/ContactsUI.framework/ContactsUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3876c8` | `0x3853b4` | **`-0x2314`** |
+| `__TEXT.__oslogstring` | `0xae20` | `0xaf50` | **`+0x130`** |
+| `__TEXT.__objc_methlist` | `0x394d4` | `0x39594` | **`+0xc0`** |
+| `__AUTH.__data` | `0x36a0` | `0x35f0` | **`-0xb0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x18588` | `0x18610` | **`+0x88`** |
+| `__AUTH.__objc_data` | `0xfa88` | `0xfa38` | **`-0x50`** |
+| `__AUTH_CONST.__const` | `0xa3e8` | `0xa438` | **`+0x50`** |
+| `__DATA.__data` | `0xad78` | `0xad28` | **`-0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x22e8` | `0x2318` | **`+0x30`** |
+| `__TEXT.__swift5_reflstr` | `0x38d1` | `0x3901` | **`+0x30`** |
+| `__TEXT.__constg_swiftt` | `0x55a8` | `0x5588` | **`-0x20`** |
+| `__TEXT.__swift5_capture` | `0x1574` | `0x1594` | **`+0x20`** |
+| `__TEXT.__swift5_typeref` | `0xeff2` | `0xefd2` | **`-0x20`** |
+| `__TEXT.__unwind_info` | `0xdcf0` | `0xdd10` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x3598` | `0x357c` | **`-0x1c`** |
+| `__AUTH_CONST.__auth_got` | `0x2cb8` | `0x2cd0` | **`+0x18`** |
+| `__DATA_CONST.__const` | `0x6828` | `0x6818` | **`-0x10`** |
+| `__AUTH_CONST.__objc_const` | `0x59528` | `0x59520` | **`-0x8`** |
+| `__DATA.__bss` | `0xa470` | `0xa468` | **`-0x8`** |
+| `__DATA.__objc_ivar` | `0x3c58` | `0x3c60` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x1780` | `0x1778` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0x3d0` | `0x3cc` | **`-0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -1456.100.1.2.1
--  __TEXT.__text: 0x3876c8
--  __TEXT.__objc_methlist: 0x394d4
 +1461.100.1.0.0
-+  __TEXT.__text: 0x3853b4
-+  __TEXT.__objc_methlist: 0x39594
-   __TEXT.__dlopen_cstrs: 0x183b
-   __TEXT.__const: 0xc470
--  __TEXT.__oslogstring: 0xae20
--  __TEXT.__swift5_typeref: 0xeff2
-+  __TEXT.__oslogstring: 0xaf50
-+  __TEXT.__swift5_typeref: 0xefd2
-   __TEXT.__cstring: 0x1393b
--  __TEXT.__constg_swiftt: 0x55a8
--  __TEXT.__swift5_reflstr: 0x38d1
--  __TEXT.__swift5_fieldmd: 0x3598
-+  __TEXT.__constg_swiftt: 0x5588
-+  __TEXT.__swift5_reflstr: 0x3901
-+  __TEXT.__swift5_fieldmd: 0x357c
-   __TEXT.__swift5_builtin: 0x230
-   __TEXT.__swift5_assocty: 0xeb8
--  __TEXT.__swift5_capture: 0x1574
-+  __TEXT.__swift5_capture: 0x1594
-   __TEXT.__swift5_proto: 0x454
--  __TEXT.__swift5_types: 0x3d0
-+  __TEXT.__swift5_types: 0x3cc
-   __TEXT.__swift_as_entry: 0xa8
-   __TEXT.__swift_as_ret: 0xac
-   __TEXT.__swift_as_cont: 0x1e8
 
-   __TEXT.__swift5_protos: 0x18
-   __TEXT.__gcc_except_tab: 0x32f8
-   __TEXT.__ustring: 0x79a
--  __TEXT.__unwind_info: 0xdcf0
-+  __TEXT.__unwind_info: 0xdd10
-   __TEXT.__eh_frame: 0x260c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x6828
--  __DATA_CONST.__objc_classlist: 0x1780
-+  __DATA_CONST.__const: 0x6818
-+  __DATA_CONST.__objc_classlist: 0x1778
-   __DATA_CONST.__objc_catlist: 0x130
-   __DATA_CONST.__objc_protolist: 0x980
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x18588
-+  __DATA_CONST.__objc_selrefs: 0x18610
-   __DATA_CONST.__objc_protorefs: 0x1a8
-   __DATA_CONST.__objc_superrefs: 0xf38
-   __DATA_CONST.__objc_arraydata: 0x5f0
-   __DATA_CONST.__got: 0x2b50
--  __AUTH_CONST.__const: 0xa3e8
-+  __AUTH_CONST.__const: 0xa438
-   __AUTH_CONST.__cfstring: 0xba60
--  __AUTH_CONST.__objc_const: 0x59528
-+  __AUTH_CONST.__objc_const: 0x59520
-   __AUTH_CONST.__objc_doubleobj: 0xd0
-   __AUTH_CONST.__objc_intobj: 0x498
-   __AUTH_CONST.__objc_arrayobj: 0x2b8
-   __AUTH_CONST.__objc_dictobj: 0x78
--  __AUTH_CONST.__auth_got: 0x2cb8
--  __AUTH.__objc_data: 0xfa88
--  __AUTH.__data: 0x36a0
--  __DATA.__objc_ivar: 0x3c58
--  __DATA.__data: 0xad78
--  __DATA.__bss: 0xa470
-+  __AUTH_CONST.__auth_got: 0x2cd0
-+  __AUTH.__objc_data: 0xfa38
-+  __AUTH.__data: 0x35f0
-+  __DATA.__objc_ivar: 0x3c60
-+  __DATA.__data: 0xad28
-+  __DATA.__bss: 0xa468
-   __DATA.__common: 0x358
--  __DATA_DIRTY.__objc_data: 0x22e8
-+  __DATA_DIRTY.__objc_data: 0x2318
-   __DATA_DIRTY.__data: 0xd8
-   __DATA_DIRTY.__bss: 0x158
-   __DATA_DIRTY.__common: 0x20
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 24380
--  Symbols:   44627
+-  Symbols:   34126
 -  CStrings:  3233
 +  Functions: 24397
-+  Symbols:   44655
++  Symbols:   34139
 +  CStrings:  3236
- 
 Symbols:
 + +[CNContactListStyleApplier subtitleSourceForContact:hasSubtitle:showContactPhotos:]
 + +[CNSafetyCheckHelper prefetchSharing]
@@ -343,22 +289,6 @@ Symbols:
 + __OBJC_$_INSTANCE_METHODS_CNContactListViewController(ContactsUI|Tips|AppIntents)
 + ___38+[CNSafetyCheckHelper prefetchSharing]_block_invoke
 + _get_witness_table 7SwiftUI19_ConditionalContentVyAA08ModifiedD0Vy14ContactsUICore11ContactCardVyACy0fB013InlineActionsVSgAI07WrappedjK0VGGAA30_EnvironmentKeyWritingModifierVyAF20WindowSceneSizeModelCGGAA6IDViewVyAVSo9CNContactCGGAA4ViewHPAvAA1_HPApAA1_HPyHC_AuA0wP0HPyHCHC_A_AAA1_HPyHCHC
-+ _objc_msgSend$actionCompletions
-+ _objc_msgSend$cn_configureAppIntentsDataSource
-+ _objc_msgSend$cn_contactForAppIntentsAtCollectionViewIndexPath:
-+ _objc_msgSend$cn_setUpAppIntentsDataSource
-+ _objc_msgSend$completeAction:
-+ _objc_msgSend$componentsFromString:
-+ _objc_msgSend$coordinateSpace
-+ _objc_msgSend$metricsForTextStyle:
-+ _objc_msgSend$navigationBarMinimization
-+ _objc_msgSend$prefetchSharing
-+ _objc_msgSend$setExternalWindowSceneSizeModel:
-+ _objc_msgSend$setSafeAreaAdjustment:
-+ _objc_msgSend$subtitleSourceForContact:hasSubtitle:showContactPhotos:
-+ _objc_msgSend$subtitleTextForContact:hasSubtitle:
-+ _objc_msgSend$updateNavigationItemMinimizationSafeAreaAdjustmentForEditingState
-+ _objc_msgSend$windowSceneSizeModel
 + _symbolic _____ 14ContactsUICore20WindowSceneSizeModelC
 + _symbolic _____yAAy__________yyycGGACy_____GG 7SwiftUI15ModifiedContentV 14ContactsUICore20VisualIdentityEditorV AA30_EnvironmentKeyWritingModifierV AD20WindowSceneSizeModelC
 + _symbolic _____y_____G 7SwiftUI30_EnvironmentKeyWritingModifierV 14ContactsUICore20WindowSceneSizeModelC
@@ -596,7 +526,6 @@ Symbols:
 - __METACLASS_DATA__TtC10ContactsUI17ToolbarFrameModel
 - __OBJC_$_INSTANCE_METHODS_CNContactListViewController(Tips)
 - _get_witness_table 7SwiftUI19_ConditionalContentVyAA08ModifiedD0VyAEy14ContactsUICore11ContactCardVyACy0fB013InlineActionsVSgAI07WrappedjK0VGGAA30_EnvironmentKeyWritingModifierVy12CoreGraphics7CGFloatVSgGGAWGAA6IDViewVyAYSo9CNContactCGGAA4ViewHPAyAA4_HPAxAA4_HPApAA4_HPyHC_AwA0vP0HPyHCHC_AwAA5_HPyHCHC_A2_AAA4_HPyHCHC
-- _objc_msgSend$setToolbarFrame:
 - _symbolic _____ 10ContactsUI17ToolbarFrameModelC
 - _symbolic _____yAAy_____y_____y_____Sg_____GG_____y_____SgGGALG 7SwiftUI15ModifiedContentV 14ContactsUICore11ContactCardV AA012_ConditionalD0V 0eB013InlineActionsV AI07WrappedjK0V AA30_EnvironmentKeyWritingModifierV 12CoreGraphics7CGFloatV
 - _symbolic _____y_____SgG 7SwiftUI30_EnvironmentKeyWritingModifierV 12CoreGraphics7CGFloatV

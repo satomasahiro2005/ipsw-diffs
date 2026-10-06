@@ -2,18 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/BasebandTraceHelper.framework/BasebandTraceHelper`
 
-```diff
+### Section Size Changes
 
- 1585.0.0.0.0
--  __TEXT.__text: 0x5b660
-+  __TEXT.__text: 0x5b6e4
-   __TEXT.__init_offsets: 0x38
-   __TEXT.__const: 0x2e00
--  __TEXT.__gcc_except_tab: 0x488c
-+  __TEXT.__gcc_except_tab: 0x4890
-   __TEXT.__oslogstring: 0x36a1
-   __TEXT.__cstring: 0x13b0
-   __TEXT.__unwind_info: 0x1a60
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5b660` | `0x5b6e4` | **`+0x84`** |
+| `__TEXT.__gcc_except_tab` | `0x488c` | `0x4890` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNK7support3log7manager18release_log_bufferEPc : 2800 -> 2820
 ~ __ZN7support2fs20createUniqueFilenameENSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE : 6148 -> 6164

@@ -2,34 +2,25 @@
 
 > `/System/Library/PrivateFrameworks/TextGenerationInference.framework/TextGenerationInference`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x835ec` | `0x83e6c` | **`+0x880`** |
+| `__TEXT.__cstring` | `0x66fb` | `0x681c` | **`+0x121`** |
+| `__TEXT.__gcc_except_tab` | `0x9150` | `0x91d8` | **`+0x88`** |
+| `__TEXT.__unwind_info` | `0x3ae8` | `0x3b00` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
- 8.0.0.0.0
--  __TEXT.__text: 0x818dc
-+  __TEXT.__text: 0x8215c
-   __TEXT.__objc_methlist: 0x4c0
-   __TEXT.__const: 0x2b67
--  __TEXT.__gcc_except_tab: 0x9150
--  __TEXT.__cstring: 0x66fb
-+  __TEXT.__gcc_except_tab: 0x91d8
-+  __TEXT.__cstring: 0x681c
-   __TEXT.__oslogstring: 0x2fb
--  __TEXT.__unwind_info: 0x4008
-+  __TEXT.__unwind_info: 0x4020
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2609
--  Symbols:   3984
+-  Symbols:   3919
 -  CStrings:  628
 +  Functions: 2611
-+  Symbols:   3985
++  Symbols:   3920
 +  CStrings:  637
- 
 Symbols:
 + GCC_except_table118
 + GCC_except_table125

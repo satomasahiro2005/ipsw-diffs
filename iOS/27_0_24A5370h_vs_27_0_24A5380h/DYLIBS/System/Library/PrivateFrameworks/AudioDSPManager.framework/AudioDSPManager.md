@@ -2,97 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/AudioDSPManager.framework/AudioDSPManager`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__bss` | `0x1e70` | `0x23a0` | **`+0x530`** |
+| `__DATA.__bss` | `0x8280` | `0x7d60` | **`-0x520`** |
+| `__AUTH.__objc_data` | `0x698` | `0x410` | **`-0x288`** |
+| `__DATA_DIRTY.__objc_data` | `0x5a8` | `0x830` | **`+0x288`** |
+| `__DATA_DIRTY.__data` | `0xf90` | `0x1118` | **`+0x188`** |
+| `__TEXT.__text` | `0xbbd50` | `0xbbe2c` | **`+0xdc`** |
+| `__AUTH.__data` | `0x5d0` | `0x4f8` | **`-0xd8`** |
+| `__DATA.__data` | `0x1550` | `0x14a0` | **`-0xb0`** |
+| `__TEXT.__const` | `0xe9a8` | `0xe9c8` | **`+0x20`** |
+| `__TEXT.__oslogstring` | `0x3968` | `0x3982` | **`+0x1a`** |
+| `__TEXT.__cstring` | `0x60e4` | `0x60ee` | **`+0xa`** |
+| `__DATA.__common` | `0x38` | `0x30` | **`-0x8`** |
+| `__DATA_DIRTY.__common` | `0x58` | `0x60` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xbbd50
-+  __TEXT.__text: 0xbbe2c
-   __TEXT.__realtime: 0x170
-   __TEXT.__init_offsets: 0x10
-   __TEXT.__objc_methlist: 0x7b8
--  __TEXT.__const: 0xe9a8
-+  __TEXT.__const: 0xe9c8
-   __TEXT.__dlopen_cstrs: 0x54
-   __TEXT.__swift5_typeref: 0x2748
-   __TEXT.__swift5_fieldmd: 0x18b8
+-241.103.0.0.0
++241.105.0.0.0
 
-   __TEXT.__swift5_types: 0x220
-   __TEXT.__swift5_reflstr: 0x13bc
-   __TEXT.__swift5_assocty: 0x528
--  __TEXT.__cstring: 0x60e4
-+  __TEXT.__cstring: 0x60ee
-   __TEXT.__swift_as_entry: 0x50
-   __TEXT.__swift_as_ret: 0x44
-   __TEXT.__swift_as_cont: 0x64
-
-   __TEXT.__swift5_mpenum: 0x64
-   __TEXT.__swift5_capture: 0x2cc
-   __TEXT.__gcc_except_tab: 0x715c
--  __TEXT.__oslogstring: 0x3968
-+  __TEXT.__oslogstring: 0x3982
-   __TEXT.__unwind_info: 0x3b40
-   __TEXT.__eh_frame: 0x35e0
-   __TEXT.__objc_stubs: 0x0
-
-   __AUTH_CONST.__objc_const: 0x1068
-   __AUTH_CONST.__weak_auth_got: 0x20
-   __AUTH_CONST.__auth_got: 0x1538
--  __AUTH.__objc_data: 0x698
--  __AUTH.__data: 0x5d0
-+  __AUTH.__objc_data: 0x410
-+  __AUTH.__data: 0x4f8
-   __DATA.__objc_ivar: 0x5c
--  __DATA.__data: 0x1550
-+  __DATA.__data: 0x14a0
-   __DATA.__cf_except_bt: 0x2000
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x8280
--  __DATA.__common: 0x38
--  __DATA_DIRTY.__objc_data: 0x5a8
--  __DATA_DIRTY.__data: 0xf90
--  __DATA_DIRTY.__bss: 0x1e70
--  __DATA_DIRTY.__common: 0x58
-+  __DATA.__bss: 0x7d60
-+  __DATA.__common: 0x30
-+  __DATA_DIRTY.__objc_data: 0x830
-+  __DATA_DIRTY.__data: 0x1118
-+  __DATA_DIRTY.__bss: 0x23a0
-+  __DATA_DIRTY.__common: 0x60
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMotion.framework/CoreMotion
-
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 3560
-   Symbols:   6316
--  CStrings:  1331
-+  CStrings:  1332
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
+-  CStrings:  1195
++  CStrings:  1196
 Functions:
 ~ __ZN3adm8exclaves9tightbeam10convert_toINSt3__18optionalINS1_11ParameterIDEEEjJEEET_T0_DpT1_ : 632 -> 688
 ~ __ZN3adm8exclaves9tightbeam19AudioDSPControlImpl12getParameterENS1_11ParameterIDE : 3704 -> 3780
@@ -127,5 +63,4 @@ CStrings:
 + "unhandled ParameterID: %u"
 + "v32@?0{audiodspcontroller_audiodspcontrol_getparameter__result_s=C(?={audiodsputility_parametererror_s=Q}{audiodsputility_parametervalue_s=Q(?={?={audiodsputility_orientationparametervalue_s=Q}}{?=B}{?=B}{?=B}{?=B}{?=B}{?=B}{?=B}{?=I}{?=B}{?=C}{?=C}{?=B}{?=B}{?=I}{?={audiodsputility_deviceanglecategory_s=Q}}{?={audiodsputility_deviceposecategory_s=Q}}{?=I}{?=B}{?=B})})}8"
 - "v32@?0{audiodspcontroller_audiodspcontrol_getparameter__result_s=C(?={audiodsputility_parametererror_s=Q}{audiodsputility_parametervalue_s=Q(?={?={audiodsputility_orientationparametervalue_s=Q}}{?=B}{?=B}{?=B}{?=B}{?=B}{?=B}{?=B}{?=I}{?=B}{?=C}{?=C}{?=B}{?=B}{?=I}{?={audiodsputility_deviceanglecategory_s=Q}}{?={audiodsputility_deviceposecategory_s=Q}}{?=I})})}8"
-
 ```

@@ -2,90 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/CalendarFoundation.framework/CalendarFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5e750` | `0x62a30` | **`+0x42e0`** |
+| `__AUTH_CONST.__const` | `0xe28` | `0x1058` | **`+0x230`** |
+| `__TEXT.__eh_frame` | `—` | `0x130` | **`+0x130`** |
+| `__TEXT.__swift5_capture` | `0x38` | `0xfc` | **`+0xc4`** |
+| `__TEXT.__unwind_info` | `0x1b70` | `0x1c28` | **`+0xb8`** |
+| `__AUTH_CONST.__objc_const` | `0x7918` | `0x79b0` | **`+0x98`** |
+| `__TEXT.__swift5_typeref` | `0x172` | `0x1f8` | **`+0x86`** |
+| `__AUTH_CONST.__auth_got` | `0xbb0` | `0xc28` | **`+0x78`** |
+| `__DATA_CONST.__const` | `0x1710` | `0x1788` | **`+0x78`** |
+| `__AUTH.__objc_data` | `0x1278` | `0x12c8` | **`+0x50`** |
+| `__TEXT.__cstring` | `0x6572` | `0x65b2` | **`+0x40`** |
+| `__TEXT.__objc_methlist` | `0x5d44` | `0x5d7c` | **`+0x38`** |
+| `__TEXT.__const` | `0x564` | `0x594` | **`+0x30`** |
+| `__TEXT.__oslogstring` | `0x38ac` | `0x38d5` | **`+0x29`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4180` | `0x41a8` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0x8d8` | `0x8f0` | **`+0x18`** |
+| `__DATA.__data` | `0xb40` | `0xb48` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x350` | `0x358` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `—` | `0x8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1634.0.0.0.0
--  __TEXT.__text: 0x5e750
--  __TEXT.__objc_methlist: 0x5d44
--  __TEXT.__cstring: 0x6572
--  __TEXT.__const: 0x564
 +1636.0.0.0.0
-+  __TEXT.__text: 0x62a30
-+  __TEXT.__objc_methlist: 0x5d7c
-+  __TEXT.__cstring: 0x65b2
-+  __TEXT.__const: 0x594
-   __TEXT.__gcc_except_tab: 0xafc
--  __TEXT.__oslogstring: 0x38ac
-+  __TEXT.__oslogstring: 0x38d5
-   __TEXT.__ustring: 0x2e8
-   __TEXT.__dlopen_cstrs: 0x5a
--  __TEXT.__swift5_typeref: 0x172
-+  __TEXT.__swift5_typeref: 0x1f8
-   __TEXT.__constg_swiftt: 0x104
-   __TEXT.__swift5_reflstr: 0xf7
-   __TEXT.__swift5_fieldmd: 0xf8
-   __TEXT.__swift5_proto: 0xc
-   __TEXT.__swift5_types: 0x14
--  __TEXT.__swift5_capture: 0x38
-+  __TEXT.__swift5_capture: 0xfc
-   __TEXT.__swift5_builtin: 0x14
--  __TEXT.__unwind_info: 0x1b70
-+  __TEXT.__swift_as_entry: 0x8
-+  __TEXT.__swift_as_ret: 0x8
-+  __TEXT.__swift_as_cont: 0x8
-+  __TEXT.__unwind_info: 0x1c28
-+  __TEXT.__eh_frame: 0x130
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1710
--  __DATA_CONST.__objc_classlist: 0x350
-+  __DATA_CONST.__const: 0x1788
-+  __DATA_CONST.__objc_classlist: 0x358
-   __DATA_CONST.__objc_catlist: 0xb0
-   __DATA_CONST.__objc_protolist: 0xc0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4180
-+  __DATA_CONST.__objc_selrefs: 0x41a8
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x188
-   __DATA_CONST.__objc_arraydata: 0x100
--  __DATA_CONST.__got: 0x8d8
--  __AUTH_CONST.__const: 0xe28
-+  __DATA_CONST.__got: 0x8f0
-+  __AUTH_CONST.__const: 0x1058
-   __AUTH_CONST.__cfstring: 0x9520
--  __AUTH_CONST.__objc_const: 0x7918
-+  __AUTH_CONST.__objc_const: 0x79b0
-   __AUTH_CONST.__objc_arrayobj: 0x78
-   __AUTH_CONST.__objc_intobj: 0x18
--  __AUTH_CONST.__auth_got: 0xbb0
--  __AUTH.__objc_data: 0x1278
-+  __AUTH_CONST.__auth_got: 0xc28
-+  __AUTH.__objc_data: 0x12c8
-   __AUTH.__data: 0x118
-   __DATA.__objc_ivar: 0x354
--  __DATA.__data: 0xb40
-+  __DATA.__data: 0xb48
-   __DATA.__bss: 0x720
-   __DATA_DIRTY.__objc_data: 0xf00
-   __DATA_DIRTY.__data: 0x80
 
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 +  - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 2619
--  Symbols:   5776
+-  Symbols:   4403
 -  CStrings:  1557
 +  Functions: 2679
-+  Symbols:   5820
++  Symbols:   4443
 +  CStrings:  1560
- 
 Symbols:
 + +[CalBlockListFilter filterUnblockedResults:usingBlockList:emailForResult:phoneForResult:completionQueue:completion:]
 + _OBJC_CLASS_$_CalBlockListFilter
@@ -105,10 +62,6 @@ Symbols:
 + ___swift_async_cont_functlets
 + ___swift_async_entry_functlets
 + ___swift_async_ret_functlets
-+ _objc_msgSend$addIndex:
-+ _objc_msgSend$areHandlesBlockedForEmails:phoneNumbers:completionQueue:completionHandler:
-+ _objc_msgSend$enumerateIndexesUsingBlock:
-+ _objc_msgSend$removeObjectsAtIndexes:
 + _swift_release_x22
 + _swift_release_x25
 + _swift_retain_x24

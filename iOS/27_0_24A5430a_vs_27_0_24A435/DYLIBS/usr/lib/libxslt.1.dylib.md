@@ -2,14 +2,15 @@
 
 > `/usr/lib/libxslt.1.dylib`
 
-```diff
+### Section Size Changes
 
- 22.0.0.0.0
--  __TEXT.__text: 0x21f28
-+  __TEXT.__text: 0x21f34
-   __TEXT.__cstring: 0x7255
-   __TEXT.__const: 0xc0
-   __TEXT.__unwind_info: 0x4e8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21f28` | `0x21f34` | **`+0xc`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _xsltParseStylesheetAttributeSet : 1444 -> 1440
 ~ _xsltApplyAttributeSet : 588 -> 580

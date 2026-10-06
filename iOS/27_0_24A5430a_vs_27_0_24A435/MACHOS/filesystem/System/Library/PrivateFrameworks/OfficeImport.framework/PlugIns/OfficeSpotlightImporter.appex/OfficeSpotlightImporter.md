@@ -2,25 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/OfficeImport.framework/PlugIns/OfficeSpotlightImporter.appex/OfficeSpotlightImporter`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x384` | `0x388` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__unwind_info`
 
+### Other Changes
+
 ```diff
 
- 48.0.0.0.0
--  __TEXT.__text: 0x384
-+  __TEXT.__text: 0x388
-   __TEXT.__auth_stubs: 0x140
-   __TEXT.__objc_stubs: 0x80
-   __TEXT.__objc_methlist: 0x20
-
-   - /System/Library/PrivateFrameworks/OfficeImport.framework/OfficeImport
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 9
 +  Functions: 8
-   Symbols:   34
-   CStrings:  16
- 
 ```

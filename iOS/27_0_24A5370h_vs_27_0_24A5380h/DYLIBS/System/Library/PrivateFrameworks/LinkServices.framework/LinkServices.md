@@ -2,115 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/LinkServices.framework/LinkServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x33d0` | `0x3920` | **`+0x550`** |
+| `__DATA_DIRTY.__objc_data` | `0x21f8` | `0x1ca8` | **`-0x550`** |
+| `__TEXT.__text` | `0x14cc04` | `0x14ce00` | **`+0x1fc`** |
+| `__AUTH_CONST.__objc_const` | `0x15258` | `0x152b8` | **`+0x60`** |
+| `__TEXT.__oslogstring` | `0x71a2` | `0x71f7` | **`+0x55`** |
+| `__TEXT.__cstring` | `0xbaf7` | `0xbb3d` | **`+0x46`** |
+| `__TEXT.__objc_methlist` | `0xa820` | `0xa850` | **`+0x30`** |
+| `__AUTH_CONST.__cfstring` | `0x83e0` | `0x8400` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4d90` | `0x4db0` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x1650` | `0x1648` | **`-0x8`** |
+| `__DATA.__objc_ivar` | `0xaac` | `0xab4` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x1830` | `0x1838` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x1e08` | `0x1e10` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x64b0` | `0x64a8` | **`-0x8`** |
+| `__TEXT.__swift5_typeref` | `0x2d2a` | `0x2d24` | **`-0x6`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x14cc04
-+  __TEXT.__text: 0x14ce00
-   __TEXT.__lazy_helpers: 0x54
--  __TEXT.__objc_methlist: 0xa820
-+  __TEXT.__objc_methlist: 0xa850
-   __TEXT.__dlopen_cstrs: 0x507
-   __TEXT.__const: 0x7e88
-   __TEXT.__constg_swiftt: 0x1a4c
--  __TEXT.__swift5_typeref: 0x2d2a
-+  __TEXT.__swift5_typeref: 0x2d24
-   __TEXT.__swift5_builtin: 0x1e0
-   __TEXT.__swift5_reflstr: 0xe31
-   __TEXT.__swift5_fieldmd: 0x126c
-   __TEXT.__swift5_assocty: 0x460
-   __TEXT.__swift5_capture: 0x1248
--  __TEXT.__cstring: 0xbaf7
-+  __TEXT.__cstring: 0xbb3d
-   __TEXT.__swift5_proto: 0x334
-   __TEXT.__swift5_types: 0x198
-   __TEXT.__swift5_protos: 0x4c
--  __TEXT.__oslogstring: 0x71a2
-+  __TEXT.__oslogstring: 0x71f7
-   __TEXT.__swift_as_entry: 0x88
-   __TEXT.__swift_as_ret: 0xac
-   __TEXT.__swift_as_cont: 0x110
-   __TEXT.__swift5_mpenum: 0x50
--  __TEXT.__gcc_except_tab: 0x1e08
--  __TEXT.__unwind_info: 0x64b0
-+  __TEXT.__gcc_except_tab: 0x1e10
-+  __TEXT.__unwind_info: 0x64a8
-   __TEXT.__eh_frame: 0x6910
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+-301.0.42.7.0
++301.0.43.6.0
 
-   __DATA_CONST.__objc_catlist: 0x128
-   __DATA_CONST.__objc_protolist: 0x1b8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4d90
-+  __DATA_CONST.__objc_selrefs: 0x4db0
-   __DATA_CONST.__objc_protorefs: 0xe0
-   __DATA_CONST.__objc_superrefs: 0x5e0
-   __DATA_CONST.__objc_arraydata: 0x38
--  __DATA_CONST.__got: 0x1830
-+  __DATA_CONST.__got: 0x1838
-   __AUTH_CONST.__const: 0x6be8
--  __AUTH_CONST.__cfstring: 0x83e0
--  __AUTH_CONST.__objc_const: 0x15258
-+  __AUTH_CONST.__cfstring: 0x8400
-+  __AUTH_CONST.__objc_const: 0x152b8
-   __AUTH_CONST.__lazy_load_got: 0x8
-   __AUTH_CONST.__objc_intobj: 0x78
-   __AUTH_CONST.__objc_arrayobj: 0x30
--  __AUTH_CONST.__auth_got: 0x1650
--  __AUTH.__objc_data: 0x33d0
-+  __AUTH_CONST.__auth_got: 0x1648
-+  __AUTH.__objc_data: 0x3920
-   __AUTH.__data: 0xcb8
--  __DATA.__objc_ivar: 0xaac
-+  __DATA.__objc_ivar: 0xab4
-   __DATA.__data: 0x2fe4
-   __DATA.__bss: 0x4c38
-   __DATA.__common: 0x640
--  __DATA_DIRTY.__objc_data: 0x21f8
-+  __DATA_DIRTY.__objc_data: 0x1ca8
-   __DATA_DIRTY.__data: 0x328
-   __DATA_DIRTY.__bss: 0x1b8
-   __DATA_DIRTY.__common: 0x8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9744
--  Symbols:   18330
--  CStrings:  3072
+-  Symbols:   8910
+-  CStrings:  2018
 +  Functions: 9748
-+  Symbols:   18342
-+  CStrings:  3075
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__lazy_load_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   8914
++  CStrings:  2020
 Symbols:
 + -[LNConnection lastSentContext]
 + -[LNConnection setLastSentContext:]
@@ -198,10 +122,6 @@ Symbols:
 + _MDItemIsTwoFactorCode
 + _OBJC_IVAR_$_LNConnection._lastSentContext
 + _OBJC_IVAR_$_LNQueryEntityOptions._displayRepresentationComponents
-+ _objc_msgSend$displayRepresentationComponents
-+ _objc_msgSend$lastSentContext
-+ _objc_msgSend$setDisplayRepresentationComponents:
-+ _objc_msgSend$setLastSentContext:
 - GCC_except_table1060
 - GCC_except_table1074
 - GCC_except_table1075
@@ -289,5 +209,4 @@ CStrings:
 + "<LNQueryEntityOptions levelOfDetail: %@, componentKinds: %@, requiresStableEntityIdentifiers: %@, propertyResolution: %@, maximumArrayPropertyItemCount: %ld, maximumEntityDepth: %ld, deferredPropertyResolutionTimeout: %g, deferredPropertyResolutionConcurrencyLimit: %ld, displayRepresentationComponents: %ld>"
 + "displayRepresentationComponents"
 - "<LNQueryEntityOptions levelOfDetail: %@, componentKinds: %@, requiresStableEntityIdentifiers: %@, propertyResolution: %@, maximumArrayPropertyItemCount: %ld, maximumEntityDepth: %ld, deferredPropertyResolutionTimeout: %g, deferredPropertyResolutionConcurrencyLimit: %ld>"
-
 ```

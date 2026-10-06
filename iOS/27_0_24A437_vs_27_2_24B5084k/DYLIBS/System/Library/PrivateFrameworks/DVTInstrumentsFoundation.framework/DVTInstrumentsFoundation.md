@@ -2,15 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/DVTInstrumentsFoundation.framework/DVTInstrumentsFoundation`
 
-```diff
+### Section Size Changes
 
- 64578.160.1.0.0
--  __TEXT.__text: 0xdf414
-+  __TEXT.__text: 0xdf424
-   __TEXT.__objc_methlist: 0x8464
-   __TEXT.__const: 0x4012
-   __TEXT.__cstring: 0xf1bc
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe43dc` | `0xe4404` | **`+0x28`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_25c408e54 -> sub_25fbc7e54 : 1120 -> 1128
-~ sub_25c424070 -> sub_25fbe3078 : 1120 -> 1128
+~ sub_25eeffa28 -> sub_262c4ba28 : 168 -> 180
+~ sub_25ef11e50 -> sub_262c5de5c : 144 -> 156
+~ sub_25ef15b08 -> sub_262c61b20 : 1120 -> 1128
+~ sub_25ef317a8 -> sub_262c7d7c8 : 1120 -> 1128
 ```

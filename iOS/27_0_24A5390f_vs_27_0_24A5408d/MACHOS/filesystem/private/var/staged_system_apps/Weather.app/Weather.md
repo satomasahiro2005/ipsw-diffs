@@ -2,142 +2,80 @@
 
 > `/private/var/staged_system_apps/Weather.app/Weather`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_types2`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_entry`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb4a800` | `0xb86b54` | **`+0x3c354`** |
+| `__TEXT.__swift5_typeref` | `0xac558` | `0xb3608` | **`+0x70b0`** |
+| `__TEXT.__const` | `0x95b04` | `0x98124` | **`+0x2620`** |
+| `__DATA.__bss` | `0xc24d8` | `0xc4828` | **`+0x2350`** |
+| `__DATA.__data` | `0x5bd20` | `0x5d328` | **`+0x1608`** |
+| `__DATA_CONST.__const` | `0x4b588` | `0x4c7f0` | **`+0x1268`** |
+| `__TEXT.__eh_frame` | `0x1cd4c` | `0x1dddc` | **`+0x1090`** |
+| `__TEXT.__unwind_info` | `0x211f8` | `0x21fd8` | **`+0xde0`** |
+| `__TEXT.__swift5_reflstr` | `0x23e66` | `0x24816` | **`+0x9b0`** |
+| `__TEXT.__swift5_fieldmd` | `0x27d7c` | `0x285a8` | **`+0x82c`** |
+| `__TEXT.__cstring` | `0x2a603` | `0x2ac53` | **`+0x650`** |
+| `__TEXT.__constg_swiftt` | `0x286e8` | `0x28c84` | **`+0x59c`** |
+| `__TEXT.__swift5_capture` | `0xcc8c` | `0xd148` | **`+0x4bc`** |
+| `__TEXT.__oslogstring` | `0xc5bb` | `0xca1b` | **`+0x460`** |
+| `__TEXT.__auth_stubs` | `0x16990` | `0x16c30` | **`+0x2a0`** |
+| `__DATA.__objc_data` | `0x4db0` | `0x4b60` | **`-0x250`** |
+| `__TEXT.__objc_stubs` | `0x3cc0` | `0x3a80` | **`-0x240`** |
+| `__DATA.__objc_const` | `0x1cb30` | `0x1cd68` | **`+0x238`** |
+| `__TEXT.__swift5_assocty` | `0x6210` | `0x6388` | **`+0x178`** |
+| `__DATA_CONST.__auth_got` | `0xb4d0` | `0xb620` | **`+0x150`** |
+| `__TEXT.__swift5_proto` | `0x68cc` | `0x69d8` | **`+0x10c`** |
+| `__DATA_CONST.__auth_ptr` | `0x8208` | `0x8310` | **`+0x108`** |
+| `__DATA_CONST.__got` | `0x61d8` | `0x6288` | **`+0xb0`** |
+| `__TEXT.__objc_methlist` | `0x1d30` | `0x1c90` | **`-0xa0`** |
+| `__DATA.__objc_selrefs` | `0x1830` | `0x1798` | **`-0x98`** |
+| `__TEXT.__swift_as_cont` | `0x518` | `0x59c` | **`+0x84`** |
+| `__TEXT.__swift5_types` | `0x2c2c` | `0x2ca8` | **`+0x7c`** |
+| `__TEXT.__objc_methname` | `0xad25` | `0xad95` | **`+0x70`** |
+| `__DATA.__common` | `0x23f8` | `0x2450` | **`+0x58`** |
+| `__TEXT.__objc_classname` | `0x6966` | `0x6926` | **`-0x40`** |
+| `__TEXT.__swift_as_ret` | `0x2a0` | `0x2d8` | **`+0x38`** |
+| `__TEXT.__swift_as_entry` | `0x2d8` | `0x300` | **`+0x28`** |
+| `__TEXT.__objc_methtype` | `0x209a` | `0x207a` | **`-0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0xfb8` | `0xfb0` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_stublist`
 - `__DATA_CONST.__objc_catlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA.__objc_stublist`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_types2`
+
+### Other Changes
 
 ```diff
 
 -1444.1.0.0.0
--  __TEXT.__text: 0xb4a800
--  __TEXT.__auth_stubs: 0x16990
--  __TEXT.__objc_stubs: 0x3cc0
--  __TEXT.__objc_methlist: 0x1d30
--  __TEXT.__const: 0x95b04
--  __TEXT.__oslogstring: 0xc5bb
--  __TEXT.__constg_swiftt: 0x286e8
--  __TEXT.__swift5_typeref: 0xac558
--  __TEXT.__cstring: 0x2a603
 +1454.1.0.0.0
-+  __TEXT.__text: 0xb86b54
-+  __TEXT.__auth_stubs: 0x16c30
-+  __TEXT.__objc_stubs: 0x3a80
-+  __TEXT.__objc_methlist: 0x1c90
-+  __TEXT.__const: 0x98124
-+  __TEXT.__oslogstring: 0xca1b
-+  __TEXT.__constg_swiftt: 0x28c84
-+  __TEXT.__swift5_typeref: 0xb3608
-+  __TEXT.__cstring: 0x2ac53
-   __TEXT.__swift5_builtin: 0x424
--  __TEXT.__swift5_reflstr: 0x23e66
--  __TEXT.__swift5_fieldmd: 0x27d7c
--  __TEXT.__swift5_assocty: 0x6210
--  __TEXT.__swift5_proto: 0x68cc
--  __TEXT.__swift5_types: 0x2c2c
--  __TEXT.__objc_classname: 0x6966
--  __TEXT.__objc_methname: 0xad25
--  __TEXT.__objc_methtype: 0x209a
--  __TEXT.__swift5_capture: 0xcc8c
-+  __TEXT.__swift5_reflstr: 0x24816
-+  __TEXT.__swift5_fieldmd: 0x285a8
-+  __TEXT.__swift5_assocty: 0x6388
-+  __TEXT.__swift5_proto: 0x69d8
-+  __TEXT.__swift5_types: 0x2ca8
-+  __TEXT.__objc_classname: 0x6926
-+  __TEXT.__objc_methname: 0xad95
-+  __TEXT.__objc_methtype: 0x207a
-+  __TEXT.__swift5_capture: 0xd148
-   __TEXT.__swift5_protos: 0x5a0
--  __TEXT.__swift_as_entry: 0x2d8
--  __TEXT.__swift_as_ret: 0x2a0
--  __TEXT.__swift_as_cont: 0x518
-+  __TEXT.__swift_as_entry: 0x300
-+  __TEXT.__swift_as_ret: 0x2d8
-+  __TEXT.__swift_as_cont: 0x59c
-   __TEXT.__swift5_types2: 0x4
-   __TEXT.__swift5_mpenum: 0x184
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__unwind_info: 0x211f8
--  __TEXT.__eh_frame: 0x1cd4c
--  __DATA_CONST.__const: 0x4b588
--  __DATA_CONST.__objc_classlist: 0xfb8
-+  __TEXT.__unwind_info: 0x21fd8
-+  __TEXT.__eh_frame: 0x1dddc
-+  __DATA_CONST.__const: 0x4c7f0
-+  __DATA_CONST.__objc_classlist: 0xfb0
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x120
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x98
--  __DATA_CONST.__auth_got: 0xb4d0
--  __DATA_CONST.__got: 0x61d8
--  __DATA_CONST.__auth_ptr: 0x8208
--  __DATA.__objc_const: 0x1cb30
--  __DATA.__objc_selrefs: 0x1830
--  __DATA.__objc_data: 0x4db0
--  __DATA.__data: 0x5bd20
-+  __DATA_CONST.__auth_got: 0xb620
-+  __DATA_CONST.__got: 0x6288
-+  __DATA_CONST.__auth_ptr: 0x8310
-+  __DATA.__objc_const: 0x1cd68
-+  __DATA.__objc_selrefs: 0x1798
-+  __DATA.__objc_data: 0x4b60
-+  __DATA.__data: 0x5d328
-   __DATA.__objc_stublist: 0x8
--  __DATA.__bss: 0xc24d8
--  __DATA.__common: 0x23f8
-+  __DATA.__bss: 0xc4828
-+  __DATA.__common: 0x2450
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/Charts.framework/Charts
 
-   - /System/Library/Frameworks/CoreLocation.framework/CoreLocation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
 +  - /System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/ImageIO.framework/ImageIO
-   - /System/Library/Frameworks/Intents.framework/Intents
-   - /System/Library/Frameworks/MapKit.framework/MapKit
-   - /System/Library/Frameworks/Network.framework/Network
+
 +  - /System/Library/Frameworks/PermissionKit.framework/PermissionKit
-   - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
-   - /System/Library/Frameworks/SafariServices.framework/SafariServices
-   - /System/Library/Frameworks/StoreKit.framework/StoreKit
 
-   - /System/Library/Frameworks/_AppIntents_SwiftUI.framework/_AppIntents_SwiftUI
-   - /System/Library/Frameworks/_AppIntents_UIKit.framework/_AppIntents_UIKit
-   - /System/Library/Frameworks/_LocationEssentials.framework/_LocationEssentials
 +  - /System/Library/Frameworks/_PermissionKit_UIKit.framework/_PermissionKit_UIKit
-   - /System/Library/PrivateFrameworks/AppAnalytics.framework/AppAnalytics
-   - /System/Library/PrivateFrameworks/AppSSOCore.framework/AppSSOCore
-   - /System/Library/PrivateFrameworks/AppleMediaServices.framework/AppleMediaServices
--  - /System/Library/PrivateFrameworks/AppleMediaServicesUIKitInternal.framework/AppleMediaServicesUIKitInternal
-   - /System/Library/PrivateFrameworks/Coherence.framework/Coherence
--  - /System/Library/PrivateFrameworks/CoreSuggestionsUI.framework/CoreSuggestionsUI
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
-   - /System/Library/PrivateFrameworks/NewsFeed.framework/NewsFeed
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+-  - /System/Library/PrivateFrameworks/AppleMediaServicesUIKitInternal.framework/AppleMediaServicesUIKitInternal
+
+-  - /System/Library/PrivateFrameworks/CoreSuggestionsUI.framework/CoreSuggestionsUI
+
 -  Functions: 59826
 -  Symbols:   10150
 -  CStrings:  5868
 +  Functions: 61065
 +  Symbols:   10215
 +  CStrings:  5914
- 
 Symbols:
 + _$s10Foundation12NotificationVMn
 + _$s10WeatherKit07CurrentA0V0A2UIE17moduleTintOpacity12CoreGraphics7CGFloatVvg

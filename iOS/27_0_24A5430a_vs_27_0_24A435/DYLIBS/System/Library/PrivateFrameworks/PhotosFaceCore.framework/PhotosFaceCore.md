@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/PhotosFaceCore.framework/PhotosFaceCore`
 
-```diff
+### Section Size Changes
 
- 96.0.0.0.0
--  __TEXT.__text: 0x3824
-+  __TEXT.__text: 0x381c
-   __TEXT.__objc_methlist: 0x504
-   __TEXT.__const: 0x2a2
-   __TEXT.__cstring: 0x34e
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3824` | `0x381c` | **`-0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _PFCRectForTimePosition : 228 -> 220
 ```

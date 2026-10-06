@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AsyncAlgorithmsInternal.framework/AsyncAlgorithmsInternal`
 
-```diff
+### Section Size Changes
 
- 5027.0.64.0.0
--  __TEXT.__text: 0x87550
-+  __TEXT.__text: 0x8755c
-   __TEXT.__const: 0x42d8
-   __TEXT.__swift5_typeref: 0x2188
-   __TEXT.__swift5_reflstr: 0x1459
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x87550` | `0x8755c` | **`+0xc`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1c6afdd28 -> sub_1c6ffad28 : 1300 -> 1304
 ~ sub_1c6b06e48 -> sub_1c7003e4c : 860 -> 856

@@ -2,80 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/MedicalIDUI.framework/MedicalIDUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__cstring`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17eb8c` | `0x17ede8` | **`+0x25c`** |
+| `__AUTH_CONST.__auth_got` | `0x1bd8` | `0x1c08` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0xf40` | `0xf58` | **`+0x18`** |
+| `__DATA.__data` | `0x5de0` | `0x5dd0` | **`-0x10`** |
+| `__TEXT.__swift5_typeref` | `0x4de8` | `0x4de6` | **`-0x2`** |
+
+### Other Changes
 
 ```diff
 
 -7027.0.64.0.0
--  __TEXT.__text: 0x17eb8c
 +7027.0.67.2.1
-+  __TEXT.__text: 0x17ede8
-   __TEXT.__objc_methlist: 0x684
-   __TEXT.__const: 0x9fc4
-   __TEXT.__cstring: 0x3179
-   __TEXT.__gcc_except_tab: 0x1c
-   __TEXT.__oslogstring: 0xb0b
-   __TEXT.__constg_swiftt: 0x3ed8
--  __TEXT.__swift5_typeref: 0x4de8
-+  __TEXT.__swift5_typeref: 0x4de6
-   __TEXT.__swift5_reflstr: 0x3c62
-   __TEXT.__swift5_fieldmd: 0x2fd8
-   __TEXT.__swift5_builtin: 0x104
 
-   __DATA_CONST.__objc_selrefs: 0xb48
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_superrefs: 0x18
--  __DATA_CONST.__got: 0xf40
-+  __DATA_CONST.__got: 0xf58
-   __AUTH_CONST.__const: 0x7c88
-   __AUTH_CONST.__cfstring: 0x160
-   __AUTH_CONST.__objc_const: 0x2070
--  __AUTH_CONST.__auth_got: 0x1bd8
-+  __AUTH_CONST.__auth_got: 0x1c08
-   __AUTH.__objc_data: 0x9e8
-   __AUTH.__data: 0x4008
-   __DATA.__objc_ivar: 0x58
--  __DATA.__data: 0x5de0
-+  __DATA.__data: 0x5dd0
-   __DATA.__bss: 0x8730
-   __DATA.__common: 0x368
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7217
--  Symbols:   1935
+-  Symbols:   1629
 +  Functions: 7214
-+  Symbols:   1934
-   CStrings:  364
- 
++  Symbols:   1628
 Symbols:
 + _get_witness_table 11MedicalIDUI22EmergencyContactPickerV7SwiftUI4ViewHPyHC
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA15NavigationStackVyAA0E4PathVAA4ViewPAAE17toolbarBackground_3forQrqd___AA16ToolbarPlacementVdtAA10ShapeStyleRd__lFQOyAiAE0I07contentQrqd__yXE_tAaHRd__lFQOyAiAE29navigationBarTitleDisplayModeyQrAA0eR4ItemV0stU0OFQOyAiAE0qS0yQrqd__SyRd__lFQOyAiAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAA4ListVySSAA7SectionVyAA05EmptyH0VAA7ForEachVySaySSGSSACyACy11MedicalIDUI019ContactRelationTextH0VAA31AccessibilityAttachmentModifierVGA11_GGA3_GG_SSSgQo__SSQo__Qo__016HealthFoundationB012CancelButtonVQo__AA5ColorVQo_GA11_GAaHHPA28_AaHHPyHC_A11_AA0H8ModifierHPyHCHC

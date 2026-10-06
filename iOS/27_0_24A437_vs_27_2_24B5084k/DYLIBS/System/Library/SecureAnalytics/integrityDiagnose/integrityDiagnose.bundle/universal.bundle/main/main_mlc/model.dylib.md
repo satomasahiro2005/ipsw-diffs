@@ -2,25 +2,22 @@
 
 > `/System/Library/SecureAnalytics/integrityDiagnose/integrityDiagnose.bundle/universal.bundle/main/main_mlc/model.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x194e4` | `0x1bf4c` | **`+0x2a68`** |
+| `__TEXT.__const` | `0x37c0` | `0x36b0` | **`-0x110`** |
+| `__AUTH_CONST.__const` | `0x558` | `0x508` | **`-0x50`** |
+| `__DATA.__data` | `0x128` | `0xf8` | **`-0x30`** |
+| `__DATA.__bss` | `0x10` | `0x18` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3.0.4.0.0
--  __TEXT.__text: 0x19484
--  __TEXT.__const: 0x37c0
 +3.0.7.0.0
-+  __TEXT.__text: 0x1bee8
-+  __TEXT.__const: 0x36b0
-   __TEXT.__unwind_info: 0xb8
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x558
-+  __AUTH_CONST.__const: 0x508
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__data: 0x128
-+  __DATA.__data: 0xf8
-   - /usr/lib/libSystem.B.dylib
-   Functions: 25
-   Symbols:   35
 Symbols:
 + _x319203a56bd01c26ea165433ca74d618
 + _x694a42f04cc431ebd4e4d3d04dbb7a38

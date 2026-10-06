@@ -2,54 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/MobileInstallation.framework/MobileInstallation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x274dc` | `0x28c00` | **`+0x1724`** |
+| `__TEXT.__unwind_info` | `0xd30` | `0xdc0` | **`+0x90`** |
+| `__TEXT.__gcc_except_tab` | `0xc74` | `0xce4` | **`+0x70`** |
+| `__TEXT.__objc_methlist` | `0x13c4` | `0x1424` | **`+0x60`** |
+| `__TEXT.__cstring` | `0x50d6` | `0x5129` | **`+0x53`** |
+| `__AUTH_CONST.__cfstring` | `0x2b00` | `0x2b40` | **`+0x40`** |
+| `__AUTH_CONST.__objc_const` | `0x1a00` | `0x1a20` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0xda0` | `0xdc0` | **`+0x20`** |
+
+### Other Changes
+
 ```diff
 
 -1674.2.1.0.0
--  __TEXT.__text: 0x26720
--  __TEXT.__objc_methlist: 0x13c4
 +1680.40.6.502.1
-+  __TEXT.__text: 0x27da8
-+  __TEXT.__objc_methlist: 0x1424
-   __TEXT.__const: 0x110
--  __TEXT.__cstring: 0x50d6
--  __TEXT.__gcc_except_tab: 0xc74
-+  __TEXT.__cstring: 0x5129
-+  __TEXT.__gcc_except_tab: 0xce4
-   __TEXT.__oslogstring: 0x43
--  __TEXT.__unwind_info: 0xe40
-+  __TEXT.__unwind_info: 0xed0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xda0
-+  __DATA_CONST.__objc_selrefs: 0xdc0
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x40
-   __DATA_CONST.__objc_arraydata: 0xa8
-   __DATA_CONST.__got: 0x1c8
-   __AUTH_CONST.__const: 0xe0
--  __AUTH_CONST.__cfstring: 0x2b00
--  __AUTH_CONST.__objc_const: 0x1a00
-+  __AUTH_CONST.__cfstring: 0x2b40
-+  __AUTH_CONST.__objc_const: 0x1a20
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_arrayobj: 0x90
-   __AUTH_CONST.__objc_intobj: 0x30
-
-   - /System/Library/PrivateFrameworks/MobileSystemServices.framework/MobileSystemServices
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 845
--  Symbols:   1749
+-  Symbols:   1384
 -  CStrings:  523
 +  Functions: 875
-+  Symbols:   1787
++  Symbols:   1418
 +  CStrings:  525
- 
 Symbols:
 + -[MIInstallerClient prepareReplacementOfApp:byApp:extensionBundleIDs:withCompletion:]
 + -[MIInstallerClient removeAppReplacementStateForApp:completion:]
@@ -132,10 +110,6 @@ Symbols:
 + ___MobileInstallationRemoveAppReplacementState_block_invoke
 + ___MobileInstallationSetAppLaunchProhibited_block_invoke
 + ___MobileInstallationSetAppReplacementStatus_block_invoke
-+ _objc_msgSend$prepareReplacementOfApp:byApp:extensionBundleIDs:withCompletion:
-+ _objc_msgSend$removeAppReplacementStateForApp:completion:
-+ _objc_msgSend$setAppReplacementStatus:forApp:replacingApp:completion:
-+ _objc_msgSend$setLaunchProhibited:forApp:withCompletion:
 - GCC_except_table296
 - GCC_except_table301
 - GCC_except_table306

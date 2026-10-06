@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AppleDepthCore.framework/AppleDepthCore`
 
-```diff
+### Section Size Changes
 
- 174.2.1.0.0
--  __TEXT.__text: 0x600b0
-+  __TEXT.__text: 0x5fc08
-   __TEXT.__objc_methlist: 0x2424
-   __TEXT.__const: 0x21c0
-   __TEXT.__gcc_except_tab: 0x5688
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x600b0` | `0x5fc08` | **`-0x4a8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[ADInterSessionFilter insertEntry:withWeight:] : 4640 -> 4656
 ~ __ZL47reprojectUndistortedDepthMapWithInputImmediatesIfLj1717855600EElP10__CVBuffer13simd_float3x313simd_float4x3S2_S1_S1_ : 22284 -> 22028

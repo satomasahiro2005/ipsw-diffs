@@ -2,13 +2,8 @@
 
 > `com.apple.driver.usb.networking`
 
-```diff
+### Section Size Changes
 
- 397.0.0.0.0
-   __TEXT.__cstring: 0x65f
--  __TEXT_EXEC.__text: 0x3cc0
-+  __TEXT_EXEC.__text: 0x3dac
-   __TEXT_EXEC.__auth_stubs: 0x250
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x88
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x3cc0` | `0x3dac` | **`+0xec`** |

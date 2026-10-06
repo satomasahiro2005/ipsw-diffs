@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/InstalledContentLibrary.framework/InstalledContentLibrary`
 
-```diff
+### Section Size Changes
 
- 1674.2.1.0.0
--  __TEXT.__text: 0xcee78
-+  __TEXT.__text: 0xcee84
-   __TEXT.__objc_methlist: 0x5be4
-   __TEXT.__const: 0xdb30
-   __TEXT.__cstring: 0x183ee
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcee78` | `0xcee84` | **`+0xc`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1aaee8bd8 -> sub_1ab0fabd8 : 864 -> 868
 ~ sub_1aaeea910 -> sub_1ab0fc914 : 820 -> 824

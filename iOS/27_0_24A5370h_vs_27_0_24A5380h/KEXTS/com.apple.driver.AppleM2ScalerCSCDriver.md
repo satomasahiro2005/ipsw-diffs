@@ -2,42 +2,26 @@
 
 > `com.apple.driver.AppleM2ScalerCSCDriver`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x13a598` | `0x13b90c` | **`+0x1374`** |
+| `__TEXT.__const` | `0xc3660` | `0xc3000` | **`-0x660`** |
+| `__TEXT.__cstring` | `0x24945` | `0x24da7` | **`+0x462`** |
+| `__DATA_CONST.__const` | `0x2adb8` | `0x2ae30` | **`+0x78`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__const: 0xc3660
--  __TEXT.__cstring: 0x24945
--  __TEXT_EXEC.__text: 0x13a598
-+  __TEXT.__const: 0xc3000
-+  __TEXT.__cstring: 0x24da7
-+  __TEXT_EXEC.__text: 0x13b90c
-   __TEXT_EXEC.__auth_stubs: 0xbd0
-   __DATA.__data: 0x22388
-   __DATA.__common: 0x2788
-   __DATA.__bss: 0x2184
-   __DATA_CONST.__mod_init_func: 0x6a8
-   __DATA_CONST.__mod_term_func: 0x680
--  __DATA_CONST.__const: 0x2adb8
-+  __DATA_CONST.__const: 0x2ae30
-   __DATA_CONST.__kalloc_type: 0x4f00
-   __DATA_CONST.__kalloc_var: 0x1310
-   __DATA_CONST.__auth_got: 0x5e8
-   __DATA_CONST.__got: 0xb0
-   __DATA_CONST.__auth_ptr: 0x88
+-200.51.0.0.0
 -  Functions: 10260
++200.56.2.0.0
 +  Functions: 10277
-   Symbols:   0
+
 -  CStrings:  3662
 +  CStrings:  3689
- 
-Sections:
-~ __DATA.__data : content changed
-~ __DATA_CONST.__mod_init_func : content changed
-~ __DATA_CONST.__mod_term_func : content changed
-~ __DATA_CONST.__kalloc_type : content changed
-~ __DATA_CONST.__kalloc_var : content changed
-~ __DATA_CONST.__auth_got : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA_CONST.__auth_ptr : content changed
 CStrings:
 + " (0.%03ux downscale)"
 + " (identity)"
@@ -88,5 +72,4 @@ CStrings:
 - "[FilterComp]Returning 0x%x for t:%d p:%d\n"
 - "src format %d pixels align(%d %d)\n"
 - "tap %d and tap %d are not close in value as expected\n"
-
 ```

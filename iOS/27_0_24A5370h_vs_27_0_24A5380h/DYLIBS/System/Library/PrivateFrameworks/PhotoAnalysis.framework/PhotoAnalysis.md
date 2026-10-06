@@ -2,115 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/PhotoAnalysis.framework/PhotoAnalysis`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x28422c` | `0x2835a0` | **`-0xc8c`** |
+| `__DATA_DIRTY.__data` | `0x8a08` | `0x8bf0` | **`+0x1e8`** |
+| `__AUTH.__data` | `0x2500` | `0x23d0` | **`-0x130`** |
+| `__DATA.__data` | `0x1ff0` | `0x1f48` | **`-0xa8`** |
+| `__TEXT.__eh_frame` | `0x18acc` | `0x18b74` | **`+0xa8`** |
+| `__DATA.__bss` | `0x8570` | `0x84f0` | **`-0x80`** |
+| `__DATA_DIRTY.__bss` | `0x6640` | `0x66c0` | **`+0x80`** |
+| `__TEXT.__const` | `0xdaf0` | `0xdb40` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x2458` | `0x2438` | **`-0x20`** |
+| `__TEXT.__swift_as_entry` | `0xcf4` | `0xd10` | **`+0x1c`** |
+| `__TEXT.__swift_as_ret` | `0xc04` | `0xc20` | **`+0x1c`** |
+| `__DATA_CONST.__got` | `0x2230` | `0x2220` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x98f8` | `0x9908` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0x3f51` | `0x3f4b` | **`-0x6`** |
+| `__TEXT.__swift_as_cont` | `0x1c24` | `0x1c20` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x28422c
-+  __TEXT.__text: 0x2835a0
-   __TEXT.__objc_methlist: 0x6154
--  __TEXT.__const: 0xdaf0
-+  __TEXT.__const: 0xdb40
-   __TEXT.__constg_swiftt: 0x4634
--  __TEXT.__swift5_typeref: 0x3f51
-+  __TEXT.__swift5_typeref: 0x3f4b
-   __TEXT.__swift5_reflstr: 0x4db2
-   __TEXT.__swift5_fieldmd: 0x4580
-   __TEXT.__swift5_builtin: 0x1f4
+-910.21.101.0.0
++910.27.103.0.0
 
-   __TEXT.__oslogstring: 0x158ef
-   __TEXT.__swift5_proto: 0x7d0
-   __TEXT.__swift5_types: 0x3c0
--  __TEXT.__swift_as_entry: 0xcf4
--  __TEXT.__swift_as_ret: 0xc04
--  __TEXT.__swift_as_cont: 0x1c24
-+  __TEXT.__swift_as_entry: 0xd10
-+  __TEXT.__swift_as_ret: 0xc20
-+  __TEXT.__swift_as_cont: 0x1c20
-   __TEXT.__swift5_protos: 0x78
-   __TEXT.__swift5_mpenum: 0x70
-   __TEXT.__gcc_except_tab: 0x1870
-   __TEXT.__ustring: 0x6
--  __TEXT.__unwind_info: 0x98f8
--  __TEXT.__eh_frame: 0x18acc
-+  __TEXT.__unwind_info: 0x9908
-+  __TEXT.__eh_frame: 0x18b74
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_protorefs: 0xd0
-   __DATA_CONST.__objc_superrefs: 0x220
-   __DATA_CONST.__objc_arraydata: 0x100
--  __DATA_CONST.__got: 0x2230
-+  __DATA_CONST.__got: 0x2220
-   __AUTH_CONST.__const: 0xd728
-   __AUTH_CONST.__cfstring: 0x8360
-   __AUTH_CONST.__objc_const: 0x12a00
-
-   __AUTH_CONST.__objc_intobj: 0x780
-   __AUTH_CONST.__objc_arrayobj: 0x138
-   __AUTH_CONST.__objc_floatobj: 0x20
--  __AUTH_CONST.__auth_got: 0x2458
-+  __AUTH_CONST.__auth_got: 0x2438
-   __AUTH.__objc_data: 0x1070
--  __AUTH.__data: 0x2500
-+  __AUTH.__data: 0x23d0
-   __DATA.__objc_ivar: 0x52c
--  __DATA.__data: 0x1ff0
--  __DATA.__bss: 0x8570
-+  __DATA.__data: 0x1f48
-+  __DATA.__bss: 0x84f0
-   __DATA.__common: 0x60
-   __DATA_DIRTY.__objc_data: 0x2938
--  __DATA_DIRTY.__data: 0x8a08
--  __DATA_DIRTY.__bss: 0x6640
-+  __DATA_DIRTY.__data: 0x8bf0
-+  __DATA_DIRTY.__bss: 0x66c0
-   __DATA_DIRTY.__common: 0x450
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9717
--  Symbols:   12875
+-  Symbols:   6398
 +  Functions: 9727
-+  Symbols:   12866
-   CStrings:  4313
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__oslogstring : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   6389
 Symbols:
 + GCC_except_table1054
 + GCC_except_table1106
@@ -233,5 +155,4 @@ Symbols:
 - _xpc_dictionary_create
 - _xpc_dictionary_set_bool
 - _xpc_dictionary_set_value
-
 ```

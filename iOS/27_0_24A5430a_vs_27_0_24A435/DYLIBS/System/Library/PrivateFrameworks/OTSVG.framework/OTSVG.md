@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/OTSVG.framework/OTSVG`
 
-```diff
+### Section Size Changes
 
- 904.0.0.0.0
--  __TEXT.__text: 0x3682c
-+  __TEXT.__text: 0x36878
-   __TEXT.__objc_methlist: 0x320
-   __TEXT.__const: 0xb60
-   __TEXT.__cstring: 0xbc4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3682c` | `0x36878` | **`+0x4c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__114__split_bufferIPN3SVG17BoundingRectState5StateENS_9allocatorIS4_EEE12emplace_backIJS4_EEEvDpOT_ : 256 -> 260
 ~ __ZNSt3__114__split_bufferIPN3SVG17BoundingRectState5StateERNS_9allocatorIS4_EEE12emplace_backIJS4_EEEvDpOT_ : 256 -> 260

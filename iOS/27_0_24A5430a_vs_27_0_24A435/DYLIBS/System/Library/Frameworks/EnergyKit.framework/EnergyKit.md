@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/EnergyKit.framework/EnergyKit`
 
-```diff
+### Section Size Changes
 
- 490.1.4.0.0
--  __TEXT.__text: 0xc8b14
-+  __TEXT.__text: 0xc8ab4
-   __TEXT.__objc_methlist: 0x7b0
-   __TEXT.__const: 0xc068
-   __TEXT.__cstring: 0x1629
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc8b14` | `0xc8ab4` | **`-0x60`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s9EnergyKit13HVACSimulatorC23generateCyclesForWindow33_8CAA901366DD19989A3FD210D062EE8DLL4date6window8calendar3rngSayAA21ElectricHVACLoadEventVG10Foundation4DateV_AC09OperatingG0VAM8CalendarVAA27SeededRandomNumberGeneratorVztF : 7172 -> 7096
 ~ _$ss17_NativeDictionaryV20_copyOrMoveAndResize8capacity12moveElementsySi_SbtF10Foundation4UUIDV_Say9EnergyKit21ElectricHVACLoadEventVGTg5 : 992 -> 984

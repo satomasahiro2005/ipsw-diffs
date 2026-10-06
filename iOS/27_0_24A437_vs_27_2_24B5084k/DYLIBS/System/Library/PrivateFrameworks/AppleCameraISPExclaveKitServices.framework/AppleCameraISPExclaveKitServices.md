@@ -2,44 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/AppleCameraISPExclaveKitServices.framework/AppleCameraISPExclaveKitServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x30f50` | `0x32b94` | **`+0x1c44`** |
+| `__TEXT.__cstring` | `0x8896` | `0x8d16` | **`+0x480`** |
+| `__DATA_CONST.__const` | `0x1128` | `0x1210` | **`+0xe8`** |
+| `__TEXT.__oslogstring` | `0x434e` | `0x442e` | **`+0xe0`** |
+| `__TEXT.__gcc_except_tab` | `0x8c8` | `0x928` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x9a8` | `0x9d8` | **`+0x30`** |
+
+### Other Changes
+
 ```diff
 
 -20.77.1.0.0
--  __TEXT.__text: 0x30d58
 +20.104.4.0.0
-+  __TEXT.__text: 0x32984
-   __TEXT.__const: 0x2fa
--  __TEXT.__gcc_except_tab: 0x8c8
--  __TEXT.__oslogstring: 0x434e
--  __TEXT.__cstring: 0x8896
-+  __TEXT.__gcc_except_tab: 0x928
-+  __TEXT.__oslogstring: 0x442e
-+  __TEXT.__cstring: 0x8d16
-   __TEXT.__swift5_typeref: 0x2e
-   __TEXT.__constg_swiftt: 0x48
-   __TEXT.__swift5_fieldmd: 0x10
-   __TEXT.__swift5_types: 0x4
--  __TEXT.__unwind_info: 0x1278
-+  __TEXT.__unwind_info: 0x12e0
-   __TEXT.__eh_frame: 0x70
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
--  __DATA_CONST.__const: 0x1128
-+  __DATA_CONST.__const: 0x1210
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 1176
 -  Symbols:   772
 -  CStrings:  808
 +  Functions: 1197
 +  Symbols:   782
 +  CStrings:  824
- 
 Symbols:
 + __Z34ispExclaveKitCommandChInitScanModeP20sExclaveKitIspCmdHdr
 + __Z37ispExclaveKitCommandChGetGmcAnalyticsP20sExclaveKitIspCmdHdr

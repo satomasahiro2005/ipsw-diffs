@@ -2,6 +2,8 @@
 
 > `/usr/libexec/safetycheckd`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_100009cc8 : 32 -> 28

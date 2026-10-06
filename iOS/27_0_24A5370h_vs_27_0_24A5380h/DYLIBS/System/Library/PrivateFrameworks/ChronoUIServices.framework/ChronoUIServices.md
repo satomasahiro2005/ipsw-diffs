@@ -2,118 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/ChronoUIServices.framework/ChronoUIServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x95640` | `0x96370` | **`+0xd30`** |
+| `__AUTH.__objc_data` | `0xc30` | `0x438` | **`-0x7f8`** |
+| `__DATA_DIRTY.__objc_data` | `0xda8` | `0x1550` | **`+0x7a8`** |
+| `__DATA_DIRTY.__data` | `0x32f0` | `0x3748` | **`+0x458`** |
+| `__AUTH_CONST.__objc_const` | `0x9cf8` | `0x98c0` | **`-0x438`** |
+| `__AUTH.__data` | `0xd68` | `0xa18` | **`-0x350`** |
+| `__TEXT.__gcc_except_tab` | `0x4104` | `0x4290` | **`+0x18c`** |
+| `__DATA.__data` | `0xf90` | `0xe68` | **`-0x128`** |
+| `__DATA.__bss` | `0x13c8` | `0x12b8` | **`-0x110`** |
+| `__DATA_DIRTY.__bss` | `0x2840` | `0x2940` | **`+0x100`** |
+| `__TEXT.__oslogstring` | `0x2fd5` | `0x3065` | **`+0x90`** |
+| `__TEXT.__cstring` | `0x2251` | `0x22d1` | **`+0x80`** |
+| `__AUTH_CONST.__cfstring` | `0x1a80` | `0x1ae0` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x3310` | `0x3358` | **`+0x48`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1df8` | `0x1e38` | **`+0x40`** |
+| `__AUTH_CONST.__objc_intobj` | `0x18` | `0x48` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x32fc` | `0x3324` | **`+0x28`** |
+| `__AUTH_CONST.__auth_got` | `0x1810` | `0x17f8` | **`-0x18`** |
+| `__AUTH_CONST.__objc_arrayobj` | `—` | `0x18` | **`+0x18`** |
+| `__DATA.__common` | `0x38` | `0x28` | **`-0x10`** |
+| `__DATA_CONST.__const` | `0xd20` | `0xd30` | **`+0x10`** |
+| `__DATA_DIRTY.__common` | `0x120` | `0x130` | **`+0x10`** |
+| `__TEXT.__const` | `0x4020` | `0x4010` | **`-0x10`** |
+| `__DATA.__objc_ivar` | `0x2d4` | `0x2e0` | **`+0xc`** |
+| `__TEXT.__swift5_typeref` | `0x32d6` | `0x32cc` | **`-0xa`** |
+| `__DATA_CONST.__got` | `0xbe8` | `0xbe0` | **`-0x8`** |
+| `__DATA_CONST.__objc_arraydata` | `0x20` | `0x28` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x278` | `0x270` | **`-0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x130` | `0x128` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x95640
--  __TEXT.__objc_methlist: 0x32fc
--  __TEXT.__const: 0x4020
--  __TEXT.__gcc_except_tab: 0x4104
--  __TEXT.__cstring: 0x2251
--  __TEXT.__oslogstring: 0x2fd5
-+  __TEXT.__text: 0x96370
-+  __TEXT.__objc_methlist: 0x3324
-+  __TEXT.__const: 0x4010
-+  __TEXT.__gcc_except_tab: 0x4290
-+  __TEXT.__cstring: 0x22d1
-+  __TEXT.__oslogstring: 0x3065
-   __TEXT.__dlopen_cstrs: 0x68
--  __TEXT.__swift5_typeref: 0x32d6
-+  __TEXT.__swift5_typeref: 0x32cc
-   __TEXT.__swift5_fieldmd: 0x136c
-   __TEXT.__constg_swiftt: 0x2524
-   __TEXT.__swift5_reflstr: 0x1219
+-727.0.0.0.0
++734.0.0.0.0
 
-   __TEXT.__swift_as_ret: 0xa0
-   __TEXT.__swift_as_cont: 0x148
-   __TEXT.__swift5_mpenum: 0x14
--  __TEXT.__unwind_info: 0x3310
-+  __TEXT.__unwind_info: 0x3358
-   __TEXT.__eh_frame: 0x1c00
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xd20
--  __DATA_CONST.__objc_classlist: 0x278
-+  __DATA_CONST.__const: 0xd30
-+  __DATA_CONST.__objc_classlist: 0x270
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0xb0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1df8
-+  __DATA_CONST.__objc_selrefs: 0x1e38
-   __DATA_CONST.__objc_protorefs: 0x28
--  __DATA_CONST.__objc_superrefs: 0x130
--  __DATA_CONST.__objc_arraydata: 0x20
--  __DATA_CONST.__got: 0xbe8
-+  __DATA_CONST.__objc_superrefs: 0x128
-+  __DATA_CONST.__objc_arraydata: 0x28
-+  __DATA_CONST.__got: 0xbe0
-   __AUTH_CONST.__const: 0x25c0
--  __AUTH_CONST.__cfstring: 0x1a80
--  __AUTH_CONST.__objc_const: 0x9cf8
-+  __AUTH_CONST.__cfstring: 0x1ae0
-+  __AUTH_CONST.__objc_const: 0x98c0
-   __AUTH_CONST.__objc_dictobj: 0x50
--  __AUTH_CONST.__objc_intobj: 0x18
--  __AUTH_CONST.__auth_got: 0x1810
--  __AUTH.__objc_data: 0xc30
--  __AUTH.__data: 0xd68
--  __DATA.__objc_ivar: 0x2d4
--  __DATA.__data: 0xf90
--  __DATA.__bss: 0x13c8
--  __DATA.__common: 0x38
--  __DATA_DIRTY.__objc_data: 0xda8
--  __DATA_DIRTY.__data: 0x32f0
--  __DATA_DIRTY.__bss: 0x2840
--  __DATA_DIRTY.__common: 0x120
-+  __AUTH_CONST.__objc_intobj: 0x48
-+  __AUTH_CONST.__objc_arrayobj: 0x18
-+  __AUTH_CONST.__auth_got: 0x17f8
-+  __AUTH.__objc_data: 0x438
-+  __AUTH.__data: 0xa18
-+  __DATA.__objc_ivar: 0x2e0
-+  __DATA.__data: 0xe68
-+  __DATA.__bss: 0x12b8
-+  __DATA.__common: 0x28
-+  __DATA_DIRTY.__objc_data: 0x1550
-+  __DATA_DIRTY.__data: 0x3748
-+  __DATA_DIRTY.__bss: 0x2940
-+  __DATA_DIRTY.__common: 0x130
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3729
--  Symbols:   5479
--  CStrings:  710
+-  Symbols:   3035
+-  CStrings:  499
 +  Functions: 3744
-+  Symbols:   5491
-+  CStrings:  718
- 
-Sections:
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
++  Symbols:   3046
++  CStrings:  504
 Symbols:
 + -[CHUISMutableWidgetSceneSettings allowsContentPreferredColorScheme]
 + -[CHUISMutableWidgetSceneSettings colorScheme]
@@ -225,19 +160,6 @@ Symbols:
 + ___block_descriptor_56_ea8_32s40s48s_e70_"UIApplicationSceneTransitionContext"16?0"FBSMutableSceneSettings"8ls32l8s40l8s48l8
 + ___kCFBooleanFalse
 + ___swift_closure_destructor.90Tm
-+ _objc_msgSend$_allowsContentPreferredColorSchemeForScene
-+ _objc_msgSend$_colorSchemeForScene
-+ _objc_msgSend$_effectiveColorScheme
-+ _objc_msgSend$animationSettings
-+ _objc_msgSend$performBatchUpdate:
-+ _objc_msgSend$set
-+ _objc_msgSend$setAllowsContentPreferredColorScheme:
-+ _objc_msgSend$setAnimationSettings:
-+ _objc_msgSend$setColorScheme:
-+ _objc_msgSend$setSupportedAllowsContentPreferredColorSchemeValues:
-+ _objc_msgSend$setSupportedColorSchemes:
-+ _objc_msgSend$supportedAllowsContentPreferredColorSchemeValues
-+ _objc_msgSend$supportedColorSchemes
 - +[CHSColorSchemePolicyArrayBox boxWithValue:]
 - +[CHSColorSchemePolicyArrayBox supportsBSXPCSecureCoding]
 - +[CHSColorSchemePolicyArrayBox supportsSecureCoding]
@@ -336,13 +258,6 @@ Symbols:
 - __OBJC_METACLASS_RO_$_CHSColorSchemePolicyArrayBox
 - ___block_descriptor_48_ea8_32s40s_e70_"UIApplicationSceneTransitionContext"16?0"FBSMutableSceneSettings"8ls32l8s40l8
 - ___swift_closure_destructor.89Tm
-- _objc_msgSend$_colorSchemePolicyForScene
-- _objc_msgSend$_effectiveColorSchemePolicy
-- _objc_msgSend$colorSchemePolicy
-- _objc_msgSend$initWithColorScheme:
-- _objc_msgSend$setColorSchemePolicy:
-- _objc_msgSend$setSupportedColorSchemePolicies:
-- _objc_msgSend$supportedColorSchemePolicies
 - _symbolic Say_____G 7SwiftUI11ColorSchemeO
 CStrings:
 + "[%p-%{public}@] Allows widget preferred color scheme changed to %{BOOL}d"
@@ -362,5 +277,4 @@ CStrings:
 - "colorSchemePolicy"
 - "supportedColorSchemePolicies"
 - "\xf0\xf0\xf0\xf0a"
-
 ```

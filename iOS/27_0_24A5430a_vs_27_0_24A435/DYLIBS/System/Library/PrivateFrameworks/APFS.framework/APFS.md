@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/APFS.framework/APFS`
 
-```diff
+### Section Size Changes
 
- 3288.2.1.0.0
--  __TEXT.__text: 0x5426c
-+  __TEXT.__text: 0x543a8
-   __TEXT.__const: 0x8540
-   __TEXT.__cstring: 0xe85d
-   __TEXT.__oslogstring: 0x11b8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5426c` | `0x543a8` | **`+0x13c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _btree_node_init_phys : 236 -> 240
 ~ _btree_node_key_off : 36 -> 40

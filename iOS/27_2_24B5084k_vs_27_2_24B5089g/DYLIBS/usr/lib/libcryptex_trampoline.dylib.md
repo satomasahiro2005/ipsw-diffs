@@ -2,16 +2,15 @@
 
 > `/usr/lib/libcryptex_trampoline.dylib`
 
-```diff
+### Section Size Changes
 
- 761.40.23.0.0
-   __TEXT.__text: 0x6b4
-   __TEXT.__const: 0x70
--  __TEXT.__cstring: 0x21f
-+  __TEXT.__cstring: 0x221
-   __TEXT.__oslogstring: 0x104
-   __TEXT.__unwind_info: 0x88
-   __TEXT.__auth_stubs: 0x0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x21f` | `0x221` | **`+0x2`** |
+
+### Other Changes
+
+```diff
 CStrings:
 + "@(#)VERSION:Monitor Cryptex Upgrades Version 2.0.0: Sat Sep 12 05:10:40 PDT 2026; root:libcryptex-761.40.23~258/libcryptex_trampoline/RELEASE_ARM64E"
 + "Monitor Cryptex Upgrades Version 2.0.0: Sat Sep 12 05:10:40 PDT 2026; root:libcryptex-761.40.23~258/libcryptex_trampoline/RELEASE_ARM64E"

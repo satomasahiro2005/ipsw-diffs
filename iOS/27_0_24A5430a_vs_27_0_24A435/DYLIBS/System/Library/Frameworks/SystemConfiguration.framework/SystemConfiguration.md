@@ -2,6 +2,8 @@
 
 > `/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_1 : 28 -> 16

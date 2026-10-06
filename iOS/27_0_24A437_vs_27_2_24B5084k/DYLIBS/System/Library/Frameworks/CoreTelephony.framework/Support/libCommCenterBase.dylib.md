@@ -2,65 +2,34 @@
 
 > `/System/Library/Frameworks/CoreTelephony.framework/Support/libCommCenterBase.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd2960` | `0xd3718` | **`+0xdb8`** |
+| `__TEXT.__const` | `0xd360` | `0xce50` | **`-0x510`** |
+| `__TEXT.__gcc_except_tab` | `0x13bc4` | `0x13e44` | **`+0x280`** |
+| `__TEXT.__cstring` | `0x148cb` | `0x14af1` | **`+0x226`** |
+| `__TEXT.__oslogstring` | `0x26f1` | `0x2849` | **`+0x158`** |
+| `__DATA_CONST.__const` | `0x7640` | `0x7700` | **`+0xc0`** |
+| `__AUTH_CONST.__const` | `0x14448` | `0x143a8` | **`-0xa0`** |
+| `__DATA_DIRTY.__common` | `0x668` | `0x608` | **`-0x60`** |
+| `__TEXT.__unwind_info` | `0x4e58` | `0x4e88` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0xc28` | `0xc48` | **`+0x20`** |
+
+### Other Changes
+
 ```diff
 
 -13487.7.0.0.0
--  __TEXT.__text: 0xd08c0
 +13494.0.0.0.0
-+  __TEXT.__text: 0xd16b4
-   __TEXT.__init_offsets: 0x20
-   __TEXT.__objc_methlist: 0x110
--  __TEXT.__const: 0xd360
--  __TEXT.__cstring: 0x148cb
--  __TEXT.__gcc_except_tab: 0x13bc4
--  __TEXT.__oslogstring: 0x26f1
--  __TEXT.__unwind_info: 0x54d0
-+  __TEXT.__const: 0xce50
-+  __TEXT.__cstring: 0x14af1
-+  __TEXT.__gcc_except_tab: 0x13e44
-+  __TEXT.__oslogstring: 0x2849
-+  __TEXT.__unwind_info: 0x5500
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7640
-+  __DATA_CONST.__const: 0x7700
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   __DATA_CONST.__objc_selrefs: 0x188
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__got: 0x218
--  __AUTH_CONST.__const: 0x14448
-+  __AUTH_CONST.__const: 0x143a8
-   __AUTH_CONST.__cfstring: 0x2ce0
-   __AUTH_CONST.__objc_const: 0x200
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__auth_got: 0xc28
-+  __AUTH_CONST.__auth_got: 0xc48
-   __DATA.__objc_ivar: 0x8
-   __DATA.__data: 0x70
-   __DATA_DIRTY.__objc_data: 0x50
-   __DATA_DIRTY.__data: 0x18
--  __DATA_DIRTY.__common: 0x668
-+  __DATA_DIRTY.__common: 0x608
-   __DATA_DIRTY.__bss: 0x328
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 5765
--  Symbols:   9504
+-  Symbols:   9469
 -  CStrings:  4464
 +  Functions: 5751
-+  Symbols:   9473
++  Symbols:   9438
 +  CStrings:  4501
- 
 Symbols:
 + GCC_except_table128
 + GCC_except_table131

@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/SupportFlowUI.framework/SupportFlowUI`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_2 : 20 -> 16

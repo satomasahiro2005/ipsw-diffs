@@ -2,86 +2,56 @@
 
 > `/System/Library/Snippets/UIPlugins/TimerUIPlugin.bundle/TimerUIPlugin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_assocty`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c2b0` | `0x1cd00` | **`+0xa50`** |
+| `__TEXT.__swift5_typeref` | `0x18d3` | `0x19b5` | **`+0xe2`** |
+| `__TEXT.__const` | `0xdb0` | `0xe20` | **`+0x70`** |
+| `__TEXT.__auth_stubs` | `0x1650` | `0x16b0` | **`+0x60`** |
+| `__DATA_CONST.__got` | `0x438` | `0x488` | **`+0x50`** |
+| `__DATA.__data` | `0xce8` | `0xd30` | **`+0x48`** |
+| `__DATA_CONST.__auth_got` | `0xb30` | `0xb60` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x840` | `0x868` | **`+0x28`** |
+| `__DATA_CONST.__auth_ptr` | `0x4e8` | `0x508` | **`+0x20`** |
+| `__TEXT.__objc_stubs` | `0x300` | `0x320` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x39a` | `0x3ba` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x3ac` | `0x3c4` | **`+0x18`** |
+| `__DATA.__bss` | `0xa80` | `0xa90` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x250` | `0x260` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x600` | `0x610` | **`+0x10`** |
+| `__TEXT.__objc_methname` | `0x18b` | `0x199` | **`+0xe`** |
+| `__DATA.__objc_selrefs` | `0xc0` | `0xc8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA_CONST.__objc_classlist`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__oslogstring`
+- `__TEXT.__swift5_assocty`
 - `__TEXT.__swift5_builtin`
 - `__TEXT.__swift5_proto`
 - `__TEXT.__swift5_types`
-- `__TEXT.__oslogstring`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA.__objc_const`
+
+### Other Changes
 
 ```diff
 
 -3600.26.11.0.0
--  __TEXT.__text: 0x1c2b0
--  __TEXT.__auth_stubs: 0x1650
--  __TEXT.__objc_stubs: 0x300
--  __TEXT.__const: 0xdb0
--  __TEXT.__swift5_typeref: 0x18d3
--  __TEXT.__swift5_capture: 0x250
--  __TEXT.__swift5_reflstr: 0x39a
 +3600.26.13.0.0
-+  __TEXT.__text: 0x1cd00
-+  __TEXT.__auth_stubs: 0x16b0
-+  __TEXT.__objc_stubs: 0x320
-+  __TEXT.__const: 0xe20
-+  __TEXT.__swift5_typeref: 0x19b5
-+  __TEXT.__swift5_capture: 0x260
-+  __TEXT.__swift5_reflstr: 0x3ba
-   __TEXT.__swift5_assocty: 0x150
-   __TEXT.__constg_swiftt: 0x3cc
--  __TEXT.__swift5_fieldmd: 0x3ac
-+  __TEXT.__swift5_fieldmd: 0x3c4
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_proto: 0x50
-   __TEXT.__swift5_types: 0x38
 
-   __TEXT.__swift_as_ret: 0x1c
-   __TEXT.__swift_as_cont: 0x44
-   __TEXT.__objc_classname: 0x23
--  __TEXT.__objc_methname: 0x18b
--  __TEXT.__unwind_info: 0x600
-+  __TEXT.__objc_methname: 0x199
-+  __TEXT.__unwind_info: 0x610
-   __TEXT.__eh_frame: 0x560
--  __DATA_CONST.__const: 0x840
-+  __DATA_CONST.__const: 0x868
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0xb30
--  __DATA_CONST.__got: 0x438
--  __DATA_CONST.__auth_ptr: 0x4e8
-+  __DATA_CONST.__auth_got: 0xb60
-+  __DATA_CONST.__got: 0x488
-+  __DATA_CONST.__auth_ptr: 0x508
-   __DATA.__objc_const: 0xb8
--  __DATA.__objc_selrefs: 0xc0
--  __DATA.__data: 0xce8
--  __DATA.__bss: 0xa80
-+  __DATA.__objc_selrefs: 0xc8
-+  __DATA.__data: 0xd30
-+  __DATA.__bss: 0xa90
-   __DATA.__common: 0x10
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 452
 -  Symbols:   163
 -  CStrings:  68
 +  Functions: 466
 +  Symbols:   166
 +  CStrings:  69
- 
 Symbols:
 + _MTTimerManagerTimersChanged
 + _OBJC_CLASS_$_NSNotificationCenter

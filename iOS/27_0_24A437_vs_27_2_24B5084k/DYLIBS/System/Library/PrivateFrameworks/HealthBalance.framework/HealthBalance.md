@@ -2,114 +2,62 @@
 
 > `/System/Library/PrivateFrameworks/HealthBalance.framework/HealthBalance`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf8330` | `0x12b00c` | **`+0x32cdc`** |
+| `__DATA.__bss` | `0x13b90` | `0x1b890` | **`+0x7d00`** |
+| `__TEXT.__const` | `0xdc68` | `0x11278` | **`+0x3610`** |
+| `__DATA_DIRTY.__bss` | `0x8300` | `0x7100` | **`-0x1200`** |
+| `__DATA.__data` | `0x1a78` | `0x2a60` | **`+0xfe8`** |
+| `__TEXT.__unwind_info` | `0x3330` | `0x4240` | **`+0xf10`** |
+| `__TEXT.__eh_frame` | `0x3548` | `0x43d0` | **`+0xe88`** |
+| `__AUTH.__data` | `0x8e0` | `0x1588` | **`+0xca8`** |
+| `__TEXT.__swift5_fieldmd` | `0x2c88` | `0x37e4` | **`+0xb5c`** |
+| `__TEXT.__constg_swiftt` | `0x2300` | `0x2c6c` | **`+0x96c`** |
+| `__TEXT.__swift5_reflstr` | `0x1db2` | `0x26ef` | **`+0x93d`** |
+| `__TEXT.__swift5_typeref` | `0x1c3a` | `0x2566` | **`+0x92c`** |
+| `__TEXT.__oslogstring` | `0x46c` | `0xb0c` | **`+0x6a0`** |
+| `__AUTH_CONST.__const` | `0xb4d0` | `0xae90` | **`-0x640`** |
+| `__AUTH_CONST.__auth_got` | `0xf78` | `0x12e0` | **`+0x368`** |
+| `__TEXT.__swift5_proto` | `0xdfc` | `0x1154` | **`+0x358`** |
+| `__TEXT.__cstring` | `0x2196` | `0x2496` | **`+0x300`** |
+| `__AUTH_CONST.__objc_const` | `0xb68` | `0xd90` | **`+0x228`** |
+| `__TEXT.__swift5_capture` | `0x330` | `0x4e8` | **`+0x1b8`** |
+| `__DATA_DIRTY.__data` | `0x1e50` | `0x1cd0` | **`-0x180`** |
+| `__TEXT.__swift5_assocty` | `0x630` | `0x730` | **`+0x100`** |
+| `__TEXT.__swift5_types` | `0x3b4` | `0x484` | **`+0xd0`** |
+| `__AUTH.__objc_data` | `0x50` | `0xf0` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x160` | `0x1c0` | **`+0x60`** |
+| `__DATA_CONST.__objc_selrefs` | `0x458` | `0x498` | **`+0x40`** |
+| `__TEXT.__swift_as_cont` | `0xa4` | `0xbc` | **`+0x18`** |
+| `__DATA.__common` | `0x8` | `0x18` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x40` | `0x50` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x38` | `0x48` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `0x14` | `0x20` | **`+0xc`** |
+| `__DATA_DIRTY.__objc_data` | `0x368` | `0x370` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x2c` | `0x34` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -7027.0.72.2.7
--  __TEXT.__text: 0xf1f60
 +7027.1.36.2.7
-+  __TEXT.__text: 0x122d74
-   __TEXT.__objc_methlist: 0x4b4
--  __TEXT.__const: 0xdc68
--  __TEXT.__cstring: 0x2196
--  __TEXT.__swift5_typeref: 0x1c3a
--  __TEXT.__swift5_reflstr: 0x1db2
--  __TEXT.__swift5_assocty: 0x630
--  __TEXT.__constg_swiftt: 0x2300
--  __TEXT.__swift5_fieldmd: 0x2c88
-+  __TEXT.__const: 0x11278
-+  __TEXT.__swift5_typeref: 0x2566
-+  __TEXT.__swift5_reflstr: 0x26ef
-+  __TEXT.__swift5_assocty: 0x730
-+  __TEXT.__constg_swiftt: 0x2c6c
-+  __TEXT.__swift5_fieldmd: 0x37e4
-   __TEXT.__swift5_builtin: 0x8c
--  __TEXT.__swift5_proto: 0xdfc
--  __TEXT.__swift5_types: 0x3b4
--  __TEXT.__swift5_protos: 0x14
--  __TEXT.__swift5_capture: 0x330
--  __TEXT.__oslogstring: 0x46c
--  __TEXT.__swift_as_entry: 0x38
--  __TEXT.__swift_as_ret: 0x2c
--  __TEXT.__swift_as_cont: 0xa4
-+  __TEXT.__swift5_proto: 0x1154
-+  __TEXT.__swift5_types: 0x484
-+  __TEXT.__cstring: 0x2496
-+  __TEXT.__swift5_protos: 0x20
-+  __TEXT.__swift5_capture: 0x4e8
-+  __TEXT.__oslogstring: 0xb0c
-+  __TEXT.__swift_as_entry: 0x48
-+  __TEXT.__swift_as_ret: 0x34
-+  __TEXT.__swift_as_cont: 0xbc
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0x4380
--  __TEXT.__eh_frame: 0x3548
-+  __TEXT.__unwind_info: 0x5808
-+  __TEXT.__eh_frame: 0x43d0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x160
--  __DATA_CONST.__objc_classlist: 0x40
-+  __DATA_CONST.__const: 0x1c0
-+  __DATA_CONST.__objc_classlist: 0x50
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x458
-+  __DATA_CONST.__objc_selrefs: 0x498
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xb4d0
--  __AUTH_CONST.__objc_const: 0xb68
--  __AUTH_CONST.__auth_got: 0xf78
--  __AUTH.__objc_data: 0x50
--  __AUTH.__data: 0x8e0
--  __DATA.__data: 0x1a78
--  __DATA.__common: 0x8
--  __DATA_DIRTY.__objc_data: 0x368
--  __DATA_DIRTY.__data: 0x1e50
--  __DATA_DIRTY.__bss: 0x8300
-+  __AUTH_CONST.__const: 0xae90
-+  __AUTH_CONST.__objc_const: 0xd90
-+  __AUTH_CONST.__auth_got: 0x12e0
-+  __AUTH.__objc_data: 0xf0
-+  __AUTH.__data: 0x1588
-+  __DATA.__data: 0x2a60
-+  __DATA.__common: 0x18
-+  __DATA_DIRTY.__objc_data: 0x370
-+  __DATA_DIRTY.__data: 0x1cd0
-+  __DATA_DIRTY.__bss: 0x7100
-   __DATA_DIRTY.__common: 0x68
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/HealthKit.framework/HealthKit
-+  - /System/Library/Frameworks/TabularData.framework/TabularData
-   - /System/Library/Frameworks/UserNotifications.framework/UserNotifications
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/HealthFeatures.framework/HealthFeatures
-+  - /System/Library/PrivateFrameworks/HealthOrchestration.framework/HealthOrchestration
-   - /System/Library/PrivateFrameworks/HealthTopics.framework/HealthTopics
-   - /System/Library/PrivateFrameworks/HealthTopicsCore.framework/HealthTopicsCore
-   - /System/Library/PrivateFrameworks/HealthUtilities.framework/HealthUtilities
 
-   - /usr/lib/swift/libswiftDispatch.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftObservation.dylib
++  - /System/Library/Frameworks/TabularData.framework/TabularData
+
++  - /System/Library/PrivateFrameworks/HealthOrchestration.framework/HealthOrchestration
+
 +  - /usr/lib/swift/libswiftSynchronization.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
+
 -  Functions: 4836
--  Symbols:   1331
+-  Symbols:   1234
 -  CStrings:  310
 +  Functions: 6241
-+  Symbols:   1591
++  Symbols:   1486
 +  CStrings:  354
- 
 Symbols:
 + _HKCalendarComponentsFromDayIndex
 + _HKDayIndexFromCalendarComponents
@@ -281,15 +229,6 @@ Symbols:
 + _generic environment 13HealthBalance32SleepingSampleDaySummaryProtocolRzl
 + _get_witness_table s16AsyncMapSequenceVy16HealthTopicsCore10TopicStorePACE9responses3forQrqd___tAC0G7RequestRd__AC09StreamingG8Response0M0Rpd__lFQOy0dE00dgH0C_0D7Balance015ReadinessInputsgK0VQo_AO0oP11QueryResultVGSciHPyHC
 + _get_witness_table s16AsyncMapSequenceVyABy16HealthTopicsCore10TopicStorePACE9responses3forQrqd___tAC0G7RequestRd__AC09StreamingG8Response0M0Rpd__lFQOy0dE00dgH0C_0D7Balance015ReadinessInputsgK0VQo_AO0oP11QueryResultVGATGSciHPyHC
-+ _objc_msgSend$dateInterval
-+ _objc_msgSend$decodeBoolForKey:
-+ _objc_msgSend$encodeBool:forKey:
-+ _objc_msgSend$hasUnfrozenSeries
-+ _objc_msgSend$hk_ageWithCurrentDayIndex:
-+ _objc_msgSend$hk_isGreaterThanQuantity:
-+ _objc_msgSend$hk_isLessThanQuantity:
-+ _objc_msgSend$identifier
-+ _objc_msgSend$queryStrategy
 + _swift_cvw_allocateGenericValueMetadataWithLayoutString
 + _swift_deletedMethodError
 + _swift_getAtKeyPath
@@ -482,7 +421,6 @@ Symbols:
 - _associated conformance 13HealthBalance26VitalsMetricEvaluationTypeO27NonPositiveChangeCodingKeys33_481DD27166B9361087889AB65ACE2A41LLOs0J3KeyAAs28CustomDebugStringConvertible
 - _associated conformance 13HealthBalance30VitalsMetricClassificationTypeO16ChangeCodingKeys33_481DD27166B9361087889AB65ACE2A41LLOs0H3KeyAAs23CustomStringConvertible
 - _associated conformance 13HealthBalance30VitalsMetricClassificationTypeO16ChangeCodingKeys33_481DD27166B9361087889AB65ACE2A41LLOs0H3KeyAAs28CustomDebugStringConvertible
-- _objc_msgSend$compare:
 - _symbolic _____ 13HealthBalance016VitalsDaySummaryD5StateO14FairCodingKeys33_209C7435968FF6B328E1A3C345FB8730LLO
 - _symbolic _____ 13HealthBalance016VitalsDaySummaryD5StateO14PoorCodingKeys33_209C7435968FF6B328E1A3C345FB8730LLO
 - _symbolic _____ 13HealthBalance016VitalsDaySummaryD5StateO19ExcellentCodingKeys33_209C7435968FF6B328E1A3C345FB8730LLO

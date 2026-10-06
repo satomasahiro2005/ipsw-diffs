@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/SetupAssistantSupportUI.framework/SetupAssistantSupportUI`
 
-```diff
+### Section Size Changes
 
- 568.1.4.0.0
--  __TEXT.__text: 0x7806c
-+  __TEXT.__text: 0x78074
-   __TEXT.__objc_methlist: 0x1a70
-   __TEXT.__const: 0x48b0
-   __TEXT.__gcc_except_tab: 0x1d4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7b988` | `0x7b990` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2a66aa14c -> sub_2a637414c : 2124 -> 2120
-~ sub_2a66aaecc -> sub_2a6374ec8 : 260 -> 272
+~ sub_2aa1b0938 -> sub_2a9ed8938 : 2132 -> 2128
+~ sub_2aa1b16e0 -> sub_2a9ed96dc : 260 -> 272
 ```

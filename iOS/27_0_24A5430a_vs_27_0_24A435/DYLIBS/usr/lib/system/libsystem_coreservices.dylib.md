@@ -2,14 +2,15 @@
 
 > `/usr/lib/system/libsystem_coreservices.dylib`
 
-```diff
+### Section Size Changes
 
- 203.0.0.0.0
--  __TEXT.__text: 0x189c
-+  __TEXT.__text: 0x18a0
-   __TEXT.__const: 0x70
-   __TEXT.__cstring: 0x335
-   __TEXT.__oslogstring: 0x1e7
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x189c` | `0x18a0` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _NSGetNextSearchPathEnumerationStatic : 1296 -> 1300
 ```

@@ -2,80 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/MapsUI.framework/MapsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a8aec` | `0x1a8fa4` | **`+0x4b8`** |
+| `__DATA.__data` | `0x59a0` | `0x5940` | **`-0x60`** |
+| `__TEXT.__cstring` | `0x123d1` | `0x1241c` | **`+0x4b`** |
+| `__AUTH_CONST.__cfstring` | `0x155e0` | `0x15620` | **`+0x40`** |
+| `__TEXT.__objc_methlist` | `0x1594c` | `0x1598c` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa540` | `0xa578` | **`+0x38`** |
+| `__AUTH_CONST.__objc_const` | `0x2be68` | `0x2be90` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x66f8` | `0x6710` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x14d0` | `0x14d8` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x1560` | `0x1568` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x740` | `0x738` | **`-0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x1e8` | `0x1e0` | **`-0x8`** |
+| `__DATA.__objc_ivar` | `0x16a8` | `0x16ac` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -286.30.6.12.8
--  __TEXT.__text: 0x1a8aec
 +286.30.6.12.13
-+  __TEXT.__text: 0x1a8fa4
-   __TEXT.__delay_stubs: 0x1c0
-   __TEXT.__delay_helper: 0xdc
--  __TEXT.__objc_methlist: 0x1594c
-+  __TEXT.__objc_methlist: 0x1598c
-   __TEXT.__const: 0x8118
-   __TEXT.__swift5_typeref: 0x2f74
-   __TEXT.__swift5_capture: 0x754
--  __TEXT.__cstring: 0x123d1
-+  __TEXT.__cstring: 0x1241c
-   __TEXT.__swift5_fieldmd: 0x3640
-   __TEXT.__constg_swiftt: 0x3e8c
-   __TEXT.__swift5_reflstr: 0x3037
 
-   __TEXT.__swift5_protos: 0x4c
-   __TEXT.__gcc_except_tab: 0x2218
-   __TEXT.__ustring: 0x9c
--  __TEXT.__unwind_info: 0x66f8
-+  __TEXT.__unwind_info: 0x6710
-   __TEXT.__eh_frame: 0x112c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__const: 0x3cf0
-   __DATA_CONST.__objc_classlist: 0xda0
-   __DATA_CONST.__objc_catlist: 0x110
--  __DATA_CONST.__objc_protolist: 0x740
-+  __DATA_CONST.__objc_protolist: 0x738
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa540
--  __DATA_CONST.__objc_protorefs: 0x1e8
-+  __DATA_CONST.__objc_selrefs: 0xa578
-+  __DATA_CONST.__objc_protorefs: 0x1e0
-   __DATA_CONST.__objc_superrefs: 0x750
-   __DATA_CONST.__objc_arraydata: 0x180
--  __DATA_CONST.__got: 0x1560
-+  __DATA_CONST.__got: 0x1568
-   __AUTH_CONST.__const: 0x6c50
--  __AUTH_CONST.__cfstring: 0x155e0
--  __AUTH_CONST.__objc_const: 0x2be68
-+  __AUTH_CONST.__cfstring: 0x15620
-+  __AUTH_CONST.__objc_const: 0x2be90
-   __AUTH_CONST.__objc_intobj: 0x828
-   __AUTH_CONST.__objc_doubleobj: 0x100
-   __AUTH_CONST.__objc_arrayobj: 0x198
-   __AUTH_CONST.__objc_floatobj: 0x30
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x14d0
-+  __AUTH_CONST.__auth_got: 0x14d8
-   __AUTH.__objc_data: 0xbdc8
-   __AUTH.__data: 0x21d0
--  __DATA.__objc_ivar: 0x16a8
--  __DATA.__data: 0x59a0
-+  __DATA.__objc_ivar: 0x16ac
-+  __DATA.__data: 0x5940
-   __DATA.__bss: 0x5f18
-   __DATA.__common: 0xa8
-   __DATA_DIRTY.__objc_data: 0x6e0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10228
--  Symbols:   17967
--  CStrings:  3429
 +  Functions: 10233
-+  Symbols:   17974
+
+-  CStrings:  3429
 +  CStrings:  3431
- 
 Symbols:
 + -[MUActivityDataProvider resolvedShareURL]
 + -[MULabeledValueActionRowView _horizontalContentInset]
@@ -229,13 +185,6 @@ Symbols:
 + GCC_except_table875
 + _MKLocalizedStringForCurrentLocation
 + _OBJC_IVAR_$_MUActivityDataProvider._resolvedShareURL
-+ _objc_msgSend$_horizontalContentInset
-+ _objc_msgSend$_nameFromPlaceData
-+ _objc_msgSend$headerSubtitle
-+ _objc_msgSend$resolvedShareURL
-+ _objc_msgSend$sharePreviewName
-+ _objc_msgSend$systemFontOfSize:
-+ _objc_msgSend$systemFontSize
 - GCC_except_table1211
 - GCC_except_table1213
 - GCC_except_table1327

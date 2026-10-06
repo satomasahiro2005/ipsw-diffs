@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SiriNaturalLanguageParsing.framework/SiriNaturalLanguageParsing`
 
-```diff
+### Section Size Changes
 
- 3600.7.10.0.0
--  __TEXT.__text: 0x14e410
-+  __TEXT.__text: 0x14e54c
-   __TEXT.__init_offsets: 0x168
-   __TEXT.__objc_methlist: 0x95c
-   __TEXT.__const: 0x8e2c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14e410` | `0x14e54c` | **`+0x13c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__16vectorIPN8nlohmann10basic_jsonINS_3mapES0_NS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEbxydS7_NS1_14adl_serializerENS0_IhNS7_IhEEEEEENS7_ISE_EEE24__emplace_back_slow_pathIJSE_EEEPSE_DpOT_ : 184 -> 176
 ~ __ZNKSt3__111basic_regexIcNS_12regex_traitsIcEEE16__match_at_startINS_9allocatorINS_9sub_matchIPKcEEEEEEbS8_S8_RNS_13match_resultsIS8_T_EENS_15regex_constants15match_flag_typeEb : 4084 -> 4116

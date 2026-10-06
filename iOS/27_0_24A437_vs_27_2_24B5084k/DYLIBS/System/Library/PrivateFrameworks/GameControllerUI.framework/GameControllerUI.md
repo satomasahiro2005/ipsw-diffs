@@ -2,100 +2,62 @@
 
 > `/System/Library/PrivateFrameworks/GameControllerUI.framework/GameControllerUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x770c` | `0x29db0` | **`+0x226a4`** |
+| `__TEXT.__eh_frame` | `0xd0` | `0x1c88` | **`+0x1bb8`** |
+| `__AUTH_CONST.__objc_const` | `0x2970` | `0x4458` | **`+0x1ae8`** |
+| `__TEXT.__const` | `0x196` | `0x1158` | **`+0xfc2`** |
+| `__AUTH_CONST.__const` | `0x1b0` | `0xef0` | **`+0xd40`** |
+| `__TEXT.__swift5_typeref` | `0x148` | `0xbba` | **`+0xa72`** |
+| `__TEXT.__unwind_info` | `0x378` | `0xd90` | **`+0xa18`** |
+| `__DATA.__bss` | `0x1d0` | `0xae8` | **`+0x918`** |
+| `__AUTH.__data` | `—` | `0x698` | **`+0x698`** |
+| `__DATA.__data` | `0x6a0` | `0xcb0` | **`+0x610`** |
+| `__TEXT.__constg_swiftt` | `0x34` | `0x5d0` | **`+0x59c`** |
+| `__AUTH_CONST.__auth_got` | `0x3a8` | `0x8c8` | **`+0x520`** |
+| `__TEXT.__swift5_reflstr` | `0x3c` | `0x432` | **`+0x3f6`** |
+| `__TEXT.__swift5_capture` | `0x30` | `0x3fc` | **`+0x3cc`** |
+| `__TEXT.__swift5_fieldmd` | `0x1c` | `0x3a0` | **`+0x384`** |
+| `__DATA_CONST.__got` | `0x0` | `0x310` | **`+0x310`** |
+| `__AUTH.__objc_data` | `0xf0` | `0x2e0` | **`+0x1f0`** |
+| `__TEXT.__objc_methlist` | `0x964` | `0xb3c` | **`+0x1d8`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x154` | **`+0x154`** |
+| `__TEXT.__cstring` | `0x1c8` | `0x2bd` | **`+0xf5`** |
+| `__TEXT.__swift_as_entry` | `—` | `0xc4` | **`+0xc4`** |
+| `__TEXT.__swift_as_ret` | `—` | `0xc4` | **`+0xc4`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6b0` | `0x770` | **`+0xc0`** |
+| `__DATA_CONST.__objc_protolist` | `0x98` | `0x118` | **`+0x80`** |
+| `__TEXT.__swift5_assocty` | `0x30` | `0x90` | **`+0x60`** |
+| `__TEXT.__swift5_types` | `0x4` | `0x58` | **`+0x54`** |
+| `__TEXT.__oslogstring` | `0x418` | `0x469` | **`+0x51`** |
+| `__DATA_CONST.__objc_protorefs` | `0x20` | `0x70` | **`+0x50`** |
+| `__TEXT.__swift5_proto` | `0xc` | `0x58` | **`+0x4c`** |
+| `__DATA_CONST.__objc_classlist` | `0x50` | `0x90` | **`+0x40`** |
+| `__TEXT.__swift5_builtin` | `—` | `0x3c` | **`+0x3c`** |
+| `__DATA.__common` | `—` | `0x18` | **`+0x18`** |
+| `__DATA_CONST.__const` | `0x370` | `0x380` | **`+0x10`** |
+| `__TEXT.__swift5_mpenum` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift5_types2` | `—` | `0x4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -14.0.24.0.0
--  __TEXT.__text: 0x72bc
--  __TEXT.__objc_methlist: 0x964
--  __TEXT.__const: 0x196
--  __TEXT.__cstring: 0x1c8
 +14.1.2.0.0
-+  __TEXT.__text: 0x27a4c
-+  __TEXT.__objc_methlist: 0xb3c
-+  __TEXT.__const: 0x1158
-+  __TEXT.__cstring: 0x2bd
-   __TEXT.__gcc_except_tab: 0x14c
--  __TEXT.__oslogstring: 0x418
--  __TEXT.__swift5_typeref: 0x148
--  __TEXT.__swift5_reflstr: 0x3c
--  __TEXT.__swift5_assocty: 0x30
--  __TEXT.__constg_swiftt: 0x34
--  __TEXT.__swift5_capture: 0x30
--  __TEXT.__swift5_proto: 0xc
--  __TEXT.__swift5_fieldmd: 0x1c
--  __TEXT.__swift5_types: 0x4
--  __TEXT.__unwind_info: 0x450
--  __TEXT.__eh_frame: 0xd0
-+  __TEXT.__oslogstring: 0x469
-+  __TEXT.__swift5_typeref: 0xbba
-+  __TEXT.__swift5_reflstr: 0x432
-+  __TEXT.__swift5_assocty: 0x90
-+  __TEXT.__constg_swiftt: 0x5d0
-+  __TEXT.__swift5_capture: 0x3fc
-+  __TEXT.__swift5_proto: 0x58
-+  __TEXT.__swift5_fieldmd: 0x3a0
-+  __TEXT.__swift5_types: 0x58
-+  __TEXT.__swift_as_entry: 0xc4
-+  __TEXT.__swift_as_ret: 0xc4
-+  __TEXT.__swift_as_cont: 0x154
-+  __TEXT.__swift5_builtin: 0x3c
-+  __TEXT.__swift5_mpenum: 0x8
-+  __TEXT.__swift5_protos: 0x8
-+  __TEXT.__swift5_types2: 0x4
-+  __TEXT.__unwind_info: 0xfe8
-+  __TEXT.__eh_frame: 0x1c88
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x370
--  __DATA_CONST.__objc_classlist: 0x50
-+  __DATA_CONST.__const: 0x380
-+  __DATA_CONST.__objc_classlist: 0x90
-   __DATA_CONST.__objc_catlist: 0x60
--  __DATA_CONST.__objc_protolist: 0x98
-+  __DATA_CONST.__objc_protolist: 0x118
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6b0
--  __DATA_CONST.__objc_protorefs: 0x20
-+  __DATA_CONST.__objc_selrefs: 0x770
-+  __DATA_CONST.__objc_protorefs: 0x70
-   __DATA_CONST.__objc_superrefs: 0x50
--  __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1b0
-+  __DATA_CONST.__got: 0x310
-+  __AUTH_CONST.__const: 0xef0
-   __AUTH_CONST.__cfstring: 0x160
--  __AUTH_CONST.__objc_const: 0x2970
-+  __AUTH_CONST.__objc_const: 0x4458
-   __AUTH_CONST.__objc_intobj: 0x48
--  __AUTH_CONST.__auth_got: 0x3a8
--  __AUTH.__objc_data: 0xf0
-+  __AUTH_CONST.__auth_got: 0x8c8
-+  __AUTH.__objc_data: 0x2e0
-+  __AUTH.__data: 0x698
-   __DATA.__objc_ivar: 0x60
--  __DATA.__data: 0x6a0
-+  __DATA.__data: 0xcb0
-+  __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0x230
-   __DATA_DIRTY.__bss: 0x38
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 +  - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 247
--  Symbols:   879
+-  Symbols:   737
 -  CStrings:  54
 +  Functions: 921
-+  Symbols:   2589
++  Symbols:   2434
 +  CStrings:  64
- 
 Symbols:
 + _$s10Foundation12NotificationV36_unconditionallyBridgeFromObjectiveCyACSo14NSNotificationCSgFZ
 + _$s10Foundation12NotificationVIeghn_So14NSNotificationCIeyBhy_TR
@@ -1571,19 +1533,6 @@ Symbols:
 + _malloc_size
 + _memcpy
 + _memmove
-+ _objc_msgSend$_setDevices:
-+ _objc_msgSend$addObserverForName:object:queue:usingBlock:
-+ _objc_msgSend$beginGeneratingDeviceOrientationNotifications
-+ _objc_msgSend$currentDevice
-+ _objc_msgSend$endGeneratingDeviceOrientationNotifications
-+ _objc_msgSend$init
-+ _objc_msgSend$initWithDeviceSessionConfiguration:queue:environment:
-+ _objc_msgSend$initWithTimestamp:usagePage:usage:down:sender:
-+ _objc_msgSend$propertyForKey:
-+ _objc_msgSend$removeObserver:
-+ _objc_msgSend$serviceID
-+ _objc_msgSend$servicesQueue
-+ _objc_msgSend$unsignedLongLongValue
 + _objc_retain_x26
 + _objc_retain_x27
 + _swift_allocBox

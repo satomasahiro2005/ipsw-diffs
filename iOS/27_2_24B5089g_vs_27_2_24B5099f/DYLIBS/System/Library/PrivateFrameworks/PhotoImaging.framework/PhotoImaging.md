@@ -2,115 +2,60 @@
 
 > `/System/Library/PrivateFrameworks/PhotoImaging.framework/PhotoImaging`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x29e948` | `0x2a1548` | **`+0x2c00`** |
+| `__DATA_CONST.__objc_arraydata` | `0x9660` | `0x8fb8` | **`-0x6a8`** |
+| `__AUTH_CONST.__objc_dictobj` | `0x5c08` | `0x55f0` | **`-0x618`** |
+| `__AUTH_CONST.__objc_const` | `0x29e08` | `0x2a380` | **`+0x578`** |
+| `__AUTH_CONST.__cfstring` | `0x29f40` | `0x29c00` | **`-0x340`** |
+| `__AUTH.__objc_data` | `0xa0` | `0x3c0` | **`+0x320`** |
+| `__TEXT.__cstring` | `0x4ac49` | `0x4ae87` | **`+0x23e`** |
+| `__DATA_DIRTY.__objc_data` | `0xb1f8` | `0xb0b8` | **`-0x140`** |
+| `__TEXT.__eh_frame` | `0xa50` | `0xb90` | **`+0x140`** |
+| `__TEXT.__objc_methlist` | `0x17460` | `0x175a0` | **`+0x140`** |
+| `__TEXT.__oslogstring` | `0x7e71` | `0x7f8b` | **`+0x11a`** |
+| `__AUTH_CONST.__const` | `0x5688` | `0x57a0` | **`+0x118`** |
+| `__AUTH_CONST.__auth_got` | `0x1508` | `0x1610` | **`+0x108`** |
+| `__TEXT.__unwind_info` | `0x5c88` | `0x5d80` | **`+0xf8`** |
+| `__DATA_CONST.__const` | `0x44b8` | `0x4550` | **`+0x98`** |
+| `__DATA.__data` | `0x3c4` | `0x444` | **`+0x80`** |
+| `__TEXT.__swift5_typeref` | `0x2d8` | `0x34e` | **`+0x76`** |
+| `__DATA_CONST.__got` | `0x2820` | `0x2878` | **`+0x58`** |
+| `__TEXT.__const` | `0x8d04` | `0x8d54` | **`+0x50`** |
+| `__TEXT.__swift5_capture` | `0x50` | `0x8c` | **`+0x3c`** |
+| `__DATA_CONST.__objc_selrefs` | `0xbd70` | `0xbda8` | **`+0x38`** |
+| `__AUTH_CONST.__objc_intobj` | `0x1668` | `0x1638` | **`-0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0x11b0` | `0x11e0` | **`+0x30`** |
+| `__TEXT.__swift5_reflstr` | `0x35f` | `0x38f` | **`+0x30`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0xe10` | `0xdf0` | **`-0x20`** |
+| `__AUTH_CONST.__objc_floatobj` | `0xd0` | `0xb0` | **`-0x20`** |
+| `__DATA_CONST.__objc_superrefs` | `0x758` | `0x778` | **`+0x20`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x6f0` | `0x708` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x1608` | `0x1620` | **`+0x18`** |
+| `__TEXT.__swift5_fieldmd` | `0x3d4` | `0x3ec` | **`+0x18`** |
+| `__DATA.__bss` | `0x1b10` | `0x1b20` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x1f8` | `0x1e8` | **`-0x10`** |
+| `__TEXT.__swift_as_cont` | `0x28` | `0x34` | **`+0xc`** |
+| `__DATA_CONST.__objc_protolist` | `0x1a0` | `0x1a8` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x14` | `0x1c` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x14` | `0x1c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -916.45.110.0.0
--  __TEXT.__text: 0x295514
 +916.51.202.0.0
-+  __TEXT.__text: 0x297fa8
-   __TEXT.__delay_helper: 0x1f4
--  __TEXT.__objc_methlist: 0x17460
--  __TEXT.__const: 0x8d04
-+  __TEXT.__objc_methlist: 0x175a0
-+  __TEXT.__const: 0x8d54
-   __TEXT.__dlopen_cstrs: 0x2a2
--  __TEXT.__swift5_typeref: 0x2d8
--  __TEXT.__cstring: 0x4ac49
-   __TEXT.__constg_swiftt: 0x230
--  __TEXT.__swift5_reflstr: 0x35f
--  __TEXT.__swift5_fieldmd: 0x3d4
-+  __TEXT.__swift5_typeref: 0x34e
-   __TEXT.__swift5_builtin: 0x78
--  __TEXT.__swift5_mpenum: 0x8
-+  __TEXT.__swift5_reflstr: 0x38f
-+  __TEXT.__swift5_fieldmd: 0x3ec
-   __TEXT.__swift5_assocty: 0x90
--  __TEXT.__oslogstring: 0x7e71
-+  __TEXT.__swift5_capture: 0x8c
-   __TEXT.__swift5_proto: 0xa0
-   __TEXT.__swift5_types: 0x38
--  __TEXT.__swift_as_entry: 0x14
--  __TEXT.__swift_as_ret: 0x14
--  __TEXT.__swift_as_cont: 0x28
--  __TEXT.__swift5_capture: 0x50
-+  __TEXT.__swift_as_entry: 0x1c
-+  __TEXT.__swift_as_ret: 0x1c
-+  __TEXT.__swift_as_cont: 0x34
-+  __TEXT.__cstring: 0x4ae87
-+  __TEXT.__swift5_mpenum: 0x8
-+  __TEXT.__oslogstring: 0x7f8b
-   __TEXT.__gcc_except_tab: 0x4f0c
--  __TEXT.__unwind_info: 0x6ef8
--  __TEXT.__eh_frame: 0xa60
-+  __TEXT.__unwind_info: 0x7008
-+  __TEXT.__eh_frame: 0xbb0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x44b8
--  __DATA_CONST.__objc_classlist: 0x11b0
-+  __DATA_CONST.__const: 0x4550
-+  __DATA_CONST.__objc_classlist: 0x11e0
-   __DATA_CONST.__objc_catlist: 0x50
--  __DATA_CONST.__objc_protolist: 0x1a0
-+  __DATA_CONST.__objc_protolist: 0x1a8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0xbd70
-+  __DATA_CONST.__objc_selrefs: 0xbda8
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__objc_superrefs: 0x758
--  __DATA_CONST.__objc_arraydata: 0x9660
--  __DATA_CONST.__got: 0x2820
--  __AUTH_CONST.__const: 0x5688
--  __AUTH_CONST.__cfstring: 0x29f40
--  __AUTH_CONST.__objc_const: 0x29e08
-+  __DATA_CONST.__objc_superrefs: 0x778
-+  __DATA_CONST.__objc_arraydata: 0x8fb8
-+  __DATA_CONST.__got: 0x2878
-+  __AUTH_CONST.__const: 0x57a0
-+  __AUTH_CONST.__cfstring: 0x29c00
-+  __AUTH_CONST.__objc_const: 0x2a380
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__objc_intobj: 0x1668
--  __AUTH_CONST.__objc_dictobj: 0x5c08
--  __AUTH_CONST.__objc_doubleobj: 0xe10
--  __AUTH_CONST.__objc_arrayobj: 0x6f0
--  __AUTH_CONST.__objc_floatobj: 0xd0
--  __AUTH_CONST.__auth_got: 0x1508
--  __AUTH.__objc_data: 0xa0
--  __DATA.__objc_ivar: 0x1608
--  __DATA.__data: 0x3c4
--  __DATA_DIRTY.__objc_data: 0xb1f8
-+  __AUTH_CONST.__objc_intobj: 0x1638
-+  __AUTH_CONST.__objc_dictobj: 0x55f0
-+  __AUTH_CONST.__objc_doubleobj: 0xdf0
-+  __AUTH_CONST.__objc_arrayobj: 0x708
-+  __AUTH_CONST.__objc_floatobj: 0xb0
-+  __AUTH_CONST.__auth_got: 0x1610
-+  __AUTH.__objc_data: 0x3c0
-+  __DATA.__objc_ivar: 0x1620
-+  __DATA.__data: 0x444
-+  __DATA_DIRTY.__objc_data: 0xb0b8
-   __DATA_DIRTY.__data: 0x1598
--  __DATA_DIRTY.__bss: 0x1f8
-+  __DATA_DIRTY.__bss: 0x1e8
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9508
 -  Symbols:   16441
 -  CStrings:  7616
 +  Functions: 9572
 +  Symbols:   16531
 +  CStrings:  7611
- 
 Symbols:
 + +[NUAssetCapability(PIAudioMix) audioMix]
 + +[NUAssetCapability(PICinematicVideo) cinematicVideo]

@@ -2,16 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/HealthFoundationUI.framework/HealthFoundationUI`
 
-```diff
+### Section Size Changes
 
- 7027.0.72.2.7
--  __TEXT.__text: 0x317f0
-+  __TEXT.__text: 0x31888
-   __TEXT.__objc_methlist: 0x230
-   __TEXT.__const: 0x1e74
-   __TEXT.__constg_swiftt: 0x123c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x317f0` | `0x31888` | **`+0x98`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2824a0930 -> sub_2831d4930 : 1248 -> 1272
-~ sub_2824a0e10 -> sub_2831d4e28 : 1240 -> 1376
-~ sub_2824a9b78 -> sub_2831ddc18 : 1056 -> 1048
+~ sub_282391930 -> sub_2830a3930 : 1248 -> 1272
+~ sub_282391e10 -> sub_2830a3e28 : 1240 -> 1376
+~ sub_28239ab78 -> sub_2830acc18 : 1056 -> 1048
 ```

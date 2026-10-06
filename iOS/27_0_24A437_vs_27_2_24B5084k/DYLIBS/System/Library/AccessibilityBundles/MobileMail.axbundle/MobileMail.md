@@ -2,43 +2,26 @@
 
 > `/System/Library/AccessibilityBundles/MobileMail.axbundle/MobileMail`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x13544` | `0x13590` | **`+0x4c`** |
+| `__TEXT.__objc_methlist` | `0x184c` | `0x1864` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x158` | `0x160` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x718` | `0x720` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3048.0.0.0.0
--  __TEXT.__text: 0x12dc0
--  __TEXT.__objc_methlist: 0x184c
 +3050.3.0.0.0
-+  __TEXT.__text: 0x12e0c
-+  __TEXT.__objc_methlist: 0x1864
-   __TEXT.__const: 0x30
-   __TEXT.__gcc_except_tab: 0x3b4
-   __TEXT.__cstring: 0x3727
-   __TEXT.__oslogstring: 0x5a
-   __TEXT.__ustring: 0xa
--  __TEXT.__unwind_info: 0x828
-+  __TEXT.__unwind_info: 0x830
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xd88
--  __DATA_CONST.__objc_superrefs: 0x158
-+  __DATA_CONST.__objc_superrefs: 0x160
-   __DATA_CONST.__objc_arraydata: 0x10
-   __DATA_CONST.__got: 0x240
-   __AUTH_CONST.__const: 0x540
-
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 540
--  Symbols:   1725
+-  Symbols:   1394
 +  Functions: 542
-+  Symbols:   1727
-   CStrings:  622
- 
++  Symbols:   1396
 Symbols:
 + -[FilterCriteriaContainerViewAccessibility accessibilityLabel]
 + -[FilterCriteriaContainerViewAccessibility accessibilityTraits]

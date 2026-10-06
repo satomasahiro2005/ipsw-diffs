@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SpotlightUIShared.framework/SpotlightUIShared`
 
-```diff
+### Section Size Changes
 
- 236.0.21.105.0
--  __TEXT.__text: 0xe1cd0
-+  __TEXT.__text: 0xe1d08
-   __TEXT.__objc_methlist: 0xf08
-   __TEXT.__const: 0xa25c
-   __TEXT.__cstring: 0x3408
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe1cd0` | `0xe1d08` | **`+0x38`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1d427d084 -> sub_1d48bf084 : 1924 -> 1928
 ~ sub_1d427d808 -> sub_1d48bf80c : 1860 -> 1844

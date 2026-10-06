@@ -2,81 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/UARPAssetManager.framework/XPCServices/UARPAssetManagerServiceiCloud.xpc/UARPAssetManagerServiceiCloud`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x12070` | `0x12c50` | **`+0xbe0`** |
+| `__TEXT.__objc_methname` | `0x29a5` | `0x2ce1` | **`+0x33c`** |
+| `__DATA.__objc_const` | `0x2198` | `0x2398` | **`+0x200`** |
+| `__TEXT.__objc_stubs` | `0x2560` | `0x2740` | **`+0x1e0`** |
+| `__TEXT.__oslogstring` | `0x1939` | `0x1a37` | **`+0xfe`** |
+| `__TEXT.__objc_methlist` | `0xed4` | `0xfa4` | **`+0xd0`** |
+| `__DATA.__objc_selrefs` | `0xb20` | `0xba8` | **`+0x88`** |
+| `__DATA_CONST.__cfstring` | `0x11c0` | `0x1220` | **`+0x60`** |
+| `__DATA.__objc_data` | `0x4b0` | `0x500` | **`+0x50`** |
+| `__TEXT.__objc_classname` | `0x289` | `0x2b4` | **`+0x2b`** |
+| `__TEXT.__objc_methtype` | `0x83c` | `0x864` | **`+0x28`** |
+| `__DATA.__objc_ivar` | `0x100` | `0x120` | **`+0x20`** |
+| `__TEXT.__auth_stubs` | `0x610` | `0x630` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x450` | `0x470` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0x318` | `0x328` | **`+0x10`** |
+| `__TEXT.__cstring` | `0x197d` | `0x1989` | **`+0xc`** |
+| `__DATA_CONST.__got` | `0x1c0` | `0x1c8` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x78` | `0x80` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__data`
+- `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -1587.0.27.0.0
--  __TEXT.__text: 0x12070
--  __TEXT.__auth_stubs: 0x610
--  __TEXT.__objc_stubs: 0x2560
--  __TEXT.__objc_methlist: 0xed4
--  __TEXT.__objc_classname: 0x289
--  __TEXT.__cstring: 0x197d
--  __TEXT.__objc_methname: 0x29a5
--  __TEXT.__objc_methtype: 0x83c
 +1587.2.2.0.0
-+  __TEXT.__text: 0x12c50
-+  __TEXT.__auth_stubs: 0x630
-+  __TEXT.__objc_stubs: 0x2740
-+  __TEXT.__objc_methlist: 0xfa4
-+  __TEXT.__objc_classname: 0x2b4
-+  __TEXT.__cstring: 0x1989
-+  __TEXT.__objc_methname: 0x2ce1
-+  __TEXT.__objc_methtype: 0x864
-   __TEXT.__const: 0x90
--  __TEXT.__oslogstring: 0x1939
-+  __TEXT.__oslogstring: 0x1a37
-   __TEXT.__gcc_except_tab: 0x114
--  __TEXT.__unwind_info: 0x450
-+  __TEXT.__unwind_info: 0x470
-   __DATA_CONST.__const: 0x640
--  __DATA_CONST.__cfstring: 0x11c0
--  __DATA_CONST.__objc_classlist: 0x78
-+  __DATA_CONST.__cfstring: 0x1220
-+  __DATA_CONST.__objc_classlist: 0x80
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x60
-   __DATA_CONST.__objc_intobj: 0x18
--  __DATA_CONST.__auth_got: 0x318
--  __DATA_CONST.__got: 0x1c0
-+  __DATA_CONST.__auth_got: 0x328
-+  __DATA_CONST.__got: 0x1c8
-   __DATA_CONST.__auth_ptr: 0x8
--  __DATA.__objc_const: 0x2198
--  __DATA.__objc_selrefs: 0xb20
--  __DATA.__objc_ivar: 0x100
--  __DATA.__objc_data: 0x4b0
-+  __DATA.__objc_const: 0x2398
-+  __DATA.__objc_selrefs: 0xba8
-+  __DATA.__objc_ivar: 0x120
-+  __DATA.__objc_data: 0x500
-   __DATA.__data: 0x360
-   __DATA.__bss: 0x10
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 383
 -  Symbols:   264
 -  CStrings:  883
 +  Functions: 408
 +  Symbols:   269
 +  CStrings:  919
- 
 Symbols:
 + _NSTemporaryDirectory
 + _OBJC_CLASS_$_NSUUID

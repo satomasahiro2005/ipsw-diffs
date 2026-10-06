@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/People.framework/People`
 
-```diff
+### Section Size Changes
 
- 147.0.0.0.0
--  __TEXT.__text: 0xf68bc
-+  __TEXT.__text: 0xf692c
-   __TEXT.__objc_methlist: 0x7a0
-   __TEXT.__const: 0xa1a0
-   __TEXT.__gcc_except_tab: 0x24
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf68bc` | `0xf692c` | **`+0x70`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_23cfb9784 -> sub_23d8e8784 : 2212 -> 2216
 ~ sub_23cfd178c -> sub_23d900790 : 612 -> 624

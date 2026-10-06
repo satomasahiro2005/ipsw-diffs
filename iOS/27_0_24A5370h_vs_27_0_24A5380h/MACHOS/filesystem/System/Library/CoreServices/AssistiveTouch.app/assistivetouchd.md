@@ -2,117 +2,73 @@
 
 > `/System/Library/CoreServices/AssistiveTouch.app/assistivetouchd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15e3c0` | `0x15e8bc` | **`+0x4fc`** |
+| `__TEXT.__oslogstring` | `0x6c4f` | `0x6ad8` | **`-0x177`** |
+| `__DATA_CONST.__got` | `0x1b08` | `0x1be8` | **`+0xe0`** |
+| `__TEXT.__objc_methname` | `0x376e0` | `0x377c0` | **`+0xe0`** |
+| `__TEXT.__eh_frame` | `0x4810` | `0x48d0` | **`+0xc0`** |
+| `__DATA.__bss` | `0x4cb0` | `0x4d30` | **`+0x80`** |
+| `__TEXT.__cstring` | `0xddfe` | `0xde66` | **`+0x68`** |
+| `__TEXT.__objc_stubs` | `0x2b660` | `0x2b6c0` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x6a20` | `0x6a70` | **`+0x50`** |
+| `__TEXT.__auth_stubs` | `0x4030` | `0x4080` | **`+0x50`** |
+| `__TEXT.__const` | `0x45a0` | `0x45f0` | **`+0x50`** |
+| `__DATA_CONST.__cfstring` | `0x9e60` | `0x9e20` | **`-0x40`** |
+| `__TEXT.__unwind_info` | `0x5f08` | `0x5f48` | **`+0x40`** |
+| `__TEXT.__swift5_capture` | `0x754` | `0x788` | **`+0x34`** |
+| `__DATA_CONST.__auth_got` | `0x2028` | `0x2050` | **`+0x28`** |
+| `__DATA.__objc_const` | `0x1c368` | `0x1c388` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x1537c` | `0x1539c` | **`+0x20`** |
+| `__DATA.__objc_selrefs` | `0xc2b8` | `0xc2d0` | **`+0x18`** |
+| `__DATA_CONST.__auth_ptr` | `0xb68` | `0xb80` | **`+0x18`** |
+| `__DATA.__data` | `0x41a0` | `0x4190` | **`-0x10`** |
+| `__TEXT.__swift5_typeref` | `0x1568` | `0x1578` | **`+0x10`** |
+| `__TEXT.__objc_methtype` | `0x75ba` | `0x75ad` | **`-0xd`** |
+| `__DATA.__objc_ivar` | `0x12a0` | `0x12a4` | **`+0x4`** |
+| `__TEXT.__swift5_proto` | `0x260` | `0x264` | **`+0x4`** |
+| `__TEXT.__swift_as_cont` | `0x304` | `0x308` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0x3d8` | `0x3dc` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA.__objc_stublist`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x15e3c0
--  __TEXT.__auth_stubs: 0x4030
--  __TEXT.__objc_stubs: 0x2b660
--  __TEXT.__objc_methlist: 0x1537c
--  __TEXT.__const: 0x45a0
-+  __TEXT.__text: 0x15e8bc
-+  __TEXT.__auth_stubs: 0x4080
-+  __TEXT.__objc_stubs: 0x2b6c0
-+  __TEXT.__objc_methlist: 0x1539c
-+  __TEXT.__const: 0x45f0
-   __TEXT.__dlopen_cstrs: 0x131
--  __TEXT.__swift5_typeref: 0x1568
-+  __TEXT.__swift5_typeref: 0x1578
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__constg_swiftt: 0x1c1c
-   __TEXT.__swift5_builtin: 0x1e0
-   __TEXT.__swift5_reflstr: 0xf7f
-   __TEXT.__swift5_fieldmd: 0xf64
-   __TEXT.__swift5_assocty: 0x2b8
--  __TEXT.__swift5_proto: 0x260
-+  __TEXT.__swift5_proto: 0x264
-   __TEXT.__swift5_types: 0x12c
-   __TEXT.__objc_classname: 0x2a44
--  __TEXT.__objc_methtype: 0x75ba
--  __TEXT.__objc_methname: 0x376e0
--  __TEXT.__cstring: 0xddfe
--  __TEXT.__swift5_capture: 0x754
--  __TEXT.__oslogstring: 0x6c4f
-+  __TEXT.__objc_methtype: 0x75ad
-+  __TEXT.__objc_methname: 0x377c0
-+  __TEXT.__cstring: 0xde66
-+  __TEXT.__swift5_capture: 0x788
-+  __TEXT.__oslogstring: 0x6ad8
-   __TEXT.__swift5_protos: 0x18
--  __TEXT.__swift_as_entry: 0x3d8
-+  __TEXT.__swift_as_entry: 0x3dc
-   __TEXT.__swift_as_ret: 0x150
--  __TEXT.__swift_as_cont: 0x304
-+  __TEXT.__swift_as_cont: 0x308
-   __TEXT.__gcc_except_tab: 0x29fc
--  __TEXT.__unwind_info: 0x5f08
--  __TEXT.__eh_frame: 0x4810
--  __DATA_CONST.__const: 0x6a20
--  __DATA_CONST.__cfstring: 0x9e60
-+  __TEXT.__unwind_info: 0x5f48
-+  __TEXT.__eh_frame: 0x48d0
-+  __DATA_CONST.__const: 0x6a70
-+  __DATA_CONST.__cfstring: 0x9e20
-   __DATA_CONST.__objc_classlist: 0x738
-   __DATA_CONST.__objc_catlist: 0x50
-   __DATA_CONST.__objc_protolist: 0x420
+-1497.0.0.0.0
++1500.0.0.0.0
 
-   __DATA_CONST.__objc_arrayobj: 0x348
-   __DATA_CONST.__objc_intobj: 0x7f8
-   __DATA_CONST.__objc_dictobj: 0x280
--  __DATA_CONST.__auth_got: 0x2028
--  __DATA_CONST.__got: 0x1b08
--  __DATA_CONST.__auth_ptr: 0xb68
--  __DATA.__objc_const: 0x1c368
--  __DATA.__objc_selrefs: 0xc2b8
--  __DATA.__objc_ivar: 0x12a0
-+  __DATA_CONST.__auth_got: 0x2050
-+  __DATA_CONST.__got: 0x1be8
-+  __DATA_CONST.__auth_ptr: 0xb80
-+  __DATA.__objc_const: 0x1c388
-+  __DATA.__objc_selrefs: 0xc2d0
-+  __DATA.__objc_ivar: 0x12a4
-   __DATA.__objc_data: 0x5ff8
--  __DATA.__data: 0x41a0
-+  __DATA.__data: 0x4190
-   __DATA.__objc_stublist: 0x18
--  __DATA.__bss: 0x4cb0
-+  __DATA.__bss: 0x4d30
-   __DATA.__common: 0xb8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9167
 -  Symbols:   2274
--  CStrings:  13193
+-  CStrings:  11874
 +  Functions: 9180
 +  Symbols:   2282
-+  CStrings:  13192
- 
-Sections:
-~ __TEXT.__swift5_entry : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__objc_stublist : content changed
-~ __DATA.__common : content changed
++  CStrings:  11875
 Symbols:
 + _$s16AssistiveTouchUI0aB20VolumeLevelProvidingMp
 + _$s16AssistiveTouchUI0aB20VolumeLevelProvidingP06volumeE012CoreGraphics7CGFloatVvgTq
@@ -158,5 +114,4 @@ CStrings:
 - "homeAffordance"
 - "removeAvoidanceFrameForIdentifier:"
 - "topNotch"
-
 ```

@@ -2,34 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/AltruisticBodyPoseKit.framework/AltruisticBodyPoseKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x477dc` | `0x476f0` | **`-0xec`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x477dc
-+  __TEXT.__text: 0x476f0
-   __TEXT.__objc_methlist: 0x2d4c
-   __TEXT.__const: 0xddc
-   __TEXT.__oslogstring: 0x436d
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
+-29.0.0.0.0
++29.0.1.0.0
 Functions:
 ~ __ZN4abpk19extractHumansLegacyEPKDF16_S1_S1_RKNSt3__15arrayImLm3EEES6_S6_bj : 4728 -> 4712
 ~ __ZNSt3__18__uniqueB9fqe220106INS_17_ClassicAlgPolicyENS_11__wrap_iterIPN4abpk4peakEEES6_RPFbRKS4_S8_EEENS_4pairIT0_SD_EESD_T1_OT2_ : 188 -> 168
@@ -54,5 +38,4 @@ Functions:
 ~ _detectRaisingHand : 1072 -> 1076
 ~ __ZNSt3__15dequeINS_4pairIiiEENS_9allocatorIS2_EEE19__add_back_capacityEv : 484 -> 472
 ~ -[ABPKCameraRegistration runCameraRegistrationWithImageIntrinsics:imageResolution:liftingResult:] : 1672 -> 1676
-
 ```

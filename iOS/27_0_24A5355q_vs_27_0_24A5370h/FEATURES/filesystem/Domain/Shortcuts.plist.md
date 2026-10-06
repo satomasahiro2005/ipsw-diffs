@@ -4,21 +4,12 @@
 
 ```diff
 
- 		<key>DevelopmentPhase</key>
- 		<string>FeatureComplete</string>
- 	</dict>
 -	<key>perception_automations</key>
 -	<dict>
 -		<key>DevelopmentPhase</key>
 -		<string>FeatureComplete</string>
 -	</dict>
- 	<key>person_name_components_parameter</key>
- 	<dict>
- 		<key>DevelopmentPhase</key>
 
- 		<key>DevelopmentPhase</key>
- 		<string>FeatureComplete</string>
- 	</dict>
 -	<key>use_model_external_partners</key>
 -	<dict>
 -		<key>DevelopmentPhase</key>
@@ -49,8 +40,5 @@
 -		<key>DevelopmentPhase</key>
 -		<string>FeatureComplete</string>
 -	</dict>
- </dict>
- </plist>
- 
 
 ```

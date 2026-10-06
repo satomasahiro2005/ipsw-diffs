@@ -2,97 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/SiriUIFoundation.framework/SiriUIFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9195c` | `0x91fec` | **`+0x690`** |
+| `__TEXT.__gcc_except_tab` | `0x984` | `0xa28` | **`+0xa4`** |
+| `__AUTH_CONST.__const` | `0x3aa1` | `0x3b41` | **`+0xa0`** |
+| `__TEXT.__eh_frame` | `0x23c8` | `0x2458` | **`+0x90`** |
+| `__TEXT.__cstring` | `0x6676` | `0x66e6` | **`+0x70`** |
+| `__TEXT.__unwind_info` | `0x2738` | `0x2788` | **`+0x50`** |
+| `__TEXT.__swift5_capture` | `0x734` | `0x77c` | **`+0x48`** |
+| `__TEXT.__const` | `0x387c` | `0x38bc` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x19b0` | `0x19d8` | **`+0x28`** |
+| `__AUTH_CONST.__objc_const` | `0x9080` | `0x90a0` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x4748` | `0x4768` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x10fa` | `0x111a` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xf40` | `0xf28` | **`-0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2fa8` | `0x2fc0` | **`+0x18`** |
+| `__TEXT.__swift5_fieldmd` | `0xf7c` | `0xf94` | **`+0x18`** |
+| `__TEXT.__swift5_typeref` | `0x1594` | `0x15aa` | **`+0x16`** |
+| `__DATA_DIRTY.__data` | `0x9d0` | `0x9e0` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x180` | `0x188` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x438` | `0x43c` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0xe8` | `0xec` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3600.55.37.11.4
--  __TEXT.__text: 0x8ca68
--  __TEXT.__objc_methlist: 0x4748
--  __TEXT.__const: 0x387c
--  __TEXT.__cstring: 0x6676
 +3605.22.2.0.0
-+  __TEXT.__text: 0x8d0e0
-+  __TEXT.__objc_methlist: 0x4768
-+  __TEXT.__const: 0x38bc
-+  __TEXT.__cstring: 0x66e6
-   __TEXT.__oslogstring: 0x6fab
--  __TEXT.__gcc_except_tab: 0x984
-+  __TEXT.__gcc_except_tab: 0xa28
-   __TEXT.__ustring: 0x22
-   __TEXT.__dlopen_cstrs: 0x58
--  __TEXT.__swift5_typeref: 0x1594
--  __TEXT.__swift5_capture: 0x734
-+  __TEXT.__swift5_typeref: 0x15aa
-+  __TEXT.__swift5_capture: 0x77c
-   __TEXT.__constg_swiftt: 0x14d4
--  __TEXT.__swift5_reflstr: 0x10fa
--  __TEXT.__swift5_fieldmd: 0xf7c
-+  __TEXT.__swift5_reflstr: 0x111a
-+  __TEXT.__swift5_fieldmd: 0xf94
-   __TEXT.__swift5_builtin: 0x64
-   __TEXT.__swift5_proto: 0x254
-   __TEXT.__swift5_types: 0x130
--  __TEXT.__swift_as_entry: 0xe8
-+  __TEXT.__swift_as_entry: 0xec
-   __TEXT.__swift_as_ret: 0xfc
--  __TEXT.__swift_as_cont: 0x180
-+  __TEXT.__swift_as_cont: 0x188
-   __TEXT.__swift5_protos: 0x28
-   __TEXT.__swift5_assocty: 0x228
-   __TEXT.__swift5_mpenum: 0x1c
--  __TEXT.__unwind_info: 0x2f10
--  __TEXT.__eh_frame: 0x23c8
-+  __TEXT.__unwind_info: 0x2f50
-+  __TEXT.__eh_frame: 0x2458
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x19b0
-+  __DATA_CONST.__const: 0x19d8
-   __DATA_CONST.__objc_classlist: 0x330
-   __DATA_CONST.__objc_catlist: 0x160
-   __DATA_CONST.__objc_protolist: 0x160
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2fa8
-+  __DATA_CONST.__objc_selrefs: 0x2fc0
-   __DATA_CONST.__objc_protorefs: 0x78
-   __DATA_CONST.__objc_superrefs: 0x178
-   __DATA_CONST.__objc_arraydata: 0x30
-   __DATA_CONST.__got: 0xa98
--  __AUTH_CONST.__const: 0x3aa1
-+  __AUTH_CONST.__const: 0x3b41
-   __AUTH_CONST.__cfstring: 0x23c0
--  __AUTH_CONST.__objc_const: 0x9080
-+  __AUTH_CONST.__objc_const: 0x90a0
-   __AUTH_CONST.__objc_intobj: 0x120
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0xf40
-+  __AUTH_CONST.__auth_got: 0xf28
-   __AUTH.__objc_data: 0x1170
-   __AUTH.__data: 0xc28
--  __DATA.__objc_ivar: 0x438
-+  __DATA.__objc_ivar: 0x43c
-   __DATA.__data: 0x1750
-   __DATA.__common: 0x48
-   __DATA_DIRTY.__objc_data: 0xf48
--  __DATA_DIRTY.__data: 0x9d0
-+  __DATA_DIRTY.__data: 0x9e0
-   __DATA_DIRTY.__bss: 0x208
-   __DATA_DIRTY.__common: 0x88
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3376
--  Symbols:   4837
+-  Symbols:   3746
 -  CStrings:  1129
 +  Functions: 3392
-+  Symbols:   4848
++  Symbols:   3757
 +  CStrings:  1132
- 
 Symbols:
 + +[SRUIFIntelligenceFlowFeatureFlag(SWEFeatureFlags) isDashboardCampoEnabled]
 + +[SRUIFSiriFeatureFlag(SWEFeatureFlags) isContinuousConversationHomepodEnabled]
@@ -106,20 +53,10 @@ Symbols:
 + ___swift_closure_destructor.64Tm
 + __dispatch_queue_attr_concurrent
 + _dispatch_barrier_sync
-+ _objc_msgSend$allValues
-+ _objc_msgSend$isContinuousConversationHomepodEnabled
-+ _objc_msgSend$sendEmphasisUpdateWithIdentifier:appBundleId:personaId:completionHandler:
-+ _objc_msgSend$setInteractionLinkId:
-+ _objc_msgSend$setLogLinkId:
 + _symbolic So8NSStringC
 + _symbolic So8NSStringCSg
 - ___block_descriptor_48_e8_32s40s_e48_v32?0"NSString"8"SRUIFAceCommandRecord"16^B24ls32l8s40l8
 - ___swift_closure_destructor.57Tm
-- _objc_msgSend$_recordsByCommandIdentifier
-- _objc_msgSend$aceCommandWithIdentifier:
-- _objc_msgSend$setSiriAceViewId:
-- _objc_msgSend$setSiriInputStreamId:
-- _objc_msgSend$setSiriRequestId:
 - _symbolic _____Sg 18AppIntentsServices0bC0O14InterfaceIdiomO
 CStrings:
 + "-[SRUIFAceCommandRecords registerAceCommand:completion:]_block_invoke"

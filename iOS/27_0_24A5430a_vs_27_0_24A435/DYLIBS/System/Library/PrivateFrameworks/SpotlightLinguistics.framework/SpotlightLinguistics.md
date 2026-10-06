@@ -2,23 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/SpotlightLinguistics.framework/SpotlightLinguistics`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x472ec` | `0x472f4` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 2459.105.0.0.0
--  __TEXT.__text: 0x472ec
-+  __TEXT.__text: 0x472f4
-   __TEXT.__const: 0x5500
-   __TEXT.__oslogstring: 0xe28
-   __TEXT.__cstring: 0x2c54
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1288
 +  Functions: 1287
-   Symbols:   1807
-   CStrings:  1016
- 
 Functions:
 ~ _data_entry_store : 304 -> 312
 ~ __CITokenizerGetTokens : 6180 -> 6184

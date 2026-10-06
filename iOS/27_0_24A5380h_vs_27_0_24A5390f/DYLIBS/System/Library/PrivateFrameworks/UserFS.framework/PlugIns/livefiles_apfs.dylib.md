@@ -2,35 +2,23 @@
 
 > `/System/Library/PrivateFrameworks/UserFS.framework/PlugIns/livefiles_apfs.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__AUTH_CONST.__const`
-- `__AUTH.__data`
-- `__DATA.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb1678` | `0xb19ec` | **`+0x374`** |
+| `__TEXT.__oslogstring` | `0x1635c` | `0x16438` | **`+0xdc`** |
+| `__TEXT.__cstring` | `0x5c26` | `0x5c33` | **`+0xd`** |
+
+### Other Changes
 
 ```diff
 
 -3283.0.9.502.1
--  __TEXT.__text: 0xb1678
 +3283.0.13.0.0
-+  __TEXT.__text: 0xb19ec
-   __TEXT.__const: 0x86b0
--  __TEXT.__oslogstring: 0x1635c
--  __TEXT.__cstring: 0x5c26
-+  __TEXT.__oslogstring: 0x16438
-+  __TEXT.__cstring: 0x5c33
-   __TEXT.__unwind_info: 0x1090
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x3c8
 
-   - /usr/lib/libutil.dylib
-   Functions: 2581
-   Symbols:   1505
 -  CStrings:  2239
 +  CStrings:  2243
- 
 Functions:
 ~ _nx_check : 22440 -> 22448
 ~ _apfs_init : 560 -> 604

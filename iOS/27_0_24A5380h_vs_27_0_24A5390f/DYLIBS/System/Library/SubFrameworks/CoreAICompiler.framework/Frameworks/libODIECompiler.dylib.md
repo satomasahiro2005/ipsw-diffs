@@ -2,53 +2,31 @@
 
 > `/System/Library/SubFrameworks/CoreAICompiler.framework/Frameworks/libODIECompiler.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH.__thread_vars`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc64ac8` | `0xc653e8` | **`+0x920`** |
+| `__TEXT.__cstring` | `0xab4a7` | `0xab8db` | **`+0x434`** |
+| `__AUTH_CONST.__const` | `0x5dae8` | `0x5db48` | **`+0x60`** |
+| `__DATA.__data` | `0x4310` | `0x42f0` | **`-0x20`** |
+| `__TEXT.__unwind_info` | `0x2cf10` | `0x2cf30` | **`+0x20`** |
+| `__AUTH.__data` | `0x60b0` | `0x6098` | **`-0x18`** |
+| `__TEXT.__const` | `0x2a0c` | `0x2a1c` | **`+0x10`** |
+
+### Other Changes
 
 ```diff
 
 -3600.75.3.0.0
--  __TEXT.__text: 0xc64ac8
 +3600.79.1.0.0
-+  __TEXT.__text: 0xc653e8
-   __TEXT.__init_offsets: 0x30
--  __TEXT.__const: 0x2a0c
-+  __TEXT.__const: 0x2a1c
-   __TEXT.__oslogstring: 0x3b
--  __TEXT.__cstring: 0xab4a7
--  __TEXT.__unwind_info: 0x2cf10
-+  __TEXT.__cstring: 0xab8db
-+  __TEXT.__unwind_info: 0x2cf30
-   __TEXT.__eh_frame: 0x128
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x27b8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x5dae8
-+  __AUTH_CONST.__const: 0x5db48
-   __AUTH_CONST.__weak_auth_got: 0x48
-   __AUTH_CONST.__auth_got: 0x6f8
--  __AUTH.__data: 0x60b0
-+  __AUTH.__data: 0x6098
-   __AUTH.__thread_vars: 0x108
-   __AUTH.__thread_bss: 0x230
--  __DATA.__data: 0x4310
-+  __DATA.__data: 0x42f0
-   __DATA.__bss: 0x4430
-   __DATA.__common: 0x2660
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
+
 -  Functions: 74707
 -  Symbols:   83190
 -  CStrings:  11434
 +  Functions: 74698
 +  Symbols:   83181
 +  CStrings:  11452
- 
 Symbols:
 + __ZN4llvm12function_refIFvPN4mlir9OperationEEE11callback_fnIZNS1_4ODIE8Compiler10Transforms12_GLOBAL__N_126AnnotateSymbolMetadataPass14runOnOperationEvEUlS3_E_EEvlS3_
 + __ZN4llvm15SmallVectorImplIN4mlir14NamedAttributeEE12emplace_backIJNS1_10StringAttrES5_EEERS2_DpOT_

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AppleMediaServicesUIKitInternal.framework/AppleMediaServicesUIKitInternal`
 
-```diff
+### Section Size Changes
 
- 2.0.29.0.0
--  __TEXT.__text: 0xea340
-+  __TEXT.__text: 0xea38c
-   __TEXT.__objc_methlist: 0x2d0
-   __TEXT.__const: 0x95f4
-   __TEXT.__constg_swiftt: 0x3344
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xea340` | `0xea38c` | **`+0x4c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1d0daa8f0 -> sub_1d13e48f0 : 1828 -> 1836
 ~ sub_1d0dab014 -> sub_1d13e501c : 2164 -> 2156

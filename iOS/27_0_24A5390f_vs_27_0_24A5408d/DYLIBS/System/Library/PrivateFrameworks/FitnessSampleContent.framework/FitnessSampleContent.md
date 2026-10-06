@@ -2,53 +2,28 @@
 
 > `/System/Library/PrivateFrameworks/FitnessSampleContent.framework/FitnessSampleContent`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x219f8` | `0x2115c` | **`-0x89c`** |
+| `__TEXT.__swift5_typeref` | `0x1af8` | `0x19bc` | **`-0x13c`** |
+| `__TEXT.__const` | `0x2cd4` | `0x2c94` | **`-0x40`** |
+| `__DATA_DIRTY.__data` | `0xaa8` | `0xa78` | **`-0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x828` | `0x818` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x8a8` | `0x898` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.134.0.0
--  __TEXT.__text: 0x219f8
--  __TEXT.__const: 0x2cd4
 +2027.0.146.0.2
-+  __TEXT.__text: 0x2115c
-+  __TEXT.__const: 0x2c94
-   __TEXT.__constg_swiftt: 0x718
--  __TEXT.__swift5_typeref: 0x1af8
-+  __TEXT.__swift5_typeref: 0x19bc
-   __TEXT.__swift5_fieldmd: 0x780
-   __TEXT.__swift5_types: 0xb4
-   __TEXT.__cstring: 0x38d
 
-   __TEXT.__swift_as_cont: 0x24
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x8a8
-+  __TEXT.__unwind_info: 0x898
-   __TEXT.__eh_frame: 0x678
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x1228
-   __AUTH_CONST.__objc_const: 0x1b0
--  __AUTH_CONST.__auth_got: 0x828
-+  __AUTH_CONST.__auth_got: 0x818
-   __AUTH.__data: 0x130
-   __DATA.__data: 0x4f8
-   __DATA.__bss: 0x2b20
--  __DATA_DIRTY.__data: 0xaa8
-+  __DATA_DIRTY.__data: 0xa78
-   __DATA_DIRTY.__common: 0x8
-   __DATA_DIRTY.__bss: 0x1a00
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 797
--  Symbols:   454
+-  Symbols:   452
 +  Functions: 789
-+  Symbols:   452
-   CStrings:  27
- 
++  Symbols:   450
 Symbols:
 + _get_witness_table 7SwiftUI4ViewRzlqd__AaBHD2_AaBP011FitnessCoreB0E25fitnessAccessibilityScopeyQrSSd_tFQOyAA15ModifiedContentVyAGyAA6VStackVyAA05TupleJ0VyAGyAGyAA6HStackVyAKyAIyAKyAA4TextV_AA012_ConditionalJ0VyAoGyAoA16_FixedSizeLayoutVGGQPGG_AA6SpacerVAcDE0fG10IdentifieryQrSSd_tFQOyAA4MenuVyAGyAGyAGyAA06_ShapeC0VyAA6CircleVAA5ColorVGAA06_FrameR0VGAA16_OverlayModifierVyAcAE011dynamicTypeQ0yQrqd__SXRd__AA011DynamicTypeQ0O5BoundRtd__lFQOyAGyAGyAGyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGA21_yA19_5ScaleOGGA21_yA6_SgGG_s19PartialRangeThroughVyA15_GQo_GGAA0G18AttachmentModifierVGAA6ButtonVyAOGG_Qo_QPGGAA05_FlexyR0VGA21_yAO4CaseOSgGG_AQyAQyAGyAGyAGyA6_AA012_AspectRatioR0VGA51_GA12_yAGyAGyAGyAGyAIyAKyAO_AoGyAGyA45_A21_yAA03AnyV5StyleVSgGGAA08_PaddingR0VGQPGGA21_yAA0N9AlignmentOGGA51_GA68_GA68_GGGA78_GAQyAQyAcAE8redacted6reasonQrAA16RedactionReasonsV_tFQOyAA9LazyVGridVyAA7ForEachVySay0d6SampleJ006SampleJ4ItemVGSSAcDEAZyQrSSd_tFQOyA44_yAGyAGyAGyAMyAKyAGyAGyAGyxA59_GA9_GAA11_ClipEffectVyAA16RoundedRectangleVGG_AGyAIyAKyAO_AOQPGGA51_GAcDEAZyQrSSd_tFQOyAGyAGyAGyAGyA19_A29_GA25_GAA24_ForegroundStyleModifierVyA6_GGA41_G_Qo_SgQPGGA68_GA68_GAA19_BackgroundModifierVyA2_yA99_A6_GGGG_Qo_GG_Qo_A126_GA81_GGQPGGA51_GAA25_AppearanceActionModifierVG_Qo_HO
 + _objc_retain_x24

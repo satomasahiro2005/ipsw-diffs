@@ -2,109 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/HealthUI.framework/HealthUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x44cc58` | `0x471fa0` | **`+0x25348`** |
+| `__AUTH.__objc_data` | `0x18548` | `0x19058` | **`+0xb10`** |
+| `__TEXT.__cstring` | `0x2355f` | `0x23f4f` | **`+0x9f0`** |
+| `__AUTH_CONST.__objc_const` | `0x66650` | `0x66f60` | **`+0x910`** |
+| `__AUTH_CONST.__const` | `0x8c10` | `0x9238` | **`+0x628`** |
+| `__TEXT.__objc_methlist` | `0x3b5dc` | `0x3bafc` | **`+0x520`** |
+| `__TEXT.__constg_swiftt` | `0x4ee8` | `0x533c` | **`+0x454`** |
+| `__TEXT.__unwind_info` | `0xf430` | `0xf7d8` | **`+0x3a8`** |
+| `__TEXT.__const` | `0x8d94` | `0x9054` | **`+0x2c0`** |
+| `__DATA.__bss` | `0x7050` | `0x72d0` | **`+0x280`** |
+| `__TEXT.__swift5_reflstr` | `0x31f6` | `0x3436` | **`+0x240`** |
+| `__TEXT.__swift5_fieldmd` | `0x3118` | `0x3304` | **`+0x1ec`** |
+| `__AUTH_CONST.__cfstring` | `0x1ea40` | `0x1ec20` | **`+0x1e0`** |
+| `__TEXT.__eh_frame` | `0x3340` | `0x3510` | **`+0x1d0`** |
+| `__DATA.__data` | `0x8378` | `0x8538` | **`+0x1c0`** |
+| `__AUTH.__data` | `0x2670` | `0x2810` | **`+0x1a0`** |
+| `__AUTH_CONST.__auth_got` | `0x3158` | `0x32c0` | **`+0x168`** |
+| `__TEXT.__swift5_capture` | `0x14d4` | `0x15d4` | **`+0x100`** |
+| `__DATA_CONST.__got` | `0x38b0` | `0x39a8` | **`+0xf8`** |
+| `__TEXT.__swift5_typeref` | `0x3544` | `0x360e` | **`+0xca`** |
+| `__DATA_CONST.__objc_selrefs` | `0x18b90` | `0x18c40` | **`+0xb0`** |
+| `__TEXT.__oslogstring` | `0x7635` | `0x76a5` | **`+0x70`** |
+| `__DATA_CONST.__objc_classlist` | `0x21c8` | `0x2218` | **`+0x50`** |
+| `__DATA.__common` | `0x260` | `0x2a8` | **`+0x48`** |
+| `__DATA.__objc_ivar` | `0x407c` | `0x40ac` | **`+0x30`** |
+| `__TEXT.__swift5_types` | `0x3f4` | `0x424` | **`+0x30`** |
+| `__TEXT.__swift5_proto` | `0x398` | `0x3bc` | **`+0x24`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x330` | `0x350` | **`+0x20`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1878` | `0x1898` | **`+0x20`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0xf60` | `0xf78` | **`+0x18`** |
+| `__DATA_CONST.__objc_arraydata` | `0x2080` | `0x2098` | **`+0x18`** |
+| `__TEXT.__swift_as_cont` | `0x144` | `0x158` | **`+0x14`** |
+| `__DATA_CONST.__const` | `0x79e0` | `0x79e8` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x80` | `0x88` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x94` | `0x98` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
- 7027.0.72.2.7
--  __TEXT.__text: 0x44cc58
--  __TEXT.__objc_methlist: 0x3b5dc
--  __TEXT.__const: 0x8d94
-+  __TEXT.__text: 0x471fa0
-+  __TEXT.__objc_methlist: 0x3bafc
-+  __TEXT.__const: 0x9054
-   __TEXT.__gcc_except_tab: 0x23d4
--  __TEXT.__cstring: 0x2355f
--  __TEXT.__oslogstring: 0x7635
-+  __TEXT.__cstring: 0x23f4f
-+  __TEXT.__oslogstring: 0x76a5
-   __TEXT.__ustring: 0x56
-   __TEXT.__dlopen_cstrs: 0x367
--  __TEXT.__constg_swiftt: 0x4ee8
--  __TEXT.__swift5_typeref: 0x3544
-+  __TEXT.__constg_swiftt: 0x533c
-+  __TEXT.__swift5_typeref: 0x360e
-   __TEXT.__swift5_builtin: 0x2f8
--  __TEXT.__swift5_reflstr: 0x31f6
--  __TEXT.__swift5_fieldmd: 0x3118
-+  __TEXT.__swift5_reflstr: 0x3436
-+  __TEXT.__swift5_fieldmd: 0x3304
-   __TEXT.__swift5_assocty: 0x7e8
--  __TEXT.__swift5_proto: 0x398
--  __TEXT.__swift5_types: 0x3f4
--  __TEXT.__swift5_capture: 0x14d4
-+  __TEXT.__swift5_proto: 0x3bc
-+  __TEXT.__swift5_types: 0x424
-+  __TEXT.__swift5_capture: 0x15d4
-   __TEXT.__swift5_protos: 0x6c
--  __TEXT.__swift_as_entry: 0x94
--  __TEXT.__swift_as_ret: 0x80
--  __TEXT.__swift_as_cont: 0x144
-+  __TEXT.__swift_as_entry: 0x98
-+  __TEXT.__swift_as_ret: 0x88
-+  __TEXT.__swift_as_cont: 0x158
-   __TEXT.__swift5_mpenum: 0x38
--  __TEXT.__unwind_info: 0xf430
--  __TEXT.__eh_frame: 0x3340
-+  __TEXT.__unwind_info: 0xf7d8
-+  __TEXT.__eh_frame: 0x3510
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x79e0
--  __DATA_CONST.__objc_classlist: 0x21c8
-+  __DATA_CONST.__const: 0x79e8
-+  __DATA_CONST.__objc_classlist: 0x2218
-   __DATA_CONST.__objc_catlist: 0x2a8
-   __DATA_CONST.__objc_protolist: 0x6d0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x18b90
-+  __DATA_CONST.__objc_selrefs: 0x18c40
-   __DATA_CONST.__objc_protorefs: 0x190
--  __DATA_CONST.__objc_superrefs: 0x1878
--  __DATA_CONST.__objc_arraydata: 0x2080
--  __DATA_CONST.__got: 0x38b0
--  __AUTH_CONST.__const: 0x8c10
--  __AUTH_CONST.__cfstring: 0x1ea40
--  __AUTH_CONST.__objc_const: 0x66650
-+  __DATA_CONST.__objc_superrefs: 0x1898
-+  __DATA_CONST.__objc_arraydata: 0x2098
-+  __DATA_CONST.__got: 0x39a8
-+  __AUTH_CONST.__const: 0x9238
-+  __AUTH_CONST.__cfstring: 0x1ec20
-+  __AUTH_CONST.__objc_const: 0x66f60
-   __AUTH_CONST.__objc_intobj: 0x2a00
--  __AUTH_CONST.__objc_doubleobj: 0x330
--  __AUTH_CONST.__objc_arrayobj: 0xf60
-+  __AUTH_CONST.__objc_doubleobj: 0x350
-+  __AUTH_CONST.__objc_arrayobj: 0xf78
-   __AUTH_CONST.__objc_dictobj: 0xc8
--  __AUTH_CONST.__auth_got: 0x3158
--  __AUTH.__objc_data: 0x18548
--  __AUTH.__data: 0x2670
--  __DATA.__objc_ivar: 0x407c
--  __DATA.__data: 0x8378
--  __DATA.__common: 0x260
-+  __AUTH_CONST.__auth_got: 0x32c0
-+  __AUTH.__objc_data: 0x19058
-+  __AUTH.__data: 0x2810
-+  __DATA.__objc_ivar: 0x40ac
-+  __DATA.__data: 0x8538
-+  __DATA.__common: 0x2a8
-   __DATA_DIRTY.__objc_data: 0x1680
-   __DATA_DIRTY.__bss: 0x58
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 26414
--  Symbols:   45496
+-  Symbols:   35724
 -  CStrings:  5334
 +  Functions: 26784
-+  Symbols:   45696
++  Symbols:   35914
 +  CStrings:  5401
- 
 Symbols:
 + +[HKCodableSummaryDaytimeVitalsValue baselineComparisonType]
 + -[HKCodableSleepingSampleBaseline hasTypicalRange]
@@ -273,16 +220,6 @@ Symbols:
 + ___sincos_stret
 + ___swift_closure_destructor.17Tm
 + _associated conformance 8HealthUI13BalanceSeriesC23BackgroundGradientStyleVSHAASQ
-+ _objc_msgSend$bezierPathWithArcCenter:radius:startAngle:endAngle:clockwise:
-+ _objc_msgSend$cachedChartPointsForCustomGraphSeries:timeScope:resolution:startDate:endDate:
-+ _objc_msgSend$copyWithLocalization:
-+ _objc_msgSend$copyWithLocalizationTableNameOverride:
-+ _objc_msgSend$setDaytimeInterval:
-+ _objc_msgSend$setDaytimeValue:
-+ _objc_msgSend$setMaximum:
-+ _objc_msgSend$setMinimum:
-+ _objc_msgSend$setOvernightValue:
-+ _objc_msgSend$setTypicalRange:
 + _objc_retain_x13
 + _symbolic SDy_____So12UIBezierPathCG 8HealthUI13BalanceSeriesC23BackgroundGradientStyleV
 + _symbolic SDy_____So12UIBezierPathCGz_Xx 8HealthUI13BalanceSeriesC23BackgroundGradientStyleV

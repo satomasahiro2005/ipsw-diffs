@@ -2,32 +2,31 @@
 
 > `com.apple.driver.AppleThunderboltUSBType2UpAdapter`
 
-```diff
+### Section Size Changes
 
- 138.0.1.0.0
-   __TEXT.__cstring: 0x206b
-   __TEXT.__os_log: 0x1d9b
--  __TEXT_EXEC.__text: 0xabbc
-+  __TEXT_EXEC.__text: 0xac68
-   __TEXT_EXEC.__auth_stubs: 0x1b0
-   __DATA.__data: 0x1e8
-   __DATA.__common: 0x38
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0xabbc` | `0xac68` | **`+0xac`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_fffffe00098ebcf0 -> sub_fffffe0009978190 : 72 -> 76
-~ sub_fffffe00098ebd40 -> sub_fffffe00099781e4 : 52 -> 56
-~ sub_fffffe00098ebd74 -> sub_fffffe000997821c : 52 -> 56
-~ sub_fffffe00098ebdb8 -> sub_fffffe0009978264 : 68 -> 72
-~ sub_fffffe00098ebe24 -> sub_fffffe00099782d4 : 72 -> 76
-~ sub_fffffe00098ebe6c -> sub_fffffe0009978320 : 104 -> 108
-~ sub_fffffe00098ebee8 -> sub_fffffe00099783a0 : 88 -> 92
-~ sub_fffffe00098ebf40 -> sub_fffffe00099783fc : 88 -> 92
-~ sub_fffffe00098ebf98 -> sub_fffffe0009978458 : 112 -> 116
+~ sub_fffffff0098f6590 -> sub_fffffff00997eee0 : 72 -> 76
+~ sub_fffffff0098f65e0 -> sub_fffffff00997ef34 : 52 -> 56
+~ sub_fffffff0098f6614 -> sub_fffffff00997ef6c : 52 -> 56
+~ sub_fffffff0098f6658 -> sub_fffffff00997efb4 : 68 -> 72
+~ sub_fffffff0098f66c4 -> sub_fffffff00997f024 : 72 -> 76
+~ sub_fffffff0098f670c -> sub_fffffff00997f070 : 104 -> 108
+~ sub_fffffff0098f6788 -> sub_fffffff00997f0f0 : 88 -> 92
+~ sub_fffffff0098f67e0 -> sub_fffffff00997f14c : 88 -> 92
+~ sub_fffffff0098f6838 -> sub_fffffff00997f1a8 : 112 -> 116
 ~ __ZN33AppleThunderboltUSBType2UpAdapter5startEP9IOService : 4820 -> 4824
 ~ _panic : 748 -> 752
 ~ __ZN33AppleThunderboltUSBType2UpAdapter8finalizeEj : 1060 -> 1064
 ~ __ZN33AppleThunderboltUSBType2UpAdapter4freeEv : 332 -> 336
 ~ __ZN33AppleThunderboltUSBType2UpAdapter15createResourcesEv : 468 -> 472
-~ sub_fffffe00098edd0c -> sub_fffffe000997a1e4 : 212 -> 216
+~ sub_fffffff0098f85ac -> sub_fffffff009980f34 : 212 -> 216
 ~ __ZN33AppleThunderboltUSBType2UpAdapter13activateAsyncEv : 988 -> 992
 ~ __ZN33AppleThunderboltUSBType2UpAdapter12activateSyncEv : 772 -> 776
 ~ __ZN33AppleThunderboltUSBType2UpAdapter16activateInternalEP28IOThunderboltDispatchContext : 6976 -> 6980
@@ -41,7 +40,7 @@ Functions:
 ~ __ZN33AppleThunderboltUSBType2UpAdapter12destroyPathsEv : 464 -> 468
 ~ __ZN33AppleThunderboltUSBType2UpAdapter32configureLinkCommandsAggregationEv : 1452 -> 1456
 ~ __ZN33AppleThunderboltUSBType2UpAdapter13enableAdapterEb : 1116 -> 1120
-~ sub_fffffe00098f3ffc -> sub_fffffe000998050c : 1148 -> 1152
+~ sub_fffffff0098fe89c -> sub_fffffff00998725c : 1148 -> 1152
 ~ __ZN33AppleThunderboltUSBType2UpAdapter12getPortCountEv : 1132 -> 1136
 ~ __ZN33AppleThunderboltUSBType2UpAdapter15setBundleWeightEv : 824 -> 828
 ~ __ZN33AppleThunderboltUSBType2UpAdapter20setupPowerManagementEv : 524 -> 528
@@ -51,9 +50,9 @@ Functions:
 ~ __ZN33AppleThunderboltUSBType2UpAdapter5sleepEv : 380 -> 384
 ~ __ZN33AppleThunderboltUSBType2UpAdapter9lateSleepEv : 548 -> 552
 ~ __ZN33AppleThunderboltUSBType2UpAdapter9earlyWakeEv : 1648 -> 1652
-~ sub_fffffe00098f621c -> sub_fffffe0009982754 : 140 -> 144
+~ sub_fffffff009900abc -> sub_fffffff0099894a4 : 140 -> 144
 ~ __ZN33AppleThunderboltUSBType2UpAdapter7messageEjP9IOServicePv : 1116 -> 1120
-~ sub_fffffe00098f6710 -> sub_fffffe0009982c50 : 172 -> 176
-~ sub_fffffe00098f67c4 -> sub_fffffe0009982d08 : 80 -> 84
+~ sub_fffffff009900fb0 -> sub_fffffff0099899a0 : 172 -> 176
+~ sub_fffffff009901064 -> sub_fffffff009989a58 : 80 -> 84
 ~ __ZN33AppleThunderboltUSBType2UpAdapter16requestTerminateEP9IOServicej.cold.1 : 64 -> 68
 ```

@@ -2,32 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MenstrualAlgorithmsInternal.framework/MenstrualAlgorithmsInternal`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x6172c
-+  __TEXT.__text: 0x615d8
-   __TEXT.__objc_methlist: 0x1258
-   __TEXT.__const: 0x14fc
-   __TEXT.__gcc_except_tab: 0x4590
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6172c` | `0x615d8` | **`-0x154`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN11Nightingale6lstmHr22copyASliceToLstmStructERNSt3__16vectorIdNS1_9allocatorIdEEEERKNS2_INS1_8optionalIfEENS3_IS8_EEEEtt : 188 -> 180
 ~ __ZNSt3__16vectorINS_8optionalIfEENS_9allocatorIS2_EEEC2B9fqn220106INS_11__wrap_iterIPKS2_EELi0EEET_SB_ : 116 -> 104
@@ -69,5 +52,4 @@ Functions:
 ~ __ZNKSt3__111__move_implINS_17_ClassicAlgPolicyEEclB9fqn220106IPN11Nightingale27coreAnalyticsHistPerCycle_tES6_S6_EENS_4pairIT_T1_EES8_T0_S9_ : 144 -> 140
 ~ -[NgtMenstrualAlgorithmsDayStreamProcessor analyzeWithMostRecentMenstrualFlowJulianDayUpdated:error:] : 3340 -> 3332
 ~ -[MAIDayStreamProcessor analyzeWithMostRecentMenstrualFlowJulianDayUpdated:] : 4204 -> 4196
-
 ```

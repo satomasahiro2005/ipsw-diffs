@@ -2,14 +2,15 @@
 
 > `/usr/lib/libxml2.2.dylib`
 
-```diff
+### Section Size Changes
 
- 40.1.0.0.0
--  __TEXT.__text: 0xc6a04
-+  __TEXT.__text: 0xc6a2c
-   __TEXT.__cstring: 0x19bae
-   __TEXT.__const: 0x3890
-   __TEXT.__oslogstring: 0xa2
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc6a04` | `0xc6a2c` | **`+0x28`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _xmlSplitQName2 : 240 -> 244
 ~ _xmlDelEncodingAlias : 212 -> 216

@@ -2,115 +2,61 @@
 
 > `/System/Library/PrivateFrameworks/NotesEditor.framework/NotesEditor`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x30c1f8` | `0x311250` | **`+0x5058`** |
+| `__AUTH_CONST.__objc_const` | `0x208a8` | `0x21ab0` | **`+0x1208`** |
+| `__TEXT.__objc_methlist` | `0x16d04` | `0x17d2c` | **`+0x1028`** |
+| `__AUTH.__objc_data` | `0x5560` | `0x5880` | **`+0x320`** |
+| `__AUTH_CONST.__const` | `0xb918` | `0xbb58` | **`+0x240`** |
+| `__TEXT.__gcc_except_tab` | `0x3dbc` | `0x3bcc` | **`-0x1f0`** |
+| `__TEXT.__unwind_info` | `0xa050` | `0xa230` | **`+0x1e0`** |
+| `__AUTH_CONST.__objc_intobj` | `0x438` | `0x600` | **`+0x1c8`** |
+| `__TEXT.__eh_frame` | `0x56f8` | `0x58b8` | **`+0x1c0`** |
+| `__TEXT.__const` | `0xbdb4` | `0xbea4` | **`+0xf0`** |
+| `__TEXT.__oslogstring` | `0x6f3c` | `0x701c` | **`+0xe0`** |
+| `__TEXT.__swift5_capture` | `0x34f4` | `0x35c4` | **`+0xd0`** |
+| `__DATA_CONST.__objc_selrefs` | `0xfb08` | `0xfbb8` | **`+0xb0`** |
+| `__DATA_CONST.__const` | `0x4770` | `0x46d0` | **`-0xa0`** |
+| `__DATA.__data` | `0x881c` | `0x888c` | **`+0x70`** |
+| `__TEXT.__cstring` | `0xb8db` | `0xb93b` | **`+0x60`** |
+| `__TEXT.__swift5_reflstr` | `0x5075` | `0x50d5` | **`+0x60`** |
+| `__DATA_CONST.__got` | `0x3170` | `0x31c0` | **`+0x50`** |
+| `__DATA_CONST.__objc_classlist` | `0x748` | `0x798` | **`+0x50`** |
+| `__TEXT.__constg_swiftt` | `0x5c40` | `0x5c8c` | **`+0x4c`** |
+| `__DATA.__objc_ivar` | `0x1128` | `0x1170` | **`+0x48`** |
+| `__DATA_CONST.__objc_superrefs` | `0x408` | `0x450` | **`+0x48`** |
+| `__AUTH_CONST.__cfstring` | `0x62a0` | `0x6260` | **`-0x40`** |
+| `__TEXT.__swift5_fieldmd` | `0x39b8` | `0x39ec` | **`+0x34`** |
+| `__AUTH.__data` | `0x2ce0` | `0x2d10` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x3a10` | `0x39e8` | **`-0x28`** |
+| `__DATA_DIRTY.__data` | `0x1248` | `0x1270` | **`+0x28`** |
+| `__TEXT.__swift5_typeref` | `0x3632a` | `0x36344` | **`+0x1a`** |
+| `__TEXT.__swift_as_cont` | `0x38c` | `0x3a0` | **`+0x14`** |
+| `__TEXT.__swift_as_entry` | `0x184` | `0x190` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `0x18c` | `0x198` | **`+0xc`** |
+| `__DATA_CONST.__objc_protolist` | `0x588` | `0x590` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x310` | `0x314` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__ustring`
+
+### Other Changes
 
 ```diff
 
 -3001.2.2.0.0
--  __TEXT.__text: 0x2f7844
 +3001.40.8.100.1
-+  __TEXT.__text: 0x2fbf48
-   __TEXT.__delay_helper: 0x41c
--  __TEXT.__objc_methlist: 0x16d04
--  __TEXT.__const: 0xbdb4
--  __TEXT.__gcc_except_tab: 0x3dbc
--  __TEXT.__cstring: 0xb8db
--  __TEXT.__oslogstring: 0x6f3c
-+  __TEXT.__objc_methlist: 0x17d2c
-+  __TEXT.__const: 0xbea4
-+  __TEXT.__gcc_except_tab: 0x3bcc
-+  __TEXT.__cstring: 0xb93b
-+  __TEXT.__oslogstring: 0x701c
-   __TEXT.__ustring: 0x312
--  __TEXT.__constg_swiftt: 0x5c40
--  __TEXT.__swift5_typeref: 0x3632a
-+  __TEXT.__constg_swiftt: 0x5c8c
-+  __TEXT.__swift5_typeref: 0x36344
-   __TEXT.__swift5_builtin: 0x26c
--  __TEXT.__swift5_reflstr: 0x5075
--  __TEXT.__swift5_fieldmd: 0x39b8
-+  __TEXT.__swift5_reflstr: 0x50d5
-+  __TEXT.__swift5_fieldmd: 0x39ec
-   __TEXT.__swift5_assocty: 0x6f0
-   __TEXT.__swift5_proto: 0x38c
--  __TEXT.__swift5_types: 0x310
--  __TEXT.__swift5_capture: 0x34f4
-+  __TEXT.__swift5_types: 0x314
-+  __TEXT.__swift5_capture: 0x35c4
-   __TEXT.__swift5_protos: 0x48
--  __TEXT.__swift_as_entry: 0x184
--  __TEXT.__swift_as_cont: 0x38c
--  __TEXT.__swift_as_ret: 0x18c
-+  __TEXT.__swift_as_entry: 0x190
-+  __TEXT.__swift_as_cont: 0x3a0
-+  __TEXT.__swift_as_ret: 0x198
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0xc688
--  __TEXT.__eh_frame: 0x5720
-+  __TEXT.__unwind_info: 0xca48
-+  __TEXT.__eh_frame: 0x58e0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4770
--  __DATA_CONST.__objc_classlist: 0x748
-+  __DATA_CONST.__const: 0x46d0
-+  __DATA_CONST.__objc_classlist: 0x798
-   __DATA_CONST.__objc_catlist: 0x188
--  __DATA_CONST.__objc_protolist: 0x588
-+  __DATA_CONST.__objc_protolist: 0x590
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xfb08
-+  __DATA_CONST.__objc_selrefs: 0xfbb8
-   __DATA_CONST.__objc_protorefs: 0x198
--  __DATA_CONST.__objc_superrefs: 0x408
-+  __DATA_CONST.__objc_superrefs: 0x450
-   __DATA_CONST.__objc_arraydata: 0x28
--  __DATA_CONST.__got: 0x3170
--  __AUTH_CONST.__const: 0xb918
--  __AUTH_CONST.__cfstring: 0x62a0
--  __AUTH_CONST.__objc_const: 0x208a8
--  __AUTH_CONST.__objc_intobj: 0x438
-+  __DATA_CONST.__got: 0x31c0
-+  __AUTH_CONST.__const: 0xbb58
-+  __AUTH_CONST.__cfstring: 0x6260
-+  __AUTH_CONST.__objc_const: 0x21ab0
-+  __AUTH_CONST.__objc_intobj: 0x600
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__objc_doubleobj: 0x70
--  __AUTH_CONST.__auth_got: 0x3a10
--  __AUTH.__objc_data: 0x5560
--  __AUTH.__data: 0x2ce0
--  __DATA.__objc_ivar: 0x1128
--  __DATA.__data: 0x881c
-+  __AUTH_CONST.__auth_got: 0x39e8
-+  __AUTH.__objc_data: 0x5880
-+  __AUTH.__data: 0x2d10
-+  __DATA.__objc_ivar: 0x1170
-+  __DATA.__data: 0x888c
-   __DATA.__objc_stublist: 0x10
-   __DATA.__common: 0x1a0
-   __DATA_DIRTY.__objc_data: 0x41e0
--  __DATA_DIRTY.__data: 0x1248
-+  __DATA_DIRTY.__data: 0x1270
-   __DATA_DIRTY.__bss: 0x1f10
-   __DATA_DIRTY.__common: 0x1b8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15752
--  Symbols:   20822
+-  Symbols:   14341
 -  CStrings:  1907
 +  Functions: 15956
-+  Symbols:   21127
++  Symbols:   14600
 +  CStrings:  1900
- 
 Symbols:
 + +[ICNoteEditorFormattingController initialize]
 + +[ICNoteEditorPresentationCoordinator dismissChildPresentedViewControllersInPostOrder:animated:completion:]
@@ -775,99 +721,6 @@ Symbols:
 + ___swift_closure_destructor.401Tm
 + ___swift_closure_destructor.82Tm
 + ___swift_memcpy49_8
-+ _objc_msgSend$analytics
-+ _objc_msgSend$analyticsHostWindow
-+ _objc_msgSend$attachFile:
-+ _objc_msgSend$attachmentCoordinator
-+ _objc_msgSend$barController
-+ _objc_msgSend$canPerformToggleToDoDone
-+ _objc_msgSend$canSetListStyle
-+ _objc_msgSend$canSetParagraphStyle
-+ _objc_msgSend$canToggleTodoStyle
-+ _objc_msgSend$checkAll:
-+ _objc_msgSend$clearDidDrawWithPencilWithoutPalette
-+ _objc_msgSend$configureChangeControllerForNote:
-+ _objc_msgSend$convertToTag:
-+ _objc_msgSend$currentFirstResponder
-+ _objc_msgSend$currentSelectionIsCaretAtLineStart
-+ _objc_msgSend$disableBoldface
-+ _objc_msgSend$disableItalics
-+ _objc_msgSend$disableStrikethrough
-+ _objc_msgSend$disableUnderline
-+ _objc_msgSend$dismissCurrentAttachmentPresenterAnimated:
-+ _objc_msgSend$documentScanController
-+ _objc_msgSend$drawBlockQuoteAndCleanup:pendingBlockQuoteLevelToDraw:pendingBlockQuoteRectToDraw:ioBlockQuoteIsRTL:ps:
-+ _objc_msgSend$drawBlockQuoteLayerInRectForTK2:blockQuoteLevel:isMonostyled:isRTL:
-+ _objc_msgSend$drawingController
-+ _objc_msgSend$editorAddSubviewAboveAllViews:
-+ _objc_msgSend$editorDelegateRespondsToDidTapAttachment
-+ _objc_msgSend$editorHasCompactWidth
-+ _objc_msgSend$editorNavigationController
-+ _objc_msgSend$editorState
-+ _objc_msgSend$enableBoldface
-+ _objc_msgSend$enableItalics
-+ _objc_msgSend$enableStrikethrough
-+ _objc_msgSend$enableUnderline
-+ _objc_msgSend$environment
-+ _objc_msgSend$filteredAttributedSubstringFromRange:
-+ _objc_msgSend$formattingController
-+ _objc_msgSend$formattingTextViewInputAccessoryView
-+ _objc_msgSend$hostViewController
-+ _objc_msgSend$ic_alignCenter:
-+ _objc_msgSend$ic_alignLeft:
-+ _objc_msgSend$ic_alignRight:
-+ _objc_msgSend$ic_flattenedTextForSharingInRange:
-+ _objc_msgSend$ic_rangeIsCaretAtLineStart:
-+ _objc_msgSend$ic_selectionContainsOnlyBlockAttachments
-+ _objc_msgSend$initWithEnvironment:
-+ _objc_msgSend$initWithEnvironment:subTrackerName:
-+ _objc_msgSend$inlineAttachmentController
-+ _objc_msgSend$insertDividerLine:
-+ _objc_msgSend$isEndOfDocumentForTextPosition:inTextView:
-+ _objc_msgSend$isNoteFormattingViewControllerShowing
-+ _objc_msgSend$isReadingTextForSharing
-+ _objc_msgSend$isStyleSelectorInputViewShowing
-+ _objc_msgSend$lockController
-+ _objc_msgSend$moveCheckedToBottom:
-+ _objc_msgSend$navigationBarMinimization
-+ _objc_msgSend$needsTranscription
-+ _objc_msgSend$notifyEditorDelegateDidTapAttachment:
-+ _objc_msgSend$predicateForSearchableNotesInContext:
-+ _objc_msgSend$prepareForBarSourcedPopoverPresentation
-+ _objc_msgSend$prepareForPresentationOfViewControllerAnimated:
-+ _objc_msgSend$presentAttachment:
-+ _objc_msgSend$presentAttachments:startingAtIndex:editable:
-+ _objc_msgSend$presentationCoordinator
-+ _objc_msgSend$removeChecked:
-+ _objc_msgSend$setBodyStyle:
-+ _objc_msgSend$setBulletedListStyle:
-+ _objc_msgSend$setDashedListStyle:
-+ _objc_msgSend$setFixedWidthStyle:
-+ _objc_msgSend$setFormattingUpdatesSuspended:
-+ _objc_msgSend$setHeadingStyle:
-+ _objc_msgSend$setIsReadingTextForSharing:
-+ _objc_msgSend$setMinimizationBehavior:
-+ _objc_msgSend$setNumberedListStyle:
-+ _objc_msgSend$setStyleSelectorAXFocusElementOnDismissal:
-+ _objc_msgSend$setSubheadingStyle:
-+ _objc_msgSend$setTitleStyle:
-+ _objc_msgSend$showDocumentCamera
-+ _objc_msgSend$showInsertAudio:
-+ _objc_msgSend$subTrackerName
-+ _objc_msgSend$suspendSelectedRangeUpdates
-+ _objc_msgSend$toggleBoldface
-+ _objc_msgSend$toggleCurrentTextStyle:
-+ _objc_msgSend$toggleInkPickerAnimated:
-+ _objc_msgSend$toggleItalics
-+ _objc_msgSend$toggleStrikethrough
-+ _objc_msgSend$toggleToDoDone:
-+ _objc_msgSend$toggleUnderline
-+ _objc_msgSend$trailingItemGroups
-+ _objc_msgSend$uncheckAll:
-+ _objc_msgSend$updateBlockQuoteLayerForParagraphStyle:inRange:ioPreviousBlockQuoteRect:ioBlockQuoteIsRTL:
-+ _objc_msgSend$updateContentViewBezelsForPasswordEntry
-+ _objc_msgSend$updatePaperKitMessengerForAttachment:textLayoutManager:
-+ _objc_msgSend$visualAssetImportControllerIsShowing
 + _symbolic SDySi_____G 10Foundation16AttributedStringV11NotesSharedE43TranscriptParagraphAccessibilityInformationV
 + _symbolic _____ 11NotesEditor14TranscriptViewC26AccessibilityElementsState33_70FAB152AD64B0C479A9BB619ADB754CLLV
 + _symbolic _____Sg 11NotesEditor14TranscriptViewC26AccessibilityElementsState33_70FAB152AD64B0C479A9BB619ADB754CLLV
@@ -1280,53 +1133,6 @@ Symbols:
 - ___swift_closure_destructor.79Tm
 - __os_feature_enabled_impl
 - _kICInternalSettingsDisableTextViewEmptyLastLineWorkaround
-- _objc_msgSend$_isAnimatingScrollTest
-- _objc_msgSend$addConstraintsForSafeAreaLayoutGuide:toContainer:
-- _objc_msgSend$app_systemPaperInkPaletteButtonView:
-- _objc_msgSend$attachmentContentSize
-- _objc_msgSend$createTextViewUsingTextController:stylingTextUsingSeparateTextStorageForRendering:
-- _objc_msgSend$currentSelectionContainsListOrFixedWidth
-- _objc_msgSend$drawBlockQuoteAndCleanup:pendingBlockQuoteLevelToDraw:pendingBlockQuoteRectToDraw:ps:
-- _objc_msgSend$drawBlockQuoteLayerInRectForTK2:blockQuoteLevel:isMonostyled:
-- _objc_msgSend$ensureGlyphsForCharacterRange:
-- _objc_msgSend$ensureLayoutForSurroundingPages
-- _objc_msgSend$extraLineFragmentRect
-- _objc_msgSend$finishedInit
-- _objc_msgSend$glyphRangeForBoundingRectWithoutAdditionalLayout:inTextContainer:
-- _objc_msgSend$hideOverlappingAttachmentViewsIfNecessary
-- _objc_msgSend$ic_shouldEnableBlockQuoteForAttachmentsOnlySelection
-- _objc_msgSend$ic_view
-- _objc_msgSend$icaxTodoButtonForParagraphStyle:
-- _objc_msgSend$inlineAttachmentChangeController
-- _objc_msgSend$invalidateLayoutAfterAttachmentViewTypeChangeIfNecessary
-- _objc_msgSend$isTextDragActive
-- _objc_msgSend$needsHideOverlappingAttachmentViews
-- _objc_msgSend$performAnimatedSortForTrackedParagraphs:expandedRange:textView:sortChecklistsBlock:
-- _objc_msgSend$ppt_inkPickerDidShow
-- _objc_msgSend$predicateForVisibleNotesIncludingTrash:includingSystemPaper:includingMathNotes:includingCallNotes:inContext:
-- _objc_msgSend$previousContentSize
-- _objc_msgSend$restoreAttributedString:
-- _objc_msgSend$scrollView:didChangeContentOffset:
-- _objc_msgSend$setAttributionSidebarWidth:isGestureActive:animated:currentVelocity:
-- _objc_msgSend$setExtraLineFragmentRect:usedRect:textContainer:
-- _objc_msgSend$setIsSettingLinkTextAttributes:
-- _objc_msgSend$setNavigationItemConfiguration:
-- _objc_msgSend$setNeedsHideOverlappingAttachmentViews:
-- _objc_msgSend$setPreviousContentSize:
-- _objc_msgSend$setShouldIgnoreCachedOriginUpdates:
-- _objc_msgSend$setShouldOverscrollScrollState:
-- _objc_msgSend$setTextController:
-- _objc_msgSend$setWasWindowlessDuringTransitionToSize:
-- _objc_msgSend$shouldOverscrollScrollState
-- _objc_msgSend$shouldUpdateVisibleSupplementalViewsInLayoutSubviews
-- _objc_msgSend$styleSelector:presentViewController:animated:completion:
-- _objc_msgSend$styleSelectorInputViewShowing
-- _objc_msgSend$todoButtonForTrackedParagraphIfExists:
-- _objc_msgSend$updateAttachmentsSelectionStateInTextStorage:forSelectedRanges:layoutManager:textView:
-- _objc_msgSend$updateBlockQuoteLayerForParagraphStyle:inRange:ioPreviousBlockQuoteRect:
-- _objc_msgSend$updateInlineDrawingViews
-- _objc_msgSend$viewForBaseTextAttachmentNoCreate:
-- _objc_msgSend$wasWindowlessDuringTransitionToSize
 CStrings:
 + "-[ICNoteEditorDocumentScanController documentCameraPresentingViewController:didFinishWithInfoCollection:imageCache:warnUser:closeViewController:]"
 + "<%@: %p; isEditingNewNote=%d; isSettingEditing=%d; isTogglingLock=%d; isSelecting=%d; isSettingSelection=%d; isPerformingDeleteAnimation=%d; isPreviewingAttachmentFromNote=%d; isInLiveWindowResize=%d; isAddingImageAttachment=%d; isConvertToTag=%d; suspendBarButtonUpdates=%d; suspendSelectedRangeUpdates=%d; suspendTapGestureRecognizer=%d; isShowingIndentationItems=%d; isShowingChecklistItems=%d>"

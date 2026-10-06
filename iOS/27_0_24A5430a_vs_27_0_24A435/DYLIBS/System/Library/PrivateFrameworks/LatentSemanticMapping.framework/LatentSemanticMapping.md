@@ -2,17 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/LatentSemanticMapping.framework/LatentSemanticMapping`
 
-```diff
+### Section Size Changes
 
- 3.1.0.0.0
--  __TEXT.__text: 0x1b370
-+  __TEXT.__text: 0x1b384
-   __TEXT.__const: 0x6c8
--  __TEXT.__gcc_except_tab: 0x1d34
-+  __TEXT.__gcc_except_tab: 0x1d30
-   __TEXT.__cstring: 0x48b
-   __TEXT.__unwind_info: 0xc50
-   __TEXT.__auth_stubs: 0x0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1b370` | `0x1b384` | **`+0x14`** |
+| `__TEXT.__gcc_except_tab` | `0x1d34` | `0x1d30` | **`-0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN22LSMImmutableMapCounter12ProcessTupleEP12LSMWordTablejb : 252 -> 256
 ~ __ZN13LSMClassifier10NBestWordsERK9LSMVectorIfEiP16LSMCategoryScoreb : 632 -> 628

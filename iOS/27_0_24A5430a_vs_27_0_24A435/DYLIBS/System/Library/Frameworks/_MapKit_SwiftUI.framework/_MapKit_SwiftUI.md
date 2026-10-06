@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/_MapKit_SwiftUI.framework/_MapKit_SwiftUI`
 
-```diff
+### Section Size Changes
 
- 2552.30.6.12.12
--  __TEXT.__text: 0xb7964
-+  __TEXT.__text: 0xb7990
-   __TEXT.__objc_methlist: 0xbf4
-   __TEXT.__const: 0xb5f4
-   __TEXT.__constg_swiftt: 0x5204
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb7964` | `0xb7990` | **`+0x2c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1dba02750 -> sub_1dc088750 : 7816 -> 7872
 ~ sub_1dba0cd00 -> sub_1dc092d38 : 7924 -> 7932

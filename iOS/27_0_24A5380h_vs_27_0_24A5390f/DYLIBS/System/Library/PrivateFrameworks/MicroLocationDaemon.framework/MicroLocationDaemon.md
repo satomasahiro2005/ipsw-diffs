@@ -2,124 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/MicroLocationDaemon.framework/MicroLocationDaemon`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_typeref`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2de964` | `0x2e7fc8` | **`+0x9664`** |
+| `__TEXT.__oslogstring` | `0x38a4c` | `0x396bc` | **`+0xc70`** |
+| `__TEXT.__gcc_except_tab` | `0x326b4` | `0x331e0` | **`+0xb2c`** |
+| `__TEXT.__cstring` | `0x173f3` | `0x17993` | **`+0x5a0`** |
+| `__AUTH_CONST.__cfstring` | `0x5a40` | `0x5ce0` | **`+0x2a0`** |
+| `__TEXT.__unwind_info` | `0x10360` | `0x10600` | **`+0x2a0`** |
+| `__AUTH_CONST.__objc_const` | `0x10328` | `0x10530` | **`+0x208`** |
+| `__AUTH_CONST.__const` | `0x10128` | `0x10280` | **`+0x158`** |
+| `__TEXT.__const` | `0x16080` | `0x161d0` | **`+0x150`** |
+| `__TEXT.__objc_methlist` | `0x7f74` | `0x806c` | **`+0xf8`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x1070` | `0x1130` | **`+0xc0`** |
+| `__AUTH.__objc_data` | `0x1088` | `0x1128` | **`+0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4298` | `0x4300` | **`+0x68`** |
+| `__AUTH_CONST.__objc_intobj` | `0x2088` | `0x20b8` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0x728` | `0x738` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x1780` | `0x1788` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x5ac` | `0x5b0` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__TEXT.__swift5_reflstr`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_floatobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+
+### Other Changes
 
 ```diff
 
 -116.0.0.0.0
--  __TEXT.__text: 0x2de964
--  __TEXT.__objc_methlist: 0x7f74
--  __TEXT.__const: 0x16080
--  __TEXT.__gcc_except_tab: 0x326b4
--  __TEXT.__cstring: 0x173f3
--  __TEXT.__oslogstring: 0x38a4c
 +117.0.1.1.2
-+  __TEXT.__text: 0x2e7fc8
-+  __TEXT.__objc_methlist: 0x806c
-+  __TEXT.__const: 0x161d0
-+  __TEXT.__gcc_except_tab: 0x331e0
-+  __TEXT.__cstring: 0x17993
-+  __TEXT.__oslogstring: 0x396bc
-+  __TEXT.__constg_swiftt: 0x11ac
-   __TEXT.__swift5_typeref: 0xdad
-+  __TEXT.__swift5_fieldmd: 0xdb0
-+  __TEXT.__swift5_builtin: 0xdc
-   __TEXT.__swift5_reflstr: 0x8ca
-   __TEXT.__swift5_assocty: 0x138
--  __TEXT.__constg_swiftt: 0x11ac
--  __TEXT.__swift5_builtin: 0xdc
--  __TEXT.__swift5_fieldmd: 0xdb0
-   __TEXT.__swift5_proto: 0x18c
-   __TEXT.__swift5_types: 0x15c
-   __TEXT.__swift5_protos: 0x1c
-   __TEXT.__swift5_capture: 0x180
-   __TEXT.__swift_as_entry: 0x1c
-   __TEXT.__swift_as_ret: 0xc
--  __TEXT.__unwind_info: 0x10360
-+  __TEXT.__unwind_info: 0x10600
-   __TEXT.__eh_frame: 0x1220
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1780
--  __DATA_CONST.__objc_classlist: 0x728
-+  __DATA_CONST.__const: 0x1788
-+  __DATA_CONST.__objc_classlist: 0x738
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x168
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x20
--  __DATA_CONST.__objc_selrefs: 0x4298
-+  __DATA_CONST.__objc_selrefs: 0x4300
-   __DATA_CONST.__objc_protorefs: 0x70
-   __DATA_CONST.__objc_superrefs: 0x288
-   __DATA_CONST.__objc_arraydata: 0xbd0
-   __DATA_CONST.__got: 0xaf8
--  __AUTH_CONST.__const: 0x10128
--  __AUTH_CONST.__cfstring: 0x5a40
--  __AUTH_CONST.__objc_const: 0x10328
-+  __AUTH_CONST.__const: 0x10280
-+  __AUTH_CONST.__cfstring: 0x5ce0
-+  __AUTH_CONST.__objc_const: 0x10530
-   __AUTH_CONST.__weak_auth_got: 0x38
--  __AUTH_CONST.__objc_intobj: 0x2088
--  __AUTH_CONST.__objc_doubleobj: 0x1070
-+  __AUTH_CONST.__objc_intobj: 0x20b8
-+  __AUTH_CONST.__objc_doubleobj: 0x1130
-   __AUTH_CONST.__objc_floatobj: 0x370
-   __AUTH_CONST.__objc_dictobj: 0x8e8
-   __AUTH_CONST.__objc_arrayobj: 0x60
-   __AUTH_CONST.__auth_got: 0x1558
--  __AUTH.__objc_data: 0x1088
-+  __AUTH.__objc_data: 0x1128
-   __AUTH.__data: 0x8b0
--  __DATA.__objc_ivar: 0x5ac
-+  __DATA.__objc_ivar: 0x5b0
-   __DATA.__data: 0x1000
-   __DATA.__bss: 0x2c40
-   __DATA.__common: 0x70
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12987
--  Symbols:   18828
+-  Symbols:   16997
 -  CStrings:  5177
 +  Functions: 13107
-+  Symbols:   18990
++  Symbols:   17146
 +  CStrings:  5241
- 
 Symbols:
 + +[ULHomeSlamLearningHistoryMO createFromDO:loiMO:inManagedObjectContext:]
 + +[ULHomeSlamLearningHistoryMO(CoreDataProperties) fetchRequest]
@@ -304,20 +225,6 @@ Symbols:
 + ___block_descriptor_88_ea8_32s40r56c86_ZTSNSt3__18functionIFP27ULHomeSlamLearningHistoryMORK27ULHomeSlamLearningHistoryDOEEE_e5_v8?0l
 + ___copy_helper_block_ea8_56c86_ZTSNSt3__18functionIFP27ULHomeSlamLearningHistoryMORK27ULHomeSlamLearningHistoryDOEEE
 + ___destroy_helper_block_ea8_56c86_ZTSNSt3__18functionIFP27ULHomeSlamLearningHistoryMORK27ULHomeSlamLearningHistoryDOEEE
-+ _objc_msgSend$_fetchWithPredicates:sortDescriptors:andLimit:
-+ _objc_msgSend$_predicateForLoiGroupId:
-+ _objc_msgSend$deleteRowsOlderThan:
-+ _objc_msgSend$fetchRowsAtLoiGroupId:fromTimestamp:excludingTimestamp:
-+ _objc_msgSend$fetchTwoMostRecentSuccessfulAtLoiGroupId:excludingTimestamp:
-+ _objc_msgSend$getMostRecentOdometryTimeForLoiGroupId:odometrySource:
-+ _objc_msgSend$hasDeliveredNonZeroStatus
-+ _objc_msgSend$insertDataObject:atLoiUUID:
-+ _objc_msgSend$isValid
-+ _objc_msgSend$mostRecentSuccessfulTimestampAtLoiGroupId:excludingTimestamp:
-+ _objc_msgSend$oldestHomeKitAnchorTimestampForLoiGroupId:
-+ _objc_msgSend$oldestTimestampAtLoiGroupId:
-+ _objc_msgSend$setHasDeliveredNonZeroStatus:
-+ _objc_msgSend$setIsValid:
 - GCC_except_table175
 - GCC_except_table203
 - GCC_except_table207
@@ -352,7 +259,6 @@ Symbols:
 - __ZN32ULHomeSlamLearningCAEventBuilder20buildEventDictionaryERK7ULLoiDORK15ULHomeSlamModelRK22ULHomeSlamMapperCADataNSt3__16chrono10time_pointIN2cl6chrono19CFAbsoluteTimeClockENSA_8durationIeNS9_5ratioILl1ELl1EEEEEEER24ULDatabaseStoreInterface20ULOdometrySourceTypeb
 - __ZN32ULHomeSlamLearningCAEventBuilder9sendEventERK7ULLoiDORK15ULHomeSlamModelRK22ULHomeSlamMapperCADataNSt3__16chrono10time_pointIN2cl6chrono19CFAbsoluteTimeClockENSA_8durationIeNS9_5ratioILl1ELl1EEEEEEER24ULDatabaseStoreInterface20ULOdometrySourceTypeb
 - __ZNSt3__16vectorI9ULModelDONS_9allocatorIS1_EEE5clearB9fqe220106Ev
-- _objc_msgSend$fetchModelsAtLoiGroupId:andLimit:
 CStrings:
 + "!(useLargeCloud && (state == ULHomeSlamLocalizerConvergenceState::Converged || state == ULHomeSlamLocalizerConvergenceState::OffMap))"
 + "#HomeSlam, [ingestValidFingerprintUpdate, State=%@] diverged due to RF update, recovery enabled, newState=%@"

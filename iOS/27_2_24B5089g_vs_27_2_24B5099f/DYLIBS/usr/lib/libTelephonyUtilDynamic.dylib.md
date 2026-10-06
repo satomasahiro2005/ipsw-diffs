@@ -2,52 +2,29 @@
 
 > `/usr/lib/libTelephonyUtilDynamic.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x85b8c` | `0x85020` | **`-0xb6c`** |
+| `__TEXT.__oslogstring` | `0x21eb` | `0x1d5b` | **`-0x490`** |
+| `__TEXT.__cstring` | `0x3725` | `0x369a` | **`-0x8b`** |
+| `__AUTH_CONST.__cfstring` | `0x6e0` | `0x660` | **`-0x80`** |
+| `__TEXT.__gcc_except_tab` | `0x8b6c` | `0x8b20` | **`-0x4c`** |
+| `__DATA_CONST.__got` | `0x308` | `0x2f0` | **`-0x18`** |
+| `__AUTH_CONST.__auth_got` | `0xc70` | `0xc60` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x44f8` | `0x44e8` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
- 6575.0.0.0.0
--  __TEXT.__text: 0x84060
-+  __TEXT.__text: 0x834f4
-   __TEXT.__init_offsets: 0x10
-   __TEXT.__objc_methlist: 0x2a4
-   __TEXT.__const: 0xa138
--  __TEXT.__cstring: 0x3725
--  __TEXT.__gcc_except_tab: 0x8b6c
--  __TEXT.__oslogstring: 0x21eb
--  __TEXT.__unwind_info: 0x4a38
-+  __TEXT.__cstring: 0x369a
-+  __TEXT.__gcc_except_tab: 0x8b20
-+  __TEXT.__oslogstring: 0x1d5b
-+  __TEXT.__unwind_info: 0x4a18
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__weak_got: 0x20
-   __DATA_CONST.__objc_selrefs: 0x370
-   __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__got: 0x308
-+  __DATA_CONST.__got: 0x2f0
-   __AUTH_CONST.__const: 0x6dc8
--  __AUTH_CONST.__cfstring: 0x6e0
-+  __AUTH_CONST.__cfstring: 0x660
-   __AUTH_CONST.__objc_const: 0x2e8
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__auth_got: 0xc70
-+  __AUTH_CONST.__auth_got: 0xc60
-   __AUTH.__objc_data: 0x50
-   __AUTH.__data: 0x10
-   __DATA.__objc_ivar: 0x4
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 3374
 -  Symbols:   5249
 -  CStrings:  732
 +  Functions: 3371
 +  Symbols:   5245
 +  CStrings:  709
- 
 Symbols:
 + GCC_except_table109
 + GCC_except_table115

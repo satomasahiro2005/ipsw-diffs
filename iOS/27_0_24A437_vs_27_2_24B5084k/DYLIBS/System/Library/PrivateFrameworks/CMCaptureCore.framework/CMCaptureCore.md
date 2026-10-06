@@ -2,39 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/CMCaptureCore.framework/CMCaptureCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__cfstring` | `0x14f40` | `0x15080` | **`+0x140`** |
+| `__TEXT.__text` | `0x2058` | `0x2124` | **`+0xcc`** |
+| `__TEXT.__cstring` | `0xea86` | `0xeb2f` | **`+0xa9`** |
+| `__DATA_CONST.__const` | `0x5af0` | `0x5b30` | **`+0x40`** |
+
+### Other Changes
+
 ```diff
 
 -764.22.13.0.0
--  __TEXT.__text: 0x204c
--  __TEXT.__cstring: 0xea86
 +764.40.4.122.1
-+  __TEXT.__text: 0x210c
-+  __TEXT.__cstring: 0xeb2f
-   __TEXT.__const: 0x25
-   __TEXT.__oslogstring: 0xa6
-   __TEXT.__unwind_info: 0xa0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0x5af0
-+  __DATA_CONST.__const: 0x5b30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__cfstring: 0x14f40
-+  __AUTH_CONST.__cfstring: 0x15080
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__data: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 14
--  Symbols:   3035
+-  Symbols:   3033
 -  CStrings:  2688
-+  Symbols:   3044
++  Symbols:   3042
 +  CStrings:  2698
- 
 Symbols:
 + _CFStringAppend
 + _CFStringCreateMutable
@@ -56,7 +43,7 @@ Symbols:
 - _kFigCaptureSegmentFocusTrackingSalientObjectMetadata_MaskAttachedMediaKey
 - _kFigCaptureSegmentFocusTrackingSalientObjectMetadata_TrackedForContinuousAutoFocus
 Functions:
-~ _FigCaptureStillImageNRFProcessingFlagsToShortString : 68 -> 260
+~ _FigCaptureStillImageNRFProcessingFlagsToShortString : 80 -> 284
 CStrings:
 + ", "
 + "AEStatsUpdated"

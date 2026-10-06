@@ -2,60 +2,30 @@
 
 > `/System/Library/VideoDecoders/AVD.videodecoder`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__gcc_except_tab`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH.__objc_data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x169770` | `0x16ba28` | **`+0x22b8`** |
+| `__TEXT.__oslogstring` | `0x15fb9` | `0x16210` | **`+0x257`** |
+| `__TEXT.__cstring` | `0x5681` | `0x56b6` | **`+0x35`** |
+| `__TEXT.__unwind_info` | `0x1da0` | `0x1dc8` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x7e0` | `0x800` | **`+0x20`** |
+| `__TEXT.__const` | `0xc1d3` | `0xc1e3` | **`+0x10`** |
+
+### Other Changes
 
 ```diff
 
 -989.1.0.0.0
--  __TEXT.__text: 0x169770
 +991.0.0.0.0
-+  __TEXT.__text: 0x16ba28
-   __TEXT.__objc_methlist: 0x1fc
--  __TEXT.__const: 0xc1d3
--  __TEXT.__oslogstring: 0x15fb9
--  __TEXT.__cstring: 0x5681
-+  __TEXT.__const: 0xc1e3
-+  __TEXT.__oslogstring: 0x16210
-+  __TEXT.__cstring: 0x56b6
-   __TEXT.__gcc_except_tab: 0xd4c
--  __TEXT.__unwind_info: 0x1da0
-+  __TEXT.__unwind_info: 0x1dc8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_superrefs: 0x18
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x4e40
--  __AUTH_CONST.__cfstring: 0x7e0
-+  __AUTH_CONST.__cfstring: 0x800
-   __AUTH_CONST.__objc_const: 0x6e0
-   __AUTH_CONST.__weak_auth_got: 0x38
-   __AUTH_CONST.__objc_intobj: 0x48
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 4109
--  Symbols:   3385
+-  Symbols:   3337
 -  CStrings:  2063
 +  Functions: 4120
-+  Symbols:   3390
++  Symbols:   3342
 +  CStrings:  2073
- 
 Symbols:
 + _AppleAVDWrapperFghrnDecoderCleanUpMVAV1Resources
 + __Z13releaseVpsDpbP27_hevc_video_parameter_set_tiii

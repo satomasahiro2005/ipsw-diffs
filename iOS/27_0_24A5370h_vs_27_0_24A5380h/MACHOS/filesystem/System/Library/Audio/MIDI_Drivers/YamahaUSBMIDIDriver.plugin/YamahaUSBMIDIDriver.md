@@ -2,18 +2,25 @@
 
 > `/System/Library/Audio/MIDI Drivers/YamahaUSBMIDIDriver.plugin/YamahaUSBMIDIDriver`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e1ec` | `0x1e1ac` | **`-0x40`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1e1ec
-+  __TEXT.__text: 0x1e1ac
-   __TEXT.__realtime: 0x4c4
-   __TEXT.__auth_stubs: 0x760
-   __TEXT.__const: 0x290
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
+-329.0.0.0.0
++330.0.0.0.0
 Functions:
 ~ sub_3cd4 : 1464 -> 1460
 ~ sub_7e20 -> sub_7e1c : 3424 -> 3408
@@ -27,5 +34,4 @@ Functions:
 ~ sub_16e00 -> sub_16dd8 : 4536 -> 4528
 ~ sub_181f8 -> sub_181c8 : 1204 -> 1192
 ~ sub_1a680 -> sub_1a644 : 2496 -> 2492
-
 ```

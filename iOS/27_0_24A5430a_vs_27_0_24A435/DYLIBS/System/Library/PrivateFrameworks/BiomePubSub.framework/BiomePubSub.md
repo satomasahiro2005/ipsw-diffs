@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/BiomePubSub.framework/BiomePubSub`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_2 : 12 -> 20

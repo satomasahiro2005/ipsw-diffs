@@ -2,96 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/FaceTimeNotificationUI.framework/FaceTimeNotificationUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd23e8` | `0xd31f4` | **`+0xe0c`** |
+| `__TEXT.__const` | `0xb754` | `0xba94` | **`+0x340`** |
+| `__AUTH_CONST.__const` | `0x5988` | `0x5be8` | **`+0x260`** |
+| `__TEXT.__swift5_typeref` | `0x11374` | `0x114d0` | **`+0x15c`** |
+| `__AUTH_CONST.__objc_const` | `0x2aa8` | `0x2bf8` | **`+0x150`** |
+| `__DATA.__bss` | `0xbaf8` | `0xbc48` | **`+0x150`** |
+| `__AUTH.__data` | `0x3d50` | `0x3e58` | **`+0x108`** |
+| `__TEXT.__constg_swiftt` | `0x39e4` | `0x3a94` | **`+0xb0`** |
+| `__TEXT.__swift5_fieldmd` | `0x2b78` | `0x2c28` | **`+0xb0`** |
+| `__TEXT.__swift5_reflstr` | `0x218e` | `0x220e` | **`+0x80`** |
+| `__TEXT.__eh_frame` | `0x2668` | `0x2608` | **`-0x60`** |
+| `__DATA.__data` | `0x4020` | `0x4078` | **`+0x58`** |
+| `__AUTH.__objc_data` | `0xb30` | `0xb80` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0xdf0` | `0xe38` | **`+0x48`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6b0` | `0x6f8` | **`+0x48`** |
+| `__TEXT.__cstring` | `0x121a` | `0x125a` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x3018` | `0x3058` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x20a8` | `0x20c8` | **`+0x20`** |
+| `__TEXT.__swift5_assocty` | `0x7f0` | `0x808` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x17c` | `0x190` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0xc0` | `0xc8` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x5a8` | `0x5b0` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x284` | `0x28c` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x14c` | `0x148` | **`-0x4`** |
+| `__TEXT.__swift_as_ret` | `0x80` | `0x84` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3072.100.1.2.5
--  __TEXT.__text: 0xcceb0
 +3077.200.51.2.1
-+  __TEXT.__text: 0xcdc1c
-   __TEXT.__objc_methlist: 0x354
--  __TEXT.__const: 0xb754
--  __TEXT.__constg_swiftt: 0x39e4
--  __TEXT.__swift5_typeref: 0x11374
--  __TEXT.__swift5_builtin: 0x17c
--  __TEXT.__swift5_reflstr: 0x218e
--  __TEXT.__swift5_fieldmd: 0x2b78
--  __TEXT.__swift5_assocty: 0x7f0
--  __TEXT.__swift5_proto: 0x5a8
--  __TEXT.__swift5_types: 0x284
-+  __TEXT.__const: 0xba94
-+  __TEXT.__constg_swiftt: 0x3a94
-+  __TEXT.__swift5_typeref: 0x114d0
-+  __TEXT.__swift5_builtin: 0x190
-+  __TEXT.__swift5_reflstr: 0x220e
-+  __TEXT.__swift5_fieldmd: 0x2c28
-+  __TEXT.__swift5_assocty: 0x808
-+  __TEXT.__swift5_proto: 0x5b0
-+  __TEXT.__swift5_types: 0x28c
-   __TEXT.__swift5_capture: 0x12d4
-   __TEXT.__swift5_mpenum: 0x68
-   __TEXT.__oslogstring: 0x3979
--  __TEXT.__cstring: 0x121a
-+  __TEXT.__cstring: 0x125a
-   __TEXT.__swift_as_entry: 0xd0
--  __TEXT.__swift_as_cont: 0x14c
--  __TEXT.__swift_as_ret: 0x80
-+  __TEXT.__swift_as_cont: 0x148
-+  __TEXT.__swift_as_ret: 0x84
-   __TEXT.__swift5_protos: 0x3c
-   __TEXT.__lldbsummaries: 0x3f
--  __TEXT.__unwind_info: 0x3b48
--  __TEXT.__eh_frame: 0x2670
-+  __TEXT.__unwind_info: 0x3bc8
-+  __TEXT.__eh_frame: 0x2610
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x468
--  __DATA_CONST.__objc_classlist: 0xc0
-+  __DATA_CONST.__objc_classlist: 0xc8
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6b0
-+  __DATA_CONST.__objc_selrefs: 0x6f8
-   __DATA_CONST.__objc_protorefs: 0x38
--  __DATA_CONST.__got: 0xdf0
--  __AUTH_CONST.__const: 0x5988
--  __AUTH_CONST.__objc_const: 0x2aa8
--  __AUTH_CONST.__auth_got: 0x20a8
--  __AUTH.__objc_data: 0xb30
--  __AUTH.__data: 0x3d50
--  __DATA.__data: 0x4020
-+  __DATA_CONST.__got: 0xe38
-+  __AUTH_CONST.__const: 0x5be8
-+  __AUTH_CONST.__objc_const: 0x2bf8
-+  __AUTH_CONST.__auth_got: 0x20c8
-+  __AUTH.__objc_data: 0xb80
-+  __AUTH.__data: 0x3e58
-+  __DATA.__data: 0x4078
-   __DATA.__common: 0xc8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/Combine.framework/Combine
 
-   - /System/Library/PrivateFrameworks/RTTUI.framework/RTTUI
-   - /System/Library/PrivateFrameworks/RTTUtilities.framework/RTTUtilities
-   - /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities
 +  - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-   - /System/Library/PrivateFrameworks/_CommunicationsUICore_PosterBoardServices.framework/_CommunicationsUICore_PosterBoardServices
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4739
--  Symbols:   2083
+-  Symbols:   1906
 -  CStrings:  387
 +  Functions: 4809
-+  Symbols:   2109
++  Symbols:   1923
 +  CStrings:  388
- 
 Symbols:
 + _NSFontAttributeName
 + _OBJC_CLASS_$_NSAttributedString
@@ -117,15 +72,6 @@ Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA5GroupVyAA012_ConditionalD0VyAGyAGyAGyACyAA5ImageVAA24_ForegroundStyleModifierVyAA5ColorVGGAOGAGyACyAoA023_IndefiniteSymbolEffectJ0VGAOGGAGyA2PGGAPGGAA013_TraitWritingJ0VyAA010TransitionO3KeyVGGAA4ViewHPAyAA4_HPAxAA4_HPAwAA4_HPAuAA4_HPApAA4_HPAoAA4_HPAiAA4_HPyHC_AnA0sJ0HPyHCHC_AoAA4_HPAiAA4_HPyHC_AnAA5_HPyHCHCHC_AtAA4_HPAsAA4_HPAoAA4_HPAiAA4_HPyHC_AnAA5_HPyHCHC_ArAA5_HPyHCHC_AoAA4_HPAiAA4_HPyHC_AnAA5_HPyHCHCHCHC_AvAA4_HPApAA4_HPAoAA4_HPAiAA4_HPyHC_AnAA5_HPyHCHC_AoAA4_HPAiAA4_HPyHC_AnAA5_HPyHCHCHC_ApAA4_HPAoAA4_HPAiAA4_HPyHC_AnAA5_HPyHCHC_AoAA4_HPAiAA4_HPyHC_AnAA5_HPyHCHCHCHCHC_ApAA4_HPAoAA4_HPAiAA4_HPyHC_AnAA5_HPyHCHC_AoAA4_HPAiAA4_HPyHC_AnAA5_HPyHCHCHCHC_HC_A2_AAA5_HPyHCHC
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyAA6HStackVyAA05TupleD0VyACy020FaceTimeNotificationB014CallAvatarViewVyACyACyACyAA5ImageVAA18_AspectRatioLayoutVGAA06_FrameP0VGAA13_ShadowEffectVGSgGAQG_ACy014CommunicationsB012MarqueeLabelVSgAH17AvoidsObstructionVGQPGGAA05_FlexqP0VGAA08_PaddingP0VGAA0L0HPA8_AAA12_HPA5_AAA12_HPyHC_A7_AA0L8ModifierHPyHCHC_A10_AAA13_HPyHCHC
 + _get_witness_table 7SwiftUI6HStackVyAA12TupleContentVyAA08ModifiedE0VyAGy020FaceTimeNotificationB014CallAvatarViewVyAH0j5BadgeL0VGAA12_FrameLayoutVGAA21_TraitWritingModifierVyAA010TransitionP3KeyVGGSg_AGyAA0L0PAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAA6VStackVyAEyACyAEyAGy014CommunicationsB012MarqueeLabelVAA012_EnvironmenttqR0VyAA4FontVSgGG_AEyAA6SpacerV_AGyAA4TextVAA16_BlendModeEffectVGQPGSgQPGG_AA6IDViewVyAGyAYA4_E011conditionallR03for04viewR0QrSb_qd__xXEtAaXRd__lFQOyAGyAGyAA5GroupVyAA012_ConditionalE0VyA33_yAGyACyAEyA4_0mL0VSg_AGyA31_yA33_yAyAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyAA6ButtonVyACyAEyA6__AGyA15_AOGAA5ImageVQPGGG_AA16PlainButtonStyleVQo_A6_GGA8_ySiSgGGQPGGAA010_FixedSizeO0VGA33_yA33_yACyAEyA36__A17_QPGGA17_GA17_GGA62_GSgGA12_GAA016_ForegroundStyleR0VyAA5ColorVGG_AGyA74_A19_GQo_AA22_MatchedGeometryEffectVySSGGSbGAYA4_EA27_A28_A29_QrSb_qd__xXEtAaXRd__lFQOyA17__A20_Qo_SgQPGG_Qo_AH17AvoidsObstructionVGQPGGAaXHPyHC
-+ _objc_msgSend$addAttribute:value:range:
-+ _objc_msgSend$enumerateAttribute:inRange:options:usingBlock:
-+ _objc_msgSend$fontDescriptor
-+ _objc_msgSend$fontDescriptorWithSymbolicTraits:
-+ _objc_msgSend$fontWithDescriptor:size:
-+ _objc_msgSend$initWithAttributedString:
-+ _objc_msgSend$length
-+ _objc_msgSend$pointSize
-+ _objc_msgSend$symbolicTraits
 + _swift_isEscapingClosureAtFileLocation
 + _symbolic SS11description_t
 + _symbolic SiSgIegy_

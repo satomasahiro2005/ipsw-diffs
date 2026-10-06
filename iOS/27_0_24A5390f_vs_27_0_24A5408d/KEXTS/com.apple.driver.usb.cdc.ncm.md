@@ -2,29 +2,20 @@
 
 > `com.apple.driver.usb.cdc.ncm`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0xd6c4` | `0xd6e0` | **`+0x1c`** |
+| `__TEXT_EXEC.__auth_stubs` | `0x5b0` | `0x5c0` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x2d8` | `0x2e0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -395.0.0.0.0
-+397.0.0.0.0
-   __TEXT.__cstring: 0x2414
-   __TEXT.__const: 0xca
--  __TEXT_EXEC.__text: 0xd6c4
--  __TEXT_EXEC.__auth_stubs: 0x5b0
-+  __TEXT_EXEC.__text: 0xd6e0
-+  __TEXT_EXEC.__auth_stubs: 0x5c0
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x100
-   __DATA.__bss: 0x4
-
-   __DATA_CONST.__mod_term_func: 0x20
-   __DATA_CONST.__const: 0x2870
-   __DATA_CONST.__kalloc_type: 0x180
--  __DATA_CONST.__auth_got: 0x2d8
-+  __DATA_CONST.__auth_got: 0x2e0
-   __DATA_CONST.__got: 0x88
 -  Functions: 357
++397.0.0.0.0
 +  Functions: 355
-   Symbols:   0
-   CStrings:  239
- 
 ```

@@ -2,88 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/ABMHelper.framework/ABMHelper`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1cbff0` | `0x1cf5c8` | **`+0x35d8`** |
+| `__TEXT.__gcc_except_tab` | `0x211b4` | `0x21858` | **`+0x6a4`** |
+| `__TEXT.__oslogstring` | `0xd66c` | `0xdb4d` | **`+0x4e1`** |
+| `__TEXT.__cstring` | `0x8711` | `0x88c2` | **`+0x1b1`** |
+| `__TEXT.__eh_frame` | `—` | `0x138` | **`+0x138`** |
+| `__DATA_CONST.__const` | `0x2898` | `0x2960` | **`+0xc8`** |
+| `__TEXT.__unwind_info` | `0x7058` | `0x7108` | **`+0xb0`** |
+| `__AUTH_CONST.__const` | `0x9088` | `0x9120` | **`+0x98`** |
+| `__AUTH_CONST.__cfstring` | `0x960` | `0x9c0` | **`+0x60`** |
+| `__TEXT.__const` | `0x71c0` | `0x7220` | **`+0x60`** |
+| `__AUTH_CONST.__objc_dictobj` | `0x28` | `0x50` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0x558` | `0x578` | **`+0x20`** |
+| `__DATA_CONST.__objc_arraydata` | `0x10` | `0x30` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2e0` | `0x2f0` | **`+0x10`** |
+| `__DATA.__data` | `0x458` | `0x460` | **`+0x8`** |
+| `__TEXT.__init_offsets` | `0x164` | `0x16c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1563.0.0.0.0
--  __TEXT.__text: 0x1cbff0 sha256:79b27ec826f80a8d2bfcedd9e28ef665e67975e5610226db37c75f9900856f90
--  __TEXT.__init_offsets: 0x164 sha256:56ccf9cdb6174e15c15eb4471833dd87159105e9a28f3ac46397fa0e24a1fac6
--  __TEXT.__objc_methlist: 0x14 sha256:2cab5c00dfbfdee17f68431d406dce96058bb952af4cc62198457a0857aa3c64
--  __TEXT.__const: 0x71c0 sha256:0a1cfad68fe102748f6a540b2784319fed19f692397064d5523d6dbca8dac8ce
--  __TEXT.__gcc_except_tab: 0x211b4 sha256:aa455b2100d89128c23d01cfc29bee4d8bca5a6518293490ef205aa88cd6c23b
--  __TEXT.__cstring: 0x8711 sha256:e16b39646be73636c78867507755893f056db3c8531a0f34dc7a6373a415c1e0
--  __TEXT.__oslogstring: 0xd66c sha256:da89115a5698afe9338cf7848bcf65c40f993c83255c3c2248b62b22706385b9
--  __TEXT.__unwind_info: 0x7058 sha256:3feaf65b246e9f08cc32fac263baf30e4f007de1fd9a9642342e9f45f36cbcb7
 +1570.0.0.0.0
-+  __TEXT.__text: 0x1cf5c8 sha256:52697003c05473905e2094093e7c2e7fd5ef9ad7bb98cdd0ee1ac19c3276618b
-+  __TEXT.__init_offsets: 0x16c sha256:e6178abdc31f35cec673827c202837a611b5dbd1fb5cfe4f290979a84b300663
-+  __TEXT.__objc_methlist: 0x14 sha256:725665caf909bba22442df1257477aeffe453375cabd550bfdfcbaab1681e684
-+  __TEXT.__const: 0x7220 sha256:ac4cbeac461a780cf44bbad3554c719259ca49a64f36d1db594575acd146e103
-+  __TEXT.__gcc_except_tab: 0x21858 sha256:39e5fee6c9f930d9653ce6c0071c82d698c05f30aa17f23fd4ac13d4c35b4ea8
-+  __TEXT.__cstring: 0x88c2 sha256:536de9715d0cb918ef7a3473053b48f92ce7e85702b4a3b1b346473f7cba25e4
-+  __TEXT.__oslogstring: 0xdb4d sha256:70e3f1173eed876fdf95bf5baf4c402dc558b8bbe485d39f763f02b5a7dc84f2
-+  __TEXT.__unwind_info: 0x7108 sha256:8ad27bf22f1ecdf3d0fe043245945d4afda83b87c7c4369a97f114e0d8211cda
-+  __TEXT.__eh_frame: 0x138 sha256:06f6f97e558f1dcf564c3c9001ccec2b6b91108f12166ad924a55799e15a66cc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2898 sha256:7433b78f1db94d6e00ee27d6d9415a9d0509fdcef8baa6ef6351a5e5c8db4179
--  __DATA_CONST.__objc_classlist: 0x8 sha256:2014b123eb7da3e3a1d90c3d59ad262ca4a5fa8af0726ec19c6a5a79ec73f427
-+  __DATA_CONST.__const: 0x2960 sha256:04c21aef348616d6c5c760cbd32c8cf8cab0d84518c24accb1c1edd9ea20df6d
-+  __DATA_CONST.__objc_classlist: 0x8 sha256:6c9dd22ae62d887887d8cd006414e0d656ceb3e1ad0a881d1f011109a7a00d96
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0xb8 sha256:41a9b02706ad32418352e27c9431559614bd2ffa3a924bd05374853fd01d2dcf
--  __DATA_CONST.__objc_selrefs: 0x2e0 sha256:ba516eb72cf9d46e66ad7c74c742a85604018388e19d8e0f67ef0f3385aef4e4
--  __DATA_CONST.__objc_arraydata: 0x10 sha256:9014d51f7957b5011f2239db9248ea3a82ab1b4e35eeb025a8f2095e141b82a0
--  __DATA_CONST.__got: 0x558 sha256:91d5a15d27d8a0fe27b0b28fb772e35198982c0fb9c917903aec38f2f73b59db
--  __AUTH_CONST.__const: 0x9088 sha256:58dc788b8147f6c465dd95c64581ea2ec7907690e44042f4ce4f4e7e13bba126
--  __AUTH_CONST.__cfstring: 0x960 sha256:25f0ae8b3372679e42f4bd63b3037144c2e285f5b4a42420450466e6d80b297f
--  __AUTH_CONST.__objc_const: 0x90 sha256:d99d5ed52ae172fa169a506b492ec712e69a9ab231bd9f13a0e5091a15f29d40
--  __AUTH_CONST.__weak_auth_got: 0x20 sha256:52c9b9f7054537bcbd1b0015a017ad87fc2d84bd7ab268479e6b5286366dc849
--  __AUTH_CONST.__objc_intobj: 0x30 sha256:cf43ff702c1702f3cd348f26d15af530e2be980a28cadabe48705e2ddbf7e79e
--  __AUTH_CONST.__objc_dictobj: 0x28 sha256:0bb84d9b6dbd96669da1cfab717876036e712921f1afa9e049512e275152bb7f
-+  __DATA_CONST.__weak_got: 0xb8 sha256:dd0775e815a96496717bc460911bee71304af1a2f6a076596e0f94b82d98734a
-+  __DATA_CONST.__objc_selrefs: 0x2f0 sha256:b2737436cf3281c99db0874ba63ca617e205479796d0e7a2eb8f814fe55b2475
-+  __DATA_CONST.__objc_arraydata: 0x30 sha256:ddafe378e2d4571b37c17183dbe3218019262b3842359391d707258c5d5632f3
-+  __DATA_CONST.__got: 0x578 sha256:6c769ab0339e0b5fdd4f18b9bbfafa45ac1ebbe02cde20480594c86e9b844dcb
-+  __AUTH_CONST.__const: 0x9120 sha256:c419d79415d03e101fb9520474c5df374efa8c8810b71e49e9f2b712eec06317
-+  __AUTH_CONST.__cfstring: 0x9c0 sha256:76c6538415214b8d0410f86adf20eb2834b4e6ca63b01e20a2515134c287dba8
-+  __AUTH_CONST.__objc_const: 0x90 sha256:790fc02efea0777ad6ed7e5b892fb535d0c6d8411340c806b7c265d4bea67301
-+  __AUTH_CONST.__weak_auth_got: 0x20 sha256:9a19875ee94a4545924efc5e43b8a7cc9a6e9ae6f74f8f241796dbaf9c719f6b
-+  __AUTH_CONST.__objc_intobj: 0x30 sha256:b3547dc88cf07bc7d216ef8dd1c1d5716b59f53fced8fad96cf39c2f19bae919
-+  __AUTH_CONST.__objc_dictobj: 0x50 sha256:337c6b24ea30ee768939982e346f591465884f3b0f731d25fdb12457f49e6461
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__data: 0x458 sha256:2d4019a8c671b0fd015aa4840e2202e5b4237a99694454ab4b23774e7ef22002
-+  __DATA.__data: 0x460 sha256:f5ff5cf7c89fbde9207868db5f52742e9ae2081f70f73fe019446be22aba5b0e
-   __DATA.__bss: 0x20 sha256:66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925
-   __DATA.__common: 0x20 sha256:66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925
--  __DATA_DIRTY.__objc_data: 0x50 sha256:797fdabb153c90f4c58ec055734d3301642addbe23a287e40e56e6a8f496276c
-+  __DATA_DIRTY.__objc_data: 0x50 sha256:b42f3004a3d438b4a8e28056b045a926b9068fba4db6e17b152727b2e0139fa5
-   __DATA_DIRTY.__data: 0x230 sha256:f22e1790773eb616954a2b991fcc279c7daa71640afbfdda5e21b38a05c1fd16
-   __DATA_DIRTY.__bss: 0xb20 sha256:d71a85341166dbd4085df5276b3534cc813d748f3ad9957b00f6b4102bf9b3a2
-   __DATA_DIRTY.__common: 0x134 sha256:9575b2125169377b2ade7b401ea36c81228331d971f49664d9648d4f255d4868
 
-   - /System/Library/PrivateFrameworks/BasebandTraceHelper.framework/BasebandTraceHelper
-   - /System/Library/PrivateFrameworks/CPMS.framework/CPMS
-   - /System/Library/PrivateFrameworks/CacheDelete.framework/CacheDelete
 +  - /System/Library/PrivateFrameworks/CoreRepairCore.framework/CoreRepairCore
-   - /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
-   - /System/Library/PrivateFrameworks/LoggingSupport.framework/LoggingSupport
-   - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsysdiagnose.dylib
--  UUID: 365E1247-83B8-3345-961D-37F7FA5D9609
 -  Functions: 4291
--  Symbols:   12241
--  CStrings:  2834
-+  UUID: F5F3B8CF-C845-3989-835A-6358D2B0BEF4
+-  Symbols:   6745
+-  CStrings:  2745
 +  Functions: 4312
-+  Symbols:   12324
-+  CStrings:  2881
- 
++  Symbols:   6797
++  CStrings:  2789
 Symbols:
 + GCC_except_table184
 + GCC_except_table191
@@ -96,13 +50,6 @@ Symbols:
 + GCC_except_table256
 + GCC_except_table257
 + GCC_except_table264
-+ _.str.140
-+ _.str.145
-+ _.str.146
-+ _.str.153
-+ _.str.154
-+ _.str.155
-+ _.str.156
 + _OBJC_CLASS_$_CRRepairStateSnapshot
 + __GLOBAL__sub_I_RepairTask.mm
 + __ZN14INTTraceEngine29setPropLiveFilterSetting_syncEN8dispatch5groupENSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEES8_
@@ -538,19 +485,7 @@ Symbols:
 + __ZTSNSt3__120__shared_ptr_emplaceIN3abm10RepairTaskENS_9allocatorIS2_EEEE
 + __ZTVN3abm10RepairTaskE
 + __ZTVNSt3__120__shared_ptr_emplaceIN3abm10RepairTaskENS_9allocatorIS2_EEEE
-+ ____ZN14INTTraceEngine10start_syncEN8dispatch5groupE_block_invoke.21
-+ ____ZN14INTTraceEngine10start_syncEN8dispatch5groupE_block_invoke.27
 + ____ZN3abm10RepairTask9init_syncEv_block_invoke
-+ ____ZN3abm18CellularLoggingINT16snapshotInternalEN8dispatch13group_sessionERKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEENS3_8functionIFvbN3xpc4dictEEEE_block_invoke.17
-+ ___block_descriptor_tmp.102
-+ ___block_descriptor_tmp.143
-+ ___block_descriptor_tmp.167
-+ ___block_descriptor_tmp.168
-+ ___block_descriptor_tmp.90
-+ ___block_literal_global.54
-+ ___cxx_global_var_init.105
-+ _objc_msgSend$isEqualToString:
-+ _objc_msgSend$isHardwareChangedFromOldState:newState:options:error:
 - GCC_except_table189
 - GCC_except_table212
 - GCC_except_table221
@@ -558,7 +493,6 @@ Symbols:
 - GCC_except_table241
 - GCC_except_table250
 - GCC_except_table259
-- _.str.141
 - __ZN3abm26getActiveTraceChannelCountEv
 - __ZNKRSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEE3strB9fqe220100Ev
 - __ZNKSt3__121__murmur2_or_cityhashImLm64EEclB9fqe220100EPKvm
@@ -947,15 +881,6 @@ Symbols:
 - __ZNSt3__1plB9fqe220100IcNS_11char_traitsIcEENS_9allocatorIcEEEENS_12basic_stringIT_T0_T1_EEPKS6_OS9_
 - __ZNSt3__1plB9fqe220100IcNS_11char_traitsIcEENS_9allocatorIcEEEENS_12basic_stringIT_T0_T1_EERKS9_OS9_
 - __ZSt28__throw_bad_array_new_lengthB9fqe220100v
-- ____ZN14INTTraceEngine10start_syncEN8dispatch5groupE_block_invoke.20
-- ____ZN14INTTraceEngine10start_syncEN8dispatch5groupE_block_invoke.26
-- ____ZN3abm18CellularLoggingINT16snapshotInternalEN8dispatch13group_sessionERKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEENS3_8functionIFvbN3xpc4dictEEEE_block_invoke.15
-- ___block_descriptor_tmp.128
-- ___block_descriptor_tmp.163
-- ___block_descriptor_tmp.46
-- ___block_literal_global.53
-- ___cxx_global_var_init.100
-- ___cxx_global_var_init.101
 CStrings:
 + ".liveViewStreaming"
 + "CRRepairStateSnapshot failed: %{public}s"
@@ -1001,5 +926,4 @@ CStrings:
 + "repair.task.queue"
 + "── History                : "
 + "└── Live Streaming         : "
-
 ```

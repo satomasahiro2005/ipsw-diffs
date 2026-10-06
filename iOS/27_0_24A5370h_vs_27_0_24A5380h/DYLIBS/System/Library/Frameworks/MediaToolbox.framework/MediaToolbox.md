@@ -2,116 +2,40 @@
 
 > `/System/Library/Frameworks/MediaToolbox.framework/MediaToolbox`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10369c8` | `0x103e7d4` | **`+0x7e0c`** |
+| `__TEXT.__oslogstring` | `0x16a743` | `0x16b7fa` | **`+0x10b7`** |
+| `__TEXT.__cstring` | `0x13f227` | `0x13f4b7` | **`+0x290`** |
+| `__AUTH_CONST.__cfstring` | `0x534c0` | `0x53540` | **`+0x80`** |
+| `__TEXT.__const` | `0x298e0` | `0x29930` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x15658` | `0x156a8` | **`+0x50`** |
+| `__DATA.__data` | `0x338c` | `0x33d8` | **`+0x4c`** |
+| `__TEXT.__eh_frame` | `0x4e8` | `0x4b0` | **`-0x38`** |
+| `__DATA_DIRTY.__bss` | `0x1b78` | `0x1ba8` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0x47c38` | `0x47c58` | **`+0x20`** |
+| `__DATA.__bss` | `0x5368` | `0x5348` | **`-0x20`** |
+| `__DATA_CONST.__const` | `0x24868` | `0x24888` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x4900` | `0x4920` | **`+0x20`** |
+| `__DATA_DIRTY.__data` | `0x520` | `0x534` | **`+0x14`** |
+| `__AUTH_CONST.__auth_got` | `0x5d00` | `0x5d10` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x1e4c` | `0x1e50` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x10369c8
-+  __TEXT.__text: 0x103e7d4
-   __TEXT.__lazy_helpers: 0x3600
-   __TEXT.__objc_methlist: 0x2b84
--  __TEXT.__const: 0x298e0
--  __TEXT.__cstring: 0x13f227
--  __TEXT.__oslogstring: 0x16a743
--  __TEXT.__gcc_except_tab: 0x1e4c
-+  __TEXT.__const: 0x29930
-+  __TEXT.__cstring: 0x13f4b7
-+  __TEXT.__oslogstring: 0x16b7fa
-+  __TEXT.__gcc_except_tab: 0x1e50
-   __TEXT.__dlopen_cstrs: 0x32e
-   __TEXT.__ustring: 0x246
-   __TEXT.__swift5_typeref: 0x1d1
+-3350.63.2.11.1
++3350.67.2.0.0
 
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0x30
--  __TEXT.__unwind_info: 0x15658
--  __TEXT.__eh_frame: 0x4e8
-+  __TEXT.__unwind_info: 0x156a8
-+  __TEXT.__eh_frame: 0x4b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x24868
-+  __DATA_CONST.__const: 0x24888
-   __DATA_CONST.__objc_classlist: 0x228
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
-
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x1f0
-   __DATA_CONST.__objc_arraydata: 0x50
--  __DATA_CONST.__got: 0x4900
--  __AUTH_CONST.__const: 0x47c38
--  __AUTH_CONST.__cfstring: 0x534c0
-+  __DATA_CONST.__got: 0x4920
-+  __AUTH_CONST.__const: 0x47c58
-+  __AUTH_CONST.__cfstring: 0x53540
-   __AUTH_CONST.__objc_const: 0x59c8
-   __AUTH_CONST.__weak_auth_got: 0x20
-   __AUTH_CONST.__lazy_load_got: 0x4d8
-
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x5d00
-+  __AUTH_CONST.__auth_got: 0x5d10
-   __AUTH.__objc_data: 0x1040
-   __AUTH.__data: 0x940
-   __DATA.__objc_ivar: 0x3c0
--  __DATA.__data: 0x338c
-+  __DATA.__data: 0x33d8
-   __DATA.__common: 0x32a8
--  __DATA.__bss: 0x5368
-+  __DATA.__bss: 0x5348
-   __DATA_DIRTY.__objc_data: 0x550
--  __DATA_DIRTY.__data: 0x520
--  __DATA_DIRTY.__bss: 0x1b78
-+  __DATA_DIRTY.__data: 0x534
-+  __DATA_DIRTY.__bss: 0x1ba8
-   __DATA_DIRTY.__common: 0x410
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 53312
--  Symbols:   147491
--  CStrings:  67939
+-  Symbols:   45647
+-  CStrings:  57289
 +  Functions: 53101
-+  Symbols:   146981
-+  CStrings:  67998
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__lazy_load_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   45358
++  CStrings:  57344
 Symbols:
 + GCC_except_table190
 + GCC_except_table196
@@ -650,5 +574,4 @@ CStrings:
 - "playercentral_establishIfPlayerIsSilentAndTellMXSession"
 - "setMXSessionProperties unsupported"
 - "setMXSessionProperty unsupported"
-
 ```

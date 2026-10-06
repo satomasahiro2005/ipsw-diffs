@@ -2,106 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/Sleep.framework/Sleep`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5b600` | `0x59eec` | **`-0x1714`** |
+| `__AUTH_CONST.__objc_const` | `0xc158` | `0xbb10` | **`-0x648`** |
+| `__TEXT.__oslogstring` | `0x43da` | `0x3fb7` | **`-0x423`** |
+| `__TEXT.__objc_methlist` | `0x752c` | `0x71bc` | **`-0x370`** |
+| `__DATA.__bss` | `0xa00` | `0xd00` | **`+0x300`** |
+| `__AUTH_CONST.__cfstring` | `0x5260` | `0x4fc0` | **`-0x2a0`** |
+| `__TEXT.__cstring` | `0x4c09` | `0x498d` | **`-0x27c`** |
+| `__TEXT.__const` | `0x830` | `0xa20` | **`+0x1f0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3828` | `0x3660` | **`-0x1c8`** |
+| `__DATA.__data` | `0x16b0` | `0x1830` | **`+0x180`** |
+| `__DATA_DIRTY.__objc_data` | `0x1978` | `0x1838` | **`-0x140`** |
+| `__DATA_CONST.__const` | `0x2c70` | `0x2b78` | **`-0xf8`** |
+| `__AUTH.__objc_data` | `0x598` | `0x4f8` | **`-0xa0`** |
+| `__AUTH_CONST.__auth_got` | `0x5f0` | `0x670` | **`+0x80`** |
+| `__AUTH_CONST.__const` | `0x9c8` | `0x950` | **`-0x78`** |
+| `__TEXT.__unwind_info` | `0x1dd0` | `0x1d78` | **`-0x58`** |
+| `__TEXT.__swift5_typeref` | `0x161` | `0x1ad` | **`+0x4c`** |
+| `__DATA.__objc_ivar` | `0x62c` | `0x5f0` | **`-0x3c`** |
+| `__DATA_CONST.__objc_classlist` | `0x310` | `0x2e0` | **`-0x30`** |
+| `__DATA_CONST.__objc_superrefs` | `0x280` | `0x250` | **`-0x30`** |
+| `__TEXT.__swift5_assocty` | `0x50` | `0x80` | **`+0x30`** |
+| `__DATA_CONST.__objc_protolist` | `0x1d8` | `0x1f8` | **`+0x20`** |
+| `__TEXT.__constg_swiftt` | `0x178` | `0x198` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0xc5` | `0xe5` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x7b4` | `0x798` | **`-0x1c`** |
+| `__TEXT.__swift5_fieldmd` | `0x130` | `0x14c` | **`+0x1c`** |
+| `__TEXT.__swift5_proto` | `0x50` | `0x68` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x14` | `0x28` | **`+0x14`** |
+| `__DATA_CONST.__objc_catlist` | `0x80` | `0x90` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x5a0` | `0x598` | **`-0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x70` | `0x78` | **`+0x8`** |
+| `__DATA_DIRTY.__bss` | `0x128` | `0x130` | **`+0x8`** |
+| `__DATA_DIRTY.__common` | `0xd0` | `0xd8` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x20` | `0x24` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.0.72.2.7
--  __TEXT.__text: 0x58a48
--  __TEXT.__objc_methlist: 0x752c
--  __TEXT.__const: 0x830
 +7027.1.36.2.7
-+  __TEXT.__text: 0x5742c
-+  __TEXT.__objc_methlist: 0x71bc
-+  __TEXT.__const: 0xa20
-   __TEXT.__dlopen_cstrs: 0x5a
--  __TEXT.__constg_swiftt: 0x178
--  __TEXT.__swift5_typeref: 0x161
--  __TEXT.__swift5_builtin: 0x14
--  __TEXT.__swift5_reflstr: 0xc5
--  __TEXT.__swift5_assocty: 0x50
--  __TEXT.__swift5_proto: 0x50
--  __TEXT.__swift5_types: 0x20
--  __TEXT.__swift5_fieldmd: 0x130
--  __TEXT.__cstring: 0x4c09
--  __TEXT.__oslogstring: 0x43da
--  __TEXT.__gcc_except_tab: 0x7b4
--  __TEXT.__unwind_info: 0x2560
-+  __TEXT.__constg_swiftt: 0x198
-+  __TEXT.__swift5_typeref: 0x1ad
-+  __TEXT.__swift5_builtin: 0x28
-+  __TEXT.__swift5_reflstr: 0xe5
-+  __TEXT.__swift5_assocty: 0x80
-+  __TEXT.__swift5_fieldmd: 0x14c
-+  __TEXT.__swift5_proto: 0x68
-+  __TEXT.__swift5_types: 0x24
-+  __TEXT.__cstring: 0x498d
-+  __TEXT.__oslogstring: 0x3fb7
-+  __TEXT.__gcc_except_tab: 0x798
-+  __TEXT.__unwind_info: 0x2508
-   __TEXT.__eh_frame: 0x128
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2c70
--  __DATA_CONST.__objc_classlist: 0x310
--  __DATA_CONST.__objc_catlist: 0x80
--  __DATA_CONST.__objc_protolist: 0x1d8
-+  __DATA_CONST.__const: 0x2b78
-+  __DATA_CONST.__objc_classlist: 0x2e0
-+  __DATA_CONST.__objc_catlist: 0x90
-+  __DATA_CONST.__objc_protolist: 0x1f8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3828
--  __DATA_CONST.__objc_protorefs: 0x70
--  __DATA_CONST.__objc_superrefs: 0x280
-+  __DATA_CONST.__objc_selrefs: 0x3660
-+  __DATA_CONST.__objc_protorefs: 0x78
-+  __DATA_CONST.__objc_superrefs: 0x250
-   __DATA_CONST.__objc_arraydata: 0xa8
--  __DATA_CONST.__got: 0x5a0
--  __AUTH_CONST.__const: 0x9c8
--  __AUTH_CONST.__cfstring: 0x5260
--  __AUTH_CONST.__objc_const: 0xc158
--  __AUTH_CONST.__objc_intobj: 0x18
-+  __DATA_CONST.__got: 0x598
-+  __AUTH_CONST.__const: 0x950
-+  __AUTH_CONST.__cfstring: 0x4fc0
-+  __AUTH_CONST.__objc_const: 0xbb10
-   __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__auth_got: 0x5f0
--  __AUTH.__objc_data: 0x598
-+  __AUTH_CONST.__objc_intobj: 0x18
-+  __AUTH_CONST.__auth_got: 0x670
-+  __AUTH.__objc_data: 0x4f8
-   __AUTH.__data: 0x110
--  __DATA.__objc_ivar: 0x62c
--  __DATA.__data: 0x16b0
-+  __DATA.__objc_ivar: 0x5f0
-+  __DATA.__data: 0x1830
-   __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_ivar: 0x34
--  __DATA_DIRTY.__objc_data: 0x1978
-+  __DATA_DIRTY.__objc_data: 0x1838
-   __DATA_DIRTY.__data: 0xf8
--  __DATA_DIRTY.__bss: 0x128
--  __DATA_DIRTY.__common: 0xd0
-+  __DATA_DIRTY.__bss: 0x130
-+  __DATA_DIRTY.__common: 0xd8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/HealthKit.framework/HealthKit
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 2891
--  Symbols:   6424
+-  Symbols:   5092
 -  CStrings:  1122
 +  Functions: 2845
-+  Symbols:   6245
++  Symbols:   4956
 +  CStrings:  1080
- 
 Symbols:
 + +[HKSPSleepScheduleModel templateModelForSchedule:eventRecord:]
 + -[HKSPAnalyticsDailyReportEvent setSleepScoreAlgorithmVersion:]
@@ -205,24 +157,6 @@ Symbols:
 + _associated conformance So28HKFeatureAvailabilityContextaSHSCSQ
 + _associated conformance So28HKFeatureAvailabilityContextas20_SwiftNewtypeWrapperSCSY
 + _associated conformance So28HKFeatureAvailabilityContextas20_SwiftNewtypeWrapperSCs35_HasCustomAnyHashableRepresentation
-+ _objc_msgSend$_recordScheduleChange:options:context:
-+ _objc_msgSend$analyticsContext
-+ _objc_msgSend$hksp_generalSleepFeatureRequirementSetForFeatureIdentifier:
-+ _objc_msgSend$hksp_sleepTrackingRequirementSetForFeatureIdentifier:
-+ _objc_msgSend$initWithConnectionProviderProvider:identifier:scheduleHistoryWriter:options:
-+ _objc_msgSend$initWithConnectionProviderProvider:identifier:scheduleHistoryWriter:options:throttlerProvider:callbackScheduler:sleepFocusModeBridgeProvider:widgetTimelineControllersProvider:widgetRelevanceControllerProvider:currentDateProvider:
-+ _objc_msgSend$initWithIdentifier:scheduleHistoryWriter:
-+ _objc_msgSend$initWithIdentifier:scheduleHistoryWriter:options:
-+ _objc_msgSend$initWithSchedule:date:shouldForceSave:isSleepTrackingEnabled:analyticsContext:
-+ _objc_msgSend$initWithSleepDataSource:
-+ _objc_msgSend$initWithSleepDataSource:ihaOptInStatusProvider:diagnosticsOptInStatusProvider:analyticsEventConsumer:
-+ _objc_msgSend$modelByApplyingChangesFromOccurrence:
-+ _objc_msgSend$recordSleepScheduleChange:completion:
-+ _objc_msgSend$shouldForceSave
-+ _objc_msgSend$sleepDataSource
-+ _objc_msgSend$sleepScoreAlgorithmVersion
-+ _objc_msgSend$templateModelForSchedule:eventRecord:
-+ _objc_msgSend$trackSleepScheduleChangeWithContext:isSleepTrackingEnabled:
 + _swift_arrayInitWithCopy
 + _swift_getExistentialTypeMetadata
 + _swift_initStackObject
@@ -483,67 +417,6 @@ Symbols:
 - ___block_descriptor_57_e8_32s40bs_e44_v24?0"HKSPSleepScheduleModel"8"NSError"16ls40l8s32l8
 - ___block_descriptor_64_e8_32s40s48s56bs_e5_v8?0ls32l8s40l8s48l8s56l8
 - _kHKAgeGatingKeyEnableSleepTracking
-- _objc_msgSend$_checkSleepModeState
-- _objc_msgSend$_defaultRequirements
-- _objc_msgSend$_defaultSleepTrackingRequirements
-- _objc_msgSend$_initializedLocalDeviceHealthStore
-- _objc_msgSend$_launchAppForOnboarding
-- _objc_msgSend$_onboardSleepTrackingRequirements
-- _objc_msgSend$_payloadValueForWindDownAction:
-- _objc_msgSend$_queue_updateStateWithSleepMode:
-- _objc_msgSend$_sendScheduleChangedAnalyticsWithContext:
-- _objc_msgSend$_setWindDownActions:forMorningIndex:overwriteExisting:
-- _objc_msgSend$_sleepTrackingRequirements
-- _objc_msgSend$_updateStateWithSleepMode:
-- _objc_msgSend$_updatedHistoricalSleepGoalForSleepSchedule:options:date:
-- _objc_msgSend$_updatedHistoricalSleepSchedulesFromSleepSchedule:options:date:
-- _objc_msgSend$_useSleepTrackingRequirements
-- _objc_msgSend$_writeHistoricalSchedule:options:
-- _objc_msgSend$analyticsManager
-- _objc_msgSend$arrayByAddingObjectsFromArray:
-- _objc_msgSend$canConnectToSystemMachService
-- _objc_msgSend$collectedEventDataCopy
-- _objc_msgSend$currentDeviceType
-- _objc_msgSend$decodeArrayOfObjectsOfClass:forKey:
-- _objc_msgSend$defaultIsDiagnosticDataSubmissionAllowed
-- _objc_msgSend$diagnosticsOptInStatusProvider
-- _objc_msgSend$eventDatums
-- _objc_msgSend$healthStore
-- _objc_msgSend$hksp_dataForKey:
-- _objc_msgSend$indexOfObject:
-- _objc_msgSend$initWithCapacity:
-- _objc_msgSend$initWithConnectionProviderProvider:identifier:healthStore:options:
-- _objc_msgSend$initWithConnectionProviderProvider:identifier:healthStore:options:analyticsManager:throttlerProvider:callbackScheduler:sleepFocusModeBridgeProvider:widgetTimelineControllersProvider:widgetRelevanceControllerProvider:currentDateProvider:
-- _objc_msgSend$initWithEventDatums:
-- _objc_msgSend$initWithSleepHealthStore:healthStore:
-- _objc_msgSend$initWithSleepStore:delegate:behavior:
-- _objc_msgSend$initWithSleepStoreProvider:
-- _objc_msgSend$initWithSleepStoreProvider:useWeakReferences:
-- _objc_msgSend$initWithUserDefaults:diagnosticsOptInStatusProvider:
-- _objc_msgSend$initWithUserDefaults:ihaOptInStatusProvider:diagnosticsOptInStatusProvider:analyticsEventConsumer:
-- _objc_msgSend$initWithWindDownAction:wasUsed:identifier:wasCollected:
-- _objc_msgSend$interactedWithWindDownLast24Hrs
-- _objc_msgSend$isDiagnosticSubmissionAllowed
-- _objc_msgSend$isEqualEventData:
-- _objc_msgSend$readAllWindDownActions
-- _objc_msgSend$replaceObjectAtIndex:withObject:
-- _objc_msgSend$setSleepModeOn:completion:
-- _objc_msgSend$setSourceBundleIdentifier:
-- _objc_msgSend$shareAcrossDevices
-- _objc_msgSend$sharedConnection
-- _objc_msgSend$sleepModeButtonModel:launchURL:
-- _objc_msgSend$sleepModeButtonModelChanged:
-- _objc_msgSend$sleepStoreForIdentifier:healthStore:
-- _objc_msgSend$strongToStrongObjectsMapTable
-- _objc_msgSend$timeInBedTracking
-- _objc_msgSend$unarchivedDictionaryWithKeysOfClass:objectsOfClass:fromData:error:
-- _objc_msgSend$userDefaults
-- _objc_msgSend$wasCollected
-- _objc_msgSend$wasUsed
-- _objc_msgSend$weakCache
-- _objc_msgSend$weeksSinceOnboardedWindDownActions
-- _objc_msgSend$windDownActionsAfterMorningIndex:
-- _objc_msgSend$writeWindDownActions:
 CStrings:
 + "@\"<HKSPSleepConnectionProviding>\"16@?0@\"HKSPSleepStore\"8"
 + "Attempted to save a sleep schedule without a history writer"

@@ -2,106 +2,35 @@
 
 > `/System/Library/Frameworks/Vision.framework/Vision`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_floatobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x692b20` | `0x694394` | **`+0x1874`** |
+| `__TEXT.__cstring` | `0x3a555` | `0x3a7d6` | **`+0x281`** |
+| `__AUTH_CONST.__cfstring` | `0x198e0` | `0x19980` | **`+0xa0`** |
+| `__TEXT.__gcc_except_tab` | `0x378d8` | `0x37940` | **`+0x68`** |
+| `__TEXT.__unwind_info` | `0x20338` | `0x20350` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8938` | `0x8948` | **`+0x10`** |
+| `__TEXT.__const` | `0x71ff0` | `0x71fe0` | **`-0x10`** |
+| `__TEXT.__objc_methlist` | `0x19718` | `0x19728` | **`+0x10`** |
+| `__DATA.__data` | `0x10148` | `0x10150` | **`+0x8`** |
+| `__TEXT.__eh_frame` | `0x18a24` | `0x18a1c` | **`-0x8`** |
+| `__TEXT.__swift5_typeref` | `0x1a55c` | `0x1a564` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -10.0.37.0.0
--  __TEXT.__text: 0x692b20
--  __TEXT.__objc_methlist: 0x19718
--  __TEXT.__const: 0x71ff0
 +10.0.39.0.0
-+  __TEXT.__text: 0x694394
-+  __TEXT.__objc_methlist: 0x19728
-+  __TEXT.__const: 0x71fe0
-   __TEXT.__dlopen_cstrs: 0x474
--  __TEXT.__cstring: 0x3a555
--  __TEXT.__swift5_typeref: 0x1a55c
-+  __TEXT.__cstring: 0x3a7d6
-+  __TEXT.__swift5_typeref: 0x1a564
-   __TEXT.__oslogstring: 0x2787
-   __TEXT.__constg_swiftt: 0xfdc0
-   __TEXT.__swift5_fieldmd: 0xf510
 
-   __TEXT.__swift5_capture: 0x1cd8
-   __TEXT.__swift5_protos: 0x190
-   __TEXT.__swift5_mpenum: 0x68
--  __TEXT.__gcc_except_tab: 0x378d8
--  __TEXT.__unwind_info: 0x20338
--  __TEXT.__eh_frame: 0x18a24
-+  __TEXT.__gcc_except_tab: 0x37940
-+  __TEXT.__unwind_info: 0x20350
-+  __TEXT.__eh_frame: 0x18a1c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_protolist: 0x240
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x18
--  __DATA_CONST.__objc_selrefs: 0x8938
-+  __DATA_CONST.__objc_selrefs: 0x8948
-   __DATA_CONST.__objc_protorefs: 0x70
-   __DATA_CONST.__objc_superrefs: 0x1178
-   __DATA_CONST.__objc_arraydata: 0x9e8
-   __DATA_CONST.__got: 0x1df8
-   __AUTH_CONST.__const: 0x302a0
--  __AUTH_CONST.__cfstring: 0x198e0
-+  __AUTH_CONST.__cfstring: 0x19980
-   __AUTH_CONST.__objc_const: 0x33948
-   __AUTH_CONST.__weak_auth_got: 0x38
-   __AUTH_CONST.__objc_intobj: 0x10b0
-
-   __AUTH.__objc_data: 0xad68
-   __AUTH.__data: 0x16e10
-   __DATA.__objc_ivar: 0x16d0
--  __DATA.__data: 0x10148
-+  __DATA.__data: 0x10150
-   __DATA.__bss: 0xa2358
-   __DATA.__common: 0x598
-   __DATA_DIRTY.__objc_data: 0x35e8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 35341
--  Symbols:   37273
+-  Symbols:   33668
 -  CStrings:  6173
 +  Functions: 35344
-+  Symbols:   37277
++  Symbols:   33670
 +  CStrings:  6185
- 
 Symbols:
 + -[VNFaceObservation setLandmarkPrecisionEstimatesPerPoint:originatingRequestSpecifier:]
 + GCC_except_table10005
@@ -939,8 +868,6 @@ Symbols:
 + GCC_except_table9981
 + GCC_except_table9988
 + GCC_except_table9996
-+ _objc_msgSend$initWithFloat:
-+ _objc_msgSend$setLandmarkPrecisionEstimatesPerPoint:originatingRequestSpecifier:
 + _symbolic ___________Sgt 6Vision30GenerateSkySegmentationRequestV AA22PixelBufferObservationV
 + _symbolic ___________Sgt 6Vision33GenerateAnimalSegmentationRequestV AA22PixelBufferObservationV
 + _symbolic ___________Sgt 6Vision34GenerateGlassesSegmentationRequestV AA22PixelBufferObservationV

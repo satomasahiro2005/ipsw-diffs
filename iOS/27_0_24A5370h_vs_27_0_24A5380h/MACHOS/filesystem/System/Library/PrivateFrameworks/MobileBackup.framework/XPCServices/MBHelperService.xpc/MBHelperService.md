@@ -2,17 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/MobileBackup.framework/XPCServices/MBHelperService.xpc/MBHelperService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x150` | `0x168` | **`+0x18`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__const`
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_arraydata: 0x50
-   __DATA_CONST.__objc_arrayobj: 0x78
-   __DATA_CONST.__auth_got: 0x5f0
--  __DATA_CONST.__got: 0x150
-+  __DATA_CONST.__got: 0x168
-   __DATA_CONST.__auth_ptr: 0x8
-   __DATA.__objc_const: 0xfa8
-   __DATA.__objc_selrefs: 0xb88
-Sections:
-~ __TEXT.__const : content changed
-
+-3036.0.0.0.0
++3038.0.0.0.0
 ```

@@ -2,60 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/CoreRecents.framework/CoreRecents`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc5fc` | `0xc63c` | **`+0x40`** |
+| `__TEXT.__oslogstring` | `0x7e8` | `0x827` | **`+0x3f`** |
+| `__AUTH_CONST.__objc_const` | `0x1800` | `0x1830` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x6c8` | `0x6f0` | **`+0x28`** |
+| `__TEXT.__objc_methlist` | `0x11dc` | `0x11f4` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb88` | `0xb98` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x150` | `0x15c` | **`+0xc`** |
+| `__TEXT.__const` | `0xe8` | `0xf0` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0xa4` | `0xa8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1233.100.1.0.0
--  __TEXT.__text: 0xc5fc
--  __TEXT.__objc_methlist: 0x11dc
--  __TEXT.__const: 0xe8
 +1234.100.1.0.0
-+  __TEXT.__text: 0xc63c
-+  __TEXT.__objc_methlist: 0x11f4
-+  __TEXT.__const: 0xf0
-   __TEXT.__cstring: 0x9e9
--  __TEXT.__oslogstring: 0x7e8
--  __TEXT.__gcc_except_tab: 0x150
-+  __TEXT.__oslogstring: 0x827
-+  __TEXT.__gcc_except_tab: 0x15c
-   __TEXT.__unwind_info: 0x4c0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x6c8
-+  __DATA_CONST.__const: 0x6f0
-   __DATA_CONST.__objc_classlist: 0x80
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb88
-+  __DATA_CONST.__objc_selrefs: 0xb98
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x60
-   __DATA_CONST.__got: 0x1a0
-   __AUTH_CONST.__const: 0x2e0
-   __AUTH_CONST.__cfstring: 0xd40
--  __AUTH_CONST.__objc_const: 0x1800
-+  __AUTH_CONST.__objc_const: 0x1830
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0xa0
--  __DATA.__objc_ivar: 0xa4
-+  __DATA.__objc_ivar: 0xa8
-   __DATA.__data: 0x258
-   __DATA.__bss: 0x40
-   __DATA_DIRTY.__objc_data: 0x460
 
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 405
--  Symbols:   1099
+-  Symbols:   841
 -  CStrings:  184
 +  Functions: 407
-+  Symbols:   1109
++  Symbols:   849
 +  CStrings:  185
- 
 Symbols:
 + -[CRRecentContactsLibraryRemoteAccess initWithConnection:searchTimeout:]
 + -[CRRecentContactsLibraryRemoteAccess searchTimeout]
@@ -69,8 +42,6 @@ Symbols:
 + _dispatch_semaphore_signal
 + _dispatch_semaphore_wait
 + _dispatch_time
-+ _objc_msgSend$initWithConnection:searchTimeout:
-+ _objc_msgSend$searchTimeout
 - GCC_except_table1
 - GCC_except_table12
 - GCC_except_table6

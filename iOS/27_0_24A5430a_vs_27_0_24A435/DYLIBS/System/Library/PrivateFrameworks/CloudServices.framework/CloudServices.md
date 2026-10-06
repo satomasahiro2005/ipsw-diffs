@@ -2,8 +2,10 @@
 
 > `/System/Library/PrivateFrameworks/CloudServices.framework/CloudServices`
 
+### Other Changes
+
 ```text
 Functions:
-~ sub_257d18bac -> sub_258e25bac : 60 -> 64
-~ sub_257d21e14 -> sub_258e2ee18 : 3920 -> 3916
+~ sub_257be2bac -> sub_258d09bac : 60 -> 64
+~ sub_257bebe14 -> sub_258d12e18 : 3920 -> 3916
 ```

@@ -2,98 +2,74 @@
 
 > `/System/Library/Snippets/UIPlugins/MusicSnippetsUI.bundle/MusicSnippetsUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_protos`
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x278` | `0x3af68` | **`+0x3acf0`** |
+| `__TEXT.__swift5_typeref` | `0x48` | `0x6cd6` | **`+0x6c8e`** |
+| `__DATA.__bss` | `—` | `0x2bb8` | **`+0x2bb8`** |
+| `__TEXT.__const` | `0xe6` | `0x2b58` | **`+0x2a72`** |
+| `__DATA.__data` | `0xa0` | `0x2328` | **`+0x2288`** |
+| `__TEXT.__auth_stubs` | `0x170` | `0x2110` | **`+0x1fa0`** |
+| `__TEXT.__eh_frame` | `—` | `0x1a44` | **`+0x1a44`** |
+| `__DATA_CONST.__const` | `0x1c0` | `0x19f8` | **`+0x1838`** |
+| `__DATA_CONST.__auth_got` | `0xb8` | `0x1090` | **`+0xfd8`** |
+| `__TEXT.__unwind_info` | `0x88` | `0xef8` | **`+0xe70`** |
+| `__TEXT.__constg_swiftt` | `0x94` | `0xa5c` | **`+0x9c8`** |
+| `__TEXT.__swift5_fieldmd` | `0x20` | `0x960` | **`+0x940`** |
+| `__TEXT.__oslogstring` | `—` | `0x938` | **`+0x938`** |
+| `__DATA_CONST.__auth_ptr` | `0x40` | `0x828` | **`+0x7e8`** |
+| `__DATA_CONST.__got` | `—` | `0x7d8` | **`+0x7d8`** |
+| `__TEXT.__swift5_reflstr` | `—` | `0x6f4` | **`+0x6f4`** |
+| `__TEXT.__cstring` | `—` | `0x3c4` | **`+0x3c4`** |
+| `__TEXT.__swift5_capture` | `—` | `0x390` | **`+0x390`** |
+| `__TEXT.__objc_stubs` | `—` | `0x2c0` | **`+0x2c0`** |
+| `__TEXT.__swift5_assocty` | `—` | `0x240` | **`+0x240`** |
+| `__TEXT.__objc_methname` | `—` | `0x1ac` | **`+0x1ac`** |
+| `__TEXT.__swift5_proto` | `0x14` | `0x16c` | **`+0x158`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x118` | **`+0x118`** |
+| `__TEXT.__swift5_types` | `0x4` | `0xc4` | **`+0xc0`** |
+| `__DATA.__objc_selrefs` | `—` | `0xb0` | **`+0xb0`** |
+| `__TEXT.__swift_as_ret` | `—` | `0x80` | **`+0x80`** |
+| `__DATA.__common` | `—` | `0x71` | **`+0x71`** |
+| `__TEXT.__swift5_builtin` | `—` | `0x64` | **`+0x64`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x5c` | **`+0x5c`** |
+| `__TEXT.__objc_methtype` | `—` | `0x25` | **`+0x25`** |
+| `__TEXT.__swift5_mpenum` | `—` | `0x8` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_const`
+- `__DATA_CONST.__objc_classlist`
+- `__TEXT.__swift5_protos`
+
+### Other Changes
 
 ```diff
 
 -4026.100.89.0.0
--  __TEXT.__text: 0x278
--  __TEXT.__auth_stubs: 0x170
--  __TEXT.__const: 0xe6
--  __TEXT.__swift5_typeref: 0x48
--  __TEXT.__swift5_fieldmd: 0x20
--  __TEXT.__constg_swiftt: 0x94
 +4026.110.2.0.0
-+  __TEXT.__text: 0x3af68
-+  __TEXT.__auth_stubs: 0x2110
-+  __TEXT.__objc_stubs: 0x2c0
-+  __TEXT.__const: 0x2b58
-+  __TEXT.__constg_swiftt: 0xa5c
-+  __TEXT.__swift5_typeref: 0x6cd6
-+  __TEXT.__swift5_reflstr: 0x6f4
-+  __TEXT.__swift5_fieldmd: 0x960
-+  __TEXT.__swift5_builtin: 0x64
-+  __TEXT.__swift5_assocty: 0x240
-+  __TEXT.__cstring: 0x3c4
-+  __TEXT.__swift5_proto: 0x16c
-+  __TEXT.__swift5_types: 0xc4
-+  __TEXT.__swift5_capture: 0x390
-+  __TEXT.__oslogstring: 0x938
-+  __TEXT.__swift_as_entry: 0x5c
-+  __TEXT.__swift_as_ret: 0x80
-+  __TEXT.__swift_as_cont: 0x118
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__swift5_proto: 0x14
-+  __TEXT.__objc_methtype: 0x25
-+  __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__objc_classname: 0x2c
--  __TEXT.__swift5_types: 0x4
--  __TEXT.__unwind_info: 0x88
--  __DATA_CONST.__const: 0x1c0
-+  __TEXT.__objc_methname: 0x1ac
-+  __TEXT.__unwind_info: 0xef8
-+  __TEXT.__eh_frame: 0x1a44
-+  __DATA_CONST.__const: 0x19f8
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0xb8
--  __DATA_CONST.__auth_ptr: 0x40
-+  __DATA_CONST.__auth_got: 0x1090
-+  __DATA_CONST.__got: 0x7d8
-+  __DATA_CONST.__auth_ptr: 0x828
-   __DATA.__objc_const: 0x90
--  __DATA.__data: 0xa0
-+  __DATA.__objc_selrefs: 0xb0
-+  __DATA.__data: 0x2328
-+  __DATA.__bss: 0x2bb8
-+  __DATA.__common: 0x71
 +  - /System/Library/Frameworks/AppIntents.framework/AppIntents
 +  - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/MusicKit.framework/MusicKit
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-   - /System/Library/Frameworks/UIKit.framework/UIKit
+
 +  - /System/Library/Frameworks/_AppIntents_SwiftUI.framework/_AppIntents_SwiftUI
-   - /System/Library/Frameworks/_MusicKit_SwiftUI.framework/_MusicKit_SwiftUI
+
 +  - /System/Library/PrivateFrameworks/IconServices.framework/IconServices
 +  - /System/Library/PrivateFrameworks/MediaCoreUI.framework/MediaCoreUI
-   - /System/Library/PrivateFrameworks/MusicKitInternal.framework/MusicKitInternal
-   - /System/Library/PrivateFrameworks/SnippetKit.framework/SnippetKit
-   - /System/Library/PrivateFrameworks/SnippetUI.framework/SnippetUI
-+  - /System/Library/PrivateFrameworks/_IconServices_SwiftUI.framework/_IconServices_SwiftUI
-   - /System/Library/PrivateFrameworks/_MusicKitInternal_AppIntents.framework/_MusicKitInternal_AppIntents
-+  - /System/Library/PrivateFrameworks/_MusicKitInternal_SwiftUI.framework/_MusicKitInternal_SwiftUI
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
 
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
++  - /System/Library/PrivateFrameworks/_IconServices_SwiftUI.framework/_IconServices_SwiftUI
+
++  - /System/Library/PrivateFrameworks/_MusicKitInternal_SwiftUI.framework/_MusicKitInternal_SwiftUI
+
 +  - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 35
 -  Symbols:   37
 -  CStrings:  1
 +  Functions: 1582
 +  Symbols:   171
 +  CStrings:  91
- 
 Symbols:
 + _CGRectInset
 + _OBJC_CLASS_$_ISIcon

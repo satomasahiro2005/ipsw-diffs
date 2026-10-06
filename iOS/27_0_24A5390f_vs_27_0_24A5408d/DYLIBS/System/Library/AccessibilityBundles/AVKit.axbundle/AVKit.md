@@ -2,58 +2,34 @@
 
 > `/System/Library/AccessibilityBundles/AVKit.axbundle/AVKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbe10` | `0xbfb4` | **`+0x1a4`** |
+| `__AUTH_CONST.__objc_const` | `0x38d0` | `0x39f0` | **`+0x120`** |
+| `__AUTH.__objc_data` | `0xb40` | `0xbe0` | **`+0xa0`** |
+| `__AUTH_CONST.__cfstring` | `0x3000` | `0x3080` | **`+0x80`** |
+| `__TEXT.__cstring` | `0x2691` | `0x270e` | **`+0x7d`** |
+| `__TEXT.__objc_methlist` | `0x12e8` | `0x1338` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x3f8` | `0x414` | **`+0x1c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x770` | `0x788` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x328` | `0x338` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x528` | `0x538` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3045.0.0.0.0
--  __TEXT.__text: 0xbe10
--  __TEXT.__objc_methlist: 0x12e8
 +3048.0.0.0.0
-+  __TEXT.__text: 0xbfb4
-+  __TEXT.__objc_methlist: 0x1338
-   __TEXT.__const: 0x30
--  __TEXT.__gcc_except_tab: 0x3f8
--  __TEXT.__cstring: 0x2691
-+  __TEXT.__gcc_except_tab: 0x414
-+  __TEXT.__cstring: 0x270e
-   __TEXT.__ustring: 0x4
--  __TEXT.__unwind_info: 0x528
-+  __TEXT.__unwind_info: 0x538
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x360
--  __DATA_CONST.__objc_classlist: 0x328
-+  __DATA_CONST.__objc_classlist: 0x338
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x770
-+  __DATA_CONST.__objc_selrefs: 0x788
-   __DATA_CONST.__objc_superrefs: 0x150
-   __DATA_CONST.__got: 0x178
-   __AUTH_CONST.__const: 0x220
--  __AUTH_CONST.__cfstring: 0x3000
--  __AUTH_CONST.__objc_const: 0x38d0
-+  __AUTH_CONST.__cfstring: 0x3080
-+  __AUTH_CONST.__objc_const: 0x39f0
-   __AUTH_CONST.__objc_intobj: 0x18
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0xb40
-+  __AUTH.__objc_data: 0xbe0
-   __DATA.__data: 0x18
-   __DATA.__bss: 0x28
-   __DATA_DIRTY.__objc_data: 0x1450
 
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 381
--  Symbols:   1244
+-  Symbols:   1073
 -  CStrings:  413
 +  Functions: 387
-+  Symbols:   1263
++  Symbols:   1090
 +  CStrings:  417
- 
 Symbols:
 + +[AVMobileGlassBackgroundViewAccessibility _accessibilityPerformValidations:]
 + +[AVMobileGlassBackgroundViewAccessibility(SafeCategory) safeCategoryBaseClass]
@@ -86,8 +62,6 @@ Symbols:
 + __OBJC_METACLASS_RO_$_AVMobileGlassBackgroundViewAccessibility
 + __OBJC_METACLASS_RO_$___AVMobileGlassBackgroundViewAccessibility_super
 + ___92-[AVPictureInPicturePlatformAdapterAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke
-+ _objc_msgSend$_setAccessibilityRespondsToUserInteractionBlock:
-+ _objc_msgSend$storedAccessibilityViewIsModal
 - GCC_except_table103
 - GCC_except_table148
 - GCC_except_table160

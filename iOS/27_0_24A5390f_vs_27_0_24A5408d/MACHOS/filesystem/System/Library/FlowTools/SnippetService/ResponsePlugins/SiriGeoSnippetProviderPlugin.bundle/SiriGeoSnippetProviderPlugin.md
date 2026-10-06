@@ -2,89 +2,58 @@
 
 > `/System/Library/FlowTools/SnippetService/ResponsePlugins/SiriGeoSnippetProviderPlugin.bundle/SiriGeoSnippetProviderPlugin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_protos`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4eb38` | `0x51c2c` | **`+0x30f4`** |
+| `__TEXT.__oslogstring` | `0x137c` | `0x149c` | **`+0x120`** |
+| `__TEXT.__objc_stubs` | `0xfe0` | `0x1060` | **`+0x80`** |
+| `__TEXT.__eh_frame` | `0xb48` | `0xaf0` | **`-0x58`** |
+| `__TEXT.__objc_methname` | `0x945` | `0x996` | **`+0x51`** |
+| `__DATA_CONST.__const` | `0x1f50` | `0x1f90` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0xc50` | `0xc88` | **`+0x38`** |
+| `__DATA.__data` | `0xfc8` | `0xff8` | **`+0x30`** |
+| `__DATA.__objc_selrefs` | `0x3f8` | `0x418` | **`+0x20`** |
+| `__TEXT.__cstring` | `0xa98` | `0xab8` | **`+0x20`** |
+| `__TEXT.__auth_stubs` | `0x1c00` | `0x1c10` | **`+0x10`** |
+| `__TEXT.__const` | `0x2ed8` | `0x2ee8` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0xd7a` | `0xd86` | **`+0xc`** |
+| `__DATA.__common` | `0x150` | `0x158` | **`+0x8`** |
+| `__DATA_CONST.__auth_got` | `0xe08` | `0xe10` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_const`
 - `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_classlist`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -3600.36.14.0.0
--  __TEXT.__text: 0x4eb38
--  __TEXT.__auth_stubs: 0x1c00
--  __TEXT.__objc_stubs: 0xfe0
--  __TEXT.__const: 0x2ed8
--  __TEXT.__swift5_typeref: 0xd7a
--  __TEXT.__oslogstring: 0x137c
--  __TEXT.__cstring: 0xa98
 +3600.36.19.0.0
-+  __TEXT.__text: 0x51c2c
-+  __TEXT.__auth_stubs: 0x1c10
-+  __TEXT.__objc_stubs: 0x1060
-+  __TEXT.__const: 0x2ee8
-+  __TEXT.__swift5_typeref: 0xd86
-+  __TEXT.__oslogstring: 0x149c
-+  __TEXT.__cstring: 0xab8
-   __TEXT.__constg_swiftt: 0x810
-   __TEXT.__objc_classname: 0x2d1
-   __TEXT.__swift5_fieldmd: 0xbf4
 
-   __TEXT.__swift5_assocty: 0x138
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_mpenum: 0x1c
--  __TEXT.__objc_methname: 0x945
-+  __TEXT.__objc_methname: 0x996
-   __TEXT.__objc_methtype: 0x30
-   __TEXT.__swift5_capture: 0x40
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0xc50
--  __TEXT.__eh_frame: 0xb48
--  __DATA_CONST.__const: 0x1f50
-+  __TEXT.__unwind_info: 0xc88
-+  __TEXT.__eh_frame: 0xaf0
-+  __DATA_CONST.__const: 0x1f90
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0xe08
-+  __DATA_CONST.__auth_got: 0xe10
-   __DATA_CONST.__got: 0x688
-   __DATA_CONST.__auth_ptr: 0x5e8
-   __DATA.__objc_const: 0x590
--  __DATA.__objc_selrefs: 0x3f8
-+  __DATA.__objc_selrefs: 0x418
-   __DATA.__objc_data: 0x1f8
--  __DATA.__data: 0xfc8
--  __DATA.__common: 0x150
-+  __DATA.__data: 0xff8
-+  __DATA.__common: 0x158
-   __DATA.__bss: 0x3f00
-   - /System/Library/Frameworks/CoreLocation.framework/CoreLocation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1352
 -  Symbols:   4334
 -  CStrings:  302
 +  Functions: 1361
 +  Symbols:   4360
 +  CStrings:  309
- 
 Symbols:
 + _$s16IntelligenceFlow14SystemResponseV0D4TypeO11DisplayItemO5ValueV20searchResultMetadataSDyS2SGvg
 + _$s16IntelligenceFlow14SystemResponseV0D4TypeOSgWOcTm

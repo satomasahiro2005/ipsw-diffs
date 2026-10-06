@@ -2,42 +2,34 @@
 
 > `com.apple.driver.AppleH16ANEInterface`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x151df0` | `0x159814` | **`+0x7a24`** |
+| `__TEXT.__os_log` | `0x3b649` | `0x3d5f7` | **`+0x1fae`** |
+| `__DATA_CONST.__const` | `0xfa38` | `0x10020` | **`+0x5e8`** |
+| `__TEXT.__cstring` | `0x119ae` | `0x11d47` | **`+0x399`** |
+| `__DATA_CONST.__kalloc_type` | `0x6e40` | `0x7040` | **`+0x200`** |
+| `__DATA_CONST.__kalloc_var` | `0x8b10` | `0x8c00` | **`+0xf0`** |
+| `__DATA.__bss` | `0x818` | `0x868` | **`+0x50`** |
+| `__TEXT.__const` | `0x12a0` | `0x1250` | **`-0x50`** |
+| `__DATA.__common` | `0x7b8` | `0x7e0` | **`+0x28`** |
+| `__DATA_CONST.__mod_init_func` | `0x2f0` | `0x300` | **`+0x10`** |
+| `__DATA_CONST.__mod_term_func` | `0x128` | `0x138` | **`+0x10`** |
+| `__DATA.__data` | `0x54f4` | `0x54f0` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -10.19.6.0.0
--  __TEXT.__const: 0x12a0
--  __TEXT.__cstring: 0x119ae
--  __TEXT.__os_log: 0x3b649
--  __TEXT_EXEC.__text: 0x14b374
-+10.100.80.0.0
-+  __TEXT.__const: 0x1250
-+  __TEXT.__cstring: 0x11d47
-+  __TEXT.__os_log: 0x3d5f7
-+  __TEXT_EXEC.__text: 0x152ba8
-   __TEXT_EXEC.__auth_stubs: 0x1280
--  __DATA.__data: 0x54f4
--  __DATA.__common: 0x7b8
--  __DATA_CONST.__mod_init_func: 0x2f0
--  __DATA_CONST.__mod_term_func: 0x128
--  __DATA_CONST.__const: 0xfa38
--  __DATA_CONST.__kalloc_type: 0x6e40
--  __DATA_CONST.__kalloc_var: 0x8b10
-+  __DATA.__data: 0x54f0
-+  __DATA.__common: 0x7e0
-+  __DATA_CONST.__mod_init_func: 0x300
-+  __DATA_CONST.__mod_term_func: 0x138
-+  __DATA_CONST.__const: 0x10020
-+  __DATA_CONST.__kalloc_type: 0x7040
-+  __DATA_CONST.__kalloc_var: 0x8c00
-   __DATA_CONST.__auth_got: 0x940
-   __DATA_CONST.__got: 0x140
-   __DATA_CONST.__auth_ptr: 0x8
 -  Functions: 4959
++10.100.80.0.0
 +  Functions: 5085
-   Symbols:   0
+
 -  CStrings:  5270
 +  CStrings:  5411
- 
 CStrings:
 + "    Address= 0x%llx\n"
 + "  %-26s 0x%014llx   %12s   %-11s\n"

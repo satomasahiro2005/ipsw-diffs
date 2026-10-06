@@ -2,146 +2,74 @@
 
 > `/System/Library/PrivateFrameworks/MorpheusExtensions.framework/MorpheusExtensions`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa3390` | `0xa96a0` | **`+0x6310`** |
+| `__AUTH_CONST.__cfstring` | `0x20` | `0xb00` | **`+0xae0`** |
+| `__TEXT.__cstring` | `0x34f6` | `0x3f76` | **`+0xa80`** |
+| `__AUTH_CONST.__const` | `0x8ee8` | `0x94b0` | **`+0x5c8`** |
+| `__AUTH_CONST.__objc_const` | `0x2238` | `0x25e0` | **`+0x3a8`** |
+| `__TEXT.__eh_frame` | `0x6e94` | `0x717c` | **`+0x2e8`** |
+| `__AUTH.__data` | `0x1c00` | `0x1eb8` | **`+0x2b8`** |
+| `__TEXT.__const` | `0x4aa8` | `0x4d58` | **`+0x2b0`** |
+| `__DATA.__bss` | `0x3880` | `0x3b00` | **`+0x280`** |
+| `__AUTH_CONST.__auth_got` | `0x15c8` | `0x1748` | **`+0x180`** |
+| `__TEXT.__unwind_info` | `0x2078` | `0x21e0` | **`+0x168`** |
+| `__TEXT.__constg_swiftt` | `0x13a8` | `0x14ec` | **`+0x144`** |
+| `__TEXT.__swift5_typeref` | `0x12e8` | `0x13fc` | **`+0x114`** |
+| `__DATA.__data` | `0xbf8` | `0xd08` | **`+0x110`** |
+| `__TEXT.__swift5_fieldmd` | `0x137c` | `0x146c` | **`+0xf0`** |
+| `__TEXT.__oslogstring` | `0x151f` | `0x15cf` | **`+0xb0`** |
+| `__TEXT.__swift5_reflstr` | `0x1f79` | `0x2019` | **`+0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x640` | `0x6d8` | **`+0x98`** |
+| `__DATA_CONST.__got` | `0x7d0` | `0x838` | **`+0x68`** |
+| `__AUTH.__objc_data` | `0xf0` | `0x140` | **`+0x50`** |
+| `__TEXT.__swift5_capture` | `0xabc` | `0xb08` | **`+0x4c`** |
+| `__TEXT.__objc_methlist` | `0x1e4` | `0x220` | **`+0x3c`** |
+| `__DATA_CONST.__const` | `0x130` | `0x158` | **`+0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x108` | `0x128` | **`+0x20`** |
+| `__TEXT.__swift5_assocty` | `0x188` | `0x1a8` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x2c4` | `0x2e0` | **`+0x1c`** |
+| `__TEXT.__swift5_types` | `0x120` | `0x138` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0x1f8` | `0x20c` | **`+0x14`** |
+| `__DATA_CONST.__objc_protolist` | `0x10` | `0x20` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x11c` | `0x128` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `0x144` | `0x150` | **`+0xc`** |
+| `__DATA_CONST.__objc_protorefs` | `—` | `0x8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xa3390
--  __TEXT.__objc_methlist: 0x1e4
--  __TEXT.__const: 0x4aa8
--  __TEXT.__cstring: 0x34f6
--  __TEXT.__oslogstring: 0x151f
--  __TEXT.__constg_swiftt: 0x13a8
--  __TEXT.__swift5_typeref: 0x12e8
-+  __TEXT.__text: 0xa96a0
-+  __TEXT.__objc_methlist: 0x220
-+  __TEXT.__const: 0x4d58
-+  __TEXT.__cstring: 0x3f76
-+  __TEXT.__oslogstring: 0x15cf
-+  __TEXT.__constg_swiftt: 0x14ec
-+  __TEXT.__swift5_typeref: 0x13fc
-   __TEXT.__swift5_builtin: 0x78
--  __TEXT.__swift5_reflstr: 0x1f79
--  __TEXT.__swift5_assocty: 0x188
--  __TEXT.__swift5_fieldmd: 0x137c
--  __TEXT.__swift5_proto: 0x1f8
--  __TEXT.__swift5_types: 0x120
--  __TEXT.__swift5_capture: 0xabc
--  __TEXT.__swift_as_entry: 0x11c
--  __TEXT.__swift_as_ret: 0x144
--  __TEXT.__swift_as_cont: 0x2c4
-+  __TEXT.__swift5_reflstr: 0x2019
-+  __TEXT.__swift5_assocty: 0x1a8
-+  __TEXT.__swift5_fieldmd: 0x146c
-+  __TEXT.__swift5_proto: 0x20c
-+  __TEXT.__swift5_types: 0x138
-+  __TEXT.__swift5_capture: 0xb08
-+  __TEXT.__swift_as_entry: 0x128
-+  __TEXT.__swift_as_ret: 0x150
-+  __TEXT.__swift_as_cont: 0x2e0
-   __TEXT.__swift5_protos: 0x18
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x2078
--  __TEXT.__eh_frame: 0x6e94
-+  __TEXT.__unwind_info: 0x21e0
-+  __TEXT.__eh_frame: 0x717c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x130
--  __DATA_CONST.__objc_classlist: 0x108
--  __DATA_CONST.__objc_protolist: 0x10
-+  __DATA_CONST.__const: 0x158
-+  __DATA_CONST.__objc_classlist: 0x128
-+  __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x640
--  __DATA_CONST.__got: 0x7d0
--  __AUTH_CONST.__const: 0x8ee8
--  __AUTH_CONST.__cfstring: 0x20
--  __AUTH_CONST.__objc_const: 0x2238
--  __AUTH_CONST.__auth_got: 0x15c8
--  __AUTH.__objc_data: 0xf0
--  __AUTH.__data: 0x1c00
--  __DATA.__data: 0xbf8
--  __DATA.__bss: 0x3880
-+  __DATA_CONST.__objc_selrefs: 0x6d8
-+  __DATA_CONST.__objc_protorefs: 0x8
-+  __DATA_CONST.__got: 0x838
-+  __AUTH_CONST.__const: 0x94b0
-+  __AUTH_CONST.__cfstring: 0xb00
-+  __AUTH_CONST.__objc_const: 0x25e0
-+  __AUTH_CONST.__auth_got: 0x1748
-+  __AUTH.__objc_data: 0x140
-+  __AUTH.__data: 0x1eb8
-+  __DATA.__data: 0xd08
-+  __DATA.__bss: 0x3b00
-   __DATA.__common: 0x60
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Accounts.framework/Accounts
+-31.0.0.0.0
++35.0.0.0.0
 
-   - /System/Library/Frameworks/HealthKit.framework/HealthKit
-   - /System/Library/Frameworks/IOSurface.framework/IOSurface
-   - /System/Library/Frameworks/ImageIO.framework/ImageIO
 +  - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers
+
 +  - /System/Library/PrivateFrameworks/AIMLInstrumentationStreams.framework/AIMLInstrumentationStreams
-   - /System/Library/PrivateFrameworks/AppleMediaServices.framework/AppleMediaServices
-   - /System/Library/PrivateFrameworks/BiomeLibrary.framework/BiomeLibrary
-   - /System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
+
 +  - /System/Library/PrivateFrameworks/IntelligenceFlowPlannerSupport.framework/IntelligenceFlowPlannerSupport
-   - /System/Library/PrivateFrameworks/MediaAnalysisServices.framework/MediaAnalysisServices
-   - /System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog
-   - /System/Library/PrivateFrameworks/Morpheus.framework/Morpheus
+
 +  - /System/Library/PrivateFrameworks/ODDIFramework.framework/ODDIFramework
-   - /System/Library/PrivateFrameworks/OnDeviceStorage.framework/OnDeviceStorage
-   - /System/Library/PrivateFrameworks/PriMLCore.framework/PriMLCore
-   - /System/Library/PrivateFrameworks/PriMLDataPolicy.framework/PriMLDataPolicy
-   - /System/Library/PrivateFrameworks/PriMLFoundation.framework/PriMLFoundation
-   - /System/Library/PrivateFrameworks/PrivateFederatedLearning.framework/PrivateFederatedLearning
+
 +  - /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation
-   - /System/Library/PrivateFrameworks/TokenGenerationCore.framework/TokenGenerationCore
-   - /System/Library/PrivateFrameworks/TokenGenerationInference.framework/TokenGenerationInference
-   - /usr/lib/libSystem.B.dylib
 
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
 +  - /usr/lib/swift/libswiftAppleArchive.dylib
-   - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
 
-   - /usr/lib/swift/libswiftCoreLocation.dylib
-   - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
 +  - /usr/lib/swift/libswiftIntents.dylib
-   - /usr/lib/swift/libswiftMLCompute.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
-+  - /usr/lib/swift/libswiftNaturalLanguage.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
-+  - /usr/lib/swift/libswiftSpatial.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /usr/lib/swift/libswiftNaturalLanguage.dylib
+
++  - /usr/lib/swift/libswiftSpatial.dylib
+
 -  Functions: 2261
--  Symbols:   1543
--  CStrings:  458
+-  Symbols:   881
+-  CStrings:  457
 +  Functions: 2369
-+  Symbols:   1658
-+  CStrings:  655
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
++  Symbols:   939
++  CStrings:  567
 Symbols:
 + _BiomeLibrary
 + _NSLocalizedDescriptionKey
@@ -183,24 +111,6 @@ Symbols:
 + __swift_FORCE_LOAD_$_swiftUIKit_$_MorpheusExtensions
 + _associated conformance 18MorpheusExtensions21UnifiedSiriTurnStreamC0A08LoopableAaD9Countable
 + _associated conformance 18MorpheusExtensions21UnifiedSiriTurnStreamCSTAA8IteratorST_St
-+ _objc_msgSend$Datastream
-+ _objc_msgSend$IntelligenceFlow
-+ _objc_msgSend$JSONObjectWithData:options:error:
-+ _objc_msgSend$Transcript
-+ _objc_msgSend$broadcast
-+ _objc_msgSend$dictionaryRepresentation
-+ _objc_msgSend$eventBody
-+ _objc_msgSend$getInnerTypeStringByTag:
-+ _objc_msgSend$initWithDomain:code:userInfo:
-+ _objc_msgSend$initWithStartDate:endDate:maxEvents:lastN:reversed:
-+ _objc_msgSend$isEqualToString:
-+ _objc_msgSend$lock
-+ _objc_msgSend$publisherWithOptions:
-+ _objc_msgSend$sinkWithCompletion:receiveInput:
-+ _objc_msgSend$state
-+ _objc_msgSend$unlock
-+ _objc_msgSend$wait
-+ _objc_msgSend$whichInnerEventType
 + _swift_dynamicCastObjCProtocolConditional
 + _symbolic SS_______pt 8Morpheus12AttributableP
 + _symbolic SaySDySSypGGz_Xx
@@ -346,5 +256,4 @@ CStrings:
 - "PolicyGuardedBlackbirdDatabase deallocated without explicit close()"
 - "PolicyGuardedBlackbirdDatabase.close"
 - "PolicyGuardedBlackbirdDatabase.execute_query"
-
 ```

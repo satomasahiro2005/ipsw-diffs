@@ -2,88 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/TCC.framework/Support/tccd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8bcf8` | `0x8ebbc` | **`+0x2ec4`** |
+| `__TEXT.__cstring` | `0x12a48` | `0x1347d` | **`+0xa35`** |
+| `__TEXT.__oslogstring` | `0x108a8` | `0x10db2` | **`+0x50a`** |
+| `__TEXT.__objc_methname` | `0x130ae` | `0x13533` | **`+0x485`** |
+| `__DATA.__objc_const` | `0xa350` | `0xa6c8` | **`+0x378`** |
+| `__TEXT.__objc_stubs` | `0xb6a0` | `0xb980` | **`+0x2e0`** |
+| `__DATA_CONST.__cfstring` | `0x8b00` | `0x8da0` | **`+0x2a0`** |
+| `__TEXT.__objc_methlist` | `0x550c` | `0x56b4` | **`+0x1a8`** |
+| `__TEXT.__gcc_except_tab` | `0x2fe8` | `0x3120` | **`+0x138`** |
+| `__DATA.__objc_selrefs` | `0x3708` | `0x37c0` | **`+0xb8`** |
+| `__DATA_CONST.__objc_dictobj` | `0xeb0` | `0xf28` | **`+0x78`** |
+| `__DATA.__objc_data` | `0x1360` | `0x13b0` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x1a60` | `0x1ab0` | **`+0x50`** |
+| `__DATA.__objc_ivar` | `0x728` | `0x764` | **`+0x3c`** |
+| `__TEXT.__objc_methtype` | `0x235f` | `0x2383` | **`+0x24`** |
+| `__DATA_CONST.__got` | `0x4b8` | `0x4d8` | **`+0x20`** |
+| `__DATA_CONST.__objc_arraydata` | `0x1608` | `0x1628` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x28c0` | `0x28d8` | **`+0x18`** |
+| `__DATA_CONST.__objc_arrayobj` | `0xf0` | `0xd8` | **`-0x18`** |
+| `__DATA_CONST.__objc_intobj` | `0x660` | `0x678` | **`+0x18`** |
+| `__TEXT.__objc_classname` | `0x6da` | `0x6f2` | **`+0x18`** |
+| `__DATA.__bss` | `0x439` | `0x429` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x1f0` | `0x1f8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__objc_catlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__data`
+- `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -913.0.1.0.0
--  __TEXT.__text: 0x8a438
 +918.0.0.0.0
-+  __TEXT.__text: 0x8d254
-   __TEXT.__auth_stubs: 0x1650
--  __TEXT.__objc_stubs: 0xb6a0
--  __TEXT.__objc_methlist: 0x550c
--  __TEXT.__cstring: 0x12a48
-+  __TEXT.__objc_stubs: 0xb980
-+  __TEXT.__objc_methlist: 0x56b4
-+  __TEXT.__cstring: 0x1347d
-   __TEXT.__const: 0x6f8
--  __TEXT.__gcc_except_tab: 0x2fe8
--  __TEXT.__objc_methname: 0x130ae
--  __TEXT.__oslogstring: 0x108a8
--  __TEXT.__objc_classname: 0x6da
--  __TEXT.__objc_methtype: 0x235f
-+  __TEXT.__gcc_except_tab: 0x3120
-+  __TEXT.__objc_methname: 0x13533
-+  __TEXT.__oslogstring: 0x10db2
-+  __TEXT.__objc_classname: 0x6f2
-+  __TEXT.__objc_methtype: 0x2383
-   __TEXT.__dlopen_cstrs: 0x90
--  __TEXT.__unwind_info: 0x2490
--  __DATA_CONST.__const: 0x28c0
--  __DATA_CONST.__cfstring: 0x8b00
--  __DATA_CONST.__objc_classlist: 0x1f0
-+  __TEXT.__unwind_info: 0x2528
-+  __DATA_CONST.__const: 0x28d8
-+  __DATA_CONST.__cfstring: 0x8da0
-+  __DATA_CONST.__objc_classlist: 0x1f8
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x1a0
--  __DATA_CONST.__objc_intobj: 0x660
--  __DATA_CONST.__objc_arraydata: 0x1608
--  __DATA_CONST.__objc_arrayobj: 0xf0
--  __DATA_CONST.__objc_dictobj: 0xeb0
-+  __DATA_CONST.__objc_intobj: 0x678
-+  __DATA_CONST.__objc_arraydata: 0x1628
-+  __DATA_CONST.__objc_arrayobj: 0xd8
-+  __DATA_CONST.__objc_dictobj: 0xf28
-   __DATA_CONST.__auth_got: 0xb38
--  __DATA_CONST.__got: 0x4b8
-+  __DATA_CONST.__got: 0x4d8
-   __DATA_CONST.__auth_ptr: 0x38
--  __DATA.__objc_const: 0xa350
--  __DATA.__objc_selrefs: 0x3708
--  __DATA.__objc_ivar: 0x728
--  __DATA.__objc_data: 0x1360
-+  __DATA.__objc_const: 0xa6c8
-+  __DATA.__objc_selrefs: 0x37c0
-+  __DATA.__objc_ivar: 0x764
-+  __DATA.__objc_data: 0x13b0
-   __DATA.__data: 0x738
-   __DATA.__common: 0x30
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
--  Functions: 3015
+-  Functions: 3016
 -  Symbols:   506
 -  CStrings:  5904
-+  Functions: 3077
++  Functions: 3078
 +  Symbols:   510
 +  CStrings:  6012
- 
 Symbols:
 + _kCFUserNotificationAlertAccessibilityIdentifierKey
 + _kCFUserNotificationAlternateButtonAccessibilityIdentifierKey

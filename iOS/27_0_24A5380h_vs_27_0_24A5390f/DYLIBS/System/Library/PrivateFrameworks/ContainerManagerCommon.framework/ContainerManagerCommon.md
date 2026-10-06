@@ -2,119 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/ContainerManagerCommon.framework/ContainerManagerCommon`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf1ad0` | `0xf2ffc` | **`+0x152c`** |
+| `__TEXT.__oslogstring` | `0xe509` | `0xe701` | **`+0x1f8`** |
+| `__AUTH.__objc_data` | `0xed8` | `0xd70` | **`-0x168`** |
+| `__DATA_DIRTY.__objc_data` | `0x2f08` | `0x3070` | **`+0x168`** |
+| `__DATA_DIRTY.__data` | `0x308` | `0x448` | **`+0x140`** |
+| `__TEXT.__gcc_except_tab` | `0x22e0` | `0x240c` | **`+0x12c`** |
+| `__AUTH.__data` | `0x198` | `0xd0` | **`-0xc8`** |
+| `__DATA_CONST.__got` | `0x438` | `0x500` | **`+0xc8`** |
+| `__TEXT.__objc_methlist` | `0xac8c` | `0xad2c` | **`+0xa0`** |
+| `__DATA_DIRTY.__bss` | `0x618` | `0x6b0` | **`+0x98`** |
+| `__DATA.__bss` | `0xf88` | `0xef8` | **`-0x90`** |
+| `__AUTH_CONST.__objc_const` | `0x17050` | `0x170d0` | **`+0x80`** |
+| `__DATA_CONST.__const` | `0x1880` | `0x18f8` | **`+0x78`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3700` | `0x3750` | **`+0x50`** |
+| `__AUTH_CONST.__cfstring` | `0x4ca0` | `0x4ce0` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x94b9` | `0x94f0` | **`+0x37`** |
+| `__DATA.__common` | `0x18` | `—` | **`-0x18`** |
+| `__DATA_DIRTY.__common` | `0x40` | `0x58` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x2518` | `0x2530` | **`+0x18`** |
+| `__DATA.__data` | `0x3ba0` | `0x3bb0` | **`+0x10`** |
+| `__TEXT.__const` | `0x1320` | `0x1330` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0xc0c` | `0xc14` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x520` | `0x528` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -833.0.0.0.0
--  __TEXT.__text: 0xf1ad0
--  __TEXT.__objc_methlist: 0xac8c
--  __TEXT.__const: 0x1320
--  __TEXT.__cstring: 0x94b9
 +833.0.3.0.0
-+  __TEXT.__text: 0xf2ffc
-+  __TEXT.__objc_methlist: 0xad2c
-+  __TEXT.__const: 0x1330
-+  __TEXT.__cstring: 0x94f0
-   __TEXT.__swift5_typeref: 0x6d3
--  __TEXT.__oslogstring: 0xe509
-+  __TEXT.__oslogstring: 0xe701
-   __TEXT.__constg_swiftt: 0x670
-   __TEXT.__swift5_reflstr: 0x3da
-   __TEXT.__swift5_fieldmd: 0x4c8
 
-   __TEXT.__swift5_mpenum: 0x10
-   __TEXT.__swift5_capture: 0x78
-   __TEXT.__swift5_protos: 0x18
--  __TEXT.__gcc_except_tab: 0x22e0
-+  __TEXT.__gcc_except_tab: 0x240c
-   __TEXT.__ustring: 0x16c
--  __TEXT.__unwind_info: 0x2518
-+  __TEXT.__unwind_info: 0x2530
-   __TEXT.__eh_frame: 0x5d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1880
-+  __DATA_CONST.__const: 0x18f8
-   __DATA_CONST.__objc_classlist: 0x5c8
-   __DATA_CONST.__objc_catlist: 0x28
--  __DATA_CONST.__objc_protolist: 0x520
-+  __DATA_CONST.__objc_protolist: 0x528
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3700
-+  __DATA_CONST.__objc_selrefs: 0x3750
-   __DATA_CONST.__objc_protorefs: 0xc8
-   __DATA_CONST.__objc_superrefs: 0x4b0
-   __DATA_CONST.__objc_arraydata: 0x2e0
--  __DATA_CONST.__got: 0x438
-+  __DATA_CONST.__got: 0x500
-   __AUTH_CONST.__const: 0x12c8
--  __AUTH_CONST.__cfstring: 0x4ca0
--  __AUTH_CONST.__objc_const: 0x17050
-+  __AUTH_CONST.__cfstring: 0x4ce0
-+  __AUTH_CONST.__objc_const: 0x170d0
-   __AUTH_CONST.__objc_dictobj: 0x118
-   __AUTH_CONST.__objc_intobj: 0x1548
-   __AUTH_CONST.__objc_arrayobj: 0xf0
-   __AUTH_CONST.__auth_got: 0x12d0
--  __AUTH.__objc_data: 0xed8
--  __AUTH.__data: 0x198
--  __DATA.__objc_ivar: 0xc0c
--  __DATA.__data: 0x3ba0
-+  __AUTH.__objc_data: 0xd70
-+  __AUTH.__data: 0xd0
-+  __DATA.__objc_ivar: 0xc14
-+  __DATA.__data: 0x3bb0
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0xf88
--  __DATA.__common: 0x18
--  __DATA_DIRTY.__objc_data: 0x2f08
--  __DATA_DIRTY.__data: 0x308
--  __DATA_DIRTY.__bss: 0x618
--  __DATA_DIRTY.__common: 0x40
-+  __DATA.__bss: 0xef8
-+  __DATA_DIRTY.__objc_data: 0x3070
-+  __DATA_DIRTY.__data: 0x448
-+  __DATA_DIRTY.__bss: 0x6b0
-+  __DATA_DIRTY.__common: 0x58
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 3639
--  Symbols:   8438
+-  Symbols:   6880
 -  CStrings:  2000
 +  Functions: 3653
-+  Symbols:   8474
++  Symbols:   6905
 +  CStrings:  2012
- 
 Symbols:
 + +[MCMPOSIXUser _getCachedUID:GID:name:flush:onCacheMiss:]
 + +[MCMPOSIXUser _posixUserWithUID:GID:name:]
@@ -183,19 +111,6 @@ Symbols:
 + __getCachedUID:GID:name:flush:onCacheMiss:.cacheByUID
 + __getCachedUID:GID:name:flush:onCacheMiss:.cacheByUIDGID
 + __getCachedUID:GID:name:flush:onCacheMiss:.onceToken
-+ _objc_msgSend$_getCachedUID:GID:name:flush:onCacheMiss:
-+ _objc_msgSend$_posixUserWithUID:GID:name:
-+ _objc_msgSend$_readPendingHints
-+ _objc_msgSend$_writePendingHints:
-+ _objc_msgSend$dataUsingEncoding:
-+ _objc_msgSend$decrementPendingHint:
-+ _objc_msgSend$incrementPendingHint:
-+ _objc_msgSend$initWithUID:GID:mode:posixUser:isNull:
-+ _objc_msgSend$naturalized
-+ _objc_msgSend$numberWithUnsignedLong:
-+ _objc_msgSend$pendingHint:
-+ _objc_msgSend$resetPendingHint:
-+ _objc_msgSend$withOpenFileDoBlock:
 - +[MCMPOSIXUser _getCachedUID:flush:onCacheMiss:]
 - +[MCMPOSIXUser _posixUserWithUID:name:useUID:]
 - GCC_except_table1563
@@ -238,8 +153,6 @@ Symbols:
 - ___block_descriptor_52_e8_32s40s_e5_v8?0ls32l8s40l8
 - __getCachedUID:flush:onCacheMiss:.cache
 - __getCachedUID:flush:onCacheMiss:.onceToken
-- _objc_msgSend$_getCachedUID:flush:onCacheMiss:
-- _objc_msgSend$_posixUserWithUID:name:useUID:
 CStrings:
 + "02:13:54"
 + "@\"MCMPOSIXUser\"8@?0"

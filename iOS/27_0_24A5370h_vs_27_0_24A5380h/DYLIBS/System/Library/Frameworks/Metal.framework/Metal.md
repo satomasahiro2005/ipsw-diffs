@@ -2,89 +2,40 @@
 
 > `/System/Library/Frameworks/Metal.framework/Metal`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x40b0` | `0x4380` | **`+0x2d0`** |
+| `__DATA_DIRTY.__objc_data` | `0x4380` | `0x40b0` | **`-0x2d0`** |
+| `__TEXT.__cstring` | `0x23313` | `0x233f9` | **`+0xe6`** |
+| `__AUTH_CONST.__cfstring` | `0x12c00` | `0x12ca0` | **`+0xa0`** |
+| `__DATA_CONST.__got` | `0x9a8` | `0xa30` | **`+0x88`** |
+| `__TEXT.__text` | `0x1e69d0` | `0x1e6a3c` | **`+0x6c`** |
+| `__TEXT.__objc_methlist` | `0x1eb1c` | `0x1eb6c` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x8ad0` | `0x8b18` | **`+0x48`** |
+| `__AUTH_CONST.__objc_const` | `0x46b60` | `0x46ba0` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8e18` | `0x8e40` | **`+0x28`** |
+| `__TEXT.__gcc_except_tab` | `0xc37c` | `0xc39c` | **`+0x20`** |
+| `__DATA.__data` | `0x4488` | `0x4498` | **`+0x10`** |
+| `__DATA.__bss` | `0x374` | `0x37c` | **`+0x8`** |
+| `__DATA_DIRTY.__bss` | `0x320` | `0x318` | **`-0x8`** |
+| `__DATA_DIRTY.__data` | `0xd0` | `0xc8` | **`-0x8`** |
+| `__DATA.__objc_ivar` | `0x2228` | `0x222c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1e69d0
--  __TEXT.__objc_methlist: 0x1eb1c
--  __TEXT.__cstring: 0x23313
--  __TEXT.__gcc_except_tab: 0xc37c
-+  __TEXT.__text: 0x1e6a3c
-+  __TEXT.__objc_methlist: 0x1eb6c
-+  __TEXT.__cstring: 0x233f9
-+  __TEXT.__gcc_except_tab: 0xc39c
-   __TEXT.__const: 0x2d790
-   __TEXT.__oslogstring: 0x22d6
-   __TEXT.__ustring: 0x1be
--  __TEXT.__unwind_info: 0x8ad0
-+  __TEXT.__unwind_info: 0x8b18
-   __TEXT.__eh_frame: 0x78
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+-381.0.0.0.0
++382.4.0.0.0
 
-   __DATA_CONST.__objc_protolist: 0x490
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x8e18
-+  __DATA_CONST.__objc_selrefs: 0x8e40
-   __DATA_CONST.__objc_protorefs: 0x68
-   __DATA_CONST.__objc_superrefs: 0xc08
-   __DATA_CONST.__objc_arraydata: 0x8
--  __DATA_CONST.__got: 0x9a8
-+  __DATA_CONST.__got: 0xa30
-   __AUTH_CONST.__const: 0x4f80
--  __AUTH_CONST.__cfstring: 0x12c00
--  __AUTH_CONST.__objc_const: 0x46b60
-+  __AUTH_CONST.__cfstring: 0x12ca0
-+  __AUTH_CONST.__objc_const: 0x46ba0
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__objc_intobj: 0x2a0
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__auth_got: 0xe98
--  __AUTH.__objc_data: 0x40b0
--  __DATA.__objc_ivar: 0x2228
--  __DATA.__data: 0x4488
--  __DATA.__bss: 0x374
-+  __AUTH.__objc_data: 0x4380
-+  __DATA.__objc_ivar: 0x222c
-+  __DATA.__data: 0x4498
-+  __DATA.__bss: 0x37c
-   __DATA.__common: 0x40
--  __DATA_DIRTY.__objc_data: 0x4380
--  __DATA_DIRTY.__data: 0xd0
--  __DATA_DIRTY.__bss: 0x320
-+  __DATA_DIRTY.__objc_data: 0x40b0
-+  __DATA_DIRTY.__data: 0xc8
-+  __DATA_DIRTY.__bss: 0x318
-   __DATA_DIRTY.__common: 0x11
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 13486
--  Symbols:   42126
--  CStrings:  6971
+-  Symbols:   22493
+-  CStrings:  4568
 +  Functions: 13492
-+  Symbols:   42143
-+  CStrings:  6982
- 
-Sections:
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
++  Symbols:   22502
++  CStrings:  4574
 Symbols:
 + -[MTLCompileOptionsInternal floatingPointConversionRoundingMode]
 + -[MTLCompileOptionsInternal setFloatingPointConversionRoundingMode:]
@@ -207,9 +158,6 @@ Symbols:
 + __ZL19newErrorWithMessageP8NSString22MTLDynamicLibraryError
 + __ZN22MTLArchiveLinkResolver15newLibraryAtPosEyyP8NSString
 + __ZN26MTLArchiveLinkResolverImpl15newLibraryAtPosEyyP8NSString
-+ _objc_msgSend$floatingPointConversionRoundingMode
-+ _objc_msgSend$newLibraryInArchiveWithPosition:libraryPath:
-+ _objc_msgSend$setFloatingPointConversionRoundingMode:
 - GCC_except_table1000
 - GCC_except_table1003
 - GCC_except_table1010
@@ -343,5 +291,4 @@ CStrings:
 - "MTLTensorDataTypeFloat8E4M3"
 - "MTLTensorDataTypeFloat8E5M2"
 - "MTLTensorDataTypeFloat8UE8M0"
-
 ```

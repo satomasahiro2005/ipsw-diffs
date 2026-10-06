@@ -2,18 +2,19 @@
 
 > `/System/Library/NanoPreferenceBundles/Applications/NanoBooksBridgeSettings.bundle/NanoBooksBridgeSettings`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x11cf8` | `0x11d00` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 6655.0.0.0.0
--  __TEXT.__text: 0x11cf8
-+  __TEXT.__text: 0x11d00
-   __TEXT.__auth_stubs: 0x6e0
-   __TEXT.__objc_stubs: 0x3980
-   __TEXT.__objc_methlist: 0x12ec
+```text
 Functions:
 ~ sub_1350c : 56 -> 64
 ~ sub_13544 -> sub_1354c : 76 -> 72

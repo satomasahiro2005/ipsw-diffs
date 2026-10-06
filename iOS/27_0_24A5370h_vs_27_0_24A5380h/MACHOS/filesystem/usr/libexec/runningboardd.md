@@ -2,5 +2,14 @@
 
 > `/usr/libexec/runningboardd`
 
-Sections:
-~ __TEXT.__const : content changed
+### Same-size Content Changes
+
+- `__TEXT.__const`
+
+### Other Changes
+
+```diff
+
+-1071.0.0.0.0
++1072.0.0.0.0
+```

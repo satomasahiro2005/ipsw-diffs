@@ -2,33 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/PhotosRendering.framework/PhotosRendering`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x19c60` | `0x19c6c` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x760` | `0x758` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.234.0.0
--  __TEXT.__text: 0x19c60
 +912.0.235.0.0
-+  __TEXT.__text: 0x19c6c
-   __TEXT.__objc_methlist: 0x314
-   __TEXT.__const: 0x1140
-   __TEXT.__constg_swiftt: 0xa68
 
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x14c8
-   __AUTH_CONST.__objc_const: 0xa78
--  __AUTH_CONST.__auth_got: 0x760
-+  __AUTH_CONST.__auth_got: 0x758
-   __AUTH.__objc_data: 0xe0
-   __AUTH.__data: 0x360
-   __DATA.__data: 0x988
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 942
 +  Functions: 943
-   Symbols:   796
-   CStrings:  49
- 
 Symbols:
 + _OUTLINED_FUNCTION_150
 - _objc_retain_x9

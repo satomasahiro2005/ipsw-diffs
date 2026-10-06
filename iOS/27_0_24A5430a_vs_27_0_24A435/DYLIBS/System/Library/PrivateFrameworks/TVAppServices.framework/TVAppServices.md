@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/TVAppServices.framework/TVAppServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ec118` | `0x1ec474` | **`+0x35c`** |
+| `__AUTH_CONST.__auth_got` | `0x1a10` | `0x1a08` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 207.0.6.0.0
--  __TEXT.__text: 0x1ec118
-+  __TEXT.__text: 0x1ec474
-   __TEXT.__objc_methlist: 0x9fc
-   __TEXT.__const: 0x19cf0
-   __TEXT.__swift5_typeref: 0x5f22
-
-   __DATA_CONST.__got: 0x920
-   __AUTH_CONST.__const: 0x12f10
-   __AUTH_CONST.__objc_const: 0x6b40
--  __AUTH_CONST.__auth_got: 0x1a10
-+  __AUTH_CONST.__auth_got: 0x1a08
-   __AUTH.__objc_data: 0xe08
-   __AUTH.__data: 0x35c8
-   __DATA.__data: 0x3978
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 9615
--  Symbols:   3400
-+  Symbols:   3399
-   CStrings:  1259
- 
+-  Symbols:   3156
++  Symbols:   3155
 Symbols:
 - _swift_retain_x9
 Functions:

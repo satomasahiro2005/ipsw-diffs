@@ -2,80 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/NotesSiriUI.framework/NotesSiriUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1635c` | `0x16488` | **`+0x12c`** |
+| `__TEXT.__swift5_typeref` | `0x4351` | `0x4447` | **`+0xf6`** |
+| `__AUTH_CONST.__const` | `0x718` | `0x6b0` | **`-0x68`** |
+| `__TEXT.__swift5_reflstr` | `0x471` | `0x431` | **`-0x40`** |
+| `__TEXT.__swift5_fieldmd` | `0x460` | `0x424` | **`-0x3c`** |
+| `__TEXT.__swift5_capture` | `0x1a0` | `0x17c` | **`-0x24`** |
+| `__AUTH_CONST.__auth_got` | `0x8f0` | `0x8d0` | **`-0x20`** |
+| `__DATA.__data` | `0xa08` | `0xa28` | **`+0x20`** |
+| `__TEXT.__const` | `0xd60` | `0xd50` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x488` | `0x480` | **`-0x8`** |
+
+### Other Changes
 
 ```diff
 
 -2996.0.0.0.0
--  __TEXT.__text: 0x1635c
 +2998.0.0.0.0
-+  __TEXT.__text: 0x16488
-   __TEXT.__objc_methlist: 0x5ec
--  __TEXT.__const: 0xd60
--  __TEXT.__swift5_typeref: 0x4351
--  __TEXT.__swift5_fieldmd: 0x460
-+  __TEXT.__const: 0xd50
-+  __TEXT.__swift5_typeref: 0x4447
-+  __TEXT.__swift5_fieldmd: 0x424
-   __TEXT.__constg_swiftt: 0x5bc
--  __TEXT.__swift5_reflstr: 0x471
-+  __TEXT.__swift5_reflstr: 0x431
-   __TEXT.__swift5_assocty: 0xf8
-   __TEXT.__cstring: 0x115
--  __TEXT.__swift5_capture: 0x1a0
-+  __TEXT.__swift5_capture: 0x17c
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift5_proto: 0x30
-   __TEXT.__swift5_types: 0x2c
-   __TEXT.__oslogstring: 0x23b
--  __TEXT.__unwind_info: 0x488
-+  __TEXT.__unwind_info: 0x480
-   __TEXT.__eh_frame: 0x120
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0x5e8
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x718
-+  __AUTH_CONST.__const: 0x6b0
-   __AUTH_CONST.__objc_const: 0xc10
--  __AUTH_CONST.__auth_got: 0x8f0
-+  __AUTH_CONST.__auth_got: 0x8d0
-   __AUTH.__objc_data: 0x190
-   __AUTH.__data: 0x5f0
--  __DATA.__data: 0xa08
-+  __DATA.__data: 0xa28
-   __DATA.__bss: 0x5d0
-   __DATA.__common: 0x90
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 405
--  Symbols:   601
+-  Symbols:   501
 +  Functions: 399
-+  Symbols:   599
-   CStrings:  17
- 
++  Symbols:   499
 Symbols:
 + ___swift_memcpy24_8
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonG0Rd__lFQOyAA0I0VyACyACyACyACyAA6HStackVyAA05TupleD0VyACyACyAA4TextVAA31AccessibilityAttachmentModifierVGAA011_ForegroundgO0VyAA017HierarchicalShapeG0VGG_AA6SpacerVACyACyAeAE10fontWeightyQrAA4FontV0U0VSgFQOyAKyAA012_ConditionalD0VyA2OGG_Qo_AWGAQGQPGGAA022_EnvironmentKeyWritingO0VyA1_SgGGAA14_PaddingLayoutVGAA16_FlexFrameLayoutVGAA01_drO0VyAA9RectangleVGGG_AA05PlainiG0VQo_AQGAaDHPqd0__AaDHD3_A34_HO_AqA0eO0HPyHCHC

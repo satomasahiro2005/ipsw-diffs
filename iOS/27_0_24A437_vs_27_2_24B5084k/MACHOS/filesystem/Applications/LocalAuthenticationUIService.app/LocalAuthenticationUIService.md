@@ -2,129 +2,75 @@
 
 > `/Applications/LocalAuthenticationUIService.app/LocalAuthenticationUIService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6ca48` | `0x6f498` | **`+0x2a50`** |
+| `__TEXT.__objc_stubs` | `0x6f60` | `0x7260` | **`+0x300`** |
+| `__TEXT.__objc_methname` | `0x9805` | `0x9ad5` | **`+0x2d0`** |
+| `__DATA_CONST.__const` | `0x34a0` | `0x3678` | **`+0x1d8`** |
+| `__DATA.__objc_const` | `0xc160` | `0xc2f8` | **`+0x198`** |
+| `__TEXT.__objc_methlist` | `0x3ae8` | `0x3c80` | **`+0x198`** |
+| `__TEXT.__unwind_info` | `0x1c18` | `0x1ce8` | **`+0xd0`** |
+| `__DATA.__objc_selrefs` | `0x2560` | `0x2620` | **`+0xc0`** |
+| `__TEXT.__swift5_capture` | `0x984` | `0xa0c` | **`+0x88`** |
+| `__TEXT.__objc_methtype` | `0x2837` | `0x28b7` | **`+0x80`** |
+| `__DATA.__data` | `0x29f0` | `0x2a60` | **`+0x70`** |
+| `__DATA.__objc_data` | `0x2498` | `0x2508` | **`+0x70`** |
+| `__TEXT.__oslogstring` | `0x1c8e` | `0x1cfe` | **`+0x70`** |
+| `__TEXT.__cstring` | `0x158e` | `0x15ee` | **`+0x60`** |
+| `__TEXT.__swift5_typeref` | `0x3346` | `0x33a6` | **`+0x60`** |
+| `__TEXT.__auth_stubs` | `0x21b0` | `0x21e0` | **`+0x30`** |
+| `__TEXT.__gcc_except_tab` | `0x6e8` | `0x710` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0xb10` | `0xb30` | **`+0x20`** |
+| `__TEXT.__objc_classname` | `0x125c` | `0x127c` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0x10e8` | `0x1100` | **`+0x18`** |
+| `__DATA.__bss` | `0x20b0` | `0x20c0` | **`+0x10`** |
+| `__DATA_CONST.__auth_ptr` | `0x7e8` | `0x7f8` | **`+0x10`** |
+| `__TEXT.__const` | `0x3444` | `0x3454` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x210` | `0x218` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x334` | `0x338` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__cfstring`
 - `__DATA_CONST.__objc_catlist`
 - `__DATA_CONST.__objc_catlist2`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -2319.0.63.0.0
--  __TEXT.__text: 0x69ea8
--  __TEXT.__auth_stubs: 0x21b0
--  __TEXT.__objc_stubs: 0x6f60
--  __TEXT.__objc_methlist: 0x3ae8
--  __TEXT.__const: 0x3444
--  __TEXT.__objc_classname: 0x125c
--  __TEXT.__objc_methname: 0x9805
--  __TEXT.__gcc_except_tab: 0x6e8
--  __TEXT.__cstring: 0x158e
--  __TEXT.__oslogstring: 0x1c8e
--  __TEXT.__objc_methtype: 0x2837
--  __TEXT.__swift5_typeref: 0x3346
 +2319.40.29.0.0
-+  __TEXT.__text: 0x6c724
-+  __TEXT.__auth_stubs: 0x21e0
-+  __TEXT.__objc_stubs: 0x7260
-+  __TEXT.__objc_methlist: 0x3c80
-+  __TEXT.__const: 0x3454
-+  __TEXT.__objc_classname: 0x127c
-+  __TEXT.__objc_methname: 0x9ad5
-+  __TEXT.__gcc_except_tab: 0x710
-+  __TEXT.__cstring: 0x15ee
-+  __TEXT.__oslogstring: 0x1cfe
-+  __TEXT.__objc_methtype: 0x28b7
-+  __TEXT.__swift5_typeref: 0x33a6
-   __TEXT.__constg_swiftt: 0x11d4
-   __TEXT.__swift5_reflstr: 0xbcd
-   __TEXT.__swift5_fieldmd: 0xc00
--  __TEXT.__swift5_capture: 0x984
-+  __TEXT.__swift5_capture: 0xa0c
-   __TEXT.__swift5_types: 0x114
-   __TEXT.__swift5_builtin: 0xc8
-   __TEXT.__swift5_proto: 0xf4
 
-   __TEXT.__swift_as_ret: 0x8
-   __TEXT.__swift_as_cont: 0x20
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__unwind_info: 0x2388
-+  __TEXT.__unwind_info: 0x24a0
-   __TEXT.__eh_frame: 0x5a0
--  __DATA_CONST.__const: 0x34a0
-+  __DATA_CONST.__const: 0x3678
-   __DATA_CONST.__cfstring: 0xfe0
--  __DATA_CONST.__objc_classlist: 0x210
-+  __DATA_CONST.__objc_classlist: 0x218
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_catlist2: 0x8
-   __DATA_CONST.__objc_protolist: 0x238
-
-   __DATA_CONST.__objc_protorefs: 0xd8
-   __DATA_CONST.__objc_superrefs: 0xa0
-   __DATA_CONST.__objc_intobj: 0x408
--  __DATA_CONST.__auth_got: 0x10e8
--  __DATA_CONST.__got: 0xb10
--  __DATA_CONST.__auth_ptr: 0x7e8
--  __DATA.__objc_const: 0xc160
--  __DATA.__objc_selrefs: 0x2560
--  __DATA.__objc_ivar: 0x334
--  __DATA.__objc_data: 0x2498
--  __DATA.__data: 0x29f0
-+  __DATA_CONST.__auth_got: 0x1100
-+  __DATA_CONST.__got: 0xb30
-+  __DATA_CONST.__auth_ptr: 0x7f8
-+  __DATA.__objc_const: 0xc2f8
-+  __DATA.__objc_selrefs: 0x2620
-+  __DATA.__objc_ivar: 0x338
-+  __DATA.__objc_data: 0x2508
-+  __DATA.__data: 0x2a60
-   __DATA.__common: 0xc8
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-   - /System/Library/Frameworks/UIKit.framework/UIKit
 +  - /System/Library/PrivateFrameworks/BackBoardServices.framework/BackBoardServices
-   - /System/Library/PrivateFrameworks/BannerKit.framework/BannerKit
-   - /System/Library/PrivateFrameworks/BoardServices.framework/BoardServices
-   - /System/Library/PrivateFrameworks/ClarityFoundation.framework/ClarityFoundation
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
 -  - /usr/lib/swift/libswiftAccelerate.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2657
 -  Symbols:   7881
 -  CStrings:  2367
 +  Functions: 2745
 +  Symbols:   8018
 +  CStrings:  2403
- 
 Symbols:
 + $s28LocalAuthenticationUIService22AuthorizationViewModelC7appIconSo9LACUIIconCSgvM.resume
 + $sSo26TouchIdToastViewControllerC28LocalAuthenticationUIServiceE22viewWillLayoutSubviews4withySo06UIViewE21TransitionCoordinator_p_tFySo0neoP7Context_pcfU_TA

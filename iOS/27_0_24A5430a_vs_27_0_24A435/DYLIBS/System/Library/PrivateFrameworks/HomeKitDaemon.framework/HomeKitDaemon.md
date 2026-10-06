@@ -2,95 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/HomeKitDaemon.framework/HomeKitDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1548d50` | `0x154e468` | **`+0x5718`** |
+| `__TEXT.__oslogstring` | `0x294b59` | `0x295822` | **`+0xcc9`** |
+| `__AUTH_CONST.__objc_const` | `0x134318` | `0x134d18` | **`+0xa00`** |
+| `__TEXT.__objc_methlist` | `0x9fea4` | `0xa02f4` | **`+0x450`** |
+| `__AUTH_CONST.__cfstring` | `0x62cc0` | `0x62f00` | **`+0x240`** |
+| `__TEXT.__cstring` | `0x7cc4a` | `0x7ce47` | **`+0x1fd`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3dac0` | `0x3dc40` | **`+0x180`** |
+| `__AUTH.__objc_data` | `0x1fd90` | `0x1fe80` | **`+0xf0`** |
+| `__TEXT.__unwind_info` | `0x3b6b8` | `0x3b790` | **`+0xd8`** |
+| `__DATA.__objc_ivar` | `0x9c70` | `0x9ce0` | **`+0x70`** |
+| `__DATA_CONST.__const` | `0x1db58` | `0x1dba8` | **`+0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x16d68` | `0x16db8` | **`+0x50`** |
+| `__AUTH_CONST.__const` | `0x33970` | `0x339b0` | **`+0x40`** |
+| `__TEXT.__gcc_except_tab` | `0x29168` | `0x291a4` | **`+0x3c`** |
+| `__DATA.__bss` | `0x39680` | `0x396a0` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x4f90` | `0x4fb0` | **`+0x20`** |
+| `__DATA_CONST.__objc_superrefs` | `0x3678` | `0x3698` | **`+0x20`** |
+| `__TEXT.__const` | `0x2fbb4` | `0x2fbcc` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
- 1493.1.5.1.1
--  __TEXT.__text: 0x1548d50
--  __TEXT.__objc_methlist: 0x9fea4
-+  __TEXT.__text: 0x154e468
-+  __TEXT.__objc_methlist: 0xa02f4
-   __TEXT.__dlopen_cstrs: 0x130
--  __TEXT.__const: 0x2fbb4
--  __TEXT.__cstring: 0x7cc4a
-+  __TEXT.__const: 0x2fbcc
-+  __TEXT.__cstring: 0x7ce47
-   __TEXT.__swift5_typeref: 0xfb96
-   __TEXT.__swift5_fieldmd: 0xe0ec
-   __TEXT.__constg_swiftt: 0xda9c
-   __TEXT.__swift5_reflstr: 0xe0ac
-   __TEXT.__swift5_builtin: 0x500
-   __TEXT.__swift5_assocty: 0x1968
--  __TEXT.__oslogstring: 0x294b59
-+  __TEXT.__oslogstring: 0x295822
-   __TEXT.__swift5_protos: 0x228
-   __TEXT.__swift5_proto: 0x1efc
-   __TEXT.__swift5_types: 0xbb8
-
-   __TEXT.__swift_as_cont: 0x3188
-   __TEXT.__swift5_capture: 0x6dfc
-   __TEXT.__swift5_mpenum: 0xa0
--  __TEXT.__gcc_except_tab: 0x29168
-+  __TEXT.__gcc_except_tab: 0x291a4
-   __TEXT.__ustring: 0x54
--  __TEXT.__unwind_info: 0x3b6b8
-+  __TEXT.__unwind_info: 0x3b790
-   __TEXT.__eh_frame: 0x391dc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1db58
--  __DATA_CONST.__objc_classlist: 0x4f90
-+  __DATA_CONST.__const: 0x1dba8
-+  __DATA_CONST.__objc_classlist: 0x4fb0
-   __DATA_CONST.__objc_catlist: 0x370
-   __DATA_CONST.__objc_protolist: 0x28f0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3dac0
-+  __DATA_CONST.__objc_selrefs: 0x3dc40
-   __DATA_CONST.__objc_protorefs: 0xa68
--  __DATA_CONST.__objc_superrefs: 0x3678
-+  __DATA_CONST.__objc_superrefs: 0x3698
-   __DATA_CONST.__objc_arraydata: 0x33d0
-   __DATA_CONST.__got: 0x9a58
--  __AUTH_CONST.__const: 0x33970
--  __AUTH_CONST.__cfstring: 0x62cc0
--  __AUTH_CONST.__objc_const: 0x134318
-+  __AUTH_CONST.__const: 0x339b0
-+  __AUTH_CONST.__cfstring: 0x62f00
-+  __AUTH_CONST.__objc_const: 0x134d18
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x4020
-   __AUTH_CONST.__objc_arrayobj: 0x960
-
-   __AUTH_CONST.__objc_dictobj: 0x20a8
-   __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__auth_got: 0x51d8
--  __AUTH.__objc_data: 0x1fd90
-+  __AUTH.__objc_data: 0x1fe80
-   __AUTH.__data: 0xb428
--  __DATA.__objc_ivar: 0x9c70
-+  __DATA.__objc_ivar: 0x9ce0
-   __DATA.__data: 0x25350
-   __DATA.__common: 0x1270
--  __DATA_DIRTY.__objc_data: 0x16d68
-+  __DATA_DIRTY.__objc_data: 0x16db8
-   __DATA_DIRTY.__data: 0x47d0
-   __DATA_DIRTY.__bss: 0x3cf0
-   __DATA_DIRTY.__common: 0x1b8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 75468
--  Symbols:   130039
+-  Symbols:   103152
 -  CStrings:  58203
 +  Functions: 75562
-+  Symbols:   130245
++  Symbols:   103313
 +  CStrings:  58292
- 
 Symbols:
 + +[HMDHomeThreadExperiment logCategory]
 + +[HMDHomeThreadExperimentManager logCategory]
@@ -1775,51 +1719,6 @@ Symbols:
 + ___83-[HMDHomeThreadExperimentManager startExperimentWithAccessory:characteristic:home:]_block_invoke
 + ___block_descriptor_60_e8_32s40w_e17_v16?0"NSArray"8lw40l8s32l8
 + ___block_descriptor_80_e8_32s40s48s56s64s72s_e18_v16?0"NSString"8ls32l8s40l8s48l8s56l8s64l8s72l8
-+ _objc_msgSend$_incrementNotificationCountForIdentifier:sequence:
-+ _objc_msgSend$_incrementReadCountForIdentifier:
-+ _objc_msgSend$_readThreadExperimentWithAccessory:characteristic:startSeq:startTime:
-+ _objc_msgSend$_setLatencyWithIdentifier:latency:
-+ _objc_msgSend$currentSequence
-+ _objc_msgSend$enableTestDataNotificationWithAccessory:characteristic:
-+ _objc_msgSend$eventWithMetricsMode:expectedNotificationCount:receivedNotificationCount:readCharacteristicCount:expectedReachableCount:reachableCount:homeUUID:
-+ _objc_msgSend$eventWithMetricsMode:latency:homeUUID:
-+ _objc_msgSend$expectedNotificationCount
-+ _objc_msgSend$expectedReachableCount
-+ _objc_msgSend$experimentMode
-+ _objc_msgSend$experimentTimer
-+ _objc_msgSend$experiments
-+ _objc_msgSend$hostName
-+ _objc_msgSend$initWithMetricsMode:expectedNotificationCount:receivedNotificationCount:readCharacteristicCount:expectedReachableCount:reachableCount:homeUUID:
-+ _objc_msgSend$initWithMetricsMode:hapAccessory:workQueue:homeUUID:
-+ _objc_msgSend$initWithMetricsMode:hapAccessory:workQueue:homeUUID:reachabilityTimer:logEventSubmitter:
-+ _objc_msgSend$initWithMetricsMode:latency:homeUUID:
-+ _objc_msgSend$initializedMetricsBufferWithIdentifier:home:
-+ _objc_msgSend$isCurrentDeviceThreadBorderRouterCapable
-+ _objc_msgSend$isExperimentEnabled:
-+ _objc_msgSend$isManualExperiment
-+ _objc_msgSend$markNotificationSuccessful
-+ _objc_msgSend$markReadSuccessful
-+ _objc_msgSend$notificationSet
-+ _objc_msgSend$performRepeatedExperiment:
-+ _objc_msgSend$processPreviousExperiment
-+ _objc_msgSend$reachabilityTimer
-+ _objc_msgSend$reachableCount
-+ _objc_msgSend$readCharacteristicCount
-+ _objc_msgSend$readRemoteHostnameWithWithAccessory:characteristic:completionHandler:
-+ _objc_msgSend$receivedNotificationCount
-+ _objc_msgSend$scheduleReachabilityCheck
-+ _objc_msgSend$scheduleRepeatedExperiment
-+ _objc_msgSend$setCurrentSequence:
-+ _objc_msgSend$setExpectedReachableCount:
-+ _objc_msgSend$setExperimentMode:
-+ _objc_msgSend$setExperimentTimer:
-+ _objc_msgSend$setReachabilityTimer:
-+ _objc_msgSend$setReachableCount:
-+ _objc_msgSend$setReadCharacteristicCount:
-+ _objc_msgSend$setReceivedNotificationCount:
-+ _objc_msgSend$startExperimentWithAccessory:characteristic:home:
-+ _objc_msgSend$uploadPerformanceMetrics:
-+ _objc_msgSend$uploadReliabilityMetrics
 + _validateThreadExperimenterData
 - GCC_except_table15096
 - GCC_except_table15103

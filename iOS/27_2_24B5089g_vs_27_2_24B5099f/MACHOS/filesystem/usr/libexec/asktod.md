@@ -2,16 +2,15 @@
 
 > `/usr/libexec/asktod`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
-- `__TEXT.__eh_frame`
 - `__DATA.__objc_selrefs`
+- `__TEXT.__eh_frame`
+
+### Other Changes
 
 ```diff
 
 -97.125.4.0.0
 +97.125.7.0.0
-   __TEXT.__text: 0x4c0
-   __TEXT.__auth_stubs: 0x130
-   __TEXT.__objc_stubs: 0x40
 ```

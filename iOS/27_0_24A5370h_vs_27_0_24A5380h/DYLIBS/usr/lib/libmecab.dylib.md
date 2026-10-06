@@ -2,45 +2,29 @@
 
 > `/usr/lib/libmecab.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x54cec` | `0x532b0` | **`-0x1a3c`** |
+| `__TEXT.__cstring` | `0x8580` | `0x6ce2` | **`-0x189e`** |
+| `__TEXT.__gcc_except_tab` | `0x2f78` | `0x2f44` | **`-0x34`** |
+| `__TEXT.__unwind_info` | `0x11e8` | `0x11c8` | **`-0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x358` | `0x350` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x54cec
-+  __TEXT.__text: 0x532b0
-   __TEXT.__const: 0x1548
--  __TEXT.__cstring: 0x8580
--  __TEXT.__gcc_except_tab: 0x2f78
--  __TEXT.__unwind_info: 0x11e8
-+  __TEXT.__cstring: 0x6ce2
-+  __TEXT.__gcc_except_tab: 0x2f44
-+  __TEXT.__unwind_info: 0x11c8
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0xb98
-   __DATA_CONST.__weak_got: 0x10
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x1108
-   __AUTH_CONST.__weak_auth_got: 0x40
--  __AUTH_CONST.__auth_got: 0x358
-+  __AUTH_CONST.__auth_got: 0x350
-   __AUTH.__thread_vars: 0x18
-   __AUTH.__thread_bss: 0x100
-   __DATA.__data: 0x2c
+-1148.0.0.0.0
++1151.0.0.0.0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libiconv.2.dylib
 -  Functions: 958
--  Symbols:   2773
+-  Symbols:   1454
 -  CStrings:  666
 +  Functions: 957
-+  Symbols:   2765
++  Symbols:   1451
 +  CStrings:  650
- 
-Sections:
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__thread_vars : content changed
 Symbols:
 + __ZNKSt3__111__move_implINS_17_ClassicAlgPolicyEEclB9fqe220106INS_16reverse_iteratorIPNS_4pairINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEP13mecab_token_tEEEESG_NS4_INS_11__wrap_iterISF_EEEEEENS5_IT_T1_EESK_T0_SL_
 + __ZNKSt3__111__move_implINS_17_ClassicAlgPolicyEEclB9fqe220106IPNS_4pairINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEP13mecab_token_tEESE_SE_EENS4_IT_T1_EESF_T0_SG_
@@ -316,5 +300,4 @@ CStrings:
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:1371: libc++ Hardening assertion __pos <= size() failed: string index out of bounds\n"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string_view:331: libc++ Hardening assertion __len <= static_cast<size_type>(numeric_limits<difference_type>::max()) failed: string_view::string_view(_CharT *, size_t): length does not fit in difference_type\n"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string_view:343: libc++ Hardening assertion (__end - __begin) >= 0 failed: std::string_view::string_view(iterator, sentinel) received invalid range\n"
-
 ```

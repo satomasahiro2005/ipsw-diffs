@@ -2,24 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/MorphunAssets.framework/MorphunAssets`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8b08` | `0x8b14` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
- 3600.36.1.0.0
--  __TEXT.__text: 0x8b08
-+  __TEXT.__text: 0x8b14
-   __TEXT.__objc_methlist: 0x410
-   __TEXT.__const: 0x68
-   __TEXT.__cstring: 0xd2c
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libmorphun.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 145
--  Symbols:   448
+-  Symbols:   312
 +  Functions: 144
-+  Symbols:   447
-   CStrings:  172
- 
++  Symbols:   311
 Symbols:
 - _OUTLINED_FUNCTION_3
 Functions:

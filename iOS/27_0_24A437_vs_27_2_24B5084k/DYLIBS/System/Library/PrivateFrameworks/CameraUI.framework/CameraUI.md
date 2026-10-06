@@ -2,116 +2,59 @@
 
 > `/System/Library/PrivateFrameworks/CameraUI.framework/CameraUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4c1a5c` | `0x4cad70` | **`+0x9314`** |
+| `__TEXT.__swift5_typeref` | `0x3f48e` | `0x4052e` | **`+0x10a0`** |
+| `__TEXT.__oslogstring` | `0x19a04` | `0x1a0b4` | **`+0x6b0`** |
+| `__TEXT.__cstring` | `0x2ac6a` | `0x2b1ca` | **`+0x560`** |
+| `__AUTH_CONST.__objc_const` | `0x51750` | `0x51bd8` | **`+0x488`** |
+| `__TEXT.__objc_methlist` | `0x2ed98` | `0x2f0c8` | **`+0x330`** |
+| `__AUTH.__objc_data` | `0x5738` | `0x5a00` | **`+0x2c8`** |
+| `__DATA_DIRTY.__bss` | `0x75a8` | `0x7328` | **`-0x280`** |
+| `__DATA.__data` | `0xe288` | `0xe4f8` | **`+0x270`** |
+| `__AUTH.__data` | `0x25d0` | `0x27e8` | **`+0x218`** |
+| `__TEXT.__unwind_info` | `0x12030` | `0x12218` | **`+0x1e8`** |
+| `__DATA.__bss` | `0x15988` | `0x15b68` | **`+0x1e0`** |
+| `__TEXT.__const` | `0x2e0c4` | `0x2e294` | **`+0x1d0`** |
+| `__AUTH_CONST.__cfstring` | `0x17040` | `0x17200` | **`+0x1c0`** |
+| `__TEXT.__swift5_reflstr` | `0x8bea` | `0x8d97` | **`+0x1ad`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1ad28` | `0x1ae90` | **`+0x168`** |
+| `__TEXT.__constg_swiftt` | `0x8bfc` | `0x8d40` | **`+0x144`** |
+| `__TEXT.__swift5_fieldmd` | `0x813c` | `0x823c` | **`+0x100`** |
+| `__DATA_DIRTY.__data` | `0x5278` | `0x51c8` | **`-0xb0`** |
+| `__AUTH_CONST.__const` | `0x14300` | `0x14380` | **`+0x80`** |
+| `__TEXT.__swift5_capture` | `0x347c` | `0x34fc` | **`+0x80`** |
+| `__DATA_CONST.__const` | `0x7f40` | `0x7fb8` | **`+0x78`** |
+| `__TEXT.__swift5_assocty` | `0x2030` | `0x20a8` | **`+0x78`** |
+| `__TEXT.__gcc_except_tab` | `0x2ecc` | `0x2e8c` | **`-0x40`** |
+| `__DATA_CONST.__got` | `0x4db0` | `0x4de8` | **`+0x38`** |
+| `__TEXT.__eh_frame` | `0x4da0` | `0x4dd8` | **`+0x38`** |
+| `__AUTH_CONST.__objc_intobj` | `0x1500` | `0x1530` | **`+0x30`** |
+| `__DATA.__common` | `0x268` | `0x290` | **`+0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x1238` | `0x1260` | **`+0x28`** |
+| `__DATA.__objc_ivar` | `0x3dc4` | `0x3de4` | **`+0x20`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x4c0` | `0x4d0` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x868` | `0x878` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x3da8` | `0x3db0` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0xd48` | `0xd50` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0xe4c` | `0xe44` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -4177.22.4.0.0
--  __TEXT.__text: 0x4a43b0
 +4177.40.4.0.0
-+  __TEXT.__text: 0x4ad378
-   __TEXT.__lazy_helpers: 0xad4
--  __TEXT.__objc_methlist: 0x2ed98
--  __TEXT.__cstring: 0x2ac6a
--  __TEXT.__const: 0x2e0c4
--  __TEXT.__gcc_except_tab: 0x2ecc
--  __TEXT.__oslogstring: 0x19a04
-+  __TEXT.__objc_methlist: 0x2f0c8
-+  __TEXT.__cstring: 0x2b1ca
-+  __TEXT.__const: 0x2e294
-+  __TEXT.__gcc_except_tab: 0x2e8c
-+  __TEXT.__oslogstring: 0x1a0b4
-   __TEXT.__dlopen_cstrs: 0x3b9
-   __TEXT.__ustring: 0x4
--  __TEXT.__constg_swiftt: 0x8bfc
--  __TEXT.__swift5_typeref: 0x3f48e
--  __TEXT.__swift5_reflstr: 0x8bea
--  __TEXT.__swift5_fieldmd: 0x813c
-+  __TEXT.__constg_swiftt: 0x8d40
-+  __TEXT.__swift5_typeref: 0x4052e
-+  __TEXT.__swift5_reflstr: 0x8d97
-+  __TEXT.__swift5_fieldmd: 0x823c
-   __TEXT.__swift5_builtin: 0x514
--  __TEXT.__swift5_assocty: 0x2030
--  __TEXT.__swift5_proto: 0xe4c
--  __TEXT.__swift5_types: 0x868
--  __TEXT.__swift5_capture: 0x347c
-+  __TEXT.__swift5_assocty: 0x20a8
-+  __TEXT.__swift5_proto: 0xe44
-+  __TEXT.__swift5_types: 0x878
-+  __TEXT.__swift5_capture: 0x34fc
-   __TEXT.__swift_as_entry: 0x138
-   __TEXT.__swift_as_ret: 0x134
-   __TEXT.__swift_as_cont: 0x20c
-   __TEXT.__swift5_protos: 0x4c
-   __TEXT.__swift5_mpenum: 0x28
--  __TEXT.__unwind_info: 0x16a38
--  __TEXT.__eh_frame: 0x4dd0
-+  __TEXT.__unwind_info: 0x16c48
-+  __TEXT.__eh_frame: 0x4e08
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7f40
--  __DATA_CONST.__objc_classlist: 0x1238
-+  __DATA_CONST.__const: 0x7fb8
-+  __DATA_CONST.__objc_classlist: 0x1260
-   __DATA_CONST.__objc_catlist: 0x90
-   __DATA_CONST.__objc_protolist: 0x7f8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1ad28
-+  __DATA_CONST.__objc_selrefs: 0x1ae90
-   __DATA_CONST.__objc_protorefs: 0x100
--  __DATA_CONST.__objc_superrefs: 0xd48
-+  __DATA_CONST.__objc_superrefs: 0xd50
-   __DATA_CONST.__objc_arraydata: 0x1080
--  __DATA_CONST.__got: 0x4db0
--  __AUTH_CONST.__const: 0x14300
--  __AUTH_CONST.__cfstring: 0x17040
--  __AUTH_CONST.__objc_const: 0x51750
-+  __DATA_CONST.__got: 0x4de8
-+  __AUTH_CONST.__const: 0x14380
-+  __AUTH_CONST.__cfstring: 0x17200
-+  __AUTH_CONST.__objc_const: 0x51bd8
-   __AUTH_CONST.__lazy_load_got: 0x108
--  __AUTH_CONST.__objc_intobj: 0x1500
--  __AUTH_CONST.__objc_doubleobj: 0x4c0
-+  __AUTH_CONST.__objc_intobj: 0x1530
-+  __AUTH_CONST.__objc_doubleobj: 0x4d0
-   __AUTH_CONST.__objc_dictobj: 0x2a8
-   __AUTH_CONST.__objc_arrayobj: 0xc78
-   __AUTH_CONST.__objc_floatobj: 0x30
--  __AUTH_CONST.__auth_got: 0x3da8
--  __AUTH.__objc_data: 0x5738
--  __AUTH.__data: 0x25d0
--  __DATA.__objc_ivar: 0x3dc4
--  __DATA.__data: 0xe288
--  __DATA.__common: 0x268
-+  __AUTH_CONST.__auth_got: 0x3db0
-+  __AUTH.__objc_data: 0x5a00
-+  __AUTH.__data: 0x27e8
-+  __DATA.__objc_ivar: 0x3de4
-+  __DATA.__data: 0xe4f8
-+  __DATA.__common: 0x290
-   __DATA_DIRTY.__objc_data: 0x7e70
--  __DATA_DIRTY.__data: 0x5278
--  __DATA_DIRTY.__bss: 0x75a8
-+  __DATA_DIRTY.__data: 0x51c8
-+  __DATA_DIRTY.__bss: 0x7328
-   __DATA_DIRTY.__common: 0x180
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AVKit.framework/AVKit
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 30451
--  Symbols:   44452
+-  Symbols:   32390
 -  CStrings:  5832
 +  Functions: 30616
-+  Symbols:   44639
++  Symbols:   32534
 +  CStrings:  5876
- 
 Symbols:
 + +[CAMTimeWarpControlCameraZoomFactorCommand commandForCaptureCameraVideoZoomFactor:graphConfiguration:]
 + -[CAMBadgeTray batteryStressBadge]
@@ -311,68 +254,6 @@ Symbols:
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAcAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVyALyALyAA012_ConditionalO0VyANyALy06CameraB007ControlC13EditContainer33_366F3E641E765367FCB762D804AB7336LLVyANyALyAO0rC0AQLLVAO21HoldToConfirmModifierVGAcAE7gesture_9includingQrqd___AA11GestureMaskVtAA7GestureRd__lFQOyAT_AA13_EndedGestureVyAA16LongPressGestureVGSgQo_GGAA0G18AttachmentModifierVGAO0R6ButtonVyA9_GGA9_GA11_GAA32_EnvironmentKeyTransformModifierVySbGGAA16_OverlayModifierVyALyALyALyALyAO0S5BadgeVAA13_OffsetEffectVGAA25_AllowsHitTestingModifierVGAA14_OpacityEffectVGA11_GGG_AO0S10DecorationOSgQo__Qo_HO
 + _keypath_set.255Tm
 + _keypath_set.417Tm
-+ _objc_msgSend$_active
-+ _objc_msgSend$_beginInitialReportSettling
-+ _objc_msgSend$_cachedCaptureOrientationIsInitialQuery
-+ _objc_msgSend$_captureCameraVideoZoomFactor
-+ _objc_msgSend$_cekSmartStyle
-+ _objc_msgSend$_constrainIconAttachmentsInTitle:toFont:
-+ _objc_msgSend$_continuousAutoFocusTrackingIndicator
-+ _objc_msgSend$_createContinuousAutoFocusTrackingLockGestureRecognizerIfNecessary
-+ _objc_msgSend$_createNightModeInstructionLabelIfNeeded
-+ _objc_msgSend$_handleInitialReportSettlingElapsed
-+ _objc_msgSend$_isPointOnContinuousAutoFocusTrackingIndicator:
-+ _objc_msgSend$_isPressingToLockContinuousAutoFocusTracking
-+ _objc_msgSend$_isProVideoStorageUnavailableAndBlockingCapture
-+ _objc_msgSend$_layoutNightModeInstructionLabelForLayoutStyle:
-+ _objc_msgSend$_layoutPreviewAlignmentGuide
-+ _objc_msgSend$_needsPinnedElementsZSLReconfigureOnForeground
-+ _objc_msgSend$_orientationSeedSampler
-+ _objc_msgSend$_presentImageWellImage:uuid:animated:fromCapture:
-+ _objc_msgSend$_previewAlignmentGuide
-+ _objc_msgSend$_reapplyPrimaryDeviceFormatIfNeededWithEngineDevice:graphConfiguration:captureSession:
-+ _objc_msgSend$_resolveInitialReportPendingForConnectedStorageDevices:
-+ _objc_msgSend$_restartContinuousAutoFocusTrackingDimmingCountdown
-+ _objc_msgSend$_setActive:
-+ _objc_msgSend$_setCachedCaptureOrientationIsInitialQuery:
-+ _objc_msgSend$_setNeedsPinnedElementsZSLReconfigureOnForeground:
-+ _objc_msgSend$_setPreviewAlignmentGuideVisible:animated:
-+ _objc_msgSend$_shouldShowBatteryStressBadgeForGraphConfiguration:
-+ _objc_msgSend$_updateGravitySeedOrientationWithDeviceMotion:
-+ _objc_msgSend$_updateNightModeInstructionLabelVisibilityAnimated:
-+ _objc_msgSend$_updatePreviewAlignmentGuideVisibilityAnimated:
-+ _objc_msgSend$_videoZoomFactorForControlCamera:captureCamera:captureCameraVideoZoomFactor:
-+ _objc_msgSend$_wantsGravitySeedOrientation
-+ _objc_msgSend$batteryStressBadge
-+ _objc_msgSend$captureController:receivedOverlayStyleIndex:
-+ _objc_msgSend$commandForCaptureCameraVideoZoomFactor:graphConfiguration:
-+ _objc_msgSend$dismissPinnedElementsEditorAndPersistAnimated:
-+ _objc_msgSend$enumerateAttribute:inRange:options:usingBlock:
-+ _objc_msgSend$externalStorageMonitorDidEndInitialReportSettling:
-+ _objc_msgSend$hasBatteryStress
-+ _objc_msgSend$imageByApplyingSymbolConfiguration:
-+ _objc_msgSend$indexOfCreativeStylePickerStyleForSmartStyle:
-+ _objc_msgSend$initWithCaptureCameraVideoZoomFactor:
-+ _objc_msgSend$initWithLocalizedTitle:symbolName:localizedIndexTitles:
-+ _objc_msgSend$isContinuousAutoFocusTrackingLockEnabled
-+ _objc_msgSend$isContinuousAutoFocusTrackingLocked
-+ _objc_msgSend$isVirtualCaptureCardRequired
-+ _objc_msgSend$isVirtualCaptureCardRequiredForMode:videoEncodingBehavior:
-+ _objc_msgSend$makeNavigationController
-+ _objc_msgSend$needsSample
-+ _objc_msgSend$numberOfIndexes
-+ _objc_msgSend$orientationModelDidBecomeUpright:
-+ _objc_msgSend$playTrackingLockAnimation
-+ _objc_msgSend$previewViewControllerDidChangeContinuousAutoFocusTrackingLocked:
-+ _objc_msgSend$seedOrientation
-+ _objc_msgSend$setContinuousAutoFocusTrackingLocked:
-+ _objc_msgSend$setNightModeInstructionLabel:
-+ _objc_msgSend$showsBatteryStressBadge
-+ _objc_msgSend$timeWarpControlCameraZoomSupported
-+ _objc_msgSend$updateForBatteryStress
-+ _objc_msgSend$updateOverlayStylePickerSelectionForSmartStyle:
-+ _objc_msgSend$updateThumbnailImage:uuid:animated:fromCapture:
-+ _objc_msgSend$whiteBalanceMode
 + _symbolic Ig_
 + _symbolic SDy_____SSG So24CAMConstituentDeviceTypeV
 + _symbolic SaySi6offset______7elementtG So24CAMConstituentDeviceTypeV
@@ -626,25 +507,6 @@ Symbols:
 - _kCAFilterLimitAveragePixelLuminance
 - _keypath_set.256Tm
 - _keypath_set.418Tm
-- _objc_msgSend$_presentImageWellImage:uuid:animated:
-- _objc_msgSend$_shouldEnableSystemStylePickerForMode:recording:
-- _objc_msgSend$_shouldShowSystemStressBadgeForGraphConfiguration:
-- _objc_msgSend$captureController:receivedOverlayChangeSmartStyle:
-- _objc_msgSend$colorBiasSlider
-- _objc_msgSend$dismissPinnedElementsEditorSavingChangesIfNeeded
-- _objc_msgSend$hasSystemStress
-- _objc_msgSend$initWithSession:styles:action:
-- _objc_msgSend$intensitySlider
-- _objc_msgSend$isVirtualCaptureCardSupported
-- _objc_msgSend$isVirtualCaptureCardSupportedForMode:videoEncodingBehavior:
-- _objc_msgSend$setSelectedPreset:
-- _objc_msgSend$showsSystemStressBadge
-- _objc_msgSend$smartStylesShowExtraControls
-- _objc_msgSend$systemStressBadge
-- _objc_msgSend$systemStylePicker
-- _objc_msgSend$timelapseController:persistedPlaceholderResult:error:
-- _objc_msgSend$updateForSystemStress
-- _objc_msgSend$updateThumbnailImage:uuid:animated:
 - _symbolic _____ 8CameraUI14ChromeCAFilter33_ADFDC3F66093E73C2EB15A811E6A40F5LLV
 - _symbolic _____ 8CameraUI20LimitLuminanceFilter33_ADFDC3F66093E73C2EB15A811E6A40F5LLV
 - _symbolic _____ 8CameraUI35ModeLoupeBackgroundMaterialProviderV

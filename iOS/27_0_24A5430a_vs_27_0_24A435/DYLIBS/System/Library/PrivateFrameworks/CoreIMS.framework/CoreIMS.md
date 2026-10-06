@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/CoreIMS.framework/CoreIMS`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_2 -> _OUTLINED_FUNCTION_4 : 20 -> 12

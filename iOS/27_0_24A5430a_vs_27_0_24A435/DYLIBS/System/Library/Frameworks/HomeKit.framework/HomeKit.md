@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/HomeKit.framework/HomeKit`
 
-```diff
+### Section Size Changes
 
- 1493.1.5.1.1
--  __TEXT.__text: 0x3ce95c
-+  __TEXT.__text: 0x3ce970
-   __TEXT.__objc_methlist: 0x28c24
-   __TEXT.__const: 0x6818
-   __TEXT.__dlopen_cstrs: 0x403
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3ce95c` | `0x3ce970` | **`+0x14`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1a53574d4 -> sub_1a53664d4 : 824 -> 832
 ~ sub_1a535881c -> sub_1a5367824 : 868 -> 872

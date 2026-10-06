@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/PairedSync.framework/Support/pairedsyncd`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_100009500 : 20 -> 12

@@ -2,48 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/CoreEmoji.framework/CoreEmoji`
 
-```diff
+### Section Size Changes
 
- 281.0.0.0.0
--  __TEXT.__text: 0x2781c sha256:d2649ff76a55d35a904061db818d6f72eaa15c0d15f60be6d4a3a5f8c1c6c8de
-+  __TEXT.__text: 0x277a0 sha256:9dbc354733962c99bdb9fc33023c0fdcde68b0b744c674f4df6c0b7b71226a71
-   __TEXT.__const: 0x2dbc sha256:1c34a3807fbbeaf6629d4f88bb9d822ef7e78c8f798737a0b86d2357f5880c08
--  __TEXT.__cstring: 0x423c sha256:eb9d774cc966df8069ae80f9cf99c54ab9b9d541fc3eb66d212633f5272a9cfc
--  __TEXT.__gcc_except_tab: 0x1b94 sha256:04cf576d65aa2098499473fbde7066361caabebbad24c76124ec959c77a0fad1
-+  __TEXT.__cstring: 0x423c sha256:8c6c204e09cec92e41263390d20f951404cba70b9faa76cff2030242f461e338
-+  __TEXT.__gcc_except_tab: 0x1b94 sha256:65f11213f5ee9663fcc454f6d836c0cc2e13995e000b4abea584825142067329
-   __TEXT.__ustring: 0x76 sha256:e81e94a0f84bf7d4a255d14c6d8401e3b3c7b03399db63660135c5fefa33a5e1
-   __TEXT.__oslogstring: 0x6b7 sha256:5332c5375741caac2e2ebb5297e13be258f274589afccee1d38a087fe4d4fa61
--  __TEXT.__unwind_info: 0xe58 sha256:93b8d428de1611ce2d3866de6f80df11cd3e967d7d6bbb28dfe535257792952e
-+  __TEXT.__unwind_info: 0xe68 sha256:b19116e244456e0acc0fd49aa3a20e49950225fc5a772653cdf4b2992245b839
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x470 sha256:b36db1fe0f21878ebf2a9700476df4038b498c45a4b5e65ce8067a53b1e285d9
-+  __DATA_CONST.__const: 0x470 sha256:9569144361bd84041cf9900e1dfa63de97b54fdfa7b348ae35877e44651c4882
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x18 sha256:eaf5f7d5eb584a82449bd35fd49b7b12648af57f4c7c22d75b255b943418eb4b
--  __DATA_CONST.__got: 0x138 sha256:4d3aa4e09a56327c1af08ca520109278ebadf6d1f45be3adc5bfe33b81e4af8a
--  __AUTH_CONST.__const: 0xff0 sha256:b04130bc1486d1388dff577eeda29e07a67f2e5926e0a25efe93e618075bf2d7
--  __AUTH_CONST.__cfstring: 0x9a0 sha256:6f4825d102bf9a1d3c8201766fa7a639cf562a14cf0cfc3d46554dd9b9c152bf
--  __AUTH_CONST.__weak_auth_got: 0x40 sha256:ad0b9be612aa8d185807f1bc0f7abefdf959d3aa17e6ef641b4c0be9e164154b
-+  __DATA_CONST.__weak_got: 0x18 sha256:82e8f2fd2b25c25ef297adb6a315573ab41ce9a8991498b0105c8923dbff9fdd
-+  __DATA_CONST.__got: 0x138 sha256:a5737a307eb97e7f1b0912eea202904a2789d6d3d136a7e9f263a58a097fae00
-+  __AUTH_CONST.__const: 0xff0 sha256:b3e9291a84d66c667fe27f9dec93caaed3276031c7b3c04482dbd3b5a4a85418
-+  __AUTH_CONST.__cfstring: 0x9a0 sha256:f8d34793053effe13d619b5ce4451290b04c902b3d7b28d713443f2c2f4fee99
-+  __AUTH_CONST.__weak_auth_got: 0x40 sha256:abbc17801f1de4a9270a2d222611d02681037a8f11006d7d36cd21ceb726cdf0
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__bss: 0x188 sha256:3eefc4790b52024832ea4c03c6e7a781f3ef9416866a959b2777fce101ad9d61
--  __DATA_DIRTY.__data: 0xc0 sha256:f7c0a44b1d7037e865f3235fc979b15639ab55c6003a3d0ae8386b0c3a7334b0
-+  __DATA_DIRTY.__data: 0xc0 sha256:94a1d711ba33182497ae6f34e243922500df2f825a878fd5c84d7842e361f982
-   __DATA_DIRTY.__bss: 0x118 sha256:1f6c9de2e555d5d589e1149fed58f9cbcc101739df97d4a4d694a13f1242c5b9
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libsqlite3.dylib
--  UUID: E32DFE8C-C37A-39CA-9FB8-C4F1E0DF700D
-+  UUID: DDB92907-1132-301E-8151-92B0EB175266
-   Functions: 785
-   Symbols:   2303
-   CStrings:  304
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2781c` | `0x277a0` | **`-0x7c`** |
+| `__TEXT.__unwind_info` | `0xe58` | `0xe68` | **`+0x10`** |
+
+### Other Changes
+
+```diff
 Symbols:
 + __ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4findB9fqe220106ERKS5_m
 + __ZNKSt3__113__string_hashIcNS_9allocatorIcEEEclB9fqe220106ERKNS_12basic_stringIcNS_11char_traitsIcEES2_EE
@@ -295,8 +263,4 @@ Symbols:
 - __ZNSt3__19allocatorIlE17allocate_at_leastB9fqe220100Em
 - __ZNSt3__19allocatorItE17allocate_at_leastB9fqe220100Em
 - __ZSt28__throw_bad_array_new_lengthB9fqe220100v
-CStrings:
-+ "/AppleInternal/Library/BuildRoots/4~CRdOugB23xqJlmkFoxQnMgpQQ8NaC7iGaTBmjv0/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/trie/cedarpp.h"
-- "/AppleInternal/Library/BuildRoots/4~CQGsugCXSGVcNSkdaBFAHUPjM-6zmsZD7j2DGJE/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/trie/cedarpp.h"
-
 ```

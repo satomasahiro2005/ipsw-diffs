@@ -2,91 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/MapsDesign.framework/MapsDesign`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x25f8ac` | `0x26a8c4` | **`+0xb018`** |
+| `__TEXT.__swift5_typeref` | `0x4e09e` | `0x4dbce` | **`-0x4d0`** |
+| `__TEXT.__const` | `0x207c4` | `0x20c24` | **`+0x460`** |
+| `__DATA.__bss` | `0x7f00` | `0x8230` | **`+0x330`** |
+| `__DATA.__data` | `0x60a0` | `0x61f0` | **`+0x150`** |
+| `__AUTH_CONST.__const` | `0xef08` | `0xf048` | **`+0x140`** |
+| `__TEXT.__swift5_fieldmd` | `0x7f30` | `0x805c` | **`+0x12c`** |
+| `__TEXT.__unwind_info` | `0x65d0` | `0x66c0` | **`+0xf0`** |
+| `__TEXT.__cstring` | `0x4c7d` | `0x4b9d` | **`-0xe0`** |
+| `__TEXT.__swift5_reflstr` | `0x5ed1` | `0x5fb1` | **`+0xe0`** |
+| `__TEXT.__constg_swiftt` | `0x9754` | `0x9828` | **`+0xd4`** |
+| `__DATA_CONST.__got` | `0x14f8` | `0x1598` | **`+0xa0`** |
+| `__TEXT.__eh_frame` | `0x223c` | `0x22dc` | **`+0xa0`** |
+| `__AUTH.__data` | `0x1208` | `0x1298` | **`+0x90`** |
+| `__AUTH_CONST.__auth_got` | `0x29c8` | `0x2958` | **`-0x70`** |
+| `__DATA_DIRTY.__data` | `0xd3b8` | `0xd348` | **`-0x70`** |
+| `__TEXT.__swift5_capture` | `0x2870` | `0x28dc` | **`+0x6c`** |
+| `__AUTH_CONST.__objc_const` | `0x30f8` | `0x3118` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x9f0` | `0xa10` | **`+0x20`** |
+| `__TEXT.__swift5_assocty` | `0x1eb0` | `0x1ec8` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0x8b4` | `0x8cc` | **`+0x18`** |
+| `__DATA.__common` | `0x7c8` | `0x7d8` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x7e4` | `0x7f0` | **`+0xc`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa00` | `0x9f8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -82.30.6.12.11
--  __TEXT.__text: 0x25f8ac
 +82.30.6.12.18
-+  __TEXT.__text: 0x26a8c4
-   __TEXT.__objc_methlist: 0x5cc
--  __TEXT.__const: 0x207c4
--  __TEXT.__constg_swiftt: 0x9754
--  __TEXT.__swift5_typeref: 0x4e09e
-+  __TEXT.__const: 0x20c24
-+  __TEXT.__constg_swiftt: 0x9828
-+  __TEXT.__swift5_typeref: 0x4dbce
-   __TEXT.__swift5_builtin: 0x258
-   __TEXT.__swift5_mpenum: 0xc4
--  __TEXT.__swift5_reflstr: 0x5ed1
--  __TEXT.__swift5_fieldmd: 0x7f30
--  __TEXT.__swift5_assocty: 0x1eb0
--  __TEXT.__cstring: 0x4c7d
--  __TEXT.__swift5_proto: 0x8b4
--  __TEXT.__swift5_types: 0x7e4
--  __TEXT.__swift5_capture: 0x2870
-+  __TEXT.__swift5_reflstr: 0x5fb1
-+  __TEXT.__swift5_fieldmd: 0x805c
-+  __TEXT.__swift5_assocty: 0x1ec8
-+  __TEXT.__cstring: 0x4b9d
-+  __TEXT.__swift5_proto: 0x8cc
-+  __TEXT.__swift5_types: 0x7f0
-+  __TEXT.__swift5_capture: 0x28dc
-   __TEXT.__swift_as_entry: 0x44
-   __TEXT.__swift_as_ret: 0x38
-   __TEXT.__swift_as_cont: 0x8c
-   __TEXT.__oslogstring: 0x111f
-   __TEXT.__swift5_protos: 0x14
--  __TEXT.__unwind_info: 0x65d0
--  __TEXT.__eh_frame: 0x223c
-+  __TEXT.__unwind_info: 0x66c0
-+  __TEXT.__eh_frame: 0x22dc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9f0
-+  __DATA_CONST.__const: 0xa10
-   __DATA_CONST.__objc_classlist: 0x130
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa00
-+  __DATA_CONST.__objc_selrefs: 0x9f8
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__got: 0x14f8
--  __AUTH_CONST.__const: 0xef08
--  __AUTH_CONST.__objc_const: 0x30f8
--  __AUTH_CONST.__auth_got: 0x29c8
-+  __DATA_CONST.__got: 0x1598
-+  __AUTH_CONST.__const: 0xf048
-+  __AUTH_CONST.__objc_const: 0x3118
-+  __AUTH_CONST.__auth_got: 0x2958
-   __AUTH.__objc_data: 0x290
--  __AUTH.__data: 0x1208
--  __DATA.__data: 0x60a0
--  __DATA.__bss: 0x7f00
--  __DATA.__common: 0x7c8
-+  __AUTH.__data: 0x1298
-+  __DATA.__data: 0x61f0
-+  __DATA.__bss: 0x8230
-+  __DATA.__common: 0x7d8
-   __DATA_DIRTY.__objc_data: 0xc90
--  __DATA_DIRTY.__data: 0xd3b8
-+  __DATA_DIRTY.__data: 0xd348
-   __DATA_DIRTY.__bss: 0xa8b0
-   __DATA_DIRTY.__common: 0x220
-   - /System/Library/Frameworks/Charts.framework/Charts
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11791
--  Symbols:   5524
+-  Symbols:   5286
 -  CStrings:  529
 +  Functions: 11896
-+  Symbols:   5545
++  Symbols:   5308
 +  CStrings:  530
- 
 Symbols:
 + _UIContentSizeCategoryAccessibilityExtraExtraExtraLarge
 + _UIContentSizeCategoryAccessibilityExtraExtraLarge
@@ -127,7 +84,6 @@ Symbols:
 + _get_witness_table SHRzs8SendableRzl10MapsDesign17DatePickerContent33_93F84CAC2350EE8C9FADAD49993B6A40LLVyxGSg7SwiftUI4ViewHpAfhIHPyHC_HC
 + _get_witness_table SHRzs8SendableRzlqd0__7SwiftUI4ViewHD3_AbCPABE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAdBEAefG_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAB15ModifiedContentVyAIyAdBE15datePickerStyleyQrqd__AB04DatelM0Rd__lFQOyAIyAB5GroupVyAB012_ConditionalJ0VyAOyAB0nL0VyAB05EmptyD0VGATGAUGGAB30_EnvironmentKeyWritingModifierVy10Foundation8TimeZoneVGG_AB05WheelnlM0VQo_AB16_FlexFrameLayoutVGAB06_TraittU0VyAB018ListRowInsetsTraitS0VGG_AZ0N0VQo__A16_Qo_HO
 + _get_witness_table SkRzSHR_s8SendableR_7SwiftUI4ViewR0_r1_lAB15ModifiedContentVyAEyAEyAEyAEyAEyAEyAbCPABE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAfBE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAfBEAmnO_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAfBEAmnO_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAfBEAmnO_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAB6ZStackVyAB05TupleF0VyAB6VStackVyASyAEyAEyAEyAEyAEyAEyAEyAEyAEyAB4TextVAB30_EnvironmentKeyWritingModifierVyAB11ColorSchemeOGGAB06_TraitvW0VyAB06ZIndexzU0VGGAB16_FlexFrameLayoutVGAB12_FrameLayoutVGAB11_ClipEffectVyAB16RoundedRectangleVGG10MapsDesign013MapsSignGlassW033_E00232F541F34817FB456C68192351D8LLVGAB14_PaddingLayoutVGA3_yAB010TransitionzU0VGGAB023AccessibilityAttachmentW0VGSg_AEyAfBE0L10TapGesture5count7performQrSi_yyctFQOyAEyAEyAEyAEyAEyAEyAEyAEyAEyAEyA20_18MapsElevationChartVA26_GA26_GA0_GA18_GA23_GA9_GA12_GA26_GA6_GA30_G_Qo_A33_GSgAEyAfBE7gesture_9includingQrqd___AB11GestureMaskVtAB7GestureRd__lFQOyAEyAfBE0l11ScrollPhaseM0yQryAB11ScrollPhaseO_A61_tcFQOyAEyAEyAEyAfBE16scrollIndicators_4axesQrAB25ScrollIndicatorVisibilityV_AB4AxisO3SetVtFQOyAfBE18scrollClipDisabledyQrSbFQOyAfBE14scrollPosition_6anchorQrAB7BindingVyAB14ScrollPositionVG_AB9UnitPointVSgtFQOyAfBE14scrollDisabledyQrSbFQOyAfBE0l22ScrollTargetVisibilityM06idType9threshold_Qrqd__m_SdySayqd__GctSHRd__lFQOyAB06ScrollD0VyAfBE18scrollTargetLayout9isEnabledQrSb_tFQOyAUyASyAB7ForEachVyxq_AfBE16scrollTransition_4axis10transitionQrAB29ScrollTransitionConfigurationV_A67_Sgqd__AB17EmptyVisualEffectV_AB21ScrollTransitionPhaseOtYbctAB12VisualEffectRd__lFQOyAB6IDViewVyAEyAEyAB5GroupVyAB012_ConditionalF0VyAEyAEyAEyAEyAEyAfBEA36_A37_A38_QrSi_yyctFQOyAEyq0_AB015_GeometryActionW0Vy12CoreGraphics7CGFloatVGG_Qo_AB08_OverlayW0VyAEyAUyASyAB6SpacerV_AEyAEyAB06_ShapeD0VyAB7CapsuleVAB22HierarchicalShapeStyleVGA12_GA26_GQPGGA30_GSgGGA33_GAB010_AnimationW0VyA113_SgGGA9_GA23_GAEyA142_AB07_HiddenW0VGGGA26_GA6_Gq_G_ABA102_PABE6offset1x1yQrA113__A113_tFQOyA152_ABE7opacityyQrSdFQOyA152_ABE4blur6radius6opaqueQrA113__SbtFQOyA152_ABE11scaleEffectA154_A155_A72_QrA113__A113_A79_tFQOyA99__Qo__Qo__Qo__Qo_Qo_G_A104_yAEyA120_A12_GSSGQPGG_Qo_G_q_Qo__Qo__Qo__Qo__Qo_A9_GA26_GA114_G_Qo_AB13_OffsetEffectVG_AB13_EndedGestureVyAB15_ChangedGestureVyAB11DragGestureVGGQo_A33_GQPGG_AEyAUyASyA120__AEyAEyAfBEA54__A55_Qrqd___A57_tABA58_Rd__lFQOyAEyAfBE12_glassEffect_2inQrAB6_GlassV_qd__tAB5ShapeRd__lFQOyAEyAfBE11buttonStyleyQrqd__AB20PrimitiveButtonStyleRd__lFQOyAEyAB6ButtonVyAEyAfBE15dynamicTypeSizeyQrAB15DynamicTypeSizeOFQOyAEyAB5ImageVAYyAB4FontVSgGG_Qo_A12_GGAB016_ForegroundStyleW0VyA126_GG_AB21BorderlessButtonStyleVQo_AB01_f5ShapeW0VyA124_GG_A124_Qo_A26_G_A186_yA190_GQo_A33_GA33_GQPGGA30_GSgQPGG_q_SgQo__SbQo__SDyq_A113_GQo__SiQo__Qo_AB017_AppearanceActionW0VGA250_GAB30_SafeAreaRegionsIgnoringLayoutVGA26_GA138_ySbGGA138_yA113_GGA20_021MapsDesignAXContainerdW0VGAbCHPA260_AbCHPA258_AbCHPA256_AbCHPA255_AbCHPA252_AbCHPA251_AbCHPqd__AbCHD2_A248_HO_A250_AB0dW0HPyHCHC_A250_ABA264_HPyHCHC_A254_ABA264_HPyHCHC_A26_ABA264_HPyHCHC_A257_ABA264_HPyHCHC_A259_ABA264_HPyHCHC_A262_ABA264_HPyHCHC
-+ _objc_msgSend$scaledValueForValue:compatibleWithTraitCollection:
 + _symbolic _____ 10MapsDesign0aB9ConstantsO5SpecsV6ValuesV
 + _symbolic _____ 10MapsDesign14AdvisorySuffixO
 + _symbolic _____ 10MapsDesign17DatePickerContent33_93F84CAC2350EE8C9FADAD49993B6A40LLV
@@ -197,8 +153,6 @@ Symbols:
 - _get_witness_table SHRzs8SendableRzl7SwiftUI15ModifiedContentVyADyAB4ViewPABE15datePickerStyleyQrqd__AB04DatehI0Rd__lFQOyADyAB5GroupVyAB012_ConditionalE0VyALyAB0jH0VyAB05EmptyF0VGAQGARGGAB30_EnvironmentKeyWritingModifierVy10Foundation8TimeZoneVGG_AB05WheeljhI0VQo_AB16_FlexFrameLayoutVGAB06_TraitpQ0VyAB013ListRowInsetsyO0VGGSgAbEHpA11_AbEHPA5_AbEHPqd0__AbEHD3_A2_HO_A4_AB0fQ0HPyHCHC_A10_ABA13_HPyHCHC_HC
 - _get_witness_table SkRzSHR_7SwiftUI4ViewR0_r1_lAA15ModifiedContentVyADyADyADyADyADyADyAaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAeAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAeAEAlmN_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAeAEAlmN_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAeAEAlmN_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA6ZStackVyAA05TupleE0VyAA6VStackVyARyADyADyADyADyADyADyADyADyADyAA4TextVAA30_EnvironmentKeyWritingModifierVyAA11ColorSchemeOGGAA06_TraituV0VyAA06ZIndexyT0VGGAA16_FlexFrameLayoutVGAA12_FrameLayoutVGAA11_ClipEffectVyAA16RoundedRectangleVGG10MapsDesign013MapsSignGlassV033_E00232F541F34817FB456C68192351D8LLVGAA14_PaddingLayoutVGA2_yAA010TransitionyT0VGGAA023AccessibilityAttachmentV0VGSg_ADyAeAE0K10TapGesture5count7performQrSi_yyctFQOyADyADyADyADyADyADyADyADyADyADyA19_18MapsElevationChartVA25_GA25_GA_GA17_GA22_GA8_GA11_GA25_GA5_GA29_G_Qo_A32_GSgADyAeAE7gesture_9includingQrqd___AA11GestureMaskVtAA7GestureRd__lFQOyADyAeAE0k11ScrollPhaseL0yQryAA11ScrollPhaseO_A60_tcFQOyADyADyADyAeAE16scrollIndicators_4axesQrAA25ScrollIndicatorVisibilityV_AA4AxisO3SetVtFQOyAeAE18scrollClipDisabledyQrSbFQOyAeAE14scrollPosition_6anchorQrAA7BindingVyAA14ScrollPositionVG_AA9UnitPointVSgtFQOyAeAE14scrollDisabledyQrSbFQOyAeAE0k22ScrollTargetVisibilityL06idType9threshold_Qrqd__m_SdySayqd__GctSHRd__lFQOyAA06ScrollC0VyAeAE18scrollTargetLayout9isEnabledQrSb_tFQOyATyARyAA7ForEachVyxq_AeAE16scrollTransition_4axis10transitionQrAA29ScrollTransitionConfigurationV_A66_Sgqd__AA17EmptyVisualEffectV_AA21ScrollTransitionPhaseOtYbctAA12VisualEffectRd__lFQOyAA6IDViewVyADyADyAA5GroupVyAA012_ConditionalE0VyADyADyADyADyADyAeAEA35_A36_A37_QrSi_yyctFQOyADyq0_AA015_GeometryActionV0Vy12CoreGraphics7CGFloatVGG_Qo_AA08_OverlayV0VyADyATyARyAA6SpacerV_ADyADyAA06_ShapeC0VyAA7CapsuleVAA22HierarchicalShapeStyleVGA11_GA25_GQPGGA29_GSgGGA32_GAA010_AnimationV0VyA112_SgGGA8_GA22_GADyA141_AA07_HiddenV0VGGGA25_GA5_Gq_G_AAA101_PAAE6offset1x1yQrA112__A112_tFQOyA151_AAE7opacityyQrSdFQOyA151_AAE4blur6radius6opaqueQrA112__SbtFQOyA151_AAE11scaleEffectA153_A154_A71_QrA112__A112_A78_tFQOyA98__Qo__Qo__Qo__Qo_Qo_G_A103_yADyA119_A11_GSSGQPGG_Qo_G_q_Qo__Qo__Qo__Qo__Qo_A8_GA25_GA113_G_Qo_AA13_OffsetEffectVG_AA13_EndedGestureVyAA15_ChangedGestureVyAA11DragGestureVGGQo_A32_GQPGG_ADyATyARyA119__ADyAeAEA53__A54_Qrqd___A56_tAAA57_Rd__lFQOyADyAeAE12_glassEffect_2inQrAA6_GlassV_qd__tAA5ShapeRd__lFQOyADyAeAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyADyAA6ButtonVyADyADyAeAE15dynamicTypeSizeyQrAA15DynamicTypeSizeOFQOyADyAA5ImageVAXyAA4FontVSgGG_Qo_A11_GA32_GGAA016_ForegroundStyleV0VyA125_GG_AA21BorderlessButtonStyleVQo_AA01_e5ShapeV0VyA123_GG_A123_Qo_A25_G_A185_yA189_GQo_A32_GQPGGA29_GSgQPGG_q_SgQo__SbQo__SDyq_A112_GQo__SiQo__Qo_AA017_AppearanceActionV0VGA249_GAA30_SafeAreaRegionsIgnoringLayoutVGA25_GA137_ySbGGA137_yA112_GGA19_021MapsDesignAXContainercV0VGAaBHPA259_AaBHPA257_AaBHPA255_AaBHPA254_AaBHPA251_AaBHPA250_AaBHPqd__AaBHD2_A247_HO_A249_AA0cV0HPyHCHC_A249_AAA263_HPyHCHC_A253_AAA263_HPyHCHC_A25_AAA263_HPyHCHC_A256_AAA263_HPyHCHC_A258_AAA263_HPyHCHC_A261_AAA263_HPyHCHC
 - _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVyAHyAHyAA6HStackVyAA7ForEachVySnySiGSiAHyAHy10MapsDesign0mN5ImageVAA16_FlexFrameLayoutVGAA01_qR0VGGGAA30_EnvironmentKeyWritingModifierVyAA0R9DirectionOGGAA06_TraituV0VyAA010TransitionxT0VGGAA010_AnimationV0VySbGG_SbQo_HO
-- _objc_msgSend$defaultManager
-- _objc_msgSend$initWithContentsOfFile:
 - _symbolic ___________y______y_____ySay_____G__________y__________GGGQo_AAt 7SwiftUI13ToolbarSpacerV AA0C14ContentBuilderV10buildBlockyQrxAA0cE0RzlFZQO AA0C9ItemGroupV AA7ForEachV 10MapsDesign09ActionBarI9ViewModelC 10Foundation4UUIDV AA08ModifiedE0V AL0opI0V AA31AccessibilityAttachmentModifierV
 - _symbolic ___________y______y_____ySay_____G__________y__________GGGQo_t 7SwiftUI13ToolbarSpacerV AA0C14ContentBuilderV10buildBlockyQrxAA0cE0RzlFZQO AA0C9ItemGroupV AA7ForEachV 10MapsDesign09ActionBarI9ViewModelC 10Foundation4UUIDV AA08ModifiedE0V AL0opI0V AA31AccessibilityAttachmentModifierV
 - _symbolic ___________y_____yABy_____yABy_____yABy_____yAByABy_____yABy__________y_____SgGG_Qo______G_____GG_____y_____GG______Qo______y_____GG_AWQo______G______y_____GQo_AMGt 7SwiftUI6SpacerV AA15ModifiedContentV AA4ViewPAAE7gesture_9includingQrqd___AA11GestureMaskVtAA0I0Rd__lFQO AgAE12_glassEffect_2inQrAA6_GlassV_qd__tAA5ShapeRd__lFQO AgAE11buttonStyleyQrqd__AA015PrimitiveButtonQ0Rd__lFQO AA0S0V AgAE15dynamicTypeSizeyQrAA07DynamicuV0OFQO AA5ImageV AA30_EnvironmentKeyWritingModifierV AA4FontV AA12_FrameLayoutV AA31AccessibilityAttachmentModifierV AA011_ForegroundQ8ModifierV AA012HierarchicaloQ0V AA010BorderlesssQ0V AA01_eO8ModifierV AA7CapsuleV AA14_PaddingLayoutV AA06_EndedI0V AA04DragI0V

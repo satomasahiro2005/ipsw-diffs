@@ -2,87 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/HealthFoundationUI.framework/HealthFoundationUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x95a10` | `0xa6750` | **`+0x10d40`** |
+| `__TEXT.__const` | `0x48a8` | `0x51e8` | **`+0x940`** |
+| `__DATA.__bss` | `0x4548` | `0x4ba8` | **`+0x660`** |
+| `__AUTH_CONST.__const` | `0x4288` | `0x46f8` | **`+0x470`** |
+| `__DATA.__data` | `0x2db8` | `0x31d8` | **`+0x420`** |
+| `__TEXT.__constg_swiftt` | `0x29b4` | `0x2d4c` | **`+0x398`** |
+| `__TEXT.__swift5_typeref` | `0x215e` | `0x24a4` | **`+0x346`** |
+| `__TEXT.__unwind_info` | `0x1cb8` | `0x1fa8` | **`+0x2f0`** |
+| `__TEXT.__swift5_fieldmd` | `0x1b28` | `0x1e0c` | **`+0x2e4`** |
+| `__AUTH.__data` | `0x9f8` | `0xc98` | **`+0x2a0`** |
+| `__AUTH_CONST.__objc_const` | `0x670` | `0x900` | **`+0x290`** |
+| `__TEXT.__swift5_reflstr` | `0x1869` | `0x1ab9` | **`+0x250`** |
+| `__TEXT.__eh_frame` | `0xbdc` | `0xde4` | **`+0x208`** |
+| `__AUTH_CONST.__auth_got` | `0x1750` | `0x18e8` | **`+0x198`** |
+| `__TEXT.__cstring` | `0x1ca3` | `0x1db3` | **`+0x110`** |
+| `__DATA_CONST.__got` | `0xb30` | `0xc38` | **`+0x108`** |
+| `__DATA_CONST.__objc_selrefs` | `0x378` | `0x428` | **`+0xb0`** |
+| `__TEXT.__swift5_assocty` | `0x878` | `0x920` | **`+0xa8`** |
+| `__TEXT.__swift5_capture` | `0x83c` | `0x8c8` | **`+0x8c`** |
+| `__TEXT.__objc_methlist` | `0x294` | `0x2fc` | **`+0x68`** |
+| `__DATA_CONST.__const` | `0xd0` | `0x108` | **`+0x38`** |
+| `__TEXT.__swift5_types` | `0x230` | `0x268` | **`+0x38`** |
+| `__TEXT.__swift5_proto` | `0x240` | `0x270` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0x40` | `0x50` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.45.2.4
--  __TEXT.__text: 0x904fc
--  __TEXT.__objc_methlist: 0x294
--  __TEXT.__const: 0x48a8
 +7027.1.54.2.3
-+  __TEXT.__text: 0xa09e8
-+  __TEXT.__objc_methlist: 0x2fc
-+  __TEXT.__const: 0x51e8
-   __TEXT.__oslogstring: 0x105
--  __TEXT.__cstring: 0x1ca3
--  __TEXT.__constg_swiftt: 0x29b4
--  __TEXT.__swift5_typeref: 0x215e
--  __TEXT.__swift5_reflstr: 0x1869
--  __TEXT.__swift5_assocty: 0x878
--  __TEXT.__swift5_fieldmd: 0x1b28
-+  __TEXT.__cstring: 0x1db3
-+  __TEXT.__constg_swiftt: 0x2d4c
-+  __TEXT.__swift5_typeref: 0x24a4
-+  __TEXT.__swift5_reflstr: 0x1ab9
-+  __TEXT.__swift5_assocty: 0x920
-+  __TEXT.__swift5_fieldmd: 0x1e0c
-   __TEXT.__swift5_builtin: 0xa0
--  __TEXT.__swift5_capture: 0x83c
--  __TEXT.__swift5_proto: 0x240
--  __TEXT.__swift5_types: 0x230
-+  __TEXT.__swift5_capture: 0x8c8
-+  __TEXT.__swift5_proto: 0x270
-+  __TEXT.__swift5_types: 0x268
-   __TEXT.__swift5_mpenum: 0x1c
-   __TEXT.__swift_as_entry: 0x20
-   __TEXT.__swift_as_ret: 0x14
-   __TEXT.__swift_as_cont: 0x24
-   __TEXT.__swift5_protos: 0x18
--  __TEXT.__unwind_info: 0x24b8
--  __TEXT.__eh_frame: 0xbf4
-+  __TEXT.__unwind_info: 0x28c8
-+  __TEXT.__eh_frame: 0xdfc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xd0
--  __DATA_CONST.__objc_classlist: 0x40
-+  __DATA_CONST.__const: 0x108
-+  __DATA_CONST.__objc_classlist: 0x50
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x378
-+  __DATA_CONST.__objc_selrefs: 0x428
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__got: 0xb30
--  __AUTH_CONST.__const: 0x4288
--  __AUTH_CONST.__objc_const: 0x670
-+  __DATA_CONST.__got: 0xc38
-+  __AUTH_CONST.__const: 0x46f8
-+  __AUTH_CONST.__objc_const: 0x900
-   __AUTH_CONST.__objc_intobj: 0x30
--  __AUTH_CONST.__auth_got: 0x1750
-+  __AUTH_CONST.__auth_got: 0x18e8
-   __AUTH.__objc_data: 0x3a0
--  __AUTH.__data: 0x9f8
--  __DATA.__data: 0x2db8
-+  __AUTH.__data: 0xc98
-+  __DATA.__data: 0x31d8
-   __DATA.__common: 0xd8
-   __DATA_DIRTY.__objc_data: 0xa0
-   __DATA_DIRTY.__data: 0x18
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2799
 -  Symbols:   921
 -  CStrings:  122
 +  Functions: 3096
 +  Symbols:   1002
 +  CStrings:  128
- 
 Symbols:
 + _OBJC_CLASS_$_UIScrollEdgeEffectStyle
 + _OBJC_CLASS_$_UIViewController

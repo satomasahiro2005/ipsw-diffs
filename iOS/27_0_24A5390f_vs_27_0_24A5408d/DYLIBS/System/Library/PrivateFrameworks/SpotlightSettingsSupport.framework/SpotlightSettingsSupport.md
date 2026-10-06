@@ -2,68 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/SpotlightSettingsSupport.framework/SpotlightSettingsSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x498c` | `0x5a30` | **`+0x10a4`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3f0` | `0x5a0` | **`+0x1b0`** |
+| `__AUTH_CONST.__cfstring` | `0x880` | `0xa00` | **`+0x180`** |
+| `__TEXT.__cstring` | `0x7c4` | `0x8c7` | **`+0x103`** |
+| `__AUTH_CONST.__objc_const` | `0x578` | `0x648` | **`+0xd0`** |
+| `__TEXT.__objc_methlist` | `0x2cc` | `0x37c` | **`+0xb0`** |
+| `__AUTH_CONST.__objc_intobj` | `—` | `0x78` | **`+0x78`** |
+| `__AUTH.__objc_data` | `0xf0` | `0x140` | **`+0x50`** |
+| `__DATA_CONST.__const` | `0x248` | `0x298` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x1e8` | `0x228` | **`+0x40`** |
+| `__TEXT.__oslogstring` | `0x5a` | `0x9a` | **`+0x40`** |
+| `__AUTH_CONST.__objc_arrayobj` | `—` | `0x30` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x190` | `0x1c0` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0x60` | `0x80` | **`+0x20`** |
+| `__DATA_CONST.__objc_arraydata` | `—` | `0x20` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x30` | `0x38` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x18` | `0x20` | **`+0x8`** |
+| `__TEXT.__const` | `0x70` | `0x78` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x40` | `0x44` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -236.0.11.100.0
--  __TEXT.__text: 0x498c
--  __TEXT.__objc_methlist: 0x2cc
--  __TEXT.__const: 0x70
 +236.0.21.100.0
-+  __TEXT.__text: 0x5a30
-+  __TEXT.__objc_methlist: 0x37c
-+  __TEXT.__const: 0x78
-   __TEXT.__gcc_except_tab: 0xf0
--  __TEXT.__cstring: 0x7c4
-+  __TEXT.__cstring: 0x8c7
-   __TEXT.__dlopen_cstrs: 0x142
--  __TEXT.__oslogstring: 0x5a
--  __TEXT.__unwind_info: 0x190
-+  __TEXT.__oslogstring: 0x9a
-+  __TEXT.__unwind_info: 0x1c0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x248
--  __DATA_CONST.__objc_classlist: 0x30
-+  __DATA_CONST.__const: 0x298
-+  __DATA_CONST.__objc_classlist: 0x38
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3f0
--  __DATA_CONST.__objc_superrefs: 0x18
--  __DATA_CONST.__got: 0x1e8
--  __AUTH_CONST.__const: 0x60
--  __AUTH_CONST.__cfstring: 0x880
--  __AUTH_CONST.__objc_const: 0x578
-+  __DATA_CONST.__objc_selrefs: 0x5a0
-+  __DATA_CONST.__objc_superrefs: 0x20
-+  __DATA_CONST.__objc_arraydata: 0x20
-+  __DATA_CONST.__got: 0x228
-+  __AUTH_CONST.__const: 0x80
-+  __AUTH_CONST.__cfstring: 0xa00
-+  __AUTH_CONST.__objc_const: 0x648
-+  __AUTH_CONST.__objc_intobj: 0x78
-+  __AUTH_CONST.__objc_arrayobj: 0x30
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0xf0
--  __DATA.__objc_ivar: 0x40
-+  __AUTH.__objc_data: 0x140
-+  __DATA.__objc_ivar: 0x44
-   __DATA.__bss: 0x20
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0xf0
 
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 81
--  Symbols:   397
+-  Symbols:   298
 -  CStrings:  87
 +  Functions: 97
-+  Symbols:   482
++  Symbols:   336
 +  CStrings:  103
- 
 Symbols:
 + -[SpotlightPopUpMenuCell .cxx_destruct]
 + -[SpotlightPopUpMenuCell initWithStyle:reuseIdentifier:specifier:]
@@ -102,53 +77,6 @@ Symbols:
 + ___59-[SpotlightPopUpMenuCell refreshCellContentsWithSpecifier:]_block_invoke
 + ___block_descriptor_32_e18_v16?0"UIAction"8l
 + ___block_descriptor_48_e8_32s40s_e18_v16?0"UIAction"8ls32l8s40l8
-+ _objc_msgSend$actionWithTitle:image:identifier:handler:
-+ _objc_msgSend$activateConstraints:
-+ _objc_msgSend$addSubview:
-+ _objc_msgSend$arrayWithCapacity:
-+ _objc_msgSend$buttonWithConfiguration:primaryAction:
-+ _objc_msgSend$centerYAnchor
-+ _objc_msgSend$constraintEqualToAnchor:
-+ _objc_msgSend$contentView
-+ _objc_msgSend$count
-+ _objc_msgSend$currentDevice
-+ _objc_msgSend$hasValidGetter
-+ _objc_msgSend$instancesRespondToSelector:
-+ _objc_msgSend$integerValue
-+ _objc_msgSend$isEqualToNumber:
-+ _objc_msgSend$isSuggestAppsDisabled
-+ _objc_msgSend$isSuggestAppsExpanded
-+ _objc_msgSend$lastObject
-+ _objc_msgSend$layoutMarginsGuide
-+ _objc_msgSend$menuWithChildren:
-+ _objc_msgSend$objectForKeyedSubscript:
-+ _objc_msgSend$performGetter
-+ _objc_msgSend$performSetterWithValue:
-+ _objc_msgSend$plainButtonConfiguration
-+ _objc_msgSend$popUpButton
-+ _objc_msgSend$secondaryLabelColor
-+ _objc_msgSend$setAccessoryType:
-+ _objc_msgSend$setBaseForegroundColor:
-+ _objc_msgSend$setChangesSelectionAsPrimaryAction:
-+ _objc_msgSend$setContentHuggingPriority:forAxis:
-+ _objc_msgSend$setHidden:
-+ _objc_msgSend$setMenu:
-+ _objc_msgSend$setPopUpButton:
-+ _objc_msgSend$setSelectionStyle:
-+ _objc_msgSend$setShowsMenuAsPrimaryAction:
-+ _objc_msgSend$setState:
-+ _objc_msgSend$setTitleLineBreakMode:
-+ _objc_msgSend$setTranslatesAutoresizingMaskIntoConstraints:
-+ _objc_msgSend$setUpPopUpButton
-+ _objc_msgSend$setValues:titles:
-+ _objc_msgSend$specifierAtIndexPath:
-+ _objc_msgSend$suggestAppsCountOptions
-+ _objc_msgSend$superclass
-+ _objc_msgSend$titleDictionary
-+ _objc_msgSend$trailingAnchor
-+ _objc_msgSend$userInterfaceIdiom
-+ _objc_msgSend$valueLabel
-+ _objc_msgSend$values
 + _objc_retain_x28
 CStrings:
 + " "

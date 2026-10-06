@@ -2,39 +2,31 @@
 
 > `com.apple.driver.AppleHIDTransportMailbox`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x18058` | `0x17c98` | **`-0x3c0`** |
+| `__DATA_CONST.__const` | `0x13d8` | `0x12e0` | **`-0xf8`** |
+| `__TEXT.__cstring` | `0x33cc` | `0x3357` | **`-0x75`** |
+| `__DATA_CONST.__kalloc_type` | `0xc0` | `0x80` | **`-0x40`** |
+| `__DATA.__common` | `0x88` | `0x60` | **`-0x28`** |
+| `__TEXT_EXEC.__auth_stubs` | `0x440` | `0x420` | **`-0x20`** |
+| `__DATA_CONST.__auth_got` | `0x220` | `0x210` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0xd0` | `0xc0` | **`-0x10`** |
+| `__TEXT.__const` | `0x11d` | `0x125` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__const: 0x11d
--  __TEXT.__cstring: 0x33cc
--  __TEXT_EXEC.__text: 0x18058
--  __TEXT_EXEC.__auth_stubs: 0x440
-+  __TEXT.__const: 0x125
-+  __TEXT.__cstring: 0x3357
-+  __TEXT_EXEC.__text: 0x17c98
-+  __TEXT_EXEC.__auth_stubs: 0x420
-   __DATA.__data: 0xc8
--  __DATA.__common: 0x88
-+  __DATA.__common: 0x60
-   __DATA_CONST.__mod_init_func: 0x10
-   __DATA_CONST.__mod_term_func: 0x10
--  __DATA_CONST.__const: 0x13d8
--  __DATA_CONST.__kalloc_type: 0xc0
--  __DATA_CONST.__auth_got: 0x220
--  __DATA_CONST.__got: 0xd0
+-10100.38.1.0.0
 -  Functions: 366
-+  __DATA_CONST.__const: 0x12e0
-+  __DATA_CONST.__kalloc_type: 0x80
-+  __DATA_CONST.__auth_got: 0x210
-+  __DATA_CONST.__got: 0xc0
++10100.39.0.0.0
 +  Functions: 357
-   Symbols:   0
+
 -  CStrings:  308
 +  CStrings:  307
- 
-Sections:
-~ __DATA.__data : content changed
-~ __DATA_CONST.__mod_init_func : content changed
-~ __DATA_CONST.__mod_term_func : content changed
 CStrings:
 + "\"[%s::%s] Invalid message type received: %d from polling FIFO %s\" @%s:%d"
 + "1211111212221212111111121121211111111211211211211211211211211211211211211211211211211211211211211211211211211211211211211211211211222122212221222122212221222122212221222122212221222122212221222122221111112211121222"
@@ -67,5 +59,4 @@ CStrings:
 - "drainPollingFifo"
 - "processPollingData"
 - "site.NonPollingFifoDrainEventSource"
-
 ```

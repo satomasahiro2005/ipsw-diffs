@@ -2,111 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/CalendarUIKit.framework/CalendarUIKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x459bd0` | `0x471270` | **`+0x176a0`** |
+| `__TEXT.__swift5_typeref` | `0x42aa6` | `0x4a462` | **`+0x79bc`** |
+| `__AUTH_CONST.__const` | `0x14070` | `0x14ac0` | **`+0xa50`** |
+| `__TEXT.__const` | `0x21a84` | `0x22384` | **`+0x900`** |
+| `__TEXT.__swift5_reflstr` | `0x8099` | `0x8559` | **`+0x4c0`** |
+| `__AUTH_CONST.__objc_const` | `0x13cf8` | `0x141a8` | **`+0x4b0`** |
+| `__DATA.__data` | `0xc130` | `0xc5e0` | **`+0x4b0`** |
+| `__TEXT.__swift5_capture` | `0x4534` | `0x49d4` | **`+0x4a0`** |
+| `__TEXT.__constg_swiftt` | `0xa764` | `0xab8c` | **`+0x428`** |
+| `__DATA_DIRTY.__data` | `0x77b8` | `0x7a50` | **`+0x298`** |
+| `__DATA_DIRTY.__objc_data` | `0x4d20` | `0x4f40` | **`+0x220`** |
+| `__TEXT.__swift5_fieldmd` | `0x834c` | `0x856c` | **`+0x220`** |
+| `__TEXT.__unwind_info` | `0xc480` | `0xc698` | **`+0x218`** |
+| `__TEXT.__cstring` | `0x28619` | `0x28779` | **`+0x160`** |
+| `__AUTH_CONST.__auth_got` | `0x3588` | `0x36c0` | **`+0x138`** |
+| `__TEXT.__eh_frame` | `0xc080` | `0xbf48` | **`-0x138`** |
+| `__DATA_CONST.__got` | `0x2460` | `0x2560` | **`+0x100`** |
+| `__AUTH.__objc_data` | `0x7d8` | `0x8b8` | **`+0xe0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8430` | `0x8508` | **`+0xd8`** |
+| `__TEXT.__objc_methlist` | `0xa738` | `0xa808` | **`+0xd0`** |
+| `__AUTH_CONST.__cfstring` | `0x8d80` | `0x8d00` | **`-0x80`** |
+| `__DATA.__bss` | `0x1e940` | `0x1e9c0` | **`+0x80`** |
+| `__DATA_CONST.__const` | `0x2488` | `0x2508` | **`+0x80`** |
+| `__AUTH.__data` | `0x3028` | `0x3078` | **`+0x50`** |
+| `__TEXT.__swift_as_cont` | `0x5cc` | `0x598` | **`-0x34`** |
+| `__TEXT.__oslogstring` | `0x4db8` | `0x4dd8` | **`+0x20`** |
+| `__TEXT.__swift5_assocty` | `0x1918` | `0x1930` | **`+0x18`** |
+| `__DATA.__common` | `0xb90` | `0xba0` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x28c` | `0x298` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `0x23c` | `0x230` | **`-0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x650` | `0x658` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0xf98` | `0xf94` | **`-0x4`** |
+| `__TEXT.__swift5_types` | `0x704` | `0x708` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1323.0.0.0.0
--  __TEXT.__text: 0x459bd0
--  __TEXT.__objc_methlist: 0xa738
--  __TEXT.__const: 0x21a84
--  __TEXT.__cstring: 0x28619
--  __TEXT.__oslogstring: 0x4db8
 +1327.0.0.0.0
-+  __TEXT.__text: 0x471270
-+  __TEXT.__objc_methlist: 0xa808
-+  __TEXT.__const: 0x22384
-+  __TEXT.__cstring: 0x28779
-+  __TEXT.__oslogstring: 0x4dd8
-   __TEXT.__gcc_except_tab: 0xe74
-   __TEXT.__ustring: 0x204a
-   __TEXT.__dlopen_cstrs: 0x138
--  __TEXT.__constg_swiftt: 0xa764
--  __TEXT.__swift5_typeref: 0x42aa6
-+  __TEXT.__constg_swiftt: 0xab8c
-+  __TEXT.__swift5_typeref: 0x4a462
-   __TEXT.__swift5_builtin: 0x3c0
--  __TEXT.__swift5_reflstr: 0x8099
--  __TEXT.__swift5_fieldmd: 0x834c
--  __TEXT.__swift5_assocty: 0x1918
--  __TEXT.__swift5_proto: 0xf98
--  __TEXT.__swift5_types: 0x704
--  __TEXT.__swift5_capture: 0x4534
-+  __TEXT.__swift5_reflstr: 0x8559
-+  __TEXT.__swift5_fieldmd: 0x856c
-+  __TEXT.__swift5_assocty: 0x1930
-+  __TEXT.__swift5_proto: 0xf94
-+  __TEXT.__swift5_types: 0x708
-+  __TEXT.__swift5_capture: 0x49d4
-   __TEXT.__swift5_protos: 0x94
--  __TEXT.__swift_as_entry: 0x28c
--  __TEXT.__swift_as_ret: 0x23c
--  __TEXT.__swift_as_cont: 0x5cc
-+  __TEXT.__swift_as_entry: 0x298
-+  __TEXT.__swift_as_ret: 0x230
-+  __TEXT.__swift_as_cont: 0x598
-   __TEXT.__swift5_mpenum: 0x28
--  __TEXT.__unwind_info: 0xc480
--  __TEXT.__eh_frame: 0xc080
-+  __TEXT.__unwind_info: 0xc698
-+  __TEXT.__eh_frame: 0xbf48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2488
--  __DATA_CONST.__objc_classlist: 0x650
-+  __DATA_CONST.__const: 0x2508
-+  __DATA_CONST.__objc_classlist: 0x658
-   __DATA_CONST.__objc_catlist: 0xd8
-   __DATA_CONST.__objc_protolist: 0x298
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8430
-+  __DATA_CONST.__objc_selrefs: 0x8508
-   __DATA_CONST.__objc_protorefs: 0x130
-   __DATA_CONST.__objc_superrefs: 0x298
-   __DATA_CONST.__objc_arraydata: 0x1d0
--  __DATA_CONST.__got: 0x2460
--  __AUTH_CONST.__const: 0x14070
--  __AUTH_CONST.__cfstring: 0x8d80
--  __AUTH_CONST.__objc_const: 0x13cf8
-+  __DATA_CONST.__got: 0x2560
-+  __AUTH_CONST.__const: 0x14ac0
-+  __AUTH_CONST.__cfstring: 0x8d00
-+  __AUTH_CONST.__objc_const: 0x141a8
-   __AUTH_CONST.__objc_intobj: 0x450
-   __AUTH_CONST.__objc_arrayobj: 0xa8
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x3588
--  __AUTH.__objc_data: 0x7d8
--  __AUTH.__data: 0x3028
-+  __AUTH_CONST.__auth_got: 0x36c0
-+  __AUTH.__objc_data: 0x8b8
-+  __AUTH.__data: 0x3078
-   __DATA.__objc_ivar: 0x7bc
--  __DATA.__data: 0xc130
--  __DATA.__bss: 0x1e940
--  __DATA.__common: 0xb90
--  __DATA_DIRTY.__objc_data: 0x4d20
--  __DATA_DIRTY.__data: 0x77b8
-+  __DATA.__data: 0xc5e0
-+  __DATA.__bss: 0x1e9c0
-+  __DATA.__common: 0xba0
-+  __DATA_DIRTY.__objc_data: 0x4f40
-+  __DATA_DIRTY.__data: 0x7a50
-   __DATA_DIRTY.__bss: 0x1130
-   __DATA_DIRTY.__common: 0x1c8
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 19792
--  Symbols:   14221
+-  Symbols:   11009
 -  CStrings:  2438
 +  Functions: 20223
-+  Symbols:   14341
++  Symbols:   11103
 +  CStrings:  2436
- 
 Symbols:
 + +[CUIKSplashScreenStrings addEventsWithCameraIcon]
 + +[CUIKSplashScreenStrings addEventsWithCameraText]
@@ -194,32 +140,6 @@ Symbols:
 + _keypath_set.389Tm
 + _keypath_set.38Tm
 + _keypath_set.764Tm
-+ _objc_msgSend$addConferenceRoomToRecents:fromSource:
-+ _objc_msgSend$addToRunLoop:forMode:
-+ _objc_msgSend$begin
-+ _objc_msgSend$bypassSplashScreen
-+ _objc_msgSend$commit
-+ _objc_msgSend$displayLinkWithTarget:selector:
-+ _objc_msgSend$insertAnimatedTextPlaceholderAtLocation:numLines:
-+ _objc_msgSend$isLinwoodCapableIgnoringUserSetting
-+ _objc_msgSend$isMagicComposeSupportedOnDevice
-+ _objc_msgSend$isVisualIntelligenceCameraSupportedOnDevice
-+ _objc_msgSend$lastConfirmedSplashScreenVersion
-+ _objc_msgSend$mainRunLoop
-+ _objc_msgSend$performWithoutChangeNotifications:
-+ _objc_msgSend$removeAnimatedTextPlaceholders
-+ _objc_msgSend$safeAreaInsets
-+ _objc_msgSend$setAnchorPoint:
-+ _objc_msgSend$setDisplayName:
-+ _objc_msgSend$setLastConfirmedSplashScreenVersion:
-+ _objc_msgSend$setMasksToBounds:
-+ _objc_msgSend$setPreferredAddress:
-+ _objc_msgSend$setSelectedDate:forceChange:
-+ _objc_msgSend$setShowsVerticalScrollIndicator:
-+ _objc_msgSend$textRepresentation
-+ _objc_msgSend$timestamp
-+ _objc_msgSend$tintAdjustmentMode
-+ _objc_msgSend$valueWithCATransform3D:
 + _symbolic Say_____G 8EventKit20IntelligentSchedulerC16ResolvedLocationO
 + _symbolic Say_____G So17OS_dispatch_queueC8DispatchE10AttributesV
 + _symbolic ScCySay_____G______pG 8EventKit20IntelligentSchedulerC16ResolvedLocationO s5ErrorP

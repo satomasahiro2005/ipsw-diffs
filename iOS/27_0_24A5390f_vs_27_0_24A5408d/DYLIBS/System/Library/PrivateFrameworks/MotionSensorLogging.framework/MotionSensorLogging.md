@@ -2,28 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/MotionSensorLogging.framework/MotionSensorLogging`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x268808` | `0x26c158` | **`+0x3950`** |
+| `__TEXT.__cstring` | `0x12846` | `0x12aba` | **`+0x274`** |
+
+### Other Changes
+
 ```diff
 
 -3183.0.0.0.0
--  __TEXT.__text: 0x268808
 +3185.0.6.0.1
-+  __TEXT.__text: 0x26c158
-   __TEXT.__objc_methlist: 0x14
-   __TEXT.__const: 0x493a
-   __TEXT.__gcc_except_tab: 0x3cac
-   __TEXT.__oslogstring: 0x450
--  __TEXT.__cstring: 0x12846
-+  __TEXT.__cstring: 0x12aba
-   __TEXT.__unwind_info: 0x68c8
-   __TEXT.__eh_frame: 0x670
-   __TEXT.__objc_stubs: 0x0
 
-   - /usr/lib/libz.1.dylib
-   Functions: 10490
-   Symbols:   11934
 -  CStrings:  3861
 +  CStrings:  3892
- 
 Functions:
 ~ __ZN5CMMsl29CalorieControllerMETsConsumedC2ERKS0_ : 1132 -> 1216
 ~ __ZN5CMMsl4swapERNS_29CalorieControllerMETsConsumedES1_ : 644 -> 692
@@ -86,9 +80,9 @@ Functions:
 ~ __ZN5CMMsl13KappaZgResult8readFromERN2PB6ReaderE : 4740 -> 4984
 ~ __ZNK5CMMsl13KappaZgResult7writeToERN2PB6WriterE : 980 -> 1008
 ~ __ZNK5CMMsl13KappaZgResult10hash_valueEv : 980 -> 1008
-~ sub_292467798 -> sub_29208e034 : 156 -> 168
-~ sub_292469828 -> sub_2920900d0 : 304 -> 384
-~ sub_292469d78 -> sub_292090670 : 764 -> 852
+~ sub_2922fd798 -> sub_291ef3034 : 156 -> 168
+~ sub_2922ff828 -> sub_291ef50d0 : 304 -> 384
+~ sub_2922ffd78 -> sub_291ef5670 : 764 -> 852
 CStrings:
 + "adhrHeartRate"
 + "adhrHeartRateConfidence"

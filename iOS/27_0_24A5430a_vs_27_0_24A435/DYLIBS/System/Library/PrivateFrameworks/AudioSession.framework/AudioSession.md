@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AudioSession.framework/AudioSession`
 
-```diff
+### Section Size Changes
 
- 449.107.0.0.0
--  __TEXT.__text: 0x4f07c
-+  __TEXT.__text: 0x4f098
-   __TEXT.__realtime: 0x178
-   __TEXT.__objc_methlist: 0x2364
-   __TEXT.__gcc_except_tab: 0x9010
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4f07c` | `0x4f098` | **`+0x1c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN8avfaudio17ProxySessionCache11FindSessionEj : 340 -> 348
 ~ __ZNSt3__15dequeIU8__strongP14AVAudioSessionNS_9allocatorIS3_EEE10push_frontERU8__strongKS2_ : 144 -> 152

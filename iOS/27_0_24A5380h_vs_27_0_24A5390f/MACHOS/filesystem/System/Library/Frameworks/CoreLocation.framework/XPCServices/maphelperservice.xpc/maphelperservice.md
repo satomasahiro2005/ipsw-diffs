@@ -2,75 +2,51 @@
 
 > `/System/Library/Frameworks/CoreLocation.framework/XPCServices/maphelperservice.xpc/maphelperservice`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x11810` | `0x12718` | **`+0xf08`** |
+| `__TEXT.__cstring` | `0x1552` | `0x1b11` | **`+0x5bf`** |
+| `__DATA_CONST.__cfstring` | `0x1100` | `0x13a0` | **`+0x2a0`** |
+| `__TEXT.__objc_methname` | `0x1014` | `0x11c5` | **`+0x1b1`** |
+| `__TEXT.__objc_methtype` | `0x5c6` | `0x74e` | **`+0x188`** |
+| `__TEXT.__gcc_except_tab` | `0x1208` | `0x1374` | **`+0x16c`** |
+| `__TEXT.__objc_stubs` | `0xcc0` | `0xd80` | **`+0xc0`** |
+| `__DATA.__objc_selrefs` | `0x438` | `0x470` | **`+0x38`** |
+| `__TEXT.__auth_stubs` | `0x6f0` | `0x720` | **`+0x30`** |
+| `__DATA.__objc_const` | `0x610` | `0x638` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x370` | `0x398` | **`+0x28`** |
+| `__DATA_CONST.__objc_dictobj` | `—` | `0x28` | **`+0x28`** |
+| `__TEXT.__objc_methlist` | `0x304` | `0x324` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0x388` | `0x3a0` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x530` | `0x548` | **`+0x18`** |
+| `__DATA_CONST.__objc_arraydata` | `—` | `0x10` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -3176.0.0.0.0
--  __TEXT.__text: 0x11810
--  __TEXT.__auth_stubs: 0x6f0
--  __TEXT.__objc_stubs: 0xcc0
--  __TEXT.__objc_methlist: 0x304
 +3183.0.0.0.0
-+  __TEXT.__text: 0x12718
-+  __TEXT.__auth_stubs: 0x720
-+  __TEXT.__objc_stubs: 0xd80
-+  __TEXT.__objc_methlist: 0x324
-   __TEXT.__const: 0x3b8
--  __TEXT.__gcc_except_tab: 0x1208
--  __TEXT.__cstring: 0x1552
-+  __TEXT.__gcc_except_tab: 0x1374
-+  __TEXT.__cstring: 0x1b11
-   __TEXT.__oslogstring: 0x673
-   __TEXT.__objc_classname: 0x8a
--  __TEXT.__objc_methname: 0x1014
--  __TEXT.__objc_methtype: 0x5c6
--  __TEXT.__unwind_info: 0x530
--  __DATA_CONST.__const: 0x370
--  __DATA_CONST.__cfstring: 0x1100
-+  __TEXT.__objc_methname: 0x11c5
-+  __TEXT.__objc_methtype: 0x74e
-+  __TEXT.__unwind_info: 0x548
-+  __DATA_CONST.__const: 0x398
-+  __DATA_CONST.__cfstring: 0x13a0
-   __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__auth_got: 0x388
-+  __DATA_CONST.__objc_arraydata: 0x10
-+  __DATA_CONST.__objc_dictobj: 0x28
-+  __DATA_CONST.__auth_got: 0x3a0
-   __DATA_CONST.__got: 0xc0
-   __DATA_CONST.__auth_ptr: 0x8
--  __DATA.__objc_const: 0x610
--  __DATA.__objc_selrefs: 0x438
-+  __DATA.__objc_const: 0x638
-+  __DATA.__objc_selrefs: 0x470
-   __DATA.__objc_ivar: 0x2c
-   __DATA.__objc_data: 0xf0
-   __DATA.__data: 0xa28
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libprotobuf.dylib
 -  Functions: 233
 -  Symbols:   247
 -  CStrings:  356
 +  Functions: 237
 +  Symbols:   251
 +  CStrings:  398
- 
 Symbols:
 + _OBJC_CLASS_$_NSConstantDictionary
 + __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE21__grow_by_and_replaceEmmmmmmPKc

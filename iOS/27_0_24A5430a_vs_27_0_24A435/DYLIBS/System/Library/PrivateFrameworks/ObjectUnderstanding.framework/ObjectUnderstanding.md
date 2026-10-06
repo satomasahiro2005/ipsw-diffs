@@ -2,32 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/ObjectUnderstanding.framework/ObjectUnderstanding`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x97828` | `0x97798` | **`-0x90`** |
+| `__TEXT.__unwind_info` | `0x2b40` | `0x2b38` | **`-0x8`** |
+| `__TEXT.__gcc_except_tab` | `0xcff4` | `0xcff8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
- 4.3.0.0.0
--  __TEXT.__text: 0x97828
-+  __TEXT.__text: 0x97798
-   __TEXT.__init_offsets: 0x34
-   __TEXT.__objc_methlist: 0x1568
-   __TEXT.__const: 0x1b50
--  __TEXT.__gcc_except_tab: 0xcff4
-+  __TEXT.__gcc_except_tab: 0xcff8
-   __TEXT.__cstring: 0x23d4
-   __TEXT.__oslogstring: 0x23c3
--  __TEXT.__unwind_info: 0x2b40
-+  __TEXT.__unwind_info: 0x2b38
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1822
 +  Functions: 1820
-   Symbols:   3528
-   CStrings:  665
- 
 Functions:
 ~ __ZN23OU3DKitchenObjectMerger18AlignStoveWithOvenEv : 772 -> 784
 ~ __ZN23OU3DKitchenObjectMerger23AlignSinkWithDishwasherEv : 1212 -> 1224

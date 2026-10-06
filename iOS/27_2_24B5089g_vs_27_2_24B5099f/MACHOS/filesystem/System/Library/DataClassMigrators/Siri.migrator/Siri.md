@@ -2,65 +2,45 @@
 
 > `/System/Library/DataClassMigrators/Siri.migrator/Siri`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x415c` | `0x4734` | **`+0x5d8`** |
+| `__TEXT.__oslogstring` | `0xc42` | `0xf28` | **`+0x2e6`** |
+| `__TEXT.__objc_methname` | `0x965` | `0xbc6` | **`+0x261`** |
+| `__TEXT.__objc_stubs` | `0xb20` | `0xc60` | **`+0x140`** |
+| `__TEXT.__cstring` | `0x968` | `0xa14` | **`+0xac`** |
+| `__DATA_CONST.__cfstring` | `0x6e0` | `0x740` | **`+0x60`** |
+| `__TEXT.__objc_methlist` | `0x1c4` | `0x218` | **`+0x54`** |
+| `__DATA.__objc_selrefs` | `0x2f0` | `0x340` | **`+0x50`** |
+| `__TEXT.__objc_methtype` | `0x47` | `0x90` | **`+0x49`** |
+| `__TEXT.__auth_stubs` | `0x4a0` | `0x4c0` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0x258` | `0x268` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0xd8` | `0xe8` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x130` | `0x138` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_const`
 - `__DATA.__objc_data`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -3605.24.1.1.1
--  __TEXT.__text: 0x40fc
--  __TEXT.__auth_stubs: 0x4a0
--  __TEXT.__objc_stubs: 0xb20
--  __TEXT.__objc_methlist: 0x1c4
 +3605.30.1.1.1
-+  __TEXT.__text: 0x46bc
-+  __TEXT.__auth_stubs: 0x4c0
-+  __TEXT.__objc_stubs: 0xc60
-+  __TEXT.__objc_methlist: 0x218
-   __TEXT.__const: 0x34
--  __TEXT.__cstring: 0x968
--  __TEXT.__oslogstring: 0xc42
-+  __TEXT.__cstring: 0xa14
-+  __TEXT.__oslogstring: 0xf28
-   __TEXT.__objc_classname: 0xd
--  __TEXT.__objc_methname: 0x965
--  __TEXT.__objc_methtype: 0x47
--  __TEXT.__unwind_info: 0x100
-+  __TEXT.__objc_methname: 0xbc6
-+  __TEXT.__objc_methtype: 0x90
-+  __TEXT.__unwind_info: 0x118
-   __DATA_CONST.__const: 0x10
--  __DATA_CONST.__cfstring: 0x6e0
-+  __DATA_CONST.__cfstring: 0x740
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_intobj: 0x48
--  __DATA_CONST.__auth_got: 0x258
--  __DATA_CONST.__got: 0x130
-+  __DATA_CONST.__auth_got: 0x268
-+  __DATA_CONST.__got: 0x138
-   __DATA.__objc_const: 0x90
--  __DATA.__objc_selrefs: 0x2f0
-+  __DATA.__objc_selrefs: 0x340
-   __DATA.__objc_data: 0x50
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 39
 -  Symbols:   124
 -  CStrings:  238
 +  Functions: 46
 +  Symbols:   126
 +  CStrings:  262
- 
 Symbols:
 + _objc_release_x28
 + _objc_retain_x5

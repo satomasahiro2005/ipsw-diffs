@@ -2,67 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/ASOctaneSupport.framework/ASOctaneSupport`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2e24` | `0xb20` | **`-0x2304`** |
+| `__TEXT.__objc_methlist` | `0x46c` | `0x1dc` | **`-0x290`** |
+| `__TEXT.__gcc_except_tab` | `0x2a4` | `0x74` | **`-0x230`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2f8` | `0x140` | **`-0x1b8`** |
+| `__TEXT.__unwind_info` | `0x270` | `0xd0` | **`-0x1a0`** |
+| `__DATA_CONST.__const` | `0x1d8` | `0xe8` | **`-0xf0`** |
+| `__AUTH_CONST.__objc_const` | `0x2b8` | `0x1e0` | **`-0xd8`** |
+| `__TEXT.__cstring` | `0x138` | `0xd8` | **`-0x60`** |
+| `__AUTH_CONST.__const` | `0x60` | `0x20` | **`-0x40`** |
+| `__DATA_CONST.__got` | `0x48` | `0x20` | **`-0x28`** |
+| `__AUTH_CONST.__cfstring` | `0xa0` | `0x80` | **`-0x20`** |
+| `__TEXT.__const` | `0x18` | `0x10` | **`-0x8`** |
+
+### Other Changes
 
 ```diff
 
 -816.0.38.0.0
--  __TEXT.__text: 0x2e24
--  __TEXT.__objc_methlist: 0x46c
--  __TEXT.__const: 0x18
--  __TEXT.__gcc_except_tab: 0x2a4
--  __TEXT.__cstring: 0x138
--  __TEXT.__unwind_info: 0x270
 +816.0.41.0.0
-+  __TEXT.__text: 0xb20
-+  __TEXT.__objc_methlist: 0x1dc
-+  __TEXT.__const: 0x10
-+  __TEXT.__gcc_except_tab: 0x74
-+  __TEXT.__cstring: 0xd8
-+  __TEXT.__unwind_info: 0xd0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1d8
-+  __DATA_CONST.__const: 0xe8
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2f8
-+  __DATA_CONST.__objc_selrefs: 0x140
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__got: 0x48
--  __AUTH_CONST.__const: 0x60
--  __AUTH_CONST.__cfstring: 0xa0
--  __AUTH_CONST.__objc_const: 0x2b8
-+  __DATA_CONST.__got: 0x20
-+  __AUTH_CONST.__const: 0x20
-+  __AUTH_CONST.__cfstring: 0x80
-+  __AUTH_CONST.__objc_const: 0x1e0
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__objc_ivar: 0x4
-   __DATA.__data: 0xc0
 
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 78
--  Symbols:   231
+-  Symbols:   189
 -  CStrings:  12
 +  Functions: 22
-+  Symbols:   109
++  Symbols:   96
 +  CStrings:  8
- 
 Symbols:
 + GCC_except_table10
 + GCC_except_table12
@@ -161,35 +130,6 @@ Symbols:
 - ___block_descriptor_40_e8_32r_e22_v16?0"NSDictionary"8lr32l8
 - ___block_descriptor_40_e8_32r_e8_v16?0q8lr32l8
 - ___block_descriptor_48_e8_32s40s_e17_v16?0"NSError"8ls32l8s40l8
-- _objc_msgSend$appRemovedWithBundleID:withReply:
-- _objc_msgSend$buyProductWithConfiguration:withReply:
-- _objc_msgSend$buyProductWithID:bundleID:withReply:
-- _objc_msgSend$cancelTransactionWithIdentifier:forBundleID:withReply:
-- _objc_msgSend$changeAutoRenewStatus:transactionID:bundleID:withReply:
-- _objc_msgSend$clearOverridesForBundleID:withReply:
-- _objc_msgSend$completeAskToBuyRequestWithResponse:transactionIdentifier:forBundleID:withReply:
-- _objc_msgSend$completePriceConsentRequestWithResponse:transactionIdentifier:forBundleID:withReply:
-- _objc_msgSend$deleteTransactionWithIdentifier:forBundleID:withReply:
-- _objc_msgSend$expireOrRenewSubscriptionWithIdentifier:expire:forBundleID:withReply:
-- _objc_msgSend$getIntegerValueForIdentifier:forBundleID:withReply:
-- _objc_msgSend$getPortWithReply:
-- _objc_msgSend$getStorefrontForBundleID:withReply:
-- _objc_msgSend$getTransactionDataForBundleID:withReply:
-- _objc_msgSend$messageForBundleID:withReply:
-- _objc_msgSend$messageOfTypeForBundleID:messageReason:withReply:
-- _objc_msgSend$refundTransactionWithIdentifier:forBundleID:withReply:
-- _objc_msgSend$registerForEventOfType:filterData:withReply:
-- _objc_msgSend$resolveIssueForTransactionWithIdentifier:forBundleID:withReply:
-- _objc_msgSend$setClasses:forSelector:argumentIndex:ofReply:
-- _objc_msgSend$setIntegerValue:forIdentifier:forBundleID:withReply:
-- _objc_msgSend$setStoreKitError:forCategory:bundleID:withReply:
-- _objc_msgSend$setStorefront:forBundleID:withReply:
-- _objc_msgSend$setStringValue:forIdentifier:forBundleID:withReply:
-- _objc_msgSend$setWithObjects:
-- _objc_msgSend$startPriceIncreaseForTransactionID:bundleID:needsConsent:withReply:
-- _objc_msgSend$startServingConfiguration:forBundleID:withReply:
-- _objc_msgSend$storeKitErrorForCategory:bundleID:withReply:
-- _objc_msgSend$unregisterForEventWithIdentifier:
 - _objc_opt_class
 - _objc_release_x22
 - _objc_retain_x22

@@ -2,102 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/AppleAccountTransparency.framework/AppleAccountTransparency`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4f2fc` | `0x50778` | **`+0x147c`** |
+| `__DATA_DIRTY.__data` | `0x20` | `0xa48` | **`+0xa28`** |
+| `__DATA_DIRTY.__bss` | `—` | `0x980` | **`+0x980`** |
+| `__DATA.__bss` | `0x2080` | `0x1800` | **`-0x880`** |
+| `__AUTH.__data` | `0x9d8` | `0x268` | **`-0x770`** |
+| `__TEXT.__cstring` | `0x1689` | `0x1929` | **`+0x2a0`** |
+| `__TEXT.__const` | `0x2ac0` | `0x2d00` | **`+0x240`** |
+| `__AUTH_CONST.__const` | `0x2208` | `0x2438` | **`+0x230`** |
+| `__DATA.__data` | `0x778` | `0x5b8` | **`-0x1c0`** |
+| `__AUTH.__objc_data` | `0x4f8` | `0x370` | **`-0x188`** |
+| `__DATA_DIRTY.__objc_data` | `—` | `0x188` | **`+0x188`** |
+| `__TEXT.__eh_frame` | `0x44b8` | `0x43c0` | **`-0xf8`** |
+| `__TEXT.__oslogstring` | `0x2beb` | `0x2cdc` | **`+0xf1`** |
+| `__TEXT.__constg_swiftt` | `0xce8` | `0xdbc` | **`+0xd4`** |
+| `__TEXT.__swift5_typeref` | `0x1007` | `0x10d7` | **`+0xd0`** |
+| `__TEXT.__swift5_reflstr` | `0xab2` | `0xb72` | **`+0xc0`** |
+| `__TEXT.__swift5_fieldmd` | `0xafc` | `0xbb4` | **`+0xb8`** |
+| `__DATA.__common` | `0x70` | `0x8` | **`-0x68`** |
+| `__DATA_DIRTY.__common` | `—` | `0x68` | **`+0x68`** |
+| `__TEXT.__swift_as_cont` | `0x1f0` | `0x190` | **`-0x60`** |
+| `__AUTH_CONST.__objc_const` | `0x18d0` | `0x1908` | **`+0x38`** |
+| `__TEXT.__swift5_capture` | `0x708` | `0x734` | **`+0x2c`** |
+| `__AUTH_CONST.__auth_got` | `0x9c8` | `0x9f0` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x1478` | `0x14a0` | **`+0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0x440` | `0x450` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x150` | `0x160` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0xa8` | `0xb8` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x88` | `0x90` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x198` | `0x1a0` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x50` | `0x54` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x1a4` | `0x1a8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x4f2fc
-+  __TEXT.__text: 0x50778
-   __TEXT.__objc_methlist: 0x3f8
--  __TEXT.__const: 0x2ac0
--  __TEXT.__constg_swiftt: 0xce8
--  __TEXT.__swift5_typeref: 0x1007
-+  __TEXT.__const: 0x2d00
-+  __TEXT.__constg_swiftt: 0xdbc
-+  __TEXT.__swift5_typeref: 0x10d7
-   __TEXT.__swift5_builtin: 0x50
--  __TEXT.__swift5_reflstr: 0xab2
--  __TEXT.__swift5_fieldmd: 0xafc
--  __TEXT.__swift5_types: 0xa8
--  __TEXT.__oslogstring: 0x2beb
--  __TEXT.__swift5_protos: 0x50
--  __TEXT.__swift5_proto: 0x150
--  __TEXT.__cstring: 0x1689
--  __TEXT.__swift5_capture: 0x708
--  __TEXT.__swift_as_entry: 0x198
--  __TEXT.__swift_as_ret: 0x1a4
--  __TEXT.__swift_as_cont: 0x1f0
-+  __TEXT.__swift5_reflstr: 0xb72
-+  __TEXT.__swift5_fieldmd: 0xbb4
-+  __TEXT.__swift5_types: 0xb8
-+  __TEXT.__oslogstring: 0x2cdc
-+  __TEXT.__swift5_protos: 0x54
-+  __TEXT.__swift5_proto: 0x160
-+  __TEXT.__cstring: 0x1929
-+  __TEXT.__swift5_capture: 0x734
-+  __TEXT.__swift_as_entry: 0x1a0
-+  __TEXT.__swift_as_ret: 0x1a8
-+  __TEXT.__swift_as_cont: 0x190
-   __TEXT.__swift5_assocty: 0x108
-   __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__unwind_info: 0x1478
--  __TEXT.__eh_frame: 0x44b8
-+  __TEXT.__unwind_info: 0x14a0
-+  __TEXT.__eh_frame: 0x43c0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x98
--  __DATA_CONST.__objc_classlist: 0x88
-+  __DATA_CONST.__objc_classlist: 0x90
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x440
-+  __DATA_CONST.__objc_selrefs: 0x450
-   __DATA_CONST.__objc_protorefs: 0x40
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2208
--  __AUTH_CONST.__objc_const: 0x18d0
--  __AUTH_CONST.__auth_got: 0x9c8
--  __AUTH.__objc_data: 0x4f8
--  __AUTH.__data: 0x9d8
--  __DATA.__data: 0x778
--  __DATA.__common: 0x70
--  __DATA.__bss: 0x2080
--  __DATA_DIRTY.__data: 0x20
-+  __AUTH_CONST.__const: 0x2438
-+  __AUTH_CONST.__objc_const: 0x1908
-+  __AUTH_CONST.__auth_got: 0x9f0
-+  __AUTH.__objc_data: 0x370
-+  __AUTH.__data: 0x268
-+  __DATA.__data: 0x5b8
-+  __DATA.__bss: 0x1800
-+  __DATA.__common: 0x8
-+  __DATA_DIRTY.__objc_data: 0x188
-+  __DATA_DIRTY.__data: 0xa48
-+  __DATA_DIRTY.__common: 0x68
-+  __DATA_DIRTY.__bss: 0x980
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+-442.0.0.0.0
++444.0.0.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1339
--  Symbols:   1168
+-  Symbols:   651
 -  CStrings:  274
 +  Functions: 1361
-+  Symbols:   1200
++  Symbols:   674
 +  CStrings:  283
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
 Symbols:
 + _CFPreferencesGetAppBooleanValue
 + __DATA__TtC24AppleAccountTransparency34AATSEARForceNotTransparentProvider
@@ -115,8 +68,6 @@ Symbols:
 + ___swift_memcpy40_8
 + ___swift_memcpy80_8
 + _associated conformance 24AppleAccountTransparency13AATSyncReasonOSHAASQ
-+ _objc_msgSend$initWithUnsignedInteger:
-+ _objc_msgSend$tableInfoForTable:withExecutor:
 + _symbolic $s24AppleAccountTransparency23AETransparencyProvidingP
 + _symbolic BA__________SS______pIeNghHgILgyozo_ 12Transparency28AETransparencyRequestContextC s6UInt64V s5ErrorP
 + _symbolic BA_____________________pIeNghHgILggozo_ 12Transparency28AETransparencyRequestContextC AA014AETVerifyProofC0C AA0eF8ResponseC s5ErrorP
@@ -188,5 +139,4 @@ CStrings:
 - "[AATVerificationCoordinator]: Persisted verified tree head timestamp"
 - "[AATVerificationCoordinator]: Updated %ld verification state(s)"
 - "[AATVerificationCoordinator]: Verification or persistence failed: %@"
-
 ```

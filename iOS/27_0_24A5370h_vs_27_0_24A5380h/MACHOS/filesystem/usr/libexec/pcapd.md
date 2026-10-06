@@ -2,75 +2,51 @@
 
 > `/usr/libexec/pcapd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd2b8` | `0xe1b0` | **`+0xef8`** |
+| `__TEXT.__cstring` | `0xe14` | `0x1244` | **`+0x430`** |
+| `__TEXT.__oslogstring` | `0x2644` | `0x2934` | **`+0x2f0`** |
+| `__TEXT.__auth_stubs` | `0xcc0` | `0xd60` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x4b8` | `0x548` | **`+0x90`** |
+| `__DATA.__data` | `0x310` | `0x388` | **`+0x78`** |
+| `__DATA_CONST.__auth_got` | `0x668` | `0x6b8` | **`+0x50`** |
+| `__DATA_CONST.__cfstring` | `—` | `0x40` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x238` | `0x278` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0xf0` | `0x108` | **`+0x18`** |
+| `__DATA.__bss` | `0x10f0` | `0x10e0` | **`-0x10`** |
+| `__TEXT.__const` | `0x1ba` | `0x1ca` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_classlist`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xd2b8
--  __TEXT.__auth_stubs: 0xcc0
-+  __TEXT.__text: 0xe1b0
-+  __TEXT.__auth_stubs: 0xd60
-   __TEXT.__objc_stubs: 0x40
-   __TEXT.__objc_methlist: 0x2c
--  __TEXT.__const: 0x1ba
--  __TEXT.__cstring: 0xe14
--  __TEXT.__oslogstring: 0x2644
-+  __TEXT.__const: 0x1ca
-+  __TEXT.__cstring: 0x1244
-+  __TEXT.__oslogstring: 0x2934
-   __TEXT.__swift5_typeref: 0xc2
-   __TEXT.__swift5_capture: 0x5c
-   __TEXT.__objc_methname: 0x3b
+-73.0.0.0.0
++76.0.0.0.0
 
-   __TEXT.__swift_as_entry: 0xc
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x10
--  __TEXT.__unwind_info: 0x238
-+  __TEXT.__unwind_info: 0x278
-   __TEXT.__eh_frame: 0x118
--  __DATA_CONST.__const: 0x4b8
-+  __DATA_CONST.__const: 0x548
-+  __DATA_CONST.__cfstring: 0x40
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x668
--  __DATA_CONST.__got: 0xf0
-+  __DATA_CONST.__auth_got: 0x6b8
-+  __DATA_CONST.__got: 0x108
-   __DATA_CONST.__auth_ptr: 0x40
-   __DATA.__objc_const: 0x98
-   __DATA.__objc_selrefs: 0x20
-   __DATA.__objc_data: 0xd8
--  __DATA.__data: 0x310
-+  __DATA.__data: 0x388
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x10f0
-+  __DATA.__bss: 0x10e0
-   __DATA.__common: 0x14
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 217
 -  Symbols:   268
--  CStrings:  376
+-  CStrings:  375
 +  Functions: 235
 +  Symbols:   282
-+  CStrings:  411
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__objc_data : content changed
++  CStrings:  409
 Symbols:
 + _CFArrayContainsValue
 + _CFArrayCreate
@@ -173,5 +149,4 @@ CStrings:
 - "handle_pcapd_service"
 - "handle_pcapd_service_block_invoke"
 - "pcapd_open_bpf_device"
-
 ```

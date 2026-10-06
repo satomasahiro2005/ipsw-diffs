@@ -2,97 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/PhotoLibraryServices.framework/PhotoLibraryServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x75938c` | `0x75dbb8` | **`+0x482c`** |
+| `__TEXT.__oslogstring` | `0x86cd2` | `0x877db` | **`+0xb09`** |
+| `__TEXT.__cstring` | `0x6d598` | `0x6d9fb` | **`+0x463`** |
+| `__AUTH_CONST.__objc_const` | `0x705e8` | `0x70958` | **`+0x370`** |
+| `__TEXT.__gcc_except_tab` | `0x2066c` | `0x208a0` | **`+0x234`** |
+| `__TEXT.__objc_methlist` | `0x452d4` | `0x45484` | **`+0x1b0`** |
+| `__AUTH_CONST.__cfstring` | `0x53160` | `0x53300` | **`+0x1a0`** |
+| `__AUTH.__objc_data` | `0x131a0` | `0x13290` | **`+0xf0`** |
+| `__AUTH_CONST.__objc_intobj` | `0x5418` | `0x54f0` | **`+0xd8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x250b8` | `0x25180` | **`+0xc8`** |
+| `__TEXT.__unwind_info` | `0x168a0` | `0x16938` | **`+0x98`** |
+| `__TEXT.__dlopen_cstrs` | `0xb28` | `0xabb` | **`-0x6d`** |
+| `__DATA_CONST.__got` | `0x5290` | `0x52d8` | **`+0x48`** |
+| `__DATA_CONST.__const` | `0x16720` | `0x16758` | **`+0x38`** |
+| `__DATA_CONST.__objc_arraydata` | `0x1dc0` | `0x1df8` | **`+0x38`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x14d0` | `0x1500` | **`+0x30`** |
+| `__DATA.__bss` | `0x3c10` | `0x3be0` | **`-0x30`** |
+| `__TEXT.__eh_frame` | `0x11a8` | `0x11d0` | **`+0x28`** |
+| `__AUTH_CONST.__auth_got` | `0x2b50` | `0x2b70` | **`+0x20`** |
+| `__AUTH_CONST.__const` | `0xa598` | `0xa578` | **`-0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x23e8` | `0x2400` | **`+0x18`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x180` | `0x190` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x3e44` | `0x3e54` | **`+0x10`** |
+| `__TEXT.__const` | `0x74f0` | `0x7500` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -916.45.110.0.0
--  __TEXT.__text: 0x73e3f8
 +916.51.202.0.0
-+  __TEXT.__text: 0x742bac
-   __TEXT.__delay_stubs: 0x40
-   __TEXT.__delay_helper: 0xa4
--  __TEXT.__objc_methlist: 0x452d4
--  __TEXT.__const: 0x74f0
--  __TEXT.__dlopen_cstrs: 0xb28
-+  __TEXT.__objc_methlist: 0x45484
-+  __TEXT.__const: 0x7500
-+  __TEXT.__dlopen_cstrs: 0xabb
-   __TEXT.__swift5_typeref: 0x131a
--  __TEXT.__cstring: 0x6d598
-+  __TEXT.__cstring: 0x6d9fb
-   __TEXT.__swift5_capture: 0x188c
-   __TEXT.__constg_swiftt: 0x400
-   __TEXT.__swift5_builtin: 0xc8
 
-   __TEXT.__swift5_assocty: 0xd8
-   __TEXT.__swift5_proto: 0xa4
-   __TEXT.__swift5_types: 0x54
--  __TEXT.__oslogstring: 0x86cd2
-+  __TEXT.__oslogstring: 0x877db
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__gcc_except_tab: 0x2066c
-+  __TEXT.__gcc_except_tab: 0x208a0
-   __TEXT.__ustring: 0xa3a
--  __TEXT.__unwind_info: 0x1acc8
--  __TEXT.__eh_frame: 0x11a8
-+  __TEXT.__unwind_info: 0x1ad58
-+  __TEXT.__eh_frame: 0x11d0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x16720
--  __DATA_CONST.__objc_classlist: 0x23e8
-+  __DATA_CONST.__const: 0x16758
-+  __DATA_CONST.__objc_classlist: 0x2400
-   __DATA_CONST.__objc_catlist: 0xf8
-   __DATA_CONST.__objc_protolist: 0x768
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x250b8
-+  __DATA_CONST.__objc_selrefs: 0x25180
-   __DATA_CONST.__objc_protorefs: 0xc8
-   __DATA_CONST.__objc_superrefs: 0x1590
--  __DATA_CONST.__objc_arraydata: 0x1dc0
--  __DATA_CONST.__got: 0x5290
--  __AUTH_CONST.__const: 0xa598
--  __AUTH_CONST.__cfstring: 0x53160
--  __AUTH_CONST.__objc_const: 0x705e8
-+  __DATA_CONST.__objc_arraydata: 0x1df8
-+  __DATA_CONST.__got: 0x52d8
-+  __AUTH_CONST.__const: 0xa578
-+  __AUTH_CONST.__cfstring: 0x53300
-+  __AUTH_CONST.__objc_const: 0x70958
-   __AUTH_CONST.__weak_auth_got: 0x28
--  __AUTH_CONST.__objc_intobj: 0x5418
--  __AUTH_CONST.__objc_arrayobj: 0x14d0
--  __AUTH_CONST.__objc_doubleobj: 0x180
-+  __AUTH_CONST.__objc_intobj: 0x54f0
-+  __AUTH_CONST.__objc_arrayobj: 0x1500
-+  __AUTH_CONST.__objc_doubleobj: 0x190
-   __AUTH_CONST.__objc_dictobj: 0x320
-   __AUTH_CONST.__objc_floatobj: 0x40
--  __AUTH_CONST.__auth_got: 0x2b50
--  __AUTH.__objc_data: 0x131a0
-+  __AUTH_CONST.__auth_got: 0x2b70
-+  __AUTH.__objc_data: 0x13290
-   __AUTH.__data: 0x358
--  __DATA.__objc_ivar: 0x3e44
-+  __DATA.__objc_ivar: 0x3e54
-   __DATA.__data: 0x7094
-   __DATA.__crash_info: 0x148
-   __DATA.__common: 0x4
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 29240
 -  Symbols:   48337
 -  CStrings:  21958
 +  Functions: 29275
 +  Symbols:   48396
 +  CStrings:  21997
- 
 Symbols:
 + +[PLAssetsdResourceService(Testing) pl_openRegularFileForClientAtPath:libraryRootURL:isSystemLibrary:auditToken:]
 + +[PLBackgroundModelMigration skipAllBackgroundActionsForNewlyCreatedLibraryIfNeededWithPathManager:error:]

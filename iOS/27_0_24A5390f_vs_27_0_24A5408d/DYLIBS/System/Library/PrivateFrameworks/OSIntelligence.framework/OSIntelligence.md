@@ -2,63 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/OSIntelligence.framework/OSIntelligence`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a5e8` | `0x1b5dc` | **`+0xff4`** |
+| `__TEXT.__oslogstring` | `0x2609` | `0x2820` | **`+0x217`** |
+| `__TEXT.__cstring` | `0x1a4a` | `0x1b54` | **`+0x10a`** |
+| `__AUTH_CONST.__cfstring` | `0x1580` | `0x1660` | **`+0xe0`** |
+| `__TEXT.__objc_methlist` | `0x2290` | `0x2338` | **`+0xa8`** |
+| `__AUTH_CONST.__objc_const` | `0x30e8` | `0x3188` | **`+0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1208` | `0x1278` | **`+0x70`** |
+| `__TEXT.__unwind_info` | `0x9b8` | `0x9e8` | **`+0x30`** |
+| `__TEXT.__gcc_except_tab` | `0x6a8` | `0x6c8` | **`+0x20`** |
+| `__TEXT.__const` | `0x1a8` | `0x1b8` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x1d8` | `0x1e4` | **`+0xc`** |
+| `__DATA_CONST.__got` | `0x1f0` | `0x1f8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -284.0.0.0.0
--  __TEXT.__text: 0x1a5e8
--  __TEXT.__objc_methlist: 0x2290
--  __TEXT.__const: 0x1a8
--  __TEXT.__cstring: 0x1a4a
--  __TEXT.__oslogstring: 0x2609
--  __TEXT.__gcc_except_tab: 0x6a8
--  __TEXT.__unwind_info: 0x9b8
 +286.0.0.0.0
-+  __TEXT.__text: 0x1b5dc
-+  __TEXT.__objc_methlist: 0x2338
-+  __TEXT.__const: 0x1b8
-+  __TEXT.__cstring: 0x1b54
-+  __TEXT.__oslogstring: 0x2820
-+  __TEXT.__gcc_except_tab: 0x6c8
-+  __TEXT.__unwind_info: 0x9e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0xd8
-   __DATA_CONST.__objc_protolist: 0x78
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1208
-+  __DATA_CONST.__objc_selrefs: 0x1278
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0xa8
-   __DATA_CONST.__objc_arraydata: 0x8
--  __DATA_CONST.__got: 0x1f0
-+  __DATA_CONST.__got: 0x1f8
-   __AUTH_CONST.__const: 0x7a0
--  __AUTH_CONST.__cfstring: 0x1580
--  __AUTH_CONST.__objc_const: 0x30e8
-+  __AUTH_CONST.__cfstring: 0x1660
-+  __AUTH_CONST.__objc_const: 0x3188
-   __AUTH_CONST.__objc_intobj: 0x78
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0x1e0
--  __DATA.__objc_ivar: 0x1d8
-+  __DATA.__objc_ivar: 0x1e4
-   __DATA.__data: 0x5a0
-   __DATA.__bss: 0x10
-   __DATA_DIRTY.__objc_data: 0x690
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 921
--  Symbols:   1786
+-  Symbols:   1404
 -  CStrings:  438
 +  Functions: 938
-+  Symbols:   1814
++  Symbols:   1424
 +  CStrings:  455
- 
 Symbols:
 + -[_OSBatteryPredictor currentBatteryDrainAggregatedOverTimeWidth:withError:]
 + -[_OSBatteryPredictor typicalBatteryDrainWithReferenceDays:aggregatedOverTimeWidth:withError:]
@@ -79,17 +52,7 @@ Symbols:
 + ___76-[_OSBatteryPredictor currentBatteryDrainAggregatedOverTimeWidth:withError:]_block_invoke
 + ___94-[_OSBatteryPredictor typicalBatteryDrainWithReferenceDays:aggregatedOverTimeWidth:withError:]_block_invoke
 + ___NSArray0__struct
-+ _objc_msgSend$array
-+ _objc_msgSend$currentBatteryDrainAggregatedOverTimeWidth:withError:
-+ _objc_msgSend$currentBatteryDrainAggregatedOverTimeWidth:withHandler:
-+ _objc_msgSend$doubleValueForTrialFactor:withDefault:
-+ _objc_msgSend$isCurrentDrainUnusual
-+ _objc_msgSend$recentUnusualDrainPostDatesWithinWindow
-+ _objc_msgSend$recordUnusualDrainPostAtDate:
-+ _objc_msgSend$typicalBatteryDrainWithReferenceDays:aggregatedOverTimeWidth:withError:
-+ _objc_msgSend$typicalBatteryDrainWithReferenceDays:aggregatedOverTimeWidth:withHandler:
 + _objc_retain_x26
-- _objc_msgSend$distantPast
 CStrings:
 + "Drain check slot %lu (hour %lu): current %f vs median %f + threshold %f -> %{public}s"
 + "Drain slot %lu out of range (typical=%lu, current=%lu); skipping"

@@ -2,13 +2,22 @@
 
 > `com.apple.driver.IOPAudioVoiceTriggerDevice`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x2e02` | `0x2e0b` | **`+0x9`** |
+
+### Other Changes
+
 ```diff
 
- 600.6.0.0.0
-   __TEXT.__const: 0x90
--  __TEXT.__cstring: 0x2e02
-+  __TEXT.__cstring: 0x2e0b
-   __TEXT.__os_log: 0x1726
-   __TEXT_EXEC.__text: 0xcf14
-   __TEXT_EXEC.__auth_stubs: 0x5f0
+-  CStrings:  214
++  CStrings:  215
+CStrings:
++ "21:56:47"
++ "21:56:48"
++ "Aug  5 2026"
+- "21:26:05"
+- "Jul 14 2026"
 ```

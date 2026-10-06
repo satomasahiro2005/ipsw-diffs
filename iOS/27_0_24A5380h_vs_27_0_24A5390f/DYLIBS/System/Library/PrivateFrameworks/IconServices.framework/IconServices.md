@@ -2,82 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/IconServices.framework/IconServices`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH.__objc_data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x670e4` | `0x66840` | **`-0x8a4`** |
+| `__TEXT.__oslogstring` | `0x406a` | `0x3cb3` | **`-0x3b7`** |
+| `__AUTH_CONST.__cfstring` | `0x48a0` | `0x49c0` | **`+0x120`** |
+| `__TEXT.__cstring` | `0x44f1` | `0x45c3` | **`+0xd2`** |
+| `__AUTH_CONST.__objc_intobj` | `0x570` | `0x528` | **`-0x48`** |
+| `__TEXT.__gcc_except_tab` | `0x610` | `0x650` | **`+0x40`** |
+| `__TEXT.__objc_methlist` | `0x6964` | `0x6934` | **`-0x30`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x120` | `0x108` | **`-0x18`** |
+| `__DATA_CONST.__const` | `0xa38` | `0xa50` | **`+0x18`** |
+| `__DATA_CONST.__objc_arraydata` | `0xc8` | `0xb0` | **`-0x18`** |
+| `__TEXT.__unwind_info` | `0x19c8` | `0x19d8` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3180` | `0x3178` | **`-0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x400` | `0x408` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -785.0.100.0.0
--  __TEXT.__text: 0x670e4
 +788.0.0.0.0
-+  __TEXT.__text: 0x66840
-   __TEXT.__delay_stubs: 0x80
-   __TEXT.__delay_helper: 0xa4
--  __TEXT.__objc_methlist: 0x6964
-+  __TEXT.__objc_methlist: 0x6934
-   __TEXT.__const: 0x8840
--  __TEXT.__cstring: 0x44f1
--  __TEXT.__oslogstring: 0x406a
--  __TEXT.__gcc_except_tab: 0x610
--  __TEXT.__unwind_info: 0x19c8
-+  __TEXT.__cstring: 0x45c3
-+  __TEXT.__oslogstring: 0x3cb3
-+  __TEXT.__gcc_except_tab: 0x650
-+  __TEXT.__unwind_info: 0x19d8
-   __TEXT.__eh_frame: 0x80
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xa38
-+  __DATA_CONST.__const: 0xa50
-   __DATA_CONST.__objc_classlist: 0x530
-   __DATA_CONST.__objc_catlist: 0xf8
-   __DATA_CONST.__objc_protolist: 0x110
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3180
-+  __DATA_CONST.__objc_selrefs: 0x3178
-   __DATA_CONST.__objc_protorefs: 0x28
--  __DATA_CONST.__objc_superrefs: 0x400
--  __DATA_CONST.__objc_arraydata: 0xc8
-+  __DATA_CONST.__objc_superrefs: 0x408
-+  __DATA_CONST.__objc_arraydata: 0xb0
-   __DATA_CONST.__got: 0x6a8
-   __AUTH_CONST.__const: 0x11a8
--  __AUTH_CONST.__cfstring: 0x48a0
-+  __AUTH_CONST.__cfstring: 0x49c0
-   __AUTH_CONST.__objc_const: 0x13f98
--  __AUTH_CONST.__objc_intobj: 0x570
--  __AUTH_CONST.__objc_arrayobj: 0x120
-+  __AUTH_CONST.__objc_intobj: 0x528
-+  __AUTH_CONST.__objc_arrayobj: 0x108
-   __AUTH_CONST.__objc_doubleobj: 0x30
-   __AUTH_CONST.__auth_got: 0x7f0
-   __AUTH.__objc_data: 0x870
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2606
--  Symbols:   6202
+-  Symbols:   4963
 -  CStrings:  1079
 +  Functions: 2599
-+  Symbols:   6198
++  Symbols:   4960
 +  CStrings:  1076
- 
 Symbols:
 + -[ICRFinalizedIcon(IconServicesAdditions) _IS_imageWithCompositingDescriptor:debugResourceVariant:]
 + -[ISICRCompositor _fallbackImageForSize:scale:debugResourceVariant:]
@@ -98,13 +53,6 @@ Symbols:
 + ___70-[ISIconStackAssetCatalogResource initWithCatalog:imageName:platform:]_block_invoke
 + ___99-[ICRFinalizedIcon(IconServicesAdditions) _IS_imageWithCompositingDescriptor:debugResourceVariant:]_block_invoke
 + __typeForSiriMode
-+ _objc_msgSend$_IS_imageWithCompositingDescriptor:debugResourceVariant:
-+ _objc_msgSend$_assetDescription
-+ _objc_msgSend$_fallbackImageForSize:scale:debugResourceVariant:
-+ _objc_msgSend$_finalizedIconForCompositingDescriptor:producedStack:
-+ _objc_msgSend$assetDescription
-+ _objc_msgSend$desiredOrchestrationModeIfEnabled
-+ _objc_msgSend$initWithIconStackBlock:assetDescription:
 - -[CUINamedIconLayerStack(IconServicesAdditions) _IS_imageWithCompositingDescriptor:]
 - -[ICRFinalizedIcon(IconServicesAdditions) _IS_imageWithCompositingDescriptor:]
 - -[ISICRCompositor _fallbackImageForSize:scale:]
@@ -127,14 +75,6 @@ Symbols:
 - _OUTLINED_FUNCTION_7
 - _OUTLINED_FUNCTION_8
 - ___78-[ICRFinalizedIcon(IconServicesAdditions) _IS_imageWithCompositingDescriptor:]_block_invoke
-- _objc_msgSend$_IS_imageWithCompositingDescriptor:
-- _objc_msgSend$_fallbackImageForSize:scale:
-- _objc_msgSend$_finalizedIconForCompositingDescriptor:
-- _objc_msgSend$_finalizedIconForSize:scale:
-- _objc_msgSend$_keyForSize:scale:
-- _objc_msgSend$desiredOrchestrationMode
-- _objc_msgSend$initWithIconStackBlock:
-- _objc_msgSend$missingDesiredCapabilitiesFor:
 CStrings:
 + "20:59:25"
 + "CompositeStack"

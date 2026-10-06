@@ -2,122 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/AudioDSPManager.framework/AudioDSPManager`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb9dd4` | `0xbbd50` | **`+0x1f7c`** |
+| `__TEXT.__oslogstring` | `0x36a0` | `0x3968` | **`+0x2c8`** |
+| `__TEXT.__cstring` | `0x5e95` | `0x60e4` | **`+0x24f`** |
+| `__TEXT.__gcc_except_tab` | `0x6f70` | `0x715c` | **`+0x1ec`** |
+| `__DATA_DIRTY.__bss` | `0x1f90` | `0x1e70` | **`-0x120`** |
+| `__DATA_CONST.__const` | `0xae0` | `0xba0` | **`+0xc0`** |
+| `__TEXT.__unwind_info` | `0x3ab8` | `0x3b40` | **`+0x88`** |
+| `__AUTH_CONST.__cfstring` | `0xf40` | `0xfc0` | **`+0x80`** |
+| `__TEXT.__const` | `0xe960` | `0xe9a8` | **`+0x48`** |
+| `__TEXT.__swift5_fieldmd` | `0x1888` | `0x18b8` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x550` | `0x578` | **`+0x28`** |
+| `__AUTH_CONST.__auth_got` | `0x1518` | `0x1538` | **`+0x20`** |
+| `__AUTH_CONST.__const` | `0x7cc8` | `0x7ce8` | **`+0x20`** |
+| `__DATA.__bss` | `0x8260` | `0x8280` | **`+0x20`** |
+| `__DATA.__data` | `0x1540` | `0x1550` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x5b0` | `0x5c0` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x13ac` | `0x13bc` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0x2758` | `0x2748` | **`-0x10`** |
+| `__AUTH.__data` | `0x5c8` | `0x5d0` | **`+0x8`** |
+| `__TEXT.__init_offsets` | `0x14` | `0x10` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -238.2.0.0.0
--  __TEXT.__text: 0xb9dd4 sha256:96e4c9352a3aa2de5201b918625e75c50865f4b21652120322935089e2da9042
--  __TEXT.__realtime: 0x170 sha256:506d85755d34171451240c0e780a957d3da35cc72865bb6781036eb2c6b0eb03
--  __TEXT.__init_offsets: 0x14 sha256:6f43142d10183673e76ca926dbadeee1d0bececfc23f24d391d2f130d5e9b794
--  __TEXT.__objc_methlist: 0x7b8 sha256:cc7a6de6b34ea699c5ce2de512637115ff922138c202eef8ec00330eb588d6e0
--  __TEXT.__const: 0xe960 sha256:8fcd8afcf04a98c5dad59951575683bb25cc2625397de8674dfb6d536307f411
 +241.103.0.0.0
-+  __TEXT.__text: 0xbbd50 sha256:840ff07443e3015df2a76c9d1d845d9af55c8b7dc018def93e8f129abc962335
-+  __TEXT.__realtime: 0x170 sha256:6ddfe32c84b87091edca2030b754d1131bccca2494185f4135c6f760173a3567
-+  __TEXT.__init_offsets: 0x10 sha256:bd031af7e683fcd95a9e2417517433c3ce19f1c48a4bf056eca1ae288effd113
-+  __TEXT.__objc_methlist: 0x7b8 sha256:d450cfa6df07df3df16162a54ea0786dc878c896042cd7dfba4868cfefc577d4
-+  __TEXT.__const: 0xe9a8 sha256:75ee20a16d4057fd44d3022acc775161ac5efc770f4ec07312306548b9e33da9
-   __TEXT.__dlopen_cstrs: 0x54 sha256:ef67afff371f751d5ffe97f5bb0ebe86515cdf4a28cce665e8cc08f12727473b
--  __TEXT.__swift5_typeref: 0x2758 sha256:6691751169560f7ece69f11046c3568f19175663361f46cfbd4b299c452015df
--  __TEXT.__swift5_fieldmd: 0x1888 sha256:b5bcf58a90316cb63419315ff8f44003e41ea31e3d51a9be59c741ff8fff0512
--  __TEXT.__constg_swiftt: 0x1cf4 sha256:b24569d3627287eda5f836224b2cec5271fc2df1f55b87dfa89c3743a24d06f9
-+  __TEXT.__swift5_typeref: 0x2748 sha256:b2ff048cb98bf1d1042899616014bd4548f315b7de3ca45c904e175e9f710732
-+  __TEXT.__swift5_fieldmd: 0x18b8 sha256:35dbcd84d91556b27bf979d5f3ef227a9fdfc59381f848b03d0140bb0d97eef6
-+  __TEXT.__constg_swiftt: 0x1cf4 sha256:5125c9d88cee555a37c73b8bfdca2f98997a46a57b489130bf41da999c3336ae
-   __TEXT.__swift5_protos: 0x58 sha256:1275fd8504709dde56766dc898e3d10c6e8089251a4e9a5c0f5673d5f090ccff
--  __TEXT.__swift5_proto: 0x564 sha256:ae9d3ec1f1d798c1a3e3ad9ab6fc1f8cf3b8c9e631b3c5c7b695aed6978f92da
-+  __TEXT.__swift5_proto: 0x564 sha256:6d222838b5a63aca1a30e9dc0e63ef65e398e160a80d80b18399fe1306a8e167
-   __TEXT.__swift5_types: 0x220 sha256:56f30a7fb3c7882f00aca12838d7cf4f8a02dba78492270fcc5e19b58d72016c
--  __TEXT.__swift5_reflstr: 0x13ac sha256:284daf860908c1de61d23dcf60f81b8570ba12e75c89abc0af791d823d1f903a
--  __TEXT.__swift5_assocty: 0x528 sha256:5e8eb437bf9c772b4e57b8414bbba76f1c407d7c811b87d4860e1bf02eb36d0e
--  __TEXT.__cstring: 0x5e95 sha256:7651a3f978d844665cde28677782351f7345363dd216aafe0ba3294f80d97183
--  __TEXT.__swift_as_entry: 0x50 sha256:cc90652546c13c85f2c6e1f6a26ea40fde2e3cfe5a8b3aa09463dd8e14426a11
--  __TEXT.__swift_as_ret: 0x44 sha256:8021f9db19da8803f0f17b2f836cedee304c541e4d23238e7260a48c8b34cc97
--  __TEXT.__swift_as_cont: 0x64 sha256:86be774b51a7d695cdbe51992c840d28b08945d52b0a7b398b3cd607e421ffc5
--  __TEXT.__swift5_builtin: 0x78 sha256:c27b84df9abf16eb256947979fc65e662e0776a3a5bcb70e22d133b88078a0f7
--  __TEXT.__swift5_mpenum: 0x64 sha256:fe3b85c602d55e4a36257a9016a878e78e975e5198b15319ad8baacd694688bd
--  __TEXT.__swift5_capture: 0x2cc sha256:a9e7aa3e37ddeda02f5032ef3f34b430debcf79c93a2afef139681ad7b5db689
--  __TEXT.__gcc_except_tab: 0x6f70 sha256:18d692e0fdb461a7e93c427e9edbe85468b5ca554ee847fe6712a6b9f527aa6c
--  __TEXT.__oslogstring: 0x36a0 sha256:9eb1aedf6b438d88a9e767b493b66d598ae617ea9a1a01e1c66bae3d40017033
--  __TEXT.__unwind_info: 0x3ab8 sha256:bc9673f7b902b5abbbfda7739159b935c08cd3cd31c6559db250d9dd6a323aca
--  __TEXT.__eh_frame: 0x35e0 sha256:14e17f5041b4dbae64a8e715ed728da6a0743099b56b41c341b1fe73f6cf6d04
-+  __TEXT.__swift5_reflstr: 0x13bc sha256:0aa2402648b9d51d7aa89254d4ba8dc6763dcb357cd02531552df4f48e47c468
-+  __TEXT.__swift5_assocty: 0x528 sha256:8e03e79b184d9e39e7c801ee247c4c4aea5a87c2b5a0d6faa07622bccdd9074d
-+  __TEXT.__cstring: 0x60e4 sha256:47637364e3398de3b6d49a8c489c338e457f5b3f2454deb561b16809aa948c13
-+  __TEXT.__swift_as_entry: 0x50 sha256:4d77833066b349ad2524c545b52b8067cfa54d0acae5e130852ac8131f250d27
-+  __TEXT.__swift_as_ret: 0x44 sha256:d43eaeec4163e7be832cc8a58f31c9de9889f81e13a7780cd90c1cb18471fda4
-+  __TEXT.__swift_as_cont: 0x64 sha256:3829eb14c405b5e2cbc0ffa7ee48436809732f104c544d1e5a363c281af7e7c9
-+  __TEXT.__swift5_builtin: 0x78 sha256:1ec4aced9769e8e4d32ccc2800a75986ee1d4d6a5f6d80afaa4de11c827d58c8
-+  __TEXT.__swift5_mpenum: 0x64 sha256:47e6ca4db80636e3d7a5deb6672f25fb1a47bb0434c83edb557552bc2832f546
-+  __TEXT.__swift5_capture: 0x2cc sha256:f8f7875a1c8361db3e71582a3143c6d1055913ca3ce9c3e3c12dc742ebc662be
-+  __TEXT.__gcc_except_tab: 0x715c sha256:7c21f8527d209c919b5fae596a192d59049e2284d642a270efccd9458b9cecaa
-+  __TEXT.__oslogstring: 0x3968 sha256:345199df60b2044f9694dd5d4c3d9329ea9b06fa5e309b446c6e5cd503bad811
-+  __TEXT.__unwind_info: 0x3b40 sha256:a3805efdf89bd972d018ef3864bfa27934ae5ce5dbce07be165af87f108879e8
-+  __TEXT.__eh_frame: 0x35e0 sha256:fcd78378bf9e2ebe9f5e7a57974cb668484f71285db33e0bba73d472ecab24d7
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xae0 sha256:1bb3027ecbfa03d1d9a1edfa66b733fdc7eb31a0d2cbe861c57d76edce0a08bf
--  __DATA_CONST.__objc_classlist: 0x88 sha256:612175fa7560448f81b3ae5273c5b1e3261ee3f280ced14f620860cccb8af6fd
--  __DATA_CONST.__objc_protolist: 0x28 sha256:70790a09d307a634b300b5b8967c7e352f8bd7a46751bc16fd168cdb95cf1b9d
-+  __DATA_CONST.__const: 0xba0 sha256:7789812893412d7aeb029bfe030109c0371677b957c7005a0f52fac8cad792a4
-+  __DATA_CONST.__objc_classlist: 0x88 sha256:93fb40d195cef0127573a5a7b52ff11bdf3195e920fc095de9c4226f52a03538
-+  __DATA_CONST.__objc_protolist: 0x28 sha256:b4aee7f2ddee4a5ce9447d152bd385e74aebccf8918e25f2c6c7fdb184359458
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__weak_got: 0x20 sha256:0a96c89f895ce89181a5e6495111d65c1763fe1bcd31a504cead879f606eb608
--  __DATA_CONST.__objc_selrefs: 0x550 sha256:d0b3a7e021be531021f75edbf974736e171ddd2f2e7b3c9d4a1de733c53b1bc5
--  __DATA_CONST.__objc_superrefs: 0x18 sha256:d02c7d49f8d7ef924fe0f5d79a7a9c40c069d13c35218256461499207e955afa
--  __DATA_CONST.__got: 0x5b0 sha256:5ef9727f3c54822319641a3d882de3a5132c96998521724723c4eab1db87e639
--  __AUTH_CONST.__const: 0x7cc8 sha256:92e3cb72a09825360738f30c5d8ed73e948186431453a5fff9c596e4b31bb6ce
--  __AUTH_CONST.__cfstring: 0xf40 sha256:716eb14319aedec4187d1f211ee9449bc1e47985103e86b59cfb8e547cf5be4d
--  __AUTH_CONST.__objc_const: 0x1068 sha256:0283afc84064ad9dc70322bcce2dc1836705299607e5f7dd3191c1671a7ce497
--  __AUTH_CONST.__weak_auth_got: 0x20 sha256:187d5d49aac10da2d29657b0d7f8cf65a547da22c1958d2934307b4e23646d01
--  __AUTH_CONST.__auth_got: 0x1518 sha256:df469ce41663d86d700926e5e24b6cd731777363a8f519c7f034c2831ac2db4b
--  __AUTH.__objc_data: 0x698 sha256:ec8d19e84ae689a5af88a70ca4d82372985021017db2527af47c7c8cf3d92545
--  __AUTH.__data: 0x5c8 sha256:13c46912b4e954f7304e92745b76575867fbda93f7bd7426a66860a0d5b33ca2
--  __DATA.__objc_ivar: 0x5c sha256:5b5ffa65157b6701f49551c8b5a3ed8ac7331db1a83fd254f3f93583ca8c0183
--  __DATA.__data: 0x1540 sha256:3e685275f8b1bf3beb43ebdc0acce4dc68aa7ca84860d4e2f626c42c0c3acfcd
-+  __DATA_CONST.__weak_got: 0x20 sha256:d72a72a6a405a581fa1620d32f6ee67f63c3924692f069942c4a4fa67b47c16d
-+  __DATA_CONST.__objc_selrefs: 0x578 sha256:410bf1d0e48a204473220771c1e58b0fd26d1f81c27ed269aa31c8d2d57d6bad
-+  __DATA_CONST.__objc_superrefs: 0x18 sha256:efa74ae21704320812c4ef965326bad2dd877f3b86f7373c5ca10d5e1953b5ab
-+  __DATA_CONST.__got: 0x5c0 sha256:91118e968565b69e7ed782a70b8c7f6f575065c59c0396e64880453de5f1d6fa
-+  __AUTH_CONST.__const: 0x7ce8 sha256:5ecd38ada9999624ac62d9d94fe000f0d99415d2502e4c7a4e01e774b15f269b
-+  __AUTH_CONST.__cfstring: 0xfc0 sha256:aa592befa025b52e77d72915ef830dbd6273e1baa920c470c9e9837cadeca4bb
-+  __AUTH_CONST.__objc_const: 0x1068 sha256:958a87e84c9c50795fc05f2f223750ae326c65d9a30a435b396de6f6be563f7d
-+  __AUTH_CONST.__weak_auth_got: 0x20 sha256:2f85ee2187c0891d30af008a97dc6eeeae9b9e7fe50aff430d8c1cc3ae361902
-+  __AUTH_CONST.__auth_got: 0x1538 sha256:1d740607d3a168dbacbf6498195dcc3b361a95bdd3e0c95ba1acd24f37af438f
-+  __AUTH.__objc_data: 0x698 sha256:5712162b8206a6adef24e1c20cf9631563f71e9534d9a75a67cabb55d15131c2
-+  __AUTH.__data: 0x5d0 sha256:ce520862a1bf2aae7347f7a193d9d6e8874dff46ea9efd70959aab9827c42aa1
-+  __DATA.__objc_ivar: 0x5c sha256:6e5d84d90edf804b2a0a163b76960f9bc90e848f7f9820a012090a88d704b2cb
-+  __DATA.__data: 0x1550 sha256:cfdc309466e277b2232d285c3a203caa31f5392e6eaa9cdf941e04332384add5
-   __DATA.__cf_except_bt: 0x2000 sha256:9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47
-   __DATA.__crash_info: 0x148 sha256:6da6349e97370e8d430272961ce52dff296ff7c22208bd465045a16f557b12e4
--  __DATA.__bss: 0x8260 sha256:1d3c75a25ec4d1af898a20ef1c2f57314089a2256ed9518a7c582182208e1f02
-+  __DATA.__bss: 0x8280 sha256:4fb14bff4a50edb9844722913a2f4b865ed4997768e1e0de7e203ba53ba43936
-   __DATA.__common: 0x38 sha256:d4817aa5497628e7c77e6b606107042bbba3130888c5f47a375e6179be789fbb
--  __DATA_DIRTY.__objc_data: 0x5a8 sha256:436d3d96e5d15a110d303c27ee625647c9e75477ebdef07889f7558c1cbbf10c
--  __DATA_DIRTY.__data: 0xf90 sha256:9778d2584844cb070439fb9623624ab508374ce5b9ce8f8322fd4673bad1a32d
--  __DATA_DIRTY.__bss: 0x1f90 sha256:081a939f060acb24594e32ade266399354d59769fcbad7f84a86a3dbcf1bc5c2
-+  __DATA_DIRTY.__objc_data: 0x5a8 sha256:8def7d484723ceacaf8aa719756eedbca23bb38e29f49ed84e66ef19471355ab
-+  __DATA_DIRTY.__data: 0xf90 sha256:a41faa6cce1345b85534e3ceab605d153ff15e3d1060e272f46e595e6be35547
-+  __DATA_DIRTY.__bss: 0x1e70 sha256:eb36252ef42df30d9b7681184818a3075c03c4b0519f18996f4503a90660ac72
-   __DATA_DIRTY.__common: 0x58 sha256:10eef285deef7a4b7c82b22aa53589b7833df29de3814649c772bbd5c832f365
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: 2862438D-0D15-3FC3-9B43-C7BF48541D43
 -  Functions: 3544
--  Symbols:   6261
--  CStrings:  1289
-+  UUID: F67F7885-345F-39F1-A56C-D201D3A65377
+-  Symbols:   4232
+-  CStrings:  1157
 +  Functions: 3560
-+  Symbols:   6316
-+  CStrings:  1331
- 
++  Symbols:   4264
++  CStrings:  1195
 Symbols:
 + GCC_except_table1005
 + GCC_except_table1006
@@ -824,19 +746,8 @@ Symbols:
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEN3adm26DSPGraphBasicConfigurationEEENS_22__unordered_map_hasherIS7_NS_4pairIKS7_S9_EENS_4hashIS7_EENS_8equal_toIS7_EEEENS_21__unordered_map_equalIS7_SE_SI_SG_EENS5_ISE_EEE16__emplace_uniqueB9fqe220106IJRKNS_21piecewise_construct_tENS_5tupleIJRSD_EEENSS_IJEEEEEENSC_INS_15__hash_iteratorIPNS_11__hash_nodeISA_PvEEEEbEEDpOT_ENKUlST_SR_OSU_OSV_E_clEST_SR_S16_S17_
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_13unordered_mapIS7_N3adm26DSPGraphBasicConfigurationENS_4hashIS7_EENS_8equal_toIS7_EENS5_INS_4pairIKS7_SA_EEEEEEEENS_22__unordered_map_hasherIS7_NSF_ISG_SJ_EESC_SE_EENS_21__unordered_map_equalIS7_SM_SE_SC_EENS5_ISM_EEE16__emplace_uniqueB9fqe220106IJRKNS_21piecewise_construct_tENS_5tupleIJRSG_EEENSW_IJEEEEEENSF_INS_15__hash_iteratorIPNS_11__hash_nodeISK_PvEEEEbEEDpOT_ENKUlSX_SV_OSY_OSZ_E_clESX_SV_S1A_S1B_
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES7_EENS_22__unordered_map_hasherIS7_NS_4pairIKS7_S7_EENS_4hashIS7_EENS_8equal_toIS7_EEEENS_21__unordered_map_equalIS7_SC_SG_SE_EENS5_ISC_EEE16__emplace_uniqueB9fqe220106IJRKNS_21piecewise_construct_tENS_5tupleIJOS7_EEENSQ_IJEEEEEENSA_INS_15__hash_iteratorIPNS_11__hash_nodeIS8_PvEEEEbEEDpOT_ENKUlRSB_SP_OSS_OST_E_clES14_SP_S15_S16_
-+ ____Z31AudioIssueDetectorLibraryLoaderv_block_invoke.996
-+ ___block_descriptor_tmp.1495
-+ ___block_descriptor_tmp.29.1488
-+ ___block_descriptor_tmp.618
-+ ___block_descriptor_tmp.657
-+ ___block_literal_global.990
 + __os_feature_enabled_impl
 + _memset_pattern16
-+ _objc_msgSend$UUIDString
-+ _objc_msgSend$findByUUID:
-+ _objc_msgSend$initWithUUIDBytes:
-+ _objc_msgSend$objectAtIndexedSubscript:
-+ _objc_msgSend$propertyListWithData:options:format:error:
 + _objc_retain_x24
 + _objc_retain_x9
 + _symbolic _____y_____SSG_ACt 20AudioDSPManagerSwift12TaglessUnionO AA19ADMDatabaseSchemaV1O26DSPGraphBasicConfigurationV
@@ -1517,15 +1428,8 @@ Symbols:
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEN3adm26DSPGraphBasicConfigurationEEENS_22__unordered_map_hasherIS7_NS_4pairIKS7_S9_EENS_4hashIS7_EENS_8equal_toIS7_EEEENS_21__unordered_map_equalIS7_SE_SI_SG_EENS5_ISE_EEE16__emplace_uniqueB9fqe220100IJRKNS_21piecewise_construct_tENS_5tupleIJRSD_EEENSS_IJEEEEEENSC_INS_15__hash_iteratorIPNS_11__hash_nodeISA_PvEEEEbEEDpOT_ENKUlST_SR_OSU_OSV_E_clEST_SR_S16_S17_
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_13unordered_mapIS7_N3adm26DSPGraphBasicConfigurationENS_4hashIS7_EENS_8equal_toIS7_EENS5_INS_4pairIKS7_SA_EEEEEEEENS_22__unordered_map_hasherIS7_NSF_ISG_SJ_EESC_SE_EENS_21__unordered_map_equalIS7_SM_SE_SC_EENS5_ISM_EEE16__emplace_uniqueB9fqe220100IJRKNS_21piecewise_construct_tENS_5tupleIJRSG_EEENSW_IJEEEEEENSF_INS_15__hash_iteratorIPNS_11__hash_nodeISK_PvEEEEbEEDpOT_ENKUlSX_SV_OSY_OSZ_E_clESX_SV_S1A_S1B_
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES7_EENS_22__unordered_map_hasherIS7_NS_4pairIKS7_S7_EENS_4hashIS7_EENS_8equal_toIS7_EEEENS_21__unordered_map_equalIS7_SC_SG_SE_EENS5_ISC_EEE16__emplace_uniqueB9fqe220100IJRKNS_21piecewise_construct_tENS_5tupleIJOS7_EEENSQ_IJEEEEEENSA_INS_15__hash_iteratorIPNS_11__hash_nodeIS8_PvEEEEbEEDpOT_ENKUlRSB_SP_OSS_OST_E_clES14_SP_S15_S16_
-- ____Z31AudioIssueDetectorLibraryLoaderv_block_invoke.983
-- ___block_descriptor_tmp.1482
-- ___block_descriptor_tmp.29.1475
-- ___block_descriptor_tmp.597
-- ___block_descriptor_tmp.636
-- ___block_literal_global.977
 - _symbolic _____y_____y_____y_____y_____y_____GGAGG_____GG s23_ContiguousArrayStorageC 20AudioDSPManagerSwift17SearchDescriptionO AC18MixedAssetLocationO AC05ModeljK0V AC23SystemConfigurationFileV AC19MacDriverDataSourceV AC4TrueO
 CStrings:
-+ "/AppleInternal/Library/BuildRoots/4~CR66ugBrn72ZnBsT4RfSVCZtzgQ3CzBsZrFbwvE/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/boost/exception/detail/exception_ptr.hpp"
 + "AudioHAL"
 + "AudioIssueDetectorClient: invalid buffer list for stream %zu [error: non-critical, impact: incomplete RTAID]"
 + "AudioIssueDetectorClient: invalid streams for analysis [error: non-critical, impact: incomplete RTAID]"
@@ -1571,7 +1475,6 @@ CStrings:
 + "semantics"
 + "streamID"
 + "v32@?0{audiodspcontroller_audiodspcontrol_getparameter__result_s=C(?={audiodsputility_parametererror_s=Q}{audiodsputility_parametervalue_s=Q(?={?={audiodsputility_orientationparametervalue_s=Q}}{?=B}{?=B}{?=B}{?=B}{?=B}{?=B}{?=B}{?=I}{?=B}{?=C}{?=C}{?=B}{?=B}{?=I}{?={audiodsputility_deviceanglecategory_s=Q}}{?={audiodsputility_deviceposecategory_s=Q}}{?=I})})}8"
-- "/AppleInternal/Library/BuildRoots/4~CQhpugBi51r_5gNlEWOvYB6Vi8yQabv9UJKA_co/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/boost/exception/detail/exception_ptr.hpp"
 - "ControllerClient(%p) created"
 - "ControllerClient(%p) destroyed"
 - "DeviceDSPDatabase.plist"
@@ -1579,5 +1482,4 @@ CStrings:
 - "ioStarting() completed"
 - "ioStopped() completed"
 - "v32@?0{audiodspcontroller_audiodspcontrol_getparameter__result_s=C(?={audiodsputility_parametererror_s=Q}{audiodsputility_parametervalue_s=Q(?={?={audiodsputility_orientationparametervalue_s=Q}}{?=B}{?=B}{?=B}{?=B}{?=B}{?=B}{?=B}{?=I}{?=B}{?=C}{?=C}{?=B}{?=B}{?=I}{?={audiodsputility_deviceanglecategory_s=Q}}{?={audiodsputility_deviceposecategory_s=Q}})})}8"
-
 ```

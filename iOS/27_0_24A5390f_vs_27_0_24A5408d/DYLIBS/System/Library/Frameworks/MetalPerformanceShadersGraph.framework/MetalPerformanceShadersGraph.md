@@ -2,99 +2,48 @@
 
 > `/System/Library/Frameworks/MetalPerformanceShadersGraph.framework/MetalPerformanceShadersGraph`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21a8134` | `0x21aeab0` | **`+0x697c`** |
+| `__DATA.__bss` | `0x27a8` | `0x2fa0` | **`+0x7f8`** |
+| `__TEXT.__const` | `0x6cbb8` | `0x6cfe8` | **`+0x430`** |
+| `__TEXT.__cstring` | `0xef21e` | `0xef439` | **`+0x21b`** |
+| `__AUTH_CONST.__const` | `0xa8f00` | `0xa90e8` | **`+0x1e8`** |
+| `__TEXT.__gcc_except_tab` | `0x136eb0` | `0x13708c` | **`+0x1dc`** |
+| `__TEXT.__oslogstring` | `0x333a` | `0x347f` | **`+0x145`** |
+| `__TEXT.__swift5_typeref` | `0x9d4` | `0xb00` | **`+0x12c`** |
+| `__TEXT.__unwind_info` | `0x670a8` | `0x671c0` | **`+0x118`** |
+| `__TEXT.__swift5_fieldmd` | `0x4ec` | `0x5d0` | **`+0xe4`** |
+| `__TEXT.__swift5_reflstr` | `0x483` | `0x525` | **`+0xa2`** |
+| `__TEXT.__eh_frame` | `0x13cc` | `0x143c` | **`+0x70`** |
+| `__TEXT.__constg_swiftt` | `0x4b0` | `0x51c` | **`+0x6c`** |
+| `__AUTH_CONST.__auth_got` | `0x26e0` | `0x2728` | **`+0x48`** |
+| `__AUTH_CONST.__cfstring` | `0x14100` | `0x14140` | **`+0x40`** |
+| `__TEXT.__swift5_proto` | `0x108` | `0x144` | **`+0x3c`** |
+| `__DATA.__data` | `0x76c8` | `0x7700` | **`+0x38`** |
+| `__TEXT.__objc_methlist` | `0x84bc` | `0x84e4` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0xfd8` | `0xff8` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4668` | `0x4688` | **`+0x20`** |
+| `__TEXT.__swift5_builtin` | `0x28` | `0x3c` | **`+0x14`** |
+| `__TEXT.__swift5_types` | `0x7c` | `0x88` | **`+0xc`** |
+| `__AUTH.__data` | `0x50b0` | `0x50b8` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x8` | `0x10` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -7.0.76.1.0
--  __TEXT.__text: 0x21a8134
 +7.0.80.0.0
-+  __TEXT.__text: 0x21aeab0
-   __TEXT.__mpsgraph_init_: 0x44
--  __TEXT.__objc_methlist: 0x84bc
--  __TEXT.__const: 0x6cbb8
--  __TEXT.__cstring: 0xef21e
--  __TEXT.__swift5_typeref: 0x9d4
-+  __TEXT.__objc_methlist: 0x84e4
-+  __TEXT.__const: 0x6cfe8
-+  __TEXT.__cstring: 0xef439
-+  __TEXT.__swift5_typeref: 0xb00
-   __TEXT.__swift5_capture: 0x370
--  __TEXT.__oslogstring: 0x333a
--  __TEXT.__constg_swiftt: 0x4b0
--  __TEXT.__swift5_fieldmd: 0x4ec
--  __TEXT.__swift5_reflstr: 0x483
--  __TEXT.__swift5_builtin: 0x28
--  __TEXT.__swift5_proto: 0x108
--  __TEXT.__swift5_types: 0x7c
--  __TEXT.__swift5_mpenum: 0x8
-+  __TEXT.__oslogstring: 0x347f
-+  __TEXT.__constg_swiftt: 0x51c
-+  __TEXT.__swift5_fieldmd: 0x5d0
-+  __TEXT.__swift5_reflstr: 0x525
-+  __TEXT.__swift5_builtin: 0x3c
-+  __TEXT.__swift5_proto: 0x144
-+  __TEXT.__swift5_types: 0x88
-+  __TEXT.__swift5_mpenum: 0x10
-   __TEXT.__swift_as_entry: 0x14
-   __TEXT.__swift_as_ret: 0x4
-   __TEXT.__swift_as_cont: 0x10
--  __TEXT.__gcc_except_tab: 0x136eb0
-+  __TEXT.__gcc_except_tab: 0x13708c
-   __TEXT.__ustring: 0x19c
--  __TEXT.__unwind_info: 0x670a8
--  __TEXT.__eh_frame: 0x13cc
-+  __TEXT.__unwind_info: 0x671c0
-+  __TEXT.__eh_frame: 0x143c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_protolist: 0xa0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x4668
-+  __DATA_CONST.__objc_selrefs: 0x4688
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__objc_superrefs: 0x230
-   __DATA_CONST.__objc_arraydata: 0x19a8
--  __DATA_CONST.__got: 0xfd8
--  __AUTH_CONST.__const: 0xa8f00
--  __AUTH_CONST.__cfstring: 0x14100
-+  __DATA_CONST.__got: 0xff8
-+  __AUTH_CONST.__const: 0xa90e8
-+  __AUTH_CONST.__cfstring: 0x14140
-   __AUTH_CONST.__objc_const: 0x127f8
-   __AUTH_CONST.__weak_auth_got: 0x60
-   __AUTH_CONST.__objc_intobj: 0x738
-   __AUTH_CONST.__objc_arrayobj: 0x2430
-   __AUTH_CONST.__objc_dictobj: 0x5c8
--  __AUTH_CONST.__auth_got: 0x26e0
-+  __AUTH_CONST.__auth_got: 0x2728
-   __AUTH.__objc_data: 0x4e70
--  __AUTH.__data: 0x50b0
-+  __AUTH.__data: 0x50b8
-   __AUTH.__thread_vars: 0x168
-   __AUTH.__thread_data: 0x1
-   __AUTH.__thread_bss: 0x1b0
-   __DATA.__objc_ivar: 0x270
--  __DATA.__data: 0x76c8
-+  __DATA.__data: 0x7700
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x27a8
-+  __DATA.__bss: 0x2fa0
-   __DATA.__common: 0x24e0
-   __DATA_DIRTY.__objc_ivar: 0xa3c
-   __DATA_DIRTY.__objc_data: 0x50
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 104711
--  Symbols:   141824
+-  Symbols:   140272
 -  CStrings:  20952
 +  Functions: 104798
-+  Symbols:   142057
++  Symbols:   140501
 +  CStrings:  20967
- 
 Symbols:
 + +[MPSGraphExecutable updateANEBinaryCacheForPackageAt:forArchitecture:toAppGroup:error:]
 + -[MPSGraphExecutable encodeWithMPSCommandBuffer:inputsArray:resultsArray:executionDescriptor:error:]
@@ -373,10 +322,6 @@ Symbols:
 + _associated conformance 28MetalPerformanceShadersGraph27MPSGraphDelegateKernelErrorO31IoSurfaceSizeMismatchCodingKeys33_6D50CC86E2CCE881D418F1204106A462LLOs0M3KeyAAs28CustomDebugStringConvertible
 + _clock_gettime_nsec_np
 + _get_enum_tag_for_layout_string 28MetalPerformanceShadersGraph27MPSGraphDelegateKernelErrorO
-+ _objc_msgSend$encodeWithMPSCommandBuffer:inputsArray:resultsArray:executionDescriptor:error:
-+ _objc_msgSend$runInternalWithDevice:commandBuffer:feeds:results:executableExecutionDescriptor:mpsGraphOwnedCommandBuffer:error:
-+ _objc_msgSend$updateANEBinaryCacheForPackageAt:forArchitecture:toAppGroup:error:
-+ _objc_msgSend$updateCachedModelLocationForModelTrackedByHash:toAppGroup:error:
 + _swift_getTypeByMangledNameInContextInMetadataState2
 + _symbolic SaySiG
 + _symbolic SaySiG5shape_AA7stridesSi13requiredBytesSi12bufferLengtht

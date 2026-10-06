@@ -2,87 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x19e234` | `0x1a05d8` | **`+0x23a4`** |
+| `__TEXT.__cstring` | `0x3d3fa` | `0x3d9a3` | **`+0x5a9`** |
+| `__AUTH_CONST.__cfstring` | `0x28480` | `0x287c0` | **`+0x340`** |
+| `__AUTH_CONST.__objc_const` | `0x36340` | `0x365f8` | **`+0x2b8`** |
+| `__TEXT.__oslogstring` | `0xf5ac` | `0xf845` | **`+0x299`** |
+| `__TEXT.__objc_methlist` | `0x1f094` | `0x1f31c` | **`+0x288`** |
+| `__DATA_CONST.__const` | `0x85f0` | `0x8730` | **`+0x140`** |
+| `__DATA_CONST.__objc_selrefs` | `0xc0f0` | `0xc210` | **`+0x120`** |
+| `__AUTH_CONST.__objc_intobj` | `0x2628` | `0x2700` | **`+0xd8`** |
+| `__TEXT.__unwind_info` | `0x8170` | `0x8218` | **`+0xa8`** |
+| `__DATA_CONST.__objc_arraydata` | `0x23a0` | `0x2440` | **`+0xa0`** |
+| `__DATA.__data` | `0x4800` | `0x4860` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0x8610` | `0x8660` | **`+0x50`** |
+| `__AUTH_CONST.__objc_dictobj` | `0xcf8` | `0xd20` | **`+0x28`** |
+| `__DATA.__bss` | `0x13a0` | `0x13c0` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x257c` | `0x259c` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x16d0` | `0x16f0` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x21b8` | `0x21d8` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xae8` | `0xad8` | **`-0x10`** |
+| `__DATA_DIRTY.__bss` | `0x200` | `0x1f0` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0xef8` | `0xf00` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x5e8` | `0x5f0` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x170` | `0x178` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0xf10` | `0xf18` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.68.61.11.11
--  __TEXT.__text: 0x19362c
--  __TEXT.__objc_methlist: 0x1f094
 +3605.23.1.1.1
-+  __TEXT.__text: 0x19597c
-+  __TEXT.__objc_methlist: 0x1f31c
-   __TEXT.__const: 0x3d0
-   __TEXT.__dlopen_cstrs: 0x538
--  __TEXT.__gcc_except_tab: 0x21b8
--  __TEXT.__cstring: 0x3d3fa
--  __TEXT.__oslogstring: 0xf5ac
-+  __TEXT.__gcc_except_tab: 0x21d8
-+  __TEXT.__cstring: 0x3d9a3
-+  __TEXT.__oslogstring: 0xf845
-   __TEXT.__ustring: 0x2ac
--  __TEXT.__unwind_info: 0x9e58
-+  __TEXT.__unwind_info: 0x9f28
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x85f0
--  __DATA_CONST.__objc_classlist: 0xef8
-+  __DATA_CONST.__const: 0x8730
-+  __DATA_CONST.__objc_classlist: 0xf00
-   __DATA_CONST.__objc_catlist: 0x2a8
--  __DATA_CONST.__objc_protolist: 0x5e8
-+  __DATA_CONST.__objc_protolist: 0x5f0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xc0f0
--  __DATA_CONST.__objc_protorefs: 0x170
--  __DATA_CONST.__objc_superrefs: 0xf10
--  __DATA_CONST.__objc_arraydata: 0x23a0
--  __DATA_CONST.__got: 0x16d0
-+  __DATA_CONST.__objc_selrefs: 0xc210
-+  __DATA_CONST.__objc_protorefs: 0x178
-+  __DATA_CONST.__objc_superrefs: 0xf18
-+  __DATA_CONST.__objc_arraydata: 0x2440
-+  __DATA_CONST.__got: 0x16f0
-   __AUTH_CONST.__const: 0x3ca0
--  __AUTH_CONST.__cfstring: 0x28480
--  __AUTH_CONST.__objc_const: 0x36340
--  __AUTH_CONST.__objc_intobj: 0x2628
--  __AUTH_CONST.__objc_dictobj: 0xcf8
-+  __AUTH_CONST.__cfstring: 0x287c0
-+  __AUTH_CONST.__objc_const: 0x365f8
-+  __AUTH_CONST.__objc_intobj: 0x2700
-+  __AUTH_CONST.__objc_dictobj: 0xd20
-   __AUTH_CONST.__objc_arrayobj: 0x5d0
-   __AUTH_CONST.__objc_doubleobj: 0x40
--  __AUTH_CONST.__auth_got: 0xae8
--  __AUTH.__objc_data: 0x8610
-+  __AUTH_CONST.__auth_got: 0xad8
-+  __AUTH.__objc_data: 0x8660
-   __AUTH.__data: 0x248
--  __DATA.__objc_ivar: 0x257c
--  __DATA.__data: 0x4800
-+  __DATA.__objc_ivar: 0x259c
-+  __DATA.__data: 0x4860
-   __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0xfa0
-   __DATA_DIRTY.__data: 0x18
--  __DATA_DIRTY.__bss: 0x200
-+  __DATA_DIRTY.__bss: 0x1f0
-   __DATA_DIRTY.__common: 0xf8
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12116
--  Symbols:   26771
+-  Symbols:   22222
 -  CStrings:  8603
 +  Functions: 12182
-+  Symbols:   26901
++  Symbols:   22325
 +  CStrings:  8654
- 
 Symbols:
 + +[AFFeatureFlags(SWEFeatureFlags) isAceSyncDisabled]
 + +[AFFeatureFlags(SWEFeatureFlags) isCloudKitCacheMirroredChangeTokensEnabled]
@@ -456,37 +417,6 @@ Symbols:
 + _kAFLocalTurnStatusServiceEntitlement
 + _kAFLocalTurnStatusServiceErrorDomain
 + _kAFLocalTurnStatusServiceMachServiceName
-+ _objc_msgSend$_endUsefulUserFacingResultsIntervalIfNeeded
-+ _objc_msgSend$_replyMissingDelegateMethodTo:
-+ _objc_msgSend$_syncDataWithAnchorKeys:forceReset:reason:replyWithError:
-+ _objc_msgSend$applicationProcessIdentifier
-+ _objc_msgSend$armAnnounceOverrideFollowUpText:reply:
-+ _objc_msgSend$cacheEntitlement:forPID:pidVersion:bundleID:
-+ _objc_msgSend$currentLocalTurnStatus:
-+ _objc_msgSend$forceWeeklyCloudKitSyncWithCompletion:
-+ _objc_msgSend$getArgumentTypeAtIndex:
-+ _objc_msgSend$getLinwoodEnabled
-+ _objc_msgSend$hasEntitlement:forPID:pidVersion:
-+ _objc_msgSend$initWithAssistantID:speechID:idsIdentifier:productPrefix:aceHost:syncMetadata:syncMetadataCapability:peerToPeerHandoffCapability:muxSupportCapability:meDevice:siriLanguage:companionName:buildVersion:linwoodEnabled:
-+ _objc_msgSend$initWithSiriLanguageCode:
-+ _objc_msgSend$isElectionLedgerEnabled
-+ _objc_msgSend$isMediaEntitySyncDisabled
-+ _objc_msgSend$isRecognizeMyVoiceEnabledForAnyUserWithCompletion:
-+ _objc_msgSend$linwoodEnabled
-+ _objc_msgSend$mintElectionIdentity
-+ _objc_msgSend$myriadElectionIdentity
-+ _objc_msgSend$notifyAppLaunchWillBePresentedToUser
-+ _objc_msgSend$performRequestWithResultCompletion:
-+ _objc_msgSend$setApplicationProcessIdentifier:
-+ _objc_msgSend$setLinwoodEnabled:
-+ _objc_msgSend$setMyriadElectionIdentity:
-+ _objc_msgSend$siriAvailability:
-+ _objc_msgSend$siriAvailabilityOverXPCEnabled
-+ _objc_msgSend$siriAvailabilitySync
-+ _objc_msgSend$siriDidBecomeEffectivelyActive
-+ _objc_msgSend$siriDidBecomeEffectivelyInactive
-+ _objc_msgSend$streamId
-+ _objc_msgSend$streamStage
 + _sAFDaemonIsExitingCleanly
 - +[AFFeatureFlags(SWEFeatureFlags) isHintsEnabled]
 - +[AFSiriAvailability fromDictionary:]
@@ -756,10 +686,6 @@ Symbols:
 - ___block_descriptor_64_e8_32s40s48s56bs_e5_v8?0ls32l8s40l8s48l8s56l8
 - ___block_descriptor_82_e8_32s40s48s56bs_e33_v16?0"AceObject<SAAceCommand>"8ls32l8s56l8s40l8s48l8
 - ___block_descriptor_90_e8_32s40s48s56s64bs_e5_v8?0ls32l8s64l8s40l8s48l8s56l8
-- _objc_msgSend$cacheEntitlement:forPID:bundleID:
-- _objc_msgSend$fromDictionary:
-- _objc_msgSend$hasEntitlement:forPID:
-- _objc_msgSend$initWithAssistantID:speechID:idsIdentifier:productPrefix:aceHost:syncMetadata:syncMetadataCapability:peerToPeerHandoffCapability:muxSupportCapability:meDevice:siriLanguage:companionName:
 - _uuid_clear
 - _xpc_get_instance
 CStrings:

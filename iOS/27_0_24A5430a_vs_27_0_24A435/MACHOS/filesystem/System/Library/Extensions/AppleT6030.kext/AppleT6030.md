@@ -2,23 +2,22 @@
 
 > `/System/Library/Extensions/AppleT6030.kext/AppleT6030`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0xebc0` | `0xef88` | **`+0x3c8`** |
+
+### Same-size Content Changes
 
 - `__DATA.__data`
+- `__DATA_CONST.__const`
 - `__DATA_CONST.__mod_init_func`
 - `__DATA_CONST.__mod_term_func`
-- `__DATA_CONST.__const`
 
-```diff
+### Other Changes
 
-   __TEXT.__cstring: 0x5f17
-   __TEXT.__const: 0xe0
-   __TEXT.__os_log: 0xe18
--  __TEXT_EXEC.__text: 0xebc0
-+  __TEXT_EXEC.__text: 0xef88
-   __TEXT_EXEC.__auth_stubs: 0x3e0
-   __DATA.__data: 0x6ba4
-   __DATA.__common: 0x108
+```text
 Functions:
 ~ __ZN10AppleH15IO9MetaClassC1Ev : 72 -> 76
 ~ __ZN10AppleH15IOC2EPK11OSMetaClass : 52 -> 56

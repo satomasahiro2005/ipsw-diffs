@@ -2,75 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DACardDAV.framework/DACardDAV`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_superrefs`
-- `__AUTH_CONST.__const`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa9fc` | `0xa4c0` | **`-0x53c`** |
+| `__AUTH_CONST.__objc_const` | `0x31c0` | `0x3130` | **`-0x90`** |
+| `__AUTH_CONST.__cfstring` | `0x5a0` | `0x520` | **`-0x80`** |
+| `__DATA_CONST.__objc_selrefs` | `0xf50` | `0xef0` | **`-0x60`** |
+| `__AUTH.__objc_data` | `0x280` | `0x230` | **`-0x50`** |
+| `__TEXT.__objc_methlist` | `0x145c` | `0x143c` | **`-0x20`** |
+| `__TEXT.__unwind_info` | `0x330` | `0x320` | **`-0x10`** |
+| `__TEXT.__cstring` | `0x637` | `0x62b` | **`-0xc`** |
+| `__DATA_CONST.__got` | `0x3e8` | `0x3e0` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x78` | `0x70` | **`-0x8`** |
+
+### Other Changes
 
 ```diff
 
 -2706.0.0.0.0
--  __TEXT.__text: 0xa9fc
--  __TEXT.__objc_methlist: 0x145c
 +2707.0.0.0.0
-+  __TEXT.__text: 0xa4c0
-+  __TEXT.__objc_methlist: 0x143c
-   __TEXT.__const: 0x48
-   __TEXT.__gcc_except_tab: 0x20
--  __TEXT.__cstring: 0x637
-+  __TEXT.__cstring: 0x62b
-   __TEXT.__oslogstring: 0x72d
--  __TEXT.__unwind_info: 0x330
-+  __TEXT.__unwind_info: 0x320
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x258
--  __DATA_CONST.__objc_classlist: 0x78
-+  __DATA_CONST.__objc_classlist: 0x70
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xf50
-+  __DATA_CONST.__objc_selrefs: 0xef0
-   __DATA_CONST.__objc_superrefs: 0x58
--  __DATA_CONST.__got: 0x3e8
-+  __DATA_CONST.__got: 0x3e0
-   __AUTH_CONST.__const: 0x100
--  __AUTH_CONST.__cfstring: 0x5a0
--  __AUTH_CONST.__objc_const: 0x31c0
-+  __AUTH_CONST.__cfstring: 0x520
-+  __AUTH_CONST.__objc_const: 0x3130
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x280
-+  __AUTH.__objc_data: 0x230
-   __DATA.__objc_ivar: 0x9c
-   __DATA.__data: 0x480
-   __DATA.__bss: 0x10
-   __DATA_DIRTY.__objc_data: 0x230
-   - /System/Library/Frameworks/Accounts.framework/Accounts
--  - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libxml2.2.dylib
+-  - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
+
 -  Functions: 322
--  Symbols:   1129
+-  Symbols:   776
 -  CStrings:  92
 +  Functions: 317
-+  Symbols:   1104
++  Symbols:   763
 +  CStrings:  88
- 
 Symbols:
 + _OBJC_CLASS_$_CNURLSecurity
 - +[DAURLSecurity hostSharesRegistrableDomain:with:]
@@ -86,18 +47,6 @@ Symbols:
 - __OBJC_CLASS_RO_$_DAURLSecurity
 - __OBJC_METACLASS_RO_$_DAURLSecurity
 - _inet_pton
-- _objc_msgSend$UTF8String
-- _objc_msgSend$componentsSeparatedByString:
-- _objc_msgSend$encodedHost
-- _objc_msgSend$hasPrefix:
-- _objc_msgSend$hasSuffix:
-- _objc_msgSend$hostSharesRegistrableDomain:with:
-- _objc_msgSend$lastObject
-- _objc_msgSend$lowercaseString
-- _objc_msgSend$stringByAppendingString:
-- _objc_msgSend$stringWithUTF8String:
-- _objc_msgSend$substringToIndex:
-- _objc_msgSend$substringWithRange:
 - _strlen
 CStrings:
 - "%@.%@"

@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/TypistFramework.framework/TypistFramework`
 
-```diff
+### Section Size Changes
 
- 493.0.0.0.0
--  __TEXT.__text: 0x422a4
-+  __TEXT.__text: 0x422bc
-   __TEXT.__objc_methlist: 0x382c
-   __TEXT.__const: 0x3c2
-   __TEXT.__gcc_except_tab: 0xd1c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x422a4` | `0x422bc` | **`+0x18`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2b1b462b8 -> sub_2b29432b8 : 360 -> 364
-~ sub_2b1b46420 -> sub_2b2943424 : 1944 -> 1964
+~ sub_2b1a2f2b8 -> sub_2b282c2b8 : 360 -> 364
+~ sub_2b1a2f420 -> sub_2b282c424 : 1944 -> 1964
 ```

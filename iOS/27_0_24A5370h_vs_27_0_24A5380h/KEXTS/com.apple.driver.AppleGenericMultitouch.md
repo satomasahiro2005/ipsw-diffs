@@ -2,40 +2,27 @@
 
 > `com.apple.driver.AppleGenericMultitouch`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0xa390` | `0xa61c` | **`+0x28c`** |
+| `__TEXT.__os_log` | `0x2ae7` | `0x2b8c` | **`+0xa5`** |
+| `__TEXT.__cstring` | `0x6ccc` | `0x6d1b` | **`+0x4f`** |
+| `__TEXT_EXEC.__auth_stubs` | `0x370` | `0x380` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x1b8` | `0x1c0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__cstring: 0x6ccc
-+  __TEXT.__cstring: 0x6d1b
-   __TEXT.__const: 0x236
--  __TEXT.__os_log: 0x2ae7
--  __TEXT_EXEC.__text: 0xa390
--  __TEXT_EXEC.__auth_stubs: 0x370
-+  __TEXT.__os_log: 0x2b8c
-+  __TEXT_EXEC.__text: 0xa61c
-+  __TEXT_EXEC.__auth_stubs: 0x380
-   __DATA.__data: 0xd4
-   __DATA.__common: 0xa8
-   __DATA.__bss: 0x1
-
-   __DATA_CONST.__mod_term_func: 0x18
-   __DATA_CONST.__const: 0x1780
-   __DATA_CONST.__kalloc_type: 0x200
--  __DATA_CONST.__auth_got: 0x1b8
-+  __DATA_CONST.__auth_got: 0x1c0
-   __DATA_CONST.__got: 0xc8
+-29.0.0.0.0
 -  Functions: 244
++30.0.0.0.0
 +  Functions: 247
-   Symbols:   0
+
 -  CStrings:  323
 +  CStrings:  326
- 
-Sections:
-~ __DATA.__data : content changed
-~ __DATA_CONST.__mod_init_func : content changed
-~ __DATA_CONST.__mod_term_func : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__kalloc_type : content changed
-~ __DATA_CONST.__got : content changed
 CStrings:
 + "12111112122212121111112"
 + "IOReturn AppleGenericMultitouchDecider::helperStateChangedGated(AppleGenericMultitouchDeciderHelper *)"
@@ -44,5 +31,4 @@ CStrings:
 + "getWorkLoop()->addEventSource(_commandGate.get()) == 0"
 - "121111121222121211111"
 - "void AppleGenericMultitouchDecider::helperStateChanged(AppleGenericMultitouchDeciderHelper *)"
-
 ```

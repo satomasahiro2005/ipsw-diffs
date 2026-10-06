@@ -2,18 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/ContainerManagerCommon.framework/ContainerManagerCommon`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf2fec` | `0xf3018` | **`+0x2c`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
 
-```diff
+### Other Changes
 
- 833.0.8.0.1
--  __TEXT.__text: 0xf2fec
-+  __TEXT.__text: 0xf3018
-   __TEXT.__objc_methlist: 0xae74
-   __TEXT.__const: 0x13b0
-   __TEXT.__cstring: 0x9585
+```diff
 Functions:
 ~ sub_2068a258c -> sub_206f2958c : 268 -> 276
 ~ sub_2068bb8e4 -> sub_206f428ec : 1320 -> 1324
@@ -24,6 +25,8 @@ Functions:
 ~ sub_2069876d8 -> sub_20700e6fc : 816 -> 820
 ~ sub_206987a08 -> sub_20700ea30 : 752 -> 756
 CStrings:
++ "15:27:46"
 + "MobileContainerManager-833.0.8.0.1~204"
+- "18:24:45"
 - "MobileContainerManager-833.0.8.0.1~211"
 ```

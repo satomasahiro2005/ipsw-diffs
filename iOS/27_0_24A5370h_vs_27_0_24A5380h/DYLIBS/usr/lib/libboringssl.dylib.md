@@ -2,41 +2,16 @@
 
 > `/usr/lib/libboringssl.dylib`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0xa3414
-+  __TEXT.__text: 0xa344c
-   __TEXT.__objc_methlist: 0x1dc
-   __TEXT.__cstring: 0x12304
-   __TEXT.__const: 0xff48
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa3414` | `0xa344c` | **`+0x38`** |
+| `__DATA_DIRTY.__data` | `0x220` | `0x218` | **`-0x8`** |
 
-   __DATA.__data: 0xd58
-   __DATA.__bss: 0x568
-   __DATA_DIRTY.__objc_data: 0x140
--  __DATA_DIRTY.__data: 0x220
-+  __DATA_DIRTY.__data: 0x218
-   __DATA_DIRTY.__bss: 0xcb0
-   __DATA_DIRTY.__common: 0x10
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+### Other Changes
+
+```text
 Functions:
 ~ __ZN4bsslL26ssl_cipher_process_rulestrEPKcPPNS_15cipher_order_stES4_b : 1600 -> 1632
 ~ _SSL_get_group_name : 60 -> 72
@@ -61,5 +36,4 @@ Functions:
 ~ _tls1_sha256_final_raw : 72 -> 68
 ~ _tls1_sha512_final_raw : 116 -> 112
 ~ _OPENSSL_strlcat : 96 -> 92
-
 ```

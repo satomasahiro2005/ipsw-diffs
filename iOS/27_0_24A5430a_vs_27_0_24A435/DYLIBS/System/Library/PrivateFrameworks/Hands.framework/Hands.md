@@ -2,58 +2,24 @@
 
 > `/System/Library/PrivateFrameworks/Hands.framework/Hands`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x607880` | `0x609e9c` | **`+0x261c`** |
+| `__TEXT.__eh_frame` | `0x107fc` | `0x1088c` | **`+0x90`** |
+| `__TEXT.__unwind_info` | `0xb238` | `0xb280` | **`+0x48`** |
+| `__AUTH_CONST.__objc_const` | `0x1a830` | `0x1a850` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x358c` | `0x35a4` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x1890` | `0x18a0` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x23d8` | `0x23e8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
- 13.1.21.6.0
--  __TEXT.__text: 0x607880
--  __TEXT.__objc_methlist: 0x358c
-+  __TEXT.__text: 0x609e9c
-+  __TEXT.__objc_methlist: 0x35a4
-   __TEXT.__const: 0x23120
-   __TEXT.__gcc_except_tab: 0xf60
-   __TEXT.__cstring: 0x13bf0
-
-   __TEXT.__swift_as_entry: 0xc
-   __TEXT.__swift_as_ret: 0x4
-   __TEXT.__swift_as_cont: 0x10
--  __TEXT.__unwind_info: 0xb238
--  __TEXT.__eh_frame: 0x107fc
-+  __TEXT.__unwind_info: 0xb280
-+  __TEXT.__eh_frame: 0x1088c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x23d8
-+  __DATA_CONST.__objc_selrefs: 0x23e8
-   __DATA_CONST.__objc_protorefs: 0x40
-   __DATA_CONST.__objc_superrefs: 0x40
-   __DATA_CONST.__objc_arraydata: 0x3e8
-   __DATA_CONST.__got: 0x680
-   __AUTH_CONST.__const: 0x26c00
-   __AUTH_CONST.__cfstring: 0x860
--  __AUTH_CONST.__objc_const: 0x1a830
-+  __AUTH_CONST.__objc_const: 0x1a850
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x108
-   __AUTH_CONST.__objc_doubleobj: 0x1d0
-   __AUTH_CONST.__objc_arrayobj: 0x270
--  __AUTH_CONST.__auth_got: 0x1890
-+  __AUTH_CONST.__auth_got: 0x18a0
-   __AUTH.__objc_data: 0x1aa8
-   __AUTH.__data: 0x1a9b0
-   __DATA.__objc_ivar: 0x628
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 18808
--  Symbols:   39747
-+  Symbols:   39749
-   CStrings:  2298
- 
+-  Symbols:   39191
++  Symbols:   39193
 Symbols:
 + _objc_retain_x12
 + _swift_retain_x11

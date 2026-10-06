@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/LighthouseBackground.framework/LighthouseBackground`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xce2b0` | `0xce2e4` | **`+0x34`** |
+| `__AUTH_CONST.__auth_got` | `0xf30` | `0xf38` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 3.7.24.0.0
--  __TEXT.__text: 0xce2b0
-+  __TEXT.__text: 0xce2e4
-   __TEXT.__objc_methlist: 0x2f8
-   __TEXT.__const: 0x10962
-   __TEXT.__cstring: 0x18f8
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0xad20
-   __AUTH_CONST.__objc_const: 0xd40
--  __AUTH_CONST.__auth_got: 0xf30
-+  __AUTH_CONST.__auth_got: 0xf38
-   __AUTH.__objc_data: 0xe0
-   __AUTH.__data: 0x2048
-   __DATA.__data: 0x3598
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 5832
--  Symbols:   2015
-+  Symbols:   2016
-   CStrings:  376
- 
+-  Symbols:   1885
++  Symbols:   1886
 Symbols:
 + _swift_retain_x28
 Functions:

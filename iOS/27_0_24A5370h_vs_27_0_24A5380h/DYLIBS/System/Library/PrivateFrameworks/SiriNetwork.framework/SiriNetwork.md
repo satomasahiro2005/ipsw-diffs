@@ -2,114 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/SiriNetwork.framework/SiriNetwork`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__data` | `0x3880` | `0x4e70` | **`+0x15f0`** |
+| `__AUTH.__data` | `0x1ac8` | `0x7b8` | **`-0x1310`** |
+| `__AUTH.__objc_data` | `0x8f0` | `0x318` | **`-0x5d8`** |
+| `__DATA_DIRTY.__objc_data` | `0x1868` | `0x1e40` | **`+0x5d8`** |
+| `__TEXT.__text` | `0x13795c` | `0x137384` | **`-0x5d8`** |
+| `__TEXT.__unwind_info` | `0x5300` | `0x4eb8` | **`-0x448`** |
+| `__AUTH_CONST.__const` | `0xa578` | `0xa9a8` | **`+0x430`** |
+| `__DATA.__data` | `0x15a8` | `0x1368` | **`-0x240`** |
+| `__TEXT.__eh_frame` | `0x84a0` | `0x8360` | **`-0x140`** |
+| `__TEXT.__swift5_capture` | `0x2af0` | `0x2c1c` | **`+0x12c`** |
+| `__TEXT.__oslogstring` | `0xaa37` | `0xab57` | **`+0x120`** |
+| `__DATA_DIRTY.__bss` | `0x1c30` | `0x1d30` | **`+0x100`** |
+| `__DATA.__common` | `0x100` | `0x10` | **`-0xf0`** |
+| `__DATA_DIRTY.__common` | `0x218` | `0x300` | **`+0xe8`** |
+| `__TEXT.__constg_swiftt` | `0x573c` | `0x5808` | **`+0xcc`** |
+| `__AUTH_CONST.__objc_const` | `0xc330` | `0xc3e0` | **`+0xb0`** |
+| `__TEXT.__const` | `0x9070` | `0x9120` | **`+0xb0`** |
+| `__TEXT.__swift5_typeref` | `0x3396` | `0x3344` | **`-0x52`** |
+| `__TEXT.__swift5_reflstr` | `0x4638` | `0x4668` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x580` | `0x558` | **`-0x28`** |
+| `__TEXT.__swift_as_cont` | `0x6d8` | `0x6f4` | **`+0x1c`** |
+| `__TEXT.__swift5_fieldmd` | `0x3744` | `0x3758` | **`+0x14`** |
+| `__TEXT.__swift_as_ret` | `0x32c` | `0x340` | **`+0x14`** |
+| `__AUTH_CONST.__auth_got` | `0x1a00` | `0x1a10` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x1c8` | `0x1d0` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x23c` | `0x244` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x358` | `0x360` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x450` | `0x454` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x13795c
-+  __TEXT.__text: 0x137384
-   __TEXT.__objc_methlist: 0x282c
--  __TEXT.__const: 0x9070
-+  __TEXT.__const: 0x9120
-   __TEXT.__cstring: 0x1f83
--  __TEXT.__constg_swiftt: 0x573c
--  __TEXT.__swift5_typeref: 0x3396
--  __TEXT.__swift5_reflstr: 0x4638
--  __TEXT.__swift5_fieldmd: 0x3744
-+  __TEXT.__constg_swiftt: 0x5808
-+  __TEXT.__swift5_typeref: 0x3344
-+  __TEXT.__swift5_reflstr: 0x4668
-+  __TEXT.__swift5_fieldmd: 0x3758
-   __TEXT.__swift5_builtin: 0x168
-   __TEXT.__swift5_assocty: 0x410
--  __TEXT.__swift5_capture: 0x2af0
--  __TEXT.__oslogstring: 0xaa37
--  __TEXT.__swift5_proto: 0x450
--  __TEXT.__swift5_types: 0x23c
-+  __TEXT.__swift5_capture: 0x2c1c
-+  __TEXT.__oslogstring: 0xab57
-+  __TEXT.__swift5_proto: 0x454
-+  __TEXT.__swift5_types: 0x244
-   __TEXT.__swift5_mpenum: 0x44
-   __TEXT.__swift5_protos: 0xc8
--  __TEXT.__swift_as_entry: 0x358
--  __TEXT.__swift_as_ret: 0x32c
--  __TEXT.__swift_as_cont: 0x6d8
-+  __TEXT.__swift_as_entry: 0x360
-+  __TEXT.__swift_as_ret: 0x340
-+  __TEXT.__swift_as_cont: 0x6f4
-   __TEXT.__swift5_acfuncs: 0x14
--  __TEXT.__unwind_info: 0x5300
--  __TEXT.__eh_frame: 0x84a0
-+  __TEXT.__unwind_info: 0x4eb8
-+  __TEXT.__eh_frame: 0x8360
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x580
--  __DATA_CONST.__objc_classlist: 0x1c8
-+  __DATA_CONST.__const: 0x558
-+  __DATA_CONST.__objc_classlist: 0x1d0
-   __DATA_CONST.__objc_catlist: 0xc0
-   __DATA_CONST.__objc_protolist: 0x118
-   __DATA_CONST.__objc_imageinfo: 0x8
+-3600.30.2.0.0
++3600.30.6.0.0
 
-   __DATA_CONST.__objc_protorefs: 0x88
-   __DATA_CONST.__objc_superrefs: 0x50
-   __DATA_CONST.__got: 0x988
--  __AUTH_CONST.__const: 0xa578
-+  __AUTH_CONST.__const: 0xa9a8
-   __AUTH_CONST.__cfstring: 0x260
--  __AUTH_CONST.__objc_const: 0xc330
--  __AUTH_CONST.__auth_got: 0x1a00
--  __AUTH.__objc_data: 0x8f0
--  __AUTH.__data: 0x1ac8
-+  __AUTH_CONST.__objc_const: 0xc3e0
-+  __AUTH_CONST.__auth_got: 0x1a10
-+  __AUTH.__objc_data: 0x318
-+  __AUTH.__data: 0x7b8
-   __DATA.__objc_ivar: 0x1ac
--  __DATA.__data: 0x15a8
-+  __DATA.__data: 0x1368
-   __DATA.__bss: 0x5a00
--  __DATA.__common: 0x100
--  __DATA_DIRTY.__objc_data: 0x1868
--  __DATA_DIRTY.__data: 0x3880
--  __DATA_DIRTY.__bss: 0x1c30
--  __DATA_DIRTY.__common: 0x218
-+  __DATA.__common: 0x10
-+  __DATA_DIRTY.__objc_data: 0x1e40
-+  __DATA_DIRTY.__data: 0x4e70
-+  __DATA_DIRTY.__bss: 0x1d30
-+  __DATA_DIRTY.__common: 0x300
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9230
--  Symbols:   29084
--  CStrings:  848
+-  Symbols:   15100
+-  CStrings:  829
 +  Functions: 9246
-+  Symbols:   29197
-+  CStrings:  852
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_acfuncs : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__cfstring : content changed
++  Symbols:   15086
++  CStrings:  833
 Symbols:
 + _$s11SiriNetwork13MessageCenterC04sendbC0_2to7timeoutyx_AA0cD6DeviceVSdtYaKAA0cD10MessagableRzlFyyYaKcfU_TQ13_
 + _$s11SiriNetwork13MessageCenterC04sendbC0_2to7timeoutyx_AA0cD6DeviceVSdtYaKAA0cD10MessagableRzlFyyYaKcfU_TQ20_
@@ -444,5 +382,4 @@ CStrings:
 + "Stream creation cancelled during handshake for persona: %s, IDS: %s"
 + "Stream creation cancelled for persona: %s, IDS: %s; discarding stream"
 + "Stream creation timed out after %fs for persona: %s, IDS: %s"
-
 ```

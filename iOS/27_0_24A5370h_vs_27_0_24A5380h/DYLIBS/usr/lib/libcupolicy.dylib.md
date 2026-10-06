@@ -2,14 +2,12 @@
 
 > `/usr/lib/libcupolicy.dylib`
 
+### Other Changes
+
 ```diff
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
+
+-13473.1.0.0.0
++13478.3.1.3.0
 Symbols:
 + __ZNKSt3__111__copy_implclB9fqe220106IN3xpc5array8iteratorES4_NS_15insert_iteratorINS_3setINS2_4dictEN25CellularUsagePolicyClient22policy_cmp_by_bundleIdENS_9allocatorIS7_EEEEEELi0EEENS_4pairIT_T1_EESF_T0_SG_
 + __ZNKSt3__111__copy_implclB9fqe220106IN3xpc5array8iteratorES4_NS_20back_insert_iteratorIS3_EELi0EEENS_4pairIT_T1_EES8_T0_S9_
@@ -83,5 +81,4 @@ Symbols:
 - __ZNSt3__16__treeIN3xpc4dictEN25CellularUsagePolicyClient22policy_cmp_by_bundleIdENS_9allocatorIS2_EEE14__tree_deleterclB9foe220106EPNS_11__tree_nodeIS2_PvEE
 - __ZNSt3__1ssB9foe220106IcNS_11char_traitsIcEEEEDaNS_17basic_string_viewIT_T0_EENS_13type_identityIS7_E4typeE
 - __ZNSt3__1ssB9foe220106IcNS_11char_traitsIcEENS_9allocatorIcEEEEDaRKNS_12basic_stringIT_T0_T1_EESC_
-
 ```

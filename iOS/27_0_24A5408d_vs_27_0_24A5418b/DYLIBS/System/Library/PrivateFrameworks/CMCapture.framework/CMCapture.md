@@ -2,70 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/CMCapture.framework/CMCapture`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x610e84` | `0x612e2c` | **`+0x1fa8`** |
+| `__TEXT.__oslogstring` | `0x4cc4a` | `0x4d12d` | **`+0x4e3`** |
+| `__TEXT.__cstring` | `0xa5153` | `0xa533c` | **`+0x1e9`** |
+| `__AUTH_CONST.__objc_const` | `0xa5a08` | `0xa5b58` | **`+0x150`** |
+| `__AUTH_CONST.__cfstring` | `0x4c8c0` | `0x4c9a0` | **`+0xe0`** |
+| `__TEXT.__objc_methlist` | `0x3a2a8` | `0x3a358` | **`+0xb0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x172a8` | `0x172e8` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x101c0` | `0x101e8` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x10860` | `0x10888` | **`+0x28`** |
+| `__DATA.__objc_ivar` | `0xbc78` | `0xbc98` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x34b0` | `0x34c0` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -764.22.5.122.2
--  __TEXT.__text: 0x610e84
--  __TEXT.__objc_methlist: 0x3a2a8
 +764.22.12.0.0
-+  __TEXT.__text: 0x612e2c
-+  __TEXT.__objc_methlist: 0x3a358
-   __TEXT.__const: 0x1516a8
--  __TEXT.__cstring: 0xa5153
--  __TEXT.__oslogstring: 0x4cc4a
--  __TEXT.__gcc_except_tab: 0x34b0
-+  __TEXT.__cstring: 0xa533c
-+  __TEXT.__oslogstring: 0x4d12d
-+  __TEXT.__gcc_except_tab: 0x34c0
-   __TEXT.__dlopen_cstrs: 0x75b
-   __TEXT.__ustring: 0xc
--  __TEXT.__unwind_info: 0x10860
-+  __TEXT.__unwind_info: 0x10888
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x101c0
-+  __DATA_CONST.__const: 0x101e8
-   __DATA_CONST.__objc_classlist: 0x1ed8
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x628
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x172a8
-+  __DATA_CONST.__objc_selrefs: 0x172e8
-   __DATA_CONST.__objc_protorefs: 0x78
-   __DATA_CONST.__objc_superrefs: 0x1cf0
-   __DATA_CONST.__objc_arraydata: 0x3b40
-   __DATA_CONST.__got: 0x6fd0
-   __AUTH_CONST.__const: 0x45f8
--  __AUTH_CONST.__cfstring: 0x4c8c0
--  __AUTH_CONST.__objc_const: 0xa5a08
-+  __AUTH_CONST.__cfstring: 0x4c9a0
-+  __AUTH_CONST.__objc_const: 0xa5b58
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x6450
-   __AUTH_CONST.__objc_arrayobj: 0x2bf8
 
-   __AUTH_CONST.__auth_got: 0x2d00
-   __AUTH.__objc_data: 0x3b60
-   __AUTH.__data: 0x110
--  __DATA.__objc_ivar: 0xbc78
-+  __DATA.__objc_ivar: 0xbc98
-   __DATA.__data: 0x5968
-   __DATA.__crash_info: 0x148
-   __DATA.__common: 0x1640
-
-   - /usr/lib/liblockdown.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libtailspin.dylib
 -  Functions: 36743
--  Symbols:   65806
--  CStrings:  20458
+-  Symbols:   55428
+-  CStrings:  20459
 +  Functions: 36787
-+  Symbols:   65846
-+  CStrings:  20477
- 
++  Symbols:   55461
++  CStrings:  20478
 Symbols:
 + -[BWFigVideoCaptureDevice _setAutoImageControlMode:videoDataConsumersChanged:attachedMovieFileSinkPipelineChanged:completionHandler:]
 + -[BWFigVideoCaptureDevice decrementAttachedMovieFileSinkPipelineCountWasRecording:]
@@ -109,14 +74,6 @@ Symbols:
 + ___block_descriptor_57_e8_32o_e5_v8?0ls32l8
 + ___block_descriptor_70_e8_32o40r48r56r_e5_v8?0lr40l8r48l8s32l8r56l8
 + _cs_clientSpecifiedParsedCameraSourceConfigurationsFromParsedConfiguration
-+ _objc_msgSend$activePipelineDimensions
-+ _objc_msgSend$decrementAttachedMovieFileSinkPipelineCountWasRecording:
-+ _objc_msgSend$incrementAttachedMovieFileSinkPipelineCount
-+ _objc_msgSend$pixelBufferProviderForInferencesWithResolutionFlavor:portType:photoFormat:
-+ _objc_msgSend$portTypeForActivePipelineDimensions
-+ _objc_msgSend$prepareForReconfigurationWithInputDimensions:
-+ _objc_msgSend$setActivePipelineDimensions:
-+ _objc_msgSend$setPortTypeForActivePipelineDimensions:
 - -[BWFigVideoCaptureDevice _setAutoImageControlMode:completionHandler:]
 - -[BWFigVideoCaptureDevice _updateAutoImageControlModeForVideoDataConsumersChanged:attachedMovieFileSinkPipelineChanged:]
 - -[BWFigVideoCaptureDevice setHasAttachedMovieFileSinkPipeline:]
@@ -126,13 +83,13 @@ Symbols:
 - _OBJC_IVAR_$_BWFigVideoCaptureDevice._hasAttachedMovieFileSinkPipeline
 - ___70-[BWFigVideoCaptureDevice _setAutoImageControlMode:completionHandler:]_block_invoke
 - ___block_descriptor_60_e8_32o40r48r_e5_v8?0ls32l8r40l8r48l8
-- _objc_msgSend$setHasAttachedMovieFileSinkPipeline:
 CStrings:
 + " APD:%dx%d"
 + "%@ %p: captureID:%lld '%.4s'('%.4s')%@ %dx%d R:%d%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@"
 + "-[BWFigVideoCaptureDevice _setAutoImageControlMode:videoDataConsumersChanged:attachedMovieFileSinkPipelineChanged:completionHandler:]"
 + "-[BWInferenceEngineController prepareForReconfigurationWithInputDimensions:]"
 + "-[BWPhotonicEngineNodeConfiguration(Utilities) preNoiseReductionScalerInputCropDimensionsForInputDimensions:outputDimensions:]"
++ "22:50:34"
 + "<<<< BWPhotonicEngineNodeResourceCoordinator >>>> %s: [inference reconfigure] referenceFormatForInference %@, recomputed inference input %dx%d, reallocated intermediate pool %@, engine prepare format (unchanged since setup) %@"
 + "<<<< BWPhotonicEngineNodeUtilities >>>> %s: Fatal: pre-noise reduction scaler is configured to upscale %{public}@ to %{public}@ rather than crop down to it, so no crop will be applied and the delivered image will be incomplete -- the pipeline dimensions do not describe the buffer being processed"
 + "<<<< BWStillImageProcessing >>>> %s: [inference reconfigure] %{public}@ output format %{public}@ -> %{public}@"
@@ -144,6 +101,7 @@ CStrings:
 + "<<<< FigCaptureSession >>>> %s: %s ToF-AF for FTDC"
 + "ActivePipelineDimensions"
 + "Additional inference input on-demand allocator (%@, %@)"
++ "Aug 13 2026"
 + "ClientBracket"
 + "Disabling"
 + "LastShownBuild:BWFigVideoCaptureDevice.m:10025"
@@ -438,8 +396,10 @@ CStrings:
 + "ptapd"
 - "%@ %p: captureID:%lld '%.4s'('%.4s')%@ %dx%d R:%d%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@"
 - "-[BWFigVideoCaptureDevice _setAutoImageControlMode:completionHandler:]"
+- "00:19:31"
 - "<<<< FigCaptureDeferredProcessingEngine >>>> %s: %@ graph: cameraParametersCompatible:%d portTypesMatch:%d, pipelineParametersCompatible:%d, captureTypesMatch:%d, learnedNRHighlightRecoveryMethodCompatible:%d, deferredPhotoFinalDimensionsCompatible:%d, containerAndGraphSourceNodeOutputDimensionsMatch:%d, demosaicedRawMatch:%d, demosaicedRawAllowsGraphReuse:%d, ultraHighResolutionCaptureAllowsGraphReuse:%d, enhancedResolutionAllowsGraphReuse:%d, stereoPhotoMatch:%d, depthDataMatch:%d, portraitRenderingCompatible:%d, backgroundQoSTransitionAllowsGraphReuse:%d"
 - "<<<< FigCapturePhotonicEngineSinkPipeline >>>> %s: Still Image PhotonicEngine Pipeline Configuration (continued):%{public}@%{public}@%{public}@%{public}@%{public}@%{public}@%{public}@%{public}@%{public}@%{public}@%{public}@%{public}@"
+- "Aug  5 2026"
 - "LastShownBuild:BWFigVideoCaptureDevice.m:10026"
 - "LastShownBuild:BWFigVideoCaptureDevice.m:10507"
 - "LastShownBuild:BWFigVideoCaptureDevice.m:11089"

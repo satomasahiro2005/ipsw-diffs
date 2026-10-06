@@ -2,14 +2,15 @@
 
 > `/usr/lib/libpcre2-8.0.dylib`
 
-```diff
+### Section Size Changes
 
- 26.0.0.0.0
--  __TEXT.__text: 0x2a2f0
-+  __TEXT.__text: 0x2a248
-   __TEXT.__const: 0x20674
-   __TEXT.__cstring: 0x1e0
-   __TEXT.__unwind_info: 0x230
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2a2f0` | `0x2a248` | **`-0xa8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _pcre2_compile_8 : 3584 -> 3588
 ~ _parse_regex : 13648 -> 13652

@@ -2,30 +2,30 @@
 
 > `/System/Library/Filesystems/apfs.fs/apfs_checkseal`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4f80c` | `0x4fb80` | **`+0x374`** |
+| `__TEXT.__cstring` | `0xfefd` | `0x10016` | **`+0x119`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x4f80c
-+  __TEXT.__text: 0x4fb80
-   __TEXT.__auth_stubs: 0x760
-   __TEXT.__const: 0x4c0
--  __TEXT.__cstring: 0xfefd
-+  __TEXT.__cstring: 0x10016
-   __TEXT.__unwind_info: 0x900
-   __DATA_CONST.__const: 0x7b8
-   __DATA_CONST.__cfstring: 0x160
+-3283.0.0.0.0
++3283.0.9.502.1
 
-   - /usr/lib/libutil.dylib
-   Functions: 747
-   Symbols:   133
--  CStrings:  1296
-+  CStrings:  1301
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA.__data : content changed
+-  CStrings:  1285
++  CStrings:  1290
 Functions:
 ~ sub_1000168b8 : 1208 -> 1364
 ~ sub_10001d12c -> sub_10001d1c8 : 516 -> 520
@@ -57,5 +57,4 @@ CStrings:
 - "%s:%d: %s failed to allocate block from internal pool: %d\n"
 - "%s:%d: %s failed to create bitmap object %lld: %d\n"
 - "%s:%d: %s failed to free internal pool block %lld: %d\n"
-
 ```

@@ -2,84 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/SiriVideoUIFramework.framework/SiriVideoUIFramework`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x13b98` | `0x1aec4` | **`+0x732c`** |
+| `__TEXT.__swift5_typeref` | `0xbfa` | `0x106d` | **`+0x473`** |
+| `__AUTH_CONST.__auth_got` | `0x760` | `0xa00` | **`+0x2a0`** |
+| `__TEXT.__eh_frame` | `0x38` | `0x298` | **`+0x260`** |
+| `__TEXT.__const` | `0x9e6` | `0xb80` | **`+0x19a`** |
+| `__TEXT.__cstring` | `0xe5` | `0x263` | **`+0x17e`** |
+| `__DATA.__data` | `0x5c0` | `0x728` | **`+0x168`** |
+| `__TEXT.__unwind_info` | `0x460` | `0x5a0` | **`+0x140`** |
+| `__AUTH_CONST.__const` | `0x390` | `0x498` | **`+0x108`** |
+| `__TEXT.__oslogstring` | `0xf5` | `0x1cb` | **`+0xd6`** |
+| `__DATA.__bss` | `0x4a0` | `0x530` | **`+0x90`** |
+| `__AUTH.__data` | `0x4b8` | `0x540` | **`+0x88`** |
+| `__TEXT.__constg_swiftt` | `0x2f8` | `0x348` | **`+0x50`** |
+| `__TEXT.__swift5_fieldmd` | `0x1f0` | `0x218` | **`+0x28`** |
+| `__TEXT.__swift5_reflstr` | `0x164` | `0x184` | **`+0x20`** |
+| `__TEXT.__swift5_assocty` | `0xd8` | `0xf0` | **`+0x18`** |
+| `__TEXT.__swift5_capture` | `0x160` | `0x174` | **`+0x14`** |
+| `__TEXT.__swift_as_cont` | `—` | `0xc` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `—` | `0xc` | **`+0xc`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x24` | `0x28` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0x28` | `0x2c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3600.28.7.0.0
--  __TEXT.__text: 0x12c30
--  __TEXT.__const: 0x9e6
--  __TEXT.__cstring: 0xe5
--  __TEXT.__swift5_typeref: 0xbfa
--  __TEXT.__swift5_capture: 0x160
--  __TEXT.__swift5_reflstr: 0x164
--  __TEXT.__swift5_assocty: 0xd8
--  __TEXT.__constg_swiftt: 0x2f8
--  __TEXT.__swift5_fieldmd: 0x1f0
--  __TEXT.__swift5_proto: 0x24
--  __TEXT.__swift5_types: 0x28
--  __TEXT.__oslogstring: 0xf5
--  __TEXT.__unwind_info: 0x530
--  __TEXT.__eh_frame: 0x38
 +3605.20.2.0.0
-+  __TEXT.__text: 0x1989c
-+  __TEXT.__const: 0xb80
-+  __TEXT.__cstring: 0x263
-+  __TEXT.__swift5_typeref: 0x106d
-+  __TEXT.__swift5_capture: 0x174
-+  __TEXT.__oslogstring: 0x1cb
-+  __TEXT.__swift_as_entry: 0x8
-+  __TEXT.__swift_as_ret: 0xc
-+  __TEXT.__swift_as_cont: 0xc
-+  __TEXT.__swift5_reflstr: 0x184
-+  __TEXT.__swift5_assocty: 0xf0
-+  __TEXT.__constg_swiftt: 0x348
-+  __TEXT.__swift5_fieldmd: 0x218
-+  __TEXT.__swift5_proto: 0x28
-+  __TEXT.__swift5_types: 0x2c
-+  __TEXT.__unwind_info: 0x688
-+  __TEXT.__eh_frame: 0x298
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x58
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x390
--  __AUTH_CONST.__auth_got: 0x760
--  __AUTH.__data: 0x4b8
--  __DATA.__data: 0x5c0
-+  __AUTH_CONST.__const: 0x498
-+  __AUTH_CONST.__auth_got: 0xa00
-+  __AUTH.__data: 0x540
-+  __DATA.__data: 0x728
-   __DATA.__common: 0x20
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-   - /System/Library/Frameworks/UIKit.framework/UIKit
 +  - /System/Library/PrivateFrameworks/IntelligenceFlow.framework/IntelligenceFlow
-   - /System/Library/PrivateFrameworks/MediaIntentsSnippetModels.framework/MediaIntentsSnippetModels
-   - /System/Library/PrivateFrameworks/SiriUtilities.framework/SiriUtilities
-   - /System/Library/PrivateFrameworks/SiriVideoIntents.framework/SiriVideoIntents
-   - /System/Library/PrivateFrameworks/SnippetKit.framework/SnippetKit
-   - /System/Library/PrivateFrameworks/SnippetUI.framework/SnippetUI
-+  - /System/Library/PrivateFrameworks/ToolKit.framework/ToolKit
-   - /System/Library/PrivateFrameworks/VideosUICore.framework/VideosUICore
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
++  - /System/Library/PrivateFrameworks/ToolKit.framework/ToolKit
+
 +  - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 362
--  Symbols:   316
+-  Symbols:   305
 -  CStrings:  10
 +  Functions: 477
-+  Symbols:   377
++  Symbols:   366
 +  CStrings:  26
- 
 Symbols:
 + _OUTLINED_FUNCTION_11
 + _OUTLINED_FUNCTION_12

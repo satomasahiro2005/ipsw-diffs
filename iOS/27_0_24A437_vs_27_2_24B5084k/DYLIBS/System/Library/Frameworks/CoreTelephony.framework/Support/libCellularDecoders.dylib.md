@@ -2,17 +2,16 @@
 
 > `/System/Library/Frameworks/CoreTelephony.framework/Support/libCellularDecoders.dylib`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -13487.7.0.0.0
 +13494.0.0.0.0
-   __TEXT.__text: 0x29c0c
-   __TEXT.__gcc_except_tab: 0x1c00
-   __TEXT.__cstring: 0x2457
 CStrings:
 + "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/include/c++/v1/__bit_reference:113: libc++ Hardening assertion __ctz + __clz < sizeof(_StorageType) * 8 failed: __fill_masked_range called with invalid range\n"
 + "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/include/c++/v1/__vector/vector.h:414: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"

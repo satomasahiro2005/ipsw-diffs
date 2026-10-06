@@ -2,84 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/Geometry.framework/Geometry`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x50` | `0x1ae0` | **`+0x1a90`** |
+| `__DATA_DIRTY.__objc_data` | `0x1a40` | `—` | **`-0x1a40`** |
+| `__TEXT.__text` | `0x1c0078` | `0x1c0674` | **`+0x5fc`** |
+| `__AUTH_CONST.__objc_const` | `0x2fd0` | `0x3060` | **`+0x90`** |
+| `__TEXT.__unwind_info` | `0x78f0` | `0x7968` | **`+0x78`** |
+| `__TEXT.__const` | `0x15fe8` | `0x16048` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0x15dc` | `0x1638` | **`+0x5c`** |
+| `__TEXT.__objc_methlist` | `0x1298` | `0x12d0` | **`+0x38`** |
+| `__AUTH_CONST.__auth_got` | `0x6e8` | `0x708` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x498` | `0x4b8` | **`+0x20`** |
+| `__TEXT.__eh_frame` | `0xf20` | `0xf38` | **`+0x18`** |
+| `__DATA.__data` | `0x1868` | `0x1870` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x2a8` | `0x2b0` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x2a8` | `0x2b0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1c0078
--  __TEXT.__objc_methlist: 0x1298
--  __TEXT.__const: 0x15fe8
-+  __TEXT.__text: 0x1c0674
-+  __TEXT.__objc_methlist: 0x12d0
-+  __TEXT.__const: 0x16048
-   __TEXT.__cstring: 0x170c
--  __TEXT.__gcc_except_tab: 0x15dc
-+  __TEXT.__gcc_except_tab: 0x1638
-   __TEXT.__oslogstring: 0x256
-   __TEXT.__constg_swiftt: 0x1fec
-   __TEXT.__swift5_typeref: 0x2c8a
+-67.0.1.0.0
++67.0.2.0.0
 
-   __TEXT.__swift5_protos: 0xa4
-   __TEXT.__swift5_proto: 0x36c
-   __TEXT.__swift5_capture: 0x240
--  __TEXT.__unwind_info: 0x78f0
--  __TEXT.__eh_frame: 0xf20
-+  __TEXT.__unwind_info: 0x7968
-+  __TEXT.__eh_frame: 0xf38
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x5c0
--  __DATA_CONST.__objc_classlist: 0x2a8
-+  __DATA_CONST.__objc_classlist: 0x2b0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x20
--  __DATA_CONST.__objc_superrefs: 0x2a8
--  __DATA_CONST.__got: 0x498
-+  __DATA_CONST.__objc_superrefs: 0x2b0
-+  __DATA_CONST.__got: 0x4b8
-   __AUTH_CONST.__const: 0x7e30
-   __AUTH_CONST.__cfstring: 0x20
--  __AUTH_CONST.__objc_const: 0x2fd0
-+  __AUTH_CONST.__objc_const: 0x3060
-   __AUTH_CONST.__weak_auth_got: 0x28
--  __AUTH_CONST.__auth_got: 0x6e8
--  __AUTH.__objc_data: 0x50
-+  __AUTH_CONST.__auth_got: 0x708
-+  __AUTH.__objc_data: 0x1ae0
-   __AUTH.__data: 0x2560
--  __DATA.__data: 0x1868
-+  __DATA.__data: 0x1870
-   __DATA.__bss: 0x62f0
--  __DATA_DIRTY.__objc_data: 0x1a40
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9589
--  Symbols:   17158
+-  Symbols:   10296
 +  Functions: 9626
-+  Symbols:   17214
-   CStrings:  200
- 
-Sections:
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__data : content changed
++  Symbols:   10341
 Symbols:
 + +[OS_geom_mp_build_box_options new]
 + -[OS_geom_mp_build_box_options dealloc]
@@ -134,5 +86,4 @@ Symbols:
 - GCC_except_table19
 - GCC_except_table34
 - __ZN4geom2mp12_GLOBAL__N_17addGridERNS1_8MeshDataERKDv3_fS6_S6_S6_jj
-
 ```

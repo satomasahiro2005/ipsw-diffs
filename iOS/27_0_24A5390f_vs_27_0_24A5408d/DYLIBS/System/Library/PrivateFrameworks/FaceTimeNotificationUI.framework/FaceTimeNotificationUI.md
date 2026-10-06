@@ -2,89 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/FaceTimeNotificationUI.framework/FaceTimeNotificationUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcd970` | `0xd23cc` | **`+0x4a5c`** |
+| `__TEXT.__swift5_typeref` | `0x10bc6` | `0x11374` | **`+0x7ae`** |
+| `__AUTH_CONST.__const` | `0x56b8` | `0x5988` | **`+0x2d0`** |
+| `__TEXT.__const` | `0xb4f4` | `0xb754` | **`+0x260`** |
+| `__TEXT.__constg_swiftt` | `0x3800` | `0x39e4` | **`+0x1e4`** |
+| `__DATA.__data` | `0x3e80` | `0x4020` | **`+0x1a0`** |
+| `__DATA.__bss` | `0xb968` | `0xbaf8` | **`+0x190`** |
+| `__TEXT.__unwind_info` | `0x2f00` | `0x3018` | **`+0x118`** |
+| `__TEXT.__swift5_capture` | `0x1204` | `0x12d4` | **`+0xd0`** |
+| `__TEXT.__swift5_reflstr` | `0x20be` | `0x218e` | **`+0xd0`** |
+| `__TEXT.__swift5_fieldmd` | `0x2ab4` | `0x2b78` | **`+0xc4`** |
+| `__AUTH.__objc_data` | `0xa70` | `0xb30` | **`+0xc0`** |
+| `__AUTH.__data` | `0x3ca0` | `0x3d50` | **`+0xb0`** |
+| `__TEXT.__eh_frame` | `0x25d8` | `0x2668` | **`+0x90`** |
+| `__AUTH_CONST.__objc_const` | `0x2a20` | `0x2aa8` | **`+0x88`** |
+| `__TEXT.__cstring` | `0x11aa` | `0x121a` | **`+0x70`** |
+| `__TEXT.__objc_methlist` | `0x2ec` | `0x354` | **`+0x68`** |
+| `__TEXT.__swift5_assocty` | `0x7a0` | `0x7f0` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x668` | `0x6b0` | **`+0x48`** |
+| `__AUTH_CONST.__auth_got` | `0x2068` | `0x20a8` | **`+0x40`** |
+| `__TEXT.__swift5_types` | `0x270` | `0x284` | **`+0x14`** |
+| `__TEXT.__swift5_proto` | `0x59c` | `0x5a8` | **`+0xc`** |
+| `__DATA_CONST.__got` | `0xdf8` | `0xdf0` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0xb8` | `0xc0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3068.100.3.0.0
--  __TEXT.__text: 0xcd970
--  __TEXT.__objc_methlist: 0x2ec
--  __TEXT.__const: 0xb4f4
--  __TEXT.__constg_swiftt: 0x3800
--  __TEXT.__swift5_typeref: 0x10bc6
 +3072.100.1.2.2
-+  __TEXT.__text: 0xd23cc
-+  __TEXT.__objc_methlist: 0x354
-+  __TEXT.__const: 0xb754
-+  __TEXT.__constg_swiftt: 0x39e4
-+  __TEXT.__swift5_typeref: 0x11374
-   __TEXT.__swift5_builtin: 0x17c
--  __TEXT.__swift5_reflstr: 0x20be
--  __TEXT.__swift5_fieldmd: 0x2ab4
--  __TEXT.__swift5_assocty: 0x7a0
--  __TEXT.__swift5_proto: 0x59c
--  __TEXT.__swift5_types: 0x270
--  __TEXT.__swift5_capture: 0x1204
-+  __TEXT.__swift5_reflstr: 0x218e
-+  __TEXT.__swift5_fieldmd: 0x2b78
-+  __TEXT.__swift5_assocty: 0x7f0
-+  __TEXT.__swift5_proto: 0x5a8
-+  __TEXT.__swift5_types: 0x284
-+  __TEXT.__swift5_capture: 0x12d4
-   __TEXT.__swift5_mpenum: 0x68
-   __TEXT.__oslogstring: 0x3979
--  __TEXT.__cstring: 0x11aa
-+  __TEXT.__cstring: 0x121a
-   __TEXT.__swift_as_entry: 0xd0
-   __TEXT.__swift_as_cont: 0x14c
-   __TEXT.__swift_as_ret: 0x80
-   __TEXT.__swift5_protos: 0x3c
-   __TEXT.__lldbsummaries: 0x3f
--  __TEXT.__unwind_info: 0x2f00
--  __TEXT.__eh_frame: 0x25d8
-+  __TEXT.__unwind_info: 0x3018
-+  __TEXT.__eh_frame: 0x2668
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x468
--  __DATA_CONST.__objc_classlist: 0xb8
-+  __DATA_CONST.__objc_classlist: 0xc0
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x668
-+  __DATA_CONST.__objc_selrefs: 0x6b0
-   __DATA_CONST.__objc_protorefs: 0x38
--  __DATA_CONST.__got: 0xdf8
--  __AUTH_CONST.__const: 0x56b8
--  __AUTH_CONST.__objc_const: 0x2a20
--  __AUTH_CONST.__auth_got: 0x2068
--  __AUTH.__objc_data: 0xa70
--  __AUTH.__data: 0x3ca0
--  __DATA.__data: 0x3e80
--  __DATA.__bss: 0xb968
-+  __DATA_CONST.__got: 0xdf0
-+  __AUTH_CONST.__const: 0x5988
-+  __AUTH_CONST.__objc_const: 0x2aa8
-+  __AUTH_CONST.__auth_got: 0x20a8
-+  __AUTH.__objc_data: 0xb30
-+  __AUTH.__data: 0x3d50
-+  __DATA.__data: 0x4020
-+  __DATA.__bss: 0xbaf8
-   __DATA.__common: 0xc8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/Combine.framework/Combine
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4646
--  Symbols:   2032
+-  Symbols:   1863
 -  CStrings:  385
 +  Functions: 4739
-+  Symbols:   2083
++  Symbols:   1906
 +  CStrings:  387
- 
 Symbols:
 + _OBJC_CLASS_$_CAGradientLayer
 + _OBJC_METACLASS_$__TtC22FaceTimeNotificationUIP33_BB2B26A99A278759797964556D4CCBD124ContextCardsFadeMaskView
@@ -109,14 +68,6 @@ Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyAA20GlassEffectContainerVyAA4ViewPAAE05glassF0_2inQrAA0E0V_qd__tAA5ShapeRd__lFQOyACyACyACyACyACyAA24ButtonStyleConfigurationV5LabelVAA12_FrameLayoutVGAA05_ClipF0VyAA6CircleVGGAA01_dK8ModifierVyAWGGAA011_ForegroundmT0VyAA5ColorVGGAA08_OpacityF0VG_AWQo_GAA022_EnvironmentKeyWritingT0VyAA0V6SchemeOGGAA08_OverlayT0VyACyAA08_StrokedK0VyAWGA3_yAA012HierarchicalkM0VGGSgGGAaFHPA18_AaFHPA12_AaFHPyHC_A17_AA0hT0HPyHCHC_A29_AAA31_HPyHCHC
 + _get_witness_table 7SwiftUI16ScrollViewReaderVyAA0D0PAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVyAeAE14scrollDisabledyQrSbFQOyAA0cD0VyAA6IDViewVyAJyAJyAA10LazyVStackVyAA05TupleK0VyAeAE0F10TapGesture5count7performQrSi_yyctFQOyAJy014CommunicationsB0011ContextCardD0VAA01_K13ShapeModifierVyAA9RectangleVGG_Qo__AJyAJyAeAE11buttonStyleyQrqd__AA11ButtonStyleRd__lFQOyAA6ButtonVyAA6HStackVyASyAA4TextV_AA6SpacerVAJyAJyAA5ImageVAA022_EnvironmentKeyWritingZ0VyAA4FontVSgGGAA15_RotationEffectVGQPGGG_020FaceTimeNotificationB00wX14RowButtonStyle33_BB2B26A99A278759797964556D4CCBD1LLVQo_A18_yAA11ColorSchemeOGGAA14_PaddingLayoutVGSgAA7ForEachVySnySiGSiA4_GSgQPGGA40_GA40_GSSGG_Qo_AA010_AnimationZ0VySbGG_SbQo_GAaDHPyHC
 + _get_witness_table 7SwiftUI19_ConditionalContentVyAA08ModifiedD0VyAEy020FaceTimeNotificationB022MaskedHostingContainer33_BB2B26A99A278759797964556D4CCBD1LLVyAF012ContextCardsD4ViewV06ScrollD0AHLLVAEyAEyAA6VStackVyAA05TupleD0VyAA0T0PAAE12onTapGesture5count7performQrSi_yyctFQOyAEy014CommunicationsB00r4CardT0VAA01_D13ShapeModifierVyAA9RectangleVGG_Qo__AEyAEyAsAE11buttonStyleyQrqd__AA11ButtonStyleRd__lFQOyAA6ButtonVyAA6HStackVyAQyAA4TextV_AA6SpacerVAEyAEyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA15_RotationEffectVGQPGGG_AF0R18CardRowButtonStyleAHLLVQo_A18_yAA11ColorSchemeOGGAA14_PaddingLayoutVGSgQPGGA38_GA38_GAEyAEyAOyAQyA4__A40_AA7ForEachVySnySiGSiAYGQPGGA38_GA38_GGAA16_FlexFrameLayoutVGAA25_AppearanceActionModifierVGAEyAA5ColorVAA19_BackgroundModifierVyAA14GeometryReaderVyAEyA61_A58_GGGGGAaRHPA59_AaRHPA56_AaRHPA53_AaRHPyHC_A55_AA0T8ModifierHPyHCHC_A58_AAA71_HPyHCHC_A69_AaRHPA61_AaRHPyHC_A68_AAA71_HPyHCHCHC
-+ _objc_msgSend$CGColor
-+ _objc_msgSend$blackColor
-+ _objc_msgSend$initWithDouble:
-+ _objc_msgSend$intrinsicContentSize
-+ _objc_msgSend$maskView
-+ _objc_msgSend$setColors:
-+ _objc_msgSend$setLocations:
-+ _objc_msgSend$setMaskView:
 + _swift_allocateGenericClassMetadata
 + _swift_initClassMetadata2
 + _symbolic _____ 22FaceTimeNotificationUI22MaskedHostingContainer33_BB2B26A99A278759797964556D4CCBD1LLV

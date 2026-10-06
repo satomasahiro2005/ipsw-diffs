@@ -2,43 +2,28 @@
 
 > `/System/Library/PrivateFrameworks/IOMobileFramebuffer.framework/IOMobileFramebuffer`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3b860` | `0x3b328` | **`-0x538`** |
+| `__TEXT.__cstring` | `0x968d` | `0x96dc` | **`+0x4f`** |
+| `__AUTH_CONST.__cfstring` | `0xae0` | `0xb00` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x238` | `0x234` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x3b860
--  __TEXT.__gcc_except_tab: 0x238
-+  __TEXT.__text: 0x3b328
-+  __TEXT.__gcc_except_tab: 0x234
-   __TEXT.__const: 0x1b04
--  __TEXT.__cstring: 0x968d
-+  __TEXT.__cstring: 0x96dc
-   __TEXT.__unwind_info: 0x928
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0xb8
-   __DATA_CONST.__weak_got: 0x10
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x140
--  __AUTH_CONST.__cfstring: 0xae0
-+  __AUTH_CONST.__cfstring: 0xb00
-   __AUTH_CONST.__weak_auth_got: 0x20
-   __AUTH_CONST.__auth_got: 0x430
-   __DATA.__data: 0x44
+-700.50.72.0.0
++700.50.80.0.0
 
-   - /System/Library/Frameworks/IOSurface.framework/IOSurface
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 918
--  Symbols:   1996
--  CStrings:  1037
+-  Symbols:   1090
+-  CStrings:  950
 +  Functions: 919
-+  Symbols:   1998
-+  CStrings:  1040
- 
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
++  Symbols:   1091
++  CStrings:  952
 Symbols:
 + _OUTLINED_FUNCTION_40
 Functions:
@@ -129,5 +114,4 @@ Functions:
 CStrings:
 + "Parser i: PDC RR inheriting NR bin interp: bin_low=%u t=%g\n"
 + "vblank_duration_us"
-
 ```

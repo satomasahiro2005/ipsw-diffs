@@ -2,87 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/SecurePairing.framework/SecurePairing`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x722c4` | `0x75b44` | **`+0x3880`** |
+| `__DATA.__bss` | `0x13800` | `0x14500` | **`+0xd00`** |
+| `__TEXT.__const` | `0xae3c` | `0xb42c` | **`+0x5f0`** |
+| `__AUTH_CONST.__const` | `0x6018` | `0x6320` | **`+0x308`** |
+| `__TEXT.__eh_frame` | `0x448c` | `0x4614` | **`+0x188`** |
+| `__TEXT.__swift5_typeref` | `0x23ff` | `0x252b` | **`+0x12c`** |
+| `__DATA.__data` | `0x1ce8` | `0x1dc8` | **`+0xe0`** |
+| `__TEXT.__swift5_fieldmd` | `0x2358` | `0x2430` | **`+0xd8`** |
+| `__TEXT.__constg_swiftt` | `0x2d24` | `0x2df4` | **`+0xd0`** |
+| `__TEXT.__unwind_info` | `0x1ef0` | `0x1f98` | **`+0xa8`** |
+| `__AUTH.__data` | `0x2478` | `0x2508` | **`+0x90`** |
+| `__TEXT.__swift5_proto` | `0xa6c` | `0xadc` | **`+0x70`** |
+| `__TEXT.__cstring` | `0x1180` | `0x11e0` | **`+0x60`** |
+| `__TEXT.__oslogstring` | `0xe64` | `0xeb4` | **`+0x50`** |
+| `__TEXT.__swift5_assocty` | `0x4a8` | `0x4d8` | **`+0x30`** |
+| `__TEXT.__swift5_reflstr` | `0x1044` | `0x1064` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x344` | `0x35c` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0xbb8` | `0xbc8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x722c4
--  __TEXT.__const: 0xae3c
--  __TEXT.__swift5_typeref: 0x23ff
--  __TEXT.__cstring: 0x1180
--  __TEXT.__swift5_reflstr: 0x1044
--  __TEXT.__swift5_assocty: 0x4a8
--  __TEXT.__constg_swiftt: 0x2d24
--  __TEXT.__swift5_fieldmd: 0x2358
-+  __TEXT.__text: 0x75b44
-+  __TEXT.__const: 0xb42c
-+  __TEXT.__swift5_typeref: 0x252b
-+  __TEXT.__cstring: 0x11e0
-+  __TEXT.__swift5_reflstr: 0x1064
-+  __TEXT.__swift5_assocty: 0x4d8
-+  __TEXT.__constg_swiftt: 0x2df4
-+  __TEXT.__swift5_fieldmd: 0x2430
-   __TEXT.__swift5_builtin: 0x12c
--  __TEXT.__oslogstring: 0xe64
--  __TEXT.__swift5_proto: 0xa6c
--  __TEXT.__swift5_types: 0x344
-+  __TEXT.__oslogstring: 0xeb4
-+  __TEXT.__swift5_proto: 0xadc
-+  __TEXT.__swift5_types: 0x35c
-   __TEXT.__swift_as_entry: 0xbc
-   __TEXT.__swift_as_ret: 0x70
-   __TEXT.__swift_as_cont: 0x114
-   __TEXT.__swift5_mpenum: 0xd0
-   __TEXT.__swift5_capture: 0x3bc
-   __TEXT.__swift5_protos: 0x74
--  __TEXT.__unwind_info: 0x1ef0
--  __TEXT.__eh_frame: 0x448c
-+  __TEXT.__unwind_info: 0x1f98
-+  __TEXT.__eh_frame: 0x4614
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-59.0.0.0.0
++61.0.0.0.0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x18
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x6018
-+  __AUTH_CONST.__const: 0x6320
-   __AUTH_CONST.__objc_const: 0x1fe0
--  __AUTH_CONST.__auth_got: 0xbb8
-+  __AUTH_CONST.__auth_got: 0xbc8
-   __AUTH.__objc_data: 0xf0
--  __AUTH.__data: 0x2478
--  __DATA.__data: 0x1ce8
--  __DATA.__bss: 0x13800
-+  __AUTH.__data: 0x2508
-+  __DATA.__data: 0x1dc8
-+  __DATA.__bss: 0x14500
-   __DATA.__common: 0x90
-   - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 2577
--  Symbols:   1392
+-  Symbols:   1234
 -  CStrings:  205
 +  Functions: 2637
-+  Symbols:   1428
++  Symbols:   1269
 +  CStrings:  210
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
 Symbols:
 + ___swift_memcpy5_4
 + _associated conformance 13SecurePairing0aB9DaemonXPCO10XPCRequestO17SigmaSessionEndedV10CodingKeys33_271BE45915BAEC7B58D1828317BE5C2ALLOSHAASQ
@@ -125,5 +80,4 @@ CStrings:
 + "error ending the session: %@"
 + "sigmaSessionEnded"
 + "unpairAll(clientClass:)"
-
 ```

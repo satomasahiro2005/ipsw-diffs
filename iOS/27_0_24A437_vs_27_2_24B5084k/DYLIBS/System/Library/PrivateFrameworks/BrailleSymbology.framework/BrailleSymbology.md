@@ -2,15 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/BrailleSymbology.framework/BrailleSymbology`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xae94` | `0xae9c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -587.0.3.0.0
--  __TEXT.__text: 0xa8a8
 +591.4.1.0.0
-+  __TEXT.__text: 0xa8b0
-   __TEXT.__objc_methlist: 0x13c
-   __TEXT.__const: 0x1078
-   __TEXT.__constg_swiftt: 0x868
 Functions:
-~ sub_253bf9e0c -> sub_2575dce0c : 604 -> 612
+~ sub_2564cc220 -> sub_25a463220 : 616 -> 624
 ```

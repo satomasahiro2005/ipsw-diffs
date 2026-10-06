@@ -2,124 +2,59 @@
 
 > `/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1bf0814` | `0x1bf24d4` | **`+0x1cc0`** |
+| `__AUTH.__objc_data` | `0x56e40` | `0x558a8` | **`-0x1598`** |
+| `__DATA_DIRTY.__objc_data` | `0x2e420` | `0x2f688` | **`+0x1268`** |
+| `__DATA_DIRTY.__bss` | `0x15c58` | `0x16678` | **`+0xa20`** |
+| `__DATA.__bss` | `0x3f5c8` | `0x3ec80` | **`-0x948`** |
+| `__AUTH_CONST.__objc_const` | `0x27b4f8` | `0x27b0e0` | **`-0x418`** |
+| `__TEXT.__oslogstring` | `0x559a1` | `0x55ca4` | **`+0x303`** |
+| `__TEXT.__cstring` | `0x10209e` | `0x10236b` | **`+0x2cd`** |
+| `__DATA_DIRTY.__data` | `0xba5a` | `0xbc6a` | **`+0x210`** |
+| `__TEXT.__constg_swiftt` | `0x1dbf8` | `0x1da4c` | **`-0x1ac`** |
+| `__DATA_DIRTY.__objc_ivar` | `0x87dc` | `0x895c` | **`+0x180`** |
+| `__TEXT.__objc_methlist` | `0x1a0c30` | `0x1a0ab0` | **`-0x180`** |
+| `__DATA.__objc_ivar` | `0x11e1c` | `0x11ca0` | **`-0x17c`** |
+| `__TEXT.__gcc_except_tab` | `0x26d8c` | `0x26ee4` | **`+0x158`** |
+| `__AUTH_CONST.__const` | `0x5dd20` | `0x5de40` | **`+0x120`** |
+| `__AUTH.__data` | `0xacd8` | `0xabd8` | **`-0x100`** |
+| `__DATA.__data` | `0x33130` | `0x33070` | **`-0xc0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x96230` | `0x96170` | **`-0xc0`** |
+| `__TEXT.__const` | `0x4da38` | `0x4dac8` | **`+0x90`** |
+| `__TEXT.__eh_frame` | `0xbaf0` | `0xbb48` | **`+0x58`** |
+| `__TEXT.__unwind_info` | `0x72830` | `0x72888` | **`+0x58`** |
+| `__AUTH_CONST.__cfstring` | `0xb3ae0` | `0xb3aa0` | **`-0x40`** |
+| `__TEXT.__swift5_typeref` | `0x19238` | `0x1926a` | **`+0x32`** |
+| `__DATA_CONST.__const` | `0x3ecc8` | `0x3ecf8` | **`+0x30`** |
+| `__DATA_DIRTY.__common` | `0x650` | `0x680` | **`+0x30`** |
+| `__DATA.__common` | `0x3958` | `0x3938` | **`-0x20`** |
+| `__TEXT.__swift5_assocty` | `0x4f70` | `0x4f58` | **`-0x18`** |
+| `__DATA_CONST.__got` | `0x90a0` | `0x9090` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0xb428` | `0xb418` | **`-0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x174a0` | `0x174b0` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x17b5f` | `0x17b4f` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x8740` | `0x8748` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0xdd0` | `0xdd8` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x25d0` | `0x25d4` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0x1c3c` | `0x1c40` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -9127.1.6.1.103
--  __TEXT.__text: 0x1b42be8
 +9127.1.7.1.0
-+  __TEXT.__text: 0x1b44914
-   __TEXT.__delay_helper: 0x1bc
-   __TEXT.__init_offsets: 0x4
--  __TEXT.__objc_methlist: 0x1a0c30
--  __TEXT.__const: 0x4da38
-+  __TEXT.__objc_methlist: 0x1a0ab0
-+  __TEXT.__const: 0x4dac8
-   __TEXT.__dlopen_cstrs: 0x5164
--  __TEXT.__swift5_typeref: 0x19238
-+  __TEXT.__swift5_typeref: 0x1926a
-   __TEXT.__swift5_capture: 0xad10
--  __TEXT.__swift5_fieldmd: 0x174a0
--  __TEXT.__constg_swiftt: 0x1dbf8
--  __TEXT.__swift5_reflstr: 0x17b5f
-+  __TEXT.__swift5_fieldmd: 0x174b0
-+  __TEXT.__constg_swiftt: 0x1da4c
-+  __TEXT.__swift5_reflstr: 0x17b4f
-   __TEXT.__swift5_builtin: 0x139c
--  __TEXT.__swift5_assocty: 0x4f70
-+  __TEXT.__swift5_assocty: 0x4f58
-   __TEXT.__swift5_protos: 0x258
--  __TEXT.__swift5_proto: 0x25d0
--  __TEXT.__swift5_types: 0x1c3c
--  __TEXT.__cstring: 0x10209e
--  __TEXT.__oslogstring: 0x559a1
-+  __TEXT.__swift5_proto: 0x25d4
-+  __TEXT.__swift5_types: 0x1c40
-+  __TEXT.__cstring: 0x10236b
-+  __TEXT.__oslogstring: 0x55ca4
-   __TEXT.__swift_as_entry: 0x2ac
-   __TEXT.__swift_as_ret: 0x22c
-   __TEXT.__swift_as_cont: 0x4f4
-   __TEXT.__swift5_mpenum: 0x248
-   __TEXT.__swift5_types2: 0x8
--  __TEXT.__gcc_except_tab: 0x26d8c
-+  __TEXT.__gcc_except_tab: 0x26ee4
-   __TEXT.__ustring: 0x2a88
--  __TEXT.__unwind_info: 0x89a40
--  __TEXT.__eh_frame: 0xbb20
-+  __TEXT.__unwind_info: 0x89aa0
-+  __TEXT.__eh_frame: 0xbb78
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3ecc8
--  __DATA_CONST.__objc_classlist: 0xb428
-+  __DATA_CONST.__const: 0x3ecf8
-+  __DATA_CONST.__objc_classlist: 0xb418
-   __DATA_CONST.__objc_catlist: 0x368
-   __DATA_CONST.__objc_protolist: 0x3580
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x96230
--  __DATA_CONST.__objc_protorefs: 0xdd0
-+  __DATA_CONST.__objc_selrefs: 0x96170
-+  __DATA_CONST.__objc_protorefs: 0xdd8
-   __DATA_CONST.__objc_superrefs: 0x7540
-   __DATA_CONST.__objc_arraydata: 0x4208
--  __DATA_CONST.__got: 0x90a0
--  __AUTH_CONST.__const: 0x5dd20
--  __AUTH_CONST.__cfstring: 0xb3ae0
--  __AUTH_CONST.__objc_const: 0x27b4f8
-+  __DATA_CONST.__got: 0x9090
-+  __AUTH_CONST.__const: 0x5de40
-+  __AUTH_CONST.__cfstring: 0xb3aa0
-+  __AUTH_CONST.__objc_const: 0x27b0e0
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_arrayobj: 0x2e38
-   __AUTH_CONST.__objc_doubleobj: 0xf90
-   __AUTH_CONST.__objc_intobj: 0x4ff8
-   __AUTH_CONST.__objc_dictobj: 0x6b8
-   __AUTH_CONST.__objc_floatobj: 0x30
--  __AUTH_CONST.__auth_got: 0x8740
--  __AUTH.__objc_data: 0x56e40
--  __AUTH.__data: 0xacd8
--  __DATA.__objc_ivar: 0x11e1c
--  __DATA.__data: 0x33130
-+  __AUTH_CONST.__auth_got: 0x8748
-+  __AUTH.__objc_data: 0x558a8
-+  __AUTH.__data: 0xabd8
-+  __DATA.__objc_ivar: 0x11ca0
-+  __DATA.__data: 0x33070
-   __DATA.__uikit_ip: 0x9a0
-   __DATA.__objc_stublist: 0x28
-   __DATA.__uikit_ipl: 0x30
--  __DATA.__common: 0x3958
--  __DATA_DIRTY.__objc_ivar: 0x87dc
--  __DATA_DIRTY.__objc_data: 0x2e420
-+  __DATA.__common: 0x3938
-+  __DATA_DIRTY.__objc_ivar: 0x895c
-+  __DATA_DIRTY.__objc_data: 0x2f688
-   __DATA_DIRTY.__uikit_ip: 0x11a8
--  __DATA_DIRTY.__data: 0xba5a
--  __DATA_DIRTY.__bss: 0x15c58
--  __DATA_DIRTY.__common: 0x650
-+  __DATA_DIRTY.__data: 0xbc6a
-+  __DATA_DIRTY.__bss: 0x16678
-+  __DATA_DIRTY.__common: 0x680
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 182355
--  Symbols:   292677
+-  Symbols:   229344
 -  CStrings:  33863
 +  Functions: 182347
-+  Symbols:   292679
++  Symbols:   229340
 +  CStrings:  33882
- 
 Symbols:
 + +[UITextInteractionAssistant(UITextInteractionAssistant_Internal) _isCampoLightweightUIAvailable]
 + -[UIDictationController restoreInputViewsAndTearDownPrivacyDataSharingSheetWindowIfNeeded]
@@ -188,17 +123,6 @@ Symbols:
 + ___swift_memcpy424_8
 + ___swift_memcpy473_8
 + ___unnamed_176
-+ _objc_msgSend$_isCampoLightweightUIAvailable
-+ _objc_msgSend$_overrideMinimumPressDurationForContinuousInteraction
-+ _objc_msgSend$_registerForSceneRegionChangesWithTypes:
-+ _objc_msgSend$_sceneRegionsWithTypes:
-+ _objc_msgSend$_sceneRegionsWithTypes:withObservationTracking:
-+ _objc_msgSend$_separateViewController:forSplitViewController:
-+ _objc_msgSend$_updateStyleForWindow:animationParameters:shouldAnimate:shouldFence:
-+ _objc_msgSend$_writingToolsBehavior
-+ _objc_msgSend$cellCornerRadius
-+ _objc_msgSend$restoreInputViewsAndTearDownPrivacyDataSharingSheetWindowIfNeeded
-+ _objc_msgSend$updatedSceneRegionsWithType:
 + _symbolic So36_UITabBarControllerVisualStyle_PhoneC
 + _symbolic So36_UITabBarControllerVisualStyle_PhoneCSgXw
 + _symbolic _____ 5UIKit21_UIToolbarPaddingSpecV
@@ -286,11 +210,6 @@ Symbols:
 - ___swift_memcpy344_8
 - ___swift_memcpy393_8
 - ___unnamed_178
-- _objc_msgSend$_sceneRegions
-- _objc_msgSend$_sceneRegionsWithType:
-- _objc_msgSend$_updateStyleForWindow:animationParameters:
-- _objc_msgSend$tearDownPrivacyAndDataSharingSheetPresenterWindowAfterRemoteDictationEnablement
-- _objc_msgSend$tearDownPrivacyAndDataSharingSheetPresenterWindowAfterTextResponderReloads
 - _symbolic So36_UITabBarControllerVisualStyle_PhoneCXo
 - _symbolic So37_UITraitHiddenViewsContributeToPocketC
 - _symbolic _____ 5UIKit21_UIToolbarPaddingSpecC

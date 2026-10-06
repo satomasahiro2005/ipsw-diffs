@@ -2,97 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/NanoFaceGallery.framework/NanoFaceGallery`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xda4e4` | `0xdbb24` | **`+0x1640`** |
+| `__DATA_DIRTY.__data` | `0x6a0` | `0x1c88` | **`+0x15e8`** |
+| `__AUTH.__data` | `0x2290` | `0x14d0` | **`-0xdc0`** |
+| `__DATA.__data` | `0x3130` | `0x29a0` | **`-0x790`** |
+| `__DATA_DIRTY.__bss` | `0x980` | `0x10b0` | **`+0x730`** |
+| `__DATA.__bss` | `0xb878` | `0xb150` | **`-0x728`** |
+| `__AUTH.__objc_data` | `0xbb0` | `0x880` | **`-0x330`** |
+| `__DATA_DIRTY.__objc_data` | `0xe8` | `0x418` | **`+0x330`** |
+| `__TEXT.__swift5_typeref` | `0x9a3c` | `0x9c8c` | **`+0x250`** |
+| `__TEXT.__oslogstring` | `0x1823` | `0x18a3` | **`+0x80`** |
+| `__DATA.__common` | `0x1c8` | `0x158` | **`-0x70`** |
+| `__DATA_DIRTY.__common` | `—` | `0x70` | **`+0x70`** |
+| `__TEXT.__eh_frame` | `0x7210` | `0x71a0` | **`-0x70`** |
+| `__TEXT.__const` | `0x9ef4` | `0x9ed4` | **`-0x20`** |
+| `__TEXT.__unwind_info` | `0x3530` | `0x3520` | **`-0x10`** |
+| `__TEXT.__swift_as_cont` | `0x51c` | `0x510` | **`-0xc`** |
+| `__TEXT.__swift_as_ret` | `0x208` | `0x20c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xda4e4
-+  __TEXT.__text: 0xdbb24
-   __TEXT.__objc_methlist: 0x6c8
--  __TEXT.__const: 0x9ef4
-+  __TEXT.__const: 0x9ed4
-   __TEXT.__cstring: 0x1e8a
--  __TEXT.__swift5_typeref: 0x9a3c
-+  __TEXT.__swift5_typeref: 0x9c8c
-   __TEXT.__constg_swiftt: 0x2b64
-   __TEXT.__swift5_reflstr: 0x184d
-   __TEXT.__swift5_assocty: 0x808
+-2483.493.1.0.0
++2483.503.0.0.0
 
-   __TEXT.__swift5_proto: 0x654
-   __TEXT.__swift5_types: 0x318
-   __TEXT.__swift_as_entry: 0x244
--  __TEXT.__swift_as_ret: 0x208
--  __TEXT.__swift_as_cont: 0x51c
-+  __TEXT.__swift_as_ret: 0x20c
-+  __TEXT.__swift_as_cont: 0x510
-   __TEXT.__swift5_capture: 0xdd0
--  __TEXT.__oslogstring: 0x1823
-+  __TEXT.__oslogstring: 0x18a3
-   __TEXT.__swift5_protos: 0x4c
-   __TEXT.__swift5_mpenum: 0x24
--  __TEXT.__unwind_info: 0x3530
--  __TEXT.__eh_frame: 0x7210
-+  __TEXT.__unwind_info: 0x3520
-+  __TEXT.__eh_frame: 0x71a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __AUTH_CONST.__cfstring: 0x20
-   __AUTH_CONST.__objc_const: 0x28f8
-   __AUTH_CONST.__auth_got: 0x1960
--  __AUTH.__objc_data: 0xbb0
--  __AUTH.__data: 0x2290
-+  __AUTH.__objc_data: 0x880
-+  __AUTH.__data: 0x14d0
-   __DATA.__objc_ivar: 0x4
--  __DATA.__data: 0x3130
--  __DATA.__bss: 0xb878
--  __DATA.__common: 0x1c8
--  __DATA_DIRTY.__objc_data: 0xe8
--  __DATA_DIRTY.__data: 0x6a0
--  __DATA_DIRTY.__bss: 0x980
-+  __DATA.__data: 0x29a0
-+  __DATA.__bss: 0xb150
-+  __DATA.__common: 0x158
-+  __DATA_DIRTY.__objc_data: 0x418
-+  __DATA_DIRTY.__data: 0x1c88
-+  __DATA_DIRTY.__bss: 0x10b0
-+  __DATA_DIRTY.__common: 0x70
-   - /System/Library/Frameworks/ClockKit.framework/ClockKit
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4135
--  Symbols:   2642
--  CStrings:  327
+-  Symbols:   1891
+-  CStrings:  326
 +  Functions: 4133
-+  Symbols:   2634
-+  CStrings:  328
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
++  Symbols:   1887
++  CStrings:  327
 Symbols:
 + ___swift_closure_destructor.18Tm
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyAA4ViewPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyACyAA5GroupVyACyACyACyACyAA6ZStackVyAA05TupleD0VyAA6HStackVyANyACyACyACyACyALyANyAA7ForEachVys18EnumeratedSequenceVys10ArraySliceVy11NanoTimeKit16IdentifiableFaceVGGAyCyACyACyACyACyACy0tX7Gallery0X6ButtonVAA12_ScaleEffectVGAA13_OffsetEffectVGAA21_TraitWritingModifierVyAA18TransitionTraitKeyVGGA10_yAA14ZIndexTraitKeyVGGAA32_EnvironmentKeyTransformModifierVySbGGAA31AccessibilityAttachmentModifierVGSgG_ARyA_AyCyACyACyACyA2_A7_GAA14_OpacityEffectVGAA18_AnimationModifierVySbGGA17_GSgGSgQPGGA7_GAA25_AlignmentWritingModifierVGA44_GAA14_PaddingLayoutVG_ACyACyAA6VStackVyANyACyACyACyACyAA4TextVA24_GA48_GA0_22AnimatedOffsetModifier33_771619CB65BDE71833A46D3CAD398DC0LLVGA0_23AnimatedOpacityModifierA57_LLVG_ACyACyACyA53_A48_GA58_GA61_GACyA0_03GetZ0VA21_GSgQPGGAA16_FlexFrameLayoutVGA44_GQPGG_ACyACyAPyANyAA012_ConditionalD0VyACyA54_A13_GSgACyACyA54_A58_GA61_GG_AA6SpacerVSgACyACyAA4MenuVyACyACyAeAE10fontWeightyQrAA4FontV6WeightVSgFQOyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyA92_SgGG_Qo_A99_yAA5ColorVSgGGA24_GAA0Z0VyAA5LabelVyA53_A97_GGGA13_GAA01_D17ShapeKindModifierVyAA6CircleVGGSgQPGGA73_GA44_GQPGSgGA48_GA48_GA48_GA73_GGAA25_AppearanceActionModifierVG_ShySSGQo_A0_06RemoveyX5AlertVGA0_013RemoveLibraryX5AlertVGAaDHPA144_AaDHPqd0__AaDHD3_A141_HO_A143_AA0E8ModifierHPyHCHC_A146_AAA148_HPyHCHC
@@ -126,5 +70,4 @@ CStrings:
 + "setupBrokerWithCurrentDevice: no current device — tearing down broker and clearing assertions."
 - "Manager updating face task has no device…"
 - "Manager updating face task with %@…"
-
 ```

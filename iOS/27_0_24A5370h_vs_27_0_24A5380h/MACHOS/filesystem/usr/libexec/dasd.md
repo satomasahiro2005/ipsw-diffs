@@ -2,89 +2,62 @@
 
 > `/usr/libexec/dasd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1728e0` | `0x1736b4` | **`+0xdd4`** |
+| `__TEXT.__oslogstring` | `0x16189` | `0x16599` | **`+0x410`** |
+| `__DATA_CONST.__got` | `0xc70` | `0xe20` | **`+0x1b0`** |
+| `__TEXT.__objc_stubs` | `0x1a9e0` | `0x1ab00` | **`+0x120`** |
+| `__TEXT.__objc_methname` | `0x2db0d` | `0x2dbdd` | **`+0xd0`** |
+| `__TEXT.__cstring` | `0x10146` | `0x101f6` | **`+0xb0`** |
+| `__DATA_CONST.__cfstring` | `0x114e0` | `0x11580` | **`+0xa0`** |
+| `__DATA.__objc_selrefs` | `0x9ae8` | `0x9b38` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x12ee4` | `0x12f0c` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x4fa0` | `0x4fb8` | **`+0x18`** |
+| `__TEXT.__auth_stubs` | `0x2220` | `0x2210` | **`-0x10`** |
+| `__DATA.__objc_const` | `0x33b70` | `0x33b78` | **`+0x8`** |
+| `__DATA_CONST.__auth_got` | `0x1120` | `0x1118` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1728e0
--  __TEXT.__auth_stubs: 0x2220
--  __TEXT.__objc_stubs: 0x1a9e0
--  __TEXT.__objc_methlist: 0x12ee4
-+  __TEXT.__text: 0x1736b4
-+  __TEXT.__auth_stubs: 0x2210
-+  __TEXT.__objc_stubs: 0x1ab00
-+  __TEXT.__objc_methlist: 0x12f0c
-   __TEXT.__const: 0x1558
--  __TEXT.__objc_methname: 0x2db0d
--  __TEXT.__cstring: 0x10146
--  __TEXT.__oslogstring: 0x16189
-+  __TEXT.__objc_methname: 0x2dbdd
-+  __TEXT.__cstring: 0x101f6
-+  __TEXT.__oslogstring: 0x16599
-   __TEXT.__objc_classname: 0x1c88
-   __TEXT.__objc_methtype: 0x41a1
-   __TEXT.__gcc_except_tab: 0x4e28
+-2467.0.9.0.0
++2467.0.14.502.1
 
-   __TEXT.__swift_as_cont: 0x80
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__unwind_info: 0x4fa0
-+  __TEXT.__unwind_info: 0x4fb8
-   __TEXT.__eh_frame: 0xbd0
-   __DATA_CONST.__const: 0x4e98
--  __DATA_CONST.__cfstring: 0x114e0
-+  __DATA_CONST.__cfstring: 0x11580
-   __DATA_CONST.__objc_classlist: 0x700
-   __DATA_CONST.__objc_catlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x218
-
-   __DATA_CONST.__objc_arrayobj: 0x198
-   __DATA_CONST.__objc_dictobj: 0x230
-   __DATA_CONST.__objc_doubleobj: 0x50
--  __DATA_CONST.__auth_got: 0x1120
--  __DATA_CONST.__got: 0xc70
-+  __DATA_CONST.__auth_got: 0x1118
-+  __DATA_CONST.__got: 0xe20
-   __DATA_CONST.__auth_ptr: 0x190
--  __DATA.__objc_const: 0x33b70
--  __DATA.__objc_selrefs: 0x9ae8
-+  __DATA.__objc_const: 0x33b78
-+  __DATA.__objc_selrefs: 0x9b38
-   __DATA.__objc_ivar: 0x15fc
-   __DATA.__objc_data: 0x48b8
-   __DATA.__data: 0x2180
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8260
 -  Symbols:   1011
--  CStrings:  14699
+-  CStrings:  12289
 +  Functions: 8273
 +  Symbols:   1010
-+  CStrings:  14740
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
++  CStrings:  12325
 Symbols:
 - _swift_willThrowTypedImpl
 CStrings:
@@ -130,5 +103,4 @@ CStrings:
 - "Trial: Failed to call sysctl %@ with %d"
 - "Trial: Failed to load %@"
 - "Trial: Successfully set sysctl %@ to %lld"
-
 ```

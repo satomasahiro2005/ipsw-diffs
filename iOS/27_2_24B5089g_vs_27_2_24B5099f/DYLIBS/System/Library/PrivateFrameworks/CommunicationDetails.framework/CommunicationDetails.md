@@ -2,15 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/CommunicationDetails.framework/CommunicationDetails`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xaa9b0` | `0xaa9dc` | **`+0x2c`** |
+
+### Other Changes
+
 ```diff
 
 -1491.200.73.0.0
--  __TEXT.__text: 0xa66cc
 +1491.200.95.0.0
-+  __TEXT.__text: 0xa66f8
-   __TEXT.__objc_methlist: 0x1750
-   __TEXT.__const: 0x84bc
-   __TEXT.__constg_swiftt: 0x427c
 Symbols:
 + _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVy20CommunicationDetails0fG7ContactVG_Tg504$s20f116Details0B14ViewControllerC23ObservableConfigurationC14sortedContacts06_F1DD7I25A80FCDEB2A5110B00C5762C30LLySayAA0aB7H18VGAJFSbAI_AItXEfU_Tf1nnc_n
 + _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVy20CommunicationDetails15QuickActionViewC10ButtonTypeOG_Tg5
@@ -21,7 +24,7 @@ Symbols:
 Functions:
 ~ _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFs15ContiguousArrayVy20CommunicationDetails0fG7ContactVG_Tg504$s20f116Details0B14ViewControllerC23ObservableConfigurationC14sortedContacts06_F1DD7I25A80FCDEB2A5110B00C5762C30LLySayAA0aB7H18VGAJFSbAI_AItXEfU_Tf1cn_n : 108 -> 112
 ~ _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFs15ContiguousArrayVySo6CGRectVG_Tg50124$s20CommunicationDetails34GesturePassthroughSegmentedControl33_14FE08E8F5222DE52E4C6E817780A66FLLC18cleanSegmentFramesSaySo6F18VGyFSbAG_AGtXEfU1_Tf1cn_n : 108 -> 112
-~ _$s20CommunicationDetails25QuickActionsContainerViewC13setupSubviews33_A3C3722BB118329EFB32C697AF132FD2LLyyF : 2828 -> 2844
+~ _$s20CommunicationDetails25QuickActionsContainerViewC13setupSubviews33_A3C3722BB118329EFB32C697AF132FD2LLyyF : 2848 -> 2864
 ~ _$s20CommunicationDetails25QuickActionsContainerViewC11setContactsyySaySo9CNContactCGF : 980 -> 988
 ~ _$sSr15_stableSortImpl2byySbx_xtKXE_tKF20CommunicationDetails15QuickActionViewC10ButtonTypeO_Tg5 -> _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVy20CommunicationDetails15QuickActionViewC10ButtonTypeOG_Tg5 : 260 -> 272
 ```

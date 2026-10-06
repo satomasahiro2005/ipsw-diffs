@@ -2,57 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/AccessoryComponentAuth.framework/AccessoryComponentAuth`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1241c` | `0x129d4` | **`+0x5b8`** |
+| `__AUTH_CONST.__cfstring` | `0x1440` | `0x1540` | **`+0x100`** |
+| `__TEXT.__cstring` | `0x14d2` | `0x15c9` | **`+0xf7`** |
+| `__DATA_CONST.__const` | `0x1650` | `0x1710` | **`+0xc0`** |
+| `__TEXT.__oslogstring` | `0x11d7` | `0x1248` | **`+0x71`** |
+| `__TEXT.__objc_methlist` | `0x4ec` | `0x534` | **`+0x48`** |
+| `__DATA_CONST.__objc_selrefs` | `0x470` | `0x498` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0xc48` | `0xc68` | **`+0x20`** |
+| `__AUTH_CONST.__objc_const` | `0x6d0` | `0x6f0` | **`+0x20`** |
+| `__DATA.__bss` | `0x108` | `0x118` | **`+0x10`** |
+| `__TEXT.__const` | `0xd700` | `0xd710` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x430` | `0x440` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x274` | `0x270` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
- 1216.2.2.0.0
--  __TEXT.__text: 0x1241c
--  __TEXT.__objc_methlist: 0x4ec
--  __TEXT.__const: 0xd700
--  __TEXT.__cstring: 0x14d2
--  __TEXT.__oslogstring: 0x11d7
--  __TEXT.__gcc_except_tab: 0x274
--  __TEXT.__unwind_info: 0x430
-+  __TEXT.__text: 0x129d4
-+  __TEXT.__objc_methlist: 0x534
-+  __TEXT.__const: 0xd710
-+  __TEXT.__cstring: 0x15c9
-+  __TEXT.__oslogstring: 0x1248
-+  __TEXT.__gcc_except_tab: 0x270
-+  __TEXT.__unwind_info: 0x440
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1650
-+  __DATA_CONST.__const: 0x1710
-   __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x470
-+  __DATA_CONST.__objc_selrefs: 0x498
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__got: 0xe0
--  __AUTH_CONST.__const: 0xc48
--  __AUTH_CONST.__cfstring: 0x1440
--  __AUTH_CONST.__objc_const: 0x6d0
-+  __AUTH_CONST.__const: 0xc68
-+  __AUTH_CONST.__cfstring: 0x1540
-+  __AUTH_CONST.__objc_const: 0x6f0
-   __AUTH_CONST.__objc_intobj: 0x30
-   __AUTH_CONST.__auth_got: 0x450
-   __AUTH.__objc_data: 0xf0
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 479
--  Symbols:   1582
+-  Symbols:   1482
 -  CStrings:  339
 +  Functions: 488
-+  Symbols:   1603
++  Symbols:   1502
 +  CStrings:  351
- 
 Symbols:
 + -[ACCHWComponentAuthService authenticateRCAMWithChallenge:completionHandler:updateRegistry:componentIndex:]
 + -[ACCHWComponentAuthService signRCAMChallenge:completionHandler:componentIndex:]
@@ -75,7 +52,6 @@ Symbols:
 + _kCFACCUserDefaultsKey_BLEPairingIgnoreZeroEarlyInfo
 + _kCFACCUserDefaultsKey_PlatformIDOverride
 + _kCFACCUserDefaultsKey_TestCreateBLEPairingOnInductive
-+ _objc_msgSend$createVillanovaNonce:IDSN:challenge:
 - GCC_except_table67
 CStrings:
 + "(moduleType=%d) %s: cpGetDeviceIDSN failed: ret=%x len=%zu"

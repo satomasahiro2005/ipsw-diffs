@@ -2,120 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/TextUnderstandingRuntime.framework/TextUnderstandingRuntime`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_protos`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21b5f8` | `0x230838` | **`+0x15240`** |
+| `__TEXT.__cstring` | `0xcbd2` | `0x4fa2` | **`-0x7c30`** |
+| `__DATA.__bss` | `0x19b30` | `0x1b530` | **`+0x1a00`** |
+| `__TEXT.__eh_frame` | `0x13fa0` | `0x15248` | **`+0x12a8`** |
+| `__TEXT.__const` | `0x11de8` | `0x12948` | **`+0xb60`** |
+| `__TEXT.__unwind_info` | `0x6fc8` | `0x78d8` | **`+0x910`** |
+| `__AUTH_CONST.__const` | `0xe0d0` | `0xe888` | **`+0x7b8`** |
+| `__TEXT.__oslogstring` | `0x904a` | `0x955a` | **`+0x510`** |
+| `__DATA.__data` | `0x2c40` | `0x2ed0` | **`+0x290`** |
+| `__TEXT.__swift5_typeref` | `0x49eb` | `0x4c0b` | **`+0x220`** |
+| `__TEXT.__swift5_fieldmd` | `0x3cfc` | `0x3ec0` | **`+0x1c4`** |
+| `__TEXT.__constg_swiftt` | `0x352c` | `0x3694` | **`+0x168`** |
+| `__TEXT.__swift5_assocty` | `0xe80` | `0xf88` | **`+0x108`** |
+| `__DATA_DIRTY.__bss` | `0x3480` | `0x3380` | **`-0x100`** |
+| `__AUTH_CONST.__auth_got` | `0x4018` | `0x4110` | **`+0xf8`** |
+| `__TEXT.__swift_as_cont` | `0xc1c` | `0xcf8` | **`+0xdc`** |
+| `__TEXT.__swift5_reflstr` | `0x2e1c` | `0x2eec` | **`+0xd0`** |
+| `__TEXT.__swift5_proto` | `0xf94` | `0x105c` | **`+0xc8`** |
+| `__AUTH.__data` | `0xe00` | `0xea8` | **`+0xa8`** |
+| `__DATA_DIRTY.__data` | `0x3650` | `0x35d8` | **`-0x78`** |
+| `__TEXT.__swift_as_ret` | `0x6dc` | `0x750` | **`+0x74`** |
+| `__DATA_CONST.__const` | `0x3d8` | `0x428` | **`+0x50`** |
+| `__TEXT.__swift_as_entry` | `0x520` | `0x570` | **`+0x50`** |
+| `__TEXT.__swift5_capture` | `0x1cdc` | `0x1d24` | **`+0x48`** |
+| `__TEXT.__swift5_types` | `0x478` | `0x498` | **`+0x20`** |
+| `__DATA.__common` | `0x178` | `0x190` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x118` | `0x104` | **`-0x14`** |
+| `__DATA_CONST.__objc_selrefs` | `0xea8` | `0xeb0` | **`+0x8`** |
+| `__DATA_DIRTY.__common` | `0x330` | `0x328` | **`-0x8`** |
+| `__DATA_DIRTY.__objc_data` | `0x538` | `0x530` | **`-0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x8` | `—` | **`-0x8`** |
+
+### Other Changes
 
 ```diff
 
 -173.0.0.0.0
--  __TEXT.__text: 0x21b5f8
 +175.0.0.0.0
-+  __TEXT.__text: 0x230838
-   __TEXT.__objc_methlist: 0x728
--  __TEXT.__const: 0x11de8
--  __TEXT.__constg_swiftt: 0x352c
--  __TEXT.__swift5_typeref: 0x49eb
--  __TEXT.__swift5_builtin: 0x118
--  __TEXT.__swift5_reflstr: 0x2e1c
--  __TEXT.__swift5_fieldmd: 0x3cfc
--  __TEXT.__swift5_assocty: 0xe80
--  __TEXT.__swift5_proto: 0xf94
--  __TEXT.__swift5_types: 0x478
--  __TEXT.__swift_as_entry: 0x520
--  __TEXT.__swift_as_ret: 0x6dc
--  __TEXT.__swift_as_cont: 0xc1c
--  __TEXT.__cstring: 0xcbd2
--  __TEXT.__oslogstring: 0x904a
--  __TEXT.__swift5_capture: 0x1cdc
-+  __TEXT.__const: 0x12948
-+  __TEXT.__constg_swiftt: 0x3694
-+  __TEXT.__swift5_typeref: 0x4c0b
-+  __TEXT.__swift5_builtin: 0x104
-+  __TEXT.__swift5_reflstr: 0x2eec
-+  __TEXT.__swift5_fieldmd: 0x3ec0
-+  __TEXT.__swift5_assocty: 0xf88
-+  __TEXT.__swift5_proto: 0x105c
-+  __TEXT.__swift5_types: 0x498
-+  __TEXT.__swift_as_entry: 0x570
-+  __TEXT.__swift_as_ret: 0x750
-+  __TEXT.__swift_as_cont: 0xcf8
-+  __TEXT.__cstring: 0x4fa2
-+  __TEXT.__oslogstring: 0x955a
-+  __TEXT.__swift5_capture: 0x1d24
-   __TEXT.__swift5_protos: 0x88
--  __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__gcc_except_tab: 0x40
--  __TEXT.__unwind_info: 0x6fc8
--  __TEXT.__eh_frame: 0x13fa0
-+  __TEXT.__unwind_info: 0x78d8
-+  __TEXT.__eh_frame: 0x15248
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3d8
-+  __DATA_CONST.__const: 0x428
-   __DATA_CONST.__objc_classlist: 0x138
-   __DATA_CONST.__objc_protolist: 0xc8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xea8
-+  __DATA_CONST.__objc_selrefs: 0xeb0
-   __DATA_CONST.__objc_protorefs: 0x68
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xe0d0
-+  __AUTH_CONST.__const: 0xe888
-   __AUTH_CONST.__cfstring: 0xe0
-   __AUTH_CONST.__objc_const: 0x29e8
--  __AUTH_CONST.__auth_got: 0x4018
-+  __AUTH_CONST.__auth_got: 0x4110
-   __AUTH.__objc_data: 0x120
--  __AUTH.__data: 0xe00
--  __DATA.__data: 0x2c40
--  __DATA.__bss: 0x19b30
--  __DATA.__common: 0x178
--  __DATA_DIRTY.__objc_data: 0x538
--  __DATA_DIRTY.__data: 0x3650
--  __DATA_DIRTY.__bss: 0x3480
--  __DATA_DIRTY.__common: 0x330
-+  __AUTH.__data: 0xea8
-+  __DATA.__data: 0x2ed0
-+  __DATA.__bss: 0x1b530
-+  __DATA.__common: 0x190
-+  __DATA_DIRTY.__objc_data: 0x530
-+  __DATA_DIRTY.__data: 0x35d8
-+  __DATA_DIRTY.__bss: 0x3380
-+  __DATA_DIRTY.__common: 0x328
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/PrivateFrameworks/GenerativeModelsFoundation.framework/GenerativeModelsFoundation
-   - /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
-   - /System/Library/PrivateFrameworks/IntelligencePlatformLibrary.framework/IntelligencePlatformLibrary
 +  - /System/Library/PrivateFrameworks/Lexicon.framework/Lexicon
-   - /System/Library/PrivateFrameworks/LinkMetadata.framework/LinkMetadata
-   - /System/Library/PrivateFrameworks/LinkServices.framework/LinkServices
-   - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11608
 -  Symbols:   586
 -  CStrings:  944
 +  Functions: 12104
 +  Symbols:   590
 +  CStrings:  988
- 
 Symbols:
 + _LXEntryCopyString
 + _LXEntryGetMetaFlags

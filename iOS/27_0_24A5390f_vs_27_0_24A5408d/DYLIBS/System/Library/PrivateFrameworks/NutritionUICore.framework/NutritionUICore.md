@@ -2,48 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/NutritionUICore.framework/NutritionUICore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14ac0` | `0x14ddc` | **`+0x31c`** |
+| `__TEXT.__swift5_typeref` | `0x2bee` | `0x2d10` | **`+0x122`** |
+| `__DATA.__data` | `0x790` | `0x7d0` | **`+0x40`** |
+| `__TEXT.__const` | `0x15b4` | `0x15f4` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x788` | `0x7b8` | **`+0x30`** |
+| `__DATA.__bss` | `0x1590` | `0x15a0` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x260` | `0x268` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -30.0.5.0.0
--  __TEXT.__text: 0x14ac0
--  __TEXT.__const: 0x15b4
--  __TEXT.__swift5_typeref: 0x2bee
 +30.0.7.0.0
-+  __TEXT.__text: 0x14ddc
-+  __TEXT.__const: 0x15f4
-+  __TEXT.__swift5_typeref: 0x2d10
-   __TEXT.__swift5_reflstr: 0x2e0
-   __TEXT.__swift5_assocty: 0x1c8
-   __TEXT.__constg_swiftt: 0x484
 
-   __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x8
--  __DATA_CONST.__got: 0x260
-+  __DATA_CONST.__got: 0x268
-   __AUTH_CONST.__const: 0xff0
-   __AUTH_CONST.__objc_const: 0x1d0
--  __AUTH_CONST.__auth_got: 0x788
-+  __AUTH_CONST.__auth_got: 0x7b8
-   __AUTH.__objc_data: 0x50
-   __AUTH.__data: 0x490
--  __DATA.__data: 0x790
--  __DATA.__bss: 0x1590
-+  __DATA.__data: 0x7d0
-+  __DATA.__bss: 0x15a0
-   __DATA.__common: 0x60
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 467
--  Symbols:   371
+-  Symbols:   370
 +  Functions: 471
-+  Symbols:   377
-   CStrings:  52
- 
++  Symbols:   376
 Symbols:
 + _get_witness_table 7SwiftUI6VStackVyAA12TupleContentVyAA08ModifiedE0VyAGyAA7DividerV15NutritionUICore0H13VibrancyBlend33_0B3A6136B4AFB6EE2D4D20EDFFBA6DFFLLVGAA14_PaddingLayoutVG_AGyAA6HStackVyAEyACyAEyAGyAA4TextVAA31AccessibilityAttachmentModifierVG_AGyAuMGQPGG_AA6SpacerVAA6ButtonVyAGyAGyAGyAA5ImageVAA24_ForegroundStyleModifierVyAA5ColorVGGAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAMGGQPGGAPGAGyAGyASyAEyAGyAGyAGyAGyAUA13_yAA0X9AlignmentOGGAA010_FlexFrameV0VGAPGAWG_A32_QPGGAPGAMGASyAA7ForEachVySnySiGSiAGyAGyAA10_ShapeViewVyAA22UnevenRoundedRectangleVA9_GAA06_FrameV0VGAMGGGQPGGAA4ViewHPyHC
 + _objc_release_x21

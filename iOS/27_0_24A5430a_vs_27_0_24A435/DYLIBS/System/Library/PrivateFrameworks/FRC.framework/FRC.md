@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/FRC.framework/FRC`
 
-```diff
+### Section Size Changes
 
- 259.0.0.0.0
--  __TEXT.__text: 0x40244
-+  __TEXT.__text: 0x402b4
-   __TEXT.__objc_methlist: 0x3a9c
-   __TEXT.__const: 0x5a0
-   __TEXT.__cstring: 0x660c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x40244` | `0x402b4` | **`+0x70`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _loadTextureInterleaved : 332 -> 336
 ~ _saveTextureInterleaved : 328 -> 332

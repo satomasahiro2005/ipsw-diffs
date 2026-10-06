@@ -2,99 +2,60 @@
 
 > `/System/Library/PrivateFrameworks/DeviceRecovery.framework/Support/devicerecoveryd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x278a8` | `0x293f4` | **`+0x1b4c`** |
+| `__TEXT.__oslogstring` | `0x3b75` | `0x4059` | **`+0x4e4`** |
+| `__TEXT.__cstring` | `0x8100` | `0x8510` | **`+0x410`** |
+| `__TEXT.__objc_methname` | `0x2b50` | `0x2e00` | **`+0x2b0`** |
+| `__TEXT.__objc_stubs` | `0x2920` | `0x2b80` | **`+0x260`** |
+| `__DATA_CONST.__cfstring` | `0x3180` | `0x3360` | **`+0x1e0`** |
+| `__TEXT.__objc_methlist` | `0xe2c` | `0xf04` | **`+0xd8`** |
+| `__DATA.__objc_selrefs` | `0xc70` | `0xd20` | **`+0xb0`** |
+| `__DATA.__objc_const` | `0x1750` | `0x17d0` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x7c8` | `0x818` | **`+0x50`** |
+| `__TEXT.__auth_stubs` | `0x1300` | `0x1340` | **`+0x40`** |
+| `__TEXT.__gcc_except_tab` | `0x684` | `0x6b8` | **`+0x34`** |
+| `__DATA_CONST.__const` | `0xd58` | `0xd88` | **`+0x30`** |
+| `__TEXT.__objc_methtype` | `0x697` | `0x6be` | **`+0x27`** |
+| `__DATA_CONST.__auth_got` | `0x990` | `0x9b0` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x258` | `0x278` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0xe8` | `0xf0` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_typeref`
+
+### Other Changes
 
 ```diff
 
 -150.40.7.0.0
--  __TEXT.__text: 0x27308
--  __TEXT.__auth_stubs: 0x1300
--  __TEXT.__objc_stubs: 0x2920
--  __TEXT.__objc_methlist: 0xe2c
--  __TEXT.__cstring: 0x8100
 +150.40.9.0.0
-+  __TEXT.__text: 0x28e24
-+  __TEXT.__auth_stubs: 0x1340
-+  __TEXT.__objc_stubs: 0x2b80
-+  __TEXT.__objc_methlist: 0xf04
-+  __TEXT.__cstring: 0x8510
-   __TEXT.__const: 0x4e8
--  __TEXT.__gcc_except_tab: 0x684
--  __TEXT.__objc_methname: 0x2b50
--  __TEXT.__oslogstring: 0x3b75
-+  __TEXT.__gcc_except_tab: 0x6b8
-+  __TEXT.__objc_methname: 0x2e00
-+  __TEXT.__oslogstring: 0x4059
-   __TEXT.__objc_classname: 0x1ca
--  __TEXT.__objc_methtype: 0x697
-+  __TEXT.__objc_methtype: 0x6be
-   __TEXT.__constg_swiftt: 0x78
-   __TEXT.__swift5_typeref: 0x38
-   __TEXT.__swift5_reflstr: 0x20
-   __TEXT.__swift5_fieldmd: 0x34
-   __TEXT.__swift5_types: 0x4
--  __TEXT.__unwind_info: 0xbb8
-+  __TEXT.__unwind_info: 0xc30
-   __TEXT.__eh_frame: 0xd8
--  __DATA_CONST.__const: 0xd58
--  __DATA_CONST.__cfstring: 0x3180
-+  __DATA_CONST.__const: 0xd88
-+  __DATA_CONST.__cfstring: 0x3360
-   __DATA_CONST.__objc_classlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x38
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   __DATA_CONST.__objc_intobj: 0x78
-   __DATA_CONST.__objc_arraydata: 0x28
-   __DATA_CONST.__objc_arrayobj: 0x30
--  __DATA_CONST.__auth_got: 0x990
--  __DATA_CONST.__got: 0x258
-+  __DATA_CONST.__auth_got: 0x9b0
-+  __DATA_CONST.__got: 0x278
-   __DATA_CONST.__auth_ptr: 0x28
--  __DATA.__objc_const: 0x1750
--  __DATA.__objc_selrefs: 0xc70
--  __DATA.__objc_ivar: 0xe8
-+  __DATA.__objc_const: 0x17d0
-+  __DATA.__objc_selrefs: 0xd20
-+  __DATA.__objc_ivar: 0xf0
-   __DATA.__objc_data: 0x330
-   __DATA.__data: 0x330
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /System/Library/PrivateFrameworks/LoggingSupport.framework/LoggingSupport
-   - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
-   - /System/Library/PrivateFrameworks/MediaKit.framework/MediaKit
 +  - /System/Library/PrivateFrameworks/MobileActivation.framework/MobileActivation
-   - /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset
-   - /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
-   - /System/Library/PrivateFrameworks/MobileObliteration.framework/MobileObliteration
 
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 891
 -  Symbols:   402
--  CStrings:  1777
+-  CStrings:  1778
 +  Functions: 927
 +  Symbols:   410
-+  CStrings:  1855
- 
++  CStrings:  1856
 Symbols:
 + _MAECopyActivationRecordWithError
 + _OBJC_CLASS_$_NSMutableSet
@@ -132,6 +93,7 @@ CStrings:
 + "-[DeviceRecoveryService updateDemoDeviceRestriction]"
 + ".."
 + "/private/var/MobileSoftwareUpdate/DeviceRecoveryRestrictions.plist"
++ "22:26:33"
 + "; "
 + "@\"NSSet\""
 + "@24@0:8^@16"
@@ -140,6 +102,7 @@ CStrings:
 + "Denying client connection - client is missing 'com.apple.DeviceRecovery.Control' entitlement"
 + "EACS is restricted by: %@"
 + "EraseAndUpdateRestricted"
++ "Sep 27 2026"
 + "T@\"NSSet\",C,N,V_cachedRestrictionClients"
 + "TB,N,V_isDemoDevice"
 + "TB,R,N"
@@ -185,6 +148,8 @@ CStrings:
 + "unregistered"
 + "updateDemoDeviceRestriction"
 + "v36@0:8B16@20@?28"
+- "22:57:06"
 - "Denying client connection - client does not have 'com.apple.DeviceRecovery.Control' entitlement"
+- "Sep 13 2026"
 - "auto-boot"
 ```

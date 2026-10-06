@@ -2,6 +2,8 @@
 
 > `/System/Library/TextInput/TextInput_zh.bundle/TextInput_zh`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_1 : 20 -> 12

@@ -2,33 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SiriContactsUI.framework/SiriContactsUI`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x2c820
-+  __TEXT.__text: 0x2c80c
-   __TEXT.__objc_methlist: 0x154
-   __TEXT.__const: 0x1c80
-   __TEXT.__swift5_typeref: 0x3366
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2c820` | `0x2c80c` | **`-0x14`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_29faa1a68 -> sub_2a4795a68 : 512 -> 492
-
+~ sub_29f965a68 -> sub_2a466da68 : 512 -> 492
 ```

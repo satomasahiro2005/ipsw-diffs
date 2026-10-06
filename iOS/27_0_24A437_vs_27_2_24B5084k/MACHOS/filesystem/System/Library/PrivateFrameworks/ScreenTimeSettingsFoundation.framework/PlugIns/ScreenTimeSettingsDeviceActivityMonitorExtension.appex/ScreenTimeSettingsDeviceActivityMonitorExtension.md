@@ -2,15 +2,14 @@
 
 > `/System/Library/PrivateFrameworks/ScreenTimeSettingsFoundation.framework/PlugIns/ScreenTimeSettingsDeviceActivityMonitorExtension.appex/ScreenTimeSettingsDeviceActivityMonitorExtension`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -97.0.104.0.0
 +97.1.6.1.0
-   __TEXT.__text: 0xcc
-   __TEXT.__auth_stubs: 0x40
-   __TEXT.__const: 0xd2
 ```

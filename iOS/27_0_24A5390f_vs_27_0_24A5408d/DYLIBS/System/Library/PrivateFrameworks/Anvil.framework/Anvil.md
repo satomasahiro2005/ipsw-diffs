@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/Anvil.framework/Anvil`
 
-```diff
+### Section Size Changes
 
- 108.0.0.0.0
--  __TEXT.__text: 0x121bb0
-+  __TEXT.__text: 0x121ba0
-   __TEXT.__objc_methlist: 0x33c
-   __TEXT.__const: 0x101a0
-   __TEXT.__swift5_typeref: 0x2fcd
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x121bb0` | `0x121ba0` | **`-0x10`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2524dec18 -> sub_251f08c18 : 2012 -> 1996
+~ sub_25238ec18 -> sub_251dffc18 : 2012 -> 1996
 ```

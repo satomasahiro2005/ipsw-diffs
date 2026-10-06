@@ -2,110 +2,37 @@
 
 > `/System/Library/Frameworks/Photos.framework/Photos`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_floatobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2d91e0` | `0x2d9bd0` | **`+0x9f0`** |
+| `__AUTH_CONST.__objc_intobj` | `0x22f8` | `0x23e8` | **`+0xf0`** |
+| `__TEXT.__oslogstring` | `0x2337c` | `0x23415` | **`+0x99`** |
+| `__TEXT.__cstring` | `0x3279b` | `0x3270e` | **`-0x8d`** |
+| `__TEXT.__objc_methlist` | `0x26ab4` | `0x26b3c` | **`+0x88`** |
+| `__AUTH_CONST.__objc_const` | `0x42070` | `0x420c0` | **`+0x50`** |
+| `__AUTH_CONST.__cfstring` | `0x2d600` | `0x2d5c0` | **`-0x40`** |
+| `__TEXT.__unwind_info` | `0x9640` | `0x9668` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x46f8` | `0x46d8` | **`-0x20`** |
+| `__DATA_CONST.__const` | `0x8f60` | `0x8f40` | **`-0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x14600` | `0x14620` | **`+0x20`** |
+| `__DATA_CONST.__objc_superrefs` | `0xc50` | `0xc60` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x35e8` | `0x35f0` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -910.27.103.0.0
--  __TEXT.__text: 0x2d91e0
--  __TEXT.__objc_methlist: 0x26ab4
 +910.33.102.0.0
-+  __TEXT.__text: 0x2d9bd0
-+  __TEXT.__objc_methlist: 0x26b3c
-   __TEXT.__const: 0x1778
-   __TEXT.__dlopen_cstrs: 0x280
-   __TEXT.__constg_swiftt: 0x544
 
-   __TEXT.__swift5_proto: 0x4c
-   __TEXT.__swift5_types: 0x34
-   __TEXT.__swift5_capture: 0x198
--  __TEXT.__cstring: 0x3279b
-+  __TEXT.__cstring: 0x3270e
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0x18
--  __TEXT.__oslogstring: 0x2337c
-+  __TEXT.__oslogstring: 0x23415
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__gcc_except_tab: 0x95bc
-   __TEXT.__ustring: 0x1e
--  __TEXT.__unwind_info: 0x9640
-+  __TEXT.__unwind_info: 0x9668
-   __TEXT.__eh_frame: 0x4a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x8f60
-+  __DATA_CONST.__const: 0x8f40
-   __DATA_CONST.__objc_classlist: 0xf28
-   __DATA_CONST.__objc_catlist: 0x68
-   __DATA_CONST.__objc_protolist: 0x2f8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x14600
-+  __DATA_CONST.__objc_selrefs: 0x14620
-   __DATA_CONST.__objc_protorefs: 0x40
--  __DATA_CONST.__objc_superrefs: 0xc50
-+  __DATA_CONST.__objc_superrefs: 0xc60
-   __DATA_CONST.__objc_arraydata: 0x900
-   __DATA_CONST.__got: 0x2990
--  __AUTH_CONST.__const: 0x46f8
--  __AUTH_CONST.__cfstring: 0x2d600
--  __AUTH_CONST.__objc_const: 0x42070
--  __AUTH_CONST.__objc_intobj: 0x22f8
-+  __AUTH_CONST.__const: 0x46d8
-+  __AUTH_CONST.__cfstring: 0x2d5c0
-+  __AUTH_CONST.__objc_const: 0x420c0
-+  __AUTH_CONST.__objc_intobj: 0x23e8
-   __AUTH_CONST.__objc_arrayobj: 0x798
-   __AUTH_CONST.__objc_doubleobj: 0x130
-   __AUTH_CONST.__objc_dictobj: 0xc8
-
-   __AUTH_CONST.__auth_got: 0x18b8
-   __AUTH.__objc_data: 0x7d98
-   __AUTH.__data: 0x180
--  __DATA.__objc_ivar: 0x35e8
-+  __DATA.__objc_ivar: 0x35f0
-   __DATA.__data: 0x2b68
-   __DATA.__crash_info: 0x148
-   __DATA.__bss: 0x1a68
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 14857
--  Symbols:   33943
+-  Symbols:   25866
 -  CStrings:  8856
 +  Functions: 14868
-+  Symbols:   33959
++  Symbols:   25878
 +  CStrings:  8854
- 
 Symbols:
 + +[PHAssetCollection _collectionSubtypeExpressionForFetchRequests]
 + +[PHAssetCollection albumKindFromAlbumSubtype:]
@@ -533,13 +460,6 @@ Symbols:
 + _OBJC_IVAR_$_PHServerResourceRequestRunner._delegate
 + _PHErrorCodeIsPublic
 + ___67+[PHAssetCollection fetchPredicateFromComparisonPredicate:options:]_block_invoke
-+ _objc_msgSend$_assetAndRelatedObjectsFromAssetObjectIDURL:inLibrary:error:
-+ _objc_msgSend$albumKindFromAlbumSubtype:
-+ _objc_msgSend$dateComponents
-+ _objc_msgSend$imageByApplyingOrientation:
-+ _objc_msgSend$initWithInt64Representation:
-+ _objc_msgSend$resourceRequestRunner:authorizedAssetForObjectIDURL:inLibrary:error:
-+ _objc_msgSend$setApplyTransform:
 - +[PHSmartAlbum _collectionSubtypeExpressionForFetchRequests]
 - +[PHSuggestion hasPersonLocalIdentifierInContextForSuggestionSubype:]
 - -[PHServerResourceRequestRunner _assetAndRelatedObjectsFromAssetObjectIDURL:inManagedObjectContext:error:]
@@ -954,9 +874,6 @@ Symbols:
 - GCC_except_table9934
 - ___106-[PHServerResourceRequestRunner _assetAndRelatedObjectsFromAssetObjectIDURL:inManagedObjectContext:error:]_block_invoke
 - ___block_descriptor_32_e27_16?0"NSPersistentStore"8l
-- _objc_msgSend$_assetAndRelatedObjectsFromAssetObjectIDURL:inManagedObjectContext:error:
-- _objc_msgSend$managedObjectIDForURIRepresentation:
-- _objc_msgSend$persistentStores
 CStrings:
 + "Skipping entity with empty text in suggestion components for token: %@, QU intent: %@, entity: %@"
 + "[RM]: PHImageIODecoder - CIContext failed to render oriented image, falling back to ImageIO orientation transform"

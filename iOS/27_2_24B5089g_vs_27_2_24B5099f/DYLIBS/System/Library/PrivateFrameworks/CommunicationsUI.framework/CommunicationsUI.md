@@ -2,117 +2,59 @@
 
 > `/System/Library/PrivateFrameworks/CommunicationsUI.framework/CommunicationsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x332934` | `0x33a1dc` | **`+0x78a8`** |
+| `__TEXT.__cstring` | `0x5260` | `0x5aae` | **`+0x84e`** |
+| `__DATA.__bss` | `0x14638` | `0x14e68` | **`+0x830`** |
+| `__TEXT.__const` | `0x24064` | `0x24654` | **`+0x5f0`** |
+| `__TEXT.__swift5_reflstr` | `0xb345` | `0xb8b4` | **`+0x56f`** |
+| `__AUTH_CONST.__objc_const` | `0x15930` | `0x15e60` | **`+0x530`** |
+| `__AUTH_CONST.__const` | `0x16818` | `0x16bc8` | **`+0x3b0`** |
+| `__TEXT.__oslogstring` | `0x3ef2` | `0x4236` | **`+0x344`** |
+| `__TEXT.__swift5_fieldmd` | `0x994c` | `0x9c68` | **`+0x31c`** |
+| `__AUTH.__data` | `0x99a8` | `0x9c48` | **`+0x2a0`** |
+| `__TEXT.__swift5_typeref` | `0x34c44` | `0x34eb6` | **`+0x272`** |
+| `__DATA.__data` | `0xdb78` | `0xdd30` | **`+0x1b8`** |
+| `__TEXT.__constg_swiftt` | `0xc7d8` | `0xc918` | **`+0x140`** |
+| `__TEXT.__eh_frame` | `0x81f4` | `0x8308` | **`+0x114`** |
+| `__TEXT.__unwind_info` | `0xa878` | `0xa968` | **`+0xf0`** |
+| `__AUTH.__objc_data` | `0x6778` | `0x67f0` | **`+0x78`** |
+| `__AUTH_CONST.__auth_got` | `0x4190` | `0x41f0` | **`+0x60`** |
+| `__DATA_CONST.__got` | `0x23e8` | `0x23a0` | **`-0x48`** |
+| `__TEXT.__swift5_assocty` | `0x1e40` | `0x1e88` | **`+0x48`** |
+| `__DATA_CONST.__const` | `0x1490` | `0x14c0` | **`+0x30`** |
+| `__TEXT.__swift5_proto` | `0xa24` | `0xa50` | **`+0x2c`** |
+| `__TEXT.__swift5_builtin` | `0x3fc` | `0x424` | **`+0x28`** |
+| `__DATA_CONST.__vfx_script_tby` | `—` | `0x20` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x9a0` | `0x9bc` | **`+0x1c`** |
+| `__TEXT.__objc_methlist` | `0x2fc8` | `0x2fe0` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x590` | `0x5a0` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2810` | `0x2800` | **`-0x10`** |
+| `__TEXT.__swift5_capture` | `0x5074` | `0x5080` | **`+0xc`** |
+| `__DATA_DIRTY.__data` | `0x5f8` | `0x600` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -156.200.88.2.3
--  __TEXT.__text: 0x31c29c
--  __TEXT.__objc_methlist: 0x2fc8
--  __TEXT.__const: 0x24064
--  __TEXT.__swift5_typeref: 0x34c44
--  __TEXT.__constg_swiftt: 0xc7d8
--  __TEXT.__swift5_builtin: 0x3fc
--  __TEXT.__swift5_reflstr: 0xb345
--  __TEXT.__swift5_fieldmd: 0x994c
--  __TEXT.__swift5_assocty: 0x1e40
--  __TEXT.__swift5_proto: 0xa24
--  __TEXT.__swift5_types: 0x9a0
--  __TEXT.__swift5_capture: 0x5074
--  __TEXT.__cstring: 0x5260
 +156.200.120.0.0
-+  __TEXT.__text: 0x323a54
-+  __TEXT.__objc_methlist: 0x2fe0
-+  __TEXT.__const: 0x24654
-+  __TEXT.__cstring: 0x5aae
-+  __TEXT.__swift5_typeref: 0x34eb6
-+  __TEXT.__constg_swiftt: 0xc918
-+  __TEXT.__swift5_builtin: 0x424
-+  __TEXT.__swift5_reflstr: 0xb8b4
-+  __TEXT.__swift5_fieldmd: 0x9c68
-+  __TEXT.__swift5_assocty: 0x1e88
-+  __TEXT.__swift5_proto: 0xa50
-+  __TEXT.__swift5_types: 0x9bc
-+  __TEXT.__swift5_capture: 0x5080
-   __TEXT.__swift_as_entry: 0x1bc
-   __TEXT.__swift_as_cont: 0x4c8
--  __TEXT.__oslogstring: 0x3ef2
-+  __TEXT.__oslogstring: 0x4236
-   __TEXT.__swift_as_ret: 0x1ac
-   __TEXT.__swift5_protos: 0xd8
-   __TEXT.__swift5_mpenum: 0x158
--  __TEXT.__unwind_info: 0xd428
--  __TEXT.__eh_frame: 0x8224
-+  __TEXT.__unwind_info: 0xd5a0
-+  __TEXT.__eh_frame: 0x8340
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1490
--  __DATA_CONST.__objc_classlist: 0x590
-+  __DATA_CONST.__const: 0x14c0
-+  __DATA_CONST.__objc_classlist: 0x5a0
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x210
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2810
-+  __DATA_CONST.__objc_selrefs: 0x2800
-   __DATA_CONST.__objc_protorefs: 0x110
--  __DATA_CONST.__got: 0x23e8
--  __AUTH_CONST.__const: 0x16818
--  __AUTH_CONST.__objc_const: 0x15930
--  __AUTH_CONST.__auth_got: 0x4190
--  __AUTH.__objc_data: 0x6778
--  __AUTH.__data: 0x99a8
--  __DATA.__data: 0xdb78
-+  __DATA_CONST.__vfx_script_tby: 0x20
-+  __DATA_CONST.__got: 0x23a0
-+  __AUTH_CONST.__const: 0x16bc8
-+  __AUTH_CONST.__objc_const: 0x15e60
-+  __AUTH_CONST.__auth_got: 0x41f0
-+  __AUTH.__objc_data: 0x67f0
-+  __AUTH.__data: 0x9c48
-+  __DATA.__data: 0xdd30
-   __DATA.__objc_stublist: 0x8
-   __DATA.__common: 0x6b1
-   __DATA_DIRTY.__objc_data: 0x178
--  __DATA_DIRTY.__data: 0x5f8
-+  __DATA_DIRTY.__data: 0x600
-   __DATA_DIRTY.__bss: 0xb0
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /System/Library/Frameworks/ContactsUI.framework/ContactsUI
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 -  - /System/Library/Frameworks/CoreImage.framework/CoreImage
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /System/Library/PrivateFrameworks/TelephonyUI.framework/TelephonyUI
-   - /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
 +  - /System/Library/PrivateFrameworks/VFX.framework/VFX
-   - /System/Library/PrivateFrameworks/_CommunicationsUICore_PosterBoardServices.framework/_CommunicationsUICore_PosterBoardServices
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-+  - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /usr/lib/libc++.1.dylib
+
 -  Functions: 16990
 -  Symbols:   6484
 -  CStrings:  772
 +  Functions: 17088
 +  Symbols:   6634
 +  CStrings:  890
- 
 Symbols:
 + _OBJC_CLASS_$_VFXView
 + _OBJC_CLASS_$_VFXWorld

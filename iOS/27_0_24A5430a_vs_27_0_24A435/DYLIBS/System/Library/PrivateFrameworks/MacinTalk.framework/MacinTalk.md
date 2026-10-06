@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/MacinTalk.framework/MacinTalk`
 
-```diff
+### Section Size Changes
 
- 107.0.0.0.0
--  __TEXT.__text: 0x4a7c
-+  __TEXT.__text: 0x4a84
-   __TEXT.__const: 0x32a
-   __TEXT.__cstring: 0x102
-   __TEXT.__swift5_typeref: 0xca
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4a7c` | `0x4a84` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_28d951af8 -> sub_28e69eaf8 : 448 -> 452
-~ sub_28d951cb8 -> sub_28e69ecbc : 168 -> 172
+~ sub_28d825af8 -> sub_28e56baf8 : 448 -> 452
+~ sub_28d825cb8 -> sub_28e56bcbc : 168 -> 172
 ```

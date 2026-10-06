@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SecureMessagingAgentCore.framework/SecureMessagingAgentCore`
 
-```diff
+### Section Size Changes
 
- 59.100.1.0.0
--  __TEXT.__text: 0x143430
-+  __TEXT.__text: 0x143498
-   __TEXT.__objc_methlist: 0x9d0
-   __TEXT.__const: 0x87d8
-   __TEXT.__cstring: 0x3e69
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x143430` | `0x143498` | **`+0x68`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s24SecureMessagingAgentCore27DeregisterKeyPackageRequestV12toIDSMessage4withSo12FTIDSMessageCScCyAA8Response_ps5Error_pG_tFySo14IDSBaseMessageCSg_sAI_pSgSiSDys11AnyHashableVypGSgtcfU_ : 656 -> 668
 ~ _$ss17_NativeDictionaryV20_copyOrMoveAndResize8capacity12moveElementsySi_SbtF15SecureMessaging3MLSO9AllMemberO_SayAH14KeyPackageInfoVGTg5 : 992 -> 984

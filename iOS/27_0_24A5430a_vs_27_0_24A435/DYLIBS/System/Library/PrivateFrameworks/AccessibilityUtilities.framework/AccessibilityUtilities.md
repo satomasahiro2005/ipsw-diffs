@@ -2,88 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x209d60` | `0x20ab6c` | **`+0xe0c`** |
+| `__TEXT.__cstring` | `0x1db2c` | `0x1ddea` | **`+0x2be`** |
+| `__AUTH_CONST.__cfstring` | `0x13920` | `0x13ba0` | **`+0x280`** |
+| `__TEXT.__swift5_reflstr` | `0xb71c` | `0xb79c` | **`+0x80`** |
+| `__AUTH_CONST.__const` | `0xa430` | `0xa498` | **`+0x68`** |
+| `__AUTH_CONST.__objc_const` | `0x1c0a8` | `0x1c0f8` | **`+0x50`** |
+| `__TEXT.__const` | `0x8de8` | `0x8e28` | **`+0x40`** |
+| `__TEXT.__eh_frame` | `0x79c8` | `0x7a00` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0x99f0` | `0x9a18` | **`+0x28`** |
+| `__DATA.__bss` | `0x9030` | `0x9050` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x23b8` | `0x23d8` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x5b10` | `0x5b28` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa240` | `0xa258` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0xfd44` | `0xfd5c` | **`+0x18`** |
+| `__TEXT.__swift5_fieldmd` | `0x44d0` | `0x44e8` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x2de8` | `0x2df8` | **`+0x10`** |
+| `__DATA.__data` | `0x5228` | `0x5238` | **`+0x10`** |
+| `__DATA_DIRTY.__objc_data` | `0x3230` | `0x3240` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x2a14` | `0x2a24` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
- 3240.9.0.0.0
--  __TEXT.__text: 0x209d60
--  __TEXT.__objc_methlist: 0xfd44
-+  __TEXT.__text: 0x20ab6c
-+  __TEXT.__objc_methlist: 0xfd5c
-   __TEXT.__dlopen_cstrs: 0xb89
--  __TEXT.__const: 0x8de8
-+  __TEXT.__const: 0x8e28
-   __TEXT.__swift5_typeref: 0x2714
--  __TEXT.__swift5_capture: 0x2a14
--  __TEXT.__cstring: 0x1db2c
-+  __TEXT.__swift5_capture: 0x2a24
-+  __TEXT.__cstring: 0x1ddea
-   __TEXT.__constg_swiftt: 0x1760
--  __TEXT.__swift5_reflstr: 0xb71c
--  __TEXT.__swift5_fieldmd: 0x44d0
-+  __TEXT.__swift5_reflstr: 0xb79c
-+  __TEXT.__swift5_fieldmd: 0x44e8
-   __TEXT.__swift5_builtin: 0x5dc
-   __TEXT.__swift5_assocty: 0x978
-   __TEXT.__swift5_proto: 0x5ec
-
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__gcc_except_tab: 0x136c
-   __TEXT.__ustring: 0x68
--  __TEXT.__unwind_info: 0x99f0
--  __TEXT.__eh_frame: 0x79c8
-+  __TEXT.__unwind_info: 0x9a18
-+  __TEXT.__eh_frame: 0x7a00
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x5b10
-+  __DATA_CONST.__const: 0x5b28
-   __DATA_CONST.__objc_classlist: 0x4c0
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_protolist: 0xf0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa240
-+  __DATA_CONST.__objc_selrefs: 0xa258
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__objc_superrefs: 0x300
-   __DATA_CONST.__objc_arraydata: 0x9d8
--  __DATA_CONST.__got: 0x23b8
--  __AUTH_CONST.__const: 0xa430
--  __AUTH_CONST.__cfstring: 0x13920
--  __AUTH_CONST.__objc_const: 0x1c0a8
-+  __DATA_CONST.__got: 0x23d8
-+  __AUTH_CONST.__const: 0xa498
-+  __AUTH_CONST.__cfstring: 0x13ba0
-+  __AUTH_CONST.__objc_const: 0x1c0f8
-   __AUTH_CONST.__objc_intobj: 0x16c8
-   __AUTH_CONST.__objc_arrayobj: 0x330
-   __AUTH_CONST.__objc_dictobj: 0x2f8
-   __AUTH_CONST.__objc_doubleobj: 0x70
--  __AUTH_CONST.__auth_got: 0x2de8
-+  __AUTH_CONST.__auth_got: 0x2df8
-   __AUTH.__objc_data: 0x29a8
-   __AUTH.__data: 0x9b0
-   __DATA.__objc_ivar: 0xbe8
--  __DATA.__data: 0x5228
--  __DATA_DIRTY.__objc_data: 0x3230
-+  __DATA.__data: 0x5238
-+  __DATA_DIRTY.__objc_data: 0x3240
-   __DATA_DIRTY.__data: 0x880
-   __DATA_DIRTY.__bss: 0x37c0
-   __DATA_DIRTY.__common: 0x20
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15388
--  Symbols:   13859
+-  Symbols:   10951
 -  CStrings:  4430
 +  Functions: 15406
-+  Symbols:   13875
++  Symbols:   10966
 +  CStrings:  4453
- 
 Symbols:
 + GCC_except_table1005
 + GCC_except_table1140
@@ -197,7 +149,6 @@ Symbols:
 + _keypath_get.971Tm
 + _keypath_set.904Tm
 + _keypath_set.906Tm
-+ _objc_msgSend$getActivePairedDevice
 - GCC_except_table1004
 - GCC_except_table1139
 - GCC_except_table1247

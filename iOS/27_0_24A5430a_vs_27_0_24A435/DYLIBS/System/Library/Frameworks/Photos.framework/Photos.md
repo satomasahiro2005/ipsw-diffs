@@ -2,104 +2,53 @@
 
 > `/System/Library/Frameworks/Photos.framework/Photos`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2dbf9c` | `0x2e3c10` | **`+0x7c74`** |
+| `__TEXT.__oslogstring` | `0x23567` | `0x24831` | **`+0x12ca`** |
+| `__TEXT.__cstring` | `0x32803` | `0x33122` | **`+0x91f`** |
+| `__AUTH_CONST.__objc_const` | `0x42310` | `0x42728` | **`+0x418`** |
+| `__AUTH_CONST.__cfstring` | `0x2d680` | `0x2da60` | **`+0x3e0`** |
+| `__TEXT.__objc_methlist` | `0x26d04` | `0x26f6c` | **`+0x268`** |
+| `__AUTH.__data` | `0x180` | `0x3c0` | **`+0x240`** |
+| `__DATA_CONST.__objc_selrefs` | `0x146f0` | `0x14900` | **`+0x210`** |
+| `__TEXT.__gcc_except_tab` | `0x969c` | `0x985c` | **`+0x1c0`** |
+| `__DATA_CONST.__const` | `0x8fb8` | `0x90f0` | **`+0x138`** |
+| `__TEXT.__constg_swiftt` | `0x544` | `0x67c` | **`+0x138`** |
+| `__AUTH_CONST.__objc_intobj` | `0x23e8` | `0x24f0` | **`+0x108`** |
+| `__TEXT.__unwind_info` | `0x96e0` | `0x97e0` | **`+0x100`** |
+| `__AUTH_CONST.__const` | `0x46d8` | `0x4778` | **`+0xa0`** |
+| `__TEXT.__swift5_fieldmd` | `0x1a8` | `0x23c` | **`+0x94`** |
+| `__TEXT.__const` | `0x1758` | `0x17e0` | **`+0x88`** |
+| `__TEXT.__swift5_typeref` | `0x4cd` | `0x547` | **`+0x7a`** |
+| `__DATA_CONST.__got` | `0x29c8` | `0x2a40` | **`+0x78`** |
+| `__AUTH.__objc_data` | `0x7de8` | `0x7e38` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x18c8` | `0x1918` | **`+0x50`** |
+| `__DATA.__data` | `0x2bc8` | `0x2c18` | **`+0x50`** |
+| `__DATA.__objc_ivar` | `0x35fc` | `0x3638` | **`+0x3c`** |
+| `__TEXT.__eh_frame` | `0x4a0` | `0x4d8` | **`+0x38`** |
+| `__TEXT.__swift5_reflstr` | `0x161` | `0x191` | **`+0x30`** |
+| `__DATA_CONST.__objc_arraydata` | `0x920` | `0x940` | **`+0x20`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x798` | `0x7b0` | **`+0x18`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x130` | `0x140` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0xf30` | `0xf40` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x34` | `0x44` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.234.0.0
--  __TEXT.__text: 0x2dbf9c
--  __TEXT.__objc_methlist: 0x26d04
--  __TEXT.__const: 0x1758
 +912.0.235.0.0
-+  __TEXT.__text: 0x2e3c10
-+  __TEXT.__objc_methlist: 0x26f6c
-+  __TEXT.__const: 0x17e0
-   __TEXT.__dlopen_cstrs: 0x280
--  __TEXT.__constg_swiftt: 0x544
--  __TEXT.__swift5_typeref: 0x4cd
--  __TEXT.__swift5_reflstr: 0x161
--  __TEXT.__swift5_fieldmd: 0x1a8
-+  __TEXT.__constg_swiftt: 0x67c
-+  __TEXT.__swift5_typeref: 0x547
-   __TEXT.__swift5_builtin: 0x3c
-+  __TEXT.__swift5_reflstr: 0x191
-+  __TEXT.__swift5_fieldmd: 0x23c
-   __TEXT.__swift5_assocty: 0xd0
-   __TEXT.__swift5_proto: 0x4c
--  __TEXT.__swift5_types: 0x34
-+  __TEXT.__swift5_types: 0x44
-   __TEXT.__swift5_capture: 0x198
--  __TEXT.__cstring: 0x32803
-+  __TEXT.__cstring: 0x33122
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0x18
--  __TEXT.__oslogstring: 0x23567
-+  __TEXT.__oslogstring: 0x24831
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__gcc_except_tab: 0x969c
-+  __TEXT.__gcc_except_tab: 0x985c
-   __TEXT.__ustring: 0x1e
--  __TEXT.__unwind_info: 0x96e0
--  __TEXT.__eh_frame: 0x4a0
-+  __TEXT.__unwind_info: 0x97e0
-+  __TEXT.__eh_frame: 0x4d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x8fb8
--  __DATA_CONST.__objc_classlist: 0xf30
-+  __DATA_CONST.__const: 0x90f0
-+  __DATA_CONST.__objc_classlist: 0xf40
-   __DATA_CONST.__objc_catlist: 0x70
-   __DATA_CONST.__objc_protolist: 0x300
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x146f0
-+  __DATA_CONST.__objc_selrefs: 0x14900
-   __DATA_CONST.__objc_protorefs: 0x40
-   __DATA_CONST.__objc_superrefs: 0xc60
--  __DATA_CONST.__objc_arraydata: 0x920
--  __DATA_CONST.__got: 0x29c8
--  __AUTH_CONST.__const: 0x46d8
--  __AUTH_CONST.__cfstring: 0x2d680
--  __AUTH_CONST.__objc_const: 0x42310
--  __AUTH_CONST.__objc_intobj: 0x23e8
--  __AUTH_CONST.__objc_arrayobj: 0x798
--  __AUTH_CONST.__objc_doubleobj: 0x130
-+  __DATA_CONST.__objc_arraydata: 0x940
-+  __DATA_CONST.__got: 0x2a40
-+  __AUTH_CONST.__const: 0x4778
-+  __AUTH_CONST.__cfstring: 0x2da60
-+  __AUTH_CONST.__objc_const: 0x42728
-+  __AUTH_CONST.__objc_intobj: 0x24f0
-+  __AUTH_CONST.__objc_arrayobj: 0x7b0
-+  __AUTH_CONST.__objc_doubleobj: 0x140
-   __AUTH_CONST.__objc_dictobj: 0xf0
-   __AUTH_CONST.__objc_floatobj: 0x10
--  __AUTH_CONST.__auth_got: 0x18c8
--  __AUTH.__objc_data: 0x7de8
--  __AUTH.__data: 0x180
--  __DATA.__objc_ivar: 0x35fc
--  __DATA.__data: 0x2bc8
-+  __AUTH_CONST.__auth_got: 0x1918
-+  __AUTH.__objc_data: 0x7e38
-+  __AUTH.__data: 0x3c0
-+  __DATA.__objc_ivar: 0x3638
-+  __DATA.__data: 0x2c18
-   __DATA.__crash_info: 0x148
-   __DATA.__common: 0x55
-   __DATA_DIRTY.__objc_data: 0x1a60
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 14909
--  Symbols:   34053
+-  Symbols:   25949
 -  CStrings:  8867
 +  Functions: 15026
-+  Symbols:   34248
++  Symbols:   26084
 +  CStrings:  8957
- 
 Symbols:
 + +[PHAsset fetchProcessedProvenanceAssetWithOriginatingAssetIdentifier:options:]
 + +[PHAssetCreationMetadataCopyOptions shouldEmbedProvenanceIntoSharedRenderForAsset:shouldCopyProvenanceData:]
@@ -731,68 +680,6 @@ Symbols:
 + ___swift_memcpy16_8
 + _kDCIMImageWriterProvenanceMetadataPathExtension
 + _kPLImageWriterProvenancePath
-+ _objc_msgSend$_addProcessedProvenanceResourceToAssetResources:processedProvenanceResourceURL:unprocessedOriginal:error:
-+ _objc_msgSend$_adjustedProvenanceRenderURLToShareForAsset:options:fileURLs:
-+ _objc_msgSend$_cleanupTemporaryProvenanceFilesIfNecessary
-+ _objc_msgSend$_creationRequestForProcessedProvenanceAssetFromUnprocessedProvenanceAsset:resourceBundle:processedProvenanceResourceURL:
-+ _objc_msgSend$_getOriginalResource:sidecarProvenanceResource:
-+ _objc_msgSend$_insertAssetWithProcessedProvenanceResourceURL:unprocessedAsset:
-+ _objc_msgSend$_isProvenanceAssetRequiringProcessing:
-+ _objc_msgSend$_processedProvenanceCarrierURLFromSourceAsset:
-+ _objc_msgSend$_removeProvenanceSidecarResourcesFrom:byType:
-+ _objc_msgSend$_setupProvenanceStateFromFetchDictionary:
-+ _objc_msgSend$_shouldAddOriginalProvenanceResourceToResourcesToShareForAsset:shouldStripProvenance:
-+ _objc_msgSend$_shouldCombineEditedProvenanceIntoRenderForAsset:options:fileURLs:
-+ _objc_msgSend$_shouldEmbedProvenanceIntoRenderForSourceAsset:
-+ _objc_msgSend$_updateAssetResourcesWithProcessedProvenanceResource:
-+ _objc_msgSend$_validateProvenanceStateForProcessing:
-+ _objc_msgSend$assetResourceForDuplicatingExternalAssetResource:creationOptions:
-+ _objc_msgSend$creationRequestForProcessedProvenanceAssetFromUnprocessedProvenanceAsset:resourceInfo:
-+ _objc_msgSend$embedProcessedProvenanceFromRegularImageAtURL:intoRegularImageAtURL:destinationURL:options:completionHandler:
-+ _objc_msgSend$forceProvenanceMetadataBaking
-+ _objc_msgSend$hasProvenanceData
-+ _objc_msgSend$hasProvenanceMetadata
-+ _objc_msgSend$hasUnprocessedProvenanceAuxiliaryMetadata
-+ _objc_msgSend$hasUnprocessedProvenanceDNGMetadata
-+ _objc_msgSend$initWithMetadata:
-+ _objc_msgSend$initWithOriginalPhotoURL:alternatePhotoURL:fullSizePhotoURL:adjustmentBaseFullSizePhotoURL:spatialOvercapturePhotoURL:originalPairedVideoURL:fullSizePairedVideoURL:adjustmentBaseFullSizePairedVideoURL:spatialOvercapturePairedVideoURL:fullSizeVideoURL:adjustmentsURL:originalAdjustmentsURL:adjustmentsSecondaryDataURL:originalProvenanceURL:mediaSubtypes:playbackStyle:playbackVariation:videoComplementVisibilityState:
-+ _objc_msgSend$initWithProvenanceState:
-+ _objc_msgSend$lastAvailableContentProvenanceLowerBoundTimestampData
-+ _objc_msgSend$livePhotoPairingIdentifierMetadataKey
-+ _objc_msgSend$maskForProvenanceProcessingExclusions
-+ _objc_msgSend$originalProvenanceAssetUUID
-+ _objc_msgSend$originalProvenanceURL
-+ _objc_msgSend$performChangesWithProgress:completionHandler:
-+ _objc_msgSend$policyWithKey:value:
-+ _objc_msgSend$powderState
-+ _objc_msgSend$preferUncombinedProvenanceResources
-+ _objc_msgSend$processPotentialProvenanceAsset:plusProvenanceDNG:
-+ _objc_msgSend$provenanceAsset
-+ _objc_msgSend$provenanceAssetDidProcessFromOriginalAssetWithUUID:error:
-+ _objc_msgSend$provenanceFlags
-+ _objc_msgSend$provenanceState
-+ _objc_msgSend$scheduleProvenanceTimestampBackgroundJob
-+ _objc_msgSend$setHasProvenanceData:
-+ _objc_msgSend$setOriginalProvenanceAssetFilename:
-+ _objc_msgSend$setOriginalProvenanceAssetUUID:
-+ _objc_msgSend$setPowderState:
-+ _objc_msgSend$setPreferUncombinedProvenanceResources:
-+ _objc_msgSend$setProvenanceAsset:
-+ _objc_msgSend$setProvenanceMetadataBehavior:withProcessedSourceImageURL:
-+ _objc_msgSend$setProvenanceMetadataBehavior:withProvenanceSidecarURL:
-+ _objc_msgSend$setProvenanceMetadataBehavior:withUnprocessedSourceAdjustedRenderURL:processedOriginalDestinationURL:sidecarURL:
-+ _objc_msgSend$setResourceURL:forRole:
-+ _objc_msgSend$setShouldCopyProvenanceData:
-+ _objc_msgSend$setShouldPreserveProvenance:
-+ _objc_msgSend$setShouldStripProvenance:
-+ _objc_msgSend$setUrlForTransfer:
-+ _objc_msgSend$setupPlaceholderAssetWithRequiredPropertiesFromSourceAsset:placeholderAssetUUID:bundleScope:share:importSessionID:bakeInAdjustmentsFromSourceAsset:flattenLivePhoto:copyTitleDescriptionAndKeywords:copyCameraProcessingAdjustmentResources:copyProvenanceData:isCurrentUser:library:
-+ _objc_msgSend$shouldCopyProvenanceData
-+ _objc_msgSend$shouldEmbedProvenanceIntoSharedRenderForAsset:shouldCopyProvenanceData:
-+ _objc_msgSend$shouldStripProvenance
-+ _objc_msgSend$shouldStripProvenanceForAsset:shouldCopyProvenanceData:
-+ _objc_msgSend$stripProvenanceExtensionFrompPath:
-+ _objc_msgSend$stripProvenanceMetadataFromOriginalProvenanceImageAtURL:destinationURL:options:completionHandler:
 + _swift_cvw_assignWithCopy
 + _swift_cvw_assignWithTake
 + _swift_cvw_destroy
@@ -1332,8 +1219,6 @@ Symbols:
 - ___block_descriptor_40_e8_32r_e42_v32?0"NSNumber"8"PHAssetResource"16^B24lr32l8
 - ___block_descriptor_81_e8_32s40s48r_e42_v32?0"NSNumber"8"PHAssetResource"16^B24ls32l8s40l8r48l8
 - ___block_descriptor_96_e8_32s40s48s56bs64r72r80r88r_e5_v8?0lr64l8s32l8s40l8s48l8r72l8r80l8r88l8s56l8
-- _objc_msgSend$initWithOriginalPhotoURL:alternatePhotoURL:fullSizePhotoURL:adjustmentBaseFullSizePhotoURL:spatialOvercapturePhotoURL:originalPairedVideoURL:fullSizePairedVideoURL:adjustmentBaseFullSizePairedVideoURL:spatialOvercapturePairedVideoURL:fullSizeVideoURL:adjustmentsURL:originalAdjustmentsURL:adjustmentsSecondaryDataURL:mediaSubtypes:playbackStyle:playbackVariation:videoComplementVisibilityState:
-- _objc_msgSend$setupPlaceholderAssetWithRequiredPropertiesFromSourceAsset:placeholderAssetUUID:bundleScope:share:importSessionID:bakeInAdjustmentsFromSourceAsset:flattenLivePhoto:copyTitleDescriptionAndKeywords:copyCameraProcessingAdjustmentResources:isCurrentUser:library:
 CStrings:
 + " shouldCopyProvenanceData=%d"
 + "%@ missing resources for provenance processing"

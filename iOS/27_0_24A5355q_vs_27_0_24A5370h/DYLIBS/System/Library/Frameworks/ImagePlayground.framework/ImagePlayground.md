@@ -2,121 +2,49 @@
 
 > `/System/Library/Frameworks/ImagePlayground.framework/ImagePlayground`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd8aa4` | `0xd82ac` | **`-0x7f8`** |
+| `__TEXT.__swift5_typeref` | `0x6710` | `0x615c` | **`-0x5b4`** |
+| `__TEXT.__const` | `0x198d4` | `0x196d4` | **`-0x200`** |
+| `__DATA.__bss` | `0x29688` | `0x29558` | **`-0x130`** |
+| `__DATA.__data` | `0x4718` | `0x4620` | **`-0xf8`** |
+| `__TEXT.__cstring` | `0x20df` | `0x1fff` | **`-0xe0`** |
+| `__AUTH.__objc_data` | `0xcc8` | `0xda0` | **`+0xd8`** |
+| `__AUTH_CONST.__objc_const` | `0x3170` | `0x3220` | **`+0xb0`** |
+| `__TEXT.__constg_swiftt` | `0x481c` | `0x4798` | **`-0x84`** |
+| `__AUTH.__data` | `0x12f0` | `0x1298` | **`-0x58`** |
+| `__AUTH_CONST.__const` | `0xb830` | `0xb870` | **`+0x40`** |
+| `__TEXT.__swift5_reflstr` | `0x24c7` | `0x2487` | **`-0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x16f0` | `0x16b8` | **`-0x38`** |
+| `__DATA_CONST.__got` | `0x9d0` | `0x998` | **`-0x38`** |
+| `__TEXT.__objc_methlist` | `0x1244` | `0x127c` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0x41e8` | `0x41b0` | **`-0x38`** |
+| `__TEXT.__swift5_assocty` | `0xa28` | `0x9f8` | **`-0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1008` | `0x1030` | **`+0x28`** |
+| `__DATA.__common` | `0xb0` | `0xa0` | **`-0x10`** |
+| `__TEXT.__swift5_capture` | `0xa88` | `0xa98` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x4598` | `0x45a4` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0xf8` | `0x100` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x15a8` | `0x15a0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -186.1.101.0.0
--  __TEXT.__text: 0xd8aa4 sha256:342aa7475da15f27a3981eec71643c01562f59853e33cc68291bc781350027fe
--  __TEXT.__objc_methlist: 0x1244 sha256:10a6c5307f7a100cc3cfbd24a18442a70bf62991bd1179b861fc564c082ad6ea
--  __TEXT.__const: 0x198d4 sha256:c0cfa5c466cd544692bd1b0117bd8477238816778f5f469a49fa494c65132841
--  __TEXT.__cstring: 0x20df sha256:1c34b37b6ffc871d1d9a29ad7f7f074df3fc8f3271563fc1e4341fdd1ce13cb3
--  __TEXT.__constg_swiftt: 0x481c sha256:41bd301c94b3390311aca826353be1c269202bca648209aa4763ac02ddaaea26
--  __TEXT.__swift5_typeref: 0x6710 sha256:ae66e3cf9f31f6f693e7a3f6bb3834108d2e8601f0f8b9eddefe7a72b154e54c
--  __TEXT.__swift5_reflstr: 0x24c7 sha256:5200d48cd8c71ad3b4435073b8ce74e024e5701fff56d5a985fd6eaefa08f4f0
--  __TEXT.__swift5_fieldmd: 0x4598 sha256:34327d53f2e356f02818ebf0940b03b745ce4ccb7bb63a1f3c8d1bf3d104d76b
--  __TEXT.__swift5_builtin: 0x190 sha256:aab04a930b0b4e4fe809a922e227b9891b5669f8e198787358bdb25f83a7db1a
--  __TEXT.__swift5_assocty: 0xa28 sha256:8e1569a284f359db4278fb489c530afbd7a623e592dc40a9f30d189936b98e36
--  __TEXT.__swift5_proto: 0x15a8 sha256:78a029cac74d7146ec4e0a0c8d2d786bb825ea619d6ff75b6f30ee8f889da7d2
--  __TEXT.__swift5_types: 0x5ec sha256:0cb14a478721f8cf36bca5e106e7c5cbd1eadf758885303ef65dff0268af0a90
--  __TEXT.__swift_as_entry: 0x94 sha256:1c44c1017682578228f9dc373c3ca286c4e80e548d9fc699a604354303e2f294
--  __TEXT.__swift_as_cont: 0x120 sha256:c54e4fb1fbf314a0c485525d6b85da0a5de9a597bda7053bb6621b05fdb08bee
--  __TEXT.__swift5_capture: 0xa88 sha256:a902156566b51e968b482c6c3f925dcfe5f9ddfa287897548f014ddf9b3e91de
--  __TEXT.__oslogstring: 0x13c8 sha256:e2eb8727ef9a8e5c08242501f5b10ee4b702107814cc990ebea5e76654824674
--  __TEXT.__swift_as_ret: 0x80 sha256:3a1fed02da87a78853ceb7ae9246184a743a4ec8c0ccc1adecb3f656bbc77ac8
--  __TEXT.__swift5_mpenum: 0xa8 sha256:4d4232f89e44c52e4081edefd8311de0f397e3cfea9e62f6eea3343354f0113a
--  __TEXT.__swift5_protos: 0x24 sha256:2e081603b8cd350b7ad61e49039a93134ed2d0a2e72ecd3c6ff0f81031fc4b71
--  __TEXT.__unwind_info: 0x41e8 sha256:2010bc5237e0768869977cdeddb8355e90cb96800a09c8b3af0ec9968e8adda9
--  __TEXT.__eh_frame: 0x49fc sha256:46fdc8756ca917022b98ce6aee137448321b483e8d9b0d5c09a08a937ac27785
 +190.0.0.0.0
-+  __TEXT.__text: 0xd82ac sha256:64749d937c596a70f1b5cebf81d7519775e96406c6fdc6aaf20d9f1fce034793
-+  __TEXT.__objc_methlist: 0x127c sha256:5739dd6ad9d40344323656747557bf2f34a458f548474bc78d0c3934aa05ea48
-+  __TEXT.__const: 0x196d4 sha256:7447ae181f58631d07d2ca9799b01d7ede875f820d59030a6214de69fb9e0139
-+  __TEXT.__cstring: 0x1fff sha256:2f2f0655fec0e7ce0c0cd5dd9d3f46624ca4caf9f3a67144e49a73c501057001
-+  __TEXT.__constg_swiftt: 0x4798 sha256:bfd118f36ea1e02147984e56b989274ca25eeab204943df2a90b68927edf2b90
-+  __TEXT.__swift5_typeref: 0x615c sha256:a525153de95ea77e1a63842c03931112dd8cbfd3838778e5a41eb9b99a8099d3
-+  __TEXT.__swift5_reflstr: 0x2487 sha256:d9a5d957ca7534ef036292e63b670d5cf0580f36a05a6abc9bf47bb1235988b4
-+  __TEXT.__swift5_fieldmd: 0x45a4 sha256:d8f8764e19a6e9aa6d7050d2e5181537b67d26422719f98493e2456708c5b6b5
-+  __TEXT.__swift5_builtin: 0x190 sha256:17db31bcdae4aa81bc0f321ac2711d1d80e303b19053816915d72425b41ad54e
-+  __TEXT.__swift5_assocty: 0x9f8 sha256:3fdf6f5bc6818649b3a22b05cfc0e7f38d2092c3c52e2baff1ffe590166ac60c
-+  __TEXT.__swift5_proto: 0x15a0 sha256:3c1a00b3649d955c7b0454b0a02546b9fcc0016f13fae0ecd3b30c0856e4722d
-+  __TEXT.__swift5_types: 0x5ec sha256:bd9e114ecb28439389e8440d691df9d017376522a0934f8ac2d46dfb0535166e
-+  __TEXT.__swift_as_entry: 0x94 sha256:fe43ee1fd896283bcbf3edc57b0412e5e6b784185a651df84b353d9ada791824
-+  __TEXT.__swift_as_cont: 0x120 sha256:7e6f347523364f110b2c30153646e0f8748f65821689f8794237a6ec76ccb47a
-+  __TEXT.__swift5_capture: 0xa98 sha256:907af0dd2cedafd5503fd62c3b3c56724c3674ac3bf47f4702edde5935a2c26b
-+  __TEXT.__oslogstring: 0x13c8 sha256:e3f23e77442f7efa09a14b802151dc992c5f3c7cae0fb7b59a5e132d6f9f09e9
-+  __TEXT.__swift_as_ret: 0x80 sha256:04ba8aad48f48d97f614b1f19ea57a8a33013b7e3d1523b0b94f2dd01470e4af
-+  __TEXT.__swift5_mpenum: 0xa8 sha256:865dd0c580781118776144b81bce398b3de7f075d413629d36861304d6cb9cb3
-+  __TEXT.__swift5_protos: 0x24 sha256:381ba486a9b3591790f2e04c5151f06eec5df3cfc38ec76ca27a18be695a3499
-+  __TEXT.__unwind_info: 0x41b0 sha256:4482a420d10b5e4e131e25105c6e0e886c26815a91beaf826eb34fa36c3db56d
-+  __TEXT.__eh_frame: 0x49fc sha256:1ba73b2c9deeb05c75b80f37bada5e6b7d0985741ca750429e84a078446b8582
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x348 sha256:822d3dc9fc0f88cd6c9e48d64317b0cb84d6df7ca775026e10bb974195c98bb1
--  __DATA_CONST.__objc_classlist: 0xf8 sha256:8865af41554cf173fe77354a5bbdd5789b34472db2e161c15431e5d076098cb2
--  __DATA_CONST.__objc_catlist: 0x10 sha256:60089131fe8f98d3790ec077196e22a9a9face1c28e9eb61e4df9d4251405017
--  __DATA_CONST.__objc_protolist: 0xb0 sha256:83dab23e66a8c5cd7aee7d26514ecebd4533b91977a1b6274edebc74569efca2
-+  __DATA_CONST.__const: 0x348 sha256:ce6657b2ebdad60c28d363d0ff93cdccbd6be59a11f032991c0c77d7e1fe08a8
-+  __DATA_CONST.__objc_classlist: 0x100 sha256:c8cc36ca7c9048dc4728cca5da0b8791e19bb32a6b4c358e17c1946fcc87a7e3
-+  __DATA_CONST.__objc_catlist: 0x10 sha256:d8522a949414ad4a0754132908cc0645a79cad85796fac63ea339604c4961727
-+  __DATA_CONST.__objc_protolist: 0xb0 sha256:188731fc0400fde3e41d38efb0efc61be05f1fa8daee31cf3f0e5cc8e8fb018f
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0x1008 sha256:acaa94af9b6c4ab3acde1a905fe2a3ff7737737a2be2f6ca48e6b076c1b6abaf
--  __DATA_CONST.__objc_protorefs: 0x60 sha256:9538455affe8672f16acba2be7562f52a0d306dd2afc51c013dd0393ccec9a97
--  __DATA_CONST.__objc_superrefs: 0x18 sha256:0240c1a2b98d7c9b99b42f709be3d66f7f083cbf217d79744b1e8a1af57f3366
--  __DATA_CONST.__got: 0x9d0 sha256:98382ebea98657a7cd226ba9fa3a694f0623523c1f294dd2eff04d89dae6dedc
--  __AUTH_CONST.__const: 0xb830 sha256:d20fa50fcd6b7613b863c292683e09337e55a85842caa82172267c1d43dc8c03
--  __AUTH_CONST.__cfstring: 0x220 sha256:0c911b3eb63c57a69671cfdc1ca8fc51730be7a2c83e01ccc78ada944506bac1
--  __AUTH_CONST.__objc_const: 0x3170 sha256:b2ee4e58eaab3f26794f5efe0f1cdcadbc05b0d2efb3778ae5fdbad4324ad5ab
--  __AUTH_CONST.__auth_got: 0x16f0 sha256:c7dcf39c36f51a71d9dee8587624e156e86582fa7da0bb7b9306fa3bf5455ab8
--  __AUTH.__objc_data: 0xcc8 sha256:12fa70d0e7ccda5ba7c3c9ab20872e8a88fb6ed2541deba7e1846893a007fc23
--  __AUTH.__data: 0x12f0 sha256:7d11bbda636399d26731ee6bde3ec93a2182fcc63e38b85cfb6261794fba39c4
-+  __DATA_CONST.__objc_selrefs: 0x1030 sha256:ec84d163e6ff92df558c1ba5d4a42f3178501237b4061be1052d21408a91eced
-+  __DATA_CONST.__objc_protorefs: 0x60 sha256:eebe09808d53607240f74093d5bbcb4f7ae2ec9065cfd5f9d6ec2fad755fdca9
-+  __DATA_CONST.__objc_superrefs: 0x18 sha256:121f54c72e6f117dbe61e6415942af5a576c2413ff021f27ebf6950f2417571d
-+  __DATA_CONST.__got: 0x998 sha256:4788f97f4daf77720cc24a0af61ecafaaf2e2704260bbd7b86f443b0e07f4796
-+  __AUTH_CONST.__const: 0xb870 sha256:6e7da40d6ec738df831f357892e2accbfb14f1524e17a40ba3a08efd156655ae
-+  __AUTH_CONST.__cfstring: 0x220 sha256:fcc855dfc8fc9ad53d1a5f2cc50ff1ed7cf4a32d3d089c3bc80bc298bc930978
-+  __AUTH_CONST.__objc_const: 0x3220 sha256:c9b9255b3d79e042886583bd621ac453f86b73b434093dc5c50a9ecb7ead2159
-+  __AUTH_CONST.__auth_got: 0x16b8 sha256:18929f7aec44521ee9526f7ca959426956565ff5e1ab948ca4a132445e93fb6f
-+  __AUTH.__objc_data: 0xda0 sha256:2214825019a169ea5a2f4414653053158b499ffb78a55637489d06feab1ced3e
-+  __AUTH.__data: 0x1298 sha256:3a77e75b8cafeaee193cf9520b40a25f2e90df7d125b56586c36cebf72aae29d
-   __DATA.__objc_ivar: 0x54 sha256:f106a8bd3d1ba1c0f988caf0f88390b79611890a7e1f2ab8012905c0456e5d85
--  __DATA.__data: 0x4718 sha256:52439c62d3c2c4e5baa39a2b710ba27f5548123dff6eefbfa2a548afb738e9fc
--  __DATA.__bss: 0x29688 sha256:25ae6eda1da089c102b596a4319334e53865c5e6a60e93b44ad0448f4b37acc4
--  __DATA.__common: 0xb0 sha256:311cd6e467e999c21aa9ac2eae809d8d0ad95ff61720372c14b2c6c0c4ef07cb
--  __DATA_DIRTY.__objc_data: 0x8f8 sha256:cc6c95b1253212d9ad2eb068d6c16d8e00dbf261a5136a8e1591b00d929ac8ea
--  __DATA_DIRTY.__data: 0x1720 sha256:a96c33701ced155c9a114f61b9d5b74b72118fda11b1f6e774a26e02ce749217
-+  __DATA.__data: 0x4620 sha256:6b5618ce4f7c7791230873f78297e9ba3a775dfb3a6e852d9b0b8d0e19adb816
-+  __DATA.__bss: 0x29558 sha256:2a78679e310cee88a63942f38b4ca9d20f0fc6f23a6563fc3111eb0e0dd16825
-+  __DATA.__common: 0xa0 sha256:92e6110ea2e8973a1e553a96bc8a94f72a740263038d09652753121176bb5c80
-+  __DATA_DIRTY.__objc_data: 0x8f8 sha256:a779c735929d487f3ff53a5e14910af868397e0556bc99054ab999ea92031baa
-+  __DATA_DIRTY.__data: 0x1720 sha256:b07b47a1cee2a78e20b2df0f5b93de83d6da5528107db30a591a5181aaa01394
-   __DATA_DIRTY.__common: 0x58 sha256:b8190567b817f45044c50bf058723f363323702cedd81c9076012521ed9f8531
-   __DATA_DIRTY.__bss: 0x1b80 sha256:078f9ff2e1bfaff952fbadd609f00f868c73f782f0e6d98778037074a54136d4
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/Frameworks/VideoToolbox.framework/VideoToolbox
 +  - /System/Library/Frameworks/WebKit.framework/WebKit
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
-   - /System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: 80241215-CCD6-3C95-ADCE-BCFC28868FFE
 -  Functions: 6218
--  Symbols:   4022
--  CStrings:  319
-+  UUID: C4B2AD49-7FA2-33E1-A905-887C3C285F99
+-  Symbols:   2925
+-  CStrings:  302
 +  Functions: 6189
-+  Symbols:   4013
-+  CStrings:  315
- 
++  Symbols:   2908
++  CStrings:  298
 Symbols:
 + _OBJC_CLASS_$_UINavigationController
 + _OBJC_CLASS_$_WKWebView
@@ -126,45 +54,13 @@ Symbols:
 + __INSTANCE_METHODS__TtC15ImagePlaygroundP33_4914A14923EFC9DC73A898712BFD2EB231OnboardingLinkWebViewController
 + __IVARS__TtC15ImagePlaygroundP33_4914A14923EFC9DC73A898712BFD2EB231OnboardingLinkWebViewController
 + __METACLASS_DATA__TtC15ImagePlaygroundP33_4914A14923EFC9DC73A898712BFD2EB231OnboardingLinkWebViewController
-+ ___swift__destructor.118
-+ ___swift__destructor.38
-+ ___swift_closure_destructor.110
-+ ___swift_closure_destructor.121
 + ___swift_closure_destructor.133Tm
-+ ___swift_closure_destructor.143
-+ ___swift_closure_destructor.32
-+ ___swift_closure_destructor.53
 + ___swift_closure_destructor.53Tm
-+ ___swift_closure_destructor.61
-+ ___swift_closure_destructor.77
-+ ___swift_closure_destructor.86
-+ ___swift_closure_destructor.90
 + ___swift_destroy_boxed_opaque_existential_0Tm
-+ _block_copy_helper.112
-+ _block_copy_helper.34
-+ _block_copy_helper.49
-+ _block_copy_helper.63
-+ _block_copy_helper.81
-+ _block_descriptor.114
-+ _block_descriptor.36
-+ _block_descriptor.51
-+ _block_descriptor.65
-+ _block_descriptor.83
-+ _block_destroy_helper.113
-+ _block_destroy_helper.35
-+ _block_destroy_helper.50
-+ _block_destroy_helper.64
-+ _block_destroy_helper.82
-+ _get_witness_table 7SwiftUI15NavigationStackVyAA0C4PathVAA15ModifiedContentVyAA012_ConditionalG0VyAGyAA4ViewPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAGyAkAE23toolbarTitleDisplayModeyQrAA07ToolbaropQ0VFQOyAkAE0N10Visibility_3forQrAA0S0O_AA0R9PlacementVdtFQOyAkAE0n10BackgroundS0_ASQrAU_AWdtFQOyAkAE0N07contentQrqd__yXE_tAA0rG0Rd__lFQOyAkAE26interactiveDismissDisabledyQrSbFQOy15ImagePlayground026GenerativePlaygroundRemoteI0V_Qo__AA05TupleG0VyAA0rG7BuilderV10buildBlockyQrxAAA_RzlFZQOy_AA0R4ItemVyytAGyAkAE16keyboardShortcut_9modifiersQrAA13KeyEquivalentV_AA14EventModifiersVtFQOyAkAE10labelStyleyQrqd__AA10LabelStyleRd__lFQOyAA6ButtonVyAA18DefaultButtonLabelVG_AA18IconOnlyLabelStyleVQo__Qo_AA30_EnvironmentKeyWritingModifierVyAA5ColorVSgGGGQo__A11_yytAGyAGyA24_AA32_EnvironmentKeyTransformModifierVySbGGA34_GGA11_yytAGyAkAE11pickerStyleyQrqd__AA11PickerStyleRd__lFQOyAA6PickerVyAA4TextVA1_20ImagePlaygroundSceneV3TabOA6_yAkAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyA49__A53_Qo__A56_QPGG_AA20SegmentedPickerStyleVQo_AA16_FixedSizeLayoutVGGSgQPGQo__Qo__Qo__Qo_AA25_AppearanceActionModifierVG_A53_Qo_SgAA30_SafeAreaRegionsIgnoringLayoutVGACyAekAEAyZQrqd__yXE_tAAA_Rd__lFQOyAA0g11UnavailableI0VyA49_A49_AA05EmptyI0VG_A37_Qo_GGAA16_FlexFrameLayoutVGGAaJHPyHC.157
-+ _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE5sheet11isPresented0D7Dismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAA01_C16Modifier_ContentVy15ImagePlayground0p10GenerationcN033_DDFA1C1AEB2E9C3EBDF6D3A43C77EE22LLVG_AcAE18remotePresentation0iO5ReadyQrSb_tFQOyAQ014GPImageEditionC0V_Qo_SgQo__SbQo__SayAQ0pQ5StyleVGQo__A3_Qo__AQ0pQ7OptionsVQo_HO.142
++ _get_witness_table 7SwiftUI15NavigationStackVyAA0C4PathVAA15ModifiedContentVyAA012_ConditionalG0VyAGyAA4ViewPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAGyAkAE23toolbarTitleDisplayModeyQrAA07ToolbaropQ0VFQOyAkAE0N10Visibility_3forQrAA0S0O_AA0R9PlacementVdtFQOyAkAE0n10BackgroundS0_ASQrAU_AWdtFQOyAkAE0N07contentQrqd__yXE_tAA0rG0Rd__lFQOyAkAE26interactiveDismissDisabledyQrSbFQOy15ImagePlayground026GenerativePlaygroundRemoteI0V_Qo__AA05TupleG0VyAA0rG7BuilderV10buildBlockyQrxAAA_RzlFZQOy_AA0R4ItemVyytAGyAkAE16keyboardShortcut_9modifiersQrAA13KeyEquivalentV_AA14EventModifiersVtFQOyAkAE10labelStyleyQrqd__AA10LabelStyleRd__lFQOyAA6ButtonVyAA18DefaultButtonLabelVG_AA18IconOnlyLabelStyleVQo__Qo_AA30_EnvironmentKeyWritingModifierVyAA5ColorVSgGGGQo__A11_yytAGyAGyA24_AA32_EnvironmentKeyTransformModifierVySbGGA34_GGA11_yytAGyAkAE11pickerStyleyQrqd__AA11PickerStyleRd__lFQOyAA6PickerVyAA4TextVA1_20ImagePlaygroundSceneV3TabOA6_yAkAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyA49__A53_Qo__A56_QPGG_AA20SegmentedPickerStyleVQo_AA16_FixedSizeLayoutVGGSgQPGQo__Qo__Qo__Qo_AA25_AppearanceActionModifierVG_A53_Qo_SgAA30_SafeAreaRegionsIgnoringLayoutVGACyAekAEAyZQrqd__yXE_tAAA_Rd__lFQOyAA0g11UnavailableI0VyA49_A49_AA05EmptyI0VG_A37_Qo_GGAA16_FlexFrameLayoutVGGAaJHPyHC
 + _keypath_get.15Tm
 + _keypath_get.27Tm
 + _keypath_get.7Tm
-+ _objc_msgSend$initWithFrame:configuration:
-+ _objc_msgSend$initWithRootViewController:
-+ _objc_msgSend$loadRequest:
-+ _objc_msgSend$presentViewController:animated:completion:
-+ _objc_msgSend$systemBackgroundColor
 + _symbolic So9WKWebViewC
 + _symbolic _____ 10Foundation3URLV
 + _symbolic _____ 15ImagePlayground010OnboardingA9AnimationO
@@ -185,45 +81,14 @@ Symbols:
 + _symbolic _____y_____y_____y_____y_____y_____y_____y______Qo_______y_____y______yytAAy_____y_____y_____y_____G______Qo__Qo______y_____SgGGGQo__AEyytAAyAAyAH_____ySbGGAOGGAEyytAAy_____y_____y__________ADy_____yAY_AZQo__A_QPGG______Qo______GGSgQPGQo__Qo__Qo__Qo______G_AZQo_ 7SwiftUI4ViewPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQO AA15ModifiedContentV AcAE23toolbarTitleDisplayModeyQrAA07ToolbarklM0VFQO AcAE0J10Visibility_3forQrAA0O0O_AA0N9PlacementVdtFQO AcAE0j10BackgroundO0_AMQrAO_AQdtFQO AcAE0J07contentQrqd__yXE_tAA0nI0Rd__lFQO AcAE26interactiveDismissDisabledyQrSbFQO 15ImagePlayground010Generativex6RemoteC0V AA05TupleI0V AA0nI7BuilderV10buildBlockyQrxAaURzlFZQO AA0N4ItemV AcAE16keyboardShortcut_9modifiersQrAA13KeyEquivalentV_AA14EventModifiersVtFQO AcAE10labelStyleyQrqd__AA10LabelStyleRd__lFQO AA6ButtonV AA18DefaultButtonLabelV AA18IconOnlyLabelStyleV AA30_EnvironmentKeyWritingModifierV AA5ColorV AA32_EnvironmentKeyTransformModifierV AcAE11pickerStyleyQrqd__AA11PickerStyleRd__lFQO AA6PickerV AA4TextV AW0wX5SceneV3TabO AcAE3tag_15includeOptionalQrqd___SbtSHRd__lFQO AA20SegmentedPickerStyleV AA16_FixedSizeLayoutV AA25_AppearanceActionModifierV
 + _symbolic _____y_____y_____y_____y_____y_____y_____y______Qo_______y_____y______yytAAy_____y_____y_____y_____G______Qo__Qo______y_____SgGGGQo__AEyytAAyAAyAH_____ySbGGAOGGAEyytAAy_____y_____y__________ADy_____yAY_AZQo__A_QPGG______Qo______GGSgQPGQo__Qo__Qo__Qo______G_AZQo_Sg 7SwiftUI4ViewPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQO AA15ModifiedContentV AcAE23toolbarTitleDisplayModeyQrAA07ToolbarklM0VFQO AcAE0J10Visibility_3forQrAA0O0O_AA0N9PlacementVdtFQO AcAE0j10BackgroundO0_AMQrAO_AQdtFQO AcAE0J07contentQrqd__yXE_tAA0nI0Rd__lFQO AcAE26interactiveDismissDisabledyQrSbFQO 15ImagePlayground010Generativex6RemoteC0V AA05TupleI0V AA0nI7BuilderV10buildBlockyQrxAaURzlFZQO AA0N4ItemV AcAE16keyboardShortcut_9modifiersQrAA13KeyEquivalentV_AA14EventModifiersVtFQO AcAE10labelStyleyQrqd__AA10LabelStyleRd__lFQO AA6ButtonV AA18DefaultButtonLabelV AA18IconOnlyLabelStyleV AA30_EnvironmentKeyWritingModifierV AA5ColorV AA32_EnvironmentKeyTransformModifierV AcAE11pickerStyleyQrqd__AA11PickerStyleRd__lFQO AA6PickerV AA4TextV AW0wX5SceneV3TabO AcAE3tag_15includeOptionalQrqd___SbtSHRd__lFQO AA20SegmentedPickerStyleV AA16_FixedSizeLayoutV AA25_AppearanceActionModifierV
 - _OBJC_CLASS_$_UIPanGestureRecognizer
-- ___swift__destructor.112
-- ___swift_closure_destructor.101
-- ___swift_closure_destructor.104
-- ___swift_closure_destructor.114
-- ___swift_closure_destructor.125
 - ___swift_closure_destructor.137Tm
-- ___swift_closure_destructor.141
-- ___swift_closure_destructor.151
-- ___swift_closure_destructor.35
 - ___swift_closure_destructor.47Tm
-- ___swift_closure_destructor.55
-- ___swift_closure_destructor.67
-- ___swift_closure_destructor.71
-- ___swift_closure_destructor.80
-- ___swift_closure_destructor.84
-- ___swift_closure_destructor.89
-- ___swift_closure_destructor.93
 - _associated conformance 15ImagePlayground20RotateToPortraitViewV7SwiftUI0F0AA4BodyAdEP_AdE
 - _associated conformance 15ImagePlayground31RotateToPortraitOverlayModifier33_A7853B1E9985DF948776D4E1D2039A4ALLV7SwiftUI04ViewG0AA4BodyAeFP_AE0R0
-- _block_copy_helper.106
-- _block_copy_helper.16
-- _block_copy_helper.37
-- _block_copy_helper.57
-- _block_copy_helper.75
-- _block_descriptor.108
-- _block_descriptor.18
-- _block_descriptor.39
-- _block_descriptor.59
-- _block_descriptor.77
-- _block_destroy_helper.107
-- _block_destroy_helper.17
-- _block_destroy_helper.38
-- _block_destroy_helper.58
-- _block_destroy_helper.76
-- _get_witness_table 7SwiftUI15ModifiedContentVyACyACyACyAA0D15UnavailableViewVyAA5LabelVyACyAA4TextVAA30_EnvironmentKeyWritingModifierVyAA0H9AlignmentOGGAA5ImageVGAA05EmptyF0VATGAA16_FlexFrameLayoutVGAA016_BackgroundStyleL0VyAA0sT0VGGAA023AccessibilityAttachmentL0VGAA024_SafeAreaRegionsIgnoringR0VGAA0F0HPA5_AAA9_HPA2_AAA9_HPAxAA9_HPAuAA9_HPyHC_AwA0fL0HPyHCHC_A1_AAA10_HPyHCHC_A4_AAA10_HPyHCHC_A7_AAA10_HPyHCHC.6
-- _get_witness_table 7SwiftUI15NavigationStackVyAA0C4PathVAA15ModifiedContentVyAA012_ConditionalG0VyAGyAA4ViewPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAGyAkAE23toolbarTitleDisplayModeyQrAA07ToolbaropQ0VFQOyAkAE0N10Visibility_3forQrAA0S0O_AA0R9PlacementVdtFQOyAkAE0n10BackgroundS0_ASQrAU_AWdtFQOyAkAE0N07contentQrqd__yXE_tAA0rG0Rd__lFQOyAA5GroupVyAIy15ImagePlayground016RotateToPortraitI0VAkAE26interactiveDismissDisabledyQrSbFQOyA2_010Generativez6RemoteI0V_Qo_GG_AA05TupleG0VyAA0rG7BuilderV10buildBlockyQrxAAA_RzlFZQOy_AA0R4ItemVyytAGyAkAE16keyboardShortcut_9modifiersQrAA13KeyEquivalentV_AA14EventModifiersVtFQOyAkAE10labelStyleyQrqd__AA10LabelStyleRd__lFQOyAA6ButtonVyAA18DefaultButtonLabelVG_AA18IconOnlyLabelStyleVQo__Qo_AA30_EnvironmentKeyWritingModifierVyAA5ColorVSgGGGQo__A12_yA17_yytAGyAGyA30_AA32_EnvironmentKeyTransformModifierVySbGGA40_GG_A17_yytAGyAkAE11pickerStyleyQrqd__AA11PickerStyleRd__lFQOyAA6PickerVyAA4TextVA2_0yZ5SceneV3TabOA12_yAkAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyA55__A59_Qo__A62_QPGG_AA20SegmentedPickerStyleVQo_AA16_FixedSizeLayoutVGGSgQPGSgQPGQo__Qo__Qo__Qo_AA25_AppearanceActionModifierVG_A59_Qo_SgAA30_SafeAreaRegionsIgnoringLayoutVGACyAekAEAyZQrqd__yXE_tAAA_Rd__lFQOyAA0g11UnavailableI0VyA55_A55_AA05EmptyI0VG_A43_Qo_GGAA16_FlexFrameLayoutVGGAaJHPyHC.161
-- _get_witness_table 7SwiftUI19_ConditionalContentVy15ImagePlayground20RotateToPortraitViewVAA01_j9Modifier_D0VyAD0ghi7OverlayK033_A7853B1E9985DF948776D4E1D2039A4ALLVGGAA0J0HPAfaNHPyHC_AlaNHPyHCHC.12
-- _get_witness_table 7SwiftUI4ViewRzlAA15ModifiedContentVyx15ImagePlayground31RotateToPortraitOverlayModifier33_A7853B1E9985DF948776D4E1D2039A4ALLVGAaBHPxAaBHD1__AhA0cL0HPyHCHC.5
-- _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE5sheet11isPresented0D7Dismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAA01_C16Modifier_ContentVy15ImagePlayground0p10GenerationcN033_DDFA1C1AEB2E9C3EBDF6D3A43C77EE22LLVG_AcAE18remotePresentation0iO5ReadyQrSb_tFQOyAQ014GPImageEditionC0V_Qo_SgQo__SbQo__SayAQ0pQ5StyleVGQo__A3_Qo__AQ0pQ7OptionsVQo_HO.146
+- _get_witness_table 7SwiftUI15ModifiedContentVyACyACyACyAA0D15UnavailableViewVyAA5LabelVyACyAA4TextVAA30_EnvironmentKeyWritingModifierVyAA0H9AlignmentOGGAA5ImageVGAA05EmptyF0VATGAA16_FlexFrameLayoutVGAA016_BackgroundStyleL0VyAA0sT0VGGAA023AccessibilityAttachmentL0VGAA024_SafeAreaRegionsIgnoringR0VGAA0F0HPA5_AAA9_HPA2_AAA9_HPAxAA9_HPAuAA9_HPyHC_AwA0fL0HPyHCHC_A1_AAA10_HPyHCHC_A4_AAA10_HPyHCHC_A7_AAA10_HPyHCHC
+- _get_witness_table 7SwiftUI15NavigationStackVyAA0C4PathVAA15ModifiedContentVyAA012_ConditionalG0VyAGyAA4ViewPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAGyAkAE23toolbarTitleDisplayModeyQrAA07ToolbaropQ0VFQOyAkAE0N10Visibility_3forQrAA0S0O_AA0R9PlacementVdtFQOyAkAE0n10BackgroundS0_ASQrAU_AWdtFQOyAkAE0N07contentQrqd__yXE_tAA0rG0Rd__lFQOyAA5GroupVyAIy15ImagePlayground016RotateToPortraitI0VAkAE26interactiveDismissDisabledyQrSbFQOyA2_010Generativez6RemoteI0V_Qo_GG_AA05TupleG0VyAA0rG7BuilderV10buildBlockyQrxAAA_RzlFZQOy_AA0R4ItemVyytAGyAkAE16keyboardShortcut_9modifiersQrAA13KeyEquivalentV_AA14EventModifiersVtFQOyAkAE10labelStyleyQrqd__AA10LabelStyleRd__lFQOyAA6ButtonVyAA18DefaultButtonLabelVG_AA18IconOnlyLabelStyleVQo__Qo_AA30_EnvironmentKeyWritingModifierVyAA5ColorVSgGGGQo__A12_yA17_yytAGyAGyA30_AA32_EnvironmentKeyTransformModifierVySbGGA40_GG_A17_yytAGyAkAE11pickerStyleyQrqd__AA11PickerStyleRd__lFQOyAA6PickerVyAA4TextVA2_0yZ5SceneV3TabOA12_yAkAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyA55__A59_Qo__A62_QPGG_AA20SegmentedPickerStyleVQo_AA16_FixedSizeLayoutVGGSgQPGSgQPGQo__Qo__Qo__Qo_AA25_AppearanceActionModifierVG_A59_Qo_SgAA30_SafeAreaRegionsIgnoringLayoutVGACyAekAEAyZQrqd__yXE_tAAA_Rd__lFQOyAA0g11UnavailableI0VyA55_A55_AA05EmptyI0VG_A43_Qo_GGAA16_FlexFrameLayoutVGGAaJHPyHC
+- _get_witness_table 7SwiftUI19_ConditionalContentVy15ImagePlayground20RotateToPortraitViewVAA01_j9Modifier_D0VyAD0ghi7OverlayK033_A7853B1E9985DF948776D4E1D2039A4ALLVGGAA0J0HPAfaNHPyHC_AlaNHPyHCHC
+- _get_witness_table 7SwiftUI4ViewRzlAA15ModifiedContentVyx15ImagePlayground31RotateToPortraitOverlayModifier33_A7853B1E9985DF948776D4E1D2039A4ALLVGAaBHPxAaBHD1__AhA0cL0HPyHCHC
 - _keypath_get.11Tm
 - _keypath_get.19Tm
 - _keypath_get.31Tm
@@ -275,5 +140,4 @@ CStrings:
 - "Skip button for onboarding"
 - "To use Image Playground, rotate iPhone to portrait."
 - "https://support.apple.com/en-us/HT213060"
-
 ```

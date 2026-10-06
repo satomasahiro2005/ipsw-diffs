@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/UIIntelligenceSupport.framework/UIIntelligenceSupport`
 
-```diff
+### Section Size Changes
 
- 9127.0.84.1.106
--  __TEXT.__text: 0x1164c0
-+  __TEXT.__text: 0x1164b0
-   __TEXT.__objc_methlist: 0x1bc
-   __TEXT.__const: 0x19056
-   __TEXT.__swift5_typeref: 0x4aee
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1164c0` | `0x1164b0` | **`-0x10`** |
+
+### Other Changes
+
+```diff
 Symbols:
 + _swift_retain_x10
 - _swift_retain_x12

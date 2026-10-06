@@ -2,9 +2,9 @@
 
 > `/System/Library/ExtensionKit/Extensions/MercuryPosterExtension.appex/Celosia.metallib`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
-- `__TEXT.__vertex`
-- `__TEXT.__fragment`
 - `__TEXT.__descriptor`
+- `__TEXT.__fragment`
 - `__TEXT.__metallib`
+- `__TEXT.__vertex`

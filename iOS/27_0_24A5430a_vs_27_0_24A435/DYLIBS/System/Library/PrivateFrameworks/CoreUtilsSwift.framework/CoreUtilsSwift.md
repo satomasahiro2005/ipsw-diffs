@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CoreUtilsSwift.framework/CoreUtilsSwift`
 
-```diff
+### Section Size Changes
 
- 900.58.0.0.0
--  __TEXT.__text: 0x92050
-+  __TEXT.__text: 0x920bc
-   __TEXT.__objc_methlist: 0x14c
-   __TEXT.__const: 0x4f54
-   __TEXT.__swift5_typeref: 0x174c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x92050` | `0x920bc` | **`+0x6c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1bf788580 -> sub_1bfc3e580 : 1392 -> 1396
 ~ sub_1bf79b974 -> sub_1bfc51978 : 624 -> 632

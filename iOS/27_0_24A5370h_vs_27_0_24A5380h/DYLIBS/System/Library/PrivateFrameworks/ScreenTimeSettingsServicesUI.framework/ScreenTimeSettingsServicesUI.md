@@ -2,120 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/ScreenTimeSettingsServicesUI.framework/ScreenTimeSettingsServicesUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5b875c` | `0x6067e0` | **`+0x4e084`** |
+| `__TEXT.__swift5_typeref` | `0x55e46` | `0x58c74` | **`+0x2e2e`** |
+| `__TEXT.__const` | `0x322c4` | `0x346e4` | **`+0x2420`** |
+| `__DATA.__bss` | `0x227e8` | `0x24508` | **`+0x1d20`** |
+| `__AUTH_CONST.__const` | `0x1d170` | `0x1e998` | **`+0x1828`** |
+| `__TEXT.__cstring` | `0x15503` | `0x16aa3` | **`+0x15a0`** |
+| `__AUTH.__data` | `0xf908` | `0x10d00` | **`+0x13f8`** |
+| `__TEXT.__eh_frame` | `0x12860` | `0x13a64` | **`+0x1204`** |
+| `__TEXT.__unwind_info` | `0xe628` | `0xf5c8` | **`+0xfa0`** |
+| `__DATA.__data` | `0xfbb8` | `0x10918` | **`+0xd60`** |
+| `__TEXT.__constg_swiftt` | `0x10694` | `0x111ec` | **`+0xb58`** |
+| `__TEXT.__swift5_fieldmd` | `0xa35c` | `0xae14` | **`+0xab8`** |
+| `__TEXT.__swift5_reflstr` | `0xab57` | `0xb507` | **`+0x9b0`** |
+| `__TEXT.__swift5_capture` | `0x7b64` | `0x829c` | **`+0x738`** |
+| `__TEXT.__oslogstring` | `0x4685` | `0x4a85` | **`+0x400`** |
+| `__AUTH_CONST.__objc_const` | `0x8a28` | `0x8d78` | **`+0x350`** |
+| `__AUTH_CONST.__auth_got` | `0x4620` | `0x4878` | **`+0x258`** |
+| `__TEXT.__swift5_assocty` | `0x2a00` | `0x2c30` | **`+0x230`** |
+| `__DATA_CONST.__got` | `0x2530` | `0x26e8` | **`+0x1b8`** |
+| `__AUTH.__objc_data` | `0x1d68` | `0x1eb0` | **`+0x148`** |
+| `__TEXT.__swift5_proto` | `0x12c0` | `0x13b8` | **`+0xf8`** |
+| `__TEXT.__swift_as_cont` | `0xb04` | `0xbb4` | **`+0xb0`** |
+| `__TEXT.__swift5_types` | `0xaac` | `0xb4c` | **`+0xa0`** |
+| `__TEXT.__swift_as_ret` | `0x46c` | `0x4d0` | **`+0x64`** |
+| `__TEXT.__swift_as_entry` | `0x4b0` | `0x4f8` | **`+0x48`** |
+| `__DATA.__common` | `0x400` | `0x3e8` | **`-0x18`** |
+| `__DATA_CONST.__const` | `0x3f0` | `0x408` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x368` | `0x378` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0xe40` | `0xe48` | **`+0x8`** |
+| `__DATA_DIRTY.__data` | `0x3b00` | `0x3af8` | **`-0x8`** |
+| `__TEXT.__objc_methlist` | `0xac0` | `0xac8` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0xb4` | `0xb8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x5b875c
--  __TEXT.__objc_methlist: 0xac0
--  __TEXT.__const: 0x322c4
-+  __TEXT.__text: 0x6067e0
-+  __TEXT.__objc_methlist: 0xac8
-+  __TEXT.__const: 0x346e4
-   __TEXT.__gcc_except_tab: 0xc8
--  __TEXT.__cstring: 0x15503
-+  __TEXT.__cstring: 0x16aa3
-   __TEXT.__dlopen_cstrs: 0x164
--  __TEXT.__oslogstring: 0x4685
--  __TEXT.__swift5_typeref: 0x55e46
--  __TEXT.__constg_swiftt: 0x10694
--  __TEXT.__swift5_reflstr: 0xab57
--  __TEXT.__swift5_fieldmd: 0xa35c
-+  __TEXT.__oslogstring: 0x4a85
-+  __TEXT.__constg_swiftt: 0x111ec
-+  __TEXT.__swift5_typeref: 0x58c74
-   __TEXT.__swift5_builtin: 0x140
--  __TEXT.__swift5_assocty: 0x2a00
--  __TEXT.__swift5_proto: 0x12c0
--  __TEXT.__swift5_types: 0xaac
--  __TEXT.__swift5_protos: 0xb4
--  __TEXT.__swift_as_entry: 0x4b0
--  __TEXT.__swift_as_ret: 0x46c
--  __TEXT.__swift_as_cont: 0xb04
--  __TEXT.__swift5_capture: 0x7b64
-+  __TEXT.__swift5_reflstr: 0xb507
-+  __TEXT.__swift5_fieldmd: 0xae14
-+  __TEXT.__swift5_assocty: 0x2c30
-+  __TEXT.__swift5_proto: 0x13b8
-+  __TEXT.__swift5_types: 0xb4c
-+  __TEXT.__swift_as_entry: 0x4f8
-+  __TEXT.__swift_as_ret: 0x4d0
-+  __TEXT.__swift_as_cont: 0xbb4
-+  __TEXT.__swift5_capture: 0x829c
-+  __TEXT.__swift5_protos: 0xb8
-   __TEXT.__swift5_mpenum: 0x54
--  __TEXT.__unwind_info: 0xe628
--  __TEXT.__eh_frame: 0x12860
-+  __TEXT.__unwind_info: 0xf5c8
-+  __TEXT.__eh_frame: 0x13a64
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3f0
--  __DATA_CONST.__objc_classlist: 0x368
-+  __DATA_CONST.__const: 0x408
-+  __DATA_CONST.__objc_classlist: 0x378
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0xb0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xe40
-+  __DATA_CONST.__objc_selrefs: 0xe48
-   __DATA_CONST.__objc_protorefs: 0x50
-   __DATA_CONST.__objc_superrefs: 0x10
--  __DATA_CONST.__got: 0x2530
--  __AUTH_CONST.__const: 0x1d170
-+  __DATA_CONST.__got: 0x26e8
-+  __AUTH_CONST.__const: 0x1e998
-   __AUTH_CONST.__cfstring: 0x160
--  __AUTH_CONST.__objc_const: 0x8a28
--  __AUTH_CONST.__auth_got: 0x4620
--  __AUTH.__objc_data: 0x1d68
--  __AUTH.__data: 0xf908
-+  __AUTH_CONST.__objc_const: 0x8d78
-+  __AUTH_CONST.__auth_got: 0x4878
-+  __AUTH.__objc_data: 0x1eb0
-+  __AUTH.__data: 0x10d00
-   __DATA.__objc_ivar: 0x20
--  __DATA.__data: 0xfbb8
--  __DATA.__bss: 0x227e8
--  __DATA.__common: 0x400
-+  __DATA.__data: 0x10918
-+  __DATA.__bss: 0x24508
-+  __DATA.__common: 0x3e8
-   __DATA_DIRTY.__objc_data: 0x550
--  __DATA_DIRTY.__data: 0x3b00
-+  __DATA_DIRTY.__data: 0x3af8
-   __DATA_DIRTY.__bss: 0x1730
-   __DATA_DIRTY.__common: 0x70
-   - /System/Library/Frameworks/Accounts.framework/Accounts
+-82.0.100.0.0
++87.1.101.0.0
 
-   - /System/Library/PrivateFrameworks/AuthKitUI.framework/AuthKitUI
-   - /System/Library/PrivateFrameworks/CalendarFoundation.framework/CalendarFoundation
-   - /System/Library/PrivateFrameworks/Categories.framework/Categories
 -  - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/FamilyCircle.framework/FamilyCircle
-   - /System/Library/PrivateFrameworks/FamilyControlsObjC.framework/FamilyControlsObjC
-   - /System/Library/PrivateFrameworks/IconFoundation.framework/IconFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 21648
--  Symbols:   12417
--  CStrings:  1879
+-  Symbols:   7733
+-  CStrings:  1868
 +  Functions: 22731
-+  Symbols:   12913
-+  CStrings:  1975
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   7997
++  CStrings:  1964
 Symbols:
 + _CGRectInset
 + __DATA__TtC28ScreenTimeSettingsServicesUI27AppsAndWebsitesRowViewModel
@@ -1902,5 +1840,4 @@ CStrings:
 - "app.3.stack.3d.fill"
 - "com.apple.application-icon.apple-intelligence"
 - "’s](inflect: true) apps and websites are available. Select categories to allow at different times of day. Always Allowed contacts and apps remain accessible."
-
 ```

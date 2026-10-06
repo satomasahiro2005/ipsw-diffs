@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/CommunicationsUICore.framework/CommunicationsUICore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xdf64c` | `0xdf6ac` | **`+0x60`** |
+| `__AUTH_CONST.__auth_got` | `0x14f8` | `0x14f0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 153.100.1.2.29
--  __TEXT.__text: 0xdf64c
-+  __TEXT.__text: 0xdf6ac
-   __TEXT.__objc_methlist: 0x155c
-   __TEXT.__const: 0x8004
-   __TEXT.__swift5_typeref: 0x3f52
-
-   __DATA_CONST.__got: 0xa38
-   __AUTH_CONST.__const: 0x5438
-   __AUTH_CONST.__objc_const: 0x14768
--  __AUTH_CONST.__auth_got: 0x14f8
-+  __AUTH_CONST.__auth_got: 0x14f0
-   __AUTH.__objc_data: 0x480
-   __AUTH.__data: 0x158
-   __DATA.__data: 0x1db8
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 4348
--  Symbols:   2074
-+  Symbols:   2073
-   CStrings:  559
- 
+-  Symbols:   1736
++  Symbols:   1735
 Symbols:
 - _objc_retain_x9
 Functions:

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ProofReader.framework/ProofReader`
 
-```diff
+### Section Size Changes
 
- 696.0.0.0.0
--  __TEXT.__text: 0xbdbf0
-+  __TEXT.__text: 0xbdf10
-   __TEXT.__objc_methlist: 0x2900
-   __TEXT.__const: 0x63e2
-   __TEXT.__gcc_except_tab: 0x8e0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbdbf0` | `0xbdf10` | **`+0x320`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ ___173-[AppleSpell(LanguageModeling) _contextLengthForRange:languageObject:tagger:languageModel:maxContextLength:context:cleanOffset:cleanContextRange:lastTokenRange:lastTokenID:]_block_invoke : 344 -> 352
 ~ _SLisint : 44 -> 48

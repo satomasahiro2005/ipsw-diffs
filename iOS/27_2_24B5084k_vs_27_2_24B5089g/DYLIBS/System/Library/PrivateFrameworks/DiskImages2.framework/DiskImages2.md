@@ -2,58 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/DiskImages2.framework/DiskImages2`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1f3acc` | `0x1f35b0` | **`-0x51c`** |
+| `__AUTH_CONST.__const` | `0x38bf0` | `0x389d0` | **`-0x220`** |
+| `__TEXT.__cstring` | `0x17538` | `0x175e8` | **`+0xb0`** |
+| `__TEXT.__const` | `0x173ba` | `0x1736a` | **`-0x50`** |
+| `__TEXT.__unwind_info` | `0xe5e0` | `0xe598` | **`-0x48`** |
+| `__TEXT.__oslogstring` | `0x1d7e` | `0x1db5` | **`+0x37`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1fb8` | `0x1fb0` | **`-0x8`** |
+| `__TEXT.__objc_methlist` | `0x3d0c` | `0x3d04` | **`-0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x1b588` | `0x1b58c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -598.40.3.0.0
--  __TEXT.__text: 0x1e685c
--  __TEXT.__objc_methlist: 0x3d0c
--  __TEXT.__const: 0x173ba
--  __TEXT.__gcc_except_tab: 0x1b588
--  __TEXT.__cstring: 0x17538
--  __TEXT.__oslogstring: 0x1d7e
 +598.40.4.0.0
-+  __TEXT.__text: 0x1e639c
-+  __TEXT.__objc_methlist: 0x3d04
-+  __TEXT.__const: 0x1736a
-+  __TEXT.__gcc_except_tab: 0x1b58c
-+  __TEXT.__cstring: 0x175e8
-+  __TEXT.__oslogstring: 0x1db5
-   __TEXT.__ustring: 0x13c
-   __TEXT.__constg_swiftt: 0x60
-   __TEXT.__swift5_typeref: 0x58
-   __TEXT.__swift5_fieldmd: 0x10
-   __TEXT.__swift5_types: 0x4
--  __TEXT.__unwind_info: 0x10870
-+  __TEXT.__unwind_info: 0x10810
-   __TEXT.__eh_frame: 0xf0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x1fb8
-+  __DATA_CONST.__objc_selrefs: 0x1fb0
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x200
-   __DATA_CONST.__objc_arraydata: 0xf0
-   __DATA_CONST.__got: 0x690
--  __AUTH_CONST.__const: 0x38bf0
-+  __AUTH_CONST.__const: 0x389d0
-   __AUTH_CONST.__cfstring: 0x4ec0
-   __AUTH_CONST.__objc_const: 0x60a8
-   __AUTH_CONST.__weak_auth_got: 0x30
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/local/lib/libcurl.4.dylib
 -  Functions: 11895
--  Symbols:   19645
+-  Symbols:   18796
 -  CStrings:  2301
 +  Functions: 11879
-+  Symbols:   19622
++  Symbols:   18774
 +  CStrings:  2310
- 
 Symbols:
 + +[DISLAFrontend(Private) redirectStdoutForDisplay]
 + GCC_except_table434
@@ -205,7 +180,6 @@ Symbols:
 + __ZTv0_n24_N6di_log6loggerINS_11log_printerILm927EEEED0Ev
 + __ZTv0_n24_N6di_log6loggerINS_11log_printerILm927EEEED1Ev
 + __ZlsIyERNSt3__113basic_ostreamIcNS0_11char_traitsIcEEEES5_RK12print_as_hexIT_E
-+ _objc_msgSend$redirectStdoutForDisplay
 - +[DISLAFrontend(Private) isStdoutQuietMode]
 - +[DISLAFrontend(Private) redirectStdoutToTTY]
 - GCC_except_table404
@@ -378,8 +352,6 @@ Symbols:
 - __ZTv0_n24_N6di_log6loggerINS_11log_printerILm85EEEED1Ev
 - __ZTv0_n24_N6di_log6loggerINS_11log_printerILm898EEEED0Ev
 - __ZTv0_n24_N6di_log6loggerINS_11log_printerILm898EEEED1Ev
-- _objc_msgSend$isStdoutQuietMode
-- _objc_msgSend$redirectStdoutToTTY
 CStrings:
 + " bytes does not fit before the "
 + " bytes image"

@@ -2,110 +2,69 @@
 
 > `/System/Library/PrivateFrameworks/iCloudDriveCore.framework/Frameworks/libos-brain.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_mpenum`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x20b830` | `0x22bf98` | **`+0x20768`** |
+| `__TEXT.__eh_frame` | `0x117f0` | `0x12f68` | **`+0x1778`** |
+| `__DATA_CONST.__const` | `0x81e0` | `0x8c10` | **`+0xa30`** |
+| `__TEXT.__unwind_info` | `0x62f8` | `0x6990` | **`+0x698`** |
+| `__TEXT.__swift5_capture` | `0x1850` | `0x1ca4` | **`+0x454`** |
+| `__TEXT.__const` | `0xcfb8` | `0xd3e8` | **`+0x430`** |
+| `__TEXT.__swift5_typeref` | `0x5322` | `0x5688` | **`+0x366`** |
+| `__DATA.__data` | `0x5088` | `0x5348` | **`+0x2c0`** |
+| `__TEXT.__cstring` | `0x4382` | `0x45e2` | **`+0x260`** |
+| `__TEXT.__constg_swiftt` | `0x4528` | `0x477c` | **`+0x254`** |
+| `__DATA.__objc_const` | `0x5700` | `0x58d8` | **`+0x1d8`** |
+| `__TEXT.__swift5_reflstr` | `0x34bd` | `0x3652` | **`+0x195`** |
+| `__TEXT.__swift5_fieldmd` | `0x2e88` | `0x3004` | **`+0x17c`** |
+| `__TEXT.__swift_as_cont` | `0xcbc` | `0xe30` | **`+0x174`** |
+| `__TEXT.__objc_methtype` | `0x11ff` | `0x135f` | **`+0x160`** |
+| `__DATA.__bss` | `0x111e0` | `0x11300` | **`+0x120`** |
+| `__TEXT.__objc_stubs` | `0x1f60` | `0x2040` | **`+0xe0`** |
+| `__TEXT.__oslogstring` | `0x855d` | `0x8628` | **`+0xcb`** |
+| `__DATA_CONST.__auth_ptr` | `0x3210` | `0x32d0` | **`+0xc0`** |
+| `__TEXT.__swift_as_ret` | `0x65c` | `0x708` | **`+0xac`** |
+| `__TEXT.__objc_methlist` | `0xd0c` | `0xda4` | **`+0x98`** |
+| `__TEXT.__swift_as_entry` | `0x590` | `0x61c` | **`+0x8c`** |
+| `__TEXT.__objc_methname` | `0x3c72` | `0x3cf8` | **`+0x86`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa48` | `0xaa0` | **`+0x58`** |
+| `__TEXT.__auth_stubs` | `0x2a20` | `0x2a50` | **`+0x30`** |
+| `__TEXT.__objc_classname` | `0x418` | `0x438` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0x1518` | `0x1530` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x748` | `0x760` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0x2e4` | `0x2fc` | **`+0x18`** |
+| `__DATA.__common` | `0xaf0` | `0xb00` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x9c` | `0x90` | **`-0xc`** |
+| `__TEXT.__swift5_proto` | `0x900` | `0x90c` | **`+0xc`** |
+| `__DATA.__objc_data` | `0x498` | `0x4a0` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x90` | `0x98` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x164` | `0x16c` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__objc_catlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_mpenum`
+
+### Other Changes
 
 ```diff
 
 -5168.0.55.0.0
--  __TEXT.__text: 0x1f851c
--  __TEXT.__auth_stubs: 0x2a20
--  __TEXT.__objc_stubs: 0x1f60
--  __TEXT.__objc_methlist: 0xd0c
--  __TEXT.__objc_methname: 0x3c72
--  __TEXT.__objc_classname: 0x418
--  __TEXT.__cstring: 0x4382
--  __TEXT.__objc_methtype: 0x11ff
--  __TEXT.__const: 0xcfb8
--  __TEXT.__swift5_typeref: 0x5322
--  __TEXT.__swift5_reflstr: 0x34bd
 +5168.40.149.0.1
-+  __TEXT.__text: 0x216dfc
-+  __TEXT.__auth_stubs: 0x2a50
-+  __TEXT.__objc_stubs: 0x2040
-+  __TEXT.__objc_methlist: 0xda4
-+  __TEXT.__objc_methname: 0x3cf8
-+  __TEXT.__objc_classname: 0x438
-+  __TEXT.__cstring: 0x45e2
-+  __TEXT.__objc_methtype: 0x135f
-+  __TEXT.__const: 0xd3e8
-+  __TEXT.__swift5_typeref: 0x5688
-+  __TEXT.__swift5_capture: 0x1ca4
-+  __TEXT.__swift5_reflstr: 0x3652
-   __TEXT.__swift5_assocty: 0xfa8
--  __TEXT.__constg_swiftt: 0x4528
--  __TEXT.__swift5_fieldmd: 0x2e88
--  __TEXT.__swift5_proto: 0x900
--  __TEXT.__swift5_types: 0x2e4
--  __TEXT.__swift_as_entry: 0x590
--  __TEXT.__swift_as_ret: 0x65c
--  __TEXT.__oslogstring: 0x855d
-+  __TEXT.__constg_swiftt: 0x477c
-+  __TEXT.__swift5_fieldmd: 0x3004
-+  __TEXT.__oslogstring: 0x8628
-+  __TEXT.__swift5_proto: 0x90c
-+  __TEXT.__swift5_types: 0x2fc
-+  __TEXT.__swift_as_entry: 0x61c
-+  __TEXT.__swift_as_ret: 0x708
-   __TEXT.__swift5_builtin: 0x190
--  __TEXT.__swift5_capture: 0x1850
--  __TEXT.__swift_as_cont: 0xcbc
-+  __TEXT.__swift_as_cont: 0xe30
-   __TEXT.__swift5_mpenum: 0x30
--  __TEXT.__swift5_protos: 0x164
--  __TEXT.__unwind_info: 0x7138
--  __TEXT.__eh_frame: 0x11818
--  __DATA_CONST.__const: 0x81e0
--  __DATA_CONST.__objc_classlist: 0x90
-+  __TEXT.__swift5_protos: 0x16c
-+  __TEXT.__unwind_info: 0x78a0
-+  __TEXT.__eh_frame: 0x12f90
-+  __DATA_CONST.__const: 0x8c10
-+  __DATA_CONST.__objc_classlist: 0x98
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x98
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa48
-+  __DATA_CONST.__objc_selrefs: 0xaa0
-   __DATA_CONST.__objc_protorefs: 0x50
-   __DATA_CONST.__objc_superrefs: 0x18
--  __DATA_CONST.__auth_got: 0x1518
--  __DATA_CONST.__got: 0x748
--  __DATA_CONST.__auth_ptr: 0x3210
--  __DATA.__objc_const: 0x5700
--  __DATA.__objc_ivar: 0x9c
--  __DATA.__objc_data: 0x498
--  __DATA.__data: 0x5088
--  __DATA.__common: 0xaf0
-+  __DATA_CONST.__auth_got: 0x1530
-+  __DATA_CONST.__got: 0x760
-+  __DATA_CONST.__auth_ptr: 0x32d0
-+  __DATA.__objc_const: 0x58d8
-+  __DATA.__objc_ivar: 0x90
-+  __DATA.__objc_data: 0x4a0
-+  __DATA.__data: 0x5348
-+  __DATA.__common: 0xb00
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6969
 -  Symbols:   2121
 -  CStrings:  1525
 +  Functions: 7383
 +  Symbols:   2171
 +  CStrings:  1566
- 
 Symbols:
 + -[iCDCreateItemContext clientKey]
 + -[iCDCreateItemContext initWithReserverItemIDString:reservedFileProviderIdentifier:parentZoneName:parentZoneOwner:parentIDString:symlinkTarget:parentShareState:shareRootItemIdentifierString:parentPCSChainState:parentSharePermissions:initialItem:resetItem:isInDocumentScope:trashPutBackPath:trashPutbackItemIDString:progress:clientKey:]

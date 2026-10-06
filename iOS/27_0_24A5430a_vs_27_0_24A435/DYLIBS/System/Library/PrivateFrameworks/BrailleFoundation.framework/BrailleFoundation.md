@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/BrailleFoundation.framework/BrailleFoundation`
 
-```diff
+### Section Size Changes
 
- 465.0.0.0.0
--  __TEXT.__text: 0x69534
-+  __TEXT.__text: 0x694f0
-   __TEXT.__objc_methlist: 0x404
-   __TEXT.__const: 0xc890
-   __TEXT.__swift5_typeref: 0x27cb
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x69534` | `0x694f0` | **`-0x44`** |
+
+### Other Changes
+
+```diff
 Symbols:
 + _swift_release_x11
 - _swift_release_x10

@@ -2,98 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/PeopleSuggester.framework/PeopleSuggester`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__cfstring` | `0x10140` | `0x7ee00` | **`+0x6ecc0`** |
+| `__DATA_CONST.__objc_arraydata` | `0xea8` | `0x39cb0` | **`+0x38e08`** |
+| `__TEXT.__cstring` | `0xd8ab` | `0x30c88` | **`+0x233dd`** |
+| `__AUTH_CONST.__objc_dictobj` | `0x258` | `0x227b8` | **`+0x22560`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x870` | `0x11d60` | **`+0x114f0`** |
+| `__TEXT.__text` | `0x1184e0` | `0x120510` | **`+0x8030`** |
+| `__TEXT.__gcc_except_tab` | `0x3bfc` | `0x4790` | **`+0xb94`** |
+| `__TEXT.__ustring` | `0x33e` | `0xb22` | **`+0x7e4`** |
+| `__TEXT.__unwind_info` | `0x3048` | `0x34b0` | **`+0x468`** |
+| `__TEXT.__oslogstring` | `0x10c0c` | `0x10fbc` | **`+0x3b0`** |
+| `__AUTH_CONST.__objc_const` | `0x155b8` | `0x15458` | **`-0x160`** |
+| `__DATA_CONST.__const` | `0x4068` | `0x41b0` | **`+0x148`** |
+| `__TEXT.__objc_methlist` | `0xac14` | `0xaaf4` | **`-0x120`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6fb0` | `0x6f18` | **`-0x98`** |
+| `__AUTH_CONST.__const` | `0x1bc0` | `0x1c20` | **`+0x60`** |
+| `__DATA.__objc_ivar` | `0xef0` | `0xed4` | **`-0x1c`** |
+| `__DATA.__bss` | `0xb20` | `0xb10` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0xa18` | `0xa20` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x408` | `0x400` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1956.0.1.0.0
--  __TEXT.__text: 0x1184e0 sha256:4b2b9b43f5094564d1754f44cce4f6cbfab8feeb924661e337aa3b00533dfe0b
--  __TEXT.__objc_methlist: 0xac14 sha256:15c60ee0361a9da1a1409122da9324472cde97f2db62a7c49c7b25069951194f
--  __TEXT.__const: 0x968 sha256:f7be034859cd875edec8524283a8726e462151de2a69502a4f57c68588ff076d
--  __TEXT.__gcc_except_tab: 0x3bfc sha256:4d6daff152c29ffb6b3eaace8040bd749123e666a9e176451676ef709f265847
--  __TEXT.__cstring: 0xd8ab sha256:8d63d7a5338fb6fe42ba544e9968ab96c4e1bec936a8c13590c700435977b31f
--  __TEXT.__oslogstring: 0x10c0c sha256:8d4cf5275fd012186483f4bc59b0c8e81b569c73fffa12eee8bba8f906037ece
 +1959.0.1.0.0
-+  __TEXT.__text: 0x120510 sha256:7d8616229a7875bc74d890af4f603b866c592f40b01b6af99ba4a3ff82fd712b
-+  __TEXT.__objc_methlist: 0xaaf4 sha256:b9a5961a8b25e4c940ccbd9e04a03537d42005c6b4ea505245adb68e3586187a
-+  __TEXT.__const: 0x968 sha256:b4c9f0befd4c34e2ea5885f760946918a7b81382c7b1eeb0ccb3d19b07794b0c
-+  __TEXT.__gcc_except_tab: 0x4790 sha256:57dae24329795941e52157f1a80c6e7984ba763b9f31c992e58296003cdcd2de
-+  __TEXT.__cstring: 0x30c88 sha256:9326350e94aadcbd8555097eacab394617f0cb74917f830e437127897a0def99
-+  __TEXT.__oslogstring: 0x10fbc sha256:2293bef5472b1ccad53629ed7dbdf651edcb7e06d77ab940dc5365a8427fc5cf
-   __TEXT.__dlopen_cstrs: 0x19c8 sha256:69a023bb2e27fef1e838c9b15b5bbd09b93d64ad5ee3950bc3a411bcf2857711
--  __TEXT.__ustring: 0x33e sha256:722b6e4e7eda18c6d14c20c8d61c555a68721e68de58d46822f37f16428dbffc
--  __TEXT.__unwind_info: 0x3048 sha256:f6c80b22940abdeea2856ee12cc518c6ccfe6cb3125ec5a4b8aaa834ebf54c6d
--  __TEXT.__eh_frame: 0x50 sha256:13064f8ed69b66357dcf1c783588e8abb1938feed14f0550a77d4b8a1d67a8fe
-+  __TEXT.__ustring: 0xb22 sha256:44d127480bd1aa2c068bf60321f2a4f7bf6bc0c0f293afea5247430ce7d5c9f0
-+  __TEXT.__unwind_info: 0x34b0 sha256:1beb0ad2151fb02be9c9f3a43470026a05144b06a896adeb46b1db8aa5b7f1d4
-+  __TEXT.__eh_frame: 0x50 sha256:22129be2c1a97c130c3356a962bc6617262177e501d59580d15ace228e629f72
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4068 sha256:b61c37862a0e08576ad5281cf9ff84ff1921798c921f4d914dc308eb9e56d2c5
--  __DATA_CONST.__objc_classlist: 0x570 sha256:1d95cde35fc8be0d9c1ebe72e13fe958d5ab2328aada7d110b4582023b668d64
--  __DATA_CONST.__objc_catlist: 0x10 sha256:9724a0a4651a50f9957854f589e7cf76249023b9e6c63ff384548f8e8d2e269e
--  __DATA_CONST.__objc_protolist: 0x58 sha256:15631e5548f0f4d816dce9c789f08c8abdd8a345138fc300b2fc8d38a10cf84f
-+  __DATA_CONST.__const: 0x41b0 sha256:07286685f8c7e5eef5d7f9f4a97b5fab67460dd0f3131a300e7a849a4b474e2b
-+  __DATA_CONST.__objc_classlist: 0x570 sha256:e4f329da81b18d1faf7b992a0cfb1748ee20a9f1bb92ada59aba960ca55a8e44
-+  __DATA_CONST.__objc_catlist: 0x10 sha256:3dfeff64b6da353311e8296c6ea14a141fc0fa3d4c5d4973352e0583c16e15dc
-+  __DATA_CONST.__objc_protolist: 0x58 sha256:6029574e7e958812bd1b81779130d3cff365f50c76d62ac79153284d7340b241
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__objc_selrefs: 0x6fb0 sha256:360a482fb372c15f6e3d04e69456a08c2b97e3287edae7d4e47678eecea8076e
--  __DATA_CONST.__objc_superrefs: 0x408 sha256:4d96cd978f3a1d18ae519d2983eda4d0fdb4be14d0cba76aca02d5986b3155c2
--  __DATA_CONST.__objc_arraydata: 0xea8 sha256:65551ea1134497d8487c6e0ce25f3d9a657adfea23679c75a4e8cff92d8ed141
--  __DATA_CONST.__got: 0xa18 sha256:de1606fa6e708f6d2d795df69142101826265801e422efe985e95f8954171034
--  __AUTH_CONST.__const: 0x1bc0 sha256:3203c19bfa624f57b2d256ffedd7a817bfde020be254a01a2746e4b890559817
--  __AUTH_CONST.__cfstring: 0x10140 sha256:aa674a07e2227adae4c16f819936610792b4594816a754ce09808bdf8b9e6159
--  __AUTH_CONST.__objc_const: 0x155b8 sha256:f64cf8d2811b23a0ed720d105e6ead0dc47bbf5ae0c48858dd90522096a6b6d9
--  __AUTH_CONST.__objc_intobj: 0x11a0 sha256:3390aece0a52cd894bcc1ae19ebcd3e63c6f62595c46a0e43380468735e4ac89
--  __AUTH_CONST.__objc_arrayobj: 0x870 sha256:9606b70700d19ac0a7a8c100c3e16462af5e4b5e3530f4a4c6af555821d3743d
--  __AUTH_CONST.__objc_doubleobj: 0xd0 sha256:d45ab2049fc00d4d171867bc21b9361df8b15bc5e5631574965f09242ab8325a
--  __AUTH_CONST.__objc_dictobj: 0x258 sha256:ba25ac661e568e87fa7564a33d53e03f9a6dac3a4f41cd5016323387a846fb31
-+  __DATA_CONST.__objc_selrefs: 0x6f18 sha256:2440a1b6afba7d6a6e4dc098465c783c5213e5408b7605ef3ac18825cb2f5787
-+  __DATA_CONST.__objc_superrefs: 0x400 sha256:e4f2d07fe481b4841a3eff9bed924a7004a69df31968040aa69dfb04f7dc9108
-+  __DATA_CONST.__objc_arraydata: 0x39cb0 sha256:f257b7803760bfae4b181fd57544f5b443667075a34305c9dbdbe736673f9007
-+  __DATA_CONST.__got: 0xa20 sha256:4dc5bb556b29cecad5f98c6cf23099686e227479d0b34257ca4559369d1a8946
-+  __AUTH_CONST.__const: 0x1c20 sha256:118f240b113094edabbb33a31123f6e4b1bc87605b2b4ddf127cfcc5315b9264
-+  __AUTH_CONST.__cfstring: 0x7ee00 sha256:5390c5177ca0be22bd474a9e484f1b7792884b4fa46da08c31e9257356f92a50
-+  __AUTH_CONST.__objc_const: 0x15458 sha256:21358c8fd9949bc77cce6a22afdef3eba5e7fbe393e9ea01868dd77dc9722173
-+  __AUTH_CONST.__objc_intobj: 0x11a0 sha256:61b26a13105a991a894adabdb10c081348433cdfc312cb2da666179b833e0800
-+  __AUTH_CONST.__objc_arrayobj: 0x11d60 sha256:31bd725fd25a23346f137622d6f76e63d8baa7a8a3046174b69f81fe0e973869
-+  __AUTH_CONST.__objc_doubleobj: 0xd0 sha256:43ddb5d4c8138bc5aa74f0de0a5e6d32f7fa1be937b7fa13f1227936d10bdcf7
-+  __AUTH_CONST.__objc_dictobj: 0x227b8 sha256:4e04530304fce6558d559786839d46838434363477c3e00e4a1d3297a7d51e35
-   __AUTH_CONST.__auth_got: 0x818 sha256:6145fc6f0263e92523c0a8ff26a1d01852c934c7511ef7c0ff6c5d4afa8d1ec5
--  __AUTH.__objc_data: 0xf00 sha256:316f4fba05784b9540c775d0b5a44c8b32e07c45b573d53051c087f70c7bbd31
--  __DATA.__objc_ivar: 0xef0 sha256:cca1f31fe3a7f0ab7b7924d18125e3120edb60b39bd4a618cb22b627de802198
--  __DATA.__data: 0x4f0 sha256:87c538593edb1dd79bfdadce4739669323e0600060c75cd169f9f3a4442c31ee
--  __DATA.__bss: 0xb20 sha256:d71a85341166dbd4085df5276b3534cc813d748f3ad9957b00f6b4102bf9b3a2
--  __DATA_DIRTY.__objc_data: 0x2760 sha256:f7f2b216f9e1a13b1be8af6cadd3813f224871e904195377b172c0a790570a1e
-+  __AUTH.__objc_data: 0xf00 sha256:90b4bbb2832e9ea3634030588aaa2dce43e1df1bb0625a406aa6384841f34453
-+  __DATA.__objc_ivar: 0xed4 sha256:4535c90246679ab2f48abdd5d8176b6381ce7785b7ed05dacd70113681bd693e
-+  __DATA.__data: 0x4f0 sha256:24f8fe7d782e56168e5f305f834944f47db33f7b05257f18c3d64f3eb907a5c3
-+  __DATA.__bss: 0xb10 sha256:8cd1a50718b9a73c9392cb94aea3cea616382f3287f82a16ecf3d9810ecfff76
-+  __DATA_DIRTY.__objc_data: 0x2760 sha256:b7c3e6d3af195a934c871e240795e8878a6c6d75b509ea0802bdb0250dcd1c00
-   __DATA_DIRTY.__bss: 0x520 sha256:2c7663e809c9827df482ce260d079467d02f9f181a6d1fcc5a942b2a7e1bd3e6
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libarchive.2.dylib
-   - /usr/lib/libobjc.A.dylib
--  UUID: 4382C8A6-2474-322C-AD77-8AE267B483E8
 -  Functions: 5154
--  Symbols:   17982
--  CStrings:  5678
-+  UUID: A74885A8-7AD2-3571-8579-72975DE31452
+-  Symbols:   7718
+-  CStrings:  3619
 +  Functions: 5264
-+  Symbols:   18251
-+  CStrings:  33978
- 
++  Symbols:   7838
++  CStrings:  17812
 Symbols:
 + +[_PSContactCatalog kPSContactSummaryNumberOfSharesKey]
 + -[AeroMLTracerSpan _logCAMessageWithTypeKey:message:guardedData:]
 + -[AeroMLTracerSpan _logEventAtLevel:name:details:attributes:]
 + -[AeroMLTracerSpan emitPETEventWithGuardedData:]
-+ -[AeroMLTracerSpan initSpanWithSpanName:traceSession:parentSpanId:].cold.1
 + -[AeroMLTracerSpan logErrorMessageWithCA:guardedData:]
 + -[AeroMLTracerSpan logInfoMessageWithCA:guardedData:]
 + -[AeroMLTracerSpanGuardedData .cxx_destruct]
@@ -108,10 +58,8 @@ Symbols:
 + -[AeroMLTracerSpanGuardedData spanEvent]
 + -[AeroMLTracerSpanGuardedData traceSession]
 + -[_PSAttachment copyWithZone:]
-+ -[_PSContactCatalog resolveVisualIdentifiersForHandles:catalogContactData:keepGoing:].cold.8
 + -[_PSEnsembleModel _combinedRecencyForConversation:statistics:catalogLastInteractionTimes:]
 + -[_PSEnsembleModel _loadCatalogOutgoingCounts:lastInteractionTimes:bundleIds:]
-+ -[_PSEnsembleModel _loadCatalogOutgoingCounts:lastInteractionTimes:bundleIds:].cold.1
 + -[_PSEnsembleModel _recentlyViewedConversationsExcluding:timeLimit:minDuration:]
 + -[_PSEnsembleModel _shareTimeBackfillProxiesFromInteractionStatistics:afterHeuristicProxies:]
 + -[_PSEnsembleModel _topConversationsByRecency:excluding:limit:]
@@ -165,25 +113,8 @@ Symbols:
 + __OBJC_CLASS_RO_$_AeroMLTracerSpanGuardedData
 + __OBJC_METACLASS_RO_$_AeroMLTracerSpanGuardedData
 + __PSSceneTagsData
-+ ___105-[_PSEnsembleModel getSuggestionsFromInteractionsStatistics:withConfig:trialClient:andPredictionContext:]_block_invoke.935
-+ ___105-[_PSEnsembleModel getSuggestionsFromInteractionsStatistics:withConfig:trialClient:andPredictionContext:]_block_invoke.936
-+ ___118-[_PSEnsembleModel psrDataCollectionForContext:timeToWaitInSeconds:interactionStatisticsConfig:interactionStatistics:]_block_invoke.1274
-+ ___120-[_PSEnsembleModel rankedGlobalSuggestionsWithPredictionContext:contactsOnly:maxSuggestions:excludeBackfillSuggestions:]_block_invoke.828
-+ ___126-[_PSEnsembleModel suggestionsFromSuggestionProxies:supportedBundleIDs:contactKeysToFetch:meContactIdentifier:maxSuggestions:]_block_invoke.746
-+ ___126-[_PSEnsembleModel suggestionsFromSuggestionProxies:supportedBundleIDs:contactKeysToFetch:meContactIdentifier:maxSuggestions:]_block_invoke.746.cold.1
-+ ___139-[_PSEnsembleModel _updateInteractionStatisticsForSpeculativeEngagement:interactionStatisticsConfig:interactionStatistics:sessionFeedback:]_block_invoke.1231
-+ ___139-[_PSEnsembleModel _updateInteractionStatisticsForSpeculativeEngagement:interactionStatisticsConfig:interactionStatistics:sessionFeedback:]_block_invoke.1253
-+ ___139-[_PSEnsembleModel _updateInteractionStatisticsForSpeculativeEngagement:interactionStatisticsConfig:interactionStatistics:sessionFeedback:]_block_invoke.1271
-+ ___155-[_PSHeuristics urlClusterBasedTitleSuggestionProxiesForInteractionStatistics:withPredictionContext:useCatalog:similarityThreshold:weightedScoreThreshold:]_block_invoke.482
-+ ___155-[_PSHeuristics urlClusterBasedTitleSuggestionProxiesForInteractionStatistics:withPredictionContext:useCatalog:similarityThreshold:weightedScoreThreshold:]_block_invoke.507
-+ ___178-[_PSEnsembleModel getPhotoBasedFeaturesAsync:shouldProcessPicturesLive:shouldUseVIPModel:shouldProcessPicturesLiveWithVision:shouldEnableLiveProcessingForSceneTags:withTimeout:]_block_invoke.425
-+ ___178-[_PSEnsembleModel getPhotoBasedFeaturesAsync:shouldProcessPicturesLive:shouldUseVIPModel:shouldProcessPicturesLiveWithVision:shouldEnableLiveProcessingForSceneTags:withTimeout:]_block_invoke.428
-+ ___178-[_PSEnsembleModel getPhotoBasedFeaturesAsync:shouldProcessPicturesLive:shouldUseVIPModel:shouldProcessPicturesLiveWithVision:shouldEnableLiveProcessingForSceneTags:withTimeout:]_block_invoke.430
 + ___200-[_PSHeuristics suggestionProxiesFromAttachmentTags:interactionStatistics:suggestionProxyType:reasonMessage:reasonType:contextDetails:useCatalog:similarityThreshold:weightedScoreThreshold:parentSpan:]_block_invoke
-+ ___200-[_PSHeuristics suggestionProxiesFromAttachmentTags:interactionStatistics:suggestionProxyType:reasonMessage:reasonType:contextDetails:useCatalog:similarityThreshold:weightedScoreThreshold:parentSpan:]_block_invoke.321
 + ___23-[AeroMLTracerSpan end]_block_invoke
-+ ___23-[AeroMLTracerSpan end]_block_invoke.cold.1
-+ ___23-[AeroMLTracerSpan end]_block_invoke.cold.2
 + ___25-[AeroMLTracerSpan start]_block_invoke
 + ___28-[_PSPredictionContext hash]_block_invoke
 + ___29-[AeroMLTracerSpan getSpanId]_block_invoke
@@ -224,8 +155,6 @@ Symbols:
 + ___39-[_PSPredictionContext setAttachments:]_block_invoke
 + ___39-[_PSPredictionContext setIsPSRActive:]_block_invoke
 + ___40-[AeroMLTracerSpan addDeviceIdentifier:]_block_invoke
-+ ___40-[AeroMLTracerSpan addDeviceIdentifier:]_block_invoke.cold.1
-+ ___40-[AeroMLTracerSpan addDeviceIdentifier:]_block_invoke.cold.2
 + ___40-[AeroMLTracerSpan serializeAttributes:]_block_invoke
 + ___40-[_PSPredictionContext encodeWithCoder:]_block_invoke_3
 + ___40-[_PSPredictionContext priorityContacts]_block_invoke
@@ -240,7 +169,6 @@ Symbols:
 + ___41-[_PSPredictionContext trialDeploymentId]_block_invoke
 + ___41-[_PSPredictionContext trialExperimentId]_block_invoke
 + ___42-[AeroMLTracerSpan createSubSpanWithName:]_block_invoke
-+ ___42-[AeroMLTracerSpan createSubSpanWithName:]_block_invoke.cold.1
 + ___42-[_PSPredictionContext setLinksAndTitles:]_block_invoke
 + ___42-[_PSPredictionContext setQueryStartDate:]_block_invoke
 + ___42-[_PSPredictionContext setSeedRecipients:]_block_invoke
@@ -265,7 +193,6 @@ Symbols:
 + ___47-[_PSPredictionContext isCoreMLValidationFetch]_block_invoke
 + ___48-[AeroMLTracerSpan emitPETEventWithGuardedData:]_block_invoke
 + ___48-[AeroMLTracerSpan emitPETEventWithGuardedData:]_block_invoke_2
-+ ___48-[AeroMLTracerSpan emitPETEventWithGuardedData:]_block_invoke_2.cold.1
 + ___48-[AeroMLTracerSpan emitPETEventWithGuardedData:]_block_invoke_3
 + ___48-[_PSPredictionContext coreMLInputFeatureTensor]_block_invoke
 + ___48-[_PSPredictionContext coreMLNumberOfCandidates]_block_invoke
@@ -274,8 +201,6 @@ Symbols:
 + ___48-[_PSPredictionContext setIsSharePlayAvailable:]_block_invoke
 + ___48-[_PSPredictionContext setPhotoSuggestedPeople:]_block_invoke
 + ___48-[_PSPredictionContext suggestionCompletionDate]_block_invoke
-+ ___50-[_PSEnsembleModel evaluateCandidates:psrMLModel:]_block_invoke.924
-+ ___50-[_PSEnsembleModel evaluateCandidates:psrMLModel:]_block_invoke.924.cold.1
 + ___50-[_PSPredictionContext setLinkMetadataFromClient:]_block_invoke_2
 + ___50-[_PSPredictionContext setScoredCoreMLCandidates:]_block_invoke
 + ___50-[_PSPredictionContext setSeedContactIdentifiers:]_block_invoke
@@ -297,33 +222,20 @@ Symbols:
 + ___58-[_PSPredictionContext setSuggestionsFilteredByBundleIds:]_block_invoke
 + ___60-[_PSPredictionContext setCandidateShareExtensionBundleIds:]_block_invoke
 + ___61-[AeroMLTracerSpan _logEventAtLevel:name:details:attributes:]_block_invoke
-+ ___61-[AeroMLTracerSpan _logEventAtLevel:name:details:attributes:]_block_invoke.cold.1
-+ ___61-[AeroMLTracerSpan _logEventAtLevel:name:details:attributes:]_block_invoke.cold.2
-+ ___61-[AeroMLTracerSpan _logEventAtLevel:name:details:attributes:]_block_invoke.cold.3
 + ___63-[_PSEnsembleModel _topConversationsByRecency:excluding:limit:]_block_invoke
 + ___63-[_PSEnsembleModel _topConversationsByRecency:excluding:limit:]_block_invoke_2
-+ ___68-[_PSEnsembleModel predictWithMapsPredictionContext:maxSuggestions:]_block_invoke.799
 + ___68-[_PSPredictionContext appBundleIdsToShareExtensionBundleIdsMapping]_block_invoke
 + ___72-[_PSPredictionContext setAppBundleIdsToShareExtensionBundleIdsMapping:]_block_invoke
-+ ___75-[_PSFamilyRecommender familyRecipientsForShareSheetWithPredictionContext:]_block_invoke.452
-+ ___75-[_PSFamilyRecommender familyRecipientsForShareSheetWithPredictionContext:]_block_invoke.455
-+ ___75-[_PSFamilyRecommender familyRecipientsForShareSheetWithPredictionContext:]_block_invoke.476
-+ ___75-[_PSFamilyRecommender familyRecipientsForShareSheetWithPredictionContext:]_block_invoke.483
-+ ___75-[_PSFamilyRecommender familyRecipientsForShareSheetWithPredictionContext:]_block_invoke_2.480
 + ___76-[AeroMLTracerSpan addTrialDeploymentId:trialExperimentId:trialTreatmentId:]_block_invoke
 + ___80-[_PSEnsembleModel _recentlyViewedConversationsExcluding:timeLimit:minDuration:]_block_invoke
 + ___80-[_PSEnsembleModel _recentlyViewedConversationsExcluding:timeLimit:minDuration:]_block_invoke_2
 + ___80-[_PSEnsembleModel _recentlyViewedConversationsExcluding:timeLimit:minDuration:]_block_invoke_3
 + ___80-[_PSEnsembleModel _recentlyViewedConversationsExcluding:timeLimit:minDuration:]_block_invoke_4
 + ___82-[_PSEnsembleModel _topConversationsByShareFrequency:catalogOutgoingCounts:limit:]_block_invoke
-+ ___82-[_PSEnsembleModel addExtraInformationWithSuggestions:modelSuggestionProxiesDict:]_block_invoke.665
 + ___89-[_PSEnsembleModel computeOrLoadFeaturesForInteractionStatistics:trialClient:parentSpan:]_block_invoke
-+ ___91-[_PSEnsembleModel _conversationIdForFirstInteractionAfterSharingStartDate:targetBundleId:]_block_invoke.1135
-+ ___93-[_PSEnsembleModel _defaultPredictionsWithPredictionContext:trialClient:config:parentSpanId:]_block_invoke.493
 + ___93-[_PSEnsembleModel _shareTimeBackfillProxiesFromInteractionStatistics:afterHeuristicProxies:]_block_invoke
 + ___93-[_PSEnsembleModel _shareTimeBackfillProxiesFromInteractionStatistics:afterHeuristicProxies:]_block_invoke_2
 + ___93-[_PSEnsembleModel _shareTimeBackfillProxiesFromInteractionStatistics:afterHeuristicProxies:]_block_invoke_3
-+ ___95-[_PSHeuristics peopleAwareSuggestionProxiesForDetectedFaces:interactionStatistics:useCatalog:]_block_invoke.222
 + ___block_descriptor_136_e8_32s40s48s56s64s72s80s88r96r104r112r120r_e25_v32?0"NSString"8Q16^B24ls32l8r88l8s40l8r96l8s48l8s56l8r104l8r112l8r120l8s64l8s72l8s80l8
 + ___block_descriptor_32_e23_16?0"_PSAttachment"8l
 + ___block_descriptor_32_e41_"NSString"16?0"AeroMLTracerAttribute"8l
@@ -335,59 +247,12 @@ Symbols:
 + ___block_descriptor_56_e8_32s40s48s_e37_v16?0"AeroMLTracerSpanGuardedData"8ls32l8s40l8s48l8
 + ___block_descriptor_64_e8_32s40s48r_e22_B16?0"BMStoreEvent"8lr48l8s32l8s40l8
 + ___block_descriptor_65_e8_32s40s48s56s_e37_v16?0"AeroMLTracerSpanGuardedData"8ls32l8s40l8s48l8s56l8
-+ ___block_literal_global.1276
-+ ___block_literal_global.1286
-+ ___block_literal_global.225
-+ ___block_literal_global.231
-+ ___block_literal_global.295
-+ ___block_literal_global.297
-+ ___block_literal_global.446
-+ ___block_literal_global.449
-+ ___block_literal_global.457
-+ ___block_literal_global.475
-+ ___block_literal_global.482
-+ ___block_literal_global.485
-+ ___block_literal_global.489
-+ ___block_literal_global.495
-+ ___block_literal_global.59
-+ ___block_literal_global.648
-+ ___block_literal_global.679
-+ ___block_literal_global.741
-+ ___block_literal_global.838
-+ ___block_literal_global.841
-+ ___block_literal_global.844
-+ ___block_literal_global.847
-+ ___block_literal_global.917
-+ ___block_literal_global.983
 + __suggestionInteractionPredicatesForFirstPartyMessages:bundleID:interactionRecipients:._pasOnceToken177
-+ _objc_msgSend$_combinedRecencyForConversation:statistics:catalogLastInteractionTimes:
-+ _objc_msgSend$_loadCatalogOutgoingCounts:lastInteractionTimes:bundleIds:
-+ _objc_msgSend$_recentlyViewedConversationsExcluding:timeLimit:minDuration:
-+ _objc_msgSend$_shareTimeBackfillProxiesFromInteractionStatistics:afterHeuristicProxies:
-+ _objc_msgSend$_topConversationsByRecency:excluding:limit:
-+ _objc_msgSend$_topConversationsByShareFrequency:catalogOutgoingCounts:limit:
-+ _objc_msgSend$computeOrLoadFeaturesForInteractionStatistics:trialClient:parentSpan:
-+ _objc_msgSend$conversationIdsWithFaceHistory
-+ _objc_msgSend$dataWithContentsOfFile:
-+ _objc_msgSend$emitPETEventWithGuardedData:
-+ _objc_msgSend$fetchPersonsForContactIdentifiers:options:
-+ _objc_msgSend$kPSContactSummaryNumberOfSharesKey
-+ _objc_msgSend$logErrorMessageWithCA:guardedData:
-+ _objc_msgSend$logInfoMessageWithCA:guardedData:
-+ _objc_msgSend$shouldUseSimplifiedBackfill
-+ _objc_msgSend$suggestionProxiesFromAttachmentTags:interactionStatistics:suggestionProxyType:reasonMessage:reasonType:contextDetails:useCatalog:similarityThreshold:weightedScoreThreshold:parentSpan:
 + _psrDataCollectionForContext:timeToWaitInSeconds:interactionStatisticsConfig:interactionStatistics:._pasOnceToken316
 - +[_PSSceneTagsUtils identifierToLabelLookup]
 - +[_PSSceneTagsUtils identifierToSynonymsLookup]
 - +[_PSSceneTagsUtils loadSceneTags]
-- +[_PSSceneTagsUtils loadSceneTags].cold.1
-- +[_PSSceneTagsUtils loadSceneTags].cold.2
-- +[_PSSceneTagsUtils loadSceneTags].cold.3
-- -[AeroMLTracerSpan addDeviceIdentifier:].cold.1
 - -[AeroMLTracerSpan emitPETEvent]
-- -[AeroMLTracerSpan emitPETEvent].cold.1
-- -[AeroMLTracerSpan end].cold.1
-- -[AeroMLTracerSpan end].cold.2
 - -[AeroMLTracerSpan intervalId]
 - -[AeroMLTracerSpan isEnded]
 - -[AeroMLTracerSpan isStarted]
@@ -454,92 +319,24 @@ Symbols:
 - __OBJC_$_PROP_LIST_PSSceneTag
 - __OBJC_CLASS_RO_$_PSSceneTag
 - __OBJC_METACLASS_RO_$_PSSceneTag
-- ___105-[_PSEnsembleModel getSuggestionsFromInteractionsStatistics:withConfig:trialClient:andPredictionContext:]_block_invoke.914
-- ___105-[_PSEnsembleModel getSuggestionsFromInteractionsStatistics:withConfig:trialClient:andPredictionContext:]_block_invoke.915
-- ___118-[_PSEnsembleModel psrDataCollectionForContext:timeToWaitInSeconds:interactionStatisticsConfig:interactionStatistics:]_block_invoke.1185
-- ___120-[_PSEnsembleModel rankedGlobalSuggestionsWithPredictionContext:contactsOnly:maxSuggestions:excludeBackfillSuggestions:]_block_invoke.807
-- ___126-[_PSEnsembleModel suggestionsFromSuggestionProxies:supportedBundleIDs:contactKeysToFetch:meContactIdentifier:maxSuggestions:]_block_invoke.725
-- ___126-[_PSEnsembleModel suggestionsFromSuggestionProxies:supportedBundleIDs:contactKeysToFetch:meContactIdentifier:maxSuggestions:]_block_invoke.725.cold.1
-- ___139-[_PSEnsembleModel _updateInteractionStatisticsForSpeculativeEngagement:interactionStatisticsConfig:interactionStatistics:sessionFeedback:]_block_invoke.1141
-- ___139-[_PSEnsembleModel _updateInteractionStatisticsForSpeculativeEngagement:interactionStatisticsConfig:interactionStatistics:sessionFeedback:]_block_invoke.1164
-- ___139-[_PSEnsembleModel _updateInteractionStatisticsForSpeculativeEngagement:interactionStatisticsConfig:interactionStatistics:sessionFeedback:]_block_invoke.1182
-- ___155-[_PSHeuristics urlClusterBasedTitleSuggestionProxiesForInteractionStatistics:withPredictionContext:useCatalog:similarityThreshold:weightedScoreThreshold:]_block_invoke.417
-- ___155-[_PSHeuristics urlClusterBasedTitleSuggestionProxiesForInteractionStatistics:withPredictionContext:useCatalog:similarityThreshold:weightedScoreThreshold:]_block_invoke.445
-- ___178-[_PSEnsembleModel getPhotoBasedFeaturesAsync:shouldProcessPicturesLive:shouldUseVIPModel:shouldProcessPicturesLiveWithVision:shouldEnableLiveProcessingForSceneTags:withTimeout:]_block_invoke.419
-- ___178-[_PSEnsembleModel getPhotoBasedFeaturesAsync:shouldProcessPicturesLive:shouldUseVIPModel:shouldProcessPicturesLiveWithVision:shouldEnableLiveProcessingForSceneTags:withTimeout:]_block_invoke.422
-- ___178-[_PSEnsembleModel getPhotoBasedFeaturesAsync:shouldProcessPicturesLive:shouldUseVIPModel:shouldProcessPicturesLiveWithVision:shouldEnableLiveProcessingForSceneTags:withTimeout:]_block_invoke.424
 - ___189-[_PSHeuristics suggestionProxiesFromAttachmentTags:interactionStatistics:suggestionProxyType:reasonMessage:reasonType:contextDetails:useCatalog:similarityThreshold:weightedScoreThreshold:]_block_invoke
-- ___189-[_PSHeuristics suggestionProxiesFromAttachmentTags:interactionStatistics:suggestionProxyType:reasonMessage:reasonType:contextDetails:useCatalog:similarityThreshold:weightedScoreThreshold:]_block_invoke.259
 - ___32-[AeroMLTracerSpan emitPETEvent]_block_invoke
 - ___32-[AeroMLTracerSpan emitPETEvent]_block_invoke_2
-- ___32-[AeroMLTracerSpan emitPETEvent]_block_invoke_2.cold.1
 - ___32-[AeroMLTracerSpan emitPETEvent]_block_invoke_3
 - ___41-[AeroMLTracerSpan logInfoMessageWithCA:]_block_invoke
 - ___42-[AeroMLTracerSpan logErrorMessageWithCA:]_block_invoke
-- ___50-[_PSEnsembleModel evaluateCandidates:psrMLModel:]_block_invoke.903
-- ___50-[_PSEnsembleModel evaluateCandidates:psrMLModel:]_block_invoke.903.cold.1
-- ___68-[_PSEnsembleModel predictWithMapsPredictionContext:maxSuggestions:]_block_invoke.778
-- ___75-[_PSFamilyRecommender familyRecipientsForShareSheetWithPredictionContext:]_block_invoke.440
-- ___75-[_PSFamilyRecommender familyRecipientsForShareSheetWithPredictionContext:]_block_invoke.449
-- ___75-[_PSFamilyRecommender familyRecipientsForShareSheetWithPredictionContext:]_block_invoke.464
-- ___75-[_PSFamilyRecommender familyRecipientsForShareSheetWithPredictionContext:]_block_invoke.477
-- ___75-[_PSFamilyRecommender familyRecipientsForShareSheetWithPredictionContext:]_block_invoke_2.474
 - ___78-[_PSEnsembleModel computeOrLoadFeaturesForInteractionStatistics:trialClient:]_block_invoke
 - ___80-[_PSEnsembleModel _simplifiedCachedSuggestionProxiesFromInteractionStatistics:]_block_invoke_4
 - ___80-[_PSEnsembleModel _simplifiedCachedSuggestionProxiesFromInteractionStatistics:]_block_invoke_5
 - ___80-[_PSEnsembleModel _simplifiedCachedSuggestionProxiesFromInteractionStatistics:]_block_invoke_6
-- ___82-[_PSEnsembleModel addExtraInformationWithSuggestions:modelSuggestionProxiesDict:]_block_invoke.644
-- ___91-[_PSEnsembleModel _conversationIdForFirstInteractionAfterSharingStartDate:targetBundleId:]_block_invoke.1040
-- ___93-[_PSEnsembleModel _defaultPredictionsWithPredictionContext:trialClient:config:parentSpanId:]_block_invoke.472
 - ___block_descriptor_40_e8_32s_e53_"NSMutableArray"24?0"NSMutableArray"8"NSString"16ls32l8
 - ___block_descriptor_48_e8_32s40s_e19_"NSDictionary"8?0ls32l8s40l8
 - ___block_descriptor_88_e8_32s40s48s56s64s72s_e25_v32?0"NSString"8Q16^B24ls32l8s40l8s48l8s56l8s64l8s72l8
-- ___block_literal_global.1187
-- ___block_literal_global.1197
-- ___block_literal_global.232
-- ___block_literal_global.289
-- ___block_literal_global.291
-- ___block_literal_global.443
-- ___block_literal_global.448
-- ___block_literal_global.451
-- ___block_literal_global.467
-- ___block_literal_global.468
-- ___block_literal_global.474
-- ___block_literal_global.476
-- ___block_literal_global.627
-- ___block_literal_global.658
-- ___block_literal_global.720
-- ___block_literal_global.817
-- ___block_literal_global.820
-- ___block_literal_global.823
-- ___block_literal_global.826
-- ___block_literal_global.896
 - __identifierToLabelLookup
 - __identifierToSynonymsLookup
 - __suggestionInteractionPredicatesForFirstPartyMessages:bundleID:interactionRecipients:._pasOnceToken175
 - _emitPETEvent._pasExprOnceResult
 - _emitPETEvent._pasOnceToken23
-- _objc_msgSend$computeOrLoadFeaturesForInteractionStatistics:trialClient:
-- _objc_msgSend$emitPETEvent
-- _objc_msgSend$humanReadableLabel
-- _objc_msgSend$humanReadableSynonyms
-- _objc_msgSend$identifierToLabelLookup
-- _objc_msgSend$identifierToSynonymsLookup
-- _objc_msgSend$intervalId
-- _objc_msgSend$isEnded
-- _objc_msgSend$isStarted
-- _objc_msgSend$loadSceneTags
-- _objc_msgSend$locationType
-- _objc_msgSend$logErrorMessageWithCA:
-- _objc_msgSend$logInfoMessageWithCA:
-- _objc_msgSend$setIntervalId:
-- _objc_msgSend$setIsEnded:
-- _objc_msgSend$setIsStarted:
-- _objc_msgSend$setPhotoSuggestedPeople:
-- _objc_msgSend$setPriorityContacts:
-- _objc_msgSend$spanEvent
-- _objc_msgSend$suggestionProxiesFromAttachmentTags:interactionStatistics:suggestionProxyType:reasonMessage:reasonType:contextDetails:useCatalog:similarityThreshold:weightedScoreThreshold:
-- _objc_msgSend$traceSession
 - _psrDataCollectionForContext:timeToWaitInSeconds:interactionStatisticsConfig:interactionStatistics:._pasOnceToken307
 CStrings:
 + "100"
@@ -14771,5 +14568,4 @@ CStrings:
 - "parentClasses"
 - "searchThreshold"
 - "url:%@"
-
 ```

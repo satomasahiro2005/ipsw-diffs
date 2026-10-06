@@ -2,39 +2,18 @@
 
 > `/usr/lib/libc++.1.dylib`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x6989c
-+  __TEXT.__text: 0x696cc
-   __TEXT.__init_offsets: 0x8
-   __TEXT.__const: 0x22817
-   __TEXT.__cstring: 0x18b1
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__common` | `0x721` | `0x11` | **`-0x710`** |
+| `__DATA_DIRTY.__common` | `0x6f0` | `0xe00` | **`+0x710`** |
+| `__TEXT.__text` | `0x6989c` | `0x696cc` | **`-0x1d0`** |
+| `__DATA.__bss` | `0x9358` | `0x9390` | **`+0x38`** |
 
-   __AUTH.__data: 0x30
-   __DATA.__data: 0xb0
-   __DATA.__crash_info: 0x148
--  __DATA.__common: 0x721
--  __DATA.__bss: 0x9358
-+  __DATA.__common: 0x11
-+  __DATA.__bss: 0x9390
-   __DATA_DIRTY.__data: 0xab0
-   __DATA_DIRTY.__bss: 0x2a0
--  __DATA_DIRTY.__common: 0x6f0
-+  __DATA_DIRTY.__common: 0xe00
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++abi.dylib
-   Functions: 2258
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__19__num_putIcE21__widen_and_group_intEPcS2_S2_S2_RS2_S3_RKNS_6localeE : 976 -> 948
 ~ __ZNSt3__14__fs10filesystem6parser10PathParser9decrementEv : 516 -> 532
@@ -89,5 +68,4 @@ Functions:
 ~ __ZNSt3__111__money_putIwE8__formatEPwRS2_S3_jPKwS5_RKNS_5ctypeIwEEbRKNS_10money_base7patternEwwRKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEERKNSE_IwNSF_IwEENSH_IwEEEESQ_i : 1148 -> 1136
 ~ __ZNSt3__1L15utf16be_to_ucs4EPKhS1_RS1_PjS3_RS3_mNS_12codecvt_modeE : 284 -> 268
 ~ __ZNSt3__1L15utf16le_to_ucs4EPKhS1_RS1_PjS3_RS3_mNS_12codecvt_modeE : 284 -> 268
-
 ```

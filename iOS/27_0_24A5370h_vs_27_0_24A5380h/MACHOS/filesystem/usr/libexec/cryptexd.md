@@ -2,50 +2,43 @@
 
 > `/usr/libexec/cryptexd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x69110` | `0x69120` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x350` | `0x358` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__object_init`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__cstring`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x69110
-+  __TEXT.__text: 0x69120
-   __TEXT.__auth_stubs: 0x25f0
-   __TEXT.__objc_stubs: 0x1700
-   __TEXT.__objc_methlist: 0x9b4
+-757.0.0.0.0
++761.0.1.0.0
 
-   __DATA_CONST.__subsystem: 0x18
-   __DATA_CONST.__object_init: 0x8
-   __DATA_CONST.__auth_got: 0x1308
--  __DATA_CONST.__got: 0x350
-+  __DATA_CONST.__got: 0x358
-   __DATA_CONST.__auth_ptr: 0x88
-   __DATA.__objc_const: 0x1520
-   __DATA.__objc_selrefs: 0x6d0
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 1555
 +  Functions: 1556
-   Symbols:   7957
-   CStrings:  2264
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__object_init : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/libcryptex_executables/install/TempContent/Objects/libcryptex_executables-761.0.1~27/cryptexd/RELEASE_ARM64E/DaemonServer.o
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/libcryptex_executables/install/TempContent/Objects/libcryptex_executables-761.0.1~27/cryptexd/RELEASE_ARM64E/Logger+init.o
@@ -179,5 +172,4 @@ CStrings:
 - "757"
 - "@(#)VERSION:Darwin Cryptex Manager Version 2.0.0: Tue Jun 16 00:24:43 PDT 2026; root:libcryptex_executables-757~1388/cryptexd/RELEASE_ARM64E"
 - "Darwin Cryptex Manager Version 2.0.0: Tue Jun 16 00:24:43 PDT 2026; root:libcryptex_executables-757~1388/cryptexd/RELEASE_ARM64E"
-
 ```

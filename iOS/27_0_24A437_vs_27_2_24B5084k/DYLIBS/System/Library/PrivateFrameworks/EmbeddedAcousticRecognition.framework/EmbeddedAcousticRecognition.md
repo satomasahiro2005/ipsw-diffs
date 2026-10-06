@@ -2,91 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/EmbeddedAcousticRecognition.framework/EmbeddedAcousticRecognition`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb83420` | `0xb84bc0` | **`+0x17a0`** |
+| `__TEXT.__gcc_except_tab` | `0xc2cec` | `0xc2fb0` | **`+0x2c4`** |
+| `__TEXT.__cstring` | `0x80287` | `0x804b7` | **`+0x230`** |
+| `__AUTH_CONST.__objc_const` | `0xebb8` | `0xeca0` | **`+0xe8`** |
+| `__AUTH_CONST.__cfstring` | `0x3780` | `0x3820` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x3c4a0` | `0x3c540` | **`+0xa0`** |
+| `__TEXT.__const` | `0x5ec28` | `0x5ec98` | **`+0x70`** |
+| `__AUTH.__objc_data` | `0x290` | `0x2e0` | **`+0x50`** |
+| `__AUTH_CONST.__const` | `0x4ac58` | `0x4aca8` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x6e74` | `0x6ec4` | **`+0x50`** |
+| `__DATA.__bss` | `0x28c8` | `0x28e8` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3840` | `0x3850` | **`+0x10`** |
+| `__TEXT.__oslogstring` | `0x3b41` | `0x3b4d` | **`+0xc`** |
+| `__DATA.__objc_ivar` | `0xa70` | `0xa78` | **`+0x8`** |
+| `__DATA_CONST.__const` | `0x2528` | `0x2530` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x588` | `0x590` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x400` | `0x408` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0x440` | `0x43f` | **`-0x1`** |
+
+### Other Changes
+
 ```diff
 
 -3600.73.1.0.0
--  __TEXT.__text: 0xb65fd4
--  __TEXT.__objc_methlist: 0x6e74
--  __TEXT.__const: 0x5ec28
--  __TEXT.__gcc_except_tab: 0xc2cec
--  __TEXT.__cstring: 0x80287
--  __TEXT.__oslogstring: 0x3b41
 +3605.8.1.0.0
-+  __TEXT.__text: 0xb67734
-+  __TEXT.__objc_methlist: 0x6ec4
-+  __TEXT.__const: 0x5ec98
-+  __TEXT.__gcc_except_tab: 0xc2fb0
-+  __TEXT.__cstring: 0x804b7
-+  __TEXT.__oslogstring: 0x3b4d
-   __TEXT.__ustring: 0xa8
-   __TEXT.__dlopen_cstrs: 0xc8
-   __TEXT.__constg_swiftt: 0x13c
--  __TEXT.__swift5_typeref: 0x440
-+  __TEXT.__swift5_typeref: 0x43f
-   __TEXT.__swift5_reflstr: 0x52
-   __TEXT.__swift5_fieldmd: 0xa4
-   __TEXT.__swift5_builtin: 0x28
 
-   __TEXT.__swift_as_ret: 0x4c
-   __TEXT.__swift_as_cont: 0x6c
-   __TEXT.__swift5_capture: 0x154
--  __TEXT.__unwind_info: 0x3f570
-+  __TEXT.__unwind_info: 0x3f5f8
-   __TEXT.__eh_frame: 0xaa8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2528
--  __DATA_CONST.__objc_classlist: 0x588
-+  __DATA_CONST.__const: 0x2530
-+  __DATA_CONST.__objc_classlist: 0x590
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x68
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x20
--  __DATA_CONST.__objc_selrefs: 0x3840
-+  __DATA_CONST.__objc_selrefs: 0x3850
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x400
-+  __DATA_CONST.__objc_superrefs: 0x408
-   __DATA_CONST.__objc_arraydata: 0x128
-   __DATA_CONST.__got: 0x818
--  __AUTH_CONST.__const: 0x4ac58
--  __AUTH_CONST.__cfstring: 0x3780
--  __AUTH_CONST.__objc_const: 0xebb8
-+  __AUTH_CONST.__const: 0x4aca8
-+  __AUTH_CONST.__cfstring: 0x3820
-+  __AUTH_CONST.__objc_const: 0xeca0
-   __AUTH_CONST.__weak_auth_got: 0x60
-   __AUTH_CONST.__objc_intobj: 0x2d0
-   __AUTH_CONST.__objc_arrayobj: 0x78
-
-   __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__auth_got: 0x2278
--  __AUTH.__objc_data: 0x290
-+  __AUTH.__objc_data: 0x2e0
-   __AUTH.__data: 0x28
-   __AUTH.__thread_vars: 0x378
-   __AUTH.__thread_bss: 0xae8
--  __DATA.__objc_ivar: 0xa70
-+  __DATA.__objc_ivar: 0xa78
-   __DATA.__data: 0x1760
-   __DATA.__common: 0x185
-   __DATA_DIRTY.__objc_data: 0x3520
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 40384
--  Symbols:   61787
+-  Symbols:   60608
 -  CStrings:  20120
 +  Functions: 40404
-+  Symbols:   61829
++  Symbols:   60649
 +  CStrings:  20134
- 
 Symbols:
 + -[EMTPronGuide .cxx_construct]
 + -[EMTPronGuide .cxx_destruct]
@@ -137,7 +88,6 @@ Symbols:
 + __ZZN5kaldi6quasar18NNMTTransliterator13TransliterateERKNSt3__16vectorINS2_12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEENS7_IS9_EEEERKS9_bPbEN18VectorUReplaceable8char32AtEPKPvi
 + __ZZN6quasar9PronGuide21getSharedPronunciatorERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEE15pronunciatorMap
 + __ZZN6quasar9PronGuide21getSharedPronunciatorERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEE1m
-+ _objc_msgSend$initWithTokens:isFinal:utteranceStartMs:utteranceStartSamples:recognitionPaused:firstResultAfterResume:commandInterpretations:performanceMarkers:voiceCommandDebugInfo:
 - __ZN5kaldi6quasar18NNMTTransliterator13TransliterateERKNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEESA_b
 - __ZN5kaldi6quasar18NNMTTransliterator13TransliterateERKNSt3__16vectorINS2_12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEENS7_IS9_EEEERKS9_b
 - __ZZN5kaldi6quasar18NNMTTransliterator13TransliterateERKNSt3__16vectorINS2_12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEENS7_IS9_EEEERKS9_bEN18VectorUReplaceable4copyEPPviii

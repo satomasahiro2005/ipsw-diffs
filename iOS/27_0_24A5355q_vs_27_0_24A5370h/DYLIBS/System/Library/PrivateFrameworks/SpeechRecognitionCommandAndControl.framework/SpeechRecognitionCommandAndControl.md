@@ -2,129 +2,59 @@
 
 > `/System/Library/PrivateFrameworks/SpeechRecognitionCommandAndControl.framework/SpeechRecognitionCommandAndControl`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x111e98` | `0x1206b4` | **`+0xe81c`** |
+| `__TEXT.__swift5_typeref` | `0x8494` | `0x8eaa` | **`+0xa16`** |
+| `__DATA.__bss` | `0x2ac0` | `0x32f0` | **`+0x830`** |
+| `__TEXT.__const` | `0x3fb4` | `0x47b4` | **`+0x800`** |
+| `__TEXT.__oslogstring` | `0x3a1a` | `0x3f5a` | **`+0x540`** |
+| `__AUTH_CONST.__objc_const` | `0x113d8` | `0x11880` | **`+0x4a8`** |
+| `__AUTH_CONST.__const` | `0x4a98` | `0x4f38` | **`+0x4a0`** |
+| `__AUTH.__data` | `0x1348` | `0x1710` | **`+0x3c8`** |
+| `__TEXT.__unwind_info` | `0x4028` | `0x4318` | **`+0x2f0`** |
+| `__TEXT.__constg_swiftt` | `0x1dd4` | `0x20c0` | **`+0x2ec`** |
+| `__TEXT.__eh_frame` | `0xf88` | `0x1220` | **`+0x298`** |
+| `__DATA.__data` | `0x2fd8` | `0x3258` | **`+0x280`** |
+| `__TEXT.__swift5_fieldmd` | `0xdac` | `0x1014` | **`+0x268`** |
+| `__TEXT.__cstring` | `0x9337` | `0x9577` | **`+0x240`** |
+| `__AUTH.__objc_data` | `0x45a8` | `0x4778` | **`+0x1d0`** |
+| `__TEXT.__swift5_reflstr` | `0xbf8` | `0xdb8` | **`+0x1c0`** |
+| `__AUTH_CONST.__auth_got` | `0x1de0` | `0x1f50` | **`+0x170`** |
+| `__AUTH_CONST.__cfstring` | `0x9620` | `0x9780` | **`+0x160`** |
+| `__TEXT.__objc_methlist` | `0xbda4` | `0xbeac` | **`+0x108`** |
+| `__TEXT.__swift5_capture` | `0x9f8` | `0xae8` | **`+0xf0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7d48` | `0x7e20` | **`+0xd8`** |
+| `__DATA_CONST.__got` | `0x1480` | `0x1538` | **`+0xb8`** |
+| `__DATA_CONST.__const` | `0x2200` | `0x2290` | **`+0x90`** |
+| `__TEXT.__swift5_assocty` | `0x3f8` | `0x458` | **`+0x60`** |
+| `__TEXT.__swift5_proto` | `0x124` | `0x164` | **`+0x40`** |
+| `__TEXT.__swift5_types` | `0x128` | `0x158` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0x510` | `0x538` | **`+0x28`** |
+| `__TEXT.__swift5_builtin` | `0xdc` | `0x104` | **`+0x28`** |
+| `__DATA.__common` | `0x288` | `0x2a8` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x5c` | `0x74` | **`+0x18`** |
+| `__TEXT.__gcc_except_tab` | `0x2430` | `0x2440` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x34` | `0x3c` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x44` | `0x4c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -179.0.0.0.0
--  __TEXT.__text: 0x111e98 sha256:e3692233b548f3db47c1f85c719492f099c95b5bc5e1a9af0fcbddafa5602367
--  __TEXT.__objc_methlist: 0xbda4 sha256:094fcaeb37c6937219d1224a5d1adaa19e931c39d6456e498d22237a5909a122
--  __TEXT.__const: 0x3fb4 sha256:a7a2340cc61bf3705d9e71ccb1c2c72aeccdbcf1b335a0f5d8ba8ee559e4c5c7
--  __TEXT.__oslogstring: 0x3a1a sha256:3f8d5dbcd2d6482125f3a659929a01eea5aca208b8996f32476f227863e71189
--  __TEXT.__cstring: 0x9337 sha256:cce73ac915ff1ae0f553a9a133981f60680c8c044512cbc73f8090c0bd383a20
--  __TEXT.__gcc_except_tab: 0x2430 sha256:d59b0c2b88db5a7cb81bfa5fb9a64d207faded8090f82c2adc619af072fdf802
 +182.0.0.0.0
-+  __TEXT.__text: 0x1206b4 sha256:39e4127e2373063e71d09488e4e9cccdc54ba7590dec23ca0bc14d66762b6d4f
-+  __TEXT.__objc_methlist: 0xbeac sha256:50da7371a2ff68a4df0b61b1f1eccccac21c13bc466d29f4370e7b435956ff01
-+  __TEXT.__const: 0x47b4 sha256:d3d29d03f2c881261d692af34617e1feaf7d7039d105fae960c3cc8cef58dfc2
-+  __TEXT.__oslogstring: 0x3f5a sha256:9900566eaacd0a8399fe857be09c9201912c77ab2d826b4fa784b2b30f80032b
-+  __TEXT.__cstring: 0x9577 sha256:3e015a2ab68afb8eac87f0da5fee9ba47d21112a040c63b6ecfe39c25a8f0d39
-+  __TEXT.__gcc_except_tab: 0x2440 sha256:b341f3ad0902232d74de2e3a3dbac4add29abb536c8abf5158973d523a01f785
-   __TEXT.__ustring: 0x8a sha256:adce48a88976b485faa17978049e8fefd4b8ba58b780691ee94d1d1e4a9970d3
-   __TEXT.__dlopen_cstrs: 0x5e sha256:c753879191d3115c637e09756d9f02362e2f023d9e18d27bb855979424274f61
--  __TEXT.__constg_swiftt: 0x1dd4 sha256:e3cd9635db241dafb336fd8ce5b2430c31e548b13c4cf6477dfda3eff590488a
--  __TEXT.__swift5_typeref: 0x8494 sha256:c36b7f222477e925e2e4d05d8e299b8aede3ed8aa124132d47eff84c642bbdb4
--  __TEXT.__swift5_builtin: 0xdc sha256:43f161dcf7344ee7033a005361a26c5881ce1b2c5fde1c8536fb3316607f0576
--  __TEXT.__swift5_reflstr: 0xbf8 sha256:c37e61c31f05327806ac65ef8ec476477f13b23d44b8667435e3e83b02e5e32c
--  __TEXT.__swift5_fieldmd: 0xdac sha256:14162982531c6a81abc6ca09f5e42008b38593f9c00ee8b9bd1883f14376a1f0
--  __TEXT.__swift5_assocty: 0x3f8 sha256:1e211208fb9b0a0c030d954734ccb944bebcf058effd4160055403f85f4e0180
--  __TEXT.__swift5_capture: 0x9f8 sha256:240aadbc56741f2170e49f803de6d5a68fa2d03da4a87f209a0d0a28802f27ca
--  __TEXT.__swift5_proto: 0x124 sha256:74c7200d1bb8b4c4b622375e22b694442a5bd0342637d792f9c2f0eb2a1bda45
--  __TEXT.__swift5_types: 0x128 sha256:ff3a5b0faf82d5e246bde588c0b94a6b2da82ffdc4e08c1c4ac358590fb4e040
--  __TEXT.__swift_as_entry: 0x34 sha256:02fe8088311d2d5ca6eb56d8dd78663db54000c8d77be6283f6a5f67a361acd0
--  __TEXT.__swift_as_ret: 0x44 sha256:e7235dbf107a514afa9ff4fd3f6402bd3711f0b349704b27329df8919486ba95
--  __TEXT.__swift_as_cont: 0x5c sha256:5e4923988526345d6f3422cba4ed8147361e5fa1bad7015829ef15e84f512498
--  __TEXT.__unwind_info: 0x4028 sha256:efa10cb87f93b8aec4c9ab83b8b670c794199b88685887bed434c79e158e09c0
--  __TEXT.__eh_frame: 0xf88 sha256:e7ac57d53c5889db752df624bec0ee2001faa4fbda5002b696c0f5bf1f334be2
-+  __TEXT.__constg_swiftt: 0x20c0 sha256:97a566825019d3d52fa951475cdb9be3170eefe68747283f104310024d3f5293
-+  __TEXT.__swift5_typeref: 0x8eaa sha256:b20c2a25604ad48ca9deead3de15b1e085c7cd785496eb7b36c912eb1091fbf8
-+  __TEXT.__swift5_builtin: 0x104 sha256:d6487d1c40196ef61e592b69c4174e7b97dc53a28b8be017aeac83c484f4f59f
-+  __TEXT.__swift5_reflstr: 0xdb8 sha256:2f04773c474c5380700620e7a3787d00bec4b1346a90e3cc639bcf36c0cd1439
-+  __TEXT.__swift5_fieldmd: 0x1014 sha256:1eb1aa094f96047c228f4d276b5c99898c9ae29908f3785c1225233cd4edb9cd
-+  __TEXT.__swift5_assocty: 0x458 sha256:0acd5d28d22d9e736162ad40b54bd17d577bd7c8ee33e38b4234ae71bd9b02d2
-+  __TEXT.__swift5_capture: 0xae8 sha256:b95044caf389f838537208b819037b3673e20f39b899693b33a844687ee7020d
-+  __TEXT.__swift5_proto: 0x164 sha256:6c52fb84d59e191969c6e325c285424596dc4b36d670cb598d9b819cd4799e2c
-+  __TEXT.__swift5_types: 0x158 sha256:a5d9a786068568e70539a5288791baaa603032346ffa079eb1c551e3c4d1c494
-+  __TEXT.__swift_as_entry: 0x3c sha256:ea0e25f7a660fb6291f5fde769aaca43425514c83e6919884d649e90dd2054e7
-+  __TEXT.__swift_as_ret: 0x4c sha256:34e0b2e625343253f918eb8506f452283dfb201c65c3532b6b005e003075ba0e
-+  __TEXT.__swift_as_cont: 0x74 sha256:fe771ba2a627a1ad18050203bb7ae16d606b591d723c9b09687a5cc3e332665b
-+  __TEXT.__unwind_info: 0x4318 sha256:16ac718c0cb2eea704e6696138b348572d962864f7fb41b79529d3691d60b937
-+  __TEXT.__eh_frame: 0x1220 sha256:f704cd0db7577fc8cadd6068bf2ff757bbbde0b0c169eb37e9df4849d73b6b4d
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2200 sha256:f3eec818a761235a092ef04881127ea410522034db9000637c05fb4573b78355
--  __DATA_CONST.__objc_classlist: 0x510 sha256:33cc5a5357fab4734067d709988e5d6d206fc68ededcc4db2fe7ddb158a07efa
--  __DATA_CONST.__objc_catlist: 0x40 sha256:a0fdda1cf61201f43b43dbfcec0be42affab8e214b8f31817526389f634cc68d
--  __DATA_CONST.__objc_protolist: 0x1d8 sha256:b5df5bba70a5eeda9d83140cb44fd233ddadfbb0f4a5e767f2861c1fc5d54035
-+  __DATA_CONST.__const: 0x2290 sha256:b1529c09b29230ac4ba9972ede5ca6098c1e842289c52ae1ad9de9b4f5bb0a83
-+  __DATA_CONST.__objc_classlist: 0x538 sha256:0f2babd3259d7315fdd4ceeb61915054c9bac75b71d81ab88878c71a4598a4b2
-+  __DATA_CONST.__objc_catlist: 0x40 sha256:877752b1df30fae2ca9a4aae28ae2966efe768da078136b88f4fb81edd33300f
-+  __DATA_CONST.__objc_protolist: 0x1d8 sha256:6a6f136c8260b375b28390e557b4b69bd4a1dd5bc84382e37c1fe55001102fd0
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0x7d48 sha256:8963a157058f43cf6a3e64471b6a075f840cd8ac56ebc7a7345827f8dcc78121
--  __DATA_CONST.__objc_protorefs: 0x30 sha256:fcc6c634d26e0f78f31d55fadb2e9502628e5963a71e3f7c9ab4b381b367e403
--  __DATA_CONST.__objc_superrefs: 0x2a8 sha256:dc50228c97b63a96672aa24747010e8d3b063284d0a981400872ba09d7fe11fc
--  __DATA_CONST.__objc_arraydata: 0x8a0 sha256:066bd54048f9a9d575e803d78c8076709a619f95f38aec660589966242238190
--  __DATA_CONST.__got: 0x1480 sha256:06deb0611ea8a0614b5233f9e102cc0eaa1f78c6dea3690b49f1911f80df4965
--  __AUTH_CONST.__const: 0x4a98 sha256:62b9b05f724d300f2da2947e79f084c5b78d81ad58d1f008a24eabb42abb2773
--  __AUTH_CONST.__cfstring: 0x9620 sha256:f7c185a59d510bf769f6b40803c00bf9aec948e7358f58fac28c25e5f75b5989
--  __AUTH_CONST.__objc_const: 0x113d8 sha256:927ad6196a1364138803e7de261c961caa18a8d2a8a6456e1b267d7eef53e702
--  __AUTH_CONST.__objc_intobj: 0x3c0 sha256:50be4957a21e906d2666b4240c8984d1e4673b55c35ad7ee26dc3cd4a93c43f5
--  __AUTH_CONST.__objc_doubleobj: 0x70 sha256:e47bb5876308db96cb83e393e98ad95fd047f8b57c82175c06db3e1fc1abe61d
--  __AUTH_CONST.__objc_arrayobj: 0x120 sha256:1cfcf4a9a6ff0632ab703aa4c414f691e22e27ae69e483954be8f1e58dd2b7b1
--  __AUTH_CONST.__objc_dictobj: 0xf0 sha256:01fc6d45e328b610a7dc291278d312e0b86618eee5f88e7242819bd474358f46
--  __AUTH_CONST.__auth_got: 0x1de0 sha256:a8a4ed4667bf668a3ff7b2c4234f21b4a3756ffe9de5faedf19a3eb0be395950
--  __AUTH.__objc_data: 0x45a8 sha256:210709b4113daae404acd5964710a920cc50d57b0a26694ad648f2bbacd61c1d
--  __AUTH.__data: 0x1348 sha256:b28312e2f2cd56d422f8db9aad31609ac993698d6c361a73acde607a2645f795
-+  __DATA_CONST.__objc_selrefs: 0x7e20 sha256:1819acdb918712cea48dfdd79455e9a2e59f38f0cd7e416e4491c51e521e338c
-+  __DATA_CONST.__objc_protorefs: 0x30 sha256:b6daadbfcef6290170cd4cf1d6b8429de5932af90e39c055452c81b9e2f75a42
-+  __DATA_CONST.__objc_superrefs: 0x2a8 sha256:f8b56d5264bde93bc58c0dac8ab501c224fac0f7fd8a57fedf4e43fb1688802d
-+  __DATA_CONST.__objc_arraydata: 0x8a0 sha256:5e38428fec6acc67af8bd24e4d64da5a8df6134a1dba0cbfdd2b61e6cf3d368f
-+  __DATA_CONST.__got: 0x1538 sha256:c4213b869d00b839b9b032235b61c3df2eeb85d699480a96fdfffa536c98ec20
-+  __AUTH_CONST.__const: 0x4f38 sha256:54c7d06b2b33d76ea8e7280d231d1d4215bb524a813ea3fec2de6b86fad3b9c4
-+  __AUTH_CONST.__cfstring: 0x9780 sha256:283855098975b4f594cd1b0cf0c7a244e26ec75da835870e5710ed3fc362b278
-+  __AUTH_CONST.__objc_const: 0x11880 sha256:39aebd0ff85b63fd1b69e01baaa6b3b8859f2b4de721d545be06747cb51a542e
-+  __AUTH_CONST.__objc_intobj: 0x3c0 sha256:b8db6d9c131b6b30649f33f21e1fdbaea34ab0a40fe099a72ab951997746a009
-+  __AUTH_CONST.__objc_doubleobj: 0x70 sha256:3b5ef223d9cb9a6f532e77ed94f0d6ef30e46ac0990e31afffb7f550cfd152f8
-+  __AUTH_CONST.__objc_arrayobj: 0x120 sha256:ca631e8b0174293f7cbfffce35ccf7c30912c5e03654215964eb957c79938435
-+  __AUTH_CONST.__objc_dictobj: 0xf0 sha256:e8981c64771ff9c0f9fc71e5bbdcf121e3521bd5e1c7d463206447fa47eed2ed
-+  __AUTH_CONST.__auth_got: 0x1f50 sha256:faa9269417a8fe34f153020048b39da884792b80a746faf106fedc6b9426cc44
-+  __AUTH.__objc_data: 0x4778 sha256:b39f33c1d21a709043b462362f98d64a554fd0f07f46ffccd37c8c7a5d27732a
-+  __AUTH.__data: 0x1710 sha256:bd212ef13aefd30b063212e7d9ce91a887681e789580f853fd38b3ce0426c836
-   __DATA.__objc_ivar: 0xaa0 sha256:3558fee1ee61190999d1c730655a43f99e274e353b53723d8ae84e2b0ac3eede
--  __DATA.__data: 0x2fd8 sha256:c526857bcee3e18000151703c13158bb5e7f8ac8cfdc974c544f9995c2021a43
--  __DATA.__objc_stublist: 0x10 sha256:c26e7522d83abd057d336a99c04828a8bfcaed794de0b70709d321a4b7bec8db
--  __DATA.__bss: 0x2ac0 sha256:70bd84b0fd874cf66e57acf6d0ac9ea115fc1742f7c33d7f6dfc214cee71177c
--  __DATA.__common: 0x288 sha256:cbb6c96921d8d8a3e29e27ff491cd78f2fee4ec7634da1e33924d8de9b1601b5
-+  __DATA.__data: 0x3258 sha256:23c664646763ca169f08cd8e97af5195f83a80b7a0e16e89bdf81f80c684c799
-+  __DATA.__objc_stublist: 0x10 sha256:75eae88839549ca524f9debe9f975ae82d0ed3a4599be13d02227afdac008417
-+  __DATA.__bss: 0x32f0 sha256:2b5b7151f92c76fb2ac213ba395ecdc01eccc03bd9fda85fda418de7fdac2d73
-+  __DATA.__common: 0x2a8 sha256:213ba3b09b5044adc118cd35998962193475d44ba84f3e79b825d75906fdc90f
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
 
-   - /System/Library/PrivateFrameworks/EmojiFoundation.framework/EmojiFoundation
-   - /System/Library/PrivateFrameworks/FeedbackService.framework/FeedbackService
-   - /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
 +  - /System/Library/PrivateFrameworks/GenerativeFunctionsFoundation.framework/GenerativeFunctionsFoundation
-   - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
-   - /System/Library/PrivateFrameworks/GenerativeModelsFoundation.framework/GenerativeModelsFoundation
-   - /System/Library/PrivateFrameworks/IdleTimerServices.framework/IdleTimerServices
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: 1CBA64AF-0DBF-33C1-AF04-393AAB6310F8
 -  Functions: 7007
--  Symbols:   23780
--  CStrings:  2977
-+  UUID: 7CD5021B-7FBA-339D-8C4A-8AC5E14A20FF
+-  Symbols:   13998
+-  CStrings:  1803
 +  Functions: 7290
-+  Symbols:   24788
-+  CStrings:  3016
- 
++  Symbols:   14715
++  CStrings:  1831
 Symbols:
 + +[CACAudioRouteUtilities currentSystemAudioInputType]
 + +[CACSpokenCommandGestureManager isSelfGeneratedTouchSenderID:]
@@ -195,11 +125,9 @@ Symbols:
 + _$s29GenerativeFunctionsFoundation0A5ErrorVMa
 + _$s34SpeechRecognitionCommandAndControl11CaptionView33_8370FA84EC49A4B69B5523418F65F539LLV04$s34abcd9Control11f11View33_8370hijklmN47LLV7opacity5StatefMp_20_initialStoredValue_fMu_7SwiftUI9LazyStateVySdGvgZSdycfU_
 + _$s34SpeechRecognitionCommandAndControl11CaptionView33_8370FA84EC49A4B69B5523418F65F539LLV05flashD4FadeyyFyyXEfU_TA
-+ _$s34SpeechRecognitionCommandAndControl11CaptionView33_8370FA84EC49A4B69B5523418F65F539LLV05flashD4FadeyyFyyXEfU_TA.161
 + _$s34SpeechRecognitionCommandAndControl11CaptionView33_8370FA84EC49A4B69B5523418F65F539LLV05flashD4FadeyyFyyXEfU_Tm
 + _$s34SpeechRecognitionCommandAndControl11CaptionView33_8370FA84EC49A4B69B5523418F65F539LLV05flashD4FadeyyFyycfU0_
 + _$s34SpeechRecognitionCommandAndControl11CaptionView33_8370FA84EC49A4B69B5523418F65F539LLV05flashD4FadeyyFyycfU0_TA
-+ _$s34SpeechRecognitionCommandAndControl11CaptionView33_8370FA84EC49A4B69B5523418F65F539LLV05flashD4FadeyyFyycfU0_TA.165
 + _$s34SpeechRecognitionCommandAndControl11CaptionView33_8370FA84EC49A4B69B5523418F65F539LLV05flashD4FadeyyFyycfU0_TATm
 + _$s34SpeechRecognitionCommandAndControl11CaptionView33_8370FA84EC49A4B69B5523418F65F539LLV05flashD4FadeyyFyycfU0_yyXEfU_TA
 + _$s34SpeechRecognitionCommandAndControl11CaptionView33_8370FA84EC49A4B69B5523418F65F539LLV4bodyQrvg
@@ -231,40 +159,40 @@ Symbols:
 + _$s34SpeechRecognitionCommandAndControl11CaptionView33_8370FA84EC49A4B69B5523418F65F539LLVwet
 + _$s34SpeechRecognitionCommandAndControl11CaptionView33_8370FA84EC49A4B69B5523418F65F539LLVwst
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV010didExecuteC0SbvM
-+ _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV010didExecuteC0SbvM.resume.0
++ _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV010didExecuteC0SbvM.resume
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV010didExecuteC0Sbvg
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV010didExecuteC0SbvpMV
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV010didExecuteC0Sbvs
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV10lastUpdate10Foundation4DateVvM
-+ _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV10lastUpdate10Foundation4DateVvM.resume.0
++ _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV10lastUpdate10Foundation4DateVvM.resume
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV10lastUpdate10Foundation4DateVvg
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV10lastUpdate10Foundation4DateVvpMV
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV10lastUpdate10Foundation4DateVvs
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV11displayTextSSvM
-+ _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV11displayTextSSvM.resume.0
++ _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV11displayTextSSvM.resume
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV11displayTextSSvg
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV11displayTextSSvpMV
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV11displayTextSSvs
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV11utteranceID11displayText5nBest9isPartial010didExecuteC016executionBlocked10lastUpdateACs6UInt64V_SSSaySSGS3b10Foundation4DateVtcfC
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV11utteranceIDs6UInt64VvM
-+ _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV11utteranceIDs6UInt64VvM.resume.0
++ _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV11utteranceIDs6UInt64VvM.resume
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV11utteranceIDs6UInt64Vvg
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV11utteranceIDs6UInt64VvpMV
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV11utteranceIDs6UInt64Vvs
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV16executionBlockedSbvM
-+ _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV16executionBlockedSbvM.resume.0
++ _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV16executionBlockedSbvM.resume
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV16executionBlockedSbvg
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV16executionBlockedSbvpMV
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV16executionBlockedSbvs
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV2id10Foundation4UUIDVvg
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV2id10Foundation4UUIDVvpMV
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV5nBestSaySSGvM
-+ _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV5nBestSaySSGvM.resume.0
++ _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV5nBestSaySSGvM.resume
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV5nBestSaySSGvg
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV5nBestSaySSGvpMV
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV5nBestSaySSGvs
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV9isPartialSbvM
-+ _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV9isPartialSbvM.resume.0
++ _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV9isPartialSbvM.resume
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV9isPartialSbvg
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV9isPartialSbvpMV
 + _$s34SpeechRecognitionCommandAndControl15CACDebugCaptionV9isPartialSbvs
@@ -381,8 +309,6 @@ Symbols:
 + _$s34SpeechRecognitionCommandAndControl17VCIAnalyticsStore33_777C9D988DB6376B7022189633876BCELLC19finalizeTransaction11utteranceID014isIntelligenceC010actionType10pointCount15confidenceLevel11meanEntropy7latency12modelVersion18commandWasExecutedys6UInt64V_SbAA021CACVCIAnalyticsActionT0OS2iS2dSSSbtFAA07PendingN0ACLLVSgyXEfU_
 + _$s34SpeechRecognitionCommandAndControl17VCIAnalyticsStore33_777C9D988DB6376B7022189633876BCELLC19finalizeTransaction11utteranceID014isIntelligenceC010actionType10pointCount15confidenceLevel11meanEntropy7latency12modelVersion18commandWasExecutedys6UInt64V_SbAA021CACVCIAnalyticsActionT0OS2iS2dSSSbtFSDySSSo8NSObjectCGSgycfU0_
 + _$s34SpeechRecognitionCommandAndControl17VCIAnalyticsStore33_777C9D988DB6376B7022189633876BCELLC19finalizeTransaction11utteranceID014isIntelligenceC010actionType10pointCount15confidenceLevel11meanEntropy7latency12modelVersion18commandWasExecutedys6UInt64V_SbAA021CACVCIAnalyticsActionT0OS2iS2dSSSbtFSDySSSo8NSObjectCGSgycfU0_TA
-+ _$s34SpeechRecognitionCommandAndControl17VCIAnalyticsStore33_777C9D988DB6376B7022189633876BCELLC19finalizeTransaction11utteranceID014isIntelligenceC010actionType10pointCount15confidenceLevel11meanEntropy7latency12modelVersion18commandWasExecutedys6UInt64V_SbAA021CACVCIAnalyticsActionT0OS2iS2dSSSbtFSDySSSo8NSObjectCGSgycfU0_TA.14
-+ _$s34SpeechRecognitionCommandAndControl17VCIAnalyticsStore33_777C9D988DB6376B7022189633876BCELLC19finalizeTransaction11utteranceID014isIntelligenceC010actionType10pointCount15confidenceLevel11meanEntropy7latency12modelVersion18commandWasExecutedys6UInt64V_SbAA021CACVCIAnalyticsActionT0OS2iS2dSSSbtFSDySSSo8NSObjectCGSgycfU0_TA.4
 + _$s34SpeechRecognitionCommandAndControl17VCIAnalyticsStore33_777C9D988DB6376B7022189633876BCELLC19finalizeTransaction11utteranceID014isIntelligenceC010actionType10pointCount15confidenceLevel11meanEntropy7latency12modelVersion18commandWasExecutedys6UInt64V_SbAA021CACVCIAnalyticsActionT0OS2iS2dSSSbtFSDySSSo8NSObjectCGSgycfU1_
 + _$s34SpeechRecognitionCommandAndControl17VCIAnalyticsStore33_777C9D988DB6376B7022189633876BCELLC19finalizeTransaction11utteranceID014isIntelligenceC010actionType10pointCount15confidenceLevel11meanEntropy7latency12modelVersion18commandWasExecutedys6UInt64V_SbAA021CACVCIAnalyticsActionT0OS2iS2dSSSbtFSDySSSo8NSObjectCGSgycfU1_TA
 + _$s34SpeechRecognitionCommandAndControl17VCIAnalyticsStore33_777C9D988DB6376B7022189633876BCELLC19pendingTransactionsSDys6UInt64VAA18PendingTransactionACLLVGvpWvd
@@ -436,7 +362,7 @@ Symbols:
 + _$s34SpeechRecognitionCommandAndControl19CACDebugOverlayViewV4bodyQrvg7SwiftUI12TupleContentVyAE0H0PAEE15ignoresSafeArea_5edgesQrAE0oP7RegionsV_AE4EdgeO3SetVtFQOyAE6ZStackVyAGyAiEE7opacityyQrSdFQOyAE6CanvasVyAE05EmptyH0VG_Qo__A2ZQPGG_Qo__AE6VStackVyAGyAiEE7paddingyQrAQ_12CoreGraphics7CGFloatVSgtFQOyAiEEA4_yQrAQ_A8_tFQOyAE6HStackVyAGyAA19AudioInputIndicator33_8370FA84EC49A4B69B5523418F65F539LLV_AA12VCIIndicatorA12_LLVAA13RootIndicatorA12_LLVSgAE6SpacerVAA18GroundingIndicatorA12_LLVAA16RefreshIndicatorA12_LLVQPGG_Qo__Qo__AiEEA4_yQrAQ_A8_tFQOyAiEEA4_yQrAQ_A8_tFQOyAA07CaptionH0A12_LLV_Qo__Qo_SgA20_QPGGQPGyXEfU_A_yXEfU_yAE15GraphicsContextVz_So6CGSizeVtcfU_TA
 + _$s34SpeechRecognitionCommandAndControl19CACDebugOverlayViewV4bodyQrvg7SwiftUI12TupleContentVyAE0H0PAEE15ignoresSafeArea_5edgesQrAE0oP7RegionsV_AE4EdgeO3SetVtFQOyAE6ZStackVyAGyAiEE7opacityyQrSdFQOyAE6CanvasVyAE05EmptyH0VG_Qo__A2ZQPGG_Qo__AE6VStackVyAGyAiEE7paddingyQrAQ_12CoreGraphics7CGFloatVSgtFQOyAiEEA4_yQrAQ_A8_tFQOyAE6HStackVyAGyAA19AudioInputIndicator33_8370FA84EC49A4B69B5523418F65F539LLV_AA12VCIIndicatorA12_LLVAA13RootIndicatorA12_LLVSgAE6SpacerVAA18GroundingIndicatorA12_LLVAA16RefreshIndicatorA12_LLVQPGG_Qo__Qo__AiEEA4_yQrAQ_A8_tFQOyAiEEA4_yQrAQ_A8_tFQOyAA07CaptionH0A12_LLV_Qo__Qo_SgA20_QPGGQPGyXEfU_A_yXEfU_yAE15GraphicsContextVz_So6CGSizeVtcfU_Tm
 + _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC24captionFadeTransactionIDSivM
-+ _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC24captionFadeTransactionIDSivM.resume.0
++ _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC24captionFadeTransactionIDSivM.resume
 + _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC24captionFadeTransactionIDSivMTj
 + _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC24captionFadeTransactionIDSivMTq
 + _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC24captionFadeTransactionIDSivg
@@ -451,12 +377,12 @@ Symbols:
 + _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC24captionFadeTransactionIDSivsTq
 + _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC24captionFadeTransactionIDSivsyyXEfU_TA
 + _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC25_captionFadeTransactionID33_8370FA84EC49A4B69B5523418F65F539LLSivM
-+ _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC25_captionFadeTransactionID33_8370FA84EC49A4B69B5523418F65F539LLSivM.resume.0
++ _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC25_captionFadeTransactionID33_8370FA84EC49A4B69B5523418F65F539LLSivM.resume
 + _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC25_captionFadeTransactionID33_8370FA84EC49A4B69B5523418F65F539LLSivg
 + _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC25_captionFadeTransactionID33_8370FA84EC49A4B69B5523418F65F539LLSivpWvd
 + _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC25_captionFadeTransactionID33_8370FA84EC49A4B69B5523418F65F539LLSivs
 + _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC7captionAA0F7CaptionVSgvM
-+ _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC7captionAA0F7CaptionVSgvM.resume.0
++ _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC7captionAA0F7CaptionVSgvM.resume
 + _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC7captionAA0F7CaptionVSgvMTj
 + _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC7captionAA0F7CaptionVSgvMTq
 + _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC7captionAA0F7CaptionVSgvg
@@ -472,7 +398,7 @@ Symbols:
 + _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC7captionAA0F7CaptionVSgvsyyXEfU_
 + _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC7captionAA0F7CaptionVSgvsyyXEfU_TA
 + _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC8_caption33_8370FA84EC49A4B69B5523418F65F539LLAA0F7CaptionVSgvM
-+ _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC8_caption33_8370FA84EC49A4B69B5523418F65F539LLAA0F7CaptionVSgvM.resume.0
++ _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC8_caption33_8370FA84EC49A4B69B5523418F65F539LLAA0F7CaptionVSgvM.resume
 + _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC8_caption33_8370FA84EC49A4B69B5523418F65F539LLAA0F7CaptionVSgvg
 + _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC8_caption33_8370FA84EC49A4B69B5523418F65F539LLAA0F7CaptionVSgvpWvd
 + _$s34SpeechRecognitionCommandAndControl20CACDebugOverlayModelC8_caption33_8370FA84EC49A4B69B5523418F65F539LLAA0F7CaptionVSgvs
@@ -610,7 +536,7 @@ Symbols:
 + _$s34SpeechRecognitionCommandAndControl28CACVCISafetyKeepAliveSessionC11_ClientInfo33_839DCC42CF888E4B6D35BD742461F8F1LLC16GenerativeModels01_jK8ProtocolAAMc
 + _$s34SpeechRecognitionCommandAndControl28CACVCISafetyKeepAliveSessionC11_ClientInfo33_839DCC42CF888E4B6D35BD742461F8F1LLC16GenerativeModels01_jK8ProtocolAAMcMK
 + _$s34SpeechRecognitionCommandAndControl28CACVCISafetyKeepAliveSessionC11_ClientInfo33_839DCC42CF888E4B6D35BD742461F8F1LLC16GenerativeModels01_jK8ProtocolAagHP14trackingConfigAG01_jki8TrackingX0VvMTW
-+ _$s34SpeechRecognitionCommandAndControl28CACVCISafetyKeepAliveSessionC11_ClientInfo33_839DCC42CF888E4B6D35BD742461F8F1LLC16GenerativeModels01_jK8ProtocolAagHP14trackingConfigAG01_jki8TrackingX0VvMTW.resume.0
++ _$s34SpeechRecognitionCommandAndControl28CACVCISafetyKeepAliveSessionC11_ClientInfo33_839DCC42CF888E4B6D35BD742461F8F1LLC16GenerativeModels01_jK8ProtocolAagHP14trackingConfigAG01_jki8TrackingX0VvMTW.resume
 + _$s34SpeechRecognitionCommandAndControl28CACVCISafetyKeepAliveSessionC11_ClientInfo33_839DCC42CF888E4B6D35BD742461F8F1LLC16GenerativeModels01_jK8ProtocolAagHP14trackingConfigAG01_jki8TrackingX0VvgTW
 + _$s34SpeechRecognitionCommandAndControl28CACVCISafetyKeepAliveSessionC11_ClientInfo33_839DCC42CF888E4B6D35BD742461F8F1LLC16GenerativeModels01_jK8ProtocolAagHP14trackingConfigAG01_jki8TrackingX0VvsTW
 + _$s34SpeechRecognitionCommandAndControl28CACVCISafetyKeepAliveSessionC11_ClientInfo33_839DCC42CF888E4B6D35BD742461F8F1LLC16GenerativeModels01_jK8ProtocolAagHP17useCaseIdentifierSSvgTW
@@ -863,120 +789,12 @@ Symbols:
 + __OBJC_$_CLASS_METHODS_CACAudioRouteUtilities
 + __OBJC_CLASS_RO_$_CACAudioRouteUtilities
 + __OBJC_METACLASS_RO_$_CACAudioRouteUtilities
-+ ___30-[CACSpokenCommandManager run]_block_invoke.614
-+ ___35-[CACSpokenCommand searchSpotlight]_block_invoke.930
-+ ___35-[CACSpokenCommand searchSpotlight]_block_invoke.930.cold.1
-+ ___39-[CACDisplayManager carPlayDidConnect:]_block_invoke.843
-+ ___41-[CACSpokenCommandManager _fetchElements]_block_invoke.1054
-+ ___41-[CACSpokenCommandManager _fetchElements]_block_invoke_2.1056
-+ ___41-[CACSpokenCommandManager _fetchElements]_block_invoke_3.1057
-+ ___43-[CACSpeechSystem recognizedTranscription:]_block_invoke.481
 + ___43-[CACSpeechSystem recognizedTranscription:]_block_invoke_2
 + ___51-[CACSpokenCommandManager handleRecognizedCommand:]_block_invoke
-+ ___53-[CACSpokenCommandManager beginObservingApplications]_block_invoke.856
-+ ___55-[CACDisplayManager updatePresentationForActiveOverlay]_block_invoke.886
-+ ___56-[CACSpokenCommandManager _notifyUserOfSensitiveLogging]_block_invoke.802
-+ ___59+[CACApplicationUtilities launchApplicationWithIdentifier:]_block_invoke.161
-+ ___59+[CACApplicationUtilities launchApplicationWithIdentifier:]_block_invoke.161.cold.1
-+ ____NotificationLiveMicrophoneDidTurnOnAfterInterruption_block_invoke.2017
 + ___block_descriptor_48_e8_32s40s_e8_v12?0B8ls32l8s40l8
 + ___block_descriptor_72_e8_32r40r48r56r64r_e5_v8?0lr32l8r40l8r48l8r56l8r64l8
-+ ___block_literal_global.1041
-+ ___block_literal_global.1046
-+ ___block_literal_global.1068
-+ ___block_literal_global.1122
-+ ___block_literal_global.1238
-+ ___block_literal_global.1450
-+ ___block_literal_global.1987
-+ ___block_literal_global.1989
-+ ___block_literal_global.1991
-+ ___block_literal_global.1998
-+ ___block_literal_global.2016
-+ ___block_literal_global.2019
-+ ___block_literal_global.2024
-+ ___block_literal_global.414
-+ ___block_literal_global.416
-+ ___block_literal_global.418
-+ ___block_literal_global.424
-+ ___block_literal_global.432
-+ ___block_literal_global.434
-+ ___block_literal_global.438
-+ ___block_literal_global.440
-+ ___block_literal_global.442
-+ ___block_literal_global.444
-+ ___block_literal_global.446
-+ ___block_literal_global.448
-+ ___block_literal_global.450
-+ ___block_literal_global.452
-+ ___block_literal_global.454
-+ ___block_literal_global.456
-+ ___block_literal_global.458
-+ ___block_literal_global.468
-+ ___block_literal_global.470
-+ ___block_literal_global.475
-+ ___block_literal_global.481
-+ ___block_literal_global.483
-+ ___block_literal_global.485
-+ ___block_literal_global.487
-+ ___block_literal_global.488
-+ ___block_literal_global.490
-+ ___block_literal_global.492
-+ ___block_literal_global.495
-+ ___block_literal_global.497
-+ ___block_literal_global.498
-+ ___block_literal_global.499
-+ ___block_literal_global.501
-+ ___block_literal_global.503
-+ ___block_literal_global.514
-+ ___block_literal_global.523
-+ ___block_literal_global.525
-+ ___block_literal_global.550
-+ ___block_literal_global.611
-+ ___block_literal_global.613
-+ ___block_literal_global.616
-+ ___block_literal_global.679
-+ ___block_literal_global.681
-+ ___block_literal_global.786
-+ ___block_literal_global.789
-+ ___block_literal_global.801
-+ ___block_literal_global.803
-+ ___block_literal_global.809
-+ ___block_literal_global.818
-+ ___block_literal_global.831
-+ ___block_literal_global.836
-+ ___block_literal_global.837
-+ ___block_literal_global.841
-+ ___block_literal_global.849
-+ ___block_literal_global.869
-+ ___block_literal_global.872
-+ ___block_literal_global.874
-+ ___block_literal_global.883
-+ ___block_literal_global.901
-+ ___block_literal_global.902
-+ ___block_literal_global.904
-+ ___block_literal_global.906
-+ ___block_literal_global.911
-+ ___block_literal_global.914
-+ ___block_literal_global.950
-+ ___swift__destructor.27
-+ ___swift__destructor.36
-+ ___swift_closure_destructor.121
-+ ___swift_closure_destructor.125
-+ ___swift_closure_destructor.133
 + ___swift_closure_destructor.159Tm
-+ ___swift_closure_destructor.163
-+ ___swift_closure_destructor.175
-+ ___swift_closure_destructor.178
-+ ___swift_closure_destructor.2
-+ ___swift_closure_destructor.210
 + ___swift_closure_destructor.210Tm
-+ ___swift_closure_destructor.213
-+ ___swift_closure_destructor.216
-+ ___swift_closure_destructor.219
-+ ___swift_closure_destructor.222
-+ ___swift_closure_destructor.25
-+ ___swift_closure_destructor.29
-+ ___swift_closure_destructor.39
 + ___swift_destroy_boxed_opaque_existential_0Tm
 + ___swift_memcpy0_1
 + ___swift_memcpy8_8
@@ -988,63 +806,9 @@ Symbols:
 + _associated conformance 34SpeechRecognitionCommandAndControl15EntropySnapshot33_9480A7531EBC5C427E4D609C2C9BD5DCLLV10CodingKeysOs0Q3KeyAAs28CustomDebugStringConvertible
 + _associated conformance 34SpeechRecognitionCommandAndControl23CACVCIAnalyticsLanguageOSHAASQ
 + _associated conformance 34SpeechRecognitionCommandAndControl25CACVCIAnalyticsActionTypeOSHAASQ
-+ _block_copy_helper.127
-+ _block_copy_helper.135
-+ _block_copy_helper.138
-+ _block_copy_helper.15
-+ _block_copy_helper.21
-+ _block_copy_helper.29
-+ _block_copy_helper.5
-+ _block_descriptor.129
-+ _block_descriptor.137
-+ _block_descriptor.140
-+ _block_descriptor.17
-+ _block_descriptor.23
-+ _block_descriptor.31
-+ _block_descriptor.7
-+ _block_destroy_helper.128
-+ _block_destroy_helper.136
-+ _block_destroy_helper.139
-+ _block_destroy_helper.16
-+ _block_destroy_helper.22
-+ _block_destroy_helper.30
-+ _block_destroy_helper.6
-+ _displayRecognizedMessageUsingAttributedString:isIntelligenceCommand:.recSoundInit.677
 + _get_enum_tag_for_layout_string 34SpeechRecognitionCommandAndControl21UIGroundingFindResultO
-+ _get_witness_table 34SpeechRecognitionCommandAndControl18DebugIconIndicator33_8370FA84EC49A4B69B5523418F65F539LLV7SwiftUI4ViewHPyHC.208
-+ _get_witness_table 7SwiftUI6ZStackVyAA12TupleContentVyAA08ModifiedE0VyACyAEyAGyAA6CanvasVyAA9EmptyViewVGAA14_OpacityEffectVG_A2OQPGGAA30_SafeAreaRegionsIgnoringLayoutVG_AA6VStackVyAEyAGyAGyAA6HStackVyAEy34SpeechRecognitionCommandAndControl19AudioInputIndicator33_8370FA84EC49A4B69B5523418F65F539LLV_AY12VCIIndicatorA_LLVAY04RootZ0A_LLVSgAA6SpacerVAY09GroundingZ0A_LLVAY07RefreshZ0A_LLVQPGGAA08_PaddingP0VGA15_G_AGyAGyAY07CaptionI0A_LLVA15_GA15_GSgA7_QPGGQPGGAA0I0HPyHC.122
-+ _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAA15ModifiedContentVyAHyAHyAHyAHyAHyAHyAHyAA6HStackVyAA05TupleI0VyAHyAHyAHyAA4TextVAA30_EnvironmentKeyWritingModifierVySiSgGGAPyAN14TruncationModeOGGAA016_ForegroundStyleP0VyAA5ColorVGG_AA012_ConditionalI0VyA2NGSgQPGGAPyAA4FontVSgGGAA14_PaddingLayoutVGA14_GAA011_BackgroundP0VyALyAA06_ShapeC0VyAA7CapsuleVA_G_A23_QPGGGAA14_OpacityEffectVGAA017_AllowsHitTestingP0VGAA023AccessibilityAttachmentP0VGAA017_AppearanceActionP0VG_SiQo_HO.207
-+ _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAcAEAdeF_Qrqd___SbyyctSQRd__lFQOyAA15ModifiedContentVyAHyAHyAHyAA012_ConditionalI0VyAHyAHyAHyAHyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGANyAA19SymbolRenderingModeVSgGGAA25_ForegroundStyleModifier2VyAA5ColorVA0_GGAA12_FrameLayoutVGAHyAHyAxA01_tuO0VyA0_GGAA011_BackgroundO0VyAHyAA06_ShapeC0VyAA6CircleVA0_GA4_GGGGAA14_OpacityEffectVGAA017_AllowsHitTestingO0VGAA023AccessibilityAttachmentO0VGAA017_AppearanceActionO0VG_SiSgQo__SiQo_HO.228
-+ _objc_msgSend$_anyCommandPrefixMatchesTranscription:excludingCommand:isSpellingMode:
-+ _objc_msgSend$_anyCommandPrefixMatchesTranscriptions:excludingCommand:isSpellingMode:
-+ _objc_msgSend$activeScreenDefaultPortraitUpPointForGestures
-+ _objc_msgSend$activeScreenDisplayID
-+ _objc_msgSend$currentRoute
-+ _objc_msgSend$currentSystemAudioInputType
-+ _objc_msgSend$eventSenderServiceID
-+ _objc_msgSend$finalizeNoMatchTransactionWithUtteranceID:
-+ _objc_msgSend$finalizeRuleCommandTransactionWithUtteranceID:
-+ _objc_msgSend$firstMatchInString:options:range:
-+ _objc_msgSend$initWithBool:
-+ _objc_msgSend$initWithCommand:transcriptionResult:matched:score:numberOfAdlibs:numberOfCachePlaceholders:asrRank:parameters:matchedObjects:displayString:closeMatchType:
-+ _objc_msgSend$initWithDouble:
-+ _objc_msgSend$initWithElement:recognitionStrings:rectangle:displayID:
-+ _objc_msgSend$isIntelligenceCommand
-+ _objc_msgSend$isSelfGeneratedTouchSenderID:
-+ _objc_msgSend$localizedCaseInsensitiveContainsString:
-+ _objc_msgSend$markCaptionExecuted:
-+ _objc_msgSend$matchWithQueryString:commandIdentifier:queryParameter:utteranceID:
-+ _objc_msgSend$outputs
-+ _objc_msgSend$portName
-+ _objc_msgSend$portType
-+ _objc_msgSend$preferBluetooth
-+ _objc_msgSend$preferBluetoothEverEnabled
-+ _objc_msgSend$sendCoreAnalyticsForMicrophoneInUse
-+ _objc_msgSend$startTransactionWithUtteranceID:queryString:appBundleID:
-+ _objc_msgSend$targetApplicationIdentifier
-+ _objc_msgSend$updateCaption:text:nBest:isPartial:blocked:
-+ _objc_msgSend$vcAudioInputType
-+ _objc_msgSend$vcBluetoothHeadsetConnected
++ _get_witness_table 7SwiftUI6ZStackVyAA12TupleContentVyAA08ModifiedE0VyACyAEyAGyAA6CanvasVyAA9EmptyViewVGAA14_OpacityEffectVG_A2OQPGGAA30_SafeAreaRegionsIgnoringLayoutVG_AA6VStackVyAEyAGyAGyAA6HStackVyAEy34SpeechRecognitionCommandAndControl19AudioInputIndicator33_8370FA84EC49A4B69B5523418F65F539LLV_AY12VCIIndicatorA_LLVAY04RootZ0A_LLVSgAA6SpacerVAY09GroundingZ0A_LLVAY07RefreshZ0A_LLVQPGGAA08_PaddingP0VGA15_G_AGyAGyAY07CaptionI0A_LLVA15_GA15_GSgA7_QPGGQPGGAA0I0HPyHC
++ _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAA15ModifiedContentVyAHyAHyAHyAHyAHyAHyAHyAA6HStackVyAA05TupleI0VyAHyAHyAHyAA4TextVAA30_EnvironmentKeyWritingModifierVySiSgGGAPyAN14TruncationModeOGGAA016_ForegroundStyleP0VyAA5ColorVGG_AA012_ConditionalI0VyA2NGSgQPGGAPyAA4FontVSgGGAA14_PaddingLayoutVGA14_GAA011_BackgroundP0VyALyAA06_ShapeC0VyAA7CapsuleVA_G_A23_QPGGGAA14_OpacityEffectVGAA017_AllowsHitTestingP0VGAA023AccessibilityAttachmentP0VGAA017_AppearanceActionP0VG_SiQo_HO
 + _objc_retain_x10
 + _swift_cvw_enumFn_getEnumTag
 + _swift_stdlib_random
@@ -1113,7 +877,6 @@ Symbols:
 + _type_layout_string 34SpeechRecognitionCommandAndControl21UIGroundingFindResultO
 - -[CACSpeechSystem _anyCommandPrefixMatchesTranscription:excludingCommand:minimumScore:isSpellingMode:]
 - -[CACSpeechSystem _anyCommandPrefixMatchesTranscriptions:excludingCommand:minimumScore:isSpellingMode:]
-- -[CACSpeechSystem recognizedTranscription:].cold.1
 - -[CACSpokenCommand _commandIsIntelligenceCommand]
 - GCC_except_table161
 - GCC_except_table163
@@ -1208,126 +971,9 @@ Symbols:
 - _$s7SwiftUI8BindableVy34SpeechRecognitionCommandAndControl20CACDebugOverlayModelCGMa
 - _$sSiSgMaTm
 - _$sSo11AXUIElementCMaTm
-- ___30-[CACSpokenCommandManager run]_block_invoke.593
-- ___35-[CACSpokenCommand searchSpotlight]_block_invoke.908
-- ___35-[CACSpokenCommand searchSpotlight]_block_invoke.908.cold.1
-- ___39-[CACDisplayManager carPlayDidConnect:]_block_invoke.822
-- ___41-[CACSpokenCommandManager _fetchElements]_block_invoke.1031
-- ___41-[CACSpokenCommandManager _fetchElements]_block_invoke_2.1033
-- ___41-[CACSpokenCommandManager _fetchElements]_block_invoke_3.1034
-- ___53-[CACSpokenCommandManager beginObservingApplications]_block_invoke.835
-- ___55-[CACDisplayManager updatePresentationForActiveOverlay]_block_invoke.865
-- ___56-[CACSpokenCommandManager _notifyUserOfSensitiveLogging]_block_invoke.781
-- ___59+[CACApplicationUtilities launchApplicationWithIdentifier:]_block_invoke.146
-- ___59+[CACApplicationUtilities launchApplicationWithIdentifier:]_block_invoke.146.cold.1
-- ____NotificationLiveMicrophoneDidTurnOnAfterInterruption_block_invoke.1994
 - ___block_descriptor_80_e8_32r40r48r56r64r72r_e5_v8?0lr32l8r40l8r48l8r56l8r64l8r72l8
-- ___block_literal_global.1018
-- ___block_literal_global.1023
-- ___block_literal_global.1045
-- ___block_literal_global.1099
-- ___block_literal_global.1215
-- ___block_literal_global.1427
-- ___block_literal_global.1964
-- ___block_literal_global.1966
-- ___block_literal_global.1968
-- ___block_literal_global.1970
-- ___block_literal_global.1973
-- ___block_literal_global.1975
-- ___block_literal_global.2001
-- ___block_literal_global.393
-- ___block_literal_global.395
-- ___block_literal_global.397
-- ___block_literal_global.398
-- ___block_literal_global.400
-- ___block_literal_global.402
-- ___block_literal_global.403
-- ___block_literal_global.407
-- ___block_literal_global.408
-- ___block_literal_global.409
-- ___block_literal_global.411
-- ___block_literal_global.412
-- ___block_literal_global.413
-- ___block_literal_global.415
-- ___block_literal_global.417
-- ___block_literal_global.420
-- ___block_literal_global.422
-- ___block_literal_global.425
-- ___block_literal_global.426
-- ___block_literal_global.427
-- ___block_literal_global.431
-- ___block_literal_global.435
-- ___block_literal_global.437
-- ___block_literal_global.439
-- ___block_literal_global.445
-- ___block_literal_global.451
-- ___block_literal_global.453
-- ___block_literal_global.455
-- ___block_literal_global.467
-- ___block_literal_global.469
-- ___block_literal_global.471
-- ___block_literal_global.479
-- ___block_literal_global.502
-- ___block_literal_global.504
-- ___block_literal_global.529
-- ___block_literal_global.590
-- ___block_literal_global.592
-- ___block_literal_global.595
-- ___block_literal_global.658
-- ___block_literal_global.660
-- ___block_literal_global.765
-- ___block_literal_global.768
-- ___block_literal_global.773
-- ___block_literal_global.780
-- ___block_literal_global.782
-- ___block_literal_global.787
-- ___block_literal_global.797
-- ___block_literal_global.805
-- ___block_literal_global.810
-- ___block_literal_global.820
-- ___block_literal_global.846
-- ___block_literal_global.851
-- ___block_literal_global.853
-- ___block_literal_global.861
-- ___block_literal_global.880
-- ___block_literal_global.882
-- ___block_literal_global.884
-- ___block_literal_global.888
-- ___block_literal_global.892
-- ___block_literal_global.907
-- ___swift__destructor.30
-- ___swift_closure_destructor.113
-- ___swift_closure_destructor.116
-- ___swift_closure_destructor.122
-- ___swift_closure_destructor.124
 - ___swift_closure_destructor.147Tm
-- ___swift_closure_destructor.153
-- ___swift_closure_destructor.36
-- _block_copy_helper.118
-- _block_copy_helper.126
-- _block_copy_helper.129
-- _block_copy_helper.26
-- _block_descriptor.120
-- _block_descriptor.128
-- _block_descriptor.131
-- _block_descriptor.28
-- _block_destroy_helper.119
-- _block_destroy_helper.127
-- _block_destroy_helper.130
-- _block_destroy_helper.27
-- _displayRecognizedMessageUsingAttributedString:isIntelligenceCommand:.recSoundInit.656
-- _get_witness_table 34SpeechRecognitionCommandAndControl18DebugIconIndicator33_8370FA84EC49A4B69B5523418F65F539LLV7SwiftUI4ViewHPyHC.145
-- _get_witness_table 7SwiftUI6ZStackVyAA12TupleContentVyAA08ModifiedE0VyACyAEyAGyAA6CanvasVyAA9EmptyViewVGAA14_OpacityEffectVG_A2OQPGGAA30_SafeAreaRegionsIgnoringLayoutVG_AA6VStackVyAEyAGyAGyAA6HStackVyAEy34SpeechRecognitionCommandAndControl19AudioInputIndicator33_8370FA84EC49A4B69B5523418F65F539LLV_AY12VCIIndicatorA_LLVAY04RootZ0A_LLVSgAA6SpacerVAY09GroundingZ0A_LLVAY07RefreshZ0A_LLVQPGGAA08_PaddingP0VGA15_G_A7_QPGGQPGGAA0I0HPyHC.98
-- _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAcAEAdeF_Qrqd___SbyyctSQRd__lFQOyAA15ModifiedContentVyAHyAHyAHyAA012_ConditionalI0VyAHyAHyAHyAHyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGANyAA19SymbolRenderingModeVSgGGAA25_ForegroundStyleModifier2VyAA5ColorVA0_GGAA12_FrameLayoutVGAHyAHyAxA01_tuO0VyA0_GGAA011_BackgroundO0VyAHyAA06_ShapeC0VyAA6CircleVA0_GA4_GGGGAA14_OpacityEffectVGAA017_AllowsHitTestingO0VGAA023AccessibilityAttachmentO0VGAA017_AppearanceActionO0VG_SiSgQo__SiQo_HO.170
-- _objc_msgSend$_anyCommandPrefixMatchesTranscription:excludingCommand:minimumScore:isSpellingMode:
-- _objc_msgSend$_anyCommandPrefixMatchesTranscriptions:excludingCommand:minimumScore:isSpellingMode:
-- _objc_msgSend$_commandIsIntelligenceCommand
-- _objc_msgSend$horizontalSizeClass
-- _objc_msgSend$initWithCommand:transcriptionResult:matched:score:asrRank:parameters:matchedObjects:displayString:closeMatchType:
-- _objc_msgSend$mainScreenDisplayID
-- _objc_msgSend$matchWithQueryString:commandIdentifier:queryParameter:
-- _objc_msgSend$numberOfMatchesInString:options:range:
-- _objc_msgSend$verticalSizeClass
+- _get_witness_table 7SwiftUI6ZStackVyAA12TupleContentVyAA08ModifiedE0VyACyAEyAGyAA6CanvasVyAA9EmptyViewVGAA14_OpacityEffectVG_A2OQPGGAA30_SafeAreaRegionsIgnoringLayoutVG_AA6VStackVyAEyAGyAGyAA6HStackVyAEy34SpeechRecognitionCommandAndControl19AudioInputIndicator33_8370FA84EC49A4B69B5523418F65F539LLV_AY12VCIIndicatorA_LLVAY04RootZ0A_LLVSgAA6SpacerVAY09GroundingZ0A_LLVAY07RefreshZ0A_LLVQPGGAA08_PaddingP0VGA15_G_A7_QPGGQPGGAA0I0HPyHC
 - _symbolic _____y___________y_____y_____yACyADy_____y_____G_____G_A2JQPGG_____G______yACyADyADy_____yACy________________Sg_______________QPGG_____GAZG_AUQPGGQPGG 7SwiftUI13_VariadicViewO4TreeV AA13_ZStackLayoutV AA12TupleContentV AA08ModifiedI0V AA0F0V AA6CanvasV AA05EmptyD0V AA14_OpacityEffectV AA024_SafeAreaRegionsIgnoringG0V AA6VStackV AA6HStackV 34SpeechRecognitionCommandAndControl19AudioInputIndicator33_8370FA84EC49A4B69B5523418F65F539LLV AZ12VCIIndicatorA0_LLV AZ13RootIndicatorA0_LLV AA6SpacerV AZ18GroundingIndicatorA0_LLV AZ16RefreshIndicatorA0_LLV AA08_PaddingG0V
 - _symbolic _____y_____y_____yAAyAByACy_____y_____G_____G_A2HQPGG_____G______yAByACyACy_____yABy________________Sg_______________QPGG_____GAXG_ASQPGGQPGG 7SwiftUI6ZStackV AA12TupleContentV AA08ModifiedE0V AA6CanvasV AA9EmptyViewV AA14_OpacityEffectV AA30_SafeAreaRegionsIgnoringLayoutV AA6VStackV AA6HStackV 34SpeechRecognitionCommandAndControl19AudioInputIndicator33_8370FA84EC49A4B69B5523418F65F539LLV AT12VCIIndicatorAVLLV AT04RootZ0AVLLV AA6SpacerV AT09GroundingZ0AVLLV AT07RefreshZ0AVLLV AA08_PaddingP0V
 - _symbolic _____y_____y_____yAAy_____y_____G_____G_A2HQPGG_____G______yACyAAyAAy_____yACy________________Sg_______________QPGG_____GAXG_ASQPGGt 7SwiftUI15ModifiedContentV AA6ZStackV AA05TupleD0V AA6CanvasV AA9EmptyViewV AA14_OpacityEffectV AA30_SafeAreaRegionsIgnoringLayoutV AA6VStackV AA6HStackV 34SpeechRecognitionCommandAndControl19AudioInputIndicator33_8370FA84EC49A4B69B5523418F65F539LLV AT12VCIIndicatorAVLLV AT04RootZ0AVLLV AA6SpacerV AT09GroundingZ0AVLLV AT07RefreshZ0AVLLV AA08_PaddingP0V
@@ -1390,5 +1036,4 @@ CStrings:
 - "handleRecognizedCommand recognizedParameters: %@"
 - "numbers"
 - "synchronousRecognitionUsingCommandIdentifier: identifier (%@), parameters (%@)"
-
 ```

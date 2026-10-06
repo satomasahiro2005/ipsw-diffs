@@ -2,61 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/EnergyKitInternal.framework/EnergyKitInternal`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x88de0` | `0x89684` | **`+0x8a4`** |
+| `__TEXT.__eh_frame` | `0x73a8` | `0x7440` | **`+0x98`** |
+| `__TEXT.__oslogstring` | `0x14ab` | `0x14db` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x21d0` | `0x21e8` | **`+0x18`** |
+| `__TEXT.__swift_as_cont` | `0x7a4` | `0x7b0` | **`+0xc`** |
+| `__DATA_DIRTY.__data` | `0x7d0` | `0x7d8` | **`+0x8`** |
+| `__TEXT.__constg_swiftt` | `0x824` | `0x82c` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x324` | `0x328` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x318` | `0x31c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -490.1.4.0.0
--  __TEXT.__text: 0x7f23c
 +504.0.0.0.0
-+  __TEXT.__text: 0x7fa34
-   __TEXT.__objc_methlist: 0x4f0
-   __TEXT.__const: 0x2470
-   __TEXT.__swift5_typeref: 0xac8
-   __TEXT.__cstring: 0x17e1
-   __TEXT.__swift5_capture: 0x1374
--  __TEXT.__constg_swiftt: 0x824
-+  __TEXT.__constg_swiftt: 0x82c
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_reflstr: 0x898
-   __TEXT.__swift5_fieldmd: 0x720
--  __TEXT.__oslogstring: 0x14ab
-+  __TEXT.__oslogstring: 0x14db
-   __TEXT.__swift5_types: 0x64
--  __TEXT.__swift_as_entry: 0x324
--  __TEXT.__swift_as_ret: 0x318
--  __TEXT.__swift_as_cont: 0x7a4
-+  __TEXT.__swift_as_entry: 0x328
-+  __TEXT.__swift_as_ret: 0x31c
-+  __TEXT.__swift_as_cont: 0x7b0
-   __TEXT.__swift5_assocty: 0xf0
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift5_proto: 0xac
--  __TEXT.__unwind_info: 0x2470
--  __TEXT.__eh_frame: 0x73b8
-+  __TEXT.__unwind_info: 0x28c0
-+  __TEXT.__eh_frame: 0x7450
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __AUTH.__data: 0x548
-   __DATA.__data: 0x4b8
-   __DATA.__common: 0x98
--  __DATA_DIRTY.__data: 0x7d0
-+  __DATA_DIRTY.__data: 0x7d8
-   __DATA_DIRTY.__bss: 0x500
-   __DATA_DIRTY.__common: 0x30
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2315
--  Symbols:   4371
+-  Symbols:   4273
 -  CStrings:  244
 +  Functions: 2321
-+  Symbols:   4385
++  Symbols:   4287
 +  CStrings:  245
- 
 Symbols:
 + _$s17EnergyKitInternal0A4SiteC13refreshRecordyyYaF
 + _$s17EnergyKitInternal0A4SiteC13refreshRecordyyYaFTQ1_

@@ -2,148 +2,74 @@
 
 > `/System/Library/PrivateFrameworks/SiriSetup.framework/SiriSetup`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2ee720` | `0x319848` | **`+0x2b128`** |
+| `__TEXT.__swift5_typeref` | `0x295ba` | `0x2c7cc` | **`+0x3212`** |
+| `__DATA_DIRTY.__data` | `0x28` | `0x2ca0` | **`+0x2c78`** |
+| `__DATA_DIRTY.__objc_data` | `0x128` | `0x2698` | **`+0x2570`** |
+| `__AUTH.__objc_data` | `0x63e8` | `0x41d0` | **`-0x2218`** |
+| `__TEXT.__const` | `0x1ba28` | `0x1d518` | **`+0x1af0`** |
+| `__DATA_DIRTY.__bss` | `—` | `0x1930` | **`+0x1930`** |
+| `__AUTH_CONST.__const` | `0x124b8` | `0x135e8` | **`+0x1130`** |
+| `__AUTH.__data` | `0x6688` | `0x5718` | **`-0xf70`** |
+| `__DATA.__data` | `0x8c80` | `0x7ec0` | **`-0xdc0`** |
+| `__TEXT.__eh_frame` | `0x8e7c` | `0x98f4` | **`+0xa78`** |
+| `__TEXT.__unwind_info` | `0xa820` | `0xb090` | **`+0x870`** |
+| `__TEXT.__constg_swiftt` | `0xb0b0` | `0xb84c` | **`+0x79c`** |
+| `__TEXT.__cstring` | `0xb6c5` | `0xbd85` | **`+0x6c0`** |
+| `__TEXT.__swift5_reflstr` | `0x767b` | `0x7d20` | **`+0x6a5`** |
+| `__TEXT.__swift5_fieldmd` | `0x6e48` | `0x7494` | **`+0x64c`** |
+| `__AUTH_CONST.__objc_const` | `0x93e8` | `0x99a8` | **`+0x5c0`** |
+| `__DATA.__bss` | `0x11b48` | `0x115a0` | **`-0x5a8`** |
+| `__TEXT.__oslogstring` | `0x2ba2` | `0x30f2` | **`+0x550`** |
+| `__TEXT.__swift5_capture` | `0x3444` | `0x3770` | **`+0x32c`** |
+| `__DATA_CONST.__const` | `0x21b8` | `0x2390` | **`+0x1d8`** |
+| `__TEXT.__swift5_assocty` | `0x17f0` | `0x1980` | **`+0x190`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2218` | `0x2390` | **`+0x178`** |
+| `__DATA_DIRTY.__common` | `—` | `0x158` | **`+0x158`** |
+| `__DATA.__common` | `0x560` | `0x440` | **`-0x120`** |
+| `__AUTH_CONST.__auth_got` | `0x2e40` | `0x2f38` | **`+0xf8`** |
+| `__TEXT.__objc_methlist` | `0x2128` | `0x2218` | **`+0xf0`** |
+| `__DATA_CONST.__got` | `0x1888` | `0x1958` | **`+0xd0`** |
+| `__TEXT.__swift5_proto` | `0x984` | `0xa2c` | **`+0xa8`** |
+| `__TEXT.__swift5_types` | `0x78c` | `0x810` | **`+0x84`** |
+| `__TEXT.__swift5_builtin` | `0x258` | `0x2a8` | **`+0x50`** |
+| `__TEXT.__swift_as_cont` | `0x518` | `0x564` | **`+0x4c`** |
+| `__TEXT.__swift_as_entry` | `0x284` | `0x2c4` | **`+0x40`** |
+| `__TEXT.__swift_as_ret` | `0x294` | `0x2cc` | **`+0x38`** |
+| `__DATA_CONST.__objc_classlist` | `0x438` | `0x460` | **`+0x28`** |
+| `__TEXT.__swift5_mpenum` | `0x28` | `0x3c` | **`+0x14`** |
+| `__DATA_CONST.__objc_protolist` | `0x138` | `0x148` | **`+0x10`** |
+| `__DATA_CONST.__objc_catlist` | `0x8` | `0x10` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x98` | `0xa0` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0xb0` | `0xb8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2ee720
--  __TEXT.__objc_methlist: 0x2128
--  __TEXT.__const: 0x1ba28
--  __TEXT.__cstring: 0xb6c5
-+  __TEXT.__text: 0x319848
-+  __TEXT.__objc_methlist: 0x2218
-+  __TEXT.__const: 0x1d518
-+  __TEXT.__cstring: 0xbd85
-   __TEXT.__gcc_except_tab: 0x30
-   __TEXT.__dlopen_cstrs: 0xaf
--  __TEXT.__oslogstring: 0x2ba2
--  __TEXT.__swift5_typeref: 0x295ba
--  __TEXT.__swift5_capture: 0x3444
--  __TEXT.__constg_swiftt: 0xb0b0
--  __TEXT.__swift5_reflstr: 0x767b
--  __TEXT.__swift5_fieldmd: 0x6e48
--  __TEXT.__swift5_builtin: 0x258
--  __TEXT.__swift5_assocty: 0x17f0
--  __TEXT.__swift5_proto: 0x984
--  __TEXT.__swift5_types: 0x78c
--  __TEXT.__swift5_protos: 0xb0
--  __TEXT.__swift_as_entry: 0x284
--  __TEXT.__swift_as_ret: 0x294
--  __TEXT.__swift_as_cont: 0x518
--  __TEXT.__swift5_mpenum: 0x28
--  __TEXT.__unwind_info: 0xa820
--  __TEXT.__eh_frame: 0x8e7c
-+  __TEXT.__oslogstring: 0x30f2
-+  __TEXT.__swift5_typeref: 0x2c7cc
-+  __TEXT.__swift5_capture: 0x3770
-+  __TEXT.__constg_swiftt: 0xb84c
-+  __TEXT.__swift5_reflstr: 0x7d20
-+  __TEXT.__swift5_fieldmd: 0x7494
-+  __TEXT.__swift5_builtin: 0x2a8
-+  __TEXT.__swift5_assocty: 0x1980
-+  __TEXT.__swift5_proto: 0xa2c
-+  __TEXT.__swift5_types: 0x810
-+  __TEXT.__swift5_protos: 0xb8
-+  __TEXT.__swift_as_entry: 0x2c4
-+  __TEXT.__swift_as_ret: 0x2cc
-+  __TEXT.__swift_as_cont: 0x564
-+  __TEXT.__swift5_mpenum: 0x3c
-+  __TEXT.__unwind_info: 0xb090
-+  __TEXT.__eh_frame: 0x98f4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x21b8
--  __DATA_CONST.__objc_classlist: 0x438
--  __DATA_CONST.__objc_catlist: 0x8
--  __DATA_CONST.__objc_protolist: 0x138
-+  __DATA_CONST.__const: 0x2390
-+  __DATA_CONST.__objc_classlist: 0x460
-+  __DATA_CONST.__objc_catlist: 0x10
-+  __DATA_CONST.__objc_protolist: 0x148
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2218
--  __DATA_CONST.__objc_protorefs: 0x98
-+  __DATA_CONST.__objc_selrefs: 0x2390
-+  __DATA_CONST.__objc_protorefs: 0xa0
-   __DATA_CONST.__objc_superrefs: 0x50
--  __DATA_CONST.__got: 0x1888
--  __AUTH_CONST.__const: 0x124b8
-+  __DATA_CONST.__got: 0x1958
-+  __AUTH_CONST.__const: 0x135e8
-   __AUTH_CONST.__cfstring: 0x1b60
--  __AUTH_CONST.__objc_const: 0x93e8
-+  __AUTH_CONST.__objc_const: 0x99a8
-   __AUTH_CONST.__objc_intobj: 0x18
--  __AUTH_CONST.__auth_got: 0x2e40
--  __AUTH.__objc_data: 0x63e8
--  __AUTH.__data: 0x6688
-+  __AUTH_CONST.__auth_got: 0x2f38
-+  __AUTH.__objc_data: 0x41d0
-+  __AUTH.__data: 0x5718
-   __DATA.__objc_ivar: 0x70
--  __DATA.__data: 0x8c80
-+  __DATA.__data: 0x7ec0
-   __DATA.__objc_stublist: 0x8
--  __DATA.__bss: 0x11b48
--  __DATA.__common: 0x560
--  __DATA_DIRTY.__objc_data: 0x128
--  __DATA_DIRTY.__data: 0x28
-+  __DATA.__bss: 0x115a0
-+  __DATA.__common: 0x440
-+  __DATA_DIRTY.__objc_data: 0x2698
-+  __DATA_DIRTY.__data: 0x2ca0
-+  __DATA_DIRTY.__bss: 0x1930
-+  __DATA_DIRTY.__common: 0x158
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AVKit.framework/AVKit
+-3600.62.13.1.1
++3600.62.27.1.1
 
-   - /System/Library/PrivateFrameworks/GenerativePartnerService.framework/GenerativePartnerService
-   - /System/Library/PrivateFrameworks/GenerativePartnerServiceUI.framework/GenerativePartnerServiceUI
-   - /System/Library/PrivateFrameworks/IconServices.framework/IconServices
 -  - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
-   - /System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog
+
 +  - /System/Library/PrivateFrameworks/NanoResourceGrabber.framework/NanoResourceGrabber
-   - /System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit
-   - /System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer
-   - /System/Library/PrivateFrameworks/PrototypeTools.framework/PrototypeTools
 
-   - /System/Library/PrivateFrameworks/SiriAnalytics.framework/SiriAnalytics
-   - /System/Library/PrivateFrameworks/SiriAssetUtilities.framework/SiriAssetUtilities
-   - /System/Library/PrivateFrameworks/SiriCrossDeviceArbitration.framework/SiriCrossDeviceArbitration
 +  - /System/Library/PrivateFrameworks/SiriDeviceSelection.framework/SiriDeviceSelection
-   - /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation
-   - /System/Library/PrivateFrameworks/SiriTTSService.framework/SiriTTSService
-   - /System/Library/PrivateFrameworks/SiriUICore.framework/SiriUICore
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /System/Library/PrivateFrameworks/SpeakerRecognition.framework/SpeakerRecognition
-+  - /System/Library/PrivateFrameworks/TipsUI.framework/TipsUI
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-   - /System/Library/PrivateFrameworks/UnifiedAssetFramework.framework/UnifiedAssetFramework
-   - /System/Library/PrivateFrameworks/UserManagement.framework/UserManagement
-   - /System/Library/PrivateFrameworks/UserNotificationsKit.framework/UserNotificationsKit
-   - /System/Library/PrivateFrameworks/VoiceTrigger.framework/VoiceTrigger
-+  - /System/Library/PrivateFrameworks/_IconServices_SwiftUI.framework/_IconServices_SwiftUI
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/PrivateFrameworks/TipsUI.framework/TipsUI
+
++  - /System/Library/PrivateFrameworks/_IconServices_SwiftUI.framework/_IconServices_SwiftUI
+
 -  Functions: 18073
--  Symbols:   53769
--  CStrings:  1730
+-  Symbols:   39276
+-  CStrings:  1506
 +  Functions: 18923
-+  Symbols:   56618
-+  CStrings:  1788
- 
-Sections:
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __DATA.__objc_stublist : content changed
++  Symbols:   41337
++  CStrings:  1565
 Symbols:
 + _$s10Foundation16AttributedStringVSgWOh
 + _$s10Foundation16AttributedStringVSgWOhTm
@@ -2808,50 +2734,6 @@ Symbols:
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE18toolbarColorScheme_3forQrAA0eF0OSg_AA16ToolbarPlacementVdtFQOyAcAE29navigationBarTitleDisplayModeyQrAA010NavigationK4ItemV0lmN0OFQOyAcAE0jL0yQrAA18LocalizedStringKeyVFQOyAA15ModifiedContentVyATyATyAcAE0D07contentQrqd__yXE_tAA0hU0Rd__lFQOyAA6ZStackVyAA05TupleU0VyATyAA0E0VAA30_SafeAreaRegionsIgnoringLayoutVG_AA6VStackVyA_yA6_yA_yATy9SiriSetup07OrbGlowC0VAA18_AnimationModifierVySbGG_A6_yA_yATyAA6HStackVyA_yAA4TextV_AA6SpacerVATyATyAA4MenuVyAcAE11glassEffect_2inQrAA5GlassV_qd__tAA5ShapeRd__lFQOyATyATyATyA15_yA_yA17__ATyATyATyAA5ImageVAA012_EnvironmentS15WritingModifierVyAA4FontVSgGGAA24_ForegroundStyleModifierVyA1_GGA30_yAA015SymbolRenderingN0VSgGGQPGGA38_GAA14_PaddingLayoutVGA49_G_AA7CapsuleVQo_AA7ForEachVySayA7_19VoiceSelectionStoreC11DialectInfoVGSSAA6ButtonVyA17_GGGA38_GAA012_EnvironmentS17TransformModifierVySbGGQPGGAA12_FrameLayoutVG_ATyATyA15_yA56_ySaySi6offset_So11AFVoiceInfoC7elementtGSSSgA7_05VoiceE6ButtonVGGA75_GA11_yA82_GGQPGGATyATyA6_yA_yA6_yA_yA15_yA_yA17__A19_A7_28DisabledSliderTrackInfoLabelVSgQPGG_AA012_ConditionalU0VyA7_27EnabledSegmentedSliderTrackVA7_19DisabledSliderTrackVGQPGG_A105_QPGGA75_GA49_GATyA6_yA_yA17__ATyA17_AA16_FixedSizeLayoutVGQPGGA75_GQPGG_A19_QPGGQPGG_AA0hP0VyytATyA63_yAA18DefaultButtonLabelVGA70_GGQo_A7_21AssetDownloadModifierVGAA25_AppearanceActionModifierVGA134_G_Qo__Qo__Qo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA15NavigationStackVyAA0I4PathVAcAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAcAE29navigationBarTitleDisplayModeyQrAA0iQ4ItemV0rsT0OFQOyAcAE0pR0yQrAA4TextVFQOyAA5GroupVyAA012_ConditionalO0VyAA08ProgressC0VyAA05EmptyC0VA4_GAA4ListVys5NeverOAA7ForEachVySay9SiriSetup023RestrictAccessAppPickerC0V7Section33_67102BE38CDDE06F33628242513EBB2FLLVGSSAAA15_VyAXA11_ySayA12_21RestrictAccessAppInfoVGSSAA08ModifiedO0VyA24_yAcAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAcAE12onTapGesture5count7performQrSi_yyctFQOyA24_yAA6HStackVyAA05TupleO0VyA24_yA24_yA24_yAA5ImageVAA24_ForegroundStyleModifierVyAA5ColorVGGAA30_EnvironmentKeyWritingModifierVyA37_5ScaleOGGAA31AccessibilityAttachmentModifierVG_A24_yA0_yA12_12WatchAppIconVA24_yA24_yA37_AA12_FrameLayoutVGAA11_ClipEffectVyAA16RoundedRectangleVGGGA51_GAxA6SpacerVQPGGAA01_O13ShapeModifierVyAA9RectangleVGG_Qo__Qo_A51_GAA21_TraitWritingModifierVyAA25ListRowBackgroundTraitKeyVGGGA4_GGGGG_Qo__Qo__A35_yAA0nU0VyytAA6ButtonVyA37_GG_AaPPAAE26sharedBackgroundVisibilityyQrAA10VisibilityOFQOyA94_yytA96_yA24_yA43_A45_yAA4FontVSgGGGG_Qo_QPGQo_G_Qo_HO
 + _keypath_get_selector_availabilityStateOverride
-+ _objc_msgSend$addGestureRecognizer:
-+ _objc_msgSend$arrayForKey:
-+ _objc_msgSend$availabilityStateOverride
-+ _objc_msgSend$clearCurrentCoordinator
-+ _objc_msgSend$colorWithAlphaComponent:
-+ _objc_msgSend$contentVersion
-+ _objc_msgSend$donateOutgoingTrigger:withCompletion:
-+ _objc_msgSend$donateSiriSession:forTimestamp:withCompletion:
-+ _objc_msgSend$expressivityPreset
-+ _objc_msgSend$footprint
-+ _objc_msgSend$fromPreferences
-+ _objc_msgSend$initWithData:
-+ _objc_msgSend$initWithIsAvailable:siriLocale:desiredOrchestrationMode:unavailabilityReasons:allCapabilities:
-+ _objc_msgSend$initWithLanguageCode:gender:isCustom:name:footprint:contentVersion:masteredVersion:pacePreset:expressivityPreset:
-+ _objc_msgSend$initWithTarget:action:
-+ _objc_msgSend$isCustom
-+ _objc_msgSend$isLocal
-+ _objc_msgSend$isTracking
-+ _objc_msgSend$locationInView:
-+ _objc_msgSend$masteredVersion
-+ _objc_msgSend$maxRequiredStorageInBytesForAssets:
-+ _objc_msgSend$maximumValue
-+ _objc_msgSend$minimumValue
-+ _objc_msgSend$pacePreset
-+ _objc_msgSend$postNotificationName:object:
-+ _objc_msgSend$reasonAssetsAreMissing:
-+ _objc_msgSend$restrictionReasons
-+ _objc_msgSend$selectDeviceForRole:withSignals:completion:
-+ _objc_msgSend$selectionChanged
-+ _objc_msgSend$setContentHuggingPriority:forAxis:
-+ _objc_msgSend$setContinuous:
-+ _objc_msgSend$setHidesBackButton:
-+ _objc_msgSend$setLeftBarButtonItem:
-+ _objc_msgSend$setMaximumTrackTintColor:
-+ _objc_msgSend$setMaximumValue:
-+ _objc_msgSend$setMinimumTrackTintColor:
-+ _objc_msgSend$setMinimumValue:
-+ _objc_msgSend$setValue:
-+ _objc_msgSend$startAdvertisingFromOutgoingTrigger
-+ _objc_msgSend$startAdvertisingFromVoiceTrigger
-+ _objc_msgSend$status
-+ _objc_msgSend$stringForKey:
-+ _objc_msgSend$trackRectForBounds:
-+ _objc_msgSend$unavailabilityReasons
 + _objc_release_x2
 + _swift_release_x11
 + _symbolic $s9SiriSetup0A12AvailabilityO28AssetUnavailabilityReportingP
@@ -4065,11 +3947,6 @@ Symbols:
 - _get_witness_table qd0__7SwiftUI4ViewHD5_AaBPAAE5alert_11isPresented7actions7messageQrqd___AA7BindingVySbGqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAcAE5sheet4item9onDismiss7contentQrAIyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lFQOyAcAEAklmNQrAP_AQqd_0_qd__ctsARRd__AaBRd_0_r0_lFQOyAcAEAkemNQrAJ_AQqd__yctAaBRd__lFQOyAcAE18confirmationDialog_AE15titleVisibilityAfGQrAA4TextV_AjA0S0Oqd__yXEqd_0_yXEtAaBRd__AaBRd_0_r0_lFQOyAcAEAdeNQrAJ_AA5AlertVyXEtFQOyAC8SettingsE41settingsFeatureDescriptionNavigationTitleyQrAVFQOyAcAE21navigationDestinationAE11destinationQrAJ_qd__yXEtAaBRd__lFQOyAcAEA1_3forA2_Qrqd__m_qd_0_qd__ctSHRd__AaBRd_0_r0_lFQOyACA_E0W14ListAppearanceQryFQOyAA15ModifiedContentVyAA19_ConditionalContentVyACA_E04emitZ34EventOnAppearForApplicationSetting37associatedApplicationBundleIdentifier0R009localizedZ10Components8deepLinkQrSS_10Foundation23LocalizedStringResourceVSayA16_GA14_3URLVtFQOyAcAEAkemNQrAJ_AQqd__yctAaBRd__lFQOyAA4ListVys5NeverOAA12TupleContentVyAA7SectionVyAA05EmptyC0VA_0vxyC0VA8_yA6_yAvA30_EnvironmentKeyWritingModifierVyAA13OpenURLActionVGG9SiriSetup019AssetDownloadFooterC0VGSgGSg_A8_yA25_yA8_yA8_yA27_yA29_A6_yAA6ButtonVyA6_yAA6HStackVyA25_yAV_AA6SpacerVQPGGAA21_ContentShapeModifierVyAA9RectangleVGGGAA24_ForegroundStyleModifierVyAA5ColorVGGAVGA27_yA29_AA14LabeledContentVyA2VGAVGGA8_yA29_A29_GGSg_A66_SgQPGA27_yA29_A65_A29_GGA27_yA29_A25_yAA0Z4LinkVyA69_A23_GSg_A81_A81_A80_yAVA23_GQPGA8_yA37_AVGGA27_yA29_AcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE0L6Change2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA6ToggleVyAVG_SbQo__Qo_AVGSgA25_yA27_yA29_AcAEAkemNQrAJ_AQqd__yctAaBRd__lFQOyAcAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyA46_yA69_G_AA0Z15LinkButtonStyleVyA23_GQo__A38_022SiriSetupContactPickerC0VQo_A29_G_A27_yAVA25_yA81__A81_QPGA29_GSgQPGSgA25_yA25_yA6_yA27_y024GenerativePartnerServiceB0033ExternalAISettingsEntryPointLabelC0V06headerC0QryFZQOy_Qo_A80_yA121_A23_GA121_06footerC0QryFZQOy_Qo_GAA32_EnvironmentKeyTransformModifierVySbGGSg_A27_yA29_A83_A29_GAcAEAkemNQrAJ_AQqd__yctAaBRd__lFQOyA27_yA29_A25_yA83__A83_QPGA37_G_AA0Z5StackVyAA0Z4PathVAcAE7toolbarANQrqd__yXE_tAA14ToolbarContentRd__lFQOyA38_07PrivacyC0V_AA11ToolbarItemVyytA46_yAA18DefaultButtonLabelVGGQo_GQo_SgQPGSg_A27_yA29_A83_AVGSgQPGA27_yA29_A46_yAVGA29_GA27_yA29_A59_A29_GSgQPGG_A151_Qo__Qo_A165_GAA25_AppearanceActionModifierVG_Qo__A38_04SiriV11DestinationOA8_yA8_yA8_yA8_yA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAE15navigationTitleyQrAVFQOyA38_07TalkingvC0V_Qo__Qo__Qo_A178_GA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA38_017AssistantLanguageC0V_Qo__Qo__Qo_A184_GGA8_yA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA38_0v14VoiceSelectionC0V_Qo__Qo__Qo_A191_GA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA38_13SiriResponsesV_Qo__Qo__Qo_A197_GGGA8_yA8_yA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA38_07SiriAppV0O07OpensTovC0V_Qo__Qo__Qo_A207_GA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA203_017KeepConversationsvC0V_Qo__Qo__Qo_A213_GGA8_yA8_yA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA38_09AppAccessvC0V_Qo__Qo__Qo_A220_GA29_GA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA38_07AppClipvC0V_Qo__Qo__Qo_A227_GGGGA8_yA8_yA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA38_016AssistantHistoryC0V_Qo__Qo__Qo_A236_GA119_017GenerativePartnerv5PanelC0VGA8_yA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA38_018VisualIntelligencevC0V_Qo__Qo__Qo_A245_GA8_yA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA38_014RestrictAccessC0V_Qo__Qo__Qo_A251_GA29_GGGGQo__A193_SgQo__Qo__Qo__A25_yA159__A159_QPGAVQo__A38_20SiriDisablementSheetVQo__A38_14SiriSetupStageV11CoordinatorCA269_Qo__A271_A269_Qo__SSA263_AVQo_HO
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE18toolbarColorScheme_3forQrAA0eF0OSg_AA16ToolbarPlacementVdtFQOyAcAE29navigationBarTitleDisplayModeyQrAA010NavigationK4ItemV0lmN0OFQOyAcAE0jL0yQrAA18LocalizedStringKeyVFQOyAA15ModifiedContentVyATyATyAcAE0D07contentQrqd__yXE_tAA0hU0Rd__lFQOyAA6ZStackVyAA05TupleU0VyATyAA0E0VAA30_SafeAreaRegionsIgnoringLayoutVG_AA6VStackVyA_yA6_yA_y9SiriSetup07OrbGlowC0V_A6_yA_yATyAA6HStackVyA_yAA4TextV_AA6SpacerVATyATyAA4MenuVyATyA11_yA_yA13__ATyATyATyAA5ImageVAA012_EnvironmentS15WritingModifierVyAA4FontVSgGGAA24_ForegroundStyleModifierVyA1_GGA21_yAA015SymbolRenderingN0VSgGGQPGGA29_GAA7ForEachVySayA7_19VoiceSelectionStoreC11DialectInfoVGSSAA6ButtonVyA13_GGGA29_GAA012_EnvironmentS17TransformModifierVySbGGQPGGAA12_FrameLayoutVG_ATyATyA11_yA40_ySaySi6offset_So11AFVoiceInfoC7elementtGSSSgA7_05VoiceE6ButtonVGGA59_GAA18_AnimationModifierVyA66_GGQPGGATyATyA6_yA_yA6_yA_yA11_yA_yA13__A15_A7_28DisabledSliderTrackInfoLabelVSgQPGG_AA012_ConditionalU0VyATyAA6SliderVyAA05EmptyC0VA88_GA21_yAA13AnyShapeStyleVSgGGA7_19DisabledSliderTrackVGQPGG_A99_QPGGA59_GAA14_PaddingLayoutVGATyA6_yA_yA13__ATyA13_AA16_FixedSizeLayoutVGQPGGA59_GQPGG_A15_QPGGQPGG_AA0hP0VyytATyA47_yAA18DefaultButtonLabelVGA54_GGQo_A7_21AssetDownloadModifierVGAA25_AppearanceActionModifierVGA130_G_Qo__Qo__Qo_HO
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA15NavigationStackVyAA0I4PathVAcAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAcAE29navigationBarTitleDisplayModeyQrAA0iQ4ItemV0rsT0OFQOyAcAE0pR0yQrAA4TextVFQOyAA5GroupVyAA012_ConditionalO0VyAA08ProgressC0VyAA05EmptyC0VA4_GAA4ListVys5NeverOAA7ForEachVySay9SiriSetup023RestrictAccessAppPickerC0V7Section33_67102BE38CDDE06F33628242513EBB2FLLVGSSAAA15_VyAXA11_ySayA12_21RestrictAccessAppInfoVGSSAA08ModifiedO0VyAcAE12onTapGesture5count7performQrSi_yyctFQOyA24_yAA6HStackVyAA05TupleO0VyA24_yA24_yAA5ImageVAA24_ForegroundStyleModifierVyAA5ColorVGGAA30_EnvironmentKeyWritingModifierVyA33_5ScaleOGG_A24_yA24_yA33_AA12_FrameLayoutVGAA11_ClipEffectVyAA16RoundedRectangleVGGAxA6SpacerVQPGGAA01_O13ShapeModifierVyAA9RectangleVGG_Qo_AA21_TraitWritingModifierVyAA25ListRowBackgroundTraitKeyVGGGA4_GGGGG_Qo__Qo__A31_yAA0nU0VyytAA6ButtonVyA33_GG_AaPPAAE26sharedBackgroundVisibilityyQrAA10VisibilityOFQOyA81_yytA83_yA24_yA39_A41_yAA4FontVSgGGGG_Qo_QPGQo_G_Qo_HO
-- _objc_msgSend$effectiveBoolValueForSetting:
-- _objc_msgSend$endAdvertisingAfterDelay:
-- _objc_msgSend$sharedConnection
-- _objc_msgSend$startAdvertisingForPHSSetupAfterDelay:maxInterval:
-- _objc_msgSend$stopListening:
 - _symbolic SS14deviceLanguage_SS04siriB0t
 - _symbolic SS5label_______p6sourcetSg 9SiriSetup14ReadDataSourceP
 - _symbolic SS5label_______p6sourcetSg 9SiriSetup18WritableDataSourceP
@@ -4335,5 +4212,4 @@ CStrings:
 - "selectVoice ENTER name=%{public}s lang=%{public}s store.selectedVoice.name=%{public}s"
 - "siriVoiceDisplayName: expressive path voice.name=%{public}s index=%ld → returning=%{public}s"
 - "siriVoiceDisplayName: voice.name=%{public}s voice.languageCode=%{public}s descriptor.localizedDisplay=%{public}s → returning=%{public}s"
-
 ```

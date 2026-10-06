@@ -2,97 +2,43 @@
 
 > `/usr/lib/dyld`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9d8a4` | `0x9e104` | **`+0x860`** |
+| `__TEXT.__cstring` | `0x11fdd` | `0x12295` | **`+0x2b8`** |
+| `__DATA_CONST.__const` | `0x54a8` | `0x5540` | **`+0x98`** |
+| `__TEXT.__const` | `0x1928` | `0x1978` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x3540` | `0x3590` | **`+0x50`** |
+
+### Same-size Content Changes
+
+- `__AUTH_CONST.__const`
+- `__DATA.__data`
+- `__DATA_DIRTY.__all_image_info`
+- `__DATA_DIRTY.__data`
+
+### Other Changes
+
 ```diff
 
 -27050.4.0.0.0
--  __TEXT.__text: 0x9d8a4 sha256:b2eb33b7b7d4dada9cb09ef4f5eedefcbe05e4117c67ef87d2b129c1e4963a93
--  __TEXT.__const: 0x1928 sha256:c67914626e238d8d4adf80f46b9c2a319a29a0ccdac49e2f010e1094fce0def0
--  __TEXT.__cstring: 0x11fdd sha256:8f3b2427060811a6f4b7be983e9c3f849c242926ab68085fe0651c430abce712
--  __TEXT.__unwind_info: 0x3540 sha256:819da3f0409e86972722ce703e6db88649931be786280d5896e48cfce76a1674
--  __DATA_CONST.__const: 0x54a8 sha256:7de4ba92a730b6287ace68b057056344f449d3b167b00627ba526d6d3a8d845e
--  __AUTH_CONST.__const: 0x2758 sha256:1e304329a61991deb3b7e14a3ccd7fa982600f5a805647583149e1117dba5282
--  __DATA.__data: 0x1c8 sha256:9cbca5e6b2faae1bbe5fbd50a34446892d7d0f3576ec097aa62711135ae96519
-+27056.0.0.0.0
-+  __TEXT.__text: 0x9e104 sha256:e26a1fdbdfe82d01be191de762e0abee9f4297176e77262953b92b6a7777d575
-+  __TEXT.__const: 0x1978 sha256:a1edaeb65117af5bc271301eb443b9e78b5de323c660b6faefeee7398cc267bf
-+  __TEXT.__cstring: 0x12295 sha256:3ef0dd7eb3f58b2fc7ab354041f6ca3a1639e5b2b5d17c0bf63617ae65328964
-+  __TEXT.__unwind_info: 0x3590 sha256:abd32214e211d4ea309d95df44697f7f4023e1ec7014f2943c28f5e8d65ae689
-+  __DATA_CONST.__const: 0x5540 sha256:7bce2223861c1757e37879389e457d1eb6201a460a2f206861aff9186d6bf326
-+  __AUTH_CONST.__const: 0x2758 sha256:ae8d88cad010bce6089fdb6a80838ddacfe96a049de82184e205887d2a172eb9
-+  __DATA.__data: 0x1c8 sha256:1c9e7b84f72f3df5eaa332c3750e5bf2fb27f5ef1c6e3264ac19ee0f090d453e
-   __DATA.__crash_info: 0x148 sha256:6da6349e97370e8d430272961ce52dff296ff7c22208bd465045a16f557b12e4
-   __DATA.__common: 0x8f0 sha256:2f329134686a44ee0362fd0c8b5d071e38bade32a5389e31282f64f565e76759
-   __DATA.__bss: 0x508 sha256:2ef0b8632395250da7a50aba9c73b8b97c27e1a5ff76d0ae2ffce238e3ce4f0c
--  __DATA_DIRTY.__all_image_info: 0x170 sha256:153e9ed16006d2504c286aa8ea8bdaf973386d2de1ea0d40e9778c89d84d55d6
--  __DATA_DIRTY.__data: 0x64 sha256:d2a09856aba007a7b2157503dbb8995a7e5486aef1db0f281be3dcd2368dd1dc
-+  __DATA_DIRTY.__all_image_info: 0x170 sha256:edd1244e9ab2fa363e60bafe09a4e7b134f9e5a2ec3f08d5db965ec702d802fd
-+  __DATA_DIRTY.__data: 0x64 sha256:6e6bedc532d1992b30f11f61983b8056a9b6d3cc89359632b401386aa2eb2441
-   __DATA_DIRTY.__common: 0x1160 sha256:60f629b4795f78da82c47a10bf4f7c999039dde35002eff4344233c5f3455a64
-   __DATA_DIRTY.__bss: 0x1bc0 sha256:a22b348dee94dc7b10ce8d3a50322615efd8e4dfd9156c41b41ed24b42949554
-   __TPRO_CONST.__data: 0xe1 sha256:1bee2e2cfbc827a48e51c87f3e62652dc47480bdfb2641de1987eb052c8b4b41
-   __TPRO_CONST.__allocator: 0x20000 sha256:fa43239bcee7b97ca62f007cc68487560a39e19f74f3dde7486db3f98df8e471
--  UUID: 089E4C28-B17C-3B3E-967E-F64B4A4ACF6A
 -  Functions: 3396
--  Symbols:   4645
+-  Symbols:   3625
 -  CStrings:  2202
-+  UUID: 28523156-3B0C-3312-A887-63870B0815E9
++27056.0.0.0.0
 +  Functions: 3414
-+  Symbols:   4681
++  Symbols:   3657
 +  CStrings:  2227
- 
 Symbols:
-+ _ZN15DyldSharedCache13DynamicRegion12setCachePathEPKc.cold.2
-+ _ZN15DyldSharedCache13DynamicRegion12setCachePathEPKc.cold.3
-+ _ZN15DyldSharedCache13DynamicRegion12setCachePathEPKc.cold.4
-+ _ZN5dyld44APIs16dlopen_preflightEPKc.cold.1
-+ _ZN5dyld46Loader9getLoaderER11DiagnosticsRNS_12RuntimeStateEPKcRKNS0_11LoadOptionsEb.cold.1
-+ _ZN5dyld46Loader9getLoaderER11DiagnosticsRNS_12RuntimeStateEPKcRKNS0_11LoadOptionsEb.cold.2
-+ _ZN5dyld46Loader9getLoaderER11DiagnosticsRNS_12RuntimeStateEPKcRKNS0_11LoadOptionsEb.cold.3
-+ _ZN5dyld46Loader9getLoaderER11DiagnosticsRNS_12RuntimeStateEPKcRKNS0_11LoadOptionsEb.cold.4
-+ _ZN5dyld46Loader9getLoaderER11DiagnosticsRNS_12RuntimeStateEPKcRKNS0_11LoadOptionsEb.cold.5
-+ _ZN5dyld46Loader9getLoaderER11DiagnosticsRNS_12RuntimeStateEPKcRKNS0_11LoadOptionsEb.cold.6
-+ _ZNK15DyldSharedCache13DynamicRegion13isImageRootedEj.cold.1
-+ _ZNK15DyldSharedCache13DynamicRegion14anyImageRootedEv.cold.1
-+ _ZNK15DyldSharedCache13DynamicRegion15hasMarzipanRootEv.cold.1
-+ _ZNK15DyldSharedCache13DynamicRegion20isImageCryptexRootedEj.cold.1
-+ _ZNK5dyld46Loader11matchesPathERKNS_12RuntimeStateEPKc.cold.1
-+ _ZNK6mach_o6Header27validSemanticsSingleSegmentILb1EEENS_5ErrorERKNS_6PolicyEyNSt3__14spanIKhLm18446744073709551615EEE.cold.7
-+ __Block_byref_object_copy_.130
-+ __Block_byref_object_copy_.183
-+ __Block_byref_object_copy_.19
-+ __Block_byref_object_copy_.196
-+ __Block_byref_object_copy_.226
-+ __Block_byref_object_copy_.246
-+ __Block_byref_object_copy_.251
-+ __Block_byref_object_copy_.258
-+ __Block_byref_object_copy_.261
-+ __Block_byref_object_copy_.264
-+ __Block_byref_object_copy_.57
-+ __Block_byref_object_copy_.59
-+ __Block_byref_object_copy_.65
-+ __Block_byref_object_copy_.74
-+ __Block_byref_object_copy_.80
-+ __Block_byref_object_copy_.83
-+ __Block_byref_object_copy_.87
-+ __Block_byref_object_copy_.95
-+ __Block_byref_object_dispose_.131
-+ __Block_byref_object_dispose_.184
-+ __Block_byref_object_dispose_.197
-+ __Block_byref_object_dispose_.20
-+ __Block_byref_object_dispose_.227
-+ __Block_byref_object_dispose_.247
-+ __Block_byref_object_dispose_.252
-+ __Block_byref_object_dispose_.259
-+ __Block_byref_object_dispose_.262
-+ __Block_byref_object_dispose_.265
-+ __Block_byref_object_dispose_.58
-+ __Block_byref_object_dispose_.60
-+ __Block_byref_object_dispose_.66
-+ __Block_byref_object_dispose_.75
-+ __Block_byref_object_dispose_.81
-+ __Block_byref_object_dispose_.84
-+ __Block_byref_object_dispose_.88
-+ __Block_byref_object_dispose_.96
++ _ZN5dyld44APIs16dlopen_preflightEPKc
++ _ZN5dyld46Loader9getLoaderER11DiagnosticsRNS_12RuntimeStateEPKcRKNS0_11LoadOptionsEb
++ _ZNK15DyldSharedCache13DynamicRegion13isImageRootedEj
++ _ZNK15DyldSharedCache13DynamicRegion14anyImageRootedEv
++ _ZNK15DyldSharedCache13DynamicRegion15hasMarzipanRootEv
++ _ZNK15DyldSharedCache13DynamicRegion20isImageCryptexRootedEj
++ _ZNK5dyld46Loader11matchesPathERKNS_12RuntimeStateEPKc
 + __ZN10ByteStream9push_backIyEEvT_
 + __ZN15DyldSharedCache13DynamicRegion15setRootsBitmapsEjNSt3__14spanIKhLm18446744073709551615EEES4_h
 + __ZN5dyld317OverflowSafeArrayIPKcLy4294967295EE9push_backERKS2_
@@ -155,17 +101,7 @@ Symbols:
 + __ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE9iter_swapB9nqn220106IRN3lsl6VectorIPN12PropertyList6StringEE15CheckedIteratorIS8_EESC_EEvOT_OT0_
 + __ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE9iter_swapB9nqn220106IRN3lsl6VectorIPN12PropertyList7IntegerEE15CheckedIteratorIS8_EESC_EEvOT_OT0_
 + __ZZN5dyld412RuntimeState29incOverriddenCachedDylibCountEvE14kRootsTemplate
-+ ___ZN5dyld416JustInTimeLoader21parseSectionLocationsEPKN6mach_o12UnsafeHeaderERNS_16SectionLocationsE_block_invoke_2.cold.3
-+ ___ZN5dyld46Loader9getLoaderER11DiagnosticsRNS_12RuntimeStateEPKcRKNS0_11LoadOptionsEb_block_invoke.cold.1
-+ ___ZN5dyld46Loader9getLoaderER11DiagnosticsRNS_12RuntimeStateEPKcRKNS0_11LoadOptionsEb_block_invoke.cold.2
-+ ___ZN5dyld46Loader9getLoaderER11DiagnosticsRNS_12RuntimeStateEPKcRKNS0_11LoadOptionsEb_block_invoke.cold.3
-+ ___ZN5dyld46Loader9getLoaderER11DiagnosticsRNS_12RuntimeStateEPKcRKNS0_11LoadOptionsEb_block_invoke.cold.4
-+ ___ZN5dyld46Loader9getLoaderER11DiagnosticsRNS_12RuntimeStateEPKcRKNS0_11LoadOptionsEb_block_invoke.cold.5
-+ ___ZNK5dyld416JustInTimeLoader11applyFixupsER11DiagnosticsRNS_12RuntimeStateERNS_34DyldCacheDataConstLazyScopedWriterEbPN3lsl6VectorINSt3__14pairIPKNS_6LoaderEPKcEEEE_block_invoke.43
-+ ___ZNK5dyld46Loader18applyFixupsGenericER11DiagnosticsRNS_12RuntimeStateEyRKN5dyld35ArrayIPKvEESB_bRKNS6_INS0_21MissingFlatLazySymbolEEE_block_invoke.93
-+ ___ZNK5dyld46Loader18applyFixupsGenericER11DiagnosticsRNS_12RuntimeStateEyRKN5dyld35ArrayIPKvEESB_bRKNS6_INS0_21MissingFlatLazySymbolEEE_block_invoke.97
-+ ___ZZN5dyld412RuntimeState16setObjCNotifiersENS_16ReadOnlyCallbackIPFvPKcPK11mach_headerEEENS1_IPFvS6_PvS6_PKvEEENS1_IPFvPK29_dyld_objc_notify_mapped_infoEEENS1_IPFvjSI_U13block_pointerFvjEEEEENK3$_0clEv_block_invoke.198
-+ ___ZZN5dyld412RuntimeState16setObjCNotifiersENS_16ReadOnlyCallbackIPFvPKcPK11mach_headerEEENS1_IPFvS6_PvS6_PKvEEENS1_IPFvPK29_dyld_objc_notify_mapped_infoEEENS1_IPFvjSI_U13block_pointerFvjEEEEENK3$_0clEv_block_invoke.198.cold.1
++ ___ZN5dyld46Loader9getLoaderER11DiagnosticsRNS_12RuntimeStateEPKcRKNS0_11LoadOptionsEb_block_invoke
 + ____ZN5dyld423analyzeObjCPatchClassesERKN6mach_o5ImageEU13block_pointerFvPKvPKcbEU13block_pointerFvS5_RKNS0_5FixupEE_block_invoke
 + ____ZN5dyld423analyzeObjCPatchClassesERKN6mach_o5ImageEU13block_pointerFvPKvPKcbEU13block_pointerFvS5_RKNS0_5FixupEE_block_invoke_2
 + ____ZN5dyld46Loader9getLoaderER11DiagnosticsRNS_12RuntimeStateEPKcRKNS0_11LoadOptionsEb_block_invoke
@@ -174,105 +110,15 @@ Symbols:
 + ____ZNK6mach_o6Header14forEachSectionEU13block_pointerFvRKNS0_11SegmentInfoERKNS0_11SectionInfoERbE_block_invoke
 + ____ZNK6mach_o6Header14forEachSectionEU13block_pointerFvRKNS0_11SegmentInfoERKNS0_11SectionInfoERbE_block_invoke_2
 + ____ZNK6mach_o6Header14forEachSectionEU13block_pointerFvRKNS0_11SegmentInfoERKNS0_11SectionInfoERbE_block_invoke_3
-+ __block_descriptor_tmp.120
-+ __block_descriptor_tmp.122
-+ __block_descriptor_tmp.124
-+ __block_descriptor_tmp.130
-+ __block_descriptor_tmp.141
-+ __block_descriptor_tmp.144
-+ __block_descriptor_tmp.149
-+ __block_descriptor_tmp.151
-+ __block_descriptor_tmp.159
-+ __block_descriptor_tmp.163
-+ __block_descriptor_tmp.167
-+ __block_descriptor_tmp.171
-+ __block_descriptor_tmp.177
-+ __block_descriptor_tmp.181
-+ __block_descriptor_tmp.187
-+ __block_descriptor_tmp.190
-+ __block_descriptor_tmp.195
-+ __block_descriptor_tmp.200
-+ __block_descriptor_tmp.205
-+ __block_descriptor_tmp.209
-+ __block_descriptor_tmp.221
-+ __block_descriptor_tmp.226
-+ __block_descriptor_tmp.228
-+ __block_descriptor_tmp.237
-+ __block_descriptor_tmp.241
-+ __block_descriptor_tmp.245
-+ __block_descriptor_tmp.248
-+ __block_descriptor_tmp.250
-+ __block_descriptor_tmp.253
-+ __block_descriptor_tmp.258
-+ __block_descriptor_tmp.263
-+ __block_descriptor_tmp.269
-+ __block_descriptor_tmp.280
-+ __block_descriptor_tmp.402
-+ __block_descriptor_tmp.405
-+ __block_descriptor_tmp.411
-+ __block_descriptor_tmp.414
-+ __block_descriptor_tmp.418
-+ __block_descriptor_tmp.419
-+ __block_descriptor_tmp.420
-+ __block_descriptor_tmp.421
-+ __block_descriptor_tmp.425
-+ __block_descriptor_tmp.432
-+ __block_descriptor_tmp.434
-+ __block_descriptor_tmp.442
-+ __block_descriptor_tmp.445
-+ __block_descriptor_tmp.56
-+ __block_descriptor_tmp.82
 + _access
 + _csops
-- _ZN5dyld412RuntimeState10notifyLoadERKNSt3__14spanIPKNS_6LoaderELm18446744073709551615EEE.cold.4
-- _ZN5dyld413ProcessConfig13PathOverridesC2ERKNS0_7ProcessERKNS0_8SecurityERKNS0_7LoggingERKNS0_9DyldCacheERNS_15SyscallDelegateERN3lsl9AllocatorE.cold.1
-- _ZN5dyld46Loader15resolvedAddressERNS_12RuntimeStateERKNS0_14ResolvedSymbolE.cold.1
-- _ZNK12PropertyList6String11emitUnicodeEhyR10ByteStream.cold.1
-- _ZNK5dyld46Loader29applyFixupsCheckCachePatchingERNS_12RuntimeStateERNS_34DyldCacheDataConstLazyScopedWriterE.cold.1
-- _ZNK6mach_o5Image13validLinkeditERKNS_6PolicyE.cold.1
-- _ZNK6mach_o6Header22validSemanticsSegmentsERKNS_6PolicyEy.cold.4
-- _ZNK6mach_o6Header22validSemanticsSegmentsERKNS_6PolicyEy.cold.5
-- _ZNK6mach_o6Header22validSemanticsSegmentsERKNS_6PolicyEy.cold.6
-- _ZNK6mach_o6Header22validStructureLinkeditERKNS_6PolicyEy.cold.2
-- _ZNK6mach_o6Header22validStructureLinkeditERKNS_6PolicyEy.cold.3
-- _ZNKSt3__121__murmur2_or_cityhashImLm64EEclB9nqn220100EPKvm.cold.1
-- _ZNSt3__124__copy_move_unwrap_itersB9nqn220100INS_11__copy_implEN3lsl6VectorISt4byteE15CheckedIteratorIS4_EES7_NS_20back_insert_iteratorI10ByteStreamEELi0EEENS_4pairIT0_T2_EESC_T1_SD_.cold.1
-- __Block_byref_object_copy_.129
-- __Block_byref_object_copy_.182
-- __Block_byref_object_copy_.195
-- __Block_byref_object_copy_.225
-- __Block_byref_object_copy_.245
-- __Block_byref_object_copy_.250
-- __Block_byref_object_copy_.257
-- __Block_byref_object_copy_.260
-- __Block_byref_object_copy_.263
-- __Block_byref_object_copy_.28
-- __Block_byref_object_copy_.56
-- __Block_byref_object_copy_.60
-- __Block_byref_object_copy_.62
-- __Block_byref_object_copy_.64
-- __Block_byref_object_copy_.73
-- __Block_byref_object_copy_.77
-- __Block_byref_object_copy_.82
-- __Block_byref_object_copy_.94
-- __Block_byref_object_dispose_.130
-- __Block_byref_object_dispose_.183
-- __Block_byref_object_dispose_.196
-- __Block_byref_object_dispose_.226
-- __Block_byref_object_dispose_.246
-- __Block_byref_object_dispose_.251
-- __Block_byref_object_dispose_.258
-- __Block_byref_object_dispose_.261
-- __Block_byref_object_dispose_.264
-- __Block_byref_object_dispose_.29
-- __Block_byref_object_dispose_.57
-- __Block_byref_object_dispose_.61
-- __Block_byref_object_dispose_.63
-- __Block_byref_object_dispose_.65
-- __Block_byref_object_dispose_.74
-- __Block_byref_object_dispose_.78
-- __Block_byref_object_dispose_.83
-- __Block_byref_object_dispose_.95
+- _ZN5dyld413ProcessConfig13PathOverridesC2ERKNS0_7ProcessERKNS0_8SecurityERKNS0_7LoggingERKNS0_9DyldCacheERNS_15SyscallDelegateERN3lsl9AllocatorE
+- _ZN5dyld46Loader15resolvedAddressERNS_12RuntimeStateERKNS0_14ResolvedSymbolE
+- _ZNK12PropertyList6String11emitUnicodeEhyR10ByteStream
+- _ZNK5dyld46Loader29applyFixupsCheckCachePatchingERNS_12RuntimeStateERNS_34DyldCacheDataConstLazyScopedWriterE
+- _ZNK6mach_o5Image13validLinkeditERKNS_6PolicyE
+- _ZNKSt3__121__murmur2_or_cityhashImLm64EEclB9nqn220100EPKvm
+- _ZNSt3__124__copy_move_unwrap_itersB9nqn220100INS_11__copy_implEN3lsl6VectorISt4byteE15CheckedIteratorIS4_EES7_NS_20back_insert_iteratorI10ByteStreamEELi0EEENS_4pairIT0_T2_EESC_T1_SD_
 - __ZN5dyld46Loader9getLoaderER11DiagnosticsRNS_12RuntimeStateEPKcRKNS0_11LoadOptionsE
 - __ZN5dyld4L18isFileRelativePathEPKc
 - __ZNK5dyld415SyscallDelegate18bootVolumeWritableEv
@@ -309,62 +155,11 @@ Symbols:
 - __ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE9iter_swapB9nqn220100IRN3lsl6VectorIPN12PropertyList4DataEE15CheckedIteratorIS8_EESC_EEvOT_OT0_
 - __ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE9iter_swapB9nqn220100IRN3lsl6VectorIPN12PropertyList6StringEE15CheckedIteratorIS8_EESC_EEvOT_OT0_
 - __ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE9iter_swapB9nqn220100IRN3lsl6VectorIPN12PropertyList7IntegerEE15CheckedIteratorIS8_EESC_EEvOT_OT0_
-- ___ZN5dyld46Loader9getLoaderER11DiagnosticsRNS_12RuntimeStateEPKcRKNS0_11LoadOptionsE_block_invoke.cold.1
-- ___ZN5dyld46Loader9getLoaderER11DiagnosticsRNS_12RuntimeStateEPKcRKNS0_11LoadOptionsE_block_invoke.cold.2
-- ___ZN5dyld46Loader9getLoaderER11DiagnosticsRNS_12RuntimeStateEPKcRKNS0_11LoadOptionsE_block_invoke.cold.3
-- ___ZN5dyld46Loader9getLoaderER11DiagnosticsRNS_12RuntimeStateEPKcRKNS0_11LoadOptionsE_block_invoke.cold.4
-- ___ZN5dyld46Loader9getLoaderER11DiagnosticsRNS_12RuntimeStateEPKcRKNS0_11LoadOptionsE_block_invoke.cold.5
-- ___ZNK5dyld416JustInTimeLoader11applyFixupsER11DiagnosticsRNS_12RuntimeStateERNS_34DyldCacheDataConstLazyScopedWriterEbPN3lsl6VectorINSt3__14pairIPKNS_6LoaderEPKcEEEE_block_invoke.32
-- ___ZNK5dyld46Loader18applyFixupsGenericER11DiagnosticsRNS_12RuntimeStateEyRKN5dyld35ArrayIPKvEESB_bRKNS6_INS0_21MissingFlatLazySymbolEEE_block_invoke.92
-- ___ZNK5dyld46Loader18applyFixupsGenericER11DiagnosticsRNS_12RuntimeStateEyRKN5dyld35ArrayIPKvEESB_bRKNS6_INS0_21MissingFlatLazySymbolEEE_block_invoke.96
-- ___ZZN5dyld412RuntimeState16setObjCNotifiersENS_16ReadOnlyCallbackIPFvPKcPK11mach_headerEEENS1_IPFvS6_PvS6_PKvEEENS1_IPFvPK29_dyld_objc_notify_mapped_infoEEENS1_IPFvjSI_U13block_pointerFvjEEEEENK3$_0clEv_block_invoke.197
-- ___ZZN5dyld412RuntimeState16setObjCNotifiersENS_16ReadOnlyCallbackIPFvPKcPK11mach_headerEEENS1_IPFvS6_PvS6_PKvEEENS1_IPFvPK29_dyld_objc_notify_mapped_infoEEENS1_IPFvjSI_U13block_pointerFvjEEEEENK3$_0clEv_block_invoke.197.cold.1
+- ___ZN5dyld46Loader9getLoaderER11DiagnosticsRNS_12RuntimeStateEPKcRKNS0_11LoadOptionsE_block_invoke
 - ____ZN5dyld46Loader9getLoaderER11DiagnosticsRNS_12RuntimeStateEPKcRKNS0_11LoadOptionsE_block_invoke
 - ____ZN5dyld46Loader9getLoaderER11DiagnosticsRNS_12RuntimeStateEPKcRKNS0_11LoadOptionsE_block_invoke_2
 - ____ZNK6mach_o12UnsafeHeader14forEachSectionEU13block_pointerFvRKNS0_11SegmentInfoERKNS0_11SectionInfoERbE_block_invoke
 - ____ZNK6mach_o13ChainedFixups13validLinkeditEybNSt3__14spanIKNS_13MappedSegmentELm18446744073709551615EEE_block_invoke
-- __block_descriptor_tmp.113
-- __block_descriptor_tmp.12
-- __block_descriptor_tmp.123
-- __block_descriptor_tmp.147
-- __block_descriptor_tmp.150
-- __block_descriptor_tmp.158
-- __block_descriptor_tmp.160
-- __block_descriptor_tmp.166
-- __block_descriptor_tmp.168
-- __block_descriptor_tmp.174
-- __block_descriptor_tmp.179
-- __block_descriptor_tmp.182
-- __block_descriptor_tmp.188
-- __block_descriptor_tmp.191
-- __block_descriptor_tmp.198
-- __block_descriptor_tmp.201
-- __block_descriptor_tmp.206
-- __block_descriptor_tmp.215
-- __block_descriptor_tmp.225
-- __block_descriptor_tmp.227
-- __block_descriptor_tmp.235
-- __block_descriptor_tmp.238
-- __block_descriptor_tmp.244
-- __block_descriptor_tmp.247
-- __block_descriptor_tmp.249
-- __block_descriptor_tmp.252
-- __block_descriptor_tmp.257
-- __block_descriptor_tmp.259
-- __block_descriptor_tmp.264
-- __block_descriptor_tmp.290
-- __block_descriptor_tmp.400
-- __block_descriptor_tmp.403
-- __block_descriptor_tmp.409
-- __block_descriptor_tmp.412
-- __block_descriptor_tmp.415
-- __block_descriptor_tmp.423
-- __block_descriptor_tmp.431
-- __block_descriptor_tmp.433
-- __block_descriptor_tmp.439
-- __block_descriptor_tmp.444
-- __block_descriptor_tmp.75
-- __block_descriptor_tmp.96
 CStrings:
 + "\n"
 + "      dlopen_preflight(%s) => 1\n"
@@ -405,5 +200,4 @@ CStrings:
 - "_cachePathOffset == 0"
 - "dyld_data    v3"
 - "private"
-
 ```

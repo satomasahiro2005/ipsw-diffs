@@ -2,15 +2,16 @@
 
 > `/System/Library/Frameworks/ReplayKit.framework/PlugIns/RPVideoEditorExtension.appex/RPVideoEditorExtension`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x248` | `0x250` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x20
-   __DATA_CONST.__auth_got: 0x250
--  __DATA_CONST.__got: 0x248
-+  __DATA_CONST.__got: 0x250
-   __DATA.__objc_const: 0x1b68
-   __DATA.__objc_selrefs: 0xe48
-   __DATA.__objc_ivar: 0x140
-
+-740.48.1.0.0
++740.53.1.0.0
 ```

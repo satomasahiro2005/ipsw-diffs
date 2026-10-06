@@ -2,131 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/MobileSafari.framework/MobileSafari`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4dc8ac` | `0x4e1554` | **`+0x4ca8`** |
+| `__AUTH_CONST.__objc_const` | `0x3afd8` | `0x3b238` | **`+0x260`** |
+| `__AUTH_CONST.__const` | `0x20b30` | `0x20d10` | **`+0x1e0`** |
+| `__DATA_DIRTY.__data` | `0x16f8` | `0x1840` | **`+0x148`** |
+| `__DATA_DIRTY.__objc_data` | `0x4950` | `0x4a78` | **`+0x128`** |
+| `__TEXT.__objc_methlist` | `0x1c9c8` | `0x1cae8` | **`+0x120`** |
+| `__DATA_CONST.__objc_selrefs` | `0x10288` | `0x10398` | **`+0x110`** |
+| `__AUTH.__data` | `0x8088` | `0x7f98` | **`-0xf0`** |
+| `__TEXT.__swift5_capture` | `0x7138` | `0x7220` | **`+0xe8`** |
+| `__TEXT.__cstring` | `0x133c9` | `0x134a9` | **`+0xe0`** |
+| `__TEXT.__constg_swiftt` | `0x11c8c` | `0x11d64` | **`+0xd8`** |
+| `__TEXT.__unwind_info` | `0x122b0` | `0x12388` | **`+0xd8`** |
+| `__TEXT.__swift5_reflstr` | `0xc641` | `0xc701` | **`+0xc0`** |
+| `__AUTH.__objc_data` | `0x10ed0` | `0x10e20` | **`-0xb0`** |
+| `__DATA_CONST.__got` | `0x28f0` | `0x2998` | **`+0xa8`** |
+| `__TEXT.__eh_frame` | `0x8dac` | `0x8e4c` | **`+0xa0`** |
+| `__DATA.__data` | `0xe178` | `0xe208` | **`+0x90`** |
+| `__AUTH_CONST.__cfstring` | `0xaac0` | `0xab40` | **`+0x80`** |
+| `__DATA_CONST.__const` | `0x6508` | `0x6578` | **`+0x70`** |
+| `__TEXT.__const` | `0x1caa4` | `0x1cb14` | **`+0x70`** |
+| `__TEXT.__gcc_except_tab` | `0x77c0` | `0x7830` | **`+0x70`** |
+| `__TEXT.__oslogstring` | `0x4599` | `0x45d9` | **`+0x40`** |
+| `__TEXT.__swift5_fieldmd` | `0x9a88` | `0x9ac4` | **`+0x3c`** |
+| `__TEXT.__ustring` | `0x2414` | `0x2440` | **`+0x2c`** |
+| `__AUTH_CONST.__auth_got` | `0x3900` | `0x3918` | **`+0x18`** |
+| `__DATA_DIRTY.__common` | `0x240` | `0x258` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x438` | `0x44c` | **`+0x14`** |
+| `__TEXT.__swift_as_cont` | `0x4d0` | `0x4e4` | **`+0x14`** |
+| `__TEXT.__swift_as_entry` | `0x490` | `0x4a4` | **`+0x14`** |
+| `__DATA.__bss` | `0x20a60` | `0x20a70` | **`+0x10`** |
+| `__DATA.__common` | `0xce1` | `0xcd1` | **`-0x10`** |
+| `__TEXT.__swift_as_ret` | `0x35c` | `0x36c` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x1cc8` | `0x1cd4` | **`+0xc`** |
+| `__TEXT.__swift5_types` | `0x95c` | `0x960` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x4dc8ac
--  __TEXT.__objc_methlist: 0x1c9c8
--  __TEXT.__const: 0x1caa4
--  __TEXT.__cstring: 0x133c9
--  __TEXT.__gcc_except_tab: 0x77c0
--  __TEXT.__oslogstring: 0x4599
--  __TEXT.__ustring: 0x2414
-+  __TEXT.__text: 0x4e1554
-+  __TEXT.__objc_methlist: 0x1cae8
-+  __TEXT.__const: 0x1cb14
-+  __TEXT.__cstring: 0x134a9
-+  __TEXT.__gcc_except_tab: 0x7830
-+  __TEXT.__oslogstring: 0x45d9
-+  __TEXT.__ustring: 0x2440
-   __TEXT.__dlopen_cstrs: 0x48e
--  __TEXT.__constg_swiftt: 0x11c8c
-+  __TEXT.__constg_swiftt: 0x11d64
-   __TEXT.__swift5_typeref: 0xd0cc
--  __TEXT.__swift5_builtin: 0x438
--  __TEXT.__swift5_reflstr: 0xc641
--  __TEXT.__swift5_fieldmd: 0x9a88
-+  __TEXT.__swift5_builtin: 0x44c
-+  __TEXT.__swift5_reflstr: 0xc701
-+  __TEXT.__swift5_fieldmd: 0x9ac4
-   __TEXT.__swift5_assocty: 0x1bb0
-   __TEXT.__swift5_proto: 0x11a0
--  __TEXT.__swift5_types: 0x95c
--  __TEXT.__swift5_capture: 0x7138
--  __TEXT.__swift_as_entry: 0x490
--  __TEXT.__swift_as_ret: 0x35c
--  __TEXT.__swift_as_cont: 0x4d0
-+  __TEXT.__swift5_types: 0x960
-+  __TEXT.__swift5_capture: 0x7220
-+  __TEXT.__swift_as_entry: 0x4a4
-+  __TEXT.__swift_as_ret: 0x36c
-+  __TEXT.__swift_as_cont: 0x4e4
-   __TEXT.__swift5_mpenum: 0x5c
-   __TEXT.__swift5_protos: 0xd8
--  __TEXT.__unwind_info: 0x122b0
--  __TEXT.__eh_frame: 0x8dac
-+  __TEXT.__unwind_info: 0x12388
-+  __TEXT.__eh_frame: 0x8e4c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x6508
-+  __DATA_CONST.__const: 0x6578
-   __DATA_CONST.__objc_classlist: 0x10b0
-   __DATA_CONST.__objc_catlist: 0x180
-   __DATA_CONST.__objc_protolist: 0x788
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x10288
-+  __DATA_CONST.__objc_selrefs: 0x10398
-   __DATA_CONST.__objc_protorefs: 0x260
-   __DATA_CONST.__objc_superrefs: 0x7d0
-   __DATA_CONST.__objc_arraydata: 0x2e8
--  __DATA_CONST.__got: 0x28f0
--  __AUTH_CONST.__const: 0x20b30
--  __AUTH_CONST.__cfstring: 0xaac0
--  __AUTH_CONST.__objc_const: 0x3afd8
-+  __DATA_CONST.__got: 0x2998
-+  __AUTH_CONST.__const: 0x20d10
-+  __AUTH_CONST.__cfstring: 0xab40
-+  __AUTH_CONST.__objc_const: 0x3b238
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x5e8
-   __AUTH_CONST.__objc_arrayobj: 0x258
-   __AUTH_CONST.__objc_doubleobj: 0x130
--  __AUTH_CONST.__auth_got: 0x3900
--  __AUTH.__objc_data: 0x10ed0
--  __AUTH.__data: 0x8088
--  __DATA.__objc_ivar: 0x1cc8
--  __DATA.__data: 0xe178
-+  __AUTH_CONST.__auth_got: 0x3918
-+  __AUTH.__objc_data: 0x10e20
-+  __AUTH.__data: 0x7f98
-+  __DATA.__objc_ivar: 0x1cd4
-+  __DATA.__data: 0xe208
-   __DATA.__objc_stublist: 0x30
--  __DATA.__bss: 0x20a60
--  __DATA.__common: 0xce1
--  __DATA_DIRTY.__objc_data: 0x4950
--  __DATA_DIRTY.__data: 0x16f8
-+  __DATA.__bss: 0x20a70
-+  __DATA.__common: 0xcd1
-+  __DATA_DIRTY.__objc_data: 0x4a78
-+  __DATA_DIRTY.__data: 0x1840
-   __DATA_DIRTY.__bss: 0x88
--  __DATA_DIRTY.__common: 0x240
-+  __DATA_DIRTY.__common: 0x258
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
+-625.1.20.10.3
++625.1.22.10.3
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 26737
--  Symbols:   40348
--  CStrings:  3953
+-  Symbols:   20214
+-  CStrings:  2669
 +  Functions: 26842
-+  Symbols:   40451
-+  CStrings:  3965
- 
-Sections:
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __DATA.__objc_stublist : content changed
++  Symbols:   20234
++  CStrings:  2677
 Symbols:
 + -[SFCapsuleNavigationBar navigationBarItemDidUpdateShowsPageFormatButton:]
 + -[SFNotifyMeWhenBanner _makeFeedbackButton]
@@ -175,37 +102,6 @@ Symbols:
 + ___swift_closure_destructor.74Tm
 + ___unnamed_65
 + _keypath_get_selector_feedbackDispatcher
-+ _objc_msgSend$_determineIndexOfStickySectionTitle
-+ _objc_msgSend$_enumerateSectionRangesUsingBlock:
-+ _objc_msgSend$_insets
-+ _objc_msgSend$_makeFeedbackButton
-+ _objc_msgSend$_setInsets:
-+ _objc_msgSend$_widthForItem:preferCached:
-+ _objc_msgSend$activeMenuContextInteraction
-+ _objc_msgSend$appliesBarPocketStyle
-+ _objc_msgSend$didDisplayStartPageSectionWithBundleIdentifier:results:forQueryID:
-+ _objc_msgSend$feedbackDispatcher
-+ _objc_msgSend$indexOfStickySectionTitle
-+ _objc_msgSend$invalidateCollectionViewLayout
-+ _objc_msgSend$itemsUseContentSafeAreaLayoutMargins
-+ _objc_msgSend$menuOverrideMediaStateIcon
-+ _objc_msgSend$menuWithTitle:children:
-+ _objc_msgSend$notifyMeWhenBanner:didSelectFeedbackAction:
-+ _objc_msgSend$queryID
-+ _objc_msgSend$setActiveMenuContextInteraction:
-+ _objc_msgSend$setFeedbackDispatcher:
-+ _objc_msgSend$setGroupStyle:
-+ _objc_msgSend$setNeedsUpdateHairlineConstraints
-+ _objc_msgSend$setPrefersSideBySideTextAndSecondaryText:
-+ _objc_msgSend$setResultBundleId:
-+ _objc_msgSend$setSecondaryText:
-+ _objc_msgSend$setSectionBundleIdentifier:
-+ _objc_msgSend$setUsesContentSafeAreaLayoutMargins:
-+ _objc_msgSend$stickySectionTitle
-+ _objc_msgSend$textWithString:
-+ _objc_msgSend$userDidEngageWithStartPageResult:method:queryID:
-+ _objc_msgSend$usesInsetStyle
-+ _objc_msgSend$valueCellConfiguration
 + _symbolic _____ So21WBSUserReportedActionV
 - -[SFNotifyMeWhenBanner _makeFileRadarButton]
 - -[SFNotifyMeWhenBanner invalidateBannerLayout]
@@ -234,10 +130,6 @@ Symbols:
 - ___swift_closure_destructor.403Tm
 - ___swift_closure_destructor.53Tm
 - ___unnamed_61
-- _objc_msgSend$_makeFileRadarButton
-- _objc_msgSend$setUsesInsetStyle:
-- _objc_msgSend$setZOffsetWithinSection:
-- _objc_msgSend$zOffsetWithinSection
 - _swift_willThrowTypedImpl
 CStrings:
 + "BookmarkFeatureTextBackfillCompletedForAltDSID"
@@ -254,5 +146,4 @@ CStrings:
 - "HasCompletedBookmarkFeatureTextBackfill"
 - "TranslationButton"
 - "ladybug"
-
 ```

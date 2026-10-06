@@ -2,88 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/FitnessMachineServices.framework/FitnessMachineServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4df30` | `0x4e8ec` | **`+0x9bc`** |
+| `__TEXT.__swift5_typeref` | `0x2db0` | `0x306c` | **`+0x2bc`** |
+| `__DATA.__data` | `0x1148` | `0x11b8` | **`+0x70`** |
+| `__TEXT.__const` | `0x34d8` | `0x3548` | **`+0x70`** |
+| `__AUTH_CONST.__auth_got` | `0x1290` | `0x12b8` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x1518` | `0x1530` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x650` | `0x658` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x4df30
-+  __TEXT.__text: 0x4e8ec
-   __TEXT.__objc_methlist: 0x1548
--  __TEXT.__const: 0x34d8
-+  __TEXT.__const: 0x3548
-   __TEXT.__cstring: 0x1fdb
-   __TEXT.__gcc_except_tab: 0x458
-   __TEXT.__oslogstring: 0x1b00
--  __TEXT.__swift5_typeref: 0x2db0
-+  __TEXT.__swift5_typeref: 0x306c
-   __TEXT.__swift5_capture: 0x844
-   __TEXT.__constg_swiftt: 0x11b4
-   __TEXT.__swift5_reflstr: 0xcea
+-2027.0.125.0.0
++2027.0.132.0.0
 
-   __TEXT.__swift_as_cont: 0x28
-   __TEXT.__swift5_protos: 0xc
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x1518
-+  __TEXT.__unwind_info: 0x1530
-   __TEXT.__eh_frame: 0xa64
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0xdb8
-   __DATA_CONST.__objc_protorefs: 0x88
-   __DATA_CONST.__objc_superrefs: 0x30
--  __DATA_CONST.__got: 0x650
-+  __DATA_CONST.__got: 0x658
-   __AUTH_CONST.__const: 0x23d0
-   __AUTH_CONST.__cfstring: 0x8c0
-   __AUTH_CONST.__objc_const: 0x2800
-   __AUTH_CONST.__objc_intobj: 0x18
--  __AUTH_CONST.__auth_got: 0x1290
-+  __AUTH_CONST.__auth_got: 0x12b8
-   __AUTH.__objc_data: 0x15a8
-   __AUTH.__data: 0x908
-   __DATA.__objc_ivar: 0xd4
--  __DATA.__data: 0x1148
-+  __DATA.__data: 0x11b8
-   __DATA.__bss: 0x21a0
-   __DATA.__common: 0x60
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2182
--  Symbols:   7259
+-  Symbols:   5264
 +  Functions: 2190
-+  Symbols:   7313
-   CStrings:  394
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__objc_ivar : content changed
++  Symbols:   5310
 Symbols:
 + _$s22FitnessMachineServices04$s22ab12Services0035B107PairingIntentViewswift_IgGGkfMX332_0_33_1DF4A5DC906E290B45C9215F45954BAFLl7PreviewfMf_15PreviewRegistryfMu_V04makeV021DeveloperToolsSupport0V0VyKFZ
 + _$s22FitnessMachineServices04$s22ab12Services0035B107PairingIntentViewswift_IgGGkfMX332_0_33_1DF4A5DC906E290B45C9215F45954BAFLl7PreviewfMf_15PreviewRegistryfMu_V04makeV021DeveloperToolsSupport0V0VyKFZSo16UIViewControllerCyScMYccfU_
@@ -775,5 +716,4 @@ Symbols:
 - _symbolic _____y_____y_____y_____y______AAy__________G_____yAAyAAy__________y_____GG_____y_____GGSSGACyABy_____yASyASyAAy_____y___________Qo______GSgAXGACyAAyAAyAV_____GAWG_AXQPGG_____GG_AAyAAyAiPG_____y_____GGQPGSgADQPGGA_G_Qo_ 7SwiftUI4ViewPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQO AA15ModifiedContentV AA6VStackV AA05TupleJ0V AA6SpacerV 22FitnessMachineServices0o11PairingLogoC0V AA16_FixedSizeLayoutV AA6IDViewV AA4TextV AA21_TraitWritingModifierV AA010TransitionX3KeyV AA015_EnvironmentKeyyZ0V AA0W9AlignmentO AA012_ConditionalJ0V AcAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQO AR07WorkoutO14ActivityButtonV 11WorkoutCore32WorkoutVoiceAvailabilityProviderC AA023AccessibilityAttachmentZ0V AA08_PaddingU0V s5NeverO AA016_ForegroundStyleZ0V AA22HierarchicalShapeStyleV
 - _symbolic _____y_____y_____y_____y_____yAByABy_____yAByABy__________y_____GGAFy_____SgGG_Qo______y_____GG_____G_AByAmFyAPSgGGSgQPGG_____GG______Qo_ 7SwiftUI4ViewPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQO AA6ButtonV AA15ModifiedContentV AA6VStackV AA05TupleJ0V AcAE10fontWeightyQrAA4FontV0N0VSgFQO AA4TextV AA30_EnvironmentKeyWritingModifierV AA0P9AlignmentO AQ AA016_ForegroundStyleT0V AA5ColorV AA023AccessibilityAttachmentT0V AA16_FlexFrameLayoutV 11WorkoutCore29WorkoutVoiceAvailabilityStateO
 - _symbolic _____y_____y_____y_____y_____y_____yACy_____y_____y______ACy__________G_____yACyACy__________y_____GG_____y_____GGSSGAEyADy_____yAUyAUyACy_____y___________Qo______GSgAZGAEyACyACyAX_____GAYG_AZQPGG_____GG_ACyACyAkRG_____y_____GGQPGSgAFQPGGA1_G_Qo______GG_Qo__Qo_G 7SwiftUI14GeometryReaderV AA4ViewPAAE16scrollIndicators_4axesQrAA25ScrollIndicatorVisibilityV_AA4AxisO3SetVtFQO AeAE0F14BounceBehavior_AGQrAA0inO0V_AMtFQO AA0iE0V AA15ModifiedContentV AeAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQO AA6VStackV AA05TupleQ0V AA6SpacerV 22FitnessMachineServices018MachinePairingLogoE0V AA16_FixedSizeLayoutV AA6IDViewV AA4TextV AA21_TraitWritingModifierV AA18TransitionTraitKeyV AA30_EnvironmentKeyWritingModifierV AA13TextAlignmentO AA012_ConditionalQ0V AeAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQO A5_28WorkoutMachineActivityButtonV 11WorkoutCore32WorkoutVoiceAvailabilityProviderC AA31AccessibilityAttachmentModifierV AA14_PaddingLayoutV s5NeverO AA24_ForegroundStyleModifierV AA22HierarchicalShapeStyleV AA16_FlexFrameLayoutV
-
 ```

@@ -2,116 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/AVFCore.framework/AVFCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21a69c` | `0x21d068` | **`+0x29cc`** |
+| `__AUTH.__objc_data` | `0x7e20` | `0x8d48` | **`+0xf28`** |
+| `__DATA_DIRTY.__objc_data` | `0x3700` | `0x2828` | **`-0xed8`** |
+| `__TEXT.__oslogstring` | `0x2051a` | `0x20ab9` | **`+0x59f`** |
+| `__AUTH_CONST.__objc_const` | `0x32070` | `0x32598` | **`+0x528`** |
+| `__TEXT.__cstring` | `0x34f13` | `0x35323` | **`+0x410`** |
+| `__TEXT.__objc_methlist` | `0x1bca4` | `0x1bed4` | **`+0x230`** |
+| `__TEXT.__gcc_except_tab` | `0xb1a8` | `0xb348` | **`+0x1a0`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb408` | `0xb528` | **`+0x120`** |
+| `__AUTH_CONST.__cfstring` | `0x1a880` | `0x1a920` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0xa610` | `0xa6a8` | **`+0x98`** |
+| `__DATA.__bss` | `0x1460` | `0x13d0` | **`-0x90`** |
+| `__DATA_DIRTY.__bss` | `0x189` | `0x211` | **`+0x88`** |
+| `__DATA_CONST.__got` | `0x47a8` | `0x4820` | **`+0x78`** |
+| `__DATA.__objc_ivar` | `0x2758` | `0x27bc` | **`+0x64`** |
+| `__DATA.__data` | `0x183c` | `0x189c` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x5b18` | `0x5b58` | **`+0x40`** |
+| `__DATA_DIRTY.__common` | `0x2b0` | `0x2e0` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x2060` | `0x2070` | **`+0x10`** |
+| `__DATA.__common` | `0x460` | `0x450` | **`-0x10`** |
+| `__AUTH.__data` | `0x1e8` | `0x1f0` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x1210` | `0x1218` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x1d8` | `0x1e0` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0xd48` | `0xd50` | **`+0x8`** |
+| `__DATA_DIRTY.__data` | `0x8` | `—` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x21a69c
-+  __TEXT.__text: 0x21d068
-   __TEXT.__delay_helper: 0x1bc
--  __TEXT.__objc_methlist: 0x1bca4
--  __TEXT.__cstring: 0x34f13
-+  __TEXT.__objc_methlist: 0x1bed4
-+  __TEXT.__cstring: 0x35323
-   __TEXT.__const: 0x1f38
--  __TEXT.__gcc_except_tab: 0xb1a8
--  __TEXT.__oslogstring: 0x2051a
-+  __TEXT.__gcc_except_tab: 0xb348
-+  __TEXT.__oslogstring: 0x20ab9
-   __TEXT.__ustring: 0x18
-   __TEXT.__dlopen_cstrs: 0x56
-   __TEXT.__swift5_typeref: 0x40d
+-2450.63.2.0.0
++2450.67.3.0.0
 
-   __TEXT.__swift5_proto: 0x6c
-   __TEXT.__swift5_types: 0x48
-   __TEXT.__swift5_capture: 0x60
--  __TEXT.__unwind_info: 0xa610
-+  __TEXT.__unwind_info: 0xa6a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x5b18
--  __DATA_CONST.__objc_classlist: 0x1210
-+  __DATA_CONST.__const: 0x5b58
-+  __DATA_CONST.__objc_classlist: 0x1218
-   __DATA_CONST.__objc_catlist: 0x10
--  __DATA_CONST.__objc_protolist: 0x1d8
-+  __DATA_CONST.__objc_protolist: 0x1e0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb408
-+  __DATA_CONST.__objc_selrefs: 0xb528
-   __DATA_CONST.__objc_protorefs: 0x60
--  __DATA_CONST.__objc_superrefs: 0xd48
-+  __DATA_CONST.__objc_superrefs: 0xd50
-   __DATA_CONST.__objc_arraydata: 0x310
--  __DATA_CONST.__got: 0x47a8
-+  __DATA_CONST.__got: 0x4820
-   __AUTH_CONST.__const: 0x1218
--  __AUTH_CONST.__cfstring: 0x1a880
--  __AUTH_CONST.__objc_const: 0x32070
-+  __AUTH_CONST.__cfstring: 0x1a920
-+  __AUTH_CONST.__objc_const: 0x32598
-   __AUTH_CONST.__objc_intobj: 0x288
-   __AUTH_CONST.__objc_arrayobj: 0x360
-   __AUTH_CONST.__objc_doubleobj: 0x30
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x2060
--  __AUTH.__objc_data: 0x7e20
--  __AUTH.__data: 0x1e8
--  __DATA.__objc_ivar: 0x2758
--  __DATA.__data: 0x183c
-+  __AUTH_CONST.__auth_got: 0x2070
-+  __AUTH.__objc_data: 0x8d48
-+  __AUTH.__data: 0x1f0
-+  __DATA.__objc_ivar: 0x27bc
-+  __DATA.__data: 0x189c
-   __DATA.__crash_info: 0x148
--  __DATA.__common: 0x460
--  __DATA.__bss: 0x1460
--  __DATA_DIRTY.__objc_data: 0x3700
--  __DATA_DIRTY.__data: 0x8
--  __DATA_DIRTY.__common: 0x2b0
--  __DATA_DIRTY.__bss: 0x189
-+  __DATA.__common: 0x450
-+  __DATA.__bss: 0x13d0
-+  __DATA_DIRTY.__objc_data: 0x2828
-+  __DATA_DIRTY.__common: 0x2e0
-+  __DATA_DIRTY.__bss: 0x211
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVRouting.framework/AVRouting
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-
-   - /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices
 +  - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12510
--  Symbols:   42891
--  CStrings:  9854
+-  Symbols:   23761
+-  CStrings:  6464
 +  Functions: 12570
-+  Symbols:   43098
-+  CStrings:  9895
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
++  Symbols:   23860
++  CStrings:  6500
 Symbols:
 + +[AVAssetWritingPlannerTrackSegmentState fromDictionary:mediaType:error:]
 + +[AVSystemMuteObserver initialize]
@@ -304,35 +239,6 @@ Symbols:
 + _gAVSystemMuteObserverTrace
 + _kAXSAutomaticSubtitlesShowWhenMutedEnabledNotification
 + _notify_register_dispatch
-+ _objc_msgSend$_displaySize_invokeOnMainQueue
-+ _objc_msgSend$_evaluate
-+ _objc_msgSend$_isEffectivelyMuted
-+ _objc_msgSend$_maximumAVPlayerLayerDisplaySize_invokeOnMainQueue
-+ _objc_msgSend$_notifyDelegateOfChange
-+ _objc_msgSend$_refreshCachedCaptionsOnMutePreferenceEnabled
-+ _objc_msgSend$_startObservingAccessibility
-+ _objc_msgSend$_startObservingOnIPhoneFamily
-+ _objc_msgSend$_stopObservingOnIPhoneFamily
-+ _objc_msgSend$_updateCaptionAppearanceDisplayTypeOverride
-+ _objc_msgSend$allSegmentsCompleted
-+ _objc_msgSend$callWritingSegmentCallbackForTrack:mediaType:mediaSubType:segmentOverlapDuration:segmentFlushDuration:segmentState:isFirstSegment:isLastSegment:initialClientState:finalClientState:initialCompressionSessionState:finalCompressionSessionState:progress:error:
-+ _objc_msgSend$fromDictionary:mediaType:error:
-+ _objc_msgSend$initWithDomain:code:userInfo:
-+ _objc_msgSend$isCaptionsOnMutePreferenceEnabled
-+ _objc_msgSend$isOverridingCaptionDisplayTypeWhileMuted
-+ _objc_msgSend$isSystemMuted
-+ _objc_msgSend$mediaSubType
-+ _objc_msgSend$overlapDuration
-+ _objc_msgSend$requiresCompression
-+ _objc_msgSend$segmentFlushDuration
-+ _objc_msgSend$segmentOverlapDuration
-+ _objc_msgSend$setAllSegmentsCompleted:
-+ _objc_msgSend$setAudioCodecType:
-+ _objc_msgSend$setRequiresCompression:
-+ _objc_msgSend$startObservingWithDelegate:
-+ _objc_msgSend$stopObserving
-+ _objc_msgSend$systemMuteDidChange:
-+ _objc_msgSend$videoCodec
 - +[AVAssetWritingPlannerTrackSegmentState fromDictionary:error:]
 - -[AVAssetTrackPlan requiresVideoCompression]
 - -[AVAssetTrackPlanExecutor callWritingSegmentCallbackForTrack:segmentState:isFirstSegment:isLastSegment:initialClientState:finalClientState:initialCompressionSessionState:finalCompressionSessionState:progress:error:]
@@ -425,11 +331,6 @@ Symbols:
 - ___216-[AVAssetTrackPlanExecutor callWritingSegmentCallbackForTrack:segmentState:isFirstSegment:isLastSegment:initialClientState:finalClientState:initialCompressionSessionState:finalCompressionSessionState:progress:error:]_block_invoke
 - ___216-[AVAssetTrackPlanExecutor callWritingSegmentCallbackForTrack:segmentState:isFirstSegment:isLastSegment:initialClientState:finalClientState:initialCompressionSessionState:finalCompressionSessionState:progress:error:]_block_invoke_2
 - ___77-[AVPlayer(AVPlayerLegibleFallback) setCaptionAppearanceDisplayTypeOverride:]_block_invoke_2
-- _objc_msgSend$_displaySize
-- _objc_msgSend$_maximumAVPlayerLayerDisplaySize
-- _objc_msgSend$callWritingSegmentCallbackForTrack:segmentState:isFirstSegment:isLastSegment:initialClientState:finalClientState:initialCompressionSessionState:finalCompressionSessionState:progress:error:
-- _objc_msgSend$requiresVideoCompression
-- _objc_msgSend$setRequiresVideoCompression:
 CStrings:
 + "+[AVAssetWritingPlannerTrackSegmentState fromDictionary:mediaType:error:]"
 + "-[AVAssetTrackPlanExecutor callWritingSegmentCallbackForTrack:mediaType:mediaSubType:segmentOverlapDuration:segmentFlushDuration:segmentState:isFirstSegment:isLastSegment:initialClientState:finalClientState:initialCompressionSessionState:finalCompressionSessionState:progress:error:]"
@@ -487,5 +388,4 @@ CStrings:
 - "RequiresVideoCompression not found in dictionary"
 - "requiresVideoCompression not found from dictionary"
 - "requiresVideoCompressionNumber is not NSNumber"
-
 ```

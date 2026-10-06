@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MusicLibrary.framework/MusicLibrary`
 
-```diff
+### Section Size Changes
 
- 4026.100.84.0.0
--  __TEXT.__text: 0x3b4ebc
-+  __TEXT.__text: 0x3b4ee0
-   __TEXT.__objc_methlist: 0xe714
-   __TEXT.__const: 0x25d54
-   __TEXT.__dlopen_cstrs: 0x2d1
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3b4ebc` | `0x3b4ee0` | **`+0x24`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _iPhoneSortKeyBuilderCreate : 1620 -> 1616
 ~ __ZNSt3__16vectorIyNS_9allocatorIyEEE24__emplace_back_slow_pathIJyEEEPyDpOT_ : 184 -> 176

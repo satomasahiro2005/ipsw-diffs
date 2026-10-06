@@ -2,57 +2,33 @@
 
 > `/System/Library/AccessibilityBundles/VectorKit.axbundle/VectorKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x27ff8` | `0x29664` | **`+0x166c`** |
+| `__AUTH_CONST.__cfstring` | `0x2780` | `0x2be0` | **`+0x460`** |
+| `__TEXT.__gcc_except_tab` | `0x4e48` | `0x510c` | **`+0x2c4`** |
+| `__TEXT.__cstring` | `0x238b` | `0x24d8` | **`+0x14d`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2168` | `0x2210` | **`+0xa8`** |
+| `__TEXT.__unwind_info` | `0x1340` | `0x13c0` | **`+0x80`** |
+| `__TEXT.__objc_methlist` | `0x2b90` | `0x2bf0` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x8c0` | `0x8e8` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0x5b0` | `0x5b8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3048.0.0.0.0
--  __TEXT.__text: 0x27404
--  __TEXT.__objc_methlist: 0x2b90
 +3050.3.0.0.0
-+  __TEXT.__text: 0x28a28
-+  __TEXT.__objc_methlist: 0x2bf0
-   __TEXT.__const: 0x280
--  __TEXT.__gcc_except_tab: 0x4e48
--  __TEXT.__cstring: 0x238b
-+  __TEXT.__gcc_except_tab: 0x510c
-+  __TEXT.__cstring: 0x24d8
-   __TEXT.__ustring: 0x8
-   __TEXT.__oslogstring: 0x294
--  __TEXT.__unwind_info: 0x13b8
-+  __TEXT.__unwind_info: 0x1438
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x8c0
-+  __DATA_CONST.__const: 0x8e8
-   __DATA_CONST.__objc_classlist: 0x120
-   __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2168
-+  __DATA_CONST.__objc_selrefs: 0x2210
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0xd0
-   __DATA_CONST.__objc_arraydata: 0x48
--  __DATA_CONST.__got: 0x5b0
-+  __DATA_CONST.__got: 0x5b8
-   __AUTH_CONST.__const: 0x2d0
--  __AUTH_CONST.__cfstring: 0x2780
-+  __AUTH_CONST.__cfstring: 0x2be0
-   __AUTH_CONST.__objc_const: 0x3928
-   __AUTH_CONST.__weak_auth_got: 0x8
-   __AUTH_CONST.__objc_arrayobj: 0x18
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 881
--  Symbols:   2788
+-  Symbols:   2024
 -  CStrings:  401
 +  Functions: 894
-+  Symbols:   2834
++  Symbols:   2049
 +  CStrings:  436
- 
 Symbols:
 + -[VKMapViewAccessibility _axMapAltitude]
 + -[VKMapViewAccessibility _axMapAutomationValue]
@@ -146,28 +122,6 @@ Symbols:
 + ___57-[VKMapViewAccessibility _axMapRegionIgnoringEdgeInsets:]_block_invoke
 + ___block_descriptor_49_ea8_32s40r_e5_v8?0lr40l8s32l8
 + _fmod
-+ _objc_msgSend$_axMapAltitude
-+ _objc_msgSend$_axMapAutomationValue
-+ _objc_msgSend$_axMapCameraDistance
-+ _objc_msgSend$_axMapCameraValue
-+ _objc_msgSend$_axMapCenterValue
-+ _objc_msgSend$_axMapPitch
-+ _objc_msgSend$_axMapRegionCorners:
-+ _objc_msgSend$_axMapRegionIgnoringEdgeInsets:
-+ _objc_msgSend$_axMapRegionValue:
-+ _objc_msgSend$decimalNumberWithString:
-+ _objc_msgSend$distanceFromCenterCoordinate
-+ _objc_msgSend$eastLng
-+ _objc_msgSend$hasEastLng
-+ _objc_msgSend$hasNorthLat
-+ _objc_msgSend$hasSouthLat
-+ _objc_msgSend$hasWestLng
-+ _objc_msgSend$mapRegion
-+ _objc_msgSend$mapRegionIgnoringEdgeInsets
-+ _objc_msgSend$northLat
-+ _objc_msgSend$southLat
-+ _objc_msgSend$vertexs
-+ _objc_msgSend$westLng
 - -[VKMapViewAccessibility _axMapStyleAutomationValue]
 - GCC_except_table541
 - GCC_except_table550
@@ -235,7 +189,6 @@ Symbols:
 - GCC_except_table842
 - GCC_except_table843
 - GCC_except_table869
-- _objc_msgSend$_axMapStyleAutomationValue
 CStrings:
 + "%.*f"
 + "GEOLatLng"

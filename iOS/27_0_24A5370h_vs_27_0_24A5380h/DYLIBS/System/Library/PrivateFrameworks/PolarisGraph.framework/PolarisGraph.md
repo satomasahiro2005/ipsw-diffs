@@ -2,61 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/PolarisGraph.framework/PolarisGraph`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__objc_const` | `0x4cb8` | `0x4d00` | **`+0x48`** |
+| `__TEXT.__objc_methlist` | `0x2d60` | `0x2d94` | **`+0x34`** |
+| `__TEXT.__text` | `0x23f74` | `0x23f9c` | **`+0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1758` | `0x1770` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x368` | `0x36c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x23f74
--  __TEXT.__objc_methlist: 0x2d60
-+  __TEXT.__text: 0x23f9c
-+  __TEXT.__objc_methlist: 0x2d94
-   __TEXT.__const: 0xc1
-   __TEXT.__cstring: 0x2aa9
-   __TEXT.__oslogstring: 0x732
+-256.0.2.500.1
++256.0.3.0.0
 
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1758
-+  __DATA_CONST.__objc_selrefs: 0x1770
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x120
-   __DATA_CONST.__got: 0x1c0
-   __AUTH_CONST.__const: 0x188
-   __AUTH_CONST.__cfstring: 0x1cc0
--  __AUTH_CONST.__objc_const: 0x4cb8
-+  __AUTH_CONST.__objc_const: 0x4d00
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x18
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__objc_ivar: 0x368
-+  __DATA.__objc_ivar: 0x36c
-   __DATA.__data: 0x4d8
-   __DATA.__bss: 0x60
-   __DATA_DIRTY.__objc_data: 0xb90
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1140
--  Symbols:   3492
+-  Symbols:   2066
 +  Functions: 1143
-+  Symbols:   3500
-   CStrings:  636
- 
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   2069
 Symbols:
 + -[PSContext addResourceStream:withInitialAvailability:isDynamic:]
 + -[PSResourceStream isDynamic]
@@ -88,8 +54,6 @@ Symbols:
 + GCC_except_table90
 + GCC_except_table96
 + _OBJC_IVAR_$_PSResourceStream._isDynamic
-+ _objc_msgSend$addResourceStream:withInitialAvailability:isDynamic:
-+ _objc_msgSend$setIsDynamic:
 - GCC_except_table106
 - GCC_except_table109
 - GCC_except_table130
@@ -117,6 +81,4 @@ Symbols:
 - GCC_except_table94
 - GCC_except_table98
 - GCC_except_table99
-- _objc_msgSend$addResourceStream:withInitialAvailability:
-
 ```

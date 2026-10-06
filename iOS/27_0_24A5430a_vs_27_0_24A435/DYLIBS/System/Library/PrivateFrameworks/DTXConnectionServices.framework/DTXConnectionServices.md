@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/DTXConnectionServices.framework/DTXConnectionServices`
 
-```diff
+### Section Size Changes
 
- 64578.160.1.0.0
--  __TEXT.__text: 0x1c1ec
-+  __TEXT.__text: 0x1c1e0
-   __TEXT.__objc_methlist: 0x123c
-   __TEXT.__const: 0x1c8
-   __TEXT.__cstring: 0x218d
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c1ec` | `0x1c1e0` | **`-0xc`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_25e26d994 -> sub_25ef67994 : 1264 -> 1252
+~ sub_25e13c994 -> sub_25ee4b994 : 1264 -> 1252
 ```

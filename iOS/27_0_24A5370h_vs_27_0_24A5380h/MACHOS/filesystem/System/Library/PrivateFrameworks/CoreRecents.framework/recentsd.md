@@ -2,18 +2,21 @@
 
 > `/System/Library/PrivateFrameworks/CoreRecents.framework/recentsd`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x177d8
-+  __TEXT.__text: 0x177c4
-   __TEXT.__auth_stubs: 0xd50
-   __TEXT.__objc_stubs: 0x4000
-   __TEXT.__objc_methlist: 0x142c
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x177d8` | `0x177c4` | **`-0x14`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__const`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_100016858 : 388 -> 368
-
 ```

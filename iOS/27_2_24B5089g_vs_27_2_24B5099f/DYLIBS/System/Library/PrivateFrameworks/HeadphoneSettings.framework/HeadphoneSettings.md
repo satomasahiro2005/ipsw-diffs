@@ -2,19 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/HeadphoneSettings.framework/HeadphoneSettings`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__oslogstring` | `0x954` | `0x964` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -2701.2.0.0.0
 +2701.4.0.0.0
-   __TEXT.__text: 0xcfc8
-   __TEXT.__objc_methlist: 0xe24
-   __TEXT.__const: 0x374
-   __TEXT.__cstring: 0xc79
--  __TEXT.__oslogstring: 0x954
-+  __TEXT.__oslogstring: 0x964
-   __TEXT.__gcc_except_tab: 0x1c0
-   __TEXT.__constg_swiftt: 0xa4
-   __TEXT.__swift5_typeref: 0xfa
 Symbols:
 + _OBJC_CLASS_$_DADaemonSession
 - _OBJC_CLASS_$_DASession

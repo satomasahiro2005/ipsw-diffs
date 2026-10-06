@@ -2,104 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/LocalFederatedSearch.framework/LocalFederatedSearch`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb1348` | `0xbd4fc` | **`+0xc1b4`** |
+| `__AUTH_CONST.__const` | `0x5e90` | `0x6ad8` | **`+0xc48`** |
+| `__TEXT.__cstring` | `0x2ad8` | `0x32e8` | **`+0x810`** |
+| `__TEXT.__eh_frame` | `0x6188` | `0x6988` | **`+0x800`** |
+| `__TEXT.__const` | `0x55b8` | `0x5be8` | **`+0x630`** |
+| `__TEXT.__swift5_reflstr` | `0x1a33` | `0x1e83` | **`+0x450`** |
+| `__TEXT.__swift5_fieldmd` | `0x1a04` | `0x1d14` | **`+0x310`** |
+| `__TEXT.__unwind_info` | `0x3150` | `0x33a0` | **`+0x250`** |
+| `__TEXT.__constg_swiftt` | `0x11f0` | `0x1310` | **`+0x120`** |
+| `__TEXT.__swift_as_entry` | `0x1dc` | `0x268` | **`+0x8c`** |
+| `__TEXT.__oslogstring` | `0x15f9` | `0x1669` | **`+0x70`** |
+| `__TEXT.__swift5_capture` | `0x110c` | `0x116c` | **`+0x60`** |
+| `__TEXT.__swift_as_ret` | `0x1bc` | `0x204` | **`+0x48`** |
+| `__AUTH_CONST.__auth_got` | `0xdb0` | `0xdf0` | **`+0x40`** |
+| `__TEXT.__swift_as_cont` | `0x2f4` | `0x32c` | **`+0x38`** |
+| `__DATA_CONST.__objc_selrefs` | `0x250` | `0x278` | **`+0x28`** |
+| `__TEXT.__swift5_types` | `0x178` | `0x1a0` | **`+0x28`** |
+| `__TEXT.__swift5_proto` | `0x2bc` | `0x2dc` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x8c8` | `0x8e0` | **`+0x18`** |
+| `__DATA.__data` | `0x12a8` | `0x1298` | **`-0x10`** |
+| `__DATA.__common` | `0xc8` | `0xd0` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0x1676` | `0x167c` | **`+0x6`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xb1348
-+  __TEXT.__text: 0xbd4fc
-   __TEXT.__objc_methlist: 0x2c
--  __TEXT.__const: 0x55b8
--  __TEXT.__swift5_typeref: 0x1676
--  __TEXT.__cstring: 0x2ad8
--  __TEXT.__constg_swiftt: 0x11f0
--  __TEXT.__swift5_reflstr: 0x1a33
--  __TEXT.__swift5_fieldmd: 0x1a04
--  __TEXT.__swift5_capture: 0x110c
--  __TEXT.__swift5_proto: 0x2bc
--  __TEXT.__swift5_types: 0x178
--  __TEXT.__swift_as_entry: 0x1dc
--  __TEXT.__swift_as_ret: 0x1bc
--  __TEXT.__swift_as_cont: 0x2f4
--  __TEXT.__oslogstring: 0x15f9
-+  __TEXT.__const: 0x5be8
-+  __TEXT.__swift5_typeref: 0x167c
-+  __TEXT.__cstring: 0x32e8
-+  __TEXT.__constg_swiftt: 0x1310
-+  __TEXT.__swift5_reflstr: 0x1e83
-+  __TEXT.__swift5_fieldmd: 0x1d14
-+  __TEXT.__swift5_capture: 0x116c
-+  __TEXT.__swift5_proto: 0x2dc
-+  __TEXT.__swift5_types: 0x1a0
-+  __TEXT.__swift_as_entry: 0x268
-+  __TEXT.__swift_as_ret: 0x204
-+  __TEXT.__swift_as_cont: 0x32c
-+  __TEXT.__oslogstring: 0x1669
-   __TEXT.__swift5_assocty: 0x150
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__unwind_info: 0x3150
--  __TEXT.__eh_frame: 0x6188
-+  __TEXT.__unwind_info: 0x33a0
-+  __TEXT.__eh_frame: 0x6988
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x8c8
-+  __DATA_CONST.__const: 0x8e0
-   __DATA_CONST.__objc_classlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x250
-+  __DATA_CONST.__objc_selrefs: 0x278
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x5e90
-+  __AUTH_CONST.__const: 0x6ad8
-   __AUTH_CONST.__objc_const: 0xaf0
--  __AUTH_CONST.__auth_got: 0xdb0
-+  __AUTH_CONST.__auth_got: 0xdf0
-   __AUTH.__objc_data: 0xa0
-   __AUTH.__data: 0x1838
--  __DATA.__data: 0x12a8
-+  __DATA.__data: 0x1298
-   __DATA.__bss: 0x4e00
--  __DATA.__common: 0xc8
-+  __DATA.__common: 0xd0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+-3600.56.11.0.0
++3600.56.20.0.0
 
-   - /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
-   - /System/Library/PrivateFrameworks/CollectionsInternal.framework/CollectionsInternal
-   - /System/Library/PrivateFrameworks/FeatureStore.framework/FeatureStore
 -  - /System/Library/PrivateFrameworks/GenerativeSearch.framework/GenerativeSearch
 -  - /System/Library/PrivateFrameworks/GenerativeSearchAdapter.framework/GenerativeSearchAdapter
 +  - /System/Library/PrivateFrameworks/HybridSearch.framework/HybridSearch
 +  - /System/Library/PrivateFrameworks/HybridSearchAdapter.framework/HybridSearchAdapter
-   - /System/Library/PrivateFrameworks/IntelligencePlatform.framework/IntelligencePlatform
-   - /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf
-   - /System/Library/PrivateFrameworks/MediaAnalysisServices.framework/MediaAnalysisServices
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5528
--  Symbols:   14837
+-  Symbols:   7992
 -  CStrings:  414
 +  Functions: 5832
-+  Symbols:   16000
++  Symbols:   8541
 +  CStrings:  475
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
 Symbols:
 + _$s10Foundation10NSNotFoundSivg
 + _$s10Foundation22_convertNSErrorToErrorys0E0_pSo0C0CSgF
@@ -846,11 +793,6 @@ Symbols:
 + ___swift__destructor.14Tm
 + ___swift_closure_destructor.109Tm
 + ___swift_exist.box.addr_destructor.82Tm
-+ _objc_msgSend$firstMatchInString:options:range:
-+ _objc_msgSend$initWithPattern:options:error:
-+ _objc_msgSend$matchesInString:options:range:
-+ _objc_msgSend$numberOfRanges
-+ _objc_msgSend$rangeAtIndex:
 + _objc_retain_x22
 + _symbolic Say_____G 12HybridSearch9MailQueryV
 + _symbolic Say_____G 19HybridSearchAdapter04MailB6ResultO
@@ -1199,5 +1141,4 @@ CStrings:
 - " || _kMDItemAppEntityTypeIdentifier == \"MessageEntity\""
 - " || _kMDItemAppEntityTypeIdentifier == \"NoteEntity\""
 - "kMDItemLocation == \"*"
-
 ```

@@ -2,19 +2,11 @@
 
 > `/System/Library/ExtensionKit/Extensions/MercuryPosterExtension.appex/Space.metallib`
 
-```diff
+### Section Size Changes
 
-   __TEXT.__reflection: 0x97b0
--  __TEXT.__vertex: 0x53480
--  __TEXT.__fragment: 0x9f0e0
--  __TEXT.__compute: 0x740
-+  __TEXT.__vertex: 0x53540
-+  __TEXT.__fragment: 0x9f230
-+  __TEXT.__compute: 0x750
-   __TEXT.__descriptor: 0x3c0
--  __TEXT.__metallib: 0x1ee160
-+  __TEXT.__metallib: 0x1fd130
-   Functions: 0
-   Symbols:   0
-   CStrings:  0
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__metallib` | `0x1ee160` | `0x1fd130` | **`+0xefd0`** |
+| `__TEXT.__fragment` | `0xa04a0` | `0xa05e0` | **`+0x140`** |
+| `__TEXT.__vertex` | `0x53ed0` | `0x53f90` | **`+0xc0`** |
+| `__TEXT.__compute` | `0x6f0` | `0x710` | **`+0x20`** |

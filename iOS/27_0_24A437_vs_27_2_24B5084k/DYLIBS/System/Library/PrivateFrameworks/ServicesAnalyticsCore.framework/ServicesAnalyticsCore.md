@@ -2,60 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/ServicesAnalyticsCore.framework/ServicesAnalyticsCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x18fe8` | `0x18910` | **`-0x6d8`** |
+| `__DATA.__bss` | `0x7f00` | `0x7c80` | **`-0x280`** |
+| `__TEXT.__const` | `0x4170` | `0x4040` | **`-0x130`** |
+| `__AUTH_CONST.__const` | `0x1df8` | `0x1d68` | **`-0x90`** |
+| `__TEXT.__swift5_typeref` | `0xa5e` | `0x9fc` | **`-0x62`** |
+| `__TEXT.__cstring` | `0x788` | `0x738` | **`-0x50`** |
+| `__TEXT.__swift5_fieldmd` | `0xb10` | `0xad0` | **`-0x40`** |
+| `__DATA.__data` | `0xae0` | `0xab8` | **`-0x28`** |
+| `__TEXT.__constg_swiftt` | `0x944` | `0x920` | **`-0x24`** |
+| `__TEXT.__swift5_reflstr` | `0x4b2` | `0x492` | **`-0x20`** |
+| `__TEXT.__unwind_info` | `0x9d0` | `0x9b8` | **`-0x18`** |
+| `__TEXT.__swift5_proto` | `0x3f8` | `0x3e4` | **`-0x14`** |
+| `__TEXT.__swift5_types` | `0xec` | `0xe8` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3.0.59.0.0
--  __TEXT.__text: 0x183e8
--  __TEXT.__const: 0x4170
--  __TEXT.__cstring: 0x788
--  __TEXT.__constg_swiftt: 0x944
--  __TEXT.__swift5_typeref: 0xa5e
--  __TEXT.__swift5_fieldmd: 0xb10
--  __TEXT.__swift5_types: 0xec
--  __TEXT.__swift5_reflstr: 0x4b2
 +3.1.10.0.0
-+  __TEXT.__text: 0x17d48
-+  __TEXT.__const: 0x4040
-+  __TEXT.__cstring: 0x738
-+  __TEXT.__constg_swiftt: 0x920
-+  __TEXT.__swift5_typeref: 0x9fc
-+  __TEXT.__swift5_fieldmd: 0xad0
-+  __TEXT.__swift5_types: 0xe8
-+  __TEXT.__swift5_reflstr: 0x492
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__swift5_proto: 0x3f8
-+  __TEXT.__swift5_proto: 0x3e4
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_mpenum: 0x40
-   __TEXT.__swift5_assocty: 0x18
-   __TEXT.__swift5_capture: 0x20
--  __TEXT.__unwind_info: 0xc30
-+  __TEXT.__unwind_info: 0xc08
-   __TEXT.__eh_frame: 0xb90
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1df8
-+  __AUTH_CONST.__const: 0x1d68
-   __AUTH_CONST.__auth_got: 0x380
-   __AUTH.__data: 0x220
--  __DATA.__data: 0xae0
-+  __DATA.__data: 0xab8
-   __DATA_DIRTY.__data: 0x80
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /usr/lib/libSystem.B.dylib
 
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 875
 -  Symbols:   385
 -  CStrings:  54
 +  Functions: 872
 +  Symbols:   380
 +  CStrings:  52
- 
 Symbols:
 + _get_enum_tag_for_layout_string 21ServicesAnalyticsCore0C30OriginProcessAMSMetricsContextVSg
 + _symbolic _____Sg 21ServicesAnalyticsCore0C30OriginProcessAMSMetricsContextV

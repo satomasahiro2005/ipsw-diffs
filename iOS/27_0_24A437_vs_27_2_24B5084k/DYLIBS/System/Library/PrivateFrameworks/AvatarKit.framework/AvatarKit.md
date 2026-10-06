@@ -2,15 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/AvatarKit.framework/AvatarKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x77804` | `0x777e4` | **`-0x20`** |
+
+### Other Changes
+
 ```diff
 
 -368.0.0.0.0
--  __TEXT.__text: 0x752dc
 +368.100.0.0.0
-+  __TEXT.__text: 0x752bc
-   __TEXT.__objc_methlist: 0x54c4
-   __TEXT.__const: 0xb2c
-   __TEXT.__cstring: 0x1df4c
 Functions:
-~ -[AVTSnapshotHelper newCGImageWithRenderer:antialiasingMode:pixelWidth:pixelHeight:error:] : 2452 -> 2420
+~ -[AVTSnapshotHelper newCGImageWithRenderer:antialiasingMode:pixelWidth:pixelHeight:error:] : 2460 -> 2428
 ```

@@ -2,102 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/PhotoImaging.framework/PhotoImaging`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x29d108` | `0x29e948` | **`+0x1840`** |
+| `__DATA.__data` | `0x17f8` | `0x3c4` | **`-0x1434`** |
+| `__DATA_DIRTY.__data` | `0x178` | `0x1598` | **`+0x1420`** |
+| `__DATA_DIRTY.__objc_data` | `0xa890` | `0xb1f8` | **`+0x968`** |
+| `__AUTH.__objc_data` | `0x968` | `0xa0` | **`-0x8c8`** |
+| `__AUTH_CONST.__objc_const` | `0x29c40` | `0x29e08` | **`+0x1c8`** |
+| `__TEXT.__cstring` | `0x4aabd` | `0x4ac49` | **`+0x18c`** |
+| `__DATA_CONST.__objc_arraydata` | `0x9518` | `0x9660` | **`+0x148`** |
+| `__TEXT.__objc_methlist` | `0x17340` | `0x17460` | **`+0x120`** |
+| `__TEXT.__oslogstring` | `0x7db1` | `0x7e71` | **`+0xc0`** |
+| `__AUTH_CONST.__cfstring` | `0x29ea0` | `0x29f40` | **`+0xa0`** |
+| `__DATA.__bss` | `0x1a80` | `0x1b10` | **`+0x90`** |
+| `__AUTH_CONST.__objc_dictobj` | `0x5b90` | `0x5c08` | **`+0x78`** |
+| `__AUTH_CONST.__const` | `0x5628` | `0x5688` | **`+0x60`** |
+| `__DATA_CONST.__objc_selrefs` | `0xbd10` | `0xbd70` | **`+0x60`** |
+| `__DATA_DIRTY.__bss` | `0x258` | `0x1f8` | **`-0x60`** |
+| `__TEXT.__unwind_info` | `0x5c30` | `0x5c88` | **`+0x58`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x6c0` | `0x6f0` | **`+0x30`** |
+| `__TEXT.__gcc_except_tab` | `0x4ee0` | `0x4f0c` | **`+0x2c`** |
+| `__DATA_CONST.__const` | `0x4490` | `0x44b8` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0x2810` | `0x2820` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x11a0` | `0x11b0` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x1600` | `0x1608` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x750` | `0x758` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -916.40.110.0.0
--  __TEXT.__text: 0x293d64
 +916.45.110.0.0
-+  __TEXT.__text: 0x295514
-   __TEXT.__delay_helper: 0x1f4
--  __TEXT.__objc_methlist: 0x17340
-+  __TEXT.__objc_methlist: 0x17460
-   __TEXT.__const: 0x8d04
-   __TEXT.__dlopen_cstrs: 0x2a2
-   __TEXT.__swift5_typeref: 0x2d8
--  __TEXT.__cstring: 0x4aabd
-+  __TEXT.__cstring: 0x4ac49
-   __TEXT.__constg_swiftt: 0x230
-   __TEXT.__swift5_reflstr: 0x35f
-   __TEXT.__swift5_fieldmd: 0x3d4
-   __TEXT.__swift5_builtin: 0x78
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_assocty: 0x90
--  __TEXT.__oslogstring: 0x7db1
-+  __TEXT.__oslogstring: 0x7e71
-   __TEXT.__swift5_proto: 0xa0
-   __TEXT.__swift5_types: 0x38
-   __TEXT.__swift_as_entry: 0x14
-   __TEXT.__swift_as_ret: 0x14
-   __TEXT.__swift_as_cont: 0x28
-   __TEXT.__swift5_capture: 0x50
--  __TEXT.__gcc_except_tab: 0x4ee0
--  __TEXT.__unwind_info: 0x6e98
-+  __TEXT.__gcc_except_tab: 0x4f0c
-+  __TEXT.__unwind_info: 0x6ef8
-   __TEXT.__eh_frame: 0xa60
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4490
--  __DATA_CONST.__objc_classlist: 0x11a0
-+  __DATA_CONST.__const: 0x44b8
-+  __DATA_CONST.__objc_classlist: 0x11b0
-   __DATA_CONST.__objc_catlist: 0x50
-   __DATA_CONST.__objc_protolist: 0x1a0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0xbd10
-+  __DATA_CONST.__objc_selrefs: 0xbd70
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__objc_superrefs: 0x750
--  __DATA_CONST.__objc_arraydata: 0x9518
--  __DATA_CONST.__got: 0x2810
--  __AUTH_CONST.__const: 0x5628
--  __AUTH_CONST.__cfstring: 0x29ea0
--  __AUTH_CONST.__objc_const: 0x29c40
-+  __DATA_CONST.__objc_superrefs: 0x758
-+  __DATA_CONST.__objc_arraydata: 0x9660
-+  __DATA_CONST.__got: 0x2820
-+  __AUTH_CONST.__const: 0x5688
-+  __AUTH_CONST.__cfstring: 0x29f40
-+  __AUTH_CONST.__objc_const: 0x29e08
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x1668
--  __AUTH_CONST.__objc_dictobj: 0x5b90
-+  __AUTH_CONST.__objc_dictobj: 0x5c08
-   __AUTH_CONST.__objc_doubleobj: 0xe10
--  __AUTH_CONST.__objc_arrayobj: 0x6c0
-+  __AUTH_CONST.__objc_arrayobj: 0x6f0
-   __AUTH_CONST.__objc_floatobj: 0xd0
-   __AUTH_CONST.__auth_got: 0x1508
--  __AUTH.__objc_data: 0x968
--  __DATA.__objc_ivar: 0x1600
--  __DATA.__data: 0x17f8
--  __DATA_DIRTY.__objc_data: 0xa890
--  __DATA_DIRTY.__data: 0x178
--  __DATA_DIRTY.__bss: 0x258
-+  __AUTH.__objc_data: 0xa0
-+  __DATA.__objc_ivar: 0x1608
-+  __DATA.__data: 0x3c4
-+  __DATA_DIRTY.__objc_data: 0xb1f8
-+  __DATA_DIRTY.__data: 0x1598
-+  __DATA_DIRTY.__bss: 0x1f8
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9484
--  Symbols:   21401
+-  Symbols:   16394
 -  CStrings:  7602
 +  Functions: 9508
-+  Symbols:   21460
++  Symbols:   16441
 +  CStrings:  7616
- 
 Symbols:
 + +[PICinematicVideoUtilities disparityProviderWithQuality:globalRenderingMetadata:inputSize:error:]
 + +[PIModularPhotosPipeline_v0 controlDataWithPortraitEffectAdjustment:descriptor:]
@@ -346,22 +292,6 @@ Symbols:
 + _effectForFilterKind:error:.onceToken
 + _filterKindForEffect:error:.map
 + _filterKindForEffect:error:.onceToken
-+ _objc_msgSend$addPipelineWithBuilder:
-+ _objc_msgSend$buildPipelineWithBuilder:
-+ _objc_msgSend$computePipelineWithProcessorName:bundleIdentifier:error:
-+ _objc_msgSend$controlDataWithPortraitEffectAdjustment:descriptor:
-+ _objc_msgSend$depthEffectDescriptorForAsset:
-+ _objc_msgSend$disparityProviderWithQuality:globalRenderingMetadata:inputSize:error:
-+ _objc_msgSend$effectForFilterKind:error:
-+ _objc_msgSend$filterKindForEffect:error:
-+ _objc_msgSend$initWithAsset:options:
-+ _objc_msgSend$initWithSettings:downloadTimeout:initializationCallback:
-+ _objc_msgSend$lightingEffectDescriptorForAsset:
-+ _objc_msgSend$nonOptionalFormat
-+ _objc_msgSend$portraitSettingsDescriptorForAsset:
-+ _objc_msgSend$portraitSettingsExpressionFunctionClass
-+ _objc_msgSend$renderPipelineWithProcessorName:bundleIdentifier:error:
-+ _objc_msgSend$versionedClassForAsset:
 - +[PIModularPhotosPipeline_v0 controlDataWithPortraitEffectAdjustment:]
 - -[PIPortrait_v2 pipelineName]
 - GCC_except_table1114
@@ -562,10 +492,6 @@ Symbols:
 - GCC_except_table8766
 - GCC_except_table8768
 - GCC_except_table8769
-- _objc_msgSend$computePipelineWithProcessorIdentifier:error:
-- _objc_msgSend$controlDataWithPortraitEffectAdjustment:
-- _objc_msgSend$initWithSettings:
-- _objc_msgSend$renderPipelineWithProcessorIdentifier:error:
 CStrings:
 + "+[PICinematicVideoUtilities disparityProviderWithQuality:globalRenderingMetadata:inputSize:error:]"
 + "+[PIModularPhotosPipeline_v0 controlDataWithPortraitEffectAdjustment:descriptor:]"

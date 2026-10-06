@@ -2,62 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/HomeAccessoryControlUI.framework/HomeAccessoryControlUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3693e4` | `0x3698ac` | **`+0x4c8`** |
+| `__TEXT.__const` | `0x1a1e8` | `0x1a138` | **`-0xb0`** |
+| `__AUTH.__data` | `0x7bb8` | `0x7c48` | **`+0x90`** |
+| `__TEXT.__swift5_typeref` | `0x375a8` | `0x37634` | **`+0x8c`** |
+| `__AUTH_CONST.__const` | `0xc710` | `0xc688` | **`-0x88`** |
+| `__DATA.__data` | `0xa678` | `0xa698` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x7220` | `0x7238` | **`+0x18`** |
+| `__TEXT.__swift5_reflstr` | `0x483a` | `0x484a` | **`+0x10`** |
+| `__TEXT.__constg_swiftt` | `0x6f38` | `0x6f44` | **`+0xc`** |
+| `__TEXT.__swift5_fieldmd` | `0x5e8c` | `0x5e98` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
 -1263.1.0.1.2
--  __TEXT.__text: 0x34d1ac
 +1265.0.0.1.1
-+  __TEXT.__text: 0x34d640
-   __TEXT.__objc_methlist: 0x3dc
--  __TEXT.__const: 0x1a1e8
--  __TEXT.__swift5_typeref: 0x375a8
--  __TEXT.__constg_swiftt: 0x6f38
--  __TEXT.__swift5_reflstr: 0x483a
--  __TEXT.__swift5_fieldmd: 0x5e8c
-+  __TEXT.__const: 0x1a138
-+  __TEXT.__swift5_typeref: 0x37634
-+  __TEXT.__constg_swiftt: 0x6f44
-+  __TEXT.__swift5_reflstr: 0x484a
-+  __TEXT.__swift5_fieldmd: 0x5e98
-   __TEXT.__swift5_builtin: 0x1b8
-   __TEXT.__swift5_assocty: 0x1ba0
-   __TEXT.__swift5_proto: 0xb9c
 
-   __TEXT.__swift_as_cont: 0x334
-   __TEXT.__swift5_mpenum: 0x28
-   __TEXT.__gcc_except_tab: 0x13c
--  __TEXT.__unwind_info: 0x94e0
-+  __TEXT.__unwind_info: 0x9508
-   __TEXT.__eh_frame: 0x52cc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__got: 0x1ac8
--  __AUTH_CONST.__const: 0xc710
-+  __AUTH_CONST.__const: 0xc688
-   __AUTH_CONST.__cfstring: 0x60
-   __AUTH_CONST.__objc_const: 0x1858
-   __AUTH_CONST.__auth_got: 0x3710
-   __AUTH.__objc_data: 0x4f0
--  __AUTH.__data: 0x7bb8
-+  __AUTH.__data: 0x7c48
-   __DATA.__objc_ivar: 0x20
--  __DATA.__data: 0xa678
-+  __DATA.__data: 0xa698
-   __DATA.__common: 0x1e8
-   __DATA_DIRTY.__common: 0x10
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11519
 +  Functions: 11524
-   Symbols:   4796
-   CStrings:  635
- 
 Symbols:
 + _get_witness_table 7SwiftUI19_ConditionalContentVyAA08ModifiedD0VyAEyAEyAEyAEyAA014_ViewModifier_D0Vy020HomeAccessoryControlB00i10DecorationjD5StyleVGAA12_FrameLayoutVGAA011_ForegroundlG0VyAA5ColorVGGAA08_PaddingN0VGAH0ikj5BadgeG0VGAVGAEyAEyAEyAEyAEyAEyAnPyAA8MaterialVGGAA022_EnvironmentKeyWritingG0VyAA0P6SchemeOGGAVGAYGAVGAA026_InsettableBackgroundShapeG0VyA1_AA6CircleVGGGAA0F0HPA_AAA20_HPAzAA20_HPAwAA20_HPAtAA20_HPAnAA20_HPAkAA20_HPyHC_AmA0fG0HPyHCHC_AsAA21_HPyHCHC_AvAA21_HPyHCHC_AyAA21_HPyHCHC_AvAA21_HPyHCHC_A18_AAA20_HPA12_AAA20_HPA11_AAA20_HPA10_AAA20_HPA9_AAA20_HPA3_AAA20_HPAnAA20_HPAkAA20_HPyHC_AmAA21_HPyHCHC_A2_AAA21_HPyHCHC_A8_AAA21_HPyHCHC_AvAA21_HPyHCHC_AyAA21_HPyHCHC_AvAA21_HPyHCHC_A17_AAA21_HPyHCHCHC
 + _symbolic _____yAAyAAyAAyAAyAAyAAy_____y_____G_____G_____y_____GG_____y_____GG_____G_____GAOG_____yAH_____GG 7SwiftUI15ModifiedContentV AA014_ViewModifier_D0V 020HomeAccessoryControlB00h10DecorationiD5StyleV AA12_FrameLayoutV AA011_ForegroundkF0V AA8MaterialV AA022_EnvironmentKeyWritingF0V AA11ColorSchemeO AA08_PaddingM0V AF0hji5BadgeF0V AA026_InsettableBackgroundShapeF0V AA6CircleV

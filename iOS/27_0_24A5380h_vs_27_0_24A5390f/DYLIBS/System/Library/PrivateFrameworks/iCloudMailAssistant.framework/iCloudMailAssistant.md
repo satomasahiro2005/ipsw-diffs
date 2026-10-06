@@ -2,102 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/iCloudMailAssistant.framework/iCloudMailAssistant`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__objc_data`
-- `__DATA.__objc_stublist`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1206e0` | `0x11fe00` | **`-0x8e0`** |
+| `__TEXT.__swift5_typeref` | `0x6cac` | `0x6d90` | **`+0xe4`** |
+| `__DATA.__bss` | `0x15078` | `0x14ff8` | **`-0x80`** |
+| `__DATA_DIRTY.__bss` | `0x2b00` | `0x2b80` | **`+0x80`** |
+| `__AUTH_CONST.__const` | `0xa0a0` | `0xa0c8` | **`+0x28`** |
+| `__TEXT.__eh_frame` | `0x8a6c` | `0x8a94` | **`+0x28`** |
+| `__TEXT.__const` | `0x10dc4` | `0x10dd4` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x112c` | `0x113c` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x2397` | `0x2387` | **`-0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x386c` | `0x3860` | **`-0xc`** |
+| `__AUTH.__data` | `0x3f30` | `0x3f28` | **`-0x8`** |
+| `__DATA.__data` | `0x32b0` | `0x32b8` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x9a8` | `0x9b0` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x4cc` | `0x4d0` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -2027.0.4.0.0
--  __TEXT.__text: 0x1206e0
 +2027.0.5.0.0
-+  __TEXT.__text: 0x11fe00
-   __TEXT.__objc_methlist: 0x21c
--  __TEXT.__const: 0x10dc4
-+  __TEXT.__const: 0x10dd4
-   __TEXT.__cstring: 0x313d
--  __TEXT.__swift5_typeref: 0x6cac
--  __TEXT.__swift5_capture: 0x112c
-+  __TEXT.__swift5_typeref: 0x6d90
-+  __TEXT.__swift5_capture: 0x113c
-   __TEXT.__constg_swiftt: 0x4464
--  __TEXT.__swift5_reflstr: 0x2397
-+  __TEXT.__swift5_reflstr: 0x2387
-   __TEXT.__swift5_assocty: 0xb08
--  __TEXT.__swift5_fieldmd: 0x386c
-+  __TEXT.__swift5_fieldmd: 0x3860
-   __TEXT.__swift5_builtin: 0x8c
-   __TEXT.__swift5_proto: 0xc04
-   __TEXT.__swift5_types: 0x420
-   __TEXT.__swift_as_entry: 0x30c
-   __TEXT.__swift_as_ret: 0x324
--  __TEXT.__swift_as_cont: 0x4cc
-+  __TEXT.__swift_as_cont: 0x4d0
-   __TEXT.__oslogstring: 0x2ebf
-   __TEXT.__swift5_mpenum: 0x18
-   __TEXT.__swift5_protos: 0x1c
-   __TEXT.__unwind_info: 0x5028
--  __TEXT.__eh_frame: 0x8a6c
-+  __TEXT.__eh_frame: 0x8a94
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x460
-   __DATA_CONST.__objc_protorefs: 0x28
--  __DATA_CONST.__got: 0x9a8
--  __AUTH_CONST.__const: 0xa0a0
-+  __DATA_CONST.__got: 0x9b0
-+  __AUTH_CONST.__const: 0xa0c8
-   __AUTH_CONST.__objc_const: 0x2a88
-   __AUTH_CONST.__auth_got: 0x1908
-   __AUTH.__objc_data: 0xbf0
--  __AUTH.__data: 0x3f30
--  __DATA.__data: 0x32b0
-+  __AUTH.__data: 0x3f28
-+  __DATA.__data: 0x32b8
-   __DATA.__objc_stublist: 0x90
--  __DATA.__bss: 0x15078
-+  __DATA.__bss: 0x14ff8
-   __DATA.__common: 0x2b8
-   __DATA_DIRTY.__objc_data: 0x360
-   __DATA_DIRTY.__data: 0x1e80
--  __DATA_DIRTY.__bss: 0x2b00
-+  __DATA_DIRTY.__bss: 0x2b80
-   __DATA_DIRTY.__common: 0x68
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7230
--  Symbols:   18377
+-  Symbols:   18264
 +  Functions: 7231
-+  Symbols:   18382
-   CStrings:  669
- 
++  Symbols:   18269
 Symbols:
 + _$s19iCloudMailAssistant15TapToRadarDraftV4openyyYaKFTQ4_
 + _$s19iCloudMailAssistant15TapToRadarDraftV4openyyYaKFTY3_

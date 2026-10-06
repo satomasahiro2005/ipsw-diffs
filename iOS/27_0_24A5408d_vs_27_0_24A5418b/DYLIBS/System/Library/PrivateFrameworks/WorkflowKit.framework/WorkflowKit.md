@@ -2,52 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/WorkflowKit.framework/WorkflowKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8fabc0` | `0x8fb078` | **`+0x4b8`** |
+| `__TEXT.__oslogstring` | `0x2395d` | `0x23a17` | **`+0xba`** |
+| `__TEXT.__gcc_except_tab` | `0x4cfc` | `0x4d24` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x1bfe8` | `0x1bff8` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x5d44` | `0x5d48` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -5037.103.100.0.0
--  __TEXT.__text: 0x8fabc0
 +5037.109.0.0.0
-+  __TEXT.__text: 0x8fb078
-   __TEXT.__objc_methlist: 0x2e90c
-   __TEXT.__const: 0x24478
-   __TEXT.__dlopen_cstrs: 0x110b
-   __TEXT.__swift5_typeref: 0xd2d2
-   __TEXT.__cstring: 0x8d372
--  __TEXT.__oslogstring: 0x2395d
-+  __TEXT.__oslogstring: 0x23a17
-   __TEXT.__constg_swiftt: 0x9724
-   __TEXT.__swift5_reflstr: 0x6208
-   __TEXT.__swift5_fieldmd: 0x7828
 
-   __TEXT.__swift5_assocty: 0x2278
-   __TEXT.__swift5_proto: 0x1a4c
-   __TEXT.__swift5_types: 0xb24
--  __TEXT.__swift5_capture: 0x5d44
-+  __TEXT.__swift5_capture: 0x5d48
-   __TEXT.__swift_as_entry: 0xb00
-   __TEXT.__swift_as_ret: 0xc58
-   __TEXT.__swift_as_cont: 0x1470
-   __TEXT.__swift5_protos: 0x13c
-   __TEXT.__swift5_mpenum: 0xd4
--  __TEXT.__gcc_except_tab: 0x4cfc
-+  __TEXT.__gcc_except_tab: 0x4d24
-   __TEXT.__ustring: 0x3f0c
--  __TEXT.__unwind_info: 0x1bfe8
-+  __TEXT.__unwind_info: 0x1bff8
-   __TEXT.__eh_frame: 0x233e0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 43822
--  Symbols:   43118
+-  Symbols:   35155
 -  CStrings:  17994
 +  Functions: 43824
-+  Symbols:   43119
++  Symbols:   35156
 +  CStrings:  17996
- 
 Symbols:
 + GCC_except_table13453
 + GCC_except_table13456

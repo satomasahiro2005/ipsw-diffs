@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/TranslationInference.framework/TranslationInference`
 
-```diff
+### Section Size Changes
 
- 389.1.0.0.0
--  __TEXT.__text: 0x80dec
-+  __TEXT.__text: 0x80e20
-   __TEXT.__const: 0x3af8
-   __TEXT.__constg_swiftt: 0xe34
-   __TEXT.__swift5_typeref: 0x1580
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x80dec` | `0x80e20` | **`+0x34`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_2417c511c -> sub_24211911c : 8320 -> 8324
 ~ sub_2417deb3c -> sub_242132b40 : 7744 -> 7752

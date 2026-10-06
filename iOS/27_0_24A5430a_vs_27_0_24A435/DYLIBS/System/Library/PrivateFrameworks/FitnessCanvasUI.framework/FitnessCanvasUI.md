@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/FitnessCanvasUI.framework/FitnessCanvasUI`
 
-```diff
+### Section Size Changes
 
- 2027.0.146.1.4
--  __TEXT.__text: 0x185410
-+  __TEXT.__text: 0x1853c4
-   __TEXT.__const: 0x145f8
-   __TEXT.__constg_swiftt: 0x76dc
-   __TEXT.__swift5_typeref: 0xd02a
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x185410` | `0x1853c4` | **`-0x4c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_212a0c334 -> sub_2131e0334 : 1044 -> 1052
 ~ sub_212a0c748 -> sub_2131e0750 : 1596 -> 1564

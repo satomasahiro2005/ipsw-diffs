@@ -2,28 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/TranslationUI.framework/TranslationUI`
 
-```diff
+### Section Size Changes
 
- 389.1.0.0.0
--  __TEXT.__text: 0x10a508
-+  __TEXT.__text: 0x10a510
-   __TEXT.__objc_methlist: 0xb8c
-   __TEXT.__const: 0xae44
-   __TEXT.__cstring: 0x20d6
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10a508` | `0x10a510` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2b0c8dcac -> sub_2b1a8acac : 960 -> 964
-~ sub_2b0c9a180 -> sub_2b1a97184 : 1752 -> 1736
-~ sub_2b0ca2a6c -> sub_2b1a9fa60 : 992 -> 984
-~ sub_2b0ca2e4c -> sub_2b1a9fe38 : 356 -> 360
-~ sub_2b0ca3128 -> sub_2b1aa0118 : 356 -> 360
-~ sub_2b0ca64e8 -> sub_2b1aa34dc : 444 -> 448
-~ sub_2b0cef7b8 -> sub_2b1aec7b0 : 2380 -> 2376
-~ sub_2b0cf0104 -> sub_2b1aed0f8 : 1480 -> 1464
-~ sub_2b0cf2458 -> sub_2b1aef43c : 1976 -> 1968
-~ sub_2b0cf6b8c -> sub_2b1af3b68 : 1148 -> 1152
-~ sub_2b0d025a8 -> sub_2b1aff588 : 4268 -> 4280
-~ sub_2b0d0c954 -> sub_2b1b09940 : 1240 -> 1244
-~ sub_2b0d1076c -> sub_2b1b0d75c : 496 -> 504
-~ sub_2b0d3f5e0 -> sub_2b1b3c5d8 : 604 -> 612
-~ sub_2b0d40860 -> sub_2b1b3d860 : 2000 -> 2008
+~ sub_2b0b76cac -> sub_2b1973cac : 960 -> 964
+~ sub_2b0b83180 -> sub_2b1980184 : 1752 -> 1736
+~ sub_2b0b8ba6c -> sub_2b1988a60 : 992 -> 984
+~ sub_2b0b8be4c -> sub_2b1988e38 : 356 -> 360
+~ sub_2b0b8c128 -> sub_2b1989118 : 356 -> 360
+~ sub_2b0b8f4e8 -> sub_2b198c4dc : 444 -> 448
+~ sub_2b0bd87b8 -> sub_2b19d57b0 : 2380 -> 2376
+~ sub_2b0bd9104 -> sub_2b19d60f8 : 1480 -> 1464
+~ sub_2b0bdb458 -> sub_2b19d843c : 1976 -> 1968
+~ sub_2b0bdfb8c -> sub_2b19dcb68 : 1148 -> 1152
+~ sub_2b0beb5a8 -> sub_2b19e8588 : 4268 -> 4280
+~ sub_2b0bf5954 -> sub_2b19f2940 : 1240 -> 1244
+~ sub_2b0bf976c -> sub_2b19f675c : 496 -> 504
+~ sub_2b0c285e0 -> sub_2b1a255d8 : 604 -> 612
+~ sub_2b0c29860 -> sub_2b1a26860 : 2000 -> 2008
 ```

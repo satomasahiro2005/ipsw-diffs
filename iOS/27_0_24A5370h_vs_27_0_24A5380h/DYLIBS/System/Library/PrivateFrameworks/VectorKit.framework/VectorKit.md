@@ -2,99 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/VectorKit.framework/VectorKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd15cbc` | `0x1233ad4` | **`+0x51de18`** |
+| `__DATA.__bss` | `0x244d0` | `0xc160` | **`-0x18370`** |
+| `__DATA_DIRTY.__bss` | `0x424a8` | `0x58ec0` | **`+0x16a18`** |
+| `__TEXT.__gcc_except_tab` | `0x68ca8` | `0x7e344` | **`+0x1569c`** |
+| `__TEXT.__const` | `0x73cb8` | `0x79d48` | **`+0x6090`** |
+| `__TEXT.__cstring` | `0x96b8f` | `0x9aeab` | **`+0x431c`** |
+| `__AUTH_CONST.__const` | `0x89de8` | `0x89208` | **`-0xbe0`** |
+| `__TEXT.__unwind_info` | `0x342e0` | `0x34dd0` | **`+0xaf0`** |
+| `__AUTH.__objc_data` | `0x2210` | `0x1fe0` | **`-0x230`** |
+| `__DATA_DIRTY.__objc_data` | `0x1360` | `0x1590` | **`+0x230`** |
+| `__AUTH_CONST.__objc_const` | `0x1eee8` | `0x1eda0` | **`-0x148`** |
+| `__TEXT.__objc_methlist` | `0x1119c` | `0x11064` | **`-0x138`** |
+| `__DATA_CONST.__objc_selrefs` | `0x9598` | `0x94d0` | **`-0xc8`** |
+| `__DATA.__data` | `0x32958` | `0x328b8` | **`-0xa0`** |
+| `__TEXT.__eh_frame` | `—` | `0x88` | **`+0x88`** |
+| `__DATA_CONST.__got` | `0xa68` | `0xab8` | **`+0x50`** |
+| `__AUTH_CONST.__cfstring` | `0x8360` | `0x8380` | **`+0x20`** |
+| `__TEXT.__oslogstring` | `0x1113f` | `0x1115c` | **`+0x1d`** |
+| `__DATA_CONST.__const` | `0x2a148` | `0x2a140` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xd15cbc
--  __TEXT.__objc_methlist: 0x1119c
--  __TEXT.__const: 0x73cb8
--  __TEXT.__gcc_except_tab: 0x68ca8
--  __TEXT.__oslogstring: 0x1113f
--  __TEXT.__cstring: 0x96b8f
-+  __TEXT.__text: 0x1233ad4
-+  __TEXT.__objc_methlist: 0x11064
-+  __TEXT.__const: 0x79d48
-+  __TEXT.__gcc_except_tab: 0x7e344
-+  __TEXT.__oslogstring: 0x1115c
-+  __TEXT.__cstring: 0x9aeab
-   __TEXT.__ustring: 0xf8
--  __TEXT.__unwind_info: 0x342e0
-+  __TEXT.__unwind_info: 0x34dd0
-+  __TEXT.__eh_frame: 0x88
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2a148
-+  __DATA_CONST.__const: 0x2a140
-   __DATA_CONST.__objc_classlist: 0x558
-   __DATA_CONST.__objc_catlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x140
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x9598
-+  __DATA_CONST.__objc_selrefs: 0x94d0
-   __DATA_CONST.__objc_superrefs: 0x500
-   __DATA_CONST.__objc_arraydata: 0x690
--  __DATA_CONST.__got: 0xa68
--  __AUTH_CONST.__const: 0x89de8
--  __AUTH_CONST.__cfstring: 0x8360
--  __AUTH_CONST.__objc_const: 0x1eee8
-+  __DATA_CONST.__got: 0xab8
-+  __AUTH_CONST.__const: 0x89208
-+  __AUTH_CONST.__cfstring: 0x8380
-+  __AUTH_CONST.__objc_const: 0x1eda0
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__objc_intobj: 0x4c8
-   __AUTH_CONST.__objc_arrayobj: 0x60
-   __AUTH_CONST.__objc_doubleobj: 0x240
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__auth_got: 0x19d8
--  __AUTH.__objc_data: 0x2210
-+  __AUTH.__objc_data: 0x1fe0
-   __AUTH.__data: 0x50
-   __AUTH.__thread_vars: 0x270
-   __AUTH.__thread_data: 0x231
-   __AUTH.__thread_bss: 0x180
-   __DATA.__objc_ivar: 0x2028
--  __DATA.__data: 0x32958
--  __DATA.__bss: 0x244d0
--  __DATA_DIRTY.__objc_data: 0x1360
-+  __DATA.__data: 0x328b8
-+  __DATA.__bss: 0xc160
-+  __DATA_DIRTY.__objc_data: 0x1590
-   __DATA_DIRTY.__data: 0x1c
--  __DATA_DIRTY.__bss: 0x424a8
-+  __DATA_DIRTY.__bss: 0x58ec0
-   - /System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+-2041.30.6.5.2
++2043.30.6.12.4
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libxml2.2.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 61147
--  Symbols:   169117
--  CStrings:  22802
+-  Symbols:   99115
+-  CStrings:  21753
 +  Functions: 58234
-+  Symbols:   161550
-+  CStrings:  23220
- 
-Sections:
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   95529
++  CStrings:  22170
 Symbols:
 + GCC_except_table1000
 + GCC_except_table10004
@@ -37326,30 +37270,6 @@ Symbols:
 - __ZZNSt3__16vectorIN3geo8QuadTileENS_9allocatorIS2_EEE12emplace_backIJS2_EEERS2_DpOT_ENKUlvE0_clEv
 - __ZZNSt3__16vectorIPN3ggl17ConstantDataTypedINS1_7DaVinci13MaterialStyleEEENS_9allocatorIS6_EEE12emplace_backIJRS6_EEESB_DpOT_ENKUlvE0_clEv
 - ____ZN2md9MapEngineD2Ev_block_invoke
-- _objc_msgSend$alphaAtlas
-- _objc_msgSend$dataOverrideManager
-- _objc_msgSend$defaultDecompressionSession
-- _objc_msgSend$distanceAtlas
-- _objc_msgSend$frameDidComplete:
-- _objc_msgSend$gglDevice
-- _objc_msgSend$globalFrameStamp
-- _objc_msgSend$grlFontManager
-- _objc_msgSend$grlIconManager
-- _objc_msgSend$highInflationAlphaAtlas
-- _objc_msgSend$iconManager
-- _objc_msgSend$isoAlphaAtlas
-- _objc_msgSend$materialTextureManager
-- _objc_msgSend$prune:
-- _objc_msgSend$purgeDecompressSessionCachedBuffers
-- _objc_msgSend$resourceManager
-- _objc_msgSend$setSnapshotterIsInService:
-- _objc_msgSend$shaderLibrary
-- _objc_msgSend$standardCommandBufferSelector
-- _objc_msgSend$startDecompressionSession
-- _objc_msgSend$stylesheetVendor
-- _objc_msgSend$textureManager
-- _objc_msgSend$tileGroupNotificationManager
-- _objc_msgSend$undulationModel
 CStrings:
 + " ❯"
 + "ARCameraImageShaderFragment"
@@ -37826,5 +37746,4 @@ CStrings:
 - "xlarge"
 - "xxlarge"
 - "xxxlarge"
-
 ```

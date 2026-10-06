@@ -2,97 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/PasswordManagerUI.framework/PasswordManagerUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5556dc` | `0x560f70` | **`+0xb894`** |
+| `__TEXT.__swift5_typeref` | `0x764f4` | `0x77498` | **`+0xfa4`** |
+| `__TEXT.__const` | `0x36c74` | `0x37394` | **`+0x720`** |
+| `__TEXT.__eh_frame` | `0x123c0` | `0x12998` | **`+0x5d8`** |
+| `__DATA.__bss` | `0x1f4a0` | `0x1f7f0` | **`+0x350`** |
+| `__TEXT.__cstring` | `0x1222d` | `0x1252d` | **`+0x300`** |
+| `__AUTH_CONST.__const` | `0x1a1b0` | `0x1a440` | **`+0x290`** |
+| `__TEXT.__unwind_info` | `0xe8a0` | `0xeb10` | **`+0x270`** |
+| `__TEXT.__constg_swiftt` | `0xd214` | `0xd450` | **`+0x23c`** |
+| `__DATA.__data` | `0x112c8` | `0x11438` | **`+0x170`** |
+| `__TEXT.__swift5_reflstr` | `0xdb7b` | `0xdcdb` | **`+0x160`** |
+| `__TEXT.__swift5_fieldmd` | `0xa66c` | `0xa794` | **`+0x128`** |
+| `__AUTH.__data` | `0x5d68` | `0x5e68` | **`+0x100`** |
+| `__AUTH_CONST.__objc_const` | `0xb3b0` | `0xb450` | **`+0xa0`** |
+| `__TEXT.__swift5_assocty` | `0x2930` | `0x29c0` | **`+0x90`** |
+| `__TEXT.__swift_as_cont` | `0xcd0` | `0xd28` | **`+0x58`** |
+| `__TEXT.__swift5_capture` | `0x6774` | `0x67c8` | **`+0x54`** |
+| `__AUTH_CONST.__auth_got` | `0x4210` | `0x4250` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x2d50` | `0x2d90` | **`+0x40`** |
+| `__TEXT.__oslogstring` | `0x3679` | `0x36b9` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3278` | `0x32a8` | **`+0x30`** |
+| `__TEXT.__swift_as_ret` | `0x5c8` | `0x5f8` | **`+0x30`** |
+| `__TEXT.__swift_as_entry` | `0x55c` | `0x57c` | **`+0x20`** |
+| `__TEXT.__swift5_proto` | `0xe60` | `0xe7c` | **`+0x1c`** |
+| `__TEXT.__swift5_types` | `0xa40` | `0xa5c` | **`+0x1c`** |
+| `__DATA_DIRTY.__objc_data` | `0x39e8` | `0x39f8` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `0x6c` | `0x70` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7625.1.24.10.1
--  __TEXT.__text: 0x5556dc
 +7625.1.29.10.3
-+  __TEXT.__text: 0x560f70
-   __TEXT.__objc_methlist: 0x283c
--  __TEXT.__cstring: 0x1222d
--  __TEXT.__const: 0x36c74
-+  __TEXT.__cstring: 0x1252d
-+  __TEXT.__const: 0x37394
-   __TEXT.__gcc_except_tab: 0x4c
-   __TEXT.__dlopen_cstrs: 0x9a
--  __TEXT.__oslogstring: 0x3679
-+  __TEXT.__oslogstring: 0x36b9
-   __TEXT.__ustring: 0x76
--  __TEXT.__constg_swiftt: 0xd214
--  __TEXT.__swift5_typeref: 0x764f4
-+  __TEXT.__constg_swiftt: 0xd450
-+  __TEXT.__swift5_typeref: 0x77498
-   __TEXT.__swift5_builtin: 0x35c
--  __TEXT.__swift5_reflstr: 0xdb7b
--  __TEXT.__swift5_fieldmd: 0xa66c
--  __TEXT.__swift5_assocty: 0x2930
--  __TEXT.__swift5_capture: 0x6774
--  __TEXT.__swift5_proto: 0xe60
--  __TEXT.__swift5_types: 0xa40
--  __TEXT.__swift_as_entry: 0x55c
--  __TEXT.__swift_as_ret: 0x5c8
--  __TEXT.__swift_as_cont: 0xcd0
-+  __TEXT.__swift5_reflstr: 0xdcdb
-+  __TEXT.__swift5_fieldmd: 0xa794
-+  __TEXT.__swift5_assocty: 0x29c0
-+  __TEXT.__swift5_capture: 0x67c8
-+  __TEXT.__swift5_proto: 0xe7c
-+  __TEXT.__swift5_types: 0xa5c
-+  __TEXT.__swift_as_entry: 0x57c
-+  __TEXT.__swift_as_ret: 0x5f8
-+  __TEXT.__swift_as_cont: 0xd28
-   __TEXT.__swift5_mpenum: 0xd4
--  __TEXT.__swift5_protos: 0x6c
--  __TEXT.__unwind_info: 0xe8a0
--  __TEXT.__eh_frame: 0x123c0
-+  __TEXT.__swift5_protos: 0x70
-+  __TEXT.__unwind_info: 0xeb10
-+  __TEXT.__eh_frame: 0x12998
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x270
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3278
-+  __DATA_CONST.__objc_selrefs: 0x32a8
-   __DATA_CONST.__objc_protorefs: 0x130
-   __DATA_CONST.__objc_superrefs: 0x30
--  __DATA_CONST.__got: 0x2d50
--  __AUTH_CONST.__const: 0x1a1b0
-+  __DATA_CONST.__got: 0x2d90
-+  __AUTH_CONST.__const: 0x1a440
-   __AUTH_CONST.__cfstring: 0x420
--  __AUTH_CONST.__objc_const: 0xb3b0
--  __AUTH_CONST.__auth_got: 0x4210
-+  __AUTH_CONST.__objc_const: 0xb450
-+  __AUTH_CONST.__auth_got: 0x4250
-   __AUTH.__objc_data: 0x870
--  __AUTH.__data: 0x5d68
-+  __AUTH.__data: 0x5e68
-   __DATA.__objc_ivar: 0x80
--  __DATA.__data: 0x112c8
--  __DATA.__bss: 0x1f4a0
-+  __DATA.__data: 0x11438
-+  __DATA.__bss: 0x1f7f0
-   __DATA.__common: 0x118
--  __DATA_DIRTY.__objc_data: 0x39e8
-+  __DATA_DIRTY.__objc_data: 0x39f8
-   __DATA_DIRTY.__data: 0xb1d8
-   __DATA_DIRTY.__bss: 0xb30
-   __DATA_DIRTY.__common: 0x1d8
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 22879
--  Symbols:   10095
+-  Symbols:   8778
 -  CStrings:  1587
 +  Functions: 23065
-+  Symbols:   10158
++  Symbols:   8835
 +  CStrings:  1597
- 
 Symbols:
 + _WBSAutomaticPasswordChangeDeveloperModeEnabledKey
 + _WBSPasswordManagerURLContainsHighPriorityAccountKey
@@ -122,12 +76,6 @@ Symbols:
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE15navigationTitleyQrqd__SyRd__lFQOyAA4FormVy015PasswordManagerB021QuirksSnapshotSection33_299EF3273D28C6CFAC647EDC159D0569LLVG_SSQo_HO
 + _get_witness_table qd0__7SwiftUI4ViewHD5_AaBPAAE5alert_11isPresented7actions7messageQrqd___AA7BindingVySbGqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAA15ModifiedContentVyALyAcAE5sheetAE9onDismiss7contentQrAJ_yycSgqd__yctAaBRd__lFQOyAcAEAM4itemAnOQrAIyqd__SgG_APqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lFQOyAcAEAmqnOQrAS_APqd_0_qd__ctsATRd__AaBRd_0_r0_lFQOyAA15NavigationStackVySaySSGAcAE21navigationDestination3for11destinationQrqd__m_qd_0_qd__ctSHRd__AaBRd_0_r0_lFQOyAcAE7toolbarAOQrqd__yXE_tAA07ToolbarK0Rd__lFQOyAcAE0T19BarTitleDisplayModeyQrAA0rZ4ItemV16TitleDisplayModeOFQOyALyAcAE0T5TitleyQrqd__SyRd__lFQOyALyALyAcAE9listStyleyQrqd__AA9ListStyleRd__lFQOyALyAcAE13contextAction0V13SelectionType6actionQrqd__m_yShyqd__GctSHRd__lFQOyALyAA4ListVy015PasswordManagerB018PMAccountPickerRowV6RowTagOAA5GroupVyAA05TupleK0VyAA7SectionVyAA4TextVA23_yAcAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAcAE12swipeActions4edge15allowsFullSwipeAOQrAA14HorizontalEdgeO_Sbqd__yXEtAaBRd__lFQOyA17__ALyAA6ButtonVyAA5LabelVyA27_AA5ImageVGGAA30_EnvironmentKeyWritingModifierVyAA5ColorVSgGGSgQo__A19_Qo__AA7ForEachVySaySo33WBSSavedAccountSidecarHistoryItem_pG10Foundation4DateVAcAEA28__A29_Qrqd___SbtSHRd__lFQOyA17__A19_Qo_GALyA36_yA27_GAA16_FlexFrameLayoutVGSgQPGAA05EmptyC0VGSgSg_A25_yA27_A23_yA54_ySayA15_9PMAccountVGSSA52_G_A62_SgQPGA69_GSgA25_yAA012_ConditionalK0VyA27_A27_GSgA23_yA76__AcAE23matchedTransitionSource2id2inQrqd___AA9NamespaceV2IDVtSHRd__lFQOyA62__SSQo_SgAcAEA85_A86_A87_Qrqd___A91_tSHRd__lFQOyAcAE10labelStyleyQrqd__AA10LabelStyleRd__lFQOyA15_28PMCreateOrChangePasswordMenuV_AA19TitleOnlyLabelStyleVQo__SSQo_SgQPGALyA27_A44_yAA13OpenURLActionVGGSgSgGSgA25_yA84_SgA54_yA75_SSA82_yA52_AcAEA28__A29_Qrqd___SbtSHRd__lFQOyA51__A19_SgQo_GGA69_GQPGGGAA16_OverlayModifierVyAA0k11UnavailableC0VyAA017SearchUnavailableK0VA37_VA126_11DescriptionVA126_7ActionsVGSgGG_A19_Qo_A15_18PMItemsContextMenuVyA19_GG_AA21InsetGroupedListStyleVQo_A15_12PMSearchable33_BE720C7A8B2BD2303B51F85E9EBC6E2DLLVGA15_16PMSearchTextSync33_7162D7BD199978AA78EC10092AA54552LLVG_SSQo_A15_19PMSetPromptModifier33_0C4D6336BA0BA78F33B8E41CBFBF1A20LLVG_Qo__AA05TupleyK0VyAA0yK7BuilderV10buildBlockyQrxAAA0_RzlFZQOy_A161_A162_yQrxAAA0_RzlFZQOy_AAA0_PAAEA85_A86_A87_Qrqd___A91_tSHRd__lFQOyAA0Y4ItemVyytA97_G_SSQo_Qo_SgQo__AA8StaticIfVyAA8SolariumVA161_A162_yQrxAAA0_RzlFZQOy_AA0Y9ItemGroupVyAA0Y11SearchProxyVGQo_AA05EmptyyK0VGA165_yytA15_20PMPlatformRoleButtonVGtGQo__SSALyALyA15_016PMAccountDetailsC0VA44_ySbGGA44_yySS_So15WBSSavedAccountCSgtcSgGGSgQo_G_A15_20PMIdentifiableObjectVyA15_17PMAddAccountModelCGAcAE0T10TransitionyQrqd__AA0R10TransitionRd__lFQOyA15_012PMAddAccountC0V_AA04ZoomR10TransitionVQo_Qo__A15_28PMChangeAccountPasswordModelCAcAEA207_yQrqd__AAA208_Rd__lFQOyA15_023PMChangeAccountPasswordC0V_A212_Qo_Qo__AcAEA207_yQrqd__AAA208_Rd__lFQOyA15_023PMGeneratedPasswordsLogC0V_A212_Qo_Qo_AA25_AppearanceActionModifierVGA15_31PMItemsDeleteConfirmationDialogVG_SSA21_yA23_yAcAE16keyboardShortcutyQrAA16KeyboardShortcutVFQOyA62__Qo__A62_A62_QPGGA27_Qo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQOyAA15ModifiedContentVyAOyAcAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAcAEApqR_Qrqd___SbyyctSQRd__lFQOyAA012SubscriptionC0Vy7Combine18PassthroughSubjectCy015PasswordManagerB013PMQuickActionOs5NeverOGAcAEApqR_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEApqR_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEApqR_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE0N20ContinueUserActivity_7performQrSS_ySo14NSUserActivityCctFQOyAcAE0N7OpenURLA3_Qry10Foundation3URLVc_tFQOyAA5GroupVyAcAEAJyQrAKRld__CAlMRd__lFQOyAOyAOyAOyAcAE5alert_11isPresented7actions7messageQrqd___AA7BindingVySbGqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAcAEA12__A13_A14_Qrqd___A18_qd_0_yXEtSyRd__AaBRd_0_r0_lFQOyAOyAOyAcAE5sheetA13_0N7Dismiss7contentQrA18__yycSgqd__yctAaBRd__lFQOyAX019PMAppRootNavigationC0V_AX016PMOnboardingRootC0VQo_AX31PMICloudTermsAndConditionsAlertVGAX29PMBulkOperationProgressDialogVG_SSAA05EmptyC0VQo__SSA35_AA4TextVQo_AX37PMHandleInboundOTPAuthURLViewModifier33_87FD31788397888D0931F9974509D2FELLVGAX39PMHandleInboundTOTPMigrationURLModifier33_1634655A6AF007827D934EFB5AAEA52BLLVGAX030PMHandleInboundSharableAccountC8Modifier33_1264FFAC77FCDBF430B9ED39204C97B9LLVG_AX35PMGlobalAnimationNamespaceContainerCQo_G_Qo__Qo__AX9PMAccountVSgQo__SbQo__SbQo_G_AA10ScenePhaseOQo__A66_Qo_AA30_EnvironmentKeyWritingModifierVyyA9_cGGA70_yAX26PMAirDropTransfersObserverCSgGG_AX13PMSearchModelCQo__Qo_HO
-+ _objc_msgSend$isAutomaticPasswordChangesEnabled
-+ _objc_msgSend$passwordManagerResourcesProjectImportCommit
-+ _objc_msgSend$passwordManagerResourcesProjectURL
-+ _objc_msgSend$reportPasswordsActionEvent:isHighPriorityAccount:primaryWarning:passwordChangeMethod:
-+ _objc_msgSend$resumeFetching
-+ _objc_msgSend$suspendFetching
 + _symbolic $s17PasswordManagerUI011PMAutomaticA25ChangeCompletionReportingP
 + _symbolic $s7SwiftUI11ToggleStyleP
 + _symbolic SSSg14stableIDString_Sb31isForPasswordBreachNotificationSb0cD19HighPriorityAccountt

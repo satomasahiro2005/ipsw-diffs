@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/IOUSBHost.framework/IOUSBHost`
 
-```diff
+### Section Size Changes
 
- 1617.0.12.0.0
--  __TEXT.__text: 0x16190
-+  __TEXT.__text: 0x16194
-   __TEXT.__objc_methlist: 0xea0
-   __TEXT.__const: 0xcc
-   __TEXT.__cstring: 0x2236
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x16190` | `0x16194` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[IOUSBHostControllerInterface capabilitiesForPort:] : 144 -> 148
 ```

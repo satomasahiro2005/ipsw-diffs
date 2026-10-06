@@ -2,51 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2b514` | `0x2baa4` | **`+0x590`** |
+| `__TEXT.__gcc_except_tab` | `0x3838` | `0x38ec` | **`+0xb4`** |
+| `__AUTH_CONST.__const` | `0xb48` | `0xb98` | **`+0x50`** |
+| `__TEXT.__const` | `0x1c92` | `0x1cda` | **`+0x48`** |
+| `__TEXT.__unwind_info` | `0x1260` | `0x12a8` | **`+0x48`** |
+| `__TEXT.__oslogstring` | `0x101b` | `0x104b` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x788` | `0x780` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -577.40.5.0.0
--  __TEXT.__text: 0x2aebc
 +577.40.7.0.0
-+  __TEXT.__text: 0x2b440
-   __TEXT.__objc_methlist: 0x25c
-   __TEXT.__cstring: 0x2547
--  __TEXT.__gcc_except_tab: 0x3838
--  __TEXT.__const: 0x1c92
--  __TEXT.__oslogstring: 0x101b
-+  __TEXT.__gcc_except_tab: 0x38ec
-+  __TEXT.__const: 0x1cda
-+  __TEXT.__oslogstring: 0x104b
-   __TEXT.__swift5_typeref: 0x33
--  __TEXT.__unwind_info: 0x14d8
-+  __TEXT.__unwind_info: 0x1528
-   __TEXT.__eh_frame: 0x160
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x10
-   __DATA_CONST.__got: 0x1c8
--  __AUTH_CONST.__const: 0xb48
-+  __AUTH_CONST.__const: 0xb98
-   __AUTH_CONST.__cfstring: 0x1c0
-   __AUTH_CONST.__objc_const: 0x3a0
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__auth_got: 0x788
-+  __AUTH_CONST.__auth_got: 0x780
-   __AUTH.__objc_data: 0xa0
-   __DATA.__objc_ivar: 0x20
-   __DATA.__data: 0x100
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 818
 -  Symbols:   1312
 -  CStrings:  461
 +  Functions: 828
 +  Symbols:   1327
 +  CStrings:  462
- 
 Symbols:
 + GCC_except_table192
 + GCC_except_table193

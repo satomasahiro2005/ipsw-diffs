@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/SpotlightUIServices.framework/SpotlightUIServices`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_20de0be1c -> sub_20e4a6e1c : 528 -> 532

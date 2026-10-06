@@ -2,15 +2,14 @@
 
 > `/private/var/staged_system_apps/Books.app/Frameworks/BooksAll.framework/BooksAll`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -6655.0.0.0.0
 +6713.0.0.0.0
-   __TEXT.__text: 0x0
-   __TEXT.__const: 0x38
-   - /usr/lib/libSystem.B.dylib
 ```

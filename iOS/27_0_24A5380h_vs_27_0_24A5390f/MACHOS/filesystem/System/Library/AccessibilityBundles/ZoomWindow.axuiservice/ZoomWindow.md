@@ -2,106 +2,67 @@
 
 > `/System/Library/AccessibilityBundles/ZoomWindow.axuiservice/ZoomWindow`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x69dc4` | `0x6a514` | **`+0x750`** |
+| `__TEXT.__oslogstring` | `0x437` | `0x8df` | **`+0x4a8`** |
+| `__TEXT.__objc_stubs` | `0xbaa0` | `0xbb40` | **`+0xa0`** |
+| `__TEXT.__objc_methname` | `0x1112b` | `0x111ab` | **`+0x80`** |
+| `__TEXT.__cstring` | `0x2580` | `0x25b6` | **`+0x36`** |
+| `__TEXT.__objc_methtype` | `0x3a2e` | `0x3a5a` | **`+0x2c`** |
+| `__DATA.__objc_selrefs` | `0x37f0` | `0x3818` | **`+0x28`** |
+| `__DATA_CONST.__cfstring` | `0x17e0` | `0x1800` | **`+0x20`** |
+| `__TEXT.__auth_stubs` | `0x2220` | `0x2240` | **`+0x20`** |
+| `__TEXT.__const` | `0x1f50` | `0x1f70` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x4cf0` | `0x4d08` | **`+0x18`** |
+| `__DATA_CONST.__auth_got` | `0x1120` | `0x1130` | **`+0x10`** |
+| `__DATA.__objc_const` | `0x7910` | `0x7918` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x948` | `0x950` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x1a08` | `0x1a10` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA.__objc_stublist`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_data`
-- `__DATA.__data`
-- `__DATA.__objc_stublist`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -904.0.0.0.0
--  __TEXT.__text: 0x69dc4
--  __TEXT.__auth_stubs: 0x2220
--  __TEXT.__objc_stubs: 0xbaa0
--  __TEXT.__objc_methlist: 0x4cf0
--  __TEXT.__const: 0x1f50
--  __TEXT.__objc_methname: 0x1112b
 +906.0.0.0.0
-+  __TEXT.__text: 0x6a514
-+  __TEXT.__auth_stubs: 0x2240
-+  __TEXT.__objc_stubs: 0xbb40
-+  __TEXT.__objc_methlist: 0x4d08
-+  __TEXT.__const: 0x1f70
-+  __TEXT.__objc_methname: 0x111ab
-   __TEXT.__objc_classname: 0x920
--  __TEXT.__objc_methtype: 0x3a2e
-+  __TEXT.__objc_methtype: 0x3a5a
-   __TEXT.__constg_swiftt: 0xd50
-   __TEXT.__swift5_typeref: 0x2cd2
-   __TEXT.__swift5_fieldmd: 0x5ec
-   __TEXT.__swift5_reflstr: 0x632
-   __TEXT.__swift5_builtin: 0x64
-   __TEXT.__swift5_assocty: 0x188
--  __TEXT.__oslogstring: 0x437
--  __TEXT.__cstring: 0x2580
-+  __TEXT.__oslogstring: 0x8df
-+  __TEXT.__cstring: 0x25b6
-   __TEXT.__swift5_capture: 0x240
-   __TEXT.__swift5_proto: 0x64
-   __TEXT.__swift5_types: 0x74
 
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x10
-   __TEXT.__gcc_except_tab: 0x860
--  __TEXT.__unwind_info: 0x1a08
-+  __TEXT.__unwind_info: 0x1a10
-   __TEXT.__eh_frame: 0x420
-   __DATA_CONST.__const: 0x17d0
--  __DATA_CONST.__cfstring: 0x17e0
-+  __DATA_CONST.__cfstring: 0x1800
-   __DATA_CONST.__objc_classlist: 0x178
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x110
-
-   __DATA_CONST.__objc_arrayobj: 0xd8
-   __DATA_CONST.__objc_dictobj: 0x50
-   __DATA_CONST.__objc_doubleobj: 0x30
--  __DATA_CONST.__auth_got: 0x1120
--  __DATA_CONST.__got: 0x948
-+  __DATA_CONST.__auth_got: 0x1130
-+  __DATA_CONST.__got: 0x950
-   __DATA_CONST.__auth_ptr: 0x628
--  __DATA.__objc_const: 0x7910
--  __DATA.__objc_selrefs: 0x37f0
-+  __DATA.__objc_const: 0x7918
-+  __DATA.__objc_selrefs: 0x3818
-   __DATA.__objc_ivar: 0x698
-   __DATA.__objc_data: 0x19d0
-   __DATA.__data: 0x1ac0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2524
 -  Symbols:   4959
 -  CStrings:  3243
 +  Functions: 2525
 +  Symbols:   4968
 +  CStrings:  3261
- 
 Symbols:
 + -[ZWRootViewController windowSceneForAutopanner:]
 + GCC_except_table1352

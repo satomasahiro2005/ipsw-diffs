@@ -2,112 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/CompanionSetupKit.framework/CompanionSetupKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4290b4` | `0x432af0` | **`+0x9a3c`** |
+| `__TEXT.__const` | `0x2e090` | `0x2e7d0` | **`+0x740`** |
+| `__TEXT.__eh_frame` | `0x36c38` | `0x37190` | **`+0x558`** |
+| `__TEXT.__oslogstring` | `0x9325` | `0x96c5` | **`+0x3a0`** |
+| `__DATA.__bss` | `0x46290` | `0x46610` | **`+0x380`** |
+| `__AUTH_CONST.__const` | `0x191e8` | `0x19338` | **`+0x150`** |
+| `__TEXT.__unwind_info` | `0x12da0` | `0x12ed8` | **`+0x138`** |
+| `__DATA.__data` | `0x8cd0` | `0x8db8` | **`+0xe8`** |
+| `__TEXT.__swift5_typeref` | `0x9b3c` | `0x9c0a` | **`+0xce`** |
+| `__TEXT.__swift5_fieldmd` | `0x93b0` | `0x9470` | **`+0xc0`** |
+| `__AUTH.__data` | `0x5558` | `0x5608` | **`+0xb0`** |
+| `__TEXT.__swift5_reflstr` | `0x7f9e` | `0x804e` | **`+0xb0`** |
+| `__TEXT.__swift_as_ret` | `0x1658` | `0x1704` | **`+0xac`** |
+| `__TEXT.__swift_as_entry` | `0x1184` | `0x121c` | **`+0x98`** |
+| `__TEXT.__constg_swiftt` | `0x6b1c` | `0x6b94` | **`+0x78`** |
+| `__DATA_CONST.__objc_selrefs` | `0x18c0` | `0x1928` | **`+0x68`** |
+| `__TEXT.__swift5_assocty` | `0x15a0` | `0x1600` | **`+0x60`** |
+| `__AUTH_CONST.__auth_got` | `0x25b8` | `0x2610` | **`+0x58`** |
+| `__TEXT.__swift_as_cont` | `0x37a0` | `0x37f8` | **`+0x58`** |
+| `__AUTH_CONST.__objc_const` | `0x7190` | `0x71d8` | **`+0x48`** |
+| `__DATA_CONST.__got` | `0x1338` | `0x1370` | **`+0x38`** |
+| `__TEXT.__swift5_capture` | `0x3a30` | `0x3a68` | **`+0x38`** |
+| `__TEXT.__swift5_builtin` | `0x2d0` | `0x2f8` | **`+0x28`** |
+| `__TEXT.__cstring` | `0xbe4d` | `0xbe6d` | **`+0x20`** |
+| `__TEXT.__swift5_proto` | `0x230c` | `0x2328` | **`+0x1c`** |
+| `__TEXT.__swift5_types` | `0xabc` | `0xac8` | **`+0xc`** |
+| `__DATA.__common` | `0x3e0` | `0x3e8` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0xf8c` | `0xf94` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -524.0.56.0.0
--  __TEXT.__text: 0x3f1820
--  __TEXT.__objc_methlist: 0xf8c
--  __TEXT.__const: 0x2e090
--  __TEXT.__swift5_typeref: 0x9b3c
--  __TEXT.__constg_swiftt: 0x6b1c
--  __TEXT.__swift5_reflstr: 0x7f9e
--  __TEXT.__swift5_fieldmd: 0x93b0
--  __TEXT.__swift5_builtin: 0x2d0
--  __TEXT.__swift5_assocty: 0x15a0
--  __TEXT.__swift5_proto: 0x230c
--  __TEXT.__swift5_types: 0xabc
--  __TEXT.__cstring: 0xbe4d
--  __TEXT.__swift5_capture: 0x3a30
--  __TEXT.__oslogstring: 0x9325
 +524.10.88.0.0
-+  __TEXT.__text: 0x3faaa4
-+  __TEXT.__objc_methlist: 0xf94
-+  __TEXT.__const: 0x2e7d0
-+  __TEXT.__swift5_typeref: 0x9c0a
-+  __TEXT.__constg_swiftt: 0x6b94
-+  __TEXT.__swift5_reflstr: 0x804e
-+  __TEXT.__swift5_fieldmd: 0x9470
-+  __TEXT.__swift5_builtin: 0x2f8
-+  __TEXT.__swift5_assocty: 0x1600
-+  __TEXT.__swift5_proto: 0x2328
-+  __TEXT.__swift5_types: 0xac8
-+  __TEXT.__cstring: 0xbe6d
-+  __TEXT.__swift5_capture: 0x3a68
-+  __TEXT.__oslogstring: 0x96c5
-   __TEXT.__swift5_protos: 0x30
--  __TEXT.__swift_as_entry: 0x1184
--  __TEXT.__swift_as_cont: 0x37a0
-+  __TEXT.__swift_as_entry: 0x121c
-+  __TEXT.__swift_as_cont: 0x37f8
-   __TEXT.__swift5_mpenum: 0xec
--  __TEXT.__swift_as_ret: 0x1658
-+  __TEXT.__swift_as_ret: 0x1704
-   __TEXT.__gcc_except_tab: 0x14c
--  __TEXT.__unwind_info: 0x14a28
--  __TEXT.__eh_frame: 0x36c48
-+  __TEXT.__unwind_info: 0x14c30
-+  __TEXT.__eh_frame: 0x371a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x108
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x18c0
-+  __DATA_CONST.__objc_selrefs: 0x1928
-   __DATA_CONST.__objc_protorefs: 0x78
-   __DATA_CONST.__objc_superrefs: 0x38
-   __DATA_CONST.__objc_arraydata: 0x28
--  __DATA_CONST.__got: 0x1338
--  __AUTH_CONST.__const: 0x191e8
-+  __DATA_CONST.__got: 0x1370
-+  __AUTH_CONST.__const: 0x19338
-   __AUTH_CONST.__cfstring: 0x220
--  __AUTH_CONST.__objc_const: 0x7190
-+  __AUTH_CONST.__objc_const: 0x71d8
-   __AUTH_CONST.__objc_intobj: 0x48
-   __AUTH_CONST.__objc_arrayobj: 0x78
--  __AUTH_CONST.__auth_got: 0x25b8
-+  __AUTH_CONST.__auth_got: 0x2610
-   __AUTH.__objc_data: 0x1d20
--  __AUTH.__data: 0x5558
-+  __AUTH.__data: 0x5608
-   __DATA.__objc_ivar: 0x48
--  __DATA.__data: 0x8cd0
--  __DATA.__common: 0x3e0
-+  __DATA.__data: 0x8db8
-+  __DATA.__common: 0x3e8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /System/Library/PrivateFrameworks/CoreWiFi.framework/CoreWiFi
-   - /System/Library/PrivateFrameworks/DMCEnrollmentLibrary.framework/DMCEnrollmentLibrary
-   - /System/Library/PrivateFrameworks/DMCEnrollmentProvider.framework/DMCEnrollmentProvider
 +  - /System/Library/PrivateFrameworks/DMCUtilities.framework/DMCUtilities
-   - /System/Library/PrivateFrameworks/DeviceIdentity.framework/DeviceIdentity
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/FindMyLocate.framework/FindMyLocate
 
-   - /usr/lib/swift/libswiftQuartzCore.dylib
-   - /usr/lib/swift/libswiftSceneKit.dylib
-   - /usr/lib/swift/libswiftSpatial.dylib
 -  - /usr/lib/swift/libswiftSpriteKit.dylib
-   - /usr/lib/swift/libswiftSystem.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 18453
--  Symbols:   5643
+-  Symbols:   5015
 -  CStrings:  2414
 +  Functions: 18572
-+  Symbols:   5672
++  Symbols:   5032
 +  CStrings:  2433
- 
 Symbols:
 + _OBJC_CLASS_$_DMCEnrollmentFlowManagedConfigurationHelper
 + _OBJC_CLASS_$_DMCObliterationShelter
@@ -131,19 +75,6 @@ Symbols:
 + _associated conformance So15CWFSecurityTypeVs9OptionSetSCs0D7Algebra
 + _keypath_set.25Tm
 + _keypath_set.74Tm
-+ _objc_msgSend$bleAppleManufacturerData
-+ _objc_msgSend$deviceFlags
-+ _objc_msgSend$enrollmentServerURL
-+ _objc_msgSend$initWithPresenter:managedConfigurationHelper:
-+ _objc_msgSend$initWithXPCObject:error:
-+ _objc_msgSend$installProfileData:options:outError:
-+ _objc_msgSend$refreshDetailsFromDisk
-+ _objc_msgSend$retrieveWithError:
-+ _objc_msgSend$setBleAppleManufacturerData:
-+ _objc_msgSend$terminateEnrollmentFlow
-+ _objc_msgSend$updateWithCBDevice:
-+ _objc_msgSend$wifiProfileData
-+ _objc_msgSend$xpcEventCompleteRepresentation
 + _symbolic So11CKContainerC
 + _symbolic So27CKFetchRecordZonesOperationCSg
 + _symbolic _____ 17CompanionSetupKit31CSKOneHomeScreenCloudDataExists9firstName04lastK07timeoutSbSgSSSg_AGs8DurationVtYaF10FetchStateL_V
@@ -174,7 +105,6 @@ Symbols:
 - __swift_FORCE_LOAD_$_swiftSpriteKit
 - __swift_FORCE_LOAD_$_swiftSpriteKit_$_CompanionSetupKit
 - _keypath_set.72Tm
-- _objc_msgSend$installWiFiProfileIfNeeded:
 - _symbolic ScCyyt_____GSg s5NeverO
 - _symbolic _____3key______5valuetSg 10Foundation4DataV 17CompanionSetupKit23CSKAppleTVRemoteManagerC14ConnectionInfoV
 - _type_layout_string So16CBDiscoveryFlagsV

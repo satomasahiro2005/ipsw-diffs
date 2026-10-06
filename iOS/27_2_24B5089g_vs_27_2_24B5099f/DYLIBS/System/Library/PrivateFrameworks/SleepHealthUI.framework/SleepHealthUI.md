@@ -2,94 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/SleepHealthUI.framework/SleepHealthUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1daf44` | `0x1e13cc` | **`+0x6488`** |
+| `__DATA.__bss` | `0x10040` | `0x11140` | **`+0x1100`** |
+| `__TEXT.__const` | `0x109a0` | `0x11160` | **`+0x7c0`** |
+| `__TEXT.__eh_frame` | `0x16f8` | `0x1a68` | **`+0x370`** |
+| `__AUTH_CONST.__const` | `0xc480` | `0xc6e8` | **`+0x268`** |
+| `__TEXT.__unwind_info` | `0x61d0` | `0x63f8` | **`+0x228`** |
+| `__AUTH.__data` | `0x38b8` | `0x3ac8` | **`+0x210`** |
+| `__DATA.__data` | `0x4f10` | `0x50a0` | **`+0x190`** |
+| `__TEXT.__constg_swiftt` | `0x8c10` | `0x8d80` | **`+0x170`** |
+| `__AUTH_CONST.__auth_got` | `0x3210` | `0x3370` | **`+0x160`** |
+| `__TEXT.__swift5_fieldmd` | `0x5290` | `0x53e8` | **`+0x158`** |
+| `__TEXT.__swift5_typeref` | `0x5866` | `0x5946` | **`+0xe0`** |
+| `__TEXT.__swift5_reflstr` | `0x5b32` | `0x5bc2` | **`+0x90`** |
+| `__TEXT.__swift5_proto` | `0xa88` | `0xb10` | **`+0x88`** |
+| `__DATA_CONST.__got` | `0x1e68` | `0x1eb8` | **`+0x50`** |
+| `__TEXT.__cstring` | `0x7371` | `0x7321` | **`-0x50`** |
+| `__TEXT.__swift5_types` | `0x5ec` | `0x60c` | **`+0x20`** |
+| `__TEXT.__swift5_capture` | `0x1b3c` | `0x1b4c` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x64` | `0x74` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2318` | `0x2310` | **`-0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x38` | `0x40` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x50` | `0x58` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x1c` | `0x20` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.45.2.4
--  __TEXT.__text: 0x1cec50
 +7027.1.54.2.3
-+  __TEXT.__text: 0x1d4bfc
-   __TEXT.__objc_methlist: 0x2904
--  __TEXT.__const: 0x109a0
--  __TEXT.__constg_swiftt: 0x8c10
--  __TEXT.__swift5_typeref: 0x5866
-+  __TEXT.__const: 0x11160
-+  __TEXT.__constg_swiftt: 0x8d80
-+  __TEXT.__swift5_typeref: 0x5946
-   __TEXT.__swift5_builtin: 0x2a8
--  __TEXT.__swift5_reflstr: 0x5b32
--  __TEXT.__swift5_fieldmd: 0x5290
-+  __TEXT.__swift5_reflstr: 0x5bc2
-+  __TEXT.__swift5_fieldmd: 0x53e8
-   __TEXT.__swift5_assocty: 0x1310
--  __TEXT.__cstring: 0x7371
--  __TEXT.__swift5_proto: 0xa88
--  __TEXT.__swift5_types: 0x5ec
--  __TEXT.__swift5_capture: 0x1b3c
-+  __TEXT.__cstring: 0x7321
-+  __TEXT.__swift5_proto: 0xb10
-+  __TEXT.__swift5_types: 0x60c
-+  __TEXT.__swift5_capture: 0x1b4c
-   __TEXT.__oslogstring: 0x5fe0
-   __TEXT.__swift5_protos: 0xf4
-   __TEXT.__swift5_mpenum: 0x34
--  __TEXT.__swift_as_entry: 0x50
--  __TEXT.__swift_as_cont: 0x64
--  __TEXT.__swift_as_ret: 0x1c
--  __TEXT.__unwind_info: 0x82c8
--  __TEXT.__eh_frame: 0x16f8
-+  __TEXT.__swift_as_entry: 0x58
-+  __TEXT.__swift_as_cont: 0x74
-+  __TEXT.__swift_as_ret: 0x20
-+  __TEXT.__unwind_info: 0x8558
-+  __TEXT.__eh_frame: 0x1a68
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x170
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2318
-+  __DATA_CONST.__objc_selrefs: 0x2310
-   __DATA_CONST.__objc_protorefs: 0xc0
--  __DATA_CONST.__objc_superrefs: 0x38
--  __DATA_CONST.__got: 0x1e68
--  __AUTH_CONST.__const: 0xc480
-+  __DATA_CONST.__objc_superrefs: 0x40
-+  __DATA_CONST.__got: 0x1eb8
-+  __AUTH_CONST.__const: 0xc6e8
-   __AUTH_CONST.__cfstring: 0x340
-   __AUTH_CONST.__objc_const: 0x8060
--  __AUTH_CONST.__auth_got: 0x3210
-+  __AUTH_CONST.__auth_got: 0x3370
-   __AUTH.__objc_data: 0x5ab0
--  __AUTH.__data: 0x38b8
-+  __AUTH.__data: 0x3ac8
-   __DATA.__objc_ivar: 0x48
--  __DATA.__data: 0x4f10
-+  __DATA.__data: 0x50a0
-   __DATA.__objc_stublist: 0x20
-   __DATA.__common: 0x4f8
-   __DATA_DIRTY.__objc_data: 0x1580
-
-   - /System/Library/Frameworks/WidgetKit.framework/WidgetKit
-   - /System/Library/Frameworks/_LocationEssentials.framework/_LocationEssentials
-   - /System/Library/PrivateFrameworks/AppPredictionClient.framework/AppPredictionClient
 +  - /System/Library/PrivateFrameworks/AppliedSensingFitness.framework/AppliedSensingFitness
-   - /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard
-   - /System/Library/PrivateFrameworks/BridgePreferences.framework/BridgePreferences
-   - /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10349
 -  Symbols:   3327
 -  CStrings:  1076
 +  Functions: 10505
 +  Symbols:   3354
 +  CStrings:  1075
- 
 Symbols:
 + -[SleepTableWelcomeController(LayoutMargins) directionalLayoutMargins]
 + __OBJC_$_INSTANCE_METHODS__TtC13SleepHealthUI27SleepTableWelcomeController(LayoutMargins)

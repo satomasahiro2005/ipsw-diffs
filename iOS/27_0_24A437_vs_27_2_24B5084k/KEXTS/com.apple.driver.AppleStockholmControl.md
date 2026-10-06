@@ -2,17 +2,18 @@
 
 > `com.apple.driver.AppleStockholmControl`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x14f58` | `0x14f6c` | **`+0x14`** |
+
+### Other Changes
+
 ```diff
 
 -370.42.1.0.0
 +371.7.0.0.0
-   __TEXT.__cstring: 0x47a1
-   __TEXT.__const: 0x50
--  __TEXT_EXEC.__text: 0x13b7c
-+  __TEXT_EXEC.__text: 0x13b90
-   __TEXT_EXEC.__auth_stubs: 0x500
-   __DATA.__data: 0x219
-   __DATA.__common: 0x17e
 Functions:
-~ __ZN18AppleStockholmSPMI16_vGPIOWriteGatedEhi : 524 -> 544
+~ __ZN18AppleStockholmSPMI16_vGPIOWriteGatedEhi : 564 -> 584
 ```

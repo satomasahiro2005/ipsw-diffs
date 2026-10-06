@@ -2,88 +2,43 @@
 
 > `/System/Library/Frameworks/SafariServices.framework/SafariServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x183bc0` | `0x1856c8` | **`+0x1b08`** |
+| `__AUTH_CONST.__cfstring` | `0xc3e0` | `0xc640` | **`+0x260`** |
+| `__TEXT.__gcc_except_tab` | `0xfc84` | `0xfe5c` | **`+0x1d8`** |
+| `__TEXT.__cstring` | `0xd470` | `0xd640` | **`+0x1d0`** |
+| `__TEXT.__oslogstring` | `0x81d7` | `0x83a7` | **`+0x1d0`** |
+| `__TEXT.__objc_methlist` | `0x1bd4c` | `0x1bdbc` | **`+0x70`** |
+| `__DATA_CONST.__objc_selrefs` | `0x12328` | `0x12390` | **`+0x68`** |
+| `__DATA.__data` | `0x69b0` | `0x6950` | **`-0x60`** |
+| `__AUTH_CONST.__objc_const` | `0x2c6a8` | `0x2c700` | **`+0x58`** |
+| `__TEXT.__unwind_info` | `0x9210` | `0x9268` | **`+0x58`** |
+| `__AUTH_CONST.__const` | `0x2220` | `0x2270` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x1488` | `0x14a8` | **`+0x20`** |
+| `__DATA_CONST.__objc_arraydata` | `0x588` | `0x5a8` | **`+0x20`** |
+| `__TEXT.__swift5_capture` | `0x47c` | `0x49c` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x2710` | `0x2728` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x1f24` | `0x1f34` | **`+0x10`** |
+| `__TEXT.__const` | `0x2eb4` | `0x2ec4` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x8e8` | `0x8e0` | **`-0x8`** |
+| `__TEXT.__swift5_typeref` | `0x6ac` | `0x6b0` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -625.1.29.10.29
--  __TEXT.__text: 0x178960
--  __TEXT.__objc_methlist: 0x1bd4c
--  __TEXT.__const: 0x2eb4
--  __TEXT.__cstring: 0xd470
--  __TEXT.__gcc_except_tab: 0xfc84
 +625.2.4.1.0
-+  __TEXT.__text: 0x17a3d0
-+  __TEXT.__objc_methlist: 0x1bdbc
-+  __TEXT.__const: 0x2ec4
-+  __TEXT.__cstring: 0xd640
-+  __TEXT.__gcc_except_tab: 0xfe5c
-   __TEXT.__dlopen_cstrs: 0xb7f
--  __TEXT.__oslogstring: 0x81d7
-+  __TEXT.__oslogstring: 0x83a7
-   __TEXT.__ustring: 0x3774
--  __TEXT.__swift5_typeref: 0x6ac
--  __TEXT.__swift5_capture: 0x47c
-+  __TEXT.__swift5_typeref: 0x6b0
-+  __TEXT.__swift5_capture: 0x49c
-   __TEXT.__constg_swiftt: 0x218
-   __TEXT.__swift5_reflstr: 0x108
-   __TEXT.__swift5_fieldmd: 0x148
 
-   __TEXT.__swift_as_entry: 0x70
-   __TEXT.__swift_as_ret: 0x7c
-   __TEXT.__swift_as_cont: 0xfc
--  __TEXT.__unwind_info: 0xa5c0
-+  __TEXT.__unwind_info: 0xa628
-   __TEXT.__eh_frame: 0x1208
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__const: 0x7818
-   __DATA_CONST.__objc_classlist: 0xa50
-   __DATA_CONST.__objc_catlist: 0x100
--  __DATA_CONST.__objc_protolist: 0x8e8
-+  __DATA_CONST.__objc_protolist: 0x8e0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x12328
-+  __DATA_CONST.__objc_selrefs: 0x12390
-   __DATA_CONST.__objc_protorefs: 0x160
-   __DATA_CONST.__objc_superrefs: 0x858
--  __DATA_CONST.__objc_arraydata: 0x588
--  __DATA_CONST.__got: 0x2710
--  __AUTH_CONST.__const: 0x2220
--  __AUTH_CONST.__cfstring: 0xc3e0
--  __AUTH_CONST.__objc_const: 0x2c6a8
-+  __DATA_CONST.__objc_arraydata: 0x5a8
-+  __DATA_CONST.__got: 0x2728
-+  __AUTH_CONST.__const: 0x2270
-+  __AUTH_CONST.__cfstring: 0xc640
-+  __AUTH_CONST.__objc_const: 0x2c700
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0xca8
-   __AUTH_CONST.__objc_arrayobj: 0x4f8
-   __AUTH_CONST.__objc_doubleobj: 0xc0
-   __AUTH_CONST.__objc_dictobj: 0xa0
--  __AUTH_CONST.__auth_got: 0x1488
-+  __AUTH_CONST.__auth_got: 0x14a8
-   __AUTH.__objc_data: 0x5e98
-   __AUTH.__data: 0x2e0
--  __DATA.__objc_ivar: 0x1f24
--  __DATA.__data: 0x69b0
-+  __DATA.__objc_ivar: 0x1f34
-+  __DATA.__data: 0x6950
-   __DATA_DIRTY.__objc_data: 0xb40
-   __DATA_DIRTY.__bss: 0x10
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9284
--  Symbols:   24487
+-  Symbols:   17525
 -  CStrings:  2549
 +  Functions: 9308
-+  Symbols:   24523
++  Symbols:   17546
 +  CStrings:  2573
- 
 Symbols:
 + -[SFWebViewController performPageLevelAutoFillWithoutAuthentication:options:generatedPassword:earliestOneTimeCodeDate:staleOneTimeCodeThresholdDate:watchdogTimeout:completionHandler:]
 + -[_SFBrowserContentViewController _automaticPasswordChangeInitialLoadDidFailWithError:]
@@ -142,29 +97,6 @@ Symbols:
 + ___79-[_SFBrowserContentViewController _updateOverlayStateForDigitalHealthTracking:]_block_invoke
 + ___79-[_SFBrowserContentViewController _updateOverlayStateForDigitalHealthTracking:]_block_invoke_2
 + ___block_descriptor_72_ea8_32s40s48s56bs_e28_v20?0"WBSFormMetadata"8B16ls32l8s40l8s48l8s56l8
-+ _objc_msgSend$_automaticPasswordChangeInitialLoadDidFailWithError:
-+ _objc_msgSend$_guidedBrowsingReportingTabForViewController:
-+ _objc_msgSend$_logAutomaticPasswordChangeNavigationMilestone:navigation:error:
-+ _objc_msgSend$_reportBlockedGuidedBrowsingNavigationAction:isMainFrameNavigation:inViewController:
-+ _objc_msgSend$_reportGuidedBrowsingCurrentURLForViewController:
-+ _objc_msgSend$_reportGuidedBrowsingNavigationEventWithURL:httpMethod:statusCode:wasBlocked:forTab:
-+ _objc_msgSend$_reportGuidedBrowsingSameDocumentNavigationForViewController:
-+ _objc_msgSend$_updateOverlayStateForDigitalHealthTracking:
-+ _objc_msgSend$autoFillValuesForAutomaticPasswordChangeWithAccountInfo:formContexts:savedAccountContext:options:generatedPassword:oneTimeCodeProvider:earliestOneTimeCodeDate:staleOneTimeCodeThresholdDate:completionHandler:
-+ _objc_msgSend$currentURLChanged:inTabWithUUID:
-+ _objc_msgSend$donateAutoFillForFormType:fieldCount:
-+ _objc_msgSend$donateAutoFillWithCategory:fieldCount:
-+ _objc_msgSend$donateDistractionControlOpenedWebsite
-+ _objc_msgSend$donateExtensionUsedWithType:
-+ _objc_msgSend$initForStrongPasswordGenerator:passwordRules:overrideApplicationIdentifier:
-+ _objc_msgSend$pendingHTTPMethod
-+ _objc_msgSend$pendingStatusCode
-+ _objc_msgSend$performPageLevelAutoFillWithoutAuthentication:options:generatedPassword:earliestOneTimeCodeDate:staleOneTimeCodeThresholdDate:watchdogTimeout:completionHandler:
-+ _objc_msgSend$reportNavigationEventWithURL:httpMethod:statusCode:wasBlocked:forTabWithUUID:
-+ _objc_msgSend$setPendingHTTPMethod:
-+ _objc_msgSend$setPendingStatusCode:
-+ _objc_msgSend$staleOneTimeCodeThresholdDate
-+ _objc_msgSend$statusCode
 + _swift_isEscapingClosureAtFileLocation
 + _swift_retain_x22
 + _symbolic Ig_
@@ -207,14 +139,6 @@ Symbols:
 - ___63-[_SFBrowserContentViewController _updateDigitalHealthTracking]_block_invoke_2
 - ___63-[_SFBrowserContentViewController _updateDigitalHealthTracking]_block_invoke_3
 - ___block_descriptor_56_ea8_32s40s48bs_e28_v20?0"WBSFormMetadata"8B16ls32l8s40l8s48l8
-- _objc_msgSend$_setFullscreenDelegate:
-- _objc_msgSend$autoFillValuesForAutomaticPasswordChangeWithAccountInfo:formContexts:savedAccountContext:options:generatedPassword:oneTimeCodeProvider:earliestOneTimeCodeDate:completionHandler:
-- _objc_msgSend$didFinishLoad
-- _objc_msgSend$initForAutoFillHelper:passwordRules:overrideApplicationIdentifier:
-- _objc_msgSend$performPageLevelAutoFillWithoutAuthentication:options:generatedPassword:earliestOneTimeCodeDate:watchdogTimeout:completionHandler:
-- _objc_msgSend$setItemsUseContentSafeAreaLayoutMargins:
-- _objc_msgSend$webViewController:requestPresentingViewControllerWithCompletionHandler:
-- _objc_msgSend$webViewControllerDidExitElementFullscreen:
 CStrings:
 + "&appid=aaplw_r"
 + "&enriched=1"

@@ -2,63 +2,37 @@
 
 > `/System/Library/AccessibilityBundles/QuickSpeak.bundle/QuickSpeak`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x920c` | `0x99cc` | **`+0x7c0`** |
+| `__AUTH_CONST.__objc_const` | `0x1870` | `0x1ab0` | **`+0x240`** |
+| `__AUTH_CONST.__cfstring` | `0xe80` | `0x1020` | **`+0x1a0`** |
+| `__TEXT.__cstring` | `0xd23` | `0xe8c` | **`+0x169`** |
+| `__AUTH.__objc_data` | `0x780` | `0x8c0` | **`+0x140`** |
+| `__TEXT.__objc_methlist` | `0xfac` | `0x1044` | **`+0x98`** |
+| `__DATA_CONST.__const` | `0x230` | `0x280` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0xd38` | `0xd78` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x2c0` | `0x2f8` | **`+0x38`** |
+| `__DATA_CONST.__objc_classlist` | `0xc0` | `0xe0` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x27c` | `0x294` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x38` | `0x48` | **`+0x10`** |
+| `__TEXT.__const` | `0x50` | `0x58` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3237.1.0.0.0
--  __TEXT.__text: 0x920c
--  __TEXT.__objc_methlist: 0xfac
--  __TEXT.__const: 0x50
--  __TEXT.__gcc_except_tab: 0x27c
--  __TEXT.__cstring: 0xd23
 +3240.3.0.0.0
-+  __TEXT.__text: 0x99cc
-+  __TEXT.__objc_methlist: 0x1044
-+  __TEXT.__const: 0x58
-+  __TEXT.__gcc_except_tab: 0x294
-+  __TEXT.__cstring: 0xe8c
-   __TEXT.__oslogstring: 0x379
--  __TEXT.__unwind_info: 0x2c0
-+  __TEXT.__unwind_info: 0x2f8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x230
--  __DATA_CONST.__objc_classlist: 0xc0
-+  __DATA_CONST.__const: 0x280
-+  __DATA_CONST.__objc_classlist: 0xe0
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xd38
-+  __DATA_CONST.__objc_selrefs: 0xd78
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x38
-+  __DATA_CONST.__objc_superrefs: 0x48
-   __DATA_CONST.__got: 0x190
-   __AUTH_CONST.__const: 0x200
--  __AUTH_CONST.__cfstring: 0xe80
--  __AUTH_CONST.__objc_const: 0x1870
-+  __AUTH_CONST.__cfstring: 0x1020
-+  __AUTH_CONST.__objc_const: 0x1ab0
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x780
-+  __AUTH.__objc_data: 0x8c0
-   __DATA.__objc_ivar: 0x44
-   __DATA.__data: 0x1e0
-   __DATA.__bss: 0x90
 
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 203
--  Symbols:   841
+-  Symbols:   574
 -  CStrings:  152
 +  Functions: 216
-+  Symbols:   885
++  Symbols:   610
 +  CStrings:  167
- 
 Symbols:
 + +[CKChatController_ClickyOrb_QSExtras _accessibilityPerformValidations:]
 + +[CKChatController_ClickyOrb_QSExtras(SafeCategory) safeCategoryBaseClass]
@@ -103,14 +77,6 @@ Symbols:
 + ___Block_byref_object_dispose_
 + ___block_descriptor_40_e8_32s_e18_v16?0"UIAction"8ls32l8
 + ___block_descriptor_56_e8_32s40s48r_e5_v8?0lr48l8s32l8s40l8
-+ _objc_msgSend$_accessibilityPauseSpeaking:
-+ _objc_msgSend$_accessibilitySpeak:
-+ _objc_msgSend$_axActionForSpeakSelection:
-+ _objc_msgSend$balloonViewForChatItem:
-+ _objc_msgSend$collectionViewController
-+ _objc_msgSend$insertObject:atIndex:
-+ _objc_msgSend$isSubclassOfClass:
-+ _objc_msgSend$setSelectable:
 - GCC_except_table137
 - GCC_except_table145
 - GCC_except_table163

@@ -2,51 +2,28 @@
 
 > `/System/Library/PrivateFrameworks/SiriPaymentsIntents.framework/SiriPaymentsIntents`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1be5e4` | `0x1bf244` | **`+0xc60`** |
+| `__AUTH_CONST.__const` | `0xf4e8` | `0xf5d8` | **`+0xf0`** |
+| `__TEXT.__swift5_capture` | `0x5670` | `0x56e4` | **`+0x74`** |
+| `__TEXT.__oslogstring` | `0x6702` | `0x6762` | **`+0x60`** |
+
+### Other Changes
+
 ```diff
 
 -3600.3.1.0.0
--  __TEXT.__text: 0x1b4570
 +3605.4.1.0.0
-+  __TEXT.__text: 0x1b51bc
-   __TEXT.__objc_methlist: 0x26c
-   __TEXT.__const: 0x74c0
-   __TEXT.__swift5_typeref: 0x27a0
--  __TEXT.__swift5_capture: 0x5670
--  __TEXT.__oslogstring: 0x6702
-+  __TEXT.__swift5_capture: 0x56e4
-+  __TEXT.__oslogstring: 0x6762
-   __TEXT.__cstring: 0x31b1
-   __TEXT.__constg_swiftt: 0x2c48
-   __TEXT.__swift5_fieldmd: 0x1514
 
-   __TEXT.__swift_as_cont: 0x90c
-   __TEXT.__swift5_protos: 0x6c
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x5498
-+  __TEXT.__unwind_info: 0x54b8
-   __TEXT.__eh_frame: 0x3a78
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0x678
-   __DATA_CONST.__objc_protorefs: 0x60
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xf4e8
-+  __AUTH_CONST.__const: 0xf5d8
-   __AUTH_CONST.__objc_const: 0x4018
-   __AUTH_CONST.__auth_got: 0x1ba8
-   __AUTH.__objc_data: 0x3c0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5027
--  Symbols:   10633
+-  Symbols:   10461
 -  CStrings:  732
 +  Functions: 5033
-+  Symbols:   10635
++  Symbols:   10463
 +  CStrings:  733
- 
 Symbols:
 + _$s19SiriPaymentsIntents29ContactDisambiguationStrategyC05parseE6Result5input14paginatedItems13resolveRecord0A7KitFlow0eH0VyAH18IntentPromptAnswerVyxGGAH5InputV_AH22PaginatedItemContainerVySo8INPersonCGAH019ParameterResolutionM0VyxGtYaKFSSycfu10_Tf2i_n
 + _$s19SiriPaymentsIntents29ContactDisambiguationStrategyC05parseE6Result5input14paginatedItems13resolveRecord0A7KitFlow0eH0VyAH18IntentPromptAnswerVyxGGAH5InputV_AH22PaginatedItemContainerVySo8INPersonCGAH019ParameterResolutionM0VyxGtYaKFSSycfu10_Tf2i_nTA

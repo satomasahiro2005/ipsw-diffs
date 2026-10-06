@@ -2,89 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/ShellSceneKit.framework/ShellSceneKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xee118` | `0xef8c0` | **`+0x17a8`** |
+| `__TEXT.__swift5_reflstr` | `0x15cb` | `0x164b` | **`+0x80`** |
+| `__AUTH.__objc_data` | `0x1238` | `0x12a8` | **`+0x70`** |
+| `__AUTH_CONST.__objc_const` | `0x6ca8` | `0x6d18` | **`+0x70`** |
+| `__TEXT.__cstring` | `0x2cab` | `0x2d1b` | **`+0x70`** |
+| `__TEXT.__swift5_typeref` | `0x2568` | `0x25b4` | **`+0x4c`** |
+| `__TEXT.__objc_methlist` | `0x16b8` | `0x1700` | **`+0x48`** |
+| `__TEXT.__const` | `0x82b0` | `0x82f0` | **`+0x40`** |
+| `__TEXT.__swift5_fieldmd` | `0x1ba8` | `0x1be4` | **`+0x3c`** |
+| `__TEXT.__unwind_info` | `0x3280` | `0x32b8` | **`+0x38`** |
+| `__AUTH.__data` | `0x660` | `0x690` | **`+0x30`** |
+| `__DATA.__data` | `0x14b0` | `0x14d0` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0xbf8` | `0xc18` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xcc8` | `0xcd8` | **`+0x10`** |
+| `__AUTH_CONST.__const` | `0x81b0` | `0x81c0` | **`+0x10`** |
+| `__DATA.__bss` | `0x8960` | `0x8970` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x630` | `0x640` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0x13b8` | `0x13a8` | **`-0x10`** |
+| `__DATA_CONST.__const` | `0x430` | `0x438` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x1f8` | `0x200` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -54.0.0.0.0
--  __TEXT.__text: 0xee118
--  __TEXT.__objc_methlist: 0x16b8
--  __TEXT.__const: 0x82b0
--  __TEXT.__cstring: 0x2cab
--  __TEXT.__swift5_typeref: 0x2568
 +54.0.1.0.0
-+  __TEXT.__text: 0xef8c0
-+  __TEXT.__objc_methlist: 0x1700
-+  __TEXT.__const: 0x82f0
-+  __TEXT.__cstring: 0x2d1b
-+  __TEXT.__swift5_typeref: 0x25b4
-   __TEXT.__swift5_capture: 0x2204
-   __TEXT.__oslogstring: 0xbe3
-   __TEXT.__constg_swiftt: 0x1f04
--  __TEXT.__swift5_reflstr: 0x15cb
--  __TEXT.__swift5_fieldmd: 0x1ba8
-+  __TEXT.__swift5_reflstr: 0x164b
-+  __TEXT.__swift5_fieldmd: 0x1be4
-   __TEXT.__swift5_types: 0x28c
-   __TEXT.__swift5_proto: 0x578
-   __TEXT.__swift5_protos: 0x4c
 
-   __TEXT.__swift_as_ret: 0x4c
-   __TEXT.__swift_as_cont: 0x88
-   __TEXT.__swift5_types2: 0x8
--  __TEXT.__unwind_info: 0x3280
-+  __TEXT.__unwind_info: 0x32b8
-   __TEXT.__eh_frame: 0x1eb0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x430
--  __DATA_CONST.__objc_classlist: 0x1f8
-+  __DATA_CONST.__const: 0x438
-+  __DATA_CONST.__objc_classlist: 0x200
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x1a8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xbf8
-+  __DATA_CONST.__objc_selrefs: 0xc18
-   __DATA_CONST.__objc_protorefs: 0xe8
-   __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__got: 0x630
--  __AUTH_CONST.__const: 0x81b0
-+  __DATA_CONST.__got: 0x640
-+  __AUTH_CONST.__const: 0x81c0
-   __AUTH_CONST.__cfstring: 0x120
--  __AUTH_CONST.__objc_const: 0x6ca8
--  __AUTH_CONST.__auth_got: 0xcc8
--  __AUTH.__objc_data: 0x1238
--  __AUTH.__data: 0x660
-+  __AUTH_CONST.__objc_const: 0x6d18
-+  __AUTH_CONST.__auth_got: 0xcd8
-+  __AUTH.__objc_data: 0x12a8
-+  __AUTH.__data: 0x690
-   __DATA.__objc_ivar: 0xc
--  __DATA.__data: 0x14b0
-+  __DATA.__data: 0x14d0
-   __DATA.__common: 0x18
--  __DATA.__bss: 0x8960
-+  __DATA.__bss: 0x8970
-   __DATA_DIRTY.__objc_data: 0x1188
--  __DATA_DIRTY.__data: 0x13b8
-+  __DATA_DIRTY.__data: 0x13a8
-   __DATA_DIRTY.__bss: 0x2de0
-   __DATA_DIRTY.__common: 0x90
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5880
--  Symbols:   10224
+-  Symbols:   9980
 -  CStrings:  370
 +  Functions: 5911
-+  Symbols:   10279
++  Symbols:   10033
 +  CStrings:  373
- 
 Symbols:
 + _$s13ShellSceneKit17CADisplayHardwareC11UpdateTokenV0F5FlagsV021needsMaximumFrameRateF0SbvM
 + _$s13ShellSceneKit17CADisplayHardwareC11UpdateTokenV0F5FlagsV021needsMaximumFrameRateF0SbvM.resume
@@ -148,8 +103,6 @@ Symbols:
 + ___swift_memcpy53_8
 + ___swift_memcpy72_8
 + ___swift_memcpy7_1
-+ _objc_msgSend$createFrameRateAssertionWithMaximumFrameRate:identifier:
-+ _objc_msgSend$maximumFrameRate
 + _symbolic SfSg
 + _symbolic So27CADisplayFrameRateAssertionCSg
 + _symbolic ___________Sg_____Sg_____SgSbSo27CADisplayFrameRateAssertionCSgt 13ShellSceneKit7DisplayV12PowerReasonsV So14CADisplayStateV So0g7CloningH0V AC10IdentifierV

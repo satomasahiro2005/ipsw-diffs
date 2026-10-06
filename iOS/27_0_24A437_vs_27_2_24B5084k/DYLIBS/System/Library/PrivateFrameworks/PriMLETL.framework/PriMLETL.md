@@ -2,97 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/PriMLETL.framework/PriMLETL`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb8194` | `0xb9740` | **`+0x15ac`** |
+| `__TEXT.__eh_frame` | `0x60d0` | `0x61d0` | **`+0x100`** |
+| `__AUTH_CONST.__const` | `0x4cc0` | `0x4d60` | **`+0xa0`** |
+| `__AUTH_CONST.__auth_got` | `0x14d0` | `0x1558` | **`+0x88`** |
+| `__TEXT.__oslogstring` | `0x1d37` | `0x1da7` | **`+0x70`** |
+| `__TEXT.__swift5_reflstr` | `0x2ea9` | `0x2f09` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x2710` | `0x2770` | **`+0x60`** |
+| `__TEXT.__swift5_typeref` | `0x1b25` | `0x1b83` | **`+0x5e`** |
+| `__AUTH_CONST.__objc_const` | `0xbe8` | `0xc28` | **`+0x40`** |
+| `__TEXT.__const` | `0x8f18` | `0x8f58` | **`+0x40`** |
+| `__DATA.__data` | `0x1828` | `0x1860` | **`+0x38`** |
+| `__TEXT.__swift5_fieldmd` | `0x2950` | `0x2974` | **`+0x24`** |
+| `__TEXT.__swift5_capture` | `0x2a0` | `0x2c0` | **`+0x20`** |
+| `__AUTH.__data` | `0x1038` | `0x1048` | **`+0x10`** |
+| `__TEXT.__cstring` | `0x1538` | `0x1548` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x3f8` | `0x408` | **`+0x10`** |
+| `__DATA.__common` | `0xd0` | `0xd8` | **`+0x8`** |
+| `__DATA_CONST.__const` | `0x1a8` | `0x1a0` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x488` | `0x490` | **`+0x8`** |
+| `__TEXT.__constg_swiftt` | `0x14cc` | `0x14d4` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x198` | `0x19c` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x1f8` | `0x1fc` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -42.0.0.0.0
--  __TEXT.__text: 0xb1b30
 +44.0.0.0.0
-+  __TEXT.__text: 0xb2ffc
-   __TEXT.__objc_methlist: 0x13c
--  __TEXT.__const: 0x8f18
--  __TEXT.__constg_swiftt: 0x14cc
--  __TEXT.__swift5_typeref: 0x1b25
-+  __TEXT.__const: 0x8f58
-+  __TEXT.__constg_swiftt: 0x14d4
-+  __TEXT.__swift5_typeref: 0x1b83
-   __TEXT.__swift5_builtin: 0xc8
--  __TEXT.__swift5_reflstr: 0x2ea9
--  __TEXT.__swift5_fieldmd: 0x2950
-+  __TEXT.__swift5_reflstr: 0x2f09
-+  __TEXT.__swift5_fieldmd: 0x2974
-   __TEXT.__swift5_assocty: 0x420
--  __TEXT.__cstring: 0x1538
-+  __TEXT.__cstring: 0x1548
-   __TEXT.__swift5_proto: 0x63c
-   __TEXT.__swift5_types: 0x1f0
--  __TEXT.__oslogstring: 0x1d37
-+  __TEXT.__oslogstring: 0x1da7
-   __TEXT.__swift5_protos: 0x2c
--  __TEXT.__swift_as_entry: 0x198
--  __TEXT.__swift_as_ret: 0x1f8
--  __TEXT.__swift_as_cont: 0x3f8
-+  __TEXT.__swift_as_entry: 0x19c
-+  __TEXT.__swift_as_ret: 0x1fc
-+  __TEXT.__swift_as_cont: 0x408
-   __TEXT.__swift5_mpenum: 0x88
--  __TEXT.__swift5_capture: 0x2a0
--  __TEXT.__unwind_info: 0x2e70
--  __TEXT.__eh_frame: 0x60d0
-+  __TEXT.__swift5_capture: 0x2c0
-+  __TEXT.__unwind_info: 0x2ed8
-+  __TEXT.__eh_frame: 0x61d0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1a8
-+  __DATA_CONST.__const: 0x1a0
-   __DATA_CONST.__objc_classlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x488
-+  __DATA_CONST.__objc_selrefs: 0x490
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x4cc0
--  __AUTH_CONST.__objc_const: 0xbe8
--  __AUTH_CONST.__auth_got: 0x14d0
-+  __AUTH_CONST.__const: 0x4d60
-+  __AUTH_CONST.__objc_const: 0xc28
-+  __AUTH_CONST.__auth_got: 0x1558
-   __AUTH.__objc_data: 0x230
--  __AUTH.__data: 0x1038
--  __DATA.__data: 0x1828
--  __DATA.__common: 0xd0
-+  __AUTH.__data: 0x1048
-+  __DATA.__data: 0x1860
-+  __DATA.__common: 0xd8
-   __DATA_DIRTY.__data: 0x88
-   __DATA_DIRTY.__bss: 0x100
-   - /System/Library/Frameworks/Combine.framework/Combine
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
 -  - /usr/lib/swift/libswiftAppleArchive.dylib
-   - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2972
--  Symbols:   1183
+-  Symbols:   1058
 -  CStrings:  309
 +  Functions: 2996
-+  Symbols:   1190
++  Symbols:   1064
 +  CStrings:  311
- 
 Symbols:
 + _OBJC_CLASS_$_OS_dispatch_queue
-+ _objc_msgSend$cancel
 + _swift_retain_x1
 + _swift_task_addCancellationHandler
 + _swift_task_removeCancellationHandler

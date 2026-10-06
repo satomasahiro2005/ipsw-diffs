@@ -2,89 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/HealthTopicsDaemonPlugin.framework/HealthTopicsDaemonPlugin`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc2dc` | `0xe918` | **`+0x263c`** |
+| `__AUTH_CONST.__objc_const` | `0x720` | `0x848` | **`+0x128`** |
+| `__AUTH.__objc_data` | `0x120` | `0x1f0` | **`+0xd0`** |
+| `__TEXT.__oslogstring` | `0x44d` | `0x51d` | **`+0xd0`** |
+| `__AUTH_CONST.__const` | `0x291` | `0x341` | **`+0xb0`** |
+| `__DATA.__data` | `0x2f8` | `0x398` | **`+0xa0`** |
+| `__TEXT.__constg_swiftt` | `0x248` | `0x2dc` | **`+0x94`** |
+| `__TEXT.__const` | `0x382` | `0x410` | **`+0x8e`** |
+| `__TEXT.__objc_methlist` | `0x350` | `0x3d8` | **`+0x88`** |
+| `__TEXT.__unwind_info` | `0x258` | `0x2e0` | **`+0x88`** |
+| `__TEXT.__swift5_fieldmd` | `0x160` | `0x1e4` | **`+0x84`** |
+| `__AUTH_CONST.__auth_got` | `0x690` | `0x710` | **`+0x80`** |
+| `__TEXT.__eh_frame` | `0x78` | `0xf8` | **`+0x80`** |
+| `__TEXT.__swift5_reflstr` | `0x185` | `0x1f5` | **`+0x70`** |
+| `__TEXT.__swift5_typeref` | `0x29e` | `0x30c` | **`+0x6e`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1d8` | `0x230` | **`+0x58`** |
+| `__TEXT.__cstring` | `0x214` | `0x254` | **`+0x40`** |
+| `__AUTH.__data` | `—` | `0x30` | **`+0x30`** |
+| `__DATA_DIRTY.__data` | `0x398` | `0x3c0` | **`+0x28`** |
+| `__DATA_CONST.__objc_protolist` | `0x70` | `0x80` | **`+0x10`** |
+| `__DATA_DIRTY.__objc_data` | `0x218` | `0x228` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x24` | `0x30` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x30` | `0x38` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x40` | `0x48` | **`+0x8`** |
+| `__TEXT.__swift5_capture` | `0xdc` | `0xe4` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xc2dc
--  __TEXT.__objc_methlist: 0x350
--  __TEXT.__const: 0x382
--  __TEXT.__swift5_typeref: 0x29e
--  __TEXT.__swift5_fieldmd: 0x160
--  __TEXT.__constg_swiftt: 0x248
--  __TEXT.__swift5_reflstr: 0x185
--  __TEXT.__cstring: 0x214
--  __TEXT.__swift5_capture: 0xdc
-+  __TEXT.__text: 0xe918
-+  __TEXT.__objc_methlist: 0x3d8
-+  __TEXT.__const: 0x410
-+  __TEXT.__constg_swiftt: 0x2dc
-+  __TEXT.__swift5_typeref: 0x30c
-+  __TEXT.__swift5_reflstr: 0x1f5
-+  __TEXT.__swift5_fieldmd: 0x1e4
-+  __TEXT.__oslogstring: 0x51d
-+  __TEXT.__cstring: 0x254
-   __TEXT.__swift5_builtin: 0x14
-+  __TEXT.__swift5_types: 0x30
-+  __TEXT.__swift5_capture: 0xe4
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift5_proto: 0x14
--  __TEXT.__swift5_types: 0x24
--  __TEXT.__oslogstring: 0x44d
-   __TEXT.__swift5_assocty: 0x20
--  __TEXT.__unwind_info: 0x258
--  __TEXT.__eh_frame: 0x78
-+  __TEXT.__unwind_info: 0x2e0
-+  __TEXT.__eh_frame: 0xf8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x78
--  __DATA_CONST.__objc_classlist: 0x30
--  __DATA_CONST.__objc_protolist: 0x70
-+  __DATA_CONST.__objc_classlist: 0x38
-+  __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1d8
--  __DATA_CONST.__objc_protorefs: 0x40
-+  __DATA_CONST.__objc_selrefs: 0x230
-+  __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x291
--  __AUTH_CONST.__objc_const: 0x720
--  __AUTH_CONST.__auth_got: 0x690
--  __AUTH.__objc_data: 0x120
--  __DATA.__data: 0x2f8
-+  __AUTH_CONST.__const: 0x341
-+  __AUTH_CONST.__objc_const: 0x848
-+  __AUTH_CONST.__auth_got: 0x710
-+  __AUTH.__objc_data: 0x1f0
-+  __AUTH.__data: 0x30
-+  __DATA.__data: 0x398
-   __DATA.__bss: 0x100
--  __DATA_DIRTY.__objc_data: 0x218
--  __DATA_DIRTY.__data: 0x398
-+  __DATA_DIRTY.__objc_data: 0x228
-+  __DATA_DIRTY.__data: 0x3c0
-   __DATA_DIRTY.__bss: 0x100
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/HealthKit.framework/HealthKit
+-7027.0.60.2.2
++7027.0.64.0.0
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 175
--  Symbols:   360
+-  Symbols:   308
 -  CStrings:  34
 +  Functions: 212
-+  Symbols:   398
++  Symbols:   340
 +  CStrings:  38
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_assocty : content changed
 Symbols:
 + _OBJC_CLASS_$__TtC24HealthTopicsDaemonPlugin25TopicClientProcessMonitor
 + _OBJC_METACLASS_$__TtC24HealthTopicsDaemonPlugin25TopicClientProcessMonitor
@@ -101,11 +61,6 @@ Symbols:
 + ___swift_memcpy16_8
 + __swiftEmptyDictionarySingleton
 + _free
-+ _objc_msgSend$bundleIdentifier
-+ _objc_msgSend$daemon
-+ _objc_msgSend$processStateManager
-+ _objc_msgSend$registerObserver:forBundleIdentifier:
-+ _objc_msgSend$unregisterObserver:forBundleIdentifier:
 + _objc_retain_x22
 + _objc_retain_x27
 + _objc_retain_x8
@@ -134,5 +89,4 @@ CStrings:
 + "TopicClientProcessMonitor: canceling %ld requests for %{public}s (%{public}s)"
 + "TopicClientProcessMonitor: started monitoring %{public}s"
 + "TopicClientProcessMonitor: stopped monitoring %{public}s"
-
 ```

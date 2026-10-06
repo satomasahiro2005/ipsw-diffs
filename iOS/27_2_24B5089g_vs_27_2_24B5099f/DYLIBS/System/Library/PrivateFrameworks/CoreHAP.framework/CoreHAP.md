@@ -2,95 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/CoreHAP.framework/CoreHAP`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2b5c04` | `0x2b6748` | **`+0xb44`** |
+| `__AUTH_CONST.__objc_const` | `0x2c1f8` | `0x2c388` | **`+0x190`** |
+| `__TEXT.__oslogstring` | `0x46185` | `0x46315` | **`+0x190`** |
+| `__TEXT.__objc_methlist` | `0x19548` | `0x195f0` | **`+0xa8`** |
+| `__DATA_DIRTY.__objc_data` | `0xfc8` | `0x1068` | **`+0xa0`** |
+| `__DATA.__data` | `0x2e52` | `0x2eb2` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x7948` | `0x79a0` | **`+0x58`** |
+| `__AUTH.__objc_data` | `0x7748` | `0x76f8` | **`-0x50`** |
+| `__DATA_DIRTY.__bss` | `0x78` | `0xc8` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8590` | `0x85d8` | **`+0x48`** |
+| `__TEXT.__gcc_except_tab` | `0x5eb4` | `0x5ef8` | **`+0x44`** |
+| `__DATA.__bss` | `0x10b0` | `0x1070` | **`-0x40`** |
+| `__DATA_CONST.__const` | `0x5920` | `0x5948` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x1568` | `0x1548` | **`-0x20`** |
+| `__DATA.__objc_ivar` | `0x19ac` | `0x19b4` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x1090` | `0x1098` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0xc60` | `0xc68` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x3b8` | `0x3c0` | **`+0x8`** |
+| `__TEXT.__eh_frame` | `0x1080` | `0x1078` | **`-0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -1516.0.0.0.0
--  __TEXT.__text: 0x2abb94
--  __TEXT.__objc_methlist: 0x19548
 +1520.2.3.0.2
-+  __TEXT.__text: 0x2ac69c
-+  __TEXT.__objc_methlist: 0x195f0
-   __TEXT.__const: 0x13b0
-   __TEXT.__dlopen_cstrs: 0x4e
-   __TEXT.__constg_swiftt: 0xa64
 
-   __TEXT.__swift5_proto: 0x5c
-   __TEXT.__swift5_types: 0x34
-   __TEXT.__cstring: 0x14b39
--  __TEXT.__oslogstring: 0x46185
-+  __TEXT.__oslogstring: 0x46315
-   __TEXT.__swift5_capture: 0x28c
--  __TEXT.__gcc_except_tab: 0x5eb4
--  __TEXT.__unwind_info: 0x8ce8
--  __TEXT.__eh_frame: 0x1080
-+  __TEXT.__gcc_except_tab: 0x5ef8
-+  __TEXT.__unwind_info: 0x8d40
-+  __TEXT.__eh_frame: 0x1078
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x5920
--  __DATA_CONST.__objc_classlist: 0xc60
-+  __DATA_CONST.__const: 0x5948
-+  __DATA_CONST.__objc_classlist: 0xc68
-   __DATA_CONST.__objc_catlist: 0x30
--  __DATA_CONST.__objc_protolist: 0x3b8
-+  __DATA_CONST.__objc_protolist: 0x3c0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8590
-+  __DATA_CONST.__objc_selrefs: 0x85d8
-   __DATA_CONST.__objc_protorefs: 0x100
-   __DATA_CONST.__objc_superrefs: 0xaa8
-   __DATA_CONST.__objc_arraydata: 0x200
--  __DATA_CONST.__got: 0x1090
--  __AUTH_CONST.__const: 0x1568
-+  __DATA_CONST.__got: 0x1098
-+  __AUTH_CONST.__const: 0x1548
-   __AUTH_CONST.__cfstring: 0x10360
--  __AUTH_CONST.__objc_const: 0x2c1f8
-+  __AUTH_CONST.__objc_const: 0x2c388
-   __AUTH_CONST.__weak_auth_got: 0x8
-   __AUTH_CONST.__objc_intobj: 0x738
-   __AUTH_CONST.__objc_floatobj: 0x20
-   __AUTH_CONST.__objc_doubleobj: 0x40
-   __AUTH_CONST.__objc_arrayobj: 0xc0
-   __AUTH_CONST.__auth_got: 0x13a0
--  __AUTH.__objc_data: 0x7748
-+  __AUTH.__objc_data: 0x76f8
-   __AUTH.__data: 0xb0
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x28
--  __DATA.__objc_ivar: 0x19ac
--  __DATA.__data: 0x2e52
-+  __DATA.__objc_ivar: 0x19b4
-+  __DATA.__data: 0x2eb2
-   __DATA.__crash_info: 0x148
-   __DATA.__common: 0x8
--  __DATA_DIRTY.__objc_data: 0xfc8
-+  __DATA_DIRTY.__objc_data: 0x1068
-   __DATA_DIRTY.__data: 0x48
--  __DATA_DIRTY.__bss: 0x78
-+  __DATA_DIRTY.__bss: 0xc8
-   __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10041
 -  Symbols:   16803
 -  CStrings:  7255
 +  Functions: 10054
 +  Symbols:   16838
 +  CStrings:  7261
- 
 Symbols:
 + +[HAPDefaultWorkQueueFactory sharedFactory]
 + -[HAP2AccessoryServerSecureTransportPairVerify _claimStateChangeCompletionForGeneration:]

@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/GameController.framework/GameController`
 
-```diff
+### Section Size Changes
 
- 14.0.24.0.0
--  __TEXT.__text: 0x10569c
-+  __TEXT.__text: 0x1056c8
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__objc_methlist: 0x10124
-   __TEXT.__const: 0x23ec
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10569c` | `0x1056c8` | **`+0x2c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _OUTLINED_FUNCTION_20 : 12 -> 16
 ~ _OUTLINED_FUNCTION_21 : 16 -> 12

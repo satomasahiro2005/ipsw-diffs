@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/DMCApps.framework/DMCApps`
 
-```diff
+### Section Size Changes
 
- 113.2.5.0.0
--  __TEXT.__text: 0x37e60
-+  __TEXT.__text: 0x37ec8
-   __TEXT.__const: 0x13a4
-   __TEXT.__swift5_typeref: 0x4d5
-   __TEXT.__constg_swiftt: 0xa64
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x37e60` | `0x37ec8` | **`+0x68`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_226cf7df0 -> sub_22753edf0 : 1144 -> 1152
 ~ sub_226cffab8 -> sub_227546ac0 : 656 -> 660

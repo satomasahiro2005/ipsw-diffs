@@ -2,101 +2,63 @@
 
 > `/System/Library/Frameworks/Speech.framework/XPCServices/localspeechrecognition.xpc/localspeechrecognition`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6aad8` | `0x6ad94` | **`+0x2bc`** |
+| `__DATA_CONST.__const` | `0x3868` | `0x38b8` | **`+0x50`** |
+| `__TEXT.__swift5_typeref` | `0x1296` | `0x1254` | **`-0x42`** |
+| `__TEXT.__const` | `0x1b70` | `0x1b30` | **`-0x40`** |
+| `__TEXT.__eh_frame` | `0x1df0` | `0x1e28` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0x1820` | `0x17f8` | **`-0x28`** |
+| `__TEXT.__auth_stubs` | `0x20c0` | `0x20e0` | **`+0x20`** |
+| `__TEXT.__objc_stubs` | `0x59e0` | `0x5a00` | **`+0x20`** |
+| `__TEXT.__swift5_capture` | `0x106c` | `0x108c` | **`+0x20`** |
+| `__DATA.__data` | `0x2ec8` | `0x2eb8` | **`-0x10`** |
+| `__DATA_CONST.__auth_got` | `0x1070` | `0x1080` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x9b0` | `0x9c0` | **`+0x10`** |
+| `__TEXT.__objc_methname` | `0x7ba5` | `0x7bb5` | **`+0x10`** |
+| `__DATA.__objc_selrefs` | `0x1ac0` | `0x1ac8` | **`+0x8`** |
+| `__DATA_CONST.__auth_ptr` | `0x388` | `0x390` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0xa8` | `0xac` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x80` | `0x84` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__cstring`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift5_types2`
+- `__TEXT.__swift_as_entry`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x6aad8
--  __TEXT.__auth_stubs: 0x20c0
--  __TEXT.__objc_stubs: 0x59e0
-+  __TEXT.__text: 0x6ad94
-+  __TEXT.__auth_stubs: 0x20e0
-+  __TEXT.__objc_stubs: 0x5a00
-   __TEXT.__objc_methlist: 0x1904
--  __TEXT.__const: 0x1b70
-+  __TEXT.__const: 0x1b30
-   __TEXT.__objc_classname: 0xa18
--  __TEXT.__objc_methname: 0x7ba5
-+  __TEXT.__objc_methname: 0x7bb5
-   __TEXT.__objc_methtype: 0x215b
-   __TEXT.__constg_swiftt: 0x1ce0
--  __TEXT.__swift5_typeref: 0x1296
-+  __TEXT.__swift5_typeref: 0x1254
-   __TEXT.__swift5_reflstr: 0x13b3
-   __TEXT.__swift5_fieldmd: 0xdf8
-   __TEXT.__swift5_builtin: 0x50
+-3600.58.1.0.0
++3600.66.1.0.0
 
-   __TEXT.__oslogstring: 0x2e31
-   __TEXT.__swift5_proto: 0x84
-   __TEXT.__swift5_types: 0xb8
--  __TEXT.__swift5_capture: 0x106c
-+  __TEXT.__swift5_capture: 0x108c
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift_as_entry: 0xc4
--  __TEXT.__swift_as_ret: 0x80
--  __TEXT.__swift_as_cont: 0xa8
-+  __TEXT.__swift_as_ret: 0x84
-+  __TEXT.__swift_as_cont: 0xac
-   __TEXT.__swift5_types2: 0x4
-   __TEXT.__gcc_except_tab: 0x4e8
--  __TEXT.__unwind_info: 0x1820
--  __TEXT.__eh_frame: 0x1df0
--  __DATA_CONST.__const: 0x3868
-+  __TEXT.__unwind_info: 0x17f8
-+  __TEXT.__eh_frame: 0x1e28
-+  __DATA_CONST.__const: 0x38b8
-   __DATA_CONST.__cfstring: 0x760
-   __DATA_CONST.__objc_classlist: 0x130
-   __DATA_CONST.__objc_catlist: 0x10
-
-   __DATA_CONST.__objc_protorefs: 0xa0
-   __DATA_CONST.__objc_superrefs: 0x20
-   __DATA_CONST.__objc_intobj: 0x30
--  __DATA_CONST.__auth_got: 0x1070
--  __DATA_CONST.__got: 0x9b0
--  __DATA_CONST.__auth_ptr: 0x388
-+  __DATA_CONST.__auth_got: 0x1080
-+  __DATA_CONST.__got: 0x9c0
-+  __DATA_CONST.__auth_ptr: 0x390
-   __DATA.__objc_const: 0x37f0
--  __DATA.__objc_selrefs: 0x1ac0
-+  __DATA.__objc_selrefs: 0x1ac8
-   __DATA.__objc_ivar: 0x94
-   __DATA.__objc_data: 0x1910
--  __DATA.__data: 0x2ec8
-+  __DATA.__data: 0x2eb8
-   __DATA.__bss: 0x1010
-   __DATA.__common: 0x268
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2488
--  Symbols:   18842
--  CStrings:  1870
+-  Symbols:   5985
+-  CStrings:  1808
 +  Functions: 2479
-+  Symbols:   18806
-+  CStrings:  1871
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift5_types2 : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_data : content changed
++  Symbols:   5963
++  CStrings:  1809
 Symbols:
 + $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.24TQ0_
 + $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.24Tu
@@ -156,5 +118,4 @@ Symbols:
 - get_type_metadata 22localspeechrecognition20RecognizerCountTokenV noncopyable
 CStrings:
 + "initWithDouble:"
-
 ```

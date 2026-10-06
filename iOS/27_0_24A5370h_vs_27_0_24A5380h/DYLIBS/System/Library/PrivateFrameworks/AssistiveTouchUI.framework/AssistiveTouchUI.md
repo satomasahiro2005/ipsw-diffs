@@ -2,103 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/AssistiveTouchUI.framework/AssistiveTouchUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6e40c` | `0x74728` | **`+0x631c`** |
+| `__TEXT.__swift5_typeref` | `0x3504` | `0x3934` | **`+0x430`** |
+| `__TEXT.__eh_frame` | `0x3490` | `0x3814` | **`+0x384`** |
+| `__AUTH_CONST.__const` | `0x1d08` | `0x1e98` | **`+0x190`** |
+| `__TEXT.__const` | `0x3a70` | `0x3b70` | **`+0x100`** |
+| `__TEXT.__unwind_info` | `0x1a48` | `0x1b30` | **`+0xe8`** |
+| `__TEXT.__swift5_capture` | `0x870` | `0x948` | **`+0xd8`** |
+| `__TEXT.__swift5_reflstr` | `0xb25` | `0xbe5` | **`+0xc0`** |
+| `__TEXT.__constg_swiftt` | `0x11bc` | `0x1278` | **`+0xbc`** |
+| `__AUTH.__objc_data` | `0xce8` | `0xd98` | **`+0xb0`** |
+| `__DATA.__data` | `0x1620` | `0x16d0` | **`+0xb0`** |
+| `__AUTH_CONST.__objc_const` | `0x1670` | `0x16f0` | **`+0x80`** |
+| `__TEXT.__swift5_fieldmd` | `0xad8` | `0xb48` | **`+0x70`** |
+| `__AUTH_CONST.__auth_got` | `0x1718` | `0x1748` | **`+0x30`** |
+| `__TEXT.__swift_as_cont` | `0x238` | `0x268` | **`+0x30`** |
+| `__AUTH.__data` | `0xd98` | `0xda8` | **`+0x10`** |
+| `__DATA.__bss` | `0x1b30` | `0x1b40` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x3b0` | `0x3c0` | **`+0x10`** |
+| `__TEXT.__swift_as_ret` | `0xd8` | `0xe4` | **`+0xc`** |
+| `__TEXT.__swift_as_entry` | `0x238` | `0x240` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x18` | `0x1c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x6e40c
-+  __TEXT.__text: 0x74728
-   __TEXT.__objc_methlist: 0x91c
--  __TEXT.__const: 0x3a70
--  __TEXT.__constg_swiftt: 0x11bc
--  __TEXT.__swift5_typeref: 0x3504
-+  __TEXT.__const: 0x3b70
-+  __TEXT.__constg_swiftt: 0x1278
-+  __TEXT.__swift5_typeref: 0x3934
-   __TEXT.__swift5_builtin: 0x64
--  __TEXT.__swift5_reflstr: 0xb25
--  __TEXT.__swift5_fieldmd: 0xad8
-+  __TEXT.__swift5_reflstr: 0xbe5
-+  __TEXT.__swift5_fieldmd: 0xb48
-   __TEXT.__swift5_assocty: 0x258
--  __TEXT.__swift5_capture: 0x870
-+  __TEXT.__swift5_capture: 0x948
-   __TEXT.__cstring: 0x725
-   __TEXT.__swift5_proto: 0xcc
-   __TEXT.__swift5_types: 0xb4
--  __TEXT.__swift5_protos: 0x18
--  __TEXT.__swift_as_entry: 0x238
--  __TEXT.__swift_as_ret: 0xd8
--  __TEXT.__swift_as_cont: 0x238
-+  __TEXT.__swift5_protos: 0x1c
-+  __TEXT.__swift_as_entry: 0x240
-+  __TEXT.__swift_as_ret: 0xe4
-+  __TEXT.__swift_as_cont: 0x268
-   __TEXT.__oslogstring: 0x22b
-   __TEXT.__gcc_except_tab: 0xd0
--  __TEXT.__unwind_info: 0x1a48
--  __TEXT.__eh_frame: 0x3490
-+  __TEXT.__unwind_info: 0x1b30
-+  __TEXT.__eh_frame: 0x3814
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3b0
-+  __DATA_CONST.__const: 0x3c0
-   __DATA_CONST.__objc_classlist: 0xa0
-   __DATA_CONST.__objc_protolist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
+-3232.3.0.0.0
++3234.5.0.0.0
 
-   __DATA_CONST.__objc_superrefs: 0x20
-   __DATA_CONST.__objc_arraydata: 0x88
-   __DATA_CONST.__got: 0xc90
--  __AUTH_CONST.__const: 0x1d08
-+  __AUTH_CONST.__const: 0x1e98
-   __AUTH_CONST.__cfstring: 0x1c0
--  __AUTH_CONST.__objc_const: 0x1670
-+  __AUTH_CONST.__objc_const: 0x16f0
-   __AUTH_CONST.__objc_intobj: 0x30
-   __AUTH_CONST.__objc_arrayobj: 0x48
--  __AUTH_CONST.__auth_got: 0x1718
--  __AUTH.__objc_data: 0xce8
--  __AUTH.__data: 0xd98
-+  __AUTH_CONST.__auth_got: 0x1748
-+  __AUTH.__objc_data: 0xd98
-+  __AUTH.__data: 0xda8
-   __DATA.__objc_ivar: 0x2c
--  __DATA.__data: 0x1620
--  __DATA.__bss: 0x1b30
-+  __DATA.__data: 0x16d0
-+  __DATA.__bss: 0x1b40
-   __DATA.__common: 0x30
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1904
--  Symbols:   1754
+-  Symbols:   1118
 +  Functions: 1975
-+  Symbols:   1793
-   CStrings:  87
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
++  Symbols:   1134
 Symbols:
 + ___swift_closure_destructor.25Tm
 + ___swift_closure_destructor.49Tm
@@ -158,5 +98,4 @@ Symbols:
 - _symbolic _____y_____y_____y__________y_____SgGG_Qo_ACG 7SwiftUI19_ConditionalContentV AA4ViewPAAE10fontWeightyQrAA4FontV0G0VSgFQO AA08ModifiedD0V AA5ImageV AA30_EnvironmentKeyWritingModifierV AH
 - _symbolic _____y_____y_____y_____yAAyAAyAAyAAyAAyAAyAAy__________G_____G_____G_____GAGG_____y_____y_____y______AAyAAy_____yAAy_____AEG_Qo______y_____GGAIGQPGGSgGG_____y_____GG______Qo_______y_____GQo__A7_y_____GQo_AIG 7SwiftUI15ModifiedContentV AA4ViewPAAE19simultaneousGesture_9includingQrqd___AA0G4MaskVtAA0G0Rd__lFQO AeAEAF_AGQrqd___AItAaJRd__lFQO AeAE11buttonStyleyQrqd__AA015PrimitiveButtonK0Rd__lFQO AA5ImageV AA18_AspectRatioLayoutV AA08_PaddingQ0V AA06_FrameQ0V AA31AccessibilityAttachmentModifierV AA08_OverlayV0V AA6VStackV AA05TupleD0V AA6SpacerV AeAE10fontWeightyQrAA4FontV6WeightVSgFQO AA4TextV AA011_ForegroundkV0V AA017HierarchicalShapeK0V AA01_d5ShapeV0V AA16RoundedRectangleV AA05PlainmK0V AA06_EndedG0V AA03TapG0V AA09LongPressG0V
 - _symbolic _____y_____y_____y_____y_____yACy__________y_____SgGG_Qo_AEGSg_____G_ADyACyACyACyAE_____GAIGANGASGSgACyAS_____GSgQPGG 7SwiftUI6ZStackV AA12TupleContentV AA08ModifiedE0V AA012_ConditionalE0V AA4ViewPAAE10fontWeightyQrAA4FontV0J0VSgFQO AA5ImageV AA30_EnvironmentKeyWritingModifierV AN AA12_FrameLayoutV AA012_AspectRatioR0V AA14_OpacityEffectV
-
 ```

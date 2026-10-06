@@ -2,52 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/GridZero.framework/GridZero`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__objc_const` | `0x18d18` | `0x18db0` | **`+0x98`** |
+| `__TEXT.__text` | `0x9462c` | `0x946b0` | **`+0x84`** |
+| `__TEXT.__objc_methlist` | `0xd0d8` | `0xd130` | **`+0x58`** |
+| `__DATA_CONST.__objc_selrefs` | `0x75a8` | `0x75d0` | **`+0x28`** |
+| `__DATA.__objc_ivar` | `0x14cc` | `0x14d4` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -916.45.110.0.0
--  __TEXT.__text: 0x90688
--  __TEXT.__objc_methlist: 0xd0d8
 +916.51.202.0.0
-+  __TEXT.__text: 0x90718
-+  __TEXT.__objc_methlist: 0xd130
-   __TEXT.__const: 0x3098
-   __TEXT.__swift5_typeref: 0x18b4
-   __TEXT.__constg_swiftt: 0x18e4
 
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x3a8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x75a8
-+  __DATA_CONST.__objc_selrefs: 0x75d0
-   __DATA_CONST.__objc_protorefs: 0xb0
-   __DATA_CONST.__objc_superrefs: 0x1e8
-   __DATA_CONST.__objc_arraydata: 0x208
-   __DATA_CONST.__got: 0xb78
-   __AUTH_CONST.__const: 0x31f0
-   __AUTH_CONST.__cfstring: 0x2740
--  __AUTH_CONST.__objc_const: 0x18d18
-+  __AUTH_CONST.__objc_const: 0x18db0
-   __AUTH_CONST.__objc_intobj: 0x210
-   __AUTH_CONST.__objc_arrayobj: 0x120
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__auth_got: 0x11a8
-   __AUTH.__objc_data: 0x2220
-   __AUTH.__data: 0xc70
--  __DATA.__objc_ivar: 0x14cc
-+  __DATA.__objc_ivar: 0x14d4
-   __DATA.__data: 0x31c8
-   __DATA.__common: 0x30
-   __DATA_DIRTY.__objc_data: 0xf0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5404
 -  Symbols:   7678
 +  Functions: 5409
 +  Symbols:   7685
-   CStrings:  667
- 
 Symbols:
 + -[PXPhotosContentController scrollViewControllerContentInsetDidChange:]
 + -[PXPhotosGridSettings pressedAnimationMaximumGrowth]

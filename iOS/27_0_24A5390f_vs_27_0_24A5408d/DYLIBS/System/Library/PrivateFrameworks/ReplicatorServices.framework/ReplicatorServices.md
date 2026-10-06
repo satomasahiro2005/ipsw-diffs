@@ -2,83 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/ReplicatorServices.framework/ReplicatorServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1190a0` | `0x11f4a4` | **`+0x6404`** |
+| `__AUTH_CONST.__const` | `0x82d8` | `0x84e8` | **`+0x210`** |
+| `__TEXT.__oslogstring` | `0x3db0` | `0x3f80` | **`+0x1d0`** |
+| `__TEXT.__swift5_typeref` | `0x34ee` | `0x3688` | **`+0x19a`** |
+| `__TEXT.__swift5_reflstr` | `0x1a03` | `0x1b43` | **`+0x140`** |
+| `__TEXT.__const` | `0xc728` | `0xc848` | **`+0x120`** |
+| `__DATA.__bss` | `0x10280` | `0x10380` | **`+0x100`** |
+| `__AUTH_CONST.__objc_const` | `0x3a30` | `0x3b10` | **`+0xe0`** |
+| `__TEXT.__eh_frame` | `0x7878` | `0x7958` | **`+0xe0`** |
+| `__TEXT.__unwind_info` | `0x3d50` | `0x3e30` | **`+0xe0`** |
+| `__DATA.__data` | `0x1d88` | `0x1e58` | **`+0xd0`** |
+| `__TEXT.__swift5_capture` | `0xb74` | `0xc44` | **`+0xd0`** |
+| `__DATA_DIRTY.__objc_data` | `0x9a8` | `0xa50` | **`+0xa8`** |
+| `__TEXT.__constg_swiftt` | `0x36ec` | `0x3788` | **`+0x9c`** |
+| `__TEXT.__swift5_fieldmd` | `0x2a74` | `0x2af0` | **`+0x7c`** |
+| `__TEXT.__cstring` | `0x1da3` | `0x1e03` | **`+0x60`** |
+| `__DATA_DIRTY.__data` | `0x3d00` | `0x3cb8` | **`-0x48`** |
+| `__TEXT.__swift5_proto` | `0xbe4` | `0xbec` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x3bc` | `0x3c0` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -173.0.0.0.0
--  __TEXT.__text: 0x1190a0
 +176.0.0.0.0
-+  __TEXT.__text: 0x11f4a4
-   __TEXT.__objc_methlist: 0x968
--  __TEXT.__const: 0xc728
--  __TEXT.__cstring: 0x1da3
--  __TEXT.__swift5_typeref: 0x34ee
--  __TEXT.__swift5_reflstr: 0x1a03
-+  __TEXT.__const: 0xc848
-+  __TEXT.__cstring: 0x1e03
-+  __TEXT.__swift5_typeref: 0x3688
-+  __TEXT.__swift5_reflstr: 0x1b43
-   __TEXT.__swift5_assocty: 0x888
--  __TEXT.__constg_swiftt: 0x36ec
--  __TEXT.__swift5_fieldmd: 0x2a74
-+  __TEXT.__constg_swiftt: 0x3788
-+  __TEXT.__swift5_fieldmd: 0x2af0
-   __TEXT.__swift5_builtin: 0x78
--  __TEXT.__swift5_proto: 0xbe4
--  __TEXT.__swift5_types: 0x3bc
--  __TEXT.__oslogstring: 0x3db0
--  __TEXT.__swift5_capture: 0xb74
-+  __TEXT.__swift5_proto: 0xbec
-+  __TEXT.__swift5_types: 0x3c0
-+  __TEXT.__oslogstring: 0x3f80
-+  __TEXT.__swift5_capture: 0xc44
-   __TEXT.__swift5_protos: 0x84
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0x18
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x3d50
--  __TEXT.__eh_frame: 0x7878
-+  __TEXT.__unwind_info: 0x3e30
-+  __TEXT.__eh_frame: 0x7958
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_protorefs: 0x90
-   __DATA_CONST.__objc_superrefs: 0x10
-   __DATA_CONST.__got: 0x548
--  __AUTH_CONST.__const: 0x82d8
-+  __AUTH_CONST.__const: 0x84e8
-   __AUTH_CONST.__cfstring: 0x100
--  __AUTH_CONST.__objc_const: 0x3a30
-+  __AUTH_CONST.__objc_const: 0x3b10
-   __AUTH_CONST.__auth_got: 0x1088
-   __AUTH.__objc_data: 0x780
-   __AUTH.__data: 0x958
-   __DATA.__objc_ivar: 0x18
--  __DATA.__data: 0x1d88
--  __DATA.__bss: 0x10280
-+  __DATA.__data: 0x1e58
-+  __DATA.__bss: 0x10380
-   __DATA.__common: 0x68
--  __DATA_DIRTY.__objc_data: 0x9a8
--  __DATA_DIRTY.__data: 0x3d00
-+  __DATA_DIRTY.__objc_data: 0xa50
-+  __DATA_DIRTY.__data: 0x3cb8
-   __DATA_DIRTY.__bss: 0x5880
-   __DATA_DIRTY.__common: 0x78
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5461
--  Symbols:   1824
+-  Symbols:   1711
 -  CStrings:  499
 +  Functions: 5535
-+  Symbols:   1843
++  Symbols:   1730
 +  CStrings:  508
- 
 Symbols:
 + ___swift_closure_destructor.114Tm
 + ___swift_closure_destructor.145Tm
@@ -91,7 +51,6 @@ Symbols:
 + _associated conformance 18ReplicatorServices0A26ControlXPCServerParametersO34GetNearbyPersonaDevicesForPersonasV10CodingKeys33_2E5034182BD54CF57D3443CE96CBD0DBLLOs0L3KeyAAs23CustomStringConvertible
 + _associated conformance 18ReplicatorServices0A26ControlXPCServerParametersO34GetNearbyPersonaDevicesForPersonasV10CodingKeys33_2E5034182BD54CF57D3443CE96CBD0DBLLOs0L3KeyAAs28CustomDebugStringConvertible
 + _associated conformance 18ReplicatorServices13PersonaDeviceVSHAASQ
-+ _objc_msgSend$nearbyPersonaDevicesForPersonasWithParameters:error:
 + _symbolic SDySSSay_____GG 18ReplicatorServices13PersonaDeviceV
 + _symbolic SDy_____SS9personaID_ySay_____Gc8observertG 10Foundation4UUIDV 18ReplicatorServices13PersonaDeviceV
 + _symbolic SS9personaID_yyc8observert
@@ -128,7 +87,6 @@ Symbols:
 - _associated conformance 18ReplicatorServices0A26ControlXPCServerParametersO23GetNearbyPersonaDevicesV10CodingKeys33_2E5034182BD54CF57D3443CE96CBD0DBLLOSHAASQ
 - _associated conformance 18ReplicatorServices0A26ControlXPCServerParametersO23GetNearbyPersonaDevicesV10CodingKeys33_2E5034182BD54CF57D3443CE96CBD0DBLLOs0J3KeyAAs23CustomStringConvertible
 - _associated conformance 18ReplicatorServices0A26ControlXPCServerParametersO23GetNearbyPersonaDevicesV10CodingKeys33_2E5034182BD54CF57D3443CE96CBD0DBLLOs0J3KeyAAs28CustomDebugStringConvertible
-- _objc_msgSend$nearbyPersonaDevicesWithParameters:error:
 - _symbolic _____ 18ReplicatorServices0A24ControlXPCServerResponseO23GetNearbyPersonaDevicesV
 - _symbolic _____ 18ReplicatorServices0A24ControlXPCServerResponseO23GetNearbyPersonaDevicesV10CodingKeys33_2E5034182BD54CF57D3443CE96CBD0DBLLO
 - _symbolic _____ 18ReplicatorServices0A26ControlXPCServerParametersO23GetNearbyPersonaDevicesV

@@ -2,121 +2,60 @@
 
 > `/System/Library/PrivateFrameworks/AuthKitUI.framework/AuthKitUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd2024` | `0xd578c` | **`+0x3768`** |
+| `__AUTH_CONST.__objc_const` | `0x170f8` | `0x17b18` | **`+0xa20`** |
+| `__TEXT.__swift5_typeref` | `0x5a2` | `0xb44` | **`+0x5a2`** |
+| `__DATA_CONST.__const` | `0x2bb0` | `0x2eb8` | **`+0x308`** |
+| `__DATA.__bss` | `0x11f8` | `0x14f8` | **`+0x300`** |
+| `__TEXT.__const` | `0xc44` | `0xf34` | **`+0x2f0`** |
+| `__TEXT.__objc_methlist` | `0x843c` | `0x865c` | **`+0x220`** |
+| `__DATA.__data` | `0x1bb0` | `0x1db8` | **`+0x208`** |
+| `__AUTH.__objc_data` | `0x1fe0` | `0x2160` | **`+0x180`** |
+| `__TEXT.__cstring` | `0x54bd` | `0x563d` | **`+0x180`** |
+| `__AUTH_CONST.__auth_got` | `0xa58` | `0xbb8` | **`+0x160`** |
+| `__TEXT.__unwind_info` | `0x18f0` | `0x1a28` | **`+0x138`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5db8` | `0x5ec8` | **`+0x110`** |
+| `__AUTH.__data` | `0x128` | `0x228` | **`+0x100`** |
+| `__TEXT.__swift5_reflstr` | `0x84` | `0x182` | **`+0xfe`** |
+| `__AUTH_CONST.__cfstring` | `0x4fc0` | `0x5080` | **`+0xc0`** |
+| `__AUTH_CONST.__const` | `0x510` | `0x5d0` | **`+0xc0`** |
+| `__TEXT.__eh_frame` | `0x538` | `0x5f0` | **`+0xb8`** |
+| `__TEXT.__swift5_fieldmd` | `0x13c` | `0x1d0` | **`+0x94`** |
+| `__TEXT.__oslogstring` | `0x53ff` | `0x547f` | **`+0x80`** |
+| `__TEXT.__swift5_assocty` | `0xd8` | `0x150` | **`+0x78`** |
+| `__TEXT.__constg_swiftt` | `0x2a8` | `0x300` | **`+0x58`** |
+| `__DATA_CONST.__got` | `0xe08` | `0xe50` | **`+0x48`** |
+| `__DATA_CONST.__objc_classlist` | `0x3a0` | `0x3c0` | **`+0x20`** |
+| `__DATA_CONST.__objc_protolist` | `0x208` | `0x220` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0x80` | `0x98` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x28` | `0x3c` | **`+0x14`** |
+| `__TEXT.__swift5_capture` | `0x14` | `0x28` | **`+0x14`** |
+| `__DATA_CONST.__objc_protorefs` | `0x18` | `0x28` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x1028` | `0x1038` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x48` | `0x58` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x73c` | `0x744` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x2c` | `0x34` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x14` | `0x1c` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x10` | `0x18` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x4` | `—` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -550.0.0.0.0
--  __TEXT.__text: 0xd2024 sha256:90e9799f4499b95fb5218546207f9b76a85a4338f6b926b8b0436281defb4dad
--  __TEXT.__objc_methlist: 0x843c sha256:a8c18c5d805c47fff904677cb29df85a0929f5fc57607063fdd544514b18391f
--  __TEXT.__const: 0xc44 sha256:c87425e8b2222e30e6a2a75be6d89e913e556de2b64a512df78542a130d9822a
--  __TEXT.__gcc_except_tab: 0x1028 sha256:750c497cdcf3ff9d852d677e11cdb9de0d2c6ea5009e697067f1965892ebc934
--  __TEXT.__cstring: 0x54bd sha256:31a6daf8f25e773a349aa8737a27b2c1a51fb7128b091d179f1bcd93a5af39b0
 +552.0.0.0.0
-+  __TEXT.__text: 0xd578c sha256:320ddbd7216423c8ac8df420fa5e754c14a84066fe4f17c0ee850ee168f87d94
-+  __TEXT.__objc_methlist: 0x865c sha256:9d97643ab90137243c6905559cd959194db7eb873952a6ec5d8a7e6cfe6a1269
-+  __TEXT.__const: 0xf34 sha256:ae12f6e7b7ed9436724dc5967ea2b21d8b79d5ab52fcc0dd30a35e8dfdae8b75
-+  __TEXT.__gcc_except_tab: 0x1038 sha256:5f8983cfbc23982de0deb6da8aa1c561ba52afda6f33ed854fcb74ddcba5a6e9
-+  __TEXT.__cstring: 0x563d sha256:d57093b00bf16149bc318780976fc2fa027c57b6c8178cb8f2f778e03e71d330
-   __TEXT.__dlopen_cstrs: 0x179 sha256:a653957cc23f20a9f81256a250fc7f57e23a5043ab0b06827d9d3c215bab1692
--  __TEXT.__oslogstring: 0x53ff sha256:650c86eb0e96a377639a1126073173d65be76f7fc7b97e682b466f2526c136c2
-+  __TEXT.__oslogstring: 0x547f sha256:41b26a769ea498ebc9db034cbea41d0bdd31d115f3163a944fa80875c3ea9c18
-   __TEXT.__ustring: 0x2c sha256:99fe95fd79f52ed1e9ef1e697213929fd1e7add03376aa7be407926b27879624
--  __TEXT.__constg_swiftt: 0x2a8 sha256:a3942e7f2c941868a03e599e6b1a02c988ee30a393001983a1bafad00cccc85b
--  __TEXT.__swift5_typeref: 0x5a2 sha256:920925e60113d9a3dfe2a2870868949cf2ce5c4fcee0706bd83253ff3beff415
--  __TEXT.__swift5_builtin: 0x28 sha256:7874efcd33b08937022194bc8904fccaa3ea3fd9f1143114bc49a5c00f382f84
--  __TEXT.__swift5_reflstr: 0x84 sha256:2539c77fe1b835b44d8c002e1a656513850a83b3f653565467b9327cd6c078d5
--  __TEXT.__swift5_fieldmd: 0x13c sha256:88125691a86df9b4e230d22e8cadf0ca9f36578f2051cf7b9d77849f7b6f3f2d
--  __TEXT.__swift5_assocty: 0xd8 sha256:d313d4a736fc1651d41ad7b66ea3a2688ecaf4c314faf76c7db24d4c357137d9
--  __TEXT.__swift5_proto: 0x80 sha256:912921ec6f0b308f97b48d79d6ea46d40b338224bed0722e9e3de230bae91c4e
--  __TEXT.__swift5_types: 0x2c sha256:664229a9c5950746b83e24154f9a36a5a8e0fd50f631707e997a5af00e1e27e6
--  __TEXT.__swift5_capture: 0x14 sha256:1695ae3ea387bc4adbb5af9e0e04449abb63f13577b21f5565a7ec8bd974b8c6
--  __TEXT.__swift5_protos: 0x4 sha256:ee6e879c1621ffaaf2de8ee7a2dd160771f7526ce768188cdd1c96fc9d5a20e0
--  __TEXT.__swift_as_entry: 0x14 sha256:ce56d0192ec9b7f2a748566c719e28dc4c3618a6ce843ee6a034ce4abb1e5807
--  __TEXT.__swift_as_ret: 0x10 sha256:505d31c953aa62849bd5ac045af641536ce13ef716060cd73f4f74b456d7faeb
--  __TEXT.__swift_as_cont: 0x48 sha256:14d6633b6d3c6dea8dd407727f12af17351d340988b06e90342c90b4465acefd
--  __TEXT.__unwind_info: 0x18f0 sha256:71a8a937ce3c42d7ced808862f89f64743e3a6110968e3fb176313abe46c8d61
--  __TEXT.__eh_frame: 0x538 sha256:3fc7a3246dca7556ca5b76236da57ad1cd5a054c9b9fb1fc534e2a197690961d
-+  __TEXT.__constg_swiftt: 0x300 sha256:f10440df7fa280c23dccd31236f768b3f0c2153197c983d761782c262c19865e
-+  __TEXT.__swift5_typeref: 0xb44 sha256:4ed3560c0a693ccf2e2a2c8aeb7a151b2e6119ec9716455f2719b9025daafc3f
-+  __TEXT.__swift5_builtin: 0x3c sha256:cd00ce0948a4d816d19dc80f563a0870a1dbb2c0fe89e702758a0c3c338d830e
-+  __TEXT.__swift5_reflstr: 0x182 sha256:a0823fb5f18e16a878970ef7b308072ba60b8dec7fe201f409bf4fe1a6f1282e
-+  __TEXT.__swift5_fieldmd: 0x1d0 sha256:cbfe01ac05060e310833f3baf5a50eb4623550855ca2f73e7ca1067e9f71722c
-+  __TEXT.__swift5_assocty: 0x150 sha256:192700c1146e036334b3e9a8c315d1d258a9f82a6010a54033c663ec738d15f6
-+  __TEXT.__swift5_proto: 0x98 sha256:85a879384c50556f635bc28c2e772a352082c86db43dc04b202aab426df398fe
-+  __TEXT.__swift5_types: 0x34 sha256:fe9d25b6339ef33bca0bbd8afe5bc232bd5adde38d7b6d2d87900329e6b1b62b
-+  __TEXT.__swift5_capture: 0x28 sha256:e411c8b208d0d3f434b443674cad487b4b53c90d9ab3e24f5dd740debf0b8cea
-+  __TEXT.__swift_as_entry: 0x1c sha256:76a864c6ae835a9d892b7efe90bbe22411745c89d00957887948ad861a36c355
-+  __TEXT.__swift_as_ret: 0x18 sha256:059159980acc6b0ef7e5b6473474f9c7ff95b1c9fa6698b3d960c6efbc4dbb37
-+  __TEXT.__swift_as_cont: 0x58 sha256:9982a1e3f2f2a21393777339bf1a7d8918f67aaaa293ca47ffc86cb3317f1f42
-+  __TEXT.__unwind_info: 0x1a28 sha256:49d3c9d3c1ac994f2e891bb2516933561510efeeeaf6d9fb1383e9cf92365fe5
-+  __TEXT.__eh_frame: 0x5f0 sha256:24927ce884a8bfc97f21532f3f1989148897ee54f1b6c4be72ee8589bc613993
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2bb0 sha256:c5b87f582d3f7630c62b459f13fdf258db62159a15ea49d6d4a1476b7c258379
--  __DATA_CONST.__objc_classlist: 0x3a0 sha256:f90fc5a870a2f3ef5d3731aae5ff9cc23a5b75a51a5beb389b38efa8dc16fdd3
--  __DATA_CONST.__objc_catlist: 0x60 sha256:20800f9a878c70a6c4f8659191d734b9416e900d6730fa482c512776c3b1f711
--  __DATA_CONST.__objc_protolist: 0x208 sha256:53ee6418c9608b45d41a5a0a5ecf667fb17d40f86dea82a716114b9065ae02f9
-+  __DATA_CONST.__const: 0x2eb8 sha256:c6270005b22fad4f275dd484b452e18cc9ed31df62ad82f2b2c6e8bf2e0de17e
-+  __DATA_CONST.__objc_classlist: 0x3c0 sha256:6db8ed127d4d7f9eacae3367a5ae5368d6e74cf202a4e3f1a3434ae4bdaf0358
-+  __DATA_CONST.__objc_catlist: 0x60 sha256:98d44598cfed439922691a99aa9be72f531fe76ae8ff72313c1f388fa94efc30
-+  __DATA_CONST.__objc_protolist: 0x220 sha256:6c8e35fffe631eb59b260997127f6fcdd7b2abe8cf21d1e65981cd507d165fb5
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0x5db8 sha256:e9577cedb292c78bf21d23cbd5391f45e0781ff7f84a81c16147351c70fcf257
--  __DATA_CONST.__objc_protorefs: 0x18 sha256:1bd58d0268544d98948edb4a96ac0c8ce8eab63d2ba0755733088d0c1c445c1f
--  __DATA_CONST.__objc_superrefs: 0x2b0 sha256:136ecd76f541a08899234134283feb3b891d4d82463530d7e89f74d0a111eefa
--  __DATA_CONST.__objc_arraydata: 0x2b8 sha256:2d7ab7a069c7b7e526324a43596b4c642ae996f6debe9f6d746e711376eef44d
--  __DATA_CONST.__got: 0xe08 sha256:fc774bc9c567a664d0283d97068e2e30ddc040fa5c10cfdd1d59da7baa7160f0
--  __AUTH_CONST.__const: 0x510 sha256:1ad24d4105cdc3427a54f06d8514f048fab76e9660b028e4cd92bf0d844686f0
--  __AUTH_CONST.__cfstring: 0x4fc0 sha256:1a3a19a76f5d221ceee2ed5d38069c0809c5df6e883bffbda55f233dc2e2b81a
--  __AUTH_CONST.__objc_const: 0x170f8 sha256:c392b11a405900e296da2ab7418ae8e365c7c825e6048575f51851de9262b4b5
--  __AUTH_CONST.__objc_intobj: 0x2a0 sha256:cedac8b57b6c48786a99f54f8e73ed04c8fd8ceaf489e1832ad359c6fca6fbb7
--  __AUTH_CONST.__objc_doubleobj: 0x40 sha256:4fd2803b491a3c70154473a77ff012e35f6445f448af025ad1cea34e52f7ce6b
--  __AUTH_CONST.__objc_dictobj: 0x78 sha256:9921b70f0152af3e2dc74dc4eed1df7555fad442f75bbaf412c32989de807421
--  __AUTH_CONST.__objc_arrayobj: 0x90 sha256:9b51c27e72346a8ae85caef2dcb3e2e626fb670c3f98d3982b3c6e6913aac748
--  __AUTH_CONST.__auth_got: 0xa58 sha256:f6176f908d8529bf9a99ad50f3d0c0c7c1d106fa040c3d64600620de0095c0d4
--  __AUTH.__objc_data: 0x1fe0 sha256:ef7cdc06b26ac4d326278904004b62506917fcb4c48d684c3eff1fa13234d2f7
--  __AUTH.__data: 0x128 sha256:973a74b8142d09e9f527c816c5b48674e923b4d437579d1a24c25b8f610b1894
--  __DATA.__objc_ivar: 0x73c sha256:57d29b47059bf42267ebbc98c555ead5bcd865665b94d63443c81c4e37b76b06
--  __DATA.__data: 0x1bb0 sha256:d5b6f56bbea5a5f4282e1ead52802d79eee16fb2fa5d9def5daf45342fac925b
--  __DATA.__bss: 0x11f8 sha256:efdadc212be2db6314795d2f7bece2878dd4f896619af78c265dae3703096e60
--  __DATA_DIRTY.__objc_data: 0x410 sha256:a9834aedb875210d04af62d542916bc38e566baa36fde012284275854265b759
-+  __DATA_CONST.__objc_selrefs: 0x5ec8 sha256:bb902e162eb95dc70701d4371b84f17f7546e3cd1c4bdffa30eb5e1666cd2a1d
-+  __DATA_CONST.__objc_protorefs: 0x28 sha256:8752afd01c2cf769346a21f700cc3b3b7901b17ec749fd9687e1e3590d478a8d
-+  __DATA_CONST.__objc_superrefs: 0x2b0 sha256:a9954e61b5bb823eed705542b5e38cc6fe2468334be19d75d1aa51bc58f2716a
-+  __DATA_CONST.__objc_arraydata: 0x2b8 sha256:bb8f7b9adfc1d95041a529efb16fc411e1455fa81051eb2f43c5ce94cdfc2297
-+  __DATA_CONST.__got: 0xe50 sha256:d2f2de3e5f2d4235dd3960c044a9ec3c454b335eb39ee96012909030737f2828
-+  __AUTH_CONST.__const: 0x5d0 sha256:44474fc457079adb17260e3a941a4a1bf45e5bf2dcd374e296f950814d333ac4
-+  __AUTH_CONST.__cfstring: 0x5080 sha256:a6208a6bbfc1322f746bf125d7175bdc8bd622139c4ee89e1f9ab5be9e9883d8
-+  __AUTH_CONST.__objc_const: 0x17b18 sha256:81a9057710eeabac8ab7ecdb8462c5c4a7ace581c736bf67848c95fe1538e1ac
-+  __AUTH_CONST.__objc_intobj: 0x2a0 sha256:5668ee60876781403e95c44d19f18d49728c430be04f26de5a9d587ec300c1f2
-+  __AUTH_CONST.__objc_doubleobj: 0x40 sha256:f016a728d07f7ff4d042e31f750e7483eea9e250800aef834cc8740dd07c4570
-+  __AUTH_CONST.__objc_dictobj: 0x78 sha256:762a532101da7b1f14a53357b3a695d92f2f99b12638b9808493f48df775f894
-+  __AUTH_CONST.__objc_arrayobj: 0x90 sha256:e0f92a8613361f28a71c27d94d85b2e393ef3af7a76a843f5b5b74b2e702809a
-+  __AUTH_CONST.__auth_got: 0xbb8 sha256:c81ca5eda5947c7826ad046fdbdc2a25a846b835a6c34c237cc8b3afbe9ec6cc
-+  __AUTH.__objc_data: 0x2160 sha256:df49e882e7a37a7183720ade4d611061a3ce13dc9e08f2dce6b2811fba6f7b18
-+  __AUTH.__data: 0x228 sha256:9080ed5d0c33169ab913f83dd90afd64e77104146ff07b8513818c2ae21b60e4
-+  __DATA.__objc_ivar: 0x744 sha256:23e5cd5fca88aee1421e94fca67feb8f4702c20139348c72c1722cc2a42b1bf2
-+  __DATA.__data: 0x1db8 sha256:deef4a2f9960a730091ba470d4c6a43122d55c5637059d56d74fbfe9de4e8aec
-+  __DATA.__bss: 0x14f8 sha256:5edbf25fc63ee17a3838922aacb049c7272cf94d71e01858dd490079a50e95db
-+  __DATA_DIRTY.__objc_data: 0x410 sha256:5ecca14c6840fac49e09d5a219cd144899cafbc2afe433e47a2988d7ac2ef8e1
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: 234D1BF6-D504-3AC9-A210-944D26E3C491
 -  Functions: 3031
--  Symbols:   11640
--  CStrings:  1897
-+  UUID: 05F5402F-66FB-31A9-826A-E095F8CD8E75
+-  Symbols:   5512
+-  CStrings:  1265
 +  Functions: 3171
-+  Symbols:   11915
-+  CStrings:  1921
- 
++  Symbols:   5634
++  CStrings:  1283
 Symbols:
 + +[AKAppleLogoMicaView animatedView]
 + +[AKAppleLogoMicaView staticView]
@@ -173,45 +112,11 @@ Symbols:
 + __OBJC_PROTOCOL_$_AKApprovalFlowCodeRequestDelegate
 + __PROPERTIES_AKUIAccountAvatarConfiguration
 + __PROPERTIES_AKUIUserAvatarView
-+ ___100-[AKInAppAuthenticationRemoteUIProvider presentSecondFactorAlertWithError:title:message:completion:]_block_invoke.154
-+ ___112-[AKInAppAuthenticationRemoteUIProvider presentLoginAlertWithError:title:message:waitForInteraction:completion:]_block_invoke.237
-+ ___112-[AKInAppAuthenticationRemoteUIProvider presentLoginAlertWithError:title:message:waitForInteraction:completion:]_block_invoke.241
-+ ___120-[AKInAppAuthenticationRemoteUIProvider presentLoginAlertUIAsViewWithError:title:message:waitForInteraction:completion:]_block_invoke.248
-+ ___120-[AKInAppAuthenticationRemoteUIProvider presentLoginAlertUIAsViewWithError:title:message:waitForInteraction:completion:]_block_invoke.254
-+ ___43-[AKBasicLoginViewController _loginOptions]_block_invoke.110
 + ___43-[AKModalSignInViewController _createViews]_block_invoke
 + ___65+[AKUIAvatarImageProvider fetchAvatarImageForContext:completion:]_block_invoke
 + ___65+[AKUIAvatarImageProvider fetchAvatarImageForContext:completion:]_block_invoke_2
-+ ___72-[AKInAppAuthenticationRemoteUIProvider _actionsForLoginWithCompletion:]_block_invoke.214
-+ ___72-[AKInAppAuthenticationRemoteUIProvider _actionsForLoginWithCompletion:]_block_invoke.215
-+ ___72-[AKInAppAuthenticationRemoteUIProvider _actionsForLoginWithCompletion:]_block_invoke.216
-+ ___72-[AKInAppAuthenticationRemoteUIProvider _actionsForLoginWithCompletion:]_block_invoke.218
-+ ___72-[AKInAppAuthenticationRemoteUIProvider _actionsForLoginWithCompletion:]_block_invoke.220
-+ ___72-[AKInAppAuthenticationRemoteUIProvider _actionsForLoginWithCompletion:]_block_invoke_2.217
-+ ___72-[AKInAppAuthenticationRemoteUIProvider _actionsForLoginWithCompletion:]_block_invoke_2.219
-+ ___74-[AKInAppAuthenticationRemoteUIProvider _showPasswordFieldWithCompletion:]_block_invoke.232
-+ ___75-[AKInAppAuthenticationRemoteUIProvider proximitySetupCompletedWithResult:]_block_invoke.257
-+ ___76-[AKInAppAuthenticationRemoteUIProvider _showMaxAttemptAlertWithCompletion:]_block_invoke.211
-+ ___77-[AKAuthorizationViewController presentAuthenticationChoiceUIWithCompletion:]_block_invoke.105
-+ ___77-[AKAuthorizationViewController presentAuthenticationChoiceUIWithCompletion:]_block_invoke.109
-+ ___81-[AKInAppAuthenticationRemoteUIProvider _secondFactorActionsForAlert:completion:]_block_invoke.223
-+ ___81-[AKInAppAuthenticationRemoteUIProvider _secondFactorActionsForAlert:completion:]_block_invoke.224
-+ ___81-[AKInAppAuthenticationRemoteUIProvider presentKeepUsingUIForAppleID:completion:]_block_invoke.130
-+ ___81-[AKInAppAuthenticationRemoteUIProvider presentKeepUsingUIForAppleID:completion:]_block_invoke.135
-+ ___81-[AKInAppAuthenticationRemoteUIProvider presentKeepUsingUIForAppleID:completion:]_block_invoke.139
-+ ___90-[AKInAppAuthenticationRemoteUIProvider presentIDPProvidedUIWithConfiguration:completion:]_block_invoke.156
-+ ___91-[AKInAppAuthenticationRemoteUIProvider _configureProximityAuthLoginOptionsWithCompletion:]_block_invoke.108
-+ ___91-[AKInAppAuthenticationRemoteUIProvider _configureProximityAuthLoginOptionsWithCompletion:]_block_invoke.110
-+ ___91-[AKInAppAuthenticationRemoteUIProvider _configureProximityAuthLoginOptionsWithCompletion:]_block_invoke.113
-+ ___91-[AKInAppAuthenticationRemoteUIProvider _configureProximityAuthLoginOptionsWithCompletion:]_block_invoke_2.111
-+ ___91-[AKInAppAuthenticationRemoteUIProvider _configureProximityAuthLoginOptionsWithCompletion:]_block_invoke_2.114
-+ ___91-[AKInAppAuthenticationRemoteUIProvider _configureProximityAuthLoginOptionsWithCompletion:]_block_invoke_3.112
-+ ___99-[AKInAppAuthenticationRemoteUIProvider presentBiometricOrPasscodeValidationForAppleID:completion:]_block_invoke.178
-+ ___99-[AKInAppAuthenticationRemoteUIProvider presentBiometricOrPasscodeValidationForAppleID:completion:]_block_invoke.179
-+ ___99-[AKInAppAuthenticationRemoteUIProvider presentBiometricOrPasscodeValidationForAppleID:completion:]_block_invoke.180
 + ___block_descriptor_32_e18_v16?0"UIButton"8l
 + ___block_descriptor_40_e8_32bs_e29_v24?0"UIImage"8"NSError"16ls32l8
-+ ___block_literal_global.98
 + ___getAAUIProfilePictureStoreClass_block_invoke
 + ___swift_project_boxed_opaque_existential_0
 + ___swift_project_boxed_opaque_existential_0Tm
@@ -227,44 +132,13 @@ Symbols:
 + _flat unique So33AKApprovalFlowCodeRequestDelegate_p
 + _getAAUIProfilePictureStoreClass
 + _getAAUIProfilePictureStoreClass.softClass
-+ _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA15ModifiedContentVyAKyAKyAA6HStackVyAA05TupleJ0VyAKyAKyAA5GroupVyAA012_ConditionalJ0VyAKyAA5ImageVAA18_AspectRatioLayoutVGAKyAuA24_ForegroundStyleModifierVyAA5ColorVGGGGAA06_FrameR0VGAA11_ClipEffectVyAA6CircleVGG_AA6VStackVyAOyAA4TextVSg_A18_QPGGAA6SpacerVQPGGAA08_PaddingR0VGA26_GAA011_BackgroundU0VyAA06_ShapeC0VyAA22UnevenRoundedRectangleVA0_GGG_Qo_HO.5
-+ _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA15ModifiedContentVyAKyAKyAKyAKyAKyAA4TextVAA16_FlexFrameLayoutVGAA14_OpacityEffectVGAA16_OverlayModifierVyAA08ProgressC0VyAA05EmptyC0VAYGSgGGAA08_PaddingN0VGA3_GAA011_BackgroundR0VyAA06_ShapeC0VyAA16RoundedRectangleVAA5ColorVGGG_Qo_HO.24
++ _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA15ModifiedContentVyAKyAKyAA6HStackVyAA05TupleJ0VyAKyAKyAA5GroupVyAA012_ConditionalJ0VyAKyAA5ImageVAA18_AspectRatioLayoutVGAKyAuA24_ForegroundStyleModifierVyAA5ColorVGGGGAA06_FrameR0VGAA11_ClipEffectVyAA6CircleVGG_AA6VStackVyAOyAA4TextVSg_A18_QPGGAA6SpacerVQPGGAA08_PaddingR0VGA26_GAA011_BackgroundU0VyAA06_ShapeC0VyAA22UnevenRoundedRectangleVA0_GGG_Qo_HO
 + _kCBBrightnessBoostEnd
 + _kCBBrightnessBoostFull
 + _kCBBrightnessBoostFullEnd
 + _kCBBrightnessBoostScaler
 + _kCBBrightnessBoostStart
 + _objc_allocWithZone
-+ _objc_msgSend$_initWithAnimation:
-+ _objc_msgSend$_initializeAppleLogo
-+ _objc_msgSend$_safeContentTrayOffsetAdjustedForScrollInset:
-+ _objc_msgSend$_setupAccountRowView
-+ _objc_msgSend$accountRowView
-+ _objc_msgSend$aidaAccount:
-+ _objc_msgSend$animatedView
-+ _objc_msgSend$authKitAccount:
-+ _objc_msgSend$avatarDiameter
-+ _objc_msgSend$avatarLeadingMargin
-+ _objc_msgSend$avatarTextSpacing
-+ _objc_msgSend$cornerRadius
-+ _objc_msgSend$currentTitle
-+ _objc_msgSend$displayName
-+ _objc_msgSend$displayNameForAccount:
-+ _objc_msgSend$displayNameWithGivenName:familyName:
-+ _objc_msgSend$fetchAvatarImageForContext:completion:
-+ _objc_msgSend$fetchCodeOfType:completionHandler:
-+ _objc_msgSend$hostingView
-+ _objc_msgSend$iCloudAccount:
-+ _objc_msgSend$initWithAppleAccount:grandSlamAccount:accountStore:
-+ _objc_msgSend$initWithCoder:
-+ _objc_msgSend$initWithConfiguration:context:
-+ _objc_msgSend$initWithString:attributes:
-+ _objc_msgSend$maskedCorners
-+ _objc_msgSend$setAccountRowView:
-+ _objc_msgSend$setAttributedTitle:
-+ _objc_msgSend$setHidesSharedBackground:
-+ _objc_msgSend$setupHostingView:
-+ _objc_msgSend$store
 + _objc_release_x22
 + _objc_release_x8
 + _objc_retain_x19
@@ -329,45 +203,6 @@ Symbols:
 - GCC_except_table99
 - _OBJC_IVAR_$_AKModalSignInViewController._isSolariumEnabled
 - _OBJC_IVAR_$_AKModalSignInViewController._usernameField
-- ___100-[AKInAppAuthenticationRemoteUIProvider presentSecondFactorAlertWithError:title:message:completion:]_block_invoke.146
-- ___112-[AKInAppAuthenticationRemoteUIProvider presentLoginAlertWithError:title:message:waitForInteraction:completion:]_block_invoke.229
-- ___112-[AKInAppAuthenticationRemoteUIProvider presentLoginAlertWithError:title:message:waitForInteraction:completion:]_block_invoke.233
-- ___120-[AKInAppAuthenticationRemoteUIProvider presentLoginAlertUIAsViewWithError:title:message:waitForInteraction:completion:]_block_invoke.240
-- ___120-[AKInAppAuthenticationRemoteUIProvider presentLoginAlertUIAsViewWithError:title:message:waitForInteraction:completion:]_block_invoke.246
-- ___43-[AKBasicLoginViewController _loginOptions]_block_invoke.95
-- ___72-[AKInAppAuthenticationRemoteUIProvider _actionsForLoginWithCompletion:]_block_invoke.206
-- ___72-[AKInAppAuthenticationRemoteUIProvider _actionsForLoginWithCompletion:]_block_invoke.207
-- ___72-[AKInAppAuthenticationRemoteUIProvider _actionsForLoginWithCompletion:]_block_invoke.208
-- ___72-[AKInAppAuthenticationRemoteUIProvider _actionsForLoginWithCompletion:]_block_invoke.210
-- ___72-[AKInAppAuthenticationRemoteUIProvider _actionsForLoginWithCompletion:]_block_invoke.212
-- ___72-[AKInAppAuthenticationRemoteUIProvider _actionsForLoginWithCompletion:]_block_invoke_2.209
-- ___72-[AKInAppAuthenticationRemoteUIProvider _actionsForLoginWithCompletion:]_block_invoke_2.211
-- ___74-[AKInAppAuthenticationRemoteUIProvider _showPasswordFieldWithCompletion:]_block_invoke.224
-- ___75-[AKInAppAuthenticationRemoteUIProvider proximitySetupCompletedWithResult:]_block_invoke.249
-- ___76-[AKInAppAuthenticationRemoteUIProvider _showMaxAttemptAlertWithCompletion:]_block_invoke.203
-- ___77-[AKAuthorizationViewController presentAuthenticationChoiceUIWithCompletion:]_block_invoke.90
-- ___77-[AKAuthorizationViewController presentAuthenticationChoiceUIWithCompletion:]_block_invoke.94
-- ___81-[AKInAppAuthenticationRemoteUIProvider _secondFactorActionsForAlert:completion:]_block_invoke.215
-- ___81-[AKInAppAuthenticationRemoteUIProvider _secondFactorActionsForAlert:completion:]_block_invoke.216
-- ___81-[AKInAppAuthenticationRemoteUIProvider presentKeepUsingUIForAppleID:completion:]_block_invoke.122
-- ___81-[AKInAppAuthenticationRemoteUIProvider presentKeepUsingUIForAppleID:completion:]_block_invoke.127
-- ___81-[AKInAppAuthenticationRemoteUIProvider presentKeepUsingUIForAppleID:completion:]_block_invoke.131
-- ___90-[AKInAppAuthenticationRemoteUIProvider presentIDPProvidedUIWithConfiguration:completion:]_block_invoke.148
-- ___91-[AKInAppAuthenticationRemoteUIProvider _configureProximityAuthLoginOptionsWithCompletion:]_block_invoke.100
-- ___91-[AKInAppAuthenticationRemoteUIProvider _configureProximityAuthLoginOptionsWithCompletion:]_block_invoke.102
-- ___91-[AKInAppAuthenticationRemoteUIProvider _configureProximityAuthLoginOptionsWithCompletion:]_block_invoke.105
-- ___91-[AKInAppAuthenticationRemoteUIProvider _configureProximityAuthLoginOptionsWithCompletion:]_block_invoke_2.103
-- ___91-[AKInAppAuthenticationRemoteUIProvider _configureProximityAuthLoginOptionsWithCompletion:]_block_invoke_2.106
-- ___91-[AKInAppAuthenticationRemoteUIProvider _configureProximityAuthLoginOptionsWithCompletion:]_block_invoke_3.104
-- ___99-[AKInAppAuthenticationRemoteUIProvider presentBiometricOrPasscodeValidationForAppleID:completion:]_block_invoke.170
-- ___99-[AKInAppAuthenticationRemoteUIProvider presentBiometricOrPasscodeValidationForAppleID:completion:]_block_invoke.171
-- ___99-[AKInAppAuthenticationRemoteUIProvider presentBiometricOrPasscodeValidationForAppleID:completion:]_block_invoke.172
-- ___block_literal_global.83
-- _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA15ModifiedContentVyAKyAKyAKyAKyAKyAA4TextVAA16_FlexFrameLayoutVGAA14_OpacityEffectVGAA16_OverlayModifierVyAA08ProgressC0VyAA05EmptyC0VAYGSgGGAA08_PaddingN0VGA3_GAA011_BackgroundR0VyAA06_ShapeC0VyAA16RoundedRectangleVAA5ColorVGGG_Qo_HO.26
-- _objc_msgSend$_setupUsernameField
-- _objc_msgSend$_shouldHideUsernameField
-- _objc_msgSend$ak_imageWithColor:
-- _objc_msgSend$localizedModel
 - _swift_coroFrameAlloc
 - _symbolic $s9AuthKitUI33AKApprovalFlowCodeRequestDelegateP
 - _symbolic ______p 9AuthKitUI33AKApprovalFlowCodeRequestDelegateP
@@ -391,5 +226,4 @@ CStrings:
 + "init(coder:) not supported"
 + "init(frame:)"
 + "person.circle.fill"
-
 ```

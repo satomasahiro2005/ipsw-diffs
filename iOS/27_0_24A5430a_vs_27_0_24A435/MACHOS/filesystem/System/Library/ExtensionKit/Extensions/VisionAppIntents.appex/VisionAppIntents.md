@@ -2,23 +2,24 @@
 
 > `/System/Library/ExtensionKit/Extensions/VisionAppIntents.appex/VisionAppIntents`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ee08` | `0x1ee10` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
 - `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__unwind_info`
 - `__TEXT.__eh_frame`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 10.0.45.0.0
--  __TEXT.__text: 0x1ee08
-+  __TEXT.__text: 0x1ee10
-   __TEXT.__auth_stubs: 0x1040
-   __TEXT.__objc_stubs: 0x140
-   __TEXT.__const: 0x175a
+```text
 Functions:
 ~ sub_10001f0bc : 1040 -> 1048
 ```

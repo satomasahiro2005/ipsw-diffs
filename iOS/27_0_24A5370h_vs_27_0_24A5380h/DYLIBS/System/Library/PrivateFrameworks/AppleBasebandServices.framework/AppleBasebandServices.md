@@ -2,24 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/AppleBasebandServices.framework/AppleBasebandServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1b114` | `0x1b08c` | **`-0x88`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1b114
-+  __TEXT.__text: 0x1b08c
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__const: 0x638
-   __TEXT.__gcc_except_tab: 0x107c
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA.__data : content changed
+-1570.0.0.0.0
++1576.0.0.0.0
 Functions:
 ~ __ZN9Timestamp9toISO8601ERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE : 1060 -> 1072
 ~ __ZN7support2fs11updateOwnerENSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEjj : 1892 -> 1864
@@ -31,5 +29,4 @@ Functions:
 CStrings:
 + "AppleBasebandManager-AppleBasebandServices_Manager-1576"
 - "AppleBasebandManager-AppleBasebandServices_Manager-1570"
-
 ```

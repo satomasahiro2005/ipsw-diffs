@@ -2,97 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/MediaPlaybackCore.framework/MediaPlaybackCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4a320c` | `0x4a6ea0` | **`+0x3c94`** |
+| `__TEXT.__oslogstring` | `0x4ca61` | `0x4ce5f` | **`+0x3fe`** |
+| `__TEXT.__const` | `0x10870` | `0x109c0` | **`+0x150`** |
+| `__TEXT.__cstring` | `0x25d8d` | `0x25e6c` | **`+0xdf`** |
+| `__AUTH_CONST.__cfstring` | `0x1eba0` | `0x1ec60` | **`+0xc0`** |
+| `__AUTH_CONST.__objc_const` | `0x34898` | `0x34920` | **`+0x88`** |
+| `__TEXT.__objc_methlist` | `0x17ec0` | `0x17f30` | **`+0x70`** |
+| `__DATA_CONST.__objc_selrefs` | `0xcb98` | `0xcbe8` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x5a3c` | `0x5a7c` | **`+0x40`** |
+| `__TEXT.__swift5_mpenum` | `0xf0` | `0x130` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0xd950` | `0xd990` | **`+0x40`** |
+| `__TEXT.__eh_frame` | `0x10214` | `0x10238` | **`+0x24`** |
+| `__DATA.__data` | `0x7280` | `0x72a0` | **`+0x20`** |
+| `__TEXT.__swift5_typeref` | `0x546a` | `0x5486` | **`+0x1c`** |
+| `__AUTH_CONST.__objc_intobj` | `0x888` | `0x8a0` | **`+0x18`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x70` | `0x60` | **`-0x10`** |
+| `__DATA_DIRTY.__data` | `0x4548` | `0x4558` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x5a32` | `0x5a42` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0xaef8` | `0xaf04` | **`+0xc`** |
+| `__TEXT.__swift5_fieldmd` | `0x56a8` | `0x56b4` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x3448` | `0x3440` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x3448` | `0x3450` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -26200.26.36.301.0
--  __TEXT.__text: 0x482e84
--  __TEXT.__objc_methlist: 0x17ec0
 +26200.26.37.501.0
-+  __TEXT.__text: 0x4869d0
-+  __TEXT.__objc_methlist: 0x17f30
-   __TEXT.__dlopen_cstrs: 0x114
--  __TEXT.__const: 0x10870
--  __TEXT.__oslogstring: 0x4ca61
--  __TEXT.__cstring: 0x25d8d
--  __TEXT.__swift5_typeref: 0x546a
--  __TEXT.__swift5_capture: 0xaef8
-+  __TEXT.__const: 0x109c0
-+  __TEXT.__oslogstring: 0x4ce5f
-+  __TEXT.__cstring: 0x25e6c
-+  __TEXT.__swift5_typeref: 0x5486
-+  __TEXT.__swift5_capture: 0xaf04
-   __TEXT.__constg_swiftt: 0x7b40
--  __TEXT.__swift5_reflstr: 0x5a32
--  __TEXT.__swift5_fieldmd: 0x56a8
-+  __TEXT.__swift5_reflstr: 0x5a42
-+  __TEXT.__swift5_fieldmd: 0x56b4
-   __TEXT.__swift5_builtin: 0x6f4
--  __TEXT.__swift5_mpenum: 0xf0
-+  __TEXT.__swift5_mpenum: 0x130
-   __TEXT.__swift5_assocty: 0xbc0
-   __TEXT.__swift5_proto: 0x92c
-   __TEXT.__swift5_types: 0x564
 
-   __TEXT.__swift_as_cont: 0xe14
-   __TEXT.__swift5_protos: 0xd8
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__gcc_except_tab: 0x5a3c
-+  __TEXT.__gcc_except_tab: 0x5a7c
-   __TEXT.__ustring: 0x4dc
--  __TEXT.__unwind_info: 0x106a8
--  __TEXT.__eh_frame: 0x10294
-+  __TEXT.__unwind_info: 0x106e0
-+  __TEXT.__eh_frame: 0x102b8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x298
-   __DATA_CONST.__objc_protolist: 0x7f0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xcb98
-+  __DATA_CONST.__objc_selrefs: 0xcbe8
-   __DATA_CONST.__objc_protorefs: 0x3a0
-   __DATA_CONST.__objc_superrefs: 0x6d8
-   __DATA_CONST.__objc_arraydata: 0x298
--  __DATA_CONST.__got: 0x3448
-+  __DATA_CONST.__got: 0x3450
-   __AUTH_CONST.__const: 0x238e0
--  __AUTH_CONST.__cfstring: 0x1eba0
--  __AUTH_CONST.__objc_const: 0x34898
--  __AUTH_CONST.__objc_intobj: 0x888
-+  __AUTH_CONST.__cfstring: 0x1ec60
-+  __AUTH_CONST.__objc_const: 0x34920
-+  __AUTH_CONST.__objc_intobj: 0x8a0
-   __AUTH_CONST.__objc_arrayobj: 0x288
-   __AUTH_CONST.__objc_dictobj: 0xc8
--  __AUTH_CONST.__objc_doubleobj: 0x70
--  __AUTH_CONST.__auth_got: 0x3448
-+  __AUTH_CONST.__objc_doubleobj: 0x60
-+  __AUTH_CONST.__auth_got: 0x3440
-   __AUTH.__objc_data: 0x5a40
-   __AUTH.__data: 0x40c0
-   __DATA.__objc_ivar: 0x1ad8
--  __DATA.__data: 0x7280
-+  __DATA.__data: 0x72a0
-   __DATA.__common: 0x240
-   __DATA_DIRTY.__objc_data: 0x3590
--  __DATA_DIRTY.__data: 0x4548
-+  __DATA_DIRTY.__data: 0x4558
-   __DATA_DIRTY.__bss: 0x1328
-   __DATA_DIRTY.__common: 0xc8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 24485
--  Symbols:   24264
+-  Functions: 24486
+-  Symbols:   18677
 -  CStrings:  8271
-+  Functions: 24532
-+  Symbols:   24283
++  Functions: 24533
++  Symbols:   18686
 +  CStrings:  8280
- 
 Symbols:
 + -[MPCAudioAssetTypeSelector descriptionForExpectedAlbumAvailableDateTime:]
 + -[MPCAudioAssetTypeSelector preferredAudioAssetTypeForSongWithTrait:isStartItem:applyJitterTreatment:expectedAlbumAvailableDateTime:]
@@ -203,21 +152,6 @@ Symbols:
 + ___58-[MPCModelGenericAVItem prepareForRate:completionHandler:]_block_invoke_4
 + ___58-[MPCModelGenericAVItem prepareForRate:completionHandler:]_block_invoke_5
 + _arc4random
-+ _objc_msgSend$_albumForPreReleaseTreatment
-+ _objc_msgSend$_hasPendingDeferredLeaseAcquisition
-+ _objc_msgSend$_logTimeJumpForItem:fromTime:fromPrimaryTime:toTime:toPrimaryTime:userInitiated:timeStamp:
-+ _objc_msgSend$_playbackDidStopForItem:source:reason:time:primaryTime:timeStamp:
-+ _objc_msgSend$_setHasPendingDeferredLeaseAcquisition:
-+ _objc_msgSend$descriptionForExpectedAlbumAvailableDateTime:
-+ _objc_msgSend$expectedAlbumAvailableDateTime
-+ _objc_msgSend$expectedReleaseDateComponents
-+ _objc_msgSend$isHomePodRoute
-+ _objc_msgSend$leaseAcquisitionJitterTime
-+ _objc_msgSend$preferredAudioAssetTypeForSongWithTrait:isStartItem:applyJitterTreatment:expectedAlbumAvailableDateTime:
-+ _objc_msgSend$primaryTime
-+ _objc_msgSend$shouldApplyJitterTreatment
-+ _objc_msgSend$stereoAssetTypeWithIsStartItem:applyJitterTreatment:explanation:
-+ _objc_msgSend$userSeekCompletedForItem:fromTime:fromPrimaryTime:toTime:toPrimaryTime:timeStamp:
 + _symbolic Sb7success_______pSg4itemSdSg9startTimeAE012primaryStartD0Sd03endD0AE0e3EndD0SS10identifierSb7passive_____9timeStampt 17MediaPlaybackCore10PlayerItemP AA9EventTimeC
 - -[MPCAudioAssetTypeSelector preferredAudioAssetTypeForSongWithTrait:isStartItem:]
 - -[MPCAudioAssetTypeSelector stereoAssetTypeWithIsStartItem:explanation:]
@@ -317,11 +251,6 @@ Symbols:
 - ___block_descriptor_40_e8_32r_e14_v24?0{?=qiI}8lr32l8
 - ___swift_memcpy72_8
 - ___swift_memcpy73_8
-- _objc_msgSend$_logTimeJumpForItem:fromTime:toTime:userInitiated:timeStamp:
-- _objc_msgSend$_playbackDidStopForItem:source:reason:time:timeStamp:
-- _objc_msgSend$preferredAudioAssetTypeForSongWithTrait:isStartItem:
-- _objc_msgSend$stereoAssetTypeWithIsStartItem:explanation:
-- _objc_msgSend$userSeekCompletedForItem:fromTime:toTime:timeStamp:
 - _objc_release_x10
 - _swift_retain_x11
 - _symbolic Sb7success_______pSg4itemSdSg9startTimeSd03endD0SS10identifierSb7passive_____9timeStampt 17MediaPlaybackCore10PlayerItemP AA9EventTimeC

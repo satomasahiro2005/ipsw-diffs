@@ -2,99 +2,69 @@
 
 > `/System/Library/PrivateFrameworks/CloudPhotoLibrary.framework/Support/cloudphotod`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0xd70` | `0xe78` | **`+0x108`** |
+| `__TEXT.__oslogstring` | `0x125eb` | `0x12690` | **`+0xa5`** |
+| `__TEXT.__text` | `0x1cc134` | `0x1cc1a0` | **`+0x6c`** |
+| `__DATA_CONST.__cfstring` | `0x13440` | `0x13460` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0xb030` | `0xb050` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x1c0a2` | `0x1c0c2` | **`+0x20`** |
+| `__TEXT.__objc_methname` | `0x2ace1` | `0x2ad01` | **`+0x20`** |
+| `__TEXT.__objc_stubs` | `0x1cb00` | `0x1cb20` | **`+0x20`** |
+| `__TEXT.__auth_stubs` | `0x1e00` | `0x1e10` | **`+0x10`** |
+| `__TEXT.__objc_methtype` | `0x8cda` | `0x8cea` | **`+0x10`** |
+| `__DATA.__objc_selrefs` | `0x8d68` | `0x8d70` | **`+0x8`** |
+| `__DATA_CONST.__auth_got` | `0xf10` | `0xf18` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x1091c` | `0x10914` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1cc134
--  __TEXT.__auth_stubs: 0x1e00
--  __TEXT.__objc_stubs: 0x1cb00
--  __TEXT.__objc_methlist: 0x1091c
--  __TEXT.__cstring: 0x1c0a2
-+  __TEXT.__text: 0x1cc1a0
-+  __TEXT.__auth_stubs: 0x1e10
-+  __TEXT.__objc_stubs: 0x1cb20
-+  __TEXT.__objc_methlist: 0x10914
-+  __TEXT.__cstring: 0x1c0c2
-   __TEXT.__objc_classname: 0x2c93
--  __TEXT.__objc_methname: 0x2ace1
--  __TEXT.__objc_methtype: 0x8cda
-+  __TEXT.__objc_methname: 0x2ad01
-+  __TEXT.__objc_methtype: 0x8cea
-   __TEXT.__const: 0xa050
-   __TEXT.__gcc_except_tab: 0x2e68
--  __TEXT.__oslogstring: 0x125eb
-+  __TEXT.__oslogstring: 0x12690
-   __TEXT.__swift5_typeref: 0x18ed
-   __TEXT.__constg_swiftt: 0x109c
-   __TEXT.__swift5_reflstr: 0x2069
+-910.21.101.0.0
++910.27.103.0.0
 
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__unwind_info: 0x6db8
-   __TEXT.__eh_frame: 0x2418
--  __DATA_CONST.__const: 0xb030
--  __DATA_CONST.__cfstring: 0x13440
-+  __DATA_CONST.__const: 0xb050
-+  __DATA_CONST.__cfstring: 0x13460
-   __DATA_CONST.__objc_classlist: 0x748
-   __DATA_CONST.__objc_catlist: 0x1c0
-   __DATA_CONST.__objc_protolist: 0x490
-
-   __DATA_CONST.__objc_arrayobj: 0x1a28
-   __DATA_CONST.__objc_floatobj: 0x60
-   __DATA_CONST.__objc_doubleobj: 0x10
--  __DATA_CONST.__auth_got: 0xf10
--  __DATA_CONST.__got: 0xd70
-+  __DATA_CONST.__auth_got: 0xf18
-+  __DATA_CONST.__got: 0xe78
-   __DATA_CONST.__auth_ptr: 0x468
-   __DATA.__objc_const: 0x1ee98
--  __DATA.__objc_selrefs: 0x8d68
-+  __DATA.__objc_selrefs: 0x8d70
-   __DATA.__objc_ivar: 0x13f4
-   __DATA.__objc_data: 0x4c58
-   __DATA.__data: 0x6ea0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10152
 -  Symbols:   1059
--  CStrings:  14491
+-  CStrings:  11458
 +  Functions: 10150
 +  Symbols:   1061
-+  CStrings:  14497
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
-~ __DATA.__bss : content changed
-~ __DATA.__common : content changed
++  CStrings:  11463
 Symbols:
 + _CPLSetRequestEngineBlock
 + _CPLSyncSessionPredictionTypeTurboMode
@@ -112,5 +82,4 @@ CStrings:
 - "addShareURLToPluginFieldsIfNecessary:updatedCPLParticipants:"
 - "newTaskRequestWithExpectedDuration:requestsImmediateRuntime:"
 - "shouldUseTurboMode"
-
 ```

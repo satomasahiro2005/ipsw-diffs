@@ -2,90 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/HomeEnergyUI.framework/HomeEnergyUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x265540` | `0x262a4c` | **`-0x2af4`** |
+| `__TEXT.__eh_frame` | `0xa864` | `0xa4fc` | **`-0x368`** |
+| `__TEXT.__swift5_typeref` | `0x236c8` | `0x234d8` | **`-0x1f0`** |
+| `__AUTH_CONST.__const` | `0x8280` | `0x8180` | **`-0x100`** |
+| `__TEXT.__swift5_reflstr` | `0x55ea` | `0x555a` | **`-0x90`** |
+| `__TEXT.__unwind_info` | `0x5b40` | `0x5ac0` | **`-0x80`** |
+| `__TEXT.__const` | `0x106d0` | `0x10720` | **`+0x50`** |
+| `__TEXT.__swift5_fieldmd` | `0x475c` | `0x4714` | **`-0x48`** |
+| `__AUTH_CONST.__objc_const` | `0x2b18` | `0x2ad8` | **`-0x40`** |
+| `__DATA.__data` | `0x4970` | `0x4930` | **`-0x40`** |
+| `__TEXT.__cstring` | `0xc795` | `0xc7d5` | **`+0x40`** |
+| `__DATA.__bss` | `0x6090` | `0x60c0` | **`+0x30`** |
+| `__TEXT.__swift5_capture` | `0x1440` | `0x1410` | **`-0x30`** |
+| `__DATA_DIRTY.__data` | `0x56c0` | `0x56a0` | **`-0x20`** |
+| `__TEXT.__swift_as_entry` | `0x44c` | `0x430` | **`-0x1c`** |
+| `__TEXT.__swift_as_ret` | `0x43c` | `0x428` | **`-0x14`** |
+| `__AUTH_CONST.__auth_got` | `0x2d50` | `0x2d40` | **`-0x10`** |
+| `__DATA.__common` | `0x7d8` | `0x7c8` | **`-0x10`** |
+| `__DATA_CONST.__const` | `0x530` | `0x540` | **`+0x10`** |
+| `__TEXT.__constg_swiftt` | `0x4dc8` | `0x4dd0` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x8a8` | `0x8a4` | **`-0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__oslogstring`
+
+### Other Changes
 
 ```diff
 
 -490.1.4.0.0
--  __TEXT.__text: 0x24feb8
 +504.0.0.0.0
-+  __TEXT.__text: 0x24d694
-   __TEXT.__objc_methlist: 0x23c
--  __TEXT.__const: 0x106d0
--  __TEXT.__constg_swiftt: 0x4dc8
--  __TEXT.__swift5_typeref: 0x236c8
--  __TEXT.__swift5_fieldmd: 0x475c
-+  __TEXT.__const: 0x10720
-+  __TEXT.__constg_swiftt: 0x4dd0
-+  __TEXT.__swift5_typeref: 0x234d8
-+  __TEXT.__swift5_fieldmd: 0x4714
-   __TEXT.__swift5_builtin: 0xc8
--  __TEXT.__swift5_reflstr: 0x55ea
-+  __TEXT.__swift5_reflstr: 0x555a
-   __TEXT.__oslogstring: 0x58ea
--  __TEXT.__cstring: 0xc795
-+  __TEXT.__cstring: 0xc7d5
-   __TEXT.__swift5_assocty: 0xee8
-   __TEXT.__swift5_proto: 0x5bc
-   __TEXT.__swift5_types: 0x410
--  __TEXT.__swift5_capture: 0x1440
--  __TEXT.__swift_as_entry: 0x44c
--  __TEXT.__swift_as_ret: 0x43c
--  __TEXT.__swift_as_cont: 0x8a8
-+  __TEXT.__swift5_capture: 0x1410
-+  __TEXT.__swift_as_entry: 0x430
-+  __TEXT.__swift_as_ret: 0x428
-+  __TEXT.__swift_as_cont: 0x8a4
-   __TEXT.__swift5_protos: 0x30
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x7200
--  __TEXT.__eh_frame: 0xa874
-+  __TEXT.__unwind_info: 0x7190
-+  __TEXT.__eh_frame: 0xa50c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x530
-+  __DATA_CONST.__const: 0x540
-   __DATA_CONST.__objc_classlist: 0x140
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x490
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__got: 0x1590
--  __AUTH_CONST.__const: 0x8280
--  __AUTH_CONST.__objc_const: 0x2b18
--  __AUTH_CONST.__auth_got: 0x2d50
-+  __AUTH_CONST.__const: 0x8180
-+  __AUTH_CONST.__objc_const: 0x2ad8
-+  __AUTH_CONST.__auth_got: 0x2d40
-   __AUTH.__objc_data: 0x3e8
-   __AUTH.__data: 0x32e8
--  __DATA.__data: 0x4970
--  __DATA.__common: 0x7d8
-+  __DATA.__data: 0x4930
-+  __DATA.__common: 0x7c8
-   __DATA_DIRTY.__objc_data: 0x298
--  __DATA_DIRTY.__data: 0x56c0
-+  __DATA_DIRTY.__data: 0x56a0
-   __DATA_DIRTY.__bss: 0x4fb0
-   __DATA_DIRTY.__common: 0x228
-   - /System/Library/Frameworks/Charts.framework/Charts
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7921
--  Symbols:   3175
+-  Symbols:   3058
 -  CStrings:  1428
 +  Functions: 7913
-+  Symbols:   3160
++  Symbols:   3043
 +  CStrings:  1430
- 
 Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyACyACyAA012_ConditionalD0VyAA6VStackVyAA05TupleD0VyACyAA4TextVAA31AccessibilityAttachmentModifierVG_AnIyAA7DividerV_ACyAA4ViewPAAE5alert_11isPresented7actions7messageQrqd___AA7BindingVySbGqd_0_yXEqd_1_yXEtSyRd__AaQRd_0_AaQRd_1_r1_lFQOyACyArAE15dynamicTypeSizeyQrqd__SXRd__AA07DynamicuV0O5BoundRtd__lFQOyAA6ButtonVyAA6HStackVyAIyAK_AA6SpacerVAA08ProgressM0VyAA05EmptyM0VA12_GSgQPGGG_s19PartialRangeThroughVyA0_GQo_AMG_SSAIyACyA4_yAKGAMG_A23_QPGAKQo_AA024_EnvironmentKeyTransformK0VySbGGQPGSgQPGGAGyAIyA6_yAIyACyAA10AsyncImageVyACyACyAA5ImageVAA18_AspectRatioLayoutVGAA11_ClipEffectVyAA16RoundedRectangleVGGSgGAA12_FrameLayoutVG_AGyAIyAN_ANQPGGQPGG_AIyACyACyApA14_PaddingLayoutVGA58_G_ACyA30_A58_GQPGSgQPGGGAA06_FixedV6LayoutVGA58_GAA16_FlexFrameLayoutVGAA011_BackgroundK0VyAA06_ShapeM0VyA45_AA8MaterialVGGGSgAaQHpA82_AaQHPA73_AaQHPA70_AaQHPA69_AaQHPA66_AaQHPA34_AaQHPyHC_A65_AaQHPyHCHC_A68_AA0mK0HPyHCHC_A58_AAA84_HPyHCHC_A72_AAA84_HPyHCHC_A81_AAA84_HPyHCHC_HC
 + _swift_retain_x9

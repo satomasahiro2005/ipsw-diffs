@@ -2,21 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/AppleMipcRouter.framework/AppleMipcRouter`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4b6b0` | `0x4b5b8` | **`-0xf8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x4b6b0
-+  __TEXT.__text: 0x4b5b8
-   __TEXT.__const: 0x4a08
-   __TEXT.__gcc_except_tab: 0x4afc
-   __TEXT.__cstring: 0xdc0
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
+-1570.0.0.0.0
++1576.0.0.0.0
 Functions:
 ~ __ZN3abb6router5Agent31cancelPendingConfirmations_syncEv : 748 -> 740
 ~ __ZNSt3__16vectorINS_4pairIN3abb6router7MessageENS_8functionIFvS4_EEEEENS_9allocatorIS8_EEE5eraseB9noe220106ENS_11__wrap_iterIPKS8_EE : 424 -> 412
@@ -34,5 +31,4 @@ Functions:
 ~ __ZN3abb6router11ClientProxy22handleSentMessage_syncENS0_7MessageEb : 1152 -> 1140
 ~ ____ZN3abb6router11ClientProxy22handleSentMessage_syncENS0_7MessageEb_block_invoke : 944 -> 928
 ~ __ZNSt3__16vectorIN3abb6router7MessageENS_9allocatorIS3_EEE24__emplace_back_slow_pathIJS3_EEEPS3_DpOT_ : 524 -> 448
-
 ```

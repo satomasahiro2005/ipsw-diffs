@@ -2,84 +2,54 @@
 
 > `/usr/libexec/uarpd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__gcc_except_tab`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa02bc` | `0xa164c` | **`+0x1390`** |
+| `__DATA.__objc_const` | `0x10918` | `0x105e8` | **`-0x330`** |
+| `__TEXT.__oslogstring` | `0x8cec` | `0x8f0f` | **`+0x223`** |
+| `__TEXT.__cstring` | `0xac00` | `0xadf9` | **`+0x1f9`** |
+| `__TEXT.__objc_stubs` | `0xa360` | `0xa520` | **`+0x1c0`** |
+| `__TEXT.__objc_methname` | `0xf377` | `0xf1f2` | **`-0x185`** |
+| `__DATA.__objc_selrefs` | `0x30e8` | `0x3160` | **`+0x78`** |
+| `__DATA_CONST.__const` | `0x10a0` | `0x1110` | **`+0x70`** |
+| `__DATA.__objc_ivar` | `0xb90` | `0xb30` | **`-0x60`** |
+| `__TEXT.__unwind_info` | `0x2318` | `0x2378` | **`+0x60`** |
+| `__DATA.__objc_data` | `0x3c00` | `0x3c50` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x8678` | `0x86a8` | **`+0x30`** |
+| `__TEXT.__objc_methtype` | `0x2a49` | `0x2a72` | **`+0x29`** |
+| `__DATA_CONST.__cfstring` | `0x53e0` | `0x5400` | **`+0x20`** |
+| `__TEXT.__objc_classname` | `0x1ce4` | `0x1cf6` | **`+0x12`** |
+| `__DATA_CONST.__objc_classlist` | `0x600` | `0x608` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x5e8` | `0x5f0` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_arraydata`
 - `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
 - `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__got`
-- `__DATA.__data`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__gcc_except_tab`
+
+### Other Changes
 
 ```diff
 
 -1587.0.21.0.0
--  __TEXT.__text: 0xa02bc
 +1587.0.27.0.0
-+  __TEXT.__text: 0xa164c
-   __TEXT.__auth_stubs: 0xa20
--  __TEXT.__objc_stubs: 0xa360
--  __TEXT.__objc_methlist: 0x8678
--  __TEXT.__objc_methname: 0xf377
--  __TEXT.__objc_classname: 0x1ce4
--  __TEXT.__cstring: 0xac00
--  __TEXT.__objc_methtype: 0x2a49
-+  __TEXT.__objc_stubs: 0xa520
-+  __TEXT.__objc_methlist: 0x86a8
-+  __TEXT.__objc_methname: 0xf1f2
-+  __TEXT.__objc_classname: 0x1cf6
-+  __TEXT.__cstring: 0xadf9
-+  __TEXT.__objc_methtype: 0x2a72
-   __TEXT.__const: 0x140
--  __TEXT.__oslogstring: 0x8cec
-+  __TEXT.__oslogstring: 0x8f0f
-   __TEXT.__gcc_except_tab: 0x19c
--  __TEXT.__unwind_info: 0x2318
--  __DATA_CONST.__const: 0x10a0
--  __DATA_CONST.__cfstring: 0x53e0
--  __DATA_CONST.__objc_classlist: 0x600
-+  __TEXT.__unwind_info: 0x2378
-+  __DATA_CONST.__const: 0x1110
-+  __DATA_CONST.__cfstring: 0x5400
-+  __DATA_CONST.__objc_classlist: 0x608
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x30
--  __DATA_CONST.__objc_superrefs: 0x5e8
-+  __DATA_CONST.__objc_superrefs: 0x5f0
-   __DATA_CONST.__objc_intobj: 0x3d8
-   __DATA_CONST.__objc_arraydata: 0x70
-   __DATA_CONST.__objc_arrayobj: 0x30
-   __DATA_CONST.__objc_dictobj: 0x28
-   __DATA_CONST.__auth_got: 0x520
-   __DATA_CONST.__got: 0x640
--  __DATA.__objc_const: 0x10918
--  __DATA.__objc_selrefs: 0x30e8
--  __DATA.__objc_ivar: 0xb90
--  __DATA.__objc_data: 0x3c00
-+  __DATA.__objc_const: 0x105e8
-+  __DATA.__objc_selrefs: 0x3160
-+  __DATA.__objc_ivar: 0xb30
-+  __DATA.__objc_data: 0x3c50
-   __DATA.__data: 0x548
-   __DATA.__bss: 0x1178
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libpcap.A.dylib
 -  Functions: 3910
 -  Symbols:   228
 -  CStrings:  4906
 +  Functions: 3928
 +  Symbols:   229
 +  CStrings:  4921
- 
 Symbols:
 + _NSURLContentModificationDateKey
 CStrings:

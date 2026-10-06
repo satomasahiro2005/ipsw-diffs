@@ -2,99 +2,63 @@
 
 > `/usr/libexec/icloudmailagent`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_reflstr`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3fedc` | `0x42d48` | **`+0x2e6c`** |
+| `__TEXT.__const` | `0x2340` | `0x24c0` | **`+0x180`** |
+| `__DATA.__objc_const` | `0x1708` | `0x17e0` | **`+0xd8`** |
+| `__DATA.__data` | `0xf68` | `0x1038` | **`+0xd0`** |
+| `__TEXT.__cstring` | `0x735` | `0x805` | **`+0xd0`** |
+| `__TEXT.__oslogstring` | `0x1b91` | `0x1c61` | **`+0xd0`** |
+| `__TEXT.__auth_stubs` | `0x18e0` | `0x1960` | **`+0x80`** |
+| `__TEXT.__objc_methname` | `0x1617` | `0x1697` | **`+0x80`** |
+| `__DATA_CONST.__const` | `0x1c98` | `0x1cf8` | **`+0x60`** |
+| `__TEXT.__objc_stubs` | `0xb00` | `0xb60` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0xde8` | `0xe38` | **`+0x50`** |
+| `__TEXT.__eh_frame` | `0x16d0` | `0x1718` | **`+0x48`** |
+| `__DATA.__bss` | `0x3090` | `0x30d0` | **`+0x40`** |
+| `__DATA_CONST.__auth_got` | `0xc78` | `0xcb8` | **`+0x40`** |
+| `__TEXT.__constg_swiftt` | `0x9d0` | `0xa0c` | **`+0x3c`** |
+| `__TEXT.__objc_classname` | `0x2c7` | `0x2f7` | **`+0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0x810` | `0x838` | **`+0x28`** |
+| `__TEXT.__swift5_typeref` | `0xabe` | `0xae4` | **`+0x26`** |
+| `__DATA_CONST.__got` | `0x560` | `0x580` | **`+0x20`** |
+| `__DATA.__objc_selrefs` | `0x4d8` | `0x4f0` | **`+0x18`** |
+| `__DATA_CONST.__auth_ptr` | `0x4c0` | `0x4d8` | **`+0x18`** |
+| `__TEXT.__swift5_capture` | `0x3c0` | `0x3d4` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x58` | `0x60` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0xb4` | `0xb8` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA.__objc_data`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_reflstr`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -2027.0.5.0.0
--  __TEXT.__text: 0x3dd20
--  __TEXT.__auth_stubs: 0x18e0
--  __TEXT.__objc_stubs: 0xb00
 +2027.1.1.0.0
-+  __TEXT.__text: 0x40a3c
-+  __TEXT.__auth_stubs: 0x1960
-+  __TEXT.__objc_stubs: 0xb60
-   __TEXT.__objc_methlist: 0x60c
--  __TEXT.__const: 0x2340
--  __TEXT.__oslogstring: 0x1b91
--  __TEXT.__cstring: 0x735
--  __TEXT.__objc_methname: 0x1617
--  __TEXT.__swift5_typeref: 0xabe
--  __TEXT.__objc_classname: 0x2c7
-+  __TEXT.__const: 0x24c0
-+  __TEXT.__oslogstring: 0x1c61
-+  __TEXT.__cstring: 0x805
-+  __TEXT.__objc_methname: 0x1697
-+  __TEXT.__swift5_typeref: 0xae4
-+  __TEXT.__objc_classname: 0x2f7
-   __TEXT.__objc_methtype: 0x8ba
--  __TEXT.__constg_swiftt: 0x9d0
-+  __TEXT.__constg_swiftt: 0xa0c
-   __TEXT.__swift5_reflstr: 0x65b
--  __TEXT.__swift5_fieldmd: 0x810
-+  __TEXT.__swift5_fieldmd: 0x838
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_assocty: 0xf0
-   __TEXT.__swift5_proto: 0x184
--  __TEXT.__swift5_types: 0xb4
--  __TEXT.__swift5_capture: 0x3c0
-+  __TEXT.__swift5_types: 0xb8
-+  __TEXT.__swift5_capture: 0x3d4
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift_as_entry: 0x40
-   __TEXT.__swift_as_ret: 0x54
-   __TEXT.__swift_as_cont: 0xc4
--  __TEXT.__unwind_info: 0x10a0
--  __TEXT.__eh_frame: 0x16d8
--  __DATA_CONST.__const: 0x1c98
--  __DATA_CONST.__objc_classlist: 0x58
-+  __TEXT.__unwind_info: 0x10f8
-+  __TEXT.__eh_frame: 0x1720
-+  __DATA_CONST.__const: 0x1cf8
-+  __DATA_CONST.__objc_classlist: 0x60
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x30
--  __DATA_CONST.__auth_got: 0xc78
--  __DATA_CONST.__got: 0x560
--  __DATA_CONST.__auth_ptr: 0x4c0
--  __DATA.__objc_const: 0x1708
--  __DATA.__objc_selrefs: 0x4d8
-+  __DATA_CONST.__auth_got: 0xcb8
-+  __DATA_CONST.__got: 0x580
-+  __DATA_CONST.__auth_ptr: 0x4d8
-+  __DATA.__objc_const: 0x17e0
-+  __DATA.__objc_selrefs: 0x4f0
-   __DATA.__objc_data: 0x868
--  __DATA.__data: 0xf68
-+  __DATA.__data: 0x1038
-   __DATA.__common: 0x90
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/Combine.framework/Combine
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1205
 -  Symbols:   3552
 -  CStrings:  491
 +  Functions: 1243
 +  Symbols:   3613
 +  CStrings:  503
- 
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/icloudMCCKit/install/TempContent/Objects/icloudMCCKit.build/icloudmailagent.build/Objects-normal/arm64e/PendingRequestStore.o
 + PendingRequestStore.swift

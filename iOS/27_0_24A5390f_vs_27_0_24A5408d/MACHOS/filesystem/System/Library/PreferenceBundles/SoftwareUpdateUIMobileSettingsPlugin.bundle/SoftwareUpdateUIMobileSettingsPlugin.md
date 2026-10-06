@@ -2,79 +2,50 @@
 
 > `/System/Library/PreferenceBundles/SoftwareUpdateUIMobileSettingsPlugin.bundle/SoftwareUpdateUIMobileSettingsPlugin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__objc_methtype`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x652e0` | `0x65f34` | **`+0xc54`** |
+| `__TEXT.__oslogstring` | `0xb71` | `0xd71` | **`+0x200`** |
+| `__TEXT.__const` | `0x2864` | `0x28c4` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x4c88` | `0x4cd8` | **`+0x50`** |
+| `__TEXT.__eh_frame` | `0x7d0` | `0x7f8` | **`+0x28`** |
+| `__TEXT.__swift5_capture` | `0x1dec` | `0x1e08` | **`+0x1c`** |
+| `__TEXT.__unwind_info` | `0x1468` | `0x1478` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x4a8` | `0x4b0` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0xc8` | `0xcc` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x44` | `0x48` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_classlist`
 - `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift_as_entry`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__objc_methtype`
 - `__TEXT.__swift5_assocty`
 - `__TEXT.__swift5_builtin`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_entry`
+
+### Other Changes
 
 ```diff
 
 -772.0.10.0.0
--  __TEXT.__text: 0x652e0
 +772.0.20.0.0
-+  __TEXT.__text: 0x65f34
-   __TEXT.__auth_stubs: 0x1860
-   __TEXT.__objc_stubs: 0x500
-   __TEXT.__objc_methlist: 0x2d4
-+  __TEXT.__const: 0x28c4
-   __TEXT.__swift5_typeref: 0x2171
--  __TEXT.__const: 0x2864
--  __TEXT.__swift5_capture: 0x1dec
-+  __TEXT.__swift5_capture: 0x1e08
-   __TEXT.__objc_classname: 0x1b5
-   __TEXT.__objc_methname: 0x875
-   __TEXT.__objc_methtype: 0x351
 
-   __TEXT.__swift5_proto: 0x68
-   __TEXT.__swift5_types: 0xa8
-   __TEXT.__swift_as_entry: 0x50
--  __TEXT.__swift_as_ret: 0x44
--  __TEXT.__swift_as_cont: 0xc8
-+  __TEXT.__swift_as_ret: 0x48
-+  __TEXT.__swift_as_cont: 0xcc
-   __TEXT.__swift5_assocty: 0x1a0
--  __TEXT.__oslogstring: 0xb71
-+  __TEXT.__oslogstring: 0xd71
-   __TEXT.__swift5_builtin: 0x14
--  __TEXT.__unwind_info: 0x1468
--  __TEXT.__eh_frame: 0x7d0
--  __DATA_CONST.__const: 0x4c88
-+  __TEXT.__unwind_info: 0x1478
-+  __TEXT.__eh_frame: 0x7f8
-+  __DATA_CONST.__const: 0x4cd8
-   __DATA_CONST.__objc_classlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__auth_got: 0xc38
--  __DATA_CONST.__got: 0x4a8
-+  __DATA_CONST.__got: 0x4b0
-   __DATA_CONST.__auth_ptr: 0x728
-   __DATA.__objc_const: 0x530
-   __DATA.__objc_selrefs: 0x2e0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2128
 -  Symbols:   134
 +  Functions: 2135
 +  Symbols:   136
-   CStrings:  286
- 
 Symbols:
 + _SoftwareUpdateUIMobileSettingsPluginVersionNumber
 + _SoftwareUpdateUIMobileSettingsPluginVersionString

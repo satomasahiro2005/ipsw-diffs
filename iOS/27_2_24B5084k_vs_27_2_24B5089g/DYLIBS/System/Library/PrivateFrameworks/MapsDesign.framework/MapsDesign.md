@@ -2,92 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/MapsDesign.framework/MapsDesign`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__swift5_typeref` | `0x4eed2` | `0x4f062` | **`+0x190`** |
+| `__TEXT.__text` | `0x2728b4` | `0x2729d4` | **`+0x120`** |
+| `__DATA.__data` | `0x6a00` | `0x6a40` | **`+0x40`** |
+| `__DATA_DIRTY.__data` | `0xcef8` | `0xceb8` | **`-0x40`** |
+| `__DATA_CONST.__const` | `0xa40` | `0xa10` | **`-0x30`** |
+| `__TEXT.__const` | `0x21434` | `0x21464` | **`+0x30`** |
+| `__TEXT.__swift5_capture` | `0x2974` | `0x29a4` | **`+0x30`** |
+| `__TEXT.__swift5_reflstr` | `0x6121` | `0x6141` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x8238` | `0x8244` | **`+0xc`** |
+| `__TEXT.__unwind_info` | `0x6808` | `0x6800` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -82.31.6.17.7
--  __TEXT.__text: 0x260168
 +82.31.6.17.9
-+  __TEXT.__text: 0x260288
-   __TEXT.__objc_methlist: 0x5cc
--  __TEXT.__const: 0x21434
-+  __TEXT.__const: 0x21464
-   __TEXT.__constg_swiftt: 0x9b90
--  __TEXT.__swift5_typeref: 0x4eed2
-+  __TEXT.__swift5_typeref: 0x4f062
-   __TEXT.__swift5_builtin: 0x258
-   __TEXT.__swift5_mpenum: 0xc4
--  __TEXT.__swift5_reflstr: 0x6121
--  __TEXT.__swift5_fieldmd: 0x8238
-+  __TEXT.__swift5_reflstr: 0x6141
-+  __TEXT.__swift5_fieldmd: 0x8244
-   __TEXT.__swift5_assocty: 0x1f70
-   __TEXT.__cstring: 0x4d7d
-   __TEXT.__swift5_proto: 0x8f0
-   __TEXT.__swift5_types: 0x81c
--  __TEXT.__swift5_capture: 0x2974
-+  __TEXT.__swift5_capture: 0x29a4
-   __TEXT.__swift_as_entry: 0x48
-   __TEXT.__swift_as_ret: 0x3c
-   __TEXT.__swift_as_cont: 0x9c
-   __TEXT.__oslogstring: 0xe9f
-   __TEXT.__swift5_protos: 0x14
--  __TEXT.__unwind_info: 0x8a90
-+  __TEXT.__unwind_info: 0x8a88
-   __TEXT.__eh_frame: 0x2254
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xa40
-+  __DATA_CONST.__const: 0xa10
-   __DATA_CONST.__objc_classlist: 0x130
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   __AUTH_CONST.__auth_got: 0x29d8
-   __AUTH.__objc_data: 0x290
-   __AUTH.__data: 0x1568
--  __DATA.__data: 0x6a00
-+  __DATA.__data: 0x6a40
-   __DATA.__common: 0x808
-   __DATA_DIRTY.__objc_data: 0xc90
--  __DATA_DIRTY.__data: 0xcef8
-+  __DATA_DIRTY.__data: 0xceb8
-   __DATA_DIRTY.__bss: 0xa7b0
-   __DATA_DIRTY.__common: 0x220
-   - /System/Library/Frameworks/Charts.framework/Charts
-
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  - /usr/lib/swift/libswiftAVFoundation.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
--  - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
--  - /usr/lib/swift/libswiftCoreAudio_Private.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftCoreImage.dylib
-   - /usr/lib/swift/libswiftCoreLocation.dylib
--  - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
--  - /usr/lib/swift/libswiftMLCompute.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
--  - /usr/lib/swift/libswiftNaturalLanguage.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftObservation.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+-  - /usr/lib/swift/libswiftCompression.dylib
+
+-  - /usr/lib/swift/libswiftCoreAudio_Private.dylib
+
+-  - /usr/lib/swift/libswiftCoreMIDI.dylib
+
+-  - /usr/lib/swift/libswiftMLCompute.dylib
+
+-  - /usr/lib/swift/libswiftNaturalLanguage.dylib
+
 -  Functions: 12084
--  Symbols:   5638
+-  Symbols:   5401
 +  Functions: 12083
-+  Symbols:   5629
-   CStrings:  538
- 
++  Symbols:   5392
 Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVy10MapsDesign10TileButtonVyACyAA6ZStackVyAA05TupleD0VyACyACyACyAD0eF5ImageVAA16_FlexFrameLayoutVGAA11_ClipEffectVyAA9RectangleVGGAA01_D13ShapeModifierVyASGG_AA6VStackVyAJyAA6SpacerV_ACyACyACyA_yAJyACyACyAA4TextVAA022_EnvironmentKeyWritingS0VySiSgGGAA023AccessibilityAttachmentS0VG_ACyACyACyA3_AA010_BlendModeP0VGA7_GA10_GQPGGANGAA08_PaddingN0VGA21_GQPGGQPGGAQyAA07RoundedQ0VGGGAD0ef15AXContainerViewS0VGAA4ViewHPA32_AAA36_HPyHC_A34_AA04ViewS0HPyHCHC
 + _symbolic ___________yAByABy_____y_____yAByABy__________ySiSgGG_____G_AByAByAByAE_____GAHGAJGQPGG_____G_____GATGt 7SwiftUI6SpacerV AA15ModifiedContentV AA6VStackV AA05TupleE0V AA4TextV AA30_EnvironmentKeyWritingModifierV AA023AccessibilityAttachmentL0V AA16_BlendModeEffectV AA16_FlexFrameLayoutV AA08_PaddingT0V

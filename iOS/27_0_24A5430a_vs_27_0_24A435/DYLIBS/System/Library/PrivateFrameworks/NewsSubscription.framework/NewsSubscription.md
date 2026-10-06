@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/NewsSubscription.framework/NewsSubscription`
 
-```diff
+### Section Size Changes
 
- 5934.3.0.0.0
--  __TEXT.__text: 0x18725c
-+  __TEXT.__text: 0x187308
-   __TEXT.__objc_methlist: 0x49a0
-   __TEXT.__const: 0x13d74
-   __TEXT.__cstring: 0xf6b7
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x18725c` | `0x187308` | **`+0xac`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1dfdd04bc -> sub_2008e44bc : 1020 -> 1024
 ~ sub_1dfde9588 -> sub_2008fd58c : 868 -> 872

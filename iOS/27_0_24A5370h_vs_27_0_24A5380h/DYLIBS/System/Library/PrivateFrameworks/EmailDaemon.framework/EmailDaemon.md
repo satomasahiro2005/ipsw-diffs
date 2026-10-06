@@ -2,131 +2,60 @@
 
 > `/System/Library/PrivateFrameworks/EmailDaemon.framework/EmailDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x283180` | `0x28b224` | **`+0x80a4`** |
+| `__DATA_DIRTY.__objc_data` | `0x4ff8` | `0x5c78` | **`+0xc80`** |
+| `__AUTH.__objc_data` | `0x16e8` | `0xb48` | **`-0xba0`** |
+| `__DATA_DIRTY.__data` | `0x1170` | `0x1b10` | **`+0x9a0`** |
+| `__TEXT.__cstring` | `0x283aa` | `0x28c8a` | **`+0x8e0`** |
+| `__TEXT.__gcc_except_tab` | `0x499d8` | `0x4a1f0` | **`+0x818`** |
+| `__TEXT.__oslogstring` | `0x1aaef` | `0x1af6f` | **`+0x480`** |
+| `__AUTH.__data` | `0x7e0` | `0x388` | **`-0x458`** |
+| `__DATA.__data` | `0x3ca0` | `0x3960` | **`-0x340`** |
+| `__AUTH_CONST.__const` | `0x728b` | `0x749b` | **`+0x210`** |
+| `__TEXT.__eh_frame` | `0x14d0` | `0x16c8` | **`+0x1f8`** |
+| `__TEXT.__unwind_info` | `0x10f00` | `0x110e8` | **`+0x1e8`** |
+| `__AUTH_CONST.__cfstring` | `0xf940` | `0xfae0` | **`+0x1a0`** |
+| `__TEXT.__objc_methlist` | `0x131dc` | `0x1333c` | **`+0x160`** |
+| `__AUTH_CONST.__objc_const` | `0x22408` | `0x22538` | **`+0x130`** |
+| `__DATA_CONST.__objc_selrefs` | `0xafd0` | `0xb0b8` | **`+0xe8`** |
+| `__TEXT.__const` | `0x50ec` | `0x51cc` | **`+0xe0`** |
+| `__DATA.__bss` | `0x6740` | `0x67c0` | **`+0x80`** |
+| `__DATA_DIRTY.__bss` | `0x1ae0` | `0x1b60` | **`+0x80`** |
+| `__TEXT.__constg_swiftt` | `0x1060` | `0x10b0` | **`+0x50`** |
+| `__TEXT.__swift5_fieldmd` | `0x15f4` | `0x1638` | **`+0x44`** |
+| `__AUTH_CONST.__auth_got` | `0x1798` | `0x17d8` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x1df0` | `0x1e30` | **`+0x40`** |
+| `__TEXT.__swift5_capture` | `0x6fc` | `0x730` | **`+0x34`** |
+| `__DATA.__common` | `0x30` | `0x8` | **`-0x28`** |
+| `__DATA_DIRTY.__common` | `0x68` | `0x90` | **`+0x28`** |
+| `__TEXT.__swift5_reflstr` | `0x109f` | `0x10bf` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0xa20` | `0xa38` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x9c8` | `0x9d8` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0x1733` | `0x173d` | **`+0xa`** |
+| `__DATA_CONST.__const` | `0x9478` | `0x9480` | **`+0x8`** |
+| `__DATA_CONST.__objc_catlist` | `0x58` | `0x60` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x394` | `0x39c` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x1c8` | `0x1d0` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x1474` | `0x1470` | **`-0x4`** |
+| `__TEXT.__ustring` | `0x22` | `0x26` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x283180
--  __TEXT.__objc_methlist: 0x131dc
--  __TEXT.__const: 0x50ec
--  __TEXT.__gcc_except_tab: 0x499d8
--  __TEXT.__cstring: 0x283aa
--  __TEXT.__oslogstring: 0x1aaef
-+  __TEXT.__text: 0x28b224
-+  __TEXT.__objc_methlist: 0x1333c
-+  __TEXT.__const: 0x51cc
-+  __TEXT.__gcc_except_tab: 0x4a1f0
-+  __TEXT.__cstring: 0x28c8a
-+  __TEXT.__oslogstring: 0x1af6f
-   __TEXT.__dlopen_cstrs: 0x3bc
--  __TEXT.__ustring: 0x22
--  __TEXT.__constg_swiftt: 0x1060
--  __TEXT.__swift5_typeref: 0x1733
-+  __TEXT.__ustring: 0x26
-+  __TEXT.__constg_swiftt: 0x10b0
-+  __TEXT.__swift5_typeref: 0x173d
-   __TEXT.__swift5_builtin: 0xf0
--  __TEXT.__swift5_reflstr: 0x109f
--  __TEXT.__swift5_fieldmd: 0x15f4
-+  __TEXT.__swift5_reflstr: 0x10bf
-+  __TEXT.__swift5_fieldmd: 0x1638
-   __TEXT.__swift5_assocty: 0x248
--  __TEXT.__swift5_proto: 0x394
--  __TEXT.__swift5_types: 0x1c8
--  __TEXT.__swift5_capture: 0x6fc
-+  __TEXT.__swift5_proto: 0x39c
-+  __TEXT.__swift5_types: 0x1d0
-+  __TEXT.__swift5_capture: 0x730
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift_as_entry: 0x3c
-   __TEXT.__swift_as_ret: 0x44
-   __TEXT.__swift_as_cont: 0x60
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x10f00
--  __TEXT.__eh_frame: 0x14d0
-+  __TEXT.__unwind_info: 0x110e8
-+  __TEXT.__eh_frame: 0x16c8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9478
--  __DATA_CONST.__objc_classlist: 0x9c8
--  __DATA_CONST.__objc_catlist: 0x58
-+  __DATA_CONST.__const: 0x9480
-+  __DATA_CONST.__objc_classlist: 0x9d8
-+  __DATA_CONST.__objc_catlist: 0x60
-   __DATA_CONST.__objc_protolist: 0x420
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xafd0
-+  __DATA_CONST.__objc_selrefs: 0xb0b8
-   __DATA_CONST.__objc_protorefs: 0x118
-   __DATA_CONST.__objc_superrefs: 0x5d0
-   __DATA_CONST.__objc_arraydata: 0x6b8
--  __DATA_CONST.__got: 0x1df0
--  __AUTH_CONST.__const: 0x728b
--  __AUTH_CONST.__cfstring: 0xf940
--  __AUTH_CONST.__objc_const: 0x22408
--  __AUTH_CONST.__objc_intobj: 0xa20
-+  __DATA_CONST.__got: 0x1e30
-+  __AUTH_CONST.__const: 0x749b
-+  __AUTH_CONST.__cfstring: 0xfae0
-+  __AUTH_CONST.__objc_const: 0x22538
-+  __AUTH_CONST.__objc_intobj: 0xa38
-   __AUTH_CONST.__objc_arrayobj: 0x270
-   __AUTH_CONST.__objc_dictobj: 0xa0
-   __AUTH_CONST.__objc_doubleobj: 0x40
--  __AUTH_CONST.__auth_got: 0x1798
--  __AUTH.__objc_data: 0x16e8
--  __AUTH.__data: 0x7e0
--  __DATA.__objc_ivar: 0x1474
--  __DATA.__data: 0x3ca0
-+  __AUTH_CONST.__auth_got: 0x17d8
-+  __AUTH.__objc_data: 0xb48
-+  __AUTH.__data: 0x388
-+  __DATA.__objc_ivar: 0x1470
-+  __DATA.__data: 0x3960
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x6740
--  __DATA.__common: 0x30
--  __DATA_DIRTY.__objc_data: 0x4ff8
--  __DATA_DIRTY.__data: 0x1170
--  __DATA_DIRTY.__bss: 0x1ae0
--  __DATA_DIRTY.__common: 0x68
-+  __DATA.__bss: 0x67c0
-+  __DATA.__common: 0x8
-+  __DATA_DIRTY.__objc_data: 0x5c78
-+  __DATA_DIRTY.__data: 0x1b10
-+  __DATA_DIRTY.__bss: 0x1b60
-+  __DATA_DIRTY.__common: 0x90
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
+-3893.100.7.0.0
++3895.100.17.2.1
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11376
--  Symbols:   35019
--  CStrings:  7395
+-  Symbols:   15055
+-  CStrings:  5401
 +  Functions: 11472
-+  Symbols:   35175
-+  CStrings:  7453
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
++  Symbols:   15115
++  CStrings:  5447
 Symbols:
 + +[CSDonationProgress(EDPartialBackport) ed_donationProgressWithAllKnownItems:itemsNeedingDonation:donatedItems:partiallyDonatedItems:itemsNeedingDonationForRedonationRequests:dateOfNewestUndonatedItem:allKnownItemsIsPartial:]
 + +[EDMessageListItemPredicates predicateForMessagesWhereBodyNeedsIndexing]
@@ -207,40 +136,6 @@ Symbols:
 + ___block_descriptor_56_ea8_32s40bs_e5_v8?0ls32l8s40l8
 + ___swift_closure_destructor.14Tm
 + ___swift_closure_destructor.26Tm
-+ _objc_msgSend$_filterMessagesForDeliveredConversationsOrInsideWindow:
-+ _objc_msgSend$activeMailboxesClause
-+ _objc_msgSend$addAttachmentStatisticsToStats:connection:
-+ _objc_msgSend$addMessageCountStatisticsToStats:connection:activeMailboxesClause:
-+ _objc_msgSend$ageBucketColumnClausesForBuckets:
-+ _objc_msgSend$allAgeBuckets
-+ _objc_msgSend$allKnownItems
-+ _objc_msgSend$bucketedNumberIfNeeded:leadingDigits:
-+ _objc_msgSend$dateOfNewestUndonatedItem
-+ _objc_msgSend$defaultPolicy
-+ _objc_msgSend$donatedItems
-+ _objc_msgSend$donationVisualizationDataWithActiveMailboxesClause:
-+ _objc_msgSend$donationVisualizationDataWithReportedDate:
-+ _objc_msgSend$donationVisualizationMailboxNameForDatabaseID:
-+ _objc_msgSend$donationVisualizationMessageDetailsForDatabaseID:
-+ _objc_msgSend$downloadRequestQueue
-+ _objc_msgSend$ed_donationProgressWithAllKnownItems:itemsNeedingDonation:donatedItems:partiallyDonatedItems:itemsNeedingDonationForRedonationRequests:dateOfNewestUndonatedItem:allKnownItemsIsPartial:
-+ _objc_msgSend$ef_formatDate:style:
-+ _objc_msgSend$extractAgeBucketResultsFromStatement:columnOffset:buckets:intoStats:
-+ _objc_msgSend$initWithAllKnownItems:itemsNeedingDonation:donatedItems:partiallyDonatedItems:itemsNeedingDonationForRedonationRequests:dateOfNewestUndonatedItem:allKnownItemsIsPartial:
-+ _objc_msgSend$instancesRespondToSelector:
-+ _objc_msgSend$isMessageInsideWindow:sortAscending:
-+ _objc_msgSend$itemsNeedingDonation
-+ _objc_msgSend$itemsNeedingDonationForRedonationRequests
-+ _objc_msgSend$itemsToRemoveForSearchableIndex:count:
-+ _objc_msgSend$jsonData
-+ _objc_msgSend$logStatistics:
-+ _objc_msgSend$newestUndonatedMessageDateWithActiveMailboxesClause:
-+ _objc_msgSend$partiallyDonatedItems
-+ _objc_msgSend$removePendingIdentifierRemovalsWithLimit:
-+ _objc_msgSend$setGroupingSeparator:
-+ _objc_msgSend$sqlForMessagesWhereBodyNeedsIndexing:
-+ _objc_msgSend$stringFromNumber:
-+ _objc_msgSend$stringWithString:
 + _swift_release_x9
 + _symbolic SS3key______5valuet 11EmailDaemon35EDSearchableIndexDownloadStatisticsV
 + _symbolic _____ So31EDPersistenceDatabaseConnectionC11EmailDaemonE7execute33_CB5F844E92CE8A344116309B0397DFD4LL_12errorMessageySS_SStKF8SQLErrorL_V
@@ -279,9 +174,6 @@ Symbols:
 - ___block_descriptor_57_ea8_32s40r48r_e8_Q16?0Q8ls32l8r40l8r48l8
 - ___block_descriptor_64_ea8_32s40s48s56r_e8_Q16?0Q8ls32l8s40l8s48l8r56l8
 - ___swift_closure_destructor.20Tm
-- _objc_msgSend$_throttleRequestedSize:targetTime:action:
-- _objc_msgSend$itemsToRemoveForSearchableIndex:
-- _objc_msgSend$removePendingIdentifierRemovals
 - _symbolic SaySo20EDPersistedMessageIDCGIegg_
 - _symbolic _____yySaySo20EDPersistedMessageIDCGcG s23_ContiguousArrayStorageC
 - _symbolic ySaySo20EDPersistedMessageIDCGc
@@ -360,5 +252,4 @@ CStrings:
 - "indexing %lu / %lu items, throttled batch size %lu"
 - "percentUnindexedBodiesInFrecent"
 - "\xf0r"
-
 ```

@@ -2,77 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/AVFCore.framework/AVFCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c9894` | `0x1c9db4` | **`+0x520`** |
+| `__TEXT.__cstring` | `0x26da3` | `0x26f43` | **`+0x1a0`** |
+| `__AUTH_CONST.__cfstring` | `0x1a640` | `0x1a720` | **`+0xe0`** |
+| `__TEXT.__gcc_except_tab` | `0x9fec` | `0xa024` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0xa4e8` | `0xa520` | **`+0x38`** |
+| `__TEXT.__objc_methlist` | `0x1c114` | `0x1c144` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x5b90` | `0x5bb8` | **`+0x28`** |
+| `__AUTH_CONST.__objc_const` | `0x329b8` | `0x329d8` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb5a0` | `0xb5c0` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x2040` | `0x2048` | **`+0x8`** |
+| `__TEXT.__oslogstring` | `0x50d7` | `0x50d1` | **`-0x6`** |
+| `__DATA.__objc_ivar` | `0x27dc` | `0x27e0` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2450.75.1.0.0
--  __TEXT.__text: 0x1c9894
 +2450.77.1.1.0
-+  __TEXT.__text: 0x1c9db4
-   __TEXT.__delay_helper: 0x1bc
--  __TEXT.__objc_methlist: 0x1c114
--  __TEXT.__cstring: 0x26da3
--  __TEXT.__gcc_except_tab: 0x9fec
-+  __TEXT.__objc_methlist: 0x1c144
-+  __TEXT.__cstring: 0x26f43
-+  __TEXT.__gcc_except_tab: 0xa024
-   __TEXT.__const: 0x1e48
--  __TEXT.__oslogstring: 0x50d7
-+  __TEXT.__oslogstring: 0x50d1
-   __TEXT.__ustring: 0x18
-   __TEXT.__dlopen_cstrs: 0x56
-   __TEXT.__swift5_typeref: 0x40d
 
-   __TEXT.__swift5_proto: 0x6c
-   __TEXT.__swift5_types: 0x48
-   __TEXT.__swift5_capture: 0x60
--  __TEXT.__unwind_info: 0xa4e8
-+  __TEXT.__unwind_info: 0xa520
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x5b90
-+  __DATA_CONST.__const: 0x5bb8
-   __DATA_CONST.__objc_classlist: 0x1238
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x1e0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb5a0
-+  __DATA_CONST.__objc_selrefs: 0xb5c0
-   __DATA_CONST.__objc_protorefs: 0x60
-   __DATA_CONST.__objc_superrefs: 0xd68
-   __DATA_CONST.__objc_arraydata: 0x310
-   __DATA_CONST.__got: 0x4850
-   __AUTH_CONST.__const: 0x1258
--  __AUTH_CONST.__cfstring: 0x1a640
--  __AUTH_CONST.__objc_const: 0x329b8
-+  __AUTH_CONST.__cfstring: 0x1a720
-+  __AUTH_CONST.__objc_const: 0x329d8
-   __AUTH_CONST.__objc_intobj: 0x288
-   __AUTH_CONST.__objc_arrayobj: 0x360
-   __AUTH_CONST.__objc_doubleobj: 0x30
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x2040
-+  __AUTH_CONST.__auth_got: 0x2048
-   __AUTH.__objc_data: 0x8e88
-   __AUTH.__data: 0x1f0
--  __DATA.__objc_ivar: 0x27dc
-+  __DATA.__objc_ivar: 0x27e0
-   __DATA.__data: 0x183c
-   __DATA.__crash_info: 0x148
-   __DATA.__common: 0x1e0
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12078
--  Symbols:   28360
+-  Symbols:   23912
 -  CStrings:  4299
 +  Functions: 12084
-+  Symbols:   28391
++  Symbols:   23941
 +  CStrings:  4306
- 
 Symbols:
 + -[AVAssetExportSession _simulateMediaServicesWereResetForTesting]
 + -[AVPlaybackItemInspectorLoader _handlePlaybackItemNotification:notificationPayload:]
@@ -181,9 +140,6 @@ Symbols:
 + ___65-[AVPlayer(AVPlayerSupportForMediaPlayer) _resumePlayback:error:]_block_invoke
 + ___block_descriptor_48_e8_32r_e29_v20?0^{OpaqueFigPlayer=}8i16lr32l8
 + _kFigPlayerInterstitialNotification_CurrentEventChangeEventKey
-+ _objc_msgSend$_doesTimeResideInPrimarySegment:atTime:timeMappingOut:
-+ _objc_msgSend$_handlePlaybackItemNotification:notificationPayload:
-+ _objc_msgSend$_processItemReadyForInspection:figErrorCode:
 - GCC_except_table138
 - GCC_except_table217
 - GCC_except_table225
@@ -262,7 +218,6 @@ Symbols:
 - GCC_except_table883
 - _OBJC_IVAR_$_AVPlayerInternal.cachedHasCurrentInterstitialEvent
 - _kFigPlayerInterstitialNotification_CurrentEventChangeEventIDKey
-- _objc_msgSend$_removeInterstitialEventCollector
 CStrings:
 + "<<<< AVPlayer >>>> %s: <%{public}@|%p> setting CurrentInterstitialEvent with id=%@"
 + "Cannot call executePlanWithCompletionHandler more than once"

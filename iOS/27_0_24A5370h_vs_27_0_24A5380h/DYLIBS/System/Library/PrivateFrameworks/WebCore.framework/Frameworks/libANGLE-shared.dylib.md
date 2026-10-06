@@ -2,49 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/WebCore.framework/Frameworks/libANGLE-shared.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x259160` | `0x258d10` | **`-0x450`** |
+| `__TEXT.__cstring` | `0x43cce` | `0x43d25` | **`+0x57`** |
+| `__TEXT.__const` | `0x83f40` | `0x83f00` | **`-0x40`** |
+| `__AUTH_CONST.__const` | `0x15df0` | `0x15db8` | **`-0x38`** |
+| `__TEXT.__unwind_info` | `0x92f8` | `0x92d8` | **`-0x20`** |
+| `__DATA_CONST.__const` | `0x12fd8` | `0x12fc8` | **`-0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x2b58` | `0x2b5c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x259160
--  __TEXT.__const: 0x83f40
--  __TEXT.__cstring: 0x43cce
--  __TEXT.__gcc_except_tab: 0x2b58
-+  __TEXT.__text: 0x258d10
-+  __TEXT.__const: 0x83f00
-+  __TEXT.__cstring: 0x43d25
-+  __TEXT.__gcc_except_tab: 0x2b5c
-   __TEXT.__oslogstring: 0xf
--  __TEXT.__unwind_info: 0x92f8
-+  __TEXT.__unwind_info: 0x92d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0x12fd8
-+  __DATA_CONST.__const: 0x12fc8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x7c8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x15df0
-+  __AUTH_CONST.__const: 0x15db8
-   __AUTH_CONST.__cfstring: 0x9c0
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__auth_got: 0x6c0
+-625.1.20.10.3
++625.1.22.10.3
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 9089
--  Symbols:   25650
--  CStrings:  7052
+-  Symbols:   13252
+-  CStrings:  6974
 +  Functions: 9088
-+  Symbols:   25649
-+  CStrings:  7055
- 
-Sections:
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   13250
++  CStrings:  6977
 Symbols:
 + __ZN2gl27ValidateNoActivePLSConflictEPKNS_7ContextEN5angle10EntryPointENS_14RenderbufferIDE
 + __ZN2gl27ValidateNoActivePLSConflictEPKNS_7ContextEN5angle10EntryPointENS_9TextureIDE
@@ -102,5 +84,4 @@ CStrings:
 - "glInvalidateTextureANGLE"
 - "glTexImage2DExternalANGLE"
 - "unsupported shader version"
-
 ```

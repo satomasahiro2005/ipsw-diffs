@@ -2,17 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/DocumentManagerCore.framework/DocumentManagerCore`
 
-```diff
+### Section Size Changes
 
- 401.0.0.0.0
--  __TEXT.__text: 0x7153c
-+  __TEXT.__text: 0x71554
-   __TEXT.__objc_methlist: 0x4478
-   __TEXT.__const: 0x17f0
-   __TEXT.__gcc_except_tab: 0x6cc
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7153c` | `0x71554` | **`+0x18`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_25fa4c904 -> sub_260b7a904 : 12716 -> 12728
-~ sub_25fa4fab0 -> sub_260b7dabc : 884 -> 888
-~ sub_25fa7c4ac -> sub_260baa4bc : 648 -> 652
-~ sub_25fa7c8dc -> sub_260baa8f0 : 340 -> 344
+~ sub_25f91b904 -> sub_260a56904 : 12716 -> 12728
+~ sub_25f91eab0 -> sub_260a59abc : 884 -> 888
+~ sub_25f94b4ac -> sub_260a864bc : 648 -> 652
+~ sub_25f94b8dc -> sub_260a868f0 : 340 -> 344
 ```

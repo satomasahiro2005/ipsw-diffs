@@ -2,126 +2,64 @@
 
 > `/System/Library/PrivateFrameworks/MobileSafari.framework/MobileSafari`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4eaedc` | `0x4fbc74` | **`+0x10d98`** |
+| `__TEXT.__eh_frame` | `0x8e74` | `0x9654` | **`+0x7e0`** |
+| `__AUTH_CONST.__const` | `0x20e98` | `0x21358` | **`+0x4c0`** |
+| `__TEXT.__cstring` | `0x13529` | `0x13939` | **`+0x410`** |
+| `__AUTH_CONST.__objc_const` | `0x3b328` | `0x3b638` | **`+0x310`** |
+| `__TEXT.__swift5_typeref` | `0xd10e` | `0xd3e6` | **`+0x2d8`** |
+| `__DATA.__data` | `0xe278` | `0xe518` | **`+0x2a0`** |
+| `__TEXT.__unwind_info` | `0x12448` | `0x126c8` | **`+0x280`** |
+| `__TEXT.__const` | `0x1cd24` | `0x1cf34` | **`+0x210`** |
+| `__TEXT.__swift5_reflstr` | `0xc721` | `0xc911` | **`+0x1f0`** |
+| `__TEXT.__constg_swiftt` | `0x11e54` | `0x1201c` | **`+0x1c8`** |
+| `__TEXT.__objc_methlist` | `0x1cb90` | `0x1cd58` | **`+0x1c8`** |
+| `__TEXT.__swift5_capture` | `0x7224` | `0x7384` | **`+0x160`** |
+| `__DATA_CONST.__got` | `0x29a8` | `0x2af0` | **`+0x148`** |
+| `__TEXT.__swift5_fieldmd` | `0x9b44` | `0x9c58` | **`+0x114`** |
+| `__AUTH.__objc_data` | `0x10dd0` | `0x10ee0` | **`+0x110`** |
+| `__AUTH_CONST.__auth_got` | `0x3998` | `0x3aa0` | **`+0x108`** |
+| `__DATA_CONST.__objc_selrefs` | `0x10400` | `0x104a8` | **`+0xa8`** |
+| `__DATA_CONST.__const` | `0x65c8` | `0x6648` | **`+0x80`** |
+| `__TEXT.__oslogstring` | `0x4849` | `0x48b9` | **`+0x70`** |
+| `__TEXT.__swift_as_cont` | `0x4e4` | `0x554` | **`+0x70`** |
+| `__TEXT.__gcc_except_tab` | `0x7840` | `0x77dc` | **`-0x64`** |
+| `__AUTH.__data` | `0x7fb8` | `0x8018` | **`+0x60`** |
+| `__DATA_CONST.__objc_protolist` | `0x788` | `0x7b8` | **`+0x30`** |
+| `__TEXT.__swift_as_ret` | `0x388` | `0x3ac` | **`+0x24`** |
+| `__AUTH_CONST.__cfstring` | `0xab60` | `0xab80` | **`+0x20`** |
+| `__DATA_CONST.__objc_protorefs` | `0x260` | `0x278` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x44c` | `0x460` | **`+0x14`** |
+| `__DATA.__bss` | `0x20e80` | `0x20e90` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0x1840` | `0x1830` | **`-0x10`** |
+| `__DATA_DIRTY.__objc_data` | `0x4a88` | `0x4a98` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x968` | `0x974` | **`+0xc`** |
+| `__TEXT.__swift_as_entry` | `0x4c0` | `0x4cc` | **`+0xc`** |
+| `__DATA.__common` | `0xcc9` | `0xcd1` | **`+0x8`** |
+| `__DATA_CONST.__objc_catlist` | `0x180` | `0x178` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x10b0` | `0x10b8` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x11c0` | `0x11c4` | **`+0x4`** |
+| `__TEXT.__swift5_protos` | `0xd8` | `0xdc` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -625.1.24.10.1
--  __TEXT.__text: 0x4eaedc
--  __TEXT.__objc_methlist: 0x1cb90
--  __TEXT.__const: 0x1cd24
--  __TEXT.__cstring: 0x13529
--  __TEXT.__gcc_except_tab: 0x7840
--  __TEXT.__oslogstring: 0x4849
 +625.1.29.10.3
-+  __TEXT.__text: 0x4fbc74
-+  __TEXT.__objc_methlist: 0x1cd58
-+  __TEXT.__const: 0x1cf34
-+  __TEXT.__cstring: 0x13939
-+  __TEXT.__gcc_except_tab: 0x77dc
-+  __TEXT.__oslogstring: 0x48b9
-   __TEXT.__ustring: 0x2440
-   __TEXT.__dlopen_cstrs: 0x48e
--  __TEXT.__constg_swiftt: 0x11e54
--  __TEXT.__swift5_typeref: 0xd10e
--  __TEXT.__swift5_builtin: 0x44c
--  __TEXT.__swift5_reflstr: 0xc721
--  __TEXT.__swift5_fieldmd: 0x9b44
-+  __TEXT.__constg_swiftt: 0x1201c
-+  __TEXT.__swift5_typeref: 0xd3e6
-+  __TEXT.__swift5_builtin: 0x460
-+  __TEXT.__swift5_reflstr: 0xc911
-+  __TEXT.__swift5_fieldmd: 0x9c58
-   __TEXT.__swift5_assocty: 0x1bb0
--  __TEXT.__swift5_proto: 0x11c0
--  __TEXT.__swift5_types: 0x968
--  __TEXT.__swift5_capture: 0x7224
--  __TEXT.__swift_as_entry: 0x4c0
--  __TEXT.__swift_as_ret: 0x388
--  __TEXT.__swift_as_cont: 0x4e4
-+  __TEXT.__swift5_proto: 0x11c4
-+  __TEXT.__swift5_types: 0x974
-+  __TEXT.__swift5_capture: 0x7384
-+  __TEXT.__swift_as_entry: 0x4cc
-+  __TEXT.__swift_as_ret: 0x3ac
-+  __TEXT.__swift_as_cont: 0x554
-   __TEXT.__swift5_mpenum: 0x5c
--  __TEXT.__swift5_protos: 0xd8
--  __TEXT.__unwind_info: 0x12448
--  __TEXT.__eh_frame: 0x8e74
-+  __TEXT.__swift5_protos: 0xdc
-+  __TEXT.__unwind_info: 0x126c8
-+  __TEXT.__eh_frame: 0x9654
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x65c8
--  __DATA_CONST.__objc_classlist: 0x10b0
--  __DATA_CONST.__objc_catlist: 0x180
--  __DATA_CONST.__objc_protolist: 0x788
-+  __DATA_CONST.__const: 0x6648
-+  __DATA_CONST.__objc_classlist: 0x10b8
-+  __DATA_CONST.__objc_catlist: 0x178
-+  __DATA_CONST.__objc_protolist: 0x7b8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x10400
--  __DATA_CONST.__objc_protorefs: 0x260
-+  __DATA_CONST.__objc_selrefs: 0x104a8
-+  __DATA_CONST.__objc_protorefs: 0x278
-   __DATA_CONST.__objc_superrefs: 0x7d0
-   __DATA_CONST.__objc_arraydata: 0x2e8
--  __DATA_CONST.__got: 0x29a8
--  __AUTH_CONST.__const: 0x20e98
--  __AUTH_CONST.__cfstring: 0xab60
--  __AUTH_CONST.__objc_const: 0x3b328
-+  __DATA_CONST.__got: 0x2af0
-+  __AUTH_CONST.__const: 0x21358
-+  __AUTH_CONST.__cfstring: 0xab80
-+  __AUTH_CONST.__objc_const: 0x3b638
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x5e8
-   __AUTH_CONST.__objc_arrayobj: 0x258
-   __AUTH_CONST.__objc_doubleobj: 0x130
--  __AUTH_CONST.__auth_got: 0x3998
--  __AUTH.__objc_data: 0x10dd0
--  __AUTH.__data: 0x7fb8
-+  __AUTH_CONST.__auth_got: 0x3aa0
-+  __AUTH.__objc_data: 0x10ee0
-+  __AUTH.__data: 0x8018
-   __DATA.__objc_ivar: 0x1ce0
--  __DATA.__data: 0xe278
-+  __DATA.__data: 0xe518
-   __DATA.__objc_stublist: 0x30
--  __DATA.__bss: 0x20e80
--  __DATA.__common: 0xcc9
--  __DATA_DIRTY.__objc_data: 0x4a88
--  __DATA_DIRTY.__data: 0x1840
-+  __DATA.__bss: 0x20e90
-+  __DATA.__common: 0xcd1
-+  __DATA_DIRTY.__objc_data: 0x4a98
-+  __DATA_DIRTY.__data: 0x1830
-   __DATA_DIRTY.__bss: 0x88
-   __DATA_DIRTY.__common: 0x258
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
 
-   - /System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication
-   - /System/Library/Frameworks/MapKit.framework/MapKit
-   - /System/Library/Frameworks/MarketplaceKit.framework/MarketplaceKit
 +  - /System/Library/Frameworks/Network.framework/Network
-   - /System/Library/Frameworks/PencilKit.framework/PencilKit
-   - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
-   - /System/Library/Frameworks/SharedWithYou.framework/SharedWithYou
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 26894
--  Symbols:   26197
+-  Symbols:   20258
 -  CStrings:  2694
 +  Functions: 27078
-+  Symbols:   26282
++  Symbols:   20320
 +  CStrings:  2709
- 
 Symbols:
 + -[SFTipsCoordinator presentClusterOnboardingTipFrom:in:]
 + -[SFTipsCoordinator userDidOpenRelatedTabsViewWithCompletion:]
@@ -181,35 +119,6 @@ Symbols:
 + _flat unique 12MobileSafari39SFFluidCollectionViewSpringLoadDelegate_pq_4ItemAA0cdE10SupportingPRts_x7SectionAERtsq0_13SupplementaryAERtsXP
 + _flat unique So31UISpringLoadedInteractionEffect_p
 + _flat unique So33UISpringLoadedInteractionBehavior_p
-+ _objc_msgSend$_blinkEffect
-+ _objc_msgSend$_defaultInteractionBehavior
-+ _objc_msgSend$_postClusteringAccessoryButtonDidBecomeVisibleNotificationIfNeeded
-+ _objc_msgSend$_setEdgeVisibility:
-+ _objc_msgSend$_sf_isFullScreenHeight
-+ _objc_msgSend$_sf_isFullScreenWidth
-+ _objc_msgSend$appearingOrDisappearingViewController
-+ _objc_msgSend$beginChildAppearanceTransition:animated:
-+ _objc_msgSend$endChildAppearanceTransition
-+ _objc_msgSend$initWithInteractionBehavior:interactionEffect:activationHandler:
-+ _objc_msgSend$initWithWebView:parentViewController:significantChangePresenter:
-+ _objc_msgSend$interaction:didChangeWithContext:
-+ _objc_msgSend$interactionDidFinish:
-+ _objc_msgSend$isAppearingOrAppeared
-+ _objc_msgSend$maximumPinnedItemCount
-+ _objc_msgSend$performWithAppearanceCallbacksIfNeededFor:isAppearing:actions:
-+ _objc_msgSend$presentClusterOnboardingTipFrom:in:
-+ _objc_msgSend$presentIfNeededWithId:title:description:image:in:completionHandler:
-+ _objc_msgSend$safari_supportsOpenInNewWindow
-+ _objc_msgSend$setAppearingOrDisappearingViewController:
-+ _objc_msgSend$setIsAppearingOrAppeared:
-+ _objc_msgSend$setPassthroughViews:
-+ _objc_msgSend$setPermittedArrowDirections:
-+ _objc_msgSend$setTargetView:
-+ _objc_msgSend$shouldAllowInteraction:withContext:
-+ _objc_msgSend$shouldPromoteRecentSearchesStartPageModuleBelowFavorites
-+ _objc_msgSend$startPageViewControllerWallpaperDidUpdate:
-+ _objc_msgSend$userDidOpenRelatedTabsViewWithCompletion:
-+ _objc_msgSend$wasLaunchedOnPreRaveOSVersion
 + _symbolic $s12MobileSafari39SFFluidCollectionViewSpringLoadDelegateP
 + _symbolic So16UIViewControllerCIgg_
 + _symbolic So16UIViewControllerCSgXwz_Xx
@@ -258,12 +167,6 @@ Symbols:
 - ___swift_memcpy200_8
 - ___unnamed_63
 - ___unnamed_65
-- _objc_msgSend$_fixedUserInterfaceStyle
-- _objc_msgSend$_setFixedUserInterfaceStyle:
-- _objc_msgSend$initWithWebView:parentViewController:
-- _objc_msgSend$setSafari_overrideUserInterfaceStyle:
-- _objc_msgSend$shouldPromoteRecentSearchesStartPageModuleBellowFavorites
-- _objc_msgSend$startCreatingNotifyMeWhenPrefillWithUserQuery:
 CStrings:
 + "Drop destination changed to %{public}s, placement: %{public}s"
 + "MobileSafari.SpringLoadCoordinator"

@@ -2,93 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/Navigation.framework/Navigation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21ec9c` | `0x220378` | **`+0x16dc`** |
+| `__TEXT.__oslogstring` | `0xfe79` | `0xffe4` | **`+0x16b`** |
+| `__TEXT.__objc_methlist` | `0x1228c` | `0x12394` | **`+0x108`** |
+| `__AUTH_CONST.__objc_const` | `0x22100` | `0x221a8` | **`+0xa8`** |
+| `__DATA.__data` | `0x7aa8` | `0x7b48` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0x2064f` | `0x206d7` | **`+0x88`** |
+| `__DATA_CONST.__const` | `0x4018` | `0x4060` | **`+0x48`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8dd0` | `0x8e18` | **`+0x48`** |
+| `__AUTH_CONST.__cfstring` | `0xce00` | `0xce40` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x7808` | `0x7848` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0xb718` | `0xb738` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x13d8` | `0x13f8` | **`+0x20`** |
+| `__TEXT.__const` | `0xdc7c` | `0xdc9c` | **`+0x20`** |
+| `__TEXT.__swift5_typeref` | `0x388a` | `0x38a8` | **`+0x1e`** |
+| `__AUTH_CONST.__auth_got` | `0x1cc0` | `0x1cc8` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x1574` | `0x1578` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2435.30.6.12.5
--  __TEXT.__text: 0x21ec9c
--  __TEXT.__objc_methlist: 0x1228c
--  __TEXT.__const: 0xdc7c
 +2435.30.6.12.9
-+  __TEXT.__text: 0x220378
-+  __TEXT.__objc_methlist: 0x12394
-+  __TEXT.__const: 0xdc9c
-   __TEXT.__dlopen_cstrs: 0x104
-   __TEXT.__constg_swiftt: 0x4978
--  __TEXT.__swift5_typeref: 0x388a
-+  __TEXT.__swift5_typeref: 0x38a8
-   __TEXT.__swift5_builtin: 0x230
-   __TEXT.__swift5_reflstr: 0x35e6
-   __TEXT.__swift5_fieldmd: 0x4598
-   __TEXT.__swift5_assocty: 0x600
-   __TEXT.__swift5_proto: 0x968
-   __TEXT.__swift5_types: 0x544
--  __TEXT.__cstring: 0x2064f
-+  __TEXT.__cstring: 0x206d7
-   __TEXT.__swift5_capture: 0xf90
-   __TEXT.__swift_as_entry: 0x1a4
-   __TEXT.__swift_as_ret: 0x170
-   __TEXT.__swift_as_cont: 0x358
--  __TEXT.__oslogstring: 0xfe79
-+  __TEXT.__oslogstring: 0xffe4
-   __TEXT.__swift5_protos: 0x4c
-   __TEXT.__swift5_mpenum: 0x78
-   __TEXT.__gcc_except_tab: 0x4e44
-   __TEXT.__ustring: 0x222
--  __TEXT.__unwind_info: 0x7808
-+  __TEXT.__unwind_info: 0x7848
-   __TEXT.__eh_frame: 0x5344
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4018
-+  __DATA_CONST.__const: 0x4060
-   __DATA_CONST.__objc_classlist: 0xa38
-   __DATA_CONST.__objc_catlist: 0x140
-   __DATA_CONST.__objc_protolist: 0x320
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8dd0
-+  __DATA_CONST.__objc_selrefs: 0x8e18
-   __DATA_CONST.__objc_protorefs: 0x158
-   __DATA_CONST.__objc_superrefs: 0x528
-   __DATA_CONST.__objc_arraydata: 0x2e0
--  __DATA_CONST.__got: 0x13d8
--  __AUTH_CONST.__const: 0xb718
--  __AUTH_CONST.__cfstring: 0xce00
--  __AUTH_CONST.__objc_const: 0x22100
-+  __DATA_CONST.__got: 0x13f8
-+  __AUTH_CONST.__const: 0xb738
-+  __AUTH_CONST.__cfstring: 0xce40
-+  __AUTH_CONST.__objc_const: 0x221a8
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x570
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_arrayobj: 0x180
-   __AUTH_CONST.__objc_floatobj: 0x10
--  __AUTH_CONST.__auth_got: 0x1cc0
-+  __AUTH_CONST.__auth_got: 0x1cc8
-   __AUTH.__objc_data: 0x3280
-   __AUTH.__data: 0x46e0
--  __DATA.__objc_ivar: 0x1574
--  __DATA.__data: 0x7aa8
-+  __DATA.__objc_ivar: 0x1578
-+  __DATA.__data: 0x7b48
-   __DATA.__bss: 0x127e0
-   __DATA.__common: 0x2b0
-   __DATA_DIRTY.__objc_data: 0x40c0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11096
--  Symbols:   16976
+-  Symbols:   12951
 -  CStrings:  4004
 +  Functions: 11125
-+  Symbols:   17015
++  Symbols:   12981
 +  CStrings:  4011
- 
 Symbols:
 + +[MNVoiceLanguageUtil _disabledSiriLanguages]
 + -[MNCoreLocationProvider headingOrientation]
@@ -286,15 +233,6 @@ Symbols:
 + ___56-[MNNavigationServiceRemoteProxy setHeadingOrientation:]_block_invoke
 + ___block_descriptor_36_e5_v8?0l
 + ___block_descriptor_44_e8_32w_e5_v8?0lw32l8
-+ _objc_msgSend$_applyVoiceTypeConfigOverridesToVoice:
-+ _objc_msgSend$_disabledSiriLanguages
-+ _objc_msgSend$geo_recentSoCHistoryWithBatteryChargesWh:socUpdateDates:
-+ _objc_msgSend$headingOrientation
-+ _objc_msgSend$numberWithUnsignedInt:
-+ _objc_msgSend$setHeadingOrientation:
-+ _objc_msgSend$setRecentSocHistory:
-+ _objc_msgSend$updateDeviceOrientation:
-+ _objc_msgSend$vehicleStateHistory
 + _symbolic SayypG
 + _symbolic _____y_SayypG______pG 11GeoServices9GEOConfigV3KeyV 10Navigation0E7ConfigsC01_D9NamespaceP
 - GCC_except_table1059

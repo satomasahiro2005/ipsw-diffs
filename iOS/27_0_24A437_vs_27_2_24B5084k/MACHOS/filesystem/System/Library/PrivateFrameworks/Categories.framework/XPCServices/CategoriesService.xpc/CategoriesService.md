@@ -2,15 +2,14 @@
 
 > `/System/Library/PrivateFrameworks/Categories.framework/XPCServices/CategoriesService.xpc/CategoriesService`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -58.0.1.0.0
 +58.1.3.0.0
-   __TEXT.__text: 0x4fe8
-   __TEXT.__auth_stubs: 0x410
-   __TEXT.__objc_stubs: 0xec0
 ```

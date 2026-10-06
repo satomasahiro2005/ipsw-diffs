@@ -2,68 +2,52 @@
 
 > `/usr/libexec/anomalydetectiond`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x36fcdc` | `0x373ca0` | **`+0x3fc4`** |
+| `__TEXT.__cstring` | `0x1c922` | `0x1cb71` | **`+0x24f`** |
+| `__TEXT.__oslogstring` | `0x11b5f` | `0x11c3b` | **`+0xdc`** |
+| `__TEXT.__objc_methtype` | `0x5f74` | `0x601d` | **`+0xa9`** |
+| `__DATA_CONST.__cfstring` | `0x6a60` | `0x6a00` | **`-0x60`** |
+| `__TEXT.__gcc_except_tab` | `0x10560` | `0x105bc` | **`+0x5c`** |
+| `__TEXT.__const` | `0xfcbe` | `0xfcde` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0xc840` | `0xc858` | **`+0x18`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_ivar`
+- `__DATA.__objc_selrefs`
 - `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_ivar`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
 -170.0.0.0.0
--  __TEXT.__text: 0x36fcdc
 +173.0.0.0.0
-+  __TEXT.__text: 0x373ca0
-   __TEXT.__auth_stubs: 0x1840
-   __TEXT.__objc_stubs: 0x9480
-   __TEXT.__objc_methlist: 0x8d98
--  __TEXT.__gcc_except_tab: 0x10560
--  __TEXT.__const: 0xfcbe
--  __TEXT.__cstring: 0x1c922
--  __TEXT.__oslogstring: 0x11b5f
-+  __TEXT.__gcc_except_tab: 0x105bc
-+  __TEXT.__const: 0xfcde
-+  __TEXT.__cstring: 0x1cb71
-+  __TEXT.__oslogstring: 0x11c3b
-   __TEXT.__objc_classname: 0x1070
--  __TEXT.__objc_methtype: 0x5f74
-+  __TEXT.__objc_methtype: 0x601d
-   __TEXT.__objc_methname: 0xc220
-   __TEXT.__ustring: 0x10ae
--  __TEXT.__unwind_info: 0xc840
-+  __TEXT.__unwind_info: 0xc858
-   __TEXT.__eh_frame: 0x670
-   __DATA_CONST.__const: 0x28848
--  __DATA_CONST.__cfstring: 0x6a60
-+  __DATA_CONST.__cfstring: 0x6a00
-   __DATA_CONST.__objc_classlist: 0x4c8
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x128
 
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 17220
 +  Functions: 17223
-   Symbols:   608
+
 -  CStrings:  9354
 +  CStrings:  9381
- 
 CStrings:
 + "[PU] config-1,%f,config-2,%f,config-3,%f,config-4,%d,config-5,%f,config-6,%f,config-7,%d,config-8,%f,config-9,%f,config-10,%d,config-11,%f,config-12,%f,config-13,%f,config-14,%f,config-15,%f,config-16,%d,config-17,%f,config-18,%f"
 + "[PU] stiction detected: axis %d, %llu us above %f g"

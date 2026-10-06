@@ -2,74 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/HangTracer.framework/HangTracer`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17524` | `0x1837c` | **`+0xe58`** |
+| `__AUTH_CONST.__objc_const` | `0x1a98` | `0x1cb8` | **`+0x220`** |
+| `__TEXT.__objc_methlist` | `0x9fc` | `0xb6c` | **`+0x170`** |
+| `__TEXT.__oslogstring` | `0x2bf4` | `0x2d1c` | **`+0x128`** |
+| `__TEXT.__cstring` | `0x45aa` | `0x469d` | **`+0xf3`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa58` | `0xb48` | **`+0xf0`** |
+| `__DATA.__data` | `0x220` | `0x30c` | **`+0xec`** |
+| `__AUTH_CONST.__cfstring` | `0x5c60` | `0x5d20` | **`+0xc0`** |
+| `__DATA_CONST.__const` | `0x17f8` | `0x1890` | **`+0x98`** |
+| `__AUTH_CONST.__const` | `0x540` | `0x5c0` | **`+0x80`** |
+| `__DATA.__bss` | `0xe0` | `0x138` | **`+0x58`** |
+| `__TEXT.__lazy_helpers` | `—` | `0x54` | **`+0x54`** |
+| `__AUTH.__objc_data` | `0x140` | `0x190` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x5d0` | `0x618` | **`+0x48`** |
+| `__AUTH_CONST.__auth_got` | `0x5f0` | `0x610` | **`+0x20`** |
+| `__DATA_CONST.__objc_protolist` | `—` | `0x10` | **`+0x10`** |
+| `__TEXT.__const` | `0x268` | `0x258` | **`-0x10`** |
+| `__AUTH_CONST.__lazy_load_got` | `—` | `0x8` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x1f0` | `0x1f8` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x28` | `0x30` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -424.0.0.0.0
--  __TEXT.__text: 0x17524
--  __TEXT.__objc_methlist: 0x9fc
--  __TEXT.__const: 0x268
 +426.0.0.0.0
-+  __TEXT.__text: 0x1837c
-+  __TEXT.__lazy_helpers: 0x54
-+  __TEXT.__objc_methlist: 0xb6c
-+  __TEXT.__const: 0x258
-   __TEXT.__gcc_except_tab: 0x214
--  __TEXT.__cstring: 0x45aa
--  __TEXT.__oslogstring: 0x2bf4
-+  __TEXT.__cstring: 0x469d
-+  __TEXT.__oslogstring: 0x2d1c
-   __TEXT.__ustring: 0xe0
--  __TEXT.__unwind_info: 0x5d0
-+  __TEXT.__unwind_info: 0x618
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x17f8
--  __DATA_CONST.__objc_classlist: 0x28
-+  __DATA_CONST.__const: 0x1890
-+  __DATA_CONST.__objc_classlist: 0x30
-+  __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa58
-+  __DATA_CONST.__objc_selrefs: 0xb48
-   __DATA_CONST.__objc_superrefs: 0x20
--  __DATA_CONST.__got: 0x1f0
--  __AUTH_CONST.__const: 0x540
--  __AUTH_CONST.__cfstring: 0x5c60
--  __AUTH_CONST.__objc_const: 0x1a98
-+  __DATA_CONST.__got: 0x1f8
-+  __AUTH_CONST.__const: 0x5c0
-+  __AUTH_CONST.__cfstring: 0x5d20
-+  __AUTH_CONST.__objc_const: 0x1cb8
-+  __AUTH_CONST.__lazy_load_got: 0x8
-   __AUTH_CONST.__objc_intobj: 0x78
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x5f0
--  __AUTH.__objc_data: 0x140
-+  __AUTH_CONST.__auth_got: 0x610
-+  __AUTH.__objc_data: 0x190
-   __DATA.__objc_ivar: 0x1f4
--  __DATA.__data: 0x220
-+  __DATA.__data: 0x30c
-   __DATA.__common: 0x18
--  __DATA.__bss: 0xe0
-+  __DATA.__bss: 0x138
-   __DATA_DIRTY.__objc_data: 0x50
-   __DATA_DIRTY.__bss: 0x110
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libapp_launch_measurement.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 589
--  Symbols:   1510
+-  Symbols:   1315
 -  CStrings:  1001
 +  Functions: 606
-+  Symbols:   1569
++  Symbols:   1368
 +  CStrings:  1012
- 
 Symbols:
 + -[HTBacklightHostObserver backlight:didCompleteUpdateToState:forEvent:]
 + GCC_except_table47
@@ -134,12 +104,6 @@ Symbols:
 + _kHTCoreAnalyticsTimeSinceDisplayChangeMs
 + _lazyLoadFlag$BacklightServices
 + _memcpy
-+ _objc_msgSend$addObserver:
-+ _objc_msgSend$backlightState
-+ _objc_msgSend$changeRequest
-+ _objc_msgSend$numberWithInteger:
-+ _objc_msgSend$sharedBacklight
-+ _objc_msgSend$timestamp
 - GCC_except_table41
 - GCC_except_table43
 - GCC_except_table45

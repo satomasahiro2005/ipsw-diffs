@@ -2,53 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/PersonalizedSensing.framework/XPCServices/PersonalizedSensingService.xpc/PersonalizedSensingService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1395d8` | `0x139678` | **`+0xa0`** |
+| `__TEXT.__eh_frame` | `0x40e4` | `0x410c` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x3770` | `0x3778` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
 - `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
- 502.0.8.0.0
--  __TEXT.__text: 0x13292c
-+  __TEXT.__text: 0x1329cc
-   __TEXT.__auth_stubs: 0x2490
-   __TEXT.__objc_stubs: 0xb240
-   __TEXT.__objc_methlist: 0x6c10
-
-   __TEXT.__swift_as_cont: 0x35c
-   __TEXT.__swift5_mpenum: 0x30
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__unwind_info: 0x47c0
--  __TEXT.__eh_frame: 0x40f4
-+  __TEXT.__unwind_info: 0x47c8
-+  __TEXT.__eh_frame: 0x411c
-   __DATA_CONST.__const: 0x9dc1
-   __DATA_CONST.__cfstring: 0xecc0
-   __DATA_CONST.__objc_classlist: 0x478
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5766
 -  Symbols:   15608
 +  Functions: 5767
 +  Symbols:   15609
-   CStrings:  6083
- 
 Symbols:
 + _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVySS7weekday_SS9timeOfDaySi5counttG_Tg5
 + _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVySSG_Tg5

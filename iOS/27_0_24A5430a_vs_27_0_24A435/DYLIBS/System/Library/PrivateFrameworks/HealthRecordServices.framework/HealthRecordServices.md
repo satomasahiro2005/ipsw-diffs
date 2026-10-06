@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/HealthRecordServices.framework/HealthRecordServices`
 
-```diff
+### Section Size Changes
 
- 7027.0.72.2.7
--  __TEXT.__text: 0x86d88
-+  __TEXT.__text: 0x86d94
-   __TEXT.__objc_methlist: 0x576c
-   __TEXT.__const: 0x801c
-   __TEXT.__cstring: 0x47b9
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x86d88` | `0x86d94` | **`+0xc`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2828d0c24 -> sub_283604c24 : 344 -> 348
-~ sub_2828d68ec -> sub_28360a8f0 : 2364 -> 2372
+~ sub_2827c1c24 -> sub_2834d3c24 : 344 -> 348
+~ sub_2827c78ec -> sub_2834d98f0 : 2364 -> 2372
 ```

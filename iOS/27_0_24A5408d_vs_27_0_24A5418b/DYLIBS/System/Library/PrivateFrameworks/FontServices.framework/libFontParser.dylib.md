@@ -2,43 +2,25 @@
 
 > `/System/Library/PrivateFrameworks/FontServices.framework/libFontParser.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c9100` | `0x1c902c` | **`-0xd4`** |
+| `__AUTH_CONST.__weak_auth_got` | `0x50` | `0x40` | **`-0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x79b4` | `0x79a8` | **`-0xc`** |
+
+### Other Changes
+
 ```diff
 
 -460.0.0.0.0
--  __TEXT.__text: 0x1c9100
 +459.0.0.0.0
-+  __TEXT.__text: 0x1c902c
-   __TEXT.__lazy_helpers: 0xfc
-   __TEXT.__objc_methlist: 0x730
-   __TEXT.__const: 0x7c680
 
-   __TEXT.__swift5_assocty: 0x1258
-   __TEXT.__swift5_protos: 0x64
-   __TEXT.__swift5_capture: 0x35c
--  __TEXT.__gcc_except_tab: 0x79b4
-+  __TEXT.__gcc_except_tab: 0x79a8
-   __TEXT.__oslogstring: 0xc4
-   __TEXT.__ustring: 0x20
-   __TEXT.__unwind_info: 0x7538
-
-   __AUTH_CONST.__const: 0x31550
-   __AUTH_CONST.__cfstring: 0x2100
-   __AUTH_CONST.__objc_const: 0x948
--  __AUTH_CONST.__weak_auth_got: 0x50
-+  __AUTH_CONST.__weak_auth_got: 0x40
-   __AUTH_CONST.__lazy_load_got: 0x18
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__auth_got: 0x15d8
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8403
--  Symbols:   6739
+-  Symbols:   6606
 +  Functions: 8398
-+  Symbols:   6732
-   CStrings:  5507
- 
++  Symbols:   6599
 Symbols:
 + __ZN22TInlineBufferAllocatorIdLm30EE8allocateEm
 + __ZN22TInlineBufferAllocatorIsLm30EE8allocateEm

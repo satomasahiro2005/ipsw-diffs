@@ -2,59 +2,32 @@
 
 > `/usr/lib/swift/libswift_Concurrency.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x75218` | `0x75ce4` | **`+0xacc`** |
+| `__TEXT.__eh_frame` | `0x6448` | `0x65d8` | **`+0x190`** |
+| `__TEXT.__unwind_info` | `0x2b80` | `0x2c08` | **`+0x88`** |
+| `__TEXT.__const` | `0x306a` | `0x30aa` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x2226` | `0x2266` | **`+0x40`** |
+| `__TEXT.__swift_as_cont` | `0x4ec` | `0x500` | **`+0x14`** |
+| `__TEXT.__swift_as_entry` | `0x2a0` | `0x2b0` | **`+0x10`** |
+| `__TEXT.__swift_as_ret` | `0x33c` | `0x34c` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x75218
-+  __TEXT.__text: 0x75ce4
-   __TEXT.__init_offsets: 0xc
--  __TEXT.__const: 0x306a
--  __TEXT.__cstring: 0x2226
-+  __TEXT.__const: 0x30aa
-+  __TEXT.__cstring: 0x2266
-   __TEXT.__oslogstring: 0x667
-   __TEXT.__swift5_typeref: 0xbdd
-   __TEXT.__swift5_capture: 0x240
+-6.4.0.23.102
++6.4.0.25.5
 
-   __TEXT.__swift5_proto: 0x21c
-   __TEXT.__swift5_types: 0x184
-   __TEXT.__swift5_types2: 0xc
--  __TEXT.__swift_as_entry: 0x2a0
--  __TEXT.__swift_as_ret: 0x33c
--  __TEXT.__swift_as_cont: 0x4ec
--  __TEXT.__unwind_info: 0x2b80
--  __TEXT.__eh_frame: 0x6448
-+  __TEXT.__swift_as_entry: 0x2b0
-+  __TEXT.__swift_as_ret: 0x34c
-+  __TEXT.__swift_as_cont: 0x500
-+  __TEXT.__unwind_info: 0x2c08
-+  __TEXT.__eh_frame: 0x65d8
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/system/libdispatch.dylib
 -  Functions: 3028
--  Symbols:   8451
+-  Symbols:   5798
 -  CStrings:  216
 +  Functions: 3045
-+  Symbols:   8500
++  Symbols:   5827
 +  CStrings:  217
- 
-Sections:
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
 Symbols:
 + _$sScS8_StorageC4nextxSgyYaFADyYaXEfU_
 + _$sScS8_StorageC4nextxSgyYaFADyYaXEfU_TA
@@ -197,5 +170,4 @@ CStrings:
 + "Swift/ArrayBufferProtocol.swift"
 + "invalid Collection: count differed in successive traversals"
 - "Swift/EmptyCollection.swift"
-
 ```

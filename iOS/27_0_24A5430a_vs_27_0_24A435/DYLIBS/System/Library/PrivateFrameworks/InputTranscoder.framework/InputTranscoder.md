@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/InputTranscoder.framework/InputTranscoder`
 
-```diff
+### Section Size Changes
 
- 110.0.0.0.0
--  __TEXT.__text: 0x2b04c
-+  __TEXT.__text: 0x2b080
-   __TEXT.__const: 0x3878
-   __TEXT.__gcc_except_tab: 0x2478
-   __TEXT.__cstring: 0xecc
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2b04c` | `0x2b080` | **`+0x34`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__16vectorIPK10_LXLexiconNS_9allocatorIS3_EEE24__emplace_back_slow_pathIJRKS3_EEEPS3_DpOT_ : 184 -> 176
 ~ __ZNSt3__16vectorINS_4pairIN3nlp11CFScopedPtrIPK9_LXCursorEEbEENS_9allocatorIS8_EEE24__emplace_back_slow_pathIJS8_EEEPS8_DpOT_ : 228 -> 224

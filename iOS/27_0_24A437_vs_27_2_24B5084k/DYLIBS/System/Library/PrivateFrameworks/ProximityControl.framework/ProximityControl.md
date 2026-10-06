@@ -2,87 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/ProximityControl.framework/ProximityControl`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x144ec` | `0x1b1e0` | **`+0x6cf4`** |
+| `__DATA.__bss` | `0x1c20` | `0x38a0` | **`+0x1c80`** |
+| `__TEXT.__const` | `0x10f4` | `0x1f34` | **`+0xe40`** |
+| `__AUTH_CONST.__const` | `0x708` | `0x1090` | **`+0x988`** |
+| `__TEXT.__eh_frame` | `0x3c0` | `0xa30` | **`+0x670`** |
+| `__TEXT.__constg_swiftt` | `0x494` | `0x950` | **`+0x4bc`** |
+| `__AUTH.__objc_data` | `0x5c0` | `0x9c0` | **`+0x400`** |
+| `__TEXT.__swift5_typeref` | `0x3e6` | `0x792` | **`+0x3ac`** |
+| `__TEXT.__unwind_info` | `0x7e8` | `0xb58` | **`+0x370`** |
+| `__DATA.__data` | `0x940` | `0xc08` | **`+0x2c8`** |
+| `__AUTH_CONST.__objc_const` | `0x2b80` | `0x2da0` | **`+0x220`** |
+| `__TEXT.__swift5_fieldmd` | `0x31c` | `0x524` | **`+0x208`** |
+| `__AUTH_CONST.__auth_got` | `0x5b8` | `0x758` | **`+0x1a0`** |
+| `__AUTH.__data` | `0x288` | `0x3c8` | **`+0x140`** |
+| `__TEXT.__swift5_proto` | `0xe0` | `0x1c4` | **`+0xe4`** |
+| `__TEXT.__oslogstring` | `0x10` | `0xf3` | **`+0xe3`** |
+| `__TEXT.__swift5_reflstr` | `0xdb` | `0x17e` | **`+0xa3`** |
+| `__TEXT.__swift5_assocty` | `0xa0` | `0x140` | **`+0xa0`** |
+| `__TEXT.__swift5_capture` | `0x10` | `0xa4` | **`+0x94`** |
+| `__TEXT.__swift5_types` | `0x58` | `0xb0` | **`+0x58`** |
+| `__DATA.__common` | `0x50` | `0xa0` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x2c0` | `0x310` | **`+0x50`** |
+| `__TEXT.__swift_as_cont` | `0x24` | `0x54` | **`+0x30`** |
+| `__DATA.__objc_stublist` | `0x28` | `0x50` | **`+0x28`** |
+| `__TEXT.__cstring` | `0x1a1b` | `0x1a3b` | **`+0x20`** |
+| `__TEXT.__swift_as_ret` | `0xc` | `0x24` | **`+0x18`** |
+| `__TEXT.__swift_as_entry` | `0xc` | `0x1c` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -376.1.2.0.0
--  __TEXT.__text: 0x13968
 +376.10.28.0.0
-+  __TEXT.__text: 0x19f98
-   __TEXT.__objc_methlist: 0x149c
--  __TEXT.__const: 0x10f4
--  __TEXT.__cstring: 0x1a1b
-+  __TEXT.__const: 0x1f34
-+  __TEXT.__cstring: 0x1a3b
-   __TEXT.__gcc_except_tab: 0x50
--  __TEXT.__swift5_typeref: 0x3e6
--  __TEXT.__swift5_capture: 0x10
--  __TEXT.__constg_swiftt: 0x494
--  __TEXT.__swift5_reflstr: 0xdb
--  __TEXT.__swift5_fieldmd: 0x31c
--  __TEXT.__swift5_proto: 0xe0
--  __TEXT.__swift5_types: 0x58
--  __TEXT.__oslogstring: 0x10
--  __TEXT.__swift5_assocty: 0xa0
--  __TEXT.__swift_as_entry: 0xc
--  __TEXT.__swift_as_ret: 0xc
--  __TEXT.__swift_as_cont: 0x24
--  __TEXT.__unwind_info: 0xa20
--  __TEXT.__eh_frame: 0x3c0
-+  __TEXT.__swift5_typeref: 0x792
-+  __TEXT.__swift5_capture: 0xa4
-+  __TEXT.__constg_swiftt: 0x950
-+  __TEXT.__swift5_reflstr: 0x17e
-+  __TEXT.__swift5_fieldmd: 0x524
-+  __TEXT.__swift5_proto: 0x1c4
-+  __TEXT.__swift5_types: 0xb0
-+  __TEXT.__oslogstring: 0xf3
-+  __TEXT.__swift5_assocty: 0x140
-+  __TEXT.__swift_as_entry: 0x1c
-+  __TEXT.__swift_as_ret: 0x24
-+  __TEXT.__swift_as_cont: 0x54
-+  __TEXT.__unwind_info: 0xde8
-+  __TEXT.__eh_frame: 0xa30
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_protorefs: 0x40
-   __DATA_CONST.__objc_classrefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x90
--  __DATA_CONST.__got: 0x2c0
--  __AUTH_CONST.__const: 0x708
-+  __DATA_CONST.__got: 0x310
-+  __AUTH_CONST.__const: 0x1090
-   __AUTH_CONST.__cfstring: 0x11e0
--  __AUTH_CONST.__objc_const: 0x2b80
--  __AUTH_CONST.__auth_got: 0x5b8
--  __AUTH.__objc_data: 0x5c0
--  __AUTH.__data: 0x288
-+  __AUTH_CONST.__objc_const: 0x2da0
-+  __AUTH_CONST.__auth_got: 0x758
-+  __AUTH.__objc_data: 0x9c0
-+  __AUTH.__data: 0x3c8
-   __DATA.__objc_ivar: 0x124
--  __DATA.__data: 0x940
--  __DATA.__objc_stublist: 0x28
--  __DATA.__common: 0x50
-+  __DATA.__data: 0xc08
-+  __DATA.__objc_stublist: 0x50
-+  __DATA.__common: 0xa0
-   __DATA_DIRTY.__objc_data: 0x550
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/ContactsUI.framework/ContactsUI
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 803
--  Symbols:   1436
+-  Symbols:   1188
 -  CStrings:  249
 +  Functions: 1139
-+  Symbols:   1605
++  Symbols:   1357
 +  CStrings:  255
- 
 Symbols:
 + _OBJC_CLASS_$__TtCO16ProximityControl36PCProximityHandoffServiceInvocations18GetHandoffSettings
 + _OBJC_CLASS_$__TtCO16ProximityControl36PCProximityHandoffServiceInvocations18SetHandoffSettings

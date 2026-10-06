@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/TinCanShared.framework/TinCanShared`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_0 : 20 -> 12

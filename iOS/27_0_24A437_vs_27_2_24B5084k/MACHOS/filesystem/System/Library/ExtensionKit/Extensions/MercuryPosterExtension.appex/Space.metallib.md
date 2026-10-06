@@ -2,20 +2,14 @@
 
 > `/System/Library/ExtensionKit/Extensions/MercuryPosterExtension.appex/Space.metallib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__reflection`
-- `__TEXT.__vertex`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__vertex` | `0x53f90` | `0x45410` | **`-0xeb80`** |
+
+### Same-size Content Changes
+
 - `__TEXT.__descriptor`
+- `__TEXT.__fragment`
 - `__TEXT.__metallib`
-
-```diff
-
-   __TEXT.__reflection: 0x97b0
-   __TEXT.__vertex: 0x46910
--  __TEXT.__fragment: 0x9e510
-+  __TEXT.__fragment: 0xa91e0
-   __TEXT.__compute: 0x750
-   __TEXT.__descriptor: 0x3c0
-   __TEXT.__metallib: 0x1fd130
-```

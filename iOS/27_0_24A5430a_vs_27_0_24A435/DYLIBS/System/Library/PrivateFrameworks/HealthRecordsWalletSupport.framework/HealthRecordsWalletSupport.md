@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/HealthRecordsWalletSupport.framework/HealthRecordsWalletSupport`
 
-```diff
+### Section Size Changes
 
- 7027.0.72.2.7
--  __TEXT.__text: 0x16144
-+  __TEXT.__text: 0x16148
-   __TEXT.__const: 0x1214
-   __TEXT.__cstring: 0xb02
-   __TEXT.__oslogstring: 0x35
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x16144` | `0x16148` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_282ac33d8 -> sub_2837f73d8 : 1804 -> 1808
+~ sub_2829b43d8 -> sub_2836c63d8 : 1804 -> 1808
 ```

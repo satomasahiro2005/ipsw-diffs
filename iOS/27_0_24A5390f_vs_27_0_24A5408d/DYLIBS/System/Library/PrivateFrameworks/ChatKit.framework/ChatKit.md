@@ -2,124 +2,61 @@
 
 > `/System/Library/PrivateFrameworks/ChatKit.framework/ChatKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc199b0` | `0xc21d70` | **`+0x83c0`** |
+| `__AUTH_CONST.__objc_const` | `0x9d640` | `0x9dd40` | **`+0x700`** |
+| `__TEXT.__oslogstring` | `0x54a57` | `0x55147` | **`+0x6f0`** |
+| `__TEXT.__cstring` | `0x3f157` | `0x3f657` | **`+0x500`** |
+| `__TEXT.__objc_methlist` | `0x72e24` | `0x732f4` | **`+0x4d0`** |
+| `__TEXT.__swift5_typeref` | `0x48754` | `0x489e4` | **`+0x290`** |
+| `__DATA_CONST.__objc_selrefs` | `0x37348` | `0x37518` | **`+0x1d0`** |
+| `__AUTH_CONST.__const` | `0x3efc8` | `0x3f190` | **`+0x1c8`** |
+| `__AUTH.__objc_data` | `0x2c730` | `0x2c8e8` | **`+0x1b8`** |
+| `__DATA.__data` | `0x222e0` | `0x22490` | **`+0x1b0`** |
+| `__TEXT.__unwind_info` | `0x31a50` | `0x31bc8` | **`+0x178`** |
+| `__TEXT.__const` | `0x427e4` | `0x42924` | **`+0x140`** |
+| `__TEXT.__swift5_reflstr` | `0x12c13` | `0x12d43` | **`+0x130`** |
+| `__DATA.__bss` | `0x44b30` | `0x44c50` | **`+0x120`** |
+| `__TEXT.__gcc_except_tab` | `0x206bc` | `0x207dc` | **`+0x120`** |
+| `__TEXT.__eh_frame` | `0x12e68` | `0x12d50` | **`-0x118`** |
+| `__TEXT.__constg_swiftt` | `0x1dd84` | `0x1de7c` | **`+0xf8`** |
+| `__DATA_CONST.__const` | `0xf2b8` | `0xf3a8` | **`+0xf0`** |
+| `__AUTH_CONST.__cfstring` | `0x24380` | `0x24460` | **`+0xe0`** |
+| `__TEXT.__swift5_fieldmd` | `0x10d40` | `0x10e1c` | **`+0xdc`** |
+| `__DATA_CONST.__got` | `0x7ca8` | `0x7d10` | **`+0x68`** |
+| `__TEXT.__dlopen_cstrs` | `0xab4` | `0xb0c` | **`+0x58`** |
+| `__DATA.__objc_ivar` | `0x49dc` | `0x4a24` | **`+0x48`** |
+| `__AUTH_CONST.__auth_got` | `0x6b88` | `0x6b60` | **`-0x28`** |
+| `__AUTH.__data` | `0x15ae8` | `0x15b08` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x3000` | `0x3018` | **`+0x18`** |
+| `__DATA_CONST.__objc_protolist` | `0x13e0` | `0x13f8` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x19e0` | `0x19f8` | **`+0x18`** |
+| `__TEXT.__swift5_capture` | `0x91d8` | `0x91c4` | **`-0x14`** |
+| `__DATA.__common` | `0x15f0` | `0x15e0` | **`-0x10`** |
+| `__TEXT.__swift5_types` | `0x147c` | `0x148c` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0xe5c` | `0xe50` | **`-0xc`** |
+| `__TEXT.__swift5_proto` | `0x1cec` | `0x1cf4` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x650` | `0x64c` | **`-0x4`** |
+| `__TEXT.__swift_as_ret` | `0x5e0` | `0x5dc` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1487.100.6.2.2
--  __TEXT.__text: 0xc199b0
 +1491.100.1.2.11
-+  __TEXT.__text: 0xc21d70
-   __TEXT.__delay_stubs: 0x1c0
-   __TEXT.__delay_helper: 0x3050
--  __TEXT.__objc_methlist: 0x72e24
--  __TEXT.__const: 0x427e4
--  __TEXT.__gcc_except_tab: 0x206bc
--  __TEXT.__cstring: 0x3f157
--  __TEXT.__oslogstring: 0x54a57
--  __TEXT.__dlopen_cstrs: 0xab4
-+  __TEXT.__objc_methlist: 0x732f4
-+  __TEXT.__const: 0x42924
-+  __TEXT.__gcc_except_tab: 0x207dc
-+  __TEXT.__cstring: 0x3f657
-+  __TEXT.__oslogstring: 0x55147
-+  __TEXT.__dlopen_cstrs: 0xb0c
-   __TEXT.__ustring: 0x20a
--  __TEXT.__constg_swiftt: 0x1dd84
--  __TEXT.__swift5_typeref: 0x48754
-+  __TEXT.__constg_swiftt: 0x1de7c
-+  __TEXT.__swift5_typeref: 0x489e4
-   __TEXT.__swift5_builtin: 0x9b0
--  __TEXT.__swift5_reflstr: 0x12c13
--  __TEXT.__swift5_fieldmd: 0x10d40
-+  __TEXT.__swift5_reflstr: 0x12d43
-+  __TEXT.__swift5_fieldmd: 0x10e1c
-   __TEXT.__swift5_assocty: 0x4a70
--  __TEXT.__swift5_proto: 0x1cec
--  __TEXT.__swift5_types: 0x147c
--  __TEXT.__swift5_capture: 0x91d8
--  __TEXT.__swift_as_entry: 0x650
--  __TEXT.__swift_as_ret: 0x5e0
--  __TEXT.__swift_as_cont: 0xe5c
-+  __TEXT.__swift5_proto: 0x1cf4
-+  __TEXT.__swift5_types: 0x148c
-+  __TEXT.__swift5_capture: 0x91c4
-+  __TEXT.__swift_as_entry: 0x64c
-+  __TEXT.__swift_as_ret: 0x5dc
-+  __TEXT.__swift_as_cont: 0xe50
-   __TEXT.__swift5_protos: 0xdc
-   __TEXT.__swift5_mpenum: 0x140
--  __TEXT.__unwind_info: 0x31a50
--  __TEXT.__eh_frame: 0x12e68
-+  __TEXT.__unwind_info: 0x31bc8
-+  __TEXT.__eh_frame: 0x12d50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xf2b8
--  __DATA_CONST.__objc_classlist: 0x3000
-+  __DATA_CONST.__const: 0xf3a8
-+  __DATA_CONST.__objc_classlist: 0x3018
-   __DATA_CONST.__objc_catlist: 0x568
--  __DATA_CONST.__objc_protolist: 0x13e0
-+  __DATA_CONST.__objc_protolist: 0x13f8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x37348
-+  __DATA_CONST.__objc_selrefs: 0x37518
-   __DATA_CONST.__objc_protorefs: 0x578
--  __DATA_CONST.__objc_superrefs: 0x19e0
-+  __DATA_CONST.__objc_superrefs: 0x19f8
-   __DATA_CONST.__objc_arraydata: 0xed0
--  __DATA_CONST.__got: 0x7ca8
--  __AUTH_CONST.__const: 0x3efc8
--  __AUTH_CONST.__cfstring: 0x24380
--  __AUTH_CONST.__objc_const: 0x9d640
-+  __DATA_CONST.__got: 0x7d10
-+  __AUTH_CONST.__const: 0x3f190
-+  __AUTH_CONST.__cfstring: 0x24460
-+  __AUTH_CONST.__objc_const: 0x9dd40
-   __AUTH_CONST.__objc_arrayobj: 0xde0
-   __AUTH_CONST.__objc_intobj: 0xf18
-   __AUTH_CONST.__objc_doubleobj: 0x870
-   __AUTH_CONST.__objc_floatobj: 0x180
-   __AUTH_CONST.__objc_dictobj: 0x1e0
--  __AUTH_CONST.__auth_got: 0x6b88
--  __AUTH.__objc_data: 0x2c730
--  __AUTH.__data: 0x15ae8
--  __DATA.__objc_ivar: 0x49dc
--  __DATA.__data: 0x222e0
-+  __AUTH_CONST.__auth_got: 0x6b60
-+  __AUTH.__objc_data: 0x2c8e8
-+  __AUTH.__data: 0x15b08
-+  __DATA.__objc_ivar: 0x4a24
-+  __DATA.__data: 0x22490
-   __DATA.__objc_stublist: 0x38
--  __DATA.__bss: 0x44b30
--  __DATA.__common: 0x15f0
-+  __DATA.__bss: 0x44c50
-+  __DATA.__common: 0x15e0
-   __DATA_DIRTY.__objc_data: 0x65c8
-   __DATA_DIRTY.__data: 0x618
-   __DATA_DIRTY.__bss: 0x520
 
-   - /System/Library/PrivateFrameworks/SupportFlowUI.framework/SupportFlowUI
-   - /System/Library/PrivateFrameworks/SystemStatus.framework/SystemStatus
-   - /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities
 -  - /System/Library/PrivateFrameworks/TextComposer.framework/TextComposer
-   - /System/Library/PrivateFrameworks/TextInput.framework/TextInput
-   - /System/Library/PrivateFrameworks/TextUnderstanding.framework/TextUnderstanding
-   - /System/Library/PrivateFrameworks/TipsCore.framework/TipsCore
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 74708
--  Symbols:   96314
+-  Symbols:   73528
 -  CStrings:  13187
 +  Functions: 74865
-+  Symbols:   96550
++  Symbols:   73711
 +  CStrings:  13244
- 
 Symbols:
 + +[CKMediaObject(Display) _generatePreflightThumbnailFillToSize:assetPxSize:scale:thumbnail:isScreenshot:isVideo:]
 + +[CKPosterRenderingTranscriptBackground preferredSafeAreaInsetsForProposedInsets:backgroundIsPhotos:context:]
@@ -469,71 +406,6 @@ Symbols:
 + _audit_stringAssetExplorer
 + _get_witness_table 7SwiftUI6ZStackVyAA12TupleContentVyAA08ModifiedE0VyAA12MeshGradientVAA16_OverlayModifierVy7ChatKit15VideoPlayButton33_B75933A2D31E5D1A0B34F2AA4F243E90LLVSgGG_AA012_ConditionalE0VyAGyAGyAGyAGyAGyAA4TextVAA16_BlendModeEffectVGAA14_PaddingLayoutVGA_GAA16_FlexFrameLayoutVGAA022_EnvironmentKeyWritingJ0VyAA11ColorSchemeOGGAA9EmptyViewVGATyAGyAGyAL16RingProgressViewANLLVAA12_FrameLayoutVGA_GA12_GQPGGAA4ViewHPyHC
 + _getkUTTypeAssetPreviewImageSymbolLoc.ptr
-+ _objc_msgSend$URLByStandardizingPath
-+ _objc_msgSend$_correctPrimaryColumnWidth
-+ _objc_msgSend$_dismissInspectorColumn
-+ _objc_msgSend$_generatePreflightThumbnailFillToSize:assetPxSize:scale:thumbnail:isScreenshot:isVideo:
-+ _objc_msgSend$_hasCommSafetyTransferMatching:
-+ _objc_msgSend$_imageSourceData
-+ _objc_msgSend$_isPrimaryColumnCollapsedAtInvalidWidth
-+ _objc_msgSend$_makeMaskLayer
-+ _objc_msgSend$_performConversationReassignment
-+ _objc_msgSend$allKeysForObject:
-+ _objc_msgSend$appCardOverseer:didInvalidateCurrentPresentedFrame:
-+ _objc_msgSend$canPresentOverKeyboardInView:
-+ _objc_msgSend$ck_saveableSticker
-+ _objc_msgSend$contextForPosterRenderingTranscriptBackground:
-+ _objc_msgSend$didDismissAppCard
-+ _objc_msgSend$didInvalidateCurrentPresentedAppCardSheetFrame:
-+ _objc_msgSend$displayMeshGradient:purpose:gradientColors:wantsPlayButton:
-+ _objc_msgSend$fetchWelcomeMessagesForDestination:welcomeId:welcomeContext:completion:
-+ _objc_msgSend$forwardItemProvider
-+ _objc_msgSend$hasPresentedInspector
-+ _objc_msgSend$hasVisibleAppCard
-+ _objc_msgSend$hasVisibleAppCardForChatItemMetricsProvider:
-+ _objc_msgSend$hasVisibleAppCardForSplitViewControllerHooks:
-+ _objc_msgSend$hasVisibleAppCardForTranscriptCollectionViewController:
-+ _objc_msgSend$inForeground
-+ _objc_msgSend$initWithColorValues:purpose:progress:wantsPlayButton:
-+ _objc_msgSend$initWithConversationListCollectionViewController:
-+ _objc_msgSend$initWithEditingViewController:
-+ _objc_msgSend$initWithHasPresentedInspector:isSplitViewCollapsed:splitViewDisplayMode:isRTL:
-+ _objc_msgSend$initWithLivePhoto:
-+ _objc_msgSend$isRTL
-+ _objc_msgSend$messageEntryContentViewDidRestorePhotosExtensionShelf:
-+ _objc_msgSend$messageEntryViewDidRestorePhotosExtensionShelf:
-+ _objc_msgSend$messagePartChatItemForGUID:
-+ _objc_msgSend$preferred176932770ValueForProposal:
-+ _objc_msgSend$preferredSafeAreaInsetsForProposedInsets:backgroundIsPhotos:context:
-+ _objc_msgSend$preferredScrollIndicatorInsetsForProposedScrollIndicatorInsets:
-+ _objc_msgSend$preflightPreviewFromThumbnail:previewWidth:previewHeight:isScreenshot:isVideo:
-+ _objc_msgSend$reloadChatItemsForWelcomeMessagesChange
-+ _objc_msgSend$reportAssistantActionSuggestionPresentationAnalyticsIfNeeded
-+ _objc_msgSend$restageStagedPackageForShelfRefresh:
-+ _objc_msgSend$resumeExecutorWithGroupName:lane:phase:completionHandler:
-+ _objc_msgSend$runExecutorWithTaskLimit:groupName:lane:phase:completionHandler:
-+ _objc_msgSend$sceneActivationConfigurationForItemAtIndexPath:
-+ _objc_msgSend$setAppCardVisibilityProvider:
-+ _objc_msgSend$setFilterAction:
-+ _objc_msgSend$setSidecarObject:forKey:
-+ _objc_msgSend$setStagedAssetPreviewObserver:
-+ _objc_msgSend$setStagedPackagesAwaitingPreviewByFileURLPath:
-+ _objc_msgSend$setViewHierarchyUpdater:
-+ _objc_msgSend$setWelcomeMessages:
-+ _objc_msgSend$shouldStartPerfTestWithoutOrientationChange
-+ _objc_msgSend$splitViewDisplayMode
-+ _objc_msgSend$stageWelcomeMessages
-+ _objc_msgSend$stagedAssetPreviewDidGenerate:forFileProviderURL:
-+ _objc_msgSend$stagedAssetPreviewObserver
-+ _objc_msgSend$stagedPackagesAwaitingPreviewByFileURLPath
-+ _objc_msgSend$systemLibraryPHAssetLocalIdentifier
-+ _objc_msgSend$timeIntervalToAssumeStaleTransfers
-+ _objc_msgSend$updateWithColorValues:purpose:wantsPlayButton:
-+ _objc_msgSend$viewDidLayoutSubviews
-+ _objc_msgSend$viewDidLoad
-+ _objc_msgSend$viewHierarchyUpdater
-+ _objc_msgSend$welcomeContext
-+ _objc_msgSend$welcomeId
 + _symbolic SDySSSo8NSObjectCG
 + _symbolic SaySSSgG
 + _symbolic So18IMScheduledUpdaterCSg
@@ -745,18 +617,6 @@ Symbols:
 - ___block_descriptor_113_e8_32s40s48s56s_e5_v8?0ls32l8s40l8s48l8s56l8
 - ___swift_closure_destructor.62Tm
 - _get_witness_table 7SwiftUI6ZStackVyAA12TupleContentVyAA08ModifiedE0VyAA12MeshGradientVAA16_OverlayModifierVy7ChatKit15VideoPlayButton33_B75933A2D31E5D1A0B34F2AA4F243E90LLVSgGG_AGyAGyAGyAL16RingProgressViewANLLVAA12_FrameLayoutVGAA14_PaddingLayoutVGAYGSgQPGGAA4ViewHPyHC
-- _objc_msgSend$displayMeshGradient:gradientColors:wantsPlayButton:
-- _objc_msgSend$generatePreflightThumbnailFillToSize:assetPxSize:scale:thumbnail:isScreenshot:mediaType:
-- _objc_msgSend$hasPresentedInspectorForPosterRenderingTranscriptBackground:
-- _objc_msgSend$initWithColorValues:progress:wantsPlayButton:
-- _objc_msgSend$initWithTIInputContextHistory:
-- _objc_msgSend$initiateSmartResponsePrecompute
-- _objc_msgSend$mostRecentTextEntries:
-- _objc_msgSend$nextToken
-- _objc_msgSend$resumeExecutorWithGroupName:lane:completionHandler:
-- _objc_msgSend$runExecutorWithTaskLimit:groupName:lane:completionHandler:
-- _objc_msgSend$sharedAssistant
-- _objc_msgSend$updateWithColorValues:wantsPlayButton:
 - _symbolic So21TCInputContextHistoryC
 - _symbolic Spy_____GSg 10ObjectiveC8ObjCBoolV
 - _symbolic _____ 12TextComposer0aB6ClientC

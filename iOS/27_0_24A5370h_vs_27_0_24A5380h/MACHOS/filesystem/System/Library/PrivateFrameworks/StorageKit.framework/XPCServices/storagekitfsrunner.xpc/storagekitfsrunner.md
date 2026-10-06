@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/StorageKit.framework/XPCServices/storagekitfsrunner.xpc/storagekitfsrunner`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0xf0` | `0x108` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x30
-   __DATA_CONST.__auth_got: 0x1b8
--  __DATA_CONST.__got: 0xf0
-+  __DATA_CONST.__got: 0x108
-   __DATA.__objc_const: 0xf80
-   __DATA.__objc_selrefs: 0x498
-   __DATA.__objc_ivar: 0x38
-
+-1076.0.0.0.0
++1076.0.1.0.0
 ```

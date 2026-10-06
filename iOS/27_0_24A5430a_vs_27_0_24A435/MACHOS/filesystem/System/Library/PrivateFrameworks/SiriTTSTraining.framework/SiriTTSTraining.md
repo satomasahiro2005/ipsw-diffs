@@ -2,57 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/SiriTTSTraining.framework/SiriTTSTraining`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x234a80` | `0x2349fc` | **`-0x84`** |
+| `__TEXT.__gcc_except_tab` | `0x1fed0` | `0x1fedc` | **`+0xc`** |
+| `__TEXT.__unwind_info` | `0xb738` | `0xb730` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__AUTH.__data`
+- `__AUTH.__objc_data`
+- `__AUTH_CONST.__cfstring`
+- `__AUTH_CONST.__const`
+- `__AUTH_CONST.__objc_arrayobj`
+- `__AUTH_CONST.__objc_const`
+- `__DATA.__data`
 - `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_arraydata`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__data`
+- `__DATA_CONST.__objc_selrefs`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__init_offsets`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+
+### Other Changes
 
 ```diff
 
- 3600.8.2.0.0
--  __TEXT.__text: 0x234a80
-+  __TEXT.__text: 0x2349fc
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__objc_methlist: 0x7a4
-   __TEXT.__const: 0x10cb0
-
-   __TEXT.__swift5_proto: 0x18
-   __TEXT.__swift5_types: 0x10
-   __TEXT.__swift5_capture: 0x30
--  __TEXT.__gcc_except_tab: 0x1fed0
-+  __TEXT.__gcc_except_tab: 0x1fedc
-   __TEXT.__oslogstring: 0x1a3f
--  __TEXT.__unwind_info: 0xb738
-+  __TEXT.__unwind_info: 0xb730
-   __TEXT.__eh_frame: 0x70
-   __TEXT.__objc_stubs: 0xb00
-   __TEXT.__auth_stubs: 0x1b90
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7775
 +  Functions: 7773
-   Symbols:   12303
-   CStrings:  3464
- 
 Functions:
 ~ __ZNSt3__16vectorIbNS_9allocatorIbEEE6resizeEmb : 128 -> 132
 ~ __ZNSt3__16vectorIfNS_9allocatorIfEEE18__insert_with_sizeB9foe220106INS_17_ClassicAlgPolicyENS_11__wrap_iterIPKfEES9_EENS6_IPfEES9_T0_T1_l : 516 -> 532

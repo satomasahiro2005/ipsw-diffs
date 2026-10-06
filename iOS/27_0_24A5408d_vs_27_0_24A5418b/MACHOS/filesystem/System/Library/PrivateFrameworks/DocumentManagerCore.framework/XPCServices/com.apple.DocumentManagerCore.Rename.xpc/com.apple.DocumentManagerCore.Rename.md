@@ -2,15 +2,14 @@
 
 > `/System/Library/PrivateFrameworks/DocumentManagerCore.framework/XPCServices/com.apple.DocumentManagerCore.Rename.xpc/com.apple.DocumentManagerCore.Rename`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -400.0.0.0.0
 +401.0.0.0.0
-   __TEXT.__text: 0xb00
-   __TEXT.__auth_stubs: 0x190
-   __TEXT.__objc_stubs: 0x280
 ```

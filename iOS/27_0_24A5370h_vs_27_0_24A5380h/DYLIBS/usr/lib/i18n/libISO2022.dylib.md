@@ -2,19 +2,16 @@
 
 > `/usr/lib/i18n/libISO2022.dylib`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x18ac
-+  __TEXT.__text: 0x18a0
-   __TEXT.__const: 0x470
-   __TEXT.__cstring: 0xd4
-   __TEXT.__unwind_info: 0x90
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __AUTH.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x18ac` | `0x18a0` | **`-0xc`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __citrus_ISO2022_stdenc_init : 1340 -> 1336
 ~ __ISO2022_sgetwchar : 1236 -> 1228
-
 ```

@@ -2,82 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/HealthNarrator.framework/HealthNarrator`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x18b910` | `0x1b1bb4` | **`+0x262a4`** |
+| `__AUTH_CONST.__const` | `0x18910` | `0x1d5aa` | **`+0x4c9a`** |
+| `__TEXT.__cstring` | `0x17269` | `0x1bac3` | **`+0x485a`** |
+| `__DATA.__bss` | `0x172b0` | `0x17c30` | **`+0x980`** |
+| `__DATA.__data` | `0x3d58` | `0x4588` | **`+0x830`** |
+| `__TEXT.__swift5_reflstr` | `0x562e` | `0x5e26` | **`+0x7f8`** |
+| `__TEXT.__swift5_fieldmd` | `0x51ec` | `0x5634` | **`+0x448`** |
+| `__TEXT.__const` | `0x16f44` | `0x17384` | **`+0x440`** |
+| `__TEXT.__swift5_typeref` | `0x2c98` | `0x2f1c` | **`+0x284`** |
+| `__TEXT.__unwind_info` | `0x3828` | `0x39b0` | **`+0x188`** |
+| `__TEXT.__constg_swiftt` | `0x2524` | `0x2698` | **`+0x174`** |
+| `__AUTH.__data` | `0x830` | `0x980` | **`+0x150`** |
+| `__TEXT.__oslogstring` | `0x221` | `0x2e3` | **`+0xc2`** |
+| `__TEXT.__eh_frame` | `0x4728` | `0x47d4` | **`+0xac`** |
+| `__TEXT.__swift5_assocty` | `0x738` | `0x7e0` | **`+0xa8`** |
+| `__AUTH_CONST.__objc_const` | `0x120` | `0x1b0` | **`+0x90`** |
+| `__TEXT.__swift5_capture` | `0x380` | `0x410` | **`+0x90`** |
+| `__TEXT.__swift5_mpenum` | `0xf0` | `0x174` | **`+0x84`** |
+| `__TEXT.__swift5_proto` | `0xc08` | `0xc54` | **`+0x4c`** |
+| `__AUTH_CONST.__auth_got` | `0xb78` | `0xbb0` | **`+0x38`** |
+| `__TEXT.__swift5_types` | `0x4c4` | `0x4ec` | **`+0x28`** |
+| `__DATA_DIRTY.__common` | `—` | `0x18` | **`+0x18`** |
+| `__DATA.__common` | `0x180` | `0x170` | **`-0x10`** |
+| `__DATA_DIRTY.__data` | `—` | `0x10` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x10` | `0x18` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -35.1.0.0.0
--  __TEXT.__text: 0x187000
--  __TEXT.__const: 0x16f44
--  __TEXT.__swift5_typeref: 0x2c98
--  __TEXT.__constg_swiftt: 0x2524
 +38.1.0.0.0
-+  __TEXT.__text: 0x1acfa4
-+  __TEXT.__const: 0x17384
-+  __TEXT.__swift5_typeref: 0x2f1c
-+  __TEXT.__constg_swiftt: 0x2698
-   __TEXT.__swift5_builtin: 0x1e0
--  __TEXT.__swift5_mpenum: 0xf0
--  __TEXT.__swift5_reflstr: 0x562e
--  __TEXT.__swift5_fieldmd: 0x51ec
--  __TEXT.__swift5_proto: 0xc08
--  __TEXT.__swift5_types: 0x4c4
--  __TEXT.__cstring: 0x17269
--  __TEXT.__swift5_assocty: 0x738
--  __TEXT.__swift5_capture: 0x380
--  __TEXT.__oslogstring: 0x221
-+  __TEXT.__swift5_mpenum: 0x174
-+  __TEXT.__swift5_reflstr: 0x5e26
-+  __TEXT.__swift5_fieldmd: 0x5634
-+  __TEXT.__swift5_proto: 0xc54
-+  __TEXT.__swift5_types: 0x4ec
-+  __TEXT.__cstring: 0x1bac3
-+  __TEXT.__swift5_assocty: 0x7e0
-+  __TEXT.__swift5_capture: 0x410
-+  __TEXT.__oslogstring: 0x2e3
-   __TEXT.__swift5_protos: 0xc
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0x10
--  __TEXT.__unwind_info: 0x4618
--  __TEXT.__eh_frame: 0x4730
-+  __TEXT.__unwind_info: 0x48a8
-+  __TEXT.__eh_frame: 0x47dc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __DATA_CONST.__const: 0x98
--  __DATA_CONST.__objc_classlist: 0x10
-+  __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x18910
--  __AUTH_CONST.__objc_const: 0x120
--  __AUTH_CONST.__auth_got: 0xb78
--  __AUTH.__data: 0x830
--  __DATA.__data: 0x3d58
--  __DATA.__common: 0x180
-+  __AUTH_CONST.__const: 0x1d5aa
-+  __AUTH_CONST.__objc_const: 0x1b0
-+  __AUTH_CONST.__auth_got: 0xbb0
-+  __AUTH.__data: 0x980
-+  __DATA.__data: 0x4588
-+  __DATA.__common: 0x170
-+  __DATA_DIRTY.__data: 0x10
-+  __DATA_DIRTY.__common: 0x18
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/FoundationModels.framework/FoundationModels
-   - /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5646
 -  Symbols:   1429
 -  CStrings:  1752
 +  Functions: 5868
 +  Symbols:   1484
 +  CStrings:  1969
- 
 Symbols:
 + __DATA__TtC14HealthNarratorP33_141E77ECDA24A8678EA6215DAEA554CF19ResourceBundleClass
 + __DATA__TtC14HealthNarratorP33_2A6DCE268B7C818AC13E160A30CA554E27NarratorResourceBundleToken

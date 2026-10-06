@@ -2,15 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/StorageUI.framework/StorageUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x13460` | `0x13438` | **`-0x28`** |
+
+### Other Changes
+
 ```diff
 
 -176.0.0.0.0
--  __TEXT.__text: 0x13460
 +177.0.0.0.0
-+  __TEXT.__text: 0x13438
-   __TEXT.__objc_methlist: 0x58
-   __TEXT.__const: 0x11a0
-   __TEXT.__cstring: 0x7d7
 Functions:
-~ sub_2aca0763c -> sub_2ac8a363c : 2336 -> 2296
+~ sub_2ac89263c -> sub_2ac7a063c : 2336 -> 2296
 ```

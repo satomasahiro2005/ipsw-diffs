@@ -2,61 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/CoreSpeech.framework/CoreSpeech`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x149b80` | `0x149fb4` | **`+0x434`** |
+| `__TEXT.__oslogstring` | `0x1fd93` | `0x1fe04` | **`+0x71`** |
+| `__TEXT.__cstring` | `0x28994` | `0x289f4` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x4f18` | `0x4f70` | **`+0x58`** |
+| `__TEXT.__gcc_except_tab` | `0x3140` | `0x3170` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x14c7c` | `0x14cac` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0xad80` | `0xada8` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x9660` | `0x9680` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x4238` | `0x4258` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x1b20` | `0x1b28` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.70.32.0.0
--  __TEXT.__text: 0x149b80
 +3600.70.47.0.0
-+  __TEXT.__text: 0x149fb4
-   __TEXT.__lazy_helpers: 0x54
--  __TEXT.__objc_methlist: 0x14c7c
-+  __TEXT.__objc_methlist: 0x14cac
-   __TEXT.__const: 0x42c
-   __TEXT.__dlopen_cstrs: 0x1e0
--  __TEXT.__gcc_except_tab: 0x3140
--  __TEXT.__cstring: 0x28994
--  __TEXT.__oslogstring: 0x1fd93
--  __TEXT.__unwind_info: 0x4f18
-+  __TEXT.__gcc_except_tab: 0x3170
-+  __TEXT.__cstring: 0x289f4
-+  __TEXT.__oslogstring: 0x1fe04
-+  __TEXT.__unwind_info: 0x4f70
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4238
-+  __DATA_CONST.__const: 0x4258
-   __DATA_CONST.__objc_classlist: 0x840
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x4e8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0xad80
-+  __DATA_CONST.__objc_selrefs: 0xada8
-   __DATA_CONST.__objc_protorefs: 0xa0
-   __DATA_CONST.__objc_superrefs: 0x678
-   __DATA_CONST.__objc_arraydata: 0x3e8
--  __DATA_CONST.__got: 0x1b20
-+  __DATA_CONST.__got: 0x1b28
-   __AUTH_CONST.__const: 0x1e40
--  __AUTH_CONST.__cfstring: 0x9660
-+  __AUTH_CONST.__cfstring: 0x9680
-   __AUTH_CONST.__objc_const: 0x20cb8
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__lazy_load_got: 0x8
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 8088
--  Symbols:   17799
+-  Symbols:   14092
 -  CStrings:  5575
 +  Functions: 8091
-+  Symbols:   17809
++  Symbols:   14098
 +  CStrings:  5580
- 
 Symbols:
 + -[CSSiriSpeechRecorder enablePrewarmForLinwoodUODCapableDevices:]
 + -[CSVoiceTriggerUserSelectedPhrase _localeSupportsMultiPhrase]
@@ -193,10 +166,6 @@ Symbols:
 + GCC_except_table7933
 + _OBJC_CLASS_$_AFSiriAvailability
 + _kMetricsSpeechEndHostTimeKey
-+ _objc_msgSend$_localeSupportsMultiPhrase
-+ _objc_msgSend$currentOrchestrationMode
-+ _objc_msgSend$enablePrewarmForLinwoodUODCapableDevices:
-+ _objc_msgSend$fromPreferences
 - GCC_except_table3670
 - GCC_except_table3673
 - GCC_except_table3675

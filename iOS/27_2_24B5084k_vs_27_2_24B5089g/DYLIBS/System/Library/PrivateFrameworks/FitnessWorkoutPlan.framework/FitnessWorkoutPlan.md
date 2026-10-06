@@ -2,28 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/FitnessWorkoutPlan.framework/FitnessWorkoutPlan`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c828c` | `0x1c8410` | **`+0x184`** |
+| `__TEXT.__swift5_typeref` | `0x13b04` | `0x13c20` | **`+0x11c`** |
+| `__DATA.__bss` | `0x2d428` | `0x2d3a8` | **`-0x80`** |
+| `__DATA_DIRTY.__bss` | `0x3b80` | `0x3c00` | **`+0x80`** |
+| `__TEXT.__const` | `0x1e404` | `0x1e414` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -2027.1.50.0.1
--  __TEXT.__text: 0x1b9214
--  __TEXT.__const: 0x1e404
--  __TEXT.__swift5_typeref: 0x13b04
 +2027.1.54.0.0
-+  __TEXT.__text: 0x1b9398
-+  __TEXT.__const: 0x1e414
-+  __TEXT.__swift5_typeref: 0x13c20
-   __TEXT.__swift5_capture: 0x22b0
-   __TEXT.__constg_swiftt: 0x696c
-   __TEXT.__swift5_reflstr: 0x4004
-
-   __DATA.__data: 0x75e8
-   __DATA.__common: 0x90
-   __DATA_DIRTY.__data: 0x17e8
--  __DATA_DIRTY.__bss: 0x3b80
-+  __DATA_DIRTY.__bss: 0x3c00
-   __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
 Symbols:
 + _get_witness_table SeRzSERzSHRzs8SendableRzSeR_SER_SHR_sAAR_7SwiftUI4ViewR0_r1_lqd0__AbCHD3_AbCPABE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAB15ModifiedContentVyAdBE25presentationDragIndicatoryQrAB10VisibilityOFQOyAdBE0K7DetentsyQrShyAB18PresentationDetentVGFQOyAIyAB6VStackVyAB05TupleJ0VyAIyAIyAIyAB6ZStackVyATyAIyAIyAB4TextVAB16_FlexFrameLayoutVGAB31AccessibilityAttachmentModifierVG_AB6HStackVyATyAIyAB6ButtonVyAIyAIyAIyAIyAB5ImageVAB30_EnvironmentKeyWritingModifierVyAB4FontVSgGGAB24_ForegroundStyleModifierVyAB5ColorVGGAB01_wX0VGAB34_InsettableBackgroundShapeModifierVyAB8MaterialVAB6CircleVGGGAB01_J17ShapeKindModifierVyA30_GG_AB6SpacerVQPGGQPGGAB08_PaddingX0VGA45_GA45_G_AB012_ConditionalJ0VyA50_yAIyAB08ProgressD0VyAB05EmptyD0VA54_GAZGA_GAIyARyATyAIyAdBE11pickerStyleyQrqd__AB11PickerStyleRd__lFQOyAB6PickerVyAXSiAB7ForEachVySaySiGSiAdBE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAX_SiQo_GG_AB20SegmentedPickerStyleVQo_A45_GSg_AB06ScrollD0VyAIyAIyAB04LazyR0VyA50_yAIyA_A45_G013FitnessCanvasC009DataStoreD0Vy18FitnessWorkoutPlan19WorkoutSwapDataItemVyxq_GADA80_E19standardLockupStyleyQrqd__A80_19StandardLockupStyleRd__lFQOyAB5GroupVyA50_yA80_14StandardLockupVAIyAdBE8redacted6reasonQrAB16RedactionReasonsV_tFQOyA92__Qo_A1_GGG_A80_20HorizontalStackStyleVQo_GGGA45_GA45_GGQPGGAB32_EnvironmentKeyTransformModifierVySbGGGQPGGAZG_Qo__Qo_AB25_AppearanceActionModifierVG_SbQo_HO
 + _symbolic _____yAAyAAy_____y_____yAAyAAy__________G_____G______yACyAAy_____yAAyAAyAAyAAy__________y_____SgGG_____y_____GG_____G_____y__________GGG_____yAYGG______QPGGQPGG_____GA9_GA9_G 7SwiftUI15ModifiedContentV AA6ZStackV AA05TupleD0V AA4TextV AA16_FlexFrameLayoutV AA31AccessibilityAttachmentModifierV AA6HStackV AA6ButtonV AA5ImageV AA022_EnvironmentKeyWritingM0V AA4FontV AA016_ForegroundStyleM0V AA5ColorV AA01_iJ0V AA026_InsettableBackgroundShapeM0V AA8MaterialV AA6CircleV AA01_dz4KindM0V AA6SpacerV AA08_PaddingJ0V
@@ -50,6 +44,6 @@ Symbols:
 - _symbolic _____y_____y_____y_____yAAy_____y_____yAAyAAyAAy_____yACyAAy__________G______yACy_____yAAyAAyAAyAAy__________y_____SgGG_____y_____GG_____G_____y__________GGG______QPGGQPGG_____GA5_GA5_G______yA9_yAAy_____y_____A11_GAFGAGGAAyAByACyAAy_____y_____yAESi_____ySaySiGSi_____yAE_SiQo_GG______Qo_A5_GSg______yAAyAAy_____yA9_yAAyAGA5_G_____y_____yxq_G_____y_____yA9_y_____AAy_____yA32__Qo______GGG______Qo_GGGA5_GA5_GGQPGG_____ySbGGGQPGGAFG_Qo__Qo______G_SbQo_ 7SwiftUI4ViewPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQO AA15ModifiedContentV AcAE25presentationDragIndicatoryQrAA10VisibilityOFQO AcAE0J7DetentsyQrShyAA18PresentationDetentVGFQO AA6VStackV AA05TupleI0V AA6ZStackV AA4TextV AA16_FlexFrameLayoutV AA6HStackV AA6ButtonV AA5ImageV AA30_EnvironmentKeyWritingModifierV AA4FontV AA24_ForegroundStyleModifierV AA5ColorV AA01_vW0V AA34_InsettableBackgroundShapeModifierV AA8MaterialV AA6CircleV AA6SpacerV AA08_PaddingW0V AA012_ConditionalI0V AA08ProgressC0V AA05EmptyC0V AcAE11pickerStyleyQrqd__AA11PickerStyleRd__lFQO AA6PickerV AA7ForEachV AcAE3tag_15includeOptionalQrqd___SbtSHRd__lFQO AA20SegmentedPickerStyleV AA06ScrollC0V AA04LazyQ0V 013FitnessCanvasB009DataStoreC0V 18FitnessWorkoutPlan19WorkoutSwapDataItemV ACA44_E19standardLockupStyleyQrqd__A44_19StandardLockupStyleRd__lFQO AA5GroupV A44_14StandardLockupV AcAE8redacted6reasonQrAA16RedactionReasonsV_tFQO AA31AccessibilityAttachmentModifierV A44_20HorizontalStackStyleV AA32_EnvironmentKeyTransformModifierV AA25_AppearanceActionModifierV
 - _symbolic _____y_____y_____y_____yADyADyADy__________y_____SgGG_____y_____GG_____G_____y__________GGG______QPGG 7SwiftUI6HStackV AA12TupleContentV AA6ButtonV AA08ModifiedE0V AA5ImageV AA30_EnvironmentKeyWritingModifierV AA4FontV AA016_ForegroundStyleL0V AA5ColorV AA12_FrameLayoutV AA026_InsettableBackgroundShapeL0V AA8MaterialV AA6CircleV AA6SpacerV
 Functions:
-~ sub_211c57394 -> sub_211c5a394 : 1448 -> 1844
-~ sub_211c5793c -> sub_211c5aac8 : 924 -> 916
+~ sub_21371ed08 -> sub_213817d08 : 1448 -> 1864
+~ sub_21371f2b0 -> sub_213818450 : 964 -> 936
 ```

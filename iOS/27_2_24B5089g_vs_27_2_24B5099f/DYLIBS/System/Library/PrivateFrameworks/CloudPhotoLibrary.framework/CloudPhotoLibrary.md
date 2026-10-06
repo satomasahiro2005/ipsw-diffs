@@ -2,69 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/CloudPhotoLibrary.framework/CloudPhotoLibrary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1cc23c` | `0x1cc410` | **`+0x1d4`** |
+| `__AUTH_CONST.__cfstring` | `0x17e60` | `0x17ee0` | **`+0x80`** |
+| `__AUTH_CONST.__objc_const` | `0x23a48` | `0x23aa8` | **`+0x60`** |
+| `__TEXT.__objc_methlist` | `0x15cbc` | `0x15d04` | **`+0x48`** |
+| `__DATA.__bss` | `0xc68` | `0xc88` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x92e8` | `0x9308` | **`+0x20`** |
+| `__DATA_DIRTY.__bss` | `0x3c0` | `0x3a0` | **`-0x20`** |
+| `__TEXT.__cstring` | `0x18298` | `0x182b0` | **`+0x18`** |
+| `__DATA_CONST.__objc_arraydata` | `0x14b8` | `0x14c8` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x6d50` | `0x6d60` | **`+0x10`** |
+| `__TEXT.__ustring` | `—` | `0xc` | **`+0xc`** |
+| `__DATA.__objc_ivar` | `0x1c34` | `0x1c3c` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x4d48` | `0x4d4c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -916.45.110.0.0
--  __TEXT.__text: 0x1c392c
--  __TEXT.__objc_methlist: 0x15cbc
 +916.51.202.0.0
-+  __TEXT.__text: 0x1c3af4
-+  __TEXT.__objc_methlist: 0x15d04
-   __TEXT.__const: 0x328
--  __TEXT.__gcc_except_tab: 0x4d48
-+  __TEXT.__gcc_except_tab: 0x4d4c
-   __TEXT.__oslogstring: 0x16db8
--  __TEXT.__cstring: 0x18298
--  __TEXT.__unwind_info: 0x8520
-+  __TEXT.__cstring: 0x182b0
-+  __TEXT.__ustring: 0xc
-+  __TEXT.__unwind_info: 0x8530
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x90
-   __DATA_CONST.__objc_protolist: 0x1b8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x92e8
-+  __DATA_CONST.__objc_selrefs: 0x9308
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__objc_superrefs: 0x940
--  __DATA_CONST.__objc_arraydata: 0x14b8
-+  __DATA_CONST.__objc_arraydata: 0x14c8
-   __DATA_CONST.__got: 0xb48
-   __AUTH_CONST.__const: 0x2cc0
--  __AUTH_CONST.__cfstring: 0x17e60
--  __AUTH_CONST.__objc_const: 0x23a48
-+  __AUTH_CONST.__cfstring: 0x17ee0
-+  __AUTH_CONST.__objc_const: 0x23aa8
-   __AUTH_CONST.__objc_intobj: 0x7e0
-   __AUTH_CONST.__objc_arrayobj: 0x78
-   __AUTH_CONST.__objc_dictobj: 0x190
-   __AUTH_CONST.__objc_floatobj: 0x50
-   __AUTH_CONST.__auth_got: 0x7a0
--  __DATA.__objc_ivar: 0x1c34
-+  __DATA.__objc_ivar: 0x1c3c
-   __DATA.__data: 0x130
-   __DATA.__common: 0x30
-   __DATA_DIRTY.__objc_data: 0x6310
-   __DATA_DIRTY.__data: 0x1550
--  __DATA_DIRTY.__bss: 0x3c0
-+  __DATA_DIRTY.__bss: 0x3a0
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libcupolicy.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 9795
 -  Symbols:   15566
 -  CStrings:  5161
 +  Functions: 9801
 +  Symbols:   15574
 +  CStrings:  5165
- 
 Symbols:
 + -[CPLPostChange lastUserEditedDate]
 + -[CPLPostChange setLastUserEditedDate:]

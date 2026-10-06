@@ -2,27 +2,26 @@
 
 > `/System/Library/Frameworks/CoreLocation.framework/PlugIns/CoreLocationVanillaWhenInUseAuthPromptPlugin.appex/CoreLocationVanillaWhenInUseAuthPromptPlugin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0xc8` | `0xd0` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -3183.0.0.0.0
 +3185.0.6.0.1
-   __TEXT.__text: 0x2e44
-   __TEXT.__auth_stubs: 0x1b0
-   __TEXT.__objc_stubs: 0x1320
-   __TEXT.__objc_methlist: 0x5a8
--  __TEXT.__const: 0xc8
-+  __TEXT.__const: 0xd0
-   __TEXT.__gcc_except_tab: 0x8b0
-   __TEXT.__oslogstring: 0x113
-   __TEXT.__objc_methname: 0x1544
 ```

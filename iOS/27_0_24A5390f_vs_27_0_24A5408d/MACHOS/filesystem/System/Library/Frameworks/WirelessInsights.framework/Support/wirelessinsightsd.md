@@ -2,101 +2,64 @@
 
 > `/System/Library/Frameworks/WirelessInsights.framework/Support/wirelessinsightsd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__cstring`
-- `__TEXT.__objc_methtype`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x34a1ac` | `0x34a9c4` | **`+0x818`** |
+| `__TEXT.__gcc_except_tab` | `0x2a274` | `0x2a448` | **`+0x1d4`** |
+| `__TEXT.__objc_methname` | `0x187ac` | `0x1892c` | **`+0x180`** |
+| `__TEXT.__objc_stubs` | `0xf980` | `0xfae0` | **`+0x160`** |
+| `__TEXT.__objc_methlist` | `0x783c` | `0x78a4` | **`+0x68`** |
+| `__DATA.__objc_selrefs` | `0x44d0` | `0x4528` | **`+0x58`** |
+| `__DATA.__objc_const` | `0x14570` | `0x145b0` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x10448` | `0x10470` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x17388` | `0x173a8` | **`+0x20`** |
+| `__TEXT.__oslogstring` | `0x2ed62` | `0x2ed42` | **`-0x20`** |
+| `__DATA_CONST.__objc_arrayobj` | `0x228` | `0x240` | **`+0x18`** |
+| `__DATA_CONST.__objc_arraydata` | `0x6b0` | `0x6c0` | **`+0x10`** |
+| `__TEXT.__auth_stubs` | `0x4ff0` | `0x5000` | **`+0x10`** |
+| `__TEXT.__const` | `0x17e93` | `0x17ea3` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x2810` | `0x2818` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x13e0` | `0x13e8` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0xa18` | `0xa1c` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__cfstring`
 - `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__cstring`
+- `__TEXT.__eh_frame`
+- `__TEXT.__init_offsets`
+- `__TEXT.__objc_methtype`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -348.0.0.0.0
--  __TEXT.__text: 0x34a1ac
--  __TEXT.__auth_stubs: 0x4ff0
--  __TEXT.__objc_stubs: 0xf980
 +350.1.0.0.0
-+  __TEXT.__text: 0x34a9c4
-+  __TEXT.__auth_stubs: 0x5000
-+  __TEXT.__objc_stubs: 0xfae0
-   __TEXT.__init_offsets: 0x2b8
--  __TEXT.__objc_methlist: 0x783c
--  __TEXT.__gcc_except_tab: 0x2a274
--  __TEXT.__const: 0x17e93
-+  __TEXT.__objc_methlist: 0x78a4
-+  __TEXT.__gcc_except_tab: 0x2a448
-+  __TEXT.__const: 0x17ea3
-   __TEXT.__cstring: 0x15ecb
--  __TEXT.__oslogstring: 0x2ed62
--  __TEXT.__objc_methname: 0x187ac
-+  __TEXT.__oslogstring: 0x2ed42
-+  __TEXT.__objc_methname: 0x1892c
-   __TEXT.__objc_classname: 0x1c4e
-   __TEXT.__objc_methtype: 0x45ea
-   __TEXT.__swift5_typeref: 0x2662
 
-   __TEXT.__swift_as_cont: 0x848
-   __TEXT.__swift5_protos: 0x74
-   __TEXT.__swift5_mpenum: 0x24
--  __TEXT.__unwind_info: 0x10448
-+  __TEXT.__unwind_info: 0x10470
-   __TEXT.__eh_frame: 0x6b00
--  __DATA_CONST.__const: 0x17388
-+  __DATA_CONST.__const: 0x173a8
-   __DATA_CONST.__cfstring: 0x7320
-   __DATA_CONST.__objc_classlist: 0x5f8
-   __DATA_CONST.__objc_protolist: 0x1b0
-
-   __DATA_CONST.__objc_protorefs: 0xa8
-   __DATA_CONST.__objc_superrefs: 0x2e8
-   __DATA_CONST.__objc_intobj: 0x708
--  __DATA_CONST.__objc_arraydata: 0x6b0
--  __DATA_CONST.__objc_arrayobj: 0x228
-+  __DATA_CONST.__objc_arraydata: 0x6c0
-+  __DATA_CONST.__objc_arrayobj: 0x240
-   __DATA_CONST.__objc_doubleobj: 0x90
-   __DATA_CONST.__objc_dictobj: 0x50
--  __DATA_CONST.__auth_got: 0x2810
--  __DATA_CONST.__got: 0x13e0
-+  __DATA_CONST.__auth_got: 0x2818
-+  __DATA_CONST.__got: 0x13e8
-   __DATA_CONST.__auth_ptr: 0x768
--  __DATA.__objc_const: 0x14570
--  __DATA.__objc_selrefs: 0x44d0
--  __DATA.__objc_ivar: 0xa18
-+  __DATA.__objc_const: 0x145b0
-+  __DATA.__objc_selrefs: 0x4528
-+  __DATA.__objc_ivar: 0xa1c
-   __DATA.__objc_data: 0x5568
-   __DATA.__data: 0x67a8
-   __DATA.__bss: 0x8128
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 14414
 -  Symbols:   2056
 -  CStrings:  10374
 +  Functions: 14426
 +  Symbols:   2058
 +  CStrings:  10385
- 
 Symbols:
 + _OBJC_CLASS_$_NSCharacterSet
 + _TelephonyRadiosGetProduct

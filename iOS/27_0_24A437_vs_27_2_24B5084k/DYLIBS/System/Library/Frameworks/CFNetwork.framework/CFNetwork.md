@@ -2,40 +2,23 @@
 
 > `/System/Library/Frameworks/CFNetwork.framework/CFNetwork`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2567f0` | `0x25692c` | **`+0x13c`** |
+| `__TEXT.__oslogstring` | `0xf9c9` | `0xfa2d` | **`+0x64`** |
+| `__TEXT.__const` | `0xc9c2c` | `0xc9c1c` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3896.100.1.2.1
--  __TEXT.__text: 0x24d3ac
 +3896.200.31.0.0
-+  __TEXT.__text: 0x24d4e8
-   __TEXT.__lazy_helpers: 0x2808
-   __TEXT.__objc_methlist: 0x9c8c
--  __TEXT.__const: 0xc9c2c
-+  __TEXT.__const: 0xc9c1c
-   __TEXT.__cstring: 0x18933
-   __TEXT.__gcc_except_tab: 0x13ed8
--  __TEXT.__oslogstring: 0xf9c9
-+  __TEXT.__oslogstring: 0xfa2d
-   __TEXT.__dof_CFNetwork: 0xf3b
-   __TEXT.__unwind_info: 0xd150
-   __TEXT.__objc_stubs: 0x0
 
-   __AUTH_CONST.__objc_arrayobj: 0x30
-   __AUTH_CONST.__auth_got: 0x2be8
-   __AUTH.__objc_data: 0x16d0
--  __AUTH.__cfstring_CFN: 0x7cb0
-   __AUTH.__data: 0x2f8
-+  __AUTH.__cfstring_CFN: 0x7cb0
-   __DATA.__objc_ivar: 0x1364
-   __DATA.__data: 0xe1c
-   __DATA.__crash_info: 0x148
-
-   - /usr/lib/libz.1.dylib
-   Functions: 12682
-   Symbols:   23333
 -  CStrings:  4753
 +  CStrings:  4754
- 
 Symbols:
 + GCC_except_table5513
 + GCC_except_table5519

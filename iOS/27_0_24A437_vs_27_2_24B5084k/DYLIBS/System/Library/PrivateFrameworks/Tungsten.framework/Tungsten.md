@@ -2,80 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/Tungsten.framework/Tungsten`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfcefc` | `0xfe918` | **`+0x1a1c`** |
+| `__AUTH_CONST.__objc_const` | `0x22d20` | `0x23118` | **`+0x3f8`** |
+| `__TEXT.__objc_methlist` | `0x11ca8` | `0x11ed8` | **`+0x230`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7f38` | `0x8080` | **`+0x148`** |
+| `__TEXT.__unwind_info` | `0x4658` | `0x46c8` | **`+0x70`** |
+| `__DATA_CONST.__const` | `0x4df8` | `0x4e60` | **`+0x68`** |
+| `__AUTH.__objc_data` | `0x4fd0` | `0x5020` | **`+0x50`** |
+| `__DATA.__objc_ivar` | `0x19f8` | `0x1a40` | **`+0x48`** |
+| `__TEXT.__cstring` | `0xd784` | `0xd7c1` | **`+0x3d`** |
+| `__TEXT.__oslogstring` | `0x25bb` | `0x25f0` | **`+0x35`** |
+| `__TEXT.__gcc_except_tab` | `0x3510` | `0x3544` | **`+0x34`** |
+| `__DATA_CONST.__got` | `0xe70` | `0xe90` | **`+0x20`** |
+| `__TEXT.__const` | `0x39c0` | `0x39b0` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x820` | `0x828` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x6d0` | `0x6d8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.235.0.0
--  __TEXT.__text: 0xf7e74
--  __TEXT.__objc_methlist: 0x11ca8
--  __TEXT.__const: 0x39c0
 +916.40.110.0.0
-+  __TEXT.__text: 0xf977c
-+  __TEXT.__objc_methlist: 0x11ed8
-+  __TEXT.__const: 0x39b0
-   __TEXT.__constg_swiftt: 0x244
-   __TEXT.__swift5_typeref: 0x125e
-   __TEXT.__swift5_builtin: 0x3c
 
-   __TEXT.__swift5_types: 0x1c
-   __TEXT.__swift5_fieldmd: 0x7c8
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__cstring: 0xd784
--  __TEXT.__gcc_except_tab: 0x3510
--  __TEXT.__oslogstring: 0x25bb
-+  __TEXT.__cstring: 0xd7c1
-+  __TEXT.__gcc_except_tab: 0x3544
-+  __TEXT.__oslogstring: 0x25f0
-   __TEXT.__ustring: 0x3c
--  __TEXT.__unwind_info: 0x5700
-+  __TEXT.__unwind_info: 0x5790
-   __TEXT.__eh_frame: 0x304
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4df8
--  __DATA_CONST.__objc_classlist: 0x820
-+  __DATA_CONST.__const: 0x4e60
-+  __DATA_CONST.__objc_classlist: 0x828
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x2d0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7f38
-+  __DATA_CONST.__objc_selrefs: 0x8080
-   __DATA_CONST.__objc_protorefs: 0x28
--  __DATA_CONST.__objc_superrefs: 0x6d0
-+  __DATA_CONST.__objc_superrefs: 0x6d8
-   __DATA_CONST.__objc_arraydata: 0xb18
--  __DATA_CONST.__got: 0xe70
-+  __DATA_CONST.__got: 0xe90
-   __AUTH_CONST.__const: 0xd98
-   __AUTH_CONST.__cfstring: 0x7d00
--  __AUTH_CONST.__objc_const: 0x22d20
-+  __AUTH_CONST.__objc_const: 0x23118
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x2010
-   __AUTH_CONST.__objc_arrayobj: 0x78
-   __AUTH_CONST.__auth_got: 0x12a8
--  __AUTH.__objc_data: 0x4fd0
-+  __AUTH.__objc_data: 0x5020
-   __AUTH.__data: 0x338
--  __DATA.__objc_ivar: 0x19f8
-+  __DATA.__objc_ivar: 0x1a40
-   __DATA.__data: 0x2768
-   __DATA.__common: 0x20
-   __DATA_DIRTY.__objc_data: 0x140
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6755
--  Symbols:   15063
+-  Symbols:   11643
 -  CStrings:  1893
 +  Functions: 6808
-+  Symbols:   15179
++  Symbols:   11725
 +  CStrings:  1895
- 
 Symbols:
 + +[PXGDisplayAssetPlaceholderConfiguration configurationWithPlaceholderStyle:]
 + -[PXGDecoratingLayout _effectiveActiveDecorationIndexes]
@@ -318,40 +277,6 @@ Symbols:
 + ___block_descriptor_40_e54_v48?0{CGRect={CGPoint=dd}{CGSize=dd}}8^{CGContext=}40l
 + ___block_descriptor_56_e8_32s_e40_v16?0"UIGraphicsImageRendererContext"8ls32l8
 + ___block_descriptor_80_e54_v48?0{CGRect={CGPoint=dd}{CGSize=dd}}8^{CGContext=}40l
-+ _objc_msgSend$_effectiveActiveDecorationIndexes
-+ _objc_msgSend$_newSymbolImageWithUserInterfaceStyle:scale:outSizePoints:
-+ _objc_msgSend$_resolvedColor:forUserInterfaceStyle:
-+ _objc_msgSend$_retireViewInfoForSpriteIndex:
-+ _objc_msgSend$_setEffectiveActiveDecorationIndexes:
-+ _objc_msgSend$_setNoThumbnailPlaceholderMinPixelSideLength:
-+ _objc_msgSend$_updateNoThumbnailPlaceholderImages
-+ _objc_msgSend$_updateProviderPlaceholderConfiguration
-+ _objc_msgSend$checkmarkBackgroundColor
-+ _objc_msgSend$checkmarkForegroundColor
-+ _objc_msgSend$configurationWithPlaceholderStyle:
-+ _objc_msgSend$createPlaceholderImageForUserInterfaceStyle:scale:ignoringSymbol:
-+ _objc_msgSend$drawInRect:
-+ _objc_msgSend$focusRingThickness
-+ _objc_msgSend$focusRingThicknessInLayout:
-+ _objc_msgSend$imageWithActions:
-+ _objc_msgSend$initWithBackgroundColor:
-+ _objc_msgSend$initWithBackgroundColor:systemImageName:symbolConfiguration:
-+ _objc_msgSend$initWithBackgroundColor:systemImageName:symbolConfiguration:minimumSideLength:
-+ _objc_msgSend$initWithSize:format:
-+ _objc_msgSend$minimumSideLength
-+ _objc_msgSend$preferredFormat
-+ _objc_msgSend$removeActiveDecorations:
-+ _objc_msgSend$resolvedDarkColor
-+ _objc_msgSend$resolvedLightColor
-+ _objc_msgSend$setCustomAssetImageViewsNeedReconfiguration
-+ _objc_msgSend$setNoThumbnailPlaceholderConfiguration:
-+ _objc_msgSend$setNoThumbnailPlaceholderImageDarkSmall:
-+ _objc_msgSend$setNoThumbnailPlaceholderImageLightSmall:
-+ _objc_msgSend$smallPlaceholderImage
-+ _objc_msgSend$symbolConfiguration
-+ _objc_msgSend$systemImageName
-+ _objc_msgSend$systemImageNamed:withConfiguration:
-+ _objc_msgSend$traitCollectionWithUserInterfaceStyle:
 - GCC_except_table1247
 - GCC_except_table1248
 - GCC_except_table1348

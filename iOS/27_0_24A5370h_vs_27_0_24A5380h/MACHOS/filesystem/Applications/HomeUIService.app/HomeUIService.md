@@ -2,97 +2,66 @@
 
 > `/Applications/HomeUIService.app/HomeUIService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7b424` | `0x7d16c` | **`+0x1d48`** |
+| `__TEXT.__objc_methname` | `0x15dba` | `0x163f6` | **`+0x63c`** |
+| `__TEXT.__objc_stubs` | `0xf180` | `0xf6a0` | **`+0x520`** |
+| `__DATA.__objc_const` | `0xd6d8` | `0xd8b8` | **`+0x1e0`** |
+| `__DATA_CONST.__cfstring` | `0x46c0` | `0x48a0` | **`+0x1e0`** |
+| `__TEXT.__objc_methlist` | `0x7b34` | `0x7ccc` | **`+0x198`** |
+| `__DATA.__objc_selrefs` | `0x50a8` | `0x5218` | **`+0x170`** |
+| `__TEXT.__cstring` | `0x94d1` | `0x9601` | **`+0x130`** |
+| `__TEXT.__gcc_except_tab` | `0xb00` | `0xc00` | **`+0x100`** |
+| `__TEXT.__oslogstring` | `0x8912` | `0x8842` | **`-0xd0`** |
+| `__DATA_CONST.__const` | `0x31b8` | `0x3250` | **`+0x98`** |
+| `__TEXT.__unwind_info` | `0x1dc8` | `0x1e60` | **`+0x98`** |
+| `__DATA_CONST.__got` | `0xc10` | `0xc60` | **`+0x50`** |
+| `__DATA.__objc_ivar` | `0x69c` | `0x6c4` | **`+0x28`** |
+| `__TEXT.__auth_stubs` | `0x13b0` | `0x13d0` | **`+0x20`** |
+| `__TEXT.__objc_methtype` | `0x3dce` | `0x3de9` | **`+0x1b`** |
+| `__DATA_CONST.__auth_got` | `0x9e8` | `0x9f8` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x7b424
--  __TEXT.__auth_stubs: 0x13b0
--  __TEXT.__objc_stubs: 0xf180
--  __TEXT.__objc_methlist: 0x7b34
-+  __TEXT.__text: 0x7d16c
-+  __TEXT.__auth_stubs: 0x13d0
-+  __TEXT.__objc_stubs: 0xf6a0
-+  __TEXT.__objc_methlist: 0x7ccc
-   __TEXT.__const: 0x7a4
--  __TEXT.__cstring: 0x94d1
--  __TEXT.__oslogstring: 0x8912
-+  __TEXT.__cstring: 0x9601
-+  __TEXT.__oslogstring: 0x8842
-   __TEXT.__objc_classname: 0x158d
--  __TEXT.__objc_methtype: 0x3dce
--  __TEXT.__gcc_except_tab: 0xb00
--  __TEXT.__objc_methname: 0x15dba
-+  __TEXT.__objc_methtype: 0x3de9
-+  __TEXT.__gcc_except_tab: 0xc00
-+  __TEXT.__objc_methname: 0x163f6
-   __TEXT.__dlopen_cstrs: 0x52
-   __TEXT.__swift5_typeref: 0x9b2
-   __TEXT.__swift5_capture: 0x11c
+-1227.0.0.0.1
++1232.3.0.0.0
 
-   __TEXT.__swift5_proto: 0x20
-   __TEXT.__swift5_types: 0x20
-   __TEXT.__swift5_builtin: 0x14
--  __TEXT.__unwind_info: 0x1dc8
-+  __TEXT.__unwind_info: 0x1e60
-   __TEXT.__eh_frame: 0x640
--  __DATA_CONST.__const: 0x31b8
--  __DATA_CONST.__cfstring: 0x46c0
-+  __DATA_CONST.__const: 0x3250
-+  __DATA_CONST.__cfstring: 0x48a0
-   __DATA_CONST.__objc_classlist: 0x3f8
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x190
-
-   __DATA_CONST.__objc_arraydata: 0xc8
-   __DATA_CONST.__objc_arrayobj: 0x78
-   __DATA_CONST.__objc_doubleobj: 0x10
--  __DATA_CONST.__auth_got: 0x9e8
--  __DATA_CONST.__got: 0xc10
-+  __DATA_CONST.__auth_got: 0x9f8
-+  __DATA_CONST.__got: 0xc60
-   __DATA_CONST.__auth_ptr: 0x258
--  __DATA.__objc_const: 0xd6d8
--  __DATA.__objc_selrefs: 0x50a8
--  __DATA.__objc_ivar: 0x69c
-+  __DATA.__objc_const: 0xd8b8
-+  __DATA.__objc_selrefs: 0x5218
-+  __DATA.__objc_ivar: 0x6c4
-   __DATA.__objc_data: 0x2770
-   __DATA.__data: 0x1920
-   __DATA.__bss: 0x4e0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2851
 -  Symbols:   843
--  CStrings:  5816
+-  CStrings:  5222
 +  Functions: 2891
 +  Symbols:   848
-+  CStrings:  5908
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
++  CStrings:  5294
 Symbols:
 + _$s4Home24HFHapticFeedbackProviderC7prewarmyyF
 + _OBJC_CLASS_$_HUProximityAssetImage
@@ -212,5 +181,4 @@ CStrings:
 - "fetchPrimaryImage timed out after %.1fs"
 - "isContinuingSetupInHomeApp"
 - "setIsContinuingSetupInHomeApp:"
-
 ```

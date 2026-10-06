@@ -2,140 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/CompanionSetupKit.framework/CompanionSetupKit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4039e0` | `0x40b1bc` | **`+0x77dc`** |
+| `__TEXT.__eh_frame` | `0x35230` | `0x35618` | **`+0x3e8`** |
+| `__TEXT.__const` | `0x2ce90` | `0x2d240` | **`+0x3b0`** |
+| `__TEXT.__oslogstring` | `0x8775` | `0x8a75` | **`+0x300`** |
+| `__TEXT.__cstring` | `0xb7ad` | `0xb93d` | **`+0x190`** |
+| `__TEXT.__unwind_info` | `0x12640` | `0x127b0` | **`+0x170`** |
+| `__AUTH_CONST.__const` | `0x18828` | `0x18968` | **`+0x140`** |
+| `__DATA.__bss` | `0x45200` | `0x45300` | **`+0x100`** |
+| `__TEXT.__swift5_typeref` | `0x97a0` | `0x9880` | **`+0xe0`** |
+| `__AUTH_CONST.__objc_const` | `0x7038` | `0x7110` | **`+0xd8`** |
+| `__DATA.__data` | `0x89e8` | `0x8ab8` | **`+0xd0`** |
+| `__AUTH.__data` | `0x5470` | `0x5520` | **`+0xb0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1820` | `0x18b8` | **`+0x98`** |
+| `__TEXT.__swift_as_ret` | `0x153c` | `0x15d4` | **`+0x98`** |
+| `__TEXT.__constg_swiftt` | `0x690c` | `0x6990` | **`+0x84`** |
+| `__TEXT.__swift_as_entry` | `0x1068` | `0x10ec` | **`+0x84`** |
+| `__TEXT.__swift5_fieldmd` | `0x9034` | `0x90ac` | **`+0x78`** |
+| `__TEXT.__swift5_reflstr` | `0x7ade` | `0x7b3e` | **`+0x60`** |
+| `__TEXT.__swift_as_cont` | `0x35e4` | `0x3634` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x12e0` | `0x1318` | **`+0x38`** |
+| `__TEXT.__swift5_assocty` | `0x14e0` | `0x1510` | **`+0x30`** |
+| `__TEXT.__swift5_capture` | `0x36e4` | `0x370c` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x11c8` | `0x11e8` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x2510` | `0x2528` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0xa84` | `0xa90` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x270` | `0x278` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x2288` | `0x2290` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -524.0.26.0.0
--  __TEXT.__text: 0x4039e0
 +524.0.38.0.0
-+  __TEXT.__text: 0x40b1bc
-   __TEXT.__objc_methlist: 0x108c
--  __TEXT.__const: 0x2ce90
--  __TEXT.__swift5_typeref: 0x97a0
--  __TEXT.__constg_swiftt: 0x690c
--  __TEXT.__swift5_reflstr: 0x7ade
--  __TEXT.__swift5_fieldmd: 0x9034
-+  __TEXT.__const: 0x2d240
-+  __TEXT.__swift5_typeref: 0x9880
-+  __TEXT.__constg_swiftt: 0x6990
-+  __TEXT.__swift5_reflstr: 0x7b3e
-+  __TEXT.__swift5_fieldmd: 0x90ac
-   __TEXT.__swift5_builtin: 0x294
--  __TEXT.__swift5_assocty: 0x14e0
--  __TEXT.__swift5_proto: 0x2288
--  __TEXT.__swift5_types: 0xa84
--  __TEXT.__cstring: 0xb7ad
--  __TEXT.__swift5_capture: 0x36e4
--  __TEXT.__oslogstring: 0x8775
-+  __TEXT.__swift5_assocty: 0x1510
-+  __TEXT.__swift5_proto: 0x2290
-+  __TEXT.__swift5_types: 0xa90
-+  __TEXT.__cstring: 0xb93d
-+  __TEXT.__swift5_capture: 0x370c
-+  __TEXT.__oslogstring: 0x8a75
-   __TEXT.__swift5_protos: 0x30
--  __TEXT.__swift_as_entry: 0x1068
--  __TEXT.__swift_as_cont: 0x35e4
-+  __TEXT.__swift_as_entry: 0x10ec
-+  __TEXT.__swift_as_cont: 0x3634
-   __TEXT.__swift5_mpenum: 0xd0
--  __TEXT.__swift_as_ret: 0x153c
-+  __TEXT.__swift_as_ret: 0x15d4
-   __TEXT.__gcc_except_tab: 0x14c
--  __TEXT.__unwind_info: 0x12640
--  __TEXT.__eh_frame: 0x35230
-+  __TEXT.__unwind_info: 0x127b0
-+  __TEXT.__eh_frame: 0x35618
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x11c8
--  __DATA_CONST.__objc_classlist: 0x270
-+  __DATA_CONST.__const: 0x11e8
-+  __DATA_CONST.__objc_classlist: 0x278
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x118
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1820
-+  __DATA_CONST.__objc_selrefs: 0x18b8
-   __DATA_CONST.__objc_protorefs: 0x80
-   __DATA_CONST.__objc_superrefs: 0x38
-   __DATA_CONST.__objc_arraydata: 0x28
--  __DATA_CONST.__got: 0x12e0
--  __AUTH_CONST.__const: 0x18828
-+  __DATA_CONST.__got: 0x1318
-+  __AUTH_CONST.__const: 0x18968
-   __AUTH_CONST.__cfstring: 0x220
--  __AUTH_CONST.__objc_const: 0x7038
-+  __AUTH_CONST.__objc_const: 0x7110
-   __AUTH_CONST.__objc_intobj: 0x48
-   __AUTH_CONST.__objc_arrayobj: 0x78
--  __AUTH_CONST.__auth_got: 0x2510
-+  __AUTH_CONST.__auth_got: 0x2528
-   __AUTH.__objc_data: 0x1c90
--  __AUTH.__data: 0x5470
-+  __AUTH.__data: 0x5520
-   __DATA.__objc_ivar: 0x48
--  __DATA.__data: 0x89e8
--  __DATA.__bss: 0x45200
-+  __DATA.__data: 0x8ab8
-+  __DATA.__bss: 0x45300
-   __DATA.__common: 0x3c8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
-   - /System/Library/PrivateFrameworks/AudioPasscode.framework/AudioPasscode
-   - /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit
 +  - /System/Library/PrivateFrameworks/AuthKitUI.framework/AuthKitUI
-   - /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/CoreCDP.framework/CoreCDP
 
-   - /System/Library/PrivateFrameworks/CoreUtils.framework/CoreUtils
-   - /System/Library/PrivateFrameworks/CoreUtilsSwift.framework/CoreUtilsSwift
-   - /System/Library/PrivateFrameworks/CoreWiFi.framework/CoreWiFi
 +  - /System/Library/PrivateFrameworks/DMCEnrollmentLibrary.framework/DMCEnrollmentLibrary
 +  - /System/Library/PrivateFrameworks/DMCEnrollmentProvider.framework/DMCEnrollmentProvider
-   - /System/Library/PrivateFrameworks/DeviceIdentity.framework/DeviceIdentity
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/FindMyLocate.framework/FindMyLocate
 
-   - /System/Library/PrivateFrameworks/SettingsFoundation.framework/SettingsFoundation
-   - /System/Library/PrivateFrameworks/SetupAssistant.framework/SetupAssistant
-   - /System/Library/PrivateFrameworks/Sharing.framework/Sharing
 +  - /System/Library/PrivateFrameworks/SiriCrossDeviceArbitration.framework/SiriCrossDeviceArbitration
-   - /System/Library/PrivateFrameworks/SiriSetup.framework/SiriSetup
-   - /System/Library/PrivateFrameworks/SoftwareUpdateController.framework/SoftwareUpdateController
-   - /System/Library/PrivateFrameworks/SpeakerRecognition.framework/SpeakerRecognition
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 17924
--  Symbols:   5505
+-  Symbols:   4914
 -  CStrings:  2305
 +  Functions: 18015
-+  Symbols:   5545
++  Symbols:   4935
 +  CStrings:  2333
- 
 Symbols:
 + _OBJC_CLASS_$_AKAppleIDAuthenticationController
 + _OBJC_CLASS_$_AKAppleIDAuthenticationInAppContext
@@ -156,25 +74,6 @@ Symbols:
 + ___swift_memcpy505_8
 + _flat unique So14NSSecureCoding_p
 + _keypath_set.52Tm
-+ _objc_msgSend$authenticateWithContext:completion:
-+ _objc_msgSend$currentCoordinator
-+ _objc_msgSend$endAdvertisingAfterDelay:
-+ _objc_msgSend$installWiFiProfileIfNeeded:
-+ _objc_msgSend$languageStrings
-+ _objc_msgSend$localeString
-+ _objc_msgSend$returnToServiceFlowCompleted
-+ _objc_msgSend$setAltDSID:
-+ _objc_msgSend$setAuthenticationType:
-+ _objc_msgSend$setIsUsernameEditable:
-+ _objc_msgSend$setNeedsRepair:
-+ _objc_msgSend$setUsername:
-+ _objc_msgSend$setupAssistantDidFinishWithCompletion:
-+ _objc_msgSend$setupEnabled:
-+ _objc_msgSend$shouldDoReturnToService
-+ _objc_msgSend$startAdvertisingForPHSSetupAfterDelay:maxInterval:
-+ _objc_msgSend$startInBuddyEnrollmentFlowRestartIfFail:completionHandler:
-+ _objc_msgSend$stopListening:
-+ _objc_msgSend$username
 + _symbolic ScCySb_____G s5NeverO
 + _symbolic So15SCDACoordinatorC
 + _symbolic So24DMCReturnToServiceHelperCSgSg

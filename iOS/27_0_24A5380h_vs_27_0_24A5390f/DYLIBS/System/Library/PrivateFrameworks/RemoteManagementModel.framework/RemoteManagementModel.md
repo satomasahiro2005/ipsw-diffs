@@ -2,80 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/RemoteManagementModel.framework/RemoteManagementModel`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__DATA.__data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__objc_data` | `0x2148` | `0x33e0` | **`+0x1298`** |
+| `__AUTH.__objc_data` | `0x1298` | `0xa0` | **`-0x11f8`** |
+| `__TEXT.__text` | `0x55e38` | `0x56ef4` | **`+0x10bc`** |
+| `__AUTH_CONST.__objc_const` | `0xecb8` | `0xf068` | **`+0x3b0`** |
+| `__AUTH_CONST.__cfstring` | `0x7340` | `0x7540` | **`+0x200`** |
+| `__TEXT.__objc_methlist` | `0x81a4` | `0x8394` | **`+0x1f0`** |
+| `__TEXT.__cstring` | `0x4a22` | `0x4b85` | **`+0x163`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2200` | `0x2298` | **`+0x98`** |
+| `__DATA.__objc_ivar` | `0x874` | `0x8a4` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x1458` | `0x1488` | **`+0x30`** |
+| `__AUTH_CONST.__objc_intobj` | `0x2a48` | `0x2a60` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x600` | `0x610` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x530` | `0x540` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x420` | `0x430` | **`+0x10`** |
+
+### Other Changes
 
 ```diff
 
 -624.0.8.0.0
--  __TEXT.__text: 0x55e38
--  __TEXT.__objc_methlist: 0x81a4
 +624.0.10.0.0
-+  __TEXT.__text: 0x56ef4
-+  __TEXT.__objc_methlist: 0x8394
-   __TEXT.__const: 0x68
--  __TEXT.__cstring: 0x4a22
-+  __TEXT.__cstring: 0x4b85
-   __TEXT.__oslogstring: 0x5dc
--  __TEXT.__unwind_info: 0x1458
-+  __TEXT.__unwind_info: 0x1488
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x880
--  __DATA_CONST.__objc_classlist: 0x530
-+  __DATA_CONST.__objc_classlist: 0x540
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2200
--  __DATA_CONST.__objc_superrefs: 0x420
-+  __DATA_CONST.__objc_selrefs: 0x2298
-+  __DATA_CONST.__objc_superrefs: 0x430
-   __DATA_CONST.__objc_arraydata: 0x32f0
--  __DATA_CONST.__got: 0x600
-+  __DATA_CONST.__got: 0x610
-   __AUTH_CONST.__const: 0xa80
--  __AUTH_CONST.__cfstring: 0x7340
--  __AUTH_CONST.__objc_const: 0xecb8
-+  __AUTH_CONST.__cfstring: 0x7540
-+  __AUTH_CONST.__objc_const: 0xf068
-   __AUTH_CONST.__objc_arrayobj: 0x4fb0
--  __AUTH_CONST.__objc_intobj: 0x2a48
-+  __AUTH_CONST.__objc_intobj: 0x2a60
-   __AUTH_CONST.__auth_got: 0x1f0
--  __AUTH.__objc_data: 0x1298
--  __DATA.__objc_ivar: 0x874
-+  __AUTH.__objc_data: 0xa0
-+  __DATA.__objc_ivar: 0x8a4
-   __DATA.__data: 0x1e0
-   __DATA.__bss: 0x1b0
--  __DATA_DIRTY.__objc_data: 0x2148
-+  __DATA_DIRTY.__objc_data: 0x33e0
-   __DATA_DIRTY.__data: 0x10
-   __DATA_DIRTY.__bss: 0x68
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/PrivateFrameworks/DMCUtilities.framework/DMCUtilities
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2689
--  Symbols:   5821
+-  Symbols:   4972
 -  CStrings:  983
 +  Functions: 2729
-+  Symbols:   5907
++  Symbols:   5042
 +  CStrings:  999
- 
 Symbols:
 + +[RMModelAccountCalDAVDeclaration buildWithIdentifier:visibleName:hostName:port:path:authenticationCredentialsAssetReference:VPNUUID:]
 + +[RMModelAccountExchangeDeclaration buildWithIdentifier:visibleName:enabledProtocolTypes:userIdentityAssetReference:hostName:port:path:externalHostName:externalPort:externalPath:graphHostName:oAuth:authenticationCredentialsAssetReference:authenticationIdentityAssetReference:SMIME:allowMove:allowAppSheet:allowMailRecentsSyncing:enableMailDrop:mailNumberOfPastDaysToSync:mailServiceActive:lockMailService:contactsServiceActive:lockContactsService:calendarServiceActive:lockCalendarService:remindersServiceActive:lockRemindersService:notesServiceActive:lockNotesService:VPNUUID:communicationServiceRules:]
@@ -151,22 +109,6 @@ Symbols:
 + __OBJC_METACLASS_RO_$_RMModelAccountExchangeDeclaration_CommunicationServiceRulesDefaultServiceHandlers
 + ___62-[RMModelAccountExchangeDeclaration serializePayloadWithType:]_block_invoke_4
 + ___81-[RMModelAccountExchangeDeclaration_CommunicationServiceRules serializeWithType:]_block_invoke
-+ _objc_msgSend$payloadAllowAppSheet
-+ _objc_msgSend$payloadAllowMailRecentsSyncing
-+ _objc_msgSend$payloadAllowMove
-+ _objc_msgSend$payloadAudioCall
-+ _objc_msgSend$payloadCommunicationServiceRules
-+ _objc_msgSend$payloadDefaultServiceHandlers
-+ _objc_msgSend$payloadEnableMailDrop
-+ _objc_msgSend$payloadMailNumberOfPastDaysToSync
-+ _objc_msgSend$setPayloadAllowAppSheet:
-+ _objc_msgSend$setPayloadAllowMailRecentsSyncing:
-+ _objc_msgSend$setPayloadAllowMove:
-+ _objc_msgSend$setPayloadAudioCall:
-+ _objc_msgSend$setPayloadCommunicationServiceRules:
-+ _objc_msgSend$setPayloadDefaultServiceHandlers:
-+ _objc_msgSend$setPayloadEnableMailDrop:
-+ _objc_msgSend$setPayloadMailNumberOfPastDaysToSync:
 - +[RMModelAccountCalDAVDeclaration buildWithIdentifier:visibleName:hostName:port:path:authenticationCredentialsAssetReference:]
 - +[RMModelAccountExchangeDeclaration buildWithIdentifier:visibleName:enabledProtocolTypes:userIdentityAssetReference:hostName:port:path:externalHostName:externalPort:externalPath:graphHostName:oAuth:authenticationCredentialsAssetReference:authenticationIdentityAssetReference:SMIME:mailServiceActive:lockMailService:contactsServiceActive:lockContactsService:calendarServiceActive:lockCalendarService:remindersServiceActive:lockRemindersService:notesServiceActive:lockNotesService:]
 - +[RMModelAccountLDAPDeclaration buildWithIdentifier:visibleName:hostName:port:authenticationCredentialsAssetReference:searchSettings:]

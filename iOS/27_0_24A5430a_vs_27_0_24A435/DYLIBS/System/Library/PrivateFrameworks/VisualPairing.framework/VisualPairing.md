@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/VisualPairing.framework/VisualPairing`
 
-```diff
+### Section Size Changes
 
- 205.100.1.0.0
--  __TEXT.__text: 0x1df10
-+  __TEXT.__text: 0x1e000
-   __TEXT.__objc_methlist: 0x774
-   __TEXT.__const: 0x34bd4
-   __TEXT.__cstring: 0xc2d
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1df10` | `0x1e000` | **`+0xf0`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN19ConvolutionCodec1_315ConvDecodeSoft2EPcPKiiPiS3_ : 1292 -> 1320
 ~ __ZN7EmbedKE17OutputWmAsHFloatsEPvjjjjhffffff : 328 -> 340

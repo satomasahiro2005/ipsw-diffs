@@ -2,6 +2,15 @@
 
 > `/usr/libexec/keychainsharingmessagingd`
 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__eh_frame : content changed
+### Same-size Content Changes
+
+- `__TEXT.__const`
+- `__TEXT.__eh_frame`
+
+### Other Changes
+
+```diff
+
+-62460.0.22.0.0
++62460.0.38.0.1
+```

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/DeviceSharingEnrollmentServices.framework/DeviceSharingEnrollmentServices`
 
-```diff
+### Section Size Changes
 
- 40.0.2.0.0
--  __TEXT.__text: 0x107bc
-+  __TEXT.__text: 0x107c0
-   __TEXT.__objc_methlist: 0x70
-   __TEXT.__const: 0x1be0
-   __TEXT.__cstring: 0x8ba
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x107bc` | `0x107c0` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_25eeddc00 -> sub_25fbd8c00 : 968 -> 972
+~ sub_25edacc00 -> sub_25fabcc00 : 968 -> 972
 ```

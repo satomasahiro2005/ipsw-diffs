@@ -2,96 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/SiriMailUI.framework/SiriMailUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift5_protos`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5ab5c` | `0x5c164` | **`+0x1608`** |
+| `__TEXT.__swift5_typeref` | `0x8c15` | `0x906f` | **`+0x45a`** |
+| `__TEXT.__const` | `0x45c8` | `0x4738` | **`+0x170`** |
+| `__AUTH_CONST.__const` | `0x2120` | `0x2218` | **`+0xf8`** |
+| `__TEXT.__eh_frame` | `0x1188` | `0x11c8` | **`+0x40`** |
+| `__DATA.__data` | `0x1ce8` | `0x1d20` | **`+0x38`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6a0` | `0x6d8` | **`+0x38`** |
+| `__DATA.__bss` | `0x4300` | `0x4330` | **`+0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0x11b4` | `0x11dc` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x15b8` | `0x15e0` | **`+0x28`** |
+| `__TEXT.__constg_swiftt` | `0xf7c` | `0xf9c` | **`+0x20`** |
+| `__TEXT.__cstring` | `0xa01` | `0xa21` | **`+0x20`** |
+| `__TEXT.__oslogstring` | `0x9fc` | `0xa1c` | **`+0x20`** |
+| `__TEXT.__swift5_capture` | `0x6c0` | `0x6e0` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x16a8` | `0x1690` | **`-0x18`** |
+| `__TEXT.__swift5_builtin` | `0x78` | `0x8c` | **`+0x14`** |
+| `__TEXT.__swift5_reflstr` | `0xede` | `0xeee` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0xf8` | `0xfc` | **`+0x4`** |
+| `__TEXT.__swift_as_cont` | `0x88` | `0x8c` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -3600.23.10.0.0
--  __TEXT.__text: 0x5ab5c
 +3600.23.14.0.0
-+  __TEXT.__text: 0x5c164
-   __TEXT.__objc_methlist: 0x674
--  __TEXT.__const: 0x45c8
--  __TEXT.__oslogstring: 0x9fc
--  __TEXT.__swift5_typeref: 0x8c15
--  __TEXT.__constg_swiftt: 0xf7c
--  __TEXT.__swift5_reflstr: 0xede
--  __TEXT.__swift5_fieldmd: 0x11b4
--  __TEXT.__swift5_builtin: 0x78
-+  __TEXT.__const: 0x4738
-+  __TEXT.__oslogstring: 0xa1c
-+  __TEXT.__swift5_typeref: 0x906f
-+  __TEXT.__constg_swiftt: 0xf9c
-+  __TEXT.__swift5_reflstr: 0xeee
-+  __TEXT.__swift5_fieldmd: 0x11dc
-+  __TEXT.__swift5_builtin: 0x8c
-   __TEXT.__swift5_assocty: 0x358
-   __TEXT.__swift5_proto: 0x200
--  __TEXT.__swift5_types: 0xf8
--  __TEXT.__swift5_capture: 0x6c0
--  __TEXT.__cstring: 0xa01
-+  __TEXT.__swift5_types: 0xfc
-+  __TEXT.__swift5_capture: 0x6e0
-+  __TEXT.__cstring: 0xa21
-   __TEXT.__swift_as_entry: 0x1c
-   __TEXT.__swift_as_ret: 0x40
--  __TEXT.__swift_as_cont: 0x88
-+  __TEXT.__swift_as_cont: 0x8c
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0x15b8
--  __TEXT.__eh_frame: 0x1188
-+  __TEXT.__unwind_info: 0x15e0
-+  __TEXT.__eh_frame: 0x11c8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6a0
-+  __DATA_CONST.__objc_selrefs: 0x6d8
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2120
-+  __AUTH_CONST.__const: 0x2218
-   __AUTH_CONST.__objc_const: 0xc08
--  __AUTH_CONST.__auth_got: 0x16a8
-+  __AUTH_CONST.__auth_got: 0x1690
-   __AUTH.__objc_data: 0x450
-   __AUTH.__data: 0x1060
--  __DATA.__data: 0x1ce8
-+  __DATA.__data: 0x1d20
-   __DATA.__common: 0xb8
--  __DATA.__bss: 0x4300
-+  __DATA.__bss: 0x4330
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2453
--  Symbols:   1273
+-  Symbols:   1159
 -  CStrings:  96
 +  Functions: 2477
-+  Symbols:   1292
++  Symbols:   1171
 +  CStrings:  98
- 
 Symbols:
 + _NSFontAttributeName
 + _OBJC_CLASS_$_NSMutableAttributedString
@@ -100,13 +47,6 @@ Symbols:
 + ___swift_closure_destructor.13Tm
 + ___swift_closure_destructor.16Tm
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA4ViewP07SnippetB0E23onUpdateResponseCommand_7performQrqd__m_yqd__ct0F3Kit0hiJ0Rd__SeRd__SERd__lFQOyAeAE0G10TapGesture5countAHQrSi_yyctFQOyACyACyAA6VStackVyACyACyACyACyACyANyAA05TupleD0VyACyACyACy08SiriMailB0018AppRecipientPickerE0VAA16_FixedSizeLayoutVGAA06_FrameY0VGAQ15AmbientDrawableVG_APyAQ18SendMessageDividerV_ACyACyACyAQ0u4TextE0VAUGAXGA_GQPGSgA9_A2_ACyACyAA6HStackVyAPyAA4TextV_A13_QPGGAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA08_PaddingY0VGA2_APyA2__ACyAQ019AttachmentIndicatorE033_84E5C8C262A1AF17B0E430EDE23C5C7FLLVA_GQPGSgANyAPyAA5GroupVyACyACyACyAQ012MFComposeWebE13RepresentableVA21_GAA05_FlexzY0VGAA21_TraitWritingModifierVyAA0Y16PriorityTraitKeyVGGG_ACyACyAQ012MessageStateE0VA44_GA24_GQPGGQPGGAA34_InsettableBackgroundShapeModifierVyAA5ColorVAA16RoundedRectangleVGGAA11_ClipEffectVyA60_GGAA41_ContainerRoundedRectangularShapeModifierVyA60_GGA24_GA17_yAA11ColorSchemeOGGGAA25_AppearanceActionModifierVGA78_G_Qo__AQ0hs5DraftF0VQo_AA25_AllowsHitTestingModifierVGAaDHPqd0__AaDHD5_A84_HO_A86_AA0E8ModifierHPyHCHC
-+ _objc_msgSend$addAttribute:value:range:
-+ _objc_msgSend$enumerateAttribute:inRange:options:usingBlock:
-+ _objc_msgSend$initWithAttributedString:
-+ _objc_msgSend$mainScreen
-+ _objc_msgSend$overrideUserInterfaceStyle
-+ _objc_msgSend$setOverrideUserInterfaceStyle:
-+ _objc_msgSend$userInterfaceStyle
 + _swift_isEscapingClosureAtFileLocation
 + _swift_retain_x24
 + _symbolic So25NSMutableAttributedStringC

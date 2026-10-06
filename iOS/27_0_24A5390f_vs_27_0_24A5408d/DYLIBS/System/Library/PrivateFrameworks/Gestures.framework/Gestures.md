@@ -2,104 +2,59 @@
 
 > `/System/Library/PrivateFrameworks/Gestures.framework/Gestures`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x435cb0` | `0x481ce0` | **`+0x4c030`** |
+| `__TEXT.__swift5_typeref` | `0x1f62f` | `0x2413d` | **`+0x4b0e`** |
+| `__TEXT.__eh_frame` | `0x30930` | `0x35090` | **`+0x4760`** |
+| `__TEXT.__cstring` | `0xf0ad` | `0x1321d` | **`+0x4170`** |
+| `__TEXT.__unwind_info` | `0xefb8` | `0x10318` | **`+0x1360`** |
+| `__TEXT.__const` | `0x1e7b0` | `0x1f5b0` | **`+0xe00`** |
+| `__AUTH_CONST.__const` | `0x19c10` | `0x1a9d0` | **`+0xdc0`** |
+| `__DATA.__bss` | `0x2ebd0` | `0x2f950` | **`+0xd80`** |
+| `__DATA.__data` | `0x9798` | `0xa0a8` | **`+0x910`** |
+| `__TEXT.__constg_swiftt` | `0x8e28` | `0x92e0` | **`+0x4b8`** |
+| `__AUTH.__data` | `0x4c58` | `0x5008` | **`+0x3b0`** |
+| `__TEXT.__swift5_reflstr` | `0x4894` | `0x4be4` | **`+0x350`** |
+| `__TEXT.__swift5_capture` | `0x18e0` | `0x1b64` | **`+0x284`** |
+| `__TEXT.__swift5_fieldmd` | `0x67c8` | `0x6a10` | **`+0x248`** |
+| `__TEXT.__swift5_assocty` | `0x2528` | `0x2760` | **`+0x238`** |
+| `__AUTH_CONST.__auth_got` | `0x11c8` | `0x12a8` | **`+0xe0`** |
+| `__TEXT.__swift5_proto` | `0x27c8` | `0x28a8` | **`+0xe0`** |
+| `__AUTH_CONST.__objc_const` | `0x3600` | `0x3698` | **`+0x98`** |
+| `__DATA_CONST.__got` | `0x540` | `0x5a0` | **`+0x60`** |
+| `__DATA_DIRTY.__data` | `0x15f0` | `0x15b0` | **`-0x40`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x34` | **`+0x34`** |
+| `__TEXT.__swift5_types` | `0x908` | `0x934` | **`+0x2c`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x20` | **`+0x20`** |
+| `__TEXT.__swift_as_ret` | `—` | `0x20` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x2a8` | `0x2b8` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `0x134` | `0x140` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x158` | `0x160` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x298` | `0x2a0` | **`+0x8`** |
+| `__DATA.__common` | `0x48` | `0x4d` | **`+0x5`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__oslogstring`
+
+### Other Changes
 
 ```diff
 
 -9127.0.79.0.0
--  __TEXT.__text: 0x435cb0
 +9127.0.84.0.0
-+  __TEXT.__text: 0x481ce0
-   __TEXT.__objc_methlist: 0x614
--  __TEXT.__const: 0x1e7b0
-+  __TEXT.__const: 0x1f5b0
-   __TEXT.__gcc_except_tab: 0x10
--  __TEXT.__cstring: 0xf0ad
-+  __TEXT.__cstring: 0x1321d
-   __TEXT.__dlopen_cstrs: 0x6d
--  __TEXT.__constg_swiftt: 0x8e28
--  __TEXT.__swift5_typeref: 0x1f62f
-+  __TEXT.__swift5_typeref: 0x2413d
-+  __TEXT.__swift5_fieldmd: 0x6a10
-+  __TEXT.__constg_swiftt: 0x92e0
-   __TEXT.__swift5_builtin: 0x26c
--  __TEXT.__swift5_reflstr: 0x4894
--  __TEXT.__swift5_fieldmd: 0x67c8
--  __TEXT.__swift5_types: 0x908
--  __TEXT.__swift5_assocty: 0x2528
--  __TEXT.__swift5_proto: 0x27c8
--  __TEXT.__swift5_capture: 0x18e0
--  __TEXT.__oslogstring: 0x1100
--  __TEXT.__swift5_protos: 0x134
-+  __TEXT.__swift5_reflstr: 0x4be4
-+  __TEXT.__swift5_types: 0x934
-+  __TEXT.__swift5_assocty: 0x2760
-+  __TEXT.__swift5_proto: 0x28a8
-+  __TEXT.__swift5_capture: 0x1b64
-   __TEXT.__swift5_mpenum: 0xec
-+  __TEXT.__swift5_protos: 0x140
-+  __TEXT.__oslogstring: 0x1100
-+  __TEXT.__swift_as_entry: 0x20
-+  __TEXT.__swift_as_ret: 0x20
-+  __TEXT.__swift_as_cont: 0x34
-   __TEXT.__swift5_types2: 0xc
--  __TEXT.__unwind_info: 0xefb8
--  __TEXT.__eh_frame: 0x30930
-+  __TEXT.__unwind_info: 0x10318
-+  __TEXT.__eh_frame: 0x35090
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2a8
--  __DATA_CONST.__objc_classlist: 0x158
-+  __DATA_CONST.__const: 0x2b8
-+  __DATA_CONST.__objc_classlist: 0x160
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x298
-+  __DATA_CONST.__objc_selrefs: 0x2a0
-   __DATA_CONST.__objc_protorefs: 0x38
--  __DATA_CONST.__got: 0x540
--  __AUTH_CONST.__const: 0x19c10
--  __AUTH_CONST.__objc_const: 0x3600
--  __AUTH_CONST.__auth_got: 0x11c8
-+  __DATA_CONST.__got: 0x5a0
-+  __AUTH_CONST.__const: 0x1a9d0
-+  __AUTH_CONST.__objc_const: 0x3698
-+  __AUTH_CONST.__auth_got: 0x12a8
-   __AUTH.__objc_data: 0x90
--  __AUTH.__data: 0x4c58
--  __DATA.__data: 0x9798
--  __DATA.__bss: 0x2ebd0
--  __DATA.__common: 0x48
-+  __AUTH.__data: 0x5008
-+  __DATA.__data: 0xa0a8
-+  __DATA.__bss: 0x2f950
-+  __DATA.__common: 0x4d
-   __DATA_DIRTY.__objc_data: 0x228
--  __DATA_DIRTY.__data: 0x15f0
-+  __DATA_DIRTY.__data: 0x15b0
-   __DATA_DIRTY.__bss: 0x1200
-   __DATA_DIRTY.__common: 0x44
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswiftSynchronization.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 +  - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 17089
--  Symbols:   3905
+-  Symbols:   3882
 -  CStrings:  532
 +  Functions: 18173
-+  Symbols:   4117
++  Symbols:   4093
 +  CStrings:  565
- 
 Symbols:
 + _OBJC_CLASS_$_NSJSONSerialization
 + _OBJC_CLASS_$_NSNull
@@ -213,7 +168,6 @@ Symbols:
 + _get_witness_table 8Gestures21MapTransformComponentVyAA17EnvironmentWriterVyAA16ActiveEventTypesVAA08PanValueD0VyAA08VelocityD0VyAA09ThresholdD0VyAA015TrackedCentroidD0VyAA0K10StabilizerVyAA22SeparationDistanceGateVyAA010ExpirationD0VyAA07TimeoutD033_834F97C056057EAA3E17D92190D7BF0CLLVyAA015OutputCombiningD0VyAUyAXyAA015DynamicCombinerD0VyAUyAXyAA08MovementS0VyAA16RegionEdgeFilterVyAA12RegionFilterVyAA0H6SourceVyAA05TouchH0VGGGGAA0K16AwaitingResolverOyA10_GGGGAA19CountGrowthResolverVyA10_GGGGA16_ySayA10_GGGGGGGGSo8CGVectorVGGAA02NoC0VyAgA0jK0VGGAA02TojdK0VGAA07GestureD0HPyHC
 + _get_witness_table 8Gestures21MapTransformComponentVyACyAA05OneOfD0VyAA17EnvironmentWriterVyAA16ActiveEventTypesVAA010ExpirationD0VyAA06RepeatD0VyAA12MovementGateVyAKyAA07TimeoutD033_834F97C056057EAA3E17D92190D7BF0CLLVyAKyAA08DurationO0VyAA08CentroidD0VyAA018SeparationDistanceO0VyAKyARyAA015OutputCombiningD0VyAKyARyAA015DynamicCombinerD0VyAA0J6FilterVyAA0J6SourceVyAA05TouchJ0VGAA21NoCodingConfigurationVGGAA19CountGrowthResolverVyA6_GGGGAA21ValueAwaitingResolverOySayA6_GGGGGGGGA19_ySo7CGPointVGGGGGGAA02NoC0VyAIA29_GGAGyAiA08LocationD0VyAKyAMyAOyAKyARyAKyATyAA20RequiredButtonFilterVyA2_yA4_yAA05MouseJ0VGA9_GGGGA19_yA45_GGGGGGGA38_GGAA03GeteF5ValueVyA29_GGAA011ToLongPressD5ValueVGAA07GestureD0HPyHC
 + _get_witness_table 8Gestures21MapTransformComponentVyACyAA05OneOfD0VyAA17EnvironmentWriterVyAA16ActiveEventTypesVAA08PanValueD0VyAA08VelocityD0VyAA09ThresholdD0VyAA015TrackedCentroidD0VyAA0M10StabilizerVyAA22SeparationDistanceGateVyAA010ExpirationD0VyAA07TimeoutD033_834F97C056057EAA3E17D92190D7BF0CLLVyAA015OutputCombiningD0VyAWyAZyAA015DynamicCombinerD0VyAA12RegionFilterVyAA0J6FilterVyAA0J6SourceVyAA05TouchJ0VGAA21NoCodingConfigurationVGGGAA19CountGrowthResolverVyA10_GGGGAA0M16AwaitingResolverOySayA10_GGGGGGGGSo8CGVectorVGGAA02NoC0VyAiA0lM0VGGAGyAiKyAMyAOyAA0p8LocationD0VyAA13ChangeTrackerVyAA20RequiredButtonFilterVyA4_yA6_yA8_yAA05MouseJ0VGA13_GGGGGGA34_GGA41_GGAA03GetefM0VyA40_GGAA02ToldM0VGAA07GestureD0HPyHC
-+ _objc_msgSend$dataWithJSONObject:options:error:
 + _swift_continuation_await
 + _swift_continuation_init
 + _swift_deletedAsyncMethodErrorTu

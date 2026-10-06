@@ -2,86 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/CoreMediaStream.framework/CoreMediaStream`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__auth_got` | `0x7f8` | `0x0` | **`-0x7f8`** |
+| `__TEXT.__cstring` | `0xa658` | `0xa4b5` | **`-0x1a3`** |
+| `__AUTH_CONST.__objc_const` | `0x9a58` | `0x9bf0` | **`+0x198`** |
+| `__DATA_CONST.__const` | `0x2750` | `0x2870` | **`+0x120`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4198` | `0x4078` | **`-0x120`** |
+| `__AUTH_CONST.__cfstring` | `0x8880` | `0x87e0` | **`-0xa0`** |
+| `__TEXT.__objc_methlist` | `0x82e0` | `0x8240` | **`-0xa0`** |
+| `__TEXT.__oslogstring` | `0xefd1` | `0xef38` | **`-0x99`** |
+| `__TEXT.__text` | `0xcd34c` | `0xcd3e0` | **`+0x94`** |
+| `__TEXT.__const` | `0x248` | `0x1b8` | **`-0x90`** |
+| `__AUTH.__objc_data` | `0x50` | `—` | **`-0x50`** |
+| `__TEXT.__dlopen_cstrs` | `0x47` | `—` | **`-0x47`** |
+| `__TEXT.__unwind_info` | `0x2d80` | `0x2d40` | **`-0x40`** |
+| `__DATA.__bss` | `0x228` | `0x1f8` | **`-0x30`** |
+| `__TEXT.__gcc_except_tab` | `0x2748` | `0x2770` | **`+0x28`** |
+| `__DATA.__objc_ivar` | `0x714` | `0x738` | **`+0x24`** |
+| `__AUTH_CONST.__const` | `0x890` | `0x870` | **`-0x20`** |
+| `__DATA_CONST.__got` | `0x500` | `0x4e8` | **`-0x18`** |
+| `__DATA_DIRTY.__bss` | `0x1b0` | `0x1c0` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x260` | `0x258` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xcd34c
--  __TEXT.__objc_methlist: 0x82e0
--  __TEXT.__const: 0x248
--  __TEXT.__cstring: 0xa658
--  __TEXT.__dlopen_cstrs: 0x47
--  __TEXT.__gcc_except_tab: 0x2748
--  __TEXT.__oslogstring: 0xefd1
--  __TEXT.__unwind_info: 0x2d80
-+  __TEXT.__text: 0xcd3e0
-+  __TEXT.__objc_methlist: 0x8240
-+  __TEXT.__const: 0x1b8
-+  __TEXT.__cstring: 0xa4b5
-+  __TEXT.__gcc_except_tab: 0x2770
-+  __TEXT.__oslogstring: 0xef38
-+  __TEXT.__unwind_info: 0x2d40
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2750
--  __DATA_CONST.__objc_classlist: 0x260
-+  __DATA_CONST.__const: 0x2870
-+  __DATA_CONST.__objc_classlist: 0x258
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_protolist: 0xe0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4198
-+  __DATA_CONST.__objc_selrefs: 0x4078
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x220
--  __DATA_CONST.__got: 0x500
--  __AUTH_CONST.__const: 0x890
--  __AUTH_CONST.__cfstring: 0x8880
--  __AUTH_CONST.__objc_const: 0x9a58
-+  __DATA_CONST.__got: 0x4e8
-+  __AUTH_CONST.__const: 0x870
-+  __AUTH_CONST.__cfstring: 0x87e0
-+  __AUTH_CONST.__objc_const: 0x9bf0
-   __AUTH_CONST.__objc_intobj: 0x48
--  __AUTH_CONST.__auth_got: 0x7f8
--  __AUTH.__objc_data: 0x50
--  __DATA.__objc_ivar: 0x714
-+  __AUTH_CONST.__auth_got: 0x0
-+  __DATA.__objc_ivar: 0x738
-   __DATA.__data: 0xaa0
--  __DATA.__bss: 0x228
-+  __DATA.__bss: 0x1f8
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0x1770
--  __DATA_DIRTY.__bss: 0x1b0
-+  __DATA_DIRTY.__bss: 0x1c0
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-   - /System/Library/Frameworks/Contacts.framework/Contacts
+-910.21.101.0.0
++910.27.103.0.0
 
-   - /System/Library/PrivateFrameworks/MMCS.framework/MMCS
-   - /System/Library/PrivateFrameworks/MobileBackup.framework/MobileBackup
-   - /System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer
 -  - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
+
 -  Functions: 3636
--  Symbols:   11330
--  CStrings:  3400
+-  Symbols:   5821
+-  CStrings:  2308
 +  Functions: 3615
-+  Symbols:   11272
-+  CStrings:  3365
- 
-Sections:
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   5786
++  CStrings:  2278
 Symbols:
 + +[MSASCloudKitPlugin _migrationErrorForCKError:]
 + +[MSProtocolUtilities cancelMigrationToCPLForAlbumWithGUID:personID:clientVersion:completionBlock:]
@@ -391,22 +351,6 @@ Symbols:
 + _kMSASDestinationAssetCountKey
 + _kMSASModelRefreshContentOfAlbumWithGUIDWithCompletionFn
 + _kMSASSourceAssetCountKey
-+ _objc_msgSend$MSASStateMachine:didFinishAlbumSummaryWithAssetCollectionChanges:forAlbum:info:
-+ _objc_msgSend$_migrationErrorForCKError:
-+ _objc_msgSend$cancelMigrationToCPLForAlbumWithGUID:clientVersion:completionBlock:
-+ _objc_msgSend$cancelMigrationToCPLForAlbumWithGUID:personID:clientVersion:completionBlock:
-+ _objc_msgSend$completeMigrationToCPLForAlbumWithGUID:clientOrgKey:personID:clientVersion:sourceAssetCount:destinationAssetCount:completionBlock:
-+ _objc_msgSend$completeMigrationToCPLForAlbumWithGUID:clientVersion:sourceAssetCount:destinationAssetCount:completionBlock:
-+ _objc_msgSend$failMigrationToCPLForAlbumWithGUID:migrationError:clientVersion:completionBlock:
-+ _objc_msgSend$failMigrationToCPLForAlbumWithGUID:migrationError:personID:clientVersion:completionBlock:
-+ _objc_msgSend$initiateMigrationToCPLForAlbumWithGUID:isSilentMigration:clientVersion:sourceAssetCount:completionBlock:
-+ _objc_msgSend$initiateMigrationToCPLForAlbumWithGUID:sharedAlbumTitle:personID:isSilentMigration:clientVersion:sourceAssetCount:completionBlock:
-+ _objc_msgSend$refreshContentOfAlbumWithGUID:resetSync:info:completionBlock:
-+ _objc_msgSend$setClientVersion:
-+ _objc_msgSend$setDestinationAssetCount:
-+ _objc_msgSend$setSourceAssetCount:
-+ _objc_msgSend$unarchiveMigrationToCPLForAlbumWithGUID:clientVersion:completionBlock:
-+ _objc_msgSend$unarchiveMigrationToCPLForAlbumWithGUID:personID:clientVersion:completionBlock:
 - +[MSASDaemonModel defaultModel]
 - +[MSDeleter _clearInstantiatedDeletersByPersonID]
 - +[MSFileUtilities hardlinkOrCopyFileFromPath:toPath:outError:]
@@ -749,39 +693,6 @@ Symbols:
 - _getCKContainerClass.softClass
 - _link
 - _objc_getClass
-- _objc_msgSend$MSDeepCopyWithZone:
-- _objc_msgSend$MSMutableDeepCopy
-- _objc_msgSend$applyUserDefaultOverridesToResponse:
-- _objc_msgSend$backupDeviceUDID
-- _objc_msgSend$backupDeviceUUID
-- _objc_msgSend$cancelMigrationToCPLForAlbumWithGUID:completionBlock:
-- _objc_msgSend$cancelMigrationToCPLForAlbumWithGUID:personID:completionBlock:
-- _objc_msgSend$completeMigrationToCPLForAlbumWithGUID:clientOrgKey:personID:completionBlock:
-- _objc_msgSend$completeMigrationToCPLForAlbumWithGUID:completionBlock:
-- _objc_msgSend$containerWithIdentifier:
-- _objc_msgSend$deleteAssetCollectionWithGUID:personID:info:
-- _objc_msgSend$failMigrationToCPLForAlbumWithGUID:migrationError:completionBlock:
-- _objc_msgSend$failMigrationToCPLForAlbumWithGUID:migrationError:personID:completionBlock:
-- _objc_msgSend$fetchCurrentDeviceIDWithCompletionHandler:
-- _objc_msgSend$getCharacters:range:
-- _objc_msgSend$handleFailureInFunction:file:lineNumber:description:
-- _objc_msgSend$initWithBytesNoCopy:length:encoding:freeWhenDone:
-- _objc_msgSend$initWithContentsOfFile:options:error:
-- _objc_msgSend$initiateMigrationToCPLForAlbumWithGUID:isSilentMigration:completionBlock:
-- _objc_msgSend$initiateMigrationToCPLForAlbumWithGUID:sharedAlbumTitle:personID:isSilentMigration:completionBlock:
-- _objc_msgSend$logFacility:level:format:args:
-- _objc_msgSend$logFile:func:line:facility:level:format:args:
-- _objc_msgSend$longValue
-- _objc_msgSend$markAlbumGUIDAsViewed:personID:info:
-- _objc_msgSend$ownSubscribedStream
-- _objc_msgSend$refreshAccessControlListOfAlbumWithGUID:personID:info:
-- _objc_msgSend$refreshCommentsForAssetCollectionWithGUID:resetSync:personID:info:
-- _objc_msgSend$rejectInvitationWithGUID:personID:info:
-- _objc_msgSend$resetSync
-- _objc_msgSend$setOriginalLibrarySize:
-- _objc_msgSend$subscribedStreams
-- _objc_msgSend$unarchiveMigrationToCPLForAlbumWithGUID:completionBlock:
-- _objc_msgSend$unarchiveMigrationToCPLForAlbumWithGUID:personID:completionBlock:
 - _strerror
 CStrings:
 + "%{public}@: Failed to fetch asset collection metadata for album %{public}@ (with completion). Error: %{public}@"
@@ -834,5 +745,4 @@ CStrings:
 - "udidLength < UINT32_MAX"
 - "unable to allocate memory for length (%lu)"
 - "void *CloudKitLibrary(void)"
-
 ```

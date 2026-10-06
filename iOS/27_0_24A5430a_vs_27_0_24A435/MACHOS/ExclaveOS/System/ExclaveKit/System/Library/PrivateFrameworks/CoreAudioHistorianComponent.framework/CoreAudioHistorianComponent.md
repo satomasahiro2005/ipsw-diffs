@@ -2,20 +2,21 @@
 
 > `/System/ExclaveKit/System/Library/PrivateFrameworks/CoreAudioHistorianComponent.framework/CoreAudioHistorianComponent`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xdf04` | `0xdf08` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 95.0.0.0.0
--  __TEXT.__text: 0xdf04
-+  __TEXT.__text: 0xdf08
-   __TEXT.__auth_stubs: 0x640
-   __TEXT.__const: 0x510
-   __TEXT.__gcc_except_tab: 0x370
+```text
 Functions:
 ~ __ZNSt3__16vectorI11DeviceEntryNS_9allocatorIS1_EEE6resizeEm : 360 -> 364
 ```

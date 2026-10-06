@@ -2,92 +2,56 @@
 
 > `/System/Library/Assistant/FlowDelegatePlugins/GeoFlowDelegatePlugin.bundle/GeoFlowDelegatePlugin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb2d00` | `0xb44c4` | **`+0x17c4`** |
+| `__DATA.__bss` | `0xa080` | `0xa980` | **`+0x900`** |
+| `__TEXT.__const` | `0x8588` | `0x89f8` | **`+0x470`** |
+| `__DATA_CONST.__const` | `0x5690` | `0x59a8` | **`+0x318`** |
+| `__TEXT.__eh_frame` | `0x590c` | `0x5a3c` | **`+0x130`** |
+| `__TEXT.__swift5_fieldmd` | `0x23bc` | `0x24a4` | **`+0xe8`** |
+| `__TEXT.__unwind_info` | `0x2a70` | `0x2b20` | **`+0xb0`** |
+| `__TEXT.__swift5_typeref` | `0x2304` | `0x23ae` | **`+0xaa`** |
+| `__DATA.__data` | `0x4df8` | `0x4e98` | **`+0xa0`** |
+| `__TEXT.__constg_swiftt` | `0x2b5c` | `0x2bdc` | **`+0x80`** |
+| `__TEXT.__cstring` | `0x3734` | `0x37a4` | **`+0x70`** |
+| `__TEXT.__swift5_reflstr` | `0x1e34` | `0x1e84` | **`+0x50`** |
+| `__TEXT.__swift5_proto` | `0x554` | `0x59c` | **`+0x48`** |
+| `__TEXT.__swift5_assocty` | `0x8b0` | `0x8e0` | **`+0x30`** |
+| `__TEXT.__swift5_types` | `0x280` | `0x290` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_classlist`
 - `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_capture`
 - `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
 - `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_protos`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
+
+### Other Changes
 
 ```diff
 
 -3600.36.14.0.0
--  __TEXT.__text: 0xb2d00
 +3600.36.19.0.0
-+  __TEXT.__text: 0xb44c4
-   __TEXT.__auth_stubs: 0x35c0
-   __TEXT.__objc_stubs: 0xae0
-   __TEXT.__objc_methlist: 0x348
--  __TEXT.__const: 0x8588
--  __TEXT.__cstring: 0x3734
--  __TEXT.__swift5_typeref: 0x2304
-+  __TEXT.__const: 0x89f8
-+  __TEXT.__cstring: 0x37a4
-+  __TEXT.__swift5_typeref: 0x23ae
-   __TEXT.__swift5_capture: 0x70c
-   __TEXT.__oslogstring: 0x27e9
-   __TEXT.__objc_methtype: 0x39c
--  __TEXT.__swift5_reflstr: 0x1e34
--  __TEXT.__swift5_assocty: 0x8b0
-+  __TEXT.__swift5_reflstr: 0x1e84
-+  __TEXT.__swift5_assocty: 0x8e0
-   __TEXT.__objc_classname: 0xd61
-   __TEXT.__objc_methname: 0xd53
--  __TEXT.__constg_swiftt: 0x2b5c
--  __TEXT.__swift5_fieldmd: 0x23bc
-+  __TEXT.__constg_swiftt: 0x2bdc
-+  __TEXT.__swift5_fieldmd: 0x24a4
-   __TEXT.__swift5_builtin: 0x168
-   __TEXT.__swift5_mpenum: 0x58
--  __TEXT.__swift5_proto: 0x554
--  __TEXT.__swift5_types: 0x280
-+  __TEXT.__swift5_proto: 0x59c
-+  __TEXT.__swift5_types: 0x290
-   __TEXT.__swift_as_entry: 0x3a8
-   __TEXT.__swift_as_ret: 0x3fc
-   __TEXT.__swift_as_cont: 0x3c8
-   __TEXT.__swift5_protos: 0x20
--  __TEXT.__unwind_info: 0x2a70
--  __TEXT.__eh_frame: 0x590c
--  __DATA_CONST.__const: 0x5690
-+  __TEXT.__unwind_info: 0x2b20
-+  __TEXT.__eh_frame: 0x5a3c
-+  __DATA_CONST.__const: 0x59a8
-   __DATA_CONST.__objc_classlist: 0x170
-   __DATA_CONST.__objc_protolist: 0xa8
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   __DATA.__objc_const: 0x3df0
-   __DATA.__objc_selrefs: 0x408
-   __DATA.__objc_data: 0x5a8
--  __DATA.__data: 0x4df8
--  __DATA.__bss: 0xa080
-+  __DATA.__data: 0x4e98
-+  __DATA.__bss: 0xa980
-   __DATA.__common: 0x230
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreLocation.framework/CoreLocation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3461
 -  Symbols:   10586
 -  CStrings:  880
 +  Functions: 3530
 +  Symbols:   10786
 +  CStrings:  886
- 
 Symbols:
 + _$s21GeoFlowDelegatePlugin0A10DataModelsO022PlaceDisambiguationMapE5ModelVwetTm
 + _$s21GeoFlowDelegatePlugin0A10DataModelsO022PlaceDisambiguationMapE5ModelVwstTm

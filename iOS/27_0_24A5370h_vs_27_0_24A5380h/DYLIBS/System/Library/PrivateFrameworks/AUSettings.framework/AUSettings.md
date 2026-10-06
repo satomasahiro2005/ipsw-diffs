@@ -2,35 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/AUSettings.framework/AUSettings`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x140` | `0x50` | **`-0xf0`** |
+| `__DATA_DIRTY.__objc_data` | `—` | `0xf0` | **`+0xf0`** |
+| `__DATA.__bss` | `0x20` | `—` | **`-0x20`** |
+| `__DATA_DIRTY.__bss` | `—` | `0x20` | **`+0x20`** |
+
+### Other Changes
+
 ```diff
 
-   __AUTH_CONST.__cfstring: 0xfa0
-   __AUTH_CONST.__objc_const: 0xdc8
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x140
-+  __AUTH.__objc_data: 0x50
-   __DATA.__objc_ivar: 0x8c
-   __DATA.__data: 0x240
--  __DATA.__bss: 0x20
-+  __DATA_DIRTY.__objc_data: 0xf0
-+  __DATA_DIRTY.__bss: 0x20
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /usr/lib/libSystem.B.dylib
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __DATA.__data : content changed
-
+-1587.0.3.0.3
++1587.0.21.0.0
 ```

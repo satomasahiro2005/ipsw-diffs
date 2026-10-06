@@ -2,63 +2,31 @@
 
 > `/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNDArray.framework/MPSNDArray`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x928b0` | `0x9c9b0` | **`+0xa100`** |
+| `__TEXT.__text` | `0x10d2bc` | `0x1131a4` | **`+0x5ee8`** |
+| `__DATA_CONST.__const` | `0x1fd08` | `0x20c68` | **`+0xf60`** |
+| `__TEXT.__cstring` | `0x1231c` | `0x126c1` | **`+0x3a5`** |
+| `__TEXT.__gcc_except_tab` | `0x4bac` | `0x4ed8` | **`+0x32c`** |
+| `__AUTH_CONST.__cfstring` | `0x9260` | `0x9520` | **`+0x2c0`** |
+| `__AUTH_CONST.__const` | `0x45c0` | `0x4800` | **`+0x240`** |
+| `__TEXT.__unwind_info` | `0x1b28` | `0x1b78` | **`+0x50`** |
+| `__DATA.__data` | `0x9c4` | `0x9ec` | **`+0x28`** |
+| `__DATA.__bss` | `0x638` | `0x650` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
- 130.0.19.0.0
--  __TEXT.__text: 0x10d2bc
-+  __TEXT.__text: 0x1131a4
-   __TEXT.__objc_methlist: 0x7274
--  __TEXT.__const: 0x928b0
--  __TEXT.__gcc_except_tab: 0x4bac
--  __TEXT.__cstring: 0x1231c
-+  __TEXT.__const: 0x9c9b0
-+  __TEXT.__gcc_except_tab: 0x4ed8
-+  __TEXT.__cstring: 0x126c1
-   __TEXT.__oslogstring: 0x27
--  __TEXT.__unwind_info: 0x1b28
-+  __TEXT.__unwind_info: 0x1b78
-   __TEXT.__eh_frame: 0xb8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1fd08
-+  __DATA_CONST.__const: 0x20c68
-   __DATA_CONST.__objc_classlist: 0x880
-   __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
-
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x858
-   __DATA_CONST.__got: 0x350
--  __AUTH_CONST.__const: 0x45c0
--  __AUTH_CONST.__cfstring: 0x9260
-+  __AUTH_CONST.__const: 0x4800
-+  __AUTH_CONST.__cfstring: 0x9520
-   __AUTH_CONST.__objc_const: 0xf7d0
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__auth_got: 0x5b0
-
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x20
-   __DATA.__objc_ivar: 0x7a4
--  __DATA.__data: 0x9c4
-+  __DATA.__data: 0x9ec
-   __DATA_DIRTY.__objc_data: 0x54b0
-   __DATA_DIRTY.__bss: 0x88
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2453
--  Symbols:   5518
+-  Symbols:   5067
 -  CStrings:  1688
 +  Functions: 2477
-+  Symbols:   5554
++  Symbols:   5103
 +  CStrings:  1718
- 
 Symbols:
 + GCC_except_table106
 + GCC_except_table117

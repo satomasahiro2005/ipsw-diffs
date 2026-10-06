@@ -2,62 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/BatteryAlgorithms.framework/BatteryAlgorithms`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH.__objc_data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__data` | `0x74dfe0` | `0x7ba230` | **`+0x6c250`** |
+| `__TEXT.__text` | `0x800b8` | `0x80550` | **`+0x498`** |
+| `__TEXT.__gcc_except_tab` | `0x8734` | `0x8770` | **`+0x3c`** |
+| `__TEXT.__cstring` | `0x3ecb` | `0x3ef2` | **`+0x27`** |
+| `__TEXT.__const` | `0xa9e0` | `0xa9d0` | **`-0x10`** |
+
+### Other Changes
 
 ```diff
 
 -142.0.0.0.0
--  __TEXT.__text: 0x800b8
 +146.0.0.0.0
-+  __TEXT.__text: 0x80550
-   __TEXT.__objc_methlist: 0xb04
--  __TEXT.__const: 0xa9e0
--  __TEXT.__cstring: 0x3ecb
--  __TEXT.__gcc_except_tab: 0x8734
-+  __TEXT.__const: 0xa9d0
-+  __TEXT.__cstring: 0x3ef2
-+  __TEXT.__gcc_except_tab: 0x8770
-   __TEXT.__oslogstring: 0xc5
-   __TEXT.__unwind_info: 0x2920
-   __TEXT.__objc_stubs: 0x0
 
-   __AUTH_CONST.__auth_got: 0x428
-   __AUTH.__objc_data: 0x50
-   __DATA.__objc_ivar: 0x13c
--  __DATA.__data: 0x74dfe0
-+  __DATA.__data: 0x7ba230
-   __DATA.__common: 0xe
-   __DATA_DIRTY.__objc_data: 0x190
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 2104
--  Symbols:   4181
+-  Symbols:   4070
 -  CStrings:  620
-+  Symbols:   4219
++  Symbols:   4108
 +  CStrings:  621
- 
 Symbols:
 + _gACAMAgingModelParameterV159ATL
 + _gACAMAgingModelParameterV159LGC

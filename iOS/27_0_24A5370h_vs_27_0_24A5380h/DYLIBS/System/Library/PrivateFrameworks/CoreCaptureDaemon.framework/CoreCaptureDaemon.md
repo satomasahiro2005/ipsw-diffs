@@ -2,61 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/CoreCaptureDaemon.framework/CoreCaptureDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5aea4` | `0x5b998` | **`+0xaf4`** |
+| `__TEXT.__oslogstring` | `0xb4fa` | `0xb71b` | **`+0x221`** |
+| `__TEXT.__cstring` | `0xb956` | `0xbb5e` | **`+0x208`** |
+| `__TEXT.__const` | `0x538` | `0x638` | **`+0x100`** |
+| `__AUTH_CONST.__const` | `0x1230` | `0x1268` | **`+0x38`** |
+| `__DATA.__bss` | `0x50` | `0x28` | **`-0x28`** |
+| `__DATA_CONST.__const` | `0x390` | `0x3b0` | **`+0x20`** |
+| `__DATA_DIRTY.__bss` | `0x298` | `0x2b8` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x9c0` | `0x9c8` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x7c8` | `0x7d0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x5aea4
--  __TEXT.__const: 0x538
-+  __TEXT.__text: 0x5b998
-+  __TEXT.__const: 0x638
-   __TEXT.__gcc_except_tab: 0x4d4
--  __TEXT.__oslogstring: 0xb4fa
--  __TEXT.__cstring: 0xb956
--  __TEXT.__unwind_info: 0x7c8
-+  __TEXT.__oslogstring: 0xb71b
-+  __TEXT.__cstring: 0xbb5e
-+  __TEXT.__unwind_info: 0x7d0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0x390
-+  __DATA_CONST.__const: 0x3b0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
-   __DATA_CONST.__objc_selrefs: 0x70
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1230
-+  __AUTH_CONST.__const: 0x1268
-   __AUTH_CONST.__cfstring: 0xc40
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__auth_got: 0x9c0
-+  __AUTH_CONST.__auth_got: 0x9c8
-   __DATA.__data: 0x1
-   __DATA.__common: 0x24
--  __DATA.__bss: 0x50
-+  __DATA.__bss: 0x28
-   __DATA_DIRTY.__common: 0x14
--  __DATA_DIRTY.__bss: 0x298
-+  __DATA_DIRTY.__bss: 0x2b8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+-1355.41.0.0.0
++1355.42.0.0.0
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 611
--  Symbols:   1314
--  CStrings:  2010
+-  Symbols:   1147
+-  CStrings:  1231
 +  Functions: 615
-+  Symbols:   1322
-+  CStrings:  2021
- 
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
++  Symbols:   1152
++  CStrings:  1237
 Symbols:
 + GCC_except_table278
 + GCC_except_table355
@@ -124,5 +97,4 @@ CStrings:
 + "result=init_scan_pending"
 - "CCPipeInterface::setDispatchQueue entry:%u fConnectRef(%d)\n"
 - "CCPipeInterface::setDispatchQueue failed to create a serial dispatch queue for continuous pipe\n"
-
 ```

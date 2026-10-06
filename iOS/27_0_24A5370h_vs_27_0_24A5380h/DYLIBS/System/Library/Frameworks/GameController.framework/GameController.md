@@ -2,108 +2,54 @@
 
 > `/System/Library/Frameworks/GameController.framework/GameController`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf8bfc` | `0xfc208` | **`+0x360c`** |
+| `__AUTH_CONST.__objc_intobj` | `0x13e0` | `0x1080` | **`-0x360`** |
+| `__AUTH_CONST.__objc_const` | `0x48388` | `0x48618` | **`+0x290`** |
+| `__AUTH_CONST.__cfstring` | `0xad40` | `0xaf00` | **`+0x1c0`** |
+| `__TEXT.__swift5_typeref` | `0x74a` | `0x878` | **`+0x12e`** |
+| `__AUTH_CONST.__const` | `0x21f8` | `0x22f0` | **`+0xf8`** |
+| `__AUTH.__data` | `0x4b0` | `0x5a0` | **`+0xf0`** |
+| `__TEXT.__const` | `0x22fc` | `0x23dc` | **`+0xe0`** |
+| `__TEXT.__constg_swiftt` | `0x888` | `0x964` | **`+0xdc`** |
+| `__TEXT.__cstring` | `0x9b31` | `0x9c01` | **`+0xd0`** |
+| `__DATA_CONST.__got` | `0xc18` | `0xcd0` | **`+0xb8`** |
+| `__DATA_CONST.__objc_arraydata` | `0x528` | `0x470` | **`-0xb8`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0xa8` | `0x18` | **`-0x90`** |
+| `__TEXT.__unwind_info` | `0x4b68` | `0x4bf8` | **`+0x90`** |
+| `__AUTH_CONST.__auth_got` | `0xee8` | `0xf60` | **`+0x78`** |
+| `__DATA.__data` | `0x5bc0` | `0x5c30` | **`+0x70`** |
+| `__TEXT.__objc_methlist` | `0xf24c` | `0xf2b4` | **`+0x68`** |
+| `__TEXT.__swift5_reflstr` | `0x2ef` | `0x34f` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0x5508` | `0x5558` | **`+0x50`** |
+| `__TEXT.__swift5_fieldmd` | `0x4b8` | `0x508` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x3680` | `0x36cc` | **`+0x4c`** |
+| `__TEXT.__eh_frame` | `0x130` | `0x170` | **`+0x40`** |
+| `__TEXT.__swift5_capture` | `0xd8` | `0x10c` | **`+0x34`** |
+| `__TEXT.__oslogstring` | `0x8318` | `0x8348` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4b50` | `0x4b78` | **`+0x28`** |
+| `__DATA.__objc_ivar` | `0x15a4` | `0x15b8` | **`+0x14`** |
+| `__TEXT.__swift5_builtin` | `0x14` | `0x28` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x9a8` | `0x9b8` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x888` | `0x890` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0xa8` | `0xb0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xf8bfc
-+  __TEXT.__text: 0xfc208
-   __TEXT.__init_offsets: 0x4
--  __TEXT.__objc_methlist: 0xf24c
--  __TEXT.__const: 0x22fc
--  __TEXT.__gcc_except_tab: 0x3680
--  __TEXT.__cstring: 0x9b31
--  __TEXT.__oslogstring: 0x8318
-+  __TEXT.__objc_methlist: 0xf2b4
-+  __TEXT.__const: 0x23dc
-+  __TEXT.__gcc_except_tab: 0x36cc
-+  __TEXT.__cstring: 0x9c01
-+  __TEXT.__oslogstring: 0x8348
-   __TEXT.__dlopen_cstrs: 0xfd
--  __TEXT.__swift5_typeref: 0x74a
--  __TEXT.__swift5_reflstr: 0x2ef
-+  __TEXT.__swift5_typeref: 0x878
-+  __TEXT.__swift5_reflstr: 0x34f
-   __TEXT.__swift5_assocty: 0x3e8
--  __TEXT.__constg_swiftt: 0x888
--  __TEXT.__swift5_fieldmd: 0x4b8
-+  __TEXT.__constg_swiftt: 0x964
-+  __TEXT.__swift5_fieldmd: 0x508
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift5_proto: 0x118
--  __TEXT.__swift5_types: 0xa8
--  __TEXT.__swift5_capture: 0xd8
--  __TEXT.__swift5_builtin: 0x14
--  __TEXT.__unwind_info: 0x4b68
--  __TEXT.__eh_frame: 0x130
-+  __TEXT.__swift5_types: 0xb0
-+  __TEXT.__swift5_capture: 0x10c
-+  __TEXT.__swift5_builtin: 0x28
-+  __TEXT.__unwind_info: 0x4bf8
-+  __TEXT.__eh_frame: 0x170
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x2bd8
--  __DATA_CONST.__objc_classlist: 0x9a8
-+  __DATA_CONST.__objc_classlist: 0x9b8
-   __DATA_CONST.__objc_catlist: 0xb8
-   __DATA_CONST.__objc_protolist: 0x7d8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4b50
-+  __DATA_CONST.__objc_selrefs: 0x4b78
-   __DATA_CONST.__objc_protorefs: 0x4a8
--  __DATA_CONST.__objc_superrefs: 0x888
--  __DATA_CONST.__objc_arraydata: 0x528
--  __DATA_CONST.__got: 0xc18
--  __AUTH_CONST.__const: 0x21f8
--  __AUTH_CONST.__cfstring: 0xad40
--  __AUTH_CONST.__objc_const: 0x48388
--  __AUTH_CONST.__objc_intobj: 0x13e0
-+  __DATA_CONST.__objc_superrefs: 0x890
-+  __DATA_CONST.__objc_arraydata: 0x470
-+  __DATA_CONST.__got: 0xcd0
-+  __AUTH_CONST.__const: 0x22f0
-+  __AUTH_CONST.__cfstring: 0xaf00
-+  __AUTH_CONST.__objc_const: 0x48618
-+  __AUTH_CONST.__objc_intobj: 0x1080
-   __AUTH_CONST.__objc_dictobj: 0xa0
--  __AUTH_CONST.__objc_arrayobj: 0xa8
--  __AUTH_CONST.__auth_got: 0xee8
--  __AUTH.__objc_data: 0x5508
--  __AUTH.__data: 0x4b0
--  __DATA.__objc_ivar: 0x15a4
--  __DATA.__data: 0x5bc0
-+  __AUTH_CONST.__objc_arrayobj: 0x18
-+  __AUTH_CONST.__auth_got: 0xf60
-+  __AUTH.__objc_data: 0x5558
-+  __AUTH.__data: 0x5a0
-+  __DATA.__objc_ivar: 0x15b8
-+  __DATA.__data: 0x5c30
-   __DATA.__crash_info: 0x148
-   __DATA.__bss: 0x2810
-   __DATA.__common: 0x90
+-14.0.17.0.0
++14.0.19.0.0
 
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 7410
--  Symbols:   27453
--  CStrings:  3755
+-  Symbols:   14234
+-  CStrings:  2370
 +  Functions: 7476
-+  Symbols:   27698
-+  CStrings:  3785
- 
-Sections:
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   14412
++  CStrings:  2386
 Symbols:
 + -[GCControllerHomeButtonSettingsManager readControllerHomeButtonInAppAction:withError:]
 + -[GCControllerHomeButtonSettingsManager readControllerHomeButtonInAppActionWithError:]
@@ -258,12 +204,6 @@ Symbols:
 + ___swift_memcpy4_4
 + __swift_dead_method_stub
 + _get_witness_table ScSyytGSciHPyHC
-+ _objc_msgSend$initWithCategory:probeScore:
-+ _objc_msgSend$initWithHIDService:manager:queue:
-+ _objc_msgSend$openControllerHomeButtonSettingsForActivity:error:
-+ _objc_msgSend$readControllerHomeButtonInAppAction:withError:
-+ _objc_msgSend$readControllerHomeButtonSystemAction:withError:
-+ _objc_msgSend$setSettingsDidChangeHandler:
 + _swift_arrayInitWithTakeBackToFront
 + _swift_arrayInitWithTakeFrontToBack
 + _swift_deallocClassInstance
@@ -299,8 +239,6 @@ Symbols:
 - _$sSo37GCControllerHomeButtonSettingsManagerC14GameControllerE04readgbC6ActionSo0abcdI0VyKF
 - ___54-[_GCDefaultPendingDevice initWithHIDService:manager:]_block_invoke
 - ___54-[_GCDefaultPendingDevice initWithHIDService:manager:]_block_invoke_2
-- _objc_msgSend$initWithVendorID:productIDs:probeScore:
-- _objc_msgSend$readControllerHomeButtonActionWithError:
 CStrings:
 + "#WARNING Dropping incoming driver connection %@ because it is for an unclaimed HID service with registryID '%#010llx'"
 + "GCControllerHomeButtonSettings"
@@ -324,5 +262,4 @@ CStrings:
 - "#WARNING Dropping incoming driver connection %@ because it is for an unclaimed HID service with registryID '%@'"
 - "%@ does not match against %@ but is trying to claim it"
 - "\xf02"
-
 ```

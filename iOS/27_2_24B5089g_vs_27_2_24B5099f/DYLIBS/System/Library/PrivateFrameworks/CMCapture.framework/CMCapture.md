@@ -2,96 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/CMCapture.framework/CMCapture`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x98dbfc` | `0x6935f8` | **`-0x2fa604`** |
+| `__TEXT.__oslogstring` | `0x18d515` | `0x545ce` | **`-0x138f47`** |
+| `__TEXT.__cstring` | `0x111069` | `0xafe64` | **`-0x61205`** |
+| `__AUTH_CONST.__cfstring` | `0x60120` | `0x52ea0` | **`-0xd280`** |
+| `__TEXT.__gcc_except_tab` | `0x57b4` | `0x3c74` | **`-0x1b40`** |
+| `__TEXT.__unwind_info` | `0x130e0` | `0x11958` | **`-0x1788`** |
+| `__DATA.__common` | `0x2f20` | `0x1860` | **`-0x16c0`** |
+| `__DATA_CONST.__const` | `0x12d38` | `0x118e8` | **`-0x1450`** |
+| `__AUTH_CONST.__objc_const` | `0xb1e98` | `0xb1260` | **`-0xc38`** |
+| `__AUTH_CONST.__const` | `0x4fe0` | `0x4b00` | **`-0x4e0`** |
+| `__DATA_DIRTY.__bss` | `0x1640` | `0x1260` | **`-0x3e0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x190a0` | `0x18d60` | **`-0x340`** |
+| `__TEXT.__objc_methlist` | `0x3e220` | `0x3dfa0` | **`-0x280`** |
+| `__DATA.__bss` | `0x2f64` | `0x315c` | **`+0x1f8`** |
+| `__DATA_DIRTY.__objc_data` | `0x143c0` | `0x141e0` | **`-0x1e0`** |
+| `__AUTH_CONST.__objc_intobj` | `0x6e70` | `0x6d08` | **`-0x168`** |
+| `__DATA.__objc_ivar` | `0xccb8` | `0xcb98` | **`-0x120`** |
+| `__AUTH.__objc_data` | `—` | `0xf0` | **`+0xf0`** |
+| `__DATA_DIRTY.__common` | `0x1e0` | `0x100` | **`-0xe0`** |
+| `__AUTH_CONST.__auth_got` | `0x2fd8` | `0x2f20` | **`-0xb8`** |
+| `__DATA.__data` | `0x748` | `0x7f8` | **`+0xb0`** |
+| `__TEXT.__const` | `0x1518a8` | `0x151800` | **`-0xa8`** |
+| `__DATA_CONST.__objc_arraydata` | `0x3d58` | `0x3cc8` | **`-0x90`** |
+| `__DATA_DIRTY.__data` | `0x6880` | `0x67f8` | **`-0x88`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x2dd8` | `0x2d78` | **`-0x60`** |
+| `__DATA_CONST.__got` | `0x7960` | `0x7908` | **`-0x58`** |
+| `__TEXT.__eh_frame` | `0x58` | `—` | **`-0x58`** |
+| `__TEXT.__dlopen_cstrs` | `0x81b` | `0x7c9` | **`-0x52`** |
+| `__DATA_CONST.__objc_classlist` | `0x2060` | `0x2048` | **`-0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1e90` | `0x1e78` | **`-0x18`** |
+| `__TEXT.__ustring` | `0x6f2` | `0x6ee` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -764.40.5.0.0
--  __TEXT.__text: 0x979340
--  __TEXT.__objc_methlist: 0x3e220
--  __TEXT.__const: 0x1518a8
--  __TEXT.__cstring: 0x111069
--  __TEXT.__oslogstring: 0x18d515
--  __TEXT.__gcc_except_tab: 0x57b4
--  __TEXT.__ustring: 0x6f2
--  __TEXT.__dlopen_cstrs: 0x81b
--  __TEXT.__unwind_info: 0x1a368
--  __TEXT.__eh_frame: 0x58
 +764.40.7.0.0
-+  __TEXT.__text: 0x6805d0
-+  __TEXT.__objc_methlist: 0x3dfa0
-+  __TEXT.__const: 0x151800
-+  __TEXT.__cstring: 0xafe64
-+  __TEXT.__oslogstring: 0x545ce
-+  __TEXT.__gcc_except_tab: 0x3c74
-+  __TEXT.__ustring: 0x6ee
-+  __TEXT.__dlopen_cstrs: 0x7c9
-+  __TEXT.__unwind_info: 0x18290
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x12d38
--  __DATA_CONST.__objc_classlist: 0x2060
-+  __DATA_CONST.__const: 0x118e8
-+  __DATA_CONST.__objc_classlist: 0x2048
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x688
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x190a0
-+  __DATA_CONST.__objc_selrefs: 0x18d60
-   __DATA_CONST.__objc_protorefs: 0x78
--  __DATA_CONST.__objc_superrefs: 0x1e90
--  __DATA_CONST.__objc_arraydata: 0x3d58
--  __DATA_CONST.__got: 0x7960
--  __AUTH_CONST.__const: 0x4fe0
--  __AUTH_CONST.__cfstring: 0x60120
--  __AUTH_CONST.__objc_const: 0xb1e98
-+  __DATA_CONST.__objc_superrefs: 0x1e78
-+  __DATA_CONST.__objc_arraydata: 0x3cc8
-+  __DATA_CONST.__got: 0x7908
-+  __AUTH_CONST.__const: 0x4b00
-+  __AUTH_CONST.__cfstring: 0x52ea0
-+  __AUTH_CONST.__objc_const: 0xb1260
-   __AUTH_CONST.__weak_auth_got: 0x10
--  __AUTH_CONST.__objc_intobj: 0x6e70
--  __AUTH_CONST.__objc_arrayobj: 0x2dd8
-+  __AUTH_CONST.__objc_intobj: 0x6d08
-+  __AUTH_CONST.__objc_arrayobj: 0x2d78
-   __AUTH_CONST.__objc_floatobj: 0x2b0
-   __AUTH_CONST.__objc_doubleobj: 0xb30
-   __AUTH_CONST.__objc_dictobj: 0x17e8
--  __AUTH_CONST.__auth_got: 0x2fd8
--  __DATA.__objc_ivar: 0xccb8
--  __DATA.__data: 0x748
-+  __AUTH_CONST.__auth_got: 0x2f20
-+  __AUTH.__objc_data: 0xf0
-+  __DATA.__objc_ivar: 0xcb98
-+  __DATA.__data: 0x7f8
-   __DATA.__crash_info: 0x148
--  __DATA.__common: 0x2f20
--  __DATA_DIRTY.__objc_data: 0x143c0
--  __DATA_DIRTY.__data: 0x6880
--  __DATA_DIRTY.__bss: 0x1640
--  __DATA_DIRTY.__common: 0x1e0
-+  __DATA.__common: 0x1860
-+  __DATA_DIRTY.__objc_data: 0x141e0
-+  __DATA_DIRTY.__data: 0x67f8
-+  __DATA_DIRTY.__bss: 0x1260
-+  __DATA_DIRTY.__common: 0x100
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVRouting.framework/AVRouting
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
 
-   - /usr/lib/liblockdown.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libtailspin.dylib
 -  Functions: 44617
 -  Symbols:   60381
--  CStrings:  42015
+-  CStrings:  42016
 +  Functions: 39391
 +  Symbols:   59374
-+  CStrings:  21999
- 
++  CStrings:  22000
 Symbols:
 + +[BWExposureAnalyticsMonitor initialize]
 + +[FigCaptureSoftISPCalibrationSinkPipeline initialize]
@@ -2274,6 +2233,7 @@ CStrings:
 + "-[FigCaptureProprietaryDefaultsSource _handleRequestRingLightOnboardingTipSignal:]"
 + "-[FigCaptureSoftISPCalibrationSinkPipeline _buildSoftISPCalibrationSinkPipelineWithConfiguration:captureDevice:sourceSensorRawOutputsByPortType:graph:]"
 + "-[FigCaptureSourceManager activateVideoSources:activationOptions:clientApplicationID:tccIdentity:mediaEnvironment:captureDevicesByID:stereoVideoCaptureEnabled:multiCamClientCompositingEnabled:rebuildingGraphForTrueVideoTeleTransition:devicesOut:]"
++ "23:33:48"
 + "<<<< BWExposureAnalyticsMonitor >>>> %s: %@: %@ pts:%lld/%d expMode:%@ signals:%@ FA:%d(%llu) FM:%d(%llu) AP:%d(%llu) SP:%d(%llu) APSP:%d(%llu)"
 + "<<<< BWExposureAnalyticsMonitor >>>> Fig"
 + "<<<< BWFigVideoCaptureDevice >>>> %s: A nondisruptive switch-over was never initiated for a capture expecting it. Terminating capture, the still image has been lost (captureID:%lld)"
@@ -2608,6 +2568,7 @@ CStrings:
 + "MFSN"
 + "ModuleSealedState"
 + "PersonalPhotographerDuplicateInfo"
++ "Sep 27 2026"
 + "SoftISP Calibration Sink Pipeline"
 + "SoftISPCalibration-%@"
 + "SoftISPCalibrationConfiguration"
@@ -6259,6 +6220,7 @@ CStrings:
 - "1.25x"
 - "1.33x"
 - "1/%is"
+- "12:36:43"
 - "17x17"
 - "2.0x"
 - "2ea09881458e15a601c7058a8572748d4ea2752b"
@@ -20873,6 +20835,7 @@ CStrings:
 - "SensorRaw:(Main:%d, SIFR:%d, HueMap:%d)"
 - "SensorRawValidBufferRect found in metadata dictionary but malformed!"
 - "SensorReadoutRect found in metadata dictionary but malformed!"
+- "Sep 15 2026"
 - "Server connection is invalid"
 - "Server connection was lost"
 - "Service requests before graph stop"

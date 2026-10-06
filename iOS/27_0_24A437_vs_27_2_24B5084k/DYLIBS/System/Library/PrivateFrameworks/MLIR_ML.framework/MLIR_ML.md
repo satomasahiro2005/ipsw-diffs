@@ -2,73 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/MLIR_ML.framework/MLIR_ML`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3956360` | `0x395ebcc` | **`+0x886c`** |
+| `__TEXT.__cstring` | `0x17bd19` | `0x17c406` | **`+0x6ed`** |
+| `__AUTH_CONST.__const` | `0xd0750` | `0xd09f0` | **`+0x2a0`** |
+| `__TEXT.__gcc_except_tab` | `0x11452c` | `0x114750` | **`+0x224`** |
+| `__TEXT.__unwind_info` | `0x9a000` | `0x9a178` | **`+0x178`** |
+| `__AUTH_CONST.__cfstring` | `0xa3c0` | `0xa420` | **`+0x60`** |
+| `__AUTH.__data` | `0x7a08` | `0x7a50` | **`+0x48`** |
+| `__DATA.__data` | `0x46a08` | `0x46a38` | **`+0x30`** |
+| `__TEXT.__const` | `0x15e19b` | `0x15e1cb` | **`+0x30`** |
+| `__DATA.__common` | `0x602c` | `0x603c` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x38828` | `0x38818` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -7.0.80.0.0
--  __TEXT.__text: 0x3901644
 +7.1.2.0.0
-+  __TEXT.__text: 0x3909dc8
-   __TEXT.__init_offsets: 0x1bc
-   __TEXT.__objc_methlist: 0x1008
--  __TEXT.__gcc_except_tab: 0x11452c
--  __TEXT.__cstring: 0x17bd19
--  __TEXT.__const: 0x15e19b
--  __TEXT.__unwind_info: 0xc1650
-+  __TEXT.__gcc_except_tab: 0x114750
-+  __TEXT.__cstring: 0x17c406
-+  __TEXT.__const: 0x15e1cb
-+  __TEXT.__unwind_info: 0xc1830
-   __TEXT.__eh_frame: 0x2ef8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x38828
-+  __DATA_CONST.__const: 0x38818
-   __DATA_CONST.__objc_classlist: 0xb8
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x18
 
-   __DATA_CONST.__objc_superrefs: 0xb8
-   __DATA_CONST.__objc_arraydata: 0xae0
-   __DATA_CONST.__got: 0x5b0
--  __AUTH_CONST.__const: 0xd0750
--  __AUTH_CONST.__cfstring: 0xa3c0
-+  __AUTH_CONST.__const: 0xd09f0
-+  __AUTH_CONST.__cfstring: 0xa420
-   __AUTH_CONST.__objc_const: 0x22e8
-   __AUTH_CONST.__weak_auth_got: 0xdb0
-   __AUTH_CONST.__objc_intobj: 0x438
-
-   __AUTH_CONST.__objc_arrayobj: 0x18c0
-   __AUTH_CONST.__auth_got: 0x1120
-   __AUTH.__objc_data: 0x730
--  __AUTH.__data: 0x7a08
-+  __AUTH.__data: 0x7a50
-   __AUTH.__thread_vars: 0x1f8
-   __AUTH.__thread_data: 0x8
-   __AUTH.__thread_bss: 0x330
-   __DATA.__objc_ivar: 0x150
--  __DATA.__data: 0x46a08
-+  __DATA.__data: 0x46a38
-   __DATA.__crash_info: 0x148
--  __DATA.__common: 0x602c
-+  __DATA.__common: 0x603c
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
--  Functions: 201784
--  Symbols:   237380
+-  Functions: 201783
+-  Symbols:   237191
 -  CStrings:  41841
-+  Functions: 201947
-+  Symbols:   237559
++  Functions: 201946
++  Symbols:   237370
 +  CStrings:  41869
- 
 Symbols:
 + GCC_except_table705
 + GCC_except_table706

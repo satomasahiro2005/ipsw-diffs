@@ -2,46 +2,28 @@
 
 > `/System/Library/PrivateFrameworks/CVNLP.framework/CVNLP`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcba24` | `0xcc0d4` | **`+0x6b0`** |
+| `__TEXT.__cstring` | `0x6dda` | `0x6f7d` | **`+0x1a3`** |
+| `__TEXT.__gcc_except_tab` | `0xdec0` | `0xdf1c` | **`+0x5c`** |
+| `__TEXT.__const` | `0x1e38` | `0x1e30` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x41c0` | `0x41b8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -130.0.0.0.0
--  __TEXT.__text: 0xc90e0
 +131.0.0.0.0
-+  __TEXT.__text: 0xc9794
-   __TEXT.__objc_methlist: 0x19c4
--  __TEXT.__const: 0x1e38
--  __TEXT.__cstring: 0x6dda
--  __TEXT.__gcc_except_tab: 0xdec0
-+  __TEXT.__const: 0x1e30
-+  __TEXT.__cstring: 0x6f7d
-+  __TEXT.__gcc_except_tab: 0xdf1c
-   __TEXT.__oslogstring: 0x7f8
-   __TEXT.__dlopen_cstrs: 0x86
--  __TEXT.__unwind_info: 0x45c8
-+  __TEXT.__unwind_info: 0x45a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __AUTH_CONST.__cfstring: 0x10a0
-   __AUTH_CONST.__objc_const: 0x3ce8
-   __AUTH_CONST.__weak_auth_got: 0x48
--  __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__objc_intobj: 0x18
-+  __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0xc80
-   __AUTH.__data: 0x118
-
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libperfcheck.dylib
 -  Functions: 2684
 +  Functions: 2678
-   Symbols:   620
+
 -  CStrings:  813
 +  CStrings:  823
- 
 CStrings:
 + "!pieces_blob.empty()"
 + "(piece_offsets_[i]) < (pieces_blob.size())"

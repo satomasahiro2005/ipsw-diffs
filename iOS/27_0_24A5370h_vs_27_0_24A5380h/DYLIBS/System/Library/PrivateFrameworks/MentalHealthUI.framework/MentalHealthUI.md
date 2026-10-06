@@ -2,100 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/MentalHealthUI.framework/MentalHealthUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x170d10` | `0x170ff4` | **`+0x2e4`** |
+| `__TEXT.__swift5_reflstr` | `0x382c` | `0x38bc` | **`+0x90`** |
+| `__DATA.__bss` | `0x8ee8` | `0x8e68` | **`-0x80`** |
+| `__TEXT.__cstring` | `0x42c2` | `0x4242` | **`-0x80`** |
+| `__TEXT.__swift5_typeref` | `0x4b86` | `0x4b1e` | **`-0x68`** |
+| `__AUTH.__data` | `0x40d0` | `0x4070` | **`-0x60`** |
+| `__TEXT.__const` | `0x30364` | `0x30304` | **`-0x60`** |
+| `__TEXT.__constg_swiftt` | `0x3be4` | `0x3b94` | **`-0x50`** |
+| `__TEXT.__swift5_fieldmd` | `0x3768` | `0x37b8` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x4400` | `0x4430` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x2448` | `0x2428` | **`-0x20`** |
+| `__TEXT.__swift5_assocty` | `0xd00` | `0xce0` | **`-0x20`** |
+| `__DATA.__data` | `0x6290` | `0x6280` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x1660` | `0x1668` | **`+0x8`** |
+| `__TEXT.__swift5_capture` | `0x1220` | `0x1218` | **`-0x8`** |
+| `__TEXT.__swift5_proto` | `0x48c` | `0x488` | **`-0x4`** |
+| `__TEXT.__swift5_types` | `0x37c` | `0x378` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x170d10
-+  __TEXT.__text: 0x170ff4
-   __TEXT.__objc_methlist: 0x1600
--  __TEXT.__const: 0x30364
--  __TEXT.__cstring: 0x42c2
--  __TEXT.__swift5_typeref: 0x4b86
--  __TEXT.__swift5_capture: 0x1220
--  __TEXT.__constg_swiftt: 0x3be4
--  __TEXT.__swift5_reflstr: 0x382c
--  __TEXT.__swift5_fieldmd: 0x3768
-+  __TEXT.__const: 0x30304
-+  __TEXT.__cstring: 0x4242
-+  __TEXT.__swift5_typeref: 0x4b1e
-+  __TEXT.__swift5_capture: 0x1218
-+  __TEXT.__constg_swiftt: 0x3b94
-+  __TEXT.__swift5_reflstr: 0x38bc
-+  __TEXT.__swift5_fieldmd: 0x37b8
-   __TEXT.__swift5_builtin: 0x118
--  __TEXT.__swift5_assocty: 0xd00
-+  __TEXT.__swift5_assocty: 0xce0
-   __TEXT.__oslogstring: 0x1005
--  __TEXT.__swift5_proto: 0x48c
--  __TEXT.__swift5_types: 0x37c
-+  __TEXT.__swift5_proto: 0x488
-+  __TEXT.__swift5_types: 0x378
-   __TEXT.__swift_as_entry: 0x78
-   __TEXT.__swift_as_ret: 0x84
-   __TEXT.__swift_as_cont: 0x130
-   __TEXT.__swift5_protos: 0x18
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x4400
-+  __TEXT.__unwind_info: 0x4430
-   __TEXT.__eh_frame: 0x2358
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+-7027.0.60.2.2
++7027.0.64.0.0
 
-   __DATA_CONST.__objc_selrefs: 0x1528
-   __DATA_CONST.__objc_protorefs: 0xb0
-   __DATA_CONST.__objc_superrefs: 0x18
--  __DATA_CONST.__got: 0x1660
-+  __DATA_CONST.__got: 0x1668
-   __AUTH_CONST.__const: 0x7878
-   __AUTH_CONST.__cfstring: 0x620
-   __AUTH_CONST.__objc_const: 0x3d08
--  __AUTH_CONST.__auth_got: 0x2448
-+  __AUTH_CONST.__auth_got: 0x2428
-   __AUTH.__objc_data: 0x1460
--  __AUTH.__data: 0x40d0
-+  __AUTH.__data: 0x4070
-   __DATA.__objc_ivar: 0x30
--  __DATA.__data: 0x6290
-+  __DATA.__data: 0x6280
-   __DATA.__objc_stublist: 0x10
--  __DATA.__bss: 0x8ee8
-+  __DATA.__bss: 0x8e68
-   __DATA.__common: 0xe0
-   __DATA_DIRTY.__objc_data: 0x1d0
-   __DATA_DIRTY.__data: 0x758
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7042
--  Symbols:   2975
--  CStrings:  574
+-  Symbols:   1799
+-  CStrings:  525
 +  Functions: 7046
-+  Symbols:   2971
-+  CStrings:  572
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist2 : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__objc_stublist : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   1793
++  CStrings:  523
 Symbols:
 + ___swift_destroy_boxed_opaque_existential_0Tm
 + ___swift_memcpy57_8
@@ -126,5 +67,4 @@ Symbols:
 CStrings:
 - "(ReflectiveIntervalPickerSelectionView in _EADF1CA7D5CB1A6B1451CA5D92C251C4)"
 - "MentalHealthUI/MomentaryDatePickerStyle.swift"
-
 ```

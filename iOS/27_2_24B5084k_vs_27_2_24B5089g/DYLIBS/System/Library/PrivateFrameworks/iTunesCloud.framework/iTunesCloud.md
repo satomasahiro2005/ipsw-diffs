@@ -2,78 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/iTunesCloud.framework/iTunesCloud`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x5640` | `0x230` | **`-0x5410`** |
+| `__DATA_DIRTY.__objc_data` | `0x33e0` | `0x87f0` | **`+0x5410`** |
+| `__TEXT.__text` | `0x3ca22c` | `0x3cc900` | **`+0x26d4`** |
+| `__AUTH_CONST.__objc_const` | `0x31880` | `0x31a40` | **`+0x1c0`** |
+| `__TEXT.__oslogstring` | `0x223bb` | `0x22515` | **`+0x15a`** |
+| `__TEXT.__cstring` | `0x17ae4` | `0x17c21` | **`+0x13d`** |
+| `__TEXT.__objc_methlist` | `0x188a4` | `0x189a4` | **`+0x100`** |
+| `__DATA.__data` | `0x3198` | `0x30c8` | **`-0xd0`** |
+| `__DATA_DIRTY.__data` | `0x108` | `0x1d0` | **`+0xc8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa5c8` | `0xa650` | **`+0x88`** |
+| `__AUTH_CONST.__cfstring` | `0x18ae0` | `0x18b60` | **`+0x80`** |
+| `__DATA_CONST.__const` | `0x7458` | `0x7490` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0x6b30` | `0x6b68` | **`+0x38`** |
+| `__DATA.__objc_ivar` | `0x24bc` | `0x24e0` | **`+0x24`** |
+| `__AUTH_CONST.__const` | `0x18638` | `0x18658` | **`+0x20`** |
+| `__DATA.__bss` | `0x540` | `0x550` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x2b6c` | `0x2b70` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -4026.200.13.0.0
--  __TEXT.__text: 0x3c1a5c
--  __TEXT.__objc_methlist: 0x188a4
 +4026.200.17.0.0
-+  __TEXT.__text: 0x3c410c
-+  __TEXT.__objc_methlist: 0x189a4
-   __TEXT.__const: 0x225f8
-   __TEXT.__dlopen_cstrs: 0x4cf
--  __TEXT.__gcc_except_tab: 0x2b6c
--  __TEXT.__cstring: 0x17ae4
--  __TEXT.__oslogstring: 0x223bb
-+  __TEXT.__gcc_except_tab: 0x2b70
-+  __TEXT.__cstring: 0x17c21
-+  __TEXT.__oslogstring: 0x22515
-   __TEXT.__ustring: 0x8e
--  __TEXT.__unwind_info: 0x8378
-+  __TEXT.__unwind_info: 0x83b0
-   __TEXT.__eh_frame: 0x50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7458
-+  __DATA_CONST.__const: 0x7490
-   __DATA_CONST.__objc_classlist: 0xdd0
-   __DATA_CONST.__objc_catlist: 0x78
-   __DATA_CONST.__objc_protolist: 0x300
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa5c8
-+  __DATA_CONST.__objc_selrefs: 0xa650
-   __DATA_CONST.__objc_protorefs: 0xc8
-   __DATA_CONST.__objc_superrefs: 0xc00
-   __DATA_CONST.__objc_arraydata: 0x498
-   __DATA_CONST.__got: 0x1090
--  __AUTH_CONST.__const: 0x18638
--  __AUTH_CONST.__cfstring: 0x18ae0
--  __AUTH_CONST.__objc_const: 0x31880
-+  __AUTH_CONST.__const: 0x18658
-+  __AUTH_CONST.__cfstring: 0x18b60
-+  __AUTH_CONST.__objc_const: 0x31a40
-   __AUTH_CONST.__objc_intobj: 0x480
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__objc_dictobj: 0x258
-   __AUTH_CONST.__auth_got: 0xa68
--  __AUTH.__objc_data: 0x5640
--  __DATA.__objc_ivar: 0x24bc
--  __DATA.__data: 0x31a0
-+  __AUTH.__objc_data: 0x230
-+  __DATA.__objc_ivar: 0x24e0
-+  __DATA.__data: 0x30d0
-   __DATA.__common: 0xb88
--  __DATA_DIRTY.__objc_data: 0x33e0
--  __DATA_DIRTY.__data: 0x108
-+  __DATA_DIRTY.__objc_data: 0x87f0
-+  __DATA_DIRTY.__data: 0x1d0
-   __DATA_DIRTY.__bss: 0x398
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 10179
--  Symbols:   21475
+-  Symbols:   17868
 -  CStrings:  5500
 +  Functions: 10201
-+  Symbols:   21519
++  Symbols:   17903
 +  CStrings:  5510
- 
 Symbols:
 + +[ICCloudAPNSChannelPushMessage dateFromISO8601Timestamp:defaultFetchStartSeconds:]
 + +[ICCloudAPNSChannelPushMessage messageWithAPSIncomingMessage:defaultFetchStartSeconds:]
@@ -337,32 +300,6 @@ Symbols:
 + ___block_descriptor_48_e8_32s40bs_e49_v24?0"ICInAppMessageConfiguration"8"NSError"16ls32l8s40l8
 + ___block_descriptor_48_e8_32s40bs_e58_v24?0"ICCloudEntityUpdateRegistrationToken"8"NSError"16ls32l8s40l8
 + ___block_descriptor_80_e8_32s40s48s56bs64bs_e58_v24?0"ICCloudEntityUpdateRegistrationToken"8"NSError"16ls32l8s40l8s56l8s48l8s64l8
-+ _objc_msgSend$_computeChannelStatesForResync
-+ _objc_msgSend$_deliverMessages:forChannelID:group:
-+ _objc_msgSend$_dispatchUpdate:toRegistrationsForChannelIDs:
-+ _objc_msgSend$_performSyncIfEnabledWithCompletion:
-+ _objc_msgSend$_resumeUpdates
-+ _objc_msgSend$_xpcRegisterChannelState:completion:
-+ _objc_msgSend$_xpcUnregisterToken:completion:
-+ _objc_msgSend$beginObservingCloudServiceStatusForUserIdentity:completionHandler:
-+ _objc_msgSend$dateFromISO8601Timestamp:defaultFetchStartSeconds:
-+ _objc_msgSend$goLiveDate
-+ _objc_msgSend$initWithChannelID:entityType:storeID:reason:expectedReleaseDate:lastProcessedGoLiveTimestamp:registrationToken:
-+ _objc_msgSend$initWithChannelID:entityType:storeID:reasons:expectedReleaseDate:registrationToken:lastProcessedGoLiveTimestamp:
-+ _objc_msgSend$initWithConfiguration:handler:token:
-+ _objc_msgSend$initWithType:pushMessages:error:channelIDs:unsubscribeReason:resubscribeReason:
-+ _objc_msgSend$lastProcessedGoLiveTimestamp
-+ _objc_msgSend$pushReceivedUpdateWithMessages:
-+ _objc_msgSend$registerChannelState:completion:
-+ _objc_msgSend$registrationToken
-+ _objc_msgSend$requestCapabilitiesForUserIdentity:withPrivacyPromptPolicy:completionHandler:
-+ _objc_msgSend$requestStorefrontCountryCodeForUserIdentity:completionHandler:
-+ _objc_msgSend$requestStorefrontIdentifierForUserIdentity:completionHandler:
-+ _objc_msgSend$revokeMusicKitUserTokensForAccountDSID:withCompletion:
-+ _objc_msgSend$setFormatOptions:
-+ _objc_msgSend$setLastProcessedGoLiveTimestamp:
-+ _objc_msgSend$syncEnabled
-+ _objc_msgSend$unregisterChannelWithToken:completion:
 - +[ICCloudAPNSChannelPushMessage dateFromISO8601Timestamp:]
 - +[ICCloudAPNSChannelPushMessage messageWithAPSIncomingMessage:]
 - -[ICCloudClient unregisterUpdatesForChannelID:reason:]
@@ -590,23 +527,6 @@ Symbols:
 - ___85-[ICCloudServiceStatusMonitor revokeMusicKitUserTokensForAccountDSID:withCompletion:]_block_invoke
 - ___block_descriptor_57_e8_32s40bs48bs_e17_v16?0"NSError"8ls32l8s40l8s48l8
 - ___block_descriptor_98_e8_32s40s48s56s64s72s80bs_e5_v8?0ls32l8s40l8s48l8s56l8s64l8s80l8s72l8
-- _objc_msgSend$_snapshotChannelStatesForResync
-- _objc_msgSend$_xpcUpdateReasonsWithState:completion:
-- _objc_msgSend$anyObject
-- _objc_msgSend$beginObservingCloudServiceStatusWithCompletionHandler:
-- _objc_msgSend$dateFromISO8601Timestamp:
-- _objc_msgSend$handleCloudServerSetupCompleted
-- _objc_msgSend$initWithChannelID:entityType:storeID:reason:expectedReleaseDate:
-- _objc_msgSend$initWithChannelID:entityType:storeID:reasons:expectedReleaseDate:
-- _objc_msgSend$initWithConfiguration:handler:
-- _objc_msgSend$initWithType:pushMessage:error:channelIDs:unsubscribeReason:resubscribeReason:
-- _objc_msgSend$pushReceivedUpdateWithMessage:
-- _objc_msgSend$requestCapabilitiesWithPrivacyPromptPolicy:completionHandler:
-- _objc_msgSend$requestStorefrontCountryCodeWithCompletionHandler:
-- _objc_msgSend$requestStorefrontIdentifierWithCompletionHandler:
-- _objc_msgSend$requestUserTokenForDeveloperToken:options:completionHandler:
-- _objc_msgSend$unregisterUpdatesForChannelID:reason:
-- _objc_msgSend$updateMonitoredReasonsWithChannelState:completion:
 CStrings:
 + "%{public}@ Cancelling existing periodic poll task"
 + "%{public}@ Failed to load configuration for sync. err=%{public}@"

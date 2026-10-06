@@ -2,52 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/SiriTTS.framework/SiriTTS`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8350a0` | `0x836f64` | **`+0x1ec4`** |
+| `__TEXT.__oslogstring` | `0xa47b` | `0xa7e3` | **`+0x368`** |
+| `__TEXT.__cstring` | `0x6ee2f` | `0x6f15d` | **`+0x32e`** |
+| `__TEXT.__gcc_except_tab` | `0x3c31c` | `0x3c470` | **`+0x154`** |
+| `__AUTH.__data` | `0xe8` | `0x40` | **`-0xa8`** |
+| `__DATA_DIRTY.__data` | `—` | `0xa8` | **`+0xa8`** |
+| `__TEXT.__const` | `0xe45f4` | `0xe45b4` | **`-0x40`** |
+| `__TEXT.__unwind_info` | `0x18670` | `0x18698` | **`+0x28`** |
+| `__DATA.__bss` | `0xecc` | `0xebc` | **`-0x10`** |
+| `__DATA_DIRTY.__bss` | `0x20` | `0x30` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3605.25.1.0.0
--  __TEXT.__text: 0x828d5c
 +3605.29.1.0.0
-+  __TEXT.__text: 0x82ac2c
-   __TEXT.__objc_methlist: 0x20
--  __TEXT.__const: 0xe45f4
--  __TEXT.__cstring: 0x6ee2f
--  __TEXT.__gcc_except_tab: 0x3c31c
--  __TEXT.__oslogstring: 0xa47b
-+  __TEXT.__const: 0xe45b4
-+  __TEXT.__cstring: 0x6f15d
-+  __TEXT.__gcc_except_tab: 0x3c470
-+  __TEXT.__oslogstring: 0xa7e3
-   __TEXT.__ustring: 0x494
--  __TEXT.__unwind_info: 0x19c58
-+  __TEXT.__unwind_info: 0x19c78
-   __TEXT.__eh_frame: 0x210
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __AUTH_CONST.__objc_arrayobj: 0x30
-   __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__auth_got: 0x1660
--  __AUTH.__data: 0xe8
-+  __AUTH.__data: 0x40
-   __DATA.__data: 0x310
-   __DATA.__common: 0x21
--  __DATA_DIRTY.__bss: 0x20
-+  __DATA_DIRTY.__data: 0xa8
-+  __DATA_DIRTY.__bss: 0x30
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CoreAudio.framework/CoreAudio
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libxml2.2.dylib
--  Functions: 22438
+-  Functions: 22437
 -  Symbols:   33913
 -  CStrings:  17088
-+  Functions: 22441
++  Functions: 22440
 +  Symbols:   33936
 +  CStrings:  17103
- 
 Symbols:
 + GCC_except_table1006
 + GCC_except_table1020

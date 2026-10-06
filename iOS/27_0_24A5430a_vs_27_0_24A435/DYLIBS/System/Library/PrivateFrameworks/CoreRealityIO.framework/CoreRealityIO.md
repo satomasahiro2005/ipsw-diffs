@@ -2,17 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/CoreRealityIO.framework/CoreRealityIO`
 
-```diff
+### Section Size Changes
 
- 235.0.6.0.0
--  __TEXT.__text: 0x2c4e54
-+  __TEXT.__text: 0x2c4f2c
-   __TEXT.__const: 0x213b0
--  __TEXT.__gcc_except_tab: 0x3614c
-+  __TEXT.__gcc_except_tab: 0x36150
-   __TEXT.__cstring: 0x113fb
-   __TEXT.__oslogstring: 0x3f76
-   __TEXT.__unwind_info: 0x10900
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2c4e54` | `0x2c4f2c` | **`+0xd8`** |
+| `__TEXT.__gcc_except_tab` | `0x3614c` | `0x36150` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN12_GLOBAL__N_136makeSampledSkeletalPoseAnimationDataERKN32pxrInternal__aapl__pxrReserved__12UsdSkelCacheERKNS0_16UsdSkelAnimationEd : 2060 -> 2064
 ~ __ZNSt3__16vectorIPKcNS_9allocatorIS2_EEE6resizeEm : 284 -> 288

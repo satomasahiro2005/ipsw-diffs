@@ -2,67 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/FitnessWorkoutPlan.framework/FitnessWorkoutPlan`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1bff34` | `0x1c0ed4` | **`+0xfa0`** |
+| `__TEXT.__swift5_typeref` | `0x13622` | `0x1380e` | **`+0x1ec`** |
+| `__TEXT.__const` | `0x1e494` | `0x1e4f4` | **`+0x60`** |
+| `__DATA.__data` | `0x7488` | `0x74d8` | **`+0x50`** |
+| `__TEXT.__swift5_reflstr` | `0x3cb4` | `0x3cf4` | **`+0x40`** |
+| `__DATA.__bss` | `0x2d428` | `0x2d458` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x1c5e` | `0x1c8e` | **`+0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0x5b28` | `0x5b4c` | **`+0x24`** |
+| `__TEXT.__unwind_info` | `0x5e90` | `0x5eb0` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x18f8` | `0x1910` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0xcb8` | `0xcc0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.134.0.0
--  __TEXT.__text: 0x1bff34
--  __TEXT.__const: 0x1e494
--  __TEXT.__swift5_typeref: 0x13622
 +2027.0.146.0.2
-+  __TEXT.__text: 0x1c0ed4
-+  __TEXT.__const: 0x1e4f4
-+  __TEXT.__swift5_typeref: 0x1380e
-   __TEXT.__swift5_capture: 0x1fa0
-   __TEXT.__constg_swiftt: 0x69dc
--  __TEXT.__swift5_reflstr: 0x3cb4
-+  __TEXT.__swift5_reflstr: 0x3cf4
-   __TEXT.__swift5_assocty: 0xa50
--  __TEXT.__swift5_fieldmd: 0x5b28
-+  __TEXT.__swift5_fieldmd: 0x5b4c
-   __TEXT.__swift5_builtin: 0x50
-   __TEXT.__swift5_proto: 0x1850
-   __TEXT.__swift5_types: 0x71c
--  __TEXT.__cstring: 0x1c5e
-+  __TEXT.__cstring: 0x1c8e
-   __TEXT.__swift_as_entry: 0xe0
-   __TEXT.__swift_as_ret: 0x1c0
-   __TEXT.__swift_as_cont: 0x284
-   __TEXT.__oslogstring: 0x1a3
-   __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__unwind_info: 0x5e90
-+  __TEXT.__unwind_info: 0x5eb0
-   __TEXT.__eh_frame: 0x78f8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x68
--  __DATA_CONST.__got: 0xcb8
-+  __DATA_CONST.__got: 0xcc0
-   __AUTH_CONST.__const: 0xd6e8
-   __AUTH_CONST.__objc_const: 0x240
--  __AUTH_CONST.__auth_got: 0x18f8
-+  __AUTH_CONST.__auth_got: 0x1910
-   __AUTH.__data: 0x15a0
--  __DATA.__data: 0x7488
--  __DATA.__bss: 0x2d428
-+  __DATA.__data: 0x74d8
-+  __DATA.__bss: 0x2d458
-   __DATA.__common: 0x78
-   __DATA_DIRTY.__data: 0x17f0
-   __DATA_DIRTY.__bss: 0x3b80
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8521
--  Symbols:   3291
+-  Symbols:   3278
 -  CStrings:  226
 +  Functions: 8535
-+  Symbols:   3295
++  Symbols:   3282
 +  CStrings:  227
- 
 Symbols:
 + ___swift_closure_destructor.19Tm
 + _get_witness_table 7SwiftUI4ViewRzlAA15ModifiedContentVyADyAaBPAAE12defaultFocus__8priorityQrAA0G5StateV7BindingVyqd___G_qd__AA07DefaultG18EvaluationPriorityVtSHRd__lFQOyAA6ZStackVyAA05TupleE0VyAA012_ConditionalE0VyATyAA05EmptyC0V18FitnessWorkoutPlan010Consistentt7ArtworkC0VGATyAW011StretchGoaltvC0VAeAE8redacted6reasonQrAA16RedactionReasonsV_tFQOyAA9RectangleV_Qo_GG_ADyAA6VStackVyARyAA4TextV_ADyAA6SpacerVAA12_FrameLayoutVGA13_A18_A13_A15_ATyAE011_JetEngine_aB0E14impressionable_13configuration8position20definesParentContextQr9JetEngine17ImpressionMetricsVSg_A24_21ImpressionsCalculatorC13ConfigurationVSiSgSbtFQOyAeAE12focusedValueyQrs15WritableKeyPathCyAA13FocusedValuesVqd__SgG_qd__tlFQOyAeAE7focused_6equalsQrAL_qd__tSHRd__lFQOyADyxAA16_FlexFrameLayoutVG_AW014TVPersonalizedst9CandidateC0V13FocusedButton33_9AAFE98C2E4B3F70633727130E74102DLLOyx_GSgQo__SSQo__Qo_A53_GQPGGAA14_PaddingLayoutVGQPGG_A51_Qo_AA18_AspectRatioLayoutVGAA11_ClipEffectVyAA16RoundedRectangleVGGAaBHPA66_AaBHPqd0__AaBHD3_A63_HO_A65_AA0C8ModifierHPyHCHC_A71_AAA73_HPyHCHC

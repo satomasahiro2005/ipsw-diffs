@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/TrustInsightsUI.framework/TrustInsightsUI`
 
-```diff
+### Section Size Changes
 
- 27.0.61.0.0
--  __TEXT.__text: 0x1e174
-+  __TEXT.__text: 0x1e15c
-   __TEXT.__objc_methlist: 0x1f4
-   __TEXT.__const: 0x1114
-   __TEXT.__cstring: 0xf02
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e174` | `0x1e15c` | **`-0x18`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2c6fea290 -> sub_2c7f57290 : 4208 -> 4184
+~ sub_2c6efa290 -> sub_2c7e81290 : 4208 -> 4184
 ```

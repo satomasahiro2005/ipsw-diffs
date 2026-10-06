@@ -2,80 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/LighthouseInference.framework/LighthouseInference`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd26a8` | `0xd34d0` | **`+0xe28`** |
+| `__TEXT.__eh_frame` | `0x6d5c` | `0x6f44` | **`+0x1e8`** |
+| `__DATA_DIRTY.__data` | `0x12e0` | `0x1480` | **`+0x1a0`** |
+| `__AUTH.__data` | `0x1ae0` | `0x19d8` | **`-0x108`** |
+| `__TEXT.__unwind_info` | `0x2a78` | `0x2ae0` | **`+0x68`** |
+| `__TEXT.__swift5_capture` | `0x464` | `0x4b8` | **`+0x54`** |
+| `__TEXT.__oslogstring` | `0x3482` | `0x34d2` | **`+0x50`** |
+| `__TEXT.__swift5_typeref` | `0x176e` | `0x17a4` | **`+0x36`** |
+| `__AUTH_CONST.__auth_got` | `0xfe8` | `0x1018` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0x4918` | `0x4940` | **`+0x28`** |
+| `__TEXT.__const` | `0x5944` | `0x5964` | **`+0x20`** |
+| `__DATA.__data` | `0xc70` | `0xc60` | **`-0x10`** |
+| `__TEXT.__constg_swiftt` | `0x186c` | `0x187c` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x304` | `0x314` | **`+0x10`** |
+| `__DATA.__common` | `0x28` | `0x20` | **`-0x8`** |
+| `__DATA_DIRTY.__common` | `0x88` | `0x90` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x208` | `0x210` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x26c` | `0x274` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3605.15.1.0.0
--  __TEXT.__text: 0xcb764
 +3605.17.1.0.0
-+  __TEXT.__text: 0xcc408
-   __TEXT.__objc_methlist: 0x1ac
--  __TEXT.__const: 0x5944
-+  __TEXT.__const: 0x5964
-   __TEXT.__cstring: 0x50af
--  __TEXT.__swift5_typeref: 0x176e
--  __TEXT.__swift5_capture: 0x464
--  __TEXT.__oslogstring: 0x3482
-+  __TEXT.__swift5_typeref: 0x17a4
-+  __TEXT.__swift5_capture: 0x4b8
-+  __TEXT.__oslogstring: 0x34d2
-   __TEXT.__swift5_reflstr: 0x2372
-   __TEXT.__swift5_assocty: 0x480
--  __TEXT.__constg_swiftt: 0x186c
-+  __TEXT.__constg_swiftt: 0x187c
-   __TEXT.__swift5_fieldmd: 0x1dc8
-   __TEXT.__swift5_proto: 0x360
-   __TEXT.__swift5_types: 0x1ac
--  __TEXT.__swift_as_entry: 0x208
--  __TEXT.__swift_as_ret: 0x26c
--  __TEXT.__swift_as_cont: 0x304
-+  __TEXT.__swift_as_entry: 0x210
-+  __TEXT.__swift_as_ret: 0x274
-+  __TEXT.__swift_as_cont: 0x314
-   __TEXT.__swift5_protos: 0x2c
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__unwind_info: 0x2fe0
--  __TEXT.__eh_frame: 0x6d6c
-+  __TEXT.__unwind_info: 0x3050
-+  __TEXT.__eh_frame: 0x6f54
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0x378
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x4918
-+  __AUTH_CONST.__const: 0x4940
-   __AUTH_CONST.__objc_const: 0x1840
--  __AUTH_CONST.__auth_got: 0xfe8
-+  __AUTH_CONST.__auth_got: 0x1018
-   __AUTH.__objc_data: 0xe0
--  __AUTH.__data: 0x1ae0
--  __DATA.__data: 0xc70
--  __DATA.__common: 0x28
-+  __AUTH.__data: 0x19d8
-+  __DATA.__data: 0xc60
-+  __DATA.__common: 0x20
-   __DATA_DIRTY.__objc_data: 0xa0
--  __DATA_DIRTY.__data: 0x12e0
--  __DATA_DIRTY.__common: 0x88
-+  __DATA_DIRTY.__data: 0x1480
-+  __DATA_DIRTY.__common: 0x90
-   __DATA_DIRTY.__bss: 0xb80
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3094
 -  Symbols:   7402
 -  CStrings:  746
 +  Functions: 3110
 +  Symbols:   7437
 +  CStrings:  747
- 
 Symbols:
 + _$s10Foundation4DateV2geoiySbAC_ACtFZ
 + _$s19LighthouseInference13BaseEvaluatorC19processEvaluatables33_BAFB7F4B834BAABF2692EABC44E9875FLLSSyYaKF

@@ -2,89 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/TextComposerRuntime.framework/TextComposerRuntime`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x12447` | `0x19a97` | **`+0x7650`** |
+| `__AUTH_CONST.__const` | `0x3bd0` | `0x9a98` | **`+0x5ec8`** |
+| `__TEXT.__text` | `0x755e0` | `0x78c10` | **`+0x3630`** |
+| `__TEXT.__oslogstring` | `0x2873` | `0x2a03` | **`+0x190`** |
+| `__TEXT.__eh_frame` | `0x5618` | `0x5790` | **`+0x178`** |
+| `__TEXT.__const` | `0x3c64` | `0x3d34` | **`+0xd0`** |
+| `__TEXT.__swift5_capture` | `0xdb0` | `0xe10` | **`+0x60`** |
+| `__DATA.__common` | `0x60` | `0xa0` | **`+0x40`** |
+| `__TEXT.__swift5_fieldmd` | `0xfc4` | `0x1004` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x1ea0` | `0x1ee0` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x1878` | `0x18a8` | **`+0x30`** |
+| `__DATA.__data` | `0xab8` | `0xae8` | **`+0x30`** |
+| `__TEXT.__swift5_typeref` | `0x1799` | `0x17c1` | **`+0x28`** |
+| `__TEXT.__swift5_reflstr` | `0xc02` | `0xc22` | **`+0x20`** |
+| `__TEXT.__constg_swiftt` | `0xad8` | `0xaf4` | **`+0x1c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x390` | `0x3a0` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x45c` | `0x464` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0xf8` | `0xfc` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x1a4` | `0x1a8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -211.20.0.0.0
--  __TEXT.__text: 0x755e0
 +211.26.0.0.0
-+  __TEXT.__text: 0x78c10
-   __TEXT.__objc_methlist: 0x4d8
--  __TEXT.__const: 0x3c64
--  __TEXT.__cstring: 0x12447
--  __TEXT.__oslogstring: 0x2873
--  __TEXT.__constg_swiftt: 0xad8
--  __TEXT.__swift5_typeref: 0x1799
-+  __TEXT.__const: 0x3d34
-+  __TEXT.__swift5_typeref: 0x17c1
-+  __TEXT.__cstring: 0x19a97
-+  __TEXT.__constg_swiftt: 0xaf4
-+  __TEXT.__swift5_reflstr: 0xc22
-+  __TEXT.__swift5_fieldmd: 0x1004
-   __TEXT.__swift5_builtin: 0x64
--  __TEXT.__swift5_reflstr: 0xc02
--  __TEXT.__swift5_fieldmd: 0xfc4
-   __TEXT.__swift5_assocty: 0x2b0
-   __TEXT.__swift5_proto: 0x25c
--  __TEXT.__swift5_types: 0xf8
-+  __TEXT.__swift5_types: 0xfc
-+  __TEXT.__oslogstring: 0x2a03
-   __TEXT.__swift_as_entry: 0x180
--  __TEXT.__swift_as_ret: 0x1a4
--  __TEXT.__swift_as_cont: 0x45c
-+  __TEXT.__swift_as_ret: 0x1a8
-+  __TEXT.__swift_as_cont: 0x464
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__swift5_capture: 0xdb0
--  __TEXT.__unwind_info: 0x1ea0
--  __TEXT.__eh_frame: 0x5618
-+  __TEXT.__swift5_capture: 0xe10
-+  __TEXT.__unwind_info: 0x1ee0
-+  __TEXT.__eh_frame: 0x5790
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x390
-+  __DATA_CONST.__objc_selrefs: 0x3a0
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x3bd0
-+  __AUTH_CONST.__const: 0x9a98
-   __AUTH_CONST.__objc_const: 0xa88
--  __AUTH_CONST.__auth_got: 0x1878
-+  __AUTH_CONST.__auth_got: 0x18a8
-   __AUTH.__objc_data: 0x130
-   __AUTH.__data: 0x6d0
--  __DATA.__data: 0xab8
-+  __DATA.__data: 0xae8
-+  __DATA.__common: 0xa0
-   __DATA.__bss: 0x3f80
--  __DATA.__common: 0x60
-   __DATA_DIRTY.__objc_data: 0x170
-   __DATA_DIRTY.__data: 0xa38
-   __DATA_DIRTY.__bss: 0xa00
-
-   - /System/Library/Frameworks/NaturalLanguage.framework/NaturalLanguage
-   - /System/Library/PrivateFrameworks/Archetype.framework/Archetype
-   - /System/Library/PrivateFrameworks/CoreEmoji.framework/CoreEmoji
 +  - /System/Library/PrivateFrameworks/EmailCore.framework/EmailCore
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/GenerativeFunctionsFoundation.framework/GenerativeFunctionsFoundation
-   - /System/Library/PrivateFrameworks/GenerativeFunctionsInstrumentation.framework/GenerativeFunctionsInstrumentation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2985
 -  Symbols:   216
 -  CStrings:  305
 +  Functions: 3053
 +  Symbols:   217
 +  CStrings:  1114
- 
 Symbols:
 + _OBJC_CLASS_$_ECSnippetTextClassifier
 CStrings:

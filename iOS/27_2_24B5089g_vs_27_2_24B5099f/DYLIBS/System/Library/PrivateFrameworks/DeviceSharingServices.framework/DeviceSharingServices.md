@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/DeviceSharingServices.framework/DeviceSharingServices`
 
-```diff
+### Section Size Changes
 
- 40.0.2.0.0
--  __TEXT.__text: 0x21e98
-+  __TEXT.__text: 0x21e9c
-   __TEXT.__objc_methlist: 0x634
-   __TEXT.__const: 0x380c
-   __TEXT.__cstring: 0x1144
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x233a8` | `0x233ac` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_260ea13d4 -> sub_25fcee3d4 : 124 -> 128
+~ sub_263ac3604 -> sub_262db1604 : 124 -> 128
 ```

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/DefaultAppsSettingsUI.framework/DefaultAppsSettingsUI`
 
-```diff
+### Section Size Changes
 
- 2027.0.1.0.0
--  __TEXT.__text: 0x1c7f4
-+  __TEXT.__text: 0x1c7f8
-   __TEXT.__objc_methlist: 0x284
-   __TEXT.__const: 0x12b4
-   __TEXT.__swift5_typeref: 0x1267
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1d1dc` | `0x1d1e0` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_260adf540 -> sub_25f92a540 : 128 -> 132
+~ sub_2636e9b70 -> sub_2629d6b70 : 128 -> 132
 ```

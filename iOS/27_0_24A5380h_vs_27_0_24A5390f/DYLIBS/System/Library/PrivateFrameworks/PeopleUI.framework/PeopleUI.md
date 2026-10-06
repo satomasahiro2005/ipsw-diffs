@@ -2,60 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/PeopleUI.framework/PeopleUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_selrefs`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__swift5_typeref` | `0x191c` | `0x1b58` | **`+0x23c`** |
+| `__TEXT.__text` | `0x15e48` | `0x1600c` | **`+0x1c4`** |
+| `__DATA.__data` | `0x760` | `0x7c8` | **`+0x68`** |
+| `__TEXT.__const` | `0x1044` | `0x1084` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x8b0` | `0x8a0` | **`-0x10`** |
+
+### Other Changes
 
 ```diff
 
 -144.0.0.0.0
--  __TEXT.__text: 0x15e48
--  __TEXT.__const: 0x1044
--  __TEXT.__swift5_typeref: 0x191c
 +145.0.0.0.0
-+  __TEXT.__text: 0x1600c
-+  __TEXT.__const: 0x1084
-+  __TEXT.__swift5_typeref: 0x1b58
-   __TEXT.__swift5_capture: 0xb0
-   __TEXT.__swift5_reflstr: 0x1fe
-   __TEXT.__swift5_assocty: 0xc0
 
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0xcda
-   __AUTH_CONST.__objc_const: 0x90
--  __AUTH_CONST.__auth_got: 0x8b0
-+  __AUTH_CONST.__auth_got: 0x8a0
-   __AUTH.__data: 0x2d0
--  __DATA.__data: 0x760
-+  __DATA.__data: 0x7c8
-   __DATA.__bss: 0x1620
-   __DATA_DIRTY.__data: 0x138
-   - /System/Library/Frameworks/Charts.framework/Charts
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 611
--  Symbols:   381
+-  Symbols:   363
 +  Functions: 614
-+  Symbols:   386
-   CStrings:  19
- 
++  Symbols:   368
 Symbols:
 + _symbolic _____yAAyAAyAAyAAyAAyAAy_____y_____yAAyAAyAAyAAy_____y__________G_____G_____G_____G_____G_AAyADyAE_____GALG_____yAAyAAyAAy__________y_____SgGGATyAFSgGGANG_Qo_QPGG_____GA4_GA4_GA4_GANGALGANG 7SwiftUI15ModifiedContentV AA6ZStackV AA05TupleD0V AA10_ShapeViewV AA6CircleV AA5ColorV AA11_BlurEffectV AA08_OpacityL0V AA12_FrameLayoutV AA07_OffsetL0V AA14LinearGradientV AA0H0P9WidgetKitE16widgetAccentableyQrSbFQO AA5ImageV AA30_EnvironmentKeyWritingModifierV AA4FontV AA08_PaddingO0V
 + _symbolic _____yAAyAAyAAyAAyAAy_____y_____yAAyAAyAAyAAy_____y__________G_____G_____G_____G_____G_AAyADyAE_____GALG_____yAAyAAyAAy__________y_____SgGGATyAFSgGGANG_Qo_QPGG_____GA4_GA4_GA4_GANGALG 7SwiftUI15ModifiedContentV AA6ZStackV AA05TupleD0V AA10_ShapeViewV AA6CircleV AA5ColorV AA11_BlurEffectV AA08_OpacityL0V AA12_FrameLayoutV AA07_OffsetL0V AA14LinearGradientV AA0H0P9WidgetKitE16widgetAccentableyQrSbFQO AA5ImageV AA30_EnvironmentKeyWritingModifierV AA4FontV AA08_PaddingO0V

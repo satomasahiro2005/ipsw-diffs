@@ -2,19 +2,19 @@
 
 > `/usr/lib/system/libmacho.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2968` | `0x28ec` | **`-0x7c`** |
+| `__TEXT.__unwind_info` | `0xc0` | `0xb8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2968
-+  __TEXT.__text: 0x28ec
-   __TEXT.__cstring: 0x492
-   __TEXT.__const: 0x20
--  __TEXT.__unwind_info: 0xc0
-+  __TEXT.__unwind_info: 0xb8
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x7a0
-   __DATA_CONST.__got: 0x0
-Sections:
-~ __DATA_CONST.__const : content changed
+-27056.0.0.0.0
++27059.3.0.0.0
 Functions:
 ~ _getsectbynamefromheader_64 : 236 -> 216
 ~ _getsectiondata : 496 -> 512
@@ -24,5 +24,4 @@ Functions:
 ~ _getsectbynamefromheader : 236 -> 216
 ~ _getsectbynamefromheaderwithswap : 328 -> 300
 ~ _getsectbynamefromheaderwithswap_64 : 328 -> 300
-
 ```

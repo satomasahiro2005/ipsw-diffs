@@ -2,102 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/ContactlessReaderUI.framework/ContactlessReaderUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2d3e80` | `0x2e69b4` | **`+0x12b34`** |
+| `__TEXT.__swift5_typeref` | `0x66a8c` | `0x677a0` | **`+0xd14`** |
+| `__TEXT.__const` | `0x1e5d4` | `0x1ed04` | **`+0x730`** |
+| `__TEXT.__eh_frame` | `0xa3bc` | `0xaa78` | **`+0x6bc`** |
+| `__AUTH.__data` | `0x87f8` | `0x8d38` | **`+0x540`** |
+| `__DATA.__data` | `0xacd8` | `0xb118` | **`+0x440`** |
+| `__TEXT.__unwind_info` | `0x8ac0` | `0x8e90` | **`+0x3d0`** |
+| `__DATA.__bss` | `0x17238` | `0x175a8` | **`+0x370`** |
+| `__TEXT.__cstring` | `0x7306` | `0x7646` | **`+0x340`** |
+| `__TEXT.__constg_swiftt` | `0x9888` | `0x9b40` | **`+0x2b8`** |
+| `__TEXT.__swift5_capture` | `0x3e70` | `0x410c` | **`+0x29c`** |
+| `__AUTH_CONST.__const` | `0x13e20` | `0x14080` | **`+0x260`** |
+| `__AUTH_CONST.__objc_const` | `0x8700` | `0x8950` | **`+0x250`** |
+| `__TEXT.__swift5_reflstr` | `0x73ce` | `0x75be` | **`+0x1f0`** |
+| `__TEXT.__swift5_fieldmd` | `0x76bc` | `0x789c` | **`+0x1e0`** |
+| `__AUTH_CONST.__auth_got` | `0x3538` | `0x35c8` | **`+0x90`** |
+| `__TEXT.__oslogstring` | `0x4a06` | `0x4a86` | **`+0x80`** |
+| `__TEXT.__swift_as_cont` | `0x8a4` | `0x900` | **`+0x5c`** |
+| `__AUTH.__objc_data` | `0x2898` | `0x28f0` | **`+0x58`** |
+| `__DATA_CONST.__got` | `0x1c60` | `0x1cb8` | **`+0x58`** |
+| `__TEXT.__swift_as_ret` | `0x3e4` | `0x430` | **`+0x4c`** |
+| `__TEXT.__swift_as_entry` | `0x47c` | `0x4c4` | **`+0x48`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1a70` | `0x1ab0` | **`+0x40`** |
+| `__TEXT.__swift5_assocty` | `0x1c28` | `0x1c58` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x1c70` | `0x1c90` | **`+0x20`** |
+| `__TEXT.__swift5_proto` | `0xafc` | `0xb18` | **`+0x1c`** |
+| `__DATA.__common` | `0x618` | `0x630` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0x86c` | `0x884` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x338` | `0x348` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `0x44` | `0x48` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -150.32.0.0.0
--  __TEXT.__text: 0x2d3e80
--  __TEXT.__objc_methlist: 0x1c70
--  __TEXT.__const: 0x1e5d4
--  __TEXT.__cstring: 0x7306
--  __TEXT.__swift5_typeref: 0x66a8c
--  __TEXT.__oslogstring: 0x4a06
--  __TEXT.__constg_swiftt: 0x9888
--  __TEXT.__swift5_fieldmd: 0x76bc
--  __TEXT.__swift5_types: 0x86c
--  __TEXT.__swift5_capture: 0x3e70
--  __TEXT.__swift5_reflstr: 0x73ce
--  __TEXT.__swift5_assocty: 0x1c28
--  __TEXT.__swift5_proto: 0xafc
--  __TEXT.__swift5_protos: 0x44
--  __TEXT.__swift_as_entry: 0x47c
--  __TEXT.__swift_as_ret: 0x3e4
--  __TEXT.__swift_as_cont: 0x8a4
 +150.35.0.0.0
-+  __TEXT.__text: 0x2e69b4
-+  __TEXT.__objc_methlist: 0x1c90
-+  __TEXT.__const: 0x1ed04
-+  __TEXT.__cstring: 0x7646
-+  __TEXT.__swift5_typeref: 0x677a0
-+  __TEXT.__oslogstring: 0x4a86
-+  __TEXT.__constg_swiftt: 0x9b40
-+  __TEXT.__swift5_fieldmd: 0x789c
-+  __TEXT.__swift5_types: 0x884
-+  __TEXT.__swift5_capture: 0x410c
-+  __TEXT.__swift5_reflstr: 0x75be
-+  __TEXT.__swift5_assocty: 0x1c58
-+  __TEXT.__swift5_proto: 0xb18
-+  __TEXT.__swift5_protos: 0x48
-+  __TEXT.__swift_as_entry: 0x4c4
-+  __TEXT.__swift_as_ret: 0x430
-+  __TEXT.__swift_as_cont: 0x900
-   __TEXT.__swift5_builtin: 0x320
-   __TEXT.__swift5_mpenum: 0x64
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0x8ac0
--  __TEXT.__eh_frame: 0xa3bc
-+  __TEXT.__unwind_info: 0x8e90
-+  __TEXT.__eh_frame: 0xaa78
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x2e0
--  __DATA_CONST.__objc_classlist: 0x338
-+  __DATA_CONST.__objc_classlist: 0x348
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x240
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1a70
-+  __DATA_CONST.__objc_selrefs: 0x1ab0
-   __DATA_CONST.__objc_protorefs: 0x148
-   __DATA_CONST.__vfx_script_tby: 0x20
--  __DATA_CONST.__got: 0x1c60
--  __AUTH_CONST.__const: 0x13e20
--  __AUTH_CONST.__objc_const: 0x8700
--  __AUTH_CONST.__auth_got: 0x3538
--  __AUTH.__objc_data: 0x2898
--  __AUTH.__data: 0x87f8
--  __DATA.__data: 0xacd8
--  __DATA.__bss: 0x17238
--  __DATA.__common: 0x618
-+  __DATA_CONST.__got: 0x1cb8
-+  __AUTH_CONST.__const: 0x14080
-+  __AUTH_CONST.__objc_const: 0x8950
-+  __AUTH_CONST.__auth_got: 0x35c8
-+  __AUTH.__objc_data: 0x28f0
-+  __AUTH.__data: 0x8d38
-+  __DATA.__data: 0xb118
-+  __DATA.__bss: 0x175a8
-+  __DATA.__common: 0x630
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-+  - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/Frameworks/Accessibility.framework/Accessibility
+
 -  Functions: 12103
--  Symbols:   6645
+-  Symbols:   6082
 -  CStrings:  1351
 +  Functions: 12387
-+  Symbols:   6748
++  Symbols:   6178
 +  CStrings:  1376
- 
 Symbols:
 + __DATA__TtC19ContactlessReaderUI17ChangeStepCommand
 + __DATA__TtC19ContactlessReaderUI24UnifiedSceneFlowDelegate
@@ -155,13 +109,6 @@ Symbols:
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE19allowsSecureDrawingQryFQOyAcAE12onTapGesture5count7performQrSi_yyctFQOyAA15ModifiedContentVyAIyAIyAcAE15dynamicTypeSizeyQrqd__SXRd__AA07DynamicoP0O5BoundRtd__lFQOyAA6HStackVyAA05TupleM0VyAIyAIyAIyAIyAIyAIyAA5ImageVAA18_AspectRatioLayoutVGAA30_EnvironmentKeyWritingModifierVyAA19SymbolRenderingModeVSgGGAA25_ForegroundStyleModifier2VyAA22HierarchicalShapeStyleVA6_GGAYyAA4FontVSgGGAA06_FrameX0VGAA31AccessibilityAttachmentModifierVG_ARyAcAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAIyAIyAA6VStackVyARyAIyAIyAIyAIyAIyAA4TextVAYySiSgGGAYy12CoreGraphics7CGFloatVGGA12_GAYyAA5ColorVSgGGAA010_FlexFrameX0VG_AIyA27_A43_GQPGGAA08_PaddingX0VGA49_G_Qo__AA012_ConditionalM0VyA54_yA41_AIyAIyAcAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyAIyAA6ButtonVyA27_GA40_G_AA19BorderedButtonStyleVQo_AYyAA17ButtonBorderShapeVGGA18_GGAIyAIyAIyAcAEA55_yQrqd__AAA56_Rd__lFQOyA59__A62_Qo_A66_GA40_GA18_GGQPGSgQPGG_s19PartialRangeThroughVyALGQo_A49_GAA24_BackgroundStyleModifierVyAA18_OpacityShapeStyleVyAA15BackgroundStyleVGGGAA01_M13ShapeModifierVyAA9RectangleVGG_Qo__Qo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE33searchPresentationToolbarBehavioryQrAA06SearchefG0VFQOyAcAE10searchable4text9placement6promptQrAA7BindingVySSG_AA0H14FieldPlacementVqd__tSyRd__lFQOyAA15NavigationStackVyAA0P4PathVAA15ModifiedContentVyAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAUyAcAE5sheet11isPresented9onDismiss7contentQrALySbG_yycSgqd__yctAaBRd__lFQOyAcAE7toolbarA3_Qrqd__yXE_tAA0fT0Rd__lFQOyAcAE15navigationTitleyQrqd__SyRd__lFQOyAcAE29navigationBarTitleDisplayModeyQrAA0P7BarItemV16TitleDisplayModeOFQOyAcAE15dynamicTypeSizeyQrqd__SXRd__AA15DynamicTypeSizeO5BoundRtd__lFQOyAA5GroupVyAA012_ConditionalT0Vy017ContactlessReaderB0017CommonEmptyResultC0VAcAE06scrollT10BackgroundyQrAA10VisibilityOFQOyAUyAUyAA4ListVys5NeverOA22_yAA7ForEachVySayA23_0H12ContactModelC0H6ResultOGSOA23_10PaymentRowVyA23_010PaymentRowT0VyA22_yAUyAUyAUyAA5ImageVAA18_AspectRatioLayoutVGAA12_FrameLayoutVGAA11_ClipEffectVyAA6CircleVGGA23_14PaymentRowIconVGAA4TextVAUyAUyA62_AA30_EnvironmentKeyWritingModifierVySiSgGGA64_yA62_14TruncationModeOGGGA23_19PaymentRowAccessoryVGGAA05TupleT0VyAA7SectionVyA62_A34_ySayA23_12EmailDetailsV11MeCardEntry33_96B9F7C95B4B4E60D29AF7ED507B5FEFLLVGSSA41_yA43_yA60_A71_A62_SgGA22_yAUyA20_yAUyAUyAUyAcAE10fontWeightyQrAA4FontV6WeightVSgFQOyAUyA45_A64_yA91_SgGG_Qo_A64_yA45_5ScaleOGGAA24_ForegroundStyleModifierVyAA22HierarchicalShapeStyleVGGA50_GGA104_yAA5ColorVGGAA05EmptyC0VGGGA116_GSg_A80_yA116_AcAE5alert4itemA3_QrALyqd__SgG_AA5AlertVqd__XEts12IdentifiableRd__lFQOyA41_yA43_yA59_A62_A22_yA22_yA78_yA62__AUyAA7DividerVAA14_PaddingLayoutVGA62_QPGA22_yA62_A62_GGA62_GGA22_yAUyAA08ProgressC0VyA116_A116_GA107_GA117_GG_A23_11HideMyEmailV25AccountConfigurationErrorOQo_A62_GSgA80_yA62_A34_ySayA23_12EmailAddressVGA153_ACA23_E22paymentRowSwipeActions4edge15allowsFullSwipeA3_QrAA14HorizontalEdgeO_Sbqd__yXEtAaBRd__lFQOyA118__AA6ButtonVyAA5LabelVyA62_A45_GGQo_GA116_GSgAUyA80_yA116_A161_yA62_GA62_GAA21_TraitWritingModifierVyAA25ListRowBackgroundTraitKeyVGGQPGGGA173_yAA26ListSectionSpacingTraitKeyVGGA64_yAA18ListSectionSpacingVSgGG_Qo_GG_s19PartialRangeThroughVyA16_GQo__Qo__SSQo__A78_yAA0F4ItemVyytA161_yA45_GG_A200_yytAUyAcAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyA161_yAUyA45_A113_GG_AA28BorderedProminentButtonStyleVQo_AA31AccessibilityAttachmentModifierVGGQPGQo__A23_13ContactEditorVQo_AA25_AppearanceActionModifierVG_Qo_AA24_BackgroundStyleModifierVyAA15BackgroundStyleVGGG_SSQo__Qo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA14GeometryReaderVyAA6VStackVyAA19_ConditionalContentVyAA05TupleM0VyAA08ModifiedM0VyAcAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAcAE7gesture_9includingQrqd___AA11GestureMaskVtAA0X0Rd__lFQOyASyASyAA6ZStackVyAA7ForEachVySaySi6offset_So7UIImageC7elementtGSiASyASyASyASyASyAA5ImageVAA18_AspectRatioLayoutVGAA12_FrameLayoutVGAA13_OffsetEffectVGAA21_TraitWritingModifierVyAA14ZIndexTraitKeyVGGAA14_OpacityEffectVGGGAA16_FlexFrameLayoutVGAA23_CompositingGroupEffectVG_AA06_EndedX0VyAA08_ChangedX0VyAA04DragX0VGGQo__Qo_AA0S18AttachmentModifierVG_ASyAA6HStackVyA4_ySnySiGSiASyAA06_ShapeC0VyAA6CircleVAA5ColorVGA16_GGGA28_GSgQPGASyAA08ProgressC0VyAA05EmptyC0VA70_GA33_GGGG_Qo_HO
-+ _objc_msgSend$gestureRecognizers
-+ _objc_msgSend$localizedName
-+ _objc_msgSend$setAccessibilityElementsHidden:
-+ _objc_msgSend$setAccessibilityLabel:
-+ _objc_msgSend$setGestureRecognizers:
-+ _objc_msgSend$setIsAccessibilityElement:
-+ _objc_msgSend$userUnderAgeForAccount:
 + _symbolic $s19ContactlessReaderUI12FlowDelegateP
 + _symbolic ScTySb_____G s5NeverO
 + _symbolic ScTySb_____GSg s5NeverO

@@ -2,14 +2,15 @@
 
 > `/usr/lib/libCoreEntitlements.dylib`
 
-```diff
+### Section Size Changes
 
- 94.0.0.0.0
--  __TEXT.__text: 0x7c78
-+  __TEXT.__text: 0x7c84
-   __TEXT.__const: 0x250
-   __TEXT.__cstring: 0x12a7
-   __TEXT.__gcc_except_tab: 0x17c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7c78` | `0x7c84` | **`+0xc`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _CESizeSerialization : 220 -> 224
 ~ _CESerializeWithOptions : 608 -> 612

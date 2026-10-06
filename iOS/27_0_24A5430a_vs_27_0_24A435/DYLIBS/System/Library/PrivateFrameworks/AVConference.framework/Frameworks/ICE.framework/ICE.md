@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AVConference.framework/Frameworks/ICE.framework/ICE`
 
-```diff
+### Section Size Changes
 
- 2235.63.1.2.0
--  __TEXT.__text: 0x2d95c
-+  __TEXT.__text: 0x2d964
-   __TEXT.__objc_methlist: 0x3e4
-   __TEXT.__const: 0x174
-   __TEXT.__cstring: 0x1777
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2d95c` | `0x2d964` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _ProcessRemovedLocalIPPort : 1956 -> 1964
 ```

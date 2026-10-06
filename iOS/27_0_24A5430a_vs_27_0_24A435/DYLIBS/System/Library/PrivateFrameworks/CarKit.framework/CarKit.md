@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CarKit.framework/CarKit`
 
-```diff
+### Section Size Changes
 
- 799.3.0.0.0
--  __TEXT.__text: 0x61d18
-+  __TEXT.__text: 0x61d2c
-   __TEXT.__delay_stubs: 0x40
-   __TEXT.__delay_helper: 0xa4
-   __TEXT.__objc_methlist: 0x6354
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x61d18` | `0x61d2c` | **`+0x14`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1c2092430 -> sub_1c2577430 : 848 -> 868
 ```

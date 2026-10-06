@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/Focus.framework/Focus`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_6 : 16 -> 12

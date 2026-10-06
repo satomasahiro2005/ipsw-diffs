@@ -2,14 +2,15 @@
 
 > `/usr/lib/libATCommandStudioDynamic.dylib`
 
-```diff
+### Section Size Changes
 
- 1585.0.0.0.0
--  __TEXT.__text: 0x556f0
-+  __TEXT.__text: 0x559f4
-   __TEXT.__init_offsets: 0x10
-   __TEXT.__const: 0x1b20
-   __TEXT.__gcc_except_tab: 0x57f0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x556f0` | `0x559f4` | **`+0x304`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__15dequeIN3qmi11ClientProxy5State11TransactionENS_9allocatorIS4_EEE19__add_back_capacityEv : 1100 -> 1120
 ~ __ZN4QMux5State9send_syncERKNSt3__110shared_ptrIN3qmi15QMuxClientIfaceEEERKNS2_INS3_17SerializedMessageEEE : 2148 -> 2164

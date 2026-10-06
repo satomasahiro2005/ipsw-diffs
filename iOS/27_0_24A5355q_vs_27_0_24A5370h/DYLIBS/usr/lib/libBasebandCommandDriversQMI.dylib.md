@@ -2,61 +2,36 @@
 
 > `/usr/lib/libBasebandCommandDriversQMI.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x104d08` | `0x1053c8` | **`+0x6c0`** |
+| `__TEXT.__eh_frame` | `—` | `0x138` | **`+0x138`** |
+| `__TEXT.__cstring` | `0x3f11` | `0x3f86` | **`+0x75`** |
+| `__TEXT.__gcc_except_tab` | `0x137e8` | `0x13828` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0xa900` | `0xa930` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x3750` | `0x3768` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x6ef8` | `0x6f10` | **`+0x18`** |
+| `__DATA.__data` | `0x1f0` | `0x1f8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1563.0.0.0.0
--  __TEXT.__text: 0x104d08 sha256:407242f63bafc8969d0a704d08dee08bd87a37e30e8452a0eaadb444994f2388
--  __TEXT.__init_offsets: 0x14 sha256:b356a2cc1983487217e50ef5c29d1fb00f95a57c94dd0f327a4bb2849045fd34
 +1570.0.0.0.0
-+  __TEXT.__text: 0x1053c8 sha256:89073ba76cb41eae46f6938a359eed82089004d51409150faaf0464d691d46ed
-+  __TEXT.__init_offsets: 0x14 sha256:f5141e51387927643b7f0edb11cef2916476cf8082d018de29368f3faea87058
-   __TEXT.__const: 0x7a30 sha256:94bd834d81f71399853d1604e4b2a72f9610a054e37c4a72f603b5b48b3bb6f5
--  __TEXT.__gcc_except_tab: 0x137e8 sha256:ccf9ee4f73ca5fe50ee31ad22b58fc55ecfdbc6371918533c41e5dd675b76835
--  __TEXT.__cstring: 0x3f11 sha256:a4c4e15be0ee6c974f8b11285bf6a9563c3fd1c6fe41c57ad84b781dbab1cfeb
-+  __TEXT.__gcc_except_tab: 0x13828 sha256:1d159bbf51489fd116c138627d5751018374dc79adaa36a74815eca78f127aea
-+  __TEXT.__cstring: 0x3f86 sha256:e2aa198d3c0c5c067564576f84f8427804efd242c6b420fca3f7c3acfc457a76
-   __TEXT.__oslogstring: 0x248c sha256:a2394f7cef671a8528fb4b7c8488b715242d463fc59ef009ef10b0da39adeee5
--  __TEXT.__unwind_info: 0x6ef8 sha256:86f2a50705202bf60b9dfdac28453ea0c2a059f6994e86092ad0f5f5f9214a4a
-+  __TEXT.__unwind_info: 0x6f10 sha256:ff506b6b1ac4b11f04fd58d85f0f33081e63187b9a6977df582134b2c018aa90
-+  __TEXT.__eh_frame: 0x138 sha256:8376f3fdc8493eddf0cdb9ce53c8c217a25a7738902d3d50ffbe77ff72ed98a7
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x3750 sha256:ac7bea35fbc70025fc91c887dafba7b00b438bbe09f80e9c7a27aa68a97afc0f
-+  __DATA_CONST.__const: 0x3768 sha256:7dc66e8919a39a6e5e0206ba0f30f3bcd4fe02edc256fed71f712cbea483beee
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x10 sha256:d41d30c84483d251ebd69dd4ef1b9e2b7ff74eb74a7af54ff64c908952beba9a
--  __DATA_CONST.__got: 0x980 sha256:4f18e0510ce39da5e34bdf7032e8cf977c61ad4b94cb5cea7d15fa92c5a4b46e
--  __AUTH_CONST.__const: 0xa900 sha256:c2ebb462a528e512358a3751ec48da6b44c263bb76d46d88bdb03ea53c65a49b
--  __AUTH_CONST.__cfstring: 0x20 sha256:a90c6dc23079733ed7dc02ffcaaeba20143eeafdb43dc6fe0aad8badbb13de99
--  __AUTH_CONST.__weak_auth_got: 0x10 sha256:290149e422ec40b0273600157a594a1152f2acf9916597016a24319850a9d2db
-+  __DATA_CONST.__weak_got: 0x10 sha256:a0869fe48c69b910929dba00a46129a26955fb66ff8b1f493a7903944d7bbccc
-+  __DATA_CONST.__got: 0x980 sha256:f717ae3c1f023d3e65fff41ad2e5d1871d6c041a58c885b58411a08f37015e05
-+  __AUTH_CONST.__const: 0xa930 sha256:18120d16df97d5a4ee09b7f070cfa4667facef4315b325d832de9730eef2b7db
-+  __AUTH_CONST.__cfstring: 0x20 sha256:68f6d84f3d904ed77a2772ec14c408fcb47975586de86aea63071687f97ce6ef
-+  __AUTH_CONST.__weak_auth_got: 0x10 sha256:16d48afe2d513063a6e0119d2076e9337577d960dbdb68166dd7f58bdd236fd1
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__data: 0x1f0 sha256:14929807d5f0644627ab2468bc244ceb749582e11c63e7a9e24922cf4bdd44a8
-+  __DATA.__data: 0x1f8 sha256:b8803414e1cf89fd3cba44fe00a842f7028a7e959f80fcef27c4aecf0ab26989
-   __DATA_DIRTY.__data: 0xa0 sha256:986cac5d2c61790389830d9a9fd3c95ffe836227704f4a9eeab0f71a2765aad4
-   __DATA_DIRTY.__common: 0x40 sha256:f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b
-   __DATA_DIRTY.__bss: 0x160 sha256:627f6149015f853f26db2f3dffba1b7c30b3b74b87c5cfb9f346c1616e3636d0
 
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  UUID: 95D272D2-398C-3911-832D-87BE9308795E
 -  Functions: 5157
--  Symbols:   12578
--  CStrings:  1043
-+  UUID: 52205CA7-5848-3B75-997D-052804FDC59C
+-  Symbols:   7555
+-  CStrings:  1038
 +  Functions: 5158
-+  Symbols:   12588
-+  CStrings:  1049
- 
++  Symbols:   7558
++  CStrings:  1044
 Symbols:
 + GCC_except_table320
 + GCC_except_table324
 + GCC_except_table328
-+ _.str.38
 + __ZN3abm18kTraceMultiChannelE
 + __ZN3abm23kKeyMultiChannelEnabledE
 + __ZN3abm30kCADataRateIndicationChannelIdE
@@ -360,9 +335,6 @@ Symbols:
 + __ZNSt3__17getlineB9fqe220106IcNS_11char_traitsIcEENS_9allocatorIcEEEERNS_13basic_istreamIT_T0_EES9_RNS_12basic_stringIS6_S7_T1_EES6_
 + __ZNSt3__1plB9fqe220106IcNS_11char_traitsIcEENS_9allocatorIcEEEENS_12basic_stringIT_T0_T1_EEPKS6_OS9_
 + __ZSt28__throw_bad_array_new_lengthB9fqe220106v
-+ ____ZN5radio19QMIRFSCommandDriver4syncEN3ctu2cf11CFSharedRefIK14__CFDictionaryEEN8dispatch19function_with_queueIFvNS3_I9__CFErrorEES6_EEE_block_invoke.21
-+ ____ZN5radio19QMIRFSCommandDriver4syncEN3ctu2cf11CFSharedRefIK14__CFDictionaryEEN8dispatch19function_with_queueIFvNS3_I9__CFErrorEES6_EEE_block_invoke.24
-+ ___block_literal_global.54
 + ___copy_helper_block_e8_40c49_ZTSNSt3__18weak_ptrIN5radio16RFSCommandDriverEEE56c99_ZTSN8dispatch19function_with_queueIFvN3ctu2cf11CFSharedRefI9__CFErrorEENS3_IK14__CFDictionaryEEEEE
 + ___destroy_helper_block_e8_40c49_ZTSNSt3__18weak_ptrIN5radio16RFSCommandDriverEEE56c99_ZTSN8dispatch19function_with_queueIFvN3ctu2cf11CFSharedRefI9__CFErrorEENS3_IK14__CFDictionaryEEEEE
 - GCC_except_table175
@@ -372,7 +344,6 @@ Symbols:
 - GCC_except_table322
 - GCC_except_table325
 - GCC_except_table330
-- _.str.36
 - __ZN12capabilities5trace22supportedModemFeaturesEv
 - __ZN12capabilities5traceanENS0_12ModemFeatureES1_
 - __ZN3abm26getActiveTraceChannelCountEv
@@ -671,9 +642,6 @@ Symbols:
 - __ZNSt3__17getlineB9fqe220100IcNS_11char_traitsIcEENS_9allocatorIcEEEERNS_13basic_istreamIT_T0_EES9_RNS_12basic_stringIS6_S7_T1_EES6_
 - __ZNSt3__1plB9fqe220100IcNS_11char_traitsIcEENS_9allocatorIcEEEENS_12basic_stringIT_T0_T1_EEPKS6_OS9_
 - __ZSt28__throw_bad_array_new_lengthB9fqe220100v
-- ____ZN5radio19QMIRFSCommandDriver4syncEN3ctu2cf11CFSharedRefIK14__CFDictionaryEEN8dispatch19function_with_queueIFvNS3_I9__CFErrorEES6_EEE_block_invoke.19
-- ____ZN5radio19QMIRFSCommandDriver4syncEN3ctu2cf11CFSharedRefIK14__CFDictionaryEEN8dispatch19function_with_queueIFvNS3_I9__CFErrorEES6_EEE_block_invoke.22
-- ___block_literal_global.53
 CStrings:
 + "AppleBasebandManager-AppleBasebandServices_Manager-1570"
 + "Force_Metric_Submission"
@@ -683,5 +651,4 @@ CStrings:
 + "configured_threshold_mbps"
 + "duration_seconds"
 - "AppleBasebandManager-AppleBasebandServices_Manager-1563"
-
 ```

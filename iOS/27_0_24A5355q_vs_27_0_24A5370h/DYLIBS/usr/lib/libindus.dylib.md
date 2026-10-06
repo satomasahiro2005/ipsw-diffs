@@ -2,56 +2,29 @@
 
 > `/usr/lib/libindus.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1507a4` | `0x1502b0` | **`-0x4f4`** |
+| `__TEXT.__cstring` | `0x293ba` | `0x294e4` | **`+0x12a`** |
+| `__TEXT.__unwind_info` | `0x1ee8` | `0x1f08` | **`+0x20`** |
+| `__TEXT.__const` | `0x5510` | `0x5520` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -216.0.0.0.0
--  __TEXT.__text: 0x1507a4 sha256:f5c71bcfb46724c661f49d8c4b8d50e9cadb2bea27b823f9c05bc8a498f2326b
--  __TEXT.__const: 0x5510 sha256:20ed5e834d2c7c90be59fae772bf225e50f36465dd6e5aba9e774a1d07f9866e
--  __TEXT.__gcc_except_tab: 0x492c sha256:5ba89405c5f18f3a7ab097e7ad236c9e2525c8f35435fbd633e227fc75574a26
--  __TEXT.__cstring: 0x293ba sha256:9e8e9f4fcfe6939a057421ae7fa674b34b3d1c8582a22f639f24b86c1da57b71
 +217.0.0.0.0
-+  __TEXT.__text: 0x1502b0 sha256:78680383f58ad7b594ca3e85c9b04ea2c9885747d24682e8e7d8752e59d2abfd
-+  __TEXT.__const: 0x5520 sha256:71570f2b31ef1f5afe6b15d2a4ce98fda2060add4cc73e3781a14b3eb0d8d13f
-+  __TEXT.__gcc_except_tab: 0x492c sha256:46a53bde8f2cd17b260ba2794a9daf252a2953f95163bf2aa22b3379a213866b
-+  __TEXT.__cstring: 0x294e4 sha256:ee7187ac761c1421a55ad55e31130bee7bdbfa2292d6f41488bf32cadf889f30
-   __TEXT.__oslogstring: 0xb sha256:9c3b17502bb69ebb405f31e5124ce5b6083944941f7748255fb280a55b456511
--  __TEXT.__unwind_info: 0x1ee8 sha256:65d758c69a104c2e04f2296eec3f0a3ebcf268dd6c6f27d8c1edee5a59f6df6c
-+  __TEXT.__unwind_info: 0x1f08 sha256:79d6ccb58420819790783c8f596681871ec0e20bdbfebc2c39558c17b0384bb8
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x3d8 sha256:f527934405c388ca6b4d32c8e80c2fda7b9018f7a273221b5f5bde10a3bbfade
--  __DATA_CONST.__weak_got: 0x8 sha256:baed7a8f4fe06577baf9413d1425189458482e4f64d55b4f5cc304378385a036
-+  __DATA_CONST.__const: 0x3d8 sha256:9633692536fa20ba160c822d9d80a7d3ae527ce6081cf30b0cd931daa200d555
-+  __DATA_CONST.__weak_got: 0x8 sha256:0187a61bf3fae6fc3b3aa794eddabd32ea418a3c89d235dd3a82b6bd02e4fd49
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1e08 sha256:3ff6196ad5378d20075505b8a9f4aba25574246da422d9fc5a893dea40acb032
--  __AUTH_CONST.__cfstring: 0x20 sha256:78397af84a9c900e225b805d8091d834e1d94103cbd04ecad203827fbc3f7c7b
--  __AUTH_CONST.__weak_auth_got: 0x30 sha256:e52ce14949ec4afd10b28ffdaed98682af68fe2ae49b19c1c52e7b230f6de61b
-+  __AUTH_CONST.__const: 0x1e08 sha256:a4a79a269171e5b1d8cdde346fcd9228417e094e7a7ef440ed7486e64044ad62
-+  __AUTH_CONST.__cfstring: 0x20 sha256:3dc3d2322194c552e3467686a3c1ae4261d7bd272e9521de5edb68f8e369bb42
-+  __AUTH_CONST.__weak_auth_got: 0x30 sha256:0eebff48d2fa5817e12836911c5d8d0ccae9d1ae57630e27e3a689700f25fcda
-   __AUTH_CONST.__auth_got: 0x438 sha256:d20d5d685a1fdb28a974551a0c8c0eed3f75410cf9055957b7a3a9790fc2e06a
--  __AUTH.__data: 0x3f8 sha256:d8dad1929c02d465fc4f14d01f27cc89fe73bbe02466a14477dea809877bc2a5
--  __DATA.__data: 0x3b5e0 sha256:e9cb52e8267197419c80682a9f26df309d63c46b0efa65c78446580a97700d1e
-+  __AUTH.__data: 0x3f8 sha256:8105113eeaab5802eae7f916d78dc754dcbff86c4ebbc4baf04f249ecf077dfe
-+  __DATA.__data: 0x3b5e0 sha256:372516b6184a4686d3ae8546a1536a9f0e6c717c0b197ba42f499819f8a2935c
-   __DATA.__common: 0x5dcd1 sha256:e88209426ff449806b89551dbe35aa624ea537cd033f4ddcf58cacb5e1c97d2b
-   __DATA.__bss: 0x83d8 sha256:6c35d79130585703ecca44ecabb8e7377a0d3ff77ad382d43e2ad5fbfc9f1b38
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
 
-   - /usr/lib/libTelephonyBasebandDynamic.dylib
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
--  UUID: 9C9C4F29-C94D-3211-AFE7-0916049CEA06
 -  Functions: 1892
--  Symbols:   5484
--  CStrings:  4075
-+  UUID: 4FFA82A6-DFBB-3562-8412-C7ABAFC86EAC
+-  Symbols:   2642
+-  CStrings:  4074
 +  Functions: 1898
-+  Symbols:   5496
-+  CStrings:  4080
- 
++  Symbols:   2648
++  CStrings:  4079
 Symbols:
-+ _.str.83
 + __Z16GNS_EaInitializePFv15e_gnsEA_MsgTypejP17s_gnsEA_ApiStatusE
 + __Z16GNS_EeInitializePFv15e_gnsEE_MsgTypejP17s_gnsEE_ApiStatusE
 + __Z20gnssOsa_Calloc_typedPKciimy
@@ -237,9 +210,6 @@ Symbols:
 + __ZNSt3__1rsB9fqe220106IcNS_11char_traitsIcEENS_9allocatorIcEEEERNS_13basic_istreamIT_T0_EES9_RNS_12basic_stringIS6_S7_T1_EE
 + __ZSt28__throw_bad_array_new_lengthB9fqe220106v
 + ___func__._Z20gnssOsa_Calloc_typedPKciimy
-- _.str.102
-- _.str.48
-- _.str.49
 - __Z14gnssOsa_CallocPKciim
 - __Z33API_Get_Num_SV_and_Clock_UnknownsPi
 - __ZNKSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEE4viewB9fqe220100Ev
@@ -443,5 +413,4 @@ CStrings:
 - "NavIC Disabled !"
 - "gnssOsa_Calloc"
 - "v2.213.0.2026-05-21"
-
 ```

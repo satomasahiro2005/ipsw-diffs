@@ -2,65 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/HealthIntelligence.framework/HealthIntelligence`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc5ed0` | `0xc19b0` | **`-0x4520`** |
+| `__DATA.__bss` | `0x9638` | `0x9238` | **`-0x400`** |
+| `__TEXT.__cstring` | `0x93d9` | `0x9039` | **`-0x3a0`** |
+| `__TEXT.__const` | `0x3304` | `0x31e4` | **`-0x120`** |
+| `__AUTH_CONST.__const` | `0x2c08` | `0x2b08` | **`-0x100`** |
+| `__TEXT.__unwind_info` | `0x1358` | `0x1300` | **`-0x58`** |
+| `__DATA.__data` | `0xd10` | `0xcc8` | **`-0x48`** |
+| `__TEXT.__constg_swiftt` | `0x838` | `0x818` | **`-0x20`** |
+| `__TEXT.__swift5_proto` | `0x4ac` | `0x48c` | **`-0x20`** |
+| `__TEXT.__swift5_assocty` | `0x150` | `0x138` | **`-0x18`** |
+| `__TEXT.__swift5_builtin` | `0x154` | `0x140` | **`-0x14`** |
+| `__TEXT.__swift5_typeref` | `0x360` | `0x35a` | **`-0x6`** |
+| `__TEXT.__swift5_types` | `0xc8` | `0xc4` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.45.2.4
--  __TEXT.__text: 0xbe3d8
--  __TEXT.__const: 0x3304
--  __TEXT.__cstring: 0x93d9
--  __TEXT.__constg_swiftt: 0x838
--  __TEXT.__swift5_typeref: 0x360
 +7027.1.54.2.3
-+  __TEXT.__text: 0xba098
-+  __TEXT.__const: 0x31e4
-+  __TEXT.__cstring: 0x9039
-+  __TEXT.__constg_swiftt: 0x818
-+  __TEXT.__swift5_typeref: 0x35a
-   __TEXT.__swift5_fieldmd: 0x5d0
-   __TEXT.__swift5_reflstr: 0x3c5
--  __TEXT.__swift5_builtin: 0x154
--  __TEXT.__swift5_assocty: 0x150
--  __TEXT.__swift5_proto: 0x4ac
--  __TEXT.__swift5_types: 0xc8
-+  __TEXT.__swift5_builtin: 0x140
-+  __TEXT.__swift5_assocty: 0x138
-+  __TEXT.__swift5_proto: 0x48c
-+  __TEXT.__swift5_types: 0xc4
-   __TEXT.__swift5_protos: 0x14
-   __TEXT.__oslogstring: 0x64
-   __TEXT.__swift_as_entry: 0x4
-   __TEXT.__swift_as_ret: 0x4
-   __TEXT.__swift_as_cont: 0xc
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x1760
-+  __TEXT.__unwind_info: 0x1700
-   __TEXT.__eh_frame: 0x4c8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xa0
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2c08
-+  __AUTH_CONST.__const: 0x2b08
-   __AUTH_CONST.__auth_got: 0xab8
-   __AUTH.__data: 0xc68
--  __DATA.__data: 0xd10
-+  __DATA.__data: 0xcc8
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/HealthKit.framework/HealthKit
-   - /System/Library/PrivateFrameworks/HealthDomains.framework/HealthDomains
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 1597
 -  Symbols:   209
 -  CStrings:  883
 +  Functions: 1572
 +  Symbols:   208
 +  CStrings:  859
- 
 Symbols:
 - _symbolic _____ So28HKCategoryValueContraceptiveV
 CStrings:

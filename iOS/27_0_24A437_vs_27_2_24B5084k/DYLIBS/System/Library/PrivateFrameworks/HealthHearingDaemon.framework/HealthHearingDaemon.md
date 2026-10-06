@@ -2,99 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/HealthHearingDaemon.framework/HealthHearingDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x20b18` | `0x225e0` | **`+0x1ac8`** |
+| `__DATA.__bss` | `0x300` | `0x600` | **`+0x300`** |
+| `__DATA.__data` | `0x910` | `0xb90` | **`+0x280`** |
+| `__TEXT.__const` | `0x3f2` | `0x5a0` | **`+0x1ae`** |
+| `__TEXT.__objc_methlist` | `0x1b1c` | `0x1bec` | **`+0xd0`** |
+| `__AUTH_CONST.__auth_got` | `0x620` | `0x6c8` | **`+0xa8`** |
+| `__AUTH_CONST.__objc_const` | `0x3068` | `0x3110` | **`+0xa8`** |
+| `__TEXT.__unwind_info` | `0x780` | `0x808` | **`+0x88`** |
+| `__DATA_CONST.__objc_selrefs` | `0x17b8` | `0x1838` | **`+0x80`** |
+| `__DATA_CONST.__objc_protolist` | `0xd0` | `0x120` | **`+0x50`** |
+| `__TEXT.__eh_frame` | `0x80` | `0xc8` | **`+0x48`** |
+| `__TEXT.__swift5_assocty` | `0x30` | `0x60` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0x310` | `0x338` | **`+0x28`** |
+| `__DATA_CONST.__objc_protorefs` | `0x20` | `0x48` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x1d20` | `0x1d00` | **`-0x20`** |
+| `__DATA_CONST.__got` | `0x4f0` | `0x510` | **`+0x20`** |
+| `__TEXT.__constg_swiftt` | `0xd8` | `0xf8` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x21c4` | `0x21a4` | **`-0x20`** |
+| `__TEXT.__swift5_typeref` | `0xbc` | `0xd9` | **`+0x1d`** |
+| `__TEXT.__swift5_fieldmd` | `0x74` | `0x90` | **`+0x1c`** |
+| `__TEXT.__swift5_proto` | `0x18` | `0x30` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x14` | `0x28` | **`+0x14`** |
+| `__DATA_DIRTY.__data` | `0xd0` | `0xc0` | **`-0x10`** |
+| `__DATA_CONST.__objc_catlist` | `0x38` | `0x30` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0x8` | `0xc` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.0.72.2.7
--  __TEXT.__text: 0x1fc7c
--  __TEXT.__objc_methlist: 0x1b1c
--  __TEXT.__const: 0x3f2
--  __TEXT.__cstring: 0x21c4
 +7027.1.36.2.7
-+  __TEXT.__text: 0x2173c
-+  __TEXT.__objc_methlist: 0x1bec
-+  __TEXT.__const: 0x5a0
-+  __TEXT.__cstring: 0x21a4
-   __TEXT.__oslogstring: 0x2a2b
-   __TEXT.__gcc_except_tab: 0x260
--  __TEXT.__constg_swiftt: 0xd8
--  __TEXT.__swift5_typeref: 0xbc
-+  __TEXT.__constg_swiftt: 0xf8
-+  __TEXT.__swift5_typeref: 0xd9
-   __TEXT.__swift5_reflstr: 0xbd
--  __TEXT.__swift5_fieldmd: 0x74
--  __TEXT.__swift5_builtin: 0x14
--  __TEXT.__swift5_assocty: 0x30
--  __TEXT.__swift5_proto: 0x18
--  __TEXT.__swift5_types: 0x8
--  __TEXT.__unwind_info: 0xa40
--  __TEXT.__eh_frame: 0x80
-+  __TEXT.__swift5_fieldmd: 0x90
-+  __TEXT.__swift5_builtin: 0x28
-+  __TEXT.__swift5_assocty: 0x60
-+  __TEXT.__swift5_proto: 0x30
-+  __TEXT.__swift5_types: 0xc
-+  __TEXT.__unwind_info: 0xad0
-+  __TEXT.__eh_frame: 0xc8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x650
-   __DATA_CONST.__objc_classlist: 0xf0
--  __DATA_CONST.__objc_catlist: 0x38
--  __DATA_CONST.__objc_protolist: 0xd0
-+  __DATA_CONST.__objc_catlist: 0x30
-+  __DATA_CONST.__objc_protolist: 0x120
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x17b8
--  __DATA_CONST.__objc_protorefs: 0x20
-+  __DATA_CONST.__objc_selrefs: 0x1838
-+  __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_superrefs: 0xa8
-   __DATA_CONST.__objc_arraydata: 0x690
--  __DATA_CONST.__got: 0x4f0
--  __AUTH_CONST.__const: 0x310
--  __AUTH_CONST.__cfstring: 0x1d20
--  __AUTH_CONST.__objc_const: 0x3068
-+  __DATA_CONST.__got: 0x510
-+  __AUTH_CONST.__const: 0x338
-+  __AUTH_CONST.__cfstring: 0x1d00
-+  __AUTH_CONST.__objc_const: 0x3110
-   __AUTH_CONST.__objc_intobj: 0xe10
-   __AUTH_CONST.__objc_arrayobj: 0x150
-   __AUTH_CONST.__objc_doubleobj: 0x20
--  __AUTH_CONST.__auth_got: 0x620
-+  __AUTH_CONST.__auth_got: 0x6c8
-   __AUTH.__objc_data: 0xa0
-   __DATA.__objc_ivar: 0x1b0
--  __DATA.__data: 0x910
-+  __DATA.__data: 0xb90
-   __DATA_DIRTY.__objc_data: 0x9b8
--  __DATA_DIRTY.__data: 0xd0
-+  __DATA_DIRTY.__data: 0xc0
-   __DATA_DIRTY.__common: 0x18
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /System/Library/PrivateFrameworks/HealthKitAdditions.framework/HealthKitAdditions
-   - /System/Library/PrivateFrameworks/HearingUtilities.framework/HearingUtilities
-   - /System/Library/PrivateFrameworks/NanoRegistry.framework/NanoRegistry
 +  - /System/Library/PrivateFrameworks/OSEligibility.framework/OSEligibility
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 697
--  Symbols:   1944
+-  Symbols:   1331
 -  CStrings:  440
 +  Functions: 756
-+  Symbols:   1986
++  Symbols:   1366
 +  CStrings:  439
- 
 Symbols:
 + _HKFeatureAvailabilityContextHearingAidProvincialUsage
 + __OBJC_$_CLASS_METHODS_HKFeatureAvailabilityRequirementSet(Hearing|HealthHearingDaemon)
@@ -127,14 +79,6 @@ Symbols:
 + _associated conformance So28HKFeatureAvailabilityContextaSHSCSQ
 + _associated conformance So28HKFeatureAvailabilityContextas20_SwiftNewtypeWrapperSCSY
 + _associated conformance So28HKFeatureAvailabilityContextas20_SwiftNewtypeWrapperSCs35_HasCustomAnyHashableRepresentation
-+ _objc_msgSend$OSEligibilityDomainIsEligible:
-+ _objc_msgSend$features
-+ _objc_msgSend$hearingAidOSEligibilityFallback
-+ _objc_msgSend$hkhearing_hearingAidRequirementSet
-+ _objc_msgSend$hkhearing_hearingAidV2RequirementSet
-+ _objc_msgSend$hkhearing_hearingProtectionPPERequirementSet
-+ _objc_msgSend$hkhearing_hearingProtectionRequirementSet
-+ _objc_msgSend$hkhearing_hearingTestRequirementSet
 + _swift_arrayDestroy
 + _swift_arrayInitWithCopy
 + _swift_bridgeObjectRelease_n
@@ -158,7 +102,6 @@ Symbols:
 - __OBJC_$_CATEGORY_CLASS_METHODS_HKFeatureAvailabilityRequirementSet_$_Hearing
 - __OBJC_$_CATEGORY_CLASS_METHODS_HKFeatureAvailabilityRequirements_$_Hearing
 - __OBJC_$_CATEGORY_HKFeatureAvailabilityRequirements_$_Hearing
-- _objc_msgSend$hearingFeatureHardwareRequirementsForFeatureIdentifier:
 - _type_layout_string So42HKFeatureAvailabilityRequirementIdentifiera
 CStrings:
 + "com.apple.health.demo-watch"

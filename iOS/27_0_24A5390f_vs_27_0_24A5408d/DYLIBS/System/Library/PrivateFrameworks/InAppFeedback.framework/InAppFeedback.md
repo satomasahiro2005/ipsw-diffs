@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/InAppFeedback.framework/InAppFeedback`
 
-```diff
+### Section Size Changes
 
- 1.4.17.0.0
--  __TEXT.__text: 0x460cc
-+  __TEXT.__text: 0x460b4
-   __TEXT.__objc_methlist: 0x25c
-   __TEXT.__const: 0x39f8
-   __TEXT.__constg_swiftt: 0xd68
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x460cc` | `0x460b4` | **`-0x18`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_26f38c1f4 -> sub_286eed1f4 : 1424 -> 1408
-~ sub_26f38e260 -> sub_286eef250 : 1444 -> 1436
+~ sub_26f2321f4 -> sub_286dfa1f4 : 1424 -> 1408
+~ sub_26f234260 -> sub_286dfc250 : 1444 -> 1436
 ```

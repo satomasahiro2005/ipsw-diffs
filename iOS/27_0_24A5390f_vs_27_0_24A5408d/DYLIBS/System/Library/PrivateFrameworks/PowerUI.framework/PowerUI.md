@@ -2,68 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/PowerUI.framework/PowerUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd9c7c` | `0xd9de4` | **`+0x168`** |
+| `__TEXT.__cstring` | `0xf790` | `0xf7f9` | **`+0x69`** |
+| `__AUTH_CONST.__cfstring` | `0xdbc0` | `0xdc20` | **`+0x60`** |
+| `__AUTH_CONST.__objc_const` | `0x39f98` | `0x39ff8` | **`+0x60`** |
+| `__TEXT.__oslogstring` | `0xf0da` | `0xf137` | **`+0x5d`** |
+| `__TEXT.__objc_methlist` | `0x1d71c` | `0x1d764` | **`+0x48`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5e78` | `0x5ea8` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x5e8` | `0x5f0` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x3ed0` | `0x3ed8` | **`+0x8`** |
+| `__DATA_CONST.__const` | `0x1720` | `0x1728` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x2208` | `0x2210` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -753.0.15.0.0
--  __TEXT.__text: 0xd9c7c
--  __TEXT.__objc_methlist: 0x1d71c
 +753.0.17.0.0
-+  __TEXT.__text: 0xd9de4
-+  __TEXT.__objc_methlist: 0x1d764
-   __TEXT.__const: 0x6d0
--  __TEXT.__cstring: 0xf790
--  __TEXT.__oslogstring: 0xf0da
-+  __TEXT.__cstring: 0xf7f9
-+  __TEXT.__oslogstring: 0xf137
-   __TEXT.__gcc_except_tab: 0x10c0
--  __TEXT.__unwind_info: 0x2208
-+  __TEXT.__unwind_info: 0x2210
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1720
-+  __DATA_CONST.__const: 0x1728
-   __DATA_CONST.__objc_classlist: 0x3d8
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0xa0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5e78
-+  __DATA_CONST.__objc_selrefs: 0x5ea8
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x3a0
-   __DATA_CONST.__objc_arraydata: 0x71c0
-   __DATA_CONST.__got: 0x5e0
-   __AUTH_CONST.__const: 0x720
--  __AUTH_CONST.__cfstring: 0xdbc0
--  __AUTH_CONST.__objc_const: 0x39f98
-+  __AUTH_CONST.__cfstring: 0xdc20
-+  __AUTH_CONST.__objc_const: 0x39ff8
-   __AUTH_CONST.__objc_intobj: 0xab0
-   __AUTH_CONST.__objc_arrayobj: 0x4e0
-   __AUTH_CONST.__objc_dictobj: 0x2d0
-   __AUTH_CONST.__objc_doubleobj: 0xd0
-   __AUTH_CONST.__objc_floatobj: 0x10
--  __AUTH_CONST.__auth_got: 0x5e8
-+  __AUTH_CONST.__auth_got: 0x5f0
-   __AUTH.__objc_data: 0x1b30
--  __DATA.__objc_ivar: 0x3ed0
-+  __DATA.__objc_ivar: 0x3ed8
-   __DATA.__data: 0x788
-   __DATA.__bss: 0xc8
-   __DATA_DIRTY.__objc_data: 0xb40
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 10650
--  Symbols:   17588
+-  Symbols:   15768
 -  CStrings:  3204
 +  Functions: 10656
-+  Symbols:   17599
++  Symbols:   15778
 +  CStrings:  3209
- 
 Symbols:
 + -[PowerUIIBLMNotificationManager displayUnusualDrainNotification]
 + -[PowerUIIBLMNotificationManager postIBLMNotificationWithTitleKey:bodyKey:identifier:category:]
@@ -83,9 +50,6 @@ Symbols:
 + ___95-[PowerUIIBLMNotificationManager postIBLMNotificationWithTitleKey:bodyKey:identifier:category:]_block_invoke
 + _dispatch_resume
 + _kIBLMUnusualDrainNotification
-+ _objc_msgSend$postIBLMNotificationWithTitleKey:bodyKey:identifier:category:
-+ _objc_msgSend$startMLCheckTimer
-+ _objc_msgSend$stopMLCheckTimer
 - -[PowerUIRuntimeAwarenessNotifier cancelMLCheckAlarm]
 - -[PowerUIRuntimeAwarenessNotifier mlAlarmScheduled]
 - -[PowerUIRuntimeAwarenessNotifier scheduleMLCheckAlarm]
@@ -94,8 +58,6 @@ Symbols:
 - _OBJC_IVAR_$_PowerUIRuntimeAwarenessNotifier._mlAlarmScheduled
 - ___52-[PowerUIRuntimeAwarenessNotifier handleAlarmEvent:]_block_invoke_2
 - ___64-[PowerUIIBLMNotificationManager displayIBLMEngagedNotification]_block_invoke
-- _objc_msgSend$cancelMLCheckAlarm
-- _objc_msgSend$scheduleMLCheckAlarm
 CStrings:
 + "Conditions no longer met for ML check (battery: %ld%%, plugged: %d), stopping timer"
 + "Current battery level: %ld%% - invalid"

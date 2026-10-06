@@ -2,62 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/CoreRE.framework/CoreRE`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x16824b0` | `0x1683630` | **`+0x1180`** |
+| `__TEXT.__gcc_except_tab` | `0xe0ec` | `0xe1f8` | **`+0x10c`** |
+| `__AUTH_CONST.__const` | `0x9dd90` | `0x9dcf0` | **`-0xa0`** |
+| `__DATA_DIRTY.__bss` | `0x57d30` | `0x57dd0` | **`+0xa0`** |
+| `__TEXT.__const` | `0x1075e4` | `0x107564` | **`-0x80`** |
+| `__TEXT.__unwind_info` | `0x551b0` | `0x551e0` | **`+0x30`** |
+| `__DATA.__bss` | `0x9768` | `0x9758` | **`-0x10`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -453.2.1.0.0
--  __TEXT.__text: 0x1657938
 +453.40.4.0.0
-+  __TEXT.__text: 0x1658ac4
-   __TEXT.__objc_methlist: 0x4290
--  __TEXT.__const: 0x1075e4
-+  __TEXT.__const: 0x107564
-   __TEXT.__constg_swiftt: 0x44
-   __TEXT.__swift5_typeref: 0x2f
-   __TEXT.__swift5_fieldmd: 0x44
-   __TEXT.__swift5_reflstr: 0x1f
-   __TEXT.__swift5_types: 0x8
-   __TEXT.__cstring: 0xb4ab8
--  __TEXT.__gcc_except_tab: 0xe0ec
-+  __TEXT.__gcc_except_tab: 0xe1f8
-   __TEXT.__oslogstring: 0x52893
-   __TEXT.__ustring: 0x1a
--  __TEXT.__unwind_info: 0x561c0
-+  __TEXT.__unwind_info: 0x561f0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_superrefs: 0x1c0
-   __DATA_CONST.__objc_arraydata: 0x10
-   __DATA_CONST.__got: 0x10d0
--  __AUTH_CONST.__const: 0x9dd90
-+  __AUTH_CONST.__const: 0x9dcf0
-   __AUTH_CONST.__cfstring: 0xb780
-   __AUTH_CONST.__objc_const: 0x7dc8
-   __AUTH_CONST.__weak_auth_got: 0x48
-
-   __DATA_DIRTY.__objc_ivar: 0x130
-   __DATA_DIRTY.__objc_data: 0x1540
-   __DATA_DIRTY.__data: 0x4548
--  __DATA_DIRTY.__bss: 0x57d30
-+  __DATA_DIRTY.__bss: 0x57dd0
-   __DATA_DIRTY.__common: 0x3ad0
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswiftObservation.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 86318
--  Symbols:   123738
+-  Symbols:   121606
 +  Functions: 86323
-+  Symbols:   123733
-   CStrings:  23224
- 
++  Symbols:   121601
 Symbols:
 + GCC_except_table113
 + GCC_except_table146

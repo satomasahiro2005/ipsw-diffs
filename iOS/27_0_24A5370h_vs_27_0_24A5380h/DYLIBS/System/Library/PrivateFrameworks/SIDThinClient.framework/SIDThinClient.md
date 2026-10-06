@@ -2,81 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/SIDThinClient.framework/SIDThinClient`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa998` | `0x674c` | **`-0x424c`** |
+| `__DATA.__bss` | `0x3080` | `0x1780` | **`-0x1900`** |
+| `__TEXT.__const` | `0x1934` | `0xca4` | **`-0xc90`** |
+| `__AUTH_CONST.__const` | `0xda8` | `0x6c8` | **`-0x6e0`** |
+| `__TEXT.__eh_frame` | `0x6d0` | `0x418` | **`-0x2b8`** |
+| `__TEXT.__swift5_typeref` | `0x457` | `0x23b` | **`-0x21c`** |
+| `__AUTH.__data` | `0x1f0` | `—` | **`-0x1f0`** |
+| `__TEXT.__constg_swiftt` | `0x3f0` | `0x21c` | **`-0x1d4`** |
+| `__TEXT.__unwind_info` | `0x4a8` | `0x2d8` | **`-0x1d0`** |
+| `__DATA.__data` | `0x398` | `0x1d8` | **`-0x1c0`** |
+| `__TEXT.__swift5_fieldmd` | `0x390` | `0x1dc` | **`-0x1b4`** |
+| `__DATA_DIRTY.__data` | `—` | `0x148` | **`+0x148`** |
+| `__TEXT.__swift5_proto` | `0x184` | `0xbc` | **`-0xc8`** |
+| `__AUTH_CONST.__objc_const` | `0x200` | `0x148` | **`-0xb8`** |
+| `__TEXT.__swift5_reflstr` | `0xd3` | `0x88` | **`-0x4b`** |
+| `__TEXT.__cstring` | `0xf0` | `0xbc` | **`-0x34`** |
+| `__TEXT.__swift5_types` | `0x6c` | `0x38` | **`-0x34`** |
+| `__TEXT.__swift_as_cont` | `0x3c` | `0x24` | **`-0x18`** |
+| `__TEXT.__swift5_builtin` | `0x28` | `0x14` | **`-0x14`** |
+| `__AUTH_CONST.__auth_got` | `0x2e8` | `0x2d8` | **`-0x10`** |
+| `__TEXT.__swift5_capture` | `0x40` | `0x30` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x18` | `0x10` | **`-0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x10` | `0x8` | **`-0x8`** |
+| `__TEXT.__swift_as_entry` | `0x18` | `0x10` | **`-0x8`** |
+| `__TEXT.__swift_as_ret` | `0x18` | `0x10` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xa998
--  __TEXT.__const: 0x1934
--  __TEXT.__constg_swiftt: 0x3f0
--  __TEXT.__swift5_typeref: 0x457
--  __TEXT.__swift5_reflstr: 0xd3
--  __TEXT.__swift5_fieldmd: 0x390
--  __TEXT.__swift5_proto: 0x184
--  __TEXT.__swift5_types: 0x6c
--  __TEXT.__cstring: 0xf0
-+  __TEXT.__text: 0x674c
-+  __TEXT.__const: 0xca4
-+  __TEXT.__constg_swiftt: 0x21c
-+  __TEXT.__swift5_typeref: 0x23b
-+  __TEXT.__swift5_reflstr: 0x88
-+  __TEXT.__swift5_fieldmd: 0x1dc
-+  __TEXT.__swift5_proto: 0xbc
-+  __TEXT.__swift5_types: 0x38
-+  __TEXT.__cstring: 0xbc
-   __TEXT.__oslogstring: 0xaa
--  __TEXT.__swift5_capture: 0x40
--  __TEXT.__swift_as_entry: 0x18
--  __TEXT.__swift_as_ret: 0x18
--  __TEXT.__swift_as_cont: 0x3c
-+  __TEXT.__swift5_capture: 0x30
-+  __TEXT.__swift_as_entry: 0x10
-+  __TEXT.__swift_as_ret: 0x10
-+  __TEXT.__swift_as_cont: 0x24
-   __TEXT.__swift5_assocty: 0x18
--  __TEXT.__swift5_builtin: 0x28
--  __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x4a8
--  __TEXT.__eh_frame: 0x6d0
-+  __TEXT.__swift5_builtin: 0x14
-+  __TEXT.__swift5_mpenum: 0x8
-+  __TEXT.__unwind_info: 0x2d8
-+  __TEXT.__eh_frame: 0x418
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x38
--  __DATA_CONST.__objc_classlist: 0x18
-+  __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xda8
--  __AUTH_CONST.__objc_const: 0x200
--  __AUTH_CONST.__auth_got: 0x2e8
--  __AUTH.__data: 0x1f0
--  __DATA.__data: 0x398
--  __DATA.__bss: 0x3080
-+  __AUTH_CONST.__const: 0x6c8
-+  __AUTH_CONST.__objc_const: 0x148
-+  __AUTH_CONST.__auth_got: 0x2d8
-+  __DATA.__data: 0x1d8
-+  __DATA.__bss: 0x1780
-+  __DATA_DIRTY.__data: 0x148
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
+-1.60.0.0.0
++1.65.0.0.0
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 398
--  Symbols:   260
+-  Symbols:   232
 -  CStrings:  12
 +  Functions: 231
-+  Symbols:   187
++  Symbols:   167
 +  CStrings:  11
- 
-Sections:
-~ __TEXT.__swift5_assocty : content changed
 Symbols:
 + _objc_release_x27
 - __DATA__TtC13SIDThinClient16SIDFitnessClient
@@ -147,5 +115,4 @@ Symbols:
 - _type_layout_string 13SIDThinClient21SIDFitnessXPCResponseO
 CStrings:
 - "com.apple.servicesintelligence.xpc.fitness"
-
 ```

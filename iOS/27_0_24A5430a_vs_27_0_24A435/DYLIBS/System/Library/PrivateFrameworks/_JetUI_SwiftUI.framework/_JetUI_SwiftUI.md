@@ -2,24 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/_JetUI_SwiftUI.framework/_JetUI_SwiftUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__auth_got` | `0x7d0` | `0x7d8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x678
-   __AUTH_CONST.__objc_const: 0x1a8
--  __AUTH_CONST.__auth_got: 0x7d0
-+  __AUTH_CONST.__auth_got: 0x7d8
-   __AUTH.__data: 0x30
-   __DATA.__data: 0x688
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 324
--  Symbols:   315
-+  Symbols:   316
-   CStrings:  20
- 
+-  Symbols:   313
++  Symbols:   314
 Symbols:
 + _swift_release_x23
 ```

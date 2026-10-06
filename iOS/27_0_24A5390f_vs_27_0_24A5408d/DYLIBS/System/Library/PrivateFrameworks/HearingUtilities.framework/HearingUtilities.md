@@ -2,81 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/HearingUtilities.framework/HearingUtilities`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb81cc` | `0xb9a80` | **`+0x18b4`** |
+| `__TEXT.__oslogstring` | `0xf724` | `0xfd57` | **`+0x633`** |
+| `__AUTH_CONST.__objc_const` | `0xbf28` | `0xc078` | **`+0x150`** |
+| `__TEXT.__objc_methlist` | `0x929c` | `0x93e4` | **`+0x148`** |
+| `__DATA_CONST.__objc_selrefs` | `0x55a8` | `0x5688` | **`+0xe0`** |
+| `__DATA_CONST.__const` | `0x3768` | `0x37e8` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x2c78` | `0x2cd8` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0x28ac` | `0x2900` | **`+0x54`** |
+| `__AUTH_CONST.__cfstring` | `0x5d20` | `0x5d60` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x6096` | `0x60b7` | **`+0x21`** |
+| `__DATA.__objc_ivar` | `0xa08` | `0xa24` | **`+0x1c`** |
+| `__AUTH_CONST.__objc_intobj` | `0xa50` | `0xa68` | **`+0x18`** |
+| `__DATA.__bss` | `0x828` | `0x820` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -536.0.0.0.0
--  __TEXT.__text: 0xb81cc
--  __TEXT.__objc_methlist: 0x929c
 +539.1.0.0.0
-+  __TEXT.__text: 0xb9a80
-+  __TEXT.__objc_methlist: 0x93e4
-   __TEXT.__const: 0x7e4
-   __TEXT.__dlopen_cstrs: 0x85c
--  __TEXT.__cstring: 0x6096
-+  __TEXT.__cstring: 0x60b7
-   __TEXT.__swift5_typeref: 0x2a5
-   __TEXT.__swift5_capture: 0x1d8
-   __TEXT.__constg_swiftt: 0x1a0
 
-   __TEXT.__swift5_assocty: 0x30
-   __TEXT.__swift5_proto: 0x14
-   __TEXT.__swift5_types: 0x1c
--  __TEXT.__oslogstring: 0xf724
--  __TEXT.__gcc_except_tab: 0x28ac
--  __TEXT.__unwind_info: 0x2c78
-+  __TEXT.__oslogstring: 0xfd57
-+  __TEXT.__gcc_except_tab: 0x2900
-+  __TEXT.__unwind_info: 0x2cd8
-   __TEXT.__eh_frame: 0x70
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3768
-+  __DATA_CONST.__const: 0x37e8
-   __DATA_CONST.__objc_classlist: 0x218
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x120
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x55a8
-+  __DATA_CONST.__objc_selrefs: 0x5688
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x1a0
-   __DATA_CONST.__objc_arraydata: 0x3f0
-   __DATA_CONST.__got: 0x778
-   __AUTH_CONST.__const: 0x1638
--  __AUTH_CONST.__cfstring: 0x5d20
--  __AUTH_CONST.__objc_const: 0xbf28
--  __AUTH_CONST.__objc_intobj: 0xa50
-+  __AUTH_CONST.__cfstring: 0x5d60
-+  __AUTH_CONST.__objc_const: 0xc078
-+  __AUTH_CONST.__objc_intobj: 0xa68
-   __AUTH_CONST.__objc_dictobj: 0x410
-   __AUTH_CONST.__objc_arrayobj: 0x1e0
-   __AUTH_CONST.__objc_doubleobj: 0x1870
-   __AUTH_CONST.__auth_got: 0xbb0
-   __AUTH.__objc_data: 0x11d8
-   __AUTH.__data: 0xa8
--  __DATA.__objc_ivar: 0xa08
-+  __DATA.__objc_ivar: 0xa24
-   __DATA.__data: 0xf80
--  __DATA.__bss: 0x828
-+  __DATA.__bss: 0x820
-   __DATA_DIRTY.__objc_data: 0x5a8
-   __DATA_DIRTY.__data: 0xc8
-   __DATA_DIRTY.__bss: 0xd0
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4093
--  Symbols:   8587
+-  Symbols:   6398
 -  CStrings:  2089
 +  Functions: 4130
-+  Symbols:   8658
++  Symbols:   6442
 +  CStrings:  2109
- 
 Symbols:
 + +[AXHearingAidDevice releaseLeftPowerSourceID:andRightPowerSourceID:]
 + +[HUWidgetReloadHelper reloadAllWidgets]
@@ -310,37 +266,6 @@ Symbols:
 + ___block_descriptor_56_e8_32s40bs_e23_v20?0I8^{__CFArray=}12ls32l8s40l8
 + ___block_descriptor_56_e8_32s40bs_e5_v8?0ls32l8s40l8
 + ___block_descriptor_56_e8_32s40bs_e8_v12?0I8ls40l8s32l8
-+ _objc_msgSend$attemptPauseAudioPlaybackWithRemainingAttempts:completion:
-+ _objc_msgSend$attemptReloadingHearingDeviceProperties
-+ _objc_msgSend$bluetoothCentralQueue
-+ _objc_msgSend$bufferExposureSampleWithSPL:startDate:endDate:
-+ _objc_msgSend$checkPeerStateAfterTimeOut:
-+ _objc_msgSend$exposureBuffer
-+ _objc_msgSend$exposureBufferStartDate
-+ _objc_msgSend$flushExposureBufferToHealth
-+ _objc_msgSend$handlePeerDiscoveryEndedFromDevice:
-+ _objc_msgSend$handlePeerDiscoveryStartedFromDevice:
-+ _objc_msgSend$isInOnboarding
-+ _objc_msgSend$lastArtifactsDetectedSampleDate
-+ _objc_msgSend$needsReloadingHearingDeviceProperties
-+ _objc_msgSend$notifiedPeersOfDiscovery
-+ _objc_msgSend$notifyConnectedPeerOfDiscoveryReason:
-+ _objc_msgSend$notifyPeersDiscoveryEnded
-+ _objc_msgSend$notifyPeersDiscoveryStarted
-+ _objc_msgSend$processCanUseBluetooth
-+ _objc_msgSend$propertyLoadRetryCount
-+ _objc_msgSend$propertyLoadRetryTimer
-+ _objc_msgSend$reconcileMicrophoneMuteFromVolumes
-+ _objc_msgSend$releaseBatteryServicesOnBluetoothQueue
-+ _objc_msgSend$releaseLeftPowerSourceID:andRightPowerSourceID:
-+ _objc_msgSend$reloadAllWidgets
-+ _objc_msgSend$reloadHearingDevicePropertiesIfNeeded
-+ _objc_msgSend$setExposureBufferStartDate:
-+ _objc_msgSend$setIsInOnboarding:
-+ _objc_msgSend$setLastArtifactsDetectedSampleDate:
-+ _objc_msgSend$setNotifiedPeersOfDiscovery:
-+ _objc_msgSend$setPropertyLoadRetryCount:
-+ _objc_msgSend$updateInputTagsAfterPairing
 - -[HUAudioRoutesManager audioSessionDidBecomeInactive:]
 - -[HUAudioRoutesManager audioSessionResumptionRecommended:]
 - -[HUHearingAidSettings syncMicrophoneMutedForLeftVolume:rightVolume:]
@@ -529,10 +454,6 @@ Symbols:
 - ___58-[HUNearbyHearingAidController checkPeerStateAfterTimeOut]_block_invoke
 - ___67-[HUNoiseController writeExposureToHKWithSPL:startDate:andEndDate:]_block_invoke
 - ___block_descriptor_65_e8_32s40s48s56s_e5_v8?0ls32l8s40l8s48l8s56l8
-- _objc_msgSend$checkPeerStateAfterTimeOut
-- _objc_msgSend$removePendingNoiseSamplesWithinDateInterval:
-- _objc_msgSend$syncMicrophoneMutedForLeftVolume:rightVolume:
-- _objc_msgSend$writeExposureToHKWithSPL:startDate:andEndDate:
 CStrings:
 + "Artifacts detected, removing %lu pending noise samples"
 + "Audio still playing after %ld pause attempts, giving up"

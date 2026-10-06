@@ -2,73 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/HealthPlansUI.framework/HealthPlansUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x13f10` | `0x174e0` | **`+0x35d0`** |
+| `__TEXT.__cstring` | `0x4fe` | `0x6ae` | **`+0x1b0`** |
+| `__TEXT.__const` | `0x6cc` | `0x86c` | **`+0x1a0`** |
+| `__AUTH_CONST.__const` | `0x430` | `0x5c0` | **`+0x190`** |
+| `__DATA.__bss` | `0x508` | `0x630` | **`+0x128`** |
+| `__DATA.__data` | `0x620` | `0x748` | **`+0x128`** |
+| `__TEXT.__swift5_typeref` | `0x466` | `0x582` | **`+0x11c`** |
+| `__TEXT.__constg_swiftt` | `0x324` | `0x3e0` | **`+0xbc`** |
+| `__AUTH_CONST.__auth_got` | `0x998` | `0xa50` | **`+0xb8`** |
+| `__DATA_CONST.__got` | `0x540` | `0x5f0` | **`+0xb0`** |
+| `__TEXT.__unwind_info` | `0x4b0` | `0x548` | **`+0x98`** |
+| `__TEXT.__swift5_capture` | `0xe0` | `0x140` | **`+0x60`** |
+| `__TEXT.__swift5_fieldmd` | `0x168` | `0x1a0` | **`+0x38`** |
+| `__TEXT.__swift5_assocty` | `0xa8` | `0xd8` | **`+0x30`** |
+| `__TEXT.__eh_frame` | `0x37c` | `0x354` | **`-0x28`** |
+| `__TEXT.__swift5_reflstr` | `0x13f` | `0x15d` | **`+0x1e`** |
+| `__AUTH.__data` | `0x238` | `0x240` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x28` | `0x30` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x20` | `0x28` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.45.2.4
--  __TEXT.__text: 0x1341c
--  __TEXT.__const: 0x6cc
--  __TEXT.__swift5_typeref: 0x466
--  __TEXT.__constg_swiftt: 0x324
--  __TEXT.__swift5_reflstr: 0x13f
--  __TEXT.__swift5_assocty: 0xa8
--  __TEXT.__swift5_fieldmd: 0x168
--  __TEXT.__swift5_capture: 0xe0
--  __TEXT.__swift5_proto: 0x28
--  __TEXT.__swift5_types: 0x20
--  __TEXT.__cstring: 0x4fe
 +7027.1.54.2.3
-+  __TEXT.__text: 0x168fc
-+  __TEXT.__const: 0x86c
-+  __TEXT.__swift5_typeref: 0x582
-+  __TEXT.__constg_swiftt: 0x3e0
-+  __TEXT.__swift5_reflstr: 0x15d
-+  __TEXT.__swift5_assocty: 0xd8
-+  __TEXT.__swift5_fieldmd: 0x1a0
-+  __TEXT.__swift5_capture: 0x140
-+  __TEXT.__swift5_proto: 0x30
-+  __TEXT.__swift5_types: 0x28
-+  __TEXT.__cstring: 0x6ae
-   __TEXT.__oslogstring: 0x108
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_cont: 0x1c
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0x618
--  __TEXT.__eh_frame: 0x37c
-+  __TEXT.__unwind_info: 0x708
-+  __TEXT.__eh_frame: 0x354
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x98
--  __DATA_CONST.__got: 0x540
--  __AUTH_CONST.__const: 0x430
-+  __DATA_CONST.__got: 0x5f0
-+  __AUTH_CONST.__const: 0x5c0
-   __AUTH_CONST.__objc_const: 0x90
--  __AUTH_CONST.__auth_got: 0x998
--  __AUTH.__data: 0x238
--  __DATA.__data: 0x620
-+  __AUTH_CONST.__auth_got: 0xa50
-+  __AUTH.__data: 0x240
-+  __DATA.__data: 0x748
-   __DATA.__common: 0x10
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 376
 -  Symbols:   253
 -  CStrings:  38
 +  Functions: 456
 +  Symbols:   269
 +  CStrings:  47
- 
 Symbols:
 + _associated conformance 13HealthPlansUI28SuggestionsPromotionCardViewV05SwiftC00G0AA4BodyAdEP_AdE
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA6VStackVyAA05TupleD0VyACyAA4TextVAA16_FixedSizeLayoutVG_AlCyACyACyACyAA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonM0Rd__lFQOyAA0O0VyACyAiA010_FlexFrameJ0VGG_AA05GlassoM0VQo_AA30_EnvironmentKeyWritingModifierVyAA0O11BorderShapeVGGA_yAA07ControlI0OGGA_yAA5ColorVSgGGAA08_PaddingJ0VGQPGGATGA14_GAA021_InsettableBackgroundxV0VyAA010BackgroundM0VAA16RoundedRectangleVGGAaMHPA19_AaMHPA18_AaMHPA17_AaMHPyHC_AtA0kV0HPyHCHC_A14_AAA28_HPyHCHC_A26_AAA28_HPyHCHC

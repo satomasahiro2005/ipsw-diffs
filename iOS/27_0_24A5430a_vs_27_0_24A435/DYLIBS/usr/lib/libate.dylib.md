@@ -2,14 +2,15 @@
 
 > `/usr/lib/libate.dylib`
 
-```diff
+### Section Size Changes
 
- 3.0.11.0.0
--  __TEXT.__text: 0x3be24
-+  __TEXT.__text: 0x3bf54
-   __TEXT.__objc_methlist: 0x14c
-   __TEXT.__const: 0x511e0
-   __TEXT.__cstring: 0x1ba8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3be24` | `0x3bf54` | **`+0x130`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZL9EncodeRowPvmPh : 1284 -> 1280
 ~ _EncodeBasicBlock_4x4 : 22700 -> 22784

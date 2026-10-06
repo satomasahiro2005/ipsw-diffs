@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/AXWatchRemoteScreenUI.framework/AXWatchRemoteScreenUI`
 
-```diff
+### Section Size Changes
 
- 3240.9.0.0.0
--  __TEXT.__text: 0x21aac
-+  __TEXT.__text: 0x21ad8
-   __TEXT.__objc_methlist: 0x8e8
-   __TEXT.__const: 0x788
-   __TEXT.__dlopen_cstrs: 0x144
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21aac` | `0x21ad8` | **`+0x2c`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_24f6420c0 -> sub_2504b90c0 : 540 -> 544
-~ sub_24f659d54 -> sub_2504d0d58 : 4872 -> 4912
+~ sub_24f4ef0c0 -> sub_24ff450c0 : 540 -> 544
+~ sub_24f506d54 -> sub_24ff5cd58 : 4872 -> 4912
 ```

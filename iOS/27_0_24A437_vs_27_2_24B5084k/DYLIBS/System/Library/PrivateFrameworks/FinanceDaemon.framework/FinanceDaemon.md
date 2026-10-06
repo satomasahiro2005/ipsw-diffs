@@ -2,96 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/FinanceDaemon.framework/FinanceDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x48c3ac` | `0x490700` | **`+0x4354`** |
+| `__TEXT.__oslogstring` | `0x14592` | `0x149e2` | **`+0x450`** |
+| `__AUTH.__data` | `0x8d60` | `0x8fc0` | **`+0x260`** |
+| `__AUTH_CONST.__const` | `0x10888` | `0x10768` | **`-0x120`** |
+| `__TEXT.__eh_frame` | `0x263f0` | `0x26504` | **`+0x114`** |
+| `__DATA.__bss` | `0x142e0` | `0x143e0` | **`+0x100`** |
+| `__AUTH_CONST.__objc_const` | `0x7118` | `0x71f0` | **`+0xd8`** |
+| `__TEXT.__const` | `0x17cf2` | `0x17dc2` | **`+0xd0`** |
+| `__TEXT.__swift5_typeref` | `0x9450` | `0x94f8` | **`+0xa8`** |
+| `__DATA.__data` | `0x5170` | `0x5210` | **`+0xa0`** |
+| `__TEXT.__constg_swiftt` | `0x817c` | `0x8218` | **`+0x9c`** |
+| `__TEXT.__unwind_info` | `0xc240` | `0xc2c8` | **`+0x88`** |
+| `__TEXT.__swift5_fieldmd` | `0x837c` | `0x8400` | **`+0x84`** |
+| `__TEXT.__cstring` | `0xcc55` | `0xccc5` | **`+0x70`** |
+| `__DATA_DIRTY.__data` | `0x6508` | `0x6568` | **`+0x60`** |
+| `__AUTH_CONST.__auth_got` | `0x6a08` | `0x6a50` | **`+0x48`** |
+| `__TEXT.__swift5_reflstr` | `0xa494` | `0xa4d4` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x2d70` | `0x2da8` | **`+0x38`** |
+| `__TEXT.__swift5_assocty` | `0xef8` | `0xf18` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1f60` | `0x1f78` | **`+0x18`** |
+| `__TEXT.__swift5_capture` | `0x25e8` | `0x25d8` | **`-0x10`** |
+| `__TEXT.__swift_as_entry` | `0x988` | `0x994` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x348` | `0x350` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0xd80` | `0xd88` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x8a4` | `0x8ac` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0xad0` | `0xad8` | **`+0x8`** |
+| `__TEXT.__swift5_types2` | `0x4` | `0x8` | **`+0x4`** |
+| `__TEXT.__swift_as_cont` | `0x1518` | `0x151c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -376.0.1.0.0
--  __TEXT.__text: 0x461fdc
 +376.1.3.0.0
-+  __TEXT.__text: 0x466094
-   __TEXT.__objc_methlist: 0x7d0
--  __TEXT.__const: 0x17cf2
--  __TEXT.__cstring: 0xcc55
--  __TEXT.__oslogstring: 0x14592
--  __TEXT.__constg_swiftt: 0x817c
--  __TEXT.__swift5_typeref: 0x9450
-+  __TEXT.__const: 0x17dc2
-+  __TEXT.__cstring: 0xccc5
-+  __TEXT.__oslogstring: 0x149e2
-+  __TEXT.__constg_swiftt: 0x8218
-+  __TEXT.__swift5_typeref: 0x94f8
-   __TEXT.__swift5_builtin: 0x190
--  __TEXT.__swift5_reflstr: 0xa494
--  __TEXT.__swift5_fieldmd: 0x837c
--  __TEXT.__swift5_capture: 0x25e8
--  __TEXT.__swift5_assocty: 0xef8
--  __TEXT.__swift5_proto: 0xd80
--  __TEXT.__swift5_types: 0x8a4
--  __TEXT.__swift_as_entry: 0x988
--  __TEXT.__swift_as_ret: 0xad0
--  __TEXT.__swift_as_cont: 0x1518
-+  __TEXT.__swift5_reflstr: 0xa4d4
-+  __TEXT.__swift5_fieldmd: 0x8400
-+  __TEXT.__swift5_capture: 0x25d8
-+  __TEXT.__swift5_assocty: 0xf18
-+  __TEXT.__swift5_proto: 0xd88
-+  __TEXT.__swift5_types: 0x8ac
-+  __TEXT.__swift_as_entry: 0x994
-+  __TEXT.__swift_as_ret: 0xad8
-+  __TEXT.__swift_as_cont: 0x151c
-   __TEXT.__swift5_protos: 0x16c
-   __TEXT.__swift5_mpenum: 0x94
--  __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0xe168
--  __TEXT.__eh_frame: 0x26400
-+  __TEXT.__swift5_types2: 0x8
-+  __TEXT.__unwind_info: 0xe218
-+  __TEXT.__eh_frame: 0x26514
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x188
--  __DATA_CONST.__objc_classlist: 0x348
-+  __DATA_CONST.__objc_classlist: 0x350
-   __DATA_CONST.__objc_protolist: 0xc0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1f60
-+  __DATA_CONST.__objc_selrefs: 0x1f78
-   __DATA_CONST.__objc_protorefs: 0x60
-   __DATA_CONST.__objc_superrefs: 0x10
--  __DATA_CONST.__got: 0x2d70
--  __AUTH_CONST.__const: 0x10888
--  __AUTH_CONST.__objc_const: 0x7118
--  __AUTH_CONST.__auth_got: 0x6a08
-+  __DATA_CONST.__got: 0x2da8
-+  __AUTH_CONST.__const: 0x10768
-+  __AUTH_CONST.__objc_const: 0x71f0
-+  __AUTH_CONST.__auth_got: 0x6a50
-   __AUTH.__objc_data: 0x458
--  __AUTH.__data: 0x8d60
-+  __AUTH.__data: 0x8fc0
-   __DATA.__objc_ivar: 0x8
--  __DATA.__data: 0x5170
-+  __DATA.__data: 0x5210
-   __DATA.__common: 0xe0
-   __DATA_DIRTY.__objc_data: 0x600
--  __DATA_DIRTY.__data: 0x6508
-+  __DATA_DIRTY.__data: 0x6568
-   __DATA_DIRTY.__bss: 0x3880
-   __DATA_DIRTY.__common: 0x88
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12193
--  Symbols:   4839
+-  Symbols:   3915
 -  CStrings:  2519
 +  Functions: 12228
-+  Symbols:   4859
++  Symbols:   3932
 +  CStrings:  2536
- 
 Symbols:
 + __DATA__TtCV13FinanceDaemon27ReceiptPhotoLibraryProvider9Ownership
 + __IVARS__TtCV13FinanceDaemon27ReceiptPhotoLibraryProvider9Ownership
@@ -102,11 +58,6 @@ Symbols:
 + ___swift_exist.box.addr_destructor.166Tm
 + _associated conformance 13FinanceDaemon9WallClockVs0D0AA7InstantsADP_s0E8Protocol
 + _flat unique 13FinanceDaemon5Clock_px7InstantsABPRts_XP
-+ _objc_msgSend$enableMultiLibraryMode
-+ _objc_msgSend$initWithPhotoLibraryURL:
-+ _objc_msgSend$lastTransactionsRefreshDate
-+ _objc_msgSend$systemPhotoLibraryURL
-+ _objc_msgSend$unsafeShutdownLibraryWithPhotoLibraryURL:
 + _objc_release_x10
 + _swift_initStructMetadata
 + _symbolic $ss5ClockP
@@ -124,8 +75,6 @@ Symbols:
 - ___swift_exist.box.addr_destructor.165Tm
 - ___swift_exist.box.addr_destructor.169Tm
 - ___swift_memcpy344_8
-- _objc_msgSend$close
-- _objc_msgSend$openPhotoLibraryWithWellKnownIdentifier:error:
 - _type_layout_string 13FinanceDaemon17ReceiptWorkSourceV
 CStrings:
 + "%ld photo library claim(s) live, deferring shutdown."

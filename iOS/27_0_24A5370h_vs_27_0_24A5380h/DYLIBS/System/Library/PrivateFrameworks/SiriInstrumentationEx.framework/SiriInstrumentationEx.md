@@ -2,68 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/SiriInstrumentationEx.framework/SiriInstrumentationEx`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2132bc` | `0x21778c` | **`+0x44d0`** |
+| `__AUTH_CONST.__objc_const` | `0x252a0` | `0x259f0` | **`+0x750`** |
+| `__TEXT.__objc_methlist` | `0x188b4` | `0x18e04` | **`+0x550`** |
+| `__DATA.__bss` | `0x66580` | `0x66800` | **`+0x280`** |
+| `__TEXT.__const` | `0x57214` | `0x57464` | **`+0x250`** |
+| `__AUTH.__objc_data` | `0x8070` | `0x8200` | **`+0x190`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1bd20` | `0x1be78` | **`+0x158`** |
+| `__AUTH_CONST.__cfstring` | `0x6620` | `0x6760` | **`+0x140`** |
+| `__TEXT.__unwind_info` | `0x9810` | `0x9938` | **`+0x128`** |
+| `__TEXT.__cstring` | `0x5d57` | `0x5e4c` | **`+0xf5`** |
+| `__DATA.__objc_ivar` | `0x194c` | `0x199c` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x1390` | `0x13b8` | **`+0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0xcd8` | `0xd00` | **`+0x28`** |
+| `__DATA_CONST.__objc_superrefs` | `0xcd8` | `0xd00` | **`+0x28`** |
+| `__TEXT.__swift5_proto` | `0x332c` | `0x3340` | **`+0x14`** |
+| `__DATA.__data` | `0xa70` | `0xa80` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2132bc
--  __TEXT.__objc_methlist: 0x188b4
--  __TEXT.__const: 0x57214
-+  __TEXT.__text: 0x21778c
-+  __TEXT.__objc_methlist: 0x18e04
-+  __TEXT.__const: 0x57464
-   __TEXT.__constg_swiftt: 0xc
--  __TEXT.__swift5_proto: 0x332c
-+  __TEXT.__swift5_proto: 0x3340
-   __TEXT.__swift5_typeref: 0xa
--  __TEXT.__cstring: 0x5d57
--  __TEXT.__unwind_info: 0x9810
-+  __TEXT.__cstring: 0x5e4c
-+  __TEXT.__unwind_info: 0x9938
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xbb0
--  __DATA_CONST.__objc_classlist: 0xcd8
-+  __DATA_CONST.__objc_classlist: 0xd00
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1bd20
--  __DATA_CONST.__objc_superrefs: 0xcd8
--  __DATA_CONST.__got: 0x1390
--  __AUTH_CONST.__cfstring: 0x6620
--  __AUTH_CONST.__objc_const: 0x252a0
-+  __DATA_CONST.__objc_selrefs: 0x1be78
-+  __DATA_CONST.__objc_superrefs: 0xd00
-+  __DATA_CONST.__got: 0x13b8
-+  __AUTH_CONST.__cfstring: 0x6760
-+  __AUTH_CONST.__objc_const: 0x259f0
-   __AUTH_CONST.__auth_got: 0x258
--  __AUTH.__objc_data: 0x8070
--  __DATA.__objc_ivar: 0x194c
--  __DATA.__data: 0xa70
--  __DATA.__bss: 0x66580
-+  __AUTH.__objc_data: 0x8200
-+  __DATA.__objc_ivar: 0x199c
-+  __DATA.__data: 0xa80
-+  __DATA.__bss: 0x66800
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer
+-3600.77.1.0.0
++3600.79.1.0.0
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 15070
--  Symbols:   35011
--  CStrings:  1638
+-  Symbols:   12943
+-  CStrings:  821
 +  Functions: 15192
-+  Symbols:   35303
-+  CStrings:  1658
- 
-Sections:
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __DATA_CONST.__const : content changed
++  Symbols:   13108
++  CStrings:  831
 Symbols:
 + -[ODDSiriSchemaODDAssistantSiriExtensionsCounts .cxx_destruct]
 + -[ODDSiriSchemaODDAssistantSiriExtensionsCounts deleteTurnCounts]
@@ -230,26 +202,6 @@ Symbols:
 + __OBJC_METACLASS_RO_$_ODDSiriSchemaODDAssistantSiriExtensionsDigestsReported
 + __OBJC_METACLASS_RO_$_ODDSiriSchemaODDAssistantSiriExtensionsDimensions
 + __OBJC_METACLASS_RO_$_ODDSiriSchemaODDSiriExtensionProvider
-+ _objc_msgSend$addProviderName:
-+ _objc_msgSend$assistantSiriExtensionsDigestsReported
-+ _objc_msgSend$clearProviderName
-+ _objc_msgSend$expressivity
-+ _objc_msgSend$hasSiriExtensionsEnabled
-+ _objc_msgSend$inputStreamStepIdentifier
-+ _objc_msgSend$isProviderEnabled
-+ _objc_msgSend$isProviderInstalled
-+ _objc_msgSend$pace
-+ _objc_msgSend$providerNames
-+ _objc_msgSend$providers
-+ _objc_msgSend$setAssistantSiriExtensionsDigestsReported:
-+ _objc_msgSend$setExpressivity:
-+ _objc_msgSend$setHasSiriExtensionsEnabled:
-+ _objc_msgSend$setInputStreamStepIdentifier:
-+ _objc_msgSend$setIsProviderEnabled:
-+ _objc_msgSend$setIsProviderInstalled:
-+ _objc_msgSend$setPace:
-+ _objc_msgSend$setProviderNames:
-+ _objc_msgSend$setProviders:
 CStrings:
 + "ODDSIRIEXTENSIONREQUESTTYPE_THIRD_PARTY_PROVIDER_REQUEST"
 + "ODDSIRIEXTENSIONREQUESTTYPE_UNKNOWN"
@@ -261,5 +213,4 @@ CStrings:
 + "isProviderInstalled"
 + "requestType"
 + "turnCounts"
-
 ```

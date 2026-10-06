@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/PerformanceControlKit.framework/PerformanceControlKit`
 
+### Other Changes
+
 ```text
 Functions:
 ~ -[CLPCReportingClient decodeTGRawData:delta:error:] : 3068 -> 3064

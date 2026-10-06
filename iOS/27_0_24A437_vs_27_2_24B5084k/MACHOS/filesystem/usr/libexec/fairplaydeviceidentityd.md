@@ -2,6 +2,6 @@
 
 > `/usr/libexec/fairplaydeviceidentityd`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__DATA.__objc_selrefs`

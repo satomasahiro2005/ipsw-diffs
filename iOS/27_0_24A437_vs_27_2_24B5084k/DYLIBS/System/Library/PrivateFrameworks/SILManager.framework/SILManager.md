@@ -2,80 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/SILManager.framework/SILManager`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5f644` | `0x613cc` | **`+0x1d88`** |
+| `__TEXT.__oslogstring` | `0x24ab` | `0x262b` | **`+0x180`** |
+| `__AUTH_CONST.__const` | `0x2550` | `0x25f8` | **`+0xa8`** |
+| `__TEXT.__swift5_fieldmd` | `0x15e8` | `0x1664` | **`+0x7c`** |
+| `__TEXT.__swift5_reflstr` | `0x1177` | `0x11d7` | **`+0x60`** |
+| `__TEXT.__constg_swiftt` | `0x159c` | `0x15f8` | **`+0x5c`** |
+| `__AUTH_CONST.__objc_const` | `0x2148` | `0x2198` | **`+0x50`** |
+| `__DATA_DIRTY.__data` | `0x1310` | `0x1358` | **`+0x48`** |
+| `__TEXT.__const` | `0x4c4c` | `0x4c8c` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x2507` | `0x2547` | **`+0x40`** |
+| `__TEXT.__swift5_typeref` | `0xb8e` | `0xbc6` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0x1390` | `0x13c8` | **`+0x38`** |
+| `__DATA.__data` | `0x550` | `0x578` | **`+0x28`** |
+| `__AUTH_CONST.__auth_got` | `0xcc8` | `0xcd0` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x228` | `0x230` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x478` | `0x480` | **`+0x8`** |
+| `__DATA_DIRTY.__objc_data` | `0xa80` | `0xa88` | **`+0x8`** |
+| `__TEXT.__eh_frame` | `0x1560` | `0x1568` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x738` | `0x740` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x150` | `0x154` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -67.14.0.0.0
--  __TEXT.__text: 0x5e018
--  __TEXT.__objc_methlist: 0x738
--  __TEXT.__const: 0x4c4c
--  __TEXT.__cstring: 0x2507
--  __TEXT.__oslogstring: 0x24ab
 +68.5.0.0.0
-+  __TEXT.__text: 0x5fcc4
-+  __TEXT.__objc_methlist: 0x740
-+  __TEXT.__const: 0x4c8c
-+  __TEXT.__cstring: 0x2547
-+  __TEXT.__oslogstring: 0x262b
-   __TEXT.__gcc_except_tab: 0x754
--  __TEXT.__swift5_typeref: 0xb8e
-+  __TEXT.__swift5_typeref: 0xbc6
-   __TEXT.__swift5_capture: 0x140
--  __TEXT.__swift5_reflstr: 0x1177
-+  __TEXT.__swift5_reflstr: 0x11d7
-   __TEXT.__swift5_assocty: 0x1b8
--  __TEXT.__constg_swiftt: 0x159c
--  __TEXT.__swift5_fieldmd: 0x15e8
-+  __TEXT.__constg_swiftt: 0x15f8
-+  __TEXT.__swift5_fieldmd: 0x1664
-   __TEXT.__swift5_builtin: 0xdc
-   __TEXT.__swift5_mpenum: 0x18
-   __TEXT.__swift5_proto: 0x184
--  __TEXT.__swift5_types: 0x150
-+  __TEXT.__swift5_types: 0x154
-   __TEXT.__swift5_protos: 0x14
--  __TEXT.__unwind_info: 0x1800
-+  __TEXT.__unwind_info: 0x1830
-   __TEXT.__eh_frame: 0x1570
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_classlist: 0xc0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x478
--  __DATA_CONST.__got: 0x228
--  __AUTH_CONST.__const: 0x2550
-+  __DATA_CONST.__objc_selrefs: 0x480
-+  __DATA_CONST.__got: 0x230
-+  __AUTH_CONST.__const: 0x25f8
-   __AUTH_CONST.__cfstring: 0xa0
--  __AUTH_CONST.__objc_const: 0x2148
-+  __AUTH_CONST.__objc_const: 0x2198
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__auth_got: 0xcc8
-+  __AUTH_CONST.__auth_got: 0xcd0
-   __AUTH.__objc_data: 0x2d0
--  __DATA.__data: 0x550
-+  __DATA.__data: 0x578
-   __DATA.__common: 0x30
--  __DATA_DIRTY.__objc_data: 0xa80
--  __DATA_DIRTY.__data: 0x1310
-+  __DATA_DIRTY.__objc_data: 0xa88
-+  __DATA_DIRTY.__data: 0x1358
-   __DATA_DIRTY.__bss: 0xcb8
-   __DATA_DIRTY.__common: 0x30
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 1682
--  Symbols:   4201
+-  Functions: 1683
+-  Symbols:   4143
 -  CStrings:  477
-+  Functions: 1697
-+  Symbols:   4250
++  Functions: 1698
++  Symbols:   4192
 +  CStrings:  483
- 
 Symbols:
 + _$s10SILManager11SILRendererC16contrastRingDisc33_218A6A42BD54406E011163ED9EC808F6LL8diameter6extent3BprAA8SILImageCSf_S2itF
 + _$s10SILManager11SILRendererC17contrastRingCache33_218A6A42BD54406E011163ED9EC808F6LLSf8diameter_Si6extentSi3BprAA8SILImageC4disctSgvpWvd

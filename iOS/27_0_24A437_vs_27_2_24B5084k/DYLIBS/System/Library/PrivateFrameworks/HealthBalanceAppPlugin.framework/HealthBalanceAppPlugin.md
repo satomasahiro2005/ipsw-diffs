@@ -2,166 +2,89 @@
 
 > `/System/Library/PrivateFrameworks/HealthBalanceAppPlugin.framework/HealthBalanceAppPlugin`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3dd5c` | `0x846e4` | **`+0x46988`** |
+| `__DATA.__bss` | `0x2588` | `0x6010` | **`+0x3a88`** |
+| `__TEXT.__const` | `0x2ce4` | `0x51e4` | **`+0x2500`** |
+| `__AUTH.__data` | `0x378` | `0x1ab0` | **`+0x1738`** |
+| `__DATA.__data` | `0x798` | `0x1c48` | **`+0x14b0`** |
+| `__DATA_CONST.__got` | `0x0` | `0x1178` | **`+0x1178`** |
+| `__TEXT.__eh_frame` | `0x950` | `0x1ab4` | **`+0x1164`** |
+| `__AUTH_CONST.__auth_got` | `0x13f0` | `0x22d8` | **`+0xee8`** |
+| `__TEXT.__unwind_info` | `0xdb0` | `0x1c98` | **`+0xee8`** |
+| `__AUTH_CONST.__objc_const` | `0xf10` | `0x1ba8` | **`+0xc98`** |
+| `__TEXT.__cstring` | `0x16f7` | `0x213c` | **`+0xa45`** |
+| `__TEXT.__swift5_typeref` | `0xcaa` | `0x16a8` | **`+0x9fe`** |
+| `__AUTH_CONST.__const` | `0x1020` | `0x19b8` | **`+0x998`** |
+| `__TEXT.__constg_swiftt` | `0xfb0` | `0x18c4` | **`+0x914`** |
+| `__TEXT.__swift5_fieldmd` | `0x98c` | `0x1014` | **`+0x688`** |
+| `__DATA_DIRTY.__data` | `0x1338` | `0xd08` | **`-0x630`** |
+| `__TEXT.__swift5_reflstr` | `0x9dc` | `0xf1b` | **`+0x53f`** |
+| `__AUTH.__objc_data` | `0x6d8` | `0xa48` | **`+0x370`** |
+| `__DATA_DIRTY.__bss` | `0x1e00` | `0x1b00` | **`-0x300`** |
+| `__TEXT.__swift5_assocty` | `0x208` | `0x450` | **`+0x248`** |
+| `__TEXT.__swift5_capture` | `0x248` | `0x464` | **`+0x21c`** |
+| `__DATA_DIRTY.__objc_data` | `0x360` | `0x1a8` | **`-0x1b8`** |
+| `__TEXT.__swift5_proto` | `0x22c` | `0x3d8` | **`+0x1ac`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3d8` | `0x528` | **`+0x150`** |
+| `__TEXT.__swift_as_cont` | `0x1c` | `0xe4` | **`+0xc8`** |
+| `__DATA.__common` | `0x48` | `0xe8` | **`+0xa0`** |
+| `__TEXT.__swift5_types` | `0xf8` | `0x198` | **`+0xa0`** |
+| `__DATA_CONST.__objc_classlist` | `0x60` | `0xd8` | **`+0x78`** |
+| `__TEXT.__oslogstring` | `0xe3f` | `0xe9f` | **`+0x60`** |
+| `__TEXT.__swift_as_ret` | `0x24` | `0x84` | **`+0x60`** |
+| `__TEXT.__swift_as_entry` | `0x30` | `0x80` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x30c` | `0x2cc` | **`-0x40`** |
+| `__DATA_DIRTY.__common` | `0x40` | `0x20` | **`-0x20`** |
+| `__DATA_CONST.__const` | `0x178` | `0x190` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x3c` | `0x50` | **`+0x14`** |
+| `__DATA_CONST.__objc_protolist` | `0x40` | `0x50` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x20` | `0x28` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x10` | `0x8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -7027.0.72.2.7
--  __TEXT.__text: 0x3b8a0
--  __TEXT.__objc_methlist: 0x30c
--  __TEXT.__const: 0x2ce4
--  __TEXT.__constg_swiftt: 0xfb0
--  __TEXT.__swift5_typeref: 0xcaa
--  __TEXT.__swift5_fieldmd: 0x98c
--  __TEXT.__cstring: 0x16f7
--  __TEXT.__swift5_builtin: 0x3c
--  __TEXT.__swift5_reflstr: 0x9dc
--  __TEXT.__swift5_assocty: 0x208
--  __TEXT.__swift5_proto: 0x22c
--  __TEXT.__swift5_types: 0xf8
--  __TEXT.__oslogstring: 0xe3f
--  __TEXT.__swift_as_entry: 0x30
--  __TEXT.__swift5_capture: 0x248
--  __TEXT.__swift_as_ret: 0x24
--  __TEXT.__swift_as_cont: 0x1c
--  __TEXT.__swift5_protos: 0x10
--  __TEXT.__unwind_info: 0x11b0
--  __TEXT.__eh_frame: 0x950
 +7027.1.36.2.7
-+  __TEXT.__text: 0x7f594
-+  __TEXT.__objc_methlist: 0x2cc
-+  __TEXT.__const: 0x51e4
-+  __TEXT.__constg_swiftt: 0x18c4
-+  __TEXT.__swift5_typeref: 0x16a8
-+  __TEXT.__swift5_builtin: 0x50
-+  __TEXT.__swift5_reflstr: 0xf1b
-+  __TEXT.__swift5_fieldmd: 0x1014
-+  __TEXT.__swift5_assocty: 0x450
-+  __TEXT.__cstring: 0x213c
-+  __TEXT.__swift5_proto: 0x3d8
-+  __TEXT.__swift5_types: 0x198
-+  __TEXT.__oslogstring: 0xe9f
-+  __TEXT.__swift_as_entry: 0x80
-+  __TEXT.__swift5_capture: 0x464
-+  __TEXT.__swift_as_ret: 0x84
-+  __TEXT.__swift_as_cont: 0xe4
-+  __TEXT.__swift5_protos: 0x8
-+  __TEXT.__unwind_info: 0x2468
-+  __TEXT.__eh_frame: 0x1abc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x178
--  __DATA_CONST.__objc_classlist: 0x60
--  __DATA_CONST.__objc_protolist: 0x40
-+  __DATA_CONST.__const: 0x190
-+  __DATA_CONST.__objc_classlist: 0xd8
-+  __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3d8
--  __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1020
--  __AUTH_CONST.__objc_const: 0xf10
--  __AUTH_CONST.__auth_got: 0x13f0
--  __AUTH.__objc_data: 0x6d8
--  __AUTH.__data: 0x378
--  __DATA.__data: 0x798
-+  __DATA_CONST.__objc_selrefs: 0x528
-+  __DATA_CONST.__objc_protorefs: 0x28
-+  __DATA_CONST.__got: 0x1178
-+  __AUTH_CONST.__const: 0x19b8
-+  __AUTH_CONST.__objc_const: 0x1ba8
-+  __AUTH_CONST.__auth_got: 0x22d8
-+  __AUTH.__objc_data: 0xa48
-+  __AUTH.__data: 0x1ab0
-+  __DATA.__data: 0x1c48
-   __DATA.__objc_stublist: 0x40
--  __DATA.__common: 0x48
--  __DATA_DIRTY.__objc_data: 0x360
--  __DATA_DIRTY.__data: 0x1338
--  __DATA_DIRTY.__bss: 0x1e00
--  __DATA_DIRTY.__common: 0x40
-+  __DATA.__common: 0xe8
-+  __DATA_DIRTY.__objc_data: 0x1a8
-+  __DATA_DIRTY.__data: 0xd08
-+  __DATA_DIRTY.__bss: 0x1b00
-+  __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/Frameworks/UserNotifications.framework/UserNotifications
-   - /System/Library/Frameworks/WidgetKit.framework/WidgetKit
 +  - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
 +  - /System/Library/PrivateFrameworks/FitnessUI.framework/FitnessUI
 +  - /System/Library/PrivateFrameworks/HealthAppHealthDaemonSupport.framework/HealthAppHealthDaemonSupport
-   - /System/Library/PrivateFrameworks/HealthAppServices.framework/HealthAppServices
-   - /System/Library/PrivateFrameworks/HealthArchivableViews.framework/HealthArchivableViews
-   - /System/Library/PrivateFrameworks/HealthArticlesGeneration.framework/HealthArticlesGeneration
-   - /System/Library/PrivateFrameworks/HealthArticlesUI.framework/HealthArticlesUI
-   - /System/Library/PrivateFrameworks/HealthBalance.framework/HealthBalance
-   - /System/Library/PrivateFrameworks/HealthBalanceUI.framework/HealthBalanceUI
+
 +  - /System/Library/PrivateFrameworks/HealthDaemon.framework/HealthDaemon
 +  - /System/Library/PrivateFrameworks/HealthDaemonFoundation.framework/HealthDaemonFoundation
-   - /System/Library/PrivateFrameworks/HealthExperience.framework/HealthExperience
-   - /System/Library/PrivateFrameworks/HealthExperienceUI.framework/HealthExperienceUI
-   - /System/Library/PrivateFrameworks/HealthFeatures.framework/HealthFeatures
-   - /System/Library/PrivateFrameworks/HealthKitAdditions.framework/HealthKitAdditions
+
 +  - /System/Library/PrivateFrameworks/HealthKitOrchestrationAdditions.framework/HealthKitOrchestrationAdditions
 +  - /System/Library/PrivateFrameworks/HealthMenstrualCyclesUI.framework/HealthMenstrualCyclesUI
-   - /System/Library/PrivateFrameworks/HealthOrchestration.framework/HealthOrchestration
-   - /System/Library/PrivateFrameworks/HealthPlatform.framework/HealthPlatform
-   - /System/Library/PrivateFrameworks/HealthPlatformCore.framework/HealthPlatformCore
+
 +  - /System/Library/PrivateFrameworks/HealthPlatformFoundation.framework/HealthPlatformFoundation
 +  - /System/Library/PrivateFrameworks/HealthTopics.framework/HealthTopics
 +  - /System/Library/PrivateFrameworks/HealthTopicsCore.framework/HealthTopicsCore
-   - /System/Library/PrivateFrameworks/HealthUI.framework/HealthUI
-   - /System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit
-   - /System/Library/PrivateFrameworks/Preferences.framework/Preferences
+
 +  - /System/Library/PrivateFrameworks/SeymourCoreFoundation.framework/SeymourCoreFoundation
-   - /System/Library/PrivateFrameworks/Sleep.framework/Sleep
-   - /System/Library/PrivateFrameworks/SleepHealth.framework/SleepHealth
-   - /System/Library/PrivateFrameworks/SleepHealthUI.framework/SleepHealthUI
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+
 +  - /System/Library/PrivateFrameworks/WorkoutCore.framework/WorkoutCore
 +  - /System/Library/PrivateFrameworks/WorkoutUI.framework/WorkoutUI
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
-   - /usr/lib/swift/libswiftAppleArchive.dylib
-+  - /usr/lib/swift/libswiftCallKit.dylib
-   - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
-+  - /usr/lib/swift/libswiftCoreAudio_Private.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftCoreImage.dylib
-   - /usr/lib/swift/libswiftCoreLocation.dylib
 
-   - /usr/lib/swift/libswiftNaturalLanguage.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
++  - /usr/lib/swift/libswiftCallKit.dylib
+
++  - /usr/lib/swift/libswiftCoreAudio_Private.dylib
+
 +  - /usr/lib/swift/libswiftObservation.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
-   - /usr/lib/swift/libswiftSceneKit.dylib
-   - /usr/lib/swift/libswiftSpatial.dylib
+
 -  - /usr/lib/swift/libswiftSynchronization.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 1246
--  Symbols:   806
+-  Symbols:   717
 -  CStrings:  195
 +  Functions: 2483
-+  Symbols:   1153
++  Symbols:   1022
 +  CStrings:  260
- 
 Symbols:
 + _HKCategoryTypeIdentifierSleepAnalysis
 + _HKErrorDomain
@@ -398,54 +321,6 @@ Symbols:
 + _keypath_set.12Tm
 + _malloc
 + _notify_post
-+ _objc_msgSend$UUID
-+ _objc_msgSend$_anchorWithRowid:
-+ _objc_msgSend$_predicateForObjectsFromAppleWatches
-+ _objc_msgSend$_rowid
-+ _objc_msgSend$andPredicateWithSubpredicates:
-+ _objc_msgSend$appleEffortScoreUnit
-+ _objc_msgSend$appleSleepScoreType
-+ _objc_msgSend$categoryWithID:
-+ _objc_msgSend$configureWithOpaqueBackground
-+ _objc_msgSend$dateComponentsForCalendar:
-+ _objc_msgSend$endDate
-+ _objc_msgSend$features
-+ _objc_msgSend$initWithHealthStore:
-+ _objc_msgSend$initWithIdentifier:scheduleHistoryWriter:
-+ _objc_msgSend$initWithKey:ascending:
-+ _objc_msgSend$initWithSleepDataSource:
-+ _objc_msgSend$initWithTypes:anchor:resultsHandler:
-+ _objc_msgSend$initWithUnitManager:
-+ _objc_msgSend$labelColor
-+ _objc_msgSend$navigationItem
-+ _objc_msgSend$omakase
-+ _objc_msgSend$predicateForActivitySummariesBetweenStartDateComponents:endDateComponents:
-+ _objc_msgSend$predicateForSamplesWithStartDate:endDate:options:
-+ _objc_msgSend$secondUnit
-+ _objc_msgSend$secondarySystemGroupedBackgroundColor
-+ _objc_msgSend$setBackgroundColor:
-+ _objc_msgSend$setCompactAppearance:
-+ _objc_msgSend$setDateFormat:
-+ _objc_msgSend$setIncludeChangeDetails:
-+ _objc_msgSend$setLargeTitleDisplayMode:
-+ _objc_msgSend$setLocale:
-+ _objc_msgSend$setObject:forKey:
-+ _objc_msgSend$setScrollEdgeAppearance:
-+ _objc_msgSend$setStandardAppearance:
-+ _objc_msgSend$sharedBehavior
-+ _objc_msgSend$stringForKey:
-+ _objc_msgSend$stringFromDate:
-+ _objc_msgSend$systemBackgroundColor
-+ _objc_msgSend$systemGroupedBackgroundColor
-+ _objc_msgSend$systemYellowColor
-+ _objc_msgSend$tertiarySystemFillColor
-+ _objc_msgSend$trackSleepDataInteractionEventWithType:isOnboardedVitals:date:completion:
-+ _objc_msgSend$traitCollection
-+ _objc_msgSend$type
-+ _objc_msgSend$unitMultipliedByUnit:
-+ _objc_msgSend$userData
-+ _objc_msgSend$userInterfaceIdiom
-+ _objc_msgSend$vitalsOrchestrationMigration
 + _objc_release_x9
 + _rewind
 + _sscanf
@@ -673,12 +548,6 @@ Symbols:
 - _associated conformance 22HealthBalanceAppPlugin50LatestDaytimeVitalsDaySummaryCollectionInputSignalC0A13Orchestration0kL0AAs23CustomStringConvertible
 - _associated conformance 22HealthBalanceAppPlugin52LatestOvernightVitalsDaySummaryCollectionInputSignalC0A13Orchestration0kL0AA6AnchorAdEP_AD0klN0
 - _associated conformance 22HealthBalanceAppPlugin52LatestOvernightVitalsDaySummaryCollectionInputSignalC0A13Orchestration0kL0AAs23CustomStringConvertible
-- _objc_msgSend$addObserver:selector:name:object:
-- _objc_msgSend$defaultCenter
-- _objc_msgSend$initWithIdentifier:healthStore:
-- _objc_msgSend$objectForKeyedSubscript:
-- _objc_msgSend$removeObserver:name:object:
-- _objc_msgSend$trackSleepDataInteractionEventWithType:isOnboardedVitals:completion:
 - _swift_getEnumCaseMultiPayload
 - _swift_unknownObjectUnownedDestroy
 - _swift_unknownObjectUnownedInit

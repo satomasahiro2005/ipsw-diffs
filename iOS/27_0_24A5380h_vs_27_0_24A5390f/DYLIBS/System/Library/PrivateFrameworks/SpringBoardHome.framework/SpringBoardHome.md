@@ -2,105 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/SpringBoardHome.framework/SpringBoardHome`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x389278` | `0x38a1c4` | **`+0xf4c`** |
+| `__TEXT.__objc_methlist` | `0x3eab4` | `0x3eb3c` | **`+0x88`** |
+| `__AUTH_CONST.__cfstring` | `0x16da0` | `0x16e20` | **`+0x80`** |
+| `__TEXT.__cstring` | `0x18a83` | `0x18af3` | **`+0x70`** |
+| `__AUTH_CONST.__const` | `0x74a8` | `0x7500` | **`+0x58`** |
+| `__TEXT.__unwind_info` | `0xf7e0` | `0xf820` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1cae8` | `0x1cb18` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x9ea8` | `0x9ed0` | **`+0x28`** |
+| `__TEXT.__gcc_except_tab` | `0x4328` | `0x4350` | **`+0x28`** |
+| `__TEXT.__swift5_capture` | `0x1564` | `0x1588` | **`+0x24`** |
+| `__DATA.__data` | `0x9648` | `0x9628` | **`-0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x1d68` | `0x1d80` | **`+0x18`** |
+| `__AUTH_CONST.__objc_const` | `0x58cd0` | `0x58cb8` | **`-0x18`** |
+| `__DATA.__bss` | `0x3838` | `0x3828` | **`-0x10`** |
+| `__DATA.__objc_ivar` | `0x3dc0` | `0x3dbc` | **`-0x4`** |
+
+### Other Changes
 
 ```diff
 
 -220.105.0.0.0
--  __TEXT.__text: 0x389278
--  __TEXT.__objc_methlist: 0x3eab4
 +223.100.0.0.0
-+  __TEXT.__text: 0x38a1c4
-+  __TEXT.__objc_methlist: 0x3eb3c
-   __TEXT.__const: 0x7ec4
--  __TEXT.__cstring: 0x18a83
--  __TEXT.__gcc_except_tab: 0x4328
-+  __TEXT.__cstring: 0x18af3
-+  __TEXT.__gcc_except_tab: 0x4350
-   __TEXT.__oslogstring: 0xf150
-   __TEXT.__dlopen_cstrs: 0xb84
-   __TEXT.__ustring: 0x476
 
-   __TEXT.__swift5_assocty: 0x510
-   __TEXT.__swift5_proto: 0x160
-   __TEXT.__swift5_types: 0xfc
--  __TEXT.__swift5_capture: 0x1564
--  __TEXT.__unwind_info: 0xf7e0
-+  __TEXT.__swift5_capture: 0x1588
-+  __TEXT.__unwind_info: 0xf820
-   __TEXT.__eh_frame: 0xc48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9ea8
-+  __DATA_CONST.__const: 0x9ed0
-   __DATA_CONST.__objc_classlist: 0x1318
-   __DATA_CONST.__objc_catlist: 0x120
-   __DATA_CONST.__objc_protolist: 0xba8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1cae8
-+  __DATA_CONST.__objc_selrefs: 0x1cb18
-   __DATA_CONST.__objc_protorefs: 0x198
-   __DATA_CONST.__objc_superrefs: 0xe98
-   __DATA_CONST.__objc_arraydata: 0x6e0
-   __DATA_CONST.__got: 0x2478
--  __AUTH_CONST.__const: 0x74a8
--  __AUTH_CONST.__cfstring: 0x16da0
--  __AUTH_CONST.__objc_const: 0x58cd0
-+  __AUTH_CONST.__const: 0x7500
-+  __AUTH_CONST.__cfstring: 0x16e20
-+  __AUTH_CONST.__objc_const: 0x58cb8
-   __AUTH_CONST.__objc_intobj: 0x648
-   __AUTH_CONST.__objc_doubleobj: 0xf0
-   __AUTH_CONST.__objc_arrayobj: 0x258
-   __AUTH_CONST.__objc_dictobj: 0x140
--  __AUTH_CONST.__auth_got: 0x1d68
-+  __AUTH_CONST.__auth_got: 0x1d80
-   __AUTH.__objc_data: 0xb830
-   __AUTH.__data: 0xc60
--  __DATA.__objc_ivar: 0x3dc0
--  __DATA.__data: 0x9648
--  __DATA.__bss: 0x3838
-+  __DATA.__objc_ivar: 0x3dbc
-+  __DATA.__data: 0x9628
-+  __DATA.__bss: 0x3828
-   __DATA.__common: 0x70
-   __DATA_DIRTY.__objc_data: 0x1590
-   __DATA_DIRTY.__data: 0x60
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 24643
--  Symbols:   45887
+-  Symbols:   33627
 -  CStrings:  4565
 +  Functions: 24663
-+  Symbols:   45903
++  Symbols:   33641
 +  CStrings:  4569
- 
 Symbols:
 + +[SBIconView _allowsPLKCachePrewarmingForBundleIdentifier:]
 + +[SBIconView allowPLKCachePrewarming]
@@ -170,18 +104,6 @@ Symbols:
 + ___82-[SBIconDragManager createNewFolderFromRecipientIcon:additionalIcons:inListModel:]_block_invoke_2
 + ___block_descriptor_136_e33_v32?0"SBHIconLayerView"8Q16^B24l
 + ___block_descriptor_56_e8_32s40s48s_e36_v32?0"SBIcon"8"NSIndexPath"16^B24ls32l8s40l8s48l8
-+ _objc_msgSend$_allowsPLKCachePrewarmingForBundleIdentifier:
-+ _objc_msgSend$_extraIconImageCacheConfigurationsByLimitingUniqueTintedConfigurations:
-+ _objc_msgSend$allowPLKCachePrewarming
-+ _objc_msgSend$applicationIconsWithBundleIdentifier:
-+ _objc_msgSend$canSwapApplicationIconsInProminentPositionsWithBundleIdentifier:withApplicationIconsWithBundleIdentifier:
-+ _objc_msgSend$canSwapApplicationIconsInProminentPositionsWithBundleIdentifier:withApplicationIconsWithBundleIdentifier:focusModeIdentifier:
-+ _objc_msgSend$createNewFolderFromRecipientIcon:additionalIcons:inListModel:
-+ _objc_msgSend$listContainingIconWithIdentifier:
-+ _objc_msgSend$replaceApplicationIconsWithBundleIdentifier:withApplicationIconsWithBundleIdentifier:
-+ _objc_msgSend$swapApplicationIconsInProminentPositionsWithBundleIdentifier:withApplicationIconsWithBundleIdentifier:
-+ _objc_msgSend$swapApplicationIconsInProminentPositionsWithBundleIdentifier:withApplicationIconsWithBundleIdentifier:focusModeIdentifier:
-+ _objc_msgSend$swapApplicationIconsInProminentPositionsWithBundleIdentifier:withApplicationIconsWithBundleIdentifier:inRootFolder:focusModeIdentifier:
 - -[SBHIconManager purgeUnnecessaryAppearanceIconImageData]
 - -[SBHIconManager swapApplicationIconsInProminentPositionsWithBundleIdentifier:withApplicationIconsWithWithBundleIdentifier:inRootFolder:focusModeIdentifier:]
 - -[SBHLibraryCategoryStackView displayedIconImageInfo]
@@ -236,16 +158,6 @@ Symbols:
 - ___78-[SBIconDragManager createNewFolderFromRecipientIcon:grabbedIcon:inListModel:]_block_invoke_2
 - ___SBHFeatureEnabled_block_invoke
 - ___block_descriptor_88_e33_v32?0"SBHIconLayerView"8Q16^B24l
-- _objc_msgSend$addIcons:intoFolderIcon:openFolderOnFinish:
-- _objc_msgSend$canAddIcons:
-- _objc_msgSend$canSwapApplicationIconsInProminentPositionsWithBundleIdentifier:withApplicationIconsWithWithBundleIdentifier:focusModeIdentifier:
-- _objc_msgSend$createNewFolderFromRecipientIcon:grabbedIcon:inListModel:
-- _objc_msgSend$displayedIconImageInfo
-- _objc_msgSend$insertIcon:afterIcon:options:listGridCellInfoOptions:
-- _objc_msgSend$listContainingIndexPath:relativeIndex:
-- _objc_msgSend$setDisplayedIconImageInfo:
-- _objc_msgSend$swapApplicationIconsInProminentPositionsWithBundleIdentifier:withApplicationIconsWithWithBundleIdentifier:focusModeIdentifier:
-- _objc_msgSend$swapApplicationIconsInProminentPositionsWithBundleIdentifier:withApplicationIconsWithWithBundleIdentifier:inRootFolder:focusModeIdentifier:
 CStrings:
 + "filters.tintSaturation.inputAmount"
 + "icon view class opts out of PLK cache prewarming"

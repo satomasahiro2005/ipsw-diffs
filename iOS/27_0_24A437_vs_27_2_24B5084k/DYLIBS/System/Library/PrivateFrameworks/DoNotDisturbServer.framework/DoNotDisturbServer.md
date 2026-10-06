@@ -2,118 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/DoNotDisturbServer.framework/DoNotDisturbServer`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc2ee4` | `0xc4c54` | **`+0x1d70`** |
+| `__TEXT.__oslogstring` | `0x119a0` | `0x11d6f` | **`+0x3cf`** |
+| `__AUTH_CONST.__objc_const` | `0x268f0` | `0x26b68` | **`+0x278`** |
+| `__TEXT.__cstring` | `0x8da4` | `0x8f25` | **`+0x181`** |
+| `__TEXT.__objc_methlist` | `0xab1c` | `0xac74` | **`+0x158`** |
+| `__DATA_CONST.__const` | `0x2728` | `0x27f8` | **`+0xd0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4e18` | `0x4ec8` | **`+0xb0`** |
+| `__AUTH.__objc_data` | `0x8d8` | `0x978` | **`+0xa0`** |
+| `__DATA.__data` | `0x3360` | `0x33c8` | **`+0x68`** |
+| `__AUTH_CONST.__cfstring` | `0x7b20` | `0x7b60` | **`+0x40`** |
+| `__TEXT.__const` | `0x718` | `0x748` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x2a50` | `0x2a80` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0xaf0` | `0xb10` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0xf08` | `0xf28` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0xa68` | `0xa80` | **`+0x18`** |
+| `__TEXT.__gcc_except_tab` | `0x10c4` | `0x10d8` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x620` | `0x630` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x3f0` | `0x400` | **`+0x10`** |
+| `__DATA.__bss` | `0x1f0` | `0x1e8` | **`-0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x3e8` | `0x3f0` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0x294` | `0x29c` | **`+0x8`** |
+| `__TEXT.__swift5_reflstr` | `0xe6` | `0xe4` | **`-0x2`** |
+
+### Other Changes
+
 ```diff
 
 -511.0.0.0.0
--  __TEXT.__text: 0xbf468
--  __TEXT.__objc_methlist: 0xab1c
--  __TEXT.__const: 0x718
--  __TEXT.__cstring: 0x8da4
--  __TEXT.__oslogstring: 0x119a0
--  __TEXT.__gcc_except_tab: 0x10c4
 +511.2.3.0.0
-+  __TEXT.__text: 0xc119c
-+  __TEXT.__objc_methlist: 0xac74
-+  __TEXT.__const: 0x748
-+  __TEXT.__cstring: 0x8f25
-+  __TEXT.__oslogstring: 0x11d6f
-+  __TEXT.__gcc_except_tab: 0x10d8
-   __TEXT.__dlopen_cstrs: 0x59
--  __TEXT.__swift5_typeref: 0x294
-+  __TEXT.__swift5_typeref: 0x29c
-+  __TEXT.__swift5_capture: 0x160
-   __TEXT.__swift5_fieldmd: 0x144
-   __TEXT.__constg_swiftt: 0x264
--  __TEXT.__swift5_reflstr: 0xe6
--  __TEXT.__swift5_types: 0x1c
--  __TEXT.__swift5_capture: 0x160
-+  __TEXT.__swift5_reflstr: 0xe4
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift5_proto: 0x10
-+  __TEXT.__swift5_types: 0x1c
-   __TEXT.__swift_as_entry: 0x2c
-   __TEXT.__swift_as_ret: 0x2c
-   __TEXT.__swift_as_cont: 0x2c
--  __TEXT.__unwind_info: 0x38e0
-+  __TEXT.__unwind_info: 0x3940
-   __TEXT.__eh_frame: 0x578
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2728
--  __DATA_CONST.__objc_classlist: 0x620
-+  __DATA_CONST.__const: 0x27f8
-+  __DATA_CONST.__objc_classlist: 0x630
-   __DATA_CONST.__objc_catlist: 0x150
--  __DATA_CONST.__objc_protolist: 0x3e8
-+  __DATA_CONST.__objc_protolist: 0x3f0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4e18
-+  __DATA_CONST.__objc_selrefs: 0x4ec8
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x3f0
-+  __DATA_CONST.__objc_superrefs: 0x400
-   __DATA_CONST.__objc_arraydata: 0x358
--  __DATA_CONST.__got: 0xf08
-+  __DATA_CONST.__got: 0xf28
-   __AUTH_CONST.__const: 0x1198
--  __AUTH_CONST.__cfstring: 0x7b20
--  __AUTH_CONST.__objc_const: 0x268f0
-+  __AUTH_CONST.__cfstring: 0x7b60
-+  __AUTH_CONST.__objc_const: 0x26b68
-+  __AUTH_CONST.__objc_arrayobj: 0x108
-   __AUTH_CONST.__objc_intobj: 0x2d0
-   __AUTH_CONST.__objc_dictobj: 0x4b0
--  __AUTH_CONST.__objc_arrayobj: 0x108
--  __AUTH_CONST.__auth_got: 0xaf0
--  __AUTH.__objc_data: 0x8d8
-+  __AUTH_CONST.__auth_got: 0xb10
-+  __AUTH.__objc_data: 0x978
-   __AUTH.__data: 0x28
--  __DATA.__objc_ivar: 0xa68
--  __DATA.__data: 0x3360
-+  __DATA.__objc_ivar: 0xa80
-+  __DATA.__data: 0x33c8
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0x36f8
-   __DATA_DIRTY.__data: 0x190
 
-   - /System/Library/Frameworks/Network.framework/Network
-   - /System/Library/Frameworks/_LocationEssentials.framework/_LocationEssentials
-   - /System/Library/PrivateFrameworks/AppPredictionClient.framework/AppPredictionClient
 +  - /System/Library/PrivateFrameworks/AppProtection.framework/AppProtection
-   - /System/Library/PrivateFrameworks/AvailabilityKit.framework/AvailabilityKit
-   - /System/Library/PrivateFrameworks/BackgroundSystemTasks.framework/BackgroundSystemTasks
-   - /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard
 
-   - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
-   - /System/Library/PrivateFrameworks/IDS.framework/IDS
-   - /System/Library/PrivateFrameworks/IntentsCore.framework/IntentsCore
 +  - /System/Library/PrivateFrameworks/LinkMetadata.framework/LinkMetadata
-   - /System/Library/PrivateFrameworks/LinkServices.framework/LinkServices
-   - /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
-   - /System/Library/PrivateFrameworks/NanoPreferencesSync.framework/NanoPreferencesSync
 
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftCoreLocation.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
 +  - /usr/lib/swift/libswiftIntents.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3951
--  Symbols:   9437
+-  Symbols:   7242
 -  CStrings:  2294
 +  Functions: 3984
-+  Symbols:   9528
++  Symbols:   7313
 +  CStrings:  2308
- 
 Symbols:
 + -[DNDSAppFocusConfigurationCoordinator _acquireAuthAssertionForBundleIdentifier:completion:]
 + -[DNDSAppFocusConfigurationCoordinator _armAuthAssertionWatchdogForBundleIdentifier:]
@@ -219,27 +153,6 @@ Symbols:
 + _dispatch_after
 + _dispatch_block_cancel
 + _dispatch_block_create
-+ _objc_msgSend$_acquireAuthAssertionForBundleIdentifier:completion:
-+ _objc_msgSend$_appForegroundTriggerInTriggers:forApplicationIdentifier:
-+ _objc_msgSend$_armAuthAssertionWatchdogForBundleIdentifier:
-+ _objc_msgSend$_discardAuthAssertionStateForBundleIdentifier:
-+ _objc_msgSend$_drainAuthAssertionWaitersForState:
-+ _objc_msgSend$_executeAction:orActionIdentifier:withBundleIdentifier:modeIdentifier:groupIdentifier:exiting:metadata:assertionToken:
-+ _objc_msgSend$_executeAction:withBundleIdentifier:modeIdentifier:groupIdentifier:releasingAssertionToken:
-+ _objc_msgSend$_modeConfigurationRecordByMigratingAppSettingsInRecord:fromApplicationIdentifier:toApplicationIdentifier:
-+ _objc_msgSend$_releaseAuthAssertionToken:
-+ _objc_msgSend$acquireForSubject:completion:
-+ _objc_msgSend$applicationWithBundleIdentifier:
-+ _objc_msgSend$bs_objectsOfClass:
-+ _objc_msgSend$isHidden
-+ _objc_msgSend$isLocked
-+ _objc_msgSend$migrateAppSettingsFromBundleIdentifier:toBundleIdentifier:withError:
-+ _objc_msgSend$remoteServiceProvider:migrateAppSettingsFromBundleIdentifier:toBundleIdentifier:withError:
-+ _objc_msgSend$setWatchdog:
-+ _objc_msgSend$subject
-+ _objc_msgSend$tokens
-+ _objc_msgSend$waiters
-+ _objc_msgSend$watchdog
 + _symbolic _____Sg 12FindMyLocate12ClientTargetV
 - GCC_except_table108
 - GCC_except_table170
@@ -275,7 +188,6 @@ Symbols:
 - ___block_descriptor_64_e8_32s40s48s56w_e71_v32?0"DNDSAppFocusConfigurationTask"8"LNSuccessResult"16"NSError"24lw56l8s32l8s40l8s48l8
 - ___block_descriptor_72_e8_32s40s48s56s64s_e30_v24?0"LNAction"8"NSError"16ls32l8s40l8s48l8s56l8s64l8
 - ___block_descriptor_80_e8_32s40s48s56s64s72w_e5_v8?0lw72l8s32l8s40l8s48l8s56l8s64l8
-- _objc_msgSend$_executeAction:withBundleIdentifier:modeIdentifier:groupIdentifier:
 CStrings:
 + "/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/DoNotDisturbServer/DoNotDisturbServer/Configurations/Global/DNDSGlobalConfigurationManager.m"
 + "/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/DoNotDisturbServer/DoNotDisturbServer/Configurations/Mode/DNDSModeConfigurationManager.m"

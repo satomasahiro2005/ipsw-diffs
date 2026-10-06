@@ -2,14 +2,15 @@
 
 > `/System/Library/VideoDecoders/AppleProResSWDecoder.videodecoder`
 
-```diff
+### Section Size Changes
 
- 60623.0.0.0.0
--  __TEXT.__text: 0x62860
-+  __TEXT.__text: 0x62880
-   __TEXT.__const: 0x696e8
-   __TEXT.__gcc_except_tab: 0x638
-   __TEXT.__cstring: 0x4f3
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x62860` | `0x62880` | **`+0x20`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZL30isAdditionalSupportedCPUFamilyv : 228 -> 268
 ~ __ZN10ThreadPoolI13DecoderWorker10DecoderJobvE16dispatch_routineEPv : 424 -> 416

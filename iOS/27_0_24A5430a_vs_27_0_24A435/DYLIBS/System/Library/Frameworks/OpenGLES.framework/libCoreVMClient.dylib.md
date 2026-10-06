@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/OpenGLES.framework/libCoreVMClient.dylib`
 
-```diff
+### Section Size Changes
 
- 404.0.0.0.0
--  __TEXT.__text: 0x3b5c
-+  __TEXT.__text: 0x3b60
-   __TEXT.__cstring: 0xed4
-   __TEXT.__const: 0x10
-   __TEXT.__unwind_info: 0x118
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3b5c` | `0x3b60` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _cvmsReleaseHeap : 100 -> 104
 ```

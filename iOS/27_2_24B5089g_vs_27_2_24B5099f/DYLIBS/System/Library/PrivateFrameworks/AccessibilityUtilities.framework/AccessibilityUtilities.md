@@ -2,92 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x20fc6c` | `0x210e7c` | **`+0x1210`** |
+| `__AUTH_CONST.__objc_const` | `0x1c570` | `0x1c828` | **`+0x2b8`** |
+| `__TEXT.__objc_methlist` | `0xff2c` | `0x10124` | **`+0x1f8`** |
+| `__AUTH_CONST.__cfstring` | `0x13cc0` | `0x13ea0` | **`+0x1e0`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa330` | `0xa498` | **`+0x168`** |
+| `__TEXT.__cstring` | `0x1e024` | `0x1e15a` | **`+0x136`** |
+| `__TEXT.__ustring` | `0x68` | `0x18c` | **`+0x124`** |
+| `__AUTH_CONST.__objc_intobj` | `0x16e0` | `0x17a0` | **`+0xc0`** |
+| `__AUTH.__objc_data` | `0x2a40` | `0x2a90` | **`+0x50`** |
+| `__DATA_CONST.__objc_arraydata` | `0x9d8` | `0xa20` | **`+0x48`** |
+| `__TEXT.__unwind_info` | `0x9c20` | `0x9c58` | **`+0x38`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x330` | `0x360` | **`+0x30`** |
+| `__AUTH_CONST.__objc_dictobj` | `0x2f8` | `0x320` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0xa620` | `0xa640` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0xc00` | `0xc20` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x13dc` | `0x13f0` | **`+0x14`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x70` | `0x80` | **`+0x10`** |
+| `__DATA.__bss` | `0x9010` | `0x9020` | **`+0x10`** |
+| `__DATA.__data` | `0x52c8` | `0x52d8` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x5c20` | `0x5c30` | **`+0x10`** |
+| `__TEXT.__oslogstring` | `0x6ee4` | `0x6ef3` | **`+0xf`** |
+| `__DATA_CONST.__objc_classlist` | `0x4d0` | `0x4d8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3245.8.2.0.0
--  __TEXT.__text: 0x204dc0
--  __TEXT.__objc_methlist: 0xff2c
 +3245.8.4.2.0
-+  __TEXT.__text: 0x205f4c
-+  __TEXT.__objc_methlist: 0x10124
-   __TEXT.__dlopen_cstrs: 0xb89
-   __TEXT.__const: 0x8f68
-   __TEXT.__swift5_typeref: 0x273e
-   __TEXT.__swift5_capture: 0x2ab4
--  __TEXT.__cstring: 0x1e024
-+  __TEXT.__cstring: 0x1e15a
-   __TEXT.__constg_swiftt: 0x178c
-   __TEXT.__swift5_reflstr: 0xb91c
-   __TEXT.__swift5_fieldmd: 0x45ac
 
-   __TEXT.__swift_as_entry: 0x10c
-   __TEXT.__swift_as_ret: 0x154
-   __TEXT.__swift_as_cont: 0x198
--  __TEXT.__oslogstring: 0x6ee4
-+  __TEXT.__oslogstring: 0x6ef3
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__gcc_except_tab: 0x13dc
--  __TEXT.__ustring: 0x68
--  __TEXT.__unwind_info: 0xc598
-+  __TEXT.__gcc_except_tab: 0x13f0
-+  __TEXT.__ustring: 0x18c
-+  __TEXT.__unwind_info: 0xc600
-   __TEXT.__eh_frame: 0x7b50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x5c20
--  __DATA_CONST.__objc_classlist: 0x4d0
-+  __DATA_CONST.__const: 0x5c30
-+  __DATA_CONST.__objc_classlist: 0x4d8
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_protolist: 0xf0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa330
-+  __DATA_CONST.__objc_selrefs: 0xa498
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__objc_superrefs: 0x308
--  __DATA_CONST.__objc_arraydata: 0x9d8
-+  __DATA_CONST.__objc_arraydata: 0xa20
-   __DATA_CONST.__got: 0x23f0
--  __AUTH_CONST.__const: 0xa620
--  __AUTH_CONST.__cfstring: 0x13cc0
--  __AUTH_CONST.__objc_const: 0x1c570
--  __AUTH_CONST.__objc_intobj: 0x16e0
--  __AUTH_CONST.__objc_arrayobj: 0x330
--  __AUTH_CONST.__objc_dictobj: 0x2f8
--  __AUTH_CONST.__objc_doubleobj: 0x70
-+  __AUTH_CONST.__const: 0xa640
-+  __AUTH_CONST.__cfstring: 0x13ea0
-+  __AUTH_CONST.__objc_const: 0x1c828
-+  __AUTH_CONST.__objc_doubleobj: 0x80
-+  __AUTH_CONST.__objc_dictobj: 0x320
-+  __AUTH_CONST.__objc_intobj: 0x17a0
-+  __AUTH_CONST.__objc_arrayobj: 0x360
-   __AUTH_CONST.__auth_got: 0x2e28
--  __AUTH.__objc_data: 0x2a40
-+  __AUTH.__objc_data: 0x2a90
-   __AUTH.__data: 0x9a8
--  __DATA.__objc_ivar: 0xc00
--  __DATA.__data: 0x52c8
-+  __DATA.__objc_ivar: 0xc20
-+  __DATA.__data: 0x52d8
-   __DATA_DIRTY.__objc_data: 0x3320
-   __DATA_DIRTY.__data: 0x8e0
-   __DATA_DIRTY.__bss: 0x3a50
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15562
 -  Symbols:   11043
 -  CStrings:  4478
 +  Functions: 15604
 +  Symbols:   11106
 +  CStrings:  4494
- 
 Symbols:
 + +[AXLiveRecognitionAskParameters current]
 + +[AXTadmorTesterDevice sharedAbsoluteInstance]

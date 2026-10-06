@@ -2,15 +2,14 @@
 
 > `/System/Library/CoreServices/osanalyticshelper`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__eh_frame`
+
+### Other Changes
 
 ```diff
 
 -1056.40.5.0.0
 +1056.40.8.0.0
-   __TEXT.__text: 0x207ec
-   __TEXT.__auth_stubs: 0x1440
-   __TEXT.__objc_stubs: 0x2d60
 ```

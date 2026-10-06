@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/StocksPersonalization.framework/StocksPersonalization`
 
-```diff
+### Section Size Changes
 
- 2028.1.0.0.0
--  __TEXT.__text: 0x5fe38
-+  __TEXT.__text: 0x5fe4c
-   __TEXT.__objc_methlist: 0xd44
-   __TEXT.__const: 0x3d90
-   __TEXT.__constg_swiftt: 0xf50
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5fe38` | `0x5fe4c` | **`+0x14`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_225c04c4c -> sub_226449c4c : 11560 -> 11568
 ~ sub_225c32714 -> sub_22647771c : 404 -> 408

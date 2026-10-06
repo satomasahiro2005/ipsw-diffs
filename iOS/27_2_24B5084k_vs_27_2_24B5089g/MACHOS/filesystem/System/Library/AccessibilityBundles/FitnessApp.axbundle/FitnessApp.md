@@ -2,68 +2,44 @@
 
 > `/System/Library/AccessibilityBundles/FitnessApp.axbundle/FitnessApp`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xee28` | `0xe6a8` | **`-0x780`** |
+| `__DATA_CONST.__cfstring` | `0x3260` | `0x30a0` | **`-0x1c0`** |
+| `__TEXT.__objc_stubs` | `0x1800` | `0x1680` | **`-0x180`** |
+| `__TEXT.__objc_methname` | `0x1a4d` | `0x1906` | **`-0x147`** |
+| `__TEXT.__cstring` | `0x2bbc` | `0x2a84` | **`-0x138`** |
+| `__DATA.__objc_const` | `0x4f48` | `0x4e28` | **`-0x120`** |
+| `__DATA.__objc_data` | `0x2bc0` | `0x2b20` | **`-0xa0`** |
+| `__TEXT.__objc_methlist` | `0x1898` | `0x1800` | **`-0x98`** |
+| `__DATA.__objc_selrefs` | `0x788` | `0x708` | **`-0x80`** |
+| `__TEXT.__objc_classname` | `0x1987` | `0x1921` | **`-0x66`** |
+| `__TEXT.__unwind_info` | `0x5b8` | `0x598` | **`-0x20`** |
+| `__TEXT.__objc_methtype` | `0x1e3` | `0x1c5` | **`-0x1e`** |
+| `__DATA_CONST.__got` | `0x180` | `0x170` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x460` | `0x450` | **`-0x10`** |
+
+### Same-size Content Changes
 
 - `__DATA_CONST.__const`
 - `__DATA_CONST.__objc_catlist`
 - `__DATA_CONST.__objc_superrefs`
 
+### Other Changes
+
 ```diff
 
 -1040.4.0.0.0
--  __TEXT.__text: 0xe814
 +1040.4.1.0.0
-+  __TEXT.__text: 0xe0c4
-   __TEXT.__auth_stubs: 0x500
--  __TEXT.__objc_stubs: 0x1800
--  __TEXT.__objc_methlist: 0x1898
-+  __TEXT.__objc_stubs: 0x1680
-+  __TEXT.__objc_methlist: 0x1800
-   __TEXT.__const: 0x18
-   __TEXT.__gcc_except_tab: 0x258
--  __TEXT.__objc_classname: 0x1987
--  __TEXT.__cstring: 0x2bbc
--  __TEXT.__objc_methname: 0x1a4d
--  __TEXT.__objc_methtype: 0x1e3
-+  __TEXT.__objc_classname: 0x1921
-+  __TEXT.__cstring: 0x2a84
-+  __TEXT.__objc_methname: 0x1906
-+  __TEXT.__objc_methtype: 0x1c5
-   __TEXT.__ustring: 0xa
--  __TEXT.__unwind_info: 0x658
-+  __TEXT.__unwind_info: 0x630
-   __DATA_CONST.__const: 0x480
--  __DATA_CONST.__cfstring: 0x3260
--  __DATA_CONST.__objc_classlist: 0x460
-+  __DATA_CONST.__cfstring: 0x30a0
-+  __DATA_CONST.__objc_classlist: 0x450
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x1b8
-   __DATA_CONST.__auth_got: 0x290
--  __DATA_CONST.__got: 0x180
--  __DATA.__objc_const: 0x4f48
--  __DATA.__objc_selrefs: 0x788
-+  __DATA_CONST.__got: 0x170
-+  __DATA.__objc_const: 0x4e28
-+  __DATA.__objc_selrefs: 0x708
-   __DATA.__objc_ivar: 0x8
--  __DATA.__objc_data: 0x2bc0
-+  __DATA.__objc_data: 0x2b20
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 462
 -  Symbols:   1543
 -  CStrings:  735
 +  Functions: 451
 +  Symbols:   1508
 +  CStrings:  700
- 
 Symbols:
 + GCC_except_table128
 + GCC_except_table151

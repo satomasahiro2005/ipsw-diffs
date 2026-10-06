@@ -2,64 +2,34 @@
 
 > `/System/Library/Frameworks/NowPlaying.framework/NowPlaying`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x41f04` | `0x41384` | **`-0xb80`** |
+| `__AUTH_CONST.__const` | `0x46d0` | `0x47e8` | **`+0x118`** |
+| `__TEXT.__swift5_capture` | `0x864` | `0x954` | **`+0xf0`** |
+| `__AUTH_CONST.__auth_got` | `0xa70` | `0xa18` | **`-0x58`** |
+| `__TEXT.__eh_frame` | `0x2dd8` | `0x2d88` | **`-0x50`** |
+| `__TEXT.__unwind_info` | `0x1a48` | `0x1a18` | **`-0x30`** |
+| `__DATA.__data` | `0xd48` | `0xd28` | **`-0x20`** |
+| `__TEXT.__swift5_typeref` | `0xdce` | `0xde8` | **`+0x1a`** |
+| `__DATA.__common` | `0x70` | `0x58` | **`-0x18`** |
+| `__TEXT.__const` | `0x3948` | `0x3958` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -4026.100.79.0.0
--  __TEXT.__text: 0x41f04
 +4026.110.83.1.0
-+  __TEXT.__text: 0x41384
-   __TEXT.__objc_methlist: 0x224
--  __TEXT.__const: 0x3948
--  __TEXT.__swift5_typeref: 0xdce
--  __TEXT.__swift5_capture: 0x864
-+  __TEXT.__const: 0x3958
-+  __TEXT.__swift5_typeref: 0xde8
-+  __TEXT.__swift5_capture: 0x954
-   __TEXT.__swift5_reflstr: 0xe86
-   __TEXT.__swift5_assocty: 0x270
-   __TEXT.__constg_swiftt: 0x1320
 
-   __TEXT.__cstring: 0x3c2
-   __TEXT.__oslogstring: 0x224
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x1a48
--  __TEXT.__eh_frame: 0x2dd8
-+  __TEXT.__unwind_info: 0x1a18
-+  __TEXT.__eh_frame: 0x2d88
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0x2c8
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x46d0
-+  __AUTH_CONST.__const: 0x47e8
-   __AUTH_CONST.__objc_const: 0x770
--  __AUTH_CONST.__auth_got: 0xa70
-+  __AUTH_CONST.__auth_got: 0xa18
-   __AUTH.__objc_data: 0xd8
-   __AUTH.__data: 0x730
--  __DATA.__data: 0xd48
-+  __DATA.__data: 0xd28
-   __DATA.__bss: 0x4900
--  __DATA.__common: 0x70
-+  __DATA.__common: 0x58
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 -  - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
-   - /System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/ImageIO.framework/ImageIO
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2805
--  Symbols:   892
+-  Symbols:   834
 +  Functions: 2789
-+  Symbols:   893
-   CStrings:  37
- 
++  Symbols:   835
 Symbols:
 + _MRNowPlayingCreateDerivedIdentifier
 + ___swift_closure_destructor.10Tm

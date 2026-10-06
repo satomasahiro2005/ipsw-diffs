@@ -2,46 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/FeedbackCore.framework/FeedbackCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1485f8` | `0x148910` | **`+0x318`** |
+| `__DATA_CONST.__objc_selrefs` | `0x77e0` | `0x7800` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0xb91c` | `0xb934` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x4d90` | `0x4da0` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -235.0.0.0.0
--  __TEXT.__text: 0x141890
 +238.0.0.0.0
-+  __TEXT.__text: 0x141ba8
-   __TEXT.__lazy_helpers: 0x2a0
--  __TEXT.__objc_methlist: 0xb91c
-+  __TEXT.__objc_methlist: 0xb934
-   __TEXT.__const: 0x3a44
-   __TEXT.__cstring: 0xa4c8
-   __TEXT.__oslogstring: 0xb006
 
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x24
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__unwind_info: 0x6470
-+  __TEXT.__unwind_info: 0x6480
-   __TEXT.__eh_frame: 0x1360
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0xc0
-   __DATA_CONST.__objc_protolist: 0x238
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x77e0
-+  __DATA_CONST.__objc_selrefs: 0x7800
-   __DATA_CONST.__objc_protorefs: 0x98
-   __DATA_CONST.__objc_superrefs: 0x278
-   __DATA_CONST.__objc_arraydata: 0x580
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7725
--  Symbols:   10397
+-  Symbols:   7452
 +  Functions: 7728
-+  Symbols:   10404
-   CStrings:  2632
- 
++  Symbols:   7456
 Symbols:
 + -[FBKBugFormTableViewController viewDidLayoutSubviews]
 + -[FBKLargeSubmitButton updateHeightForTableView:]
@@ -54,9 +34,6 @@ Symbols:
 + GCC_except_table37
 + GCC_except_table99
 + _FBKLargeSubmitButtonAvailableWidth
-+ _objc_msgSend$safeAreaInsets
-+ _objc_msgSend$tableFooterView
-+ _objc_msgSend$updateHeightForTableView:
 - GCC_except_table104
 - GCC_except_table123
 - GCC_except_table139

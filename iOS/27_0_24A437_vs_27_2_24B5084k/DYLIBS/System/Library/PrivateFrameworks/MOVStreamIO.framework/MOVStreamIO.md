@@ -2,108 +2,61 @@
 
 > `/System/Library/PrivateFrameworks/MOVStreamIO.framework/MOVStreamIO`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8df3c` | `0x97be8` | **`+0x9cac`** |
+| `__TEXT.__const` | `0x3c12` | `0x4524` | **`+0x912`** |
+| `__AUTH_CONST.__const` | `0x1130` | `0x1850` | **`+0x720`** |
+| `__TEXT.__eh_frame` | `0xb8` | `0x6f0` | **`+0x638`** |
+| `__TEXT.__cstring` | `0x8d4d` | `0x92a3` | **`+0x556`** |
+| `__DATA.__bss` | `0x7b8` | `0xc90` | **`+0x4d8`** |
+| `__AUTH_CONST.__auth_got` | `0xbd8` | `0xf48` | **`+0x370`** |
+| `__AUTH_CONST.__objc_const` | `0xf430` | `0xf760` | **`+0x330`** |
+| `__TEXT.__constg_swiftt` | `0xd0` | `0x3fc` | **`+0x32c`** |
+| `__AUTH.__data` | `—` | `0x318` | **`+0x318`** |
+| `__TEXT.__swift5_reflstr` | `0x124` | `0x40c` | **`+0x2e8`** |
+| `__TEXT.__swift5_fieldmd` | `0x1d8` | `0x464` | **`+0x28c`** |
+| `__TEXT.__unwind_info` | `0x32d0` | `0x3540` | **`+0x270`** |
+| `__TEXT.__swift5_typeref` | `0x127` | `0x38e` | **`+0x267`** |
+| `__DATA.__data` | `0xb6c` | `0xc9c` | **`+0x130`** |
+| `__DATA_CONST.__got` | `0x8a8` | `0x9b0` | **`+0x108`** |
+| `__TEXT.__objc_methlist` | `0x6c08` | `0x6c88` | **`+0x80`** |
+| `__TEXT.__swift5_builtin` | `—` | `0x64` | **`+0x64`** |
+| `__DATA_CONST.__objc_selrefs` | `0x33d0` | `0x3430` | **`+0x60`** |
+| `__TEXT.__swift5_types` | `0x1c` | `0x70` | **`+0x54`** |
+| `__AUTH.__objc_data` | `0x90` | `0xe0` | **`+0x50`** |
+| `__TEXT.__swift5_assocty` | `0x30` | `0x78` | **`+0x48`** |
+| `__AUTH_CONST.__cfstring` | `0x6220` | `0x6260` | **`+0x40`** |
+| `__TEXT.__gcc_except_tab` | `0xe850` | `0xe890` | **`+0x40`** |
+| `__TEXT.__oslogstring` | `0x3cc0` | `0x3cf6` | **`+0x36`** |
+| `__TEXT.__swift5_proto` | `0x30` | `0x54` | **`+0x24`** |
+| `__DATA_CONST.__const` | `0xb90` | `0xbb0` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x3a8` | `0x3c0` | **`+0x18`** |
+| `__TEXT.__swift5_capture` | `—` | `0x18` | **`+0x18`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x18` | **`+0x18`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x14` | **`+0x14`** |
+| `__TEXT.__swift5_mpenum` | `—` | `0x10` | **`+0x10`** |
+| `__DATA.__common` | `0x28` | `0x30` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `—` | `0x8` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x674` | `0x678` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3.39.5.0.0
--  __TEXT.__text: 0x8bd2c
 +3.40.1.0.0
-+  __TEXT.__text: 0x95460
-   __TEXT.__delay_stubs: 0x240
-   __TEXT.__delay_helper: 0xa4
--  __TEXT.__objc_methlist: 0x6c08
--  __TEXT.__const: 0x3c12
--  __TEXT.__cstring: 0x8d4d
--  __TEXT.__oslogstring: 0x3cc0
--  __TEXT.__gcc_except_tab: 0xe850
-+  __TEXT.__objc_methlist: 0x6c88
-+  __TEXT.__const: 0x4524
-+  __TEXT.__cstring: 0x92a3
-+  __TEXT.__oslogstring: 0x3cf6
-+  __TEXT.__gcc_except_tab: 0xe890
-   __TEXT.__ustring: 0x64a
--  __TEXT.__swift5_typeref: 0x127
--  __TEXT.__swift5_reflstr: 0x124
--  __TEXT.__swift5_assocty: 0x30
--  __TEXT.__constg_swiftt: 0xd0
--  __TEXT.__swift5_fieldmd: 0x1d8
--  __TEXT.__swift5_proto: 0x30
--  __TEXT.__swift5_types: 0x1c
--  __TEXT.__unwind_info: 0x36b0
--  __TEXT.__eh_frame: 0xb8
-+  __TEXT.__swift5_typeref: 0x38e
-+  __TEXT.__swift5_reflstr: 0x40c
-+  __TEXT.__swift5_assocty: 0x78
-+  __TEXT.__constg_swiftt: 0x3fc
-+  __TEXT.__swift5_fieldmd: 0x464
-+  __TEXT.__swift5_proto: 0x54
-+  __TEXT.__swift5_types: 0x70
-+  __TEXT.__swift5_builtin: 0x64
-+  __TEXT.__swift5_mpenum: 0x10
-+  __TEXT.__swift5_capture: 0x18
-+  __TEXT.__swift_as_entry: 0x14
-+  __TEXT.__swift_as_cont: 0x18
-+  __TEXT.__swift_as_ret: 0x8
-+  __TEXT.__unwind_info: 0x39a8
-+  __TEXT.__eh_frame: 0x6f0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xb90
--  __DATA_CONST.__objc_classlist: 0x3a8
-+  __DATA_CONST.__const: 0xbb0
-+  __DATA_CONST.__objc_classlist: 0x3c0
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0xd8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x33d0
-+  __DATA_CONST.__objc_selrefs: 0x3430
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x200
-   __DATA_CONST.__objc_arraydata: 0x338
--  __DATA_CONST.__got: 0x8a8
--  __AUTH_CONST.__const: 0x1130
--  __AUTH_CONST.__cfstring: 0x6220
--  __AUTH_CONST.__objc_const: 0xf430
-+  __DATA_CONST.__got: 0x9b0
-+  __AUTH_CONST.__const: 0x1850
-+  __AUTH_CONST.__cfstring: 0x6260
-+  __AUTH_CONST.__objc_const: 0xf760
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0xa68
-   __AUTH_CONST.__objc_doubleobj: 0xa0
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__objc_dictobj: 0x78
--  __AUTH_CONST.__auth_got: 0xbd8
--  __AUTH.__objc_data: 0x90
--  __DATA.__objc_ivar: 0x674
--  __DATA.__data: 0xb6c
--  __DATA.__common: 0x28
-+  __AUTH_CONST.__auth_got: 0xf48
-+  __AUTH.__objc_data: 0xe0
-+  __AUTH.__data: 0x318
-+  __DATA.__objc_ivar: 0x678
-+  __DATA.__data: 0xc9c
-+  __DATA.__common: 0x30
-   __DATA_DIRTY.__objc_data: 0x2440
-   __DATA_DIRTY.__data: 0x50
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
 
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 +  - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 2555
--  Symbols:   6018
+-  Symbols:   4751
 -  CStrings:  1286
 +  Functions: 2769
-+  Symbols:   6172
++  Symbols:   4900
 +  CStrings:  1319
- 
 Symbols:
 + +[MOVStreamIOUtility isSlimTrack:withCompressionFormat:]
 + +[MOVStreamIOUtility isSlimYZipEncodedTrack:]
@@ -170,11 +123,6 @@ Symbols:
 + _get_enum_tag_for_layout_string 11MOVStreamIO30SampleBufferSerializationErrorO
 + _kMIOUseSlimYZipCompression
 + _kSlim_kVTCompressionPropertyKey_Format
-+ _objc_msgSend$__swift_setObject:forKeyedSubscript:
-+ _objc_msgSend$finishWithTimeout:endTime:completionHandler:finishWarningHandler:
-+ _objc_msgSend$isSlimTrack:withCompressionFormat:
-+ _objc_msgSend$setFinishWarning:
-+ _objc_msgSend$slimCompressionFormatForConfiguration:
 + _os_unfair_lock_lock
 + _os_unfair_lock_unlock
 + _swift_allocError

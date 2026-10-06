@@ -2,94 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/HomeUI2.framework/HomeUI2`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x513014` | `0x5237d0` | **`+0x107bc`** |
+| `__TEXT.__eh_frame` | `0x15000` | `0x15520` | **`+0x520`** |
+| `__TEXT.__swift5_typeref` | `0x37640` | `0x37a80` | **`+0x440`** |
+| `__AUTH_CONST.__const` | `0x180a0` | `0x183e0` | **`+0x340`** |
+| `__TEXT.__const` | `0x27f84` | `0x28284` | **`+0x300`** |
+| `__TEXT.__unwind_info` | `0xd188` | `0xd370` | **`+0x1e8`** |
+| `__DATA.__data` | `0x12674` | `0x12854` | **`+0x1e0`** |
+| `__TEXT.__oslogstring` | `0x5df1` | `0x5fc1` | **`+0x1d0`** |
+| `__TEXT.__swift5_capture` | `0x51c0` | `0x5308` | **`+0x148`** |
+| `__TEXT.__constg_swiftt` | `0xec08` | `0xecfc` | **`+0xf4`** |
+| `__TEXT.__swift5_reflstr` | `0xaa60` | `0xab30` | **`+0xd0`** |
+| `__TEXT.__swift5_fieldmd` | `0xaae4` | `0xab70` | **`+0x8c`** |
+| `__AUTH_CONST.__auth_got` | `0x4ec8` | `0x4f48` | **`+0x80`** |
+| `__DATA.__bss` | `0x1f7e8` | `0x1f868` | **`+0x80`** |
+| `__AUTH_CONST.__objc_const` | `0x56b0` | `0x56f8` | **`+0x48`** |
+| `__TEXT.__swift_as_cont` | `0xc38` | `0xc80` | **`+0x48`** |
+| `__TEXT.__cstring` | `0x6c16` | `0x6c56` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x27f8` | `0x2828` | **`+0x30`** |
+| `__DATA_DIRTY.__data` | `0xa60` | `0xa90` | **`+0x30`** |
+| `__TEXT.__swift_as_ret` | `0x5bc` | `0x5e4` | **`+0x28`** |
+| `__TEXT.__swift_as_entry` | `0x614` | `0x638` | **`+0x24`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1038` | `0x1058` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x660` | `0x670` | **`+0x10`** |
+| `__DATA.__common` | `0x378` | `0x380` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0xa80` | `0xa88` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0xfb8` | `0xfbc` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1263.1.0.1.2
--  __TEXT.__text: 0x4df598
 +1265.0.0.1.1
-+  __TEXT.__text: 0x4eeed0
-   __TEXT.__lazy_helpers: 0x54
-   __TEXT.__objc_methlist: 0xc8c
--  __TEXT.__const: 0x27f84
--  __TEXT.__constg_swiftt: 0xec08
--  __TEXT.__swift5_typeref: 0x37640
-+  __TEXT.__const: 0x28284
-+  __TEXT.__constg_swiftt: 0xecfc
-+  __TEXT.__swift5_typeref: 0x37a80
-   __TEXT.__swift5_builtin: 0x1cc
--  __TEXT.__swift5_reflstr: 0xaa60
--  __TEXT.__swift5_fieldmd: 0xaae4
-+  __TEXT.__swift5_reflstr: 0xab30
-+  __TEXT.__swift5_fieldmd: 0xab70
-   __TEXT.__swift5_assocty: 0x28a0
--  __TEXT.__swift5_proto: 0xfb8
--  __TEXT.__swift5_types: 0xa80
-+  __TEXT.__swift5_proto: 0xfbc
-+  __TEXT.__swift5_types: 0xa88
-   __TEXT.__lldbsummaries: 0x4fa
--  __TEXT.__cstring: 0x6c16
-+  __TEXT.__cstring: 0x6c56
-   __TEXT.__swift5_protos: 0x7c
--  __TEXT.__swift_as_entry: 0x614
--  __TEXT.__swift_as_cont: 0xc38
--  __TEXT.__swift5_capture: 0x51c0
--  __TEXT.__oslogstring: 0x5df1
--  __TEXT.__swift_as_ret: 0x5bc
-+  __TEXT.__swift_as_entry: 0x638
-+  __TEXT.__swift_as_cont: 0xc80
-+  __TEXT.__swift5_capture: 0x5308
-+  __TEXT.__oslogstring: 0x5fc1
-+  __TEXT.__swift_as_ret: 0x5e4
-   __TEXT.__swift5_mpenum: 0x48
--  __TEXT.__unwind_info: 0x10648
--  __TEXT.__eh_frame: 0x15038
-+  __TEXT.__unwind_info: 0x10870
-+  __TEXT.__eh_frame: 0x15560
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x660
-+  __DATA_CONST.__const: 0x670
-   __DATA_CONST.__objc_classlist: 0x1c8
-   __DATA_CONST.__objc_protolist: 0xc0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1038
-+  __DATA_CONST.__objc_selrefs: 0x1058
-   __DATA_CONST.__objc_protorefs: 0x60
--  __DATA_CONST.__got: 0x27f8
--  __AUTH_CONST.__const: 0x180a0
--  __AUTH_CONST.__objc_const: 0x56b0
-+  __DATA_CONST.__got: 0x2828
-+  __AUTH_CONST.__const: 0x183e0
-+  __AUTH_CONST.__objc_const: 0x56f8
-   __AUTH_CONST.__lazy_load_got: 0x8
--  __AUTH_CONST.__auth_got: 0x4ec8
-+  __AUTH_CONST.__auth_got: 0x4f48
-   __AUTH.__objc_data: 0x1728
-   __AUTH.__data: 0x7288
--  __DATA.__data: 0x12674
--  __DATA.__common: 0x378
-+  __DATA.__data: 0x12854
-+  __DATA.__common: 0x380
-   __DATA_DIRTY.__objc_data: 0x50
--  __DATA_DIRTY.__data: 0xa60
-+  __DATA_DIRTY.__data: 0xa90
-   __DATA_DIRTY.__common: 0x30
-   __DATA_DIRTY.__bss: 0x280
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 18669
--  Symbols:   6803
+-  Symbols:   6426
 -  CStrings:  1120
 +  Functions: 18816
-+  Symbols:   6836
++  Symbols:   6455
 +  CStrings:  1129
- 
 Symbols:
 + _CMTimeGetSeconds
 + __IVARS__TtCV7HomeUI223PlayerViewRepresentable11Coordinator
@@ -100,10 +56,6 @@ Symbols:
 + _get_witness_table 7HomeUI219PlaybackEnvironmentRzAA22DiscreteTimelineLayoutVyAA12CompoundClipVAA22MultiAssetPositionDataVAA0hI12MergePayloadVG0G0Rtz0aM5Model6CameraO16SourceIdentifierVAQRtzlqd0__7SwiftUI4ViewHD3_AtUPATE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAvTE4task2id4name8priority4file4line_Qrqd___SSSgScPSSSiyyYaYAcntSQRd__lFQOyAvTEAZA_A0_A1_A2_A3__Qrqd___A4_ScPSSSiyyYaYAcntSQRd__lFQOyAvTEAZA_A0_A1_A2_A3__Qrqd___A4_ScPSSSiyyYaYAcntSQRd__lFQOyAT15ModifiedContentVyA6_yA6_yAT6ZStackVyAT12TupleContentVyAT5ColorV_AT19_ConditionalContentVyA14_yA6_yA6_yA6_yA6_yAA0Q4CellVAA010RegisteredqV0VGAT16_OverlayModifierVyA6_yAA0Q8CarouselV11OfflineIconVyx_GAT12_ScaleEffectVGSgGGA21_yA6_yA6_yA23_9LiveBadgeVyx_GA28_GAT08_PaddingG0VGSgGGAT18_AnimationModifierVySbGGSgA10_yAvTE9animation_4bodyQrAT9AnimationVSg_qd__AT018PlaceholderContentV0VyxGXEtAtURd__lFQOyA6_yAT5ImageVAT012_AspectRatioG0VG_A6_yA54_yA60_GAT14_OpacityEffectVGQo_Sg_AT5GroupVyAvTEA48__A49_QrA52__qd__A55_XEtAtURd__lFQOyAA06PlayerV13RepresentableVyxGSg_A6_yA54_yA72_GA63_GQo_SgGAA22BlurredProgressOverlayVSgQPGGAT05EmptyV0VGQPGGAT06_FrameG0VGAT01_I6EffectVyAT16RoundedRectangleVGGA28_G_SbQo__A23_4CellV12ThumbnailKey33_9D491BF8D9889734FE613D9BA898E2E0LLVyx__GQo__10Foundation3URLVSgQo__SbQo_HO
 + _get_witness_table 7HomeUI223CameraViewerEnvironmentRzAA012LivePlaybackE0C0gE4TypeRtzlqd0__7SwiftUI4ViewHD3_AgHPAGE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAiGEAjkL_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAiGEAjkL_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAiGE4task2id4name8priority4file4line_Qrqd___SSSgScPSSSiyyYaYAcntSQRd__lFQOyAiGEAjkL_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAiGEAjkL_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAiGEAjkL_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAiGEAjkL_Qrqd___SbyyctSQRd__lFQOyAG01_K16Modifier_ContentVyAA0cdM8ObserverVyxGG_AA0cD0V13ConfigurationV6LayoutOyx__GQo__AA016DiscreteTimelineZ0V4ItemVyAA12CompoundClipVAA22MultiAssetPositionDataVAA24CompoundClipMergePayloadV_GSgQo__0A9DataModel0C0O16SourceIdentifierVSgQo__A19_15ScrubberElementOSgQo__AA15HeroFrameTaskID33_C6D26A4E145CD9C14001A6C85A48EFE7LLVQo__SbQo__A23_Qo__10Foundation4UUIDVSgQo_HO
 + _keypath_set.288Tm
-+ _objc_msgSend$URLsForDirectory:inDomains:
-+ _objc_msgSend$contentsOfDirectoryAtPath:error:
-+ _objc_msgSend$pathExtension
-+ _objc_msgSend$stringByDeletingPathExtension
 + _swift_setAtWritableKeyPath
 + _symbolic SDy_____So7UIImageCG 13HomeDataModel6CameraO16SourceIdentifierV
 + _symbolic ScSySay_____GG 13HomeDataModel15ScrubberElementO

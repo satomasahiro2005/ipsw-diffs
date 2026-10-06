@@ -2,30 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/OpenAPIRuntimeInternal.framework/OpenAPIRuntimeInternal`
 
-```diff
+### Section Size Changes
 
- 1.8.3.1.0
--  __TEXT.__text: 0x94fa8
-+  __TEXT.__text: 0x94ef4
-   __TEXT.__const: 0x86d8
-   __TEXT.__swift5_typeref: 0x1b33
-   __TEXT.__swift5_reflstr: 0x1afb
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x94fa8` | `0x94ef4` | **`-0xb4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2961aa660 -> sub_295d73660 : 808 -> 796
-~ sub_2961acd60 -> sub_295d75d54 : 1444 -> 1436
-~ sub_2961cbca0 -> sub_295d94c8c : 796 -> 784
-~ sub_2961f5ef0 -> sub_295dbeed0 : 1408 -> 1396
-~ sub_29620cbf8 -> sub_295dd5bcc : 116 -> 108
-~ sub_29620cce8 -> sub_295dd5cb4 : 524 -> 516
-~ sub_29621021c -> sub_295dd91e0 : 1436 -> 1428
-~ sub_2962107b8 -> sub_295dd9774 : 1456 -> 1448
-~ sub_296211948 -> sub_295dda8fc : 1436 -> 1428
-~ sub_29621276c -> sub_295ddb718 : 356 -> 344
-~ sub_2962128d0 -> sub_295ddb870 : 356 -> 344
-~ sub_296212a34 -> sub_295ddb9c8 : 308 -> 296
-~ sub_296212b68 -> sub_295ddbaf0 : 332 -> 320
-~ sub_296212cb4 -> sub_295ddbc30 : 344 -> 332
-~ sub_296212e0c -> sub_295ddbd7c : 344 -> 332
-~ sub_296212f64 -> sub_295ddbec8 : 308 -> 296
-~ sub_296213098 -> sub_295ddbff0 : 332 -> 320
+~ sub_296040660 -> sub_295c81660 : 808 -> 796
+~ sub_296042d60 -> sub_295c83d54 : 1444 -> 1436
+~ sub_296061ca0 -> sub_295ca2c8c : 796 -> 784
+~ sub_29608bef0 -> sub_295ccced0 : 1408 -> 1396
+~ sub_2960a2bf8 -> sub_295ce3bcc : 116 -> 108
+~ sub_2960a2ce8 -> sub_295ce3cb4 : 524 -> 516
+~ sub_2960a621c -> sub_295ce71e0 : 1436 -> 1428
+~ sub_2960a67b8 -> sub_295ce7774 : 1456 -> 1448
+~ sub_2960a7948 -> sub_295ce88fc : 1436 -> 1428
+~ sub_2960a876c -> sub_295ce9718 : 356 -> 344
+~ sub_2960a88d0 -> sub_295ce9870 : 356 -> 344
+~ sub_2960a8a34 -> sub_295ce99c8 : 308 -> 296
+~ sub_2960a8b68 -> sub_295ce9af0 : 332 -> 320
+~ sub_2960a8cb4 -> sub_295ce9c30 : 344 -> 332
+~ sub_2960a8e0c -> sub_295ce9d7c : 344 -> 332
+~ sub_2960a8f64 -> sub_295ce9ec8 : 308 -> 296
+~ sub_2960a9098 -> sub_295ce9ff0 : 332 -> 320
 ```

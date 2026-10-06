@@ -2,29 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/CloudTelemetry.framework/Support/cloudtelemetryd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x67fd0` | `0x67fd8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__const`
 - `__TEXT.__const`
-- `__TEXT.__swift5_entry`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_entry`
 - `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
 - `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA.__objc_data`
-- `__DATA.__data`
 
-```diff
+### Other Changes
 
- 2722.0.0.0.0
--  __TEXT.__text: 0x67fd0
-+  __TEXT.__text: 0x67fd8
-   __TEXT.__auth_stubs: 0x2050
-   __TEXT.__objc_stubs: 0x680
-   __TEXT.__objc_methlist: 0x104
+```text
 Functions:
 ~ sub_10001533c : 548 -> 540
 ~ sub_1000282c8 -> sub_1000282c0 : 352 -> 356

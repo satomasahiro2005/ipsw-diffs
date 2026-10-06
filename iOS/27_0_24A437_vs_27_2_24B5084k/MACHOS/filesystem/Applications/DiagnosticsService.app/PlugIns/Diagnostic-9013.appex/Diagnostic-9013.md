@@ -2,69 +2,47 @@
 
 > `/Applications/DiagnosticsService.app/PlugIns/Diagnostic-9013.appex/Diagnostic-9013`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__got`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd68` | `0x8e4` | **`-0x484`** |
+| `__TEXT.__oslogstring` | `0x10d` | `0x33` | **`-0xda`** |
+| `__TEXT.__objc_stubs` | `0x380` | `0x2e0` | **`-0xa0`** |
+| `__TEXT.__auth_stubs` | `0x1e0` | `0x180` | **`-0x60`** |
+| `__DATA_CONST.__cfstring` | `0x100` | `0xc0` | **`-0x40`** |
+| `__TEXT.__cstring` | `0xed` | `0xb8` | **`-0x35`** |
+| `__DATA_CONST.__auth_got` | `0xf8` | `0xc8` | **`-0x30`** |
+| `__TEXT.__const` | `0x70` | `0x60` | **`-0x10`** |
+| `__TEXT.__objc_methname` | `0x3da` | `0x3ca` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x98` | `0x88` | **`-0x10`** |
+| `__DATA.__objc_selrefs` | `0x1c0` | `0x1b8` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_data`
-- `__DATA.__data`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
 -1307.2.4.0.0
--  __TEXT.__text: 0xd20
--  __TEXT.__auth_stubs: 0x1e0
--  __TEXT.__objc_stubs: 0x380
 +1307.40.46.0.0
-+  __TEXT.__text: 0x8a8
-+  __TEXT.__auth_stubs: 0x180
-+  __TEXT.__objc_stubs: 0x2e0
-   __TEXT.__objc_methlist: 0x22c
--  __TEXT.__const: 0x70
--  __TEXT.__cstring: 0xed
--  __TEXT.__oslogstring: 0x10d
-+  __TEXT.__const: 0x60
-+  __TEXT.__cstring: 0xb8
-+  __TEXT.__oslogstring: 0x33
-   __TEXT.__objc_classname: 0x74
--  __TEXT.__objc_methname: 0x3da
-+  __TEXT.__objc_methname: 0x3ca
-   __TEXT.__objc_methtype: 0x16c
--  __TEXT.__unwind_info: 0xa8
-+  __TEXT.__unwind_info: 0xa0
-   __DATA_CONST.__const: 0x40
--  __DATA_CONST.__cfstring: 0x100
-+  __DATA_CONST.__cfstring: 0xc0
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_intobj: 0x18
--  __DATA_CONST.__auth_got: 0xf8
-+  __DATA_CONST.__auth_got: 0xc8
-   __DATA_CONST.__got: 0x48
-   __DATA.__objc_const: 0x3c8
--  __DATA.__objc_selrefs: 0x1c0
-+  __DATA.__objc_selrefs: 0x1b8
-   __DATA.__objc_ivar: 0x8
-   __DATA.__objc_data: 0xa0
-   __DATA.__data: 0x120
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 23
 -  Symbols:   58
 -  CStrings:  122
 +  Functions: 19
 +  Symbols:   52
 +  CStrings:  112
- 
 Symbols:
 - _objc_release_x23
 - _objc_release_x24

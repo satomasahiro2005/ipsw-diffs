@@ -2,46 +2,30 @@
 
 > `/System/Library/Frameworks/CoreTelephony.framework/Support/libCommCenterMCommandDrivers.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21d2fc` | `0x21ca88` | **`-0x874`** |
+| `__TEXT.__const` | `0x26c78` | `0x26b68` | **`-0x110`** |
+| `__AUTH_CONST.__const` | `0x21aa0` | `0x219c8` | **`-0xd8`** |
+| `__TEXT.__oslogstring` | `0x1a967` | `0x1a8ba` | **`-0xad`** |
+| `__TEXT.__gcc_except_tab` | `0x1e55c` | `0x1e4ec` | **`-0x70`** |
+| `__TEXT.__unwind_info` | `0xf520` | `0xf4d8` | **`-0x48`** |
+
+### Other Changes
+
 ```diff
 
 -13482.1.0.0.0
--  __TEXT.__text: 0x21d2fc
 +13487.3.0.0.0
-+  __TEXT.__text: 0x21ca88
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__objc_methlist: 0x1cc
--  __TEXT.__const: 0x26c78
-+  __TEXT.__const: 0x26b68
-   __TEXT.__cstring: 0xd786
--  __TEXT.__gcc_except_tab: 0x1e55c
--  __TEXT.__oslogstring: 0x1a967
--  __TEXT.__unwind_info: 0xf520
-+  __TEXT.__gcc_except_tab: 0x1e4ec
-+  __TEXT.__oslogstring: 0x1a8ba
-+  __TEXT.__unwind_info: 0xf4d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__weak_got: 0x10
-   __DATA_CONST.__objc_selrefs: 0xe8
-   __DATA_CONST.__got: 0x510
--  __AUTH_CONST.__const: 0x21aa0
-+  __AUTH_CONST.__const: 0x219c8
-   __AUTH_CONST.__cfstring: 0x260
-   __AUTH_CONST.__objc_const: 0x798
-   __AUTH_CONST.__weak_auth_got: 0x18
-
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 12656
--  Symbols:   19662
+-  Symbols:   19654
 -  CStrings:  4170
 +  Functions: 12640
-+  Symbols:   19635
++  Symbols:   19627
 +  CStrings:  4166
- 
 Symbols:
 + GCC_except_table406
 + GCC_except_table440

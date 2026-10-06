@@ -2,29 +2,24 @@
 
 > `/System/Library/PrivateFrameworks/SDAPI.framework/SDAPI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x308534` | `0x30881c` | **`+0x2e8`** |
+| `__TEXT.__unwind_info` | `0xa6b8` | `0xa6b0` | **`-0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x22624` | `0x22628` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
- 19.0.0.0.0
--  __TEXT.__text: 0x308534
-+  __TEXT.__text: 0x30881c
-   __TEXT.__const: 0x2e1eb
-   __TEXT.__cstring: 0x17afd
--  __TEXT.__gcc_except_tab: 0x22624
--  __TEXT.__unwind_info: 0xa6b8
-+  __TEXT.__gcc_except_tab: 0x22628
-+  __TEXT.__unwind_info: 0xa6b0
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x7408
-   __DATA_CONST.__weak_got: 0x10
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 8087
 +  Functions: 8086
-   Symbols:   12569
-   CStrings:  3261
- 
 Functions:
 ~ __ZN14EnumParamRangeC2EPK13EnumParamItem : 120 -> 124
 ~ __ZNSt3__115basic_stringbufIwNS_11char_traitsIwEENS_9allocatorIwEEE15__init_buf_ptrsB9fqe220106Ev : 256 -> 260
@@ -198,4 +193,7 @@ Functions:
 ~ __ZN7CollMgr20newTwoLevelCollationEPKctt : 676 -> 680
 ~ __ZNK19EnumGlobalParamBase18getNameForEnumItemEi : 76 -> 80
 ~ __Z18GetNameForEnumItemPK13EnumParamItemi : 76 -> 80
+CStrings:
++ "15:17:07"
+- "18:10:01"
 ```

@@ -2,20 +2,21 @@
 
 > `/System/Library/PrivateFrameworks/RemoteManagement.framework/XPCServices/AccountSubscriber.xpc/AccountSubscriber`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x13a84` | `0x13a80` | **`-0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__const`
 - `__TEXT.__objc_methlist`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
 
-```diff
+### Other Changes
 
- 624.2.3.0.0
--  __TEXT.__text: 0x13a84
-+  __TEXT.__text: 0x13a80
-   __TEXT.__auth_stubs: 0x390
-   __TEXT.__objc_stubs: 0x2100
-   __TEXT.__objc_methlist: 0x86c
+```text
 Functions:
 ~ sub_100008518 : 12 -> 32
 ~ sub_10001433c -> sub_100014350 : 88 -> 92

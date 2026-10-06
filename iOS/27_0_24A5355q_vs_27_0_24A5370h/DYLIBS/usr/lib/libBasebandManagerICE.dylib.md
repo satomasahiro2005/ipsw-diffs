@@ -2,88 +2,37 @@
 
 > `/usr/lib/libBasebandManagerICE.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x271974` | `0x27383c` | **`+0x1ec8`** |
+| `__TEXT.__gcc_except_tab` | `0x39608` | `0x398f4` | **`+0x2ec`** |
+| `__TEXT.__oslogstring` | `0xcdbf` | `0xcf5d` | **`+0x19e`** |
+| `__AUTH_CONST.__const` | `0x10e08` | `0x10ec8` | **`+0xc0`** |
+| `__TEXT.__const` | `0x13c60` | `0x13d00` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0xabe0` | `0xac58` | **`+0x78`** |
+| `__DATA_CONST.__got` | `0x22d0` | `0x2300` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x85ea` | `0x8612` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0xb20` | `0xb40` | **`+0x20`** |
+| `__DATA_DIRTY.__bss` | `0x16c2` | `0x16d2` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1b58` | `0x1b60` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x680` | `0x688` | **`+0x8`** |
+| `__TEXT.__init_offsets` | `0x178` | `0x17c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1563.0.0.0.0
--  __TEXT.__text: 0x271974 sha256:2f7392107c209dde0a95d5d0cd8c85336c7f5e60a4b2a19968011904d4bec2f6
--  __TEXT.__init_offsets: 0x178 sha256:dfb2c58923bf03e7401ae2dbe52665e1e897b6e8e812143faa36c5dfdaa49ef0
--  __TEXT.__objc_methlist: 0x52c sha256:533635902cf8c9d5894f1346c11fed4b586dbe8444e95e51a4e85e149753fef8
--  __TEXT.__const: 0x13c60 sha256:b435665061d25fcf7c861a8dd2cf8a305ed1f992905fc6cf8f32558482faefd8
 +1570.0.0.0.0
-+  __TEXT.__text: 0x27383c sha256:c5992c45c72a69d721a3a5c861dac6200ebb2b9b913b305e83bcfa1ef4e26537
-+  __TEXT.__init_offsets: 0x17c sha256:6d91602b4f7525d7cbc24ca85139381fe3dbb41da22ec1d29f51b17adf1e9d35
-+  __TEXT.__objc_methlist: 0x52c sha256:0740e2ae151804d66e80ea20e24aa3fe0c39bf4e2f93c7cbd7113bbf6838e09b
-+  __TEXT.__const: 0x13d00 sha256:a5e0ff303667cf4631f676c01298870379bd361061ea9903a1e90c508abfc126
-   __TEXT.__dlopen_cstrs: 0x52 sha256:29acd7219694fca78f7574f631520e278537bb87ff4b91897332deb41b178b75
--  __TEXT.__gcc_except_tab: 0x39608 sha256:b1af0432574a3f1b3264773b5cf36540e1922b093b1aa6427abaf4e70a62a5e5
--  __TEXT.__oslogstring: 0xcdbf sha256:2d8e5a5c56bd4804f1ae07b23e98c33750ae03b77f50503f1c97619eec730ed4
--  __TEXT.__cstring: 0x85ea sha256:9862b78e13ef097dd7f8bb93e87f11e1d2f37c578f0acbacc4bc2c24d2e8ca27
--  __TEXT.__unwind_info: 0xabe0 sha256:012fae29ab0cfffbc82a6b594ffde287b3e48316fb06d45d8937da893b124175
-+  __TEXT.__gcc_except_tab: 0x398f4 sha256:00bfb0727684e72ea20a98abfd32bcf36b11bf0e264e87444bec2322a4a7748a
-+  __TEXT.__oslogstring: 0xcf5d sha256:042d24196e1e53c1f9ccd66830544180307b1c28b6aae2dccbab9c24a6117bd6
-+  __TEXT.__cstring: 0x8612 sha256:acbc582552fcaf6b55990acbd2f948d6b9c8fe51801f7e7da551b3da23c0cd70
-+  __TEXT.__unwind_info: 0xac58 sha256:1cf8b56899c1ef7c7f397b54b2f0376f6f788c2f5ad7a041968f727949c58dd8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1f58 sha256:c5f2d6c42f7b072f38f5115f40bd5434de195a21e9ffc292f7368c70b0910842
--  __DATA_CONST.__objc_classlist: 0x38 sha256:300020c05dfaaaadba0b03e9d9e16e8c0c8a337d8d66e9ff561e4dc0f779eed8
--  __DATA_CONST.__objc_protolist: 0x30 sha256:a22f444db52ee131c93a0174ac1657bebabfa74318ff822bde93eea17d4fae02
-+  __DATA_CONST.__const: 0x1f58 sha256:7f75aba1214277d8ecb39ea1e7e5f4e9fba6179d3d5117e82b8a12b0e2ef7705
-+  __DATA_CONST.__objc_classlist: 0x38 sha256:bdb7cb93d74c4e39766029387ee3b1c682bd12ba0b80f12ad421f3f999b914db
-+  __DATA_CONST.__objc_protolist: 0x30 sha256:3e237fae91a2c10bdc4c607bf628f70eaa34e0cccc4a7fc6b87649af2ef03cd5
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x168 sha256:c149277e24cb05c35d55c6c9a5f2d270e8a29bfa946eff182a144420bd7f3294
--  __DATA_CONST.__objc_selrefs: 0x680 sha256:9992e9a1b4341aa58de42712e6a6a5e884d3a7b6c2dcc6c24d3ac0897312c0ae
--  __DATA_CONST.__objc_superrefs: 0x28 sha256:f083c1a7c0f6ddadfcf510ae13bc83e9fd2ec5ff751d3e7af9b858594af46de9
--  __DATA_CONST.__got: 0x22d0 sha256:c6ea8d1e07bd1330302b87d8748ef13ec87ed72f0e916da32e18740fe8d7d495
--  __AUTH_CONST.__const: 0x10e08 sha256:b8c14fa1c9e0f70206379850cbb50eff2007019b19977382828a9303ae0d6b12
--  __AUTH_CONST.__cfstring: 0xb20 sha256:e8ffdcd2d863e7ee07727628eb30b7f132446f79bd0973d33d69584f0d63d717
--  __AUTH_CONST.__objc_const: 0xa68 sha256:b9d004660c1c23796a2d59515a4728a1397756619238c97161c615b503f48753
--  __AUTH_CONST.__weak_auth_got: 0x20 sha256:52c9b9f7054537bcbd1b0015a017ad87fc2d84bd7ab268479e6b5286366dc849
--  __AUTH_CONST.__objc_intobj: 0x18 sha256:8ff3e5f39b0f5e3fe1130806e139cdc6b851ed492faf1af3f953e3e1b787cf18
--  __AUTH_CONST.__auth_got: 0x1b58 sha256:1a928a483e78f37d8bd8909a89851c13902d4bf1fad56df8d67cbc8cd1321519
--  __AUTH.__objc_data: 0x140 sha256:16390e5f41aea96f7b48e045d399498c65770739107f69e57aa2489960932628
-+  __DATA_CONST.__weak_got: 0x168 sha256:4212fdaf1c33bee20c7e55d6e13156775d4f32c0b9c957aaa5cb439c510be83c
-+  __DATA_CONST.__objc_selrefs: 0x688 sha256:3a9dd1031a84ee6930d7b037af927a4fc5087c5ed07e14e2892b288866a53285
-+  __DATA_CONST.__objc_superrefs: 0x28 sha256:376f4ca1dcb1daf1c86de1efc998a82aceb7878a90b0232e14af0d9f1260b9d3
-+  __DATA_CONST.__got: 0x2300 sha256:91cce6396d0497ee20686deb7cfbd68e9ee4c7ae6d70e86ded9c079e05f5c5b9
-+  __AUTH_CONST.__const: 0x10ec8 sha256:c5f7699cfd2a87348d28c2217a65b1ca4b2417d34223be620f4d8288cd5da950
-+  __AUTH_CONST.__cfstring: 0xb40 sha256:ab8df62cec9933616d8b18cfc31352a71bc991da12adf2fd820ce6a7ecb55292
-+  __AUTH_CONST.__objc_const: 0xa68 sha256:ac91d66033afd0202de4e830a9203ef8362984b533237f1693bde3fe3f1c4255
-+  __AUTH_CONST.__weak_auth_got: 0x20 sha256:9a19875ee94a4545924efc5e43b8a7cc9a6e9ae6f74f8f241796dbaf9c719f6b
-+  __AUTH_CONST.__objc_intobj: 0x18 sha256:0f95fd31e7ddb2e75cba7b97efbc2b1875f394ecbcc0191bb6fd9365ef78b364
-+  __AUTH_CONST.__auth_got: 0x1b60 sha256:4306acc3609b02b9b1912b4ef1ed8fd92ff85d9ccdd258d5f16877d90c2c61d5
-+  __AUTH.__objc_data: 0x140 sha256:46663838cbd90bd504179812835ec0b7555929825a7a46868eca1bc2a4058466
-   __DATA.__objc_ivar: 0x4c sha256:9c63227e84aaae70cc915cd664d4c100d676048f50ceb0b11578fbe22ce84283
--  __DATA.__data: 0x58c sha256:e699abb2490f74805e399812c75fabcb828adcaf1f30e9ac596dd83161a44bbd
-+  __DATA.__data: 0x58c sha256:a04581897e978d83af6942724ec0ed5836c3c641c571d4757750eeb4cd996b91
-   __DATA.__bss: 0x10 sha256:374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb
-   __DATA.__common: 0x49 sha256:9c56f48ae9bafd205262034bfcc2232b2c63348cb723d681ec39f13409f990cc
--  __DATA_DIRTY.__objc_data: 0xf0 sha256:68929a9368c556a2afd29c7d3adb16cb2fe0a2340497e2bb4c124fe6fd00d409
-+  __DATA_DIRTY.__objc_data: 0xf0 sha256:d51a68e9d06a7863d772a5da99fdf5da260c02b8cb6b570437cb7767e1e1bba1
-   __DATA_DIRTY.__data: 0x638 sha256:aeed4fd7650b14af6d127d4e193d4c3fc6e2de99827561ef68837070f2368300
-   __DATA_DIRTY.__common: 0xd8 sha256:a5645e7a3fa0866cde8842c4dab96567507c3d1a3c028b816bc63f6966367b70
--  __DATA_DIRTY.__bss: 0x16c2 sha256:2ecd5c34487a70634a4c607f2c6f2cc2ae78826de5784727deda5831daf1a027
-+  __DATA_DIRTY.__bss: 0x16d2 sha256:09fde297a203b964b419768d3fdd612acc7a389abaeb39d237225bf0f5ce5259
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CallKit.framework/CallKit
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libprotobuf-lite.dylib
-   - /usr/lib/libprotobuf.dylib
--  UUID: FD90FAB3-F6C9-3770-8956-C9487E8046A1
 -  Functions: 6806
--  Symbols:   20619
--  CStrings:  2677
-+  UUID: 9DDE16F8-C59D-3FB0-87FF-6928A7D28DBD
+-  Symbols:   11755
+-  CStrings:  2586
 +  Functions: 6828
-+  Symbols:   20679
-+  CStrings:  2688
- 
++  Symbols:   11790
++  CStrings:  2595
 Symbols:
 + GCC_except_table264
 + GCC_except_table286
@@ -1090,16 +1039,6 @@ Symbols:
 + __ZZNSt3__18__format26__handle_replacement_fieldB9fqe220106IPKcNS_26basic_format_parse_contextIcEENS_20basic_format_contextINS_20back_insert_iteratorINS0_15__output_bufferIcEEEEcEEEET_SC_SC_RT0_RT1_ENKUlSC_E_clIoEEDaSC_
 + __ZZNSt3__18__format26__handle_replacement_fieldB9fqe220106IPKcNS_26basic_format_parse_contextIcEENS_20basic_format_contextINS_20back_insert_iteratorINS0_15__output_bufferIcEEEEcEEEET_SC_SC_RT0_RT1_ENKUlSC_E_clIxEEDaSC_
 + __ZZNSt3__18__format26__handle_replacement_fieldB9fqe220106IPKcNS_26basic_format_parse_contextIcEENS_20basic_format_contextINS_20back_insert_iteratorINS0_15__output_bufferIcEEEEcEEEET_SC_SC_RT0_RT1_ENKUlSC_E_clIyEEDaSC_
-+ ____ZN9SARModule20initializeAudio_syncEv_block_invoke.35
-+ ____ZN9SARModule27setupTxIndicationWorkaroundEv_block_invoke.79
-+ ___block_descriptor_tmp.150
-+ ___block_descriptor_tmp.82
-+ ___cxx_global_var_init.100
-+ ___cxx_global_var_init.101
-+ ___cxx_global_var_init.102
-+ ___cxx_global_var_init.103
-+ ___cxx_global_var_init.99
-+ _objc_msgSend$stringByReplacingOccurrencesOfString:withString:
 - GCC_except_table272
 - GCC_except_table291
 - GCC_except_table294
@@ -2070,12 +2009,6 @@ Symbols:
 - __ZZNSt3__18__format26__handle_replacement_fieldB9fqe220100IPKcNS_26basic_format_parse_contextIcEENS_20basic_format_contextINS_20back_insert_iteratorINS0_15__output_bufferIcEEEEcEEEET_SC_SC_RT0_RT1_ENKUlSC_E_clIoEEDaSC_
 - __ZZNSt3__18__format26__handle_replacement_fieldB9fqe220100IPKcNS_26basic_format_parse_contextIcEENS_20basic_format_contextINS_20back_insert_iteratorINS0_15__output_bufferIcEEEEcEEEET_SC_SC_RT0_RT1_ENKUlSC_E_clIxEEDaSC_
 - __ZZNSt3__18__format26__handle_replacement_fieldB9fqe220100IPKcNS_26basic_format_parse_contextIcEENS_20basic_format_contextINS_20back_insert_iteratorINS0_15__output_bufferIcEEEEcEEEET_SC_SC_RT0_RT1_ENKUlSC_E_clIyEEDaSC_
-- ____ZN9SARModule27setupTxIndicationWorkaroundEv_block_invoke.71
-- ___block_descriptor_tmp.61
-- ___cxx_global_var_init.95
-- ___cxx_global_var_init.96
-- ___cxx_global_var_init.97
-- ___cxx_global_var_init.98
 CStrings:
 + "AppleBasebandManager-AppleBasebandServices_Manager-1570"
 + "AppleBasebandServices_Manager-1570"
@@ -2090,5 +2023,4 @@ CStrings:
 + "notificationsupport::localization"
 - "AppleBasebandManager-AppleBasebandServices_Manager-1563"
 - "AppleBasebandServices_Manager-1563"
-
 ```

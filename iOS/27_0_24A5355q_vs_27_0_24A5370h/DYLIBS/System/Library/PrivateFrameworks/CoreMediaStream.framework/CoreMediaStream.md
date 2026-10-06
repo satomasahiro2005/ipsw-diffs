@@ -2,82 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/CoreMediaStream.framework/CoreMediaStream`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcbad0` | `0xcd34c` | **`+0x187c`** |
+| `__AUTH_CONST.__objc_const` | `0x97d8` | `0x9a58` | **`+0x280`** |
+| `__TEXT.__objc_methlist` | `0x8110` | `0x82e0` | **`+0x1d0`** |
+| `__AUTH_CONST.__cfstring` | `0x87c0` | `0x8880` | **`+0xc0`** |
+| `__DATA_CONST.__const` | `0x26a8` | `0x2750` | **`+0xa8`** |
+| `__TEXT.__cstring` | `0xa5f7` | `0xa658` | **`+0x61`** |
+| `__TEXT.__oslogstring` | `0xef75` | `0xefd1` | **`+0x5c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4150` | `0x4198` | **`+0x48`** |
+| `__DATA.__objc_ivar` | `0x6ec` | `0x714` | **`+0x28`** |
+| `__TEXT.__const` | `0x238` | `0x248` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x2d90` | `0x2d80` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -910.14.107.0.0
--  __TEXT.__text: 0xcbad0 sha256:50bca157c6f9717252fe0264c5e35a1a5dc660d885f0d033769302efbe6cfd61
--  __TEXT.__objc_methlist: 0x8110 sha256:73d151065a5ff4434d38b7570a28dbf7cf3aea35d2c1abffdf5ce4e44aa61468
--  __TEXT.__const: 0x238 sha256:ecdf1ef0af4a34bd8e0717a2c17bfb71998e73280c05a1718fb1f1263afdea54
--  __TEXT.__cstring: 0xa5f7 sha256:14892a6225ec24ae8e5961db655f8dac6c3030ea5dbce94ae3f405309fa9b503
 +910.21.101.0.0
-+  __TEXT.__text: 0xcd34c sha256:6357865802f6ed177bab392f53203aec6c329f0e030dda5571350ae8504313de
-+  __TEXT.__objc_methlist: 0x82e0 sha256:2e3d3ae35ba281fe53f851d6f94df62950012fb40fc8cf9ad30b59e577dbc6cd
-+  __TEXT.__const: 0x248 sha256:c961fb18f1be41cd10784e1ec647cf684ca3d02968ffb79aac2cb7cf5116f072
-+  __TEXT.__cstring: 0xa658 sha256:f8db8f577bb482efd112c6e7f226dc1e97175deae922b11c524d590a60793901
-   __TEXT.__dlopen_cstrs: 0x47 sha256:fd81d202ebaefb34795256c739fe6281ade11ec2a5ce25ba0e505230baa710de
--  __TEXT.__gcc_except_tab: 0x2748 sha256:44045dcf79f702375b4f6aa2b82e85656a279c21b7b19d8368785afaa8f30d72
--  __TEXT.__oslogstring: 0xef75 sha256:dc6f3fc694bd5f0bb5d35ebcf435c7bfe62e1ba425aac0709172f8f8a80914bf
--  __TEXT.__unwind_info: 0x2d90 sha256:b0bd12e7fb7a2761b442f6bf7541714e86e8f79282b4fb5ba4080b12a1c77346
-+  __TEXT.__gcc_except_tab: 0x2748 sha256:99046d9b98a740482a2d0193951511fde04d55bdfd8c855d7921ce33b0ed69af
-+  __TEXT.__oslogstring: 0xefd1 sha256:cdc8410f2476221dbff609199d8e7f80c6e06b94b78bacbab966cd4f503698e0
-+  __TEXT.__unwind_info: 0x2d80 sha256:f3b099004fec0430b512c3554deaa49d7f1b88579766db517ffad893d8240a71
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x26a8 sha256:9865468f71dfca1acaf965ca6e065a620e1735460f5f535977f080d962e6d40a
--  __DATA_CONST.__objc_classlist: 0x260 sha256:7654eb72fc5c7c76270f5812cbd889514a106d0799fc075e6647897c2bc1c756
--  __DATA_CONST.__objc_catlist: 0x40 sha256:b4939fe6982c81a4448c0fa27430991e8578fa7aa165590b7649c7211703bda8
--  __DATA_CONST.__objc_protolist: 0xe0 sha256:419a7dd5e67fcdb7fdeb80bc888f5213d865420d4acb4e66d00a145cf15b38d7
-+  __DATA_CONST.__const: 0x2750 sha256:a439521994b97d928b409ab4857d09c18384840e2663265772afeae5fb24db16
-+  __DATA_CONST.__objc_classlist: 0x260 sha256:ff68e6157dae1f215c2580765d1aa29c3fde2c39287b5206d16a3590119fdb86
-+  __DATA_CONST.__objc_catlist: 0x40 sha256:f8cef4dc67f00ba94b7976606beb71a02e77cda44cfc15aeb869551f084e9391
-+  __DATA_CONST.__objc_protolist: 0xe0 sha256:cc5e51ecc2a44ea26e4bc3ae7edad5dc23b075c0c09e3680eee6a8d20ced9281
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__objc_selrefs: 0x4150 sha256:4530f53eede464cceba66456956ae094345afc8ba0d838f277d13f3d1f608ec6
--  __DATA_CONST.__objc_protorefs: 0x18 sha256:7b2c0d7c8f1136f8842765d963a7e6b083a30611df4328aae5836ead2731d21e
--  __DATA_CONST.__objc_superrefs: 0x220 sha256:6c0385c474cb0d4b19232124be9322eb37f5cdc6867fc909a82239d63bc6fa2e
--  __DATA_CONST.__got: 0x500 sha256:a4b1fe730b4b768f61e21b00234f1287eb1f074d0509ccaad9201da0be275ed5
--  __AUTH_CONST.__const: 0x890 sha256:f61e14171beedf829fbbc93b09b109e92e7cde56fadefe51a06637b1caa8dab0
--  __AUTH_CONST.__cfstring: 0x87c0 sha256:47c9f6435814247f15bbda553691036a5f1177f3286a48e59dd47db1a386df07
--  __AUTH_CONST.__objc_const: 0x97d8 sha256:daa649f2c06ded7bd2009cb03e2952194bc27822ce6dd9914b58c1fd014543cf
--  __AUTH_CONST.__objc_intobj: 0x48 sha256:d617d9657fae7d045800ed6f644696710ae4400f858433b3fa55f7b530fcb96e
-+  __DATA_CONST.__objc_selrefs: 0x4198 sha256:8c72a7e99c88063b2abb4753281dcecb55703aa5f457ac11ea123f41d936a539
-+  __DATA_CONST.__objc_protorefs: 0x18 sha256:b1bd6183b816d065a39d53724cf80c401081c2dd3c05ae19b3549b9090fde5b4
-+  __DATA_CONST.__objc_superrefs: 0x220 sha256:a5a9d86e9f87ad4bce37afd65bb2234c32d4a511129fdf65de2443684afd026f
-+  __DATA_CONST.__got: 0x500 sha256:8a38968f99e45650f5d5d13d106ebc9b3510083a6595fbaf9141fc7ebe713085
-+  __AUTH_CONST.__const: 0x890 sha256:6d2f5e9aced56fd5d205efb5ceb5f4622fccf10594ff9008fea014338b900fe9
-+  __AUTH_CONST.__cfstring: 0x8880 sha256:414965bd77f318960f6bb5d2b3b55affffdd694833e8470749bc95cb401bd753
-+  __AUTH_CONST.__objc_const: 0x9a58 sha256:d15fb566f1ea8c9c4da1c4c2075d9449d95b2a95d528cfc672955357d7b57f47
-+  __AUTH_CONST.__objc_intobj: 0x48 sha256:01da3f8eb23e9d87abbb6c8631a05e07b35ce1322c74047f3a1ead8074982339
-   __AUTH_CONST.__auth_got: 0x7f8 sha256:2c2bc349e0bcde11b38485c903432d1ddaaf0b4a89fa70444a3a3da1e85d5db0
--  __AUTH.__objc_data: 0x50 sha256:fafb18f1902e53f9def7cbae56b5ff3dd3ee4dc0e61a82d0d1fe1d20ce84cdf3
--  __DATA.__objc_ivar: 0x6ec sha256:35ebf872da4bbf6b56c026208ae539b5020829af9616ffdac8953709dcab414d
--  __DATA.__data: 0xaa0 sha256:044a16aca9b2b6f9a7d8e41295f77a4804d94ae8aaa70936e0f956bbf065a608
-+  __AUTH.__objc_data: 0x50 sha256:19cdeee2127f1329afb402b7bbd012336faecdca1f9e491d424cf564196ea579
-+  __DATA.__objc_ivar: 0x714 sha256:c1b198a252ad79b998214521f6a3a0cfadaf2417dd294eaa845ba8fb4ebc7788
-+  __DATA.__data: 0xaa0 sha256:675407f776b42d356bdd9bd72292c6630ebc766ccd7d4580c3f4be7605abb7d4
-   __DATA.__bss: 0x228 sha256:0345bffb28f80f4d0ded1a2af09a337b18ab3a80c68205bc8321a6ad4d409500
-   __DATA.__common: 0x8 sha256:af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc
--  __DATA_DIRTY.__objc_data: 0x1770 sha256:87c43a509ede5193ec6203bacd59037b8991d7c3398efeed3dd18625f39442b2
-+  __DATA_DIRTY.__objc_data: 0x1770 sha256:80c698cefc7d29b43817d3d4f47bc1250ce7ab83ff794e61e1edea8a3337ca20
-   __DATA_DIRTY.__bss: 0x1b0 sha256:1fe2373734955e60c172999142934b52e69ba7ab9039b3c18ea54082ba32afcd
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
--  UUID: 26B6D377-B5C0-3DEC-8FDE-D67CE829537A
 -  Functions: 3597
--  Symbols:   11237
--  CStrings:  3387
-+  UUID: B31D46BA-F930-340D-B501-E88FD89C793A
+-  Symbols:   5772
+-  CStrings:  2301
 +  Functions: 3636
-+  Symbols:   11330
-+  CStrings:  3400
- 
++  Symbols:   5821
++  CStrings:  2308
 Symbols:
 + +[MSProtocolUtilities _errorForSCMigrationStatusCode:migrationSubstate:cloudDbErrorName:]
 + -[CancelSharedCollectionsMigrationResponse .cxx_destruct]
@@ -311,104 +264,6 @@ Symbols:
 + OBJC_IVAR_$_InitiateSharedCollectionsMigrationResponse._migrationSubstate
 + OBJC_IVAR_$_UnarchiveSharedCollectionsMigrationResponse._cloudDbErrorName
 + OBJC_IVAR_$_UnarchiveSharedCollectionsMigrationResponse._migrationSubstate
-+ ___122+[MSProtocolUtilities initiateMigrationToCPLForAlbumWithGUID:sharedAlbumTitle:personID:isSilentMigration:completionBlock:]_block_invoke.96
-+ ___Block_byref_object_copy_.2498
-+ ___Block_byref_object_copy_.4475
-+ ___Block_byref_object_copy_.5552
-+ ___Block_byref_object_copy_.5873
-+ ___Block_byref_object_copy_.6305
-+ ___Block_byref_object_copy_.6457
-+ ___Block_byref_object_copy_.6708
-+ ___Block_byref_object_copy_.6860
-+ ___Block_byref_object_copy_.8089
-+ ___Block_byref_object_copy_.8227
-+ ___Block_byref_object_copy_.8926
-+ ___Block_byref_object_dispose_.2499
-+ ___Block_byref_object_dispose_.4476
-+ ___Block_byref_object_dispose_.5553
-+ ___Block_byref_object_dispose_.5874
-+ ___Block_byref_object_dispose_.6306
-+ ___Block_byref_object_dispose_.6458
-+ ___Block_byref_object_dispose_.6709
-+ ___Block_byref_object_dispose_.6861
-+ ___Block_byref_object_dispose_.8090
-+ ___Block_byref_object_dispose_.8228
-+ ___Block_byref_object_dispose_.8927
-+ ___block_literal_global.114.9510
-+ ___block_literal_global.143
-+ ___block_literal_global.148
-+ ___block_literal_global.17.6863
-+ ___block_literal_global.2662
-+ ___block_literal_global.27.7323
-+ ___block_literal_global.32.7318
-+ ___block_literal_global.37.7311
-+ ___block_literal_global.5660
-+ ___block_literal_global.5881
-+ ___block_literal_global.6335
-+ ___block_literal_global.6870
-+ ___block_literal_global.7001
-+ ___block_literal_global.7129
-+ ___block_literal_global.7328
-+ ___block_literal_global.7624
-+ ___block_literal_global.7881
-+ ___block_literal_global.8488
-+ ___block_literal_global.9273
-+ ___block_literal_global.9506
-+ ___masterManifest.1451
-+ __canceledError.error.7312
-+ __canceledError.onceToken.7310
-+ __commitMasterManifest.3812
-+ __createBadFieldError.3976
-+ __didFailAuthentication.1863
-+ __didFailAuthentication.2807
-+ __didFailAuthentication.2820
-+ __didFailAuthentication.3040
-+ __didFailAuthentication.3228
-+ __didFailAuthentication.3969
-+ __didFinish.1864
-+ __didFinish.2808
-+ __didFinish.2821
-+ __didFinish.3041
-+ __didFinish.3229
-+ __didFinish.3970
-+ __didReceiveRetryAfter.1862
-+ __didReceiveRetryAfter.3227
-+ __didReceiveRetryAfter.3968
-+ __didReceiveServerSideConfigurationVersion.1822
-+ __didReceiveServerSideConfigurationVersion.1861
-+ __didReceiveServerSideConfigurationVersion.3039
-+ __didReceiveServerSideConfigurationVersion.3226
-+ __didReceiveServerSideConfigurationVersion.3967
-+ __getItemDoneCallback.6797
-+ __getItemProgressCallback.6798
-+ __masterNextActivityDateByPersonID.3837
-+ __nonNumericNonSpaceCharacterSet.charSet.7626
-+ __pointerComparisonCallback.6507
-+ __protocolDidFailAuthentication.3120
-+ __protocolDidFailAuthentication.3266
-+ __protocolDidFailAuthentication.3923
-+ __protocolDidFinish.3121
-+ __protocolDidFinish.3267
-+ __protocolDidFinish.3924
-+ __protocolDidReceiveRetryAfterDate.1300
-+ __protocolDidReceiveRetryAfterDate.3265
-+ __protocolDidReceiveRetryAfterDate.3922
-+ __protocolDidReceiveServerSideConfigurationVersion.3119
-+ __protocolDidReceiveServerSideConfigurationVersion.3264
-+ __protocolDidReceiveServerSideConfigurationVersion.3921
-+ __putItemDoneCallback.6795
-+ __putItemProgressCallback.6796
-+ __requestCompletedCallback.6794
-+ __retryAfterDateFormatter.df.7628
-+ __retryAfterDateFormatter.once.7627
-+ _objc_msgSend$_errorForSCMigrationStatusCode:migrationSubstate:cloudDbErrorName:
-+ _objc_msgSend$cloudDbErrorName
-+ _objc_msgSend$containsString:
-+ _objc_msgSend$handleWithPhoneNumber:
-+ _objc_msgSend$migrationSubstate
-+ _objc_msgSend$setArchivedAlbumName:
-+ _objc_msgSend$setCloudDbErrorName:
-+ _objc_msgSend$updateOwnerReputationScoreForAlbum:withAddress:
 - +[MSProtocolUtilities _errorForSCMigrationStatusCode:]
 - -[InitiateSharedCollectionsMigrationRequest archiveTitle]
 - -[InitiateSharedCollectionsMigrationRequest hasArchiveTitle]
@@ -592,99 +447,6 @@ Symbols:
 - GCC_except_table850
 - GCC_except_table938
 - OBJC_IVAR_$_InitiateSharedCollectionsMigrationRequest._archiveTitle
-- ___122+[MSProtocolUtilities initiateMigrationToCPLForAlbumWithGUID:sharedAlbumTitle:personID:isSilentMigration:completionBlock:]_block_invoke.93
-- ___Block_byref_object_copy_.2429
-- ___Block_byref_object_copy_.4413
-- ___Block_byref_object_copy_.5423
-- ___Block_byref_object_copy_.5744
-- ___Block_byref_object_copy_.6143
-- ___Block_byref_object_copy_.6295
-- ___Block_byref_object_copy_.6546
-- ___Block_byref_object_copy_.6698
-- ___Block_byref_object_copy_.7898
-- ___Block_byref_object_copy_.8036
-- ___Block_byref_object_copy_.8732
-- ___Block_byref_object_dispose_.2430
-- ___Block_byref_object_dispose_.4414
-- ___Block_byref_object_dispose_.5424
-- ___Block_byref_object_dispose_.5745
-- ___Block_byref_object_dispose_.6144
-- ___Block_byref_object_dispose_.6296
-- ___Block_byref_object_dispose_.6547
-- ___Block_byref_object_dispose_.6699
-- ___Block_byref_object_dispose_.7899
-- ___Block_byref_object_dispose_.8037
-- ___Block_byref_object_dispose_.8733
-- ___block_literal_global.114.9315
-- ___block_literal_global.140
-- ___block_literal_global.145
-- ___block_literal_global.17.6701
-- ___block_literal_global.2597
-- ___block_literal_global.27.7161
-- ___block_literal_global.32.7156
-- ___block_literal_global.37.7149
-- ___block_literal_global.5531
-- ___block_literal_global.5752
-- ___block_literal_global.6173
-- ___block_literal_global.6708
-- ___block_literal_global.6839
-- ___block_literal_global.6967
-- ___block_literal_global.7166
-- ___block_literal_global.7433
-- ___block_literal_global.7690
-- ___block_literal_global.8297
-- ___block_literal_global.9079
-- ___block_literal_global.9311
-- ___masterManifest.1390
-- __canceledError.error.7150
-- __canceledError.onceToken.7148
-- __commitMasterManifest.3746
-- __createBadFieldError.3910
-- __didFailAuthentication.1802
-- __didFailAuthentication.2742
-- __didFailAuthentication.2755
-- __didFailAuthentication.2975
-- __didFailAuthentication.3163
-- __didFailAuthentication.3903
-- __didFinish.1803
-- __didFinish.2743
-- __didFinish.2756
-- __didFinish.2976
-- __didFinish.3164
-- __didFinish.3904
-- __didReceiveRetryAfter.1801
-- __didReceiveRetryAfter.3162
-- __didReceiveRetryAfter.3902
-- __didReceiveServerSideConfigurationVersion.1761
-- __didReceiveServerSideConfigurationVersion.1800
-- __didReceiveServerSideConfigurationVersion.2974
-- __didReceiveServerSideConfigurationVersion.3161
-- __didReceiveServerSideConfigurationVersion.3901
-- __getItemDoneCallback.6635
-- __getItemProgressCallback.6636
-- __masterNextActivityDateByPersonID.3771
-- __nonNumericNonSpaceCharacterSet.charSet.7435
-- __pointerComparisonCallback.6345
-- __protocolDidFailAuthentication.3055
-- __protocolDidFailAuthentication.3201
-- __protocolDidFailAuthentication.3857
-- __protocolDidFinish.3056
-- __protocolDidFinish.3202
-- __protocolDidFinish.3858
-- __protocolDidReceiveRetryAfterDate.1245
-- __protocolDidReceiveRetryAfterDate.3200
-- __protocolDidReceiveRetryAfterDate.3856
-- __protocolDidReceiveServerSideConfigurationVersion.3054
-- __protocolDidReceiveServerSideConfigurationVersion.3199
-- __protocolDidReceiveServerSideConfigurationVersion.3855
-- __putItemDoneCallback.6633
-- __putItemProgressCallback.6634
-- __requestCompletedCallback.6632
-- __retryAfterDateFormatter.df.7437
-- __retryAfterDateFormatter.once.7436
-- _objc_msgSend$_errorForSCMigrationStatusCode:
-- _objc_msgSend$setArchiveTitle:
-- _objc_msgSend$updateOwnerReputationScoreForAlbum:
 CStrings:
 + "%{public}@: Unexpected nil album owner address"
 + "(none)"
@@ -697,5 +459,4 @@ CStrings:
 + "migrationSubstate"
 - "%{public}@: Unexpected nil album owner email"
 - "archiveTitle"
-
 ```

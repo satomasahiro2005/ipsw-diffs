@@ -2,65 +2,31 @@
 
 > `/System/Library/Frameworks/WebKit.framework/WebKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__oslogstring` | `0x655fd` | `0x64235` | **`-0x13c8`** |
+| `__TEXT.__cstring` | `0x21c27d` | `0x21bdad` | **`-0x4d0`** |
+| `__TEXT.__text` | `0x1496078` | `0x14964d8` | **`+0x460`** |
+| `__TEXT.__gcc_except_tab` | `0x87930` | `0x8798c` | **`+0x5c`** |
+| `__AUTH_CONST.__const` | `0x70858` | `0x70878` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x565f0` | `0x56600` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xd8d0` | `0xd8d8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -625.1.29.10.3
--  __TEXT.__text: 0x1496078
 +625.1.29.10.25
-+  __TEXT.__text: 0x14964d8
-   __TEXT.__delay_helper: 0xdc
-   __TEXT.__objc_methlist: 0x1b4d8
-   __TEXT.__dlsym_cstr: 0xb7f
-   __TEXT.__getClass_cstr: 0xcbb
-   __TEXT.__const: 0x96c4
--  __TEXT.__gcc_except_tab: 0x87930
--  __TEXT.__cstring: 0x21c27d
-+  __TEXT.__gcc_except_tab: 0x8798c
-+  __TEXT.__cstring: 0x21bdad
-   __TEXT.__swift5_typeref: 0x1bb2
-   __TEXT.__constg_swiftt: 0x1be8
-   __TEXT.__swift5_reflstr: 0xbc8
 
-   __TEXT.__swift_as_ret: 0x174
-   __TEXT.__swift_as_cont: 0x24c
-   __TEXT.__swift5_types2: 0x8
--  __TEXT.__oslogstring: 0x655fd
-+  __TEXT.__oslogstring: 0x64235
-   __TEXT.__ustring: 0xddc
--  __TEXT.__unwind_info: 0x565f0
-+  __TEXT.__unwind_info: 0x56600
-   __TEXT.__eh_frame: 0xa474
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_superrefs: 0xa08
-   __DATA_CONST.__objc_arraydata: 0x660
-   __DATA_CONST.__got: 0x24f0
--  __AUTH_CONST.__const: 0x70858
-+  __AUTH_CONST.__const: 0x70878
-   __AUTH_CONST.__cfstring: 0x13c40
-   __AUTH_CONST.__objc_const: 0x2a8d8
-   __AUTH_CONST.__weak_auth_got: 0x28
-
-   __AUTH_CONST.__objc_dictobj: 0x140
-   __AUTH_CONST.__objc_arrayobj: 0x108
-   __AUTH_CONST.__objc_doubleobj: 0x20
--  __AUTH_CONST.__auth_got: 0xd8d0
-+  __AUTH_CONST.__auth_got: 0xd8d8
-   __AUTH.__objc_data: 0x64a8
-   __AUTH.__data: 0xd30
-   __AUTH.__thread_vars: 0x60
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 76696
--  Symbols:   113777
+-  Symbols:   107797
 -  CStrings:  19600
 +  Functions: 76704
-+  Symbols:   113785
++  Symbols:   107805
 +  CStrings:  19597
- 
 Symbols:
 + GCC_except_table515
 + GCC_except_table532

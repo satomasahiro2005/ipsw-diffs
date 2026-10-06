@@ -2,53 +2,33 @@
 
 > `/System/Library/AccessibilityBundles/ContactsUI.axbundle/ContactsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xce30` | `0xd360` | **`+0x530`** |
+| `__TEXT.__oslogstring` | `0xa` | `0x32f` | **`+0x325`** |
+| `__AUTH_CONST.__cfstring` | `0x33c0` | `0x3440` | **`+0x80`** |
+| `__TEXT.__gcc_except_tab` | `0x2c4` | `0x304` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x2982` | `0x29a8` | **`+0x26`** |
+| `__TEXT.__const` | `0x20` | `0x38` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x778` | `0x788` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3045.0.0.0.0
--  __TEXT.__text: 0xce30
 +3048.0.0.0.0
-+  __TEXT.__text: 0xd360
-   __TEXT.__objc_methlist: 0x18dc
--  __TEXT.__const: 0x20
--  __TEXT.__gcc_except_tab: 0x2c4
--  __TEXT.__cstring: 0x2982
--  __TEXT.__oslogstring: 0xa
-+  __TEXT.__const: 0x38
-+  __TEXT.__gcc_except_tab: 0x304
-+  __TEXT.__cstring: 0x29a8
-+  __TEXT.__oslogstring: 0x32f
-   __TEXT.__unwind_info: 0x570
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__const: 0x3d0
-   __DATA_CONST.__objc_classlist: 0x438
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x778
-+  __DATA_CONST.__objc_selrefs: 0x788
-   __DATA_CONST.__objc_superrefs: 0x180
-   __DATA_CONST.__got: 0x228
-   __AUTH_CONST.__const: 0x1c0
--  __AUTH_CONST.__cfstring: 0x33c0
-+  __AUTH_CONST.__cfstring: 0x3440
-   __AUTH_CONST.__objc_const: 0x4c78
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__data: 0x8
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 474
--  Symbols:   1535
+-  Symbols:   1346
 -  CStrings:  440
-+  Symbols:   1541
++  Symbols:   1350
 +  CStrings:  449
- 
 Symbols:
 + _AXAIWhiteGloveLoggingEnabled
 + _AXLogCommon
 + _NSStringFromClass
-+ _objc_msgSend$rangeOfString:
-+ _objc_msgSend$superclass
 + _objc_release_x28
 Functions:
 ~ -[CNContactListCollectionViewCellAccessibility accessibilityLabel] : 472 -> 880

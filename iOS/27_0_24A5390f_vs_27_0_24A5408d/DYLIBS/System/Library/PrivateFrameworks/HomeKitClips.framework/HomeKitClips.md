@@ -2,103 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/HomeKitClips.framework/HomeKitClips`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x28d168` | `0x29cdd0` | **`+0xfc68`** |
+| `__DATA.__bss` | `0x198b0` | `0x1a930` | **`+0x1080`** |
+| `__TEXT.__const` | `0x134a0` | `0x13d70` | **`+0x8d0`** |
+| `__AUTH_CONST.__const` | `0xb4d0` | `0xbcb0` | **`+0x7e0`** |
+| `__AUTH.__data` | `0x3980` | `0x3d80` | **`+0x400`** |
+| `__TEXT.__swift5_reflstr` | `0x3b06` | `0x3e76` | **`+0x370`** |
+| `__TEXT.__swift5_fieldmd` | `0x4990` | `0x4cb0` | **`+0x320`** |
+| `__TEXT.__oslogstring` | `0x7283` | `0x7553` | **`+0x2d0`** |
+| `__TEXT.__swift5_typeref` | `0x6348` | `0x65ae` | **`+0x266`** |
+| `__TEXT.__swift5_assocty` | `0xa68` | `0xcc0` | **`+0x258`** |
+| `__TEXT.__eh_frame` | `0x16494` | `0x166c4` | **`+0x230`** |
+| `__TEXT.__unwind_info` | `0x7f38` | `0x8158` | **`+0x220`** |
+| `__DATA.__data` | `0x3f6c` | `0x412c` | **`+0x1c0`** |
+| `__TEXT.__constg_swiftt` | `0x4ec4` | `0x5040` | **`+0x17c`** |
+| `__TEXT.__swift5_proto` | `0xd70` | `0xdf8` | **`+0x88`** |
+| `__AUTH_CONST.__auth_got` | `0x1820` | `0x1898` | **`+0x78`** |
+| `__DATA_CONST.__const` | `0x118` | `0x178` | **`+0x60`** |
+| `__DATA_DIRTY.__data` | `0x34c0` | `0x34f0` | **`+0x30`** |
+| `__AUTH_CONST.__objc_const` | `0x2978` | `0x29a0` | **`+0x28`** |
+| `__TEXT.__swift5_types` | `0x594` | `0x5bc` | **`+0x28`** |
+| `__TEXT.__cstring` | `0x5a08` | `0x59e8` | **`-0x20`** |
+| `__DATA.__common` | `0x4e8` | `0x4f0` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xad0` | `0xad8` | **`+0x8`** |
+| `__TEXT.__swift5_capture` | `0x1a34` | `0x1a2c` | **`-0x8`** |
+| `__TEXT.__swift5_protos` | `0x74` | `0x78` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1490.2.0.1.1
--  __TEXT.__text: 0x28d168
 +1493.1.5.1.1
-+  __TEXT.__text: 0x29cdd0
-   __TEXT.__delay_stubs: 0xa00
-   __TEXT.__delay_helper: 0xdd8
-   __TEXT.__objc_methlist: 0x6a4
--  __TEXT.__const: 0x134a0
--  __TEXT.__swift5_typeref: 0x6348
--  __TEXT.__constg_swiftt: 0x4ec4
--  __TEXT.__swift5_fieldmd: 0x4990
--  __TEXT.__swift5_reflstr: 0x3b06
-+  __TEXT.__const: 0x13d70
-+  __TEXT.__swift5_typeref: 0x65ae
-+  __TEXT.__constg_swiftt: 0x5040
-+  __TEXT.__swift5_fieldmd: 0x4cb0
-+  __TEXT.__swift5_reflstr: 0x3e76
-   __TEXT.__swift5_builtin: 0x1a4
--  __TEXT.__swift5_assocty: 0xa68
--  __TEXT.__swift5_proto: 0xd70
--  __TEXT.__swift5_types: 0x594
--  __TEXT.__cstring: 0x5a08
--  __TEXT.__oslogstring: 0x7283
-+  __TEXT.__swift5_assocty: 0xcc0
-+  __TEXT.__swift5_proto: 0xdf8
-+  __TEXT.__swift5_types: 0x5bc
-+  __TEXT.__cstring: 0x59e8
-+  __TEXT.__oslogstring: 0x7553
-   __TEXT.__swift_as_entry: 0x674
-   __TEXT.__swift_as_ret: 0x80c
-   __TEXT.__swift_as_cont: 0xf10
--  __TEXT.__swift5_protos: 0x74
--  __TEXT.__swift5_capture: 0x1a34
-+  __TEXT.__swift5_protos: 0x78
-+  __TEXT.__swift5_capture: 0x1a2c
-   __TEXT.__swift5_mpenum: 0x38
--  __TEXT.__unwind_info: 0x7f38
--  __TEXT.__eh_frame: 0x16494
-+  __TEXT.__unwind_info: 0x8158
-+  __TEXT.__eh_frame: 0x166c4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x118
-+  __DATA_CONST.__const: 0x178
-   __DATA_CONST.__objc_classlist: 0x168
-   __DATA_CONST.__objc_protolist: 0x90
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xad0
-+  __DATA_CONST.__objc_selrefs: 0xad8
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xb4d0
-+  __AUTH_CONST.__const: 0xbcb0
-   __AUTH_CONST.__cfstring: 0x20
--  __AUTH_CONST.__objc_const: 0x2978
--  __AUTH_CONST.__auth_got: 0x1820
-+  __AUTH_CONST.__objc_const: 0x29a0
-+  __AUTH_CONST.__auth_got: 0x1898
-   __AUTH.__objc_data: 0xd8
--  __AUTH.__data: 0x3980
--  __DATA.__data: 0x3f6c
--  __DATA.__bss: 0x198b0
--  __DATA.__common: 0x4e8
-+  __AUTH.__data: 0x3d80
-+  __DATA.__data: 0x412c
-+  __DATA.__bss: 0x1a930
-+  __DATA.__common: 0x4f0
-   __DATA_DIRTY.__objc_data: 0x920
--  __DATA_DIRTY.__data: 0x34c0
-+  __DATA_DIRTY.__data: 0x34f0
-   __DATA_DIRTY.__common: 0xb0
-   __DATA_DIRTY.__bss: 0x800
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /System/Library/PrivateFrameworks/HomeKitFeatures.framework/HomeKitFeatures
-   - /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf
-   - /System/Library/PrivateFrameworks/MediaAnalysis.framework/MediaAnalysis
 +  - /System/Library/PrivateFrameworks/OSEligibility.framework/OSEligibility
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9168
--  Symbols:   3013
+-  Symbols:   2729
 -  CStrings:  1017
 +  Functions: 9366
-+  Symbols:   3086
++  Symbols:   2801
 +  CStrings:  1041
- 
 Symbols:
 + _NSClassFromString
 + __IVARS__TtC12HomeKitClips15CameraDataStore
@@ -144,7 +92,6 @@ Symbols:
 + _associated conformance 12HomeKitClips40CameraSignificantEventFaceClassificationVAA13ModelInstanceAA3KeyAaDP_SY
 + _associated conformance 12HomeKitClips40CameraSignificantEventFaceClassificationVAA13ModelInstanceAA3KeyAaDP_s12CaseIterable
 + _get_witness_table s23AsyncCompactMapSequenceVy12HomeKitClips23MultiCameraCloudStorageO0a9LazyArrayD0Vy_0jF4Code22Ckcode_RecordTransportVSo8CKRecordCGAE4ItemOGSciHPyHC
-+ _objc_msgSend$bundleURL
 + _symbolic $s12HomeKitClips21EligibilityDataSourceP
 + _symbolic 3Key_____Qz 12HomeKitClips13ModelInstanceP
 + _symbolic 3Key______8RawValueSYQZ 12HomeKitClips13ModelInstanceP

@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/SiriEmergencyIntents.framework/SiriEmergencyIntents`
 
-```diff
+### Section Size Changes
 
- 3600.12.16.0.0
--  __TEXT.__text: 0x12998
-+  __TEXT.__text: 0x129a8
-   __TEXT.__const: 0x13f8
-   __TEXT.__cstring: 0xf34
-   __TEXT.__swift5_typeref: 0x368
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x12998` | `0x129a8` | **`+0x10`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2a5b109a0 -> sub_2a68c69a0 : 6372 -> 6380
-~ sub_2a5b12374 -> sub_2a68c837c : 5476 -> 5484
+~ sub_2a5a069a0 -> sub_2a67b89a0 : 6372 -> 6380
+~ sub_2a5a08374 -> sub_2a67ba37c : 5476 -> 5484
 ```

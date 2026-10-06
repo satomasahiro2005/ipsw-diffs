@@ -2,19 +2,13 @@
 
 > `/System/Library/PrivateFrameworks/CMCapture.framework/BWVideoPIPOverlayNodeCoreImageArchive_bin.metallib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__compute` | `0xd900` | `0xda90` | **`+0x190`** |
+| `__TEXT.__metallib` | `0x193bf0` | `0x193d70` | **`+0x180`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__descriptor`
-
-```diff
-
-   __TEXT.__reflection: 0x1e90
--  __TEXT.__compute: 0xd4c0
-+  __TEXT.__compute: 0xd660
-   __TEXT.__descriptor: 0x8b0
--  __TEXT.__metallib: 0x193bf0
-+  __TEXT.__metallib: 0x193d70
-   Functions: 0
-   Symbols:   0
-   CStrings:  0
-```

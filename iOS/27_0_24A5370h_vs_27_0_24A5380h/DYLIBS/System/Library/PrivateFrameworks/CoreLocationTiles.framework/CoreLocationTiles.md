@@ -2,50 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/CoreLocationTiles.framework/CoreLocationTiles`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2b20` | `0x2c08` | **`+0xe8`** |
+| `__DATA_CONST.__const` | `0xa0` | `0xc0` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x224` | `0x218` | **`-0xc`** |
+| `__TEXT.__unwind_info` | `0x1f0` | `0x1e8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2b20
-+  __TEXT.__text: 0x2c08
-   __TEXT.__objc_methlist: 0x11c
-   __TEXT.__const: 0xc9
-   __TEXT.__cstring: 0x484
-   __TEXT.__oslogstring: 0xa73
--  __TEXT.__gcc_except_tab: 0x224
--  __TEXT.__unwind_info: 0x1f0
-+  __TEXT.__gcc_except_tab: 0x218
-+  __TEXT.__unwind_info: 0x1e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xa0
-+  __DATA_CONST.__const: 0xc0
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
+-3169.4.0.0.0
++3176.0.0.0.0
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 62
--  Symbols:   633
+-  Symbols:   487
 +  Functions: 61
-+  Symbols:   629
-   CStrings:  84
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   484
 Symbols:
 + GCC_except_table27
 + GCC_except_table31
@@ -94,5 +70,4 @@ Symbols:
 - __ZSt9terminatev
 - ___clang_call_terminate
 - ___cxa_begin_catch
-
 ```

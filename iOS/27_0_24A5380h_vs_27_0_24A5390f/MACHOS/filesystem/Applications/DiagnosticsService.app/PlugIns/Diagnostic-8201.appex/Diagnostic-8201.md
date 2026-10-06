@@ -2,77 +2,52 @@
 
 > `/Applications/DiagnosticsService.app/PlugIns/Diagnostic-8201.appex/Diagnostic-8201`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x223e0` | `0x24494` | **`+0x20b4`** |
+| `__DATA_CONST.__cfstring` | `0x3d60` | `0x4aa0` | **`+0xd40`** |
+| `__TEXT.__cstring` | `0x5cad` | `0x65a3` | **`+0x8f6`** |
+| `__TEXT.__gcc_except_tab` | `0x2660` | `0x2bcc` | **`+0x56c`** |
+| `__TEXT.__ustring` | `—` | `0x14a` | **`+0x14a`** |
+| `__TEXT.__objc_methtype` | `0x65d` | `0x6c9` | **`+0x6c`** |
+| `__TEXT.__objc_stubs` | `0xa80` | `0xae0` | **`+0x60`** |
+| `__TEXT.__objc_methname` | `0xbd8` | `0xc12` | **`+0x3a`** |
+| `__TEXT.__unwind_info` | `0x790` | `0x7c0` | **`+0x30`** |
+| `__DATA.__objc_selrefs` | `0x3b0` | `0x3c8` | **`+0x18`** |
+| `__TEXT.__auth_stubs` | `0x820` | `0x830` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x420` | `0x428` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x350` | `0x358` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_ivar`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
 - `__TEXT.__init_offsets`
 - `__TEXT.__objc_methlist`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA.__objc_const`
-- `__DATA.__objc_ivar`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -58.0.0.0.0
--  __TEXT.__text: 0x223e0
--  __TEXT.__auth_stubs: 0x820
--  __TEXT.__objc_stubs: 0xa80
 +60.0.0.0.0
-+  __TEXT.__text: 0x24494
-+  __TEXT.__auth_stubs: 0x830
-+  __TEXT.__objc_stubs: 0xae0
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__objc_methlist: 0x324
--  __TEXT.__gcc_except_tab: 0x2660
-+  __TEXT.__gcc_except_tab: 0x2bcc
-   __TEXT.__const: 0x248
--  __TEXT.__cstring: 0x5cad
-+  __TEXT.__cstring: 0x65a3
-   __TEXT.__objc_classname: 0x50
--  __TEXT.__objc_methname: 0xbd8
--  __TEXT.__objc_methtype: 0x65d
-+  __TEXT.__objc_methname: 0xc12
-+  __TEXT.__objc_methtype: 0x6c9
-+  __TEXT.__ustring: 0x14a
-   __TEXT.__oslogstring: 0x9c4
--  __TEXT.__unwind_info: 0x790
-+  __TEXT.__unwind_info: 0x7c0
-   __DATA_CONST.__const: 0x578
--  __DATA_CONST.__cfstring: 0x3d60
-+  __DATA_CONST.__cfstring: 0x4aa0
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_intobj: 0xf0
-   __DATA_CONST.__objc_arraydata: 0x30
-   __DATA_CONST.__objc_dictobj: 0x28
--  __DATA_CONST.__auth_got: 0x420
--  __DATA_CONST.__got: 0x350
-+  __DATA_CONST.__auth_got: 0x428
-+  __DATA_CONST.__got: 0x358
-   __DATA.__objc_const: 0x678
--  __DATA.__objc_selrefs: 0x3b0
-+  __DATA.__objc_selrefs: 0x3c8
-   __DATA.__objc_ivar: 0x70
-   __DATA.__objc_data: 0xa0
-   __DATA.__data: 0xc0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 486
 -  Symbols:   417
 -  CStrings:  961
 +  Functions: 490
 +  Symbols:   423
 +  CStrings:  1070
- 
 Symbols:
 + _CFDictionaryGetTypeID
 + _OBJC_CLASS_$_NSProcessInfo

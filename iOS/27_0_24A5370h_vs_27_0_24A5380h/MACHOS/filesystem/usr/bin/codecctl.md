@@ -2,26 +2,27 @@
 
 > `/usr/bin/codecctl`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8330` | `0x82cc` | **`-0x64`** |
+| `__TEXT.__unwind_info` | `0x608` | `0x600` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__init_offsets`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x8330
-+  __TEXT.__text: 0x82cc
-   __TEXT.__auth_stubs: 0x620
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__const: 0x7c
-   __TEXT.__gcc_except_tab: 0x6e0
-   __TEXT.__cstring: 0xb7b
--  __TEXT.__unwind_info: 0x608
-+  __TEXT.__unwind_info: 0x600
-   __DATA_CONST.__const: 0x30
-   __DATA_CONST.__cfstring: 0xc0
-   __DATA_CONST.__objc_imageinfo: 0x8
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
+-600.79.0.0.0
++600.80.0.0.0
 Functions:
 ~ sub_1000025b0 : 40 -> 28
 ~ sub_100003e8c -> sub_100003e80 : 84 -> 64
@@ -31,5 +32,4 @@ Functions:
 ~ sub_100005374 -> sub_100005330 : 292 -> 284
 ~ sub_1000075e0 -> sub_100007594 : 40 -> 28
 ~ sub_100007b3c -> sub_100007ae4 : 40 -> 28
-
 ```

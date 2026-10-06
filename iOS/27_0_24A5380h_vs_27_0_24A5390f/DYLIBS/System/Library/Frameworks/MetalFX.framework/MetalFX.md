@@ -2,89 +2,45 @@
 
 > `/System/Library/Frameworks/MetalFX.framework/MetalFX`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__DATA.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x73850` | `0x79560` | **`+0x5d10`** |
+| `__DATA_DIRTY.__objc_data` | `—` | `0xcd0` | **`+0xcd0`** |
+| `__AUTH.__objc_data` | `0xcd0` | `0xa0` | **`-0xc30`** |
+| `__TEXT.__gcc_except_tab` | `0xb094` | `0xbac0` | **`+0xa2c`** |
+| `__AUTH_CONST.__objc_const` | `0xe0f0` | `0xe468` | **`+0x378`** |
+| `__TEXT.__objc_methlist` | `0x512c` | `0x534c` | **`+0x220`** |
+| `__TEXT.__cstring` | `0x4be4` | `0x4dea` | **`+0x206`** |
+| `__TEXT.__unwind_info` | `0x1310` | `0x14f0` | **`+0x1e0`** |
+| `__AUTH_CONST.__cfstring` | `0x53a0` | `0x5540` | **`+0x1a0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1298` | `0x1348` | **`+0xb0`** |
+| `__DATA.__objc_ivar` | `0x1028` | `0xf94` | **`-0x94`** |
+| `__DATA_CONST.__const` | `0x348` | `0x3b8` | **`+0x70`** |
+| `__AUTH_CONST.__weak_auth_got` | `0x1a0` | `0x1f8` | **`+0x58`** |
+| `__AUTH_CONST.__const` | `0x5e0` | `0x600` | **`+0x20`** |
+| `__TEXT.__const` | `0x618` | `0x634` | **`+0x1c`** |
+| `__AUTH_CONST.__objc_intobj` | `0x348` | `0x360` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x290` | `0x2a0` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x148` | `0x158` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0xc0` | `0xd0` | **`+0x10`** |
+| `__DATA.__bss` | `0x298` | `0x2a1` | **`+0x9`** |
+| `__AUTH_CONST.__auth_got` | `0x380` | `0x388` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -40.5.0.0.0
--  __TEXT.__text: 0x73850
--  __TEXT.__objc_methlist: 0x512c
--  __TEXT.__const: 0x618
--  __TEXT.__gcc_except_tab: 0xb094
--  __TEXT.__cstring: 0x4be4
 +40.6.0.0.0
-+  __TEXT.__text: 0x79560
-+  __TEXT.__objc_methlist: 0x534c
-+  __TEXT.__const: 0x634
-+  __TEXT.__gcc_except_tab: 0xbac0
-+  __TEXT.__cstring: 0x4dea
-   __TEXT.__ustring: 0x186
--  __TEXT.__unwind_info: 0x1310
-+  __TEXT.__unwind_info: 0x14f0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x348
--  __DATA_CONST.__objc_classlist: 0x148
-+  __DATA_CONST.__const: 0x3b8
-+  __DATA_CONST.__objc_classlist: 0x158
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0xb8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1298
-+  __DATA_CONST.__objc_selrefs: 0x1348
-   __DATA_CONST.__objc_protorefs: 0x30
--  __DATA_CONST.__objc_superrefs: 0xc0
-+  __DATA_CONST.__objc_superrefs: 0xd0
-   __DATA_CONST.__objc_arraydata: 0x33e8
--  __DATA_CONST.__got: 0x290
--  __AUTH_CONST.__const: 0x5e0
--  __AUTH_CONST.__cfstring: 0x53a0
--  __AUTH_CONST.__objc_const: 0xe0f0
--  __AUTH_CONST.__weak_auth_got: 0x1a0
--  __AUTH_CONST.__objc_intobj: 0x348
-+  __DATA_CONST.__got: 0x2a0
-+  __AUTH_CONST.__const: 0x600
-+  __AUTH_CONST.__cfstring: 0x5540
-+  __AUTH_CONST.__objc_const: 0xe468
-+  __AUTH_CONST.__weak_auth_got: 0x1f8
-+  __AUTH_CONST.__objc_intobj: 0x360
-   __AUTH_CONST.__objc_arrayobj: 0x35e8
--  __AUTH_CONST.__auth_got: 0x380
--  __AUTH.__objc_data: 0xcd0
--  __DATA.__objc_ivar: 0x1028
-+  __AUTH_CONST.__auth_got: 0x388
-+  __AUTH.__objc_data: 0xa0
-+  __DATA.__objc_ivar: 0xf94
-   __DATA.__data: 0x8a0
--  __DATA.__bss: 0x298
-+  __DATA.__bss: 0x2a1
-+  __DATA_DIRTY.__objc_data: 0xcd0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/Metal.framework/Metal
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1731
--  Symbols:   3795
+-  Symbols:   3377
 -  CStrings:  746
 +  Functions: 1815
-+  Symbols:   3865
++  Symbols:   3435
 +  CStrings:  763
- 
 Symbols:
 + -[Conv1x1OutputHead dispatchWithEncoder:argTable:feed:skip:target:]
 + -[Conv1x1OutputHead dispatchWithEncoder:argTable:feedTexture:skip:target:]
@@ -359,18 +315,6 @@ Symbols:
 + ____ZN13MFXMLNetwork37prewarmEPU26objcproto15MTLCommandQueue11objc_objectRK14MFXTensorView3S4_by_block_invoke
 + ___block_descriptor_104_ea8_32s40s_e26_"NSMutableDictionary"8?0ls32l8s40l8
 + ___block_descriptor_64_ea8_32s40s48s_e5_v8?0ls32l8s40l8s48l8
-+ _objc_msgSend$array
-+ _objc_msgSend$dispatchWithEncoder:argTable:feed:skip:target:
-+ _objc_msgSend$dispatchWithEncoder:argTable:feed:skip:targetTexture:
-+ _objc_msgSend$dispatchWithEncoder:argTable:feed:target:
-+ _objc_msgSend$dispatchWithEncoder:argTable:feedTexture:skip:target:
-+ _objc_msgSend$executeWithMTL4CommandBuffer:feed:target:fence:
-+ _objc_msgSend$initWithDevice:library:descriptor:residencySet:
-+ _objc_msgSend$initWithMPSGraphPackageAtURL:compilationDescriptor:
-+ _objc_msgSend$internalAllocations
-+ _objc_msgSend$setObject:forKeyedSubscript:
-+ _objc_msgSend$size
-+ _objc_msgSend$specializeWithDevice:inputTypes:compilationDescriptor:
 + _objc_retain_x5
 - -[Conv1x1OutputHead executeWithMTL4CommandBuffer:feed:skip:target:]
 - -[Conv3x3Stride1 executeWithMTL4CommandBuffer:feed:skip:target:]

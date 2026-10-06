@@ -2,88 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/VoiceShortcutClient.framework/VoiceShortcutClient`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x154d38` | `0x15542c` | **`+0x6f4`** |
+| `__AUTH_CONST.__objc_const` | `0x1a688` | `0x1a7d8` | **`+0x150`** |
+| `__TEXT.__unwind_info` | `0x71a0` | `0x7240` | **`+0xa0`** |
+| `__TEXT.__objc_methlist` | `0xce1c` | `0xceac` | **`+0x90`** |
+| `__DATA.__data` | `0x4648` | `0x46b0` | **`+0x68`** |
+| `__AUTH.__objc_data` | `0x36a0` | `0x36f0` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6100` | `0x6148` | **`+0x48`** |
+| `__AUTH_CONST.__cfstring` | `0x19ce0` | `0x19d20` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0xa568` | `0xa588` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x16b4` | `0x1694` | **`-0x20`** |
+| `__TEXT.__cstring` | `0x183e2` | `0x18401` | **`+0x1f`** |
+| `__DATA_CONST.__const` | `0x37d8` | `0x37f0` | **`+0x18`** |
+| `__TEXT.__swift5_fieldmd` | `0x2d8c` | `0x2d74` | **`-0x18`** |
+| `__DATA.__bss` | `0x1b710` | `0x1b720` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x9a0` | `0x9a8` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x178` | `0x180` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0xd10` | `0xd14` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -5034.0.12.100.0
--  __TEXT.__text: 0x154d38
--  __TEXT.__objc_methlist: 0xce1c
 +5037.103.100.0.0
-+  __TEXT.__text: 0x15542c
-+  __TEXT.__objc_methlist: 0xceac
-   __TEXT.__const: 0x10300
-   __TEXT.__dlopen_cstrs: 0xdb4
--  __TEXT.__cstring: 0x183e2
-+  __TEXT.__cstring: 0x18401
-   __TEXT.__swift5_typeref: 0x3af9
--  __TEXT.__swift5_reflstr: 0x16b4
-+  __TEXT.__swift5_reflstr: 0x1694
-   __TEXT.__swift5_assocty: 0x4c8
-   __TEXT.__constg_swiftt: 0x37f8
--  __TEXT.__swift5_fieldmd: 0x2d8c
-+  __TEXT.__swift5_fieldmd: 0x2d74
-   __TEXT.__swift5_builtin: 0x1cc
-   __TEXT.__swift5_proto: 0xdd4
-   __TEXT.__swift5_types: 0x464
 
-   __TEXT.__swift5_mpenum: 0x84
-   __TEXT.__gcc_except_tab: 0x1908
-   __TEXT.__ustring: 0x168
--  __TEXT.__unwind_info: 0x71a0
-+  __TEXT.__unwind_info: 0x7240
-   __TEXT.__eh_frame: 0x64f8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x37d8
--  __DATA_CONST.__objc_classlist: 0x9a0
-+  __DATA_CONST.__const: 0x37f0
-+  __DATA_CONST.__objc_classlist: 0x9a8
-   __DATA_CONST.__objc_catlist: 0xd8
--  __DATA_CONST.__objc_protolist: 0x178
-+  __DATA_CONST.__objc_protolist: 0x180
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6100
-+  __DATA_CONST.__objc_selrefs: 0x6148
-   __DATA_CONST.__objc_protorefs: 0xa0
-   __DATA_CONST.__objc_superrefs: 0x7f0
-   __DATA_CONST.__objc_arraydata: 0x4740
-   __DATA_CONST.__got: 0x1218
--  __AUTH_CONST.__const: 0xa568
--  __AUTH_CONST.__cfstring: 0x19ce0
--  __AUTH_CONST.__objc_const: 0x1a688
-+  __AUTH_CONST.__const: 0xa588
-+  __AUTH_CONST.__cfstring: 0x19d20
-+  __AUTH_CONST.__objc_const: 0x1a7d8
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x4d88
-   __AUTH_CONST.__objc_arrayobj: 0x180
-   __AUTH_CONST.__objc_dictobj: 0x280
-   __AUTH_CONST.__auth_got: 0x1e60
--  __AUTH.__objc_data: 0x36a0
-+  __AUTH.__objc_data: 0x36f0
-   __AUTH.__data: 0x1a80
--  __DATA.__objc_ivar: 0xd10
--  __DATA.__data: 0x4648
--  __DATA.__bss: 0x1b710
-+  __DATA.__objc_ivar: 0xd14
-+  __DATA.__data: 0x46b0
-+  __DATA.__bss: 0x1b720
-   __DATA.__common: 0x90
-   __DATA_DIRTY.__objc_data: 0x2a78
-   __DATA_DIRTY.__data: 0x750
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10850
--  Symbols:   14122
+-  Symbols:   11704
 -  CStrings:  4418
 +  Functions: 10859
-+  Symbols:   14148
++  Symbols:   11731
 +  CStrings:  4420
- 
 Symbols:
 + +[WFImage(Icons) nonPlaceholderApplicationIconImageForBundleIdentifier:format:]
 + -[WFContextualActionPredicateValidator visitOperatorType:error:]
@@ -213,9 +166,6 @@ Symbols:
 + _getWFToolKitTelemetryLogObject
 + _getWFToolKitTelemetryLogObject.log
 + _getWFToolKitTelemetryLogObject.onceToken
-+ _objc_msgSend$allowEvaluationWithValidator:error:
-+ _objc_msgSend$initWithSymbolName:renderingMode:symbolColors:background:bundle:
-+ _objc_msgSend$initWithSymbolName:symbolColor:background:bundle:
 + _symbolic _____ 19VoiceShortcutClient0abC7RequestO9ShortcutsO020FetchExternalTriggerE10CodingKeys33_BE74AA4327CC6B1D62665DA947081B13LLO
 + _symbolic _____y_____G s22KeyedDecodingContainerV 19VoiceShortcutClient0deF7RequestO9ShortcutsO020FetchExternalTriggerH10CodingKeys33_BE74AA4327CC6B1D62665DA947081B13LLO
 + _symbolic _____y_____G s22KeyedEncodingContainerV 19VoiceShortcutClient0deF7RequestO9ShortcutsO020FetchExternalTriggerH10CodingKeys33_BE74AA4327CC6B1D62665DA947081B13LLO
@@ -320,10 +270,6 @@ Symbols:
 - _associated conformance 19VoiceShortcutClient0abC7RequestO9ShortcutsO05FetchE10CodingKeys33_BE74AA4327CC6B1D62665DA947081B13LLOSHAASQ
 - _associated conformance 19VoiceShortcutClient0abC7RequestO9ShortcutsO05FetchE10CodingKeys33_BE74AA4327CC6B1D62665DA947081B13LLOs0G3KeyAAs23CustomStringConvertible
 - _associated conformance 19VoiceShortcutClient0abC7RequestO9ShortcutsO05FetchE10CodingKeys33_BE74AA4327CC6B1D62665DA947081B13LLOs0G3KeyAAs28CustomDebugStringConvertible
-- _objc_msgSend$_setAssociatedAuditToken:
-- _objc_msgSend$initWithSymbolName:renderingMode:symbolColors:background:
-- _objc_msgSend$originatingProcessAuditToken
-- _objc_msgSend$triggerFullContextualActionReindexWithCompletion:
 - _symbolic _____ 19VoiceShortcutClient0abC7RequestO9ShortcutsO05FetchE10CodingKeys33_BE74AA4327CC6B1D62665DA947081B13LLO
 - _symbolic _____y_____G s22KeyedDecodingContainerV 19VoiceShortcutClient0deF7RequestO9ShortcutsO05FetchH10CodingKeys33_BE74AA4327CC6B1D62665DA947081B13LLO
 - _symbolic _____y_____G s22KeyedEncodingContainerV 19VoiceShortcutClient0deF7RequestO9ShortcutsO05FetchH10CodingKeys33_BE74AA4327CC6B1D62665DA947081B13LLO

@@ -2,31 +2,19 @@
 
 > `/System/Library/Frameworks/SwiftUICore.framework/SwiftUICore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xec9080` | `0xec9488` | **`+0x408`** |
+| `__AUTH_CONST.__auth_got` | `0x4b80` | `0x4b98` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
- 8.0.84.1.104
--  __TEXT.__text: 0xec9080
-+  __TEXT.__text: 0xec9488
-   __TEXT.__objc_methlist: 0x1ea4
-   __TEXT.__cstring: 0xf343
-   __TEXT.__const: 0xb8eac
-
-   __AUTH_CONST.__objc_arrayobj: 0x30
-   __AUTH_CONST.__objc_intobj: 0x90
-   __AUTH_CONST.__objc_doubleobj: 0x30
--  __AUTH_CONST.__auth_got: 0x4b80
-+  __AUTH_CONST.__auth_got: 0x4b98
-   __AUTH.__objc_data: 0x2c80
-   __AUTH.__data: 0x18920
-   __AUTH.__thread_vars: 0xc0
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 93326
--  Symbols:   217122
-+  Symbols:   217125
-   CStrings:  1514
- 
+-  Symbols:   216255
++  Symbols:   216258
 Symbols:
 + _objc_release_x11
 + _objc_retain_x13

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ManagedBackgroundAssetsXPC.framework/ManagedBackgroundAssetsXPC`
 
-```diff
+### Section Size Changes
 
- 2.0.35.1.0
--  __TEXT.__text: 0x3cf18
-+  __TEXT.__text: 0x3cf80
-   __TEXT.__objc_methlist: 0x11c
-   __TEXT.__const: 0x3f78
-   __TEXT.__constg_swiftt: 0xea8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3cf18` | `0x3cf80` | **`+0x68`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1dbcdc714 -> sub_1dc358714 : 2724 -> 2732
 ~ sub_1dbce74d0 -> sub_1dc3634d8 : 604 -> 608

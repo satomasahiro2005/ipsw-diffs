@@ -2,71 +2,51 @@
 
 > `/System/Library/HIDPlugins/ServicePlugins/GenericGamepadHIDServicePlugin.plugin/GenericGamepadHIDServicePlugin`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8a98` | `0x8800` | **`-0x298`** |
+| `__TEXT.__auth_stubs` | `0x530` | `0x4c0` | **`-0x70`** |
+| `__TEXT.__cstring` | `0xa2b` | `0x9ea` | **`-0x41`** |
+| `__DATA_CONST.__cfstring` | `0x4e0` | `0x4a0` | **`-0x40`** |
+| `__TEXT.__objc_stubs` | `0xf80` | `0xf40` | **`-0x40`** |
+| `__DATA_CONST.__auth_got` | `0x2a8` | `0x270` | **`-0x38`** |
+| `__TEXT.__oslogstring` | `0x47e` | `0x449` | **`-0x35`** |
+| `__TEXT.__objc_methname` | `0xdeb` | `0xdd1` | **`-0x1a`** |
+| `__DATA.__objc_selrefs` | `0x530` | `0x520` | **`-0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x10` | `0x8` | **`-0x8`** |
+| `__TEXT.__const` | `0x98` | `0x90` | **`-0x8`** |
+| `__TEXT.__objc_methlist` | `0x34c` | `0x344` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x210` | `0x208` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methtype`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x8a98
--  __TEXT.__auth_stubs: 0x530
--  __TEXT.__objc_stubs: 0xf80
--  __TEXT.__objc_methlist: 0x34c
-+  __TEXT.__text: 0x8800
-+  __TEXT.__auth_stubs: 0x4c0
-+  __TEXT.__objc_stubs: 0xf40
-+  __TEXT.__objc_methlist: 0x344
-   __TEXT.__gcc_except_tab: 0x438
--  __TEXT.__const: 0x98
--  __TEXT.__cstring: 0xa2b
--  __TEXT.__oslogstring: 0x47e
--  __TEXT.__objc_methname: 0xdeb
-+  __TEXT.__const: 0x90
-+  __TEXT.__cstring: 0x9ea
-+  __TEXT.__objc_methname: 0xdd1
-+  __TEXT.__oslogstring: 0x449
-   __TEXT.__objc_classname: 0xab
-   __TEXT.__objc_methtype: 0x507
--  __TEXT.__unwind_info: 0x210
-+  __TEXT.__unwind_info: 0x208
-   __DATA_CONST.__const: 0x6e8
--  __DATA_CONST.__cfstring: 0x4e0
-+  __DATA_CONST.__cfstring: 0x4a0
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_superrefs: 0x10
-+  __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__objc_arraydata: 0x8
-   __DATA_CONST.__objc_arrayobj: 0x18
--  __DATA_CONST.__auth_got: 0x2a8
-+  __DATA_CONST.__auth_got: 0x270
-   __DATA_CONST.__got: 0x110
-   __DATA.__objc_const: 0x3f8
--  __DATA.__objc_selrefs: 0x530
-+  __DATA.__objc_selrefs: 0x520
-   __DATA.__objc_ivar: 0x2c
-   __DATA.__objc_data: 0x50
-   __DATA.__data: 0x180
+-14.0.17.0.0
++14.0.19.0.0
 
-   - /System/Library/PrivateFrameworks/HID.framework/HID
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 136
 -  Symbols:   129
--  CStrings:  369
+-  CStrings:  330
 +  Functions: 133
 +  Symbols:   121
-+  CStrings:  360
- 
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__objc_methtype : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
++  CStrings:  323
 Symbols:
 - _IOObjectConformsTo
 - _IOObjectGetClass
@@ -84,5 +64,4 @@ CStrings:
 - "IOService"
 - "boolValue"
 - "propertyForKey:"
-
 ```

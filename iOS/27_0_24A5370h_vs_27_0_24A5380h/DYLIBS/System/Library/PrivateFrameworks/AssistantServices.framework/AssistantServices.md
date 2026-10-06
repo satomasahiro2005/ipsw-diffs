@@ -2,96 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1bbff8` | `0x19c9ec` | **`-0x1f60c`** |
+| `__TEXT.__cstring` | `0x41423` | `0x3d09c` | **`-0x4387`** |
+| `__TEXT.__oslogstring` | `0x12bed` | `0xf297` | **`-0x3956`** |
+| `__AUTH_CONST.__objc_const` | `0x39640` | `0x362e0` | **`-0x3360`** |
+| `__TEXT.__objc_methlist` | `0x20c84` | `0x1efec` | **`-0x1c98`** |
+| `__AUTH_CONST.__cfstring` | `0x29b20` | `0x28260` | **`-0x18c0`** |
+| `__DATA_CONST.__objc_selrefs` | `0xcf58` | `0xc060` | **`-0xef8`** |
+| `__TEXT.__unwind_info` | `0x8800` | `0x8018` | **`-0x7e8`** |
+| `__DATA_CONST.__const` | `0x8ca8` | `0x8548` | **`-0x760`** |
+| `__AUTH.__objc_data` | `0x8bd8` | `0x8610` | **`-0x5c8`** |
+| `__DATA.__objc_ivar` | `0x28e4` | `0x2574` | **`-0x370`** |
+| `__AUTH_CONST.__const` | `0x3f40` | `0x3c80` | **`-0x2c0`** |
+| `__DATA.__data` | `0x4a70` | `0x4800` | **`-0x270`** |
+| `__TEXT.__gcc_except_tab` | `0x2358` | `0x2108` | **`-0x250`** |
+| `__AUTH_CONST.__objc_intobj` | `0x27f0` | `0x2628` | **`-0x1c8`** |
+| `__DATA_DIRTY.__objc_data` | `0x1108` | `0xfa0` | **`-0x168`** |
+| `__DATA_CONST.__got` | `0x17f8` | `0x16c8` | **`-0x130`** |
+| `__DATA_CONST.__objc_arraydata` | `0x2428` | `0x2330` | **`-0xf8`** |
+| `__DATA.__bss` | `0x1480` | `0x1390` | **`-0xf0`** |
+| `__TEXT.__const` | `0x490` | `0x3d0` | **`-0xc0`** |
+| `__DATA_CONST.__objc_classlist` | `0xfb0` | `0xef8` | **`-0xb8`** |
+| `__DATA_CONST.__objc_superrefs` | `0xfb8` | `0xf10` | **`-0xa8`** |
+| `__AUTH_CONST.__objc_dictobj` | `0xd70` | `0xcf8` | **`-0x78`** |
+| `__AUTH_CONST.__auth_got` | `0xb28` | `0xae8` | **`-0x40`** |
+| `__AUTH.__data` | `0x280` | `0x248` | **`-0x38`** |
+| `__DATA_CONST.__objc_protolist` | `0x618` | `0x5e8` | **`-0x30`** |
+| `__DATA_DIRTY.__bss` | `0x1f8` | `0x200` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1bbff8
--  __TEXT.__objc_methlist: 0x20c84
--  __TEXT.__const: 0x490
-+  __TEXT.__text: 0x19c9ec
-+  __TEXT.__objc_methlist: 0x1efec
-+  __TEXT.__const: 0x3d0
-   __TEXT.__dlopen_cstrs: 0x538
--  __TEXT.__gcc_except_tab: 0x2358
--  __TEXT.__cstring: 0x41423
--  __TEXT.__oslogstring: 0x12bed
-+  __TEXT.__gcc_except_tab: 0x2108
-+  __TEXT.__cstring: 0x3d09c
-+  __TEXT.__oslogstring: 0xf297
-   __TEXT.__ustring: 0x2ac
--  __TEXT.__unwind_info: 0x8800
-+  __TEXT.__unwind_info: 0x8018
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x8ca8
--  __DATA_CONST.__objc_classlist: 0xfb0
-+  __DATA_CONST.__const: 0x8548
-+  __DATA_CONST.__objc_classlist: 0xef8
-   __DATA_CONST.__objc_catlist: 0x2a8
--  __DATA_CONST.__objc_protolist: 0x618
-+  __DATA_CONST.__objc_protolist: 0x5e8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xcf58
-+  __DATA_CONST.__objc_selrefs: 0xc060
-   __DATA_CONST.__objc_protorefs: 0x170
--  __DATA_CONST.__objc_superrefs: 0xfb8
--  __DATA_CONST.__objc_arraydata: 0x2428
--  __DATA_CONST.__got: 0x17f8
--  __AUTH_CONST.__const: 0x3f40
--  __AUTH_CONST.__cfstring: 0x29b20
--  __AUTH_CONST.__objc_const: 0x39640
--  __AUTH_CONST.__objc_intobj: 0x27f0
--  __AUTH_CONST.__objc_dictobj: 0xd70
-+  __DATA_CONST.__objc_superrefs: 0xf10
-+  __DATA_CONST.__objc_arraydata: 0x2330
-+  __DATA_CONST.__got: 0x16c8
-+  __AUTH_CONST.__const: 0x3c80
-+  __AUTH_CONST.__cfstring: 0x28260
-+  __AUTH_CONST.__objc_const: 0x362e0
-+  __AUTH_CONST.__objc_intobj: 0x2628
-+  __AUTH_CONST.__objc_dictobj: 0xcf8
-   __AUTH_CONST.__objc_arrayobj: 0x5d0
-   __AUTH_CONST.__objc_doubleobj: 0x40
--  __AUTH_CONST.__auth_got: 0xb28
--  __AUTH.__objc_data: 0x8bd8
--  __AUTH.__data: 0x280
--  __DATA.__objc_ivar: 0x28e4
--  __DATA.__data: 0x4a70
--  __DATA.__bss: 0x1480
-+  __AUTH_CONST.__auth_got: 0xae8
-+  __AUTH.__objc_data: 0x8610
-+  __AUTH.__data: 0x248
-+  __DATA.__objc_ivar: 0x2574
-+  __DATA.__data: 0x4800
-+  __DATA.__bss: 0x1390
-   __DATA.__common: 0x18
--  __DATA_DIRTY.__objc_data: 0x1108
-+  __DATA_DIRTY.__objc_data: 0xfa0
-   __DATA_DIRTY.__data: 0x18
--  __DATA_DIRTY.__bss: 0x1f8
-+  __DATA_DIRTY.__bss: 0x200
-   __DATA_DIRTY.__common: 0xf8
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+-3600.68.16.1.1
++3600.68.39.1.1
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12845
--  Symbols:   40834
--  CStrings:  14571
+-  Symbols:   23459
+-  CStrings:  9241
 +  Functions: 12087
-+  Symbols:   38415
-+  CStrings:  13701
- 
-Sections:
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   22177
++  CStrings:  8569
 Symbols:
 + +[AFFeatureFlags(SWEFeatureFlags) isTTRUserVocabProfileAttachmentEnabled]
 + +[AFInvocationContext supportsSecureCoding]
@@ -417,24 +372,6 @@ Symbols:
 + __OBJC_METACLASS_RO_$_AFWindowDescriptor
 + ___AFIsIPhone_block_invoke
 + _kAFAllowSiri3489Key
-+ _objc_msgSend$clearContextWithInvocationContext:
-+ _objc_msgSend$expressivityPreset
-+ _objc_msgSend$expressivityPresetString
-+ _objc_msgSend$initWithIdentifier:bundleIdentifier:pid:pidVersion:
-+ _objc_msgSend$initWithLanguageCode:gender:isCustom:name:footprint:contentVersion:masteredVersion:pacePreset:expressivityPreset:
-+ _objc_msgSend$initWithStatus:restrictionReasons:isAvailable:siriLocale:desiredOrchestrationMode:desiredOrchestrationModeIfEnabled:currentOrchestrationMode:unavailabilityReasons:allCapabilities:linwoodEverAvailable:bootUUID:
-+ _objc_msgSend$invocationSource
-+ _objc_msgSend$pacePreset
-+ _objc_msgSend$pacePresetString
-+ _objc_msgSend$pidVersion
-+ _objc_msgSend$protoAccount
-+ _objc_msgSend$proto_ageRange
-+ _objc_msgSend$restrictionReasons
-+ _objc_msgSend$resumeSessionWithId:invocationContext:
-+ _objc_msgSend$setBlockAttending:
-+ _objc_msgSend$setInvocationContext:
-+ _objc_msgSend$setTargetWindow:
-+ _objc_msgSend$targetWindow
 - +[AFMyriadAccessoryMessage acknowledgeRequestKey]
 - +[AFMyriadAccessoryMessage audioDataKey]
 - +[AFMyriadAccessoryMessage deviceInfoKey]
@@ -2032,401 +1969,6 @@ Symbols:
 - _myriad_timer_mgmt_queue_label
 - _myriad_work_queue_label
 - _notificationCallback
-- _objc_msgSend$BLEActivityEnabled
-- _objc_msgSend$_addElectionAdvertisementDataToMyriadSession:
-- _objc_msgSend$_adjustActionWindowsFromSlowdown:
-- _objc_msgSend$_advertise:afterDelay:maxInterval:andMoveTo:
-- _objc_msgSend$_advertise:andMoveTo:
-- _objc_msgSend$_advertiseIndefinite:
-- _objc_msgSend$_advertiseSlowdown
-- _objc_msgSend$_advertiseSuppressTriggerInOutput
-- _objc_msgSend$_advertiseTrigger
-- _objc_msgSend$_advertiseWith:afterDelay:maxInterval:thenExecute:
-- _objc_msgSend$_advertisementPayloadSizeForVersion:
-- _objc_msgSend$_ageWedgeFilter
-- _objc_msgSend$_boostTypeAsString:
-- _objc_msgSend$_bumpGoodnessScore:lastActivationTime:mediaPlaybackInterruptedTime:ignoreAdjustedBoost:recentlyWonBySmallAmount:
-- _objc_msgSend$_cancelOverallTimeout
-- _objc_msgSend$_cancelRepostedMyriadDecisionTimer
-- _objc_msgSend$_cancelTimer
-- _objc_msgSend$_clear
-- _objc_msgSend$_clearMyriadSession
-- _objc_msgSend$_clearWiProxReadinessTimer
-- _objc_msgSend$_copyRawBytesFromSource:toDest:length:
-- _objc_msgSend$_createDispatchTimerFor:toExecute:
-- _objc_msgSend$_createDispatchTimerForEvent:toExecute:
-- _objc_msgSend$_createDispatchTimerWithTime:toExecute:
-- _objc_msgSend$_createEndAnalyticContexFromIntermediateContext:forVersion:sessionId:
-- _objc_msgSend$_createMyriadSessionIfRequired
-- _objc_msgSend$_createSchemaClientEvent:
-- _objc_msgSend$_createWaitWiProxTimer:waitBlock:
-- _objc_msgSend$_decisionMadeContext:additionalContext:instrumentation:completion:
-- _objc_msgSend$_decodeMetricDataPayload:decodedPayload:
-- _objc_msgSend$_dequeueBlocksWithSignal:
-- _objc_msgSend$_deregisterFromMyriadEventNotifications
-- _objc_msgSend$_deregisterFromRepostedDecisionResultsObservers
-- _objc_msgSend$_deviceIDFromBytes:
-- _objc_msgSend$_deviceShouldContinue:
-- _objc_msgSend$_duringNextWindowEnterState:
-- _objc_msgSend$_duringNextWindowExecute:
-- _objc_msgSend$_endAdvertising:
-- _objc_msgSend$_endAdvertisingAnalyticsContext:
-- _objc_msgSend$_endAdvertisingWithDeviceProhibitions:
-- _objc_msgSend$_enqueueBlock:forReason:
-- _objc_msgSend$_enterBLEDiagnosticMode
-- _objc_msgSend$_enterState:
-- _objc_msgSend$_enteringIntoState:fromState:
-- _objc_msgSend$_extractMetricDataFromDataPayload:
-- _objc_msgSend$_fetchCurrentMyriadDecisionWithWaitTime:
-- _objc_msgSend$_fetchDevicePlatformBiasIfRequired
-- _objc_msgSend$_flushCompletions:
-- _objc_msgSend$_forceLocalWinner:
-- _objc_msgSend$_getAdvertisementRecordTypeForVersion:data:
-- _objc_msgSend$_getCDASchemaCDATriggerType:
-- _objc_msgSend$_getDeviceIdForVersion:data:
-- _objc_msgSend$_getMyriadAdvertisementDataForVersion:data:
-- _objc_msgSend$_getRecentBump:ignoreAdjustedBoost:recentlyWonBySmallAmount:
-- _objc_msgSend$_getRequestType:
-- _objc_msgSend$_getVoiceTriggerEndTimeForVersion:data:
-- _objc_msgSend$_handleStateMachineErrorIfNeeded
-- _objc_msgSend$_inTaskTriggerWasTooSoon
-- _objc_msgSend$_initDeviceClassAndAdjustments
-- _objc_msgSend$_initWithMessage:
-- _objc_msgSend$_initializeMessageObj:
-- _objc_msgSend$_initializeMessageObjFromDictionary:
-- _objc_msgSend$_initializeMyriadAdvertisementContextRecordFromData:
-- _objc_msgSend$_initializeTimer
-- _objc_msgSend$_initializeWiProxReadinessTimer
-- _objc_msgSend$_isAPhone:
-- _objc_msgSend$_leaveBLEDiagnosticMode
-- _objc_msgSend$_logRequestLinkMessageRequestId:cdaId:
-- _objc_msgSend$_loseElection
-- _objc_msgSend$_myriadSession
-- _objc_msgSend$_myriadStateForSelf:
-- _objc_msgSend$_myriadStateToString:
-- _objc_msgSend$_nextElectionPublisherState
-- _objc_msgSend$_okayToSuppressOnOutput
-- _objc_msgSend$_phsSetupRecord
-- _objc_msgSend$_readDefaults
-- _objc_msgSend$_registerForMyriadEvents
-- _objc_msgSend$_reloadTrialConfiguredBoostValues
-- _objc_msgSend$_resetActionWindows
-- _objc_msgSend$_resetAdvertisementTimings
-- _objc_msgSend$_resetAudioData
-- _objc_msgSend$_resetSettingsConnection
-- _objc_msgSend$_resultSeenWithValue:
-- _objc_msgSend$_resumeWiProxReadinessTimer
-- _objc_msgSend$_sendAndLogClientEvent:stState:atTimestamp:
-- _objc_msgSend$_setDecisionIsPending
-- _objc_msgSend$_setMyriadContext:
-- _objc_msgSend$_setOverallTimeout
-- _objc_msgSend$_setupActionWindows
-- _objc_msgSend$_shouldContinueFor:
-- _objc_msgSend$_shouldHandleEmergency
-- _objc_msgSend$_shouldStopListeningBeforeAdvertising
-- _objc_msgSend$_signalEmergencyCallHandled
-- _objc_msgSend$_sortedReplies
-- _objc_msgSend$_sortedReplies:
-- _objc_msgSend$_startAdvertising:afterDelay:maxInterval:
-- _objc_msgSend$_startAdvertisingFromInTaskVoiceTrigger
-- _objc_msgSend$_startAdvertisingFromVoiceTrigger
-- _objc_msgSend$_startListening:
-- _objc_msgSend$_startListeningAfterWiProxIsReady:inState:completion:
-- _objc_msgSend$_startTimer:for:thenEnterState:
-- _objc_msgSend$_startTimer:for:thenExecute:
-- _objc_msgSend$_stateAsString
-- _objc_msgSend$_stateAsString:
-- _objc_msgSend$_stopAdvertising:
-- _objc_msgSend$_stopAdvertisingAndListening
-- _objc_msgSend$_stopListening:
-- _objc_msgSend$_submitMyriadMetrics:additionalContext:toStream:instrumentation:completion:
-- _objc_msgSend$_suspendWiProxReadinessTimer
-- _objc_msgSend$_testAndUpdateWedgeFilter:
-- _objc_msgSend$_trackHeySiriStartedAdvertisingAt:
-- _objc_msgSend$_triggerABCForType:context:
-- _objc_msgSend$_unduck
-- _objc_msgSend$_updateMediaPlaybackBoost:
-- _objc_msgSend$_updatePlatformBias:
-- _objc_msgSend$_updateRecentSiriBoostTrialEnabled:
-- _objc_msgSend$_updateRecentSiriExponentialBoostDefined:withSecondDegree:andFirstDegree:andIntercept:
-- _objc_msgSend$_updateRepliesWith:id:data:
-- _objc_msgSend$_updateVoiceTriggerTimeFromFile
-- _objc_msgSend$_waitWiProx:andExecute:
-- _objc_msgSend$_waitWiProxAndExecute:
-- _objc_msgSend$_winElection
-- _objc_msgSend$acknowledgeRequestKey
-- _objc_msgSend$activationExpirationTime
-- _objc_msgSend$activationSource
-- _objc_msgSend$adjustByMultiplier:adding:
-- _objc_msgSend$advertiseWith:afterDelay:maxInterval:
-- _objc_msgSend$advertisementPayload
-- _objc_msgSend$advertisingDidBegin:
-- _objc_msgSend$advertisingDidEnd:
-- _objc_msgSend$advertisingWillBeginWithDelay:advertisingInterval:
-- _objc_msgSend$asAdvertisementData
-- _objc_msgSend$bump
-- _objc_msgSend$compareAdvertisementPayload:
-- _objc_msgSend$constantGoodnessScore
-- _objc_msgSend$contextFetchDelay
-- _objc_msgSend$continuationRecord
-- _objc_msgSend$coordinationEnabled
-- _objc_msgSend$currentElectionAdvertisementData
-- _objc_msgSend$currentElectionAdvertisementId
-- _objc_msgSend$dataWithCapacity:
-- _objc_msgSend$debugDescription
-- _objc_msgSend$dequeueAllObjects
-- _objc_msgSend$deviceAdjust
-- _objc_msgSend$deviceClass
-- _objc_msgSend$deviceDelay
-- _objc_msgSend$deviceGroup
-- _objc_msgSend$deviceProductType
-- _objc_msgSend$deviceSlowDown
-- _objc_msgSend$deviceTrumpDelay
-- _objc_msgSend$diagnosticBLEModeWithCompletion:
-- _objc_msgSend$directTriggerRecord
-- _objc_msgSend$disableMyriadBLEActivity
-- _objc_msgSend$electionAdvertisementDataByIds
-- _objc_msgSend$electionDecisionKey
-- _objc_msgSend$emergencyHandledKey
-- _objc_msgSend$emergencyHandledRecord
-- _objc_msgSend$emergencyProvider
-- _objc_msgSend$emergencyRecord
-- _objc_msgSend$emitMessage:timestamp:
-- _objc_msgSend$emptyRecord
-- _objc_msgSend$enterState:
-- _objc_msgSend$generateRandomConfidence
-- _objc_msgSend$generateTiebreaker
-- _objc_msgSend$getActivationExpirationTime
-- _objc_msgSend$getActivationSource
-- _objc_msgSend$getCDASessionId:
-- _objc_msgSend$getContextData
-- _objc_msgSend$getContextFetchDelay
-- _objc_msgSend$getCurrentElectionAdvertisementData
-- _objc_msgSend$getCurrentElectionAdvertisementId
-- _objc_msgSend$getData
-- _objc_msgSend$getElectionAdvertisementDataByIds
-- _objc_msgSend$getMyriadAdjustedBoostForGoodnessScoreContext:
-- _objc_msgSend$getOverrideOption
-- _objc_msgSend$getOverrideState
-- _objc_msgSend$getOverridingContext
-- _objc_msgSend$getPerceptualAudioHash
-- _objc_msgSend$getPlatformBias
-- _objc_msgSend$getSessionId:
-- _objc_msgSend$getVersion:
-- _objc_msgSend$goodness
-- _objc_msgSend$goodnessScore
-- _objc_msgSend$goodnessScoreBoosts
-- _objc_msgSend$hasEqualAdvertisementData:
-- _objc_msgSend$heySiri:foundDevice:withInfo:
-- _objc_msgSend$ignoreMyriadPlatformBias
-- _objc_msgSend$initWithAudioData:
-- _objc_msgSend$initWithDelegate:queue:
-- _objc_msgSend$initWithDeviceID:data:
-- _objc_msgSend$initWithDeviceInstanceContext:preferences:
-- _objc_msgSend$initWithDeviceInstanceContext:preferences:queue:instrumentation:
-- _objc_msgSend$initWithGeneration:contextData:contextFetchDelay:
-- _objc_msgSend$initWithGeneration:sessionId:currentElectionAdvertisementId:currentElectionAdvertisementData:electionAdvertisementDataByIds:
-- _objc_msgSend$initWithIdentifier:
-- _objc_msgSend$initWithIsAvailable:siriLocale:desiredOrchestrationMode:desiredOrchestrationModeIfEnabled:currentOrchestrationMode:unavailabilityReasons:allCapabilities:linwoodEverAvailable:bootUUID:
-- _objc_msgSend$initWithIsAvailable:siriLocale:desiredOrchestrationMode:desiredOrchestrationModeIfEnabled:unavailabilityReasons:allCapabilities:linwoodEverAvailable:
-- _objc_msgSend$initWithIsAvailable:siriLocale:desiredOrchestrationMode:desiredOrchestrationModeIfEnabled:unavailabilityReasons:allCapabilities:linwoodEverAvailable:bootUUID:
-- _objc_msgSend$initWithMetricData:
-- _objc_msgSend$initWithOverrideOption:reason:
-- _objc_msgSend$initWithProvider:
-- _objc_msgSend$initWithTimestamp:perceptualAudioHash:overrideState:activationSource:activationExpirationTime:
-- _objc_msgSend$initiateEmergencyCallMyriad
-- _objc_msgSend$isAContinuation
-- _objc_msgSend$isALateSupressionTrumpFor:
-- _objc_msgSend$isATrump
-- _objc_msgSend$isAnEmergency
-- _objc_msgSend$isAnEmergencyHandled
-- _objc_msgSend$isCollectedFromContextCollector
-- _objc_msgSend$isInEarTrump
-- _objc_msgSend$isMyriadMetricsMessage:
-- _objc_msgSend$isSCDATrialEnabled
-- _objc_msgSend$isSane
-- _objc_msgSend$isSaneForVoiceTriggerEndTime:endtimeDistanceThreshold:
-- _objc_msgSend$isSlowdown
-- _objc_msgSend$lateSuppressionRecord
-- _objc_msgSend$launchAppForDialRequest:completion:
-- _objc_msgSend$listeningDidBegin:
-- _objc_msgSend$listeningDidEnd:
-- _objc_msgSend$logCDADeviceStateActivityEnded:withCdaId:withTimestamp:
-- _objc_msgSend$logCDADeviceStateActivityStartedOrChanged:withTrigger:withCdaId:withTimestamp:
-- _objc_msgSend$logCDAElectionAdvertisingEnded:withCdaId:withTimestamp:
-- _objc_msgSend$logCDAElectionAdvertisingEnding:withCdaId:withTimestamp:
-- _objc_msgSend$logCDAElectionAdvertisingStarted:withCdaId:withTimestamp:
-- _objc_msgSend$logCDAElectionAdvertisingStarting:withDelay:withInterval:withCdaId:withTimestamp:
-- _objc_msgSend$logCDAElectionDecisionMade:withDecision:withPreviousDecision:timeSincePreviousDecision:withWinningDevice:withThisDevice:withParticipants:withRawScore:withBoost:withCdaId:currentRequestId:withTimestamp:
-- _objc_msgSend$logCDAElectionDecisionMadeDebug:withCrossDeviceArbitrationAllowed:advertisementData:withDeviceGroup:withCdaId:withTimestamp:
-- _objc_msgSend$logCDAElectionTimerEnded:withCdaId:withTimestamp:
-- _objc_msgSend$mediaPlaybackInterruptedTime
-- _objc_msgSend$messageAsStruct
-- _objc_msgSend$messageKey
-- _objc_msgSend$myriadConstantGoodness
-- _objc_msgSend$myriadCoordinationEnabled
-- _objc_msgSend$myriadCoordinationEnabledForAccessoryLogging
-- _objc_msgSend$myriadCoordinator:didAddAdvertisement:toSession:
-- _objc_msgSend$myriadCoordinator:didEnterState:fromState:
-- _objc_msgSend$myriadCoordinator:didReceiveAdvertisement:
-- _objc_msgSend$myriadCoordinator:willStartAdvertisingUsingData:
-- _objc_msgSend$myriadCoordinator:willStartAdvertisingWithSlowDownInterval:
-- _objc_msgSend$myriadCoordinatorBTLEDidEndAdvertising:
-- _objc_msgSend$myriadCoordinatorBTLEDidEndScanning:
-- _objc_msgSend$myriadCoordinatorBTLEDidStartAdvertising:
-- _objc_msgSend$myriadCoordinatorBTLEDidStartScanning:
-- _objc_msgSend$myriadCoordinatorDidHandleEmergency:
-- _objc_msgSend$myriadCoordinatorIsAdvertisingEmergency:
-- _objc_msgSend$myriadCoordinatorOverallTimerCancelled:
-- _objc_msgSend$myriadCoordinatorWillHandleEmergency:
-- _objc_msgSend$myriadDeviceAdjust
-- _objc_msgSend$myriadDeviceClass
-- _objc_msgSend$myriadDeviceDelay
-- _objc_msgSend$myriadDeviceGroup
-- _objc_msgSend$myriadDeviceTrumpDelay
-- _objc_msgSend$myriadDeviceVTEndTimeDistanceThreshold
-- _objc_msgSend$myriadMaxNoOperationDelay
-- _objc_msgSend$myriadRequestTypeAsString:
-- _objc_msgSend$myriadServerHasProvisioned
-- _objc_msgSend$myriadShouldIgnoreAdjustedBoost
-- _objc_msgSend$myriadTestDeviceDelay
-- _objc_msgSend$notifyCurrentDecisionResult
-- _objc_msgSend$numberWithUnsignedChar:
-- _objc_msgSend$overriddenAdjustedScore
-- _objc_msgSend$overrideOption
-- _objc_msgSend$overrideState
-- _objc_msgSend$pHash
-- _objc_msgSend$perceptualAudioHash
-- _objc_msgSend$publishState:
-- _objc_msgSend$rawAudioGoodnessScore
-- _objc_msgSend$rawGoodnessScore
-- _objc_msgSend$reasons
-- _objc_msgSend$recentlyWonBySmallAmount
-- _objc_msgSend$recordForDeviceId:
-- _objc_msgSend$releaseAllPowerAssertions
-- _objc_msgSend$requestTypeKey
-- _objc_msgSend$resetReplies
-- _objc_msgSend$responseObject:
-- _objc_msgSend$sessionIdKey
-- _objc_msgSend$setActivationExpirationTime:
-- _objc_msgSend$setActivationSource:
-- _objc_msgSend$setAdvertisementDatas:
-- _objc_msgSend$setAdvertisementDelay:
-- _objc_msgSend$setAdvertisementInterval:
-- _objc_msgSend$setAudioHash:
-- _objc_msgSend$setAudioSourceIdentifier:
-- _objc_msgSend$setBump:
-- _objc_msgSend$setCdaAdvertisingEndChanged:
-- _objc_msgSend$setCdaAdvertisingStartChanged:
-- _objc_msgSend$setCdaId:
-- _objc_msgSend$setContextData:
-- _objc_msgSend$setContextFetchDelay:
-- _objc_msgSend$setCurrentElectionAdvertisementData:
-- _objc_msgSend$setCurrentElectionAdvertisementId:
-- _objc_msgSend$setDebugElectionDecisionMade:
-- _objc_msgSend$setDecision:
-- _objc_msgSend$setDeviceBoost:
-- _objc_msgSend$setDeviceClass:
-- _objc_msgSend$setDeviceElectionStateContext:
-- _objc_msgSend$setDeviceGroup:
-- _objc_msgSend$setDialType:
-- _objc_msgSend$setDispatchQueue:
-- _objc_msgSend$setElectionAdvertisementDataByIds:
-- _objc_msgSend$setElectionDecisionMade:
-- _objc_msgSend$setElectionTimerEnded:
-- _objc_msgSend$setGoodness:
-- _objc_msgSend$setGoodnessScore:
-- _objc_msgSend$setGoodnessScoreBoosts:
-- _objc_msgSend$setHeardParticipants:
-- _objc_msgSend$setIgnoreMyriadAdjustedBoost:
-- _objc_msgSend$setIgnoreMyriadPlatformBias:
-- _objc_msgSend$setIsCollectedFromContextCollector:
-- _objc_msgSend$setIsCrossDeviceArbitrationAllowed:
-- _objc_msgSend$setIsFromContextCollector:
-- _objc_msgSend$setIsMe:
-- _objc_msgSend$setIsSelf:
-- _objc_msgSend$setIsTrump:
-- _objc_msgSend$setLastActivationTime:
-- _objc_msgSend$setMyriadConstantGoodness:
-- _objc_msgSend$setMyriadCoordinationEnabled:
-- _objc_msgSend$setMyriadDeviceAdjust:
-- _objc_msgSend$setMyriadDeviceClass:
-- _objc_msgSend$setMyriadDeviceDelay:
-- _objc_msgSend$setMyriadDeviceGroup:
-- _objc_msgSend$setMyriadDeviceSlowdown:
-- _objc_msgSend$setMyriadDeviceTrumpDelay:
-- _objc_msgSend$setMyriadDeviceVTEndTimeDistanceThreshold:
-- _objc_msgSend$setMyriadMaxNoOperationDelay:
-- _objc_msgSend$setMyriadTestDeviceDelay:
-- _objc_msgSend$setOverriddenAdjustedScore:
-- _objc_msgSend$setOverrideContext:
-- _objc_msgSend$setOverrideOption:
-- _objc_msgSend$setOverrideState:
-- _objc_msgSend$setOverridingContext:
-- _objc_msgSend$setPHash:
-- _objc_msgSend$setPerceptualAudioHash:
-- _objc_msgSend$setPerformDialAssist:
-- _objc_msgSend$setPreviousDecision:
-- _objc_msgSend$setRawAudioGoodnessScore:
-- _objc_msgSend$setRawAudioGoodnessScore:withBump:
-- _objc_msgSend$setRawGoodnessScore:
-- _objc_msgSend$setRecentAlarmBoost:
-- _objc_msgSend$setRecentMotionBoost:
-- _objc_msgSend$setRecentPlaybackBoost:
-- _objc_msgSend$setRecentRaiseToWakeBoost:
-- _objc_msgSend$setRecentSiriRequestBoost:
-- _objc_msgSend$setRecentUnlockBoost:
-- _objc_msgSend$setRecentlyWonBySmallAmount:
-- _objc_msgSend$setThisDevice:
-- _objc_msgSend$setTieBreaker:
-- _objc_msgSend$setTimeSinceLastDecisionInMs:
-- _objc_msgSend$setTrigger:
-- _objc_msgSend$setTrumpReason:
-- _objc_msgSend$setUserConfidence:
-- _objc_msgSend$setWinningDevice:
-- _objc_msgSend$setXPCConnectionManagementQueue:
-- _objc_msgSend$setupAdvIntervalsInDelay:interval:withSlowdown:
-- _objc_msgSend$shouldAbortAnotherDeviceBetter:
-- _objc_msgSend$shouldContinue:
-- _objc_msgSend$shouldLogForQA
-- _objc_msgSend$shouldUnduck:
-- _objc_msgSend$slowdownDelay
-- _objc_msgSend$slowdownRecord:
-- _objc_msgSend$startAdvertisingEmergency
-- _objc_msgSend$startAdvertisingFromAlertFiringVoiceTriggerWithContext:
-- _objc_msgSend$startAdvertisingFromCarPlayTrigger
-- _objc_msgSend$startAdvertisingFromDirectTriggerWithContext:
-- _objc_msgSend$startAdvertisingFromInEarTrigger
-- _objc_msgSend$startAdvertisingFromInTaskVoiceTrigger
-- _objc_msgSend$startAdvertisingFromInTaskVoiceTriggerWithContext:
-- _objc_msgSend$startAdvertisingFromOutgoingTriggerWithContext:
-- _objc_msgSend$startAdvertisingFromVoiceTrigger
-- _objc_msgSend$startAdvertisingFromVoiceTriggerAdjusted:withContext:
-- _objc_msgSend$startAdvertisingFromVoiceTriggerWithContext:
-- _objc_msgSend$startAdvertisingFromVoiceTriggerWithGoodnessScoreContext:withContext:
-- _objc_msgSend$startAdvertisingSlowdown:
-- _objc_msgSend$startMonitoringWithTimeoutInterval:instanceContext:
-- _objc_msgSend$startScanning
-- _objc_msgSend$startScanningAndAdvertisingWithData:
-- _objc_msgSend$startWatchAdvertisingFromDirectTriggerWithContext:
-- _objc_msgSend$startWatchAdvertisingFromVoiceTriggerWithContext:
-- _objc_msgSend$stopAdvertising
-- _objc_msgSend$stopScanning
-- _objc_msgSend$stopScanningAndAdvertising
-- _objc_msgSend$submitAccessoryMyriadMetricsToAnalyticsStream:payload:additionalContext:instrumentation:completion:
-- _objc_msgSend$takePowerAssertionWithName:
-- _objc_msgSend$testDeviceDelay
-- _objc_msgSend$tieBreaker
-- _objc_msgSend$triggerABCForType:subType:context:
-- _objc_msgSend$trumpReason
-- _objc_msgSend$updateBoost:value:
-- _objc_msgSend$updateIsTrump:withReason:
-- _objc_msgSend$userConfidence
-- _objc_msgSend$voiceTriggerEndtimeDelayThreshold
-- _objc_msgSend$voiceTriggerRecord
-- _objc_msgSend$waitWiProx:andExecute:
-- _objc_msgSend$willEndSession:
-- _objc_msgSend$willStartWithSession:
 - _observerWithNotificationName
 - _outputTriggerSeenCallback
 - _publisherWithNotificationName
@@ -3215,5 +2757,4 @@ CStrings:
 - "winner_sent_suppresssion"
 - "\xa1"
 - "\xb1"
-
 ```

@@ -2,77 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/VisualVoicemail.framework/VisualVoicemail`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1b554` | `0x1f54c` | **`+0x3ff8`** |
+| `__TEXT.__gcc_except_tab` | `0x554` | `0x2ca8` | **`+0x2754`** |
+| `__TEXT.__unwind_info` | `0x948` | `0x1090` | **`+0x748`** |
+| `__AUTH_CONST.__objc_const` | `0x3b90` | `0x4110` | **`+0x580`** |
+| `__TEXT.__objc_methlist` | `0x2010` | `0x2208` | **`+0x1f8`** |
+| `__TEXT.__cstring` | `0x101b` | `0x112b` | **`+0x110`** |
+| `__AUTH.__objc_data` | `—` | `0xa0` | **`+0xa0`** |
+| `__TEXT.__oslogstring` | `0x2297` | `0x2300` | **`+0x69`** |
+| `__DATA_CONST.__const` | `0xb10` | `0xb60` | **`+0x50`** |
+| `__AUTH_CONST.__cfstring` | `0x1440` | `0x1480` | **`+0x40`** |
+| `__DATA.__bss` | `0x20` | `0x60` | **`+0x40`** |
+| `__DATA_DIRTY.__bss` | `0x70` | `0x30` | **`-0x40`** |
+| `__DATA.__objc_ivar` | `0x180` | `0x1b8` | **`+0x38`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1378` | `0x13b0` | **`+0x38`** |
+| `__AUTH_CONST.__const` | `0x240` | `0x260` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x230` | `0x240` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x98` | `0xa8` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x80` | `0x90` | **`+0x10`** |
+| `__TEXT.__const` | `0x78` | `0x80` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -956.0.0.0.0
--  __TEXT.__text: 0x1b554
--  __TEXT.__objc_methlist: 0x2010
--  __TEXT.__cstring: 0x101b
--  __TEXT.__gcc_except_tab: 0x554
--  __TEXT.__const: 0x78
--  __TEXT.__oslogstring: 0x2297
--  __TEXT.__unwind_info: 0x948
 +958.0.0.0.0
-+  __TEXT.__text: 0x1f54c
-+  __TEXT.__objc_methlist: 0x2208
-+  __TEXT.__cstring: 0x112b
-+  __TEXT.__gcc_except_tab: 0x2ca8
-+  __TEXT.__const: 0x80
-+  __TEXT.__oslogstring: 0x2300
-+  __TEXT.__unwind_info: 0x1090
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xb10
--  __DATA_CONST.__objc_classlist: 0x98
-+  __DATA_CONST.__const: 0xb60
-+  __DATA_CONST.__objc_classlist: 0xa8
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1378
-+  __DATA_CONST.__objc_selrefs: 0x13b0
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x80
-+  __DATA_CONST.__objc_superrefs: 0x90
-   __DATA_CONST.__objc_arraydata: 0x400
--  __DATA_CONST.__got: 0x230
--  __AUTH_CONST.__const: 0x240
--  __AUTH_CONST.__cfstring: 0x1440
--  __AUTH_CONST.__objc_const: 0x3b90
-+  __DATA_CONST.__got: 0x240
-+  __AUTH_CONST.__const: 0x260
-+  __AUTH_CONST.__cfstring: 0x1480
-+  __AUTH_CONST.__objc_const: 0x4110
-   __AUTH_CONST.__objc_arrayobj: 0x90
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__objc_ivar: 0x180
-+  __AUTH.__objc_data: 0xa0
-+  __DATA.__objc_ivar: 0x1b8
-   __DATA.__data: 0x610
--  __DATA.__bss: 0x20
-+  __DATA.__bss: 0x60
-   __DATA_DIRTY.__objc_data: 0x5f0
--  __DATA_DIRTY.__bss: 0x70
-+  __DATA_DIRTY.__bss: 0x30
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
 +  - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
+
 -  Functions: 790
--  Symbols:   1770
+-  Symbols:   1358
 -  CStrings:  359
 +  Functions: 836
-+  Symbols:   2005
++  Symbols:   1583
 +  CStrings:  368
- 
 Symbols:
 + +[VMVoicemailData supportsSecureCoding]
 + +[VMVoicemailDataContainer supportsSecureCoding]
@@ -382,16 +350,6 @@ Symbols:
 + ___clang_call_terminate
 + ___cxa_begin_catch
 + ___gxx_personality_v0
-+ _objc_msgSend$compare:
-+ _objc_msgSend$fileURLWithPath:isDirectory:
-+ _objc_msgSend$orderedSetWithArray:
-+ _objc_msgSend$setCallbackISOCountryCode:
-+ _objc_msgSend$setReceiverISOCountryCode:
-+ _objc_msgSend$setSenderISOCountryCode:
-+ _objc_msgSend$setSummarizationMetaDataURL:
-+ _objc_msgSend$sortUsingComparator:
-+ _objc_msgSend$stringByAppendingPathComponent:
-+ _objc_msgSend$voicemailsFromContainer:basePath:
 - -[VMVoicemailManager voicemailsUpdated:]
 - GCC_except_table127
 - GCC_except_table135

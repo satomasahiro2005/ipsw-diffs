@@ -2,30 +2,22 @@
 
 > `/usr/lib/swift/libswiftSwiftOnoneSupport.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e290` | `0x1e1e4` | **`-0xac`** |
+| `__TEXT.__cstring` | `0x6c5` | `0x705` | **`+0x40`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1e290
-+  __TEXT.__text: 0x1e1e4
-   __TEXT.__const: 0xaa
--  __TEXT.__cstring: 0x6c5
-+  __TEXT.__cstring: 0x705
-   __TEXT.__swift5_typeref: 0xfc
-   __TEXT.__swift5_types: 0xe8
-   __TEXT.__unwind_info: 0x668
+-6.4.0.23.102
++6.4.0.25.5
 
-   - /usr/lib/swift/libswiftCore.dylib
-   Functions: 1662
-   Symbols:   2723
 -  CStrings:  37
 +  CStrings:  38
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __AUTH_CONST.__const : content changed
 Functions:
 ~ _$ss6_merge3low3mid4high6buffer2bySbSpyxG_A3GSbx_xtKXEtKlFs6UInt64V_Tg5Tm : 576 -> 556
 ~ _$ss6_merge3low3mid4high6buffer2bySbSpyxG_A3GSbx_xtKXEtKlFs7UnicodeO6ScalarV_Tg5 : 576 -> 556
@@ -43,5 +35,4 @@ CStrings:
 + "Swift/ArrayBufferProtocol.swift"
 + "invalid Collection: count differed in successive traversals"
 - "Swift/EmptyCollection.swift"
-
 ```

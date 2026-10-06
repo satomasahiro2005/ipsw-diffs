@@ -2,50 +2,39 @@
 
 > `/System/Library/Audio/Plug-Ins/HAL/AirPlayHalogen.driver/AirPlayHalogen`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__got`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe7fc` | `0xecd0` | **`+0x4d4`** |
+| `__TEXT.__cstring` | `0x3182` | `0x3468` | **`+0x2e6`** |
+| `__TEXT.__oslogstring` | `0x4b` | `0xb6` | **`+0x6b`** |
+| `__TEXT.__auth_stubs` | `0x930` | `0x970` | **`+0x40`** |
+| `__DATA_CONST.__auth_got` | `0x498` | `0x4b8` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x308` | `0x320` | **`+0x18`** |
+| `__DATA.__common` | `—` | `0x10` | **`+0x10`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -980.77.1.2.0
--  __TEXT.__text: 0xe280
--  __TEXT.__auth_stubs: 0x930
 +1005.7.1.0.0
-+  __TEXT.__text: 0xe748
-+  __TEXT.__auth_stubs: 0x970
-   __TEXT.__const: 0xcc
--  __TEXT.__cstring: 0x3182
--  __TEXT.__oslogstring: 0x4b
--  __TEXT.__unwind_info: 0x4c8
-+  __TEXT.__cstring: 0x3468
-+  __TEXT.__oslogstring: 0xb6
-+  __TEXT.__unwind_info: 0x4d0
-   __DATA_CONST.__const: 0x7b8
-   __DATA_CONST.__cfstring: 0x320
--  __DATA_CONST.__auth_got: 0x498
-+  __DATA_CONST.__auth_got: 0x4b8
-   __DATA_CONST.__got: 0x1e0
-   __DATA.__data: 0x238
-+  __DATA.__common: 0x10
-   - /System/Library/Frameworks/CoreAudio.framework/CoreAudio
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
 
-   - /System/Library/PrivateFrameworks/AirPlaySupport.framework/AirPlaySupport
-   - /System/Library/PrivateFrameworks/CoreUtils.framework/CoreUtils
-   - /usr/lib/libSystem.B.dylib
 -  Functions: 316
 -  Symbols:   214
 -  CStrings:  241
 +  Functions: 320
 +  Symbols:   218
 +  CStrings:  266
- 
 Symbols:
 + _FigSignalErrorAt3
 + __os_log_send_and_compose_impl

@@ -2,87 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/SecureMessagingAgentCore.framework/SecureMessagingAgentCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x141408` | `0x141040` | **`-0x3c8`** |
+| `__AUTH_CONST.__objc_const` | `0x26e0` | `0x26a0` | **`-0x40`** |
+| `__TEXT.__const` | `0x87d8` | `0x8798` | **`-0x40`** |
+| `__TEXT.__swift5_fieldmd` | `0x1b00` | `0x1ad0` | **`-0x30`** |
+| `__AUTH.__objc_data` | `0xe38` | `0xe28` | **`-0x10`** |
+| `__DATA.__data` | `0x17b8` | `0x17a8` | **`-0x10`** |
+| `__DATA_CONST.__const` | `0x878` | `0x868` | **`-0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x1892` | `0x1882` | **`-0x10`** |
+| `__AUTH_CONST.__const` | `0x9a71` | `0x9a69` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0xe50` | `0xe48` | **`-0x8`** |
+| `__TEXT.__swift5_typeref` | `0x2408` | `0x2402` | **`-0x6`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__oslogstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x141408
-+  __TEXT.__text: 0x141040
-   __TEXT.__objc_methlist: 0x9d0
--  __TEXT.__const: 0x87d8
-+  __TEXT.__const: 0x8798
-   __TEXT.__cstring: 0x3e49
-   __TEXT.__oslogstring: 0x95ff
--  __TEXT.__swift5_typeref: 0x2408
-+  __TEXT.__swift5_typeref: 0x2402
-   __TEXT.__constg_swiftt: 0x1f3c
--  __TEXT.__swift5_reflstr: 0x1892
--  __TEXT.__swift5_fieldmd: 0x1b00
-+  __TEXT.__swift5_reflstr: 0x1882
-+  __TEXT.__swift5_fieldmd: 0x1ad0
-   __TEXT.__swift5_proto: 0x36c
-   __TEXT.__swift5_types: 0x1e0
-   __TEXT.__swift5_assocty: 0x2c8
+-51.100.1.0.0
++53.100.1.0.0
 
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x878
-+  __DATA_CONST.__const: 0x868
-   __DATA_CONST.__objc_classlist: 0xe0
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x3f8
-   __DATA_CONST.__objc_protorefs: 0x60
-   __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__got: 0xe50
--  __AUTH_CONST.__const: 0x9a71
-+  __DATA_CONST.__got: 0xe48
-+  __AUTH_CONST.__const: 0x9a69
-   __AUTH_CONST.__cfstring: 0x60
--  __AUTH_CONST.__objc_const: 0x26e0
-+  __AUTH_CONST.__objc_const: 0x26a0
-   __AUTH_CONST.__auth_got: 0x1560
--  __AUTH.__objc_data: 0xe38
-+  __AUTH.__objc_data: 0xe28
-   __AUTH.__data: 0x1aa8
-   __DATA.__objc_ivar: 0xc
--  __DATA.__data: 0x17b8
-+  __DATA.__data: 0x17a8
-   __DATA.__bss: 0x4cb0
-   __DATA.__common: 0x420
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 5791
--  Symbols:   17840
+-  Symbols:   11459
 +  Functions: 5787
-+  Symbols:   17826
-   CStrings:  670
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__oslogstring : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH.__data : content changed
++  Symbols:   11445
 Symbols:
 + _$s15SecureMessaging15KDSRegistrationO31UniqueObservingClientIdentifierVAC19IsRegisteredContextVSgAC0hI6ResultVIeghHnnr_AE_AHtAJs5Error_pIeghHnrzo_TRTA.158TQ0_
 + _$s15SecureMessaging15KDSRegistrationO31UniqueObservingClientIdentifierVAC19IsRegisteredContextVSgAC0hI6ResultVIeghHnnr_AE_AHtAJs5Error_pIeghHnrzo_TRTA.158Tu
@@ -181,5 +131,4 @@ CStrings:
 + "State Machine moved from success to getPhoneNumberInfo"
 - "State Machine moved from success -> getPhoneAuthInfo"
 - "State Machine moved from success to getPhoneAuthInfo"
-
 ```

@@ -2,6 +2,8 @@
 
 > `/System/Library/ExtensionKit/Extensions/UnilogTelemetryWorker.appex/UnilogTelemetryWorker`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_1000040b8 : 12 -> 44

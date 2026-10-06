@@ -2,5 +2,14 @@
 
 > `/System/Library/PrivateFrameworks/DataDetectorsUI.framework/PlugIns/com.apple.DataDetectorsUI.ActionsExtension.appex/com.apple.DataDetectorsUI.ActionsExtension`
 
-Sections:
-~ __TEXT.__const : content changed
+### Same-size Content Changes
+
+- `__TEXT.__const`
+
+### Other Changes
+
+```diff
+
+-611.0.0.0.0
++612.0.0.0.0
+```

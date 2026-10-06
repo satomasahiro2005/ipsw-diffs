@@ -2,137 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/PodcastsUI.framework/PodcastsUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x13d670` | `0x138f40` | **`-0x4730`** |
+| `__TEXT.__swift5_reflstr` | `0x2336` | `0x1cdf` | **`-0x657`** |
+| `__AUTH_CONST.__const` | `0x8500` | `0x7fb8` | **`-0x548`** |
+| `__DATA_DIRTY.__objc_data` | `0x1590` | `0x1140` | **`-0x450`** |
+| `__AUTH_CONST.__objc_const` | `0x7dd8` | `0x79b8` | **`-0x420`** |
+| `__TEXT.__swift5_fieldmd` | `0x2a4c` | `0x2694` | **`-0x3b8`** |
+| `__TEXT.__constg_swiftt` | `0x30fc` | `0x2d8c` | **`-0x370`** |
+| `__TEXT.__const` | `0xa838` | `0xa680` | **`-0x1b8`** |
+| `__TEXT.__unwind_info` | `0x53d0` | `0x5298` | **`-0x138`** |
+| `__DATA_DIRTY.__data` | `0x48a0` | `0x4770` | **`-0x130`** |
+| `__TEXT.__swift5_capture` | `0x1584` | `0x1458` | **`-0x12c`** |
+| `__TEXT.__swift5_typeref` | `0x665e` | `0x654c` | **`-0x112`** |
+| `__AUTH.__objc_data` | `0xb80` | `0xa78` | **`-0x108`** |
+| `__DATA_CONST.__objc_selrefs` | `0x41c0` | `0x40b8` | **`-0x108`** |
+| `__TEXT.__eh_frame` | `0x6bbc` | `0x6cc4` | **`+0x108`** |
+| `__TEXT.__objc_methlist` | `0x48f4` | `0x47ec` | **`-0x108`** |
+| `__DATA.__bss` | `0x6a60` | `0x69d0` | **`-0x90`** |
+| `__TEXT.__cstring` | `0x46a9` | `0x4626` | **`-0x83`** |
+| `__AUTH.__data` | `0x4a8` | `0x520` | **`+0x78`** |
+| `__AUTH_CONST.__auth_got` | `0x3630` | `0x3680` | **`+0x50`** |
+| `__DATA_CONST.__const` | `0x1430` | `0x13e8` | **`-0x48`** |
+| `__DATA.__data` | `0x21d0` | `0x21a0` | **`-0x30`** |
+| `__TEXT.__oslogstring` | `0x35cd` | `0x35fd` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0x2a0` | `0x288` | **`-0x18`** |
+| `__DATA_CONST.__got` | `0x1fd8` | `0x1fc8` | **`-0x10`** |
+| `__TEXT.__swift5_proto` | `0x5d8` | `0x5c8` | **`-0x10`** |
+| `__TEXT.__swift5_types` | `0x378` | `0x36c` | **`-0xc`** |
+| `__TEXT.__swift_as_cont` | `0x470` | `0x47c` | **`+0xc`** |
+| `__TEXT.__swift_as_entry` | `0x1e8` | `0x1f0` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x234` | `0x23c` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x50` | `0x4c` | **`-0x4`** |
+
+### Other Changes
 
 ```diff
 
 -4027.100.75.0.0
--  __TEXT.__text: 0x13d670
--  __TEXT.__objc_methlist: 0x48f4
--  __TEXT.__const: 0xa838
--  __TEXT.__cstring: 0x46a9
--  __TEXT.__oslogstring: 0x35cd
 +4027.100.80.0.0
-+  __TEXT.__text: 0x138f40
-+  __TEXT.__objc_methlist: 0x47ec
-+  __TEXT.__const: 0xa680
-+  __TEXT.__cstring: 0x4626
-+  __TEXT.__oslogstring: 0x35fd
-   __TEXT.__gcc_except_tab: 0x9fc
-   __TEXT.__ustring: 0x8
-   __TEXT.__dlopen_cstrs: 0x8e
--  __TEXT.__swift5_typeref: 0x665e
--  __TEXT.__swift5_capture: 0x1584
--  __TEXT.__constg_swiftt: 0x30fc
--  __TEXT.__swift5_reflstr: 0x2336
--  __TEXT.__swift5_fieldmd: 0x2a4c
-+  __TEXT.__swift5_typeref: 0x654c
-+  __TEXT.__swift5_capture: 0x1458
-+  __TEXT.__constg_swiftt: 0x2d8c
-+  __TEXT.__swift5_reflstr: 0x1cdf
-+  __TEXT.__swift5_fieldmd: 0x2694
-   __TEXT.__swift5_builtin: 0x1cc
-   __TEXT.__swift5_assocty: 0x710
--  __TEXT.__swift5_proto: 0x5d8
--  __TEXT.__swift5_types: 0x378
--  __TEXT.__swift5_protos: 0x50
--  __TEXT.__swift_as_entry: 0x1e8
--  __TEXT.__swift_as_ret: 0x234
--  __TEXT.__swift_as_cont: 0x470
-+  __TEXT.__swift5_proto: 0x5c8
-+  __TEXT.__swift5_types: 0x36c
-+  __TEXT.__swift5_protos: 0x4c
-+  __TEXT.__swift_as_entry: 0x1f0
-+  __TEXT.__swift_as_ret: 0x23c
-+  __TEXT.__swift_as_cont: 0x47c
-   __TEXT.__swift5_mpenum: 0x30
--  __TEXT.__unwind_info: 0x53d0
--  __TEXT.__eh_frame: 0x6bbc
-+  __TEXT.__unwind_info: 0x5298
-+  __TEXT.__eh_frame: 0x6cc4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1430
--  __DATA_CONST.__objc_classlist: 0x2a0
-+  __DATA_CONST.__const: 0x13e8
-+  __DATA_CONST.__objc_classlist: 0x288
-   __DATA_CONST.__objc_catlist: 0xa8
-   __DATA_CONST.__objc_protolist: 0x170
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x41c0
-+  __DATA_CONST.__objc_selrefs: 0x40b8
-   __DATA_CONST.__objc_protorefs: 0xb8
-   __DATA_CONST.__objc_superrefs: 0xe8
-   __DATA_CONST.__objc_arraydata: 0x58
--  __DATA_CONST.__got: 0x1fd8
--  __AUTH_CONST.__const: 0x8500
-+  __DATA_CONST.__got: 0x1fc8
-+  __AUTH_CONST.__const: 0x7fb8
-   __AUTH_CONST.__cfstring: 0x2400
--  __AUTH_CONST.__objc_const: 0x7dd8
-+  __AUTH_CONST.__objc_const: 0x79b8
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_doubleobj: 0x50
-   __AUTH_CONST.__objc_arrayobj: 0xa8
-   __AUTH_CONST.__objc_intobj: 0x30
--  __AUTH_CONST.__auth_got: 0x3630
--  __AUTH.__objc_data: 0xb80
--  __AUTH.__data: 0x4a8
-+  __AUTH_CONST.__auth_got: 0x3680
-+  __AUTH.__objc_data: 0xa78
-+  __AUTH.__data: 0x520
-   __DATA.__objc_ivar: 0x3cc
--  __DATA.__data: 0x21d0
-+  __DATA.__data: 0x21a0
-   __DATA.__common: 0x20
--  __DATA.__bss: 0x6a60
--  __DATA_DIRTY.__objc_data: 0x1590
--  __DATA_DIRTY.__data: 0x48a0
-+  __DATA.__bss: 0x69d0
-+  __DATA_DIRTY.__objc_data: 0x1140
-+  __DATA_DIRTY.__data: 0x4770
-   __DATA_DIRTY.__bss: 0x4c90
-   __DATA_DIRTY.__common: 0x50
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
 
-   - /usr/lib/swift/libswiftQuartzCore.dylib
-   - /usr/lib/swift/libswiftRegexBuilder.dylib
-   - /usr/lib/swift/libswiftSpatial.dylib
 +  - /usr/lib/swift/libswiftSynchronization.dylib
-   - /usr/lib/swift/libswiftSystem.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7156
--  Symbols:   6602
+-  Symbols:   4987
 -  CStrings:  852
 +  Functions: 6983
-+  Symbols:   6533
++  Symbols:   4949
 +  CStrings:  850
- 
 Symbols:
 + __DATA__TtC10PodcastsUI18ShowFiltersTracker
 + __IVARS__TtC10PodcastsUI18ShowFiltersTracker
@@ -198,37 +118,6 @@ Symbols:
 - _get_witness_table SHR_7SwiftUI4ViewR0_r1_lqd0__AaBHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA5GroupVyAA19_ConditionalContentVyAJyAcAE5alert11isPresented7contentQrAA7BindingVySbG_AA5AlertVyXEtFQOyAcAE12labelsHiddenQryFQOyAA6PickerVyAA4TextVq_q0_G_Qo__Qo_AYGAJyAcAE11actionSheetAlMQrAP_AA06ActionV0VyXEtFQOyAY_Qo_AYGGG_q_Qo__q_Qo_HO
 - _kMTIgnoredAssetsTotalSpaceKey
 - _kMTShouldPromptStorageCleanupKey
-- _objc_msgSend$addGestureRecognizer:
-- _objc_msgSend$addLayoutGuide:
-- _objc_msgSend$centerYAnchor
-- _objc_msgSend$configurationWithFont:
-- _objc_msgSend$constraintEqualToAnchor:
-- _objc_msgSend$constraintEqualToConstant:
-- _objc_msgSend$constraintGreaterThanOrEqualToAnchor:
-- _objc_msgSend$constraintGreaterThanOrEqualToAnchor:constant:
-- _objc_msgSend$deactivateConstraints:
-- _objc_msgSend$firstBaselineAnchor
-- _objc_msgSend$heightAnchor
-- _objc_msgSend$initWithCoder:
-- _objc_msgSend$initWithTarget:action:
-- _objc_msgSend$setActive:
-- _objc_msgSend$setAdjustsFontForContentSizeCategory:
-- _objc_msgSend$setAllowsGroupBlending:
-- _objc_msgSend$setCompositingFilter:
-- _objc_msgSend$setContentHuggingPriority:forAxis:
-- _objc_msgSend$setFont:
-- _objc_msgSend$setImage:forState:
-- _objc_msgSend$setMasksToBounds:
-- _objc_msgSend$setMaximumContentSizeCategory:
-- _objc_msgSend$setNumberOfLines:
-- _objc_msgSend$setShadowColor:
-- _objc_msgSend$setShadowOffset:
-- _objc_msgSend$setShadowOpacity:
-- _objc_msgSend$setShadowRadius:
-- _objc_msgSend$setTextColor:
-- _objc_msgSend$setTintColor:
-- _objc_msgSend$systemGray4Color
-- _objc_msgSend$widthAnchor
 - _symbolic $s10PodcastsUI26EpisodeUpsellConfiguration33_7356E91B5F9CFCB46676D7EB93CF2B44LLP
 - _symbolic Say_____G So17OS_dispatch_queueC8DispatchE10AttributesV
 - _symbolic SdSg

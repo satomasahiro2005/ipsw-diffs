@@ -2,83 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a05d8` | `0x1a0e88` | **`+0x8b0`** |
+| `__AUTH.__objc_data` | `0x8660` | `0x84f8` | **`-0x168`** |
+| `__DATA_DIRTY.__objc_data` | `0xfa0` | `0x1108` | **`+0x168`** |
+| `__TEXT.__cstring` | `0x3d9a3` | `0x3da93` | **`+0xf0`** |
+| `__TEXT.__oslogstring` | `0xf845` | `0xf8f8` | **`+0xb3`** |
+| `__AUTH_CONST.__objc_const` | `0x365f8` | `0x366a8` | **`+0xb0`** |
+| `__AUTH_CONST.__cfstring` | `0x287c0` | `0x28820` | **`+0x60`** |
+| `__DATA.__data` | `0x4860` | `0x48c0` | **`+0x60`** |
+| `__TEXT.__objc_methlist` | `0x1f31c` | `0x1f374` | **`+0x58`** |
+| `__DATA_CONST.__objc_selrefs` | `0xc210` | `0xc240` | **`+0x30`** |
+| `__AUTH_CONST.__objc_intobj` | `0x2700` | `0x2718` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x259c` | `0x25ac` | **`+0x10`** |
+| `__DATA_CONST.__objc_arraydata` | `0x2440` | `0x2450` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x8218` | `0x8228` | **`+0x10`** |
+| `__DATA.__bss` | `0x13c0` | `0x13b8` | **`-0x8`** |
+| `__DATA_CONST.__const` | `0x8730` | `0x8738` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x16f0` | `0x16f8` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x5f0` | `0x5f8` | **`+0x8`** |
+| `__DATA_DIRTY.__bss` | `0x1f0` | `0x1f8` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x21d8` | `0x21e0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3605.23.1.1.1
--  __TEXT.__text: 0x19597c
--  __TEXT.__objc_methlist: 0x1f31c
 +3605.24.1.1.1
-+  __TEXT.__text: 0x196214
-+  __TEXT.__objc_methlist: 0x1f374
-   __TEXT.__const: 0x3d0
-   __TEXT.__dlopen_cstrs: 0x538
--  __TEXT.__gcc_except_tab: 0x21d8
--  __TEXT.__cstring: 0x3d9a3
--  __TEXT.__oslogstring: 0xf845
-+  __TEXT.__gcc_except_tab: 0x21e0
-+  __TEXT.__cstring: 0x3da93
-+  __TEXT.__oslogstring: 0xf8f8
-   __TEXT.__ustring: 0x2ac
--  __TEXT.__unwind_info: 0x9f28
-+  __TEXT.__unwind_info: 0x9f48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x8730
-+  __DATA_CONST.__const: 0x8738
-   __DATA_CONST.__objc_classlist: 0xf00
-   __DATA_CONST.__objc_catlist: 0x2a8
--  __DATA_CONST.__objc_protolist: 0x5f0
-+  __DATA_CONST.__objc_protolist: 0x5f8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xc210
-+  __DATA_CONST.__objc_selrefs: 0xc240
-   __DATA_CONST.__objc_protorefs: 0x178
-   __DATA_CONST.__objc_superrefs: 0xf18
--  __DATA_CONST.__objc_arraydata: 0x2440
--  __DATA_CONST.__got: 0x16f0
-+  __DATA_CONST.__objc_arraydata: 0x2450
-+  __DATA_CONST.__got: 0x16f8
-   __AUTH_CONST.__const: 0x3ca0
--  __AUTH_CONST.__cfstring: 0x287c0
--  __AUTH_CONST.__objc_const: 0x365f8
--  __AUTH_CONST.__objc_intobj: 0x2700
-+  __AUTH_CONST.__cfstring: 0x28820
-+  __AUTH_CONST.__objc_const: 0x366a8
-+  __AUTH_CONST.__objc_intobj: 0x2718
-   __AUTH_CONST.__objc_dictobj: 0xd20
-   __AUTH_CONST.__objc_arrayobj: 0x5d0
-   __AUTH_CONST.__objc_doubleobj: 0x40
-   __AUTH_CONST.__auth_got: 0xad8
--  __AUTH.__objc_data: 0x8660
-+  __AUTH.__objc_data: 0x84f8
-   __AUTH.__data: 0x248
--  __DATA.__objc_ivar: 0x259c
--  __DATA.__data: 0x4860
-+  __DATA.__objc_ivar: 0x25ac
-+  __DATA.__data: 0x48c0
-   __DATA.__common: 0x18
--  __DATA_DIRTY.__objc_data: 0xfa0
-+  __DATA_DIRTY.__objc_data: 0x1108
-   __DATA_DIRTY.__data: 0x18
--  __DATA_DIRTY.__bss: 0x1f0
-+  __DATA_DIRTY.__bss: 0x1f8
-   __DATA_DIRTY.__common: 0xf8
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12182
--  Symbols:   26901
+-  Symbols:   22325
 -  CStrings:  8654
 +  Functions: 12191
-+  Symbols:   26923
++  Symbols:   22344
 +  CStrings:  8665
- 
 Symbols:
 + +[AFFeatureFlags(SWEFeatureFlags) isAppExclusionsEnabled]
 + -[AFConnection _cleanupRoutingStandby]
@@ -284,9 +245,6 @@ Symbols:
 + ___35-[AFConnection scdaStandbyDidBegin]_block_invoke
 + ___39-[AFConnection scdaStandbyDidEndAsWon:]_block_invoke
 + ___AFSiriActivationOdeonProxyVoiceTrigger_block_invoke
-+ _objc_msgSend$_cleanupRoutingStandby
-+ _objc_msgSend$_resetSpeechTimingForSpeechRequest:options:systemUptime:
-+ _objc_msgSend$setListener:
 - GCC_except_table10066
 - GCC_except_table10068
 - GCC_except_table10092

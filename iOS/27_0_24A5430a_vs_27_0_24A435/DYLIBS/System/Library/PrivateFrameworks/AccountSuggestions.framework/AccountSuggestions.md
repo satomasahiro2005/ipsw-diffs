@@ -2,22 +2,23 @@
 
 > `/System/Library/PrivateFrameworks/AccountSuggestions.framework/AccountSuggestions`
 
-```diff
+### Section Size Changes
 
- 112.0.0.0.0
--  __TEXT.__text: 0x1afd0
-+  __TEXT.__text: 0x1b01c
-   __TEXT.__objc_methlist: 0x20
-   __TEXT.__const: 0x69a
-   __TEXT.__swift5_typeref: 0x2cf
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1afd0` | `0x1b01c` | **`+0x4c`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2504e91ec -> sub_250f381ec : 1188 -> 1192
-~ sub_2504eadb8 -> sub_250f39dbc : 7432 -> 7456
-~ sub_2504ef084 -> sub_250f3e0a0 : 680 -> 684
-~ sub_2504f1f68 -> sub_250f40f88 : 3764 -> 3768
-~ sub_2504f5c0c -> sub_250f44c30 : 1720 -> 1712
-~ sub_2504fa6f0 -> sub_250f4970c : 2176 -> 2212
-~ sub_2504fbd38 -> sub_250f4ad78 : 492 -> 496
-~ sub_2504ff518 -> sub_250f4e55c : 648 -> 652
-~ sub_2504ff7a0 -> sub_250f4e7e8 : 360 -> 364
+~ sub_24ff6d1ec -> sub_250e011ec : 1188 -> 1192
+~ sub_24ff6edb8 -> sub_250e02dbc : 7432 -> 7456
+~ sub_24ff73084 -> sub_250e070a0 : 680 -> 684
+~ sub_24ff75f68 -> sub_250e09f88 : 3764 -> 3768
+~ sub_24ff79c0c -> sub_250e0dc30 : 1720 -> 1712
+~ sub_24ff7e6f0 -> sub_250e1270c : 2176 -> 2212
+~ sub_24ff7fd38 -> sub_250e13d78 : 492 -> 496
+~ sub_24ff83518 -> sub_250e1755c : 648 -> 652
+~ sub_24ff837a0 -> sub_250e177e8 : 360 -> 364
 ```

@@ -2,93 +2,52 @@
 
 > `/System/Library/Frameworks/ComputeGraph.framework/ComputeGraph`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1482ac` | `0x143f08` | **`-0x43a4`** |
+| `__TEXT.__const` | `0x1eb54` | `0x1e904` | **`-0x250`** |
+| `__TEXT.__unwind_info` | `0x5198` | `0x4f80` | **`-0x218`** |
+| `__TEXT.__swift_as_cont` | `0x338` | `0x170` | **`-0x1c8`** |
+| `__DATA.__bss` | `0x21150` | `0x20f90` | **`-0x1c0`** |
+| `__TEXT.__constg_swiftt` | `0x4298` | `0x40f4` | **`-0x1a4`** |
+| `__TEXT.__swift5_capture` | `0x558` | `0x3b4` | **`-0x1a4`** |
+| `__TEXT.__swift5_typeref` | `0x4596` | `0x43fc` | **`-0x19a`** |
+| `__AUTH_CONST.__const` | `0x11c30` | `0x11db0` | **`+0x180`** |
+| `__AUTH_CONST.__objc_const` | `0x33e8` | `0x3290` | **`-0x158`** |
+| `__AUTH.__data` | `0x13d8` | `0x12c0` | **`-0x118`** |
+| `__TEXT.__swift5_reflstr` | `0x35b0` | `0x34b0` | **`-0x100`** |
+| `__TEXT.__cstring` | `0x682c` | `0x691c` | **`+0xf0`** |
+| `__TEXT.__eh_frame` | `0x9584` | `0x94e8` | **`-0x9c`** |
+| `__TEXT.__oslogstring` | `0x13a` | `0x1ca` | **`+0x90`** |
+| `__TEXT.__swift5_fieldmd` | `0x6144` | `0x60c8` | **`-0x7c`** |
+| `__DATA.__common` | `0x5a8` | `0x568` | **`-0x40`** |
+| `__TEXT.__swift5_assocty` | `0xb88` | `0xb60` | **`-0x28`** |
+| `__TEXT.__swift_as_ret` | `0x38` | `0x5c` | **`+0x24`** |
+| `__AUTH_CONST.__auth_got` | `0x1128` | `0x1148` | **`+0x20`** |
+| `__TEXT.__swift5_builtin` | `0x410` | `0x424` | **`+0x14`** |
+| `__TEXT.__swift5_proto` | `0x1108` | `0x111c` | **`+0x14`** |
+| `__TEXT.__swift5_protos` | `0x68` | `0x54` | **`-0x14`** |
+| `__TEXT.__swift_as_entry` | `0x68` | `0x7c` | **`+0x14`** |
+| `__TEXT.__swift5_types` | `0x82c` | `0x83c` | **`+0x10`** |
+| `__DATA.__data` | `0x2a90` | `0x2a88` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0xa8` | `0xa0` | **`-0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x160` | `0x168` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -27.0.0.0.0
--  __TEXT.__text: 0x1482ac
 +30.0.0.0.0
-+  __TEXT.__text: 0x143f08
-   __TEXT.__objc_methlist: 0x12ac
--  __TEXT.__const: 0x1eb54
--  __TEXT.__swift5_typeref: 0x4596
--  __TEXT.__cstring: 0x682c
--  __TEXT.__swift5_reflstr: 0x35b0
--  __TEXT.__swift5_assocty: 0xb88
--  __TEXT.__constg_swiftt: 0x4298
--  __TEXT.__swift5_fieldmd: 0x6144
--  __TEXT.__swift5_proto: 0x1108
--  __TEXT.__swift5_types: 0x82c
--  __TEXT.__swift5_builtin: 0x410
--  __TEXT.__swift5_protos: 0x68
--  __TEXT.__swift5_mpenum: 0x160
--  __TEXT.__swift5_capture: 0x558
--  __TEXT.__swift_as_entry: 0x68
--  __TEXT.__swift_as_ret: 0x38
--  __TEXT.__swift_as_cont: 0x338
-+  __TEXT.__const: 0x1e904
-+  __TEXT.__swift5_typeref: 0x43fc
-+  __TEXT.__cstring: 0x691c
-+  __TEXT.__swift5_reflstr: 0x34b0
-+  __TEXT.__swift5_assocty: 0xb60
-+  __TEXT.__constg_swiftt: 0x40f4
-+  __TEXT.__swift5_fieldmd: 0x60c8
-+  __TEXT.__swift5_proto: 0x111c
-+  __TEXT.__swift5_types: 0x83c
-+  __TEXT.__swift5_builtin: 0x424
-+  __TEXT.__swift5_protos: 0x54
-+  __TEXT.__swift5_mpenum: 0x168
-+  __TEXT.__swift5_capture: 0x3b4
-+  __TEXT.__oslogstring: 0x1ca
-+  __TEXT.__swift_as_entry: 0x7c
-+  __TEXT.__swift_as_ret: 0x5c
-+  __TEXT.__swift_as_cont: 0x170
-   __TEXT.__swift5_types2: 0x14
--  __TEXT.__oslogstring: 0x13a
--  __TEXT.__unwind_info: 0x5198
--  __TEXT.__eh_frame: 0x9584
-+  __TEXT.__unwind_info: 0x4f80
-+  __TEXT.__eh_frame: 0x94e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x4e8
--  __DATA_CONST.__objc_classlist: 0xa8
-+  __DATA_CONST.__objc_classlist: 0xa0
-   __DATA_CONST.__objc_protolist: 0x110
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xc88
-   __DATA_CONST.__objc_protorefs: 0x88
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x11c30
--  __AUTH_CONST.__objc_const: 0x33e8
--  __AUTH_CONST.__auth_got: 0x1128
--  __AUTH.__data: 0x13d8
--  __DATA.__data: 0x2a90
--  __DATA.__bss: 0x21150
--  __DATA.__common: 0x5a8
-+  __AUTH_CONST.__const: 0x11db0
-+  __AUTH_CONST.__objc_const: 0x3290
-+  __AUTH_CONST.__auth_got: 0x1148
-+  __AUTH.__data: 0x12c0
-+  __DATA.__data: 0x2a88
-+  __DATA.__bss: 0x20f90
-+  __DATA.__common: 0x568
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/Metal.framework/Metal
-   - /usr/lib/libSystem.B.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7551
--  Symbols:   20866
+-  Symbols:   20767
 -  CStrings:  872
 +  Functions: 7405
-+  Symbols:   20650
++  Symbols:   20549
 +  CStrings:  879
- 
 Symbols:
 + _$s12ComputeGraph0A4PlanV12makePipeline2id7request8compilerAA05StageE6ResultOSi_AA18CompilationRequestVAA0aB8CompilerVtKF
 + _$s12ComputeGraph0A4PlanVAA05StageC0A2aDP12functionSets7stageID8assembly8builtInsSayAA11FunctionSet_pGSi_AA0aB8AssemblyVAA0ab5BuiltK0CtKFTW
@@ -771,8 +730,6 @@ Symbols:
 + _associated conformance 12ComputeGraph0a4NodeB0V5StageVSHAASQ
 + _associated conformance 12ComputeGraph0aB8CompilerV17ContextDefinitionV10VisibilityOSHAASQ
 + _get_enum_tag_for_layout_string 12ComputeGraph19StagePipelineResultO
-+ _objc_msgSend$argumentBuffersSupport
-+ _objc_msgSend$newComputePipelineStateWithDescriptor:options:completionHandler:
 + _swift_task_create
 + _symbolic $s12ComputeGraph9StagePlanP
 + _symbolic SDy__________G 12ComputeGraph0B7ContextV AA0aB8CompilerV0C10DefinitionV

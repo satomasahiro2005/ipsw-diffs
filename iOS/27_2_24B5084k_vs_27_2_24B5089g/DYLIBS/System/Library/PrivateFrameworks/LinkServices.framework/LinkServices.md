@@ -2,126 +2,67 @@
 
 > `/System/Library/PrivateFrameworks/LinkServices.framework/LinkServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1231d4` | `0x14b760` | **`+0x2858c`** |
+| `__TEXT.__oslogstring` | `0x8f60` | `0x9ff3` | **`+0x1093`** |
+| `__AUTH_CONST.__const` | `0x59b8` | `0x6540` | **`+0xb88`** |
+| `__TEXT.__const` | `0x6e88` | `0x7878` | **`+0x9f0`** |
+| `__AUTH_CONST.__objc_const` | `0x167b8` | `0x16f68` | **`+0x7b0`** |
+| `__TEXT.__cstring` | `0xc080` | `0xc821` | **`+0x7a1`** |
+| `__TEXT.__eh_frame` | `0x4578` | `0x4cb0` | **`+0x738`** |
+| `__DATA.__bss` | `0x4150` | `0x4818` | **`+0x6c8`** |
+| `__TEXT.__unwind_info` | `0x56a0` | `0x5c40` | **`+0x5a0`** |
+| `__TEXT.__swift5_typeref` | `0x287a` | `0x2e12` | **`+0x598`** |
+| `__DATA_DIRTY.__objc_data` | `0x1ec8` | `0x2440` | **`+0x578`** |
+| `__AUTH_CONST.__auth_got` | `0x13a0` | `0x1850` | **`+0x4b0`** |
+| `__AUTH.__data` | `0xf20` | `0x1388` | **`+0x468`** |
+| `__TEXT.__swift5_reflstr` | `0xa5c` | `0xe7c` | **`+0x420`** |
+| `__DATA.__data` | `0x24c4` | `0x28ac` | **`+0x3e8`** |
+| `__TEXT.__swift5_fieldmd` | `0xdfc` | `0x11dc` | **`+0x3e0`** |
+| `__TEXT.__constg_swiftt` | `0x1810` | `0x1b40` | **`+0x330`** |
+| `__TEXT.__swift5_capture` | `0x1034` | `0x1318` | **`+0x2e4`** |
+| `__AUTH_CONST.__cfstring` | `0x8be0` | `0x8e80` | **`+0x2a0`** |
+| `__TEXT.__objc_methlist` | `0xb0b0` | `0xb340` | **`+0x290`** |
+| `__AUTH.__objc_data` | `0x3ff0` | `0x3dc8` | **`-0x228`** |
+| `__DATA_CONST.__objc_selrefs` | `0x52c0` | `0x54e0` | **`+0x220`** |
+| `__DATA_CONST.__got` | `0x17d0` | `0x19d8` | **`+0x208`** |
+| `__DATA_DIRTY.__bss` | `0x140` | `0x2a8` | **`+0x168`** |
+| `__DATA_CONST.__const` | `0x2930` | `0x2a30` | **`+0x100`** |
+| `__TEXT.__swift5_assocty` | `0x210` | `0x2b8` | **`+0xa8`** |
+| `__TEXT.__gcc_except_tab` | `0x1fe4` | `0x2060` | **`+0x7c`** |
+| `__TEXT.__swift5_builtin` | `0x208` | `0x258` | **`+0x50`** |
+| `__TEXT.__swift5_types` | `0x160` | `0x1a4` | **`+0x44`** |
+| `__TEXT.__swift5_proto` | `0x244` | `0x284` | **`+0x40`** |
+| `__TEXT.__swift_as_cont` | `0x198` | `0x1d8` | **`+0x40`** |
+| `__DATA_CONST.__objc_classlist` | `0x850` | `0x888` | **`+0x38`** |
+| `__DATA_DIRTY.__data` | `0x40` | `0x78` | **`+0x38`** |
+| `__DATA.__common` | `0x50` | `0x70` | **`+0x20`** |
+| `__TEXT.__swift_as_entry` | `0x100` | `0x11c` | **`+0x1c`** |
+| `__TEXT.__swift_as_ret` | `0x120` | `0x13c` | **`+0x1c`** |
+| `__TEXT.__swift5_mpenum` | `0x50` | `0x68` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0xb00` | `0xb14` | **`+0x14`** |
+| `__TEXT.__swift5_protos` | `0x40` | `0x44` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -301.1.9.1.101
--  __TEXT.__text: 0x11bab8
 +301.1.10.2.101
-+  __TEXT.__text: 0x142f34
-   __TEXT.__lazy_helpers: 0xa8
--  __TEXT.__objc_methlist: 0xb0b0
-+  __TEXT.__objc_methlist: 0xb340
-   __TEXT.__dlopen_cstrs: 0x5cd
--  __TEXT.__const: 0x6e88
--  __TEXT.__swift5_typeref: 0x287a
--  __TEXT.__swift5_fieldmd: 0xdfc
--  __TEXT.__constg_swiftt: 0x1810
--  __TEXT.__swift5_builtin: 0x208
--  __TEXT.__swift5_reflstr: 0xa5c
--  __TEXT.__swift5_assocty: 0x210
--  __TEXT.__cstring: 0xc080
--  __TEXT.__swift5_protos: 0x40
--  __TEXT.__swift5_proto: 0x244
--  __TEXT.__swift5_types: 0x160
--  __TEXT.__swift5_capture: 0x1034
--  __TEXT.__oslogstring: 0x8f60
--  __TEXT.__swift_as_entry: 0x100
--  __TEXT.__swift_as_ret: 0x120
--  __TEXT.__swift_as_cont: 0x198
--  __TEXT.__swift5_mpenum: 0x50
--  __TEXT.__gcc_except_tab: 0x1fe4
--  __TEXT.__unwind_info: 0x6378
--  __TEXT.__eh_frame: 0x4578
-+  __TEXT.__const: 0x7878
-+  __TEXT.__cstring: 0xc821
-+  __TEXT.__constg_swiftt: 0x1b40
-+  __TEXT.__swift5_typeref: 0x2e12
-+  __TEXT.__swift5_builtin: 0x258
-+  __TEXT.__swift5_reflstr: 0xe7c
-+  __TEXT.__swift5_fieldmd: 0x11dc
-+  __TEXT.__swift5_assocty: 0x2b8
-+  __TEXT.__swift5_capture: 0x1318
-+  __TEXT.__oslogstring: 0x9ff3
-+  __TEXT.__swift5_proto: 0x284
-+  __TEXT.__swift5_types: 0x1a4
-+  __TEXT.__swift_as_entry: 0x11c
-+  __TEXT.__swift_as_ret: 0x13c
-+  __TEXT.__swift_as_cont: 0x1d8
-+  __TEXT.__swift5_protos: 0x44
-+  __TEXT.__swift5_mpenum: 0x68
-+  __TEXT.__gcc_except_tab: 0x2060
-+  __TEXT.__unwind_info: 0x6ad8
-+  __TEXT.__eh_frame: 0x4cb0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2930
--  __DATA_CONST.__objc_classlist: 0x850
-+  __DATA_CONST.__const: 0x2a30
-+  __DATA_CONST.__objc_classlist: 0x888
-   __DATA_CONST.__objc_catlist: 0x138
-   __DATA_CONST.__objc_protolist: 0x1e0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x52c0
-+  __DATA_CONST.__objc_selrefs: 0x54e0
-   __DATA_CONST.__objc_protorefs: 0x100
-   __DATA_CONST.__objc_superrefs: 0x608
-   __DATA_CONST.__objc_arraydata: 0x8
--  __DATA_CONST.__got: 0x17d0
--  __AUTH_CONST.__const: 0x59b8
--  __AUTH_CONST.__cfstring: 0x8be0
--  __AUTH_CONST.__objc_const: 0x167b8
-+  __DATA_CONST.__got: 0x19d8
-+  __AUTH_CONST.__const: 0x6540
-+  __AUTH_CONST.__cfstring: 0x8e80
-+  __AUTH_CONST.__objc_const: 0x16f68
-   __AUTH_CONST.__lazy_load_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x78
-   __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__auth_got: 0x13a0
--  __AUTH.__objc_data: 0x3ff0
--  __AUTH.__data: 0xf20
--  __DATA.__objc_ivar: 0xb00
--  __DATA.__data: 0x24c4
--  __DATA.__common: 0x50
--  __DATA_DIRTY.__objc_data: 0x1ec8
--  __DATA_DIRTY.__data: 0x40
--  __DATA_DIRTY.__bss: 0x140
-+  __AUTH_CONST.__auth_got: 0x1850
-+  __AUTH.__objc_data: 0x3dc8
-+  __AUTH.__data: 0x1388
-+  __DATA.__objc_ivar: 0xb14
-+  __DATA.__data: 0x28ac
-+  __DATA.__common: 0x70
-+  __DATA_DIRTY.__objc_data: 0x2440
-+  __DATA_DIRTY.__data: 0x78
-+  __DATA_DIRTY.__bss: 0x2a8
-   - /System/Library/Frameworks/AppIntentsTypeSupport.framework/AppIntentsTypeSupport
+
 +  - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreLocation.framework/CoreLocation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
 
-   - /System/Library/PrivateFrameworks/BiomeStorage.framework/BiomeStorage
-   - /System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
 +  - /System/Library/PrivateFrameworks/CorePhoneNumbers.framework/CorePhoneNumbers
-   - /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
-   - /System/Library/PrivateFrameworks/IntentsCore.framework/IntentsCore
-   - /System/Library/PrivateFrameworks/LinkMetadata.framework/LinkMetadata
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8159
--  Symbols:   11286
+-  Symbols:   9049
 -  CStrings:  2165
 +  Functions: 8849
-+  Symbols:   11552
++  Symbols:   9256
 +  CStrings:  2271
- 
 Symbols:
 + +[LNFeatureFlags isDebugIgnoreSkipAllSideEffectConfirmationsEnabled]
 + +[LNFeatureFlags isPreConfirmationEntityCacheEnabled]
@@ -291,65 +232,6 @@ Symbols:
 + _isPreConfirmationEntityCacheOverride
 + _isSideEffectConfirmationOverride
 + _isSideEffectConfirmationsInLinkServicesOverride
-+ _objc_msgSend$acquireAssertionsForHostManagedProgressUIForIdentifier:
-+ _objc_msgSend$actionWithLoopConfiguration:
-+ _objc_msgSend$cancelLabel
-+ _objc_msgSend$changeEffect
-+ _objc_msgSend$completeIfPreConfirmationCancelled:
-+ _objc_msgSend$confirmLabel
-+ _objc_msgSend$deferredFormatString
-+ _objc_msgSend$deferredSupportingFormatString
-+ _objc_msgSend$dynamicDialog
-+ _objc_msgSend$dynamicLoopDialog
-+ _objc_msgSend$enqueuePerformOperationWithConnectionInterface:action:connection:
-+ _objc_msgSend$entityForBundleIdentifier:withEntityIdentifier:error:
-+ _objc_msgSend$entityUpdatingProtocol
-+ _objc_msgSend$evaluatePreConfirmationForAction:connection:options:locale:completionHandler:
-+ _objc_msgSend$fullDialog
-+ _objc_msgSend$hostManagedProgressUIAssertion
-+ _objc_msgSend$initWithFullSpeakableString:supportingSpeakableString:systemImageName:localeIdentifier:
-+ _objc_msgSend$initWithIdentifier:connectionInterface:query:queue:completionHandler:
-+ _objc_msgSend$initWithPattern:options:error:
-+ _objc_msgSend$initWithSpoken:printed:
-+ _objc_msgSend$isError
-+ _objc_msgSend$isPreConfirmationEntityCacheEnabled
-+ _objc_msgSend$isSideEffectConfirmationsInLinkServicesEnabled
-+ _objc_msgSend$iterations
-+ _objc_msgSend$localizedStringFromPersonNameComponents:style:options:
-+ _objc_msgSend$lock
-+ _objc_msgSend$longLongValue
-+ _objc_msgSend$loopConfiguration
-+ _objc_msgSend$numberOfRanges
-+ _objc_msgSend$performConfigurableQuery:identifier:completionHandler:
-+ _objc_msgSend$personHandle
-+ _objc_msgSend$postalAddress
-+ _objc_msgSend$preConfirmationCancelled
-+ _objc_msgSend$preConfirmationToken
-+ _objc_msgSend$presentsLongRunningProgressUI
-+ _objc_msgSend$rangeAtIndex:
-+ _objc_msgSend$releaseHostManagedProgressUIVouch
-+ _objc_msgSend$requestActionConfirmation:completionHandler:
-+ _objc_msgSend$requestSideEffectConfirmationFromResult:connectionInterface:action:connection:
-+ _objc_msgSend$setDoesRelativeDateFormatting:
-+ _objc_msgSend$setHostManagedProgressUIAssertion:
-+ _objc_msgSend$setPreConfirmationCancelled:
-+ _objc_msgSend$setPreConfirmationToken:
-+ _objc_msgSend$setPresentsLongRunningProgressUI:
-+ _objc_msgSend$setSideEffectConfirmationHandledByLinkServices:
-+ _objc_msgSend$setStyle:
-+ _objc_msgSend$shouldSkipConfirmation
-+ _objc_msgSend$sideEffect
-+ _objc_msgSend$sideEffectConfirmationHandledByLinkServices
-+ _objc_msgSend$skipReason
-+ _objc_msgSend$stringByTrimmingCharactersInSet:
-+ _objc_msgSend$stringFromDateInterval:
-+ _objc_msgSend$stringFromItems:
-+ _objc_msgSend$stringFromPersonNameComponents:
-+ _objc_msgSend$stringFromPostalAddress:
-+ _objc_msgSend$supportingDialog
-+ _objc_msgSend$unlock
-+ _objc_msgSend$usedGenericDialog
-+ _objc_msgSend$whitespaceAndNewlineCharacterSet
 + _objc_setProperty_atomic
 + _swift_bridgeObjectRetain_n
 + _swift_cvw_initEnumMetadataMultiPayloadWithLayoutString

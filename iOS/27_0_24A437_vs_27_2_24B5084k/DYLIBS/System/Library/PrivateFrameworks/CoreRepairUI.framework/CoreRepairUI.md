@@ -2,59 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/CoreRepairUI.framework/CoreRepairUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ee08` | `0x1e3a8` | **`-0xa60`** |
+| `__AUTH_CONST.__cfstring` | `0x4b80` | `0x49c0` | **`-0x1c0`** |
+| `__TEXT.__cstring` | `0x3e4f` | `0x3d1c` | **`-0x133`** |
+| `__DATA_CONST.__objc_selrefs` | `0xe38` | `0xdb8` | **`-0x80`** |
+| `__TEXT.__gcc_except_tab` | `0x424` | `0x3d0` | **`-0x54`** |
+| `__DATA_CONST.__const` | `0x470` | `0x428` | **`-0x48`** |
+| `__TEXT.__objc_methlist` | `0x176c` | `0x1724` | **`-0x48`** |
+| `__TEXT.__oslogstring` | `0xdd7` | `0xda0` | **`-0x37`** |
+| `__TEXT.__unwind_info` | `0x568` | `0x538` | **`-0x30`** |
+| `__DATA_CONST.__got` | `0x4c8` | `0x4a0` | **`-0x28`** |
+| `__AUTH_CONST.__const` | `0x260` | `0x240` | **`-0x20`** |
+| `__TEXT.__const` | `0xb0` | `0xb8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1307.2.4.0.0
--  __TEXT.__text: 0x1e628
--  __TEXT.__objc_methlist: 0x176c
--  __TEXT.__const: 0xb0
--  __TEXT.__cstring: 0x3e4f
--  __TEXT.__oslogstring: 0xdd7
--  __TEXT.__gcc_except_tab: 0x424
--  __TEXT.__unwind_info: 0x6e0
 +1307.40.46.0.0
-+  __TEXT.__text: 0x1dc1c
-+  __TEXT.__objc_methlist: 0x1724
-+  __TEXT.__const: 0xb8
-+  __TEXT.__cstring: 0x3d1c
-+  __TEXT.__oslogstring: 0xda0
-+  __TEXT.__gcc_except_tab: 0x3d0
-+  __TEXT.__unwind_info: 0x6a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x470
-+  __DATA_CONST.__const: 0x428
-   __DATA_CONST.__objc_classlist: 0x280
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xe38
-+  __DATA_CONST.__objc_selrefs: 0xdb8
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x260
-   __DATA_CONST.__objc_arraydata: 0x38
--  __DATA_CONST.__got: 0x4c8
--  __AUTH_CONST.__const: 0x260
--  __AUTH_CONST.__cfstring: 0x4b80
-+  __DATA_CONST.__got: 0x4a0
-+  __AUTH_CONST.__const: 0x240
-+  __AUTH_CONST.__cfstring: 0x49c0
-   __AUTH_CONST.__objc_const: 0x3ea8
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_arrayobj: 0x18
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 527
 -  Symbols:   260
 -  CStrings:  747
 +  Functions: 516
 +  Symbols:   255
 +  CStrings:  730
- 
 Symbols:
 - _OBJC_CLASS_$_CRPearlController
 - _OBJC_CLASS_$_UIActivityIndicatorView

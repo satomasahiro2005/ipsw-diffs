@@ -1,62 +1,487 @@
 ## iboot_blob32.bin
 
-- `u0LBBCCCFCMCOCPCRCSCTCXCZCADDDEDIDLDPDRDSDTDWDFEKEMEQERE2FBFCFDFIFMFQFRFSFVFWF1G2G3G4GTGFHOH1I2I3I4IBICIDIEIFIHILIMIPIRISITIVIZIEKFLILMLRLSLWL0M1M2M3MAMCMDMFMIMOMPMQMVMCNCODOEOFOGOHOIOJOPOROTOVOZOAPBPCPDPLPMPNPPPRPSPTPYPMQSQVQCRDRFRIRLRMRPRSRVRCSFSMSRSSSCTFTLTMTPTRTSTTTVTEUSU1V2V3V4VNVRVCX1d`
-- `0F0J0c0j0v0wJ=`
-- `#C0111213151LTRT0s1s0t1t2t3t4t5t6t7t8t9tatbtctdtetftgthtitjtktltmtntotptPx`
-- `CKLLLKRLR0b1b3b4babbbcbdbMdmdzd0hHh0t1t3t4tatbtctdtmt`
-- `LC0D1D2D3D4DVILPCSVSCT\`
-- `OARAoArADCMCOCPCTCLHrH0LLLDMMPmPSRITLTPT1V2V3V4V5V6V7VvdC`
-- `C0123456789abcd`
-- ` C0123456789abcdefghijklmnopqrstux`
-- `0A0B0C0D0E0F0G0H0I0J0K0L0M0N0O0P0Q0R0S0T0U0V0W0X0Y0Z0b0c0d0e.`
-- `CLDRD0L1L2L3L0T1T2T3T0U1U2U3U8U9U8V9VLdRd8A`
-- `Cf0f1f2f3l`
-- `.10203040SS`
-- `CRabcdefgh`
-- `C0L1L0P1P2P3P4P5P6P0W1W2W3W4W5W6W`
-- `CLRYRlRyR3T3c`
-- `C0123456789abcd`
-- `CPCUC0iNi0pNp`
-- `C1L2L3L1R2R3RXZXmxm0p1p2p3px`
-- `C0b1b3b4b0t1t3t4tHT`
-- `C0123456789abcd`
-- `1dA2dA1kA2kA1tA2tANSECCFDCFPCFSCFTCFPATn`
-- `iPAcADBIBACDCFCRCSCTCUCXCYCZCbCcCfCiCmCnCrCsCtCvCwCADBDEDIDPDRDpDCEFEpECFSFVFDIQIRIAJBJDJEJFJGJIJMJNJPJQJRJSJVJCLGLILRLIMPMVM0NSNIPMPRPSPTPdPePiPsPtPIRRRcRpRTSWStSIUDVMVRVXVbVdVeVmVnVSWfihiiiminisiglilsodpiprptpW`
-- `ACAHAVCVIVLVMVNVOVPVQVRV`
-- `)CCMFXF0H1H2H3HCIDIMNXNMPXPMQXQCRDRERFRGRHRIRRRSRWRCSDSESFSGSHSATMTOTPTSTVTWTXTYTZT`
-- `C6IyI6PyPCiLidimiCpLpdpmp`
-- `QAIB1DEDUF`
-- `0CEFIJPRVWT`
-- `CPCUC0d1d2d3d0p1p2p3pMs`
-- `C0123456789abcd`
-- `C0t1t2t3t0v1v2v3v0z1z2z3z`
-- `CDIMNOPSUV9To`
-- `COFOROSOTO3Lu`
-- `*C0A1A2A3A0C1C2C3C0E1E2E3E0H1H2H3H3T0b1b3b4bbb3c0e1e2e3e0h1h2h3h0k1k2k3k0t1t3t4tbtavbvH`
-- `2A4ADAKATS3d`
-- `C0010203040506001112131415102122232031323330414243405152535061626071727081828384858091929390A1A2A0B1B2B0C1C2C3C0D1D2D3DaD0E1E0F1F1H2H1K2K2P3P4P5PFPRPSPTPjPkPmPnPuPvPwPyPTRKSLSMSNSOSPSQSRSSSTSUSVSWSXS0T1T2T8T9TaTbTcTdTeTfTgThTiTjTkTlTMU0a1a2a0b1b2b3b0c1c2c0d1d2d0e1e2eKeLeMeNeOePeQeReSeTeUeVeWeXe0f1f2f0g1g2g0h1h2h0i1i2i0j1j2j0k1k2k0l1l2l0m1m2m3mambmcm0n1n2n3n0o1o2o0p1p2p3p0q1q2q0r1r2r0s1s2s0t1t2tatbtct0u1u2u0v1v2v0w1w2w0x1x2x8x9xaxbxcxdxexfxgxhxixjxkxlx0y1y2y0z1z2z`
-- `C0L0V0CHWHLIARORSRTRISVSATCTITSTAVCVIVLV`
-- `DCADBDNDTDCSNS1W2W5`
-- `0A0B0C0D0E0F0G0H0I0J0K0L0M0N0O0P0Q5`
-- `DAcKBcSBcSHcOIcDLcTRcSAmBDmCFmLFmCHmSMmCOmEdtj`
-- `PARADBCCECBDEDRECFDIGIRIONDSDURVfihiiiminisitpW`
-- `C0C1C2C3C4C5C6C7C8C9CaCcCdCeCgC0P1P2P3P4PMe0p1p2p3p4p|V`
-- `GBD0DD1DDPTD0VECNIVNIXNICRS U`
-- `CABCDEFGHIJabcdefghijyz`
-- `VKSPSSTSEW/`
-- ` C0i1i2i3i4i5i6i7i0q1q2q3q4q5q6q7q0s1s2s3s4s5s6s7s0w1w2w3w4w5w6w7w`
-- `CACCSPCTDTNTWTqX`
-- `0s0t0u0v0w0x0y0z5&`
-- `0A0B0D0E0F0G0H0J0K0L0M0N0P0Q1`
-- `C0h1h2h3h0m1m2m3m0p1p2p3p0s1s2s3s0u1u2u3u`
-- `)Ckblbambmytztfxgxhxixjx0y1y2y3y4y5y6y7y8y9yAyByCyDyEyFyGyHyIyJyaybycydyeyfygyhyiyjy`
-- `9A0s0A1A2LAiAEBMBQBRBaB0DADEDGDPDiDzDiEDFLFMFSFiGDMRMxMiPMRNRRRPS1a2a3a4a5a1b2b3b4b5b1c2c3c4c5c1d2d3d4d5d1e2e3e4e5eC`
-- ` C0C1C0R1R2R3R0b1b3b4bbb0c1c0g1glmrmymzm0p1p2p3p4p5p6p7p0t1t3t4tbt`
-- `1C2CHFSFELFLVL0SCUDU5h`
-- `MCBWRBDARDRR0`
-- `00102030405060708090C0W00111213141W10C1CSOCSSS5`
-- `CABCDEFGHIJabcdefghijkl`
-- ` CAPARASAUAVA0C1C2CKCSCVCCFFOPOROTOUOFPSPFRRRGSLSOSRSSSTSVSRTFVRVC`
-- `C0C1CBCUC1D0T`
-- `-DIBVRBDICVRCICEVSENEG00P10P20P30P40P50P60P70P80P90P0FPtlPDIUREV00cBCcPCcUCcuCc0HcHHcLHcrHcyHczHc0PcaPcdPcsPczPc0hcHhclhcrhcyhczhc0pcapcZ<e`
-- `V10FPFQFRFWFLS5,`
+- `%s: %s:%d: %s, ret=0x%x; q-size=%d; hdr=0x%x`
+- `DPLOSS,rts: %d`
+- `RS: TX FW state moved to Idle`
+- `POP: %s`
+- `DCP idle failed (%d)`
+- `Gaid`
+- `TXDS: %s: terminated transactions due to disconnect`
+- `%s: gNfcState:%d`
+- `RS: RX: RS_EVT_FW_DOWNLOADED received; invoke poutTriggerSet`
+- `ui8NfcPowerPause: write`
+- `UUID: %02x%02x%02x%02x-%02x%02x-%02x%02x-%02x%02x-%02x%02x%02x%02x%02x%02x`
+- `CLTM`
+- `GBaC`
+- `%s:%d: inductive fw (%d) loaded successfully!`
+- `inductive cl: reached ramp target (isns:%dmA [tgt:%dmA], vrect:%dmV [tgt:%dmV], power:%dmW)`
+- `iBoot: failed to read Fixture Mode GPIO`
+- `RS: %s: fw not running (%d); cannot send tether state (%d) to fw; return`
+- `RS: %s: InductiveSendLocalTetherToFW: send tether (%d) to fw`
+- `smc/pmu/pmu_v3.cpp`
+- `assert_id = %d`
+- `smc/thermal/cltm.cpp`
+- `RS: RX: RS_EVT_ACCESSORY_UNTETHERED; invoke poutTriggerSet`
+- `RS: TX: RS_EVT_FW_DOWNLOADED: device untethered; start poutUntethered timer for %llu ms`
+- `RS: poutUntethered timer expired; hard swap; loadFirmware(RX)`
+- `RX`
+- `inductive cl: G4_C1 : %d`
+- `nfcHandleMessage: messageType:%d`
+- `%s: %s:%d: %s, error: callback or list is NULL`
+- `%s: %s:%d: %s, SMC MTR Offset Case not Handled Type %d Idx %d Calc %d`
+- `BMS: system pack detection state:%d`
+- `RS: %s: %s (status=%d); queue to inductive task`
+- `inductive adapter: (%d)->(%d) dt: %llu`
+- `platform/t8140/device_forcewakeup.cpp`
+- `RS: TX: RS_EVT_TX_FW_SUSPENDED (Idle); swapToRxMode`
+- `RS: TX: RS_EVT_WAIKATO_MITIGATION_NOT_READY; swapToRxMode`
+- `WLCH: get_rx_buffer_base_addr() failed; (0x%x) (r:%d); state=exception`
+- `Waiting for AP to wake up`
+- `false`
+- `platform/t8140/device_pmgr.cpp`
+- `HB`
+- `oslog`
+- `ACE`
+- `battery.cpp`
+- `Pack[%d] Shutdown VPMax bounds: floor=%d ceil=%d vpmax_vcut=%d iss=%d vbat=%d dod=%d temp=%d.`
+- `gg_fw_update_init = %d`
+- `DE: correcting shutdown_threshold from %d to %d`
+- `RS: TX: RS_EVT_WAIKATO_MITIGATION_READY; do nothing`
+- `power rail fault[%d]: flag set`
+- `smc/bms/v1/bms_v1/bms.cpp`
+- `TXDS: notify AP: comms resumed`
+- `rc == 0`
+- `platform/common/platform_tunables.cpp`
+- `poutPolicy.cpp`
+- `inductive_quiesce_task`
+- `%s: handoff approved`
+- `ProfSel : TXinfo : %d, prof: %d, fp: %d lk: %d, pc: %d `
+- `TXDS: notify AP: comms paused`
+- `Address Remapper %d Error: 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x `
+- `SRYR`
+- `ULTRA: hv_gate=%u 9W_time=%llu 7W_time=%llu`
+- `schedule re-scan for power pause`
+- `smc/aceCommon.cpp`
+- `RS: notify HLOS booted! (hlosBootedNotifDelayTimer expired)`
+- `pmu: failed SRAM read (ofst=0x%08hX,len=%u)`
+- `%s:%d inductive fw (%d) download failed`
+- `BMSTask`
+- `ACE_REG_DATASTATUS: Ace%d baAceI2cRx[1] = 0x%x,            baAceI2cRx[2]: 0x%x, baAceI2cRx[3]: 0x%x, baAceI2cRx[4]: 0x%x`
+- `RS: start dead batt detection; expireTime=%llu currTime=%llu`
+- `%s:%d: read failed. resetting %d`
+- `smc/i2c.cpp`
+- `cloak timeout (detect=%d full=%d)`
+- `ace.cpp`
+- `RS: [new: p:%03d m:0x%01x vid:%04x pid:%04x s:%03d c:%03d t:%03d]`
+- `(%u%)`
+- `RS: TX: RS_EVT_DEAD_ACCESSORY_DETECTED: Pout(%d)<Thrsld(%d); swapToRxMode`
+- `DPLOSS,lt<16W %d`
+- `pmu: FW SRAM access not allowed on main pmu`
+- `Could not complete appending PMU FW information to crashlog because of SPMI err`
+- `Notf: A%d uvdmDone`
+- `g3`
+- `GAID`
+- `Waiting %d second(s) for AP to boot up`
+- `HE-nRCS %d Error Status = 0x%x `
+- `smc/unilog.cpp`
+- `AP`
+- `RS: %s: InductiveRemoteTetherInd: remote_tethered=%d`
+- `WLCH: read aperture magic: ret=0x%x, magic=0x%x`
+- `%s: 0x%x -> 0x%x`
+- `DE: Checksum becomes valid SMC %d AP %d`
+- `Release`
+- `ui8NfcControllerReady: write: power:%d`
+- `smc/smc_init.cpp`
+- `%s: %s:%d: `
+- `apKeys`
+- `smc/bms/v1/bms_v1/charger.cpp`
+- `ILIM_FAIL charger_ilim_cleanup`
+- `POP: TXFW: %s: ramp: %u (targ) | %lld %+lld => %u (program)`
+- `RS: TX: RS_EVT_DEVICE_TETHERED: cancel poutUntethered timer (%llu)`
+- `%s : !quiesce, %d`
+- `TXDS: deque tx pkt: stream=%d start=%d end=%d bytes=%d`
+- `ILIM_FAIL charger_get_ilim %d`
+- `ILIM_FAIL charger_ilim_backoff_state_handler`
+- `RS: RX: RS_EVT_ROLE_SWAP_REQUEST_SENT; Rcvd PTx Rsp: Accept; loadFirmware(TX)`
+- `RS: TX: RS_EVT_ROLE_SWAP_REQUEST_RECEIVED; FW Sent Rsp: Accept; loadFirmware(RX)`
+- `TXDS: notify AP: comms enabled`
+- `%s : %d, %d`
+- `ui8MagnetEvent called for unrecognized key: 0x%X`
+- `smc/thermal/componentController/basebandCC.cpp`
+- `crashlog`
+- `BMS: pack[%d] gauge start fail, skip bootup flag`
+- `%s:%d HIGH_TEMP reached. batt %d pcb %d chip %d`
+- `/SDKROOT/usr/local/standalone/f`
+- `%s: fw_vers=0x%x -> fw_mode=%s (state=%d)`
+- `smc/thermal/acsk/sensorInput.cpp`
+- `IDLE`
+- `POP: TXFW: %s: drct: %u (targ) | %u (program)`
+- `RS: RX: RS_EVT_DEAD_ACCESSORY_CLEARED; invoke poutTriggerSet`
+- `RS: swapToRxTimer timer expired; hard swap; loadFirmware(RX)`
+- `inductive_common.cpp`
+- `UU`
+- `InductiveFWLoggerInit`
+- `failed to exit cloak`
+- `NPOC`
+- `DPLOSS,s:TPr:%d,TVr:%d`
+- `InductiveTxStreamControlRxInd`
+- `smc/panic.cpp`
+- `From non-primary PMU: IRQ %d`
+- `SWSk`
+- `BMS: Failed to read SOC1 for pack[%d]`
+- `Pack[%d] Shutdown flags: Battery=%d reason=0x%x`
+- `RS: RX: RS_EVT_HLOS_BOOTED; invoke poutTriggerSet`
+- `InductiveTxProcessRxInd`
+- `pmu_adc_amuxa.cpp`
+- `asmi`
+- `Ace: End HostAct %c%c%c%c`
+- `%s: inductive fw handoff to fw_dst=%d in progress`
+- `RS:  prv: p:%03d m:0x%01x vid:%04x pid:%04x s:%03d c:%03d t:%03d `
+- `getInitialPoutMax`
+- `nfcHandleMessage: messageType: ironmanMessage_NoPower: state:%d`
+- `cloak entry`
+- `vInductiveTaskStop fail`
+- `pdcom: BattDesignCap !valid %d`
+- `Panic forced due to inductive FW crash`
+- `inductive cl: pwr contract timeout; ce=%d, rpp=%d, pc=%d`
+- `pmu: missing SRAM address/base_register/size`
+- `power rail fault: all rails disabled`
+- `RS: RX: RS_EVT_DEVICE_TETHERED; invoke poutTriggerSet`
+- `ui8NfcControllerReady called for unrecognized key: 0x%X`
+- `PMU FW info:`
+- `FIQ`
+- `charger.cpp`
+- `QIPP1p4 : kest: %d, profile: %d, mppVer: 0x%x`
+- `Elec: Elec Cause 0x%llx`
+- `%12s`
+- `WLCH: read hdr again (2): ret=0x%x, hdr=0x%x`
+- `DPLOSS,e:%d`
+- `TXDS: %s: unexpected data stream size`
+- `ui8NfcState called for unrecognized key: 0x%X`
+- `AP is already panicking. Nothing to do`
+- `syslog`
+- `A%d lock not acquired, timeout was set %d`
+- `battery_dynamic_shutdown.cpp`
+- `Inductive pwr_prof_change cleared`
+- `%s: cloak request %x`
+- `inductive cl: get vmax %d`
+- `SCfg`
+- `RS: %s: local tether state %d -> %d`
+- `PMU FW Monitor Parameters:`
+- `smc/sys_task.cpp`
+- `CrashlogData_t ptr = 0x%08lx`
+- `DRAM`
+- `ppmtask`
+- `RS: RX: RS_EVT_POUT_ABOVE_THRESHOLD; poutTriggerSet`
+- `RS: %s: poutTrig:    pass: (t=%d,os=%d,cap=%d,c=%d) . (ibcs=%d | nch=%d | >minpwr=%d) (Pout:%d)`
+- `RS: %s: %s: acc dead: loadFirmware(TX)`
+- `ui8NfcDisplayState: write: state:%d, gNfcDisplayOn:%d`
+- `nfcHandleMessage: messageType: ironmanMessage_Power: idle later`
+- `pmu: sram_addr_lo_reg set error`
+- `ILIM_FAIL charger_set_path_priority`
+- `ULTRA: power_rampdown_mw=%u coex_pwr_limit=%u vtgt_max=%u prect=%u vrect_base=%u`
+- `systask`
+- `%s: %s:%d: %s, GET_POWER_RAIL_ONOFF_STATUS(%d) not supported (%d)`
+- `acePoutExtClientIF.cpp`
+- `idx < list_size`
+- `smc/crashlog.cpp`
+- `panic.cpp`
+- `inductive cl: %s: start ramp (isns:%dmA, vrect:%dmV, power:%dmW)`
+- `RS: RX: RS_EVT_WAIKATO_MITIGATION_NOT_READY; invoke poutTriggerSet`
+- `TXDS: notify AP: comms disabled; comms paused`
+- `RS: %s: invoke drv_inductive_hal.role_swap_preferred(%d)`
+- `DPLOSS,nicl: %d`
+- `%s: %s:%d: %s, pmu %d health, err_count: %d, spmi_err_count: %d,  diff:%lld  expected_diff:%lld, fw_status:0x%llx, assert_id:%d, hw_status:0x%x assert params:0x%x 0x%x`
+- `platform/common/platform_power.cpp`
+- `RS: stop dead batt detection; expireTime:%llu->0; currTime=%llu`
+- `%s: failed to send handoff resp signal (ret=%d)`
+- `assert_params = 0x%x, 0x%x`
+- `misc_workloop`
+- `RS: TX: RS_EVT_ACCESSORY_ATTACHED`
+- `RS: TX: RS_EVT_DEAD_ACCESSORY_DETECTED: Pout(%d)>=Thrsld(%d); stay in TX mode`
+- `TX`
+- `%s: fail init (%d)`
+- `ANeg`
+- `CA notification error %u`
+- `HE-nRCS %d First Error: Cmd = 0x%x, Timestamp = 0x%x, Status = 0x%x `
+- `ioreporting`
+- `A%d, SMC did not acquire the uvdm Lock %d, uvdm Timer %d`
+- `RS: RX: RS_EVT_WAIKATO_MITIGATION_READY; invoke poutTriggerSet`
+- `%s: wq full, drop:%d`
+- `nfcEvent_PowerPauseSecondScanTimer`
+- `MBComms`
+- `TXDS: fw failed to transmit all data in stream=%d`
+- `POP: %s: adP=%d pct=%d initPoutMax=%d`
+- `%s: scan in power pause`
+- `%s: scan later`
+- `platform/t8140/device_aop.cpp`
+- `management`
+- `nfc.cpp`
+- `smc/bms/v1/batterySocFilter/batterySocFilter.cpp`
+- `ret == RTK_ST_OK`
+- `nfcEvent_NoPowerScanTimer: state:%d`
+- `paniced_pmu_idx = %u, has_fw = %s, error_count = %u, spmi_error_count = %u`
+- `platform/t8140/device_gpio.cpp`
+- `RS: RX: RS_EVT_DEAD_ACCESSORY_DETECTED; invoke poutTriggerSet`
+- `DPLOSS,lt. TPr:%d,TVr:%d`
+- `ULTRA: new_vrect_target=%u new_base=%u power_factor=%u rpp_prect=%u`
+- `AP is awake after ~%dms`
+- `Disabling AP wakeup assertion`
+- `smc/comms.cpp`
+- `RS: TX: RS_EVT_ROLE_SWAP_REQUEST_RECEIVED; FW Sent Rsp: Reject(%d); stay in TX mode`
+- `TSCw`
+- `platform/t8140/device_mtr_die_temps.cpp`
+- `platform/common/platform_mem.cpp`
+- `RS: RX: RS_EVT_ACCESSORY_ATTACHED`
+- `PMU: vPmuAdcSensorsReadCycle() failed to read adc 0x%x rc=%d`
+- `platform/t8140/device_asc.cpp`
+- `RS: %s: poutTrig: pending: (t=%d,os=%d,cap=%d,c=%d) . (ibcs=%d | nch=%d | >minpwr=%d) (Pout:%d)`
+- `RS: %s: %s: req-tx-init-rs(ret:0x%08x); start swapToRxModeTimer for %llu ms`
+- `smc/inductive/inductive_rx.cpp`
+- `pmu: failed SRAM write (ofst=0x%08hX,len=%u)`
+- `SWSr`
+- `Critical Shutdown Requested`
+- `inductive_keys.cpp`
+- `DPLOSS,rq`
+- `Aborting AOP iop_ringbuffer at %s:%d`
+- `cloak exit`
+- `ui8NfcDisplayState: write: state:%d, power:%d`
+- `smc/miscworkloop.cpp`
+- `pmu_v3.cpp`
+- `UFPf`
+- `A%d unable to acquire smc uvdm lock %d`
+- `smc/aopComms.cpp`
+- `TXDS: error: InductiveTxGetTxStreamEntry error; ret=%d`
+- `<<<PMU monitor crashlog end>>>`
+- `UNKNOWN`
+- `RS: charger_get_silicon_revision ret=%d, hw_rev=0x%x; apply-waikato-mitigation=%d`
+- `Request`
+- `InductiveUpdate`
+- `detect mgnt %d. dt: %llu at: %llu`
+- `dcp_to_smc`
+- `GBaS`
+- `pmu_feature_flag set to 0x%02x`
+- `status = 0x%x`
+- `smc/ap_watchdog_logger.cpp`
+- `acePhone.cpp`
+- `Sending panic interrupt`
+- `ACE_REG_CFVIDSTATUS: baAceI2cRx[%d] = 0x%x and baAceI2cRx[%d] = 0x%x`
+- `BMS: pack[%d] gauge start fail, skip critical`
+- `FA`
+- `inductive_rx.cpp`
+- `nfcEvent_ScanCompleted: state:%d, gNfcStateAfterScan:%d`
+- `%s: %s:%d: %s, pmu %d health, err_count: %d, spmi_err_count: %d,  diff:%lld  expected_diff:%lld`
+- `is Shutdwn needed: Req %d, budV %d isBattbt %d isPT %d`
+- `RS: RX: RS_EVT_DEVICE_UNTETHERED; invoke poutTriggerSet`
+- `DPLOSS,a: %d`
+- `power rail fault: Restarting`
+- `transient %d (%d to %d)`
+- `RS: %s: InductiveTxGetRxSoC: remote_soc change: %d -> %d`
+- `nfcHandleMessage: messageType: ironmanMessage_Power(%d) state:%d`
+- `RS: RX: RS_EVT_POUT_CAPABLE; invoke poutTriggerSet`
+- `RXDS: rdsema error %d`
+- `RXDS: rmerr queue %d`
+- `%s: cap=0x%x, tx_freq_mask=0x%x`
+- `power rail fault: ADC ch %u reading failed`
+- `smc/thermal/componentController/displayPwrCC.cpp`
+- `SRDY`
+- `%s: handoff rejected (%d)`
+- `ULTRA: allow_crx_switching=%u txVBoostMax=%u vBoostMaxReached=%u crx_power_target_limit=%u`
+- `ui8NfcPowerPause: ironmanMessage_RequestPowerPause`
+- `nfcHandleMessage: messageType: ironmanMessage_NoPower: scan later`
+- `callback && list`
+- `usb host`
+- `configureTxPout`
+- `inductive_adapter.cpp`
+- `g4`
+- ` noVDOs`
+- `inductiveRoleSwap.cpp`
+- `smc/utils/accum.cpp`
+- `pmu_target.cpp`
+- `SWDF`
+- `smc/bms/v1/charge_control/charge_control.cpp`
+- `InductiveTxResetTxStreams`
+- `Unknown panic trigger interrupt #%u`
+- `RS: TX: RS_EVT_DEAD_ACCESSORY_DETECTED;  wait for CHC`
+- `smc/inductive/inductive_common.cpp`
+- `InductiveTxLogFreebuf`
+- `vBMSTaskStop fail`
+- `RS: TX: RS_EVT_POUT_CAPABLE`
+- `baseline arcas`
+- `RS: %s: HLOS booted! notify in %d ms`
+- `RS: PTx Info: id=0x%x family=0x%x type=0x%x tether=%d dualr=%d p=%d`
+- `smc/key_tree.cpp`
+- `true`
+- `RS: RX: RS_EVT_ACCESSORY_DETACHED`
+- `ui8InductiveFWCtrl`
+- `inductive cl: g3: g3(%d) > 98; pwr_c = %dmW (bounded: %dmW); settle ULTRA`
+- `nfcHandleMessage: messageType: ironmanMessage_ReadyForNfc`
+- `ILIM_FAIL VBUS2_PWR_SRC1 %d`
+- `TXDS: %s: stream_id=%d out of range`
+- `ui8NfcDisplayState: write: state:%d`
+- `Misc`
+- `iop_ringbuffer.h`
+- `RS: %s: InductiveRemoteSoCInd: remote_soc=%d`
+- `ESP: camera_bitmask: 0x%x -> 0x%x`
+- `inductive_tx.cpp`
+- `scan completed outside of power pause`
+- `reset`
+- `smc/ace.cpp`
+- `DFUf`
+- `smc/ap_watchdog.cpp`
+- `RS: %s: %s: %s adapter voltage constraint`
+- `smc/pmu_monitor.cpp`
+- `smc/socd.cpp`
+- `AONPTDTask`
+- `A%d SSPS%d`
+- `Get Interrupt Mask Fail OneAceInt 0x%x`
+- `Shutdown flags: Battery=%d, PMU=%d, pwrOut=%d Override=%d`
+- `smc/forceKeyAccess.cpp`
+- `QIPP1p4 : TX supported : %d, profile: %d `
+- `DPLOSS,ruf. Pr: %d`
+- `Unknown panic action %u`
+- `platform/t8140/device_dockchannel.cpp`
+- `RS: TX: RS_EVT_ACCESSORY_DETACHED; loadFirmware(RX)`
+- `WLCH: ret=0x%x bufIdx=%d, bufAddr=0x%x, hdr=0x%x`
+- `vNfcInit`
+- `smc/smc_watchdog.cpp`
+- `!=`
+- `smc/bms/v1/bms_v1/charger_helper/charger_keys_intf.cpp`
+- `%s: failed to send free log buf signal (ret=%d)`
+- `pdCommon.cpp`
+- `RS: TX: RS_EVT_POUT_BELOW_THRESHOLD; Ironbull cloak not available; swapToRxMode`
+- `DPLOSS,ssto: %d`
+- `smc/aceUtilEmbedded.cpp`
+- `ACE_REG_MODE: Ace%d Mode=%c%c%c%c`
+- `InductiveSetHLOSBooted`
+- `TXDS: [%d %d]`
+- `spmi status (err=0x%08x): id = 0x%02x, read at 0x%04x, len=%lu, retry=%u`
+- `RS: TX: CHC: Pout(%d)<Thrsld(%d) AND Ironbull cloak not available; swapToRxMode`
+- `swapToRxMode`
+- `ui8MagnetEvent: write: state:%d`
+- `BMS: Pack[%d] SOC1 set`
+- `%s : quiesce mask, %x`
+- `inductive cl: g4: g4(%d) > %d; pwr_c = %dmW (bounded: %dmW); settle ULTRA`
+- `pmu_workloop`
+- `RS: TX: RS_EVT_HLOS_BOOTED`
+- `smc/acePowerOut.cpp`
+- `%s: %s:%d: %s, Invalid register size %u`
+- `inductive_task.cpp`
+- `ui8NfcControllerReady: write: power:%d, scan`
+- `ui8NfcDisplayState called for unrecognized key: 0x%X`
+- `smc/ppm_task.cpp`
+- `%s: %s:%d: %lld %s %lld`
+- `RS: dead accessory detected!`
+- `SSPS`
+- `tx assert triggered!`
+- `RS: kHostTxChimeDecision: dcsn=%d prm=%d`
+- `HE-nRCS %d Error Count: In = 0x%x, Out = 0x%x, Bus = 0x%x `
+- `smc/event_buf.cpp`
+- `ui8NfcTagsList called for unrecognized key: 0x%X`
+- `platform/t8140/device_trigger_interface.cpp`
+- `POP: TXFW: pout_set_power_limit failed; ret=%d`
+- `TXDS: rmerr queue %d`
+- `Elec: DeadBatt PD Charging Fail`
+- `ui8NfcTagsList: write: gNfcTagsList.value:0x%x, gLastMessageType:%d`
+- `scanTimeoutHandlerstate:%d`
+- `pmu: FW SRAM is in use`
+- `%s`
+- `%d: %llu %d`
+- `InductiveFWDownload`
+- `RS: NfcTagInfoChangedInd: cnt=%d tag:[0x%x 0x%x]`
+- `InductiveSendHandoffResponse`
+- `inductive cl: g3: gain3(%d) < 98; settle HIGH; request NPP`
+- `ind hb failed %d %d`
+- `pmu: sram_addr_hi_reg set error`
+- `spmi status (err=0x%08x): id = 0x%02x, write at 0x%04x, len=%lu, retry=%u`
+- `Thread stats (last %u.%03u ms)`
+- `QIPP1P4 %d: Switch profile f %u to %u`
+- `%s: %s:%d: 0x%llx, 0x%llx`
+- `NVMIT: i %d`
+- `AP failed to wake up after %dms`
+- `sALD r/w = 0x%02X, val = %d, rc = %d`
+- `power rail fault: *Fault* in ch %u %lld (thre=%lld)`
+- `pd charger`
+- `ACSt: iBoot HP %d Lp %d OS=%d ACSt 0x%02x AC %d GG %d ACPW %d SOC1 %d SMCFixturePresent %d`
+- `IV`
+- `inductive cl: pwr contract: none; settle LOW`
+- `QIPP1p4: rx_qipp_version=%x, tx_qipp_version=%x, txhwref=%u vtgt_ironman_ultra=%u`
+- `QIPP1p4: newSession.`
+- `DPLOSS,nt%d: TPr:%d,TVr:%d`
+- `==`
+- `SWUF`
+- `Panic trigger received on interrupt #%u`
+- `<<<PMU monitor crashlog start>>>`
+- `systask heartbeat time-out after %lld ms`
+- `platform/t8140/device_aon_ptd.cpp`
+- `SMC HID Event: %02x %02x %02x`
+- `Remotely triggered SMC panic`
+- `smc/inductive/inductive_task.cpp`
+- `DPLOSS,ltr: %d`
+- `ticks_diff = %lld, expected_ticks_diff = %lld, iter_counter = %u, previous_count = %u`
+- `platform/t8140/device_watchdog.cpp`
+- ` VDO %d not found`
+- `%s : !quiesce mask, %x`
+- `spmi status: rd trans=%llu recovered=%u failed=%u, wr trans=%llu recovered=%u failed=%u, last_mbse=%c%c%c%c`
+- `extPwriOS.cpp`
+- `poutTriggerSet`
+- `DPLOSS,clts: %d`
+- `vInductiveCmd`
+- `fw_ver_string = %s`
+- `InductiveTask`
+- `smc/apComms.cpp`
+- `apComms.cpp`
+- `InductiveTxApplyBootFlagsFromFW`
+- `RS: kHostTxIdentification; dev_type=0x%x fmly=%d prot=%d qi_ver=0x%x qpp_ver=0x%x`
+- ` E%d %d %x`
+- `platform/t8140/device_awl_bus.cpp`
+- `inductive cl: arcas init`
+- `device_aon_ptd.cpp`
+- `Ace: HostAct %c%c%c%c`
+- `smc/acePoutBudgetManager.cpp`
+- `InductiveFWErrorRecovery`
+- `%s : quiesce, %d`
+- `DPLOSS,st: %d`
+- `smc/smcmain.cpp`
+- `RXDS: AP notify retry %d, buff %d`
+- `ui8NfcControllerReady: write`
+- `inductivePoutPolicy.cpp`
+- `RS: RX: RS_EVT_ROLE_SWAP_REQUEST_SENT; Rcvd PTx Rsp: Reject(%d); stay in RX mode`
+- `nfcEvent_PowerPauseStarted`
+- `waikatoPoutMitigation`
+- `InductiveSetPowerOutCapability`
+- `spmi.cpp`
+- `%s: chip vfy fail`
+- `platform/t8140/device_spmi.cpp`
+- `smc/bms/v1/bms_v1/battery.cpp`
+- `bms.cpp`
+- `inductive toggle vbus 0x%x`
+- `POP: ovr:%lld h:%d chg=%d soc:%d t:%d isAL=%d pMax=%d pCalc=%lld thrm=%d%% pCfg=%lld`
+- `platform/t8140/device_i2c.cpp`
+- `DPLOSS,icl: %d`
+- `nfcEvent_ScanStarted:%d`
+- `smc/acam.cpp`
+- `aceCommon.cpp`
+- `waikatoPoutMitigationStatusChanged`
+- `InductiveUpdateCloakStatus`
+- `TXDS: InductiveTxAddToTxStream failed with ret=%d`
+- `Ensuring that AP is awake`
+- `pmu: out of range (ofst=0x%08hX,len=%u)`
+- `smc/sys_mgmt.cpp`
+- `UBaS`
+- `RXDS: AP notify error %d`
+- `ui8NfcPowerPause called for unrecognized key: 0x%X`
+- `%s: %s:%d: %s, error: registry is full`
+- `%02x%s`
+- `ers/thermal/ptdCore.cpp`
+- `RS: TX: RS_EVT_TX_CHIME_HONESTY_COMPLETED; Pout=%d; IBCloakAvailable;=%d`
+- `RS: TX: RS_EVT_POUT_BELOW_THRESHOLD; Ironbull cloak not available; wait for CHC`
+- `inductive cl: G3_C1 : %d`
+- `%llu`
+- `DE: invalid checksum SMC %d AP %d`
+- `WLCH: read hdr again (1): ret=0x%x, hdr=0x%x`
+- `RXDS: retry %d`
+- `inductive cl: g4: gain4(%d) < %d; settle LOW`
+- `usb brick`
+- `RS: TX: RS_EVT_DEVICE_UNTETHERED: start poutUntethered timer for %llu ms`
+- `TXDS: %s: [%d %d]`

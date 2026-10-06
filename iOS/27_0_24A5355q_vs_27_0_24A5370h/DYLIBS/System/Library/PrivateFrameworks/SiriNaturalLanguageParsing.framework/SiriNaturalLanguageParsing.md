@@ -2,84 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/SiriNaturalLanguageParsing.framework/SiriNaturalLanguageParsing`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17d9e8` | `0x14dec4` | **`-0x2fb24`** |
+| `__AUTH_CONST.__objc_const` | `0x4138` | `0x1430` | **`-0x2d08`** |
+| `__TEXT.__gcc_except_tab` | `0x16194` | `0x13568` | **`-0x2c2c`** |
+| `__TEXT.__cstring` | `0xd493` | `0xb97f` | **`-0x1b14`** |
+| `__TEXT.__objc_methlist` | `0x1974` | `0x95c` | **`-0x1018`** |
+| `__TEXT.__unwind_info` | `0x7c80` | `0x6eb8` | **`-0xdc8`** |
+| `__TEXT.__oslogstring` | `0xa4bd` | `0x97ba` | **`-0xd03`** |
+| `__TEXT.__const` | `0x98b7` | `0x8d68` | **`-0xb4f`** |
+| `__AUTH.__objc_data` | `0x11d0` | `0x6e0` | **`-0xaf0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x12d0` | `0x9e8` | **`-0x8e8`** |
+| `__AUTH_CONST.__cfstring` | `0x1f40` | `0x1860` | **`-0x6e0`** |
+| `__DATA_CONST.__got` | `0x610` | `0x458` | **`-0x1b8`** |
+| `__DATA.__objc_ivar` | `0x230` | `0x9c` | **`-0x194`** |
+| `__DATA.__data` | `0x2f9` | `0x179` | **`-0x180`** |
+| `__AUTH_CONST.__auth_got` | `0x1568` | `0x1450` | **`-0x118`** |
+| `__DATA_CONST.__objc_classlist` | `0x1c8` | `0xb0` | **`-0x118`** |
+| `__DATA_CONST.__objc_superrefs` | `0x188` | `0x88` | **`-0x100`** |
+| `__DATA_CONST.__const` | `0x858` | `0x780` | **`-0xd8`** |
+| `__AUTH_CONST.__const` | `0x7268` | `0x7218` | **`-0x50`** |
+| `__TEXT.__ustring` | `0x110` | `0xd8` | **`-0x38`** |
+| `__DATA_CONST.__objc_protolist` | `0x20` | `—` | **`-0x20`** |
+| `__DATA_CONST.__weak_got` | `0x38` | `0x30` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.5.3.0.0
--  __TEXT.__text: 0x17d9e8 sha256:d9485a51be1b7ef6f9b93a62035137eb06b3410f51d778f7214db45132ba0c74
--  __TEXT.__init_offsets: 0x168 sha256:e7b653cbd70feca91d6aba036f2740450025208700347a56f571dd2dc5d8bd98
--  __TEXT.__objc_methlist: 0x1974 sha256:a5dd61cf55483ed4ac583464bed54dc9349b12c152552ec817a288ea76585921
--  __TEXT.__const: 0x98b7 sha256:c89a419e76d0c0ea9a9f697cbfcf488ab81507f92364b82fe2ba0a5a85a07438
--  __TEXT.__cstring: 0xd493 sha256:f06bac7a33aa2a24f67ff9131f0d16c297a211a6661a3ff32a847fbdf4bf1de5
--  __TEXT.__gcc_except_tab: 0x16194 sha256:e8876d502cdf1f9254cfdf1a2583df3ed68808f10ec0943858ddea32fdd876e4
--  __TEXT.__oslogstring: 0xa4bd sha256:2f90a0de3347c1623620ab39d7bc8ec7a0c042d1142cb084cceb6993c2621832
--  __TEXT.__ustring: 0x110 sha256:ff49602dcb8883202ec853f067d7f944e22a95cc617a2d60d668290c51101cde
--  __TEXT.__unwind_info: 0x7c80 sha256:1c14cfe50cd633d5130a2b6d266cff29e4ecef73cc0c440e09d00cf5cbc523f4
 +3600.7.4.0.0
-+  __TEXT.__text: 0x14dec4 sha256:6c4957ab1de8ca7eb5aeaf3c84693b6b6056b431e04369ba3f1901d9e6695c5b
-+  __TEXT.__init_offsets: 0x168 sha256:c900ba0478cf72190cb650967003958312490d5d86919baabd739256939c706c
-+  __TEXT.__objc_methlist: 0x95c sha256:22c3fb4ccdda921e3688a47294988f8fe8753018b9b62d3f88c7777db511dd7b
-+  __TEXT.__const: 0x8d68 sha256:d63b00466a0e0d78a2318a301d4f85351fd03222f9472df6784547e942aac071
-+  __TEXT.__cstring: 0xb97f sha256:ba72b45b3017d27d51fc9e03c5419c997bfb3ee8d0d6f6b791dd7b59113ff7be
-+  __TEXT.__gcc_except_tab: 0x13568 sha256:b2d15922dfd9894861583f688b00312400a3cd4bfc3bd69f1c921b5b8621272e
-+  __TEXT.__oslogstring: 0x97ba sha256:5f0ddfce13380846b1b41edb6e94358c0a151cda684b4440380cf0da6f0df0dd
-+  __TEXT.__ustring: 0xd8 sha256:0e42449363e7187d38a5ac40ae549cd89791a9ea602c7bb082e90ce308b9b774
-+  __TEXT.__unwind_info: 0x6eb8 sha256:9d54788c6381292e73aebb72130e3f59a04d709fee292c498f834740495dec5c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x858 sha256:a7f380de3b8fe1b42357681a4b13e66a4e878bb465e714f30575dba8779771d7
--  __DATA_CONST.__objc_classlist: 0x1c8 sha256:973019356c36acbdf5cf563e59db2aa46219b2d2dd3643766bef9e844100c97e
--  __DATA_CONST.__objc_protolist: 0x20 sha256:be90468a2d9c728fdd15fa5deb54b88abdf3a90be5e6964f496abc9346da99b6
-+  __DATA_CONST.__const: 0x780 sha256:62f859860935a4bf587a61573be7d88081c20d303ef73e8c5763805b853d6606
-+  __DATA_CONST.__objc_classlist: 0xb0 sha256:915a912939dd93a5702f3d6b51012dbdb2e439acb683e1377e51669735a3b407
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x38 sha256:4f1f4efad677dc8299f8dd603627a1476ba5d5161d3c4400496d58dde0c1f891
--  __DATA_CONST.__objc_selrefs: 0x12d0 sha256:d55a29016882d0ddedd37820102830c1a0579d2d8130bcbd02f8281e2eb95eaf
--  __DATA_CONST.__objc_superrefs: 0x188 sha256:e98c998a490ae900818292d07187fe6f3ac04ca6d0583afe906c4ea29c1bbf6e
--  __DATA_CONST.__got: 0x610 sha256:05dc9518d9d48687bd1453e86e5e13e5b9e7d89277b6a2fbc8b86dfdd92141cf
--  __AUTH_CONST.__const: 0x7268 sha256:e405132ddba7a78c11da4751f121df6a3b3f2d4e3cf9c6e195bbe844b43eed99
--  __AUTH_CONST.__cfstring: 0x1f40 sha256:2d30fab25777631fae0f771a242e4354784d5c677aaccb3cdc4cea8dde63005c
--  __AUTH_CONST.__objc_const: 0x4138 sha256:c4515ce0a706568a4817eb644c616d22ad3956976c030d24eff184328e9f4131
--  __AUTH_CONST.__weak_auth_got: 0x50 sha256:cba81431bb21bf40fb06a87eef43bbcc3f670114b861000ea9280894afa32568
--  __AUTH_CONST.__auth_got: 0x1568 sha256:8ecda119a2eed52e91cfa1855a606093f10e113d32fbb48d337263ffdfa8a27d
--  __AUTH.__objc_data: 0x11d0 sha256:59380ac7d5f75855ac1d8d2a001362d5e705df5466c1e581be9177d87a624042
--  __AUTH.__data: 0x118 sha256:ece07d53ebb4d9cfe0f01a65292b0de49774379c7d90b9629c2d7b1597c70fdb
--  __AUTH.__thread_vars: 0x30 sha256:ec6560aa734b993d54e4fb795bffc6b68d7c2155b0dcb4a1d81a31803bf784e9
-+  __DATA_CONST.__weak_got: 0x30 sha256:ec7187fee70889082272b4a8012c92ccdac83e042f9dcd51e54058d5d4302829
-+  __DATA_CONST.__objc_selrefs: 0x9e8 sha256:22dfe1b64697fb974364b8e25d99c682a5ab79987a08cd840566409232b01d74
-+  __DATA_CONST.__objc_superrefs: 0x88 sha256:435f32732da2e665b8b92036b41c1317ad87887ce6c5183318e4143afa289384
-+  __DATA_CONST.__got: 0x458 sha256:37b51d0914ff00eb20d64443af89acda59ab0e9ed46214320efd0a0c23b0a6c3
-+  __AUTH_CONST.__const: 0x7218 sha256:5fc26d5b0d8012c72d9d76e570d43ab158361ae6ac1a3c1e2613d4b5edb9da89
-+  __AUTH_CONST.__cfstring: 0x1860 sha256:84e35daa066e4679d9b73ff2f25f28da1c0e5bffcf4b9c96ca8aa7e3437f08bb
-+  __AUTH_CONST.__objc_const: 0x1430 sha256:2ec5cb57e9382b84ae8f81c26109fe60c301d105e3f4a606f0cdcb206aeb6d8e
-+  __AUTH_CONST.__weak_auth_got: 0x50 sha256:9ecb8bc77fe593b20dc242b7676279f256d9cfdbb1e14b89bb9661e455032216
-+  __AUTH_CONST.__auth_got: 0x1450 sha256:7e9b40a541c43371a47fd4fe962e935838496a5cea5ffbf72b67c4710d8f75bb
-+  __AUTH.__objc_data: 0x6e0 sha256:fc890bcd8b30d56b448ec8c7abedd9e426a1e7eb75a62fe1dbc6bcfabc02a3d6
-+  __AUTH.__data: 0x118 sha256:09330a9077f12cd9d97f226439e9978a23c58b62665974c66407f57d2b65fecd
-+  __AUTH.__thread_vars: 0x30 sha256:4e810be31c27dd43073e8061688e7d620d2328d0a850272f39b9481b5892a5ae
-   __AUTH.__thread_bss: 0x10 sha256:374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb
--  __DATA.__objc_ivar: 0x230 sha256:d92187b314771b0c003a39725fb6611922f90ecc068b5d81db6a36dcb42f5fb4
--  __DATA.__data: 0x2f9 sha256:3b196936b706f144c45cc7fc40bfbc3d815b98bea1d1b0c9b198b2eefd5f7f04
-+  __DATA.__objc_ivar: 0x9c sha256:3852ae2517872f560ac39593ff3d24a09210369f6a29bbc690060df84c80818d
-+  __DATA.__data: 0x179 sha256:e5a2231cc139698cfdf5758963003f384dcc277c2f5c74fcc911b89c55e847e9
-   __DATA.__bss: 0xe9 sha256:e43fe96a7f7ec0a38984f78c064638b2daa75e261ab409bbbe2d3e590265ec7b
-   __DATA.__common: 0x3c5 sha256:8f74434d9f9c3f6d3e605964e2dd5bb3b18c7d54e6d059f4f634a8458374e924
-   __DATA_DIRTY.__data: 0x120 sha256:2d5565fb483d8ea4525a7a9229677d1038ad34b6e22c8d5152e1d7f7b9817597
 
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libmorphun.dylib
-   - /usr/lib/libobjc.A.dylib
--  UUID: 190DB091-CD34-39C4-BF1A-76CECEB57BD6
 -  Functions: 5520
--  Symbols:   15977
--  CStrings:  2550
-+  UUID: 8C99FDCD-068F-31F8-B7AD-21BC2635CF8D
+-  Symbols:   10275
+-  CStrings:  2301
 +  Functions: 4886
-+  Symbols:   13838
-+  CStrings:  2251
- 
++  Symbols:   8921
++  CStrings:  2057
 Symbols:
 + GCC_except_table1006
 + GCC_except_table1011
@@ -827,7 +789,6 @@ Symbols:
 + GCC_except_table978
 + GCC_except_table993
 + GCC_except_table995
-+ __ZN27nlv4_inference_orchestrator5treesL9printTreeERKNS0_8TreeNodeE.3302
 + __ZN4siri2nl4span12datadetector4type10kDayToComeE
 + __ZN4siri2nl4span12datadetector4type17kAmbiguousNextDayE
 + __ZN4uaapL23startDateAlignmentSpansEPNS_8UPDDSpanES1_S1_
@@ -985,7 +946,6 @@ Symbols:
 + __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorIN4snlp3ssu11selflogging26SSUBackgroundUpdateAppInfoENS_9allocatorIS5_EEE12emplace_backIJRKS5_EEERS5_DpOT_EUlvE_ZNS9_IJSB_EEESC_SF_EUlvE0_EEvbT_T0_
 + __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorIN4snlp3ssu3app12SSUAppIntentENS_9allocatorIS5_EEE12emplace_backIJS5_EEERS5_DpOT_EUlvE_ZNS9_IJS5_EEESA_SD_EUlvE0_EEvbT_T0_
 + __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorIN5boost7archive6detail19basic_iarchive_impl10cobject_idENS_9allocatorIS6_EEE12emplace_backIJS6_EEERS6_DpOT_EUlvE_ZNSA_IJS6_EEESB_SE_EUlvE0_EEvbT_T0_
-+ __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorIN5boost7archive6detail19basic_iarchive_impl10cobject_idENS_9allocatorIS6_EEE12emplace_backIJS6_EEERS6_DpOT_EUlvE_ZNSA_IJS6_EEESB_SE_EUlvE0_EEvbT_T0_.cold.1
 + __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSB_EEESC_SF_EUlvE0_EEvbT_T0_
 + __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRA35_KcEEERS7_DpOT_EUlvE_ZNSA_IJSD_EEESE_SH_EUlvE0_EEvbT_T0_
 + __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSC_EEESD_SG_EUlvE0_EEvbT_T0_
@@ -1643,52 +1603,6 @@ Symbols:
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEhEENS_22__unordered_map_hasherIS7_NS_4pairIKS7_hEENS_4hashIS7_EENS_8equal_toIS7_EEEENS_21__unordered_map_equalIS7_SC_SG_SE_EENS5_ISC_EEE16__emplace_uniqueB9fqe220106IJRKNS_21piecewise_construct_tENS_5tupleIJOS7_EEENSQ_IJEEEEEENSA_INS_15__hash_iteratorIPNS_11__hash_nodeIS8_PvEEEEbEEDpOT_ENKUlRSB_SP_OSS_OST_E_clES14_SP_S15_S16_
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeINS_17basic_string_viewIcNS_11char_traitsIcEEEENS_4pairIS5_S5_EEEENS_22__unordered_map_hasherIS5_NS6_IKS5_S7_EENS_4hashIS5_EENS_8equal_toIS5_EEEENS_21__unordered_map_equalIS5_SB_SF_SD_EENS_9allocatorISB_EEE16__emplace_uniqueB9fqe220106IJRKNS_21piecewise_construct_tENS_5tupleIJRSA_EEENSQ_IJEEEEEENS6_INS_15__hash_iteratorIPNS_11__hash_nodeIS8_PvEEEEbEEDpOT_ENKUlSR_SP_OSS_OST_E_clESR_SP_S14_S15_
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeImNS_6vectorIN15sirinluinternal12MatchingSpanENS_9allocatorIS4_EEEEEENS_22__unordered_map_hasherImNS_4pairIKmS7_EENS_4hashImEENS_8equal_toImEEEENS_21__unordered_map_equalImSC_SG_SE_EENS5_ISC_EEE16__emplace_uniqueB9fqe220106IJRKNS_21piecewise_construct_tENS_5tupleIJOmEEENSQ_IJEEEEEENSA_INS_15__hash_iteratorIPNS_11__hash_nodeIS8_PvEEEEbEEDpOT_ENKUlRSB_SP_OSS_OST_E_clES14_SP_S15_S16_
-+ ___block_literal_global.1157
-+ ___block_literal_global.1620
-+ ___block_literal_global.3061
-+ ___block_literal_global.770
-+ ___block_literal_global.977
-+ ___cxx_global_var_init.10.3525
-+ ___cxx_global_var_init.11.3526
-+ ___cxx_global_var_init.12.3527
-+ ___cxx_global_var_init.13.3528
-+ ___cxx_global_var_init.14.3529
-+ ___cxx_global_var_init.15.3530
-+ ___cxx_global_var_init.16.3531
-+ ___cxx_global_var_init.17.3532
-+ ___cxx_global_var_init.18.3533
-+ ___cxx_global_var_init.19.3534
-+ ___cxx_global_var_init.20.3535
-+ ___cxx_global_var_init.21.3536
-+ ___cxx_global_var_init.22.3537
-+ ___cxx_global_var_init.23.3538
-+ ___cxx_global_var_init.24.3539
-+ ___cxx_global_var_init.25.3540
-+ ___cxx_global_var_init.26.3541
-+ ___cxx_global_var_init.27.3542
-+ ___cxx_global_var_init.28.3543
-+ ___cxx_global_var_init.29.3544
-+ ___cxx_global_var_init.3.3518
-+ ___cxx_global_var_init.30.3545
-+ ___cxx_global_var_init.31.3546
-+ ___cxx_global_var_init.32.3547
-+ ___cxx_global_var_init.33.3548
-+ ___cxx_global_var_init.34.3549
-+ ___cxx_global_var_init.35.3550
-+ ___cxx_global_var_init.3517
-+ ___cxx_global_var_init.36.3551
-+ ___cxx_global_var_init.37.3552
-+ ___cxx_global_var_init.38.3553
-+ ___cxx_global_var_init.39.3554
-+ ___cxx_global_var_init.4.3519
-+ ___cxx_global_var_init.40.3555
-+ ___cxx_global_var_init.41.3556
-+ ___cxx_global_var_init.42.3557
-+ ___cxx_global_var_init.5.3520
-+ ___cxx_global_var_init.6.3521
-+ ___cxx_global_var_init.7.3522
-+ ___cxx_global_var_init.8.3523
-+ ___cxx_global_var_init.9.3524
 - +[UPCalibration calibrateCandidate:withCalibrationScore:]
 - +[UPCalibration calibrateResult:withCalibrationScore:]
 - +[UPCalibrationModel modelWithLoadedModelConfiguration:error:]
@@ -3422,7 +3336,6 @@ Symbols:
 - __ZN18uaap_orchestration7grammar4Rule23loadRightLabelsFromJsonERKN9rapidjson12GenericValueINS2_4UTF8IcEENS2_19MemoryPoolAllocatorINS2_12CrtAllocatorEEEEE
 - __ZN18uaap_orchestration7grammar4Rule28loadValueConstraintsFromJsonERKN9rapidjson12GenericValueINS2_4UTF8IcEENS2_19MemoryPoolAllocatorINS2_12CrtAllocatorEEEEE
 - __ZN18uaap_orchestration7grammar4RuleD2Ev
-- __ZN27nlv4_inference_orchestrator5treesL9printTreeERKNS0_8TreeNodeE.5236
 - __ZN4siri8ontology15UsoVocabManager20createCustomEdgeNameENSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE
 - __ZN4siri8ontology15UsoVocabManager20createCustomVerbNameENSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE
 - __ZN4siri8ontology15UsoVocabManager22createCustomEntityNameENSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE
@@ -3742,7 +3655,6 @@ Symbols:
 - __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorIN4snlp3ssu11selflogging26SSUBackgroundUpdateAppInfoENS_9allocatorIS5_EEE12emplace_backIJRKS5_EEERS5_DpOT_EUlvE_ZNS9_IJSB_EEESC_SF_EUlvE0_EEvbT_T0_
 - __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorIN4snlp3ssu3app12SSUAppIntentENS_9allocatorIS5_EEE12emplace_backIJS5_EEERS5_DpOT_EUlvE_ZNS9_IJS5_EEESA_SD_EUlvE0_EEvbT_T0_
 - __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorIN5boost7archive6detail19basic_iarchive_impl10cobject_idENS_9allocatorIS6_EEE12emplace_backIJS6_EEERS6_DpOT_EUlvE_ZNSA_IJS6_EEESB_SE_EUlvE0_EEvbT_T0_
-- __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorIN5boost7archive6detail19basic_iarchive_impl10cobject_idENS_9allocatorIS6_EEE12emplace_backIJS6_EEERS6_DpOT_EUlvE_ZNSA_IJS6_EEESB_SE_EUlvE0_EEvbT_T0_.cold.1
 - __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorINS_12basic_stringIDsNS_11char_traitsIDsEENS_9allocatorIDsEEEENS5_IS7_EEE12emplace_backIJRKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSC_EEESD_SG_EUlvE0_EEvbT_T0_
 - __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSB_EEESC_SF_EUlvE0_EEvbT_T0_
 - __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRA35_KcEEERS7_DpOT_EUlvE_ZNSA_IJSD_EEESE_SH_EUlvE0_EEvbT_T0_
@@ -4576,52 +4488,6 @@ Symbols:
 - ___block_descriptor_48_e8_32s40r_e12_v24?0Q8^B16ls32l8r40l8
 - ___block_descriptor_48_e8_32s_e27_B16?0"UPResultCandidate"8ls32l8
 - ___block_descriptor_80_e8_32s40s48s56r64r72r_e12_v24?0Q8^B16ls32l8r56l8s40l8r64l8r72l8s48l8
-- ___block_literal_global.1218
-- ___block_literal_global.1521
-- ___block_literal_global.1829
-- ___block_literal_global.2622
-- ___block_literal_global.4904
-- ___cxx_global_var_init.10.5519
-- ___cxx_global_var_init.11.5520
-- ___cxx_global_var_init.12.5521
-- ___cxx_global_var_init.13.5522
-- ___cxx_global_var_init.14.5523
-- ___cxx_global_var_init.15.5524
-- ___cxx_global_var_init.16.5525
-- ___cxx_global_var_init.17.5526
-- ___cxx_global_var_init.18.5527
-- ___cxx_global_var_init.19.5528
-- ___cxx_global_var_init.20.5529
-- ___cxx_global_var_init.21.5530
-- ___cxx_global_var_init.22.5531
-- ___cxx_global_var_init.23.5532
-- ___cxx_global_var_init.24.5533
-- ___cxx_global_var_init.25.5534
-- ___cxx_global_var_init.26.5535
-- ___cxx_global_var_init.27.5536
-- ___cxx_global_var_init.28.5537
-- ___cxx_global_var_init.29.5538
-- ___cxx_global_var_init.3.5512
-- ___cxx_global_var_init.30.5539
-- ___cxx_global_var_init.31.5540
-- ___cxx_global_var_init.32.5541
-- ___cxx_global_var_init.33.5542
-- ___cxx_global_var_init.34.5543
-- ___cxx_global_var_init.35.5544
-- ___cxx_global_var_init.36.5545
-- ___cxx_global_var_init.37.5546
-- ___cxx_global_var_init.38.5547
-- ___cxx_global_var_init.39.5548
-- ___cxx_global_var_init.4.5513
-- ___cxx_global_var_init.40.5549
-- ___cxx_global_var_init.41.5550
-- ___cxx_global_var_init.42.5551
-- ___cxx_global_var_init.5.5514
-- ___cxx_global_var_init.5511
-- ___cxx_global_var_init.6.5515
-- ___cxx_global_var_init.7.5516
-- ___cxx_global_var_init.8.5517
-- ___cxx_global_var_init.9.5518
 - ___objc_personality_v0
 - _espresso_network_change_input_blob_shapes_seq_rank
 - _fclose
@@ -4632,248 +4498,6 @@ Symbols:
 - _kIndexMarker
 - _malloc_type_malloc
 - _malloc_type_realloc
-- _objc_msgSend$_addPathForLabel:range:text:semanticValue:sharedEntityGraph:toGraphNode:forGraph:
-- _objc_msgSend$_attachSharedEntity:withCustomEntityEdge:toGraphNode:forGraph:
-- _objc_msgSend$_buildCandidateEntitiesByStartIndex:
-- _objc_msgSend$_buildEmbeddingsDictionaryWithNonWhitespaceTokens:nonWhitespaceTokenIndexes:embeddings:error:
-- _objc_msgSend$_buildTokenListWithTokenChain:nonWhitespaceTokenIndexes:
-- _objc_msgSend$_candidateForBeamSequence:utterance:outputTokens:resolver:sharedEntityResolution:
-- _objc_msgSend$_candidateForUtterance:probability:labelledSpans:intent:sharedEntityResolution:
-- _objc_msgSend$_candidates
-- _objc_msgSend$_configurationWithBioLabelsVocabPath:configPath:grammarPath:intentVocabPath:spanVocabPath:parserEspressoModelPath:calibrationEspressoModelPath:error:
-- _objc_msgSend$_contextualizeByDialogActTypeUsingContextualizerInput:
-- _objc_msgSend$_convertBundleIdToEntity:
-- _objc_msgSend$_convertFromGaveOptionsDialogAct:error:
-- _objc_msgSend$_convertFromOfferedDialogAct:error:
-- _objc_msgSend$_convertFromPromptedDialogAct:error:
-- _objc_msgSend$_createDialogActWithProtobufQuery:
-- _objc_msgSend$_dictionaryRepresentation
-- _objc_msgSend$_getNonWhitespaceTokenIndexes:
-- _objc_msgSend$_groupHigherLevelEntities:
-- _objc_msgSend$_indexedLabelRepresentation
-- _objc_msgSend$_initWithBioLabelsVocabPath:configPath:grammarPath:intentVocabPath:spanVocabPath:parserEspressoModelPath:calibrationEspressoModelPath:
-- _objc_msgSend$_insertHigherLevelEntities:intoGraph:underTaskNode:
-- _objc_msgSend$_insertSimpleEntity:intoGraph:underTaskNode:
-- _objc_msgSend$_intermediateNodeRepresentations:
-- _objc_msgSend$_leafNodeFromGraphEdge:andGraphNode:
-- _objc_msgSend$_leafNodeFromLabel:andGraphSemanticValueNode:
-- _objc_msgSend$_leafNodeFromLabel:andGraphStringNode:
-- _objc_msgSend$_parseUserDialogAct:error:
-- _objc_msgSend$_parseUserDialogActGraph:error:
-- _objc_msgSend$_resultFromInferenceResult:query:outputTokens:resolver:sharedEntityResolution:
-- _objc_msgSend$addHypotheses:
-- _objc_msgSend$addIndex:
-- _objc_msgSend$allValues
-- _objc_msgSend$allocWithZone:
-- _objc_msgSend$annotatedEntityFragmentString
-- _objc_msgSend$annotatedString
-- _objc_msgSend$anyObject
-- _objc_msgSend$appBundleId
-- _objc_msgSend$arrayWithArray:
-- _objc_msgSend$arrayWithObject:
-- _objc_msgSend$beamMaskInput
-- _objc_msgSend$bestAvailableProbability
-- _objc_msgSend$bioLabelsVocabPath
-- _objc_msgSend$buildDataDetectorDateTimeSpansByTokenRange:
-- _objc_msgSend$buildMatchedSpanListFromQuerySpans:
-- _objc_msgSend$buildPayloadResultFromQuery:modelIdentifier:intent:entityName:serializer:
-- _objc_msgSend$buildSpansListWithProtobufQuery:nonWhitespaceTokenIndexes:error:
-- _objc_msgSend$bundleId
-- _objc_msgSend$calibrateCandidate:withCalibrationScore:
-- _objc_msgSend$calibrateParserResults:withCalibrationScores:error:
-- _objc_msgSend$calibrateResult:withCalibrationScore:
-- _objc_msgSend$calibratedProbability
-- _objc_msgSend$calibrationEspressoModelPath
-- _objc_msgSend$calibrationEspressoModule
-- _objc_msgSend$calibrationModel
-- _objc_msgSend$candidateAtRank:
-- _objc_msgSend$candidateCount
-- _objc_msgSend$checkFileExistence:error:
-- _objc_msgSend$choices
-- _objc_msgSend$combinedResultFromResults:
-- _objc_msgSend$componentsJoinedByString:
-- _objc_msgSend$configPath
-- _objc_msgSend$containsString:
-- _objc_msgSend$convertFromDialogAct:error:
-- _objc_msgSend$convertFromUserDialogAct:
-- _objc_msgSend$convertSystemDialogAct:
-- _objc_msgSend$convertUsoGraphFromObjCToCpp:
-- _objc_msgSend$copyWithZone:
-- _objc_msgSend$coreResult
-- _objc_msgSend$createConfirmOrRejectedDialogActsFor:reference:
-- _objc_msgSend$createResultFromExistingResult:truncatedTo:
-- _objc_msgSend$defaultCStringEncoding
-- _objc_msgSend$description
-- _objc_msgSend$deserializeFromSerializedGraph:
-- _objc_msgSend$dialogAct
-- _objc_msgSend$dialogActFromQuery:
-- _objc_msgSend$dictionary
-- _objc_msgSend$dictionaryWithContentsOfFile:
-- _objc_msgSend$dictionaryWithDictionary:
-- _objc_msgSend$directLeafNodes
-- _objc_msgSend$domainResult
-- _objc_msgSend$doubleValue
-- _objc_msgSend$embeddingDim
-- _objc_msgSend$embeddingsByToken
-- _objc_msgSend$embeddingsTensor
-- _objc_msgSend$entities
-- _objc_msgSend$entity
-- _objc_msgSend$entityLabelsFromCandidate:
-- _objc_msgSend$entityName
-- _objc_msgSend$entityType
-- _objc_msgSend$entityValue
-- _objc_msgSend$enumerateIndexesUsingBlock:
-- _objc_msgSend$fileExistsAtPath:
-- _objc_msgSend$filterResult:byEntityName:serializer:
-- _objc_msgSend$filterResult:serializer:predicate:
-- _objc_msgSend$firstObject
-- _objc_msgSend$forwardWithSpanLabels:embeddings:utterance:
-- _objc_msgSend$getBytes:maxLength:usedLength:encoding:options:range:remainingRange:
-- _objc_msgSend$getCoordinates
-- _objc_msgSend$getDimension
-- _objc_msgSend$grammarPath
-- _objc_msgSend$groupId
-- _objc_msgSend$hasBegin
-- _objc_msgSend$hasEmbeddingDim
-- _objc_msgSend$hasEmbeddings
-- _objc_msgSend$hasEnd
-- _objc_msgSend$hasNlContext
-- _objc_msgSend$hasNumToken
-- _objc_msgSend$hasTokenChain
-- _objc_msgSend$hasTopCandidate:excedingProbability:matchingOneOfIntents:
-- _objc_msgSend$hasTurnContext
-- _objc_msgSend$hasTurnInput
-- _objc_msgSend$hasValue
-- _objc_msgSend$hash
-- _objc_msgSend$higherLevelChildLabel
-- _objc_msgSend$higherLevelEntityLabelFromParentLabel:childLabel:
-- _objc_msgSend$higherLevelParentLabel
-- _objc_msgSend$indexSet
-- _objc_msgSend$init
-- _objc_msgSend$initWithAppBundleId:
-- _objc_msgSend$initWithArray:copyItems:
-- _objc_msgSend$initWithCandidates:queryUUID:
-- _objc_msgSend$initWithCoordinates:
-- _objc_msgSend$initWithCoreModel:domainModelBundles:
-- _objc_msgSend$initWithDomain:code:userInfo:
-- _objc_msgSend$initWithDomainResult:coreResult:modelIdentifier:query:dialogAct:
-- _objc_msgSend$initWithEmbeddingsTensor:spanLabelsTensor:outputTokens:
-- _objc_msgSend$initWithIndexSet:
-- _objc_msgSend$initWithIntent:entityType:entityName:entityValues:
-- _objc_msgSend$initWithIntent:entityType:entityName:reference:
-- _objc_msgSend$initWithIntent:entityWithValue:
-- _objc_msgSend$initWithIntent:singleEntity:
-- _objc_msgSend$initWithKey:ascending:
-- _objc_msgSend$initWithLabel:andLeafNodes:
-- _objc_msgSend$initWithLabel:andText:andSemanticValue:
-- _objc_msgSend$initWithLabel:intermediateNodes:directLeafNodes:
-- _objc_msgSend$initWithLoadedModelConfiguration:
-- _objc_msgSend$initWithLocale:featurizer:
-- _objc_msgSend$initWithMatchingSpans:
-- _objc_msgSend$initWithPrebuiltIntentThreshold:
-- _objc_msgSend$initWithPrebuiltIntentThreshold:usoSerializer:
-- _objc_msgSend$initWithPreprocessor:parserModel:calibrationModel:
-- _objc_msgSend$initWithProtobufEmbeddings:forTokenAt:error:
-- _objc_msgSend$initWithProtobufQuery:error:
-- _objc_msgSend$initWithProtobufSpan:nonWhitespaceTokenIndexes:error:
-- _objc_msgSend$initWithRange:label:text:groupId:semanticValue:sharedEntityGraph:
-- _objc_msgSend$initWithTask:
-- _objc_msgSend$initWithType:entityName:entityValue:
-- _objc_msgSend$initWithUncalibratedProbability:calibratedProbability:utterance:intent:entities:modelIdentifier:task:
-- _objc_msgSend$initWithUsoSerializer:
-- _objc_msgSend$initWithUtterance:tokens:embeddingsByToken:spans:dialogAct:
-- _objc_msgSend$instancesRespondToSelector:
-- _objc_msgSend$intent
-- _objc_msgSend$intentVocabPath
-- _objc_msgSend$intermediateNodeRepresentations:
-- _objc_msgSend$intermediateNodes
-- _objc_msgSend$isEqual:
-- _objc_msgSend$isEqualToEntityWithValue:
-- _objc_msgSend$isEqualToIntentWithSingleEntity:
-- _objc_msgSend$isEqualToString:
-- _objc_msgSend$isHigherLevelEntity
-- _objc_msgSend$leafNodes
-- _objc_msgSend$lengthOfBytesUsingEncoding:
-- _objc_msgSend$localeWithLocaleIdentifier:
-- _objc_msgSend$longValue
-- _objc_msgSend$matchingSpansAtIndex:
-- _objc_msgSend$matchingSpansCount
-- _objc_msgSend$modelIdentifier
-- _objc_msgSend$multiTurnPredictionFromQuery:modelIdentifierToDomainResults:dialogAct:error:
-- _objc_msgSend$nSStringToU16String:
-- _objc_msgSend$nlContext
-- _objc_msgSend$null
-- _objc_msgSend$numToken
-- _objc_msgSend$numberWithDouble:
-- _objc_msgSend$numberWithFloat:
-- _objc_msgSend$numberWithLong:
-- _objc_msgSend$numberWithUnsignedInteger:
-- _objc_msgSend$numberWithUnsignedLong:
-- _objc_msgSend$objectAtIndex:
-- _objc_msgSend$objectAtIndexedSubscript:
-- _objc_msgSend$objectForKeyedSubscript:
-- _objc_msgSend$offeredAct
-- _objc_msgSend$outputTokens
-- _objc_msgSend$parserEspressoModelPath
-- _objc_msgSend$parserEspressoModule
-- _objc_msgSend$parserModel
-- _objc_msgSend$predictionFromQuery:error:
-- _objc_msgSend$predictionFromQuery:preprocessorOutput:error:
-- _objc_msgSend$preprocess:error:
-- _objc_msgSend$preprocessor
-- _objc_msgSend$protobufRepresentation
-- _objc_msgSend$query
-- _objc_msgSend$queryUUID
-- _objc_msgSend$rangeFromStart:end:
-- _objc_msgSend$rangeOfString:
-- _objc_msgSend$reference
-- _objc_msgSend$replaceObjectAtIndex:withObject:
-- _objc_msgSend$resolveSharedEntityForTokenRange:valueType:
-- _objc_msgSend$resolver
-- _objc_msgSend$resultFromResult:withNewIntent:
-- _objc_msgSend$resultUsingContextualizerInput:
-- _objc_msgSend$resultWithContextualizerInput:
-- _objc_msgSend$rootNodeRepresentation
-- _objc_msgSend$rootNodeRepresentationForIntent:andEntities:
-- _objc_msgSend$scoreFromQuery:preprocessorOutput:error:
-- _objc_msgSend$semanticValue
-- _objc_msgSend$serializeFromIntent:andEntities:forBundleId:
-- _objc_msgSend$setAlgorithm:
-- _objc_msgSend$setObject:atIndexedSubscript:
-- _objc_msgSend$setObject:forKey:
-- _objc_msgSend$setObject:forKeyedSubscript:
-- _objc_msgSend$setParser:
-- _objc_msgSend$setParserId:
-- _objc_msgSend$setReference:
-- _objc_msgSend$setUserDialogActs:
-- _objc_msgSend$setWithArray:
-- _objc_msgSend$sharedEntityGraph
-- _objc_msgSend$singleTurnPredictionFromDomainResults:
-- _objc_msgSend$sortedArrayUsingDescriptors:
-- _objc_msgSend$spanLabelsTensor
-- _objc_msgSend$spanVocabPath
-- _objc_msgSend$spans
-- _objc_msgSend$stdU16ToNSString:
-- _objc_msgSend$stringByAppendingPathComponent:
-- _objc_msgSend$stringByReplacingOccurrencesOfString:withString:
-- _objc_msgSend$subarrayWithRange:
-- _objc_msgSend$substringFromIndex:
-- _objc_msgSend$substringToIndex:
-- _objc_msgSend$systemDialogActs
-- _objc_msgSend$systemDialogActsCount
-- _objc_msgSend$task
-- _objc_msgSend$toCppUsoGraph:withError:
-- _objc_msgSend$tokenDescription:
-- _objc_msgSend$tokensAtIndex:
-- _objc_msgSend$turnContext
-- _objc_msgSend$uncalibratedProbability
-- _objc_msgSend$utterance
-- _objc_msgSend$uuid
-- _objc_msgSend$value
-- _objc_msgSend$valueForKey:
-- _objc_msgSend$valueWithRange:
-- _objc_msgSend$valuesAtIndex:
-- _objc_msgSend$valuesCount
 - _objc_retain_x6
 - _u_errorName
 - _u_isspace
@@ -4894,7 +4518,6 @@ Symbols:
 - _uregex_openC
 - _uregex_setText
 CStrings:
-+ "/AppleInternal/Library/BuildRoots/4~CReEugC_7XzVerFsEbRcs6nfO7lS7Gg3sE4J2OQ/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/boost/uuid/detail/random_provider_posix.ipp"
 + "AmbiguousNextDay"
 + "DayToCome"
 + "Skipping '%s' during span reinsertion; parent already carries this edge."
@@ -4919,7 +4542,6 @@ CStrings:
 - "-[UPContextualizerStrategyOffer resultUsingContextualizerInput:]"
 - "-[UPContextualizerStrategyOptions resultUsingContextualizerInput:]"
 - "-[UPContextualizerStrategyPrompt resultUsingContextualizerInput:]"
-- "/AppleInternal/Library/BuildRoots/4~CQKUugBnj4YvQIi5C0zyQ10t84US_2ccfIGnllk/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/boost/uuid/detail/random_provider_posix.ipp"
 - "Adding DD datetime span with token range (%lu, %lu)"
 - "Adding matching span (%u -> %u) with label %@"
 - "Attaching shared entity graph: %{sensitive}s"
@@ -5146,5 +4768,4 @@ CStrings:
 - "{Token begin=%@, end=%@, value='%@'}"
 - "{UPEmbedding: dimension %lu}"
 - "{UPQuery\n  utterance: %@\n  tokens: %@\n  embeddingsByToken:\n%@\n  spans:\n%@\n}"
-
 ```

@@ -2,74 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/BlastDoor.framework/BlastDoor`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__data` | `0xc5b0` | `0x13588` | **`+0x6fd8`** |
+| `__AUTH.__data` | `0xe468` | `0x9048` | **`-0x5420`** |
+| `__DATA.__bss` | `0x157af0` | `0x152e60` | **`-0x4c90`** |
+| `__DATA_DIRTY.__bss` | `0xcea0` | `0x11b20` | **`+0x4c80`** |
+| `__DATA.__data` | `0x1c460` | `0x1a870` | **`-0x1bf0`** |
+| `__TEXT.__text` | `0x8ceef0` | `0x8ceebc` | **`-0x34`** |
+| `__DATA.__common` | `0xfd0` | `0xfb0` | **`-0x20`** |
+| `__DATA_DIRTY.__common` | `—` | `0x20` | **`+0x20`** |
+| `__TEXT.__const` | `0xddb50` | `0xddb60` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x20d0` | `0x20c8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x8ceef0
-+  __TEXT.__text: 0x8ceebc
-   __TEXT.__objc_methlist: 0xafa0
--  __TEXT.__const: 0xddb50
-+  __TEXT.__const: 0xddb60
-   __TEXT.__cstring: 0x20fc6
-   __TEXT.__gcc_except_tab: 0x46c
-   __TEXT.__dlopen_cstrs: 0x34b
+-324.100.2.0.0
++325.100.1.0.0
 
-   __AUTH_CONST.__const: 0x74430
-   __AUTH_CONST.__cfstring: 0x2be0
-   __AUTH_CONST.__objc_const: 0x1a088
--  __AUTH_CONST.__auth_got: 0x20d0
-+  __AUTH_CONST.__auth_got: 0x20c8
-   __AUTH.__objc_data: 0xc870
--  __AUTH.__data: 0xe468
-+  __AUTH.__data: 0x9048
-   __DATA.__objc_ivar: 0x6a8
--  __DATA.__data: 0x1c460
--  __DATA.__bss: 0x157af0
--  __DATA.__common: 0xfd0
-+  __DATA.__data: 0x1a870
-+  __DATA.__bss: 0x152e60
-+  __DATA.__common: 0xfb0
-   __DATA_DIRTY.__objc_data: 0x3048
--  __DATA_DIRTY.__data: 0xc5b0
--  __DATA_DIRTY.__bss: 0xcea0
-+  __DATA_DIRTY.__data: 0x13588
-+  __DATA_DIRTY.__bss: 0x11b20
-+  __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 69004
--  Symbols:   24541
-+  Symbols:   24540
-   CStrings:  4568
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+-  Symbols:   17688
++  Symbols:   17687
 Symbols:
 - _swift_willThrowTypedImpl
 Functions:
@@ -96,5 +52,4 @@ Functions:
 ~ sub_1ad1b71dc -> sub_1b199a1f0 : 1788 -> 1776
 ~ sub_1ad1b78d8 -> sub_1b199a8e0 : 1296 -> 1288
 ~ sub_1ad1b7de8 -> sub_1b199ade8 : 6548 -> 6576
-
 ```

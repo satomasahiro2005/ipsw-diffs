@@ -2,13 +2,12 @@
 
 > `/System/Library/PrivateFrameworks/SiriGeo.framework/SiriGeo`
 
+### Other Changes
+
 ```diff
 
 -3600.36.14.0.0
 +3600.36.19.0.0
-   __TEXT.__text: 0x1a304
-   __TEXT.__objc_methlist: 0x3fc
-   __TEXT.__const: 0xe98
 Symbols:
 + _$s7SiriGeo23INShareETAIntentHandlerC14handleShareETA33_73890AA4F3C712AED7434AA5E49C1938LL6intent10completionySo0cD0C_ySo0cD8ResponseCctF03$s7a5Geo23cde37C6handle6intent10completionySo0cD0C_yv2D8R11CctFyAJcfU_AcKIegg_Tf1nEn_n
 + _$s7SiriGeo23INShareETAIntentHandlerC17resolveRecipients3for4withySo0cD0C_ySaySo0C28ETARecipientResolutionResultCGctF026$sSo7NSArrayCIeyBy_SaySo35cjkL9CGIegg_TRSo0O0CIeyBy_Tf1nEn_n

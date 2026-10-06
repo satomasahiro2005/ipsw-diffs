@@ -2,61 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/SiriPlaybackControlIntents.framework/SiriPlaybackControlIntents`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x24bb74` | `0x24c5ac` | **`+0xa38`** |
+| `__TEXT.__oslogstring` | `0x1d696` | `0x1d7d6` | **`+0x140`** |
+| `__TEXT.__unwind_info` | `0x72d8` | `0x7200` | **`-0xd8`** |
+| `__TEXT.__eh_frame` | `0x50d8` | `0x50a0` | **`-0x38`** |
+| `__AUTH_CONST.__const` | `0x16538` | `0x16560` | **`+0x28`** |
+| `__TEXT.__swift5_capture` | `0x5b90` | `0x5bb0` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x26d8` | `0x26c8` | **`-0x10`** |
+| `__TEXT.__const` | `0x1ac38` | `0x1ac28` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3600.26.5.0.0
--  __TEXT.__text: 0x24bb74
 +3600.26.17.0.0
-+  __TEXT.__text: 0x24c5ac
-   __TEXT.__objc_methlist: 0x2780
--  __TEXT.__const: 0x1ac38
-+  __TEXT.__const: 0x1ac28
-   __TEXT.__constg_swiftt: 0x6c24
-   __TEXT.__swift5_typeref: 0x60e8
-   __TEXT.__swift5_builtin: 0x528
 
-   __TEXT.__swift5_proto: 0x15e0
-   __TEXT.__swift5_types: 0x6c8
-   __TEXT.__swift5_protos: 0xcc
--  __TEXT.__swift5_capture: 0x5b90
--  __TEXT.__oslogstring: 0x1d696
-+  __TEXT.__swift5_capture: 0x5bb0
-+  __TEXT.__oslogstring: 0x1d7d6
-   __TEXT.__cstring: 0x499d
-   __TEXT.__swift_as_entry: 0xd8
-   __TEXT.__swift_as_ret: 0xdc
-   __TEXT.__swift_as_cont: 0x74
-   __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__unwind_info: 0x72d8
--  __TEXT.__eh_frame: 0x50d8
-+  __TEXT.__unwind_info: 0x7200
-+  __TEXT.__eh_frame: 0x50a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0xf40
-   __DATA_CONST.__objc_protorefs: 0x100
-   __DATA_CONST.__got: 0xfd0
--  __AUTH_CONST.__const: 0x16538
-+  __AUTH_CONST.__const: 0x16560
-   __AUTH_CONST.__objc_const: 0x11b20
--  __AUTH_CONST.__auth_got: 0x26d8
-+  __AUTH_CONST.__auth_got: 0x26c8
-   __AUTH.__objc_data: 0x58e0
-   __AUTH.__data: 0x7298
-   __DATA.__data: 0x43d8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15193
--  Symbols:   4336
+-  Symbols:   4022
 -  CStrings:  2060
 +  Functions: 15185
-+  Symbols:   4330
++  Symbols:   4016
 +  CStrings:  2062
- 
 Symbols:
 + ___swift_closure_destructor.12Tm
 - _AFIsLinwoodEnabledAndAvailable

@@ -2,73 +2,38 @@
 
 > `/System/Library/Frameworks/SafariServices.framework/SafariServices`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1838e4` | `0x183a04` | **`+0x120`** |
+| `__TEXT.__objc_methlist` | `0x1bc9c` | `0x1bd2c` | **`+0x90`** |
+| `__DATA_CONST.__objc_selrefs` | `0x12290` | `0x12300` | **`+0x70`** |
+| `__AUTH_CONST.__objc_const` | `0x2c618` | `0x2c678` | **`+0x60`** |
+| `__TEXT.__ustring` | `0x37d2` | `0x3774` | **`-0x5e`** |
+| `__TEXT.__gcc_except_tab` | `0xfc30` | `0xfc6c` | **`+0x3c`** |
+| `__DATA_CONST.__const` | `0x77d0` | `0x77f8` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0xc400` | `0xc3e0` | **`-0x20`** |
+| `__TEXT.__unwind_info` | `0x91e8` | `0x9208` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x2708` | `0x2710` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -625.1.24.10.1
--  __TEXT.__text: 0x1838e4
--  __TEXT.__objc_methlist: 0x1bc9c
 +625.1.29.10.3
-+  __TEXT.__text: 0x183a04
-+  __TEXT.__objc_methlist: 0x1bd2c
-   __TEXT.__const: 0x2eb4
-   __TEXT.__cstring: 0xd450
--  __TEXT.__gcc_except_tab: 0xfc30
-+  __TEXT.__gcc_except_tab: 0xfc6c
-   __TEXT.__dlopen_cstrs: 0xb7f
-   __TEXT.__oslogstring: 0x81d7
--  __TEXT.__ustring: 0x37d2
-+  __TEXT.__ustring: 0x3774
-   __TEXT.__swift5_typeref: 0x6ac
-   __TEXT.__swift5_capture: 0x47c
-   __TEXT.__constg_swiftt: 0x218
 
-   __TEXT.__swift_as_entry: 0x70
-   __TEXT.__swift_as_ret: 0x7c
-   __TEXT.__swift_as_cont: 0xfc
--  __TEXT.__unwind_info: 0x91e8
-+  __TEXT.__unwind_info: 0x9208
-   __TEXT.__eh_frame: 0x1208
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x77d0
-+  __DATA_CONST.__const: 0x77f8
-   __DATA_CONST.__objc_classlist: 0xa50
-   __DATA_CONST.__objc_catlist: 0x100
-   __DATA_CONST.__objc_protolist: 0x8e8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x12290
-+  __DATA_CONST.__objc_selrefs: 0x12300
-   __DATA_CONST.__objc_protorefs: 0x160
-   __DATA_CONST.__objc_superrefs: 0x858
-   __DATA_CONST.__objc_arraydata: 0x588
--  __DATA_CONST.__got: 0x2708
-+  __DATA_CONST.__got: 0x2710
-   __AUTH_CONST.__const: 0x2200
--  __AUTH_CONST.__cfstring: 0xc400
--  __AUTH_CONST.__objc_const: 0x2c618
-+  __AUTH_CONST.__cfstring: 0xc3e0
-+  __AUTH_CONST.__objc_const: 0x2c678
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0xca8
-   __AUTH_CONST.__objc_arrayobj: 0x4f8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9273
--  Symbols:   24455
+-  Symbols:   17504
 -  CStrings:  2549
 +  Functions: 9282
-+  Symbols:   24477
++  Symbols:   17519
 +  CStrings:  2548
- 
 Symbols:
 + +[SFDialog(SafariServicesExtras) allowDownloadDialogWithDownload:accountableHost:navigatedWebView:allowViewAction:completionHandler:]
 + +[SFDialog(SafariServicesExtras) downloadBlockedDialogWithFileType:accountableHost:presentingURL:completionHandler:]
@@ -108,17 +73,6 @@ Symbols:
 + ___133+[SFDialog(SafariServicesExtras) allowDownloadDialogWithDownload:accountableHost:navigatedWebView:allowViewAction:completionHandler:]_block_invoke_2
 + ___block_descriptor_48_ea8_32s40bs_e8_v12?0B8ls32l8s40l8
 + _areEssentiallyPixelEqual
-+ _objc_msgSend$_setEdgeVisibility:
-+ _objc_msgSend$accountableHost
-+ _objc_msgSend$automaticStyle
-+ _objc_msgSend$downloadBlockedDialogWithFileType:accountableHost:presentingURL:completionHandler:
-+ _objc_msgSend$navigationBarInsets
-+ _objc_msgSend$navigationBarInsetsForBrowserView:
-+ _objc_msgSend$safari_supportsOpenInNewWindow
-+ _objc_msgSend$safari_topOriginHost
-+ _objc_msgSend$setMinimumContentInsets:
-+ _objc_msgSend$setOneTimeCodeAppearsToHaveBeenFilledInItsEntirety:
-+ _objc_msgSend$setTabBarTheme:
 - +[SFDialog(SafariServicesExtras) allowDownloadDialogWithDownload:initiatingSecurityOrigin:navigatedWebView:allowViewAction:completionHandler:]
 - +[SFDialog(SafariServicesExtras) downloadBlockedDialogWithFileType:initiatingSecurityOrigin:presentingURL:completionHandler:]
 - -[_SFBrowserContentViewController _lockWebViewSafeAreaInsetTopForNavigationSnapshot]
@@ -142,10 +96,6 @@ Symbols:
 - _WBSEnableGraphicIconsInCompletionListKey
 - ___142+[SFDialog(SafariServicesExtras) allowDownloadDialogWithDownload:initiatingSecurityOrigin:navigatedWebView:allowViewAction:completionHandler:]_block_invoke
 - ___142+[SFDialog(SafariServicesExtras) allowDownloadDialogWithDownload:initiatingSecurityOrigin:navigatedWebView:allowViewAction:completionHandler:]_block_invoke_2
-- _objc_msgSend$_lockWebViewSafeAreaInsetTopForNavigationSnapshot
-- _objc_msgSend$downloadBlockedDialogWithFileType:initiatingSecurityOrigin:presentingURL:completionHandler:
-- _objc_msgSend$setSafari_overrideUserInterfaceStyle:
-- _objc_msgSend$supportsMultipleScenes
 CStrings:
 + "&channel=41"
 + "a\xf0T"

@@ -2,70 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/WebGPU.framework/WebGPU`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x240678` | `0x244674` | **`+0x3ffc`** |
+| `__TEXT.__cstring` | `0x3d37c` | `0x3e1fc` | **`+0xe80`** |
+| `__TEXT.__gcc_except_tab` | `0xa3d0` | `0xa910` | **`+0x540`** |
+| `__AUTH_CONST.__cfstring` | `0x39c0` | `0x3a40` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x4380` | `0x43d8` | **`+0x58`** |
+| `__AUTH_CONST.__objc_const` | `0x638` | `0x658` | **`+0x20`** |
+| `__DATA_DIRTY.__bss` | `0x108` | `0x128` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x1f0` | `0x200` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xa10` | `0xa08` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb00` | `0xb08` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x5c` | `0x60` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -625.1.29.10.29
--  __TEXT.__text: 0x23cf34
--  __TEXT.__objc_methlist: 0x1f0
 +625.2.4.1.0
-+  __TEXT.__text: 0x240ee0
-+  __TEXT.__objc_methlist: 0x200
-   __TEXT.__const: 0x1f94
--  __TEXT.__gcc_except_tab: 0xa3d0
-+  __TEXT.__gcc_except_tab: 0xa910
-   __TEXT.__swift5_typeref: 0x7d8
--  __TEXT.__cstring: 0x3d37c
-+  __TEXT.__cstring: 0x3e1fc
-   __TEXT.__constg_swiftt: 0xb7c
-   __TEXT.__swift5_fieldmd: 0x400
-   __TEXT.__swift5_builtin: 0xdc
 
-   __TEXT.__swift5_types: 0x4c
-   __TEXT.__swift5_protos: 0x50
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0x46c0
-+  __TEXT.__unwind_info: 0x4710
-   __TEXT.__eh_frame: 0xfe8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__const: 0x2b10
-   __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb00
-+  __DATA_CONST.__objc_selrefs: 0xb08
-   __DATA_CONST.__objc_superrefs: 0x18
-   __DATA_CONST.__got: 0x2d0
-   __AUTH_CONST.__const: 0x4ce0
--  __AUTH_CONST.__cfstring: 0x39c0
--  __AUTH_CONST.__objc_const: 0x638
-+  __AUTH_CONST.__cfstring: 0x3a40
-+  __AUTH_CONST.__objc_const: 0x658
-   __AUTH_CONST.__weak_auth_got: 0x10
--  __AUTH_CONST.__auth_got: 0xa10
-+  __AUTH_CONST.__auth_got: 0xa08
-   __AUTH.__objc_data: 0xf0
-   __AUTH.__data: 0x108
--  __DATA.__objc_ivar: 0x5c
-+  __DATA.__objc_ivar: 0x60
-   __DATA.__data: 0x150
-   __DATA.__common: 0x90
--  __DATA_DIRTY.__bss: 0x108
-+  __DATA_DIRTY.__bss: 0x128
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreVideo.framework/CoreVideo
-
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 3624
--  Symbols:   4426
+-  Symbols:   4080
 -  CStrings:  2744
 +  Functions: 3639
-+  Symbols:   4442
++  Symbols:   4095
 +  CStrings:  2752
- 
 Symbols:
 + -[RenderBundleICBWithResources indirectDrawsForSlot]
 + -[RenderBundleICBWithResources initWithICB:containerBuffer:pipelineState:depthStencilState:cullMode:frontFace:depthClipMode:depthBias:depthBiasSlopeScale:depthBiasClamp:fragmentDynamicOffsetsBuffer:pipeline:minVertexCounts:indirectDraws:outOfBoundsReadFlag:]
@@ -107,8 +72,6 @@ Symbols:
 + ___block_descriptor_72_ea8_32c129_ZTSKZN6WebGPUL30checkForIndirectDrawDeviceLostERNS_6DeviceERNS_17RenderPassEncoderEPU19objcproto9MTLBuffer11objc_objectyS5_E3$_0_e28_v16?0"<MTLCommandBuffer>"8l
 + ___copy_helper_block_ea8_32c129_ZTSKZN6WebGPUL30checkForIndirectDrawDeviceLostERNS_6DeviceERNS_17RenderPassEncoderEPU19objcproto9MTLBuffer11objc_objectyS5_E3$_0
 + ___destroy_helper_block_ea8_32c129_ZTSKZN6WebGPUL30checkForIndirectDrawDeviceLostERNS_6DeviceERNS_17RenderPassEncoderEPU19objcproto9MTLBuffer11objc_objectyS5_E3$_0
-+ _objc_msgSend$indirectDrawsForSlot
-+ _objc_msgSend$initWithICB:containerBuffer:pipelineState:depthStencilState:cullMode:frontFace:depthClipMode:depthBias:depthBiasSlopeScale:depthBiasClamp:fragmentDynamicOffsetsBuffer:pipeline:minVertexCounts:indirectDraws:outOfBoundsReadFlag:
 - -[RenderBundleICBWithResources initWithICB:containerBuffer:pipelineState:depthStencilState:cullMode:frontFace:depthClipMode:depthBias:depthBiasSlopeScale:depthBiasClamp:fragmentDynamicOffsetsBuffer:pipeline:minVertexCounts:outOfBoundsReadFlag:]
 - GCC_except_table89
 - GCC_except_table98
@@ -133,7 +96,6 @@ Symbols:
 - ___block_descriptor_56_ea8_32c125_ZTSKZN6WebGPUL30checkForIndirectDrawDeviceLostERNS_6DeviceERNS_17RenderPassEncoderEPU19objcproto9MTLBuffer11objc_objectE3$_0_e28_v16?0"<MTLCommandBuffer>"8l
 - ___copy_helper_block_ea8_32c125_ZTSKZN6WebGPUL30checkForIndirectDrawDeviceLostERNS_6DeviceERNS_17RenderPassEncoderEPU19objcproto9MTLBuffer11objc_objectE3$_0
 - ___destroy_helper_block_ea8_32c125_ZTSKZN6WebGPUL30checkForIndirectDrawDeviceLostERNS_6DeviceERNS_17RenderPassEncoderEPU19objcproto9MTLBuffer11objc_objectE3$_0
-- _objc_msgSend$initWithICB:containerBuffer:pipelineState:depthStencilState:cullMode:frontFace:depthClipMode:depthBias:depthBiasSlopeScale:depthBiasClamp:fragmentDynamicOffsetsBuffer:pipeline:minVertexCounts:outOfBoundsReadFlag:
 - _objc_retain_x6
 CStrings:
 + "\n    using namespace metal;\n    struct ICBContainer {\n        device uint* outOfBoundsRead [[ id(0) ]];\n        command_buffer commandBuffer [[ id(1) ]];\n    };\n\n    static_assert(sizeof(primitive_type) == sizeof(uint32_t), \"API assumes primitive type is sizeof uint32_t\");\n\n    // slotData[0] = ICB slot index, slotData[1] = primitive_type.\n    [[vertex]] void vsICBIndirectDraw(device const MTLDrawPrimitivesIndirectArguments& args [[buffer(0)]],\n        device ICBContainer *icb_container [[buffer(1)]],\n        const constant uint* slotData [[buffer(2)]])\n    {\n        render_command cmd(icb_container->commandBuffer, slotData[0]);\n        cmd.draw_primitives(static_cast<primitive_type>(slotData[1]),\n            args.vertexStart,\n            args.vertexCount,\n            args.instanceCount,\n            args.baseInstance);\n    }\n\n    // slotData[2] = index buffer element offset.\n    [[vertex]] void vsICBIndirectIndexedUint(device const MTLDrawIndexedPrimitivesIndirectArguments& args [[buffer(0)]],\n        device ICBContainer *icb_container [[buffer(1)]],\n        device uint* indexBuffer [[buffer(2)]],\n        const constant uint* slotData [[buffer(3)]])\n    {\n        render_command cmd(icb_container->commandBuffer, slotData[0]);\n        device uint* indexBufferBase = indexBuffer + slotData[2] + args.indexStart;\n        cmd.draw_indexed_primitives(static_cast<primitive_type>(slotData[1]),\n            args.indexCount,\n            indexBufferBase,\n            args.instanceCount,\n            args.baseVertex,\n            args.baseInstance);\n    }\n\n    [[vertex]] void vsICBIndirectIndexedUshort(device const MTLDrawIndexedPrimitivesIndirectArguments& args [[buffer(0)]],\n        device ICBContainer *icb_container [[buffer(1)]],\n        device ushort* indexBuffer [[buffer(2)]],\n        const constant uint* slotData [[buffer(3)]])\n    {\n        render_command cmd(icb_container->commandBuffer, slotData[0]);\n        device ushort* indexBufferBase = indexBuffer + slotData[2] + args.indexStart;\n        cmd.draw_indexed_primitives(static_cast<primitive_type>(slotData[1]),\n            args.indexCount,\n            indexBufferBase,\n            args.instanceCount,\n            args.baseVertex,\n            args.baseInstance);\n    }"

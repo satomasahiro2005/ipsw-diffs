@@ -2,78 +2,52 @@
 
 > `/Applications/DiagnosticsService.app/PlugIns/Diagnostic-8340.appex/Diagnostic-8340`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x309c` | `0xb854` | **`+0x87b8`** |
+| `__TEXT.__cstring` | `0x57a` | `0x1cda` | **`+0x1760`** |
+| `__DATA_CONST.__cfstring` | `0x3c0` | `0x1080` | **`+0xcc0`** |
+| `__TEXT.__oslogstring` | `0x4dc` | `0xb85` | **`+0x6a9`** |
+| `__TEXT.__auth_stubs` | `0x360` | `0x8c0` | **`+0x560`** |
+| `__DATA_CONST.__auth_got` | `0x1b8` | `0x470` | **`+0x2b8`** |
+| `__TEXT.__gcc_except_tab` | `—` | `0x2b4` | **`+0x2b4`** |
+| `__TEXT.__objc_stubs` | `0x5c0` | `0x860` | **`+0x2a0`** |
+| `__DATA_CONST.__const` | `0x40` | `0x178` | **`+0x138`** |
+| `__DATA_CONST.__objc_intobj` | `0x60` | `0x198` | **`+0x138`** |
+| `__TEXT.__unwind_info` | `0xf8` | `0x228` | **`+0x130`** |
+| `__TEXT.__objc_methname` | `0x8c7` | `0x9f4` | **`+0x12d`** |
+| `__DATA.__data` | `0xc0` | `0x180` | **`+0xc0`** |
+| `__DATA_CONST.__got` | `0x98` | `0x138` | **`+0xa0`** |
+| `__TEXT.__const` | `0x70` | `0x110` | **`+0xa0`** |
+| `__DATA.__objc_selrefs` | `0x2d8` | `0x330` | **`+0x58`** |
+| `__DATA.__bss` | `0x10` | `0x48` | **`+0x38`** |
+| `__DATA.__common` | `0x10` | `0x20` | **`+0x10`** |
+| `__DATA_CONST.__auth_ptr` | `—` | `0x10` | **`+0x10`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_const`
-- `__DATA.__objc_ivar`
 - `__DATA.__objc_data`
+- `__DATA.__objc_ivar`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
- 1307.2.4.0.0
--  __TEXT.__text: 0x309c
--  __TEXT.__auth_stubs: 0x360
--  __TEXT.__objc_stubs: 0x5c0
-+  __TEXT.__text: 0xb854
-+  __TEXT.__auth_stubs: 0x8c0
-+  __TEXT.__objc_stubs: 0x860
-   __TEXT.__objc_methlist: 0x2fc
--  __TEXT.__const: 0x70
--  __TEXT.__oslogstring: 0x4dc
--  __TEXT.__cstring: 0x57a
-+  __TEXT.__const: 0x110
-+  __TEXT.__gcc_except_tab: 0x2b4
-+  __TEXT.__oslogstring: 0xb85
-+  __TEXT.__cstring: 0x1cda
-   __TEXT.__objc_classname: 0x4e
--  __TEXT.__objc_methname: 0x8c7
-+  __TEXT.__objc_methname: 0x9f4
-   __TEXT.__objc_methtype: 0x147
--  __TEXT.__unwind_info: 0xf8
--  __DATA_CONST.__const: 0x40
--  __DATA_CONST.__cfstring: 0x3c0
-+  __TEXT.__unwind_info: 0x228
-+  __DATA_CONST.__const: 0x178
-+  __DATA_CONST.__cfstring: 0x1080
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_intobj: 0x60
--  __DATA_CONST.__auth_got: 0x1b8
--  __DATA_CONST.__got: 0x98
-+  __DATA_CONST.__objc_intobj: 0x198
-+  __DATA_CONST.__auth_got: 0x470
-+  __DATA_CONST.__got: 0x138
-+  __DATA_CONST.__auth_ptr: 0x10
-   __DATA.__objc_const: 0x560
--  __DATA.__objc_selrefs: 0x2d8
-+  __DATA.__objc_selrefs: 0x330
-   __DATA.__objc_ivar: 0x34
-   __DATA.__objc_data: 0xa0
--  __DATA.__data: 0xc0
--  __DATA.__common: 0x10
-+  __DATA.__data: 0x180
-+  __DATA.__common: 0x20
 +  - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
 
-   - /usr/lib/libauthinstall.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/updaters/libSavageUpdater_iOS.dylib
 -  Functions: 97
 -  Symbols:   96
 -  CStrings:  255
 +  Functions: 308
 +  Symbols:   208
 +  CStrings:  546
- 
 Symbols:
 + _AMAuthInstallApImg4SetSepNonce
 + _AMAuthInstallSetSigningServerURL

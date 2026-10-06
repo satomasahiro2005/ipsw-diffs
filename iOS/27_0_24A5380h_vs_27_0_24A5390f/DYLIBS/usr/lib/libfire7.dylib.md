@@ -2,44 +2,27 @@
 
 > `/usr/lib/libfire7.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__const`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__weak_got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__DATA.__data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2836f8` | `0x284208` | **`+0xb10`** |
+| `__TEXT.__gcc_except_tab` | `0x54c8` | `0x5514` | **`+0x4c`** |
+| `__TEXT.__cstring` | `0x3ffaa` | `0x3ffb7` | **`+0xd`** |
+
+### Other Changes
 
 ```diff
 
 -135.0.4.0.0
--  __TEXT.__text: 0x2836f8
 +135.0.5.0.0
-+  __TEXT.__text: 0x284208
-   __TEXT.__init_offsets: 0x10
-   __TEXT.__const: 0x2cd1c
--  __TEXT.__cstring: 0x3ffaa
--  __TEXT.__gcc_except_tab: 0x54c8
-+  __TEXT.__cstring: 0x3ffb7
-+  __TEXT.__gcc_except_tab: 0x5514
-   __TEXT.__unwind_info: 0x5718
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x84a0
 
-   __DATA_DIRTY.__bss: 0x9c
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 7333
 -  Symbols:   9839
 -  CStrings:  6193
 +  Functions: 7339
 +  Symbols:   9848
 +  CStrings:  6195
- 
 Symbols:
 + GCC_except_table53
 + GCC_except_table60

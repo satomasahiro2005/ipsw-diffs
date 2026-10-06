@@ -2,97 +2,60 @@
 
 > `/Applications/SupportFlow.app/SupportFlow`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__cstring`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__swift5_protos`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x139228` | `0x13977c` | **`+0x554`** |
+| `__TEXT.__swift5_typeref` | `0x1386e` | `0x13b9e` | **`+0x330`** |
+| `__TEXT.__auth_stubs` | `0x4a80` | `0x4ae0` | **`+0x60`** |
+| `__DATA.__data` | `0xdb90` | `0xdbe8` | **`+0x58`** |
+| `__TEXT.__swift5_reflstr` | `0x4c2c` | `0x4c7c` | **`+0x50`** |
+| `__TEXT.__eh_frame` | `0x73e4` | `0x7424` | **`+0x40`** |
+| `__DATA.__common` | `0x588` | `0x5c0` | **`+0x38`** |
+| `__DATA_CONST.__auth_got` | `0x2548` | `0x2578` | **`+0x30`** |
+| `__TEXT.__const` | `0x159d4` | `0x159f4` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x66a0` | `0x66c0` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x5130` | `0x513c` | **`+0xc`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__bss`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__cstring`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -37.0.26.0.0
--  __TEXT.__text: 0x139228
--  __TEXT.__auth_stubs: 0x4a80
 +37.0.28.0.0
-+  __TEXT.__text: 0x13977c
-+  __TEXT.__auth_stubs: 0x4ae0
-   __TEXT.__objc_stubs: 0x1b40
-   __TEXT.__objc_methlist: 0x8a0
--  __TEXT.__const: 0x159d4
-+  __TEXT.__const: 0x159f4
-   __TEXT.__cstring: 0xa60a
-   __TEXT.__constg_swiftt: 0x72f0
--  __TEXT.__swift5_typeref: 0x1386e
-+  __TEXT.__swift5_typeref: 0x13b9e
-   __TEXT.__swift5_builtin: 0x140
--  __TEXT.__swift5_reflstr: 0x4c2c
--  __TEXT.__swift5_fieldmd: 0x5130
-+  __TEXT.__swift5_reflstr: 0x4c7c
-+  __TEXT.__swift5_fieldmd: 0x513c
-   __TEXT.__swift5_assocty: 0x2298
-   __TEXT.__swift5_proto: 0xa4c
-   __TEXT.__swift5_types: 0x594
 
-   __TEXT.__swift5_mpenum: 0xa8
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__swift5_protos: 0x30
--  __TEXT.__unwind_info: 0x66a0
--  __TEXT.__eh_frame: 0x73e4
-+  __TEXT.__unwind_info: 0x66c0
-+  __TEXT.__eh_frame: 0x7424
-   __DATA_CONST.__const: 0xe358
-   __DATA_CONST.__cfstring: 0x20
-   __DATA_CONST.__objc_classlist: 0xe0
-   __DATA_CONST.__objc_protolist: 0xb8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x60
--  __DATA_CONST.__auth_got: 0x2548
-+  __DATA_CONST.__auth_got: 0x2578
-   __DATA_CONST.__got: 0x1110
-   __DATA_CONST.__auth_ptr: 0x1c48
-   __DATA.__objc_const: 0x3038
-   __DATA.__objc_selrefs: 0xa88
-   __DATA.__objc_data: 0xf60
--  __DATA.__data: 0xdb90
-+  __DATA.__data: 0xdbe8
-   __DATA.__bss: 0x14658
--  __DATA.__common: 0x588
-+  __DATA.__common: 0x5c0
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9785
 -  Symbols:   2094
 +  Functions: 9793
 +  Symbols:   2100
-   CStrings:  1827
- 
 Symbols:
 + _$s6TipsUI30ConstellationContentAttributesV22paragraphConfiguration4font15foregroundColor06accentJ018titleGradientStyle13textAlignment13numberOfLines13lineBreakMode11symbolScale013useForegroundJ9ForSymbol011displayLinkN019typeSettingLanguage13supportsLinksAcA0c9ParagraphG0V_So6UIFontCSg05SwiftB00J0VSgAyV06LinearM0VSgSo06NSTextP0VSiSo06NSLineuV0VSo013UIImageSymbolX0VSgSbSgSb10Foundation6LocaleV8LanguageVSgSbtcfC
 + _$s6TipsUI35ConstellationParagraphConfigurationV16paragraphSpacing0F5Style016listLeadingPlainD5Count0i8TrailingkdL0AC12CoreGraphics7CGFloatV_AA0c7ContentdH0OS2utcfC

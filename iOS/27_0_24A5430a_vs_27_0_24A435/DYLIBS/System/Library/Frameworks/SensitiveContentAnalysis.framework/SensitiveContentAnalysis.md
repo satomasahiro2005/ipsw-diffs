@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/SensitiveContentAnalysis.framework/SensitiveContentAnalysis`
 
-```diff
+### Section Size Changes
 
- 151.0.0.0.0
--  __TEXT.__text: 0xd8b80
-+  __TEXT.__text: 0xd8be0
-   __TEXT.__objc_methlist: 0xf9c
-   __TEXT.__const: 0xb7a8
-   __TEXT.__cstring: 0x2877
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd8b80` | `0xd8be0` | **`+0x60`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1ad534920 -> sub_1ad74a920 : 832 -> 836
 ~ sub_1ad53504c -> sub_1ad74b050 : 788 -> 792

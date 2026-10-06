@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libQuadrature.dylib`
 
-```diff
+### Section Size Changes
 
- 10.0.0.0.0
--  __TEXT.__text: 0x3048
-+  __TEXT.__text: 0x3078
-   __TEXT.__const: 0xdc0
-   __TEXT.__unwind_info: 0x88
-   __TEXT.__auth_stubs: 0x0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3048` | `0x3078` | **`+0x30`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _quadrature_integrate : 5296 -> 5344
 ```

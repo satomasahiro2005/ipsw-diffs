@@ -2,85 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/GenerativeFunctionsFoundation.framework/GenerativeFunctionsFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x74cf4` | `0x76860` | **`+0x1b6c`** |
+| `__DATA.__bss` | `0x22d80` | `0x23b80` | **`+0xe00`** |
+| `__TEXT.__const` | `0x12770` | `0x12e70` | **`+0x700`** |
+| `__AUTH_CONST.__const` | `0x8780` | `0x8b40` | **`+0x3c0`** |
+| `__TEXT.__cstring` | `0x290d` | `0x2a4d` | **`+0x140`** |
+| `__TEXT.__swift5_typeref` | `0x3f26` | `0x405e` | **`+0x138`** |
+| `__DATA.__data` | `0x2da8` | `0x2eb8` | **`+0x110`** |
+| `__TEXT.__swift5_fieldmd` | `0x3278` | `0x3378` | **`+0x100`** |
+| `__TEXT.__constg_swiftt` | `0x3268` | `0x3354` | **`+0xec`** |
+| `__TEXT.__unwind_info` | `0x2f98` | `0x3070` | **`+0xd8`** |
+| `__DATA_DIRTY.__bss` | `0x180` | `0x200` | **`+0x80`** |
+| `__TEXT.__swift5_proto` | `0x1198` | `0x120c` | **`+0x74`** |
+| `__TEXT.__eh_frame` | `0x37e4` | `0x3854` | **`+0x70`** |
+| `__TEXT.__swift5_reflstr` | `0x12a3` | `0x12f3` | **`+0x50`** |
+| `__TEXT.__swift5_types` | `0x4f0` | `0x50c` | **`+0x1c`** |
+| `__AUTH_CONST.__auth_got` | `0xc90` | `0xc98` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x74cf4
--  __TEXT.__const: 0x12770
--  __TEXT.__swift5_typeref: 0x3f26
--  __TEXT.__cstring: 0x290d
--  __TEXT.__constg_swiftt: 0x3268
--  __TEXT.__swift5_reflstr: 0x12a3
--  __TEXT.__swift5_fieldmd: 0x3278
-+  __TEXT.__text: 0x76860
-+  __TEXT.__const: 0x12e70
-+  __TEXT.__swift5_typeref: 0x405e
-+  __TEXT.__cstring: 0x2a4d
-+  __TEXT.__constg_swiftt: 0x3354
-+  __TEXT.__swift5_reflstr: 0x12f3
-+  __TEXT.__swift5_fieldmd: 0x3378
-   __TEXT.__swift5_builtin: 0xb4
-   __TEXT.__swift5_assocty: 0x150
--  __TEXT.__swift5_proto: 0x1198
--  __TEXT.__swift5_types: 0x4f0
-+  __TEXT.__swift5_proto: 0x120c
-+  __TEXT.__swift5_types: 0x50c
-   __TEXT.__swift5_mpenum: 0x48
-   __TEXT.__swift5_protos: 0x94
-   __TEXT.__oslogstring: 0x292
+-284.0.7.0.0
++287.0.6.0.0
 
-   __TEXT.__swift_as_ret: 0x24
-   __TEXT.__swift_as_cont: 0x34
-   __TEXT.__swift5_capture: 0x58
--  __TEXT.__unwind_info: 0x2f98
--  __TEXT.__eh_frame: 0x37e4
-+  __TEXT.__unwind_info: 0x3070
-+  __TEXT.__eh_frame: 0x3854
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x48
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x8780
--  __AUTH_CONST.__auth_got: 0xc90
-+  __AUTH_CONST.__const: 0x8b40
-+  __AUTH_CONST.__auth_got: 0xc98
-   __AUTH.__data: 0x460
--  __DATA.__data: 0x2da8
--  __DATA.__bss: 0x22d80
-+  __DATA.__data: 0x2eb8
-+  __DATA.__bss: 0x23b80
-   __DATA.__common: 0x18
-   __DATA_DIRTY.__data: 0x1390
--  __DATA_DIRTY.__bss: 0x180
-+  __DATA_DIRTY.__bss: 0x200
-   __DATA_DIRTY.__common: 0x18
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5282
 +  Functions: 5380
-   Symbols:   142
--  CStrings:  231
-+  CStrings:  237
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH.__data : content changed
-~ __DATA_DIRTY.__data : content changed
+
+-  CStrings:  230
++  CStrings:  236
 CStrings:
 + "An error explaining that the calling process is missing a required entitlement."
 + "An error explaining the prompt referenced an unrecognized system-instruction prefix ID"
@@ -88,5 +42,4 @@ CStrings:
 + "Unrecognized system-instruction prefix ID: "
 + "missingEntitlement"
 + "unrecognizedPrefixID"
-
 ```

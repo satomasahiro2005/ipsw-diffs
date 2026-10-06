@@ -2,23 +2,24 @@
 
 > `/System/Library/PrivateFrameworks/HomeKitCore.framework/HomeKitCore`
 
-```diff
+### Section Size Changes
 
- 1493.1.5.1.1
--  __TEXT.__text: 0x8cdd8
-+  __TEXT.__text: 0x8ce00
-   __TEXT.__objc_methlist: 0x374
-   __TEXT.__const: 0x7038
-   __TEXT.__constg_swiftt: 0x2618
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8cdd8` | `0x8ce00` | **`+0x28`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2848cafbc -> sub_28560efbc : 256 -> 264
-~ sub_2848ce554 -> sub_28561255c : 472 -> 468
-~ sub_2848d183c -> sub_285615840 : 680 -> 684
-~ sub_2848fac24 -> sub_28563ec2c : 2296 -> 2304
-~ sub_28490180c -> sub_28564581c : 3792 -> 3796
-~ sub_28490d784 -> sub_285651798 : 1872 -> 1876
-~ sub_28491d5c8 -> sub_2856615e0 : 296 -> 300
-~ sub_284923e90 -> sub_285667eac : 2612 -> 2616
-~ sub_28492e040 -> sub_285672060 : 356 -> 360
-~ sub_284944780 -> sub_2856887a4 : 264 -> 268
+~ sub_2847bbfbc -> sub_2854ddfbc : 256 -> 264
+~ sub_2847bf554 -> sub_2854e155c : 472 -> 468
+~ sub_2847c283c -> sub_2854e4840 : 680 -> 684
+~ sub_2847ebc24 -> sub_28550dc2c : 2296 -> 2304
+~ sub_2847f280c -> sub_28551481c : 3792 -> 3796
+~ sub_2847fe784 -> sub_285520798 : 1872 -> 1876
+~ sub_28480e5c8 -> sub_2855305e0 : 296 -> 300
+~ sub_284814e90 -> sub_285536eac : 2612 -> 2616
+~ sub_28481f040 -> sub_285541060 : 356 -> 360
+~ sub_284835780 -> sub_2855577a4 : 264 -> 268
 ```

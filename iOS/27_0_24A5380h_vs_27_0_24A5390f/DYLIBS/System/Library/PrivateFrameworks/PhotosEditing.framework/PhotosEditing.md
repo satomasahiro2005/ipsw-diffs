@@ -2,104 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/PhotosEditing.framework/PhotosEditing`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x770c0` | `0x6ca60` | **`-0xa660`** |
+| `__DATA.__bss` | `0x9e30` | `0x6630` | **`-0x3800`** |
+| `__TEXT.__const` | `0x69b4` | `0x52ce` | **`-0x16e6`** |
+| `__AUTH_CONST.__const` | `0x52b8` | `0x4978` | **`-0x940`** |
+| `__TEXT.__eh_frame` | `0x2500` | `0x1cc8` | **`-0x838`** |
+| `__TEXT.__unwind_info` | `0x2590` | `0x20f8` | **`-0x498`** |
+| `__DATA.__data` | `0x1438` | `0xff8` | **`-0x440`** |
+| `__TEXT.__swift5_fieldmd` | `0x24d4` | `0x2168` | **`-0x36c`** |
+| `__TEXT.__swift5_typeref` | `0x1c77` | `0x1912` | **`-0x365`** |
+| `__TEXT.__constg_swiftt` | `0x2b84` | `0x2940` | **`-0x244`** |
+| `__TEXT.__swift5_proto` | `0x544` | `0x384` | **`-0x1c0`** |
+| `__TEXT.__cstring` | `0x1496` | `0x1456` | **`-0x40`** |
+| `__TEXT.__swift5_types` | `0x208` | `0x1cc` | **`-0x3c`** |
+| `__AUTH_CONST.__auth_got` | `0xea0` | `0xe70` | **`-0x30`** |
+
+### Other Changes
 
 ```diff
 
 -910.27.103.0.0
--  __TEXT.__text: 0x770c0
 +910.33.102.0.0
-+  __TEXT.__text: 0x6ca60
-   __TEXT.__objc_methlist: 0xb94
--  __TEXT.__const: 0x69b4
--  __TEXT.__swift5_typeref: 0x1c77
--  __TEXT.__swift5_fieldmd: 0x24d4
--  __TEXT.__constg_swiftt: 0x2b84
-+  __TEXT.__const: 0x52ce
-+  __TEXT.__swift5_typeref: 0x1912
-+  __TEXT.__swift5_fieldmd: 0x2168
-+  __TEXT.__constg_swiftt: 0x2940
-   __TEXT.__swift5_builtin: 0x1b8
-   __TEXT.__swift5_reflstr: 0x1e99
-   __TEXT.__swift5_assocty: 0x470
--  __TEXT.__cstring: 0x1496
-+  __TEXT.__cstring: 0x1456
-   __TEXT.__swift5_protos: 0x28
--  __TEXT.__swift5_proto: 0x544
--  __TEXT.__swift5_types: 0x208
-+  __TEXT.__swift5_proto: 0x384
-+  __TEXT.__swift5_types: 0x1cc
-   __TEXT.__oslogstring: 0x773
-   __TEXT.__swift5_capture: 0xa84
-   __TEXT.__swift_as_entry: 0x38
-   __TEXT.__swift_as_ret: 0x44
-   __TEXT.__swift_as_cont: 0x80
-   __TEXT.__swift5_mpenum: 0x2c
--  __TEXT.__unwind_info: 0x2590
--  __TEXT.__eh_frame: 0x2500
-+  __TEXT.__unwind_info: 0x20f8
-+  __TEXT.__eh_frame: 0x1cc8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0x930
-   __DATA_CONST.__objc_protorefs: 0x40
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x52b8
-+  __AUTH_CONST.__const: 0x4978
-   __AUTH_CONST.__objc_const: 0x2520
--  __AUTH_CONST.__auth_got: 0xea0
-+  __AUTH_CONST.__auth_got: 0xe70
-   __AUTH.__objc_data: 0x708
-   __AUTH.__data: 0x490
--  __DATA.__data: 0x1438
--  __DATA.__bss: 0x9e30
-+  __DATA.__data: 0xff8
-+  __DATA.__bss: 0x6630
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0x1f00
-   __DATA_DIRTY.__data: 0x1880
-
-   - /System/Library/Frameworks/CoreImage.framework/CoreImage
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 -  - /System/Library/Frameworks/ImageIO.framework/ImageIO
-   - /System/Library/Frameworks/Photos.framework/Photos
-   - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4308
--  Symbols:   1674
+-  Symbols:   1471
 -  CStrings:  250
 +  Functions: 3865
-+  Symbols:   1582
++  Symbols:   1379
 +  CStrings:  248
- 
 Symbols:
 - __MergedGlobals
 - ___swift_memcpy0_1

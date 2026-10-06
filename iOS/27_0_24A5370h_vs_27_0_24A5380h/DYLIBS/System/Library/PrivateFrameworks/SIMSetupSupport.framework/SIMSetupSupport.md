@@ -2,82 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/SIMSetupSupport.framework/SIMSetupSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xdf23c` | `0xe0d58` | **`+0x1b1c`** |
+| `__TEXT.__cstring` | `0x16c4a` | `0x172cc` | **`+0x682`** |
+| `__TEXT.__oslogstring` | `0x87f4` | `0x8a8d` | **`+0x299`** |
+| `__AUTH_CONST.__cfstring` | `0xa640` | `0xa8c0` | **`+0x280`** |
+| `__AUTH_CONST.__objc_const` | `0x4d368` | `0x4d458` | **`+0xf0`** |
+| `__TEXT.__objc_methlist` | `0xc1f4` | `0xc284` | **`+0x90`** |
+| `__TEXT.__gcc_except_tab` | `0x2068` | `0x20e8` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x2ed8` | `0x2f40` | **`+0x68`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5d40` | `0x5d98` | **`+0x58`** |
+| `__AUTH_CONST.__const` | `0xb60` | `0xba0` | **`+0x40`** |
+| `__DATA.__objc_ivar` | `0x12c4` | `0x12dc` | **`+0x18`** |
+| `__DATA_CONST.__const` | `0x20d8` | `0x20e8` | **`+0x10`** |
+| `__TEXT.__const` | `0x1e8` | `0x1f0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xdf23c
--  __TEXT.__objc_methlist: 0xc1f4
--  __TEXT.__const: 0x1e8
--  __TEXT.__gcc_except_tab: 0x2068
--  __TEXT.__cstring: 0x16c4a
--  __TEXT.__oslogstring: 0x87f4
-+  __TEXT.__text: 0xe0d58
-+  __TEXT.__objc_methlist: 0xc284
-+  __TEXT.__const: 0x1f0
-+  __TEXT.__gcc_except_tab: 0x20e8
-+  __TEXT.__cstring: 0x172cc
-+  __TEXT.__oslogstring: 0x8a8d
-   __TEXT.__dlopen_cstrs: 0x2be
-   __TEXT.__ustring: 0xa
--  __TEXT.__unwind_info: 0x2ed8
-+  __TEXT.__unwind_info: 0x2f40
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x20d8
-+  __DATA_CONST.__const: 0x20e8
-   __DATA_CONST.__objc_classlist: 0x568
-   __DATA_CONST.__objc_catlist: 0x70
-   __DATA_CONST.__objc_protolist: 0x108
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5d40
-+  __DATA_CONST.__objc_selrefs: 0x5d98
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x508
-   __DATA_CONST.__objc_arraydata: 0x228
-   __DATA_CONST.__got: 0xbe0
--  __AUTH_CONST.__const: 0xb60
--  __AUTH_CONST.__cfstring: 0xa640
--  __AUTH_CONST.__objc_const: 0x4d368
-+  __AUTH_CONST.__const: 0xba0
-+  __AUTH_CONST.__cfstring: 0xa8c0
-+  __AUTH_CONST.__objc_const: 0x4d458
-   __AUTH_CONST.__objc_intobj: 0x7e0
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_arrayobj: 0x108
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0x35c0
--  __DATA.__objc_ivar: 0x12c4
-+  __DATA.__objc_ivar: 0x12dc
-   __DATA.__data: 0xc70
-   __DATA.__bss: 0x178
-   __DATA_DIRTY.__objc_data: 0x50
+-960.1.0.0.0
++964.0.0.0.0
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 4818
--  Symbols:   17296
--  CStrings:  4372
+-  Symbols:   7754
+-  CStrings:  3044
 +  Functions: 4843
-+  Symbols:   17370
-+  CStrings:  4433
- 
-Sections:
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   7787
++  CStrings:  3085
 Symbols:
 + -[NSArray(CTDisplayPlan) filteredPlansSuppressingNotSupportedMatchingALSCarriers:]
 + -[SSInstallPlanInformation maybeUpdatePendingProfileReleaseStatus]
@@ -148,22 +103,6 @@ Symbols:
 + ___73-[TSCoreTelephonyClientCache clearReconnectionCredentialsWithCompletion:]_block_invoke
 + ___82-[NSArray(CTDisplayPlan) filteredPlansSuppressingNotSupportedMatchingALSCarriers:]_block_invoke
 + ___83-[TSWebsheetSignupFlow didPurchasePlanSuccessfullyWithCarrier:mnc:gid1:gid2:state:]_block_invoke
-+ _objc_msgSend$_continueFirstViewController:
-+ _objc_msgSend$_handleQuickSwitchPendingProfileRelease
-+ _objc_msgSend$clearReconnectionCredentials:
-+ _objc_msgSend$clearReconnectionCredentialsWithCompletion:
-+ _objc_msgSend$didSignUpQuickSwitchPlan:secondaryIccid:secondaryEid:secondaryImei:smdp:state:planIdentifier:completion:
-+ _objc_msgSend$filteredPlansSuppressingNotSupportedMatchingALSCarriers:
-+ _objc_msgSend$hasQuickSwitchEnrolledLineWithCompletion:
-+ _objc_msgSend$initWithAppName:requireSetup:skipGeneralInstallConsent:hasProvisioningServiceImpact:skipShowSettings:
-+ _objc_msgSend$initWithDelegate:result:otherDeviceName:
-+ _objc_msgSend$initWithPendingInstallPlans:transferPlans:carrierSetupPlans:quickSwitchPlans:showQRCodeOption:showOtherOptions:isShowingFilteredPlans:isStandaloneProximityFlow:isHiddenPlanSelectable:defaultSection:
-+ _objc_msgSend$initWithRequestType:websheetURL:postdata:useCase:pirmaryIccid:planIdentifier:secondaryEid:
-+ _objc_msgSend$initWithTimeoutReason:isEmbeddedInResultView:plans:quickSwitchFlowType:
-+ _objc_msgSend$maybeUpdatePendingProfileReleaseStatus
-+ _objc_msgSend$numberOfSectionsInTableView:
-+ _objc_msgSend$setIntermediateDefaultsToQuickSwitch:
-+ _objc_msgSend$setPresetQuickSwitchFlowType:
 - -[SSQuickSwitchNoWiFiViewController .cxx_destruct]
 - -[SSQuickSwitchNoWiFiViewController _doneButtonTapped]
 - -[SSQuickSwitchNoWiFiViewController delegate]
@@ -200,12 +139,6 @@ Symbols:
 - __OBJC_CLASS_PROTOCOLS_$_SSQuickSwitchNoWiFiViewController
 - __OBJC_CLASS_RO_$_SSQuickSwitchNoWiFiViewController
 - __OBJC_METACLASS_RO_$_SSQuickSwitchNoWiFiViewController
-- _objc_msgSend$didSignUpQuickSwitchPlan:secondaryIccid:secondaryEid:secondaryImei:smdp:state:completion:
-- _objc_msgSend$initWithAppName:requireSetup:skipGeneralInstallConsent:hasProvisioningServiceImpact:
-- _objc_msgSend$initWithDelegate:otherDeviceName:
-- _objc_msgSend$initWithPendingInstallPlans:transferPlans:carrierSetupPlans:quickSwitchPlans:showQRCodeOption:showOtherOptions:isShowingFilteredPlans:isStandaloneProximityFlow:isHiddenPlanSelectable:
-- _objc_msgSend$initWithRequestType:websheetURL:postdata:useCase:pirmaryIccid:
-- _objc_msgSend$initWithTimeoutReason:isEmbeddedInResultView:plans:
 CStrings:
 + "-[NSArray(CTDisplayPlan) filteredPlansSuppressingNotSupportedMatchingALSCarriers:]_block_invoke"
 + "-[SSInstallPlanInformation maybeUpdatePendingProfileReleaseStatus]"
@@ -268,5 +201,4 @@ CStrings:
 - "enrollment failed: Wi-Fi unavailable on old device [result=%lu] @%s"
 - "primary-iccid: %@, use case: %@ @%s"
 - "quick-switch-wifi-check"
-
 ```

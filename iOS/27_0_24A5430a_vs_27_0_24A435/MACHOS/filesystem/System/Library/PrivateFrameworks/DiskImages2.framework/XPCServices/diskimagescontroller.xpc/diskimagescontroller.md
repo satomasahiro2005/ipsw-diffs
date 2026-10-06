@@ -2,42 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/DiskImages2.framework/XPCServices/diskimagescontroller.xpc/diskimagescontroller`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1f3554` | `0x1f3634` | **`+0xe0`** |
+| `__TEXT.__unwind_info` | `0xe5c8` | `0xe5c0` | **`-0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x1c030` | `0x1c02c` | **`-0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
 
-```diff
+### Other Changes
 
- 598.0.1.0.0
--  __TEXT.__text: 0x1f3554
-+  __TEXT.__text: 0x1f3634
-   __TEXT.__auth_stubs: 0x2220
-   __TEXT.__objc_stubs: 0x5c00
-   __TEXT.__objc_methlist: 0x3494
--  __TEXT.__gcc_except_tab: 0x1c030
-+  __TEXT.__gcc_except_tab: 0x1c02c
-   __TEXT.__const: 0x17d5a
-   __TEXT.__cstring: 0x18608
-   __TEXT.__oslogstring: 0x1aac
-
-   __TEXT.__swift5_typeref: 0x58
-   __TEXT.__swift5_fieldmd: 0x10
-   __TEXT.__swift5_types: 0x4
--  __TEXT.__unwind_info: 0xe5c8
-+  __TEXT.__unwind_info: 0xe5c0
-   __TEXT.__eh_frame: 0xf0
-   __DATA_CONST.__const: 0x3aec0
-   __DATA_CONST.__cfstring: 0x4560
+```text
 Functions:
 ~ sub_100023cfc : 156 -> 152
 ~ sub_100027734 -> sub_100027730 : 316 -> 320

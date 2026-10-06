@@ -2,48 +2,28 @@
 
 > `/System/Library/PrivateFrameworks/AppleBasebandManager.framework/AppleBasebandManager`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x50c3` | `0x57f9` | **`+0x736`** |
+| `__DATA_CONST.__const` | `0x1e70` | `0x2080` | **`+0x210`** |
+| `__TEXT.__text` | `0x289e8` | `0x28bc8` | **`+0x1e0`** |
+| `__DATA_DIRTY.__data` | `0x158` | `0x1a8` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x438c` | `0x43a8` | **`+0x1c`** |
+| `__TEXT.__init_offsets` | `0x2c` | `0x38` | **`+0xc`** |
+| `__DATA_DIRTY.__bss` | `0x108` | `0x110` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 1585.0.0.0.0
--  __TEXT.__text: 0x289e8
--  __TEXT.__init_offsets: 0x2c
-+  __TEXT.__text: 0x28bc8
-+  __TEXT.__init_offsets: 0x38
-   __TEXT.__const: 0x1ae0
--  __TEXT.__gcc_except_tab: 0x438c
--  __TEXT.__cstring: 0x50c3
-+  __TEXT.__gcc_except_tab: 0x43a8
-+  __TEXT.__cstring: 0x57f9
-   __TEXT.__oslogstring: 0x257
-   __TEXT.__unwind_info: 0x1100
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x1e70
-+  __DATA_CONST.__const: 0x2080
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
-   __DATA_CONST.__got: 0xf8
-
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__data: 0x3bc
--  __DATA_DIRTY.__data: 0x158
--  __DATA_DIRTY.__bss: 0x108
-+  __DATA_DIRTY.__data: 0x1a8
-+  __DATA_DIRTY.__bss: 0x110
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/TelephonyXPCClient.framework/TelephonyXPCClient
-
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 627
 -  Symbols:   2184
 -  CStrings:  1095
 +  Functions: 631
 +  Symbols:   2256
 +  CStrings:  1163
- 
 Symbols:
 + _CFRunLoopGetCurrent
 + _CFRunLoopRun

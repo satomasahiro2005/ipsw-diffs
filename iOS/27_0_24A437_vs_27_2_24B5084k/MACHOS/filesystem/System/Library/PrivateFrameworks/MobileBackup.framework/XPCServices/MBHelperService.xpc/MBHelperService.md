@@ -2,85 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/MobileBackup.framework/XPCServices/MBHelperService.xpc/MBHelperService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x13d14` | `0xbb30` | **`-0x81e4`** |
+| `__TEXT.__cstring` | `0x3ab5` | `0x19a5` | **`-0x2110`** |
+| `__TEXT.__oslogstring` | `0x1f26` | `0xb49` | **`-0x13dd`** |
+| `__TEXT.__objc_methname` | `0x2645` | `0x1e5a` | **`-0x7eb`** |
+| `__TEXT.__objc_stubs` | `0x1fc0` | `0x1860` | **`-0x760`** |
+| `__DATA_CONST.__cfstring` | `0x13c0` | `0xe00` | **`-0x5c0`** |
+| `__DATA.__objc_const` | `0xfa8` | `0xb28` | **`-0x480`** |
+| `__TEXT.__objc_methlist` | `0xc9c` | `0x984` | **`-0x318`** |
+| `__TEXT.__auth_stubs` | `0xbc0` | `0x930` | **`-0x290`** |
+| `__DATA.__objc_selrefs` | `0xb88` | `0x958` | **`-0x230`** |
+| `__TEXT.__objc_methtype` | `0x78b` | `0x5d0` | **`-0x1bb`** |
+| `__DATA_CONST.__const` | `0x588` | `0x410` | **`-0x178`** |
+| `__DATA_CONST.__auth_got` | `0x5f0` | `0x4a8` | **`-0x148`** |
+| `__TEXT.__const` | `0x228` | `0x130` | **`-0xf8`** |
+| `__DATA.__data` | `0x228` | `0x168` | **`-0xc0`** |
+| `__TEXT.__unwind_info` | `0x3b0` | `0x2f8` | **`-0xb8`** |
+| `__DATA.__objc_data` | `0x410` | `0x370` | **`-0xa0`** |
+| `__DATA.__bss` | `0x1e0` | `0x158` | **`-0x88`** |
+| `__TEXT.__objc_classname` | `0x137` | `0xf5` | **`-0x42`** |
+| `__DATA.__objc_ivar` | `0x80` | `0x44` | **`-0x3c`** |
+| `__DATA_CONST.__got` | `0x168` | `0x150` | **`-0x18`** |
+| `__DATA_CONST.__objc_arraydata` | `0x50` | `0x38` | **`-0x18`** |
+| `__DATA_CONST.__objc_arrayobj` | `0x78` | `0x60` | **`-0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x68` | `0x58` | **`-0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x28` | `0x18` | **`-0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x38` | `0x30` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__objc_catlist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__auth_ptr`
+
+### Other Changes
 
 ```diff
 
 -3039.2.2.0.0
--  __TEXT.__text: 0x13824
--  __TEXT.__auth_stubs: 0xbc0
--  __TEXT.__objc_stubs: 0x1fc0
--  __TEXT.__objc_methlist: 0xc9c
--  __TEXT.__const: 0x228
--  __TEXT.__objc_methname: 0x2645
--  __TEXT.__cstring: 0x3ab5
--  __TEXT.__objc_classname: 0x137
--  __TEXT.__objc_methtype: 0x78b
--  __TEXT.__oslogstring: 0x1f26
 +3039.40.8.0.0
-+  __TEXT.__text: 0xb748
-+  __TEXT.__auth_stubs: 0x930
-+  __TEXT.__objc_stubs: 0x1860
-+  __TEXT.__objc_methlist: 0x984
-+  __TEXT.__const: 0x130
-+  __TEXT.__objc_methname: 0x1e5a
-+  __TEXT.__cstring: 0x19a5
-+  __TEXT.__objc_classname: 0xf5
-+  __TEXT.__objc_methtype: 0x5d0
-+  __TEXT.__oslogstring: 0xb49
-   __TEXT.__gcc_except_tab: 0x3c
--  __TEXT.__unwind_info: 0x5e8
--  __DATA_CONST.__const: 0x588
--  __DATA_CONST.__cfstring: 0x13c0
--  __DATA_CONST.__objc_classlist: 0x68
-+  __TEXT.__unwind_info: 0x468
-+  __DATA_CONST.__const: 0x410
-+  __DATA_CONST.__cfstring: 0xe00
-+  __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_catlist: 0x8
--  __DATA_CONST.__objc_protolist: 0x28
-+  __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x38
--  __DATA_CONST.__objc_arraydata: 0x50
--  __DATA_CONST.__objc_arrayobj: 0x78
--  __DATA_CONST.__auth_got: 0x5f0
--  __DATA_CONST.__got: 0x168
-+  __DATA_CONST.__objc_superrefs: 0x30
-+  __DATA_CONST.__objc_arraydata: 0x38
-+  __DATA_CONST.__objc_arrayobj: 0x60
-+  __DATA_CONST.__auth_got: 0x4a8
-+  __DATA_CONST.__got: 0x150
-   __DATA_CONST.__auth_ptr: 0x8
--  __DATA.__objc_const: 0xfa8
--  __DATA.__objc_selrefs: 0xb88
--  __DATA.__objc_ivar: 0x80
--  __DATA.__objc_data: 0x410
--  __DATA.__data: 0x228
-+  __DATA.__objc_const: 0xb28
-+  __DATA.__objc_selrefs: 0x958
-+  __DATA.__objc_ivar: 0x44
-+  __DATA.__objc_data: 0x370
-+  __DATA.__data: 0x168
-   __DATA.__common: 0x1
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 400
 -  Symbols:   290
 -  CStrings:  990
 +  Functions: 268
 +  Symbols:   241
 +  CStrings:  667
- 
 Symbols:
 - _MBDiagnoseFile
 - _MBTemporaryPath

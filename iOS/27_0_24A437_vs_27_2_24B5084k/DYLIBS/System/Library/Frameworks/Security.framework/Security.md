@@ -2,63 +2,33 @@
 
 > `/System/Library/Frameworks/Security.framework/Security`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1815bc` | `0x181864` | **`+0x2a8`** |
+| `__AUTH_CONST.__cfstring` | `0x17800` | `0x178c0` | **`+0xc0`** |
+| `__TEXT.__cstring` | `0x19482` | `0x194d2` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x7d8c` | `0x7db4` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x15360` | `0x15380` | **`+0x20`** |
+| `__TEXT.__oslogstring` | `0xf8d9` | `0xf8f9` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x5fd8` | `0x5ff8` | **`+0x20`** |
+| `__TEXT.__const` | `0x1b9d0` | `0x1b9b8` | **`-0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x34c8` | `0x34d0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -62460.2.3.0.0
--  __TEXT.__text: 0x17d01c
 +62460.40.49.502.1
-+  __TEXT.__text: 0x17d2b0
-   __TEXT.__lazy_helpers: 0x54
-   __TEXT.__objc_methlist: 0x67bc
--  __TEXT.__const: 0x1b9d0
-+  __TEXT.__const: 0x1b9b8
-   __TEXT.__dlopen_cstrs: 0xbc
--  __TEXT.__cstring: 0x19482
--  __TEXT.__gcc_except_tab: 0x7d8c
--  __TEXT.__oslogstring: 0xf8d9
-+  __TEXT.__cstring: 0x194d2
-+  __TEXT.__gcc_except_tab: 0x7db4
-+  __TEXT.__oslogstring: 0xf8f9
-   __TEXT.__ustring: 0x406
-   __TEXT.__dof_codesign: 0x1f2c
-   __TEXT.__dof_security_: 0x325
--  __TEXT.__unwind_info: 0x72d0
-+  __TEXT.__unwind_info: 0x72e0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x15360
-+  __DATA_CONST.__const: 0x15380
-   __DATA_CONST.__objc_classlist: 0x350
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x100
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x34c8
-+  __DATA_CONST.__objc_selrefs: 0x34d0
-   __DATA_CONST.__objc_protorefs: 0x60
-   __DATA_CONST.__objc_superrefs: 0x2f0
-   __DATA_CONST.__objc_arraydata: 0x100
-   __DATA_CONST.__got: 0x770
-   __AUTH_CONST.__const: 0x3f80
--  __AUTH_CONST.__cfstring: 0x17800
-+  __AUTH_CONST.__cfstring: 0x178c0
-   __AUTH_CONST.__objc_const: 0xa5f8
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__lazy_load_got: 0x8
 
-   - /usr/lib/libcoretls_cfhelpers.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 7134
--  Symbols:   14858
+-  Symbols:   13668
 -  CStrings:  5755
 +  Functions: 7137
-+  Symbols:   14866
++  Symbols:   13676
 +  CStrings:  5762
- 
 Symbols:
 + +[TPMIDStableTrustedDeviceID supportsSecureCoding]
 + -[TPMIDStableTrustedDeviceID .cxx_destruct]
@@ -319,9 +289,6 @@ Symbols:
 + _kSecItemCountNonSyncableTombstone
 + _kSecItemCountSyncableLive
 + _kSecItemCountSyncableTombstone
-+ _objc_msgSend$initWithSession:eventName:
-+ _objc_msgSend$isEqualToMIDStableTrustedDeviceID:
-+ _objc_msgSend$sessionInfoWithAltDSID:flowID:deviceSessionID:
 - +[TPMIDStableTrustedDeviceIDPair supportsSecureCoding]
 - -[TPMIDStableTrustedDeviceIDPair .cxx_destruct]
 - -[TPMIDStableTrustedDeviceIDPair compare:]
@@ -573,9 +540,6 @@ Symbols:
 - ___getkSecurityRTCEventCategoryAccountDataAccessRecoverySymbolLoc_block_invoke
 - _getkSecurityRTCEventCategoryAccountDataAccessRecovery
 - _getkSecurityRTCEventCategoryAccountDataAccessRecoverySymbolLoc.ptr
-- _objc_msgSend$initWithKeychainCircleMetrics:altDSID:flowID:deviceSessionID:eventName:testsAreEnabled:canSendMetrics:category:
-- _objc_msgSend$isEqualToMIDStableTrustedDeviceIDPair:
-- _objc_msgSend$testsEnabled
 CStrings:
 + "1.2.840.113635.100.4.1.2"
 + "<MIDStableTrustedDeviceID: machineID=%@, stableID=%@>"

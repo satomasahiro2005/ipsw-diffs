@@ -2,21 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/32023/Libraries/libGPUCompiler.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e190` | `0x1e01c` | **`-0x174`** |
+| `__TEXT.__unwind_info` | `0x500` | `0x518` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1e190
-+  __TEXT.__text: 0x1e01c
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__cstring: 0x1bea
-   __TEXT.__const: 0x48
--  __TEXT.__unwind_info: 0x500
-+  __TEXT.__unwind_info: 0x518
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x748
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-
+-32023.917.2.0.0
++32023.920.0.0.0
 ```

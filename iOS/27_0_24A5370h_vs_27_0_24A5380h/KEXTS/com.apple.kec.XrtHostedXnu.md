@@ -2,26 +2,20 @@
 
 > `com.apple.kec.XrtHostedXnu`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x1b24` | `0x1b4c` | **`+0x28`** |
+| `__TEXT_EXEC.__auth_stubs` | `0x10` | `0x20` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x8` | `0x10` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__const: 0x204
-   __TEXT.__cstring: 0x4dc
--  __TEXT_EXEC.__text: 0x1b24
--  __TEXT_EXEC.__auth_stubs: 0x10
-+  __TEXT_EXEC.__text: 0x1b4c
-+  __TEXT_EXEC.__auth_stubs: 0x20
-   __DATA.__data: 0xd8
-   __DATA.__bss: 0x148
--  __DATA_CONST.__auth_got: 0x8
-+  __DATA_CONST.__auth_got: 0x10
-   Functions: 97
-   Symbols:   0
-   CStrings:  28
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__cstring : content changed
-~ __DATA.__data : content changed
+-1485.0.0.0.3
++1490.0.5.0.0
 Functions:
-~ __next_instruction -> sub_fffffe000a8c9d6c : 304 -> 344
-
+~ sub_fffffff00a8c6cac -> sub_fffffff00a8c7bec : 304 -> 344
 ```

@@ -2,112 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/UserNotificationsUIKit.framework/UserNotificationsUIKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c001c` | `0x1bd718` | **`-0x2904`** |
+| `__AUTH_CONST.__const` | `0x51e8` | `0x4e08` | **`-0x3e0`** |
+| `__AUTH_CONST.__objc_const` | `0x26bc8` | `0x269d8` | **`-0x1f0`** |
+| `__DATA_DIRTY.__objc_data` | `0x3bc0` | `0x3a10` | **`-0x1b0`** |
+| `__TEXT.__swift5_reflstr` | `0x12c1` | `0x1111` | **`-0x1b0`** |
+| `__TEXT.__oslogstring` | `0x100b9` | `0x10239` | **`+0x180`** |
+| `__TEXT.__constg_swiftt` | `0x1cd8` | `0x1bdc` | **`-0xfc`** |
+| `__TEXT.__swift5_capture` | `0xd34` | `0xc44` | **`-0xf0`** |
+| `__TEXT.__swift5_fieldmd` | `0x11ac` | `0x10e8` | **`-0xc4`** |
+| `__DATA.__data` | `0x5248` | `0x51b0` | **`-0x98`** |
+| `__TEXT.__eh_frame` | `0xd30` | `0xca8` | **`-0x88`** |
+| `__DATA_DIRTY.__bss` | `0x1a88` | `0x1a08` | **`-0x80`** |
+| `__AUTH_CONST.__auth_got` | `0x15a0` | `0x1528` | **`-0x78`** |
+| `__TEXT.__unwind_info` | `0x7420` | `0x73a8` | **`-0x78`** |
+| `__DATA_DIRTY.__data` | `0x16f0` | `0x1690` | **`-0x60`** |
+| `__DATA_CONST.__objc_selrefs` | `0xcb10` | `0xcb60` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x1acac` | `0x1ac5c` | **`-0x50`** |
+| `__AUTH.__objc_data` | `0x24d8` | `0x2490` | **`-0x48`** |
+| `__DATA_CONST.__got` | `0x18a8` | `0x1860` | **`-0x48`** |
+| `__TEXT.__swift5_typeref` | `0x3d26` | `0x3ce2` | **`-0x44`** |
+| `__AUTH_CONST.__cfstring` | `0x7ee0` | `0x7f20` | **`+0x40`** |
+| `__DATA.__objc_ivar` | `0x1770` | `0x1798` | **`+0x28`** |
+| `__TEXT.__cstring` | `0x9fcd` | `0x9fed` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x2d3c` | `0x2d54` | **`+0x18`** |
+| `__DATA.__bss` | `0x14c8` | `0x14d8` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x808` | `0x7f8` | **`-0x10`** |
+| `__TEXT.__const` | `0x43e4` | `0x43d4` | **`-0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x570` | `0x568` | **`-0x8`** |
+| `__TEXT.__swift5_proto` | `0x180` | `0x17c` | **`-0x4`** |
+| `__TEXT.__swift5_types` | `0x12c` | `0x128` | **`-0x4`** |
+| `__TEXT.__swift_as_cont` | `0x50` | `0x4c` | **`-0x4`** |
+| `__TEXT.__swift_as_entry` | `0x2c` | `0x28` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1070.0.0.0.0
--  __TEXT.__text: 0x1c001c
--  __TEXT.__objc_methlist: 0x1acac
--  __TEXT.__const: 0x43e4
--  __TEXT.__gcc_except_tab: 0x2d3c
--  __TEXT.__cstring: 0x9fcd
--  __TEXT.__oslogstring: 0x100b9
 +1076.1.0.0.0
-+  __TEXT.__text: 0x1bd718
-+  __TEXT.__objc_methlist: 0x1ac5c
-+  __TEXT.__const: 0x43d4
-+  __TEXT.__gcc_except_tab: 0x2d54
-+  __TEXT.__cstring: 0x9fed
-+  __TEXT.__oslogstring: 0x10239
-   __TEXT.__ustring: 0x22
--  __TEXT.__constg_swiftt: 0x1cd8
--  __TEXT.__swift5_typeref: 0x3d26
-+  __TEXT.__constg_swiftt: 0x1bdc
-+  __TEXT.__swift5_typeref: 0x3ce2
-   __TEXT.__swift5_builtin: 0x140
--  __TEXT.__swift5_reflstr: 0x12c1
--  __TEXT.__swift5_fieldmd: 0x11ac
-+  __TEXT.__swift5_reflstr: 0x1111
-+  __TEXT.__swift5_fieldmd: 0x10e8
-   __TEXT.__swift5_assocty: 0x270
--  __TEXT.__swift5_proto: 0x180
--  __TEXT.__swift5_types: 0x12c
-+  __TEXT.__swift5_proto: 0x17c
-+  __TEXT.__swift5_types: 0x128
-   __TEXT.__swift5_mpenum: 0x5c
--  __TEXT.__swift5_capture: 0xd34
-+  __TEXT.__swift5_capture: 0xc44
-   __TEXT.__swift5_protos: 0x20
--  __TEXT.__swift_as_entry: 0x2c
--  __TEXT.__swift_as_cont: 0x50
-+  __TEXT.__swift_as_entry: 0x28
-+  __TEXT.__swift_as_cont: 0x4c
-   __TEXT.__swift_as_ret: 0x1c
--  __TEXT.__unwind_info: 0x7420
--  __TEXT.__eh_frame: 0xd30
-+  __TEXT.__unwind_info: 0x73a8
-+  __TEXT.__eh_frame: 0xca8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x41d0
--  __DATA_CONST.__objc_classlist: 0x808
-+  __DATA_CONST.__objc_classlist: 0x7f8
-   __DATA_CONST.__objc_catlist: 0xb0
-   __DATA_CONST.__objc_protolist: 0x608
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xcb10
-+  __DATA_CONST.__objc_selrefs: 0xcb60
-   __DATA_CONST.__objc_protorefs: 0xd8
--  __DATA_CONST.__objc_superrefs: 0x570
-+  __DATA_CONST.__objc_superrefs: 0x568
-   __DATA_CONST.__objc_arraydata: 0x158
--  __DATA_CONST.__got: 0x18a8
--  __AUTH_CONST.__const: 0x51e8
--  __AUTH_CONST.__cfstring: 0x7ee0
--  __AUTH_CONST.__objc_const: 0x26bc8
-+  __DATA_CONST.__got: 0x1860
-+  __AUTH_CONST.__const: 0x4e08
-+  __AUTH_CONST.__cfstring: 0x7f20
-+  __AUTH_CONST.__objc_const: 0x269d8
-   __AUTH_CONST.__objc_intobj: 0x330
-   __AUTH_CONST.__objc_arrayobj: 0x150
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_doubleobj: 0x20
--  __AUTH_CONST.__auth_got: 0x15a0
--  __AUTH.__objc_data: 0x24d8
-+  __AUTH_CONST.__auth_got: 0x1528
-+  __AUTH.__objc_data: 0x2490
-   __AUTH.__data: 0x3d8
--  __DATA.__objc_ivar: 0x1770
--  __DATA.__data: 0x5248
-+  __DATA.__objc_ivar: 0x1798
-+  __DATA.__data: 0x51b0
-   __DATA.__objc_stublist: 0x8
--  __DATA.__bss: 0x14c8
-+  __DATA.__bss: 0x14d8
-   __DATA.__common: 0x60
--  __DATA_DIRTY.__objc_data: 0x3bc0
--  __DATA_DIRTY.__data: 0x16f0
--  __DATA_DIRTY.__bss: 0x1a88
-+  __DATA_DIRTY.__objc_data: 0x3a10
-+  __DATA_DIRTY.__data: 0x1690
-+  __DATA_DIRTY.__bss: 0x1a08
-   __DATA_DIRTY.__common: 0x70
-   - /System/Library/Frameworks/Charts.framework/Charts
-   - /System/Library/Frameworks/Combine.framework/Combine
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10966
--  Symbols:   19839
+-  Symbols:   14408
 -  CStrings:  2162
 +  Functions: 10909
-+  Symbols:   19847
++  Symbols:   14419
 +  CStrings:  2169
- 
 Symbols:
 + -[NCClickInteractionPresenter _handleActivation:]
 + -[NCClickInteractionPresenter activationAction]
@@ -184,24 +128,6 @@ Symbols:
 + ___block_descriptor_48_e8_32s40w_e49_v16?0?<v?"NCNotificationListCell""UIView"B>8lw40l8s32l8
 + ___block_descriptor_49_e8_32s40bs_e5_v8?0ls32l8s40l8
 + ___block_descriptor_49_e8_32s40s_e46_v28?0"NCNotificationListCell"8"UIView"16B24ls32l8s40l8
-+ _objc_msgSend$_beginContainerResizeForReason:
-+ _objc_msgSend$_endContainerResizeForReason:
-+ _objc_msgSend$_executeDeferredViewRemovals
-+ _objc_msgSend$_fadeOutDeferredRemovalViews
-+ _objc_msgSend$_presentOptionsMenuForNotificationRequest:withPresentingView:optionsForSection:shouldMenuOverlapSource:
-+ _objc_msgSend$actionButtonsBackgroundConfiguration
-+ _objc_msgSend$appendCGFloat:
-+ _objc_msgSend$beginContainerResize
-+ _objc_msgSend$defaultStyle
-+ _objc_msgSend$deferFadeOutAndRemovalOfView:
-+ _objc_msgSend$endContainerResize
-+ _objc_msgSend$initWithNotificationRequest:presentingView:settingsDelegate:optionsForSection:shouldMenuOverlapSource:
-+ _objc_msgSend$initWithVariant:size:smoothness:subdued:subVariant:adaptiveFixedLuminance:backdropGroupName:identifier:
-+ _objc_msgSend$sendAction:to:forEvent:
-+ _objc_msgSend$setCompletionBlock:
-+ _objc_msgSend$setMinimumPressDuration:
-+ _objc_msgSend$setPreferredLayout:
-+ _objc_msgSend$setShouldMenuOverlapSourcePreview:
 - +[NCMaterialCrossFadingView layerClass]
 - -[NCMaterialCrossFadingView init]
 - -[NCNotificationListCell removeLightEffectsIfNeeded]
@@ -260,27 +186,6 @@ Symbols:
 - ___block_descriptor_48_e8_32s40bs_e5_v8?0ls32l8s40l8
 - ___block_descriptor_48_e8_32s40w_e48_v16?0?<v?"NCNotificationListCell""UIView">8lw40l8s32l8
 - ___block_descriptor_49_e8_32s40s_e43_v24?0"NCNotificationListCell"8"UIView"16ls32l8s40l8
-- _objc_msgSend$_highlightsList
-- _objc_msgSend$_intelligenceLightAnimationIfNeeded
-- _objc_msgSend$_presentOptionsMenuForNotificationRequest:withPresentingView:optionsForSection:
-- _objc_msgSend$backlightState
-- _objc_msgSend$initWithLightSource:
-- _objc_msgSend$initWithNotificationRequest:presentingView:settingsDelegate:optionsForSection:
-- _objc_msgSend$initWithVariant:size:smoothness:subdued:subVariant:adaptiveFixedLuminance:backdropGroupName:identifier:lightHandle:
-- _objc_msgSend$isEdgeLightVisible
-- _objc_msgSend$isFillLightVisible
-- _objc_msgSend$lightHandle
-- _objc_msgSend$removeLightEffectsIfNeeded
-- _objc_msgSend$setActivationTransitionDirection:
-- _objc_msgSend$setAllowsInPlaceFiltering:
-- _objc_msgSend$setBacklightState:
-- _objc_msgSend$setDeactivationTransitionDirection:
-- _objc_msgSend$setIsEdgeLightVisible:
-- _objc_msgSend$setIsFillLightVisible:
-- _objc_msgSend$sharedLight
-- _objc_msgSend$updateLightEffectToFillLightEnabled:edgeLightEnabled:duration:delay:
-- _objc_msgSend$updateLightWithFillLightEnabled:edgeLightEnabled:duration:delay:
-- _objc_msgSend$visiblePathForPreview
 - _swift_retain_x8
 - _symbolic So13NCPlatterViewCSgXw
 - _symbolic So13NCPlatterViewCSgXwz_Xx

@@ -2,62 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/UIAccessibility.framework/UIAccessibility`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6c9c8` | `0x6d22c` | **`+0x864`** |
+| `__TEXT.__oslogstring` | `0x2ca9` | `0x2ce3` | **`+0x3a`** |
+| `__AUTH_CONST.__const` | `0x1248` | `0x1268` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5720` | `0x5738` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x6bdc` | `0x6bf4` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x1b30` | `0x1b48` | **`+0x18`** |
+| `__DATA.__bss` | `0x4c8` | `0x4d0` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0xd90` | `0xd94` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3237.1.0.0.0
--  __TEXT.__text: 0x6c9c8
--  __TEXT.__objc_methlist: 0x6bdc
 +3240.3.0.0.0
-+  __TEXT.__text: 0x6d22c
-+  __TEXT.__objc_methlist: 0x6bf4
-   __TEXT.__const: 0x278
-   __TEXT.__dlopen_cstrs: 0x266
--  __TEXT.__gcc_except_tab: 0xd90
-+  __TEXT.__gcc_except_tab: 0xd94
-   __TEXT.__cstring: 0x7101
--  __TEXT.__oslogstring: 0x2ca9
-+  __TEXT.__oslogstring: 0x2ce3
-   __TEXT.__ustring: 0x14
--  __TEXT.__unwind_info: 0x1b30
-+  __TEXT.__unwind_info: 0x1b48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0xa8
-   __DATA_CONST.__objc_protolist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5720
-+  __DATA_CONST.__objc_selrefs: 0x5738
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__objc_superrefs: 0x110
-   __DATA_CONST.__objc_arraydata: 0x128
-   __DATA_CONST.__got: 0xd50
--  __AUTH_CONST.__const: 0x1248
-+  __AUTH_CONST.__const: 0x1268
-   __AUTH_CONST.__cfstring: 0x64e0
-   __AUTH_CONST.__objc_const: 0x4a10
-   __AUTH_CONST.__objc_intobj: 0x4c8
-
-   __AUTH.__objc_data: 0xe60
-   __DATA.__objc_ivar: 0x184
-   __DATA.__data: 0x748
--  __DATA.__bss: 0x4c8
-+  __DATA.__bss: 0x4d0
-   __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0x4b0
-   __DATA_DIRTY.__bss: 0x238
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2616
--  Symbols:   6739
+-  Symbols:   4579
 -  CStrings:  1185
 +  Functions: 2622
-+  Symbols:   6749
++  Symbols:   4586
 +  CStrings:  1186
- 
 Symbols:
 + -[NSObject(AXPrivCategory) _accessibilityDeletableCharacterCountBeforeCursor]
 + -[NSObject(AXPrivCategory) _accessibilityReplacementForFocusedOpaqueElement]
@@ -132,9 +102,6 @@ Symbols:
 + ___AXElementBearingScreenChangePostCount
 + __axModalViewContainsVisibleModalDescendant
 + __axModalViewHasAccessibleContent
-+ _objc_msgSend$_accessibilityDeletableCharacterCountBeforeCursor
-+ _objc_msgSend$_accessibilityReplacementForFocusedOpaqueElement
-+ _objc_msgSend$sortedArrayWithOptions:usingComparator:
 - GCC_except_table1009
 - GCC_except_table1020
 - GCC_except_table1053

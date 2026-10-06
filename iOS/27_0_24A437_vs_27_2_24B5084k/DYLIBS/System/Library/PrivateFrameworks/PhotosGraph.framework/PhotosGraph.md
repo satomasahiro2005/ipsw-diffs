@@ -2,64 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/PhotosGraph.framework/PhotosGraph`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x620bc8` | `0x620900` | **`-0x2c8`** |
+| `__TEXT.__cstring` | `0x33f3a` | `0x33f2a` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x2468` | `0x2460` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x12948` | `0x12940` | **`-0x8`** |
+| `__TEXT.__objc_methlist` | `0x2c1b4` | `0x2c1ac` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.235.0.0
--  __TEXT.__text: 0x602588
--  __TEXT.__objc_methlist: 0x2c1b4
 +916.40.110.0.0
-+  __TEXT.__text: 0x6022c0
-+  __TEXT.__objc_methlist: 0x2c1ac
-   __TEXT.__const: 0x1c760
-   __TEXT.__swift5_typeref: 0x8738
-   __TEXT.__swift5_reflstr: 0x743a
 
-   __TEXT.__swift5_protos: 0xa4
-   __TEXT.__swift5_proto: 0x1260
-   __TEXT.__swift5_types: 0xc40
--  __TEXT.__cstring: 0x33f3a
-+  __TEXT.__cstring: 0x33f2a
-   __TEXT.__swift5_capture: 0x2dd8
-   __TEXT.__oslogstring: 0x27bd1
-   __TEXT.__swift_as_entry: 0xec
-
-   __TEXT.__swift5_mpenum: 0x80
-   __TEXT.__gcc_except_tab: 0x118e0
-   __TEXT.__ustring: 0x7e6
--  __TEXT.__unwind_info: 0x15450
-+  __TEXT.__unwind_info: 0x15440
-   __TEXT.__eh_frame: 0xfd8c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x98
-   __DATA_CONST.__objc_protolist: 0x460
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x12948
-+  __DATA_CONST.__objc_selrefs: 0x12940
-   __DATA_CONST.__objc_protorefs: 0xf8
-   __DATA_CONST.__objc_superrefs: 0x1490
-   __DATA_CONST.__objc_arraydata: 0x38c0
-
-   __AUTH_CONST.__objc_doubleobj: 0x2b0
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__objc_floatobj: 0x30
--  __AUTH_CONST.__auth_got: 0x2468
-+  __AUTH_CONST.__auth_got: 0x2460
-   __AUTH.__objc_data: 0x6938
-   __AUTH.__data: 0xc3f0
-   __DATA.__objc_ivar: 0x2d84
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 26501
--  Symbols:   40520
+-  Symbols:   32808
 -  CStrings:  8612
 +  Functions: 26500
-+  Symbols:   40516
++  Symbols:   32806
 +  CStrings:  8610
- 
 Symbols:
 + GCC_except_table10111
 + GCC_except_table10118
@@ -399,12 +364,10 @@ Symbols:
 - GCC_except_table9868
 - GCC_except_table9873
 - __os_feature_enabled_impl
-- _objc_msgSend$_legacyVisibilityStateForItemPromotedToMonths:
-- _objc_msgSend$isRecent
 Functions:
 ~ -[PGDefaultEnrichmentProfile canEnrichHighlight:withOptions:] : 88 -> 8
-~ _zeroKeywordForLocationOrAreaWithName : 592 -> 504
-~ -[PGMonthEnrichmentRule enumerateChildVisibilityStateForHighlightItemList:sharingFilter:withGraph:neighborScoreComputer:usingBlock:maximumNumberOfVisibleItems:maximumNumberOfVisibleRegularItems:] : 3660 -> 3292
+~ _zeroKeywordForLocationOrAreaWithName : 604 -> 516
+~ -[PGMonthEnrichmentRule enumerateChildVisibilityStateForHighlightItemList:sharingFilter:withGraph:neighborScoreComputer:usingBlock:maximumNumberOfVisibleItems:maximumNumberOfVisibleRegularItems:] : 3668 -> 3300
 - -[PGMonthEnrichmentRule _visibilityStateForItemPromotedToMonths:]
 ~ +[PGUserDefaults _registerDefaults] : 1084 -> 1040
 ~ -[PGPhotosChallengeMetricEvent _gatherMetricsForTripTitlingQuestions:progressBlock:] : 940 -> 944

@@ -2,83 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/StreamingAppleTrace.framework/StreamingAppleTrace`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x29024` | `0x2ba58` | **`+0x2a34`** |
+| `__DATA.__bss` | `0x2590` | `0x2810` | **`+0x280`** |
+| `__AUTH_CONST.__const` | `0x1838` | `0x1a88` | **`+0x250`** |
+| `__TEXT.__const` | `0x1ce0` | `0x1f10` | **`+0x230`** |
+| `__TEXT.__swift5_fieldmd` | `0x8a8` | `0xa00` | **`+0x158`** |
+| `__TEXT.__cstring` | `0x5bd` | `0x6fb` | **`+0x13e`** |
+| `__TEXT.__eh_frame` | `0x1898` | `0x19b8` | **`+0x120`** |
+| `__TEXT.__swift5_reflstr` | `0x4c0` | `0x59a` | **`+0xda`** |
+| `__AUTH_CONST.__objc_const` | `0xcd8` | `0xdb0` | **`+0xd8`** |
+| `__TEXT.__oslogstring` | `0x40` | `0xfb` | **`+0xbb`** |
+| `__TEXT.__constg_swiftt` | `0xac0` | `0xb6c` | **`+0xac`** |
+| `__AUTH.__data` | `0xbd8` | `0xc80` | **`+0xa8`** |
+| `__TEXT.__unwind_info` | `0xa28` | `0xac0` | **`+0x98`** |
+| `__AUTH_CONST.__auth_got` | `0x8f0` | `0x950` | **`+0x60`** |
+| `__TEXT.__swift5_typeref` | `0x7be` | `0x810` | **`+0x52`** |
+| `__DATA.__data` | `0x5f0` | `0x628` | **`+0x38`** |
+| `__TEXT.__swift5_assocty` | `0xc0` | `0xd8` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0x14c` | `0x160` | **`+0x14`** |
+| `__TEXT.__swift5_types` | `0xa0` | `0xb4` | **`+0x14`** |
+| `__TEXT.__swift5_capture` | `0x22c` | `0x238` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x68` | `0x70` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -113.0.0.0.0
--  __TEXT.__text: 0x27ed8
 +120.0.0.502.1
-+  __TEXT.__text: 0x2a880
-   __TEXT.__objc_methlist: 0x16c
--  __TEXT.__const: 0x1ce0
--  __TEXT.__constg_swiftt: 0xac0
--  __TEXT.__swift5_typeref: 0x7be
--  __TEXT.__swift5_fieldmd: 0x8a8
-+  __TEXT.__const: 0x1f10
-+  __TEXT.__constg_swiftt: 0xb6c
-+  __TEXT.__swift5_typeref: 0x810
-+  __TEXT.__swift5_fieldmd: 0xa00
-   __TEXT.__swift5_builtin: 0x3c
--  __TEXT.__swift5_reflstr: 0x4c0
--  __TEXT.__swift5_types: 0xa0
--  __TEXT.__cstring: 0x5bd
--  __TEXT.__swift5_assocty: 0xc0
--  __TEXT.__swift5_proto: 0x14c
-+  __TEXT.__swift5_reflstr: 0x59a
-+  __TEXT.__swift5_types: 0xb4
-+  __TEXT.__cstring: 0x6fb
-+  __TEXT.__swift5_assocty: 0xd8
-+  __TEXT.__swift5_proto: 0x160
-   __TEXT.__swift5_mpenum: 0x10
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__swift5_capture: 0x22c
-+  __TEXT.__swift5_capture: 0x238
-   __TEXT.__swift_as_entry: 0x30
-   __TEXT.__swift_as_ret: 0x1c
-   __TEXT.__swift_as_cont: 0x4c
--  __TEXT.__oslogstring: 0x40
--  __TEXT.__unwind_info: 0xbe8
--  __TEXT.__eh_frame: 0x1898
-+  __TEXT.__oslogstring: 0xfb
-+  __TEXT.__unwind_info: 0xc88
-+  __TEXT.__eh_frame: 0x19b8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x40
--  __DATA_CONST.__objc_classlist: 0x68
-+  __DATA_CONST.__objc_classlist: 0x70
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x120
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1838
--  __AUTH_CONST.__objc_const: 0xcd8
--  __AUTH_CONST.__auth_got: 0x8f0
-+  __AUTH_CONST.__const: 0x1a88
-+  __AUTH_CONST.__objc_const: 0xdb0
-+  __AUTH_CONST.__auth_got: 0x950
-   __AUTH.__objc_data: 0x2a8
--  __AUTH.__data: 0xbd8
--  __DATA.__data: 0x5f0
-+  __AUTH.__data: 0xc80
-+  __DATA.__data: 0x628
-   __DATA.__common: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 788
--  Symbols:   452
+-  Symbols:   441
 -  CStrings:  74
 +  Functions: 854
-+  Symbols:   470
++  Symbols:   459
 +  CStrings:  84
- 
 Symbols:
 + __DATA__TtC19StreamingAppleTrace14FrameAssembler
 + __IVARS__TtC19StreamingAppleTrace14FrameAssembler

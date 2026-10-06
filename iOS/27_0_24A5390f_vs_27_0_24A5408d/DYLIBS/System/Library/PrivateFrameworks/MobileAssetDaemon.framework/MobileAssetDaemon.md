@@ -2,87 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/MobileAssetDaemon.framework/MobileAssetDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x262998` | `0x26456c` | **`+0x1bd4`** |
+| `__TEXT.__oslogstring` | `0x5e7cd` | `0x5efed` | **`+0x820`** |
+| `__TEXT.__cstring` | `0x3f116` | `0x3f6f6` | **`+0x5e0`** |
+| `__AUTH_CONST.__cfstring` | `0x32860` | `0x32d00` | **`+0x4a0`** |
+| `__AUTH_CONST.__objc_const` | `0x18f30` | `0x191a8` | **`+0x278`** |
+| `__TEXT.__gcc_except_tab` | `0xda74` | `0xd83c` | **`-0x238`** |
+| `__TEXT.__objc_methlist` | `0x12c54` | `0x12d9c` | **`+0x148`** |
+| `__DATA_CONST.__objc_selrefs` | `0xaf08` | `0xaff0` | **`+0xe8`** |
+| `__AUTH.__objc_data` | `0x878` | `0x918` | **`+0xa0`** |
+| `__DATA.__data` | `0x1118` | `0x1180` | **`+0x68`** |
+| `__DATA_CONST.__const` | `0x31c8` | `0x3230` | **`+0x68`** |
+| `__TEXT.__unwind_info` | `0x4828` | `0x4888` | **`+0x60`** |
+| `__AUTH_CONST.__const` | `0x1060` | `0x1080` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x1280` | `0x12a0` | **`+0x20`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x348` | `0x360` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x1818` | `0x1830` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x1228` | `0x1238` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x488` | `0x498` | **`+0x10`** |
+| `__TEXT.__const` | `0x15aa` | `0x159a` | **`-0x10`** |
+| `__DATA_CONST.__objc_arraydata` | `0xef8` | `0xf00` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0xb0` | `0xb8` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x358` | `0x360` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2215.0.16.0.0
--  __TEXT.__text: 0x262998
--  __TEXT.__objc_methlist: 0x12c54
--  __TEXT.__const: 0x15aa
--  __TEXT.__cstring: 0x3f116
--  __TEXT.__oslogstring: 0x5e7cd
--  __TEXT.__gcc_except_tab: 0xda74
 +2215.0.20.0.0
-+  __TEXT.__text: 0x26456c
-+  __TEXT.__objc_methlist: 0x12d9c
-+  __TEXT.__const: 0x159a
-+  __TEXT.__cstring: 0x3f6f6
-+  __TEXT.__oslogstring: 0x5efed
-+  __TEXT.__gcc_except_tab: 0xd83c
-   __TEXT.__dlopen_cstrs: 0x5a
-   __TEXT.__constg_swiftt: 0xf0
-   __TEXT.__swift5_typeref: 0x146
 
-   __TEXT.__swift5_assocty: 0x48
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_proto: 0x24
--  __TEXT.__unwind_info: 0x4828
-+  __TEXT.__unwind_info: 0x4888
-   __TEXT.__eh_frame: 0x10c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x31c8
--  __DATA_CONST.__objc_classlist: 0x488
-+  __DATA_CONST.__const: 0x3230
-+  __DATA_CONST.__objc_classlist: 0x498
-   __DATA_CONST.__objc_catlist: 0x18
--  __DATA_CONST.__objc_protolist: 0xb0
-+  __DATA_CONST.__objc_protolist: 0xb8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xaf08
-+  __DATA_CONST.__objc_selrefs: 0xaff0
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__objc_superrefs: 0x358
--  __DATA_CONST.__objc_arraydata: 0xef8
--  __DATA_CONST.__got: 0x1280
--  __AUTH_CONST.__const: 0x1060
--  __AUTH_CONST.__cfstring: 0x32860
--  __AUTH_CONST.__objc_const: 0x18f30
--  __AUTH_CONST.__objc_arrayobj: 0x348
-+  __DATA_CONST.__objc_superrefs: 0x360
-+  __DATA_CONST.__objc_arraydata: 0xf00
-+  __DATA_CONST.__got: 0x12a0
-+  __AUTH_CONST.__const: 0x1080
-+  __AUTH_CONST.__cfstring: 0x32d00
-+  __AUTH_CONST.__objc_const: 0x191a8
-+  __AUTH_CONST.__objc_arrayobj: 0x360
-   __AUTH_CONST.__objc_intobj: 0x13c8
-   __AUTH_CONST.__objc_dictobj: 0x2d0
--  __AUTH_CONST.__auth_got: 0x1228
--  __AUTH.__objc_data: 0x878
-+  __AUTH_CONST.__auth_got: 0x1238
-+  __AUTH.__objc_data: 0x918
-   __AUTH.__data: 0xc0
--  __DATA.__objc_ivar: 0x1818
--  __DATA.__data: 0x1118
-+  __DATA.__objc_ivar: 0x1830
-+  __DATA.__data: 0x1180
-   __DATA.__crash_info: 0x148
-   __DATA.__bss: 0x560
-   __DATA_DIRTY.__objc_data: 0x2530
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7280
--  Symbols:   16440
+-  Symbols:   11431
 -  CStrings:  10960
 +  Functions: 7316
-+  Symbols:   16525
++  Symbols:   11496
 +  CStrings:  11025
- 
 Symbols:
 + +[MADAutoAssetTelemetryReport telemetryReportPreinstalled:]
 + +[MADAutoAssetTelemetryReport telemetryReportPreinstalled:forAssetID:withFailureReason:]
@@ -193,39 +152,6 @@ Symbols:
 + _dispatch_queue_set_specific
 + _kMobileAssetPreferencesInternalVariantAsSeed
 + _kSubscriptionQueueKey
-+ _objc_msgSend$_bulkSAFOperations:doRegister:
-+ _objc_msgSend$_clientRequestRequiresSetInstance:
-+ _objc_msgSend$_removeDescriptorFromFilesystem:droppingDescriptor:forHistoryOperation:firstClientName:withSAFArray:
-+ _objc_msgSend$_removeStagedAssetFromFilesystem:forHistoryOperation:withSAFArray:
-+ _objc_msgSend$addFailedMigratedInfo:
-+ _objc_msgSend$addFailedMigratedInfoForDescriptor:withError:
-+ _objc_msgSend$addSetupError:
-+ _objc_msgSend$addSuccessfullyMigratedInfo:
-+ _objc_msgSend$addSuccessfullyMigratedInfoForDescriptor:
-+ _objc_msgSend$assetMigrationResults
-+ _objc_msgSend$autoAssetMigrated:
-+ _objc_msgSend$bulkSAFUnregister:
-+ _objc_msgSend$convertMigrationCookieToMigrationResults:
-+ _objc_msgSend$createMigrationInfoWithCookieFileKey:andValue:error:
-+ _objc_msgSend$failedMigratedAssetInfo
-+ _objc_msgSend$handleClientMigrationResultsRequest:forAutoJob:
-+ _objc_msgSend$initWithDelegate:migrationCookiePath:
-+ _objc_msgSend$localeWithLocaleIdentifier:
-+ _objc_msgSend$locateCancelingSetJobForClientDomain:byIdentifier:fromLocation:
-+ _objc_msgSend$migrationCookiePath
-+ _objc_msgSend$migrationResults
-+ _objc_msgSend$migrationSucceeded
-+ _objc_msgSend$parseMigrationCookie:
-+ _objc_msgSend$parseMigrationCookieWithPath:andError:
-+ _objc_msgSend$persistAssetMigrationResults:andError:
-+ _objc_msgSend$preInstalledRelocateAutoAssets
-+ _objc_msgSend$setAssetMigrationResults:
-+ _objc_msgSend$setMigrationError:
-+ _objc_msgSend$setMigrationResults:
-+ _objc_msgSend$setMigrationSucceeded:
-+ _objc_msgSend$successfullyMigratedAssetInfo
-+ _objc_msgSend$updateSAFArray:withPath:bundleID:
-+ _objc_msgSend$writeLegacyCookieFileForMigrationResults:error:
 - -[MADAutoAssetControlManager _preInstalledRelocateAutoAssets]
 - -[MADAutoAssetControlManager _removeDescriptorFromFilesystem:droppingDescriptor:forHistoryOperation:firstClientName:]
 - -[MADAutoAssetControlManager locateCancelingSetJobForClientDomain:byIdentifier:]
@@ -270,19 +196,6 @@ Symbols:
 - GCC_except_table807
 - GCC_except_table808
 - GCC_except_table811
-- _objc_msgSend$_blendOptionalCandidates:intoRequired:
-- _objc_msgSend$_extendLookupByAssetType:fromSource:withAssetType:withAssetSpecifier:createdClientDefinedSetEntries:createdNoClientSetEntries:appendedSetEntries:
-- _objc_msgSend$_extendLookupByAssetTypeWithDownloadedDescriptors:limitingToSetTargets:
-- _objc_msgSend$_maintainLatestCandidate:candidateDescriptor:
-- _objc_msgSend$_preInstalledRelocateAutoAssets
-- _objc_msgSend$_removeDescriptorFromFilesystem:droppingDescriptor:forHistoryOperation:firstClientName:
-- _objc_msgSend$_removeStagedAssetFromFilesystem:forHistoryOperation:
-- _objc_msgSend$_trimConsideringToLatestDownloaded:
-- _objc_msgSend$arrayByAddingObject:
-- _objc_msgSend$emptySetTargetForAssetType:
-- _objc_msgSend$includesEntryForAssetType:
-- _objc_msgSend$locateCancelingSetJobForClientDomain:byIdentifier:
-- _objc_msgSend$logAlreadyDownloadedByAssetType:
 CStrings:
 + "%@:_routeClientRequest"
 + "%@:locateCancelingSetJobForClientDomain"

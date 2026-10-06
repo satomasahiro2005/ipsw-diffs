@@ -2,105 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/VectorKit.framework/VectorKit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1233ad4` | `0x120fad0` | **`-0x24004`** |
+| `__TEXT.__gcc_except_tab` | `0x7e344` | `0x75c94` | **`-0x86b0`** |
+| `__TEXT.__unwind_info` | `0x34dd0` | `0x33ad0` | **`-0x1300`** |
+| `__TEXT.__const` | `0x79d48` | `0x792e8` | **`-0xa60`** |
+| `__TEXT.__cstring` | `0x9aeab` | `0x9abb8` | **`-0x2f3`** |
+| `__AUTH_CONST.__const` | `0x89208` | `0x88fc0` | **`-0x248`** |
+| `__DATA_CONST.__const` | `0x2a140` | `0x29fd8` | **`-0x168`** |
+| `__TEXT.__eh_frame` | `0x88` | `0x1d8` | **`+0x150`** |
+| `__TEXT.__oslogstring` | `0x1115c` | `0x1127f` | **`+0x123`** |
+| `__DATA.__bss` | `0xc160` | `0xc218` | **`+0xb8`** |
+| `__DATA_DIRTY.__bss` | `0x58ec0` | `0x58f68` | **`+0xa8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x94d0` | `0x9508` | **`+0x38`** |
+| `__AUTH_CONST.__objc_const` | `0x1eda0` | `0x1edc8` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x8380` | `0x8360` | **`-0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x19d8` | `0x19c8` | **`-0x10`** |
+| `__TEXT.__objc_methlist` | `0x11064` | `0x11074` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x2028` | `0x202c` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -2043.30.6.12.4
--  __TEXT.__text: 0x1233ad4
--  __TEXT.__objc_methlist: 0x11064
--  __TEXT.__const: 0x79d48
--  __TEXT.__gcc_except_tab: 0x7e344
--  __TEXT.__oslogstring: 0x1115c
--  __TEXT.__cstring: 0x9aeab
 +2043.30.6.12.8
-+  __TEXT.__text: 0x120fad0
-+  __TEXT.__objc_methlist: 0x11074
-+  __TEXT.__const: 0x792e8
-+  __TEXT.__gcc_except_tab: 0x75c94
-+  __TEXT.__oslogstring: 0x1127f
-+  __TEXT.__cstring: 0x9abb8
-   __TEXT.__ustring: 0xf8
--  __TEXT.__unwind_info: 0x34dd0
--  __TEXT.__eh_frame: 0x88
-+  __TEXT.__unwind_info: 0x33ad0
-+  __TEXT.__eh_frame: 0x1d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2a140
-+  __DATA_CONST.__const: 0x29fd8
-   __DATA_CONST.__objc_classlist: 0x558
-   __DATA_CONST.__objc_catlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x140
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x94d0
-+  __DATA_CONST.__objc_selrefs: 0x9508
-   __DATA_CONST.__objc_superrefs: 0x500
-   __DATA_CONST.__objc_arraydata: 0x690
-   __DATA_CONST.__got: 0xab8
--  __AUTH_CONST.__const: 0x89208
--  __AUTH_CONST.__cfstring: 0x8380
--  __AUTH_CONST.__objc_const: 0x1eda0
-+  __AUTH_CONST.__const: 0x88fc0
-+  __AUTH_CONST.__cfstring: 0x8360
-+  __AUTH_CONST.__objc_const: 0x1edc8
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__objc_intobj: 0x4c8
-   __AUTH_CONST.__objc_arrayobj: 0x60
-   __AUTH_CONST.__objc_doubleobj: 0x240
-   __AUTH_CONST.__objc_dictobj: 0x50
--  __AUTH_CONST.__auth_got: 0x19d8
-+  __AUTH_CONST.__auth_got: 0x19c8
-   __AUTH.__objc_data: 0x1fe0
-   __AUTH.__data: 0x50
-   __AUTH.__thread_vars: 0x270
-   __AUTH.__thread_data: 0x231
-   __AUTH.__thread_bss: 0x180
--  __DATA.__objc_ivar: 0x2028
-+  __DATA.__objc_ivar: 0x202c
-   __DATA.__data: 0x328b8
--  __DATA.__bss: 0xc160
-+  __DATA.__bss: 0xc218
-   __DATA_DIRTY.__objc_data: 0x1590
-   __DATA_DIRTY.__data: 0x1c
--  __DATA_DIRTY.__bss: 0x58ec0
-+  __DATA_DIRTY.__bss: 0x58f68
-   - /System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libxml2.2.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 58234
--  Symbols:   98838
+-  Symbols:   95529
 -  CStrings:  22170
 +  Functions: 58912
-+  Symbols:   101092
++  Symbols:   97779
 +  CStrings:  22156
- 
 Symbols:
 + -[VKARWalkingFeatureSet addFeatureSetObserver:]
 + -[VKARWalkingFeatureSet removeFeatureSetObserver:]
@@ -15130,10 +15066,6 @@ Symbols:
 + __ZZZN2md22OverlayLayerDataSource21conditionalInvalidateENSt3__18functionIFbRKNS1_10shared_ptrINS_15OverlayTileDataEEEEEES9_NS_37OverlayNonTileBasedResourceUpdateTypeEEUb_EN3$_5D1Ev
 + __ZZZN2md28FlyoverCompleteTileDataLogic22updateSplatsOrdersLateERKNS_13LayoutContextERNSt3__13setINS4_10shared_ptrINS_15FlyoverTileDataEEENS0_16SplatTileCompareENS4_9allocatorIS8_EEEERKSC_RKNS4_13unordered_mapINS_13FlyoverOctileENS0_12SortedSplatsENS_17FlyoverOctileHashENS4_8equal_toISH_EENSA_INS4_4pairIKSH_SI_EEEEEEENK3$_0clENS4_8weak_ptrIS7_EESH_ENUlvE_D1Ev
 + _mc_bytestream_free
-+ _objc_msgSend$addContextObserver:
-+ _objc_msgSend$addGroupOverlayObserver:
-+ _objc_msgSend$removeContextObserver:
-+ _objc_msgSend$removeGroupOverlayObserver:
 - -[VKARWalkingFeatureSet addObserver:]
 - -[VKARWalkingFeatureSet removeObserver:]
 - -[VKNavContext addObserver:]

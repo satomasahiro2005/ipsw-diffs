@@ -2,43 +2,32 @@
 
 > `/System/Library/VideoEncoders/JPEGH1.videoencoder`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3728` | `0x220c` | **`-0x151c`** |
+| `__TEXT.__oslogstring` | `0x5a8` | `—` | **`-0x5a8`** |
+| `__TEXT.__cstring` | `0x4df` | `0x10c` | **`-0x3d3`** |
+| `__AUTH_CONST.__cfstring` | `0x100` | `0xc0` | **`-0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x300` | `0x2d0` | **`-0x30`** |
+| `__TEXT.__const` | `0x40` | `0x10` | **`-0x30`** |
+| `__DATA.__common` | `0x20` | `—` | **`-0x20`** |
+| `__TEXT.__unwind_info` | `0xd8` | `0xc8` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3385.8.1.11.1
--  __TEXT.__text: 0x3698
--  __TEXT.__const: 0x40
--  __TEXT.__cstring: 0x4df
--  __TEXT.__oslogstring: 0x5a8
--  __TEXT.__unwind_info: 0xf0
 +3385.12.1.0.0
-+  __TEXT.__text: 0x219c
-+  __TEXT.__const: 0x10
-+  __TEXT.__cstring: 0x10c
-+  __TEXT.__unwind_info: 0xe0
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x80
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x188
--  __AUTH_CONST.__cfstring: 0x100
--  __AUTH_CONST.__auth_got: 0x300
-+  __AUTH_CONST.__cfstring: 0xc0
-+  __AUTH_CONST.__auth_got: 0x2d0
-   __DATA.__data: 0x20
--  __DATA.__common: 0x20
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-   - /System/Library/Frameworks/CoreVideo.framework/CoreVideo
 
-   - /System/Library/Frameworks/IOSurface.framework/IOSurface
-   - /System/Library/Frameworks/VideoToolbox.framework/VideoToolbox
-   - /usr/lib/libSystem.B.dylib
 -  Functions: 42
 -  Symbols:   176
 -  CStrings:  64
 +  Functions: 28
 +  Symbols:   163
 +  CStrings:  12
- 
 Symbols:
 + _FigSignalErrorAtGM
 + _H1JPEGEncoder_StartSession.sRateControllerMBitCap

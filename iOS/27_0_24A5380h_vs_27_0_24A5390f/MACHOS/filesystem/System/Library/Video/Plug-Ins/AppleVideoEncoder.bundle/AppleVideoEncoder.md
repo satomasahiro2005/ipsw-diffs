@@ -2,47 +2,36 @@
 
 > `/System/Library/Video/Plug-Ins/AppleVideoEncoder.bundle/AppleVideoEncoder`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__gcc_except_tab`
-- `__DATA.__objc_selrefs`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e7edc` | `0x1ecb20` | **`+0x4c44`** |
+| `__TEXT.__cstring` | `0x59d85` | `0x5af63` | **`+0x11de`** |
+| `__DATA_CONST.__const` | `0xda90` | `0xdb90` | **`+0x100`** |
+| `__DATA_CONST.__cfstring` | `0x3520` | `0x3600` | **`+0xe0`** |
+| `__TEXT.__const` | `0x25528` | `0x25488` | **`-0xa0`** |
+| `__TEXT.__unwind_info` | `0x9f0` | `0xa00` | **`+0x10`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA.__objc_selrefs`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__init_offsets`
+
+### Other Changes
 
 ```diff
 
 -913.8.0.0.0
--  __TEXT.__text: 0x1e7edc
 +913.29.1.0.0
-+  __TEXT.__text: 0x1ecb20
-   __TEXT.__auth_stubs: 0x1050
-   __TEXT.__objc_stubs: 0x20
-   __TEXT.__init_offsets: 0xc
--  __TEXT.__const: 0x25528
--  __TEXT.__cstring: 0x59d85
-+  __TEXT.__const: 0x25488
-+  __TEXT.__cstring: 0x5af63
-   __TEXT.__gcc_except_tab: 0x730
-   __TEXT.__objc_methname: 0xb
--  __TEXT.__unwind_info: 0x9f0
--  __DATA_CONST.__const: 0xda90
--  __DATA_CONST.__cfstring: 0x3520
-+  __TEXT.__unwind_info: 0xa00
-+  __DATA_CONST.__const: 0xdb90
-+  __DATA_CONST.__cfstring: 0x3600
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__auth_got: 0x838
-   __DATA_CONST.__got: 0x6e8
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1958
 +  Functions: 1968
-   Symbols:   496
+
 -  CStrings:  7438
 +  CStrings:  7520
- 
 CStrings:
 + "%lld %d AVE %s: %s:%d %s | auxiliary ID must be > 0 and < 160, received %d %p %lld %p %p %p"
 + "%lld %d AVE %s: %s:%d %s | auxiliary ID must be > 0 and < 160, received %d %p %lld %p %p %p\n"

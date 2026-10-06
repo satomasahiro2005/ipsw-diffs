@@ -2,57 +2,33 @@
 
 > `/usr/lib/libmdns.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x31168` | `0x32948` | **`+0x17e0`** |
+| `__AUTH_CONST.__const` | `0x1380` | `0x1480` | **`+0x100`** |
+| `__TEXT.__cstring` | `0x21c9` | `0x22c3` | **`+0xfa`** |
+| `__TEXT.__oslogstring` | `0x38e8` | `0x39ca` | **`+0xe2`** |
+| `__DATA_CONST.__const` | `0x2ab8` | `0x2b48` | **`+0x90`** |
+| `__TEXT.__unwind_info` | `0x9e0` | `0xa30` | **`+0x50`** |
+| `__DATA.__bss` | `0x338` | `0x358` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xf18` | `0xf28` | **`+0x10`** |
+| `__TEXT.__const` | `0x1d0` | `0x1e0` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3111.0.5.0.1
--  __TEXT.__text: 0x30bf4
 +3111.40.40.0.0
-+  __TEXT.__text: 0x32384
-   __TEXT.__objc_methlist: 0x2ec
--  __TEXT.__cstring: 0x21c9
--  __TEXT.__const: 0x1d0
-+  __TEXT.__cstring: 0x22c3
-+  __TEXT.__const: 0x1e0
-   __TEXT.__gcc_except_tab: 0x154
--  __TEXT.__oslogstring: 0x38e8
--  __TEXT.__unwind_info: 0xc98
-+  __TEXT.__oslogstring: 0x39ca
-+  __TEXT.__unwind_info: 0xcf0
-   __TEXT.__eh_frame: 0x7c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2ab8
-+  __DATA_CONST.__const: 0x2b48
-   __DATA_CONST.__objc_classlist: 0x198
-   __DATA_CONST.__objc_protolist: 0x1b8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x480
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__got: 0x2f0
--  __AUTH_CONST.__const: 0x1380
-+  __AUTH_CONST.__const: 0x1480
-   __AUTH_CONST.__cfstring: 0x560
-   __AUTH_CONST.__objc_const: 0x3580
-   __AUTH_CONST.__objc_intobj: 0x48
--  __AUTH_CONST.__auth_got: 0xf18
-+  __AUTH_CONST.__auth_got: 0xf28
-   __AUTH.__objc_data: 0xfa0
-   __DATA.__data: 0x14b4
-   __DATA_DIRTY.__objc_data: 0x50
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 853
--  Symbols:   2177
+-  Symbols:   2071
 -  CStrings:  892
 +  Functions: 877
-+  Symbols:   2211
++  Symbols:   2105
 +  CStrings:  906
- 
 Symbols:
 + GCC_except_table229
 + GCC_except_table423

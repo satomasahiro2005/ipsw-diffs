@@ -2,59 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/AirPlaySender.framework/AirPlaySender`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x246784` | `0x247e9c` | **`+0x1718`** |
+| `__TEXT.__cstring` | `0x8f9e4` | `0x8ff1c` | **`+0x538`** |
+| `__DATA_CONST.__const` | `0x7700` | `0x77c8` | **`+0xc8`** |
+| `__AUTH_CONST.__cfstring` | `0x149e0` | `0x14a60` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x5908` | `0x5980` | **`+0x78`** |
+| `__TEXT.__gcc_except_tab` | `0xaa4` | `0xaf4` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb18` | `0xb58` | **`+0x40`** |
+| `__TEXT.__objc_methlist` | `0x7ec` | `0x81c` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0x77b0` | `0x77d0` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x23b0` | `0x23c0` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -1005.8.1.0.0
--  __TEXT.__text: 0x2399f0
--  __TEXT.__objc_methlist: 0x7ec
--  __TEXT.__cstring: 0x8f9e4
 +1005.12.1.0.0
-+  __TEXT.__text: 0x23b074
-+  __TEXT.__objc_methlist: 0x81c
-+  __TEXT.__cstring: 0x8ff1c
-   __TEXT.__const: 0x6190
--  __TEXT.__gcc_except_tab: 0xaa4
-+  __TEXT.__gcc_except_tab: 0xaf4
-   __TEXT.__dlopen_cstrs: 0x61a
-   __TEXT.__oslogstring: 0x1009
--  __TEXT.__unwind_info: 0x9230
-+  __TEXT.__unwind_info: 0x92c8
-   __TEXT.__eh_frame: 0x48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7700
-+  __DATA_CONST.__const: 0x77c8
-   __DATA_CONST.__objc_classlist: 0x38
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb18
-+  __DATA_CONST.__objc_selrefs: 0xb58
-   __DATA_CONST.__objc_superrefs: 0x38
-   __DATA_CONST.__objc_arraydata: 0x170
--  __DATA_CONST.__got: 0x23b0
--  __AUTH_CONST.__const: 0x77b0
--  __AUTH_CONST.__cfstring: 0x149e0
-+  __DATA_CONST.__got: 0x23c0
-+  __AUTH_CONST.__const: 0x77d0
-+  __AUTH_CONST.__cfstring: 0x14a60
-   __AUTH_CONST.__objc_const: 0xed0
-   __AUTH_CONST.__objc_dictobj: 0x1b8
-   __AUTH_CONST.__objc_intobj: 0x150
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
--  Functions: 11460
+-  Functions: 11465
 -  Symbols:   8677
 -  CStrings:  11659
-+  Functions: 11496
++  Functions: 11501
 +  Symbols:   8711
 +  CStrings:  11672
- 
 Symbols:
 + -[CUPairingManager(APPairingClientCoreUtils) allPairedPeers]
 + -[CUPairingManager(APPairingClientCoreUtils) migrateUngroupedPeer:groupID:]

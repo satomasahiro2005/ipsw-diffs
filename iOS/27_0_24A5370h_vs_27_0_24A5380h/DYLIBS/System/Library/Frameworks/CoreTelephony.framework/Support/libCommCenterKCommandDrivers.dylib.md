@@ -2,46 +2,31 @@
 
 > `/System/Library/Frameworks/CoreTelephony.framework/Support/libCommCenterKCommandDrivers.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14dfc8` | `0x14eee0` | **`+0xf18`** |
+| `__TEXT.__const` | `0x1a964` | `0x1ac84` | **`+0x320`** |
+| `__AUTH_CONST.__const` | `0x12fb8` | `0x131d8` | **`+0x220`** |
+| `__TEXT.__gcc_except_tab` | `0x169d4` | `0x16b20` | **`+0x14c`** |
+| `__TEXT.__unwind_info` | `0x8358` | `0x8408` | **`+0xb0`** |
+| `__TEXT.__oslogstring` | `0x17416` | `0x174c1` | **`+0xab`** |
+| `__TEXT.__cstring` | `0x6127` | `0x6159` | **`+0x32`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x14dfc8
--  __TEXT.__const: 0x1a964
--  __TEXT.__gcc_except_tab: 0x169d4
--  __TEXT.__oslogstring: 0x17416
--  __TEXT.__cstring: 0x6127
--  __TEXT.__unwind_info: 0x8358
-+  __TEXT.__text: 0x14eee0
-+  __TEXT.__const: 0x1ac84
-+  __TEXT.__gcc_except_tab: 0x16b20
-+  __TEXT.__cstring: 0x6159
-+  __TEXT.__oslogstring: 0x174c1
-+  __TEXT.__unwind_info: 0x8408
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0xa40
-   __DATA_CONST.__weak_got: 0x10
-   __DATA_CONST.__got: 0x458
--  __AUTH_CONST.__const: 0x12fb8
-+  __AUTH_CONST.__const: 0x131d8
-   __AUTH_CONST.__cfstring: 0x100
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__auth_got: 0x0
+-13473.1.0.0.0
++13478.3.1.3.0
 
-   - /usr/lib/libTelephonyCapabilities.dylib
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 6248
--  Symbols:   19978
--  CStrings:  2683
+-  Symbols:   11354
+-  CStrings:  2674
 +  Functions: 6285
-+  Symbols:   20086
-+  CStrings:  2690
- 
-Sections:
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
++  Symbols:   11417
++  CStrings:  2681
 Symbols:
 + GCC_except_table130
 + GCC_except_table168
@@ -232,5 +217,4 @@ CStrings:
 + "tar.ibi.1"
 + "tar.ibi.2"
 + "tar.ibi.?"
-
 ```

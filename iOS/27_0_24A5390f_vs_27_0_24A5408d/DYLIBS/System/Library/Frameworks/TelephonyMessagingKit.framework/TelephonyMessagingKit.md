@@ -2,17 +2,20 @@
 
 > `/System/Library/Frameworks/TelephonyMessagingKit.framework/TelephonyMessagingKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1500b4` | `0x150094` | **`-0x20`** |
+
+### Other Changes
+
 ```diff
 
 -13482.1.0.0.0
--  __TEXT.__text: 0x1500b4
 +13487.3.0.0.0
-+  __TEXT.__text: 0x150094
-   __TEXT.__swift5_typeref: 0x827d
-   __TEXT.__const: 0x237f0
-   __TEXT.__swift5_reflstr: 0x32d7
 Functions:
-~ sub_24c593e88 -> sub_24bf56e88 : 796 -> 784
-~ sub_24c5941a4 -> sub_24bf57198 : 1444 -> 1436
-~ sub_24c594b94 -> sub_24bf57b80 : 2624 -> 2612
+~ sub_24c44be88 -> sub_24be34e88 : 796 -> 784
+~ sub_24c44c1a4 -> sub_24be35198 : 1444 -> 1436
+~ sub_24c44cb94 -> sub_24be35b80 : 2624 -> 2612
 ```

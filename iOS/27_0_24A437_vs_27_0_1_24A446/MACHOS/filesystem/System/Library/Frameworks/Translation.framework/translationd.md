@@ -2,16 +2,15 @@
 
 > `/System/Library/Frameworks/Translation.framework/translationd`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
-- `__TEXT.__const`
 - `__DATA.__objc_selrefs`
+- `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -389.1.0.0.0
 +389.1.1.0.0
-   __TEXT.__text: 0x48
-   __TEXT.__auth_stubs: 0x40
-   __TEXT.__objc_stubs: 0x20
 ```

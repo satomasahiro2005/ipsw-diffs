@@ -2,71 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/HearingUtilities.framework/HearingUtilities`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb9a80` | `0xba044` | **`+0x5c4`** |
+| `__TEXT.__oslogstring` | `0xfd57` | `0xfdda` | **`+0x83`** |
+| `__TEXT.__objc_methlist` | `0x93e4` | `0x9434` | **`+0x50`** |
+| `__AUTH_CONST.__objc_const` | `0xc078` | `0xc0a8` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5688` | `0x56b8` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x60b7` | `0x60da` | **`+0x23`** |
+| `__AUTH_CONST.__cfstring` | `0x5d60` | `0x5d80` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x2cd8` | `0x2ce8` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x2900` | `0x290c` | **`+0xc`** |
+| `__DATA.__objc_ivar` | `0xa24` | `0xa28` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
- 539.1.1.0.0
--  __TEXT.__text: 0xb9a80
--  __TEXT.__objc_methlist: 0x93e4
-+  __TEXT.__text: 0xba044
-+  __TEXT.__objc_methlist: 0x9434
-   __TEXT.__const: 0x7e4
-   __TEXT.__dlopen_cstrs: 0x85c
--  __TEXT.__cstring: 0x60b7
-+  __TEXT.__cstring: 0x60da
-   __TEXT.__swift5_typeref: 0x2a5
-   __TEXT.__swift5_capture: 0x1d8
-   __TEXT.__constg_swiftt: 0x1a0
-
-   __TEXT.__swift5_assocty: 0x30
-   __TEXT.__swift5_proto: 0x14
-   __TEXT.__swift5_types: 0x1c
--  __TEXT.__oslogstring: 0xfd57
--  __TEXT.__gcc_except_tab: 0x2900
--  __TEXT.__unwind_info: 0x2cd8
-+  __TEXT.__oslogstring: 0xfdda
-+  __TEXT.__gcc_except_tab: 0x290c
-+  __TEXT.__unwind_info: 0x2ce8
-   __TEXT.__eh_frame: 0x70
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x120
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5688
-+  __DATA_CONST.__objc_selrefs: 0x56b8
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x1a0
-   __DATA_CONST.__objc_arraydata: 0x3f0
-   __DATA_CONST.__got: 0x778
-   __AUTH_CONST.__const: 0x1638
--  __AUTH_CONST.__cfstring: 0x5d60
--  __AUTH_CONST.__objc_const: 0xc078
-+  __AUTH_CONST.__cfstring: 0x5d80
-+  __AUTH_CONST.__objc_const: 0xc0a8
-   __AUTH_CONST.__objc_intobj: 0xa68
-   __AUTH_CONST.__objc_dictobj: 0x410
-   __AUTH_CONST.__objc_arrayobj: 0x1e0
-
-   __AUTH_CONST.__auth_got: 0xbb0
-   __AUTH.__objc_data: 0x11d8
-   __AUTH.__data: 0xa8
--  __DATA.__objc_ivar: 0xa24
-+  __DATA.__objc_ivar: 0xa28
-   __DATA.__data: 0xf80
-   __DATA_DIRTY.__objc_data: 0x5a8
-   __DATA_DIRTY.__data: 0xc8
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4130
--  Symbols:   8658
+-  Symbols:   6442
 -  CStrings:  2109
 +  Functions: 4138
-+  Symbols:   8674
++  Symbols:   6451
 +  CStrings:  2113
- 
 Symbols:
 + -[HUNoiseController filterPendingNoiseSamplesForAOP2IfNeeded]
 + -[HUNoiseController lastClassificationSampleDate]
@@ -134,13 +94,6 @@ Symbols:
 + _OBJC_IVAR_$_HUNoiseController._lastClassificationSampleDate
 + ___54-[HUNoiseController _startADAMClassificationReceiving]_block_invoke_2
 + ___77-[HUNoiseController processSoundClassificationMeasurementsAOP2:withMetadata:]_block_invoke
-+ _objc_msgSend$deviceSupportsMedina
-+ _objc_msgSend$filterPendingNoiseSamplesForAOP2IfNeeded
-+ _objc_msgSend$lastClassificationSampleDate
-+ _objc_msgSend$processSoundClassificationMeasurementsAOP2:withMetadata:
-+ _objc_msgSend$removePendingNoiseSamplesWithinDateInterval:
-+ _objc_msgSend$setLastClassificationSampleDate:
-+ _objc_msgSend$updateLastClassificationSampleWithDetectionState:sampleDate:
 - GCC_except_table2629
 - GCC_except_table2655
 - GCC_except_table2662

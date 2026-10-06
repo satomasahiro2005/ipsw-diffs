@@ -2,74 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/GeoAnalytics.framework/GeoAnalytics`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x94754` | `0x97304` | **`+0x2bb0`** |
+| `__DATA_CONST.__const` | `0x68d8` | `0x7bb0` | **`+0x12d8`** |
+| `__TEXT.__cstring` | `0xe42a` | `0xeda2` | **`+0x978`** |
+| `__AUTH_CONST.__cfstring` | `0x13d40` | `0x14600` | **`+0x8c0`** |
+| `__AUTH_CONST.__const` | `0x2ef8` | `0x3758` | **`+0x860`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4130` | `0x41b0` | **`+0x80`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x300` | `0x378` | **`+0x78`** |
+| `__TEXT.__objc_methlist` | `0x2504` | `0x255c` | **`+0x58`** |
+| `__AUTH_CONST.__objc_intobj` | `0x1c68` | `0x1cb0` | **`+0x48`** |
+| `__DATA_CONST.__objc_arraydata` | `0xe78` | `0xea8` | **`+0x30`** |
+| `__AUTH_CONST.__objc_const` | `0x2e88` | `0x2e98` | **`+0x10`** |
+| `__TEXT.__const` | `0x74c` | `0x75c` | **`+0x10`** |
+| `__TEXT.__oslogstring` | `0x10be` | `0x10ca` | **`+0xc`** |
+| `__DATA_CONST.__got` | `0x6a8` | `0x6b0` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x1078` | `0x1080` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2075.30.6.12.8
--  __TEXT.__text: 0x94754
--  __TEXT.__objc_methlist: 0x2504
--  __TEXT.__const: 0x74c
 +2075.30.6.12.12
-+  __TEXT.__text: 0x97304
-+  __TEXT.__objc_methlist: 0x255c
-+  __TEXT.__const: 0x75c
-   __TEXT.__dlopen_cstrs: 0x126
-   __TEXT.__swift5_typeref: 0x4e
-   __TEXT.__swift5_capture: 0x24
 
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_types: 0x8
-   __TEXT.__gcc_except_tab: 0x680
--  __TEXT.__cstring: 0xe42a
--  __TEXT.__oslogstring: 0x10be
--  __TEXT.__unwind_info: 0x1078
-+  __TEXT.__cstring: 0xeda2
-+  __TEXT.__oslogstring: 0x10ca
-+  __TEXT.__unwind_info: 0x1080
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x68d8
-+  __DATA_CONST.__const: 0x7bb0
-   __DATA_CONST.__objc_classlist: 0x110
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4130
-+  __DATA_CONST.__objc_selrefs: 0x41b0
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0xa0
--  __DATA_CONST.__objc_arraydata: 0xe78
--  __DATA_CONST.__got: 0x6a8
--  __AUTH_CONST.__const: 0x2ef8
--  __AUTH_CONST.__cfstring: 0x13d40
--  __AUTH_CONST.__objc_const: 0x2e88
--  __AUTH_CONST.__objc_intobj: 0x1c68
-+  __DATA_CONST.__objc_arraydata: 0xea8
-+  __DATA_CONST.__got: 0x6b0
-+  __AUTH_CONST.__const: 0x3758
-+  __AUTH_CONST.__cfstring: 0x14600
-+  __AUTH_CONST.__objc_const: 0x2e98
-+  __AUTH_CONST.__objc_intobj: 0x1cb0
-   __AUTH_CONST.__objc_dictobj: 0x4b0
-   __AUTH_CONST.__objc_doubleobj: 0x20
--  __AUTH_CONST.__objc_arrayobj: 0x300
-+  __AUTH_CONST.__objc_arrayobj: 0x378
-   __AUTH_CONST.__auth_got: 0x500
-   __AUTH.__objc_data: 0x140
-   __AUTH.__data: 0x40
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 1544
--  Symbols:   4899
+-  Symbols:   3089
 -  CStrings:  2735
 +  Functions: 1615
-+  Symbols:   5122
++  Symbols:   3296
 +  CStrings:  2807
- 
 Symbols:
 + +[GEOAPFMPortal captureACSNFinderDecisionWithOutcome_outcome:outcome_publishPolicy:outcome_timeSinceLastPublishBucket:env_densityBucket:env_effectiveDensityBucket:env_finderCountBucket:env_beaconCountBucket:env_nearOwnerFractionBucket:content_observationCountBucket:qual_compositeQualityScore:qual_accuracyScore:qual_recencyScore:qual_motionScore:qual_publishLocationAccuracyBucket:qual_publishLocationRecencyBucket:GEOFMBudget_budgetRemainingBucket:GEOFMBudget_budgetTotalDaily:decision_electionWeight:decision_timeSinceLocationChange:decision_timeSinceLastPublishRaw:decision_atKnownLocation:sim_wouldDefer:sim_deferalReason:sim_disposition:sim_dispostionReason:sim_policyVersion:sim_categoryComponent:sim_qualityComponent:sim_budgetComponent:sim_densityComponent:sim_dwellComponent:cfg_configVersion:cfg_experimentGroup:ctxt_deviceCategory:ctxt_powerMode:ctxt_onBattery:ctxt_onWifi:ctxt_motionState:ctxt_geoCoarse:completion:]
 + -[GEOAPServiceManager listAnalyticsDatabaseTable:reply:]
@@ -477,22 +442,6 @@ Symbols:
 + _GeoAnalyticsEventConfig_wifiProbe_uploadPolicy_Metadata_block_invoke_200
 + _OBJC_CLASS_$_GEOFMSimulatedFields
 + ___929+[GEOAPFMPortal captureACSNFinderDecisionWithOutcome_outcome:outcome_publishPolicy:outcome_timeSinceLastPublishBucket:env_densityBucket:env_effectiveDensityBucket:env_finderCountBucket:env_beaconCountBucket:env_nearOwnerFractionBucket:content_observationCountBucket:qual_compositeQualityScore:qual_accuracyScore:qual_recencyScore:qual_motionScore:qual_publishLocationAccuracyBucket:qual_publishLocationRecencyBucket:GEOFMBudget_budgetRemainingBucket:GEOFMBudget_budgetTotalDaily:decision_electionWeight:decision_timeSinceLocationChange:decision_timeSinceLastPublishRaw:decision_atKnownLocation:sim_wouldDefer:sim_deferalReason:sim_disposition:sim_dispostionReason:sim_policyVersion:sim_categoryComponent:sim_qualityComponent:sim_budgetComponent:sim_densityComponent:sim_dwellComponent:cfg_configVersion:cfg_experimentGroup:ctxt_deviceCategory:ctxt_powerMode:ctxt_onBattery:ctxt_onWifi:ctxt_motionState:ctxt_geoCoarse:completion:]_block_invoke
-+ _objc_msgSend$captureACSNFinderDecisionWithOutcome_outcome:outcome_publishPolicy:outcome_timeSinceLastPublishBucket:env_densityBucket:env_effectiveDensityBucket:env_finderCountBucket:env_beaconCountBucket:env_nearOwnerFractionBucket:content_observationCountBucket:qual_compositeQualityScore:qual_accuracyScore:qual_recencyScore:qual_motionScore:qual_publishLocationAccuracyBucket:qual_publishLocationRecencyBucket:GEOFMBudget_budgetRemainingBucket:GEOFMBudget_budgetTotalDaily:decision_electionWeight:decision_timeSinceLocationChange:decision_timeSinceLastPublishRaw:decision_atKnownLocation:sim_wouldDefer:sim_deferalReason:sim_disposition:sim_dispostionReason:sim_policyVersion:sim_categoryComponent:sim_qualityComponent:sim_budgetComponent:sim_densityComponent:sim_dwellComponent:cfg_configVersion:cfg_experimentGroup:ctxt_deviceCategory:ctxt_powerMode:ctxt_onBattery:ctxt_onWifi:ctxt_motionState:ctxt_geoCoarse:completion:
-+ _objc_msgSend$isCampoPunchIn
-+ _objc_msgSend$listAnalyticsDatabaseTable:reply:
-+ _objc_msgSend$setBudgetComponent:
-+ _objc_msgSend$setBudgetRemainingBucket:
-+ _objc_msgSend$setCategoryComponent:
-+ _objc_msgSend$setDeferalReason:
-+ _objc_msgSend$setDensityComponent:
-+ _objc_msgSend$setDisposition:
-+ _objc_msgSend$setDispostionReason:
-+ _objc_msgSend$setDwellComponent:
-+ _objc_msgSend$setPolicyVersion:
-+ _objc_msgSend$setQualityComponent:
-+ _objc_msgSend$setSimulatedFields:
-+ _objc_msgSend$setWouldDefer:
-+ _objc_msgSend$simulatedFields
 - GCC_except_table1086
 - GCC_except_table1111
 - GCC_except_table1113

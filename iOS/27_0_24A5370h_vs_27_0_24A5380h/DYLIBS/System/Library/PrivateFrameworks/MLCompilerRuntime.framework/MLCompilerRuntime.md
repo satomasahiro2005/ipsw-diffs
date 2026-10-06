@@ -2,42 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/MLCompilerRuntime.framework/MLCompilerRuntime`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x4ffc8
-+  __TEXT.__text: 0x4fe10
-   __TEXT.__const: 0x1000
-   __TEXT.__cstring: 0x1590
-   __TEXT.__gcc_except_tab: 0x447c
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4ffc8` | `0x4fe10` | **`-0x1b8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2837c64f0 -> sub_2879684f0 : 2884 -> 2852
-~ sub_2837c711c -> sub_2879690fc : 284 -> 280
-~ sub_2837c858c -> sub_28796a568 : 1104 -> 1092
-~ sub_2837c9ff8 -> sub_28796bfc8 : 500 -> 440
-~ sub_2837cae74 -> sub_28796ce08 : 484 -> 460
-~ sub_2837cca2c -> sub_28796e9a8 : 5508 -> 5500
-~ sub_2837db380 -> sub_28797d2f4 : 348 -> 300
-~ sub_2837dfb38 -> sub_287981a7c : 432 -> 412
-~ sub_2837e5638 -> sub_287987568 : 1080 -> 1072
-~ sub_2837e6738 -> sub_287988660 : 464 -> 444
-~ sub_2837fc138 -> sub_28799e04c : 1768 -> 1760
-~ sub_2837fec10 -> sub_2879a0b1c : 1084 -> 1076
-~ sub_2837ff118 -> sub_2879a101c : 812 -> 804
-~ sub_2837ffc1c -> sub_2879a1b18 : 652 -> 640
-~ sub_2838001c0 -> sub_2879a20b0 : 652 -> 640
-~ sub_283803f50 -> sub_2879a5e34 : 1268 -> 1260
-~ sub_283804d08 -> sub_2879a6be4 : 416 -> 396
-~ sub_283807c00 -> sub_2879a9ac8 : 780 -> 772
-~ sub_283807f0c -> sub_2879a9dcc : 380 -> 356
-~ sub_28380a278 -> sub_2879ac120 : 3092 -> 3080
-~ sub_28380b4f8 -> sub_2879ad394 : 2780 -> 2708
-~ sub_2838137e8 -> sub_2879b563c : 652 -> 640
-
+~ sub_2836774f0 -> sub_287f274f0 : 2884 -> 2852
+~ sub_28367811c -> sub_287f280fc : 284 -> 280
+~ sub_28367958c -> sub_287f29568 : 1104 -> 1092
+~ sub_28367aff8 -> sub_287f2afc8 : 500 -> 440
+~ sub_28367be74 -> sub_287f2be08 : 484 -> 460
+~ sub_28367da2c -> sub_287f2d9a8 : 5508 -> 5500
+~ sub_28368c380 -> sub_287f3c2f4 : 348 -> 300
+~ sub_283690b38 -> sub_287f40a7c : 432 -> 412
+~ sub_283696638 -> sub_287f46568 : 1080 -> 1072
+~ sub_283697738 -> sub_287f47660 : 464 -> 444
+~ sub_2836ad138 -> sub_287f5d04c : 1768 -> 1760
+~ sub_2836afc10 -> sub_287f5fb1c : 1084 -> 1076
+~ sub_2836b0118 -> sub_287f6001c : 812 -> 804
+~ sub_2836b0c1c -> sub_287f60b18 : 652 -> 640
+~ sub_2836b11c0 -> sub_287f610b0 : 652 -> 640
+~ sub_2836b4f50 -> sub_287f64e34 : 1268 -> 1260
+~ sub_2836b5d08 -> sub_287f65be4 : 416 -> 396
+~ sub_2836b8c00 -> sub_287f68ac8 : 780 -> 772
+~ sub_2836b8f0c -> sub_287f68dcc : 380 -> 356
+~ sub_2836bb278 -> sub_287f6b120 : 3092 -> 3080
+~ sub_2836bc4f8 -> sub_287f6c394 : 2780 -> 2708
+~ sub_2836c47e8 -> sub_287f7463c : 652 -> 640
 ```

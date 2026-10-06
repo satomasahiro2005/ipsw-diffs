@@ -2,18 +2,19 @@
 
 > `/usr/bin/ltop`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd70` | `0xd78` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 1071.0.1.0.0
--  __TEXT.__text: 0xd70
-+  __TEXT.__text: 0xd78
-   __TEXT.__auth_stubs: 0x160
-   __TEXT.__const: 0x38
-   __TEXT.__cstring: 0x238
+```text
 Functions:
 ~ sub_100000610 : 2068 -> 2076
 ```

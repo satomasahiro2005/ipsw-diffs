@@ -2,17 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/Lexicon.framework/Lexicon`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -216.0.0.0.0
 +218.0.0.0.0
-   __TEXT.__text: 0xe33f0
-   __TEXT.__objc_methlist: 0xf4
-   __TEXT.__const: 0xde95
 CStrings:
 + "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/local/include/trie/cedarpp.h"
 + "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/local/include/trie/darts_clone.h:1146: exception: failed to insert key: negative value"

@@ -2,89 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/HealthDomains.framework/HealthDomains`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x932c4` | `0x8d064` | **`-0x6260`** |
+| `__DATA.__bss` | `0x1a900` | `0x19a80` | **`-0xe80`** |
+| `__TEXT.__const` | `0xdb2c` | `0xd60c` | **`-0x520`** |
+| `__AUTH_CONST.__const` | `0x6c68` | `0x69f8` | **`-0x270`** |
+| `__TEXT.__eh_frame` | `0x2bb0` | `0x2948` | **`-0x268`** |
+| `__DATA_DIRTY.__bss` | `0xc80` | `0xe80` | **`+0x200`** |
+| `__TEXT.__unwind_info` | `0x2ec8` | `0x2d30` | **`-0x198`** |
+| `__TEXT.__constg_swiftt` | `0x3038` | `0x2ec4` | **`-0x174`** |
+| `__TEXT.__swift5_fieldmd` | `0x2314` | `0x21f0` | **`-0x124`** |
+| `__TEXT.__swift5_typeref` | `0x2ead` | `0x2d9d` | **`-0x110`** |
+| `__AUTH.__data` | `0x1098` | `0xf90` | **`-0x108`** |
+| `__DATA.__data` | `0x2b88` | `0x2a80` | **`-0x108`** |
+| `__TEXT.__swift5_proto` | `0xde8` | `0xd7c` | **`-0x6c`** |
+| `__TEXT.__swift5_assocty` | `0x870` | `0x8d0` | **`+0x60`** |
+| `__TEXT.__swift5_capture` | `0x97c` | `0x93c` | **`-0x40`** |
+| `__DATA_CONST.__got` | `0x478` | `0x448` | **`-0x30`** |
+| `__TEXT.__cstring` | `0x1c5f` | `0x1c2f` | **`-0x30`** |
+| `__AUTH_CONST.__auth_got` | `0xbc8` | `0xba0` | **`-0x28`** |
+| `__DATA_DIRTY.__data` | `0x548` | `0x568` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x398` | `0x378` | **`-0x20`** |
+| `__TEXT.__swift_as_cont` | `0x5c` | `0x44` | **`-0x18`** |
+| `__TEXT.__swift5_protos` | `0x98` | `0x90` | **`-0x8`** |
+| `__TEXT.__swift_as_entry` | `0x34` | `0x2c` | **`-0x8`** |
+| `__TEXT.__swift_as_ret` | `0x34` | `0x2c` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__swift5_reflstr`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x932c4
--  __TEXT.__const: 0xdb2c
--  __TEXT.__swift5_typeref: 0x2ead
--  __TEXT.__constg_swiftt: 0x3038
-+  __TEXT.__text: 0x8d064
-+  __TEXT.__const: 0xd60c
-+  __TEXT.__swift5_typeref: 0x2d9d
-+  __TEXT.__constg_swiftt: 0x2ec4
-   __TEXT.__swift5_builtin: 0xc8
-   __TEXT.__swift5_reflstr: 0x11ef
--  __TEXT.__swift5_fieldmd: 0x2314
--  __TEXT.__swift5_assocty: 0x870
--  __TEXT.__swift5_proto: 0xde8
--  __TEXT.__swift5_types: 0x398
--  __TEXT.__cstring: 0x1c5f
--  __TEXT.__swift5_capture: 0x97c
--  __TEXT.__swift5_protos: 0x98
--  __TEXT.__swift_as_entry: 0x34
--  __TEXT.__swift_as_ret: 0x34
--  __TEXT.__swift_as_cont: 0x5c
-+  __TEXT.__swift5_fieldmd: 0x21f0
-+  __TEXT.__swift5_assocty: 0x8d0
-+  __TEXT.__swift5_proto: 0xd7c
-+  __TEXT.__swift5_types: 0x378
-+  __TEXT.__cstring: 0x1c2f
-+  __TEXT.__swift5_capture: 0x93c
-+  __TEXT.__swift5_protos: 0x90
-+  __TEXT.__swift_as_entry: 0x2c
-+  __TEXT.__swift_as_ret: 0x2c
-+  __TEXT.__swift_as_cont: 0x44
-   __TEXT.__swift5_mpenum: 0x3c
-   __TEXT.__oslogstring: 0xc4
--  __TEXT.__unwind_info: 0x2ec8
--  __TEXT.__eh_frame: 0x2bb0
-+  __TEXT.__unwind_info: 0x2d30
-+  __TEXT.__eh_frame: 0x2948
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-7027.0.60.2.2
++7027.0.64.0.0
 
-   __DATA_CONST.__objc_classlist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xb0
--  __DATA_CONST.__got: 0x478
--  __AUTH_CONST.__const: 0x6c68
-+  __DATA_CONST.__got: 0x448
-+  __AUTH_CONST.__const: 0x69f8
-   __AUTH_CONST.__objc_const: 0x340
--  __AUTH_CONST.__auth_got: 0xbc8
--  __AUTH.__data: 0x1098
--  __DATA.__data: 0x2b88
--  __DATA.__bss: 0x1a900
--  __DATA_DIRTY.__data: 0x548
--  __DATA_DIRTY.__bss: 0xc80
-+  __AUTH_CONST.__auth_got: 0xba0
-+  __AUTH.__data: 0xf90
-+  __DATA.__data: 0x2a80
-+  __DATA.__bss: 0x19a80
-+  __DATA_DIRTY.__data: 0x568
-+  __DATA_DIRTY.__bss: 0xe80
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/HealthKit.framework/HealthKit
-   - /System/Library/PrivateFrameworks/HealthFeatures.framework/HealthFeatures
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 4458
--  Symbols:   1550
+-  Symbols:   1270
 +  Functions: 4345
-+  Symbols:   1524
-   CStrings:  158
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_reflstr : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__objc_const : content changed
++  Symbols:   1251
 Symbols:
 + ___swift_memcpy80_8
 + _associated conformance 13HealthDomains29ClassificationExperienceLevelVSHAASQ
@@ -132,5 +93,4 @@ Symbols:
 CStrings:
 + "advancedBeginner"
 - "Health.Escalations.Evaluation.Escalation.BloodPressureEmergencyNotifications"
-
 ```

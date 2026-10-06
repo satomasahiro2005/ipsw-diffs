@@ -2,96 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/PhotosPosterUI.framework/PhotosPosterUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc4b40` | `0xc5718` | **`+0xbd8`** |
+| `__TEXT.__objc_methlist` | `0xa55c` | `0xa5f4` | **`+0x98`** |
+| `__AUTH_CONST.__objc_const` | `0x118f0` | `0x11978` | **`+0x88`** |
+| `__DATA_CONST.__objc_selrefs` | `0x72e8` | `0x7340` | **`+0x58`** |
+| `__TEXT.__oslogstring` | `0x4a2a` | `0x49d3` | **`-0x57`** |
+| `__DATA_CONST.__const` | `0x2cc8` | `0x2d18` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x1948` | `0x1994` | **`+0x4c`** |
+| `__AUTH.__objc_data` | `0x3058` | `0x3088` | **`+0x30`** |
+| `__TEXT.__const` | `0x2ec0` | `0x2ef0` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x3130` | `0x3160` | **`+0x30`** |
+| `__TEXT.__constg_swiftt` | `0x1754` | `0x177c` | **`+0x28`** |
+| `__TEXT.__cstring` | `0x6e18` | `0x6df5` | **`-0x23`** |
+| `__AUTH_CONST.__cfstring` | `0x5000` | `0x5020` | **`+0x20`** |
+| `__DATA.__bss` | `0x1dd0` | `0x1de0` | **`+0x10`** |
+| `__DATA.__data` | `0x2c58` | `0x2c68` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0xb78` | `0xb6c` | **`-0xc`** |
+| `__AUTH.__data` | `0x9b8` | `0x9b0` | **`-0x8`** |
+| `__AUTH_CONST.__auth_got` | `0x1b00` | `0x1b08` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0xa80` | `0xa84` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__swift5_reflstr`
+
+### Other Changes
 
 ```diff
 
 -910.33.102.0.0
--  __TEXT.__text: 0xc4b40
--  __TEXT.__objc_methlist: 0xa55c
 +912.0.111.0.0
-+  __TEXT.__text: 0xc5718
-+  __TEXT.__objc_methlist: 0xa5f4
-   __TEXT.__dlopen_cstrs: 0x64
--  __TEXT.__const: 0x2ec0
--  __TEXT.__constg_swiftt: 0x1754
-+  __TEXT.__const: 0x2ef0
-+  __TEXT.__constg_swiftt: 0x177c
-   __TEXT.__swift5_typeref: 0x50c2
-   __TEXT.__swift5_builtin: 0xdc
-   __TEXT.__swift5_reflstr: 0xf71
--  __TEXT.__swift5_fieldmd: 0xb78
-+  __TEXT.__swift5_fieldmd: 0xb6c
-   __TEXT.__swift5_assocty: 0x2d8
-   __TEXT.__swift5_proto: 0xd0
-   __TEXT.__swift5_types: 0xb8
--  __TEXT.__cstring: 0x6e18
-+  __TEXT.__cstring: 0x6df5
-   __TEXT.__swift5_capture: 0x8cc
--  __TEXT.__oslogstring: 0x4a2a
-+  __TEXT.__oslogstring: 0x49d3
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x10
--  __TEXT.__gcc_except_tab: 0x1948
-+  __TEXT.__gcc_except_tab: 0x1994
-   __TEXT.__ustring: 0xdc
--  __TEXT.__unwind_info: 0x3130
-+  __TEXT.__unwind_info: 0x3160
-   __TEXT.__eh_frame: 0x4dc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2cc8
-+  __DATA_CONST.__const: 0x2d18
-   __DATA_CONST.__objc_classlist: 0x340
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x268
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x72e8
-+  __DATA_CONST.__objc_selrefs: 0x7340
-   __DATA_CONST.__objc_protorefs: 0x88
-   __DATA_CONST.__objc_superrefs: 0x268
-   __DATA_CONST.__objc_arraydata: 0x60
-   __DATA_CONST.__got: 0x11f8
-   __AUTH_CONST.__const: 0x32a0
--  __AUTH_CONST.__cfstring: 0x5000
--  __AUTH_CONST.__objc_const: 0x118f0
-+  __AUTH_CONST.__cfstring: 0x5020
-+  __AUTH_CONST.__objc_const: 0x11978
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__objc_doubleobj: 0x60
-   __AUTH_CONST.__objc_intobj: 0xf0
--  __AUTH_CONST.__auth_got: 0x1b00
--  __AUTH.__objc_data: 0x3058
--  __AUTH.__data: 0x9b8
--  __DATA.__objc_ivar: 0xa80
--  __DATA.__data: 0x2c58
--  __DATA.__bss: 0x1dd0
-+  __AUTH_CONST.__auth_got: 0x1b08
-+  __AUTH.__objc_data: 0x3088
-+  __AUTH.__data: 0x9b0
-+  __DATA.__objc_ivar: 0xa84
-+  __DATA.__data: 0x2c68
-+  __DATA.__bss: 0x1de0
-   __DATA.__common: 0x1a0
-   __DATA_DIRTY.__objc_data: 0xa0
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5294
--  Symbols:   10110
+-  Symbols:   7089
 -  CStrings:  1241
 +  Functions: 5298
-+  Symbols:   10147
++  Symbols:   7113
 +  CStrings:  1242
- 
 Symbols:
 + -[PUParallaxLayerStackViewModel _visibleFrameFillingContainer:withPortraitVisibleFrame:]
 + -[PUParallaxLayerStackViewModel displayDeviceConfiguration]
@@ -225,25 +176,6 @@ Symbols:
 + _constantValPRDisplayTypeEmbedded
 + _getPRDisplayTypeEmbedded
 + _initValPRDisplayTypeEmbedded
-+ _objc_msgSend$_createViewModelWithLayerStack:style:deviceOrientation:
-+ _objc_msgSend$_currentDisplaySupportsLandscape
-+ _objc_msgSend$_displayContextForLoadingLayerStack
-+ _objc_msgSend$_loadAssetFromWallpaperURL:skipWarmup:deviceOrientation:error:
-+ _objc_msgSend$_transitionToDisplayContext:withCoordinator:orientation:
-+ _objc_msgSend$_visibleFrameFillingContainer:withPortraitVisibleFrame:
-+ _objc_msgSend$configurationForDisplayContext:
-+ _objc_msgSend$displayDeviceConfiguration
-+ _objc_msgSend$displayType
-+ _objc_msgSend$editConfigurationForDisplayContext:
-+ _objc_msgSend$initWithInitialLayerStackViewModel:availableStyles:environmentIsBackdrop:isUserTransformDisabled:displayContext:
-+ _objc_msgSend$originalLayoutForDisplayContext:
-+ _objc_msgSend$px_isEmbeddedDisplay
-+ _objc_msgSend$px_orientation
-+ _objc_msgSend$setDisplayDeviceConfiguration:
-+ _objc_msgSend$setDisplayNativeOrientation:
-+ _objc_msgSend$settlingEffectLayoutForDisplayContext:
-+ _objc_msgSend$spatialPhotoLayoutForDisplayContext:
-+ _objc_msgSend$timeRectCollection
 + _softLinkOncePRDisplayTypeEmbedded
 - -[PUParallaxLayerStackViewModel setInitialLayerStack:]
 - -[PUWallpaperPosterController _transitionToDisplayContext:withCoordinator:]
@@ -354,12 +286,6 @@ Symbols:
 - ___block_descriptor_64_e8_32s40bs48w_e52_v24?0"PUWallpaperPosterEditViewModel"8"NSError"16lw48l8s40l8s32l8
 - ___block_descriptor_65_e8_32s40s48s56w_e5_v8?0lw56l8s32l8s40l8s48l8
 - ___block_descriptor_80_e8_32s40s48s56bs64w_e42_v24?0"<PISegmentationItem>"8"NSError"16lw64l8s56l8s32l8s40l8s48l8
-- _objc_msgSend$applySpatialPhotoReframeOnLoadIfNeeded
-- _objc_msgSend$initWithInitialLayerStackViewModel:availableStyles:environmentIsBackdrop:isUserTransformDisabled:
-- _objc_msgSend$loadCompoundLayerStackFromWallpaperURL:options:completionHandler:
-- _objc_msgSend$needsSpatialPhotoReframeOnLoad
-- _objc_msgSend$setNeedsSpatialPhotoReframeOnLoad:
-- _objc_msgSend$settlingEffectLayout
 CStrings:
 + "#+"
 + "0` `"

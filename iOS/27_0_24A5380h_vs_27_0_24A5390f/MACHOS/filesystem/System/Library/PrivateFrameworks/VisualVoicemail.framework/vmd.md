@@ -2,100 +2,62 @@
 
 > `/System/Library/PrivateFrameworks/VisualVoicemail.framework/vmd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbb3c8` | `0xc0fa4` | **`+0x5bdc`** |
+| `__TEXT.__gcc_except_tab` | `0xca98` | `0x10d1c` | **`+0x4284`** |
+| `__TEXT.__unwind_info` | `0x4028` | `0x49a0` | **`+0x978`** |
+| `__DATA.__objc_const` | `0x127b8` | `0x12cf0` | **`+0x538`** |
+| `__TEXT.__objc_methname` | `0x12963` | `0x12d7f` | **`+0x41c`** |
+| `__TEXT.__objc_methlist` | `0x7c24` | `0x7e74` | **`+0x250`** |
+| `__TEXT.__oslogstring` | `0x16107` | `0x16337` | **`+0x230`** |
+| `__TEXT.__objc_stubs` | `0xe0e0` | `0xe2a0` | **`+0x1c0`** |
+| `__DATA_CONST.__cfstring` | `0x5520` | `0x5640` | **`+0x120`** |
+| `__TEXT.__cstring` | `0x47fa` | `0x491a` | **`+0x120`** |
+| `__DATA.__objc_data` | `0x1d20` | `0x1e10` | **`+0xf0`** |
+| `__TEXT.__objc_methtype` | `0x34f4` | `0x35da` | **`+0xe6`** |
+| `__DATA_CONST.__const` | `0x3400` | `0x34e0` | **`+0xe0`** |
+| `__DATA.__objc_selrefs` | `0x4778` | `0x4820` | **`+0xa8`** |
+| `__TEXT.__objc_classname` | `0xe0a` | `0xe4a` | **`+0x40`** |
+| `__DATA.__objc_ivar` | `0x79c` | `0x7d0` | **`+0x34`** |
+| `__DATA.__bss` | `0x620` | `0x640` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x2e0` | `0x2f8` | **`+0x18`** |
+| `__TEXT.__auth_stubs` | `0x18b0` | `0x18a0` | **`-0x10`** |
+| `__DATA_CONST.__auth_got` | `0xc70` | `0xc68` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x820` | `0x828` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x2b8` | `0x2c0` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
 - `__TEXT.__const`
 - `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
 - `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__data`
+- `__TEXT.__init_offsets`
+- `__TEXT.__swift5_typeref`
+
+### Other Changes
 
 ```diff
 
 -954.0.0.0.0
--  __TEXT.__text: 0xbb3c8
--  __TEXT.__auth_stubs: 0x18b0
--  __TEXT.__objc_stubs: 0xe0e0
 +956.0.0.0.0
-+  __TEXT.__text: 0xc0fa4
-+  __TEXT.__auth_stubs: 0x18a0
-+  __TEXT.__objc_stubs: 0xe2a0
-   __TEXT.__init_offsets: 0x8
--  __TEXT.__objc_methlist: 0x7c24
--  __TEXT.__cstring: 0x47fa
--  __TEXT.__objc_classname: 0xe0a
--  __TEXT.__objc_methname: 0x12963
--  __TEXT.__objc_methtype: 0x34f4
-+  __TEXT.__objc_methlist: 0x7e74
-+  __TEXT.__cstring: 0x491a
-+  __TEXT.__objc_classname: 0xe4a
-+  __TEXT.__objc_methname: 0x12d7f
-+  __TEXT.__objc_methtype: 0x35da
-   __TEXT.__const: 0x522
--  __TEXT.__gcc_except_tab: 0xca98
--  __TEXT.__oslogstring: 0x16107
-+  __TEXT.__gcc_except_tab: 0x10d1c
-+  __TEXT.__oslogstring: 0x16337
-   __TEXT.__constg_swiftt: 0x38
-   __TEXT.__swift5_typeref: 0x3b
-   __TEXT.__swift5_fieldmd: 0x10
-   __TEXT.__swift5_types: 0x4
--  __TEXT.__unwind_info: 0x4028
-+  __TEXT.__unwind_info: 0x49a0
-   __TEXT.__eh_frame: 0x40
--  __DATA_CONST.__const: 0x3400
--  __DATA_CONST.__cfstring: 0x5520
--  __DATA_CONST.__objc_classlist: 0x2e0
-+  __DATA_CONST.__const: 0x34e0
-+  __DATA_CONST.__cfstring: 0x5640
-+  __DATA_CONST.__objc_classlist: 0x2f8
-   __DATA_CONST.__objc_catlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x160
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_superrefs: 0x2b8
-+  __DATA_CONST.__objc_superrefs: 0x2c0
-   __DATA_CONST.__objc_intobj: 0x378
-   __DATA_CONST.__objc_arraydata: 0x130
-   __DATA_CONST.__objc_dictobj: 0x50
-   __DATA_CONST.__objc_arrayobj: 0x60
--  __DATA_CONST.__auth_got: 0xc70
--  __DATA_CONST.__got: 0x820
-+  __DATA_CONST.__auth_got: 0xc68
-+  __DATA_CONST.__got: 0x828
-   __DATA_CONST.__auth_ptr: 0x40
--  __DATA.__objc_const: 0x127b8
--  __DATA.__objc_selrefs: 0x4778
--  __DATA.__objc_ivar: 0x79c
--  __DATA.__objc_data: 0x1d20
-+  __DATA.__objc_const: 0x12cf0
-+  __DATA.__objc_selrefs: 0x4820
-+  __DATA.__objc_ivar: 0x7d0
-+  __DATA.__objc_data: 0x1e10
-   __DATA.__data: 0x1220
--  __DATA.__bss: 0x620
-+  __DATA.__bss: 0x640
-   __DATA.__common: 0x4
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3551
 -  Symbols:   710
 -  CStrings:  5832
 +  Functions: 3605
 +  Symbols:   709
 +  CStrings:  5898
- 
 Symbols:
 - ___memcpy_chk
 CStrings:

@@ -2,9 +2,14 @@
 
 > `/System/Library/PrivateFrameworks/Recon3D.framework/Reconstruction_Gpu_Archive.metallib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__compute` | `0x2b3f0` | `0x2b3e0` | **`-0x10`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__fragment`
 - `__TEXT.__reflection`
 - `__TEXT.__vertex`
-- `__TEXT.__fragment`
-- `__TEXT.__compute`

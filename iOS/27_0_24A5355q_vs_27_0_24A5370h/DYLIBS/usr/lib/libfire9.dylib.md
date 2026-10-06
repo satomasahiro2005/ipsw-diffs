@@ -2,50 +2,33 @@
 
 > `/usr/lib/libfire9.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2fc6dc` | `0x2fe12c` | **`+0x1a50`** |
+| `__TEXT.__const` | `0x9e7b8` | `0x9ef78` | **`+0x7c0`** |
+| `__TEXT.__cstring` | `0x1b59d` | `0x1b666` | **`+0xc9`** |
+| `__TEXT.__oslogstring` | `0x1928a` | `0x19248` | **`-0x42`** |
+| `__AUTH_CONST.__const` | `0xf750` | `0xf730` | **`-0x20`** |
+| `__DATA.__bss` | `0x26f8` | `0x26d8` | **`-0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x230` | `0x228` | **`-0x8`** |
+| `__DATA_CONST.__const` | `0xa9d8` | `0xa9e0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -21.0.0.0.0
--  __TEXT.__text: 0x2fc6dc sha256:d91f8a4752c9e1e376fb049f14167115eaa141ced581e3b77a3f18174ea5e381
--  __TEXT.__const: 0x9e7b8 sha256:c84b80ed69048fd381a47d829d4af3f3580e58fc554192a0fcc3bf8e4ef00545
--  __TEXT.__cstring: 0x1b59d sha256:d873ed7d521e50a28c0e366dddc0893ec6155c3b22e70c59d67d5f70c29faab5
--  __TEXT.__oslogstring: 0x1928a sha256:d96e842107ef270e21b191f689904c04a3b712596e2b9f92e9f4a1f239b242ca
 +24.0.0.0.0
-+  __TEXT.__text: 0x2fe12c sha256:c416ca91b8bd293a1d6607d32f56175e836555227f19a4e26db5110b9c6b35d1
-+  __TEXT.__const: 0x9ef78 sha256:d8cf3513e921f7c1f8a24078667c13d7657733535157dda2b4fbd8aefd6f8011
-+  __TEXT.__cstring: 0x1b666 sha256:1bc41c27f4be058ea1f75799204362d8dadd4913cde3a527b15e14e47210159d
-+  __TEXT.__oslogstring: 0x19248 sha256:ce1150538499f337db5ea5329c7e620392488fea89252c2c4c850356f84ebb24
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0xa9d8 sha256:691ae8b315b18a17ac60f94d5c498a0ec1eafcf75841a7f764ea5c457516e78b
-+  __DATA_CONST.__const: 0xa9e0 sha256:f9c53efd0c18c291b4f5f43103b7794ed85d946eacc5218bdfad79bfdbb7b00d
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xf750 sha256:3a3c30a4da9cf1e6ea304ccda341d19f2f46b30604bcb78bacf004a7b79bf56f
--  __AUTH_CONST.__weak_auth_got: 0x20 sha256:c87c19d7ba42e5bbf0e608b46e0dd93639090aa87d01192eb01f5f98038a4d64
--  __AUTH_CONST.__auth_got: 0x230 sha256:738c079dff6c9b77a0891ac42db1cabcab933a672b14aed8ecfcf94c0e77bb40
--  __DATA.__data: 0x148 sha256:7f646b23d0f986f6696eae36f91b660e04282168e676c0dfe1cf8b57220abfd7
-+  __AUTH_CONST.__const: 0xf730 sha256:d3c86e73cab5ebe5de8b9d0f15eeacab613538c47af4872b9323fa8e1caa026c
-+  __AUTH_CONST.__weak_auth_got: 0x20 sha256:58742810458caa552b3fb988e5da13c8d943641db81f532cec551aa49fc39778
-+  __AUTH_CONST.__auth_got: 0x228 sha256:0345bffb28f80f4d0ded1a2af09a337b18ab3a80c68205bc8321a6ad4d409500
-+  __DATA.__data: 0x148 sha256:f6cdafd1e0037cb578075ff05262c5b28b758dc1f5132a6d9ee7c49a2461a507
-   __DATA.__common: 0x640 sha256:e61f41d57db208c5f92a35c4ce7198570924a3fc87eeba83441fceee5d6a2865
--  __DATA.__bss: 0x26f8 sha256:ab2071149f93aeaeb22f14de686b05b5537dff70babae07e96090ea2e0941bf6
-+  __DATA.__bss: 0x26d8 sha256:f037e67f3071ae685f67610c0e2f33ab44cee8e7ccd2b32eabcf85ad47e92e04
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
--  UUID: 2B9796C1-FB91-326E-A72C-C3A80E50172C
+
 -  Functions: 7594
--  Symbols:   16933
--  CStrings:  5137
-+  UUID: 193DA30C-9EE3-3E6B-A6B6-DE1094348757
+-  Symbols:   8827
+-  CStrings:  5129
 +  Functions: 7591
-+  Symbols:   16923
-+  CStrings:  5143
- 
++  Symbols:   8823
++  CStrings:  5125
 Symbols:
-+ _.str.183
-+ _.str.185
-+ _.str.386
-+ _.str.387
-+ _.str.388
 + __ZN18FireMessageHandler33setConfigEnableGnssConstellationsEj
 + __ZN7BlueFin10GlDineCtrl20SetSupportedFeaturesERKNS_8GlSetDimILt64EEE
 + __ZN7BlueFin10GlDineCtrl23ChipData_GRABSNQ_667335EPvs
@@ -195,11 +178,6 @@ Symbols:
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeIN18FireMessageHandler7RequestEPN7BlueFin9GlRequestEEENS_22__unordered_map_hasherIS3_NS_4pairIKS3_S6_EENS_4hashIS3_EENS_8equal_toIS3_EEEENS_21__unordered_map_equalIS3_SB_SF_SD_EENS_9allocatorISB_EEE16__emplace_uniqueB9fqn220106IJRKNS_21piecewise_construct_tENS_5tupleIJRSA_EEENSQ_IJEEEEEENS9_INS_15__hash_iteratorIPNS_11__hash_nodeIS7_PvEEEEbEEDpOT_ENKUlSR_SP_OSS_OST_E_clESR_SP_S14_S15_
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeIN4gnss16SvPositionSourceENS_6vectorIhNS_9allocatorIhEEEEEENS_22__unordered_map_hasherIS3_NS_4pairIKS3_S7_EENS_4hashIS3_EENS_8equal_toIS3_EEEENS_21__unordered_map_equalIS3_SC_SG_SE_EENS5_ISC_EEE16__emplace_uniqueB9fqn220106IJRKNS_21piecewise_construct_tENS_5tupleIJRSB_EEENSQ_IJEEEEEENSA_INS_15__hash_iteratorIPNS_11__hash_nodeIS8_PvEEEEbEEDpOT_ENKUlSR_SP_OSS_OST_E_clESR_SP_S14_S15_
 + ___func__._ZN7BlueFin15GlEngineImplStd23ChipData_GRABSNQ_667335EPvs
-- _.str.182
-- _.str.184
-- _.str.383
-- _.str.384
-- _.str.385
 - __ZN13FireDeviceLog13DeviceLogBaseEN7GnssHal8LogLevelEPKcz
 - __ZN13FireDeviceLog14GetLineLeadingEcN7GnssHal8LogLevelE
 - __ZN13FireDeviceLog20DeviceLogLevelToCharEN7GnssHal8LogLevelE
@@ -388,5 +366,4 @@ CStrings:
 - "esw_gll_patch_generator.py:://depot/client/core/rel/Olympic/OSX_20.28.658483.v9.0/proprietary/deliverables/esw5_dev:LOX_A8@$Change: 665135 $"
 - "esw_gll_patch_generator.py:://depot/client/core/rel/Olympic/OSX_20.28.658483.v9.0/proprietary/deliverables/esw5_dev:LOX_B0@$Change: 665135 $"
 - "esw_gll_patch_generator.py:://depot/client/core/rel/Olympic/OSX_20.28.658483.v9.0/proprietary/deliverables/esw5_dev:LOX_FE@$Change: 665135 $"
-
 ```

@@ -2,89 +2,57 @@
 
 > `/Applications/AdaptiveMusicApp.app/AdaptiveMusicApp`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2f208` | `0x2ce78` | **`-0x2390`** |
+| `__DATA.__bss` | `0xf50` | `0xfe0` | **`+0x90`** |
+| `__TEXT.__const` | `0x1904` | `0x1964` | **`+0x60`** |
+| `__TEXT.__cstring` | `0x4f2` | `0x4b2` | **`-0x40`** |
+| `__TEXT.__swift5_typeref` | `0x2566` | `0x2544` | **`-0x22`** |
+| `__DATA_CONST.__const` | `0xe78` | `0xe98` | **`+0x20`** |
+| `__TEXT.__auth_stubs` | `0x1c90` | `0x1cb0` | **`+0x20`** |
+| `__DATA_CONST.__auth_ptr` | `0x6d0` | `0x6e8` | **`+0x18`** |
+| `__TEXT.__constg_swiftt` | `0x994` | `0x9ac` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x1c0` | `0x1d8` | **`+0x18`** |
+| `__DATA_CONST.__auth_got` | `0xe50` | `0xe60` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x688` | `0x690` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x928` | `0x930` | **`+0x8`** |
+| `__TEXT.__swift5_fieldmd` | `0x4f4` | `0x4f8` | **`+0x4`** |
+| `__TEXT.__swift5_proto` | `0x74` | `0x78` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0x68` | `0x6c` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__objc_classlist`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_reflstr`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2f208
--  __TEXT.__auth_stubs: 0x1c90
-+  __TEXT.__text: 0x2ce78
-+  __TEXT.__auth_stubs: 0x1cb0
-   __TEXT.__objc_stubs: 0x200
--  __TEXT.__const: 0x1904
--  __TEXT.__swift5_typeref: 0x2566
--  __TEXT.__swift5_fieldmd: 0x4f4
--  __TEXT.__constg_swiftt: 0x994
-+  __TEXT.__const: 0x1964
-+  __TEXT.__swift5_typeref: 0x2544
-+  __TEXT.__swift5_fieldmd: 0x4f8
-+  __TEXT.__constg_swiftt: 0x9ac
-   __TEXT.__objc_classname: 0x170
-   __TEXT.__objc_methname: 0x31d
-   __TEXT.__swift5_reflstr: 0x508
-   __TEXT.__swift5_capture: 0x33c
-   __TEXT.__swift5_builtin: 0x28
--  __TEXT.__swift5_assocty: 0x1c0
-+  __TEXT.__swift5_assocty: 0x1d8
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__swift5_proto: 0x74
--  __TEXT.__swift5_types: 0x68
-+  __TEXT.__swift5_proto: 0x78
-+  __TEXT.__swift5_types: 0x6c
-   __TEXT.__swift_as_entry: 0x40
-   __TEXT.__swift_as_ret: 0x44
-   __TEXT.__swift_as_cont: 0xcc
--  __TEXT.__cstring: 0x4f2
-+  __TEXT.__cstring: 0x4b2
-   __TEXT.__oslogstring: 0x3ce
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__objc_methtype: 0x64
--  __TEXT.__unwind_info: 0x928
-+  __TEXT.__unwind_info: 0x930
-   __TEXT.__eh_frame: 0xdb0
--  __DATA_CONST.__const: 0xe78
-+  __DATA_CONST.__const: 0xe98
-   __DATA_CONST.__objc_classlist: 0x38
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0xe50
--  __DATA_CONST.__got: 0x688
--  __DATA_CONST.__auth_ptr: 0x6d0
-+  __DATA_CONST.__auth_got: 0xe60
-+  __DATA_CONST.__got: 0x690
-+  __DATA_CONST.__auth_ptr: 0x6e8
-   __DATA.__objc_const: 0x5e0
-   __DATA.__objc_selrefs: 0x80
-   __DATA.__objc_data: 0x140
-   __DATA.__data: 0x1500
--  __DATA.__bss: 0xf50
-+  __DATA.__bss: 0xfe0
-   __DATA.__common: 0x18
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVKit.framework/AVKit
+-27.0.2.0.0
++27.0.3.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 730
 -  Symbols:   854
 -  CStrings:  86
 +  Functions: 723
 +  Symbols:   861
 +  CStrings:  85
- 
-Sections:
-~ __TEXT.__swift5_reflstr : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_entry : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
 Symbols:
 + _$s5Value7SwiftUI14EnvironmentKeyPTl
 + _$s7SwiftUI14EnvironmentKeyMp
@@ -109,5 +77,4 @@ Symbols:
 - _swift_getOpaqueTypeMetadata2
 CStrings:
 - "Ambient-Player-View-Artwork-Image-CompactSizeClasses"
-
 ```

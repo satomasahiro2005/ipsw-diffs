@@ -2,60 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/MailSearchSchemaManifest.framework/MailSearchSchemaManifest`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xec9c` | `0xef50` | **`+0x2b4`** |
+| `__DATA.__bss` | `0x3280` | `0x3380` | **`+0x100`** |
+| `__TEXT.__cstring` | `0x22d2` | `0x23d2` | **`+0x100`** |
+| `__AUTH_CONST.__const` | `0x10cc` | `0x11b4` | **`+0xe8`** |
+| `__TEXT.__const` | `0x259a` | `0x264a` | **`+0xb0`** |
+| `__TEXT.__constg_swiftt` | `0x6ec` | `0x708` | **`+0x1c`** |
+| `__TEXT.__swift5_assocty` | `0x4e0` | `0x4f8` | **`+0x18`** |
+| `__DATA.__data` | `0x5a8` | `0x5b8` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x350` | `0x360` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x205` | `0x215` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x498` | `0x4a8` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0x426` | `0x434` | **`+0xe`** |
+| `__TEXT.__swift5_proto` | `0x194` | `0x19c` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0xd0` | `0xd4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xec9c
--  __TEXT.__const: 0x259a
--  __TEXT.__constg_swiftt: 0x6ec
--  __TEXT.__swift5_typeref: 0x426
--  __TEXT.__swift5_fieldmd: 0x350
--  __TEXT.__swift5_reflstr: 0x205
--  __TEXT.__swift5_assocty: 0x4e0
--  __TEXT.__cstring: 0x22d2
--  __TEXT.__swift5_proto: 0x194
--  __TEXT.__swift5_types: 0xd0
-+  __TEXT.__text: 0xef50
-+  __TEXT.__const: 0x264a
-+  __TEXT.__constg_swiftt: 0x708
-+  __TEXT.__swift5_typeref: 0x434
-+  __TEXT.__swift5_fieldmd: 0x360
-+  __TEXT.__swift5_reflstr: 0x215
-+  __TEXT.__swift5_assocty: 0x4f8
-+  __TEXT.__cstring: 0x23d2
-+  __TEXT.__swift5_proto: 0x19c
-+  __TEXT.__swift5_types: 0xd4
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0x498
-+  __TEXT.__unwind_info: 0x4a8
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x10cc
-+  __AUTH_CONST.__const: 0x11b4
-   __AUTH_CONST.__auth_got: 0x168
-   __AUTH.__data: 0x50
--  __DATA.__data: 0x5a8
--  __DATA.__bss: 0x3280
-+  __DATA.__data: 0x5b8
-+  __DATA.__bss: 0x3380
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/Dendrite.framework/Dendrite
-   - /System/Library/PrivateFrameworks/PoirotSchematizer.framework/PoirotSchematizer
+-2.0.6.0.0
++2.0.8.0.0
 
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 455
--  Symbols:   172
+-  Symbols:   168
 -  CStrings:  226
 +  Functions: 463
-+  Symbols:   174
++  Symbols:   170
 +  CStrings:  234
- 
-Sections:
-~ __TEXT.__swift5_protos : content changed
-~ __AUTH.__data : content changed
 Symbols:
 + _associated conformance 24MailSearchSchemaManifest015DevicePlatform_D0O17PoirotSchematizer04EnumD12ConstructingAaD0cdJ0
 + _symbolic _____ 24MailSearchSchemaManifest015DevicePlatform_D0O
@@ -68,5 +46,4 @@ CStrings:
 + "DEVICE_PLATFORM_VISIONOS"
 + "DEVICE_PLATFORM_WATCHOS"
 + "apple.common.DevicePlatform"
-
 ```

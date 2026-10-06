@@ -2,20 +2,14 @@
 
 > `/System/Library/Frameworks/CoreImage.framework/ubershader_archive_bin.metallib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__reflection`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__compute` | `0x65540` | `0x66080` | **`+0xb40`** |
+| `__TEXT.__metallib` | `0xb4a30` | `0xb4b70` | **`+0x140`** |
+
+### Same-size Content Changes
+
 - `__TEXT.__descriptor`
-
-```diff
-
-   __TEXT.__reflection: 0x1d880
--  __TEXT.__compute: 0x63380
-+  __TEXT.__compute: 0x64050
-   __TEXT.__descriptor: 0x2d00
--  __TEXT.__metallib: 0xb4a30
-+  __TEXT.__metallib: 0xb4b70
-   Functions: 0
-   Symbols:   0
-   CStrings:  0
-```
+- `__TEXT.__reflection`

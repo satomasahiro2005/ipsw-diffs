@@ -2,78 +2,52 @@
 
 > `/Applications/MailCompositionService.app/MailCompositionService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__objc_const` | `0x17c8` | `0x1788` | **`-0x40`** |
+| `__TEXT.__text` | `0x9d84` | `0x9d54` | **`-0x30`** |
+| `__DATA_CONST.__cfstring` | `0x2e0` | `0x300` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x3f8` | `0x418` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x1014` | `0x1034` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x6e0` | `0x700` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x334` | `0x34f` | **`+0x1b`** |
+| `__TEXT.__objc_methname` | `0x385e` | `0x3874` | **`+0x16`** |
+| `__DATA.__bss` | `0x28` | `0x38` | **`+0x10`** |
+| `__TEXT.__auth_stubs` | `0x500` | `0x510` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x1788` | `0x1778` | **`-0x10`** |
+| `__TEXT.__objc_methtype` | `0xeb2` | `0xebd` | **`+0xb`** |
+| `__DATA.__objc_ivar` | `0xd8` | `0xd0` | **`-0x8`** |
+| `__DATA.__objc_selrefs` | `0xff0` | `0xff8` | **`+0x8`** |
+| `__DATA_CONST.__auth_got` | `0x290` | `0x298` | **`+0x8`** |
+| `__TEXT.__const` | `0x5c` | `0x60` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_superrefs`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x9d84
--  __TEXT.__auth_stubs: 0x500
-+  __TEXT.__text: 0x9d54
-+  __TEXT.__auth_stubs: 0x510
-   __TEXT.__objc_stubs: 0x2d20
--  __TEXT.__objc_methlist: 0x1014
--  __TEXT.__const: 0x5c
--  __TEXT.__gcc_except_tab: 0x1788
--  __TEXT.__cstring: 0x334
--  __TEXT.__objc_methname: 0x385e
-+  __TEXT.__objc_methlist: 0x1034
-+  __TEXT.__const: 0x60
-+  __TEXT.__gcc_except_tab: 0x1778
-+  __TEXT.__cstring: 0x34f
-+  __TEXT.__objc_methname: 0x3874
-   __TEXT.__objc_classname: 0x2ec
--  __TEXT.__objc_methtype: 0xeb2
-+  __TEXT.__objc_methtype: 0xebd
-   __TEXT.__oslogstring: 0x40b
-   __TEXT.__dlopen_cstrs: 0x50
--  __TEXT.__unwind_info: 0x6e0
--  __DATA_CONST.__const: 0x3f8
--  __DATA_CONST.__cfstring: 0x2e0
-+  __TEXT.__unwind_info: 0x700
-+  __DATA_CONST.__const: 0x418
-+  __DATA_CONST.__cfstring: 0x300
-   __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
+-3893.100.7.0.0
++3895.100.17.2.1
 
-   __DATA_CONST.__objc_doubleobj: 0x20
-   __DATA_CONST.__objc_arraydata: 0x18
-   __DATA_CONST.__objc_arrayobj: 0x18
--  __DATA_CONST.__auth_got: 0x290
-+  __DATA_CONST.__auth_got: 0x298
-   __DATA_CONST.__got: 0x270
--  __DATA.__objc_const: 0x17c8
--  __DATA.__objc_selrefs: 0xff0
--  __DATA.__objc_ivar: 0xd8
-+  __DATA.__objc_const: 0x1788
-+  __DATA.__objc_selrefs: 0xff8
-+  __DATA.__objc_ivar: 0xd0
-   __DATA.__objc_data: 0x370
-   __DATA.__data: 0x660
--  __DATA.__bss: 0x28
-+  __DATA.__bss: 0x38
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 262
 -  Symbols:   176
--  CStrings:  855
+-  CStrings:  833
 +  Functions: 267
 +  Symbols:   177
-+  CStrings:  857
- 
-Sections:
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
++  CStrings:  834
 Symbols:
 + _NSClassFromString
 CStrings:
@@ -90,5 +64,4 @@ CStrings:
 - "layoutIfNeeded"
 - "layoutMargins"
 - "safeAreaInsets"
-
 ```

@@ -2,108 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/CKSharingManagementDaemon.framework/CKSharingManagementDaemon`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_protos`
-- `__DATA_CONST.__objc_classlist`
-- `__AUTH.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8bee0` | `0x8f174` | **`+0x3294`** |
+| `__TEXT.__eh_frame` | `0x7778` | `0x7ae4` | **`+0x36c`** |
+| `__TEXT.__oslogstring` | `0x2d61` | `0x2e51` | **`+0xf0`** |
+| `__TEXT.__unwind_info` | `0x28d0` | `0x2990` | **`+0xc0`** |
+| `__TEXT.__swift5_typeref` | `0x1d10` | `0x1dbe` | **`+0xae`** |
+| `__DATA.__data` | `0x1700` | `0x1658` | **`-0xa8`** |
+| `__AUTH_CONST.__auth_got` | `0x1030` | `0x10a0` | **`+0x70`** |
+| `__TEXT.__objc_methlist` | `0x3ac` | `0x364` | **`-0x48`** |
+| `__AUTH_CONST.__objc_const` | `0xd78` | `0xd38` | **`-0x40`** |
+| `__TEXT.__swift5_reflstr` | `0x1225` | `0x1265` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0x3590` | `0x35c0` | **`+0x30`** |
+| `__TEXT.__cstring` | `0xaf6` | `0xb26` | **`+0x30`** |
+| `__TEXT.__swift_as_cont` | `0x548` | `0x578` | **`+0x30`** |
+| `__DATA_CONST.__objc_protolist` | `0x80` | `0x60` | **`-0x20`** |
+| `__TEXT.__swift5_capture` | `0x5ac` | `0x5c4` | **`+0x18`** |
+| `__TEXT.__swift5_fieldmd` | `0x17d4` | `0x17ec` | **`+0x18`** |
+| `__TEXT.__swift_as_ret` | `0x2cc` | `0x2e4` | **`+0x18`** |
+| `__AUTH.__data` | `0x1318` | `0x1328` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x40` | `0x30` | **`-0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x588` | `0x598` | **`+0x10`** |
+| `__TEXT.__const` | `0x61e0` | `0x61f0` | **`+0x10`** |
+| `__TEXT.__constg_swiftt` | `0x1858` | `0x1868` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x22c` | `0x238` | **`+0xc`** |
+| `__DATA_CONST.__const` | `0x148` | `0x150` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x6c0` | `0x6c8` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -22.1.0.0.0
--  __TEXT.__text: 0x8bee0
--  __TEXT.__objc_methlist: 0x3ac
--  __TEXT.__const: 0x61e0
--  __TEXT.__cstring: 0xaf6
--  __TEXT.__swift5_typeref: 0x1d10
--  __TEXT.__swift5_capture: 0x5ac
--  __TEXT.__constg_swiftt: 0x1858
--  __TEXT.__swift5_reflstr: 0x1225
--  __TEXT.__swift5_fieldmd: 0x17d4
 +23.0.0.0.0
-+  __TEXT.__text: 0x8f174
-+  __TEXT.__objc_methlist: 0x364
-+  __TEXT.__const: 0x61f0
-+  __TEXT.__cstring: 0xb26
-+  __TEXT.__swift5_typeref: 0x1dbe
-+  __TEXT.__swift5_capture: 0x5c4
-+  __TEXT.__constg_swiftt: 0x1868
-+  __TEXT.__swift5_reflstr: 0x1265
-+  __TEXT.__swift5_fieldmd: 0x17ec
-   __TEXT.__swift5_assocty: 0x300
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_proto: 0x4b0
-   __TEXT.__swift5_types: 0x1d0
-   __TEXT.__swift5_protos: 0x60
--  __TEXT.__swift_as_entry: 0x22c
--  __TEXT.__swift_as_ret: 0x2cc
--  __TEXT.__swift_as_cont: 0x548
--  __TEXT.__oslogstring: 0x2d61
--  __TEXT.__unwind_info: 0x28d0
--  __TEXT.__eh_frame: 0x7778
-+  __TEXT.__swift_as_entry: 0x238
-+  __TEXT.__swift_as_ret: 0x2e4
-+  __TEXT.__swift_as_cont: 0x578
-+  __TEXT.__oslogstring: 0x2e51
-+  __TEXT.__unwind_info: 0x2990
-+  __TEXT.__eh_frame: 0x7ae4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x148
-+  __DATA_CONST.__const: 0x150
-   __DATA_CONST.__objc_classlist: 0x58
--  __DATA_CONST.__objc_protolist: 0x80
-+  __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x588
--  __DATA_CONST.__objc_protorefs: 0x40
--  __DATA_CONST.__got: 0x6c0
--  __AUTH_CONST.__const: 0x3590
--  __AUTH_CONST.__objc_const: 0xd78
--  __AUTH_CONST.__auth_got: 0x1030
-+  __DATA_CONST.__objc_selrefs: 0x598
-+  __DATA_CONST.__objc_protorefs: 0x30
-+  __DATA_CONST.__got: 0x6c8
-+  __AUTH_CONST.__const: 0x35c0
-+  __AUTH_CONST.__objc_const: 0xd38
-+  __AUTH_CONST.__auth_got: 0x10a0
-   __AUTH.__objc_data: 0x238
--  __AUTH.__data: 0x1318
--  __DATA.__data: 0x1700
-+  __AUTH.__data: 0x1328
-+  __DATA.__data: 0x1658
-   __DATA.__bss: 0x8980
-   __DATA.__common: 0x30
 +  - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
 +  - /usr/lib/swift/libswiftCoreAudio.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftCoreLocation.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 2616
--  Symbols:   1061
+-  Symbols:   945
 -  CStrings:  241
 +  Functions: 2654
-+  Symbols:   1063
++  Symbols:   942
 +  CStrings:  242
- 
 Symbols:
 + _IDSCopyBestGuessIDForID
 + _IDSSendMessageOptionFromIDKey
@@ -113,12 +57,6 @@ Symbols:
 + ___swift_memcpy18_8
 + __swift_FORCE_LOAD_$_swiftCoreAudio
 + __swift_FORCE_LOAD_$_swiftCoreAudio_$_CKSharingManagementDaemon
-+ _objc_msgSend$aa_primaryAppleAccount
-+ _objc_msgSend$accountPropertyForKey:
-+ _objc_msgSend$currentUserParticipant
-+ _objc_msgSend$defaultStore
-+ _objc_msgSend$name
-+ _objc_msgSend$sendInvitationToDestination:expirationDate:context:options:serverAcknowledgedBlock:
 + _symbolic SDySo24CKUserIdentityLookupInfoCSo18CKShareParticipantCG
 + _symbolic _____ 18AAAFoundationSwift13OSTransactionC
 + _symbolic _____ySo24CKUserIdentityLookupInfoCG s11_SetStorageC
@@ -139,7 +77,6 @@ Symbols:
 - ___swift_closure_destructor.16Tm
 - ___swift_project_boxed_opaque_existential_1Tm
 - _flat unique So22IDSDestinationProtocol_p
-- _objc_msgSend$sendInvitationToDestination:expirationDate:context:serverAcknowledgedBlock:
 - _symbolic _____Sg_ABt 10Foundation3URLV
 - _symbolic ______SHpSg 25CKSharingManagementDaemon28IDSPendingInvitationProtocolP
 - _symbolic ______p So22IDSDestinationProtocolP

@@ -2,40 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/IOMobileFramebuffer.framework/IOMobileFramebuffer`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__weak_got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__weak_auth_got`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3b328` | `0x3b530` | **`+0x208`** |
+| `__TEXT.__cstring` | `0x96dc` | `0x9757` | **`+0x7b`** |
+| `__TEXT.__unwind_info` | `0x928` | `0x930` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -700.50.80.0.0
--  __TEXT.__text: 0x3b328
 +700.50.85.0.0
-+  __TEXT.__text: 0x3b530
-   __TEXT.__gcc_except_tab: 0x234
-   __TEXT.__const: 0x1b04
--  __TEXT.__cstring: 0x96dc
--  __TEXT.__unwind_info: 0x928
-+  __TEXT.__cstring: 0x9757
-+  __TEXT.__unwind_info: 0x930
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0xb8
-   __DATA_CONST.__weak_got: 0x10
 
-   - /System/Library/Frameworks/IOSurface.framework/IOSurface
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 919
 -  Symbols:   1091
 -  CStrings:  952
 +  Functions: 925
 +  Symbols:   1097
 +  CStrings:  955
- 
 Symbols:
 + _AppleDisplayManagerRearrange
 + _AppleDisplayManagerReconfigComplete

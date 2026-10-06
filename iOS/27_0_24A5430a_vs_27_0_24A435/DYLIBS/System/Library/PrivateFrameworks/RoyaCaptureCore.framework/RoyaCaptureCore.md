@@ -2,18 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/RoyaCaptureCore.framework/RoyaCaptureCore`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x855f0` | `0x85620` | **`+0x30`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
 
-```diff
+### Other Changes
 
- 47.0.1.0.1
--  __TEXT.__text: 0x855f0
-+  __TEXT.__text: 0x85620
-   __TEXT.__objc_methlist: 0xe2c
-   __TEXT.__const: 0x2fd9
-   __TEXT.__gcc_except_tab: 0xacd8
+```diff
 Functions:
 ~ __ZN4roya11SessionBase11AddPipelineENSt3__117basic_string_viewIcNS1_11char_traitsIcEEEENS1_10unique_ptrINS_15PipelineContextENS1_14default_deleteIS7_EEEENS1_10shared_ptrINS_4NodeEEE : 2452 -> 2456
 ~ __ZNSt3__15dequeINS_10shared_ptrIN4roya4NodeEEENS_9allocatorIS4_EEED2B9fqe220106Ev : 316 -> 328

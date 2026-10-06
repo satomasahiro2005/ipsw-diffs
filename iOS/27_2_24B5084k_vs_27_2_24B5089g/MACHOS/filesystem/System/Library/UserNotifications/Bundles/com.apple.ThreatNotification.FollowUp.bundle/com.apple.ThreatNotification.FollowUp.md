@@ -2,15 +2,14 @@
 
 > `/System/Library/UserNotifications/Bundles/com.apple.ThreatNotification.FollowUp.bundle/com.apple.ThreatNotification.FollowUp`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -2027.1.2.0.0
 +2027.1.3.0.0
-   __TEXT.__text: 0x0
-   __TEXT.__const: 0x60
-   - /usr/lib/libSystem.B.dylib
 ```

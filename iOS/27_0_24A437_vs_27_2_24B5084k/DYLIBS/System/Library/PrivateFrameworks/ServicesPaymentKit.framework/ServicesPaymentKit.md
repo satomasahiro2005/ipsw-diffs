@@ -2,104 +2,62 @@
 
 > `/System/Library/PrivateFrameworks/ServicesPaymentKit.framework/ServicesPaymentKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x157a4` | `0x28448` | **`+0x12ca4`** |
+| `__TEXT.__eh_frame` | `0xad8` | `0x1430` | **`+0x958`** |
+| `__AUTH_CONST.__const` | `0xe28` | `0x16d0` | **`+0x8a8`** |
+| `__AUTH.__objc_data` | `0x2f0` | `0xb60` | **`+0x870`** |
+| `__TEXT.__const` | `0x7d0` | `0xf04` | **`+0x734`** |
+| `__TEXT.__oslogstring` | `0xa96` | `0xfe6` | **`+0x550`** |
+| `__AUTH_CONST.__objc_const` | `0x1a48` | `0x1500` | **`-0x548`** |
+| `__DATA.__bss` | `0x100` | `0x600` | **`+0x500`** |
+| `__TEXT.__unwind_info` | `0x7a8` | `0xc78` | **`+0x4d0`** |
+| `__TEXT.__cstring` | `0x3b8` | `0x853` | **`+0x49b`** |
+| `__TEXT.__constg_swiftt` | `0x684` | `0xa2c` | **`+0x3a8`** |
+| `__TEXT.__swift5_capture` | `0x5cc` | `0x908` | **`+0x33c`** |
+| `__TEXT.__swift5_typeref` | `0x6b9` | `0x8f5` | **`+0x23c`** |
+| `__TEXT.__objc_methlist` | `0x5d4` | `0x7cc` | **`+0x1f8`** |
+| `__TEXT.__swift5_fieldmd` | `0x3d8` | `0x5d0` | **`+0x1f8`** |
+| `__AUTH_CONST.__auth_got` | `0x5c0` | `0x778` | **`+0x1b8`** |
+| `__DATA.__data` | `0x328` | `0x4d8` | **`+0x1b0`** |
+| `__TEXT.__swift5_reflstr` | `0x6d1` | `0x853` | **`+0x182`** |
+| `__DATA_CONST.__const` | `0x208` | `0x2f8` | **`+0xf0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x420` | `0x4b8` | **`+0x98`** |
+| `__DATA.__common` | `0x30` | `0x90` | **`+0x60`** |
+| `__TEXT.__swift_as_cont` | `0x2c` | `0x80` | **`+0x54`** |
+| `__TEXT.__swift_as_entry` | `0x5c` | `0x98` | **`+0x3c`** |
+| `__AUTH.__data` | `0x228` | `0x1f8` | **`-0x30`** |
+| `__TEXT.__swift5_proto` | `0x8` | `0x34` | **`+0x2c`** |
+| `__DATA_CONST.__objc_classlist` | `0x48` | `0x70` | **`+0x28`** |
+| `__TEXT.__swift_as_ret` | `0x5c` | `0x84` | **`+0x28`** |
+| `__DATA_DIRTY.__common` | `0xf8` | `0xd8` | **`-0x20`** |
+| `__TEXT.__swift5_types` | `0x28` | `0x48` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x10` | `0x2c` | **`+0x1c`** |
+| `__DATA_DIRTY.__objc_data` | `0x5f8` | `0x5e0` | **`-0x18`** |
+| `__TEXT.__swift5_assocty` | `—` | `0x18` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `—` | `0x14` | **`+0x14`** |
+| `__DATA_CONST.__objc_superrefs` | `0x8` | `0x10` | **`+0x8`** |
+| `__DATA_DIRTY.__data` | `0x418` | `0x420` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `—` | `0x4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1.0.31.0.0
--  __TEXT.__text: 0x145c8
--  __TEXT.__objc_methlist: 0x5d4
--  __TEXT.__const: 0x7d0
 +1.1.10.0.0
-+  __TEXT.__text: 0x26520
-+  __TEXT.__objc_methlist: 0x7cc
-+  __TEXT.__const: 0xf04
-   __TEXT.__gcc_except_tab: 0x84
--  __TEXT.__cstring: 0x3b8
--  __TEXT.__swift5_typeref: 0x6b9
--  __TEXT.__swift5_fieldmd: 0x3d8
--  __TEXT.__constg_swiftt: 0x684
--  __TEXT.__swift5_reflstr: 0x6d1
--  __TEXT.__swift5_proto: 0x8
--  __TEXT.__swift5_types: 0x28
--  __TEXT.__oslogstring: 0xa96
--  __TEXT.__swift5_capture: 0x5cc
--  __TEXT.__swift_as_entry: 0x5c
--  __TEXT.__swift_as_ret: 0x5c
--  __TEXT.__swift_as_cont: 0x2c
--  __TEXT.__unwind_info: 0x900
--  __TEXT.__eh_frame: 0xad8
-+  __TEXT.__cstring: 0x853
-+  __TEXT.__swift5_typeref: 0x8f5
-+  __TEXT.__constg_swiftt: 0xa2c
-+  __TEXT.__swift5_reflstr: 0x853
-+  __TEXT.__swift5_fieldmd: 0x5d0
-+  __TEXT.__swift5_builtin: 0x14
-+  __TEXT.__swift5_proto: 0x34
-+  __TEXT.__swift5_types: 0x48
-+  __TEXT.__oslogstring: 0xfe6
-+  __TEXT.__swift5_capture: 0x908
-+  __TEXT.__swift_as_entry: 0x98
-+  __TEXT.__swift_as_ret: 0x84
-+  __TEXT.__swift_as_cont: 0x80
-+  __TEXT.__swift5_protos: 0x4
-+  __TEXT.__swift5_assocty: 0x18
-+  __TEXT.__unwind_info: 0xef0
-+  __TEXT.__eh_frame: 0x1430
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x208
--  __DATA_CONST.__objc_classlist: 0x48
-+  __DATA_CONST.__const: 0x2f8
-+  __DATA_CONST.__objc_classlist: 0x70
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x420
-+  __DATA_CONST.__objc_selrefs: 0x4b8
-   __DATA_CONST.__objc_protorefs: 0x38
--  __DATA_CONST.__objc_superrefs: 0x8
-+  __DATA_CONST.__objc_superrefs: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xe28
--  __AUTH_CONST.__objc_const: 0x1a48
--  __AUTH_CONST.__auth_got: 0x5c0
--  __AUTH.__objc_data: 0x2f0
--  __AUTH.__data: 0x228
--  __DATA.__objc_ivar: 0x10
--  __DATA.__data: 0x328
--  __DATA.__common: 0x30
--  __DATA_DIRTY.__objc_data: 0x5f8
--  __DATA_DIRTY.__data: 0x418
--  __DATA_DIRTY.__common: 0xf8
-+  __AUTH_CONST.__const: 0x16d0
-+  __AUTH_CONST.__objc_const: 0x1500
-+  __AUTH_CONST.__auth_got: 0x778
-+  __AUTH.__objc_data: 0xb60
-+  __AUTH.__data: 0x1f8
-+  __DATA.__objc_ivar: 0x2c
-+  __DATA.__data: 0x4d8
-+  __DATA.__common: 0x90
-+  __DATA_DIRTY.__objc_data: 0x5e0
-+  __DATA_DIRTY.__data: 0x420
-+  __DATA_DIRTY.__common: 0xd8
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-+  - /System/Library/PrivateFrameworks/AppleMediaServices.framework/AppleMediaServices
-   - /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard
-   - /System/Library/PrivateFrameworks/BoardServices.framework/BoardServices
-   - /System/Library/PrivateFrameworks/PassKitCore.framework/PassKitCore
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/PrivateFrameworks/AppleMediaServices.framework/AppleMediaServices
+
 -  Functions: 692
--  Symbols:   1529
+-  Symbols:   1460
 -  CStrings:  79
 +  Functions: 1156
-+  Symbols:   2365
++  Symbols:   2280
 +  CStrings:  136
- 
 Symbols:
 + -[SPKSubscriptionInviteInterruption .cxx_destruct]
 + -[SPKSubscriptionInviteInterruption account]
@@ -941,22 +899,6 @@ Symbols:
 + _get_enum_tag_for_layout_string 10Foundation4DataVSg
 + _keypath_get.23Tm
 + _keypath_get.7Tm
-+ _objc_msgSend$ams_DSID
-+ _objc_msgSend$ams_altDSID
-+ _objc_msgSend$copy
-+ _objc_msgSend$dataWithJSONObject:options:error:
-+ _objc_msgSend$initWithDSID:altDSID:
-+ _objc_msgSend$initWithSubscriptionFamilyId:sceneIdentifier:
-+ _objc_msgSend$isMainThread
-+ _objc_msgSend$objectForKey:
-+ _objc_msgSend$presentInterruptionWithFlowIdentifier:requestData:requestorContextData:logKey:completion:
-+ _objc_msgSend$reactivateInterruptionWithFlowIdentifier:completion:
-+ _objc_msgSend$removeObjectForKey:
-+ _objc_msgSend$setAccount:
-+ _objc_msgSend$setClientData:
-+ _objc_msgSend$setObject:forKey:
-+ _objc_msgSend$setSceneIdentifier:
-+ _objc_msgSend$setSubscriptionInfo:
 + _objc_retainAutoreleaseReturnValue
 + _objc_retain_x24
 + _objc_retain_x25

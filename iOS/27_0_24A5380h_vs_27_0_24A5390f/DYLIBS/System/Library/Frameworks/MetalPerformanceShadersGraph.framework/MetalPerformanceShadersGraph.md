@@ -2,119 +2,38 @@
 
 > `/System/Library/Frameworks/MetalPerformanceShadersGraph.framework/MetalPerformanceShadersGraph`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__mpsgraph_init_`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__AUTH.__thread_vars`
-- `__DATA_DIRTY.__objc_ivar`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21a62f4` | `0x21a8134` | **`+0x1e40`** |
+| `__TEXT.__cstring` | `0xef052` | `0xef21e` | **`+0x1cc`** |
+| `__TEXT.__oslogstring` | `0x31b2` | `0x333a` | **`+0x188`** |
+| `__TEXT.__gcc_except_tab` | `0x136d80` | `0x136eb0` | **`+0x130`** |
+| `__AUTH_CONST.__const` | `0xa8ed0` | `0xa8f00` | **`+0x30`** |
+| `__TEXT.__const` | `0x6cbe8` | `0x6cbb8` | **`-0x30`** |
+| `__TEXT.__unwind_info` | `0x67080` | `0x670a8` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x14120` | `0x14100` | **`-0x20`** |
+| `__AUTH_CONST.__objc_const` | `0x127d8` | `0x127f8` | **`+0x20`** |
+| `__DATA.__data` | `0x76b8` | `0x76c8` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x84ac` | `0x84bc` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4660` | `0x4668` | **`+0x8`** |
+| `__DATA_DIRTY.__bss` | `0x1628` | `0x1630` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x26c` | `0x270` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -7.0.75.2.0
--  __TEXT.__text: 0x21a62f4
 +7.0.76.1.0
-+  __TEXT.__text: 0x21a8134
-   __TEXT.__mpsgraph_init_: 0x44
--  __TEXT.__objc_methlist: 0x84ac
--  __TEXT.__const: 0x6cbe8
--  __TEXT.__cstring: 0xef052
-+  __TEXT.__objc_methlist: 0x84bc
-+  __TEXT.__const: 0x6cbb8
-+  __TEXT.__cstring: 0xef21e
-   __TEXT.__swift5_typeref: 0x9d4
-   __TEXT.__swift5_capture: 0x370
--  __TEXT.__oslogstring: 0x31b2
-+  __TEXT.__oslogstring: 0x333a
-   __TEXT.__constg_swiftt: 0x4b0
-   __TEXT.__swift5_fieldmd: 0x4ec
-   __TEXT.__swift5_reflstr: 0x483
 
-   __TEXT.__swift_as_entry: 0x14
-   __TEXT.__swift_as_ret: 0x4
-   __TEXT.__swift_as_cont: 0x10
--  __TEXT.__gcc_except_tab: 0x136d80
-+  __TEXT.__gcc_except_tab: 0x136eb0
-   __TEXT.__ustring: 0x19c
--  __TEXT.__unwind_info: 0x67080
-+  __TEXT.__unwind_info: 0x670a8
-   __TEXT.__eh_frame: 0x13cc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_protolist: 0xa0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x4660
-+  __DATA_CONST.__objc_selrefs: 0x4668
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__objc_superrefs: 0x230
-   __DATA_CONST.__objc_arraydata: 0x19a8
-   __DATA_CONST.__got: 0xfd8
--  __AUTH_CONST.__const: 0xa8ed0
--  __AUTH_CONST.__cfstring: 0x14120
--  __AUTH_CONST.__objc_const: 0x127d8
-+  __AUTH_CONST.__const: 0xa8f00
-+  __AUTH_CONST.__cfstring: 0x14100
-+  __AUTH_CONST.__objc_const: 0x127f8
-   __AUTH_CONST.__weak_auth_got: 0x60
-   __AUTH_CONST.__objc_intobj: 0x738
-   __AUTH_CONST.__objc_arrayobj: 0x2430
-
-   __AUTH.__thread_vars: 0x168
-   __AUTH.__thread_data: 0x1
-   __AUTH.__thread_bss: 0x1b0
--  __DATA.__objc_ivar: 0x26c
--  __DATA.__data: 0x76b8
-+  __DATA.__objc_ivar: 0x270
-+  __DATA.__data: 0x76c8
-   __DATA.__crash_info: 0x148
-   __DATA.__bss: 0x27a8
-   __DATA.__common: 0x24e0
-   __DATA_DIRTY.__objc_ivar: 0xa3c
-   __DATA_DIRTY.__objc_data: 0x50
-   __DATA_DIRTY.__data: 0xf0
--  __DATA_DIRTY.__bss: 0x1628
-+  __DATA_DIRTY.__bss: 0x1630
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 104703
--  Symbols:   141815
+-  Symbols:   140263
 -  CStrings:  20945
 +  Functions: 104711
-+  Symbols:   141824
++  Symbols:   140272
 +  CStrings:  20952
- 
 Symbols:
 + -[MPSGraphExecutable leadingDevice]
 + GCC_except_table538

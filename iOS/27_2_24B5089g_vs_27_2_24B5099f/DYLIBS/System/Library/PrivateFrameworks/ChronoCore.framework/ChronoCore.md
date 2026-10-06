@@ -2,87 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/ChronoCore.framework/ChronoCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x43d40c` | `0x43dd00` | **`+0x8f4`** |
+| `__DATA.__bss` | `0x7bb0` | `0x7530` | **`-0x680`** |
+| `__DATA_DIRTY.__bss` | `0x99b0` | `0xa030` | **`+0x680`** |
+| `__DATA_DIRTY.__data` | `0x104f8` | `0x10808` | **`+0x310`** |
+| `__DATA.__data` | `0x3580` | `0x3370` | **`-0x210`** |
+| `__TEXT.__eh_frame` | `0xcb10` | `0xcc28` | **`+0x118`** |
+| `__AUTH.__data` | `0x1958` | `0x1858` | **`-0x100`** |
+| `__AUTH_CONST.__const` | `0x13b48` | `0x13ad8` | **`-0x70`** |
+| `__TEXT.__cstring` | `0x6e8b` | `0x6edb` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x7900` | `0x7938` | **`+0x38`** |
+| `__TEXT.__const` | `0x14a48` | `0x14a18` | **`-0x30`** |
+| `__TEXT.__swift5_typeref` | `0xc4e8` | `0xc4b8` | **`-0x30`** |
+| `__TEXT.__oslogstring` | `0x164e7` | `0x164c7` | **`-0x20`** |
+| `__DATA.__common` | `0xd0` | `0xc0` | **`-0x10`** |
+| `__DATA_DIRTY.__common` | `0x918` | `0x928` | **`+0x10`** |
+| `__TEXT.__constg_swiftt` | `0xbec4` | `0xbed4` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x5640` | `0x5634` | **`-0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x4590` | `0x4598` | **`+0x8`** |
+| `__DATA_DIRTY.__objc_data` | `0x3a08` | `0x3a10` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x368` | `0x360` | **`-0x8`** |
+| `__TEXT.__swift_as_ret` | `0x17c` | `0x178` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -749.2.7.0.0
--  __TEXT.__text: 0x41b02c
 +749.2.12.0.0
-+  __TEXT.__text: 0x41ba18
-   __TEXT.__objc_methlist: 0x1f28
--  __TEXT.__const: 0x14a48
--  __TEXT.__cstring: 0x6e8b
--  __TEXT.__oslogstring: 0x164e7
-+  __TEXT.__const: 0x14a18
-+  __TEXT.__cstring: 0x6edb
-+  __TEXT.__oslogstring: 0x164c7
-   __TEXT.__gcc_except_tab: 0x70
-   __TEXT.__dlopen_cstrs: 0x7a
--  __TEXT.__constg_swiftt: 0xbec4
--  __TEXT.__swift5_typeref: 0xc4e8
-+  __TEXT.__constg_swiftt: 0xbed4
-+  __TEXT.__swift5_typeref: 0xc4b8
-   __TEXT.__swift5_reflstr: 0xacdf
-   __TEXT.__swift5_fieldmd: 0x8098
-   __TEXT.__swift5_builtin: 0x1b8
 
-   __TEXT.__swift5_proto: 0xb6c
-   __TEXT.__swift5_types: 0x688
-   __TEXT.__swift5_protos: 0x230
--  __TEXT.__swift5_capture: 0x5640
-+  __TEXT.__swift5_capture: 0x5634
-   __TEXT.__swift_as_entry: 0x18c
--  __TEXT.__swift_as_ret: 0x17c
--  __TEXT.__swift_as_cont: 0x368
-+  __TEXT.__swift_as_ret: 0x178
-+  __TEXT.__swift_as_cont: 0x360
-   __TEXT.__swift5_mpenum: 0x30
--  __TEXT.__unwind_info: 0x9888
--  __TEXT.__eh_frame: 0xcb40
-+  __TEXT.__unwind_info: 0x98d0
-+  __TEXT.__eh_frame: 0xcc58
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_protorefs: 0x178
-   __DATA_CONST.__objc_superrefs: 0x10
-   __DATA_CONST.__got: 0x1e08
--  __AUTH_CONST.__const: 0x13b48
-+  __AUTH_CONST.__const: 0x13ad8
-   __AUTH_CONST.__cfstring: 0x60
-   __AUTH_CONST.__objc_const: 0x18ab0
--  __AUTH_CONST.__auth_got: 0x4590
-+  __AUTH_CONST.__auth_got: 0x4598
-   __AUTH.__objc_data: 0x11a8
--  __AUTH.__data: 0x1958
-+  __AUTH.__data: 0x1858
-   __DATA.__objc_ivar: 0x14
--  __DATA.__data: 0x3580
--  __DATA.__common: 0xd0
--  __DATA_DIRTY.__objc_data: 0x3a08
--  __DATA_DIRTY.__data: 0x104f8
--  __DATA_DIRTY.__bss: 0x99b0
--  __DATA_DIRTY.__common: 0x918
-+  __DATA.__data: 0x3370
-+  __DATA.__common: 0xc0
-+  __DATA_DIRTY.__objc_data: 0x3a10
-+  __DATA_DIRTY.__data: 0x10808
-+  __DATA_DIRTY.__bss: 0xa030
-+  __DATA_DIRTY.__common: 0x928
-   - /System/Library/Frameworks/AccessoryLiveActivities.framework/AccessoryLiveActivities
-   - /System/Library/Frameworks/AccessoryNotifications.framework/AccessoryNotifications
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/swift/libswift_DarwinFoundation3.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11217
 -  Symbols:   4511
 -  CStrings:  2018
 +  Functions: 11227
 +  Symbols:   4509
 +  CStrings:  2020
- 
 Symbols:
 + ___swift_closure_destructor.138Tm
 + ___swift_closure_destructor.157Tm

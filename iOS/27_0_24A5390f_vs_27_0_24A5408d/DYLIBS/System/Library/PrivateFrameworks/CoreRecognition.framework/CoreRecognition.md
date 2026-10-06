@@ -2,72 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/CoreRecognition.framework/CoreRecognition`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5b654` | `0x5b2dc` | **`-0x378`** |
+| `__TEXT.__const` | `0x7bc` | `0x744` | **`-0x78`** |
+| `__TEXT.__objc_methlist` | `0x2394` | `0x23ec` | **`+0x58`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2030` | `0x2078` | **`+0x48`** |
+| `__DATA_CONST.__got` | `0x5e0` | `0x5a0` | **`-0x40`** |
+| `__AUTH_CONST.__objc_const` | `0x3900` | `0x3938` | **`+0x38`** |
+| `__TEXT.__gcc_except_tab` | `0x8744` | `0x8758` | **`+0x14`** |
+| `__TEXT.__cstring` | `0x4b56` | `0x4b5f` | **`+0x9`** |
+| `__DATA.__bss` | `0x98` | `0x90` | **`-0x8`** |
+| `__DATA_CONST.__const` | `0xac8` | `0xad0` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x58` | `0x60` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x2c8` | `0x2cc` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -446.11.0.0.0
--  __TEXT.__text: 0x5b654
--  __TEXT.__objc_methlist: 0x2394
--  __TEXT.__const: 0x7bc
--  __TEXT.__cstring: 0x4b56
 +446.13.0.0.0
-+  __TEXT.__text: 0x5b2dc
-+  __TEXT.__objc_methlist: 0x23ec
-+  __TEXT.__const: 0x744
-+  __TEXT.__cstring: 0x4b5f
-   __TEXT.__ustring: 0x1282
--  __TEXT.__gcc_except_tab: 0x8744
-+  __TEXT.__gcc_except_tab: 0x8758
-   __TEXT.__oslogstring: 0x3d6
-   __TEXT.__unwind_info: 0x14f0
-   __TEXT.__objc_stubs: 0x0
 
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xac8
-+  __DATA_CONST.__const: 0xad0
-   __DATA_CONST.__objc_classlist: 0xd0
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2030
--  __DATA_CONST.__objc_superrefs: 0x58
-+  __DATA_CONST.__objc_selrefs: 0x2078
-+  __DATA_CONST.__objc_superrefs: 0x60
-   __DATA_CONST.__objc_arraydata: 0x3dc0
--  __DATA_CONST.__got: 0x5e0
-+  __DATA_CONST.__got: 0x5a0
-   __AUTH_CONST.__const: 0x9b0
-   __AUTH_CONST.__cfstring: 0xfbe0
--  __AUTH_CONST.__objc_const: 0x3900
-+  __AUTH_CONST.__objc_const: 0x3938
-   __AUTH_CONST.__weak_auth_got: 0x38
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__objc_doubleobj: 0x90
-
-   __AUTH_CONST.__objc_intobj: 0xa8
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0x7d0
--  __DATA.__objc_ivar: 0x2c8
-+  __DATA.__objc_ivar: 0x2cc
-   __DATA.__data: 0x240
--  __DATA.__bss: 0x98
-+  __DATA.__bss: 0x90
-   __DATA.__common: 0x60
-   __DATA_DIRTY.__objc_data: 0x50
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1124
--  Symbols:   3297
+-  Symbols:   2351
 -  CStrings:  2129
 +  Functions: 1122
-+  Symbols:   3288
++  Symbols:   2331
 +  CStrings:  2127
- 
 Symbols:
 + +[CRCameraReader boundsForPaddedCornersOfBoundingBox:padding:topLeft:topRight:bottomRight:bottomLeft:]
 + +[CRCameraReader extractCardImage:fromPixelBuffer:withCardBuffer:withPoints:cameraIntrinsicData:inputImage:]
@@ -145,24 +109,6 @@ Symbols:
 + ___85-[CRCameraReader findObjects:inPixelBuffer:frameImage:cameraIntrinsicData:frameTime:]_block_invoke_9
 + ___block_descriptor_56_ea8_32s40s48s_e42_v48?0^{__CVBuffer=}8"NSData"16{?=qiIq}24ls32l8s40l8s48l8
 + _kCRPreviewRotationContext
-+ _objc_msgSend$captureBufferRotationAngle
-+ _objc_msgSend$extractCardImage:fromPixelBuffer:withCardBuffer:withPoints:cameraIntrinsicData:inputImage:
-+ _objc_msgSend$extractCardImage:fromPixelBuffer:withCardBuffer:withPoints:cameraIntrinsicData:padding:inputOrientation:unpaddedCardImage:inputImage:
-+ _objc_msgSend$findIDObjects:inPixelBuffer:frameImage:cameraIntrinsicData:frameTime:
-+ _objc_msgSend$findObjects:inPixelBuffer:frameImage:cameraIntrinsicData:frameTime:
-+ _objc_msgSend$initWithDevice:previewLayer:
-+ _objc_msgSend$inputOrientationForCaptureAngle:
-+ _objc_msgSend$isVideoRotationAngleSupported:
-+ _objc_msgSend$removeObserver:forKeyPath:context:
-+ _objc_msgSend$rotationCoordinator
-+ _objc_msgSend$setRotationCoordinator:
-+ _objc_msgSend$setVideoRotationAngle:
-+ _objc_msgSend$setupRotationCoordinatorForDevice:
-+ _objc_msgSend$teardownRotationCoordinator
-+ _objc_msgSend$updatePreviewRotationFromCoordinator
-+ _objc_msgSend$videoRotationAngle
-+ _objc_msgSend$videoRotationAngleForHorizonLevelCapture
-+ _objc_msgSend$videoRotationAngleForHorizonLevelPreview
 + _objc_release_x2
 - +[ActivationMapTools colInImage:forPoint:inActivationMapWithSize:]
 - +[CRCameraReader extractCardImage:fromPixelBuffer:withCardBuffer:cameraIntrinsicData:]
@@ -259,13 +205,6 @@ Symbols:
 - _kIOSurfaceMemoryRegion
 - _kIOSurfacePixelFormat
 - _kIOSurfaceWidth
-- _objc_msgSend$extractCardImage:fromPixelBuffer:withCardBuffer:withPoints:cameraIntrinsicData:
-- _objc_msgSend$extractCardImage:fromPixelBuffer:withCardBuffer:withPoints:cameraIntrinsicData:padding:inputOrientation:
-- _objc_msgSend$extractCardImage:fromPixelBuffer:withCardBuffer:withPoints:cameraIntrinsicData:padding:inputOrientation:unpaddedCardImage:
-- _objc_msgSend$findIDObjects:inPixelBuffer:cameraIntrinsicData:frameTime:
-- _objc_msgSend$findObjects:inPixelBuffer:cameraIntrinsicData:frameTime:
-- _objc_msgSend$setVideoOrientation:
-- _objc_msgSend$videoOrientation
 - _rotateBuffer180
 - _vImageRotate90_Planar8
 CStrings:

@@ -2,18 +2,13 @@
 
 > `/System/Library/Frameworks/CoreImage.framework/ci_uberwrapper_bin.metallib`
 
-```diff
+### Section Size Changes
 
-   __TEXT.__reflection: 0x20e30
-   __TEXT.__visible: 0x2b5260
-   __TEXT.__descriptor: 0x40
--  __TEXT.__metallib: 0x4bc600
-+  __TEXT.__metallib: 0x4bd9c0
-   Functions: 0
-   Symbols:   0
-   CStrings:  0
-Sections:
-~ __TEXT.__reflection : content changed
-~ __TEXT.__visible : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__metallib` | `0x4bc600` | `0x4bd9c0` | **`+0x13c0`** |
 
-```
+### Same-size Content Changes
+
+- `__TEXT.__reflection`
+- `__TEXT.__visible`

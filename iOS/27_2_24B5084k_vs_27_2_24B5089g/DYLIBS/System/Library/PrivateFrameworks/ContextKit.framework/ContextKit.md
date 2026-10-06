@@ -2,45 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/ContextKit.framework/ContextKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf3c0` | `0xf5ac` | **`+0x1ec`** |
+| `__TEXT.__oslogstring` | `0x937` | `0x9a3` | **`+0x6c`** |
+| `__DATA.__bss` | `0x98` | `0xb8` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0xbe0` | `0xbe8` | **`+0x8`** |
+| `__TEXT.__const` | `0xa8` | `0xb0` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x104c` | `0x1054` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x4b8` | `0x4c0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -307.0.0.0.0
--  __TEXT.__text: 0xf01c
--  __TEXT.__objc_methlist: 0x104c
--  __TEXT.__const: 0xa8
 +308.0.0.0.0
-+  __TEXT.__text: 0xf1fc
-+  __TEXT.__objc_methlist: 0x1054
-+  __TEXT.__const: 0xb0
-   __TEXT.__cstring: 0x9c3
-   __TEXT.__gcc_except_tab: 0x310
--  __TEXT.__oslogstring: 0x937
--  __TEXT.__unwind_info: 0x658
-+  __TEXT.__oslogstring: 0x9a3
-+  __TEXT.__unwind_info: 0x660
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xbe0
-+  __DATA_CONST.__objc_selrefs: 0xbe8
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x50
-   __DATA_CONST.__got: 0x180
-
-   - /System/Library/PrivateFrameworks/ContextKitCore.framework/ContextKitCore
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 465
--  Symbols:   1124
+-  Symbols:   842
 -  CStrings:  208
 +  Functions: 467
-+  Symbols:   1130
++  Symbols:   848
 +  CStrings:  209
- 
 Symbols:
 + +[CKContextXPCClient resetConnectionFailureTrackingForTesting]
 + _clock_gettime_nsec_np
@@ -51,7 +37,7 @@ Symbols:
 Functions:
 ~ ___27-[CKContextRequest execute]_block_invoke.201 : 340 -> 356
 ~ ___38-[CKContextRequest _executeWithReply:]_block_invoke.210 : 284 -> 324
-~ +[CKContextXPCClient isXPCConnectionError:] : 248 -> 516
+~ +[CKContextXPCClient isXPCConnectionError:] : 260 -> 528
 + +[CKContextXPCClient resetConnectionFailureTrackingForTesting]
 ~ +[CKContextXPCClient initialize].cold.1 : 72 -> 68
 ~ +[CKContextXPCClient isXPCConnectionError:].cold.1 : 72 -> 80

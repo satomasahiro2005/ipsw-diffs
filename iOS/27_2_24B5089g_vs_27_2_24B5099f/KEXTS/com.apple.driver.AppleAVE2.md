@@ -2,36 +2,27 @@
 
 > `com.apple.driver.AppleAVE2`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x1d0048` | `0x1d3bc8` | **`+0x3b80`** |
+| `__TEXT.__os_log` | `0x5cac2` | `0x5decc` | **`+0x140a`** |
+| `__TEXT.__cstring` | `0x48053` | `0x491f4` | **`+0x11a1`** |
+| `__DATA_CONST.__const` | `0xae10` | `0xad60` | **`-0xb0`** |
+| `__TEXT.__const` | `0x4b6f0` | `0x4b6c0` | **`-0x30`** |
+
+### Other Changes
+
 ```diff
 
 -913.48.1.0.0
--  __TEXT.__const: 0x4b6f0
--  __TEXT.__cstring: 0x48053
--  __TEXT.__os_log: 0x5cac2
--  __TEXT_EXEC.__text: 0x1cde98
-+913.63.1.0.0
-+  __TEXT.__const: 0x4b6c0
-+  __TEXT.__cstring: 0x491f4
-+  __TEXT.__os_log: 0x5decc
-+  __TEXT_EXEC.__text: 0x1d1a28
-   __TEXT_EXEC.__auth_stubs: 0x7b0
-   __DATA.__data: 0x2c8
-   __DATA.__common: 0x130
-   __DATA_CONST.__mod_init_func: 0x38
-   __DATA_CONST.__mod_term_func: 0x38
--  __DATA_CONST.__const: 0xae10
-+  __DATA_CONST.__const: 0xad60
-   __DATA_CONST.__kalloc_type: 0x5300
-   __DATA_CONST.__kalloc_var: 0x1e00
-   __DATA_CONST.__auth_got: 0x3d8
-   __DATA_CONST.__got: 0xe8
-   __DATA_CONST.__auth_ptr: 0x8
 -  Functions: 2995
++913.63.1.0.0
 +  Functions: 2998
-   Symbols:   0
--  CStrings:  9866
-+  CStrings:  9945
- 
+
+-  CStrings:  9867
++  CStrings:  9946
 CStrings:
 + "%d Kernel: %p %p"
 + "%lld %d AVE %s: %s:%d %s | AV1 MCTF strength count out of range %d %d [0 %d]"
@@ -104,6 +95,7 @@ CStrings:
 + "0 <= iRefNum && iRefNum <= iMaxRefNum"
 + "0 <= pInfo->sSessionCfg.sEnc.sAlgCfg.sGOP.iNumOfTemporalLayer && (pInfo->sSessionCfg.sEnc.sAlgCfg.sGOP.iNumOfTemporalLayer <= 7)"
 + "0 <= pInfo->uPropCfg.sHEVC.iNumberOfTemporalLayers && pInfo->uPropCfg.sHEVC.iNumberOfTemporalLayers <= 7"
++ "20:37:40"
 + "4 <= pInfo->sSyntaxCfgAVC.iLog2MaxFrameNum && pInfo->sSyntaxCfgAVC.iLog2MaxFrameNum <= (12 + 4) && 4 <= pInfo->sSyntaxCfgAVC.iLog2MaxPOCLsb && pInfo->sSyntaxCfgAVC.iLog2MaxPOCLsb <= (12 + 5)"
 + "913.63.1"
 + "AVE_Client_CheckLRMEInfo"
@@ -115,6 +107,7 @@ CStrings:
 + "HwC %s | %p %d | IPC: %p IPC Surface: %p Heap: %p Command Buffer: %p %d Notify Buffer: %p %d\n"
 + "Mapper %s | %p %d %d | State: %d BaseAddr: %p size: 0x%llx Page Size: 0x%llx"
 + "Mapper %s | %p %d %d | State: %d BaseAddr: %p size: 0x%llx Page Size: 0x%llx\n"
++ "Sep 27 2026"
 + "layerNumSum <= (63 + 1)"
 + "pInfo->sHEVC_RPS.strps.num_short_term_ref_pic_sets < 65 && (pInfo->sHEVC_RPS.slice_ltrps.num_long_term_sps + pInfo->sHEVC_RPS.slice_ltrps.num_long_term_pics) <= 16"
 + "pInfo->sHEVC_VPS.num_add_layer_sets <= (63 + 1)"
@@ -141,6 +134,7 @@ CStrings:
 - "%lld %d AVE %s: Mapper %s | %p %d %d | State: %d BaseAddr: 0x%llx size: 0x%llx Page Size: 0x%llx\n"
 - "0 <= pInfo->sSessionCfg.sEnc.sAlgCfg.sGOP.iNumOfTemporalLayer && ((pInfo->sSessionCfg.sEnc.sAlgCfg.sGOP.iNumOfTemporalLayer - 1) <= 7) && ((pInfo->sSessionCfg.sEnc.sAlgCfg.sGOP.iNumOfTemporalLayer - 1) <= 7)"
 - "0x%llx %lld "
+- "19:56:46"
 - "913.48.1"
 - "FwLog %p %d | Phy 0x%lx Kernel 0x%lx DART 0x%llx | %d %d %d | %d %d"
 - "FwLog %p %d | Phy 0x%lx Kernel 0x%lx DART 0x%llx | %d %d %d | %d %d\n"
@@ -148,4 +142,5 @@ CStrings:
 - "HwC %s | %p %d | IPC: %p IPC Surface: %p Heap: %p Command Buffer: 0x%lx %d Notify Buffer: 0x%lx %d\n"
 - "Mapper %s | %p %d %d | State: %d BaseAddr: 0x%llx size: 0x%llx Page Size: 0x%llx"
 - "Mapper %s | %p %d %d | State: %d BaseAddr: 0x%llx size: 0x%llx Page Size: 0x%llx\n"
+- "Sep 13 2026"
 ```

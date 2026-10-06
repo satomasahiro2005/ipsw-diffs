@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ManagedBackgroundAssetsRelay.framework/ManagedBackgroundAssetsRelay`
 
-```diff
+### Section Size Changes
 
- 2.0.35.1.0
--  __TEXT.__text: 0x15edc
-+  __TEXT.__text: 0x15ee0
-   __TEXT.__const: 0xf22
-   __TEXT.__cstring: 0x241
-   __TEXT.__swift5_typeref: 0x3f5
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15edc` | `0x15ee0` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2c69f9db0 -> sub_2c7963db0 : 748 -> 752
+~ sub_2c6909db0 -> sub_2c788ddb0 : 748 -> 752
 ```

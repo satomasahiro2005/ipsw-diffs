@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AppleMSG.framework/AppleMSG`
 
-```diff
+### Section Size Changes
 
- 420.0.2.0.0
--  __TEXT.__text: 0x142e0
-+  __TEXT.__text: 0x142e4
-   __TEXT.__const: 0x158
-   __TEXT.__oslogstring: 0x1eda
-   __TEXT.__cstring: 0x2049
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x142e0` | `0x142e4` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN13MSGController23unregisterForTimingInfoEh : 216 -> 220
 ```

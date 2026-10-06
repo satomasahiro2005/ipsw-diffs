@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/PrivateSearchCore.framework/PrivateSearchCore`
 
-```diff
+### Section Size Changes
 
- 4.0.0.0.0
--  __TEXT.__text: 0x29280
-+  __TEXT.__text: 0x29270
-   __TEXT.__const: 0x2032
-   __TEXT.__cstring: 0x465
-   __TEXT.__constg_swiftt: 0xb34
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x29280` | `0x29270` | **`-0x10`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2993644d0 -> sub_298f4c4d0 : 892 -> 876
+~ sub_2991f74d0 -> sub_298e554d0 : 892 -> 876
 ```

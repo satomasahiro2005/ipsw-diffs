@@ -2,65 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/SiriTTS.framework/SiriTTS`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x82da74` | `0x82c7f4` | **`-0x1280`** |
+| `__TEXT.__cstring` | `0x6e3d2` | `0x6e4d1` | **`+0xff`** |
+| `__TEXT.__oslogstring` | `0x9dc2` | `0x9e8e` | **`+0xcc`** |
+| `__TEXT.__gcc_except_tab` | `0x3bb04` | `0x3bb34` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x184b8` | `0x18490` | **`-0x28`** |
+| `__DATA.__bss` | `0xe9c` | `0xe94` | **`-0x8`** |
+| `__DATA_DIRTY.__bss` | `0x18` | `0x20` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x82da74
-+  __TEXT.__text: 0x82c7f4
-   __TEXT.__objc_methlist: 0x20
-   __TEXT.__const: 0xe43cc
--  __TEXT.__cstring: 0x6e3d2
--  __TEXT.__gcc_except_tab: 0x3bb04
--  __TEXT.__oslogstring: 0x9dc2
-+  __TEXT.__cstring: 0x6e4d1
-+  __TEXT.__gcc_except_tab: 0x3bb34
-+  __TEXT.__oslogstring: 0x9e8e
-   __TEXT.__ustring: 0x494
--  __TEXT.__unwind_info: 0x184b8
-+  __TEXT.__unwind_info: 0x18490
-   __TEXT.__eh_frame: 0x208
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+-3600.70.1.1.1
++3600.74.1.1.1
 
-   __AUTH_CONST.__auth_got: 0x15b8
-   __AUTH.__data: 0xe8
-   __DATA.__data: 0x310
--  __DATA.__bss: 0xe9c
-+  __DATA.__bss: 0xe94
-   __DATA.__common: 0x21
--  __DATA_DIRTY.__bss: 0x18
-+  __DATA_DIRTY.__bss: 0x20
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CoreAudio.framework/CoreAudio
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libxml2.2.dylib
 -  Functions: 22396
--  Symbols:   59198
--  CStrings:  17955
+-  Symbols:   33820
+-  CStrings:  17016
 +  Functions: 22399
-+  Symbols:   59204
-+  CStrings:  17963
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
++  Symbols:   33823
++  CStrings:  17021
 Symbols:
 + GCC_except_table1003
 + GCC_except_table1012
@@ -3121,5 +3087,4 @@ CStrings:
 + "WsolaV2 applied rate modification (version=v2): rate=%.2f, frame=%dms"
 + "WsolaV2: internal 'wsolaVersion' override = '%s' (config was '%s')"
 + "wsolaVersion"
-
 ```

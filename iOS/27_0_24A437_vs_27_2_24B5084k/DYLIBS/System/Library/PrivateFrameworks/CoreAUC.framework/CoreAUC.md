@@ -2,50 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/CoreAUC.framework/CoreAUC`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x12e6c` | `0xfdec` | **`-0x3080`** |
+| `__TEXT.__oslogstring` | `0x2014` | `—` | **`-0x2014`** |
+| `__TEXT.__cstring` | `0x9b7` | `0x3ed` | **`-0x5ca`** |
+| `__DATA_CONST.__const` | `0x580` | `0x4a8` | **`-0xd8`** |
+| `__TEXT.__const` | `0xcf0` | `0xcb0` | **`-0x40`** |
+| `__TEXT.__unwind_info` | `0x248` | `0x228` | **`-0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x1c` | `—` | **`-0x1c`** |
+| `__DATA.__common` | `0x10` | `—` | **`-0x10`** |
+| `__DATA_DIRTY.__common` | `0x10` | `—` | **`-0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x38` | `0x30` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 638.12.0.0.0
--  __TEXT.__text: 0x12bd0
--  __TEXT.__const: 0xcf0
--  __TEXT.__cstring: 0x9b7
--  __TEXT.__oslogstring: 0x2014
--  __TEXT.__gcc_except_tab: 0x1c
--  __TEXT.__unwind_info: 0x318
-+  __TEXT.__text: 0xfba4
-+  __TEXT.__const: 0xcb0
-+  __TEXT.__cstring: 0x3ed
-+  __TEXT.__unwind_info: 0x300
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0x580
-+  __DATA_CONST.__const: 0x4a8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x38
-+  __DATA_CONST.__objc_selrefs: 0x30
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x998
-   __AUTH_CONST.__cfstring: 0x300
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__data: 0x40
--  __DATA.__common: 0x10
-   __DATA_DIRTY.__data: 0x38
-   __DATA_DIRTY.__bss: 0x60
--  __DATA_DIRTY.__common: 0x10
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 206
 -  Symbols:   124
 -  CStrings:  133
 +  Functions: 185
 +  Symbols:   117
 +  CStrings:  39
- 
 Symbols:
 + _FigSignalErrorAtGM
 + _fig_log_get_emitter

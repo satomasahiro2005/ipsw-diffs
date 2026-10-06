@@ -2,43 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/PhotosUICore.framework/PhotosUICore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1864860` | `0x1864928` | **`+0xc8`** |
+| `__AUTH_CONST.__const` | `0x80168` | `0x80188` | **`+0x20`** |
+| `__DATA.__bss` | `0xadcb0` | `0xadcc0` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x5d4e8` | `0x5d4f8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.232.0.0
--  __TEXT.__text: 0x1864860
 +912.0.233.0.0
-+  __TEXT.__text: 0x1864928
-   __TEXT.__delay_helper: 0x114
-   __TEXT.__objc_methlist: 0xa4f9c
-   __TEXT.__const: 0xa2930
 
-   __TEXT.__swift5_mpenum: 0x184
-   __TEXT.__gcc_except_tab: 0x10704
-   __TEXT.__ustring: 0x3c48
--  __TEXT.__unwind_info: 0x5d4e8
-+  __TEXT.__unwind_info: 0x5d4f8
-   __TEXT.__eh_frame: 0x33a04
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_arraydata: 0x4510
-   __DATA_CONST.__vfx_script_tbl: 0x20
-   __DATA_CONST.__got: 0xcf40
--  __AUTH_CONST.__const: 0x80168
-+  __AUTH_CONST.__const: 0x80188
-   __AUTH_CONST.__cfstring: 0x6d9a0
-   __AUTH_CONST.__objc_const: 0x15f6c0
-   __AUTH_CONST.__weak_auth_got: 0x10
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 145572
--  Symbols:   146138
+-  Symbols:   116799
 +  Functions: 145573
-+  Symbols:   146141
-   CStrings:  27028
- 
++  Symbols:   116802
 Symbols:
 + GCC_except_table14239
 + GCC_except_table14245

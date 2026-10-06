@@ -2,97 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/HealthBalanceUI.framework/HealthBalanceUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc8b68` | `0x10a404` | **`+0x4189c`** |
+| `__DATA.__bss` | `0x2238` | `0x3238` | **`+0x1000`** |
+| `__TEXT.__const` | `0x6244` | `0x70d4` | **`+0xe90`** |
+| `__AUTH_CONST.__const` | `0x2f80` | `0x38b0` | **`+0x930`** |
+| `__TEXT.__cstring` | `0x1a21` | `0x22d1` | **`+0x8b0`** |
+| `__TEXT.__unwind_info` | `0x2620` | `0x2e30` | **`+0x810`** |
+| `__TEXT.__eh_frame` | `0x1e58` | `0x2640` | **`+0x7e8`** |
+| `__DATA_DIRTY.__data` | `0x40e0` | `0x4728` | **`+0x648`** |
+| `__TEXT.__swift5_fieldmd` | `0x21b8` | `0x2794` | **`+0x5dc`** |
+| `__TEXT.__constg_swiftt` | `0x2004` | `0x2504` | **`+0x500`** |
+| `__TEXT.__swift5_reflstr` | `0x23db` | `0x28cb` | **`+0x4f0`** |
+| `__DATA.__data` | `0xd80` | `0x1198` | **`+0x418`** |
+| `__AUTH.__data` | `0x5d0` | `0x990` | **`+0x3c0`** |
+| `__DATA_DIRTY.__bss` | `0x5300` | `0x5600` | **`+0x300`** |
+| `__AUTH_CONST.__auth_got` | `0x1ab0` | `0x1da0` | **`+0x2f0`** |
+| `__TEXT.__swift5_typeref` | `0x1c70` | `0x1f4e` | **`+0x2de`** |
+| `__AUTH_CONST.__objc_const` | `0x970` | `0xbd0` | **`+0x260`** |
+| `__DATA_CONST.__got` | `0xea0` | `0x1020` | **`+0x180`** |
+| `__TEXT.__oslogstring` | `0x78a` | `0x84a` | **`+0xc0`** |
+| `__TEXT.__swift5_capture` | `0x3e0` | `0x480` | **`+0xa0`** |
+| `__TEXT.__swift5_proto` | `0x394` | `0x428` | **`+0x94`** |
+| `__TEXT.__swift5_assocty` | `0x4b0` | `0x540` | **`+0x90`** |
+| `__DATA_CONST.__const` | `0x170` | `0x1e8` | **`+0x78`** |
+| `__TEXT.__swift5_types` | `0x230` | `0x290` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0x1e8` | `0x238` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x220` | `0x270` | **`+0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0xf0` | `0x140` | **`+0x50`** |
+| `__DATA_CONST.__objc_classlist` | `0x48` | `0x58` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0xb8` | `0xc8` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `0xc` | `0x10` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0x4c` | `0x50` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x5c` | `0x60` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
- 7027.0.72.2.7
--  __TEXT.__text: 0xc8b68
-+  __TEXT.__text: 0x10a404
-   __TEXT.__objc_methlist: 0x19c
--  __TEXT.__const: 0x6244
--  __TEXT.__swift5_typeref: 0x1c70
--  __TEXT.__swift5_reflstr: 0x23db
--  __TEXT.__swift5_assocty: 0x4b0
--  __TEXT.__constg_swiftt: 0x2004
--  __TEXT.__swift5_fieldmd: 0x21b8
-+  __TEXT.__const: 0x70d4
-+  __TEXT.__swift5_typeref: 0x1f4e
-+  __TEXT.__swift5_reflstr: 0x28cb
-+  __TEXT.__swift5_assocty: 0x540
-+  __TEXT.__constg_swiftt: 0x2504
-+  __TEXT.__swift5_fieldmd: 0x2794
-   __TEXT.__swift5_builtin: 0x50
--  __TEXT.__swift5_proto: 0x394
--  __TEXT.__swift5_types: 0x230
--  __TEXT.__cstring: 0x1a21
--  __TEXT.__swift5_capture: 0x3e0
-+  __TEXT.__swift5_proto: 0x428
-+  __TEXT.__swift5_types: 0x290
-+  __TEXT.__cstring: 0x22d1
-+  __TEXT.__swift5_capture: 0x480
-   __TEXT.__swift5_mpenum: 0x6c
--  __TEXT.__swift_as_entry: 0x4c
--  __TEXT.__swift_as_ret: 0x5c
--  __TEXT.__swift_as_cont: 0xb8
--  __TEXT.__oslogstring: 0x78a
--  __TEXT.__swift5_protos: 0xc
--  __TEXT.__unwind_info: 0x2620
--  __TEXT.__eh_frame: 0x1e58
-+  __TEXT.__oslogstring: 0x84a
-+  __TEXT.__swift5_protos: 0x10
-+  __TEXT.__swift_as_entry: 0x50
-+  __TEXT.__swift_as_ret: 0x60
-+  __TEXT.__swift_as_cont: 0xc8
-+  __TEXT.__unwind_info: 0x2e30
-+  __TEXT.__eh_frame: 0x2640
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x170
--  __DATA_CONST.__objc_classlist: 0x48
-+  __DATA_CONST.__const: 0x1e8
-+  __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x220
-+  __DATA_CONST.__objc_selrefs: 0x270
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__got: 0xea0
--  __AUTH_CONST.__const: 0x2f80
--  __AUTH_CONST.__objc_const: 0x970
--  __AUTH_CONST.__auth_got: 0x1ab0
--  __AUTH.__objc_data: 0x1e8
--  __AUTH.__data: 0x5d0
--  __DATA.__data: 0xd80
-+  __DATA_CONST.__got: 0x1020
-+  __AUTH_CONST.__const: 0x38b0
-+  __AUTH_CONST.__objc_const: 0xbd0
-+  __AUTH_CONST.__auth_got: 0x1da0
-+  __AUTH.__objc_data: 0x238
-+  __AUTH.__data: 0x990
-+  __DATA.__data: 0x1198
-   __DATA.__common: 0x48
--  __DATA_DIRTY.__objc_data: 0xf0
--  __DATA_DIRTY.__data: 0x40e0
--  __DATA_DIRTY.__bss: 0x5300
-+  __DATA_DIRTY.__objc_data: 0x140
-+  __DATA_DIRTY.__data: 0x4728
-+  __DATA_DIRTY.__bss: 0x5600
-   __DATA_DIRTY.__common: 0x50
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/Charts.framework/Charts
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3526
--  Symbols:   926
+-  Symbols:   884
 -  CStrings:  199
 +  Functions: 4323
-+  Symbols:   1022
++  Symbols:   970
 +  CStrings:  255
- 
 Symbols:
 + _CGRectGetHeight
 + _CGRectGetMaxY
@@ -131,16 +87,6 @@ Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVy013HealthBalanceB021OvernightMetricsChartVAA30_EnvironmentKeyWritingModifierVyAD0ghI4SpecVGGAA4ViewHPAfaMHPyHC_AkA0oM0HPyHCHC
 + _get_witness_table 7SwiftUI6ZStackVyAA12TupleContentVyAA7ForEachVySayAA5AngleVGAiEyAA08ModifiedE0VyALyALyALyAA6CircleVAA12_FrameLayoutVGAA13_OffsetEffectVGAA09_RotationN0VGASG_AXQPGG_AGySnySiGSiAEyAT_ATQPGGQPGGAA4ViewHPyHC
 + _get_witness_table 7SwiftUI6ZStackVyAA7ForEachVySayAA5AngleVGAgA15ModifiedContentVyAJyAJyAA6CircleVAA12_FrameLayoutVGAA13_OffsetEffectVGAA09_RotationM0VGGGAA4ViewHPyHC
-+ _objc_msgSend$countUnit
-+ _objc_msgSend$initWithMinimum:maximum:isMinimumInclusive:isMaximumInclusive:
-+ _objc_msgSend$minuteUnit
-+ _objc_msgSend$quantityWithUnit:doubleValue:
-+ _objc_msgSend$secondUnitWithMetricPrefix:
-+ _objc_msgSend$systemBackgroundColor
-+ _objc_msgSend$systemCyanColor
-+ _objc_msgSend$systemGray6Color
-+ _objc_msgSend$systemMintColor
-+ _objc_msgSend$unitDividedByUnit:
 + _swift_retain_n
 + _swift_retain_x10
 + _swift_task_deinitOnExecutor

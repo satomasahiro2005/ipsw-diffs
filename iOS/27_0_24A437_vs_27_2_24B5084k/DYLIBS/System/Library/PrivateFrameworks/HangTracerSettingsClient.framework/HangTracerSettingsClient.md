@@ -2,78 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/HangTracerSettingsClient.framework/HangTracerSettingsClient`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x18c40` | `0x1b024` | **`+0x23e4`** |
+| `__AUTH_CONST.__objc_const` | `0x1960` | `0x1c00` | **`+0x2a0`** |
+| `__TEXT.__oslogstring` | `0xa2f` | `0xcbc` | **`+0x28d`** |
+| `__TEXT.__objc_methlist` | `0xd8c` | `0xf34` | **`+0x1a8`** |
+| `__TEXT.__cstring` | `0x3372` | `0x3448` | **`+0xd6`** |
+| `__AUTH.__objc_data` | `0x460` | `0x500` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x6d8` | `0x768` | **`+0x90`** |
+| `__TEXT.__gcc_except_tab` | `0x1a8` | `0x230` | **`+0x88`** |
+| `__DATA_CONST.__const` | `0xdc8` | `0xe18` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0xbc8` | `0xc10` | **`+0x48`** |
+| `__DATA_CONST.__got` | `0x3d8` | `0x410` | **`+0x38`** |
+| `__AUTH_CONST.__cfstring` | `0x3900` | `0x3920` | **`+0x20`** |
+| `__AUTH_CONST.__const` | `0x608` | `0x628` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x100` | `0x120` | **`+0x20`** |
+| `__DATA.__bss` | `0x3710` | `0x3720` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x78` | `0x88` | **`+0x10`** |
+| `__TEXT.__const` | `0x20e2` | `0x20f2` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x4d0` | `0x4d8` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x60` | `0x68` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -426.0.0.0.0
--  __TEXT.__text: 0x17d2c
--  __TEXT.__objc_methlist: 0xd8c
--  __TEXT.__const: 0x20e2
--  __TEXT.__cstring: 0x3372
--  __TEXT.__gcc_except_tab: 0x1a8
--  __TEXT.__oslogstring: 0xa2f
 +430.0.0.0.0
-+  __TEXT.__text: 0x1a068
-+  __TEXT.__objc_methlist: 0xf34
-+  __TEXT.__const: 0x20f2
-+  __TEXT.__cstring: 0x3448
-+  __TEXT.__gcc_except_tab: 0x230
-+  __TEXT.__oslogstring: 0xcbc
-   __TEXT.__dlopen_cstrs: 0xaf
-   __TEXT.__ustring: 0x83c
-   __TEXT.__swift5_typeref: 0x4c3
 
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift5_proto: 0x194
-   __TEXT.__swift5_types: 0x3c
--  __TEXT.__unwind_info: 0xc00
-+  __TEXT.__unwind_info: 0xcb8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xdc8
--  __DATA_CONST.__objc_classlist: 0x78
-+  __DATA_CONST.__const: 0xe18
-+  __DATA_CONST.__objc_classlist: 0x88
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xbc8
--  __DATA_CONST.__objc_superrefs: 0x60
-+  __DATA_CONST.__objc_selrefs: 0xc10
-+  __DATA_CONST.__objc_superrefs: 0x68
-   __DATA_CONST.__objc_arraydata: 0x158
--  __DATA_CONST.__got: 0x3d8
--  __AUTH_CONST.__const: 0x608
--  __AUTH_CONST.__cfstring: 0x3900
--  __AUTH_CONST.__objc_const: 0x1960
-+  __DATA_CONST.__got: 0x410
-+  __AUTH_CONST.__const: 0x628
-+  __AUTH_CONST.__cfstring: 0x3920
-+  __AUTH_CONST.__objc_const: 0x1c00
-   __AUTH_CONST.__objc_intobj: 0xc0
-   __AUTH_CONST.__objc_arrayobj: 0x30
--  __AUTH_CONST.__auth_got: 0x4d0
--  __AUTH.__objc_data: 0x460
--  __DATA.__objc_ivar: 0x100
-+  __AUTH_CONST.__auth_got: 0x4d8
-+  __AUTH.__objc_data: 0x500
-+  __DATA.__objc_ivar: 0x120
-   __DATA.__data: 0x6f8
-   __DATA_DIRTY.__objc_data: 0x50
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 851
--  Symbols:   1513
+-  Symbols:   1259
 -  CStrings:  617
 +  Functions: 910
-+  Symbols:   1600
++  Symbols:   1337
 +  CStrings:  629
- 
 Symbols:
 + +[HTPerformanceEventDataFinder groupEntriesByEventID:]
 + -[HTAppLaunchDataFinder creationDateForFileURL:]
@@ -155,15 +120,6 @@ Symbols:
 + _kHTExtendedAttributeEventEnd
 + _kHTExtendedAttributeEventStart
 + _kHTExtendedAttributeEventType
-+ _objc_msgSend$creationDateForFileURL:
-+ _objc_msgSend$dataEntriesAtPath:cachedAppRecords:error:
-+ _objc_msgSend$dataEntryForFileURL:cachedAppRecords:
-+ _objc_msgSend$eventType
-+ _objc_msgSend$fileFilterPredicate
-+ _objc_msgSend$groupEntriesByEventID:
-+ _objc_msgSend$includesProcessingHang:
-+ _objc_msgSend$predicateWithValue:
-+ _objc_msgSend$scanDirectoryPaths
 - _kHTExtendedAttributeHangEnd
 - _kHTExtendedAttributeHangStart
 CStrings:

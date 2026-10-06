@@ -2,60 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/MusicLibrary.framework/MusicLibrary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3b4abc` | `0x3b4ebc` | **`+0x400`** |
+| `__TEXT.__cstring` | `0x74dd1` | `0x74e6f` | **`+0x9e`** |
+| `__TEXT.__gcc_except_tab` | `0x14518` | `0x14594` | **`+0x7c`** |
+| `__TEXT.__oslogstring` | `0x1d678` | `0x1d6d0` | **`+0x58`** |
+| `__AUTH_CONST.__cfstring` | `0x28760` | `0x287a0` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x9de8` | `0x9dd8` | **`-0x10`** |
+| `__DATA_CONST.__objc_arraydata` | `0x1418` | `0x1420` | **`+0x8`** |
+| `__TEXT.__const` | `0x25d4c` | `0x25d54` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x72e8` | `0x72e0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -4026.110.81.1.0
--  __TEXT.__text: 0x3b4abc
 +4026.100.84.0.0
-+  __TEXT.__text: 0x3b4ebc
-   __TEXT.__objc_methlist: 0xe714
--  __TEXT.__const: 0x25d4c
-+  __TEXT.__const: 0x25d54
-   __TEXT.__dlopen_cstrs: 0x2d1
--  __TEXT.__gcc_except_tab: 0x14518
--  __TEXT.__cstring: 0x74dd1
--  __TEXT.__oslogstring: 0x1d678
-+  __TEXT.__gcc_except_tab: 0x14594
-+  __TEXT.__cstring: 0x74e6f
-+  __TEXT.__oslogstring: 0x1d6d0
-   __TEXT.__ustring: 0x210
--  __TEXT.__unwind_info: 0x72e8
-+  __TEXT.__unwind_info: 0x72e0
-   __TEXT.__eh_frame: 0x50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9de8
-+  __DATA_CONST.__const: 0x9dd8
-   __DATA_CONST.__objc_classlist: 0x708
-   __DATA_CONST.__objc_catlist: 0x50
-   __DATA_CONST.__objc_protolist: 0xa8
 
-   __DATA_CONST.__objc_selrefs: 0x7008
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__objc_superrefs: 0x520
--  __DATA_CONST.__objc_arraydata: 0x1418
-+  __DATA_CONST.__objc_arraydata: 0x1420
-   __DATA_CONST.__got: 0xb38
-   __AUTH_CONST.__const: 0x19420
--  __AUTH_CONST.__cfstring: 0x28760
-+  __AUTH_CONST.__cfstring: 0x287a0
-   __AUTH_CONST.__objc_const: 0x159f0
-   __AUTH_CONST.__weak_auth_got: 0x20
-   __AUTH_CONST.__objc_arrayobj: 0x22c8
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 8472
--  Symbols:   17476
+-  Symbols:   14721
 -  CStrings:  7530
 +  Functions: 8470
-+  Symbols:   17473
++  Symbols:   14718
 +  CStrings:  7533
- 
 Symbols:
 + GCC_except_table1029
 + GCC_except_table1034

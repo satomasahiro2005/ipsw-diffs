@@ -2,46 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/MLIR_ML.framework/mlir-ml-viewer-tool`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__objc_stubs` | `0x180` | `0x1c0` | **`+0x40`** |
+| `__TEXT.__objc_methname` | `0x10d` | `0x146` | **`+0x39`** |
+| `__TEXT.__text` | `0x1a58` | `0x1a88` | **`+0x30`** |
+| `__DATA.__objc_selrefs` | `0x60` | `0x70` | **`+0x10`** |
+| `__TEXT.__auth_stubs` | `0x200` | `0x210` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x110` | `0x118` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x70` | `0x78` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1a58
--  __TEXT.__auth_stubs: 0x200
--  __TEXT.__objc_stubs: 0x180
-+  __TEXT.__text: 0x1a88
-+  __TEXT.__auth_stubs: 0x210
-+  __TEXT.__objc_stubs: 0x1c0
-   __TEXT.__gcc_except_tab: 0x154
-   __TEXT.__const: 0x10
-   __TEXT.__cstring: 0x3fa
--  __TEXT.__objc_methname: 0x10d
-+  __TEXT.__objc_methname: 0x146
-   __TEXT.__unwind_info: 0xf8
-   __DATA_CONST.__const: 0xd0
-   __DATA_CONST.__cfstring: 0x160
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x110
--  __DATA_CONST.__got: 0x70
--  __DATA.__objc_selrefs: 0x60
-+  __DATA_CONST.__auth_got: 0x118
-+  __DATA_CONST.__got: 0x78
-+  __DATA.__objc_selrefs: 0x70
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/MLIR_ML.framework/MLIR_ML
+-7.0.72.0.0
++7.0.75.1.0
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 32
--  Symbols:   245
--  CStrings:  52
-+  Symbols:   249
-+  CStrings:  54
- 
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
+-  Symbols:   112
+-  CStrings:  41
++  Symbols:   116
++  CStrings:  43
 Symbols:
 + _OBJC_CLASS_$_MLViewerGraphDescriptorSPI
 + _objc_alloc_init
@@ -60,5 +50,4 @@ CStrings:
 + "setSignature:"
 - "newGraphWithMLIR:"
 - "newGraphWithMLIRByteCode:signature:"
-
 ```

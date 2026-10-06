@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/FitnessAppRoot.framework/FitnessAppRoot`
 
-```diff
+### Section Size Changes
 
- 2027.0.146.1.4
--  __TEXT.__text: 0x54474
-+  __TEXT.__text: 0x5448c
-   __TEXT.__objc_methlist: 0x824
-   __TEXT.__const: 0x77a4
-   __TEXT.__swift5_typeref: 0x2930
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x54474` | `0x5448c` | **`+0x18`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_20fcfb5dc -> sub_20fd055dc : 432 -> 436
 ~ sub_20fcfbed8 -> sub_20fd05edc : 548 -> 552

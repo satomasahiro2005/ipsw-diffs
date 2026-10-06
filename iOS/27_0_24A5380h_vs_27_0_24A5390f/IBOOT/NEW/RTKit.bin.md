@@ -1,15 +1,24 @@
 ## RTKit.bin
 
-- `smc/pdCommon.cpp`
-- `pdcom: A%d BCDB !Rdy bat %d Ace %d CapInv %d`
-- `pdcom: BattDesignCap !valid %d`
-- `Disabling AP wakeup assertion`
-- `AP failed to wake up after %dms`
-- `Waiting for AP to wake up`
-- `Sending panic interrupt`
-- `AP is already panicking. Nothing to do`
-- `nsuring that AP is awake`
-- `Waiting %d second(s) for AP to boot up`
+- `Notf: A%d uvdmDone`
+- ` E%d %d %x`
+- `Act %c%c%c%c`
+- `smc/apComms.cpp`
+- `smc/acePowerOut.cpp`
+- `Aborting AOP iop_ringbuffer at %s:%d`
+- `SMC HID Event: %02x %02x %02x`
+- `acePoutExtClientIF.cpp`
+- `A%d lock not acquired, timeout was set %d`
+- `smc/acePoutBudgetManager.cpp`
+- `iop_ringbuffer.h`
+- ` VDO %d not found`
+- `smc/aceUtilEmbedded.cpp`
+- `A%d, SMC did not acquire the uvdm Lock %d, uvdm Timer %d`
+- `smc/aopComms.cpp`
+- `smc/ap_watchdog.cpp`
+- `Ace: End HostAct %c%c%c%c`
+- `is Shutdwn needed: Req %d, budV %d isBattbt %d isPT %d`
+- `smc/ap_watchdog_logger.cpp`
+- `A%d unable to acquire smc uvdm lock %d`
 - `!MIDR: 0x%x`
-- `AP is awake after ~%dms`
-- `pdcom: A%d BCDB Rdy`
+- `apComms.cpp`

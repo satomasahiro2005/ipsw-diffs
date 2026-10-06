@@ -2,39 +2,26 @@
 
 > `/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x22b8d` | `0x23618` | **`+0xa8b`** |
+| `__TEXT.__text` | `0x26e38c` | `0x26e4bc` | **`+0x130`** |
+| `__TEXT.__realtime` | `0x29b38` | `0x29ad8` | **`-0x60`** |
+| `__TEXT.__oslogstring` | `0x37a40` | `0x37a5a` | **`+0x1a`** |
+| `__TEXT.__unwind_info` | `0xcab8` | `0xcaa8` | **`-0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x23068` | `0x2306c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
- 1638.104.3.0.0
--  __TEXT.__text: 0x26e38c
--  __TEXT.__realtime: 0x29b38
-+  __TEXT.__text: 0x26e4bc
-+  __TEXT.__realtime: 0x29ad8
-   __TEXT.__delay_stubs: 0x100
-   __TEXT.__delay_helper: 0x148
-   __TEXT.__objc_methlist: 0x205c
-   __TEXT.__const: 0x486c
-   __TEXT.__dlopen_cstrs: 0x84f
--  __TEXT.__gcc_except_tab: 0x23068
--  __TEXT.__cstring: 0x22b8d
--  __TEXT.__oslogstring: 0x37a40
--  __TEXT.__unwind_info: 0xcab8
-+  __TEXT.__gcc_except_tab: 0x2306c
-+  __TEXT.__cstring: 0x23618
-+  __TEXT.__oslogstring: 0x37a5a
-+  __TEXT.__unwind_info: 0xcaa8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 9943
 +  Functions: 9942
-   Symbols:   16857
+
 -  CStrings:  7344
 +  CStrings:  7440
- 
 Functions:
 ~ __ZN5boost3msm4back13state_machineIN11SequenceFSM10StateFront11ActiveFrontENS_9parameter5void_ES7_S7_S7_E19handle_defer_helperIS8_iE23do_post_handle_deferredENS1_11HandledEnumE : 544 -> 548
 ~ __ZN5boost3msm4back13state_machineIN11SequenceFSM10StateFrontENS_9parameter5void_ES6_S6_S6_E19handle_defer_helperIS7_iE23do_post_handle_deferredENS1_11HandledEnumE : 544 -> 548

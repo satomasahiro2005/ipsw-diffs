@@ -2,111 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/CoreRE.framework/CoreRE`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x163f820` | `0x16680f8` | **`+0x288d8`** |
+| `__AUTH_CONST.__const` | `0x9b9d0` | `0x9d5b0` | **`+0x1be0`** |
+| `__TEXT.__cstring` | `0xb2fa4` | `0xb4908` | **`+0x1964`** |
+| `__TEXT.__const` | `0x105af4` | `0x106e34` | **`+0x1340`** |
+| `__TEXT.__oslogstring` | `0x512e6` | `0x51c00` | **`+0x91a`** |
+| `__TEXT.__unwind_info` | `0x548a0` | `0x54fe0` | **`+0x740`** |
+| `__DATA_DIRTY.__bss` | `0x593e0` | `0x59a90` | **`+0x6b0`** |
+| `__AUTH_CONST.__cfstring` | `0xb4c0` | `0xb620` | **`+0x160`** |
+| `__TEXT.__gcc_except_tab` | `0xdf3c` | `0xe058` | **`+0x11c`** |
+| `__DATA.__data` | `0x24610` | `0x246c0` | **`+0xb0`** |
+| `__DATA.__common` | `0x6060` | `0x60e0` | **`+0x80`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4708` | `0x4730` | **`+0x28`** |
+| `__DATA_DIRTY.__data` | `0x4278` | `0x4250` | **`-0x28`** |
+| `__DATA.__bss` | `0x70e8` | `0x7108` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0xd380` | `0xd3a0` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x41d8` | `0x41e8` | **`+0x10`** |
+| `__AUTH.__data` | `0x1690` | `0x1698` | **`+0x8`** |
+| `__AUTH_CONST.__auth_got` | `0x3be0` | `0x3be8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -453.0.0.0.11
--  __TEXT.__text: 0x163f820 sha256:d5724ff95510d2926e6f7d7f34e00326dae8576f07c0786cfef163f209efb17b
--  __TEXT.__objc_methlist: 0x41d8 sha256:6be72cff39ea4fea9ac6b2a22d3d83676d64fe32591ae3a03686d2e66d6835ac
--  __TEXT.__const: 0x105af4 sha256:10a45fe56ed7c19ce944809d093ae209980b5dfbec30f13d364a076f2d1cc2c8
--  __TEXT.__constg_swiftt: 0x44 sha256:f527f958cb1a57d012715bab5e111a5ca40a1c67b0b355799d0e911a13f2cc65
--  __TEXT.__swift5_typeref: 0x2f sha256:10207da605e08b3cd5e2661468d5ec7d30d8d20d95eada999a979f84c12b845e
 +453.0.2.0.5
-+  __TEXT.__text: 0x16680f8 sha256:a0365752b10aa12581a9ca4c294c599ebecc408c19161c80642dc6785740922f
-+  __TEXT.__objc_methlist: 0x41e8 sha256:034ae7b48209b1ed8ac5b7fc02c228088f30e2e0379268864a544d1d42fd49a2
-+  __TEXT.__const: 0x106e34 sha256:8b3a733b62c4ed965bbf134eb173bddc46a670a17860ead43502aefb36c880d1
-+  __TEXT.__constg_swiftt: 0x44 sha256:fe25c114b01e9cbf6dc602898be685e98930bb79ebf872549a7eb30c4d94cd88
-+  __TEXT.__swift5_typeref: 0x2f sha256:2927e9fd4f45718966531414b1d22325438071f26b95460212ee251dba451b17
-   __TEXT.__swift5_fieldmd: 0x44 sha256:f0c83c38f52875f39557dd20306b8f6965f9689a379900156af0aa61320c04c9
-   __TEXT.__swift5_reflstr: 0x1f sha256:18f0c0d26f52a7ee19975ef67c9e034dac74134a3fb414bc9b3c43b853aca9c1
-   __TEXT.__swift5_types: 0x8 sha256:2808db043478311ab5c871d35e79d0eac3259563c24eac9d58b011e38501d753
--  __TEXT.__cstring: 0xb2fa4 sha256:00a0f403e6932b699308d1fa0307b93342ef07ceed09c0d453dda0507db09176
--  __TEXT.__gcc_except_tab: 0xdf3c sha256:714dd99e42eeece0829d7d27db710844620350befae0d4fe1424c7e7c3906647
--  __TEXT.__oslogstring: 0x512e6 sha256:591f236ca487e1715d2ad6f3925a24dd74a298efc54c3ae6825e8bb9a0d5e0dc
-+  __TEXT.__cstring: 0xb4908 sha256:664bbd9e77680ce1066ab58ff78f36edcdf9bc143c3a605625e71e040f1a6f53
-+  __TEXT.__gcc_except_tab: 0xe058 sha256:f52a65144ddf07c973bfc6d85d3853cd6e42d241e5b913cc891ea510f61d8591
-+  __TEXT.__oslogstring: 0x51c00 sha256:f86c2d471b615b46bda01a0f245f3d7affe8b153c3cf0f847bf9b256c4a21558
-   __TEXT.__ustring: 0x1a sha256:557b8c818391e39084ce479528d45a9257e26ee716395cb41c88a507e596707f
--  __TEXT.__unwind_info: 0x548a0 sha256:85bdf885bb9626c883430cacf3a9a1abf5efb1270bcafdd70782349c24dd6d70
-+  __TEXT.__unwind_info: 0x54fe0 sha256:5daf54deacc574f4bf3ae5d2eda5d0cac1101f364473248521017840cb4fc0ca
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xd380 sha256:90d71cf6fe86a4e418130768e95d91fbd1677ff02fdb069a715f27da4711c114
--  __DATA_CONST.__objc_classlist: 0x220 sha256:d625d5ff7762b1f45241e15fe04c5ff465734568276b587d0ae8506bb949a56a
--  __DATA_CONST.__objc_catlist: 0x8 sha256:de27b69e7f3be9845a9bd47f48b353a5916e6636f6843e379ee5ff306c5c7c21
--  __DATA_CONST.__objc_protolist: 0xc8 sha256:8561c2e38344ffdc747e2661824c26c1f8ebd768db597f09e28c23dfdc199fcd
-+  __DATA_CONST.__const: 0xd3a0 sha256:e4de2a44f74eedf6b4da42ceadbfe5ae2da2ee9e270cf70b3ed462bfd4f7f6bb
-+  __DATA_CONST.__objc_classlist: 0x220 sha256:3cc028f8d0b62ff6f2f4223155463cd28a6955e686b20c0fde1761cc7804f87f
-+  __DATA_CONST.__objc_catlist: 0x8 sha256:19be5df53ec9f977e3a318355c4ed82e5f6395707b0f897b86aae64a9eebc2a1
-+  __DATA_CONST.__objc_protolist: 0xc8 sha256:a87ed8e7fd01da2d8e5cdb430ef1ea4d0279807f49025923d446ccfe55adc394
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__weak_got: 0x10 sha256:db089a9946ee2f440f1454b6bd081bc906524b106b3b9bd5745c567d00425fed
--  __DATA_CONST.__objc_selrefs: 0x4708 sha256:859bc5fbaa139fe44d85924a64f8e6d77a9f17a0698132e93d85fa98178c8adf
--  __DATA_CONST.__objc_protorefs: 0x48 sha256:328473f1f6089ba9568f1c072d381c2be57022ecf89e125cca9fb485ca849029
--  __DATA_CONST.__objc_superrefs: 0x1c0 sha256:a7cf421c1a60745305b6c4c0958d2a391657b67d8798e8471081524f5e93ba7a
--  __DATA_CONST.__objc_arraydata: 0x10 sha256:8ca72c37cf15363613d69db01ad3b3b13603094ac1a4a8f76992ca1abc92f0d1
--  __DATA_CONST.__got: 0x1038 sha256:548de0cb96932816ffc7021e05f48e485b6d763350ce36ea5bdcf3fa44ceab06
--  __AUTH_CONST.__const: 0x9b9d0 sha256:0c00cc08dc1b2899e3ef966b73a787bf2aac087a89242be34115dcd6300869b8
--  __AUTH_CONST.__cfstring: 0xb4c0 sha256:fcfe9dbb8ee20b2ec1f995252a39ab89e3a08e7636e1123db9991a918e4c422e
--  __AUTH_CONST.__objc_const: 0x7c58 sha256:5bec69cfa4a7311532bcb7c61d8d189f5546b0db30a01d709fb4e6864b573fb2
--  __AUTH_CONST.__weak_auth_got: 0x48 sha256:943d8ba0bdef1a7f246c389b94def9fdff519f87553ac220ac47126f5f303a2d
--  __AUTH_CONST.__objc_intobj: 0x108 sha256:051749b0b1e054f00a62d7ad701c5c9fa4d039ad5e59bf89ae1118fbe5b6f316
--  __AUTH_CONST.__objc_arrayobj: 0x18 sha256:fb57e1cb41dc37f293a8e0dffd5fc0863050a733a83c562b11cc1e3119c0aa0c
--  __AUTH_CONST.__objc_doubleobj: 0x10 sha256:4c0bd9710284c59f3b706ca52bb83f9fed072ae3c86a9bb9619c227df4e4e6f6
--  __AUTH_CONST.__auth_got: 0x3be0 sha256:d1e3521a5593f4d216c1241c65c48c3b4c48411e1913e1db57b8e7bfa3066865
--  __AUTH.__objc_data: 0x50 sha256:322d5b39bd83d6e27a16acde190a4e64f8c1ae5646f6670a3b996154ef143c6e
--  __AUTH.__data: 0x1690 sha256:6871b83c401ec97a1607c339ccb62bcf314e2bd2a64711f465e335ef8aa85466
--  __AUTH.__thread_vars: 0xc0 sha256:589fa6ea1e83465ceff098f5cc8f92bc258b5d1201aff7257636f7793d93b77f
-+  __DATA_CONST.__weak_got: 0x10 sha256:c9b00cf8e5fdc159d5e0657836ccec0cbd1eddc62a50f4b3c9f634c56153dbb7
-+  __DATA_CONST.__objc_selrefs: 0x4730 sha256:8f5481ef0854112b825cca1dc6e7ceca5f9328c3806ff68bb6b6950dd066e9b4
-+  __DATA_CONST.__objc_protorefs: 0x48 sha256:7678963a57eaaf53eede719fc08b3f92efd66dbbc5673557e12da2e79ae3f779
-+  __DATA_CONST.__objc_superrefs: 0x1c0 sha256:59edb8109675aff5a75cb172d2901356a1fd535453a58c46a331547ec09137bd
-+  __DATA_CONST.__objc_arraydata: 0x10 sha256:36e1b181699b9302d008fc4bcbf704834006ae885231f19c5241530850da3a10
-+  __DATA_CONST.__got: 0x1038 sha256:ce485732db63be066cbfd7c1d89b742521b5a6dfa5774b50bcc3f2531a16525c
-+  __AUTH_CONST.__const: 0x9d5b0 sha256:5fac68b19f34949e921803d396d2728aaedcf445ce012b6718216291edcce5d9
-+  __AUTH_CONST.__cfstring: 0xb620 sha256:d2d9ca16429b7f949728a8c85638f1e94e90d1c730efe6ea47d438190d536d40
-+  __AUTH_CONST.__objc_const: 0x7c58 sha256:9adc551677f65c7098de9a2d1e8bcaed2c594677c74430a97e0ff68ed89c1f35
-+  __AUTH_CONST.__weak_auth_got: 0x48 sha256:d7bf4ff1dabe568dc3b7be53432b0ef352bea256c376582cfd8aed52ff15480f
-+  __AUTH_CONST.__objc_intobj: 0x108 sha256:926a6f0ad00a85f54da3b71d064b2ad91bcdbe642c9234c748bbbef7907e63bd
-+  __AUTH_CONST.__objc_arrayobj: 0x18 sha256:d6a6f778b8e035b8d3fd553efaddfb84fba2389d04d0db550036689b78e14f5c
-+  __AUTH_CONST.__objc_doubleobj: 0x10 sha256:00777cc1b57bea7bbc33a631b2bcec3c120df8bad153029e49f2ac74513d1aa7
-+  __AUTH_CONST.__auth_got: 0x3be8 sha256:92b4ce464272624304eaaabcad328aff83636987ba6d124dbc407c115ac9965b
-+  __AUTH.__objc_data: 0x50 sha256:8f77f7d9d9b930a2516e674983ba3531e1f28d77d5d29ad7a23077cdc316ef8b
-+  __AUTH.__data: 0x1698 sha256:8bbcf3ea466c6754a583ab2adf016b743b3b2b1cdcfc75605c5605a01fd81f7b
-+  __AUTH.__thread_vars: 0xc0 sha256:a9bd7a7944527919c736a07436d157c7e2ce89e263cf000a0b3d21eef0486d7a
-   __AUTH.__thread_bss: 0x310 sha256:0c37ddc45244523ca3b841e3ea85e147a1d35c6ae1cd767e8c30dabf057516fd
-   __DATA.__objc_ivar: 0x444 sha256:b9a13adc7c25e42a0825175c64a8a66dbf3b6769d0b8a03109fea52cbe095e65
--  __DATA.__data: 0x24610 sha256:3ce47ad266bd4572234ac3558748b62f9fe3d6e6a186f149e4b42524c8f548b2
--  __DATA.__bss: 0x70e8 sha256:9ec3bebc9ec30ce98414ddfba2d72957dd205eb91fce2db883970f3cc27443e1
--  __DATA.__common: 0x6060 sha256:8f61d1818018b4e4a020e028fd1a1d0c49c1707c9a0120c7bcecac514f0fbcde
-+  __DATA.__data: 0x246c0 sha256:0d3c68e30970b07685b1a563b7113985423a64932cb766837068986791a0775d
-+  __DATA.__bss: 0x7108 sha256:e24ab234a9466b8596d65f340b9a1fa4fd013d11c86beeb2b8aa16711c8f320e
-+  __DATA.__common: 0x60e0 sha256:41df582593426d23160babb9e6d949fc81fbf50fadc0e10a2fc83f619ee15dd0
-   __DATA_DIRTY.__objc_ivar: 0x128 sha256:09948022f1f74b0d946dda9105b18978fed9e23a07023da76baecbd24706980f
--  __DATA_DIRTY.__objc_data: 0x14f0 sha256:6bedb2b91de98010fe03dedf23a5eb8cdd237f56bb8ee3323220e33b884485ae
--  __DATA_DIRTY.__data: 0x4278 sha256:7ba62e46bf019a0e83470cc21d8e1fbaf6df5a1f628620cb2acade068b5c3f21
--  __DATA_DIRTY.__bss: 0x593e0 sha256:3864168a7ead3371d88488960daf473b42adf1e393b81ad68339127ea37cafb7
-+  __DATA_DIRTY.__objc_data: 0x14f0 sha256:d5a817e91ec5cd8925c062a39d10abf4fa728656754cb57c0630abb6bac2f85a
-+  __DATA_DIRTY.__data: 0x4250 sha256:b80167f0c6d29addf42f9b5a342cf08765afdd0d47ed9d02f0d0ea48973a72f4
-+  __DATA_DIRTY.__bss: 0x59a90 sha256:f8a407686d242b86646d7a78f8dd668d01a15344149da9a70ab0baf9dd2d0400
-   __DATA_DIRTY.__common: 0x3978 sha256:a31f980fd2b3d0f88556884f7825d2a15aeb9b3393c9498ab42987813c2f7865
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/swift/libswiftObservation.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
--  UUID: 230A8736-3CC9-3A6F-8C84-26A5296C3205
 -  Functions: 85725
--  Symbols:   211218
--  CStrings:  24412
-+  UUID: 00006DCC-12F6-309C-9576-E1CE3F87E6A9
+-  Symbols:   120626
+-  CStrings:  22930
 +  Functions: 86196
-+  Symbols:   212330
-+  CStrings:  24626
- 
++  Symbols:   121275
++  CStrings:  23133
 Symbols:
 + -[REPHASEContext uniqueSelectionQueueLengthForRepeatAvoidance:depth:fileCount:]
 + GCC_except_table142
@@ -119,14 +50,6 @@ Symbols:
 + GCC_except_table251
 + GCC_except_table255
 + GCC_except_table260
-+ _.str.300
-+ _.str.331
-+ _.str.337
-+ _.str.435
-+ _.str.477
-+ _.str.968
-+ _.str.969
-+ _.str.970
 + _CGColorSpaceCreateWithID
 + _CGColorSpaceGetID
 + _REAcousticMeshAssetCreateWithGeomModelDescriptor
@@ -567,7 +490,6 @@ Symbols:
 + __ZN2reL30getSceneUnderstandingDepthDataERNS_18RenderGraphContextE
 + __ZN2reL8isTypeOfINS_4ecs221BloomOptionsComponentEPNS1_9ComponentELi0EEEbT0_
 + __ZN3MTL7Private8Selector31s_ksetTileBytes_length_atIndex_E
-+ __ZN3MTL7Private8Selector35s_knamesetTileBytes_length_atIndex_E
 + __ZN5physx22PxSimulationStatisticsC2Ev
 + __ZNK14MemStorageCore9lastIndexEv
 + __ZNK2re11BucketSliceINS_14MeshPartBoundsELm256EEixEm
@@ -3202,16 +3124,7 @@ Symbols:
 + __ZZNSt3__112__hash_tableIPN2re4ecs25SceneENS_4hashIS4_EENS_8equal_toIS4_EENS_9allocatorIS4_EEE16__emplace_uniqueB9fqn220106IJRKS4_EEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIS4_PvEEEEbEEDpOT_ENKUlSE_SE_E_clESE_SE_
 + __ZZNSt3__112__hash_tableIyNS_4hashIyEENS_8equal_toIyEENS_9allocatorIyEEE16__emplace_uniqueB9fqe220106IJRKyEEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIyPvEEEEbEEDpOT_ENKUlSA_SA_E_clESA_SA_
 + __ZZNSt3__112__hash_tableIyNS_4hashIyEENS_8equal_toIyEENS_9allocatorIyEEE16__emplace_uniqueB9fqn220106IJRKyEEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIyPvEEEEbEEDpOT_ENKUlSA_SA_E_clESA_SA_
-+ ___62-[REPHASEContext prepareGeneratorType:phaseEntity:completion:]_block_invoke.103
 + ____ZN12_GLOBAL__N_119forcedPbrBlurMethodEv_block_invoke
-+ ___block_descriptor_tmp.3784
-+ ___block_descriptor_tmp.3787
-+ ___block_descriptor_tmp.3790
-+ ___block_descriptor_tmp.3793
-+ ___block_literal_global.3786
-+ ___block_literal_global.3789
-+ ___block_literal_global.3792
-+ ___block_literal_global.3795
 + ___const._ZN2re20FeatureStencilStates22getDepthMitigationInfoENS0_20DepthMitigationUsageE.kReadDefocusedStencilInfo
 + ___const._ZN2re20FeatureStencilStates22getDepthMitigationInfoENS0_20DepthMitigationUsageE.kWriteFocusedStencilInfo
 + ___const._ZNSt3__116__variant_detail12__visitation6__base11__visit_altB9fqe220106INS1_9__variant15__value_visitorIN2re8internal10overloadedIJZNS6_5audio29convertToAcousticMeshAdditionERKNS_7variantIJNS9_22AcousticMeshUpdateDataENS9_27AcousticARKitMeshUpdateDataENS9_29AcousticVirtualMeshUpdateDataEEEEE3$_0ZNS9_29convertToAcousticMeshAdditionESG_E3$_1ZNS9_29convertToAcousticMeshAdditionESG_E3$_2EEEEEJRKNS0_6__implIJSB_SC_SD_EEEEEEDcOT_DpOT0_.__fmatrix
@@ -3248,16 +3161,6 @@ Symbols:
 + ___const._ZNSt3__116__variant_detail12__visitation6__base14__visit_alt_atB9fqn220106IZNS0_6__ctorINS0_8__traitsIJN2re23AssetNetworkSharingModeENS6_9HashTableINS6_13DynamicStringEyNS6_4HashIS9_EENS6_7EqualToIS9_EELb1ELb0EEENS6_19AssetLoadDescriptorES9_NS6_18NetworkActionQueue6Action15NetworkLoadDataEEEEE19__generic_constructB9fqn220106IRKNS0_18__copy_constructorISJ_LNS0_6_TraitE1EEEEEvRSK_OT_EUlST_E_JSQ_EEEDcmST_DpOT0_.__fdiagonal
 + ___const._ZNSt3__116__variant_detail12__visitation6__base14__visit_alt_atB9fqn220106IZNS0_6__ctorINS0_8__traitsIJU8__strongP6NSDataU8__strongP16AVAudioPCMBufferU8__strongP5NSURLEEEE19__generic_constructB9fqn220106IRKNS0_18__copy_constructorISF_LNS0_6_TraitE1EEEEEvRSG_OT_EUlSP_E_JSM_EEEDcmSP_DpOT0_.__fdiagonal
 + ___func__._ZN2re10FixedArrayIfEaSEOS1_
-+ _objc_msgSend$addAsset:andMixerIdentifiers:forIdentifier:withAssetID:
-+ _objc_msgSend$enableSubsurfaceScattering
-+ _objc_msgSend$getAssetWithIdentifier:fromAssetID:
-+ _objc_msgSend$mixerIdentifiers
-+ _objc_msgSend$prepareWithOptions:commandBuffer:error:
-+ _objc_msgSend$reason
-+ _objc_msgSend$setCgColorSpace:
-+ _objc_msgSend$setSortingMode:
-+ _objc_msgSend$setSplattingMode:
-+ _objc_msgSend$uniqueSelectionQueueLengthForRepeatAvoidance:depth:fileCount:
 - GCC_except_table151
 - GCC_except_table190
 - GCC_except_table194
@@ -3268,11 +3171,6 @@ Symbols:
 - GCC_except_table254
 - GCC_except_table258
 - _$sSqMa
-- _.str.299
-- _.str.330
-- _.str.336
-- _.str.433
-- _.str.476
 - _REEntityFindNonHiddenInHierarchyByName
 - _REEntityGetNonHiddenChild
 - _REEntityGetNonHiddenChildCount
@@ -5703,15 +5601,6 @@ Symbols:
 - __ZZNSt3__112__hash_tableIPN2re4ecs25SceneENS_4hashIS4_EENS_8equal_toIS4_EENS_9allocatorIS4_EEE16__emplace_uniqueB9fqn220100IJRKS4_EEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIS4_PvEEEEbEEDpOT_ENKUlSE_SE_E_clESE_SE_
 - __ZZNSt3__112__hash_tableIyNS_4hashIyEENS_8equal_toIyEENS_9allocatorIyEEE16__emplace_uniqueB9fqe220100IJRKyEEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIyPvEEEEbEEDpOT_ENKUlSA_SA_E_clESA_SA_
 - __ZZNSt3__112__hash_tableIyNS_4hashIyEENS_8equal_toIyEENS_9allocatorIyEEE16__emplace_uniqueB9fqn220100IJRKyEEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIyPvEEEEbEEDpOT_ENKUlSA_SA_E_clESA_SA_
-- ___62-[REPHASEContext prepareGeneratorType:phaseEntity:completion:]_block_invoke.98
-- ___block_descriptor_tmp.3768
-- ___block_descriptor_tmp.3771
-- ___block_descriptor_tmp.3774
-- ___block_descriptor_tmp.3777
-- ___block_literal_global.3770
-- ___block_literal_global.3773
-- ___block_literal_global.3776
-- ___block_literal_global.3779
 - ___const._ZNSt3__116__variant_detail12__visitation6__base11__visit_altB9fqe220100INS1_9__variant15__value_visitorIN2re8internal10overloadedIJZNS6_5audio29convertToAcousticMeshAdditionERKNS_7variantIJNS9_22AcousticMeshUpdateDataENS9_27AcousticARKitMeshUpdateDataENS9_29AcousticVirtualMeshUpdateDataEEEEE3$_0ZNS9_29convertToAcousticMeshAdditionESG_E3$_1ZNS9_29convertToAcousticMeshAdditionESG_E3$_2EEEEEJRKNS0_6__implIJSB_SC_SD_EEEEEEDcOT_DpOT0_.__fmatrix
 - ___const._ZNSt3__116__variant_detail12__visitation6__base11__visit_altB9fqe220100INS1_9__variant15__value_visitorIN2re8internal10overloadedIJZNS6_5audio38getPhase1AcousticMeshEventSignpostDataERKNS6_5QueueINS_7variantIJNS6_12DynamicArrayINS9_23AcousticMeshRemovalDataEEENSC_INSB_IJNS9_16AcousticMeshDataENS9_21AcousticARKitMeshDataENS9_23AcousticVirtualMeshDataEEEEEENSC_INSB_IJNS9_22AcousticMeshUpdateDataENS9_27AcousticARKitMeshUpdateDataENS9_29AcousticVirtualMeshUpdateDataEEEEEEEEEEEE3$_0ZNS9_38getPhase1AcousticMeshEventSignpostDataESS_E3$_1ZNS9_38getPhase1AcousticMeshEventSignpostDataESS_E3$_2EEEEEJRKNS0_6__implIJSE_SJ_SO_EEEEEEDcOT_DpOT0_.__fmatrix
 - ___const._ZNSt3__116__variant_detail12__visitation6__base11__visit_altB9fqe220100INS1_9__variant15__value_visitorIN2re8internal10overloadedIJZNS6_5audio38getPhase3AcousticMeshEventSignpostDataERKNS6_5QueueINSA_INS_7variantIJNS6_12DynamicArrayINS9_23AcousticMeshRemovalDataEEENSC_INS9_17PHASEOccluderDataEEENSC_INS9_23PHASEOccluderUpdateDataEEEEEEEEEEE3$_0ZNS9_38getPhase3AcousticMeshEventSignpostDataESN_E3$_1ZNS9_38getPhase3AcousticMeshEventSignpostDataESN_E3$_2EEEEEJRKNS0_6__implIJSE_SG_SI_EEEEEEDcOT_DpOT0_.__fmatrix
@@ -5745,9 +5634,6 @@ Symbols:
 - ___const._ZNSt3__116__variant_detail12__visitation6__base14__visit_alt_atB9fqn220100IZNS0_6__ctorINS0_8__traitsIJN2re13DynamicStringENS6_4DataEEEEE19__generic_constructB9fqn220100INS0_18__move_constructorIS9_LNS0_6_TraitE1EEEEEvRSA_OT_EUlSH_E_JSE_EEEDcmSH_DpOT0_.__fdiagonal
 - ___const._ZNSt3__116__variant_detail12__visitation6__base14__visit_alt_atB9fqn220100IZNS0_6__ctorINS0_8__traitsIJN2re23AssetNetworkSharingModeENS6_9HashTableINS6_13DynamicStringEyNS6_4HashIS9_EENS6_7EqualToIS9_EELb1ELb0EEENS6_19AssetLoadDescriptorES9_NS6_18NetworkActionQueue6Action15NetworkLoadDataEEEEE19__generic_constructB9fqn220100IRKNS0_18__copy_constructorISJ_LNS0_6_TraitE1EEEEEvRSK_OT_EUlST_E_JSQ_EEEDcmST_DpOT0_.__fdiagonal
 - ___const._ZNSt3__116__variant_detail12__visitation6__base14__visit_alt_atB9fqn220100IZNS0_6__ctorINS0_8__traitsIJU8__strongP6NSDataU8__strongP16AVAudioPCMBufferU8__strongP5NSURLEEEE19__generic_constructB9fqn220100IRKNS0_18__copy_constructorISF_LNS0_6_TraitE1EEEEEvRSG_OT_EUlSP_E_JSM_EEEDcmSP_DpOT0_.__fdiagonal
-- _objc_msgSend$computeCentroidsGPUWith:
-- _objc_msgSend$computeCovariancesWith:error:
-- _objc_msgSend$subsurfaceMode
 CStrings:
 + "%llu%llu%hhu"
 + "Asset Before Frame Update"
@@ -5992,5 +5878,4 @@ CStrings:
 - "m_deformedMeshPartIndicesVertexCounts"
 - "occlusionCulling:forceLoadResources"
 - "outputUniformPostTessellationIndices"
-
 ```

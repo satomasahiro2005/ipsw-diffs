@@ -2,84 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/Dyld.framework/Dyld`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x51d0c` | `0x51ad8` | **`-0x234`** |
+| `__TEXT.__cstring` | `0x1374` | `0x13d7` | **`+0x63`** |
+| `__DATA.__data` | `0xbb8` | `0xb78` | **`-0x40`** |
+| `__TEXT.__swift5_typeref` | `0xd71` | `0xd3b` | **`-0x36`** |
+| `__TEXT.__const` | `0x3438` | `0x3408` | **`-0x30`** |
+| `__DATA_CONST.__got` | `0x258` | `0x240` | **`-0x18`** |
+| `__AUTH.__data` | `0x1680` | `0x1670` | **`-0x10`** |
+| `__AUTH_CONST.__weak_auth_got` | `—` | `0x10` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x11e0` | `0x11e8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x51d0c
-+  __TEXT.__text: 0x51ad8
-   __TEXT.__objc_methlist: 0x6ac
--  __TEXT.__const: 0x3438
--  __TEXT.__swift5_typeref: 0xd71
-+  __TEXT.__const: 0x3408
-+  __TEXT.__swift5_typeref: 0xd3b
-   __TEXT.__swift5_fieldmd: 0x1258
-   __TEXT.__constg_swiftt: 0xf70
--  __TEXT.__cstring: 0x1374
-+  __TEXT.__cstring: 0x13d7
-   __TEXT.__swift5_builtin: 0xdc
-   __TEXT.__swift5_mpenum: 0x70
-   __TEXT.__swift5_reflstr: 0xe26
+-27056.0.0.0.0
++27059.3.0.0.0
 
-   __TEXT.__swift5_types2: 0x2c
-   __TEXT.__swift5_capture: 0x90
-   __TEXT.__gcc_except_tab: 0xa18
--  __TEXT.__unwind_info: 0x11e0
-+  __TEXT.__unwind_info: 0x11e8
-   __TEXT.__eh_frame: 0x1470
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x370
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__got: 0x258
-+  __DATA_CONST.__got: 0x240
-   __AUTH_CONST.__const: 0x2050
-   __AUTH_CONST.__cfstring: 0x60
-   __AUTH_CONST.__objc_const: 0x1b70
-+  __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__auth_got: 0xb68
-   __AUTH.__objc_data: 0x640
--  __AUTH.__data: 0x1680
--  __DATA.__data: 0xbb8
-+  __AUTH.__data: 0x1670
-+  __DATA.__data: 0xb78
-   __DATA.__crash_info: 0x148
-   __DATA.__bss: 0x3300
-   __DATA.__common: 0x60
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 1454
--  Symbols:   1343
--  CStrings:  151
+-  Symbols:   1054
+-  CStrings:  148
 +  Functions: 1448
-+  Symbols:   1344
-+  CStrings:  155
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_types2 : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
++  Symbols:   1051
++  CStrings:  152
 Symbols:
 + __ZNSt3__119__allocate_at_leastB9fqn220106INS_9allocatorIjEENS_16allocator_traitsIS2_EEEENS_19__allocation_resultINT0_7pointerENS6_9size_typeEEERT_m
 + __ZNSt3__16vectorIjNS_9allocatorIjEEE20__throw_length_errorB9fqn220106Ev
@@ -111,5 +60,4 @@ CStrings:
 + "ProcessScavenger.cpp"
 + "TaskSuspender"
 + "threadCount > 0"
-
 ```

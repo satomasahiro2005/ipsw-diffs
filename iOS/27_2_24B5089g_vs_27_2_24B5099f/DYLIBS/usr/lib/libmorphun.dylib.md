@@ -2,14 +2,9 @@
 
 > `/usr/lib/libmorphun.dylib`
 
-```diff
+### Section Size Changes
 
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__data: 0x8
--  __DATA_DIRTY.__bss: 0x468
-+  __DATA_DIRTY.__bss: 0x470
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libThaiTokenizer.dylib
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x990` | `0x988` | **`-0x8`** |
+| `__DATA_DIRTY.__bss` | `0x468` | `0x470` | **`+0x8`** |

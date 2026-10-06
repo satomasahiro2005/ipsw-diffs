@@ -2,56 +2,33 @@
 
 > `/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBNNS.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1137a2c` | `0x113f1d4` | **`+0x77a8`** |
+| `__TEXT.__const` | `0x62a3c` | `0x6323c` | **`+0x800`** |
+| `__TEXT.__gcc_except_tab` | `0x2e3e4` | `0x2e95c` | **`+0x578`** |
+| `__AUTH_CONST.__const` | `0x3a830` | `0x3ad60` | **`+0x530`** |
+| `__TEXT.__cstring` | `0x5f847` | `0x5fc50` | **`+0x409`** |
+| `__TEXT.__unwind_info` | `0x1bda8` | `0x1c150` | **`+0x3a8`** |
+| `__TEXT.__eh_frame` | `0xd9e8` | `0xdae0` | **`+0xf8`** |
+| `__AUTH.__data` | `0x2220` | `0x2240` | **`+0x20`** |
+| `__DATA.__data` | `0x2858` | `0x2878` | **`+0x20`** |
+| `__DATA.__common` | `0x1098` | `0x10a0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1137a2c
--  __TEXT.__const: 0x62a3c
--  __TEXT.__gcc_except_tab: 0x2e3e4
--  __TEXT.__cstring: 0x5f847
-+  __TEXT.__text: 0x113f1d4
-+  __TEXT.__const: 0x6323c
-+  __TEXT.__gcc_except_tab: 0x2e95c
-+  __TEXT.__cstring: 0x5fc50
-   __TEXT.__oslogstring: 0x3a6
--  __TEXT.__unwind_info: 0x1bda8
--  __TEXT.__eh_frame: 0xd9e8
-+  __TEXT.__unwind_info: 0x1c150
-+  __TEXT.__eh_frame: 0xdae0
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x6da0
-   __DATA_CONST.__weak_got: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x3a830
-+  __AUTH_CONST.__const: 0x3ad60
-   __AUTH_CONST.__cfstring: 0x440
-   __AUTH_CONST.__weak_auth_got: 0x50
-   __AUTH_CONST.__auth_got: 0xb60
--  __AUTH.__data: 0x2220
--  __DATA.__data: 0x2858
-+  __AUTH.__data: 0x2240
-+  __DATA.__data: 0x2878
-   __DATA.__bss: 0x7f8
--  __DATA.__common: 0x1098
-+  __DATA.__common: 0x10a0
-   __DATA_DIRTY.__data: 0x578
-   __DATA_DIRTY.__bss: 0x380
-   - /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBLAS.dylib
+-2211.0.0.0.1
++2212.0.4.0.0
 
-   - /System/Library/PrivateFrameworks/MIL.framework/MIL
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 39318
 +  Functions: 39486
-   Symbols:   827
--  CStrings:  8740
-+  CStrings:  8761
- 
-Sections:
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA_DIRTY.__data : content changed
+
+-  CStrings:  8701
++  CStrings:  8722
 CStrings:
 + " must be tensor of 1-bit unsigned integer values, but got "
 + " must be tensor of 4-bit unsigned integer or 4-bit signed integer or 8-bit unsigned integer or 8-bit signed integer or bfloat16 type or 16-bit float or 32-bit float values, but got "
@@ -78,5 +55,4 @@ CStrings:
 + "sparse_to_dense: failed to parse output"
 - "BasicNeuralNetworkSubroutines-2211.0.0.0.1~50"
 - "ConvertSDPAOp: custom scale is not supported"
-
 ```

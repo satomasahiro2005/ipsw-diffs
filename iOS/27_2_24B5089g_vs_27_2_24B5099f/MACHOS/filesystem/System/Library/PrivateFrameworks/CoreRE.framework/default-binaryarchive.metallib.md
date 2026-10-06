@@ -2,24 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/CoreRE.framework/default-binaryarchive.metallib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__metallib` | `0xe614e0` | `0xe9d490` | **`+0x3bfb0`** |
+| `__TEXT.__vertex` | `0x1d0300` | `0x1bba50` | **`-0x148b0`** |
+| `__TEXT.__reflection` | `0x8db60` | `0x92b90` | **`+0x5030`** |
+| `__TEXT.__descriptor` | `0x1d9b0` | `0x205e0` | **`+0x2c30`** |
+| `__TEXT.__fragment` | `0x262a40` | `0x263a30` | **`+0xff0`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__compute`
-
-```diff
-
--  __TEXT.__reflection: 0x8db60
--  __TEXT.__vertex: 0x1e1650
--  __TEXT.__fragment: 0x265790
-+  __TEXT.__reflection: 0x92b90
-+  __TEXT.__vertex: 0x1c2ee0
-+  __TEXT.__fragment: 0x266330
-   __TEXT.__compute: 0x52730
--  __TEXT.__descriptor: 0x1d9b0
--  __TEXT.__metallib: 0xe614e0
-+  __TEXT.__descriptor: 0x205e0
-+  __TEXT.__metallib: 0xe9d490
-   Functions: 0
-   Symbols:   0
-   CStrings:  0
-```

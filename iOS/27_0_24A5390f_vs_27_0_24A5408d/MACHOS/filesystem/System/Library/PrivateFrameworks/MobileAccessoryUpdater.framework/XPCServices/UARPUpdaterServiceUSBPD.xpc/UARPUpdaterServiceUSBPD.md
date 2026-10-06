@@ -2,51 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/MobileAccessoryUpdater.framework/XPCServices/UARPUpdaterServiceUSBPD.xpc/UARPUpdaterServiceUSBPD`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_ivar`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x24cc8` | `0x24d58` | **`+0x90`** |
+| `__TEXT.__objc_methtype` | `0x3942` | `0x39a0` | **`+0x5e`** |
+| `__TEXT.__unwind_info` | `0x858` | `0x860` | **`+0x8`** |
+| `__TEXT.__objc_methname` | `0x483b` | `0x483f` | **`+0x4`** |
+| `__TEXT.__cstring` | `0x3100` | `0x3101` | **`+0x1`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_ivar`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
 -1587.0.27.0.0
--  __TEXT.__text: 0x24cc8
 +1587.2.2.0.0
-+  __TEXT.__text: 0x24d58
-   __TEXT.__auth_stubs: 0x8c0
-   __TEXT.__objc_stubs: 0x35a0
-   __TEXT.__objc_methlist: 0x1ac0
-   __TEXT.__const: 0xd0
-   __TEXT.__oslogstring: 0x2a7b
--  __TEXT.__cstring: 0x3100
-+  __TEXT.__cstring: 0x3101
-   __TEXT.__objc_classname: 0x1c4
--  __TEXT.__objc_methtype: 0x3942
-+  __TEXT.__objc_methtype: 0x39a0
-   __TEXT.__gcc_except_tab: 0x24
--  __TEXT.__objc_methname: 0x483b
--  __TEXT.__unwind_info: 0x858
-+  __TEXT.__objc_methname: 0x483f
-+  __TEXT.__unwind_info: 0x860
-   __DATA_CONST.__const: 0x740
-   __DATA_CONST.__cfstring: 0x640
-   __DATA_CONST.__objc_classlist: 0x60
 
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/liblzma.5.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1136
 -  Symbols:   601
 +  Functions: 1138
 +  Symbols:   603
-   CStrings:  1600
- 
 Symbols:
 + _UARPLayer2RequestAssetBuffer
 + _UARPLayer2ReturnAssetBuffer

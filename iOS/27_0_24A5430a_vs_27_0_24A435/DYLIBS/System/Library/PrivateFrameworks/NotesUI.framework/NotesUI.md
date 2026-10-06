@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/NotesUI.framework/NotesUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2bfd78` | `0x2bfe1c` | **`+0xa4`** |
+| `__AUTH_CONST.__auth_got` | `0x3360` | `0x3358` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 3001.2.2.0.0
--  __TEXT.__text: 0x2bfd78
-+  __TEXT.__text: 0x2bfe1c
-   __TEXT.__delay_stubs: 0x40
-   __TEXT.__delay_helper: 0x6ec
-   __TEXT.__init_offsets: 0x4
-
-   __AUTH_CONST.__objc_intobj: 0x660
-   __AUTH_CONST.__objc_doubleobj: 0x120
-   __AUTH_CONST.__objc_dictobj: 0x50
--  __AUTH_CONST.__auth_got: 0x3360
-+  __AUTH_CONST.__auth_got: 0x3358
-   __AUTH.__objc_data: 0x40c8
-   __AUTH.__data: 0x1c50
-   __DATA.__objc_ivar: 0x11d4
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 14940
--  Symbols:   22166
-+  Symbols:   22165
-   CStrings:  3268
- 
+-  Symbols:   15942
++  Symbols:   15941
 Symbols:
 - _objc_retain_x12
 Functions:

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SentencePieceInternal.framework/SentencePieceInternal`
 
-```diff
+### Section Size Changes
 
- 70.0.0.0.0
--  __TEXT.__text: 0x7d04c
-+  __TEXT.__text: 0x7d0ac
-   __TEXT.__objc_methlist: 0x208
-   __TEXT.__const: 0x2487
-   __TEXT.__gcc_except_tab: 0x87a4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7d04c` | `0x7d0ac` | **`+0x60`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNK13sentencepiece7unigram5Model15EncodeOptimizedENSt3__117basic_string_viewIcNS2_11char_traitsIcEEEE : 1236 -> 1252
 ~ __ZNK13sentencepiece10normalizer10Normalizer9NormalizeENSt3__117basic_string_viewIcNS2_11char_traitsIcEEEEPNS2_12basic_stringIcS5_NS2_9allocatorIcEEEEPNS2_6vectorImNS8_ImEEEE : 2256 -> 2260

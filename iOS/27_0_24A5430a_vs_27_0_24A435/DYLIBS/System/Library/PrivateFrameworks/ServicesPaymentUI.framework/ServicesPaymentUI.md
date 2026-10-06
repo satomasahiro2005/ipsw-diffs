@@ -2,15 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/ServicesPaymentUI.framework/ServicesPaymentUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa9400` | `0xa7a0c` | **`-0x19f4`** |
+
+### Other Changes
+
 ```diff
 
 -1.0.30.0.0
--  __TEXT.__text: 0xa9400
 +1.0.31.0.0
-+  __TEXT.__text: 0xa7a0c
-   __TEXT.__objc_methlist: 0x97c
-   __TEXT.__const: 0x7798
-   __TEXT.__swift5_typeref: 0x3aba
 Functions:
 ~ _$ss17_NativeDictionaryV4copyyyFSS_ypXpTgq5 : 352 -> 356
 ~ _$s17ServicesPaymentUI13aesCBCEncrypt33_5967CE67EF5C9EBF32D06ED26F73A887LL3key2iv4data10Foundation4DataVAI_A2ItKF : 59164 -> 61380

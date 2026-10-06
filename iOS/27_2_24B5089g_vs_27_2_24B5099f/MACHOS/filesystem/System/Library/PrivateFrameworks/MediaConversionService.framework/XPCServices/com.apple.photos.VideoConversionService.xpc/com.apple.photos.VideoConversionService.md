@@ -2,76 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/MediaConversionService.framework/XPCServices/com.apple.photos.VideoConversionService.xpc/com.apple.photos.VideoConversionService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__gcc_except_tab`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x22678` | `0x22a2c` | **`+0x3b4`** |
+| `__TEXT.__cstring` | `0x3627` | `0x3899` | **`+0x272`** |
+| `__TEXT.__objc_stubs` | `0x62e0` | `0x6480` | **`+0x1a0`** |
+| `__TEXT.__objc_methname` | `0x827c` | `0x83dd` | **`+0x161`** |
+| `__DATA_CONST.__cfstring` | `0x27c0` | `0x28a0` | **`+0xe0`** |
+| `__TEXT.__oslogstring` | `0x3008` | `0x30db` | **`+0xd3`** |
+| `__DATA.__objc_selrefs` | `0x1d80` | `0x1de0` | **`+0x60`** |
+| `__DATA.__objc_const` | `0x2dd8` | `0x2e18` | **`+0x40`** |
+| `__TEXT.__objc_methlist` | `0x1eac` | `0x1edc` | **`+0x30`** |
+| `__TEXT.__auth_stubs` | `0xb00` | `0xb20` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x7c8` | `0x7e0` | **`+0x18`** |
+| `__DATA_CONST.__auth_got` | `0x590` | `0x5a0` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x7c0` | `0x7c8` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x254` | `0x258` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
 - `__DATA_CONST.__const`
 - `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__gcc_except_tab`
+
+### Other Changes
 
 ```diff
 
 -916.45.110.0.0
--  __TEXT.__text: 0x21e64
--  __TEXT.__auth_stubs: 0xb00
--  __TEXT.__objc_stubs: 0x62e0
--  __TEXT.__objc_methlist: 0x1eac
 +916.51.202.0.0
-+  __TEXT.__text: 0x2220c
-+  __TEXT.__auth_stubs: 0xb20
-+  __TEXT.__objc_stubs: 0x6480
-+  __TEXT.__objc_methlist: 0x1edc
-   __TEXT.__dlopen_cstrs: 0xbe
-   __TEXT.__const: 0x1c0
-   __TEXT.__gcc_except_tab: 0xb68
--  __TEXT.__objc_methname: 0x827c
--  __TEXT.__oslogstring: 0x3008
--  __TEXT.__cstring: 0x3627
-+  __TEXT.__objc_methname: 0x83dd
-+  __TEXT.__oslogstring: 0x30db
-+  __TEXT.__cstring: 0x3899
-   __TEXT.__objc_classname: 0x3d5
-   __TEXT.__objc_methtype: 0xd26
--  __TEXT.__unwind_info: 0x8e8
-+  __TEXT.__unwind_info: 0x8f8
-   __DATA_CONST.__const: 0xc20
--  __DATA_CONST.__cfstring: 0x27c0
-+  __DATA_CONST.__cfstring: 0x28a0
-   __DATA_CONST.__objc_classlist: 0xb0
-   __DATA_CONST.__objc_protolist: 0x38
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x68
-   __DATA_CONST.__objc_intobj: 0x48
--  __DATA_CONST.__auth_got: 0x590
--  __DATA_CONST.__got: 0x7c8
--  __DATA.__objc_const: 0x2dd8
--  __DATA.__objc_selrefs: 0x1d80
--  __DATA.__objc_ivar: 0x254
-+  __DATA_CONST.__auth_got: 0x5a0
-+  __DATA_CONST.__got: 0x7e0
-+  __DATA.__objc_const: 0x2e18
-+  __DATA.__objc_selrefs: 0x1de0
-+  __DATA.__objc_ivar: 0x258
-   __DATA.__objc_data: 0x6e0
-   __DATA.__data: 0x2a0
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libperfcheck.dylib
 -  Functions: 695
 -  Symbols:   431
 -  CStrings:  1928
 +  Functions: 699
 +  Symbols:   436
 +  CStrings:  1952
- 
 Symbols:
 + _OBJC_CLASS_$_NSThread
 + _OBJC_CLASS_$_PFRadarComponent

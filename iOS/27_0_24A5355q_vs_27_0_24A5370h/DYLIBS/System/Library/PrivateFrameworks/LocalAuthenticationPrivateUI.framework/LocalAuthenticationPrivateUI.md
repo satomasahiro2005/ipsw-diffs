@@ -2,85 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/LocalAuthenticationPrivateUI.framework/LocalAuthenticationPrivateUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2e738` | `0x315fc` | **`+0x2ec4`** |
+| `__TEXT.__gcc_except_tab` | `0x31c8` | `0x37c4` | **`+0x5fc`** |
+| `__AUTH_CONST.__objc_const` | `0x3930` | `0x3be0` | **`+0x2b0`** |
+| `__TEXT.__objc_methlist` | `0x1744` | `0x19a4` | **`+0x260`** |
+| `__DATA_CONST.__objc_selrefs` | `0x14c0` | `0x16b0` | **`+0x1f0`** |
+| `__TEXT.__unwind_info` | `0x12f8` | `0x14a8` | **`+0x1b0`** |
+| `__TEXT.__cstring` | `0xda3` | `0xe18` | **`+0x75`** |
+| `__AUTH.__objc_data` | `0x730` | `0x780` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x3a0` | `0x3d8` | **`+0x38`** |
+| `__AUTH_CONST.__objc_intobj` | `0x2a0` | `0x2d0` | **`+0x30`** |
+| `__DATA.__objc_ivar` | `0x348` | `0x370` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x530` | `0x558` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x880` | `0x8a0` | **`+0x20`** |
+| `__TEXT.__const` | `0x8f8` | `0x918` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0xc0` | `0xc8` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0xa8` | `0xb0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2305.0.0.0.1
--  __TEXT.__text: 0x2e738 sha256:048ed50e795ce058b88c90b4fbebc3896992eaacdd56a8cfbf305231ff2bdc70
--  __TEXT.__objc_methlist: 0x1744 sha256:7fbb5d99da6059d5e17738d709b149713efaaf23ac7c8825ae2c6fdc43b9766e
--  __TEXT.__const: 0x8f8 sha256:5061722c02f472d941d0a8e977e6ae097b5dea4dbe46b9a846e80ef7819fe553
--  __TEXT.__gcc_except_tab: 0x31c8 sha256:9ea06b512b6c708886422e31b68542251dec79be02b4ee70bcee705a94f26d7b
--  __TEXT.__cstring: 0xda3 sha256:8c1e97db4c4750fdb1b445b60053442969faa7d63d148c41d49f450c51a693b2
 +2319.0.16.502.1
-+  __TEXT.__text: 0x315fc sha256:599705703112b5b6ffffafefd3d0840f94a663b35b88e4191334baa1e89571c2
-+  __TEXT.__objc_methlist: 0x19a4 sha256:fca1db6fa9f629384caed368fe32e2f26b4a50d94fc4f9622f22839c019f6873
-+  __TEXT.__const: 0x918 sha256:c3029bd8a6a00b39c30b1ae6fdb0221fc567032fc273701bb1efe03d8c9bd638
-+  __TEXT.__gcc_except_tab: 0x37c4 sha256:5614549134bc738199b3d49d9bc0cf9b9b0803dcc4ae90cb86f570c94a3fdc45
-+  __TEXT.__cstring: 0xe18 sha256:aa4b89aa80c1f42fd61cf61651034f7cc5f911886b8f14adac5c93512bc842a1
-   __TEXT.__oslogstring: 0x51d sha256:aac915a4f69817f0ca775f40e4d6e2e9d5f97a760341e458d8f39d5a1d519014
--  __TEXT.__unwind_info: 0x12f8 sha256:300ced3d5f65773c60a48f771dcb9b7f890d3188548ad8990b8f1e1e89a66471
-+  __TEXT.__unwind_info: 0x14a8 sha256:1360297630f7607630f23ec94957028db465f199e38fc5fdeef9240abb353419
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x530 sha256:d85195a26d0e3c48a6454254aca6ed7fab134af45d6d0cf2c2887b2cf4aca0c0
--  __DATA_CONST.__objc_classlist: 0xc0 sha256:fb267765d37a3cc19ae1bf0e7592529a2207dd2ea6081b2709d36b6c45137a65
--  __DATA_CONST.__objc_catlist: 0x8 sha256:c3d36bd347008163b46fcd45b403fa2329600ab78e7ef22597ab68a19c58b850
--  __DATA_CONST.__objc_protolist: 0x40 sha256:653d6403ff9595d02e2ba8470cb46b5ef1ec6d3e806df6eb20184225fc956df7
-+  __DATA_CONST.__const: 0x558 sha256:f7ee51c26a72277c7cd1760b376a25af079ad50847de9e7220a37ae8f565c0b2
-+  __DATA_CONST.__objc_classlist: 0xc8 sha256:cc7101034f76c0708452ba45f84fba39ef6ccdc36410bc543c991440992bb2a9
-+  __DATA_CONST.__objc_catlist: 0x8 sha256:c3a00cfd34a82090d4e3ed5313713b85e83496fb4812d18f445372a2f254aeb1
-+  __DATA_CONST.__objc_protolist: 0x40 sha256:c5bd6a118ee417377993bee1d9085ccd2d879f04c1af6c66149e865f5add5827
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__objc_selrefs: 0x14c0 sha256:d28fff898787aa7b901962b5311ff03173ec79bdc172e8397049baa93944d916
--  __DATA_CONST.__objc_superrefs: 0xa8 sha256:46b333cd133a5969c3480868ec06b01bdca5a9d2d6b3dc2f35988040d790d6c9
--  __DATA_CONST.__objc_arraydata: 0x188 sha256:ae3ab2877dde877aca604ad20576edca4dce78147dfa93cfa2530831d5529778
--  __DATA_CONST.__got: 0x3a0 sha256:9f43cc087aca5e76ebdbe1ddca4ad1cbd88be8a09d92ed006213654ecd31793a
--  __AUTH_CONST.__const: 0x6f8 sha256:231fa656933178297a750d16a537d6c7c9d9428468c826484fbd3b5eafe13c3d
--  __AUTH_CONST.__cfstring: 0x880 sha256:e010b440e953edd72325b35ac43be55ae00b2813ec05efd3fafe0624e8f21445
--  __AUTH_CONST.__objc_const: 0x3930 sha256:c9f309205db98d3bc1a991283dc5d5e1d2319674575dbbb105bca76829078720
--  __AUTH_CONST.__weak_auth_got: 0x18 sha256:9301580f2a4c506b3a281d68e0e22bffb435cbb497ce8c36f9bdbf987996a481
--  __AUTH_CONST.__objc_intobj: 0x2a0 sha256:552a49e9c4b93947260e19eb34baa72d6bc7501a3da90807fe9eddd77f0cf296
--  __AUTH_CONST.__objc_doubleobj: 0x190 sha256:390a63715cde5e14b665773757c89fe9302a737a404a9b64d5b3953b6b371b72
--  __AUTH_CONST.__objc_arrayobj: 0x150 sha256:854df7029a85e58b0d86ccd85f93c0c9efff73efb5e05cb9a84b4fb1f6d38074
-+  __DATA_CONST.__objc_selrefs: 0x16b0 sha256:3d5c387cda38e97fddc2cf97972bdec9b796e76aa585f88aad5c5badc5ed1014
-+  __DATA_CONST.__objc_superrefs: 0xb0 sha256:8a805993aa6d80974c8e8463777081432c294f81ce96a4f1391070a1c0bb86ba
-+  __DATA_CONST.__objc_arraydata: 0x188 sha256:9f87b431485c024cdbb19260c00869d8df6b503b8b53084b26c628d3b4616edb
-+  __DATA_CONST.__got: 0x3d8 sha256:22bf6d93ed00f85ddcb8ff061ce9a2928cde69905d9b9831e41cdb0ee208d291
-+  __AUTH_CONST.__const: 0x6f8 sha256:00c13ad5e3edd9c0f46ff23d647b140b3a116bc3f5f54023c368034c97901099
-+  __AUTH_CONST.__cfstring: 0x8a0 sha256:372e75454c4c7007f93f3e0a27181166aa7a56aa4ce56297f8b98a3a3535bf89
-+  __AUTH_CONST.__objc_const: 0x3be0 sha256:48b65ce0e9137c34a492b5b5171932c4d7c548de5a6f71e3b8b85e155dacaa9b
-+  __AUTH_CONST.__weak_auth_got: 0x18 sha256:29088a447bd737ef9fbfae413fb96a052bde0411bc28166e36dc698bd3ad3621
-+  __AUTH_CONST.__objc_intobj: 0x2d0 sha256:bbde99ed23386484107386007f7d58351835edece297cdc151ece15771f81ad7
-+  __AUTH_CONST.__objc_doubleobj: 0x190 sha256:09db2bd333acdacbe4b6ca13c1d50a5462ed37f4c0852feb259a5de17f95eb8d
-+  __AUTH_CONST.__objc_arrayobj: 0x150 sha256:93bd073c76e3e736f92d3bc49abb43120ef7c1493ebdc262596d3612b4fcd185
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x730 sha256:1eb9e19e1b7e32e7bb504c6612460e0de0df00c55ced1355dab2fcca3d43b987
--  __DATA.__objc_ivar: 0x348 sha256:1481c2db921ce2083fd5c4599b5fd4c56596972536586aa4da055f0e5bba0e2d
--  __DATA.__data: 0x300 sha256:6a302d5748afeac0435cef1d4dbf57dbadc2bdb634788955026c8fa920d62e24
-+  __AUTH.__objc_data: 0x780 sha256:36e43c0323551229dc0c8c5379c220f79c39dbcef40fee060a135a9f30530aa2
-+  __DATA.__objc_ivar: 0x370 sha256:b7c1058d9ed65ec4f58c14928672a408ab0b4c61b29c0dd4cd9af09dcd6c49d4
-+  __DATA.__data: 0x300 sha256:1989a7d2ceb94ec32a19503b0063d5f333c70c92c28372518107d1d50a5d6167
-   __DATA.__bss: 0x118 sha256:1f6c9de2e555d5d589e1149fed58f9cbcc101739df97d4a4d694a13f1242c5b9
--  __DATA_DIRTY.__objc_data: 0x50 sha256:193fff6142e2688b3ffddc125949217ce2b0a4aeb7356cd95e3006091a8ee9d7
-+  __DATA_DIRTY.__objc_data: 0x50 sha256:77d848e5fb0134caed9908fec2029dccc471c8bb45d1eb63d8187a75acc507fd
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  UUID: 29F9630E-6518-3A08-9EC3-1B62A0C3BB04
 -  Functions: 935
--  Symbols:   3544
--  CStrings:  235
-+  UUID: B34926BE-D19F-3DAD-9D1C-CE9D5E122557
+-  Symbols:   1860
+-  CStrings:  167
 +  Functions: 994
-+  Symbols:   3769
-+  CStrings:  237
- 
++  Symbols:   1949
++  CStrings:  169
 Symbols:
 + -[LAUIPhysicalButtonLabel .cxx_construct]
 + -[LAUIPhysicalButtonLabel .cxx_destruct]
@@ -373,60 +328,8 @@ Symbols:
 + ___Block_byref_object_copy_
 + ___Block_byref_object_dispose_
 + ___block_descriptor_40_ea8_32r_e113_v104?0{CGRect={CGPoint=dd}{CGSize=dd}}8{CGRect={CGPoint=dd}{CGSize=dd}}40"NSTextContainer"72{_NSRange=QQ}80^B96lr32l8
-+ ___block_literal_global.124
 + _kCAFilterInputDither
 + _kCAFilterInputRadius
-+ _objc_msgSend$_animateBackdropOpacity:animated:
-+ _objc_msgSend$_applyShrinkFitForBounds:
-+ _objc_msgSend$_applyShrinkFitFromCacheForBounds:
-+ _objc_msgSend$_blurFilterWithRadius:
-+ _objc_msgSend$_buildBackdropContainerIfNeeded
-+ _objc_msgSend$_invalidateShrinkFitCache
-+ _objc_msgSend$_lineBoundingRectsForCurrentTextView
-+ _objc_msgSend$_reapplyBackdropPillAppearance
-+ _objc_msgSend$_refreshBackdropIfNeeded
-+ _objc_msgSend$_springLayer:toBounds:
-+ _objc_msgSend$_springLayer:toCornerRadius:
-+ _objc_msgSend$_springLayer:toOpacity:
-+ _objc_msgSend$_springLayer:toPosition:
-+ _objc_msgSend$_storeShrinkFitCacheForBounds:chosenSize:
-+ _objc_msgSend$_textFitsInBounds:
-+ _objc_msgSend$_updateBackdropLayersWithLineRects:
-+ _objc_msgSend$backdropColor
-+ _objc_msgSend$count
-+ _objc_msgSend$enumerateLineFragmentsForGlyphRange:usingBlock:
-+ _objc_msgSend$fontWithSize:
-+ _objc_msgSend$glyphRangeForTextContainer:
-+ _objc_msgSend$initWithFrame:textContainer:
-+ _objc_msgSend$insertSublayer:below:
-+ _objc_msgSend$invalidateIntrinsicContentSize
-+ _objc_msgSend$layoutManager
-+ _objc_msgSend$lineBreakMode
-+ _objc_msgSend$maximumNumberOfLines
-+ _objc_msgSend$pointSize
-+ _objc_msgSend$registerForTraitChanges:withTarget:action:
-+ _objc_msgSend$resolvedColorWithTraitCollection:
-+ _objc_msgSend$setAllowsDisplayCompositing:
-+ _objc_msgSend$setBackdropColor:
-+ _objc_msgSend$setDataDetectorTypes:
-+ _objc_msgSend$setEditable:
-+ _objc_msgSend$setLineFragmentPadding:
-+ _objc_msgSend$setLinkTextAttributes:
-+ _objc_msgSend$setMaximumNumberOfLines:
-+ _objc_msgSend$setScrollEnabled:
-+ _objc_msgSend$setSelectable:
-+ _objc_msgSend$setShowsBackdrop:animated:
-+ _objc_msgSend$setSourceLayer:
-+ _objc_msgSend$setUserInteractionEnabled:
-+ _objc_msgSend$settlingDuration
-+ _objc_msgSend$showsBackdrop
-+ _objc_msgSend$subarrayWithRange:
-+ _objc_msgSend$sublayers
-+ _objc_msgSend$textAlignment
-+ _objc_msgSend$textContainer
-+ _objc_msgSend$textContainerInset
-+ _objc_msgSend$textLayer
-+ _objc_msgSend$valueWithCGRect:
 - __ZNKSt3__129_AllocatorDestroyRangeReverseINS_9allocatorIN36LAUI_uniform_cubic_b_spline_renderer10renderer_t18spline_container_tEEEPS4_EclB9fqe220100Ev
 - __ZNKSt3__129_AllocatorDestroyRangeReverseINS_9allocatorIN36LAUI_uniform_cubic_b_spline_renderer10renderer_t9buffers_tEEEPS4_EclB9fqe220100Ev
 - __ZNKSt3__129_AllocatorDestroyRangeReverseINS_9allocatorIN36LAUI_uniform_cubic_b_spline_renderer8spline_t7state_tEEEPS4_EclB9fqe220100Ev
@@ -631,9 +534,7 @@ Symbols:
 - __ZNSt3__19allocatorIfE17allocate_at_leastB9fqe220100Em
 - __ZNSt3__19allocatorItE17allocate_at_leastB9fqe220100Em
 - __ZSt28__throw_bad_array_new_lengthB9fqe220100v
-- ___block_literal_global.115
 CStrings:
 + ""
 + "v104@?0{CGRect={CGPoint=dd}{CGSize=dd}}8{CGRect={CGPoint=dd}{CGSize=dd}}40@\"NSTextContainer\"72{_NSRange=QQ}80^B96"
-
 ```

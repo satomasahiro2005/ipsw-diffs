@@ -2,36 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AIMLInstrumentationStreams.framework/AIMLInstrumentationStreams`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x2b7850
-+  __TEXT.__text: 0x2b77d4
-   __TEXT.__objc_methlist: 0x9c8
-   __TEXT.__const: 0x37a28
-   __TEXT.__swift5_typeref: 0x7e4e
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2b7850` | `0x2b77d4` | **`-0x7c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1dc73eef4 -> sub_200cb0ef4 : 1252 -> 1248
 ~ sub_1dc748498 -> sub_200cba494 : 968 -> 964
@@ -60,5 +39,4 @@ Functions:
 ~ sub_1dc9a6c30 -> sub_200f18bd8 : 616 -> 608
 ~ sub_1dc9a6e98 -> sub_200f18e38 : 620 -> 612
 ~ sub_1dc9b01b0 -> sub_200f22148 : 612 -> 592
-
 ```

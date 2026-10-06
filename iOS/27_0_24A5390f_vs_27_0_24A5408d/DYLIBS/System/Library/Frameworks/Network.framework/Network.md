@@ -2,71 +2,34 @@
 
 > `/System/Library/Frameworks/Network.framework/Network`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x154ede8` | `0x1553460` | **`+0x4678`** |
+| `__TEXT.__oslogstring` | `0x13cde6` | `0x13da12` | **`+0xc2c`** |
+| `__TEXT.__cstring` | `0x7364d` | `0x73892` | **`+0x245`** |
+| `__TEXT.__eh_frame` | `0x223e8` | `0x222d8` | **`-0x110`** |
+| `__AUTH_CONST.__cfstring` | `0x9460` | `0x94c0` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0x44334` | `0x44390` | **`+0x5c`** |
+| `__TEXT.__swift5_capture` | `0xae30` | `0xadf0` | **`-0x40`** |
+| `__TEXT.__const` | `0x101780` | `0x101750` | **`-0x30`** |
+| `__DATA_CONST.__const` | `0x158e0` | `0x15900` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x25f30` | `0x25f48` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
 -6681.0.514.502.1
--  __TEXT.__text: 0x154ede8
 +6681.2.2.0.0
-+  __TEXT.__text: 0x1553460
-   __TEXT.__lazy_helpers: 0x13b0
-   __TEXT.__init_offsets: 0x5cc
-   __TEXT.__objc_methlist: 0x86c4
--  __TEXT.__const: 0x101780
--  __TEXT.__cstring: 0x7364d
-+  __TEXT.__const: 0x101750
-+  __TEXT.__cstring: 0x73892
-   __TEXT.__constg_swiftt: 0xf858
-   __TEXT.__swift5_typeref: 0xcebd
-   __TEXT.__swift5_reflstr: 0xe3c5
 
-   __TEXT.__swift5_proto: 0x230c
-   __TEXT.__swift5_types: 0xebc
-   __TEXT.__swift5_protos: 0x208
--  __TEXT.__swift5_capture: 0xae30
-+  __TEXT.__swift5_capture: 0xadf0
-   __TEXT.__swift5_mpenum: 0x60c
-   __TEXT.__swift5_types2: 0x144
--  __TEXT.__oslogstring: 0x13cde6
-+  __TEXT.__oslogstring: 0x13da12
-   __TEXT.__swift_as_entry: 0xa40
-   __TEXT.__swift_as_ret: 0xa08
-   __TEXT.__swift_as_cont: 0x1704
--  __TEXT.__gcc_except_tab: 0x44334
--  __TEXT.__unwind_info: 0x25f30
--  __TEXT.__eh_frame: 0x223e8
-+  __TEXT.__gcc_except_tab: 0x44390
-+  __TEXT.__unwind_info: 0x25f48
-+  __TEXT.__eh_frame: 0x222d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x158e0
-+  __DATA_CONST.__const: 0x15900
-   __DATA_CONST.__objc_classlist: 0xb58
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x5a8
-
-   __DATA_CONST.__objc_arraydata: 0x8
-   __DATA_CONST.__got: 0x1200
-   __AUTH_CONST.__const: 0x3d120
--  __AUTH_CONST.__cfstring: 0x9460
-+  __AUTH_CONST.__cfstring: 0x94c0
-   __AUTH_CONST.__objc_const: 0x2e158
-   __AUTH_CONST.__weak_auth_got: 0x20
-   __AUTH_CONST.__lazy_load_got: 0x1d0
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 45366
--  Symbols:   32849
+-  Symbols:   31461
 -  CStrings:  31892
 +  Functions: 45379
-+  Symbols:   32858
++  Symbols:   31470
 +  CStrings:  31952
- 
 Symbols:
 + GCC_except_table1008
 + GCC_except_table1009

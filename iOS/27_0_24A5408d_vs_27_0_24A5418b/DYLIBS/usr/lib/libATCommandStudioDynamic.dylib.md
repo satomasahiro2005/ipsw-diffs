@@ -2,33 +2,24 @@
 
 > `/usr/lib/libATCommandStudioDynamic.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x55b7c` | `0x556f0` | **`-0x48c`** |
+| `__TEXT.__gcc_except_tab` | `0x58bc` | `0x57f0` | **`-0xcc`** |
+| `__TEXT.__oslogstring` | `0x259d` | `0x257f` | **`-0x1e`** |
+| `__TEXT.__unwind_info` | `0x2308` | `0x22f0` | **`-0x18`** |
+| `__TEXT.__cstring` | `0x2032` | `0x203d` | **`+0xb`** |
+
+### Other Changes
+
 ```diff
 
- 1585.0.0.0.0
--  __TEXT.__text: 0x55b7c
-+  __TEXT.__text: 0x556f0
-   __TEXT.__init_offsets: 0x10
-   __TEXT.__const: 0x1b20
--  __TEXT.__gcc_except_tab: 0x58bc
--  __TEXT.__cstring: 0x2032
--  __TEXT.__oslogstring: 0x259d
--  __TEXT.__unwind_info: 0x2308
-+  __TEXT.__gcc_except_tab: 0x57f0
-+  __TEXT.__cstring: 0x203d
-+  __TEXT.__oslogstring: 0x257f
-+  __TEXT.__unwind_info: 0x22f0
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0xa80
-   __DATA_CONST.__weak_got: 0x48
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libmav_ipc_router_dynamic.dylib
-   Functions: 1435
 -  Symbols:   2296
 -  CStrings:  540
 +  Symbols:   2295
 +  CStrings:  539
- 
 Symbols:
 - __ZN3qmi16createRawRequestEhNS_11buffer_viewEm
 Functions:

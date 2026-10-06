@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/DeviceCheckInternal.framework/DeviceCheckInternal`
 
-```diff
+### Section Size Changes
 
- 157.0.0.0.0
--  __TEXT.__text: 0x157ac
-+  __TEXT.__text: 0x157b4
-   __TEXT.__objc_methlist: 0x6ec
-   __TEXT.__const: 0x10383
-   __TEXT.__cstring: 0xd12
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15b60` | `0x15b70` | **`+0x10`** |
+
+### Other Changes
+
+```text
 Functions:
-~ _X509ExtensionParseBasicConstraints : 208 -> 204
+~ _X509ExtensionParseBasicConstraints : 208 -> 212
 ~ _X509ChainBuildPathPartial : 488 -> 500
 ```

@@ -2,15 +2,18 @@
 
 > `/usr/lib/libboringssl.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa343c` | `0xa3440` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -583.40.4.0.0
--  __TEXT.__text: 0xa255c
 +583.40.6.0.0
-+  __TEXT.__text: 0xa2560
-   __TEXT.__objc_methlist: 0x1dc
-   __TEXT.__cstring: 0x12304
-   __TEXT.__const: 0xff48
 Functions:
 ~ _MLKEM768_decap : 156 -> 160
 ```

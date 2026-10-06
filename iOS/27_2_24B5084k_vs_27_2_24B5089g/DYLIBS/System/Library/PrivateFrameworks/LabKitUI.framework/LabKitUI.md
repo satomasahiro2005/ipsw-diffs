@@ -2,88 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/LabKitUI.framework/LabKitUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2ad1a4` | `0x2baf7c` | **`+0xddd8`** |
+| `__DATA.__data` | `0x98b0` | `0x9b28` | **`+0x278`** |
+| `__AUTH.__data` | `0x8210` | `0x8420` | **`+0x210`** |
+| `__TEXT.__swift5_reflstr` | `0x46d2` | `0x4882` | **`+0x1b0`** |
+| `__TEXT.__const` | `0x11664` | `0x117f4` | **`+0x190`** |
+| `__TEXT.__cstring` | `0x51a1` | `0x5331` | **`+0x190`** |
+| `__TEXT.__oslogstring` | `0x1165` | `0x12e5` | **`+0x180`** |
+| `__TEXT.__unwind_info` | `0x8b10` | `0x8c90` | **`+0x180`** |
+| `__TEXT.__swift5_typeref` | `0x8016` | `0x8194` | **`+0x17e`** |
+| `__TEXT.__swift5_fieldmd` | `0x4d60` | `0x4ed0` | **`+0x170`** |
+| `__DATA.__bss` | `0x10858` | `0x10968` | **`+0x110`** |
+| `__AUTH_CONST.__const` | `0xa300` | `0xa3c0` | **`+0xc0`** |
+| `__AUTH_CONST.__objc_const` | `0x3b60` | `0x3c20` | **`+0xc0`** |
+| `__TEXT.__swift5_capture` | `0x21e0` | `0x2294` | **`+0xb4`** |
+| `__TEXT.__constg_swiftt` | `0x66ac` | `0x6748` | **`+0x9c`** |
+| `__TEXT.__eh_frame` | `0xac74` | `0xacd4` | **`+0x60`** |
+| `__AUTH_CONST.__auth_got` | `0x3688` | `0x36d0` | **`+0x48`** |
+| `__DATA_CONST.__got` | `0x24b8` | `0x24f0` | **`+0x38`** |
+| `__DATA_CONST.__objc_selrefs` | `0x928` | `0x940` | **`+0x18`** |
+| `__AUTH.__objc_data` | `0x1070` | `0x1078` | **`+0x8`** |
+| `__DATA.__common` | `0x1a0` | `0x1a8` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x7dc` | `0x7e4` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x560` | `0x568` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x7b4` | `0x7b0` | **`-0x4`** |
+| `__TEXT.__swift_as_entry` | `0x2c0` | `0x2c4` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x328` | `0x32c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.36.2.7
--  __TEXT.__text: 0x296810
 +7027.1.45.2.4
-+  __TEXT.__text: 0x2a3f58
-   __TEXT.__objc_methlist: 0x40c
--  __TEXT.__const: 0x11664
--  __TEXT.__constg_swiftt: 0x66ac
--  __TEXT.__swift5_typeref: 0x8016
-+  __TEXT.__const: 0x117f4
-+  __TEXT.__constg_swiftt: 0x6748
-+  __TEXT.__swift5_typeref: 0x8194
-   __TEXT.__swift5_builtin: 0x154
--  __TEXT.__swift5_reflstr: 0x46d2
--  __TEXT.__swift5_fieldmd: 0x4d60
-+  __TEXT.__swift5_reflstr: 0x4882
-+  __TEXT.__swift5_fieldmd: 0x4ed0
-   __TEXT.__swift5_assocty: 0x17f0
--  __TEXT.__cstring: 0x51a1
--  __TEXT.__swift5_proto: 0x7dc
--  __TEXT.__swift5_types: 0x560
--  __TEXT.__swift5_capture: 0x21e0
--  __TEXT.__swift_as_entry: 0x2c0
--  __TEXT.__swift_as_cont: 0x7b4
--  __TEXT.__oslogstring: 0x1165
--  __TEXT.__swift_as_ret: 0x328
-+  __TEXT.__cstring: 0x5331
-+  __TEXT.__swift5_proto: 0x7e4
-+  __TEXT.__swift5_types: 0x568
-+  __TEXT.__swift5_capture: 0x2294
-+  __TEXT.__swift_as_entry: 0x2c4
-+  __TEXT.__swift_as_cont: 0x7b0
-+  __TEXT.__oslogstring: 0x12e5
-+  __TEXT.__swift_as_ret: 0x32c
-   __TEXT.__swift5_protos: 0x48
-   __TEXT.__swift5_mpenum: 0x48
--  __TEXT.__unwind_info: 0xacf0
--  __TEXT.__eh_frame: 0xac7c
-+  __TEXT.__unwind_info: 0xaf18
-+  __TEXT.__eh_frame: 0xacdc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x190
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x928
-+  __DATA_CONST.__objc_selrefs: 0x940
-   __DATA_CONST.__objc_protorefs: 0x38
--  __DATA_CONST.__got: 0x24b8
--  __AUTH_CONST.__const: 0xa300
--  __AUTH_CONST.__objc_const: 0x3b60
--  __AUTH_CONST.__auth_got: 0x3688
--  __AUTH.__objc_data: 0x1070
--  __AUTH.__data: 0x8210
--  __DATA.__data: 0x98b0
-+  __DATA_CONST.__got: 0x24f0
-+  __AUTH_CONST.__const: 0xa3c0
-+  __AUTH_CONST.__objc_const: 0x3c20
-+  __AUTH_CONST.__auth_got: 0x36d0
-+  __AUTH.__objc_data: 0x1078
-+  __AUTH.__data: 0x8420
-+  __DATA.__data: 0x9b28
-   __DATA.__objc_stublist: 0x8
--  __DATA.__common: 0x1a0
-+  __DATA.__common: 0x1a8
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreImage.framework/CoreImage
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11761
--  Symbols:   2563
+-  Symbols:   2324
 -  CStrings:  529
 +  Functions: 11911
-+  Symbols:   2574
++  Symbols:   2332
 +  CStrings:  541
- 
 Symbols:
 + ___swift_closure_destructor.149Tm
 + ___swift_closure_destructor.162Tm
@@ -107,9 +69,6 @@ Symbols:
 + _keypath_set.37Tm
 + _keypath_set.56Tm
 + _keypath_set.65Tm
-+ _objc_msgSend$topViewController
-+ _objc_msgSend$viewIfLoaded
-+ _objc_msgSend$window
 + _symbolic IeghH_
 + _symbolic _____ 8LabKitUI0A28ResultsOverviewContainerViewV11LoadFailure33_075C6B1FEC89DF60286672E4370E39BALLV
 + _symbolic _____ 8LabKitUI17DemographicsDraftV

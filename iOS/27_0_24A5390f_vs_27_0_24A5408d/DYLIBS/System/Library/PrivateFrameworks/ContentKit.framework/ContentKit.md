@@ -2,98 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/ContentKit.framework/ContentKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x20e570` | `0x20ee08` | **`+0x898`** |
+| `__TEXT.__cstring` | `0x1a59f` | `0x1a6b2` | **`+0x113`** |
+| `__AUTH_CONST.__const` | `0xca28` | `0xc968` | **`-0xc0`** |
+| `__AUTH_CONST.__cfstring` | `0x12640` | `0x126e0` | **`+0xa0`** |
+| `__TEXT.__objc_methlist` | `0xcc3c` | `0xccb4` | **`+0x78`** |
+| `__AUTH_CONST.__objc_const` | `0x16af8` | `0x16b50` | **`+0x58`** |
+| `__TEXT.__swift5_typeref` | `0x2640` | `0x2676` | **`+0x36`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6a20` | `0x6a50` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x6400` | `0x6428` | **`+0x28`** |
+| `__TEXT.__swift5_reflstr` | `0x12ab` | `0x12cb` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x8260` | `0x8280` | **`+0x20`** |
+| `__TEXT.__oslogstring` | `0x5e96` | `0x5e78` | **`-0x1e`** |
+| `__TEXT.__swift5_fieldmd` | `0x1c70` | `0x1c88` | **`+0x18`** |
+| `__AUTH.__data` | `0x1710` | `0x1720` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x23d0` | `0x23e0` | **`+0x10`** |
+| `__DATA.__data` | `0x39fc` | `0x3a0c` | **`+0x10`** |
+| `__TEXT.__const` | `0x9ad4` | `0x9ae4` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x1930` | `0x1938` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x4b8` | `0x4c0` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x8f4` | `0x8f8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -5034.0.12.100.0
--  __TEXT.__text: 0x20e570
 +5037.103.100.0.0
-+  __TEXT.__text: 0x20ee08
-   __TEXT.__delay_helper: 0xdc
--  __TEXT.__objc_methlist: 0xcc3c
--  __TEXT.__const: 0x9ad4
-+  __TEXT.__objc_methlist: 0xccb4
-+  __TEXT.__const: 0x9ae4
-   __TEXT.__dlopen_cstrs: 0x1a2c
--  __TEXT.__cstring: 0x1a59f
--  __TEXT.__swift5_typeref: 0x2640
--  __TEXT.__oslogstring: 0x5e96
-+  __TEXT.__cstring: 0x1a6b2
-+  __TEXT.__swift5_typeref: 0x2676
-+  __TEXT.__oslogstring: 0x5e78
-   __TEXT.__constg_swiftt: 0x1a7c
--  __TEXT.__swift5_reflstr: 0x12ab
--  __TEXT.__swift5_fieldmd: 0x1c70
-+  __TEXT.__swift5_reflstr: 0x12cb
-+  __TEXT.__swift5_fieldmd: 0x1c88
-   __TEXT.__swift5_builtin: 0xb4
-   __TEXT.__swift5_assocty: 0x468
-   __TEXT.__swift5_protos: 0x1c
 
-   __TEXT.__swift5_mpenum: 0x30
-   __TEXT.__gcc_except_tab: 0x2c24
-   __TEXT.__ustring: 0xfd0
--  __TEXT.__unwind_info: 0x8260
-+  __TEXT.__unwind_info: 0x8280
-   __TEXT.__eh_frame: 0xaa30
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x6400
-+  __DATA_CONST.__const: 0x6428
-   __DATA_CONST.__objc_classlist: 0x780
-   __DATA_CONST.__objc_catlist: 0x128
-   __DATA_CONST.__objc_protolist: 0xf8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6a20
-+  __DATA_CONST.__objc_selrefs: 0x6a50
-   __DATA_CONST.__objc_protorefs: 0x48
--  __DATA_CONST.__objc_superrefs: 0x4b8
-+  __DATA_CONST.__objc_superrefs: 0x4c0
-   __DATA_CONST.__objc_arraydata: 0x1490
--  __DATA_CONST.__got: 0x1930
--  __AUTH_CONST.__const: 0xca28
--  __AUTH_CONST.__cfstring: 0x12640
--  __AUTH_CONST.__objc_const: 0x16af8
-+  __DATA_CONST.__got: 0x1938
-+  __AUTH_CONST.__const: 0xc968
-+  __AUTH_CONST.__cfstring: 0x126e0
-+  __AUTH_CONST.__objc_const: 0x16b50
-   __AUTH_CONST.__objc_intobj: 0x1f08
-   __AUTH_CONST.__objc_arrayobj: 0xf0
-   __AUTH_CONST.__objc_dictobj: 0x168
--  __AUTH_CONST.__auth_got: 0x23d0
-+  __AUTH_CONST.__auth_got: 0x23e0
-   __AUTH.__objc_data: 0x23a0
--  __AUTH.__data: 0x1710
--  __DATA.__objc_ivar: 0x8f4
--  __DATA.__data: 0x39fc
-+  __AUTH.__data: 0x1720
-+  __DATA.__objc_ivar: 0x8f8
-+  __DATA.__data: 0x3a0c
-   __DATA.__bss: 0xde28
-   __DATA.__common: 0x10
-   __DATA_DIRTY.__objc_data: 0x29f0
-
-   - /System/Library/PrivateFrameworks/GenerativeFunctionsFoundation.framework/GenerativeFunctionsFoundation
-   - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
-   - /System/Library/PrivateFrameworks/GenerativePartnerService.framework/GenerativePartnerService
 +  - /System/Library/PrivateFrameworks/GenerativePartnerServiceUI.framework/GenerativePartnerServiceUI
-   - /System/Library/PrivateFrameworks/IntentsCore.framework/IntentsCore
-   - /System/Library/PrivateFrameworks/LinkServices.framework/LinkServices
-   - /System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12778
--  Symbols:   14782
+-  Symbols:   11909
 -  CStrings:  4740
 +  Functions: 12791
-+  Symbols:   14800
++  Symbols:   11925
 +  CStrings:  4747
- 
 Symbols:
 + +[NSURL(DCFileUtilities) wf_shortcutsExternalTriggersDirectoryURL]
 + +[WFContentItem isHiddenFromAggrandizementPicker]
@@ -300,8 +248,6 @@ Symbols:
 + ___WFReminderPredicateDescriptorFromContentComparisonPredicate_block_invoke
 + ___block_descriptor_40_e8_32s_e52_"REMReminderPredicateDescriptor"24?0"REMList"8Q16ls32l8
 + ___swift_memcpy25_8
-+ _objc_msgSend$managementDomain
-+ _objc_msgSend$renderAsMarkdown
 + _symbolic SDySS_____GSg 16FoundationModels16GeneratedContentV
 + _symbolic SS10symbolName_So8NSBundleCSg6bundlet
 + _symbolic So7WFImageC5image_t

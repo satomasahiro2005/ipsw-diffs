@@ -2,70 +2,34 @@
 
 > `/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1d3148` | `0x1d4bc4` | **`+0x1a7c`** |
+| `__TEXT.__cstring` | `0x14b381` | `0x14b3eb` | **`+0x6a`** |
+| `__TEXT.__gcc_except_tab` | `0x5e18` | `0x5e7c` | **`+0x64`** |
+| `__DATA.__bss` | `0x874` | `0x8a4` | **`+0x30`** |
+| `__DATA_DIRTY.__bss` | `0xef8` | `0xec8` | **`-0x30`** |
+| `__AUTH_CONST.__const` | `0x4d20` | `0x4d48` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x3c89c0` | `0x3c89e8` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x6560` | `0x6580` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x7b1c` | `0x7b2c` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2b28` | `0x2b30` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -5027.0.69.0.0
--  __TEXT.__text: 0x1cbee8
 +5027.1.2.0.0
-+  __TEXT.__text: 0x1cd974
-   __TEXT.__init_offsets: 0x4
--  __TEXT.__objc_methlist: 0x7b1c
-+  __TEXT.__objc_methlist: 0x7b2c
-   __TEXT.__const: 0x1a7d30
-   __TEXT.__oslogstring: 0x59f1
--  __TEXT.__cstring: 0x14b381
--  __TEXT.__gcc_except_tab: 0x5e18
-+  __TEXT.__cstring: 0x14b3eb
-+  __TEXT.__gcc_except_tab: 0x5e7c
-   __TEXT.__ustring: 0x48a
-   __TEXT.__dof_CFRunLoop: 0x964
-   __TEXT.__dof_Cocoa_Aut: 0x652
--  __TEXT.__unwind_info: 0x7d88
-+  __TEXT.__unwind_info: 0x7dd8
-   __TEXT.__eh_frame: 0x3f8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3c89c0
-+  __DATA_CONST.__const: 0x3c89e8
-   __DATA_CONST.__objc_classlist: 0x468
-   __DATA_CONST.__objc_nlclslist: 0x58
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_nlcatlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2b28
-+  __DATA_CONST.__objc_selrefs: 0x2b30
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x2c8
-   __DATA_CONST.__objc_arraydata: 0x16f0
-   __DATA_CONST.__got: 0x4b0
--  __AUTH_CONST.__const: 0x4d20
-+  __AUTH_CONST.__const: 0x4d48
-   __AUTH_CONST.__cfstring: 0x140d80
-   __AUTH_CONST.__objc_const: 0x9c18
-   __AUTH_CONST.__const_cfobj2: 0x40
 
-   __DATA.__common: 0x98
-   __DATA_DIRTY.__objc_data: 0x21c0
-   __DATA_DIRTY.__data: 0x148
--  __DATA_DIRTY.__bss: 0xef8
-+  __DATA_DIRTY.__bss: 0xec8
-   __DATA_DIRTY.__common: 0x398
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/CoreServicesInternal.framework/CoreServicesInternal
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 8614
--  Symbols:   12370
+-  Symbols:   11467
 -  CStrings:  44299
 +  Functions: 8642
-+  Symbols:   12390
++  Symbols:   11486
 +  CStrings:  44301
- 
 Symbols:
 + -[CFPDSource needsToCleanUpAfterAcceptingMessage:]
 + -[_CFXPreferences withSourceForIdentifier:user:byHost:container:cloud:createSource:suppressError:perform:]
@@ -105,7 +69,6 @@ Symbols:
 + __releaseResolvedStringTableCache
 + __releaseStringTableCache
 + __stringTableFromCacheSatisfyingRequest
-+ _objc_msgSend$needsToCleanUpAfterAcceptingMessage:
 + _withSourceForIdentifier:user:byHost:container:cloud:createSource:suppressError:perform:.registerOnce
 - GCC_except_table154
 - GCC_except_table165

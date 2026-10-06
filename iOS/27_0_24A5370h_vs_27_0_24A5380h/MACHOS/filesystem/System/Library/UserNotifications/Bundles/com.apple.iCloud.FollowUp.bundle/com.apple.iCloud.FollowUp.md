@@ -2,5 +2,14 @@
 
 > `/System/Library/UserNotifications/Bundles/com.apple.iCloud.FollowUp.bundle/com.apple.iCloud.FollowUp`
 
-Sections:
-~ __TEXT.__const : content changed
+### Same-size Content Changes
+
+- `__TEXT.__const`
+
+### Other Changes
+
+```diff
+
+-293.0.0.0.0
++2027.0.4.0.0
+```

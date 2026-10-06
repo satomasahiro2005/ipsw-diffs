@@ -2,27 +2,30 @@
 
 > `/System/Library/Frameworks/LocalAuthentication.framework/Support/coreauthd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x38600` | `0x38640` | **`+0x40`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__const`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -2319.0.46.0.0
--  __TEXT.__text: 0x38600
 +2319.0.63.0.0
-+  __TEXT.__text: 0x38640
-   __TEXT.__auth_stubs: 0xe50
-   __TEXT.__objc_stubs: 0x36a0
-   __TEXT.__objc_methlist: 0x19ac
 Functions:
 ~ sub_100013ee0 : 8 -> 12
 ~ sub_100013ee8 -> sub_100013eec : 12 -> 28

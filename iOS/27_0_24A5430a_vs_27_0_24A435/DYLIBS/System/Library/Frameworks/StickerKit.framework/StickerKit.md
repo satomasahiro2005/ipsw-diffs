@@ -2,46 +2,22 @@
 
 > `/System/Library/Frameworks/StickerKit.framework/StickerKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__objc_const` | `0x2d888` | `0x2da50` | **`+0x1c8`** |
+| `__TEXT.__text` | `0x2570d8` | `0x257188` | **`+0xb0`** |
+| `__TEXT.__objc_methlist` | `0x7ce8` | `0x7d38` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x49f0` | `0x4a28` | **`+0x38`** |
+| `__AUTH_CONST.__auth_got` | `0x2cb8` | `0x2cb0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 149.0.0.0.0
--  __TEXT.__text: 0x2570d8
--  __TEXT.__objc_methlist: 0x7ce8
-+  __TEXT.__text: 0x257188
-+  __TEXT.__objc_methlist: 0x7d38
-   __TEXT.__const: 0x13b04
-   __TEXT.__cstring: 0x456c
-   __TEXT.__oslogstring: 0x5fff
-
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x348
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x49f0
-+  __DATA_CONST.__objc_selrefs: 0x4a28
-   __DATA_CONST.__objc_protorefs: 0x1c8
-   __DATA_CONST.__objc_superrefs: 0x28
-   __DATA_CONST.__objc_arraydata: 0x8
-   __DATA_CONST.__got: 0x17b8
-   __AUTH_CONST.__const: 0xf8c8
-   __AUTH_CONST.__cfstring: 0x8c0
--  __AUTH_CONST.__objc_const: 0x2d888
-+  __AUTH_CONST.__objc_const: 0x2da50
-   __AUTH_CONST.__objc_intobj: 0xa8
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__objc_doubleobj: 0x40
--  __AUTH_CONST.__auth_got: 0x2cb8
-+  __AUTH_CONST.__auth_got: 0x2cb0
-   __AUTH.__objc_data: 0x9678
-   __AUTH.__data: 0x7300
-   __DATA.__objc_ivar: 0xac
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 11190
--  Symbols:   6093
-+  Symbols:   6092
-   CStrings:  975
- 
+-  Symbols:   5020
++  Symbols:   5019
 Symbols:
 - _objc_retain_x11
 Functions:

@@ -2,20 +2,21 @@
 
 > `/System/Library/PrivateFrameworks/SiriTTSService.framework/PlugIns/STSDiagnostic.appex/STSDiagnostic`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x58b4` | `0x58b8` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__eh_frame`
 - `__TEXT.__swift5_typeref`
 - `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
 
-```diff
+### Other Changes
 
- 3600.123.2.11.4
--  __TEXT.__text: 0x58b4
-+  __TEXT.__text: 0x58b8
-   __TEXT.__auth_stubs: 0x6c0
-   __TEXT.__objc_stubs: 0xa0
-   __TEXT.__objc_methlist: 0x38
+```text
 Functions:
 ~ sub_1000051d4 : 1040 -> 1044
 ```

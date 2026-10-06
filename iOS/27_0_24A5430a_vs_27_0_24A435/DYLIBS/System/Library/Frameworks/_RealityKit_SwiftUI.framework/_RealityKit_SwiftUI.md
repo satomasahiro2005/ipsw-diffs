@@ -2,30 +2,18 @@
 
 > `/System/Library/Frameworks/_RealityKit_SwiftUI.framework/_RealityKit_SwiftUI`
 
-```diff
+### Section Size Changes
 
- 453.2.1.0.0
--  __TEXT.__text: 0x1006e8
--  __TEXT.__objc_methlist: 0x145c
-+  __TEXT.__text: 0x100718
-+  __TEXT.__objc_methlist: 0x147c
-   __TEXT.__const: 0xa488
-   __TEXT.__constg_swiftt: 0x8b04
-   __TEXT.__swift5_typeref: 0x4b69
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__objc_const` | `0x9888` | `0x98c0` | **`+0x38`** |
+| `__TEXT.__text` | `0x1006e8` | `0x100718` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x145c` | `0x147c` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0xfd8` | `0xff0` | **`+0x18`** |
 
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x100
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xfd8
-+  __DATA_CONST.__objc_selrefs: 0xff0
-   __DATA_CONST.__objc_protorefs: 0x80
-   __DATA_CONST.__got: 0xd30
-   __AUTH_CONST.__const: 0x8310
--  __AUTH_CONST.__objc_const: 0x9888
-+  __AUTH_CONST.__objc_const: 0x98c0
-   __AUTH_CONST.__auth_got: 0x25e0
-   __AUTH.__objc_data: 0x1e48
-   __AUTH.__data: 0x8388
+### Other Changes
+
+```text
 Functions:
 ~ _$s19_RealityKit_SwiftUI21FreeformCloudRendererC10drawPoints33_3779DB7E999291C1C0BBA21A79DFAE44LL2inySo7MTKViewC_tFySo16MTLCommandBuffer_pYbcfU_ : 1820 -> 1824
 ~ _$s19_RealityKit_SwiftUI15Model3DLocationO4hash4intoys6HasherVz_tF : 1624 -> 1620

@@ -2,87 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/SearchOnDeviceAnalytics.framework/SearchOnDeviceAnalytics`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x16d2e8` | `0x1714e8` | **`+0x4200`** |
+| `__TEXT.__eh_frame` | `0xce3c` | `0xd264` | **`+0x428`** |
+| `__AUTH_CONST.__const` | `0xc4b8` | `0xc708` | **`+0x250`** |
+| `__TEXT.__const` | `0x27ff0` | `0x28210` | **`+0x220`** |
+| `__TEXT.__unwind_info` | `0x8730` | `0x88e0` | **`+0x1b0`** |
+| `__DATA.__bss` | `0x27140` | `0x272c0` | **`+0x180`** |
+| `__AUTH.__data` | `0x94e0` | `0x9640` | **`+0x160`** |
+| `__TEXT.__oslogstring` | `0xa31` | `0xb71` | **`+0x140`** |
+| `__TEXT.__swift5_typeref` | `0x413f` | `0x4219` | **`+0xda`** |
+| `__TEXT.__constg_swiftt` | `0x6ccc` | `0x6da4` | **`+0xd8`** |
+| `__TEXT.__swift5_fieldmd` | `0x913c` | `0x91f4` | **`+0xb8`** |
+| `__AUTH_CONST.__auth_got` | `0x17e0` | `0x1890` | **`+0xb0`** |
+| `__TEXT.__swift5_capture` | `0xa24` | `0xabc` | **`+0x98`** |
+| `__AUTH_CONST.__objc_const` | `0x59e8` | `0x5a78` | **`+0x90`** |
+| `__DATA.__data` | `0x58d0` | `0x5940` | **`+0x70`** |
+| `__AUTH.__objc_data` | `0x928` | `0x978` | **`+0x50`** |
+| `__TEXT.__swift5_reflstr` | `0xaed2` | `0xaf22` | **`+0x50`** |
+| `__TEXT.__swift_as_cont` | `0x24` | `0x6c` | **`+0x48`** |
+| `__TEXT.__swift_as_entry` | `0x1c` | `0x44` | **`+0x28`** |
+| `__TEXT.__swift_as_ret` | `0x18` | `0x40` | **`+0x28`** |
+| `__TEXT.__swift5_types` | `0x524` | `0x534` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x14b4` | `0x14c0` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x190` | `0x198` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.56.21.0.0
--  __TEXT.__text: 0x16d2e8
 +3600.56.26.0.0
-+  __TEXT.__text: 0x1714e8
-   __TEXT.__objc_methlist: 0x1d8
--  __TEXT.__const: 0x27ff0
--  __TEXT.__swift5_typeref: 0x413f
--  __TEXT.__swift5_fieldmd: 0x913c
--  __TEXT.__constg_swiftt: 0x6ccc
--  __TEXT.__swift5_reflstr: 0xaed2
-+  __TEXT.__const: 0x28210
-+  __TEXT.__swift5_typeref: 0x4219
-+  __TEXT.__swift5_fieldmd: 0x91f4
-+  __TEXT.__constg_swiftt: 0x6da4
-+  __TEXT.__swift5_reflstr: 0xaf22
-   __TEXT.__swift5_builtin: 0x208
-   __TEXT.__cstring: 0x5f54
-   __TEXT.__swift5_assocty: 0xec8
-   __TEXT.__swift5_protos: 0xa4
--  __TEXT.__swift5_proto: 0x14b4
--  __TEXT.__swift5_types: 0x524
--  __TEXT.__swift5_capture: 0xa24
--  __TEXT.__swift_as_entry: 0x1c
--  __TEXT.__swift_as_ret: 0x18
--  __TEXT.__swift_as_cont: 0x24
--  __TEXT.__oslogstring: 0xa31
-+  __TEXT.__swift5_proto: 0x14c0
-+  __TEXT.__swift5_types: 0x534
-+  __TEXT.__swift5_capture: 0xabc
-+  __TEXT.__swift_as_entry: 0x44
-+  __TEXT.__swift_as_ret: 0x40
-+  __TEXT.__swift_as_cont: 0x6c
-+  __TEXT.__oslogstring: 0xb71
-   __TEXT.__swift5_mpenum: 0xf4
--  __TEXT.__unwind_info: 0x8730
--  __TEXT.__eh_frame: 0xce3c
-+  __TEXT.__unwind_info: 0x88e0
-+  __TEXT.__eh_frame: 0xd264
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x1dc0
--  __DATA_CONST.__objc_classlist: 0x190
-+  __DATA_CONST.__objc_classlist: 0x198
-   __DATA_CONST.__objc_protolist: 0x58
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x2b8
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xc4b8
--  __AUTH_CONST.__objc_const: 0x59e8
--  __AUTH_CONST.__auth_got: 0x17e0
--  __AUTH.__objc_data: 0x928
--  __AUTH.__data: 0x94e0
--  __DATA.__data: 0x58d0
--  __DATA.__bss: 0x27140
-+  __AUTH_CONST.__const: 0xc708
-+  __AUTH_CONST.__objc_const: 0x5a78
-+  __AUTH_CONST.__auth_got: 0x1890
-+  __AUTH.__objc_data: 0x978
-+  __AUTH.__data: 0x9640
-+  __DATA.__data: 0x5940
-+  __DATA.__bss: 0x272c0
-   __DATA.__common: 0x259
-   __DATA_DIRTY.__objc_data: 0xa0
-   __DATA_DIRTY.__data: 0xb08
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 15263
--  Symbols:   3432
+-  Symbols:   3379
 -  CStrings:  625
 +  Functions: 15388
-+  Symbols:   3460
++  Symbols:   3407
 +  CStrings:  629
- 
 Symbols:
 + __DATA__TtC23SearchOnDeviceAnalytics14OrphanableTask
 + __IVARS__TtC23SearchOnDeviceAnalytics14OrphanableTask

@@ -2,88 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/WebKitLegacy.framework/WebKitLegacy`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x3980` | `0x24e0` | **`-0x14a0`** |
+| `__DATA_DIRTY.__objc_data` | `0xa50` | `0x1ef0` | **`+0x14a0`** |
+| `__AUTH_CONST.__cfstring` | `0xf440` | `0xf540` | **`+0x100`** |
+| `__TEXT.__cstring` | `0x1c6f4` | `0x1c683` | **`-0x71`** |
+| `__TEXT.__text` | `0x166ed0` | `0x166e60` | **`-0x70`** |
+| `__TEXT.__gcc_except_tab` | `0x13398` | `0x133c8` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x46d8` | `0x4700` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0x1010` | `0x1020` | **`+0x10`** |
+| `__AUTH_CONST.__const` | `0x52f8` | `0x5300` | **`+0x8`** |
+| `__DATA.__bss` | `0x150` | `0x148` | **`-0x8`** |
+| `__DATA_DIRTY.__bss` | `0x330` | `0x338` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x9608` | `0x9610` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x166ed0
-+  __TEXT.__text: 0x166e60
-   __TEXT.__objc_methlist: 0xf620
-   __TEXT.__const: 0x294
-   __TEXT.__getClass_cstr: 0x12
-   __TEXT.__dlsym_cstr: 0x39
--  __TEXT.__gcc_except_tab: 0x13398
--  __TEXT.__cstring: 0x1c6f4
-+  __TEXT.__gcc_except_tab: 0x133c8
-+  __TEXT.__cstring: 0x1c683
-   __TEXT.__oslogstring: 0x155
--  __TEXT.__unwind_info: 0x9608
-+  __TEXT.__unwind_info: 0x9610
-   __TEXT.__eh_frame: 0x80
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+-625.1.20.10.3
++625.1.22.10.3
 
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_superrefs: 0x358
-   __DATA_CONST.__objc_arraydata: 0x30
--  __DATA_CONST.__got: 0x1010
--  __AUTH_CONST.__const: 0x52f8
--  __AUTH_CONST.__cfstring: 0xf440
-+  __DATA_CONST.__got: 0x1020
-+  __AUTH_CONST.__const: 0x5300
-+  __AUTH_CONST.__cfstring: 0xf540
-   __AUTH_CONST.__objc_const: 0xfe80
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x2d0
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__auth_got: 0x46d8
--  __AUTH.__objc_data: 0x3980
-+  __AUTH_CONST.__auth_got: 0x4700
-+  __AUTH.__objc_data: 0x24e0
-   __AUTH.__data: 0xe8
-   __DATA.__objc_ivar: 0x4a0
-   __DATA.__data: 0x14b4
-   __DATA.__common: 0x460
--  __DATA.__bss: 0x150
-+  __DATA.__bss: 0x148
-   __DATA_DIRTY.__objc_ivar: 0x4c
--  __DATA_DIRTY.__objc_data: 0xa50
-+  __DATA_DIRTY.__objc_data: 0x1ef0
-   __DATA_DIRTY.__data: 0x10
--  __DATA_DIRTY.__bss: 0x330
-+  __DATA_DIRTY.__bss: 0x338
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 7313
--  Symbols:   23831
--  CStrings:  4248
+-  Symbols:   13071
+-  CStrings:  2294
 +  Functions: 7314
-+  Symbols:   23839
-+  CStrings:  4262
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   13077
++  CStrings:  2300
 Symbols:
 + __ZN3WTF6Detail15CallableWrapperIZ27-[WebNotification finalize]E3$_5vJPN7WebCore12NotificationEEE4callES5_
 + __ZN3WTF6Detail15CallableWrapperIZ27-[WebNotification finalize]E3$_5vJPN7WebCore12NotificationEEED0Ev
@@ -240,5 +188,4 @@ CStrings:
 - "WebCore::ScrollbarWidth WebCore::Style::ToPlatform<WebCore::Style::ScrollbarWidth>::operator()(ScrollbarWidth)"
 - "WebKitClosedbyAttributeEnabled"
 - "void _WebCreateFragment(Document &, NSAttributedString *, FragmentAndResources &)"
-
 ```

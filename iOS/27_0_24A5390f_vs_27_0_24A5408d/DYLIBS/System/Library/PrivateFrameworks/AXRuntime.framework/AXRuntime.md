@@ -2,73 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/AXRuntime.framework/AXRuntime`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4df88` | `0x4e6dc` | **`+0x754`** |
+| `__TEXT.__oslogstring` | `0x1535` | `0x16f9` | **`+0x1c4`** |
+| `__TEXT.__objc_methlist` | `0x38f4` | `0x3954` | **`+0x60`** |
+| `__AUTH_CONST.__cfstring` | `0x50e0` | `0x5120` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x1350` | `0x1390` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2408` | `0x2440` | **`+0x38`** |
+| `__TEXT.__cstring` | `0x5d8e` | `0x5dc3` | **`+0x35`** |
+| `__DATA_CONST.__const` | `0x1270` | `0x1298` | **`+0x28`** |
+| `__AUTH_CONST.__objc_const` | `0x3a08` | `0x3a28` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xaa0` | `0xab0` | **`+0x10`** |
+| `__TEXT.__const` | `0x448` | `0x458` | **`+0x10`** |
+| `__DATA.__bss` | `0x300` | `0x308` | **`+0x8`** |
+| `__DATA.__data` | `0x8b8` | `0x8c0` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x23c` | `0x240` | **`+0x4`** |
+| `__TEXT.__gcc_except_tab` | `0xba4` | `0xba0` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3237.1.0.0.0
--  __TEXT.__text: 0x4df88
--  __TEXT.__objc_methlist: 0x38f4
--  __TEXT.__const: 0x448
 +3240.3.0.0.0
-+  __TEXT.__text: 0x4e6dc
-+  __TEXT.__objc_methlist: 0x3954
-+  __TEXT.__const: 0x458
-   __TEXT.__dlopen_cstrs: 0x31a
--  __TEXT.__gcc_except_tab: 0xba4
--  __TEXT.__oslogstring: 0x1535
--  __TEXT.__cstring: 0x5d8e
-+  __TEXT.__gcc_except_tab: 0xba0
-+  __TEXT.__oslogstring: 0x16f9
-+  __TEXT.__cstring: 0x5dc3
-   __TEXT.__ustring: 0x4
--  __TEXT.__unwind_info: 0x1350
-+  __TEXT.__unwind_info: 0x1390
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1270
-+  __DATA_CONST.__const: 0x1298
-   __DATA_CONST.__objc_classlist: 0xe8
-   __DATA_CONST.__objc_catlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2408
-+  __DATA_CONST.__objc_selrefs: 0x2440
-   __DATA_CONST.__objc_superrefs: 0xa8
-   __DATA_CONST.__objc_arraydata: 0xc0
-   __DATA_CONST.__got: 0x2e8
-   __AUTH_CONST.__const: 0xbc8
--  __AUTH_CONST.__cfstring: 0x50e0
--  __AUTH_CONST.__objc_const: 0x3a08
-+  __AUTH_CONST.__cfstring: 0x5120
-+  __AUTH_CONST.__objc_const: 0x3a28
-   __AUTH_CONST.__objc_intobj: 0x1650
-   __AUTH_CONST.__objc_arrayobj: 0x90
-   __AUTH_CONST.__objc_doubleobj: 0x20
--  __AUTH_CONST.__auth_got: 0xaa0
-+  __AUTH_CONST.__auth_got: 0xab0
-   __AUTH.__objc_data: 0x640
--  __DATA.__objc_ivar: 0x23c
--  __DATA.__data: 0x8b8
--  __DATA.__bss: 0x300
-+  __DATA.__objc_ivar: 0x240
-+  __DATA.__data: 0x8c0
-+  __DATA.__bss: 0x308
-   __DATA.__common: 0x30
-   __DATA_DIRTY.__objc_data: 0x2d0
-   __DATA_DIRTY.__data: 0x50
 
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1638
--  Symbols:   4005
+-  Symbols:   3240
 -  CStrings:  947
 +  Functions: 1652
-+  Symbols:   4031
++  Symbols:   3258
 +  CStrings:  952
- 
 Symbols:
 + +[AXUIElement uiElementAtCoordinate:forApplication:contextId:displayId:allowSameProcess:coordinateIsInHostedCoordinates:]
 + -[AXElement _convertRectFromWindowCoordinates:]
@@ -136,14 +102,6 @@ Symbols:
 + ____AXUIElementCopyElementAtPositionCommon_block_invoke
 + ___block_descriptor_57_e8_32s40s48r_e5_v8?0ls32l8s40l8r48l8
 + __auditTokenCacheLock
-+ _objc_msgSend$_convertRectFromWindowCoordinates:
-+ _objc_msgSend$_fuzzyMatchElement:candidate:
-+ _objc_msgSend$_fuzzyMatchItem:candidate:
-+ _objc_msgSend$_unionOfChildFrames
-+ _objc_msgSend$displayIdForContextId:
-+ _objc_msgSend$findElementMatchingElement:allowFuzzyMatch:
-+ _objc_msgSend$firstDescendantMatchingItem:allowFuzzyMatch:
-+ _objc_msgSend$uiElementAtCoordinate:forApplication:contextId:displayId:allowSameProcess:coordinateIsInHostedCoordinates:
 - GCC_except_table1169
 - GCC_except_table1321
 - GCC_except_table1324

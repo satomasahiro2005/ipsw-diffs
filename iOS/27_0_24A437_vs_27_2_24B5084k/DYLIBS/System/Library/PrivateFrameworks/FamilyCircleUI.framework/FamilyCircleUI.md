@@ -2,94 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/FamilyCircleUI.framework/FamilyCircleUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x384a20` | `0x386168` | **`+0x1748`** |
+| `__TEXT.__swift5_typeref` | `0x2e7de` | `0x2f02e` | **`+0x850`** |
+| `__DATA.__bss` | `0x19738` | `0x19bc8` | **`+0x490`** |
+| `__TEXT.__const` | `0x26484` | `0x267b4` | **`+0x330`** |
+| `__AUTH_CONST.__const` | `0x1a9e0` | `0x1ab40` | **`+0x160`** |
+| `__TEXT.__constg_swiftt` | `0xcc60` | `0xcd94` | **`+0x134`** |
+| `__TEXT.__eh_frame` | `0x199d0` | `0x19ac0` | **`+0xf0`** |
+| `__TEXT.__oslogstring` | `0xd9d4` | `0xdab4` | **`+0xe0`** |
+| `__DATA.__data` | `0xbc00` | `0xbcb8` | **`+0xb8`** |
+| `__TEXT.__swift5_capture` | `0x4e5c` | `0x4ecc` | **`+0x70`** |
+| `__TEXT.__unwind_info` | `0xdae0` | `0xdb50` | **`+0x70`** |
+| `__TEXT.__swift5_assocty` | `0x2588` | `0x25d0` | **`+0x48`** |
+| `__AUTH_CONST.__auth_got` | `0x3528` | `0x3550` | **`+0x28`** |
+| `__TEXT.__swift5_proto` | `0x1054` | `0x1078` | **`+0x24`** |
+| `__TEXT.__swift5_fieldmd` | `0x8564` | `0x8580` | **`+0x1c`** |
+| `__DATA_CONST.__got` | `0x23c0` | `0x23d8` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x208` | `0x21c` | **`+0x14`** |
+| `__TEXT.__objc_methlist` | `0x6544` | `0x6534` | **`-0x10`** |
+| `__TEXT.__swift_as_cont` | `0x1600` | `0x160c` | **`+0xc`** |
+| `__TEXT.__swift_as_entry` | `0x8f0` | `0x8fc` | **`+0xc`** |
+| `__AUTH_CONST.__objc_const` | `0x24730` | `0x24738` | **`+0x8`** |
+| `__DATA.__common` | `0x388` | `0x380` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0x92c` | `0x934` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -290.0.0.0.0
--  __TEXT.__text: 0x360e34
--  __TEXT.__objc_methlist: 0x6544
--  __TEXT.__const: 0x26484
 +291.125.4.0.0
-+  __TEXT.__text: 0x362498
-+  __TEXT.__objc_methlist: 0x6534
-+  __TEXT.__const: 0x267b4
-   __TEXT.__gcc_except_tab: 0x7a4
-   __TEXT.__cstring: 0xecf2
--  __TEXT.__oslogstring: 0xd9d4
-+  __TEXT.__oslogstring: 0xdab4
-   __TEXT.__dlopen_cstrs: 0x6fa
--  __TEXT.__constg_swiftt: 0xcc60
--  __TEXT.__swift5_typeref: 0x2e7de
--  __TEXT.__swift5_builtin: 0x208
-+  __TEXT.__constg_swiftt: 0xcd94
-+  __TEXT.__swift5_typeref: 0x2f02e
-+  __TEXT.__swift5_builtin: 0x21c
-   __TEXT.__swift5_reflstr: 0x8520
--  __TEXT.__swift5_fieldmd: 0x8564
--  __TEXT.__swift5_assocty: 0x2588
--  __TEXT.__swift5_capture: 0x4e5c
--  __TEXT.__swift5_proto: 0x1054
--  __TEXT.__swift5_types: 0x92c
--  __TEXT.__swift_as_entry: 0x8f0
-+  __TEXT.__swift5_fieldmd: 0x8580
-+  __TEXT.__swift5_assocty: 0x25d0
-+  __TEXT.__swift5_capture: 0x4ecc
-+  __TEXT.__swift5_proto: 0x1078
-+  __TEXT.__swift5_types: 0x934
-+  __TEXT.__swift_as_entry: 0x8fc
-   __TEXT.__swift_as_ret: 0x9a4
--  __TEXT.__swift_as_cont: 0x1600
-+  __TEXT.__swift_as_cont: 0x160c
-   __TEXT.__swift5_protos: 0x138
-   __TEXT.__swift5_mpenum: 0x1c
--  __TEXT.__unwind_info: 0x10690
--  __TEXT.__eh_frame: 0x199d8
-+  __TEXT.__unwind_info: 0x10748
-+  __TEXT.__eh_frame: 0x19ac8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_protorefs: 0x158
-   __DATA_CONST.__objc_superrefs: 0x1f0
-   __DATA_CONST.__objc_arraydata: 0x30
--  __DATA_CONST.__got: 0x23c0
--  __AUTH_CONST.__const: 0x1a9e0
-+  __DATA_CONST.__got: 0x23d8
-+  __AUTH_CONST.__const: 0x1ab40
-   __AUTH_CONST.__cfstring: 0x3120
--  __AUTH_CONST.__objc_const: 0x24730
-+  __AUTH_CONST.__objc_const: 0x24738
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_intobj: 0x48
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x3528
-+  __AUTH_CONST.__auth_got: 0x3550
-   __AUTH.__objc_data: 0x6140
-   __AUTH.__data: 0x94f8
-   __DATA.__objc_ivar: 0x6d8
--  __DATA.__data: 0xbc00
-+  __DATA.__data: 0xbcb8
-   __DATA.__objc_stublist: 0x80
--  __DATA.__common: 0x388
-+  __DATA.__common: 0x380
-   __DATA_DIRTY.__objc_data: 0xcb8
-   __DATA_DIRTY.__data: 0x2fd8
-   __DATA_DIRTY.__bss: 0x5b68
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 17857
--  Symbols:   11391
+-  Symbols:   9578
 -  CStrings:  2613
 +  Functions: 17919
-+  Symbols:   11417
++  Symbols:   9604
 +  CStrings:  2616
- 
 Symbols:
 + ___swift_closure_destructor.48Tm
 + ___swift_closure_destructor.71Tm

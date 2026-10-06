@@ -2,72 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/VoiceOverServices.framework/VoiceOverServices`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_intobj`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x34aa0` | `0x34bdc` | **`+0x13c`** |
+| `__AUTH_CONST.__cfstring` | `0x8f40` | `0x8f80` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x73a1` | `0x73e1` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0x3b60` | `0x3b80` | **`+0x20`** |
+| `__AUTH_CONST.__objc_const` | `0x43f0` | `0x4400` | **`+0x10`** |
+| `__DATA.__bss` | `0x978` | `0x988` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x2f2c` | `0x2f3c` | **`+0x10`** |
+| `__DATA.__data` | `0xe48` | `0xe50` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x21c8` | `0x21d0` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -3234.5.0.0.0
--  __TEXT.__text: 0x34aa0
--  __TEXT.__objc_methlist: 0x2f2c
 +3237.1.0.0.0
-+  __TEXT.__text: 0x34bdc
-+  __TEXT.__objc_methlist: 0x2f3c
-   __TEXT.__dlopen_cstrs: 0xf0
-   __TEXT.__const: 0x80
-   __TEXT.__gcc_except_tab: 0x1b0
--  __TEXT.__cstring: 0x73a1
-+  __TEXT.__cstring: 0x73e1
-   __TEXT.__oslogstring: 0x4c0
-   __TEXT.__unwind_info: 0x770
-   __TEXT.__objc_stubs: 0x0
 
-   __DATA_CONST.__objc_classlist: 0xe0
-   __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x21c8
-+  __DATA_CONST.__objc_selrefs: 0x21d0
-   __DATA_CONST.__objc_superrefs: 0xa8
-   __DATA_CONST.__objc_arraydata: 0x170
-   __DATA_CONST.__got: 0x2c8
--  __AUTH_CONST.__const: 0x3b60
--  __AUTH_CONST.__cfstring: 0x8f40
--  __AUTH_CONST.__objc_const: 0x43f0
-+  __AUTH_CONST.__const: 0x3b80
-+  __AUTH_CONST.__cfstring: 0x8f80
-+  __AUTH_CONST.__objc_const: 0x4400
-   __AUTH_CONST.__objc_arrayobj: 0x138
-   __AUTH_CONST.__objc_intobj: 0x150
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__objc_ivar: 0x130
--  __DATA.__data: 0xe48
--  __DATA.__bss: 0x978
-+  __DATA.__data: 0xe50
-+  __DATA.__bss: 0x988
-   __DATA_DIRTY.__objc_data: 0x8c0
-   __DATA_DIRTY.__bss: 0x12f0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1477
--  Symbols:   4290
+-  Symbols:   3319
 -  CStrings:  1211
 +  Functions: 1479
-+  Symbols:   4297
++  Symbols:   3325
 +  CStrings:  1213
- 
 Symbols:
 + +[VOSCommand BrailleReconnectBrailleDisplays]
 + GCC_except_table1262
@@ -80,7 +41,6 @@ Symbols:
 + _BrailleReconnectBrailleDisplays.onceToken
 + ___45+[VOSCommand BrailleReconnectBrailleDisplays]_block_invoke
 + _kVOTEventCommandBrailleShowImage
-+ _objc_msgSend$BrailleReconnectBrailleDisplays
 - GCC_except_table1260
 - GCC_except_table1323
 - GCC_except_table1331

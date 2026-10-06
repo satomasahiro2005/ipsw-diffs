@@ -2,67 +2,32 @@
 
 > `/System/Library/Frameworks/CoreTelephony.framework/Support/libCommCenterMCommandDrivers.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH.__objc_data`
-- `__DATA.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21c7c4` | `0x21d2fc` | **`+0xb38`** |
+| `__TEXT.__const` | `0x26b68` | `0x26c78` | **`+0x110`** |
+| `__AUTH_CONST.__const` | `0x219a8` | `0x21aa0` | **`+0xf8`** |
+| `__TEXT.__gcc_except_tab` | `0x1e4ac` | `0x1e55c` | **`+0xb0`** |
+| `__TEXT.__oslogstring` | `0x1a8ba` | `0x1a967` | **`+0xad`** |
+| `__TEXT.__unwind_info` | `0xf4a8` | `0xf520` | **`+0x78`** |
+| `__TEXT.__cstring` | `0xd771` | `0xd786` | **`+0x15`** |
+| `__DATA_CONST.__const` | `0xb500` | `0xb508` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -13478.3.1.3.0
--  __TEXT.__text: 0x21c7c4
 +13482.1.0.0.0
-+  __TEXT.__text: 0x21d2fc
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__objc_methlist: 0x1cc
--  __TEXT.__const: 0x26b68
--  __TEXT.__cstring: 0xd771
--  __TEXT.__gcc_except_tab: 0x1e4ac
--  __TEXT.__oslogstring: 0x1a8ba
--  __TEXT.__unwind_info: 0xf4a8
-+  __TEXT.__const: 0x26c78
-+  __TEXT.__cstring: 0xd786
-+  __TEXT.__gcc_except_tab: 0x1e55c
-+  __TEXT.__oslogstring: 0x1a967
-+  __TEXT.__unwind_info: 0xf520
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xb500
-+  __DATA_CONST.__const: 0xb508
-   __DATA_CONST.__objc_classlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
-   __DATA_CONST.__objc_selrefs: 0xe8
-   __DATA_CONST.__got: 0x510
--  __AUTH_CONST.__const: 0x219a8
-+  __AUTH_CONST.__const: 0x21aa0
-   __AUTH_CONST.__cfstring: 0x260
-   __AUTH_CONST.__objc_const: 0x798
-   __AUTH_CONST.__weak_auth_got: 0x18
 
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 12636
--  Symbols:   19631
+-  Symbols:   19623
 -  CStrings:  4165
 +  Functions: 12656
-+  Symbols:   19662
++  Symbols:   19654
 +  CStrings:  4170
- 
 Symbols:
 + GCC_except_table302
 + GCC_except_table353

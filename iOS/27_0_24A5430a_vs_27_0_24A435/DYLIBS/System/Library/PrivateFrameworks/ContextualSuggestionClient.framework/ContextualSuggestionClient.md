@@ -2,18 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/ContextualSuggestionClient.framework/ContextualSuggestionClient`
 
-```diff
+### Section Size Changes
 
- 671.0.2.0.1
--  __TEXT.__text: 0x43150
-+  __TEXT.__text: 0x4316c
-   __TEXT.__objc_methlist: 0xc44
-   __TEXT.__const: 0x39e0
-   __TEXT.__cstring: 0x1b05
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x43150` | `0x4316c` | **`+0x1c`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2590e52a8 -> sub_259dbe2a8 : 1924 -> 1932
-~ sub_259107594 -> sub_259de059c : 360 -> 364
-~ sub_259107c10 -> sub_259de0c1c : 256 -> 264
-~ sub_25910ad6c -> sub_259de3d80 : 356 -> 360
-~ sub_25910c6d8 -> sub_259de56f0 : 356 -> 360
+~ sub_258fb42a8 -> sub_259ca22a8 : 1924 -> 1932
+~ sub_258fd6594 -> sub_259cc459c : 360 -> 364
+~ sub_258fd6c10 -> sub_259cc4c1c : 256 -> 264
+~ sub_258fd9d6c -> sub_259cc7d80 : 356 -> 360
+~ sub_258fdb6d8 -> sub_259cc96f0 : 356 -> 360
 ```

@@ -2,69 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/NutritionUICore.framework/NutritionUICore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1f840` | `0x1fac8` | **`+0x288`** |
+| `__DATA.__bss` | `0x1b80` | `0x1d00` | **`+0x180`** |
+| `__TEXT.__const` | `0x2054` | `0x2104` | **`+0xb0`** |
+| `__AUTH_CONST.__const` | `0x14e0` | `0x1570` | **`+0x90`** |
+| `__TEXT.__swift5_typeref` | `0x6e1e` | `0x6eae` | **`+0x90`** |
+| `__TEXT.__cstring` | `0x586` | `0x5b7` | **`+0x31`** |
+| `__TEXT.__constg_swiftt` | `0x610` | `0x634` | **`+0x24`** |
+| `__DATA.__data` | `0xcc0` | `0xce0` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x610` | `0x62c` | **`+0x1c`** |
+| `__TEXT.__unwind_info` | `0x6c8` | `0x6e0` | **`+0x18`** |
+| `__TEXT.__swift5_reflstr` | `0x3e0` | `0x3ef` | **`+0xf`** |
+| `__TEXT.__swift5_proto` | `0xd4` | `0xe0` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x900` | `0x908` | **`+0x8`** |
+| `__DATA.__common` | `0x70` | `0x78` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x80` | `0x84` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -30.40.5.0.0
--  __TEXT.__text: 0x1ee00
--  __TEXT.__const: 0x2054
--  __TEXT.__swift5_typeref: 0x6e1e
--  __TEXT.__constg_swiftt: 0x610
--  __TEXT.__swift5_types: 0x80
--  __TEXT.__swift5_reflstr: 0x3e0
 +30.40.6.0.0
-+  __TEXT.__text: 0x1f088
-+  __TEXT.__const: 0x2104
-+  __TEXT.__swift5_typeref: 0x6eae
-+  __TEXT.__constg_swiftt: 0x634
-+  __TEXT.__swift5_types: 0x84
-+  __TEXT.__swift5_reflstr: 0x3ef
-   __TEXT.__swift5_assocty: 0x210
--  __TEXT.__swift5_fieldmd: 0x610
--  __TEXT.__swift5_proto: 0xd4
-+  __TEXT.__swift5_fieldmd: 0x62c
-+  __TEXT.__swift5_proto: 0xe0
-   __TEXT.__swift5_capture: 0xa4
--  __TEXT.__cstring: 0x586
-+  __TEXT.__cstring: 0x5b7
-   __TEXT.__oslogstring: 0x85
--  __TEXT.__unwind_info: 0x8c8
-+  __TEXT.__unwind_info: 0x8e8
-   __TEXT.__eh_frame: 0x1a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x28
-   __DATA_CONST.__got: 0x388
--  __AUTH_CONST.__const: 0x14e0
-+  __AUTH_CONST.__const: 0x1570
-   __AUTH_CONST.__objc_const: 0x1d0
--  __AUTH_CONST.__auth_got: 0x900
-+  __AUTH_CONST.__auth_got: 0x908
-   __AUTH.__objc_data: 0x50
-   __AUTH.__data: 0x528
--  __DATA.__data: 0xcc0
--  __DATA.__common: 0x70
-+  __DATA.__data: 0xce0
-+  __DATA.__common: 0x78
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-   - /System/Library/Frameworks/UIKit.framework/UIKit
 +  - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/NutritionCore.framework/NutritionCore
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 673
 -  Symbols:   523
 -  CStrings:  56
 +  Functions: 683
 +  Symbols:   527
 +  CStrings:  58
- 
 Symbols:
 + ___swift_destroy_boxed_opaque_existential_1
 + _associated conformance 15NutritionUICore0A6UIFlag33_D7255DEDD94180ED4F4980DBB1D82C7BLLOSHAASQ

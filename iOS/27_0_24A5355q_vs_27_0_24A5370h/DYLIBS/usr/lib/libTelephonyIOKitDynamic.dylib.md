@@ -2,46 +2,19 @@
 
 > `/usr/lib/libTelephonyIOKitDynamic.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x16d78` | `0x16dac` | **`+0x34`** |
+| `__TEXT.__unwind_info` | `0x9c8` | `0x9b8` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -6554.0.0.0.0
--  __TEXT.__text: 0x16d78 sha256:d276be8e0862cde3231a430e34dfaa7da389ef2c56a728943b2018698af0f5e5
--  __TEXT.__init_offsets: 0x4 sha256:24f788bfc0f9ce2a15b792c72e77baabfcb109f256015436bfdbe9989cf85261
 +6559.0.0.0.0
-+  __TEXT.__text: 0x16dac sha256:d3ff8ebe3e122fd0191dd8c40adf4e95b774968e263afe5442d5a7b98e751719
-+  __TEXT.__init_offsets: 0x4 sha256:e520eb575fc090af28145133314351afc62a20c2e76cdc6f510733616245e260
-   __TEXT.__const: 0x868 sha256:27a0f32effc0abff0f0b0c416211073319927d84b6bc1cc4f51dccdae7f72c3e
-   __TEXT.__cstring: 0x1440 sha256:c535c0dedcf8e551c93d218473a0fd71d8f6025f74ecd0c598c962dbe2d9ff3e
--  __TEXT.__gcc_except_tab: 0x13e0 sha256:04d4cff45c6904d19c1a5e212553394141dbbd1cd8cd287ee64546dcb9d3c880
-+  __TEXT.__gcc_except_tab: 0x13e0 sha256:7c0070b78213ae669df7584473d53943d60c4d4bcc632393bf5cb44e9f5d9df8
-   __TEXT.__oslogstring: 0x1502 sha256:2c9d7cb3a22943bc1bb17d4d199931db3375b08a7a93beec0c9135f73526ddb9
--  __TEXT.__unwind_info: 0x9c8 sha256:28cad39ae02fdcebfe74fcd62e4f34bcd50d7e3444390f5fe8931f96822c1610
-+  __TEXT.__unwind_info: 0x9b8 sha256:5e5eb1f49015695b8e7ee289713e38a01970331be8be2684a6c361104e5899ba
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x1b0 sha256:c12fd286e5822008b4ce0842b45dff39258da31876c9ecba2d8c43566497de35
-+  __DATA_CONST.__const: 0x1b0 sha256:c3dfedfb8a7fa21e3cc4014dd1e0c5331cdc112936029e2ca2ca3df37032bc11
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x8 sha256:9e5be3b0236cee5eb81e33f06b84146274b3f02f65a1269d1145e2d6ef3be0df
-+  __DATA_CONST.__weak_got: 0x8 sha256:cff440243c54c0cb58a4475e1b5ed1a54fe88e3dea7314b2cc58f685a627fe21
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xaa0 sha256:24a31e5073d91e720de81bb7adec76a0b72ad3eb4a466d093e522e70ca927738
--  __AUTH_CONST.__cfstring: 0x760 sha256:754c426a8b73860a6c00ac044981e8d733ee2b7d85dd72e6ea9b1fcecf8f21fd
--  __AUTH_CONST.__weak_auth_got: 0x10 sha256:737b88e29cbdd940705129b1dcf343f8dbb66b5aa8ca3a59216b425d171b4573
-+  __AUTH_CONST.__const: 0xaa0 sha256:49d1ed9210480211991a8e5fa4829d303d289b768ec51c9d7ab49b0c41d199a5
-+  __AUTH_CONST.__cfstring: 0x760 sha256:e9c98e1e04fd0ef600648ce398232a4633260fe6e5df7e646d2a833bb21aea18
-+  __AUTH_CONST.__weak_auth_got: 0x10 sha256:abc8cb55f0cf3dfbe32ecccbb9cd79cdcb347657b0f75523f5da7257571b346f
-   __AUTH_CONST.__auth_got: 0x5f0 sha256:be3f3d5517d4a3b8c7e9c08513aeb806cf86832bdc452d8f06a29fdc11ff695c
-   __DATA_DIRTY.__data: 0x50 sha256:b3cdf3e888917e4459a04ab282588d5e8d2ff4443f8a7aee75865eb68bebec89
-   __DATA_DIRTY.__bss: 0x78 sha256:6edd9f6f9cc92cded36e6c4a580933f9c9f1b90562b46903b806f21902a1a54f
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
--  UUID: E3D43CD4-5FEF-352A-99B0-D6B917D1F906
-+  UUID: 5FC1EA23-92D8-37D5-B73C-118173E10E91
-   Functions: 457
-   Symbols:   1201
-   CStrings:  424
 Symbols:
 + __ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4findB9nqe220106EPKcm
 + __ZNKSt9type_infoeqB9nqe220106ERKS_
@@ -177,5 +150,4 @@ Symbols:
 - __ZNSt3__16vectorINS_8weak_ptrINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEENS5_IS8_EEE20__throw_length_errorB9nqe220100Ev
 - __ZNSt3__19allocatorINS_8weak_ptrINS_12basic_stringIcNS_11char_traitsIcEENS0_IcEEEEEEE17allocate_at_leastB9nqe220100Em
 - __ZSt28__throw_bad_array_new_lengthB9nqe220100v
-
 ```

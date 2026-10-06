@@ -2,58 +2,35 @@
 
 > `/System/Library/AccessibilityBundles/ASMessagesProvider.axbundle/ASMessagesProvider`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb45c` | `0xae40` | **`-0x61c`** |
+| `__AUTH_CONST.__objc_const` | `0x77d0` | `0x7470` | **`-0x360`** |
+| `__AUTH.__objc_data` | `0x4290` | `0x40b0` | **`-0x1e0`** |
+| `__TEXT.__cstring` | `0x3cbd` | `0x3b32` | **`-0x18b`** |
+| `__AUTH_CONST.__cfstring` | `0x3960` | `0x3820` | **`-0x140`** |
+| `__TEXT.__objc_methlist` | `0x2724` | `0x25fc` | **`-0x128`** |
+| `__TEXT.__unwind_info` | `0x670` | `0x638` | **`-0x38`** |
+| `__DATA_CONST.__objc_classlist` | `0x6a8` | `0x678` | **`-0x30`** |
+| `__DATA_CONST.__const` | `0x190` | `0x168` | **`-0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0x510` | `0x4f8` | **`-0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x200` | `0x1f0` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3045.0.0.0.0
--  __TEXT.__text: 0xb45c
--  __TEXT.__objc_methlist: 0x2724
 +3048.0.0.0.0
-+  __TEXT.__text: 0xae40
-+  __TEXT.__objc_methlist: 0x25fc
-   __TEXT.__const: 0x20
-   __TEXT.__gcc_except_tab: 0x54
--  __TEXT.__cstring: 0x3cbd
-+  __TEXT.__cstring: 0x3b32
-   __TEXT.__ustring: 0xc
--  __TEXT.__unwind_info: 0x670
-+  __TEXT.__unwind_info: 0x638
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x190
--  __DATA_CONST.__objc_classlist: 0x6a8
-+  __DATA_CONST.__const: 0x168
-+  __DATA_CONST.__objc_classlist: 0x678
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x510
--  __DATA_CONST.__objc_superrefs: 0x200
-+  __DATA_CONST.__objc_selrefs: 0x4f8
-+  __DATA_CONST.__objc_superrefs: 0x1f0
-   __DATA_CONST.__got: 0x128
-   __AUTH_CONST.__const: 0xc0
--  __AUTH_CONST.__cfstring: 0x3960
--  __AUTH_CONST.__objc_const: 0x77d0
-+  __AUTH_CONST.__cfstring: 0x3820
-+  __AUTH_CONST.__objc_const: 0x7470
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x4290
-+  __AUTH.__objc_data: 0x40b0
-   __DATA.__bss: 0x12
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 654
--  Symbols:   1968
+-  Symbols:   1842
 -  CStrings:  505
 +  Functions: 634
-+  Symbols:   1915
++  Symbols:   1791
 +  CStrings:  495
- 
 Symbols:
 + GCC_except_table123
 + GCC_except_table138
@@ -114,8 +91,6 @@ Symbols:
 - __OBJC_METACLASS_RO_$___AnnotationCollectionViewCellAccessibility_super
 - ___77-[AnnotationCollectionViewCellAccessibility _accessibilityPerformLinkAction:]_block_invoke
 - ___block_descriptor_40_e8_32s_e5_v8?0ls32l8
-- _objc_msgSend$_axLinkLabel
-- _objc_msgSend$accessibilityLinkLabelTapped
 CStrings:
 - "ASMessagesProvider.AccountActionSectionFooterView"
 - "ASMessagesProvider.AccountDetailCollectionViewCell"

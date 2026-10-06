@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/RuntimeInternal.framework/RuntimeInternal`
 
-```diff
+### Section Size Changes
 
- 5027.0.64.0.0
--  __TEXT.__text: 0xb180
-+  __TEXT.__text: 0xb1a0
-   __TEXT.__const: 0x3150
-   __TEXT.__cstring: 0x232
-   __TEXT.__swift5_typeref: 0x136e
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb180` | `0xb1a0` | **`+0x20`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s15RuntimeInternal12TypeMetadataV16genericArgumentsSVvg : 124 -> 128
 ~ _$s15RuntimeInternal14StructMetadataV12fieldOffsetsAA10BufferViewVys6UInt32VGvg : 48 -> 60

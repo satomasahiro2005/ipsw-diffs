@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SystemUIAnimationKit.framework/SystemUIAnimationKit`
 
-```diff
+### Section Size Changes
 
- 104.100.0.0.0
--  __TEXT.__text: 0x56948
-+  __TEXT.__text: 0x5692c
-   __TEXT.__objc_methlist: 0x284c
-   __TEXT.__const: 0x3584
-   __TEXT.__cstring: 0x351f
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x56948` | `0x5692c` | **`-0x1c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _SUIANormalizedRectSpanningRectEdge : 140 -> 112
 ```

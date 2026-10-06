@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SettingsHost.framework/SettingsHost`
 
-```diff
+### Section Size Changes
 
- 2027.0.7.0.0
--  __TEXT.__text: 0x95ed8
-+  __TEXT.__text: 0x95f28
-   __TEXT.__objc_methlist: 0x13c
-   __TEXT.__const: 0x69e8
-   __TEXT.__swift5_typeref: 0x1cc4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x95ed8` | `0x95f28` | **`+0x50`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_2217166c0 -> sub_221f486c0 : 2796 -> 2800
 ~ sub_221745aa4 -> sub_221f77aa8 : 3864 -> 3876

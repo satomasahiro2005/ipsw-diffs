@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/BarcodeSupport.framework/BarcodeSupport`
 
-```diff
+### Section Size Changes
 
- 1038.8.0.0.0
--  __TEXT.__text: 0x3487c
-+  __TEXT.__text: 0x3484c
-   __TEXT.__objc_methlist: 0x2b9c
-   __TEXT.__cstring: 0x43e9
-   __TEXT.__const: 0x146
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3487c` | `0x3484c` | **`-0x30`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ ___57-[BCSQRCodeParser parseCodeFromString:completionHandler:]_block_invoke.cold.1 : 64 -> 56
 ~ ___57-[BCSQRCodeParser parseCodeFromString:completionHandler:]_block_invoke.13.cold.1 : 64 -> 56

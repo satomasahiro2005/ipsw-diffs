@@ -2,24 +2,25 @@
 
 > `/System/Library/PrivateFrameworks/VoiceServices.framework/Support/voiced`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xecfc4` | `0xed0cc` | **`+0x108`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 3600.12.2.0.0
--  __TEXT.__text: 0xecfc4
-+  __TEXT.__text: 0xed0cc
-   __TEXT.__auth_stubs: 0x1510
-   __TEXT.__objc_stubs: 0x740
-   __TEXT.__objc_methlist: 0x3a8
+```text
 Functions:
 ~ sub_10001652c : 404 -> 408
 ~ sub_100017a3c -> sub_100017a40 : 224 -> 216

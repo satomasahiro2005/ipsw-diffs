@@ -2,114 +2,49 @@
 
 > `/System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x169f84` | `0x17467c` | **`+0xa6f8`** |
+| `__AUTH_CONST.__objc_const` | `0x1db38` | `0x1f248` | **`+0x1710`** |
+| `__TEXT.__objc_methlist` | `0x13460` | `0x14190` | **`+0xd30`** |
+| `__AUTH.__objc_data` | `0x4f88` | `0x5af0` | **`+0xb68`** |
+| `__DATA_DIRTY.__objc_data` | `0x12e8` | `0xe10` | **`-0x4d8`** |
+| `__AUTH_CONST.__cfstring` | `0x2d7a0` | `0x2dae0` | **`+0x340`** |
+| `__TEXT.__cstring` | `0x2b3d9` | `0x2b714` | **`+0x33b`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa058` | `0xa388` | **`+0x330`** |
+| `__TEXT.__unwind_info` | `0x5a30` | `0x5d38` | **`+0x308`** |
+| `__AUTH_CONST.__const` | `0x1ff0` | `0x2270` | **`+0x280`** |
+| `__TEXT.__gcc_except_tab` | `0x8eb0` | `0x90d4` | **`+0x224`** |
+| `__DATA_CONST.__const` | `0x6308` | `0x6478` | **`+0x170`** |
+| `__DATA.__bss` | `0x17b0` | `0x18f0` | **`+0x140`** |
+| `__TEXT.__oslogstring` | `0xb1f9` | `0xb312` | **`+0x119`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x39a8` | `0x3ab0` | **`+0x108`** |
+| `__DATA.__objc_ivar` | `0x12f4` | `0x13ac` | **`+0xb8`** |
+| `__DATA_CONST.__objc_classlist` | `0x9d8` | `0xa80` | **`+0xa8`** |
+| `__DATA_CONST.__got` | `0xda0` | `0xe40` | **`+0xa0`** |
+| `__DATA_CONST.__objc_arraydata` | `0x111c0` | `0x11250` | **`+0x90`** |
+| `__DATA_CONST.__objc_superrefs` | `0x680` | `0x710` | **`+0x90`** |
+| `__AUTH_CONST.__objc_intobj` | `0xdb0` | `0xdf8` | **`+0x48`** |
+| `__AUTH_CONST.__auth_got` | `0x1060` | `0x1070` | **`+0x10`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x160` | `0x170` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0xa7e8` | `0xa7f8` | **`+0x10`** |
+| `__TEXT.__const` | `0xe98` | `0xea8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x169f84
--  __TEXT.__objc_methlist: 0x13460
--  __TEXT.__const: 0xe98
--  __TEXT.__cstring: 0x2b3d9
--  __TEXT.__gcc_except_tab: 0x8eb0
--  __TEXT.__oslogstring: 0xb1f9
-+  __TEXT.__text: 0x17467c
-+  __TEXT.__objc_methlist: 0x14190
-+  __TEXT.__const: 0xea8
-+  __TEXT.__gcc_except_tab: 0x90d4
-+  __TEXT.__cstring: 0x2b714
-+  __TEXT.__oslogstring: 0xb312
-   __TEXT.__ustring: 0x2040
-   __TEXT.__dlopen_cstrs: 0x49b
-   __TEXT.__swift5_typeref: 0x2b4
+-2448.100.0.0.0
++2451.1.101.0.0
 
-   __TEXT.__swift_as_cont: 0xc
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x5a30
-+  __TEXT.__unwind_info: 0x5d38
-   __TEXT.__eh_frame: 0x210
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x6308
--  __DATA_CONST.__objc_classlist: 0x9d8
-+  __DATA_CONST.__const: 0x6478
-+  __DATA_CONST.__objc_classlist: 0xa80
-   __DATA_CONST.__objc_catlist: 0x60
-   __DATA_CONST.__objc_protolist: 0xa0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa058
-+  __DATA_CONST.__objc_selrefs: 0xa388
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__objc_superrefs: 0x680
--  __DATA_CONST.__objc_arraydata: 0x111c0
--  __DATA_CONST.__got: 0xda0
--  __AUTH_CONST.__const: 0x1ff0
--  __AUTH_CONST.__cfstring: 0x2d7a0
--  __AUTH_CONST.__objc_const: 0x1db38
-+  __DATA_CONST.__objc_superrefs: 0x710
-+  __DATA_CONST.__objc_arraydata: 0x11250
-+  __DATA_CONST.__got: 0xe40
-+  __AUTH_CONST.__const: 0x2270
-+  __AUTH_CONST.__cfstring: 0x2dae0
-+  __AUTH_CONST.__objc_const: 0x1f248
-   __AUTH_CONST.__weak_auth_got: 0x10
--  __AUTH_CONST.__objc_arrayobj: 0x39a8
-+  __AUTH_CONST.__objc_arrayobj: 0x3ab0
-   __AUTH_CONST.__objc_dictobj: 0xaf78
--  __AUTH_CONST.__objc_intobj: 0xdb0
--  __AUTH_CONST.__objc_doubleobj: 0x160
-+  __AUTH_CONST.__objc_intobj: 0xdf8
-+  __AUTH_CONST.__objc_doubleobj: 0x170
-   __AUTH_CONST.__objc_floatobj: 0x10
--  __AUTH_CONST.__auth_got: 0x1060
--  __AUTH.__objc_data: 0x4f88
-+  __AUTH_CONST.__auth_got: 0x1070
-+  __AUTH.__objc_data: 0x5af0
-   __AUTH.__data: 0x3a0
--  __DATA.__objc_ivar: 0x12f4
-+  __DATA.__objc_ivar: 0x13ac
-   __DATA.__data: 0x1bf8
--  __DATA.__bss: 0x17b0
--  __DATA_DIRTY.__objc_data: 0x12e8
-+  __DATA.__bss: 0x18f0
-+  __DATA_DIRTY.__objc_data: 0xe10
-   __DATA_DIRTY.__data: 0x20
--  __DATA_DIRTY.__bss: 0xa7e8
-+  __DATA_DIRTY.__bss: 0xa7f8
-   __DATA_DIRTY.__common: 0x18
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 8412
--  Symbols:   25919
--  CStrings:  13726
+-  Symbols:   13743
+-  CStrings:  7955
 +  Functions: 8713
-+  Symbols:   26908
-+  CStrings:  13799
- 
-Sections:
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   14278
++  CStrings:  8002
 Symbols:
 + +[CSAbsoluteDatePredicate supportsSecureCoding]
 + +[CSAuthorPredicate personWithName:]
@@ -630,84 +565,6 @@ Symbols:
 + _initWithQueryID:keyboardLanguage:.gSemanticSearchEnabled
 + _initWithQueryID:keyboardLanguage:.onceToken
 + _initialize.onceWindowToken
-+ _objc_msgSend$_CSQueryInputDictionaryWithInput:queryReference:options:
-+ _objc_msgSend$_compileAsORSequence:values:
-+ _objc_msgSend$_compileInOperator:values:
-+ _objc_msgSend$_compileInOperatorForAttribute:values:
-+ _objc_msgSend$allKnownItemsIsPartial
-+ _objc_msgSend$commonInit
-+ _objc_msgSend$compileToMDQueryStringWithConfiguration:
-+ _objc_msgSend$completeQuery:error:
-+ _objc_msgSend$dateFormatter
-+ _objc_msgSend$direction
-+ _objc_msgSend$embedding
-+ _objc_msgSend$flag
-+ _objc_msgSend$initWithAllKnownItems:itemsNeedingDonation:donatedItems:partiallyDonatedItems:itemsNeedingDonationForRedonationRequests:dateOfNewestUndonatedItem:allKnownItemsIsPartial:
-+ _objc_msgSend$initWithAttribute:flag:
-+ _objc_msgSend$initWithAttribute:minDate:maxDate:
-+ _objc_msgSend$initWithAttribute:minValue:maxValue:
-+ _objc_msgSend$initWithAttribute:predicateOperator:
-+ _objc_msgSend$initWithAttribute:predicateOperator:date:
-+ _objc_msgSend$initWithAttribute:predicateOperator:value:
-+ _objc_msgSend$initWithAttribute:referenceDate:unit:offset:
-+ _objc_msgSend$initWithAttribute:referenceDate:unit:offset:direction:
-+ _objc_msgSend$initWithAttribute:unit:offset:
-+ _objc_msgSend$initWithAttribute:unit:offset:direction:
-+ _objc_msgSend$initWithAttribute:value:matchOptions:
-+ _objc_msgSend$initWithAttribute:values:matchOptions:
-+ _objc_msgSend$initWithContentTypes:
-+ _objc_msgSend$initWithLogicalType:children:
-+ _objc_msgSend$initWithName:attributes:
-+ _objc_msgSend$initWithPerson:attributes:
-+ _objc_msgSend$initWithQueryID:keyboardLanguage:
-+ _objc_msgSend$initWithText:matchOptions:
-+ _objc_msgSend$interruptedHandler
-+ _objc_msgSend$isCaseInsensitive
-+ _objc_msgSend$isDiacriticInsensitive
-+ _objc_msgSend$isPrefixMatch
-+ _objc_msgSend$isSubstringMatch
-+ _objc_msgSend$isTokenized
-+ _objc_msgSend$isWordBased
-+ _objc_msgSend$logicalType
-+ _objc_msgSend$matchOptions
-+ _objc_msgSend$maxDate
-+ _objc_msgSend$maxSimilarityResults
-+ _objc_msgSend$maxSimilarityThreshold
-+ _objc_msgSend$minDate
-+ _objc_msgSend$minValue
-+ _objc_msgSend$offset
-+ _objc_msgSend$poll
-+ _objc_msgSend$predicateOperator
-+ _objc_msgSend$prepareWithProtectionClasses:
-+ _objc_msgSend$queryNode
-+ _objc_msgSend$queryNodeForPerson:attribute:
-+ _objc_msgSend$queryNodesForName:attributes:
-+ _objc_msgSend$queryUnderstandingDict
-+ _objc_msgSend$referenceDate
-+ _objc_msgSend$resolvedAttributeNamesHandler
-+ _objc_msgSend$restartGatherEndedHandler
-+ _objc_msgSend$restartedHandler
-+ _objc_msgSend$setChangedAttributesHandler:
-+ _objc_msgSend$setChangedItemsHandler:
-+ _objc_msgSend$setCompletionScoresHandler:
-+ _objc_msgSend$setCompletionsHandler:
-+ _objc_msgSend$setCountChangedHandler:
-+ _objc_msgSend$setEmbedding:
-+ _objc_msgSend$setFoundAttributesHandler:
-+ _objc_msgSend$setFoundItemHandler:
-+ _objc_msgSend$setGatherEndedHandler:
-+ _objc_msgSend$setInterruptedHandler:
-+ _objc_msgSend$setMaxSimilarityResults:
-+ _objc_msgSend$setMaxSimilarityThreshold:
-+ _objc_msgSend$setPhotosComputedAttributesHandler:
-+ _objc_msgSend$setPriorityGatherEndedHandler:
-+ _objc_msgSend$setQueryEmbedding:
-+ _objc_msgSend$setRemovedItemsHandler:
-+ _objc_msgSend$setResolvedAttributeNamesHandler:
-+ _objc_msgSend$setRestartGatherEndedHandler:
-+ _objc_msgSend$setRestartedHandler:
-+ _objc_msgSend$text
-+ _objc_msgSend$unit
 + _prepareWithProtectionClasses:.onceToken
 + _queryForPredicateOperator
 + _sLastMonthPredicate
@@ -734,9 +591,6 @@ Symbols:
 - GCC_except_table1650
 - ___53-[CSSearchableIndex _issueCommand:completionHandler:]_block_invoke_2
 - ___53-[CSSearchableIndex _issueCommand:completionHandler:]_block_invoke_3
-- _objc_msgSend$initWithAllKnownItems:itemsNeedingDonation:donatedItems:partiallyDonatedItems:itemsNeedingDonationForRedonationRequests:dateOfNewestUndonatedItem:
-- _objc_msgSend$setSourceOptions:
-- _objc_msgSend$sourceOptions
 CStrings:
 + "\"%@%@%@\""
 + "%@%@$time.iso(%@)"
@@ -791,5 +645,4 @@ CStrings:
 - " source=%u"
 - "<%@: All Known: %lu; Needing Donation: %lu; Donated: %@; Partially Donated: %@; Pending Redonation: %@; Newest Undonated Date: %@>"
 - "so"
-
 ```

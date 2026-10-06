@@ -2,19 +2,22 @@
 
 > `/Applications/DiagnosticsService.app/PlugIns/Diagnostic-9008.appex/Diagnostic-9008`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x1d8` | `0x1e0` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__swift5_typeref`
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_arraydata: 0x70
-   __DATA_CONST.__objc_arrayobj: 0x90
-   __DATA_CONST.__auth_got: 0x420
--  __DATA_CONST.__got: 0x1d8
-+  __DATA_CONST.__got: 0x1e0
-   __DATA_CONST.__auth_ptr: 0x1d8
-   __DATA.__objc_const: 0xdf0
-   __DATA.__objc_selrefs: 0xa08
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-
+-1307.0.16.0.0
++1307.0.26.502.1
 ```

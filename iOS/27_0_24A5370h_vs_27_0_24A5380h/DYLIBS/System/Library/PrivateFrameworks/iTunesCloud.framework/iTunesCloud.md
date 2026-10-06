@@ -2,92 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/iTunesCloud.framework/iTunesCloud`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x4c40` | `0x53c0` | **`+0x780`** |
+| `__DATA_DIRTY.__objc_data` | `0x3b10` | `0x33e0` | **`-0x730`** |
+| `__TEXT.__text` | `0x3c08d0` | `0x3c0d48` | **`+0x478`** |
+| `__AUTH_CONST.__objc_const` | `0x307c8` | `0x30900` | **`+0x138`** |
+| `__DATA.__data` | `0x2fb8` | `0x3078` | **`+0xc0`** |
+| `__DATA_CONST.__got` | `0xf98` | `0x1058` | **`+0xc0`** |
+| `__DATA_DIRTY.__data` | `0x1c0` | `0x108` | **`-0xb8`** |
+| `__TEXT.__oslogstring` | `0x2098b` | `0x20a3c` | **`+0xb1`** |
+| `__TEXT.__objc_methlist` | `0x1808c` | `0x18114` | **`+0x88`** |
+| `__DATA.__bss` | `0x480` | `0x4d0` | **`+0x50`** |
+| `__TEXT.__cstring` | `0x1759a` | `0x175df` | **`+0x45`** |
+| `__DATA_DIRTY.__bss` | `0x3d8` | `0x398` | **`-0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa2e0` | `0xa310` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0x18418` | `0x18438` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x23e8` | `0x23fc` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0xd88` | `0xd90` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0xbb8` | `0xbc0` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x6968` | `0x6970` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x3c08d0
--  __TEXT.__objc_methlist: 0x1808c
-+  __TEXT.__text: 0x3c0d48
-+  __TEXT.__objc_methlist: 0x18114
-   __TEXT.__const: 0x225e8
-   __TEXT.__dlopen_cstrs: 0x4cf
-   __TEXT.__gcc_except_tab: 0x2b08
--  __TEXT.__cstring: 0x1759a
--  __TEXT.__oslogstring: 0x2098b
-+  __TEXT.__cstring: 0x175df
-+  __TEXT.__oslogstring: 0x20a3c
-   __TEXT.__ustring: 0x8e
--  __TEXT.__unwind_info: 0x6968
-+  __TEXT.__unwind_info: 0x6970
-   __TEXT.__eh_frame: 0x50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+-4026.100.69.0.0
++4026.100.72.0.0
 
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x7338
--  __DATA_CONST.__objc_classlist: 0xd88
-+  __DATA_CONST.__objc_classlist: 0xd90
-   __DATA_CONST.__objc_catlist: 0x78
-   __DATA_CONST.__objc_protolist: 0x2e8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa2e0
-+  __DATA_CONST.__objc_selrefs: 0xa310
-   __DATA_CONST.__objc_protorefs: 0xb8
--  __DATA_CONST.__objc_superrefs: 0xbb8
-+  __DATA_CONST.__objc_superrefs: 0xbc0
-   __DATA_CONST.__objc_arraydata: 0x488
--  __DATA_CONST.__got: 0xf98
--  __AUTH_CONST.__const: 0x18418
-+  __DATA_CONST.__got: 0x1058
-+  __AUTH_CONST.__const: 0x18438
-   __AUTH_CONST.__cfstring: 0x185a0
--  __AUTH_CONST.__objc_const: 0x307c8
-+  __AUTH_CONST.__objc_const: 0x30900
-   __AUTH_CONST.__objc_intobj: 0x438
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__objc_dictobj: 0x230
-   __AUTH_CONST.__auth_got: 0xa68
--  __AUTH.__objc_data: 0x4c40
--  __DATA.__objc_ivar: 0x23e8
--  __DATA.__data: 0x2fb8
--  __DATA.__bss: 0x480
-+  __AUTH.__objc_data: 0x53c0
-+  __DATA.__objc_ivar: 0x23fc
-+  __DATA.__data: 0x3078
-+  __DATA.__bss: 0x4d0
-   __DATA.__common: 0xb88
--  __DATA_DIRTY.__objc_data: 0x3b10
--  __DATA_DIRTY.__data: 0x1c0
--  __DATA_DIRTY.__bss: 0x3d8
-+  __DATA_DIRTY.__objc_data: 0x33e0
-+  __DATA_DIRTY.__data: 0x108
-+  __DATA_DIRTY.__bss: 0x398
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 9990
--  Symbols:   31671
--  CStrings:  8498
+-  Symbols:   17513
+-  CStrings:  5383
 +  Functions: 10002
-+  Symbols:   31716
-+  CStrings:  8501
- 
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
++  Symbols:   17540
++  CStrings:  5386
 Symbols:
 + +[ICUserProfileStore sharedStore]
 + -[ICMusicSubscriptionStatusMonitor _handleDefaultMediaUserProfileDidChange:]
@@ -218,12 +168,6 @@ Symbols:
 + ___33+[ICUserProfileStore sharedStore]_block_invoke
 + ___47-[ICUserProfileStore _handleProfileStoreUpdate]_block_invoke
 + ___block_descriptor_56_e8_32s40s48w_e5_v8?0lw48l8s32l8s40l8
-+ _objc_msgSend$_handleDefaultMediaUserProfileDidChange:
-+ _objc_msgSend$_loadDefaultMediaUserProfileIfNeeded:
-+ _objc_msgSend$beginKeyDiscovery
-+ _objc_msgSend$endKeyDiscovery
-+ _objc_msgSend$hasPendingKeyDiscovery
-+ _objc_msgSend$sharedStore
 + _sharedStore.sOnceToken
 + _sharedStore.sSharedProfileStore
 - -[ICMusicSubscriptionStatusMonitor _handleHomeManagerPropertiesDidChange:]
@@ -330,12 +274,10 @@ Symbols:
 - GCC_except_table9393
 - GCC_except_table9633
 - ___block_descriptor_64_e8_32s40s48w_e5_v8?0lw48l8s32l8s40l8
-- _objc_msgSend$_handleHomeManagerPropertiesDidChange:
 CStrings:
 + "%{public}@ Reloading user profiles for store update notification"
 + "%{public}@ [SKD] - Deferring renewal/revocation of key %{public}@ until in-flight asset key discovery completes"
 + "ICUserProfileStoreDefaultMediaUserDidChangeNotification"
 + "com.apple.iTunesCloud.ICUserProfileStore.queue"
 - "Unexpected nil item for asset: %@"
-
 ```

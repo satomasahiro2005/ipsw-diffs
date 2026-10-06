@@ -2,86 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/VisualIntelligenceCore.framework/VisualIntelligenceCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5ba8ac` | `0x5d215c` | **`+0x178b0`** |
+| `__TEXT.__eh_frame` | `0x21848` | `0x21da8` | **`+0x560`** |
+| `__TEXT.__oslogstring` | `0xa8b6` | `0xabd6` | **`+0x320`** |
+| `__TEXT.__cstring` | `0xe98f` | `0xeb1f` | **`+0x190`** |
+| `__TEXT.__const` | `0x4a02c` | `0x4a17c` | **`+0x150`** |
+| `__AUTH_CONST.__const` | `0x28ae8` | `0x28c30` | **`+0x148`** |
+| `__TEXT.__unwind_info` | `0x11ee0` | `0x12018` | **`+0x138`** |
+| `__TEXT.__swift5_typeref` | `0x1105f` | `0x1115f` | **`+0x100`** |
+| `__DATA.__data` | `0xac18` | `0xaca8` | **`+0x90`** |
+| `__AUTH_CONST.__objc_const` | `0xd040` | `0xd0b0` | **`+0x70`** |
+| `__TEXT.__swift5_capture` | `0x22a0` | `0x2310` | **`+0x70`** |
+| `__AUTH_CONST.__auth_got` | `0x3cd8` | `0x3d30` | **`+0x58`** |
+| `__TEXT.__lazy_helpers` | `0x1b3c` | `0x1b90` | **`+0x54`** |
+| `__TEXT.__swift_as_cont` | `0x1508` | `0x1534` | **`+0x2c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1718` | `0x1738` | **`+0x20`** |
+| `__TEXT.__swift_as_ret` | `0x97c` | `0x998` | **`+0x1c`** |
+| `__TEXT.__objc_methlist` | `0x186c` | `0x1884` | **`+0x18`** |
+| `__TEXT.__swift_as_entry` | `0x8ac` | `0x8b8` | **`+0xc`** |
+| `__AUTH_CONST.__lazy_load_got` | `0x230` | `0x238` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x1ea8` | `0x1eb0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 246.0.0.0.0
--  __TEXT.__text: 0x5ba8ac
--  __TEXT.__lazy_helpers: 0x1b3c
--  __TEXT.__objc_methlist: 0x186c
--  __TEXT.__const: 0x4a02c
--  __TEXT.__swift5_typeref: 0x1105f
--  __TEXT.__swift5_capture: 0x22a0
-+  __TEXT.__text: 0x5d215c
-+  __TEXT.__lazy_helpers: 0x1b90
-+  __TEXT.__objc_methlist: 0x1884
-+  __TEXT.__const: 0x4a17c
-+  __TEXT.__swift5_typeref: 0x1115f
-+  __TEXT.__swift5_capture: 0x2310
-   __TEXT.__constg_swiftt: 0xdd94
-   __TEXT.__swift5_reflstr: 0xa513
-   __TEXT.__swift5_fieldmd: 0xfcc4
-   __TEXT.__swift5_builtin: 0x49c
-   __TEXT.__swift5_assocty: 0x1590
--  __TEXT.__cstring: 0xe98f
-+  __TEXT.__cstring: 0xeb1f
-   __TEXT.__swift5_proto: 0x40fc
-   __TEXT.__swift5_types: 0x1264
--  __TEXT.__oslogstring: 0xa8b6
--  __TEXT.__swift_as_entry: 0x8ac
--  __TEXT.__swift_as_ret: 0x97c
--  __TEXT.__swift_as_cont: 0x1508
-+  __TEXT.__oslogstring: 0xabd6
-+  __TEXT.__swift_as_entry: 0x8b8
-+  __TEXT.__swift_as_ret: 0x998
-+  __TEXT.__swift_as_cont: 0x1534
-   __TEXT.__swift5_protos: 0x130
-   __TEXT.__swift5_mpenum: 0x17c
-   __TEXT.__gcc_except_tab: 0x18
-   __TEXT.__dlopen_cstrs: 0x58
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0x11ee0
--  __TEXT.__eh_frame: 0x21848
-+  __TEXT.__unwind_info: 0x12018
-+  __TEXT.__eh_frame: 0x21da8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x258
-   __DATA_CONST.__objc_protolist: 0xb0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1718
-+  __DATA_CONST.__objc_selrefs: 0x1738
-   __DATA_CONST.__objc_protorefs: 0x58
--  __DATA_CONST.__got: 0x1ea8
--  __AUTH_CONST.__const: 0x28ae8
-+  __DATA_CONST.__got: 0x1eb0
-+  __AUTH_CONST.__const: 0x28c30
-   __AUTH_CONST.__cfstring: 0x80
--  __AUTH_CONST.__objc_const: 0xd040
--  __AUTH_CONST.__lazy_load_got: 0x230
--  __AUTH_CONST.__auth_got: 0x3cd8
-+  __AUTH_CONST.__objc_const: 0xd0b0
-+  __AUTH_CONST.__lazy_load_got: 0x238
-+  __AUTH_CONST.__auth_got: 0x3d30
-   __AUTH.__objc_data: 0x438
-   __AUTH.__data: 0x2d68
--  __DATA.__data: 0xac18
-+  __DATA.__data: 0xaca8
-   __DATA.__common: 0x9a
-   __DATA_DIRTY.__objc_data: 0xbb0
-   __DATA_DIRTY.__data: 0xbb18
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 23863
--  Symbols:   7747
+-  Symbols:   7455
 -  CStrings:  2125
 +  Functions: 23962
-+  Symbols:   7771
++  Symbols:   7477
 +  CStrings:  2144
- 
 Symbols:
 + _CGContextAddPath
 + _CGContextStrokePath
@@ -96,8 +51,6 @@ Symbols:
 + ___swift_closure_destructor.204Tm
 + ___swift_closure_destructor.231Tm
 + ___swift_closure_destructor.69Tm
-+ _objc_msgSend$PNGRepresentationOfImage:format:colorSpace:options:
-+ _objc_msgSend$initWithCVPixelBuffer:
 + _symbolic SS5title_SS5valuet
 + _symbolic SdIegd_
 + _symbolic Si6offset_______Sft7elementt 22VisualIntelligenceCore8CVBundleV

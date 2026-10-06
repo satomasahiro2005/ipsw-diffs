@@ -2,45 +2,28 @@
 
 > `/System/Library/VideoDecoders/AVD.videodecoder`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x16bd88` | `0x18f7dc` | **`+0x23a54`** |
+| `__AUTH_CONST.__const` | `0x4e40` | `0x5940` | **`+0xb00`** |
+| `__TEXT.__const` | `0xc1e3` | `0xc4cf` | **`+0x2ec`** |
+| `__TEXT.__unwind_info` | `0x1de0` | `0x2098` | **`+0x2b8`** |
+| `__TEXT.__gcc_except_tab` | `0xd4c` | `0xe74` | **`+0x128`** |
+| `__TEXT.__oslogstring` | `0x16252` | `0x161a6` | **`-0xac`** |
+| `__TEXT.__cstring` | `0x56bd` | `0x5625` | **`-0x98`** |
+
+### Other Changes
+
 ```diff
 
- 993.1.0.0.0
--  __TEXT.__text: 0x16bd88
-+  __TEXT.__text: 0x18f7dc
-   __TEXT.__objc_methlist: 0x1fc
--  __TEXT.__const: 0xc1e3
--  __TEXT.__oslogstring: 0x16252
--  __TEXT.__cstring: 0x56bd
--  __TEXT.__gcc_except_tab: 0xd4c
--  __TEXT.__unwind_info: 0x1de0
-+  __TEXT.__const: 0xc4cf
-+  __TEXT.__oslogstring: 0x161a6
-+  __TEXT.__cstring: 0x5625
-+  __TEXT.__gcc_except_tab: 0xe74
-+  __TEXT.__unwind_info: 0x2098
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0x1a8
-   __DATA_CONST.__objc_superrefs: 0x18
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x4e40
-+  __AUTH_CONST.__const: 0x5940
-   __AUTH_CONST.__cfstring: 0x800
-   __AUTH_CONST.__objc_const: 0x6e0
-   __AUTH_CONST.__weak_auth_got: 0x38
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 4124
--  Symbols:   3393
--  CStrings:  2072
+-  Symbols:   3345
+-  CStrings:  2074
 +  Functions: 4380
-+  Symbols:   3705
-+  CStrings:  2064
- 
++  Symbols:   3657
++  CStrings:  2066
 Symbols:
 + __ZN15CAHDecBorageAvc11decHdrCSizeEj
 + __ZN15CAHDecBorageAvc11decHdrYSizeEj
@@ -355,8 +338,12 @@ Symbols:
 + __ZTV16CAHDecBorageHevc
 + __ZTV16CAHDecKopsiaHevc
 CStrings:
++ "21:36:59"
++ "21:37:00"
 + "~CAHDecBorageLgh"
 + "~CAHDecKopsiaLgh"
+- "22:21:49"
+- "22:21:51"
 - "AppleAVD: INFO: %{public}s(): Borage AVD is not supported in this AppleAVD driver!!!\n"
 - "AppleAVD: INFO: %{public}s(): Kopsia AVD is not supported in this AppleAVD driver!!!\n"
 - "createBorageAvcDecoder"

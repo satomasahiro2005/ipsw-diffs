@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AudioDSPAnalysis.framework/AudioDSPAnalysis`
 
-```diff
+### Section Size Changes
 
- 24.0.0.0.0
--  __TEXT.__text: 0x1c198
-+  __TEXT.__text: 0x1c1c4
-   __TEXT.__realtime: 0x10b4
-   __TEXT.__objc_methlist: 0x16c
-   __TEXT.__const: 0x208
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c198` | `0x1c1c4` | **`+0x2c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _RealTimeAudioIssueDetectorUpdateReportingSessions : 208 -> 204
 ~ __ZNSt3__16vectorINS_9sub_matchIPKcEENS_9allocatorIS4_EEE6assignEmRKS4_ : 340 -> 336

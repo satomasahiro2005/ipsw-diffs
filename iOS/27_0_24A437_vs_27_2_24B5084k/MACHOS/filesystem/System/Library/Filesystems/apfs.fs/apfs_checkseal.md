@@ -2,36 +2,32 @@
 
 > `/System/Library/Filesystems/apfs.fs/apfs_checkseal`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4fef8` | `0x500dc` | **`+0x1e4`** |
+| `__TEXT.__cstring` | `0x10104` | `0x10117` | **`+0x13`** |
+| `__TEXT.__unwind_info` | `0x900` | `0x908` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+
+### Other Changes
 
 ```diff
 
 -3288.2.1.0.0
--  __TEXT.__text: 0x4f918
 +3288.40.13.0.0
-+  __TEXT.__text: 0x4fafc
-   __TEXT.__auth_stubs: 0x760
-   __TEXT.__const: 0x4c0
--  __TEXT.__cstring: 0x10104
-+  __TEXT.__cstring: 0x10117
-   __TEXT.__unwind_info: 0xb40
-   __DATA_CONST.__const: 0x7b8
-   __DATA_CONST.__cfstring: 0x160
 
-   - /System/Library/PrivateFrameworks/AppleFSCompression.framework/AppleFSCompression
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libutil.dylib
 -  Functions: 747
 +  Functions: 748
-   Symbols:   133
+
 -  CStrings:  1294
 +  CStrings:  1295
- 
 CStrings:
 + "btree_node_compact"
 ```

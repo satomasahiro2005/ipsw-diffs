@@ -2,102 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/PosterBoard.framework/PosterBoard`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x27a4d4` | `0x277d84` | **`-0x2750`** |
+| `__AUTH_CONST.__const` | `0x9370` | `0x97b0` | **`+0x440`** |
+| `__TEXT.__oslogstring` | `0x1eaca` | `0x1ee8a` | **`+0x3c0`** |
+| `__TEXT.__swift5_capture` | `0x2624` | `0x2824` | **`+0x200`** |
+| `__TEXT.__cstring` | `0x148a5` | `0x14795` | **`-0x110`** |
+| `__TEXT.__swift5_typeref` | `0x8a56` | `0x894e` | **`-0x108`** |
+| `__AUTH_CONST.__cfstring` | `0xc5c0` | `0xc4e0` | **`-0xe0`** |
+| `__AUTH.__objc_data` | `0x3c40` | `0x3bc8` | **`-0x78`** |
+| `__DATA.__bss` | `0x2f58` | `0x2f00` | **`-0x58`** |
+| `__TEXT.__gcc_except_tab` | `0x4c60` | `0x4cb4` | **`+0x54`** |
+| `__TEXT.__swift5_fieldmd` | `0x30c4` | `0x3074` | **`-0x50`** |
+| `__TEXT.__constg_swiftt` | `0x6260` | `0x6218` | **`-0x48`** |
+| `__TEXT.__eh_frame` | `0x1a38` | `0x19f8` | **`-0x40`** |
+| `__TEXT.__swift5_reflstr` | `0x4bbd` | `0x4b7d` | **`-0x40`** |
+| `__AUTH_CONST.__objc_const` | `0x3e398` | `0x3e3c8` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x6d30` | `0x6d60` | **`+0x30`** |
+| `__DATA.__data` | `0x6360` | `0x6340` | **`-0x20`** |
+| `__DATA_CONST.__objc_arraydata` | `0x140` | `0x160` | **`+0x20`** |
+| `__DATA_DIRTY.__data` | `0x1548` | `0x1568` | **`+0x20`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0xa8` | `0xc0` | **`+0x18`** |
+| `__AUTH.__data` | `0xff0` | `0xfe0` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x2470` | `0x2460` | **`-0x10`** |
+| `__TEXT.__const` | `0x7324` | `0x7334` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0xf03c` | `0xf02c` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x1dc8` | `0x1dc0` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x9d38` | `0x9d40` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x244` | `0x23c` | **`-0x8`** |
+| `__TEXT.__swift5_proto` | `0x244` | `0x240` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -355.0.8.0.0
--  __TEXT.__text: 0x26da2c
--  __TEXT.__objc_methlist: 0xf03c
--  __TEXT.__const: 0x7324
--  __TEXT.__gcc_except_tab: 0x4c60
--  __TEXT.__cstring: 0x148a5
--  __TEXT.__oslogstring: 0x1eaca
 +355.2.4.0.0
-+  __TEXT.__text: 0x26b494
-+  __TEXT.__objc_methlist: 0xf02c
-+  __TEXT.__const: 0x7334
-+  __TEXT.__gcc_except_tab: 0x4cb4
-+  __TEXT.__cstring: 0x14795
-+  __TEXT.__oslogstring: 0x1ee8a
-   __TEXT.__dlopen_cstrs: 0x2c6
-   __TEXT.__ustring: 0xe
--  __TEXT.__swift5_typeref: 0x8a56
--  __TEXT.__constg_swiftt: 0x6260
-+  __TEXT.__swift5_typeref: 0x894e
-+  __TEXT.__constg_swiftt: 0x6218
-   __TEXT.__swift5_builtin: 0x1cc
--  __TEXT.__swift5_reflstr: 0x4bbd
--  __TEXT.__swift5_fieldmd: 0x30c4
-+  __TEXT.__swift5_reflstr: 0x4b7d
-+  __TEXT.__swift5_fieldmd: 0x3074
-   __TEXT.__swift5_assocty: 0x5d8
--  __TEXT.__swift5_proto: 0x244
--  __TEXT.__swift5_types: 0x244
--  __TEXT.__swift5_capture: 0x2624
-+  __TEXT.__swift5_proto: 0x240
-+  __TEXT.__swift5_types: 0x23c
-+  __TEXT.__swift5_capture: 0x2824
-   __TEXT.__swift5_protos: 0x68
-   __TEXT.__swift_as_entry: 0x58
-   __TEXT.__swift_as_ret: 0x34
-   __TEXT.__swift_as_cont: 0xe0
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x9210
--  __TEXT.__eh_frame: 0x1a38
-+  __TEXT.__unwind_info: 0x91f8
-+  __TEXT.__eh_frame: 0x19f8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0xf0
-   __DATA_CONST.__objc_protolist: 0x6d0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x9d38
-+  __DATA_CONST.__objc_selrefs: 0x9d40
-   __DATA_CONST.__objc_protorefs: 0x2d0
-   __DATA_CONST.__objc_superrefs: 0x3e8
--  __DATA_CONST.__objc_arraydata: 0x140
--  __DATA_CONST.__got: 0x1dc8
--  __AUTH_CONST.__const: 0x9370
--  __AUTH_CONST.__cfstring: 0xc5c0
--  __AUTH_CONST.__objc_const: 0x3e398
--  __AUTH_CONST.__objc_arrayobj: 0xa8
-+  __DATA_CONST.__objc_arraydata: 0x160
-+  __DATA_CONST.__got: 0x1dc0
-+  __AUTH_CONST.__const: 0x97b0
-+  __AUTH_CONST.__cfstring: 0xc4e0
-+  __AUTH_CONST.__objc_const: 0x3e3c8
-+  __AUTH_CONST.__objc_arrayobj: 0xc0
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__objc_intobj: 0xa8
-   __AUTH_CONST.__objc_dictobj: 0xa0
--  __AUTH_CONST.__auth_got: 0x2470
--  __AUTH.__objc_data: 0x3c40
--  __AUTH.__data: 0xff0
-+  __AUTH_CONST.__auth_got: 0x2460
-+  __AUTH.__objc_data: 0x3bc8
-+  __AUTH.__data: 0xfe0
-   __DATA.__objc_ivar: 0x109c
--  __DATA.__data: 0x6360
-+  __DATA.__data: 0x6340
-   __DATA.__common: 0x130
-   __DATA_DIRTY.__objc_data: 0x6e98
--  __DATA_DIRTY.__data: 0x1548
-+  __DATA_DIRTY.__data: 0x1568
-   __DATA_DIRTY.__crash_info: 0x148
-   __DATA_DIRTY.__bss: 0x1520
-   __DATA_DIRTY.__common: 0x158
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10945
--  Symbols:   15222
+-  Symbols:   11146
 -  CStrings:  4026
 +  Functions: 10971
-+  Symbols:   15213
++  Symbols:   11136
 +  CStrings:  4022
- 
 Symbols:
 + -[PBFPosterConfigurationMigrator _isVerticallySelectedInLastSelectedConfigurations:forFromBundleIdentifier:posterUUIDString:]
 + -[PBFPosterExtensionDataStoreMigrator _performBundleIdentifierMigrationWithRequests:migratedBundleIdentifiers:error:]
@@ -133,10 +83,6 @@ Symbols:
 + _get_witness_table 11PosterBoard0A15GalleryModelingRzAA0aC14AssetProvidingR_AA0C14ViewSpecifyingR0_r1_l7SwiftUI15ModifiedContentVyAE0G0PAEE20accessibilityElement8childrenQrAE26AccessibilityChildBehaviorV_tFQOyAGyAGyAiEE12onTapGesture5count7performQrSi_yyctFQOyAGyAE6VStackVyAE05TupleL0VyAE012_ConditionalL0VyAGyAiEE12_glassEffect_2inQrAE6_GlassV_qd__tAE5ShapeRd__lFQOyAGyAGyAE5GroupVyAVyAA06PortalG0VAE5ColorVGGAE12_FrameLayoutVGAE11_ClipEffectVyAE6CircleVGG_A14_Qo_AE16_OverlayModifierVyAGyA1_yAGyAE6ZStackVyATyAGyAGyA5_AE23_CompositingGroupEffectVGAE16_BlendModeEffectVG_AGyAiEE08progressG5StyleyQrqd__AE08ProgressG5StyleRd__lFQOyAE08ProgressG0VyAE05EmptyG0VA33_G_AE016CircularProgressG5StyleVQo_AE30_EnvironmentKeyWritingModifierVyA5_SgGGQPGGAE21_TraitWritingModifierVyAE18TransitionTraitKeyVGGSgGAE18_AnimationModifierVySbGGGGAiEE23matchedTransitionSource2idAX13configurationQrqd___AE9NamespaceV2IDVqd_0_AE41EmptyMatchedTransitionSourceConfigurationVXEtSHRd__AE36MatchedTransitionSourceConfigurationRd_0_r0_lFQOyAGyAGyAGyAGyA10_A12_yAE16RoundedRectangleVGGA57_GAE14_PaddingLayoutVGA19_yAVyAA0aC15LuminanceBorderVAE017StrokeBorderShapeG0VyA70_A5_A33_GGSgGG_SSAEA68_PAEE9clipShapeyQrA70_FQOyA67__Qo_Qo_G_AVyAVyAGyAGyA5_A9_GA19_yAGyAA19DecoratedTitleLabel33_75A0A1F2DB76CA2A410C45391136E949LLVyq0_GA9_GGGA91_GSgA96_GSgQPGGAE01_L13ShapeModifierVyAE9RectangleVGG_Qo_AE25_AppearanceActionModifierVGA113_G_Qo_AE0P18AttachmentModifierVGAeHHPqd__AeHHD2_A116_HO_A118_AE0G8ModifierHPyHCHC
 + _get_witness_table 11PosterBoard0A21GalleryAssetProvidingRzl7SwiftUI15ModifiedContentVyAEyAEyAEyAEyAEyAC5GroupVyAC012_ConditionalI0VyAEyAEyAA10PortalViewVAC12_FrameLayoutVGAC12_ScaleEffectVGAC06_ShapeM0VyAC9RectangleVAC5ColorVGGGAMGAC05_ClipQ0VyAC07RoundedS0VGGAC16_OverlayModifierVyAA0aC15LuminanceBorderVGGAC017_AppearanceActionX0VGA13_GAC023AccessibilityAttachmentX0VGAC0M0HPA15_ACA19_HPA14_ACA19_HPA11_ACA19_HPA5_ACA19_HPA_ACA19_HPAzCA19_HPAyCA19_HPAqCA19_HPAnCA19_HPAkCA19_HPyHC_AmC0mX0HPyHCHC_ApCA20_HPyHCHC_AxCA19_HPyHCHC_HC_AmCA20_HPyHCHC_A4_ACA20_HPyHCHC_A10_ACA20_HPyHCHC_A13_ACA20_HPyHCHC_A13_ACA20_HPyHCHC_A17_ACA20_HPyHCHC
 + _keypath_set.52Tm
-+ _objc_msgSend$_isVerticallySelectedInLastSelectedConfigurations:forFromBundleIdentifier:posterUUIDString:
-+ _objc_msgSend$_performBundleIdentifierMigrationWithRequests:migratedBundleIdentifiers:error:
-+ _objc_msgSend$_recordCompletedBundleIdentifierMigrations:requestedCount:
-+ _objc_msgSend$sourceView
 + _policyForProvider:.widgetHostingPolicy
 + _symbolic SDySS_____G 11PosterBoard0A18GalleryItemContentC
 + _symbolic So13_UIPortalViewC
@@ -194,9 +140,6 @@ Symbols:
 - _get_witness_table 11PosterBoard0A15GalleryModelingRzAA0aC14AssetProvidingR_AA0C14ViewSpecifyingR0_r1_l7SwiftUI15ModifiedContentVyAE0G0PAEE20accessibilityElement8childrenQrAE26AccessibilityChildBehaviorV_tFQOyAGyAGyAiEE12onTapGesture5count7performQrSi_yyctFQOyAGyAE6VStackVyAE05TupleL0VyAE012_ConditionalL0VyAGyAiEE12_glassEffect_2inQrAE6_GlassV_qd__tAE5ShapeRd__lFQOyAGyAGyAE5GroupVyAVyAVyAA06PortalG0VAE5ColorVGA5_GGAE12_FrameLayoutVGAE11_ClipEffectVyAE6CircleVGG_A15_Qo_AE16_OverlayModifierVyAGyA1_yAGyAE6ZStackVyATyAGyAGyA5_AE23_CompositingGroupEffectVGAE16_BlendModeEffectVG_AGyAiEE08progressG5StyleyQrqd__AE08ProgressG5StyleRd__lFQOyAE08ProgressG0VyAE05EmptyG0VA34_G_AE016CircularProgressG5StyleVQo_AE30_EnvironmentKeyWritingModifierVyA5_SgGGQPGGAE21_TraitWritingModifierVyAE18TransitionTraitKeyVGGSgGAE18_AnimationModifierVySbGGGGAiEE23matchedTransitionSource2idAX13configurationQrqd___AE9NamespaceV2IDVqd_0_AE41EmptyMatchedTransitionSourceConfigurationVXEtSHRd__AE36MatchedTransitionSourceConfigurationRd_0_r0_lFQOyAGyAGyAGyAGyA11_A13_yAE16RoundedRectangleVGGA58_GAE14_PaddingLayoutVGA20_yAVyAA0aC15LuminanceBorderVAE017StrokeBorderShapeG0VyA71_A5_A34_GGSgGG_SSAEA69_PAEE9clipShapeyQrA71_FQOyA68__Qo_Qo_G_AVyAVyAGyAGyA5_A10_GA20_yAGyAA19DecoratedTitleLabel33_75A0A1F2DB76CA2A410C45391136E949LLVyq0_GA10_GGGA92_GSgA97_GSgQPGGAE01_L13ShapeModifierVyAE9RectangleVGG_Qo_AE25_AppearanceActionModifierVGA114_G_Qo_AE0P18AttachmentModifierVGAeHHPqd__AeHHD2_A117_HO_A119_AE0G8ModifierHPyHCHC
 - _get_witness_table 11PosterBoard0A21GalleryAssetProvidingRzl7SwiftUI15ModifiedContentVyAEyAEyAEyAEyAEyAC5GroupVyAC012_ConditionalI0VyAEyAEyAIyAA10PortalViewVAC5ColorVGAC12_FrameLayoutVGAC12_ScaleEffectVGAC06_ShapeM0VyAC9RectangleVAMGGGAPGAC05_ClipR0VyAC07RoundedT0VGGAC16_OverlayModifierVyAA0aC15LuminanceBorderVGGAC017_AppearanceActionX0VGA14_GAC023AccessibilityAttachmentX0VGAC0M0HPA16_ACA20_HPA15_ACA20_HPA12_ACA20_HPA6_ACA20_HPA0_ACA20_HPA_ACA20_HPAzCA20_HPAtCA20_HPAqCA20_HPAnCA20_HPAkCA20_HPyHC_AmCA20_HPyHCHC_ApC0mX0HPyHCHC_AsCA21_HPyHCHC_AyCA20_HPyHCHC_HC_ApCA21_HPyHCHC_A5_ACA21_HPyHCHC_A11_ACA21_HPyHCHC_A14_ACA21_HPyHCHC_A14_ACA21_HPyHCHC_A18_ACA21_HPyHCHC
 - _keypath_set.55Tm
-- _objc_msgSend$_performBundleIdentifierMigrationWithRequests:error:
-- _objc_msgSend$contextId
-- _objc_msgSend$setHidesSourceLayer:
 - _policyForProvider:.policiesByProvider
 - _symbolic SDySS_____G 11PosterBoard0A18GalleryItemContentV
 - _symbolic SS3key______5valuet 11PosterBoard0A18GalleryItemContentV

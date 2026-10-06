@@ -2,110 +2,64 @@
 
 > `/Applications/Tamale.app/Tamale`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1039f0` | `0x103f40` | **`+0x550`** |
+| `__TEXT.__swift5_typeref` | `0x114ea` | `0x117a0` | **`+0x2b6`** |
+| `__TEXT.__oslogstring` | `0x2177` | `0x2247` | **`+0xd0`** |
+| `__TEXT.__auth_stubs` | `0x5a30` | `0x5990` | **`-0xa0`** |
+| `__DATA_CONST.__auth_got` | `0x2d20` | `0x2cd0` | **`-0x50`** |
+| `__DATA_CONST.__got` | `0x1490` | `0x1458` | **`-0x38`** |
+| `__DATA.__data` | `0x8518` | `0x84e8` | **`-0x30`** |
+| `__DATA_CONST.__const` | `0x7410` | `0x7438` | **`+0x28`** |
+| `__DATA.__objc_const` | `0x89d0` | `0x89f0` | **`+0x20`** |
+| `__TEXT.__const` | `0xb424` | `0xb434` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x17f8` | `0x1808` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x2d54` | `0x2d60` | **`+0xc`** |
+| `__DATA.__common` | `0x160` | `0x168` | **`+0x8`** |
+| `__DATA_CONST.__auth_ptr` | `0x13c0` | `0x13c8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__objc_methname`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_reflstr`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift5_types2`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1039f0
--  __TEXT.__auth_stubs: 0x5a30
-+  __TEXT.__text: 0x103f40
-+  __TEXT.__auth_stubs: 0x5990
-   __TEXT.__objc_stubs: 0x2700
-   __TEXT.__objc_methlist: 0x14c4
-   __TEXT.__objc_methname: 0x6081
-   __TEXT.__objc_classname: 0xbf5
--  __TEXT.__swift5_typeref: 0x114ea
--  __TEXT.__const: 0xb424
--  __TEXT.__swift5_capture: 0x17f8
-+  __TEXT.__swift5_typeref: 0x117a0
-+  __TEXT.__const: 0xb434
-+  __TEXT.__swift5_capture: 0x1808
-   __TEXT.__constg_swiftt: 0x3b0c
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__swift5_builtin: 0x190
-   __TEXT.__swift5_reflstr: 0x2e39
--  __TEXT.__swift5_fieldmd: 0x2d54
-+  __TEXT.__swift5_fieldmd: 0x2d60
-   __TEXT.__swift5_assocty: 0x750
-   __TEXT.__swift5_proto: 0x6b8
-   __TEXT.__swift5_types: 0x31c
+-216.0.100.0.0
++224.1.0.0.0
 
-   __TEXT.__swift_as_ret: 0x11c
-   __TEXT.__swift_as_cont: 0x2e8
-   __TEXT.__cstring: 0x1cce
--  __TEXT.__oslogstring: 0x2177
-+  __TEXT.__oslogstring: 0x2247
-   __TEXT.__swift5_protos: 0x10
-   __TEXT.__swift5_mpenum: 0x24
-   __TEXT.__swift5_types2: 0x4
-   __TEXT.__unwind_info: 0x31a8
-   __TEXT.__eh_frame: 0x4658
--  __DATA_CONST.__const: 0x7410
-+  __DATA_CONST.__const: 0x7438
-   __DATA_CONST.__cfstring: 0xa0
-   __DATA_CONST.__objc_classlist: 0x188
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x1c0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0xe8
--  __DATA_CONST.__auth_got: 0x2d20
--  __DATA_CONST.__got: 0x1490
--  __DATA_CONST.__auth_ptr: 0x13c0
--  __DATA.__objc_const: 0x89d0
-+  __DATA_CONST.__auth_got: 0x2cd0
-+  __DATA_CONST.__got: 0x1458
-+  __DATA_CONST.__auth_ptr: 0x13c8
-+  __DATA.__objc_const: 0x89f0
-   __DATA.__objc_selrefs: 0x12b0
-   __DATA.__objc_data: 0x1ec0
--  __DATA.__data: 0x8518
-+  __DATA.__data: 0x84e8
-   __DATA.__bss: 0xd810
--  __DATA.__common: 0x160
-+  __DATA.__common: 0x168
-   - /System/Library/Frameworks/ARKit.framework/ARKit
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-
-   - /System/Library/PrivateFrameworks/FusionTracker.framework/FusionTracker
-   - /System/Library/PrivateFrameworks/GenerativeAssistantActions.framework/GenerativeAssistantActions
-   - /System/Library/PrivateFrameworks/GenerativeAssistantSettings.framework/GenerativeAssistantSettings
 -  - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
-   - /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf
-   - /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
-   - /System/Library/PrivateFrameworks/SiriActivation.framework/SiriActivation
 
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 4393
 -  Symbols:   2533
--  CStrings:  1512
+-  CStrings:  1503
 +  Symbols:   2519
-+  CStrings:  1514
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__objc_methname : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_entry : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_reflstr : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_types2 : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__bss : content changed
++  CStrings:  1505
 Symbols:
 + _$s20VisualIntelligenceUI14NewEntityModelC6boundsSo6CGRectVvg
 + _$s20VisualIntelligenceUI18CameraContentModelC017shouldShowMissingB7OverlaySbvg
@@ -154,5 +108,4 @@ Symbols:
 CStrings:
 + "Launch-related: Resuming paused camera with no capture overlay (stale Siri still)"
 + "Launch-related: Resuming paused camera — capture effects active but no still result (stale Siri capture)"
-
 ```

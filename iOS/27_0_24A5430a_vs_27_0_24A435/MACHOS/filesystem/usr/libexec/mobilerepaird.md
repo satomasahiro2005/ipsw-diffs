@@ -2,89 +2,53 @@
 
 > `/usr/libexec/mobilerepaird`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe1c8` | `0x1cea4` | **`+0xecdc`** |
+| `__TEXT.__oslogstring` | `0xac6` | `0x2ad9` | **`+0x2013`** |
+| `__TEXT.__objc_methname` | `0x2140` | `0x3f4a` | **`+0x1e0a`** |
+| `__DATA_CONST.__cfstring` | `0x2380` | `0x3e40` | **`+0x1ac0`** |
+| `__TEXT.__objc_stubs` | `0x1c20` | `0x3660` | **`+0x1a40`** |
+| `__TEXT.__cstring` | `0x242b` | `0x3de6` | **`+0x19bb`** |
+| `__DATA.__objc_const` | `0x1b08` | `0x2e28` | **`+0x1320`** |
+| `__TEXT.__objc_methlist` | `0xcfc` | `0x17fc` | **`+0xb00`** |
+| `__TEXT.__objc_methtype` | `0x3da` | `0xce2` | **`+0x908`** |
+| `__DATA.__objc_selrefs` | `0x8e0` | `0x1058` | **`+0x778`** |
+| `__DATA_CONST.__const` | `0x458` | `0xbc0` | **`+0x768`** |
+| `__DATA.__objc_data` | `0x820` | `0xe20` | **`+0x600`** |
+| `__TEXT.__gcc_except_tab` | `0x3e8` | `0x988` | **`+0x5a0`** |
+| `__TEXT.__unwind_info` | `0x350` | `0x718` | **`+0x3c8`** |
+| `__TEXT.__auth_stubs` | `0x680` | `0x980` | **`+0x300`** |
+| `__DATA.__data` | `0x190` | `0x458` | **`+0x2c8`** |
+| `__TEXT.__objc_classname` | `0x2e1` | `0x55f` | **`+0x27e`** |
+| `__DATA_CONST.__auth_got` | `0x350` | `0x4d0` | **`+0x180`** |
+| `__DATA_CONST.__got` | `0x330` | `0x490` | **`+0x160`** |
+| `__TEXT.__ustring` | `—` | `0x12a` | **`+0x12a`** |
+| `__DATA.__bss` | `0x160` | `0x210` | **`+0xb0`** |
+| `__TEXT.__const` | `0xaa` | `0x152` | **`+0xa8`** |
+| `__DATA_CONST.__objc_classlist` | `0xd0` | `0x160` | **`+0x90`** |
+| `__DATA.__objc_ivar` | `0xbc` | `0x12c` | **`+0x70`** |
+| `__DATA_CONST.__objc_superrefs` | `0xb8` | `0x118` | **`+0x60`** |
+| `__TEXT.__swift5_typeref` | `—` | `0x3b` | **`+0x3b`** |
+| `__DATA_CONST.__objc_protolist` | `0x20` | `0x58` | **`+0x38`** |
+| `__TEXT.__constg_swiftt` | `—` | `0x38` | **`+0x38`** |
+| `__TEXT.__swift5_capture` | `—` | `0x20` | **`+0x20`** |
+| `__DATA_CONST.__objc_intobj` | `0x30` | `0x48` | **`+0x18`** |
+| `__TEXT.__swift5_fieldmd` | `—` | `0x10` | **`+0x10`** |
+| `__DATA_CONST.__auth_ptr` | `—` | `0x8` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x10` | `0x18` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `—` | `0x4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
- 1307.2.4.0.0
--  __TEXT.__text: 0xe1c8
--  __TEXT.__auth_stubs: 0x680
--  __TEXT.__objc_stubs: 0x1c20
--  __TEXT.__objc_methlist: 0xcfc
--  __TEXT.__const: 0xaa
--  __TEXT.__gcc_except_tab: 0x3e8
--  __TEXT.__objc_methname: 0x2140
--  __TEXT.__cstring: 0x242b
--  __TEXT.__oslogstring: 0xac6
--  __TEXT.__objc_classname: 0x2e1
--  __TEXT.__objc_methtype: 0x3da
--  __TEXT.__unwind_info: 0x350
--  __DATA_CONST.__const: 0x458
--  __DATA_CONST.__cfstring: 0x2380
--  __DATA_CONST.__objc_classlist: 0xd0
--  __DATA_CONST.__objc_protolist: 0x20
-+  __TEXT.__text: 0x1cea4
-+  __TEXT.__auth_stubs: 0x980
-+  __TEXT.__objc_stubs: 0x3660
-+  __TEXT.__objc_methlist: 0x17fc
-+  __TEXT.__const: 0x152
-+  __TEXT.__gcc_except_tab: 0x988
-+  __TEXT.__objc_methname: 0x3f4a
-+  __TEXT.__cstring: 0x3de6
-+  __TEXT.__oslogstring: 0x2ad9
-+  __TEXT.__objc_classname: 0x55f
-+  __TEXT.__objc_methtype: 0xce2
-+  __TEXT.__ustring: 0x12a
-+  __TEXT.__constg_swiftt: 0x38
-+  __TEXT.__swift5_typeref: 0x3b
-+  __TEXT.__swift5_fieldmd: 0x10
-+  __TEXT.__swift5_capture: 0x20
-+  __TEXT.__swift5_types: 0x4
-+  __TEXT.__unwind_info: 0x718
-+  __DATA_CONST.__const: 0xbc0
-+  __DATA_CONST.__cfstring: 0x3e40
-+  __DATA_CONST.__objc_classlist: 0x160
-+  __DATA_CONST.__objc_protolist: 0x58
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0xb8
--  __DATA_CONST.__objc_intobj: 0x30
--  __DATA_CONST.__auth_got: 0x350
--  __DATA_CONST.__got: 0x330
--  __DATA.__objc_const: 0x1b08
--  __DATA.__objc_selrefs: 0x8e0
--  __DATA.__objc_ivar: 0xbc
--  __DATA.__objc_data: 0x820
--  __DATA.__data: 0x190
-+  __DATA_CONST.__objc_protorefs: 0x18
-+  __DATA_CONST.__objc_superrefs: 0x118
-+  __DATA_CONST.__objc_intobj: 0x48
-+  __DATA_CONST.__auth_got: 0x4d0
-+  __DATA_CONST.__got: 0x490
-+  __DATA_CONST.__auth_ptr: 0x8
-+  __DATA.__objc_const: 0x2e28
-+  __DATA.__objc_selrefs: 0x1058
-+  __DATA.__objc_ivar: 0x12c
-+  __DATA.__objc_data: 0xe20
-+  __DATA.__data: 0x458
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
 +  - /System/Library/Frameworks/Security.framework/Security
-   - /System/Library/Frameworks/UserNotifications.framework/UserNotifications
-   - /System/Library/PrivateFrameworks/AppleDeviceQuerySupport.framework/AppleDeviceQuerySupport
-   - /System/Library/PrivateFrameworks/BatteryDischarge.framework/BatteryDischarge
 
-   - /System/Library/PrivateFrameworks/DeviceIdentity.framework/DeviceIdentity
-   - /System/Library/PrivateFrameworks/EmbeddedDataReset.framework/EmbeddedDataReset
-   - /System/Library/PrivateFrameworks/MSUDataAccessor.framework/MSUDataAccessor
 +  - /System/Library/PrivateFrameworks/MobileActivation.framework/MobileActivation
-   - /System/Library/PrivateFrameworks/SetupAssistant.framework/SetupAssistant
-   - /System/Library/PrivateFrameworks/SpringBoardFoundation.framework/SpringBoardFoundation
-   - /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libimage4.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 292
 -  Symbols:   201
 -  CStrings:  824
@@ -98,7 +62,6 @@
 +  Functions: 594
 +  Symbols:   292
 +  CStrings:  1549
- 
 Symbols:
 + _CFBooleanGetTypeID
 + _CFBooleanGetValue

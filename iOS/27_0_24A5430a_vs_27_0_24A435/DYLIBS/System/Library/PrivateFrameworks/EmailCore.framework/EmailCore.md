@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/EmailCore.framework/EmailCore`
 
-```diff
+### Section Size Changes
 
- 3901.100.1.2.14
--  __TEXT.__text: 0x5bacc
-+  __TEXT.__text: 0x5bab8
-   __TEXT.__objc_methlist: 0x50b8
-   __TEXT.__gcc_except_tab: 0x71e8
-   __TEXT.__const: 0x11e0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5bacc` | `0x5bab8` | **`-0x14`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[ECMessageBodyStringAccumulator appendCharacters:length:] : 1532 -> 1512
 ~ _parseEntity : 952 -> 944

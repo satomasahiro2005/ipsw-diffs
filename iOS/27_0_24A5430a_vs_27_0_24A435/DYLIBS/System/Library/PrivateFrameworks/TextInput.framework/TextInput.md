@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/TextInput.framework/TextInput`
 
-```diff
+### Section Size Changes
 
- 3567.0.0.0.0
--  __TEXT.__text: 0x80960
-+  __TEXT.__text: 0x80964
-   __TEXT.__objc_methlist: 0xb660
-   __TEXT.__dlopen_cstrs: 0x459
-   __TEXT.__const: 0x4b0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x80960` | `0x80964` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[TIHandwritingStrokes initWithCoder:] : 656 -> 660
 ```

@@ -2,72 +2,71 @@
 
 > `com.apple.driver.AppleThunderboltIP`
 
-```diff
+### Section Size Changes
 
-   __TEXT.__const: 0x20
-   __TEXT.__cstring: 0x1e267
-   __TEXT.__os_log: 0xe017
--  __TEXT_EXEC.__text: 0x36cf4
-+  __TEXT_EXEC.__text: 0x370c8
-   __TEXT_EXEC.__auth_stubs: 0x630
-   __DATA.__data: 0x360
-   __DATA.__common: 0x158
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x36cf4` | `0x370c8` | **`+0x3d4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_fffffe0009858350 -> sub_fffffe00098e3940 : 72 -> 76
-~ sub_fffffe00098583a0 -> sub_fffffe00098e3994 : 52 -> 56
-~ sub_fffffe00098583d4 -> sub_fffffe00098e39cc : 52 -> 56
-~ sub_fffffe0009858418 -> sub_fffffe00098e3a14 : 68 -> 72
-~ sub_fffffe0009858484 -> sub_fffffe00098e3a84 : 72 -> 76
-~ sub_fffffe00098584cc -> sub_fffffe00098e3ad0 : 104 -> 108
-~ sub_fffffe0009858548 -> sub_fffffe00098e3b50 : 88 -> 92
-~ sub_fffffe00098585a0 -> sub_fffffe00098e3bac : 88 -> 92
+~ sub_fffffff009862bf0 -> sub_fffffff0098ea690 : 72 -> 76
+~ sub_fffffff009862c40 -> sub_fffffff0098ea6e4 : 52 -> 56
+~ sub_fffffff009862c74 -> sub_fffffff0098ea71c : 52 -> 56
+~ sub_fffffff009862cb8 -> sub_fffffff0098ea764 : 68 -> 72
+~ sub_fffffff009862d24 -> sub_fffffff0098ea7d4 : 72 -> 76
+~ sub_fffffff009862d6c -> sub_fffffff0098ea820 : 104 -> 108
+~ sub_fffffff009862de8 -> sub_fffffff0098ea8a0 : 88 -> 92
+~ sub_fffffff009862e40 -> sub_fffffff0098ea8fc : 88 -> 92
 ~ __ZN25AppleThunderboltIPService5startEP9IOService : 3152 -> 3156
 ~ __ZN25AppleThunderboltIPService11createPortsEv : 2400 -> 2404
 ~ __ZN25AppleThunderboltIPService24protocolListenerCallbackEPvP27IOThunderboltReceiveCommand : 2028 -> 2032
 ~ __ZN25AppleThunderboltIPService16publishIPServiceEb : 1396 -> 1400
 ~ __ZN25AppleThunderboltIPService8finalizeEj : 1884 -> 1888
 ~ __ZN25AppleThunderboltIPService19handleXDomainPacketEP28IOThunderboltDispatchContext : 2064 -> 2068
-~ sub_fffffe000985b874 -> sub_fffffe00098e6e9c : 56 -> 60
+~ sub_fffffff009866114 -> sub_fffffff0098edbec : 56 -> 60
 ~ __ZN25AppleThunderboltIPService27getIPPortForThunderboltPortEP17IOThunderboltPort : 3636 -> 3640
 ~ __ZN25AppleThunderboltIPService15reserveForLoginEbP29AppleThunderboltIPTransmitter : 2144 -> 2148
-~ sub_fffffe000985d00c -> sub_fffffe00098e8640 : 80 -> 84
-~ sub_fffffe000985d06c -> sub_fffffe00098e86a4 : 56 -> 60
-~ sub_fffffe000985d0a4 -> sub_fffffe00098e86e0 : 56 -> 60
-~ sub_fffffe000985d0dc -> sub_fffffe00098e871c : 52 -> 56
-~ sub_fffffe000985d110 -> sub_fffffe00098e8754 : 52 -> 56
+~ sub_fffffff0098678ac -> sub_fffffff0098ef390 : 80 -> 84
+~ sub_fffffff00986790c -> sub_fffffff0098ef3f4 : 56 -> 60
+~ sub_fffffff009867944 -> sub_fffffff0098ef430 : 56 -> 60
+~ sub_fffffff00986797c -> sub_fffffff0098ef46c : 52 -> 56
+~ sub_fffffff0098679b0 -> sub_fffffff0098ef4a4 : 52 -> 56
 ~ _kprintHexDump : 500 -> 504
-~ sub_fffffe000985d338 -> sub_fffffe00098e8984 : 48 -> 52
-~ sub_fffffe000985d380 -> sub_fffffe00098e89d0 : 72 -> 76
-~ sub_fffffe000985d3d0 -> sub_fffffe00098e8a24 : 52 -> 56
-~ sub_fffffe000985d404 -> sub_fffffe00098e8a5c : 52 -> 56
-~ sub_fffffe000985d448 -> sub_fffffe00098e8aa4 : 68 -> 72
-~ sub_fffffe000985d4b4 -> sub_fffffe00098e8b14 : 72 -> 76
-~ sub_fffffe000985d4fc -> sub_fffffe00098e8b60 : 104 -> 108
-~ sub_fffffe000985d578 -> sub_fffffe00098e8be0 : 88 -> 92
-~ sub_fffffe000985d5d0 -> sub_fffffe00098e8c3c : 88 -> 92
+~ sub_fffffff009867bd8 -> sub_fffffff0098ef6d4 : 48 -> 52
+~ sub_fffffff009867c20 -> sub_fffffff0098ef720 : 72 -> 76
+~ sub_fffffff009867c70 -> sub_fffffff0098ef774 : 52 -> 56
+~ sub_fffffff009867ca4 -> sub_fffffff0098ef7ac : 52 -> 56
+~ sub_fffffff009867ce8 -> sub_fffffff0098ef7f4 : 68 -> 72
+~ sub_fffffff009867d54 -> sub_fffffff0098ef864 : 72 -> 76
+~ sub_fffffff009867d9c -> sub_fffffff0098ef8b0 : 104 -> 108
+~ sub_fffffff009867e18 -> sub_fffffff0098ef930 : 88 -> 92
+~ sub_fffffff009867e70 -> sub_fffffff0098ef98c : 88 -> 92
 ~ __ZN30AppleThunderboltIPMSMInterface21attachToDataLinkLayerEjPv : 288 -> 292
 ~ __ZN30AppleThunderboltIPMSMInterface29configureIPv6LinkLayerAddressEb : 1412 -> 1416
 ~ __ZN30AppleThunderboltIPMSMInterface23detachFromDataLinkLayerEjPv : 284 -> 288
-~ sub_fffffe000985ded8 -> sub_fffffe00098e9554 : 80 -> 84
-~ sub_fffffe000985df40 -> sub_fffffe00098e95c0 : 76 -> 80
-~ sub_fffffe000985df8c -> sub_fffffe00098e9610 : 180 -> 184
+~ sub_fffffff009868778 -> sub_fffffff0098f02a4 : 80 -> 84
+~ sub_fffffff0098687e0 -> sub_fffffff0098f0310 : 76 -> 80
+~ sub_fffffff00986882c -> sub_fffffff0098f0360 : 180 -> 184
 ~ __ZN25AppleThunderboltIPGlobalsC2Ev : 232 -> 236
-~ sub_fffffe000985e128 -> sub_fffffe00098e97b4 : 76 -> 80
-~ sub_fffffe000985e174 -> sub_fffffe00098e9804 : 92 -> 96
-~ sub_fffffe000985e214 -> sub_fffffe00098e98a8 : 72 -> 76
-~ sub_fffffe000985e264 -> sub_fffffe00098e98fc : 52 -> 56
-~ sub_fffffe000985e298 -> sub_fffffe00098e9934 : 52 -> 56
-~ sub_fffffe000985e2dc -> sub_fffffe00098e997c : 68 -> 72
-~ sub_fffffe000985e348 -> sub_fffffe00098e99ec : 72 -> 76
-~ sub_fffffe000985e390 -> sub_fffffe00098e9a38 : 104 -> 108
-~ sub_fffffe000985e40c -> sub_fffffe00098e9ab8 : 88 -> 92
-~ sub_fffffe000985e464 -> sub_fffffe00098e9b14 : 88 -> 92
+~ sub_fffffff0098689c8 -> sub_fffffff0098f0504 : 76 -> 80
+~ sub_fffffff009868a14 -> sub_fffffff0098f0554 : 92 -> 96
+~ sub_fffffff009868ab4 -> sub_fffffff0098f05f8 : 72 -> 76
+~ sub_fffffff009868b04 -> sub_fffffff0098f064c : 52 -> 56
+~ sub_fffffff009868b38 -> sub_fffffff0098f0684 : 52 -> 56
+~ sub_fffffff009868b7c -> sub_fffffff0098f06cc : 68 -> 72
+~ sub_fffffff009868be8 -> sub_fffffff0098f073c : 72 -> 76
+~ sub_fffffff009868c30 -> sub_fffffff0098f0788 : 104 -> 108
+~ sub_fffffff009868cac -> sub_fffffff0098f0808 : 88 -> 92
+~ sub_fffffff009868d04 -> sub_fffffff0098f0864 : 88 -> 92
 ~ __ZN29AppleThunderboltIPTransmitter5startEP9IOService : 4404 -> 4408
 ~ __ZN29AppleThunderboltIPTransmitter8setStateEj : 572 -> 576
 ~ __ZN29AppleThunderboltIPTransmitter29ipServiceNotificationCallbackEPvP9IOService : 1212 -> 1216
 ~ __ZN29AppleThunderboltIPTransmitter20setupPowerManagementEP9IOService : 468 -> 472
 ~ __ZN29AppleThunderboltIPTransmitter8finalizeEj : 4920 -> 4924
-~ sub_fffffe00098611f4 -> sub_fffffe00098ec8bc : 56 -> 60
+~ sub_fffffff00986ba94 -> sub_fffffff0098f360c : 56 -> 60
 ~ __ZN29AppleThunderboltIPTransmitter21prepareForTerminationEv : 2032 -> 2036
 ~ __ZN29AppleThunderboltIPTransmitter8setTimerEj : 1780 -> 1784
 ~ __ZN29AppleThunderboltIPTransmitter4freeEv : 352 -> 356
@@ -77,14 +76,14 @@ Functions:
 ~ __ZN29AppleThunderboltIPTransmitter18systemWillShutdownEj : 1344 -> 1348
 ~ __ZN29AppleThunderboltIPTransmitter17logoutWithRequestEv : 648 -> 652
 ~ __ZN29AppleThunderboltIPTransmitter28processIPServiceNotificationEP28IOThunderboltDispatchContext : 3756 -> 3760
-~ sub_fffffe00098655ec -> sub_fffffe00098f0cdc : 88 -> 92
+~ sub_fffffff00986fe8c -> sub_fffffff0098f7a2c : 88 -> 92
 ~ __ZN29AppleThunderboltIPTransmitter12createTxPathEv : 3136 -> 3140
 ~ __ZN29AppleThunderboltIPTransmitter12newTxCommandEb : 572 -> 576
 ~ __ZN29AppleThunderboltIPTransmitter15returnTxCommandEP33AppleThunderboltIPTransmitCommandb : 468 -> 472
 ~ __ZN29AppleThunderboltIPTransmitter13destroyTxPathEv : 2640 -> 2644
 ~ __ZN29AppleThunderboltIPTransmitter15configureTxPathEv : 2944 -> 2948
-~ sub_fffffe0009867c74 -> sub_fffffe00098f337c : 140 -> 144
-~ sub_fffffe0009867d00 -> sub_fffffe00098f340c : 244 -> 248
+~ sub_fffffff009872514 -> sub_fffffff0098fa0cc : 140 -> 144
+~ sub_fffffff0098725a0 -> sub_fffffff0098fa15c : 244 -> 248
 ~ __ZN29AppleThunderboltIPTransmitter17txCommandCallbackEPviP28IOThunderboltTransmitCommand : 1272 -> 1276
 ~ __ZN29AppleThunderboltIPTransmitter20timerCommandCallbackEPviP25IOThunderboltTimerCommand : 2584 -> 2588
 ~ __ZN29AppleThunderboltIPTransmitter14processTimeoutEP28IOThunderboltDispatchContext : 6936 -> 6940
@@ -99,57 +98,57 @@ Functions:
 ~ __ZN29AppleThunderboltIPTransmitter6logoutEb : 2776 -> 2780
 ~ __ZN29AppleThunderboltIPTransmitter12outputPacketEP6__mbufPv : 2820 -> 2824
 ~ __ZN29AppleThunderboltIPTransmitter13submitHeadersEP40AppleThunderboltIPPacketHeaderAggregatedj : 216 -> 220
-~ sub_fffffe00098709c0 -> sub_fffffe00098fc108 : 276 -> 280
-~ sub_fffffe0009870ad4 -> sub_fffffe00098fc220 : 88 -> 92
+~ sub_fffffff00987b260 -> sub_fffffff009902e58 : 276 -> 280
+~ sub_fffffff00987b374 -> sub_fffffff009902f70 : 88 -> 92
 ~ __ZN29AppleThunderboltIPTransmitter13getTxE2EHopIDEPt : 936 -> 940
-~ sub_fffffe0009870ed4 -> sub_fffffe00098fc628 : 88 -> 92
-~ sub_fffffe0009870f40 -> sub_fffffe00098fc698 : 80 -> 84
-~ sub_fffffe0009870fa0 -> sub_fffffe00098fc6fc : 72 -> 76
-~ sub_fffffe0009870ff0 -> sub_fffffe00098fc750 : 52 -> 56
-~ sub_fffffe0009871024 -> sub_fffffe00098fc788 : 52 -> 56
-~ sub_fffffe0009871068 -> sub_fffffe00098fc7d0 : 68 -> 72
-~ sub_fffffe00098710d4 -> sub_fffffe00098fc840 : 72 -> 76
-~ sub_fffffe000987111c -> sub_fffffe00098fc88c : 104 -> 108
-~ sub_fffffe0009871198 -> sub_fffffe00098fc90c : 88 -> 92
-~ sub_fffffe00098711f0 -> sub_fffffe00098fc968 : 88 -> 92
+~ sub_fffffff00987b774 -> sub_fffffff009903378 : 88 -> 92
+~ sub_fffffff00987b7e0 -> sub_fffffff0099033e8 : 80 -> 84
+~ sub_fffffff00987b840 -> sub_fffffff00990344c : 72 -> 76
+~ sub_fffffff00987b890 -> sub_fffffff0099034a0 : 52 -> 56
+~ sub_fffffff00987b8c4 -> sub_fffffff0099034d8 : 52 -> 56
+~ sub_fffffff00987b908 -> sub_fffffff009903520 : 68 -> 72
+~ sub_fffffff00987b974 -> sub_fffffff009903590 : 72 -> 76
+~ sub_fffffff00987b9bc -> sub_fffffff0099035dc : 104 -> 108
+~ sub_fffffff00987ba38 -> sub_fffffff00990365c : 88 -> 92
+~ sub_fffffff00987ba90 -> sub_fffffff0099036b8 : 88 -> 92
 ~ __ZN33AppleThunderboltIPTransmitCommand14withControllerEP23IOThunderboltControllery : 148 -> 152
 ~ __ZN33AppleThunderboltIPTransmitCommand18initWithControllerEP23IOThunderboltControllery : 360 -> 364
 ~ __ZN33AppleThunderboltIPTransmitCommand22withControllerAndQueueEP23IOThunderboltControllerP26IOThunderboltTransmitQueueby : 232 -> 236
 ~ __ZN33AppleThunderboltIPTransmitCommand38initWithControllerAndQueueAllocateDescEP23IOThunderboltControllerP26IOThunderboltTransmitQueuey : 560 -> 564
 ~ __ZN33AppleThunderboltIPTransmitCommand26initWithControllerAndQueueEP23IOThunderboltControllerP26IOThunderboltTransmitQueue : 356 -> 360
 ~ __ZN33AppleThunderboltIPTransmitCommand27addMemoryDescriptorMultipleEPP18IOMemoryDescriptorjy : 488 -> 492
-~ sub_fffffe0009871aa8 -> sub_fffffe00098fd23c : 152 -> 156
+~ sub_fffffff00987c348 -> sub_fffffff009903f8c : 152 -> 156
 ~ __ZN33AppleThunderboltIPTransmitCommand11BuildPacketEjttjP6__mbufj : 560 -> 564
 ~ __ZN33AppleThunderboltIPTransmitCommand18BuildHeadersPacketEP40AppleThunderboltIPPacketHeaderAggregatedj : 512 -> 516
-~ sub_fffffe0009871f70 -> sub_fffffe00098fd710 : 180 -> 184
-~ sub_fffffe000987202c -> sub_fffffe00098fd7d0 : 80 -> 84
-~ sub_fffffe000987208c -> sub_fffffe00098fd834 : 72 -> 76
-~ sub_fffffe00098720dc -> sub_fffffe00098fd888 : 52 -> 56
-~ sub_fffffe0009872110 -> sub_fffffe00098fd8c0 : 52 -> 56
-~ sub_fffffe0009872154 -> sub_fffffe00098fd908 : 68 -> 72
-~ sub_fffffe00098721c0 -> sub_fffffe00098fd978 : 72 -> 76
-~ sub_fffffe0009872208 -> sub_fffffe00098fd9c4 : 104 -> 108
-~ sub_fffffe0009872284 -> sub_fffffe00098fda44 : 88 -> 92
-~ sub_fffffe00098722dc -> sub_fffffe00098fdaa0 : 88 -> 92
-~ sub_fffffe0009872334 -> sub_fffffe00098fdafc : 156 -> 160
+~ sub_fffffff00987c810 -> sub_fffffff009904460 : 180 -> 184
+~ sub_fffffff00987c8cc -> sub_fffffff009904520 : 80 -> 84
+~ sub_fffffff00987c92c -> sub_fffffff009904584 : 72 -> 76
+~ sub_fffffff00987c97c -> sub_fffffff0099045d8 : 52 -> 56
+~ sub_fffffff00987c9b0 -> sub_fffffff009904610 : 52 -> 56
+~ sub_fffffff00987c9f4 -> sub_fffffff009904658 : 68 -> 72
+~ sub_fffffff00987ca60 -> sub_fffffff0099046c8 : 72 -> 76
+~ sub_fffffff00987caa8 -> sub_fffffff009904714 : 104 -> 108
+~ sub_fffffff00987cb24 -> sub_fffffff009904794 : 88 -> 92
+~ sub_fffffff00987cb7c -> sub_fffffff0099047f0 : 88 -> 92
+~ sub_fffffff00987cbd4 -> sub_fffffff00990484c : 156 -> 160
 ~ __ZN32AppleThunderboltIPReceiveCommand18initWithControllerEP23IOThunderboltController : 548 -> 552
 ~ __ZN32AppleThunderboltIPReceiveCommand22withControllerAndQueueEP23IOThunderboltControllerP25IOThunderboltReceiveQueueP18IOMemoryDescriptory : 156 -> 160
 ~ __ZN32AppleThunderboltIPReceiveCommand26initWithControllerAndQueueEP23IOThunderboltControllerP25IOThunderboltReceiveQueueP18IOMemoryDescriptory : 884 -> 888
-~ sub_fffffe0009872a04 -> sub_fffffe00098fe1dc : 136 -> 140
+~ sub_fffffff00987d2a4 -> sub_fffffff009904f2c : 136 -> 140
 ~ __ZN32AppleThunderboltIPReceiveCommand17ExtractFromPacketEPjPtS1_S0_PPh : 648 -> 652
 ~ __ZN32AppleThunderboltIPReceiveCommand27ExtractFromPacketAggregatedEPPhbP40AppleThunderboltIPPacketHeaderAggregatedPj : 828 -> 832
-~ sub_fffffe0009873058 -> sub_fffffe00098fe83c : 80 -> 84
-~ sub_fffffe00098730b8 -> sub_fffffe00098fe8a0 : 72 -> 76
-~ sub_fffffe0009873108 -> sub_fffffe00098fe8f4 : 52 -> 56
-~ sub_fffffe000987313c -> sub_fffffe00098fe92c : 52 -> 56
-~ sub_fffffe0009873180 -> sub_fffffe00098fe974 : 68 -> 72
-~ sub_fffffe00098731ec -> sub_fffffe00098fe9e4 : 72 -> 76
-~ sub_fffffe0009873234 -> sub_fffffe00098fea30 : 104 -> 108
-~ sub_fffffe00098732b0 -> sub_fffffe00098feab0 : 88 -> 92
-~ sub_fffffe0009873308 -> sub_fffffe00098feb0c : 88 -> 92
+~ sub_fffffff00987d8f8 -> sub_fffffff00990558c : 80 -> 84
+~ sub_fffffff00987d958 -> sub_fffffff0099055f0 : 72 -> 76
+~ sub_fffffff00987d9a8 -> sub_fffffff009905644 : 52 -> 56
+~ sub_fffffff00987d9dc -> sub_fffffff00990567c : 52 -> 56
+~ sub_fffffff00987da20 -> sub_fffffff0099056c4 : 68 -> 72
+~ sub_fffffff00987da8c -> sub_fffffff009905734 : 72 -> 76
+~ sub_fffffff00987dad4 -> sub_fffffff009905780 : 104 -> 108
+~ sub_fffffff00987db50 -> sub_fffffff009905800 : 88 -> 92
+~ sub_fffffff00987dba8 -> sub_fffffff00990585c : 88 -> 92
 ~ __ZN32AppleThunderboltIPControlCommand10withParamsEP23IOThunderboltController8EFI_GUIDS2_P24IOThunderboltXDomainLink : 196 -> 200
 ~ __ZN32AppleThunderboltIPControlCommand14initWithParamsEP23IOThunderboltController8EFI_GUIDS2_P24IOThunderboltXDomainLink : 760 -> 764
-~ sub_fffffe0009873728 -> sub_fffffe00098fef38 : 160 -> 164
+~ sub_fffffff00987dfc8 -> sub_fffffff009905c88 : 160 -> 164
 ~ __ZN32AppleThunderboltIPControlCommand16BuildLoginPacketEjjb : 488 -> 492
 ~ __ZN32AppleThunderboltIPControlCommand29BuildThunderboltIPLoginPacketEP24IOBufferMemoryDescriptor8EFI_GUIDS2_jjb : 428 -> 432
 ~ __ZN32AppleThunderboltIPControlCommand24BuildLoginResponsePacketEjjPhj : 464 -> 468
@@ -158,23 +157,23 @@ Functions:
 ~ __ZN32AppleThunderboltIPControlCommand25BuildLogoutResponsePacketEjj : 468 -> 472
 ~ __ZN32AppleThunderboltIPControlCommand38BuildThunderboltIPLogoutResponsePacketEP24IOBufferMemoryDescriptor8EFI_GUIDS2_jj : 396 -> 400
 ~ __ZN32AppleThunderboltIPControlCommand9LogPacketEv : 272 -> 276
-~ sub_fffffe0009874684 -> sub_fffffe00098ffeb8 : 80 -> 84
-~ sub_fffffe00098746d4 -> sub_fffffe00098fff0c : 80 -> 84
+~ sub_fffffff00987ef24 -> sub_fffffff009906c08 : 80 -> 84
+~ sub_fffffff00987ef74 -> sub_fffffff009906c5c : 80 -> 84
 ~ __ZN32AppleThunderboltIPControlCommand32BuildThunderboltIPProtocolHeaderEP24IOBufferMemoryDescriptorj8EFI_GUIDS2_j : 636 -> 640
 ~ __ZN32AppleThunderboltIPControlCommand38ExtractFromThunderboltIPProtocolHeaderEP24IOBufferMemoryDescriptorPjP8EFI_GUIDS4_S2_ : 812 -> 816
 ~ __ZN32AppleThunderboltIPControlCommand35ExtractFromThunderboltIPLoginPacketEP24IOBufferMemoryDescriptorP8EFI_GUIDS3_PjS4_Pb : 672 -> 676
 ~ __ZN32AppleThunderboltIPControlCommand43ExtractFromThunderboltIPLoginResponsePacketEP24IOBufferMemoryDescriptorP8EFI_GUIDS3_PjS4_PhS4_ : 696 -> 700
 ~ __ZN32AppleThunderboltIPControlCommand36ExtractFromThunderboltIPLogoutPacketEP24IOBufferMemoryDescriptorP8EFI_GUIDS3_Pj : 556 -> 560
 ~ __ZN32AppleThunderboltIPControlCommand44ExtractFromThunderboltIPLogoutResponsePacketEP24IOBufferMemoryDescriptorP8EFI_GUIDS3_PjS4_ : 624 -> 628
-~ sub_fffffe00098756c8 -> sub_fffffe0009900f1c : 80 -> 84
-~ sub_fffffe0009875728 -> sub_fffffe0009900f80 : 72 -> 76
-~ sub_fffffe0009875778 -> sub_fffffe0009900fd4 : 52 -> 56
-~ sub_fffffe00098757ac -> sub_fffffe000990100c : 52 -> 56
-~ sub_fffffe00098757f0 -> sub_fffffe0009901054 : 68 -> 72
-~ sub_fffffe000987585c -> sub_fffffe00099010c4 : 72 -> 76
-~ sub_fffffe00098758a4 -> sub_fffffe0009901110 : 104 -> 108
-~ sub_fffffe0009875920 -> sub_fffffe0009901190 : 88 -> 92
-~ sub_fffffe0009875978 -> sub_fffffe00099011ec : 88 -> 92
+~ sub_fffffff00987ff68 -> sub_fffffff009907c6c : 80 -> 84
+~ sub_fffffff00987ffc8 -> sub_fffffff009907cd0 : 72 -> 76
+~ sub_fffffff009880018 -> sub_fffffff009907d24 : 52 -> 56
+~ sub_fffffff00988004c -> sub_fffffff009907d5c : 52 -> 56
+~ sub_fffffff009880090 -> sub_fffffff009907da4 : 68 -> 72
+~ sub_fffffff0098800fc -> sub_fffffff009907e14 : 72 -> 76
+~ sub_fffffff009880144 -> sub_fffffff009907e60 : 104 -> 108
+~ sub_fffffff0098801c0 -> sub_fffffff009907ee0 : 88 -> 92
+~ sub_fffffff009880218 -> sub_fffffff009907f3c : 88 -> 92
 ~ __ZN22AppleThunderboltIPPort18withPortAndServiceEP17IOThunderboltPortP25AppleThunderboltIPService : 680 -> 684
 ~ __ZN22AppleThunderboltIPPort18initPortAndServiceEP17IOThunderboltPortP25AppleThunderboltIPService : 1208 -> 1212
 ~ __ZN22AppleThunderboltIPPort5startEP9IOService : 1312 -> 1316
@@ -182,33 +181,33 @@ Functions:
 ~ __ZN22AppleThunderboltIPPort17createMediumStateEv : 940 -> 944
 ~ __ZN22AppleThunderboltIPPort16updateLinkStatusEv : 1112 -> 1116
 ~ __ZN22AppleThunderboltIPPort8finalizeEj : 1608 -> 1612
-~ sub_fffffe0009877cb4 -> sub_fffffe0009903548 : 56 -> 60
+~ sub_fffffff009882554 -> sub_fffffff00990a298 : 56 -> 60
 ~ __ZN22AppleThunderboltIPPort4freeEv : 352 -> 356
-~ sub_fffffe0009877e70 -> sub_fffffe000990370c : 76 -> 80
+~ sub_fffffff009882710 -> sub_fffffff00990a45c : 76 -> 80
 ~ __ZN22AppleThunderboltIPPort6enableEP18IONetworkInterface : 1752 -> 1756
 ~ __ZN22AppleThunderboltIPPort7disableEP18IONetworkInterface : 1076 -> 1080
 ~ __ZN22AppleThunderboltIPPort17outputStartLegacyEP18IONetworkInterfacej : 3828 -> 3832
 ~ __ZN22AppleThunderboltIPPort28outputStartAggregatedPacketsEP18IONetworkInterfacej : 2472 -> 2476
 ~ __ZN22AppleThunderboltIPPort8tickleTxEv : 328 -> 332
 ~ __ZN22AppleThunderboltIPPort15createInterfaceEv : 340 -> 344
-~ sub_fffffe000987a638 -> sub_fffffe0009905ef0 : 184 -> 188
+~ sub_fffffff009884ed8 -> sub_fffffff00990cc40 : 184 -> 188
 ~ __ZN22AppleThunderboltIPPort15addIPConnectionEP28AppleThunderboltIPConnection : 1264 -> 1268
 ~ __ZN22AppleThunderboltIPPort18removeIPConnectionEP28AppleThunderboltIPConnection : 1796 -> 1800
 ~ __ZN22AppleThunderboltIPPort27createIPConnectionForXDLinkEP24IOThunderboltXDomainLinkP29AppleThunderboltIPTransmitter : 3416 -> 3420
 ~ __ZN22AppleThunderboltIPPort28getIPConnectionForRemoteUUIDE8EFI_GUID : 472 -> 476
 ~ __ZN22AppleThunderboltIPPort13receivePacketEP6__mbufm : 420 -> 424
-~ sub_fffffe000987c3dc -> sub_fffffe0009907cac : 120 -> 124
-~ sub_fffffe000987c454 -> sub_fffffe0009907d28 : 120 -> 124
-~ sub_fffffe000987c4cc -> sub_fffffe0009907da4 : 56 -> 60
-~ sub_fffffe000987c518 -> sub_fffffe0009907df4 : 80 -> 84
-~ sub_fffffe000987c578 -> sub_fffffe0009907e58 : 72 -> 76
-~ sub_fffffe000987c5c8 -> sub_fffffe0009907eac : 52 -> 56
-~ sub_fffffe000987c5fc -> sub_fffffe0009907ee4 : 52 -> 56
-~ sub_fffffe000987c640 -> sub_fffffe0009907f2c : 68 -> 72
-~ sub_fffffe000987c6ac -> sub_fffffe0009907f9c : 72 -> 76
-~ sub_fffffe000987c6f4 -> sub_fffffe0009907fe8 : 104 -> 108
-~ sub_fffffe000987c770 -> sub_fffffe0009908068 : 88 -> 92
-~ sub_fffffe000987c7c8 -> sub_fffffe00099080c4 : 88 -> 92
+~ sub_fffffff009886c7c -> sub_fffffff00990e9fc : 120 -> 124
+~ sub_fffffff009886cf4 -> sub_fffffff00990ea78 : 120 -> 124
+~ sub_fffffff009886d6c -> sub_fffffff00990eaf4 : 56 -> 60
+~ sub_fffffff009886db8 -> sub_fffffff00990eb44 : 80 -> 84
+~ sub_fffffff009886e18 -> sub_fffffff00990eba8 : 72 -> 76
+~ sub_fffffff009886e68 -> sub_fffffff00990ebfc : 52 -> 56
+~ sub_fffffff009886e9c -> sub_fffffff00990ec34 : 52 -> 56
+~ sub_fffffff009886ee0 -> sub_fffffff00990ec7c : 68 -> 72
+~ sub_fffffff009886f4c -> sub_fffffff00990ecec : 72 -> 76
+~ sub_fffffff009886f94 -> sub_fffffff00990ed38 : 104 -> 108
+~ sub_fffffff009887010 -> sub_fffffff00990edb8 : 88 -> 92
+~ sub_fffffff009887068 -> sub_fffffff00990ee14 : 88 -> 92
 ~ __ZN28AppleThunderboltIPConnection10withParamsE8EFI_GUIDP25AppleThunderboltIPServiceP24IOThunderboltXDomainLinkP22AppleThunderboltIPPort : 180 -> 184
 ~ __ZN28AppleThunderboltIPConnection14initWithParamsE8EFI_GUIDP25AppleThunderboltIPServiceP24IOThunderboltXDomainLinkP22AppleThunderboltIPPort : 1800 -> 1804
 ~ __ZN28AppleThunderboltIPConnection5startEP9IOService : 1832 -> 1836
@@ -216,12 +215,12 @@ Functions:
 ~ __ZN28AppleThunderboltIPConnection21createControlCommandsEv : 860 -> 864
 ~ __ZN28AppleThunderboltIPConnection20setupPowerManagementEP9IOService : 468 -> 472
 ~ __ZN28AppleThunderboltIPConnection8finalizeEj : 4844 -> 4848
-~ sub_fffffe000987f57c -> sub_fffffe000990ae98 : 56 -> 60
+~ sub_fffffff009889e1c -> sub_fffffff009911be8 : 56 -> 60
 ~ __ZN28AppleThunderboltIPConnection21prepareForTerminationEv : 1628 -> 1632
 ~ __ZN28AppleThunderboltIPConnection4freeEv : 392 -> 396
 ~ __ZN28AppleThunderboltIPConnection13setPowerStateEmP9IOService : 3756 -> 3760
 ~ __ZN28AppleThunderboltIPConnection14dispatchLogoutEb : 1964 -> 1968
-~ sub_fffffe0009881454 -> sub_fffffe000990cd84 : 84 -> 88
+~ sub_fffffff00988bcf4 -> sub_fffffff009913ad4 : 84 -> 88
 ~ __ZN28AppleThunderboltIPConnection15returnRxCommandEP32AppleThunderboltIPReceiveCommand : 644 -> 648
 ~ __ZN28AppleThunderboltIPConnection18systemWillShutdownEj : 1256 -> 1260
 ~ __ZN28AppleThunderboltIPConnection6logoutEv : 3456 -> 3460
@@ -236,7 +235,7 @@ Functions:
 ~ __ZN28AppleThunderboltIPConnection17rxCommandCallbackEPviP27IOThunderboltReceiveCommand : 4236 -> 4240
 ~ __ZN28AppleThunderboltIPConnection17newControlCommandEv : 180 -> 184
 ~ __ZN28AppleThunderboltIPConnection20returnControlCommandEP32AppleThunderboltIPControlCommand : 644 -> 648
-~ sub_fffffe000988869c -> sub_fffffe0009914008 : 84 -> 88
+~ sub_fffffff009892f3c -> sub_fffffff00991ad58 : 84 -> 88
 ~ __ZN28AppleThunderboltIPConnection22controlCommandCallbackEPviP26IOThunderboltConfigCommand : 988 -> 992
 ~ __ZN28AppleThunderboltIPConnection17sendRequestPacketEjjb : 3076 -> 3080
 ~ __ZN28AppleThunderboltIPConnection18sendResponsePacketEjj : 3284 -> 3288
@@ -244,18 +243,18 @@ Functions:
 ~ __ZN28AppleThunderboltIPConnection18processLoginPacketEP24IOBufferMemoryDescriptor : 3916 -> 3920
 ~ __ZN28AppleThunderboltIPConnection19processLogoutPacketEP24IOBufferMemoryDescriptor : 2076 -> 2080
 ~ __ZN28AppleThunderboltIPConnection5loginEv : 6176 -> 6180
-~ sub_fffffe000988dbac -> sub_fffffe0009919538 : 116 -> 120
+~ sub_fffffff00989844c -> sub_fffffff009920288 : 116 -> 120
 ~ __ZN28AppleThunderboltIPConnection18connectionIsActiveEv : 392 -> 396
 ~ __ZN28AppleThunderboltIPConnection14getTransmitterEv : 308 -> 312
 ~ __ZN28AppleThunderboltIPConnection14setTransmitterEP29AppleThunderboltIPTransmitter : 692 -> 696
 ~ __ZN28AppleThunderboltIPConnection19setRemoteMACAddressEPhj : 1456 -> 1460
 ~ __ZN28AppleThunderboltIPConnection17compareMacAddressEPhj : 668 -> 672
 ~ __ZN28AppleThunderboltIPConnection17compareRemoteUUIDE8EFI_GUID : 680 -> 684
-~ sub_fffffe000988ecb0 -> sub_fffffe000991a658 : 88 -> 92
-~ sub_fffffe000988ed20 -> sub_fffffe000991a6cc : 80 -> 84
+~ sub_fffffff009899550 -> sub_fffffff0099213a8 : 88 -> 92
+~ sub_fffffff0098995c0 -> sub_fffffff00992141c : 80 -> 84
 ~ __ZN33AppleThunderboltIPTransmitCommand18BuildHeadersPacketEP40AppleThunderboltIPPacketHeaderAggregatedj.cold.1 : 44 -> 48
-~ sub_fffffe000988ee3c -> sub_fffffe000991a7f0 : 148 -> 152
-~ sub_fffffe000988eed0 -> sub_fffffe000991a888 : 108 -> 112
-~ sub_fffffe000988ef3c -> sub_fffffe000991a8f8 : 96 -> 100
-~ sub_fffffe000988ef9c -> sub_fffffe000991a95c : 168 -> 172
+~ sub_fffffff0098996dc -> sub_fffffff009921540 : 148 -> 152
+~ sub_fffffff009899770 -> sub_fffffff0099215d8 : 108 -> 112
+~ sub_fffffff0098997dc -> sub_fffffff009921648 : 96 -> 100
+~ sub_fffffff00989983c -> sub_fffffff0099216ac : 168 -> 172
 ```

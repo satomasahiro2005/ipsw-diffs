@@ -2,61 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/FitnessSearch.framework/FitnessSearch`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x74488` | `0x75374` | **`+0xeec`** |
+| `__AUTH_CONST.__const` | `0x48a8` | `0x4998` | **`+0xf0`** |
+| `__TEXT.__swift5_capture` | `0x4e0` | `0x560` | **`+0x80`** |
+| `__TEXT.__swift5_reflstr` | `0x11e2` | `0x1222` | **`+0x40`** |
+| `__DATA.__data` | `0x20f0` | `0x2120` | **`+0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0x1e58` | `0x1e88` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x1f68` | `0x1f90` | **`+0x28`** |
+| `__TEXT.__swift5_typeref` | `0x49f4` | `0x49d4` | **`-0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xfb0` | `0xfa0` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.146.1.4
--  __TEXT.__text: 0x6fe20
 +2027.1.50.0.1
-+  __TEXT.__text: 0x70bac
-   __TEXT.__objc_methlist: 0x3cc
-   __TEXT.__const: 0x9d94
--  __TEXT.__swift5_typeref: 0x49f4
--  __TEXT.__swift5_capture: 0x4e0
--  __TEXT.__swift5_reflstr: 0x11e2
-+  __TEXT.__swift5_typeref: 0x49d4
-+  __TEXT.__swift5_capture: 0x560
-+  __TEXT.__swift5_reflstr: 0x1222
-   __TEXT.__swift5_assocty: 0x288
-   __TEXT.__constg_swiftt: 0x1808
--  __TEXT.__swift5_fieldmd: 0x1e58
-+  __TEXT.__swift5_fieldmd: 0x1e88
-   __TEXT.__cstring: 0x8d6
-   __TEXT.__swift5_builtin: 0x78
-   __TEXT.__swift5_proto: 0x834
 
-   __TEXT.__swift_as_ret: 0xc0
-   __TEXT.__swift_as_cont: 0x144
-   __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__unwind_info: 0x2818
-+  __TEXT.__unwind_info: 0x2848
-   __TEXT.__eh_frame: 0x288c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0x3d0
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__got: 0x750
--  __AUTH_CONST.__const: 0x48a8
-+  __AUTH_CONST.__const: 0x4998
-   __AUTH_CONST.__objc_const: 0x508
--  __AUTH_CONST.__auth_got: 0xfb0
-+  __AUTH_CONST.__auth_got: 0xfa0
-   __AUTH.__data: 0x358
--  __DATA.__data: 0x20f0
-+  __DATA.__data: 0x2120
-   __DATA.__common: 0x30
-   __DATA_DIRTY.__data: 0x940
-   __DATA_DIRTY.__bss: 0xd00
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2711
--  Symbols:   1315
+-  Symbols:   1257
 +  Functions: 2729
-+  Symbols:   1322
-   CStrings:  109
- 
++  Symbols:   1264
 Symbols:
 + _get_witness_table 7SwiftUI6HStackVyAA7ForEachVySay13FitnessSearch0G11ResultScopeVGAhA4ViewP0f4CoreB0E30fitnessAccessibilityIdentifieryQrSSd_tFQOyAA15ModifiedContentVyAkAE11hoverEffect_9isEnabledQrqd___SbtAA011CustomHoverR0Rd__lFQOyAOyAkAE11buttonStyleyQrqd__AA015PrimitiveButtonX0Rd__lFQOyAK011_JetEngine_aB0E14impressionable_13configuration8position20definesParentContextQr9JetEngine17ImpressionMetricsVSg_AZ21ImpressionsCalculatorC13ConfigurationVSiSgSbtFQOyAA0Z0VyAOyAOyAOyAOyAkAE15dynamicTypeSizeyQrqd__SXRd__AA15DynamicTypeSizeO5BoundRtd__lFQOyAA4TextV_s19PartialRangeThroughVyA11_GQo_AA14_PaddingLayoutVGA21_GAA16_FlexFrameLayoutVGAA22_AnchorWritingModifierVySo6CGRectVAF0gI7FiltersV9AnchorKey33_BABB08EF8BA6BE7E5973579C505230E3LLVGGG_Qo__AA05PlainzX0VQo_AA01_P17ShapeKindModifierVyAA7CapsuleVGG_AA09HighlightvR0VQo_AA0M18AttachmentModifierVG_Qo_GGAaJHPyHC
 + _symbolic SSIegg_

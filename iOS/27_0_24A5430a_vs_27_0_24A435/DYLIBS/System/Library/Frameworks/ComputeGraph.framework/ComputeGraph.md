@@ -2,30 +2,18 @@
 
 > `/System/Library/Frameworks/ComputeGraph.framework/ComputeGraph`
 
-```diff
+### Section Size Changes
 
- 30.0.0.0.0
--  __TEXT.__text: 0x143f08
--  __TEXT.__objc_methlist: 0x12ac
-+  __TEXT.__text: 0x143f58
-+  __TEXT.__objc_methlist: 0x12cc
-   __TEXT.__const: 0x1e904
-   __TEXT.__swift5_typeref: 0x43fc
-   __TEXT.__cstring: 0x691c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x143f08` | `0x143f58` | **`+0x50`** |
+| `__AUTH_CONST.__objc_const` | `0x3290` | `0x32c8` | **`+0x38`** |
+| `__TEXT.__objc_methlist` | `0x12ac` | `0x12cc` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0xc88` | `0xca0` | **`+0x18`** |
 
-   __DATA_CONST.__objc_classlist: 0xa0
-   __DATA_CONST.__objc_protolist: 0x110
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xc88
-+  __DATA_CONST.__objc_selrefs: 0xca0
-   __DATA_CONST.__objc_protorefs: 0x88
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x11db0
--  __AUTH_CONST.__objc_const: 0x3290
-+  __AUTH_CONST.__objc_const: 0x32c8
-   __AUTH_CONST.__auth_got: 0x1148
-   __AUTH.__data: 0x12c0
-   __DATA.__data: 0x2a88
+### Other Changes
+
+```text
 Functions:
 ~ _$ss7EncoderP12ComputeGraphE19isPreferringStringsSbvgTm : 456 -> 460
 ~ _$s12ComputeGraph19NodeDefinitionCoderV4fromACs7Decoder_p_tKcfC : 2184 -> 2144

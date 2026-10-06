@@ -2,17 +2,15 @@
 
 > `/usr/lib/system/libsystem_featureflags.dylib`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x1ecc
-+  __TEXT.__text: 0x1ee8
-   __TEXT.__const: 0x50
-   __TEXT.__cstring: 0x279
-   __TEXT.__unwind_info: 0xa8
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ecc` | `0x1ee8` | **`+0x1c`** |
+
+### Other Changes
+
+```diff
 Symbols:
 + _objc_retain_x23
 - _objc_release_x27
@@ -22,5 +20,4 @@ Functions:
 ~ __os_feature_enabled_impl : 1988 -> 2020
 ~ __os_feature_enabled_SLOWPATH : 2068 -> 2044
 ~ _OUTLINED_FUNCTION_2 : 16 -> 20
-
 ```

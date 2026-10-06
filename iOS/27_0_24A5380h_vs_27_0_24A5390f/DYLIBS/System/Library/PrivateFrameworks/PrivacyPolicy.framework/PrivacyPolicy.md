@@ -2,69 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/PrivacyPolicy.framework/PrivacyPolicy`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_selrefs`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x32270` | `0x32538` | **`+0x2c8`** |
+| `__TEXT.__swift5_typeref` | `0x401a` | `0x41aa` | **`+0x190`** |
+| `__TEXT.__cstring` | `0xacb` | `0xaee` | **`+0x23`** |
+| `__DATA.__data` | `0xd38` | `0xd50` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0xd70` | `0xd60` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x410` | `0x420` | **`+0x10`** |
+
+### Other Changes
 
 ```diff
 
 -6.1.0.0.0
--  __TEXT.__text: 0x32270
 +7.0.0.0.0
-+  __TEXT.__text: 0x32538
-   __TEXT.__objc_methlist: 0x38
-   __TEXT.__const: 0x2ac4
--  __TEXT.__swift5_typeref: 0x401a
--  __TEXT.__cstring: 0xacb
-+  __TEXT.__swift5_typeref: 0x41aa
-+  __TEXT.__cstring: 0xaee
-   __TEXT.__oslogstring: 0x50e
-   __TEXT.__swift5_capture: 0x2f0
-   __TEXT.__constg_swiftt: 0xfb4
 
-   __DATA_CONST.__objc_classlist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x140
--  __DATA_CONST.__got: 0x410
-+  __DATA_CONST.__got: 0x420
-   __AUTH_CONST.__const: 0x17f0
-   __AUTH_CONST.__objc_const: 0x5d8
--  __AUTH_CONST.__auth_got: 0xd70
-+  __AUTH_CONST.__auth_got: 0xd60
-   __AUTH.__objc_data: 0xd0
-   __AUTH.__data: 0x678
--  __DATA.__data: 0xd38
-+  __DATA.__data: 0xd50
-   __DATA.__bss: 0x1c60
-   __DATA.__common: 0x20
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1706
--  Symbols:   3872
+-  Symbols:   3835
 -  CStrings:  101
 +  Functions: 1705
-+  Symbols:   3876
++  Symbols:   3839
 +  CStrings:  102
- 
 Symbols:
 + _$s10Foundation23LocalizedStringResourceV13PrivacyPolicyEADO22privacyIconDescriptionACvgZ
 + _$s10Foundation23LocalizedStringResourceV13PrivacyPolicyEADO22privacyIconDescriptionACvpZMV

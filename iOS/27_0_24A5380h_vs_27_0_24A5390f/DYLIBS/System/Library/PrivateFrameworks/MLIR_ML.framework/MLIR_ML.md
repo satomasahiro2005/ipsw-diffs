@@ -2,91 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/MLIR_ML.framework/MLIR_ML`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__AUTH.__thread_vars`
-- `__DATA.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x39511a4` | `0x3954ccc` | **`+0x3b28`** |
+| `__TEXT.__gcc_except_tab` | `0x11416c` | `0x114380` | **`+0x214`** |
+| `__TEXT.__unwind_info` | `0x99e58` | `0x99fd8` | **`+0x180`** |
+| `__AUTH_CONST.__const` | `0xd0690` | `0xd0750` | **`+0xc0`** |
+| `__AUTH_CONST.__cfstring` | `0xa340` | `0xa3a0` | **`+0x60`** |
+| `__TEXT.__cstring` | `0x17bcbb` | `0x17bd11` | **`+0x56`** |
+| `__AUTH_CONST.__objc_const` | `0x22b8` | `0x22e8` | **`+0x30`** |
+| `__TEXT.__const` | `0x15e1bb` | `0x15e19b` | **`-0x20`** |
+| `__TEXT.__objc_methlist` | `0xff0` | `0x1008` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x698` | `0x6a8` | **`+0x10`** |
+| `__DATA.__bss` | `0x28108` | `0x28100` | **`-0x8`** |
+| `__DATA.__common` | `0x6024` | `0x602c` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x14c` | `0x150` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -7.0.75.1.0
--  __TEXT.__text: 0x39511a4
 +7.0.76.1.0
-+  __TEXT.__text: 0x3954ccc
-   __TEXT.__init_offsets: 0x1bc
--  __TEXT.__objc_methlist: 0xff0
--  __TEXT.__gcc_except_tab: 0x11416c
--  __TEXT.__cstring: 0x17bcbb
--  __TEXT.__const: 0x15e1bb
--  __TEXT.__unwind_info: 0x99e58
-+  __TEXT.__objc_methlist: 0x1008
-+  __TEXT.__gcc_except_tab: 0x114380
-+  __TEXT.__cstring: 0x17bd11
-+  __TEXT.__const: 0x15e19b
-+  __TEXT.__unwind_info: 0x99fd8
-   __TEXT.__eh_frame: 0x2ed0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x53b0
--  __DATA_CONST.__objc_selrefs: 0x698
-+  __DATA_CONST.__objc_selrefs: 0x6a8
-   __DATA_CONST.__objc_superrefs: 0xb8
-   __DATA_CONST.__objc_arraydata: 0xae0
-   __DATA_CONST.__got: 0x5b0
--  __AUTH_CONST.__const: 0xd0690
--  __AUTH_CONST.__cfstring: 0xa340
--  __AUTH_CONST.__objc_const: 0x22b8
-+  __AUTH_CONST.__const: 0xd0750
-+  __AUTH_CONST.__cfstring: 0xa3a0
-+  __AUTH_CONST.__objc_const: 0x22e8
-   __AUTH_CONST.__weak_auth_got: 0xdb0
-   __AUTH_CONST.__objc_intobj: 0x438
-   __AUTH_CONST.__objc_dictobj: 0x50
-
-   __AUTH.__thread_vars: 0x1f8
-   __AUTH.__thread_data: 0x8
-   __AUTH.__thread_bss: 0x330
--  __DATA.__objc_ivar: 0x14c
-+  __DATA.__objc_ivar: 0x150
-   __DATA.__data: 0x46a08
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x28108
--  __DATA.__common: 0x6024
-+  __DATA.__bss: 0x28100
-+  __DATA.__common: 0x602c
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 201573
--  Symbols:   237286
+-  Symbols:   237098
 -  CStrings:  41836
 +  Functions: 201658
-+  Symbols:   237375
++  Symbols:   237186
 +  CStrings:  41840
- 
 Symbols:
 + -[MLViewerGraphDescriptorSPI inlineRegions]
 + -[MLViewerGraphDescriptorSPI setInlineRegions:]
@@ -180,7 +126,6 @@ Symbols:
 + __ZTVNSt3__110__function6__funcIZN4mlir6detail20AttrTypeReplacerBaseINS2_16AttrTypeReplacerEE14addReplacementIZNKS2_3mps22MLIRMLInlinerInterface30updateOpLocationWithInlineInfoEPNS2_9OperationERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEUlNS2_8FusedLocEE_SK_NS2_9AttributeESM_EENS_9enable_ifIXoontsr3stdE9is_same_vIT0_T1_Entsr3stdE16is_convertible_vIT2_NS_8optionalINS_4pairISP_NS2_10WalkResultEEEEEEEvE4typeEOT_EUlSM_E_FNSR_INSS_ISM_ST_EEEESM_EEE
 + __ZZN4mlir3mps20AICodeSymbolRegistry20initializeFromModuleEPNS_9OperationEENKUlN6AICode9GraphOpV1EE_clES5_
 + __ZZNK4mlir3mps22MLIRMLInlinerInterface30updateOpLocationWithInlineInfoEPNS_9OperationERKNSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEEENKUlNS_8FusedLocEE_clESD_
-+ _objc_msgSend$inlineRegions
 - __ZN16EmitterViewerSPI15dumpToTextualIREP6NSData
 - __ZN16EmitterViewerSPI17initializeContextERN4mlir11MLIRContextE
 - __ZN16EmitterViewerSPI21parseMLIRFromBytecodeEP6NSDataRN4mlir11MLIRContextE

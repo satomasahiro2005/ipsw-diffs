@@ -2,52 +2,30 @@
 
 > `/System/Library/Frameworks/_MapKit_SwiftUI.framework/_MapKit_SwiftUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__swift5_typeref` | `0x5f8a` | `0x60fa` | **`+0x170`** |
+| `__TEXT.__text` | `0xb822c` | `0xb829c` | **`+0x70`** |
+| `__TEXT.__const` | `0xb5f4` | `0xb604` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x22f8` | `0x22e8` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1588` | `0x1590` | **`+0x8`** |
+| `__DATA.__data` | `0x4b50` | `0x4b48` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x970` | `0x968` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb28` | `0xb30` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2552.31.6.17.8
--  __TEXT.__text: 0xb25a4
 +2552.31.6.17.11
-+  __TEXT.__text: 0xb2614
-   __TEXT.__objc_methlist: 0xbf4
--  __TEXT.__const: 0xb5f4
-+  __TEXT.__const: 0xb604
-   __TEXT.__constg_swiftt: 0x5204
--  __TEXT.__swift5_typeref: 0x5f8a
-+  __TEXT.__swift5_typeref: 0x60fa
-   __TEXT.__swift5_reflstr: 0x246a
-   __TEXT.__swift5_fieldmd: 0x3670
-   __TEXT.__swift5_builtin: 0x2bc
 
-   __DATA_CONST.__objc_classlist: 0x80
-   __DATA_CONST.__objc_protolist: 0x90
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb28
-+  __DATA_CONST.__objc_selrefs: 0xb30
-   __DATA_CONST.__objc_protorefs: 0x48
--  __DATA_CONST.__got: 0x970
-+  __DATA_CONST.__got: 0x968
-   __AUTH_CONST.__const: 0x80a8
-   __AUTH_CONST.__objc_const: 0x17b0
--  __AUTH_CONST.__auth_got: 0x1588
-+  __AUTH_CONST.__auth_got: 0x1590
-   __AUTH.__objc_data: 0x918
-   __AUTH.__data: 0x2468
--  __DATA.__data: 0x4b50
-+  __DATA.__data: 0x4b48
-   __DATA.__objc_stublist: 0x8
-   __DATA.__common: 0x60
-   __DATA_DIRTY.__objc_data: 0xf8
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 4091
--  Symbols:   2209
-+  Symbols:   2211
-   CStrings:  65
- 
+-  Symbols:   1978
++  Symbols:   1979
 Symbols:
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE20scrollBounceBehavior_4axesQrAA06ScrolleF0V_AA4AxisO3SetVtFQOyAcAE0D12ClipDisabledyQrSbFQOyAA0hC0VyAA15ModifiedContentVyAPyAPyAA6VStackVyAA05TupleN0VyAcAEALyQrSbFQOyAA9LazyVGridVyAA7ForEachVySaySi_08_MapKit_aB00U11StylePickerV6OptionVtGSiAPyAcAE20accessibilityElement8childrenQrAA018AccessibilityChildF0V_tFQOyAY0uwxC0V0U8ModeTileV_Qo_AA31AccessibilityAttachmentModifierVGGG_Qo__APyAPyAPyAPyARyAPyAcAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAcAEA18_A19_A20__Qrqd___SbyyctSQRd__lFQOyAPyAcAE012listHasStackF0QryFQOyAcAE04listW0yQrqd__AA04ListW0Rd__lFQOyAcAEALyQrSbFQOyAcAE0dN10BackgroundyQrAA10VisibilityOFQOyAA4ListVys5NeverOAXySayA8_11ToggleModel33_7869806DC17EDD7D7BDA59824D480819LLVGA33_4RoleOAcAE20listSectionSeparator_5edgesQrA26__AA12VerticalEdgeOAJVtFQOyAPyAPyAPyAA6ToggleVyAA4TextVGAA32_EnvironmentKeyTransformModifierVySbGGA13_GAA21_TraitWritingModifierVyAA25ListRowBackgroundTraitKeyVGG_Qo_GG_Qo__Qo__AA09PlainListW0VQo__Qo_AA011_BackgroundW8ModifierVyAA5ColorVGG_SbQo__SbQo_A53_yAA18TransitionTraitKeyVGGSgGAA16_FlexFrameLayoutVGAA12_FrameLayoutVGAA01_K6EffectVyAA16RoundedRectangleVGGAA14_PaddingLayoutVGAPyAPyA8_16AttributionLabelVAA16_BlendModeEffectVGA94_GSgQPGGA94_GA94_GAA18_AnimationModifierVySbGGG_Qo__Qo_HO
-+ _objc_msgSend$secondarySystemGroupedBackgroundColor
 + _symbolic _____yAAyAAyAAy_____yAAy_____y_____yAAy_____y_____y_____y_____y_____y__________ySay_____G__________yAAyAAyAAy_____y_____G_____ySbGG_____G_____y_____GG_Qo_GG_Qo__Qo_______Qo__Qo______y_____GG_SbQo__SbQo_AQy_____GGSgG_____G_____G_____y_____GG_____G 7SwiftUI15ModifiedContentV AA6VStackV AA4ViewPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQO AgAEAhiJ_Qrqd___SbyyctSQRd__lFQO AgAE20listHasStackBehaviorQryFQO AgAE0K5StyleyQrqd__AA04ListO0Rd__lFQO AgAE18scrollClipDisabledyQrSbFQO AgAE0qD10BackgroundyQrAA10VisibilityOFQO AA0P0V s5NeverO AA7ForEachV 08_MapKit_aB00yo6PickerF0V11ToggleModel33_7869806DC17EDD7D7BDA59824D480819LLV A1_4RoleO AgAE0K16SectionSeparator_5edgesQrAQ_AA12VerticalEdgeO3SetVtFQO AA6ToggleV AA4TextV AA32_EnvironmentKeyTransformModifierV AA31AccessibilityAttachmentModifierV AA21_TraitWritingModifierV AA0p3RowT8TraitKeyV AA05PlainpO0V AA01_tO8ModifierV AA5ColorV AA18TransitionTraitKeyV AA16_FlexFrameLayoutV AA12_FrameLayoutV AA01_R6EffectV AA16RoundedRectangleV AA14_PaddingLayoutV
 + _symbolic _____yAAyAAy_____yAAy_____y_____yAAy_____y_____y_____y_____y_____y__________ySay_____G__________yAAyAAyAAy_____y_____G_____ySbGG_____G_____y_____GG_Qo_GG_Qo__Qo_______Qo__Qo______y_____GG_SbQo__SbQo_AQy_____GGSgG_____G_____G_____y_____GG 7SwiftUI15ModifiedContentV AA6VStackV AA4ViewPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQO AgAEAhiJ_Qrqd___SbyyctSQRd__lFQO AgAE20listHasStackBehaviorQryFQO AgAE0K5StyleyQrqd__AA04ListO0Rd__lFQO AgAE18scrollClipDisabledyQrSbFQO AgAE0qD10BackgroundyQrAA10VisibilityOFQO AA0P0V s5NeverO AA7ForEachV 08_MapKit_aB00yo6PickerF0V11ToggleModel33_7869806DC17EDD7D7BDA59824D480819LLV A1_4RoleO AgAE0K16SectionSeparator_5edgesQrAQ_AA12VerticalEdgeO3SetVtFQO AA6ToggleV AA4TextV AA32_EnvironmentKeyTransformModifierV AA31AccessibilityAttachmentModifierV AA21_TraitWritingModifierV AA0p3RowT8TraitKeyV AA05PlainpO0V AA01_tO8ModifierV AA5ColorV AA18TransitionTraitKeyV AA16_FlexFrameLayoutV AA12_FrameLayoutV AA01_R6EffectV AA16RoundedRectangleV
 + _symbolic _____yAAyAAy_____y_____y_____y_____y_____ySaySi______tGSiAAy_____y______Qo______GGG_Qo__AAyAAyAAyAAyAByAAy_____y_____yAAy_____y_____y_____y_____y_____y_____AEySay_____G__________yAAyAAyAAy_____y_____G_____ySbGGAJG_____y_____GG_Qo_GG_Qo__Qo_______Qo__Qo______y_____GG_SbQo__SbQo_A_y_____GGSgG_____G_____G_____y_____GG_____GAAyAAy__________GA30_GSgQPGGA30_GA30_G_____ySbGG 7SwiftUI15ModifiedContentV AA6VStackV AA05TupleD0V AA4ViewPAAE18scrollClipDisabledyQrSbFQO AA9LazyVGridV AA7ForEachV 08_MapKit_aB00O11StylePickerV6OptionV AiAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQO AO0oqrG0V0O8ModeTileV AA0W18AttachmentModifierV AiAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQO AiAEA2_A3_A4__Qrqd___SbyyctSQRd__lFQO AiAE012listHasStackY0QryFQO AiAE04listQ0yQrqd__AA04ListQ0Rd__lFQO AiAEAJyQrSbFQO AiAE0hD10BackgroundyQrAA10VisibilityOFQO AA4ListV s5NeverO AY11ToggleModel33_7869806DC17EDD7D7BDA59824D480819LLV A17_4RoleO AiAE20listSectionSeparator_5edgesQrA10__AA12VerticalEdgeO3SetVtFQO AA6ToggleV AA4TextV AA32_EnvironmentKeyTransformModifierV AA21_TraitWritingModifierV AA25ListRowBackgroundTraitKeyV AA09PlainListQ0V AA011_BackgroundQ8ModifierV AA5ColorV AA18TransitionTraitKeyV AA16_FlexFrameLayoutV AA12_FrameLayoutV AA01_I6EffectV AA16RoundedRectangleV AA14_PaddingLayoutV AY16AttributionLabelV AA06_BlendZ6EffectV AA18_AnimationModifierV

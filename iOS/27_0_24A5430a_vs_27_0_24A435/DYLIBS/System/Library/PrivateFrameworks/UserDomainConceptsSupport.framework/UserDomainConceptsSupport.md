@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/UserDomainConceptsSupport.framework/UserDomainConceptsSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__auth_got` | `0x698` | `0x690` | **`-0x8`** |
+| `__TEXT.__text` | `0x134cc` | `0x134d4` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 7027.0.72.2.7
--  __TEXT.__text: 0x134cc
-+  __TEXT.__text: 0x134d4
-   __TEXT.__objc_methlist: 0x17c
-   __TEXT.__const: 0x592
-   __TEXT.__cstring: 0x211
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x940
-   __AUTH_CONST.__objc_const: 0x438
--  __AUTH_CONST.__auth_got: 0x698
-+  __AUTH_CONST.__auth_got: 0x690
-   __AUTH.__objc_data: 0x48
-   __DATA.__data: 0x1a0
-   __DATA_DIRTY.__objc_data: 0x180
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   Functions: 420
--  Symbols:   319
-+  Symbols:   318
-   CStrings:  14
- 
+-  Symbols:   292
++  Symbols:   291
 Symbols:
 - _swift_retain_x9
 Functions:

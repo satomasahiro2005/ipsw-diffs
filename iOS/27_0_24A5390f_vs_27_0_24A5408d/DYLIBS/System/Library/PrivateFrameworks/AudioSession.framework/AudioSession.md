@@ -2,48 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/AudioSession.framework/AudioSession`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4e010` | `0x4f07c` | **`+0x106c`** |
+| `__AUTH_CONST.__cfstring` | `0x2480` | `0x2280` | **`-0x200`** |
+| `__TEXT.__gcc_except_tab` | `0x8e70` | `0x9010` | **`+0x1a0`** |
+| `__AUTH_CONST.__const` | `0x1be0` | `0x1c98` | **`+0xb8`** |
+| `__TEXT.__unwind_info` | `0x2f08` | `0x2fa0` | **`+0x98`** |
+| `__TEXT.__cstring` | `0x39df` | `0x3a4f` | **`+0x70`** |
+| `__TEXT.__const` | `0x21f` | `0x207` | **`-0x18`** |
+
+### Other Changes
+
 ```diff
 
 -449.105.0.0.0
--  __TEXT.__text: 0x4e010
 +449.107.0.0.0
-+  __TEXT.__text: 0x4f07c
-   __TEXT.__realtime: 0x178
-   __TEXT.__objc_methlist: 0x2364
--  __TEXT.__gcc_except_tab: 0x8e70
--  __TEXT.__cstring: 0x39df
--  __TEXT.__const: 0x21f
-+  __TEXT.__gcc_except_tab: 0x9010
-+  __TEXT.__cstring: 0x3a4f
-+  __TEXT.__const: 0x207
-   __TEXT.__oslogstring: 0x47f4
--  __TEXT.__unwind_info: 0x2f08
-+  __TEXT.__unwind_info: 0x2fa0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_superrefs: 0xd0
-   __DATA_CONST.__objc_arraydata: 0x8
-   __DATA_CONST.__got: 0xb70
--  __AUTH_CONST.__const: 0x1be0
--  __AUTH_CONST.__cfstring: 0x2480
-+  __AUTH_CONST.__const: 0x1c98
-+  __AUTH_CONST.__cfstring: 0x2280
-   __AUTH_CONST.__objc_const: 0x2b40
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x180
-
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1739
--  Symbols:   3759
+-  Symbols:   3400
 -  CStrings:  750
 +  Functions: 1761
-+  Symbols:   3793
++  Symbols:   3434
 +  CStrings:  752
- 
 Symbols:
 + GCC_except_table214
 + GCC_except_table225

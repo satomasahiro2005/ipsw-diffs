@@ -2,16 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/GPUSupport.framework/libGPUSupportMercury.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8610` | `0x861c` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x8610
-+  __TEXT.__text: 0x861c
-   __TEXT.__const: 0x70
-   __TEXT.__cstring: 0x11
-   __TEXT.__oslogstring: 0x32
-Sections:
-~ __TEXT.__unwind_info : content changed
+-24.0.1.0.0
++24.0.2.0.0
 Functions:
 ~ _gpumInitializeIOData : 540 -> 552
-
 ```

@@ -2,39 +2,28 @@
 
 > `/System/Library/PrivateFrameworks/MTLCompiler.framework/Versions/32024/MTLCompiler`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb6340` | `0xb745c` | **`+0x111c`** |
+| `__TEXT.__gcc_except_tab` | `0xa414` | `0xa51c` | **`+0x108`** |
+| `__TEXT.__cstring` | `0x9622` | `0x96db` | **`+0xb9`** |
+| `__TEXT.__unwind_info` | `0x2ef0` | `0x2f38` | **`+0x48`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xb6340
--  __TEXT.__gcc_except_tab: 0xa414
-+  __TEXT.__text: 0xb745c
-+  __TEXT.__gcc_except_tab: 0xa51c
-   __TEXT.__const: 0x1278
--  __TEXT.__cstring: 0x9622
-+  __TEXT.__cstring: 0x96db
-   __TEXT.__oslogstring: 0x4e7
--  __TEXT.__unwind_info: 0x2ef0
-+  __TEXT.__unwind_info: 0x2f38
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
+-381.0.0.0.0
++382.4.0.0.0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2125
--  Symbols:   6689
--  CStrings:  1648
+-  Symbols:   3418
+-  CStrings:  1628
 +  Functions: 2137
-+  Symbols:   6719
-+  CStrings:  1658
- 
-Sections:
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA.__data : content changed
++  Symbols:   3429
++  CStrings:  1638
 Symbols:
 + GCC_except_table114
 + __Z19getOrInsertFunctionIJRA24_KcRPN4llvm4TypeES5_RPNS3_11PointerTypeEEEPNS3_8FunctionERNS3_6ModuleEDpOT_
@@ -64,5 +53,4 @@ CStrings:
 + "pastEnd"
 + "windowEnd"
 + "windowSetupBlock"
-
 ```

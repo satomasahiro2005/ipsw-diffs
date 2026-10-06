@@ -2,60 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/PowerlogCore.framework/PowerlogCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__objc_arraydata` | `0x441d8` | `0x45e58` | **`+0x1c80`** |
+| `__AUTH_CONST.__cfstring` | `0x6c560` | `0x6cf60` | **`+0xa00`** |
+| `__TEXT.__cstring` | `0x43086` | `0x4387e` | **`+0x7f8`** |
+| `__TEXT.__text` | `0xe8568` | `0xe8af4` | **`+0x58c`** |
+| `__AUTH_CONST.__objc_dictobj` | `0xf910` | `0xfcf8` | **`+0x3e8`** |
+| `__AUTH_CONST.__objc_intobj` | `0x4a70` | `0x4cb0` | **`+0x240`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x13a0` | `0x14d0` | **`+0x130`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x1188` | `0x1230` | **`+0xa8`** |
+| `__TEXT.__const` | `0x1b98` | `0x1c38` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x25f0` | `0x2600` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
- 3486.2.4.0.0
--  __TEXT.__text: 0xe8568
-+  __TEXT.__text: 0xe8af4
-   __TEXT.__objc_methlist: 0x97a8
--  __TEXT.__const: 0x1b98
--  __TEXT.__cstring: 0x43086
-+  __TEXT.__const: 0x1c38
-+  __TEXT.__cstring: 0x4387e
-   __TEXT.__oslogstring: 0x8a24
-   __TEXT.__gcc_except_tab: 0x2a38
-   __TEXT.__unwind_info: 0x3108
-
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x25f0
-+  __DATA_CONST.__const: 0x2600
-   __DATA_CONST.__objc_classlist: 0x378
-   __DATA_CONST.__objc_nlclslist: 0x80
-   __DATA_CONST.__objc_catlist: 0x28
-
-   __DATA_CONST.__objc_selrefs: 0x59a0
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x2d0
--  __DATA_CONST.__objc_arraydata: 0x441d8
-+  __DATA_CONST.__objc_arraydata: 0x45e58
-   __DATA_CONST.__got: 0x7e8
-   __AUTH_CONST.__const: 0x2540
--  __AUTH_CONST.__cfstring: 0x6c560
-+  __AUTH_CONST.__cfstring: 0x6cf60
-   __AUTH_CONST.__objc_const: 0xaa30
-   __AUTH_CONST.__weak_auth_got: 0x10
--  __AUTH_CONST.__objc_intobj: 0x4a70
--  __AUTH_CONST.__objc_doubleobj: 0x13a0
--  __AUTH_CONST.__objc_arrayobj: 0x1188
--  __AUTH_CONST.__objc_dictobj: 0xf910
-+  __AUTH_CONST.__objc_intobj: 0x4cb0
-+  __AUTH_CONST.__objc_doubleobj: 0x14d0
-+  __AUTH_CONST.__objc_arrayobj: 0x1230
-+  __AUTH_CONST.__objc_dictobj: 0xfcf8
-   __AUTH_CONST.__auth_got: 0xdc0
-   __AUTH.__objc_data: 0x460
-   __DATA.__objc_ivar: 0x7d0
-
-   - /usr/lib/libsystemstats.dylib
-   - /usr/lib/libz.1.dylib
-   Functions: 4953
--  Symbols:   9358
+-  Symbols:   7264
 -  CStrings:  15193
-+  Symbols:   9359
++  Symbols:   7265
 +  CStrings:  15273
- 
 Symbols:
 + _kPLBB25
 Functions:

@@ -2,146 +2,62 @@
 
 > `/System/Library/PrivateFrameworks/SpotlightKnowledgeDaemon.framework/SpotlightKnowledgeDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x419c60` | `0x436f9c` | **`+0x1d33c`** |
+| `__DATA_DIRTY.__data` | `0x9318` | `0xc498` | **`+0x3180`** |
+| `__DATA_DIRTY.__bss` | `0x5dd0` | `0x8e00` | **`+0x3030`** |
+| `__DATA.__bss` | `0x10cb0` | `0xe270` | **`-0x2a40`** |
+| `__AUTH.__data` | `0x3a88` | `0x23b8` | **`-0x16d0`** |
+| `__DATA.__data` | `0x4788` | `0x3330` | **`-0x1458`** |
+| `__TEXT.__cstring` | `0x12a63` | `0x138d3` | **`+0xe70`** |
+| `__TEXT.__eh_frame` | `0x11fc4` | `0x12d2c` | **`+0xd68`** |
+| `__AUTH_CONST.__const` | `0x16b88` | `0x17730` | **`+0xba8`** |
+| `__TEXT.__swift5_typeref` | `0xdbf2` | `0xe2e6` | **`+0x6f4`** |
+| `__DATA_DIRTY.__objc_data` | `0x38a0` | `0x3ec0` | **`+0x620`** |
+| `__AUTH.__objc_data` | `0x1cb0` | `0x1698` | **`-0x618`** |
+| `__TEXT.__const` | `0x15d30` | `0x162c0` | **`+0x590`** |
+| `__TEXT.__oslogstring` | `0x103de` | `0x1092e` | **`+0x550`** |
+| `__TEXT.__unwind_info` | `0xbb10` | `0xbf48` | **`+0x438`** |
+| `__TEXT.__swift5_capture` | `0x32c8` | `0x35c4` | **`+0x2fc`** |
+| `__TEXT.__swift5_fieldmd` | `0x8204` | `0x84b8` | **`+0x2b4`** |
+| `__TEXT.__constg_swiftt` | `0x85a0` | `0x8818` | **`+0x278`** |
+| `__TEXT.__swift5_reflstr` | `0x79bd` | `0x7c2d` | **`+0x270`** |
+| `__AUTH_CONST.__objc_const` | `0x17f08` | `0x18100` | **`+0x1f8`** |
+| `__AUTH_CONST.__auth_got` | `0x3490` | `0x35b0` | **`+0x120`** |
+| `__DATA_DIRTY.__common` | `0x2d0` | `0x3f0` | **`+0x120`** |
+| `__DATA.__common` | `0x168` | `0x78` | **`-0xf0`** |
+| `__TEXT.__swift_as_cont` | `0x438` | `0x4d8` | **`+0xa0`** |
+| `__DATA_CONST.__got` | `0x2130` | `0x21b8` | **`+0x88`** |
+| `__TEXT.__swift_as_ret` | `0x410` | `0x458` | **`+0x48`** |
+| `__TEXT.__swift_as_entry` | `0x3e0` | `0x424` | **`+0x44`** |
+| `__TEXT.__swift5_types` | `0x83c` | `0x868` | **`+0x2c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5ec0` | `0x5ee8` | **`+0x28`** |
+| `__TEXT.__swift5_proto` | `0xf9c` | `0xfc4` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x3528` | `0x3548` | **`+0x20`** |
+| `__TEXT.__swift5_builtin` | `0x230` | `0x244` | **`+0x14`** |
+| `__TEXT.__swift5_mpenum` | `0x74` | `0x88` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x948` | `0x950` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x419c60
-+  __TEXT.__text: 0x436f9c
-   __TEXT.__objc_methlist: 0x98c0
--  __TEXT.__const: 0x15d30
--  __TEXT.__oslogstring: 0x103de
-+  __TEXT.__const: 0x162c0
-+  __TEXT.__oslogstring: 0x1092e
-+  __TEXT.__cstring: 0x138d3
-   __TEXT.__gcc_except_tab: 0x59d8
--  __TEXT.__cstring: 0x12a63
-   __TEXT.__dlopen_cstrs: 0x5e
--  __TEXT.__swift5_typeref: 0xdbf2
--  __TEXT.__constg_swiftt: 0x85a0
--  __TEXT.__swift5_builtin: 0x230
--  __TEXT.__swift5_reflstr: 0x79bd
--  __TEXT.__swift5_fieldmd: 0x8204
-+  __TEXT.__swift5_typeref: 0xe2e6
-+  __TEXT.__constg_swiftt: 0x8818
-+  __TEXT.__swift5_builtin: 0x244
-+  __TEXT.__swift5_reflstr: 0x7c2d
-+  __TEXT.__swift5_fieldmd: 0x84b8
-   __TEXT.__swift5_assocty: 0x1320
--  __TEXT.__swift5_capture: 0x32c8
--  __TEXT.__swift5_proto: 0xf9c
--  __TEXT.__swift5_types: 0x83c
--  __TEXT.__swift_as_entry: 0x3e0
--  __TEXT.__swift_as_ret: 0x410
--  __TEXT.__swift_as_cont: 0x438
-+  __TEXT.__swift5_capture: 0x35c4
-+  __TEXT.__swift5_proto: 0xfc4
-+  __TEXT.__swift5_types: 0x868
-+  __TEXT.__swift_as_entry: 0x424
-+  __TEXT.__swift_as_ret: 0x458
-+  __TEXT.__swift_as_cont: 0x4d8
-   __TEXT.__swift5_protos: 0x258
--  __TEXT.__swift5_mpenum: 0x74
--  __TEXT.__unwind_info: 0xbb10
--  __TEXT.__eh_frame: 0x11fc4
-+  __TEXT.__swift5_mpenum: 0x88
-+  __TEXT.__unwind_info: 0xbf48
-+  __TEXT.__eh_frame: 0x12d2c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3528
--  __DATA_CONST.__objc_classlist: 0x948
-+  __DATA_CONST.__const: 0x3548
-+  __DATA_CONST.__objc_classlist: 0x950
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x1e8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5ec0
-+  __DATA_CONST.__objc_selrefs: 0x5ee8
-   __DATA_CONST.__objc_protorefs: 0xb8
-   __DATA_CONST.__objc_superrefs: 0x4e8
-   __DATA_CONST.__objc_arraydata: 0x8a0
--  __DATA_CONST.__got: 0x2130
--  __AUTH_CONST.__const: 0x16b88
-+  __DATA_CONST.__got: 0x21b8
-+  __AUTH_CONST.__const: 0x17730
-   __AUTH_CONST.__cfstring: 0x93a0
--  __AUTH_CONST.__objc_const: 0x17f08
-+  __AUTH_CONST.__objc_const: 0x18100
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x9d8
-   __AUTH_CONST.__objc_arrayobj: 0x5e8
-   __AUTH_CONST.__objc_dictobj: 0x280
-   __AUTH_CONST.__objc_doubleobj: 0x20
--  __AUTH_CONST.__auth_got: 0x3490
--  __AUTH.__objc_data: 0x1cb0
--  __AUTH.__data: 0x3a88
-+  __AUTH_CONST.__auth_got: 0x35b0
-+  __AUTH.__objc_data: 0x1698
-+  __AUTH.__data: 0x23b8
-   __DATA.__objc_ivar: 0xbd8
--  __DATA.__data: 0x4788
--  __DATA.__bss: 0x10cb0
--  __DATA.__common: 0x168
--  __DATA_DIRTY.__objc_data: 0x38a0
--  __DATA_DIRTY.__data: 0x9318
--  __DATA_DIRTY.__bss: 0x5dd0
--  __DATA_DIRTY.__common: 0x2d0
-+  __DATA.__data: 0x3330
-+  __DATA.__bss: 0xe270
-+  __DATA.__common: 0x78
-+  __DATA_DIRTY.__objc_data: 0x3ec0
-+  __DATA_DIRTY.__data: 0xc498
-+  __DATA_DIRTY.__bss: 0x8e00
-+  __DATA_DIRTY.__common: 0x3f0
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreML.framework/CoreML
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+-2448.100.0.0.0
++2451.1.101.0.0
+
 +  - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-   - /System/Library/Frameworks/Security.framework/Security
-   - /System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers
-   - /System/Library/PrivateFrameworks/AlgorithmsInternal.framework/AlgorithmsInternal
 
-   - /System/Library/PrivateFrameworks/GRDBInternal.framework/GRDBInternal
-   - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
-   - /System/Library/PrivateFrameworks/GenerativeSearch.framework/GenerativeSearch
 +  - /System/Library/PrivateFrameworks/HybridSearch.framework/HybridSearch
-   - /System/Library/PrivateFrameworks/IntelligencePlatform.framework/IntelligencePlatform
-   - /System/Library/PrivateFrameworks/IntelligencePlatformLibrary.framework/IntelligencePlatformLibrary
-   - /System/Library/PrivateFrameworks/KnowledgeGraphKit.framework/KnowledgeGraphKit
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15666
--  Symbols:   21309
--  CStrings:  4642
+-  Symbols:   11483
+-  CStrings:  3459
 +  Functions: 15991
-+  Symbols:   21486
-+  CStrings:  4696
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
++  Symbols:   11534
++  CStrings:  3513
 Symbols:
 + -[SKDKeyphraser _purgeModelsAtMaxCount:maxDelta:lastFlushTime:]
 + _FCntlBackgroundAccessAcquire
@@ -190,12 +106,6 @@ Symbols:
 + _associated conformance 24SpotlightKnowledgeDaemon18PipelineEnablementOSHAASQ
 + _associated conformance 24SpotlightKnowledgeDaemon29PipelineCompletenessCAAdapterO6events6result9donations11countsByKey15firstComputedAt17lastReportedFloor15classifications12osUpdateDate3now11currentMode13overrideValue09recomputeY09aiEnabled18pipelineEnabledMapSayAA0dE5EventVGAA13OverallResultV_SDyAA8BundleIDVAA16DonationSnapshotVGSDySSSi8eligible_Si9processedtG10Foundation0V0VSgAA11LatestStateV0qR0VSgSDyAxA20BundleClassificationOGA6_A5_AA07MetricsY0O0aB00dE0O5LevelOSgAA09RecomputeY0OSbSDySSAA0D10EnablementOGtFZ04LeafL0L_VSHAASQ
 + _generic environment 24SpotlightKnowledgeDaemon21CascadeSetEnumeratingRzSTRd__s6UInt16V7ElementRtd__r__l
-+ _objc_msgSend$_purgeModelsAtMaxCount:maxDelta:lastFlushTime:
-+ _objc_msgSend$setAttribute:
-+ _objc_msgSend$setChangedAttributesHandler:
-+ _objc_msgSend$setCountChangedHandler:
-+ _objc_msgSend$setCounting:
-+ _objc_msgSend$setFoundAttributesHandler:
 + _symbolic S2i_____Iegyyr_ 12GRDBInternal18StatementArgumentsV
 + _symbolic SS3key______3oldAB3newt 24SpotlightKnowledgeDaemon17StoredDestination33_BA6CF66C02667F5EAC64A87050363795LLV
 + _symbolic SS3key______5valuet 24SpotlightKnowledgeDaemon17StoredDestination33_BA6CF66C02667F5EAC64A87050363795LLV
@@ -342,7 +252,6 @@ Symbols:
 - _get_type_metadata 24SpotlightKnowledgeDaemon26CacheItemRetrieverCreatingRzl15Synchronization5MutexVySDys5Int64VAA9LockedBox33_2390573F31F53B5A43F71AEDAD227BDBLLCy0F0QzGGG noncopyable
 - _get_type_metadata So18SKDRecordProcessorRzs8SendableRzl15Synchronization5MutexVyShy10Foundation4UUIDVGG noncopyable
 - _get_type_metadata s8SendableRzl15Synchronization5MutexVyxSgG noncopyable
-- _objc_msgSend$_purgeModelsAtMaxCount:maxDelta:lastFlushTime:preferredLanguages:
 - _swift_runtimeSupportsNoncopyableTypes
 - _symbolic S2iSdSg_____Iegyyyr_ 12GRDBInternal18StatementArgumentsV
 - _symbolic SDy__________G 24SpotlightKnowledgeDaemon8BundleIDV 10Foundation4DateV
@@ -488,5 +397,4 @@ CStrings:
 - "[FeatureMigration] Completed"
 - "[RecencyCutoverMetrics] key=%s window=%ldmo: SI(idx=%ld,emb=%ld) HDB(idx=%ld,emb=%ld,donated=%ld) body(%ldd): SI(idx=%ld,emb=%ld) HDB(idx=%ld,emb=%ld) withBody=%ld donated=%ld"
 - "isDestinationStale"
-
 ```

@@ -2,97 +2,70 @@
 
 > `/System/Library/PrivateFrameworks/PhotoLibraryServicesCore.framework/XPCServices/com.apple.photos.PCCService.xpc/com.apple.photos.PCCService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3cfc` | `0xfef8` | **`+0xc1fc`** |
+| `__DATA.__bss` | `0x10` | `0x1120` | **`+0x1110`** |
+| `__TEXT.__const` | `0x40` | `0xdf0` | **`+0xdb0`** |
+| `__TEXT.__auth_stubs` | `0x310` | `0xe60` | **`+0xb50`** |
+| `__TEXT.__eh_frame` | `—` | `0x9c0` | **`+0x9c0`** |
+| `__TEXT.__objc_methname` | `0xeb9` | `0x156b` | **`+0x6b2`** |
+| `__DATA_CONST.__auth_got` | `0x198` | `0x740` | **`+0x5a8`** |
+| `__DATA_CONST.__const` | `0x210` | `0x738` | **`+0x528`** |
+| `__DATA.__data` | `0x120` | `0x638` | **`+0x518`** |
+| `__TEXT.__unwind_info` | `0x190` | `0x640` | **`+0x4b0`** |
+| `__TEXT.__cstring` | `0x351` | `0x7be` | **`+0x46d`** |
+| `__DATA.__objc_const` | `0x528` | `0x990` | **`+0x468`** |
+| `__TEXT.__oslogstring` | `0x3e1` | `0x75d` | **`+0x37c`** |
+| `__TEXT.__objc_stubs` | `0xae0` | `0xe00` | **`+0x320`** |
+| `__TEXT.__swift5_typeref` | `—` | `0x30e` | **`+0x30e`** |
+| `__TEXT.__swift5_fieldmd` | `—` | `0x244` | **`+0x244`** |
+| `__DATA_CONST.__auth_ptr` | `—` | `0x238` | **`+0x238`** |
+| `__TEXT.__swift5_reflstr` | `—` | `0x1fe` | **`+0x1fe`** |
+| `__TEXT.__constg_swiftt` | `—` | `0x1bc` | **`+0x1bc`** |
+| `__TEXT.__objc_methlist` | `0x484` | `0x640` | **`+0x1bc`** |
+| `__DATA.__objc_data` | `0xf0` | `0x298` | **`+0x1a8`** |
+| `__DATA_CONST.__got` | `0xb8` | `0x230` | **`+0x178`** |
+| `__DATA_CONST.__cfstring` | `0x3e0` | `0x540` | **`+0x160`** |
+| `__DATA.__objc_selrefs` | `0x438` | `0x580` | **`+0x148`** |
+| `__TEXT.__swift5_capture` | `—` | `0xd4` | **`+0xd4`** |
+| `__TEXT.__objc_methtype` | `0x297` | `0x367` | **`+0xd0`** |
+| `__TEXT.__objc_classname` | `0x9b` | `0x15f` | **`+0xc4`** |
+| `__TEXT.__swift5_proto` | `—` | `0x88` | **`+0x88`** |
+| `__DATA.__common` | `—` | `0x78` | **`+0x78`** |
+| `__TEXT.__swift5_assocty` | `—` | `0x78` | **`+0x78`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x64` | **`+0x64`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x38` | **`+0x38`** |
+| `__TEXT.__swift_as_ret` | `—` | `0x34` | **`+0x34`** |
+| `__DATA.__objc_ivar` | `0x1c` | `0x4c` | **`+0x30`** |
+| `__TEXT.__swift5_mpenum` | `—` | `0x28` | **`+0x28`** |
+| `__TEXT.__swift5_types` | `—` | `0x28` | **`+0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x18` | `0x30` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `—` | `0x14` | **`+0x14`** |
+| `__DATA_CONST.__objc_superrefs` | `0x18` | `0x20` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 
+### Other Changes
+
 ```diff
 
 -912.0.234.0.0
--  __TEXT.__text: 0x3cfc
--  __TEXT.__auth_stubs: 0x310
--  __TEXT.__objc_stubs: 0xae0
--  __TEXT.__objc_methlist: 0x484
--  __TEXT.__const: 0x40
 +912.0.235.0.0
-+  __TEXT.__text: 0xfef8
-+  __TEXT.__auth_stubs: 0xe60
-+  __TEXT.__objc_stubs: 0xe00
-+  __TEXT.__objc_methlist: 0x640
-+  __TEXT.__const: 0xdf0
-+  __TEXT.__cstring: 0x7be
-+  __TEXT.__swift5_typeref: 0x30e
-+  __TEXT.__constg_swiftt: 0x1bc
-+  __TEXT.__swift5_reflstr: 0x1fe
-+  __TEXT.__swift5_fieldmd: 0x244
-+  __TEXT.__swift5_assocty: 0x78
-+  __TEXT.__swift5_proto: 0x88
-+  __TEXT.__swift5_types: 0x28
-+  __TEXT.__swift5_capture: 0xd4
-+  __TEXT.__oslogstring: 0x75d
-+  __TEXT.__objc_methtype: 0x367
-+  __TEXT.__objc_methname: 0x156b
-+  __TEXT.__objc_classname: 0x15f
-+  __TEXT.__swift5_builtin: 0x14
-+  __TEXT.__swift5_mpenum: 0x28
-+  __TEXT.__swift_as_entry: 0x38
-+  __TEXT.__swift_as_ret: 0x34
-+  __TEXT.__swift_as_cont: 0x64
-   __TEXT.__gcc_except_tab: 0x110
--  __TEXT.__cstring: 0x351
--  __TEXT.__oslogstring: 0x3e1
--  __TEXT.__objc_methname: 0xeb9
--  __TEXT.__objc_classname: 0x9b
--  __TEXT.__objc_methtype: 0x297
--  __TEXT.__unwind_info: 0x190
--  __DATA_CONST.__const: 0x210
--  __DATA_CONST.__cfstring: 0x3e0
--  __DATA_CONST.__objc_classlist: 0x18
-+  __TEXT.__unwind_info: 0x640
-+  __TEXT.__eh_frame: 0x9c0
-+  __DATA_CONST.__const: 0x738
-+  __DATA_CONST.__cfstring: 0x540
-+  __DATA_CONST.__objc_classlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x18
--  __DATA_CONST.__auth_got: 0x198
--  __DATA_CONST.__got: 0xb8
--  __DATA.__objc_const: 0x528
--  __DATA.__objc_selrefs: 0x438
--  __DATA.__objc_ivar: 0x1c
--  __DATA.__objc_data: 0xf0
--  __DATA.__data: 0x120
-+  __DATA_CONST.__objc_superrefs: 0x20
-+  __DATA_CONST.__auth_got: 0x740
-+  __DATA_CONST.__got: 0x230
-+  __DATA_CONST.__auth_ptr: 0x238
-+  __DATA.__objc_const: 0x990
-+  __DATA.__objc_selrefs: 0x580
-+  __DATA.__objc_ivar: 0x4c
-+  __DATA.__objc_data: 0x298
-+  __DATA.__data: 0x638
-+  __DATA.__common: 0x78
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/ImageIO.framework/ImageIO
-   - /System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers
-   - /System/Library/PrivateFrameworks/BiomeLibrary.framework/BiomeLibrary
-   - /System/Library/PrivateFrameworks/CMPhoto.framework/CMPhoto
+
 +  - /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf
-   - /System/Library/PrivateFrameworks/PhotosFormats.framework/PhotosFormats
+
 +  - /System/Library/PrivateFrameworks/PrivateCloudCompute.framework/PrivateCloudCompute
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
+
 +  - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
+
 +  - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
+
 -  Functions: 82
 -  Symbols:   87
 -  CStrings:  255
@@ -101,7 +74,6 @@
 +  Functions: 537
 +  Symbols:   204
 +  CStrings:  375
- 
 Symbols:
 + _BiomeLibrary
 + _CMPhotoCreateProtoBufferFromDNG

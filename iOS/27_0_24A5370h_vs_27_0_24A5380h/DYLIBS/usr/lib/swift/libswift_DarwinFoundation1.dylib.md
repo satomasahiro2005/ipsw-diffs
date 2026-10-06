@@ -2,17 +2,16 @@
 
 > `/usr/lib/swift/libswift_DarwinFoundation1.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x198` | `0x1a0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__text: 0x1cdc
--  __TEXT.__const: 0x198
-+  __TEXT.__const: 0x1a0
-   __TEXT.__swift5_typeref: 0x19
-   __TEXT.__swift5_reflstr: 0x9
-   __TEXT.__swift5_assocty: 0x18
-Sections:
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __AUTH_CONST.__const : content changed
-
+-428.0.0.0.0
++428.0.1.0.0
 ```

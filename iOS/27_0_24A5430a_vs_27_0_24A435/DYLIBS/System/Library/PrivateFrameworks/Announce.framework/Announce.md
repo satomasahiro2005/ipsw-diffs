@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/Announce.framework/Announce`
 
-```diff
+### Section Size Changes
 
- 331.0.0.0.0
--  __TEXT.__text: 0x3da0c
-+  __TEXT.__text: 0x3da18
-   __TEXT.__objc_methlist: 0x3220
-   __TEXT.__const: 0x1ca4
-   __TEXT.__cstring: 0x4069
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3da0c` | `0x3da18` | **`+0xc`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_251dcc1c0 -> sub_2528201c0 : 1848 -> 1852
-~ sub_251ddfd84 -> sub_252833d88 : 256 -> 264
+~ sub_251c961c0 -> sub_2526e91c0 : 1848 -> 1852
+~ sub_251ca9d84 -> sub_2526fcd88 : 256 -> 264
 ```

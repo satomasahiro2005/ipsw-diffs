@@ -2,98 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/DiskImages2.framework/DiskImages2`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e4ac0` | `0x1ee450` | **`+0x9990`** |
+| `__TEXT.__const` | `0x13e1a` | `0x1707a` | **`+0x3260`** |
+| `__TEXT.__cstring` | `0x163f8` | `0x17438` | **`+0x1040`** |
+| `__TEXT.__gcc_except_tab` | `0x1ae0c` | `0x1b28c` | **`+0x480`** |
+| `__TEXT.__unwind_info` | `0xe0a0` | `0xe360` | **`+0x2c0`** |
+| `__AUTH.__objc_data` | `0x1980` | `0x1840` | **`-0x140`** |
+| `__DATA_DIRTY.__objc_data` | `0xa0` | `0x1e0` | **`+0x140`** |
+| `__AUTH_CONST.__const` | `0x377d0` | `0x37870` | **`+0xa0`** |
+| `__AUTH_CONST.__auth_got` | `0x11b0` | `0x1230` | **`+0x80`** |
+| `__DATA_CONST.__const` | `0x10e8` | `0x1148` | **`+0x60`** |
+| `__DATA_CONST.__got` | `0x660` | `0x690` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x3d24` | `0x3d0c` | **`-0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1fc8` | `0x1fb8` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1e4ac0
--  __TEXT.__objc_methlist: 0x3d24
--  __TEXT.__const: 0x13e1a
--  __TEXT.__gcc_except_tab: 0x1ae0c
--  __TEXT.__cstring: 0x163f8
-+  __TEXT.__text: 0x1ee450
-+  __TEXT.__objc_methlist: 0x3d0c
-+  __TEXT.__const: 0x1707a
-+  __TEXT.__gcc_except_tab: 0x1b28c
-+  __TEXT.__cstring: 0x17438
-   __TEXT.__oslogstring: 0x1d7e
-   __TEXT.__ustring: 0x13c
-   __TEXT.__constg_swiftt: 0x60
-   __TEXT.__swift5_typeref: 0x58
-   __TEXT.__swift5_fieldmd: 0x10
-   __TEXT.__swift5_types: 0x4
--  __TEXT.__unwind_info: 0xe0a0
-+  __TEXT.__unwind_info: 0xe360
-   __TEXT.__eh_frame: 0xf0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x10e8
-+  __DATA_CONST.__const: 0x1148
-   __DATA_CONST.__objc_classlist: 0x290
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x1fc8
-+  __DATA_CONST.__objc_selrefs: 0x1fb8
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x200
-   __DATA_CONST.__objc_arraydata: 0xf0
--  __DATA_CONST.__got: 0x660
--  __AUTH_CONST.__const: 0x377d0
-+  __DATA_CONST.__got: 0x690
-+  __AUTH_CONST.__const: 0x37870
-   __AUTH_CONST.__cfstring: 0x4ec0
-   __AUTH_CONST.__objc_const: 0x60a8
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__objc_intobj: 0x48
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__objc_dictobj: 0xc8
--  __AUTH_CONST.__auth_got: 0x11b0
--  __AUTH.__objc_data: 0x1980
-+  __AUTH_CONST.__auth_got: 0x1230
-+  __AUTH.__objc_data: 0x1840
-   __AUTH.__data: 0x68
-   __DATA.__objc_ivar: 0x334
-   __DATA.__data: 0xc58
-   __DATA.__common: 0x19
-   __DATA.__bss: 0x258
--  __DATA_DIRTY.__objc_data: 0xa0
-+  __DATA_DIRTY.__objc_data: 0x1e0
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
+-593.0.0.0.1
++596.0.0.0.0
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/local/lib/libcurl.4.dylib
 -  Functions: 11596
--  Symbols:   33285
--  CStrings:  2855
+-  Symbols:   18357
+-  CStrings:  2231
 +  Functions: 11751
-+  Symbols:   33659
-+  CStrings:  2919
- 
-Sections:
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
++  Symbols:   18556
++  CStrings:  2295
 Symbols:
 + +[DIError(cpp_extension) errorWithDIException:prefix:error:]
 + GCC_except_table1000
@@ -629,7 +568,6 @@ Symbols:
 + ____ZN3ref9AllocatorIN7di_asif7details5tableEyED2Ev_block_invoke_2
 + ___udivti3
 + ___umodti3
-+ _objc_msgSend$errorWithDIException:prefix:error:
 + _time
 - +[DIError(cpp_extension) errorWithDIException:description:prefix:error:]
 - +[DIError(cpp_extension) failWithDIException:description:error:]
@@ -967,9 +905,6 @@ Symbols:
 - __ZTv0_n24_N6di_log6loggerINS_11log_printerILm3729EEEED1Ev
 - __ZTv0_n24_N6di_log6loggerINS_11log_printerILm3739EEEED0Ev
 - __ZTv0_n24_N6di_log6loggerINS_11log_printerILm3739EEEED1Ev
-- _objc_msgSend$errorWithDIException:description:prefix:error:
-- _objc_msgSend$failWithDIException:description:error:
-- _objc_msgSend$nilWithDIException:description:error:
 CStrings:
 + " does not allow the "
 + " formatting argument"
@@ -1045,5 +980,4 @@ CStrings:
 - "Unexpected error creating AEA backend"
 - "auto AEAHelper::key_params_t::run(function &&) [function = di_utils::overloaded<(lambda at /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/DiskImages2/DiskImagesLib/DiskImageParamsXPC.mm:219:8), (lambda at /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/DiskImages2/DiskImagesLib/DiskImageParamsXPC.mm:223:8), (lambda at /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/DiskImages2/DiskImagesLib/DiskImageParamsXPC.mm:227:8), (lambda at /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/DiskImages2/DiskImagesLib/DiskImageParamsXPC.mm:230:8)> &]"
 - "void crypto::details::unset_futures_errors_reporter<std::ranges::transform_view<std::ranges::ref_view<container_it<std::__deque_iterator<FileLocalAsync::promise_io_t, FileLocalAsync::promise_io_t *, FileLocalAsync::promise_io_t &, FileLocalAsync::promise_io_t **, long>>>, (lambda at /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/DiskImages2/app/backends/file.cpp:1093:24)>::__iterator<false>>::report_errors(int) [It = std::ranges::transform_view<std::ranges::ref_view<container_it<std::__deque_iterator<FileLocalAsync::promise_io_t, FileLocalAsync::promise_io_t *, FileLocalAsync::promise_io_t &, FileLocalAsync::promise_io_t **, long>>>, (lambda at /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/DiskImages2/app/backends/file.cpp:1093:24)>::__iterator<false>]"
-
 ```

@@ -2,105 +2,67 @@
 
 > `/usr/libexec/wifip2pd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5c7604` | `0x5cf770` | **`+0x816c`** |
+| `__TEXT.__oslogstring` | `0x212dc` | `0x2199c` | **`+0x6c0`** |
+| `__DATA.__bss` | `0x5d050` | `0x5d650` | **`+0x600`** |
+| `__TEXT.__const` | `0x3f500` | `0x3f930` | **`+0x430`** |
+| `__DATA_CONST.__const` | `0x38d70` | `0x390c8` | **`+0x358`** |
+| `__TEXT.__eh_frame` | `0x1dc0c` | `0x1deb8` | **`+0x2ac`** |
+| `__TEXT.__swift5_capture` | `0x7c68` | `0x7e00` | **`+0x198`** |
+| `__TEXT.__objc_methname` | `0x9f05` | `0xa085` | **`+0x180`** |
+| `__TEXT.__cstring` | `0xf468` | `0xf5d8` | **`+0x170`** |
+| `__TEXT.__swift5_reflstr` | `0x14519` | `0x14629` | **`+0x110`** |
+| `__TEXT.__auth_stubs` | `0x50f0` | `0x51e0` | **`+0xf0`** |
+| `__TEXT.__swift5_fieldmd` | `0x1630c` | `0x163fc` | **`+0xf0`** |
+| `__TEXT.__unwind_info` | `0x10380` | `0x10468` | **`+0xe8`** |
+| `__TEXT.__objc_stubs` | `0x4580` | `0x4640` | **`+0xc0`** |
+| `__TEXT.__constg_swiftt` | `0xff84` | `0x10030` | **`+0xac`** |
+| `__TEXT.__swift5_typeref` | `0xcfe5` | `0xd067` | **`+0x82`** |
+| `__DATA.__data` | `0x148f0` | `0x14970` | **`+0x80`** |
+| `__DATA_CONST.__auth_got` | `0x2880` | `0x28f8` | **`+0x78`** |
+| `__DATA.__objc_const` | `0xa650` | `0xa6b8` | **`+0x68`** |
+| `__DATA_CONST.__auth_ptr` | `0x7800` | `0x7840` | **`+0x40`** |
+| `__DATA.__objc_selrefs` | `0x1660` | `0x1698` | **`+0x38`** |
+| `__TEXT.__objc_methtype` | `0x22e7` | `0x2317` | **`+0x30`** |
+| `__TEXT.__swift5_proto` | `0x2fe0` | `0x3010` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x1b74` | `0x1b94` | **`+0x20`** |
+| `__DATA.__common` | `0xb48` | `0xb60` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x2ca0` | `0x2cb8` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0x1274` | `0x1280` | **`+0xc`** |
+| `__TEXT.__swift_as_cont` | `0x5e4` | `0x5dc` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x5c7604
--  __TEXT.__auth_stubs: 0x50f0
--  __TEXT.__objc_stubs: 0x4580
--  __TEXT.__objc_methlist: 0x1b74
--  __TEXT.__const: 0x3f500
--  __TEXT.__swift5_typeref: 0xcfe5
-+  __TEXT.__text: 0x5cf770
-+  __TEXT.__auth_stubs: 0x51e0
-+  __TEXT.__objc_stubs: 0x4640
-+  __TEXT.__objc_methlist: 0x1b94
-+  __TEXT.__const: 0x3f930
-+  __TEXT.__swift5_typeref: 0xd067
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__cstring: 0xf468
--  __TEXT.__oslogstring: 0x212dc
--  __TEXT.__constg_swiftt: 0xff84
--  __TEXT.__swift5_fieldmd: 0x1630c
--  __TEXT.__swift5_types: 0x1274
-+  __TEXT.__cstring: 0xf5d8
-+  __TEXT.__oslogstring: 0x2199c
-+  __TEXT.__constg_swiftt: 0x10030
-+  __TEXT.__swift5_fieldmd: 0x163fc
-+  __TEXT.__swift5_types: 0x1280
-   __TEXT.__swift5_builtin: 0x16f8
--  __TEXT.__swift5_reflstr: 0x14519
--  __TEXT.__swift5_assocty: 0x2ca0
--  __TEXT.__swift5_proto: 0x2fe0
-+  __TEXT.__swift5_reflstr: 0x14629
-+  __TEXT.__swift5_assocty: 0x2cb8
-+  __TEXT.__swift5_proto: 0x3010
-   __TEXT.__objc_classname: 0x1007
--  __TEXT.__objc_methtype: 0x22e7
-+  __TEXT.__objc_methtype: 0x2317
-   __TEXT.__swift5_protos: 0x108
--  __TEXT.__objc_methname: 0x9f05
--  __TEXT.__swift5_capture: 0x7c68
-+  __TEXT.__objc_methname: 0xa085
-+  __TEXT.__swift5_capture: 0x7e00
-   __TEXT.__swift_as_entry: 0x1f8
-   __TEXT.__swift_as_ret: 0x160
--  __TEXT.__swift_as_cont: 0x5e4
-+  __TEXT.__swift_as_cont: 0x5dc
-   __TEXT.__swift5_mpenum: 0x1a0
--  __TEXT.__unwind_info: 0x10380
--  __TEXT.__eh_frame: 0x1dc0c
--  __DATA_CONST.__const: 0x38d70
-+  __TEXT.__unwind_info: 0x10468
-+  __TEXT.__eh_frame: 0x1deb8
-+  __DATA_CONST.__const: 0x390c8
-   __DATA_CONST.__cfstring: 0x20
-   __DATA_CONST.__objc_classlist: 0x1c0
-   __DATA_CONST.__objc_protolist: 0x2e0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x170
--  __DATA_CONST.__auth_got: 0x2880
-+  __DATA_CONST.__auth_got: 0x28f8
-   __DATA_CONST.__got: 0x1028
--  __DATA_CONST.__auth_ptr: 0x7800
--  __DATA.__objc_const: 0xa650
--  __DATA.__objc_selrefs: 0x1660
-+  __DATA_CONST.__auth_ptr: 0x7840
-+  __DATA.__objc_const: 0xa6b8
-+  __DATA.__objc_selrefs: 0x1698
-   __DATA.__objc_data: 0x1898
--  __DATA.__data: 0x148f0
--  __DATA.__bss: 0x5d050
--  __DATA.__common: 0xb48
-+  __DATA.__data: 0x14970
-+  __DATA.__bss: 0x5d650
-+  __DATA.__common: 0xb60
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+-885.66.4.1.0
++885.69.4.1.0
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 24631
 -  Symbols:   2294
--  CStrings:  5440
+-  CStrings:  5381
 +  Functions: 24672
 +  Symbols:   2311
-+  CStrings:  5483
- 
-Sections:
-~ __TEXT.__swift5_entry : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA.__objc_data : content changed
++  CStrings:  5424
 Symbols:
 + _$s10Foundation11MeasurementV36_unconditionallyBridgeFromObjectiveCyACyxGSo13NSMeasurementCSgFZ
 + _$s10Foundation11MeasurementV5valueSdvg
@@ -193,5 +155,4 @@ CStrings:
 - "{\n  \"f9d4647aab00eb631c796b4d67581df1fce4afd8575f1e1039d318ebf97d8501\": {\n    \"Pairing\": {\n      \"Platforms\": [\n        \"iOS\"\n      ],\n      \"ClientID\": [\n        \"ASKAdvertiser\"\n      ]\n    },\n    \"Datapath\": {\n      \"Platforms\": [\n        \"iOS\"\n      ]\n    },\n    \"Publish\": {\n      \"Platforms\": [\n        \"iOS\"\n      ]\n    },\n    \"Subscribe\": {\n      \"Platforms\": [\n        \"iOS\"\n      ]\n    }\n  },\n  \"fb00987497584ef1ef5b95d6df6da85203dfe3637ed82c64bbd4c3be9fd615a0\": {\n    \"Datapath\": {\n      \"Platforms\": [\n        \"iOS\",\n        \"macOS\"\n      ]\n    },\n    \"Publish\": {\n      \"Platforms\": [\n        \"iOS\",\n        \"macOS\"\n      ]\n    },\n    \"NoConsoleUser\": {\n      \"Platforms\": [\n        \"iOS\",\n        \"macOS\"\n      ]\n    },\n    \"Subscribe\": {\n      \"Platforms\": [\n        \"iOS\",\n        \"macOS\"\n      ]\n    }\n  },\n  \"79255e637ba59df8e37bdc0abbe4772998b7987a677a71c484dc24f269b4e247\": {\n    \"Pairing\": {\n      \"Platforms\": [\n        \"macOS\"\n      ],\n      \"ClientID\": [\n        \"Airplay\"\n      ]\n    },\n    \"Datapath\": {\n      \"Platforms\": [\n        \"macOS\"\n      ]\n    },\n    \"Publish\": {\n      \"Platforms\": [\n        \"macOS\"\n      ]\n    },\n    \"Subscribe\": {\n      \"Platforms\": [\n        \"macOS\"\n      ]\n    }\n  },\n  \"3b5d9fed4d072a429700e2fbf5b1e084f3e7e7cc28794973b3c1396ff3f273f7\": {\n    \"Pairing\": {\n      \"Platforms\": [\n        \"iOS\"\n      ],\n      \"ClientID\": [\n        \"ASK\",\n        \"DDUI\"\n      ]\n    },\n    \"Datapath\": {\n      \"Platforms\": [\n        \"iOS\"\n      ]\n    },\n    \"Publish\": {\n      \"Platforms\": [\n        \"iOS\"\n      ]\n    },\n    \"Subscribe\": {\n      \"Platforms\": [\n        \"iOS\"\n      ]\n    }\n  },\n  \"95b04ad82af9b9b1f06786220d3f8436ab8fee3bc4cfb644dc3e067f152536ea\": {\n    \"Pairing\": {\n      \"Platforms\": [\n        \"iOS\",\n        \"tvOS\"\n      ],\n      \"ClientID\": [\n        \"Airplay\"\n      ]\n    },\n    \"Datapath\": {\n      \"Platforms\": [\n        \"iOS\",\n        \"tvOS\"\n      ]\n    },\n    \"Publish\": {\n      \"Platforms\": [\n        \"iOS\",\n        \"tvOS\"\n      ]\n    },\n    \"Subscribe\": {\n      \"Platforms\": [\n        \"iOS\",\n        \"tvOS\"\n      ]\n    }\n  },\n  \"3bdd268cfcb15ae333ee8b5f2aceb5ca471e2c7c124e0380c667188c9ea76523\": {\n    \"Pairing\": {\n      \"Platforms\": [\n        \"iOS\"\n      ],\n      \"ClientID\": [\n        \"MARS\"\n      ]\n    },\n    \"Datapath\": {\n      \"Platforms\": [\n        \"iOS\"\n      ]\n    },\n    \"Publish\": {\n      \"Platforms\": [\n        \"iOS\"\n      ]\n    },\n    \"Subscribe\": {\n      \"Platforms\": [\n        \"iOS\"\n      ]\n    }\n  },\n  \"0e0b82b0e23029391431af70d5ef0a90ee722acc9b6e600792fafbae95b1602f\": {\n    \"Pairing\": {\n      \"Platforms\": [\n        \"iOS\",\n        \"macOS\",\n        \"tvOS\",\n        \"visionOS\"\n      ],\n      \"ClientID\": [\n        \"CLI\"\n      ]\n    },\n    \"Datapath\": {\n      \"Platforms\": [\n        \"iOS\",\n        \"macOS\",\n        \"tvOS\",\n        \"visionOS\",\n        \"watchOS\"\n      ]\n    },\n    \"TDS\": {\n      \"Platforms\": [\n        \"iOS\"\n      ]\n    },\n    \"Publish\": {\n      \"Platforms\": [\n        \"iOS\",\n        \"macOS\",\n        \"tvOS\",\n        \"visionOS\",\n        \"watchOS\"\n      ]\n    },\n    \"Subscribe\": {\n      \"Platforms\": [\n        \"iOS\",\n        \"macOS\",\n        \"tvOS\",\n        \"visionOS\",\n        \"watchOS\"\n      ]\n    }\n  },\n  \"f672599f6242b6b8b207d86a39365c5c2280b5e0b30a3e178e549f511862cb31\": {\n    \"Publish\": {\n      \"Platforms\": [\n        \"iOS\"\n      ]\n    },\n    \"Subscribe\": {\n      \"Platforms\": [\n        \"visionOS\"\n      ]\n    },\n    \"Datapath\": {\n      \"Platforms\": [\n        \"iOS\",\n        \"visionOS\"\n      ]\n    }\n  },\n  \"b35aabfc609cffa539d8515d821f1c8b68f309e29289b2a4908d46ad98842de4\": {\n    \"Pairing\": {\n      \"Platforms\": [\n        \"tvOS\"\n      ],\n      \"ClientID\": [\n        \"Airplay\"\n      ]\n    },\n    \"Datapath\": {\n      \"Platforms\": [\n        \"tvOS\"\n      ]\n    },\n    \"Publish\": {\n      \"Platforms\": [\n        \"tvOS\"\n      ]\n    },\n    \"Subscribe\": {\n      \"Platforms\": [\n        \"tvOS\"\n      ]\n    }\n  },\n  \"2375f0d1d86b521d30842ded4b9d3619c79232f32c08c8dc779d6caff9a93e2a\": {\n    \"Pairing\": {\n      \"Platforms\": [\n        \"tvOS\"\n      ],\n      \"ClientID\": [\n        \"Terminus\"\n      ]\n    },\n    \"Datapath\": {\n      \"Platforms\": [\n        \"tvOS\"\n      ]\n    },\n    \"Publish\": {\n      \"Platforms\": [\n        \"tvOS\"\n      ]\n    },\n    \"Subscribe\": {\n      \"Platforms\": [\n        \"tvOS\"\n      ]\n    }\n  },\n  \"2efa58c641b124eea32d5f15df434872e3cc6338f415effdc87d460bd47f4bf7\": {\n    \"Publish\": {\n      \"Platforms\": [\n        \"macOS\"\n      ]\n    },\n    \"Subscribe\": {\n      \"Platforms\": [\n        \"macOS\"\n      ]\n    },\n    \"Datapath\": {\n      \"Platforms\": [\n        \"macOS\"\n      ]\n    }\n  },\n  \"d56e005815c1118018221a4fc6d8ddd8d1476d4636006610bfd4c1e4f014acb1\": {\n    \"Datapath\": {\n      \"Platforms\": [\n        \"iOS\",\n        \"macOS\"\n      ]\n    },\n    \"Publish\": {\n      \"Platforms\": [\n        \"iOS\",\n        \"macOS\"\n      ]\n    },\n    \"NoConsoleUser\": {\n      \"Platforms\": [\n        \"iOS\",\n        \"macOS\"\n      ]\n    },\n    \"Subscribe\": {\n      \"Platforms\": [\n        \"iOS\",\n        \"macOS\"\n      ]\n    }\n  },\n  \"13e5b90a431dd5fef68ab5b7dab45491fe3d24344e4ebd79e10c2da6e1a10a17\": {\n    \"Pairing\": {\n      \"Platforms\": [\n        \"iOS\"\n      ],\n      \"ClientID\": [\n        \"Migration\"\n      ]\n    },\n    \"Datapath\": {\n      \"Platforms\": [\n        \"iOS\"\n      ]\n    },\n    \"Publish\": {\n      \"Platforms\": [\n        \"iOS\"\n      ]\n    },\n    \"Subscribe\": {\n      \"Platforms\": [\n        \"iOS\"\n      ]\n    }\n  }\n}"
 - "📶🟢 [END] Create NAN Interface: %s"
 - "📶🟢 [END] Create NAN Interface: %s [No Secure Storage Initialization]"
-
 ```

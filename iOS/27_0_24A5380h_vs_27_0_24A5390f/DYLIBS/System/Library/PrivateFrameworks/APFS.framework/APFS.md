@@ -2,38 +2,23 @@
 
 > `/System/Library/PrivateFrameworks/APFS.framework/APFS`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__const`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH.__data`
-- `__DATA.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x53f5c` | `0x5426c` | **`+0x310`** |
+| `__TEXT.__cstring` | `0xe776` | `0xe85e` | **`+0xe8`** |
+| `__TEXT.__unwind_info` | `0x9e0` | `0x9d8` | **`-0x8`** |
+
+### Other Changes
 
 ```diff
 
 -3283.0.9.502.1
--  __TEXT.__text: 0x53f5c
 +3283.0.13.0.0
-+  __TEXT.__text: 0x5426c
-   __TEXT.__const: 0x8540
--  __TEXT.__cstring: 0xe776
-+  __TEXT.__cstring: 0xe85e
-   __TEXT.__oslogstring: 0x11b8
-   __TEXT.__gcc_except_tab: 0x1c
--  __TEXT.__unwind_info: 0x9e0
-+  __TEXT.__unwind_info: 0x9d8
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x558
-   __DATA_CONST.__got: 0x0
 
-   - /usr/lib/libutil.dylib
-   Functions: 901
-   Symbols:   1127
 -  CStrings:  1400
 +  CStrings:  1404
- 
 Functions:
 ~ _omap_get : 628 -> 632
 ~ _spaceman_alloc : 4144 -> 4156

@@ -2,65 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/RemoteManagementModel.framework/RemoteManagementModel`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x56f9c` | `0x58804` | **`+0x1868`** |
+| `__AUTH_CONST.__objc_const` | `0xf008` | `0xf588` | **`+0x580`** |
+| `__TEXT.__objc_methlist` | `0x8394` | `0x8684` | **`+0x2f0`** |
+| `__AUTH.__objc_data` | `0xa0` | `0x1e0` | **`+0x140`** |
+| `__AUTH_CONST.__cfstring` | `0x7540` | `0x75e0` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x1480` | `0x14e0` | **`+0x60`** |
+| `__DATA.__objc_ivar` | `0x8a8` | `0x8e0` | **`+0x38`** |
+| `__TEXT.__cstring` | `0x4b75` | `0x4ba4` | **`+0x2f`** |
+| `__DATA_CONST.__got` | `0x608` | `0x628` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x538` | `0x558` | **`+0x20`** |
+| `__DATA_CONST.__objc_superrefs` | `0x430` | `0x450` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x878` | `0x890` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x22b8` | `0x22c8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -624.2.3.0.0
--  __TEXT.__text: 0x5493c
--  __TEXT.__objc_methlist: 0x8394
 +624.40.12.0.0
-+  __TEXT.__text: 0x560e4
-+  __TEXT.__objc_methlist: 0x8684
-   __TEXT.__const: 0x68
--  __TEXT.__cstring: 0x4b75
-+  __TEXT.__cstring: 0x4ba4
-   __TEXT.__oslogstring: 0x5dc
--  __TEXT.__unwind_info: 0x1920
-+  __TEXT.__unwind_info: 0x1998
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x878
--  __DATA_CONST.__objc_classlist: 0x538
-+  __DATA_CONST.__const: 0x890
-+  __DATA_CONST.__objc_classlist: 0x558
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x22b8
--  __DATA_CONST.__objc_superrefs: 0x430
-+  __DATA_CONST.__objc_selrefs: 0x22c8
-+  __DATA_CONST.__objc_superrefs: 0x450
-   __DATA_CONST.__objc_arraydata: 0x3220
--  __DATA_CONST.__got: 0x608
-+  __DATA_CONST.__got: 0x628
-   __AUTH_CONST.__const: 0xa80
--  __AUTH_CONST.__cfstring: 0x7540
--  __AUTH_CONST.__objc_const: 0xf008
-+  __AUTH_CONST.__cfstring: 0x75e0
-+  __AUTH_CONST.__objc_const: 0xf588
-   __AUTH_CONST.__objc_arrayobj: 0x4e00
-   __AUTH_CONST.__objc_intobj: 0x29d0
-   __AUTH_CONST.__auth_got: 0x1f0
--  __AUTH.__objc_data: 0xa0
--  __DATA.__objc_ivar: 0x8a8
-+  __AUTH.__objc_data: 0x1e0
-+  __DATA.__objc_ivar: 0x8e0
-   __DATA.__data: 0x1e0
-   __DATA_DIRTY.__objc_data: 0x3390
-   __DATA_DIRTY.__data: 0x10
 
-   - /System/Library/PrivateFrameworks/DMCUtilities.framework/DMCUtilities
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2730
--  Symbols:   5903
+-  Symbols:   5037
 -  CStrings:  998
 +  Functions: 2790
-+  Symbols:   6018
++  Symbols:   5150
 +  CStrings:  1003
- 
 Symbols:
 + +[RMModelAccountCardDAVDeclaration buildWithIdentifier:visibleName:hostName:port:path:authenticationCredentialsAssetReference:VPNUUID:communicationServiceRules:]
 + +[RMModelAccountCardDAVDeclaration_CommunicationServiceRules allowedPayloadKeys]
@@ -179,8 +151,6 @@ Symbols:
 + ___61-[RMModelAccountCardDAVDeclaration serializePayloadWithType:]_block_invoke
 + ___79-[RMModelAccountGoogleDeclaration_CommunicationServiceRules serializeWithType:]_block_invoke
 + ___80-[RMModelAccountCardDAVDeclaration_CommunicationServiceRules serializeWithType:]_block_invoke
-+ _objc_msgSend$setStatusProtocolType:
-+ _objc_msgSend$statusProtocolType
 - +[RMModelAccountCardDAVDeclaration buildWithIdentifier:visibleName:hostName:port:path:authenticationCredentialsAssetReference:]
 - +[RMModelAccountGoogleDeclaration buildWithIdentifier:visibleName:userIdentityAssetReference:]
 - +[RMModelAccountMailDeclaration buildWithIdentifier:visibleName:userIdentityAssetReference:incomingServer:outgoingServer:SMIME:]

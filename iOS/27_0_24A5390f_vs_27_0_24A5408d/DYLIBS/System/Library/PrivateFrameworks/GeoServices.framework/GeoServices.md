@@ -2,106 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/GeoServices.framework/GeoServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2baadfc` | `0x2bb71d4` | **`+0xc3d8`** |
+| `__AUTH_CONST.__cfstring` | `0xafba0` | `0xb0c00` | **`+0x1060`** |
+| `__TEXT.__cstring` | `0xb9a26` | `0xba7eb` | **`+0xdc5`** |
+| `__AUTH_CONST.__objc_const` | `0x18d578` | `0x18de98` | **`+0x920`** |
+| `__TEXT.__objc_methlist` | `0xe42cc` | `0xe4aac` | **`+0x7e0`** |
+| `__TEXT.__unwind_info` | `0xa2220` | `0xa1d68` | **`-0x4b8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x37908` | `0x37db8` | **`+0x4b0`** |
+| `__DATA_CONST.__const` | `0x1aa18` | `0x1adb8` | **`+0x3a0`** |
+| `__TEXT.__gcc_except_tab` | `0x9995c` | `0x99bb8` | **`+0x25c`** |
+| `__DATA.__data` | `0x3cef0` | `0x3d030` | **`+0x140`** |
+| `__TEXT.__oslogstring` | `0x27f8b` | `0x2801a` | **`+0x8f`** |
+| `__DATA.__objc_ivar` | `0x14ad0` | `0x14b58` | **`+0x88`** |
+| `__AUTH.__objc_data` | `0x39778` | `0x397c8` | **`+0x50`** |
+| `__TEXT.__const` | `0x1f7ff4` | `0x1f7fbc` | **`-0x38`** |
+| `__AUTH_CONST.__const` | `0x118ae0` | `0x118b10` | **`+0x30`** |
+| `__DATA.__bss` | `0x1d31e8` | `0x1d3208` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x4fe4d` | `0x4fe6d` | **`+0x20`** |
+| `__DATA_DIRTY.__data` | `0x4e10` | `0x4e20` | **`+0x10`** |
+| `__AUTH.__data` | `0x15be8` | `0x15be0` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x61c0` | `0x61c8` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x6660` | `0x6668` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x5d18` | `0x5d20` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2075.30.6.12.8
--  __TEXT.__text: 0x2baadfc
--  __TEXT.__objc_methlist: 0xe42cc
--  __TEXT.__const: 0x1f7ff4
--  __TEXT.__cstring: 0xb9a26
--  __TEXT.__gcc_except_tab: 0x9995c
 +2075.30.6.12.12
-+  __TEXT.__text: 0x2bb71d4
-+  __TEXT.__objc_methlist: 0xe4aac
-+  __TEXT.__const: 0x1f7fbc
-+  __TEXT.__cstring: 0xba7eb
-+  __TEXT.__gcc_except_tab: 0x99bb8
-   __TEXT.__dlopen_cstrs: 0x289
-   __TEXT.__swift5_typeref: 0x2e7ca
-+  __TEXT.__swift5_capture: 0x1e42c
-   __TEXT.__constg_swiftt: 0x2d278
--  __TEXT.__swift5_builtin: 0x9ec
--  __TEXT.__swift5_reflstr: 0x4fe4d
-+  __TEXT.__swift5_reflstr: 0x4fe6d
-   __TEXT.__swift5_fieldmd: 0x4e534
-+  __TEXT.__swift5_builtin: 0x9ec
-   __TEXT.__swift5_assocty: 0xb588
-   __TEXT.__swift5_proto: 0xed90
-   __TEXT.__swift5_types: 0x5274
--  __TEXT.__swift5_capture: 0x1e42c
-   __TEXT.__swift_as_entry: 0x7dc
-   __TEXT.__swift_as_ret: 0x724
-   __TEXT.__swift_as_cont: 0x110c
--  __TEXT.__oslogstring: 0x27f8b
-+  __TEXT.__oslogstring: 0x2801a
-   __TEXT.__swift5_protos: 0x214
-   __TEXT.__swift5_mpenum: 0x14c
-   __TEXT.__swift5_types2: 0x28
-   __TEXT.__ustring: 0x152
--  __TEXT.__unwind_info: 0xa2220
-+  __TEXT.__unwind_info: 0xa1d68
-   __TEXT.__eh_frame: 0x8c7b4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1aa18
--  __DATA_CONST.__objc_classlist: 0x6660
-+  __DATA_CONST.__const: 0x1adb8
-+  __DATA_CONST.__objc_classlist: 0x6668
-   __DATA_CONST.__objc_catlist: 0xc8
-   __DATA_CONST.__objc_protolist: 0x960
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x18
--  __DATA_CONST.__objc_selrefs: 0x37908
-+  __DATA_CONST.__objc_selrefs: 0x37db8
-   __DATA_CONST.__objc_protorefs: 0x280
--  __DATA_CONST.__objc_superrefs: 0x5d18
-+  __DATA_CONST.__objc_superrefs: 0x5d20
-   __DATA_CONST.__objc_arraydata: 0x1cc8
--  __DATA_CONST.__got: 0x61c0
--  __AUTH_CONST.__const: 0x118ae0
--  __AUTH_CONST.__cfstring: 0xafba0
--  __AUTH_CONST.__objc_const: 0x18d578
-+  __DATA_CONST.__got: 0x61c8
-+  __AUTH_CONST.__const: 0x118b10
-+  __AUTH_CONST.__cfstring: 0xb0c00
-+  __AUTH_CONST.__objc_const: 0x18de98
-   __AUTH_CONST.__weak_auth_got: 0x40
-   __AUTH_CONST.__objc_intobj: 0xd68
-   __AUTH_CONST.__objc_arrayobj: 0x570
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__auth_got: 0x39d8
--  __AUTH.__objc_data: 0x39778
--  __AUTH.__data: 0x15be8
--  __DATA.__objc_ivar: 0x14ad0
--  __DATA.__data: 0x3cef0
--  __DATA.__bss: 0x1d31e8
-+  __AUTH.__objc_data: 0x397c8
-+  __AUTH.__data: 0x15be0
-+  __DATA.__objc_ivar: 0x14b58
-+  __DATA.__data: 0x3d030
-+  __DATA.__bss: 0x1d3208
-   __DATA.__common: 0x438
-   __DATA_DIRTY.__objc_data: 0x5c30
--  __DATA_DIRTY.__data: 0x4e10
-+  __DATA_DIRTY.__data: 0x4e20
-   __DATA_DIRTY.__bss: 0x68f8
-   __DATA_DIRTY.__common: 0xb0
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 182062
--  Symbols:   212396
+-  Symbols:   196094
 -  CStrings:  29388
 +  Functions: 182246
-+  Symbols:   212679
++  Symbols:   196336
 +  CStrings:  29526
- 
 Symbols:
 + +[GEOFMSimulatedFields isValid:]
 + +[GEORecentSoCHistory(Builder) _encodedChargesForCount:valueCallback:]
@@ -10722,49 +10662,6 @@ Symbols:
 + __readDisassocAP.tags
 + __readJoinedAP.tags
 + __readSimulatedFields.tags
-+ _objc_msgSend$_encodedChargesForCount:valueCallback:
-+ _objc_msgSend$_encodedDatesForCount:valueCallback:
-+ _objc_msgSend$disassocAP
-+ _objc_msgSend$fileDescriptorOfNetworkEventDataFileForRepresentativeDate:inEvalMode:
-+ _objc_msgSend$finalizedNetworkEventDataFileForRepresentativeDate:
-+ _objc_msgSend$inflightNetworkEventDataFileForRepresentativeDate:
-+ _objc_msgSend$initWithOriginal:
-+ _objc_msgSend$joinedAP
-+ _objc_msgSend$moveItemAtPath:toPath:error:
-+ _objc_msgSend$networkEventFileDescriptorForRepresentativeDate:inEvalMode:
-+ _objc_msgSend$setApnsPartialConnectivityCount:
-+ _objc_msgSend$setAutoJoinDisabled:
-+ _objc_msgSend$setBudgetComponent:
-+ _objc_msgSend$setCategoryComponent:
-+ _objc_msgSend$setCellularAvailable:
-+ _objc_msgSend$setDeferalReason:
-+ _objc_msgSend$setDensityComponent:
-+ _objc_msgSend$setDisassocAP:
-+ _objc_msgSend$setDisposition:
-+ _objc_msgSend$setDispostionReason:
-+ _objc_msgSend$setDwellComponent:
-+ _objc_msgSend$setFirstTimeJoin:
-+ _objc_msgSend$setIRatScoreAtDisconnect:
-+ _objc_msgSend$setIRatScoreAtJoin:
-+ _objc_msgSend$setIRatScoreBadCount:
-+ _objc_msgSend$setIRatScoreFairCount:
-+ _objc_msgSend$setIRatScoreGoodCount:
-+ _objc_msgSend$setIRatScoreUnknownCount:
-+ _objc_msgSend$setIRatScoreUnusableCount:
-+ _objc_msgSend$setJoinedAP:
-+ _objc_msgSend$setLinkQualityAssessment:
-+ _objc_msgSend$setPolicyVersion:
-+ _objc_msgSend$setQualityComponent:
-+ _objc_msgSend$setRadioAccessTypeAtDisconnect:
-+ _objc_msgSend$setRadioAccessTypeAtJoin:
-+ _objc_msgSend$setRssiAtJoin:
-+ _objc_msgSend$setRssiMax:
-+ _objc_msgSend$setRssiMedian:
-+ _objc_msgSend$setRssiMin:
-+ _objc_msgSend$setSimulatedFields:
-+ _objc_msgSend$setTransitNetworkType:
-+ _objc_msgSend$setWouldDefer:
-+ _objc_msgSend$simulatedFields
 - -[GEOAnalyticsDataService networkEventFileDescriptorForRepresentativeDate:]
 - -[GEOAnalyticsDataServiceLocalProxy networkEventFileDescriptorForRepresentativeDate:]
 - -[GEOAnalyticsDataServiceRemoteProxy networkEventFileDescriptorForRepresentativeDate:]
@@ -21142,8 +21039,6 @@ Symbols:
 - ___swift_closure_destructor.305Tm
 - ___swift_closure_destructor.48Tm
 - ___swift_closure_destructor.54Tm
-- _objc_msgSend$fileDescriptorOfNetworkEventDataFileForRepresentativeDate:
-- _objc_msgSend$networkEventFileDescriptorForRepresentativeDate:
 CStrings:
 + "BEACON_COUNT_0"
 + "BEACON_COUNT_1"

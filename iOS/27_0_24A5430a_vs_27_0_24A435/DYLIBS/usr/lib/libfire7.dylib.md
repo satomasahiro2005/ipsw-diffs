@@ -2,20 +2,20 @@
 
 > `/usr/lib/libfire7.dylib`
 
-```diff
+### Section Size Changes
 
- 135.0.5.0.0
--  __TEXT.__text: 0x284208
-+  __TEXT.__text: 0x28468c
-   __TEXT.__init_offsets: 0x10
-   __TEXT.__const: 0x2cd1c
-   __TEXT.__cstring: 0x3ffb7
-   __TEXT.__gcc_except_tab: 0x5514
--  __TEXT.__unwind_info: 0x5718
-+  __TEXT.__unwind_info: 0x5720
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x84a0
-   __DATA_CONST.__weak_got: 0x8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x284208` | `0x28468c` | **`+0x484`** |
+| `__TEXT.__unwind_info` | `0x5718` | `0x5720` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
+```diff
 Functions:
 ~ __ZN7BlueFin21MinnowGllRpcParserImp11ParseMethodEhhPht : 12036 -> 12040
 ~ __ZN7BlueFin7GlReqSm15SetAsstFromPendEbb : 4772 -> 4780
@@ -165,4 +165,7 @@ Functions:
 ~ __ZN7BlueFin14GlSettingsImpl11SetDbgParamERA64_KcRA256_S1_ : 160 -> 164
 ~ __ZNK7BlueFin14GlSettingsImpl11GetDbgParamEiRA64_cRA256_c : 172 -> 180
 ~ __ZN7BlueFin14GlPeGlnTimeMgr22CheckGlonassStringTimeEhi : 720 -> 724
+CStrings:
++ "Aug  8 2026, 14:23:23"
+- "Aug  8 2026, 17:28:33"
 ```

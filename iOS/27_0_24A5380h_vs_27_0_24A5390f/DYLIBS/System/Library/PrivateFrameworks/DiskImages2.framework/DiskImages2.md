@@ -2,76 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/DiskImages2.framework/DiskImages2`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__cstring`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ee450` | `0x1ef80c` | **`+0x13bc`** |
+| `__AUTH_CONST.__const` | `0x37870` | `0x37cb0` | **`+0x440`** |
+| `__TEXT.__const` | `0x1707a` | `0x1713a` | **`+0xc0`** |
+| `__TEXT.__gcc_except_tab` | `0x1b28c` | `0x1b338` | **`+0xac`** |
+| `__TEXT.__unwind_info` | `0xe360` | `0xe3f8` | **`+0x98`** |
+
+### Other Changes
 
 ```diff
 
 -596.0.0.0.0
--  __TEXT.__text: 0x1ee450
 +598.0.0.0.0
-+  __TEXT.__text: 0x1ef80c
-   __TEXT.__objc_methlist: 0x3d0c
--  __TEXT.__const: 0x1707a
--  __TEXT.__gcc_except_tab: 0x1b28c
-+  __TEXT.__const: 0x1713a
-+  __TEXT.__gcc_except_tab: 0x1b338
-   __TEXT.__cstring: 0x17438
-   __TEXT.__oslogstring: 0x1d7e
-   __TEXT.__ustring: 0x13c
 
-   __TEXT.__swift5_typeref: 0x58
-   __TEXT.__swift5_fieldmd: 0x10
-   __TEXT.__swift5_types: 0x4
--  __TEXT.__unwind_info: 0xe360
-+  __TEXT.__unwind_info: 0xe3f8
-   __TEXT.__eh_frame: 0xf0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_superrefs: 0x200
-   __DATA_CONST.__objc_arraydata: 0xf0
-   __DATA_CONST.__got: 0x690
--  __AUTH_CONST.__const: 0x37870
-+  __AUTH_CONST.__const: 0x37cb0
-   __AUTH_CONST.__cfstring: 0x4ec0
-   __AUTH_CONST.__objc_const: 0x60a8
-   __AUTH_CONST.__weak_auth_got: 0x30
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/local/lib/libcurl.4.dylib
 -  Functions: 11751
--  Symbols:   19405
+-  Symbols:   18556
 +  Functions: 11783
-+  Symbols:   19455
-   CStrings:  2295
- 
++  Symbols:   18606
 Symbols:
 + GCC_except_table684
 + GCC_except_table867

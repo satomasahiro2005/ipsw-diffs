@@ -2,63 +2,38 @@
 
 > `/System/Library/AccessibilityBundles/ChatKitFramework.axbundle/ChatKitFramework`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2b7fc` | `0x2c1f8` | **`+0x9fc`** |
+| `__AUTH_CONST.__objc_const` | `0xd428` | `0xd548` | **`+0x120`** |
+| `__TEXT.__cstring` | `0x8d43` | `0x8ded` | **`+0xaa`** |
+| `__AUTH.__objc_data` | `0x7d0` | `0x870` | **`+0xa0`** |
+| `__AUTH_CONST.__cfstring` | `0xa940` | `0xa9e0` | **`+0xa0`** |
+| `__TEXT.__objc_methlist` | `0x4db8` | `0x4e48` | **`+0x90`** |
+| `__DATA_CONST.__objc_selrefs` | `0x17f0` | `0x1830` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x1008` | `0x1040` | **`+0x38`** |
+| `__DATA_CONST.__const` | `0x968` | `0x990` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x5c0` | `0x5e0` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x6e8` | `0x708` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x90` | `0xa8` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0xb90` | `0xba0` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x3e8` | `0x3f0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3048.0.0.0.0
--  __TEXT.__text: 0x2a518
--  __TEXT.__objc_methlist: 0x4db8
 +3050.3.0.0.0
-+  __TEXT.__text: 0x2aec0
-+  __TEXT.__objc_methlist: 0x4e48
-   __TEXT.__const: 0x38
--  __TEXT.__gcc_except_tab: 0x6e8
--  __TEXT.__cstring: 0x8d43
-+  __TEXT.__gcc_except_tab: 0x708
-+  __TEXT.__cstring: 0x8ded
-   __TEXT.__oslogstring: 0x98
--  __TEXT.__unwind_info: 0x1298
-+  __TEXT.__unwind_info: 0x12d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x968
--  __DATA_CONST.__objc_classlist: 0xb90
-+  __DATA_CONST.__const: 0x990
-+  __DATA_CONST.__objc_classlist: 0xba0
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x17f0
--  __DATA_CONST.__objc_superrefs: 0x3e8
-+  __DATA_CONST.__objc_selrefs: 0x1830
-+  __DATA_CONST.__objc_superrefs: 0x3f0
-   __DATA_CONST.__got: 0x3c8
--  __AUTH_CONST.__const: 0x5c0
--  __AUTH_CONST.__cfstring: 0xa940
--  __AUTH_CONST.__objc_const: 0xd428
--  __AUTH_CONST.__objc_intobj: 0x90
-+  __AUTH_CONST.__const: 0x5e0
-+  __AUTH_CONST.__cfstring: 0xa9e0
-+  __AUTH_CONST.__objc_const: 0xd548
-+  __AUTH_CONST.__objc_intobj: 0xa8
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x7d0
-+  __AUTH.__objc_data: 0x870
-   __DATA.__objc_ivar: 0x24
-   __DATA.__data: 0x120
-   __DATA.__common: 0x8
 
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1477
--  Symbols:   4295
+-  Symbols:   3736
 -  CStrings:  1424
 +  Functions: 1490
-+  Symbols:   4330
++  Symbols:   3764
 +  CStrings:  1430
- 
 Symbols:
 + +[AppCardScenePresentationViewAccessibility _accessibilityPerformValidations:]
 + +[AppCardScenePresentationViewAccessibility(SafeCategory) safeCategoryBaseClass]
@@ -122,13 +97,6 @@ Symbols:
 + ___61-[AppCardContainerViewControllerAccessibility viewDidAppear:]_block_invoke
 + ___78-[AppCardScenePresentationViewAccessibility _axAppCardContainerViewController]_block_invoke
 + ___block_descriptor_41_e8_32w_e5_B8?0lw32l8
-+ _objc_msgSend$_accessibilitySetOverridesKeyboardObscuring:
-+ _objc_msgSend$_accessibilitySetUserDefinedMediaAnalysisOptions:
-+ _objc_msgSend$_axAppCardContainerViewController
-+ _objc_msgSend$_axAppCardVisibleFrame
-+ _objc_msgSend$_axCurrentSheetPresentationController
-+ _objc_msgSend$_axUpdateEffectAtIndex:
-+ _objc_msgSend$pointInside:withEvent:
 - GCC_except_table1057
 - GCC_except_table1081
 - GCC_except_table1142

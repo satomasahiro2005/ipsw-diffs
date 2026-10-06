@@ -2,42 +2,26 @@
 
 > `/System/Library/AccessibilityBundles/ChatKitFramework.axbundle/ChatKitFramework`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2b400` | `0x2b7fc` | **`+0x3fc`** |
+| `__TEXT.__objc_methlist` | `0x4d80` | `0x4db8` | **`+0x38`** |
+| `__DATA_CONST.__objc_selrefs` | `0x17e0` | `0x17f0` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0xff8` | `0x1008` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3045.0.0.0.0
--  __TEXT.__text: 0x2b400
--  __TEXT.__objc_methlist: 0x4d80
 +3048.0.0.0.0
-+  __TEXT.__text: 0x2b7fc
-+  __TEXT.__objc_methlist: 0x4db8
-   __TEXT.__const: 0x38
-   __TEXT.__gcc_except_tab: 0x6e8
-   __TEXT.__cstring: 0x8d43
-   __TEXT.__oslogstring: 0x98
--  __TEXT.__unwind_info: 0xff8
-+  __TEXT.__unwind_info: 0x1008
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0xb90
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x17e0
-+  __DATA_CONST.__objc_selrefs: 0x17f0
-   __DATA_CONST.__objc_superrefs: 0x3e8
-   __DATA_CONST.__got: 0x3c8
-   __AUTH_CONST.__const: 0x5c0
-
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1471
--  Symbols:   4286
+-  Symbols:   3728
 +  Functions: 1477
-+  Symbols:   4295
-   CStrings:  1424
- 
++  Symbols:   3736
 Symbols:
 + -[AudioMessageRecordingAppendButtonAccessibility accessibilityAttributedLabel]
 + -[CKAudioBalloonViewAccessibility accessibilityAttributedValue]
@@ -71,7 +55,6 @@ Symbols:
 + _AXAttributedStringForVariables
 + _AXCompactDurationStringForDuration
 + ___63-[CKAudioMessageBalloonViewAccessibility accessibilityActivate]_block_invoke
-+ _objc_msgSend$setAccessibilityAttributedValue:
 - GCC_except_table1051
 - GCC_except_table1075
 - GCC_except_table1136

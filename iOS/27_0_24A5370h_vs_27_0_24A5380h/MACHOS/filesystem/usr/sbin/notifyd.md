@@ -2,8 +2,13 @@
 
 > `/usr/sbin/notifyd`
 
-Sections:
-~ __DATA_CONST.__const : content changed
+### Same-size Content Changes
+
+- `__DATA_CONST.__const`
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1000052ac : 160 -> 244
 ~ sub_10000534c -> sub_1000053a0 : 160 -> 300
@@ -12,3 +17,4 @@ Functions:
 ~ sub_1000054c0 -> sub_1000055b8 : 76 -> 60
 ~ sub_10000550c -> sub_1000055f4 : 244 -> 160
 ~ sub_100005600 -> sub_100005694 : 300 -> 152
+```

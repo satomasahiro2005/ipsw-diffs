@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/NewsPersonalization.framework/NewsPersonalization`
 
-```diff
+### Section Size Changes
 
- 5934.3.0.0.0
--  __TEXT.__text: 0x24a734
-+  __TEXT.__text: 0x24a7bc
-   __TEXT.__objc_methlist: 0x3c48
-   __TEXT.__const: 0x19e10
-   __TEXT.__cstring: 0x10fd1
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x24a734` | `0x24a7bc` | **`+0x88`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_200822860 -> sub_200ec9860 : 1328 -> 1332
 ~ sub_20082bea4 -> sub_200ed2ea8 : 344 -> 348

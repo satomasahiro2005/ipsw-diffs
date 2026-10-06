@@ -2,15 +2,14 @@
 
 > `/System/Library/PrivateFrameworks/AONSenseService.framework/XPCServices/com.apple.aonsensed.camera-xpc.xpc/com.apple.aonsensed.camera-xpc`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__constg_swiftt`
+
+### Other Changes
 
 ```diff
 
 -116.0.0.0.0
 +118.0.0.0.0
-   __TEXT.__text: 0x133c4
-   __TEXT.__auth_stubs: 0xcb0
-   __TEXT.__objc_stubs: 0xae0
 ```

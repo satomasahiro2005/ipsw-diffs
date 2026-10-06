@@ -2,26 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/DiagnosticExtensions.framework/PlugIns/com.apple.DiagnosticExtensions.Cellular.appex/com.apple.DiagnosticExtensions.Cellular`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__objc_methlist`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x25834` | `0x258b0` | **`+0x7c`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__init_offsets`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 1585.0.0.0.0
--  __TEXT.__text: 0x25834
-+  __TEXT.__text: 0x258b0
-   __TEXT.__auth_stubs: 0xb90
-   __TEXT.__objc_stubs: 0x5c0
-   __TEXT.__init_offsets: 0x8
+```text
 Functions:
 ~ sub_100005524 : 460 -> 476
 ~ sub_100005734 -> sub_100005744 : 396 -> 420

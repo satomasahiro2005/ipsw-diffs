@@ -2,115 +2,61 @@
 
 > `/System/Library/PrivateFrameworks/ModelCatalogRuntime.framework/ModelCatalogRuntime`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x89ecc` | `0x98934` | **`+0xea68`** |
+| `__TEXT.__eh_frame` | `0x45b4` | `0x4f5c` | **`+0x9a8`** |
+| `__AUTH_CONST.__const` | `0x4cf0` | `0x5400` | **`+0x710`** |
+| `__TEXT.__const` | `0x3458` | `0x3988` | **`+0x530`** |
+| `__TEXT.__oslogstring` | `0x458a` | `0x4a9a` | **`+0x510`** |
+| `__DATA.__bss` | `0x1f90` | `0x2410` | **`+0x480`** |
+| `__DATA.__data` | `0x830` | `0xc28` | **`+0x3f8`** |
+| `__TEXT.__unwind_info` | `0x1e88` | `0x21e8` | **`+0x360`** |
+| `__TEXT.__swift5_typeref` | `0x1bb6` | `0x1f0c` | **`+0x356`** |
+| `__TEXT.__swift5_capture` | `0x15c4` | `0x17b0` | **`+0x1ec`** |
+| `__AUTH_CONST.__auth_got` | `0x14e8` | `0x16c8` | **`+0x1e0`** |
+| `__TEXT.__constg_swiftt` | `0x1300` | `0x14d0` | **`+0x1d0`** |
+| `__AUTH_CONST.__objc_const` | `0x1698` | `0x1858` | **`+0x1c0`** |
+| `__TEXT.__swift5_fieldmd` | `0xcc8` | `0xe64` | **`+0x19c`** |
+| `__AUTH.__data` | `0x488` | `0x610` | **`+0x188`** |
+| `__TEXT.__swift5_reflstr` | `0xad3` | `0xc03` | **`+0x130`** |
+| `__TEXT.__cstring` | `0x191b` | `0x19fe` | **`+0xe3`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4a0` | `0x560` | **`+0xc0`** |
+| `__TEXT.__objc_methlist` | `0x604` | `0x664` | **`+0x60`** |
+| `__DATA_CONST.__objc_protolist` | `0x70` | `0xa0` | **`+0x30`** |
+| `__TEXT.__swift5_assocty` | `0x1f0` | `0x220` | **`+0x30`** |
+| `__TEXT.__swift5_proto` | `0x1ac` | `0x1d8` | **`+0x2c`** |
+| `__TEXT.__swift5_types` | `0x124` | `0x144` | **`+0x20`** |
+| `__DATA_CONST.__objc_protorefs` | `0x40` | `0x58` | **`+0x18`** |
+| `__TEXT.__swift_as_cont` | `0x310` | `0x328` | **`+0x18`** |
+| `__DATA_DIRTY.__common` | `0x3d8` | `0x3e8` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0x1608` | `0x1618` | **`+0x10`** |
+| `__DATA_DIRTY.__objc_data` | `0x400` | `0x410` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x164` | `0x170` | **`+0xc`** |
+| `__DATA_CONST.__const` | `0xc0` | `0xc8` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0xc0` | `0xc8` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x50` | `0x58` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x178` | `0x180` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -302.6.0.3.0
--  __TEXT.__text: 0x83804
--  __TEXT.__objc_methlist: 0x604
--  __TEXT.__const: 0x3458
--  __TEXT.__constg_swiftt: 0x1300
--  __TEXT.__swift5_typeref: 0x1bb6
 +308.7.0.1.0
-+  __TEXT.__text: 0x91b04
-+  __TEXT.__objc_methlist: 0x664
-+  __TEXT.__const: 0x3988
-+  __TEXT.__swift5_typeref: 0x1f0c
-+  __TEXT.__swift5_capture: 0x17b0
-+  __TEXT.__cstring: 0x19fe
-+  __TEXT.__constg_swiftt: 0x14d0
-   __TEXT.__swift5_builtin: 0x64
--  __TEXT.__swift5_reflstr: 0xad3
--  __TEXT.__swift5_fieldmd: 0xcc8
--  __TEXT.__swift5_assocty: 0x1f0
--  __TEXT.__swift5_capture: 0x15c4
--  __TEXT.__cstring: 0x191b
--  __TEXT.__oslogstring: 0x458a
--  __TEXT.__swift5_proto: 0x1ac
--  __TEXT.__swift5_types: 0x124
--  __TEXT.__swift_as_entry: 0x164
--  __TEXT.__swift_as_ret: 0x178
--  __TEXT.__swift_as_cont: 0x310
--  __TEXT.__swift5_protos: 0x50
-+  __TEXT.__swift5_reflstr: 0xc03
-+  __TEXT.__swift5_fieldmd: 0xe64
-+  __TEXT.__swift5_assocty: 0x220
-+  __TEXT.__oslogstring: 0x4a9a
-+  __TEXT.__swift5_proto: 0x1d8
-+  __TEXT.__swift5_types: 0x144
-+  __TEXT.__swift_as_entry: 0x170
-+  __TEXT.__swift_as_ret: 0x180
-+  __TEXT.__swift_as_cont: 0x328
-+  __TEXT.__swift5_protos: 0x58
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x2340
--  __TEXT.__eh_frame: 0x45bc
-+  __TEXT.__unwind_info: 0x2708
-+  __TEXT.__eh_frame: 0x4f64
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xc0
--  __DATA_CONST.__objc_classlist: 0xc0
--  __DATA_CONST.__objc_protolist: 0x70
-+  __DATA_CONST.__const: 0xc8
-+  __DATA_CONST.__objc_classlist: 0xc8
-+  __DATA_CONST.__objc_protolist: 0xa0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4a0
--  __DATA_CONST.__objc_protorefs: 0x40
-+  __DATA_CONST.__objc_selrefs: 0x560
-+  __DATA_CONST.__objc_protorefs: 0x58
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x4cf0
--  __AUTH_CONST.__objc_const: 0x1698
--  __AUTH_CONST.__auth_got: 0x14e8
-+  __AUTH_CONST.__const: 0x5400
-+  __AUTH_CONST.__objc_const: 0x1858
-+  __AUTH_CONST.__auth_got: 0x16c8
-   __AUTH.__objc_data: 0x120
--  __AUTH.__data: 0x488
--  __DATA.__data: 0x830
-+  __AUTH.__data: 0x610
-+  __DATA.__data: 0xc28
-   __DATA.__common: 0x40
--  __DATA_DIRTY.__objc_data: 0x400
--  __DATA_DIRTY.__data: 0x1608
--  __DATA_DIRTY.__common: 0x3d8
-+  __DATA_DIRTY.__objc_data: 0x410
-+  __DATA_DIRTY.__data: 0x1618
-+  __DATA_DIRTY.__common: 0x3e8
-   __DATA_DIRTY.__bss: 0xa80
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/PrivateFrameworks/BackgroundSystemTasks.framework/BackgroundSystemTasks
-   - /System/Library/PrivateFrameworks/BiomeFoundation.framework/BiomeFoundation
-   - /System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams
 +  - /System/Library/PrivateFrameworks/CascadeSets.framework/CascadeSets
-   - /System/Library/PrivateFrameworks/CloudSubscriptionFeatures.framework/CloudSubscriptionFeatures
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/GenerativeExperiences.framework/GenerativeExperiences
 
-   - /usr/lib/swift/libswiftCoreAudio.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftCoreLocation.dylib
 +  - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
-   - /usr/lib/swift/libswiftIntents.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3342
 -  Symbols:   253
 -  CStrings:  372
 +  Functions: 3595
 +  Symbols:   273
 +  CStrings:  397
- 
 Symbols:
 + _CCModelCatalogRequestedUseCaseContentArgumentIdentifierFromString
 + _OBJC_CLASS_$_CCItemInstance

@@ -2,98 +2,37 @@
 
 > `/usr/lib/usd/libusd_ms.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2743a60` | `0x274ad2c` | **`+0x72cc`** |
+| `__TEXT.__gcc_except_tab` | `0x25a9c4` | `0x25c520` | **`+0x1b5c`** |
+| `__TEXT.__cstring` | `0x2b0a0c` | `0x2b190c` | **`+0xf00`** |
+| `__TEXT.__unwind_info` | `0x112730` | `0x1129e8` | **`+0x2b8`** |
+| `__TEXT.__const` | `0x62c8c0` | `0x62ca50` | **`+0x190`** |
+| `__DATA.__bss` | `0x26e3a0` | `0x26e500` | **`+0x160`** |
+| `__TEXT.__eh_frame` | `0x3cc08` | `0x3cb28` | **`-0xe0`** |
+| `__AUTH_CONST.__const` | `0x130460` | `0x1304f0` | **`+0x90`** |
+| `__DATA.__data` | `0x55078` | `0x550b8` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0xd940` | `0xd958` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x8d8` | `0x8c8` | **`-0x10`** |
+| `__AUTH_CONST.__weak_auth_got` | `0xb220` | `0xb228` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0x5f14` | `0x5f0e` | **`-0x6`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2743a60
--  __TEXT.__gcc_except_tab: 0x25a9c4
--  __TEXT.__const: 0x62c8c0
--  __TEXT.__cstring: 0x2b0a0c
-+  __TEXT.__text: 0x274ad2c
-+  __TEXT.__gcc_except_tab: 0x25c520
-+  __TEXT.__const: 0x62ca50
-+  __TEXT.__cstring: 0x2b190c
-   __TEXT.__oslogstring: 0x1ef33
--  __TEXT.__swift5_typeref: 0x5f14
-+  __TEXT.__swift5_typeref: 0x5f0e
-   __TEXT.__constg_swiftt: 0x7974
-   __TEXT.__swift5_reflstr: 0x4ac9
-   __TEXT.__swift5_assocty: 0x5b28
+-24.1.23.0.0
++24.1.24.0.0
 
-   __TEXT.__swift5_protos: 0xb0
-   __TEXT.__swift5_types2: 0x1c
-   __TEXT.__swift5_capture: 0x18c
--  __TEXT.__unwind_info: 0x112730
--  __TEXT.__eh_frame: 0x3cc08
-+  __TEXT.__unwind_info: 0x1129e8
-+  __TEXT.__eh_frame: 0x3cb28
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xd940
-+  __DATA_CONST.__const: 0xd958
-   __DATA_CONST.__objc_classlist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x1ef0
-   __DATA_CONST.__objc_selrefs: 0x888
-   __DATA_CONST.__objc_arraydata: 0x10
--  __DATA_CONST.__got: 0x8d8
--  __AUTH_CONST.__const: 0x130460
-+  __DATA_CONST.__got: 0x8c8
-+  __AUTH_CONST.__const: 0x1304f0
-   __AUTH_CONST.__cfstring: 0x540
-   __AUTH_CONST.__objc_const: 0x670
--  __AUTH_CONST.__weak_auth_got: 0xb220
-+  __AUTH_CONST.__weak_auth_got: 0xb228
-   __AUTH_CONST.__objc_intobj: 0x210
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__auth_got: 0x1b68
-
-   __AUTH.__thread_vars: 0x2d0
-   __AUTH.__thread_data: 0x4
-   __AUTH.__thread_bss: 0x44150
--  __DATA.__data: 0x55078
--  __DATA.__bss: 0x26e3a0
-+  __DATA.__data: 0x550b8
-+  __DATA.__bss: 0x26e500
-   __DATA.__common: 0x5ff0
-   __DATA_DIRTY.__mtlx_registry: 0x0
-   __DATA_DIRTY.__tf_func: 0x0
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_errno.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 200865
 -  Symbols:   54406
--  CStrings:  31302
+-  CStrings:  31230
 +  Functions: 200947
 +  Symbols:   54408
-+  CStrings:  31394
- 
-Sections:
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_types2 : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__mtlx_registry : content changed
-~ __AUTH.pxrctor : content changed
-~ __AUTH.__tf_func : content changed
-~ __AUTH.__thread_vars : content changed
++  CStrings:  31322
 Symbols:
 + __ZN32pxrInternal__aapl__pxrReserved__15aaplUsdGclCodec12compressMeshERKNS0_14GclMeshRawDataERKNS_12VtDictionaryERS4_
 + __ZN32pxrInternal__aapl__pxrReserved__15aaplUsdGclCodec17kResultStatsEntryE
@@ -204,5 +143,4 @@ CStrings:
 - "GclCodecErrorCode::LESS_EFFICIENT_TO_COMRPESS_IMAGE"
 - "Jun 12 2026"
 - "Total unique meshes to compress: "
-
 ```

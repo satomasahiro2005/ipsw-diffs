@@ -2,117 +2,68 @@
 
 > `/System/Library/PrivateFrameworks/HealthPluginHost.framework/healthappd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_entry`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x317d4` | `0x34c0c` | **`+0x3438`** |
+| `__TEXT.__auth_stubs` | `0x2380` | `0x28a0` | **`+0x520`** |
+| `__DATA_CONST.__auth_got` | `0x11c8` | `0x1458` | **`+0x290`** |
+| `__DATA_CONST.__got` | `0x6b0` | `0x8b8` | **`+0x208`** |
+| `__TEXT.__constg_swiftt` | `0x62c` | `0x434` | **`-0x1f8`** |
+| `__DATA.__data` | `0xe88` | `0x1058` | **`+0x1d0`** |
+| `__DATA.__objc_data` | `0x608` | `0x458` | **`-0x1b0`** |
+| `__TEXT.__oslogstring` | `0x2001` | `0x1e91` | **`-0x170`** |
+| `__TEXT.__eh_frame` | `0x3d0` | `0x4f0` | **`+0x120`** |
+| `__DATA.__common` | `0xb8` | `0x1c0` | **`+0x108`** |
+| `__DATA.__bss` | `0xa08` | `0xb08` | **`+0x100`** |
+| `__TEXT.__const` | `0x9e8` | `0xac8` | **`+0xe0`** |
+| `__TEXT.__unwind_info` | `0x788` | `0x828` | **`+0xa0`** |
+| `__DATA_CONST.__auth_ptr` | `0x3d8` | `0x468` | **`+0x90`** |
+| `__TEXT.__objc_methname` | `0x12d9` | `0x1255` | **`-0x84`** |
+| `__TEXT.__cstring` | `0x7f9` | `0x867` | **`+0x6e`** |
+| `__TEXT.__objc_methlist` | `0x4e4` | `0x544` | **`+0x60`** |
+| `__TEXT.__objc_stubs` | `0x720` | `0x6c0` | **`-0x60`** |
+| `__DATA.__objc_const` | `0x1140` | `0x1190` | **`+0x50`** |
+| `__TEXT.__objc_classname` | `0x49e` | `0x4de` | **`+0x40`** |
+| `__TEXT.__swift5_fieldmd` | `0x578` | `0x5b0` | **`+0x38`** |
+| `__TEXT.__objc_methtype` | `0x44c` | `0x42c` | **`-0x20`** |
+| `__TEXT.__swift5_reflstr` | `0xa0d` | `0x9ed` | **`-0x20`** |
+| `__DATA_CONST.__const` | `0x1320` | `0x1330` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0x6cc` | `0x6bc` | **`-0x10`** |
+| `__DATA.__objc_selrefs` | `0x3b0` | `0x3b8` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x38` | `0x40` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x50` | `0x58` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x48` | `0x50` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x8` | `0x10` | **`+0x8`** |
+| `__TEXT.__swift5_capture` | `0x668` | `0x66c` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0x8` | `0xc` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x8` | `0xc` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_stublist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA.__objc_stublist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_entry`
+
+### Other Changes
 
 ```diff
 
 -7027.0.72.2.7
--  __TEXT.__text: 0x2fbe4
--  __TEXT.__auth_stubs: 0x2380
--  __TEXT.__objc_stubs: 0x720
--  __TEXT.__objc_methlist: 0x4e4
--  __TEXT.__const: 0x9e8
--  __TEXT.__cstring: 0x7f9
--  __TEXT.__objc_methtype: 0x44c
--  __TEXT.__oslogstring: 0x2001
 +7027.1.36.2.7
-+  __TEXT.__text: 0x32d78
-+  __TEXT.__auth_stubs: 0x28a0
-+  __TEXT.__objc_stubs: 0x6c0
-+  __TEXT.__objc_methlist: 0x544
-+  __TEXT.__const: 0xac8
-+  __TEXT.__cstring: 0x867
-+  __TEXT.__objc_methtype: 0x42c
-+  __TEXT.__oslogstring: 0x1e91
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__constg_swiftt: 0x62c
--  __TEXT.__swift5_typeref: 0x6cc
-+  __TEXT.__constg_swiftt: 0x434
-+  __TEXT.__swift5_typeref: 0x6bc
-   __TEXT.__swift5_builtin: 0x3c
--  __TEXT.__swift5_reflstr: 0xa0d
--  __TEXT.__swift5_fieldmd: 0x578
-+  __TEXT.__swift5_reflstr: 0x9ed
-+  __TEXT.__swift5_fieldmd: 0x5b0
-   __TEXT.__swift5_assocty: 0x48
--  __TEXT.__swift5_proto: 0x50
--  __TEXT.__swift5_types: 0x48
--  __TEXT.__objc_methname: 0x12d9
--  __TEXT.__objc_classname: 0x49e
--  __TEXT.__swift5_capture: 0x668
--  __TEXT.__swift_as_entry: 0x8
--  __TEXT.__swift_as_ret: 0x8
--  __TEXT.__swift_as_cont: 0x8
--  __TEXT.__unwind_info: 0x9e0
--  __TEXT.__eh_frame: 0x3d0
--  __DATA_CONST.__const: 0x1320
--  __DATA_CONST.__objc_classlist: 0x38
-+  __TEXT.__swift5_proto: 0x58
-+  __TEXT.__swift5_types: 0x50
-+  __TEXT.__objc_methname: 0x1255
-+  __TEXT.__objc_classname: 0x4de
-+  __TEXT.__swift5_capture: 0x66c
-+  __TEXT.__swift_as_entry: 0xc
-+  __TEXT.__swift_as_ret: 0xc
-+  __TEXT.__swift_as_cont: 0x10
-+  __TEXT.__unwind_info: 0xa80
-+  __TEXT.__eh_frame: 0x4f0
-+  __DATA_CONST.__const: 0x1330
-+  __DATA_CONST.__objc_classlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x58
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x38
--  __DATA_CONST.__auth_got: 0x11c8
--  __DATA_CONST.__got: 0x6b0
--  __DATA_CONST.__auth_ptr: 0x3d8
--  __DATA.__objc_const: 0x1140
--  __DATA.__objc_selrefs: 0x3b0
--  __DATA.__objc_data: 0x608
--  __DATA.__data: 0xe88
-+  __DATA_CONST.__auth_got: 0x1458
-+  __DATA_CONST.__got: 0x8b8
-+  __DATA_CONST.__auth_ptr: 0x468
-+  __DATA.__objc_const: 0x1190
-+  __DATA.__objc_selrefs: 0x3b8
-+  __DATA.__objc_data: 0x458
-+  __DATA.__data: 0x1058
-   __DATA.__objc_stublist: 0x8
--  __DATA.__common: 0xb8
-+  __DATA.__common: 0x1c0
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+
 +  - /System/Library/Frameworks/FoundationModels.framework/FoundationModels
-   - /System/Library/Frameworks/HealthKit.framework/HealthKit
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/PrivateFrameworks/AppleMediaServices.framework/AppleMediaServices
 
-   - /System/Library/PrivateFrameworks/HealthDaemonFoundation.framework/HealthDaemonFoundation
-   - /System/Library/PrivateFrameworks/HealthExperience.framework/HealthExperience
-   - /System/Library/PrivateFrameworks/HealthKitAdditions.framework/HealthKitAdditions
 +  - /System/Library/PrivateFrameworks/HealthNarrator.framework/HealthNarrator
-   - /System/Library/PrivateFrameworks/HealthOrchestration.framework/HealthOrchestration
-   - /System/Library/PrivateFrameworks/HealthPlatform.framework/HealthPlatform
-   - /System/Library/PrivateFrameworks/HealthPlatformCore.framework/HealthPlatformCore
 
-   - /usr/lib/swift/libswift_DarwinFoundation3.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 706
 -  Symbols:   880
 +  Functions: 740
 +  Symbols:   1015
-   CStrings:  402
- 
 Symbols:
 + _$s09HealthAppA13DaemonSupport0aC20UserInteractionStoreC06healthG0ACSo08HKHealthG0C_tcfc
 + _$s09HealthAppA13DaemonSupport0aC20UserInteractionStoreCAA0eF7StoringAAWP

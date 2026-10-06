@@ -2,64 +2,33 @@
 
 > `/System/Library/AccessibilityBundles/MobileMail.axbundle/MobileMail`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x135f8` | `0x13544` | **`-0xb4`** |
+| `__AUTH.__objc_data` | `0x140` | `0x1e0` | **`+0xa0`** |
+| `__DATA_DIRTY.__objc_data` | `0x23a0` | `0x2300` | **`-0xa0`** |
+| `__DATA_CONST.__const` | `0x798` | `0x7c0` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x48a0` | `0x4880` | **`-0x20`** |
+| `__TEXT.__cstring` | `0x3735` | `0x3727` | **`-0xe`** |
+| `__DATA_CONST.__objc_selrefs` | `0xd80` | `0xd88` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x160` | `0x158` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x720` | `0x718` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3045.0.0.0.0
--  __TEXT.__text: 0x135f8
 +3048.0.0.0.0
-+  __TEXT.__text: 0x13544
-   __TEXT.__objc_methlist: 0x184c
-   __TEXT.__const: 0x30
-   __TEXT.__gcc_except_tab: 0x3b4
--  __TEXT.__cstring: 0x3735
-+  __TEXT.__cstring: 0x3727
-   __TEXT.__oslogstring: 0x5a
-   __TEXT.__ustring: 0xa
--  __TEXT.__unwind_info: 0x720
-+  __TEXT.__unwind_info: 0x718
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x798
-+  __DATA_CONST.__const: 0x7c0
-   __DATA_CONST.__objc_classlist: 0x3b0
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xd80
--  __DATA_CONST.__objc_superrefs: 0x160
-+  __DATA_CONST.__objc_selrefs: 0xd88
-+  __DATA_CONST.__objc_superrefs: 0x158
-   __DATA_CONST.__objc_arraydata: 0x10
-   __DATA_CONST.__got: 0x240
-   __AUTH_CONST.__const: 0x540
--  __AUTH_CONST.__cfstring: 0x48a0
-+  __AUTH_CONST.__cfstring: 0x4880
-   __AUTH_CONST.__objc_const: 0x42e0
-   __AUTH_CONST.__objc_intobj: 0x30
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x140
-+  __AUTH.__objc_data: 0x1e0
-   __DATA.__objc_ivar: 0x4
-   __DATA.__bss: 0x9
--  __DATA_DIRTY.__objc_data: 0x23a0
-+  __DATA_DIRTY.__objc_data: 0x2300
-   __DATA_DIRTY.__common: 0x8
-   __DATA_DIRTY.__bss: 0x18
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 539
--  Symbols:   1721
+-  Symbols:   1391
 -  CStrings:  623
 +  Functions: 540
-+  Symbols:   1725
++  Symbols:   1394
 +  CStrings:  622
- 
 Symbols:
 + +[FilterCriteriaContainerViewAccessibility _accessibilityPerformValidations:]
 + +[FilterCriteriaContainerViewAccessibility(SafeCategory) safeCategoryBaseClass]
@@ -104,7 +73,6 @@ Symbols:
 + ___86-[DockContainerViewControllerAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_2
 + ___block_descriptor_48_e8_32s40w_e5_v8?0lw40l8s32l8
 + _dispatch_async
-+ _objc_msgSend$presentedViewController
 - +[CategorizationOptionViewAccessibility _accessibilityPerformValidations:]
 - +[CategorizationOptionViewAccessibility(SafeCategory) safeCategoryBaseClass]
 - +[CategorizationOptionViewAccessibility(SafeCategory) safeCategoryTargetClassName]

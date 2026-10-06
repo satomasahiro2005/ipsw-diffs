@@ -2,61 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/SiriCalendar.framework/SiriCalendar`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1bd00` | `0x1c210` | **`+0x510`** |
+| `__DATA.__bss` | `0x7700` | `0x7980` | **`+0x280`** |
+| `__TEXT.__const` | `0x4aa0` | `0x4be0` | **`+0x140`** |
+| `__AUTH_CONST.__const` | `0x1df8` | `0x1e88` | **`+0x90`** |
+| `__TEXT.__cstring` | `0x2b7` | `0x2f7` | **`+0x40`** |
+| `__TEXT.__swift5_fieldmd` | `0xd58` | `0xd98` | **`+0x40`** |
+| `__TEXT.__swift5_typeref` | `0xef0` | `0xf2a` | **`+0x3a`** |
+| `__DATA.__data` | `0x9c8` | `0x9f8` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0xca8` | `0xcd0` | **`+0x28`** |
+| `__TEXT.__constg_swiftt` | `0xaa8` | `0xacc` | **`+0x24`** |
+| `__AUTH_CONST.__auth_got` | `0x298` | `0x2b0` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0x4c4` | `0x4d8` | **`+0x14`** |
+| `__TEXT.__swift5_reflstr` | `0x47b` | `0x48b` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x134` | `0x138` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3600.18.5.0.0
--  __TEXT.__text: 0x1bd00
--  __TEXT.__const: 0x4aa0
--  __TEXT.__cstring: 0x2b7
--  __TEXT.__swift5_typeref: 0xef0
--  __TEXT.__constg_swiftt: 0xaa8
--  __TEXT.__swift5_reflstr: 0x47b
--  __TEXT.__swift5_fieldmd: 0xd58
 +3600.18.9.1.1
-+  __TEXT.__text: 0x1c210
-+  __TEXT.__const: 0x4be0
-+  __TEXT.__cstring: 0x2f7
-+  __TEXT.__swift5_typeref: 0xf2a
-+  __TEXT.__constg_swiftt: 0xacc
-+  __TEXT.__swift5_reflstr: 0x48b
-+  __TEXT.__swift5_fieldmd: 0xd98
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_assocty: 0x90
--  __TEXT.__swift5_proto: 0x4c4
--  __TEXT.__swift5_types: 0x134
--  __TEXT.__unwind_info: 0xca8
-+  __TEXT.__swift5_proto: 0x4d8
-+  __TEXT.__swift5_types: 0x138
-+  __TEXT.__unwind_info: 0xcd0
-   __TEXT.__eh_frame: 0x948
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x18
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1df8
--  __AUTH_CONST.__auth_got: 0x298
--  __DATA.__data: 0x9c8
--  __DATA.__bss: 0x7700
-+  __AUTH_CONST.__const: 0x1e88
-+  __AUTH_CONST.__auth_got: 0x2b0
-+  __DATA.__data: 0x9f8
-+  __DATA.__bss: 0x7980
-   __DATA_DIRTY.__data: 0x7b0
-   __DATA_DIRTY.__bss: 0x2180
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1456
--  Symbols:   576
+-  Symbols:   573
 -  CStrings:  21
 +  Functions: 1473
-+  Symbols:   584
++  Symbols:   581
 +  CStrings:  23
- 
 Symbols:
 + _associated conformance 12SiriCalendar7SnippetO23ConfirmUpdateCodingKeys33_B0E3F0A2B4D463E65556E088D4D3B38CLLOSHAASQ
 + _associated conformance 12SiriCalendar7SnippetO23ConfirmUpdateCodingKeys33_B0E3F0A2B4D463E65556E088D4D3B38CLLOs0F3KeyAAs23CustomStringConvertible

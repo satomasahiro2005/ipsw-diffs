@@ -2,78 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/SiriInferenceLearning.framework/SiriInferenceLearning`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2f8b58` | `0x2fcf28` | **`+0x43d0`** |
+| `__AUTH_CONST.__const` | `0xa930` | `0xac38` | **`+0x308`** |
+| `__TEXT.__const` | `0x5e8d0` | `0x5eba8` | **`+0x2d8`** |
+| `__TEXT.__oslogstring` | `0x2aac` | `0x2c37` | **`+0x18b`** |
+| `__AUTH.__data` | `0x1988` | `0x1ab8` | **`+0x130`** |
+| `__TEXT.__swift5_capture` | `0x9c0` | `0xae0` | **`+0x120`** |
+| `__TEXT.__eh_frame` | `0x27a08` | `0x27908` | **`-0x100`** |
+| `__AUTH_CONST.__objc_const` | `0x2450` | `0x2548` | **`+0xf8`** |
+| `__DATA.__bss` | `0x86210` | `0x86308` | **`+0xf8`** |
+| `__TEXT.__unwind_info` | `0x11698` | `0x11708` | **`+0x70`** |
+| `__TEXT.__constg_swiftt` | `0xb110` | `0xb17c` | **`+0x6c`** |
+| `__TEXT.__swift5_fieldmd` | `0xed0c` | `0xed68` | **`+0x5c`** |
+| `__DATA.__data` | `0xa878` | `0xa8b0` | **`+0x38`** |
+| `__TEXT.__swift5_typeref` | `0xbe52` | `0xbe7f` | **`+0x2d`** |
+| `__TEXT.__swift5_reflstr` | `0xace7` | `0xad0e` | **`+0x27`** |
+| `__TEXT.__cstring` | `0x6c29` | `0x6c39` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0xf0` | `0xf8` | **`+0x8`** |
+| `__DATA_DIRTY.__data` | `0x21520` | `0x21518` | **`-0x8`** |
+| `__TEXT.__swift5_proto` | `0x4ce0` | `0x4ce8` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x1018` | `0x1020` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.34.21.0.0
--  __TEXT.__text: 0x2e73f4
--  __TEXT.__const: 0x5e8d0
--  __TEXT.__constg_swiftt: 0xb110
--  __TEXT.__swift5_typeref: 0xbe52
--  __TEXT.__swift5_reflstr: 0xace7
--  __TEXT.__swift5_fieldmd: 0xed0c
 +3605.12.1.0.0
-+  __TEXT.__text: 0x2eb4f8
-+  __TEXT.__const: 0x5eba8
-+  __TEXT.__swift5_typeref: 0xbe7f
-+  __TEXT.__cstring: 0x6c39
-+  __TEXT.__swift5_reflstr: 0xad0e
-   __TEXT.__swift5_assocty: 0xff0
--  __TEXT.__cstring: 0x6c29
--  __TEXT.__oslogstring: 0x2aac
-+  __TEXT.__constg_swiftt: 0xb17c
-+  __TEXT.__swift5_fieldmd: 0xed68
-   __TEXT.__swift5_builtin: 0xc8
-   __TEXT.__swift5_mpenum: 0x70
--  __TEXT.__swift5_proto: 0x4ce0
--  __TEXT.__swift5_types: 0x1018
--  __TEXT.__swift5_capture: 0x9c0
-+  __TEXT.__oslogstring: 0x2c37
-+  __TEXT.__swift5_proto: 0x4ce8
-+  __TEXT.__swift5_types: 0x1020
-+  __TEXT.__swift5_capture: 0xae0
-   __TEXT.__swift5_protos: 0x20
--  __TEXT.__unwind_info: 0x151f8
--  __TEXT.__eh_frame: 0x27a08
-+  __TEXT.__unwind_info: 0x152e8
-+  __TEXT.__eh_frame: 0x27908
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xc0
--  __DATA_CONST.__objc_classlist: 0xf0
-+  __DATA_CONST.__objc_classlist: 0xf8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x190
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xa930
--  __AUTH_CONST.__objc_const: 0x2450
-+  __AUTH_CONST.__const: 0xac38
-+  __AUTH_CONST.__objc_const: 0x2548
-   __AUTH_CONST.__auth_got: 0xcb8
--  __AUTH.__data: 0x1988
--  __DATA.__data: 0xa878
-+  __AUTH.__data: 0x1ab8
-+  __DATA.__data: 0xa8b0
-   __DATA.__common: 0x4738
-   __DATA_DIRTY.__objc_data: 0x6e0
--  __DATA_DIRTY.__data: 0x21520
-+  __DATA_DIRTY.__data: 0x21518
-   __DATA_DIRTY.__bss: 0x13500
-   __DATA_DIRTY.__common: 0x30
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 25164
--  Symbols:   7073
+-  Symbols:   7023
 -  CStrings:  830
 +  Functions: 25296
-+  Symbols:   7035
++  Symbols:   6985
 +  CStrings:  835
- 
 Symbols:
 + __DATA__TtC21SiriInferenceLearning23LiveTranscriptIngestion
 + __IVARS__TtC21SiriInferenceLearning23LiveTranscriptIngestion

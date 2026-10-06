@@ -2,13 +2,8 @@
 
 > `com.apple.driver.ApplePIODMA`
 
-```diff
+### Section Size Changes
 
- 764.0.0.0.0
-   __TEXT.__cstring: 0x9fa
--  __TEXT_EXEC.__text: 0x42c4
-+  __TEXT_EXEC.__text: 0x4378
-   __TEXT_EXEC.__auth_stubs: 0x230
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x88
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x42c4` | `0x4378` | **`+0xb4`** |

@@ -2,15 +2,18 @@
 
 > `/System/Library/Frameworks/JournalingSuggestions.framework/JournalingSuggestions`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6267c` | `0x62658` | **`-0x24`** |
+
+### Other Changes
+
 ```diff
 
 -416.0.0.0.0
--  __TEXT.__text: 0x6267c
 +417.0.0.0.0
-+  __TEXT.__text: 0x62658
-   __TEXT.__objc_methlist: 0x27c
-   __TEXT.__const: 0x3960
-   __TEXT.__swift5_typeref: 0x21b2
 Functions:
 ~ _$s21JournalingSuggestions24SuggestionSheetUIManagerC24getClientPlatformVersion33_2809B6256945CDF43DF9E9436E3E5BB3LLAA0hI0VSgyFZTf4d_n : 1936 -> 1928
 ~ _$ss17FixedWidthIntegerPsEyxSgSScfCSi_Tt1g5 : 796 -> 784

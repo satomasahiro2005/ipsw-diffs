@@ -2,92 +2,40 @@
 
 > `/System/Library/Frameworks/MapKit.framework/MapKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x28fee8` | `0x290f18` | **`+0x1030`** |
+| `__AUTH_CONST.__cfstring` | `0x1bb80` | `0x1bca0` | **`+0x120`** |
+| `__TEXT.__oslogstring` | `0x7ddf` | `0x7ea8` | **`+0xc9`** |
+| `__TEXT.__cstring` | `0x17b16` | `0x17bd5` | **`+0xbf`** |
+| `__AUTH_CONST.__objc_const` | `0x45e08` | `0x45eb8` | **`+0xb0`** |
+| `__TEXT.__objc_methlist` | `0x26b94` | `0x26c44` | **`+0xb0`** |
+| `__DATA_CONST.__const` | `0x7c88` | `0x7cd8` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x14b20` | `0x14b70` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x61c0` | `0x6204` | **`+0x44`** |
+| `__TEXT.__unwind_info` | `0xa7e8` | `0xa818` | **`+0x30`** |
+| `__TEXT.__const` | `0x6910` | `0x6920` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x2088` | `0x2090` | **`+0x8`** |
+| `__DATA.__data` | `0x5600` | `0x5608` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x3230` | `0x3238` | **`+0x8`** |
+| `__TEXT.__eh_frame` | `0x241c` | `0x2424` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0x15f4` | `0x15fc` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2552.30.6.12.12
--  __TEXT.__text: 0x26af38
--  __TEXT.__objc_methlist: 0x26b94
--  __TEXT.__const: 0x6910
 +2552.31.6.17.8
-+  __TEXT.__text: 0x26bd1c
-+  __TEXT.__objc_methlist: 0x26c44
-+  __TEXT.__const: 0x6920
-   __TEXT.__dlopen_cstrs: 0xbc
--  __TEXT.__cstring: 0x17b16
--  __TEXT.__swift5_typeref: 0x15f4
-+  __TEXT.__cstring: 0x17bd5
-+  __TEXT.__swift5_typeref: 0x15fc
-   __TEXT.__swift5_reflstr: 0x1460
-   __TEXT.__swift5_assocty: 0x1e8
-   __TEXT.__swift5_fieldmd: 0x2124
 
-   __TEXT.__swift5_protos: 0x70
-   __TEXT.__swift5_proto: 0x208
-   __TEXT.__swift5_types: 0x2d0
--  __TEXT.__oslogstring: 0x7ddf
-+  __TEXT.__oslogstring: 0x7ea8
-   __TEXT.__swift5_capture: 0x3a4
-   __TEXT.__swift_as_entry: 0x13c
-   __TEXT.__swift_as_ret: 0x134
-   __TEXT.__swift_as_cont: 0x1cc
--  __TEXT.__gcc_except_tab: 0x61c0
-+  __TEXT.__gcc_except_tab: 0x6204
-   __TEXT.__ustring: 0x19c
--  __TEXT.__unwind_info: 0xc498
--  __TEXT.__eh_frame: 0x241c
-+  __TEXT.__unwind_info: 0xc4d0
-+  __TEXT.__eh_frame: 0x2424
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7c88
-+  __DATA_CONST.__const: 0x7cd8
-   __DATA_CONST.__objc_classlist: 0x11f0
-   __DATA_CONST.__objc_catlist: 0x1f8
-   __DATA_CONST.__objc_protolist: 0x660
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x14b20
-+  __DATA_CONST.__objc_selrefs: 0x14b70
-   __DATA_CONST.__objc_protorefs: 0xe8
-   __DATA_CONST.__objc_superrefs: 0xda0
-   __DATA_CONST.__objc_arraydata: 0x6b0
-   __DATA_CONST.__got: 0x2498
-   __AUTH_CONST.__const: 0x6878
--  __AUTH_CONST.__cfstring: 0x1bb80
--  __AUTH_CONST.__objc_const: 0x45e08
-+  __AUTH_CONST.__cfstring: 0x1bca0
-+  __AUTH_CONST.__objc_const: 0x45eb8
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_doubleobj: 0x220
-   __AUTH_CONST.__objc_intobj: 0xf18
-   __AUTH_CONST.__objc_dictobj: 0x1b8
-   __AUTH_CONST.__objc_arrayobj: 0x480
-   __AUTH_CONST.__objc_floatobj: 0x70
--  __AUTH_CONST.__auth_got: 0x2088
-+  __AUTH_CONST.__auth_got: 0x2090
-   __AUTH.__objc_data: 0x8810
-   __AUTH.__data: 0x2d48
--  __DATA.__objc_ivar: 0x3230
--  __DATA.__data: 0x5600
-+  __DATA.__objc_ivar: 0x3238
-+  __DATA.__data: 0x5608
-   __DATA.__common: 0x70
-   __DATA_DIRTY.__objc_data: 0x25f8
-   __DATA_DIRTY.__data: 0x18
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15059
--  Symbols:   33541
+-  Symbols:   25311
 -  CStrings:  4603
 +  Functions: 15074
-+  Symbols:   33571
++  Symbols:   25332
 +  CStrings:  4615
- 
 Symbols:
 + +[MKCompassButton compassButtonWithMapView:backgroundDisabled:]
 + +[_MXExtensionManager(Ridesharing) _maps_migrateRideBookingExtensionsFromLegacyStorageIfNeeded]
@@ -490,18 +438,6 @@ Symbols:
 + ___block_descriptor_64_e8_32s40s48r56r_e5_v8?0ls32l8s40l8r48l8r56l8
 + __findNextOperatingWeekday:timeZone:.oneTimeToken
 + __findNextOperatingWeekday:timeZone:.weekdays
-+ _objc_msgSend$_findNextOperatingWeekday:timeZone:
-+ _objc_msgSend$_invokePendingCompletionHandlersForURLString:withImage:wasCached:completed:error:
-+ _objc_msgSend$_removePendingCompletionHandlersForURLString:
-+ _objc_msgSend$_startDownloadForURL:
-+ _objc_msgSend$arrayForKey:
-+ _objc_msgSend$compassButtonWithMapView:backgroundDisabled:
-+ _objc_msgSend$hasAnimation
-+ _objc_msgSend$initWithFrame:backgroundDisabled:
-+ _objc_msgSend$initWithFrame:mapView:backgroundDisabled:
-+ _objc_msgSend$searchEnrichmentAnonymousSessionId
-+ _objc_msgSend$setSearchEnrichmentAnonymousSessionId:
-+ _objc_msgSend$stringForClosedTillDate:timeZone:
 + _symbolic _____Sg 11GeoServices17DirectionsServiceC22FasterRoutePreferencesV
 - -[_MKAppImageManagerContainer completionHandler]
 - -[_MKAppImageManagerContainer setCompletionHandler:]
@@ -884,9 +820,6 @@ Symbols:
 - ___block_descriptor_64_e8_32s40s48s56bs_e17_v16?0"UIImage"8ls32l8s40l8s48l8s56l8
 - __findNextOperatingWeekday:.oneTimeToken
 - __findNextOperatingWeekday:.weekdays
-- _objc_msgSend$_findNextOperatingWeekday:
-- _objc_msgSend$completionHandler
-- _objc_msgSend$reportDailyUsageCountType:
 CStrings:
 + "DISPLAYED_VISITED_PLACES"
 + "MAP_VIEW_ACTIVATED"

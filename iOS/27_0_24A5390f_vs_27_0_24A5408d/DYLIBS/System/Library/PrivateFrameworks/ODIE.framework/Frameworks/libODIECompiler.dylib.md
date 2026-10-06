@@ -2,19 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/ODIE.framework/Frameworks/libODIECompiler.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0xab8db` | `0xab8e0` | **`+0x5`** |
+
+### Other Changes
+
 ```diff
 
 -3600.79.1.0.0
 +3600.83.2.11.1
-   __TEXT.__text: 0xc653e8
-   __TEXT.__init_offsets: 0x30
-   __TEXT.__const: 0x2a1c
-   __TEXT.__oslogstring: 0x3b
--  __TEXT.__cstring: 0xab8db
-+  __TEXT.__cstring: 0xab8e0
-   __TEXT.__unwind_info: 0x2cf30
-   __TEXT.__eh_frame: 0x128
-   __TEXT.__auth_stubs: 0x0
 CStrings:
 + "3600.83.2.11.1"
 - "3600.79.1"

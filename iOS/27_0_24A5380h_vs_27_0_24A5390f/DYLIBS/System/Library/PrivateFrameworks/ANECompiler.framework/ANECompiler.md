@@ -2,74 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/ANECompiler.framework/ANECompiler`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__weak_auth_got`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1cc0cc0` | `0x1ce599c` | **`+0x24cdc`** |
+| `__TEXT.__const` | `0xc91ee` | `0xc573e` | **`-0x3ab0`** |
+| `__TEXT.__cstring` | `0x125409` | `0x128e2a` | **`+0x3a21`** |
+| `__TEXT.__gcc_except_tab` | `0xd8f90` | `0xdb678` | **`+0x26e8`** |
+| `__TEXT.__unwind_info` | `0x69ba0` | `0x6add0` | **`+0x1230`** |
+| `__AUTH_CONST.__const` | `0xb2900` | `0xb3a48` | **`+0x1148`** |
+| `__DATA.__bss` | `0x13f20` | `0x12ff8` | **`-0xf28`** |
+| `__TEXT.__oslogstring` | `0x2006a` | `0x202e8` | **`+0x27e`** |
+| `__DATA.__data` | `0xc7c8` | `0xc9f8` | **`+0x230`** |
+| `__AUTH_CONST.__cfstring` | `0x9da0` | `0x9fc0` | **`+0x220`** |
+| `__DATA_DIRTY.__bss` | `0x2138` | `0x20b8` | **`-0x80`** |
+| `__AUTH.__data` | `0x6690` | `0x66f0` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x5b40` | `0x5ba0` | **`+0x60`** |
+| `__AUTH.__thread_vars` | `0x198` | `0x1c8` | **`+0x30`** |
+| `__DATA.__common` | `0x2b60` | `0x2b80` | **`+0x20`** |
+| `__AUTH.__thread_bss` | `0x1b8` | `0x1d0` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x1228` | `0x1240` | **`+0x18`** |
+
+### Other Changes
 
 ```diff
 
 -10.23.3.0.0
--  __TEXT.__text: 0x1cc0cc0
 +10.24.3.0.0
-+  __TEXT.__text: 0x1ce599c
-   __TEXT.__init_offsets: 0x8
--  __TEXT.__const: 0xc91ee
--  __TEXT.__cstring: 0x125409
--  __TEXT.__oslogstring: 0x2006a
--  __TEXT.__gcc_except_tab: 0xd8f90
--  __TEXT.__unwind_info: 0x69ba0
-+  __TEXT.__const: 0xc573e
-+  __TEXT.__cstring: 0x128e2a
-+  __TEXT.__oslogstring: 0x202e8
-+  __TEXT.__gcc_except_tab: 0xdb678
-+  __TEXT.__unwind_info: 0x6add0
-   __TEXT.__eh_frame: 0x2bdc
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x5b40
-+  __DATA_CONST.__const: 0x5ba0
-   __DATA_CONST.__weak_got: 0x18
-   __DATA_CONST.__got: 0x1f0
--  __AUTH_CONST.__const: 0xb2900
--  __AUTH_CONST.__cfstring: 0x9da0
-+  __AUTH_CONST.__const: 0xb3a48
-+  __AUTH_CONST.__cfstring: 0x9fc0
-   __AUTH_CONST.__weak_auth_got: 0x50
--  __AUTH_CONST.__auth_got: 0x1228
--  __AUTH.__data: 0x6690
--  __AUTH.__thread_vars: 0x198
-+  __AUTH_CONST.__auth_got: 0x1240
-+  __AUTH.__data: 0x66f0
-+  __AUTH.__thread_vars: 0x1c8
-   __AUTH.__thread_data: 0x1
--  __AUTH.__thread_bss: 0x1b8
--  __DATA.__data: 0xc7c8
-+  __AUTH.__thread_bss: 0x1d0
-+  __DATA.__data: 0xc9f8
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x13f20
--  __DATA.__common: 0x2b60
-+  __DATA.__bss: 0x12ff8
-+  __DATA.__common: 0x2b80
-   __DATA_DIRTY.__data: 0x80
--  __DATA_DIRTY.__bss: 0x2138
-+  __DATA_DIRTY.__bss: 0x20b8
-   __DATA_DIRTY.__common: 0x58
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libncurses.5.4.dylib
 -  Functions: 123318
 -  Symbols:   162092
 -  CStrings:  27751
 +  Functions: 124805
 +  Symbols:   163650
 +  CStrings:  28030
- 
 Symbols:
 + GCC_except_table1104
 + GCC_except_table1120

@@ -2,105 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/TextComposerRuntime.framework/TextComposerRuntime`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6fc94` | `0x726ec` | **`+0x2a58`** |
+| `__DATA.__bss` | `0x4500` | `0x3f80` | **`-0x580`** |
+| `__DATA_DIRTY.__bss` | `0x480` | `0xa00` | **`+0x580`** |
+| `__DATA_DIRTY.__data` | `0x540` | `0xa18` | **`+0x4d8`** |
+| `__AUTH.__data` | `0x8b0` | `0x5f0` | **`-0x2c0`** |
+| `__AUTH_CONST.__const` | `0x39a0` | `0x3c20` | **`+0x280`** |
+| `__DATA.__data` | `0xc80` | `0xa78` | **`-0x208`** |
+| `__TEXT.__oslogstring` | `0x2593` | `0x26b3` | **`+0x120`** |
+| `__TEXT.__swift5_capture` | `0xd04` | `0xdf4` | **`+0xf0`** |
+| `__TEXT.__cstring` | `0x123f7` | `0x12397` | **`-0x60`** |
+| `__AUTH.__objc_data` | `0x180` | `0x130` | **`-0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x120` | `0x170` | **`+0x50`** |
+| `__TEXT.__swift5_typeref` | `0x17b5` | `0x17fd` | **`+0x48`** |
+| `__AUTH_CONST.__auth_got` | `0x17a0` | `0x17d8` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0x1e00` | `0x1e38` | **`+0x38`** |
+| `__DATA.__common` | `0x78` | `0x48` | **`-0x30`** |
+| `__DATA_DIRTY.__common` | `0x28` | `0x58` | **`+0x30`** |
+| `__TEXT.__const` | `0x3b24` | `0x3b44` | **`+0x20`** |
+| `__TEXT.__eh_frame` | `0x5440` | `0x5460` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x398` | `0x3a0` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x444` | `0x43c` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x6fc94
-+  __TEXT.__text: 0x726ec
-   __TEXT.__objc_methlist: 0x4f8
--  __TEXT.__const: 0x3b24
--  __TEXT.__cstring: 0x123f7
--  __TEXT.__oslogstring: 0x2593
-+  __TEXT.__const: 0x3b44
-+  __TEXT.__cstring: 0x12397
-+  __TEXT.__oslogstring: 0x26b3
-   __TEXT.__constg_swiftt: 0xaa4
--  __TEXT.__swift5_typeref: 0x17b5
-+  __TEXT.__swift5_typeref: 0x17fd
-   __TEXT.__swift5_builtin: 0x64
-   __TEXT.__swift5_reflstr: 0xb62
-   __TEXT.__swift5_fieldmd: 0xf0c
+-211.13.0.0.0
++211.18.0.0.0
 
-   __TEXT.__swift5_types: 0xf4
-   __TEXT.__swift_as_entry: 0x184
-   __TEXT.__swift_as_ret: 0x19c
--  __TEXT.__swift_as_cont: 0x444
-+  __TEXT.__swift_as_cont: 0x43c
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__swift5_capture: 0xd04
--  __TEXT.__unwind_info: 0x1e00
--  __TEXT.__eh_frame: 0x5440
-+  __TEXT.__swift5_capture: 0xdf4
-+  __TEXT.__unwind_info: 0x1e38
-+  __TEXT.__eh_frame: 0x5460
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x398
-+  __DATA_CONST.__objc_selrefs: 0x3a0
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x39a0
-+  __AUTH_CONST.__const: 0x3c20
-   __AUTH_CONST.__objc_const: 0xa90
--  __AUTH_CONST.__auth_got: 0x17a0
--  __AUTH.__objc_data: 0x180
--  __AUTH.__data: 0x8b0
--  __DATA.__data: 0xc80
--  __DATA.__bss: 0x4500
--  __DATA.__common: 0x78
--  __DATA_DIRTY.__objc_data: 0x120
--  __DATA_DIRTY.__data: 0x540
--  __DATA_DIRTY.__bss: 0x480
--  __DATA_DIRTY.__common: 0x28
-+  __AUTH_CONST.__auth_got: 0x17d8
-+  __AUTH.__objc_data: 0x130
-+  __AUTH.__data: 0x5f0
-+  __DATA.__data: 0xa78
-+  __DATA.__bss: 0x3f80
-+  __DATA.__common: 0x48
-+  __DATA_DIRTY.__objc_data: 0x170
-+  __DATA_DIRTY.__data: 0xa18
-+  __DATA_DIRTY.__bss: 0xa00
-+  __DATA_DIRTY.__common: 0x58
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/FoundationModels.framework/FoundationModels
-   - /System/Library/Frameworks/NaturalLanguage.framework/NaturalLanguage
-   - /System/Library/PrivateFrameworks/Archetype.framework/Archetype
 +  - /System/Library/PrivateFrameworks/CoreEmoji.framework/CoreEmoji
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/GenerativeFunctionsInstrumentation.framework/GenerativeFunctionsInstrumentation
-   - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2873
 -  Symbols:   210
--  CStrings:  294
+-  CStrings:  293
 +  Functions: 2933
 +  Symbols:   214
-+  CStrings:  295
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_reflstr : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__objc_const : content changed
++  CStrings:  294
 Symbols:
 + _CEMEnumerateEmojiTokensInStringWithBlock
 + _CEMStringContainsEmoji
@@ -112,5 +54,4 @@ CStrings:
 + "[RewriteSessionManager] Failed to mark follow-ups as seen at index %ld since no follow-ups were generated"
 - " since no follow-ups were generated"
 - "Failed to mark follow-ups as seen at index "
-
 ```

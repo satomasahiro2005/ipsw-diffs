@@ -2,27 +2,16 @@
 
 > `/usr/lib/libskit.dylib`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x239a4
-+  __TEXT.__text: 0x235e0
-   __TEXT.__const: 0xc31
-   __TEXT.__gcc_except_tab: 0xd68
-   __TEXT.__oslogstring: 0x21d5
-   __TEXT.__cstring: 0x215
-   __TEXT.__ustring: 0x398
--  __TEXT.__unwind_info: 0x8f8
-+  __TEXT.__unwind_info: 0x8e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x239a4` | `0x235e0` | **`-0x3c4`** |
+| `__TEXT.__unwind_info` | `0x8f8` | `0x8e8` | **`-0x10`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN4skit10strip_bidiEPDsmb : 208 -> 172
 ~ __ZN4skit11SmallVectorINS_10AliasMatchELj2ELb1EE13_reserve_moreEj : 360 -> 344
@@ -55,5 +44,4 @@ Functions:
 ~ __ZN4skit8internal14MergeStateImplINS0_20MergedFieldMatchImplINS0_14FieldMatchImplINS0_16FieldMatchesImplINS_11SpanMatchV3EEEEEEEE5clearEv : 136 -> 128
 ~ __ZNKSt3__117basic_string_viewIDsNS_11char_traitsIDsEEE4findB9fqe220106ES3_m : 192 -> 176
 ~ _skitRemoveBidiCharacters : 708 -> 680
-
 ```

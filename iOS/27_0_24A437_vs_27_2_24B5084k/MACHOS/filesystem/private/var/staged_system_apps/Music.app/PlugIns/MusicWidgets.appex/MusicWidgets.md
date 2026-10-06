@@ -2,122 +2,71 @@
 
 > `/private/var/staged_system_apps/Music.app/PlugIns/MusicWidgets.appex/MusicWidgets`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__swift5_mpenum`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x59d4ac` | `0x58b4c4` | **`-0x11fe8`** |
+| `__TEXT.__cstring` | `0xecc4` | `0xceb4` | **`-0x1e10`** |
+| `__TEXT.__eh_frame` | `0x19f04` | `0x1969c` | **`-0x868`** |
+| `__TEXT.__unwind_info` | `0x12800` | `0x125e8` | **`-0x218`** |
+| `__DATA.__data` | `0x1c4b8` | `0x1c2b8` | **`-0x200`** |
+| `__TEXT.__swift5_capture` | `0x9420` | `0x9608` | **`+0x1e8`** |
+| `__TEXT.__swift5_typeref` | `0x2c16a` | `0x2c322` | **`+0x1b8`** |
+| `__TEXT.__auth_stubs` | `0xa8e0` | `0xaa50` | **`+0x170`** |
+| `__DATA_CONST.__const` | `0x33858` | `0x339b0` | **`+0x158`** |
+| `__TEXT.__constg_swiftt` | `0x12a84` | `0x1293c` | **`-0x148`** |
+| `__DATA.__bss` | `0x2fd90` | `0x2fc90` | **`-0x100`** |
+| `__TEXT.__swift_as_cont` | `0x1440` | `0x1358` | **`-0xe8`** |
+| `__TEXT.__oslogstring` | `0xa0c8` | `0x9fe8` | **`-0xe0`** |
+| `__DATA.__objc_const` | `0x16758` | `0x16820` | **`+0xc8`** |
+| `__DATA_CONST.__auth_got` | `0x5478` | `0x5530` | **`+0xb8`** |
+| `__TEXT.__swift_as_ret` | `0xac4` | `0xa24` | **`-0xa0`** |
+| `__DATA_CONST.__got` | `0x3a78` | `0x3b08` | **`+0x90`** |
+| `__TEXT.__const` | `0x30980` | `0x308f0` | **`-0x90`** |
+| `__DATA.__common` | `0x4860` | `0x4808` | **`-0x58`** |
+| `__TEXT.__swift5_fieldmd` | `0xf15c` | `0xf124` | **`-0x38`** |
+| `__TEXT.__objc_methname` | `0x110c5` | `0x110f5` | **`+0x30`** |
+| `__TEXT.__swift5_reflstr` | `0xd4e2` | `0xd4b2` | **`-0x30`** |
+| `__TEXT.__swift_as_entry` | `0xaa4` | `0xa7c` | **`-0x28`** |
+| `__TEXT.__objc_methlist` | `0x3cc4` | `0x3ce4` | **`+0x20`** |
+| `__TEXT.__objc_methtype` | `0x2d28` | `0x2d48` | **`+0x20`** |
+| `__DATA.__objc_selrefs` | `0x3fa0` | `0x3fb8` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x2e38` | `0x2e20` | **`-0x18`** |
+| `__DATA_CONST.__auth_ptr` | `0x4f00` | `0x4ef0` | **`-0x10`** |
+| `__DATA.__objc_data` | `0x82b0` | `0x82a8` | **`-0x8`** |
+| `__TEXT.__swift5_proto` | `0x1c00` | `0x1bf8` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0x1140` | `0x1138` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_stublist`
 - `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_doubleobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_doubleobj`
-- `__DATA.__objc_stublist`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_protos`
+
+### Other Changes
 
 ```diff
 
 -4026.110.1.0.0
--  __TEXT.__text: 0x56bae0
--  __TEXT.__auth_stubs: 0xa8e0
 +4026.210.13.1.0
-+  __TEXT.__text: 0x55a894
-+  __TEXT.__auth_stubs: 0xaa50
-   __TEXT.__objc_stubs: 0xcee0
--  __TEXT.__objc_methlist: 0x3cc4
--  __TEXT.__const: 0x30980
--  __TEXT.__swift5_typeref: 0x2c16a
-+  __TEXT.__objc_methlist: 0x3ce4
-+  __TEXT.__const: 0x308f0
-+  __TEXT.__swift5_typeref: 0x2c322
-   __TEXT.__objc_classname: 0x2d3f
--  __TEXT.__constg_swiftt: 0x12a84
--  __TEXT.__swift5_reflstr: 0xd4e2
--  __TEXT.__swift5_fieldmd: 0xf15c
--  __TEXT.__oslogstring: 0xa0c8
--  __TEXT.__swift5_capture: 0x9420
--  __TEXT.__cstring: 0xecc4
-+  __TEXT.__constg_swiftt: 0x1293c
-+  __TEXT.__swift5_reflstr: 0xd4b2
-+  __TEXT.__swift5_fieldmd: 0xf124
-+  __TEXT.__oslogstring: 0x9fe8
-+  __TEXT.__swift5_capture: 0x9608
-+  __TEXT.__cstring: 0xceb4
-   __TEXT.__swift5_builtin: 0xb2c
--  __TEXT.__swift5_assocty: 0x2e38
--  __TEXT.__swift5_proto: 0x1c00
--  __TEXT.__swift5_types: 0x1140
--  __TEXT.__swift_as_entry: 0xaa4
--  __TEXT.__swift_as_ret: 0xac4
--  __TEXT.__swift_as_cont: 0x1440
--  __TEXT.__objc_methname: 0x110c5
--  __TEXT.__objc_methtype: 0x2d28
-+  __TEXT.__swift5_assocty: 0x2e20
-+  __TEXT.__swift5_proto: 0x1bf8
-+  __TEXT.__swift5_types: 0x1138
-+  __TEXT.__swift_as_entry: 0xa7c
-+  __TEXT.__swift_as_ret: 0xa24
-+  __TEXT.__swift_as_cont: 0x1358
-+  __TEXT.__objc_methname: 0x110f5
-+  __TEXT.__objc_methtype: 0x2d48
-   __TEXT.__swift5_protos: 0x134
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__swift5_mpenum: 0x1b8
-   __TEXT.__ustring: 0xec
--  __TEXT.__unwind_info: 0x165b8
--  __TEXT.__eh_frame: 0x19f34
--  __DATA_CONST.__const: 0x33858
-+  __TEXT.__unwind_info: 0x16360
-+  __TEXT.__eh_frame: 0x196d4
-+  __DATA_CONST.__const: 0x339b0
-   __DATA_CONST.__cfstring: 0x200
-   __DATA_CONST.__objc_classlist: 0x540
-   __DATA_CONST.__objc_catlist: 0xd0
 
-   __DATA_CONST.__objc_protorefs: 0x1d0
-   __DATA_CONST.__objc_superrefs: 0x20
-   __DATA_CONST.__objc_doubleobj: 0x20
--  __DATA_CONST.__auth_got: 0x5478
--  __DATA_CONST.__got: 0x3a78
--  __DATA_CONST.__auth_ptr: 0x4f00
--  __DATA.__objc_const: 0x16758
--  __DATA.__objc_selrefs: 0x3fa0
-+  __DATA_CONST.__auth_got: 0x5530
-+  __DATA_CONST.__got: 0x3b08
-+  __DATA_CONST.__auth_ptr: 0x4ef0
-+  __DATA.__objc_const: 0x16820
-+  __DATA.__objc_selrefs: 0x3fb8
-   __DATA.__objc_ivar: 0x5c
--  __DATA.__objc_data: 0x82b0
--  __DATA.__data: 0x1c4b8
-+  __DATA.__objc_data: 0x82a8
-+  __DATA.__data: 0x1c2b8
-   __DATA.__objc_stublist: 0x18
--  __DATA.__common: 0x4860
-+  __DATA.__common: 0x4808
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/BackgroundTasks.framework/BackgroundTasks
-
-   - /System/Library/PrivateFrameworks/AppleMediaServices.framework/AppleMediaServices
-   - /System/Library/PrivateFrameworks/AppleMediaServicesUI.framework/AppleMediaServicesUI
-   - /System/Library/PrivateFrameworks/ApplePushService.framework/ApplePushService
 -  - /System/Library/PrivateFrameworks/AsyncAlgorithmsInternal.framework/AsyncAlgorithmsInternal
-   - /System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/CoreBrightness.framework/CoreBrightness
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 26126
 +  Functions: 25998
-   Symbols:   1155
+
 -  CStrings:  5528
 +  CStrings:  5446
- 
 CStrings:
 + "@\"NSArray\"16@0:8"
 + "Dynamic Color Trait: Unhandled combination of `UIUserInterfaceStyle` and `UIAccessibilityContrast`"

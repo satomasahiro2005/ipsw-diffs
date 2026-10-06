@@ -2,106 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/CoreHAP.framework/CoreHAP`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2add7c` | `0x2b4d2c` | **`+0x6fb0`** |
+| `__TEXT.__oslogstring` | `0x4514e` | `0x46185` | **`+0x1037`** |
+| `__AUTH_CONST.__objc_const` | `0x2b2c0` | `0x2bf98` | **`+0xcd8`** |
+| `__TEXT.__objc_methlist` | `0x18cc0` | `0x19408` | **`+0x748`** |
+| `__TEXT.__cstring` | `0x146d5` | `0x14aed` | **`+0x418`** |
+| `__AUTH.__objc_data` | `0x73b8` | `0x76a8` | **`+0x2f0`** |
+| `__AUTH_CONST.__cfstring` | `0x10080` | `0x10320` | **`+0x2a0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8358` | `0x8568` | **`+0x210`** |
+| `__DATA.__bss` | `0xee0` | `0x10b0` | **`+0x1d0`** |
+| `__TEXT.__const` | `0x1240` | `0x13b0` | **`+0x170`** |
+| `__TEXT.__unwind_info` | `0x77d0` | `0x78f8` | **`+0x128`** |
+| `__TEXT.__swift5_reflstr` | `0x474` | `0x581` | **`+0x10d`** |
+| `__TEXT.__constg_swiftt` | `0x960` | `0xa64` | **`+0x104`** |
+| `__DATA_CONST.__const` | `0x59e8` | `0x5920` | **`-0xc8`** |
+| `__AUTH_CONST.__const` | `0x14b8` | `0x1568` | **`+0xb0`** |
+| `__DATA.__data` | `0x2da2` | `0x2e52` | **`+0xb0`** |
+| `__TEXT.__swift5_fieldmd` | `0x3f0` | `0x49c` | **`+0xac`** |
+| `__DATA.__objc_ivar` | `0x1924` | `0x19a4` | **`+0x80`** |
+| `__AUTH_CONST.__auth_got` | `0x1340` | `0x13a0` | **`+0x60`** |
+| `__TEXT.__swift5_typeref` | `0x3e4` | `0x437` | **`+0x53`** |
+| `__DATA_CONST.__got` | `0x1030` | `0x1080` | **`+0x50`** |
+| `__DATA_CONST.__objc_classlist` | `0xc20` | `0xc50` | **`+0x30`** |
+| `__DATA_CONST.__objc_superrefs` | `0xa68` | `0xa98` | **`+0x30`** |
+| `__DATA_DIRTY.__bss` | `0xa8` | `0x78` | **`-0x30`** |
+| `__TEXT.__swift5_assocty` | `0xc0` | `0xd8` | **`+0x18`** |
+| `__TEXT.__gcc_except_tab` | `0x5eb8` | `0x5ea8` | **`-0x10`** |
+| `__TEXT.__swift5_proto` | `0x50` | `0x5c` | **`+0xc`** |
+| `__AUTH_CONST.__weak_auth_got` | `—` | `0x8` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x3b0` | `0x3b8` | **`+0x8`** |
+| `__TEXT.__swift5_capture` | `0x288` | `0x28c` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0x30` | `0x34` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1493.1.5.1.1
--  __TEXT.__text: 0x2a408c
--  __TEXT.__objc_methlist: 0x18cc0
--  __TEXT.__const: 0x1240
 +1514.0.0.0.1
-+  __TEXT.__text: 0x2aad04
-+  __TEXT.__objc_methlist: 0x19408
-+  __TEXT.__const: 0x13b0
-   __TEXT.__dlopen_cstrs: 0x4e
--  __TEXT.__constg_swiftt: 0x960
--  __TEXT.__swift5_typeref: 0x3e4
-+  __TEXT.__constg_swiftt: 0xa64
-+  __TEXT.__swift5_typeref: 0x437
-   __TEXT.__swift5_builtin: 0x50
--  __TEXT.__swift5_reflstr: 0x474
--  __TEXT.__swift5_fieldmd: 0x3f0
--  __TEXT.__swift5_assocty: 0xc0
--  __TEXT.__swift5_proto: 0x50
--  __TEXT.__swift5_types: 0x30
--  __TEXT.__cstring: 0x146d5
--  __TEXT.__oslogstring: 0x4514e
--  __TEXT.__swift5_capture: 0x288
--  __TEXT.__gcc_except_tab: 0x5eb8
--  __TEXT.__unwind_info: 0x8b20
-+  __TEXT.__swift5_reflstr: 0x581
-+  __TEXT.__swift5_fieldmd: 0x49c
-+  __TEXT.__swift5_assocty: 0xd8
-+  __TEXT.__swift5_proto: 0x5c
-+  __TEXT.__swift5_types: 0x34
-+  __TEXT.__cstring: 0x14aed
-+  __TEXT.__oslogstring: 0x46185
-+  __TEXT.__swift5_capture: 0x28c
-+  __TEXT.__gcc_except_tab: 0x5ea8
-+  __TEXT.__unwind_info: 0x8ca0
-   __TEXT.__eh_frame: 0x1080
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x59e8
--  __DATA_CONST.__objc_classlist: 0xc20
-+  __DATA_CONST.__const: 0x5920
-+  __DATA_CONST.__objc_classlist: 0xc50
-   __DATA_CONST.__objc_catlist: 0x30
--  __DATA_CONST.__objc_protolist: 0x3b0
-+  __DATA_CONST.__objc_protolist: 0x3b8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8358
-+  __DATA_CONST.__objc_selrefs: 0x8568
-   __DATA_CONST.__objc_protorefs: 0x100
--  __DATA_CONST.__objc_superrefs: 0xa68
-+  __DATA_CONST.__objc_superrefs: 0xa98
-   __DATA_CONST.__objc_arraydata: 0x200
--  __DATA_CONST.__got: 0x1030
--  __AUTH_CONST.__const: 0x14b8
--  __AUTH_CONST.__cfstring: 0x10080
--  __AUTH_CONST.__objc_const: 0x2b2c0
-+  __DATA_CONST.__got: 0x1080
-+  __AUTH_CONST.__const: 0x1568
-+  __AUTH_CONST.__cfstring: 0x10320
-+  __AUTH_CONST.__objc_const: 0x2bf98
-+  __AUTH_CONST.__weak_auth_got: 0x8
-   __AUTH_CONST.__objc_intobj: 0x738
-   __AUTH_CONST.__objc_floatobj: 0x20
-   __AUTH_CONST.__objc_doubleobj: 0x40
-   __AUTH_CONST.__objc_arrayobj: 0xc0
--  __AUTH_CONST.__auth_got: 0x1340
--  __AUTH.__objc_data: 0x73b8
-+  __AUTH_CONST.__auth_got: 0x13a0
-+  __AUTH.__objc_data: 0x76a8
-   __AUTH.__data: 0xb0
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x28
--  __DATA.__objc_ivar: 0x1924
--  __DATA.__data: 0x2da2
-+  __DATA.__objc_ivar: 0x19a4
-+  __DATA.__data: 0x2e52
-   __DATA.__crash_info: 0x148
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0xfc8
-   __DATA_DIRTY.__data: 0x48
--  __DATA_DIRTY.__bss: 0xa8
-+  __DATA_DIRTY.__bss: 0x78
-   __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9860
--  Symbols:   20221
+-  Symbols:   16522
 -  CStrings:  7181
 +  Functions: 10018
-+  Symbols:   20503
++  Symbols:   16760
 +  CStrings:  7253
- 
 Symbols:
 + +[HAP2ThreadNetworkUtil _eventQueue]
 + +[HAP2ThreadNetworkUtil _fetchMeshLocalPrefixFromXPC]
@@ -896,69 +845,6 @@ Symbols:
 + _logCategory._hmf_once_v867
 + _logCategory._hmf_once_v87
 + _logCategory._hmf_once_v939
-+ _objc_msgSend$ECDSAKeyForAccessoryName:error:
-+ _objc_msgSend$_applyCallerQoSToOperations:
-+ _objc_msgSend$_captureProxPairSetupPhaseTimingsAsOf:pairSetupReachedM6:phaseError:
-+ _objc_msgSend$_didDiscoverAccessory:fromMDNSEvent:completion:
-+ _objc_msgSend$_ecdsaKeyPairSetupRefusalError
-+ _objc_msgSend$_finishTokenAuthOnWorkQueueAsOf:completed:error:
-+ _objc_msgSend$_resetProxPairSetupPhaseOutputs
-+ _objc_msgSend$_setHasDiscoveryAdvertisementLockOnly:
-+ _objc_msgSend$_sharedThreadClient
-+ _objc_msgSend$addConcurrentBlock:qos:
-+ _objc_msgSend$broadcast
-+ _objc_msgSend$cachedAccessoryKeyType
-+ _objc_msgSend$checkPresenceWithError:
-+ _objc_msgSend$closeSessionWithCompletion:
-+ _objc_msgSend$controllerKeyForDeviceId:error:
-+ _objc_msgSend$controllerKeyForECDSAKeyAccessory:error:
-+ _objc_msgSend$disconnectWithCompletion:
-+ _objc_msgSend$finishTokenAuthAsOf:completed:error:
-+ _objc_msgSend$forceSessionExpired
-+ _objc_msgSend$getProperty:output:
-+ _objc_msgSend$getSelfAddress:maxLength:outLength:
-+ _objc_msgSend$initWithSFrameEnabled:SFrameConfiguration:
-+ _objc_msgSend$initWithSessionIdentifier:viewerParticipantID:viewerNegotiationBlob:operation:
-+ _objc_msgSend$isConnectedTagPresent
-+ _objc_msgSend$isKnownToSystemCommissioner
-+ _objc_msgSend$lastKnownAccessoryInfoByServiceKey
-+ _objc_msgSend$localPairingIdentityForDeviceID:error:
-+ _objc_msgSend$localPairingIdentityForPairingDriver:error:
-+ _objc_msgSend$localPairingIdentityForSecureTransport:error:
-+ _objc_msgSend$nfcM4RecvTime
-+ _objc_msgSend$pairSetupM5ToM6Completed
-+ _objc_msgSend$pairingDriver:saveRemoteECDSAPairingKey:forAccessoryIdentifier:error:
-+ _objc_msgSend$pairingDriver:saveRemotePairingIdentity:error:
-+ _objc_msgSend$primary
-+ _objc_msgSend$publicKeyForIdentifier:error:
-+ _objc_msgSend$saveECDSAKey:forAccessoryName:error:
-+ _objc_msgSend$savePublicKey:forIdentifier:error:
-+ _objc_msgSend$secondary
-+ _objc_msgSend$secureTransport:ecdsaLongTermPublicKeyForPeerWithIdentifier:error:
-+ _objc_msgSend$secureTransport:localPairingIdentityForECDSAKeyPairSetupSession:error:
-+ _objc_msgSend$secureTransport:remotePairingIdentityForDeviceID:error:
-+ _objc_msgSend$selfAddress
-+ _objc_msgSend$setCachedAccessoryKeyType:
-+ _objc_msgSend$setNfcM4RecvTime:
-+ _objc_msgSend$setPairSetupLastError:
-+ _objc_msgSend$setPairSetupM1ToM4Completed:
-+ _objc_msgSend$setPairSetupM1ToM4DurationMS:
-+ _objc_msgSend$setPairSetupM1ToM4Error:
-+ _objc_msgSend$setPairSetupM5ToM6Completed:
-+ _objc_msgSend$setPairSetupM5ToM6DurationMS:
-+ _objc_msgSend$setPairSetupM5ToM6Error:
-+ _objc_msgSend$setPairSetupWorkDurationMS:
-+ _objc_msgSend$setShouldAllowECDSAKeyPairSetup:
-+ _objc_msgSend$setTokenAuthCompleted:
-+ _objc_msgSend$setTokenAuthDurationMS:
-+ _objc_msgSend$setTokenAuthEndTime:
-+ _objc_msgSend$setTokenAuthError:
-+ _objc_msgSend$setTokenAuthStartTime:
-+ _objc_msgSend$setupPayloadURLString
-+ _objc_msgSend$shouldAllowECDSAKeyPairSetup
-+ _objc_msgSend$tokenAuthDurationMS
-+ _objc_msgSend$tokenAuthEndTime
-+ _objc_msgSend$tokenAuthStartTime
 + _os_unfair_lock_lock
 + _serviceKeyForBrowseResult
 + _swift_deallocClassInstance
@@ -1536,25 +1422,6 @@ Symbols:
 - _logCategory._hmf_once_v857
 - _logCategory._hmf_once_v892
 - _logCategory._hmf_once_v99
-- _objc_msgSend$_browserFastSetHasDiscoveryAdvertisement:
-- _objc_msgSend$_cancelDiscoveryTimeoutTimer
-- _objc_msgSend$_didDiscoverAccessory:completion:
-- _objc_msgSend$_startDiscoveryTimeoutTimer
-- _objc_msgSend$discoveryTimeoutTimer
-- _objc_msgSend$fetchControllerKeyForECDSAKeyAccessory:completion:
-- _objc_msgSend$fetchKeysForIdentifiers:completion:
-- _objc_msgSend$initWithSFrameEnabled:
-- _objc_msgSend$initWithSessionIdentifier:viewerParticipantID:viewerNegotiationBlob:
-- _objc_msgSend$pairingDriver:didRequestLocalPairingIdentityWithCompletion:
-- _objc_msgSend$pairingDriver:didSaveRemoteECDSAPairingKey:forAccessoryIdentifier:completion:
-- _objc_msgSend$pairingDriver:didSaveRemotePairingIdentity:completion:
-- _objc_msgSend$saveECDSAKey:forAccessoryName:completion:
-- _objc_msgSend$savePublicKey:forAccessoryWithID:completion:
-- _objc_msgSend$secureTransport:needsECDSALongTermPublicKeyForPeerWithIdentifier:completion:
-- _objc_msgSend$secureTransport:needsLocalPairingIdentityForECDSAKeyPairSetupSession:completion:
-- _objc_msgSend$secureTransport:needsLocalPairingIdentityWithCompletion:
-- _objc_msgSend$secureTransport:needsRemotePairingIdentityForDeviceID:completion:
-- _objc_msgSend$setDiscoveryTimeoutTimer:
 CStrings:
 + "%@ Lock-only-set hasDiscoveryAdvertisement=%{public}d"
 + "%@ Not announcing re-established session (readingAttributeDatabase=%@, accessories=%lu)"

@@ -2,106 +2,65 @@
 
 > `/System/Library/PrivateFrameworks/Nodes.framework/Nodes`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x360978` | `0x3e89e4` | **`+0x8806c`** |
+| `__DATA.__bss` | `0x73430` | `0x7b2b0` | **`+0x7e80`** |
+| `__TEXT.__const` | `0x3c830` | `0x42000` | **`+0x57d0`** |
+| `__TEXT.__cstring` | `0x2f148` | `0x33d78` | **`+0x4c30`** |
+| `__DATA_CONST.__const` | `0x24108` | `0x280a8` | **`+0x3fa0`** |
+| `__TEXT.__eh_frame` | `0x17680` | `0x19ab0` | **`+0x2430`** |
+| `__DATA.__data` | `0x118a8` | `0x13798` | **`+0x1ef0`** |
+| `__TEXT.__swift5_fieldmd` | `0x11ed4` | `0x13a64` | **`+0x1b90`** |
+| `__TEXT.__unwind_info` | `0xdb58` | `0xf5d8` | **`+0x1a80`** |
+| `__TEXT.__swift5_reflstr` | `0x929e` | `0xa36e` | **`+0x10d0`** |
+| `__TEXT.__swift5_typeref` | `0x9f6b` | `0xadc3` | **`+0xe58`** |
+| `__TEXT.__constg_swiftt` | `0x7ea8` | `0x8c84` | **`+0xddc`** |
+| `__DATA.__objc_const` | `0x1610` | `0x1e10` | **`+0x800`** |
+| `__TEXT.__auth_stubs` | `0x2290` | `0x27a0` | **`+0x510`** |
+| `__TEXT.__objc_methname` | `0x185a` | `0x1d1f` | **`+0x4c5`** |
+| `__TEXT.__swift5_proto` | `0x39ec` | `0x3e18` | **`+0x42c`** |
+| `__TEXT.__swift_as_cont` | `0x384` | `0x764` | **`+0x3e0`** |
+| `__TEXT.__oslogstring` | `0x541` | `0x8b1` | **`+0x370`** |
+| `__TEXT.__swift5_assocty` | `0x1c08` | `0x1f68` | **`+0x360`** |
+| `__DATA_CONST.__auth_got` | `0x1150` | `0x13d8` | **`+0x288`** |
+| `__DATA_CONST.__auth_ptr` | `0x1668` | `0x1870` | **`+0x208`** |
+| `__TEXT.__objc_stubs` | `0x1ac0` | `0x1c80` | **`+0x1c0`** |
+| `__DATA.__objc_data` | `0x3c0` | `0x570` | **`+0x1b0`** |
+| `__TEXT.__objc_methtype` | `0x6e` | `0x1e1` | **`+0x173`** |
+| `__TEXT.__objc_classname` | `0x292` | `0x402` | **`+0x170`** |
+| `__TEXT.__objc_methlist` | `—` | `0x164` | **`+0x164`** |
+| `__TEXT.__swift5_types` | `0xd7c` | `0xec4` | **`+0x148`** |
+| `__TEXT.__swift5_capture` | `0x578` | `0x6b8` | **`+0x140`** |
+| `__TEXT.__swift_as_ret` | `0x674` | `0x7ac` | **`+0x138`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6b0` | `0x7e0` | **`+0x130`** |
+| `__DATA_CONST.__got` | `0x680` | `0x7a8` | **`+0x128`** |
+| `__TEXT.__swift_as_entry` | `0x654` | `0x758` | **`+0x104`** |
+| `__TEXT.__swift5_builtin` | `0x30c` | `0x35c` | **`+0x50`** |
+| `__DATA_CONST.__objc_classlist` | `0x88` | `0xc0` | **`+0x38`** |
+| `__DATA_CONST.__objc_protolist` | `—` | `0x20` | **`+0x20`** |
+| `__TEXT.__swift5_protos` | `0x4c` | `0x68` | **`+0x1c`** |
+| `__DATA.__common` | `0x90` | `0xa8` | **`+0x18`** |
+| `__TEXT.__swift5_mpenum` | `0xac` | `0xc4` | **`+0x18`** |
+| `__DATA_CONST.__objc_protorefs` | `—` | `0x10` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -26.0.0.0.0
--  __TEXT.__text: 0x346828
--  __TEXT.__auth_stubs: 0x2290
--  __TEXT.__objc_stubs: 0x1ac0
--  __TEXT.__const: 0x3c830
--  __TEXT.__constg_swiftt: 0x7ea8
--  __TEXT.__swift5_typeref: 0x9f6b
--  __TEXT.__swift5_builtin: 0x30c
--  __TEXT.__swift5_reflstr: 0x929e
--  __TEXT.__swift5_fieldmd: 0x11ed4
--  __TEXT.__swift5_assocty: 0x1c08
--  __TEXT.__swift5_proto: 0x39ec
--  __TEXT.__swift5_types: 0xd7c
--  __TEXT.__cstring: 0x2f148
--  __TEXT.__swift5_capture: 0x578
--  __TEXT.__objc_classname: 0x292
--  __TEXT.__objc_methname: 0x185a
--  __TEXT.__swift_as_entry: 0x654
--  __TEXT.__swift_as_ret: 0x674
--  __TEXT.__swift_as_cont: 0x384
--  __TEXT.__swift5_protos: 0x4c
--  __TEXT.__objc_methtype: 0x6e
--  __TEXT.__swift5_mpenum: 0xac
--  __TEXT.__oslogstring: 0x541
--  __TEXT.__unwind_info: 0x11620
--  __TEXT.__eh_frame: 0x176e0
--  __DATA_CONST.__const: 0x24108
--  __DATA_CONST.__objc_classlist: 0x88
 +30.0.0.0.0
-+  __TEXT.__text: 0x3c9d20
-+  __TEXT.__auth_stubs: 0x27a0
-+  __TEXT.__objc_stubs: 0x1c80
-+  __TEXT.__objc_methlist: 0x164
-+  __TEXT.__const: 0x42000
-+  __TEXT.__constg_swiftt: 0x8c84
-+  __TEXT.__swift5_typeref: 0xadc3
-+  __TEXT.__swift5_builtin: 0x35c
-+  __TEXT.__swift5_reflstr: 0xa36e
-+  __TEXT.__swift5_fieldmd: 0x13a64
-+  __TEXT.__swift5_assocty: 0x1f68
-+  __TEXT.__swift5_proto: 0x3e18
-+  __TEXT.__swift5_types: 0xec4
-+  __TEXT.__cstring: 0x33d78
-+  __TEXT.__swift5_capture: 0x6b8
-+  __TEXT.__objc_classname: 0x402
-+  __TEXT.__objc_methname: 0x1d1f
-+  __TEXT.__swift_as_entry: 0x758
-+  __TEXT.__swift_as_ret: 0x7ac
-+  __TEXT.__swift_as_cont: 0x764
-+  __TEXT.__swift5_protos: 0x68
-+  __TEXT.__objc_methtype: 0x1e1
-+  __TEXT.__swift5_mpenum: 0xc4
-+  __TEXT.__oslogstring: 0x8b1
-+  __TEXT.__unwind_info: 0x13bf0
-+  __TEXT.__eh_frame: 0x19b48
-+  __DATA_CONST.__const: 0x280a8
-+  __DATA_CONST.__objc_classlist: 0xc0
-+  __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6b0
--  __DATA_CONST.__auth_got: 0x1150
--  __DATA_CONST.__got: 0x680
--  __DATA_CONST.__auth_ptr: 0x1668
--  __DATA.__objc_const: 0x1610
--  __DATA.__objc_data: 0x3c0
--  __DATA.__data: 0x118a8
--  __DATA.__common: 0x90
-+  __DATA_CONST.__objc_selrefs: 0x7e0
-+  __DATA_CONST.__objc_protorefs: 0x10
-+  __DATA_CONST.__auth_got: 0x13d8
-+  __DATA_CONST.__got: 0x7a8
-+  __DATA_CONST.__auth_ptr: 0x1870
-+  __DATA.__objc_const: 0x1e10
-+  __DATA.__objc_data: 0x570
-+  __DATA.__data: 0x13798
-+  __DATA.__common: 0xa8
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/ImagePlayground.framework/ImagePlayground
-   - /System/Library/Frameworks/Metal.framework/Metal
 +  - /System/Library/Frameworks/Security.framework/Security
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /usr/lib/libSystem.B.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 17719
 -  Symbols:   4916
 -  CStrings:  1448
 +  Functions: 20019
 +  Symbols:   5386
 +  CStrings:  1681
- 
 Symbols:
 + _CGAffineTransformMakeRotation
 + _CGImageCreateWithImageInRect

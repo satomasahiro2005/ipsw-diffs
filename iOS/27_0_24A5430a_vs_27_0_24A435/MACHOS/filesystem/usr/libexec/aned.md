@@ -2,61 +2,46 @@
 
 > `/usr/libexec/aned`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6c3f0` | `0x7d2fc` | **`+0x10f0c`** |
+| `__TEXT.__gcc_except_tab` | `0x5954` | `0x619c` | **`+0x848`** |
+| `__DATA_CONST.__const` | `0x26c8` | `0x2b48` | **`+0x480`** |
+| `__TEXT.__const` | `0x5cfc` | `0x60ec` | **`+0x3f0`** |
+| `__TEXT.__unwind_info` | `0x1868` | `0x1ba0` | **`+0x338`** |
+| `__TEXT.__cstring` | `0x5b7d` | `0x5cfc` | **`+0x17f`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_got`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__auth_got`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
- 382.15.1.0.0
--  __TEXT.__text: 0x6c3f0
-+  __TEXT.__text: 0x7d2fc
-   __TEXT.__auth_stubs: 0xf70
-   __TEXT.__objc_stubs: 0x34a0
-   __TEXT.__objc_methlist: 0x1184
--  __TEXT.__const: 0x5cfc
--  __TEXT.__gcc_except_tab: 0x5954
--  __TEXT.__cstring: 0x5b7d
-+  __TEXT.__const: 0x60ec
-+  __TEXT.__gcc_except_tab: 0x619c
-+  __TEXT.__cstring: 0x5cfc
-   __TEXT.__oslogstring: 0x6cd0
-   __TEXT.__objc_classname: 0x247
-   __TEXT.__objc_methname: 0x3ea7
-   __TEXT.__objc_methtype: 0xeaf
--  __TEXT.__unwind_info: 0x1868
--  __DATA_CONST.__const: 0x26c8
-+  __TEXT.__unwind_info: 0x1ba0
-+  __DATA_CONST.__const: 0x2b48
-   __DATA_CONST.__cfstring: 0xb00
-   __DATA_CONST.__objc_classlist: 0x90
-   __DATA_CONST.__objc_protolist: 0x60
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2443
 -  Symbols:   3711
 -  CStrings:  1749
 +  Functions: 2787
 +  Symbols:   4173
 +  CStrings:  1758
- 
 Symbols:
 + GCC_except_table123
 + GCC_except_table125

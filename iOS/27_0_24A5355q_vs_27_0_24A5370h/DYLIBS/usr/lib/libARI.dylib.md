@@ -2,54 +2,31 @@
 
 > `/usr/lib/libARI.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x204fe8` | `0x205c3c` | **`+0xc54`** |
+| `__TEXT.__cstring` | `0x3df73` | `0x3e1e6` | **`+0x273`** |
+| `__DATA_CONST.__const` | `0x462c8` | `0x464b0` | **`+0x1e8`** |
+| `__AUTH_CONST.__const` | `0x2a0e0` | `0x2a260` | **`+0x180`** |
+| `__TEXT.__const` | `0x15110` | `0x151e0` | **`+0xd0`** |
+| `__TEXT.__gcc_except_tab` | `0x1aa30` | `0x1aaa8` | **`+0x78`** |
+| `__TEXT.__unwind_info` | `0xda90` | `0xdb00` | **`+0x70`** |
+
+### Other Changes
+
 ```diff
 
 -1632.0.0.0.0
--  __TEXT.__text: 0x204fe8 sha256:51c863e79799355f2420f8d6d0ac1238a0c2767c7eca71521246291fc3f25ad3
--  __TEXT.__init_offsets: 0x8 sha256:4ad609b1f04204d4061d3bbe21adbc0eb672d3844c929f4da26afe73e7e3a456
--  __TEXT.__const: 0x15110 sha256:0c2bd1d07d46da0dbd3af92fed00153f2e74f57a4d5e8b059673c46ee523164f
--  __TEXT.__gcc_except_tab: 0x1aa30 sha256:fea2ea086fa011755dbffadc63fd1b86d671469e4472187ec079e5ec30c9accb
--  __TEXT.__cstring: 0x3df73 sha256:d79d599e34e5c7f101514fc02ae9c3b888270eeb187cd09352be297a17589768
 +1635.0.0.0.0
-+  __TEXT.__text: 0x205c3c sha256:645c719f4e9066cd23db730dd7bdd90b8a63a4b2ca16c8ec48a93581b6aa048b
-+  __TEXT.__init_offsets: 0x8 sha256:8d780953cfe1b993e1b6e176bdd0edc4ec2142f54b656462fe650d4d327be076
-+  __TEXT.__const: 0x151e0 sha256:06d2d02e3a259ed26dd0fe67cf3a383ccc340eceb38959b866a407eb6b14b1ed
-+  __TEXT.__gcc_except_tab: 0x1aaa8 sha256:ef29d7664b6ab50629c92eec0da9f0581a3d6ae8dae69de9fb5c4e7aeecddf84
-+  __TEXT.__cstring: 0x3e1e6 sha256:b952d1d76c136f1a190403389bae723faa884df3215983f6d9d14d18051ae724
-   __TEXT.__oslogstring: 0x4499 sha256:3cb87f6427a71668fb79dc22c8a083440b4c0c86e6578e499778079f3553631f
--  __TEXT.__unwind_info: 0xda90 sha256:3a0d074b2ebd4381ffa03147525a03e825fb97757f4ed50b30b3a9530e4e49d1
-+  __TEXT.__unwind_info: 0xdb00 sha256:d9c28dce562f787de84ec7841d3bde1cf871a5b721ee6ac1191dbc403ac267a0
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x462c8 sha256:c39397ff1f7e1bcb4f46ef3b079bf518692a6b1d44eec44a8e8da5ddf4cce10d
--  __DATA_CONST.__weak_got: 0x10 sha256:db089a9946ee2f440f1454b6bd081bc906524b106b3b9bd5745c567d00425fed
-+  __DATA_CONST.__const: 0x464b0 sha256:e3e15838066d4bb61d331b58434b64b36b769d31d33aa4a44dea53d1cf928f57
-+  __DATA_CONST.__weak_got: 0x10 sha256:2f1a2d0c36c6731ffe079944d2ca7640d62c107666c3f90af849bf1bf605632c
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2a0e0 sha256:86698ffbb7bd3abb522995a0f780a252a4cde17072632db6826a123d7c016538
--  __AUTH_CONST.__cfstring: 0x20 sha256:503342deff85030c0d709d23c7dd19e50b68045fc56f1f9abb72be866e634e85
--  __AUTH_CONST.__weak_auth_got: 0x28 sha256:4a7d5a6862c5431b2249d57b76660013b16903a5dadf666d8b652501384c4219
-+  __AUTH_CONST.__const: 0x2a260 sha256:d1252c69ea9c7e190b73499a01060f24dc96e318078ce703004218b6fa8cb26b
-+  __AUTH_CONST.__cfstring: 0x20 sha256:3b76065995078b0c590942654995b7874aa10fb86a8fe894b89089916524b4ee
-+  __AUTH_CONST.__weak_auth_got: 0x28 sha256:ce730ac904d7ee375ed02cc55451c60f1221ea40d155b3549317863900e04169
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__data: 0x8 sha256:c612443b8a02ebd75e564fb1ca29d45d17bcf23e50dcb4a25779de240be720e1
-+  __AUTH.__data: 0x8 sha256:f6cc68fcd5c42bc063f0cf9f62ebd38806eb1896282251bb4de0c7ff7c507820
-   __DATA.__data: 0x26 sha256:bdd512737bd9f11d60996944d47dd0e1605349c2e01e7ea28ac5c3497fb26037
-   __DATA.__bss: 0x8 sha256:af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc
-   __DATA.__common: 0x1 sha256:6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d
 
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
--  UUID: B00B46E7-9226-3BB2-A620-877FED53DA5C
 -  Functions: 17149
--  Symbols:   32701
--  CStrings:  9426
-+  UUID: 4555194D-5EFF-39E4-B839-E38AECC7419D
+-  Symbols:   24147
+-  CStrings:  9425
 +  Functions: 17182
-+  Symbols:   32763
-+  CStrings:  9446
- 
++  Symbols:   24193
++  CStrings:  9445
 Symbols:
 + GCC_except_table680
 + GCC_except_table720
@@ -57,7 +34,6 @@ Symbols:
 + GCC_except_table740
 + GCC_except_table742
 + GCC_except_table747
-+ _.str.291
 + _ARI_IBIVinylM4OemData_V2_DEC_F
 + _ARI_IBIVinylM4OemData_V2_ENC_F
 + __Z8asString20IBIRfAntennaLocation
@@ -397,5 +373,4 @@ CStrings:
 - "IQCAP_ACTIVITY_START_STATUS_UNKNOWN"
 - "IQCAP_ACTIVITY_STATUS_UNKNOWN"
 - "IQCAP_ACTIVITY_SUCCESS"
-
 ```

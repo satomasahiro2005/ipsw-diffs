@@ -2,102 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/CMCapture.framework/CMCapture`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8cddc4` | `0x610e84` | **`-0x2bcf40`** |
+| `__TEXT.__oslogstring` | `0x168211` | `0x4cc4a` | **`-0x11b5c7`** |
+| `__TEXT.__cstring` | `0xffc93` | `0xa5153` | **`-0x5ab40`** |
+| `__AUTH_CONST.__cfstring` | `0x593a0` | `0x4c8c0` | **`-0xcae0`** |
+| `__TEXT.__gcc_except_tab` | `0x4be4` | `0x34b0` | **`-0x1734`** |
+| `__TEXT.__unwind_info` | `0x11f50` | `0x10860` | **`-0x16f0`** |
+| `__DATA.__common` | `0x2c90` | `0x1640` | **`-0x1650`** |
+| `__AUTH_CONST.__objc_const` | `0xa7038` | `0xa5a08` | **`-0x1630`** |
+| `__DATA_CONST.__const` | `0x11378` | `0x101c0` | **`-0x11b8`** |
+| `__TEXT.__objc_methlist` | `0x3a9a8` | `0x3a2a8` | **`-0x700`** |
+| `__AUTH_CONST.__const` | `0x4ad8` | `0x45f8` | **`-0x4e0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x176b0` | `0x172a8` | **`-0x408`** |
+| `__DATA_DIRTY.__bss` | `0x1588` | `0x1240` | **`-0x348`** |
+| `__DATA.__bss` | `0x2df8` | `0x3028` | **`+0x230`** |
+| `__DATA.__objc_ivar` | `0xbe64` | `0xbc78` | **`-0x1ec`** |
+| `__DATA_DIRTY.__objc_data` | `0xfaa0` | `0xf910` | **`-0x190`** |
+| `__DATA_DIRTY.__common` | `0x1e0` | `0x100` | **`-0xe0`** |
+| `__AUTH_CONST.__objc_intobj` | `0x6528` | `0x6450` | **`-0xd8`** |
+| `__TEXT.__const` | `0x151768` | `0x1516a8` | **`-0xc0`** |
+| `__AUTH_CONST.__auth_got` | `0x2db8` | `0x2d00` | **`-0xb8`** |
+| `__DATA_CONST.__got` | `0x7078` | `0x6fd0` | **`-0xa8`** |
+| `__DATA_CONST.__objc_arraydata` | `0x3bc8` | `0x3b40` | **`-0x88`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x2c70` | `0x2bf8` | **`-0x78`** |
+| `__TEXT.__dlopen_cstrs` | `0x7ad` | `0x75b` | **`-0x52`** |
+| `__AUTH.__objc_data` | `0x3bb0` | `0x3b60` | **`-0x50`** |
+| `__TEXT.__eh_frame` | `0x38` | `—` | **`-0x38`** |
+| `__DATA_CONST.__objc_classlist` | `0x1f08` | `0x1ed8` | **`-0x30`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1d20` | `0x1cf0` | **`-0x30`** |
+| `__DATA.__data` | `0x5958` | `0x5968` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0xf98` | `0xf88` | **`-0x10`** |
+| `__TEXT.__ustring` | `0x10` | `0xc` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -761.0.0.0.3
--  __TEXT.__text: 0x8cddc4
--  __TEXT.__objc_methlist: 0x3a9a8
--  __TEXT.__const: 0x151768
--  __TEXT.__cstring: 0xffc93
--  __TEXT.__oslogstring: 0x168211
--  __TEXT.__gcc_except_tab: 0x4be4
--  __TEXT.__dlopen_cstrs: 0x7ad
--  __TEXT.__ustring: 0x10
--  __TEXT.__unwind_info: 0x11f50
--  __TEXT.__eh_frame: 0x38
 +764.22.5.122.2
-+  __TEXT.__text: 0x610e84
-+  __TEXT.__objc_methlist: 0x3a2a8
-+  __TEXT.__const: 0x1516a8
-+  __TEXT.__cstring: 0xa5153
-+  __TEXT.__oslogstring: 0x4cc4a
-+  __TEXT.__gcc_except_tab: 0x34b0
-+  __TEXT.__dlopen_cstrs: 0x75b
-+  __TEXT.__ustring: 0xc
-+  __TEXT.__unwind_info: 0x10860
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x11378
--  __DATA_CONST.__objc_classlist: 0x1f08
-+  __DATA_CONST.__const: 0x101c0
-+  __DATA_CONST.__objc_classlist: 0x1ed8
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x628
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x176b0
-+  __DATA_CONST.__objc_selrefs: 0x172a8
-   __DATA_CONST.__objc_protorefs: 0x78
--  __DATA_CONST.__objc_superrefs: 0x1d20
--  __DATA_CONST.__objc_arraydata: 0x3bc8
--  __DATA_CONST.__got: 0x7078
--  __AUTH_CONST.__const: 0x4ad8
--  __AUTH_CONST.__cfstring: 0x593a0
--  __AUTH_CONST.__objc_const: 0xa7038
-+  __DATA_CONST.__objc_superrefs: 0x1cf0
-+  __DATA_CONST.__objc_arraydata: 0x3b40
-+  __DATA_CONST.__got: 0x6fd0
-+  __AUTH_CONST.__const: 0x45f8
-+  __AUTH_CONST.__cfstring: 0x4c8c0
-+  __AUTH_CONST.__objc_const: 0xa5a08
-   __AUTH_CONST.__weak_auth_got: 0x10
--  __AUTH_CONST.__objc_intobj: 0x6528
--  __AUTH_CONST.__objc_arrayobj: 0x2c70
-+  __AUTH_CONST.__objc_intobj: 0x6450
-+  __AUTH_CONST.__objc_arrayobj: 0x2bf8
-   __AUTH_CONST.__objc_floatobj: 0x270
-   __AUTH_CONST.__objc_dictobj: 0x1798
-   __AUTH_CONST.__objc_doubleobj: 0xab0
--  __AUTH_CONST.__auth_got: 0x2db8
--  __AUTH.__objc_data: 0x3bb0
-+  __AUTH_CONST.__auth_got: 0x2d00
-+  __AUTH.__objc_data: 0x3b60
-   __AUTH.__data: 0x110
--  __DATA.__objc_ivar: 0xbe64
--  __DATA.__data: 0x5958
-+  __DATA.__objc_ivar: 0xbc78
-+  __DATA.__data: 0x5968
-   __DATA.__crash_info: 0x148
--  __DATA.__common: 0x2c90
--  __DATA.__bss: 0x2df8
--  __DATA_DIRTY.__objc_data: 0xfaa0
--  __DATA_DIRTY.__data: 0xf98
--  __DATA_DIRTY.__common: 0x1e0
--  __DATA_DIRTY.__bss: 0x1588
-+  __DATA.__common: 0x1640
-+  __DATA.__bss: 0x3028
-+  __DATA_DIRTY.__objc_data: 0xf910
-+  __DATA_DIRTY.__data: 0xf88
-+  __DATA_DIRTY.__bss: 0x1240
-+  __DATA_DIRTY.__common: 0x100
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-+  - /System/Library/Frameworks/AVRouting.framework/AVRouting
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/ColorSync.framework/ColorSync
 
-   - /usr/lib/liblockdown.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libtailspin.dylib
++  - /System/Library/Frameworks/AVRouting.framework/AVRouting
+
 -  Functions: 41663
--  Symbols:   67152
--  CStrings:  38928
+-  Symbols:   56605
+-  CStrings:  38929
 +  Functions: 36743
-+  Symbols:   65806
-+  CStrings:  20458
- 
++  Symbols:   55428
++  CStrings:  20459
 Symbols:
 + +[BWMultiCamConfiguration configurationWithUnsynchronizedActiveStreamsPortTypes:synchronizedActiveStreamsGroupsPortTypes:stereoVideoCaptureEnabled:multiCamClientCompositingEnabled:exclusivelyForSecureProcessing:builtInMicrophoneIsRecording:]
 + -[BWBroadcastVideoSinkNode _desiredBufferDepth]
@@ -396,32 +351,6 @@ Symbols:
 + _captureSession_updateInflightConfigurationWithVideoConnectionPropertyForKey
 + _kFigCaptureDeviceMultiCamConfigurationKey_BuiltInMicrophoneIsRecording
 + _kFigVideoCaptureSourceActivationOptionKey_BuiltInMicrophoneIsRecording
-+ _objc_msgSend$_desiredBufferDepth
-+ _objc_msgSend$_removeRDD18AncillaryDataForTag_locked:
-+ _objc_msgSend$_setRDD18AncillaryData_locked:forTag:error:
-+ _objc_msgSend$configurationWithUnsynchronizedActiveStreamsPortTypes:synchronizedActiveStreamsGroupsPortTypes:stereoVideoCaptureEnabled:multiCamClientCompositingEnabled:exclusivelyForSecureProcessing:builtInMicrophoneIsRecording:
-+ _objc_msgSend$copiesCoreMediaTimeMachineImageToStillImageOutput
-+ _objc_msgSend$decrementStreamingVideoDataOutputConsumerCount
-+ _objc_msgSend$depthDataStillNetworkDimensions
-+ _objc_msgSend$incrementStreamingVideoDataOutputConsumerCount
-+ _objc_msgSend$initWithCompressionSettings:overCaptureEnabled:stereoVideoCompressionEnabled:maxVideoFrameRate:delayedCompressorCleanupEnabled:maxLossyCompressionLevel:cameraInfoByPortType:
-+ _objc_msgSend$initWithConfiguration:tailIndex:numTailPipelines:graph:parentPipeline:captureDevicesByConnectionID:inferenceScheduler:recordingStatusDelegate:multiCamClientCompositingCallback:workgroup:
-+ _objc_msgSend$initWithConfiguration:videoSourceCaptureOutputsByConnectionID:sourceStreamingSensorRawOutput:sourceStreamingHueMapOutput:sourceStreamingSemanticMasksOutput:audioSourceCaptureOutput:audioSourceCinematicAudioCaptureOutput:smartCameraInferenceOutput:detectedObjectBoxedMetadataOutputs:objectDetectionSourceOutput:metadataSourcePipelineOutputs:graph:parentPipeline:inferenceScheduler:captureDevicesByConnectionID:audioSourceDelegate:fileCoordinatorStatusDelegate:irisRequestDelegate:masterClock:workgroup:videoGreenGhostMitigationEnabled:
-+ _objc_msgSend$initWithDeviceOriented:
-+ _objc_msgSend$isScalerRequiredForSettings:portType:inputDimensions:outputDimensions:preNoiseReductionScalerOut:
-+ _objc_msgSend$isTrueVideoActiveForShutterSoundRelaxation
-+ _objc_msgSend$preNoiseReductionScalerInputCropDimensionsForInputDimensions:outputDimensions:
-+ _objc_msgSend$setApplyResolutionInvariantWarp:
-+ _objc_msgSend$setCopiesCoreMediaTimeMachineImageToStillImageOutput:
-+ _objc_msgSend$setDepthDataStillNetworkDimensions:
-+ _objc_msgSend$setHasAttachedMovieFileSinkPipeline:
-+ _objc_msgSend$setInputCropDimensions:
-+ _objc_msgSend$setInputSensorID:
-+ _objc_msgSend$setNonAspectPreservingScaleEnabled:
-+ _objc_msgSend$setPixelFormatIsPackedBayerRaw:
-+ _objc_msgSend$setSubmitWithElevatedGPUPriority:
-+ _objc_msgSend$stillNetworkDimensions
-+ _objc_msgSend$submitWithElevatedGPUPriority
 + _objc_retain_x4
 + _sBadAccelThreshold
 + _sDeviceUsesGNRSampleBufferProcessor
@@ -1870,201 +1799,6 @@ Symbols:
 - _multiStreamCameraSourceNode_bufferLikelyUsedForPreview
 - _mv2ip_shortStringForArrayOfMattingOutputTypes
 - _mv2ip_shortStringForMattingOutputType
-- _objc_msgSend$VN3iT1YRjjnIuELobV1olJiO1vvItN6Kdq
-- _objc_msgSend$_compresessionSession
-- _objc_msgSend$_mediaConfigurationForBufferCountOfPossiblyUnspecifiedAttachedMediaKey:
-- _objc_msgSend$_mediaPropertiesForPossiblyUnspecifiedAttachedMediaKey:
-- _objc_msgSend$addMetadataProviderForKey:providerBlock:
-- _objc_msgSend$addPAMDecisionPreliminary:
-- _objc_msgSend$addRectangleProviderForKey:displayStyle:providerBlock:
-- _objc_msgSend$addTrackerCollection:
-- _objc_msgSend$addUntrackedOwner:
-- _objc_msgSend$addUntrackedOwnerOfBuffer:forOwner:
-- _objc_msgSend$ageInMs
-- _objc_msgSend$allLabelsWithConfidences
-- _objc_msgSend$appendMetadataProviderForKey:inactiveValue:providerBlock:
-- _objc_msgSend$bufferTrackerNodeOwnerString
-- _objc_msgSend$bufferTrackerRenderOwnerString
-- _objc_msgSend$callStackSymbols
-- _objc_msgSend$compressedShotBufferStatus
-- _objc_msgSend$confidenceStringForScene:
-- _objc_msgSend$configurationWithUnsynchronizedActiveStreamsPortTypes:synchronizedActiveStreamsGroupsPortTypes:stereoVideoCaptureEnabled:multiCamClientCompositingEnabled:exclusivelyForSecureProcessing:
-- _objc_msgSend$context
-- _objc_msgSend$createCGImage:fromRect:
-- _objc_msgSend$currentBarcodeContents
-- _objc_msgSend$currentBarcodeRect
-- _objc_msgSend$currentFootprint
-- _objc_msgSend$currentFrameRateDescription
-- _objc_msgSend$currentOverCaptureAssetOverscan
-- _objc_msgSend$currentPrimaryAssetOverscan
-- _objc_msgSend$currentSpatialOverCapturePercentage
-- _objc_msgSend$dateWithTimeIntervalSinceReferenceDate:
-- _objc_msgSend$debugInfo
-- _objc_msgSend$debugIrisInfos
-- _objc_msgSend$debugOverlayInfo
-- _objc_msgSend$debugOverlayInfoString
-- _objc_msgSend$debugOverlayMetadata
-- _objc_msgSend$debugOverlayNode
-- _objc_msgSend$decrementOwnershipCountOfBuffer:forOwner:
-- _objc_msgSend$decrementOwnershipCountOfOwner:
-- _objc_msgSend$defaultBufferTrackingTag
-- _objc_msgSend$detectionInfoDebug
-- _objc_msgSend$deviceStabilityDescription
-- _objc_msgSend$deviceStolenCondition
-- _objc_msgSend$deviceStolenDuration
-- _objc_msgSend$disappeared
-- _objc_msgSend$displayName
-- _objc_msgSend$dotString
-- _objc_msgSend$dynamicStabilityDescription
-- _objc_msgSend$enforceAscending
-- _objc_msgSend$engineDescription
-- _objc_msgSend$faceBoundingBoxExpansionRatio
-- _objc_msgSend$filteredAppClipCodeSceneConfidenceString
-- _objc_msgSend$filteredLogicalFocusLensPosition
-- _objc_msgSend$filteredQRSceneConfidenceString
-- _objc_msgSend$filteredTextSceneConfidenceString
-- _objc_msgSend$focusRegionType
-- _objc_msgSend$focusingDescription
-- _objc_msgSend$frameLength
-- _objc_msgSend$frameRateChangeDescription
-- _objc_msgSend$frameRateConversionStatus
-- _objc_msgSend$friction
-- _objc_msgSend$fullIdentifier
-- _objc_msgSend$getGPUPriority
-- _objc_msgSend$globalMotionAE
-- _objc_msgSend$gpuError
-- _objc_msgSend$gpuStatus
-- _objc_msgSend$graphStateTransitionTimeoutSeconds
-- _objc_msgSend$incompatibleFieldsDescriptionWithParameters:
-- _objc_msgSend$incrementOwnershipCountOfBuffer:forOwner:
-- _objc_msgSend$incrementOwnershipCountOfOwner:
-- _objc_msgSend$initWithBuffer:verboseBufferLogTag:trackerCollection:
-- _objc_msgSend$initWithCompressionSettings:overCaptureEnabled:stereoVideoCompressionEnabled:maxVideoFrameRate:delayedCompressorCleanupEnabled:maxLossyCompressionLevel:cameraInfoByPortType:previewDebugOverlayNode:
-- _objc_msgSend$initWithConfiguration:tailIndex:numTailPipelines:graph:parentPipeline:captureDevicesByConnectionID:inferenceScheduler:recordingStatusDelegate:multiCamClientCompositingCallback:workgroup:previewDebugOverlayNode:embedDebugOverlayEnabled:
-- _objc_msgSend$initWithConfiguration:videoSourceCaptureOutputsByConnectionID:sourceStreamingSensorRawOutput:sourceStreamingHueMapOutput:audioSourceCaptureOutput:audioSourceCinematicAudioCaptureOutput:smartCameraInferenceOutput:detectedObjectBoxedMetadataOutputs:objectDetectionSourceOutput:metadataSourcePipelineOutputs:graph:parentPipeline:debugOverlayNode:inferenceScheduler:captureDevicesByConnectionID:audioSourceDelegate:fileCoordinatorStatusDelegate:irisRequestDelegate:masterClock:workgroup:videoGreenGhostMitigationEnabled:
-- _objc_msgSend$initWithDisplayStyle:providerBlock:
-- _objc_msgSend$isRenderingSemanticStyle
-- _objc_msgSend$isSensitive
-- _objc_msgSend$ispStartDuration
-- _objc_msgSend$lastDetectionPTS
-- _objc_msgSend$lastRequestedQuality
-- _objc_msgSend$lastScene
-- _objc_msgSend$lastShotToShotTime
-- _objc_msgSend$lastShutterLag
-- _objc_msgSend$lastStillCaptureStatus
-- _objc_msgSend$lastStillFaceCounts
-- _objc_msgSend$lastStillFocalLengthIn35mmFilm
-- _objc_msgSend$lastStillImageCaptureType
-- _objc_msgSend$lastStillImagePTS
-- _objc_msgSend$lastStillScene
-- _objc_msgSend$lensSmudgeDetectionInfoDebug
-- _objc_msgSend$lineOffset
-- _objc_msgSend$livePixelBufferPoolSize
-- _objc_msgSend$logAllSbufEmissions
-- _objc_msgSend$logAllSbufsPortDescription
-- _objc_msgSend$logBuffer:logTag:
-- _objc_msgSend$logBuffersWithReason:
-- _objc_msgSend$logInferences
-- _objc_msgSend$logTrackedBuffersWithReason:
-- _objc_msgSend$logWithPrefix:
-- _objc_msgSend$lowResPersonInstanceBoundingBoxes
-- _objc_msgSend$manifestVersion
-- _objc_msgSend$networkVariant
-- _objc_msgSend$newPixelBufferWithBufferTrackingTag:
-- _objc_msgSend$newUncompressedSampleBufferFromSampleBuffer:pixelBufferTrackingTag:
-- _objc_msgSend$nonretainedObjectValue
-- _objc_msgSend$numFramesFullyVisible
-- _objc_msgSend$objCType
-- _objc_msgSend$onDemandMotionDetectionRect
-- _objc_msgSend$opDescription
-- _objc_msgSend$orientation
-- _objc_msgSend$ownersString
-- _objc_msgSend$ownershipAgeInMs
-- _objc_msgSend$ownershipCount
-- _objc_msgSend$panoModeEnabled
-- _objc_msgSend$passCount
-- _objc_msgSend$peakNonVolatileSize
-- _objc_msgSend$previousAttemptErrorCode
-- _objc_msgSend$processingStartTime
-- _objc_msgSend$processorController:debugOverlayMetadata:key:
-- _objc_msgSend$removeRDD18AncillaryDataForTag:
-- _objc_msgSend$removeTracker:
-- _objc_msgSend$renderingVersion
-- _objc_msgSend$replaceCharactersInRange:withString:
-- _objc_msgSend$reportZeroShutterLagPreviewTimeMachineInitFailure
-- _objc_msgSend$resetStatistics
-- _objc_msgSend$sceneConfidenceDescriptions
-- _objc_msgSend$sceneConfidences
-- _objc_msgSend$selectedDataSource
-- _objc_msgSend$selectedPolarPattern
-- _objc_msgSend$setDebugIrisInfos:
-- _objc_msgSend$setDebugOverlayNode:
-- _objc_msgSend$setDebugOverlaySupportEnabled:
-- _objc_msgSend$setDefaultBufferTrackingTag:
-- _objc_msgSend$setDisappeared:
-- _objc_msgSend$setFaceId:
-- _objc_msgSend$setLineOffset:
-- _objc_msgSend$setLogAllSbufEmissions:
-- _objc_msgSend$setLogIsEqual:
-- _objc_msgSend$setNumFramesFullyVisible:
-- _objc_msgSend$setOnDemandMotionDetectionRectEnabled:
-- _objc_msgSend$setOrientationIsConfigurable:
-- _objc_msgSend$setOwnershipCount:
-- _objc_msgSend$setProcessingStartTime:
-- _objc_msgSend$setRDD18AncillaryData:forTag:error:
-- _objc_msgSend$setSbufEmissionDestinationDescription:
-- _objc_msgSend$setStoresCurrentBarcodeForDebugOverlay:
-- _objc_msgSend$setStreamSelectorDebugInfo:
-- _objc_msgSend$setStreamingMotionDetectionRectEnabled:
-- _objc_msgSend$setStringAttributes:
-- _objc_msgSend$setTransferSession:
-- _objc_msgSend$setUncompressedAndUnpackedPixelBufferForDrawing:
-- _objc_msgSend$setVerboseBufferLogTag:
-- _objc_msgSend$shotBufferFullness
-- _objc_msgSend$skipDenoising
-- _objc_msgSend$smartCameraSceneType
-- _objc_msgSend$smartCameraStatus
-- _objc_msgSend$sourceNodeDescription
-- _objc_msgSend$sphereSettlingDelayDescription
-- _objc_msgSend$srlCurveParameter
-- _objc_msgSend$stabilityDecisionDescription
-- _objc_msgSend$stationaryThreshold
-- _objc_msgSend$streamingMotionDetectionRect
-- _objc_msgSend$stringAttributes
-- _objc_msgSend$stringByPaddingToLength:withString:startingAtIndex:
-- _objc_msgSend$stringForSourceType:
-- _objc_msgSend$subgraphName
-- _objc_msgSend$substringFromIndex:
-- _objc_msgSend$superWideFocusDistance
-- _objc_msgSend$supportedPixelFormatsAsString
-- _objc_msgSend$systemPressureFactors
-- _objc_msgSend$tension
-- _objc_msgSend$tofSensorConfidence
-- _objc_msgSend$tooCloseFor1xStitching
-- _objc_msgSend$tooCloseForSuperWideRegistration
-- _objc_msgSend$totalTrackedBuffersInFlight
-- _objc_msgSend$trackBuffer:
-- _objc_msgSend$trackBuffer:withVerboseBufferLogTag:
-- _objc_msgSend$trackPixelBuffer:
-- _objc_msgSend$trackerKey
-- _objc_msgSend$transferSession
-- _objc_msgSend$uncompressedAndUnpackedPixelBufferForDrawing
-- _objc_msgSend$unspecifiedAttachedMediaKeysSeenByInput
-- _objc_msgSend$usesStillFusionReferenceFramePTSForDidCaptureCallback
-- _objc_msgSend$variableFrameRateInfo
-- _objc_msgSend$verboseBufferLogTag
-- _objc_msgSend$vfrCurrentFrameRateDescription
-- _objc_msgSend$vfrDeviceStabilityDescription
-- _objc_msgSend$vfrDynamicStabilityDescription
-- _objc_msgSend$vfrFrameRateChangeDescription
-- _objc_msgSend$vfrGlobalMotionAE
-- _objc_msgSend$vfrSceneConfidenceDescriptions
-- _objc_msgSend$vfrSentFRUpdateCommandDescription
-- _objc_msgSend$vfrSentFRUpdateCommandISPDescription
-- _objc_msgSend$vfrStabilityDecisionDescription
-- _objc_msgSend$whenTransitioningToStatesFail:callHandler:
-- _objc_msgSend$wideBaseZoomFactor
-- _objc_msgSend$writeToFile:atomically:encoding:error:
 - _objc_retain_x9
 - _pem_stringFromAuxImageType
 - _pem_stringFromCMPhotoAuxImageType
@@ -2128,6 +1862,7 @@ CStrings:
 + "-[BWPhotonicEngineNode handleStillImagePrewarmWithSettings:resourceConfig:forInput:]_block_invoke_4"
 + "-[FigCaptureClientApplicationStateMonitor _resolveApplicationStateWithRawBackgroundedState:]"
 + "-[FigCaptureMovieFileSinkHeadPipeline _buildMovieFileSinkHeadPipeline:videoSourceCaptureOutputsByConnectionID:sourceStreamingSensorRawOutput:sourceStreamingHueMapOutput:sourceStreamingSemanticMasksOutput:audioSourceCaptureOutput:audioSourceCinematicAudioCaptureOutput:smartCameraInferenceOutput:detectedObjectBoxedMetadataOutputs:objectDetectionSourceOutput:metadataSourcePipelineOutputs:graph:parentPipeline:inferenceScheduler:captureDevicesByConnectionID:audioSourceDelegate:fileCoordinatorStatusDelegate:irisRequestDelegate:masterClock:workgroup:videoGreenGhostMitigationEnabled:]"
++ "00:19:31"
 + "<<< FigVirtualCaptureCard >>> %s: Insufficient remaining capacity to reserve: %lli"
 + "<<< FigVirtualCaptureCard >>> %s: Releasing un-saved reservation %@"
 + "<<< FigVirtualCaptureCard >>> %s: symlinkTargetURLCString %s, saveToFileURL %@, preallocatedFileURL %@"
@@ -2147,6 +1882,7 @@ CStrings:
 + "<<<< FigCaptureSourceServer >>>> %s: Failed to find source for sourceToken %d"
 + "AUVoiceIOClients/"
 + "AVGQG37DCWSL47LUT3OXNYCVIFJC5M"
++ "Aug  5 2026"
 + "BuiltInMicrophoneIsRecording"
 + "FigVirtualCaptureCard_SetCapacity_block_invoke_2"
 + "Frame sender is nil during render.  Skipping sending frame."
@@ -5809,6 +5545,7 @@ CStrings:
 - "/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CameraCapture/VideoProcessors/VideoStabilizationX/Utilities/GVSOverscanPredictor.m %s: focalLength is null"
 - "/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CameraCapture/VideoProcessors/VideoStabilizationX/Utilities/GVSOverscanPredictor.m %s: pole must be between 0 and 1"
 - "0 / 1 pre-bracket frame, "
+- "03:44:45"
 - "0420660d42bf570c07c108cda1c5525f4661f842"
 - "1 / 1 pre-bracket frame, "
 - "1.0x"
@@ -18358,6 +18095,7 @@ CStrings:
 - "JPEG"
 - "JasperColorStillsExecutor"
 - "JasperDisparityProcessor"
+- "Jul 11 2026"
 - "Key not registered"
 - "Keyspace not valid"
 - "L: %1.4f %d H: %1.4f %d"

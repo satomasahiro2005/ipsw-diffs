@@ -2,15 +2,14 @@
 
 > `/System/Library/Filesystems/hfs.fs/newfs_hfs`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -749.0.0.0.0
 +750.0.0.0.0
-   __TEXT.__text: 0x3164
-   __TEXT.__auth_stubs: 0x370
-   __TEXT.__const: 0x48
 ```

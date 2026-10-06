@@ -2,21 +2,22 @@
 
 > `/System/Library/ExtensionKit/Extensions/ReceiptsExtractionDiagnosticExtension.appex/ReceiptsExtractionDiagnosticExtension`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x875c` | `0x8760` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__eh_frame`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 376.0.1.0.0
--  __TEXT.__text: 0x875c
-+  __TEXT.__text: 0x8760
-   __TEXT.__auth_stubs: 0xa30
-   __TEXT.__objc_stubs: 0x580
-   __TEXT.__objc_methlist: 0x2c
+```text
 Functions:
 ~ sub_1000064d4 : 652 -> 656
 ```

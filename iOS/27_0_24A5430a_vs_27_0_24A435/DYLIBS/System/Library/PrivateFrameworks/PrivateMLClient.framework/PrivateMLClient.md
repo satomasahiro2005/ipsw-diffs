@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/PrivateMLClient.framework/PrivateMLClient`
 
-```diff
+### Section Size Changes
 
- 215.2.0.0.0
--  __TEXT.__text: 0x4376c8
-+  __TEXT.__text: 0x4376fc
-   __TEXT.__const: 0x32548
-   __TEXT.__swift5_typeref: 0x751e
-   __TEXT.__oslogstring: 0x79bc
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4376c8` | `0x4376fc` | **`+0x34`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_2218a2318 -> sub_2220d4318 : 26112 -> 26116
 ~ sub_2218f06ac -> sub_2221226b0 : 256 -> 264

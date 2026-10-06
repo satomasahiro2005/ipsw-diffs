@@ -2,19 +2,20 @@
 
 > `/System/Library/SystemConfiguration/IPConfiguration.bundle/IPConfiguration`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5cd9c` | `0x5cda4` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 557.0.0.0.0
--  __TEXT.__text: 0x5cd9c
-+  __TEXT.__text: 0x5cda4
-   __TEXT.__auth_stubs: 0x10d0
-   __TEXT.__const: 0x308
-   __TEXT.__oslogstring: 0x623e
+```text
 Functions:
 ~ sub_3e248 : 536 -> 532
 ~ _DHCPLeaseListUpdateLease : 680 -> 688

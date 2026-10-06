@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/ScreenTimeSettingsServices.framework/ScreenTimeSettingsServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x160534` | `0x16061c` | **`+0xe8`** |
+| `__AUTH_CONST.__auth_got` | `0x1010` | `0x1000` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
- 97.0.104.0.0
--  __TEXT.__text: 0x160534
-+  __TEXT.__text: 0x16061c
-   __TEXT.__objc_methlist: 0x458
-   __TEXT.__const: 0x1adcc
-   __TEXT.__swift5_typeref: 0x551e
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x10320
-   __AUTH_CONST.__objc_const: 0xfa8
--  __AUTH_CONST.__auth_got: 0x1010
-+  __AUTH_CONST.__auth_got: 0x1000
-   __AUTH.__objc_data: 0x198
-   __AUTH.__data: 0x870
-   __DATA.__data: 0x2a08
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 9169
--  Symbols:   2650
-+  Symbols:   2648
-   CStrings:  598
- 
+-  Symbols:   2517
++  Symbols:   2515
 Symbols:
 + _swift_release_x11
 - _objc_retain_x12

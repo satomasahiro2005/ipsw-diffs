@@ -2,17 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/CarPlayUIServices.framework/CarPlayUIServices`
 
-```diff
+### Section Size Changes
 
- 581.7.2.0.0
--  __TEXT.__text: 0x3896c
-+  __TEXT.__text: 0x38984
-   __TEXT.__objc_methlist: 0x398c
-   __TEXT.__const: 0xea4
-   __TEXT.__oslogstring: 0x1818
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3896c` | `0x38984` | **`+0x18`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_257272d70 -> sub_257e0bd70 : 2512 -> 2516
-~ sub_257273cbc -> sub_257e0ccc0 : 156 -> 160
-~ sub_257273d58 -> sub_257e0cd60 : 108 -> 112
-~ sub_257275064 -> sub_257e0e070 : 1868 -> 1880
+~ sub_25713cd70 -> sub_257cd4d70 : 2512 -> 2516
+~ sub_25713dcbc -> sub_257cd5cc0 : 156 -> 160
+~ sub_25713dd58 -> sub_257cd5d60 : 108 -> 112
+~ sub_25713f064 -> sub_257cd7070 : 1868 -> 1880
 ```

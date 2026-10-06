@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CopresenceCore.framework/CopresenceCore`
 
-```diff
+### Section Size Changes
 
- 303.100.1.0.0
--  __TEXT.__text: 0x2ed1b0
-+  __TEXT.__text: 0x2ed27c
-   __TEXT.__objc_methlist: 0x341c
-   __TEXT.__const: 0x160d4
-   __TEXT.__oslogstring: 0xff75
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2ed1b0` | `0x2ed27c` | **`+0xcc`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$ss30_dictionaryDownCastConditionalySDyq0_q1_GSgSDyxq_GSHRzSHR0_r2_lFSS_ypSSSo8NSObjectCTg5 : 596 -> 600
 ~ _$ss17_NativeDictionaryV20_copyOrMoveAndResize8capacity12moveElementsySi_SbtF10Foundation4UUIDV_14CopresenceCore10AttachmentCTg5 : 980 -> 992

@@ -2,16 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/SiriTranslationIntents.framework/SiriTranslationIntents`
 
-```diff
+### Section Size Changes
 
- 3600.10.5.0.0
--  __TEXT.__text: 0x5d914
-+  __TEXT.__text: 0x5d92c
-   __TEXT.__objc_methlist: 0x550
-   __TEXT.__const: 0x3d24
-   __TEXT.__swift5_typeref: 0x10b0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5d914` | `0x5d92c` | **`+0x18`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2a9b983fc -> sub_2aa9613fc : 2680 -> 2692
+~ sub_2a9a843fc -> sub_2aa84b3fc : 2680 -> 2692
 ~ _OUTLINED_FUNCTION_27 : 12 -> 16
 ~ _OUTLINED_FUNCTION_28 : 16 -> 20
 ~ _OUTLINED_FUNCTION_29 : 20 -> 16
@@ -20,12 +21,12 @@ Functions:
 ~ _OUTLINED_FUNCTION_33 -> _OUTLINED_FUNCTION_34 : 16 -> 12
 ~ _OUTLINED_FUNCTION_25 : 12 -> 20
 ~ _OUTLINED_FUNCTION_29 -> _OUTLINED_FUNCTION_27 : 20 -> 12
-~ sub_2a9bb61a0 -> sub_2aa97f1ac : 680 -> 684
+~ sub_2a9aa21a0 -> sub_2aa8691ac : 680 -> 684
 ~ _OUTLINED_FUNCTION_72 : 28 -> 12
 ~ _OUTLINED_FUNCTION_81 : 12 -> 44
 ~ _OUTLINED_FUNCTION_82 : 44 -> 24
 ~ _OUTLINED_FUNCTION_83 : 24 -> 28
-~ sub_2a9bcbcc0 -> sub_2aa994cd0 : 632 -> 640
+~ sub_2a9ab7cc0 -> sub_2aa87ecd0 : 632 -> 640
 ~ _OUTLINED_FUNCTION_1 : 12 -> 16
 ~ _OUTLINED_FUNCTION_4 -> _OUTLINED_FUNCTION_2 : 16 -> 12
 ~ _OUTLINED_FUNCTION_6 : 28 -> 16

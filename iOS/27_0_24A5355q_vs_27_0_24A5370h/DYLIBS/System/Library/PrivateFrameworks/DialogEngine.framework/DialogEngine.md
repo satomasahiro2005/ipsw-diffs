@@ -2,140 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/DialogEngine.framework/DialogEngine`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x461890` | `0x4610b0` | **`-0x7e0`** |
+| `__TEXT.__gcc_except_tab` | `0x390c4` | `0x3910c` | **`+0x48`** |
+| `__DATA.__data` | `0x56c` | `0x52c` | **`-0x40`** |
+| `__AUTH_CONST.__auth_got` | `0xf20` | `0xf40` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x142c0` | `0x142d8` | **`+0x18`** |
+| `__DATA.__bss` | `0x2df8` | `0x2de8` | **`-0x10`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
 -3600.17.2.0.0
--  __TEXT.__text: 0x461890 sha256:cd4f375037d7cd0478544503949a1e7fd1c71e1f903ad0bba681b3a1a5686fcc
--  __TEXT.__init_offsets: 0x28 sha256:cf34e3e8604a3dc4fb78e44bb333a90c6a226baea9ba1dcde22561c6be49ba46
--  __TEXT.__objc_methlist: 0x3394 sha256:605e5911f9dcd370188f581500d0781a35e7f1ee1988f5d9eecf9c822260d21e
--  __TEXT.__const: 0x1c888 sha256:d334a178deb40807b934c28f40c24eea889697f58afd1ffe7dbfe3c653b36a55
--  __TEXT.__cstring: 0x691cd sha256:8b4702c9b227b879896aea332e835e5e0921ca3c89fcbff66d9121c49197d656
--  __TEXT.__gcc_except_tab: 0x390c4 sha256:a888ab574f8bb84725f0eb5eebf95e137f28df5fbce82f38a1342e7bbe5fb0d7
 +3600.23.3.0.0
-+  __TEXT.__text: 0x4610b0 sha256:58123b69e4c19e72b082c464a0a17b772bda6755abfa16044b4cbec87858f0e1
-+  __TEXT.__init_offsets: 0x28 sha256:8845f8220d004849d1041624faf73e382bc5a96cd72133c7c36b374740b49a04
-+  __TEXT.__objc_methlist: 0x3394 sha256:8c411c9830a85009ab206de3cc237462d4a97ead1c013df945ad7ef169f075b7
-+  __TEXT.__const: 0x1c888 sha256:8b555c0dce36608b056c1915c8c9ac7965f6d40900961ba430602e20fc420a24
-+  __TEXT.__cstring: 0x691cd sha256:9e7ca40c51f095082437487c3cbf0ee9b1be11e3e0ba1cd37dbdcb20c52238e2
-+  __TEXT.__gcc_except_tab: 0x3910c sha256:7fbae3f1151a0ff5f6da0cfe6b3e79444b199b1699a72faa74d68643dd44fc3c
-   __TEXT.__oslogstring: 0x303 sha256:589d5cf3202864860a13abe7905d136922e8fe4f9d4bd5955a95ed37939d1d3e
-   __TEXT.__ustring: 0xca sha256:3703090fcbceebe33f6b4ef96966e9ab59588bdb331718bd8194bb191ae558bd
--  __TEXT.__unwind_info: 0x142c0 sha256:d3fd7605db90c1dfa1b1fa882a887469fa92ad7db4666691b3704f48d2086b57
-+  __TEXT.__unwind_info: 0x142d8 sha256:3e5a5abbba445a95780e5910e06104c187d171b46f1a99c31fe1c1d70d2a10a5
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2dc0 sha256:61f30df3ecac650d602d8deb50c1a16f1fac4dbe8c567419407ef0a964772a25
--  __DATA_CONST.__objc_classlist: 0x290 sha256:e07e723e3b1c594c333c0dbfcc1ea8cc958a4693d72ba4ce09213ea689e1f885
--  __DATA_CONST.__objc_protolist: 0x20 sha256:334743233a18109092f66ac0df7fd680cf5743098fb680fa9bad8d1489a17343
-+  __DATA_CONST.__const: 0x2dc0 sha256:6ff0b4e6219d54a1085e354b418e068bfafea42074693271f0f2286d7bbb8df5
-+  __DATA_CONST.__objc_classlist: 0x290 sha256:53d5cf7b0b91082fb8cbfadcd7cd5373086729e61038a6cdd11caf59858bb5b8
-+  __DATA_CONST.__objc_protolist: 0x20 sha256:01db9f5385b4e2927de3460822ca47e551d0e5181b174aec3531ec9d8fadf235
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x20 sha256:117004192d5199a617664ac44c1deca106d4c0c14ca2650bb593cd8efd7dd529
--  __DATA_CONST.__objc_selrefs: 0x1970 sha256:7110684bb60a75c093b77cf583af3507414695ba9da692362c1ea450ec6a0026
--  __DATA_CONST.__objc_superrefs: 0x170 sha256:b692cd2db4d07423ba512f8786eb8b0261c349345ca8fe33861553776adc426c
--  __DATA_CONST.__objc_arraydata: 0x188 sha256:3b4527d0341387fb5e2208c14deec5a01d21c86cf5fbe83c200019458a3b0fb9
--  __DATA_CONST.__got: 0x5c0 sha256:b8b1be43c96d32767c4d1968e9eeb6180306a270ff3db49b0e25c67f4942714a
--  __AUTH_CONST.__const: 0x12f00 sha256:6302a76f17ed7faf9f564d2805a714b88d3994e4066892fdb7863d2866444b7b
--  __AUTH_CONST.__cfstring: 0x1b80 sha256:506f80e6679ed773c7acfc0a7100413c1a30db2cb0f5202a585afab2ce335643
--  __AUTH_CONST.__objc_const: 0x6248 sha256:960d47bade7b55ff56727cbdb8f7ee8854880e334cf15caf076e32cd75c3d8dc
--  __AUTH_CONST.__weak_auth_got: 0x158 sha256:d83549383a038bcc035281f6b34900f3c08b47baad0278649663396797688f82
--  __AUTH_CONST.__objc_arrayobj: 0x1f8 sha256:fdd0a17c9867f76c87f09532375ae4a0604fc018ecce69bff0ccca38afff7103
--  __AUTH_CONST.__objc_intobj: 0x60 sha256:1d8e2d342eb0109c0a59d6fe1361d39d6f927319b5a3212b9c7ca00357dd3837
--  __AUTH_CONST.__objc_dictobj: 0x50 sha256:6933edf08c6998cc8b98d5fdf2d8dc4c25fc3a17e756f91b7afa298936bb2a55
--  __AUTH_CONST.__auth_got: 0xf20 sha256:3dfad550a5e1cd92b601651c5d77b3577d128d449b54d05073501b846b2a24af
--  __AUTH.__objc_data: 0x1900 sha256:5ee9369fa27510b018382a427dc28b5328632e514236d994810f8d8cc14fa401
--  __AUTH.__data: 0x940 sha256:1d0223daaf8942902e401fc03cdc6fb437ac6a9d695a5be0936a731911a3b303
--  __AUTH.__thread_vars: 0x18 sha256:793754731005c9c5386623b3c70e525c0b45408db0ed694df88b5fd9f189b13f
-+  __DATA_CONST.__weak_got: 0x20 sha256:d50e05ce78c9e887042d2e19aa012b77bde3d8a1e8b91fdb2a8221119e194364
-+  __DATA_CONST.__objc_selrefs: 0x1970 sha256:31eaf1f0bee5172e8fc6e94ab11bcd006c9f8dbc1f0c0ec26d2eee462dda6539
-+  __DATA_CONST.__objc_superrefs: 0x170 sha256:b439cdae73a69efe4111ccad3187ff05bf62a832df7effc3f933e15adb58c164
-+  __DATA_CONST.__objc_arraydata: 0x188 sha256:ba489006af187858cd5a9f8cda863645ccd98c0c331c397d7aca9e198055c1c1
-+  __DATA_CONST.__got: 0x5c0 sha256:55aec8fc91691ea354e44e3e2fb830ead53fd70762420731c6d9416334614281
-+  __AUTH_CONST.__const: 0x12f00 sha256:e890c76069ca8f6af0050f7ef094045bb9837435c75a0d768832ea0e8efc43a8
-+  __AUTH_CONST.__cfstring: 0x1b80 sha256:d9761ab63f27c3585ffdc7354db8f8e796e28bfe82122f4cad94fedd94917b9d
-+  __AUTH_CONST.__objc_const: 0x6248 sha256:c3f929d33d677e44e98a6e05ef54aa05b10ef8d629580a9f696e2d12c6f16825
-+  __AUTH_CONST.__weak_auth_got: 0x158 sha256:10a3f01bfbf1f22766f510d055d0fb36ac058df55d353b5d282337d9cc4dea8c
-+  __AUTH_CONST.__objc_arrayobj: 0x1f8 sha256:d01f0e4e8bfa7ccf74be8ec61def0ee8e0205de6b2108fa38ab2bd4a1a27ec91
-+  __AUTH_CONST.__objc_intobj: 0x60 sha256:dfafcbc76376c5807e688f2d74223e1152e9b0d33a27a0f6dca1695eca7a666f
-+  __AUTH_CONST.__objc_dictobj: 0x50 sha256:04dd90209f25c449be0d15da489d1966c23cfb5906dcc6e3e2d85b59e4bdde2f
-+  __AUTH_CONST.__auth_got: 0xf40 sha256:e4730b22fdaee18fd70b12b9380561861428042aaaaaf79350886115e5b5c931
-+  __AUTH.__objc_data: 0x1900 sha256:5b24fa5915cae9f0045c1fcc3a8b9961265e81017e9f66e48f37321cd3703f39
-+  __AUTH.__data: 0x940 sha256:87f4571aa00500912c7f225b47f621929388a453754b1f8019c90836553af8b2
-+  __AUTH.__thread_vars: 0x18 sha256:0ab42550f05864bcabcdbf23501a954f6af88f163bd1294aff92cd0f2b4ea3a0
-   __AUTH.__thread_bss: 0x8 sha256:af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc
-   __DATA.__objc_ivar: 0x3b8 sha256:dc66fc11fb21c02d4a964b3f9ef4b503cb9ba5a202a1ce2f7d487728869d01d8
--  __DATA.__data: 0x56c sha256:a89662d5707d736d5dd937a31db8f6f167a50bd649f32ad34bbfd2acef33452d
-+  __DATA.__data: 0x52c sha256:1ec1ab5e3ae603a7e9ff9f6a23d8da4a99a266993670857c428fa81db25833b7
-   __DATA.__common: 0x1399 sha256:eb6f8263c72a3649ad3ec7b1c212c48aa0bf9eca4c9c460ba716b00d966ac74c
--  __DATA.__bss: 0x2df8 sha256:0d718ad0439ba44148d79d72ff40c57c83af6393a7822c7ad57f3f541f3aca25
--  __DATA_DIRTY.__objc_data: 0xa0 sha256:c605640a60c943cefff6997a2a97252f8bdbb8933f05c075b4150d52e0d226da
--  __DATA_DIRTY.__data: 0x1800 sha256:f11188892fc664d9baa9f4b1e107a180436821abfaf0f0c36b3bf12f86ceb765
-+  __DATA.__bss: 0x2de8 sha256:3e27e93a9345350f27328b4368c32f51a2764b27b250ad5fddd816899f460638
-+  __DATA_DIRTY.__objc_data: 0xa0 sha256:b18109acd59a8a75065330f230f22c32ddce76efde03c48470d033e85375dcfa
-+  __DATA_DIRTY.__data: 0x1800 sha256:a0b718c57357f40459f972eb984a1dc9104130fac06141f4db9fa7b9679e14b1
-   __DATA_DIRTY.__common: 0x29b8 sha256:79ca253e501481c1347e310efde266389b5523ef586550cb2bcd26a59fa960d4
-   __DATA_DIRTY.__bss: 0x268 sha256:f9d54bbe3ccaf08564c2928c55218a3f696989a05dffc8edf057773751aae153
-   - /System/Library/Frameworks/Contacts.framework/Contacts
 
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libxml2.2.dylib
-   - /usr/lib/libz.1.dylib
--  UUID: 32615E0B-9818-37F0-B8FA-898B71CCBD64
-+  UUID: 07A2D8E6-DFE3-3B0C-964F-7D55F81D0387
-   Functions: 15887
--  Symbols:   36351
-+  Symbols:   36354
-   CStrings:  25812
- 
+-  Symbols:   25321
++  Symbols:   25324
 Symbols:
-+ __ZL22file_default_instances.23031
-+ __ZL22file_default_instances.23075
-+ __ZL22file_default_instances.23843
-+ __ZL22file_default_instances.23904
-+ __ZL22file_default_instances.23950
-+ __ZL22file_default_instances.24076
-+ __ZL22file_default_instances.24109
-+ __ZL22file_default_instances.24363
-+ __ZL22file_default_instances.24438
-+ __ZL22file_default_instances.4324
-+ __ZL22file_default_instances.5208
-+ __ZL22file_default_instances.5939
-+ __ZL22file_default_instances.6126
-+ __ZL22file_default_instances.6750
-+ __ZL22file_default_instances.6845
-+ __ZL22file_default_instances.6971
-+ __ZL22file_default_instances.7748
-+ __ZL22file_default_instances.7845
-+ __ZL22file_default_instances.8025
-+ __ZL22file_default_instances.9347
-+ __ZL22file_default_instances.9509
-+ __ZL22file_default_instances.9598
-+ __ZL7schemas.23030
-+ __ZL7schemas.23074
-+ __ZL7schemas.23842
-+ __ZL7schemas.23903
-+ __ZL7schemas.23949
-+ __ZL7schemas.24075
-+ __ZL7schemas.24108
-+ __ZL7schemas.24362
-+ __ZL7schemas.24437
-+ __ZL7schemas.4323
-+ __ZL7schemas.5207
-+ __ZL7schemas.5938
-+ __ZL7schemas.6125
-+ __ZL7schemas.6749
-+ __ZL7schemas.6844
-+ __ZL7schemas.6970
-+ __ZL7schemas.7747
-+ __ZL7schemas.7844
-+ __ZL7schemas.8024
-+ __ZL7schemas.9346
-+ __ZL7schemas.9508
-+ __ZL7schemas.9597
 + __ZN7morphun4util12LoggerConfig11getLogLevelEv
 + __ZN7morphun4util12LoggerConfig11setLogLevelE9MLogLevel
 + __ZN7morphun4util12LoggerConfig12logToConsoleEb
@@ -1471,78 +1362,7 @@ Symbols:
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeIPKcN6google8protobuf6SymbolEEENS_22__unordered_map_hasherIS3_NS_4pairIKS3_S6_EENS5_4hashIS3_EENS5_5streqEEENS_21__unordered_map_equalIS3_SB_SE_SD_EENS_9allocatorISB_EEE16__emplace_uniqueB9fqe220106IJRKSB_EEENS9_INS_15__hash_iteratorIPNS_11__hash_nodeIS7_PvEEEEbEEDpOT_ENKUlRSA_SN_E_clESY_SN_
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeIPKcPKN6google8protobuf14FileDescriptorEEENS_22__unordered_map_hasherIS3_NS_4pairIKS3_S8_EENS5_4hashIS3_EENS5_5streqEEENS_21__unordered_map_equalIS3_SD_SG_SF_EENS_9allocatorISD_EEE16__emplace_uniqueB9fqe220106IJRKSD_EEENSB_INS_15__hash_iteratorIPNS_11__hash_nodeIS9_PvEEEEbEEDpOT_ENKUlRSC_SP_E_clES10_SP_
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeIPKcPKN6google8protobuf8internal15DescriptorTableEEENS_22__unordered_map_hasherIS3_NS_4pairIKS3_S9_EENS5_4hashIS3_EENS5_5streqEEENS_21__unordered_map_equalIS3_SE_SH_SG_EENS_9allocatorISE_EEE16__emplace_uniqueB9fqe220106IJRKSE_EEENSC_INS_15__hash_iteratorIPNS_11__hash_nodeISA_PvEEEEbEEDpOT_ENKUlRSD_SQ_E_clES11_SQ_
-+ ___41-[DEExecutor executeWithCompletionBlock:]_block_invoke.500
-+ ___Block_byref_object_copy_.5348
-+ ___Block_byref_object_copy_.7650
-+ ___Block_byref_object_copy_.8491
-+ ___Block_byref_object_dispose_.5349
-+ ___Block_byref_object_dispose_.7651
-+ ___Block_byref_object_dispose_.8492
-+ ____ZZN4siri12dialogengine12GetUAFAssetsEvENK3$_0clEv_block_invoke.388
-+ ___assign_helper_atomic_property_.23171
-+ ___assign_helper_atomic_property_.24246
-+ ___assign_helper_atomic_property_.4455
-+ ___assign_helper_atomic_property_.6506
-+ ___assign_helper_atomic_property_.7420
-+ ___assign_helper_atomic_property_.8001
-+ ___assign_helper_atomic_property_.8173
-+ ___assign_helper_atomic_property_.8921
-+ ___assign_helper_atomic_property_.9271
-+ ___block_literal_global.390
-+ ___copy_helper_atomic_property_.23173
-+ ___copy_helper_atomic_property_.24248
-+ ___copy_helper_atomic_property_.4457
-+ ___copy_helper_atomic_property_.6508
-+ ___copy_helper_atomic_property_.7422
-+ ___copy_helper_atomic_property_.8003
-+ ___copy_helper_atomic_property_.8175
-+ ___copy_helper_atomic_property_.8923
-+ ___copy_helper_atomic_property_.9273
 - __ZGVZN4siri12dialogengine12GetUAFAssetsEvE13assetSetMutex
-- __ZL22file_default_instances.23032
-- __ZL22file_default_instances.23076
-- __ZL22file_default_instances.23844
-- __ZL22file_default_instances.23905
-- __ZL22file_default_instances.23951
-- __ZL22file_default_instances.24077
-- __ZL22file_default_instances.24110
-- __ZL22file_default_instances.24364
-- __ZL22file_default_instances.24439
-- __ZL22file_default_instances.4323
-- __ZL22file_default_instances.5207
-- __ZL22file_default_instances.5938
-- __ZL22file_default_instances.6125
-- __ZL22file_default_instances.6749
-- __ZL22file_default_instances.6844
-- __ZL22file_default_instances.6970
-- __ZL22file_default_instances.7747
-- __ZL22file_default_instances.7844
-- __ZL22file_default_instances.8024
-- __ZL22file_default_instances.9348
-- __ZL22file_default_instances.9510
-- __ZL22file_default_instances.9599
-- __ZL7schemas.23031
-- __ZL7schemas.23075
-- __ZL7schemas.23843
-- __ZL7schemas.23904
-- __ZL7schemas.23950
-- __ZL7schemas.24076
-- __ZL7schemas.24109
-- __ZL7schemas.24363
-- __ZL7schemas.24438
-- __ZL7schemas.4322
-- __ZL7schemas.5206
-- __ZL7schemas.5937
-- __ZL7schemas.6124
-- __ZL7schemas.6748
-- __ZL7schemas.6843
-- __ZL7schemas.6969
-- __ZL7schemas.7746
-- __ZL7schemas.7843
-- __ZL7schemas.8023
-- __ZL7schemas.9347
-- __ZL7schemas.9509
-- __ZL7schemas.9598
 - __ZNKSt3__111__copy_implclB9fqe220100IPN4siri12dialogengine12UpdatableDirES5_S5_Li0EEENS_4pairIT_T1_EES7_T0_S8_
 - __ZNKSt3__111__copy_implclB9fqe220100IPN4siri12dialogengine13DatabaseFieldES5_S5_Li0EEENS_4pairIT_T1_EES7_T0_S8_
 - __ZNKSt3__111__copy_implclB9fqe220100IPN4siri12dialogengine26DialogMetadataDisplayValueES5_S5_Li0EEENS_4pairIT_T1_EES7_T0_S8_
@@ -2874,37 +2694,9 @@ Symbols:
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeIPKcN6google8protobuf6SymbolEEENS_22__unordered_map_hasherIS3_NS_4pairIKS3_S6_EENS5_4hashIS3_EENS5_5streqEEENS_21__unordered_map_equalIS3_SB_SE_SD_EENS_9allocatorISB_EEE16__emplace_uniqueB9fqe220100IJRKSB_EEENS9_INS_15__hash_iteratorIPNS_11__hash_nodeIS7_PvEEEEbEEDpOT_ENKUlRSA_SN_E_clESY_SN_
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeIPKcPKN6google8protobuf14FileDescriptorEEENS_22__unordered_map_hasherIS3_NS_4pairIKS3_S8_EENS5_4hashIS3_EENS5_5streqEEENS_21__unordered_map_equalIS3_SD_SG_SF_EENS_9allocatorISD_EEE16__emplace_uniqueB9fqe220100IJRKSD_EEENSB_INS_15__hash_iteratorIPNS_11__hash_nodeIS9_PvEEEEbEEDpOT_ENKUlRSC_SP_E_clES10_SP_
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeIPKcPKN6google8protobuf8internal15DescriptorTableEEENS_22__unordered_map_hasherIS3_NS_4pairIKS3_S9_EENS5_4hashIS3_EENS5_5streqEEENS_21__unordered_map_equalIS3_SE_SH_SG_EENS_9allocatorISE_EEE16__emplace_uniqueB9fqe220100IJRKSE_EEENSC_INS_15__hash_iteratorIPNS_11__hash_nodeISA_PvEEEEbEEDpOT_ENKUlRSD_SQ_E_clES11_SQ_
-- ___41-[DEExecutor executeWithCompletionBlock:]_block_invoke.494
-- ___Block_byref_object_copy_.5347
-- ___Block_byref_object_copy_.7649
-- ___Block_byref_object_copy_.8490
-- ___Block_byref_object_dispose_.5348
-- ___Block_byref_object_dispose_.7650
-- ___Block_byref_object_dispose_.8491
-- ____ZZN4siri12dialogengine12GetUAFAssetsEvENK3$_0clEv_block_invoke.382
-- ___assign_helper_atomic_property_.23172
-- ___assign_helper_atomic_property_.24247
-- ___assign_helper_atomic_property_.4454
-- ___assign_helper_atomic_property_.6505
-- ___assign_helper_atomic_property_.7419
-- ___assign_helper_atomic_property_.8000
-- ___assign_helper_atomic_property_.8172
-- ___assign_helper_atomic_property_.8922
-- ___assign_helper_atomic_property_.9272
-- ___block_literal_global.384
-- ___copy_helper_atomic_property_.23174
-- ___copy_helper_atomic_property_.24249
-- ___copy_helper_atomic_property_.4456
-- ___copy_helper_atomic_property_.6507
-- ___copy_helper_atomic_property_.7421
-- ___copy_helper_atomic_property_.8002
-- ___copy_helper_atomic_property_.8174
-- ___copy_helper_atomic_property_.8924
-- ___copy_helper_atomic_property_.9274
 CStrings:
 + "3600.23.3"
 + "CAT Request (Dialog Engine 3600.23.3)"
 - "3600.17.2"
 - "CAT Request (Dialog Engine 3600.17.2)"
-
 ```

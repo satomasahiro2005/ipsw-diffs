@@ -2,53 +2,30 @@
 
 > `/System/Library/AccessibilityBundles/SpringBoard.axbundle/SpringBoard`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3a738` | `0x3a7d0` | **`+0x98`** |
+| `__AUTH_CONST.__cfstring` | `0xbc20` | `0xbc80` | **`+0x60`** |
+| `__TEXT.__oslogstring` | `0x9fb` | `0xa3b` | **`+0x40`** |
+| `__TEXT.__cstring` | `0xa657` | `0xa686` | **`+0x2f`** |
+| `__DATA_CONST.__const` | `0xe18` | `0xdf0` | **`-0x28`** |
+| `__TEXT.__gcc_except_tab` | `0xb50` | `0xb40` | **`-0x10`** |
+| `__TEXT.__objc_methlist` | `0x4d0c` | `0x4d1c` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2630` | `0x2638` | **`+0x8`** |
+| `__TEXT.__const` | `0xe8` | `0xe0` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x1360` | `0x1368` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3050.3.1.0.0
--  __TEXT.__text: 0x390b8
--  __TEXT.__objc_methlist: 0x4d0c
 +3050.3.5.0.0
-+  __TEXT.__text: 0x39144
-+  __TEXT.__objc_methlist: 0x4d1c
-   __TEXT.__dlopen_cstrs: 0x98
--  __TEXT.__const: 0xe8
--  __TEXT.__gcc_except_tab: 0xb50
--  __TEXT.__cstring: 0xa657
--  __TEXT.__oslogstring: 0x9fb
-+  __TEXT.__const: 0xe0
-+  __TEXT.__gcc_except_tab: 0xb40
-+  __TEXT.__cstring: 0xa686
-+  __TEXT.__oslogstring: 0xa3b
-   __TEXT.__unwind_info: 0x1718
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xe18
-+  __DATA_CONST.__const: 0xdf0
-   __DATA_CONST.__objc_classlist: 0x970
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2630
-+  __DATA_CONST.__objc_selrefs: 0x2638
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x3d8
-   __DATA_CONST.__objc_arraydata: 0x30
-   __DATA_CONST.__got: 0x5d0
-   __AUTH_CONST.__const: 0x770
--  __AUTH_CONST.__cfstring: 0xbc20
-+  __AUTH_CONST.__cfstring: 0xbc80
-   __AUTH_CONST.__objc_const: 0xb390
-   __AUTH_CONST.__objc_intobj: 0xf0
-   __AUTH_CONST.__objc_arrayobj: 0x48
 
-   - /usr/lib/libobjc.A.dylib
-   Functions: 1619
-   Symbols:   3855
 -  CStrings:  1666
 +  CStrings:  1670
- 
 Symbols:
 + -[SBLockScreenManagerAccessibility _axAuthenticationFailureAnnouncement:]
 + -[SpringBoardAccessibility _axAcquireOrientationDeferralAssertionForDisplayID:]

@@ -2,15 +2,16 @@
 
 > `/Applications/DiagnosticsService.app/PlugIns/Diagnostic-4153.appex/Diagnostic-4153`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x1e8` | `0x1f0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_dictobj: 0xa0
-   __DATA_CONST.__objc_doubleobj: 0x20
-   __DATA_CONST.__auth_got: 0x220
--  __DATA_CONST.__got: 0x1e8
-+  __DATA_CONST.__got: 0x1f0
-   __DATA.__objc_const: 0x1238
-   __DATA.__objc_selrefs: 0xc40
-   __DATA.__objc_ivar: 0xdc
-
+-1369.0.0.0.0
++1374.0.5.0.0
 ```

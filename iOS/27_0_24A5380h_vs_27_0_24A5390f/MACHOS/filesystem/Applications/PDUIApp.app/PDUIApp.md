@@ -2,72 +2,49 @@
 
 > `/Applications/PDUIApp.app/PDUIApp`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__objc_const` | `0x820` | `0xd78` | **`+0x558`** |
+| `__TEXT.__objc_methname` | `0xf5d` | `0x12db` | **`+0x37e`** |
+| `__TEXT.__objc_methtype` | `0x999` | `0xc36` | **`+0x29d`** |
+| `__TEXT.__text` | `0x7d8` | `0xa54` | **`+0x27c`** |
+| `__TEXT.__objc_methlist` | `0x46c` | `0x5c0` | **`+0x154`** |
+| `__TEXT.__objc_stubs` | `0x440` | `0x560` | **`+0x120`** |
+| `__DATA.__objc_selrefs` | `0x3b0` | `0x490` | **`+0xe0`** |
+| `__DATA.__data` | `0x120` | `0x1e0` | **`+0xc0`** |
+| `__DATA.__objc_data` | `0xa0` | `0xf0` | **`+0x50`** |
+| `__TEXT.__objc_classname` | `0x61` | `0xa1` | **`+0x40`** |
+| `__DATA_CONST.__cfstring` | `—` | `0x20` | **`+0x20`** |
+| `__TEXT.__auth_stubs` | `0x210` | `0x1f0` | **`-0x20`** |
+| `__TEXT.__cstring` | `0x1a` | `0x34` | **`+0x1a`** |
+| `__DATA_CONST.__got` | `0x48` | `0x60` | **`+0x18`** |
+| `__DATA_CONST.__auth_got` | `0x110` | `0x100` | **`-0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x18` | `0x28` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0xc` | `0x14` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x10` | `0x18` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x90` | `0x98` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__DATA_CONST.__const`
+
+### Other Changes
 
 ```diff
 
 -49.0.0.0.0
--  __TEXT.__text: 0x7d8
--  __TEXT.__auth_stubs: 0x210
--  __TEXT.__objc_stubs: 0x440
--  __TEXT.__objc_methlist: 0x46c
 +49.0.1.0.0
-+  __TEXT.__text: 0xa54
-+  __TEXT.__auth_stubs: 0x1f0
-+  __TEXT.__objc_stubs: 0x560
-+  __TEXT.__objc_methlist: 0x5c0
-   __TEXT.__const: 0x10
--  __TEXT.__cstring: 0x1a
--  __TEXT.__objc_classname: 0x61
--  __TEXT.__objc_methname: 0xf5d
--  __TEXT.__objc_methtype: 0x999
--  __TEXT.__unwind_info: 0x90
-+  __TEXT.__cstring: 0x34
-+  __TEXT.__objc_classname: 0xa1
-+  __TEXT.__objc_methname: 0x12db
-+  __TEXT.__objc_methtype: 0xc36
-+  __TEXT.__unwind_info: 0x98
-   __DATA_CONST.__const: 0x88
--  __DATA_CONST.__objc_classlist: 0x10
--  __DATA_CONST.__objc_protolist: 0x18
-+  __DATA_CONST.__cfstring: 0x20
-+  __DATA_CONST.__objc_classlist: 0x18
-+  __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x110
--  __DATA_CONST.__got: 0x48
--  __DATA.__objc_const: 0x820
--  __DATA.__objc_selrefs: 0x3b0
--  __DATA.__objc_ivar: 0xc
--  __DATA.__objc_data: 0xa0
--  __DATA.__data: 0x120
-+  __DATA_CONST.__auth_got: 0x100
-+  __DATA_CONST.__got: 0x60
-+  __DATA.__objc_const: 0xd78
-+  __DATA.__objc_selrefs: 0x490
-+  __DATA.__objc_ivar: 0x14
-+  __DATA.__objc_data: 0xf0
-+  __DATA.__data: 0x1e0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-+  - /System/Library/PrivateFrameworks/AppRestrictionsCore.framework/AppRestrictionsCore
-   - /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard
-   - /System/Library/PrivateFrameworks/DataMigration.framework/DataMigration
-   - /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
 
-   - /System/Library/PrivateFrameworks/SpringBoardUIServices.framework/SpringBoardUIServices
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
++  - /System/Library/PrivateFrameworks/AppRestrictionsCore.framework/AppRestrictionsCore
+
 -  Functions: 16
 -  Symbols:   52
 -  CStrings:  209
 +  Functions: 21
 +  Symbols:   55
 +  CStrings:  261
- 
 Symbols:
 + _OBJC_CLASS_$_NSObject
 + _OBJC_CLASS_$_UISceneConfiguration

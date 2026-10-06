@@ -2,49 +2,30 @@
 
 > `/System/Library/VideoCodecs/ave.videoencoder`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x16fc0c` | `0x172070` | **`+0x2464`** |
+| `__TEXT.__cstring` | `0x4c3fc` | `0x4c88d` | **`+0x491`** |
+| `__AUTH_CONST.__const` | `0x57d0` | `0x58d0` | **`+0x100`** |
+| `__AUTH_CONST.__cfstring` | `0x3020` | `0x3060` | **`+0x40`** |
+| `__TEXT.__const` | `0x252b4` | `0x25294` | **`-0x20`** |
+| `__DATA_DIRTY.__bss` | `0x1060` | `0x1068` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -913.29.1.0.0
--  __TEXT.__text: 0x16fc0c
 +913.43.1.0.0
-+  __TEXT.__text: 0x172070
-   __TEXT.__init_offsets: 0xc
--  __TEXT.__const: 0x252b4
-+  __TEXT.__const: 0x25294
-   __TEXT.__gcc_except_tab: 0x6e4
--  __TEXT.__cstring: 0x4c3fc
-+  __TEXT.__cstring: 0x4c88d
-   __TEXT.__unwind_info: 0xa48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__weak_got: 0x8
-   __DATA_CONST.__objc_selrefs: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x57d0
--  __AUTH_CONST.__cfstring: 0x3020
-+  __AUTH_CONST.__const: 0x58d0
-+  __AUTH_CONST.__cfstring: 0x3060
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__auth_got: 0x760
-   __DATA.__data: 0x80
-   __DATA_DIRTY.__data: 0x20
--  __DATA_DIRTY.__bss: 0x1060
-+  __DATA_DIRTY.__bss: 0x1068
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1527
--  Symbols:   2329
--  CStrings:  6329
+-  Symbols:   2328
+-  CStrings:  6331
 +  Functions: 1535
-+  Symbols:   2337
-+  CStrings:  6353
- 
++  Symbols:   2336
++  CStrings:  6355
 Symbols:
 + __Z23AVE_MCTF_AdjustStrengthPK19_S_AVE_ISP_MetadataS1_14_E_AVE_DevType20_E_AVE_MCTF_WorkModePiP24_E_AVE_MCTF_ParamSetTypeS4_S4_
 + __Z25AVE_MCTF_DecideGatingTypeiiPK19_S_AVE_ISP_Metadata14_E_AVE_DevType20_E_AVE_MCTF_WorkMode16_E_AVE_MCTF_ModeP22_E_AVE_MCTF_GatingType
@@ -85,6 +66,8 @@ CStrings:
 + "%lld %d AVE %s: %s:%d %s | wrong params, %d %p %d %d %d\n"
 + "%lld %d AVE %s: fail to send PS %p %p %d, dropping frame"
 + "%lld %d AVE %s: fail to send PS %p %p %d, dropping frame\n"
++ "21:51:08"
++ "21:51:09"
 + "913.43.1"
 + "AVE_MCTFFnumChangeResetMCTF"
 + "AVE_MCTFGatingType"
@@ -101,6 +84,7 @@ CStrings:
 + "AVE_Prop_HEVC_GetMCTFPreFiltAdjType"
 + "AVE_Prop_HEVC_SetMCTFGatingType"
 + "AVE_Prop_HEVC_SetMCTFPreFiltAdjType"
++ "Aug  5 2026"
 + "MCTFGatingType"
 + "MCTFGatingType = %d\n"
 + "MCTFPreFiltAdjType"
@@ -129,8 +113,11 @@ CStrings:
 - "%lld %d AVE %s: %s:%d %s | wrong params, %p %d %d %d %p\n"
 - "%lld %d AVE %s: %s::%s:%d %s | fail to send PS %p %p"
 - "%lld %d AVE %s: %s::%s:%d %s | fail to send PS %p %p\n"
+- "21:35:16"
+- "21:35:17"
 - "913.29.1"
 - "AVE_MCTF_GetGatingType"
 - "AVE_MCTF_GetPreFiltAdjType"
+- "Jul 14 2026"
 - "psData != __null && eDevType > AVE_DevType_None && eDevType < AVE_DevType_Max && eWorkMode > AVE_MCTF_WorkMode_None && eWorkMode < AVE_MCTF_WorkMode_Max && eLatencyMode > AVE_MCTF_Mode_Invalid && eLatencyMode < AVE_MCTF_Mode_Max"
 ```

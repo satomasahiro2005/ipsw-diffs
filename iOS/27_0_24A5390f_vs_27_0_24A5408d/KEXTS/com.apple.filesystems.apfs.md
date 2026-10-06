@@ -2,34 +2,26 @@
 
 > `com.apple.filesystems.apfs`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x1512ec` | `0x1515a4` | **`+0x2b8`** |
+| `__TEXT.__cstring` | `0x4fdbb` | `0x4ff2d` | **`+0x172`** |
+| `__TEXT_EXEC.__auth_stubs` | `0x2330` | `0x2360` | **`+0x30`** |
+| `__DATA_CONST.__auth_got` | `0x1198` | `0x11b0` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
 -3283.0.13.0.0
-+3288.2.1.0.0
-   __TEXT.__const: 0x94c
--  __TEXT.__cstring: 0x4fdbb
--  __TEXT_EXEC.__text: 0x1512ec
--  __TEXT_EXEC.__auth_stubs: 0x2330
-+  __TEXT.__cstring: 0x4ff2d
-+  __TEXT_EXEC.__text: 0x1515a4
-+  __TEXT_EXEC.__auth_stubs: 0x2360
-   __DATA.__data: 0x75c
-   __DATA.__bss: 0xd80
-   __DATA_CONST.__mod_init_func: 0x10
-
-   __DATA_CONST.__kalloc_type: 0x5440
-   __DATA_CONST.__kalloc_var: 0x2bc0
-   __DATA_CONST.__assert: 0x14
--  __DATA_CONST.__auth_got: 0x1198
-+  __DATA_CONST.__auth_got: 0x11b0
-   __DATA_CONST.__got: 0x158
-   __DATA_CONST.__auth_ptr: 0x8
 -  Functions: 2400
++3288.2.1.0.0
 +  Functions: 2396
-   Symbols:   0
--  CStrings:  6951
-+  CStrings:  6952
- 
+
+-  CStrings:  6952
++  CStrings:  6954
 CStrings:
 + "%s:%d: %s (dstream_id %lld, flags %x) made %u evictions retries number of blocks to evict %llu, number of evicted blocks till now %llu\n"
 + "%s:%d: %s (dstream_id %lld, flags %x) throttled-pause fired %u times,number of blocks to evict %llu, number of evicted blocks till now %llu\n"
@@ -46,7 +38,10 @@ CStrings:
 + "%s:%d: %s ubc_create_upl failed for ino %llu @ [%lld, %lld)\n"
 + "%s:%d: %s zero-fill bitmap alloc failed for ino %llu, pages %u\n"
 + "2026/08/05"
++ "21:46:35"
++ "21:46:36"
 + "3288.2.1"
++ "Aug  5 2026"
 + "apfs-3288.2.1"
 + "apfs_zerofill_chunk_cb"
 + "apfs_zerofill_unwritten_range"
@@ -69,7 +64,9 @@ CStrings:
 - "%s:%d: %s nx_panic_on_cp_corruption set to false\n"
 - "%s:%d: %s preallocated range %llu+%zu is not covered by UNWRITTEN fexts, error %d\n"
 - "2026/07/14"
+- "21:11:49"
 - "3283.0.13"
+- "Jul 14 2026"
 - "apfs-3283.0.13"
 - "check_snap_meta_devt"
 - "decrement_dstream_id_for_deletion"

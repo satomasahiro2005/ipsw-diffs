@@ -2,65 +2,37 @@
 
 > `/System/Library/SubFrameworks/RealityCoreDeformation.framework/RealityCoreDeformation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd9a8` | `0xea1c` | **`+0x1074`** |
+| `__TEXT.__const` | `0x102f` | `0x11af` | **`+0x180`** |
+| `__TEXT.__cstring` | `0x1582` | `0x1652` | **`+0xd0`** |
+| `__AUTH_CONST.__const` | `0x1088` | `0x1118` | **`+0x90`** |
+| `__TEXT.__swift5_typeref` | `0x368` | `0x3e4` | **`+0x7c`** |
+| `__TEXT.__eh_frame` | `0x998` | `0xa00` | **`+0x68`** |
+| `__TEXT.__swift5_reflstr` | `0x6d0` | `0x720` | **`+0x50`** |
+| `__TEXT.__swift5_fieldmd` | `0x6b4` | `0x6f4` | **`+0x40`** |
+| `__TEXT.__constg_swiftt` | `0x49c` | `0x4b8` | **`+0x1c`** |
+| `__TEXT.__swift5_builtin` | `0xa0` | `0xb4` | **`+0x14`** |
+| `__TEXT.__swift5_mpenum` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x3a8` | `0x3b0` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x78` | `0x7c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -23.0.4.0.0
--  __TEXT.__text: 0xd9a8
 +23.0.5.0.0
-+  __TEXT.__text: 0xea1c
-   __TEXT.__objc_methlist: 0xc9c
--  __TEXT.__const: 0x102f
--  __TEXT.__constg_swiftt: 0x49c
--  __TEXT.__swift5_typeref: 0x368
--  __TEXT.__swift5_builtin: 0xa0
--  __TEXT.__swift5_reflstr: 0x6d0
--  __TEXT.__swift5_fieldmd: 0x6b4
-+  __TEXT.__const: 0x11af
-+  __TEXT.__constg_swiftt: 0x4b8
-+  __TEXT.__swift5_typeref: 0x3e4
-+  __TEXT.__swift5_builtin: 0xb4
-+  __TEXT.__swift5_reflstr: 0x720
-+  __TEXT.__swift5_fieldmd: 0x6f4
-   __TEXT.__swift5_assocty: 0xf0
--  __TEXT.__cstring: 0x1582
-+  __TEXT.__cstring: 0x1652
-   __TEXT.__swift5_proto: 0x54
--  __TEXT.__swift5_types: 0x78
-+  __TEXT.__swift5_types: 0x7c
-   __TEXT.__swift5_protos: 0x4
-+  __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_types2: 0x10
-   __TEXT.__swift_as_entry: 0xc
-   __TEXT.__swift_as_ret: 0x18
-   __TEXT.__swift_as_cont: 0x2c
-   __TEXT.__swift5_capture: 0x20
--  __TEXT.__unwind_info: 0x3a8
--  __TEXT.__eh_frame: 0x998
-+  __TEXT.__unwind_info: 0x3b0
-+  __TEXT.__eh_frame: 0xa00
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0x840
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1088
-+  __AUTH_CONST.__const: 0x1118
-   __AUTH_CONST.__objc_const: 0x1298
-   __AUTH_CONST.__auth_got: 0x438
-   __DATA.__data: 0x4d8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 437
--  Symbols:   1287
+-  Symbols:   1258
 -  CStrings:  92
 +  Functions: 447
-+  Symbols:   1310
++  Symbols:   1281
 +  CStrings:  100
- 
 Symbols:
 + _$s22RealityCoreDeformation08LowLevelC0C16buildMeshDescMTL_11vertexCountSo0g11DescriptionI0VSayAC15VertexAttributeVG_SitKFZTf4nnd_n
 + _$s22RealityCoreDeformation08LowLevelC0C5ErrorV6ReasonO6detailSSvg

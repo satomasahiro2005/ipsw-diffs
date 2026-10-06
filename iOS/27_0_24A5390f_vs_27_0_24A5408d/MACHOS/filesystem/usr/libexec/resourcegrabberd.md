@@ -2,104 +2,66 @@
 
 > `/usr/libexec/resourcegrabberd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__gcc_except_tab`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x13b38` | `0x1577c` | **`+0x1c44`** |
+| `__TEXT.__auth_stubs` | `0x7a0` | `0xaf0` | **`+0x350`** |
+| `__DATA_CONST.__auth_got` | `0x3e0` | `0x588` | **`+0x1a8`** |
+| `__DATA_CONST.__const` | `0x740` | `0x858` | **`+0x118`** |
+| `__TEXT.__eh_frame` | `—` | `0x110` | **`+0x110`** |
+| `__TEXT.__oslogstring` | `0x1a6e` | `0x1b7e` | **`+0x110`** |
+| `__DATA.__objc_data` | `0x640` | `0x6f0` | **`+0xb0`** |
+| `__TEXT.__unwind_info` | `0x610` | `0x6a0` | **`+0x90`** |
+| `__TEXT.__const` | `0xb0` | `0x132` | **`+0x82`** |
+| `__TEXT.__swift5_typeref` | `—` | `0x6d` | **`+0x6d`** |
+| `__TEXT.__objc_stubs` | `0x2700` | `0x2760` | **`+0x60`** |
+| `__TEXT.__objc_methname` | `0x379d` | `0x37f2` | **`+0x55`** |
+| `__DATA.__objc_const` | `0x30d0` | `0x3118` | **`+0x48`** |
+| `__TEXT.__swift5_capture` | `—` | `0x3c` | **`+0x3c`** |
+| `__DATA.__data` | `0x4e0` | `0x518` | **`+0x38`** |
+| `__DATA_CONST.__got` | `0x1f0` | `0x228` | **`+0x38`** |
+| `__TEXT.__constg_swiftt` | `—` | `0x38` | **`+0x38`** |
+| `__DATA_CONST.__objc_intobj` | `0x378` | `0x3a8` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x1834` | `0x1864` | **`+0x30`** |
+| `__TEXT.__objc_classname` | `0x2e5` | `0x313` | **`+0x2e`** |
+| `__DATA.__bss` | `0x48` | `0x68` | **`+0x20`** |
+| `__DATA_CONST.__auth_ptr` | `—` | `0x20` | **`+0x20`** |
+| `__DATA.__objc_selrefs` | `0xf88` | `0xfa0` | **`+0x18`** |
+| `__TEXT.__cstring` | `0x924` | `0x90e` | **`-0x16`** |
+| `__TEXT.__swift5_fieldmd` | `—` | `0x10` | **`+0x10`** |
+| `__TEXT.__objc_methtype` | `0x1229` | `0x1237` | **`+0xe`** |
+| `__DATA_CONST.__objc_classlist` | `0xa0` | `0xa8` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `—` | `0x4` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_imageinfo`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
 - `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
 - `__DATA_CONST.__objc_dictobj`
 - `__DATA_CONST.__objc_doubleobj`
-- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_imageinfo`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__gcc_except_tab`
+
+### Other Changes
 
 ```diff
 
 -117.0.0.0.0
--  __TEXT.__text: 0x13b38
--  __TEXT.__auth_stubs: 0x7a0
--  __TEXT.__objc_stubs: 0x2700
--  __TEXT.__objc_methlist: 0x1834
--  __TEXT.__objc_classname: 0x2e5
--  __TEXT.__objc_methtype: 0x1229
--  __TEXT.__cstring: 0x924
--  __TEXT.__objc_methname: 0x379d
--  __TEXT.__const: 0xb0
 +118.0.0.0.0
-+  __TEXT.__text: 0x1577c
-+  __TEXT.__auth_stubs: 0xaf0
-+  __TEXT.__objc_stubs: 0x2760
-+  __TEXT.__objc_methlist: 0x1864
-+  __TEXT.__objc_classname: 0x313
-+  __TEXT.__objc_methtype: 0x1237
-+  __TEXT.__cstring: 0x90e
-+  __TEXT.__objc_methname: 0x37f2
-+  __TEXT.__const: 0x132
-   __TEXT.__gcc_except_tab: 0x5fc
--  __TEXT.__oslogstring: 0x1a6e
--  __TEXT.__unwind_info: 0x610
--  __DATA_CONST.__const: 0x740
-+  __TEXT.__oslogstring: 0x1b7e
-+  __TEXT.__constg_swiftt: 0x38
-+  __TEXT.__swift5_typeref: 0x6d
-+  __TEXT.__swift5_fieldmd: 0x10
-+  __TEXT.__swift5_capture: 0x3c
-+  __TEXT.__swift5_types: 0x4
-+  __TEXT.__swift_as_entry: 0x8
-+  __TEXT.__swift_as_ret: 0x8
-+  __TEXT.__swift_as_cont: 0x8
-+  __TEXT.__unwind_info: 0x6a0
-+  __TEXT.__eh_frame: 0x110
-+  __DATA_CONST.__const: 0x858
-   __DATA_CONST.__cfstring: 0x7a0
--  __DATA_CONST.__objc_classlist: 0xa0
-+  __DATA_CONST.__objc_classlist: 0xa8
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x68
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x90
--  __DATA_CONST.__objc_intobj: 0x378
-+  __DATA_CONST.__objc_intobj: 0x3a8
-   __DATA_CONST.__objc_arraydata: 0x50
-   __DATA_CONST.__objc_dictobj: 0x78
-   __DATA_CONST.__objc_doubleobj: 0x10
-   __DATA_CONST.__objc_arrayobj: 0x30
--  __DATA_CONST.__auth_got: 0x3e0
--  __DATA_CONST.__got: 0x1f0
--  __DATA.__objc_const: 0x30d0
--  __DATA.__objc_selrefs: 0xf88
-+  __DATA_CONST.__auth_got: 0x588
-+  __DATA_CONST.__got: 0x228
-+  __DATA_CONST.__auth_ptr: 0x20
-+  __DATA.__objc_const: 0x3118
-+  __DATA.__objc_selrefs: 0xfa0
-   __DATA.__objc_ivar: 0x158
--  __DATA.__objc_data: 0x640
--  __DATA.__data: 0x4e0
--  __DATA.__bss: 0x48
-+  __DATA.__objc_data: 0x6f0
-+  __DATA.__data: 0x518
-+  __DATA.__bss: 0x68
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /System/Library/PrivateFrameworks/BackBoardServices.framework/BackBoardServices
-   - /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard
-   - /System/Library/PrivateFrameworks/CacheDelete.framework/CacheDelete
 +  - /System/Library/PrivateFrameworks/GenerativePartnerService.framework/GenerativePartnerService
 +  - /System/Library/PrivateFrameworks/GenerativePartnerServiceUI.framework/GenerativePartnerServiceUI
-   - /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
-   - /System/Library/PrivateFrameworks/IDS.framework/IDS
-   - /System/Library/PrivateFrameworks/IDSFoundation.framework/IDSFoundation
 
-   - /System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 557
 -  Symbols:   202
 -  CStrings:  1061
@@ -126,7 +88,6 @@
 +  Functions: 595
 +  Symbols:   289
 +  CStrings:  1069
- 
 Symbols:
 + _$s10Foundation4DataV19_bridgeToObjectiveCSo6NSDataCyF
 + _$s10Foundation4DataV36_unconditionallyBridgeFromObjectiveCyACSo6NSDataCSgFZ

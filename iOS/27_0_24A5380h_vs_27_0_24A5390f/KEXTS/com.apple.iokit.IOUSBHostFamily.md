@@ -2,42 +2,27 @@
 
 > `com.apple.iokit.IOUSBHostFamily`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA.__data`
-- `__DATA_CONST.__mod_init_func`
-- `__DATA_CONST.__mod_term_func`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__kalloc_type`
-- `__DATA_CONST.__kalloc_var`
-- `__DATA_CONST.__auth_got`
-- `__DATA_CONST.__got`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0xa379` | `0xa25c` | **`-0x11d`** |
+| `__TEXT.__os_log` | `0x866a` | `0x85bf` | **`-0xab`** |
+| `__TEXT_EXEC.__text` | `0x942b4` | `0x94240` | **`-0x74`** |
+
+### Other Changes
 
 ```diff
 
 -1617.0.3.0.0
--  __TEXT.__cstring: 0xa379
--  __TEXT.__os_log: 0x866a
 +1617.0.9.0.0
-+  __TEXT.__cstring: 0xa25c
-+  __TEXT.__os_log: 0x85bf
-   __TEXT.__const: 0x2018
--  __TEXT_EXEC.__text: 0x942b4
-+  __TEXT_EXEC.__text: 0x94240
-   __TEXT_EXEC.__auth_stubs: 0xd40
-   __DATA.__data: 0x1f0
-   __DATA.__common: 0x970
 
-   __DATA_CONST.__got: 0x1f0
-   Functions: 1974
-   Symbols:   0
 -  CStrings:  1150
 +  CStrings:  1147
- 
 Functions:
-~ sub_fffffe000a5d2e7c -> sub_fffffe000a5f16fc : 100 -> 148
-~ sub_fffffe000a5d4f10 -> sub_fffffe000a5f37c0 : 252 -> 272
-~ sub_fffffe000a63736c -> sub_fffffe000a655c30 : 2540 -> 2356
+~ sub_fffffff00a5d0cfc -> sub_fffffff00a5f73bc : 100 -> 148
+~ sub_fffffff00a5d2d90 -> sub_fffffff00a5f9480 : 252 -> 272
+~ sub_fffffff00a6351ec -> sub_fffffff00a65b8f0 : 2540 -> 2356
 CStrings:
 + "smc-port-number"
 + "usb-c-port-number"

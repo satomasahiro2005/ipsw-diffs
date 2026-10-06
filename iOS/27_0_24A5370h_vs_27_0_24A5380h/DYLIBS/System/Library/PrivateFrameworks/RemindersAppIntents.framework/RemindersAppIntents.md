@@ -2,112 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/RemindersAppIntents.framework/RemindersAppIntents`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x272afc` | `0x277890` | **`+0x4d94`** |
+| `__TEXT.__cstring` | `0xfbba` | `0x106da` | **`+0xb20`** |
+| `__DATA.__bss` | `0x173e0` | `0x17e20` | **`+0xa40`** |
+| `__TEXT.__const` | `0x15644` | `0x15d94` | **`+0x750`** |
+| `__TEXT.__swift5_typeref` | `0x7f5e` | `0x82ac` | **`+0x34e`** |
+| `__AUTH_CONST.__const` | `0x9480` | `0x97a8` | **`+0x328`** |
+| `__DATA_DIRTY.__bss` | `0x7f80` | `0x8180` | **`+0x200`** |
+| `__DATA.__data` | `0x4e28` | `0x5000` | **`+0x1d8`** |
+| `__TEXT.__unwind_info` | `0x8400` | `0x8540` | **`+0x140`** |
+| `__TEXT.__swift5_reflstr` | `0x4a7f` | `0x4b7f` | **`+0x100`** |
+| `__TEXT.__swift5_fieldmd` | `0x3f78` | `0x4034` | **`+0xbc`** |
+| `__TEXT.__swift5_assocty` | `0x2298` | `0x2350` | **`+0xb8`** |
+| `__TEXT.__eh_frame` | `0xeac4` | `0xea14` | **`-0xb0`** |
+| `__TEXT.__constg_swiftt` | `0x4384` | `0x43ec` | **`+0x68`** |
+| `__TEXT.__swift5_proto` | `0x10bc` | `0x111c` | **`+0x60`** |
+| `__TEXT.__oslogstring` | `0x66a3` | `0x66f3` | **`+0x50`** |
+| `__AUTH.__data` | `0x2328` | `0x2370` | **`+0x48`** |
+| `__DATA_CONST.__const` | `0x1ea8` | `0x1ec8` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x2870` | `0x2888` | **`+0x18`** |
+| `__DATA_DIRTY.__data` | `0x1a58` | `0x1a68` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x1270` | `0x1278` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x3f4` | `0x3fc` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0xd48` | `0xd40` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x272afc
-+  __TEXT.__text: 0x277890
-   __TEXT.__objc_methlist: 0x26c
--  __TEXT.__const: 0x15644
--  __TEXT.__swift5_typeref: 0x7f5e
--  __TEXT.__swift5_reflstr: 0x4a7f
--  __TEXT.__swift5_assocty: 0x2298
--  __TEXT.__constg_swiftt: 0x4384
--  __TEXT.__swift5_fieldmd: 0x3f78
-+  __TEXT.__const: 0x15d94
-+  __TEXT.__swift5_typeref: 0x82ac
-+  __TEXT.__swift5_reflstr: 0x4b7f
-+  __TEXT.__swift5_assocty: 0x2350
-+  __TEXT.__constg_swiftt: 0x43ec
-+  __TEXT.__swift5_fieldmd: 0x4034
-   __TEXT.__swift5_builtin: 0xc8
--  __TEXT.__cstring: 0xfbba
--  __TEXT.__swift5_proto: 0x10bc
--  __TEXT.__swift5_types: 0x3f4
-+  __TEXT.__cstring: 0x106da
-+  __TEXT.__swift5_proto: 0x111c
-+  __TEXT.__swift5_types: 0x3fc
-   __TEXT.__swift_as_entry: 0x79c
-   __TEXT.__swift_as_ret: 0x808
-   __TEXT.__swift5_capture: 0x394
-   __TEXT.__swift5_protos: 0x14c
--  __TEXT.__swift_as_cont: 0xd48
--  __TEXT.__oslogstring: 0x66a3
-+  __TEXT.__swift_as_cont: 0xd40
-+  __TEXT.__oslogstring: 0x66f3
-   __TEXT.__swift5_mpenum: 0x3c
--  __TEXT.__unwind_info: 0x8400
--  __TEXT.__eh_frame: 0xeac4
-+  __TEXT.__unwind_info: 0x8540
-+  __TEXT.__eh_frame: 0xea14
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1ea8
-+  __DATA_CONST.__const: 0x1ec8
-   __DATA_CONST.__objc_classlist: 0xa0
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x980
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__got: 0x1270
--  __AUTH_CONST.__const: 0x9480
-+  __DATA_CONST.__got: 0x1278
-+  __AUTH_CONST.__const: 0x97a8
-   __AUTH_CONST.__objc_const: 0x2028
--  __AUTH_CONST.__auth_got: 0x2870
-+  __AUTH_CONST.__auth_got: 0x2888
-   __AUTH.__objc_data: 0x600
--  __AUTH.__data: 0x2328
--  __DATA.__data: 0x4e28
--  __DATA.__bss: 0x173e0
-+  __AUTH.__data: 0x2370
-+  __DATA.__data: 0x5000
-+  __DATA.__bss: 0x17e20
-   __DATA.__common: 0x138
-   __DATA_DIRTY.__objc_data: 0xa0
--  __DATA_DIRTY.__data: 0x1a58
--  __DATA_DIRTY.__bss: 0x7f80
-+  __DATA_DIRTY.__data: 0x1a68
-+  __DATA_DIRTY.__bss: 0x8180
-   __DATA_DIRTY.__common: 0x90
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
+-4037.1.0.0.0
++4040.0.0.0.0
 
-   - /System/Library/Frameworks/_AppIntents_UIKit.framework/_AppIntents_UIKit
-   - /System/Library/Frameworks/_GeoToolbox_AppIntents.framework/_GeoToolbox_AppIntents
-   - /System/Library/PrivateFrameworks/AppIntentsServices.framework/AppIntentsServices
 +  - /System/Library/PrivateFrameworks/CalendarUIKit.framework/CalendarUIKit
-   - /System/Library/PrivateFrameworks/ReminderKit.framework/ReminderKit
-   - /System/Library/PrivateFrameworks/ReminderKitInternal.framework/ReminderKitInternal
-   - /System/Library/PrivateFrameworks/RemindersUICore.framework/RemindersUICore
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10724
--  Symbols:   3876
+-  Symbols:   3001
 -  CStrings:  1409
 +  Functions: 10848
-+  Symbols:   3934
++  Symbols:   3058
 +  CStrings:  1443
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
 Symbols:
 + ___swift_memcpy64_8
 + _associated conformance 19RemindersAppIntents010UpdateListB6IntentV8PropertyO0bC001_F5ValueAA0H4TypeAfGP_AfG
@@ -221,5 +158,4 @@ CStrings:
 - "Update reminders list properties"
 - "Update reminders list properties."
 - "UpdateListAppIntent Reminders App Intent description"
-
 ```

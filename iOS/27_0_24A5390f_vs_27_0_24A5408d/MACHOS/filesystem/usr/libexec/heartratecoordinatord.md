@@ -2,83 +2,55 @@
 
 > `/usr/libexec/heartratecoordinatord`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x26e6c` | `0x27c68` | **`+0xdfc`** |
+| `__TEXT.__objc_methname` | `0x5119` | `0x52de` | **`+0x1c5`** |
+| `__DATA_CONST.__cfstring` | `0x2020` | `0x21c0` | **`+0x1a0`** |
+| `__TEXT.__objc_stubs` | `0x3fe0` | `0x4180` | **`+0x1a0`** |
+| `__TEXT.__cstring` | `0x2191` | `0x22cd` | **`+0x13c`** |
+| `__TEXT.__gcc_except_tab` | `0x439c` | `0x44d8` | **`+0x13c`** |
+| `__DATA.__objc_const` | `0x2c18` | `0x2d50` | **`+0x138`** |
+| `__TEXT.__objc_methlist` | `0x19f4` | `0x1abc` | **`+0xc8`** |
+| `__TEXT.__oslogstring` | `0x3ae8` | `0x3bab` | **`+0xc3`** |
+| `__TEXT.__unwind_info` | `0x1238` | `0x12b8` | **`+0x80`** |
+| `__DATA.__objc_selrefs` | `0x11f0` | `0x1258` | **`+0x68`** |
+| `__DATA.__objc_data` | `0x640` | `0x690` | **`+0x50`** |
+| `__TEXT.__objc_methtype` | `0x1c3b` | `0x1c0f` | **`-0x2c`** |
+| `__TEXT.__objc_classname` | `0x38b` | `0x3a8` | **`+0x1d`** |
+| `__DATA.__objc_ivar` | `0x288` | `0x298` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x238` | `0x240` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0xa0` | `0xa8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_arraydata`
 - `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_dictobj`
-- `__DATA.__data`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__const`
+- `__TEXT.__init_offsets`
+
+### Other Changes
 
 ```diff
 
 -41.1.0.0.0
--  __TEXT.__text: 0x26e6c
 +42.0.0.0.0
-+  __TEXT.__text: 0x27c68
-   __TEXT.__auth_stubs: 0x7d0
--  __TEXT.__objc_stubs: 0x3fe0
-+  __TEXT.__objc_stubs: 0x4180
-   __TEXT.__init_offsets: 0x4
--  __TEXT.__objc_methlist: 0x19f4
-+  __TEXT.__objc_methlist: 0x1abc
-   __TEXT.__const: 0x375
--  __TEXT.__oslogstring: 0x3ae8
--  __TEXT.__cstring: 0x2191
--  __TEXT.__gcc_except_tab: 0x439c
--  __TEXT.__objc_methname: 0x5119
--  __TEXT.__objc_classname: 0x38b
--  __TEXT.__objc_methtype: 0x1c3b
--  __TEXT.__unwind_info: 0x1238
-+  __TEXT.__oslogstring: 0x3bab
-+  __TEXT.__cstring: 0x22cd
-+  __TEXT.__gcc_except_tab: 0x44d8
-+  __TEXT.__objc_methname: 0x52de
-+  __TEXT.__objc_classname: 0x3a8
-+  __TEXT.__objc_methtype: 0x1c0f
-+  __TEXT.__unwind_info: 0x12b8
-   __DATA_CONST.__const: 0xce0
--  __DATA_CONST.__cfstring: 0x2020
--  __DATA_CONST.__objc_classlist: 0xa0
-+  __DATA_CONST.__cfstring: 0x21c0
-+  __DATA_CONST.__objc_classlist: 0xa8
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x20
 
-   __DATA_CONST.__objc_arrayobj: 0xf0
-   __DATA_CONST.__objc_dictobj: 0x28
-   __DATA_CONST.__auth_got: 0x3f8
--  __DATA_CONST.__got: 0x238
--  __DATA.__objc_const: 0x2c18
--  __DATA.__objc_selrefs: 0x11f0
--  __DATA.__objc_ivar: 0x288
--  __DATA.__objc_data: 0x640
-+  __DATA_CONST.__got: 0x240
-+  __DATA.__objc_const: 0x2d50
-+  __DATA.__objc_selrefs: 0x1258
-+  __DATA.__objc_ivar: 0x298
-+  __DATA.__objc_data: 0x690
-   __DATA.__data: 0x600
-   __DATA.__bss: 0xa8
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 919
 -  Symbols:   209
 -  CStrings:  1600
 +  Functions: 939
 +  Symbols:   210
 +  CStrings:  1632
- 
 Symbols:
 + _OBJC_CLASS_$_NSNull
 CStrings:

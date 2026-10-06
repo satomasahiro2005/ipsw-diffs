@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/FitnessCoaching.framework/FitnessCoaching`
 
-```diff
+### Section Size Changes
 
- 2027.0.13.0.0
--  __TEXT.__text: 0x590e8
-+  __TEXT.__text: 0x590e0
-   __TEXT.__objc_methlist: 0x1d4
-   __TEXT.__const: 0x55c0
-   __TEXT.__cstring: 0x169b
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x590e8` | `0x590e0` | **`-0x8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_262a76834 -> sub_26377e834 : 1168 -> 1160
+~ sub_262958834 -> sub_26365a834 : 1168 -> 1160
 ```

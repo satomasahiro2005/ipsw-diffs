@@ -2,107 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/HomeEnergyDaemon.framework/HomeEnergyDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3ea84c` | `0x3ec478` | **`+0x1c2c`** |
+| `__TEXT.__unwind_info` | `0xba28` | `0xb620` | **`-0x408`** |
+| `__DATA_DIRTY.__data` | `0x4d68` | `0x4fa8` | **`+0x240`** |
+| `__AUTH.__data` | `0x25d8` | `0x2458` | **`-0x180`** |
+| `__DATA.__bss` | `0x7310` | `0x7190` | **`-0x180`** |
+| `__DATA_DIRTY.__bss` | `0xa80` | `0xc00` | **`+0x180`** |
+| `__TEXT.__oslogstring` | `0x1152f` | `0x116af` | **`+0x180`** |
+| `__AUTH_CONST.__const` | `0xc2c8` | `0xc390` | **`+0xc8`** |
+| `__DATA.__data` | `0x1ab8` | `0x1a10` | **`-0xa8`** |
+| `__TEXT.__eh_frame` | `0x243f8` | `0x24490` | **`+0x98`** |
+| `__TEXT.__swift5_capture` | `0x3b58` | `0x3ba4` | **`+0x4c`** |
+| `__AUTH_CONST.__auth_got` | `0x32d8` | `0x3300` | **`+0x28`** |
+| `__TEXT.__constg_swiftt` | `0x4250` | `0x4278` | **`+0x28`** |
+| `__AUTH_CONST.__objc_const` | `0x6590` | `0x65b0` | **`+0x20`** |
+| `__TEXT.__const` | `0xb8c0` | `0xb8e0` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x3934` | `0x3954` | **`+0x20`** |
+| `__DATA.__common` | `0xd0` | `0xb8` | **`-0x18`** |
+| `__DATA_DIRTY.__common` | `0x248` | `0x260` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x15f0` | `0x1600` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x3748` | `0x3754` | **`+0xc`** |
+| `__TEXT.__swift_as_cont` | `0x1c70` | `0x1c7c` | **`+0xc`** |
+| `__TEXT.__swift_as_entry` | `0xa8c` | `0xa90` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x3ea84c
-+  __TEXT.__text: 0x3ec478
-   __TEXT.__objc_methlist: 0xcf8
--  __TEXT.__const: 0xb8c0
-+  __TEXT.__const: 0xb8e0
-   __TEXT.__gcc_except_tab: 0x18
-   __TEXT.__cstring: 0x5f81
-   __TEXT.__swift5_typeref: 0x34d0
--  __TEXT.__oslogstring: 0x1152f
--  __TEXT.__swift5_capture: 0x3b58
--  __TEXT.__constg_swiftt: 0x4250
--  __TEXT.__swift5_reflstr: 0x3934
--  __TEXT.__swift5_fieldmd: 0x3748
-+  __TEXT.__oslogstring: 0x116af
-+  __TEXT.__swift5_capture: 0x3ba4
-+  __TEXT.__constg_swiftt: 0x4278
-+  __TEXT.__swift5_reflstr: 0x3954
-+  __TEXT.__swift5_fieldmd: 0x3754
-   __TEXT.__swift5_builtin: 0xb4
-   __TEXT.__swift5_assocty: 0x330
-   __TEXT.__swift5_proto: 0x434
-   __TEXT.__swift5_types: 0x37c
--  __TEXT.__swift_as_entry: 0xa8c
-+  __TEXT.__swift_as_entry: 0xa90
-   __TEXT.__swift_as_ret: 0xda8
--  __TEXT.__swift_as_cont: 0x1c70
-+  __TEXT.__swift_as_cont: 0x1c7c
-   __TEXT.__swift5_protos: 0x48
-   __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__unwind_info: 0xba28
--  __TEXT.__eh_frame: 0x243f8
-+  __TEXT.__unwind_info: 0xb620
-+  __TEXT.__eh_frame: 0x24490
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-481.0.0.0.0
++486.0.0.0.0
 
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x98
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x15f0
-+  __DATA_CONST.__objc_selrefs: 0x1600
-   __DATA_CONST.__objc_protorefs: 0x50
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xc2c8
--  __AUTH_CONST.__objc_const: 0x6590
--  __AUTH_CONST.__auth_got: 0x32d8
-+  __AUTH_CONST.__const: 0xc390
-+  __AUTH_CONST.__objc_const: 0x65b0
-+  __AUTH_CONST.__auth_got: 0x3300
-   __AUTH.__objc_data: 0x2a0
--  __AUTH.__data: 0x25d8
--  __DATA.__data: 0x1ab8
--  __DATA.__common: 0xd0
--  __DATA.__bss: 0x7310
-+  __AUTH.__data: 0x2458
-+  __DATA.__data: 0x1a10
-+  __DATA.__common: 0xb8
-+  __DATA.__bss: 0x7190
-   __DATA_DIRTY.__objc_data: 0x5b8
--  __DATA_DIRTY.__data: 0x4d68
--  __DATA_DIRTY.__bss: 0xa80
--  __DATA_DIRTY.__common: 0x248
-+  __DATA_DIRTY.__data: 0x4fa8
-+  __DATA_DIRTY.__bss: 0xc00
-+  __DATA_DIRTY.__common: 0x260
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-
-   - /usr/lib/swift/libswift_DarwinFoundation3.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10884
--  Symbols:   32280
--  CStrings:  1700
+-  Symbols:   20753
+-  CStrings:  1698
 +  Functions: 10905
-+  Symbols:   32343
-+  CStrings:  1706
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   20777
++  CStrings:  1704
 Symbols:
 + _$s16HomeEnergyDaemon0B11SiteManagerC12updateFields6siteID4from0B13KitFoundation08EKEnergyD0CSS_SDySSypGtYaKFTY4_
 + _$s16HomeEnergyDaemon0B17DataConfigManagerC20hasRunOrphanRecovery027_E8F5C5634EC3BF9F367D4EA652Q4A2E0LLSbvpWvd
@@ -151,8 +94,6 @@ Symbols:
 + ___swift_closure_destructor.141Tm
 + ___swift_closure_destructor.147Tm
 + ___swift_closure_destructor.31Tm
-+ _objc_msgSend$dateLastModified
-+ _objc_msgSend$fetchSharesMatchingObjectIDs:error:
 - _$s16HomeEnergyDaemon0C11InitializerC14setUpListenersyyFyyYacfU_yyXEfU1_
 - _$s16HomeEnergyDaemon0C11InitializerC14setUpListenersyyFyyYacfU_yyXEfU1_ScTyyts5Error_pGAA28BackgroundSystemTaskProtocol_pYbcfU_
 - _$s16HomeEnergyDaemon0C11InitializerC14setUpListenersyyFyyYacfU_yyXEfU1_ScTyyts5Error_pGAA28BackgroundSystemTaskProtocol_pYbcfU_TA
@@ -187,5 +128,4 @@ CStrings:
 + "Recovery: removed %ld orphaned EnergyDataConfig record(s)"
 - "% of the time this month and only during off-peak hours\""
 - "Failed to reset moc after sharing EnergyDataConfig failed: %s %@"
-
 ```

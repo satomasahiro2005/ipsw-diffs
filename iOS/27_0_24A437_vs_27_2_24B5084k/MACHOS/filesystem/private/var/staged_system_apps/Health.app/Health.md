@@ -2,249 +2,135 @@
 
 > `/private/var/staged_system_apps/Health.app/Health`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_entry`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcd2b8` | `0x2db2ac` | **`+0x20dff4`** |
+| `__DATA.__bss` | `0x7208` | `0x1a208` | **`+0x13000`** |
+| `__TEXT.__const` | `0x58b4` | `0x17184` | **`+0x118d0`** |
+| `__DATA_CONST.__const` | `0x5d60` | `0x16570` | **`+0x10810`** |
+| `__TEXT.__cstring` | `0x544e` | `0x138ee` | **`+0xe4a0`** |
+| `__DATA.__data` | `0x5838` | `0x12358` | **`+0xcb20`** |
+| `__TEXT.__eh_frame` | `0x230c` | `0xc028` | **`+0x9d1c`** |
+| `__TEXT.__unwind_info` | `0x2738` | `0x92b0` | **`+0x6b78`** |
+| `__TEXT.__constg_swiftt` | `0x3390` | `0x9a68` | **`+0x66d8`** |
+| `__TEXT.__swift5_fieldmd` | `0x1be4` | `0x7ecc` | **`+0x62e8`** |
+| `__DATA.__objc_const` | `0x37d8` | `0x9a90` | **`+0x62b8`** |
+| `__TEXT.__objc_methname` | `0x575d` | `0xb705` | **`+0x5fa8`** |
+| `__TEXT.__swift5_typeref` | `0x27e6` | `0x82ac` | **`+0x5ac6`** |
+| `__TEXT.__auth_stubs` | `0x55f0` | `0xb070` | **`+0x5a80`** |
+| `__TEXT.__swift5_reflstr` | `0x2501` | `0x7f81` | **`+0x5a80`** |
+| `__DATA_CONST.__auth_got` | `0x2b00` | `0x5840` | **`+0x2d40`** |
+| `__TEXT.__objc_stubs` | `0x3580` | `0x5c60` | **`+0x26e0`** |
+| `__TEXT.__objc_methtype` | `0x1d59` | `0x43c9` | **`+0x2670`** |
+| `__DATA.__objc_data` | `0x2248` | `0x4290` | **`+0x2048`** |
+| `__TEXT.__swift5_capture` | `0x1438` | `0x32cc` | **`+0x1e94`** |
+| `__TEXT.__oslogstring` | `0x2a0a` | `0x455a` | **`+0x1b50`** |
+| `__DATA_CONST.__got` | `0x14f8` | `0x3028` | **`+0x1b30`** |
+| `__DATA_CONST.__auth_ptr` | `0x1128` | `0x2548` | **`+0x1420`** |
+| `__TEXT.__objc_methlist` | `0xe34` | `0x2120` | **`+0x12ec`** |
+| `__DATA.__objc_selrefs` | `0x13a0` | `0x2650` | **`+0x12b0`** |
+| `__TEXT.__objc_classname` | `0x11f8` | `0x2438` | **`+0x1240`** |
+| `__TEXT.__swift5_assocty` | `0x568` | `0x1400` | **`+0xe98`** |
+| `__TEXT.__swift5_proto` | `0x3e0` | `0xe40` | **`+0xa60`** |
+| `__TEXT.__swift_as_cont` | `0xbc` | `0xaf0` | **`+0xa34`** |
+| `__TEXT.__swift5_types` | `0x1f8` | `0x878` | **`+0x680`** |
+| `__TEXT.__swift_as_entry` | `0x48` | `0x2e8` | **`+0x2a0`** |
+| `__TEXT.__swift5_builtin` | `0x104` | `0x35c` | **`+0x258`** |
+| `__TEXT.__swift_as_ret` | `0x3c` | `0x280` | **`+0x244`** |
+| `__DATA.__common` | `0x528` | `0x730` | **`+0x208`** |
+| `__DATA_CONST.__objc_classlist` | `0xf0` | `0x2c8` | **`+0x1d8`** |
+| `__TEXT.__swift5_mpenum` | `0x10` | `0x10c` | **`+0xfc`** |
+| `__DATA_CONST.__objc_protolist` | `0x130` | `0x1f8` | **`+0xc8`** |
+| `__TEXT.__swift5_protos` | `0x40` | `0xd4` | **`+0x94`** |
+| `__DATA_CONST.__objc_protorefs` | `0xa0` | `0x108` | **`+0x68`** |
+| `__DATA.__objc_stublist` | `0x48` | `0x90` | **`+0x48`** |
+| `__DATA_CONST.__objc_catlist2` | `0x8` | `0x10` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__cfstring`
 - `__DATA_CONST.__objc_catlist`
+- `__TEXT.__swift5_entry`
+
+### Other Changes
 
 ```diff
 
 -7027.0.72.2.7
--  __TEXT.__text: 0xc6bd8
--  __TEXT.__auth_stubs: 0x55f0
--  __TEXT.__objc_stubs: 0x3580
--  __TEXT.__objc_methlist: 0xe34
--  __TEXT.__const: 0x58b4
--  __TEXT.__constg_swiftt: 0x3390
--  __TEXT.__swift5_typeref: 0x27e6
--  __TEXT.__swift5_fieldmd: 0x1be4
--  __TEXT.__swift5_builtin: 0x104
--  __TEXT.__swift5_reflstr: 0x2501
--  __TEXT.__swift5_assocty: 0x568
--  __TEXT.__cstring: 0x544e
--  __TEXT.__swift5_protos: 0x40
--  __TEXT.__swift5_proto: 0x3e0
--  __TEXT.__swift5_types: 0x1f8
--  __TEXT.__objc_classname: 0x11f8
--  __TEXT.__objc_methname: 0x575d
--  __TEXT.__objc_methtype: 0x1d59
--  __TEXT.__swift5_capture: 0x1438
--  __TEXT.__oslogstring: 0x2a0a
--  __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__swift_as_entry: 0x48
--  __TEXT.__swift_as_ret: 0x3c
--  __TEXT.__swift_as_cont: 0xbc
 +7027.1.36.2.7
-+  __TEXT.__text: 0x2c3704
-+  __TEXT.__auth_stubs: 0xb070
-+  __TEXT.__objc_stubs: 0x5c60
-+  __TEXT.__objc_methlist: 0x2120
-+  __TEXT.__const: 0x17184
-+  __TEXT.__constg_swiftt: 0x9a68
-+  __TEXT.__swift5_typeref: 0x82ac
-+  __TEXT.__swift5_fieldmd: 0x7ecc
-+  __TEXT.__swift5_builtin: 0x35c
-+  __TEXT.__swift5_reflstr: 0x7f81
-+  __TEXT.__swift5_assocty: 0x1400
-+  __TEXT.__cstring: 0x138ee
-+  __TEXT.__swift5_protos: 0xd4
-+  __TEXT.__swift5_proto: 0xe40
-+  __TEXT.__swift5_types: 0x878
-+  __TEXT.__objc_classname: 0x2438
-+  __TEXT.__objc_methname: 0xb705
-+  __TEXT.__objc_methtype: 0x43c9
-+  __TEXT.__oslogstring: 0x455a
-+  __TEXT.__swift5_capture: 0x32cc
-+  __TEXT.__swift_as_entry: 0x2e8
-+  __TEXT.__swift_as_cont: 0xaf0
-+  __TEXT.__swift5_mpenum: 0x10c
-+  __TEXT.__swift_as_ret: 0x280
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__unwind_info: 0x33b8
--  __TEXT.__eh_frame: 0x230c
--  __DATA_CONST.__const: 0x5d60
-+  __TEXT.__unwind_info: 0xbd40
-+  __TEXT.__eh_frame: 0xc028
-+  __DATA_CONST.__const: 0x16570
-   __DATA_CONST.__cfstring: 0x40
--  __DATA_CONST.__objc_classlist: 0xf0
-+  __DATA_CONST.__objc_classlist: 0x2c8
-   __DATA_CONST.__objc_catlist: 0x8
--  __DATA_CONST.__objc_catlist2: 0x8
--  __DATA_CONST.__objc_protolist: 0x130
-+  __DATA_CONST.__objc_catlist2: 0x10
-+  __DATA_CONST.__objc_protolist: 0x1f8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_protorefs: 0xa0
--  __DATA_CONST.__auth_got: 0x2b00
--  __DATA_CONST.__got: 0x14f8
--  __DATA_CONST.__auth_ptr: 0x1128
--  __DATA.__objc_const: 0x37d8
--  __DATA.__objc_selrefs: 0x13a0
--  __DATA.__objc_data: 0x2248
--  __DATA.__data: 0x5838
--  __DATA.__objc_stublist: 0x48
--  __DATA.__common: 0x528
-+  __DATA_CONST.__objc_protorefs: 0x108
-+  __DATA_CONST.__auth_got: 0x5840
-+  __DATA_CONST.__got: 0x3028
-+  __DATA_CONST.__auth_ptr: 0x2548
-+  __DATA.__objc_const: 0x9a90
-+  __DATA.__objc_selrefs: 0x2650
-+  __DATA.__objc_data: 0x4290
-+  __DATA.__data: 0x12358
-+  __DATA.__objc_stublist: 0x90
-+  __DATA.__common: 0x730
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+
 +  - /System/Library/Frameworks/CoreLocation.framework/CoreLocation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight
-   - /System/Library/Frameworks/CoreTransferable.framework/CoreTransferable
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+
 +  - /System/Library/Frameworks/FoundationModels.framework/FoundationModels
-   - /System/Library/Frameworks/HealthKit.framework/HealthKit
-   - /System/Library/Frameworks/HealthKitUI.framework/HealthKitUI
+
 +  - /System/Library/Frameworks/Metal.framework/Metal
 +  - /System/Library/Frameworks/MetalKit.framework/MetalKit
-   - /System/Library/Frameworks/OSLog.framework/OSLog
-   - /System/Library/Frameworks/PencilKit.framework/PencilKit
-   - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
 
-   - /System/Library/Frameworks/TipKit.framework/TipKit
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/Frameworks/UserNotifications.framework/UserNotifications
 +  - /System/Library/PrivateFrameworks/ActivityRingsUI.framework/ActivityRingsUI
-   - /System/Library/PrivateFrameworks/AppleAccount.framework/AppleAccount
-   - /System/Library/PrivateFrameworks/AppleIDSSOAuthentication.framework/AppleIDSSOAuthentication
-   - /System/Library/PrivateFrameworks/AppleMediaServicesUIKitInternal.framework/AppleMediaServicesUIKitInternal
+
 +  - /System/Library/PrivateFrameworks/AppliedSensingFitness.framework/AppliedSensingFitness
-   - /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/CoreCDP.framework/CoreCDP
-   - /System/Library/PrivateFrameworks/CoreCDPUI.framework/CoreCDPUI
-   - /System/Library/PrivateFrameworks/FamilyCircle.framework/FamilyCircle
+
 +  - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
 +  - /System/Library/PrivateFrameworks/Feedback.framework/Feedback
 +  - /System/Library/PrivateFrameworks/FeedbackService.framework/FeedbackService
 +  - /System/Library/PrivateFrameworks/FitnessCoaching.framework/FitnessCoaching
 +  - /System/Library/PrivateFrameworks/FitnessUI.framework/FitnessUI
-   - /System/Library/PrivateFrameworks/HealthAlgorithms.framework/HealthAlgorithms
-   - /System/Library/PrivateFrameworks/HealthAppHealthDaemonSupport.framework/HealthAppHealthDaemonSupport
-   - /System/Library/PrivateFrameworks/HealthAppServices.framework/HealthAppServices
 
-   - /System/Library/PrivateFrameworks/HealthArticlesUI.framework/HealthArticlesUI
-   - /System/Library/PrivateFrameworks/HealthBalance.framework/HealthBalance
-   - /System/Library/PrivateFrameworks/HealthBalanceUI.framework/HealthBalanceUI
 +  - /System/Library/PrivateFrameworks/HealthCharts.framework/HealthCharts
 +  - /System/Library/PrivateFrameworks/HealthChartsCore.framework/HealthChartsCore
-   - /System/Library/PrivateFrameworks/HealthCoaching.framework/HealthCoaching
+
 +  - /System/Library/PrivateFrameworks/HealthContent.framework/HealthContent
 +  - /System/Library/PrivateFrameworks/HealthContentUI.framework/HealthContentUI
-   - /System/Library/PrivateFrameworks/HealthDaemon.framework/HealthDaemon
-   - /System/Library/PrivateFrameworks/HealthDaemonFoundation.framework/HealthDaemonFoundation
-   - /System/Library/PrivateFrameworks/HealthDomains.framework/HealthDomains
-   - /System/Library/PrivateFrameworks/HealthDomainsUI.framework/HealthDomainsUI
+
 +  - /System/Library/PrivateFrameworks/HealthEvaluations.framework/HealthEvaluations
 +  - /System/Library/PrivateFrameworks/HealthEvaluationsUI.framework/HealthEvaluationsUI
-   - /System/Library/PrivateFrameworks/HealthExperience.framework/HealthExperience
-   - /System/Library/PrivateFrameworks/HealthExperienceUI.framework/HealthExperienceUI
+
 +  - /System/Library/PrivateFrameworks/HealthFeatures.framework/HealthFeatures
-   - /System/Library/PrivateFrameworks/HealthFoundationUI.framework/HealthFoundationUI
-   - /System/Library/PrivateFrameworks/HealthHearing.framework/HealthHearing
+
 +  - /System/Library/PrivateFrameworks/HealthHeartRateStream.framework/HealthHeartRateStream
-   - /System/Library/PrivateFrameworks/HealthIntents.framework/HealthIntents
-   - /System/Library/PrivateFrameworks/HealthKitAdditions.framework/HealthKitAdditions
-   - /System/Library/PrivateFrameworks/HealthMenstrualCycles.framework/HealthMenstrualCycles
-   - /System/Library/PrivateFrameworks/HealthMenstrualCyclesUI.framework/HealthMenstrualCyclesUI
+
 +  - /System/Library/PrivateFrameworks/HealthNarrator.framework/HealthNarrator
 +  - /System/Library/PrivateFrameworks/HealthOntologyKit.framework/HealthOntologyKit
 +  - /System/Library/PrivateFrameworks/HealthPlans.framework/HealthPlans
 +  - /System/Library/PrivateFrameworks/HealthPlansUI.framework/HealthPlansUI
-   - /System/Library/PrivateFrameworks/HealthPlatform.framework/HealthPlatform
-   - /System/Library/PrivateFrameworks/HealthPlatformCatalogUI.framework/HealthPlatformCatalogUI
-   - /System/Library/PrivateFrameworks/HealthPlatformCore.framework/HealthPlatformCore
 
-   - /System/Library/PrivateFrameworks/HealthRecordServices.framework/HealthRecordServices
-   - /System/Library/PrivateFrameworks/HealthRecordsUI.framework/HealthRecordsUI
-   - /System/Library/PrivateFrameworks/HealthRecordsWalletSupport.framework/HealthRecordsWalletSupport
 +  - /System/Library/PrivateFrameworks/HealthReport.framework/HealthReport
 +  - /System/Library/PrivateFrameworks/HealthReportCoreUI.framework/HealthReportCoreUI
 +  - /System/Library/PrivateFrameworks/HealthReportPlatform.framework/HealthReportPlatform
 +  - /System/Library/PrivateFrameworks/HealthReportUI.framework/HealthReportUI
-   - /System/Library/PrivateFrameworks/HealthToolbox.framework/HealthToolbox
-   - /System/Library/PrivateFrameworks/HealthTopics.framework/HealthTopics
-   - /System/Library/PrivateFrameworks/HealthUI.framework/HealthUI
-   - /System/Library/PrivateFrameworks/HealthUtilities.framework/HealthUtilities
+
 +  - /System/Library/PrivateFrameworks/HealthVisualization.framework/HealthVisualization
-   - /System/Library/PrivateFrameworks/HeartHealth.framework/HeartHealth
-   - /System/Library/PrivateFrameworks/IconServices.framework/IconServices
+
 +  - /System/Library/PrivateFrameworks/LabKit.framework/LabKit
 +  - /System/Library/PrivateFrameworks/LabKitUI.framework/LabKitUI
-   - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
-   - /System/Library/PrivateFrameworks/MedicalIDUI.framework/MedicalIDUI
-   - /System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit
-+  - /System/Library/PrivateFrameworks/PhysicsKit.framework/PhysicsKit
-   - /System/Library/PrivateFrameworks/RecapPerformanceTesting.framework/RecapPerformanceTesting
-   - /System/Library/PrivateFrameworks/RespiratoryHealth.framework/RespiratoryHealth
-   - /System/Library/PrivateFrameworks/RespiratoryHealthUI.framework/RespiratoryHealthUI
-+  - /System/Library/PrivateFrameworks/SeymourCoreFoundation.framework/SeymourCoreFoundation
-   - /System/Library/PrivateFrameworks/ShareSheet.framework/ShareSheet
-   - /System/Library/PrivateFrameworks/Sleep.framework/Sleep
-   - /System/Library/PrivateFrameworks/SleepHealth.framework/SleepHealth
 
-   - /System/Library/PrivateFrameworks/TCC.framework/TCC
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-   - /System/Library/PrivateFrameworks/UserDomainConceptsSupport.framework/UserDomainConceptsSupport
++  - /System/Library/PrivateFrameworks/PhysicsKit.framework/PhysicsKit
+
++  - /System/Library/PrivateFrameworks/SeymourCoreFoundation.framework/SeymourCoreFoundation
+
 +  - /System/Library/PrivateFrameworks/WorkoutCore.framework/WorkoutCore
-   - /System/Library/PrivateFrameworks/WorkoutUI.framework/WorkoutUI
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
+
 +  - /usr/lib/swift/libswiftAppleArchive.dylib
 +  - /usr/lib/swift/libswiftCallKit.dylib
-   - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
+
 +  - /usr/lib/swift/libswiftCoreAudio_Private.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftCoreImage.dylib
-   - /usr/lib/swift/libswiftCoreLocation.dylib
-   - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
+
 +  - /usr/lib/swift/libswiftGLKit.dylib
-   - /usr/lib/swift/libswiftIntents.dylib
-   - /usr/lib/swift/libswiftMLCompute.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
-   - /usr/lib/swift/libswiftMetalKit.dylib
-   - /usr/lib/swift/libswiftModelIO.dylib
+
 +  - /usr/lib/swift/libswiftNaturalLanguage.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftObservation.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
+
 +  - /usr/lib/swift/libswiftSceneKit.dylib
-   - /usr/lib/swift/libswiftSpatial.dylib
+
 +  - /usr/lib/swift/libswiftSynchronization.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 3661
 -  Symbols:   2408
 -  CStrings:  1692
 +  Functions: 13164
 +  Symbols:   4763
 +  CStrings:  4224
- 
 Symbols:
 + _$s09HealthAppA13DaemonSupport0aB13LaunchHistoryO14itemIdentifierSSvgZ
 + _$s09HealthAppA13DaemonSupport0aB13LaunchHistoryO15interactionTypeSSvgZ

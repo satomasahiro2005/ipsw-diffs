@@ -2,13 +2,9 @@
 
 > `/usr/lib/libWirelessAudioIPC.dylib`
 
-```diff
+### Section Size Changes
 
-   __AUTH_CONST.__cfstring: 0x1240
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__auth_got: 0x0
-+  __DATA_DIRTY.__bss: 0x78
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/PrivateFrameworks/AppleSauce.framework/AppleSauce
-   - /usr/lib/libPCITransport.dylib
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x88` | `0x10` | **`-0x78`** |
+| `__DATA_DIRTY.__bss` | `—` | `0x78` | **`+0x78`** |

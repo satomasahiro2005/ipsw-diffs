@@ -2,23 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/StocksCore.framework/StocksCore`
 
-```diff
+### Section Size Changes
 
- 2028.1.0.0.0
--  __TEXT.__text: 0x257afc
-+  __TEXT.__text: 0x257d18
-   __TEXT.__objc_methlist: 0x6c2c
-   __TEXT.__const: 0x1d5c0
-   __TEXT.__cstring: 0x10010
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x257afc` | `0x257d18` | **`+0x21c`** |
+| `__TEXT.__unwind_info` | `0x9630` | `0x9640` | **`+0x10`** |
 
-   __TEXT.__swift_as_entry: 0x294
-   __TEXT.__swift_as_ret: 0x2b4
-   __TEXT.__swift_as_cont: 0x490
--  __TEXT.__unwind_info: 0x9630
-+  __TEXT.__unwind_info: 0x9640
-   __TEXT.__eh_frame: 0xd094
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+### Other Changes
+
+```text
 Functions:
 ~ sub_202e96ce0 -> sub_203513ce0 : 668 -> 672
 ~ sub_202ea5214 -> sub_203522218 : 872 -> 876

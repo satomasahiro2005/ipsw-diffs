@@ -2,54 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/HomeAutomationUIFramework.framework/HomeAutomationUIFramework`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x37b20` | `0x37ddc` | **`+0x2bc`** |
+| `__TEXT.__swift5_typeref` | `0x29e3` | `0x2999` | **`-0x4a`** |
+| `__TEXT.__const` | `0x3434` | `0x3454` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x9d0` | `0x9e8` | **`+0x18`** |
+| `__DATA.__data` | `0xf48` | `0xf50` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x10c8` | `0x10d0` | **`+0x8`** |
+| `__TEXT.__swift5_capture` | `0x2d0` | `0x2cc` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3600.27.3.11.2
--  __TEXT.__text: 0x359f8
--  __TEXT.__const: 0x3434
--  __TEXT.__swift5_typeref: 0x29e3
 +3605.9.1.0.0
-+  __TEXT.__text: 0x35c94
-+  __TEXT.__const: 0x3454
-+  __TEXT.__swift5_typeref: 0x2999
-   __TEXT.__swift5_reflstr: 0xbf4
-   __TEXT.__swift5_assocty: 0x2a0
-   __TEXT.__constg_swiftt: 0xb38
 
-   __TEXT.__swift5_proto: 0x254
-   __TEXT.__swift5_types: 0xc0
-   __TEXT.__cstring: 0x1791
--  __TEXT.__swift5_capture: 0x2d0
-+  __TEXT.__swift5_capture: 0x2cc
-   __TEXT.__oslogstring: 0x60
--  __TEXT.__unwind_info: 0x1588
-+  __TEXT.__unwind_info: 0x1598
-   __TEXT.__eh_frame: 0x898
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x1f98
-   __AUTH_CONST.__objc_const: 0x2b0
--  __AUTH_CONST.__auth_got: 0x9d0
-+  __AUTH_CONST.__auth_got: 0x9e8
-   __AUTH.__objc_data: 0xa0
-   __AUTH.__data: 0xe50
--  __DATA.__data: 0xf48
-+  __DATA.__data: 0xf50
-   __DATA.__common: 0x50
-   __DATA_DIRTY.__data: 0x98
-   __DATA_DIRTY.__bss: 0x80
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1800
--  Symbols:   603
+-  Symbols:   598
 +  Functions: 1804
-+  Symbols:   602
-   CStrings:  183
- 
++  Symbols:   597
 Symbols:
 + _symbolic _____y__________G 7SwiftUI15ModifiedContentV AA4TextV AA16_FlexFrameLayoutV
 + _symbolic _____y_____y______Qo______y_____SgGG 7SwiftUI15ModifiedContentV AA4ViewP07SnippetB0E10imageStyleyQr0F3Kit12ImageElementV0jH0OFQO AF07RFImageE0V AA30_EnvironmentKeyWritingModifierV AA19SymbolRenderingModeV

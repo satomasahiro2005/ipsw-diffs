@@ -2,91 +2,36 @@
 
 > `/System/Library/Frameworks/CoreImage.framework/CoreImage`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_floatobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH.__objc_data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3479d4` | `0x34919c` | **`+0x17c8`** |
+| `__TEXT.__cstring` | `0x103fd9` | `0x104941` | **`+0x968`** |
+| `__AUTH_CONST.__cfstring` | `0x1d620` | `0x1dba0` | **`+0x580`** |
+| `__TEXT.__oslogstring` | `0xae6f` | `0xb283` | **`+0x414`** |
+| `__AUTH.__data` | `0x277f0` | `0x278a0` | **`+0xb0`** |
+| `__TEXT.__gcc_except_tab` | `0xa7ec` | `0xa868` | **`+0x7c`** |
+| `__TEXT.__const` | `0xe128` | `0xe198` | **`+0x70`** |
+| `__DATA.__data` | `0x6760` | `0x67a8` | **`+0x48`** |
+| `__TEXT.__objc_methlist` | `0x15940` | `0x15978` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0xa898` | `0xa8b0` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x1848` | `0x1858` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0xae8` | `0xaf0` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -1660.0.0.0.0
--  __TEXT.__text: 0x3479d4
--  __TEXT.__objc_methlist: 0x15940
--  __TEXT.__const: 0xe128
--  __TEXT.__gcc_except_tab: 0xa7ec
--  __TEXT.__cstring: 0x103fd9
--  __TEXT.__oslogstring: 0xae6f
 +1663.0.0.0.0
-+  __TEXT.__text: 0x34919c
-+  __TEXT.__objc_methlist: 0x15978
-+  __TEXT.__const: 0xe198
-+  __TEXT.__gcc_except_tab: 0xa868
-+  __TEXT.__cstring: 0x104941
-+  __TEXT.__oslogstring: 0xb283
-   __TEXT.__dlopen_cstrs: 0x3fd
-   __TEXT.__runtimeheader: 0xda3c
-   __TEXT.__cikl2metal_pre: 0x54b
-   __TEXT.__grain: 0x105040
--  __TEXT.__unwind_info: 0xa898
-+  __TEXT.__unwind_info: 0xa8b0
-   __TEXT.__eh_frame: 0x350
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x360
-   __DATA_CONST.__objc_arraydata: 0x1488
--  __DATA_CONST.__got: 0xae8
-+  __DATA_CONST.__got: 0xaf0
-   __AUTH_CONST.__const: 0xde40
--  __AUTH_CONST.__cfstring: 0x1d620
-+  __AUTH_CONST.__cfstring: 0x1dba0
-   __AUTH_CONST.__objc_const: 0x2b488
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0xdc8
-
-   __AUTH_CONST.__objc_doubleobj: 0x2a40
-   __AUTH_CONST.__objc_floatobj: 0x2e0
-   __AUTH_CONST.__objc_arrayobj: 0x198
--  __AUTH_CONST.__auth_got: 0x1848
-+  __AUTH_CONST.__auth_got: 0x1858
-   __AUTH.__objc_data: 0x9dd0
--  __AUTH.__data: 0x277f0
-+  __AUTH.__data: 0x278a0
-   __DATA.__objc_ivar: 0x1fc0
--  __DATA.__data: 0x6760
-+  __DATA.__data: 0x67a8
-   __DATA.__bss: 0x3ae8
-   __DATA.__common: 0x38
-   __DATA_DIRTY.__objc_data: 0x6e0
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 15148
--  Symbols:   28529
+-  Symbols:   26317
 -  CStrings:  8820
 +  Functions: 15161
-+  Symbols:   28577
++  Symbols:   26328
 +  CStrings:  8880
- 
 Symbols:
 + -[CIFilter isEqual:]
 + -[CIImage imageByInsertingTiledIntermediateWithTileWidth:tileHeight:]
@@ -130,44 +75,6 @@ Symbols:
 + ___69-[CIImage imageByInsertingTiledIntermediateWithTileWidth:tileHeight:]_block_invoke
 + ____ZN2CIL20AppendConverterArrayEPNS_7ContextEPNS_4NodeENS_10ImageIndexEPK9__CFArrayNS_18ConverterDirectionEbb_block_invoke_2
 + _kCGUseLegacyHDREcosystem
-+ _objc_msgSend$baselineExposure
-+ _objc_msgSend$boostAmount
-+ _objc_msgSend$boostShadowAmount
-+ _objc_msgSend$colorNoiseReductionAmount
-+ _objc_msgSend$contrastAmount
-+ _objc_msgSend$decoderVersion
-+ _objc_msgSend$despeckleAmount
-+ _objc_msgSend$detailAmount
-+ _objc_msgSend$exposure
-+ _objc_msgSend$extendedDynamicRangeAmount
-+ _objc_msgSend$imageByInsertingTiledIntermediateWithTileWidth:tileHeight:
-+ _objc_msgSend$isColorNoiseReductionSupported
-+ _objc_msgSend$isContrastSupported
-+ _objc_msgSend$isDespeckleSupported
-+ _objc_msgSend$isDetailSupported
-+ _objc_msgSend$isDraftModeEnabled
-+ _objc_msgSend$isGamutMappingEnabled
-+ _objc_msgSend$isHighlightRecoveryEnabled
-+ _objc_msgSend$isHighlightRecoverySupported
-+ _objc_msgSend$isLensCorrectionEnabled
-+ _objc_msgSend$isLensCorrectionSupported
-+ _objc_msgSend$isLocalToneMapSupported
-+ _objc_msgSend$isLuminanceNoiseReductionSupported
-+ _objc_msgSend$isMoireReductionSupported
-+ _objc_msgSend$isSharpnessSupported
-+ _objc_msgSend$linearSpaceFilter
-+ _objc_msgSend$localToneMapAmount
-+ _objc_msgSend$luminanceNoiseReductionAmount
-+ _objc_msgSend$moireReductionAmount
-+ _objc_msgSend$nativeSize
-+ _objc_msgSend$neutralChromaticity
-+ _objc_msgSend$neutralLocation
-+ _objc_msgSend$neutralTemperature
-+ _objc_msgSend$neutralTint
-+ _objc_msgSend$orientation
-+ _objc_msgSend$scaleFactor
-+ _objc_msgSend$shadowBias
-+ _objc_msgSend$sharpnessAmount
 - -[CIImage imageByInsertingTiledIntermediateWithTileSize::]
 - GCC_except_table245
 - GCC_except_table250
@@ -199,7 +106,6 @@ Symbols:
 - __ZNSt3__16vectorIPKN2CI4NodeENS_9allocatorIS4_EEE18__assign_with_sizeB9fqn220106INS_17_ClassicAlgPolicyEPS4_SA_EEvT0_T1_l
 - __ZZN2CIL29gather_rois_for_program_graphEPNS_7ContextEPKcPNS_11ProgramNodeE6CGRectRKNSt3__16vectorIS6_NS7_9allocatorIS6_EEEEEN13SignpostTimerD1Ev
 - ___58-[CIImage imageByInsertingTiledIntermediateWithTileSize::]_block_invoke
-- _objc_msgSend$imageByInsertingTiledIntermediateWithTileSize::
 CStrings:
 + "    baselineExposure=%g\n"
 + "    boostAmount=%g\n"

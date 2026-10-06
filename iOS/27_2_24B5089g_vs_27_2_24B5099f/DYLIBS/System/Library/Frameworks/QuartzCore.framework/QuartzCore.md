@@ -2,78 +2,38 @@
 
 > `/System/Library/Frameworks/QuartzCore.framework/QuartzCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x40277c` | `0x4053a4` | **`+0x2c28`** |
+| `__TEXT.__oslogstring` | `0x1360f` | `0x13a25` | **`+0x416`** |
+| `__DATA_DIRTY.__bss` | `0x6a70` | `0x6b70` | **`+0x100`** |
+| `__TEXT.__cstring` | `0x29c79` | `0x29d4c` | **`+0xd3`** |
+| `__AUTH_CONST.__const` | `0x18b50` | `0x18c00` | **`+0xb0`** |
+| `__DATA_CONST.__const` | `0x11540` | `0x115c0` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x9540` | `0x95c0` | **`+0x80`** |
+| `__TEXT.__gcc_except_tab` | `0xa118` | `0xa09c` | **`-0x7c`** |
+| `__TEXT.__objc_methlist` | `0xbc34` | `0xbc94` | **`+0x60`** |
+| `__AUTH_CONST.__cfstring` | `0x18bc0` | `0x18c00` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5d50` | `0x5d88` | **`+0x38`** |
+| `__AUTH_CONST.__objc_const` | `0xee68` | `0xee88` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x2b88` | `0x2ba0` | **`+0x18`** |
+| `__DATA.__bss` | `0x4790` | `0x47a0` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -1223.10.10.0.0
--  __TEXT.__text: 0x3f7a58
--  __TEXT.__objc_methlist: 0xbc34
 +1223.10.16.0.0
-+  __TEXT.__text: 0x3fa5f0
-+  __TEXT.__objc_methlist: 0xbc94
-   __TEXT.__const: 0x19c00
-   __TEXT.__dlopen_cstrs: 0xe0
--  __TEXT.__cstring: 0x29c79
--  __TEXT.__gcc_except_tab: 0xa118
--  __TEXT.__oslogstring: 0x1360f
--  __TEXT.__unwind_info: 0xb748
-+  __TEXT.__cstring: 0x29d4c
-+  __TEXT.__gcc_except_tab: 0xa09c
-+  __TEXT.__oslogstring: 0x13a25
-+  __TEXT.__unwind_info: 0xb7d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x11540
-+  __DATA_CONST.__const: 0x115c0
-   __DATA_CONST.__objc_classlist: 0x468
-   __DATA_CONST.__objc_catlist: 0x60
-   __DATA_CONST.__objc_protolist: 0xd8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5d50
-+  __DATA_CONST.__objc_selrefs: 0x5d88
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x4e8
-   __DATA_CONST.__objc_arraydata: 0x3d00
-   __DATA_CONST.__got: 0xdd0
--  __AUTH_CONST.__const: 0x18b50
--  __AUTH_CONST.__cfstring: 0x18bc0
--  __AUTH_CONST.__objc_const: 0xee68
-+  __AUTH_CONST.__const: 0x18c00
-+  __AUTH_CONST.__cfstring: 0x18c00
-+  __AUTH_CONST.__objc_const: 0xee88
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_floatobj: 0x20
-   __AUTH_CONST.__objc_doubleobj: 0x150
-   __AUTH_CONST.__objc_intobj: 0x49b0
-   __AUTH_CONST.__objc_dictobj: 0x348
-   __AUTH_CONST.__objc_arrayobj: 0x30
--  __AUTH_CONST.__auth_got: 0x2b88
-+  __AUTH_CONST.__auth_got: 0x2ba0
-   __AUTH.__objc_data: 0x1388
-   __AUTH.__data: 0x60
-   __DATA.__objc_ivar: 0x754
 
-   __DATA.__common: 0x10
-   __DATA_DIRTY.__objc_data: 0x1888
-   __DATA_DIRTY.__data: 0x620
--  __DATA_DIRTY.__bss: 0x6a70
-+  __DATA_DIRTY.__bss: 0x6b70
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libxml2.2.dylib
 -  Functions: 12838
 -  Symbols:   19973
 -  CStrings:  8629
 +  Functions: 12863
 +  Symbols:   20010
 +  CStrings:  8651
- 
 Symbols:
 + -[CADisplay _getSecureIndicatorSteadyDeadlineForType:kind:deadline:]
 + -[CASecureIndicatorLayer remainingTimeAsSteadyForDisplay:]

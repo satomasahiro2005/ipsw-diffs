@@ -2,34 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/AlchemistBase.framework/AlchemistBase`
 
-```diff
+### Section Size Changes
 
- 32.0.6.0.0
--  __TEXT.__text: 0x2de14
--  __TEXT.__objc_methlist: 0xa94
-+  __TEXT.__text: 0x2de5c
-+  __TEXT.__objc_methlist: 0xaac
-   __TEXT.__const: 0x2678
-   __TEXT.__swift5_typeref: 0x898
-   __TEXT.__cstring: 0xc30
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__objc_const` | `0x5268` | `0x5328` | **`+0xc0`** |
+| `__TEXT.__text` | `0x2de14` | `0x2de5c` | **`+0x48`** |
+| `__TEXT.__objc_methlist` | `0xa94` | `0xaac` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x880` | `0x890` | **`+0x10`** |
 
-   __DATA_CONST.__objc_classlist: 0x68
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x880
-+  __DATA_CONST.__objc_selrefs: 0x890
-   __DATA_CONST.__objc_protorefs: 0x40
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x1a68
--  __AUTH_CONST.__objc_const: 0x5268
-+  __AUTH_CONST.__objc_const: 0x5328
-   __AUTH_CONST.__auth_got: 0x980
-   __DATA.__data: 0x6f0
-   __DATA.__common: 0x28
+### Other Changes
+
+```text
 Functions:
-~ sub_2514e2610 -> sub_251f31610 : 3704 -> 3752
-~ sub_2514ea49c -> sub_251f394cc : 968 -> 972
-~ sub_2514eb004 -> sub_251f3a038 : 1664 -> 1672
-~ sub_2514ed360 -> sub_251f3c39c : 1376 -> 1384
-~ sub_251501df8 -> sub_251f50e3c : 648 -> 652
+~ sub_2513ac610 -> sub_251dfa610 : 3704 -> 3752
+~ sub_2513b449c -> sub_251e024cc : 968 -> 972
+~ sub_2513b5004 -> sub_251e03038 : 1664 -> 1672
+~ sub_2513b7360 -> sub_251e0539c : 1376 -> 1384
+~ sub_2513cbdf8 -> sub_251e19e3c : 648 -> 652
 ```

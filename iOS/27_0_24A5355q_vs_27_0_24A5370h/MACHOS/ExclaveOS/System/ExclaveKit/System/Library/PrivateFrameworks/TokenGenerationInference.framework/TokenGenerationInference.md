@@ -2,320 +2,81 @@
 
 > `/System/ExclaveKit/System/Library/PrivateFrameworks/TokenGenerationInference.framework/TokenGenerationInference`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7abfc` | `0x95c38` | **`+0x1b03c`** |
+| `__DATA_CONST.__const` | `0x4e58` | `0x61b0` | **`+0x1358`** |
+| `__TEXT.__oslogstring` | `0x140f` | `0x1d8f` | **`+0x980`** |
+| `__TEXT.__eh_frame` | `0x4b8c` | `0x54d0` | **`+0x944`** |
+| `__TEXT.__swift5_capture` | `0x644` | `0xd78` | **`+0x734`** |
+| `__DATA.__data` | `0x3c20` | `0x41e8` | **`+0x5c8`** |
+| `__TEXT.__auth_stubs` | `0x1c90` | `0x21c0` | **`+0x530`** |
+| `__TEXT.__const` | `0x36d0` | `0x3ab0` | **`+0x3e0`** |
+| `__TEXT.__cstring` | `0x16a6` | `0x1a66` | **`+0x3c0`** |
+| `__TEXT.__unwind_info` | `0x2028` | `0x2358` | **`+0x330`** |
+| `__DATA.__objc_const` | `0x31d8` | `0x34f8` | **`+0x320`** |
+| `__TEXT.__swift5_reflstr` | `0x1b25` | `0x1e0e` | **`+0x2e9`** |
+| `__TEXT.__swift5_fieldmd` | `0x1d14` | `0x1fb0` | **`+0x29c`** |
+| `__DATA_CONST.__auth_got` | `0xe60` | `0x10f8` | **`+0x298`** |
+| `__TEXT.__swift5_typeref` | `0x16f0` | `0x1928` | **`+0x238`** |
+| `__TEXT.__constg_swiftt` | `0x23c8` | `0x2538` | **`+0x170`** |
+| `__TEXT.__objc_methname` | `0x1a67` | `0x1bc8` | **`+0x161`** |
+| `__TEXT.__gcc_except_tab` | `0xc78` | `0xd80` | **`+0x108`** |
+| `__DATA.__objc_data` | `0x430` | `0x4d0` | **`+0xa0`** |
+| `__DATA_CONST.__auth_ptr` | `0x5b0` | `0x648` | **`+0x98`** |
+| `__TEXT.__objc_classname` | `0xad4` | `0xb54` | **`+0x80`** |
+| `__DATA_CONST.__got` | `0x3a0` | `0x418` | **`+0x78`** |
+| `__DATA.__common` | `0x160` | `0x1c8` | **`+0x68`** |
+| `__TEXT.__objc_stubs` | `0x5a0` | `0x5e0` | **`+0x40`** |
+| `__TEXT.__swift_as_cont` | `0x214` | `0x250` | **`+0x3c`** |
+| `__DATA_CONST.__cfstring` | `0x240` | `0x260` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x210` | `0x230` | **`+0x20`** |
+| `__TEXT.__swift_as_ret` | `0x110` | `0x12c` | **`+0x1c`** |
+| `__TEXT.__objc_methlist` | `0x2dc` | `0x2f4` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x120` | `0x138` | **`+0x18`** |
+| `__DATA.__bss` | `0x318` | `0x308` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x170` | `0x180` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1e8` | `0x1f8` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x340` | `0x350` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x104` | `0x114` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x48` | `0x4c` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_protos`
+
+### Other Changes
+
 ```diff
 
 -289.0.15.0.0
--  __TEXT.__text: 0x7abfc sha256:5aa983c279c88cab05de3a3d1c10df9f08e1064f81fdb8c5ff18127d65ab438d
--  __TEXT.__auth_stubs: 0x1c90 sha256:76896d5f5e2dfac64f5fc8e6373d6a56fccd111ccc772e90f59bd5396fc75120
--  __TEXT.__objc_stubs: 0x5a0 sha256:bcac6859f4c84592bf187e7dd914266e05a4fa0ceb446cc677438cbcd8726671
--  __TEXT.__objc_methlist: 0x2dc sha256:2d00963aa306524c6b82f5e4b594949a1e63a2949daefa7f8f2472c2eaffdaf6
--  __TEXT.__const: 0x36d0 sha256:ef3b5408f681d6d2bd672c553862c0840146c662e51065fc83ebc08ebc05e78a
--  __TEXT.__cstring: 0x16a6 sha256:8aa2edac5dfac8e52bedd3eee670a4c01ecc90c514e78a755b4fbfe08aa1f855
--  __TEXT.__gcc_except_tab: 0xc78 sha256:c9c2c234e85db8693c0d8f8ec424b5b259e46526d661231befda2514ac1b8282
--  __TEXT.__objc_methname: 0x1a67 sha256:065eb3e739c03b1bec180dd32b5d254154447634faf121de3ffda59c786a2b4f
--  __TEXT.__oslogstring: 0x140f sha256:f8135b97174de42004745a5eebc047e009813d436936be025b443c5f8991c236
--  __TEXT.__objc_classname: 0xad4 sha256:e5bcf7bac01ab0a0b26db6d999c27aa8ba12c86105b49b41b14afa356234e499
 +294.0.7.0.0
-+  __TEXT.__text: 0x95c38 sha256:3a7b6330b643c84515ed3bbb02917dd9158392c70d0c4aff91ec8dae17d6c746
-+  __TEXT.__auth_stubs: 0x21c0 sha256:723cf110da87727d31bff8ba81acf80fac70f9aab46fac1c1e641b7f18f9661b
-+  __TEXT.__objc_stubs: 0x5e0 sha256:d05e13a182bea6bf30ace8caf59b302a1a15d4f5eca70892fcecb93f604b34aa
-+  __TEXT.__objc_methlist: 0x2f4 sha256:da59afdc65b336d448273eba5bdc5488e5fa15c1bc5d807f296512b1221e95bb
-+  __TEXT.__const: 0x3ab0 sha256:7befe71cec5f36d7c2f8df5d22a7a410c9f5e8689e81be86e509593746759e4c
-+  __TEXT.__cstring: 0x1a66 sha256:dadd11bcfcedd6c21abc6b08dbe6aec3fef05b8e7c56e86cc7994ea7eb82865f
-+  __TEXT.__gcc_except_tab: 0xd80 sha256:17f4928f0c1b45498b7a570d635ca032338e77e40f9cc999f827b5d1a0ef90d4
-+  __TEXT.__objc_methname: 0x1bc8 sha256:8f2534a8da14300a2830f3277559d31fd356985e917f50ed12c37c0186633be0
-+  __TEXT.__oslogstring: 0x1d8f sha256:b0fcc48bda853104f20f386941518cd56b36f7dc7772a260513481ea10db5fe8
-+  __TEXT.__objc_classname: 0xb54 sha256:63ade30d9600479263a685eef18a59c9306c83459e24eead07da31e735843eca
-   __TEXT.__objc_methtype: 0x102f sha256:53d9d8d8b6ad098bfe048b0f7754bcc612986afd9ff90fe43c00af8a59d5798e
--  __TEXT.__swift5_typeref: 0x16f0 sha256:2a3efe8c70888af39e1fc5d37ac05ce493923c5c453f3f899c58ec04c419b1a8
--  __TEXT.__swift5_reflstr: 0x1b25 sha256:c48f953ebf9152dfe697afeafe2793c5ac4998007ebb037279f393536b53ebac
--  __TEXT.__swift5_assocty: 0x120 sha256:cda2627efd7fc260191e0c7382e7cf303d949cb7caf2b0008ffda3a37d2c1f6b
--  __TEXT.__constg_swiftt: 0x23c8 sha256:fdef9f9d904410771e4c7dacc71bb143174e0ce265c3cf97e3532b29476297df
--  __TEXT.__swift5_fieldmd: 0x1d14 sha256:61b2989c5ce5ca2f568d8786d480df56185ed976b3e906995c08b7c01b6915cf
--  __TEXT.__swift5_proto: 0x340 sha256:9d8b4625ebaef6de4850e69547a33f665369e3dfe33d6247628e7c55c535e96f
--  __TEXT.__swift5_types: 0x210 sha256:0aa30fa5aee3e3c16b1f53d030e6b194879d71a94ce289e10ed7888f3a30d96f
--  __TEXT.__swift5_protos: 0x7c sha256:b4744b51499b422acab29dcc7925a9f2e9348b23dda6e180409e4197da126046
--  __TEXT.__swift5_capture: 0x644 sha256:7f9d776692237031debe6a925ae6301bd6d9f281d6b7335007b274e39fcf8eb2
--  __TEXT.__swift_as_entry: 0x104 sha256:7ba9da82537a38e2f98e2db88f79761b3bf6200d8de0c80c735de7218289ee0c
--  __TEXT.__swift_as_ret: 0x110 sha256:34e644f25c1dcce6a5b43683bfadc73a2d689ff3b2e871a503cba7a1c4ffb2a3
--  __TEXT.__swift_as_cont: 0x214 sha256:4cd6e6194b7d52edc451c3502b6293850220eb3415919d31f8238e857ec8f150
--  __TEXT.__swift5_builtin: 0x3c sha256:300ae197119d9d3669b857dd3826446d6fc8225a2240640b155fb691583b48eb
--  __TEXT.__swift5_mpenum: 0x18 sha256:9aa286faa2c8c92681cf99dce492f952d9680027e6f969edb430ad1c5ff182b9
--  __TEXT.__unwind_info: 0x2028 sha256:4071466d90a0ed22ff9130653af7bac8250f96defb7f7a330cb2da302f6c7449
--  __TEXT.__eh_frame: 0x4b8c sha256:6f33cb543bf9434d7685e06ce5171eed93ce7c904eb0f5a8e0dc01b03954e5c2
--  __DATA_CONST.__const: 0x4e58 sha256:7764cd3d1233346408f44f2fd8f140009b093569b258a0fb81680fb8666314bb
--  __DATA_CONST.__cfstring: 0x240 sha256:6a6f6d2fad590401fcefdbb481e49e9b5d3c217343bb3fe042c429e3532ca986
--  __DATA_CONST.__objc_classlist: 0x170 sha256:34c799bfd5578e4de446dc7c1848474c5ff34e8ada3de4f40936cf0b76f77dc3
--  __DATA_CONST.__objc_protolist: 0x18 sha256:b19645d0e71f936f78309386f5103a5d5611c940e28ab3e92dbd743f50903706
-+  __TEXT.__swift5_typeref: 0x1928 sha256:0505158d8f803e1d97e690c0f5d9c17db0f87fe41d10e1910179a8170d612195
-+  __TEXT.__swift5_reflstr: 0x1e0e sha256:3db203f21ec48b11a745115451d8a09b3fdd8b714a0bf8ff7c4df1af14a22039
-+  __TEXT.__swift5_assocty: 0x138 sha256:75ecbdb23f3901dd6202b4a993d40eeff1cad9a9cb342c63518d6ecb0f0a4cba
-+  __TEXT.__constg_swiftt: 0x2538 sha256:3d5a398ef7d24ef0c8fe183ff34174dc737cb9711e7d962a9bea0d5ee1f71e31
-+  __TEXT.__swift5_fieldmd: 0x1fb0 sha256:6af624606e9e1077c793d9caf9f62b5e45b25625280cc8066174999485600efb
-+  __TEXT.__swift5_proto: 0x350 sha256:4192871cfd70a4d9c13ab22442b938a70e062baf533ad6d976f4f49c044a57ab
-+  __TEXT.__swift5_types: 0x230 sha256:0d984f316c55aefbb4807d0439c68cbb98efaaddfde218a7bdc2be6ae96e5db8
-+  __TEXT.__swift5_protos: 0x7c sha256:a30fec4d2e764e8195497efc511a3f43a82ac09ef941eac5d80101c92fc9fc8f
-+  __TEXT.__swift5_capture: 0xd78 sha256:dd2457bd1bfcad461d7934d3817c3fb071ee884b4ff6131bbd1a77ca2fdbb329
-+  __TEXT.__swift_as_entry: 0x114 sha256:109387c495aca8e26eb80c994ae067a5e4c92478a4a7a00eb708062fdfc10832
-+  __TEXT.__swift_as_ret: 0x12c sha256:636f562acf3334e4d96b76e739dce24bc53a51eb8c1f3ce8ea8a9f2feec03901
-+  __TEXT.__swift_as_cont: 0x250 sha256:c27d50347df782cf05d3813341e802906310e2a9be7f1498b606a031147c09b7
-+  __TEXT.__swift5_builtin: 0x3c sha256:186e4f2b0076fbf2edfbebc1407a8a052362a1141fd8974c6c5c73d749d0a9fa
-+  __TEXT.__swift5_mpenum: 0x18 sha256:a8db37758a61ecdee6e1cae4510b4fa7f5d1cd29ab588552f647a8143d246ea5
-+  __TEXT.__unwind_info: 0x2358 sha256:a39ef3403279150c7d827287b33e9e206fc68773ac2386a466a3973236b29a6f
-+  __TEXT.__eh_frame: 0x54d0 sha256:811fafeccc182120576710acf510e4cf6d29a42fa8907475378c9ae124041cd0
-+  __DATA_CONST.__const: 0x61b0 sha256:47004ec336b3ea584eb421369f978a84248743082beab74e1ba61c1acd00d298
-+  __DATA_CONST.__cfstring: 0x260 sha256:7442134c02366203855a56997c491f004e8fb71aef955eb002ae6117f50bff4d
-+  __DATA_CONST.__objc_classlist: 0x180 sha256:f7f74912afef1ce9fd1e72d94e5ceb6e5158abecb372e91732da6eb5a6a17d70
-+  __DATA_CONST.__objc_protolist: 0x18 sha256:345e023c0201aae45b3993decd9e3773b73f0b8566440aaeb414b158bb17dfae
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:885ce8037a15de89b0ceb0054c31fc3de725513307f685be388961916dadcdb0
--  __DATA_CONST.__objc_selrefs: 0x1e8 sha256:e66ff2fa88dbf27065b5e0de0944484bd3e5ed18f47141c6df913a5e43bba99e
--  __DATA_CONST.__objc_protorefs: 0x8 sha256:56ff32996bcac99592ee901fb613ddcbcfcdba785aa688f16c84ff24377fcd5f
--  __DATA_CONST.__objc_superrefs: 0x18 sha256:77d1c034f2ef4c9a9aa425574013a0da4228575ab7334bc3ee9537e93850a0c3
--  __DATA_CONST.__auth_got: 0xe60 sha256:affb24dc89f28e2697ab1725676ead4ca69d71e4e3b260361c37296d5e5053c3
--  __DATA_CONST.__got: 0x3a0 sha256:bcc309b5491470573aa0215341cd55aafd6fc691a7ea70d2691f7b2c81c5eebc
--  __DATA_CONST.__auth_ptr: 0x5b0 sha256:7a74df561c8aced6893151a57e60fd5a01d9dd6926717d171e6892f16db9a4b7
--  __DATA.__objc_const: 0x31d8 sha256:0170242b78ed4fee86381172a5f3aa4ba10fd603f382afa5d9ad6ba0c687c3d5
--  __DATA.__objc_ivar: 0x48 sha256:54c98389d47108464d819601a35842d269c13def1e247686ec7ac4e63dddc498
--  __DATA.__objc_data: 0x430 sha256:61f9b35453cf14d4e5bb82d22c9b35bae7de6ff85ba5d51a41915fec255b9ec5
--  __DATA.__data: 0x3c20 sha256:831a32aabd4c57300ec25f181a52c07a0da3b001c1faa269414d4d26acdf66d1
--  __DATA.__bss: 0x318 sha256:52f033ec34066343ced3a1bed745100fe4efe6577154125a6d9483c6b482219a
--  __DATA.__common: 0x160 sha256:627f6149015f853f26db2f3dffba1b7c30b3b74b87c5cfb9f346c1616e3636d0
-+  __DATA_CONST.__objc_selrefs: 0x1f8 sha256:062c5ba41d09f08bd49050d9dbcae5308eb7a1a2187374645faaede8b3cfd324
-+  __DATA_CONST.__objc_protorefs: 0x8 sha256:b06d1692b9d91849133b1fd0c87b170c67ed7023b3d764bac26c2706d9847c4e
-+  __DATA_CONST.__objc_superrefs: 0x18 sha256:f3d35d37e5ce67f593ce4be560606b485a30fed029bb72862a2dc77d9cf1444a
-+  __DATA_CONST.__auth_got: 0x10f8 sha256:c4f590059f7bf78cdc7f897de2fb8d5e43d2244dcae641949fb3b23deacaa251
-+  __DATA_CONST.__got: 0x418 sha256:4cbaa1d349fdbc4c84587003ae6114c192c4973acccdb903159c90f08c135b95
-+  __DATA_CONST.__auth_ptr: 0x648 sha256:4efa0faf2c2327f8c63bfcf133484b7b0eaf4aba6548aab3b39fe3e2dfad41c6
-+  __DATA.__objc_const: 0x34f8 sha256:93384355f0b25c93944907c1ca0d157f4ad395cbf0d657e5e8cd7aafeec56596
-+  __DATA.__objc_ivar: 0x4c sha256:02e888a21f630295421e4104a6659aa13a1d0386f361a1f9024b10eb8680c450
-+  __DATA.__objc_data: 0x4d0 sha256:7f8949bdd9b16edb9b517b0537b0db577e3f38dfbec48bf5012bdd5212d4d99c
-+  __DATA.__data: 0x41e8 sha256:07310b82ad6804c9e1d7775106667298e11fce1af838a132d9bcd6331ff5c95b
-+  __DATA.__bss: 0x308 sha256:508f5ba745944e982367cdbcd6a240acc7f895583df43b519b7d6745f5d86f7b
-+  __DATA.__common: 0x1c8 sha256:29da6fa1db37124c587535ee343794bfc4d9b4b844e5008a8133791d17f28b06
-   - /System/ExclaveKit/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/ExclaveKit/System/Library/Frameworks/EXMobileAssetLoader.framework/EXMobileAssetLoader
-   - /System/ExclaveKit/System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /System/ExclaveKit/usr/lib/swift/libswift_Builtin_float.dylib
-   - /System/ExclaveKit/usr/lib/swift/libswift_Concurrency.dylib
-   - /System/ExclaveKit/usr/lib/swift/libswiftos.dylib
--  UUID: 3FE8C7C4-19E8-3C87-B443-10A2D96E3EE6
 -  Functions: 2230
--  Symbols:   18245
--  CStrings:  563
-+  UUID: 68944741-DBE5-3545-8833-7C623A127B1B
+-  Symbols:   6380
+-  CStrings:  536
 +  Functions: 2534
-+  Symbols:   20380
-+  CStrings:  630
- 
++  Symbols:   6915
++  CStrings:  601
 Symbols:
-+ $s24TokenGenerationInference12AFMUtilitiesV23makeMaximumSizedBuffers3for9largestOf17excludingOperands015copyingContentsK016exclaveResourcesSDySS4ODIE6TensorV13SharedStorageVGSaySSG_SayxGApoA07ExclaveQ0VtKAA0S20RequirementsProviderRzlFZySwXEfU1_TA.327
-+ $s24TokenGenerationInference12AFMUtilitiesV23makeMaximumSizedBuffers3for9largestOf17excludingOperands015copyingContentsK0SDySS4ODIE6TensorV13SharedStorageVGSaySSG_SayxGAoNtKAA0Q20RequirementsProviderRzlFZySwXEfU1_TA.355
-+ $s24TokenGenerationInference12AFMUtilitiesV23makeMaximumSizedBuffers3for9largestOf17excludingOperands015copyingContentsK0SDySS4ODIE6TensorV13SharedStorageVGSaySSG_SayxGAoNtKAA0Q20RequirementsProviderRzlFZySwXEfU1_TA.356
-+ $s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.164
-+ $s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.191
-+ $s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.28
-+ $s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.291
-+ $s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.33
-+ $s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.338
-+ $s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.354
-+ $s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.37
-+ $s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.370
-+ $s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.39
-+ $s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.45
-+ $s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.50
-+ $s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.51
-+ $s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.53
-+ $s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.69
-+ $s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.76
-+ $s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.77
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.106
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.114
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.122
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.142
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.150
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.172
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.180
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.209
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.217
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.242
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.250
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.283
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.305
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.313
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.321
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.346
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.387
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.395
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.403
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.414
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.47
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.55
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.61
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.63
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.68
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.84
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.98
-+ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA.266
-+ $s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.160
-+ $s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.187
-+ $s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.287
-+ $s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.29
-+ $s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.33
-+ $s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.334
-+ $s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.35
-+ $s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.350
-+ $s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.366
-+ $s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.41
-+ $s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.46
-+ $s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.47
-+ $s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.49
-+ $s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.65
-+ $s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.72
-+ $s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.73
-+ $s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_TA.254
-+ $s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA.258
-+ $sSiIegd_SiIegr_TRTA.102
-+ $sSiIegd_SiIegr_TRTA.110
-+ $sSiIegd_SiIegr_TRTA.118
-+ $sSiIegd_SiIegr_TRTA.138
-+ $sSiIegd_SiIegr_TRTA.146
-+ $sSiIegd_SiIegr_TRTA.168
-+ $sSiIegd_SiIegr_TRTA.176
-+ $sSiIegd_SiIegr_TRTA.205
-+ $sSiIegd_SiIegr_TRTA.213
-+ $sSiIegd_SiIegr_TRTA.238
-+ $sSiIegd_SiIegr_TRTA.246
-+ $sSiIegd_SiIegr_TRTA.279
-+ $sSiIegd_SiIegr_TRTA.301
-+ $sSiIegd_SiIegr_TRTA.309
-+ $sSiIegd_SiIegr_TRTA.317
-+ $sSiIegd_SiIegr_TRTA.342
-+ $sSiIegd_SiIegr_TRTA.383
-+ $sSiIegd_SiIegr_TRTA.391
-+ $sSiIegd_SiIegr_TRTA.399
-+ $sSiIegd_SiIegr_TRTA.410
-+ $sSiIegd_SiIegr_TRTA.43
-+ $sSiIegd_SiIegr_TRTA.51
-+ $sSiIegd_SiIegr_TRTA.57
-+ $sSiIegd_SiIegr_TRTA.59
-+ $sSiIegd_SiIegr_TRTA.64
-+ $sSiIegd_SiIegr_TRTA.80
-+ $sSiIegd_SiIegr_TRTA.94
-+ $ss5Int32VIegd_ABIegr_TRTA.262
++ $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA
++ $s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_TA
++ $s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA
++ $ss5Int32VIegd_ABIegr_TRTA
 + -[TGIModelConfigurationObjC embeddingsBundlePath]
 + -[TGIModelConfigurationObjC setEmbeddingsBundlePath:]
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/DerivedSources/
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/AFMDecodeFunction+MOD.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/AFMDecodeFunctionEngine.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/AFMGatherFunction+MOD.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/AFMLanguageModelUtilities.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/AFMLogitFunction+MOD.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/AFMMODUtilities.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/AFMUtilities.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/AFMV7DecodeFunctionEngine+MOD.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/ANESessionProtocol.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/ArgmaxPresampler.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/BaseModel.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/BasicDecoder.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/BasicDecoderPerformanceMeasurement.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/BasicLogitPresampler.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/BeamSearchDecoder.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/ClassificationSampling.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/DataStreamStateManager.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/DecoderModelError.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/DelayedMaskedLanguageModel.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/DeterministicLanguageModelProtocol.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/E5RunnerErrorObjC.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/EarlyReturnLogits.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/EmptyLogitCollection.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/ExclaveGreedyDecoder.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/ExclaveResources.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/ExclaveStorageUtilities.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/ExclaveStubs.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/GenerationSchema+PrefixGuidedGeneration.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/GrammarGuidedLanguageModel.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/GreedySampling.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/IFPDenseLayerOutput.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/ImageSize.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/KVLRUCache.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/KeyValueCacheDescriptor.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/LanguageModelError.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/LanguageModelLoaderExclave.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/LanguageModelRunner+LogitPresampler.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/LanguageModelRunner.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/LinearSpeculator.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/Logger.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/LogitCollection.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/LogitIndexSet.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/LogitMapper.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/LogitPresampler.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/Logits.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/MODBaseModel.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/MODExtensions.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/MODImageFeatureProjector.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/MODLanguageModel.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/MODLanguageModelRunner+LanguageModelRunner.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/MODLanguageModelRunner.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/MaskedLanguageModel.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/MaskedLogitCollection.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/NodeStorage.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/NucleusSampling.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/NullLogitPresampler.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/OnDeviceInferenceAssetMetadata.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/OnDeviceInferenceAssetRepository.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/OnDeviceInferenceContext.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/OnDeviceInferenceContextFactory.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/OnDeviceInferenceOverrides.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/OnDeviceInferenceProviderDataSource.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/OnExclaveDeviceInferenceProvider.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/RunnerLanguageModel.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/SamplingDecoder.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/SpeculativeDecoderPerformanceLoggingProtocol.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/SpeculativeLanguageModel.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/SpeculativeStreamingLanguageModel.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/TGIE5BaseModelObjC.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/TGIMersenneTwisterEngine.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/TGIModelConfigurationObjC.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/TokenGenerationInference.swiftmodule
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/TokenGenerationInference_vers.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/TokenMask.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/TokenSampling.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/ToolCallLanguageModel.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/TopK2LogitCollection.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/TopK2Presampler.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/TopKSampling.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/TopKTreeSpeculator.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/UnconstrainedLogitCollection.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/UnweightedSingleLogitCollection.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/UnweightedSparseLogitCollection.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/VocabTranslatingLogitCollection.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/VocabularyMap.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/VocabularyStamping.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/WeightedDenseLogitCollectionExclave.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/WeightedSingleLogitCollection.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/WeightedSparseLanguageModel.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/WeightedSparseLogitCollection.o
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/CollectionAdditions/
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/Decoders/
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/Decoders/SpeculativeDecoding/
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/GuidedGeneration/
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/GuidedGeneration/Prefix/
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/ImageProcessing/
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/InferenceProvider/
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/InferenceProvider/Common/
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/InferenceProvider/Device/
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/LanguageModels/
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/LanguageModels/LanguageModelModule/Swift/
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/LanguageModels/LanguageModelModule/Swift/AFMCommon/
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/LanguageModels/LanguageModelModule/Swift/IFP/
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/LanguageModels/LanguageModelModule/Swift/MODModel/
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/LanguageModels/LanguageModelModule/objc/
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/LanguageModels/Speculative/
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/Logits/
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/Logits/LogitCollections/
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/Logits/Presampling/
-+ /Library/Caches/com.apple.xbs/4A71B482-FB63-4515-B747-62BD003D00E9/TemporaryDirectory.3trx2o/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/Logits/TokenSampling/
++ /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/AFMLogitFunction+MOD.o
++ /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/ExclaveGreedyDecoder.o
++ /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/VocabTranslatingLogitCollection.o
++ /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/VocabularyMap.o
++ /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/VocabularyStamping.o
 + AFMLogitFunction+MOD.swift
 + ExclaveGreedyDecoder.swift
 + GCC_except_table103
@@ -859,8 +620,8 @@ Symbols:
 + _$ss5Int32Vs23CustomStringConvertiblesWP
 + _$ss6HasherV5_hash4seed5bytes5countS2i_s6UInt64VSitFZ
 + _$ss7CVarArgMp
-+ _ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorI23TGIAdapterConfigurationNS_9allocatorIS2_EEE12emplace_backIJS2_EEERS2_DpOT_EUlvE_ZNS6_IJS2_EEES7_SA_EUlvE0_EEvbT_T0_.cold.1
-+ _ZNSt3__120__optional_copy_baseINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEELb0EEC2B9fqe220106ERKS7_.cold.1
++ _ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorI23TGIAdapterConfigurationNS_9allocatorIS2_EEE12emplace_backIJS2_EEERS2_DpOT_EUlvE_ZNS6_IJS2_EEES7_SA_EUlvE0_EEvbT_T0_
++ _ZNSt3__120__optional_copy_baseINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEELb0EEC2B9fqe220106ERKS7_
 + __DATA__TtC24TokenGenerationInference19AFMLogitFunctionMOD
 + __DATA__TtC24TokenGenerationInference25AFMLogitFunctionMODEngine
 + __IVARS__TtC24TokenGenerationInference19AFMLogitFunctionMOD
@@ -906,117 +667,8 @@ Symbols:
 + __ZNSt3__16vectorI23TGIAdapterConfigurationNS_9allocatorIS1_EEE22__base_destruct_at_endB9fqe220106EPS1_
 + __ZSt28__throw_bad_array_new_lengthB9fqe220106v
 + ___swift_allocate_boxed_opaque_existential_0
-+ __swift_closure_destructor.100
-+ __swift_closure_destructor.104
-+ __swift_closure_destructor.108
-+ __swift_closure_destructor.112
-+ __swift_closure_destructor.116
-+ __swift_closure_destructor.124
-+ __swift_closure_destructor.127
-+ __swift_closure_destructor.130
-+ __swift_closure_destructor.133
-+ __swift_closure_destructor.136
-+ __swift_closure_destructor.140
-+ __swift_closure_destructor.144
-+ __swift_closure_destructor.148
-+ __swift_closure_destructor.152
-+ __swift_closure_destructor.155
-+ __swift_closure_destructor.162
-+ __swift_closure_destructor.166
-+ __swift_closure_destructor.170
-+ __swift_closure_destructor.174
-+ __swift_closure_destructor.178
-+ __swift_closure_destructor.182
-+ __swift_closure_destructor.185
-+ __swift_closure_destructor.189
 + __swift_closure_destructor.18Tm
-+ __swift_closure_destructor.197
-+ __swift_closure_destructor.20
-+ __swift_closure_destructor.200
-+ __swift_closure_destructor.203
-+ __swift_closure_destructor.207
-+ __swift_closure_destructor.211
-+ __swift_closure_destructor.215
-+ __swift_closure_destructor.227
-+ __swift_closure_destructor.230
-+ __swift_closure_destructor.233
-+ __swift_closure_destructor.236
-+ __swift_closure_destructor.240
-+ __swift_closure_destructor.244
-+ __swift_closure_destructor.248
-+ __swift_closure_destructor.252
-+ __swift_closure_destructor.256
-+ __swift_closure_destructor.26
-+ __swift_closure_destructor.260
-+ __swift_closure_destructor.264
-+ __swift_closure_destructor.268
-+ __swift_closure_destructor.271
-+ __swift_closure_destructor.274
-+ __swift_closure_destructor.277
-+ __swift_closure_destructor.281
-+ __swift_closure_destructor.285
-+ __swift_closure_destructor.289
-+ __swift_closure_destructor.293
-+ __swift_closure_destructor.296
-+ __swift_closure_destructor.299
-+ __swift_closure_destructor.30
-+ __swift_closure_destructor.303
-+ __swift_closure_destructor.307
-+ __swift_closure_destructor.311
-+ __swift_closure_destructor.315
-+ __swift_closure_destructor.319
-+ __swift_closure_destructor.329
-+ __swift_closure_destructor.33
-+ __swift_closure_destructor.332
-+ __swift_closure_destructor.336
-+ __swift_closure_destructor.340
-+ __swift_closure_destructor.344
-+ __swift_closure_destructor.348
-+ __swift_closure_destructor.352
-+ __swift_closure_destructor.358
-+ __swift_closure_destructor.36
-+ __swift_closure_destructor.361
-+ __swift_closure_destructor.364
-+ __swift_closure_destructor.368
-+ __swift_closure_destructor.37
-+ __swift_closure_destructor.372
-+ __swift_closure_destructor.375
-+ __swift_closure_destructor.378
-+ __swift_closure_destructor.381
-+ __swift_closure_destructor.385
-+ __swift_closure_destructor.389
-+ __swift_closure_destructor.393
-+ __swift_closure_destructor.397
-+ __swift_closure_destructor.401
-+ __swift_closure_destructor.405
-+ __swift_closure_destructor.408
-+ __swift_closure_destructor.41
-+ __swift_closure_destructor.412
-+ __swift_closure_destructor.42
-+ __swift_closure_destructor.45
-+ __swift_closure_destructor.48
-+ __swift_closure_destructor.49
-+ __swift_closure_destructor.51
-+ __swift_closure_destructor.55
-+ __swift_closure_destructor.56
-+ __swift_closure_destructor.59
-+ __swift_closure_destructor.62
-+ __swift_closure_destructor.63
 + __swift_closure_destructor.65Tm
-+ __swift_closure_destructor.66
-+ __swift_closure_destructor.67
-+ __swift_closure_destructor.68
-+ __swift_closure_destructor.70
-+ __swift_closure_destructor.71
-+ __swift_closure_destructor.74
-+ __swift_closure_destructor.77
-+ __swift_closure_destructor.80
-+ __swift_closure_destructor.82
-+ __swift_closure_destructor.83
-+ __swift_closure_destructor.86
-+ __swift_closure_destructor.89
-+ __swift_closure_destructor.92
-+ __swift_closure_destructor.96
 + _objc_msgSend$embeddingsBundlePath
 + _objc_msgSend$setEmbeddingsBundlePath:
 + _swift_retain_x9
@@ -1069,136 +721,7 @@ Symbols:
 + _symbolic _____y_____SSG s18_DictionaryStorageC s5Int32V
 + _symbolic _____y______pG s23_ContiguousArrayStorageC s7CVarArgP
 + _type_layout_string 24TokenGenerationInference13VocabularyMapV
-- $s24TokenGenerationInference12AFMUtilitiesV23makeMaximumSizedBuffers3for9largestOf17excludingOperands015copyingContentsK016exclaveResourcesSDySS4ODIE6TensorV13SharedStorageVGSaySSG_SayxGApoA07ExclaveQ0VtKAA0S20RequirementsProviderRzlFZySwXEfU1_TA.114
-- $s24TokenGenerationInference12AFMUtilitiesV23makeMaximumSizedBuffers3for9largestOf17excludingOperands015copyingContentsK0SDySS4ODIE6TensorV13SharedStorageVGSaySSG_SayxGAoNtKAA0Q20RequirementsProviderRzlFZySwXEfU1_TA.115
-- $s24TokenGenerationInference28AFMV7DecodeFunctionEngineMODCAA09AFMDecodefgH0A2aDP10executable4ODIE13CompiledGraphV10ExecutableVvrTW.resume.0
-- $s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.15
-- $s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.31
-- $s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.40
-- $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.101
-- $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.109
-- $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.144
-- $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.152
-- $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.160
-- $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.59
-- $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.67
-- $s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.93
-- $s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.27
-- $s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.36
-- $sSiIegd_SiIegr_TRTA.105
-- $sSiIegd_SiIegr_TRTA.140
-- $sSiIegd_SiIegr_TRTA.148
-- $sSiIegd_SiIegr_TRTA.156
-- $sSiIegd_SiIegr_TRTA.55
-- $sSiIegd_SiIegr_TRTA.63
-- $sSiIegd_SiIegr_TRTA.89
-- $sSiIegd_SiIegr_TRTA.97
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/DerivedSources/
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/AFMDecodeFunction+MOD.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/AFMDecodeFunctionEngine.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/AFMGatherFunction+MOD.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/AFMLanguageModelUtilities.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/AFMMODUtilities.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/AFMUtilities.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/AFMV7DecodeFunctionEngine+MOD.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/ANESessionProtocol.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/ArgmaxPresampler.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/BaseModel.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/BasicDecoder.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/BasicDecoderPerformanceMeasurement.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/BasicLogitPresampler.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/BeamSearchDecoder.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/ClassificationSampling.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/DataStreamStateManager.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/DecoderModelError.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/DelayedMaskedLanguageModel.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/DeterministicLanguageModelProtocol.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/E5RunnerErrorObjC.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/EarlyReturnLogits.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/EmptyLogitCollection.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/ExclaveResources.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/ExclaveStorageUtilities.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/ExclaveStubs.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/GenerationSchema+PrefixGuidedGeneration.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/GrammarGuidedLanguageModel.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/GreedySampling.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/IFPDenseLayerOutput.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/ImageSize.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/KVLRUCache.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/KeyValueCacheDescriptor.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/LanguageModelError.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/LanguageModelLoaderExclave.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/LanguageModelRunner+LogitPresampler.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/LanguageModelRunner.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/LinearSpeculator.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/Logger.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/LogitCollection.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/LogitIndexSet.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/LogitMapper.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/LogitPresampler.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/Logits.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/MODBaseModel.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/MODExtensions.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/MODImageFeatureProjector.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/MODLanguageModel.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/MODLanguageModelRunner+LanguageModelRunner.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/MODLanguageModelRunner.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/MaskedLanguageModel.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/MaskedLogitCollection.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/NodeStorage.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/NucleusSampling.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/NullLogitPresampler.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/OnDeviceInferenceAssetMetadata.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/OnDeviceInferenceAssetRepository.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/OnDeviceInferenceContext.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/OnDeviceInferenceContextFactory.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/OnDeviceInferenceOverrides.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/OnDeviceInferenceProviderDataSource.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/OnExclaveDeviceInferenceProvider.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/RunnerLanguageModel.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/SamplingDecoder.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/SpeculativeDecoderPerformanceLoggingProtocol.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/SpeculativeLanguageModel.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/SpeculativeStreamingLanguageModel.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/TGIE5BaseModelObjC.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/TGIMersenneTwisterEngine.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/TGIModelConfigurationObjC.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/TokenGenerationInference.swiftmodule
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/TokenGenerationInference_vers.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/TokenMask.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/TokenSampling.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/ToolCallLanguageModel.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/TopK2LogitCollection.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/TopK2Presampler.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/TopKSampling.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/TopKTreeSpeculator.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/UnconstrainedLogitCollection.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/UnweightedSingleLogitCollection.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/UnweightedSparseLogitCollection.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/WeightedDenseLogitCollectionExclave.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/WeightedSingleLogitCollection.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/WeightedSparseLanguageModel.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/WeightedSparseLogitCollection.o
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/CollectionAdditions/
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/Decoders/
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/Decoders/SpeculativeDecoding/
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/GuidedGeneration/
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/GuidedGeneration/Prefix/
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/ImageProcessing/
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/InferenceProvider/
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/InferenceProvider/Common/
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/InferenceProvider/Device/
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/LanguageModels/
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/LanguageModels/LanguageModelModule/Swift/
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/LanguageModels/LanguageModelModule/Swift/AFMCommon/
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/LanguageModels/LanguageModelModule/Swift/IFP/
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/LanguageModels/LanguageModelModule/Swift/MODModel/
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/LanguageModels/LanguageModelModule/objc/
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/LanguageModels/Speculative/
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/Logits/
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/Logits/LogitCollections/
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/Logits/Presampling/
-- /Library/Caches/com.apple.xbs/D600C6F1-A626-4BEF-AA28-DC1D71D68D3A/TemporaryDirectory.O75z8X/Sources/TokenGenerationInference_exclavekit/TokenGenerationInference/Logits/TokenSampling/
+- $s24TokenGenerationInference28AFMV7DecodeFunctionEngineMODCAA09AFMDecodefgH0A2aDP10executable4ODIE13CompiledGraphV10ExecutableVvrTW.resume
 - GCC_except_table100
 - GCC_except_table101
 - GCC_except_table108
@@ -1275,8 +798,8 @@ Symbols:
 - _$sSS3key_yp5valuetWOh
 - _$sSTsE3mapySayqd__Gqd__7ElementQzqd_0_YKXEqd_0_YKs5ErrorRd_0_r0_lFs12Zip2SequenceVySaySiGSay24TokenGenerationInference0F4MaskVGG_AI0F6RecordVs5NeverOTg506$sSi24fg12Inference0A4i6VAA0A6j17VIgynr_Si_ACtAEs5k130OIegnrzr_TR04$s24ab112Inference22MODLanguageModelRunnerC3run6tokens013computeLogitsA5Count10tokenMasks6mapperSay10OutputTypeQzGSays46G_v8SayAA0A4d33VGSgxtYaKAA11LogitMapperRzlFAA0Q25E12VSi_ANtXEfU_Tf3nnnpf_nTf1cn_n
 - _$sSmsSKRzrlE10removeLastyySiFSaySiG_Tg5
-- _ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorI23TGIAdapterConfigurationNS_9allocatorIS2_EEE12emplace_backIJS2_EEERS2_DpOT_EUlvE_ZNS6_IJS2_EEES7_SA_EUlvE0_EEvbT_T0_.cold.1
-- _ZNSt3__120__optional_copy_baseINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEELb0EEC2B9fqe220100ERKS7_.cold.1
+- _ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorI23TGIAdapterConfigurationNS_9allocatorIS2_EEE12emplace_backIJS2_EEERS2_DpOT_EUlvE_ZNS6_IJS2_EEES7_SA_EUlvE0_EEvbT_T0_
+- _ZNSt3__120__optional_copy_baseINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEELb0EEC2B9fqe220100ERKS7_
 - __ZNKSt3__129_AllocatorDestroyRangeReverseINS_9allocatorI13TGIE5FunctionEEPS2_EclB9fqe220100Ev
 - __ZNKSt3__129_AllocatorDestroyRangeReverseINS_9allocatorI23TGIAdapterConfigurationEEPS2_EclB9fqe220100Ev
 - __ZNSt12length_errorC1B9fqe220100EPKc
@@ -1315,32 +838,6 @@ Symbols:
 - __ZNSt3__16vectorI23TGIAdapterConfigurationNS_9allocatorIS1_EEE20__throw_length_errorB9fqe220100Ev
 - __ZNSt3__16vectorI23TGIAdapterConfigurationNS_9allocatorIS1_EEE22__base_destruct_at_endB9fqe220100EPS1_
 - __ZSt28__throw_bad_array_new_lengthB9fqe220100v
-- __swift_closure_destructor.10
-- __swift_closure_destructor.103
-- __swift_closure_destructor.107
-- __swift_closure_destructor.117
-- __swift_closure_destructor.123
-- __swift_closure_destructor.126
-- __swift_closure_destructor.129
-- __swift_closure_destructor.13
-- __swift_closure_destructor.132
-- __swift_closure_destructor.135
-- __swift_closure_destructor.138
-- __swift_closure_destructor.142
-- __swift_closure_destructor.146
-- __swift_closure_destructor.150
-- __swift_closure_destructor.154
-- __swift_closure_destructor.22
-- __swift_closure_destructor.34
-- __swift_closure_destructor.50
-- __swift_closure_destructor.69
-- __swift_closure_destructor.72
-- __swift_closure_destructor.81
-- __swift_closure_destructor.84
-- __swift_closure_destructor.87
-- __swift_closure_destructor.91
-- __swift_closure_destructor.95
-- __swift_closure_destructor.99
 - _objc_retain_x26
 - _objc_retain_x28
 - _symbolic _____Iegr_ 10Foundation4UUIDV
@@ -1420,5 +917,4 @@ CStrings:
 - "AssetData/model.odixpackage/main-"
 - "AssetData/tokenizer"
 - "Not implemented yet"
-
 ```

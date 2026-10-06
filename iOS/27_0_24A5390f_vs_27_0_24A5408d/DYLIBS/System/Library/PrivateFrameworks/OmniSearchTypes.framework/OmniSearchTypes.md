@@ -2,51 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/OmniSearchTypes.framework/OmniSearchTypes`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7ddf0` | `0x7e25c` | **`+0x46c`** |
+| `__TEXT.__unwind_info` | `0x2438` | `0x2688` | **`+0x250`** |
+| `__TEXT.__swift5_fieldmd` | `0x5004` | `0x5034` | **`+0x30`** |
+| `__TEXT.__swift5_reflstr` | `0x24b1` | `0x24c1` | **`+0x10`** |
+| `__AUTH_CONST.__const` | `0x59b0` | `0x59b8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.56.27.0.0
--  __TEXT.__text: 0x7ddf0
 +3600.56.32.11.4
-+  __TEXT.__text: 0x7e25c
-   __TEXT.__objc_methlist: 0x38
-   __TEXT.__const: 0x9888
-   __TEXT.__swift5_typeref: 0x176c
-   __TEXT.__constg_swiftt: 0x1790
--  __TEXT.__swift5_reflstr: 0x24b1
--  __TEXT.__swift5_fieldmd: 0x5004
-+  __TEXT.__swift5_reflstr: 0x24c1
-+  __TEXT.__swift5_fieldmd: 0x5034
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_types: 0x238
-   __TEXT.__cstring: 0x2016
 
-   __TEXT.__swift5_assocty: 0x2b0
-   __TEXT.__swift_as_entry: 0x4
-   __TEXT.__swift_as_cont: 0x4
--  __TEXT.__unwind_info: 0x2438
-+  __TEXT.__unwind_info: 0x2688
-   __TEXT.__eh_frame: 0x2340
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0xe8
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x59b0
-+  __AUTH_CONST.__const: 0x59b8
-   __AUTH_CONST.__objc_const: 0x278
-   __AUTH_CONST.__auth_got: 0x970
-   __AUTH.__data: 0x1e0
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4850
--  Symbols:   9853
+-  Symbols:   9824
 +  Functions: 4855
-+  Symbols:   9856
-   CStrings:  366
- 
++  Symbols:   9827
 Symbols:
 + _$s15OmniSearchTypes05BatchB4ItemV5query6domain0F2IDACSS_S2StcfC
 + _$s15OmniSearchTypes05BatchB4ItemV7queryIDSSvg

@@ -2,12 +2,9 @@
 
 > `/System/Library/PrivateFrameworks/ZeoliteFramework.framework/ZeoliteFramework`
 
-```diff
+### Section Size Changes
 
- 1.7.1.0.0
--  __TEXT.__text: 0x38938
-+  __TEXT.__text: 0x38934
-   __TEXT.__const: 0x32ea
-   __TEXT.__swift5_typeref: 0xc08
-   __TEXT.__swift5_fieldmd: 0xd34
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3a2e8` | `0x3a278` | **`-0x70`** |
+| `__TEXT.__unwind_info` | `0xfa8` | `0xfb0` | **`+0x8`** |

@@ -2,89 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/InputAnalyticsServer.framework/InputAnalyticsServer`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8240c` | `0x86740` | **`+0x4334`** |
+| `__TEXT.__oslogstring` | `0x8270` | `0x8700` | **`+0x490`** |
+| `__AUTH_CONST.__objc_const` | `0xa858` | `0xab78` | **`+0x320`** |
+| `__TEXT.__objc_methlist` | `0x6484` | `0x6714` | **`+0x290`** |
+| `__AUTH_CONST.__cfstring` | `0x6fa0` | `0x7220` | **`+0x280`** |
+| `__AUTH_CONST.__objc_intobj` | `0x1968` | `0x1bc0` | **`+0x258`** |
+| `__DATA_CONST.__got` | `0x1968` | `0x1b48` | **`+0x1e0`** |
+| `__TEXT.__cstring` | `0x69c2` | `0x6b92` | **`+0x1d0`** |
+| `__DATA_DIRTY.__objc_data` | `0x1d10` | `0x1ea0` | **`+0x190`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3330` | `0x34b8` | **`+0x188`** |
+| `__AUTH_CONST.__const` | `0x1638` | `0x1758` | **`+0x120`** |
+| `__AUTH.__objc_data` | `0xbc8` | `0xad8` | **`-0xf0`** |
+| `__DATA_CONST.__const` | `0x18b8` | `0x1988` | **`+0xd0`** |
+| `__DATA_DIRTY.__bss` | `0x650` | `0x6f0` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x1908` | `0x1998` | **`+0x90`** |
+| `__TEXT.__const` | `0xac0` | `0xb10` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0xc00` | `0xc48` | **`+0x48`** |
+| `__DATA.__objc_ivar` | `0x74c` | `0x774` | **`+0x28`** |
+| `__DATA.__bss` | `0x810` | `0x7f0` | **`-0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x3e8` | `0x3f8` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x220` | `0x230` | **`+0x10`** |
+| `__DATA.__data` | `0x548` | `0x540` | **`-0x8`** |
+| `__DATA_DIRTY.__data` | `0x240` | `0x248` | **`+0x8`** |
+| `__TEXT.__ustring` | `—` | `0x4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -154.1.5.0.0
--  __TEXT.__text: 0x80014
--  __TEXT.__objc_methlist: 0x6484
--  __TEXT.__const: 0xac0
 +154.1.8.0.0
-+  __TEXT.__text: 0x84260
-+  __TEXT.__objc_methlist: 0x6714
-+  __TEXT.__const: 0xb10
-   __TEXT.__gcc_except_tab: 0xe0c
--  __TEXT.__cstring: 0x69c2
--  __TEXT.__oslogstring: 0x8270
-+  __TEXT.__cstring: 0x6b92
-+  __TEXT.__oslogstring: 0x8700
-+  __TEXT.__ustring: 0x4
-   __TEXT.__swift5_typeref: 0x2aa
-   __TEXT.__constg_swiftt: 0x164
-   __TEXT.__swift5_fieldmd: 0x88
 
-   __TEXT.__swift_as_ret: 0x38
-   __TEXT.__swift_as_cont: 0x40
-   __TEXT.__swift5_capture: 0x98
--  __TEXT.__unwind_info: 0x2098
-+  __TEXT.__unwind_info: 0x21a0
-   __TEXT.__eh_frame: 0x658
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x18b8
--  __DATA_CONST.__objc_classlist: 0x3e8
-+  __DATA_CONST.__const: 0x1988
-+  __DATA_CONST.__objc_classlist: 0x3f8
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3330
-+  __DATA_CONST.__objc_selrefs: 0x34b8
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x220
-+  __DATA_CONST.__objc_superrefs: 0x230
-   __DATA_CONST.__objc_arraydata: 0x3c8
--  __DATA_CONST.__got: 0x1968
--  __AUTH_CONST.__const: 0x1638
--  __AUTH_CONST.__cfstring: 0x6fa0
--  __AUTH_CONST.__objc_const: 0xa858
--  __AUTH_CONST.__objc_intobj: 0x1968
-+  __DATA_CONST.__got: 0x1b48
-+  __AUTH_CONST.__const: 0x1758
-+  __AUTH_CONST.__cfstring: 0x7220
-+  __AUTH_CONST.__objc_const: 0xab78
-+  __AUTH_CONST.__objc_intobj: 0x1bc0
-   __AUTH_CONST.__objc_arrayobj: 0x4f8
--  __AUTH_CONST.__auth_got: 0xc00
--  __AUTH.__objc_data: 0xbc8
-+  __AUTH_CONST.__auth_got: 0xc48
-+  __AUTH.__objc_data: 0xad8
-   __AUTH.__data: 0x28
--  __DATA.__objc_ivar: 0x74c
--  __DATA.__data: 0x548
--  __DATA_DIRTY.__objc_data: 0x1d10
--  __DATA_DIRTY.__data: 0x240
--  __DATA_DIRTY.__bss: 0x650
-+  __DATA.__objc_ivar: 0x774
-+  __DATA.__data: 0x540
-+  __DATA_DIRTY.__objc_data: 0x1ea0
-+  __DATA_DIRTY.__data: 0x248
-+  __DATA_DIRTY.__bss: 0x6f0
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2923
 -  Symbols:   989
 -  CStrings:  1562
 +  Functions: 3012
 +  Symbols:   1057
 +  CStrings:  1600
- 
 Symbols:
 + _IAPayloadKeyImageGenerationBlockingSafetyModel
 + _IAPayloadKeyImageGenerationFailureReason

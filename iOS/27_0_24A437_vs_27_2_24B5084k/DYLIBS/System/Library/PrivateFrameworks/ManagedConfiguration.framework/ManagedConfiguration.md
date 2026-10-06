@@ -2,70 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf7134` | `0xf7284` | **`+0x150`** |
+| `__TEXT.__cstring` | `0x186ab` | `0x1878f` | **`+0xe4`** |
+| `__AUTH_CONST.__cfstring` | `0x19640` | `0x19720` | **`+0xe0`** |
+| `__TEXT.__oslogstring` | `0x9798` | `0x96c3` | **`-0xd5`** |
+| `__DATA_CONST.__const` | `0x4e40` | `0x4dd8` | **`-0x68`** |
+| `__TEXT.__const` | `0x152c` | `0x1584` | **`+0x58`** |
+| `__TEXT.__objc_methlist` | `0xb33c` | `0xb2ec` | **`-0x50`** |
+| `__TEXT.__unwind_info` | `0x3288` | `0x3250` | **`-0x38`** |
+| `__DATA.__data` | `0xca0` | `0xcc8` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x2130` | `0x2110` | **`-0x20`** |
+| `__AUTH_CONST.__objc_const` | `0xd808` | `0xd7e8` | **`-0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5e18` | `0x5e00` | **`-0x18`** |
+| `__TEXT.__gcc_except_tab` | `0x1040` | `0x1048` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2483.2.6.0.0
--  __TEXT.__text: 0xf220c
--  __TEXT.__objc_methlist: 0xb33c
--  __TEXT.__const: 0x152c
--  __TEXT.__cstring: 0x186ab
--  __TEXT.__oslogstring: 0x9798
--  __TEXT.__gcc_except_tab: 0x1040
 +2483.40.14.0.0
-+  __TEXT.__text: 0xf2380
-+  __TEXT.__objc_methlist: 0xb2ec
-+  __TEXT.__const: 0x1584
-+  __TEXT.__cstring: 0x1878f
-+  __TEXT.__oslogstring: 0x96c3
-+  __TEXT.__gcc_except_tab: 0x1048
-   __TEXT.__dlopen_cstrs: 0xac
-   __TEXT.__ustring: 0x50
--  __TEXT.__unwind_info: 0x4618
-+  __TEXT.__unwind_info: 0x45f0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4e40
-+  __DATA_CONST.__const: 0x4dd8
-   __DATA_CONST.__objc_classlist: 0x3d8
-   __DATA_CONST.__objc_catlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5e18
-+  __DATA_CONST.__objc_selrefs: 0x5e00
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x2d0
-   __DATA_CONST.__objc_arraydata: 0xe8
-   __DATA_CONST.__got: 0xac0
--  __AUTH_CONST.__const: 0x2130
--  __AUTH_CONST.__cfstring: 0x19640
--  __AUTH_CONST.__objc_const: 0xd808
-+  __AUTH_CONST.__const: 0x2110
-+  __AUTH_CONST.__cfstring: 0x19720
-+  __AUTH_CONST.__objc_const: 0xd7e8
-   __AUTH_CONST.__objc_intobj: 0x4f8
-   __AUTH_CONST.__objc_arrayobj: 0xc0
-   __AUTH_CONST.__auth_got: 0xbf8
-   __AUTH.__objc_data: 0x23f0
-   __DATA.__objc_ivar: 0x994
--  __DATA.__data: 0xca0
-+  __DATA.__data: 0xcc8
-   __DATA.__common: 0x28
-   __DATA_DIRTY.__objc_data: 0x280
-   __DATA_DIRTY.__bss: 0x228
 
-   - /usr/lib/liblockdown.dylib
-   - /usr/lib/libmis.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 5817
--  Symbols:   11499
+-  Symbols:   9720
 -  CStrings:  4621
 +  Functions: 5814
-+  Symbols:   11505
++  Symbols:   9726
 +  CStrings:  4629
- 
 Symbols:
 + -[MCNotifier sendAllowCloudSyncChangedNotification]
 + -[MCProfileConnection _allowCloudSyncDidChange:]
@@ -90,10 +57,6 @@ Symbols:
 + _der_key_state_abs_last_passcode_auth
 + _der_key_state_abs_last_passcode_unlock
 + _der_key_state_abs_lock_time
-+ _objc_msgSend$authenticatedTemporarySession
-+ _objc_msgSend$managingOwnerIdentifier
-+ _objc_msgSend$managingSourceName
-+ _objc_msgSend$profileConnectionDidReceiveAllowCloudSyncChangedNotification:userInfo:
 - -[MCProfileConnection(Profiles) provisiongProfileUUIDsForSignerIdentity:]
 - -[MCProfileConnection(Profiles) removeTrustedCodeSigningIdentities:]
 - -[MCProfileConnection(Profiles) signerIdentityForBundleID:]
@@ -111,10 +74,6 @@ Symbols:
 - ___block_descriptor_40_e8_32s_e17_v16?0"NSError"8ls32l8
 - ___block_descriptor_48_e8_32s40r_e27_v24?0"NSSet"8"NSError"16ls32l8r40l8
 - ___block_descriptor_48_e8_32s40r_e30_v24?0"NSString"8"NSError"16ls32l8r40l8
-- _objc_msgSend$provisiongProfileUUIDsForSignerIdentity:completion:
-- _objc_msgSend$signerIdentityForBundleID:completion:
-- _objc_msgSend$syncTrustedCodeSigningIdentitiesWithCompletion:
-- _objc_msgSend$trustedCodeSigningIdentitiesWithCompletion:
 CStrings:
 + "Account %{public}@ already owned by %{public}@; nothing to transfer"
 + "Account %{public}@ is not profile-managed; nothing to transfer"

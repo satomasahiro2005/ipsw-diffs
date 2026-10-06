@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/TipsUI.framework/TipsUI`
 
-```diff
+### Section Size Changes
 
- 866.0.0.0.0
--  __TEXT.__text: 0xed9c4
-+  __TEXT.__text: 0xeda3c
-   __TEXT.__objc_methlist: 0x14e4
-   __TEXT.__const: 0xb654
-   __TEXT.__gcc_except_tab: 0x170
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xed9c4` | `0xeda3c` | **`+0x78`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1d0bda150 -> sub_1cfdb8150 : 780 -> 788
 ~ sub_1d0c04834 -> sub_1cfde283c : 1220 -> 1224

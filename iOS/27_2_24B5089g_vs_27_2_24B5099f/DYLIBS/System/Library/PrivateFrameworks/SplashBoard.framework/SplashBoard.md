@@ -2,44 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/SplashBoard.framework/SplashBoard`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x28314` | `0x2817c` | **`-0x198`** |
+| `__TEXT.__gcc_except_tab` | `0xa54` | `0x8d8` | **`-0x17c`** |
+| `__TEXT.__unwind_info` | `0xd88` | `0xd78` | **`-0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1808` | `0x1810` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x26a8` | `0x26b0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -321.1.1.0.0
--  __TEXT.__text: 0x27020
--  __TEXT.__objc_methlist: 0x26a8
 +321.1.2.0.0
-+  __TEXT.__text: 0x26e94
-+  __TEXT.__objc_methlist: 0x26b0
-   __TEXT.__const: 0x1b0
-   __TEXT.__cstring: 0x27a9
--  __TEXT.__gcc_except_tab: 0xa54
-+  __TEXT.__gcc_except_tab: 0x8d8
-   __TEXT.__oslogstring: 0x307f
-   __TEXT.__ustring: 0x2a
--  __TEXT.__unwind_info: 0x10c8
-+  __TEXT.__unwind_info: 0x10b8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x78
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1808
-+  __DATA_CONST.__objc_selrefs: 0x1810
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0xd8
-   __DATA_CONST.__got: 0x490
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1157
 -  Symbols:   2001
 +  Functions: 1156
 +  Symbols:   2000
-   CStrings:  618
- 
 Symbols:
 + -[XBLaunchImageProvider _newActivatedClientForCompatibilityInfo:]
 + ___block_descriptor_113_e8_32s40s48s56s64s72s80s88s96bs104bs_e5_v8?0ls32l8s40l8s48l8s56l8s64l8s96l8s72l8s80l8s88l8s104l8

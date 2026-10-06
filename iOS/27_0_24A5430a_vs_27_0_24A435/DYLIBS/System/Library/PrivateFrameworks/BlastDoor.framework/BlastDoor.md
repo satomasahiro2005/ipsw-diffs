@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/BlastDoor.framework/BlastDoor`
 
-```diff
+### Section Size Changes
 
- 331.100.1.0.0
--  __TEXT.__text: 0x915a6c
-+  __TEXT.__text: 0x915ab8
-   __TEXT.__objc_methlist: 0xaf48
-   __TEXT.__const: 0xdfa10
-   __TEXT.__cstring: 0x22996
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x915a6c` | `0x915ab8` | **`+0x4c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1b0cddc30 -> sub_1b0d61c30 : 968 -> 972
 ~ sub_1b0db6b18 -> sub_1b0e3ab1c : 676 -> 680

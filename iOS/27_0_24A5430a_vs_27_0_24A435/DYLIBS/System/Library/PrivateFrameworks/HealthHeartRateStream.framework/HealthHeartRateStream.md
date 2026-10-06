@@ -2,18 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/HealthHeartRateStream.framework/HealthHeartRateStream`
 
-```diff
+### Section Size Changes
 
- 7027.0.72.2.7
--  __TEXT.__text: 0x3c048
-+  __TEXT.__text: 0x3c064
-   __TEXT.__objc_methlist: 0x29c
-   __TEXT.__const: 0x1f98
-   __TEXT.__constg_swiftt: 0xe64
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3c048` | `0x3c064` | **`+0x1c`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_28250a058 -> sub_28323e058 : 208 -> 212
-~ sub_28251ef44 -> sub_283252f48 : 704 -> 708
-~ sub_28251f9b8 -> sub_2832539c0 : 872 -> 880
-~ sub_28251fd20 -> sub_283253d30 : 884 -> 892
-~ sub_282530f38 -> sub_283264f50 : 2572 -> 2576
+~ sub_2823fb058 -> sub_28310d058 : 208 -> 212
+~ sub_28240ff44 -> sub_283121f48 : 704 -> 708
+~ sub_2824109b8 -> sub_2831229c0 : 872 -> 880
+~ sub_282410d20 -> sub_283122d30 : 884 -> 892
+~ sub_282421f38 -> sub_283133f50 : 2572 -> 2576
 ```

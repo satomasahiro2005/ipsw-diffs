@@ -2,61 +2,44 @@
 
 > `/usr/libexec/restorecameraispd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c594` | `0x1ce9c` | **`+0x908`** |
+| `__DATA_CONST.__const` | `0x79b0` | `0x80b0` | **`+0x700`** |
+| `__TEXT.__cstring` | `0x3079` | `0x3203` | **`+0x18a`** |
+| `__DATA_CONST.__cfstring` | `0x1460` | `0x15c0` | **`+0x160`** |
+| `__TEXT.__auth_stubs` | `0xe60` | `0xf90` | **`+0x130`** |
+| `__TEXT.__oslogstring` | `0x21c0` | `0x2280` | **`+0xc0`** |
+| `__DATA_CONST.__auth_got` | `0x740` | `0x7d8` | **`+0x98`** |
+| `__TEXT.__unwind_info` | `0x558` | `0x570` | **`+0x18`** |
+| `__DATA.__bss` | `0x50` | `0x60` | **`+0x10`** |
+| `__TEXT.__const` | `0x16c0` | `0x16d0` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x140` | `0x148` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__TEXT.__gcc_except_tab`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1c594
--  __TEXT.__auth_stubs: 0xe60
-+  __TEXT.__text: 0x1ce9c
-+  __TEXT.__auth_stubs: 0xf90
-   __TEXT.__objc_stubs: 0x4a0
--  __TEXT.__const: 0x16c0
--  __TEXT.__cstring: 0x3079
-+  __TEXT.__const: 0x16d0
-+  __TEXT.__cstring: 0x3203
-   __TEXT.__gcc_except_tab: 0x4b8
--  __TEXT.__oslogstring: 0x21c0
-+  __TEXT.__oslogstring: 0x2280
-   __TEXT.__objc_methname: 0x32c
--  __TEXT.__unwind_info: 0x558
--  __DATA_CONST.__const: 0x79b0
--  __DATA_CONST.__cfstring: 0x1460
-+  __TEXT.__unwind_info: 0x570
-+  __DATA_CONST.__const: 0x80b0
-+  __DATA_CONST.__cfstring: 0x15c0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_arraydata: 0x8
-   __DATA_CONST.__objc_arrayobj: 0x18
--  __DATA_CONST.__auth_got: 0x740
--  __DATA_CONST.__got: 0x140
-+  __DATA_CONST.__auth_got: 0x7d8
-+  __DATA_CONST.__got: 0x148
-   __DATA_CONST.__auth_ptr: 0x20
-   __DATA.__objc_selrefs: 0x128
-   __DATA.__data: 0x3aec00
-   __DATA.__common: 0x7
--  __DATA.__bss: 0x50
-+  __DATA.__bss: 0x60
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+-20.50.6.0.0
++20.55.3.0.0
 
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 411
 -  Symbols:   281
--  CStrings:  778
+-  CStrings:  614
 +  Functions: 421
 +  Symbols:   301
-+  CStrings:  802
- 
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__data : content changed
++  CStrings:  627
 Symbols:
 + _AMFDRSealingMapCopyLocalData
 + _CFArrayApplyFunction
@@ -104,5 +87,4 @@ CStrings:
 - "Failed to save plist"
 - "Unexpected references size (Expected %ld, Got %d)\n"
 - "Unexpected references size after compression (Expected %ld, Got %ld)\n"
-
 ```

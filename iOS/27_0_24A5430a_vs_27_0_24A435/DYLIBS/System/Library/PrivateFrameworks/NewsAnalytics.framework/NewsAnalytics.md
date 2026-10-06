@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/NewsAnalytics.framework/NewsAnalytics`
 
-```diff
+### Section Size Changes
 
- 5934.3.0.0.0
--  __TEXT.__text: 0x323d90
-+  __TEXT.__text: 0x323db8
-   __TEXT.__objc_methlist: 0x3250
-   __TEXT.__const: 0x3f4dc
-   __TEXT.__constg_swiftt: 0x9c00
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x323d90` | `0x323db8` | **`+0x28`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_2176ff458 -> sub_22048c458 : 828 -> 832
 ~ sub_2176ff794 -> sub_22048c798 : 832 -> 836

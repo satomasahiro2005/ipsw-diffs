@@ -2,61 +2,23 @@
 
 > `/System/Library/PrivateFrameworks/GameControllerSettingsUI.framework/GameControllerSettingsUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1caaa8` | `0x1cad34` | **`+0x28c`** |
+| `__TEXT.__const` | `0x111c4` | `0x111a4` | **`-0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x1f80` | `0x1f88` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -7.0.17.0.0
--  __TEXT.__text: 0x1caaa8
 +7.0.18.0.0
-+  __TEXT.__text: 0x1cad34
-   __TEXT.__objc_methlist: 0x7bc
--  __TEXT.__const: 0x111c4
-+  __TEXT.__const: 0x111a4
-   __TEXT.__gcc_except_tab: 0x10
-   __TEXT.__cstring: 0x253b
-   __TEXT.__dlopen_cstrs: 0x4c
 
-   __AUTH_CONST.__const: 0xba38
-   __AUTH_CONST.__cfstring: 0x120
-   __AUTH_CONST.__objc_const: 0x3c90
--  __AUTH_CONST.__auth_got: 0x1f80
-+  __AUTH_CONST.__auth_got: 0x1f88
-   __AUTH.__objc_data: 0xef8
-   __AUTH.__data: 0x51b8
-   __DATA.__objc_ivar: 0x8
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 8535
--  Symbols:   22373
-+  Symbols:   22374
-   CStrings:  379
- 
+-  Symbols:   22116
++  Symbols:   22117
 Symbols:
 + _$s22GameControllerSettings21GCSSettingsSwiftStoreC35systemButtonLongPressActionModifiedSbvs
 + _$s22GameControllerSettings36GCSControllerShortcutLongPressActionOACSQAAWlTm

@@ -2,24 +2,18 @@
 
 > `/usr/lib/log/liblog_location.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__data` | `0x900` | `0x920` | **`+0x20`** |
+
+### Other Changes
+
 ```diff
 
-   __AUTH_CONST.__objc_dictobj: 0x168
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__objc_ivar: 0xc
--  __DATA.__data: 0x900
-+  __DATA.__data: 0x920
-   __DATA_DIRTY.__objc_data: 0x50
-   __DATA_DIRTY.__bss: 0x28
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 86
--  Symbols:   507
-+  Symbols:   511
-   CStrings:  686
- 
+-  Symbols:   452
++  Symbols:   456
 Symbols:
 + _logObject_Angle_Default
 + _logObject_DeviceState_Default

@@ -2,66 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/ClockUIFramework.framework/ClockUIFramework`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2fcc` | `0x41b8` | **`+0x11ec`** |
+| `__DATA.__bss` | `0x90` | `0x198` | **`+0x108`** |
+| `__AUTH.__data` | `0x88` | `0x188` | **`+0x100`** |
+| `__TEXT.__const` | `0x230` | `0x302` | **`+0xd2`** |
+| `__TEXT.__constg_swiftt` | `0x98` | `0x140` | **`+0xa8`** |
+| `__TEXT.__swift5_typeref` | `0x1be` | `0x25e` | **`+0xa0`** |
+| `__DATA.__data` | `0x108` | `0x188` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x118` | `0x168` | **`+0x50`** |
+| `__TEXT.__swift5_fieldmd` | `0x44` | `0x7c` | **`+0x38`** |
+| `__TEXT.__swift5_assocty` | `0x30` | `0x60` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x370` | `0x398` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x98` | `0xc0` | **`+0x28`** |
+| `__TEXT.__swift5_capture` | `0x40` | `0x50` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x37` | `0x47` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x8` | `0x10` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x8` | `0x10` | **`+0x8`** |
+| `__TEXT.__oslogstring` | `0x30` | `0x2f` | **`-0x1`** |
+
+### Other Changes
+
 ```diff
 
 -3600.26.11.0.0
--  __TEXT.__text: 0x2fcc
--  __TEXT.__const: 0x230
--  __TEXT.__swift5_typeref: 0x1be
--  __TEXT.__constg_swiftt: 0x98
--  __TEXT.__swift5_reflstr: 0x37
--  __TEXT.__swift5_fieldmd: 0x44
--  __TEXT.__swift5_assocty: 0x30
--  __TEXT.__swift5_capture: 0x40
--  __TEXT.__oslogstring: 0x30
 +3600.26.13.0.0
-+  __TEXT.__text: 0x41b8
-+  __TEXT.__const: 0x302
-+  __TEXT.__constg_swiftt: 0x140
-+  __TEXT.__swift5_typeref: 0x25e
-+  __TEXT.__swift5_reflstr: 0x47
-+  __TEXT.__swift5_fieldmd: 0x7c
-+  __TEXT.__swift5_assocty: 0x60
-+  __TEXT.__swift5_capture: 0x50
-+  __TEXT.__oslogstring: 0x2f
-   __TEXT.__cstring: 0x14
--  __TEXT.__swift5_proto: 0x8
--  __TEXT.__swift5_types: 0x8
--  __TEXT.__unwind_info: 0x118
-+  __TEXT.__swift5_proto: 0x10
-+  __TEXT.__swift5_types: 0x10
-+  __TEXT.__unwind_info: 0x168
-   __TEXT.__eh_frame: 0x48
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x98
-+  __AUTH_CONST.__const: 0xc0
-   __AUTH_CONST.__objc_const: 0x90
--  __AUTH_CONST.__auth_got: 0x370
--  __AUTH.__data: 0x88
--  __DATA.__data: 0x108
--  __DATA.__bss: 0x90
-+  __AUTH_CONST.__auth_got: 0x398
-+  __AUTH.__data: 0x188
-+  __DATA.__data: 0x188
-+  __DATA.__bss: 0x198
-   __DATA_DIRTY.__data: 0x98
-   __DATA_DIRTY.__bss: 0x80
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 67
 -  Symbols:   138
 +  Functions: 101
 +  Symbols:   153
-   CStrings:  2
- 
 Symbols:
 + ___swift_get_extra_inhabitant_indexTm
 + ___swift_store_extra_inhabitant_indexTm

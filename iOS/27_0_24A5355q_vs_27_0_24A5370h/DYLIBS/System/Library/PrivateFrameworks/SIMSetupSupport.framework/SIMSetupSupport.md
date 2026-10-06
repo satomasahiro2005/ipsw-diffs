@@ -2,87 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/SIMSetupSupport.framework/SIMSetupSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xdb198` | `0xdf23c` | **`+0x40a4`** |
+| `__TEXT.__cstring` | `0x15704` | `0x16c4a` | **`+0x1546`** |
+| `__AUTH_CONST.__cfstring` | `0x9de0` | `0xa640` | **`+0x860`** |
+| `__AUTH_CONST.__objc_const` | `0x4dab8` | `0x4d368` | **`-0x750`** |
+| `__TEXT.__objc_methlist` | `0xbef4` | `0xc1f4` | **`+0x300`** |
+| `__TEXT.__oslogstring` | `0x860f` | `0x87f4` | **`+0x1e5`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5b88` | `0x5d40` | **`+0x1b8`** |
+| `__TEXT.__gcc_except_tab` | `0x1f88` | `0x2068` | **`+0xe0`** |
+| `__TEXT.__unwind_info` | `0x2e58` | `0x2ed8` | **`+0x80`** |
+| `__DATA.__objc_ivar` | `0x1268` | `0x12c4` | **`+0x5c`** |
+| `__AUTH.__objc_data` | `0x3570` | `0x35c0` | **`+0x50`** |
+| `__DATA_CONST.__const` | `0x2090` | `0x20d8` | **`+0x48`** |
+| `__AUTH_CONST.__const` | `0xb40` | `0xb60` | **`+0x20`** |
+| `__DATA_CONST.__objc_arraydata` | `0x208` | `0x228` | **`+0x20`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0xf0` | `0x108` | **`+0x18`** |
+| `__AUTH_CONST.__objc_intobj` | `0x7c8` | `0x7e0` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0xbd8` | `0xbe0` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x560` | `0x568` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -953.0.0.0.0
--  __TEXT.__text: 0xdb198 sha256:f24d8894a634a675a5d7306f6e8bfcc4a79be378cd2007dfa6ff65fa78a889b4
--  __TEXT.__objc_methlist: 0xbef4 sha256:1a049a4532c552420ed03ff39f0bd4c7937f6a525803e36ad84191531e97268f
 +960.1.0.0.0
-+  __TEXT.__text: 0xdf23c sha256:dfcb678069af0411e4bf88d4f5ad49e2947812f58d851e8748e84455832322fe
-+  __TEXT.__objc_methlist: 0xc1f4 sha256:02716b53fc837798befb2d24fb99d388f680382798d4e8cbbbcafc302fbb1602
-   __TEXT.__const: 0x1e8 sha256:b72404d2fa2cd8448fe3aa4698167edbc5d8491a0e21af76031da50c44a591dc
--  __TEXT.__gcc_except_tab: 0x1f88 sha256:2f105f56331d574951d8c820d202280923d8526a539208a0d359ad0d011408ed
--  __TEXT.__cstring: 0x15704 sha256:8f1e02e9a6cb106c37247bc2017f9eacb6451ceffbccd3d923afa3b2e8c92a02
--  __TEXT.__oslogstring: 0x860f sha256:26b19acef97216df41e685dbaec0821e344f4cc322afb75d14d0747b2ef7525b
-+  __TEXT.__gcc_except_tab: 0x2068 sha256:f205f3991912471fca545f03bf4e94f5a151ac7228858915c9c6b272dbfa7e4f
-+  __TEXT.__cstring: 0x16c4a sha256:f17f7b281134c2276f6c35e2adab2f61064da8dbcf0a3e197cdfe77cc80ab722
-+  __TEXT.__oslogstring: 0x87f4 sha256:03c2898c03aa69f24eec63927e85bc2cfa4d660bc83d61e44f9e370ecc03b4d4
-   __TEXT.__dlopen_cstrs: 0x2be sha256:e77c993855c56797e67770545efd00230120e995f6c0b5c8af255d37eb2536be
-   __TEXT.__ustring: 0xa sha256:487bb148b0347f253063ed969d6a7d572ca38d569c47d10a9f32f1473cd34697
--  __TEXT.__unwind_info: 0x2e58 sha256:4fa47086ee7d34400c782c2d0c1992adb6601eb00f7c69ff2b28b00a4f4468b3
-+  __TEXT.__unwind_info: 0x2ed8 sha256:f8d2d8f84ec08474336601c58a15ab77de34a4ec4d8db6307a1181f48c4d9838
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2090 sha256:094206e2dc45223fc7e9b8e3139f7d9392dd83a569b2ce4a1c2ec87aa629259f
--  __DATA_CONST.__objc_classlist: 0x560 sha256:4526a80c314fe0882872cc29c498fd8797d6394ed3c09c0e4aef65e6ce8bfd5c
--  __DATA_CONST.__objc_catlist: 0x70 sha256:734f971659ed1e2d69b2e1382baceede2be9753b030852a76e0e3d6e6bdbaf71
--  __DATA_CONST.__objc_protolist: 0x108 sha256:202d4901cb3603bdc27647c86913499f4d9b16ea48640707135fbc2685fea950
-+  __DATA_CONST.__const: 0x20d8 sha256:e6859c59df9c364aee0eac3408ee1683e45fc019103046a89b9bea5a908393fc
-+  __DATA_CONST.__objc_classlist: 0x568 sha256:2996198c0f78a145f97f4eb184618452f248cec21f52dac53f4686505616affa
-+  __DATA_CONST.__objc_catlist: 0x70 sha256:a24cd00df8b2318c5f5eb79771ddd1248716c04679136b125b99d2dbb7c56e56
-+  __DATA_CONST.__objc_protolist: 0x108 sha256:6bd4f0f87bf624f43404cae915e4572452b60b6b454353b325c310d2d2dfd346
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__objc_selrefs: 0x5b88 sha256:ead0e9c579867e4b0ce0a1f4a3993e68ad49b23549a4e243f2c4b83bffce59ee
--  __DATA_CONST.__objc_protorefs: 0x10 sha256:73630ed2e0f5bfea3e2a84274efd13aec2d1b5c045c1a70423877bf2990baf7d
--  __DATA_CONST.__objc_superrefs: 0x508 sha256:944549adeb6cfd56b8fbf0ce0627f366b4a0dcefccf99b695963cb7f2bf32be3
--  __DATA_CONST.__objc_arraydata: 0x208 sha256:e9e722947be2364b5d96f8daba5609f01cfa4a61ee89912270baa57838b626c5
--  __DATA_CONST.__got: 0xbd8 sha256:f0159937a42361b617670464699793c0da3786c5df5c1d83cbdbc53399615953
--  __AUTH_CONST.__const: 0xb40 sha256:a8709cd722e7cf469ab7e2d4de7d691aff4e757473a64696e1eb1ea5c81089e6
--  __AUTH_CONST.__cfstring: 0x9de0 sha256:f9ec81ab3bf40fa2cbfcf229c4321a674c00dbfdb691f871cf277fc1ee86a35d
--  __AUTH_CONST.__objc_const: 0x4dab8 sha256:abc90db88aea70caeecad7aead6cc3d3208845362363ec2b77145e7c84a7001f
--  __AUTH_CONST.__objc_intobj: 0x7c8 sha256:d9410cf4c03e9300487ef88d14a4e7a8b7f21a8053fdf9799956efc076427260
--  __AUTH_CONST.__objc_dictobj: 0x28 sha256:4a149a1031539f804f9d77ec9f871ce22e6aeb7ac243adad568f222d43315f3f
--  __AUTH_CONST.__objc_arrayobj: 0xf0 sha256:6558e2c0d67d398798cb3ebd0badf47ac155e631e122653420d756a058f4aaa9
-+  __DATA_CONST.__objc_selrefs: 0x5d40 sha256:c0571d52196f003e7c3d2c90d3f829bdd26dbaa1bf18a2b969e13f955aaa0369
-+  __DATA_CONST.__objc_protorefs: 0x10 sha256:d474147f72b00fd15c0f030d72dfafb7a72de298a44c8e9ca83c0e142d67edf1
-+  __DATA_CONST.__objc_superrefs: 0x508 sha256:8c79f4876259746bbe14e93d7fa64847c99460e516c7daa637140d05bbaaad2a
-+  __DATA_CONST.__objc_arraydata: 0x228 sha256:f9f5e4c7ea563df0a293f519e1cc6855dd62647bbc74969fa6ff869ed4ea050d
-+  __DATA_CONST.__got: 0xbe0 sha256:9a8517c938a219b5f4f6a9219fcc5b676ecda0669db0a19836581de6f4d566c9
-+  __AUTH_CONST.__const: 0xb60 sha256:ec484397ce5def3228505618062dd8794c03b6764743f929bb4439744b8e8c48
-+  __AUTH_CONST.__cfstring: 0xa640 sha256:51bf6580d954f0a26b62a90537a01bdaa42a556db775371301f6d32282f12fd3
-+  __AUTH_CONST.__objc_const: 0x4d368 sha256:d3795d0e469f1a83372b1cc489afa3790bd814bce275a18438e3100d26f0266d
-+  __AUTH_CONST.__objc_intobj: 0x7e0 sha256:5fcd8edb46d055e0f287ed8229b065f06afe399c42c7525a53c4c00a8645cf6a
-+  __AUTH_CONST.__objc_dictobj: 0x28 sha256:1fd0b634cace2facc76bfcf422d1204369425e0861bd507223320a45721832d7
-+  __AUTH_CONST.__objc_arrayobj: 0x108 sha256:d251c4b572ca24d471e35f8d796ee5b7b90205ea8498c64110637ba17ff385e9
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x3570 sha256:3d57407fc0bc2358c37d552ce2d2f4c3ef95a035ed472d0d35efd9633ee33e6e
--  __DATA.__objc_ivar: 0x1268 sha256:d8e2648a22141eb1316cc77703637ec918c113549a0d780bb6ada4c2af5da219
--  __DATA.__data: 0xc70 sha256:265e9e0ac22e4c3417f6691e80bb5c7f0a463d7bf5bc362b3ca8165a74024b9f
-+  __AUTH.__objc_data: 0x35c0 sha256:48fc82f8f873d2f2a595e09d6c83dbe68a74f89f469e59591b5c4cc00cc272c5
-+  __DATA.__objc_ivar: 0x12c4 sha256:7f5c901198685b235d5cfbc8ce2c789d02a107b469d085396895f47190f5735f
-+  __DATA.__data: 0xc70 sha256:bee82558ff1ee1ed0b6d847e47f50f16fed7eeb0ee6a6800b703a8106c4bedbd
-   __DATA.__bss: 0x178 sha256:70d6aad73b9cfd0facdee81f4aac5bbf30d603300653623c57f7c26e1c376271
--  __DATA_DIRTY.__objc_data: 0x50 sha256:b49db8b802cc50ddd8069fe027e37e317de75d0b47cc630ba550aa06be0fd7f8
-+  __DATA_DIRTY.__objc_data: 0x50 sha256:0e43786fb0aa475fa0fd992e2b5b398ef78d1a85c9925faa2ebeae559ee9d1c1
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
--  UUID: 9C7C5014-6AAF-3123-8175-5DC1B6C05499
 -  Functions: 4740
--  Symbols:   17086
--  CStrings:  4219
-+  UUID: 7A88F600-21C9-3A9E-9264-ABEFF3E6E54B
+-  Symbols:   7641
+-  CStrings:  2958
 +  Functions: 4818
-+  Symbols:   17296
-+  CStrings:  4372
- 
++  Symbols:   7754
++  CStrings:  3044
 Symbols:
 + +[SSQuickSwitchEACSSignOutViewController _contentForFlowType:data:isDeleteESIM:needsConfirmation:]
 + +[TSFlowHelper filterForCarrierSetupItems:transferPlans:quickSwitchPlans:quickSwitchToTransferPlanMap:]
@@ -309,65 +264,20 @@ Symbols:
 + __OBJC_METACLASS_RO_$_TSCarrierSetupItemsFilterResult
 + __OBJC_PROTOCOL_$_SSQuickSwitchLifeCycleContent
 + ___103+[TSFlowHelper filterForCarrierSetupItems:transferPlans:quickSwitchPlans:quickSwitchToTransferPlanMap:]_block_invoke
-+ ___103+[TSFlowHelper filterForCarrierSetupItems:transferPlans:quickSwitchPlans:quickSwitchToTransferPlanMap:]_block_invoke.76
-+ ___115-[TSCellularPlanActivatingFlow(CoreTelephonyClientCellularPlanManagementDelegate) handleWaitingOnWifiStatusUpdate:]_block_invoke.531
 + ___205-[SSQuickSwitchSecondaryEnrollmentFlow initWithMessageSession:accounts:primarySerialNumber:carrierSetupItems:sourceOSVersion:sourceDeviceClass:isFirstView:quickSwitchToTransferPlanMap:quickSwitchFlowType:]_block_invoke
-+ ___44-[SSQuickSwitchAlertViewController prepare:]_block_invoke.56
-+ ___44-[SSQuickSwitchAlertViewController prepare:]_block_invoke.56.cold.1
-+ ___47-[TSSecureIntentGestureViewController prepare:]_block_invoke.112
 + ___58-[SSQuickSwitchPrimaryEnrollmentFlow firstViewController:]_block_invoke
-+ ___58-[SSQuickSwitchPrimaryEnrollmentFlow firstViewController:]_block_invoke.cold.1
-+ ___58-[SSQuickSwitchPrimaryEnrollmentFlow firstViewController:]_block_invoke.cold.2
-+ ___58-[TSSecureIntentGestureViewController _doubleClickGesture]_block_invoke.95
-+ ___60-[SSQuickSwitchSecondaryEnrollmentFlow firstViewController:]_block_invoke.40
-+ ___60-[SSQuickSwitchSecondaryEnrollmentFlow firstViewController:]_block_invoke.40.cold.1
-+ ___62-[SSQuickSwitchSecondaryEnrollmentFlow _requestTransferPlans:]_block_invoke.68
-+ ___62-[SSQuickSwitchSecondaryEnrollmentFlow _requestTransferPlans:]_block_invoke.68.cold.1
-+ ___62-[SSQuickSwitchSecondaryEnrollmentFlow _requestTransferPlans:]_block_invoke.68.cold.2
-+ ___62-[TSSIMSetupFlow navigateToNextPaneFrom:navigationController:]_block_invoke.186
-+ ___62-[TSSIMSetupFlow navigateToNextPaneFrom:navigationController:]_block_invoke.189
-+ ___65-[SSQuickSwitchListViewController _showTransferConfirmationAlert]_block_invoke.101
-+ ___65-[SSQuickSwitchListViewController _showTransferConfirmationAlert]_block_invoke.101.cold.1
-+ ___65-[SSQuickSwitchListViewController _showTransferConfirmationAlert]_block_invoke.107
-+ ___65-[SSQuickSwitchListViewController _showTransferConfirmationAlert]_block_invoke.107.cold.1
-+ ___65-[TSTravelBuddyViewController _getTraveleSIMStateWithCompletion:]_block_invoke.125
 + ___68-[SSCellularPlanScanViewController _presentParseErrorAlertForError:]_block_invoke
-+ ___68-[SSQuickSwitchSecondaryEnrollmentFlow _requestPlansWithCompletion:]_block_invoke.56
-+ ___68-[SSQuickSwitchSecondaryEnrollmentFlow _requestPlansWithCompletion:]_block_invoke.56.cold.1
-+ ___68-[SSQuickSwitchSecondaryEnrollmentFlow _requestPlansWithCompletion:]_block_invoke.57
-+ ___68-[SSQuickSwitchSecondaryEnrollmentFlow _requestPlansWithCompletion:]_block_invoke.57.cold.1
-+ ___68-[SSQuickSwitchSecondaryEnrollmentFlow _requestPlansWithCompletion:]_block_invoke.58
 + ___69-[SSCellularPlanScanViewController _validateCardDataAndDeferInstall:]_block_invoke
 + ___69-[SSCellularPlanScanViewController _validateCardDataAndDeferInstall:]_block_invoke_2
-+ ___69-[SSCellularPlanScanViewController _validateCardDataAndDeferInstall:]_block_invoke_2.cold.1
-+ ___70-[TSCellularSetupLoadingViewController safariViewControllerDidFinish:]_block_invoke.148
 + ___71-[SSCardManualEntryViewController _validateEnteredInputAndDeferInstall]_block_invoke
 + ___71-[SSCardManualEntryViewController _validateEnteredInputAndDeferInstall]_block_invoke_2
-+ ___71-[SSCardManualEntryViewController _validateEnteredInputAndDeferInstall]_block_invoke_2.cold.1
-+ ___72-[TSActivationFlowWithSimSetupFlow _requestCarrierSetupsWithCompletion:]_block_invoke.126
-+ ___73-[SSQuickSwitchDevicePickerViewController _showTransferConfirmationAlert]_block_invoke.105
-+ ___73-[SSQuickSwitchDevicePickerViewController _showTransferConfirmationAlert]_block_invoke.105.cold.1
-+ ___73-[SSQuickSwitchDevicePickerViewController _showTransferConfirmationAlert]_block_invoke.111
-+ ___73-[SSQuickSwitchDevicePickerViewController _showTransferConfirmationAlert]_block_invoke.111.cold.1
-+ ___73-[SSQuickSwitchSecondaryEnrollmentFlow _getQSAccountsWithMessageSession:]_block_invoke.62
-+ ___74-[TSCellularPlanActivatingFlow(TSSIMSetupDelegate) simSetupFlowCompleted:]_block_invoke.617
 + ___75-[SSQuickSwitchDevicePickerViewController _sortAccountsByPrimaryRoleFirst:]_block_invoke
-+ ___75-[TSActivationFlowWithSimSetupFlow _requestTransferPlanListWithCompletion:]_block_invoke.120
-+ ___75-[TSActivationFlowWithSimSetupFlow _requestTransferPlanListWithCompletion:]_block_invoke.120.cold.1
-+ ___77-[SSQuickSwitchSecondarySharingViewController _showTransferConfirmationAlert]_block_invoke.127
-+ ___77-[SSQuickSwitchSecondarySharingViewController _showTransferConfirmationAlert]_block_invoke.127.cold.1
 + ___78-[SSQuickSwitchEACSContent buildConfirmAlertWithConfirmHandler:cancelHandler:]_block_invoke
 + ___78-[SSQuickSwitchEACSContent buildConfirmAlertWithConfirmHandler:cancelHandler:]_block_invoke_2
-+ ___79-[TSCellularSetupLoadingViewController setupCoreTelephonyClientForRemoteSignup]_block_invoke.115
-+ ___82-[TSCellularPlanActivatingFlow(InteractiveUI) _displayIntermediateViewController:]_block_invoke.679
-+ ___82-[TSCellularPlanActivatingFlow(TSSIMSetupFlowDelegate) viewControllerDidComplete:]_block_invoke.628
-+ ___82-[TSCellularPlanActivatingFlow(TSSIMSetupFlowDelegate) viewControllerDidComplete:]_block_invoke.628.cold.1
 + ___84-[SSQuickSwitchFindMyWipeContent buildConfirmAlertWithConfirmHandler:cancelHandler:]_block_invoke
 + ___84-[SSQuickSwitchFindMyWipeContent buildConfirmAlertWithConfirmHandler:cancelHandler:]_block_invoke_2
 + ___86-[SSQuickSwitchLocalSignOutContent buildConfirmAlertWithConfirmHandler:cancelHandler:]_block_invoke
 + ___86-[SSQuickSwitchLocalSignOutContent buildConfirmAlertWithConfirmHandler:cancelHandler:]_block_invoke_2
-+ ___90-[TSActivationFlowWithSimSetupFlow _getQuickSwitchAccountsFromDisplayPlansWithCompletion:]_block_invoke.116
-+ ___94-[SSQuickSwitchSecondaryEnrollmentFlow _getQuickSwitchAccountsFromDisplayPlansWithCompletion:]_block_invoke.66
 + ___96-[NSMutableArray(CTQuickSwitchAccountInfo) filteredQSAccountsWithoutSODATether:transferPlanMap:]_block_invoke
 + ___block_descriptor_32_e63_q24?0"CTQuickSwitchAccountInfo"8"CTQuickSwitchAccountInfo"16l
 + ___block_descriptor_40_e8_32s_e40_B24?0"CTDisplayPlan"8"NSDictionary"16ls32l8
@@ -375,81 +285,7 @@ Symbols:
 + ___block_descriptor_48_e8_32s40s_e25_B24?08"NSDictionary"16ls32l8s40l8
 + ___block_descriptor_48_e8_32s40s_e51_B24?0"CTQuickSwitchAccountInfo"8"NSDictionary"16ls32l8s40l8
 + ___block_descriptor_48_e8_32s40w_e48_v24?0"CTCellularPlanQRCodeAction"8"NSError"16lw40l8s32l8
-+ ___block_literal_global.1021
-+ ___block_literal_global.114
-+ ___block_literal_global.155
-+ ___block_literal_global.312
-+ ___block_literal_global.328
-+ ___block_literal_global.434
-+ ___block_literal_global.530
-+ ___block_literal_global.630
-+ ___block_literal_global.852
-+ ___block_literal_global.882
-+ ___block_literal_global.942
 + _kQuickSwitchIconKey
-+ _objc_msgSend$_adviceSentenceForGroup:
-+ _objc_msgSend$_confirmMessage
-+ _objc_msgSend$_confirmTitle
-+ _objc_msgSend$_contentForFlowType:data:isDeleteESIM:needsConfirmation:
-+ _objc_msgSend$_getDetailsForAccounts:quickSwitchToTransferPlanMap:
-+ _objc_msgSend$_getDeviceNamesForGroup:
-+ _objc_msgSend$_getPhoneNumberForGroup:
-+ _objc_msgSend$_getSubtextForGroup:
-+ _objc_msgSend$_getTextForGroup:
-+ _objc_msgSend$_impactSentenceForGroup:
-+ _objc_msgSend$_isUnSelectableGroup:
-+ _objc_msgSend$_knownPhoneNumbersInInfos:
-+ _objc_msgSend$_prepareCellInformationWithAccounts:transferPlans:
-+ _objc_msgSend$_prepareCellInformationWithPendingInstallPlans:transferPlans:carrierSetupPlans:isHiddenPlanSelectable:quickSwitchPlans:
-+ _objc_msgSend$_presentParseErrorAlertForError:
-+ _objc_msgSend$_resolveDerivedState
-+ _objc_msgSend$_sortAccountsByPrimaryRoleFirst:
-+ _objc_msgSend$_validateCardDataAndDeferInstall:
-+ _objc_msgSend$_validateEnteredInputAndDeferInstall
-+ _objc_msgSend$accountsSupportingQuickSwitchFromThisDevice:
-+ _objc_msgSend$areAllSecondaryTwinnedNoTransferWithoutCompanion:
-+ _objc_msgSend$buildConfirmAlertWithConfirmHandler:cancelHandler:
-+ _objc_msgSend$detailText
-+ _objc_msgSend$enteredAddress
-+ _objc_msgSend$enteredMatchingId
-+ _objc_msgSend$filterForCarrierSetupItems:transferPlans:quickSwitchPlans:quickSwitchToTransferPlanMap:
-+ _objc_msgSend$filterToQSOnlyAccounts:magnoliaOnlyPlans:quickSwitchToTransferPlanMap:
-+ _objc_msgSend$filteredPlansForUnsupportedQSBucket
-+ _objc_msgSend$filteredQSAccountsWithoutSODATether:transferPlanMap:
-+ _objc_msgSend$getActionForCardData:completionHandler:
-+ _objc_msgSend$getTitleAndSubtitleForTransferViaMagnoliaFlow
-+ _objc_msgSend$groupsByRoleAndDevice
-+ _objc_msgSend$hasMultiplePrimaryDevices
-+ _objc_msgSend$infos
-+ _objc_msgSend$initWithAccounts:transferPlans:blockerViewNeeded:showConfirmationAlert:messageSession:quickSwitchToTransferPlanMap:delegate:
-+ _objc_msgSend$initWithData:isDeleteESIM:needsConfirmation:
-+ _objc_msgSend$initWithData:needsConfirmation:
-+ _objc_msgSend$initWithDelegate:otherDeviceName:
-+ _objc_msgSend$initWithInfos:selfSerialNumber:
-+ _objc_msgSend$initWithPhoneNumber:result:quickSwitchFlowType:account:secondary:companion:
-+ _objc_msgSend$initWithPlanItemError:updatePlanItem:withBackButton:forCarrier:withCarrierErrorCode:isEmbeddedInResultView:sourceErrorMessage:
-+ _objc_msgSend$initWithPlans:skip:quickSwitchFlowType:
-+ _objc_msgSend$initWithQuickSwitchFlowType:
-+ _objc_msgSend$initWithQuickSwitchPlan:quickSwitchFlowType:
-+ _objc_msgSend$invalidationHandler
-+ _objc_msgSend$isQuickSwitchActiveAsSecondaryForAccount:
-+ _objc_msgSend$isQuickSwitchActiveForAccount:
-+ _objc_msgSend$knownCompanionDeviceNameForInfo:
-+ _objc_msgSend$knownJoinedPhonesForInfos:
-+ _objc_msgSend$knownOrJoinedPhonesForInfos:
-+ _objc_msgSend$knownPrimaryDeviceName
-+ _objc_msgSend$primaryInfos
-+ _objc_msgSend$removeObjectsInArray:
-+ _objc_msgSend$secondaryInfos
-+ _objc_msgSend$setCarrierSetupItems:
-+ _objc_msgSend$setEnteredAddress:
-+ _objc_msgSend$setEnteredConfirmationCode:
-+ _objc_msgSend$setEnteredMatchingId:
-+ _objc_msgSend$setInvalidationHandler:
-+ _objc_msgSend$setSourceErrorMessage:
-+ _objc_msgSend$shouldShowConfirmAlert
-+ _objc_msgSend$sourceErrorMessage
-+ _objc_msgSend$stringWithFirstCharacterUppercase
 - +[TSSIMSetupFlow _maybeCreateSIMConfigFlowAsPreFlow:options:]
 - +[TSUtilities getStringWithFirstCharacterUppercase:]
 - +[TSUtilities groupHasOrphanPrimary:]
@@ -505,9 +341,7 @@ Symbols:
 - -[SSQuickSwitchSecondarySharingViewController _shareOptionSubtext]
 - -[SSQuickSwitchSecondarySharingViewController initWithAccounts:hasTransferPlans:blockerViewNeeded:showConfirmationAlert:messageSession:quickSwitchToTransferPlanMap:delegate:]
 - -[TSActivationFlowWithSimSetupFlow _filterCarrierSetupItems:]
-- -[TSCellularPlanActivatingFlow(CoreTelephonyClientQuickSwitchEnrollmentDelegate) updateQuickSwitchEnrollmentStatus:].cold.2
 - -[TSCellularPlanActivatingFlow(SSQuickSwitchIncompleteWebsheetDecision) resolveIncompleteWebsheetWithFollowup:]
-- -[TSCellularPlanActivatingFlow(SSQuickSwitchIncompleteWebsheetDecision) resolveIncompleteWebsheetWithFollowup:].cold.1
 - -[TSCellularSetupActivatingViewController initWithPlans:skip:]
 - -[TSCellularSetupActivatingViewController initWithQuickSwitchPlan:]
 - -[TSMultiPlanIntermediateViewController _prepareCellInformationWithPendingInstallPlans:transferPlans:carrierSetupPlans:isHiddenPlanSelectable:]
@@ -584,91 +418,8 @@ Symbols:
 - __OBJC_METACLASS_RO_$_SSQuickSwitchIncompleteWebsheetDecisionViewController
 - __OBJC_PROTOCOL_$_SSQuickSwitchIncompleteWebsheetDecisionDelegate
 - ___111-[TSCellularPlanActivatingFlow(SSQuickSwitchIncompleteWebsheetDecision) resolveIncompleteWebsheetWithFollowup:]_block_invoke
-- ___115-[TSCellularPlanActivatingFlow(CoreTelephonyClientCellularPlanManagementDelegate) handleWaitingOnWifiStatusUpdate:]_block_invoke.534
-- ___44-[SSQuickSwitchAlertViewController prepare:]_block_invoke.45
-- ___44-[SSQuickSwitchAlertViewController prepare:]_block_invoke.45.cold.1
-- ___47-[TSSecureIntentGestureViewController prepare:]_block_invoke.106
-- ___58-[TSSecureIntentGestureViewController _doubleClickGesture]_block_invoke.89
-- ___60-[SSQuickSwitchSecondaryEnrollmentFlow firstViewController:]_block_invoke.43
-- ___60-[SSQuickSwitchSecondaryEnrollmentFlow firstViewController:]_block_invoke.43.cold.1
-- ___62-[SSQuickSwitchSecondaryEnrollmentFlow _requestTransferPlans:]_block_invoke.70
-- ___62-[SSQuickSwitchSecondaryEnrollmentFlow _requestTransferPlans:]_block_invoke.70.cold.1
-- ___62-[SSQuickSwitchSecondaryEnrollmentFlow _requestTransferPlans:]_block_invoke.70.cold.2
-- ___62-[TSSIMSetupFlow navigateToNextPaneFrom:navigationController:]_block_invoke.187
-- ___62-[TSSIMSetupFlow navigateToNextPaneFrom:navigationController:]_block_invoke.190
-- ___65-[SSQuickSwitchListViewController _showTransferConfirmationAlert]_block_invoke.104
-- ___65-[SSQuickSwitchListViewController _showTransferConfirmationAlert]_block_invoke.104.cold.1
-- ___65-[SSQuickSwitchListViewController _showTransferConfirmationAlert]_block_invoke.98
-- ___65-[SSQuickSwitchListViewController _showTransferConfirmationAlert]_block_invoke.98.cold.1
-- ___68-[SSQuickSwitchSecondaryEnrollmentFlow _requestPlansWithCompletion:]_block_invoke.59
-- ___68-[SSQuickSwitchSecondaryEnrollmentFlow _requestPlansWithCompletion:]_block_invoke.59.cold.1
-- ___68-[SSQuickSwitchSecondaryEnrollmentFlow _requestPlansWithCompletion:]_block_invoke.60
-- ___68-[SSQuickSwitchSecondaryEnrollmentFlow _requestPlansWithCompletion:]_block_invoke.60.cold.1
-- ___68-[SSQuickSwitchSecondaryEnrollmentFlow _requestPlansWithCompletion:]_block_invoke.61
-- ___70-[TSCellularSetupLoadingViewController safariViewControllerDidFinish:]_block_invoke.133
-- ___72-[TSActivationFlowWithSimSetupFlow _requestCarrierSetupsWithCompletion:]_block_invoke.125
-- ___73-[SSQuickSwitchDevicePickerViewController _showTransferConfirmationAlert]_block_invoke.93
-- ___73-[SSQuickSwitchDevicePickerViewController _showTransferConfirmationAlert]_block_invoke.93.cold.1
-- ___73-[SSQuickSwitchDevicePickerViewController _showTransferConfirmationAlert]_block_invoke.99
-- ___73-[SSQuickSwitchDevicePickerViewController _showTransferConfirmationAlert]_block_invoke.99.cold.1
-- ___73-[SSQuickSwitchSecondaryEnrollmentFlow _getQSAccountsWithMessageSession:]_block_invoke.64
-- ___74-[TSCellularPlanActivatingFlow(TSSIMSetupDelegate) simSetupFlowCompleted:]_block_invoke.623
-- ___75-[TSActivationFlowWithSimSetupFlow _requestTransferPlanListWithCompletion:]_block_invoke.119
-- ___75-[TSActivationFlowWithSimSetupFlow _requestTransferPlanListWithCompletion:]_block_invoke.119.cold.1
-- ___77-[SSCellularPlanScanViewController _addNewPlanWithCardData:confirmationCode:]_block_invoke.62
-- ___77-[SSQuickSwitchSecondarySharingViewController _showTransferConfirmationAlert]_block_invoke.112
-- ___77-[SSQuickSwitchSecondarySharingViewController _showTransferConfirmationAlert]_block_invoke.112.cold.1
-- ___79-[TSCellularSetupLoadingViewController setupCoreTelephonyClientForRemoteSignup]_block_invoke.100
-- ___82-[TSCellularPlanActivatingFlow(InteractiveUI) _displayIntermediateViewController:]_block_invoke.685
-- ___82-[TSCellularPlanActivatingFlow(TSSIMSetupFlowDelegate) viewControllerDidComplete:]_block_invoke.634
-- ___82-[TSCellularPlanActivatingFlow(TSSIMSetupFlowDelegate) viewControllerDidComplete:]_block_invoke.634.cold.1
-- ___90-[TSActivationFlowWithSimSetupFlow _getQuickSwitchAccountsFromDisplayPlansWithCompletion:]_block_invoke.115
-- ___94-[SSQuickSwitchSecondaryEnrollmentFlow _getQuickSwitchAccountsFromDisplayPlansWithCompletion:]_block_invoke.68
 - ___block_descriptor_33_e17_v16?0"NSError"8l
 - ___block_descriptor_56_e8_32s40s48s_e23_v16?0"UIAlertAction"8ls32l8s40l8s48l8
-- ___block_literal_global.108
-- ___block_literal_global.117
-- ___block_literal_global.140
-- ___block_literal_global.300
-- ___block_literal_global.316
-- ___block_literal_global.480
-- ___block_literal_global.536
-- ___block_literal_global.636
-- ___block_literal_global.823
-- ___block_literal_global.853
-- ___block_literal_global.913
-- ___block_literal_global.991
-- _objc_msgSend$_buildDetailTextWithInfos:flowType:isDeleteESIM:selfSerialNumber:
-- _objc_msgSend$_carrierNameForInfos:
-- _objc_msgSend$_deviceNameForInfo:selfSerialNumber:
-- _objc_msgSend$_filterCarrierSetupItems:
-- _objc_msgSend$_groupInfosByRoleAndDevice:selfSerialNumber:
-- _objc_msgSend$_isCarrierNameFallback:
-- _objc_msgSend$_isDeviceNameFallback:selfSerialNumber:
-- _objc_msgSend$_joinPhonesWithOr:
-- _objc_msgSend$_maybeCreateSIMConfigFlowAsPreFlow:options:
-- _objc_msgSend$_numberKeyForPrimary:flowType:isDeleteESIM:plural:deviceIsFallback:
-- _objc_msgSend$_phoneNumberForInfo:
-- _objc_msgSend$_preambleForFlowType:
-- _objc_msgSend$_prepareCellInformationWithPendingInstallPlans:transferPlans:carrierSetupPlans:isHiddenPlanSelectable:
-- _objc_msgSend$_primaryDeviceNameExcluding:
-- _objc_msgSend$_scanInfos:hasPrimary:hasSecondary:primaryDeviceName:primaryDeviceIsFallback:primaryPhoneNumber:secondaryPhoneNumbers:secondaryDeviceName:secondaryDeviceIsFallback:
-- _objc_msgSend$_shareOptionSubtext
-- _objc_msgSend$_shouldShowConfirmAlertWithInfos:flowType:needsConfirmation:isDeleteESIM:
-- _objc_msgSend$getStringWithFirstCharacterUppercase:
-- _objc_msgSend$groupHasOrphanPrimary:
-- _objc_msgSend$initWithAccounts:hasTransferPlans:blockerViewNeeded:showConfirmationAlert:messageSession:quickSwitchToTransferPlanMap:delegate:
-- _objc_msgSend$initWithDelegate:
-- _objc_msgSend$initWithPhoneNumber:result:
-- _objc_msgSend$initWithPlans:skip:
-- _objc_msgSend$initWithQuickSwitchPlan:
-- _objc_msgSend$resolveIncompleteWebsheetWithFollowup:
-- _objc_msgSend$resolveQuickSwitchWebsheetIncomplete:followup:completion:
-- _objc_msgSend$selectedNewLine
-- _objc_msgSend$setAccounts:
-- _objc_msgSend$setDecisionDelegate:
-- _objc_msgSend$setIsSlidingWebsheetIncomplete:
-- _objc_msgSend$stringWithString:
 CStrings:
 + "%ld|%@"
 + "+[TSFlowHelper filterForCarrierSetupItems:transferPlans:quickSwitchPlans:quickSwitchToTransferPlanMap:]"
@@ -964,5 +715,4 @@ CStrings:
 - "resolved websheet incomplete with followup:%{bool}d, error:%@ @%s"
 - "websheet incomplete on primary device! current VC: %@ @%s"
 - "\xe1"
-
 ```

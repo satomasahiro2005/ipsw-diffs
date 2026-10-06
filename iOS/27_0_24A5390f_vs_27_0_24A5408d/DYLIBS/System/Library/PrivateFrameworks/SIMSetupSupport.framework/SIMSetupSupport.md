@@ -2,72 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/SIMSetupSupport.framework/SIMSetupSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe1ce4` | `0xe337c` | **`+0x1698`** |
+| `__AUTH_CONST.__objc_const` | `0x4da98` | `0x4e0c8` | **`+0x630`** |
+| `__TEXT.__cstring` | `0x17485` | `0x175c9` | **`+0x144`** |
+| `__TEXT.__objc_methlist` | `0xc354` | `0xc474` | **`+0x120`** |
+| `__AUTH.__objc_data` | `0x3570` | `0x35c0` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5de8` | `0x5e38` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x20e8` | `0x2120` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0x2f78` | `0x2fa8` | **`+0x30`** |
+| `__TEXT.__oslogstring` | `0x8acb` | `0x8af5` | **`+0x2a`** |
+| `__AUTH_CONST.__cfstring` | `0xab40` | `0xab20` | **`-0x20`** |
+| `__DATA.__objc_ivar` | `0x12f8` | `0x130c` | **`+0x14`** |
+| `__DATA_CONST.__got` | `0xbe8` | `0xbf0` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x570` | `0x578` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x510` | `0x518` | **`+0x8`** |
+| `__TEXT.__const` | `0x1f8` | `0x1f0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -968.0.0.0.0
--  __TEXT.__text: 0xe1ce4
--  __TEXT.__objc_methlist: 0xc354
--  __TEXT.__const: 0x1f8
--  __TEXT.__gcc_except_tab: 0x20e8
--  __TEXT.__cstring: 0x17485
--  __TEXT.__oslogstring: 0x8acb
 +973.0.0.0.0
-+  __TEXT.__text: 0xe337c
-+  __TEXT.__objc_methlist: 0xc474
-+  __TEXT.__const: 0x1f0
-+  __TEXT.__gcc_except_tab: 0x2120
-+  __TEXT.__cstring: 0x175c9
-+  __TEXT.__oslogstring: 0x8af5
-   __TEXT.__dlopen_cstrs: 0x2be
-   __TEXT.__ustring: 0xa
--  __TEXT.__unwind_info: 0x2f78
-+  __TEXT.__unwind_info: 0x2fa8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x2128
--  __DATA_CONST.__objc_classlist: 0x570
-+  __DATA_CONST.__objc_classlist: 0x578
-   __DATA_CONST.__objc_catlist: 0x70
-   __DATA_CONST.__objc_protolist: 0x108
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5de8
-+  __DATA_CONST.__objc_selrefs: 0x5e38
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x510
-+  __DATA_CONST.__objc_superrefs: 0x518
-   __DATA_CONST.__objc_arraydata: 0x228
--  __DATA_CONST.__got: 0xbe8
-+  __DATA_CONST.__got: 0xbf0
-   __AUTH_CONST.__const: 0xba0
--  __AUTH_CONST.__cfstring: 0xab40
--  __AUTH_CONST.__objc_const: 0x4da98
-+  __AUTH_CONST.__cfstring: 0xab20
-+  __AUTH_CONST.__objc_const: 0x4e0c8
-   __AUTH_CONST.__objc_intobj: 0x7e0
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_arrayobj: 0x108
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x3570
--  __DATA.__objc_ivar: 0x12f8
-+  __AUTH.__objc_data: 0x35c0
-+  __DATA.__objc_ivar: 0x130c
-   __DATA.__data: 0xc70
-   __DATA.__bss: 0x178
-   __DATA_DIRTY.__objc_data: 0xf0
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 4861
--  Symbols:   9935
+-  Symbols:   7824
 -  CStrings:  3108
 +  Functions: 4889
-+  Symbols:   9981
++  Symbols:   7864
 +  CStrings:  3110
- 
 Symbols:
 + +[SSQuickSwitchWaitSourceConsentViewController getTitleAndDetailsForPlanInfos:quickSwitchFlowType:]
 + +[TSUtilities filterQSAccountsWithRestrictedTransferPlan:quickSwitchToTransferPlanMap:]
@@ -124,15 +91,6 @@ Symbols:
 + ___51-[TSPRXSIMConfigMismatchViewController viewDidLoad]_block_invoke
 + ___70-[TSProximitySourceTransferFlow _handlePlanDisabledInCurrentSimConfig]_block_invoke
 + ___87+[TSUtilities filterQSAccountsWithRestrictedTransferPlan:quickSwitchToTransferPlanMap:]_block_invoke
-+ _objc_msgSend$_handlePlanDisabledInCurrentSimConfig
-+ _objc_msgSend$_maybeDismissInteractiveUI:
-+ _objc_msgSend$filterQSAccountsWithRestrictedTransferPlan:quickSwitchToTransferPlanMap:
-+ _objc_msgSend$getTitleAndDetailsForPlanInfos:quickSwitchFlowType:
-+ _objc_msgSend$goToSettingsAction
-+ _objc_msgSend$initWithPlanInfos:quickSwitchFlowType:
-+ _objc_msgSend$initWithQuickSwitchFlowType:stage:secondary:
-+ _objc_msgSend$setGoToSettingsAction:
-+ _objc_msgSend$setIsPlanDisabledInCurrentSimConfig:
 - -[SSQuickSwitchLocalSignOutContent _confirmTitle]
 - -[SSQuickSwitchSecondarySharingViewController _heightAnchorConstant]
 - -[SSQuickSwitchWaitSourceConsentViewController initWithPlanInfos:]
@@ -148,9 +106,6 @@ Symbols:
 - GCC_except_table212
 - GCC_except_table214
 - _OBJC_IVAR_$_SSQuickSwitchSecondarySharingViewController._tableHeightAnchor
-- _objc_msgSend$_confirmTitle
-- _objc_msgSend$getNumberSharingInfoForSerialNumber:completion:
-- _objc_msgSend$initWithQuickSwitchFlowType:
 CStrings:
 + "-[TSProximitySourceTransferFlow _handlePlanDisabledInCurrentSimConfig]"
 + "-[TSProximitySourceTransferFlow _handlePlanDisabledInCurrentSimConfig]_block_invoke"

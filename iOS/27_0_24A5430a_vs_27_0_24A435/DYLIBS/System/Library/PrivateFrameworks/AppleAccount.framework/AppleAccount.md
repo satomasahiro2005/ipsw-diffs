@@ -2,12 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/AppleAccount.framework/AppleAccount`
 
-```diff
+### Section Size Changes
 
- 1067.0.0.0.0
--  __TEXT.__text: 0x1a99b4
-+  __TEXT.__text: 0x1a99cc
-   __TEXT.__lazy_helpers: 0xa8
-   __TEXT.__objc_methlist: 0xb5ec
-   __TEXT.__cstring: 0x11472
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a99b4` | `0x1a99cc` | **`+0x18`** |

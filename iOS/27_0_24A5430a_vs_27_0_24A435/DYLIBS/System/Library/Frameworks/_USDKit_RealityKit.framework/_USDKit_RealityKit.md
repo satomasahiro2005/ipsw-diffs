@@ -2,42 +2,20 @@
 
 > `/System/Library/Frameworks/_USDKit_RealityKit.framework/_USDKit_RealityKit`
 
-```diff
+### Section Size Changes
 
- 106.0.10.0.1
--  __TEXT.__text: 0x11b190
--  __TEXT.__objc_methlist: 0x5b4
-+  __TEXT.__text: 0x11b34c
-+  __TEXT.__objc_methlist: 0x5d4
-   __TEXT.__const: 0x6ac8
-   __TEXT.__gcc_except_tab: 0x94e0
-   __TEXT.__constg_swiftt: 0x1cd0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x11b190` | `0x11b34c` | **`+0x1bc`** |
+| `__AUTH_CONST.__objc_const` | `0x2528` | `0x2560` | **`+0x38`** |
+| `__TEXT.__objc_methlist` | `0x5b4` | `0x5d4` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x520` | `0x538` | **`+0x18`** |
+| `__TEXT.__eh_frame` | `0x6560` | `0x6568` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x3e18` | `0x3e10` | **`-0x8`** |
 
-   __TEXT.__swift5_assocty: 0x1a0
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x3e18
--  __TEXT.__eh_frame: 0x6560
-+  __TEXT.__unwind_info: 0x3e10
-+  __TEXT.__eh_frame: 0x6568
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+### Other Changes
 
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x520
-+  __DATA_CONST.__objc_selrefs: 0x538
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x5a68
-   __AUTH_CONST.__cfstring: 0x60
--  __AUTH_CONST.__objc_const: 0x2528
-+  __AUTH_CONST.__objc_const: 0x2560
-   __AUTH_CONST.__weak_auth_got: 0x50
-   __AUTH_CONST.__auth_got: 0x2b08
-   __AUTH.__objc_data: 0x230
+```text
 Functions:
 ~ __Z24getComplexityWithOptionsPv15AnalysisOptions : 4924 -> 4932
 ~ __ZNSt3__16vectorImNS_9allocatorImEEE24__emplace_back_slow_pathIJmEEEPmDpOT_ : 184 -> 176

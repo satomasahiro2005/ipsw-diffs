@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SeparationAlerts.framework/SeparationAlerts`
 
-```diff
+### Section Size Changes
 
- 107.0.26.0.0
--  __TEXT.__text: 0x3c784
-+  __TEXT.__text: 0x3c7c0
-   __TEXT.__objc_methlist: 0x482c
-   __TEXT.__const: 0x188
-   __TEXT.__oslogstring: 0xa418
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3c784` | `0x3c7c0` | **`+0x3c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[SADevice isAirPodsCase] : 128 -> 148
 ~ -[SADevice isBudForAirPodsBLECase] : 128 -> 148

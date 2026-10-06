@@ -2,91 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/CoreEmbeddedSpeechRecognition.framework/speechmaintenanced`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__objc_classname`
-- `__TEXT.__objc_methname`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x47a00` | `0x49eec` | **`+0x24ec`** |
+| `__TEXT.__auth_stubs` | `0x17f0` | `0x1e80` | **`+0x690`** |
+| `__DATA_CONST.__auth_got` | `0xc00` | `0xf48` | **`+0x348`** |
+| `__DATA_CONST.__got` | `0x2e0` | `0x378` | **`+0x98`** |
+| `__TEXT.__const` | `0xd40` | `0xdb8` | **`+0x78`** |
+| `__TEXT.__eh_frame` | `0x26f8` | `0x2770` | **`+0x78`** |
+| `__TEXT.__swift5_typeref` | `0x939` | `0x9af` | **`+0x76`** |
+| `__DATA.__data` | `0xf00` | `0xf50` | **`+0x50`** |
+| `__DATA.__objc_data` | `0xb0` | `0x100` | **`+0x50`** |
+| `__DATA.__objc_const` | `0xd88` | `0xd40` | **`-0x48`** |
+| `__TEXT.__unwind_info` | `0xb80` | `0xbc0` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x1110` | `0x10e8` | **`-0x28`** |
+| `__DATA_CONST.__auth_ptr` | `0x1c8` | `0x1d8` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x4f8` | `0x4e8` | **`-0x10`** |
+| `__TEXT.__constg_swiftt` | `0x52c` | `0x538` | **`+0xc`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_selrefs`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA.__objc_selrefs`
+- `__TEXT.__objc_classname`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__objc_methname`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -3600.70.47.11.1
--  __TEXT.__text: 0x45894
--  __TEXT.__auth_stubs: 0x17f0
 +3605.10.1.0.0
-+  __TEXT.__text: 0x478fc
-+  __TEXT.__auth_stubs: 0x1e80
-   __TEXT.__objc_stubs: 0xa60
-   __TEXT.__objc_methlist: 0x260
-+  __TEXT.__const: 0xdb8
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__swift5_typeref: 0x939
--  __TEXT.__const: 0xd40
-+  __TEXT.__swift5_typeref: 0x9af
-   __TEXT.__objc_classname: 0x317
-   __TEXT.__objc_methname: 0xf01
-   __TEXT.__objc_methtype: 0x331
-   __TEXT.__swift5_fieldmd: 0x520
--  __TEXT.__constg_swiftt: 0x52c
-+  __TEXT.__constg_swiftt: 0x538
-   __TEXT.__swift5_reflstr: 0x72c
--  __TEXT.__swift5_capture: 0x4f8
-+  __TEXT.__swift5_capture: 0x4e8
-   __TEXT.__oslogstring: 0x288e
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift5_proto: 0x40
 
-   __TEXT.__swift_as_ret: 0xcc
-   __TEXT.__swift_as_cont: 0x18c
-   __TEXT.__cstring: 0x4b5
--  __TEXT.__unwind_info: 0xd50
--  __TEXT.__eh_frame: 0x26f8
--  __DATA_CONST.__const: 0x1110
-+  __TEXT.__unwind_info: 0xd68
-+  __TEXT.__eh_frame: 0x2778
-+  __DATA_CONST.__const: 0x10e8
-   __DATA_CONST.__objc_classlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x98
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x50
--  __DATA_CONST.__auth_got: 0xc00
--  __DATA_CONST.__got: 0x2e0
--  __DATA_CONST.__auth_ptr: 0x1c8
--  __DATA.__objc_const: 0xd88
-+  __DATA_CONST.__auth_got: 0xf48
-+  __DATA_CONST.__got: 0x378
-+  __DATA_CONST.__auth_ptr: 0x1d8
-+  __DATA.__objc_const: 0xd40
-   __DATA.__objc_selrefs: 0x390
--  __DATA.__objc_data: 0xb0
--  __DATA.__data: 0xf00
-+  __DATA.__objc_data: 0x100
-+  __DATA.__data: 0xf50
-   __DATA.__common: 0x10
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/Speech.framework/Speech
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 726
 -  Symbols:   555
 +  Functions: 729
 +  Symbols:   666
-   CStrings:  402
- 
 Symbols:
 + _$s29CoreEmbeddedSpeechRecognition0C13ProfileConfigC0F0C11appEntitiesAC03AppH0Cvg
 + _$s29CoreEmbeddedSpeechRecognition0C13ProfileConfigC11AppEntitiesC10deniedAppsSaySSGvg

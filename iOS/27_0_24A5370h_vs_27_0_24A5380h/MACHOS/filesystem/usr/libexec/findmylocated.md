@@ -2,100 +2,62 @@
 
 > `/usr/libexec/findmylocated`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__unwind_info` | `0x15648` | `0x15da8` | **`+0x760`** |
+| `__TEXT.__text` | `0x5853b4` | `0x585adc` | **`+0x728`** |
+| `__TEXT.__cstring` | `0xb482` | `0xb842` | **`+0x3c0`** |
+| `__TEXT.__swift5_reflstr` | `0x7cfd` | `0x7e1d` | **`+0x120`** |
+| `__TEXT.__swift5_fieldmd` | `0x8eac` | `0x8f84` | **`+0xd8`** |
+| `__TEXT.__eh_frame` | `0x48008` | `0x48098` | **`+0x90`** |
+| `__TEXT.__auth_stubs` | `0x5c90` | `0x5cc0` | **`+0x30`** |
+| `__TEXT.__objc_methname` | `0x4e85` | `0x4eb5` | **`+0x30`** |
+| `__TEXT.__swift_as_cont` | `0x432c` | `0x435c` | **`+0x30`** |
+| `__TEXT.__swift5_typeref` | `0x72ca` | `0x729c` | **`-0x2e`** |
+| `__DATA_CONST.__const` | `0x181a0` | `0x181c0` | **`+0x20`** |
+| `__TEXT.__const` | `0x20738` | `0x20718` | **`-0x20`** |
+| `__TEXT.__swift_as_ret` | `0x27d8` | `0x27f4` | **`+0x1c`** |
+| `__DATA.__data` | `0xefb8` | `0xefa0` | **`-0x18`** |
+| `__DATA_CONST.__auth_got` | `0x2e50` | `0x2e68` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0xf1c` | `0xf34` | **`+0x18`** |
+| `__DATA_CONST.__auth_ptr` | `0x1a48` | `0x1a58` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x1d10` | `0x1d20` | **`+0x10`** |
+| `__TEXT.__constg_swiftt` | `0x70bc` | `0x70cc` | **`+0x10`** |
+| `__TEXT.__oslogstring` | `0x18f3c` | `0x18f2c` | **`-0x10`** |
+| `__TEXT.__swift_as_entry` | `0x1694` | `0x16a4` | **`+0x10`** |
+| `__DATA.__objc_const` | `0x6270` | `0x6278` | **`+0x8`** |
+| `__DATA.__objc_selrefs` | `0xd50` | `0xd58` | **`+0x8`** |
+| `__TEXT.__swift5_capture` | `0x4d28` | `0x4d2c` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_types`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x5853b4
--  __TEXT.__auth_stubs: 0x5c90
-+  __TEXT.__text: 0x585adc
-+  __TEXT.__auth_stubs: 0x5cc0
-   __TEXT.__objc_stubs: 0x2000
--  __TEXT.__objc_methlist: 0xf1c
--  __TEXT.__const: 0x20738
--  __TEXT.__cstring: 0xb482
--  __TEXT.__swift5_typeref: 0x72ca
--  __TEXT.__constg_swiftt: 0x70bc
-+  __TEXT.__objc_methlist: 0xf34
-+  __TEXT.__const: 0x20718
-+  __TEXT.__cstring: 0xb842
-+  __TEXT.__swift5_typeref: 0x729c
-+  __TEXT.__constg_swiftt: 0x70cc
-   __TEXT.__swift5_builtin: 0x12c
--  __TEXT.__swift5_reflstr: 0x7cfd
--  __TEXT.__swift5_fieldmd: 0x8eac
-+  __TEXT.__swift5_reflstr: 0x7e1d
-+  __TEXT.__swift5_fieldmd: 0x8f84
-   __TEXT.__swift5_assocty: 0xa48
-   __TEXT.__swift5_proto: 0x17d8
-   __TEXT.__swift5_types: 0x7f0
-   __TEXT.__objc_classname: 0x1276
--  __TEXT.__objc_methname: 0x4e85
-+  __TEXT.__objc_methname: 0x4eb5
-   __TEXT.__objc_methtype: 0x11e8
-   __TEXT.__swift5_protos: 0x48
-   __TEXT.__swift5_mpenum: 0x48
--  __TEXT.__oslogstring: 0x18f3c
--  __TEXT.__swift_as_entry: 0x1694
--  __TEXT.__swift_as_ret: 0x27d8
--  __TEXT.__swift_as_cont: 0x432c
--  __TEXT.__swift5_capture: 0x4d28
-+  __TEXT.__oslogstring: 0x18f2c
-+  __TEXT.__swift_as_entry: 0x16a4
-+  __TEXT.__swift_as_ret: 0x27f4
-+  __TEXT.__swift_as_cont: 0x435c
-+  __TEXT.__swift5_capture: 0x4d2c
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__unwind_info: 0x15648
--  __TEXT.__eh_frame: 0x48008
--  __DATA_CONST.__const: 0x181a0
-+  __TEXT.__unwind_info: 0x15da8
-+  __TEXT.__eh_frame: 0x48098
-+  __DATA_CONST.__const: 0x181c0
-   __DATA_CONST.__objc_classlist: 0x248
-   __DATA_CONST.__objc_protolist: 0x150
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0xc8
-   __DATA_CONST.__linkguard: 0x33
--  __DATA_CONST.__auth_got: 0x2e50
--  __DATA_CONST.__got: 0x1d10
--  __DATA_CONST.__auth_ptr: 0x1a48
--  __DATA.__objc_const: 0x6270
--  __DATA.__objc_selrefs: 0xd50
-+  __DATA_CONST.__auth_got: 0x2e68
-+  __DATA_CONST.__got: 0x1d20
-+  __DATA_CONST.__auth_ptr: 0x1a58
-+  __DATA.__objc_const: 0x6278
-+  __DATA.__objc_selrefs: 0xd58
-   __DATA.__objc_data: 0x1428
--  __DATA.__data: 0xefb8
-+  __DATA.__data: 0xefa0
-   __DATA.__bss: 0x2e380
-   __DATA.__common: 0x1408
-   - /System/Library/Frameworks/Accounts.framework/Accounts
+-140.30.6.7.1
++141.30.6.14.2
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 17434
 -  Symbols:   2864
--  CStrings:  3833
+-  CStrings:  3812
 +  Functions: 17446
 +  Symbols:   2870
-+  CStrings:  3855
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_entry : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__bss : content changed
-~ __DATA.__common : content changed
++  CStrings:  3834
 Symbols:
 + _$s12FindMyLocate16SettingsProtocolP19clientConfigurationAA06ClientG0VyYaKFTj
 + _$s12FindMyLocate16SettingsProtocolP19clientConfigurationAA06ClientG0VyYaKFTjTu
@@ -136,5 +98,4 @@ CStrings:
 - "FenceService: failed to set up .removedFriend monitor: %{public}@"
 - "Scheduling AckAlert command to %{public}s on %{public}s WorkItem: %{public}s"
 - "sendAckAlertCommand(_:content:credential:)"
-
 ```

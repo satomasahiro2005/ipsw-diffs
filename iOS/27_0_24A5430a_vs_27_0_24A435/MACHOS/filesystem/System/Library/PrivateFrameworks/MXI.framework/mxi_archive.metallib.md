@@ -2,8 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/MXI.framework/mxi_archive.metallib`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
-- `__TEXT.__reflection`
 - `__TEXT.__compute`
 - `__TEXT.__metallib`
+- `__TEXT.__reflection`

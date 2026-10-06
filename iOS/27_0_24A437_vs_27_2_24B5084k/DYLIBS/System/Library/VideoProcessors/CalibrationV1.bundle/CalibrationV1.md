@@ -2,51 +2,32 @@
 
 > `/System/Library/VideoProcessors/CalibrationV1.bundle/CalibrationV1`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a0f8` | `0x1d6a0` | **`+0x35a8`** |
+| `__TEXT.__oslogstring` | `0x74` | `0xcb8` | **`+0xc44`** |
+| `__TEXT.__cstring` | `0x32fb` | `0x3a29` | **`+0x72e`** |
+| `__AUTH_CONST.__cfstring` | `0x900` | `0x9e0` | **`+0xe0`** |
+| `__DATA.__common` | `—` | `0x40` | **`+0x40`** |
+| `__TEXT.__const` | `0xe34` | `0xe64` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x290` | `0x2b8` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x410` | `0x428` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
 -764.22.13.0.0
--  __TEXT.__text: 0x19ddc
 +764.40.4.122.1
-+  __TEXT.__text: 0x1d3a8
-   __TEXT.__objc_methlist: 0xcac
--  __TEXT.__const: 0xe34
--  __TEXT.__cstring: 0x32fb
--  __TEXT.__oslogstring: 0x74
--  __TEXT.__unwind_info: 0x8b8
-+  __TEXT.__const: 0xe64
-+  __TEXT.__cstring: 0x3a29
-+  __TEXT.__oslogstring: 0xcb8
-+  __TEXT.__unwind_info: 0x8d0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_superrefs: 0x38
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x120
--  __AUTH_CONST.__cfstring: 0x900
-+  __AUTH_CONST.__cfstring: 0x9e0
-   __AUTH_CONST.__objc_const: 0x19a0
--  __AUTH_CONST.__auth_got: 0x290
-+  __AUTH_CONST.__auth_got: 0x2b8
-   __AUTH.__objc_data: 0x280
-   __DATA.__objc_ivar: 0x1ec
-   __DATA.__data: 0xc0
-+  __DATA.__common: 0x40
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-
-   - /System/Library/PrivateFrameworks/CMImaging.framework/CMImaging
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 630
 -  Symbols:   130
 -  CStrings:  396
 +  Functions: 641
 +  Symbols:   135
 +  CStrings:  489
- 
 Symbols:
 + _FigSignalErrorAt3
 + __os_log_send_and_compose_impl

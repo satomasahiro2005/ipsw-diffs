@@ -2,20 +2,23 @@
 
 > `/System/Library/PrivateFrameworks/CascadeSets.framework/XPCServices/SetStoreUpdateService.xpc/SetStoreUpdateService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x60` | `0x58` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__text: 0x648
-   __TEXT.__auth_stubs: 0x1b0
-   __TEXT.__objc_stubs: 0x100
--  __TEXT.__const: 0x60
-+  __TEXT.__const: 0x58
-   __TEXT.__gcc_except_tab: 0x30
-   __TEXT.__cstring: 0xe9
-   __TEXT.__oslogstring: 0xa3
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA.__objc_selrefs : content changed
-
+-239.0.2.0.0
++243.0.0.0.0
 ```

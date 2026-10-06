@@ -2,109 +2,60 @@
 
 > `/System/Library/PrivateFrameworks/NewsUI2.framework/NewsUI2`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x148ecd4` | `0x147fc84` | **`-0xf050`** |
+| `__TEXT.__const` | `0xd79d4` | `0xd7294` | **`-0x740`** |
+| `__AUTH_CONST.__objc_const` | `0x75030` | `0x74950` | **`-0x6e0`** |
+| `__TEXT.__swift5_reflstr` | `0x418c4` | `0x41384` | **`-0x540`** |
+| `__AUTH_CONST.__const` | `0x86e80` | `0x86978` | **`-0x508`** |
+| `__TEXT.__swift5_fieldmd` | `0x42d20` | `0x428dc` | **`-0x444`** |
+| `__DATA_DIRTY.__data` | `0x64ca8` | `0x64868` | **`-0x440`** |
+| `__TEXT.__constg_swiftt` | `0x41944` | `0x41550` | **`-0x3f4`** |
+| `__TEXT.__cstring` | `0x5aff8` | `0x5b3c8` | **`+0x3d0`** |
+| `__DATA.__bss` | `0xb5e28` | `0xb5bc8` | **`-0x260`** |
+| `__TEXT.__objc_methlist` | `0xd88c` | `0xd62c` | **`-0x260`** |
+| `__TEXT.__swift5_typeref` | `0x2efaa` | `0x2ee0c` | **`-0x19e`** |
+| `__AUTH.__objc_data` | `0x9278` | `0x90e8` | **`-0x190`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7e38` | `0x7cb0` | **`-0x188`** |
+| `__DATA_DIRTY.__objc_data` | `0xbad0` | `0xb958` | **`-0x178`** |
+| `__TEXT.__swift5_capture` | `0x197b0` | `0x19698` | **`-0x118`** |
+| `__TEXT.__eh_frame` | `0x56050` | `0x56130` | **`+0xe0`** |
+| `__TEXT.__unwind_info` | `0x3be50` | `0x3bd70` | **`-0xe0`** |
+| `__DATA.__common` | `0xfb0` | `0x1028` | **`+0x78`** |
+| `__DATA_CONST.__got` | `0xbab0` | `0xba40` | **`-0x70`** |
+| `__DATA_CONST.__objc_classlist` | `0x33a0` | `0x3358` | **`-0x48`** |
+| `__DATA.__data` | `0x1db58` | `0x1db18` | **`-0x40`** |
+| `__TEXT.__swift5_types` | `0x46f8` | `0x46c0` | **`-0x38`** |
+| `__TEXT.__swift5_assocty` | `0x7648` | `0x7618` | **`-0x30`** |
+| `__TEXT.__swift5_proto` | `0xabd8` | `0xaba8` | **`-0x30`** |
+| `__TEXT.__swift_as_cont` | `0x2864` | `0x288c` | **`+0x28`** |
+| `__AUTH.__data` | `0x1b258` | `0x1b238` | **`-0x20`** |
+| `__TEXT.__oslogstring` | `0x1575b` | `0x1573b` | **`-0x20`** |
+| `__TEXT.__swift5_protos` | `0xef8` | `0xedc` | **`-0x1c`** |
+| `__TEXT.__swift5_builtin` | `0xeb0` | `0xe9c` | **`-0x14`** |
+| `__AUTH_CONST.__auth_got` | `0xfd68` | `0xfd58` | **`-0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0xb60` | `0xb50` | **`-0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x648` | `0x640` | **`-0x8`** |
+| `__TEXT.__swift_as_ret` | `0xed4` | `0xed0` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -5926.0.0.0.0
--  __TEXT.__text: 0x148ecd4
--  __TEXT.__objc_methlist: 0xd88c
--  __TEXT.__const: 0xd79d4
--  __TEXT.__cstring: 0x5aff8
--  __TEXT.__constg_swiftt: 0x41944
--  __TEXT.__swift5_typeref: 0x2efaa
--  __TEXT.__swift5_builtin: 0xeb0
--  __TEXT.__swift5_reflstr: 0x418c4
--  __TEXT.__swift5_fieldmd: 0x42d20
--  __TEXT.__swift5_assocty: 0x7648
--  __TEXT.__swift5_proto: 0xabd8
--  __TEXT.__swift5_types: 0x46f8
--  __TEXT.__oslogstring: 0x1575b
--  __TEXT.__swift5_capture: 0x197b0
 +5934.2.0.0.0
-+  __TEXT.__text: 0x147fc84
-+  __TEXT.__objc_methlist: 0xd62c
-+  __TEXT.__const: 0xd7294
-+  __TEXT.__cstring: 0x5b3c8
-+  __TEXT.__constg_swiftt: 0x41550
-+  __TEXT.__swift5_typeref: 0x2ee0c
-+  __TEXT.__swift5_builtin: 0xe9c
-+  __TEXT.__swift5_reflstr: 0x41384
-+  __TEXT.__swift5_fieldmd: 0x428dc
-+  __TEXT.__swift5_assocty: 0x7618
-+  __TEXT.__swift5_proto: 0xaba8
-+  __TEXT.__swift5_types: 0x46c0
-+  __TEXT.__oslogstring: 0x1573b
-+  __TEXT.__swift5_capture: 0x19698
-   __TEXT.__swift5_mpenum: 0x704
--  __TEXT.__swift5_protos: 0xef8
-+  __TEXT.__swift5_protos: 0xedc
-   __TEXT.__swift_as_entry: 0xdc8
--  __TEXT.__swift_as_ret: 0xed4
--  __TEXT.__swift_as_cont: 0x2864
--  __TEXT.__unwind_info: 0x3be50
--  __TEXT.__eh_frame: 0x56050
-+  __TEXT.__swift_as_ret: 0xed0
-+  __TEXT.__swift_as_cont: 0x288c
-+  __TEXT.__unwind_info: 0x3bd70
-+  __TEXT.__eh_frame: 0x56130
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x1ac8
--  __DATA_CONST.__objc_classlist: 0x33a0
-+  __DATA_CONST.__objc_classlist: 0x3358
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_catlist2: 0x30
--  __DATA_CONST.__objc_protolist: 0xb60
-+  __DATA_CONST.__objc_protolist: 0xb50
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7e38
--  __DATA_CONST.__objc_protorefs: 0x648
--  __DATA_CONST.__got: 0xbab0
--  __AUTH_CONST.__const: 0x86e80
-+  __DATA_CONST.__objc_selrefs: 0x7cb0
-+  __DATA_CONST.__objc_protorefs: 0x640
-+  __DATA_CONST.__got: 0xba40
-+  __AUTH_CONST.__const: 0x86978
-   __AUTH_CONST.__cfstring: 0x80
--  __AUTH_CONST.__objc_const: 0x75030
--  __AUTH_CONST.__auth_got: 0xfd68
--  __AUTH.__objc_data: 0x9278
--  __AUTH.__data: 0x1b258
--  __DATA.__data: 0x1db58
-+  __AUTH_CONST.__objc_const: 0x74950
-+  __AUTH_CONST.__auth_got: 0xfd58
-+  __AUTH.__objc_data: 0x90e8
-+  __AUTH.__data: 0x1b238
-+  __DATA.__data: 0x1db18
-   __DATA.__objc_stublist: 0x70
--  __DATA.__bss: 0xb5e28
--  __DATA.__common: 0xfb0
--  __DATA_DIRTY.__objc_data: 0xbad0
--  __DATA_DIRTY.__data: 0x64ca8
-+  __DATA.__bss: 0xb5bc8
-+  __DATA.__common: 0x1028
-+  __DATA_DIRTY.__objc_data: 0xb958
-+  __DATA_DIRTY.__data: 0x64868
-   __DATA_DIRTY.__bss: 0x80380
-   __DATA_DIRTY.__common: 0x1330
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
--  - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+-  - /System/Library/Frameworks/Accessibility.framework/Accessibility
+
 -  Functions: 81017
--  Symbols:   26866
+-  Symbols:   24402
 -  CStrings:  7400
 +  Functions: 80933
-+  Symbols:   26750
++  Symbols:   24308
 +  CStrings:  7408
- 
 Symbols:
 + __OBJC_$_INSTANCE_METHODS__TtC7NewsUI217WelcomeInteractor(NewsUI2|NewsUI21)
 + __OBJC_$_INSTANCE_METHODS__TtC7NewsUI221WelcomeViewController(NewsUI2|NewsUI21|NewsUI22)
@@ -112,12 +63,6 @@ Symbols:
 + __OBJC_CLASS_PROTOCOLS_$__TtC7NewsUI221WelcomeViewController(NewsUI2|NewsUI21|NewsUI22)
 + _associated conformance 7NewsUI225AccessoryButtonThemeStyleOSHAASQ
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE16scrollIndicators_4axesQrAA25ScrollIndicatorVisibilityV_AA4AxisO3SetVtFQOyAcAE0D14BounceBehavior_AEQrAA0glM0V_AKtFQOyAA15ModifiedContentVyAcAE20accessibilityElement8childrenQrAA018AccessibilityChildM0V_tFQOyAPyAA0gC0VyAPyAPyAA6HStackVyAA7ForEachVySay7NewsUI220SearchHomeFilterItemVGSSAPyAcAEAqRQrAT_tFQOyAPyA_0z14HomeFilterItemC033_B3F4A050CA3CABECFE5702A9717B7CDDLLVAA21_TraitWritingModifierVyAA18TransitionTraitKeyVGG_Qo_AA0S18AttachmentModifierVGGGAA14_PaddingLayoutVGA19_GGA19_G_Qo_A14_G_Qo__Qo_HO
-+ _objc_msgSend$feedNumberOfViewportsBetweenAds
-+ _objc_msgSend$initWithTitle:detailText:appName:icon:
-+ _objc_msgSend$setInsetsLayoutMarginsFromSafeArea:
-+ _objc_msgSend$setModalTransitionStyle:
-+ _objc_msgSend$showButtonsAvailable
-+ _objc_msgSend$showButtonsBusy
 + _symbolic So14UISceneSessionC
 + _symbolic So7UISceneC
 + _symbolic _____ 7NewsUI219WelcomeOfflineModelV
@@ -195,34 +140,6 @@ Symbols:
 - _associated conformance So18NSNotificationNameas20_SwiftNewtypeWrapperSCs35_HasCustomAnyHashableRepresentation
 - _get_enum_tag_for_layout_string 7NewsUI219WelcomeViewKeyFrameO
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE16scrollIndicators_4axesQrAA25ScrollIndicatorVisibilityV_AA4AxisO3SetVtFQOyAcAE0D14BounceBehavior_AEQrAA0glM0V_AKtFQOyAA15ModifiedContentVyAcAE20accessibilityElement8childrenQrAA018AccessibilityChildM0V_tFQOyAA0gC0VyAPyAA6HStackVyAA7ForEachVySay7NewsUI220SearchHomeFilterItemVGSSAPyAcAEAqRQrAT_tFQOyAPyA_0z14HomeFilterItemC033_B3F4A050CA3CABECFE5702A9717B7CDDLLVAA21_TraitWritingModifierVyAA18TransitionTraitKeyVGG_Qo_AA0S18AttachmentModifierVGGGAA14_PaddingLayoutVGG_Qo_A14_G_Qo__Qo_HO
-- _objc_msgSend$alpha
-- _objc_msgSend$animateWithDuration:delay:usingSpringWithDamping:initialSpringVelocity:options:animations:completion:
-- _objc_msgSend$attribute:atIndex:effectiveRange:
-- _objc_msgSend$attributesAtIndex:effectiveRange:
-- _objc_msgSend$currentRequest
-- _objc_msgSend$isCloudKitReachable
-- _objc_msgSend$isHighlighted
-- _objc_msgSend$lineHeightMultiple
-- _objc_msgSend$linkWithBundleIdentifier:
-- _objc_msgSend$presenterForPrivacySplashWithIdentifier:
-- _objc_msgSend$removeAllAnimations
-- _objc_msgSend$setAccessibilityLabelBlock:
-- _objc_msgSend$setBeginTime:
-- _objc_msgSend$setDisplayCaptionText:
-- _objc_msgSend$setDisplayLargeIcon:
-- _objc_msgSend$setEditable:
-- _objc_msgSend$setIsAccessibilityElementBlock:
-- _objc_msgSend$setLineFragmentPadding:
-- _objc_msgSend$setMaximumNumberOfLines:
-- _objc_msgSend$setMinimumSize:
-- _objc_msgSend$setPreferredBehavioralStyle:
-- _objc_msgSend$setSelectable:
-- _objc_msgSend$setTextContainerInset:
-- _objc_msgSend$sizeRestrictions
-- _objc_msgSend$technology
-- _objc_msgSend$textContainer
-- _objc_msgSend$textContainerInset
-- _objc_msgSend$tintColor
 - _symbolic $s7NewsUI221WelcomeViewStylerTypeP
 - _symbolic $s7NewsUI222WelcomeColorStylerTypeP
 - _symbolic $s7NewsUI223WelcomeViewAnimatorTypeP

@@ -2,15 +2,14 @@
 
 > `/System/Library/PreferenceBundles/AppearanceSettings.bundle/AppearanceSettings`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -1214.0.0.0.0
 +1214.100.0.0.0
-   __TEXT.__text: 0xd344
-   __TEXT.__auth_stubs: 0xdf0
-   __TEXT.__objc_stubs: 0x3a0
 ```

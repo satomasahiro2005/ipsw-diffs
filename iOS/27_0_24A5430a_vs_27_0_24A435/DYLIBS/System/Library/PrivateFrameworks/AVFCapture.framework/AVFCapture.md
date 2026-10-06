@@ -2,87 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/AVFCapture.framework/AVFCapture`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x12e15c` | `0x1454a8` | **`+0x1734c`** |
+| `__TEXT.__cstring` | `0x2bd79` | `0x2f009` | **`+0x3290`** |
+| `__AUTH_CONST.__objc_const` | `0x1a690` | `0x1cac8` | **`+0x2438`** |
+| `__AUTH_CONST.__cfstring` | `0x15540` | `0x16be0` | **`+0x16a0`** |
+| `__TEXT.__objc_methlist` | `0x1002c` | `0x113cc` | **`+0x13a0`** |
+| `__TEXT.__oslogstring` | `0x9806` | `0xa75e` | **`+0xf58`** |
+| `__DATA_CONST.__const` | `0x8938` | `0x9458` | **`+0xb20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8828` | `0x91d8` | **`+0x9b0`** |
+| `__TEXT.__gcc_except_tab` | `0x2b6c` | `0x314c` | **`+0x5e0`** |
+| `__AUTH.__objc_data` | `0x2370` | `0x2910` | **`+0x5a0`** |
+| `__TEXT.__unwind_info` | `0x5208` | `0x5768` | **`+0x560`** |
+| `__DATA_CONST.__got` | `0x2b50` | `0x2fa0` | **`+0x450`** |
+| `__DATA.__objc_ivar` | `0x1c78` | `0x1ec8` | **`+0x250`** |
+| `__AUTH_CONST.__objc_intobj` | `0xa80` | `0xb70` | **`+0xf0`** |
+| `__DATA_CONST.__objc_classlist` | `0x638` | `0x6c8` | **`+0x90`** |
+| `__DATA.__data` | `0xdc0` | `0xe48` | **`+0x88`** |
+| `__DATA_CONST.__objc_superrefs` | `0x568` | `0x5f0` | **`+0x88`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x330` | `0x3a8` | **`+0x78`** |
+| `__AUTH_CONST.__auth_got` | `0x1108` | `0x1170` | **`+0x68`** |
+| `__DATA_CONST.__objc_arraydata` | `0x458` | `0x4a8` | **`+0x50`** |
+| `__TEXT.__const` | `0xec2` | `0xf02` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0xdf0` | `0xe10` | **`+0x20`** |
+| `__DATA.__bss` | `0x8e0` | `0x900` | **`+0x20`** |
+| `__AUTH_CONST.__objc_floatobj` | `0x10` | `0x20` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
- 764.22.13.0.0
--  __TEXT.__text: 0x12e15c
--  __TEXT.__objc_methlist: 0x1002c
--  __TEXT.__const: 0xec2
--  __TEXT.__gcc_except_tab: 0x2b6c
--  __TEXT.__cstring: 0x2bd79
--  __TEXT.__oslogstring: 0x9806
-+  __TEXT.__text: 0x1454a8
-+  __TEXT.__objc_methlist: 0x113cc
-+  __TEXT.__const: 0xf02
-+  __TEXT.__gcc_except_tab: 0x314c
-+  __TEXT.__cstring: 0x2f009
-+  __TEXT.__oslogstring: 0xa75e
-   __TEXT.__dlopen_cstrs: 0x274
-   __TEXT.__ustring: 0x54
-   __TEXT.__swift5_typeref: 0xef
-
-   __TEXT.__swift5_reflstr: 0x24
-   __TEXT.__swift5_fieldmd: 0x50
-   __TEXT.__swift5_types: 0x8
--  __TEXT.__unwind_info: 0x5208
-+  __TEXT.__unwind_info: 0x5768
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x8938
--  __DATA_CONST.__objc_classlist: 0x638
-+  __DATA_CONST.__const: 0x9458
-+  __DATA_CONST.__objc_classlist: 0x6c8
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0xb0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8828
-+  __DATA_CONST.__objc_selrefs: 0x91d8
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x568
--  __DATA_CONST.__objc_arraydata: 0x458
--  __DATA_CONST.__got: 0x2b50
--  __AUTH_CONST.__const: 0xdf0
--  __AUTH_CONST.__cfstring: 0x15540
--  __AUTH_CONST.__objc_const: 0x1a690
--  __AUTH_CONST.__objc_intobj: 0xa80
-+  __DATA_CONST.__objc_superrefs: 0x5f0
-+  __DATA_CONST.__objc_arraydata: 0x4a8
-+  __DATA_CONST.__got: 0x2fa0
-+  __AUTH_CONST.__const: 0xe10
-+  __AUTH_CONST.__cfstring: 0x16be0
-+  __AUTH_CONST.__objc_const: 0x1cac8
-+  __AUTH_CONST.__objc_intobj: 0xb70
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__objc_arrayobj: 0x330
--  __AUTH_CONST.__objc_floatobj: 0x10
--  __AUTH_CONST.__auth_got: 0x1108
--  __AUTH.__objc_data: 0x2370
-+  __AUTH_CONST.__objc_arrayobj: 0x3a8
-+  __AUTH_CONST.__objc_floatobj: 0x20
-+  __AUTH_CONST.__auth_got: 0x1170
-+  __AUTH.__objc_data: 0x2910
-   __AUTH.__data: 0x28
--  __DATA.__objc_ivar: 0x1c78
--  __DATA.__data: 0xdc0
-+  __DATA.__objc_ivar: 0x1ec8
-+  __DATA.__data: 0xe48
-   __DATA.__common: 0x1c0
-   __DATA_DIRTY.__objc_data: 0x1ae0
-   __DATA_DIRTY.__data: 0x178
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7331
--  Symbols:   16990
+-  Symbols:   13469
 -  CStrings:  3869
 +  Functions: 7817
-+  Symbols:   18208
++  Symbols:   14430
 +  CStrings:  4187
- 
 Symbols:
 + +[AVCaptureDevice exposureSignalsBitmaskForSet:]
 + +[AVCaptureDevice exposureSignalsSetForBitmask:includingInternal:]
@@ -1160,274 +1118,6 @@ Symbols:
 + _kFigQuicktimeMetadataKey_TimewarpCaptureMode
 + _kFigQuicktimeMetadataKey_TimewarpTimelapseFastDecimationAllowed
 + _kFigQuicktimeMetadataKey_TimewarpTimelapseMaxDecimationLevel
-+ _objc_msgSend$URLWithString:
-+ _objc_msgSend$_addExpectedTimestamp:
-+ _objc_msgSend$_checkCustomExposureModeWithLensAperture:duration:ISO:entryPoint:
-+ _objc_msgSend$_configureCinematicVideoMetadataIfNeededForSessionConfiguration:
-+ _objc_msgSend$_copyPersonalPhotographerSessionPhotoRequestWithUniqueID:
-+ _objc_msgSend$_customExposureIsFullyLocked
-+ _objc_msgSend$_disableContinuousAutoFocusTracking
-+ _objc_msgSend$_dispatchPersonalPhotographerSessionDidFinishCallbackForRequest:error:cleanupRequest:
-+ _objc_msgSend$_dispatchPersonalPhotographerSessionDidFinishWithFailureCallbackForPhotoSettings:figSettings:toDelegate:withError:
-+ _objc_msgSend$_exposesOmahaConstituentDevices
-+ _objc_msgSend$_getTextureStyleSupported:
-+ _objc_msgSend$_handleDeviceAngleChanged:
-+ _objc_msgSend$_handleDidFinishPersonalPhotographerSessionNotificationWithPayload:forRequest:
-+ _objc_msgSend$_handleOccludedChange:
-+ _objc_msgSend$_handlePrimaryDisplayRegionChanged:
-+ _objc_msgSend$_handleVideoStabilizationStrengthChangedForDevice:
-+ _objc_msgSend$_handleWatchdogTimeout
-+ _objc_msgSend$_initWithDeviceType:mediaTypes:position:uniqueID:localizedName:
-+ _objc_msgSend$_initWithPreset:intensity:grain:
-+ _objc_msgSend$_initWithSmartStyle:textureStyle:
-+ _objc_msgSend$_initWithUniqueID:photoDimensions:rawPhotoDimensions:previewDimensions:embeddedThumbnailDimensions:rawEmbeddedThumbnailDimensions:livePhotoMovieEnabled:livePhotoMovieDimensions:livePhotoAssetIdentifier:portraitEffectsMatteDimensions:hairSegmentationMatteDimensions:skinSegmentationMatteDimensions:teethSegmentationMatteDimensions:glassesSegmentationMatteDimensions:spatialOverCapturePhotoDimensions:turboModeEnabled:flashEnabled:redEyeReductionEnabled:HDREnabled:adjustedPhotoFiltersEnabled:EV0PhotoDeliveryEnabled:stillImageStabilizationEnabled:virtualDeviceFusionEnabled:squareCropEnabled:deferredPhotoProxyDimensions:photoProcessingTimeRange:contentAwareDistortionCorrectionEnabled:spatialPhotoCaptureEnabled:photoManifest:digitalFlashUserInterfaceHints:digitalFlashUserInterfaceRGBEstimate:captureBeforeResolvingSettingsEnabled:secureSigningPhotoCapturePhotoEnabled:
-+ _objc_msgSend$_invokeCompletionWithRequest:error:
-+ _objc_msgSend$_isActionCameraEnabled
-+ _objc_msgSend$_isPhotoRegisteredWithTimestampNSValue:
-+ _objc_msgSend$_lowLightVideoNoiseReductionANEAndGPUCost
-+ _objc_msgSend$_makeTimelapseMovieFromTimewarpTimelapseClassicIntermediateMovie:timelapseMovie:timelapseDestinationFrameRate:error:
-+ _objc_msgSend$_personalPhotographerSessionPhotoRequestForUniqueID:
-+ _objc_msgSend$_queryPrimaryDisplayRegion
-+ _objc_msgSend$_setExposureModeCustomWithLensAperture:duration:ISO:entryPoint:completionHandler:
-+ _objc_msgSend$_setExposureWithMode:duration:ISO:lensAperture:requestID:newMaxFrameDuration:
-+ _objc_msgSend$_setLowLightVideoNoiseReductionEnabled:
-+ _objc_msgSend$_setTextureStyleSetByClient:
-+ _objc_msgSend$_shouldInvertBackCameraRotationForDeviceAngle
-+ _objc_msgSend$_shouldInvokeCompletionCopyOutRequest:copyOutError:
-+ _objc_msgSend$_systemReferenceAngleForDeviceOrientation:onDisplayRegion:
-+ _objc_msgSend$_updateCinematicVideoMetadataCaptureSupportedForSourceDevice:
-+ _objc_msgSend$_updateLowLightVideoNoiseReductionEnabledForAllConnections
-+ _objc_msgSend$_updateLowLightVideoNoiseReductionSupported
-+ _objc_msgSend$_updatePersonalPhotographerSupportedForDevice:
-+ _objc_msgSend$_updatePrimaryDisplayRegionIfNeeded
-+ _objc_msgSend$_updateSecureSigningPhotoCaptureSupportedForSourceDevice:
-+ _objc_msgSend$_validateCinematicVideoMetadataConfiguration:
-+ _objc_msgSend$_validateFaceIDConfiguration:
-+ _objc_msgSend$activeOmahaConstituentDeviceType
-+ _objc_msgSend$addInput:
-+ _objc_msgSend$addOutput:
-+ _objc_msgSend$addTrackAssociationWithTrackOfInput:type:
-+ _objc_msgSend$alwaysDiscardsLateSecureVideoFrames
-+ _objc_msgSend$appendPixelBuffer:withPresentationTime:
-+ _objc_msgSend$appendSampleBuffer:
-+ _objc_msgSend$appendTimedMetadataGroup:
-+ _objc_msgSend$assetReaderOutputMetadataAdaptorWithAssetReaderTrackOutput:
-+ _objc_msgSend$automaticallyAdjustsCinematicVideoMetadataCaptureEnabled
-+ _objc_msgSend$automaticallyEnablesExposureSignals
-+ _objc_msgSend$automaticallyEnablesLowLightVideoNoiseReduction
-+ _objc_msgSend$bracketProbePatternType
-+ _objc_msgSend$cameraStreamError
-+ _objc_msgSend$canAddInput:
-+ _objc_msgSend$canAddOutput:
-+ _objc_msgSend$canAddTrackAssociationWithTrackOfInput:type:
-+ _objc_msgSend$canSetDataForTag:
-+ _objc_msgSend$canSetStringForTag:
-+ _objc_msgSend$cancel
-+ _objc_msgSend$cancelReading
-+ _objc_msgSend$captureOutput:didFinishPersonalPhotographerSessionWithResults:error:
-+ _objc_msgSend$captureOutput:willFinishRecordingTimelapseToOutputFileAtURL:previewSurface:previewSurfaceSize:fromConnections:error:
-+ _objc_msgSend$cinematicVideoMetadataCaptureEnabledByClient
-+ _objc_msgSend$cinematicVideoMetadataObjectWithPayload:input:time:
-+ _objc_msgSend$colorBracketEncryptionConfiguration
-+ _objc_msgSend$contextIndex
-+ _objc_msgSend$continuousAutoFocusTrackingLensPositionBias
-+ _objc_msgSend$copyForPersonalPhotographerWithSettingsID:rotationDegrees:mirrored:
-+ _objc_msgSend$copyNextSampleBuffer
-+ _objc_msgSend$dataUsingEncoding:
-+ _objc_msgSend$decodeBoolForKey:
-+ _objc_msgSend$decodeInt32ForKey:
-+ _objc_msgSend$decodeInt64ForKey:
-+ _objc_msgSend$defaultLensAperture
-+ _objc_msgSend$descriptorForDevice:
-+ _objc_msgSend$deviceAngle
-+ _objc_msgSend$dictionaryWithObject:forKey:
-+ _objc_msgSend$dimLayerWithAnimationDuration:undimOnNextFirstPreviewFrame:
-+ _objc_msgSend$doubleOrder
-+ _objc_msgSend$encodeBool:forKey:
-+ _objc_msgSend$encodeInt32:forKey:
-+ _objc_msgSend$encodeInt64:forKey:
-+ _objc_msgSend$endSessionAtSourceTime:
-+ _objc_msgSend$ensureWriterInputIsReadyForMoreMediaData
-+ _objc_msgSend$estimatedDataRate
-+ _objc_msgSend$exposureSignalsBitmaskForSet:
-+ _objc_msgSend$exposureSignalsSetForBitmask:includingInternal:
-+ _objc_msgSend$faceIDBracketConfigurationDictionary
-+ _objc_msgSend$faceIDBracketEncryptionConfigurationDictionary
-+ _objc_msgSend$faceIDCoexistenceSupported
-+ _objc_msgSend$faceIDConfiguration
-+ _objc_msgSend$faceIDConfigurationDictionary
-+ _objc_msgSend$faceIDObjectWithFaceIDResultDictionary:metadataDictionary:input:time:
-+ _objc_msgSend$faceIDUnwrapSupported
-+ _objc_msgSend$figSettings
-+ _objc_msgSend$finishWithRequest:expectedTimestamps:error:
-+ _objc_msgSend$finishWritingWithCompletionHandler:
-+ _objc_msgSend$focusTrackedObjectWithObjectID:mask:bounds:input:time:
-+ _objc_msgSend$formatDescriptions
-+ _objc_msgSend$frameIdentifier
-+ _objc_msgSend$frameType
-+ _objc_msgSend$grain
-+ _objc_msgSend$handleVideoStabilizationStrengthChangedForDevice:
-+ _objc_msgSend$hasDirectoryPath
-+ _objc_msgSend$hostMainKeyIndex
-+ _objc_msgSend$incrementUniqueIDToValue:
-+ _objc_msgSend$infraredBracketEncryptionConfiguration
-+ _objc_msgSend$initWithAsset:error:
-+ _objc_msgSend$initWithAssetReaderTrackOutput:
-+ _objc_msgSend$initWithAssetWriterInput:
-+ _objc_msgSend$initWithAssetWriterInput:sourcePixelBufferAttributes:
-+ _objc_msgSend$initWithAsssetWriterInput:
-+ _objc_msgSend$initWithCaptureOutput:
-+ _objc_msgSend$initWithCompletionHandler:
-+ _objc_msgSend$initWithDuplicateInfoDictionary:
-+ _objc_msgSend$initWithFaceIDResultDictionary:metadataDictionary:time:sourceCaptureInput:
-+ _objc_msgSend$initWithFrameDictionary:sourceCaptureInput:
-+ _objc_msgSend$initWithItems:timeRange:
-+ _objc_msgSend$initWithMediaType:outputSettings:
-+ _objc_msgSend$initWithMediaType:outputSettings:sourceFormatHint:
-+ _objc_msgSend$initWithObjectID:mask:bounds:input:time:
-+ _objc_msgSend$initWithPayload:input:time:
-+ _objc_msgSend$initWithPersonalPhotographerMetadataDictionary:
-+ _objc_msgSend$initWithPhotoSettingsUniqueID:
-+ _objc_msgSend$initWithSampleBuffer:
-+ _objc_msgSend$initWithTimeout:handler:
-+ _objc_msgSend$initWithTimestamp:photoSurface:photoSurfaceSize:processedFileType:previewPhotoSurface:embeddedThumbnailSourceSurface:photoLibraryThumbnails:metadata:depthDataSurface:depthMetadataDictionary:portraitEffectsMatteSurface:portraitEffectsMatteMetadataDictionary:hairSegmentationMatteSurface:hairSegmentationMatteMetadataDictionary:skinSegmentationMatteSurface:skinSegmentationMatteMetadataDictionary:teethSegmentationMatteSurface:teethSegmentationMatteMetadataDictionary:glassesSegmentationMatteSurface:glassesSegmentationMatteMetadataDictionary:constantColorConfidenceMapSurface:constantColorMetadataDictionary:secureSignedRawSurface:secureSignedRawSurfaceSize:captureRequest:bracketSettings:sequenceCount:photoCount:expectedPhotoProcessingFlags:underlyingSourceDeviceType:sourceDeviceType:
-+ _objc_msgSend$initWithTimestamp:proxySurface:proxySurfaceSize:proxyFileType:previewPhotoSurface:secureSignedRawSurface:secureSignedRawSurfaceSize:metadata:captureRequest:sequenceCount:photoCount:applicationIdentifier:captureRequestIdentifier:photoIdentifier:expectedPhotoProcessingFlags:underlyingSourceDeviceType:sourceDeviceType:
-+ _objc_msgSend$initWithTrack:outputSettings:
-+ _objc_msgSend$initWithURL:fileType:error:
-+ _objc_msgSend$initWithURL:options:
-+ _objc_msgSend$initWithUnwrapStatus:pearlSecureSessionError:streamError:
-+ _objc_msgSend$initializationVector
-+ _objc_msgSend$isAttentionRequired
-+ _objc_msgSend$isAutoSecureSigningPhotoCaptureEnabled
-+ _objc_msgSend$isCinematicMetadataCaptureSupported
-+ _objc_msgSend$isCinematicVideoMetadataCaptureEnabled
-+ _objc_msgSend$isCinematicVideoMetadataCaptureSupported
-+ _objc_msgSend$isContinuousAutoFocusTrackingEnabled
-+ _objc_msgSend$isContinuousAutoFocusTrackingSupported
-+ _objc_msgSend$isFaceIDCoexistenceEnabled
-+ _objc_msgSend$isFaceIDCoexistenceSupported
-+ _objc_msgSend$isFrameLogEnabled
-+ _objc_msgSend$isFrameMetadataEnabled
-+ _objc_msgSend$isLowCurrentTorchSupported
-+ _objc_msgSend$isLowLightVideoNoiseReductionEnabled
-+ _objc_msgSend$isLowLightVideoNoiseReductionSupported
-+ _objc_msgSend$isOmahaVariant
-+ _objc_msgSend$isPeriocularEnabled
-+ _objc_msgSend$isPersonalPhotographerEnabled
-+ _objc_msgSend$isPersonalPhotographerSessionActive
-+ _objc_msgSend$isPersonalPhotographerSupported
-+ _objc_msgSend$isPhotoRegisteredForDeletionWithTimestamp:
-+ _objc_msgSend$isPhotoRegisteredWithTimestamp:
-+ _objc_msgSend$isPrimaryConstituentDeviceSwitchingBehaviorLockedWithDeviceSupported
-+ _objc_msgSend$isReadyForMoreMediaData
-+ _objc_msgSend$isSecureSigningPhotoCaptureSupportEnabled
-+ _objc_msgSend$isSecureSigningPhotoCaptureSupported
-+ _objc_msgSend$isTextureStyleSupported
-+ _objc_msgSend$isTimewarpSupported
-+ _objc_msgSend$lightSourceProjectorMode
-+ _objc_msgSend$linearFeedbackShiftRegisterSeed
-+ _objc_msgSend$loadTracksWithMediaType:completionHandler:
-+ _objc_msgSend$lowCurrentTorchSupported
-+ _objc_msgSend$mainDisplay
-+ _objc_msgSend$mask
-+ _objc_msgSend$maxAvailableVideoZoomFactor
-+ _objc_msgSend$maxLensAperture
-+ _objc_msgSend$mediaTypes
-+ _objc_msgSend$mediaTypesForDevice:
-+ _objc_msgSend$metadataFrameProxy
-+ _objc_msgSend$metadataItem
-+ _objc_msgSend$minAvailableVideoZoomFactor
-+ _objc_msgSend$minLensAperture
-+ _objc_msgSend$mode
-+ _objc_msgSend$newTimedMetadataSampleBufferFromPayload:presentationTimeStamp:
-+ _objc_msgSend$nextTimedMetadataGroup
-+ _objc_msgSend$nonce
-+ _objc_msgSend$numberOfDoubles
-+ _objc_msgSend$numberWithUnsignedShort:
-+ _objc_msgSend$overCaptureGradientPercentInset
-+ _objc_msgSend$pearlSecureSessionUnwrapError
-+ _objc_msgSend$personalPhotographerCapture
-+ _objc_msgSend$personalPhotographerCaptureRate
-+ _objc_msgSend$photographicStyle
-+ _objc_msgSend$predicateWithFormat:
-+ _objc_msgSend$preferredTransform
-+ _objc_msgSend$preset
-+ _objc_msgSend$primaryConstituentDeviceSwitchingBehaviorLockedWithDeviceSupported
-+ _objc_msgSend$primaryDisplayRegion
-+ _objc_msgSend$probePatternIndex
-+ _objc_msgSend$probePatternType
-+ _objc_msgSend$rawFrameDeliveryEnabled
-+ _objc_msgSend$rawFrameDeliverySupported
-+ _objc_msgSend$rawFrameProxy
-+ _objc_msgSend$recommendedLensApertures
-+ _objc_msgSend$recordCaptureCompleteForSettingsID:
-+ _objc_msgSend$recordStillCompleteForSettingsID:timestamp:
-+ _objc_msgSend$referenceFrameProxy
-+ _objc_msgSend$registerPhotoCapturedWithTimestamp:
-+ _objc_msgSend$registerPhotoTimestampForDeletion:
-+ _objc_msgSend$releaseFaceIDFrameProxyWithIdentifier:
-+ _objc_msgSend$removeItemAtURL:error:
-+ _objc_msgSend$reset
-+ _objc_msgSend$resolvedSettingsWithUniqueID:photoDimensions:rawPhotoDimensions:previewDimensions:embeddedThumbnailDimensions:rawEmbeddedThumbnailDimensions:livePhotoMovieEnabled:livePhotoMovieDimensions:livePhotoAssetIdentifier:portraitEffectsMatteDimensions:hairSegmentationMatteDimensions:skinSegmentationMatteDimensions:teethSegmentationMatteDimensions:glassesSegmentationMatteDimensions:spatialOverCapturePhotoDimensions:turboModeEnabled:flashEnabled:redEyeReductionEnabled:HDREnabled:adjustedPhotoFiltersEnabled:EV0PhotoDeliveryEnabled:stillImageStabilizationEnabled:virtualDeviceFusionEnabled:squareCropEnabled:deferredPhotoProxyDimensions:photoProcessingTimeRange:contentAwareDistortionCorrectionEnabled:spatialPhotoCaptureEnabled:photoManifest:digitalFlashUserInterfaceHints:digitalFlashUserInterfaceRGBEstimate:captureBeforeResolvingSettingsEnabled:secureSigningPhotoCapturePhotoEnabled:
-+ _objc_msgSend$retryType
-+ _objc_msgSend$sendUserDataEntryToCCD:value:
-+ _objc_msgSend$setActiveOmahaConstituentDeviceType:
-+ _objc_msgSend$setAlwaysCopiesSampleData:
-+ _objc_msgSend$setAttentionRequired:
-+ _objc_msgSend$setAutoSecureSigningPhotoCaptureEnabled:
-+ _objc_msgSend$setCinematicVideoMetadataCaptureEnabled:
-+ _objc_msgSend$setCinematicVideoMetadataCaptureEnabledByClient:
-+ _objc_msgSend$setColorBracketEncryptionConfiguration:
-+ _objc_msgSend$setDoubleOrder:
-+ _objc_msgSend$setExposureModeCustomWithLensAperture:duration:ISO:completionHandler:
-+ _objc_msgSend$setFaceIDCoexistenceEnabled:
-+ _objc_msgSend$setFaceIDConfiguration:
-+ _objc_msgSend$setFrameLogEnabled:
-+ _objc_msgSend$setFrameMetadataEnabled:
-+ _objc_msgSend$setHostMainKeyIndex:
-+ _objc_msgSend$setInfraredBracketEncryptionConfiguration:
-+ _objc_msgSend$setInitializationVector:
-+ _objc_msgSend$setLinearFeedbackShiftRegisterSeed:
-+ _objc_msgSend$setLowLightVideoNoiseReductionEnabled:
-+ _objc_msgSend$setMask:
-+ _objc_msgSend$setMetadataFrameProxy:
-+ _objc_msgSend$setMode:
-+ _objc_msgSend$setNonce:
-+ _objc_msgSend$setNumberOfDoubles:
-+ _objc_msgSend$setOverCaptureGradientPercentInset:
-+ _objc_msgSend$setPeriocularEnabled:
-+ _objc_msgSend$setPersonalPhotographerCapture:
-+ _objc_msgSend$setPersonalPhotographerCaptureRate:
-+ _objc_msgSend$setPersonalPhotographerEnabled:
-+ _objc_msgSend$setPrimaryDisplayRegion:
-+ _objc_msgSend$setProbePatternIndex:
-+ _objc_msgSend$setProbePatternType:
-+ _objc_msgSend$setRawFrameDeliveryEnabled:
-+ _objc_msgSend$setRawFrameProxy:
-+ _objc_msgSend$setRetryType:
-+ _objc_msgSend$setSecureSigningPhotoCaptureEnabled:
-+ _objc_msgSend$setSecureSigningPhotoCaptureSupportEnabled:
-+ _objc_msgSend$setTextureStyle:
-+ _objc_msgSend$setTextureStyleEnabled:
-+ _objc_msgSend$setTimewarpDestinationFrameRate:
-+ _objc_msgSend$setTimewarpEnabled:
-+ _objc_msgSend$setTimewarpMode:
-+ _objc_msgSend$setWithObjects:count:
-+ _objc_msgSend$sizeForTag:
-+ _objc_msgSend$startReading
-+ _objc_msgSend$startSessionAtSourceTime:
-+ _objc_msgSend$startWriting
-+ _objc_msgSend$styleWithPreset:intensity:grain:
-+ _objc_msgSend$styleWithSmartStyle:textureStyle:
-+ _objc_msgSend$subdataWithRange:
-+ _objc_msgSend$supportsExposureModeCustomWithLensAperture:duration:ISO:
-+ _objc_msgSend$textureStyle
-+ _objc_msgSend$textureStyleEnabled
-+ _objc_msgSend$timewarpDestinationFrameRate
-+ _objc_msgSend$timewarpMode
-+ _objc_msgSend$unsignedLongLongValue
-+ _objc_msgSend$unwrapStatus
-+ _objc_msgSend$userDefinedAncillaryDataSizeRemaining
 + _objc_retain_x1
 + _publicExposureSignalsSet.onceToken
 + _publicExposureSignalsSet.signals
@@ -1552,17 +1242,6 @@ Symbols:
 - ___block_descriptor_81_e8_32o40r48r56r64r72r_e5_v8?0lr40l8r48l8s32l8r56l8r64l8r72l8
 - ___block_descriptor_92_e8_32o40o48r56r_e5_v8?0lr48l8s32l8s40l8r56l8
 - ___block_descriptor_92_e8_32o40o48r_e5_v8?0lr48l8s32l8s40l8
-- _objc_msgSend$_checkCustomExposureModeWithDuration:ISO:entryPoint:
-- _objc_msgSend$_initWithSmartStyle:
-- _objc_msgSend$_initWithUniqueID:photoDimensions:rawPhotoDimensions:previewDimensions:embeddedThumbnailDimensions:rawEmbeddedThumbnailDimensions:livePhotoMovieEnabled:livePhotoMovieDimensions:livePhotoAssetIdentifier:portraitEffectsMatteDimensions:hairSegmentationMatteDimensions:skinSegmentationMatteDimensions:teethSegmentationMatteDimensions:glassesSegmentationMatteDimensions:spatialOverCapturePhotoDimensions:turboModeEnabled:flashEnabled:redEyeReductionEnabled:HDREnabled:adjustedPhotoFiltersEnabled:EV0PhotoDeliveryEnabled:stillImageStabilizationEnabled:virtualDeviceFusionEnabled:squareCropEnabled:deferredPhotoProxyDimensions:photoProcessingTimeRange:contentAwareDistortionCorrectionEnabled:spatialPhotoCaptureEnabled:photoManifest:digitalFlashUserInterfaceHints:digitalFlashUserInterfaceRGBEstimate:captureBeforeResolvingSettingsEnabled:
-- _objc_msgSend$_isCustomExposure
-- _objc_msgSend$_setExposureWithMode:duration:ISO:requestID:newMaxFrameDuration:
-- _objc_msgSend$_systemReferenceAngleForDeviceOrientation:
-- _objc_msgSend$initWithTimestamp:photoSurface:photoSurfaceSize:processedFileType:previewPhotoSurface:embeddedThumbnailSourceSurface:photoLibraryThumbnails:metadata:depthDataSurface:depthMetadataDictionary:portraitEffectsMatteSurface:portraitEffectsMatteMetadataDictionary:hairSegmentationMatteSurface:hairSegmentationMatteMetadataDictionary:skinSegmentationMatteSurface:skinSegmentationMatteMetadataDictionary:teethSegmentationMatteSurface:teethSegmentationMatteMetadataDictionary:glassesSegmentationMatteSurface:glassesSegmentationMatteMetadataDictionary:constantColorConfidenceMapSurface:constantColorMetadataDictionary:captureRequest:bracketSettings:sequenceCount:photoCount:expectedPhotoProcessingFlags:underlyingSourceDeviceType:sourceDeviceType:
-- _objc_msgSend$initWithTimestamp:proxySurface:proxySurfaceSize:proxyFileType:previewPhotoSurface:metadata:captureRequest:sequenceCount:photoCount:applicationIdentifier:captureRequestIdentifier:photoIdentifier:expectedPhotoProcessingFlags:underlyingSourceDeviceType:sourceDeviceType:
-- _objc_msgSend$resolvedSettingsWithUniqueID:photoDimensions:rawPhotoDimensions:previewDimensions:embeddedThumbnailDimensions:rawEmbeddedThumbnailDimensions:livePhotoMovieEnabled:livePhotoMovieDimensions:livePhotoAssetIdentifier:portraitEffectsMatteDimensions:hairSegmentationMatteDimensions:skinSegmentationMatteDimensions:teethSegmentationMatteDimensions:glassesSegmentationMatteDimensions:spatialOverCapturePhotoDimensions:turboModeEnabled:flashEnabled:redEyeReductionEnabled:HDREnabled:adjustedPhotoFiltersEnabled:EV0PhotoDeliveryEnabled:stillImageStabilizationEnabled:virtualDeviceFusionEnabled:squareCropEnabled:deferredPhotoProxyDimensions:photoProcessingTimeRange:contentAwareDistortionCorrectionEnabled:spatialPhotoCaptureEnabled:photoManifest:digitalFlashUserInterfaceHints:digitalFlashUserInterfaceRGBEstimate:captureBeforeResolvingSettingsEnabled:
-- _objc_msgSend$setExposureModeCustomWithDuration:ISO:completionHandler:
-- _objc_msgSend$styleWithSmartStyle:
 - _swift_release_x9
 CStrings:
 + " duplicateInfo:"

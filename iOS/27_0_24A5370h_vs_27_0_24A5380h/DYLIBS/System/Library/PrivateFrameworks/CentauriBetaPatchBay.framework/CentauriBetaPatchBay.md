@@ -2,18 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/CentauriBetaPatchBay.framework/CentauriBetaPatchBay`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe58` | `0xe60` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xe58
-+  __TEXT.__text: 0xe60
-   __TEXT.__const: 0x20
-   __TEXT.__cstring: 0x10a
-   __TEXT.__oslogstring: 0x24a
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
+-26.69.1.0.0
++26.70.4.0.0
 Functions:
 ~ _getHostModelType : 124 -> 132
-
 ```

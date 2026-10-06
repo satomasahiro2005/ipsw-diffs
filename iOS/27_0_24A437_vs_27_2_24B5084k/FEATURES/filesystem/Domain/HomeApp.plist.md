@@ -4,9 +4,6 @@
 
 ```diff
 
- 		<key>DevelopmentPhase</key>
- 		<string>FeatureComplete</string>
- 	</dict>
 +	<key>improved_event_clustering</key>
 +	<dict>
 +		<key>DevelopmentPhase</key>
@@ -17,8 +14,5 @@
 +		<key>DevelopmentPhase</key>
 +		<string>FeatureComplete</string>
 +	</dict>
- 	<key>lock_dps</key>
- 	<dict>
- 		<key>DevelopmentPhase</key>
 
 ```

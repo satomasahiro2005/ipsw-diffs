@@ -2,98 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/HealthReportUI.framework/HealthReportUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x330f80` | `0x352a90` | **`+0x21b10`** |
+| `__TEXT.__const` | `0xed24` | `0xf604` | **`+0x8e0`** |
+| `__TEXT.__eh_frame` | `0x8914` | `0x90e4` | **`+0x7d0`** |
+| `__TEXT.__cstring` | `0x12692` | `0x12e22` | **`+0x790`** |
+| `__DATA.__data` | `0xab88` | `0xb298` | **`+0x710`** |
+| `__DATA.__bss` | `0xc900` | `0xcff0` | **`+0x6f0`** |
+| `__TEXT.__swift5_typeref` | `0x70d6` | `0x761a` | **`+0x544`** |
+| `__TEXT.__unwind_info` | `0x8440` | `0x8808` | **`+0x3c8`** |
+| `__TEXT.__constg_swiftt` | `0x4f08` | `0x5238` | **`+0x330`** |
+| `__TEXT.__oslogstring` | `0x121e` | `0x151e` | **`+0x300`** |
+| `__AUTH.__data` | `0x6108` | `0x63c0` | **`+0x2b8`** |
+| `__TEXT.__swift5_fieldmd` | `0x4dac` | `0x504c` | **`+0x2a0`** |
+| `__AUTH_CONST.__auth_got` | `0x5638` | `0x58c0` | **`+0x288`** |
+| `__TEXT.__swift5_reflstr` | `0x5081` | `0x5231` | **`+0x1b0`** |
+| `__DATA_CONST.__got` | `0x3108` | `0x3248` | **`+0x140`** |
+| `__AUTH_CONST.__objc_const` | `0x3c88` | `0x3da8` | **`+0x120`** |
+| `__AUTH_CONST.__const` | `0xa598` | `0xa6a0` | **`+0x108`** |
+| `__TEXT.__swift5_assocty` | `0x1288` | `0x1360` | **`+0xd8`** |
+| `__TEXT.__swift_as_cont` | `0x518` | `0x570` | **`+0x58`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa30` | `0xa78` | **`+0x48`** |
+| `__TEXT.__swift5_proto` | `0x5fc` | `0x634` | **`+0x38`** |
+| `__TEXT.__swift_as_entry` | `0x278` | `0x2a8` | **`+0x30`** |
+| `__TEXT.__swift5_types` | `0x540` | `0x56c` | **`+0x2c`** |
+| `__TEXT.__swift_as_ret` | `0x2b4` | `0x2e0` | **`+0x2c`** |
+| `__TEXT.__swift5_builtin` | `0x17c` | `0x190` | **`+0x14`** |
+| `__AUTH.__objc_data` | `0x1440` | `0x1450` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x1f0` | `0x200` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x62c` | `0x63c` | **`+0x10`** |
+| `__DATA.__common` | `0x350` | `0x358` | **`+0x8`** |
+| `__DATA_DIRTY.__data` | `0x200` | `0x208` | **`+0x8`** |
+| `__TEXT.__swift5_capture` | `0x22c4` | `0x22c0` | **`-0x4`** |
+| `__TEXT.__swift5_protos` | `0x10` | `0x14` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.36.2.7
--  __TEXT.__text: 0x316888
--  __TEXT.__objc_methlist: 0x62c
--  __TEXT.__const: 0xed24
--  __TEXT.__cstring: 0x12692
--  __TEXT.__constg_swiftt: 0x4f08
--  __TEXT.__swift5_typeref: 0x70d6
--  __TEXT.__swift5_reflstr: 0x5081
--  __TEXT.__swift5_fieldmd: 0x4dac
--  __TEXT.__swift5_builtin: 0x17c
--  __TEXT.__swift5_assocty: 0x1288
--  __TEXT.__swift5_proto: 0x5fc
--  __TEXT.__swift5_types: 0x540
--  __TEXT.__swift5_capture: 0x22c4
--  __TEXT.__swift_as_entry: 0x278
--  __TEXT.__swift_as_ret: 0x2b4
--  __TEXT.__swift_as_cont: 0x518
--  __TEXT.__oslogstring: 0x121e
 +7027.1.45.2.4
-+  __TEXT.__text: 0x336bdc
-+  __TEXT.__objc_methlist: 0x63c
-+  __TEXT.__const: 0xf604
-+  __TEXT.__cstring: 0x12e22
-+  __TEXT.__constg_swiftt: 0x5238
-+  __TEXT.__swift5_typeref: 0x761a
-+  __TEXT.__swift5_reflstr: 0x5231
-+  __TEXT.__swift5_fieldmd: 0x504c
-+  __TEXT.__swift5_builtin: 0x190
-+  __TEXT.__swift5_assocty: 0x1360
-+  __TEXT.__swift5_proto: 0x634
-+  __TEXT.__swift5_types: 0x56c
-+  __TEXT.__swift5_capture: 0x22c0
-+  __TEXT.__swift_as_entry: 0x2a8
-+  __TEXT.__swift_as_ret: 0x2e0
-+  __TEXT.__swift_as_cont: 0x570
-+  __TEXT.__oslogstring: 0x151e
-   __TEXT.__swift5_mpenum: 0x48
--  __TEXT.__swift5_protos: 0x10
--  __TEXT.__unwind_info: 0xae18
--  __TEXT.__eh_frame: 0x8924
-+  __TEXT.__swift5_protos: 0x14
-+  __TEXT.__unwind_info: 0xb360
-+  __TEXT.__eh_frame: 0x90f4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1f0
-+  __DATA_CONST.__const: 0x200
-   __DATA_CONST.__objc_classlist: 0x1a0
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa30
-+  __DATA_CONST.__objc_selrefs: 0xa78
-   __DATA_CONST.__objc_protorefs: 0x38
--  __DATA_CONST.__got: 0x3108
--  __AUTH_CONST.__const: 0xa598
--  __AUTH_CONST.__objc_const: 0x3c88
--  __AUTH_CONST.__auth_got: 0x5638
--  __AUTH.__objc_data: 0x1440
--  __AUTH.__data: 0x6108
--  __DATA.__data: 0xab88
-+  __DATA_CONST.__got: 0x3248
-+  __AUTH_CONST.__const: 0xa6a0
-+  __AUTH_CONST.__objc_const: 0x3da8
-+  __AUTH_CONST.__auth_got: 0x58c0
-+  __AUTH.__objc_data: 0x1450
-+  __AUTH.__data: 0x63c0
-+  __DATA.__data: 0xb298
-   __DATA.__objc_stublist: 0x8
--  __DATA.__common: 0x350
-+  __DATA.__common: 0x358
-   __DATA_DIRTY.__objc_data: 0x50
--  __DATA_DIRTY.__data: 0x200
-+  __DATA_DIRTY.__data: 0x208
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AVKit.framework/AVKit
-   - /System/Library/Frameworks/Charts.framework/Charts
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12082
--  Symbols:   2444
+-  Symbols:   2186
 -  CStrings:  1142
 +  Functions: 12436
-+  Symbols:   2507
++  Symbols:   2241
 +  CStrings:  1179
- 
 Symbols:
 + _OBJC_CLASS_$_UIActivityIndicatorView
 + _OBJC_CLASS_$_UITraitCollection
@@ -173,17 +131,6 @@ Symbols:
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE5sheet4item9onDismiss7contentQrAA7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lFQOyAcAEAJ11isPresentedAlMQrAOySbG_ARqd__yctAaBRd__lFQOyAcAE15fullScreenCoverAklMQrAQ_ARqd_0_qd__ctsASRd__AaBRd_0_r0_lFQOyAcAE29navigationBarTitleDisplayModeyQrAA010NavigationV4ItemV0wxY0OFQOyAcAE0uW0yQrAA4TextVFQOy016HealthFoundationB023HealthAdaptiveSplitGridVyA3_25HealthAdaptiveSplitColumnVyAA12TupleContentVyAcAE18listSectionMarginsyQrAA4EdgeO3SetV_12CoreGraphics7CGFloatVSgtFQOyAA15ModifiedContentVyAcAE16listRowSeparator_5edgesQrAA10VisibilityO_AA12VerticalEdgeOA13_VtFQOyAA7SectionVyAA05EmptyC0VAcAE13listRowInsetsyQrA14__A18_tFQOyAA6VStackVyA9_yA20_yACA3_E20tripleTextBlockStyleyQrA3_20TripleTextBlockStyleOFQOyA3_15TripleTextBlockVyA20_yA2_AA31AccessibilityAttachmentModifierVGA2_A31_A31_G_Qo_AA16_FixedSizeLayoutVG_A34_y012HealthReportB021HealthAgeChartSectionVGQPGG_Qo_A31_G_Qo_AA21_TraitWritingModifierVyAA25ListRowBackgroundTraitKeyVGG_Qo__A20_yA29_yA31_AcAEA32_yQrA14__A18_tFQOyA20_yA34_yA9_yA20_yA48_06WasabiZ4LinkVy12HealthReport28HealthAgePredictorIdentifierOA48_E13DataRoomRouteVAcAE4boldyQrSbFQOyAA6HStackVyA9_yA2__A20_yA20_yA20_yAA5ImageVAA30_EnvironmentKeyWritingModifierVyA75_5ScaleOGGAA24_ForegroundStyleModifierVyAA22HierarchicalShapeStyleVGGA41_GQPGG_Qo_GA77_yA24_GG_A2_A2_SgQPGGA77_yAA4FontVSgGG_Qo_A31_GA61_GA29_yA31_A20_yA48_19HealthAgeActionTileVA46_GA31_GSgA20_yAcAEA21__A22_QrA24__A27_tFQOyA29_yA31_AC016HealthReportCoreB0E23analyticsImpressionable_10subSectionQr06HealthB021AnalyticsActionFieldsVSg_A111_20LongevityInteractionO10SubSectionVSgtFQOyAcAEA32_yQrA14__A18_tFQOyA48_019HealthAgeMetricTipsC0V_Qo__Qo_A31_G_Qo_A61_GSgQPGGA48_14TrailingColumn33_6305874A7149F694281842942133C4DCLLVyA9_yAcAEA10_yQrA14__A18_tFQOyA48_13TitledSectionA134_LLVyACA111_E5style3forQrA66_30EvaluationExperienceIdentifierO_tFQOyAA6ButtonVyA20_yAA03AnyC0VA46_GG_Qo_G_Qo_Sg_AcAEA10_yQrA14__A18_tFQOyA137_yA34_yA9_yA20_yAA7DividerVAA14_PaddingLayoutVG_ACA111_EA112__A113_QrA117__A122_tFQOyA48_30HealthAgeEssentialsArticleCardV_Qo_A156_QPGGG_Qo_SgAcAEA10_yQrA14__A18_tFQOyA20_yA29_yA31_ACA111_EA112__A113_QrA117__A122_tFQOyAcAEA32_yQrA14__A18_tFQOyA20_yA47_A155_G_Qo__Qo_A31_GA61_G_Qo_QPGGG_Qo__Qo__A48_25HealthAgeMetricEvaluationOAA19_ConditionalContentVyA20_yA48_029HealthAgeEvaluationExperienceC0VAA30_SafeAreaRegionsIgnoringLayoutVGAA8StaticIfVyA3_26IsInternalInstallPredicateVAA0zC0VyAcAE7toolbarAMQrqd__yXE_tAaBRd__lFQOyA20_yA20_yA2_A77_yAA13TextAlignmentOGGA155_G_A143_yAA18DefaultButtonLabelVGQo_GSgA20_yAA9RectangleVAA25_AppearanceActionModifierVGGGQo__AA0Z5StackVyAA0Z4PathVA48_024HealthAgeLabEntryLoadingC0VGSgQo__13HealthContent17ArticleDescriptorVA20_yAcAE18presentationSizingyQrqd__AA18PresentationSizingRd__lFQOy013HealthContentB007ArticleC0V_AA22PagePresentationSizingVQo_A77_yA225_30StaticComponentBuilderRegistry_pSgGGQo__Qo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAcAE29navigationBarTitleDisplayModeyQrAA010NavigationN4ItemV0opQ0OFQOyAcAE0mO0yQrAA4TextVFQOyAA5GroupVyAA012_ConditionalL0VyAA0l11UnavailableC0VyAA5LabelVyAtA5ImageVGAA05EmptyC0VA5_GAA4ListVys5NeverOAA7ForEachVySay13HealthDomains16DomainIdentifierVGA15_AcAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOy06HealthB018WasabiActionButtonVyAA6HStackVyAA05TupleL0VyAA6VStackVyA25_yAT_A25_yAA08ModifiedL0VyA29_yA23_yA25_yAT_ATQPGGAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA24_ForegroundStyleModifierVyAA22HierarchicalShapeStyleVGG_ATQPGSgQPGG_AA6SpacerV012HealthReportB017DisclosureChevronVQPGGG_AA16PlainButtonStyleVQo_GGGG_Qo__Qo__AA0kS0VyytA29_yAA6ButtonVyATGAA32_EnvironmentKeyTransformModifierVySbGGGQo__Qo_HO
 + _keypath_set.231Tm
-+ _objc_msgSend$ascender
-+ _objc_msgSend$centerXAnchor
-+ _objc_msgSend$centerYAnchor
-+ _objc_msgSend$initWithActivityIndicatorStyle:
-+ _objc_msgSend$initWithOnboardingType:isFirstTimeOnboarding:healthStore:dateCache:provenance:delegate:isSampleInteractive:isRecordingSkippable:navigationController:
-+ _objc_msgSend$isViewSizeEligibleForTwoColumnLayout:safeAreaInsets:traitCollection:
-+ _objc_msgSend$preferredFontForTextStyle:compatibleWithTraitCollection:
-+ _objc_msgSend$setHidesBackButton:
-+ _objc_msgSend$startAnimating
-+ _objc_msgSend$topViewController
-+ _objc_msgSend$traitCollectionWithPreferredContentSizeCategory:
 + _symbolic $s14HealthReportUI36ElectrocardiogramOnboardingLaunchingP
 + _symbolic $ss10SetAlgebraP
 + _symbolic $ss25ExpressibleByArrayLiteralP
@@ -323,9 +270,6 @@ Symbols:
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE5sheet4item9onDismiss7contentQrAA7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lFQOyAcAEAJ11isPresentedAlMQrAOySbG_ARqd__yctAaBRd__lFQOyAcAE15fullScreenCoverAklMQrAQ_ARqd_0_qd__ctsASRd__AaBRd_0_r0_lFQOyAcAE29navigationBarTitleDisplayModeyQrAA010NavigationV4ItemV0wxY0OFQOyAcAE0uW0yQrAA4TextVFQOy016HealthFoundationB023HealthAdaptiveSplitGridVyA3_25HealthAdaptiveSplitColumnVyAA12TupleContentVyAcAE18listSectionMarginsyQrAA4EdgeO3SetV_12CoreGraphics7CGFloatVSgtFQOyAA15ModifiedContentVyAcAE16listRowSeparator_5edgesQrAA10VisibilityO_AA12VerticalEdgeOA13_VtFQOyAA7SectionVyAA05EmptyC0VAcAE13listRowInsetsyQrA14__A18_tFQOyAA6VStackVyA9_yA20_yACA3_E20tripleTextBlockStyleyQrA3_20TripleTextBlockStyleOFQOyA3_15TripleTextBlockVyA2_A2_A31_A31_G_Qo_AA16_FixedSizeLayoutVG_A34_y012HealthReportB021HealthAgeChartSectionVGQPGG_Qo_A31_G_Qo_AA21_TraitWritingModifierVyAA25ListRowBackgroundTraitKeyVGG_Qo__A20_yA29_yA31_AcAEA32_yQrA14__A18_tFQOyA20_yA34_yA9_yA20_yA45_06WasabiZ4LinkVy12HealthReport28HealthAgePredictorIdentifierOA45_E13DataRoomRouteVAcAE4boldyQrSbFQOyAA6HStackVyA9_yA2__A20_yA20_yA20_yAA5ImageVAA30_EnvironmentKeyWritingModifierVyA72_5ScaleOGGAA24_ForegroundStyleModifierVyAA22HierarchicalShapeStyleVGGAA31AccessibilityAttachmentModifierVGQPGG_Qo_GA74_yA24_GG_A2_A2_SgQPGGA74_yAA4FontVSgGG_Qo_A31_GA58_GA29_yA31_A20_yA45_19HealthAgeActionTileVA43_GA31_GSgA20_yAcAEA21__A22_QrA24__A27_tFQOyA29_yA31_AcAEA32_yQrA14__A18_tFQOyA45_019HealthAgeMetricTipsC0V_Qo_A31_G_Qo_A58_GSgQPGGA7_yA9_yAcAEA10_yQrA14__A18_tFQOyA45_13TitledSection33_6305874A7149F694281842942133C4DCLLVyAC016HealthReportCoreB0E5style3forQrA63_30EvaluationExperienceIdentifierO_tFQOyAA6ButtonVyA20_yAA03AnyC0VA43_GG_Qo_G_Qo_Sg_A121_yA34_yA9_yA20_yAA7DividerVAA14_PaddingLayoutVG_A45_30HealthAgeEssentialsArticleCardVA141_QPGGGSgA20_yA29_yA31_AcAEA32_yQrA14__A18_tFQOyA20_yA44_A140_G_Qo_A31_GA58_GQPGGG_Qo__Qo__A45_25HealthAgeMetricEvaluationOAA19_ConditionalContentVyA20_yA45_029HealthAgeEvaluationExperienceC0VAA30_SafeAreaRegionsIgnoringLayoutVGAA8StaticIfVyA3_26IsInternalInstallPredicateVAA0zC0VyAcAE7toolbarAMQrqd__yXE_tAaBRd__lFQOyA20_yA20_yA2_A74_yAA13TextAlignmentOGGA140_G_A128_yAA18DefaultButtonLabelVGQo_GSgA20_yAA9RectangleVAA25_AppearanceActionModifierVGGGQo__AA0Z5StackVyAA0Z4PathVA45_024HealthAgeLabEntryLoadingC0VGSgQo__13HealthContent17ArticleDescriptorVAcAE18presentationSizingyQrqd__AA18PresentationSizingRd__lFQOy013HealthContentB007ArticleC0V_AA22PagePresentationSizingVQo_Qo__Qo_HO
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAA08ModifiedL0VyAcAE15navigationTitleyQrAA4TextVFQOyAA5GroupVyAA012_ConditionalL0VyAA0l11UnavailableC0VyAA5LabelVyAqA5ImageVGAA05EmptyC0VA2_GAA4ListVys5NeverOAA7ForEachVySay13HealthDomains16DomainIdentifierVGA12_AA14NavigationLinkVyAA6VStackVyAA05TupleL0VyAQ_A19_yANyANyAA6HStackVyA19_yAQ_AQQPGGAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA24_ForegroundStyleModifierVyAA22HierarchicalShapeStyleVGG_AQQPGSgQPGGA7_GGGGG_Qo_012HealthReportB035WasabiNavigationDestinationModifier33_AB743D5D27A457D084C60FA208ED79A4LLVyA12_A47_017DomainImpressionsC033_9D7CB91E02338075902549A1981F6209LLVGG_A19_yAA0K4ItemVyytAA6ButtonVyAA013DefaultButtonT0VGG_A57_yytANyA59_yAQGAA32_EnvironmentKeyTransformModifierVySbGGGQPGQo__Qo_HO
 - _keypath_set.171Tm
-- _objc_msgSend$doubleForKey:
-- _objc_msgSend$initWithOnboardingType:isFirstTimeOnboarding:healthStore:dateCache:provenance:delegate:isSampleInteractive:isRecordingSkippable:
-- _objc_msgSend$objectForKey:
 - _symbolic SS_____c 13HealthDomains17MeasureIdentifierV
 - _symbolic Say___________tG 13HealthDomains17MeasureIdentifierV 0A6Report15ImpressionStoreV0F0V
 - _symbolic _____ 14HealthReportUI21DomainImpressionsView33_9D7CB91E02338075902549A1981F6209LLV

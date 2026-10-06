@@ -2,68 +2,33 @@
 
 > `/System/Library/Frameworks/_USDKit_RealityKit.framework/_USDKit_RealityKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x11b34c` | `0x11b7a0` | **`+0x454`** |
+| `__TEXT.__cstring` | `0xc03b` | `0xc14e` | **`+0x113`** |
+| `__TEXT.__gcc_except_tab` | `0x94e0` | `0x956c` | **`+0x8c`** |
+| `__TEXT.__eh_frame` | `0x6568` | `0x65e0` | **`+0x78`** |
+| `__TEXT.__unwind_info` | `0x3e10` | `0x3e38` | **`+0x28`** |
+| `__TEXT.__swift5_reflstr` | `0x220f` | `0x222f` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x538` | `0x548` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x2b08` | `0x2b10` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0x1c93` | `0x1c8b` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -106.0.10.0.1
--  __TEXT.__text: 0x11473c
 +106.40.3.0.0
-+  __TEXT.__text: 0x114b80
-   __TEXT.__objc_methlist: 0x5d4
-   __TEXT.__const: 0x6ac8
--  __TEXT.__gcc_except_tab: 0x94e0
-+  __TEXT.__gcc_except_tab: 0x956c
-   __TEXT.__constg_swiftt: 0x1cd0
--  __TEXT.__swift5_typeref: 0x1c93
-+  __TEXT.__swift5_typeref: 0x1c8b
-   __TEXT.__swift5_builtin: 0x104
--  __TEXT.__swift5_reflstr: 0x220f
-+  __TEXT.__swift5_reflstr: 0x222f
-   __TEXT.__swift5_fieldmd: 0x20bc
-   __TEXT.__swift5_capture: 0x398
--  __TEXT.__cstring: 0xc03b
-+  __TEXT.__cstring: 0xc14e
-   __TEXT.__swift5_proto: 0x1d8
-   __TEXT.__swift5_types: 0x1f0
-   __TEXT.__swift5_types2: 0xc
 
-   __TEXT.__swift5_assocty: 0x1a0
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x46c8
--  __TEXT.__eh_frame: 0x66c8
-+  __TEXT.__unwind_info: 0x46f8
-+  __TEXT.__eh_frame: 0x6748
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x538
-+  __DATA_CONST.__objc_selrefs: 0x548
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x5a68
-   __AUTH_CONST.__cfstring: 0x60
-   __AUTH_CONST.__objc_const: 0x2560
-   __AUTH_CONST.__weak_auth_got: 0x50
--  __AUTH_CONST.__auth_got: 0x2b08
-+  __AUTH_CONST.__auth_got: 0x2b10
-   __AUTH.__objc_data: 0x230
-   __AUTH.__tf_func: 0xc0
-   __AUTH.__data: 0x2590
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   - /usr/lib/usd/libusd_ms.dylib
 -  Functions: 3964
--  Symbols:   10398
+-  Symbols:   10323
 -  CStrings:  1051
 +  Functions: 3968
-+  Symbols:   10408
++  Symbols:   10331
 +  CStrings:  1055
- 
 Symbols:
 + GCC_except_table114
 + GCC_except_table151
@@ -77,8 +42,6 @@ Symbols:
 + __ZNK32pxrInternal__aapl__pxrReserved__7VtArrayIiE4sizeEv
 + __ZNK32pxrInternal__aapl__pxrReserved__7VtArrayIiE5cdataEv
 + __ZNK32pxrInternal__aapl__pxrReserved__8UsdStage13GetPrototypesEv
-+ _objc_msgSend$respondsToSelector:
-+ _objc_msgSend$setDisableLegacyAPICompatibility:
 + _symbolic _____ 11ShaderGraphAAC
 - GCC_except_table163
 - _$s12HdRealityKit0A13RKitMeshSwiftC11setTopology11vertexCount07polygonJ00iJ13PerPolygonPtr0i7IndiceslmN0ys6UInt32V_AJSPyAJGAKtF

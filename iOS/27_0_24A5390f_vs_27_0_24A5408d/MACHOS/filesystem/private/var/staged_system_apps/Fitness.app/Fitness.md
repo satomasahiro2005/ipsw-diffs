@@ -2,146 +2,82 @@
 
 > `/private/var/staged_system_apps/Fitness.app/Fitness`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_entry`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7467f4` | `0x759a14` | **`+0x13220`** |
+| `__TEXT.__swift5_typeref` | `0x7cfb8` | `0x7f304` | **`+0x234c`** |
+| `__DATA_CONST.__const` | `0x31b08` | `0x32990` | **`+0xe88`** |
+| `__DATA.__objc_const` | `0x43458` | `0x44198` | **`+0xd40`** |
+| `__TEXT.__const` | `0x3e454` | `0x3f044` | **`+0xbf0`** |
+| `__DATA.__bss` | `0x30d98` | `0x31968` | **`+0xbd0`** |
+| `__TEXT.__eh_frame` | `0x15310` | `0x15cf8` | **`+0x9e8`** |
+| `__TEXT.__objc_methname` | `0x33bb6` | `0x340c6` | **`+0x510`** |
+| `__DATA.__objc_data` | `0x1c328` | `0x1c818` | **`+0x4f0`** |
+| `__TEXT.__oslogstring` | `0xbe2c` | `0xc2bc` | **`+0x490`** |
+| `__TEXT.__unwind_info` | `0x14d08` | `0x15190` | **`+0x488`** |
+| `__TEXT.__constg_swiftt` | `0x16dc4` | `0x17240` | **`+0x47c`** |
+| `__TEXT.__swift5_capture` | `0xa65c` | `0xaab8` | **`+0x45c`** |
+| `__DATA.__data` | `0x27168` | `0x275a8` | **`+0x440`** |
+| `__TEXT.__cstring` | `0x1919b` | `0x1956b` | **`+0x3d0`** |
+| `__TEXT.__swift5_reflstr` | `0x157a3` | `0x15b63` | **`+0x3c0`** |
+| `__TEXT.__swift5_fieldmd` | `0x10cf8` | `0x11078` | **`+0x380`** |
+| `__TEXT.__auth_stubs` | `0xe1e0` | `0xe4d0` | **`+0x2f0`** |
+| `__TEXT.__objc_stubs` | `0x1e280` | `0x1e4a0` | **`+0x220`** |
+| `__DATA_CONST.__auth_got` | `0x7100` | `0x7278` | **`+0x178`** |
+| `__TEXT.__objc_methlist` | `0xf9b8` | `0xfad8` | **`+0x120`** |
+| `__TEXT.__swift5_assocty` | `0x37d8` | `0x38b0` | **`+0xd8`** |
+| `__DATA_CONST.__auth_ptr` | `0x5268` | `0x5318` | **`+0xb0`** |
+| `__TEXT.__gcc_except_tab` | `0x2588` | `0x24dc` | **`-0xac`** |
+| `__DATA.__objc_selrefs` | `0x9a38` | `0x9ad8` | **`+0xa0`** |
+| `__TEXT.__objc_methtype` | `0x9285` | `0x9325` | **`+0xa0`** |
+| `__DATA_CONST.__got` | `0x3f60` | `0x3ff0` | **`+0x90`** |
+| `__TEXT.__swift_as_cont` | `0xfd0` | `0x1044` | **`+0x74`** |
+| `__TEXT.__objc_classname` | `0x675a` | `0x67ca` | **`+0x70`** |
+| `__TEXT.__swift5_proto` | `0x190c` | `0x1970` | **`+0x64`** |
+| `__TEXT.__swift_as_entry` | `0x87c` | `0x8b4` | **`+0x38`** |
+| `__TEXT.__swift5_types` | `0xf48` | `0xf7c` | **`+0x34`** |
+| `__TEXT.__swift5_builtin` | `0x528` | `0x550` | **`+0x28`** |
+| `__TEXT.__swift_as_ret` | `0x800` | `0x824` | **`+0x24`** |
+| `__DATA_CONST.__cfstring` | `0x4360` | `0x4380` | **`+0x20`** |
+| `__DATA.__common` | `0x1528` | `0x1540` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0xf68` | `0xf80` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0xbf4` | `0xbfc` | **`+0x8`** |
+| `__DATA_CONST.__objc_catlist` | `0x80` | `0x88` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0xb4` | `0xb8` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_stublist`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_catlist2`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA.__objc_stublist`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_mpenum`
+
+### Other Changes
 
 ```diff
 
 -2027.0.114.0.0
--  __TEXT.__text: 0x7467f4
--  __TEXT.__auth_stubs: 0xe1e0
--  __TEXT.__objc_stubs: 0x1e280
--  __TEXT.__objc_methlist: 0xf9b8
--  __TEXT.__const: 0x3e454
--  __TEXT.__objc_methname: 0x33bb6
--  __TEXT.__oslogstring: 0xbe2c
--  __TEXT.__objc_classname: 0x675a
--  __TEXT.__objc_methtype: 0x9285
--  __TEXT.__cstring: 0x1919b
--  __TEXT.__gcc_except_tab: 0x2588
 +2027.0.123.1.4
-+  __TEXT.__text: 0x759a14
-+  __TEXT.__auth_stubs: 0xe4d0
-+  __TEXT.__objc_stubs: 0x1e4a0
-+  __TEXT.__objc_methlist: 0xfad8
-+  __TEXT.__const: 0x3f044
-+  __TEXT.__objc_methname: 0x340c6
-+  __TEXT.__oslogstring: 0xc2bc
-+  __TEXT.__objc_classname: 0x67ca
-+  __TEXT.__objc_methtype: 0x9325
-+  __TEXT.__cstring: 0x1956b
-+  __TEXT.__gcc_except_tab: 0x24dc
-   __TEXT.__ustring: 0x18
-   __TEXT.__dlopen_cstrs: 0xac
--  __TEXT.__constg_swiftt: 0x16dc4
--  __TEXT.__swift5_typeref: 0x7cfb8
--  __TEXT.__swift5_reflstr: 0x157a3
--  __TEXT.__swift5_fieldmd: 0x10cf8
--  __TEXT.__swift5_builtin: 0x528
--  __TEXT.__swift5_assocty: 0x37d8
--  __TEXT.__swift5_proto: 0x190c
--  __TEXT.__swift5_types: 0xf48
--  __TEXT.__swift5_capture: 0xa65c
--  __TEXT.__swift_as_entry: 0x87c
--  __TEXT.__swift_as_cont: 0xfd0
--  __TEXT.__swift_as_ret: 0x800
--  __TEXT.__swift5_protos: 0xb4
-+  __TEXT.__constg_swiftt: 0x17240
-+  __TEXT.__swift5_typeref: 0x7f304
-+  __TEXT.__swift5_reflstr: 0x15b63
-+  __TEXT.__swift5_fieldmd: 0x11078
-+  __TEXT.__swift5_builtin: 0x550
-+  __TEXT.__swift5_assocty: 0x38b0
-+  __TEXT.__swift5_proto: 0x1970
-+  __TEXT.__swift5_types: 0xf7c
-+  __TEXT.__swift5_capture: 0xaab8
-+  __TEXT.__swift_as_entry: 0x8b4
-+  __TEXT.__swift_as_cont: 0x1044
-+  __TEXT.__swift_as_ret: 0x824
-+  __TEXT.__swift5_protos: 0xb8
-   __TEXT.__swift5_mpenum: 0x188
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__unwind_info: 0x14d08
--  __TEXT.__eh_frame: 0x15310
--  __DATA_CONST.__const: 0x31b08
--  __DATA_CONST.__cfstring: 0x4360
--  __DATA_CONST.__objc_classlist: 0xf68
--  __DATA_CONST.__objc_catlist: 0x80
-+  __TEXT.__unwind_info: 0x15190
-+  __TEXT.__eh_frame: 0x15cf8
-+  __DATA_CONST.__const: 0x32990
-+  __DATA_CONST.__cfstring: 0x4380
-+  __DATA_CONST.__objc_classlist: 0xf80
-+  __DATA_CONST.__objc_catlist: 0x88
-   __DATA_CONST.__objc_catlist2: 0x8
-   __DATA_CONST.__objc_protolist: 0x5e0
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   __DATA_CONST.__objc_arrayobj: 0x30
-   __DATA_CONST.__objc_doubleobj: 0x50
-   __DATA_CONST.__objc_dictobj: 0x28
--  __DATA_CONST.__auth_got: 0x7100
--  __DATA_CONST.__got: 0x3f60
--  __DATA_CONST.__auth_ptr: 0x5268
--  __DATA.__objc_const: 0x43458
--  __DATA.__objc_selrefs: 0x9a38
--  __DATA.__objc_ivar: 0xbf4
--  __DATA.__objc_data: 0x1c328
--  __DATA.__data: 0x27168
-+  __DATA_CONST.__auth_got: 0x7278
-+  __DATA_CONST.__got: 0x3ff0
-+  __DATA_CONST.__auth_ptr: 0x5318
-+  __DATA.__objc_const: 0x44198
-+  __DATA.__objc_selrefs: 0x9ad8
-+  __DATA.__objc_ivar: 0xbfc
-+  __DATA.__objc_data: 0x1c818
-+  __DATA.__data: 0x275a8
-   __DATA.__objc_stublist: 0x8
--  __DATA.__bss: 0x30d98
--  __DATA.__common: 0x1528
-+  __DATA.__bss: 0x31968
-+  __DATA.__common: 0x1540
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/CorePhoneNumbers.framework/CorePhoneNumbers
-   - /System/Library/PrivateFrameworks/CoreRecents.framework/CoreRecents
 +  - /System/Library/PrivateFrameworks/DataFlow.framework/DataFlow
-   - /System/Library/PrivateFrameworks/DepthCore.framework/DepthCore
-   - /System/Library/PrivateFrameworks/FamilyCircle.framework/FamilyCircle
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
 
-   - /System/Library/PrivateFrameworks/FitnessIntelligenceFeedback.framework/FitnessIntelligenceFeedback
-   - /System/Library/PrivateFrameworks/FitnessMachineServices.framework/FitnessMachineServices
-   - /System/Library/PrivateFrameworks/FitnessProductDetail.framework/FitnessProductDetail
 +  - /System/Library/PrivateFrameworks/FitnessRegulatoryApproval.framework/FitnessRegulatoryApproval
-   - /System/Library/PrivateFrameworks/FitnessUI.framework/FitnessUI
-   - /System/Library/PrivateFrameworks/FitnessUtilities.framework/FitnessUtilities
-   - /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 30054
 -  Symbols:   6664
 -  CStrings:  12089
 +  Functions: 30427
 +  Symbols:   6738
 +  CStrings:  12179
- 
 Symbols:
 + _$s11SeymourCore25SignificantChangeApprovalV08approvedD7VersionSivg
 + _$s11SeymourCore25SignificantChangeApprovalV12startVersionSivgZ

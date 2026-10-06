@@ -2,18 +2,15 @@
 
 > `/usr/lib/system/libcompiler_rt.dylib`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x2b68
-+  __TEXT.__text: 0x2b60
-   __TEXT.__const: 0x4b
-   __TEXT.__cstring: 0xbe
-   __TEXT.__unwind_info: 0xe8
-Sections:
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2b68` | `0x2b60` | **`-0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ ___gcc_personality_v0 : 856 -> 848
-
 ```

@@ -2,64 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/WorkoutSeymourBridge.framework/WorkoutSeymourBridge`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x61200` | `0x61304` | **`+0x104`** |
+| `__TEXT.__swift5_reflstr` | `0xce4` | `0xd24` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x1170` | `0x1198` | **`+0x28`** |
+| `__AUTH_CONST.__objc_const` | `0x11d8` | `0x11f8` | **`+0x20`** |
+| `__DATA_DIRTY.__objc_data` | `0x3a8` | `0x3c8` | **`+0x20`** |
+| `__TEXT.__constg_swiftt` | `0xcc4` | `0xcdc` | **`+0x18`** |
+| `__DATA.__data` | `0xde0` | `0xdf0` | **`+0x10`** |
+| `__TEXT.__const` | `0x17f2` | `0x17e2` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x1128` | `0x1138` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x95c` | `0x968` | **`+0xc`** |
+| `__TEXT.__swift5_typeref` | `0xd1e` | `0xd28` | **`+0xa`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.137.0.0
--  __TEXT.__text: 0x61200
 +2027.0.152.1.1
-+  __TEXT.__text: 0x61304
-   __TEXT.__objc_methlist: 0x6ec
--  __TEXT.__const: 0x17f2
--  __TEXT.__swift5_typeref: 0xd1e
--  __TEXT.__constg_swiftt: 0xcc4
--  __TEXT.__swift5_reflstr: 0xce4
--  __TEXT.__swift5_fieldmd: 0x95c
-+  __TEXT.__const: 0x17e2
-+  __TEXT.__swift5_typeref: 0xd28
-+  __TEXT.__constg_swiftt: 0xcdc
-+  __TEXT.__swift5_reflstr: 0xd24
-+  __TEXT.__swift5_fieldmd: 0x968
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_assocty: 0x48
-   __TEXT.__swift5_proto: 0x7c
 
-   __TEXT.__swift_as_cont: 0xc8
-   __TEXT.__swift_as_ret: 0x24
-   __TEXT.__oslogstring: 0x65
--  __TEXT.__unwind_info: 0x1128
-+  __TEXT.__unwind_info: 0x1138
-   __TEXT.__eh_frame: 0x1970
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_protorefs: 0x50
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x1970
--  __AUTH_CONST.__objc_const: 0x11d8
--  __AUTH_CONST.__auth_got: 0x1170
-+  __AUTH_CONST.__objc_const: 0x11f8
-+  __AUTH_CONST.__auth_got: 0x1198
-   __AUTH.__objc_data: 0x808
-   __AUTH.__data: 0x410
--  __DATA.__data: 0xde0
-+  __DATA.__data: 0xdf0
-   __DATA.__bss: 0xc80
-   __DATA.__common: 0x130
--  __DATA_DIRTY.__objc_data: 0x3a8
-+  __DATA_DIRTY.__objc_data: 0x3c8
-   __DATA_DIRTY.__data: 0x128
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1656
--  Symbols:   3866
+-  Symbols:   3736
 +  Functions: 1659
-+  Symbols:   3876
-   CStrings:  178
- 
++  Symbols:   3746
 Symbols:
 + _$s11WorkoutCore0aB8InjectorC6injectSo13HKHealthStoreCyFTj
 + _$s11WorkoutCore0aB8InjectorC6sharedACvgZ

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/PromotedContent.framework/PromotedContent`
 
-```diff
+### Section Size Changes
 
- 557.1.33.0.0
--  __TEXT.__text: 0xee148
-+  __TEXT.__text: 0xee1b4
-   __TEXT.__objc_methlist: 0x1c44
-   __TEXT.__const: 0xd400
-   __TEXT.__constg_swiftt: 0x5a04
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xee148` | `0xee1b4` | **`+0x6c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1cb47aefc -> sub_1cb98fefc : 1556 -> 1564
 ~ sub_1cb480824 -> sub_1cb99582c : 344 -> 348

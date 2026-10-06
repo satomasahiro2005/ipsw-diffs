@@ -2,91 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/DesktopServicesPriv.framework/DesktopServicesPriv`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__DATA.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x18a6b8` | `0x18e2e4` | **`+0x3c2c`** |
+| `__TEXT.__gcc_except_tab` | `0x264a8` | `0x26b78` | **`+0x6d0`** |
+| `__TEXT.__oslogstring` | `0x85e0` | `0x887e` | **`+0x29e`** |
+| `__TEXT.__unwind_info` | `0xbfb8` | `0xc130` | **`+0x178`** |
+| `__TEXT.__cstring` | `0x625a` | `0x63ce` | **`+0x174`** |
+| `__TEXT.__const` | `0x8bed` | `0x8d25` | **`+0x138`** |
+| `__AUTH_CONST.__const` | `0x92b0` | `0x93e0` | **`+0x130`** |
+| `__DATA.__bss` | `0x1100` | `0x1150` | **`+0x50`** |
+| `__AUTH_CONST.__cfstring` | `0x38c0` | `0x3900` | **`+0x40`** |
+| `__AUTH_CONST.__objc_const` | `0x7180` | `0x71c0` | **`+0x40`** |
+| `__AUTH.__data` | `0x30` | `—` | **`-0x30`** |
+| `__TEXT.__objc_methlist` | `0x463c` | `0x466c` | **`+0x30`** |
+| `__AUTH.__objc_data` | `0x1db0` | `0x1d88` | **`-0x28`** |
+| `__DATA_DIRTY.__objc_data` | `—` | `0x28` | **`+0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2758` | `0x2770` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x1120` | `0x1128` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x3ec` | `0x3f4` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0xb30` | `0xb38` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -1852.0.0.0.0
--  __TEXT.__text: 0x18a6b8
--  __TEXT.__objc_methlist: 0x463c
--  __TEXT.__gcc_except_tab: 0x264a8
--  __TEXT.__const: 0x8bed
--  __TEXT.__cstring: 0x625a
--  __TEXT.__oslogstring: 0x85e0
 +1854.0.0.0.0
-+  __TEXT.__text: 0x18e2e4
-+  __TEXT.__objc_methlist: 0x466c
-+  __TEXT.__gcc_except_tab: 0x26b78
-+  __TEXT.__const: 0x8d25
-+  __TEXT.__cstring: 0x63ce
-+  __TEXT.__oslogstring: 0x887e
-   __TEXT.__ustring: 0x24
--  __TEXT.__unwind_info: 0xbfb8
-+  __TEXT.__unwind_info: 0xc130
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_protolist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x2758
-+  __DATA_CONST.__objc_selrefs: 0x2770
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__objc_superrefs: 0x1b0
-   __DATA_CONST.__objc_arraydata: 0x88
--  __DATA_CONST.__got: 0xb30
--  __AUTH_CONST.__const: 0x92b0
--  __AUTH_CONST.__cfstring: 0x38c0
--  __AUTH_CONST.__objc_const: 0x7180
-+  __DATA_CONST.__got: 0xb38
-+  __AUTH_CONST.__const: 0x93e0
-+  __AUTH_CONST.__cfstring: 0x3900
-+  __AUTH_CONST.__objc_const: 0x71c0
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x138
-   __AUTH_CONST.__objc_arrayobj: 0x30
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x1120
--  __AUTH.__objc_data: 0x1db0
--  __AUTH.__data: 0x30
--  __DATA.__objc_ivar: 0x3ec
-+  __AUTH_CONST.__auth_got: 0x1128
-+  __AUTH.__objc_data: 0x1d88
-+  __DATA.__objc_ivar: 0x3f4
-   __DATA.__data: 0xc70
-   __DATA.__common: 0x121
--  __DATA.__bss: 0x1100
-+  __DATA.__bss: 0x1150
-+  __DATA_DIRTY.__objc_data: 0x28
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/FileProvider.framework/FileProvider
-
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 7622
--  Symbols:   13363
+-  Symbols:   12370
 -  CStrings:  1810
 +  Functions: 7665
-+  Symbols:   13422
++  Symbols:   12428
 +  CStrings:  1817
- 
 Symbols:
 + -[FIOperation progressUpdateQueue]
 + -[FIOperation startEstimatingTimeRemaining]
@@ -500,10 +451,6 @@ Symbols:
 + ___destroy_helper_block_ea8_32c88_ZTSKZZ45-[FIOperation fetchNodesAsyncFor:completion:]ENK4$_85clEvEUlP6FINodeP7NSErrorE_
 + ___destroy_helper_block_ea8_32c91_ZTSKZZ55-[FIOperation configureCompletionHandlers:fpOperation:]ENK4$_81clEbP7NSErrorEUlvE_
 + ___destroy_helper_block_ea8_32c93_ZTSKZZ33-[FIOperation executeDSOperation]ENK4$_48clE16NodeSuboperationP13OpaqueNodeRefEUlvE_
-+ _objc_msgSend$progressUpdateQueue
-+ _objc_msgSend$startEstimatingTimeRemaining
-+ _objc_msgSend$startFractionCompletedObserver
-+ _objc_msgSend$startUpdateTimeRemainingTimer
 - GCC_except_table1001
 - GCC_except_table1005
 - GCC_except_table1018
@@ -858,9 +805,6 @@ Symbols:
 - ___destroy_helper_block_ea8_32c88_ZTSKZZ45-[FIOperation fetchNodesAsyncFor:completion:]ENK4$_82clEvEUlP6FINodeP7NSErrorE_
 - ___destroy_helper_block_ea8_32c91_ZTSKZZ55-[FIOperation configureCompletionHandlers:fpOperation:]ENK4$_78clEbP7NSErrorEUlvE_
 - ___destroy_helper_block_ea8_32c93_ZTSKZZ33-[FIOperation executeDSOperation]ENK4$_46clE16NodeSuboperationP13OpaqueNodeRefEUlvE_
-- _objc_msgSend$_timeRemainingEstimateWithTimeElapsed:fractionDone:
-- _objc_msgSend$dateStarted
-- _objc_msgSend$timeIntervalSinceNow
 CStrings:
 + "\t nodeToMove: %{public}@\n\t destination: %{public}@\n\t optionalNewName: %{public}@\n\t movingAppWithKEXTs: %{public}s\n\t movingToTrash: %{public}s\n\t needsAuthentication: %{public}s\n"
 + "\t resultingPath: %{public}@\n\t translocationChanged: %{bool}d\n\t status: %{public}s"

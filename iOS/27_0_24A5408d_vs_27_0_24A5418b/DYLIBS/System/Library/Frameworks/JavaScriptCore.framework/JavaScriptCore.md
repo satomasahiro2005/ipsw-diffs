@@ -2,38 +2,28 @@
 
 > `/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x23cda3c` | `0x23cab0c` | **`-0x2f30`** |
+| `__TEXT.__unwind_info` | `0x1fd98` | `0x1fd80` | **`-0x18`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -625.1.29.10.3
--  __TEXT.__text: 0x23cda3c
 +625.1.29.10.25
-+  __TEXT.__text: 0x23cab0c
-   __TEXT.__jsc_int: 0x691b8
-   __TEXT.__objc_methlist: 0xb9c
-   __TEXT.__const: 0xa2664
 
-   __TEXT.__oslogstring: 0xa0f
-   __TEXT.__gcc_except_tab: 0x2964
-   __TEXT.__ustring: 0x10
--  __TEXT.__unwind_info: 0x1fd98
-+  __TEXT.__unwind_info: 0x1fd80
-   __TEXT.__eh_frame: 0x50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 39720
--  Symbols:   48009
+-  Symbols:   47799
 +  Functions: 39714
-+  Symbols:   48008
-   CStrings:  25802
- 
++  Symbols:   47798
 Symbols:
 + __ZN3JSC3DFG5Graph33canDoFastSpreadWithStructureCheckEPNS0_4NodeE
 + __ZN3WTF22setSDKAlignedBehaviorsENS_6BitSetILm109EjEE

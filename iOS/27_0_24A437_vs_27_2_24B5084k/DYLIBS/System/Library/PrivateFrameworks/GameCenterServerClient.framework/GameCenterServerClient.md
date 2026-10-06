@@ -2,60 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/GameCenterServerClient.framework/GameCenterServerClient`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbc050` | `0xbfa60` | **`+0x3a10`** |
+| `__DATA.__bss` | `0x2bf70` | `0x2ca70` | **`+0xb00`** |
+| `__AUTH_CONST.__const` | `0x12668` | `0x12be8` | **`+0x580`** |
+| `__TEXT.__const` | `0x19848` | `0x19db8` | **`+0x570`** |
+| `__TEXT.__swift5_fieldmd` | `0x61d4` | `0x638c` | **`+0x1b8`** |
+| `__TEXT.__unwind_info` | `0x5ea0` | `0x5fe8` | **`+0x148`** |
+| `__TEXT.__constg_swiftt` | `0x2f74` | `0x30a8` | **`+0x134`** |
+| `__TEXT.__eh_frame` | `0x65d8` | `0x66a8` | **`+0xd0`** |
+| `__TEXT.__swift5_typeref` | `0x337e` | `0x3418` | **`+0x9a`** |
+| `__DATA.__data` | `0x2b10` | `0x2b68` | **`+0x58`** |
+| `__TEXT.__swift5_proto` | `0x1648` | `0x16a0` | **`+0x58`** |
+| `__TEXT.__swift5_types` | `0x668` | `0x694` | **`+0x2c`** |
+| `__TEXT.__swift5_reflstr` | `0x145b` | `0x1468` | **`+0xd`** |
+| `__AUTH_CONST.__auth_got` | `0x3d0` | `0x3d8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -821.0.25.0.0
--  __TEXT.__text: 0xb59d8
--  __TEXT.__const: 0x19848
--  __TEXT.__swift5_typeref: 0x337e
 +821.1.8.0.0
-+  __TEXT.__text: 0xb927c
-+  __TEXT.__const: 0x19db8
-+  __TEXT.__swift5_typeref: 0x3418
-   __TEXT.__cstring: 0x2316
--  __TEXT.__swift5_reflstr: 0x145b
-+  __TEXT.__swift5_reflstr: 0x1468
-   __TEXT.__swift5_assocty: 0xf30
--  __TEXT.__swift5_fieldmd: 0x61d4
--  __TEXT.__constg_swiftt: 0x2f74
-+  __TEXT.__swift5_fieldmd: 0x638c
-+  __TEXT.__constg_swiftt: 0x30a8
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__swift5_proto: 0x1648
--  __TEXT.__swift5_types: 0x668
-+  __TEXT.__swift5_proto: 0x16a0
-+  __TEXT.__swift5_types: 0x694
-   __TEXT.__swift_as_entry: 0x190
-   __TEXT.__swift_as_ret: 0x190
-   __TEXT.__swift_as_cont: 0x2ac
--  __TEXT.__unwind_info: 0x6d98
--  __TEXT.__eh_frame: 0x65d8
-+  __TEXT.__unwind_info: 0x6f10
-+  __TEXT.__eh_frame: 0x66a8
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x1c0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x12668
--  __AUTH_CONST.__auth_got: 0x3d0
-+  __AUTH_CONST.__const: 0x12be8
-+  __AUTH_CONST.__auth_got: 0x3d8
-   __AUTH.__data: 0x1240
--  __DATA.__data: 0x2b10
-+  __DATA.__data: 0x2b68
-   __DATA_DIRTY.__data: 0x418
-   __DATA_DIRTY.__bss: 0xbd0
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
 -  Functions: 12363
 -  Symbols:   3186
 +  Functions: 12634
 +  Symbols:   3238
-   CStrings:  332
- 
 Symbols:
 + _OUTLINED_FUNCTION_1347
 + _OUTLINED_FUNCTION_1348

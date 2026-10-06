@@ -2,59 +2,38 @@
 
 > `/Applications/DiagnosticsService.app/PlugIns/Diagnostic-8288.appex/Diagnostic-8288`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe074` | `0x13108` | **`+0x5094`** |
+| `__TEXT.__gcc_except_tab` | `0x16fc` | `0x2274` | **`+0xb78`** |
+| `__DATA_CONST.__const` | `0x4a0` | `0x4d8` | **`+0x38`** |
+| `__TEXT.__objc_stubs` | `0x3c0` | `0x3e0` | **`+0x20`** |
+| `__TEXT.__oslogstring` | `0x1d` | `0x30` | **`+0x13`** |
+| `__TEXT.__objc_methname` | `0x231` | `0x23c` | **`+0xb`** |
+| `__DATA.__objc_selrefs` | `0x108` | `0x110` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x430` | `0x428` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
 - `__DATA_CONST.__cfstring`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_intobj`
-- `__DATA.__objc_const`
-- `__DATA.__objc_data`
+- `__TEXT.__const`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
 -60.0.0.0.0
--  __TEXT.__text: 0xde04
 +62.0.0.0.0
-+  __TEXT.__text: 0x12ea4
-   __TEXT.__auth_stubs: 0x6c0
--  __TEXT.__objc_stubs: 0x3c0
-+  __TEXT.__objc_stubs: 0x3e0
-   __TEXT.__objc_methlist: 0x50
-   __TEXT.__cstring: 0x32a5
--  __TEXT.__gcc_except_tab: 0x16fc
-+  __TEXT.__gcc_except_tab: 0x2274
-   __TEXT.__const: 0x18
--  __TEXT.__oslogstring: 0x1d
-+  __TEXT.__oslogstring: 0x30
-   __TEXT.__objc_classname: 0x1a
--  __TEXT.__objc_methname: 0x231
-+  __TEXT.__objc_methname: 0x23c
-   __TEXT.__objc_methtype: 0xd4
--  __TEXT.__unwind_info: 0x4a8
--  __DATA_CONST.__const: 0x4a0
-+  __TEXT.__unwind_info: 0x4a0
-+  __DATA_CONST.__const: 0x4d8
-   __DATA_CONST.__cfstring: 0x2340
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   __DATA_CONST.__auth_got: 0x370
-   __DATA_CONST.__got: 0x2f8
-   __DATA.__objc_const: 0xd8
--  __DATA.__objc_selrefs: 0x108
-+  __DATA.__objc_selrefs: 0x110
-   __DATA.__objc_ivar: 0x8
-   __DATA.__objc_data: 0x50
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libobjc.A.dylib
-   Functions: 148
-   Symbols:   326
 -  CStrings:  395
 +  CStrings:  397
- 
 Symbols:
 + __os_log_error_impl
 - _NSLog
@@ -66,7 +45,7 @@ Functions:
 ~ __ZN17DeviceCMInterface28enableJasperPointCloudOutputEv : 512 -> 784
 ~ __ZN17DeviceCMInterface26configJasperRgbMultiStreamERK19JasperConfiguration : 1640 -> 2432
 ~ __ZN17DeviceCMInterface31setJasperMultiOutModeByStreamIdEjb : 624 -> 1056
-~ __ZN17DeviceCMInterface18configJasperDeviceERK19JasperConfiguration : 3152 -> 4692
+~ __ZN17DeviceCMInterface18configJasperDeviceERK19JasperConfiguration : 3172 -> 4712
 ~ __ZN17DeviceCMInterface17enableSWRGBOutputEv : 212 -> 340
 ~ __ZN17DeviceCMInterface23requestControlOfStreamsEbj : 1344 -> 2100
 ~ __ZN17DeviceCMInterface23releaseControlOfStreamsEv : 384 -> 620
@@ -91,10 +70,10 @@ Functions:
 ~ __ZN17DeviceCMInterface17setPearlSyncSlaveEii -> __ZN17DeviceCMInterface30enableSyncForEnumeratedStreamsEi : 780 -> 856
 ~ __ZN17DeviceCMInterface21setPearlIRAsSyncSlaveEi -> __ZN17DeviceCMInterface17setPearlSyncSlaveEii : 12 -> 1192
 ~ __ZN17DeviceCMInterface20disablePearlSyncModeEi -> __ZN17DeviceCMInterface22setPearlRgbAsSyncSlaveEi : 316 -> 12
-~ __ZN17DeviceCMInterface19setPearlFormatIndexEii -> __ZN17DeviceCMInterface20disablePearlSyncModeEi : 88 -> 436
-~ __ZN17DeviceCMInterface17configPearlDeviceERK18PearlConfiguration -> __ZN17DeviceCMInterface19setPearlFormatIndexEii : 2736 -> 88
+~ __ZN17DeviceCMInterface19setPearlFormatIndexEii -> __ZN17DeviceCMInterface20disablePearlSyncModeEi : 100 -> 436
+~ __ZN17DeviceCMInterface17configPearlDeviceERK18PearlConfiguration -> __ZN17DeviceCMInterface19setPearlFormatIndexEii : 2736 -> 100
 ~ __ZN17DeviceCMInterface26getPearlProjectorHWVersionEPi -> __ZN17DeviceCMInterface17configPearlDeviceERK18PearlConfiguration : 432 -> 4652
-~ __ZNK17DeviceCMInterface30getPearlConfigurationStringKeyEPK18PearlConfiguration : 464 -> 328
+~ __ZNK17DeviceCMInterface30getPearlConfigurationStringKeyEPK18PearlConfiguration : 476 -> 340
 ~ __ZN17DeviceCMInterface22isPDECaliobrationValidEPb : 388 -> 624
 ~ __ZN17DeviceCMInterface23getJasperProjectorFaultEPyPU15__autoreleasingP12NSDictionary : 436 -> 556
 ~ __ZN17DeviceCMInterface27getJasperProjectorWillFaultEPy : 476 -> 736
@@ -104,7 +83,7 @@ Functions:
 ~ __ZN17DeviceCMInterface20getAntliaFaultStatusEPy : 492 -> 700
 ~ __ZN17DeviceCMInterface28getProjectorCalibratedValuesEPU15__autoreleasingP12NSDictionary : 452 -> 692
 ~ __ZN17DeviceCMInterface19getDiagnosticReportEPU15__autoreleasingP12NSDictionary : 648 -> 1024
-~ __ZN17DeviceCMInterface13releaseDeviceEv : 212 -> 340
+~ __ZN17DeviceCMInterface13releaseDeviceEv : 224 -> 340
 ~ __ZN17DeviceCMInterface13getRgbjReportERiS0_S0_S0_S0_ : 528 -> 880
 ~ __ZN17DeviceCMInterface24forceSaveWideJasperCalibEv : 280 -> 408
 ~ __ZN17DeviceCMInterface20setRgbjConfigurationEjjj : 492 -> 620

@@ -2,51 +2,31 @@
 
 > `/System/Library/VideoProcessors/MetalFilter.bundle/MetalFilter`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0xaf9` | `0x3af` | **`-0x74a`** |
+| `__TEXT.__text` | `0x3ea4` | `0x378c` | **`-0x718`** |
+| `__TEXT.__oslogstring` | `0x1ac` | `—` | **`-0x1ac`** |
+| `__AUTH_CONST.__cfstring` | `0x100` | `0xc0` | **`-0x40`** |
+| `__TEXT.__unwind_info` | `0x110` | `0xe8` | **`-0x28`** |
+| `__DATA_DIRTY.__common` | `0x10` | `—` | **`-0x10`** |
+| `__TEXT.__const` | `0x20` | `0x10` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -764.40.5.0.0
--  __TEXT.__text: 0x3e20
 +764.40.7.0.0
-+  __TEXT.__text: 0x36f0
-   __TEXT.__objc_methlist: 0x41c
--  __TEXT.__const: 0x20
--  __TEXT.__cstring: 0xaf9
--  __TEXT.__oslogstring: 0x1ac
--  __TEXT.__unwind_info: 0x198
-+  __TEXT.__const: 0x10
-+  __TEXT.__cstring: 0x3af
-+  __TEXT.__unwind_info: 0x178
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__objc_arraydata: 0x40
-   __DATA_CONST.__got: 0x90
--  __AUTH_CONST.__cfstring: 0x100
-+  __AUTH_CONST.__cfstring: 0xc0
-   __AUTH_CONST.__objc_const: 0x710
-   __AUTH_CONST.__objc_intobj: 0x78
-   __AUTH_CONST.__objc_arrayobj: 0x78
-
-   __DATA.__objc_ivar: 0x6c
-   __DATA.__data: 0x120
-   __DATA_DIRTY.__objc_data: 0x50
--  __DATA_DIRTY.__common: 0x10
-   __DATA_DIRTY.__bss: 0x10
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /System/Library/PrivateFrameworks/CMImaging.framework/CMImaging
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 115
 -  Symbols:   75
 -  CStrings:  91
 +  Functions: 98
 +  Symbols:   71
 +  CStrings:  40
- 
 Symbols:
 + _FigSignalErrorAtGM
 + _fig_log_get_emitter

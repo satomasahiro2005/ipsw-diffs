@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CoreHAP.framework/CoreHAP`
 
-```diff
+### Section Size Changes
 
- 1493.1.5.1.1
--  __TEXT.__text: 0x2af7dc
-+  __TEXT.__text: 0x2add7c
-   __TEXT.__objc_methlist: 0x18cc0
-   __TEXT.__const: 0x1240
-   __TEXT.__dlopen_cstrs: 0x4e
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2af7dc` | `0x2add7c` | **`-0x1a60`** |
+
+### Other Changes
+
+```diff
 Symbols:
 + _swift_retain_x11
 - _swift_retain_x13

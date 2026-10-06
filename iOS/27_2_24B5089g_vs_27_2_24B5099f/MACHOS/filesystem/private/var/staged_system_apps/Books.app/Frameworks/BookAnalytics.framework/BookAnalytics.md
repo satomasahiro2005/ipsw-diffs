@@ -2,15 +2,14 @@
 
 > `/private/var/staged_system_apps/Books.app/Frameworks/BookAnalytics.framework/BookAnalytics`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -6715.0.0.0.0
 +6722.11.0.0.0
-   __TEXT.__text: 0x1a5bb0
-   __TEXT.__auth_stubs: 0x2230
-   __TEXT.__objc_stubs: 0x1220
 ```

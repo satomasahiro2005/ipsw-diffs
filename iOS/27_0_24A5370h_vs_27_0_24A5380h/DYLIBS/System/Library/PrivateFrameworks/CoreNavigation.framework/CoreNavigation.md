@@ -2,69 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/CoreNavigation.framework/CoreNavigation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x361b44` | `0x362bb8` | **`+0x1074`** |
+| `__AUTH_CONST.__const` | `0x1e778` | `0x1e898` | **`+0x120`** |
+| `__TEXT.__unwind_info` | `0xec70` | `0xed20` | **`+0xb0`** |
+| `__TEXT.__const` | `0x51fa1` | `0x52011` | **`+0x70`** |
+| `__TEXT.__gcc_except_tab` | `0x1676c` | `0x167d8` | **`+0x6c`** |
+| `__DATA.__common` | `0x660` | `0x670` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x238` | `0x240` | **`+0x8`** |
+| `__TEXT.__cstring` | `0x3834c` | `0x38344` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x361b44
-+  __TEXT.__text: 0x362bb8
-   __TEXT.__objc_methlist: 0x198
--  __TEXT.__const: 0x51fa1
--  __TEXT.__cstring: 0x3834c
-+  __TEXT.__const: 0x52011
-+  __TEXT.__cstring: 0x38344
-   __TEXT.__oslogstring: 0x51
--  __TEXT.__gcc_except_tab: 0x1676c
--  __TEXT.__unwind_info: 0xec70
-+  __TEXT.__gcc_except_tab: 0x167d8
-+  __TEXT.__unwind_info: 0xed20
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-421.0.0.0.0
++423.0.0.0.0
 
-   __DATA_CONST.__objc_selrefs: 0x138
-   __DATA_CONST.__objc_superrefs: 0x18
-   __DATA_CONST.__objc_arraydata: 0x10
--  __DATA_CONST.__got: 0x238
--  __AUTH_CONST.__const: 0x1e778
-+  __DATA_CONST.__got: 0x240
-+  __AUTH_CONST.__const: 0x1e898
-   __AUTH_CONST.__cfstring: 0xa0
-   __AUTH_CONST.__objc_const: 0x2e8
-   __AUTH_CONST.__weak_auth_got: 0xc0
-
-   __AUTH.__objc_data: 0xf0
-   __DATA.__objc_ivar: 0xc
-   __DATA.__data: 0xa0
--  __DATA.__common: 0x660
-+  __DATA.__common: 0x670
-   __DATA.__bss: 0x480
-   __DATA_DIRTY.__common: 0x658
-   __DATA_DIRTY.__bss: 0x1cf8
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libprotobuf-lite.dylib
-   - /usr/lib/libprotobuf.dylib
 -  Functions: 15512
 -  Symbols:   13504
--  CStrings:  3919
+-  CStrings:  3914
 +  Functions: 15563
 +  Symbols:   13565
-+  CStrings:  3920
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
++  CStrings:  3915
 Symbols:
 + __ZN14CoreNavigation3CLP8LogEntry11PrivateData10RDEstimate10SharedCtorEv
 + __ZN14CoreNavigation3CLP8LogEntry11PrivateData10RDEstimate10SharedDtorEv
@@ -135,5 +98,4 @@ CStrings:
 + "CoreNavigation.CLP.LogEntry.Raven.RavenReset"
 - "#ngce,DAE_CoursePropagated,ravenTime,%.2f,estimated_deg,%.1f,dt,%.2f,delta_hdg_deg,%.2f"
 - "#ngce,DAE_Raw,rt,%.4f,dt,%.4f,ax,%.4f,ay,%.4f,az,%.4f,gx,%.4f,gy,%.4f,gz,%.4f,rx,%.6f,ry,%.6f,rz,%.6f,crs,%.4f"
-
 ```

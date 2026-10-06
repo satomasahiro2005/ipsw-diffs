@@ -2,126 +2,65 @@
 
 > `/usr/lib/libcoreroutine.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6bf554` | `0x6c9680` | **`+0xa12c`** |
+| `__TEXT.__oslogstring` | `0x8a106` | `0x8aec3` | **`+0xdbd`** |
+| `__AUTH_CONST.__objc_const` | `0x56a10` | `0x57110` | **`+0x700`** |
+| `__TEXT.__gcc_except_tab` | `0x2f0f0` | `0x2f664` | **`+0x574`** |
+| `__TEXT.__objc_methlist` | `0x34ee8` | `0x35370` | **`+0x488`** |
+| `__DATA_DIRTY.__objc_data` | `0xc760` | `0xc9e0` | **`+0x280`** |
+| `__AUTH_CONST.__cfstring` | `0x2c360` | `0x2c5c0` | **`+0x260`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1b508` | `0x1b748` | **`+0x240`** |
+| `__TEXT.__cstring` | `0x4afc2` | `0x4b1f0` | **`+0x22e`** |
+| `__TEXT.__unwind_info` | `0xf278` | `0xf470` | **`+0x1f8`** |
+| `__AUTH_CONST.__const` | `0x3778` | `0x38d8` | **`+0x160`** |
+| `__DATA_CONST.__const` | `0x10688` | `0x10778` | **`+0xf0`** |
+| `__TEXT.__const` | `0x4be8` | `0x4cd8` | **`+0xf0`** |
+| `__TEXT.__eh_frame` | `0x6d8` | `0x7c8` | **`+0xf0`** |
+| `__AUTH.__objc_data` | `0x1b20` | `0x1a40` | **`-0xe0`** |
+| `__TEXT.__swift5_capture` | `0xdc` | `0x144` | **`+0x68`** |
+| `__DATA.__data` | `0x2dd0` | `0x2e28` | **`+0x58`** |
+| `__TEXT.__constg_swiftt` | `0xd4` | `0x12c` | **`+0x58`** |
+| `__DATA_DIRTY.__bss` | `0x258` | `0x2a8` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x3518` | `0x3558` | **`+0x40`** |
+| `__TEXT.__swift5_typeref` | `0x41b` | `0x457` | **`+0x3c`** |
+| `__AUTH_CONST.__auth_got` | `0x12f0` | `0x1328` | **`+0x38`** |
+| `__DATA_DIRTY.__objc_ivar` | `0x1274` | `0x12a8` | **`+0x34`** |
+| `__AUTH.__data` | `—` | `0x30` | **`+0x30`** |
+| `__DATA.__objc_ivar` | `0x2900` | `0x292c` | **`+0x2c`** |
+| `__DATA_DIRTY.__data` | `0x7d8` | `0x800` | **`+0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x1688` | `0x16a8` | **`+0x20`** |
+| `__DATA_CONST.__objc_protolist` | `0x370` | `0x388` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1280` | `0x1298` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `—` | `0x14` | **`+0x14`** |
+| `__DATA_CONST.__objc_protorefs` | `0x128` | `0x138` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x38` | `0x48` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x54` | `0x60` | **`+0xc`** |
+| `__DATA.__bss` | `0x80` | `0x88` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x8` | `0x10` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x2c` | `0x34` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x38` | `0x40` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1123.0.0.0.0
--  __TEXT.__text: 0x6b1fb4
--  __TEXT.__objc_methlist: 0x34ee8
--  __TEXT.__const: 0x4be8
 +1123.0.3.0.0
-+  __TEXT.__text: 0x6bbe7c
-+  __TEXT.__objc_methlist: 0x35370
-+  __TEXT.__const: 0x4cd8
-   __TEXT.__dlopen_cstrs: 0x1d2
--  __TEXT.__swift5_typeref: 0x41b
--  __TEXT.__oslogstring: 0x8a106
--  __TEXT.__cstring: 0x4afc2
--  __TEXT.__swift5_capture: 0xdc
--  __TEXT.__swift_as_entry: 0x2c
--  __TEXT.__swift_as_ret: 0x38
--  __TEXT.__swift_as_cont: 0x54
--  __TEXT.__constg_swiftt: 0xd4
-+  __TEXT.__swift5_typeref: 0x457
-+  __TEXT.__swift5_capture: 0x144
-+  __TEXT.__constg_swiftt: 0x12c
-+  __TEXT.__swift5_fieldmd: 0x48
-+  __TEXT.__swift5_builtin: 0x14
-+  __TEXT.__oslogstring: 0x8aec3
-+  __TEXT.__cstring: 0x4b1f0
-+  __TEXT.__swift5_types: 0x10
-+  __TEXT.__swift_as_entry: 0x34
-+  __TEXT.__swift_as_ret: 0x40
-+  __TEXT.__swift_as_cont: 0x60
-   __TEXT.__swift5_reflstr: 0x14
--  __TEXT.__swift5_fieldmd: 0x38
--  __TEXT.__swift5_types: 0x8
--  __TEXT.__gcc_except_tab: 0x2f0f0
-+  __TEXT.__gcc_except_tab: 0x2f664
-   __TEXT.__ustring: 0x50
--  __TEXT.__unwind_info: 0x11a00
--  __TEXT.__eh_frame: 0x6d8
-+  __TEXT.__unwind_info: 0x11c10
-+  __TEXT.__eh_frame: 0x7c8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x10688
--  __DATA_CONST.__objc_classlist: 0x1688
-+  __DATA_CONST.__const: 0x10778
-+  __DATA_CONST.__objc_classlist: 0x16a8
-   __DATA_CONST.__objc_catlist: 0x3f0
--  __DATA_CONST.__objc_protolist: 0x370
-+  __DATA_CONST.__objc_protolist: 0x388
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1b508
--  __DATA_CONST.__objc_protorefs: 0x128
--  __DATA_CONST.__objc_superrefs: 0x1280
-+  __DATA_CONST.__objc_selrefs: 0x1b748
-+  __DATA_CONST.__objc_protorefs: 0x138
-+  __DATA_CONST.__objc_superrefs: 0x1298
-   __DATA_CONST.__objc_arraydata: 0x2dd8
--  __DATA_CONST.__got: 0x3518
--  __AUTH_CONST.__const: 0x3778
--  __AUTH_CONST.__cfstring: 0x2c360
--  __AUTH_CONST.__objc_const: 0x56a10
-+  __DATA_CONST.__got: 0x3558
-+  __AUTH_CONST.__const: 0x38d8
-+  __AUTH_CONST.__cfstring: 0x2c5c0
-+  __AUTH_CONST.__objc_const: 0x57110
-   __AUTH_CONST.__objc_intobj: 0x4c08
-   __AUTH_CONST.__objc_arrayobj: 0xfc0
-   __AUTH_CONST.__objc_doubleobj: 0xbe0
-   __AUTH_CONST.__objc_dictobj: 0x2a8
-   __AUTH_CONST.__objc_floatobj: 0x10
--  __AUTH_CONST.__auth_got: 0x12f0
--  __AUTH.__objc_data: 0x1b20
--  __DATA.__objc_ivar: 0x2900
--  __DATA.__data: 0x2dd0
--  __DATA_DIRTY.__objc_ivar: 0x1274
--  __DATA_DIRTY.__objc_data: 0xc760
--  __DATA_DIRTY.__data: 0x7d8
--  __DATA_DIRTY.__bss: 0x258
-+  __AUTH_CONST.__auth_got: 0x1328
-+  __AUTH.__objc_data: 0x1a40
-+  __AUTH.__data: 0x30
-+  __DATA.__objc_ivar: 0x292c
-+  __DATA.__data: 0x2e28
-+  __DATA_DIRTY.__objc_ivar: 0x12a8
-+  __DATA_DIRTY.__objc_data: 0xc9e0
-+  __DATA_DIRTY.__data: 0x800
-+  __DATA_DIRTY.__bss: 0x2a8
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
 
-   - /System/Library/PrivateFrameworks/Fitness.framework/Fitness
-   - /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
-   - /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
 +  - /System/Library/PrivateFrameworks/HealthPlans.framework/HealthPlans
-   - /System/Library/PrivateFrameworks/HeroDataClient.framework/HeroDataClient
-   - /System/Library/PrivateFrameworks/IDS.framework/IDS
-   - /System/Library/PrivateFrameworks/IMCore.framework/IMCore
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libz.1.dylib
 +  - /usr/lib/swift/libswiftAVFoundation.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
-   - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 22042
 -  Symbols:   33983
--  CStrings:  16430
+-  CStrings:  16431
 +  Functions: 22197
 +  Symbols:   34184
-+  CStrings:  16512
- 
++  CStrings:  16513
 Symbols:
 + +[RTExtendedTimeToLiveGate isEnabled]
 + +[RTExtendedTimeToLiveGate mFeatureVerdictFromDefaultsManager:]
@@ -371,6 +310,7 @@ CStrings:
 + "%{public}@, %{public}@, namespace, %{public}@, factor, %{public}@, level, %{public}@"
 + "%{public}@, mFeature indeterminate, holding previous verdict, error, %{public}@"
 + "%{public}@, mFeature verdict persisted for next launch, %{public}@"
++ "02:03:19"
 + "CoreRoutine.AlwaysOnCheckInV2"
 + "ExtendedRetentionInternalEnabled"
 + "Invalid parameter not satisfying: factorName"
@@ -390,6 +330,7 @@ CStrings:
 + "RTDefaultsCheckInLastSubmissionDate"
 + "RTDefaultsExtendedTimeToLiveEnabled"
 + "RTDefaultsExtendedTimeToLiveMFeatureEnabled"
++ "Sep 28 2026"
 + "absent"
 + "ageBand"
 + "check-in metrics asked to defer, stopping at the next checkpoint"
@@ -412,5 +353,7 @@ CStrings:
 + "quietState%lu"
 + "startDayIndex"
 - "%@, query window startDate (%@) is before 8-week retention boundary (%@), capping to retention boundary"
+- "11:35:52"
+- "Sep 12 2026"
 - "finished lookup for primary icloud account %@, underage, %d, error, %@"
 ```

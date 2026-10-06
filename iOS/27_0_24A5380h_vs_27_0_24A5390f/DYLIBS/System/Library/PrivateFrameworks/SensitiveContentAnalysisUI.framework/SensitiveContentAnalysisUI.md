@@ -2,123 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/SensitiveContentAnalysisUI.framework/SensitiveContentAnalysisUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_types2`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__AUTH_CONST.__cfstring`
-- `__DATA.__objc_stublist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x215ae0` | `0x21ccb0` | **`+0x71d0`** |
+| `__DATA_DIRTY.__objc_data` | `0x620` | `0x27a8` | **`+0x2188`** |
+| `__DATA_DIRTY.__data` | `0x2c00` | `0x4d38` | **`+0x2138`** |
+| `__AUTH.__objc_data` | `0x2868` | `0x898` | **`-0x1fd0`** |
+| `__AUTH.__data` | `0x4638` | `0x27c0` | **`-0x1e78`** |
+| `__DATA_DIRTY.__bss` | `0x3c50` | `0x4130` | **`+0x4e0`** |
+| `__TEXT.__const` | `0x19cc4` | `0x1a024` | **`+0x360`** |
+| `__TEXT.__cstring` | `0x9056` | `0x92e6` | **`+0x290`** |
+| `__AUTH_CONST.__objc_const` | `0x5e10` | `0x6020` | **`+0x210`** |
+| `__DATA.__bss` | `0x1e0b0` | `0x1df00` | **`-0x1b0`** |
+| `__DATA_DIRTY.__common` | `0x160` | `0x2f8` | **`+0x198`** |
+| `__DATA.__common` | `0x5d0` | `0x448` | **`-0x188`** |
+| `__TEXT.__constg_swiftt` | `0x7aa0` | `0x7c08` | **`+0x168`** |
+| `__AUTH_CONST.__const` | `0xe7e0` | `0xe938` | **`+0x158`** |
+| `__TEXT.__eh_frame` | `0x70ac` | `0x71f8` | **`+0x14c`** |
+| `__TEXT.__swift5_capture` | `0x2654` | `0x27a0` | **`+0x14c`** |
+| `__TEXT.__unwind_info` | `0x6e48` | `0x6f88` | **`+0x140`** |
+| `__DATA.__data` | `0x5420` | `0x5318` | **`-0x108`** |
+| `__DATA_CONST.__const` | `0x970` | `0xa70` | **`+0x100`** |
+| `__TEXT.__swift5_reflstr` | `0x4c16` | `0x4ce6` | **`+0xd0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x15a0` | `0x1668` | **`+0xc8`** |
+| `__TEXT.__swift5_fieldmd` | `0x5f58` | `0x5fec` | **`+0x94`** |
+| `__AUTH_CONST.__auth_got` | `0x2af8` | `0x2b50` | **`+0x58`** |
+| `__DATA_CONST.__got` | `0x17c8` | `0x1810` | **`+0x48`** |
+| `__TEXT.__objc_methlist` | `0x20b8` | `0x2100` | **`+0x48`** |
+| `__TEXT.__swift5_typeref` | `0x1d378` | `0x1d3b4` | **`+0x3c`** |
+| `__TEXT.__swift5_assocty` | `0x15f0` | `0x1620` | **`+0x30`** |
+| `__TEXT.__swift_as_cont` | `0x3bc` | `0x3e0` | **`+0x24`** |
+| `__TEXT.__swift_as_entry` | `0x208` | `0x224` | **`+0x1c`** |
+| `__TEXT.__swift_as_ret` | `0x1d0` | `0x1e8` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0x1130` | `0x1140` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x7f8` | `0x804` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x290` | `0x298` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -147.1.0.0.0
--  __TEXT.__text: 0x215ae0
--  __TEXT.__objc_methlist: 0x20b8
--  __TEXT.__const: 0x19cc4
--  __TEXT.__cstring: 0x9056
 +148.0.0.0.0
-+  __TEXT.__text: 0x21ccb0
-+  __TEXT.__objc_methlist: 0x2100
-+  __TEXT.__const: 0x1a024
-+  __TEXT.__cstring: 0x92e6
-   __TEXT.__gcc_except_tab: 0x1e0
-   __TEXT.__oslogstring: 0x1a3d
-   __TEXT.__dlopen_cstrs: 0x17f
--  __TEXT.__swift5_typeref: 0x1d378
--  __TEXT.__constg_swiftt: 0x7aa0
--  __TEXT.__swift5_reflstr: 0x4c16
--  __TEXT.__swift5_fieldmd: 0x5f58
-+  __TEXT.__swift5_typeref: 0x1d3b4
-+  __TEXT.__constg_swiftt: 0x7c08
-+  __TEXT.__swift5_reflstr: 0x4ce6
-+  __TEXT.__swift5_fieldmd: 0x5fec
-   __TEXT.__swift5_builtin: 0x2d0
--  __TEXT.__swift5_types: 0x7f8
--  __TEXT.__swift5_assocty: 0x15f0
--  __TEXT.__swift5_proto: 0x1130
-+  __TEXT.__swift5_types: 0x804
-+  __TEXT.__swift5_assocty: 0x1620
-+  __TEXT.__swift5_proto: 0x1140
-   __TEXT.__swift5_protos: 0x54
--  __TEXT.__swift5_capture: 0x2654
--  __TEXT.__swift_as_entry: 0x208
--  __TEXT.__swift_as_ret: 0x1d0
--  __TEXT.__swift_as_cont: 0x3bc
-+  __TEXT.__swift5_capture: 0x27a0
-+  __TEXT.__swift_as_entry: 0x224
-+  __TEXT.__swift_as_ret: 0x1e8
-+  __TEXT.__swift_as_cont: 0x3e0
-   __TEXT.__swift5_mpenum: 0x40
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0x6e48
--  __TEXT.__eh_frame: 0x70ac
-+  __TEXT.__unwind_info: 0x6f88
-+  __TEXT.__eh_frame: 0x71f8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x970
--  __DATA_CONST.__objc_classlist: 0x290
-+  __DATA_CONST.__const: 0xa70
-+  __DATA_CONST.__objc_classlist: 0x298
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0xf8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x15a0
-+  __DATA_CONST.__objc_selrefs: 0x1668
-   __DATA_CONST.__objc_protorefs: 0x80
-   __DATA_CONST.__objc_superrefs: 0x48
--  __DATA_CONST.__got: 0x17c8
--  __AUTH_CONST.__const: 0xe7e0
-+  __DATA_CONST.__got: 0x1810
-+  __AUTH_CONST.__const: 0xe938
-   __AUTH_CONST.__cfstring: 0x2a0
--  __AUTH_CONST.__objc_const: 0x5e10
--  __AUTH_CONST.__auth_got: 0x2af8
--  __AUTH.__objc_data: 0x2868
--  __AUTH.__data: 0x4638
-+  __AUTH_CONST.__objc_const: 0x6020
-+  __AUTH_CONST.__auth_got: 0x2b50
-+  __AUTH.__objc_data: 0x898
-+  __AUTH.__data: 0x27c0
-   __DATA.__objc_ivar: 0xd4
--  __DATA.__data: 0x5420
-+  __DATA.__data: 0x5318
-   __DATA.__objc_stublist: 0x8
--  __DATA.__bss: 0x1e0b0
--  __DATA.__common: 0x5d0
--  __DATA_DIRTY.__objc_data: 0x620
--  __DATA_DIRTY.__data: 0x2c00
--  __DATA_DIRTY.__bss: 0x3c50
--  __DATA_DIRTY.__common: 0x160
-+  __DATA.__bss: 0x1df00
-+  __DATA.__common: 0x448
-+  __DATA_DIRTY.__objc_data: 0x27a8
-+  __DATA_DIRTY.__data: 0x4d38
-+  __DATA_DIRTY.__bss: 0x4130
-+  __DATA_DIRTY.__common: 0x2f8
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-   - /System/Library/Frameworks/Combine.framework/Combine
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10471
--  Symbols:   5038
+-  Symbols:   4468
 -  CStrings:  1017
 +  Functions: 10583
-+  Symbols:   5089
++  Symbols:   4497
 +  CStrings:  1029
- 
 Symbols:
 + _CGImageSourceCreateThumbnailAtIndex
 + _CGImageSourceCreateWithURL
@@ -178,32 +112,6 @@ Symbols:
 + _kCGImageSourceCreateThumbnailWithTransform
 + _kCGImageSourceShouldCacheImmediately
 + _kCGImageSourceThumbnailMaxPixelSize
-+ _objc_msgSend$animationImages
-+ _objc_msgSend$configurationWithPointSize:weight:
-+ _objc_msgSend$constraintEqualToAnchor:constant:
-+ _objc_msgSend$convertPoint:toCoordinateSpace:
-+ _objc_msgSend$defaultDataStore
-+ _objc_msgSend$image
-+ _objc_msgSend$initWithArrangedSubviews:
-+ _objc_msgSend$isMainThread
-+ _objc_msgSend$isTracking
-+ _objc_msgSend$prepare
-+ _objc_msgSend$selectionChanged
-+ _objc_msgSend$setAlignment:
-+ _objc_msgSend$setAxis:
-+ _objc_msgSend$setContentHuggingPriority:forAxis:
-+ _objc_msgSend$setCornerRadius:
-+ _objc_msgSend$setMaximumValue:
-+ _objc_msgSend$setMinimumValue:
-+ _objc_msgSend$setMuted:
-+ _objc_msgSend$setPreferredForwardBufferDuration:
-+ _objc_msgSend$setPriority:
-+ _objc_msgSend$setSpacing:
-+ _objc_msgSend$setValue:
-+ _objc_msgSend$setValue:animated:
-+ _objc_msgSend$tertiaryLabelColor
-+ _objc_msgSend$thumbRectForBounds:trackRect:value:
-+ _objc_msgSend$trackRectForBounds:
 + _symbolic SaySo13UIMenuElementCGIegg_
 + _symbolic SaySo6UIViewCG
 + _symbolic SbIeAgHr_
@@ -440,10 +348,6 @@ Symbols:
 - _get_witness_table qd0__7SwiftUI4ViewHD5_AaBPAAE5alert_11isPresented10presenting7actions7messageQrqd___AA7BindingVySbGqd_2_Sgqd_0_qd_2_XEqd_1_qd_2_XEtSyRd__AaBRd_0_AaBRd_1_r2_lFQOyAA15ModifiedContentVyAA15NavigationStackVySay09Sensitivel8AnalysisB012ReportScreenOGAcAE21navigationDestination3for11destinationQrqd__m_qd_0_qd__ctSHRd__AaBRd_0_r0_lFQOyAA05EmptyC0V_AsQ0q13ToAuthoritiesrC0VQo_GAQ0qX24AppleVideoDismissToolbarVG_SSAA012_ConditionalL0VyAA05TupleL0VyAQ8SCButtonV_A10_QPGA10_GAQ6SCTextVAQ0Q0C5ErrorOQo_HO
 - _get_witness_table qd0__7SwiftUI4ViewHD5_AaBPAAE5alert_11isPresented7actions7messageQrqd___AA7BindingVySbGqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAA01_C16Modifier_ContentVy09Sensitivek8AnalysisB032ReportToAppleVideoDismissToolbarVG_SSAA012_ConditionalK0VyAA05TupleK0VyAM8SCButtonV_AVQPGAWGAM6SCTextVQo_HO
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBP024SensitiveContentAnalysisB0E06onShowE0yQryycSgFQOyAcAE4task2id4name8priority4file4line_Qrqd___SSSgScPSSSiyyYaYAcntSQRd__lFQOyAA012_ConditionalE0VyAOyAOyAOyAOyAA08ModifiedE0VyAA01_c9Modifier_E0VyAD08StackingQ033_39A8AC89D1D8404DA8A2C46532AC38FELLVGAVGAcAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQOyAcDE08prefetchdE6PolicyQryFQOyAQyAwD0de6ShieldQ0VG_Qo__0deF00F12HistoryCacheCQo_GAOyA9_AcAEAYyQrAZRld__CA_A0_Rd__lFQOyAcDEA1_QryFQOyAQyAwD018VideoStreamShieldsQ0VG_Qo__A8_Qo_GGAOyAOyA9_A9_GA18_GGAOyAOyA18_AOyA9_SgA21_GGAOyAOyAWA21_GAOyA18_SgSgA21_GGGGA22_G_SiQo__Qo_HO
-- _objc_msgSend$initWithOptions:contextDictionary:analysis:analysesMap:
-- _objc_msgSend$nonPersistentDataStore
-- _objc_msgSend$options
-- _objc_msgSend$secondarySystemFillColor
 - _symbolic SaySo6UIMenuCG
 - _symbolic So32SCUIMoreHelpContextMenuContainerC
 - _symbolic _____ 26SensitiveContentAnalysisUI0B17PreviewSliderViewV

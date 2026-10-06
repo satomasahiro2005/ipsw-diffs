@@ -2,22 +2,18 @@
 
 > `/usr/lib/libmecab.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x532b0` | `0x532cc` | **`+0x1c`** |
+
+### Other Changes
+
 ```diff
 
- 1159.0.0.0.0
--  __TEXT.__text: 0x532b0
-+  __TEXT.__text: 0x532cc
-   __TEXT.__const: 0x1548
-   __TEXT.__cstring: 0x6ce2
-   __TEXT.__gcc_except_tab: 0x2f44
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libiconv.2.dylib
-   Functions: 957
 -  Symbols:   1451
 +  Symbols:   1450
-   CStrings:  650
- 
 Symbols:
 - _OUTLINED_FUNCTION_3
 Functions:

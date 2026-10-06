@@ -2,109 +2,47 @@
 
 > `/usr/lib/usd/libusd_ms.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x623510` | `0x62c8c0` | **`+0x93b0`** |
+| `__TEXT.__text` | `0x274b464` | `0x2743a60` | **`-0x7a04`** |
+| `__TEXT.__cstring` | `0x2afbac` | `0x2b0a0c` | **`+0xe60`** |
+| `__TEXT.__eh_frame` | `0x3d698` | `0x3cc08` | **`-0xa90`** |
+| `__TEXT.__oslogstring` | `0x1e6c7` | `0x1ef33` | **`+0x86c`** |
+| `__TEXT.__gcc_except_tab` | `0x25b218` | `0x25a9c4` | **`-0x854`** |
+| `__DATA.__bss` | `0x26e920` | `0x26e3a0` | **`-0x580`** |
+| `__TEXT.__unwind_info` | `0x112350` | `0x112730` | **`+0x3e0`** |
+| `__AUTH_CONST.__const` | `0x130660` | `0x130460` | **`-0x200`** |
+| `__AUTH.__data` | `0x60a8` | `0x5f48` | **`-0x160`** |
+| `__DATA_CONST.__const` | `0xd868` | `0xd940` | **`+0xd8`** |
+| `__TEXT.__swift5_assocty` | `0x5be0` | `0x5b28` | **`-0xb8`** |
+| `__TEXT.__constg_swiftt` | `0x7a28` | `0x7974` | **`-0xb4`** |
+| `__DATA.__data` | `0x55100` | `0x55078` | **`-0x88`** |
+| `__AUTH_CONST.__weak_auth_got` | `0xb290` | `0xb220` | **`-0x70`** |
+| `__TEXT.__swift5_builtin` | `0x34e4` | `0x3480` | **`-0x64`** |
+| `__TEXT.__swift5_typeref` | `0x5f62` | `0x5f14` | **`-0x4e`** |
+| `__AUTH_CONST.__auth_got` | `0x1b28` | `0x1b68` | **`+0x40`** |
+| `__TEXT.__swift5_types` | `0x1a5c` | `0x1a24` | **`-0x38`** |
+| `__TEXT.__swift5_fieldmd` | `0x6c78` | `0x6c44` | **`-0x34`** |
+| `__TEXT.__swift5_proto` | `0x2600` | `0x25d0` | **`-0x30`** |
+| `__DATA_CONST.__got` | `0x8c8` | `0x8d8` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x4ab9` | `0x4ac9` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -24.1.20.0.0
--  __TEXT.__text: 0x274b464 sha256:031be42a821556c59847efef7ae708c432a52bd15a3f0cc8b067911e9c091b87
--  __TEXT.__gcc_except_tab: 0x25b218 sha256:6a267317073107a4fbc18a020dd816ae1cbbb8ddf8abe1769309db8c1fc3ecc5
--  __TEXT.__const: 0x623510 sha256:d1f96d0890873ba76391689506726ff1f5541b701b8474cb2308c350104d2923
--  __TEXT.__cstring: 0x2afbac sha256:f4216432e431d63e2b627acdbfc5a9d80d211d055c1f7a40ba472ad6394d70a3
--  __TEXT.__oslogstring: 0x1e6c7 sha256:48a84098e83d7bf8206eaaad1eef195e042b68f8db9e825141b78827a97dbac5
--  __TEXT.__swift5_typeref: 0x5f62 sha256:6d55f34615ddeeebecf69c9b455ca4481f0eebfa0537fc8efcd345516c655ec9
--  __TEXT.__constg_swiftt: 0x7a28 sha256:e702749da897f1253fb07f94535e16a9130b407d1e3103c5212c6f5aa9a39611
--  __TEXT.__swift5_reflstr: 0x4ab9 sha256:31372bd665d9def9ee9a782ffbdea8b2a49da36e9fd6672bb2881d9ebfb0f2f0
--  __TEXT.__swift5_assocty: 0x5be0 sha256:3b7cddd76b77e5f8bf3f1b74cad81bffa9ab98f5e2a97a6ad9cbad34ad1a2621
--  __TEXT.__swift5_fieldmd: 0x6c78 sha256:0a9fe7095b1b424827414251cc0f87a0602c7085cb07ae09d6857f1faf76547f
--  __TEXT.__swift5_builtin: 0x34e4 sha256:537440a7cebc05328f420a07427b742aa5aff4dbd589c15b0bfc349afcafdcc6
--  __TEXT.__swift5_proto: 0x2600 sha256:e7df846530b031a95ec53ff8387e7f7101f80932e2fcfc2c59cff392b79781d8
--  __TEXT.__swift5_types: 0x1a5c sha256:089fdbb3e9c463523083e8842c52a5e1a7af83de47c0c378e5636e86c36ffaeb
--  __TEXT.__swift5_protos: 0xb0 sha256:23ffc88aa78ac5590bfc4c260790a941d8246ea19b357db16962e05e29edaf75
--  __TEXT.__swift5_types2: 0x1c sha256:af2b8a19e2b20ff0f94603c70f660b474abcd16b3693604575b3a4d954e378ab
--  __TEXT.__swift5_capture: 0x18c sha256:b31651035d39ee7130116c2f864034fc22bd9b5e37729dbc85b03efd359bda4f
--  __TEXT.__unwind_info: 0x112350 sha256:0943044b5b2ddccfaa6b10018404158b6d07daacaae2f9bb13ec6258145e51cc
--  __TEXT.__eh_frame: 0x3d698 sha256:411730b86bc8d6967ee2afc22efb631280f419926b48bc093ce880588185bb33
 +24.1.23.0.0
-+  __TEXT.__text: 0x2743a60 sha256:87395c57a4b3931e4245e0720e9b517eb118a3acda3ff1f9327693635ebb4381
-+  __TEXT.__gcc_except_tab: 0x25a9c4 sha256:568b0a8f202f9d60b6e86ca4cea41352fd930461e2f9b8d05f976f09ab84a1bf
-+  __TEXT.__const: 0x62c8c0 sha256:ca4a28fea9282b5a460b4a310892586fe295aecc17ee7fe790bd42279b1e7d7f
-+  __TEXT.__cstring: 0x2b0a0c sha256:737f61d43f41d08b8ba945b5b0917d743b42ff89efa96ebd37c79cfcb1bb7c97
-+  __TEXT.__oslogstring: 0x1ef33 sha256:631fe48a2bc0ba442843fe8de40b0cdf5c08eaf72aacf5ad8e4a2ff707ecb373
-+  __TEXT.__swift5_typeref: 0x5f14 sha256:b7b69caa7e42473acb1815888c0a76003e7bc4563f6e8164f76fee771bd3be02
-+  __TEXT.__constg_swiftt: 0x7974 sha256:0a47fb78675cfd77578c35617def97bc72dc806a7c5fd1173596a4452117e9b0
-+  __TEXT.__swift5_reflstr: 0x4ac9 sha256:a310b9e6cd8e46e84d18a50f2059a6f8a68a259e04c531d211226748fcf07bda
-+  __TEXT.__swift5_assocty: 0x5b28 sha256:1ab5325112cc26087205d1570d37e85650a9f97133e1e7774acbc52015c3d70e
-+  __TEXT.__swift5_fieldmd: 0x6c44 sha256:23c3dc791fab230c06cde879814db500337a54561c06266b36764cbddead45dc
-+  __TEXT.__swift5_builtin: 0x3480 sha256:42e9bf5efb6939c1db543fe4b7710941d6fd94eb962d3adf2e1ff82c22ce23a4
-+  __TEXT.__swift5_proto: 0x25d0 sha256:628c3f401dd00353894808c9cd766e7fbd152dd04ce58e03b2d0dd07f9e1954f
-+  __TEXT.__swift5_types: 0x1a24 sha256:4222b3e1af03f85cb4cc398a142619eb5d1b84ce755b0b8e9f0920bfbc24b954
-+  __TEXT.__swift5_protos: 0xb0 sha256:a280059a65fe1f141ad13413e370e152792825ca6f5eb568435b8058850963d9
-+  __TEXT.__swift5_types2: 0x1c sha256:844ee4bad023db1c3d98b4bd2614b9075604b4ef89b80669d9a8f3dd06d6e50a
-+  __TEXT.__swift5_capture: 0x18c sha256:30e8919fd62dab8297815cadb3f3af1fd0a7e1024ddc29cc78cab723ec34eecc
-+  __TEXT.__unwind_info: 0x112730 sha256:d62d5058c697fd47acc74306ba8505c1b00c9a38a6d4bcf1fa828fddac099b81
-+  __TEXT.__eh_frame: 0x3cc08 sha256:2ee54a978a7e45f503e390cc7a4b971afb78dea3a9a950931352a8780b62b842
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xd868 sha256:46ef6b6d1ec997feb0b34afc184489c73e4cc206ee248625f7718e150a69df49
--  __DATA_CONST.__objc_classlist: 0x40 sha256:708bcc4491116748499bc0feabcf6e48af433c184edaa367040203ac1e67cc90
-+  __DATA_CONST.__const: 0xd940 sha256:0fc34f3e04d9dd33239122bdeb612375c1f77d17ebf3e304da1fd17301ddc736
-+  __DATA_CONST.__objc_classlist: 0x40 sha256:4c2b8de8ea6d01971ffcae4288049d146dd4d979585a4db9cabb2b08eb0788c6
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__weak_got: 0x1ef0 sha256:3e35720e405b6fb3772fbe6eec2880f642421b44e9f38f2ff7207871208b6510
--  __DATA_CONST.__objc_selrefs: 0x888 sha256:5812991482587e74077242f86309d6708f6abc9abf5b14c42d6abc15343fa80c
--  __DATA_CONST.__objc_arraydata: 0x10 sha256:aac145f5660b5116ef88c3a29a138dac8bc59b05c56d1f4d333ace1b317bdee8
--  __DATA_CONST.__got: 0x8c8 sha256:5bc4bc9f1d36f90777d39b3c0182b139442f3c6dbea1c461376d54a181e9d2c9
--  __AUTH_CONST.__const: 0x130660 sha256:7868a19a3f5ff3a55b071362c485726366b37cfc91f4b4a6530cb041878b6a66
--  __AUTH_CONST.__cfstring: 0x540 sha256:32632a38bfa32eaafb757dcef944393681c7e4e83880fb125d8df229b5895601
--  __AUTH_CONST.__objc_const: 0x670 sha256:70f6729243187de88a9bf47c1780732567a715c5915c9a8dfc779d67d57f1345
--  __AUTH_CONST.__weak_auth_got: 0xb290 sha256:8ec0c9e63eea4c7e30f0607aeb201a67d3b456ff96af3f0257200f0c8c42ae27
--  __AUTH_CONST.__objc_intobj: 0x210 sha256:69231d588a7d42668319ac01a020d295806072c6c1f20f71f6f1d61c6f5d90b6
--  __AUTH_CONST.__objc_dictobj: 0x28 sha256:73f6b1985df6285767557152169b290e8036d82416c1861707f375b0ef014299
--  __AUTH_CONST.__auth_got: 0x1b28 sha256:4fa70f7c63cb89b6d465ef73d950ad311d4c0c3ea28716a3462deda8d172a48a
--  __AUTH.__data: 0x60a8 sha256:1f7d0ebb7b98eabfd1112772423a6d21c7d363bd681121f4a578b7a9ced9b874
--  __AUTH.__mtlx_registry: 0x2c0 sha256:ff5143313c24a49e10a245487ada06cd1713f16e61d9cecc3cd2708ba32ddd94
--  __AUTH.pxrctor: 0x40 sha256:3be4b12fff2ccf2588ea3d114107983e780426238597803b4c5b2566d40bd3c6
--  __AUTH.__tf_func: 0x3990 sha256:7d088faee3c3f64577d38fa65b4b66f59138f419f2ad3ab31e771e104701901a
-+  __DATA_CONST.__weak_got: 0x1ef0 sha256:af5b493a74bcca7bf3484d5028047d3e8e06d375798207b8bf14163f7148ec9e
-+  __DATA_CONST.__objc_selrefs: 0x888 sha256:9f6312cc60beb61753b906bc24e56f0e48ef92d7540561a8b44a41974cbf728c
-+  __DATA_CONST.__objc_arraydata: 0x10 sha256:d848a86e522607d2dff4c55ef2319a8a425a2c059e6680d0b76b1828851e1547
-+  __DATA_CONST.__got: 0x8d8 sha256:a66fda89261884ae5fc6dc64013e7ca7320e868ced427a2c2f32f7ba66380756
-+  __AUTH_CONST.__const: 0x130460 sha256:4c726d5c00f77f04eb58f78047f0945e030d252262c436909701c3bae73d16fe
-+  __AUTH_CONST.__cfstring: 0x540 sha256:e4082ce71f6be61dac99e9f6236607181409c268a9ca23b879f4e5a5ec81a473
-+  __AUTH_CONST.__objc_const: 0x670 sha256:2c77c843109dde9d0d041591918c8d26debf2d05216106a5841206c53763b0ac
-+  __AUTH_CONST.__weak_auth_got: 0xb220 sha256:78e1ff67e69c701a848938353d042744fc93c2bf84e4c45a9efaa151d745d50f
-+  __AUTH_CONST.__objc_intobj: 0x210 sha256:aeba6a18540b6d4de23d5737e75f214c07aee12cc179ac33926e8fe46d79f17b
-+  __AUTH_CONST.__objc_dictobj: 0x28 sha256:42eabdf3b2647260677ac7cb2aacd668413b608874deba0ead675bb6443c2dfa
-+  __AUTH_CONST.__auth_got: 0x1b68 sha256:a447d5ef2f0e0ebfb6acb01a9da5dbc7fffe2128796221c7444ebd67cce04dab
-+  __AUTH.__data: 0x5f48 sha256:6e6dfdbf3ee140c1d8c8a48520213492c272f493244e20e85139507f9d0190d0
-+  __AUTH.__mtlx_registry: 0x2c0 sha256:fe268291a1a28ec2f6ab6b5f808cad28cbe6d9141345cac513dd071b548d2157
-+  __AUTH.pxrctor: 0x40 sha256:17732d0f4f3445a7dd13f379a2a93ff31c9faa030b0e6605251112a150ae0966
-+  __AUTH.__tf_func: 0x3990 sha256:a57260ba620238f9c0dc8b917724a6a53b2356daeb2313a3ff2789358a1dd27c
-   __AUTH.__thread_vars: 0x2d0 sha256:101fa35ad17d420654883614105c65c7af7897a96fc7c319e3b5c46d3284d20d
-   __AUTH.__thread_data: 0x4 sha256:7aa8ca4a02506da9133d8f889678b76f716ce45d02e22fdb7b70a15e56a0eff8
-   __AUTH.__thread_bss: 0x44150 sha256:321b070a78f36a4e9ff55882a4c38ce1b4894f4b5eb41b27ccc6248deb266109
--  __DATA.__data: 0x55100 sha256:de2909eeca5e3d9058d25e0197d0ee79fc59113a31778b08b8d4d83ea75d2a93
--  __DATA.__bss: 0x26e920 sha256:f6255eeb75062ffaa5a45757bc68cf3cc05aba6c45fbdd4d23c82b7fdf3278a4
-+  __DATA.__data: 0x55078 sha256:861caa4e8be47031d00338b20c6fca5a75f20bada4a66c3a1c8904671ae5cd16
-+  __DATA.__bss: 0x26e3a0 sha256:5a48ec43581cef04c8fae6993bf5b75f0bdd21ec89c1e5d2935a406a1ec89ce3
-   __DATA.__common: 0x5ff0 sha256:dfad732abb3e00c021162223bca2f8d4fa601498caa81952ecffb9cf0dc7f956
-   __DATA_DIRTY.__mtlx_registry: 0x0
-   __DATA_DIRTY.__tf_func: 0x0
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_errno.dylib
-   - /usr/lib/swift/libswiftos.dylib
--  UUID: 4F91C438-76AC-3B2B-8AB5-68BB68084A47
 -  Functions: 200956
 -  Symbols:   54427
--  CStrings:  31194
-+  UUID: DFBC58E8-E3C3-3056-BE74-2253F780EC97
+-  CStrings:  31122
 +  Functions: 200865
 +  Symbols:   54406
-+  CStrings:  31302
- 
++  CStrings:  31230
 Symbols:
 + _$s10Foundation14LocalizedErrorMp
 + _$s10Foundation14LocalizedErrorP10helpAnchorSSSgvgTq
@@ -1485,8 +1423,6 @@ CStrings:
 + "Unsupported COLOR_0 accessor (type %d, componentType %d, normalized %d); skipping vertex colors"
 + "UsdAbcAlembicFileFormat::Read (vector<byte>) [DEPRECATED]"
 + "UsdGltfFileFormat::Read (vector<byte>) [DEPRECATED]"
-+ "UsdStageRefPtr pxrInternal__aapl__pxrReserved__::(anonymous namespace)::_MtlxTest(R &&, bool) [R = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/usdMtlx/backdoor.cpp:60:9)]"
-+ "UsdStageRefPtr pxrInternal__aapl__pxrReserved__::(anonymous namespace)::_MtlxTest(R &&, bool) [R = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/usdMtlx/backdoor.cpp:72:9)]"
 + "UsdStlFileFormat::Read (vector<byte>) [DEPRECATED]"
 + "UsdXpcFileFormat::Read (vector<byte>) [DEPRECATED]"
 + "Usd_CrateFile::CrateFile::Open (SdfBufferRefPtr)"
@@ -1497,12 +1433,7 @@ CStrings:
 + "_ValidateDetachedLayer"
 + "bool adobe::usd::loadExternalMaterials(Obj &, const std::string &, bool, std::unordered_map<std::string, int> &, std::unordered_map<std::string, int> &)"
 + "bool adobe::usd::readObj(Obj &, const char *, size_t, const std::string &, bool)"
-+ "bool pxrInternal__aapl__pxrReserved__::(anonymous namespace)::_Read(UsdStagePtr, R &&) [R = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/usdMtlx/fileFormat.cpp:106:16)]"
-+ "bool pxrInternal__aapl__pxrReserved__::(anonymous namespace)::_Read(UsdStagePtr, R &&) [R = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/usdMtlx/fileFormat.cpp:171:16)]"
-+ "bool pxrInternal__aapl__pxrReserved__::PcpDynamicFileFormatContext::_ComposeValueHelper::_ComposeOpinionInSubtree(const PcpNodeRef &, const SdfPath &, const TfToken &, const TfToken &, const ComposeFunc &) [ComposeFunc = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/pcp/dynamicFileFormatContext.cpp:297:17)]"
-+ "bool pxrInternal__aapl__pxrReserved__::PcpDynamicFileFormatContext::_ComposeValueHelper::_ComposeOpinionInSubtree(const PcpNodeRef &, const SdfPath &, const TfToken &, const TfToken &, const ComposeFunc &) [ComposeFunc = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/pcp/dynamicFileFormatContext.cpp:317:13)]"
-+ "bool pxrInternal__aapl__pxrReserved__::PcpDynamicFileFormatContext::_ComposeValueHelper::_ComposeOpinionInSubtree(const PcpNodeRef &, const SdfPath &, const TfToken &, const TfToken &, const ComposeFunc &) [ComposeFunc = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/pcp/dynamicFileFormatContext.cpp:342:9)]"
-+ "bool pxrInternal__aapl__pxrReserved__::PcpDynamicFileFormatContext::_ComposeValueHelper::_ComposeOpinionInSubtree(const PcpNodeRef &, const SdfPath &, const TfToken &, const TfToken &, const ComposeFunc &) [ComposeFunc = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/pcp/dynamicFileFormatContext.cpp:362:9)]"
++ "bool pxrInternal__aapl__pxrReserved__::(anonymous namespace)::_Read(UsdStagePtr, R &&) [R = (lambda at /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/USDLib/USD/pxr/usd/usdMtlx/fileFormat.cpp:171:16)]"
 + "bool pxrInternal__aapl__pxrReserved__::SdfFileFormat::ReadDetached(SdfLayer *, const std::string &, const SdfBufferRefPtr &, bool) const"
 + "bool pxrInternal__aapl__pxrReserved__::SdfFileFormat::_ValidateDetachedLayer(SdfLayer *, const std::string &, bool) const"
 + "bool pxrInternal__aapl__pxrReserved__::SdfLayer::_Read(const string &, const ArResolvedPath &, const SdfBufferRefPtr &, bool)"
@@ -1519,7 +1450,7 @@ CStrings:
 + "bool pxrInternal__aapl__pxrReserved__::UsdNamespaceEditor::ReparentPrim(const UsdPrim &, const UsdPrim &, const TfToken &)"
 + "bool pxrInternal__aapl__pxrReserved__::UsdPlyFileFormat::_ReadPlyData(SdfLayer *, const std::string &, PLYData &, bool, const char *) const"
 + "bool pxrInternal__aapl__pxrReserved__::UsdStlFileFormat::_ReadStlData(SdfLayer *, const std::string &, StlModel &) const"
-+ "bool pxrInternal__aapl__pxrReserved__::_SetMappedValueForEditTarget(const UsdObject &, const TsSpline &, const UsdEditTarget &, const Fn &) [Fn = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/usd/stage.cpp:2345:9)]"
++ "bool pxrInternal__aapl__pxrReserved__::_SetMappedValueForEditTarget(const UsdObject &, const TsSpline &, const UsdEditTarget &, const Fn &) [Fn = (lambda at /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/USDLib/USD/pxr/usd/usd/stage.cpp:2345:9)]"
 + "buffer_%llx_%x"
 + "char *pxrInternal__aapl__pxrReserved__::SdfZipFileWriter::GetBuffer()"
 + "empty"
@@ -1528,40 +1459,13 @@ CStrings:
 + "memory://%s%s?address=%llx&size=%zu"
 + "readFromStream"
 + "readObj called with null or empty buffer"
-+ "size_t pxrInternal__aapl__pxrReserved__::(anonymous namespace)::StageContainer::_EraseAllIf(const SdfLayerHandle &, ConditionFn &&, vector<Entry> *) [ConditionFn = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/usd/stageCache.cpp:118:28)]"
-+ "size_t pxrInternal__aapl__pxrReserved__::(anonymous namespace)::StageContainer::_EraseAllIf(const SdfLayerHandle &, ConditionFn &&, vector<Entry> *) [ConditionFn = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/usd/stageCache.cpp:126:27)]"
-+ "size_t pxrInternal__aapl__pxrReserved__::(anonymous namespace)::StageContainer::_EraseAllIf(const SdfLayerHandle &, ConditionFn &&, vector<Entry> *) [ConditionFn = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/usd/stageCache.cpp:138:13)]"
-+ "size_t pxrInternal__aapl__pxrReserved__::HdInstanceRegistry<std::shared_ptr<MaterialX__aapl::Shader>>::GarbageCollect(Callback &&, int) [VALUE = std::shared_ptr<MaterialX__aapl::Shader>, Callback = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/imaging/hd/instanceRegistry.h:243:27)]"
-+ "size_t pxrInternal__aapl__pxrReserved__::HdInstanceRegistry<std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdBufferArrayRange>>::GarbageCollect(Callback &&, int) [VALUE = std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdBufferArrayRange>, Callback = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/imaging/hd/instanceRegistry.h:243:27)]"
-+ "size_t pxrInternal__aapl__pxrReserved__::HdInstanceRegistry<std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdStGLSLProgram>>::GarbageCollect(Callback &&, int) [VALUE = std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdStGLSLProgram>, Callback = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/imaging/hd/instanceRegistry.h:243:27)]"
-+ "size_t pxrInternal__aapl__pxrReserved__::HdInstanceRegistry<std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdStRenderPassShader>>::GarbageCollect(Callback &&, int) [VALUE = std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdStRenderPassShader>, Callback = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/imaging/hd/instanceRegistry.h:243:27)]"
-+ "size_t pxrInternal__aapl__pxrReserved__::HdInstanceRegistry<std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdStTextureObject>>::GarbageCollect(Callback &&, int) [VALUE = std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdStTextureObject>, Callback = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/imaging/hd/instanceRegistry.h:243:27)]"
-+ "size_t pxrInternal__aapl__pxrReserved__::HdInstanceRegistry<std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdSt_BasisCurvesTopology>>::GarbageCollect(Callback &&, int) [VALUE = std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdSt_BasisCurvesTopology>, Callback = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/imaging/hd/instanceRegistry.h:243:27)]"
-+ "size_t pxrInternal__aapl__pxrReserved__::HdInstanceRegistry<std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdSt_GeometricShader>>::GarbageCollect(Callback &&, int) [VALUE = std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdSt_GeometricShader>, Callback = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/imaging/hd/instanceRegistry.h:243:27)]"
-+ "size_t pxrInternal__aapl__pxrReserved__::HdInstanceRegistry<std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdSt_MeshTopology>>::GarbageCollect(Callback &&, int) [VALUE = std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdSt_MeshTopology>, Callback = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/imaging/hd/instanceRegistry.h:243:27)]"
-+ "size_t pxrInternal__aapl__pxrReserved__::HdInstanceRegistry<std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdSt_VertexAdjacencyBuilder>>::GarbageCollect(Callback &&, int) [VALUE = std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdSt_VertexAdjacencyBuilder>, Callback = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/imaging/hd/instanceRegistry.h:243:27)]"
-+ "size_t pxrInternal__aapl__pxrReserved__::HdInstanceRegistry<std::shared_ptr<pxrInternal__aapl__pxrReserved__::HioGlslfx>>::GarbageCollect(Callback &&, int) [VALUE = std::shared_ptr<pxrInternal__aapl__pxrReserved__::HioGlslfx>, Callback = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/imaging/hd/instanceRegistry.h:243:27)]"
 + "size_t pxrInternal__aapl__pxrReserved__::SdfZipFileWriter::GetSize()"
 + "static CrateFile::_FileMapping pxrInternal__aapl__pxrReserved__::Sdf_CrateFile::CrateFile::_MmapBuffer(const char *, const SdfBufferRefPtr &)"
-+ "static PredicateFunction pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<const pxrInternal__aapl__pxrReserved__::HdSceneIndexPrim &>::_TryToBindCall(const Fn &, const std::vector<SdfPredicateExpression::FnArg> &, const NamesAndDefaults &) [DomainType = const pxrInternal__aapl__pxrReserved__::HdSceneIndexPrim &, Fn = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/imaging/hd/collectionPredicateLibrary.cpp:102:26)]"
-+ "static PredicateFunction pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<const pxrInternal__aapl__pxrReserved__::HdSceneIndexPrim &>::_TryToBindCall(const Fn &, const std::vector<SdfPredicateExpression::FnArg> &, const NamesAndDefaults &) [DomainType = const pxrInternal__aapl__pxrReserved__::HdSceneIndexPrim &, Fn = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/imaging/hd/collectionPredicateLibrary.cpp:231:9)]"
-+ "static PredicateFunction pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<const pxrInternal__aapl__pxrReserved__::HdSceneIndexPrim &>::_TryToBindCall(const Fn &, const std::vector<SdfPredicateExpression::FnArg> &, const NamesAndDefaults &) [DomainType = const pxrInternal__aapl__pxrReserved__::HdSceneIndexPrim &, Fn = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/imaging/hd/collectionPredicateLibrary.cpp:80:9)]"
-+ "static PredicateFunction pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<pxrInternal__aapl__pxrReserved__::UsdObject>::_TryToBindCall(const Fn &, const std::vector<SdfPredicateExpression::FnArg> &, const NamesAndDefaults &) [DomainType = pxrInternal__aapl__pxrReserved__::UsdObject, Fn = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/usd/collectionPredicateLibrary.cpp:62:29)]"
-+ "static PredicateFunction pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<pxrInternal__aapl__pxrReserved__::UsdObject>::_TryToBindCall(const Fn &, const std::vector<SdfPredicateExpression::FnArg> &, const NamesAndDefaults &) [DomainType = pxrInternal__aapl__pxrReserved__::UsdObject, Fn = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/usd/collectionPredicateLibrary.cpp:70:28)]"
-+ "static PredicateFunction pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<pxrInternal__aapl__pxrReserved__::UsdObject>::_TryToBindCall(const Fn &, const std::vector<SdfPredicateExpression::FnArg> &, const NamesAndDefaults &) [DomainType = pxrInternal__aapl__pxrReserved__::UsdObject, Fn = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/usd/collectionPredicateLibrary.cpp:78:26)]"
-+ "static PredicateFunction pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<pxrInternal__aapl__pxrReserved__::UsdObject>::_TryToBindCall(const Fn &, const std::vector<SdfPredicateExpression::FnArg> &, const NamesAndDefaults &) [DomainType = pxrInternal__aapl__pxrReserved__::UsdObject, Fn = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/usd/collectionPredicateLibrary.cpp:90:26)]"
 + "static SdfLayerRefPtr pxrInternal__aapl__pxrReserved__::SdfLayer::FindOrOpen(const string &, const SdfBufferRefPtr &, const FileFormatArguments &)"
 + "static SdfLayerRefPtr pxrInternal__aapl__pxrReserved__::SdfLayer::_OpenLayerAndUnlockRegistry(Lock &, const _FindOrOpenLayerInfo &, const SdfBufferRefPtr &, bool) [Lock = tbb::queuing_rw_mutex::scoped_lock]"
 + "static SdfZipFile pxrInternal__aapl__pxrReserved__::SdfZipFile::Open(const SdfBufferRefPtr &)"
 + "static UsdStageRefPtr pxrInternal__aapl__pxrReserved__::UsdStage::Open(const SdfBufferRefPtr &, InitialLoadSet)"
 + "static UsdStageRefPtr pxrInternal__aapl__pxrReserved__::UsdStage::Open(const SdfBufferRefPtr &, const std::string &, InitialLoadSet)"
-+ "static bool pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<const pxrInternal__aapl__pxrReserved__::HdSceneIndexPrim &>::_CheckNamesAndDefaultsWithSignature(const NamesAndDefaults &) [DomainType = const pxrInternal__aapl__pxrReserved__::HdSceneIndexPrim &, Fn = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/imaging/hd/collectionPredicateLibrary.cpp:102:26)]"
-+ "static bool pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<const pxrInternal__aapl__pxrReserved__::HdSceneIndexPrim &>::_CheckNamesAndDefaultsWithSignature(const NamesAndDefaults &) [DomainType = const pxrInternal__aapl__pxrReserved__::HdSceneIndexPrim &, Fn = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/imaging/hd/collectionPredicateLibrary.cpp:231:9)]"
-+ "static bool pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<const pxrInternal__aapl__pxrReserved__::HdSceneIndexPrim &>::_CheckNamesAndDefaultsWithSignature(const NamesAndDefaults &) [DomainType = const pxrInternal__aapl__pxrReserved__::HdSceneIndexPrim &, Fn = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/imaging/hd/collectionPredicateLibrary.cpp:80:9)]"
-+ "static bool pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<pxrInternal__aapl__pxrReserved__::UsdObject>::_CheckNamesAndDefaultsWithSignature(const NamesAndDefaults &) [DomainType = pxrInternal__aapl__pxrReserved__::UsdObject, Fn = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/usd/collectionPredicateLibrary.cpp:62:29)]"
-+ "static bool pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<pxrInternal__aapl__pxrReserved__::UsdObject>::_CheckNamesAndDefaultsWithSignature(const NamesAndDefaults &) [DomainType = pxrInternal__aapl__pxrReserved__::UsdObject, Fn = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/usd/collectionPredicateLibrary.cpp:70:28)]"
-+ "static bool pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<pxrInternal__aapl__pxrReserved__::UsdObject>::_CheckNamesAndDefaultsWithSignature(const NamesAndDefaults &) [DomainType = pxrInternal__aapl__pxrReserved__::UsdObject, Fn = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/usd/collectionPredicateLibrary.cpp:78:26)]"
-+ "static bool pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<pxrInternal__aapl__pxrReserved__::UsdObject>::_CheckNamesAndDefaultsWithSignature(const NamesAndDefaults &) [DomainType = pxrInternal__aapl__pxrReserved__::UsdObject, Fn = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/usd/collectionPredicateLibrary.cpp:90:26)]"
 + "static std::unique_ptr<CrateFile> pxrInternal__aapl__pxrReserved__::Sdf_CrateFile::CrateFile::Open(const string &, const SdfBufferRefPtr &, bool)"
 + "usdaData"
 + "virtual bool pxrInternal__aapl__pxrReserved__::SdfFileFormat::_ReadDetached(SdfLayer *, const std::string &, const SdfBufferRefPtr &, bool) const"
@@ -1578,14 +1482,6 @@ CStrings:
 + "virtual bool pxrInternal__aapl__pxrReserved__::UsdMtlxFileFormat::Read(SdfLayer *, const std::string &, const SdfBufferRefPtr &, bool) const"
 + "virtual bool pxrInternal__aapl__pxrReserved__::UsdObjFileFormat::Read(SdfLayer *, const std::string &, const SdfBufferRefPtr &, bool) const"
 + "virtual bool pxrInternal__aapl__pxrReserved__::UsdPlyFileFormat::Read(SdfLayer *, const std::string &, const SdfBufferRefPtr &, bool) const"
-+ "void pxrInternal__aapl__pxrReserved__::(anonymous namespace)::_ProcessCulledDependency(const PcpCulledDependency &, const SdfPath &, const CacheFilterFn &, PcpDependencyVector *) [CacheFilterFn = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/pcp/cache.cpp:667:26)]"
-+ "void pxrInternal__aapl__pxrReserved__::(anonymous namespace)::_ProcessDependentNode(const PcpNodeRef &, const SdfPath &, const CacheFilterFn &, PcpDependencyVector *) [CacheFilterFn = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/pcp/cache.cpp:667:26)]"
-+ "void pxrInternal__aapl__pxrReserved__::Pcp_ForEachDependentNode(const SdfPath &, const LayerOrLayerStack &, const SdfPath &, const PcpCache &, const FN &) [FN = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/pcp/dependentNamespaceEditUtils.cpp:1785:21), LayerOrLayerStack = pxrInternal__aapl__pxrReserved__::TfWeakPtr<pxrInternal__aapl__pxrReserved__::SdfLayer>]"
-+ "void pxrInternal__aapl__pxrReserved__::Pcp_ForEachDependentNode(const SdfPath &, const LayerOrLayerStack &, const SdfPath &, const PcpCache &, const FN &) [FN = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/pcp/namespaceEdits.cpp:491:32), LayerOrLayerStack = pxrInternal__aapl__pxrReserved__::TfWeakPtr<pxrInternal__aapl__pxrReserved__::SdfLayer>]"
-+ "void pxrInternal__aapl__pxrReserved__::Pcp_ForEachDependentNode(const SdfPath &, const LayerOrLayerStack &, const SdfPath &, const PcpCache &, const FN &) [FN = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/pcp/namespaceEdits.cpp:518:36), LayerOrLayerStack = pxrInternal__aapl__pxrReserved__::TfWeakPtr<pxrInternal__aapl__pxrReserved__::SdfLayer>]"
-+ "void pxrInternal__aapl__pxrReserved__::Pcp_ForEachDependentNode(const SdfPath &, const LayerOrLayerStack &, const SdfPath &, const PcpCache &, const FN &) [FN = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/pcp/namespaceEdits.cpp:874:36), LayerOrLayerStack = pxrInternal__aapl__pxrReserved__::TfWeakPtr<pxrInternal__aapl__pxrReserved__::PcpLayerStack>]"
-+ "void pxrInternal__aapl__pxrReserved__::Pcp_ForEachDependentNode(const SdfPath &, const PcpLayerStackRefPtr &, const SdfPath &, const PcpCache &, const NodeFn &, const CulledDepFn &) [NodeFn = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/pcp/cache.cpp:732:28), CulledDepFn = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/pcp/cache.cpp:747:33)]"
-+ "void pxrInternal__aapl__pxrReserved__::Pcp_ForEachDependentNode(const SdfPath &, const PcpLayerStackRefPtr &, const SdfPath &, const PcpCache &, const NodeFn &, const CulledDepFn &) [NodeFn = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/pcp/changes.cpp:1539:17), CulledDepFn = (lambda at /Library/Caches/com.apple.xbs/CCA079D1-A534-4CE2-83E8-76D0CEC5DD8E/TemporaryDirectory.NoVhBy/Sources/USDLib/USD/pxr/usd/pcp/changes.cpp:1543:17)]"
 + "void usdStl::StlModel::Read(const char *, size_t)"
 + "void usdStl::StlModel::Read(const std::string &)"
 + "void usdStl::StlModel::readFromStream(std::istream &)"
@@ -1615,15 +1511,8 @@ CStrings:
 - "T *pxrInternal__aapl__pxrReserved__::TfRefPtr<pxrInternal__aapl__pxrReserved__::SdfLayerBuffer>::operator->() const [U = pxrInternal__aapl__pxrReserved__::SdfLayerBuffer]"
 - "T *pxrInternal__aapl__pxrReserved__::TfRefPtr<pxrInternal__aapl__pxrReserved__::SdfZipBuffer>::operator->() const [U = pxrInternal__aapl__pxrReserved__::SdfZipBuffer]"
 - "Unhandled accessor type when reading color data"
-- "UsdStageRefPtr pxrInternal__aapl__pxrReserved__::(anonymous namespace)::_MtlxTest(R &&, bool) [R = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/usdMtlx/backdoor.cpp:60:9)]"
-- "UsdStageRefPtr pxrInternal__aapl__pxrReserved__::(anonymous namespace)::_MtlxTest(R &&, bool) [R = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/usdMtlx/backdoor.cpp:72:9)]"
 - "Usd_CrateFile::CrateFile::Open"
-- "bool pxrInternal__aapl__pxrReserved__::(anonymous namespace)::_Read(UsdStagePtr, R &&) [R = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/usdMtlx/fileFormat.cpp:106:16)]"
-- "bool pxrInternal__aapl__pxrReserved__::(anonymous namespace)::_Read(UsdStagePtr, R &&) [R = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/usdMtlx/fileFormat.cpp:147:16)]"
-- "bool pxrInternal__aapl__pxrReserved__::PcpDynamicFileFormatContext::_ComposeValueHelper::_ComposeOpinionInSubtree(const PcpNodeRef &, const SdfPath &, const TfToken &, const TfToken &, const ComposeFunc &) [ComposeFunc = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/pcp/dynamicFileFormatContext.cpp:297:17)]"
-- "bool pxrInternal__aapl__pxrReserved__::PcpDynamicFileFormatContext::_ComposeValueHelper::_ComposeOpinionInSubtree(const PcpNodeRef &, const SdfPath &, const TfToken &, const TfToken &, const ComposeFunc &) [ComposeFunc = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/pcp/dynamicFileFormatContext.cpp:317:13)]"
-- "bool pxrInternal__aapl__pxrReserved__::PcpDynamicFileFormatContext::_ComposeValueHelper::_ComposeOpinionInSubtree(const PcpNodeRef &, const SdfPath &, const TfToken &, const TfToken &, const ComposeFunc &) [ComposeFunc = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/pcp/dynamicFileFormatContext.cpp:342:9)]"
-- "bool pxrInternal__aapl__pxrReserved__::PcpDynamicFileFormatContext::_ComposeValueHelper::_ComposeOpinionInSubtree(const PcpNodeRef &, const SdfPath &, const TfToken &, const TfToken &, const ComposeFunc &) [ComposeFunc = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/pcp/dynamicFileFormatContext.cpp:362:9)]"
+- "bool pxrInternal__aapl__pxrReserved__::(anonymous namespace)::_Read(UsdStagePtr, R &&) [R = (lambda at /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/USDLib/USD/pxr/usd/usdMtlx/fileFormat.cpp:147:16)]"
 - "bool pxrInternal__aapl__pxrReserved__::SdfFileFormat::ReadDetached(SdfLayer *, const std::string &, bool) const"
 - "bool pxrInternal__aapl__pxrReserved__::SdfFileFormat::ReadDetached(SdfLayer *, const std::string &, const std::vector<std::byte> &, bool) const"
 - "bool pxrInternal__aapl__pxrReserved__::SdfUsdzFileFormat::_ReadHelper(SdfLayer *, const std::string &, const std::vector<std::byte> &, bool) const [Detached = false]"
@@ -1632,40 +1521,13 @@ CStrings:
 - "bool pxrInternal__aapl__pxrReserved__::Sdf_CrateDataImpl::Open(const string &, Args &&...) [Args = <const std::shared_ptr<pxrInternal__aapl__pxrReserved__::ArAsset> &, bool &>]"
 - "bool pxrInternal__aapl__pxrReserved__::Sdf_CrateDataImpl::Open(const string &, const std::vector<std::byte> &, Args &&...) [Args = <bool &>]"
 - "bool pxrInternal__aapl__pxrReserved__::Sdf_ParseLayerFromString(const std::string &, const std::string &, const std::string &, SdfUsdaDataRefPtr, SdfLayerHints *)"
-- "bool pxrInternal__aapl__pxrReserved__::_SetMappedValueForEditTarget(const UsdObject &, const TsSpline &, const UsdEditTarget &, const Fn &) [Fn = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/usd/stage.cpp:2273:9)]"
+- "bool pxrInternal__aapl__pxrReserved__::_SetMappedValueForEditTarget(const UsdObject &, const TsSpline &, const UsdEditTarget &, const Fn &) [Fn = (lambda at /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/USDLib/USD/pxr/usd/usd/stage.cpp:2273:9)]"
 - "inMemory_temp.usd"
-- "size_t pxrInternal__aapl__pxrReserved__::(anonymous namespace)::StageContainer::_EraseAllIf(const SdfLayerHandle &, ConditionFn &&, vector<Entry> *) [ConditionFn = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/usd/stageCache.cpp:118:28)]"
-- "size_t pxrInternal__aapl__pxrReserved__::(anonymous namespace)::StageContainer::_EraseAllIf(const SdfLayerHandle &, ConditionFn &&, vector<Entry> *) [ConditionFn = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/usd/stageCache.cpp:126:27)]"
-- "size_t pxrInternal__aapl__pxrReserved__::(anonymous namespace)::StageContainer::_EraseAllIf(const SdfLayerHandle &, ConditionFn &&, vector<Entry> *) [ConditionFn = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/usd/stageCache.cpp:138:13)]"
-- "size_t pxrInternal__aapl__pxrReserved__::HdInstanceRegistry<std::shared_ptr<MaterialX__aapl::Shader>>::GarbageCollect(Callback &&, int) [VALUE = std::shared_ptr<MaterialX__aapl::Shader>, Callback = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/imaging/hd/instanceRegistry.h:243:27)]"
-- "size_t pxrInternal__aapl__pxrReserved__::HdInstanceRegistry<std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdBufferArrayRange>>::GarbageCollect(Callback &&, int) [VALUE = std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdBufferArrayRange>, Callback = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/imaging/hd/instanceRegistry.h:243:27)]"
-- "size_t pxrInternal__aapl__pxrReserved__::HdInstanceRegistry<std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdStGLSLProgram>>::GarbageCollect(Callback &&, int) [VALUE = std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdStGLSLProgram>, Callback = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/imaging/hd/instanceRegistry.h:243:27)]"
-- "size_t pxrInternal__aapl__pxrReserved__::HdInstanceRegistry<std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdStRenderPassShader>>::GarbageCollect(Callback &&, int) [VALUE = std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdStRenderPassShader>, Callback = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/imaging/hd/instanceRegistry.h:243:27)]"
-- "size_t pxrInternal__aapl__pxrReserved__::HdInstanceRegistry<std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdStTextureObject>>::GarbageCollect(Callback &&, int) [VALUE = std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdStTextureObject>, Callback = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/imaging/hd/instanceRegistry.h:243:27)]"
-- "size_t pxrInternal__aapl__pxrReserved__::HdInstanceRegistry<std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdSt_BasisCurvesTopology>>::GarbageCollect(Callback &&, int) [VALUE = std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdSt_BasisCurvesTopology>, Callback = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/imaging/hd/instanceRegistry.h:243:27)]"
-- "size_t pxrInternal__aapl__pxrReserved__::HdInstanceRegistry<std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdSt_GeometricShader>>::GarbageCollect(Callback &&, int) [VALUE = std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdSt_GeometricShader>, Callback = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/imaging/hd/instanceRegistry.h:243:27)]"
-- "size_t pxrInternal__aapl__pxrReserved__::HdInstanceRegistry<std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdSt_MeshTopology>>::GarbageCollect(Callback &&, int) [VALUE = std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdSt_MeshTopology>, Callback = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/imaging/hd/instanceRegistry.h:243:27)]"
-- "size_t pxrInternal__aapl__pxrReserved__::HdInstanceRegistry<std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdSt_VertexAdjacencyBuilder>>::GarbageCollect(Callback &&, int) [VALUE = std::shared_ptr<pxrInternal__aapl__pxrReserved__::HdSt_VertexAdjacencyBuilder>, Callback = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/imaging/hd/instanceRegistry.h:243:27)]"
-- "size_t pxrInternal__aapl__pxrReserved__::HdInstanceRegistry<std::shared_ptr<pxrInternal__aapl__pxrReserved__::HioGlslfx>>::GarbageCollect(Callback &&, int) [VALUE = std::shared_ptr<pxrInternal__aapl__pxrReserved__::HioGlslfx>, Callback = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/imaging/hd/instanceRegistry.h:243:27)]"
 - "static CrateFile::_FileMapping pxrInternal__aapl__pxrReserved__::Sdf_CrateFile::CrateFile::_MmapBuffer(const char *, const std::vector<std::byte> &)"
-- "static PredicateFunction pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<const pxrInternal__aapl__pxrReserved__::HdSceneIndexPrim &>::_TryToBindCall(const Fn &, const std::vector<SdfPredicateExpression::FnArg> &, const NamesAndDefaults &) [DomainType = const pxrInternal__aapl__pxrReserved__::HdSceneIndexPrim &, Fn = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/imaging/hd/collectionPredicateLibrary.cpp:102:26)]"
-- "static PredicateFunction pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<const pxrInternal__aapl__pxrReserved__::HdSceneIndexPrim &>::_TryToBindCall(const Fn &, const std::vector<SdfPredicateExpression::FnArg> &, const NamesAndDefaults &) [DomainType = const pxrInternal__aapl__pxrReserved__::HdSceneIndexPrim &, Fn = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/imaging/hd/collectionPredicateLibrary.cpp:231:9)]"
-- "static PredicateFunction pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<const pxrInternal__aapl__pxrReserved__::HdSceneIndexPrim &>::_TryToBindCall(const Fn &, const std::vector<SdfPredicateExpression::FnArg> &, const NamesAndDefaults &) [DomainType = const pxrInternal__aapl__pxrReserved__::HdSceneIndexPrim &, Fn = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/imaging/hd/collectionPredicateLibrary.cpp:80:9)]"
-- "static PredicateFunction pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<pxrInternal__aapl__pxrReserved__::UsdObject>::_TryToBindCall(const Fn &, const std::vector<SdfPredicateExpression::FnArg> &, const NamesAndDefaults &) [DomainType = pxrInternal__aapl__pxrReserved__::UsdObject, Fn = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/usd/collectionPredicateLibrary.cpp:62:29)]"
-- "static PredicateFunction pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<pxrInternal__aapl__pxrReserved__::UsdObject>::_TryToBindCall(const Fn &, const std::vector<SdfPredicateExpression::FnArg> &, const NamesAndDefaults &) [DomainType = pxrInternal__aapl__pxrReserved__::UsdObject, Fn = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/usd/collectionPredicateLibrary.cpp:70:28)]"
-- "static PredicateFunction pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<pxrInternal__aapl__pxrReserved__::UsdObject>::_TryToBindCall(const Fn &, const std::vector<SdfPredicateExpression::FnArg> &, const NamesAndDefaults &) [DomainType = pxrInternal__aapl__pxrReserved__::UsdObject, Fn = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/usd/collectionPredicateLibrary.cpp:78:26)]"
-- "static PredicateFunction pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<pxrInternal__aapl__pxrReserved__::UsdObject>::_TryToBindCall(const Fn &, const std::vector<SdfPredicateExpression::FnArg> &, const NamesAndDefaults &) [DomainType = pxrInternal__aapl__pxrReserved__::UsdObject, Fn = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/usd/collectionPredicateLibrary.cpp:90:26)]"
 - "static SdfLayerRefPtr pxrInternal__aapl__pxrReserved__::SdfLayer::FindOrOpen(const string &, const SdfLayerBufferRefPtr &, const FileFormatArguments &)"
 - "static SdfLayerRefPtr pxrInternal__aapl__pxrReserved__::SdfLayer::_OpenLayerAndUnlockRegistry(Lock &, const _FindOrOpenLayerInfo &, const SdfLayerBufferRefPtr &, bool) [Lock = tbb::queuing_rw_mutex::scoped_lock]"
 - "static SdfZipFile pxrInternal__aapl__pxrReserved__::SdfZipFile::Open(const SdfZipBufferRefPtr &)"
 - "static UsdStageRefPtr pxrInternal__aapl__pxrReserved__::UsdStage::Open(const char *, size_t, InitialLoadSet)"
-- "static bool pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<const pxrInternal__aapl__pxrReserved__::HdSceneIndexPrim &>::_CheckNamesAndDefaultsWithSignature(const NamesAndDefaults &) [DomainType = const pxrInternal__aapl__pxrReserved__::HdSceneIndexPrim &, Fn = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/imaging/hd/collectionPredicateLibrary.cpp:102:26)]"
-- "static bool pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<const pxrInternal__aapl__pxrReserved__::HdSceneIndexPrim &>::_CheckNamesAndDefaultsWithSignature(const NamesAndDefaults &) [DomainType = const pxrInternal__aapl__pxrReserved__::HdSceneIndexPrim &, Fn = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/imaging/hd/collectionPredicateLibrary.cpp:231:9)]"
-- "static bool pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<const pxrInternal__aapl__pxrReserved__::HdSceneIndexPrim &>::_CheckNamesAndDefaultsWithSignature(const NamesAndDefaults &) [DomainType = const pxrInternal__aapl__pxrReserved__::HdSceneIndexPrim &, Fn = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/imaging/hd/collectionPredicateLibrary.cpp:80:9)]"
-- "static bool pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<pxrInternal__aapl__pxrReserved__::UsdObject>::_CheckNamesAndDefaultsWithSignature(const NamesAndDefaults &) [DomainType = pxrInternal__aapl__pxrReserved__::UsdObject, Fn = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/usd/collectionPredicateLibrary.cpp:62:29)]"
-- "static bool pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<pxrInternal__aapl__pxrReserved__::UsdObject>::_CheckNamesAndDefaultsWithSignature(const NamesAndDefaults &) [DomainType = pxrInternal__aapl__pxrReserved__::UsdObject, Fn = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/usd/collectionPredicateLibrary.cpp:70:28)]"
-- "static bool pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<pxrInternal__aapl__pxrReserved__::UsdObject>::_CheckNamesAndDefaultsWithSignature(const NamesAndDefaults &) [DomainType = pxrInternal__aapl__pxrReserved__::UsdObject, Fn = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/usd/collectionPredicateLibrary.cpp:78:26)]"
-- "static bool pxrInternal__aapl__pxrReserved__::SdfPredicateLibrary<pxrInternal__aapl__pxrReserved__::UsdObject>::_CheckNamesAndDefaultsWithSignature(const NamesAndDefaults &) [DomainType = pxrInternal__aapl__pxrReserved__::UsdObject, Fn = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/usd/collectionPredicateLibrary.cpp:90:26)]"
 - "virtual bool pxrInternal__aapl__pxrReserved__::SdfUsdaFileFormat::ReadFromString(SdfLayer *, const std::string &) const"
 - "virtual bool pxrInternal__aapl__pxrReserved__::UsdGltfFileFormat::Read(pxr_aapl::SdfLayer *, const std::string &, const std::vector<std::byte> &, bool) const"
 - "virtual bool pxrInternal__aapl__pxrReserved__::UsdMtlxFileFormat::Read(SdfLayer *, const std::string &, const std::vector<std::byte> &, bool) const"
@@ -1674,13 +1536,4 @@ CStrings:
 - "virtual bool pxrInternal__aapl__pxrReserved__::UsdPlyFileFormat::Read(SdfLayer *, const std::string &, const std::vector<std::byte> &, bool) const"
 - "virtual bool pxrInternal__aapl__pxrReserved__::UsdStlFileFormat::Read(SdfLayer *, const std::string &, bool) const"
 - "virtual bool pxrInternal__aapl__pxrReserved__::UsdStlFileFormat::Read(SdfLayer *, const std::string &, const std::vector<std::byte> &, bool) const"
-- "void pxrInternal__aapl__pxrReserved__::(anonymous namespace)::_ProcessCulledDependency(const PcpCulledDependency &, const SdfPath &, const CacheFilterFn &, PcpDependencyVector *) [CacheFilterFn = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/pcp/cache.cpp:667:26)]"
-- "void pxrInternal__aapl__pxrReserved__::(anonymous namespace)::_ProcessDependentNode(const PcpNodeRef &, const SdfPath &, const CacheFilterFn &, PcpDependencyVector *) [CacheFilterFn = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/pcp/cache.cpp:667:26)]"
-- "void pxrInternal__aapl__pxrReserved__::Pcp_ForEachDependentNode(const SdfPath &, const LayerOrLayerStack &, const SdfPath &, const PcpCache &, const FN &) [FN = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/pcp/dependentNamespaceEditUtils.cpp:1785:21), LayerOrLayerStack = pxrInternal__aapl__pxrReserved__::TfWeakPtr<pxrInternal__aapl__pxrReserved__::SdfLayer>]"
-- "void pxrInternal__aapl__pxrReserved__::Pcp_ForEachDependentNode(const SdfPath &, const LayerOrLayerStack &, const SdfPath &, const PcpCache &, const FN &) [FN = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/pcp/namespaceEdits.cpp:491:32), LayerOrLayerStack = pxrInternal__aapl__pxrReserved__::TfWeakPtr<pxrInternal__aapl__pxrReserved__::SdfLayer>]"
-- "void pxrInternal__aapl__pxrReserved__::Pcp_ForEachDependentNode(const SdfPath &, const LayerOrLayerStack &, const SdfPath &, const PcpCache &, const FN &) [FN = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/pcp/namespaceEdits.cpp:518:36), LayerOrLayerStack = pxrInternal__aapl__pxrReserved__::TfWeakPtr<pxrInternal__aapl__pxrReserved__::SdfLayer>]"
-- "void pxrInternal__aapl__pxrReserved__::Pcp_ForEachDependentNode(const SdfPath &, const LayerOrLayerStack &, const SdfPath &, const PcpCache &, const FN &) [FN = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/pcp/namespaceEdits.cpp:874:36), LayerOrLayerStack = pxrInternal__aapl__pxrReserved__::TfWeakPtr<pxrInternal__aapl__pxrReserved__::PcpLayerStack>]"
-- "void pxrInternal__aapl__pxrReserved__::Pcp_ForEachDependentNode(const SdfPath &, const PcpLayerStackRefPtr &, const SdfPath &, const PcpCache &, const NodeFn &, const CulledDepFn &) [NodeFn = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/pcp/cache.cpp:732:28), CulledDepFn = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/pcp/cache.cpp:747:33)]"
-- "void pxrInternal__aapl__pxrReserved__::Pcp_ForEachDependentNode(const SdfPath &, const PcpLayerStackRefPtr &, const SdfPath &, const PcpCache &, const NodeFn &, const CulledDepFn &) [NodeFn = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/pcp/changes.cpp:1539:17), CulledDepFn = (lambda at /Library/Caches/com.apple.xbs/678E8F3D-6D5C-4BBB-A55F-DA9BFA80AEC8/TemporaryDirectory.eu0lnT/Sources/USDLib/USD/pxr/usd/pcp/changes.cpp:1543:17)]"
-
 ```

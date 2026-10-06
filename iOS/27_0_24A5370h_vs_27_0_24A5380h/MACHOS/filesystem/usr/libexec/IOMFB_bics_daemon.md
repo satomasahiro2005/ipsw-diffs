@@ -2,78 +2,51 @@
 
 > `/usr/libexec/IOMFB_bics_daemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2f354` | `0x30868` | **`+0x1514`** |
+| `__TEXT.__const` | `0x5064` | `0x5cf4` | **`+0xc90`** |
+| `__TEXT.__cstring` | `0x4dac` | `0x51fc` | **`+0x450`** |
+| `__TEXT.__eh_frame` | `0xc40` | `0xd48` | **`+0x108`** |
+| `__DATA_CONST.__const` | `0xee0` | `0xf90` | **`+0xb0`** |
+| `__TEXT.__gcc_except_tab` | `0xaf0` | `0xb5c` | **`+0x6c`** |
+| `__DATA.__data` | `0xbc8` | `0xb80` | **`-0x48`** |
+| `__TEXT.__unwind_info` | `0xcd8` | `0xd18` | **`+0x40`** |
+| `__TEXT.__swift5_fieldmd` | `0x38c` | `0x3b0` | **`+0x24`** |
+| `__TEXT.__swift5_reflstr` | `0x248` | `0x268` | **`+0x20`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_got`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__got`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift5_types2`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2f354
-+  __TEXT.__text: 0x30868
-   __TEXT.__auth_stubs: 0x1370
-   __TEXT.__objc_stubs: 0x140
-   __TEXT.__objc_methlist: 0x5c
--  __TEXT.__cstring: 0x4dac
--  __TEXT.__const: 0x5064
--  __TEXT.__gcc_except_tab: 0xaf0
-+  __TEXT.__cstring: 0x51fc
-+  __TEXT.__const: 0x5cf4
-+  __TEXT.__gcc_except_tab: 0xb5c
-   __TEXT.__objc_methname: 0xdf
-   __TEXT.__objc_classname: 0x2a
-   __TEXT.__objc_methtype: 0xb0
-   __TEXT.__swift5_typeref: 0x904
--  __TEXT.__swift5_reflstr: 0x248
-+  __TEXT.__swift5_reflstr: 0x268
-   __TEXT.__swift5_assocty: 0x350
-   __TEXT.__constg_swiftt: 0xa94
--  __TEXT.__swift5_fieldmd: 0x38c
-+  __TEXT.__swift5_fieldmd: 0x3b0
-   __TEXT.__swift5_builtin: 0x50
-   __TEXT.__swift5_proto: 0x84
-   __TEXT.__swift5_types: 0x38
-   __TEXT.__swift5_protos: 0x50
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0xcd8
--  __TEXT.__eh_frame: 0xc40
--  __DATA_CONST.__const: 0xee0
-+  __TEXT.__unwind_info: 0xd18
-+  __TEXT.__eh_frame: 0xd48
-+  __DATA_CONST.__const: 0xf90
-   __DATA_CONST.__cfstring: 0x280
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
+-700.50.72.0.0
++700.50.80.0.0
 
-   __DATA.__objc_selrefs: 0x58
-   __DATA.__objc_ivar: 0x18
-   __DATA.__objc_data: 0xa0
--  __DATA.__data: 0xbc8
-+  __DATA.__data: 0xb80
-   __DATA.__bss: 0x16a0
-   __DATA.__common: 0x28
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 962
 +  Functions: 978
-   Symbols:   511
--  CStrings:  757
-+  CStrings:  783
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_types2 : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__auth_got : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
+
+-  CStrings:  736
++  CStrings:  762
 Symbols:
 + _CFRunLoopTimerInvalidate
 + _exp
@@ -112,5 +85,4 @@ CStrings:
 - " no genx history file "
 - "GenX: failed to upload calibration data %s, disabling GenX"
 - "diagnostics"
-
 ```

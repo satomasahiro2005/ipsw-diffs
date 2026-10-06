@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/FitnessOnboarding.framework/FitnessOnboarding`
 
-```diff
+### Section Size Changes
 
- 2027.0.146.1.4
--  __TEXT.__text: 0x4ac88
-+  __TEXT.__text: 0x4ac8c
-   __TEXT.__objc_methlist: 0x2c
-   __TEXT.__const: 0x3de8
-   __TEXT.__constg_swiftt: 0x9e4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4ac88` | `0x4ac8c` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_262e12a38 -> sub_263b1aa38 : 412 -> 416
+~ sub_262cf4a38 -> sub_2639f6a38 : 412 -> 416
 ```

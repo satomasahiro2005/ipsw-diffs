@@ -2,16 +2,22 @@
 
 > `/usr/sbin/arp`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1f9c` | `0x1f90` | **`-0xc`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1f9c
-+  __TEXT.__text: 0x1f90
-   __TEXT.__auth_stubs: 0x2c0
-   __TEXT.__const: 0x20
-   __TEXT.__cstring: 0x65f
-Sections:
-~ __TEXT.__unwind_info : content changed
+-754.0.0.0.0
++755.0.0.0.0
 Functions:
 ~ _main : 2040 -> 2028
-
 ```

@@ -2,5 +2,14 @@
 
 > `/System/Library/PrivateFrameworks/ContinuousDialogManagerService.framework/assistant_cdmd`
 
-Sections:
-~ __TEXT.__eh_frame : content changed
+### Same-size Content Changes
+
+- `__TEXT.__eh_frame`
+
+### Other Changes
+
+```diff
+
+-3600.31.3.0.0
++3600.31.8.0.0
+```

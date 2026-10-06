@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/Rules.framework/Rules`
 
-```diff
+### Section Size Changes
 
- 95.0.0.0.0
--  __TEXT.__text: 0x74ebc
-+  __TEXT.__text: 0x74eac
-   __TEXT.__objc_methlist: 0x20
-   __TEXT.__const: 0xe540
-   __TEXT.__swift5_typeref: 0x24fb
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x74ebc` | `0x74eac` | **`-0x10`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_29dbe8bf0 -> sub_29d7dabf0 : 2464 -> 2456
-~ sub_29dbedcc4 -> sub_29d7dfcbc : 1444 -> 1436
+~ sub_29da7bbf0 -> sub_29d6e3bf0 : 2464 -> 2456
+~ sub_29da80cc4 -> sub_29d6e8cbc : 1444 -> 1436
 ```

@@ -2,30 +2,23 @@
 
 > `/usr/lib/libVinylNonUpdater.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0xca08` | `0xba3f` | **`-0xfc9`** |
+| `__TEXT.__text` | `0x5a06c` | `0x5965c` | **`-0xa10`** |
+| `__TEXT.__gcc_except_tab` | `0x4e94` | `0x4e90` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
- 178.0.0.0.0
--  __TEXT.__text: 0x590a0
-+  __TEXT.__text: 0x5869c
-   __TEXT.__init_offsets: 0x54
-   __TEXT.__const: 0x7484
--  __TEXT.__gcc_except_tab: 0x4e94
--  __TEXT.__cstring: 0xca08
-+  __TEXT.__gcc_except_tab: 0x4e90
-+  __TEXT.__cstring: 0xba3f
-   __TEXT.__oslogstring: 0x7c
-   __TEXT.__unwind_info: 0x22e8
-   __TEXT.__auth_stubs: 0x0
-
-   - /usr/lib/libTelephonyCapabilities.dylib
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 1700
 +  Functions: 1699
-   Symbols:   3158
+
 -  CStrings:  1555
 +  CStrings:  1411
- 
 CStrings:
 - "/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/VinylRestore/CommandDrivers/eUICCVinylICEValve.cpp"
 - "/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/VinylRestore/CommandDrivers/eUICCVinylValve.cpp"

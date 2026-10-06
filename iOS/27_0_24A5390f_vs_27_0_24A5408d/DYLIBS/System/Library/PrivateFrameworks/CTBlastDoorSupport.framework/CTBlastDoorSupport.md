@@ -2,57 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/CTBlastDoorSupport.framework/CTBlastDoorSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x69868` | `0x6999c` | **`+0x134`** |
+| `__TEXT.__eh_frame` | `0x6508` | `0x6568` | **`+0x60`** |
+| `__DATA_CONST.__got` | `0x750` | `0x768` | **`+0x18`** |
+| `__TEXT.__swift5_typeref` | `0x11d6` | `0x11ea` | **`+0x14`** |
+| `__TEXT.__swift5_reflstr` | `0x688` | `0x698` | **`+0x10`** |
+| `__TEXT.__constg_swiftt` | `0x1b1c` | `0x1b28` | **`+0xc`** |
+| `__TEXT.__swift5_assocty` | `0x808` | `0x810` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x3ab8` | `0x3ac0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -13482.1.0.0.0
--  __TEXT.__text: 0x69868
 +13487.3.0.0.0
-+  __TEXT.__text: 0x6999c
-   __TEXT.__objc_methlist: 0x4ec
-   __TEXT.__gcc_except_tab: 0x386c
-   __TEXT.__cstring: 0x35c
-   __TEXT.__const: 0x6614
--  __TEXT.__constg_swiftt: 0x1b1c
--  __TEXT.__swift5_typeref: 0x11d6
-+  __TEXT.__constg_swiftt: 0x1b28
-+  __TEXT.__swift5_typeref: 0x11ea
-   __TEXT.__swift5_builtin: 0xa00
--  __TEXT.__swift5_reflstr: 0x688
-+  __TEXT.__swift5_reflstr: 0x698
-   __TEXT.__swift5_fieldmd: 0x112c
--  __TEXT.__swift5_assocty: 0x808
-+  __TEXT.__swift5_assocty: 0x810
-   __TEXT.__swift5_proto: 0x25c
-   __TEXT.__swift5_types: 0x244
-   __TEXT.__oslogstring: 0x14e
-   __TEXT.__swift5_protos: 0x50
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0x3ab8
--  __TEXT.__eh_frame: 0x6508
-+  __TEXT.__unwind_info: 0x3ac0
-+  __TEXT.__eh_frame: 0x6568
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0xd8
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x90
--  __DATA_CONST.__got: 0x750
-+  __DATA_CONST.__got: 0x768
-   __AUTH_CONST.__const: 0x46e0
-   __AUTH_CONST.__objc_const: 0xf38
-   __AUTH_CONST.__weak_auth_got: 0x18
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2876
--  Symbols:   2571
+-  Symbols:   2546
 +  Functions: 2877
-+  Symbols:   2574
-   CStrings:  37
- 
++  Symbols:   2549
 Symbols:
 + ___unnamed_11
 + _associated conformance 3Cxx0A17BorrowingIteratorVyxGs0bC8ProtocolAARi_zRi0_z7ElementRj_zrl7FailuresAEP_s5Error

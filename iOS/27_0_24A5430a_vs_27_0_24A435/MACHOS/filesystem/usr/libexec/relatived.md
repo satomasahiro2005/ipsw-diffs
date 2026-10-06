@@ -2,6 +2,8 @@
 
 > `/usr/libexec/relatived`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_100002abc : 12 -> 20

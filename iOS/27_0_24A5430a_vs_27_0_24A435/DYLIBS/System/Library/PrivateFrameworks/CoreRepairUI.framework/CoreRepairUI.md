@@ -2,68 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/CoreRepairUI.framework/CoreRepairUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x19a20` | `0x1ee08` | **`+0x53e8`** |
+| `__AUTH_CONST.__cfstring` | `0x3ae0` | `0x4b80` | **`+0x10a0`** |
+| `__TEXT.__cstring` | `0x30ab` | `0x3e4f` | **`+0xda4`** |
+| `__AUTH_CONST.__objc_const` | `0x32d8` | `0x3ea8` | **`+0xbd0`** |
+| `__AUTH.__objc_data` | `0x12c0` | `0x1900` | **`+0x640`** |
+| `__TEXT.__objc_methlist` | `0x1414` | `0x176c` | **`+0x358`** |
+| `__TEXT.__unwind_info` | `0x488` | `0x568` | **`+0xe0`** |
+| `__DATA_CONST.__objc_classlist` | `0x1e0` | `0x280` | **`+0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0xd98` | `0xe38` | **`+0xa0`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1c0` | `0x260` | **`+0xa0`** |
+| `__AUTH_CONST.__const` | `0x1e0` | `0x260` | **`+0x80`** |
+| `__TEXT.__oslogstring` | `0xd66` | `0xdd7` | **`+0x71`** |
+| `__DATA.__bss` | `0x130` | `0x190` | **`+0x60`** |
+| `__DATA_CONST.__got` | `0x470` | `0x4c8` | **`+0x58`** |
+| `__TEXT.__gcc_except_tab` | `0x3d0` | `0x424` | **`+0x54`** |
+| `__DATA_CONST.__const` | `0x428` | `0x470` | **`+0x48`** |
+| `__AUTH_CONST.__objc_intobj` | `0x48` | `0x78` | **`+0x30`** |
+
+### Other Changes
+
 ```diff
 
- 1307.2.4.0.0
--  __TEXT.__text: 0x19a20
--  __TEXT.__objc_methlist: 0x1414
-+  __TEXT.__text: 0x1ee08
-+  __TEXT.__objc_methlist: 0x176c
-   __TEXT.__const: 0xb0
--  __TEXT.__cstring: 0x30ab
--  __TEXT.__oslogstring: 0xd66
--  __TEXT.__gcc_except_tab: 0x3d0
--  __TEXT.__unwind_info: 0x488
-+  __TEXT.__cstring: 0x3e4f
-+  __TEXT.__oslogstring: 0xdd7
-+  __TEXT.__gcc_except_tab: 0x424
-+  __TEXT.__unwind_info: 0x568
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x428
--  __DATA_CONST.__objc_classlist: 0x1e0
-+  __DATA_CONST.__const: 0x470
-+  __DATA_CONST.__objc_classlist: 0x280
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xd98
-+  __DATA_CONST.__objc_selrefs: 0xe38
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x1c0
-+  __DATA_CONST.__objc_superrefs: 0x260
-   __DATA_CONST.__objc_arraydata: 0x38
--  __DATA_CONST.__got: 0x470
--  __AUTH_CONST.__const: 0x1e0
--  __AUTH_CONST.__cfstring: 0x3ae0
--  __AUTH_CONST.__objc_const: 0x32d8
-+  __DATA_CONST.__got: 0x4c8
-+  __AUTH_CONST.__const: 0x260
-+  __AUTH_CONST.__cfstring: 0x4b80
-+  __AUTH_CONST.__objc_const: 0x3ea8
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__objc_intobj: 0x48
-+  __AUTH_CONST.__objc_intobj: 0x78
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x12c0
-+  __AUTH.__objc_data: 0x1900
-   __DATA.__objc_ivar: 0x158
-   __DATA.__data: 0xc0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 461
 -  Symbols:   249
 -  CStrings:  610
 +  Functions: 527
 +  Symbols:   260
 +  CStrings:  747
- 
 Symbols:
 + _OBJC_CLASS_$_CRBatteryAuxStatus
 + _OBJC_CLASS_$_CRDisplayMainStatus

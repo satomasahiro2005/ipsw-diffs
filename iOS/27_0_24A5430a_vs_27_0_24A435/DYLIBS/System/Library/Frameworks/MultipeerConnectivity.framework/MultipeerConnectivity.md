@@ -2,15 +2,25 @@
 
 > `/System/Library/Frameworks/MultipeerConnectivity.framework/MultipeerConnectivity`
 
-```diff
+### Section Size Changes
 
- 180.100.1.0.0
--  __TEXT.__text: 0x2e72c
-+  __TEXT.__text: 0x2e764
-   __TEXT.__objc_methlist: 0x2088
-   __TEXT.__const: 0x4f4
-   __TEXT.__cstring: 0x1dbc
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2e72c` | `0x2e764` | **`+0x38`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
+```diff
 Functions:
 ~ _GCKSessionPrepareConnection : 3856 -> 3860
 ~ _AGPSessionSendTo : 1204 -> 1256
+CStrings:
++ "16:48:37"
++ "16:48:45"
+- "20:13:07"
+- "20:13:19"
 ```

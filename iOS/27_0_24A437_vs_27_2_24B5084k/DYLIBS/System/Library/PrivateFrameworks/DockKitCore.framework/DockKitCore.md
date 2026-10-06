@@ -2,84 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/DockKitCore.framework/DockKitCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x12e138` | `0x12ed48` | **`+0xc10`** |
+| `__TEXT.__oslogstring` | `0x2c89` | `0x3259` | **`+0x5d0`** |
+| `__AUTH.__objc_data` | `0x4cd8` | `0x5070` | **`+0x398`** |
+| `__AUTH_CONST.__objc_const` | `0x7058` | `0x7288` | **`+0x230`** |
+| `__TEXT.__objc_methlist` | `0x2974` | `0x2b34` | **`+0x1c0`** |
+| `__TEXT.__constg_swiftt` | `0x475c` | `0x485c` | **`+0x100`** |
+| `__TEXT.__const` | `0x9438` | `0x9518` | **`+0xe0`** |
+| `__AUTH.__data` | `0x1a50` | `0x1b10` | **`+0xc0`** |
+| `__TEXT.__swift5_fieldmd` | `0x35fc` | `0x3664` | **`+0x68`** |
+| `__TEXT.__unwind_info` | `0x53d0` | `0x5410` | **`+0x40`** |
+| `__DATA.__data` | `0x1c90` | `0x1cc0` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x1eea` | `0x1f1a` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0x210` | `0x238` | **`+0x28`** |
+| `__TEXT.__swift5_typeref` | `0x2854` | `0x2872` | **`+0x1e`** |
+| `__TEXT.__swift5_types` | `0x298` | `0x2ac` | **`+0x14`** |
+| `__TEXT.__swift5_reflstr` | `0x2991` | `0x29a1` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1360` | `0x1368` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1150` | `0x1158` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -414.0.0.0.0
--  __TEXT.__text: 0x1209d4
--  __TEXT.__objc_methlist: 0x2974
--  __TEXT.__const: 0x9438
--  __TEXT.__cstring: 0x1eea
--  __TEXT.__swift5_typeref: 0x2854
 +431.0.0.0.0
-+  __TEXT.__text: 0x121580
-+  __TEXT.__objc_methlist: 0x2b34
-+  __TEXT.__const: 0x9518
-+  __TEXT.__cstring: 0x1f1a
-+  __TEXT.__swift5_typeref: 0x2872
-   __TEXT.__swift5_capture: 0x4148
--  __TEXT.__swift5_reflstr: 0x2991
-+  __TEXT.__swift5_reflstr: 0x29a1
-   __TEXT.__swift5_assocty: 0x438
--  __TEXT.__constg_swiftt: 0x475c
--  __TEXT.__swift5_fieldmd: 0x35fc
-+  __TEXT.__constg_swiftt: 0x485c
-+  __TEXT.__swift5_fieldmd: 0x3664
-   __TEXT.__swift5_builtin: 0x230
-   __TEXT.__swift5_proto: 0x5fc
--  __TEXT.__swift5_types: 0x298
-+  __TEXT.__swift5_types: 0x2ac
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__oslogstring: 0x2c89
-+  __TEXT.__oslogstring: 0x3259
-   __TEXT.__swift5_protos: 0x20
-   __TEXT.__swift_as_entry: 0x418
-   __TEXT.__swift_as_ret: 0x624
-   __TEXT.__swift_as_cont: 0xe74
--  __TEXT.__unwind_info: 0x5ba0
-+  __TEXT.__unwind_info: 0x5c38
-   __TEXT.__eh_frame: 0xbcf0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x9b0
--  __DATA_CONST.__objc_classlist: 0x210
-+  __DATA_CONST.__objc_classlist: 0x238
-   __DATA_CONST.__objc_protolist: 0x1a8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1150
-+  __DATA_CONST.__objc_selrefs: 0x1158
-   __DATA_CONST.__objc_protorefs: 0x168
-   __DATA_CONST.__objc_superrefs: 0x38
-   __DATA_CONST.__got: 0x5f0
-   __AUTH_CONST.__const: 0xd601
-   __AUTH_CONST.__cfstring: 0x60
--  __AUTH_CONST.__objc_const: 0x7058
--  __AUTH_CONST.__auth_got: 0x1360
--  __AUTH.__objc_data: 0x4cd8
--  __AUTH.__data: 0x1a50
-+  __AUTH_CONST.__objc_const: 0x7288
-+  __AUTH_CONST.__auth_got: 0x1368
-+  __AUTH.__objc_data: 0x5070
-+  __AUTH.__data: 0x1b10
-   __DATA.__objc_ivar: 0x44
--  __DATA.__data: 0x1c90
-+  __DATA.__data: 0x1cc0
-   __DATA.__common: 0x438
-   __DATA_DIRTY.__objc_data: 0xd18
-   __DATA_DIRTY.__data: 0x470
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7575
--  Symbols:   2119
+-  Symbols:   1896
 -  CStrings:  489
 +  Functions: 7623
-+  Symbols:   2157
++  Symbols:   1932
 +  CStrings:  514
- 
 Symbols:
 + _OBJC_CLASS_$_DockCoreCameraCaptureClientSink
 + _OBJC_CLASS_$_DockCoreCertClientSink
@@ -123,8 +81,6 @@ Symbols:
 + ___swift_closure_destructor.834Tm
 + ___swift_closure_destructor.857Tm
 + ___swift_project_boxed_opaque_existential_0
-+ _objc_msgSend$conformsToProtocol:
-+ _objc_msgSend$respondsToSelector:
 + _symbolic _____ 11DockKitCore0aC10ClientSinkC
 + _symbolic _____ 11DockKitCore0aC14CertClientSinkC
 + _symbolic _____ 11DockKitCore0aC15DebugClientSinkC

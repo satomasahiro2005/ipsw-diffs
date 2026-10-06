@@ -2,74 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/CAFCombine.framework/CAFCombine`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x138aa8` | `0x1392cc` | **`+0x824`** |
+| `__TEXT.__const` | `0x1beb4` | `0x1bf74` | **`+0xc0`** |
+| `__TEXT.__swift5_typeref` | `0xa8c0` | `0xa960` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0x5f4a` | `0x5fca` | **`+0x80`** |
+| `__AUTH_CONST.__objc_const` | `0x2ce90` | `0x2cee8` | **`+0x58`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3008` | `0x3060` | **`+0x58`** |
+| `__DATA.__data` | `0xbb90` | `0xbbd0` | **`+0x40`** |
+| `__TEXT.__objc_methlist` | `0x7a6c` | `0x7aac` | **`+0x40`** |
+| `__AUTH.__objc_data` | `0xe3d8` | `0xe408` | **`+0x30`** |
+| `__TEXT.__constg_swiftt` | `0x8e08` | `0x8e28` | **`+0x20`** |
+| `__TEXT.__eh_frame` | `0x688` | `0x668` | **`-0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x8a9c` | `0x8abc` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x43c4` | `0x43dc` | **`+0x18`** |
+| `__DATA.__bss` | `0x164f0` | `0x16500` | **`+0x10`** |
+| `__AUTH_CONST.__const` | `0x2670` | `0x2678` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x7d30` | `0x7d38` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -542.7.0.0.0
--  __TEXT.__text: 0x12c99c
--  __TEXT.__objc_methlist: 0x7a6c
--  __TEXT.__const: 0x1beb4
--  __TEXT.__swift5_typeref: 0xa8c0
--  __TEXT.__cstring: 0x5f4a
 +552.3.0.0.0
-+  __TEXT.__text: 0x12d11c
-+  __TEXT.__objc_methlist: 0x7aac
-+  __TEXT.__const: 0x1bf74
-+  __TEXT.__swift5_typeref: 0xa960
-+  __TEXT.__cstring: 0x5fca
-   __TEXT.__swift5_capture: 0x240
--  __TEXT.__constg_swiftt: 0x8e08
-+  __TEXT.__constg_swiftt: 0x8e28
-   __TEXT.__swift5_builtin: 0x49c
--  __TEXT.__swift5_reflstr: 0x8a9c
--  __TEXT.__swift5_fieldmd: 0x43c4
-+  __TEXT.__swift5_reflstr: 0x8abc
-+  __TEXT.__swift5_fieldmd: 0x43dc
-   __TEXT.__swift5_assocty: 0x2f90
-   __TEXT.__swift5_proto: 0x9f0
-   __TEXT.__swift5_types: 0x31c
 
-   __TEXT.__swift_as_cont: 0x18
-   __TEXT.__swift5_protos: 0x14
-   __TEXT.__oslogstring: 0xc
--  __TEXT.__unwind_info: 0xb058
--  __TEXT.__eh_frame: 0x688
-+  __TEXT.__unwind_info: 0xb068
-+  __TEXT.__eh_frame: 0x668
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x408
-   __DATA_CONST.__objc_protolist: 0x8a0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3008
-+  __DATA_CONST.__objc_selrefs: 0x3060
-   __DATA_CONST.__objc_protorefs: 0x450
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2670
--  __AUTH_CONST.__objc_const: 0x2ce90
-+  __AUTH_CONST.__const: 0x2678
-+  __AUTH_CONST.__objc_const: 0x2cee8
-   __AUTH_CONST.__auth_got: 0xaa0
--  __AUTH.__objc_data: 0xe3d8
-+  __AUTH.__objc_data: 0xe408
-   __AUTH.__data: 0x41a8
--  __DATA.__data: 0xbb90
-+  __DATA.__data: 0xbbd0
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0x100
-   __DATA_DIRTY.__data: 0xa0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 17301
--  Symbols:   35162
+-  Symbols:   34326
 -  CStrings:  596
 +  Functions: 17318
-+  Symbols:   35215
++  Symbols:   34371
 +  CStrings:  600
- 
 Symbols:
 + _$s10CAFCombine21SafeReadOnlyPublishedC14projectedValue7Combine12AnyPublisherVyq_s5NeverOGvgAA22CAFDriveModeObservableC_SaySSGSgTg5
 + _$s10CAFCombine21SafeReadOnlyPublishedC14projectedValue7Combine12AnyPublisherVyq_s5NeverOGvgAA23CAFNowPlayingObservableC_SfSgTg5
@@ -243,16 +209,6 @@ Symbols:
 + _keypath_get_selector_presetEntryList
 + _keypath_get_selector_selectedPresetEntryIndex
 + _keypath_get_selector_userVisibleLabels
-+ _objc_msgSend$hasPlaybackRate
-+ _objc_msgSend$playbackRate
-+ _objc_msgSend$presetEntryList
-+ _objc_msgSend$registeredForPlaybackRate
-+ _objc_msgSend$registeredForPresetEntryList
-+ _objc_msgSend$registeredForSelectedPresetEntryIndex
-+ _objc_msgSend$registeredForUserVisibleLabels
-+ _objc_msgSend$selectedPresetEntryIndex
-+ _objc_msgSend$setSelectedPresetEntryIndex:
-+ _objc_msgSend$userVisibleLabels
 + _symbolic So18CAFPresetEntryListC
 + _symbolic So18CAFPresetEntryListCSg
 + _symbolic _____ySo18CAFPresetEntryListCSgG 7Combine9PublishedV
@@ -394,8 +350,6 @@ Symbols:
 - _$ss22_ContiguousArrayBufferV20_consumeAndCreateNew14bufferIsUnique15minimumCapacity13growForAppendAByxGSb_SiSbtFs6UInt64V_Tg5
 - _$sxSgSesSeRzlMc
 - _keypath_get_selector_presetLabel
-- _objc_msgSend$presetLabel
-- _objc_msgSend$registeredForPresetLabel
 - _symbolic _____y_____SSSgG 10CAFCombine21SafeReadOnlyPublishedC AA29CAFEqualizerPresetsObservableC
 - _symbolic _____y_____SSSgG 10CAFCombine21SafeReadOnlyPublishedC AA37CAFSoundDistributionPresetsObservableC
 - _symbolic _____y_____So25CAFSelectSettingEntryListCG 10CAFCombine21SafeReadOnlyPublishedC AA29CAFEqualizerPresetsObservableC

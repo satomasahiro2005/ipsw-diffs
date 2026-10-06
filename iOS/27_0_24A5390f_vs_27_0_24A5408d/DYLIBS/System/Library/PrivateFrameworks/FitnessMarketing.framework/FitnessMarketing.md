@@ -2,65 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/FitnessMarketing.framework/FitnessMarketing`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x72390` | `0x77e2c` | **`+0x5a9c`** |
+| `__AUTH.__data` | `0x6f8` | `0x808` | **`+0x110`** |
+| `__AUTH_CONST.__const` | `0x4890` | `0x4790` | **`-0x100`** |
+| `__TEXT.__const` | `0xa184` | `0xa224` | **`+0xa0`** |
+| `__TEXT.__swift5_reflstr` | `0x1225` | `0x12c5` | **`+0xa0`** |
+| `__TEXT.__swift5_typeref` | `0x9e6e` | `0x9ed8` | **`+0x6a`** |
+| `__DATA.__data` | `0x1bb0` | `0x1c00` | **`+0x50`** |
+| `__TEXT.__swift5_fieldmd` | `0x1ba4` | `0x1be0` | **`+0x3c`** |
+| `__AUTH_CONST.__auth_got` | `0x1058` | `0x1088` | **`+0x30`** |
+| `__DATA.__bss` | `0xc010` | `0xc040` | **`+0x30`** |
+| `__TEXT.__constg_swiftt` | `0x1a7c` | `0x1a94` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x1ed8` | `0x1ef0` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.134.0.0
--  __TEXT.__text: 0x72390
 +2027.0.146.0.2
-+  __TEXT.__text: 0x77e2c
-   __TEXT.__objc_methlist: 0x4d4
--  __TEXT.__const: 0xa184
--  __TEXT.__swift5_typeref: 0x9e6e
--  __TEXT.__swift5_reflstr: 0x1225
-+  __TEXT.__const: 0xa224
-+  __TEXT.__swift5_typeref: 0x9ed8
-+  __TEXT.__swift5_reflstr: 0x12c5
-   __TEXT.__swift5_assocty: 0x2b8
--  __TEXT.__constg_swiftt: 0x1a7c
--  __TEXT.__swift5_fieldmd: 0x1ba4
-+  __TEXT.__constg_swiftt: 0x1a94
-+  __TEXT.__swift5_fieldmd: 0x1be0
-   __TEXT.__swift5_builtin: 0x64
-   __TEXT.__swift5_proto: 0x7f0
-   __TEXT.__swift5_types: 0x28c
 
-   __TEXT.__oslogstring: 0x154
-   __TEXT.__swift_as_cont: 0xbc
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0x1ed8
-+  __TEXT.__unwind_info: 0x1ef0
-   __TEXT.__eh_frame: 0x1d60
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0x3a8
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x4890
-+  __AUTH_CONST.__const: 0x4790
-   __AUTH_CONST.__objc_const: 0x9d0
--  __AUTH_CONST.__auth_got: 0x1058
-+  __AUTH_CONST.__auth_got: 0x1088
-   __AUTH.__objc_data: 0x528
--  __AUTH.__data: 0x6f8
--  __DATA.__data: 0x1bb0
--  __DATA.__bss: 0xc010
-+  __AUTH.__data: 0x808
-+  __DATA.__data: 0x1c00
-+  __DATA.__bss: 0xc040
-   __DATA.__common: 0x48
-   __DATA_DIRTY.__data: 0x1728
-   __DATA_DIRTY.__bss: 0x3f80
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2890
--  Symbols:   1520
+-  Symbols:   1463
 +  Functions: 2921
-+  Symbols:   1519
-   CStrings:  93
- 
++  Symbols:   1462
 Symbols:
 + ___swift_closure_destructor.16Tm
 + _get_witness_table 7SwiftUI4ViewRzAaBR_r0_lqd__AaBHD2_AaBP011FitnessCoreB0E25fitnessAccessibilityScopeyQrSSd_tFQOyAA15ModifiedContentVyAcAE12defaultFocus__8priorityQrAA0L5StateV7BindingVyqd___G_qd__AA07DefaultL18EvaluationPriorityVtSHRd__lFQOyAcDE14focusedSectionQryFQOyAA5GroupVyAA012_ConditionalJ0VyAUyAA5ColorVAA0j11UnavailableC0VyAA4TextVAA05TupleJ0VyA__A_SgQPGAA6ButtonVyA_GGGAC011_JetEngine_aB0E14impressionable_13configuration8position20definesParentContextQr9JetEngine17ImpressionMetricsVSg_A14_21ImpressionsCalculatorC13ConfigurationVSiSgSbtFQOyASyAUyAGyAGyAUyAGyAGyAGyAA6HStackVyA1_yAA6SpacerV_AGyAcAE22containerRelativeFrame_5count4span7spacing9alignmentQrAA4AxisO3SetV_S2i0E8Graphics7CGFloatVAA9AlignmentVtFQOyq__Qo_AA0G18AttachmentModifierVGQPGGAA16_OverlayModifierVyAUyAA05EmptyC0VAA14LinearGradientVGGGA54_GA48_yAGyAGyAGyAGyAA6VStackVyA1_yAGyAcAEA27__A31__QrA35__A40_A38_A38__A33_tctFQOyASyA1_yAGyAGyAGyAGyAGyAcAE15dynamicTypeSizeyQrqd__SXRd__AA15DynamicTypeSizeO5BoundRtd__lFQOyA__s19PartialRangeThroughVyA61_GQo_AA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA24_ForegroundStyleModifierVyAA22HierarchicalShapeStyleVGGA69_yA22_GGAA16_FlexFrameLayoutVGA69_yA38_GGSg_AGyAGyA85_AA14_PaddingLayoutVGA86_GSgQPGG_Qo_A69_yAA15LayoutDirectionOGG_AGyAcAE0S0_6equalsQrAN_qd__tSHRd__lFQOyAGyAGyAcAEA27__A31__QrA35__A40_A38_A38__A33_tctFQOyx_Qo_A90_GA99_G_0D9Marketing015MarketingInlineC0V13FocusedButtonOyxq__GSgQo_AA21_TraitWritingModifierVyAA06LayoutR8TraitKeyVGGQPGGAA23SafeAreaPaddingModifierVGA123_GA123_GA123_GGGAGyAGyAGyA129_AA11_ClipEffectVyAA16RoundedRectangleVGGAA18_AspectRatioLayoutVGA90_GGA84_GA99_GAGyAGyAGyAGyAGyq_A43_GA48_yAGyAGyAGyAGyAGyA58_yA1_yA93__AGyAGyAGyAGyA80_AA16_BlendModeEffectVGA81_GA84_GA86_GSgAGyxA90_GQPGGA69_yAA0Y9AlignmentOGGA90_GA90_GA90_GAA19_BackgroundModifierVyAGyA52_A69_yAA0W6SchemeOGGGGGGA134_GA137_GA90_GGG_Qo_GG_Qo__A112_Qo_AA25_AppearanceActionModifierVG_Qo_HO

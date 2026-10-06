@@ -2,15 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/SPRCore.framework/SPRCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x23128` | `0x23190` | **`+0x68`** |
+
+### Other Changes
+
 ```diff
 
 -50.33.0.0.0
--  __TEXT.__text: 0x2223c
 +51.4.0.0.0
-+  __TEXT.__text: 0x222a4
-   __TEXT.__objc_methlist: 0x170
-   __TEXT.__const: 0x1054
-   __TEXT.__cstring: 0x3fb
 Functions:
-~ sub_29dedcc88 -> sub_29ff79c88 : 852 -> 956
+~ sub_29fab8efc -> sub_2a74aaefc : 852 -> 956
 ```

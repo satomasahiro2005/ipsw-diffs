@@ -2,115 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/CoreIDVUI.framework/CoreIDVUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2783cc` | `0x27c5e8` | **`+0x421c`** |
+| `__TEXT.__eh_frame` | `0x132ac` | `0x13d4c` | **`+0xaa0`** |
+| `__TEXT.__unwind_info` | `0x81f8` | `0x8860` | **`+0x668`** |
+| `__TEXT.__swift5_typeref` | `0x110c8` | `0x11304` | **`+0x23c`** |
+| `__TEXT.__const` | `0x13b24` | `0x13c14` | **`+0xf0`** |
+| `__TEXT.__swift_as_cont` | `0x10d0` | `0x1174` | **`+0xa4`** |
+| `__TEXT.__oslogstring` | `0xfde2` | `0xfe82` | **`+0xa0`** |
+| `__DATA.__data` | `0x58dc` | `0x5974` | **`+0x98`** |
+| `__AUTH_CONST.__const` | `0xefe8` | `0xf068` | **`+0x80`** |
+| `__TEXT.__swift_as_ret` | `0x648` | `0x694` | **`+0x4c`** |
+| `__TEXT.__swift_as_entry` | `0x6f8` | `0x730` | **`+0x38`** |
+| `__AUTH_CONST.__auth_got` | `0x45a8` | `0x45d8` | **`+0x30`** |
+| `__TEXT.__cstring` | `0xdcdd` | `0xdcad` | **`-0x30`** |
+| `__TEXT.__swift5_reflstr` | `0x779c` | `0x77cc` | **`+0x30`** |
+| `__AUTH.__data` | `0x9890` | `0x9870` | **`-0x20`** |
+| `__TEXT.__swift5_capture` | `0x373c` | `0x375c` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x21c0` | `0x21d8` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x190c` | `0x18f4` | **`-0x18`** |
+| `__TEXT.__swift5_fieldmd` | `0x61b4` | `0x61cc` | **`+0x18`** |
+| `__AUTH.__objc_data` | `0x3ea0` | `0x3eb0` | **`+0x10`** |
+| `__DATA_CONST.__objc_catlist` | `0x8` | `—` | **`-0x8`** |
+| `__TEXT.__constg_swiftt` | `0x7e1c` | `0x7e18` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2783cc
-+  __TEXT.__text: 0x27c5e8
-   __TEXT.__lazy_helpers: 0xa8
--  __TEXT.__objc_methlist: 0x190c
--  __TEXT.__const: 0x13b24
--  __TEXT.__cstring: 0xdcdd
--  __TEXT.__swift5_typeref: 0x110c8
--  __TEXT.__constg_swiftt: 0x7e1c
-+  __TEXT.__objc_methlist: 0x18f4
-+  __TEXT.__const: 0x13c14
-+  __TEXT.__cstring: 0xdcad
-+  __TEXT.__swift5_typeref: 0x11304
-+  __TEXT.__constg_swiftt: 0x7e18
-   __TEXT.__swift5_builtin: 0x1b8
--  __TEXT.__swift5_reflstr: 0x779c
--  __TEXT.__swift5_fieldmd: 0x61b4
-+  __TEXT.__swift5_reflstr: 0x77cc
-+  __TEXT.__swift5_fieldmd: 0x61cc
-   __TEXT.__swift5_assocty: 0xe10
-   __TEXT.__swift5_proto: 0x5d0
-   __TEXT.__swift5_types: 0x520
--  __TEXT.__swift5_capture: 0x373c
--  __TEXT.__oslogstring: 0xfde2
-+  __TEXT.__swift5_capture: 0x375c
-+  __TEXT.__oslogstring: 0xfe82
-   __TEXT.__swift5_protos: 0x70
--  __TEXT.__swift_as_entry: 0x6f8
--  __TEXT.__swift_as_ret: 0x648
--  __TEXT.__swift_as_cont: 0x10d0
-+  __TEXT.__swift_as_entry: 0x730
-+  __TEXT.__swift_as_ret: 0x694
-+  __TEXT.__swift_as_cont: 0x1174
-   __TEXT.__swift5_mpenum: 0x24
--  __TEXT.__unwind_info: 0x81f8
--  __TEXT.__eh_frame: 0x132ac
-+  __TEXT.__unwind_info: 0x8860
-+  __TEXT.__eh_frame: 0x13d4c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-9.34.0.0.0
++9.36.0.0.0
 
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x1b8
-   __DATA_CONST.__objc_classlist: 0x438
--  __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x168
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x1b40
-   __DATA_CONST.__objc_protorefs: 0xe0
-   __DATA_CONST.__objc_superrefs: 0x40
--  __DATA_CONST.__got: 0x21c0
--  __AUTH_CONST.__const: 0xefe8
-+  __DATA_CONST.__got: 0x21d8
-+  __AUTH_CONST.__const: 0xf068
-   __AUTH_CONST.__cfstring: 0x240
-   __AUTH_CONST.__objc_const: 0xd6e8
-   __AUTH_CONST.__lazy_load_got: 0x10
--  __AUTH_CONST.__auth_got: 0x45a8
--  __AUTH.__objc_data: 0x3ea0
--  __AUTH.__data: 0x9890
-+  __AUTH_CONST.__auth_got: 0x45d8
-+  __AUTH.__objc_data: 0x3eb0
-+  __AUTH.__data: 0x9870
-   __DATA.__objc_ivar: 0x6c
--  __DATA.__data: 0x58dc
-+  __DATA.__data: 0x5974
-   __DATA.__objc_stublist: 0x60
-   __DATA.__bss: 0xaff0
-   __DATA.__common: 0x4b8
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10075
--  Symbols:   7158
--  CStrings:  1906
 +  Functions: 10152
-+  Symbols:   7167
-+  CStrings:  1907
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__lazy_load_got : content changed
-~ __DATA.__objc_stublist : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
+
+-  CStrings:  1886
++  CStrings:  1887
 Symbols:
 + ___swift_closure_destructor.31Tm
 + ___swift_closure_destructor.40Tm
 + ___swift_closure_destructor.73Tm
 + _get_witness_table 7SwiftUI19_ConditionalContentVyAA08ModifiedD0VyAA6HStackVyAA05TupleD0VyAEyAEyAA6VStackVyAEyAEyAEy9CoreIDVUI45IdentityCredentialProviderSelectionViewHeaderVAA24_ForegroundStyleModifierVyAA017HierarchicalShapeR0VGGAA14_PaddingLayoutVGAVGGAA010_FlexFrameW0VGAA024_SafeAreaRegionsIgnoringW0VG_AA0O0PAAE11safeAreaBar4edge9alignment7spacing7contentQrAA12VerticalEdgeO_AA19HorizontalAlignmentV0I8Graphics7CGFloatVSgqd__yXEtAAA4_Rd__lFQOyA5_AAE22scrollEdgeEffectHidden_3forQrSb_AA4EdgeO3SetVtFQOyA5_AAE18scrollClipDisabledyQrSbFQOyA5_AAE06scrollD10BackgroundyQrAA10VisibilityOFQOyA5_AAE20scrollBounceBehavior_4axesQrAA20ScrollBounceBehaviorV_AA4AxisOA23_VtFQOyA5_AAE04listR0yQrqd__AA04ListR0Rd__lFQOyA5_AAE14contentMargins__A20_QrA24__A18_AA0D15MarginPlacementVtFQOyAA4ListVys5NeverOA5_AAE12labelsHiddenQryFQOyA5_AAE06pickerR0yQrqd__AA06PickerR0Rd__lFQOyAA6PickerVyAA05EmptyO0V0I9IDVShared014MobileDocumentM6OptionVSgAA7ForEachVySayA54_GSSA5_AAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAL0klmnO10PickerCellV_A54_Qo_GG_AA012InlinePickerR0VQo__Qo_G_Qo__AA016InsetGroupedListR0VQo__Qo__Qo__Qo__Qo__AL0klmnO12FooterButtonVQo_QPGGAA011_BackgroundrS0VyAA5ColorVGGA5_AAEA29__A30_QrA32__A35_tFQOyA5_AAEA36_yQrqd__AAA37_Rd__lFQOyA5_AAEA38___A20_QrA24__A18_A40_tFQOyA42_yA44_AA7SectionVyATA68_A51_GG_Qo__A73_Qo__Qo_GAAA4_HPA89_AAA4_HPA83_AAA4_HPyHC_A88_AA0oS0HPyHCHC_qd__AAA4_HD2_A96_HOHC
 + _get_witness_table qd0__7SwiftUI4ViewHD4_AaBPAAE5sheet4item9onDismiss7contentQrAA7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lFQOyAA15ModifiedContentVyAcAE0F20ScrollGeometryChange3for2of6actionQrqd__m_qd__AA0mN0Vcyqd___qd__tctSQRd__lFQOyAcAE0fO0AR7initial_Qrqd___SbyyctSQRd__lFQOyAA15NavigationStackVyAA0T4PathVAcAE7toolbarAGQrqd__yXE_tAA07ToolbarL0Rd__lFQOyAcAE29navigationBarBackButtonHiddenyQrSbFQOyAOyAcAE08safeAreaZ04edge9alignment7spacingAGQrAA12VerticalEdgeO_AA19HorizontalAlignmentV12CoreGraphics7CGFloatVSgqd__yXEtAaBRd__lFQOyAA5GroupVyAA012_ConditionalL0VyA18_yAOyAA05EmptyC0VAA25_AppearanceActionModifierVGAOyAOyAOyAcAE20scrollBounceBehavior_4axesQrAA0M14BounceBehaviorV_AA4AxisO3SetVtFQOyAcAE07defaultM6Anchor_AQQrAA9UnitPointVSg_AA0M10AnchorRoleVtFQOyAA0mC0VyAOy9CoreIDVUI035IdentityCredentialProviderAuxiliaryC0VAA14_PaddingLayoutVGG_Qo__Qo_AA16_FlexFrameLayoutVGAA24_BackgroundStyleModifierVyAA5ColorVGGA22_GGAOyA40_035IdentityCredentialProviderSelectionC6PickerVA22_GGG_A18_yA18_yA40_035IdentityCredentialProviderSelectionC12FooterButtonVA18_yA20_A66_GGA18_yA20_A20_GGQo_AA23_SafeAreaIgnoringLayoutVG_Qo__AA0X4ItemVyytAcAE16keyboardShortcutyQrAA16KeyboardShortcutVFQOyAA6ButtonVyAA18DefaultButtonLabelVG_Qo_GQo_G_SdQo__A13_Qo_A22_G_A40_40MobileDocumentProviderPresentmentContextVAYyA_AOyAcAE0Y5TitleyQrqd__SyRd__lFQOyAcAE0W10Background_AQQrAA10VisibilityO_AA0X9PlacementVdtFQOyAcAE0yZ16TitleDisplayModeyQrAA0tZ4ItemV16TitleDisplayModeOFQOyAcAEA0_AGQrqd__yXE_tAAA1_Rd__lFQOyAOyA40_035MobileDocumentProviderExtensionHostC0VAA30_SafeAreaRegionsIgnoringLayoutVG_AA0X9ItemGroupVyA86_GQo__Qo__Qo__SSQo_A22_GGQo_HO
-+ _objc_msgSend$containerTraitCollection
-+ _objc_msgSend$horizontalSizeClass
 + _symbolic __________XjIegr_ l9CoreIDVUI24IdentityProofingFlowTask_px0F2IDRts_XPXG AA0cdefG0O
 + _symbolic _____yAAyAAy_____y_____y_____yAAy__________GG_Qo__Qo______G_____y_____GG_____G 7SwiftUI15ModifiedContentV AA4ViewPAAE20scrollBounceBehavior_4axesQrAA06ScrollgH0V_AA4AxisO3SetVtFQO AeAE07defaultJ6Anchor_3forQrAA9UnitPointVSg_AA0jN4RoleVtFQO AA0jE0V 9CoreIDVUI035IdentityCredentialProviderAuxiliaryE0V AA14_PaddingLayoutV AA010_FlexFrameZ0V AA24_BackgroundStyleModifierV AA5ColorV AA25_AppearanceActionModifierV
 + _symbolic _____yAAy__________y_____GG_____G 7SwiftUI15ModifiedContentV 9CoreIDVUI45IdentityCredentialProviderSelectionViewHeaderV AA24_ForegroundStyleModifierV AA017HierarchicalShapeN0V AA14_PaddingLayoutV
@@ -149,8 +85,6 @@ Symbols:
 - ___swift_closure_destructor.70Tm
 - _get_witness_table 7SwiftUI19_ConditionalContentVyAA08ModifiedD0VyAA6HStackVyAA05TupleD0VyAEyAEyAA6VStackVyAEyAEy9CoreIDVUI45IdentityCredentialProviderSelectionViewHeaderVAA24_ForegroundStyleModifierVyAA017HierarchicalShapeR0VGGAA14_PaddingLayoutVGGAA010_FlexFrameW0VGAA024_SafeAreaRegionsIgnoringW0VG_AA0O0PAAE11safeAreaBar4edge9alignment7spacing7contentQrAA12VerticalEdgeO_AA19HorizontalAlignmentV0I8Graphics7CGFloatVSgqd__yXEtAAA3_Rd__lFQOyA4_AAE22scrollEdgeEffectHidden_3forQrSb_AA4EdgeO3SetVtFQOyA4_AAE18scrollClipDisabledyQrSbFQOyA4_AAE06scrollD10BackgroundyQrAA10VisibilityOFQOyA4_AAE20scrollBounceBehavior_4axesQrAA20ScrollBounceBehaviorV_AA4AxisOA22_VtFQOyA4_AAE04listR0yQrqd__AA04ListR0Rd__lFQOyA4_AAE14contentMargins__A19_QrA23__A17_AA0D15MarginPlacementVtFQOyAA4ListVys5NeverOA4_AAE12labelsHiddenQryFQOyA4_AAE06pickerR0yQrqd__AA06PickerR0Rd__lFQOyAA6PickerVyAA05EmptyO0V0I9IDVShared014MobileDocumentM6OptionVSgAA7ForEachVySayA53_GSSA4_AAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAL0klmnO10PickerCellV_A53_Qo_GG_AA012InlinePickerR0VQo__Qo_G_Qo__AA016InsetGroupedListR0VQo__Qo__Qo__Qo__Qo__AL0klmnO12FooterButtonVQo_QPGGAA011_BackgroundrS0VyAA5ColorVGGA4_AAEA28__A29_QrA31__A34_tFQOyA4_AAEA35_yQrqd__AAA36_Rd__lFQOyA4_AAEA37___A19_QrA23__A17_A39_tFQOyA41_yA43_AA7SectionVyATA67_A50_GG_Qo__A72_Qo__Qo_GAAA3_HPA88_AAA3_HPA82_AAA3_HPyHC_A87_AA0oS0HPyHCHC_qd__AAA3_HD2_A95_HOHC
 - _get_witness_table qd0__7SwiftUI4ViewHD4_AaBPAAE5sheet4item9onDismiss7contentQrAA7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lFQOyAA15ModifiedContentVyAcAE0F20ScrollGeometryChange3for2of6actionQrqd__m_qd__AA0mN0Vcyqd___qd__tctSQRd__lFQOyAcAE0fO0AR7initial_Qrqd___SbyyctSQRd__lFQOyAA15NavigationStackVyAA0T4PathVAcAE7toolbarAGQrqd__yXE_tAA07ToolbarL0Rd__lFQOyAcAE29navigationBarBackButtonHiddenyQrSbFQOyAOyAcAE08safeAreaZ04edge9alignment7spacingAGQrAA12VerticalEdgeO_AA19HorizontalAlignmentV12CoreGraphics7CGFloatVSgqd__yXEtAaBRd__lFQOyAA5GroupVyAA012_ConditionalL0VyA18_yAOyAA05EmptyC0VAA25_AppearanceActionModifierVGAOyAOyAOyAOy9CoreIDVUI035IdentityCredentialProviderAuxiliaryC0VAA14_PaddingLayoutVGAA16_FlexFrameLayoutVGAA24_BackgroundStyleModifierVyAA5ColorVGGA22_GGAOyA24_035IdentityCredentialProviderSelectionC6PickerVA22_GGG_A18_yA18_yA24_035IdentityCredentialProviderSelectionC12FooterButtonVA18_yA20_A47_GGA18_yA20_A20_GGQo_AA23_SafeAreaIgnoringLayoutVG_Qo__AA0X4ItemVyytAcAE16keyboardShortcutyQrAA16KeyboardShortcutVFQOyAA6ButtonVyAA18DefaultButtonLabelVG_Qo_GQo_G_SdQo__A13_Qo_A22_G_A24_40MobileDocumentProviderPresentmentContextVAYyA_AOyAcAE0Y5TitleyQrqd__SyRd__lFQOyAcAE0W10Background_AQQrAA10VisibilityO_AA0X9PlacementVdtFQOyAcAE0yZ16TitleDisplayModeyQrAA0tZ4ItemV16TitleDisplayModeOFQOyAcAEA0_AGQrqd__yXE_tAAA1_Rd__lFQOyAOyA24_035MobileDocumentProviderExtensionHostC0VAA30_SafeAreaRegionsIgnoringLayoutVG_AA0X9ItemGroupVyA67_GQo__Qo__Qo__SSQo_A22_GGQo_HO
-- _objc_msgSend$di_identityForEmbeddedApplicationIdentifier:
-- _objc_msgSend$stringForKey:
 - _symbolic 8RawValueSYQz
 - _symbolic ______pSg______pIgrzo_ 9CoreIDVUI19IDScanCameraReadingP s5ErrorP
 - _symbolic _____yAAyAAyAAy__________G_____G_____y_____GG_____G 7SwiftUI15ModifiedContentV 9CoreIDVUI39IdentityCredentialProviderAuxiliaryViewV AA14_PaddingLayoutV AA010_FlexFrameM0V AA24_BackgroundStyleModifierV AA5ColorV AA017_AppearanceActionR0V
@@ -184,5 +118,4 @@ CStrings:
 + "PassportNFCReader ignoring tag detection: read already completed"
 + "PassportNFCReader ignoring tag detection: read already in progress"
 - "CoreIDVUI/IDScanCameraProvider.swift"
-
 ```

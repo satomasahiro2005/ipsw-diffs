@@ -2,91 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/CarPlaySupport.framework/CarPlaySupport`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__swift5_typeref` | `0xe11a` | `0xd714` | **`-0xa06`** |
+| `__TEXT.__text` | `0x17a794` | `0x17ab68` | **`+0x3d4`** |
+| `__TEXT.__swift5_reflstr` | `0xc9c` | `0xd8c` | **`+0xf0`** |
+| `__TEXT.__gcc_except_tab` | `0x3280` | `0x331c` | **`+0x9c`** |
+| `__AUTH_CONST.__auth_got` | `0x1130` | `0x11a8` | **`+0x78`** |
+| `__TEXT.__swift5_fieldmd` | `0x1124` | `0x1184` | **`+0x60`** |
+| `__AUTH_CONST.__objc_const` | `0x23558` | `0x235b0` | **`+0x58`** |
+| `__DATA_CONST.__got` | `0x1248` | `0x1290` | **`+0x48`** |
+| `__DATA_CONST.__const` | `0x3b78` | `0x3bb8` | **`+0x40`** |
+| `__TEXT.__const` | `0x3f64` | `0x3f24` | **`-0x40`** |
+| `__TEXT.__objc_methlist` | `0xc16c` | `0xc1a4` | **`+0x38`** |
+| `__TEXT.__oslogstring` | `0x3505` | `0x34d5` | **`-0x30`** |
+| `__AUTH.__data` | `0xcf8` | `0xd18` | **`+0x20`** |
+| `__AUTH.__objc_data` | `0x5348` | `0x5328` | **`-0x20`** |
+| `__DATA.__data` | `0x44b0` | `0x4490` | **`-0x20`** |
+| `__TEXT.__constg_swiftt` | `0x1da8` | `0x1d90` | **`-0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7318` | `0x7328` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0xac8` | `0xad4` | **`+0xc`** |
+| `__TEXT.__unwind_info` | `0x31e0` | `0x31d8` | **`-0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -552.3.0.0.0
--  __TEXT.__text: 0x17771c
--  __TEXT.__objc_methlist: 0xc16c
--  __TEXT.__const: 0x3f64
 +552.6.2.0.0
-+  __TEXT.__text: 0x177ad4
-+  __TEXT.__objc_methlist: 0xc1a4
-+  __TEXT.__const: 0x3f24
-   __TEXT.__cstring: 0x2977
--  __TEXT.__oslogstring: 0x3505
--  __TEXT.__gcc_except_tab: 0x3280
-+  __TEXT.__oslogstring: 0x34d5
-+  __TEXT.__gcc_except_tab: 0x331c
-   __TEXT.__ustring: 0x4
--  __TEXT.__constg_swiftt: 0x1da8
--  __TEXT.__swift5_typeref: 0xe11a
--  __TEXT.__swift5_reflstr: 0xc9c
--  __TEXT.__swift5_fieldmd: 0x1124
-+  __TEXT.__constg_swiftt: 0x1d90
-+  __TEXT.__swift5_typeref: 0xd714
-+  __TEXT.__swift5_reflstr: 0xd8c
-+  __TEXT.__swift5_fieldmd: 0x1184
-   __TEXT.__swift5_builtin: 0x64
-   __TEXT.__swift5_assocty: 0x3d0
-   __TEXT.__swift5_capture: 0x36c
-   __TEXT.__swift5_proto: 0xbc
-   __TEXT.__swift5_types: 0x128
--  __TEXT.__unwind_info: 0x5240
-+  __TEXT.__unwind_info: 0x5250
-   __TEXT.__eh_frame: 0x3a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3b78
-+  __DATA_CONST.__const: 0x3bb8
-   __DATA_CONST.__objc_classlist: 0x500
-   __DATA_CONST.__objc_catlist: 0xb0
-   __DATA_CONST.__objc_protolist: 0x3a0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7318
-+  __DATA_CONST.__objc_selrefs: 0x7328
-   __DATA_CONST.__objc_protorefs: 0x128
-   __DATA_CONST.__objc_superrefs: 0x318
-   __DATA_CONST.__objc_arraydata: 0x118
--  __DATA_CONST.__got: 0x1248
-+  __DATA_CONST.__got: 0x1290
-   __AUTH_CONST.__const: 0x19b0
-   __AUTH_CONST.__cfstring: 0x1ee0
--  __AUTH_CONST.__objc_const: 0x23558
-+  __AUTH_CONST.__objc_const: 0x235b0
-   __AUTH_CONST.__objc_intobj: 0x1e0
-   __AUTH_CONST.__objc_arrayobj: 0x180
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x1130
--  __AUTH.__objc_data: 0x5348
--  __AUTH.__data: 0xcf8
--  __DATA.__objc_ivar: 0xac8
--  __DATA.__data: 0x44b0
-+  __AUTH_CONST.__auth_got: 0x11a8
-+  __AUTH.__objc_data: 0x5328
-+  __AUTH.__data: 0xd18
-+  __DATA.__objc_ivar: 0xad4
-+  __DATA.__data: 0x4490
-   __DATA.__common: 0x220
-   - /System/Library/Frameworks/CarPlay.framework/CarPlay
-   - /System/Library/Frameworks/Contacts.framework/Contacts
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6340
 -  Symbols:   12871
 -  CStrings:  685
 +  Functions: 6339
 +  Symbols:   12875
 +  CStrings:  683
- 
 Symbols:
 + -[CPSListTemplateViewController _imageRowTitleFont]
 + -[CPSListTemplateViewController _prepareForSelectingPossiblePlayableItem:identifier:completion:]

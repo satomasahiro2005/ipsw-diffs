@@ -2,38 +2,33 @@
 
 > `/System/Library/Audio/Plug-Ins/HAL/BTAudioHALPlugin.driver/BTAudioHALPlugin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7dae0` | `0x7dbf0` | **`+0x110`** |
+| `__TEXT.__oslogstring` | `0x16dc1` | `0x16dae` | **`-0x13`** |
+| `__TEXT.__gcc_except_tab` | `0x2064` | `0x2074` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__eh_frame`
 - `__TEXT.__init_offsets`
 - `__TEXT.__objc_methlist`
 - `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -2700.46.1.1.0
--  __TEXT.__text: 0x7dae0
 +2700.51.1.1.0
-+  __TEXT.__text: 0x7dbf0
-   __TEXT.__auth_stubs: 0x1370
-   __TEXT.__objc_stubs: 0x2800
-   __TEXT.__init_offsets: 0xa4
-   __TEXT.__objc_methlist: 0x118c
--  __TEXT.__gcc_except_tab: 0x2064
-+  __TEXT.__gcc_except_tab: 0x2074
-   __TEXT.__const: 0x1aec
-   __TEXT.__cstring: 0x4f78
--  __TEXT.__oslogstring: 0x16dc1
-+  __TEXT.__oslogstring: 0x16dae
-   __TEXT.__objc_methname: 0x3ecc
-   __TEXT.__objc_classname: 0x154
-   __TEXT.__objc_methtype: 0x1257
 Functions:
 ~ sub_84ec : 1540 -> 1556
 ~ sub_133e0 -> sub_133f0 : 4 -> 8

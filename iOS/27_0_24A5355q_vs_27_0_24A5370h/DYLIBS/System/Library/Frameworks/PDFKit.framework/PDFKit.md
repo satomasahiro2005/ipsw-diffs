@@ -2,110 +2,36 @@
 
 > `/System/Library/Frameworks/PDFKit.framework/PDFKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xba9d4` | `0xbd068` | **`+0x2694`** |
+| `__TEXT.__gcc_except_tab` | `0x40ac` | `0x6464` | **`+0x23b8`** |
+| `__TEXT.__unwind_info` | `0x32d8` | `0x3800` | **`+0x528`** |
+| `__DATA_CONST.__const` | `0x2280` | `0x2348` | **`+0xc8`** |
+| `__AUTH_CONST.__cfstring` | `0x7720` | `0x7680` | **`-0xa0`** |
+| `__AUTH_CONST.__objc_const` | `0xf070` | `0xf0d0` | **`+0x60`** |
+| `__AUTH_CONST.__auth_got` | `0x1758` | `0x1798` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0xa58` | `0xa90` | **`+0x38`** |
+| `__TEXT.__cstring` | `0x76c4` | `0x7694` | **`-0x30`** |
+| `__TEXT.__objc_methlist` | `0xaffc` | `0xb01c` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x70e0` | `0x70f8` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0xc6c` | `0xc78` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
 -1527.0.0.0.0
--  __TEXT.__text: 0xba9d4 sha256:645f61e387010fffe43047a94dcd74538463ed16922e4cb31c9258b923fde34d
--  __TEXT.__objc_methlist: 0xaffc sha256:2181ba34c6491f49a9cdba392f6d3a5293ead3f551dc69a09e0201bce5a26e3e
--  __TEXT.__const: 0x964 sha256:50f0f8285731adb6a89051b7c61f36483ade88c018cc78c4324bcfce9ff1acab
--  __TEXT.__cstring: 0x76c4 sha256:530f4b08907fd701f4d803156418f3493e4ebe34322ff55a74addeb0e5567ae2
--  __TEXT.__gcc_except_tab: 0x40ac sha256:9ea7a7edeeb01fabb936733cf7a9c54a5e51bde8eb76c27482a72d3c7b417a75
 +1530.0.0.0.0
-+  __TEXT.__text: 0xbd068 sha256:fa52168f28c6ab81b6ceed96d3492bb72928f2fb1122c5239fff5e761c8503ac
-+  __TEXT.__objc_methlist: 0xb01c sha256:c08884305f08e15a1de7eea0061597672e8eb70151ed0a0f74902ca641cc1b4a
-+  __TEXT.__const: 0x964 sha256:a67c492aef0e95ad0ffd1defdb8746cac05dcf95a9d391e46e00574f4e5572df
-+  __TEXT.__cstring: 0x7694 sha256:d416fd539b237a5dab701656e2f4914b254a84e3011b7601b8db1efe76d8dcd2
-+  __TEXT.__gcc_except_tab: 0x6464 sha256:781ce450b5a6813e21153752b988b02d4eeb9d7c2fb826561318d5ae2887c85c
-   __TEXT.__dlopen_cstrs: 0x201 sha256:66b50315211beaf61f22e71897a350f2df7d7323fe30c1113c6e384b245e3c2e
-   __TEXT.__ustring: 0xb4 sha256:b6cb2478cbf0c89ea916695dccf62a6c49d8651774f01d22e98bcee8b8997c71
-   __TEXT.__oslogstring: 0x1a sha256:b1f3bbb2ee544aa7e00c2e9d3b0ad8e6112de01e1effae56fc66c96b45a9e7dd
--  __TEXT.__swift5_typeref: 0xce sha256:4ebeee5de4181d1b198781bfb7fa56cc86d2bc1333c3e8f1ff7aac56bce7ff89
-+  __TEXT.__swift5_typeref: 0xce sha256:fe8281d91865d548f59b5499c9481ed963fe253bf6eff5cb23f0ca5113631af2
-   __TEXT.__swift5_capture: 0x24 sha256:b7155f40ef50647e106f5869d5ba97541919d38931078bd3c042b9a878fb1d04
--  __TEXT.__constg_swiftt: 0xac sha256:2310b0085f4f7cb80a9862ef691bb7e83c7fa4fd302080c75a804831524d1395
-+  __TEXT.__constg_swiftt: 0xac sha256:eb6d17af251ec3b63396be12d78c70470f1513a7cfd285eda78ca2955949b40e
-   __TEXT.__swift5_builtin: 0x14 sha256:3e870d09e22a1ca8b8eb65636785bd09f2794607f6bd5f472a10f1b70ce2de76
-   __TEXT.__swift5_reflstr: 0x2c sha256:6eb70c404cb49ca905f9a66fe8f48cd5de038006e72e709f0b02cd87e44994ed
-   __TEXT.__swift5_fieldmd: 0x48 sha256:175b23ede778d7c6b439c28a3609a169290452ad553344de19b976c3800abc75
-   __TEXT.__swift5_assocty: 0x30 sha256:d4a30e152fc15afb4d119e21e66f6f8032aa152b95b14ee0f27d9a3b45589b5b
--  __TEXT.__swift5_proto: 0x18 sha256:831c7add52a3410b662da38f873ec7d36317434b4dffae665fd7e0614071bce3
-+  __TEXT.__swift5_proto: 0x18 sha256:7a3af9fbd838d9f944e293542e29a3d68cacc214015f3898bc95058d0af8489a
-   __TEXT.__swift5_types: 0x8 sha256:ec90b57a5ee027a389792a887f9a4f0b1654af6f20e2ceb0d77198aba6371a17
--  __TEXT.__unwind_info: 0x32d8 sha256:36a2ddebe2c2b27ff20d7e1ed6f64efdf499c9614c7cafaa4f4c3a9f25f7140d
--  __TEXT.__eh_frame: 0x128 sha256:ea1e3e12309db5b106d9a22d2fab02530b66af596d85926985635b22fcad7bc0
-+  __TEXT.__unwind_info: 0x3800 sha256:f9648f2bd2190eb9794f8e2ea97a8173e53d02d1a10af51ac9a10e61ced5e8e1
-+  __TEXT.__eh_frame: 0x128 sha256:fc0b41d7c9df3250c46ccfde9b9d4167927862f92abf926e7b623eebe412bebb
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2280 sha256:e3ab2a971d6c3c829ffe5de22a1ce55b29e455cecc1e6c396921889a4ffc3139
--  __DATA_CONST.__objc_classlist: 0x408 sha256:8dfa43d5122d71264ccf19f994d98a8a54819fbd59f1623454d12dc2a73c7e6f
--  __DATA_CONST.__objc_catlist: 0x38 sha256:5fc13481099d304d4940fcbe2e30418b396795489373cf8d3b1c295f6e96dac8
--  __DATA_CONST.__objc_protolist: 0x198 sha256:b0db4034e60d50b7fb4a16628b9deeb2c5c51fefc7ec10f48fd307bd7ed9825e
-+  __DATA_CONST.__const: 0x2348 sha256:6d70373a5254f255393555aaeff329255fe9a30f92f94232cf5eee297f82aa91
-+  __DATA_CONST.__objc_classlist: 0x408 sha256:7dc8ddf6ca011532cd913c692875995becd7e558dc7d7996097141bee480c04d
-+  __DATA_CONST.__objc_catlist: 0x38 sha256:e4dd245f5c56d21efc80f5c663e7b142a428ed258e42beb7b0a98237453ecf27
-+  __DATA_CONST.__objc_protolist: 0x198 sha256:1838fb85cc0b94ecb9bbec40f03bd7de79d66d9c142297d7cd0a179e176f5988
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__weak_got: 0x8 sha256:baed7a8f4fe06577baf9413d1425189458482e4f64d55b4f5cc304378385a036
--  __DATA_CONST.__objc_selrefs: 0x70e0 sha256:762c31af4fc617871e99cb6f632c7e1bd1e35cf98d7a17ab3881e89c0b20f901
--  __DATA_CONST.__objc_protorefs: 0x20 sha256:1e3718e47904a1d5981b2964b9c9f1ae8cae0c1f2e1a6b683e86c3b8439bd26d
--  __DATA_CONST.__objc_superrefs: 0x2b0 sha256:26d192bf03c878f9cd6d8e1f0b0a040afe6cd7691efda7722259f223bbe733be
--  __DATA_CONST.__objc_arraydata: 0xe8 sha256:cbd8514fc7db721e5883f652ece52ad33c69a5eabdf0e4ed4880c05f22232d0a
--  __DATA_CONST.__got: 0xa58 sha256:e89b829b275484860897b483177df6b2f7ee60340e0fb6340e1befe8bde7be13
--  __AUTH_CONST.__const: 0x9d8 sha256:bf1653a7e89655d2ac0c91b3e4af19a60e7521ddf6dbf17666c9c76c5421a95b
--  __AUTH_CONST.__cfstring: 0x7720 sha256:03a2788f870f45c3ad10188e501ae328b67997e642354a7ea505201358b7bcdd
--  __AUTH_CONST.__objc_const: 0xf070 sha256:1dffb9ec4f1648a1539f494ecb8a8405a177077d1f070ced89369e7cb17bdf2a
--  __AUTH_CONST.__weak_auth_got: 0x18 sha256:9301580f2a4c506b3a281d68e0e22bffb435cbb497ce8c36f9bdbf987996a481
--  __AUTH_CONST.__objc_arrayobj: 0x90 sha256:5dbaf3613ee88b93d31fda6dfbcbc17915d03d98a969f50370dfd866fc3cec12
--  __AUTH_CONST.__objc_intobj: 0x2e8 sha256:ac1144705ca2d838c2372395d472b47fd222e165eb7f96effbbdbeb43e865a68
--  __AUTH_CONST.__objc_dictobj: 0x50 sha256:81f954559fdb2e5891f6b1f29b7c5eff04af4f76240d9aa18e9d4927fb6ce1c5
--  __AUTH_CONST.__objc_doubleobj: 0xe0 sha256:66af707b26c17b7d17b840fb5d8031e500fae48bf21e8c3e30c7e29f104e359b
--  __AUTH_CONST.__auth_got: 0x1758 sha256:5121f63ef238cd65f9fd10605b071f33e901efad6e3355c432f64fc5551a16ad
--  __AUTH.__objc_data: 0x25d0 sha256:48737853a76f899f4deebb0fa6b346aad9f068728df677dd07d6e2d90a399589
--  __AUTH.__data: 0x98 sha256:85d47eb80df29f39b78a50bb91114e6c658351f8fda559ebf9caeae749d482e4
--  __DATA.__objc_ivar: 0xc6c sha256:ee1dd2830157ac5f85ecb08fe948204ca5bd52c12595e2e4c1cee12c0b26a538
--  __DATA.__data: 0x13c8 sha256:a84e55c5e0dfe637e2dc49e9b5eed3fbd8728d1f9497ac878868e2b0d3676b7f
-+  __DATA_CONST.__weak_got: 0x8 sha256:0187a61bf3fae6fc3b3aa794eddabd32ea418a3c89d235dd3a82b6bd02e4fd49
-+  __DATA_CONST.__objc_selrefs: 0x70f8 sha256:83dd284016de4306d8fef238df7a5bf77c63fe5cbf1ca5ee97dd16d2fa88ad2d
-+  __DATA_CONST.__objc_protorefs: 0x20 sha256:167f2bb6840c9882e58ed6b1d3059344c5e76a140ca4435fbf3e6ba1d4e72bf6
-+  __DATA_CONST.__objc_superrefs: 0x2b0 sha256:5ebcf4025b356eb5d92022f693de83d683d900ca1e79f946939cb6aaabfd16f5
-+  __DATA_CONST.__objc_arraydata: 0xe8 sha256:fb564828cb3c9692873d9fed160ce77f90c220cbdcce956e93f73fa406146fd9
-+  __DATA_CONST.__got: 0xa90 sha256:985c2017817e2bbfbfddcdd1ac9180481dc28608905a3c8706ed664a3db11150
-+  __AUTH_CONST.__const: 0x9d8 sha256:40281e363c124872eba77afe29f007c40fa17700db5bb69482930b85d2c3ae33
-+  __AUTH_CONST.__cfstring: 0x7680 sha256:53eacd69b10b64a725657e44f576736b04a4b471ec9f61c3f6ad9f7fb6a1d83e
-+  __AUTH_CONST.__objc_const: 0xf0d0 sha256:7c8e2ab81a9c986f2e999820e2d14398745cf8cbd669e57184cb8e142fc0394c
-+  __AUTH_CONST.__weak_auth_got: 0x18 sha256:29088a447bd737ef9fbfae413fb96a052bde0411bc28166e36dc698bd3ad3621
-+  __AUTH_CONST.__objc_arrayobj: 0x90 sha256:d6ad2b20047577fd0c9fec812e92e1fa1ae7edf129ca949ae60c8cfe8baea78b
-+  __AUTH_CONST.__objc_intobj: 0x2e8 sha256:8d0e581fa616df91190016f88c600fa392d31d879b05bcf12a354a1b71bbaf6a
-+  __AUTH_CONST.__objc_dictobj: 0x50 sha256:c77749cf1211a7c89f4547bd999e2f9b8033ac2d020620195df5a93d90b86753
-+  __AUTH_CONST.__objc_doubleobj: 0xe0 sha256:7b1d8321234da2839ee3fcbaa5f951bbcdf2666fd820904cd052e354729fd315
-+  __AUTH_CONST.__auth_got: 0x1798 sha256:ff5878f34004f655aa35284f87f0581db8390fb4bad172b002c9bda2d145eeaa
-+  __AUTH.__objc_data: 0x25d0 sha256:7f6678122e11f3af24b2dc818b663059d78f703c010c2e692e44e5f87ff2ce52
-+  __AUTH.__data: 0x98 sha256:e1086559c1da66fbc67467083635e4a9eb157f26f2bc38e07ca1a00eac018781
-+  __DATA.__objc_ivar: 0xc78 sha256:0dd2b3761b551a64b3f18e0d976d2b8f0acddbc4aa304f8be4198181c93c7acc
-+  __DATA.__data: 0x13c8 sha256:23f2f85b79409ce13ebce85c7683ff5bf6d81ea0da3a15ef614c60169b656d2a
-   __DATA.__bss: 0x870 sha256:72642567c6d5dfe031174a2690df4f0be1501921e353d923c934ca7f10e07d79
--  __DATA_DIRTY.__objc_data: 0x230 sha256:31972fc2ead6f041c235c70b4a5640bbb392087f8d637b62856f68b21022eb28
-+  __DATA_DIRTY.__objc_data: 0x230 sha256:ec56d0cd9b256a93fbcfe988fe2c785e3035f308bb97d908ac76f5996f3434e4
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreText.framework/CoreText
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: F09862B0-111B-3E74-97E0-69CDCED9E49E
 -  Functions: 3742
--  Symbols:   14103
--  CStrings:  2185
-+  UUID: 5C99F69A-5752-3B18-9C9C-6AAA3A5F78E5
+-  Symbols:   7317
+-  CStrings:  1275
 +  Functions: 3748
-+  Symbols:   14288
-+  CStrings:  2178
- 
++  Symbols:   7399
++  CStrings:  1273
 Symbols:
 + -[PDFBorder isDefault]
 + -[PDFDocument .cxx_construct]
@@ -246,10 +172,6 @@ Symbols:
 + __ZNSt3__16vectorImNS_9allocatorImEEE20__throw_length_errorB9foe220106Ev
 + __ZNSt3__19__advanceB9foe220106INS_21__tree_const_iteratorIdPNS_11__tree_nodeIdPvEElEEEEvRT_NS_15iterator_traitsIS7_E15difference_typeENS_26bidirectional_iterator_tagE
 + __ZSt28__throw_bad_array_new_lengthB9foe220106v
-+ ___Block_byref_object_copy_.356
-+ ___Block_byref_object_copy_.522
-+ ___Block_byref_object_dispose_.357
-+ ___Block_byref_object_dispose_.523
 + ____dictionariesEqualForSnapshotCompare_block_invoke
 + ____dictionariesEqualForSnapshotCompare_block_invoke_2
 + ____dictionariesEqualForSnapshotCompare_block_invoke_3
@@ -277,22 +199,12 @@ Symbols:
 + ___block_descriptor_65_e8_32r_e26_B24?0r*8^{CGPDFObject=}16lr32l8
 + ___block_descriptor_72_ea8_32s40s48r56r_e25_v32?0"NSString"8Q16^B24ls32l8r48l8r56l8s40l8
 + ___block_descriptor_72_ea8_32s40s48s56s_e45_B24?0^{__CFString=}8^{CGImageMetadataTag=}16ls32l8s40l8s48l8s56l8
-+ ___block_literal_global.529
 + __arraysEqualForSnapshotCompare
 + __dictionariesEqualForSnapshotCompare
 + __isExcludedFromSnapshotCompare
 + __objectsEqualForSnapshotCompare
 + _kCGPDFSelectionImageAttributeName
 + _memcmp
-+ _objc_msgSend$_invalidateCachedAttributedString
-+ _objc_msgSend$data
-+ _objc_msgSend$flushPendingBookmarkMetadata
-+ _objc_msgSend$imageWithCGImage:
-+ _objc_msgSend$initRegularFileWithContents:
-+ _objc_msgSend$isDefault
-+ _objc_msgSend$rtfdData
-+ _objc_msgSend$setFileWrapper:
-+ _objc_msgSend$setPreferredFilename:
 + _os_unfair_recursive_lock_lock_with_options
 + _os_unfair_recursive_lock_unlock
 + _swift_release_x27
@@ -364,8 +276,6 @@ Symbols:
 - __ZNSt3__16vectorImNS_9allocatorImEEE20__throw_length_errorB9foe220100Ev
 - __ZNSt3__19__advanceB9foe220100INS_21__tree_const_iteratorIdPNS_11__tree_nodeIdPvEElEEEEvRT_NS_15iterator_traitsIS7_E15difference_typeENS_26bidirectional_iterator_tagE
 - __ZSt28__throw_bad_array_new_lengthB9foe220100v
-- ___Block_byref_object_copy_.357
-- ___Block_byref_object_dispose_.358
 - ____digestDictionaryForIdentityHash_block_invoke
 - ___block_descriptor_101_e8_32s40s48s56r64r72w80w_e5_v8?0lr56l8w72l8w80l8s32l8s40l8r64l8s48l8
 - ___block_descriptor_101_e8_32s40s48s56r64r72w80w_e8_v16?0Q8lw72l8w80l8s32l8s40l8r56l8s48l8r64l8
@@ -386,7 +296,6 @@ Symbols:
 - ___block_descriptor_64_e8_32s_e5_v8?0ls32l8
 - ___block_descriptor_72_e8_32s40s48r56r_e25_v32?0"NSString"8Q16^B24ls32l8r48l8r56l8s40l8
 - ___block_descriptor_72_e8_32s40s48s56s_e45_B24?0^{__CFString=}8^{CGImageMetadataTag=}16ls32l8s40l8s48l8s56l8
-- ___block_literal_global.528
 - __dictionaryForPDFDictionary
 - __digestDictionaryForIdentityHash
 - __digestObjectForIdentityHash
@@ -394,29 +303,19 @@ Symbols:
 - __objectForCGPDFObjectRefAndVisitedSet
 - __sortCGSelections
 - __sortPageRanges
-- _objc_msgSend$_computeIdentityHashForCGPDFDictionary:
-- _objc_msgSend$_identityHashMatchesForDictionary:
-- _objc_msgSend$mapTableWithKeyOptions:valueOptions:
-- _objc_msgSend$numberWithUnsignedChar:
-- _objc_msgSend$sortUsingSelector:
 - _swift_release_x21
 - _swift_retain_x21
 CStrings:
-+ "/AppleInternal/Library/BuildRoots/4~CRtGugC9mpWka1mKBXSQ_V3y0OU6U1LZ4Wzc2Po/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/System/Library/Frameworks/CoreGraphics.framework/PrivateHeaders/CGBuf.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRtGugC9mpWka1mKBXSQ_V3y0OU6U1LZ4Wzc2Po/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__utility/is_pointer_in_range.h:38: libc++ Hardening assertion std::__is_valid_range(__begin, __end) failed: [__begin, __end) is not a valid range\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRtGugC9mpWka1mKBXSQ_V3y0OU6U1LZ4Wzc2Po/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1171: libc++ Hardening assertion __first <= __last failed: vector::erase(first, last) called with invalid range\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRtGugC9mpWka1mKBXSQ_V3y0OU6U1LZ4Wzc2Po/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:414: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1171: libc++ Hardening assertion __first <= __last failed: vector::erase(first, last) called with invalid range\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:414: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
 + "B24@?0r*8^{CGPDFObject=}16"
 + "image-%lu.png"
 + "public.png"
 - "%02x"
-- "/AppleInternal/Library/BuildRoots/4~CQDKugCEviD0n23jDL0UhvNSIBpKzXg3fVCjF6Q/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/System/Library/Frameworks/CoreGraphics.framework/PrivateHeaders/CGBuf.h"
-- "/AppleInternal/Library/BuildRoots/4~CQDKugCEviD0n23jDL0UhvNSIBpKzXg3fVCjF6Q/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__utility/is_pointer_in_range.h:38: libc++ Hardening assertion std::__is_valid_range(__begin, __end) failed: [__begin, __end) is not a valid range\n"
-- "/AppleInternal/Library/BuildRoots/4~CQDKugCEviD0n23jDL0UhvNSIBpKzXg3fVCjF6Q/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1156: libc++ Hardening assertion __first <= __last failed: vector::erase(first, last) called with invalid range\n"
-- "/AppleInternal/Library/BuildRoots/4~CQDKugCEviD0n23jDL0UhvNSIBpKzXg3fVCjF6Q/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:413: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1156: libc++ Hardening assertion __first <= __last failed: vector::erase(first, last) called with invalid range\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:413: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
 - "AAPL:AKIdentityHash"
 - "i24@?0^{__CFString=}8^{CGImageMetadataTag=}16"
 - "resultDict"
 - "visitedSet"
-
 ```

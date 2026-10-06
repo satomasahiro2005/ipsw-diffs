@@ -2,11 +2,21 @@
 
 > `com.apple.driver.AppleSMC`
 
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
 -794.0.2.0.0
 +794.0.3.0.0
-   __TEXT.__cstring: 0x95e3
-   __TEXT.__const: 0x254
-   __TEXT.__os_log: 0xd97
+CStrings:
++ "21:51:00"
++ "21:51:01"
++ "Aug  5 2026"
+- "21:20:40"
+- "21:20:43"
+- "Jul 14 2026"
 ```

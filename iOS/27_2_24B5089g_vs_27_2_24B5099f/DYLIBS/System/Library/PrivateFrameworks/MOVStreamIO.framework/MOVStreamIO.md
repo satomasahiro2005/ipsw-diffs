@@ -2,22 +2,12 @@
 
 > `/System/Library/PrivateFrameworks/MOVStreamIO.framework/MOVStreamIO`
 
-```diff
+### Section Size Changes
 
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__auth_got: 0xf48
--  __AUTH.__objc_data: 0xe0
--  __AUTH.__data: 0x318
-   __DATA.__objc_ivar: 0x678
--  __DATA.__data: 0xc8c
-+  __DATA.__data: 0x1f4
-   __DATA.__common: 0x30
--  __DATA_DIRTY.__objc_data: 0x2440
--  __DATA_DIRTY.__data: 0x50
-+  __DATA_DIRTY.__objc_data: 0x2520
-+  __DATA_DIRTY.__data: 0xe00
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__data` | `0x50` | `0xe00` | **`+0xdb0`** |
+| `__DATA.__data` | `0xc8c` | `0x1f4` | **`-0xa98`** |
+| `__AUTH.__data` | `0x318` | `—` | **`-0x318`** |
+| `__AUTH.__objc_data` | `0xe0` | `—` | **`-0xe0`** |
+| `__DATA_DIRTY.__objc_data` | `0x2440` | `0x2520` | **`+0xe0`** |

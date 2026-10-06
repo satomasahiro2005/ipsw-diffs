@@ -2,80 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/SiriVOX.framework/SiriVOX`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x84418` | `0x85f40` | **`+0x1b28`** |
+| `__AUTH_CONST.__objc_const` | `0x13688` | `0x139a0` | **`+0x318`** |
+| `__TEXT.__cstring` | `0x11850` | `0x11acb` | **`+0x27b`** |
+| `__TEXT.__oslogstring` | `0x89be` | `0x8c2d` | **`+0x26f`** |
+| `__TEXT.__objc_methlist` | `0x8b58` | `0x8c78` | **`+0x120`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3d70` | `0x3e38` | **`+0xc8`** |
+| `__DATA_CONST.__const` | `0x2be8` | `0x2ca8` | **`+0xc0`** |
+| `__AUTH.__objc_data` | `0x40b0` | `0x4150` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x23c8` | `0x2458` | **`+0x90`** |
+| `__TEXT.__gcc_except_tab` | `0x57c` | `0x5cc` | **`+0x50`** |
+| `__AUTH_CONST.__cfstring` | `0x5fe0` | `0x6020` | **`+0x40`** |
+| `__DATA.__objc_ivar` | `0xca8` | `0xcdc` | **`+0x34`** |
+| `__AUTH_CONST.__const` | `0xc28` | `0xc08` | **`-0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x6d8` | `0x6e8` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x788` | `0x798` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x668` | `0x678` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x498` | `0x4a8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3600.52.7.0.0
--  __TEXT.__text: 0x824cc
--  __TEXT.__objc_methlist: 0x8b58
 +3605.16.1.0.0
-+  __TEXT.__text: 0x83fac
-+  __TEXT.__objc_methlist: 0x8c78
-   __TEXT.__const: 0x124
-   __TEXT.__constg_swiftt: 0x8c
-   __TEXT.__swift5_typeref: 0x97
-   __TEXT.__swift5_fieldmd: 0x38
-   __TEXT.__swift5_types: 0x8
--  __TEXT.__cstring: 0x11850
-+  __TEXT.__cstring: 0x11acb
-   __TEXT.__swift5_capture: 0x78
-   __TEXT.__swift5_reflstr: 0x16
--  __TEXT.__gcc_except_tab: 0x57c
--  __TEXT.__oslogstring: 0x89be
-+  __TEXT.__gcc_except_tab: 0x5cc
-+  __TEXT.__oslogstring: 0x8c2d
-   __TEXT.__dlopen_cstrs: 0xda
--  __TEXT.__unwind_info: 0x2ba0
-+  __TEXT.__unwind_info: 0x2c40
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2be8
--  __DATA_CONST.__objc_classlist: 0x668
-+  __DATA_CONST.__const: 0x2ca8
-+  __DATA_CONST.__objc_classlist: 0x678
-   __DATA_CONST.__objc_catlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x2d8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3d70
-+  __DATA_CONST.__objc_selrefs: 0x3e38
-   __DATA_CONST.__objc_protorefs: 0x48
--  __DATA_CONST.__objc_superrefs: 0x498
-+  __DATA_CONST.__objc_superrefs: 0x4a8
-   __DATA_CONST.__objc_arraydata: 0x980
--  __DATA_CONST.__got: 0x788
--  __AUTH_CONST.__const: 0xc28
--  __AUTH_CONST.__cfstring: 0x5fe0
--  __AUTH_CONST.__objc_const: 0x13688
-+  __DATA_CONST.__got: 0x798
-+  __AUTH_CONST.__const: 0xc08
-+  __AUTH_CONST.__cfstring: 0x6020
-+  __AUTH_CONST.__objc_const: 0x139a0
-   __AUTH_CONST.__objc_arrayobj: 0x78
-   __AUTH_CONST.__objc_intobj: 0xe58
-   __AUTH_CONST.__objc_dictobj: 0x348
--  __AUTH_CONST.__auth_got: 0x6d8
--  __AUTH.__objc_data: 0x40b0
-+  __AUTH_CONST.__auth_got: 0x6e8
-+  __AUTH.__objc_data: 0x4150
-   __AUTH.__data: 0x38
--  __DATA.__objc_ivar: 0xca8
-+  __DATA.__objc_ivar: 0xcdc
-   __DATA.__data: 0x2260
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3142
--  Symbols:   8313
+-  Symbols:   6675
 -  CStrings:  2252
 +  Functions: 3179
-+  Symbols:   8416
++  Symbols:   6754
 +  CStrings:  2276
- 
 Symbols:
 + -[SVXHomePodUIBridgeClientDelegate cancelPendingFollowUpActivation]
 + -[SVXHomePodUIBridgeClientDelegate didFinishPlayback]
@@ -189,37 +150,6 @@ Symbols:
 + ___block_descriptor_49_e8_32s40bs_e5_v8?0ls32l8s40l8
 + ___block_descriptor_56_e8_32s40s48bs_e32_v20?0B8"SCDAElectionOutcome"12ls32l8s40l8s48l8
 + ___block_descriptor_80_e8_32s40s48s56s64bs_e5_v8?0ls32l8s40l8s48l8s56l8s64l8
-+ _objc_msgSend$_electionLedger
-+ _objc_msgSend$_isRootRequestHoldToTalk
-+ _objc_msgSend$_waitForLedgerDecisionForElection:usingHandler:
-+ _objc_msgSend$beginElectionWithIdentity:
-+ _objc_msgSend$cancelPendingFollowUpActivation
-+ _objc_msgSend$decisionForActivationIdentifier:
-+ _objc_msgSend$decisionForElection:reason:detail:deliverOn:completion:
-+ _objc_msgSend$didFinishPlayback
-+ _objc_msgSend$didPromptListeningAfterSpeaking
-+ _objc_msgSend$initWithAvailabilityReporter:siriAvailabilityProvider:instrumentationUtils:
-+ _objc_msgSend$initWithShouldDeclineActivation:promptLocalizationKey:
-+ _objc_msgSend$initWithSiriActivationListener:mainQueuePerformer:siriActivationSupportPredicate:virtualDeviceManager:instrumentationUtils:activationUtils:
-+ _objc_msgSend$isContinuousConversationEnabled
-+ _objc_msgSend$isUserInitiatedDeviceActivationWithContext:
-+ _objc_msgSend$lasAttendingTimeoutSeconds
-+ _objc_msgSend$myriadElectionIdentity
-+ _objc_msgSend$promptLocalizationKey
-+ _objc_msgSend$releaseAudioSessionIfIdleForReason:
-+ _objc_msgSend$setAceCommandClass:
-+ _objc_msgSend$setBlockAttending:
-+ _objc_msgSend$setInteractionLinkId:
-+ _objc_msgSend$setLogLinkId:
-+ _objc_msgSend$setStreamId:
-+ _objc_msgSend$sharedLedger
-+ _objc_msgSend$shouldDeclineActivation
-+ _objc_msgSend$speechSynthesizerDidFinishPlayback
-+ _objc_msgSend$startAdvertising:withSCDAGoodnessScoreContext:withSCDAAudioContext:electionIdentity:completion:
-+ _objc_msgSend$startAdvertisingFromAlertFiringVoiceTriggerWithContext:electionIdentity:
-+ _objc_msgSend$startAdvertisingFromDirectTriggerWithContext:electionIdentity:
-+ _objc_msgSend$startAdvertisingFromInTaskVoiceTriggerWithContext:electionIdentity:
-+ _objc_msgSend$startAdvertisingFromVoiceTriggerWithGoodnessScoreContext:withContext:electionIdentity:
 + _objc_release_x3
 - -[SVXHomePodUIBridgeClientDelegate willPromptListeningAfterSpeaking]
 - -[SVXMyriadDeviceManager startAdvertising:withSCDAGoodnessScoreContext:withSCDAAudioContext:completion:]
@@ -255,13 +185,6 @@ Symbols:
 - _OBJC_IVAR_$_SVXSiriActivationListenerDelegate._availabilityReporter
 - _OBJC_IVAR_$_SVXSiriActivationListenerDelegate._siriAvailability
 - ___101-[SVXMyriadHostDevice startAdvertising:withSCDAGoodnessScoreContext:withSCDAAudioContext:completion:]_block_invoke
-- _objc_msgSend$initWithSiriActivationListener:mainQueuePerformer:siriActivationSupportPredicate:virtualDeviceManager:instrumentationUtils:activationUtils:siriAvailability:availabilityReporter:
-- _objc_msgSend$setSiriAceViewId:
-- _objc_msgSend$setSiriInputStreamId:
-- _objc_msgSend$setSiriRequestId:
-- _objc_msgSend$siriInputStreamId
-- _objc_msgSend$startAdvertising:withSCDAGoodnessScoreContext:withSCDAAudioContext:completion:
-- _objc_msgSend$willPromptListeningAfterSpeaking
 CStrings:
 + "\""
 + "#Choreography New activation — cancelling stale LAS timer"

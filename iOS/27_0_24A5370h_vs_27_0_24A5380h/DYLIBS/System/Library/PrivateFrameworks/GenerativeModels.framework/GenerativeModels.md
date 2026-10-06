@@ -2,115 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcc3d0` | `0xce85c` | **`+0x248c`** |
+| `__TEXT.__oslogstring` | `0x2e63` | `0x3263` | **`+0x400`** |
+| `__DATA.__bss` | `0xc500` | `0xc280` | **`-0x280`** |
+| `__DATA_DIRTY.__bss` | `0x6080` | `0x6300` | **`+0x280`** |
+| `__AUTH_CONST.__const` | `0x7eb0` | `0x7c40` | **`-0x270`** |
+| `__TEXT.__cstring` | `0x27b3` | `0x29c3` | **`+0x210`** |
+| `__DATA_DIRTY.__data` | `0x15f0` | `0x1798` | **`+0x1a8`** |
+| `__AUTH.__objc_data` | `0x560` | `0x410` | **`-0x150`** |
+| `__DATA_DIRTY.__objc_data` | `0xf8` | `0x248` | **`+0x150`** |
+| `__TEXT.__swift5_capture` | `0xdf8` | `0xcf8` | **`-0x100`** |
+| `__TEXT.__eh_frame` | `0x4f1c` | `0x4eac` | **`-0x70`** |
+| `__DATA.__data` | `0x1a98` | `0x1a48` | **`-0x50`** |
+| `__TEXT.__const` | `0xb354` | `0xb394` | **`+0x40`** |
+| `__TEXT.__swift5_reflstr` | `0x2348` | `0x2378` | **`+0x30`** |
+| `__TEXT.__swift5_typeref` | `0x2ed2` | `0x2efe` | **`+0x2c`** |
+| `__TEXT.__constg_swiftt` | `0x211c` | `0x2144` | **`+0x28`** |
+| `__TEXT.__swift5_fieldmd` | `0x2984` | `0x29ac` | **`+0x28`** |
+| `__AUTH.__data` | `0x820` | `0x800` | **`-0x20`** |
+| `__DATA_CONST.__got` | `0xa58` | `0xa78` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x16c0` | `0x16d8` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x3160` | `0x3168` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x360` | `0x364` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xcc3d0
-+  __TEXT.__text: 0xce85c
-   __TEXT.__objc_methlist: 0x478
--  __TEXT.__const: 0xb354
--  __TEXT.__constg_swiftt: 0x211c
--  __TEXT.__swift5_typeref: 0x2ed2
-+  __TEXT.__const: 0xb394
-+  __TEXT.__constg_swiftt: 0x2144
-+  __TEXT.__swift5_typeref: 0x2efe
-   __TEXT.__swift5_builtin: 0x78
--  __TEXT.__swift5_reflstr: 0x2348
--  __TEXT.__swift5_fieldmd: 0x2984
-+  __TEXT.__swift5_reflstr: 0x2378
-+  __TEXT.__swift5_fieldmd: 0x29ac
-   __TEXT.__swift5_assocty: 0x620
-   __TEXT.__swift5_proto: 0x93c
--  __TEXT.__swift5_types: 0x360
-+  __TEXT.__swift5_types: 0x364
-   __TEXT.__swift5_protos: 0x20
--  __TEXT.__oslogstring: 0x2e63
--  __TEXT.__cstring: 0x27b3
--  __TEXT.__swift5_capture: 0xdf8
-+  __TEXT.__oslogstring: 0x3263
-+  __TEXT.__cstring: 0x29c3
-+  __TEXT.__swift5_capture: 0xcf8
-   __TEXT.__swift_as_entry: 0x1a8
-   __TEXT.__swift_as_ret: 0x1bc
-   __TEXT.__swift_as_cont: 0x344
-   __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__unwind_info: 0x3160
--  __TEXT.__eh_frame: 0x4f1c
-+  __TEXT.__unwind_info: 0x3168
-+  __TEXT.__eh_frame: 0x4eac
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-284.0.7.0.0
++287.0.6.0.0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x420
-   __DATA_CONST.__objc_protorefs: 0x28
--  __DATA_CONST.__got: 0xa58
--  __AUTH_CONST.__const: 0x7eb0
-+  __DATA_CONST.__got: 0xa78
-+  __AUTH_CONST.__const: 0x7c40
-   __AUTH_CONST.__objc_const: 0xb88
--  __AUTH_CONST.__auth_got: 0x16c0
--  __AUTH.__objc_data: 0x560
--  __AUTH.__data: 0x820
--  __DATA.__data: 0x1a98
--  __DATA.__bss: 0xc500
-+  __AUTH_CONST.__auth_got: 0x16d8
-+  __AUTH.__objc_data: 0x410
-+  __AUTH.__data: 0x800
-+  __DATA.__data: 0x1a48
-+  __DATA.__bss: 0xc280
-   __DATA.__common: 0x28
--  __DATA_DIRTY.__objc_data: 0xf8
--  __DATA_DIRTY.__data: 0x15f0
--  __DATA_DIRTY.__bss: 0x6080
-+  __DATA_DIRTY.__objc_data: 0x248
-+  __DATA_DIRTY.__data: 0x1798
-+  __DATA_DIRTY.__bss: 0x6300
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/NaturalLanguage.framework/NaturalLanguage
 +  - /System/Library/Frameworks/Security.framework/Security
-   - /System/Library/PrivateFrameworks/CoreEmoji.framework/CoreEmoji
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/GenerativeAgents.framework/GenerativeAgents
 
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
 +  - /usr/lib/swift/libswiftSynchronization.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5807
 -  Symbols:   248
--  CStrings:  477
+-  CStrings:  474
 +  Functions: 5834
 +  Symbols:   255
-+  CStrings:  495
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__objc_const : content changed
++  CStrings:  492
 Symbols:
 + _SecKeyCreateWithData
 + _SecKeyVerifySignature
@@ -144,5 +79,4 @@ CStrings:
 + "forcedWaitlistStatus: %{public}s (gmstool override)"
 + "forcedWaitlistStatus: nil"
 + "setSecureForcedWaitlistStatusOverride: not allowed on non-internal builds"
-
 ```

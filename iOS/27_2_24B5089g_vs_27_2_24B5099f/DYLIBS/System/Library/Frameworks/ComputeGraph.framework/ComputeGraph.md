@@ -2,47 +2,24 @@
 
 > `/System/Library/Frameworks/ComputeGraph.framework/ComputeGraph`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14424c` | `0x1443a8` | **`+0x15c`** |
+| `__TEXT.__eh_frame` | `0x9508` | `0x95a0` | **`+0x98`** |
+| `__DATA_DIRTY.__data` | `—` | `0x28` | **`+0x28`** |
+| `__AUTH.__data` | `0x12c0` | `0x12a0` | **`-0x20`** |
+| `__TEXT.__unwind_info` | `0x4fa8` | `0x4fa0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 30.40.1.0.0
--  __TEXT.__text: 0x13f654
-+  __TEXT.__text: 0x13f7b0
-   __TEXT.__objc_methlist: 0x12cc
-   __TEXT.__const: 0x1e944
-   __TEXT.__swift5_typeref: 0x43fc
-
-   __TEXT.__swift_as_ret: 0x5c
-   __TEXT.__swift_as_cont: 0x170
-   __TEXT.__swift5_types2: 0x14
--  __TEXT.__unwind_info: 0x6148
--  __TEXT.__eh_frame: 0x9540
-+  __TEXT.__unwind_info: 0x6150
-+  __TEXT.__eh_frame: 0x95c8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __AUTH_CONST.__const: 0x11db0
-   __AUTH_CONST.__objc_const: 0x32c8
-   __AUTH_CONST.__auth_got: 0x1138
--  __AUTH.__data: 0x12c0
-+  __AUTH.__data: 0x12a0
-   __DATA.__data: 0x2ab8
-   __DATA.__common: 0x568
-+  __DATA_DIRTY.__data: 0x28
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/Metal.framework/Metal
-   - /usr/lib/libSystem.B.dylib
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7394
 -  Symbols:   20532
 +  Functions: 7399
 +  Symbols:   20537
-   CStrings:  879
- 
 Symbols:
 + _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVy12ComputeGraph0f4NodeG0V19StructureDefinitionVG_Tg504$s12f38Graph7LibraryV14structureTypesSayAA0a4h5B0V19iJ17VGvgSbAH_AHtXEfU_Tf1nnc_n
 + _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVy12ComputeGraph0f4NodeG0V4EdgeVG_Tg5

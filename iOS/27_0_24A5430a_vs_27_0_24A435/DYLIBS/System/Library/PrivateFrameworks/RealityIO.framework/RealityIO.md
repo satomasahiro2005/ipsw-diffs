@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/RealityIO.framework/RealityIO`
 
-```diff
+### Section Size Changes
 
- 235.0.6.0.0
--  __TEXT.__text: 0xfd8e0
-+  __TEXT.__text: 0xfd94c
-   __TEXT.__objc_methlist: 0x29c
-   __TEXT.__const: 0xb060
-   __TEXT.__constg_swiftt: 0x41d8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfd8e0` | `0xfd94c` | **`+0x6c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$sSTsE7flatMapySay7ElementQyd__Gqd__ABQzKXEKSTRd__lFSaySay10RealityKit17AnimationResourceCGG_AITg503$s9d57IO15TimelineBuilderC13createActions3for6inputsSay0A3Kit17fG34CGSgAA4PrimC_AA6InputsCtFA2JXEfU0_Tf1cn_n : 728 -> 724
 ~ _$s9RealityIO15TimelineBuilderC3run6inputsyAA6InputsC_tFyyXEfU_ : 5976 -> 5972

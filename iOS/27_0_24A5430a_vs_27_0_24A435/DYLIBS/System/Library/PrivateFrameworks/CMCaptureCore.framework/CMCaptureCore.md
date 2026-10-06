@@ -2,38 +2,23 @@
 
 > `/System/Library/PrivateFrameworks/CMCaptureCore.framework/CMCaptureCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0xdf51` | `0xea86` | **`+0xb35`** |
+| `__AUTH_CONST.__cfstring` | `0x14740` | `0x14f40` | **`+0x800`** |
+| `__DATA_CONST.__const` | `0x5880` | `0x5af0` | **`+0x270`** |
+| `__TEXT.__text` | `0x1fd4` | `0x2058` | **`+0x84`** |
+
+### Other Changes
+
 ```diff
 
- 764.22.13.0.0
--  __TEXT.__text: 0x1fd4
--  __TEXT.__cstring: 0xdf51
-+  __TEXT.__text: 0x2058
-+  __TEXT.__cstring: 0xea86
-   __TEXT.__const: 0x25
-   __TEXT.__oslogstring: 0xa6
-   __TEXT.__unwind_info: 0x90
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0x5880
-+  __DATA_CONST.__const: 0x5af0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__cfstring: 0x14740
-+  __AUTH_CONST.__cfstring: 0x14f40
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__data: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 14
--  Symbols:   2957
+-  Symbols:   2955
 -  CStrings:  2624
-+  Symbols:   3035
++  Symbols:   3033
 +  CStrings:  2688
- 
 Symbols:
 + _kFigAppleMakerNote_AEInputSignals
 + _kFigAppleMakerNote_AESignals

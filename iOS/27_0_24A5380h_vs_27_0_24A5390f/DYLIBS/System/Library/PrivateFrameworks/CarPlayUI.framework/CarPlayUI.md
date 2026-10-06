@@ -2,111 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/CarPlayUI.framework/CarPlayUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x118cf0` | `0x119848` | **`+0xb58`** |
+| `__TEXT.__swift5_typeref` | `0x1aca6` | `0x1af9e` | **`+0x2f8`** |
+| `__AUTH.__data` | `0x3150` | `0x31e0` | **`+0x90`** |
+| `__TEXT.__swift5_reflstr` | `0x1f05` | `0x1f45` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0x73d0` | `0x7398` | **`-0x38`** |
+| `__DATA.__data` | `0x6298` | `0x62c8` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x3df8` | `0x3e20` | **`+0x28`** |
+| `__TEXT.__const` | `0xde14` | `0xde34` | **`+0x20`** |
+| `__DATA.__bss` | `0x9bc0` | `0x9bd8` | **`+0x18`** |
+| `__TEXT.__swift5_fieldmd` | `0x2e6c` | `0x2e84` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x1c00` | `0x1bf0` | **`-0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3828` | `0x3838` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0xd40` | `0xd50` | **`+0x10`** |
+| `__TEXT.__constg_swiftt` | `0x56e4` | `0x56f0` | **`+0xc`** |
+
+### Other Changes
 
 ```diff
 
 -537.3.0.0.0
--  __TEXT.__text: 0x118cf0
 +540.1.0.0.0
-+  __TEXT.__text: 0x119848
-   __TEXT.__objc_methlist: 0x5b80
--  __TEXT.__const: 0xde14
-+  __TEXT.__const: 0xde34
-   __TEXT.__cstring: 0x1c2d
-   __TEXT.__gcc_except_tab: 0x90
-   __TEXT.__ustring: 0x12
-   __TEXT.__oslogstring: 0x87d
--  __TEXT.__swift5_typeref: 0x1aca6
--  __TEXT.__swift5_reflstr: 0x1f05
-+  __TEXT.__swift5_typeref: 0x1af9e
-+  __TEXT.__swift5_reflstr: 0x1f45
-   __TEXT.__swift5_assocty: 0x1128
--  __TEXT.__constg_swiftt: 0x56e4
-+  __TEXT.__constg_swiftt: 0x56f0
-   __TEXT.__swift5_builtin: 0x1f4
-   __TEXT.__swift5_mpenum: 0x80
--  __TEXT.__swift5_fieldmd: 0x2e6c
-+  __TEXT.__swift5_fieldmd: 0x2e84
-   __TEXT.__swift5_proto: 0x4a0
-   __TEXT.__swift5_types: 0x424
-   __TEXT.__swift5_protos: 0x30
--  __TEXT.__swift5_capture: 0xd40
-+  __TEXT.__swift5_capture: 0xd50
-   __TEXT.__swift_as_entry: 0x28
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x2c
--  __TEXT.__unwind_info: 0x3df8
-+  __TEXT.__unwind_info: 0x3e20
-   __TEXT.__eh_frame: 0xd88
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0xe8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3828
-+  __DATA_CONST.__objc_selrefs: 0x3838
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__objc_superrefs: 0x180
-   __DATA_CONST.__objc_arraydata: 0xd8
-   __DATA_CONST.__got: 0x1330
--  __AUTH_CONST.__const: 0x73d0
-+  __AUTH_CONST.__const: 0x7398
-   __AUTH_CONST.__cfstring: 0x15e0
-   __AUTH_CONST.__objc_const: 0xedd0
-   __AUTH_CONST.__objc_intobj: 0x270
-   __AUTH_CONST.__objc_arrayobj: 0x120
-   __AUTH_CONST.__objc_doubleobj: 0x80
--  __AUTH_CONST.__auth_got: 0x1c00
-+  __AUTH_CONST.__auth_got: 0x1bf0
-   __AUTH.__objc_data: 0x3378
--  __AUTH.__data: 0x3150
-+  __AUTH.__data: 0x31e0
-   __DATA.__objc_ivar: 0x5a8
--  __DATA.__data: 0x6298
--  __DATA.__bss: 0x9bc0
-+  __DATA.__data: 0x62c8
-+  __DATA.__bss: 0x9bd8
-   __DATA.__common: 0x228
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AVRouting.framework/AVRouting
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7081
--  Symbols:   20178
+-  Symbols:   18831
 +  Functions: 7093
-+  Symbols:   20192
-   CStrings:  340
- 
++  Symbols:   18843
 Symbols:
 + _$s7SwiftUI15ModifiedContentVyAA5GroupVyAA012_ConditionalD0VyAGyACyACyACyAEyAGyAA6ZStackVyAA05TupleD0VyAA4ViewPAAE12_glassEffect_2inQrAA6_GlassV_qd__tAA5ShapeRd__lFQOyACy07CarPlayB004GridI0C4BaseO7ArtworkVAA31AccessibilityAttachmentModifierVG_AA16RoundedRectangleVQo__ACyAA01_nI0VyA2_AA5ColorVGAA017_AllowsHitTestingV0VGACyAA6VStackVyAKyACyACyACyA7_AA18_AspectRatioLayoutVGAA14_PaddingLayoutVGAA013_TraitWritingV0VyAA22LayoutPriorityTraitKeyVGG_AGyAKyAA6SpacerV_AGyAGyACyACyACyAU4HeroO4CellV6LabelsVAA022_EnvironmentKeyWritingV0VyAA0Y6SchemeOGGAA16_FlexFrameLayoutVGA18_GAIyAKyA27__AA14LinearGradientVAS15ProgressiveBlurVA43_QPGGGA43_GQPGAGyAIyAKyA45__A47_A43_QPGGA43_GSgGQPGGA41_GQPGGACyA0_AA08_OverlayV0VyA60_GGGGA64_yACyACyA31_12ImageOverlayVAA12_FrameLayoutVGA18_GSgGGA38_GAA05_ClipK0VyA2_GGACyA77_A81_GGACyACyA7_A80_yAA0X0VGGA64_yACyACyA13_yAKyACyACyACyAYA15_GAS014InnerHighlightV033_72839E0F9B593DB3362A42CA7E21E962LLVyA7_GGA24_G_AGyAKyA27__A42_QPGACyA33_A41_GGQPGGA41_GA18_GGGGGA35_yAA4FontVSgGGACyxq_GAal2aLRzAA0iV0R_rlWL
 + _$s7SwiftUI15ModifiedContentVyAA5GroupVyAA012_ConditionalD0VyAGyACyACyACyAEyAGyAA6ZStackVyAA05TupleD0VyAA4ViewPAAE12_glassEffect_2inQrAA6_GlassV_qd__tAA5ShapeRd__lFQOyACy07CarPlayB004GridI0C4BaseO7ArtworkVAA31AccessibilityAttachmentModifierVG_AA16RoundedRectangleVQo__ACyAA01_nI0VyA2_AA5ColorVGAA017_AllowsHitTestingV0VGACyAA6VStackVyAKyACyACyACyA7_AA18_AspectRatioLayoutVGAA14_PaddingLayoutVGAA013_TraitWritingV0VyAA22LayoutPriorityTraitKeyVGG_AGyAKyAA6SpacerV_AGyAGyACyACyACyAU4HeroO4CellV6LabelsVAA022_EnvironmentKeyWritingV0VyAA0Y6SchemeOGGAA16_FlexFrameLayoutVGA18_GAIyAKyA27__AA14LinearGradientVAS15ProgressiveBlurVA43_QPGGGA43_GQPGAGyAIyAKyA45__A47_A43_QPGGA43_GSgGQPGGA41_GQPGGACyA0_AA08_OverlayV0VyA60_GGGGA64_yACyACyA31_12ImageOverlayVAA12_FrameLayoutVGA18_GSgGGA38_GAA05_ClipK0VyA2_GGACyA77_A81_GGACyACyA7_A80_yAA0X0VGGA64_yACyACyA13_yAKyACyACyACyAYA15_GAS014InnerHighlightV033_72839E0F9B593DB3362A42CA7E21E962LLVyA7_GGA24_G_AGyAKyA27__A42_QPGACyA33_A41_GGQPGGA41_GA18_GGGGGA35_yAA4FontVSgGGACyxq_GAal2aLRzAA0iV0R_rlWl
@@ -156,8 +81,6 @@ Symbols:
 + _CPUIFrameworkBundle.onceToken
 + ___CPUIFrameworkBundle_block_invoke
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyAA5GroupVyAA012_ConditionalD0VyAGyACyACyACyAEyAGyAA6ZStackVyAA05TupleD0VyAA4ViewPAAE12_glassEffect_2inQrAA6_GlassV_qd__tAA5ShapeRd__lFQOyACy07CarPlayB004GridI0C4BaseO7ArtworkVAA31AccessibilityAttachmentModifierVG_AA16RoundedRectangleVQo__ACyAA01_nI0VyA2_AA5ColorVGAA017_AllowsHitTestingV0VGACyAA6VStackVyAKyACyACyACyA7_AA18_AspectRatioLayoutVGAA14_PaddingLayoutVGAA013_TraitWritingV0VyAA22LayoutPriorityTraitKeyVGG_AGyAKyAA6SpacerV_AGyAGyACyACyACyAU4HeroO4CellV6LabelsVAA022_EnvironmentKeyWritingV0VyAA0Y6SchemeOGGAA16_FlexFrameLayoutVGA18_GAIyAKyA27__AA14LinearGradientVAS15ProgressiveBlurVA43_QPGGGA43_GQPGAGyAIyAKyA45__A47_A43_QPGGA43_GSgGQPGGA41_GQPGGACyA0_AA08_OverlayV0VyA60_GGGGA64_yACyACyA31_12ImageOverlayVAA12_FrameLayoutVGA18_GSgGGA38_GAA05_ClipK0VyA2_GGACyA77_A81_GGACyACyA7_A80_yAA0X0VGGA64_yACyACyA13_yAKyACyACyACyAYA15_GAS014InnerHighlightV033_72839E0F9B593DB3362A42CA7E21E962LLVyA7_GGA24_G_AGyAKyA27__A42_QPGACyA33_A41_GGQPGGA41_GA18_GGGGGA35_yAA4FontVSgGGA35_yAA13TextAlignmentOGGAaLHPA111_AaLHPA106_AaLHPA105_AaLHPA84_AaLHPA82_AaLHPA78_AaLHPA77_AaLHPA68_AaLHPA67_AaLHPA62_AaLHPyHC_A66_AaLHPA0_AaLHPAyaLHPyHC_A_AA0iV0HPyHCHC_A65_AAA116_HPyHCHCHC_HC_A76_AAA116_HPyHCHC_A38_AAA116_HPyHCHC_A81_AAA116_HPyHCHC_A83_AaLHPA77_AaLHPA68_AaLHPA67_AaLHPA62_AaLHPyHC_A66_AaLHPA0_AaLHPAyaLHPyHC_A_AAA116_HPyHCHC_A65_AAA116_HPyHCHCHC_HC_A76_AAA116_HPyHCHC_A81_AAA116_HPyHCHCHC_A104_AaLHPA88_AaLHPA7_AaLHPyHC_A87_AAA116_HPyHCHC_A103_AAA116_HPyHCHCHC_HC_A110_AAA116_HPyHCHC_A114_AAA116_HPyHCHC
-+ _objc_msgSend$assetName
-+ _objc_msgSend$imageAsset
 + _symbolic _____yAAyAAy_____y_____y_____y_____y_____yAAy__________G______Qo__AAy_____yAI_____G_____GAAy_____yAEyAAyAAyAAyAL_____G_____G_____y_____GG_ACyAEy______ACyACyAAyAAyAAy__________y_____GG_____GASGADyAEyAY___________A5_QPGGGA5_GQPGACyADyAEyA6__A7_A5_QPGGA5_GSgGQPGGA3_GQPGGAAyAH_____yA20_GGGGA23_yAAyAAy__________GASGSgGGA1_G_____yAIGG 7SwiftUI15ModifiedContentV AA5GroupV AA012_ConditionalD0V AA6ZStackV AA05TupleD0V AA4ViewPAAE12_glassEffect_2inQrAA6_GlassV_qd__tAA5ShapeRd__lFQO 07CarPlayB004GridI0C4BaseO7ArtworkV AA31AccessibilityAttachmentModifierV AA16RoundedRectangleV AA01_nI0V AA5ColorV AA017_AllowsHitTestingV0V AA6VStackV AA18_AspectRatioLayoutV AA14_PaddingLayoutV AA013_TraitWritingV0V AA22LayoutPriorityTraitKeyV AA6SpacerV AU4HeroO4CellV6LabelsV AA022_EnvironmentKeyWritingV0V AA0Y6SchemeO AA16_FlexFrameLayoutV AA14LinearGradientV AS15ProgressiveBlurV AA08_OverlayV0V A23_12ImageOverlayV AA12_FrameLayoutV AA05_ClipK0V
 + _symbolic _____yAAy_____yAByABy_____yAAy_____y_____y_____yABy__________G______Qo__ABy_____yAI_____G_____GABy_____yAEyAByAByAByAL_____G_____G_____y_____GG_AAyAEy______AAyAAyAByAByABy__________y_____GG_____GASGADyAEyAY___________A5_QPGGGA5_GQPGAAyADyAEyA6__A7_A5_QPGGA5_GSgGQPGGA3_GQPGGAByAH_____yA20_GGGGA23_yAByABy__________GASGSgGGA1_G_____yAIGGAByA34_A37_GGAByAByALA36_y_____GGA23_yAByAByAPyAEyAByAByAByAfQG_____yALGGAWG_AAyAEyAY_A4_QPGAByAZA3_GGQPGGA3_GASGGGG 7SwiftUI19_ConditionalContentV AA08ModifiedD0V AA5GroupV AA6ZStackV AA05TupleD0V AA4ViewPAAE12_glassEffect_2inQrAA6_GlassV_qd__tAA5ShapeRd__lFQO 07CarPlayB004GridI0C4BaseO7ArtworkV AA31AccessibilityAttachmentModifierV AA16RoundedRectangleV AA01_nI0V AA5ColorV AA017_AllowsHitTestingV0V AA6VStackV AA18_AspectRatioLayoutV AA14_PaddingLayoutV AA013_TraitWritingV0V AA22LayoutPriorityTraitKeyV AA6SpacerV AU4HeroO4CellV6LabelsV AA022_EnvironmentKeyWritingV0V AA0Y6SchemeO AA16_FlexFrameLayoutV AA14LinearGradientV AS15ProgressiveBlurV AA08_OverlayV0V A23_12ImageOverlayV AA12_FrameLayoutV AA05_ClipK0V AA0X0V AS014InnerHighlightV033_72839E0F9B593DB3362A42CA7E21E962LLV
 + _symbolic _____yAAy_____y_____yACyAAyAAyAAyAByACy_____y_____y_____yAAy__________G______Qo__AAy_____yAI_____G_____GAAy_____yAEyAAyAAyAAyAL_____G_____G_____y_____GG_ACyAEy______ACyACyAAyAAyAAy__________y_____GG_____GASGADyAEyAY___________A5_QPGGGA5_GQPGACyADyAEyA6__A7_A5_QPGGA5_GSgGQPGGA3_GQPGGAAyAH_____yA20_GGGGA23_yAAyAAy__________GASGSgGGA1_G_____yAIGGAAyA34_A37_GGAAyAAyALA36_y_____GGA23_yAAyAAyAPyAEyAAyAAyAAyAfQG_____yALGGAWG_ACyAEyAY_A4_QPGAAyAZA3_GGQPGGA3_GASGGGGGA_y_____SgGGA_y_____GG 7SwiftUI15ModifiedContentV AA5GroupV AA012_ConditionalD0V AA6ZStackV AA05TupleD0V AA4ViewPAAE12_glassEffect_2inQrAA6_GlassV_qd__tAA5ShapeRd__lFQO 07CarPlayB004GridI0C4BaseO7ArtworkV AA31AccessibilityAttachmentModifierV AA16RoundedRectangleV AA01_nI0V AA5ColorV AA017_AllowsHitTestingV0V AA6VStackV AA18_AspectRatioLayoutV AA14_PaddingLayoutV AA013_TraitWritingV0V AA22LayoutPriorityTraitKeyV AA6SpacerV AU4HeroO4CellV6LabelsV AA022_EnvironmentKeyWritingV0V AA0Y6SchemeO AA16_FlexFrameLayoutV AA14LinearGradientV AS15ProgressiveBlurV AA08_OverlayV0V A23_12ImageOverlayV AA12_FrameLayoutV AA05_ClipK0V AA0X0V AS014InnerHighlightV033_72839E0F9B593DB3362A42CA7E21E962LLV AA4FontV AA13TextAlignmentO

@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/ToolKit.framework/XPCServices/ToolMetadataService.xpc/ToolMetadataService`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_100007134 : 12 -> 20

@@ -2,63 +2,33 @@
 
 > `/System/Library/VideoCodecs/ave.videoencoder`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1bfb3c` | `0x16b06c` | **`-0x54ad0`** |
+| `__TEXT.__cstring` | `0x4e745` | `0x4b2bf` | **`-0x3486`** |
+| `__AUTH_CONST.__const` | `0x7ab8` | `0x56d0` | **`-0x23e8`** |
+| `__TEXT.__const` | `0x24f9f` | `0x2535c` | **`+0x3bd`** |
+| `__AUTH_CONST.__cfstring` | `0x3240` | `0x2f40` | **`-0x300`** |
+| `__DATA_CONST.__const` | `0x5778` | `0x55d0` | **`-0x1a8`** |
+| `__TEXT.__unwind_info` | `0x940` | `0xa40` | **`+0x100`** |
+| `__TEXT.__gcc_except_tab` | `0x720` | `0x6e4` | **`-0x3c`** |
+| `__DATA_DIRTY.__bss` | `0x1050` | `0x1058` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -912.89.1.0.0
--  __TEXT.__text: 0x1bfb3c sha256:c79d7689ab4208347f0886180670bb9a5f663be9a6d49d2b38b27eec561b07d4
--  __TEXT.__init_offsets: 0xc sha256:b0e2a20158de08f10a554b5e9309fb897b5bb87e5aee5ce2934b9042b54674d4
--  __TEXT.__const: 0x24f9f sha256:6c147b3a85f661cb2664d3d368b5de96e5017d94497c4b5ebdb1b98682193b2f
--  __TEXT.__gcc_except_tab: 0x720 sha256:d99d67667dedbf8dba8f44687d21b7ea274fc39d10e8dd31405e00b63619bfab
--  __TEXT.__cstring: 0x4e745 sha256:663c6295211e33e8c4fe578678938a149ae7a340a3efc4d42e67689db2084366
--  __TEXT.__unwind_info: 0x940 sha256:811ace78295fc05dac8c9bbd6cf20f19d0d816f6d06ac75daf9b79930b6db131
 +913.8.0.0.0
-+  __TEXT.__text: 0x16b06c sha256:ab0bbb3abe1cc8d3fc9122bb9d731915c87f5da0e80737ae173b4dce8dd91759
-+  __TEXT.__init_offsets: 0xc sha256:6a7e8808f325b7c4e162f67522076932a1bb5fb8703265572f8b6b44e1aefc18
-+  __TEXT.__const: 0x2535c sha256:de1da92b6fa1c048a0e0380129f3c4de0f5006f6cb1f1062d554faee8a1ac60c
-+  __TEXT.__gcc_except_tab: 0x6e4 sha256:f7922ba94216d4973922434d48b7109e053f8fbc9daa07cae678f31459f58db2
-+  __TEXT.__cstring: 0x4b2bf sha256:2fde3e2a52e6b3b47f4d92cf71f68959fce3971bbcc4f7e490ab718d0f2055bc
-+  __TEXT.__unwind_info: 0xa40 sha256:8848aef87320b01ea325c1044b294922387941070edd7902a1f7c2a318ba468c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0x5778 sha256:bbd072cc9b43572ea2485a78f70acab73e223a1b3c8cc8ed2a87dfb5feb966bd
-+  __DATA_CONST.__const: 0x55d0 sha256:51e5f4a33c509b23c4005cde7d3a92ffcfd1bcb5daa177b5c583f7ffb658fa33
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x8 sha256:baed7a8f4fe06577baf9413d1425189458482e4f64d55b4f5cc304378385a036
--  __DATA_CONST.__objc_selrefs: 0x8 sha256:e4646ad8745db78df36480dec759f68e57a8f552d1d6f44a9381d08b4d55759a
-+  __DATA_CONST.__weak_got: 0x8 sha256:0187a61bf3fae6fc3b3aa794eddabd32ea418a3c89d235dd3a82b6bd02e4fd49
-+  __DATA_CONST.__objc_selrefs: 0x8 sha256:1e9edc101ac81d83b0b9c42ae420c3ab927e840a0fb0481f2049b9a8fee9c82a
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x7ab8 sha256:f7e0e78aef3acdcbc705b1c7af096b039099268c3316f89c8cada45f672e719c
--  __AUTH_CONST.__cfstring: 0x3240 sha256:c78ba636896b4c4af018a01ba5730f17f6693402764ed10924050d47e82260cf
--  __AUTH_CONST.__weak_auth_got: 0x28 sha256:3f44782b993b1b9c2459e2e737403f3ccc9f88eb388760e4c91a8282c1a5327f
-+  __AUTH_CONST.__const: 0x56d0 sha256:1792bc98c55f33d12a0ea256a9daf1455baeeaed0212ddd30b411603cd913c75
-+  __AUTH_CONST.__cfstring: 0x2f40 sha256:b5d60559b2407bfc37865bd0299a1f6d122506a8b08c83ff71673bc602a66dfd
-+  __AUTH_CONST.__weak_auth_got: 0x28 sha256:737bf680d0cc12398a2209eef2e679ee7dfdc58072bf6453794eadb77763bbcd
-   __AUTH_CONST.__auth_got: 0x760 sha256:7db7237b6d90804bfb6ed0835cec260800baf202d40becbeac137fb18fa0dafe
--  __DATA.__data: 0x80 sha256:c68dc3e8f32245002bd6a2c8e385175bd3d30133b7ad860ca6a1bf417d64f829
-+  __DATA.__data: 0x80 sha256:3f833221d1323b192f64bdcb9d3499b08d479200fa9474cfc4f8858e01988d8c
-   __DATA.__bss: 0x8 sha256:af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc
--  __DATA_DIRTY.__data: 0x20 sha256:14ad0ed32ec0f0979fe0d23621086212760a788c0dca6dc65ea7bda277e5f32e
--  __DATA_DIRTY.__bss: 0x1050 sha256:e71721e2c1418bf00a46998846ddaefed9c954ac4f1c4d0f12b26be8c8ea3a68
-+  __DATA_DIRTY.__data: 0x20 sha256:72a7a086ba676ca285a3314ffb89d2f7436a67e5ee92ee678608472b490bc465
-+  __DATA_DIRTY.__bss: 0x1058 sha256:6ec8818f0b5fc11829d3024a14bc77e6c8101cce1fbbcf2e0b10aec12afe2179
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  UUID: BDF4AA0F-6589-33C0-A8BD-23184F1039B6
 -  Functions: 1836
--  Symbols:   4601
--  CStrings:  7038
-+  UUID: 6C97CB78-8E59-3313-B68C-6BB478CC4704
+-  Symbols:   2641
+-  CStrings:  6636
 +  Functions: 1518
-+  Symbols:   3957
-+  CStrings:  6630
- 
++  Symbols:   2319
++  CStrings:  6252
 Symbols:
 + __Z17AVE_SEI_WriteMCTFPhdddddiiijijid
 + __Z26AVE_MCTF_DecideEnableFlagsiiiiPK19_S_AVE_ISP_Metadata14_E_AVE_DevType20_E_AVE_MCTF_WorkMode16_E_AVE_MCTF_ModePbS5_
@@ -1011,5 +981,4 @@ CStrings:
 - "iPixelPerf > 0"
 - "tileCols >= 0"
 - "tileRows >= 0"
-
 ```

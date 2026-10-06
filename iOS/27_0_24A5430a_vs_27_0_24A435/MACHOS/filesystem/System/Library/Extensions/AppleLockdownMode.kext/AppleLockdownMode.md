@@ -2,24 +2,23 @@
 
 > `/System/Library/Extensions/AppleLockdownMode.kext/AppleLockdownMode`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x15180` | `0x1540c` | **`+0x28c`** |
+
+### Same-size Content Changes
 
 - `__DATA.__data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__const`
 - `__DATA_CONST.__mod_init_func`
 - `__DATA_CONST.__mod_term_func`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__auth_ptr`
 
-```diff
+### Other Changes
 
- 128.0.8.0.0
-   __TEXT.__const: 0x110
-   __TEXT.__cstring: 0x4918
--  __TEXT_EXEC.__text: 0x15180
-+  __TEXT_EXEC.__text: 0x1540c
-   __TEXT_EXEC.__auth_stubs: 0x220
-   __DATA.__data: 0xc6
-   __DATA.__common: 0x38
+```text
 Functions:
 ~ __ZN17AppleLockdownMode9MetaClassC1Ev : 72 -> 76
 ~ __ZN17AppleLockdownModeC2EPK11OSMetaClass : 52 -> 56

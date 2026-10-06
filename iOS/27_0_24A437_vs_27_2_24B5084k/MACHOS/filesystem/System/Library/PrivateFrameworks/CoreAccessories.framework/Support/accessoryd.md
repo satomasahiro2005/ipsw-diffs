@@ -2,26 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/CoreAccessories.framework/Support/accessoryd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x19fdb0` | `0x19fdd0` | **`+0x20`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -1216.2.2.0.0
--  __TEXT.__text: 0x19bd74
 +1219.40.5.0.0
-+  __TEXT.__text: 0x19bd94
-   __TEXT.__auth_stubs: 0x1890
-   __TEXT.__objc_stubs: 0x95c0
-   __TEXT.__objc_methlist: 0x6eac
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/CoreAccessories/install/Symbols/BuiltProducts/libAccessoryCore.a(ccm-decrypt-9900861efd199c4ae0383d2cecaa9352.o)
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/CoreAccessories/install/Symbols/BuiltProducts/libAccessoryCore.a(ccm-encrypt-2285d3d5c96b55ff0e63af7b5759975c.o)
@@ -54,5 +57,5 @@ Symbols:
 Functions:
 ~ _mfi4Auth_protocol_handle_AuthSetup : 5024 -> 5044
 ~ _mfi4Auth_protocol_handle_AuthCert : 6808 -> 6816
-~ _generate : 36 -> 40
+~ _generate : 32 -> 36
 ```

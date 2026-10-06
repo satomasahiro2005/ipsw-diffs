@@ -2,104 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/MigrationKit.framework/MigrationKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x78abd0` | `0x7af540` | **`+0x24970`** |
+| `__TEXT.__eh_frame` | `0x4ade0` | `0x4c238` | **`+0x1458`** |
+| `__TEXT.__const` | `0x3baf8` | `0x3c648` | **`+0xb50`** |
+| `__TEXT.__constg_swiftt` | `0xf984` | `0x100dc` | **`+0x758`** |
+| `__AUTH.__data` | `0x17af8` | `0x18228` | **`+0x730`** |
+| `__TEXT.__unwind_info` | `0x1a5e0` | `0x1ac50` | **`+0x670`** |
+| `__TEXT.__cstring` | `0x1aef1` | `0x1b4f1` | **`+0x600`** |
+| `__DATA.__bss` | `0x40df0` | `0x413a0` | **`+0x5b0`** |
+| `__AUTH_CONST.__objc_const` | `0x1c688` | `0x1cc28` | **`+0x5a0`** |
+| `__AUTH_CONST.__const` | `0x1cf68` | `0x1d428` | **`+0x4c0`** |
+| `__TEXT.__swift5_reflstr` | `0xd472` | `0xd8b2` | **`+0x440`** |
+| `__TEXT.__swift5_fieldmd` | `0xe7e0` | `0xeb90` | **`+0x3b0`** |
+| `__DATA.__data` | `0xe9f8` | `0xec28` | **`+0x230`** |
+| `__TEXT.__swift5_typeref` | `0xcbc9` | `0xcdbd` | **`+0x1f4`** |
+| `__TEXT.__oslogstring` | `0x1098c` | `0x10b5c` | **`+0x1d0`** |
+| `__TEXT.__swift_as_cont` | `0x4270` | `0x43f4` | **`+0x184`** |
+| `__TEXT.__swift_as_ret` | `0x1d0c` | `0x1da8` | **`+0x9c`** |
+| `__TEXT.__swift_as_entry` | `0x17dc` | `0x1864` | **`+0x88`** |
+| `__TEXT.__swift5_assocty` | `0x2410` | `0x2488` | **`+0x78`** |
+| `__AUTH.__objc_data` | `0x7d30` | `0x7d80` | **`+0x50`** |
+| `__TEXT.__swift5_capture` | `0x4388` | `0x434c` | **`-0x3c`** |
+| `__TEXT.__swift5_proto` | `0x24e0` | `0x2518` | **`+0x38`** |
+| `__DATA_CONST.__got` | `0x23e8` | `0x2418` | **`+0x30`** |
+| `__TEXT.__swift5_types` | `0xda0` | `0xdd0` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0xc68` | `0xc80` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x35a0` | `0x35a8` | **`+0x8`** |
+| `__DATA.__common` | `0x1bb0` | `0x1bb8` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4d68` | `0x4d60` | **`-0x8`** |
+| `__TEXT.__swift5_protos` | `0x158` | `0x160` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1428.2.1.0.0
--  __TEXT.__text: 0x73eae4
 +1439.0.0.0.0
-+  __TEXT.__text: 0x761b70
-   __TEXT.__objc_methlist: 0x6fcc
--  __TEXT.__const: 0x3baf8
--  __TEXT.__oslogstring: 0x1098c
--  __TEXT.__cstring: 0x1aef1
-+  __TEXT.__const: 0x3c648
-+  __TEXT.__oslogstring: 0x10b5c
-+  __TEXT.__cstring: 0x1b4f1
-   __TEXT.__gcc_except_tab: 0x16b8
--  __TEXT.__constg_swiftt: 0xf984
--  __TEXT.__swift5_typeref: 0xcbc9
-+  __TEXT.__constg_swiftt: 0x100dc
-+  __TEXT.__swift5_typeref: 0xcdbd
-   __TEXT.__swift5_builtin: 0x370
--  __TEXT.__swift5_reflstr: 0xd472
--  __TEXT.__swift5_fieldmd: 0xe7e0
--  __TEXT.__swift5_assocty: 0x2410
--  __TEXT.__swift5_proto: 0x24e0
--  __TEXT.__swift5_types: 0xda0
--  __TEXT.__swift_as_entry: 0x17dc
--  __TEXT.__swift_as_ret: 0x1d0c
--  __TEXT.__swift_as_cont: 0x4270
--  __TEXT.__swift5_capture: 0x4388
--  __TEXT.__swift5_protos: 0x158
-+  __TEXT.__swift5_reflstr: 0xd8b2
-+  __TEXT.__swift5_fieldmd: 0xeb90
-+  __TEXT.__swift5_assocty: 0x2488
-+  __TEXT.__swift5_proto: 0x2518
-+  __TEXT.__swift5_types: 0xdd0
-+  __TEXT.__swift_as_entry: 0x1864
-+  __TEXT.__swift_as_ret: 0x1da8
-+  __TEXT.__swift_as_cont: 0x43f4
-+  __TEXT.__swift5_capture: 0x434c
-+  __TEXT.__swift5_protos: 0x160
-   __TEXT.__swift5_mpenum: 0xdc
-   __TEXT.__swift5_types2: 0x8
--  __TEXT.__unwind_info: 0x1df70
--  __TEXT.__eh_frame: 0x4ae28
-+  __TEXT.__unwind_info: 0x1eca8
-+  __TEXT.__eh_frame: 0x4c280
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xbb0
--  __DATA_CONST.__objc_classlist: 0xc68
-+  __DATA_CONST.__objc_classlist: 0xc80
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x2b8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4d68
-+  __DATA_CONST.__objc_selrefs: 0x4d60
-   __DATA_CONST.__objc_protorefs: 0x120
-   __DATA_CONST.__objc_superrefs: 0x340
-   __DATA_CONST.__objc_arraydata: 0x488
--  __DATA_CONST.__got: 0x23e8
--  __AUTH_CONST.__const: 0x1cf68
-+  __DATA_CONST.__got: 0x2418
-+  __AUTH_CONST.__const: 0x1d428
-   __AUTH_CONST.__cfstring: 0x5780
--  __AUTH_CONST.__objc_const: 0x1c688
-+  __AUTH_CONST.__objc_const: 0x1cc28
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0xcc0
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_arrayobj: 0x210
--  __AUTH_CONST.__auth_got: 0x35a0
--  __AUTH.__objc_data: 0x7d30
--  __AUTH.__data: 0x17af8
-+  __AUTH_CONST.__auth_got: 0x35a8
-+  __AUTH.__objc_data: 0x7d80
-+  __AUTH.__data: 0x18228
-   __DATA.__objc_ivar: 0x7ec
--  __DATA.__data: 0xe9f8
--  __DATA.__common: 0x1bb0
-+  __DATA.__data: 0xec28
-+  __DATA.__common: 0x1bb8
-   __DATA_DIRTY.__objc_data: 0x50
-   __DATA_DIRTY.__bss: 0x10
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 26220
--  Symbols:   12490
+-  Symbols:   10423
 -  CStrings:  4453
 +  Functions: 26559
-+  Symbols:   12550
++  Symbols:   10484
 +  CStrings:  4486
- 
 Symbols:
 + __DATA__TtC12MigrationKit28CloudAttachmentDownloadEntry
 + __DATA__TtC12MigrationKit28CloudAttachmentDownloadStore
@@ -124,7 +73,6 @@ Symbols:
 + _associated conformance 12MigrationKit28CloudAttachmentDownloadEntryCSHAASQ
 + _associated conformance 12MigrationKit28CloudAttachmentDownloadEntryCs12IdentifiableAA2IDsADP_SH
 + _associated conformance 12MigrationKit28CloudAttachmentDownloadStoreC9SwiftData10ModelActorAAScA
-+ _objc_msgSend$preflightSelectionWithSelections:disabledBundleIDs:
 + _symbolic $s12MigrationKit18AttestationSigningP
 + _symbolic $s12MigrationKit20CloudDownloadBacklogP
 + _symbolic 13AsyncIteratorSciQz
@@ -210,8 +158,6 @@ Symbols:
 - ___swift_closure_destructor.2Tm
 - ___swift_closure_destructor.62Tm
 - ___swift_memcpy22_8
-- _objc_msgSend$preflightSelectionWithSelections:
-- _objc_msgSend$setUniqueId:
 - _symbolic SDy___________pG 10Foundation4DataV s5ErrorP
 - _symbolic Say_____10attachment______8cloudFCItG 6IMCore12ImportExportO10AttachmentV 10Foundation4DataV
 - _symbolic _____ 12MigrationKit32MessageCloudAttachmentDownloaderC13ProgressStats028_89CFD46AC5D91A2AB204A2797A8O3D7ELLV

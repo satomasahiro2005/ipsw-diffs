@@ -2,76 +2,53 @@
 
 > `/System/ExclaveKit/System/Library/PrivateFrameworks/CoreAudioPolarisBridgeComponent.framework/CoreAudioPolarisBridgeComponent`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15890` | `0x1569c` | **`-0x1f4`** |
+| `__DATA.__objc_const` | `0x368` | `0x420` | **`+0xb8`** |
+| `__DATA.__data` | `0xbe0` | `0xc80` | **`+0xa0`** |
+| `__TEXT.__eh_frame` | `0xf30` | `0xeb0` | **`-0x80`** |
+| `__TEXT.__cstring` | `0x120b` | `0x11ab` | **`-0x60`** |
+| `__TEXT.__objc_classname` | `0xdd` | `0x13d` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x11d0` | `0x1178` | **`-0x58`** |
+| `__TEXT.__constg_swiftt` | `0x868` | `0x8a4` | **`+0x3c`** |
+| `__TEXT.__const` | `0x1178` | `0x11a8` | **`+0x30`** |
+| `__TEXT.__auth_stubs` | `0xb70` | `0xb90` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x4f0` | `0x4d0` | **`-0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x8c4` | `0x8e0` | **`+0x1c`** |
+| `__DATA_CONST.__auth_got` | `0x5b8` | `0x5c8` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x5c3` | `0x5d3` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x18` | `0x20` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0x6b8` | `0x6be` | **`+0x6`** |
+| `__TEXT.__swift5_types` | `0x98` | `0x9c` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__TIGHTBEAM`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__got`
+- `__TEXT.__objc_methname`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x15890
--  __TEXT.__auth_stubs: 0xb70
--  __TEXT.__const: 0x1178
--  __TEXT.__cstring: 0x120b
--  __TEXT.__objc_classname: 0xdd
-+  __TEXT.__text: 0x1569c
-+  __TEXT.__auth_stubs: 0xb90
-+  __TEXT.__const: 0x11a8
-+  __TEXT.__cstring: 0x11ab
-+  __TEXT.__objc_classname: 0x13d
-   __TEXT.__objc_methname: 0x133
-   __TEXT.__objc_methtype: 0x1
--  __TEXT.__constg_swiftt: 0x868
--  __TEXT.__swift5_typeref: 0x6b8
--  __TEXT.__swift5_reflstr: 0x5c3
--  __TEXT.__swift5_fieldmd: 0x8c4
-+  __TEXT.__constg_swiftt: 0x8a4
-+  __TEXT.__swift5_typeref: 0x6be
-+  __TEXT.__swift5_reflstr: 0x5d3
-+  __TEXT.__swift5_fieldmd: 0x8e0
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_proto: 0xe8
--  __TEXT.__swift5_types: 0x98
-+  __TEXT.__swift5_types: 0x9c
-   __TEXT.__swift5_protos: 0x38
-   __TEXT.__swift5_capture: 0x48
-   __TEXT.__swift5_assocty: 0xc0
--  __TEXT.__unwind_info: 0x4f0
--  __TEXT.__eh_frame: 0xf30
--  __DATA_CONST.__const: 0x11d0
--  __DATA_CONST.__objc_classlist: 0x18
-+  __TEXT.__unwind_info: 0x4d0
-+  __TEXT.__eh_frame: 0xeb0
-+  __DATA_CONST.__const: 0x1178
-+  __DATA_CONST.__objc_classlist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x5b8
-+  __DATA_CONST.__auth_got: 0x5c8
-   __DATA_CONST.__got: 0x1c0
-   __DATA_CONST.__auth_ptr: 0x1d8
--  __DATA.__objc_const: 0x368
--  __DATA.__data: 0xbe0
-+  __DATA.__objc_const: 0x420
-+  __DATA.__data: 0xc80
-   __DATA.__TIGHTBEAM: 0x10
-   __DATA.__bss: 0xc80
-   - /System/ExclaveKit/System/Library/Frameworks/ExclavePolarisBufferService.framework/ExclavePolarisBufferService
+-92.30.0.0.0
++93.1.0.0.0
 
-   - /System/ExclaveKit/usr/lib/swift/libswiftObjectiveC.dylib
-   - /System/ExclaveKit/usr/lib/swift/libswift_Builtin_float.dylib
-   - /System/ExclaveKit/usr/lib/swift/libswiftos.dylib
 -  Functions: 439
 -  Symbols:   1431
 -  CStrings:  92
 +  Functions: 431
 +  Symbols:   1434
 +  CStrings:  93
- 
-Sections:
-~ __TEXT.__objc_methname : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__TIGHTBEAM : content changed
 Symbols:
 + _$s31CoreAudioPolarisBridgeComponent0abcdE14HandlerContextC7handlerAA0abcdE7Methods_pvpWvd
 + _$s31CoreAudioPolarisBridgeComponent0abcdE14HandlerContextC7handlerAcA0abcdE7Methods_p_tcfCTq
@@ -106,5 +83,4 @@ CStrings:
 + "_TtC31CoreAudioPolarisBridgeComponent45CoreAudioPolarisBridgeComponentHandlerContext"
 + "handler"
 - "invalid handler object, does not conform to CoreAudioPolarisBridgeComponentMethods"
-
 ```

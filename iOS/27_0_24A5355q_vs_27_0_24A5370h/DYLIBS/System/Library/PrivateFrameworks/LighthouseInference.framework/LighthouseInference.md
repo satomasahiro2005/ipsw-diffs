@@ -2,101 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/LighthouseInference.framework/LighthouseInference`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa26d0` | `0xb8854` | **`+0x16184`** |
+| `__TEXT.__eh_frame` | `0x5f24` | `0x6874` | **`+0x950`** |
+| `__TEXT.__cstring` | `0x446f` | `0x4b0f` | **`+0x6a0`** |
+| `__AUTH_CONST.__const` | `0x3fe8` | `0x4648` | **`+0x660`** |
+| `__DATA.__bss` | `0x5d80` | `0x6200` | **`+0x480`** |
+| `__TEXT.__const` | `0x5204` | `0x5574` | **`+0x370`** |
+| `__TEXT.__unwind_info` | `0x25d0` | `0x2870` | **`+0x2a0`** |
+| `__TEXT.__oslogstring` | `0x2ef2` | `0x3142` | **`+0x250`** |
+| `__TEXT.__swift5_reflstr` | `0x1dd2` | `0x2022` | **`+0x250`** |
+| `__TEXT.__swift5_fieldmd` | `0x1a74` | `0x1ba4` | **`+0x130`** |
+| `__AUTH.__data` | `0x23c8` | `0x24e0` | **`+0x118`** |
+| `__TEXT.__swift5_typeref` | `0x1548` | `0x164c` | **`+0x104`** |
+| `__TEXT.__swift_as_cont` | `0x248` | `0x310` | **`+0xc8`** |
+| `__DATA.__data` | `0xfd0` | `0x1090` | **`+0xc0`** |
+| `__TEXT.__constg_swiftt` | `0x1680` | `0x1734` | **`+0xb4`** |
+| `__TEXT.__swift5_assocty` | `0x438` | `0x480` | **`+0x48`** |
+| `__DATA_CONST.__objc_selrefs` | `0x320` | `0x358` | **`+0x38`** |
+| `__AUTH_CONST.__auth_got` | `0xe70` | `0xe98` | **`+0x28`** |
+| `__TEXT.__swift_as_ret` | `0x208` | `0x230` | **`+0x28`** |
+| `__TEXT.__swift5_proto` | `0x318` | `0x33c` | **`+0x24`** |
+| `__AUTH_CONST.__objc_const` | `0x16f8` | `0x1718` | **`+0x20`** |
+| `__DATA.__common` | `0x80` | `0x98` | **`+0x18`** |
+| `__TEXT.__swift5_capture` | `0x43c` | `0x454` | **`+0x18`** |
+| `__DATA_CONST.__const` | `0x240` | `0x250` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x200` | `0x20c` | **`+0xc`** |
+| `__TEXT.__swift5_types` | `0x19c` | `0x1a0` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3600.32.1.0.0
--  __TEXT.__text: 0xa26d0 sha256:7d209e245d7439c3f885e83e441ab8dcbbb51ca1d466e4b3b3fb680ddb5bdba1
--  __TEXT.__objc_methlist: 0x1ac sha256:77d16bdd2263061d25e9db44e66ab7848b81325b0e9f4a87aac5bc5aeb77b6a4
--  __TEXT.__const: 0x5204 sha256:c704d88c786e9c93ab8053a3397a7c532adc421d14b53dd0232acfa216b051af
--  __TEXT.__cstring: 0x446f sha256:13a15976f82274de146665be9bae320ae655bafb0e08d51f0d188ed38fb75d70
--  __TEXT.__swift5_typeref: 0x1548 sha256:2a3d3cc5fc06ebbf789d28ee4acd882083c7b8dbc4a57c3f4f3e8da530cb3c40
--  __TEXT.__swift5_capture: 0x43c sha256:766f311cb74256675a616b404fb168d1a3eb33dee435141301d2a72a6fd02a84
--  __TEXT.__oslogstring: 0x2ef2 sha256:de21f4a6f81eaa79283638fd7c7a52c704f9489c4529cf1f2d66a287ad961ac3
--  __TEXT.__swift5_reflstr: 0x1dd2 sha256:db95b4f1da8bb3410cf3e0c89672bc61d96436ce972579889307ff33f3f295af
--  __TEXT.__swift5_assocty: 0x438 sha256:6b2066bc864d2978b1e20f5ef1aec159c22a723ff4c0efcc988cdd4fb3e68d1e
--  __TEXT.__constg_swiftt: 0x1680 sha256:1ca4288342bdb47ac9fede47080755c1ac383076244c7a86b363e3280ff0fd1d
--  __TEXT.__swift5_fieldmd: 0x1a74 sha256:344d79e3021b97c3c3371ed37df75139bea927cf8451db9ef85272f874cc90a9
--  __TEXT.__swift5_proto: 0x318 sha256:0f131f85b907f014a9d338733f0b132291314569eab9865ae5de4949271e8823
--  __TEXT.__swift5_types: 0x19c sha256:bf440b38ae0eff756b6478f5753b578fd6e4b6901b0e1489562765fb881b06a9
--  __TEXT.__swift_as_entry: 0x200 sha256:7b95d9275201519ccb7e5f614c4848744e4b7ce3c0c7dcc29a955da54f64d4c3
--  __TEXT.__swift_as_ret: 0x208 sha256:ae8ee4df125ed3f5d65bff447b73db458639c515a121f7b0b737c90ea198d844
--  __TEXT.__swift_as_cont: 0x248 sha256:3ce69d575d7a49c22de55003df4446e702f4bdee7c80dbc4baada2ce30f39295
--  __TEXT.__swift5_protos: 0x24 sha256:0af44257d963eb526cbb21b2a9012b13347317100660125fe15ccaaed036481b
--  __TEXT.__swift5_builtin: 0x3c sha256:928cfe3334fba173c8dd09cc3924002c56e566852d6f73603dc8bb45e0c5e6d9
--  __TEXT.__swift5_mpenum: 0x20 sha256:925dd3abfc77763c18f1b6f4b9ec12bd4ae61de27033f0b7d54681fa66247334
--  __TEXT.__unwind_info: 0x25d0 sha256:06712cbd9c81ccd86678c3d88bb61ccbaa0e8078292114dc4516fe4df8e2121c
--  __TEXT.__eh_frame: 0x5f24 sha256:a67e09784c2b86a19099e63fc0ef001c870d6ee652b964f47161f47f08b8a3dd
 +3600.40.1.0.0
-+  __TEXT.__text: 0xb8854 sha256:b56e86ce0e2f417ce20ad070e1ba0d68ee3294bb3500aa019ec65c52e9bef98d
-+  __TEXT.__objc_methlist: 0x1ac sha256:4b1e5be6c6b68a51dc41c5a54f31fc1122b2705706d09e289396f14d9b1d1d9d
-+  __TEXT.__const: 0x5574 sha256:456b5a7ab1db1da33faba696fbb660da1321dc05d90155b258bebe9eed17c084
-+  __TEXT.__cstring: 0x4b0f sha256:e9ce54b79fd2f7386889dd6585c8316b1b0732b4ac0c4b50ec158c1d1253440d
-+  __TEXT.__swift5_typeref: 0x164c sha256:86ebb93bb9cca03c33660ca18bea6d0ea81330a30f7a2e00ba9e85eb691b0012
-+  __TEXT.__swift5_capture: 0x454 sha256:cf53340aed100b0a5beaf36424dc70d35e9df773f5d70311cc9bd0ecd2caa7ff
-+  __TEXT.__oslogstring: 0x3142 sha256:c9f42c9b1b7cb0c06003ccf06533c60586c5b5d370dfd12fe8d09cc27f0c1ff7
-+  __TEXT.__swift5_reflstr: 0x2022 sha256:cdb2b5bcafdeedf966fe31bc9174694861cc2fbb6d4a47becca181d06b1b4811
-+  __TEXT.__swift5_assocty: 0x480 sha256:88970e2f57efb5582527e855f8a08b0bbad669939321e1963ac5f3d5c67665ea
-+  __TEXT.__constg_swiftt: 0x1734 sha256:ab9d6dfd1e4224811539e4ac26e1c79518e74dd73d71a06495dbafc49d8273ed
-+  __TEXT.__swift5_fieldmd: 0x1ba4 sha256:d221c0342e6daf54b747620263e4a095e4a538111bb2f9eb21bec12390704c66
-+  __TEXT.__swift5_proto: 0x33c sha256:6a97b9beb402abeed056766c65c2bc8f555cd6a800c97629bf67bb28dc861787
-+  __TEXT.__swift5_types: 0x1a0 sha256:a3fe69d1d5d806111636f9fbdd0dc71b80b3fc62056141ec11cc8134798439bd
-+  __TEXT.__swift_as_entry: 0x20c sha256:4453b6156a07b9886532f50f002c405d211495b4f8d365fca799528a41643d5f
-+  __TEXT.__swift_as_ret: 0x230 sha256:766a672a7be33f7f436371c840cb4884e9e9259235f2a6981e8ce352b88f697a
-+  __TEXT.__swift_as_cont: 0x310 sha256:56793a4f5cc0891f78c5a4b29eacb2c8fb838d332e523fd2d7060b1e2f1e677e
-+  __TEXT.__swift5_protos: 0x24 sha256:82d27dc5ac6d003e5c27f4822f00f6573f7ee1c7baf9cb0aa25a1f77e0398897
-+  __TEXT.__swift5_builtin: 0x3c sha256:d86de7e5b8844fc145284005d3bc3b3666a28dcd4eb68d83ef33cfe7e406ab32
-+  __TEXT.__swift5_mpenum: 0x20 sha256:b123ad6992e1245f0b233a10eb26dffd671a88fe43264ef1c116eff7ef4728bd
-+  __TEXT.__unwind_info: 0x2870 sha256:a57999e8b50b06b6b4b23d47c2c818ba88c30cdba3d646152e3d04bea632cd2c
-+  __TEXT.__eh_frame: 0x6874 sha256:281b1ce7e9ddc9e4884d8fa269388d7e532aca656011f124b02e60fabf474055
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x240 sha256:46b440fec0169b6fdd9d2ec4589ebd87c6a7628fc23ca5f77ebf4acb301e13ce
--  __DATA_CONST.__objc_classlist: 0x90 sha256:02e66fb87f9d42927e7ec17e17f9f9424fb15c77a4c58ef212039a04fd45e7e9
--  __DATA_CONST.__objc_protolist: 0x50 sha256:510f46bc82301d6044520302cc5f0fdd3ef31ce5e97f0a1d60b795e2020f8ef7
-+  __DATA_CONST.__const: 0x250 sha256:d0b14ddeca6f16a17249ce6145f823a17f908c35385849d96c54f7da1b616fa0
-+  __DATA_CONST.__objc_classlist: 0x90 sha256:b9fc5fb90ba5e482d25be29fec31c758dfc39a1a9a19319a5ccbba2f2ce51877
-+  __DATA_CONST.__objc_protolist: 0x50 sha256:9f1177ff6100804e93ed63db83fca938f07ec2c9a2d741761050be7e671f2c4a
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0x320 sha256:27332f159b418df3f1e0c211d8ae08bb774c51d11d4cab29ec14e8a1e6e372fb
--  __DATA_CONST.__objc_protorefs: 0x28 sha256:5a0589f4ba544dc87682e8ac5960838544387317c787698e48c29714d078d5d2
-+  __DATA_CONST.__objc_selrefs: 0x358 sha256:99caf74c046ced0e48e584b3f99c4cb842b78c3907e972db14b2ae6dcada3a93
-+  __DATA_CONST.__objc_protorefs: 0x28 sha256:815ecc150698c6078ba3a794f010e77a128eb4306f76822440247eb4c423f076
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x3fe8 sha256:3949f1827f884c44fd08a92bfb2bac0ff4046cb54ba7dfa55f349d5a8f174bed
--  __AUTH_CONST.__objc_const: 0x16f8 sha256:8832472cc50f6a3507f02d4c9a5b66c91a4b4850bf2f5b60959eeaffc84d449e
--  __AUTH_CONST.__auth_got: 0xe70 sha256:30e09dcbb9e9b07ab7f64a80961ef143c1b5a0f205f592b5ac6b846cbe4b6d29
--  __AUTH.__objc_data: 0xf0 sha256:de9788303e5b1d7c7d45f58290a938e2fd55733387a918bb72cdf06c20c1fa45
--  __AUTH.__data: 0x23c8 sha256:7f2f6a3d90e3abbcc4415ed11a6dc073632ebf0b85ff7babb8e3b33083cd280d
--  __DATA.__data: 0xfd0 sha256:ef1781420cc54ed149059072e928e27064127d8fbb5f4dec339fa6ec0ecea92b
--  __DATA.__bss: 0x5d80 sha256:aa0f0047c6a6a6fdf86426e7565bc447d6d9eab6622da8df2bf9b060c948d6ac
--  __DATA.__common: 0x80 sha256:38723a2e5e8a17aa7950dc008209944e898f69a7bd10a23c839d341e935fd5ca
-+  __AUTH_CONST.__const: 0x4648 sha256:a8a9d9245e7fef7e448c63698e80154a64876b2e77f076aaa8bda70594188926
-+  __AUTH_CONST.__objc_const: 0x1718 sha256:7b8f6ca2afb4477602620930167173079e338e3dfa1c5149ff66d70950212dbe
-+  __AUTH_CONST.__auth_got: 0xe98 sha256:16790b7dfcf32410dfab85a0353c4607afca32769e82787865e90bab467e3b93
-+  __AUTH.__objc_data: 0xf0 sha256:e469c10edad96e423fe30d296b1f5965935a4fcb535e46e76fa9af7126297927
-+  __AUTH.__data: 0x24e0 sha256:aae77d862f0eee3015987bbc92d629e1ebca3c65987d51e450b4b5a70099348e
-+  __DATA.__data: 0x1090 sha256:c732e8f40c4687b9c6780599ffc473806130bbe62626949ebcd161e7bc138498
-+  __DATA.__bss: 0x6200 sha256:d82ad1081dfe2e318b6d888666acf1f5edde7d6dfbfebfc53ffaf52dcff90a0b
-+  __DATA.__common: 0x98 sha256:85ada57e1f601e962d705f389285adb4e74f450bc00672240dfef7399d82457f
-   __DATA_DIRTY.__data: 0x18 sha256:9d908ecfb6b256def8b49a7c504e6c889c4b0e41fe6ce3e01863dd7b61a20aa0
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: FB69E681-CB99-3FFD-9F7F-FBFACC29D56C
 -  Functions: 2777
--  Symbols:   9047
--  CStrings:  648
-+  UUID: BFDD1835-403A-352C-B005-63D61A554B22
+-  Symbols:   6728
+-  CStrings:  647
 +  Functions: 2932
-+  Symbols:   9489
-+  CStrings:  703
- 
++  Symbols:   7014
++  CStrings:  702
 Symbols:
 + _$s16FoundationModels9GenerablePAAE20promptRepresentationAA6PromptVvg
 + _$s16FoundationModels9GenerablePAAE26instructionsRepresentationAA12InstructionsVvg
@@ -114,7 +63,6 @@ Symbols:
 + _$s19LighthouseInference14IFTFeatureUtilO16eventTypeMappingSDySSAA010TrajectoryF0O4type_AA33IntelligenceFlowTranscriptFeatureO7featuretSgSDySSypGcGvpZfiAkLcfU17_
 + _$s19LighthouseInference14IFTFeatureUtilO16eventTypeMappingSDySSAA010TrajectoryF0O4type_AA33IntelligenceFlowTranscriptFeatureO7featuretSgSDySSypGcGvpZfiAkLcfU18_
 + _$s19LighthouseInference14IFTFeatureUtilO31extractAgentPersistenceResponse33_43011C57E1443911EBDCCB6243F4FBEDLL4fromSSSgSDySSypG_tFZTf4nd_n
-+ _$s19LighthouseInference21MLHostTelemetryLoggerO26submitReliabilityAnalytics33_E68174AD79AB7B1ACC89B0377A74728CLL8taskName5state05errorQ0ySS_S2StFZSDySSSo8NSObjectCGSgycfU_TA.45
 + _$s19LighthouseInference21UserEngagementFeatureC13contextHeader33_F6BE5E95EC2981ECCF87622DF8F56795LLSSSgvpWvd
 + _$s19LighthouseInference21UserEngagementFeatureC16setContextHeaderyySSF
 + _$s19LighthouseInference21UserEngagementFeatureC16setContextHeaderyySSFTj
@@ -258,12 +206,12 @@ Symbols:
 + _$s19LighthouseInference29OnlineGoalCompletionEvaluatorC25extractResponseToolDialog33_B199A1B4205FE56B7D8C2501AB88B2C4LLySSSgSSFZTf4nd_n
 + _$s19LighthouseInference29OnlineGoalCompletionEvaluatorC25extractResponseToolDialog33_B199A1B4205FE56B7D8C2501AB88B2C4LLySSSgSSFZTv_r
 + _$s19LighthouseInference33OnlineGoalCompletionModelResponseV18PartiallyGeneratedV21inferredFailureReasonAA08InferreddekL0OSgvM
-+ _$s19LighthouseInference33OnlineGoalCompletionModelResponseV18PartiallyGeneratedV21inferredFailureReasonAA08InferreddekL0OSgvM.resume.0
++ _$s19LighthouseInference33OnlineGoalCompletionModelResponseV18PartiallyGeneratedV21inferredFailureReasonAA08InferreddekL0OSgvM.resume
 + _$s19LighthouseInference33OnlineGoalCompletionModelResponseV18PartiallyGeneratedV21inferredFailureReasonAA08InferreddekL0OSgvg
 + _$s19LighthouseInference33OnlineGoalCompletionModelResponseV18PartiallyGeneratedV21inferredFailureReasonAA08InferreddekL0OSgvpMV
 + _$s19LighthouseInference33OnlineGoalCompletionModelResponseV18PartiallyGeneratedV21inferredFailureReasonAA08InferreddekL0OSgvs
 + _$s19LighthouseInference33OnlineGoalCompletionModelResponseV21inferredFailureReasonAA08InferreddeiJ0OvM
-+ _$s19LighthouseInference33OnlineGoalCompletionModelResponseV21inferredFailureReasonAA08InferreddeiJ0OvM.resume.0
++ _$s19LighthouseInference33OnlineGoalCompletionModelResponseV21inferredFailureReasonAA08InferreddeiJ0OvM.resume
 + _$s19LighthouseInference33OnlineGoalCompletionModelResponseV21inferredFailureReasonAA08InferreddeiJ0Ovg
 + _$s19LighthouseInference33OnlineGoalCompletionModelResponseV21inferredFailureReasonAA08InferreddeiJ0OvpMV
 + _$s19LighthouseInference33OnlineGoalCompletionModelResponseV21inferredFailureReasonAA08InferreddeiJ0Ovs
@@ -390,7 +338,6 @@ Symbols:
 + _$ss32_copyCollectionToContiguousArrayys0dE0Vy7ElementQzGxSlRzlFSD6ValuesVySS19LighthouseInference7RequestV_G_Tg5
 + _OBJC_CLASS_$_CHSchemaCHGoalCompletionInferenceGenerated
 + _OBJC_CLASS_$_CHSchemaCHGoalCompletionInferenceMetadata
-+ ___swift_closure_destructor.43
 + ___swift_memcpy25_8
 + _associated conformance 19LighthouseInference35InferredGoalCompletionFailureReasonO16FoundationModels29ConvertibleToGeneratedContentAaD19PromptRepresentable
 + _associated conformance 19LighthouseInference35InferredGoalCompletionFailureReasonO16FoundationModels29ConvertibleToGeneratedContentAaD25InstructionsRepresentable
@@ -399,16 +346,6 @@ Symbols:
 + _associated conformance 19LighthouseInference35InferredGoalCompletionFailureReasonO16FoundationModels9GenerableAaD31ConvertibleFromGeneratedContent
 + _associated conformance 19LighthouseInference35InferredGoalCompletionFailureReasonOSHAASQ
 + _associated conformance 19LighthouseInference35InferredGoalCompletionFailureReasonOs12CaseIterableAA8AllCasessADP_Sl
-+ _block_copy_helper.46
-+ _block_descriptor.48
-+ _block_destroy_helper.47
-+ _objc_msgSend$firstMatchInString:options:range:
-+ _objc_msgSend$rangeAtIndex:
-+ _objc_msgSend$setFailureReason:
-+ _objc_msgSend$setGoalCompletionInferenceGenerated:
-+ _objc_msgSend$setGoalCompletionInferenceMetadata:
-+ _objc_msgSend$setGoalCompletionScore:
-+ _objc_msgSend$setGoalCompletionStatus:
 + _swift_release_x11
 + _symbolic SS12responseText_t
 + _symbolic SS7outcome_t
@@ -524,5 +461,4 @@ CStrings:
 - "SessionView structure:\n%s"
 - "Siri Reponse added to user journey: %s"
 - "SystemResponseGenerated Dialog is nil for response type: %s"
-
 ```

@@ -2,16 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/CoreIDVPAD.framework/CoreIDVPAD`
 
-```diff
+### Section Size Changes
 
- 4.0.0.0.0
--  __TEXT.__text: 0x41548
-+  __TEXT.__text: 0x4157c
-   __TEXT.__objc_methlist: 0xe88
-   __TEXT.__const: 0x27e0
-   __TEXT.__gcc_except_tab: 0x9f0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x42a58` | `0x42a8c` | **`+0x34`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_25cec6e98 -> sub_25c143e98 : 264 -> 276
-~ sub_25cec7e68 -> sub_25c144e74 : 564 -> 568
-~ sub_25cecc284 -> sub_25c149294 : 2340 -> 2376
+~ sub_25fa1cbc0 -> sub_25ecf8bc0 : 264 -> 276
+~ sub_25fa1db9c -> sub_25ecf9ba8 : 564 -> 568
+~ sub_25fa22114 -> sub_25ecfe124 : 2400 -> 2436
 ```

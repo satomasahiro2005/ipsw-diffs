@@ -2,101 +2,48 @@
 
 > `/System/Library/Frameworks/MediaDevice.framework/MediaDevice`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__oslogstring`
-- `__TEXT.__swift_as_ret`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__eh_frame` | `0xf80` | `0x16c0` | **`+0x740`** |
+| `__TEXT.__cstring` | `0xd2f` | `0x83f` | **`-0x4f0`** |
+| `__AUTH.__objc_data` | `0x50` | `0x538` | **`+0x4e8`** |
+| `__TEXT.__text` | `0x314d4` | `0x317e8` | **`+0x314`** |
+| `__TEXT.__swift5_capture` | `0xbbc` | `0x97c` | **`-0x240`** |
+| `__TEXT.__unwind_info` | `0x840` | `0xa50` | **`+0x210`** |
+| `__TEXT.__const` | `0x1098` | `0x1242` | **`+0x1aa`** |
+| `__AUTH_CONST.__const` | `0x14b8` | `0x1360` | **`-0x158`** |
+| `__DATA.__bss` | `0xf90` | `0x1090` | **`+0x100`** |
+| `__TEXT.__constg_swiftt` | `0x734` | `0x7c0` | **`+0x8c`** |
+| `__AUTH_CONST.__auth_got` | `0x898` | `0x8f8` | **`+0x60`** |
+| `__DATA.__data` | `0x578` | `0x5c8` | **`+0x50`** |
+| `__AUTH_CONST.__objc_const` | `0xa48` | `0xa90` | **`+0x48`** |
+| `__TEXT.__swift_as_cont` | `0x64` | `0xa8` | **`+0x44`** |
+| `__TEXT.__swift_as_entry` | `0x68` | `0xac` | **`+0x44`** |
+| `__AUTH.__data` | `0x1e8` | `0x218` | **`+0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0x368` | `0x384` | **`+0x1c`** |
+| `__TEXT.__swift5_typeref` | `0x6e2` | `0x6fc` | **`+0x1a`** |
+| `__TEXT.__swift5_assocty` | `0xc0` | `0xd8` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x14` | `0x28` | **`+0x14`** |
+| `__TEXT.__swift5_reflstr` | `0x399` | `0x3a9` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x18` | `0x20` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x80` | `0x88` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x34` | `0x38` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -360.66.1.11.1
--  __TEXT.__text: 0x314d4
 +360.70.2.0.0
-+  __TEXT.__text: 0x317e8
-   __TEXT.__objc_methlist: 0x454
--  __TEXT.__const: 0x1098
--  __TEXT.__cstring: 0xd2f
--  __TEXT.__swift5_typeref: 0x6e2
--  __TEXT.__swift5_fieldmd: 0x368
--  __TEXT.__constg_swiftt: 0x734
--  __TEXT.__swift5_reflstr: 0x399
--  __TEXT.__swift5_builtin: 0x14
--  __TEXT.__swift5_assocty: 0xc0
-+  __TEXT.__const: 0x1242
-+  __TEXT.__cstring: 0x83f
-+  __TEXT.__swift5_typeref: 0x6fc
-+  __TEXT.__swift5_fieldmd: 0x384
-+  __TEXT.__constg_swiftt: 0x7c0
-+  __TEXT.__swift5_reflstr: 0x3a9
-+  __TEXT.__swift5_builtin: 0x28
-+  __TEXT.__swift5_assocty: 0xd8
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__swift5_proto: 0x80
--  __TEXT.__swift5_types: 0x34
-+  __TEXT.__swift5_proto: 0x88
-+  __TEXT.__swift5_types: 0x38
-+  __TEXT.__swift5_capture: 0x97c
-   __TEXT.__oslogstring: 0xf7b
--  __TEXT.__swift5_capture: 0xbbc
--  __TEXT.__swift_as_entry: 0x68
-+  __TEXT.__swift_as_entry: 0xac
-   __TEXT.__swift_as_ret: 0x4
--  __TEXT.__swift_as_cont: 0x64
--  __TEXT.__unwind_info: 0x840
--  __TEXT.__eh_frame: 0xf80
-+  __TEXT.__swift_as_cont: 0xa8
-+  __TEXT.__unwind_info: 0xa50
-+  __TEXT.__eh_frame: 0x16c0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xc0
--  __DATA_CONST.__objc_classlist: 0x18
-+  __DATA_CONST.__objc_classlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x460
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__got: 0x270
--  __AUTH_CONST.__const: 0x14b8
-+  __AUTH_CONST.__const: 0x1360
-   __AUTH_CONST.__cfstring: 0x480
--  __AUTH_CONST.__objc_const: 0xa48
--  __AUTH_CONST.__auth_got: 0x898
--  __AUTH.__objc_data: 0x50
--  __AUTH.__data: 0x1e8
--  __DATA.__data: 0x578
--  __DATA.__bss: 0xf90
-+  __AUTH_CONST.__objc_const: 0xa90
-+  __AUTH_CONST.__auth_got: 0x8f8
-+  __AUTH.__objc_data: 0x538
-+  __AUTH.__data: 0x218
-+  __DATA.__data: 0x5c8
-+  __DATA.__bss: 0x1090
-   - /System/Library/Frameworks/AVKit.framework/AVKit
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 807
--  Symbols:   548
+-  Symbols:   452
 -  CStrings:  183
 +  Functions: 812
-+  Symbols:   564
++  Symbols:   468
 +  CStrings:  158
- 
 Symbols:
 + _NSSelectorFromString
 + _OBJC_CLASS_$__TtC11MediaDevice32_SMCBridgeExtensionConfiguration

@@ -2,19 +2,18 @@
 
 > `/usr/lib/swift/libswiftDemangle.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x59ef4` | `0x59da0` | **`-0x154`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x59ef4
-+  __TEXT.__text: 0x59da0
-   __TEXT.__cstring: 0x5380
-   __TEXT.__const: 0x158
-   __TEXT.__unwind_info: 0x758
-Sections:
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
+-6.4.0.23.102
++6.4.0.25.5
 Functions:
 ~ __ZN5swift8Demangle9Demangler16demangleOperatorEv : 5376 -> 5384
 ~ __ZN5swift8Demangle9Demangler21demangleBoundGenericsERNS0_6VectorIPNS0_4NodeEEERS4_ : 444 -> 432
@@ -54,5 +53,4 @@ Functions:
 ~ __ZN12_GLOBAL__N_19Remangler30mangleDifferentiabilityWitnessEPN5swift8Demangle4NodeEj : 1296 -> 1284
 ~ __ZN12_GLOBAL__N_19Remangler19mangleAttachedMacroEPN5swift8Demangle4NodeEjN4llvm9StringRefE : 408 -> 428
 ~ __ZN12_GLOBAL__N_19Remangler35mangleAutoDiffFunctionOrSimpleThunkEPN5swift8Demangle4NodeEN4llvm9StringRefEj : 896 -> 884
-
 ```

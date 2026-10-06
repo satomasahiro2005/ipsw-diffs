@@ -2,87 +2,41 @@
 
 > `/System/Library/Frameworks/_PhotosUI_SwiftUI.framework/_PhotosUI_SwiftUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1fbcc` | `0x1ff7c` | **`+0x3b0`** |
+| `__DATA_DIRTY.__data` | `0x548` | `0x7d0` | **`+0x288`** |
+| `__DATA.__data` | `0xbc0` | `0xa20` | **`-0x1a0`** |
+| `__DATA.__bss` | `0x25c0` | `0x2540` | **`-0x80`** |
+| `__DATA_DIRTY.__bss` | `0x600` | `0x680` | **`+0x80`** |
+| `__TEXT.__swift5_reflstr` | `0x76d` | `0x6ed` | **`-0x80`** |
+| `__AUTH.__data` | `0x2f8` | `0x288` | **`-0x70`** |
+| `__AUTH.__objc_data` | `0x50` | `—` | **`-0x50`** |
+| `__DATA_DIRTY.__objc_data` | `—` | `0x50` | **`+0x50`** |
+| `__TEXT.__swift5_capture` | `0x388` | `0x3d0` | **`+0x48`** |
+| `__TEXT.__swift5_fieldmd` | `0x7e4` | `0x79c` | **`-0x48`** |
+| `__TEXT.__const` | `0x2b08` | `0x2ac8` | **`-0x40`** |
+| `__TEXT.__unwind_info` | `0x9a8` | `0x9d8` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0xa50` | `0xa78` | **`+0x28`** |
+| `__AUTH_CONST.__objc_const` | `0x148` | `0x168` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0xd8` | `0xf8` | **`+0x20`** |
+| `__AUTH_CONST.__const` | `0x1290` | `0x1280` | **`-0x10`** |
+| `__TEXT.__cstring` | `0x30c` | `0x2fc` | **`-0x10`** |
+| `__TEXT.__constg_swiftt` | `0x1708` | `0x1714` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1fbcc
-+  __TEXT.__text: 0x1ff7c
-   __TEXT.__objc_methlist: 0x70
--  __TEXT.__const: 0x2b08
-+  __TEXT.__const: 0x2ac8
-   __TEXT.__swift5_typeref: 0x11b8
--  __TEXT.__constg_swiftt: 0x1708
--  __TEXT.__swift5_reflstr: 0x76d
--  __TEXT.__swift5_fieldmd: 0x7e4
-+  __TEXT.__constg_swiftt: 0x1714
-+  __TEXT.__swift5_reflstr: 0x6ed
-+  __TEXT.__swift5_fieldmd: 0x79c
-   __TEXT.__swift5_builtin: 0xc8
-   __TEXT.__swift5_assocty: 0x628
--  __TEXT.__cstring: 0x30c
--  __TEXT.__swift5_capture: 0x388
-+  __TEXT.__cstring: 0x2fc
-+  __TEXT.__swift5_capture: 0x3d0
-   __TEXT.__swift5_proto: 0x158
-   __TEXT.__swift5_types: 0xe0
-   __TEXT.__swift_as_entry: 0x24
-   __TEXT.__swift_as_cont: 0x24
-   __TEXT.__oslogstring: 0xc5
-   __TEXT.__swift_as_ret: 0xc
--  __TEXT.__unwind_info: 0x9a8
-+  __TEXT.__unwind_info: 0x9d8
-   __TEXT.__eh_frame: 0x498
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+-910.21.101.0.0
++910.27.103.0.0
 
-   __DATA_CONST.__const: 0xb8
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xd8
-+  __DATA_CONST.__objc_selrefs: 0xf8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1290
--  __AUTH_CONST.__objc_const: 0x148
--  __AUTH_CONST.__auth_got: 0xa50
--  __AUTH.__objc_data: 0x50
--  __AUTH.__data: 0x2f8
--  __DATA.__data: 0xbc0
--  __DATA.__bss: 0x25c0
--  __DATA_DIRTY.__data: 0x548
--  __DATA_DIRTY.__bss: 0x600
-+  __AUTH_CONST.__const: 0x1280
-+  __AUTH_CONST.__objc_const: 0x168
-+  __AUTH_CONST.__auth_got: 0xa78
-+  __AUTH.__data: 0x288
-+  __DATA.__data: 0xa20
-+  __DATA.__bss: 0x2540
-+  __DATA_DIRTY.__objc_data: 0x50
-+  __DATA_DIRTY.__data: 0x7d0
-+  __DATA_DIRTY.__bss: 0x680
-   - /System/Library/Frameworks/CoreTransferable.framework/CoreTransferable
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/Photos.framework/Photos
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1143
--  Symbols:   1088
+-  Symbols:   722
 +  Functions: 1153
-+  Symbols:   1103
-   CStrings:  23
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
++  Symbols:   720
 Symbols:
 + __INSTANCE_METHODS__TtCV17_PhotosUI_SwiftUI21PVSAngelRepresentable23ContainerViewController
 + __INSTANCE_METHODS__TtCV17_PhotosUI_SwiftUI21PVSAngelRepresentableP33_AF9E558198B6C7909018F1D333A2E45613ContainerView
@@ -98,10 +52,6 @@ Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVy07_Photosb1_aB021PVSAngelRepresentableVy0eB00F37SharedAlbumCustomizationConfigurationVGAA25_AllowsHitTestingModifierVGAA4ViewHPAjaNHPyHC_AlA0pO0HPyHCHC
 + _get_witness_table 7SwiftUI15ModifiedContentVy07_Photosb1_aB021PVSAngelRepresentableVy0eB029PVSClientSyncNowConfigurationVGAA25_AllowsHitTestingModifierVGAA4ViewHPAjaNHPyHC_AlA0pO0HPyHCHC
 + _get_witness_table l7SwiftUI15ModifiedContentVy07_Photosb1_aB021PVSAngelRepresentableVy0eB040PVSClientSharedAlbumPostingConfigurationVGAA25_AllowsHitTestingModifierVGSgAA4ViewHpAmaOHPAjaOHPyHC_AlA0qP0HPyHCHC_HC
-+ _objc_msgSend$px_addOrReplaceChildViewController:activateConstraints:
-+ _objc_msgSend$removeFromParentViewController
-+ _objc_msgSend$removeFromSuperview
-+ _objc_msgSend$willMoveToParentViewController:
 + _symbolic G0R1_
 + _symbolic SbIegy_
 + _symbolic _____ 015_PhotosUI_SwiftB021PVSAngelRepresentableV
@@ -171,5 +121,4 @@ Symbols:
 CStrings:
 + "_PhotosUI_SwiftUI/PVSAngelRepresentable.swift"
 - "_PhotosUI_SwiftUI/PVSClientViewControllerRepresentable.swift"
-
 ```

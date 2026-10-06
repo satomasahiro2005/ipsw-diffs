@@ -2,20 +2,21 @@
 
 > `/usr/lib/libMetalMetricsInterpose.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14148` | `0x1415c` | **`+0x14`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__const`
 - `__TEXT.__gcc_except_tab`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
 
-```diff
+### Other Changes
 
- 5.0.24.0.0
--  __TEXT.__text: 0x14148
-+  __TEXT.__text: 0x1415c
-   __TEXT.__auth_stubs: 0x850
-   __TEXT.__objc_stubs: 0xec0
-   __TEXT.__objc_methlist: 0xf8
+```text
 Functions:
 ~ __ZNSt3__16vectorINS_9sub_matchIPKcEENS_9allocatorIS4_EEE6assignEmRKS4_ : 340 -> 336
 ~ __ZNSt3__16vectorINS_4pairImPKcEENS_9allocatorIS4_EEE6resizeEm : 284 -> 288

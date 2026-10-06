@@ -2,100 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/GeoServices.framework/GeoServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x39a98` | `0x372c0` | **`-0x27d8`** |
+| `__DATA_DIRTY.__objc_data` | `0x5c30` | `0x8408` | **`+0x27d8`** |
+| `__TEXT.__text` | `0x2bd3f70` | `0x2bd3824` | **`-0x74c`** |
+| `__TEXT.__const` | `0x1f886c` | `0x1f896c` | **`+0x100`** |
+| `__DATA.__data` | `0x3d1e8` | `0x3d2c8` | **`+0xe0`** |
+| `__TEXT.__cstring` | `0xbb0dd` | `0xbb1b5` | **`+0xd8`** |
+| `__AUTH_CONST.__cfstring` | `0xb1660` | `0xb1700` | **`+0xa0`** |
+| `__DATA.__bss` | `0x1d35f8` | `0x1d3590` | **`-0x68`** |
+| `__AUTH.__data` | `0x15c00` | `0x15ba8` | **`-0x58`** |
+| `__DATA_DIRTY.__data` | `0x4e10` | `0x4e68` | **`+0x58`** |
+| `__DATA_DIRTY.__bss` | `0x68f8` | `0x6948` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x9a178` | `0x9a1c4` | **`+0x4c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x38128` | `0x380e0` | **`-0x48`** |
+| `__TEXT.__eh_frame` | `0x8c6d4` | `0x8c714` | **`+0x40`** |
+| `__TEXT.__objc_methlist` | `0xe5b0c` | `0xe5b3c` | **`+0x30`** |
+| `__AUTH_CONST.__objc_const` | `0x18f510` | `0x18f530` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x501bd` | `0x501dd` | **`+0x20`** |
+| `__TEXT.__swift5_typeref` | `0x2e830` | `0x2e842` | **`+0x12`** |
+| `__AUTH_CONST.__const` | `0x118f30` | `0x118f40` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x1aec8` | `0x1aed8` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x4e700` | `0x4e70c` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x39d8` | `0x39e0` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x6210` | `0x6208` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0xa2628` | `0xa2630` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2075.34.9.3.1
--  __TEXT.__text: 0x2b07428
--  __TEXT.__objc_methlist: 0xe5b0c
--  __TEXT.__const: 0x1f886c
--  __TEXT.__cstring: 0xbb0dd
--  __TEXT.__gcc_except_tab: 0x9a178
 +2076.31.9.18.7
-+  __TEXT.__text: 0x2b06bd4
-+  __TEXT.__objc_methlist: 0xe5b3c
-+  __TEXT.__const: 0x1f896c
-+  __TEXT.__cstring: 0xbb1b5
-+  __TEXT.__gcc_except_tab: 0x9a1c4
-   __TEXT.__dlopen_cstrs: 0x289
--  __TEXT.__swift5_typeref: 0x2e830
-+  __TEXT.__swift5_typeref: 0x2e842
-   __TEXT.__swift5_capture: 0x1e4bc
-   __TEXT.__constg_swiftt: 0x2d2f0
--  __TEXT.__swift5_reflstr: 0x501bd
--  __TEXT.__swift5_fieldmd: 0x4e700
-+  __TEXT.__swift5_reflstr: 0x501dd
-+  __TEXT.__swift5_fieldmd: 0x4e70c
-   __TEXT.__swift5_builtin: 0x9ec
-   __TEXT.__swift5_assocty: 0xb5a0
-   __TEXT.__swift5_proto: 0xedb0
 
-   __TEXT.__swift5_mpenum: 0x150
-   __TEXT.__swift5_types2: 0x28
-   __TEXT.__ustring: 0x152
--  __TEXT.__unwind_info: 0xc2a58
--  __TEXT.__eh_frame: 0x8c764
-+  __TEXT.__unwind_info: 0xc2a50
-+  __TEXT.__eh_frame: 0x8c7a4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1aec8
-+  __DATA_CONST.__const: 0x1aed8
-   __DATA_CONST.__objc_classlist: 0x66b0
-   __DATA_CONST.__objc_catlist: 0xc8
-   __DATA_CONST.__objc_protolist: 0x960
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x18
--  __DATA_CONST.__objc_selrefs: 0x38128
-+  __DATA_CONST.__objc_selrefs: 0x380e0
-   __DATA_CONST.__objc_protorefs: 0x280
-   __DATA_CONST.__objc_superrefs: 0x5d68
-   __DATA_CONST.__objc_arraydata: 0x1cc8
--  __DATA_CONST.__got: 0x6210
--  __AUTH_CONST.__const: 0x118f30
--  __AUTH_CONST.__cfstring: 0xb1660
--  __AUTH_CONST.__objc_const: 0x18f510
-+  __DATA_CONST.__got: 0x6208
-+  __AUTH_CONST.__const: 0x118f40
-+  __AUTH_CONST.__cfstring: 0xb1700
-+  __AUTH_CONST.__objc_const: 0x18f530
-   __AUTH_CONST.__weak_auth_got: 0x40
-   __AUTH_CONST.__objc_intobj: 0xd68
-   __AUTH_CONST.__objc_arrayobj: 0x570
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x39d8
--  __AUTH.__objc_data: 0x39a98
--  __AUTH.__data: 0x15c00
-+  __AUTH_CONST.__auth_got: 0x39e0
-+  __AUTH.__objc_data: 0x372c0
-+  __AUTH.__data: 0x15ba8
-   __DATA.__objc_ivar: 0x14c68
--  __DATA.__data: 0x3d1e8
-+  __DATA.__data: 0x3d2c8
-   __DATA.__common: 0x438
--  __DATA_DIRTY.__objc_data: 0x5c30
--  __DATA_DIRTY.__data: 0x4e10
--  __DATA_DIRTY.__bss: 0x68f8
-+  __DATA_DIRTY.__objc_data: 0x8408
-+  __DATA_DIRTY.__data: 0x4e68
-+  __DATA_DIRTY.__bss: 0x6948
-   __DATA_DIRTY.__common: 0xb0
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 182600
 -  Symbols:   196948
 -  CStrings:  29614
 +  Functions: 182607
 +  Symbols:   196946
 +  CStrings:  29617
- 
 Symbols:
 + -[GEOMapServiceTraits hasSearchEnrichmentClientMissingRequestPayload]
 + -[GEOMapServiceTraits searchEnrichmentClientMissingRequestPayload]

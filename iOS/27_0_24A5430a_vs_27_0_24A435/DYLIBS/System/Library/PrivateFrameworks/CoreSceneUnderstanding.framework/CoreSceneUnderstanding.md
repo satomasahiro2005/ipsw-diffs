@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/CoreSceneUnderstanding`
 
-```diff
+### Section Size Changes
 
- 98.0.0.0.0
--  __TEXT.__text: 0xc2e8c
-+  __TEXT.__text: 0xc2f08
-   __TEXT.__objc_methlist: 0x3984
-   __TEXT.__const: 0x1f60
-   __TEXT.__gcc_except_tab: 0xeea0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc2e8c` | `0xc2f08` | **`+0x7c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1ad2f5bf8 -> sub_1ad50bbf8 : 1120 -> 1124
 ~ sub_1ad305e3c -> sub_1ad51be40 : 412 -> 420

@@ -2,22 +2,25 @@
 
 > `/usr/libexec/BackupAgent2`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__unwind_info`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x914fc` | `0x91504` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -3039.40.8.0.0
--  __TEXT.__text: 0x8f4e4
 +3039.40.9.0.0
-+  __TEXT.__text: 0x8f4ec
-   __TEXT.__auth_stubs: 0x1850
-   __TEXT.__objc_stubs: 0xc9c0
-   __TEXT.__objc_methlist: 0x5ffc
 Functions:
-~ sub_10006d3bc : 320 -> 328
+~ sub_10006eb48 : 320 -> 328
 ```

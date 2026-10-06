@@ -2,86 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/SiriNotebookUI.framework/SiriNotebookUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5a034` | `0x5a7ac` | **`+0x778`** |
+| `__TEXT.__swift5_typeref` | `0x8dcc` | `0x909a` | **`+0x2ce`** |
+| `__DATA.__data` | `0x2600` | `0x2658` | **`+0x58`** |
+| `__TEXT.__const` | `0x5c74` | `0x5cc4` | **`+0x50`** |
+| `__TEXT.__eh_frame` | `0x618` | `0x5e0` | **`-0x38`** |
+| `__TEXT.__unwind_info` | `0x1530` | `0x1520` | **`-0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0xec4` | `0xed0` | **`+0xc`** |
+| `__AUTH.__data` | `0x1868` | `0x1870` | **`+0x8`** |
+| `__AUTH_CONST.__auth_got` | `0x1688` | `0x1690` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0xba0` | `0xb98` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x168` | `0x170` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__swift5_reflstr`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x5a034
--  __TEXT.__const: 0x5c74
-+  __TEXT.__text: 0x5a7ac
-+  __TEXT.__const: 0x5cc4
-   __TEXT.__constg_swiftt: 0x1788
--  __TEXT.__swift5_typeref: 0x8dcc
-+  __TEXT.__swift5_typeref: 0x909a
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_reflstr: 0x995
-   __TEXT.__swift5_assocty: 0x6f0
-   __TEXT.__swift5_proto: 0x1f0
-   __TEXT.__swift5_types: 0x16c
--  __TEXT.__swift5_fieldmd: 0xec4
-+  __TEXT.__swift5_fieldmd: 0xed0
-   __TEXT.__cstring: 0x354
-   __TEXT.__oslogstring: 0x4a0
-   __TEXT.__swift5_capture: 0x6d0
+-3600.28.3.0.0
++3600.28.10.0.0
 
-   __TEXT.__swift_as_cont: 0x18
-   __TEXT.__swift_as_ret: 0x8
-   __TEXT.__swift5_protos: 0xc
--  __TEXT.__unwind_info: 0x1530
--  __TEXT.__eh_frame: 0x618
-+  __TEXT.__unwind_info: 0x1520
-+  __TEXT.__eh_frame: 0x5e0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__const: 0xe0
-   __DATA_CONST.__objc_classlist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x168
--  __DATA_CONST.__got: 0xba0
-+  __DATA_CONST.__objc_selrefs: 0x170
-+  __DATA_CONST.__got: 0xb98
-   __AUTH_CONST.__const: 0x20d0
-   __AUTH_CONST.__objc_const: 0x240
--  __AUTH_CONST.__auth_got: 0x1688
--  __AUTH.__data: 0x1868
--  __DATA.__data: 0x2600
-+  __AUTH_CONST.__auth_got: 0x1690
-+  __AUTH.__data: 0x1870
-+  __DATA.__data: 0x2658
-   __DATA.__bss: 0x3e20
-   __DATA.__common: 0x58
-   __DATA_DIRTY.__data: 0x98
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2511
--  Symbols:   2307
+-  Symbols:   1214
 +  Functions: 2512
-+  Symbols:   2305
-   CStrings:  41
- 
-Sections:
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_reflstr : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   1223
 Symbols:
 + _OBJC_CLASS_$_INIntent
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyACyACy07SnippetB014ComponentStackVyAA05TupleD0VyAD16SashStandardViewVSg_012SiriNotebookB024IntentsUIPlaceholderSlotVSgACyACyAA5GroupVyAHyACyACyACyAD013PrimaryHeaderjK0VAL0n6UISlotK8ModifierVGAL0n18UIParameterKeyPathU0VGAA018_PreferenceWritingU0VyAL02IsfyW033_185A9AED8027A2AD82D3713DB931FA89LLVGGSg_ACyACyAQyACyASA3_GSgGAUGAXGQPGGAL010PunchoutTom4ItemU0VGAXGAA7ForEachVySaySi6offset_0lM00E0O8ReminderV7elementtG10Foundation4UUIDVAA012_ConditionalD0VyACyACyACyAL016ReminderDetail3pK0VAUGAXGA14_GACyA33_A14_GGGQPGGAXGAA012_EnvironmentwzU0VySo13INInteractionCSgGGAL0m15AmbientDrawableU0VGAL023RemindersHostBackgroundU033_23C8059FBE9CFE13B83B38C231FDFEC7LLVGAA0K0HPA52_AAA57_HPA49_AAA57_HPA42_AAA57_HPA41_AAA57_HPyHC_AxA0kU0HPyHCHC_A48_AAA58_HPyHCHC_A51_AAA58_HPyHCHC_A55_AAA58_HPyHCHC
 + _get_witness_table 7SwiftUI19_ConditionalContentVyAA08ModifiedD0VyAEyAEyAEyAEyAEyAA6VStackVyAA05TupleD0VyAEyAEy09NotesSiriB00hI14SingleNoteViewVAA16_FlexFrameLayoutVGAA010_FixedSizeO0VG_AA6SpacerVQPGGANGAQGAA19_BackgroundModifierVyAA14GeometryReaderVyAEyAA5ColorVAA018_PreferenceWritingT0Vy0i8NotebookB00K17RenderedHeightKey33_69E2FBF0E33EB172E9926E56C107CAC1LLVGGGGGAA11_MaskEffectVyACyAA14LinearGradientVA2_GGGAA01_x6ActionT0VyA8_GGA5_010PunchoutToz4ItemT0VGA24_GAA0L0HPA27_AAA29_HPA24_AAA29_HPA20_AAA29_HPA13_AAA29_HPAxAA29_HPAwAA29_HPAvAA29_HPyHC_AnA0lT0HPyHCHC_AqAA30_HPyHCHC_A12_AAA30_HPyHCHC_A19_AAA30_HPyHCHC_A23_AAA30_HPyHCHC_A26_AAA30_HPyHCHC_A24_AAA29_HPA20_AAA29_HPA13_AAA29_HPAxAA29_HPAwAA29_HPAvAA29_HPyHC_AnAA30_HPyHCHC_AqAA30_HPyHCHC_A12_AAA30_HPyHCHC_A19_AAA30_HPyHCHC_A23_AAA30_HPyHCHCHC
-+ _objc_msgSend$intent
 + _symbolic Si__________y_____yACyACy__________G_____G_____GACyAdIGGIegynr_ 12SiriNotebook7SnippetO8ReminderV 7SwiftUI19_ConditionalContentV AF08ModifiedH0V 0abF00D12Detail3pViewV AK013IntentsUISlotK8ModifierV AK0l18UIParameterKeyPathN0V AK010PunchoutTob4ItemN0V
 + _symbolic _____Sg 14SiriNotebookUI24IntentsUIPlaceholderSlotV
 + _symbolic _____Sg______Sg_____yAEy_____y_____yAEyAEyAEy__________G_____G_____y_____GGSg_AEyAEyAFyAEyAhOGSgGAIGAKGQPGG_____GAKG_____ySaySi6offset______7elementtG__________yAEyAEyAEy_____AIGAKGAYGAEyA7_AYGGGt 9SnippetUI16SashStandardViewV 012SiriNotebookB024IntentsUIPlaceholderSlotV 05SwiftB015ModifiedContentV AG5GroupV AG05TupleM0V AA013PrimaryHeaderdE0V AD0h6UISlotE8ModifierV AD0h18UIParameterKeyPathS0V AG018_PreferenceWritingS0V AD011IsComponentwU033_185A9AED8027A2AD82D3713DB931FA89LLV AD010PunchoutTog4ItemS0V AG7ForEachV 0fG00A0O8ReminderV 10Foundation4UUIDV AG012_ConditionalM0V AD016ReminderDetail3pE0V
@@ -122,5 +77,4 @@ Symbols:
 - _symbolic _____y_____yAByAByAByAByABy__________G_____G_____y_____yABy__________y_____GGGGG_____y_____y_____AJGGG_____yALGG_____GAZ_G 7SwiftUI19_ConditionalContentV7StorageO AA08ModifiedD0V 09NotesSiriB00gH14SingleNoteViewV AA16_FlexFrameLayoutV AA010_FixedSizeN0V AA19_BackgroundModifierV AA14GeometryReaderV AA5ColorV AA018_PreferenceWritingR0V 0h8NotebookB00J17RenderedHeightKey33_69E2FBF0E33EB172E9926E56C107CAC1LLV AA11_MaskEffectV AC AA14LinearGradientV AA01_v6ActionR0V AW010PunchoutTox4ItemR0V
 - _symbolic _____y_____y_____Sg___________yAFy_____yAByAFyAFyAFy__________G_____G_____y_____GGSg_AFyAFyAGyAFyAhOGSgGAIGAKGQPGG_____GAKG_____ySaySi6offset______7elementtG_____AFyAFyAFy_____AIGAKGAYGGQPGG 9SnippetUI14ComponentStackV 05SwiftB012TupleContentV AA16SashStandardViewV 012SiriNotebookB024IntentsUIPlaceholderSlotV AD08ModifiedG0V AD5GroupV AA013PrimaryHeaderiJ0V AI0m6UISlotJ8ModifierV AI0m18UIParameterKeyPathU0V AD018_PreferenceWritingU0V AI02IscyW033_185A9AED8027A2AD82D3713DB931FA89LLV AI010PunchoutTol4ItemU0V AD7ForEachV 0kL00A0O8ReminderV 10Foundation4UUIDV AI016ReminderDetail3pJ0V
 - _symbolic _____y_____y_____y_____Sg______AAyAAy_____yACyAAyAAyAAy__________G_____G_____y_____GGSg_AAyAAyAGyAAyAhOGSgGAIGAKGQPGG_____GAKG_____ySaySi6offset______7elementtG_____AAyAAyAAy_____AIGAKGAYGGQPGGAKG 7SwiftUI15ModifiedContentV 07SnippetB014ComponentStackV AA05TupleD0V AD16SashStandardViewV 012SiriNotebookB024IntentsUIPlaceholderSlotV AA5GroupV AD013PrimaryHeaderjK0V AK0n6UISlotK8ModifierV AK0n18UIParameterKeyPathU0V AA018_PreferenceWritingU0V AK02IsfyW033_185A9AED8027A2AD82D3713DB931FA89LLV AK010PunchoutTom4ItemU0V AA7ForEachV 0lM00E0O8ReminderV 10Foundation4UUIDV AK016ReminderDetail3pK0V
-
 ```

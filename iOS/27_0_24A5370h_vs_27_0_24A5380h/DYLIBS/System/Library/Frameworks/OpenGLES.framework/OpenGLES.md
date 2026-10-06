@@ -2,25 +2,16 @@
 
 > `/System/Library/Frameworks/OpenGLES.framework/OpenGLES`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__unwind_info` | `0x118` | `0x110` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__objc_methlist: 0x1cc
-   __TEXT.__cstring: 0x3ac
-   __TEXT.__const: 0x280
--  __TEXT.__unwind_info: 0x118
-+  __TEXT.__unwind_info: 0x110
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-
+-24.0.1.0.0
++24.0.2.0.0
 ```

@@ -2,121 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/MapsUI.framework/MapsUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_capture`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_floatobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH.__objc_data`
-- `__DATA.__common`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a7bbc` | `0x1a8aec` | **`+0xf30`** |
+| `__AUTH.__data` | `0x2130` | `0x21d0` | **`+0xa0`** |
+| `__DATA.__bss` | `0x5ea8` | `0x5f18` | **`+0x70`** |
+| `__TEXT.__objc_methlist` | `0x158dc` | `0x1594c` | **`+0x70`** |
+| `__AUTH_CONST.__cfstring` | `0x15580` | `0x155e0` | **`+0x60`** |
+| `__AUTH_CONST.__objc_const` | `0x2be10` | `0x2be68` | **`+0x58`** |
+| `__TEXT.__cstring` | `0x1237a` | `0x123d1` | **`+0x57`** |
+| `__TEXT.__swift5_mpenum` | `0x80` | `0xc0` | **`+0x40`** |
+| `__TEXT.__swift5_reflstr` | `0x2ff7` | `0x3037` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa508` | `0xa540` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0x66d8` | `0x66f8` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x3628` | `0x3640` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x14c0` | `0x14d0` | **`+0x10`** |
+| `__TEXT.__const` | `0x8108` | `0x8118` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0x2f64` | `0x2f74` | **`+0x10`** |
+| `__DATA.__data` | `0x5994` | `0x59a0` | **`+0xc`** |
+| `__DATA.__objc_ivar` | `0x16a4` | `0x16a8` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -286.30.6.12.4
--  __TEXT.__text: 0x1a7bbc
 +286.30.6.12.8
-+  __TEXT.__text: 0x1a8aec
-   __TEXT.__delay_stubs: 0x1c0
-   __TEXT.__delay_helper: 0xdc
--  __TEXT.__objc_methlist: 0x158dc
--  __TEXT.__const: 0x8108
--  __TEXT.__swift5_typeref: 0x2f64
-+  __TEXT.__objc_methlist: 0x1594c
-+  __TEXT.__const: 0x8118
-+  __TEXT.__swift5_typeref: 0x2f74
-   __TEXT.__swift5_capture: 0x754
--  __TEXT.__cstring: 0x1237a
--  __TEXT.__swift5_fieldmd: 0x3628
-+  __TEXT.__cstring: 0x123d1
-+  __TEXT.__swift5_fieldmd: 0x3640
-   __TEXT.__constg_swiftt: 0x3e8c
--  __TEXT.__swift5_reflstr: 0x2ff7
-+  __TEXT.__swift5_reflstr: 0x3037
-   __TEXT.__swift5_types: 0x4c0
-   __TEXT.__swift5_builtin: 0x398
--  __TEXT.__swift5_mpenum: 0x80
-+  __TEXT.__swift5_mpenum: 0xc0
-   __TEXT.__oslogstring: 0x4571
-   __TEXT.__swift5_proto: 0x45c
-   __TEXT.__swift_as_entry: 0x38
 
-   __TEXT.__swift5_protos: 0x4c
-   __TEXT.__gcc_except_tab: 0x2218
-   __TEXT.__ustring: 0x9c
--  __TEXT.__unwind_info: 0x66d8
-+  __TEXT.__unwind_info: 0x66f8
-   __TEXT.__eh_frame: 0x112c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x110
-   __DATA_CONST.__objc_protolist: 0x740
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa508
-+  __DATA_CONST.__objc_selrefs: 0xa540
-   __DATA_CONST.__objc_protorefs: 0x1e8
-   __DATA_CONST.__objc_superrefs: 0x750
-   __DATA_CONST.__objc_arraydata: 0x180
-   __DATA_CONST.__got: 0x1560
-   __AUTH_CONST.__const: 0x6c50
--  __AUTH_CONST.__cfstring: 0x15580
--  __AUTH_CONST.__objc_const: 0x2be10
-+  __AUTH_CONST.__cfstring: 0x155e0
-+  __AUTH_CONST.__objc_const: 0x2be68
-   __AUTH_CONST.__objc_intobj: 0x828
-   __AUTH_CONST.__objc_doubleobj: 0x100
-   __AUTH_CONST.__objc_arrayobj: 0x198
-   __AUTH_CONST.__objc_floatobj: 0x30
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x14c0
-+  __AUTH_CONST.__auth_got: 0x14d0
-   __AUTH.__objc_data: 0xbdc8
--  __AUTH.__data: 0x2130
--  __DATA.__objc_ivar: 0x16a4
--  __DATA.__data: 0x5994
--  __DATA.__bss: 0x5ea8
-+  __AUTH.__data: 0x21d0
-+  __DATA.__objc_ivar: 0x16a8
-+  __DATA.__data: 0x59a0
-+  __DATA.__bss: 0x5f18
-   __DATA.__common: 0xa8
-   __DATA_DIRTY.__objc_data: 0x6e0
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10217
--  Symbols:   17952
+-  Symbols:   13680
 -  CStrings:  3426
 +  Functions: 10228
-+  Symbols:   17967
++  Symbols:   13688
 +  CStrings:  3429
- 
 Symbols:
 + -[MUPlaceViewController containeeLayoutDidChange]
 + -[MUScrollableStackView layoutMarginsRelativeArrangement]
@@ -257,15 +177,6 @@ Symbols:
 + _OBJC_IVAR_$_MUPlaceViewController._lastDetentImpressionsViewportHeight
 + _OBJC_IVAR_$_MUPlaceViewController._needsImpressionsRecomputeForDetentChange
 + _UIEdgeInsetsMakeWithEdges
-+ _objc_msgSend$_setContentScrollInset:
-+ _objc_msgSend$isLayoutMarginsRelativeArrangement
-+ _objc_msgSend$layoutFrame
-+ _objc_msgSend$layoutMarginsRelativeArrangement
-+ _objc_msgSend$respectLayoutMarginsForArrangedLayoutItem:
-+ _objc_msgSend$setEdgesPreservingSuperviewLayoutMargins:
-+ _objc_msgSend$setRespectLayoutMargins:forArrangedLayoutItem:
-+ _objc_msgSend$setSectionInset:
-+ _objc_msgSend$setSectionInsetReference:
 + _symbolic So13UILayoutGuideCSgXw
 - -[MUPlacePhotoSliderView _gridContentInset]
 - -[MUScrollableStackView anchorToLayoutMargins]
@@ -399,8 +310,6 @@ Symbols:
 - GCC_except_table5587
 - GCC_except_table5591
 - _OBJC_IVAR_$_MUScrollableStackView._anchorToLayoutMargins
-- _objc_msgSend$_gridContentInset
-- _objc_msgSend$horizontalMarginOverride
 CStrings:
 + "TAP_DICTATION_ADD_STOP"
 + "TAP_SATELLITE_MODE_OFF"

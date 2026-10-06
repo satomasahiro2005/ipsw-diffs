@@ -2,126 +2,64 @@
 
 > `/System/Library/PrivateFrameworks/VideosUI.framework/VideosUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x11642e4` | `0x116eb28` | **`+0xa844`** |
+| `__TEXT.__swift5_typeref` | `0x13f220` | `0x1424e8` | **`+0x32c8`** |
+| `__DATA_DIRTY.__data` | `0x69a88` | `0x6c3b8` | **`+0x2930`** |
+| `__DATA_DIRTY.__bss` | `0x20550` | `0x22960` | **`+0x2410`** |
+| `__DATA.__bss` | `0x2b1e0` | `0x29060` | **`-0x2180`** |
+| `__DATA.__data` | `0x25658` | `0x24798` | **`-0xec0`** |
+| `__DATA_DIRTY.__objc_data` | `0x277c8` | `0x28098` | **`+0x8d0`** |
+| `__TEXT.__oslogstring` | `0x5020d` | `0x5092d` | **`+0x720`** |
+| `__AUTH.__objc_data` | `0x1e4e8` | `0x1ded8` | **`-0x610`** |
+| `__AUTH_CONST.__const` | `0x804b8` | `0x80968` | **`+0x4b0`** |
+| `__TEXT.__const` | `0x8d250` | `0x8d660` | **`+0x410`** |
+| `__TEXT.__swift5_reflstr` | `0x38f11` | `0x39241` | **`+0x330`** |
+| `__AUTH.__data` | `0x39418` | `0x39128` | **`-0x2f0`** |
+| `__TEXT.__swift5_capture` | `0x1a1cc` | `0x1a400` | **`+0x234`** |
+| `__AUTH_CONST.__objc_const` | `0x8bb10` | `0x8bd20` | **`+0x210`** |
+| `__TEXT.__unwind_info` | `0x362d8` | `0x36490` | **`+0x1b8`** |
+| `__TEXT.__swift5_fieldmd` | `0x2bf28` | `0x2c0d8` | **`+0x1b0`** |
+| `__TEXT.__cstring` | `0x37d36` | `0x37e86` | **`+0x150`** |
+| `__TEXT.__constg_swiftt` | `0x3fdac` | `0x3fecc` | **`+0x120`** |
+| `__TEXT.__eh_frame` | `0x30d98` | `0x30e58` | **`+0xc0`** |
+| `__TEXT.__objc_methlist` | `0x34684` | `0x34744` | **`+0xc0`** |
+| `__DATA_DIRTY.__common` | `0x1a78` | `0x1b08` | **`+0x90`** |
+| `__DATA.__common` | `0x1c78` | `0x1bf8` | **`-0x80`** |
+| `__TEXT.__swift5_assocty` | `0x6460` | `0x64c0` | **`+0x60`** |
+| `__AUTH_CONST.__auth_got` | `0x7110` | `0x7160` | **`+0x50`** |
+| `__AUTH_CONST.__cfstring` | `0x1bac0` | `0x1bb00` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x5fd0` | `0x6010` | **`+0x40`** |
+| `__AUTH_CONST.__objc_dictobj` | `0x578` | `0x5a0` | **`+0x28`** |
+| `__TEXT.__swift5_builtin` | `0xa28` | `0xa50` | **`+0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0x196a8` | `0x196c0` | **`+0x18`** |
+| `__TEXT.__swift5_mpenum` | `0x190` | `0x1a4` | **`+0x14`** |
+| `__TEXT.__swift5_proto` | `0x2a94` | `0x2aa8` | **`+0x14`** |
+| `__DATA_CONST.__objc_arraydata` | `0xd70` | `0xd80` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x26b4` | `0x26c4` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x2668` | `0x2674` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x3260` | `0x3268` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0xf88` | `0xf8c` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x10d4` | `0x10d8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1145.10.20.0.0
--  __TEXT.__text: 0x10e12d0
--  __TEXT.__objc_methlist: 0x34684
--  __TEXT.__cstring: 0x37d36
--  __TEXT.__const: 0x8d250
--  __TEXT.__oslogstring: 0x5020d
 +1145.10.22.0.1
-+  __TEXT.__text: 0x10eb6b4
-+  __TEXT.__objc_methlist: 0x34744
-+  __TEXT.__cstring: 0x37e86
-+  __TEXT.__const: 0x8d660
-+  __TEXT.__oslogstring: 0x5092d
-   __TEXT.__gcc_except_tab: 0x8f34
-   __TEXT.__ustring: 0xd2
-   __TEXT.__dlopen_cstrs: 0x6d
--  __TEXT.__constg_swiftt: 0x3fdac
--  __TEXT.__swift5_typeref: 0x13f220
--  __TEXT.__swift5_reflstr: 0x38f11
--  __TEXT.__swift5_fieldmd: 0x2bf28
--  __TEXT.__swift5_builtin: 0xa28
--  __TEXT.__swift5_assocty: 0x6460
--  __TEXT.__swift5_proto: 0x2a94
--  __TEXT.__swift5_types: 0x2668
--  __TEXT.__swift5_capture: 0x1a1cc
--  __TEXT.__swift_as_entry: 0xf88
--  __TEXT.__swift_as_ret: 0x10d4
--  __TEXT.__swift_as_cont: 0x26b4
-+  __TEXT.__constg_swiftt: 0x3fecc
-+  __TEXT.__swift5_typeref: 0x1424e8
-+  __TEXT.__swift5_reflstr: 0x39241
-+  __TEXT.__swift5_fieldmd: 0x2c0d8
-+  __TEXT.__swift5_builtin: 0xa50
-+  __TEXT.__swift5_assocty: 0x64c0
-+  __TEXT.__swift5_proto: 0x2aa8
-+  __TEXT.__swift5_types: 0x2674
-+  __TEXT.__swift5_capture: 0x1a400
-+  __TEXT.__swift_as_entry: 0xf8c
-+  __TEXT.__swift_as_ret: 0x10d8
-+  __TEXT.__swift_as_cont: 0x26c4
-   __TEXT.__swift5_protos: 0x2e0
--  __TEXT.__swift5_mpenum: 0x190
--  __TEXT.__unwind_info: 0x437a8
--  __TEXT.__eh_frame: 0x30dd8
-+  __TEXT.__swift5_mpenum: 0x1a4
-+  __TEXT.__unwind_info: 0x439f0
-+  __TEXT.__eh_frame: 0x30e98
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x9150
--  __DATA_CONST.__objc_classlist: 0x3260
-+  __DATA_CONST.__objc_classlist: 0x3268
-   __DATA_CONST.__objc_catlist: 0x148
-   __DATA_CONST.__objc_protolist: 0xd30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x196a8
-+  __DATA_CONST.__objc_selrefs: 0x196c0
-   __DATA_CONST.__objc_protorefs: 0x670
-   __DATA_CONST.__objc_superrefs: 0xca8
--  __DATA_CONST.__objc_arraydata: 0xd70
--  __DATA_CONST.__got: 0x5fd0
--  __AUTH_CONST.__const: 0x804b8
--  __AUTH_CONST.__cfstring: 0x1bac0
--  __AUTH_CONST.__objc_const: 0x8bb10
-+  __DATA_CONST.__objc_arraydata: 0xd80
-+  __DATA_CONST.__got: 0x6010
-+  __AUTH_CONST.__const: 0x80968
-+  __AUTH_CONST.__cfstring: 0x1bb00
-+  __AUTH_CONST.__objc_const: 0x8bd20
-   __AUTH_CONST.__objc_intobj: 0x2268
-   __AUTH_CONST.__objc_arrayobj: 0x3c0
-   __AUTH_CONST.__objc_doubleobj: 0x220
--  __AUTH_CONST.__objc_dictobj: 0x578
--  __AUTH_CONST.__auth_got: 0x7110
--  __AUTH.__objc_data: 0x1e4e8
--  __AUTH.__data: 0x39418
-+  __AUTH_CONST.__objc_dictobj: 0x5a0
-+  __AUTH_CONST.__auth_got: 0x7160
-+  __AUTH.__objc_data: 0x1ded8
-+  __AUTH.__data: 0x39128
-   __DATA.__objc_ivar: 0x2e80
--  __DATA.__data: 0x25660
-+  __DATA.__data: 0x247a0
-   __DATA.__objc_stublist: 0x40
--  __DATA.__common: 0x1c78
--  __DATA_DIRTY.__objc_data: 0x277c8
--  __DATA_DIRTY.__data: 0x69a88
--  __DATA_DIRTY.__bss: 0x20550
--  __DATA_DIRTY.__common: 0x1a78
-+  __DATA.__common: 0x1bf8
-+  __DATA_DIRTY.__objc_data: 0x28098
-+  __DATA_DIRTY.__data: 0x6c3b8
-+  __DATA_DIRTY.__bss: 0x22960
-+  __DATA_DIRTY.__common: 0x1b08
-   - /System/Library/Frameworks/ARKit.framework/ARKit
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /System/Library/PrivateFrameworks/VideosUICore.framework/VideosUICore
-   - /System/Library/PrivateFrameworks/WatchListKit.framework/WatchListKit
-   - /System/Library/PrivateFrameworks/_JetEngine_SwiftUI.framework/_JetEngine_SwiftUI
 +  - /System/Library/PrivateFrameworks/_MusicKitInternal_SwiftUI.framework/_MusicKitInternal_SwiftUI
-   - /System/Library/PrivateFrameworks/iTunesCloud.framework/iTunesCloud
-   - /System/Library/PrivateFrameworks/iTunesStore.framework/iTunesStore
-   - /usr/lib/libMobileGestalt.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 91015
--  Symbols:   57546
+-  Functions: 91020
+-  Symbols:   47620
 -  CStrings:  12633
-+  Functions: 91237
-+  Symbols:   57610
++  Functions: 91238
++  Symbols:   47682
 +  CStrings:  12666
- 
 Symbols:
 + -[VUIStoreAuxMediaItem _okayToSendStoreHeadersAndCookies]
 + GCC_except_table196
@@ -160,9 +98,6 @@ Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyACyACyAA5GroupVyAA012_ConditionalD0VyAGyACyAA6VStackVyAA05TupleD0VyACyAGyAGyAGyAGy06VideosB014AsyncImageViewVAA05EmptyL0VGAL09CompositeK0VGAPGACyAuA31AccessibilityAttachmentModifierVGGAA14_PaddingLayoutVGSg_AL022SportBadgeAndClockTimeL0VSgAGyA0_ACyAGyAGyAGyAL012StandardTextL033_9F6E14765133CE7217CD769C78AD854CLLVAL011DescriptionzL0A6_LLVGAPGACyA11_AWGGA_GGSgAL031SportsCanonicalBannerScoreboardL0VSgACyACyAL015AttributionPillL0VA_GAA010_FixedSizeS0VGSgAA6IDViewVyAGyACyAGyACyACyAL15LegacyMediaTagsVAA06_FrameS0VGA_GACyA34_AWGGAA011_BackgroundQ0VyACyAA06_ShapeL0VyAA9RectangleVAA5ColorVGAA13_ShadowEffectVGGGA36_GSSSgGSgACyACyACyAGyAGyAGyAL021VisibilityRestrictionL0VA11_GAGyAuL011SportsStatsL0VGGAGyAGyAL09TeamStatsL0VAL011PlayerStatsL0VGAGyAGyAGyAGyAL0zU0VAL024SportsPortableScoreboardL0VGAGyApA6SpacerVGGAGyAGyAL021LeagueStandingsLegendL0VAL010LeagueRankL0VGAGyAGyA77_APGAA7DividerVGGGAGyAA0L0PAAE9focusableyQrSbFQOyAL07ProfilekL0V_Qo_APGGGGA_GAA010_FlexFrameS0VGAA013_TraitWritingQ0VyAA0S16PriorityTraitKeyVGGSgAGyAGyACyAL18StackedButtonViewsVA24_GA110_GA110_GSgQPGGAA022_EnvironmentKeyWritingQ0VyAA11ColorSchemeOGGACyACyAA6HStackVyAKyACyAIyAKyA1__A3_A16_A19_A26_SgA54_A107_A113_QPGGAL05FrameQ033_0A47EEB809C97105DA431E6FD5608D9FLLVG_ACyA73_A105_GACyAIyAKyA26__AL020SportsCanonicalStatsL033_DB969288989DD2CA297D6E8E0D15A29ELLVSgSgSgQPGGAL021BottomButtonAlignmentF033_A4B6704B5717C011D4A3896EBA7F86B1LLVGSgQPGGA129_GA120_GGA123_yAKyAIyAKyA1__A3_A16_A19_A136_A26_A54_A107_A113_QPGG_A73_QPGGGGAA018_PreferenceWritingQ0VyAA23PreferredColorSchemeKeyVGGA_GAA017_PreferenceActionQ0VyA109_021HasBottomSupplementalZ3KeyVGGAA024_SafeAreaRegionsIgnoringS0VGAAA87_HPA168_AAA87_HPA162_AAA87_HPA161_AAA87_HPA155_AAA87_HPA154_AAA87_HPA149_AAA87_HPA121_AAA87_HPA115_AAA87_HPyHC_A120_AA0lQ0HPyHCHC_A148_AAA87_HPA147_AAA87_HPA146_AAA87_HPyHC_A129_AAA172_HPyHCHC_A120_AAA172_HPyHCHCHC_A153_AAA87_HPyHCHC_HC_A160_AAA172_HPyHCHC_A_AAA172_HPyHCHC_A167_AAA172_HPyHCHC_A170_AAA172_HPyHCHC
 + _get_witness_table 7SwiftUI19_ConditionalContentVyAA08ModifiedD0VyAA4ViewPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAEyAEyAEyAgAE9listStyleyQrqd__AA04ListL0Rd__lFQOyAEyAEyAA5GroupVyAA0M0VySSSgACyAA10LazyVStackVyAA7ForEachVySay06VideosB0010CollectionnF5ModelCGAqEyAA7SectionVyACyAA0P0VyAA05TupleD0VyAEyACyACyACyAV10RichHeaderVACyACyAV012StandardTextF033_9F6E14765133CE7217CD769C78AD854CLLVAV015DescriptionTextF0A7_LLVGAA05EmptyF0VGSgGA13_GSgAG012_AppIntents_aB0E19appEntityIdentifieryQr10AppIntents16EntityIdentifierVSgFQOyAV04CellF7FactoryO4Cell33_5F975F0C757AAAA434F16A69F6734E8ELLV_Qo_GSgAA14_PaddingLayoutVG_AEyAA7DividerVA34_GQPGGA35_GAUySayAV0fU0CGAqEyAEyAgAE0K12RowSeparator_5edgesQrAA10VisibilityO_AA12VerticalEdgeO3SetVtFQOyACyAgAE22containerRelativeFrame_9alignmentQrAA4AxisOA51_V_AA9AlignmentVtFQOyAgAE0G10TapGesture5count7performQrSi_yyctFQOyAEyAV014SelectableItemF0VAA01_D13ShapeModifierVyAA9RectangleVGG_Qo__Qo_A30_G_Qo_AA25_AlignmentWritingModifierVGAV18PaginationModifier33_315520BDB7FA0C2D59385B0082DD4768LLVGGA35_GAA21_TraitWritingModifierVyAA0M17RowInsetsTraitKeyVGGGGA90_GGGA34_GAA30_EnvironmentKeyWritingModifierVy12CoreGraphics7CGFloatVSgGG_AA05PlainmL0VQo_A85_yAA0mV15SpacingTraitKeyVGGA97_yAA0mV7SpacingVSgGGAV0tF16EditableModifierVG_AV0tfU0CQo_AV09SizeClassH8Modifier33_E4EC736A86928CA2EB3833FC5B8B4532LLVGAEyA125_AA11_ClipEffectVyA68_GGGAaFHPA125_AaFHPqd0__AaFHD3_A121_HO_A124_AA0F8ModifierHPyHCHC_A129_AaFHPA125_AaFHPqd0__AaFHD3_A121_HO_A124_AAA131_HPyHCHC_A128_AAA131_HPyHCHCHC
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE36accessibilityShowsLargeContentVieweryQrqd__yXEAaBRd__lFQOyAA5GroupVyAA012_ConditionalG0VyAA08ModifiedG0VyAJyAJyAJyAJyAJyAJyAFyAHyAJyAJyAJyAJyAcAE0D7Element8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAFyAHy06VideosB006ScaledC0Vy31AppleMediaServicesUIKitInternal33AMSUIKitStoreAccountProfileButtonVyAA05EmptyC0VGGAJyAwA12_FrameLayoutVGGG_Qo_AA0N18AttachmentModifierVGAA01_G17ShapeKindModifierVyAA6CircleVGGAA14_OpacityEffectVGAA18_AnimationModifierVySbGGAHyAA6IDViewVyAO0Z13HubButtonCell33_DCBE50AC8ABB92368182380115032A67LLVSaySSGGA9_GGGA13_GAA12_ScaleEffectVGA17_GAA23_GeometryActionModifierVySo6CGRectVA37_SQ12CoreGraphicsyHCg_GGAA25_AppearanceActionModifierVGA42_GA4_GAJyA9_AZGGG_AA5LabelVyAA4TextVAA5ImageVGQo_HO
-+ _objc_msgSend$_okayToSendStoreHeadersAndCookies
-+ _objc_msgSend$invalidateDetailsViewController
-+ _objc_msgSend$setCollapsible:
 + _symbolic SS7message_______p15underlyingErrort s5ErrorP
 + _symbolic SSSgycSg
 + _symbolic So28AMSUIBubbleTipViewControllerCSgIegg_
@@ -328,7 +263,6 @@ Symbols:
 - _get_witness_table 7SwiftUI15ModifiedContentVyACyACyACyAA5GroupVyAA012_ConditionalD0VyAGyACyAA6VStackVyAA05TupleD0VyACyAGyAGyAGyAGy06VideosB014AsyncImageViewVAA05EmptyL0VGAL09CompositeK0VGAPGACyAuA31AccessibilityAttachmentModifierVGGAA14_PaddingLayoutVGSg_AL022SportBadgeAndClockTimeL0VSgAGyA0_ACyAGyAGyAGyAL012StandardTextL033_9F6E14765133CE7217CD769C78AD854CLLVAL011DescriptionzL0A6_LLVGAPGACyA11_AWGGA_GGSgAL031SportsCanonicalBannerScoreboardL0VSgACyACyAL015AttributionPillL0VA_GAA010_FixedSizeS0VGSgAA6IDViewVyAGyACyAGyACyACyAL15LegacyMediaTagsVAA06_FrameS0VGA_GACyA34_AWGGAA011_BackgroundQ0VyACyAA06_ShapeL0VyAA9RectangleVAA5ColorVGAA13_ShadowEffectVGGGA36_GSSSgGSgACyACyACyAGyAGyAGyAL021VisibilityRestrictionL0VA11_GAGyAuL011SportsStatsL0VGGAGyAGyAL09TeamStatsL0VAL011PlayerStatsL0VGAGyAGyAGyAGyAL0zU0VAL024SportsPortableScoreboardL0VGAGyApA6SpacerVGGAGyAGyAL021LeagueStandingsLegendL0VAL010LeagueRankL0VGAGyAGyA77_APGAA7DividerVGGGAGyAA0L0PAAE9focusableyQrSbFQOyAL07ProfilekL0V_Qo_APGGGGA_GAA010_FlexFrameS0VGAA013_TraitWritingQ0VyAA0S16PriorityTraitKeyVGGSgAGyAGyACyAL18StackedButtonViewsVA24_GA110_GA110_GSgQPGGAA022_EnvironmentKeyWritingQ0VyAA11ColorSchemeOGGACyAA6HStackVyAKyAIyAKyA1__A3_A16_A19_A26_SgA54_A107_A113_QPGG_ACyA73_A105_GACyAIyAKyA26__AL020SportsCanonicalStatsL033_DB969288989DD2CA297D6E8E0D15A29ELLVSgSgQPGGAL021BottomButtonAlignmentF033_A4B6704B5717C011D4A3896EBA7F86B1LLVGSgQPGGA120_GGA123_yAKyAIyAKyA1__A3_A16_A19_A132_A26_A54_A107_A113_QPGG_A73_QPGGGGAA018_PreferenceWritingQ0VyAA23PreferredColorSchemeKeyVGGA_GAA017_PreferenceActionQ0VyA109_021HasBottomSupplementalZ3KeyVGGAA024_SafeAreaRegionsIgnoringS0VGAAA87_HPA162_AAA87_HPA156_AAA87_HPA155_AAA87_HPA149_AAA87_HPA148_AAA87_HPA143_AAA87_HPA121_AAA87_HPA115_AAA87_HPyHC_A120_AA0lQ0HPyHCHC_A142_AAA87_HPA141_AAA87_HPyHC_A120_AAA166_HPyHCHCHC_A147_AAA87_HPyHCHC_HC_A154_AAA166_HPyHCHC_A_AAA166_HPyHCHC_A161_AAA166_HPyHCHC_A164_AAA166_HPyHCHC
 - _get_witness_table 7SwiftUI19_ConditionalContentVyAA08ModifiedD0VyAA4ViewPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAEyAgAE9listStyleyQrqd__AA04ListL0Rd__lFQOyAEyAEyAA5GroupVyAA0M0VySSSgACyAA10LazyVStackVyAA7ForEachVySay06VideosB0010CollectionnF5ModelCGAqEyAA7SectionVyACyAA0P0VyAA05TupleD0VyAEyACyACyACyAV10RichHeaderVACyACyAV012StandardTextF033_9F6E14765133CE7217CD769C78AD854CLLVAV015DescriptionTextF0A7_LLVGAA05EmptyF0VGSgGA13_GSgAG012_AppIntents_aB0E19appEntityIdentifieryQr10AppIntents16EntityIdentifierVSgFQOyAV04CellF7FactoryO4Cell33_5F975F0C757AAAA434F16A69F6734E8ELLV_Qo_GSgAA14_PaddingLayoutVG_AEyAA7DividerVA34_GQPGGA35_GAUySayAV0fU0CGAqEyAEyAgAE0K12RowSeparator_5edgesQrAA10VisibilityO_AA12VerticalEdgeO3SetVtFQOyACyAgAE22containerRelativeFrame_9alignmentQrAA4AxisOA51_V_AA9AlignmentVtFQOyAgAE0G10TapGesture5count7performQrSi_yyctFQOyAEyAV014SelectableItemF0VAA01_D13ShapeModifierVyAA9RectangleVGG_Qo__Qo_A30_G_Qo_AA25_AlignmentWritingModifierVGAV18PaginationModifier33_315520BDB7FA0C2D59385B0082DD4768LLVGGA35_GAA21_TraitWritingModifierVyAA0M17RowInsetsTraitKeyVGGGGA90_GGGA34_GAA30_EnvironmentKeyWritingModifierVy12CoreGraphics7CGFloatVSgGG_AA05PlainmL0VQo_AV0tF16EditableModifierVG_AV0tfU0CQo_AV09SizeClassH8Modifier33_E4EC736A86928CA2EB3833FC5B8B4532LLVGAEyA116_AA11_ClipEffectVyA68_GGGAaFHPA116_AaFHPqd0__AaFHD3_A112_HO_A115_AA0F8ModifierHPyHCHC_A120_AaFHPA116_AaFHPqd0__AaFHD3_A112_HO_A115_AAA122_HPyHCHC_A119_AAA122_HPyHCHCHC
 - _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE36accessibilityShowsLargeContentVieweryQrqd__yXEAaBRd__lFQOyAA5GroupVyAA012_ConditionalG0VyAA08ModifiedG0VyAJyAJyAJyAJyAJyAJyAFyAHyAJyAJyAJyAJyAcAE0D7Element8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAFyAHy06VideosB006ScaledC0Vy31AppleMediaServicesUIKitInternal33AMSUIKitStoreAccountProfileButtonVyAA05EmptyC0VGGAJyAwA12_FrameLayoutVGGG_Qo_AA0N18AttachmentModifierVGAA01_G17ShapeKindModifierVyAA6CircleVGGAA14_OpacityEffectVGAA18_AnimationModifierVySbGGAHyAO0Z13HubButtonCell33_DCBE50AC8ABB92368182380115032A67LLVA9_GGGA13_GAA12_ScaleEffectVGA17_GAA23_GeometryActionModifierVySo6CGRectVA33_SQ12CoreGraphicsyHCg_GGAA25_AppearanceActionModifierVGA38_GA4_GAJyA9_AZGGG_AA5LabelVyAA4TextVAA5ImageVGQo_HO
-- _objc_msgSend$isPadOrPhoneWithLandscapeSupport
 - _symbolic _____Sg 8VideosUI31OrientationNotificationObserverC
 - _symbolic ___________y_____yAByAByABy__________G_____ySbGG_____GAIG_____GAByAByABy_____y_____y_____ySaySi6offset______7elementtGSSACyAByAByABy_____yABy_____yAByAByAByAByABy__________yAByAByAByAByAByAD_____ySiSgGG_____y_____GGAEGAHG_____GSgGGAEG_____GA6_G_____y_____GG_Qo_AJG_Qo______y_____A23_SQ12CoreGraphicsyHCg_GG_____GAJGA28_GG_ACyAByAByAByAByABy_____y_____y_____yABy_____A2_G_Qo__Qo__Qo_AJG_____GAEGA27_GAJGA41_GSgQPGGAMGAHGA17_GAaByABy_____yAPyACyAByAByAByAByAByAByABy_____yADGAXy_____SgGGAXy_____SgGGAMGAMG_____yA57_GG_____y_____GGAJGA69_G_ACyAByAByAdMGAJGA72_GQPGGAEGAHGt 7SwiftUI6SpacerV AA15ModifiedContentV AA012_ConditionalE0V AA4TextV AA14_OpacityEffectV AA18_AnimationModifierV AA023AccessibilityAttachmentK0V AA14_PaddingLayoutV AA9LazyVGridV AA05TupleE0V AA7ForEachV 06VideosB020ProfileCellViewModelC AA0X0PAAE12onTapGesture5count7performQrSi_yyctFQO A0_AAE20accessibilityElement8childrenQrAA0L13ChildBehaviorV_tFQO AX0vwX033_77CF0ABB355266BF1CB5B862DE278AFDLLV AA08_OverlayK0V AA022_EnvironmentKeyWritingK0V AA016_ForegroundStyleK0V AA22HierarchicalShapeStyleV AA07_OffsetI0V AA06_ScaleI0V AA013_TraitWritingK0V AA14ZIndexTraitKeyV AA015_GeometryActionK0V So6CGRectV AX014GridItemAppearK0A9_LLV A0_AAEA4_A5_QrA7__tFQO A0_AAEA1_A2_A3_QrSi_yyctFQO A0_AAE08materialI0_2inQrAA8MaterialV_AA9_ShapeSetVtFQO AX010CircleIconX0V AA06_FrameO0V AA6VStackV AA6ButtonV AA4FontV AA5ColorV AA016_BackgroundStyleK0V AA05_ClipI0V AA7CapsuleV
 - _symbolic _____yAAyAAyAAyAAyAAyAAy_____y_____yAAyAAyAAyAAy_____yAByACy_____y_____y_____GGAAyAG_____GGG_Qo______G_____y_____GG_____G_____ySbGGACy_____AQGGGATG_____GAWG_____y_____A6_SQ12CoreGraphicsyHCg_GG_____GA10_GANG 7SwiftUI15ModifiedContentV AA5GroupV AA012_ConditionalD0V AA4ViewPAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQO 06VideosB006ScaledG0V 31AppleMediaServicesUIKitInternal33AMSUIKitStoreAccountProfileButtonV AA05EmptyG0V AA12_FrameLayoutV AA0K18AttachmentModifierV AA01_D17ShapeKindModifierV AA6CircleV AA14_OpacityEffectV AA18_AnimationModifierV AN0w3HubY4Cell33_DCBE50AC8ABB92368182380115032A67LLV AA12_ScaleEffectV AA23_GeometryActionModifierV So6CGRectV AA25_AppearanceActionModifierV

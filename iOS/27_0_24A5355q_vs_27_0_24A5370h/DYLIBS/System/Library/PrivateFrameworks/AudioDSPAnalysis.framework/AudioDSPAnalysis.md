@@ -2,67 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/AudioDSPAnalysis.framework/AudioDSPAnalysis`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__realtime` | `0xfd8` | `0x1068` | **`+0x90`** |
+| `__TEXT.__unwind_info` | `0x7f8` | `0x7c8` | **`-0x30`** |
+| `__TEXT.__text` | `0x1c578` | `0x1c56c` | **`-0xc`** |
+
+### Other Changes
+
 ```diff
-
- 22.0.0.0.0
--  __TEXT.__text: 0x1c578 sha256:b8008b8e8f7aa26b450e6152f9844293be0ba3b81bcc7768b8e6676f43f48e0a
--  __TEXT.__realtime: 0xfd8 sha256:7e8e5d6e2cad1372557b2288fb54bb223d768982207df5e66d11dc16ab6fe13b
--  __TEXT.__objc_methlist: 0x16c sha256:839ab5b11bebf06f7f226e2bb6c5dc7ecf753c1a48153b22bd32fa37decf1887
-+  __TEXT.__text: 0x1c56c sha256:c7a00ce24569cd6d0326bed20633b5da500a186a5433f33949c6242012fe90e6
-+  __TEXT.__realtime: 0x1068 sha256:b82cf7c90cb8724f6e9ad89b92b478912e57d10577b7e175507e2158f93111ed
-+  __TEXT.__objc_methlist: 0x16c sha256:2174071416d15629ff3a04ef8db3fce158445576a3a331a14ce57596b4f26d33
-   __TEXT.__const: 0x208 sha256:7cecc57de1252b07a35dd515bf351f2f2de3f51a29d65502dfea9b45e3bf3078
--  __TEXT.__gcc_except_tab: 0x12a4 sha256:0618881c1540b3f859115d8fd885c3b4952557981a09c99dfbe99712ea598379
-+  __TEXT.__gcc_except_tab: 0x12a4 sha256:28ab825e5bb57314f5c8310e8494b327b65c28931dc50fd9fa5549cb1567e06b
-   __TEXT.__cstring: 0x9cd sha256:1c0862317d9d1982e5f58cc447e83e997b289ea82de4194c321adc06a1a94d14
-   __TEXT.__oslogstring: 0xd11 sha256:ef2d2d767026c5c15f23d5de587f95a089ec9f426da038441bc7d1dad9408399
--  __TEXT.__unwind_info: 0x7f8 sha256:69b280f03f14bfe24bfd3fca018eb88522a65941acef84fba67d93f25c65ce8f
-+  __TEXT.__unwind_info: 0x7c8 sha256:feca6d8a7f9b8c48aac1fbdf164feba4993c86c0cc41da4deb7382354242a43c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x118 sha256:6b9cbc0d1d041cfd55aa3fe76afaac17fe0a38195987bd0401446fb22b9c37ef
--  __DATA_CONST.__objc_classlist: 0x8 sha256:683c7cfb3bcf34fa991e59abe2a6c71bebf6cf7a4c6acd079e359c8929d69caa
--  __DATA_CONST.__objc_protolist: 0x10 sha256:9e3ca375d307c950af946517054f3b603c9c9e2e9b2b684884866a058a99bb57
-+  __DATA_CONST.__const: 0x118 sha256:e202dfb9e786589d51441b2dad2afde0a3c87313dcd7e91a6b7399f7cba50cc0
-+  __DATA_CONST.__objc_classlist: 0x8 sha256:95d0f349a1431f1034e613318ec59519f4980d68b6752c6c810f34d8568bd292
-+  __DATA_CONST.__objc_protolist: 0x10 sha256:54fd4725522b2423c7657f20247e1ad19b4230b74f2f527fc96bd1668c6b6f8a
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__objc_selrefs: 0x100 sha256:ef4c103d0b8a7cb813501d3fa3d686c642796afe91e4d0c236f21646fb2c586c
--  __DATA_CONST.__objc_superrefs: 0x8 sha256:683c7cfb3bcf34fa991e59abe2a6c71bebf6cf7a4c6acd079e359c8929d69caa
--  __DATA_CONST.__got: 0x98 sha256:c2579510e268255e75198199f6a2f7ef69445383c07d9bb04ab0aec2ab286ef4
--  __AUTH_CONST.__const: 0x7e0 sha256:362463c739bf23dd7841bd32d0e15d2d5f06c6e05a447f419182002a2d7f9bd1
--  __AUTH_CONST.__cfstring: 0x100 sha256:e384c00cac8d49f431f6dc0aa1273fdca6e99716929aef5241c0cf8513c5a391
--  __AUTH_CONST.__objc_const: 0x250 sha256:10535f78e463637ab7b9046aed5f3cdb22755ae63d487ff87e9e75264f0c9457
--  __AUTH_CONST.__weak_auth_got: 0x18 sha256:1c1a408b835292a44009a38643c77ef255ff8ce8bb89075923c492a5b3cace41
-+  __DATA_CONST.__objc_selrefs: 0x100 sha256:5593e39ead1a3277bb5d69975ed39ae349d7b27f092df7cd8b8a394648d827ae
-+  __DATA_CONST.__objc_superrefs: 0x8 sha256:95d0f349a1431f1034e613318ec59519f4980d68b6752c6c810f34d8568bd292
-+  __DATA_CONST.__got: 0x98 sha256:c78266ef87d00b90929c9ce550333db40047c2dd98f950afd5085626da529bb1
-+  __AUTH_CONST.__const: 0x7e0 sha256:d293e2e37be739cecab9d3141e72440fbeadb56b264605eeabe4a3dbc2967827
-+  __AUTH_CONST.__cfstring: 0x100 sha256:1952b2f11a43d0567d04646e191049fcea05ed8aadd564118c4c24e541dad3e5
-+  __AUTH_CONST.__objc_const: 0x250 sha256:289e5a83a762b0c2efc41ea2237d43bd451ca25b0648a881034e9c67ac8358c3
-+  __AUTH_CONST.__weak_auth_got: 0x18 sha256:0ce74d295ed277aa0887ee883123a5f1acf88f22b51859f92216bdb96f7b1978
-   __AUTH_CONST.__auth_got: 0x390 sha256:d2710a3a6574fc3d509a62191d8933226f0046f7ffcd83fd8de6866684c5f73e
-   __DATA.__objc_ivar: 0x8 sha256:1842d9d60985977543496f68d38a01a5470beb95bdae33af49b8167ada489f83
--  __DATA.__data: 0xc0 sha256:c1b6d5f0ec705c87efd1361eec5d2e043994b07ac37e53d4e116cbb66eb91d1e
-+  __DATA.__data: 0xc0 sha256:9a6b94b6022b84b52999f306c758fd72fc138a9dee3f7cdddaa864842b3c8b4d
-   __DATA.__bss: 0x10 sha256:374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb
--  __DATA_DIRTY.__objc_data: 0x50 sha256:0d96962f4dfe2b25918bb0eb3ca0ca4b4228621b5abcaffede5fc2adcf124cc8
-+  __DATA_DIRTY.__objc_data: 0x50 sha256:e44dfe67399fb8a60088972adeb39ece41c91334e0bffb0ebab2392216f078d1
-   __DATA_DIRTY.__bss: 0x2e0 sha256:c6c9b8650bdf333e657353246bc6f5b02f61950d8990935e2f0e38a63197c80c
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CallKit.framework/CallKit
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  UUID: E1D52E36-42F6-3015-ABF8-1B2883657DC2
-+  UUID: 2A446B20-0925-3560-8935-2845DC2DE789
-   Functions: 347
-   Symbols:   1104
-   CStrings:  168
 Symbols:
 + __ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4findB9fqe220106EPKcm
 + __ZNKSt3__16__loopIcE13__init_repeatB9fqe220106ERNS_7__stateIcEE
@@ -276,5 +226,4 @@ Symbols:
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeIN5rtaid8ClientIDENS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEENS_22__unordered_map_hasherIS3_NS_4pairIKS3_S9_EENS_4hashIS3_EENS_8equal_toIS3_EEEENS_21__unordered_map_equalIS3_SE_SI_SG_EENS7_ISE_EEE16__emplace_uniqueB9fqe220100IJS3_RA3_KcEEENSC_INS_15__hash_iteratorIPNS_11__hash_nodeISA_PvEEEEbEEDpOT_ENKUlRSD_OS3_SR_E_clES12_S13_SR_
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeIN5rtaid8ClientIDENS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEENS_22__unordered_map_hasherIS3_NS_4pairIKS3_S9_EENS_4hashIS3_EENS_8equal_toIS3_EEEENS_21__unordered_map_equalIS3_SE_SI_SG_EENS7_ISE_EEE16__emplace_uniqueB9fqe220100IJS3_RA4_KcEEENSC_INS_15__hash_iteratorIPNS_11__hash_nodeISA_PvEEEEbEEDpOT_ENKUlRSD_OS3_SR_E_clES12_S13_SR_
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeIN5rtaid8ClientIDENS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEENS_22__unordered_map_hasherIS3_NS_4pairIKS3_S9_EENS_4hashIS3_EENS_8equal_toIS3_EEEENS_21__unordered_map_equalIS3_SE_SI_SG_EENS7_ISE_EEE16__emplace_uniqueB9fqe220100IJS3_RA5_KcEEENSC_INS_15__hash_iteratorIPNS_11__hash_nodeISA_PvEEEEbEEDpOT_ENKUlRSD_OS3_SR_E_clES12_S13_SR_
-
 ```

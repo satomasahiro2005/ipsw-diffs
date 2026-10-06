@@ -1,4 +1,4 @@
-## filesystem — Removed (218)
+## filesystem — Removed (206)
 
 - `/System/Library/Frameworks/HealthKit.framework/Localizable-Mulberry.loctable`
 - `/System/Library/Health/FeedItemPlugins/EvaluationsHealthAppPlugin.healthplugin/EvaluationsHealthAppPlugin`
@@ -53,18 +53,6 @@
 - `/System/Library/PrivateFrameworks/HealthRecordsUI.framework/HealthRecordsUI-Localizable-StringsDict-Mulberry.loctable`
 - `/System/Library/PrivateFrameworks/HealthUI.framework/HealthUI-Localizable-Mulberry-Categories.loctable`
 - `/System/Library/PrivateFrameworks/HealthUI.framework/HealthUI-Localizable-Mulberry.loctable`
-- `/System/Library/PrivateFrameworks/ISPKit.framework/V63/LowLightVideo/LLV-HD-SuperWide-0.5x-v0.2.1_2304x1296.bundle/H19.bundle/H19.e5`
-- `/System/Library/PrivateFrameworks/ISPKit.framework/V63/LowLightVideo/LLV-HD-SuperWide-0.5x-v0.2.1_2304x1296.bundle/H19.bundle/main/main_ane/model.hwx`
-- `/System/Library/PrivateFrameworks/ISPKit.framework/V63/LowLightVideo/LLV-HD-SuperWide-0.5x-v0.2.1_2464x1388.bundle/H19.bundle/H19.e5`
-- `/System/Library/PrivateFrameworks/ISPKit.framework/V63/LowLightVideo/LLV-HD-SuperWide-0.5x-v0.2.1_2464x1388.bundle/H19.bundle/main/main_ane/model.hwx`
-- `/System/Library/PrivateFrameworks/ISPKit.framework/V64/LowLightVideo/LLV-HD-SuperWide-0.5x-v0.2.1_2304x1296.bundle/H19.bundle/H19.e5`
-- `/System/Library/PrivateFrameworks/ISPKit.framework/V64/LowLightVideo/LLV-HD-SuperWide-0.5x-v0.2.1_2304x1296.bundle/H19.bundle/main/main_ane/model.hwx`
-- `/System/Library/PrivateFrameworks/ISPKit.framework/V64/LowLightVideo/LLV-HD-SuperWide-0.5x-v0.2.1_2464x1388.bundle/H19.bundle/H19.e5`
-- `/System/Library/PrivateFrameworks/ISPKit.framework/V64/LowLightVideo/LLV-HD-SuperWide-0.5x-v0.2.1_2464x1388.bundle/H19.bundle/main/main_ane/model.hwx`
-- `/System/Library/PrivateFrameworks/ISPKit.framework/V64s/LowLightVideo/LLV-HD-SuperWide-0.5x-v0.2.1_2304x1296.bundle/H19.bundle/H19.e5`
-- `/System/Library/PrivateFrameworks/ISPKit.framework/V64s/LowLightVideo/LLV-HD-SuperWide-0.5x-v0.2.1_2304x1296.bundle/H19.bundle/main/main_ane/model.hwx`
-- `/System/Library/PrivateFrameworks/ISPKit.framework/V64s/LowLightVideo/LLV-HD-SuperWide-0.5x-v0.2.1_2464x1388.bundle/H19.bundle/H19.e5`
-- `/System/Library/PrivateFrameworks/ISPKit.framework/V64s/LowLightVideo/LLV-HD-SuperWide-0.5x-v0.2.1_2464x1388.bundle/H19.bundle/main/main_ane/model.hwx`
 - `/System/Library/PrivateFrameworks/MulberryHealthAppPlugin.framework/Info.plist`
 - `/System/Library/PrivateFrameworks/MulberryHealthAppPlugin.framework/_CodeSignature/CodeResources`
 - `/System/Library/PrivateFrameworks/SiriMessagesFlow.framework/Templates/dialog/Labels.catfamily/SnippetLabels.cat/es-cl.cat.bin`

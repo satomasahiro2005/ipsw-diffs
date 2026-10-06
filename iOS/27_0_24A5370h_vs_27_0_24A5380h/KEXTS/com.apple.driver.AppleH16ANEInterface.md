@@ -2,46 +2,33 @@
 
 > `com.apple.driver.AppleH16ANEInterface`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x143c04` | `0x1476a8` | **`+0x3aa4`** |
+| `__TEXT.__os_log` | `0x39e6a` | `0x3ac29` | **`+0xdbf`** |
+| `__DATA_CONST.__kalloc_var` | `0x8610` | `0x8890` | **`+0x280`** |
+| `__TEXT.__cstring` | `0x11346` | `0x11588` | **`+0x242`** |
+| `__DATA_CONST.__kalloc_type` | `0x6b00` | `0x6c80` | **`+0x180`** |
+| `__DATA_CONST.__const` | `0xf8b0` | `0xf950` | **`+0xa0`** |
+| `__TEXT_EXEC.__auth_stubs` | `0x1220` | `0x1250` | **`+0x30`** |
+| `__TEXT.__const` | `0x1050` | `0x1030` | **`-0x20`** |
+| `__DATA_CONST.__auth_got` | `0x910` | `0x928` | **`+0x18`** |
+| `__DATA.__bss` | `0x810` | `0x818` | **`+0x8`** |
+| `__DATA_CONST.__mod_init_func` | `0x2e8` | `0x2f0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__const: 0x1050
--  __TEXT.__cstring: 0x11346
--  __TEXT.__os_log: 0x39e6a
--  __TEXT_EXEC.__text: 0x143c04
--  __TEXT_EXEC.__auth_stubs: 0x1220
-+  __TEXT.__const: 0x1030
-+  __TEXT.__cstring: 0x11588
-+  __TEXT.__os_log: 0x3ac29
-+  __TEXT_EXEC.__text: 0x1476a8
-+  __TEXT_EXEC.__auth_stubs: 0x1250
-   __DATA.__data: 0x482c
-   __DATA.__common: 0x7b0
--  __DATA.__bss: 0x810
--  __DATA_CONST.__mod_init_func: 0x2e8
-+  __DATA.__bss: 0x818
-+  __DATA_CONST.__mod_init_func: 0x2f0
-   __DATA_CONST.__mod_term_func: 0x128
--  __DATA_CONST.__const: 0xf8b0
--  __DATA_CONST.__kalloc_type: 0x6b00
--  __DATA_CONST.__kalloc_var: 0x8610
--  __DATA_CONST.__auth_got: 0x910
-+  __DATA_CONST.__const: 0xf950
-+  __DATA_CONST.__kalloc_type: 0x6c80
-+  __DATA_CONST.__kalloc_var: 0x8890
-+  __DATA_CONST.__auth_got: 0x928
-   __DATA_CONST.__got: 0x140
-   __DATA_CONST.__auth_ptr: 0x8
+-10.14.2.0.0
 -  Functions: 4869
++10.15.4.0.0
 +  Functions: 4916
-   Symbols:   0
--  CStrings:  5132
-+  CStrings:  5204
- 
-Sections:
-~ __DATA.__data : content changed
-~ __DATA_CONST.__mod_term_func : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA_CONST.__auth_ptr : content changed
+
+-  CStrings:  5129
++  CStrings:  5201
 CStrings:
 + "%s: %s: ANE %u power readiness: %u\n"
 + "%s: %s: ANE_SYS power on after FSD:%u\n"
@@ -151,5 +138,4 @@ CStrings:
 - "[ERROR] %s: %s: Inference not permitted: client application with large model (machoFileSize=0x%llx) attempted inference while in background. ProgramHandle: 0x%llx\n"
 - "aneVnodeLookup"
 - "drainInactiveResourcesOnShutdown"
-
 ```

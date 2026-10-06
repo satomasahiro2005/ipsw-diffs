@@ -2,88 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/PrivateCloudComputeDaemon.framework/PrivateCloudComputeDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2c2680` | `0x2c3e5c` | **`+0x17dc`** |
+| `__DATA.__bss` | `0x12210` | `0x11310` | **`-0xf00`** |
+| `__DATA_DIRTY.__bss` | `0x9a80` | `0xa980` | **`+0xf00`** |
+| `__DATA_DIRTY.__data` | `0x9588` | `0x9de8` | **`+0x860`** |
+| `__DATA.__data` | `0x28c8` | `0x2290` | **`-0x638`** |
+| `__AUTH.__data` | `0x1460` | `0x1258` | **`-0x208`** |
+| `__TEXT.__eh_frame` | `0x13154` | `0x1326c` | **`+0x118`** |
+| `__TEXT.__cstring` | `0x6911` | `0x69c1` | **`+0xb0`** |
+| `__TEXT.__oslogstring` | `0x80f9` | `0x81a9` | **`+0xb0`** |
+| `__TEXT.__swift5_reflstr` | `0x6988` | `0x6a31` | **`+0xa9`** |
+| `__TEXT.__const` | `0x17278` | `0x17318` | **`+0xa0`** |
+| `__AUTH_CONST.__const` | `0xacb0` | `0xad20` | **`+0x70`** |
+| `__AUTH_CONST.__objc_const` | `0x3f28` | `0x3f88` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x8158` | `0x81b0` | **`+0x58`** |
+| `__TEXT.__constg_swiftt` | `0x5c40` | `0x5c94` | **`+0x54`** |
+| `__TEXT.__swift5_typeref` | `0x6cc8` | `0x6d1a` | **`+0x52`** |
+| `__TEXT.__swift5_fieldmd` | `0x6050` | `0x609c` | **`+0x4c`** |
+| `__TEXT.__swift5_capture` | `0x12e8` | `0x1314` | **`+0x2c`** |
+| `__DATA.__common` | `0xa0` | `0xc0` | **`+0x20`** |
+| `__DATA_DIRTY.__common` | `0x258` | `0x240` | **`-0x18`** |
+| `__TEXT.__swift_as_cont` | `0xce0` | `0xcf4` | **`+0x14`** |
+| `__TEXT.__swift_as_entry` | `0x5e8` | `0x5f4` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `0x6b8` | `0x6c4` | **`+0xc`** |
+| `__DATA_DIRTY.__objc_data` | `0x7a0` | `0x7a8` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0xe80` | `0xe84` | **`+0x4`** |
+| `__TEXT.__swift5_protos` | `0xb4` | `0xb8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2570.40.38.0.0
--  __TEXT.__text: 0x2a7f80
 +2570.40.40.502.1
-+  __TEXT.__text: 0x2a9660
-   __TEXT.__objc_methlist: 0x3c8
--  __TEXT.__const: 0x17278
--  __TEXT.__constg_swiftt: 0x5c40
--  __TEXT.__swift5_typeref: 0x6cc8
--  __TEXT.__swift5_reflstr: 0x6988
--  __TEXT.__swift5_fieldmd: 0x6050
--  __TEXT.__oslogstring: 0x80f9
--  __TEXT.__cstring: 0x6911
-+  __TEXT.__const: 0x17318
-+  __TEXT.__constg_swiftt: 0x5c94
-+  __TEXT.__swift5_typeref: 0x6d1a
-+  __TEXT.__swift5_reflstr: 0x6a31
-+  __TEXT.__swift5_fieldmd: 0x609c
-+  __TEXT.__oslogstring: 0x81a9
-+  __TEXT.__cstring: 0x69c1
-   __TEXT.__swift5_builtin: 0x17c
-   __TEXT.__swift5_assocty: 0x9f0
--  __TEXT.__swift5_proto: 0xe80
-+  __TEXT.__swift5_proto: 0xe84
-   __TEXT.__swift5_types: 0x570
--  __TEXT.__swift_as_entry: 0x5e8
--  __TEXT.__swift_as_ret: 0x6b8
--  __TEXT.__swift_as_cont: 0xce0
--  __TEXT.__swift5_capture: 0x12e8
--  __TEXT.__swift5_protos: 0xb4
-+  __TEXT.__swift_as_entry: 0x5f4
-+  __TEXT.__swift_as_ret: 0x6c4
-+  __TEXT.__swift_as_cont: 0xcf4
-+  __TEXT.__swift5_capture: 0x1314
-+  __TEXT.__swift5_protos: 0xb8
-   __TEXT.__swift5_mpenum: 0xa0
--  __TEXT.__unwind_info: 0x9858
--  __TEXT.__eh_frame: 0x13154
-+  __TEXT.__unwind_info: 0x98c8
-+  __TEXT.__eh_frame: 0x1326c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0x3a0
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__got: 0x1328
--  __AUTH_CONST.__const: 0xacb0
--  __AUTH_CONST.__objc_const: 0x3f28
-+  __AUTH_CONST.__const: 0xad20
-+  __AUTH_CONST.__objc_const: 0x3f88
-   __AUTH_CONST.__auth_got: 0x2678
-   __AUTH.__objc_data: 0xa0
--  __AUTH.__data: 0x1460
--  __DATA.__data: 0x28c8
--  __DATA.__common: 0xa0
--  __DATA_DIRTY.__objc_data: 0x7a0
--  __DATA_DIRTY.__data: 0x9588
--  __DATA_DIRTY.__bss: 0x9a80
--  __DATA_DIRTY.__common: 0x258
-+  __AUTH.__data: 0x1258
-+  __DATA.__data: 0x2290
-+  __DATA.__common: 0xc0
-+  __DATA_DIRTY.__objc_data: 0x7a8
-+  __DATA_DIRTY.__data: 0x9de8
-+  __DATA_DIRTY.__bss: 0xa980
-+  __DATA_DIRTY.__common: 0x240
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9961
--  Symbols:   2675
+-  Symbols:   2606
 -  CStrings:  1237
 +  Functions: 9980
-+  Symbols:   2674
++  Symbols:   2605
 +  CStrings:  1243
- 
 Symbols:
 + ___swift_closure_destructor.98Tm
 + _symbolic $s25PrivateCloudComputeDaemon30VaultConfigurationUpdaterStoreP

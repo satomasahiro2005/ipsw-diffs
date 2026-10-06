@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/PrivateMLClientInferenceProvider.framework/PrivateMLClientInferenceProvider`
 
-```diff
+### Section Size Changes
 
- 215.2.0.0.0
--  __TEXT.__text: 0x958cc
-+  __TEXT.__text: 0x958d8
-   __TEXT.__const: 0x1ff8
-   __TEXT.__constg_swiftt: 0x68c
-   __TEXT.__swift5_typeref: 0xb6e
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x958cc` | `0x958d8` | **`+0xc`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_22180118c -> sub_22203318c : 2216 -> 2220
 ~ sub_221802c34 -> sub_222034c38 : 992 -> 984

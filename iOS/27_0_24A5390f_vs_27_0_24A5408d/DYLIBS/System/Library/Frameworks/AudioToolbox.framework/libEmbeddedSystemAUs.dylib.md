@@ -2,33 +2,24 @@
 
 > `/System/Library/Frameworks/AudioToolbox.framework/libEmbeddedSystemAUs.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd1464` | `0xd1554` | **`+0xf0`** |
+| `__TEXT.__realtime` | `0x38a04` | `0x38a84` | **`+0x80`** |
+| `__TEXT.__gcc_except_tab` | `0x7778` | `0x77d0` | **`+0x58`** |
+| `__TEXT.__unwind_info` | `0x46f8` | `0x4700` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1638.0.0.0.0
--  __TEXT.__text: 0xd1464
--  __TEXT.__realtime: 0x38a04
 +1638.104.1.0.0
-+  __TEXT.__text: 0xd1554
-+  __TEXT.__realtime: 0x38a84
-   __TEXT.__const: 0xb344
-   __TEXT.__dlopen_cstrs: 0x2c1
--  __TEXT.__gcc_except_tab: 0x7778
-+  __TEXT.__gcc_except_tab: 0x77d0
-   __TEXT.__cstring: 0xa0c9
-   __TEXT.__oslogstring: 0xc167
--  __TEXT.__unwind_info: 0x46f8
-+  __TEXT.__unwind_info: 0x4700
-   __TEXT.__eh_frame: 0x108
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0xe70
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 3971
 -  Symbols:   6158
 +  Symbols:   6159
-   CStrings:  1962
- 
 Symbols:
 + GCC_except_table1002
 + GCC_except_table1015

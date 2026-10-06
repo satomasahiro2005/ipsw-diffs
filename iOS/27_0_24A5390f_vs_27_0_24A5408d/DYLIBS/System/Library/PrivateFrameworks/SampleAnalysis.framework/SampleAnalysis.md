@@ -2,21 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SampleAnalysis.framework/SampleAnalysis`
 
+### Other Changes
+
 ```diff
 
 -438.0.0.0.0
 +439.0.0.0.0
-   __TEXT.__text: 0x105ecc
-   __TEXT.__objc_methlist: 0x5dbc
-   __TEXT.__const: 0x2f8
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
-   Functions: 2832
--  Symbols:   6811
-+  Symbols:   6808
-   CStrings:  3715
- 
+-  Symbols:   5741
++  Symbols:   5738
 Symbols:
 + GCC_except_table140
 + GCC_except_table142

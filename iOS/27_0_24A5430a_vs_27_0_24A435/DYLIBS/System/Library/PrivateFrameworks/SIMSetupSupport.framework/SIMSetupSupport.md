@@ -2,81 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/SIMSetupSupport.framework/SIMSetupSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe337c` | `0xe6494` | **`+0x3118`** |
+| `__AUTH_CONST.__objc_const` | `0x4e0c8` | `0x4f8d8` | **`+0x1810`** |
+| `__TEXT.__cstring` | `0x175c9` | `0x17aa0` | **`+0x4d7`** |
+| `__TEXT.__objc_methlist` | `0xc474` | `0xc7ec` | **`+0x378`** |
+| `__AUTH_CONST.__cfstring` | `0xab20` | `0xae60` | **`+0x340`** |
+| `__TEXT.__oslogstring` | `0x8af5` | `0x8c70` | **`+0x17b`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5e38` | `0x5f58` | **`+0x120`** |
+| `__AUTH.__objc_data` | `0x35c0` | `0x36b0` | **`+0xf0`** |
+| `__TEXT.__unwind_info` | `0x2fa8` | `0x3080` | **`+0xd8`** |
+| `__DATA.__data` | `0xc70` | `0xd30` | **`+0xc0`** |
+| `__TEXT.__gcc_except_tab` | `0x2120` | `0x218c` | **`+0x6c`** |
+| `__DATA.__objc_ivar` | `0x130c` | `0x1358` | **`+0x4c`** |
+| `__AUTH_CONST.__const` | `0xba0` | `0xbc0` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0xbf0` | `0xc10` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x7e0` | `0x7f8` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x578` | `0x590` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x518` | `0x530` | **`+0x18`** |
+| `__DATA_CONST.__objc_protolist` | `0x108` | `0x118` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x2128` | `0x2130` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 973.1.0.0.0
--  __TEXT.__text: 0xe337c
--  __TEXT.__objc_methlist: 0xc474
-+  __TEXT.__text: 0xe6494
-+  __TEXT.__objc_methlist: 0xc7ec
-   __TEXT.__const: 0x1f0
--  __TEXT.__gcc_except_tab: 0x2120
--  __TEXT.__cstring: 0x175c9
--  __TEXT.__oslogstring: 0x8af5
-+  __TEXT.__gcc_except_tab: 0x218c
-+  __TEXT.__cstring: 0x17aa0
-+  __TEXT.__oslogstring: 0x8c70
-   __TEXT.__dlopen_cstrs: 0x2be
-   __TEXT.__ustring: 0xa
--  __TEXT.__unwind_info: 0x2fa8
-+  __TEXT.__unwind_info: 0x3080
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2128
--  __DATA_CONST.__objc_classlist: 0x578
-+  __DATA_CONST.__const: 0x2130
-+  __DATA_CONST.__objc_classlist: 0x590
-   __DATA_CONST.__objc_catlist: 0x70
--  __DATA_CONST.__objc_protolist: 0x108
-+  __DATA_CONST.__objc_protolist: 0x118
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5e38
-+  __DATA_CONST.__objc_selrefs: 0x5f58
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x518
-+  __DATA_CONST.__objc_superrefs: 0x530
-   __DATA_CONST.__objc_arraydata: 0x228
--  __DATA_CONST.__got: 0xbf0
--  __AUTH_CONST.__const: 0xba0
--  __AUTH_CONST.__cfstring: 0xab20
--  __AUTH_CONST.__objc_const: 0x4e0c8
--  __AUTH_CONST.__objc_intobj: 0x7e0
-+  __DATA_CONST.__got: 0xc10
-+  __AUTH_CONST.__const: 0xbc0
-+  __AUTH_CONST.__cfstring: 0xae60
-+  __AUTH_CONST.__objc_const: 0x4f8d8
-+  __AUTH_CONST.__objc_intobj: 0x7f8
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_arrayobj: 0x108
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x35c0
--  __DATA.__objc_ivar: 0x130c
--  __DATA.__data: 0xc70
-+  __AUTH.__objc_data: 0x36b0
-+  __DATA.__objc_ivar: 0x1358
-+  __DATA.__data: 0xd30
-   __DATA_DIRTY.__objc_data: 0xf0
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
 +  - /System/Library/Frameworks/CallKit.framework/CallKit
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/ContactsUI.framework/ContactsUI
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 4889
--  Symbols:   9981
+-  Symbols:   7864
 -  CStrings:  3110
 +  Functions: 4970
-+  Symbols:   10145
++  Symbols:   7994
 +  CStrings:  3151
- 
 Symbols:
 + +[TSSIMSetupFlow _maybeCreateSIMConfigFlowAsPreFlow:options:]
 + +[TSSIMSetupFlow _simConfigSwitchPreFlowForDeviceIdentifierOptions:]
@@ -208,40 +169,6 @@ Symbols:
 + ___50-[SSSIMConfigSwitchViewController _continueTapped]_block_invoke
 + ___62-[TSCoreTelephonyClientCache requestEUICCHardware:completion:]_block_invoke
 + ___86-[TSSIMConfigSwitchFlow _maybePresentFirstViewController:firstViewControllerCallback:]_block_invoke
-+ _objc_msgSend$_buildBodyMessageForSwitchToEuicc:
-+ _objc_msgSend$_iseSIMInstallFlow
-+ _objc_msgSend$_maybeCreateSIMConfigFlowAsPreFlow:options:
-+ _objc_msgSend$_resetDeferredState
-+ _objc_msgSend$_shouldDeferSwitchForCardData:
-+ _objc_msgSend$_simConfigSwitchPreFlowForDeviceIdentifierOptions:
-+ _objc_msgSend$_simConfigSwitchSubFlowVC
-+ _objc_msgSend$_titleForFlowType:
-+ _objc_msgSend$_updateContinueButton
-+ _objc_msgSend$calls
-+ _objc_msgSend$configType
-+ _objc_msgSend$enteredConfirmationCode
-+ _objc_msgSend$initWithFlowOptions:
-+ _objc_msgSend$initWithSwitchToEuicc:
-+ _objc_msgSend$initWithSwitchToEuicc:forceShow:flowType:
-+ _objc_msgSend$initWithSwitchToEuicc:parentFlowType:
-+ _objc_msgSend$isEuiccActiveCache
-+ _objc_msgSend$isEuiccActiveWithError:
-+ _objc_msgSend$optionsForNextFlow
-+ _objc_msgSend$requestEUICCHardware:completion:
-+ _objc_msgSend$setAccessibilityIdentifier:
-+ _objc_msgSend$setDeferredAddress:
-+ _objc_msgSend$setDeferredCardData:
-+ _objc_msgSend$setDeferredConfirmationCode:
-+ _objc_msgSend$setDeferredInstallTriggered:
-+ _objc_msgSend$setDeferredMatchingId:
-+ _objc_msgSend$setDelegate:queue:
-+ _objc_msgSend$setIsEuiccActiveCache:
-+ _objc_msgSend$setSwitchSucceeded:
-+ _objc_msgSend$simLocation
-+ _objc_msgSend$stringWithString:
-+ _objc_msgSend$supportsDynamicSIMConfiguration
-+ _objc_msgSend$switchSucceeded
-+ _objc_msgSend$switchToEuicc
 CStrings:
 + "-[TSCoreTelephonyClientCache isESIMUnavailable]"
 + "-[TSCoreTelephonyClientCache requestEUICCHardware:completion:]_block_invoke"

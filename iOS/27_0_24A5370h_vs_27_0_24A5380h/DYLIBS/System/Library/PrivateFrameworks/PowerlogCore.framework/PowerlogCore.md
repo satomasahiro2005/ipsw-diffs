@@ -2,97 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/PowerlogCore.framework/PowerlogCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__cfstring` | `0x666e0` | `0x67280` | **`+0xba0`** |
+| `__TEXT.__cstring` | `0x3f5fd` | `0x3ff65` | **`+0x968`** |
+| `__DATA_CONST.__objc_arraydata` | `0x41040` | `0x41680` | **`+0x640`** |
+| `__TEXT.__text` | `0xe6808` | `0xe6d4c` | **`+0x544`** |
+| `__TEXT.__oslogstring` | `0x884a` | `0x88f8` | **`+0xae`** |
+| `__AUTH.__objc_data` | `0x500` | `0x460` | **`-0xa0`** |
+| `__DATA_DIRTY.__objc_data` | `0x1db0` | `0x1e50` | **`+0xa0`** |
+| `__DATA.__bss` | `0x1739` | `0x16b1` | **`-0x88`** |
+| `__DATA_DIRTY.__bss` | `0x1138` | `0x11c0` | **`+0x88`** |
+| `__AUTH_CONST.__objc_dictobj` | `0xf618` | `0xf690` | **`+0x78`** |
+| `__AUTH_CONST.__objc_const` | `0xa9a0` | `0xaa00` | **`+0x60`** |
+| `__TEXT.__objc_methlist` | `0x96e0` | `0x9728` | **`+0x48`** |
+| `__AUTH_CONST.__const` | `0x24a0` | `0x24e0` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5920` | `0x5950` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x2580` | `0x25a0` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x4a58` | `0x4a70` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x7c4` | `0x7cc` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x3098` | `0x30a0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xe6808
--  __TEXT.__objc_methlist: 0x96e0
-+  __TEXT.__text: 0xe6d4c
-+  __TEXT.__objc_methlist: 0x9728
-   __TEXT.__const: 0x1b68
--  __TEXT.__cstring: 0x3f5fd
--  __TEXT.__oslogstring: 0x884a
-+  __TEXT.__cstring: 0x3ff65
-+  __TEXT.__oslogstring: 0x88f8
-   __TEXT.__gcc_except_tab: 0x297c
--  __TEXT.__unwind_info: 0x3098
-+  __TEXT.__unwind_info: 0x30a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2580
-+  __DATA_CONST.__const: 0x25a0
-   __DATA_CONST.__objc_classlist: 0x378
-   __DATA_CONST.__objc_nlclslist: 0x80
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5920
-+  __DATA_CONST.__objc_selrefs: 0x5950
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x2d0
--  __DATA_CONST.__objc_arraydata: 0x41040
-+  __DATA_CONST.__objc_arraydata: 0x41680
-   __DATA_CONST.__got: 0x7e8
--  __AUTH_CONST.__const: 0x24a0
--  __AUTH_CONST.__cfstring: 0x666e0
--  __AUTH_CONST.__objc_const: 0xa9a0
-+  __AUTH_CONST.__const: 0x24e0
-+  __AUTH_CONST.__cfstring: 0x67280
-+  __AUTH_CONST.__objc_const: 0xaa00
-   __AUTH_CONST.__weak_auth_got: 0x10
--  __AUTH_CONST.__objc_intobj: 0x4a58
-+  __AUTH_CONST.__objc_intobj: 0x4a70
-   __AUTH_CONST.__objc_doubleobj: 0x13a0
-   __AUTH_CONST.__objc_arrayobj: 0x1170
--  __AUTH_CONST.__objc_dictobj: 0xf618
-+  __AUTH_CONST.__objc_dictobj: 0xf690
-   __AUTH_CONST.__auth_got: 0xda8
--  __AUTH.__objc_data: 0x500
--  __DATA.__objc_ivar: 0x7c4
-+  __AUTH.__objc_data: 0x460
-+  __DATA.__objc_ivar: 0x7cc
-   __DATA.__data: 0x4a0
--  __DATA.__bss: 0x1739
-+  __DATA.__bss: 0x16b1
-   __DATA.__common: 0x10
--  __DATA_DIRTY.__objc_data: 0x1db0
-+  __DATA_DIRTY.__objc_data: 0x1e50
-   __DATA_DIRTY.__data: 0x28
--  __DATA_DIRTY.__bss: 0x1138
-+  __DATA_DIRTY.__bss: 0x11c0
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+-3486.0.21.502.1
++3486.0.46.502.1
 
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libsystemstats.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 4920
--  Symbols:   17016
--  CStrings:  27536
+-  Symbols:   7227
+-  CStrings:  14419
 +  Functions: 4929
-+  Symbols:   17041
-+  CStrings:  27727
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_nlclslist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   7237
++  CStrings:  14518
 Symbols:
 + -[PLArchiveManager fireArchiveListener]
 + -[PLArchiveManager setFireArchiveListener:]
@@ -106,8 +51,6 @@ Symbols:
 + ___20-[PowerlogCore init]_block_invoke_2
 + ___24-[PLArchiveManager init]_block_invoke_2
 + ___block_descriptor_32_e38_v32?0"NSDictionary"8"NSString"1624l
-+ _objc_msgSend$fireSignificantBatteryChangeNotification
-+ _objc_msgSend$initWithOperator:forDynamicServiceClass:forNotificationType:forAFKRole:withMatchBlock:
 - GCC_except_table42
 - ___105-[PLIOKitOperatorComposition initWithOperator:forDynamicServiceClass:forNotificationType:withMatchBlock:]_block_invoke
 CStrings:
@@ -212,5 +155,4 @@ CStrings:
 + "inactive"
 + "\xa3"
 - "\xa2"
-
 ```

@@ -2,94 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/VisualIntelligenceServices.framework/VisualIntelligenceServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x794ec` | `0x7cf54` | **`+0x3a68`** |
+| `__DATA_DIRTY.__bss` | `0x5780` | `0x7700` | **`+0x1f80`** |
+| `__DATA.__bss` | `0x15280` | `0x13b80` | **`-0x1700`** |
+| `__DATA_DIRTY.__data` | `0x12e0` | `0x1c00` | **`+0x920`** |
+| `__TEXT.__const` | `0xed14` | `0xf144` | **`+0x430`** |
+| `__AUTH.__data` | `0x758` | `0x338` | **`-0x420`** |
+| `__DATA.__data` | `0x1e00` | `0x1af8` | **`-0x308`** |
+| `__AUTH_CONST.__const` | `0x8178` | `0x8408` | **`+0x290`** |
+| `__TEXT.__eh_frame` | `0x3e40` | `0x4010` | **`+0x1d0`** |
+| `__TEXT.__swift5_typeref` | `0x2e6e` | `0x2fb6` | **`+0x148`** |
+| `__TEXT.__swift5_fieldmd` | `0x2eec` | `0x3028` | **`+0x13c`** |
+| `__TEXT.__constg_swiftt` | `0x2670` | `0x277c` | **`+0x10c`** |
+| `__TEXT.__swift5_reflstr` | `0x17c0` | `0x18b0` | **`+0xf0`** |
+| `__TEXT.__unwind_info` | `0x26b8` | `0x27a0` | **`+0xe8`** |
+| `__AUTH_CONST.__auth_got` | `0xa88` | `0xb28` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0x1579` | `0x1609` | **`+0x90`** |
+| `__TEXT.__swift5_capture` | `0x4cc` | `0x524` | **`+0x58`** |
+| `__DATA_DIRTY.__objc_data` | `0x50` | `0xa0` | **`+0x50`** |
+| `__AUTH_CONST.__objc_const` | `0x958` | `0x910` | **`-0x48`** |
+| `__TEXT.__swift5_proto` | `0xd68` | `0xdb0` | **`+0x48`** |
+| `__TEXT.__oslogstring` | `0xd0d` | `0xcdd` | **`-0x30`** |
+| `__TEXT.__swift_as_cont` | `0xac` | `0xc8` | **`+0x1c`** |
+| `__TEXT.__swift_as_entry` | `0xf0` | `0x10c` | **`+0x1c`** |
+| `__TEXT.__swift5_types` | `0x3f0` | `0x408` | **`+0x18`** |
+| `__TEXT.__swift_as_ret` | `0xfc` | `0x110` | **`+0x14`** |
+| `__TEXT.__swift5_protos` | `0x18` | `0x1c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x794ec
--  __TEXT.__const: 0xed14
--  __TEXT.__cstring: 0x1579
--  __TEXT.__oslogstring: 0xd0d
--  __TEXT.__constg_swiftt: 0x2670
--  __TEXT.__swift5_typeref: 0x2e6e
--  __TEXT.__swift5_reflstr: 0x17c0
--  __TEXT.__swift5_fieldmd: 0x2eec
-+  __TEXT.__text: 0x7cf54
-+  __TEXT.__const: 0xf144
-+  __TEXT.__cstring: 0x1609
-+  __TEXT.__oslogstring: 0xcdd
-+  __TEXT.__constg_swiftt: 0x277c
-+  __TEXT.__swift5_typeref: 0x2fb6
-+  __TEXT.__swift5_reflstr: 0x18b0
-+  __TEXT.__swift5_fieldmd: 0x3028
-   __TEXT.__swift5_builtin: 0x8c
--  __TEXT.__swift5_capture: 0x4cc
--  __TEXT.__swift5_types: 0x3f0
--  __TEXT.__swift_as_entry: 0xf0
--  __TEXT.__swift_as_ret: 0xfc
--  __TEXT.__swift_as_cont: 0xac
-+  __TEXT.__swift5_capture: 0x524
-+  __TEXT.__swift5_types: 0x408
-+  __TEXT.__swift_as_entry: 0x10c
-+  __TEXT.__swift_as_ret: 0x110
-+  __TEXT.__swift_as_cont: 0xc8
-   __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__swift5_proto: 0xd68
--  __TEXT.__swift5_protos: 0x18
-+  __TEXT.__swift5_proto: 0xdb0
-+  __TEXT.__swift5_protos: 0x1c
-   __TEXT.__swift5_assocty: 0x210
--  __TEXT.__unwind_info: 0x26b8
--  __TEXT.__eh_frame: 0x3e40
-+  __TEXT.__unwind_info: 0x27a0
-+  __TEXT.__eh_frame: 0x4010
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-216.0.100.0.0
++224.1.0.0.0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x20
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x8178
--  __AUTH_CONST.__objc_const: 0x958
--  __AUTH_CONST.__auth_got: 0xa88
-+  __AUTH_CONST.__const: 0x8408
-+  __AUTH_CONST.__objc_const: 0x910
-+  __AUTH_CONST.__auth_got: 0xb28
-   __AUTH.__objc_data: 0x50
--  __AUTH.__data: 0x758
--  __DATA.__data: 0x1e00
--  __DATA.__bss: 0x15280
--  __DATA_DIRTY.__objc_data: 0x50
--  __DATA_DIRTY.__data: 0x12e0
-+  __AUTH.__data: 0x338
-+  __DATA.__data: 0x1af8
-+  __DATA.__bss: 0x13b80
-+  __DATA_DIRTY.__objc_data: 0xa0
-+  __DATA_DIRTY.__data: 0x1c00
-   __DATA_DIRTY.__common: 0x60
--  __DATA_DIRTY.__bss: 0x5780
-+  __DATA_DIRTY.__bss: 0x7700
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreVideo.framework/CoreVideo
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3636
--  Symbols:   1733
+-  Symbols:   1461
 -  CStrings:  290
 +  Functions: 3719
-+  Symbols:   1767
++  Symbols:   1481
 +  CStrings:  293
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH.__objc_data : content changed
 Symbols:
 + ___swift_closure_destructor.21Tm
 + ___swift_memcpy122_8
@@ -147,5 +103,4 @@ CStrings:
 + "awaitStreamReady"
 - "%s lost connection race, using existing session"
 - "Connection race - using existing session"
-
 ```

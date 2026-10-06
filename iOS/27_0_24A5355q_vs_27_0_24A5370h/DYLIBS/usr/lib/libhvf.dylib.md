@@ -2,74 +2,28 @@
 
 > `/usr/lib/libhvf.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x147f4` | `0x14924` | **`+0x130`** |
+| `__TEXT.__gcc_except_tab` | `0xe04` | `0xe0c` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0xac8` | `0xac0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -13.0.0.0.0
--  __TEXT.__text: 0x147f4 sha256:fbb62af7f07d6c127bdc3bd883344b8f72549cff48302d93170ea7d5e453f335
--  __TEXT.__gcc_except_tab: 0xe04 sha256:2bde6101093feb8dd9db674f72dcf37e16cc919c25dc96e45aa8d75190c14c0d
--  __TEXT.__const: 0x1192 sha256:98f8336f1c4b1870efcde8fa27db209c6bdd09678a85e4a36b4786ee80a5b87f
--  __TEXT.__constg_swiftt: 0xa80 sha256:5809569d52bba5ed9a3c0f38710b867ad60aa7fd9fdfe47e1c5481672e528372
--  __TEXT.__swift5_typeref: 0x326 sha256:fe4b1f35d24592ea991703d347c41a4763d096fe2563880ea4913754e65e3646
 +14.0.0.0.0
-+  __TEXT.__text: 0x14924 sha256:93726679279beaa73203c1baba585d9a8567681a09a10ce68195b5ca7860e1f3
-+  __TEXT.__gcc_except_tab: 0xe0c sha256:6b7b9f812a904f9c1a6e73c6433d47a84d2f2891c9395ada9e5c402b291074e9
-+  __TEXT.__const: 0x1192 sha256:0804f160824521385d62176f391f48852361305542dd66b925246ac00ec2aac9
-+  __TEXT.__constg_swiftt: 0xa80 sha256:e091ad844853334e2abf4abcab283d7cc0d7e74238511050fff126d2280f5843
-+  __TEXT.__swift5_typeref: 0x326 sha256:c3715b4467b901b592cc2f5742c57ba79256b54ecd36ad2dc871fa12f378b845
-   __TEXT.__swift5_reflstr: 0x40f sha256:56efd42dff2f9dd9adae0b5fcf54aaab37fd2342f517e4d4efcbff949ba80f26
-   __TEXT.__swift5_fieldmd: 0x5d4 sha256:3817b3a5f0ed3324fd416aa7105348bc6c09b751aaf09772f3a7963e28bf8876
-   __TEXT.__swift5_builtin: 0x50 sha256:64f04a016e6e4811ada8f66b3e29af9660faf5431d723de4682f5b6432367a6d
 
-   __TEXT.__swift5_proto: 0x88 sha256:c05fe6b2b8aeaf0fa0c685e6059ccd292b5b536d71f62641c3497ba1d831b510
-   __TEXT.__swift5_protos: 0xc sha256:9ed1da56df6d665a44a0773bac45eff1c6b4e050d3f9944db1f19cd65aaa6b2b
-   __TEXT.__swift5_mpenum: 0x10 sha256:ce74dab706040024777bb158672f8cefa10148cbf449bdab5540a5e8b49640c2
--  __TEXT.__unwind_info: 0xac8 sha256:52e4d635b89eea87b41ad742153e74153c315800e9205d68e135576d6525176f
--  __TEXT.__eh_frame: 0xf30 sha256:98ad36a9ef1b317fc91a3c07aa783bf3cadbe0e553c2541077c6366809219d43
-+  __TEXT.__unwind_info: 0xac0 sha256:d721cd55ca7100bfb788bce8dfc3db8495ecb912c11dd5b130115726ebce7f2e
-+  __TEXT.__eh_frame: 0xf30 sha256:0ffeef8642406b5ee35fbb815fcd64c1dbb944aa1e317bc7ad8332f2514b4037
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x70 sha256:bd49f56855e8914f6292da93bd5ae8d437103966e2992d88320501b51c9f88cc
--  __DATA_CONST.__objc_classlist: 0x40 sha256:65b2143d230997cacc7621c675a5bc48de38eb7772f6bf26088fb490cf697cf7
-+  __DATA_CONST.__const: 0x70 sha256:0bb19b48a16f1ce9a3fcd27be4890bbca929e6cfb2383247f596fe3b0a5a9b74
-+  __DATA_CONST.__objc_classlist: 0x40 sha256:b834e21de2ddeb3e7f3c84293b6e403f8fe72f70d516f49e5db3bdc6bd93ea5d
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__weak_got: 0x10 sha256:60bd051d0bd79e2b1e0afaff0147604b2b7b08044f30c50137fb41a2153e3e56
-+  __DATA_CONST.__weak_got: 0x10 sha256:2f1a2d0c36c6731ffe079944d2ca7640d62c107666c3f90af849bf1bf605632c
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1028 sha256:401e31aaa81f1a5e0d9f8c6b86f16e88b89d69366769c2d97110f8d50c8c339e
--  __AUTH_CONST.__objc_const: 0x9c0 sha256:4191e361eb142a30b916afaf430ab27319c15ee17426c635f62a88c77fc182e4
--  __AUTH_CONST.__weak_auth_got: 0x18 sha256:7546a09805022bd76414fce55e5477f828ee8d04b8e3bcdb5c3e6baec4116eb1
-+  __AUTH_CONST.__const: 0x1028 sha256:798a83ed6ad6dc749921049cf2bfb5ea847e2c277c4a693332ddc183f5f58d5c
-+  __AUTH_CONST.__objc_const: 0x9c0 sha256:b9bb56bb8eecc9187c32d6a84d59be7974a4bb5a263010dfc7c507200a47fc78
-+  __AUTH_CONST.__weak_auth_got: 0x18 sha256:cfeae059251bbbbac82e2022f544e03fc9cc6a606bd523b3318e9279f145ab86
-   __AUTH_CONST.__auth_got: 0x228 sha256:0345bffb28f80f4d0ded1a2af09a337b18ab3a80c68205bc8321a6ad4d409500
-   __DATA.__data: 0x150 sha256:52a3e0804d93dc525ec3c67ef8ac5b01756ecf0513e36f3c19435e4c82cb5d29
-   __DATA.__bss: 0xf80 sha256:12525d303b667ee3d0917d8257a21fa0ae80a706be72d4fe8fa4b06739bdbe38
--  __DATA_DIRTY.__data: 0x9e0 sha256:002908a4f172f896f44c396c867b43c076d8de7224749c1b65df3b90343fa989
-+  __DATA_DIRTY.__data: 0x9e0 sha256:c26e6f3bd5d7b000b4a286ae9e233dd1761cb3dfd12256f455ad35d6fa1a935b
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: 2A3A73B4-329B-3C07-9197-6B6DAD362300
 -  Functions: 862
--  Symbols:   2765
-+  UUID: 26D45C57-02B5-3C18-8169-AD842DF04EEA
 +  Functions: 863
-+  Symbols:   2767
-   CStrings:  14
- 
 Symbols:
 + __ZN3HVF10LoaderHVGL13loadCompositeERNSt3__14spanIKhLm18446744073709551615EEEmRNS_9PartCacheEb
 + __ZN3HVF10LoaderHVGL15loadPartAtIndexEmRNS_9PartCacheE
 + __ZN3HVF10LoaderHVGL9loadShapeERNSt3__14spanIKhLm18446744073709551615EEEmRNS_9PartCacheEb
 + __ZNK3HVF10LoaderHVGL15partDataAtIndexEmb
-+ __ZNK3HVF10LoaderHVGL15partDataAtIndexEmb.cold.1
 + __ZNSt12length_errorC1B9fqe220106EPKc
 + __ZNSt12out_of_rangeC1B9fqe220106EPKc
 + __ZNSt3__110__function12__value_funcIF19HVFPartRenderAction24HVFPartRenderInstructionPK23HVFPartRenderParametersEEC2B9fqe220106ERKS8_
@@ -222,5 +176,4 @@ Symbols:
 - __ZSt28__throw_bad_array_new_lengthB9fqe220100v
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeImNS_7variantIJN3HVF5ShapeENS3_9CompositeEEEEEENS_22__unordered_map_hasherImNS_4pairIKmS6_EENS_4hashImEENS_8equal_toImEEEENS_21__unordered_map_equalImSB_SF_SD_EENS_9allocatorISB_EEE16__emplace_uniqueB9fqe220100IJRmS4_EEENS9_INS_15__hash_iteratorIPNS_11__hash_nodeIS7_PvEEEEbEEDpOT_ENKUlRSA_SN_OS4_E_clESY_SN_SZ_
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeImNS_7variantIJN3HVF5ShapeENS3_9CompositeEEEEEENS_22__unordered_map_hasherImNS_4pairIKmS6_EENS_4hashImEENS_8equal_toImEEEENS_21__unordered_map_equalImSB_SF_SD_EENS_9allocatorISB_EEE16__emplace_uniqueB9fqe220100IJRmS5_EEENS9_INS_15__hash_iteratorIPNS_11__hash_nodeIS7_PvEEEEbEEDpOT_ENKUlRSA_SN_OS5_E_clESY_SN_SZ_
-
 ```

@@ -2,27 +2,26 @@
 
 > `/System/Library/Frameworks/CoreLocationUI.framework/XPCServices/com.apple.corelocation.locationUI.xpc/com.apple.corelocation.locationUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0xe8` | `0xd8` | **`-0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -3185.0.6.0.3
 +3186.0.12.0.0
-   __TEXT.__text: 0x1f24
-   __TEXT.__auth_stubs: 0x320
-   __TEXT.__objc_stubs: 0x820
-   __TEXT.__objc_methlist: 0x24c
--  __TEXT.__const: 0xe8
-+  __TEXT.__const: 0xd8
-   __TEXT.__objc_classname: 0x6a
-   __TEXT.__objc_methname: 0x866
-   __TEXT.__objc_methtype: 0x342
 ```

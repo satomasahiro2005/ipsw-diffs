@@ -2,22 +2,22 @@
 
 > `/usr/libexec/logd_helper`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x130` | `0x140` | **`+0x10`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+
+### Other Changes
 
 ```diff
 
 -1965.0.0.0.0
 +1966.0.6.0.0
-   __TEXT.__text: 0x5d8c
-   __TEXT.__auth_stubs: 0x9b0
-   __TEXT.__objc_stubs: 0x240
--  __TEXT.__const: 0x130
-+  __TEXT.__const: 0x140
-   __TEXT.__cstring: 0xbc2
-   __TEXT.__objc_methname: 0x174
-   __TEXT.__unwind_info: 0x138
 ```

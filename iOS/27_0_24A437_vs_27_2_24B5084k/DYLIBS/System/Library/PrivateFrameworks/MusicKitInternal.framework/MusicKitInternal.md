@@ -2,105 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/MusicKitInternal.framework/MusicKitInternal`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x90061c` | `0x920ed8` | **`+0x208bc`** |
+| `__TEXT.__cstring` | `0x1a2fb` | `0x1efa0` | **`+0x4ca5`** |
+| `__DATA.__bss` | `0x990f0` | `0x9b4c0` | **`+0x23d0`** |
+| `__TEXT.__const` | `0x70a64` | `0x727a4` | **`+0x1d40`** |
+| `__TEXT.__eh_frame` | `0x3e8dc` | `0x3fba8` | **`+0x12cc`** |
+| `__AUTH_CONST.__const` | `0x3c2b8` | `0x3d218` | **`+0xf60`** |
+| `__TEXT.__swift5_fieldmd` | `0x15420` | `0x15ccc` | **`+0x8ac`** |
+| `__TEXT.__swift5_typeref` | `0x19524` | `0x19ce4` | **`+0x7c0`** |
+| `__TEXT.__constg_swiftt` | `0x115d0` | `0x11c8c` | **`+0x6bc`** |
+| `__AUTH.__data` | `0x5d68` | `0x63f0` | **`+0x688`** |
+| `__TEXT.__swift5_reflstr` | `0x1122a` | `0x117ba` | **`+0x590`** |
+| `__DATA.__data` | `0x144f8` | `0x14a40` | **`+0x548`** |
+| `__TEXT.__oslogstring` | `0xdc07` | `0xe047` | **`+0x440`** |
+| `__TEXT.__unwind_info` | `0x23710` | `0x23a90` | **`+0x380`** |
+| `__TEXT.__swift5_assocty` | `0x3b50` | `0x3e08` | **`+0x2b8`** |
+| `__AUTH_CONST.__auth_got` | `0x6d28` | `0x6fc0` | **`+0x298`** |
+| `__AUTH_CONST.__objc_const` | `0x9e18` | `0x9fe8` | **`+0x1d0`** |
+| `__DATA_CONST.__got` | `0x3c28` | `0x3d70` | **`+0x148`** |
+| `__TEXT.__swift5_proto` | `0x5eec` | `0x6008` | **`+0x11c`** |
+| `__AUTH.__objc_data` | `0x1c8` | `0x2b0` | **`+0xe8`** |
+| `__TEXT.__swift5_types` | `0x169c` | `0x1748` | **`+0xac`** |
+| `__TEXT.__swift5_capture` | `0xb3dc` | `0xb338` | **`-0xa4`** |
+| `__TEXT.__swift_as_cont` | `0x2a10` | `0x2ab4` | **`+0xa4`** |
+| `__TEXT.__swift_as_ret` | `0x18b0` | `0x1904` | **`+0x54`** |
+| `__AUTH_CONST.__cfstring` | `0x280` | `0x2c0` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x23f0` | `0x2430` | **`+0x40`** |
+| `__TEXT.__swift_as_entry` | `0x16d8` | `0x1718` | **`+0x40`** |
+| `__TEXT.__objc_methlist` | `0x29dc` | `0x2a0c` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x25b0` | `0x25d8` | **`+0x28`** |
+| `__TEXT.__swift5_builtin` | `0x474` | `0x49c` | **`+0x28`** |
+| `__DATA.__common` | `0xa98` | `0xab0` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x3a8` | `0x3b0` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x200` | `0x208` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -4026.110.3.0.0
--  __TEXT.__text: 0x89b008
--  __TEXT.__objc_methlist: 0x29dc
--  __TEXT.__const: 0x70a64
 +4026.210.18.1.0
-+  __TEXT.__text: 0x8ba9e0
-+  __TEXT.__objc_methlist: 0x2a0c
-+  __TEXT.__const: 0x727a4
-   __TEXT.__gcc_except_tab: 0xbe8
--  __TEXT.__cstring: 0x1a2fb
-+  __TEXT.__cstring: 0x1efa0
-   __TEXT.__dlopen_cstrs: 0x10f7
--  __TEXT.__constg_swiftt: 0x115d0
--  __TEXT.__swift5_typeref: 0x19524
--  __TEXT.__swift5_fieldmd: 0x15420
--  __TEXT.__swift5_builtin: 0x474
--  __TEXT.__swift5_reflstr: 0x1122a
--  __TEXT.__swift5_assocty: 0x3b50
--  __TEXT.__swift5_proto: 0x5eec
--  __TEXT.__swift5_types: 0x169c
--  __TEXT.__oslogstring: 0xdc07
--  __TEXT.__swift5_capture: 0xb3dc
--  __TEXT.__swift5_protos: 0x200
--  __TEXT.__swift_as_entry: 0x16d8
--  __TEXT.__swift_as_ret: 0x18b0
--  __TEXT.__swift_as_cont: 0x2a10
-+  __TEXT.__swift5_typeref: 0x19ce4
-+  __TEXT.__swift5_reflstr: 0x117ba
-+  __TEXT.__swift5_assocty: 0x3e08
-+  __TEXT.__constg_swiftt: 0x11c8c
-+  __TEXT.__swift5_fieldmd: 0x15ccc
-+  __TEXT.__swift5_builtin: 0x49c
-+  __TEXT.__swift5_proto: 0x6008
-+  __TEXT.__swift5_types: 0x1748
-+  __TEXT.__swift5_protos: 0x208
-+  __TEXT.__swift5_capture: 0xb338
-+  __TEXT.__oslogstring: 0xe047
-+  __TEXT.__swift_as_entry: 0x1718
-+  __TEXT.__swift_as_ret: 0x1904
-+  __TEXT.__swift_as_cont: 0x2ab4
-   __TEXT.__swift5_acfuncs: 0x154
-   __TEXT.__swift5_mpenum: 0xf0
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0x2a878
--  __TEXT.__eh_frame: 0x3e94c
-+  __TEXT.__unwind_info: 0x2bc70
-+  __TEXT.__eh_frame: 0x3fc18
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x25b0
--  __DATA_CONST.__objc_classlist: 0x3a8
-+  __DATA_CONST.__const: 0x25d8
-+  __DATA_CONST.__objc_classlist: 0x3b0
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x1d0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x23f0
-+  __DATA_CONST.__objc_selrefs: 0x2430
-   __DATA_CONST.__objc_protorefs: 0xd0
-   __DATA_CONST.__objc_superrefs: 0x160
--  __DATA_CONST.__got: 0x3c28
--  __AUTH_CONST.__const: 0x3c2b8
--  __AUTH_CONST.__cfstring: 0x280
--  __AUTH_CONST.__objc_const: 0x9e18
-+  __DATA_CONST.__got: 0x3d70
-+  __AUTH_CONST.__const: 0x3d218
-+  __AUTH_CONST.__cfstring: 0x2c0
-+  __AUTH_CONST.__objc_const: 0x9fe8
-   __AUTH_CONST.__objc_intobj: 0x30
--  __AUTH_CONST.__auth_got: 0x6d28
--  __AUTH.__objc_data: 0x1c8
--  __AUTH.__data: 0x5d68
-+  __AUTH_CONST.__auth_got: 0x6fc0
-+  __AUTH.__objc_data: 0x2b0
-+  __AUTH.__data: 0x63f0
-   __DATA.__objc_ivar: 0x154
--  __DATA.__data: 0x144f8
--  __DATA.__common: 0xa98
-+  __DATA.__data: 0x14a40
-+  __DATA.__common: 0xab0
-   __DATA_DIRTY.__objc_data: 0x1bf8
-   __DATA_DIRTY.__data: 0x12df8
-   __DATA_DIRTY.__bss: 0x1dee0
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 60529
--  Symbols:   13323
+-  Symbols:   12290
 -  CStrings:  2891
 +  Functions: 61327
-+  Symbols:   13527
++  Symbols:   12487
 +  CStrings:  3143
- 
 Symbols:
 + -[MusicKitInternal_SoftLinking_MPModelLibraryPlaylistEditChangeRequest initWithParentPlaylist:playlistEntries:children:playlistName:playlistDescription:createFolder:playlistUserImage:coverArtworkRecipe:publicPlaylist:visiblePlaylist:authorStoreIdentifier:library:]
 + -[MusicKit_SoftLinking_MPCModelStorePlaybackItemsRequest initWithStoreIDs:versionHashesByStoreID:]
@@ -204,18 +156,6 @@ Symbols:
 + _associated conformance 8MusicKit5AlbumV0aB8InternalE4KindOSHADSQ
 + _default assoc type yyYbScMYcc
 + _get_enum_tag_for_layout_string 16MusicKitInternal0A5AlertO14StandardActionVSg
-+ _objc_msgSend$contentType
-+ _objc_msgSend$favoriteSongAddToLibraryBehavior
-+ _objc_msgSend$identifierSetWithCatalogID:libraryID:cloudAlbumLibraryID:cloudID:reportingAdamID:purchasedAdamID:assetAdamID:deviceLocalID:occurrenceID:containedDeviceLocalID:syncID:playbackID:formerIDs:versionHash:modelObjectType:source:
-+ _objc_msgSend$initWithChannelID:entityType:storeID:reason:expectedReleaseDate:
-+ _objc_msgSend$initWithParentPlaylist:playlistEntries:children:playlistName:playlistDescription:createFolder:playlistUserImage:coverArtworkRecipe:publicPlaylist:visiblePlaylist:authorStoreIdentifier:library:
-+ _objc_msgSend$initWithStoreIDs:versionHashesByStoreID:
-+ _objc_msgSend$initWithStoreIDs:versionHashesByStoreID:startIdentifierSet:
-+ _objc_msgSend$isAutomaticDownloadsEnabledForPinnedLibraryEntities
-+ _objc_msgSend$musicKit_versionHash
-+ _objc_msgSend$setBool:forKey:
-+ _objc_msgSend$setCloudFavoriteSongAddToLibraryBehavior:completionHandler:
-+ _objc_msgSend$setVersionHashesByStoreID:
 + _swift_retain_x10
 + _symbolic $s16MusicKitInternal0A5AlertO13ConfigurationP
 + _symbolic $s16MusicKitInternal0A5AlertO19ActionConfigurationP
@@ -408,11 +348,6 @@ Symbols:
 - _associated conformance 16MusicKitInternal7ConcertV6TicketV12DataProviderV10CodingKeys33_C41CF91D1E16BBCE89DEF11BBD0DC42CLLOs0H3KeyAAs23CustomStringConvertible
 - _associated conformance 16MusicKitInternal7ConcertV6TicketV12DataProviderV10CodingKeys33_C41CF91D1E16BBCE89DEF11BBD0DC42CLLOs0H3KeyAAs28CustomDebugStringConvertible
 - _associated conformance 16MusicKitInternal7ConcertV6TicketV12DataProviderVSHAASQ
-- _objc_msgSend$allLibraryAlbumsConfiguration
-- _objc_msgSend$identifierSetWithCatalogID:libraryID:cloudAlbumLibraryID:cloudID:reportingAdamID:purchasedAdamID:assetAdamID:deviceLocalID:occurrenceID:containedDeviceLocalID:syncID:playbackID:formerIDs:modelObjectType:source:
-- _objc_msgSend$initWithParentPlaylist:playlistEntries:children:playlistName:playlistDescription:createFolder:playlistUserImage:coverArtworkRecipe:publicPlaylist:visiblePlaylist:authorStoreIdentifier:
-- _objc_msgSend$initWithStoreIDs:
-- _objc_msgSend$initWithStoreIDs:startIdentifierSet:
 - _symbolic SDy_____ScTyyt_____GG 10Foundation4UUIDV s5NeverO
 - _symbolic Scsy___________pG 16MusicKitInternal0A27CatalogAlbumDetailViewModelC11PushMessageV s5ErrorP
 - _symbolic SdIegd_

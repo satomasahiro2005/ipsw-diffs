@@ -2,121 +2,71 @@
 
 > `/System/Library/PreferenceBundles/CameraSettings.bundle/CameraSettings`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x38eb4` | `0x40254` | **`+0x73a0`** |
+| `__TEXT.__swift5_typeref` | `0x6266` | `0x85aa` | **`+0x2344`** |
+| `__DATA.__bss` | `0xe20` | `0x16f8` | **`+0x8d8`** |
+| `__TEXT.__const` | `0x1af4` | `0x2304` | **`+0x810`** |
+| `__DATA.__data` | `0x1030` | `0x1548` | **`+0x518`** |
+| `__DATA_CONST.__const` | `0x1760` | `0x1b10` | **`+0x3b0`** |
+| `__TEXT.__objc_methname` | `0x4267` | `0x4617` | **`+0x3b0`** |
+| `__DATA.__objc_const` | `0x15f8` | `0x18f0` | **`+0x2f8`** |
+| `__TEXT.__auth_stubs` | `0x1ad0` | `0x1d80` | **`+0x2b0`** |
+| `__TEXT.__constg_swiftt` | `0x4fc` | `0x6d8` | **`+0x1dc`** |
+| `__TEXT.__objc_methtype` | `0x468` | `0x628` | **`+0x1c0`** |
+| `__TEXT.__cstring` | `0x51a9` | `0x5325` | **`+0x17c`** |
+| `__TEXT.__swift5_fieldmd` | `0x6b8` | `0x820` | **`+0x168`** |
+| `__TEXT.__unwind_info` | `0xde8` | `0xf50` | **`+0x168`** |
+| `__DATA_CONST.__auth_got` | `0xd78` | `0xed0` | **`+0x158`** |
+| `__DATA_CONST.__auth_ptr` | `0x5b8` | `0x6e0` | **`+0x128`** |
+| `__TEXT.__objc_stubs` | `0x3740` | `0x3860` | **`+0x120`** |
+| `__TEXT.__swift5_reflstr` | `0x987` | `0xaa2` | **`+0x11b`** |
+| `__TEXT.__objc_methlist` | `0xe0c` | `0xf0c` | **`+0x100`** |
+| `__DATA.__objc_data` | `0x750` | `0x840` | **`+0xf0`** |
+| `__TEXT.__swift5_assocty` | `0x150` | `0x228` | **`+0xd8`** |
+| `__TEXT.__objc_classname` | `0x43e` | `0x50e` | **`+0xd0`** |
+| `__DATA.__objc_selrefs` | `0x1100` | `0x11a8` | **`+0xa8`** |
+| `__DATA_CONST.__cfstring` | `0x42c0` | `0x4360` | **`+0xa0`** |
+| `__DATA_CONST.__got` | `0x900` | `0x978` | **`+0x78`** |
+| `__TEXT.__swift5_proto` | `0x64` | `0xbc` | **`+0x58`** |
+| `__DATA.__common` | `0x70` | `0xc0` | **`+0x50`** |
+| `__TEXT.__swift5_capture` | `0x2e8` | `0x31c` | **`+0x34`** |
+| `__DATA_CONST.__objc_arraydata` | `0x420` | `0x450` | **`+0x30`** |
+| `__DATA_CONST.__objc_arrayobj` | `0x1f8` | `0x228` | **`+0x30`** |
+| `__DATA_CONST.__objc_intobj` | `0x2d0` | `0x300` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0xc0` | `0xd8` | **`+0x18`** |
+| `__TEXT.__eh_frame` | `0xe84` | `0xe6c` | **`-0x18`** |
+| `__TEXT.__swift5_types` | `0x4c` | `0x64` | **`+0x18`** |
+| `__TEXT.__gcc_except_tab` | `0x2f0` | `0x304` | **`+0x14`** |
+| `__TEXT.__swift5_builtin` | `0x14` | `0x28` | **`+0x14`** |
+| `__TEXT.__swift_as_cont` | `0xfc` | `0xec` | **`-0x10`** |
+| `__TEXT.__swift5_protos` | `—` | `0xc` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `0x48` | `0x3c` | **`-0xc`** |
+| `__DATA_CONST.__objc_protolist` | `0x10` | `0x18` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x88` | `0x90` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__swift_as_entry`
+
+### Other Changes
 
 ```diff
 
 -4171.0.0.0.1
--  __TEXT.__text: 0x38eb4
--  __TEXT.__auth_stubs: 0x1ad0
--  __TEXT.__objc_stubs: 0x3740
--  __TEXT.__objc_methlist: 0xe0c
--  __TEXT.__const: 0x1af4
--  __TEXT.__gcc_except_tab: 0x2f0
--  __TEXT.__cstring: 0x51a9
--  __TEXT.__objc_methname: 0x4267
--  __TEXT.__objc_classname: 0x43e
--  __TEXT.__objc_methtype: 0x468
 +4174.0.0.0.0
-+  __TEXT.__text: 0x40254
-+  __TEXT.__auth_stubs: 0x1d80
-+  __TEXT.__objc_stubs: 0x3860
-+  __TEXT.__objc_methlist: 0xf0c
-+  __TEXT.__const: 0x2304
-+  __TEXT.__gcc_except_tab: 0x304
-+  __TEXT.__cstring: 0x5325
-+  __TEXT.__objc_methname: 0x4617
-+  __TEXT.__objc_classname: 0x50e
-+  __TEXT.__objc_methtype: 0x628
-   __TEXT.__oslogstring: 0x325
--  __TEXT.__constg_swiftt: 0x4fc
--  __TEXT.__swift5_typeref: 0x6266
--  __TEXT.__swift5_reflstr: 0x987
--  __TEXT.__swift5_assocty: 0x150
--  __TEXT.__swift5_fieldmd: 0x6b8
--  __TEXT.__swift5_builtin: 0x14
--  __TEXT.__swift5_proto: 0x64
--  __TEXT.__swift5_types: 0x4c
--  __TEXT.__swift5_capture: 0x2e8
-+  __TEXT.__constg_swiftt: 0x6d8
-+  __TEXT.__swift5_typeref: 0x85aa
-+  __TEXT.__swift5_reflstr: 0xaa2
-+  __TEXT.__swift5_assocty: 0x228
-+  __TEXT.__swift5_fieldmd: 0x820
-+  __TEXT.__swift5_builtin: 0x28
-+  __TEXT.__swift5_proto: 0xbc
-+  __TEXT.__swift5_types: 0x64
-+  __TEXT.__swift5_protos: 0xc
-+  __TEXT.__swift5_capture: 0x31c
-   __TEXT.__swift_as_entry: 0x58
--  __TEXT.__swift_as_cont: 0xfc
--  __TEXT.__swift_as_ret: 0x48
--  __TEXT.__unwind_info: 0xde8
--  __TEXT.__eh_frame: 0xe84
--  __DATA_CONST.__const: 0x1760
--  __DATA_CONST.__cfstring: 0x42c0
--  __DATA_CONST.__objc_classlist: 0xc0
--  __DATA_CONST.__objc_protolist: 0x10
-+  __TEXT.__swift_as_cont: 0xec
-+  __TEXT.__swift_as_ret: 0x3c
-+  __TEXT.__unwind_info: 0xf50
-+  __TEXT.__eh_frame: 0xe6c
-+  __DATA_CONST.__const: 0x1b10
-+  __DATA_CONST.__cfstring: 0x4360
-+  __DATA_CONST.__objc_classlist: 0xd8
-+  __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_superrefs: 0x88
--  __DATA_CONST.__objc_arraydata: 0x420
--  __DATA_CONST.__objc_arrayobj: 0x1f8
--  __DATA_CONST.__objc_intobj: 0x2d0
--  __DATA_CONST.__auth_got: 0xd78
--  __DATA_CONST.__got: 0x900
--  __DATA_CONST.__auth_ptr: 0x5b8
--  __DATA.__objc_const: 0x15f8
--  __DATA.__objc_selrefs: 0x1100
-+  __DATA_CONST.__objc_superrefs: 0x90
-+  __DATA_CONST.__objc_arraydata: 0x450
-+  __DATA_CONST.__objc_arrayobj: 0x228
-+  __DATA_CONST.__objc_intobj: 0x300
-+  __DATA_CONST.__auth_got: 0xed0
-+  __DATA_CONST.__got: 0x978
-+  __DATA_CONST.__auth_ptr: 0x6e0
-+  __DATA.__objc_const: 0x18f0
-+  __DATA.__objc_selrefs: 0x11a8
-   __DATA.__objc_ivar: 0x48
--  __DATA.__objc_data: 0x750
--  __DATA.__data: 0x1030
--  __DATA.__bss: 0xe20
--  __DATA.__common: 0x70
-+  __DATA.__objc_data: 0x840
-+  __DATA.__data: 0x1548
-+  __DATA.__bss: 0x16f8
-+  __DATA.__common: 0xc0
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/PrivateFrameworks/CameraEditKit.framework/CameraEditKit
-   - /System/Library/PrivateFrameworks/CameraOverlayServices.framework/CameraOverlayServices
-   - /System/Library/PrivateFrameworks/CameraUI.framework/CameraUI
 +  - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
-   - /System/Library/PrivateFrameworks/HelpKit.framework/HelpKit
-   - /System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1114
 -  Symbols:   404
 -  CStrings:  1375
 +  Functions: 1271
 +  Symbols:   411
 +  CStrings:  1430
- 
 Symbols:
 + _AnalyticsSendEventLazy
 + _CAMUserPreferenceProResLogVideoRecordingFormat

@@ -2,63 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/DiagnosticsSessionAvailability.framework/XPCServices/DiagnosticsSessionAvailabilityService.xpc/DiagnosticsSessionAvailabilityService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb6f0` | `0xb87c` | **`+0x18c`** |
+| `__TEXT.__gcc_except_tab` | `0x448` | `0x4f0` | **`+0xa8`** |
+| `__TEXT.__unwind_info` | `0x428` | `0x470` | **`+0x48`** |
+| `__DATA.__objc_const` | `0x3490` | `0x34b0` | **`+0x20`** |
+| `__TEXT.__objc_stubs` | `0x1fc0` | `0x1fe0` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x178` | `0x190` | **`+0x18`** |
+| `__TEXT.__objc_methname` | `0x27b4` | `0x27c9` | **`+0x15`** |
+| `__TEXT.__objc_methtype` | `0x700` | `0x70c` | **`+0xc`** |
+| `__DATA.__objc_selrefs` | `0xab0` | `0xab8` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x12c` | `0x130` | **`+0x4`** |
+| `__TEXT.__cstring` | `0x9f1` | `0x9f4` | **`+0x3`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xb6f0
-+  __TEXT.__text: 0xb87c
-   __TEXT.__auth_stubs: 0x500
--  __TEXT.__objc_stubs: 0x1fc0
-+  __TEXT.__objc_stubs: 0x1fe0
-   __TEXT.__objc_methlist: 0x1104
-   __TEXT.__const: 0x70
--  __TEXT.__gcc_except_tab: 0x448
--  __TEXT.__cstring: 0x9f1
-+  __TEXT.__gcc_except_tab: 0x4f0
-+  __TEXT.__cstring: 0x9f4
-   __TEXT.__oslogstring: 0x9fc
-   __TEXT.__objc_classname: 0x24c
--  __TEXT.__objc_methname: 0x27b4
--  __TEXT.__objc_methtype: 0x700
--  __TEXT.__unwind_info: 0x428
-+  __TEXT.__objc_methname: 0x27c9
-+  __TEXT.__objc_methtype: 0x70c
-+  __TEXT.__unwind_info: 0x470
-   __DATA_CONST.__const: 0x478
-   __DATA_CONST.__cfstring: 0x9a0
-   __DATA_CONST.__objc_classlist: 0x80
+-1369.0.0.0.0
++1374.0.5.0.0
 
-   __DATA_CONST.__objc_arraydata: 0x70
-   __DATA_CONST.__objc_arrayobj: 0x30
-   __DATA_CONST.__auth_got: 0x290
--  __DATA_CONST.__got: 0x178
--  __DATA.__objc_const: 0x3490
--  __DATA.__objc_selrefs: 0xab0
--  __DATA.__objc_ivar: 0x12c
-+  __DATA_CONST.__got: 0x190
-+  __DATA.__objc_const: 0x34b0
-+  __DATA.__objc_selrefs: 0xab8
-+  __DATA.__objc_ivar: 0x130
-   __DATA.__objc_data: 0x500
-   __DATA.__data: 0x420
-   __DATA.__bss: 0x40
-
-   - /usr/lib/libobjc.A.dylib
-   Functions: 331
-   Symbols:   202
--  CStrings:  820
-+  CStrings:  823
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
+-  CStrings:  714
++  CStrings:  717
 Functions:
 ~ sub_100004ce4 : 436 -> 460
 ~ sub_100004f98 -> sub_100004fb0 : 112 -> 184
@@ -75,5 +56,4 @@ CStrings:
 + "@\"NSObject\""
 + "_stateLock"
 + "allValues"
-
 ```

@@ -2,133 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/PhotoLibraryServices.framework/PhotoLibraryServices`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_floatobj`
-- `__AUTH.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x744dd0` | `0x749104` | **`+0x4334`** |
+| `__TEXT.__oslogstring` | `0x83dc5` | `0x843c9` | **`+0x604`** |
+| `__TEXT.__cstring` | `0x6c454` | `0x6c94b` | **`+0x4f7`** |
+| `__AUTH_CONST.__cfstring` | `0x52ec0` | `0x532a0` | **`+0x3e0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x250a0` | `0x25238` | **`+0x198`** |
+| `__TEXT.__objc_methlist` | `0x4568c` | `0x457fc` | **`+0x170`** |
+| `__AUTH_CONST.__objc_const` | `0x6fef0` | `0x70040` | **`+0x150`** |
+| `__TEXT.__gcc_except_tab` | `0x2017c` | `0x20224` | **`+0xa8`** |
+| `__AUTH.__objc_data` | `0x13350` | `0x133f0` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x16758` | `0x167e8` | **`+0x90`** |
+| `__DATA_CONST.__const` | `0x166e8` | `0x16768` | **`+0x80`** |
+| `__DATA_CONST.__objc_arraydata` | `0x1cc0` | `0x1d30` | **`+0x70`** |
+| `__AUTH_CONST.__const` | `0x9bb0` | `0x9c00` | **`+0x50`** |
+| `__DATA.__bss` | `0x3540` | `0x3570` | **`+0x30`** |
+| `__TEXT.__swift5_typeref` | `0x11b2` | `0x1188` | **`-0x2a`** |
+| `__DATA_CONST.__got` | `0x5108` | `0x5130` | **`+0x28`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x1488` | `0x14a0` | **`+0x18`** |
+| `__AUTH_CONST.__objc_intobj` | `0x5340` | `0x5358` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x15a0` | `0x1588` | **`-0x18`** |
+| `__TEXT.__const` | `0x7158` | `0x7170` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x2a80` | `0x2a70` | **`-0x10`** |
+| `__DATA.__data` | `0x6fd4` | `0x6fc4` | **`-0x10`** |
+| `__DATA.__objc_ivar` | `0x3e28` | `0x3e18` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x23d0` | `0x23e0` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x1528` | `0x1518` | **`-0x10`** |
+
+### Other Changes
 
 ```diff
 
 -910.27.103.0.0
--  __TEXT.__text: 0x744dd0
 +910.33.102.0.0
-+  __TEXT.__text: 0x749104
-   __TEXT.__delay_stubs: 0x40
-   __TEXT.__delay_helper: 0xa4
--  __TEXT.__objc_methlist: 0x4568c
--  __TEXT.__const: 0x7158
-+  __TEXT.__objc_methlist: 0x457fc
-+  __TEXT.__const: 0x7170
-   __TEXT.__dlopen_cstrs: 0xb28
--  __TEXT.__swift5_typeref: 0x11b2
--  __TEXT.__cstring: 0x6c454
--  __TEXT.__swift5_capture: 0x1528
-+  __TEXT.__swift5_typeref: 0x1188
-+  __TEXT.__cstring: 0x6c94b
-+  __TEXT.__swift5_capture: 0x1518
-   __TEXT.__constg_swiftt: 0x290
-   __TEXT.__swift5_builtin: 0x78
-   __TEXT.__swift5_reflstr: 0x196
 
-   __TEXT.__swift5_fieldmd: 0x200
-   __TEXT.__swift5_proto: 0x70
-   __TEXT.__swift5_types: 0x3c
--  __TEXT.__oslogstring: 0x83dc5
-+  __TEXT.__oslogstring: 0x843c9
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__gcc_except_tab: 0x2017c
-+  __TEXT.__gcc_except_tab: 0x20224
-   __TEXT.__ustring: 0xa3a
--  __TEXT.__unwind_info: 0x16758
-+  __TEXT.__unwind_info: 0x167e8
-   __TEXT.__eh_frame: 0xf88
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x166e8
--  __DATA_CONST.__objc_classlist: 0x23d0
-+  __DATA_CONST.__const: 0x16768
-+  __DATA_CONST.__objc_classlist: 0x23e0
-   __DATA_CONST.__objc_catlist: 0xf8
-   __DATA_CONST.__objc_protolist: 0x760
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x250a0
-+  __DATA_CONST.__objc_selrefs: 0x25238
-   __DATA_CONST.__objc_protorefs: 0xc8
--  __DATA_CONST.__objc_superrefs: 0x15a0
--  __DATA_CONST.__objc_arraydata: 0x1cc0
--  __DATA_CONST.__got: 0x5108
--  __AUTH_CONST.__const: 0x9bb0
--  __AUTH_CONST.__cfstring: 0x52ec0
--  __AUTH_CONST.__objc_const: 0x6fef0
-+  __DATA_CONST.__objc_superrefs: 0x1588
-+  __DATA_CONST.__objc_arraydata: 0x1d30
-+  __DATA_CONST.__got: 0x5130
-+  __AUTH_CONST.__const: 0x9c00
-+  __AUTH_CONST.__cfstring: 0x532a0
-+  __AUTH_CONST.__objc_const: 0x70040
-   __AUTH_CONST.__weak_auth_got: 0x28
--  __AUTH_CONST.__objc_intobj: 0x5340
--  __AUTH_CONST.__objc_arrayobj: 0x1488
-+  __AUTH_CONST.__objc_intobj: 0x5358
-+  __AUTH_CONST.__objc_arrayobj: 0x14a0
-   __AUTH_CONST.__objc_doubleobj: 0x180
-   __AUTH_CONST.__objc_dictobj: 0x2f8
-   __AUTH_CONST.__objc_floatobj: 0x40
--  __AUTH_CONST.__auth_got: 0x2a80
--  __AUTH.__objc_data: 0x13350
-+  __AUTH_CONST.__auth_got: 0x2a70
-+  __AUTH.__objc_data: 0x133f0
-   __AUTH.__data: 0x1e8
--  __DATA.__objc_ivar: 0x3e28
--  __DATA.__data: 0x6fd4
-+  __DATA.__objc_ivar: 0x3e18
-+  __DATA.__data: 0x6fc4
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x3540
-+  __DATA.__bss: 0x3570
-   __DATA.__common: 0x4
-   __DATA_DIRTY.__objc_data: 0x3520
-   __DATA_DIRTY.__data: 0x50
-
-   - /System/Library/PrivateFrameworks/CoreNLP.framework/CoreNLP
-   - /System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/CoreSceneUnderstanding
-   - /System/Library/PrivateFrameworks/DuetActivityScheduler.framework/DuetActivityScheduler
 -  - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
-   - /System/Library/PrivateFrameworks/IntelligencePlatformLibrary.framework/IntelligencePlatformLibrary
-   - /System/Library/PrivateFrameworks/Leo.framework/Leo
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 29130
--  Symbols:   64747
+-  Symbols:   48383
 -  CStrings:  21775
 +  Functions: 29167
-+  Symbols:   64866
++  Symbols:   48448
 +  CStrings:  21830
- 
 Symbols:
 + +[PLDuplicateMergeModelProperties _additionalAssetAttributesMergePropertyMapWithMode:]
 + +[PLModelMigrationActionUtility processManagedObjectWithAction:managedObjectContext:fetchRequest:useObjectIDResumeMarker:enumerateAndSaveOptions:error:processingBlock:]
@@ -1342,71 +1260,6 @@ Symbols:
 + ___block_descriptor_88_e8_32s40s48s56bs64r72r_e5_v8?0ls32l8s40l8s48l8r64l8r72l8s56l8
 + __assetHasPositiveUrbanSceneClassificationWithFetchHelper:sceneTaxonomy:trendsSceneModel:.onceToken
 + __assetHasPositiveUrbanSceneClassificationWithFetchHelper:sceneTaxonomy:trendsSceneModel:.urbanSceneNames
-+ _objc_msgSend$_addCurationPropertiesForAsset:withIndexingContext:fetchHelper:
-+ _objc_msgSend$_additionalAssetAttributesMergePropertyMapWithMode:
-+ _objc_msgSend$_assetHasPositiveSceneClassification:withFetchHelper:threshold:
-+ _objc_msgSend$_assetHasPositiveUrbanSceneClassificationWithFetchHelper:sceneTaxonomy:trendsSceneModel:
-+ _objc_msgSend$_assetHasProminentTorsoWithFetchHelper:
-+ _objc_msgSend$_assetsByPrimitiveIndexForObjectIDs:
-+ _objc_msgSend$_avoidAssetForAmbientScene:withFetchHelper:minSceneAnalysisVersion:minFaceAnalysisVersion:
-+ _objc_msgSend$_avoidAssetForImageCuration:minSceneAnalysisVersion:minFaceAnalysisVersion:
-+ _objc_msgSend$_cityscapeQualityCurationPropertiesForAsset:withIndexingContext:fetchHelper:aestheticsModel:wallpaperScoreModel:trendsSceneModel:
-+ _objc_msgSend$_directUploadBatches:inLibrary:timeout:label:completionHandler:
-+ _objc_msgSend$_directUploadUnpushedAssetsWithCompletionHandler:
-+ _objc_msgSend$_directUploadUnpushedPostsAndCommentsWithCompletionHandler:
-+ _objc_msgSend$_finalizationDecisionForAsset:returnedImageIsRender:
-+ _objc_msgSend$_imageQualityCurationPropertiesForAsset:withFetchHelper:aestheticsModel:wallpaperScoreModel:
-+ _objc_msgSend$_isAuthorizedAssetUUID:inManagedObjectContext:
-+ _objc_msgSend$_isRenderFromMetadata:
-+ _objc_msgSend$_landscapeQualityCurationPropertiesForAsset:withFetchHelper:aestheticsModel:wallpaperScoreModel:cityNatureModel:
-+ _objc_msgSend$_managedObjectIDFromObjectIDURL:inLibrary:error:
-+ _objc_msgSend$_petQualityCurationPropertiesForAsset:withFetchHelper:aestheticsModel:wallpaperScoreModel:
-+ _objc_msgSend$_postAsyncNotificationForAccessRequestApprovedForSharedCollectionWithScopeIdentifier:uuid:title:notificationDeliveryDate:transaction:
-+ _objc_msgSend$_updateThumbnailAndPreviewDataFromCPLMomentShare:inPhotoLibrary:
-+ _objc_msgSend$_writeTemporarySourceFileForImageData:
-+ _objc_msgSend$accessDeniedError
-+ _objc_msgSend$addPreviewImageData:
-+ _objc_msgSend$aestheticScoreThresholdToBeAestheticallyPrettyGood
-+ _objc_msgSend$assetsSinceLastDirectUpload
-+ _objc_msgSend$authorizedAssetForObjectID:inLibrary:error:
-+ _objc_msgSend$authorizedAssetForObjectID:relationshipKeyPathsForPrefetching:inLibrary:error:
-+ _objc_msgSend$authorizedAssetForObjectIDURL:inLibrary:error:
-+ _objc_msgSend$authorizedAssetForObjectIDURL:relationshipKeyPathsForPrefetching:inLibrary:error:
-+ _objc_msgSend$authorizedAssetForUUID:inLibrary:error:
-+ _objc_msgSend$authorizedAssetForUUID:relationshipKeyPathsForPrefetching:inLibrary:error:
-+ _objc_msgSend$authorizedResourceForObjectID:inLibrary:error:
-+ _objc_msgSend$authorizedResourceForObjectIDURL:inLibrary:error:
-+ _objc_msgSend$catNode
-+ _objc_msgSend$cityscapeNode
-+ _objc_msgSend$clearPreviewImageDatas
-+ _objc_msgSend$directUploadChunkSize
-+ _objc_msgSend$directUploaderForTesting
-+ _objc_msgSend$dogNode
-+ _objc_msgSend$imageBlastDoorConversionOptions
-+ _objc_msgSend$initForSharedCollectionAccessRequestApprovedWithScopeIdentifier:uuid:title:
-+ _objc_msgSend$initWithLibraryServicesManager:connectionAuthorization:lazyResourceDownloader:
-+ _objc_msgSend$initWithLibraryServicesManager:connectionAuthorization:shellObject:clientPid:
-+ _objc_msgSend$isApprovedRequester
-+ _objc_msgSend$isMomentShareAsset
-+ _objc_msgSend$landscapeNode
-+ _objc_msgSend$limitedLibraryMode
-+ _objc_msgSend$natureNode
-+ _objc_msgSend$nodeForSignalIdentifier:
-+ _objc_msgSend$nodeRefForName:
-+ _objc_msgSend$petNode
-+ _objc_msgSend$postNotificationForAccessRequestApprovedForSharedCollectionWithScopeIdentifier:uuid:title:library:notificationDeliveryDate:
-+ _objc_msgSend$previewImageDataAtIndex:
-+ _objc_msgSend$previewImageDatasCount
-+ _objc_msgSend$processManagedObjectWithAction:managedObjectContext:fetchRequest:useObjectIDResumeMarker:enumerateAndSaveOptions:error:processingBlock:
-+ _objc_msgSend$sanitizedImageDataForImageData:maximumLongSideLength:imageConversionServiceClient:
-+ _objc_msgSend$sanitizedPreviewDataForPreviewData:imageConversionServiceClient:
-+ _objc_msgSend$setAssetsSinceLastDirectUpload:
-+ _objc_msgSend$setDirectUploadChunkSize:
-+ _objc_msgSend$setIsApprovedRequester:
-+ _objc_msgSend$shouldRefreshAllAfterBatch
-+ _objc_msgSend$sourceObjectID
-+ _objc_msgSend$targetObjectID
-+ _objc_msgSend$upgradeClient
 + _shouldTryFastPathWithLibraryBundle:.mainBundleIdentifierIsEligibleForFastPath
 - +[PLDuplicateMergeModelProperties _additionalAssetAttributesMergePropertyMap]
 - -[PLAbstractLibraryServicesManagerService initWithLibraryServicesManager:]
@@ -2553,17 +2406,6 @@ Symbols:
 - ___block_descriptor_72_e8_32s40bs48r56r64r_e17_v16?0"NSArray"8lr48l8r56l8r64l8s32l8s40l8
 - ___block_descriptor_88_e8_32s40s48s56bs64r72r_e5_v8?0ls32l8s40l8r64l8r72l8s48l8s56l8
 - ___swift_allocate_boxed_opaque_existential_1
-- _objc_msgSend$_addCurationPropertiesForAsset:withFetchHelper:
-- _objc_msgSend$_additionalAssetAttributesMergePropertyMap
-- _objc_msgSend$_assetNeedsFinalization:isRender:
-- _objc_msgSend$_directUploadUnpushedRecordsWithCompletionHandler:
-- _objc_msgSend$_fetchAssetsInRangeOfIndexes:context:
-- _objc_msgSend$_imageQualityCurationPropertiesForAsset:aestheticsModel:wallpaperScoreModel:
-- _objc_msgSend$initWithLibraryServicesManager:lazyResourceDownloader:
-- _objc_msgSend$initWithLibraryServicesManager:shellObject:trustedCallerBundleID:clientPid:
-- _objc_msgSend$initWithLibraryServicesManager:trustedCallerBundleID:
-- _objc_msgSend$isRenderFromMetadata:
-- _objc_msgSend$registerForNoOpURLSessionLaunchEvents
 - _shouldTryFastPathWithLibraryBundle:.cameraOrPhotosApp
 - _swift_allocBox
 - _symbolic So31PLURLSessionLaunchEventListenerCXDXMT

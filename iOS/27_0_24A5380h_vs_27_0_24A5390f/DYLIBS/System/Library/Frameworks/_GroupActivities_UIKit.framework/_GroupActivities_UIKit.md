@@ -2,68 +2,26 @@
 
 > `/System/Library/Frameworks/_GroupActivities_UIKit.framework/_GroupActivities_UIKit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist2`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__objc_stublist`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x60d40` | `0x60ef4` | **`+0x1b4`** |
+| `__TEXT.__swift5_typeref` | `0x44c0` | `0x460a` | **`+0x14a`** |
+| `__DATA.__data` | `0x18d8` | `0x1918` | **`+0x40`** |
+| `__TEXT.__const` | `0x4098` | `0x40b8` | **`+0x20`** |
+
+### Other Changes
 
 ```diff
 
 -300.100.1.0.0
--  __TEXT.__text: 0x60d40
 +301.100.1.0.0
-+  __TEXT.__text: 0x60ef4
-   __TEXT.__objc_methlist: 0xacc
--  __TEXT.__const: 0x4098
--  __TEXT.__swift5_typeref: 0x44c0
-+  __TEXT.__const: 0x40b8
-+  __TEXT.__swift5_typeref: 0x460a
-   __TEXT.__swift5_capture: 0x6d4
-   __TEXT.__cstring: 0xa81
-   __TEXT.__constg_swiftt: 0x20a0
 
-   __AUTH_CONST.__auth_got: 0x1450
-   __AUTH.__objc_data: 0x318
-   __AUTH.__data: 0x1b0
--  __DATA.__data: 0x18d8
-+  __DATA.__data: 0x1918
-   __DATA.__objc_stublist: 0x20
-   __DATA.__bss: 0x1848
-   __DATA.__common: 0x308
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2822
--  Symbols:   7055
+-  Symbols:   6907
 +  Functions: 2824
-+  Symbols:   7075
-   CStrings:  135
- 
++  Symbols:   6927
 Symbols:
 + _$s22_GroupActivities_UIKit13MoreReactionsV4bodyQrvg7SwiftUI12TupleContentVyAE4ViewPAEE7focusedyQrAE10FocusStateV7BindingVySb_GFQOyAiEE5frame5width6height9alignmentQr12CoreGraphics7CGFloatVSg_AwE9AlignmentVtFQOyAA20CustomReactionPickerV_Qo__Qo__AiEE11hoverEffect_9isEnabledQrqd___SbtAE0X11HoverEffectRd__lFQOyAiEE12contentShape__6eoFillQrAE0J10ShapeKindsV_qd__SbtAE5ShapeRd__lFQOyAiEEA5__A6_Qrqd___SbtAEA9_Rd__lFQOyAiEE4tintyQrAE5ColorVSgFQOyAE6ButtonVyAiEE10background_2in9fillStyleQrqd___qd_0_AE9FillStyleVtAE10ShapeStyleRd__AE15InsettableShapeRd_0_r0_lFQOyAiEE7paddingyQrAVFQOyAE5ImageV_Qo__AEA21_PAEE7opacityyQrSdFQOyAE22HierarchicalShapeStyleV_Qo_AE6CircleVQo_G_Qo__A33_Qo__A33_Qo__AE20HighlightHoverEffectVQo_QPGyXEfU_
 + _$s22_GroupActivities_UIKit13MoreReactionsV4bodyQrvg7SwiftUI12TupleContentVyAE4ViewPAEE7focusedyQrAE10FocusStateV7BindingVySb_GFQOyAiEE5frame5width6height9alignmentQr12CoreGraphics7CGFloatVSg_AwE9AlignmentVtFQOyAA20CustomReactionPickerV_Qo__Qo__AiEE11hoverEffect_9isEnabledQrqd___SbtAE0X11HoverEffectRd__lFQOyAiEE12contentShape__6eoFillQrAE0J10ShapeKindsV_qd__SbtAE5ShapeRd__lFQOyAiEEA5__A6_Qrqd___SbtAEA9_Rd__lFQOyAiEE4tintyQrAE5ColorVSgFQOyAE6ButtonVyAiEE10background_2in9fillStyleQrqd___qd_0_AE9FillStyleVtAE10ShapeStyleRd__AE15InsettableShapeRd_0_r0_lFQOyAiEE7paddingyQrAVFQOyAE5ImageV_Qo__AEA21_PAEE7opacityyQrSdFQOyAE22HierarchicalShapeStyleV_Qo_AE6CircleVQo_G_Qo__A33_Qo__A33_Qo__AE20HighlightHoverEffectVQo_QPGyXEfU_A34_yXEfU0_

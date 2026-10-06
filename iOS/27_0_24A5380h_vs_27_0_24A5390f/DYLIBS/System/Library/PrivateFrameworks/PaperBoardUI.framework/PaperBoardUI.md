@@ -2,70 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/PaperBoardUI.framework/PaperBoardUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x77978` | `0x77b54` | **`+0x1dc`** |
+| `__TEXT.__cstring` | `0x7a3d` | `0x7a98` | **`+0x5b`** |
+| `__TEXT.__unwind_info` | `0x2880` | `0x2898` | **`+0x18`** |
+| `__TEXT.__gcc_except_tab` | `0xc20` | `0xc30` | **`+0x10`** |
+| `__DATA.__bss` | `0x470` | `0x478` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -347.102.0.0.0
--  __TEXT.__text: 0x77978
 +350.1.100.0.0
-+  __TEXT.__text: 0x77b54
-   __TEXT.__objc_methlist: 0x970c
-   __TEXT.__const: 0x828
--  __TEXT.__cstring: 0x7a3d
-+  __TEXT.__cstring: 0x7a98
-   __TEXT.__oslogstring: 0x4363
--  __TEXT.__gcc_except_tab: 0xc20
-+  __TEXT.__gcc_except_tab: 0xc30
-   __TEXT.__dlopen_cstrs: 0x1a6
--  __TEXT.__unwind_info: 0x2880
-+  __TEXT.__unwind_info: 0x2898
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __AUTH.__data: 0x8
-   __DATA.__objc_ivar: 0x9b4
-   __DATA.__data: 0x16a0
--  __DATA.__bss: 0x470
-+  __DATA.__bss: 0x478
-   __DATA_DIRTY.__objc_data: 0x50
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 3747
--  Symbols:   8259
+-  Symbols:   6086
 -  CStrings:  1404
 +  Functions: 3751
-+  Symbols:   8263
++  Symbols:   6090
 +  CStrings:  1406
- 
 Symbols:
 + GCC_except_table122
 + GCC_except_table129

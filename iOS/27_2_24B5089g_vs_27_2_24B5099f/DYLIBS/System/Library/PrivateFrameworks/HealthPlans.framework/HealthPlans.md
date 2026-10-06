@@ -2,91 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/HealthPlans.framework/HealthPlans`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xafe40` | `0xb8ae0` | **`+0x8ca0`** |
+| `__DATA.__bss` | `0x17250` | `0x18450` | **`+0x1200`** |
+| `__TEXT.__const` | `0xbcb6` | `0xc5d6` | **`+0x920`** |
+| `__TEXT.__eh_frame` | `0x4b40` | `0x51a0` | **`+0x660`** |
+| `__AUTH_CONST.__const` | `0x5d30` | `0x6268` | **`+0x538`** |
+| `__TEXT.__oslogstring` | `0x626` | `0x8f6` | **`+0x2d0`** |
+| `__TEXT.__unwind_info` | `0x3120` | `0x3360` | **`+0x240`** |
+| `__TEXT.__swift5_fieldmd` | `0x262c` | `0x27dc` | **`+0x1b0`** |
+| `__TEXT.__swift5_reflstr` | `0x1821` | `0x19c1` | **`+0x1a0`** |
+| `__AUTH.__data` | `0x1a10` | `0x1b88` | **`+0x178`** |
+| `__TEXT.__constg_swiftt` | `0x2024` | `0x215c` | **`+0x138`** |
+| `__TEXT.__swift5_typeref` | `0x17bd` | `0x18b1` | **`+0xf4`** |
+| `__DATA.__data` | `0x2808` | `0x28e0` | **`+0xd8`** |
+| `__AUTH.__objc_data` | `0x160` | `0xa0` | **`-0xc0`** |
+| `__TEXT.__swift5_proto` | `0xbc8` | `0xc54` | **`+0x8c`** |
+| `__TEXT.__objc_methlist` | `0xb4` | `0x2c` | **`-0x88`** |
+| `__TEXT.__swift5_capture` | `0xe4` | `0x144` | **`+0x60`** |
+| `__AUTH_CONST.__objc_const` | `0x650` | `0x610` | **`-0x40`** |
+| `__TEXT.__swift_as_cont` | `0x1fc` | `0x238` | **`+0x3c`** |
+| `__TEXT.__swift_as_entry` | `0x194` | `0x1cc` | **`+0x38`** |
+| `__TEXT.__swift5_assocty` | `0x390` | `0x3c0` | **`+0x30`** |
+| `__TEXT.__swift_as_ret` | `0x168` | `0x190` | **`+0x28`** |
+| `__TEXT.__swift5_types` | `0x330` | `0x354` | **`+0x24`** |
+| `__AUTH_CONST.__auth_got` | `0xf90` | `0xfa8` | **`+0x18`** |
+| `__DATA_CONST.__objc_protolist` | `0x20` | `0x10` | **`-0x10`** |
+| `__TEXT.__cstring` | `0x1576` | `0x1586` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x40` | `0x38` | **`-0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x10` | `0x8` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x178` | `0x170` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.45.2.4
--  __TEXT.__text: 0xa9214
--  __TEXT.__objc_methlist: 0xb4
--  __TEXT.__const: 0xbcb6
--  __TEXT.__cstring: 0x1576
--  __TEXT.__swift5_typeref: 0x17bd
--  __TEXT.__swift5_fieldmd: 0x262c
--  __TEXT.__constg_swiftt: 0x2024
--  __TEXT.__swift5_reflstr: 0x1821
 +7027.1.54.2.3
-+  __TEXT.__text: 0xb169c
-+  __TEXT.__objc_methlist: 0x2c
-+  __TEXT.__const: 0xc5d6
-+  __TEXT.__cstring: 0x1586
-+  __TEXT.__constg_swiftt: 0x215c
-+  __TEXT.__swift5_typeref: 0x18b1
-+  __TEXT.__swift5_reflstr: 0x19c1
-+  __TEXT.__swift5_fieldmd: 0x27dc
-   __TEXT.__swift5_builtin: 0x64
--  __TEXT.__swift5_assocty: 0x390
--  __TEXT.__oslogstring: 0x626
-+  __TEXT.__swift5_assocty: 0x3c0
-+  __TEXT.__swift5_proto: 0xc54
-+  __TEXT.__swift5_types: 0x354
-+  __TEXT.__oslogstring: 0x8f6
-   __TEXT.__swift5_protos: 0x40
--  __TEXT.__swift5_proto: 0xbc8
--  __TEXT.__swift5_types: 0x330
-   __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__swift_as_entry: 0x194
--  __TEXT.__swift_as_ret: 0x168
--  __TEXT.__swift_as_cont: 0x1fc
--  __TEXT.__swift5_capture: 0xe4
--  __TEXT.__unwind_info: 0x3e08
--  __TEXT.__eh_frame: 0x4b58
-+  __TEXT.__swift_as_entry: 0x1cc
-+  __TEXT.__swift_as_ret: 0x190
-+  __TEXT.__swift_as_cont: 0x238
-+  __TEXT.__swift5_capture: 0x144
-+  __TEXT.__unwind_info: 0x4118
-+  __TEXT.__eh_frame: 0x51b8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x110
--  __DATA_CONST.__objc_classlist: 0x40
--  __DATA_CONST.__objc_protolist: 0x20
-+  __DATA_CONST.__objc_classlist: 0x38
-+  __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x178
--  __DATA_CONST.__objc_protorefs: 0x10
-+  __DATA_CONST.__objc_selrefs: 0x170
-+  __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x5d30
--  __AUTH_CONST.__objc_const: 0x650
--  __AUTH_CONST.__auth_got: 0xf90
--  __AUTH.__objc_data: 0x160
--  __AUTH.__data: 0x1a10
--  __DATA.__data: 0x2808
-+  __AUTH_CONST.__const: 0x6268
-+  __AUTH_CONST.__objc_const: 0x610
-+  __AUTH_CONST.__auth_got: 0xfa8
-+  __AUTH.__objc_data: 0xa0
-+  __AUTH.__data: 0x1b88
-+  __DATA.__data: 0x28e0
-   __DATA_DIRTY.__data: 0x28
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreLocation.framework/CoreLocation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4349
 -  Symbols:   1004
 -  CStrings:  193
 +  Functions: 4529
 +  Symbols:   1020
 +  CStrings:  205
- 
 Symbols:
 + _OBJC_CLASS_$__HKBehavior
 + __DATA__TtC11HealthPlans28ActionSuggestionAvailability

@@ -2,125 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/CalendarUIKit.framework/CalendarUIKit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_doubleobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x44db8c` | `0x459bd0` | **`+0xc044`** |
+| `__TEXT.__swift5_typeref` | `0x4250e` | `0x42aa6` | **`+0x598`** |
+| `__TEXT.__const` | `0x216a4` | `0x21a84` | **`+0x3e0`** |
+| `__TEXT.__swift5_reflstr` | `0x7de9` | `0x8099` | **`+0x2b0`** |
+| `__AUTH_CONST.__objc_const` | `0x13ad8` | `0x13cf8` | **`+0x220`** |
+| `__DATA_DIRTY.__data` | `0x75e0` | `0x77b8` | **`+0x1d8`** |
+| `__TEXT.__oslogstring` | `0x4c08` | `0x4db8` | **`+0x1b0`** |
+| `__TEXT.__constg_swiftt` | `0xa5bc` | `0xa764` | **`+0x1a8`** |
+| `__TEXT.__unwind_info` | `0xc2e8` | `0xc480` | **`+0x198`** |
+| `__AUTH_CONST.__const` | `0x13ee8` | `0x14070` | **`+0x188`** |
+| `__DATA.__data` | `0xbfc0` | `0xc130` | **`+0x170`** |
+| `__TEXT.__eh_frame` | `0xbf10` | `0xc080` | **`+0x170`** |
+| `__TEXT.__cstring` | `0x284e9` | `0x28619` | **`+0x130`** |
+| `__TEXT.__swift5_fieldmd` | `0x8238` | `0x834c` | **`+0x114`** |
+| `__DATA.__bss` | `0x1e860` | `0x1e940` | **`+0xe0`** |
+| `__TEXT.__objc_methlist` | `0xa660` | `0xa738` | **`+0xd8`** |
+| `__TEXT.__swift5_capture` | `0x449c` | `0x4534` | **`+0x98`** |
+| `__DATA_CONST.__objc_selrefs` | `0x83b0` | `0x8430` | **`+0x80`** |
+| `__AUTH.__objc_data` | `0x768` | `0x7d8` | **`+0x70`** |
+| `__AUTH.__data` | `0x2fd8` | `0x3028` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x3540` | `0x3588` | **`+0x48`** |
+| `__DATA_DIRTY.__objc_data` | `0x4cd8` | `0x4d20` | **`+0x48`** |
+| `__DATA_CONST.__got` | `0x2420` | `0x2460` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x2458` | `0x2488` | **`+0x30`** |
+| `__DATA.__common` | `0xb68` | `0xb90` | **`+0x28`** |
+| `__TEXT.__swift_as_cont` | `0x5ac` | `0x5cc` | **`+0x20`** |
+| `__TEXT.__swift5_assocty` | `0x1900` | `0x1918` | **`+0x18`** |
+| `__TEXT.__swift_as_ret` | `0x230` | `0x23c` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x648` | `0x650` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x284` | `0x28c` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0xf94` | `0xf98` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -1320.0.0.0.0
--  __TEXT.__text: 0x44db8c
--  __TEXT.__objc_methlist: 0xa660
--  __TEXT.__const: 0x216a4
--  __TEXT.__cstring: 0x284e9
--  __TEXT.__oslogstring: 0x4c08
 +1323.0.0.0.0
-+  __TEXT.__text: 0x459bd0
-+  __TEXT.__objc_methlist: 0xa738
-+  __TEXT.__const: 0x21a84
-+  __TEXT.__cstring: 0x28619
-+  __TEXT.__oslogstring: 0x4db8
-   __TEXT.__gcc_except_tab: 0xe74
-   __TEXT.__ustring: 0x204a
-   __TEXT.__dlopen_cstrs: 0x138
--  __TEXT.__constg_swiftt: 0xa5bc
--  __TEXT.__swift5_typeref: 0x4250e
-+  __TEXT.__constg_swiftt: 0xa764
-+  __TEXT.__swift5_typeref: 0x42aa6
-   __TEXT.__swift5_builtin: 0x3c0
--  __TEXT.__swift5_reflstr: 0x7de9
--  __TEXT.__swift5_fieldmd: 0x8238
--  __TEXT.__swift5_assocty: 0x1900
--  __TEXT.__swift5_proto: 0xf94
-+  __TEXT.__swift5_reflstr: 0x8099
-+  __TEXT.__swift5_fieldmd: 0x834c
-+  __TEXT.__swift5_assocty: 0x1918
-+  __TEXT.__swift5_proto: 0xf98
-   __TEXT.__swift5_types: 0x704
--  __TEXT.__swift5_capture: 0x449c
-+  __TEXT.__swift5_capture: 0x4534
-   __TEXT.__swift5_protos: 0x94
--  __TEXT.__swift_as_entry: 0x284
--  __TEXT.__swift_as_ret: 0x230
--  __TEXT.__swift_as_cont: 0x5ac
-+  __TEXT.__swift_as_entry: 0x28c
-+  __TEXT.__swift_as_ret: 0x23c
-+  __TEXT.__swift_as_cont: 0x5cc
-   __TEXT.__swift5_mpenum: 0x28
--  __TEXT.__unwind_info: 0xc2e8
--  __TEXT.__eh_frame: 0xbf10
-+  __TEXT.__unwind_info: 0xc480
-+  __TEXT.__eh_frame: 0xc080
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2458
--  __DATA_CONST.__objc_classlist: 0x648
-+  __DATA_CONST.__const: 0x2488
-+  __DATA_CONST.__objc_classlist: 0x650
-   __DATA_CONST.__objc_catlist: 0xd8
-   __DATA_CONST.__objc_protolist: 0x298
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x83b0
-+  __DATA_CONST.__objc_selrefs: 0x8430
-   __DATA_CONST.__objc_protorefs: 0x130
-   __DATA_CONST.__objc_superrefs: 0x298
-   __DATA_CONST.__objc_arraydata: 0x1d0
--  __DATA_CONST.__got: 0x2420
--  __AUTH_CONST.__const: 0x13ee8
-+  __DATA_CONST.__got: 0x2460
-+  __AUTH_CONST.__const: 0x14070
-   __AUTH_CONST.__cfstring: 0x8d80
--  __AUTH_CONST.__objc_const: 0x13ad8
-+  __AUTH_CONST.__objc_const: 0x13cf8
-   __AUTH_CONST.__objc_intobj: 0x450
-   __AUTH_CONST.__objc_arrayobj: 0xa8
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x3540
--  __AUTH.__objc_data: 0x768
--  __AUTH.__data: 0x2fd8
-+  __AUTH_CONST.__auth_got: 0x3588
-+  __AUTH.__objc_data: 0x7d8
-+  __AUTH.__data: 0x3028
-   __DATA.__objc_ivar: 0x7bc
--  __DATA.__data: 0xbfc0
--  __DATA.__bss: 0x1e860
--  __DATA.__common: 0xb68
--  __DATA_DIRTY.__objc_data: 0x4cd8
--  __DATA_DIRTY.__data: 0x75e0
-+  __DATA.__data: 0xc130
-+  __DATA.__bss: 0x1e940
-+  __DATA.__common: 0xb90
-+  __DATA_DIRTY.__objc_data: 0x4d20
-+  __DATA_DIRTY.__data: 0x77b8
-   __DATA_DIRTY.__bss: 0x1130
-   __DATA_DIRTY.__common: 0x1c8
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 19611
--  Symbols:   14184
+-  Symbols:   10985
 -  CStrings:  2428
 +  Functions: 19792
-+  Symbols:   14221
++  Symbols:   11009
 +  CStrings:  2438
- 
 Symbols:
 + -[CUIKEventEditViewControllerManager applyMagicComposeSnapshot:]
 + -[CUIKEventEditViewControllerManager magicComposeSnapshot]
@@ -183,22 +113,6 @@ Symbols:
 + _keypath_set.208Tm
 + _keypath_set.385Tm
 + _keypath_set.747Tm
-+ _objc_msgSend$addConferenceRooms:
-+ _objc_msgSend$applyMagicComposeSnapshot:
-+ _objc_msgSend$autocorrectionType
-+ _objc_msgSend$isAffectingAvailability
-+ _objc_msgSend$isMagicComposeTitleRewriteEnabled
-+ _objc_msgSend$magicComposeSnapshot
-+ _objc_msgSend$performWithoutAnimation:
-+ _objc_msgSend$reloadInputViews
-+ _objc_msgSend$removeConferenceRooms:
-+ _objc_msgSend$setDate:animated:
-+ _objc_msgSend$setStructuredLocation:preserveConferenceRooms:
-+ _objc_msgSend$systemGray6Color
-+ _objc_msgSend$updateFromReminderFor:suppressMagicComposeRewrite:
-+ _objc_msgSend$updateHideTitleInEditingMode:
-+ _objc_msgSend$willDeselectTab
-+ _objc_msgSend$willSelectTab
 + _symbolic Ig_
 + _symbolic Say_____y______GG Sa13CalendarUIKitAA22MagicComposeDataUpdateORszlE0eF4Type33_E128EC1FAC55654CA3928C8AB58175D8LLO AC
 + _symbolic Si__________y_____y_____yAByAByABy__________GAFGAFG_AByABy_____AFGAFGSgQPGGAFGIegygr_ 13CalendarUIKit21AnyMagicComposeChoiceC 7SwiftUI15ModifiedContentV AD6VStackV AD05TupleJ0V AA05TokenF11FloatingRowV AD14_PaddingLayoutV AD7DividerV
@@ -440,9 +354,6 @@ Symbols:
 - _keypath_set.197Tm
 - _keypath_set.375Tm
 - _keypath_set.730Tm
-- _objc_msgSend$participantWithName:url:
-- _objc_msgSend$setDate:
-- _objc_msgSend$updateFromReminderFor:
 - _symbolic Say_____Gz_Xx 13CalendarUIKit18TravelTimeEstimateV
 - _symbolic Si__________Iegygo_ 13CalendarUIKit21AnyMagicComposeChoiceC AA05TokenF11FloatingRowV
 - _symbolic ________________y_____y______y_____y________________y_____yAFSgG______Qo_QPGGG______Qo_t 7SwiftUI7DividerV 13CalendarUIKit31WidthConstrainedWheelTimePicker33_0A7D733E3AEA907CBC2195CE78FAE885LLV AA4ViewPAAE5sheet11isPresented9onDismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaHRd__lFQO AD04DateI6EditorV0zI7IconRowV AA6HStackV AA12TupleContentV AA4TextV AA6SpacerV AiAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQO AA6ButtonV AA16PlainButtonStyleV AD0I11ZoneChooserV

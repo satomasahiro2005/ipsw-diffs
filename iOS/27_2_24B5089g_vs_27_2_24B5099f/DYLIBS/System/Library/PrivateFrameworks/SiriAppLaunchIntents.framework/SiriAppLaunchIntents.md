@@ -2,62 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/SiriAppLaunchIntents.framework/SiriAppLaunchIntents`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd2268` | `0xd3b28` | **`+0x18c0`** |
+| `__TEXT.__unwind_info` | `0x3c88` | `0x3cf0` | **`+0x68`** |
+| `__TEXT.__swift5_fieldmd` | `0x2514` | `0x2574` | **`+0x60`** |
+| `__TEXT.__swift5_reflstr` | `0x20a7` | `0x20f7` | **`+0x50`** |
+| `__TEXT.__eh_frame` | `0x9280` | `0x92b0` | **`+0x30`** |
+| `__DATA.__data` | `0x1658` | `0x1670` | **`+0x18`** |
+| `__DATA_DIRTY.__data` | `0x20e0` | `0x20f0` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3605.5.1.0.0
--  __TEXT.__text: 0xc751c
 +3605.6.1.0.0
-+  __TEXT.__text: 0xc8d44
-   __TEXT.__objc_methlist: 0x7e8
-   __TEXT.__const: 0x9bc6
-   __TEXT.__cstring: 0x1b1f
-   __TEXT.__swift5_typeref: 0x2986
--  __TEXT.__swift5_fieldmd: 0x2514
-+  __TEXT.__swift5_fieldmd: 0x2574
-   __TEXT.__constg_swiftt: 0x3050
-   __TEXT.__swift5_protos: 0xa4
-   __TEXT.__swift5_proto: 0x690
 
-   __TEXT.__swift_as_entry: 0x514
-   __TEXT.__swift_as_ret: 0x578
-   __TEXT.__swift_as_cont: 0x574
--  __TEXT.__swift5_reflstr: 0x20a7
-+  __TEXT.__swift5_reflstr: 0x20f7
-   __TEXT.__swift5_capture: 0xb64
-   __TEXT.__oslogstring: 0x6453
-   __TEXT.__swift5_assocty: 0x790
-   __TEXT.__swift5_builtin: 0xf0
-   __TEXT.__swift5_mpenum: 0x1c
--  __TEXT.__unwind_info: 0x47a8
--  __TEXT.__eh_frame: 0x9280
-+  __TEXT.__unwind_info: 0x4820
-+  __TEXT.__eh_frame: 0x92b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __AUTH_CONST.__auth_got: 0x1c38
-   __AUTH.__objc_data: 0x1038
-   __AUTH.__data: 0x1dc8
--  __DATA.__data: 0x1658
-+  __DATA.__data: 0x1670
-   __DATA.__common: 0xc0
-   __DATA_DIRTY.__objc_data: 0x3d0
--  __DATA_DIRTY.__data: 0x20e0
-+  __DATA_DIRTY.__data: 0x20f0
-   __DATA_DIRTY.__common: 0x110
-   __DATA_DIRTY.__bss: 0x2900
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5417
 -  Symbols:   1721
 +  Functions: 5473
 +  Symbols:   1743
-   CStrings:  565
- 
 Symbols:
 + _OUTLINED_FUNCTION_227
 + _OUTLINED_FUNCTION_228

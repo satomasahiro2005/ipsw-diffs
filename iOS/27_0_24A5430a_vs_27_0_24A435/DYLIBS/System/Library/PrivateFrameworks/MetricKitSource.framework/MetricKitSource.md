@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MetricKitSource.framework/MetricKitSource`
 
-```diff
+### Section Size Changes
 
- 367.0.0.0.0
--  __TEXT.__text: 0xcf88
-+  __TEXT.__text: 0xcf8c
-   __TEXT.__objc_methlist: 0x76c
-   __TEXT.__const: 0x696
-   __TEXT.__cstring: 0x5b2
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcf88` | `0xcf8c` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_28f4570cc -> sub_2905e40cc : 680 -> 684
+~ sub_28f32b0cc -> sub_28fece0cc : 680 -> 684
 ```

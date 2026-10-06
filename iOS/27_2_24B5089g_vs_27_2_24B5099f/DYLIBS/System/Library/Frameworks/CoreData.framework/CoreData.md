@@ -2,79 +2,36 @@
 
 > `/System/Library/Frameworks/CoreData.framework/CoreData`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x331668` | `0x333678` | **`+0x2010`** |
+| `__TEXT.__swift5_reflstr` | `0x777` | `0x7e7` | **`+0x70`** |
+| `__TEXT.__const` | `0x2e20` | `0x2e60` | **`+0x40`** |
+| `__TEXT.__swift5_fieldmd` | `0xc30` | `0xc6c` | **`+0x3c`** |
+| `__TEXT.__swift5_typeref` | `0x12c6` | `0x12e8` | **`+0x22`** |
+| `__TEXT.__cstring` | `0x3c105` | `0x3c125` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x7800` | `0x7818` | **`+0x18`** |
+| `__DATA.__data` | `0x1660` | `0x1670` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x189c` | `0x18ac` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0x5b0` | `0x5c0` | **`+0x10`** |
+| `__DATA_DIRTY.__objc_ivar` | `0x514` | `0x504` | **`-0x10`** |
+| `__AUTH_CONST.__const` | `0x2dd8` | `0x2de0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1633.0.0.0.0
--  __TEXT.__text: 0x32a590
 +1634.0.0.0.0
-+  __TEXT.__text: 0x32c530
-   __TEXT.__objc_methlist: 0x10958
--  __TEXT.__const: 0x2e20
-+  __TEXT.__const: 0x2e60
-   __TEXT.__constg_swiftt: 0x9d8
--  __TEXT.__swift5_typeref: 0x12c6
-+  __TEXT.__swift5_typeref: 0x12e8
-   __TEXT.__swift5_builtin: 0x12c
--  __TEXT.__swift5_reflstr: 0x777
--  __TEXT.__swift5_fieldmd: 0xc30
-+  __TEXT.__swift5_reflstr: 0x7e7
-+  __TEXT.__swift5_fieldmd: 0xc6c
-   __TEXT.__swift5_assocty: 0x230
-   __TEXT.__swift5_proto: 0xc0
-   __TEXT.__swift5_types: 0xd4
-   __TEXT.__swift5_types2: 0x8
-   __TEXT.__swift5_capture: 0x340
--  __TEXT.__cstring: 0x3c105
-+  __TEXT.__cstring: 0x3c125
-   __TEXT.__swift_as_entry: 0xc
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x2c
 
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__gcc_except_tab: 0x188cc
-   __TEXT.__oslogstring: 0x368af
--  __TEXT.__unwind_info: 0x8e10
-+  __TEXT.__unwind_info: 0x8e38
-   __TEXT.__eh_frame: 0x9d0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_superrefs: 0xbb8
-   __DATA_CONST.__objc_arraydata: 0x8870
-   __DATA_CONST.__got: 0xca0
--  __AUTH_CONST.__const: 0x2dd8
-+  __AUTH_CONST.__const: 0x2de0
-   __AUTH_CONST.__cfstring: 0x1fe00
-   __AUTH_CONST.__objc_const: 0x25e10
-   __AUTH_CONST.__objc_dictobj: 0x26c0
-
-   __AUTH_CONST.__auth_got: 0x17d8
-   __AUTH.__objc_data: 0x2e78
-   __AUTH.__data: 0x1e8
--  __DATA.__objc_ivar: 0x189c
--  __DATA.__data: 0x1660
-+  __DATA.__objc_ivar: 0x18ac
-+  __DATA.__data: 0x1670
-   __DATA.__common: 0x658
--  __DATA_DIRTY.__objc_ivar: 0x514
-+  __DATA_DIRTY.__objc_ivar: 0x504
-   __DATA_DIRTY.__objc_data: 0x6828
--  __DATA_DIRTY.__data: 0x5b0
-+  __DATA_DIRTY.__data: 0x5c0
-   __DATA_DIRTY.__bss: 0x6e8
-   __DATA_DIRTY.__common: 0x178
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 9347
 -  Symbols:   17626
 -  CStrings:  8342
 +  Functions: 9361
 +  Symbols:   17659
 +  CStrings:  8343
- 
 Symbols:
 + -[NSSQLEntity isReadOnlyFetchEntity]
 + -[NSSQLFetchRequestContext fetchPlan]

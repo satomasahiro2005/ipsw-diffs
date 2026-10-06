@@ -2,52 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/ANECompiler.framework/ANECompiler`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x213090` | `0x215b00` | **`+0x2a70`** |
+| `__TEXT.__text` | `0x1c65678` | `0x1c67ad8` | **`+0x2460`** |
+| `__TEXT.__const` | `0xc602e` | `0xc6cbe` | **`+0xc90`** |
+| `__TEXT.__gcc_except_tab` | `0xd6954` | `0xd6bf4` | **`+0x2a0`** |
+| `__AUTH_CONST.__const` | `0xb2520` | `0xb2740` | **`+0x220`** |
+| `__TEXT.__unwind_info` | `0x68718` | `0x68808` | **`+0xf0`** |
+| `__TEXT.__oslogstring` | `0x20958` | `0x2098a` | **`+0x32`** |
+| `__DATA_DIRTY.__bss` | `0x20c8` | `0x20f8` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x1219e6` | `0x1219fa` | **`+0x14`** |
+
+### Other Changes
+
 ```diff
 
- 10.26.4.0.0
--  __TEXT.__text: 0x1c65678
-+  __TEXT.__text: 0x1c67ad8
-   __TEXT.__init_offsets: 0x8
--  __TEXT.__const: 0xc602e
--  __TEXT.__cstring: 0x1219e6
--  __TEXT.__oslogstring: 0x20958
--  __TEXT.__gcc_except_tab: 0xd6954
--  __TEXT.__unwind_info: 0x68718
-+  __TEXT.__const: 0xc6cbe
-+  __TEXT.__cstring: 0x1219fa
-+  __TEXT.__oslogstring: 0x2098a
-+  __TEXT.__gcc_except_tab: 0xd6bf4
-+  __TEXT.__unwind_info: 0x68808
-   __TEXT.__eh_frame: 0x2bdc
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x55e0
-   __DATA_CONST.__weak_got: 0x18
-   __DATA_CONST.__got: 0x1f0
--  __AUTH_CONST.__const: 0xb2520
-+  __AUTH_CONST.__const: 0xb2740
-   __AUTH_CONST.__cfstring: 0xa000
-   __AUTH_CONST.__weak_auth_got: 0x50
-   __AUTH_CONST.__auth_got: 0x1248
-
-   __DATA.__crash_info: 0x148
-   __DATA.__common: 0x2910
-   __DATA_DIRTY.__data: 0x80
--  __DATA_DIRTY.__bss: 0x20c8
-+  __DATA_DIRTY.__bss: 0x20f8
-   __DATA_DIRTY.__common: 0x58
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libncurses.5.4.dylib
 -  Functions: 122721
 -  Symbols:   160458
 -  CStrings:  27384
 +  Functions: 122782
 +  Symbols:   160538
 +  CStrings:  27389
- 
 Symbols:
 + _OUTLINED_FUNCTION_448
 + _OUTLINED_FUNCTION_469

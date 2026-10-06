@@ -2,18 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/RemoteManagement.framework/remotemanagementd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8b1dc` | `0x8b1d4` | **`-0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 624.2.3.0.0
--  __TEXT.__text: 0x8b1dc
-+  __TEXT.__text: 0x8b1d4
-   __TEXT.__auth_stubs: 0x870
-   __TEXT.__objc_stubs: 0xc3a0
-   __TEXT.__objc_methlist: 0x4a28
+```text
 Functions:
 ~ sub_100088390 : 100 -> 104
 ~ sub_1000883f4 -> sub_1000883f8 : 88 -> 92

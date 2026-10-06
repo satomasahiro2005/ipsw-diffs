@@ -2,44 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/CoreNLP.framework/CoreNLP`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0xfc864
-+  __TEXT.__text: 0xfc26c
-   __TEXT.__objc_methlist: 0x1b8
-   __TEXT.__const: 0x3320
-   __TEXT.__gcc_except_tab: 0xf804
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfc864` | `0xfc26c` | **`-0x5f8`** |
+| `__TEXT.__unwind_info` | `0x65e0` | `0x65e8` | **`+0x8`** |
 
-   __TEXT.__cstring: 0xa7a5
-   __TEXT.__dlopen_cstrs: 0x181
-   __TEXT.__oslogstring: 0xb59
--  __TEXT.__unwind_info: 0x65e0
-+  __TEXT.__unwind_info: 0x65e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__cstring : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
+### Other Changes
+
+```text
 Functions:
 ~ __ZN7CoreNLP19quoteStatusForTokenEPK10__CFString7CFRangePNS_17NLAttributedTokenEPi : 640 -> 644
 ~ __ZN7CoreNLP13WordEmbedding19getAverageEmbeddingERKNSt3__16vectorINS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS6_IS8_EEEERNS2_IfNS6_IfEEEE : 668 -> 660
@@ -117,5 +89,4 @@ Functions:
 ~ __ZN6google8protobuf8internal16WireFormatParserINS1_28UnknownFieldLiteParserHelperEEEPKcRT_S5_PNS1_12ParseContextE : 248 -> 252
 ~ __ZN6google8protobuf8internal11VarintParseIyEEPKcS4_PT_ : 124 -> 128
 ~ __ZN6google8protobuf8internal16ReadSizeFallbackEPKcj : 120 -> 124
-
 ```

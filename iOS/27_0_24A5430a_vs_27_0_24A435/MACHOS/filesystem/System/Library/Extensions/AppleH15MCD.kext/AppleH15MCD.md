@@ -2,23 +2,22 @@
 
 > `/System/Library/Extensions/AppleH15MCD.kext/AppleH15MCD`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x13410` | `0x138e4` | **`+0x4d4`** |
+
+### Same-size Content Changes
 
 - `__DATA.__data`
+- `__DATA_CONST.__const`
 - `__DATA_CONST.__mod_init_func`
 - `__DATA_CONST.__mod_term_func`
-- `__DATA_CONST.__const`
 
-```diff
+### Other Changes
 
-   __TEXT.__cstring: 0x8a1d
-   __TEXT.__const: 0x160
-   __TEXT.__os_log: 0x1198
--  __TEXT_EXEC.__text: 0x13410
-+  __TEXT_EXEC.__text: 0x138e4
-   __TEXT_EXEC.__auth_stubs: 0x490
-   __DATA.__data: 0x12f68
-   __DATA.__common: 0x108
+```text
 Functions:
 ~ __ZN10AppleH15IO9MetaClassC1Ev : 72 -> 76
 ~ __ZN10AppleH15IOC2EPK11OSMetaClass : 52 -> 56

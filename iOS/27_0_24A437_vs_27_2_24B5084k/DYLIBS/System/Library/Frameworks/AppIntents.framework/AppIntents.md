@@ -2,111 +2,64 @@
 
 > `/System/Library/Frameworks/AppIntents.framework/AppIntents`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4f8740` | `0x515290` | **`+0x1cb50`** |
+| `__AUTH_CONST.__const` | `0x26478` | `0x28c30` | **`+0x27b8`** |
+| `__TEXT.__eh_frame` | `0x30ce4` | `0x31d6c` | **`+0x1088`** |
+| `__TEXT.__swift5_capture` | `0x6320` | `0x71f8` | **`+0xed8`** |
+| `__TEXT.__const` | `0x357b8` | `0x35dc0` | **`+0x608`** |
+| `__DATA.__bss` | `0x3fa30` | `0x40030` | **`+0x600`** |
+| `__TEXT.__oslogstring` | `0x7148` | `0x7722` | **`+0x5da`** |
+| `__TEXT.__unwind_info` | `0x175b8` | `0x17a90` | **`+0x4d8`** |
+| `__TEXT.__swift5_typeref` | `0x13663` | `0x1391d` | **`+0x2ba`** |
+| `__DATA.__data` | `0xf3e0` | `0xf630` | **`+0x250`** |
+| `__TEXT.__constg_swiftt` | `0x138cc` | `0x13ab8` | **`+0x1ec`** |
+| `__TEXT.__swift5_fieldmd` | `0xb8f8` | `0xba74` | **`+0x17c`** |
+| `__TEXT.__objc_methlist` | `0x1788` | `0x18d8` | **`+0x150`** |
+| `__TEXT.__cstring` | `0x6ca7` | `0x6de2` | **`+0x13b`** |
+| `__DATA_CONST.__objc_selrefs` | `0x24f8` | `0x25f0` | **`+0xf8`** |
+| `__TEXT.__swift5_reflstr` | `0x8b6c` | `0x8c5c` | **`+0xf0`** |
+| `__TEXT.__swift_as_cont` | `0x2680` | `0x2754` | **`+0xd4`** |
+| `__AUTH.__data` | `0x9238` | `0x91a8` | **`-0x90`** |
+| `__AUTH_CONST.__auth_got` | `0x2458` | `0x24c8` | **`+0x70`** |
+| `__DATA_CONST.__const` | `0x1768` | `0x17d8` | **`+0x70`** |
+| `__TEXT.__swift_as_ret` | `0x1abc` | `0x1b2c` | **`+0x70`** |
+| `__AUTH.__objc_data` | `0x8c0` | `0x910` | **`+0x50`** |
+| `__AUTH_CONST.__objc_const` | `0x5538` | `0x5580` | **`+0x48`** |
+| `__DATA_CONST.__got` | `0x1830` | `0x1870` | **`+0x40`** |
+| `__DATA_DIRTY.__data` | `0x45a0` | `0x45e0` | **`+0x40`** |
+| `__TEXT.__swift_as_entry` | `0x17d0` | `0x1810` | **`+0x40`** |
+| `__TEXT.__swift5_assocty` | `0x5290` | `0x52c0` | **`+0x30`** |
+| `__TEXT.__swift5_proto` | `0x29ac` | `0x29dc` | **`+0x30`** |
+| `__TEXT.__gcc_except_tab` | `0x174` | `0x19c` | **`+0x28`** |
+| `__TEXT.__swift5_builtin` | `0x5f0` | `0x618` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x260` | `0x280` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0xe54` | `0xe6c` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x6c` | `0x7c` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `0x4e0` | `0x4f0` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x250` | `0x248` | **`-0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0xf8` | `0x100` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x60` | `0x68` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x1f0` | `0x1f8` | **`+0x8`** |
+| `__DATA.__common` | `0x310` | `0x309` | **`-0x7`** |
+| `__TEXT.__swift5_types2` | `—` | `0x4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -301.0.51.1.104
--  __TEXT.__text: 0x4b2d50
--  __TEXT.__objc_methlist: 0x1788
 +301.1.9.1.101
-+  __TEXT.__text: 0x4ce1a0
-+  __TEXT.__objc_methlist: 0x18d8
-   __TEXT.__dlopen_cstrs: 0xf7
--  __TEXT.__const: 0x357b8
--  __TEXT.__constg_swiftt: 0x138cc
--  __TEXT.__swift5_typeref: 0x13663
--  __TEXT.__swift5_reflstr: 0x8b6c
--  __TEXT.__swift5_fieldmd: 0xb8f8
--  __TEXT.__swift5_builtin: 0x5f0
--  __TEXT.__swift5_assocty: 0x5290
--  __TEXT.__swift5_proto: 0x29ac
--  __TEXT.__swift5_types: 0xe54
--  __TEXT.__swift5_protos: 0x4e0
--  __TEXT.__swift_as_entry: 0x17d0
--  __TEXT.__swift_as_cont: 0x2680
--  __TEXT.__oslogstring: 0x7148
--  __TEXT.__swift_as_ret: 0x1abc
--  __TEXT.__cstring: 0x6ca7
--  __TEXT.__swift5_mpenum: 0x1f0
--  __TEXT.__swift5_capture: 0x6320
--  __TEXT.__gcc_except_tab: 0x174
--  __TEXT.__unwind_info: 0x1b7e8
--  __TEXT.__eh_frame: 0x30cfc
-+  __TEXT.__const: 0x35dc0
-+  __TEXT.__constg_swiftt: 0x13ab8
-+  __TEXT.__swift5_typeref: 0x1391d
-+  __TEXT.__swift5_reflstr: 0x8c5c
-+  __TEXT.__swift5_fieldmd: 0xba74
-+  __TEXT.__swift5_builtin: 0x618
-+  __TEXT.__swift5_assocty: 0x52c0
-+  __TEXT.__swift5_proto: 0x29dc
-+  __TEXT.__swift5_types: 0xe6c
-+  __TEXT.__swift5_protos: 0x4f0
-+  __TEXT.__swift_as_entry: 0x1810
-+  __TEXT.__swift_as_cont: 0x2754
-+  __TEXT.__oslogstring: 0x7722
-+  __TEXT.__swift_as_ret: 0x1b2c
-+  __TEXT.__cstring: 0x6de2
-+  __TEXT.__swift5_mpenum: 0x1f8
-+  __TEXT.__swift5_capture: 0x71f8
-+  __TEXT.__swift5_types2: 0x4
-+  __TEXT.__gcc_except_tab: 0x19c
-+  __TEXT.__unwind_info: 0x1ba28
-+  __TEXT.__eh_frame: 0x31d84
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1768
--  __DATA_CONST.__objc_classlist: 0x250
-+  __DATA_CONST.__const: 0x17d8
-+  __DATA_CONST.__objc_classlist: 0x248
-   __DATA_CONST.__objc_catlist: 0x8
--  __DATA_CONST.__objc_protolist: 0xf8
-+  __DATA_CONST.__objc_protolist: 0x100
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x24f8
--  __DATA_CONST.__objc_protorefs: 0x60
-+  __DATA_CONST.__objc_selrefs: 0x25f0
-+  __DATA_CONST.__objc_protorefs: 0x68
-   __DATA_CONST.__objc_superrefs: 0x38
--  __DATA_CONST.__got: 0x1830
--  __AUTH_CONST.__const: 0x26478
--  __AUTH_CONST.__cfstring: 0x260
--  __AUTH_CONST.__objc_const: 0x5538
--  __AUTH_CONST.__auth_got: 0x2458
--  __AUTH.__objc_data: 0x8c0
--  __AUTH.__data: 0x9238
--  __DATA.__objc_ivar: 0x6c
--  __DATA.__data: 0xf3e0
--  __DATA.__common: 0x310
-+  __DATA_CONST.__got: 0x1870
-+  __AUTH_CONST.__const: 0x28c30
-+  __AUTH_CONST.__cfstring: 0x280
-+  __AUTH_CONST.__objc_const: 0x5580
-+  __AUTH_CONST.__auth_got: 0x24c8
-+  __AUTH.__objc_data: 0x910
-+  __AUTH.__data: 0x91a8
-+  __DATA.__objc_ivar: 0x7c
-+  __DATA.__data: 0xf630
-+  __DATA.__common: 0x309
-   __DATA_DIRTY.__objc_data: 0x4e8
--  __DATA_DIRTY.__data: 0x45a0
-+  __DATA_DIRTY.__data: 0x45e0
-   __DATA_DIRTY.__bss: 0x8180
-   __DATA_DIRTY.__common: 0x200
-   - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 36463
--  Symbols:   9241
+-  Functions: 36461
+-  Symbols:   8166
 -  CStrings:  1222
-+  Functions: 37067
-+  Symbols:   9303
++  Functions: 37069
++  Symbols:   8208
 +  CStrings:  1247
- 
 Symbols:
 + +[LNProcessInstanceRegistryClient _retryDelayForAttempt:]
 + +[LNProcessInstanceRegistryClient _shouldAttemptRetryForAttempt:]
@@ -207,36 +160,6 @@ Symbols:
 + _dispatch_assert_queue$V2
 + _dispatch_time
 + _get_enum_tag_for_layout_string 10AppIntents17MigrationValue_v1V7StorageOyx_G
-+ _objc_msgSend$_canRegisterWithError:
-+ _objc_msgSend$_handleInterruptionForConnectionGeneration:
-+ _objc_msgSend$_handleInvalidationForConnectionGeneration:
-+ _objc_msgSend$_makeXPCConnection
-+ _objc_msgSend$_oneShotCompletionHandler:
-+ _objc_msgSend$_performRegistrationWithCompletionHandler:
-+ _objc_msgSend$_retryDelayForAttempt:
-+ _objc_msgSend$_shouldAttemptRetryForAttempt:
-+ _objc_msgSend$accessLevel
-+ _objc_msgSend$audioContextType
-+ _objc_msgSend$availableMigrationTargetIdentifier
-+ _objc_msgSend$cancelIfNotAlreadyCanceled
-+ _objc_msgSend$fetchDisplayRepresentationsForEntities:components:auditToken:connectionIdentifier:completionHandler:
-+ _objc_msgSend$fromVersion
-+ _objc_msgSend$initWithContextTypeRawValue:audioContextTypeRawValue:workoutActivityTypeRawValue:
-+ _objc_msgSend$initWithEntity:displayRepresentation:error:
-+ _objc_msgSend$initWithMetadata:bundleIdentifier:parameters:
-+ _objc_msgSend$initWithTimeoutInterval:onQueue:timeoutHandler:
-+ _objc_msgSend$initWithTitle:subtitle:image:synonyms:descriptionText:snippetPluginModel:hasDeferredImage:
-+ _objc_msgSend$migrationMetadata
-+ _objc_msgSend$migrationPlanTowardTargetVersion:
-+ _objc_msgSend$migratorMangledTypeName
-+ _objc_msgSend$nowPlayingAudioContextType
-+ _objc_msgSend$performDynamicMigrationForAction:targetVersion:auditToken:connectionIdentifier:completionHandler:
-+ _objc_msgSend$performSelector:
-+ _objc_msgSend$registerWithCompletionHandler:
-+ _objc_msgSend$registrationQueue
-+ _objc_msgSend$sourceIntentIdentifier
-+ _objc_msgSend$targetIntentIdentifier
-+ _objc_msgSend$toVersion
 + _symbolic $s10AppIntents12Migration_v1P
 + _symbolic $s10AppIntents17ObviatedIntent_v1P
 + _symbolic $s10AppIntents18StaticMigration_v1P
@@ -374,16 +297,6 @@ Symbols:
 - ___unnamed_24
 - ___unnamed_33
 - _dispatch_get_global_queue
-- _objc_msgSend$UTF8String
-- _objc_msgSend$initWithNLGParams:options:fallbackDialog:localeIdentifier:
-- _objc_msgSend$initWithTitle:subtitle:image:synonyms:descriptionText:snippetPluginModel:
-- _objc_msgSend$initWithType:title:value:format:
-- _objc_msgSend$makeXPCConnection
-- _objc_msgSend$policyWithActionMetadata:
-- _objc_msgSend$policyWithEntityMetadata:
-- _objc_msgSend$policyWithEntityQueryMetadata:
-- _objc_msgSend$registerWithError:
-- _objc_msgSend$updateSuggestedEntities:bundleIdentifier:reply:
 - _objc_unsafeClaimAutoreleasedReturnValue
 - _symbolic SDyx_____yxq__GG 10AppIntents8LRUCacheV4Node33_9F738B91F792166B1E1208C8C932B734LLC
 - _symbolic _____ 10AppIntents21EntityDonationManagerC

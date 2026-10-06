@@ -2,15 +2,14 @@
 
 > `/usr/libexec/seld`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -370.40.2.0.0
 +370.42.1.0.0
-   __TEXT.__text: 0x271dc
-   __TEXT.__auth_stubs: 0x8c0
-   __TEXT.__objc_stubs: 0x33a0
 ```

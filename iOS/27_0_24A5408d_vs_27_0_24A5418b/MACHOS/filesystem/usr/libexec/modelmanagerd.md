@@ -2,13 +2,15 @@
 
 > `/usr/libexec/modelmanagerd`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__unwind_info`
 - `__TEXT.__eh_frame`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```text
 Functions:

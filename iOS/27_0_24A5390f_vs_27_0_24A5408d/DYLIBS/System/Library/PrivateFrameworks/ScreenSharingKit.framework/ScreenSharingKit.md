@@ -2,77 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/ScreenSharingKit.framework/ScreenSharingKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x267f64` | `0x269ad0` | **`+0x1b6c`** |
+| `__TEXT.__unwind_info` | `0x8f10` | `0x8c28` | **`-0x2e8`** |
+| `__AUTH_CONST.__const` | `0x10ae0` | `0x10d20` | **`+0x240`** |
+| `__TEXT.__const` | `0x195f4` | `0x19794` | **`+0x1a0`** |
+| `__TEXT.__cstring` | `0x96c5` | `0x9865` | **`+0x1a0`** |
+| `__TEXT.__swift5_reflstr` | `0x8eb5` | `0x8f95` | **`+0xe0`** |
+| `__TEXT.__swift5_fieldmd` | `0x7100` | `0x71a8` | **`+0xa8`** |
+| `__TEXT.__eh_frame` | `0x18878` | `0x188f0` | **`+0x78`** |
+| `__TEXT.__constg_swiftt` | `0x885c` | `0x88bc` | **`+0x60`** |
+| `__TEXT.__swift5_capture` | `0x3d68` | `0x3da8` | **`+0x40`** |
+| `__TEXT.__swift5_typeref` | `0x7936` | `0x7968` | **`+0x32`** |
+| `__AUTH_CONST.__auth_got` | `0x1840` | `0x1858` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0xe08` | `0xe20` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0x10a8` | `0x10b4` | **`+0xc`** |
+| `__TEXT.__swift5_types` | `0x6f8` | `0x704` | **`+0xc`** |
+| `__DATA.__data` | `0x57b0` | `0x57a8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -114.51.0.0.0
--  __TEXT.__text: 0x267f64
 +114.56.0.0.0
-+  __TEXT.__text: 0x269ad0
-   __TEXT.__objc_methlist: 0xf64
--  __TEXT.__const: 0x195f4
--  __TEXT.__constg_swiftt: 0x885c
--  __TEXT.__swift5_typeref: 0x7936
--  __TEXT.__swift5_reflstr: 0x8eb5
--  __TEXT.__swift5_fieldmd: 0x7100
-+  __TEXT.__const: 0x19794
-+  __TEXT.__constg_swiftt: 0x88bc
-+  __TEXT.__swift5_typeref: 0x7968
-+  __TEXT.__swift5_reflstr: 0x8f95
-+  __TEXT.__swift5_fieldmd: 0x71a8
-   __TEXT.__swift5_builtin: 0x294
-   __TEXT.__swift5_assocty: 0x798
--  __TEXT.__swift5_capture: 0x3d68
-+  __TEXT.__swift5_capture: 0x3da8
-   __TEXT.__oslogstring: 0xb9e5
--  __TEXT.__cstring: 0x96c5
--  __TEXT.__swift5_proto: 0x10a8
--  __TEXT.__swift5_types: 0x6f8
-+  __TEXT.__cstring: 0x9865
-+  __TEXT.__swift5_proto: 0x10b4
-+  __TEXT.__swift5_types: 0x704
-   __TEXT.__swift_as_entry: 0xa1c
-   __TEXT.__swift_as_ret: 0xaa4
-   __TEXT.__swift_as_cont: 0x17c4
-   __TEXT.__swift5_protos: 0x14c
-   __TEXT.__swift5_mpenum: 0xc8
--  __TEXT.__unwind_info: 0x8f10
--  __TEXT.__eh_frame: 0x18878
-+  __TEXT.__unwind_info: 0x8c28
-+  __TEXT.__eh_frame: 0x188f0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x448
-   __DATA_CONST.__objc_protolist: 0x1a8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xe08
-+  __DATA_CONST.__objc_selrefs: 0xe20
-   __DATA_CONST.__objc_protorefs: 0xd8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x10ae0
-+  __AUTH_CONST.__const: 0x10d20
-   __AUTH_CONST.__objc_const: 0xaba8
--  __AUTH_CONST.__auth_got: 0x1840
-+  __AUTH_CONST.__auth_got: 0x1858
-   __AUTH.__objc_data: 0x2af0
-   __AUTH.__data: 0x8b98
--  __DATA.__data: 0x57b0
-+  __DATA.__data: 0x57a8
-   __DATA.__bss: 0x1d730
-   __DATA.__common: 0x288
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9612
--  Symbols:   3701
+-  Symbols:   3408
 -  CStrings:  1573
 +  Functions: 9671
-+  Symbols:   3716
++  Symbols:   3420
 +  CStrings:  1582
- 
 Symbols:
 + _OBJC_CLASS_$_NSThread
 + _OBJC_CLASS_$_UIApplication
@@ -80,9 +43,6 @@ Symbols:
 + ___swift_memcpy169_8
 + ___swift_memcpy57_8
 + ___swift_memcpy74_8
-+ _objc_msgSend$isMainThread
-+ _objc_msgSend$sharedApplication
-+ _objc_msgSend$terminateWithSuccess
 + _swift_task_getMainExecutor
 + _swift_task_isCurrentExecutor
 + _symbolic _____ 16ScreenSharingKit40UIApplicationBackedTerminationPrimitivesV

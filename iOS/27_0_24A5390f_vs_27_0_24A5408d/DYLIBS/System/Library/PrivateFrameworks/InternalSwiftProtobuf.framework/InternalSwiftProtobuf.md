@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf`
 
-```diff
+### Section Size Changes
 
- 22.0.0.0.0
--  __TEXT.__text: 0xd91ac
-+  __TEXT.__text: 0xd9174
-   __TEXT.__const: 0xf242
-   __TEXT.__cstring: 0xf57
-   __TEXT.__swift5_typeref: 0x1a40
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd91ac` | `0xd9174` | **`-0x38`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1b23767f8 -> sub_1afd927f8 : 764 -> 748
 ~ sub_1b2376af4 -> sub_1afd92ae4 : 724 -> 716

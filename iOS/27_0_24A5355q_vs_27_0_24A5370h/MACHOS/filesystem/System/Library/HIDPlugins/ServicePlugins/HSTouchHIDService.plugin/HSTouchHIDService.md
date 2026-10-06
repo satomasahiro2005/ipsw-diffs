@@ -2,197 +2,57 @@
 
 > `/System/Library/HIDPlugins/ServicePlugins/HSTouchHIDService.plugin/HSTouchHIDService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd08ec` | `0xd2324` | **`+0x1a38`** |
+| `__TEXT.__oslogstring` | `0x49d9` | `0x4bd5` | **`+0x1fc`** |
+| `__TEXT.__cstring` | `0xdc47` | `0xde34` | **`+0x1ed`** |
+| `__TEXT.__gcc_except_tab` | `0xe954` | `0xeac0` | **`+0x16c`** |
+| `__DATA_CONST.__const` | `0x1c78` | `0x1d90` | **`+0x118`** |
+| `__TEXT.__unwind_info` | `0x48e0` | `0x4998` | **`+0xb8`** |
+| `__DATA_CONST.__cfstring` | `0x7540` | `0x7580` | **`+0x40`** |
+| `__TEXT.__objc_methname` | `0x9067` | `0x908a` | **`+0x23`** |
+| `__DATA.__objc_const` | `0x9e90` | `0x9eb0` | **`+0x20`** |
+| `__TEXT.__objc_stubs` | `0x7ac0` | `0x7ae0` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x5548` | `0x5558` | **`+0x10`** |
+| `__DATA.__objc_selrefs` | `0x2428` | `0x2430` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x72c` | `0x730` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_got`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__const`
+- `__TEXT.__init_offsets`
+
+### Other Changes
+
 ```diff
 
 -9170.34.1.0.0
--  __TEXT.__text: 0xd08ec sha256:39601a1bed628f812d2dc4bb0d85c85b599381487ee9b3880872779df0002cd8
--  __TEXT.__auth_stubs: 0x1930 sha256:a662dbe3738bd9212aa4b33f46fe29a5eecd18505ee812c7a782a4c9235912e6
--  __TEXT.__objc_stubs: 0x7ac0 sha256:c7d2962fb30ca5f338734b77dd57aa49729a17b30bf86f1e37eb9e0fe965c768
--  __TEXT.__init_offsets: 0x150c sha256:9fc77f6b54cdf4604050b830cc57036cb6c2e749b2c15f73a70e14a72b0b9818
--  __TEXT.__objc_methlist: 0x5548 sha256:73102f30bd30dda40179974130e4e4b00638c2102630937f2f677ce5273db437
--  __TEXT.__const: 0x3e2e sha256:bbb2aebe0afd27855f92dd820d9303bba3588221eb1fe93c2fc939351beebbbc
--  __TEXT.__gcc_except_tab: 0xe954 sha256:03f3d0995835e39cedbe1cb89677e2c4b03386d7285a2c424cb19da1c9a21741
--  __TEXT.__cstring: 0xdc47 sha256:c622afd616bdf177cb036a984cfecf6b5548536f0c264cee062b274748a240a8
--  __TEXT.__oslogstring: 0x49d9 sha256:ea668bcdfd049ed3bd2bf4bd7526360d0ab496092c7e76345c81c98710db82a0
--  __TEXT.__objc_methname: 0x9067 sha256:8efbb5fd329a8f4d4f9d3127d7552f552bd6552ef4d64b7e2dc58fc9ba7083a4
 +10100.39.0.0.0
-+  __TEXT.__text: 0xd2324 sha256:09c32008fc83ee801b3a20c608514a9309672479952f44a18dcae8fb989c2d3a
-+  __TEXT.__auth_stubs: 0x1930 sha256:ec50d305603dcae8e3755f9d13d169d7720a899f3efeb21451b8bd3d7748b129
-+  __TEXT.__objc_stubs: 0x7ae0 sha256:baefe2001b4607172f32a0a4dbb521e1aab374405c93feb773e873d31cd96bdf
-+  __TEXT.__init_offsets: 0x150c sha256:e99ed0d05f39f6d4bf61cee2c974ba6e7abf23ba2d1fc18f0ddacb53e37e8c01
-+  __TEXT.__objc_methlist: 0x5558 sha256:f4c828e7c32cb1250b3293f8eed648f4a08d35fcad43409f2d03853193f0e649
-+  __TEXT.__const: 0x3e2e sha256:86391867499380a8ff4d8af128e4ea15d66cae18761fed9c611b3b0807332d95
-+  __TEXT.__gcc_except_tab: 0xeac0 sha256:34773fd22a0896eb26f9fc559b49ea9bd40204bc7f08de4c1f8ac29212c1f1cc
-+  __TEXT.__cstring: 0xde34 sha256:c7036e2a816eb8068875a8fc108b196c7e4e08350e204344dffd44509d28b961
-+  __TEXT.__oslogstring: 0x4bd5 sha256:84c34e4f65ecc270b3ebad328021dc32080072c738db58c6515119ae798ffc08
-+  __TEXT.__objc_methname: 0x908a sha256:02ff274db86411abdd95deddec7e5346c53e5513c84a48b17cc8906aeb66f8b5
-   __TEXT.__objc_classname: 0xbb0 sha256:9ef998fafb2cda85074062dd616ff511e7742d40447380e906f2591882ba11b9
-   __TEXT.__objc_methtype: 0x58b1 sha256:729f168450e7d1fbd84ccd0085211b3d144be7bb039e824c4ca58943f8757f1d
--  __TEXT.__unwind_info: 0x48e0 sha256:b7d5f0094e92cbdec49ec12c94a55e70380c04d570ba82e5f60070babd8ffe13
--  __DATA_CONST.__const: 0x1c78 sha256:20bb7344246183d723aa5ca96b2a5cad91f346fc78c8283a33e06d921deec5cd
--  __DATA_CONST.__cfstring: 0x7540 sha256:03728db969647f6e2afc253dae34568aa32e3126f4d99d6d550a3c1a2bfc36ff
--  __DATA_CONST.__objc_classlist: 0x3c8 sha256:3b2aab8310d8502699ae89d8570721c921251d3da374f345420d0d83a1755e90
--  __DATA_CONST.__objc_catlist: 0x8 sha256:bf2817f04ce92d0327e10a90041d33e509943d5c3dab869035d679b29e403d2b
--  __DATA_CONST.__objc_protolist: 0x60 sha256:0c43d38406d8dd24bdab85adcac73c0bda8b4ffa68e934e75d2265d659f1b0e1
-+  __TEXT.__unwind_info: 0x4998 sha256:eac4aac33264dc08145cb1a887985ea864fbfa47c3cb4910e9d7b69a0a90c61f
-+  __DATA_CONST.__const: 0x1d90 sha256:05046e849a3a021ccec7fbcb2f48fba5e698fdb5b373e520707e819364037fa4
-+  __DATA_CONST.__cfstring: 0x7580 sha256:08d96ff6b9c56d53a9d93a91862388b01e3b6da28ffe652b31486c69b43e4703
-+  __DATA_CONST.__objc_classlist: 0x3c8 sha256:8598d294558fa513e7f342be5ee678731ba83f74db2450862b16e16415a633d9
-+  __DATA_CONST.__objc_catlist: 0x8 sha256:b1fb29b064f8fd7d639cb54cc07988c1e5e36ba9e269e0d007a264b5993ee191
-+  __DATA_CONST.__objc_protolist: 0x60 sha256:afe347339891228d2aab4b4418cb0d64fb2d38251a7eee21b4c41de49778ec1a
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:1fa65ffcccc24c72d5d7f804a2be05ae57dfbb8769ffb33c4272ed6795b7e61c
--  __DATA_CONST.__objc_protorefs: 0x18 sha256:918e9a5d024f2cdd22dcbf737069bc9d8a03e89a787bb86a4344c54d57c98e87
--  __DATA_CONST.__objc_superrefs: 0x2d0 sha256:f12ddc578e3f9a8e5ca0d182995aea59d56cb94f1fec813e9d9eda9345f5481b
--  __DATA_CONST.__objc_intobj: 0x6a8 sha256:cd108fbd23826929b2406e6d231d1a636ba95c6b57208441c21d23ebfc53e092
-+  __DATA_CONST.__objc_protorefs: 0x18 sha256:fd94bbbc404fc2d7372ab0247cd02c10a978a921a2eb4201e3f2154e38b3dffe
-+  __DATA_CONST.__objc_superrefs: 0x2d0 sha256:57b0eaf49c5a2508d17f86411e3e8d998153dbadceabf7c3c0069955b31a4879
-+  __DATA_CONST.__objc_intobj: 0x6a8 sha256:7dea675bd7bae8fb1d0c405427cb7c7167b80cb29143ee50c5109a3310eecfbd
-   __DATA_CONST.__objc_doubleobj: 0xc0 sha256:798a01daea9a97da29af10d00d15455fbf8aca7e6cfa18ec69a2daae36b9c42a
--  __DATA_CONST.__objc_arraydata: 0x508 sha256:ba953832ad3cd3d822f01eabc47a178587e9ee8a57e2361f597900f5eeb21343
--  __DATA_CONST.__objc_arrayobj: 0x168 sha256:4c8890757a324ac87578e87c6fb88baa2a5fe9f892d6237dad91c4270828264f
-+  __DATA_CONST.__objc_arraydata: 0x508 sha256:2dcae53df6477d9ea5467b7157142b3082df3e391435a83a251670b081ef3c06
-+  __DATA_CONST.__objc_arrayobj: 0x168 sha256:c3eb951b3057509383ac4a72bc2d7b584c047143be7a66f05b4506b00830fc2d
-   __DATA_CONST.__objc_floatobj: 0x20 sha256:ab9e7e9dbbfc34197e0cb6b232ced4879bc279db8943b13df95830039eae576e
--  __DATA_CONST.__objc_dictobj: 0x230 sha256:795a23f5b8d02d2f68388393302c5f5d63cf6d0ebb187a6baa28f4de38ea81b0
--  __DATA_CONST.__auth_got: 0xca8 sha256:4ee7de55d239363fb5deef0671c3b4d5641b381aa3bced011c539e4b02fc3aa8
--  __DATA_CONST.__got: 0x280 sha256:26d3b57693adb3b8e8955b5d21e36469881ad09f31bb6ab894b5ff1ea6044a30
--  __DATA.__objc_const: 0x9e90 sha256:0d2a2e43eb742050a4a0ec65f448a199a09a9e58d24f62639819f3b1d055fc4b
--  __DATA.__objc_selrefs: 0x2428 sha256:b186d5f4e472a0a19ab1602ce404ba54765ca9e6359f9c873572740ae908ba4e
--  __DATA.__objc_ivar: 0x72c sha256:ef2afaf62df8fded1f12a91aa2727e4af6f0adcc0bed9e265c670e222832c1a0
--  __DATA.__objc_data: 0x25d0 sha256:0a94c5e25663b980e99adcccfb478724f142e303d05208c7249fde5ac19582ac
--  __DATA.__data: 0x1610 sha256:24a93bdc4c1d5a7b68ca1e5ed433cce7f142fc9f42c0f84b04a099f9f12cdc1a
-+  __DATA_CONST.__objc_dictobj: 0x230 sha256:53e9f0c1cd74803f233c6d3a40c041fc1dd533ec2b762aa40f9b62b8bce86c16
-+  __DATA_CONST.__auth_got: 0xca8 sha256:c1b924afcb8c7ae51bdb2af647080a12b5266f1989c09e7ed591b35003347e0e
-+  __DATA_CONST.__got: 0x280 sha256:029003d4a132f5cc41c06b89e1680cba90d07c5c9a278f7b526d9b6ec4c1a428
-+  __DATA.__objc_const: 0x9eb0 sha256:e509378d433d8198a838c292e53b8b9519dc3c1f16e6496ab0d25193617251a2
-+  __DATA.__objc_selrefs: 0x2430 sha256:4615035ba0077f7bd7ca3014478fef49ec84fabd320297d0cc24ed2763bf3d60
-+  __DATA.__objc_ivar: 0x730 sha256:a7b74ec7e5163d04fe95270581c0f05b1384987e0916edc05622961a36b153e5
-+  __DATA.__objc_data: 0x25d0 sha256:71bb298b6cc03e3e9ff5b98eb846570c518ffb8d9b20df5070865a7f0239d0fe
-+  __DATA.__data: 0x1610 sha256:ec14df7710e242bc6b5a17f740a191c33c0b7747405ce2eb8b3e76e5f7072fec
-   __DATA.__bss: 0xc0 sha256:5d89f056865052bcb89c910d2d62872e029fb273c3db03f8968a52a41593c1b5
-   __DATA.__common: 0x890 sha256:c3f98bcd6e42258b08619d44bece48a614e4d6825295af9e133c62e05efe6da8
-   - /AppleInternal/Library/Frameworks/HIDSensingInternalSupport.framework/HIDSensingInternalSupport
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  UUID: 50D47DD8-A55A-34C8-9573-D6B8E94F778C
 -  Functions: 5272
--  Symbols:   29491
--  CStrings:  5170
-+  UUID: ED9506FD-2536-3BF5-80C9-116189507096
+-  Symbols:   7745
+-  CStrings:  4189
 +  Functions: 5289
-+  Symbols:   29607
-+  CStrings:  5188
- 
++  Symbols:   7779
++  CStrings:  4205
 Symbols:
-+ -[HSTFirmwareManager _handleHSTFrame:].cold.2
 + -[MacTrackpadBridge disablerDeviceCount]
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(Contact.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTBackboardBridge.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTCREventGenerator.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTCircularBuffer.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTContactStabilizer.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTCoreAnalytics.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTEvent.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTFrame+Python.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTFrame.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTFrameParser.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTHIDEventGenerator.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTHIDEventStatistics.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTHIDEvents.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTHelpers.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTPencilVirtualService.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTPipeline_vers.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTRecordingManager.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTSensingAlgs.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTServerStage.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTTipOffsetFilter.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(Types.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTActionEvent_.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTChordCyclingTrackpad_.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTChordCycling_.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTChordGestureSet_.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTChordIntegrating_.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTChordTable_.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTFingerEllipseTip_.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTFingerToPathMap_.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTForceBehavior_.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTForceConfig.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTForceFilter_.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTForceManagement_.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTForceThresholding_.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTGestureConfig_.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTHIDEventAppend.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTHandMotion_.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTHandStatistics_.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTPListGestureConfig_.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTParameterFactory_.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTParserPath_.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTPathStates_.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTRestZoneIntegrator_.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTSlideGesture_.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTSurfaceDimensions_.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTTapDragManager_.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTTrackpadUberAlg.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(TrackpadAlgButtonStateManager.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(USBKey.o)
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTPipeline.build/DerivedSources/
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/DerivedSources/
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/ActuationMultipliers.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/ActuationPlaylistManager.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/ActuationTone.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/ActuationWaveform.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/ActuatorDevice.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/ActuatorLimits.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/DeviceInfoManager.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/EmbeddedTrackpadFirmwareManager.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/EmbeddedTrackpadHIDEventProcessor.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/HSMousePipelineCreation.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/HSTFirmwareManager.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/HSTHIDDeviceRouter.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/HSTPipelineCreation.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/HSTSAPipelineCreation.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/HSTTelemetryAnalyticsStage.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/HSTouchHIDService.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/HSTouchHIDService_vers.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/HSTrackpadDefs.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/HSTrackpadPipelineCreation.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/MTGestureConfigGenerator.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/MTPluginLogging.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/MTPreferences.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/MacOSTrackpadHIDEventProcessor.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/MacTrackpadBridge.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/MomentumCurve.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/MouseBridge.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/PeppyHIDService.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/PointerBridge.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/PointerHIDEventProcessor.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/PointerSettings.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/ServiceMatcher.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/TrackpadActuatorStage.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/TrackpadAlgStage.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/TrackpadBridge.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/TrackpadDeadzoneManager.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/TrackpadFirmwareManager.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/TrackpadHIDEventProcessor.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/TrackpadMomentumGeneratorStage.o
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Sources/Multitouch/HIDSensingTouch/HSTPipeline/
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Sources/Multitouch/HIDSensingTouch/HSTPipeline/Helpers/
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Sources/Multitouch/HIDSensingTouch/HSTouchHIDService/
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Sources/Multitouch/MT2TPHIDService/HSTrackpad/
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Sources/Multitouch/MT2TPHIDService/HSTrackpad/Alg/
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Sources/Multitouch/MT2TPHIDService/HSTrackpad/Alg/Parser/Force/
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Sources/Multitouch/MT2TPHIDService/HSTrackpad/Alg/Parser/Gestures/
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Sources/Multitouch/MT2TPHIDService/HSTrackpad/Alg/Parser/PathsNHands/
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Sources/Multitouch/MT2TPHIDService/HSTrackpad/PostAlg/
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Sources/Multitouch/MT2TPHIDService/HSTrackpad/PostAlg/EventProcessors/
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Sources/Multitouch/MT2TPHIDService/HSTrackpad/PostAlg/TrackpadActuatorStage/
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Sources/Multitouch/MT2TPHIDService/HSTrackpad/PreAlg/
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Sources/Multitouch/MT2TPHIDService/HSTrackpad/PreAlg/Bridges/
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Sources/Multitouch/MT2TPHIDService/HSTrackpad/PreAlg/FirmwareManagers/
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Sources/Multitouch/Plugin/
-+ /Library/Caches/com.apple.xbs/9B2BD840-BFCE-4ADA-B550-8A78582F69FD/TemporaryDirectory.iZBTCq/Sources/Multitouch/Plugin/Parser/
 + GCC_except_table119
 + GCC_except_table120
 + GCC_except_table198
@@ -200,8 +60,7 @@ Symbols:
 + GCC_except_table204
 + GCC_except_table90
 + OBJC_IVAR_$_HSTFirmwareManager._deviceIOQueue
-+ __39-[HSTiOSFirmwareManager setPowerState:]_block_invoke.cold.1
-+ __39-[HSTiOSFirmwareManager setPowerState:]_block_invoke.cold.2
++ __39-[HSTiOSFirmwareManager setPowerState:]_block_invoke
 + __ZL17setReportWithDataP18HSTHIDDeviceRouterP6NSDataP5NSSetPU28objcproto17OS_dispatch_queue8NSObject
 + __ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport13EnabledInputs5AwakeEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject
 + __ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport17FaceDetectionModeEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject
@@ -487,29 +346,18 @@ Symbols:
 + __ZZNSt3__112__hash_tableIU8__strongP7HSStageN6HSUtil12ObjectHasherENS_8equal_toIS3_EENS_9allocatorIS3_EEE16__emplace_uniqueB9fqe220106IJRU8__strongKS2_EEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIS3_PvEEEEbEEDpOT_ENKUlSD_SD_E_clESD_SD_
 + ___39-[HSTiOSFirmwareManager setPowerState:]_block_invoke
 + ___44-[HSTFirmwareManager _handleSetReportEvent:]_block_invoke
-+ ___ZL17setReportWithDataP18HSTHIDDeviceRouterP6NSDataP5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke.cold.1
-+ ___ZL9getReportIN11HSTPipeline17FirmwareInterface13FeatureReport10WaterStateEEiP9HIDDeviceRT_PU28objcproto17OS_dispatch_queue8NSObject_block_invoke.cold.1
-+ ___ZL9getReportIN11HSTPipeline17FirmwareInterface13FeatureReport10WaterStateEEiP9HIDDeviceRT_PU28objcproto17OS_dispatch_queue8NSObject_block_invoke.cold.2
-+ ___ZL9getReportIN11HSTPipeline17FirmwareInterface13FeatureReport13CriticalErrorEEiP9HIDDeviceRT_PU28objcproto17OS_dispatch_queue8NSObject_block_invoke.cold.1
-+ ___ZL9getReportIN11HSTPipeline17FirmwareInterface13FeatureReport13CriticalErrorEEiP9HIDDeviceRT_PU28objcproto17OS_dispatch_queue8NSObject_block_invoke.cold.2
-+ ___ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport13EnabledInputs11AwakeAsleepEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke.cold.1
-+ ___ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport13EnabledInputs11AwakeAsleepEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke.cold.2
-+ ___ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport13EnabledInputs5AwakeEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke.cold.1
-+ ___ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport13EnabledInputs5AwakeEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke.cold.2
-+ ___ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport13OneByteReportEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke.cold.1
-+ ___ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport13OneByteReportEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke.cold.2
-+ ___ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport17FaceDetectionModeEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke.cold.1
-+ ___ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport17FaceDetectionModeEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke.cold.2
-+ ___ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport17HostInterruptModeEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke.cold.1
-+ ___ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport17HostInterruptModeEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke.cold.2
-+ ___ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport23HostNotificationControlEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke.cold.1
-+ ___ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport23HostNotificationControlEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke.cold.2
-+ ___ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport30ContinuousRecordingEnableWatchEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke.cold.1
-+ ___ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport30ContinuousRecordingEnableWatchEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke.cold.2
-+ ___ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport8DataModeEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke.cold.1
-+ ___ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport8DataModeEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke.cold.2
-+ ___ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport9HostEventEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke.cold.1
-+ ___ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport9HostEventEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke.cold.2
++ ___ZL17setReportWithDataP18HSTHIDDeviceRouterP6NSDataP5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke
++ ___ZL9getReportIN11HSTPipeline17FirmwareInterface13FeatureReport10WaterStateEEiP9HIDDeviceRT_PU28objcproto17OS_dispatch_queue8NSObject_block_invoke
++ ___ZL9getReportIN11HSTPipeline17FirmwareInterface13FeatureReport13CriticalErrorEEiP9HIDDeviceRT_PU28objcproto17OS_dispatch_queue8NSObject_block_invoke
++ ___ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport13EnabledInputs11AwakeAsleepEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke
++ ___ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport13EnabledInputs5AwakeEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke
++ ___ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport13OneByteReportEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke
++ ___ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport17FaceDetectionModeEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke
++ ___ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport17HostInterruptModeEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke
++ ___ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport23HostNotificationControlEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke
++ ___ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport30ContinuousRecordingEnableWatchEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke
++ ___ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport8DataModeEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke
++ ___ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport9HostEventEEvP9HIDDeviceRKT_P5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke
 + ____ZL17setReportWithDataP18HSTHIDDeviceRouterP6NSDataP5NSSetPU28objcproto17OS_dispatch_queue8NSObject_block_invoke
 + ____ZL9getReportIN11HSTPipeline17FirmwareInterface13FeatureReport10WaterStateEEiP9HIDDeviceRT_PU28objcproto17OS_dispatch_queue8NSObject_block_invoke
 + ____ZL9getReportIN11HSTPipeline17FirmwareInterface13FeatureReport13CriticalErrorEEiP9HIDDeviceRT_PU28objcproto17OS_dispatch_queue8NSObject_block_invoke
@@ -531,139 +379,16 @@ Symbols:
 + ___block_descriptor_56_ea8_32s40r_e5_v8?0lr40l8s32l8
 + _dispatch_sync
 + _objc_msgSend$disablerDeviceCount
-- -[HSTFirmwareManager _handleGetDebugEvent:].cold.1
-- -[HSTFirmwareManager _handleGetDebugEvent:].cold.2
-- -[HSTFirmwareManager _setEnabledInputsReport].cold.1
-- -[HSTFirmwareManager _setEnabledInputsReport].cold.2
-- -[HSTPhoneFirmwareManager _setAODLogging].cold.1
-- -[HSTPhoneFirmwareManager _setAODLogging].cold.2
-- -[HSTWatchFirmwareManager _handleGetWaterStateEvent:].cold.1
-- -[HSTWatchFirmwareManager _handleGetWaterStateEvent:].cold.2
-- -[HSTWatchFirmwareManager _handleSetPropertyEvent:].cold.1
-- -[HSTWatchFirmwareManager _handleSetPropertyEvent:].cold.2
-- -[HSTiOSFirmwareManager setPowerState:].cold.1
-- -[HSTiOSFirmwareManager setPowerState:].cold.2
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(Contact.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTBackboardBridge.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTCREventGenerator.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTCircularBuffer.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTContactStabilizer.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTCoreAnalytics.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTEvent.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTFrame+Python.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTFrame.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTFrameParser.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTHIDEventGenerator.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTHIDEventStatistics.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTHIDEvents.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTHelpers.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTPencilVirtualService.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTPipeline_vers.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTRecordingManager.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTSensingAlgs.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTServerStage.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(HSTTipOffsetFilter.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libHSTPipeline.a(Types.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTActionEvent_.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTChordCyclingTrackpad_.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTChordCycling_.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTChordGestureSet_.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTChordIntegrating_.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTChordTable_.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTFingerEllipseTip_.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTFingerToPathMap_.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTForceBehavior_.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTForceConfig.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTForceFilter_.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTForceManagement_.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTForceThresholding_.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTGestureConfig_.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTHIDEventAppend.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTHandMotion_.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTHandStatistics_.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTPListGestureConfig_.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTParameterFactory_.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTParserPath_.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTPathStates_.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTRestZoneIntegrator_.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTSlideGesture_.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTSurfaceDimensions_.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTTapDragManager_.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(MTTrackpadUberAlg.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(TrackpadAlgButtonStateManager.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/Symbols/BuiltProducts/libTrackpadHostAlg.a(USBKey.o)
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTPipeline.build/DerivedSources/
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/DerivedSources/
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/ActuationMultipliers.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/ActuationPlaylistManager.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/ActuationTone.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/ActuationWaveform.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/ActuatorDevice.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/ActuatorLimits.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/DeviceInfoManager.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/EmbeddedTrackpadFirmwareManager.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/EmbeddedTrackpadHIDEventProcessor.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/HSMousePipelineCreation.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/HSTFirmwareManager.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/HSTHIDDeviceRouter.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/HSTPipelineCreation.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/HSTSAPipelineCreation.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/HSTTelemetryAnalyticsStage.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/HSTouchHIDService.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/HSTouchHIDService_vers.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/HSTrackpadDefs.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/HSTrackpadPipelineCreation.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/MTGestureConfigGenerator.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/MTPluginLogging.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/MTPreferences.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/MacOSTrackpadHIDEventProcessor.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/MacTrackpadBridge.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/MomentumCurve.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/MouseBridge.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/PeppyHIDService.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/PointerBridge.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/PointerHIDEventProcessor.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/PointerSettings.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/ServiceMatcher.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/TrackpadActuatorStage.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/TrackpadAlgStage.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/TrackpadBridge.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/TrackpadDeadzoneManager.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/TrackpadFirmwareManager.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/TrackpadHIDEventProcessor.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Binaries/Multitouch/install/TempContent/Objects/MultitouchSoftware.build/HSTouchHIDService.build/Objects-normal/arm64e/TrackpadMomentumGeneratorStage.o
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Sources/Multitouch/HIDSensingTouch/HSTPipeline/
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Sources/Multitouch/HIDSensingTouch/HSTPipeline/Helpers/
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Sources/Multitouch/HIDSensingTouch/HSTouchHIDService/
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Sources/Multitouch/MT2TPHIDService/HSTrackpad/
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Sources/Multitouch/MT2TPHIDService/HSTrackpad/Alg/
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Sources/Multitouch/MT2TPHIDService/HSTrackpad/Alg/Parser/Force/
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Sources/Multitouch/MT2TPHIDService/HSTrackpad/Alg/Parser/Gestures/
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Sources/Multitouch/MT2TPHIDService/HSTrackpad/Alg/Parser/PathsNHands/
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Sources/Multitouch/MT2TPHIDService/HSTrackpad/PostAlg/
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Sources/Multitouch/MT2TPHIDService/HSTrackpad/PostAlg/EventProcessors/
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Sources/Multitouch/MT2TPHIDService/HSTrackpad/PostAlg/TrackpadActuatorStage/
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Sources/Multitouch/MT2TPHIDService/HSTrackpad/PreAlg/
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Sources/Multitouch/MT2TPHIDService/HSTrackpad/PreAlg/Bridges/
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Sources/Multitouch/MT2TPHIDService/HSTrackpad/PreAlg/FirmwareManagers/
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Sources/Multitouch/Plugin/
-- /Library/Caches/com.apple.xbs/1893992F-722F-46C7-BDD1-8CA0A27C45FB/TemporaryDirectory.8ZYaRe/Sources/Multitouch/Plugin/Parser/
 - GCC_except_table101
 - GCC_except_table116
 - _IORegistryEntryGetParentEntry
-- _ZL17setReportWithDataP18HSTHIDDeviceRouterP6NSDataP5NSSet.cold.1
-- _ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport13EnabledInputs5AwakeEEvP9HIDDeviceRKT_P5NSSet.cold.1
-- _ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport13EnabledInputs5AwakeEEvP9HIDDeviceRKT_P5NSSet.cold.2
-- _ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport17FaceDetectionModeEEvP9HIDDeviceRKT_P5NSSet.cold.1
-- _ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport17FaceDetectionModeEEvP9HIDDeviceRKT_P5NSSet.cold.2
-- _ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport17HostInterruptModeEEvP9HIDDeviceRKT_P5NSSet.cold.1
-- _ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport17HostInterruptModeEEvP9HIDDeviceRKT_P5NSSet.cold.2
-- _ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport23HostNotificationControlEEvP9HIDDeviceRKT_P5NSSet.cold.1
-- _ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport23HostNotificationControlEEvP9HIDDeviceRKT_P5NSSet.cold.2
-- _ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport8DataModeEEvP9HIDDeviceRKT_P5NSSet.cold.1
-- _ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport8DataModeEEvP9HIDDeviceRKT_P5NSSet.cold.2
-- _ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport9HostEventEEvP9HIDDeviceRKT_P5NSSet.cold.1
-- _ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport9HostEventEEvP9HIDDeviceRKT_P5NSSet.cold.2
+- _ZL17setReportWithDataP18HSTHIDDeviceRouterP6NSDataP5NSSet
+- _ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport13EnabledInputs5AwakeEEvP9HIDDeviceRKT_P5NSSet
+- _ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport17FaceDetectionModeEEvP9HIDDeviceRKT_P5NSSet
+- _ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport17HostInterruptModeEEvP9HIDDeviceRKT_P5NSSet
+- _ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport23HostNotificationControlEEvP9HIDDeviceRKT_P5NSSet
+- _ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport8DataModeEEvP9HIDDeviceRKT_P5NSSet
+- _ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport9HostEventEEvP9HIDDeviceRKT_P5NSSet
 - __ZL17setReportWithDataP18HSTHIDDeviceRouterP6NSDataP5NSSet
 - __ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport13EnabledInputs5AwakeEEvP9HIDDeviceRKT_P5NSSet
 - __ZL9setReportIN11HSTPipeline17FirmwareInterface13FeatureReport17FaceDetectionModeEEvP9HIDDeviceRKT_P5NSSet
@@ -947,34 +672,19 @@ Symbols:
 - __ZZNSt3__112__hash_tableIU6__weakPU26objcproto15HSPreferencable7HSStageN6HSUtil12ObjectHasherENS_8equal_toIS4_EENS_9allocatorIS4_EEE16__emplace_uniqueB9fqe220100IJS4_EEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIS4_PvEEEEbEEDpOT_ENKUlRU6__weakKS3_OS4_E_clESP_SQ_
 - __ZZNSt3__112__hash_tableIU6__weakPU26objcproto15HSStageObserver11objc_objectN6HSUtil12ObjectHasherENS_8equal_toIS3_EENS_9allocatorIS3_EEE16__emplace_uniqueB9fqe220100IJRU6__weakKS2_EEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIS3_PvEEEEbEEDpOT_ENKUlSD_SD_E_clESD_SD_
 - __ZZNSt3__112__hash_tableIU8__strongP7HSStageN6HSUtil12ObjectHasherENS_8equal_toIS3_EENS_9allocatorIS3_EEE16__emplace_uniqueB9fqe220100IJRU8__strongKS2_EEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIS3_PvEEEEbEEDpOT_ENKUlSD_SD_E_clESD_SD_
-- __cxx_global_var_init.202
 CStrings:
 + "%{public, signpost.description:begin_time}llu, %{public, signpost.description:end_time}llu, Complexity: 0x%llx"
 + "%{public, signpost.description:end_time}llu, Pencil? %{BOOL}d, Complexity: 0x%llx"
 + "-[HSTFirmwareManager _handleHSTFrame:]"
 + "-[HSTiOSFirmwareManager setPowerState:]_block_invoke"
 + "-[MacTrackpadBridge disablerDeviceCount]"
-+ "/AppleInternal/Library/BuildRoots/4~CSIGugAoF3OL-jj78zowfCSMFluKCc3q4eIHLfE/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:293: libc++ Hardening assertion __k != __leftmost failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CSIGugAoF3OL-jj78zowfCSMFluKCc3q4eIHLfE/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:512: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CSIGugAoF3OL-jj78zowfCSMFluKCc3q4eIHLfE/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:525: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CSIGugAoF3OL-jj78zowfCSMFluKCc3q4eIHLfE/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:603: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CSIGugAoF3OL-jj78zowfCSMFluKCc3q4eIHLfE/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:615: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CSIGugAoF3OL-jj78zowfCSMFluKCc3q4eIHLfE/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:633: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CSIGugAoF3OL-jj78zowfCSMFluKCc3q4eIHLfE/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:638: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CSIGugAoF3OL-jj78zowfCSMFluKCc3q4eIHLfE/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:669: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CSIGugAoF3OL-jj78zowfCSMFluKCc3q4eIHLfE/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:682: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CSIGugAoF3OL-jj78zowfCSMFluKCc3q4eIHLfE/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:692: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CSIGugAoF3OL-jj78zowfCSMFluKCc3q4eIHLfE/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:697: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CSIGugAoF3OL-jj78zowfCSMFluKCc3q4eIHLfE/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__utility/is_pointer_in_range.h:38: libc++ Hardening assertion std::__is_valid_range(__begin, __end) failed: [__begin, __end) is not a valid range\n"
-+ "/AppleInternal/Library/BuildRoots/4~CSIGugAoF3OL-jj78zowfCSMFluKCc3q4eIHLfE/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1161: libc++ Hardening assertion __position != end() failed: vector::erase(iterator) called with a non-dereferenceable iterator\n"
-+ "/AppleInternal/Library/BuildRoots/4~CSIGugAoF3OL-jj78zowfCSMFluKCc3q4eIHLfE/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1171: libc++ Hardening assertion __first <= __last failed: vector::erase(first, last) called with invalid range\n"
-+ "/AppleInternal/Library/BuildRoots/4~CSIGugAoF3OL-jj78zowfCSMFluKCc3q4eIHLfE/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:414: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
-+ "/AppleInternal/Library/BuildRoots/4~CSIGugAoF3OL-jj78zowfCSMFluKCc3q4eIHLfE/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:419: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
-+ "/AppleInternal/Library/BuildRoots/4~CSIGugAoF3OL-jj78zowfCSMFluKCc3q4eIHLfE/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:442: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
-+ "/AppleInternal/Library/BuildRoots/4~CSIGugAoF3OL-jj78zowfCSMFluKCc3q4eIHLfE/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:446: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
-+ "/AppleInternal/Library/BuildRoots/4~CSIGugAoF3OL-jj78zowfCSMFluKCc3q4eIHLfE/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:509: libc++ Hardening assertion !empty() failed: vector::pop_back called on an empty vector\n"
-+ "/AppleInternal/Library/BuildRoots/4~CSIGugAoF3OL-jj78zowfCSMFluKCc3q4eIHLfE/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/optional:1121: libc++ Hardening assertion this->has_value() failed: optional operator-> called on a disengaged value\n"
-+ "/AppleInternal/Library/BuildRoots/4~CSIGugAoF3OL-jj78zowfCSMFluKCc3q4eIHLfE/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/optional:1139: libc++ Hardening assertion this->has_value() failed: optional operator* called on a disengaged value\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1161: libc++ Hardening assertion __position != end() failed: vector::erase(iterator) called with a non-dereferenceable iterator\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1171: libc++ Hardening assertion __first <= __last failed: vector::erase(first, last) called with invalid range\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:414: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:419: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:442: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:446: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:509: libc++ Hardening assertion !empty() failed: vector::pop_back called on an empty vector\n"
 + "10000.39"
 + "DefaultMultitouchProperties"
 + "Dispatching async SetReport (0x%02X)"
@@ -1006,27 +716,13 @@ CStrings:
 - "%{public, signpost.description:begin_time}llu, %{public, signpost.description:end_time}llu"
 - "%{public, signpost.description:end_time}llu, Pencil? %{BOOL}d"
 - "-[HSTiOSFirmwareManager setPowerState:]"
-- "/AppleInternal/Library/BuildRoots/4~CQ4uugB6aOF9KG1EWNL125vxbF9u8lkE1Gcji5I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:293: libc++ Hardening assertion __k != __leftmost failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CQ4uugB6aOF9KG1EWNL125vxbF9u8lkE1Gcji5I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:512: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CQ4uugB6aOF9KG1EWNL125vxbF9u8lkE1Gcji5I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:525: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CQ4uugB6aOF9KG1EWNL125vxbF9u8lkE1Gcji5I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:603: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CQ4uugB6aOF9KG1EWNL125vxbF9u8lkE1Gcji5I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:615: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CQ4uugB6aOF9KG1EWNL125vxbF9u8lkE1Gcji5I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:633: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CQ4uugB6aOF9KG1EWNL125vxbF9u8lkE1Gcji5I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:638: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CQ4uugB6aOF9KG1EWNL125vxbF9u8lkE1Gcji5I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:669: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CQ4uugB6aOF9KG1EWNL125vxbF9u8lkE1Gcji5I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:682: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CQ4uugB6aOF9KG1EWNL125vxbF9u8lkE1Gcji5I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:692: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CQ4uugB6aOF9KG1EWNL125vxbF9u8lkE1Gcji5I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:697: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CQ4uugB6aOF9KG1EWNL125vxbF9u8lkE1Gcji5I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__utility/is_pointer_in_range.h:38: libc++ Hardening assertion std::__is_valid_range(__begin, __end) failed: [__begin, __end) is not a valid range\n"
-- "/AppleInternal/Library/BuildRoots/4~CQ4uugB6aOF9KG1EWNL125vxbF9u8lkE1Gcji5I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1146: libc++ Hardening assertion __position != end() failed: vector::erase(iterator) called with a non-dereferenceable iterator\n"
-- "/AppleInternal/Library/BuildRoots/4~CQ4uugB6aOF9KG1EWNL125vxbF9u8lkE1Gcji5I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1156: libc++ Hardening assertion __first <= __last failed: vector::erase(first, last) called with invalid range\n"
-- "/AppleInternal/Library/BuildRoots/4~CQ4uugB6aOF9KG1EWNL125vxbF9u8lkE1Gcji5I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:413: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
-- "/AppleInternal/Library/BuildRoots/4~CQ4uugB6aOF9KG1EWNL125vxbF9u8lkE1Gcji5I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:418: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
-- "/AppleInternal/Library/BuildRoots/4~CQ4uugB6aOF9KG1EWNL125vxbF9u8lkE1Gcji5I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:441: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
-- "/AppleInternal/Library/BuildRoots/4~CQ4uugB6aOF9KG1EWNL125vxbF9u8lkE1Gcji5I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:445: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
-- "/AppleInternal/Library/BuildRoots/4~CQ4uugB6aOF9KG1EWNL125vxbF9u8lkE1Gcji5I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:494: libc++ Hardening assertion !empty() failed: vector::pop_back called on an empty vector\n"
-- "/AppleInternal/Library/BuildRoots/4~CQ4uugB6aOF9KG1EWNL125vxbF9u8lkE1Gcji5I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/optional:1121: libc++ Hardening assertion this->has_value() failed: optional operator-> called on a disengaged value\n"
-- "/AppleInternal/Library/BuildRoots/4~CQ4uugB6aOF9KG1EWNL125vxbF9u8lkE1Gcji5I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/optional:1139: libc++ Hardening assertion this->has_value() failed: optional operator* called on a disengaged value\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1146: libc++ Hardening assertion __position != end() failed: vector::erase(iterator) called with a non-dereferenceable iterator\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1156: libc++ Hardening assertion __first <= __last failed: vector::erase(first, last) called with invalid range\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:413: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:418: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:441: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:445: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:494: libc++ Hardening assertion !empty() failed: vector::pop_back called on an empty vector\n"
 - "9170.34.1"
 - "IOReturn getReport(HIDDevice *__strong, T &) [T = HSTPipeline::FirmwareInterface::FeatureReport::CriticalError]"
 - "IOReturn getReport(HIDDevice *__strong, T &) [T = HSTPipeline::FirmwareInterface::FeatureReport::WaterState]"
@@ -1041,5 +737,4 @@ CStrings:
 - "void setReport(HIDDevice *__strong, const T &, NSSet *__strong) [T = HSTPipeline::FirmwareInterface::FeatureReport::HostNotificationControl]"
 - "void setReport(HIDDevice *__strong, const T &, NSSet *__strong) [T = HSTPipeline::FirmwareInterface::FeatureReport::OneByteReport]"
 - "void setReportWithData(HSTHIDDeviceRouter *__strong, NSData *__strong, NSSet *__strong)"
-
 ```

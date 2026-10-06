@@ -2,112 +2,69 @@
 
 > `/usr/libexec/audioaccessoryd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x25481c` | `0x257afc` | **`+0x32e0`** |
+| `__TEXT.__cstring` | `0x58773` | `0x58a93` | **`+0x320`** |
+| `__TEXT.__oslogstring` | `0x9aca` | `0x9d5a` | **`+0x290`** |
+| `__DATA.__objc_data` | `0x33f0` | `0x3668` | **`+0x278`** |
+| `__DATA.__data` | `0x5b10` | `0x5940` | **`-0x1d0`** |
+| `__TEXT.__objc_methname` | `0x2d205` | `0x2d345` | **`+0x140`** |
+| `__DATA_CONST.__const` | `0xcbf8` | `0xcce0` | **`+0xe8`** |
+| `__DATA_CONST.__got` | `0x1048` | `0x1120` | **`+0xd8`** |
+| `__TEXT.__eh_frame` | `0x2cb0` | `0x2d80` | **`+0xd0`** |
+| `__DATA_CONST.__cfstring` | `0xb940` | `0xb9e0` | **`+0xa0`** |
+| `__TEXT.__objc_methlist` | `0xe844` | `0xe8ac` | **`+0x68`** |
+| `__TEXT.__unwind_info` | `0x71d8` | `0x7240` | **`+0x68`** |
+| `__DATA.__objc_const` | `0x1fe88` | `0x1fee8` | **`+0x60`** |
+| `__TEXT.__objc_stubs` | `0x1f1c0` | `0x1f220` | **`+0x60`** |
+| `__TEXT.__swift5_capture` | `0x1f5c` | `0x1f94` | **`+0x38`** |
+| `__TEXT.__const` | `0x4d30` | `0x4d00` | **`-0x30`** |
+| `__DATA.__objc_selrefs` | `0x92b8` | `0x92e0` | **`+0x28`** |
+| `__TEXT.__constg_swiftt` | `0x20e4` | `0x210c` | **`+0x28`** |
+| `__TEXT.__swift5_reflstr` | `0x1b9b` | `0x1bbb` | **`+0x20`** |
+| `__TEXT.__swift5_typeref` | `0x1ec4` | `0x1ee4` | **`+0x20`** |
+| `__TEXT.__objc_methtype` | `0x41f9` | `0x4209` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x198c` | `0x1998` | **`+0xc`** |
+| `__DATA.__objc_ivar` | `0x187c` | `0x1884` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x25481c
-+  __TEXT.__text: 0x257afc
-   __TEXT.__auth_stubs: 0x3bb0
--  __TEXT.__objc_stubs: 0x1f1c0
--  __TEXT.__objc_methlist: 0xe844
--  __TEXT.__const: 0x4d30
-+  __TEXT.__objc_stubs: 0x1f220
-+  __TEXT.__objc_methlist: 0xe8ac
-+  __TEXT.__const: 0x4d00
-   __TEXT.__gcc_except_tab: 0x5a3c
--  __TEXT.__cstring: 0x58773
-+  __TEXT.__cstring: 0x58a93
-   __TEXT.__objc_classname: 0x1143
--  __TEXT.__objc_methname: 0x2d205
--  __TEXT.__objc_methtype: 0x41f9
-+  __TEXT.__objc_methname: 0x2d345
-+  __TEXT.__objc_methtype: 0x4209
-   __TEXT.__dlopen_cstrs: 0x5a
--  __TEXT.__oslogstring: 0x9aca
-+  __TEXT.__oslogstring: 0x9d5a
-   __TEXT.__ustring: 0x10
--  __TEXT.__swift5_typeref: 0x1ec4
--  __TEXT.__constg_swiftt: 0x20e4
--  __TEXT.__swift5_reflstr: 0x1b9b
--  __TEXT.__swift5_fieldmd: 0x198c
-+  __TEXT.__swift5_typeref: 0x1ee4
-+  __TEXT.__constg_swiftt: 0x210c
-+  __TEXT.__swift5_reflstr: 0x1bbb
-+  __TEXT.__swift5_fieldmd: 0x1998
-   __TEXT.__swift5_builtin: 0xf0
-   __TEXT.__swift5_assocty: 0x228
--  __TEXT.__swift5_capture: 0x1f5c
-+  __TEXT.__swift5_capture: 0x1f94
-   __TEXT.__swift5_proto: 0x3a4
-   __TEXT.__swift5_types: 0x120
-   __TEXT.__swift_as_entry: 0x7c
+-40.31.1.0.0
++40.33.1.0.0
 
-   __TEXT.__swift_as_cont: 0xe8
-   __TEXT.__swift5_protos: 0x14
-   __TEXT.__swift5_mpenum: 0x14
--  __TEXT.__unwind_info: 0x71d8
--  __TEXT.__eh_frame: 0x2cb0
--  __DATA_CONST.__const: 0xcbf8
--  __DATA_CONST.__cfstring: 0xb940
-+  __TEXT.__unwind_info: 0x7240
-+  __TEXT.__eh_frame: 0x2d80
-+  __DATA_CONST.__const: 0xcce0
-+  __DATA_CONST.__cfstring: 0xb9e0
-   __DATA_CONST.__objc_classlist: 0x3d0
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x1a0
-
-   __DATA_CONST.__objc_arrayobj: 0x48
-   __DATA_CONST.__objc_doubleobj: 0x40
-   __DATA_CONST.__auth_got: 0x1de8
--  __DATA_CONST.__got: 0x1048
-+  __DATA_CONST.__got: 0x1120
-   __DATA_CONST.__auth_ptr: 0x7b8
--  __DATA.__objc_const: 0x1fe88
--  __DATA.__objc_selrefs: 0x92b8
--  __DATA.__objc_ivar: 0x187c
--  __DATA.__objc_data: 0x33f0
--  __DATA.__data: 0x5b10
-+  __DATA.__objc_const: 0x1fee8
-+  __DATA.__objc_selrefs: 0x92e0
-+  __DATA.__objc_ivar: 0x1884
-+  __DATA.__objc_data: 0x3668
-+  __DATA.__data: 0x5940
-   __DATA.__bss: 0x7630
-   __DATA.__common: 0x3a8
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11995
 +  Functions: 12022
-   Symbols:   1688
--  CStrings:  18002
-+  CStrings:  18046
- 
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__bss : content changed
-~ __DATA.__common : content changed
+
+-  CStrings:  16305
++  CStrings:  16342
 CStrings:
 + "### Missing BT address in head tracking state message"
 + "-[BTAudioDriverController _headTrackingStateChangedMessageReceived:]"
@@ -150,5 +107,4 @@ CStrings:
 + "spatialHeadTrackingEnabled"
 - "Head Gesture Manager: headGestureToggle=%s, deviceInANCMode=%s, mediaIsPlaying=%s, shouldStart=%s"
 - "New write client connected to AudioAccessorySensor XPC service"
-
 ```

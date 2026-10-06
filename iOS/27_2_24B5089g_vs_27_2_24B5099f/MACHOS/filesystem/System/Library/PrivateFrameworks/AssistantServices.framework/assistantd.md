@@ -2,96 +2,62 @@
 
 > `/System/Library/PrivateFrameworks/AssistantServices.framework/assistantd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x382b50` | `0x387534` | **`+0x49e4`** |
+| `__TEXT.__oslogstring` | `0x49755` | `0x4b564` | **`+0x1e0f`** |
+| `__TEXT.__objc_methname` | `0x63aa3` | `0x6435e` | **`+0x8bb`** |
+| `__TEXT.__cstring` | `0x54fff` | `0x5572e` | **`+0x72f`** |
+| `__TEXT.__objc_stubs` | `0x48560` | `0x48ac0` | **`+0x560`** |
+| `__DATA.__objc_const` | `0x35988` | `0x35e28` | **`+0x4a0`** |
+| `__TEXT.__objc_methlist` | `0x240f0` | `0x24460` | **`+0x370`** |
+| `__DATA_CONST.__const` | `0x147f8` | `0x14a30` | **`+0x238`** |
+| `__TEXT.__objc_methtype` | `0x10250` | `0x10465` | **`+0x215`** |
+| `__TEXT.__gcc_except_tab` | `0x3cc0` | `0x3e48` | **`+0x188`** |
+| `__DATA.__data` | `0x5e20` | `0x5fa0` | **`+0x180`** |
+| `__DATA.__objc_selrefs` | `0x15b28` | `0x15c98` | **`+0x170`** |
+| `__TEXT.__unwind_info` | `0xa850` | `0xa978` | **`+0x128`** |
+| `__DATA_CONST.__cfstring` | `0x12f40` | `0x13040` | **`+0x100`** |
+| `__TEXT.__objc_classname` | `0x52bc` | `0x532c` | **`+0x70`** |
+| `__DATA.__objc_ivar` | `0x2774` | `0x27d8` | **`+0x64`** |
+| `__DATA_CONST.__objc_protolist` | `0x738` | `0x758` | **`+0x20`** |
+| `__TEXT.__auth_stubs` | `0x3910` | `0x3930` | **`+0x20`** |
+| `__DATA.__bss` | `0xe98` | `0xea8` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x1c98` | `0x1ca8` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x3eb8` | `0x3ec0` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__objc_arraydata`
 - `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_dictobj`
 - `__DATA_CONST.__objc_doubleobj`
 - `__DATA_CONST.__objc_floatobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_data`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__const`
+- `__TEXT.__eh_frame`
+
+### Other Changes
 
 ```diff
 
 -3605.24.1.1.1
--  __TEXT.__text: 0x377220
--  __TEXT.__auth_stubs: 0x3910
--  __TEXT.__objc_stubs: 0x48560
--  __TEXT.__objc_methlist: 0x240f0
 +3605.30.1.1.1
-+  __TEXT.__text: 0x37bad4
-+  __TEXT.__auth_stubs: 0x3930
-+  __TEXT.__objc_stubs: 0x48ac0
-+  __TEXT.__objc_methlist: 0x24460
-   __TEXT.__const: 0xede8
-   __TEXT.__dlopen_cstrs: 0x9e9
--  __TEXT.__gcc_except_tab: 0x3cc0
--  __TEXT.__cstring: 0x54fff
--  __TEXT.__oslogstring: 0x49755
--  __TEXT.__objc_classname: 0x52bc
--  __TEXT.__objc_methname: 0x63aa3
--  __TEXT.__objc_methtype: 0x10250
-+  __TEXT.__gcc_except_tab: 0x3e48
-+  __TEXT.__cstring: 0x5572e
-+  __TEXT.__oslogstring: 0x4b564
-+  __TEXT.__objc_classname: 0x532c
-+  __TEXT.__objc_methname: 0x6435e
-+  __TEXT.__objc_methtype: 0x10465
-   __TEXT.__ustring: 0x98
--  __TEXT.__unwind_info: 0xd0e8
-+  __TEXT.__unwind_info: 0xd250
-   __TEXT.__eh_frame: 0x48
--  __DATA_CONST.__const: 0x147f8
--  __DATA_CONST.__cfstring: 0x12f40
-+  __DATA_CONST.__const: 0x14a30
-+  __DATA_CONST.__cfstring: 0x13040
-   __DATA_CONST.__objc_classlist: 0xd70
-   __DATA_CONST.__objc_catlist: 0x630
--  __DATA_CONST.__objc_protolist: 0x738
-+  __DATA_CONST.__objc_protolist: 0x758
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0xa0
-   __DATA_CONST.__objc_superrefs: 0xb38
 
-   __DATA_CONST.__objc_dictobj: 0x2f8
-   __DATA_CONST.__objc_doubleobj: 0x30
-   __DATA_CONST.__objc_floatobj: 0x30
--  __DATA_CONST.__auth_got: 0x1c98
--  __DATA_CONST.__got: 0x3eb8
-+  __DATA_CONST.__auth_got: 0x1ca8
-+  __DATA_CONST.__got: 0x3ec0
-   __DATA_CONST.__auth_ptr: 0x28
--  __DATA.__objc_const: 0x35988
--  __DATA.__objc_selrefs: 0x15b28
--  __DATA.__objc_ivar: 0x2774
-+  __DATA.__objc_const: 0x35e28
-+  __DATA.__objc_selrefs: 0x15c98
-+  __DATA.__objc_ivar: 0x27d8
-   __DATA.__objc_data: 0x8660
--  __DATA.__data: 0x5e20
-+  __DATA.__data: 0x5fa0
-   __DATA.__common: 0xa18
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libresolv.9.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 14889
 -  Symbols:   3024
 -  CStrings:  28547
 +  Functions: 14975
 +  Symbols:   3026
 +  CStrings:  28727
- 
 Symbols:
 + _AFHasMicrophone
 + _OBJC_CLASS_$_SAPhoneClientCoordinationPhoneCall

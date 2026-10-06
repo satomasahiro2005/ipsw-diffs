@@ -2,20 +2,21 @@
 
 > `/System/Library/PrivateFrameworks/FaceTimeMessageStore.framework/facetimemessagestored`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x23a0` | `0x23a4` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_selrefs`
+- `__TEXT.__eh_frame`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 1620.100.1.2.24
--  __TEXT.__text: 0x23a0
-+  __TEXT.__text: 0x23a4
-   __TEXT.__auth_stubs: 0x4e0
-   __TEXT.__objc_stubs: 0x80
-   __TEXT.__const: 0x28
+```text
 Functions:
 ~ sub_1000030d0 : 708 -> 712
 ```

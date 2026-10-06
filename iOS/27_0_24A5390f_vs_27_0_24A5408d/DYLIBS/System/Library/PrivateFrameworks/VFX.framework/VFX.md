@@ -2,95 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/VFX.framework/VFX`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd79648` | `0xd7bd5c` | **`+0x2714`** |
+| `__TEXT.__cstring` | `0xb8590` | `0xb8aa0` | **`+0x510`** |
+| `__DATA_CONST.__const` | `0x7820` | `0x78c0` | **`+0xa0`** |
+| `__AUTH_CONST.__objc_const` | `0x4c678` | `0x4c700` | **`+0x88`** |
+| `__TEXT.__oslogstring` | `0xd828` | `0xd8b0` | **`+0x88`** |
+| `__TEXT.__unwind_info` | `0x2b0c0` | `0x2b148` | **`+0x88`** |
+| `__AUTH_CONST.__cfstring` | `0x1b340` | `0x1b3a0` | **`+0x60`** |
+| `__TEXT.__eh_frame` | `0x28790` | `0x287f0` | **`+0x60`** |
+| `__TEXT.__objc_methlist` | `0x20814` | `0x20864` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0xcaa0` | `0xcae8` | **`+0x48`** |
+| `__DATA.__data` | `0x15188` | `0x15168` | **`-0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x132e1` | `0x13301` | **`+0x20`** |
+| `__DATA_DIRTY.__objc_data` | `0x4010` | `0x3ff8` | **`-0x18`** |
+| `__DATA_DIRTY.__data` | `0xfeb8` | `0xfec8` | **`+0x10`** |
+| `__TEXT.__const` | `0x8df68` | `0x8df78` | **`+0x10`** |
+| `__TEXT.__constg_swiftt` | `0x281d4` | `0x281c4` | **`-0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x1d664` | `0x1d670` | **`+0xc`** |
+| `__DATA.__objc_ivar` | `0x2104` | `0x210c` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x1e58` | `0x1e60` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -233.0.5.0.0
--  __TEXT.__text: 0xd79648
--  __TEXT.__objc_methlist: 0x20814
--  __TEXT.__const: 0x8df68
 +233.0.9.0.0
-+  __TEXT.__text: 0xd7bd5c
-+  __TEXT.__objc_methlist: 0x20864
-+  __TEXT.__const: 0x8df78
-   __TEXT.__gcc_except_tab: 0x66e4
--  __TEXT.__cstring: 0xb8590
--  __TEXT.__oslogstring: 0xd828
-+  __TEXT.__cstring: 0xb8aa0
-+  __TEXT.__oslogstring: 0xd8b0
-   __TEXT.__ustring: 0x84
--  __TEXT.__constg_swiftt: 0x281d4
-+  __TEXT.__constg_swiftt: 0x281c4
-   __TEXT.__swift5_typeref: 0xdbc1
-   __TEXT.__swift5_builtin: 0x1374
--  __TEXT.__swift5_reflstr: 0x132e1
--  __TEXT.__swift5_fieldmd: 0x1d664
-+  __TEXT.__swift5_reflstr: 0x13301
-+  __TEXT.__swift5_fieldmd: 0x1d670
-   __TEXT.__swift5_assocty: 0x3aa8
-   __TEXT.__swift5_proto: 0x6f94
-   __TEXT.__swift5_types: 0x24c8
 
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0x8
-   __TEXT.__swift_as_cont: 0x20
--  __TEXT.__unwind_info: 0x2b0c0
--  __TEXT.__eh_frame: 0x28790
-+  __TEXT.__unwind_info: 0x2b148
-+  __TEXT.__eh_frame: 0x287f0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7820
-+  __DATA_CONST.__const: 0x78c0
-   __DATA_CONST.__objc_classlist: 0x20b0
-   __DATA_CONST.__objc_catlist: 0xb8
-   __DATA_CONST.__objc_protolist: 0x660
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xcaa0
-+  __DATA_CONST.__objc_selrefs: 0xcae8
-   __DATA_CONST.__objc_protorefs: 0x3e0
-   __DATA_CONST.__objc_superrefs: 0x6c8
-   __DATA_CONST.__objc_arraydata: 0x318
--  __DATA_CONST.__got: 0x1e58
-+  __DATA_CONST.__got: 0x1e60
-   __AUTH_CONST.__const: 0x91d78
--  __AUTH_CONST.__cfstring: 0x1b340
--  __AUTH_CONST.__objc_const: 0x4c678
-+  __AUTH_CONST.__cfstring: 0x1b3a0
-+  __AUTH_CONST.__objc_const: 0x4c700
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__objc_intobj: 0x708
-   __AUTH_CONST.__objc_arrayobj: 0xc0
-
-   __AUTH.__thread_vars: 0x90
-   __AUTH.__thread_data: 0x8
-   __AUTH.__thread_bss: 0x20
--  __DATA.__objc_ivar: 0x2104
--  __DATA.__data: 0x15188
-+  __DATA.__objc_ivar: 0x210c
-+  __DATA.__data: 0x15168
-   __DATA.__bss: 0x81a50
-   __DATA.__common: 0x10c9
--  __DATA_DIRTY.__objc_data: 0x4010
--  __DATA_DIRTY.__data: 0xfeb8
-+  __DATA_DIRTY.__objc_data: 0x3ff8
-+  __DATA_DIRTY.__data: 0xfec8
-   __DATA_DIRTY.__bss: 0x7400
-   __DATA_DIRTY.__common: 0x518
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 68339
 -  Symbols:   2067
 -  CStrings:  9489
 +  Functions: 68377
 +  Symbols:   2068
 +  CStrings:  9492
- 
 Symbols:
 + _OBJC_CLASS_$_MTLArgumentDescriptor
 CStrings:

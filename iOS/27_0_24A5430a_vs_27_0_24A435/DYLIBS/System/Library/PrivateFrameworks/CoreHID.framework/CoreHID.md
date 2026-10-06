@@ -2,18 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/CoreHID.framework/CoreHID`
 
-```diff
+### Section Size Changes
 
- 2360.2.2.0.0
--  __TEXT.__text: 0x3d9dc
-+  __TEXT.__text: 0x3d9e8
-   __TEXT.__const: 0xa8d0
-   __TEXT.__swift5_typeref: 0x9d0
-   __TEXT.__cstring: 0x832
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3d9dc` | `0x3d9e8` | **`+0xc`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_25b01a620 -> sub_25bcf9620 : 560 -> 564
-~ sub_25b01ec68 -> sub_25bcfdc6c : 360 -> 364
-~ sub_25b02096c -> sub_25bcff974 : 560 -> 564
-~ sub_25b022a8c -> sub_25bd01a98 : 352 -> 356
-~ sub_25b0463b0 -> sub_25bd253c0 : 8800 -> 8796
+~ sub_25aee9620 -> sub_25bbdd620 : 560 -> 564
+~ sub_25aeedc68 -> sub_25bbe1c6c : 360 -> 364
+~ sub_25aeef96c -> sub_25bbe3974 : 560 -> 564
+~ sub_25aef1a8c -> sub_25bbe5a98 : 352 -> 356
+~ sub_25af153b0 -> sub_25bc093c0 : 8800 -> 8796
 ```

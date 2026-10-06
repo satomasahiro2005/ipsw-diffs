@@ -2,19 +2,15 @@
 
 > `/usr/lib/libutil.dylib`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x2584
-+  __TEXT.__text: 0x2590
-   __TEXT.__const: 0x118
-   __TEXT.__cstring: 0xf9
-   __TEXT.__gcc_except_tab: 0x6c
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2584` | `0x2590` | **`+0xc`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN13ExtentManager4InitEjjx -> _getmntopts : 104 -> 528
 ~ __ZN13ExtentManager19AddBlockRangeExtentExx -> _freemntopts : 376 -> 68
@@ -24,5 +20,4 @@ Functions:
 ~ _getmntoptnum -> __ZN13ExtentManager18AddByteRangeExtentExx : 264 -> 36
 ~ _freemntopts -> _getmntoptstr : 68 -> 152
 ~ _getmntopts -> _getmntoptnum : 516 -> 264
-
 ```

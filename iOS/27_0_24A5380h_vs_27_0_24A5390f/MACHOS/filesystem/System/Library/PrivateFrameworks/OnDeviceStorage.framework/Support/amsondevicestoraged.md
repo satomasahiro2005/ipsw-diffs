@@ -2,92 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/OnDeviceStorage.framework/Support/amsondevicestoraged`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x984c` | `0xcaf4` | **`+0x32a8`** |
+| `__TEXT.__auth_stubs` | `0x770` | `0x9a0` | **`+0x230`** |
+| `__TEXT.__eh_frame` | `0xe78` | `0x1070` | **`+0x1f8`** |
+| `__DATA.__bss` | `0x180` | `0x300` | **`+0x180`** |
+| `__TEXT.__const` | `0x2f2` | `0x438` | **`+0x146`** |
+| `__DATA.__data` | `0x140` | `0x280` | **`+0x140`** |
+| `__DATA_CONST.__auth_got` | `0x3c0` | `0x4d8` | **`+0x118`** |
+| `__DATA.__objc_const` | `0x90` | `0x168` | **`+0xd8`** |
+| `__TEXT.__swift5_typeref` | `0x10f` | `0x1e5` | **`+0xd6`** |
+| `__TEXT.__unwind_info` | `0x3c0` | `0x470` | **`+0xb0`** |
+| `__DATA_CONST.__const` | `0x110` | `0x1b0` | **`+0xa0`** |
+| `__TEXT.__constg_swiftt` | `0x50` | `0xbc` | **`+0x6c`** |
+| `__DATA_CONST.__auth_ptr` | `0xe8` | `0x150` | **`+0x68`** |
+| `__DATA_CONST.__got` | `0xe0` | `0x130` | **`+0x50`** |
+| `__TEXT.__swift5_capture` | `0x30` | `0x7c` | **`+0x4c`** |
+| `__TEXT.__objc_classname` | `0xd` | `0x44` | **`+0x37`** |
+| `__TEXT.__swift5_fieldmd` | `0x38` | `0x60` | **`+0x28`** |
+| `__TEXT.__swift5_reflstr` | `0x23` | `0x43` | **`+0x20`** |
+| `__TEXT.__objc_methname` | `0x39` | `0x55` | **`+0x1c`** |
+| `__TEXT.__swift_as_cont` | `0x104` | `0x11c` | **`+0x18`** |
+| `__TEXT.__swift_as_entry` | `0x54` | `0x6c` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0xc` | `0x18` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `0x78` | `0x84` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x8` | `0x10` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x8` | `0xc` | **`+0x4`** |
+| `__TEXT.__objc_methtype` | `0x8` | `0x9` | **`+0x1`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
 - `__TEXT.__objc_methlist`
 - `__TEXT.__swift5_entry`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
+
+### Other Changes
 
 ```diff
 
 -3.0.52.0.0
--  __TEXT.__text: 0x984c
--  __TEXT.__auth_stubs: 0x770
 +3.0.54.0.0
-+  __TEXT.__text: 0xcaf4
-+  __TEXT.__auth_stubs: 0x9a0
-   __TEXT.__objc_stubs: 0x80
-   __TEXT.__objc_methlist: 0x14
--  __TEXT.__const: 0x2f2
--  __TEXT.__objc_classname: 0xd
--  __TEXT.__objc_methtype: 0x8
--  __TEXT.__swift5_typeref: 0x10f
-+  __TEXT.__const: 0x438
-+  __TEXT.__objc_classname: 0x44
-+  __TEXT.__objc_methtype: 0x9
-+  __TEXT.__swift5_typeref: 0x1e5
-   __TEXT.__cstring: 0xb1
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__constg_swiftt: 0x50
--  __TEXT.__swift5_reflstr: 0x23
--  __TEXT.__swift5_fieldmd: 0x38
--  __TEXT.__swift5_capture: 0x30
--  __TEXT.__swift5_proto: 0xc
--  __TEXT.__swift5_types: 0x8
--  __TEXT.__swift_as_entry: 0x54
--  __TEXT.__swift_as_ret: 0x78
--  __TEXT.__swift_as_cont: 0x104
--  __TEXT.__objc_methname: 0x39
--  __TEXT.__unwind_info: 0x3c0
--  __TEXT.__eh_frame: 0xe78
--  __DATA_CONST.__const: 0x110
--  __DATA_CONST.__objc_classlist: 0x8
-+  __TEXT.__objc_methname: 0x55
-+  __TEXT.__constg_swiftt: 0xbc
-+  __TEXT.__swift5_reflstr: 0x43
-+  __TEXT.__swift5_fieldmd: 0x60
-+  __TEXT.__swift5_capture: 0x7c
-+  __TEXT.__swift5_proto: 0x18
-+  __TEXT.__swift5_types: 0xc
-+  __TEXT.__swift_as_entry: 0x6c
-+  __TEXT.__swift_as_ret: 0x84
-+  __TEXT.__swift_as_cont: 0x11c
-+  __TEXT.__unwind_info: 0x470
-+  __TEXT.__eh_frame: 0x1070
-+  __DATA_CONST.__const: 0x1b0
-+  __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__linkguard: 0x15
--  __DATA_CONST.__auth_got: 0x3c0
--  __DATA_CONST.__got: 0xe0
--  __DATA_CONST.__auth_ptr: 0xe8
--  __DATA.__objc_const: 0x90
-+  __DATA_CONST.__auth_got: 0x4d8
-+  __DATA_CONST.__got: 0x130
-+  __DATA_CONST.__auth_ptr: 0x150
-+  __DATA.__objc_const: 0x168
-   __DATA.__objc_selrefs: 0x20
-   __DATA.__objc_data: 0x50
--  __DATA.__data: 0x140
-+  __DATA.__data: 0x280
-   __DATA.__common: 0x18
--  __DATA.__bss: 0x180
-+  __DATA.__bss: 0x300
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/JetCore.framework/JetCore
-   - /System/Library/PrivateFrameworks/OnDeviceDaemon.framework/OnDeviceDaemon
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
 -  Functions: 163
 -  Symbols:   190
 -  CStrings:  11
 +  Functions: 199
 +  Symbols:   251
 +  CStrings:  14
- 
 Symbols:
 + _$s10Foundation4UUIDVACycfC
 + _$s10Foundation4UUIDVMa

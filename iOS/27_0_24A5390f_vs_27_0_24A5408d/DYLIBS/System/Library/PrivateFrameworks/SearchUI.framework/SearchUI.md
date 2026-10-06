@@ -2,86 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/SearchUI.framework/SearchUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__cfstring` | `0x33c0` | `0x3360` | **`-0x60`** |
+| `__TEXT.__objc_methlist` | `0x123d8` | `0x12430` | **`+0x58`** |
+| `__DATA_DIRTY.__objc_data` | `0x3258` | `0x3208` | **`-0x50`** |
+| `__TEXT.__unwind_info` | `0x4870` | `0x48b8` | **`+0x48`** |
+| `__AUTH_CONST.__objc_const` | `0x1e028` | `0x1dff8` | **`-0x30`** |
+| `__TEXT.__cstring` | `0x3aa9` | `0x3a79` | **`-0x30`** |
+| `__TEXT.__text` | `0xf58a0` | `0xf587c` | **`-0x24`** |
+| `__TEXT.__gcc_except_tab` | `0xa00` | `0xa18` | **`+0x18`** |
+| `__DATA.__data` | `0x3384` | `0x3374` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x2578` | `0x2568` | **`-0x10`** |
+| `__DATA_DIRTY.__bss` | `0xce8` | `0xcd8` | **`-0x10`** |
+| `__TEXT.__const` | `0x3a74` | `0x3a84` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0xcf4` | `0xcfc` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0xae0` | `0xad8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -673.0.6.0.0
--  __TEXT.__text: 0xf58a0
 +673.0.12.102.0
-+  __TEXT.__text: 0xf587c
-   __TEXT.__lazy_helpers: 0x54
--  __TEXT.__objc_methlist: 0x123d8
--  __TEXT.__const: 0x3a74
--  __TEXT.__cstring: 0x3aa9
-+  __TEXT.__objc_methlist: 0x12430
-+  __TEXT.__const: 0x3a84
-+  __TEXT.__cstring: 0x3a79
-   __TEXT.__oslogstring: 0x2915
--  __TEXT.__gcc_except_tab: 0xa00
-+  __TEXT.__gcc_except_tab: 0xa18
-   __TEXT.__ustring: 0x9c
-   __TEXT.__dlopen_cstrs: 0x160
-   __TEXT.__swift5_typeref: 0x3992
 
-   __TEXT.__swift_as_cont: 0x1c8
-   __TEXT.__swift5_protos: 0x28
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x4870
-+  __TEXT.__unwind_info: 0x48b8
-   __TEXT.__eh_frame: 0x2334
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x28a0
--  __DATA_CONST.__objc_classlist: 0xae0
-+  __DATA_CONST.__objc_classlist: 0xad8
-   __DATA_CONST.__objc_catlist: 0x410
-   __DATA_CONST.__objc_protolist: 0x360
-   __DATA_CONST.__objc_imageinfo: 0x8
-
-   __DATA_CONST.__objc_protorefs: 0x68
-   __DATA_CONST.__objc_superrefs: 0x6f8
-   __DATA_CONST.__objc_arraydata: 0x38
--  __DATA_CONST.__got: 0x2578
-+  __DATA_CONST.__got: 0x2568
-   __AUTH_CONST.__const: 0x2ab0
--  __AUTH_CONST.__cfstring: 0x33c0
--  __AUTH_CONST.__objc_const: 0x1e028
-+  __AUTH_CONST.__cfstring: 0x3360
-+  __AUTH_CONST.__objc_const: 0x1dff8
-   __AUTH_CONST.__lazy_load_got: 0x8
-   __AUTH_CONST.__objc_intobj: 0x90
-   __AUTH_CONST.__objc_arrayobj: 0x48
-
-   __AUTH_CONST.__auth_got: 0x1900
-   __AUTH.__objc_data: 0x4750
-   __AUTH.__data: 0x7c8
--  __DATA.__objc_ivar: 0xcf4
--  __DATA.__data: 0x3384
-+  __DATA.__objc_ivar: 0xcfc
-+  __DATA.__data: 0x3374
-   __DATA.__bss: 0x1c60
-   __DATA.__common: 0xe8
--  __DATA_DIRTY.__objc_data: 0x3258
-+  __DATA_DIRTY.__objc_data: 0x3208
-   __DATA_DIRTY.__data: 0x4b0
--  __DATA_DIRTY.__bss: 0xce8
-+  __DATA_DIRTY.__bss: 0xcd8
-   __DATA_DIRTY.__common: 0x40
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6996
--  Symbols:   15787
--  CStrings:  826
 +  Functions: 7004
-+  Symbols:   15785
+
+-  CStrings:  826
 +  CStrings:  824
- 
 Symbols:
 + +[SearchUIAppIconUtilities idealHorizontalSpacingBetweenAppIconsForWidth:]
 + +[SearchUIAppIconUtilities numberOfAppIconsPerRowForWidth:]
@@ -124,23 +75,6 @@ Symbols:
 + _computeObjectsForKeys:completionHandler:.queue
 + _isCampoProcess.isCampoProcess
 + _isCampoProcess.onceToken
-+ _objc_msgSend$currentColorRequestId
-+ _objc_msgSend$frameForChildViewControllers
-+ _objc_msgSend$iconImageInfoForVariant:requiresCircleShape:
-+ _objc_msgSend$idealHorizontalSpacingBetweenAppIconsForWidth:
-+ _objc_msgSend$isCampoProcess
-+ _objc_msgSend$numberOfAppIconsPerRowForWidth:
-+ _objc_msgSend$openApplicationOptionsSpotlightSource:
-+ _objc_msgSend$openPunchout:presentationSource:
-+ _objc_msgSend$openPunchout:presentationSource:completion:
-+ _objc_msgSend$openURL:presentationSource:withCompletion:
-+ _objc_msgSend$presentationSource
-+ _objc_msgSend$requestClipInstallWithURL:presentationSource:completion:
-+ _objc_msgSend$requestId
-+ _objc_msgSend$searchUILeadingTrailingSectionModel_leadingFractionalWidthForContainerWidth:
-+ _objc_msgSend$setPresentationSource:
-+ _objc_msgSend$setRequestId:
-+ _objc_msgSend$updateVisibleCountForWidthIfNeeded
 - +[SearchUIAppIconUtilities idealHorizontalSpacingBetweenAppIconsForContainerWidth:insets:]
 - +[SearchUIHomeScreenAppIconView cacheForVariant:requiresCircleShape:]
 - +[SearchUIHomeScreenAppIconView cacheKeyForVariant:requiresCircleShape:]
@@ -178,25 +112,6 @@ Symbols:
 - _cacheForVariant:requiresCircleShape:.iconCache
 - _cacheForVariant:requiresCircleShape:.onceToken
 - _idealHorizontalSpacingBetweenAppIcons.spacing
-- _objc_msgSend$_iconImageView
-- _objc_msgSend$cacheForVariant:requiresCircleShape:
-- _objc_msgSend$cacheKeyForVariant:requiresCircleShape:
-- _objc_msgSend$currentIconIsPlaceholder
-- _objc_msgSend$hidePlaceholder:
-- _objc_msgSend$idealHorizontalSpacingBetweenAppIcons
-- _objc_msgSend$idealHorizontalSpacingBetweenAppIconsForContainerWidth:insets:
-- _objc_msgSend$initWithName:iconImageInfo:
-- _objc_msgSend$leafIdentifier
-- _objc_msgSend$openApplicationOptions
-- _objc_msgSend$openURL:withCompletion:
-- _objc_msgSend$placeholderView
-- _objc_msgSend$removePlaceholderAndSetShadowAnimated:
-- _objc_msgSend$requestClipInstallWithURL:completion:
-- _objc_msgSend$setContentsScale:
-- _objc_msgSend$setIconImageCache:
-- _objc_msgSend$setImageLoadingBehavior:
-- _objc_msgSend$setPlaceholderView:
-- _objc_msgSend$setPunchoutShadow:
 - _openApplicationOptions.onceToken
 - _openApplicationOptions.options
 - _openApplicationWithBundleIdentifier:environment:.onceToken

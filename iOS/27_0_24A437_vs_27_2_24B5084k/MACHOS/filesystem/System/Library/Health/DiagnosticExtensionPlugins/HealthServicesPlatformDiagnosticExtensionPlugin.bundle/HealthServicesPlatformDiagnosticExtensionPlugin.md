@@ -2,109 +2,75 @@
 
 > `/System/Library/Health/DiagnosticExtensionPlugins/HealthServicesPlatformDiagnosticExtensionPlugin.bundle/HealthServicesPlatformDiagnosticExtensionPlugin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2f48` | `0x12ac4` | **`+0xfb7c`** |
+| `__TEXT.__auth_stubs` | `0x400` | `0x1390` | **`+0xf90`** |
+| `__TEXT.__cstring` | `0x900` | `0x1454` | **`+0xb54`** |
+| `__DATA_CONST.__const` | `0x178` | `0xb70` | **`+0x9f8`** |
+| `__DATA_CONST.__auth_got` | `0x210` | `0x9d8` | **`+0x7c8`** |
+| `__TEXT.__eh_frame` | `—` | `0x7c0` | **`+0x7c0`** |
+| `__TEXT.__unwind_info` | `0x110` | `0x3d8` | **`+0x2c8`** |
+| `__TEXT.__swift5_capture` | `—` | `0x2b8` | **`+0x2b8`** |
+| `__DATA_CONST.__got` | `0xc0` | `0x2c0` | **`+0x200`** |
+| `__TEXT.__const` | `0xb2` | `0x272` | **`+0x1c0`** |
+| `__TEXT.__swift5_typeref` | `0x14` | `0x19c` | **`+0x188`** |
+| `__TEXT.__objc_stubs` | `0xdc0` | `0xf00` | **`+0x140`** |
+| `__DATA.__data` | `0x90` | `0x1b0` | **`+0x120`** |
+| `__TEXT.__objc_methname` | `0xac2` | `0xbce` | **`+0x10c`** |
+| `__DATA.__objc_data` | `0x100` | `0x1c8` | **`+0xc8`** |
+| `__DATA.__objc_const` | `0xf0` | `0x178` | **`+0x88`** |
+| `__DATA_CONST.__auth_ptr` | `0x8` | `0x88` | **`+0x80`** |
+| `__TEXT.__constg_swiftt` | `0x38` | `0xa8` | **`+0x70`** |
+| `__TEXT.__objc_classname` | `0xae` | `0x10e` | **`+0x60`** |
+| `__DATA.__objc_selrefs` | `0x398` | `0x3f0` | **`+0x58`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x50` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x184` | `0x1bc` | **`+0x38`** |
+| `__TEXT.__swift5_fieldmd` | `0x10` | `0x48` | **`+0x38`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x2c` | **`+0x2c`** |
+| `__TEXT.__swift_as_ret` | `—` | `0x2c` | **`+0x2c`** |
+| `__TEXT.__swift5_reflstr` | `—` | `0x27` | **`+0x27`** |
+| `__TEXT.__swift5_builtin` | `—` | `0x14` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x10` | `0x18` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x4` | `0xc` | **`+0x8`** |
+| `__TEXT.__objc_methtype` | `0x79` | `0x7a` | **`+0x1`** |
+
+### Same-size Content Changes
 
 - `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_arraydata`
 - `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+
+### Other Changes
 
 ```diff
 
 -7027.0.72.2.7
--  __TEXT.__text: 0x2ea4
--  __TEXT.__auth_stubs: 0x400
--  __TEXT.__objc_stubs: 0xdc0
--  __TEXT.__objc_methlist: 0x184
--  __TEXT.__const: 0xb2
 +7027.1.36.2.7
-+  __TEXT.__text: 0x11c60
-+  __TEXT.__auth_stubs: 0x1390
-+  __TEXT.__objc_stubs: 0xf00
-+  __TEXT.__objc_methlist: 0x1bc
-+  __TEXT.__const: 0x272
-   __TEXT.__gcc_except_tab: 0x54
--  __TEXT.__cstring: 0x900
--  __TEXT.__objc_classname: 0xae
--  __TEXT.__objc_methname: 0xac2
--  __TEXT.__objc_methtype: 0x79
--  __TEXT.__constg_swiftt: 0x38
--  __TEXT.__swift5_typeref: 0x14
--  __TEXT.__swift5_fieldmd: 0x10
--  __TEXT.__swift5_types: 0x4
--  __TEXT.__unwind_info: 0x130
--  __DATA_CONST.__const: 0x178
-+  __TEXT.__cstring: 0x1454
-+  __TEXT.__objc_classname: 0x10e
-+  __TEXT.__objc_methname: 0xbce
-+  __TEXT.__objc_methtype: 0x7a
-+  __TEXT.__constg_swiftt: 0xa8
-+  __TEXT.__swift5_typeref: 0x19c
-+  __TEXT.__swift5_reflstr: 0x27
-+  __TEXT.__swift5_fieldmd: 0x48
-+  __TEXT.__swift5_capture: 0x2b8
-+  __TEXT.__swift5_builtin: 0x14
-+  __TEXT.__swift5_types: 0xc
-+  __TEXT.__swift_as_entry: 0x2c
-+  __TEXT.__swift_as_ret: 0x2c
-+  __TEXT.__swift_as_cont: 0x50
-+  __TEXT.__unwind_info: 0x450
-+  __TEXT.__eh_frame: 0x7c0
-+  __DATA_CONST.__const: 0xb70
-   __DATA_CONST.__cfstring: 0xb00
--  __DATA_CONST.__objc_classlist: 0x10
-+  __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_arraydata: 0x140
-   __DATA_CONST.__objc_arrayobj: 0xa8
--  __DATA_CONST.__auth_got: 0x210
--  __DATA_CONST.__got: 0xc0
--  __DATA_CONST.__auth_ptr: 0x8
--  __DATA.__objc_const: 0xf0
--  __DATA.__objc_selrefs: 0x398
--  __DATA.__objc_data: 0x100
--  __DATA.__data: 0x90
-+  __DATA_CONST.__auth_got: 0x9d8
-+  __DATA_CONST.__got: 0x2c0
-+  __DATA_CONST.__auth_ptr: 0x88
-+  __DATA.__objc_const: 0x178
-+  __DATA.__objc_selrefs: 0x3f0
-+  __DATA.__objc_data: 0x1c8
-+  __DATA.__data: 0x1b0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/HealthKit.framework/HealthKit
-   - /System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+
 +  - /System/Library/PrivateFrameworks/HealthContent.framework/HealthContent
 +  - /System/Library/PrivateFrameworks/HealthContentDaemon.framework/HealthContentDaemon
-   - /System/Library/PrivateFrameworks/HealthDaemon.framework/HealthDaemon
-   - /System/Library/PrivateFrameworks/HealthDaemonFoundation.framework/HealthDaemonFoundation
-   - /System/Library/PrivateFrameworks/HealthDiagnosticExtensionCore.framework/HealthDiagnosticExtensionCore
 
-   - /System/Library/PrivateFrameworks/HealthOntologyKit.framework/HealthOntologyKit
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 +  - /usr/lib/swift/libswiftAVFoundation.dylib
 +  - /usr/lib/swift/libswiftAccelerate.dylib
-   - /usr/lib/swift/libswiftCore.dylib
+
 +  - /usr/lib/swift/libswiftCoreAudio.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
+
 +  - /usr/lib/swift/libswiftCoreImage.dylib
-   - /usr/lib/swift/libswiftCoreLocation.dylib
+
 +  - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
+
 +  - /usr/lib/swift/libswiftMetal.dylib
 +  - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
+
 +  - /usr/lib/swift/libswiftQuartzCore.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
+
 +  - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
+
 -  Functions: 42
 -  Symbols:   101
 -  CStrings:  223
@@ -112,7 +78,6 @@
 +  Functions: 225
 +  Symbols:   171
 +  CStrings:  298
- 
 Symbols:
 + _NSCocoaErrorDomain
 + _OBJC_CLASS_$_NSFileManager

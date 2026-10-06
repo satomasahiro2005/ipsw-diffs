@@ -1,4 +1,4 @@
-## filesystem — Removed (1387)
+## filesystem — Removed (1393)
 
 - `/Applications/AccessoryNotificationsSourceSelection.app/PlugIns/AccessoryNotificationsSetupExtension.appex/AccessoryNotificationsSetupExtension`
 - `/Applications/AccessoryNotificationsSourceSelection.app/PlugIns/AccessoryNotificationsSetupExtension.appex/AccessoryNotificationsSetupExtension.loctable`
@@ -126,10 +126,10 @@
 - `/System/Library/Assistant/PrivateLearningPlugins/SiriPrivateLearningTTSMispronunciationPlugin.bundle/es_ES_phonesets.map.csv`
 - `/System/Library/Assistant/PrivateLearningPlugins/SiriPrivateLearningTTSMispronunciationPlugin.bundle/es_MX_phonesets.map.csv`
 - `/System/Library/Assistant/PrivateLearningPlugins/SiriPrivateLearningTTSMispronunciationPlugin.bundle/fr_FR_phonesets.map.csv`
-- `/System/Library/Audio/Tunings/AID8021/AudioCodecs/Models/agvc/v1/AGVC_NTN_d1.0.mlmodelc/model.mil.ir`
-- `/System/Library/Audio/Tunings/AID8021/AudioCodecs/Models/agvc/v1/AGVC_NTN_e1.0.mlmodelc/model.mil.ir`
-- `/System/Library/Audio/Tunings/AID8021/AudioCodecs/Models/agvc/v1/AGVC_d1.0/model.mil.ir`
-- `/System/Library/Audio/Tunings/AID8021/AudioCodecs/Models/agvc/v1/AGVC_e1.0/model.mil.ir`
+- `/System/Library/Audio/Tunings/AID8016/AudioCodecs/Models/agvc/v1/AGVC_NTN_d1.0.mlmodelc/model.mil.ir`
+- `/System/Library/Audio/Tunings/AID8016/AudioCodecs/Models/agvc/v1/AGVC_NTN_e1.0.mlmodelc/model.mil.ir`
+- `/System/Library/Audio/Tunings/AID8016/AudioCodecs/Models/agvc/v1/AGVC_d1.0/model.mil.ir`
+- `/System/Library/Audio/Tunings/AID8016/AudioCodecs/Models/agvc/v1/AGVC_e1.0/model.mil.ir`
 - `/System/Library/Audio/Tunings/Generic/AudioCodecs/Models/agvc/v1/AGVC_NTN_d1.0.mlmodelc/model.mil`
 - `/System/Library/Audio/Tunings/Generic/AudioCodecs/Models/agvc/v1/AGVC_NTN_d1.0.mlmodelc/weights/weight.bin`
 - `/System/Library/Audio/Tunings/Generic/AudioCodecs/Models/agvc/v1/AGVC_NTN_e1.0.mlmodelc/model.mil`
@@ -137,17 +137,26 @@
 - `/System/Library/Carrier Bundles/iPhone/Chat_LTE_US.bundle/ERI.plist`
 - `/System/Library/Carrier Bundles/iPhone/Chat_LTE_US.bundle/Info.plist`
 - `/System/Library/Carrier Bundles/iPhone/Chat_LTE_US.bundle/carrier.plist`
+- `/System/Library/Carrier Bundles/iPhone/Chat_LTE_US.bundle/overrides_D93_D94_D47_D48.der.pri`
+- `/System/Library/Carrier Bundles/iPhone/Chat_LTE_US.bundle/overrides_D93_D94_D47_D48.plist`
 - `/System/Library/Carrier Bundles/iPhone/Chat_LTE_US.bundle/signatures/common.plist`
+- `/System/Library/Carrier Bundles/iPhone/Chat_LTE_US.bundle/signatures/overrides_D93_D94_D47_D48.plist`
 - `/System/Library/Carrier Bundles/iPhone/Chat_LTE_US.bundle/supported_devices.plist`
 - `/System/Library/Carrier Bundles/iPhone/Default.bundle/UnsupportedRATsTable.txt`
 - `/System/Library/Carrier Bundles/iPhone/NWM_LTE_US.bundle/ERI.plist`
 - `/System/Library/Carrier Bundles/iPhone/NWM_LTE_US.bundle/Info.plist`
 - `/System/Library/Carrier Bundles/iPhone/NWM_LTE_US.bundle/carrier.plist`
+- `/System/Library/Carrier Bundles/iPhone/NWM_LTE_US.bundle/overrides_D93_D94_D47_D48.der.pri`
+- `/System/Library/Carrier Bundles/iPhone/NWM_LTE_US.bundle/overrides_D93_D94_D47_D48.plist`
 - `/System/Library/Carrier Bundles/iPhone/NWM_LTE_US.bundle/signatures/common.plist`
+- `/System/Library/Carrier Bundles/iPhone/NWM_LTE_US.bundle/signatures/overrides_D93_D94_D47_D48.plist`
 - `/System/Library/Carrier Bundles/iPhone/NWM_LTE_US.bundle/supported_devices.plist`
 - `/System/Library/Carrier Bundles/iPhone/Nemont_LTE_US.bundle/Info.plist`
 - `/System/Library/Carrier Bundles/iPhone/Nemont_LTE_US.bundle/carrier.plist`
+- `/System/Library/Carrier Bundles/iPhone/Nemont_LTE_US.bundle/overrides_D93_D94_D47_D48.der.pri`
+- `/System/Library/Carrier Bundles/iPhone/Nemont_LTE_US.bundle/overrides_D93_D94_D47_D48.plist`
 - `/System/Library/Carrier Bundles/iPhone/Nemont_LTE_US.bundle/signatures/common.plist`
+- `/System/Library/Carrier Bundles/iPhone/Nemont_LTE_US.bundle/signatures/overrides_D93_D94_D47_D48.plist`
 - `/System/Library/Carrier Bundles/iPhone/Nemont_LTE_US.bundle/supported_devices.plist`
 - `/System/Library/Carrier Bundles/iPhone/PTCI_LTE_US.bundle/ERI.plist`
 - `/System/Library/Carrier Bundles/iPhone/PTCI_LTE_US.bundle/Info.plist`
@@ -241,8 +250,8 @@
 - `/System/Library/Health/FeedItemPlugins/MenstrualCyclesAppPlugin.healthplugin/pregnancy-setup.ca/assets/walking steadness.png`
 - `/System/Library/Health/FeedItemPlugins/MenstrualCyclesAppPlugin.healthplugin/pregnancy-setup.ca/index.xml`
 - `/System/Library/Health/FeedItemPlugins/MenstrualCyclesAppPlugin.healthplugin/pregnancy-setup.ca/main.caml`
-- `/System/Library/ImagingNetworks/hairnet-v1.H18.E5.espresso.bundle/H18.bundle/H18.e5`
-- `/System/Library/ImagingNetworks/hairnet-v1.H18.E5.espresso.bundle/H18.bundle/main/segment_0__ane/net.hwx`
+- `/System/Library/ImagingNetworks/hairnet-v1.H17.E5.espresso.bundle/H17.bundle/H17.e5`
+- `/System/Library/ImagingNetworks/hairnet-v1.H17.E5.espresso.bundle/H17.bundle/main/segment_0__ane/net.hwx`
 - `/System/Library/LaunchDaemons/com.apple.alwaysonexclavesd.test.plist`
 - `/System/Library/Messages/iMessageApps/MessagesPolls.bundle/Localizable.loctable`
 - `/System/Library/NanoPreferenceBundles/General/SmartStackSettingsPhone.bundle/SmartStackSettingsPhone-Info.plist`
@@ -799,12 +808,9 @@
 - `/System/Library/PrivateFrameworks/AGXCompilerCore-S2A8.framework/PlugIns/AGXCompilerCrashLogs-S2A8.appex/Info.plist`
 - `/System/Library/PrivateFrameworks/AGXCompilerCore-S2A8.framework/PlugIns/AGXCompilerCrashLogs-S2A8.appex/_CodeSignature/CodeResources`
 - `/System/Library/PrivateFrameworks/AGXCompilerCore-S2A8.framework/_CodeSignature/CodeResources`
-- `/System/Library/PrivateFrameworks/ANSTKit.framework/Models/fsinc_v2d3.mlmodelc/model.bundle/H18.bundle/H18.e5`
-- `/System/Library/PrivateFrameworks/ANSTKit.framework/Models/fsinc_v2d3.mlmodelc/model.bundle/H18.bundle/ane_compile/multiprocedure/model.hwx`
+- `/System/Library/PrivateFrameworks/ANSTKit.framework/Models/fsinc_v2d3.mlmodelc/model.bundle/H17.bundle/H17.e5`
+- `/System/Library/PrivateFrameworks/ANSTKit.framework/Models/fsinc_v2d3.mlmodelc/model.bundle/H17.bundle/ane_compile/multiprocedure/model.hwx`
 - `/System/Library/PrivateFrameworks/ASOctaneSupport.framework/XPCServices/ASOctaneSupportXPCService.xpc/sk2-private.pem`
-- `/System/Library/PrivateFrameworks/AppleDepth.framework/MLModels/CMM/Compiled-H18-v53-v54-v57/build_config.plist`
-- `/System/Library/PrivateFrameworks/AppleDepth.framework/MLModels/CMM/Compiled-H18-v53-v54-v57/model.bundle/H18.bundle/H18.e5`
-- `/System/Library/PrivateFrameworks/AppleDepth.framework/MLModels/CMM/Compiled-H18-v53-v54-v57/model.bundle/H18.bundle/main_height288_width512/main_ane/model.hwx`
 - `/System/Library/PrivateFrameworks/AppleDepth.framework/MLModels/CMM/model.json`
 - `/System/Library/PrivateFrameworks/AssetMetricsCore.framework/BootupToAssetAvailabilityTime.sql`
 - `/System/Library/PrivateFrameworks/AssetMetricsCore.framework/Info.plist`
@@ -826,22 +832,22 @@
 - `/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v7.0.0/text_md7_6bit_ctx_512_77.mlmodelc/analytics/coremldata.bin`
 - `/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v7.0.0/text_md7_6bit_ctx_512_77.mlmodelc/coremldata.bin`
 - `/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v7.0.0/text_md7_6bit_ctx_512_77.mlmodelc/metadata.json`
-- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v7.0.0/text_md7_6bit_ctx_512_77.mlmodelc/model.specialization.bundle/H18.bundle/H18.e5`
-- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v7.0.0/text_md7_6bit_ctx_512_77.mlmodelc/model.specialization.bundle/H18.bundle/ane_compile/multiprocedure/model.hwx`
-- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v7.0.0/text_md7_6bit_ctx_512_77.mlmodelc/model.specialization.bundle/H18.bundle/main_ctx_512/main_ctx_512_bnns/bnns_program.bnnsir`
-- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v7.0.0/text_md7_6bit_ctx_512_77.mlmodelc/model.specialization.bundle/H18.bundle/main_ctx_77/main_ctx_77_bnns/bnns_program.bnnsir`
+- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v7.0.0/text_md7_6bit_ctx_512_77.mlmodelc/model.specialization.bundle/H17.bundle/H17.e5`
+- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v7.0.0/text_md7_6bit_ctx_512_77.mlmodelc/model.specialization.bundle/H17.bundle/ane_compile/multiprocedure/model.hwx`
+- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v7.0.0/text_md7_6bit_ctx_512_77.mlmodelc/model.specialization.bundle/H17.bundle/main_ctx_512/main_ctx_512_bnns/bnns_program.bnnsir`
+- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v7.0.0/text_md7_6bit_ctx_512_77.mlmodelc/model.specialization.bundle/H17.bundle/main_ctx_77/main_ctx_77_bnns/bnns_program.bnnsir`
 - `/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v7.0.0/token_md7_6bit.mlmodelc/analytics/coremldata.bin`
 - `/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v7.0.0/token_md7_6bit.mlmodelc/coremldata.bin`
 - `/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v7.0.0/token_md7_6bit.mlmodelc/metadata.json`
-- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v7.0.0/token_md7_6bit.mlmodelc/model.specialization.bundle/H18.bundle/H18.e5`
-- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v7.0.0/token_md7_6bit.mlmodelc/model.specialization.bundle/H18.bundle/main_c5dc6880/main_bnns/bnns_program.bnnsir`
+- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v7.0.0/token_md7_6bit.mlmodelc/model.specialization.bundle/H17.bundle/H17.e5`
+- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v7.0.0/token_md7_6bit.mlmodelc/model.specialization.bundle/H17.bundle/main_c5dc6880/main_bnns/bnns_program.bnnsir`
 - `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v120_ane_8bit_combined.mlmodelc/analytics/coremldata.bin`
 - `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v120_ane_8bit_combined.mlmodelc/coremldata.bin`
 - `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v120_ane_8bit_combined.mlmodelc/metadata.json`
-- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v120_ane_8bit_combined.mlmodelc/model.specialization.bundle/H18.bundle/H18.e5`
-- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v120_ane_8bit_combined.mlmodelc/model.specialization.bundle/H18.bundle/ane_compile/multiprocedure/model.hwx`
-- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v120_ane_8bit_combined.mlmodelc/model.specialization.bundle/H18.bundle/main_ctx_128_090f2853/main_ctx_128_bnns/bnns_program.bnnsir`
-- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v120_ane_8bit_combined.mlmodelc/model.specialization.bundle/H18.bundle/main_ctx_512_1fd2fbc1/main_ctx_512_bnns/bnns_program.bnnsir`
+- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v120_ane_8bit_combined.mlmodelc/model.specialization.bundle/H17.bundle/H17.e5`
+- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v120_ane_8bit_combined.mlmodelc/model.specialization.bundle/H17.bundle/ane_compile/multiprocedure/model.hwx`
+- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v120_ane_8bit_combined.mlmodelc/model.specialization.bundle/H17.bundle/main_ctx_128_090f2853/main_ctx_128_bnns/bnns_program.bnnsir`
+- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v120_ane_8bit_combined.mlmodelc/model.specialization.bundle/H17.bundle/main_ctx_512_1fd2fbc1/main_ctx_512_bnns/bnns_program.bnnsir`
 - `/System/Library/PrivateFrameworks/EmbeddingCore.framework/text_safety_md7_v4.espresso.net`
 - `/System/Library/PrivateFrameworks/EmbeddingCore.framework/text_safety_md7_v4.espresso.shape`
 - `/System/Library/PrivateFrameworks/EmbeddingCore.framework/text_safety_md7_v4.espresso.weights`
@@ -939,8 +945,8 @@
 - `/System/Library/PrivateFrameworks/IntelligenceFlowPlannerSupport.framework/asset_root/zh_HK/CATALOG/system_prompt_metadata/system_prompt_afmv11.json`
 - `/System/Library/PrivateFrameworks/IntelligenceFlowPlannerSupport.framework/asset_root/zh_TW/CATALOG/system_prompt_metadata/system_prompt_afmv11.json`
 - `/System/Library/PrivateFrameworks/MLModelCache.framework/CMakeLists.txt`
-- `/System/Library/PrivateFrameworks/MediaAnalysis.framework/mubb_md7.bundle/H18.bundle/H18.e5`
-- `/System/Library/PrivateFrameworks/MediaAnalysis.framework/mubb_md7.bundle/H18.bundle/ane_compile/multiprocedure/model.hwx`
+- `/System/Library/PrivateFrameworks/MediaAnalysis.framework/mubb_md7.bundle/H17.bundle/H17.e5`
+- `/System/Library/PrivateFrameworks/MediaAnalysis.framework/mubb_md7.bundle/H17.bundle/ane_compile/multiprocedure/model.hwx`
 - `/System/Library/PrivateFrameworks/MediaML.framework/default_factors_314.pb`
 - `/System/Library/PrivateFrameworks/MediaPlaybackCore.framework/default_factors_MUSIC_PLAYBACK_PERFORMANCE_ASSET_CACHE_fbs.bin`
 - `/System/Library/PrivateFrameworks/MetricsFramework.framework/BootupToAssetAvailabilityTime.sql`
@@ -1015,8 +1021,8 @@
 - `/System/Library/PrivateFrameworks/Visage.framework/VGFaceSyncH5Models.bundle/_CodeSignature/CodeRequirements-1`
 - `/System/Library/PrivateFrameworks/Visage.framework/VGFaceSyncH5Models.bundle/_CodeSignature/CodeResources`
 - `/System/Library/PrivateFrameworks/Visage.framework/VGFaceSyncH5Models.bundle/_CodeSignature/CodeSignature`
-- `/System/Library/PrivateFrameworks/VisualIntelligenceCore.framework/visualgrounding_md9_1_v1_t5ysibp2ka_epoch_10_categorynumber32_palettized.bundle/H18.bundle/H18.e5`
-- `/System/Library/PrivateFrameworks/VisualIntelligenceCore.framework/visualgrounding_md9_1_v1_t5ysibp2ka_epoch_10_categorynumber32_palettized.bundle/H18.bundle/main/main_ane/model.hwx`
+- `/System/Library/PrivateFrameworks/VisualIntelligenceCore.framework/visualgrounding_md9_1_v1_t5ysibp2ka_epoch_10_categorynumber32_palettized.bundle/H17.bundle/H17.e5`
+- `/System/Library/PrivateFrameworks/VisualIntelligenceCore.framework/visualgrounding_md9_1_v1_t5ysibp2ka_epoch_10_categorynumber32_palettized.bundle/H17.bundle/main/main_ane/model.hwx`
 - `/System/Library/PrivateFrameworks/VisualIntelligenceCore.framework/visualgrounding_md9_1_v1_t5ysibp2ka_epoch_10_categorynumber32_palettized_text_feats.bin`
 - `/System/Library/PrivateFrameworks/VoiceServices.framework/TTSResources/PreinstallAssets/en-IN_aman/AssetData/fastspeech2/fastspeech2_decoder.mlmodelc/weights/weights.bin`
 - `/System/Library/PrivateFrameworks/VoiceServices.framework/TTSResources/PreinstallAssets/en-IN_aman/AssetData/fastspeech2/fastspeech2_encoder.mlmodelc/weights/weights.bin`
@@ -1384,6 +1390,6 @@
 - `/private/var/staged_system_apps/VoiceMemos.app/zh_CN.lproj/nlu.appintents/3c7549acb51b516fa16435a4e3eaba98.version`
 - `/private/var/staged_system_apps/VoiceMemos.app/zh_HK.lproj/nlu.appintents/00e26721de6eb8eccc0c39cf06d1fe38.version`
 - `/private/var/staged_system_apps/VoiceMemos.app/zh_TW.lproj/nlu.appintents/e1830de060bdcf4ad962c4c8d53208f4.version`
-- `/usr/share/firmware/bluetooth/BCM4399C2_24.1.230.1311_PCIE_Nepenthes_CLPC_OS_STATS_20260429.bin`
-- `/usr/share/firmware/bluetooth/BCM4399C2_24.1.230.1312_PCIE_Nepenthes_CLPC_OS_USI_20260429.bin`
+- `/usr/share/firmware/bluetooth/BCM4399C2_24.1.230.1309_PCIE_Cephalotus_CLPC_OS_STATS_20260429.bin`
+- `/usr/share/firmware/bluetooth/BCM4399C2_24.1.230.1310_PCIE_Cephalotus_CLPC_OS_USI_20260429.bin`
 - `/usr/standalone/firmware/SLAM/Stockholm91.measurements.plist`

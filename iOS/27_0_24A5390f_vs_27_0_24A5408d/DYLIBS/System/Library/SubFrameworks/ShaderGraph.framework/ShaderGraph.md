@@ -2,88 +2,48 @@
 
 > `/System/Library/SubFrameworks/ShaderGraph.framework/ShaderGraph`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__swift5_reflstr` | `0x3511` | `0x38d1` | **`+0x3c0`** |
+| `__DATA.__bss` | `0xefc0` | `0xf2c0` | **`+0x300`** |
+| `__TEXT.__const` | `0x12860` | `0x12b60` | **`+0x300`** |
+| `__TEXT.__text` | `0x1e93f0` | `0x1e96a0` | **`+0x2b0`** |
+| `__TEXT.__swift5_fieldmd` | `0x4ae0` | `0x4c88` | **`+0x1a8`** |
+| `__AUTH.__objc_data` | `0x5f0` | `0x6f8` | **`+0x108`** |
+| `__TEXT.__cstring` | `0x1c17d` | `0x1c26d` | **`+0xf0`** |
+| `__AUTH_CONST.__const` | `0x191b0` | `0x19240` | **`+0x90`** |
+| `__AUTH_CONST.__objc_const` | `0x69e8` | `0x6a58` | **`+0x70`** |
+| `__TEXT.__constg_swiftt` | `0x3a1c` | `0x3a60` | **`+0x44`** |
+| `__DATA_DIRTY.__objc_data` | `0xcf8` | `0xcc0` | **`-0x38`** |
+| `__TEXT.__swift5_assocty` | `0x6e8` | `0x718` | **`+0x30`** |
+| `__AUTH.__data` | `0x5f0` | `0x610` | **`+0x20`** |
+| `__TEXT.__eh_frame` | `0x86ec` | `0x86cc` | **`-0x20`** |
+| `__TEXT.__objc_methlist` | `0xf30` | `0xf48` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0x81c` | `0x834` | **`+0x18`** |
+| `__DATA_CONST.__const` | `0xa18` | `0xa28` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x5588` | `0x5598` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x168` | `0x170` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x4b8` | `0x4bc` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__oslogstring`
+
+### Other Changes
 
 ```diff
 
 -159.0.5.0.0
--  __TEXT.__text: 0x1e93f0
--  __TEXT.__objc_methlist: 0xf30
--  __TEXT.__const: 0x12860
--  __TEXT.__cstring: 0x1c17d
 +159.0.7.0.2
-+  __TEXT.__text: 0x1e96a0
-+  __TEXT.__objc_methlist: 0xf48
-+  __TEXT.__const: 0x12b60
-+  __TEXT.__cstring: 0x1c26d
-   __TEXT.__oslogstring: 0x13f9
-   __TEXT.__swift5_typeref: 0x3e32
--  __TEXT.__swift5_reflstr: 0x3511
--  __TEXT.__swift5_assocty: 0x6e8
--  __TEXT.__constg_swiftt: 0x3a1c
-+  __TEXT.__swift5_reflstr: 0x38d1
-+  __TEXT.__swift5_assocty: 0x718
-+  __TEXT.__constg_swiftt: 0x3a60
-   __TEXT.__swift5_builtin: 0x30c
-   __TEXT.__swift5_mpenum: 0x11c
--  __TEXT.__swift5_fieldmd: 0x4ae0
--  __TEXT.__swift5_proto: 0x81c
--  __TEXT.__swift5_types: 0x4b8
-+  __TEXT.__swift5_fieldmd: 0x4c88
-+  __TEXT.__swift5_proto: 0x834
-+  __TEXT.__swift5_types: 0x4bc
-   __TEXT.__swift5_capture: 0x960
-   __TEXT.__swift5_protos: 0x44
--  __TEXT.__unwind_info: 0x5588
--  __TEXT.__eh_frame: 0x86ec
-+  __TEXT.__unwind_info: 0x5598
-+  __TEXT.__eh_frame: 0x86cc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xa18
--  __DATA_CONST.__objc_classlist: 0x168
-+  __DATA_CONST.__const: 0xa28
-+  __DATA_CONST.__objc_classlist: 0x170
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x98
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x808
-   __DATA_CONST.__objc_protorefs: 0x50
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x191b0
--  __AUTH_CONST.__objc_const: 0x69e8
-+  __AUTH_CONST.__const: 0x19240
-+  __AUTH_CONST.__objc_const: 0x6a58
-   __AUTH_CONST.__auth_got: 0x11c8
--  __AUTH.__objc_data: 0x5f0
--  __AUTH.__data: 0x5f0
-+  __AUTH.__objc_data: 0x6f8
-+  __AUTH.__data: 0x610
-   __DATA.__data: 0x3890
--  __DATA.__bss: 0xefc0
-+  __DATA.__bss: 0xf2c0
-   __DATA.__common: 0x1ff8
--  __DATA_DIRTY.__objc_data: 0xcf8
-+  __DATA_DIRTY.__objc_data: 0xcc0
-   __DATA_DIRTY.__data: 0x1b98
-   __DATA_DIRTY.__common: 0x40
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8248
--  Symbols:   18336
+-  Symbols:   18263
 -  CStrings:  3042
 +  Functions: 8265
-+  Symbols:   18395
++  Symbols:   18322
 +  CStrings:  3050
- 
 Symbols:
 + _$s11ShaderGraph0aB7ServiceC13createLibrary4from6device7optionsSo10MTLLibrary_pAA12SGREMaterialCSg_So9MTLDevice_pSgAA0J21CompilationOptions_v2CtKFZ
 + _$s11ShaderGraph0aB7ServiceC13createLibrary4from6device7optionsSo10MTLLibrary_pAA12SGREMaterialCSg_So9MTLDevice_pSgAA0J21CompilationOptions_v2CtKFZ6$deferL_yyF

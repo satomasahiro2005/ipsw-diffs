@@ -2,39 +2,27 @@
 
 > `/usr/lib/libnfrestore.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xceac` | `0x10cd0` | **`+0x3e24`** |
+| `__TEXT.__cstring` | `0x2181` | `0x2db2` | **`+0xc31`** |
+| `__TEXT.__oslogstring` | `0x18cb` | `0x20bf` | **`+0x7f4`** |
+| `__AUTH_CONST.__cfstring` | `0x6c0` | `0x940` | **`+0x280`** |
+| `__AUTH_CONST.__auth_got` | `0x4b8` | `0x538` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x120` | `0x130` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
- 370.42.1.0.0
--  __TEXT.__text: 0xceac
-+  __TEXT.__text: 0x10cd0
-   __TEXT.__const: 0x80
--  __TEXT.__cstring: 0x2181
--  __TEXT.__oslogstring: 0x18cb
--  __TEXT.__unwind_info: 0x120
-+  __TEXT.__cstring: 0x2db2
-+  __TEXT.__oslogstring: 0x20bf
-+  __TEXT.__unwind_info: 0x130
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x30
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__cfstring: 0x6c0
--  __AUTH_CONST.__auth_got: 0x4b8
-+  __AUTH_CONST.__cfstring: 0x940
-+  __AUTH_CONST.__auth_got: 0x538
-   __DATA.__common: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-
-   - /usr/lib/libPN548_API.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libnfshared.dylib
 -  Functions: 53
 -  Symbols:   186
 -  CStrings:  492
 +  Functions: 57
 +  Symbols:   202
 +  CStrings:  632
- 
 Symbols:
 + _CFDataCreate
 + _CFStringCreateWithFormat

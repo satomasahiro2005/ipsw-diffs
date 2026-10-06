@@ -2,82 +2,54 @@
 
 > `/System/Library/Frameworks/AssetsLibrary.framework/Support/assetsd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x18ecc` | `0x1b3c8` | **`+0x24fc`** |
+| `__TEXT.__objc_methname` | `0x5851` | `0x5fc3` | **`+0x772`** |
+| `__TEXT.__objc_stubs` | `0x4ca0` | `0x5380` | **`+0x6e0`** |
+| `__TEXT.__oslogstring` | `0x4264` | `0x46bb` | **`+0x457`** |
+| `__DATA.__objc_const` | `0x2dc8` | `0x3120` | **`+0x358`** |
+| `__TEXT.__cstring` | `0x1776` | `0x1a89` | **`+0x313`** |
+| `__DATA_CONST.__cfstring` | `0xb80` | `0xde0` | **`+0x260`** |
+| `__DATA.__objc_selrefs` | `0x1508` | `0x16c0` | **`+0x1b8`** |
+| `__TEXT.__objc_methlist` | `0xe74` | `0xfe4` | **`+0x170`** |
+| `__TEXT.__gcc_except_tab` | `0x624` | `0x780` | **`+0x15c`** |
+| `__DATA.__objc_data` | `0xe10` | `0xeb0` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0xf38` | `0xfd8` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x568` | `0x5e8` | **`+0x80`** |
+| `__TEXT.__objc_methtype` | `0x98d` | `0xa06` | **`+0x79`** |
+| `__DATA_CONST.__got` | `0x720` | `0x790` | **`+0x70`** |
+| `__TEXT.__auth_stubs` | `0xb50` | `0xbc0` | **`+0x70`** |
+| `__TEXT.__objc_classname` | `0x70b` | `0x74e` | **`+0x43`** |
+| `__DATA_CONST.__auth_got` | `0x5b8` | `0x5f0` | **`+0x38`** |
+| `__DATA_CONST.__objc_intobj` | `0xa8` | `0xd8` | **`+0x30`** |
+| `__DATA.__objc_ivar` | `0x7c` | `0xa8` | **`+0x2c`** |
+| `__TEXT.__const` | `0x120` | `0x140` | **`+0x20`** |
+| `__DATA_CONST.__objc_arrayobj` | `0x48` | `0x60` | **`+0x18`** |
+| `__DATA_CONST.__objc_arraydata` | `0x40` | `0x50` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x168` | `0x178` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -912.0.234.0.0
--  __TEXT.__text: 0x18ecc
--  __TEXT.__auth_stubs: 0xb50
--  __TEXT.__objc_stubs: 0x4ca0
--  __TEXT.__objc_methlist: 0xe74
 +912.0.235.0.0
-+  __TEXT.__text: 0x1b3c8
-+  __TEXT.__auth_stubs: 0xbc0
-+  __TEXT.__objc_stubs: 0x5380
-+  __TEXT.__objc_methlist: 0xfe4
-   __TEXT.__dlopen_cstrs: 0x11b
--  __TEXT.__const: 0x120
--  __TEXT.__gcc_except_tab: 0x624
--  __TEXT.__objc_classname: 0x70b
--  __TEXT.__objc_methname: 0x5851
--  __TEXT.__objc_methtype: 0x98d
--  __TEXT.__oslogstring: 0x4264
--  __TEXT.__cstring: 0x1776
--  __TEXT.__unwind_info: 0x568
--  __DATA_CONST.__const: 0xf38
--  __DATA_CONST.__cfstring: 0xb80
--  __DATA_CONST.__objc_classlist: 0x168
-+  __TEXT.__const: 0x140
-+  __TEXT.__gcc_except_tab: 0x780
-+  __TEXT.__objc_classname: 0x74e
-+  __TEXT.__objc_methname: 0x5fc3
-+  __TEXT.__objc_methtype: 0xa06
-+  __TEXT.__oslogstring: 0x46bb
-+  __TEXT.__cstring: 0x1a89
-+  __TEXT.__unwind_info: 0x5e8
-+  __DATA_CONST.__const: 0xfd8
-+  __DATA_CONST.__cfstring: 0xde0
-+  __DATA_CONST.__objc_classlist: 0x178
-   __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x58
--  __DATA_CONST.__objc_intobj: 0xa8
--  __DATA_CONST.__objc_arraydata: 0x40
--  __DATA_CONST.__objc_arrayobj: 0x48
--  __DATA_CONST.__auth_got: 0x5b8
--  __DATA_CONST.__got: 0x720
--  __DATA.__objc_const: 0x2dc8
--  __DATA.__objc_selrefs: 0x1508
--  __DATA.__objc_ivar: 0x7c
--  __DATA.__objc_data: 0xe10
-+  __DATA_CONST.__objc_intobj: 0xd8
-+  __DATA_CONST.__objc_arraydata: 0x50
-+  __DATA_CONST.__objc_arrayobj: 0x60
-+  __DATA_CONST.__auth_got: 0x5f0
-+  __DATA_CONST.__got: 0x790
-+  __DATA.__objc_const: 0x3120
-+  __DATA.__objc_selrefs: 0x16c0
-+  __DATA.__objc_ivar: 0xa8
-+  __DATA.__objc_data: 0xeb0
-   __DATA.__data: 0x360
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 366
 -  Symbols:   421
 -  CStrings:  1283
 +  Functions: 402
 +  Symbols:   442
 +  CStrings:  1398
- 
 Symbols:
 + _NSTemporaryDirectory
 + _OBJC_CLASS_$_NSManagedObjectID

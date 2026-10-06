@@ -2,95 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/Spotlight.framework/Spotlight`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9fa3c` | `0xa3cf8` | **`+0x42bc`** |
+| `__AUTH_CONST.__objc_const` | `0x4700` | `0x4ea0` | **`+0x7a0`** |
+| `__TEXT.__objc_methlist` | `0x2ad4` | `0x2d7c` | **`+0x2a8`** |
+| `__TEXT.__gcc_except_tab` | `0x55ec` | `0x5850` | **`+0x264`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2e58` | `0x30b0` | **`+0x258`** |
+| `__TEXT.__cstring` | `0x357c` | `0x36dc` | **`+0x160`** |
+| `__AUTH.__objc_data` | `0x468` | `0x558` | **`+0xf0`** |
+| `__AUTH_CONST.__cfstring` | `0x3000` | `0x30c0` | **`+0xc0`** |
+| `__TEXT.__oslogstring` | `0x5842` | `0x58f2` | **`+0xb0`** |
+| `__DATA.__objc_ivar` | `0x3c4` | `0x440` | **`+0x7c`** |
+| `__TEXT.__unwind_info` | `0x1828` | `0x1898` | **`+0x70`** |
+| `__AUTH_CONST.__const` | `0x1488` | `0x14e8` | **`+0x60`** |
+| `__AUTH_CONST.__auth_got` | `0x1368` | `0x13a8` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x1918` | `0x1950` | **`+0x38`** |
+| `__DATA.__bss` | `0x9f0` | `0xa20` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0x140` | `0x158` | **`+0x18`** |
+| `__DATA_CONST.__const` | `0xe28` | `0xe30` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0xa0` | `0xa8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2465.1.3.0.0
--  __TEXT.__text: 0x9c8e0
--  __TEXT.__objc_methlist: 0x2ad4
 +2465.1.7.0.0
-+  __TEXT.__text: 0xa0b10
-+  __TEXT.__objc_methlist: 0x2d7c
-   __TEXT.__const: 0xe74
--  __TEXT.__oslogstring: 0x5842
--  __TEXT.__cstring: 0x357c
--  __TEXT.__gcc_except_tab: 0x55ec
-+  __TEXT.__oslogstring: 0x58f2
-+  __TEXT.__cstring: 0x36dc
-+  __TEXT.__gcc_except_tab: 0x5850
-   __TEXT.__ustring: 0x6
-   __TEXT.__swift5_typeref: 0x7da
-   __TEXT.__swift5_fieldmd: 0x28c
 
-   __TEXT.__swift5_capture: 0x3f4
-   __TEXT.__swift5_assocty: 0x60
-   __TEXT.__swift5_builtin: 0x3c
--  __TEXT.__unwind_info: 0x1b00
-+  __TEXT.__unwind_info: 0x1b78
-   __TEXT.__eh_frame: 0x1200
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xe28
--  __DATA_CONST.__objc_classlist: 0x140
-+  __DATA_CONST.__const: 0xe30
-+  __DATA_CONST.__objc_classlist: 0x158
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2e58
-+  __DATA_CONST.__objc_selrefs: 0x30b0
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0xa0
-+  __DATA_CONST.__objc_superrefs: 0xa8
-   __DATA_CONST.__objc_arraydata: 0x3e8
--  __DATA_CONST.__got: 0x1918
--  __AUTH_CONST.__const: 0x1488
--  __AUTH_CONST.__cfstring: 0x3000
--  __AUTH_CONST.__objc_const: 0x4700
-+  __DATA_CONST.__got: 0x1950
-+  __AUTH_CONST.__const: 0x14e8
-+  __AUTH_CONST.__cfstring: 0x30c0
-+  __AUTH_CONST.__objc_const: 0x4ea0
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x270
-   __AUTH_CONST.__objc_arrayobj: 0xc0
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x1368
--  __AUTH.__objc_data: 0x468
-+  __AUTH_CONST.__auth_got: 0x13a8
-+  __AUTH.__objc_data: 0x558
-   __AUTH.__data: 0x50
--  __DATA.__objc_ivar: 0x3c4
-+  __DATA.__objc_ivar: 0x440
-   __DATA.__data: 0x6d8
-   __DATA_DIRTY.__objc_data: 0xad0
-   __DATA_DIRTY.__data: 0x360
-
-   - /System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
-   - /System/Library/Frameworks/NaturalLanguage.framework/NaturalLanguage
-   - /System/Library/Frameworks/SafariServices.framework/SafariServices
 +  - /System/Library/Frameworks/Security.framework/Security
-   - /System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers
-   - /System/Library/PrivateFrameworks/AppPredictionClient.framework/AppPredictionClient
-+  - /System/Library/PrivateFrameworks/AppProtection.framework/AppProtection
-   - /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
-   - /System/Library/PrivateFrameworks/Calculate.framework/Calculate
-   - /System/Library/PrivateFrameworks/ClipServices.framework/ClipServices
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/PrivateFrameworks/AppProtection.framework/AppProtection
+
 -  Functions: 1735
 -  Symbols:   3201
 -  CStrings:  939
 +  Functions: 1813
 +  Symbols:   3341
 +  CStrings:  950
- 
 Symbols:
 + +[SPBundleFilter applyFiltering:context:]
 + -[SFGenerativeSearchResultContainer classForCoder]

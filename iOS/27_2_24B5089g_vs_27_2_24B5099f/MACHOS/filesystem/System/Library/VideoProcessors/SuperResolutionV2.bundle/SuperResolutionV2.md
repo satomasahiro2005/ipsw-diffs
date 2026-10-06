@@ -2,75 +2,49 @@
 
 > `/System/Library/VideoProcessors/SuperResolutionV2.bundle/SuperResolutionV2`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e0fc` | `0x10a58` | **`-0xd6a4`** |
+| `__TEXT.__oslogstring` | `0x5258` | `—` | **`-0x5258`** |
+| `__TEXT.__cstring` | `0x33cb` | `0x1300` | **`-0x20cb`** |
+| `__DATA_CONST.__cfstring` | `0xae0` | `0xa60` | **`-0x80`** |
+| `__DATA.__common` | `0x70` | `—` | **`-0x70`** |
+| `__TEXT.__unwind_info` | `0x278` | `0x220` | **`-0x58`** |
+| `__TEXT.__auth_stubs` | `0x510` | `0x4d0` | **`-0x40`** |
+| `__TEXT.__const` | `0xd0` | `0xa0` | **`-0x30`** |
+| `__DATA_CONST.__auth_got` | `0x290` | `0x270` | **`-0x20`** |
+| `__DATA_CONST.__got` | `0xd0` | `0xe8` | **`+0x18`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
 - `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_arraydata`
 - `__DATA_CONST.__objc_arrayobj`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
 -764.40.5.0.0
--  __TEXT.__text: 0x1dd1c
--  __TEXT.__auth_stubs: 0x510
 +764.40.7.0.0
-+  __TEXT.__text: 0x1076c
-+  __TEXT.__auth_stubs: 0x4d0
-   __TEXT.__objc_stubs: 0xce0
-   __TEXT.__objc_methlist: 0xae4
--  __TEXT.__const: 0xd0
--  __TEXT.__cstring: 0x33cb
-+  __TEXT.__cstring: 0x1300
-   __TEXT.__objc_methname: 0x19ba
--  __TEXT.__oslogstring: 0x5258
-   __TEXT.__objc_classname: 0x17f
-   __TEXT.__objc_methtype: 0xb32
--  __TEXT.__unwind_info: 0x5b0
-+  __TEXT.__const: 0xa0
-+  __TEXT.__unwind_info: 0x2b0
-   __DATA_CONST.__const: 0x30
--  __DATA_CONST.__cfstring: 0xae0
-+  __DATA_CONST.__cfstring: 0xa60
-   __DATA_CONST.__objc_classlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   __DATA_CONST.__objc_intobj: 0x150
-   __DATA_CONST.__objc_arraydata: 0x50
-   __DATA_CONST.__objc_arrayobj: 0x78
--  __DATA_CONST.__auth_got: 0x290
--  __DATA_CONST.__got: 0xd0
-+  __DATA_CONST.__auth_got: 0x270
-+  __DATA_CONST.__got: 0xe8
-   __DATA.__objc_const: 0x2508
-   __DATA.__objc_selrefs: 0x4e8
-   __DATA.__objc_ivar: 0x2b8
-   __DATA.__objc_data: 0x280
-   __DATA.__data: 0x1e0
--  __DATA.__common: 0x70
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-   - /System/Library/Frameworks/CoreVideo.framework/CoreVideo
-
-   - /System/Library/PrivateFrameworks/Espresso.framework/Espresso
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 604
 -  Symbols:   117
 -  CStrings:  928
 +  Functions: 337
 +  Symbols:   113
 +  CStrings:  526
- 
 Symbols:
 + _FigSignalErrorAtGM
 + _fig_log_get_emitter

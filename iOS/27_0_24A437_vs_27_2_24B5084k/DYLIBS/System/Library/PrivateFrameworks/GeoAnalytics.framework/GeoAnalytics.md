@@ -2,85 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/GeoAnalytics.framework/GeoAnalytics`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x97304` | `0x98d38` | **`+0x1a34`** |
+| `__AUTH_CONST.__objc_const` | `0x2e98` | `0x33b8` | **`+0x520`** |
+| `__AUTH_CONST.__cfstring` | `0x14600` | `0x14800` | **`+0x200`** |
+| `__DATA_CONST.__objc_selrefs` | `0x41b0` | `0x43a8` | **`+0x1f8`** |
+| `__TEXT.__cstring` | `0xeda2` | `0xef5d` | **`+0x1bb`** |
+| `__TEXT.__objc_methlist` | `0x255c` | `0x26e4` | **`+0x188`** |
+| `__DATA_CONST.__const` | `0x7bb0` | `0x7d00` | **`+0x150`** |
+| `__AUTH.__objc_data` | `0x140` | `0x230` | **`+0xf0`** |
+| `__AUTH_CONST.__objc_intobj` | `0x1cb0` | `0x1d88` | **`+0xd8`** |
+| `__DATA.__data` | `0x490` | `0x550` | **`+0xc0`** |
+| `__AUTH_CONST.__const` | `0x3758` | `0x37b8` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x1080` | `0x10e0` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0x680` | `0x6bc` | **`+0x3c`** |
+| `__DATA.__objc_ivar` | `0x1d0` | `0x1fc` | **`+0x2c`** |
+| `__DATA_CONST.__got` | `0x6b0` | `0x6d8` | **`+0x28`** |
+| `__DATA_CONST.__objc_arraydata` | `0xea8` | `0xed0` | **`+0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x110` | `0x128` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0xa0` | `0xb8` | **`+0x18`** |
+| `__DATA_CONST.__objc_protolist` | `0x60` | `0x70` | **`+0x10`** |
+| `__TEXT.__const` | `0x75c` | `0x764` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2075.30.6.12.12
--  __TEXT.__text: 0x96028
--  __TEXT.__objc_methlist: 0x255c
--  __TEXT.__const: 0x75c
 +2075.31.6.17.9
-+  __TEXT.__text: 0x979d8
-+  __TEXT.__objc_methlist: 0x26e4
-+  __TEXT.__const: 0x764
-   __TEXT.__dlopen_cstrs: 0x126
-   __TEXT.__swift5_typeref: 0x4e
-   __TEXT.__swift5_capture: 0x24
 
-   __TEXT.__swift5_fieldmd: 0x44
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_types: 0x8
--  __TEXT.__gcc_except_tab: 0x680
--  __TEXT.__cstring: 0xeda2
-+  __TEXT.__gcc_except_tab: 0x6bc
-+  __TEXT.__cstring: 0xef5d
-   __TEXT.__oslogstring: 0x10ca
--  __TEXT.__unwind_info: 0x1380
-+  __TEXT.__unwind_info: 0x13e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7bb0
--  __DATA_CONST.__objc_classlist: 0x110
-+  __DATA_CONST.__const: 0x7d00
-+  __DATA_CONST.__objc_classlist: 0x128
-   __DATA_CONST.__objc_catlist: 0x8
--  __DATA_CONST.__objc_protolist: 0x60
-+  __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x41b0
-+  __DATA_CONST.__objc_selrefs: 0x43a8
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__objc_superrefs: 0xa0
--  __DATA_CONST.__objc_arraydata: 0xea8
--  __DATA_CONST.__got: 0x6b0
--  __AUTH_CONST.__const: 0x3758
--  __AUTH_CONST.__cfstring: 0x14600
--  __AUTH_CONST.__objc_const: 0x2e98
--  __AUTH_CONST.__objc_intobj: 0x1cb0
-+  __DATA_CONST.__objc_superrefs: 0xb8
-+  __DATA_CONST.__objc_arraydata: 0xed0
-+  __DATA_CONST.__got: 0x6d8
-+  __AUTH_CONST.__const: 0x37b8
-+  __AUTH_CONST.__cfstring: 0x14800
-+  __AUTH_CONST.__objc_const: 0x33b8
-+  __AUTH_CONST.__objc_intobj: 0x1d88
-   __AUTH_CONST.__objc_dictobj: 0x4b0
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__objc_arrayobj: 0x378
-   __AUTH_CONST.__auth_got: 0x500
--  __AUTH.__objc_data: 0x140
-+  __AUTH.__objc_data: 0x230
-   __AUTH.__data: 0x40
--  __DATA.__objc_ivar: 0x1d0
--  __DATA.__data: 0x490
-+  __DATA.__objc_ivar: 0x1fc
-+  __DATA.__data: 0x550
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0x960
-   __DATA_DIRTY.__data: 0x10
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 1615
--  Symbols:   5122
+-  Symbols:   3296
 -  CStrings:  2807
 +  Functions: 1645
-+  Symbols:   5268
++  Symbols:   3387
 +  CStrings:  2826
- 
 Symbols:
 + +[GEOAPPortal capturePeriodicSettingsWithMapSettings:mapUiShown:mapsFeatures:mapsUserSettings:routingSettings:widgetConfiguration:]
 + +[GEOAPPortal capturePeriodicSettingsWithMapSettings:mapUiShown:mapsFeatures:mapsUserSettings:routingSettings:widgetConfiguration:additionalStates:providedDropRate:completionQueue:completionBlock:]
@@ -226,63 +185,6 @@ Symbols:
 + ___block_descriptor_44_e8_32s_e11_v16?0i8I12ls32l8
 + ___block_descriptor_48_e8_32s40r_e14_B20?0i8B12f16lr40l8s32l8
 + ___block_descriptor_52_e8_32s40bs_e5_v8?0ls40l8s32l8
-+ _objc_msgSend$_consumeWidgetConfiguration
-+ _objc_msgSend$accessoryCircular
-+ _objc_msgSend$accessoryCorner
-+ _objc_msgSend$accessoryInline
-+ _objc_msgSend$accessoryRectangular
-+ _objc_msgSend$addEntries:
-+ _objc_msgSend$capturePeriodicSettingsWithMapSettings:mapUiShown:mapsFeatures:mapsUserSettings:routingSettings:widgetConfiguration:additionalStates:providedDropRate:completionQueue:completionBlock:
-+ _objc_msgSend$captureShowcaseSuppressionEventWithBusinessId:localSearchProviderID:showcaseId:adamId:suppressionReason:multipleShowcaseMetadata:
-+ _objc_msgSend$captureShowcaseSuppressionWithBusinessId:localSearchProviderID:showcaseId:suppressionReason:adamId:multipleShowcaseMetadatas:additionalStates:providedDropRate:completionQueue:completionBlock:
-+ _objc_msgSend$displayHeight
-+ _objc_msgSend$displayWidth
-+ _objc_msgSend$enumerateEntriesWith:
-+ _objc_msgSend$extraLarge
-+ _objc_msgSend$extraLargePortrait
-+ _objc_msgSend$family
-+ _objc_msgSend$hasAccessoryCircular
-+ _objc_msgSend$hasAccessoryCorner
-+ _objc_msgSend$hasAccessoryInline
-+ _objc_msgSend$hasAccessoryRectangular
-+ _objc_msgSend$hasExtraLarge
-+ _objc_msgSend$hasExtraLargePortrait
-+ _objc_msgSend$hasLarge
-+ _objc_msgSend$hasMedium
-+ _objc_msgSend$hasRelevance
-+ _objc_msgSend$hasSmall
-+ _objc_msgSend$isPreview
-+ _objc_msgSend$large
-+ _objc_msgSend$medium
-+ _objc_msgSend$relevance
-+ _objc_msgSend$setAccessoryCircular:
-+ _objc_msgSend$setAccessoryCorner:
-+ _objc_msgSend$setAccessoryInline:
-+ _objc_msgSend$setAccessoryRectangular:
-+ _objc_msgSend$setDisplaySize:
-+ _objc_msgSend$setExtraLarge:
-+ _objc_msgSend$setExtraLargePortrait:
-+ _objc_msgSend$setFamily:
-+ _objc_msgSend$setHeight:
-+ _objc_msgSend$setIsPreview:
-+ _objc_msgSend$setLarge:
-+ _objc_msgSend$setMedium:
-+ _objc_msgSend$setMultipleShowcaseMetadatas:
-+ _objc_msgSend$setRelevance:
-+ _objc_msgSend$setSmall:
-+ _objc_msgSend$setWidgetConfiguration:
-+ _objc_msgSend$setWidgetConfigurationState:
-+ _objc_msgSend$setWidgetProperties:
-+ _objc_msgSend$setWidgetTimelineEntries:
-+ _objc_msgSend$setWidth:
-+ _objc_msgSend$small
-+ _objc_msgSend$widgetConfigurationState
-+ _objc_msgSend$widgetProperties
-+ _objc_msgSend$widgetPropertiesDataModelProvider
-+ _objc_msgSend$widgetPropertiesState
-+ _objc_msgSend$widgetTimelineEntries
-+ _objc_msgSend$widgetTimelineEntriesDataModelProvider
-+ _objc_msgSend$widgetTimelineEntriesState
 - +[GEOAPPortal capturePeriodicSettingsWithMapSettings:mapUiShown:mapsFeatures:mapsUserSettings:routingSettings:]
 - +[GEOAPPortal capturePeriodicSettingsWithMapSettings:mapUiShown:mapsFeatures:mapsUserSettings:routingSettings:additionalStates:providedDropRate:completionQueue:completionBlock:]
 - +[GEOAPPortal captureShowcaseSuppressionWithBusinessId:localSearchProviderID:showcaseId:suppressionReason:adamId:]
@@ -336,8 +238,6 @@ Symbols:
 - _GeoAnalyticsConfig__debug_simulateNoURLs_Metadata_block_invoke_75
 - ___177+[GEOAPPortal capturePeriodicSettingsWithMapSettings:mapUiShown:mapsFeatures:mapsUserSettings:routingSettings:additionalStates:providedDropRate:completionQueue:completionBlock:]_block_invoke
 - ___180+[GEOAPPortal captureShowcaseSuppressionWithBusinessId:localSearchProviderID:showcaseId:suppressionReason:adamId:additionalStates:providedDropRate:completionQueue:completionBlock:]_block_invoke
-- _objc_msgSend$capturePeriodicSettingsWithMapSettings:mapUiShown:mapsFeatures:mapsUserSettings:routingSettings:additionalStates:providedDropRate:completionQueue:completionBlock:
-- _objc_msgSend$captureShowcaseSuppressionWithBusinessId:localSearchProviderID:showcaseId:suppressionReason:adamId:additionalStates:providedDropRate:completionQueue:completionBlock:
 CStrings:
 + "B20@?0i8B12f16"
 + "DISPLAYED_VISITED_PLACES"

@@ -2,16 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/BNNSGraphPCC.framework/BNNSGraphPCC`
 
-```diff
+### Section Size Changes
 
- 2212.2.1.0.0
--  __TEXT.__text: 0x54f60
-+  __TEXT.__text: 0x54f78
-   __TEXT.__const: 0xad88
-   __TEXT.__constg_swiftt: 0x1aa4
-   __TEXT.__swift5_typeref: 0x1929
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x54f60` | `0x54f78` | **`+0x18`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2554034e8 -> sub_255f954e8 : 1124 -> 1128
-~ sub_2554134e4 -> sub_255fa54e8 : 352 -> 356
-~ sub_255439068 -> sub_255fcb070 : 1304 -> 1320
+~ sub_2552cd4e8 -> sub_255e5e4e8 : 1124 -> 1128
+~ sub_2552dd4e4 -> sub_255e6e4e8 : 352 -> 356
+~ sub_255303068 -> sub_255e94070 : 1304 -> 1320
 ```

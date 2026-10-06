@@ -2,94 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/ContainerManagerCommon.framework/ContainerManagerCommon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x108550` | `0x10b69c` | **`+0x314c`** |
+| `__TEXT.__oslogstring` | `0xfec7` | `0x10329` | **`+0x462`** |
+| `__AUTH_CONST.__objc_const` | `0x17a98` | `0x17da0` | **`+0x308`** |
+| `__TEXT.__objc_methlist` | `0xb454` | `0xb634` | **`+0x1e0`** |
+| `__DATA_DIRTY.__objc_data` | `0x3020` | `0x3198` | **`+0x178`** |
+| `__DATA.__bss` | `0xf78` | `0xe38` | **`-0x140`** |
+| `__DATA_DIRTY.__bss` | `0x6b0` | `0x7f0` | **`+0x140`** |
+| `__DATA_DIRTY.__data` | `0x448` | `0x568` | **`+0x120`** |
+| `__AUTH.__objc_data` | `0xfb0` | `0xea8` | **`-0x108`** |
+| `__TEXT.__cstring` | `0xa053` | `0xa13c` | **`+0xe9`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3968` | `0x3a28` | **`+0xc0`** |
+| `__TEXT.__eh_frame` | `0x9dc` | `0xa74` | **`+0x98`** |
+| `__DATA_CONST.__const` | `0x18e0` | `0x1960` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x2740` | `0x27a0` | **`+0x60`** |
+| `__AUTH.__data` | `0x208` | `0x1b8` | **`-0x50`** |
+| `__AUTH_CONST.__cfstring` | `0x4e40` | `0x4e60` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x1430` | `0x1448` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0xc4c` | `0xc5c` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x610` | `0x620` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x2550` | `0x255c` | **`+0xc`** |
+| `__DATA_CONST.__got` | `0x540` | `0x548` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x5e0` | `0x5e8` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x1a8` | `0x1b0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -833.40.16.0.0
--  __TEXT.__text: 0x103ba4
--  __TEXT.__objc_methlist: 0xb454
 +833.40.18.0.1
-+  __TEXT.__text: 0x106c14
-+  __TEXT.__objc_methlist: 0xb634
-   __TEXT.__const: 0x1620
--  __TEXT.__cstring: 0xa053
-+  __TEXT.__cstring: 0xa13c
-   __TEXT.__swift5_typeref: 0x889
--  __TEXT.__oslogstring: 0xfec7
-+  __TEXT.__oslogstring: 0x10329
-   __TEXT.__constg_swiftt: 0x7b0
-   __TEXT.__swift5_reflstr: 0x56a
-   __TEXT.__swift5_fieldmd: 0x644
 
-   __TEXT.__swift5_capture: 0xa8
-   __TEXT.__swift5_mpenum: 0x10
-   __TEXT.__swift5_protos: 0x18
--  __TEXT.__gcc_except_tab: 0x2550
-+  __TEXT.__gcc_except_tab: 0x255c
-   __TEXT.__ustring: 0x16c
--  __TEXT.__unwind_info: 0x3e60
--  __TEXT.__eh_frame: 0x9dc
-+  __TEXT.__unwind_info: 0x3f08
-+  __TEXT.__eh_frame: 0xa74
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x18e0
--  __DATA_CONST.__objc_classlist: 0x5e0
-+  __DATA_CONST.__const: 0x1960
-+  __DATA_CONST.__objc_classlist: 0x5e8
-   __DATA_CONST.__objc_catlist: 0x30
--  __DATA_CONST.__objc_protolist: 0x610
-+  __DATA_CONST.__objc_protolist: 0x620
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3968
--  __DATA_CONST.__objc_protorefs: 0x1a8
-+  __DATA_CONST.__objc_selrefs: 0x3a28
-+  __DATA_CONST.__objc_protorefs: 0x1b0
-   __DATA_CONST.__objc_superrefs: 0x4a8
-   __DATA_CONST.__objc_arraydata: 0x2e8
--  __DATA_CONST.__got: 0x540
-+  __DATA_CONST.__got: 0x548
-   __AUTH_CONST.__const: 0x15c0
--  __AUTH_CONST.__cfstring: 0x4e40
--  __AUTH_CONST.__objc_const: 0x17a98
-+  __AUTH_CONST.__cfstring: 0x4e60
-+  __AUTH_CONST.__objc_const: 0x17da0
-   __AUTH_CONST.__objc_dictobj: 0x118
-   __AUTH_CONST.__objc_intobj: 0x15a8
-   __AUTH_CONST.__objc_arrayobj: 0xf0
--  __AUTH_CONST.__auth_got: 0x1430
--  __AUTH.__objc_data: 0xfb0
--  __AUTH.__data: 0x208
--  __DATA.__objc_ivar: 0xc4c
-+  __AUTH_CONST.__auth_got: 0x1448
-+  __AUTH.__objc_data: 0xea8
-+  __AUTH.__data: 0x1b8
-+  __DATA.__objc_ivar: 0xc5c
-   __DATA.__data: 0x3db0
-   __DATA.__crash_info: 0x148
-   __DATA.__common: 0x48
--  __DATA_DIRTY.__objc_data: 0x3020
--  __DATA_DIRTY.__data: 0x448
--  __DATA_DIRTY.__bss: 0x6b0
-+  __DATA_DIRTY.__objc_data: 0x3198
-+  __DATA_DIRTY.__data: 0x568
-+  __DATA_DIRTY.__bss: 0x7f0
-   __DATA_DIRTY.__common: 0x58
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 3885
 -  Symbols:   7047
--  CStrings:  2137
+-  CStrings:  2138
 +  Functions: 3932
 +  Symbols:   7095
-+  CStrings:  2154
- 
++  CStrings:  2155
 Symbols:
 + +[MCMContainerCacheEntry metadataReadErrorIsInconclusive:]
 + +[MCMContainerFactory lookupErrorPermitsCreation:]
@@ -254,6 +207,7 @@ Symbols:
 - GCC_except_table878
 - GCC_except_table956
 CStrings:
++ "20:19:01"
 + "<Metadata DP Repair: classes = "
 + "ContainerManagerCommon_Internal.MCMMetadataDataProtectionRepair"
 + "Could not list containers to repair metadata data protection; path = 🔒%{private}s, error = %@"
@@ -270,7 +224,10 @@ CStrings:
 + "RepairMetadataDataProtection"
 + "Reporting a lookup miss in [%@] as unavailable rather than absent; the class holds a container whose metadata cannot be read"
 + "Restored class D on container metadata; path = 🔒%{private}s"
++ "Sep 27 2026"
 + "com.apple.mobile.keybagd.first_unlock"
 + "com.apple.mobile.keybagd.lock_status"
+- "04:59:36"
 - "MobileContainerManager-833.40.16~79"
+- "Sep 12 2026"
 ```

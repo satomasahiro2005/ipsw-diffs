@@ -2,72 +2,36 @@
 
 > `/System/Library/Frameworks/AudioToolbox.framework/libAudioDSP.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x380238` | `0x38043c` | **`+0x204`** |
+| `__TEXT.__oslogstring` | `0x2acd3` | `0x2ad92` | **`+0xbf`** |
+| `__TEXT.__gcc_except_tab` | `0x31434` | `0x3148c` | **`+0x58`** |
+| `__TEXT.__cstring` | `0x34577` | `0x345a7` | **`+0x30`** |
+| `__TEXT.__realtime` | `0x16cf2c` | `0x16cf5c` | **`+0x30`** |
+| `__AUTH_CONST.__objc_const` | `0x6a0` | `0x6c0` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0xe848` | `0xe860` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x334` | `0x344` | **`+0x10`** |
+| `__AUTH.__data` | `0x18` | `0x10` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x540` | `0x548` | **`+0x8`** |
+| `__DATA_DIRTY.__data` | `0xc` | `0x14` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x20` | `0x24` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -881.208.0.0.0
--  __TEXT.__text: 0x378dd4
--  __TEXT.__realtime: 0x16b638
 +881.210.0.0.0
-+  __TEXT.__text: 0x378fe4
-+  __TEXT.__realtime: 0x16b668
-   __TEXT.__delay_stubs: 0xb40
-   __TEXT.__delay_helper: 0x494
--  __TEXT.__objc_methlist: 0x334
-+  __TEXT.__objc_methlist: 0x344
-   __TEXT.__const: 0xa20f0
-   __TEXT.__dlopen_cstrs: 0x4f
--  __TEXT.__cstring: 0x34577
--  __TEXT.__gcc_except_tab: 0x31434
--  __TEXT.__oslogstring: 0x2acd3
--  __TEXT.__unwind_info: 0xf9e0
-+  __TEXT.__cstring: 0x345a7
-+  __TEXT.__gcc_except_tab: 0x3148c
-+  __TEXT.__oslogstring: 0x2ad92
-+  __TEXT.__unwind_info: 0xf9e8
-   __TEXT.__eh_frame: 0xf8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x540
-+  __DATA_CONST.__objc_selrefs: 0x548
-   __DATA_CONST.__objc_superrefs: 0x20
-   __DATA_CONST.__objc_arraydata: 0x58
-   __DATA_CONST.__got: 0x3d0
-   __AUTH_CONST.__const: 0x21a30
-   __AUTH_CONST.__cfstring: 0x204c0
--  __AUTH_CONST.__objc_const: 0x6a0
-+  __AUTH_CONST.__objc_const: 0x6c0
-   __AUTH_CONST.__weak_auth_got: 0x118
-   __AUTH_CONST.__objc_intobj: 0xa8
-   __AUTH_CONST.__objc_dictobj: 0x50
-
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__auth_got: 0x1e60
-   __AUTH.__objc_data: 0x140
--  __AUTH.__data: 0x18
--  __DATA.__objc_ivar: 0x20
-+  __AUTH.__data: 0x10
-+  __DATA.__objc_ivar: 0x24
-   __DATA.__data: 0x3010
--  __DATA_DIRTY.__data: 0xc
-+  __DATA_DIRTY.__data: 0x14
-   __DATA_DIRTY.__bss: 0x2e8
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 11409
 -  Symbols:   17747
--  CStrings:  10977
+-  CStrings:  10980
 +  Functions: 11411
 +  Symbols:   17751
-+  CStrings:  10979
- 
++  CStrings:  10982
 Symbols:
 + -[NeuralNetCache batchSize]
 + -[NeuralNetCache initWithImpl:batchSize:]
@@ -2288,6 +2252,14 @@ Symbols:
 CStrings:
 + "%25s:%-5d Requested batch size for NeuralNetCache (%u)."
 + "%25s:%-5d Saved implementation to cache for model %s (batch size %u)."
++ "23:33:42"
++ "23:33:49"
++ "23:34:04"
 + "NeuralNetImplLoadFromCache: cached batch size (%u) does not match requested batch size (%u) -- discarding stale entry."
++ "Sep 27 2026"
 - "%25s:%-5d Saved implementation to cache for model %s."
+- "07:00:54"
+- "07:01:03"
+- "07:01:18"
+- "Sep 12 2026"
 ```

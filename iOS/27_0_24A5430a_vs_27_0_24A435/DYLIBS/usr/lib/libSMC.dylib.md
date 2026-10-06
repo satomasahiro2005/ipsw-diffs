@@ -2,14 +2,15 @@
 
 > `/usr/lib/libSMC.dylib`
 
-```diff
+### Section Size Changes
 
- 40.0.0.0.0
--  __TEXT.__text: 0x5128
-+  __TEXT.__text: 0x512c
-   __TEXT.__const: 0xd9a50
-   __TEXT.__oslogstring: 0x6d1
-   __TEXT.__cstring: 0x265
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5128` | `0x512c` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _SMCAEPopulateChannelInfo : 704 -> 708
 ~ _OUTLINED_FUNCTION_0 : 32 -> 24

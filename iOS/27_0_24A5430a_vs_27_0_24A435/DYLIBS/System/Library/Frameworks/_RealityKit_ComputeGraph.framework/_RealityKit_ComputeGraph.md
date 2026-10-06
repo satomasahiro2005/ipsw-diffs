@@ -2,31 +2,18 @@
 
 > `/System/Library/Frameworks/_RealityKit_ComputeGraph.framework/_RealityKit_ComputeGraph`
 
-```diff
+### Section Size Changes
 
- 30.0.0.0.0
--  __TEXT.__text: 0x5b628
--  __TEXT.__objc_methlist: 0xea4
-+  __TEXT.__text: 0x5b650
-+  __TEXT.__objc_methlist: 0xeac
-   __TEXT.__const: 0x20f8
-   __TEXT.__cstring: 0xc45
-   __TEXT.__swift5_typeref: 0xd64
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5b628` | `0x5b650` | **`+0x28`** |
+| `__AUTH_CONST.__objc_const` | `0x1ad8` | `0x1af0` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x968` | `0x970` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0xea4` | `0xeac` | **`+0x8`** |
 
-   __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x90
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x968
-+  __DATA_CONST.__objc_selrefs: 0x970
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__got: 0x4a0
-   __AUTH_CONST.__const: 0x1240
--  __AUTH_CONST.__objc_const: 0x1ad8
-+  __AUTH_CONST.__objc_const: 0x1af0
-   __AUTH_CONST.__auth_got: 0x17c8
-   __AUTH.__objc_data: 0x300
-   __AUTH.__data: 0x1100
+### Other Changes
+
+```text
 Functions:
 ~ _$s12ComputeGraph0a4NodeB0V012_RealityKit_aB0E15modelReferences33_65CF057E4553BD001473A8062372E6A7LLSDyAC4PortO7AddressVAD0aB5AssetC6SchemaO14ModelReferenceVGvg : 1600 -> 1604
 ~ _$ss17_NativeDictionaryV20_copyOrMoveAndResize8capacity12moveElementsySi_SbtF12ComputeGraph0k4NodeL0V4PortO7AddressV_10RealityKit15TextureResourceCTg5 : 980 -> 992

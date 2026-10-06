@@ -2,77 +2,50 @@
 
 > `/Applications/Device Recovery Assistant.app/Device Recovery Assistant`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e4c0` | `0x1e77c` | **`+0x2bc`** |
+| `__TEXT.__objc_methname` | `0x8928` | `0x8b1c` | **`+0x1f4`** |
+| `__TEXT.__objc_stubs` | `0x6180` | `0x6220` | **`+0xa0`** |
+| `__DATA.__objc_const` | `0x64f8` | `0x6558` | **`+0x60`** |
+| `__TEXT.__objc_methlist` | `0x2d38` | `0x2d90` | **`+0x58`** |
+| `__TEXT.__oslogstring` | `0x35a0` | `0x35e9` | **`+0x49`** |
+| `__DATA.__objc_selrefs` | `0x2280` | `0x22c0` | **`+0x40`** |
+| `__TEXT.__objc_methtype` | `0x2551` | `0x257a` | **`+0x29`** |
+| `__TEXT.__unwind_info` | `0x6e0` | `0x6f8` | **`+0x18`** |
+| `__DATA_CONST.__const` | `0xa18` | `0xa08` | **`-0x10`** |
+| `__TEXT.__auth_stubs` | `0x830` | `0x840` | **`+0x10`** |
+| `__TEXT.__cstring` | `0x35aa` | `0x35b5` | **`+0xb`** |
+| `__DATA.__objc_ivar` | `0x204` | `0x20c` | **`+0x8`** |
+| `__DATA_CONST.__auth_got` | `0x428` | `0x430` | **`+0x8`** |
+| `__DATA.__data` | `0xcdc` | `0xce0` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
 - `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_data`
+- `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -149.0.0.0.0
--  __TEXT.__text: 0x1e4c0
--  __TEXT.__auth_stubs: 0x830
--  __TEXT.__objc_stubs: 0x6180
--  __TEXT.__objc_methlist: 0x2d38
--  __TEXT.__cstring: 0x35aa
 +150.0.2.0.0
-+  __TEXT.__text: 0x1e77c
-+  __TEXT.__auth_stubs: 0x840
-+  __TEXT.__objc_stubs: 0x6220
-+  __TEXT.__objc_methlist: 0x2d90
-   __TEXT.__const: 0xa8
--  __TEXT.__objc_methname: 0x8928
--  __TEXT.__oslogstring: 0x35a0
-+  __TEXT.__objc_methname: 0x8b1c
-+  __TEXT.__oslogstring: 0x35e9
-+  __TEXT.__cstring: 0x35b5
-   __TEXT.__objc_classname: 0x689
--  __TEXT.__objc_methtype: 0x2551
-+  __TEXT.__objc_methtype: 0x257a
-   __TEXT.__gcc_except_tab: 0x118
-   __TEXT.__ustring: 0x18
--  __TEXT.__unwind_info: 0x6e0
--  __DATA_CONST.__const: 0xa18
-+  __TEXT.__unwind_info: 0x6f8
-+  __DATA_CONST.__const: 0xa08
-   __DATA_CONST.__cfstring: 0x1960
-   __DATA_CONST.__objc_classlist: 0x118
-   __DATA_CONST.__objc_protolist: 0x110
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x108
-   __DATA_CONST.__objc_intobj: 0x18
--  __DATA_CONST.__auth_got: 0x428
-+  __DATA_CONST.__auth_got: 0x430
-   __DATA_CONST.__got: 0x4c0
--  __DATA.__objc_const: 0x64f8
--  __DATA.__objc_selrefs: 0x2280
--  __DATA.__objc_ivar: 0x204
-+  __DATA.__objc_const: 0x6558
-+  __DATA.__objc_selrefs: 0x22c0
-+  __DATA.__objc_ivar: 0x20c
-   __DATA.__objc_data: 0xaf0
--  __DATA.__data: 0xcdc
-+  __DATA.__data: 0xce0
-   __DATA.__bss: 0x90
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 785
 -  Symbols:   306
 -  CStrings:  2339
 +  Functions: 793
 +  Symbols:   307
 +  CStrings:  2355
- 
 Symbols:
 + _BKHIDServicesGetNonFlatDeviceOrientation
 CStrings:

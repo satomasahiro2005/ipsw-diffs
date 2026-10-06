@@ -2,97 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/ProximityReaderCore.framework/ProximityReaderCore`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1449ec` | `0x144f88` | **`+0x59c`** |
+| `__DATA.__bss` | `0x3bcc0` | `0x3be60` | **`+0x1a0`** |
+| `__TEXT.__const` | `0x1f948` | `0x1fa88` | **`+0x140`** |
+| `__TEXT.__eh_frame` | `0x6b24` | `0x6c38` | **`+0x114`** |
+| `__TEXT.__oslogstring` | `0x3c86` | `0x3d26` | **`+0xa0`** |
+| `__AUTH_CONST.__objc_const` | `0x4488` | `0x44f0` | **`+0x68`** |
+| `__TEXT.__constg_swiftt` | `0x613c` | `0x6198` | **`+0x5c`** |
+| `__TEXT.__swift5_typeref` | `0x68d2` | `0x692a` | **`+0x58`** |
+| `__TEXT.__unwind_info` | `0x5a40` | `0x5a98` | **`+0x58`** |
+| `__AUTH_CONST.__const` | `0x130c8` | `0x13090` | **`-0x38`** |
+| `__TEXT.__swift5_fieldmd` | `0x6cb0` | `0x6cdc` | **`+0x2c`** |
+| `__AUTH_CONST.__auth_got` | `0x17e8` | `0x17c8` | **`-0x20`** |
+| `__AUTH.__objc_data` | `0x1ac8` | `0x1ae0` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa60` | `0xa78` | **`+0x18`** |
+| `__AUTH.__data` | `0x3438` | `0x3448` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x1158` | `0x1168` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x1cb0` | `0x1cc0` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x3b72` | `0x3b82` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x190` | `0x19c` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `0x14c` | `0x158` | **`+0xc`** |
+| `__TEXT.__swift5_protos` | `0x40` | `0x44` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0x958` | `0x95c` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -150.32.0.0.0
--  __TEXT.__text: 0x1449ec
--  __TEXT.__objc_methlist: 0x1158
--  __TEXT.__const: 0x1f948
 +150.35.0.0.0
-+  __TEXT.__text: 0x144f88
-+  __TEXT.__objc_methlist: 0x1168
-+  __TEXT.__const: 0x1fa88
-   __TEXT.__cstring: 0x664c
--  __TEXT.__swift5_typeref: 0x68d2
--  __TEXT.__constg_swiftt: 0x613c
--  __TEXT.__swift5_reflstr: 0x3b72
--  __TEXT.__swift5_fieldmd: 0x6cb0
--  __TEXT.__swift5_proto: 0x1cb0
--  __TEXT.__swift5_types: 0x958
-+  __TEXT.__swift5_typeref: 0x692a
-+  __TEXT.__constg_swiftt: 0x6198
-+  __TEXT.__swift5_reflstr: 0x3b82
-+  __TEXT.__swift5_fieldmd: 0x6cdc
-+  __TEXT.__swift5_proto: 0x1cc0
-+  __TEXT.__swift5_types: 0x95c
-   __TEXT.__swift5_assocty: 0x648
-   __TEXT.__swift5_builtin: 0x334
-   __TEXT.__swift5_mpenum: 0x64
--  __TEXT.__oslogstring: 0x3c86
--  __TEXT.__swift5_protos: 0x40
-+  __TEXT.__oslogstring: 0x3d26
-+  __TEXT.__swift5_protos: 0x44
-   __TEXT.__swift5_capture: 0x9dc
--  __TEXT.__swift_as_entry: 0x190
--  __TEXT.__swift_as_ret: 0x14c
-+  __TEXT.__swift_as_entry: 0x19c
-+  __TEXT.__swift_as_ret: 0x158
-   __TEXT.__swift_as_cont: 0x224
--  __TEXT.__unwind_info: 0x5a40
--  __TEXT.__eh_frame: 0x6b24
-+  __TEXT.__unwind_info: 0x5a98
-+  __TEXT.__eh_frame: 0x6c38
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x1b0
-   __DATA_CONST.__objc_protolist: 0x130
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa60
-+  __DATA_CONST.__objc_selrefs: 0xa78
-   __DATA_CONST.__objc_protorefs: 0xe8
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x130c8
-+  __AUTH_CONST.__const: 0x13090
-   __AUTH_CONST.__cfstring: 0x20
--  __AUTH_CONST.__objc_const: 0x4488
--  __AUTH_CONST.__auth_got: 0x17e8
--  __AUTH.__objc_data: 0x1ac8
--  __AUTH.__data: 0x3438
-+  __AUTH_CONST.__objc_const: 0x44f0
-+  __AUTH_CONST.__auth_got: 0x17c8
-+  __AUTH.__objc_data: 0x1ae0
-+  __AUTH.__data: 0x3448
-   __DATA.__objc_ivar: 0x4
-   __DATA.__data: 0x30b0
--  __DATA.__bss: 0x3bcc0
-+  __DATA.__bss: 0x3be60
-   __DATA.__common: 0x2b0
-   __DATA_DIRTY.__data: 0x170
-   __DATA_DIRTY.__bss: 0x20
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9007
--  Symbols:   3715
+-  Symbols:   3509
 -  CStrings:  1134
 +  Functions: 9031
-+  Symbols:   3721
++  Symbols:   3513
 +  CStrings:  1133
- 
 Symbols:
 + ___swift_closure_destructor.27Tm
 + _associated conformance 19ProximityReaderCore08IdentityB13ErrorInternalV4CodeO25DocumentExpiredCodingKeys33_752396CC7D4E54DF673B77F741858BBELLOs0J3KeyAAs23CustomStringConvertible
 + _associated conformance 19ProximityReaderCore08IdentityB13ErrorInternalV4CodeO25DocumentExpiredCodingKeys33_752396CC7D4E54DF673B77F741858BBELLOs0J3KeyAAs28CustomDebugStringConvertible
-+ _objc_msgSend$deactivatePairingMode
-+ _objc_msgSend$instanceID
 + _symbolic $s19ProximityReaderCore25AnalyticsSessionProvidingP
 + _symbolic SSSg_Sb10hasChangedt
 + _symbolic _____ 19ProximityReaderCore08IdentityB13ErrorInternalV4CodeO25DocumentExpiredCodingKeys33_752396CC7D4E54DF673B77F741858BBELLO

@@ -2,91 +2,59 @@
 
 > `/System/Library/FlowTools/SnippetService/ResponsePlugins/SiriGeoSnippetProviderPlugin.bundle/SiriGeoSnippetProviderPlugin`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4b9ac` | `0x4df84` | **`+0x25d8`** |
+| `__TEXT.__auth_stubs` | `0x1b30` | `0x1bf0` | **`+0xc0`** |
+| `__DATA_CONST.__const` | `0x1e98` | `0x1f10` | **`+0x78`** |
+| `__TEXT.__const` | `0x2e80` | `0x2ee8` | **`+0x68`** |
+| `__TEXT.__swift5_typeref` | `0xd22` | `0xd84` | **`+0x62`** |
+| `__DATA_CONST.__auth_got` | `0xda0` | `0xe00` | **`+0x60`** |
+| `__TEXT.__objc_stubs` | `0xf00` | `0xf60` | **`+0x60`** |
+| `__TEXT.__oslogstring` | `0x131c` | `0x137c` | **`+0x60`** |
+| `__TEXT.__objc_methname` | `0x8af` | `0x90c` | **`+0x5d`** |
+| `__DATA.__data` | `0xf90` | `0xfc8` | **`+0x38`** |
+| `__DATA_CONST.__got` | `0x658` | `0x688` | **`+0x30`** |
+| `__TEXT.__swift5_reflstr` | `0xa3f` | `0xa6f` | **`+0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0xbd0` | `0xbf4` | **`+0x24`** |
+| `__TEXT.__cstring` | `0xa18` | `0xa38` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0xc30` | `0xc50` | **`+0x20`** |
+| `__DATA.__objc_selrefs` | `0x3c0` | `0x3d8` | **`+0x18`** |
+| `__DATA_CONST.__auth_ptr` | `0x5d8` | `0x5e8` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x40` | `0x50` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__objc_classlist`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x4b9ac
--  __TEXT.__auth_stubs: 0x1b30
--  __TEXT.__objc_stubs: 0xf00
--  __TEXT.__const: 0x2e80
--  __TEXT.__swift5_typeref: 0xd22
--  __TEXT.__oslogstring: 0x131c
--  __TEXT.__cstring: 0xa18
-+  __TEXT.__text: 0x4df84
-+  __TEXT.__auth_stubs: 0x1bf0
-+  __TEXT.__objc_stubs: 0xf60
-+  __TEXT.__const: 0x2ee8
-+  __TEXT.__swift5_typeref: 0xd84
-+  __TEXT.__oslogstring: 0x137c
-+  __TEXT.__cstring: 0xa38
-   __TEXT.__constg_swiftt: 0x810
-   __TEXT.__objc_classname: 0x2d1
--  __TEXT.__swift5_fieldmd: 0xbd0
-+  __TEXT.__swift5_fieldmd: 0xbf4
-   __TEXT.__swift5_types: 0xd4
-   __TEXT.__swift_as_entry: 0x84
-   __TEXT.__swift_as_ret: 0x68
-   __TEXT.__swift_as_cont: 0x80
--  __TEXT.__swift5_reflstr: 0xa3f
-+  __TEXT.__swift5_reflstr: 0xa6f
-   __TEXT.__swift5_proto: 0x22c
-   __TEXT.__swift5_assocty: 0x138
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_mpenum: 0x1c
--  __TEXT.__objc_methname: 0x8af
-+  __TEXT.__objc_methname: 0x90c
-   __TEXT.__objc_methtype: 0x30
--  __TEXT.__swift5_capture: 0x40
-+  __TEXT.__swift5_capture: 0x50
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0xc30
-+  __TEXT.__unwind_info: 0xc50
-   __TEXT.__eh_frame: 0xb48
--  __DATA_CONST.__const: 0x1e98
-+  __DATA_CONST.__const: 0x1f10
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0xda0
--  __DATA_CONST.__got: 0x658
--  __DATA_CONST.__auth_ptr: 0x5d8
-+  __DATA_CONST.__auth_got: 0xe00
-+  __DATA_CONST.__got: 0x688
-+  __DATA_CONST.__auth_ptr: 0x5e8
-   __DATA.__objc_const: 0x590
--  __DATA.__objc_selrefs: 0x3c0
-+  __DATA.__objc_selrefs: 0x3d8
-   __DATA.__objc_data: 0x1f8
--  __DATA.__data: 0xf90
-+  __DATA.__data: 0xfc8
-   __DATA.__common: 0x150
-   __DATA.__bss: 0x3f00
-   - /System/Library/Frameworks/CoreLocation.framework/CoreLocation
+-3600.36.4.0.0
++3600.36.10.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1338
--  Symbols:   10999
--  CStrings:  292
+-  Symbols:   4260
+-  CStrings:  291
 +  Functions: 1352
-+  Symbols:   11155
-+  CStrings:  297
- 
-Sections:
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__bss : content changed
++  Symbols:   4327
++  CStrings:  296
 Symbols:
 + $s28SiriGeoSnippetProviderPlugin15PlaceAttributesV16sequentialNumberSiSgvM.resume
 + _$s10Foundation22_convertNSErrorToErrorys0E0_pSo0C0CSgF
@@ -181,5 +149,4 @@ CStrings:
 + "cardSections"
 + "urlForMapItems:options:"
 - "[PlaceInformSnippetHandler] rejecting SystemResponse due to unsupported outcome: %s"
-
 ```

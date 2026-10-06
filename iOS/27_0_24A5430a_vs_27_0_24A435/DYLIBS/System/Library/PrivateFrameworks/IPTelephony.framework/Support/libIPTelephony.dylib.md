@@ -2,20 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/IPTelephony.framework/Support/libIPTelephony.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4abc04` | `0x4abc60` | **`+0x5c`** |
+| `__TEXT.__gcc_except_tab` | `0x41f00` | `0x41f04` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2765.0.0.0.0
--  __TEXT.__text: 0x4abc04
 +2765.0.1.0.0
-+  __TEXT.__text: 0x4abc60
-   __TEXT.__init_offsets: 0x1a8
-   __TEXT.__objc_methlist: 0x74c
-   __TEXT.__const: 0x1f9fc
--  __TEXT.__gcc_except_tab: 0x41f00
-+  __TEXT.__gcc_except_tab: 0x41f04
-   __TEXT.__cstring: 0x14117
-   __TEXT.__oslogstring: 0x4cdca
-   __TEXT.__unwind_info: 0x181e0
 Functions:
 ~ __ZN23ImsEmergencyCallHandler15resetConditionsEv : 544 -> 548
 ~ __ZN23ImsEmergencyCallHandler14currentProxiesEv : 340 -> 344

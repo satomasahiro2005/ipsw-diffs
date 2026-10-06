@@ -2,86 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/CoreSpeech.framework/corespeechd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x185700` | `0x186934` | **`+0x1234`** |
+| `__TEXT.__objc_methname` | `0x4806b` | `0x48611` | **`+0x5a6`** |
+| `__TEXT.__oslogstring` | `0x27722` | `0x27a9e` | **`+0x37c`** |
+| `__TEXT.__cstring` | `0x30fcb` | `0x3124b` | **`+0x280`** |
+| `__TEXT.__unwind_info` | `0x6010` | `0x6268` | **`+0x258`** |
+| `__TEXT.__objc_stubs` | `0x22840` | `0x229e0` | **`+0x1a0`** |
+| `__DATA.__objc_const` | `0x2bab8` | `0x2bc10` | **`+0x158`** |
+| `__TEXT.__objc_methlist` | `0x1bce4` | `0x1be0c` | **`+0x128`** |
+| `__DATA.__objc_selrefs` | `0xd130` | `0xd1e8` | **`+0xb8`** |
+| `__TEXT.__objc_methtype` | `0x9791` | `0x97fa` | **`+0x69`** |
+| `__DATA_CONST.__const` | `0x64d8` | `0x6540` | **`+0x68`** |
+| `__TEXT.__gcc_except_tab` | `0x30e8` | `0x312c` | **`+0x44`** |
+| `__DATA_CONST.__cfstring` | `0x9640` | `0x9660` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x21e0` | `0x21fc` | **`+0x1c`** |
+| `__TEXT.__auth_stubs` | `0x1700` | `0x1710` | **`+0x10`** |
+| `__TEXT.__const` | `0x3b0` | `0x3c0` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0xb98` | `0xba0` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -3600.70.32.0.0
--  __TEXT.__text: 0x185700
--  __TEXT.__auth_stubs: 0x1700
 +3600.70.47.0.0
-+  __TEXT.__text: 0x186934
-+  __TEXT.__auth_stubs: 0x1710
-   __TEXT.__lazy_helpers: 0x54
--  __TEXT.__objc_stubs: 0x22840
--  __TEXT.__objc_methlist: 0x1bce4
-+  __TEXT.__objc_stubs: 0x229e0
-+  __TEXT.__objc_methlist: 0x1be0c
-   __TEXT.__dlopen_cstrs: 0x31a
--  __TEXT.__const: 0x3b0
--  __TEXT.__gcc_except_tab: 0x30e8
--  __TEXT.__objc_methname: 0x4806b
--  __TEXT.__cstring: 0x30fcb
--  __TEXT.__oslogstring: 0x27722
-+  __TEXT.__const: 0x3c0
-+  __TEXT.__gcc_except_tab: 0x312c
-+  __TEXT.__objc_methname: 0x48611
-+  __TEXT.__cstring: 0x3124b
-+  __TEXT.__oslogstring: 0x27a9e
-   __TEXT.__objc_classname: 0x3948
--  __TEXT.__objc_methtype: 0x9791
--  __TEXT.__unwind_info: 0x6010
--  __DATA_CONST.__const: 0x64d8
--  __DATA_CONST.__cfstring: 0x9640
-+  __TEXT.__objc_methtype: 0x97fa
-+  __TEXT.__unwind_info: 0x6268
-+  __DATA_CONST.__const: 0x6540
-+  __DATA_CONST.__cfstring: 0x9660
-   __DATA_CONST.__objc_classlist: 0xa00
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x5b8
 
-   __DATA_CONST.__objc_arrayobj: 0x168
-   __DATA_CONST.__objc_dictobj: 0x348
-   __DATA_CONST.__objc_floatobj: 0x5b0
--  __DATA_CONST.__auth_got: 0xb98
-+  __DATA_CONST.__auth_got: 0xba0
-   __DATA_CONST.__got: 0x15c8
-   __DATA_CONST.__auth_ptr: 0x8
--  __DATA.__objc_const: 0x2bab8
--  __DATA.__objc_selrefs: 0xd130
--  __DATA.__objc_ivar: 0x21e0
-+  __DATA.__objc_const: 0x2bc10
-+  __DATA.__objc_selrefs: 0xd1e8
-+  __DATA.__objc_ivar: 0x21fc
-   __DATA.__objc_data: 0x6400
-   __DATA.__lazy_load_got: 0x8
-   __DATA.__data: 0x44a4
-
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 10563
 -  Symbols:   1054
 -  CStrings:  17377
 +  Functions: 10589
 +  Symbols:   1055
 +  CStrings:  17436
- 
 Symbols:
 + _CSDeviceSupportsAlwaysListeningHeySiri
 + _dispatch_assert_queue_not$V2

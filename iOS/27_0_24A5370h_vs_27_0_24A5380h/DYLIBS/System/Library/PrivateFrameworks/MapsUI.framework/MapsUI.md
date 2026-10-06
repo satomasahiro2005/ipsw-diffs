@@ -2,115 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/MapsUI.framework/MapsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a5cc0` | `0x1a7bbc` | **`+0x1efc`** |
+| `__AUTH_CONST.__objc_const` | `0x2bb58` | `0x2be10` | **`+0x2b8`** |
+| `__AUTH_CONST.__const` | `0x6a48` | `0x6c50` | **`+0x208`** |
+| `__TEXT.__objc_methlist` | `0x157a4` | `0x158dc` | **`+0x138`** |
+| `__TEXT.__cstring` | `0x12297` | `0x1237a` | **`+0xe3`** |
+| `__TEXT.__unwind_info` | `0x6628` | `0x66d8` | **`+0xb0`** |
+| `__DATA.__data` | `0x58f4` | `0x5994` | **`+0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa478` | `0xa508` | **`+0x90`** |
+| `__TEXT.__swift5_capture` | `0x6d0` | `0x754` | **`+0x84`** |
+| `__DATA_CONST.__got` | `0x14e8` | `0x1560` | **`+0x78`** |
+| `__AUTH.__objc_data` | `0xbd58` | `0xbdc8` | **`+0x70`** |
+| `__AUTH_CONST.__auth_got` | `0x1478` | `0x14c0` | **`+0x48`** |
+| `__TEXT.__eh_frame` | `0x10e4` | `0x112c` | **`+0x48`** |
+| `__TEXT.__swift5_typeref` | `0x2f28` | `0x2f64` | **`+0x3c`** |
+| `__AUTH.__data` | `0x2110` | `0x2130` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x21fc` | `0x2218` | **`+0x1c`** |
+| `__DATA.__objc_ivar` | `0x1694` | `0x16a4` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0xd98` | `0xda0` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x738` | `0x740` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x1e0` | `0x1e8` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x748` | `0x750` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1a5cc0
-+  __TEXT.__text: 0x1a7bbc
-   __TEXT.__delay_stubs: 0x1c0
-   __TEXT.__delay_helper: 0xdc
--  __TEXT.__objc_methlist: 0x157a4
-+  __TEXT.__objc_methlist: 0x158dc
-   __TEXT.__const: 0x8108
--  __TEXT.__swift5_typeref: 0x2f28
--  __TEXT.__swift5_capture: 0x6d0
--  __TEXT.__cstring: 0x12297
-+  __TEXT.__swift5_typeref: 0x2f64
-+  __TEXT.__swift5_capture: 0x754
-+  __TEXT.__cstring: 0x1237a
-   __TEXT.__swift5_fieldmd: 0x3628
-   __TEXT.__constg_swiftt: 0x3e8c
-   __TEXT.__swift5_reflstr: 0x2ff7
+-284.30.6.5.2
++286.30.6.12.4
 
-   __TEXT.__swift_as_cont: 0x70
-   __TEXT.__swift5_assocty: 0x438
-   __TEXT.__swift5_protos: 0x4c
--  __TEXT.__gcc_except_tab: 0x21fc
-+  __TEXT.__gcc_except_tab: 0x2218
-   __TEXT.__ustring: 0x9c
--  __TEXT.__unwind_info: 0x6628
--  __TEXT.__eh_frame: 0x10e4
-+  __TEXT.__unwind_info: 0x66d8
-+  __TEXT.__eh_frame: 0x112c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x3cf0
--  __DATA_CONST.__objc_classlist: 0xd98
-+  __DATA_CONST.__objc_classlist: 0xda0
-   __DATA_CONST.__objc_catlist: 0x110
--  __DATA_CONST.__objc_protolist: 0x738
-+  __DATA_CONST.__objc_protolist: 0x740
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa478
--  __DATA_CONST.__objc_protorefs: 0x1e0
--  __DATA_CONST.__objc_superrefs: 0x748
-+  __DATA_CONST.__objc_selrefs: 0xa508
-+  __DATA_CONST.__objc_protorefs: 0x1e8
-+  __DATA_CONST.__objc_superrefs: 0x750
-   __DATA_CONST.__objc_arraydata: 0x180
--  __DATA_CONST.__got: 0x14e8
--  __AUTH_CONST.__const: 0x6a48
-+  __DATA_CONST.__got: 0x1560
-+  __AUTH_CONST.__const: 0x6c50
-   __AUTH_CONST.__cfstring: 0x15580
--  __AUTH_CONST.__objc_const: 0x2bb58
-+  __AUTH_CONST.__objc_const: 0x2be10
-   __AUTH_CONST.__objc_intobj: 0x828
-   __AUTH_CONST.__objc_doubleobj: 0x100
-   __AUTH_CONST.__objc_arrayobj: 0x198
-   __AUTH_CONST.__objc_floatobj: 0x30
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x1478
--  __AUTH.__objc_data: 0xbd58
--  __AUTH.__data: 0x2110
--  __DATA.__objc_ivar: 0x1694
--  __DATA.__data: 0x58f4
-+  __AUTH_CONST.__auth_got: 0x14c0
-+  __AUTH.__objc_data: 0xbdc8
-+  __AUTH.__data: 0x2130
-+  __DATA.__objc_ivar: 0x16a4
-+  __DATA.__data: 0x5994
-   __DATA.__bss: 0x5ea8
-   __DATA.__common: 0xa8
-   __DATA_DIRTY.__objc_data: 0x6e0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10154
--  Symbols:   24049
--  CStrings:  6148
+-  Symbols:   13644
+-  CStrings:  3422
 +  Functions: 10217
-+  Symbols:   24153
-+  CStrings:  6152
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_reflstr : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __DATA.__bss : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   13680
++  CStrings:  3426
 Symbols:
 + +[MUPlaceSectionView(MUPlatterViewExtras) insetPlatterSectionViewForContentView:sectionHeaderViewModel:sectionFooterViewModel:horizontalPlatterMargin:]
 + -[MUPlaceSectionView initWithStyle:alwaysHideSeparators:sectionHeaderViewModel:sectionFooterViewModel:horizontalPlatterMargin:]
@@ -272,19 +202,6 @@ Symbols:
 + ___69-[MUPlaceViewController _setupActionBarVisibilityObservationIfNeeded]_block_invoke
 + ___block_descriptor_32_e63_v32?0?<v?"<NSSecureCoding>""NSError">8#16"NSDictionary"24l
 + ___block_descriptor_48_e8_32s40w_e63_v32?0?<v?"<NSSecureCoding>""NSError">8#16"NSDictionary"24lw40l8s32l8
-+ _objc_msgSend$_infoCardActionBarHost
-+ _objc_msgSend$_setupActionBarVisibilityObservationIfNeeded
-+ _objc_msgSend$horizontalMarginOverride
-+ _objc_msgSend$hostedActionBarItemsForConfiguration:
-+ _objc_msgSend$hostsActionBarInSystemToolbar
-+ _objc_msgSend$initWithStyle:alwaysHideSeparators:sectionHeaderViewModel:sectionFooterViewModel:horizontalPlatterMargin:
-+ _objc_msgSend$initWithSymbolName:title:menuTitle:axID:prominent:leading:handler:menuProvider:
-+ _objc_msgSend$insetPlatterSectionViewForContentView:sectionHeaderViewModel:sectionFooterViewModel:horizontalPlatterMargin:
-+ _objc_msgSend$observeActionBarVisibilityOnView:handler:
-+ _objc_msgSend$optionsWithSender:
-+ _objc_msgSend$parentViewController
-+ _objc_msgSend$registerItemForTypeIdentifier:loadHandler:
-+ _objc_msgSend$updateHostedActionBarItems:
 + _swift_isEscapingClosureAtFileLocation
 + _swift_task_getMainExecutor
 + _swift_task_isCurrentExecutor
@@ -428,5 +345,4 @@ CStrings:
 + "arrow.trianglehead.turn.up.right.diamond.fill"
 + "v32@?0@?<v@?@\"<NSSecureCoding>\"@\"NSError\">8#16@\"NSDictionary\"24"
 - "@\"NSProgress\"16@?0@?<v@?@\"NSURL\"@\"NSError\">8"
-
 ```

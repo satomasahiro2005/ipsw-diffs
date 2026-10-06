@@ -2,53 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/IntelligentRoutingDaemon.framework/IntelligentRoutingDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__data` | `0xba0` | `0xed0` | **`+0x330`** |
+| `__AUTH.__data` | `0x2d0` | `0xf8` | **`-0x1d8`** |
+| `__AUTH.__objc_data` | `0xc20` | `0xad8` | **`-0x148`** |
+| `__DATA_DIRTY.__objc_data` | `0x2668` | `0x27b0` | **`+0x148`** |
+| `__DATA.__data` | `0x1a68` | `0x1948` | **`-0x120`** |
+| `__TEXT.__text` | `0xbb36c` | `0xbb32c` | **`-0x40`** |
+| `__DATA_DIRTY.__common` | `0x2` | `0x20` | **`+0x1e`** |
+| `__DATA.__common` | `0x18` | `—` | **`-0x18`** |
+| `__DATA_CONST.__got` | `0x11c0` | `0x11b8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 125.1.4.0.0
--  __TEXT.__text: 0xb7768
-+  __TEXT.__text: 0xb7728
-   __TEXT.__objc_methlist: 0x77ac
-   __TEXT.__const: 0x3670
-   __TEXT.__cstring: 0xafdd
-
-   __DATA_CONST.__objc_protorefs: 0x58
-   __DATA_CONST.__objc_superrefs: 0x2b0
-   __DATA_CONST.__objc_arraydata: 0x98
--  __DATA_CONST.__got: 0x11c0
-+  __DATA_CONST.__got: 0x11b8
-   __AUTH_CONST.__const: 0x2428
-   __AUTH_CONST.__cfstring: 0x66a0
-   __AUTH_CONST.__objc_const: 0xec50
-
-   __AUTH_CONST.__objc_intobj: 0x3d8
-   __AUTH_CONST.__objc_doubleobj: 0xe0
-   __AUTH_CONST.__auth_got: 0xe00
--  __AUTH.__objc_data: 0xc20
--  __AUTH.__data: 0x2d0
-+  __AUTH.__objc_data: 0xad8
-+  __AUTH.__data: 0xf8
-   __DATA.__objc_ivar: 0x964
--  __DATA.__data: 0x1a68
--  __DATA.__common: 0x18
--  __DATA_DIRTY.__objc_data: 0x2668
--  __DATA_DIRTY.__data: 0xba0
-+  __DATA.__data: 0x1948
-+  __DATA_DIRTY.__objc_data: 0x27b0
-+  __DATA_DIRTY.__data: 0xed0
-   __DATA_DIRTY.__bss: 0x340
--  __DATA_DIRTY.__common: 0x2
-+  __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/AVRouting.framework/AVRouting
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 4341
 -  Symbols:   9369
 +  Symbols:   9367
-   CStrings:  1528
- 
 Symbols:
 + _$s10Foundation4DateV2leoiySbAC_ACtFZ
 + _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVy24IntelligentRoutingDaemon14HomeSuggestionVG_Tg506$sSa24fgh4AA14iJ48VRszlE19sortedByRankingTierSayACGyFSbAC_ACtXEfU_Tf1nnc_n

@@ -2,88 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/AVConference.framework/AVConference`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__oslogstring` | `0x141d50` | `0x1431d7` | **`+0x1487`** |
+| `__TEXT.__text` | `0x7e0224` | `0x7e15bc` | **`+0x1398`** |
+| `__TEXT.__cstring` | `0x9f9f5` | `0x9f767` | **`-0x28e`** |
+| `__AUTH_CONST.__cfstring` | `0x29d00` | `0x29de0` | **`+0xe0`** |
+| `__TEXT.__objc_methlist` | `0x3ac00` | `0x3ab38` | **`-0xc8`** |
+| `__TEXT.__gcc_except_tab` | `0x2d04` | `0x2dbc` | **`+0xb8`** |
+| `__AUTH_CONST.__const` | `0x4608` | `0x4588` | **`-0x80`** |
+| `__TEXT.__unwind_info` | `0x12608` | `0x12590` | **`-0x78`** |
+| `__DATA.__data` | `0x7d48` | `0x7ce8` | **`-0x60`** |
+| `__DATA_DIRTY.__objc_data` | `0xcf30` | `0xcee0` | **`-0x50`** |
+| `__AUTH_CONST.__objc_const` | `0x6d128` | `0x6d0e8` | **`-0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x18d98` | `0x18dd0` | **`+0x38`** |
+| `__DATA_DIRTY.__bss` | `0xae0` | `0xab0` | **`-0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x2c38` | `0x2c60` | **`+0x28`** |
+| `__DATA.__bss` | `0x950` | `0x938` | **`-0x18`** |
+| `__DATA.__objc_ivar` | `0x7714` | `0x772c` | **`+0x18`** |
+| `__DATA_CONST.__const` | `0x77e0` | `0x77f8` | **`+0x18`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x200` | `0x210` | **`+0x10`** |
+| `__TEXT.__const` | `0xc690` | `0xc680` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x1e40` | `0x1e48` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x14b8` | `0x14b0` | **`-0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x510` | `0x508` | **`-0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1268` | `0x1260` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2235.63.1.2.0
--  __TEXT.__text: 0x7d4a88
--  __TEXT.__objc_methlist: 0x3ac00
--  __TEXT.__const: 0xc690
--  __TEXT.__cstring: 0x9f9f5
--  __TEXT.__oslogstring: 0x141d50
--  __TEXT.__gcc_except_tab: 0x2d04
 +2260.9.1.0.0
-+  __TEXT.__text: 0x7d5e08
-+  __TEXT.__objc_methlist: 0x3ab38
-+  __TEXT.__const: 0xc680
-+  __TEXT.__cstring: 0x9f767
-+  __TEXT.__oslogstring: 0x1431d7
-+  __TEXT.__gcc_except_tab: 0x2dbc
-   __TEXT.__ustring: 0x2d4
-   __TEXT.__dlopen_cstrs: 0x56
--  __TEXT.__unwind_info: 0x1b708
-+  __TEXT.__unwind_info: 0x1b6a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x77e0
--  __DATA_CONST.__objc_classlist: 0x14b8
-+  __DATA_CONST.__const: 0x77f8
-+  __DATA_CONST.__objc_classlist: 0x14b0
-   __DATA_CONST.__objc_catlist: 0x30
--  __DATA_CONST.__objc_protolist: 0x510
-+  __DATA_CONST.__objc_protolist: 0x508
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x18d98
-+  __DATA_CONST.__objc_selrefs: 0x18dd0
-   __DATA_CONST.__objc_protorefs: 0x48
--  __DATA_CONST.__objc_superrefs: 0x1268
-+  __DATA_CONST.__objc_superrefs: 0x1260
-   __DATA_CONST.__objc_arraydata: 0x27d8
--  __DATA_CONST.__got: 0x1e40
--  __AUTH_CONST.__const: 0x4608
--  __AUTH_CONST.__cfstring: 0x29d00
--  __AUTH_CONST.__objc_const: 0x6d128
-+  __DATA_CONST.__got: 0x1e48
-+  __AUTH_CONST.__const: 0x4588
-+  __AUTH_CONST.__cfstring: 0x29de0
-+  __AUTH_CONST.__objc_const: 0x6d0e8
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x52f8
-   __AUTH_CONST.__objc_arrayobj: 0x1d88
-+  __AUTH_CONST.__objc_doubleobj: 0x210
-   __AUTH_CONST.__objc_floatobj: 0x30
--  __AUTH_CONST.__objc_doubleobj: 0x200
-   __AUTH_CONST.__objc_dictobj: 0x2d0
--  __AUTH_CONST.__auth_got: 0x2c38
-+  __AUTH_CONST.__auth_got: 0x2c60
-   __AUTH.__data: 0xf8
--  __DATA.__objc_ivar: 0x7714
--  __DATA.__data: 0x7d48
-+  __DATA.__objc_ivar: 0x772c
-+  __DATA.__data: 0x7ce8
-   __DATA.__common: 0x55
--  __DATA_DIRTY.__objc_data: 0xcf30
-+  __DATA_DIRTY.__objc_data: 0xcee0
-   __DATA_DIRTY.__data: 0x420
--  __DATA_DIRTY.__bss: 0xae0
-+  __DATA_DIRTY.__bss: 0xab0
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
 
-   - /usr/lib/libspindump.dylib
-   - /usr/lib/libtailspin.dylib
-   - /usr/lib/libz.1.dylib
--  Functions: 35501
--  Symbols:   53136
+-  Functions: 35502
+-  Symbols:   42024
 -  CStrings:  34072
-+  Functions: 35478
-+  Symbols:   53127
++  Functions: 35479
++  Symbols:   42007
 +  CStrings:  34109
- 
 Symbols:
 + +[VCMediaNegotiationBlobV2StreamGroup(Utils) homeKitCameraDefaultsForStreamGroupCamera:]
 + -[CannedEncodedVideoCapture reset]
@@ -154,27 +113,6 @@ Symbols:
 + _kVTCompressionSessionOption_LoggingIdentifier
 + _kVTDecompressionSessionOption_LoggingIdentifier
 + _nw_error_get_error_domain
-+ _objc_msgSend$batchSetCameraUIDsPrimary:secondary:hasSecondary:
-+ _objc_msgSend$batchSetCameraUIDsPrimary:secondary:hasSecondary:aspectRatio:
-+ _objc_msgSend$dispatchedIsInputAvailable
-+ _objc_msgSend$enableSyncGroupReferenceTimestamp
-+ _objc_msgSend$forwardOnePacketFromListenerSocket:listenerSourceIP:listenerSourcePort:forwarderSocketList:listenerParticipantID:
-+ _objc_msgSend$handleListenerEvents:error:result:
-+ _objc_msgSend$hasPrimaryCameraFrameRateMitigation
-+ _objc_msgSend$hasSecondaryCameraFrameRateMitigation
-+ _objc_msgSend$homeKitCameraDefaultsForStreamGroupCamera:
-+ _objc_msgSend$publishCameraUIDChangedForCameraUID:cameraSessionType:
-+ _objc_msgSend$reinitEncoderOnFrameAspectRatioChangeEnabled
-+ _objc_msgSend$reportingAudioJBRampStats
-+ _objc_msgSend$resetStallDetectionStateAfterMonitoringResumed
-+ _objc_msgSend$setEnableSyncGroupReferenceTimestamp:
-+ _objc_msgSend$setReinitEncoderOnFrameAspectRatioChangeEnabled:
-+ _objc_msgSend$setVtLoggingIdentifier:
-+ _objc_msgSend$setupLocalABTestSwitches
-+ _objc_msgSend$setupLocalOnOffSwitches
-+ _objc_msgSend$stopPacketForwarders
-+ _objc_msgSend$supportsMaxKeyFrameIntervalDuration
-+ _objc_msgSend$vtLoggingIdentifier
 + _xpc_copy_description
 - -[AVCCaptionsClient initWithDelegate:translatorIdentifier:]
 - -[VCAVFoundationCapture batchSetCameraUIDsPrimary:secondary:]
@@ -263,19 +201,6 @@ Symbols:
 - ___VCSpeechTranslation_STSpeechTranslatorClientClass_block_invoke
 - ___VCSpeechTranslation_STSpeechTranslatorConfigurationClass_block_invoke
 - ____VCSpeechTranslation_LibraryHandle_block_invoke
-- _objc_msgSend$anyClientNeedsMicInputWithPreferredClient:
-- _objc_msgSend$batchSetCameraUIDsPrimary:secondary:
-- _objc_msgSend$batchSetCameraUIDsPrimary:secondary:aspectRatio:
-- _objc_msgSend$handleListenerEvents:error:
-- _objc_msgSend$initWithDelegate:translatorIdentifier:direction:reportingSamplingUUID:
-- _objc_msgSend$initWithSourceLocale:targetLocale:
-- _objc_msgSend$initWithSourceLocale:targetLocale:omitTranslatedAudio:offlineMTModel:taskHint:
-- _objc_msgSend$initWithTranslatorIdentifier:delegate:delegateQueue:
-- _objc_msgSend$instancesRespondToSelector:
-- _objc_msgSend$setOmitTranslatedAudio:
-- _objc_msgSend$setProduceAudio:
-- _objc_msgSend$translatorIdentifier
-- _objc_msgSend$updateMicAttributionForClient:shouldAdd:
 CStrings:
 + " [%s] %s:%d %@(%p) Applying mute property for audioSessionId=%d, isMuted=%d"
 + " [%s] %s:%d %@(%p) Capturing first modulatedTimestamp=%u baseline, frameTimeInSec=%f, rtpTimestampRate=%u"

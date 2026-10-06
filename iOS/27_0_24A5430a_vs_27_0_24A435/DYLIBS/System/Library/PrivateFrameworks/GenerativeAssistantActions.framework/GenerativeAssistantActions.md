@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/GenerativeAssistantActions.framework/GenerativeAssistantActions`
 
-```diff
+### Section Size Changes
 
- 3600.38.6.0.0
--  __TEXT.__text: 0xba354
-+  __TEXT.__text: 0xba374
-   __TEXT.__const: 0x40d8
-   __TEXT.__constg_swiftt: 0x1318
-   __TEXT.__swift5_typeref: 0x112c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xba354` | `0xba374` | **`+0x20`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s26GenerativeAssistantActions12MetricsUtilsC17emitSignpostEventyys12StaticStringVF : 1560 -> 1556
 ~ _$ss20_ArrayBufferProtocolPsE15replaceSubrange_4with10elementsOfySnySiG_Siqd__ntSlRd__7ElementQyd__AGRtzlFs01_aB0VySSG_s010CollectionH3OneVySSGTg5Tf4nngn_n : 312 -> 324

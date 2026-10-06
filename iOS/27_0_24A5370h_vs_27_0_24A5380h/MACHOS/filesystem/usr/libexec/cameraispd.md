@@ -2,76 +2,49 @@
 
 > `/usr/libexec/cameraispd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__const` | `0x92a8` | `0x9a28` | **`+0x780`** |
+| `__TEXT.__text` | `0x7c5e8` | `0x7cb80` | **`+0x598`** |
+| `__TEXT.__cstring` | `0x75df` | `0x7754` | **`+0x175`** |
+| `__DATA_CONST.__cfstring` | `0x2a60` | `0x2bc0` | **`+0x160`** |
+| `__TEXT.__oslogstring` | `0x5ecb` | `0x5f4b` | **`+0x80`** |
+| `__TEXT.__auth_stubs` | `0x1ee0` | `0x1f20` | **`+0x40`** |
+| `__TEXT.__objc_methtype` | `0x1034` | `0x1067` | **`+0x33`** |
+| `__DATA_CONST.__auth_got` | `0xf80` | `0xfa0` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0xc80` | `0xc90` | **`+0x10`** |
+| `__TEXT.__const` | `0x2c08` | `0x2c18` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x1238` | `0x1248` | **`+0x10`** |
+| `__DATA.__bss` | `0x80` | `0x8c` | **`+0xc`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x7c5e8
--  __TEXT.__auth_stubs: 0x1ee0
-+  __TEXT.__text: 0x7cb80
-+  __TEXT.__auth_stubs: 0x1f20
-   __TEXT.__objc_stubs: 0xf80
-   __TEXT.__objc_methlist: 0x270
-   __TEXT.__gcc_except_tab: 0x18c8
--  __TEXT.__const: 0x2c08
--  __TEXT.__cstring: 0x75df
--  __TEXT.__oslogstring: 0x5ecb
-+  __TEXT.__const: 0x2c18
-+  __TEXT.__cstring: 0x7754
-+  __TEXT.__oslogstring: 0x5f4b
-   __TEXT.__objc_methname: 0x1295
-   __TEXT.__objc_classname: 0x88
--  __TEXT.__objc_methtype: 0x1034
--  __TEXT.__unwind_info: 0x1238
--  __DATA_CONST.__const: 0x92a8
--  __DATA_CONST.__cfstring: 0x2a60
-+  __TEXT.__objc_methtype: 0x1067
-+  __TEXT.__unwind_info: 0x1248
-+  __DATA_CONST.__const: 0x9a28
-+  __DATA_CONST.__cfstring: 0x2bc0
-   __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
+-20.50.6.0.0
++20.55.3.0.0
 
-   __DATA_CONST.__objc_intobj: 0x78
-   __DATA_CONST.__objc_arraydata: 0x10
-   __DATA_CONST.__objc_arrayobj: 0x30
--  __DATA_CONST.__auth_got: 0xf80
--  __DATA_CONST.__got: 0xc80
-+  __DATA_CONST.__auth_got: 0xfa0
-+  __DATA_CONST.__got: 0xc90
-   __DATA_CONST.__auth_ptr: 0x50
-   __DATA.__objc_const: 0x5c8
-   __DATA.__objc_selrefs: 0x4f8
-
-   __DATA.__objc_data: 0xf0
-   __DATA.__data: 0x3aede0
-   __DATA.__common: 0xf
--  __DATA.__bss: 0x80
-+  __DATA.__bss: 0x8c
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libtailspin.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 1550
 -  Symbols:   911
--  CStrings:  2172
+-  CStrings:  1829
 +  Functions: 1556
 +  Symbols:   917
-+  CStrings:  2194
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
++  CStrings:  1840
 Symbols:
 + _AMFDRSealingMapCopyLocalData
 + _CFPreferencesGetAppBooleanValue
@@ -107,5 +80,4 @@ CStrings:
 - "Unexpected references size (Expected %ld, Got %d)\n"
 - "Unexpected references size after compression (Expected %ld, Got %ld)\n"
 - "^{ISPDevice={ISPDeviceCachedConfigs=IB{sCIspCmdConfigGet=ISSIIIII}^{ISPDeviceCachedConfigChannel}^{ISPModuleParams}}^?^v^{ISPDeviceController}I^{__CFDictionary}I^{ISPMotionManager}^{ISPDeviceImpactManager}^{ISPServicesRemote}^{ISPExclaveDebugService}^{SystemStatus}I[4096c]{?=[8I]}^{ISPFirmwareWorkProcessor}BBII^{ISPPlatformInfoStruct}i^v^{__CFRunLoopSource}III{_opaque_pthread_mutex_t=q[56c]}B[7{ISPNotification=*Bi}][7{ISPNotification=*Bi}]{ISPNotification=*Bi}{ISPNotification=*Bi}{ISPNotification=*Bi}II{DCSAudioAccelClientConfigStruct=Q@?^?@?^?}^{DCSAudioAccelManager}}"
-
 ```

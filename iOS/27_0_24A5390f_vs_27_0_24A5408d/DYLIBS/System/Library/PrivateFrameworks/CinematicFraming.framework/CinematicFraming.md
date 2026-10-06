@@ -2,63 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/CinematicFraming.framework/CinematicFraming`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x31818` | `0x231c4` | **`-0xe654`** |
+| `__TEXT.__oslogstring` | `0x5b22` | `—` | **`-0x5b22`** |
+| `__TEXT.__cstring` | `0x33cc` | `0x1dff` | **`-0x15cd`** |
+| `__TEXT.__gcc_except_tab` | `0x1268` | `0xca8` | **`-0x5c0`** |
+| `__TEXT.__unwind_info` | `0x9b8` | `0x880` | **`-0x138`** |
+| `__AUTH_CONST.__cfstring` | `0x1780` | `0x1680` | **`-0x100`** |
+| `__TEXT.__const` | `0x6f0` | `0x690` | **`-0x60`** |
+| `__DATA.__common` | `0x30` | `—` | **`-0x30`** |
+| `__DATA_DIRTY.__common` | `0x20` | `—` | **`-0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x16b8` | `0x16a8` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -761.0.0.0.3
--  __TEXT.__text: 0x31818
 +764.22.5.122.2
-+  __TEXT.__text: 0x231c4
-   __TEXT.__objc_methlist: 0x247c
--  __TEXT.__const: 0x6f0
--  __TEXT.__gcc_except_tab: 0x1268
--  __TEXT.__oslogstring: 0x5b22
--  __TEXT.__cstring: 0x33cc
-+  __TEXT.__const: 0x690
-+  __TEXT.__gcc_except_tab: 0xca8
-+  __TEXT.__cstring: 0x1dff
-   __TEXT.__dlopen_cstrs: 0x52
--  __TEXT.__unwind_info: 0x9b8
-+  __TEXT.__unwind_info: 0x880
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0xc8
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x16b8
-+  __DATA_CONST.__objc_selrefs: 0x16a8
-   __DATA_CONST.__objc_superrefs: 0xb0
-   __DATA_CONST.__objc_arraydata: 0xf0
-   __DATA_CONST.__got: 0x1f8
-   __AUTH_CONST.__const: 0x40
--  __AUTH_CONST.__cfstring: 0x1780
-+  __AUTH_CONST.__cfstring: 0x1680
-   __AUTH_CONST.__objc_const: 0x4ea0
-   __AUTH_CONST.__objc_intobj: 0x120
-   __AUTH_CONST.__objc_dictobj: 0xf0
-
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__objc_ivar: 0x580
-   __DATA.__data: 0x3a0
--  __DATA.__common: 0x30
-   __DATA.__bss: 0x40
-   __DATA_DIRTY.__objc_data: 0x7d0
--  __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 879
--  Symbols:   2188
+-  Symbols:   1644
 -  CStrings:  659
 +  Functions: 844
-+  Symbols:   2157
++  Symbols:   1617
 +  CStrings:  306
- 
 Symbols:
 + _FigSignalErrorAtGM
 + _objc_retain_x27
@@ -90,10 +61,6 @@ Symbols:
 - _fig_log_emitter_get_os_log_and_send_and_compose_flags_and_os_log_type
 - _fig_note_initialize_category_with_default_work_cf
 - _gFigCinematicFramingKalmanFilter
-- _objc_msgSend$GPUEndTime
-- _objc_msgSend$GPUStartTime
-- _objc_msgSend$debugDescription
-- _objc_msgSend$isFrontCamera
 - _os_log_type_enabled
 CStrings:
 + "%s signalled err=%d at <>:%d"

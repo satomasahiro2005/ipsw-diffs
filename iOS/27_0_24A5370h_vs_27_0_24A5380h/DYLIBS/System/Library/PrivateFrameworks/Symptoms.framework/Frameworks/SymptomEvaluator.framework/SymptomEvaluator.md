@@ -2,115 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/Symptoms.framework/Frameworks/SymptomEvaluator.framework/SymptomEvaluator`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x29d04c` | `0x29f910` | **`+0x28c4`** |
+| `__TEXT.__oslogstring` | `0x47375` | `0x47b65` | **`+0x7f0`** |
+| `__AUTH_CONST.__objc_const` | `0x411c8` | `0x41918` | **`+0x750`** |
+| `__TEXT.__cstring` | `0x272c4` | `0x27620` | **`+0x35c`** |
+| `__TEXT.bb_INT_clp` | `0x6a10` | `0x6d20` | **`+0x310`** |
+| `__AUTH_CONST.__cfstring` | `0x1f0a0` | `0x1f280` | **`+0x1e0`** |
+| `__TEXT.__objc_methlist` | `0x18ae0` | `0x18c20` | **`+0x140`** |
+| `__DATA_CONST.__got` | `0xfd0` | `0x10c0` | **`+0xf0`** |
+| `__DATA_CONST.__const` | `0x6f00` | `0x6f98` | **`+0x98`** |
+| `__DATA_CONST.__objc_selrefs` | `0xd420` | `0xd4a8` | **`+0x88`** |
+| `__TEXT.__unwind_info` | `0x79d8` | `0x7a60` | **`+0x88`** |
+| `__DATA.__objc_ivar` | `0x3128` | `0x3184` | **`+0x5c`** |
+| `__AUTH.__objc_data` | `0x13f8` | `0x1448` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x527c` | `0x52b8` | **`+0x3c`** |
+| `__AUTH_CONST.__objc_intobj` | `0xa08` | `0x9f0` | **`-0x18`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x60` | `0x50` | **`-0x10`** |
+| `__TEXT.__const` | `0x1258` | `0x1268` | **`+0x10`** |
+| `__DATA.__data` | `0x1f28` | `0x1f30` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x8a8` | `0x8b0` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x5d0` | `0x5d8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x29d04c
--  __TEXT.__objc_methlist: 0x18ae0
--  __TEXT.__cstring: 0x272c4
--  __TEXT.__const: 0x1258
--  __TEXT.__oslogstring: 0x47375
--  __TEXT.__gcc_except_tab: 0x527c
-+  __TEXT.__text: 0x29f910
-+  __TEXT.__objc_methlist: 0x18c20
-+  __TEXT.__cstring: 0x27620
-+  __TEXT.__const: 0x1268
-+  __TEXT.__oslogstring: 0x47b65
-+  __TEXT.__gcc_except_tab: 0x52b8
-   __TEXT.__dlopen_cstrs: 0x56
-   __TEXT.__swift5_typeref: 0x38d
-   __TEXT.__swift5_capture: 0x518
+-2374.0.0.0.0
++2385.0.0.0.0
 
-   __TEXT.network_clp: 0x4bb0
-   __TEXT.baseband_clp: 0xed50
-   __TEXT.bb_MAV_clp: 0x89e0
--  __TEXT.bb_INT_clp: 0x6a10
-+  __TEXT.bb_INT_clp: 0x6d20
-   __TEXT.modules_clp: 0x16e0
--  __TEXT.__unwind_info: 0x79d8
-+  __TEXT.__unwind_info: 0x7a60
-   __TEXT.__eh_frame: 0x7d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x6f00
--  __DATA_CONST.__objc_classlist: 0x8a8
-+  __DATA_CONST.__const: 0x6f98
-+  __DATA_CONST.__objc_classlist: 0x8b0
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x1c0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0xd420
-+  __DATA_CONST.__objc_selrefs: 0xd4a8
-   __DATA_CONST.__objc_protorefs: 0x30
--  __DATA_CONST.__objc_superrefs: 0x5d0
-+  __DATA_CONST.__objc_superrefs: 0x5d8
-   __DATA_CONST.__objc_arraydata: 0x960
--  __DATA_CONST.__got: 0xfd0
-+  __DATA_CONST.__got: 0x10c0
-   __AUTH_CONST.__const: 0x3210
--  __AUTH_CONST.__cfstring: 0x1f0a0
--  __AUTH_CONST.__objc_const: 0x411c8
-+  __AUTH_CONST.__cfstring: 0x1f280
-+  __AUTH_CONST.__objc_const: 0x41918
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x1b0
-   __AUTH_CONST.__objc_dictobj: 0xa00
--  __AUTH_CONST.__objc_intobj: 0xa08
--  __AUTH_CONST.__objc_doubleobj: 0x60
-+  __AUTH_CONST.__objc_intobj: 0x9f0
-+  __AUTH_CONST.__objc_doubleobj: 0x50
-   __AUTH_CONST.__objc_floatobj: 0x30
-   __AUTH_CONST.__auth_got: 0x1790
--  __AUTH.__objc_data: 0x13f8
-+  __AUTH.__objc_data: 0x1448
-   __AUTH.__data: 0xc8
--  __DATA.__objc_ivar: 0x3128
--  __DATA.__data: 0x1f28
-+  __DATA.__objc_ivar: 0x3184
-+  __DATA.__data: 0x1f30
-   __DATA.__crash_info: 0x148
-   __DATA.__bss: 0x1030
-   __DATA.__common: 0xa8
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 12178
--  Symbols:   39238
--  CStrings:  16132
+-  Symbols:   19917
+-  CStrings:  12142
 +  Functions: 12215
-+  Symbols:   39382
-+  CStrings:  16203
- 
-Sections:
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.evaluator_cfg : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   19994
++  CStrings:  12198
 Symbols:
 + +[TrackedFlow wifiNonLocalInboundUsageGrandTallyAfterAdding:]
 + -[CellFallbackHandler _flushPendingSustainedDnsOut]
@@ -204,21 +133,6 @@ Symbols:
 + _kBBHWifiFrictionLookbackSecs
 + _kNetDiagOptDiagsUseGMI
 + _kSustainedDnsOutDelaySecsRNF
-+ _objc_msgSend$_captureRxRecoveryBaseline
-+ _objc_msgSend$_configureBBHParamsFromPrefs:
-+ _objc_msgSend$_descriptionBBHTunables
-+ _objc_msgSend$_evalBBHTunables
-+ _objc_msgSend$_evaluateRxRecoveryForIteration:
-+ _objc_msgSend$_flushPendingSustainedDnsOut
-+ _objc_msgSend$_initBBHTunables
-+ _objc_msgSend$_onDnsOutChangedTo:
-+ _objc_msgSend$_recoverFromBrokenWithEgressTrigger:
-+ _objc_msgSend$_setBBHConfiguration:
-+ _objc_msgSend$setSustainedDnsOut:
-+ _objc_msgSend$setTrialTunablesBBH:
-+ _objc_msgSend$sustainedDnsOut
-+ _objc_msgSend$trialTunablesBBH
-+ _objc_msgSend$wifiNonLocalInboundUsageGrandTallyAfterAdding:
 + _wifiNonLocalInboundUsageGrandTally
 - GCC_except_table116
 - GCC_except_table123
@@ -307,5 +221,4 @@ CStrings:
 - "GeoIP: Computing geohash for latitude: %f, longitude: %f, hashLength: %zu"
 - "dsTshold: %d, dsTimeSecs: %d, dsRefreshSecs: %d, probesFailureFactor: %.2f, packetsFrictionFactor %.2f, progressTimeSecs: %d, historyProgressTimeSecs: %d, maxPreferResidencyMsecs: %llu, rnfToCellRatio: %.2f, fallbackHeavyRatio: %.2f, usePolledScore: %d, rnfPolledScoreWindowSize: %lu, useOpportunistic: %d, usePrefer: %d, fallbackClosedLoop: %d"
 - "stayed in Positive for %llu seconds (> %d seconds)."
-
 ```

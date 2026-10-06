@@ -2,77 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/CarAccessoryFramework.framework/CarAccessoryFramework`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10ec40` | `0x111df0` | **`+0x31b0`** |
+| `__AUTH_CONST.__objc_const` | `0x50bf0` | `0x51288` | **`+0x698`** |
+| `__TEXT.__objc_methlist` | `0x1930c` | `0x19694` | **`+0x388`** |
+| `__AUTH_CONST.__cfstring` | `0xe020` | `0xe220` | **`+0x200`** |
+| `__AUTH.__objc_data` | `0x190` | `0x320` | **`+0x190`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7e50` | `0x7fa8` | **`+0x158`** |
+| `__TEXT.__cstring` | `0x7f7f` | `0x80cb` | **`+0x14c`** |
+| `__TEXT.__oslogstring` | `0x3d35` | `0x3e3a` | **`+0x105`** |
+| `__DATA_CONST.__const` | `0x2740` | `0x27f0` | **`+0xb0`** |
+| `__DATA_CONST.__objc_arraydata` | `0xc4c8` | `0xc578` | **`+0xb0`** |
+| `__TEXT.__unwind_info` | `0x3c30` | `0x3cc8` | **`+0x98`** |
+| `__DATA_CONST.__objc_classlist` | `0xde0` | `0xe08` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0xac0` | `0xae0` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x684` | `0x6a4` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0xf20` | `0xf40` | **`+0x20`** |
+| `__DATA.__bss` | `0x3d0` | `0x3e0` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x800` | `0x810` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -542.7.0.0.0
--  __TEXT.__text: 0x106c9c
--  __TEXT.__objc_methlist: 0x1930c
 +552.3.0.0.0
-+  __TEXT.__text: 0x109cf0
-+  __TEXT.__objc_methlist: 0x19694
-   __TEXT.__const: 0x1b8
-   __TEXT.__gcc_except_tab: 0x53c
--  __TEXT.__oslogstring: 0x3d35
--  __TEXT.__cstring: 0x7f7f
-+  __TEXT.__oslogstring: 0x3e3a
-+  __TEXT.__cstring: 0x80cb
-   __TEXT.__ustring: 0x38
--  __TEXT.__unwind_info: 0x6630
-+  __TEXT.__unwind_info: 0x6740
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2740
--  __DATA_CONST.__objc_classlist: 0xde0
-+  __DATA_CONST.__const: 0x27f0
-+  __DATA_CONST.__objc_classlist: 0xe08
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x630
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7e50
-+  __DATA_CONST.__objc_selrefs: 0x7fa8
-   __DATA_CONST.__objc_protorefs: 0x5d0
--  __DATA_CONST.__objc_superrefs: 0x800
--  __DATA_CONST.__objc_arraydata: 0xc4c8
--  __DATA_CONST.__got: 0xf20
--  __AUTH_CONST.__const: 0xac0
--  __AUTH_CONST.__cfstring: 0xe020
--  __AUTH_CONST.__objc_const: 0x50bf0
-+  __DATA_CONST.__objc_superrefs: 0x810
-+  __DATA_CONST.__objc_arraydata: 0xc578
-+  __DATA_CONST.__got: 0xf40
-+  __AUTH_CONST.__const: 0xae0
-+  __AUTH_CONST.__cfstring: 0xe220
-+  __AUTH_CONST.__objc_const: 0x51288
-   __AUTH_CONST.__objc_arrayobj: 0x120
--  __AUTH_CONST.__objc_floatobj: 0x20
--  __AUTH_CONST.__objc_intobj: 0x690
--  __AUTH_CONST.__objc_doubleobj: 0x30
-   __AUTH_CONST.__objc_dictobj: 0x6860
-+  __AUTH_CONST.__objc_intobj: 0x690
-+  __AUTH_CONST.__objc_floatobj: 0x20
-+  __AUTH_CONST.__objc_doubleobj: 0x30
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x190
--  __DATA.__objc_ivar: 0x684
-+  __AUTH.__objc_data: 0x320
-+  __DATA.__objc_ivar: 0x6a4
-   __DATA.__data: 0x4a60
-   __DATA_DIRTY.__objc_data: 0x8930
-   __DATA_DIRTY.__bss: 0x128
 
-   - /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 7815
--  Symbols:   15981
+-  Symbols:   13253
 -  CStrings:  2196
 +  Functions: 7890
-+  Symbols:   16135
++  Symbols:   13385
 +  CStrings:  2217
- 
 Symbols:
 + +[CAFAccessoryTypes handlerPriorityForType:]
 + +[CAFPresetEntryCharacteristic primaryCharacteristicFormat]
@@ -233,37 +197,6 @@ Symbols:
 + _kCarDataProtocolHandlerNameCommunicationPlugin
 + _kCarDataProtocolHandlerNamePassengerDP
 + _kCarDataProtocolHandlerNameSecondaryClusterDP
-+ _objc_msgSend$accessoriesForCategory:sortedByHandlerPriority:
-+ _objc_msgSend$accessoryForCategory:withHandlerPriority:
-+ _objc_msgSend$driveModeService:didUpdateUserVisibleLabels:
-+ _objc_msgSend$equalizerPresetsService:didUpdatePresetEntryList:
-+ _objc_msgSend$equalizerPresetsService:didUpdateSelectedPresetEntryIndex:
-+ _objc_msgSend$handlerPriorityForType:
-+ _objc_msgSend$hasUserVisibleLabels
-+ _objc_msgSend$imageIdentifier
-+ _objc_msgSend$initWithPresetEntrys:
-+ _objc_msgSend$nowPlayingService:didUpdateDuration:
-+ _objc_msgSend$nowPlayingService:didUpdateElapsedTime:
-+ _objc_msgSend$nowPlayingService:didUpdatePlaybackRate:
-+ _objc_msgSend$nowPlayingServiceDidUpdateSeekToPosition:
-+ _objc_msgSend$playbackRate
-+ _objc_msgSend$playbackRateCharacteristic
-+ _objc_msgSend$presetEntryList
-+ _objc_msgSend$presetEntryListCharacteristic
-+ _objc_msgSend$presetEntryListValue
-+ _objc_msgSend$presetEntryListWithArray:
-+ _objc_msgSend$presetEntryValue
-+ _objc_msgSend$presetEntrys
-+ _objc_msgSend$seekToPosition:completion:
-+ _objc_msgSend$seekToPositionControl
-+ _objc_msgSend$selectedPresetEntryIndex
-+ _objc_msgSend$selectedPresetEntryIndexCharacteristic
-+ _objc_msgSend$setDisplayUnitsService:
-+ _objc_msgSend$sortedArrayWithOptions:usingComparator:
-+ _objc_msgSend$soundDistributionPresetsService:didUpdatePresetEntryList:
-+ _objc_msgSend$soundDistributionPresetsService:didUpdateSelectedPresetEntryIndex:
-+ _objc_msgSend$userVisibleLabels
-+ _objc_msgSend$userVisibleLabelsCharacteristic
 - -[CAFEqualizerPresets hasPresetLabel]
 - -[CAFEqualizerPresets presetLabelCharacteristic]
 - -[CAFEqualizerPresets presetLabel]
@@ -291,15 +224,6 @@ Symbols:
 - GCC_except_table16
 - _CAFCharacteristicTypePresetLabel
 - __OBJC_$_INSTANCE_METHODS_CAFCar(CAFNowPlaying|Accessories)
-- _objc_msgSend$equalizerPresetsService:didUpdatePresetLabel:
-- _objc_msgSend$equalizerPresetsService:didUpdateSelectSettingEntryList:
-- _objc_msgSend$equalizerPresetsService:didUpdateSelectedEntryIndex:
-- _objc_msgSend$hasPresetLabel
-- _objc_msgSend$presetLabel
-- _objc_msgSend$presetLabelCharacteristic
-- _objc_msgSend$soundDistributionPresetsService:didUpdatePresetLabel:
-- _objc_msgSend$soundDistributionPresetsService:didUpdateSelectSettingEntryList:
-- _objc_msgSend$soundDistributionPresetsService:didUpdateSelectedEntryIndex:
 CStrings:
 + "!1"
 + "%{public}@ %s observing DisplayUnits on %{public}@ (%{public}@)"

@@ -2,34 +2,22 @@
 
 > `com.apple.driver.AppleSEPKeyStore`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__const` | `0x3d98` | `0x3e38` | **`+0xa0`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
-- `__DATA.__data`
-- `__DATA_CONST.__mod_init_func`
-- `__DATA_CONST.__mod_term_func`
-- `__DATA_CONST.__kalloc_type`
-- `__DATA_CONST.__kalloc_var`
-- `__DATA_CONST.__auth_got`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
+
+### Other Changes
 
 ```diff
 
 -2383.0.14.0.1
 +2383.0.22.0.2
-   __TEXT.__cstring: 0x4d84
-   __TEXT.__os_log: 0x83
-   __TEXT.__const: 0xa7c
-
-   __DATA.__bss: 0x500
-   __DATA_CONST.__mod_init_func: 0x10
-   __DATA_CONST.__mod_term_func: 0x10
--  __DATA_CONST.__const: 0x3d98
-+  __DATA_CONST.__const: 0x3e38
-   __DATA_CONST.__kalloc_type: 0xd80
-   __DATA_CONST.__kalloc_var: 0xa0
-   __DATA_CONST.__auth_got: 0x520
 CStrings:
 + "21:25:47"
 + "2383.0.22.0.2"

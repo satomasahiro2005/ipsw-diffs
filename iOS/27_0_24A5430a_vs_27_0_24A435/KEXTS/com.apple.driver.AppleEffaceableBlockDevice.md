@@ -2,39 +2,39 @@
 
 > `com.apple.driver.AppleEffaceableBlockDevice`
 
-```diff
+### Section Size Changes
 
- 92.0.0.0.0
-   __TEXT.__cstring: 0x166
--  __TEXT_EXEC.__text: 0xf24
-+  __TEXT_EXEC.__text: 0xf88
-   __TEXT_EXEC.__auth_stubs: 0x170
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x38
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0xf24` | `0xf88` | **`+0x64`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_fffffe0008a3a810 -> sub_fffffe0008a8b9a0 : 300 -> 304
-~ sub_fffffe0008a3a984 -> sub_fffffe0008a8bb18 : 212 -> 216
-~ sub_fffffe0008a3aa58 -> sub_fffffe0008a8bbf0 : 96 -> 100
-~ sub_fffffe0008a3aab8 -> sub_fffffe0008a8bc54 : 84 -> 88
-~ sub_fffffe0008a3ab24 -> sub_fffffe0008a8bcc4 : 72 -> 76
-~ sub_fffffe0008a3ab74 -> sub_fffffe0008a8bd18 : 52 -> 56
-~ sub_fffffe0008a3aba8 -> sub_fffffe0008a8bd50 : 52 -> 56
-~ sub_fffffe0008a3abec -> sub_fffffe0008a8bd98 : 68 -> 72
-~ sub_fffffe0008a3ac58 -> sub_fffffe0008a8be08 : 72 -> 76
-~ sub_fffffe0008a3aca0 -> sub_fffffe0008a8be54 : 104 -> 108
-~ sub_fffffe0008a3ad1c -> sub_fffffe0008a8bed4 : 88 -> 92
-~ sub_fffffe0008a3ad74 -> sub_fffffe0008a8bf30 : 88 -> 92
-~ sub_fffffe0008a3afc8 -> sub_fffffe0008a8c188 : 100 -> 104
-~ sub_fffffe0008a3b04c -> sub_fffffe0008a8c210 : 92 -> 96
-~ sub_fffffe0008a3b0a8 -> sub_fffffe0008a8c270 : 80 -> 84
-~ sub_fffffe0008a3b0f8 -> sub_fffffe0008a8c2c4 : 96 -> 100
-~ sub_fffffe0008a3b158 -> sub_fffffe0008a8c328 : 84 -> 88
-~ sub_fffffe0008a3b1d8 -> sub_fffffe0008a8c3ac : 196 -> 200
-~ sub_fffffe0008a3b29c -> sub_fffffe0008a8c474 : 44 -> 48
-~ sub_fffffe0008a3b2c8 -> sub_fffffe0008a8c4a4 : 264 -> 268
-~ sub_fffffe0008a3b474 -> sub_fffffe0008a8c654 : 80 -> 84
+~ sub_fffffff008a564a0 -> sub_fffffff008aa4850 : 300 -> 304
+~ sub_fffffff008a56614 -> sub_fffffff008aa49c8 : 212 -> 216
+~ sub_fffffff008a566e8 -> sub_fffffff008aa4aa0 : 96 -> 100
+~ sub_fffffff008a56748 -> sub_fffffff008aa4b04 : 84 -> 88
+~ sub_fffffff008a567b4 -> sub_fffffff008aa4b74 : 72 -> 76
+~ sub_fffffff008a56804 -> sub_fffffff008aa4bc8 : 52 -> 56
+~ sub_fffffff008a56838 -> sub_fffffff008aa4c00 : 52 -> 56
+~ sub_fffffff008a5687c -> sub_fffffff008aa4c48 : 68 -> 72
+~ sub_fffffff008a568e8 -> sub_fffffff008aa4cb8 : 72 -> 76
+~ sub_fffffff008a56930 -> sub_fffffff008aa4d04 : 104 -> 108
+~ sub_fffffff008a569ac -> sub_fffffff008aa4d84 : 88 -> 92
+~ sub_fffffff008a56a04 -> sub_fffffff008aa4de0 : 88 -> 92
+~ sub_fffffff008a56c58 -> sub_fffffff008aa5038 : 100 -> 104
+~ sub_fffffff008a56cdc -> sub_fffffff008aa50c0 : 92 -> 96
+~ sub_fffffff008a56d38 -> sub_fffffff008aa5120 : 80 -> 84
+~ sub_fffffff008a56d88 -> sub_fffffff008aa5174 : 96 -> 100
+~ sub_fffffff008a56de8 -> sub_fffffff008aa51d8 : 84 -> 88
+~ sub_fffffff008a56e68 -> sub_fffffff008aa525c : 196 -> 200
+~ sub_fffffff008a56f2c -> sub_fffffff008aa5324 : 44 -> 48
+~ sub_fffffff008a56f58 -> sub_fffffff008aa5354 : 264 -> 268
+~ sub_fffffff008a57104 -> sub_fffffff008aa5504 : 80 -> 84
 ~ __Z18getStorageSizeHookP20_effaceable_bdev_hal : 328 -> 332
 ~ _panic : 20 -> 24
 ~ _OUTLINED_FUNCTION_1 : 44 -> 48
-~ sub_fffffe0008a3b708 -> sub_fffffe0008a8c8f8 : 44 -> 48
+~ sub_fffffff008a57398 -> sub_fffffff008aa57a8 : 44 -> 48
 ```

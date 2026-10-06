@@ -2,105 +2,67 @@
 
 > `/Applications/Preferences.app/Preferences`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x118350` | `0x127764` | **`+0xf414`** |
+| `__DATA.__data` | `0x7028` | `0x7590` | **`+0x568`** |
+| `__DATA.__objc_data` | `0x1108` | `0x1598` | **`+0x490`** |
+| `__TEXT.__eh_frame` | `0x6b14` | `0x6dec` | **`+0x2d8`** |
+| `__DATA.__objc_const` | `0x7778` | `0x74c8` | **`-0x2b0`** |
+| `__TEXT.__cstring` | `0x6036` | `0x6236` | **`+0x200`** |
+| `__TEXT.__const` | `0xae04` | `0xac14` | **`-0x1f0`** |
+| `__TEXT.__unwind_info` | `0x3780` | `0x3970` | **`+0x1f0`** |
+| `__TEXT.__auth_stubs` | `0x4ad0` | `0x4c70` | **`+0x1a0`** |
+| `__DATA.__bss` | `0x8188` | `0x8308` | **`+0x180`** |
+| `__TEXT.__oslogstring` | `0x2aec` | `0x2c6c` | **`+0x180`** |
+| `__TEXT.__constg_swiftt` | `0x259c` | `0x26d4` | **`+0x138`** |
+| `__TEXT.__swift5_typeref` | `0x95b8` | `0x96d0` | **`+0x118`** |
+| `__TEXT.__swift5_reflstr` | `0x39c6` | `0x3ac6` | **`+0x100`** |
+| `__DATA_CONST.__auth_got` | `0x2570` | `0x2640` | **`+0xd0`** |
+| `__DATA.__common` | `0x2f0` | `0x398` | **`+0xa8`** |
+| `__TEXT.__swift5_fieldmd` | `0x29d8` | `0x2a80` | **`+0xa8`** |
+| `__TEXT.__objc_methname` | `0x40a9` | `0x4119` | **`+0x70`** |
+| `__DATA_CONST.__got` | `0x11b8` | `0x1220` | **`+0x68`** |
+| `__TEXT.__objc_classname` | `0xf7b` | `0xfbb` | **`+0x40`** |
+| `__TEXT.__objc_stubs` | `0x1f80` | `0x1fc0` | **`+0x40`** |
+| `__TEXT.__swift5_capture` | `0x1670` | `0x16ac` | **`+0x3c`** |
+| `__TEXT.__swift_as_cont` | `0x5a8` | `0x5dc` | **`+0x34`** |
+| `__TEXT.__objc_methlist` | `0xc14` | `0xc44` | **`+0x30`** |
+| `__TEXT.__swift5_assocty` | `0xb78` | `0xb98` | **`+0x20`** |
+| `__DATA_CONST.__auth_ptr` | `0x18c0` | `0x18d8` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x118` | `0x104` | **`-0x14`** |
+| `__DATA.__objc_selrefs` | `0xce8` | `0xcf8` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x59d8` | `0x59c8` | **`-0x10`** |
+| `__TEXT.__swift5_proto` | `0x454` | `0x460` | **`+0xc`** |
+| `__TEXT.__swift5_types` | `0x2a0` | `0x2ac` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `0x294` | `0x2a0` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x1b0` | `0x1b8` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x44` | `0x3c` | **`-0x8`** |
+| `__TEXT.__swift_as_entry` | `0x2ac` | `0x2b0` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_protos`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x118350
--  __TEXT.__auth_stubs: 0x4ad0
--  __TEXT.__objc_stubs: 0x1f80
--  __TEXT.__objc_methlist: 0xc14
--  __TEXT.__const: 0xae04
--  __TEXT.__objc_classname: 0xf7b
--  __TEXT.__objc_methname: 0x40a9
-+  __TEXT.__text: 0x127764
-+  __TEXT.__auth_stubs: 0x4c70
-+  __TEXT.__objc_stubs: 0x1fc0
-+  __TEXT.__objc_methlist: 0xc44
-+  __TEXT.__const: 0xac14
-+  __TEXT.__objc_classname: 0xfbb
-+  __TEXT.__objc_methname: 0x4119
-   __TEXT.__objc_methtype: 0x1595
--  __TEXT.__cstring: 0x6036
--  __TEXT.__constg_swiftt: 0x259c
--  __TEXT.__swift5_typeref: 0x95b8
--  __TEXT.__swift5_builtin: 0x118
--  __TEXT.__swift5_reflstr: 0x39c6
--  __TEXT.__swift5_assocty: 0xb78
--  __TEXT.__swift5_fieldmd: 0x29d8
--  __TEXT.__swift5_proto: 0x454
--  __TEXT.__swift5_types: 0x2a0
-+  __TEXT.__cstring: 0x6236
-+  __TEXT.__constg_swiftt: 0x26d4
-+  __TEXT.__swift5_typeref: 0x96d0
-+  __TEXT.__swift5_builtin: 0x104
-+  __TEXT.__swift5_reflstr: 0x3ac6
-+  __TEXT.__swift5_assocty: 0xb98
-+  __TEXT.__swift5_fieldmd: 0x2a80
-+  __TEXT.__swift5_proto: 0x460
-+  __TEXT.__swift5_types: 0x2ac
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__swift_as_entry: 0x2ac
--  __TEXT.__swift_as_ret: 0x294
--  __TEXT.__swift_as_cont: 0x5a8
--  __TEXT.__swift5_capture: 0x1670
--  __TEXT.__oslogstring: 0x2aec
-+  __TEXT.__swift_as_entry: 0x2b0
-+  __TEXT.__swift_as_ret: 0x2a0
-+  __TEXT.__swift_as_cont: 0x5dc
-+  __TEXT.__swift5_capture: 0x16ac
-+  __TEXT.__oslogstring: 0x2c6c
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__swift5_mpenum: 0x44
--  __TEXT.__unwind_info: 0x3780
--  __TEXT.__eh_frame: 0x6b14
--  __DATA_CONST.__const: 0x59d8
--  __DATA_CONST.__objc_classlist: 0x1b0
-+  __TEXT.__swift5_mpenum: 0x3c
-+  __TEXT.__unwind_info: 0x3970
-+  __TEXT.__eh_frame: 0x6dec
-+  __DATA_CONST.__const: 0x59c8
-+  __DATA_CONST.__objc_classlist: 0x1b8
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x130
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x98
--  __DATA_CONST.__auth_got: 0x2570
--  __DATA_CONST.__got: 0x11b8
--  __DATA_CONST.__auth_ptr: 0x18c0
--  __DATA.__objc_const: 0x7778
--  __DATA.__objc_selrefs: 0xce8
--  __DATA.__objc_data: 0x1108
--  __DATA.__data: 0x7028
--  __DATA.__bss: 0x8188
--  __DATA.__common: 0x2f0
-+  __DATA_CONST.__auth_got: 0x2640
-+  __DATA_CONST.__got: 0x1220
-+  __DATA_CONST.__auth_ptr: 0x18d8
-+  __DATA.__objc_const: 0x74c8
-+  __DATA.__objc_selrefs: 0xcf8
-+  __DATA.__objc_data: 0x1598
-+  __DATA.__data: 0x7590
-+  __DATA.__bss: 0x8308
-+  __DATA.__common: 0x398
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/ClassKit.framework/ClassKit
-   - /System/Library/Frameworks/Combine.framework/Combine
+-27.0.42.100.0
++2027.0.3.100.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4226
 -  Symbols:   2269
--  CStrings:  1552
+-  CStrings:  1551
 +  Functions: 4370
 +  Symbols:   2304
-+  CStrings:  1573
- 
-Sections:
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_entry : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
++  CStrings:  1572
 Symbols:
 + _$s10Foundation11FormatStylePA2A4DateV08RelativebC0VRszrlE8relative12presentation05unitsC0A2G12PresentationV_AG05UnitsC0VtFZ
 + _$s10Foundation4DateV11FormatStyleV04TimeD0V9shortenedAGvgZ
@@ -203,5 +165,4 @@ CStrings:
 - "progressPercentage"
 - "supports.systemAssistantExperience"
 - "…Complete (%s.%s) updated selection."
-
 ```

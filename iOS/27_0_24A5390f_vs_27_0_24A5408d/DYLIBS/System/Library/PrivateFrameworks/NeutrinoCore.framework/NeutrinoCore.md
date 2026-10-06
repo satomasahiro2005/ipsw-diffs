@@ -2,82 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/NeutrinoCore.framework/NeutrinoCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x30d0e8` | `0x310f64` | **`+0x3e7c`** |
+| `__TEXT.__cstring` | `0x3d7ef` | `0x3dae2` | **`+0x2f3`** |
+| `__TEXT.__objc_methlist` | `0x2023c` | `0x20474` | **`+0x238`** |
+| `__AUTH_CONST.__objc_const` | `0x35f78` | `0x36110` | **`+0x198`** |
+| `__AUTH_CONST.__cfstring` | `0x1c8c0` | `0x1ca00` | **`+0x140`** |
+| `__TEXT.__unwind_info` | `0x8460` | `0x84f0` | **`+0x90`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb2c0` | `0xb338` | **`+0x78`** |
+| `__AUTH.__objc_data` | `—` | `0x50` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x7f54` | `0x7f8c` | **`+0x38`** |
+| `__DATA_CONST.__const` | `0x3f50` | `0x3f78` | **`+0x28`** |
+| `__AUTH_CONST.__auth_got` | `0x10c0` | `0x10c8` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x21f8` | `0x2200` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x15b0` | `0x15b8` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0xfe0` | `0xfe8` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x196c` | `0x1970` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -910.33.102.0.0
--  __TEXT.__text: 0x30d0e8
--  __TEXT.__objc_methlist: 0x2023c
 +912.0.111.0.0
-+  __TEXT.__text: 0x310f64
-+  __TEXT.__objc_methlist: 0x20474
-   __TEXT.__const: 0x2918
-   __TEXT.__swift5_typeref: 0x3e7
-   __TEXT.__swift5_reflstr: 0x93
 
-   __TEXT.__swift5_fieldmd: 0x178
-   __TEXT.__swift5_proto: 0x7c
-   __TEXT.__swift5_types: 0x2c
--  __TEXT.__cstring: 0x3d7ef
-+  __TEXT.__cstring: 0x3dae2
-   __TEXT.__swift5_capture: 0x210
--  __TEXT.__gcc_except_tab: 0x7f54
-+  __TEXT.__gcc_except_tab: 0x7f8c
-   __TEXT.__oslogstring: 0x5489
-   __TEXT.__ustring: 0x2e
--  __TEXT.__unwind_info: 0x8460
-+  __TEXT.__unwind_info: 0x84f0
-   __TEXT.__eh_frame: 0x448
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3f50
--  __DATA_CONST.__objc_classlist: 0x15b0
-+  __DATA_CONST.__const: 0x3f78
-+  __DATA_CONST.__objc_classlist: 0x15b8
-   __DATA_CONST.__objc_catlist: 0xa8
-   __DATA_CONST.__objc_protolist: 0x4f0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb2c0
-+  __DATA_CONST.__objc_selrefs: 0xb338
-   __DATA_CONST.__objc_protorefs: 0x98
--  __DATA_CONST.__objc_superrefs: 0xfe0
-+  __DATA_CONST.__objc_superrefs: 0xfe8
-   __DATA_CONST.__objc_arraydata: 0xae0
--  __DATA_CONST.__got: 0x21f8
-+  __DATA_CONST.__got: 0x2200
-   __AUTH_CONST.__const: 0x4e80
--  __AUTH_CONST.__cfstring: 0x1c8c0
--  __AUTH_CONST.__objc_const: 0x35f78
-+  __AUTH_CONST.__cfstring: 0x1ca00
-+  __AUTH_CONST.__objc_const: 0x36110
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x8d0
-   __AUTH_CONST.__objc_dictobj: 0x348
-   __AUTH_CONST.__objc_doubleobj: 0x210
-   __AUTH_CONST.__objc_floatobj: 0x70
-   __AUTH_CONST.__objc_arrayobj: 0xf0
--  __AUTH_CONST.__auth_got: 0x10c0
--  __DATA.__objc_ivar: 0x196c
-+  __AUTH_CONST.__auth_got: 0x10c8
-+  __AUTH.__objc_data: 0x50
-+  __DATA.__objc_ivar: 0x1970
-   __DATA.__data: 0x3898
-   __DATA.__crash_info: 0x148
-   __DATA.__bss: 0x1280
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11663
--  Symbols:   25091
+-  Symbols:   20397
 -  CStrings:  7156
 +  Functions: 11708
-+  Symbols:   25161
++  Symbols:   20451
 +  CStrings:  7174
- 
 Symbols:
 + -[NUDataAccumulatorCacheNode evaluateSettings:pipelineState:error:]
 + -[NUImageGeometry geometryByApplyingCleanAperture]
@@ -540,24 +497,6 @@ Symbols:
 + __OBJC_METACLASS_RO_$_NUKeyFrameNode
 + ___82-[_NUComputeProcessorPipeline outputMediaWithInputMedias:format:renderNode:error:]_block_invoke
 + ___block_descriptor_56_e8_32s40r48r_e43_v32?0"NSString"8"<NUMediaPrivate>"16^B24ls32l8r40l8r48l8
-+ _objc_msgSend$_clapCompensationScale
-+ _objc_msgSend$geometryByApplyingCleanAperture
-+ _objc_msgSend$geometryByCroppingToScaledRect:
-+ _objc_msgSend$geometryByResettingCleanAperture
-+ _objc_msgSend$geometryWithDuration:
-+ _objc_msgSend$geometryWithRoundingPolicy:
-+ _objc_msgSend$geometryWithSpaceMap:
-+ _objc_msgSend$geometryWithZeroOrigin
-+ _objc_msgSend$imageByClampingToRect:
-+ _objc_msgSend$initWithInput:keyFrameTime:applyCleanAperture:
-+ _objc_msgSend$initWithNode:format:identifier:
-+ _objc_msgSend$initWithScaledExtent:renderScale:orientation:
-+ _objc_msgSend$isEqualToMediaGeometry:
-+ _objc_msgSend$keyFrameTime
-+ _objc_msgSend$shouldApplyCleanAperture
-+ _objc_msgSend$videoExtent
-+ _objc_msgSend$videoScale
-+ _objc_msgSend$writeTIFFRepresentationOfImage:toURL:format:colorSpace:options:error:
 - -[NURenderPipelineState applyCleanAperture]
 - -[NURenderPipelineState setApplyCleanAperture:]
 - GCC_except_table10131
@@ -965,8 +904,6 @@ Symbols:
 - _OBJC_IVAR_$_NURenderPipelineState._applyCleanAperture
 - __Z19NUPixelRectAbsolute11NUPixelRectS_
 - __Z19NUPixelRectRelative11NUPixelRectS_
-- _objc_msgSend$setApplyCleanAperture:
-- _objc_msgSend$writeOpenEXRRepresentationOfImage:toURL:options:error:
 CStrings:
 + " clean: [%g,%g;%gx%g]"
 + " extent: (%0.3f,%0.3f) %0.3fx%0.3f"

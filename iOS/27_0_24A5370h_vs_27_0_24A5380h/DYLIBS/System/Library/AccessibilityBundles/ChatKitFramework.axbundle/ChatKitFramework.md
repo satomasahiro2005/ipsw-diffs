@@ -2,71 +2,35 @@
 
 > `/System/Library/AccessibilityBundles/ChatKitFramework.axbundle/ChatKitFramework`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__objc_data` | `0x5d70` | `0x6bd0` | **`+0xe60`** |
+| `__AUTH.__objc_data` | `0x1590` | `0x7d0` | **`-0xdc0`** |
+| `__AUTH_CONST.__objc_const` | `0xd308` | `0xd428` | **`+0x120`** |
+| `__TEXT.__text` | `0x2b1ac` | `0x2b288` | **`+0xdc`** |
+| `__AUTH_CONST.__cfstring` | `0xa840` | `0xa900` | **`+0xc0`** |
+| `__TEXT.__cstring` | `0x8c69` | `0x8d1f` | **`+0xb6`** |
+| `__TEXT.__objc_methlist` | `0x4d50` | `0x4d78` | **`+0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0xb80` | `0xb90` | **`+0x10`** |
+| `__DATA.__bss` | `0x40` | `0x48` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x3c0` | `0x3c8` | **`+0x8`** |
+| `__DATA_DIRTY.__bss` | `0x8` | `—` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2b1ac
--  __TEXT.__objc_methlist: 0x4d50
-+  __TEXT.__text: 0x2b288
-+  __TEXT.__objc_methlist: 0x4d78
-   __TEXT.__const: 0x30
-   __TEXT.__gcc_except_tab: 0x6e8
--  __TEXT.__cstring: 0x8c69
-+  __TEXT.__cstring: 0x8d1f
-   __TEXT.__oslogstring: 0x98
-   __TEXT.__unwind_info: 0xff8
-   __TEXT.__objc_stubs: 0x0
+-3039.1.0.0.0
++3042.0.0.0.0
 
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x968
--  __DATA_CONST.__objc_classlist: 0xb80
-+  __DATA_CONST.__objc_classlist: 0xb90
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x17d8
-   __DATA_CONST.__objc_superrefs: 0x3e8
--  __DATA_CONST.__got: 0x3c0
-+  __DATA_CONST.__got: 0x3c8
-   __AUTH_CONST.__const: 0x5c0
--  __AUTH_CONST.__cfstring: 0xa840
--  __AUTH_CONST.__objc_const: 0xd308
-+  __AUTH_CONST.__cfstring: 0xa900
-+  __AUTH_CONST.__objc_const: 0xd428
-   __AUTH_CONST.__objc_intobj: 0x90
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x1590
-+  __AUTH.__objc_data: 0x7d0
-   __DATA.__objc_ivar: 0x24
-   __DATA.__data: 0x120
-   __DATA.__common: 0x8
--  __DATA.__bss: 0x40
--  __DATA_DIRTY.__objc_data: 0x5d70
--  __DATA_DIRTY.__bss: 0x8
-+  __DATA.__bss: 0x48
-+  __DATA_DIRTY.__objc_data: 0x6bd0
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1468
--  Symbols:   5799
--  CStrings:  2762
+-  Symbols:   3713
+-  CStrings:  1417
 +  Functions: 1469
-+  Symbols:   5813
-+  CStrings:  2773
- 
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __DATA.__data : content changed
++  Symbols:   3726
++  CStrings:  1422
 Symbols:
 + +[CKAssistantActionSuggestionButtonAccessibility _accessibilityPerformValidations:]
 + +[CKAssistantActionSuggestionButtonAccessibility(SafeCategory) safeCategoryBaseClass]
@@ -137,7 +101,6 @@ Symbols:
 + __OBJC_METACLASS_RO_$___CKAssistantActionSuggestionButtonAccessibility_super
 + __OBJC_METACLASS_RO_$___CKNanoAcknowledgmentBalloonViewAccessibility_super
 + __UIImageIdentityName
-+ _objc_msgSend$symbolConfiguration
 - +[CKEntryViewPlusButtonAccessibility _accessibilityPerformValidations:]
 - +[CKEntryViewPlusButtonAccessibility(SafeCategory) safeCategoryBaseClass]
 - +[CKEntryViewPlusButtonAccessibility(SafeCategory) safeCategoryTargetClassName]
@@ -194,7 +157,6 @@ Symbols:
 - __OBJC_CLASS_RO_$___CKEntryViewPlusButtonAccessibility_super
 - __OBJC_METACLASS_RO_$_CKEntryViewPlusButtonAccessibility
 - __OBJC_METACLASS_RO_$___CKEntryViewPlusButtonAccessibility_super
-- _objc_msgSend$safeSwiftArrayForKey:
 CStrings:
 + "CKAssistantActionSuggestionButtonAccessibility"
 + "CKNanoAcknowledgmentBalloonView"
@@ -213,5 +175,4 @@ CStrings:
 - "CKGlassSendMenuButton"
 - "CKSendMenuCollectionViewLayout"
 - "_sendButton"
-
 ```

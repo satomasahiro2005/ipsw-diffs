@@ -2,56 +2,41 @@
 
 > `/usr/libexec/demod_helper`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__unwind_info`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2e80c` | `0x2eaf4` | **`+0x2e8`** |
+| `__TEXT.__cstring` | `0x6465` | `0x6605` | **`+0x1a0`** |
+| `__TEXT.__oslogstring` | `0x62c7` | `0x63fd` | **`+0x136`** |
+| `__DATA_CONST.__cfstring` | `0x50c0` | `0x5160` | **`+0xa0`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_selrefs`
 - `__DATA_CONST.__const`
 - `__DATA_CONST.__objc_arraydata`
 - `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_intobj`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__TEXT.__const`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -1871.0.42.0.0
--  __TEXT.__text: 0x2e80c
 +1871.0.51.0.0
-+  __TEXT.__text: 0x2eaf4
-   __TEXT.__auth_stubs: 0x11c0
-   __TEXT.__objc_stubs: 0x4400
-   __TEXT.__objc_methlist: 0x1bc8
-   __TEXT.__const: 0x130
--  __TEXT.__cstring: 0x6465
-+  __TEXT.__cstring: 0x6605
-   __TEXT.__objc_classname: 0x1ec
-   __TEXT.__objc_methname: 0x4c11
-   __TEXT.__objc_methtype: 0x5d5
-   __TEXT.__gcc_except_tab: 0x338
--  __TEXT.__oslogstring: 0x62c7
-+  __TEXT.__oslogstring: 0x63fd
-   __TEXT.__dlopen_cstrs: 0x62
-   __TEXT.__unwind_info: 0x958
-   __DATA_CONST.__const: 0x688
--  __DATA_CONST.__cfstring: 0x50c0
-+  __DATA_CONST.__cfstring: 0x5160
-   __DATA_CONST.__objc_classlist: 0xa8
-   __DATA_CONST.__objc_catlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x10
 
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libsysdiagnose.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 1051
 +  Functions: 1054
-   Symbols:   400
+
 -  CStrings:  2174
 +  CStrings:  2182
- 
 CStrings:
 + "/private/var/mobile/Library/Preferences/com.apple.powerui.democec.plist"
 + "/var/mobile/Library/AgentSessionKitBackupStaging"

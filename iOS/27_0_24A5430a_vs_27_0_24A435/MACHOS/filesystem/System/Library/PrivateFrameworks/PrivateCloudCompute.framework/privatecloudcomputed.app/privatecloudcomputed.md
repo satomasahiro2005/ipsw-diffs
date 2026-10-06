@@ -2,19 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/PrivateCloudCompute.framework/privatecloudcomputed.app/privatecloudcomputed`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1004` | `0x1008` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__TEXT.__eh_frame`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 2570.2.1.0.0
--  __TEXT.__text: 0x1004
-+  __TEXT.__text: 0x1008
-   __TEXT.__auth_stubs: 0x2a0
-   __TEXT.__objc_stubs: 0x20
-   __TEXT.__const: 0x42
+```text
 Functions:
 ~ sub_100001a40 : 780 -> 784
 ```

@@ -2,51 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/CoreAccessories.framework/Support/accessoryd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x19c370` | `0x19cc00` | **`+0x890`** |
+| `__DATA_CONST.__const` | `0xa070` | `0xa230` | **`+0x1c0`** |
+| `__TEXT.__oslogstring` | `0x37eff` | `0x3809a` | **`+0x19b`** |
+| `__TEXT.__unwind_info` | `0x47c0` | `0x47e0` | **`+0x20`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_selrefs`
 - `__DATA_CONST.__cfstring`
 - `__DATA_CONST.__objc_arraydata`
 - `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_intobj`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
 -1216.0.0.0.0
--  __TEXT.__text: 0x19c370
 +1216.2.2.0.0
-+  __TEXT.__text: 0x19cc00
-   __TEXT.__auth_stubs: 0x1890
-   __TEXT.__objc_stubs: 0x95c0
-   __TEXT.__objc_methlist: 0x6e8c
 
-   __TEXT.__objc_methname: 0xfeab
-   __TEXT.__objc_methtype: 0x321c
-   __TEXT.__cstring: 0xe323
--  __TEXT.__oslogstring: 0x37eff
-+  __TEXT.__oslogstring: 0x3809a
-   __TEXT.__ustring: 0x232
--  __TEXT.__unwind_info: 0x47c0
--  __DATA_CONST.__const: 0xa070
-+  __TEXT.__unwind_info: 0x47e0
-+  __DATA_CONST.__const: 0xa230
-   __DATA_CONST.__cfstring: 0x7340
-   __DATA_CONST.__objc_classlist: 0x318
-   __DATA_CONST.__objc_catlist: 0x10
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libsysdiagnose.dylib
 -  Functions: 8647
 -  Symbols:   11666
 -  CStrings:  8646
 +  Functions: 8661
 +  Symbols:   11669
 +  CStrings:  8652
- 
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/CoreAccessories/install/Symbols/BuiltProducts/libAccessoryCore.a(ccm-decrypt-ccc7cff5b191b013cf5fb35cb64a23b0.o)
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/CoreAccessories/install/Symbols/BuiltProducts/libAccessoryCore.a(ccm-encrypt-dee892b8a883442591a56193ff213ab1.o)

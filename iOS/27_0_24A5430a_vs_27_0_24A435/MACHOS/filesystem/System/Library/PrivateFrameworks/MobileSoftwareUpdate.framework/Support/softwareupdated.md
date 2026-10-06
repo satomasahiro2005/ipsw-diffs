@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/MobileSoftwareUpdate.framework/Support/softwareupdated`
 
+### Other Changes
+
 ```diff
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/MobileSoftwareUpdate/install/TempContent/Objects/MobileSoftwareUpdate.build/softwareupdated.build/Objects-normal/arm64e/common-5be7270c457f70db7c589df616e31cee.o

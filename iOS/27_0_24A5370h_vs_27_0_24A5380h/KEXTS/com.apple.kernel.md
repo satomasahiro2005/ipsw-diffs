@@ -2,87 +2,39 @@
 
 > `com.apple.kernel`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x9f828` | `0xa4f80` | **`+0x5758`** |
+| `__TEXT_EXEC.__text` | `0x8de800` | `0x8e3be4` | **`+0x53e4`** |
+| `__TEXT.__cstring` | `0x8c573` | `0x8d638` | **`+0x10c5`** |
+| `__DATA_CONST.__const` | `0xb6220` | `0xb6d78` | **`+0xb58`** |
+| `__TEXT.__os_log` | `0x4136c` | `0x418ba` | **`+0x54e`** |
+| `__BOOTDATA.__init_entry_set` | `0x13740` | `0x13b30` | **`+0x3f0`** |
+| `__DATA.__common` | `0x68ab8` | `0x68e48` | **`+0x390`** |
+| `__TEXT.__const` | `0x369c0` | `0x36af0` | **`+0x130`** |
+| `__KLDDATA.__const` | `0x3aa0` | `0x3bb0` | **`+0x110`** |
+| `__BOOTDATA.__init` | `0x176f8` | `0x17760` | **`+0x68`** |
+| `__DATA.__lock_grp` | `0x5d28` | `0x5d80` | **`+0x58`** |
+| `__DATA_CONST.__kalloc_var` | `0x7e40` | `0x7e90` | **`+0x50`** |
+| `__DATA_CONST.__kalloc_type` | `0x15340` | `0x15380` | **`+0x40`** |
+| `__BOOTDATA.__static_if` | `0xf70` | `0xfa0` | **`+0x30`** |
+| `__DATA_CONST.__assert` | `0xe10` | `0xdfc` | **`-0x14`** |
+| `__KLD.__text` | `0x1650` | `0x1664` | **`+0x14`** |
+| `__TEXT_BOOT_EXEC.__bootcode` | `0x6930` | `0x6944` | **`+0x14`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__const: 0x36bf0
-+  __TEXT.__const: 0x36d30
-   __TEXT.__copyio_vectors: 0x2c0
--  __TEXT.__cstring: 0x8e2c3
--  __TEXT.__os_log: 0x4136c
-+  __TEXT.__cstring: 0x8f388
-+  __TEXT.__os_log: 0x418ba
-   __TEXT.__eh_frame: 0x7e0
-   __DATA_CONST.__hib_const: 0x120
--  __DATA_CONST.__const: 0x11f8f8
--  __DATA_CONST.__kalloc_type: 0x15340
--  __DATA_CONST.__assert: 0x1298
--  __DATA_CONST.__kalloc_var: 0x7e40
-+  __DATA_CONST.__const: 0x120450
-+  __DATA_CONST.__kalloc_type: 0x15380
-+  __DATA_CONST.__assert: 0x1284
-+  __DATA_CONST.__kalloc_var: 0x7e90
-   __DATA_CONST.__exclaves_bt: 0xc0
-   __DATA_CONST.__kern_brk_desc: 0x78
-   __DATA_CONST.__mod_init_func: 0x2d8
-   __DATA_CONST.__auth_ptr: 0x8
-   __DATA_SPTM.__const: 0x4c000
-   __TEXT_EXEC.__exc: 0x1000
--  __TEXT_EXEC.__text: 0x900a68
-+  __TEXT_EXEC.__text: 0x9060ac
-   __TEXT_EXEC.__hib_text: 0x10d8
--  __TEXT_BOOT_EXEC.__bootcode: 0x698c
--  __KLD.__text: 0x1728
-+  __TEXT_BOOT_EXEC.__bootcode: 0x69a0
-+  __KLD.__text: 0x173c
-   __LASTDATA_CONST.__mod_init_func: 0x8
-   __LAST.__pinst: 0x8
-   __LAST.__last: 0x0
-   __KLDDATA.__cstring: 0x6e1
--  __KLDDATA.__const: 0x3cf8
-+  __KLDDATA.__const: 0x3e08
-   __KLDDATA.__mod_init_func: 0x8
-   __KLDDATA.__mod_term_func: 0x8
-   __KLDDATA.__bss: 0x1
-   __DATA.__data: 0x181e9
--  __DATA.__lock_grp: 0x5cd0
-+  __DATA.__lock_grp: 0x5d28
-   __DATA.__percpu: 0x78b0
--  __DATA.__common: 0x7b478
--  __DATA.__bss: 0x9fb38
-+  __DATA.__common: 0x7b808
-+  __DATA.__bss: 0xa5290
-   __BOOTDATA.__data: 0x18000
--  __BOOTDATA.__static_if: 0xfd0
--  __BOOTDATA.__init_entry_set: 0x14208
--  __BOOTDATA.__init: 0x17798
-+  __BOOTDATA.__static_if: 0x1000
-+  __BOOTDATA.__init_entry_set: 0x145f8
-+  __BOOTDATA.__init: 0x17800
-   __BOOTDATA.__static_ifinit: 0x20
-   __PRELINK_TEXT.__text: 0x0
-   __PRELINK_INFO.__info: 0x0
+-13432.0.5.502.4
+-  Functions: 21821
++13432.0.50.502.2
++  Functions: 21870
 
-   __PLK_LLVM_COV.__llvm_covmap: 0x0
-   __PLK_LINKEDIT.__data: 0x0
-   __LINKINFO.__symbolsets: 0x48cf3
--  Functions: 21923
-+  Functions: 21972
-   Symbols:   0
--  CStrings:  21301
-+  CStrings:  21438
- 
-Sections:
-~ __TEXT.__copyio_vectors : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__exclaves_bt : content changed
-~ __DATA_CONST.__kern_brk_desc : content changed
-~ __DATA_CONST.__mod_init_func : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __LASTDATA_CONST.__mod_init_func : content changed
-~ __KLDDATA.__mod_init_func : content changed
-~ __KLDDATA.__mod_term_func : content changed
-~ __DATA.__data : content changed
-~ __BOOTDATA.__static_ifinit : content changed
+-  CStrings:  20935
++  CStrings:  21072
 CStrings:
 + " AOT"
 + "%s: bpf%u already attached to %s error %d"
@@ -257,5 +209,4 @@ CStrings:
 - "flow_entry_teardown"
 - "label.io_state == IO_STATE_IN_SPACE"
 - "rBBR PROBE_RTT interval in seconds (rounded to factor of 60: 5,10,15,20,30,60)"
-
 ```

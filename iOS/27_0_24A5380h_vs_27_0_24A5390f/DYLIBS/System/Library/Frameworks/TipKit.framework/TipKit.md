@@ -2,113 +2,51 @@
 
 > `/System/Library/Frameworks/TipKit.framework/TipKit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7a8f0` | `0x791cc` | **`-0x1724`** |
+| `__DATA_DIRTY.__bss` | `0x46b0` | `0x4230` | **`-0x480`** |
+| `__DATA.__bss` | `0x2910` | `0x2d10` | **`+0x400`** |
+| `__TEXT.__swift5_typeref` | `0x7013` | `0x6e05` | **`-0x20e`** |
+| `__AUTH.__data` | `0x400` | `0x250` | **`-0x1b0`** |
+| `__DATA_DIRTY.__data` | `0x27c8` | `0x2958` | **`+0x190`** |
+| `__TEXT.__const` | `0x66b0` | `0x65f0` | **`-0xc0`** |
+| `__TEXT.__constg_swiftt` | `0x2c8c` | `0x2bdc` | **`-0xb0`** |
+| `__AUTH_CONST.__const` | `0x42e8` | `0x4260` | **`-0x88`** |
+| `__DATA.__data` | `0x10a0` | `0x1018` | **`-0x88`** |
+| `__TEXT.__swift5_fieldmd` | `0x19a8` | `0x1974` | **`-0x34`** |
+| `__AUTH_CONST.__auth_got` | `0x1bd0` | `0x1ba0` | **`-0x30`** |
+| `__TEXT.__cstring` | `0xf0c` | `0xedc` | **`-0x30`** |
+| `__TEXT.__unwind_info` | `0x2710` | `0x26e0` | **`-0x30`** |
+| `__AUTH_CONST.__objc_const` | `0xbf8` | `0xc18` | **`+0x20`** |
+| `__TEXT.__eh_frame` | `0x1d7c` | `0x1d9c` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x112b` | `0x110b` | **`-0x20`** |
+| `__TEXT.__swift5_assocty` | `0x670` | `0x658` | **`-0x18`** |
+| `__TEXT.__swift5_capture` | `0x934` | `0x91c` | **`-0x18`** |
+| `__DATA_CONST.__got` | `0xb20` | `0xb10` | **`-0x10`** |
+| `__DATA_DIRTY.__common` | `0x28` | `0x19` | **`-0xf`** |
+| `__DATA.__common` | `0x10` | `0x18` | **`+0x8`** |
+| `__DATA_DIRTY.__objc_data` | `0x4b8` | `0x4c0` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x3a4` | `0x39c` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0x234` | `0x230` | **`-0x4`** |
+
+### Other Changes
 
 ```diff
 
 -126.0.0.0.0
--  __TEXT.__text: 0x7a8f0
 +127.0.0.0.0
-+  __TEXT.__text: 0x791cc
-   __TEXT.__objc_methlist: 0x528
--  __TEXT.__const: 0x66b0
--  __TEXT.__constg_swiftt: 0x2c8c
--  __TEXT.__swift5_typeref: 0x7013
-+  __TEXT.__const: 0x65f0
-+  __TEXT.__constg_swiftt: 0x2bdc
-+  __TEXT.__swift5_typeref: 0x6e05
-   __TEXT.__swift5_builtin: 0x8c
--  __TEXT.__swift5_reflstr: 0x112b
--  __TEXT.__swift5_fieldmd: 0x19a8
--  __TEXT.__swift5_assocty: 0x670
--  __TEXT.__swift5_proto: 0x3a4
--  __TEXT.__swift5_types: 0x234
--  __TEXT.__swift5_capture: 0x934
--  __TEXT.__cstring: 0xf0c
-+  __TEXT.__swift5_reflstr: 0x110b
-+  __TEXT.__swift5_fieldmd: 0x1974
-+  __TEXT.__swift5_assocty: 0x658
-+  __TEXT.__swift5_proto: 0x39c
-+  __TEXT.__swift5_types: 0x230
-+  __TEXT.__swift5_capture: 0x91c
-+  __TEXT.__cstring: 0xedc
-   __TEXT.__swift_as_entry: 0x80
-   __TEXT.__swift_as_ret: 0x6c
-   __TEXT.__swift_as_cont: 0xb8
-   __TEXT.__swift5_protos: 0x28
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__oslogstring: 0x85
--  __TEXT.__unwind_info: 0x2710
--  __TEXT.__eh_frame: 0x1d7c
-+  __TEXT.__unwind_info: 0x26e0
-+  __TEXT.__eh_frame: 0x1d9c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x4a0
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__got: 0xb20
--  __AUTH_CONST.__const: 0x42e8
--  __AUTH_CONST.__objc_const: 0xbf8
--  __AUTH_CONST.__auth_got: 0x1bd0
-+  __DATA_CONST.__got: 0xb10
-+  __AUTH_CONST.__const: 0x4260
-+  __AUTH_CONST.__objc_const: 0xc18
-+  __AUTH_CONST.__auth_got: 0x1ba0
-   __AUTH.__objc_data: 0x268
--  __AUTH.__data: 0x400
--  __DATA.__data: 0x10a0
--  __DATA.__bss: 0x2910
--  __DATA.__common: 0x10
--  __DATA_DIRTY.__objc_data: 0x4b8
--  __DATA_DIRTY.__data: 0x27c8
--  __DATA_DIRTY.__bss: 0x46b0
--  __DATA_DIRTY.__common: 0x28
-+  __AUTH.__data: 0x250
-+  __DATA.__data: 0x1018
-+  __DATA.__bss: 0x2d10
-+  __DATA.__common: 0x18
-+  __DATA_DIRTY.__objc_data: 0x4c0
-+  __DATA_DIRTY.__data: 0x2958
-+  __DATA_DIRTY.__bss: 0x4230
-+  __DATA_DIRTY.__common: 0x19
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/CoreText.framework/CoreText
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
 -  - /System/Library/Frameworks/Symbols.framework/Symbols
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/PrivateFrameworks/TipKitCore.framework/TipKitCore
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3971
--  Symbols:   1622
+-  Symbols:   1512
 -  CStrings:  85
 +  Functions: 3952
-+  Symbols:   1613
++  Symbols:   1503
 +  CStrings:  84
- 
 Symbols:
 + _get_witness_table 7SwiftUI19_ConditionalContentVyACyACyAA08ModifiedD0VyAA7AnyViewVAA12_FrameLayoutVGAEyAgA05_FlexhI0VGGACyAEyAEyACyAA0G0PAAE15dynamicTypeSizeyQrAA07DynamiclM0OFQOyAEyAEyAA5ImageVAA012_AspectRatioI0VGAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGG_Qo_AXG6TipKit0w10ShapeStyleU0VGAIGAEyA9_ALGGGAEyACyAEyAEyAXA8_GAIGAEyA14_ALGGAA033_AccessibilityIgnoresInvertColorsgU0VGGSgAaOHpA21_AaOHPA13_AaOHPAnaOHPAjaOHPAgaOHPyHC_AiA0gU0HPyHCHC_AmaOHPAgaOHPyHC_AlAA23_HPyHCHCHC_A12_AaOHPA10_AaOHPA9_AaOHPA5_AaOHPqd__AaOHD2_A4_HO_AxaOHPAuaOHPyHC_AwAA23_HPyHCHCHC_A8_AAA23_HPyHCHC_AiAA23_HPyHCHC_A11_AaOHPA9_AaOHPA5_AaOHPqd__AaOHD2_A4_HO_AxaOHPAuaOHPyHC_AwAA23_HPyHCHCHC_A8_AAA23_HPyHCHC_AlAA23_HPyHCHCHCHC_A20_AaOHPA17_AaOHPA15_AaOHPA14_AaOHPAxaOHPAuaOHPyHC_AwAA23_HPyHCHC_A8_AAA23_HPyHCHC_AiAA23_HPyHCHC_A16_AaOHPA14_AaOHPAxaOHPAuaOHPyHC_AwAA23_HPyHCHC_A8_AAA23_HPyHCHC_AlAA23_HPyHCHCHC_A19_AAA23_HPyHCHCHC_HC
 + _symbolic _____Sg 12CoreGraphics7CGFloatV

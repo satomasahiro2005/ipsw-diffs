@@ -2,55 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/CryptexKit.framework/CryptexKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x90808` | `0x91110` | **`+0x908`** |
+| `__TEXT.__cstring` | `0x2296` | `0x2226` | **`-0x70`** |
+| `__TEXT.__eh_frame` | `0x7740` | `0x7788` | **`+0x48`** |
+| `__DATA.__data` | `0x11f8` | `0x1218` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x3528` | `0x3540` | **`+0x18`** |
+| `__TEXT.__const` | `0xbaf8` | `0xbb08` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x15f8` | `0x1600` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -761.2.1.0.0
--  __TEXT.__text: 0x8c9e8
 +761.40.23.0.0
-+  __TEXT.__text: 0x8d2a0
-   __TEXT.__objc_methlist: 0x124
--  __TEXT.__const: 0xbaf8
--  __TEXT.__cstring: 0x2296
-+  __TEXT.__const: 0xbb08
-+  __TEXT.__cstring: 0x2226
-   __TEXT.__constg_swiftt: 0x24a0
-   __TEXT.__swift5_typeref: 0x1dd1
-   __TEXT.__swift5_reflstr: 0x14b0
 
-   __TEXT.__swift_as_cont: 0x114
-   __TEXT.__swift5_mpenum: 0x54
-   __TEXT.__swift5_protos: 0x34
--  __TEXT.__unwind_info: 0x4238
--  __TEXT.__eh_frame: 0x7780
-+  __TEXT.__unwind_info: 0x4248
-+  __TEXT.__eh_frame: 0x77c8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x82b8
-   __AUTH_CONST.__objc_const: 0x12a8
--  __AUTH_CONST.__auth_got: 0x15f8
-+  __AUTH_CONST.__auth_got: 0x1600
-   __AUTH.__objc_data: 0x1d8
-   __AUTH.__data: 0x19c8
--  __DATA.__data: 0x11f8
-+  __DATA.__data: 0x1218
-   __DATA.__common: 0x20
-   __DATA_DIRTY.__objc_data: 0xc8
-   __DATA_DIRTY.__data: 0x398
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 4565
--  Symbols:   12136
+-  Symbols:   12120
 -  CStrings:  311
 +  Functions: 4571
-+  Symbols:   12151
++  Symbols:   12135
 +  CStrings:  308
- 
 Symbols:
 + _$s10CryptexKit6PkgEnvV4SpecV8validate8reservedyShy6System8FilePathV9ComponentVG_tAA0C5ErrorVYKF
 + _$s10CryptexKit6PkgEnvV4SpecV8validate8reservedyShy6System8FilePathV9ComponentVG_tAA0C5ErrorVYKFfA_

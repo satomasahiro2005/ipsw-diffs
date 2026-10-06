@@ -2,37 +2,28 @@
 
 > `/usr/lib/libusrtcp.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5aa20` | `0x5b420` | **`+0xa00`** |
+| `__TEXT.__oslogstring` | `0xe618` | `0xe6be` | **`+0xa6`** |
+| `__TEXT.__cstring` | `0x1a5e` | `0x1a8e` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x450` | `0x458` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x5aa20
-+  __TEXT.__text: 0x5b420
-   __TEXT.__const: 0x244
--  __TEXT.__oslogstring: 0xe618
--  __TEXT.__cstring: 0x1a5e
--  __TEXT.__unwind_info: 0x450
-+  __TEXT.__oslogstring: 0xe6be
-+  __TEXT.__cstring: 0x1a8e
-+  __TEXT.__unwind_info: 0x458
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x410
-   __DATA_CONST.__got: 0x0
+-6681.0.436.0.8
++6681.0.498.502.1
 
-   - /System/Library/Frameworks/Network.framework/Network
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 329
--  Symbols:   1013
+-  Symbols:   653
 -  CStrings:  1116
 +  Functions: 333
-+  Symbols:   1021
++  Symbols:   657
 +  CStrings:  1120
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH.__data : content changed
-~ __DATA_DIRTY.__data : content changed
 Symbols:
 + _rbbr_sender_utilizing_rwnd
 + _rbbr_update_win
@@ -59,5 +50,4 @@ CStrings:
 - "%{public}s new CE count (%u) can't be less than current CE count (%u)OR newly ACKed (%u) can't be less that current ACKed (%u), dumping backtrace:%{public}s"
 - "%{public}s new CE count (%u) can't be less than current CE count (%u)OR newly ACKed (%u) can't be less that current ACKed (%u), no backtrace"
 - "tcp_process_accecn"
-
 ```

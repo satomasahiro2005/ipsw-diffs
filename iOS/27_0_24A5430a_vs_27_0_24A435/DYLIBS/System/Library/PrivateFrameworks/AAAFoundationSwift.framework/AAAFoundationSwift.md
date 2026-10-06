@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/AAAFoundationSwift.framework/AAAFoundationSwift`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6f5f8` | `0x6f6b8` | **`+0xc0`** |
+| `__AUTH_CONST.__auth_got` | `0x1360` | `0x1358` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 117.0.0.0.0
--  __TEXT.__text: 0x6f5f8
-+  __TEXT.__text: 0x6f6b8
-   __TEXT.__objc_methlist: 0x4f8
-   __TEXT.__const: 0x5420
-   __TEXT.__constg_swiftt: 0x25f4
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x49a0
-   __AUTH_CONST.__objc_const: 0x2600
--  __AUTH_CONST.__auth_got: 0x1360
-+  __AUTH_CONST.__auth_got: 0x1358
-   __AUTH.__objc_data: 0x200
-   __AUTH.__data: 0x208
-   __DATA.__data: 0x1f10
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   Functions: 2724
--  Symbols:   1106
-+  Symbols:   1105
-   CStrings:  103
- 
+-  Symbols:   1060
++  Symbols:   1059
 Symbols:
 - _swift_release_x9
 Functions:

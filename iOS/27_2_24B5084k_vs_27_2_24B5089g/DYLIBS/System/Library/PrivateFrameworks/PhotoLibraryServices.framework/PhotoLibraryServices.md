@@ -2,99 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/PhotoLibraryServices.framework/PhotoLibraryServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x75a868` | `0x75938c` | **`-0x14dc`** |
+| `__AUTH.__objc_data` | `0x13470` | `0x131a0` | **`-0x2d0`** |
+| `__DATA_DIRTY.__objc_data` | `0x3520` | `0x37f0` | **`+0x2d0`** |
+| `__TEXT.__cstring` | `0x6d7ad` | `0x6d598` | **`-0x215`** |
+| `__AUTH_CONST.__cfstring` | `0x532c0` | `0x53160` | **`-0x160`** |
+| `__TEXT.__oslogstring` | `0x86c6f` | `0x86cd2` | **`+0x63`** |
+| `__DATA_CONST.__const` | `0x16778` | `0x16720` | **`-0x58`** |
+| `__DATA_CONST.__objc_selrefs` | `0x250f8` | `0x250b8` | **`-0x40`** |
+| `__TEXT.__objc_methlist` | `0x4530c` | `0x452d4` | **`-0x38`** |
+| `__AUTH_CONST.__const` | `0xa5b8` | `0xa598` | **`-0x20`** |
+| `__AUTH_CONST.__objc_const` | `0x70608` | `0x705e8` | **`-0x20`** |
+| `__DATA.__bss` | `0x3c30` | `0x3c10` | **`-0x20`** |
+| `__DATA_DIRTY.__bss` | `0x180` | `0x1a0` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x168c0` | `0x168a0` | **`-0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x2b38` | `0x2b50` | **`+0x18`** |
+| `__DATA.__data` | `0x7084` | `0x7094` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x2065c` | `0x2066c` | **`+0x10`** |
+| `__AUTH.__data` | `0x350` | `0x358` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x5298` | `0x5290` | **`-0x8`** |
+| `__DATA.__objc_ivar` | `0x3e48` | `0x3e44` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -916.40.110.0.0
--  __TEXT.__text: 0x73f8b0
 +916.45.110.0.0
-+  __TEXT.__text: 0x73e3f8
-   __TEXT.__delay_stubs: 0x40
-   __TEXT.__delay_helper: 0xa4
--  __TEXT.__objc_methlist: 0x4530c
-+  __TEXT.__objc_methlist: 0x452d4
-   __TEXT.__const: 0x74f0
-   __TEXT.__dlopen_cstrs: 0xb28
-   __TEXT.__swift5_typeref: 0x131a
--  __TEXT.__cstring: 0x6d7ad
-+  __TEXT.__cstring: 0x6d598
-   __TEXT.__swift5_capture: 0x188c
-   __TEXT.__constg_swiftt: 0x400
-   __TEXT.__swift5_builtin: 0xc8
 
-   __TEXT.__swift5_assocty: 0xd8
-   __TEXT.__swift5_proto: 0xa4
-   __TEXT.__swift5_types: 0x54
--  __TEXT.__oslogstring: 0x86c6f
-+  __TEXT.__oslogstring: 0x86cd2
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__gcc_except_tab: 0x2065c
-+  __TEXT.__gcc_except_tab: 0x2066c
-   __TEXT.__ustring: 0xa3a
--  __TEXT.__unwind_info: 0x1acf0
-+  __TEXT.__unwind_info: 0x1acc8
-   __TEXT.__eh_frame: 0x11a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x16778
-+  __DATA_CONST.__const: 0x16720
-   __DATA_CONST.__objc_classlist: 0x23e8
-   __DATA_CONST.__objc_catlist: 0xf8
-   __DATA_CONST.__objc_protolist: 0x768
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x250f8
-+  __DATA_CONST.__objc_selrefs: 0x250b8
-   __DATA_CONST.__objc_protorefs: 0xc8
-   __DATA_CONST.__objc_superrefs: 0x1590
-   __DATA_CONST.__objc_arraydata: 0x1dc0
--  __DATA_CONST.__got: 0x5298
--  __AUTH_CONST.__const: 0xa5b8
--  __AUTH_CONST.__cfstring: 0x532c0
--  __AUTH_CONST.__objc_const: 0x70608
-+  __DATA_CONST.__got: 0x5290
-+  __AUTH_CONST.__const: 0xa598
-+  __AUTH_CONST.__cfstring: 0x53160
-+  __AUTH_CONST.__objc_const: 0x705e8
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x5418
-   __AUTH_CONST.__objc_arrayobj: 0x14d0
-   __AUTH_CONST.__objc_doubleobj: 0x180
-   __AUTH_CONST.__objc_dictobj: 0x320
-   __AUTH_CONST.__objc_floatobj: 0x40
--  __AUTH_CONST.__auth_got: 0x2b38
--  __AUTH.__objc_data: 0x13470
--  __AUTH.__data: 0x350
--  __DATA.__objc_ivar: 0x3e48
--  __DATA.__data: 0x7084
-+  __AUTH_CONST.__auth_got: 0x2b50
-+  __AUTH.__objc_data: 0x131a0
-+  __AUTH.__data: 0x358
-+  __DATA.__objc_ivar: 0x3e44
-+  __DATA.__data: 0x7094
-   __DATA.__crash_info: 0x148
-   __DATA.__common: 0x4
--  __DATA_DIRTY.__objc_data: 0x3520
-+  __DATA_DIRTY.__objc_data: 0x37f0
-   __DATA_DIRTY.__data: 0x50
--  __DATA_DIRTY.__bss: 0x180
-+  __DATA_DIRTY.__bss: 0x1a0
-   __DATA_DIRTY.__common: 0x60
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 29249
--  Symbols:   64867
+-  Symbols:   48351
 -  CStrings:  21974
 +  Functions: 29240
-+  Symbols:   64845
++  Symbols:   48337
 +  CStrings:  21958
- 
 Symbols:
 + -[PLSearchIndexingEngineLibraryServicesProvider createLogger]
 + -[PLSearchIndexingRebuildEngine logger]
@@ -1340,8 +1285,6 @@ Symbols:
 + _PFHeapBytesAllocated
 + _PFHeapBytesInUse
 + _PFHeapFragmentationRatio
-+ _objc_msgSend$_formatMemoryBytes:
-+ _objc_msgSend$createLogger
 - +[PLManagedObjectContext _isAssetLibraryFetchingAlbum:]
 - +[PLManagedObjectContext assetsLibraryLoggingEnabled]
 - -[PLManagedObjectContext _notifyALAssetsLibraryWithChanges:usingObjectIDs:]
@@ -2600,16 +2543,6 @@ Symbols:
 - ___block_descriptor_57_e8_32s40s48s_e53_v32?0"NSSet"8"NSMutableArray"16"NSMutableArray"24ls32l8s40l8s48l8
 - _assetsLibraryLoggingEnabled.alLogging
 - _assetsLibraryLoggingEnabled.onceToken
-- _objc_msgSend$_assetsLibrary_isSharedPhotoStreamsSupportEnabled
-- _objc_msgSend$_createLogger
-- _objc_msgSend$_isAssetLibraryFetchingAlbum:
-- _objc_msgSend$_notifyALAssetsLibraryWithChanges:usingObjectIDs:
-- _objc_msgSend$assetsLibraryLoggingEnabled
-- _objc_msgSend$isBackingALAssetsLibrary
-- _objc_msgSend$maskForNotifyALAssetsLibraryWithChangesCloudSharedExclusions
-- _objc_msgSend$maskForNotifyALAssetsLibraryWithChangesExclusions
-- _objc_msgSend$pl_fetchObjectsWithIDs:
-- _objc_msgSend$resetAllFetchingAlbums
 CStrings:
 + "Direct upload batch is missing SharePost %{public}@ - its %lu assets will arrive before their post"
 + "heapBytesAllocated"

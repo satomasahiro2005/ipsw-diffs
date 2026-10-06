@@ -2,6 +2,8 @@
 
 > `/System/Library/ExtensionKit/Extensions/GenerativePartnerSettingsExtension.appex/GenerativePartnerSettingsExtension`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_10000451c : 48 -> 16

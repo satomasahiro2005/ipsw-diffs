@@ -2,53 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/WebCore.framework/Frameworks/libANGLE-shared.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__data` | `0x25ef0` | `0x6110` | **`-0x1fde0`** |
+| `__DATA_DIRTY.__data` | `0xc70` | `0x20a50` | **`+0x1fde0`** |
+| `__TEXT.__text` | `0x2595c4` | `0x25a0f4` | **`+0xb30`** |
+| `__TEXT.__cstring` | `0x44674` | `0x44803` | **`+0x18f`** |
+| `__AUTH_CONST.__const` | `0x15db8` | `0x15d78` | **`-0x40`** |
+| `__TEXT.__const` | `0x83680` | `0x83640` | **`-0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x6c0` | `0x6d0` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x9268` | `0x9258` | **`-0x10`** |
+| `__DATA_CONST.__const` | `0x12f58` | `0x12f50` | **`-0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x2b34` | `0x2b30` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -625.2.4.1.0
--  __TEXT.__text: 0x24d51c
--  __TEXT.__const: 0x83680
--  __TEXT.__cstring: 0x44674
--  __TEXT.__gcc_except_tab: 0x2b34
 +625.2.5.10.1
-+  __TEXT.__text: 0x24dfec
-+  __TEXT.__const: 0x83640
-+  __TEXT.__cstring: 0x44803
-+  __TEXT.__gcc_except_tab: 0x2b30
-   __TEXT.__oslogstring: 0xf
--  __TEXT.__unwind_info: 0x95c0
-+  __TEXT.__unwind_info: 0x95b8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0x12f58
-+  __DATA_CONST.__const: 0x12f50
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x7c8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x15db8
-+  __AUTH_CONST.__const: 0x15d78
-   __AUTH_CONST.__cfstring: 0x9c0
-   __AUTH_CONST.__weak_auth_got: 0x30
--  __AUTH_CONST.__auth_got: 0x6c0
--  __DATA.__data: 0x25ef0
-+  __AUTH_CONST.__auth_got: 0x6d0
-+  __DATA.__data: 0x6110
-   __DATA.__common: 0x35c
--  __DATA_DIRTY.__data: 0xc70
-+  __DATA_DIRTY.__data: 0x20a50
-   __DATA_DIRTY.__bss: 0x1a0
-   __DATA_DIRTY.__common: 0x588
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 9070
 +  Functions: 9066
-   Symbols:   13477
+
 -  CStrings:  7005
 +  CStrings:  7014
- 
 Symbols:
 + GCC_except_table100
 + GCC_except_table104

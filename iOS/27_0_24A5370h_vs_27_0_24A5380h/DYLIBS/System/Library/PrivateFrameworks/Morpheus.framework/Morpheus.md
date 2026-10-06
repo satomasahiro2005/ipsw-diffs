@@ -2,93 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/Morpheus.framework/Morpheus`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb5a1f0` | `0xb5d3bc` | **`+0x31cc`** |
+| `__TEXT.__eh_frame` | `0x37cc4` | `0x3884c` | **`+0xb88`** |
+| `__AUTH_CONST.__const` | `0x40a39` | `0x41389` | **`+0x950`** |
+| `__TEXT.__cstring` | `0x11552c` | `0x115c5c` | **`+0x730`** |
+| `__TEXT.__unwind_info` | `0x33ee0` | `0x341e8` | **`+0x308`** |
+| `__TEXT.__oslogstring` | `0x3930` | `0x3c30` | **`+0x300`** |
+| `__TEXT.__gcc_except_tab` | `0xb5f10` | `0xb6208` | **`+0x2f8`** |
+| `__TEXT.__swift5_reflstr` | `0x531f` | `0x548f` | **`+0x170`** |
+| `__TEXT.__const` | `0x6aaf4` | `0x6ac54` | **`+0x160`** |
+| `__TEXT.__swift5_capture` | `0x2ee8` | `0x2fbc` | **`+0xd4`** |
+| `__TEXT.__swift_as_cont` | `0x153c` | `0x15ec` | **`+0xb0`** |
+| `__TEXT.__swift5_fieldmd` | `0x6a78` | `0x6b24` | **`+0xac`** |
+| `__TEXT.__swift_as_ret` | `0x7d8` | `0x81c` | **`+0x44`** |
+| `__TEXT.__swift_as_entry` | `0xb98` | `0xbd4` | **`+0x3c`** |
+| `__TEXT.__constg_swiftt` | `0x8148` | `0x816c` | **`+0x24`** |
+| `__AUTH_CONST.__objc_const` | `0xa9b0` | `0xa9d0` | **`+0x20`** |
+| `__TEXT.__swift5_typeref` | `0x455d` | `0x454d` | **`-0x10`** |
+| `__AUTH.__data` | `0xda50` | `0xda58` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x658` | `0x65c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xb5a1f0
-+  __TEXT.__text: 0xb5d3bc
-   __TEXT.__objc_methlist: 0x3c4
--  __TEXT.__const: 0x6aaf4
--  __TEXT.__gcc_except_tab: 0xb5f10
--  __TEXT.__cstring: 0x11552c
--  __TEXT.__swift5_typeref: 0x455d
--  __TEXT.__swift5_fieldmd: 0x6a78
--  __TEXT.__constg_swiftt: 0x8148
--  __TEXT.__swift5_reflstr: 0x531f
-+  __TEXT.__const: 0x6ac54
-+  __TEXT.__gcc_except_tab: 0xb6208
-+  __TEXT.__cstring: 0x115c5c
-+  __TEXT.__swift5_typeref: 0x454d
-+  __TEXT.__swift5_fieldmd: 0x6b24
-+  __TEXT.__constg_swiftt: 0x816c
-+  __TEXT.__swift5_reflstr: 0x548f
-   __TEXT.__swift5_builtin: 0x1a4
-   __TEXT.__swift5_assocty: 0xbc0
-   __TEXT.__swift5_protos: 0xec
-   __TEXT.__swift5_proto: 0x170c
--  __TEXT.__swift5_types: 0x658
--  __TEXT.__oslogstring: 0x3930
--  __TEXT.__swift5_capture: 0x2ee8
--  __TEXT.__swift_as_entry: 0xb98
--  __TEXT.__swift_as_ret: 0x7d8
--  __TEXT.__swift_as_cont: 0x153c
-+  __TEXT.__swift5_types: 0x65c
-+  __TEXT.__swift5_capture: 0x2fbc
-+  __TEXT.__oslogstring: 0x3c30
-+  __TEXT.__swift_as_entry: 0xbd4
-+  __TEXT.__swift_as_ret: 0x81c
-+  __TEXT.__swift_as_cont: 0x15ec
-   __TEXT.__swift5_mpenum: 0x74
--  __TEXT.__unwind_info: 0x33ee0
--  __TEXT.__eh_frame: 0x37cc4
-+  __TEXT.__unwind_info: 0x341e8
-+  __TEXT.__eh_frame: 0x3884c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-31.0.0.0.0
++35.0.0.0.0
 
-   __DATA_CONST.__objc_selrefs: 0x568
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x40a39
--  __AUTH_CONST.__objc_const: 0xa9b0
-+  __AUTH_CONST.__const: 0x41389
-+  __AUTH_CONST.__objc_const: 0xa9d0
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__auth_got: 0x20c8
-   __AUTH.__objc_data: 0xb10
--  __AUTH.__data: 0xda50
-+  __AUTH.__data: 0xda58
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_data: 0x8
-   __AUTH.__thread_bss: 0x8
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 36324
--  Symbols:   102547
+-  Symbols:   41096
 -  CStrings:  4867
 +  Functions: 36397
-+  Symbols:   102567
++  Symbols:   41098
 +  CStrings:  4887
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
 Symbols:
 + ___swift_closure_destructor.36Tm
 + _symbolic _____ 8Morpheus19PyDataclassesModuleC5Field33_DB6C049CC34AD5D798511BE29D566160LLV
@@ -131,5 +81,4 @@ CStrings:
 - "Morpheus/PyTask.swift"
 - "sklearn.metrics: classification: sample_weight is not supported in v1"
 - "sklearn.metrics: classification: string labels are not supported in v1"
-
 ```

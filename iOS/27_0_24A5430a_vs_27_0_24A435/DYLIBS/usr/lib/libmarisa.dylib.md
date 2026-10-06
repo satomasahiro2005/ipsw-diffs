@@ -2,14 +2,15 @@
 
 > `/usr/lib/libmarisa.dylib`
 
-```diff
+### Section Size Changes
 
- 28.0.0.0.0
--  __TEXT.__text: 0xfffc
-+  __TEXT.__text: 0x1001c
-   __TEXT.__gcc_except_tab: 0x768
-   __TEXT.__cstring: 0x59eb
-   __TEXT.__const: 0x8e0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfffc` | `0x1001c` | **`+0x20`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN6marisa6Keyset9push_backEPKcmf : 188 -> 192
 ~ __ZN6marisa8grimoire4trie9LoudsTrie6build_ERNS_6KeysetERKNS1_6ConfigE : 744 -> 752

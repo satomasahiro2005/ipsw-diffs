@@ -2,88 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/AgentCanvasFoundation.framework/AgentCanvasFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x12c60` | `0x1405c` | **`+0x13fc`** |
+| `__DATA_DIRTY.__bss` | `—` | `0x800` | **`+0x800`** |
+| `__DATA_DIRTY.__data` | `—` | `0x558` | **`+0x558`** |
+| `__DATA.__bss` | `0x1910` | `0x1590` | **`-0x380`** |
+| `__AUTH.__data` | `0x418` | `0xa0` | **`-0x378`** |
+| `__TEXT.__const` | `0x1324` | `0x15c4` | **`+0x2a0`** |
+| `__DATA.__data` | `0x380` | `0x1c8` | **`-0x1b8`** |
+| `__AUTH_CONST.__const` | `0x1898` | `0x1a30` | **`+0x198`** |
+| `__TEXT.__cstring` | `0x803` | `0x8e1` | **`+0xde`** |
+| `__TEXT.__swift5_fieldmd` | `0x64c` | `0x718` | **`+0xcc`** |
+| `__TEXT.__swift5_reflstr` | `0x5f3` | `0x6a0` | **`+0xad`** |
+| `__TEXT.__eh_frame` | `0x5e8` | `0x668` | **`+0x80`** |
+| `__TEXT.__constg_swiftt` | `0x518` | `0x574` | **`+0x5c`** |
+| `__AUTH.__objc_data` | `0xa0` | `0x50` | **`-0x50`** |
+| `__DATA_DIRTY.__objc_data` | `—` | `0x50` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x6e8` | `0x738` | **`+0x50`** |
+| `__TEXT.__swift5_typeref` | `0x57a` | `0x5c3` | **`+0x49`** |
+| `__AUTH_CONST.__auth_got` | `0x578` | `0x5b0` | **`+0x38`** |
+| `__TEXT.__swift5_proto` | `0xd0` | `0xf4` | **`+0x24`** |
+| `__TEXT.__swift5_types` | `0x6c` | `0x78` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x12c60
--  __TEXT.__const: 0x1324
--  __TEXT.__swift5_typeref: 0x57a
--  __TEXT.__constg_swiftt: 0x518
--  __TEXT.__swift5_reflstr: 0x5f3
--  __TEXT.__swift5_fieldmd: 0x64c
--  __TEXT.__swift5_proto: 0xd0
--  __TEXT.__swift5_types: 0x6c
-+  __TEXT.__text: 0x1405c
-+  __TEXT.__const: 0x15c4
-+  __TEXT.__swift5_typeref: 0x5c3
-+  __TEXT.__constg_swiftt: 0x574
-+  __TEXT.__swift5_reflstr: 0x6a0
-+  __TEXT.__swift5_fieldmd: 0x718
-+  __TEXT.__swift5_proto: 0xf4
-+  __TEXT.__swift5_types: 0x78
-   __TEXT.__swift5_assocty: 0xf0
--  __TEXT.__cstring: 0x803
-+  __TEXT.__cstring: 0x8e1
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_capture: 0x460
+-67.4.100.0.0
++73.0.5.102.0
 
-   __TEXT.__swift_as_cont: 0x10
-   __TEXT.__swift5_protos: 0x10
-   __TEXT.__oslogstring: 0x88
--  __TEXT.__unwind_info: 0x6e8
--  __TEXT.__eh_frame: 0x5e8
-+  __TEXT.__unwind_info: 0x738
-+  __TEXT.__eh_frame: 0x668
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x30
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1898
-+  __AUTH_CONST.__const: 0x1a30
-   __AUTH_CONST.__objc_const: 0x1f8
--  __AUTH_CONST.__auth_got: 0x578
--  __AUTH.__objc_data: 0xa0
--  __AUTH.__data: 0x418
--  __DATA.__data: 0x380
--  __DATA.__bss: 0x1910
-+  __AUTH_CONST.__auth_got: 0x5b0
-+  __AUTH.__objc_data: 0x50
-+  __AUTH.__data: 0xa0
-+  __DATA.__data: 0x1c8
-+  __DATA.__bss: 0x1590
-+  __DATA_DIRTY.__objc_data: 0x50
-+  __DATA_DIRTY.__data: 0x558
-+  __DATA_DIRTY.__bss: 0x800
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /usr/lib/libMobileGestalt.dylib
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 744
--  Symbols:   625
+-  Symbols:   327
 -  CStrings:  71
 +  Functions: 802
-+  Symbols:   652
++  Symbols:   341
 +  CStrings:  78
- 
-Sections:
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__objc_const : content changed
 Symbols:
 + ___stack_chk_fail
 + ___stack_chk_guard
@@ -113,5 +69,4 @@ CStrings:
 + "deprecatedElement"
 + "emptyImageCollection"
 + "malformedCoverBlockTitle"
-
 ```

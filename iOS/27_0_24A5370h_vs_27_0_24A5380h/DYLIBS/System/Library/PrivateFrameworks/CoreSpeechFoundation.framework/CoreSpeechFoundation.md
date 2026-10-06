@@ -2,114 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/CoreSpeechFoundation.framework/CoreSpeechFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__objc_data` | `0x2f60` | `0x47c0` | **`+0x1860`** |
+| `__AUTH.__objc_data` | `0x1938` | `0x128` | **`-0x1810`** |
+| `__TEXT.__text` | `0xcab8c` | `0xcbb14` | **`+0xf88`** |
+| `__TEXT.__oslogstring` | `0x1149f` | `0x11931` | **`+0x492`** |
+| `__AUTH_CONST.__objc_const` | `0x149d8` | `0x14b70` | **`+0x198`** |
+| `__TEXT.__cstring` | `0x165b7` | `0x1671a` | **`+0x163`** |
+| `__TEXT.__objc_methlist` | `0xd6e8` | `0xd808` | **`+0x120`** |
+| `__DATA_DIRTY.__bss` | `0x540` | `0x618` | **`+0xd8`** |
+| `__DATA.__bss` | `0x1638` | `0x1568` | **`-0xd0`** |
+| `__TEXT.__gcc_except_tab` | `0x3c24` | `0x3cec` | **`+0xc8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7398` | `0x7440` | **`+0xa8`** |
+| `__AUTH_CONST.__cfstring` | `0x9500` | `0x9580` | **`+0x80`** |
+| `__DATA.__data` | `0x1948` | `0x19a0` | **`+0x58`** |
+| `__TEXT.__unwind_info` | `0x3bc0` | `0x3c00` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x2810` | `0x2840` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0x1ac0` | `0x1ae0` | **`+0x20`** |
+| `__TEXT.__const` | `0xfb8` | `0xfc8` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0xd80` | `0xd8c` | **`+0xc`** |
+| `__DATA_CONST.__got` | `0x1030` | `0x1038` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x730` | `0x738` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x210` | `0x218` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x558` | `0x560` | **`+0x8`** |
+| `__DATA_DIRTY.__data` | `0x2e0` | `0x2e8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xcab8c
--  __TEXT.__objc_methlist: 0xd6e8
--  __TEXT.__const: 0xfb8
-+  __TEXT.__text: 0xcbb14
-+  __TEXT.__objc_methlist: 0xd808
-+  __TEXT.__const: 0xfc8
-   __TEXT.__dlopen_cstrs: 0x24a
-   __TEXT.__constg_swiftt: 0x2cc
-   __TEXT.__swift5_typeref: 0x1dc
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_types: 0x30
--  __TEXT.__cstring: 0x165b7
-+  __TEXT.__cstring: 0x1671a
-   __TEXT.__swift5_reflstr: 0x278
-   __TEXT.__swift5_assocty: 0x78
-   __TEXT.__swift5_fieldmd: 0x244
-   __TEXT.__swift5_proto: 0x74
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__gcc_except_tab: 0x3c24
--  __TEXT.__oslogstring: 0x1149f
--  __TEXT.__unwind_info: 0x3bc0
-+  __TEXT.__gcc_except_tab: 0x3cec
-+  __TEXT.__oslogstring: 0x11931
-+  __TEXT.__unwind_info: 0x3c00
-   __TEXT.__eh_frame: 0x270
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2810
--  __DATA_CONST.__objc_classlist: 0x730
-+  __DATA_CONST.__const: 0x2840
-+  __DATA_CONST.__objc_classlist: 0x738
-   __DATA_CONST.__objc_catlist: 0x58
--  __DATA_CONST.__objc_protolist: 0x210
-+  __DATA_CONST.__objc_protolist: 0x218
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x18
--  __DATA_CONST.__objc_selrefs: 0x7398
-+  __DATA_CONST.__objc_selrefs: 0x7440
-   __DATA_CONST.__objc_protorefs: 0x30
--  __DATA_CONST.__objc_superrefs: 0x558
-+  __DATA_CONST.__objc_superrefs: 0x560
-   __DATA_CONST.__objc_arraydata: 0x1c8
--  __DATA_CONST.__got: 0x1030
--  __AUTH_CONST.__const: 0x1ac0
--  __AUTH_CONST.__cfstring: 0x9500
--  __AUTH_CONST.__objc_const: 0x149d8
-+  __DATA_CONST.__got: 0x1038
-+  __AUTH_CONST.__const: 0x1ae0
-+  __AUTH_CONST.__cfstring: 0x9580
-+  __AUTH_CONST.__objc_const: 0x14b70
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_dictobj: 0x1e0
-   __AUTH_CONST.__objc_intobj: 0x4b0
+-3600.70.8.0.0
++3600.70.20.1.1
 
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_floatobj: 0x1a0
-   __AUTH_CONST.__auth_got: 0xfc0
--  __AUTH.__objc_data: 0x1938
--  __DATA.__objc_ivar: 0xd80
--  __DATA.__data: 0x1948
--  __DATA.__bss: 0x1638
--  __DATA_DIRTY.__objc_data: 0x2f60
--  __DATA_DIRTY.__data: 0x2e0
--  __DATA_DIRTY.__bss: 0x540
-+  __AUTH.__objc_data: 0x128
-+  __DATA.__objc_ivar: 0xd8c
-+  __DATA.__data: 0x19a0
-+  __DATA.__bss: 0x1568
-+  __DATA_DIRTY.__objc_data: 0x47c0
-+  __DATA_DIRTY.__data: 0x2e8
-+  __DATA_DIRTY.__bss: 0x618
-   __DATA_DIRTY.__common: 0x70
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5198
--  Symbols:   17352
--  CStrings:  4909
+-  Symbols:   9751
+-  CStrings:  3718
 +  Functions: 5222
-+  Symbols:   17443
-+  CStrings:  4936
- 
-Sections:
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
++  Symbols:   9794
++  CStrings:  3741
 Symbols:
 + +[CSFTTRAudioLogger recordedAudioAvailableAt:requestId:filenamePostfix:completion:]
 + +[CSPhraseSpotterEnabledMonitor sharedInstance]
@@ -372,27 +305,6 @@ Symbols:
 + ___block_descriptor_64_ea8_32s40s_e5_v8?0ls32l8s40l8
 + ___block_descriptor_72_e8_32s40s48bs_e5_v8?0ls48l8s32l8s40l8
 + _kCSPhraseSpotterEnabledDidChangeDarwinNotification
-+ _objc_msgSend$CSPhraseSpotterEnabledMonitor:didReceiveEnabled:
-+ _objc_msgSend$IOBufferDuration
-+ _objc_msgSend$_checkPhraseSpotterEnabled
-+ _objc_msgSend$_decoderForAudioStreamHandleId:
-+ _objc_msgSend$_didReceivePhraseSpotterSettingChangedInQueue:
-+ _objc_msgSend$_minimumIOBufferDurationForInputSampleRate:
-+ _objc_msgSend$_phraseSpotterEnabledDidChange
-+ _objc_msgSend$_removeDecoderForAudioStreamHandleId:
-+ _objc_msgSend$_startStandardPath
-+ _objc_msgSend$initWithStopRecordingReason:expectedStopHostTime:trailingSilenceDurationAtEndpoint:holdRequest:supportsMagus:requestId:blockAttending:
-+ _objc_msgSend$isBuiltInRecordRoute:
-+ _objc_msgSend$opusDecoders
-+ _objc_msgSend$phraseSpotterEnabled
-+ _objc_msgSend$recordedAudioAvailableAt:requestId:filenamePostfix:completion:
-+ _objc_msgSend$reportMicUsage:deviceUID:
-+ _objc_msgSend$selfTapIOBufferDurationOverride
-+ _objc_msgSend$setActive:error:
-+ _objc_msgSend$setOpusDecoders:
-+ _objc_msgSend$setPreferredIOBufferDuration:error:
-+ _objc_msgSend$setPreferredInputSampleRate:error:
-+ _objc_msgSend$setPrefersLowPowerMicrophone:error:
 - -[CSAudioPowerProvider configureForRecordRoute:]
 - GCC_except_table1320
 - GCC_except_table1349
@@ -645,5 +557,4 @@ CStrings:
 - "+[CSFTTRAudioLogger recordedAudioAvailableAt:requestId:filenamePostfix:]_block_invoke"
 - "-[CSAudioPowerProvider configureForRecordRoute:]"
 - "\xf01"
-
 ```

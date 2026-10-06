@@ -2,82 +2,51 @@
 
 > `/Applications/Device Recovery Assistant.app/Device Recovery Assistant`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e77c` | `0x1facc` | **`+0x1350`** |
+| `__TEXT.__oslogstring` | `0x35e9` | `0x3956` | **`+0x36d`** |
+| `__TEXT.__objc_stubs` | `0x6220` | `0x6500` | **`+0x2e0`** |
+| `__TEXT.__objc_methname` | `0x8b1c` | `0x8dc2` | **`+0x2a6`** |
+| `__DATA.__objc_const` | `0x6558` | `0x6718` | **`+0x1c0`** |
+| `__TEXT.__objc_methlist` | `0x2d90` | `0x2eb8` | **`+0x128`** |
+| `__TEXT.__cstring` | `0x35b5` | `0x36a7` | **`+0xf2`** |
+| `__DATA.__objc_selrefs` | `0x22c0` | `0x2390` | **`+0xd0`** |
+| `__DATA_CONST.__const` | `0xa08` | `0xa80` | **`+0x78`** |
+| `__DATA.__objc_data` | `0xaf0` | `0xb40` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x6f8` | `0x748` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x118` | `0x150` | **`+0x38`** |
+| `__DATA_CONST.__cfstring` | `0x1960` | `0x1980` | **`+0x20`** |
+| `__TEXT.__objc_methtype` | `0x257a` | `0x2597` | **`+0x1d`** |
+| `__DATA.__objc_ivar` | `0x20c` | `0x224` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x4c0` | `0x4d8` | **`+0x18`** |
+| `__TEXT.__auth_stubs` | `0x840` | `0x850` | **`+0x10`** |
+| `__TEXT.__objc_classname` | `0x689` | `0x699` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x430` | `0x438` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x118` | `0x120` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x108` | `0x110` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
- 150.0.2.0.0
--  __TEXT.__text: 0x1e77c
--  __TEXT.__auth_stubs: 0x840
--  __TEXT.__objc_stubs: 0x6220
--  __TEXT.__objc_methlist: 0x2d90
-+  __TEXT.__text: 0x1facc
-+  __TEXT.__auth_stubs: 0x850
-+  __TEXT.__objc_stubs: 0x6500
-+  __TEXT.__objc_methlist: 0x2eb8
-   __TEXT.__const: 0xa8
--  __TEXT.__objc_methname: 0x8b1c
--  __TEXT.__oslogstring: 0x35e9
--  __TEXT.__cstring: 0x35b5
--  __TEXT.__objc_classname: 0x689
--  __TEXT.__objc_methtype: 0x257a
--  __TEXT.__gcc_except_tab: 0x118
-+  __TEXT.__objc_methname: 0x8dc2
-+  __TEXT.__oslogstring: 0x3956
-+  __TEXT.__cstring: 0x36a7
-+  __TEXT.__objc_classname: 0x699
-+  __TEXT.__objc_methtype: 0x2597
-+  __TEXT.__gcc_except_tab: 0x150
-   __TEXT.__ustring: 0x18
--  __TEXT.__unwind_info: 0x6f8
--  __DATA_CONST.__const: 0xa08
--  __DATA_CONST.__cfstring: 0x1960
--  __DATA_CONST.__objc_classlist: 0x118
-+  __TEXT.__unwind_info: 0x748
-+  __DATA_CONST.__const: 0xa80
-+  __DATA_CONST.__cfstring: 0x1980
-+  __DATA_CONST.__objc_classlist: 0x120
-   __DATA_CONST.__objc_protolist: 0x110
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_superrefs: 0x108
-+  __DATA_CONST.__objc_superrefs: 0x110
-   __DATA_CONST.__objc_intobj: 0x18
--  __DATA_CONST.__auth_got: 0x430
--  __DATA_CONST.__got: 0x4c0
--  __DATA.__objc_const: 0x6558
--  __DATA.__objc_selrefs: 0x22c0
--  __DATA.__objc_ivar: 0x20c
--  __DATA.__objc_data: 0xaf0
-+  __DATA_CONST.__auth_got: 0x438
-+  __DATA_CONST.__got: 0x4d8
-+  __DATA.__objc_const: 0x6718
-+  __DATA.__objc_selrefs: 0x2390
-+  __DATA.__objc_ivar: 0x224
-+  __DATA.__objc_data: 0xb40
-   __DATA.__data: 0xce0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreImage.framework/CoreImage
 +  - /System/Library/Frameworks/CoreMotion.framework/CoreMotion
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/CoreTelephony.framework/CoreTelephony
-   - /System/Library/Frameworks/CoreText.framework/CoreText
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 793
 -  Symbols:   307
 -  CStrings:  2355
 +  Functions: 822
 +  Symbols:   310
 +  CStrings:  2410
- 
 Symbols:
 + _NSStringFromCGRect
 + _OBJC_CLASS_$_CMAngleManager

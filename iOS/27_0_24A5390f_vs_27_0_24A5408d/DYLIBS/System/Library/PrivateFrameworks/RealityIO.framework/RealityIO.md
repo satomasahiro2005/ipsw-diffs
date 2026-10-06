@@ -2,67 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/RealityIO.framework/RealityIO`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfd050` | `0xfd8e0` | **`+0x890`** |
+| `__AUTH_CONST.__auth_got` | `0x3378` | `0x33a8` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x303b` | `0x305b` | **`+0x20`** |
+| `__TEXT.__const` | `0xb050` | `0xb060` | **`+0x10`** |
+| `__DATA.__data` | `0x25a8` | `0x25b0` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x240` | `0x248` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0x3d9a` | `0x3da2` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x3e40` | `0x3e48` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -235.0.4.0.0
--  __TEXT.__text: 0xfd050
 +235.0.6.0.0
-+  __TEXT.__text: 0xfd8e0
-   __TEXT.__objc_methlist: 0x29c
--  __TEXT.__const: 0xb050
-+  __TEXT.__const: 0xb060
-   __TEXT.__constg_swiftt: 0x41d8
--  __TEXT.__swift5_typeref: 0x3d9a
-+  __TEXT.__swift5_typeref: 0x3da2
-   __TEXT.__swift5_fieldmd: 0x1c04
-   __TEXT.__swift5_builtin: 0x154
-   __TEXT.__swift5_reflstr: 0x1266
-   __TEXT.__swift5_assocty: 0x610
-   __TEXT.__swift5_proto: 0x970
-   __TEXT.__swift5_types: 0x35c
--  __TEXT.__cstring: 0x303b
-+  __TEXT.__cstring: 0x305b
-   __TEXT.__oslogstring: 0x504
-   __TEXT.__swift5_capture: 0x11a0
-   __TEXT.__swift5_mpenum: 0x20
-   __TEXT.__swift5_protos: 0x118
-   __TEXT.__gcc_except_tab: 0xec
--  __TEXT.__unwind_info: 0x3e40
-+  __TEXT.__unwind_info: 0x3e48
-   __TEXT.__eh_frame: 0x2488
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__const: 0x1510
-   __DATA_CONST.__objc_classlist: 0x1d8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x240
-+  __DATA_CONST.__objc_selrefs: 0x248
-   __DATA_CONST.__objc_superrefs: 0x10
-   __DATA_CONST.__got: 0x12c8
-   __AUTH_CONST.__const: 0xa018
-   __AUTH_CONST.__cfstring: 0xc0
-   __AUTH_CONST.__objc_const: 0x3658
--  __AUTH_CONST.__auth_got: 0x3378
-+  __AUTH_CONST.__auth_got: 0x33a8
-   __AUTH.__data: 0xf80
-   __DATA.__objc_ivar: 0x24
--  __DATA.__data: 0x25a8
-+  __DATA.__data: 0x25b0
-   __DATA.__bss: 0xc720
-   __DATA.__common: 0x2e0
-   __DATA_DIRTY.__objc_data: 0x2d0
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7460
--  Symbols:   16612
+-  Symbols:   16547
 -  CStrings:  438
 +  Functions: 7461
-+  Symbols:   16624
++  Symbols:   16558
 +  CStrings:  439
- 
 Symbols:
 + _$s10RealityKit6EntityC12ComponentSetV0A10FoundationE4loadyxSgxmAA0D0RzlF
 + _$s10RealityKit6EntityC12ComponentSetV0A10FoundationE5store_8newValueyxm_xSgtAA0D0RzlF
@@ -91,7 +56,6 @@ Symbols:
 + _$s9RealityIO16USDImportServiceC9loadAsync33_591477937901C3574B11AA1E47A8ACC4LL4from11contentType7fulfill8postLoad24enforceMemoryConstraints11memoryLimit14featuresToSkipy10Foundation4DataV_07UniformO11Identifiers6UTTypeVSgys6ResultOy0A3Kit6EntityCs5Error_pGcySDySSypGKcSgSbSgSiSgAX02__R7OptionsV16LoadableFeaturesVSgtFAA13ImportSessionCSgycfU_Tm
 + _$sSS9hasPrefixySbSSF
 + ___swift_closure_destructor.241Tm
-+ _objc_msgSend$mainBundle
 + _symbolic _____Sg 22UniformTypeIdentifiers6UTTypeV
 - _$s10RealityKit6EntityC0A10FoundationE4loadyxSgxmAA9ComponentRzlF
 - _$s10RealityKit6EntityC0A10FoundationE5store_8newValueyxm_xSgtAA9ComponentRzlF

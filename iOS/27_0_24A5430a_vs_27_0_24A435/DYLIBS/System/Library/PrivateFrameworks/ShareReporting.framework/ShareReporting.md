@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/ShareReporting.framework/ShareReporting`
 
-```diff
+### Section Size Changes
 
- 95.0.0.0.0
--  __TEXT.__text: 0x240b8
-+  __TEXT.__text: 0x240c0
-   __TEXT.__objc_methlist: 0x154
-   __TEXT.__const: 0x3f18
-   __TEXT.__cstring: 0xe34
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x240b8` | `0x240c0` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2a31da3a4 -> sub_2a3f8f3a4 : 468 -> 472
-~ sub_2a31f8374 -> sub_2a3fad378 : 356 -> 360
+~ sub_2a30d03a4 -> sub_2a3e813a4 : 468 -> 472
+~ sub_2a30ee374 -> sub_2a3e9f378 : 356 -> 360
 ```

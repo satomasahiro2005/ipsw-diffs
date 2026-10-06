@@ -2,24 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/SeymourUI.framework/SeymourUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbe7edc` | `0xbe81ac` | **`+0x2d0`** |
+| `__DATA.__data` | `0x12ff8` | `0x13008` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.146.0.2
--  __TEXT.__text: 0xbe7edc
 +2027.0.146.1.4
-+  __TEXT.__text: 0xbe81ac
-   __TEXT.__objc_methlist: 0xcad8
-   __TEXT.__const: 0x45bc4
-   __TEXT.__cstring: 0x17339
-
-   __AUTH.__objc_data: 0x21500
-   __AUTH.__data: 0x24080
-   __DATA.__objc_ivar: 0x98
--  __DATA.__data: 0x12ff8
-+  __DATA.__data: 0x13008
-   __DATA.__bss: 0x269b0
-   __DATA.__common: 0x42e8
-   __DATA_DIRTY.__objc_data: 0x7008
 Functions:
 ~ sub_211ab9888 -> sub_211a7a888 : 20 -> 24
 ~ sub_211ab989c -> sub_211a7a8a0 : 20 -> 68

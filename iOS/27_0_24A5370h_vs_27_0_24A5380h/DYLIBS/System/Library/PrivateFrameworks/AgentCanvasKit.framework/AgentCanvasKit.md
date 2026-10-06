@@ -2,112 +2,65 @@
 
 > `/System/Library/PrivateFrameworks/AgentCanvasKit.framework/AgentCanvasKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xde3c0` | `0xd908c` | **`-0x5334`** |
+| `__DATA_DIRTY.__data` | `—` | `0x3050` | **`+0x3050`** |
+| `__DATA.__bss` | `0x76b0` | `0x5420` | **`-0x2290`** |
+| `__DATA_DIRTY.__bss` | `—` | `0x1f00` | **`+0x1f00`** |
+| `__AUTH.__data` | `0x2e28` | `0x1088` | **`-0x1da0`** |
+| `__DATA.__data` | `0x2b18` | `0x12c0` | **`-0x1858`** |
+| `__AUTH_CONST.__objc_const` | `0x2870` | `0x2150` | **`-0x720`** |
+| `__TEXT.__objc_methlist` | `0x9cc` | `0x2ac` | **`-0x720`** |
+| `__AUTH.__objc_data` | `0x888` | `0x1e0` | **`-0x6a8`** |
+| `__TEXT.__const` | `0x7f50` | `0x7a30` | **`-0x520`** |
+| `__DATA_CONST.__objc_selrefs` | `0x988` | `0x498` | **`-0x4f0`** |
+| `__TEXT.__oslogstring` | `0x102b` | `0x137b` | **`+0x350`** |
+| `__TEXT.__eh_frame` | `0x81ec` | `0x7ec0` | **`-0x32c`** |
+| `__TEXT.__unwind_info` | `0x3f58` | `0x3c48` | **`-0x310`** |
+| `__TEXT.__swift5_typeref` | `0x2fc0` | `0x2d0e` | **`-0x2b2`** |
+| `__TEXT.__constg_swiftt` | `0x2b74` | `0x28ec` | **`-0x288`** |
+| `__DATA_DIRTY.__objc_data` | `—` | `0x1e0` | **`+0x1e0`** |
+| `__TEXT.__swift5_fieldmd` | `0x2728` | `0x25b8` | **`-0x170`** |
+| `__TEXT.__swift5_capture` | `0x1354` | `0x1468` | **`+0x114`** |
+| `__AUTH_CONST.__auth_got` | `0x1338` | `0x1258` | **`-0xe0`** |
+| `__DATA_CONST.__got` | `0x990` | `0x8d0` | **`-0xc0`** |
+| `__TEXT.__cstring` | `0x1f21` | `0x1e61` | **`-0xc0`** |
+| `__DATA.__common` | `0x140` | `0xa8` | **`-0x98`** |
+| `__DATA_CONST.__objc_protolist` | `0x120` | `0xb0` | **`-0x70`** |
+| `__DATA_DIRTY.__common` | `—` | `0x70` | **`+0x70`** |
+| `__TEXT.__swift_as_entry` | `0x56c` | `0x510` | **`-0x5c`** |
+| `__AUTH_CONST.__const` | `0x6580` | `0x65d8` | **`+0x58`** |
+| `__TEXT.__swift5_assocty` | `0x2e0` | `0x328` | **`+0x48`** |
+| `__TEXT.__swift5_builtin` | `0xc8` | `0x8c` | **`-0x3c`** |
+| `__DATA_CONST.__objc_protorefs` | `0x90` | `0x58` | **`-0x38`** |
+| `__DATA_CONST.__objc_classlist` | `0xd0` | `0xa8` | **`-0x28`** |
+| `__TEXT.__swift_as_ret` | `0x544` | `0x51c` | **`-0x28`** |
+| `__TEXT.__swift5_proto` | `0x440` | `0x41c` | **`-0x24`** |
+| `__TEXT.__swift5_types` | `0x250` | `0x22c` | **`-0x24`** |
+| `__TEXT.__swift5_reflstr` | `0x281f` | `0x27ff` | **`-0x20`** |
+| `__TEXT.__swift_as_cont` | `0x45c` | `0x444` | **`-0x18`** |
+| `__TEXT.__swift5_mpenum` | `0x28` | `0x20` | **`-0x8`** |
+| `__TEXT.__swift5_protos` | `0x88` | `0x84` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xde3c0
--  __TEXT.__objc_methlist: 0x9cc
--  __TEXT.__const: 0x7f50
--  __TEXT.__constg_swiftt: 0x2b74
--  __TEXT.__swift5_typeref: 0x2fc0
--  __TEXT.__swift5_builtin: 0xc8
--  __TEXT.__swift5_reflstr: 0x281f
--  __TEXT.__swift5_fieldmd: 0x2728
--  __TEXT.__swift5_assocty: 0x2e0
--  __TEXT.__swift5_proto: 0x440
--  __TEXT.__swift5_types: 0x250
--  __TEXT.__swift5_protos: 0x88
--  __TEXT.__swift_as_entry: 0x56c
--  __TEXT.__swift_as_ret: 0x544
--  __TEXT.__swift5_capture: 0x1354
--  __TEXT.__swift_as_cont: 0x45c
--  __TEXT.__cstring: 0x1f21
--  __TEXT.__oslogstring: 0x102b
--  __TEXT.__swift5_mpenum: 0x28
--  __TEXT.__unwind_info: 0x3f58
--  __TEXT.__eh_frame: 0x81ec
-+  __TEXT.__text: 0xd908c
-+  __TEXT.__objc_methlist: 0x2ac
-+  __TEXT.__const: 0x7a30
-+  __TEXT.__swift5_typeref: 0x2d0e
-+  __TEXT.__swift5_fieldmd: 0x25b8
-+  __TEXT.__constg_swiftt: 0x28ec
-+  __TEXT.__swift5_builtin: 0x8c
-+  __TEXT.__swift5_reflstr: 0x27ff
-+  __TEXT.__swift5_assocty: 0x328
-+  __TEXT.__swift5_protos: 0x84
-+  __TEXT.__swift5_proto: 0x41c
-+  __TEXT.__swift5_types: 0x22c
-+  __TEXT.__swift_as_entry: 0x510
-+  __TEXT.__swift_as_ret: 0x51c
-+  __TEXT.__swift5_capture: 0x1468
-+  __TEXT.__swift_as_cont: 0x444
-+  __TEXT.__cstring: 0x1e61
-+  __TEXT.__oslogstring: 0x137b
-+  __TEXT.__swift5_mpenum: 0x20
-+  __TEXT.__unwind_info: 0x3c48
-+  __TEXT.__eh_frame: 0x7ec0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x240
--  __DATA_CONST.__objc_classlist: 0xd0
--  __DATA_CONST.__objc_protolist: 0x120
-+  __DATA_CONST.__objc_classlist: 0xa8
-+  __DATA_CONST.__objc_protolist: 0xb0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x988
--  __DATA_CONST.__objc_protorefs: 0x90
--  __DATA_CONST.__got: 0x990
--  __AUTH_CONST.__const: 0x6580
--  __AUTH_CONST.__objc_const: 0x2870
--  __AUTH_CONST.__auth_got: 0x1338
--  __AUTH.__objc_data: 0x888
--  __AUTH.__data: 0x2e28
--  __DATA.__data: 0x2b18
--  __DATA.__bss: 0x76b0
--  __DATA.__common: 0x140
-+  __DATA_CONST.__objc_selrefs: 0x498
-+  __DATA_CONST.__objc_protorefs: 0x58
-+  __DATA_CONST.__got: 0x8d0
-+  __AUTH_CONST.__const: 0x65d8
-+  __AUTH_CONST.__objc_const: 0x2150
-+  __AUTH_CONST.__auth_got: 0x1258
-+  __AUTH.__objc_data: 0x1e0
-+  __AUTH.__data: 0x1088
-+  __DATA.__data: 0x12c0
-+  __DATA.__bss: 0x5420
-+  __DATA.__common: 0xa8
-+  __DATA_DIRTY.__objc_data: 0x1e0
-+  __DATA_DIRTY.__data: 0x3050
-+  __DATA_DIRTY.__bss: 0x1f00
-+  __DATA_DIRTY.__common: 0x70
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+-67.4.100.0.0
++73.0.5.102.0
 
-   - /System/Library/PrivateFrameworks/IntelligenceFlowPlannerSupport.framework/IntelligenceFlowPlannerSupport
-   - /System/Library/PrivateFrameworks/LinkMetadata.framework/LinkMetadata
-   - /System/Library/PrivateFrameworks/SAObjects.framework/SAObjects
 -  - /System/Library/PrivateFrameworks/SiriUIBridge.framework/SiriUIBridge
 -  - /System/Library/PrivateFrameworks/SiriUIFoundation.framework/SiriUIFoundation
-   - /System/Library/PrivateFrameworks/SnippetKit.framework/SnippetKit
-   - /System/Library/PrivateFrameworks/ToolKit.framework/ToolKit
-   - /usr/lib/libSystem.B.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6421
--  Symbols:   6105
+-  Symbols:   1919
 -  CStrings:  272
 +  Functions: 6271
-+  Symbols:   5695
++  Symbols:   1785
 +  CStrings:  276
- 
-Sections:
-~ __DATA_CONST.__const : content changed
 Symbols:
 + _OUTLINED_FUNCTION_435
 + _OUTLINED_FUNCTION_436
@@ -142,7 +95,6 @@ Symbols:
 + _associated conformance 14AgentCanvasKit21LeaseResourceInterestVs10SetAlgebraAAs25ExpressibleByArrayLiteral
 + _associated conformance 14AgentCanvasKit21LeaseResourceInterestVs9OptionSetAASY
 + _associated conformance 14AgentCanvasKit21LeaseResourceInterestVs9OptionSetAAs0H7Algebra
-+ _objc_msgSend$responseMode
 + _symbolic $s14AgentCanvasKit35ChatServiceResponseDismissalCommandP
 + _symbolic $s14AgentCanvasKit45ChatServiceUserFacingInteractionBarrierGatingP
 + _symbolic Iegh_
@@ -332,58 +284,6 @@ Symbols:
 - _get_type_metadata SHRzs8SendableRzl15Synchronization5MutexVyScTyyts5NeverOGSgG noncopyable
 - _get_type_metadata s8SendableRzl15Synchronization5MutexVySDy10Foundation4UUIDV14AgentCanvasKit16EventDistributorC8Observer33_EB984332AEC76A216ADF8B2703960D4ALLVyx_GGG noncopyable
 - _objc_autoreleaseReturnValue
-- _objc_msgSend$aceObject
-- _objc_msgSend$activities
-- _objc_msgSend$activityType
-- _objc_msgSend$addItemForPartialResultCommand:
-- _objc_msgSend$addItemForSpeechRecognizedCommand:
-- _objc_msgSend$addItemsForAddViewsCommand:
-- _objc_msgSend$af_userUtteranceValue
-- _objc_msgSend$attributedRequestExecutionUpdate
-- _objc_msgSend$bestTextInterpretation
-- _objc_msgSend$cancelRequestForReason:
-- _objc_msgSend$clearContext
-- _objc_msgSend$descriptionForAddViews:
-- _objc_msgSend$didEnd
-- _objc_msgSend$discardCurrentSpeechGroup
-- _objc_msgSend$endSession
-- _objc_msgSend$initWithActivationEvent:
-- _objc_msgSend$initWithDelegate:
-- _objc_msgSend$initWithDelegate:delegateQueue:
-- _objc_msgSend$initWithLanguageCode:
-- _objc_msgSend$initWithTargetQueue:
-- _objc_msgSend$initWithTurnIdentifier:
-- _objc_msgSend$insertedItemIndexPaths
-- _objc_msgSend$intelligenceFlowProgressUpdate
-- _objc_msgSend$invalidate
-- _objc_msgSend$isActivated
-- _objc_msgSend$itemAtIndexPath:
-- _objc_msgSend$itemWithIdentifier:
-- _objc_msgSend$nonSpeechRequestWillBegin
-- _objc_msgSend$performTransitionForEvent:
-- _objc_msgSend$preheat
-- _objc_msgSend$prepareForNewSpeechRequest
-- _objc_msgSend$setActivationEvent:
-- _objc_msgSend$setDelegate:
-- _objc_msgSend$setEndpointerOperationMode:
-- _objc_msgSend$setInterpretations:
-- _objc_msgSend$setPhrases:
-- _objc_msgSend$setRecognition:
-- _objc_msgSend$setSessionId:
-- _objc_msgSend$setSpeechDelegate:
-- _objc_msgSend$setTitle:
-- _objc_msgSend$setTokens:
-- _objc_msgSend$siriDismissed
-- _objc_msgSend$speechRecordingDidFail
-- _objc_msgSend$speechRecordingWillBegin
-- _objc_msgSend$sruif_commandSucceededWithRefId:
-- _objc_msgSend$startRequestWithInfo:
-- _objc_msgSend$startSpeechRequestWithSpeechRequestOptions:instrumentationTurn:isInitialBringUp:completion:
-- _objc_msgSend$stopAttendingForReason:
-- _objc_msgSend$type
-- _objc_msgSend$updatedItemIndexPaths
-- _objc_msgSend$userTurnContext
-- _objc_msgSend$userTurnIdentifier
 - _objc_msgSendSuper2
 - _objc_release_x9
 - _objc_retain_x2
@@ -539,5 +439,4 @@ CStrings:
 - "voiceSupportAFConnection"
 - "warmupConnectionIfPossible"
 - "willInitiateNewRequest"
-
 ```

@@ -2,110 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3f73f0` | `0x3f8940` | **`+0x1550`** |
+| `__TEXT.__oslogstring` | `0xbe20` | `0xbff0` | **`+0x1d0`** |
+| `__AUTH_CONST.__objc_const` | `0x4d450` | `0x4d5c8` | **`+0x178`** |
+| `__AUTH.__data` | `0x134a0` | `0x135d0` | **`+0x130`** |
+| `__TEXT.__cstring` | `0x311f3` | `0x312e3` | **`+0xf0`** |
+| `__TEXT.__objc_methlist` | `0x14edc` | `0x14fcc` | **`+0xf0`** |
+| `__AUTH_CONST.__const` | `0x12d90` | `0x12cd0` | **`-0xc0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6070` | `0x6130` | **`+0xc0`** |
+| `__TEXT.__eh_frame` | `0xd880` | `0xd7f8` | **`-0x88`** |
+| `__TEXT.__constg_swiftt` | `0xb2b8` | `0xb338` | **`+0x80`** |
+| `__DATA_CONST.__const` | `0x2a8c8` | `0x2a940` | **`+0x78`** |
+| `__TEXT.__gcc_except_tab` | `0x125c` | `0x12bc` | **`+0x60`** |
+| `__DATA.__data` | `0x9d10` | `0x9d60` | **`+0x50`** |
+| `__TEXT.__swift5_capture` | `0x2a4` | `0x254` | **`-0x50`** |
+| `__TEXT.__const` | `0xad134` | `0xad174` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0xc428` | `0xc468` | **`+0x40`** |
+| `__TEXT.__swift5_fieldmd` | `0xbb70` | `0xbba8` | **`+0x38`** |
+| `__AUTH_CONST.__cfstring` | `0x9540` | `0x9560` | **`+0x20`** |
+| `__DATA_DIRTY.__data` | `0x1d8` | `0x1b8` | **`-0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x12b8` | `0x12c8` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x1080` | `0x1090` | **`+0x10`** |
+| `__DATA_CONST.__objc_arraydata` | `0x108` | `0xf8` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0xe88` | `0xe98` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x6e31` | `0x6e41` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0x54f0` | `0x54e6` | **`-0xa`** |
+| `__TEXT.__swift5_types` | `0x844` | `0x84c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -250.0.0.3.0
--  __TEXT.__text: 0x3e03ec
--  __TEXT.__objc_methlist: 0x14edc
--  __TEXT.__const: 0xad134
--  __TEXT.__cstring: 0x311f3
--  __TEXT.__gcc_except_tab: 0x125c
--  __TEXT.__oslogstring: 0xbe20
 +255.0.2.0.0
-+  __TEXT.__text: 0x3e18d8
-+  __TEXT.__objc_methlist: 0x14fcc
-+  __TEXT.__const: 0xad174
-+  __TEXT.__cstring: 0x312e3
-+  __TEXT.__gcc_except_tab: 0x12bc
-+  __TEXT.__oslogstring: 0xbff0
-   __TEXT.__dlopen_cstrs: 0x632
--  __TEXT.__constg_swiftt: 0xb2b8
--  __TEXT.__swift5_typeref: 0x54f0
-+  __TEXT.__constg_swiftt: 0xb338
-+  __TEXT.__swift5_typeref: 0x54e6
-   __TEXT.__swift5_builtin: 0xf0
--  __TEXT.__swift5_reflstr: 0x6e31
--  __TEXT.__swift5_fieldmd: 0xbb70
--  __TEXT.__swift5_capture: 0x2a4
-+  __TEXT.__swift5_reflstr: 0x6e41
-+  __TEXT.__swift5_fieldmd: 0xbba8
-   __TEXT.__swift5_assocty: 0xbf8
-+  __TEXT.__swift5_capture: 0x254
-   __TEXT.__swift5_proto: 0x1f68
--  __TEXT.__swift5_types: 0x844
-+  __TEXT.__swift5_types: 0x84c
-   __TEXT.__swift5_mpenum: 0x44
-   __TEXT.__swift5_protos: 0x40
--  __TEXT.__unwind_info: 0x10f68
--  __TEXT.__eh_frame: 0xd888
-+  __TEXT.__unwind_info: 0x10f98
-+  __TEXT.__eh_frame: 0xd800
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2a8c8
--  __DATA_CONST.__objc_classlist: 0xe88
-+  __DATA_CONST.__const: 0x2a940
-+  __DATA_CONST.__objc_classlist: 0xe98
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x1c0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6070
-+  __DATA_CONST.__objc_selrefs: 0x6130
-   __DATA_CONST.__objc_protorefs: 0x80
-   __DATA_CONST.__objc_superrefs: 0x978
--  __DATA_CONST.__objc_arraydata: 0x108
--  __DATA_CONST.__got: 0x1080
--  __AUTH_CONST.__const: 0x12d90
--  __AUTH_CONST.__cfstring: 0x9540
--  __AUTH_CONST.__objc_const: 0x4d450
-+  __DATA_CONST.__objc_arraydata: 0xf8
-+  __DATA_CONST.__got: 0x1090
-+  __AUTH_CONST.__const: 0x12cd0
-+  __AUTH_CONST.__cfstring: 0x9560
-+  __AUTH_CONST.__objc_const: 0x4d5c8
-   __AUTH_CONST.__objc_intobj: 0x78
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x12b8
-+  __AUTH_CONST.__auth_got: 0x12c8
-   __AUTH.__objc_data: 0x7b90
--  __AUTH.__data: 0x134a0
-+  __AUTH.__data: 0x135d0
-   __AUTH.__thread_vars: 0x348
-   __AUTH.__thread_data: 0xf4
-   __AUTH.__thread_bss: 0x458
-   __DATA.__objc_ivar: 0x184c
--  __DATA.__data: 0x9d10
-+  __DATA.__data: 0x9d60
-   __DATA.__common: 0x1c10
-   __DATA_DIRTY.__objc_data: 0x1670
--  __DATA_DIRTY.__data: 0x1d8
-+  __DATA_DIRTY.__data: 0x1b8
-   __DATA_DIRTY.__bss: 0x4d0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /System/Library/PrivateFrameworks/ProactiveSupport.framework/ProactiveSupport
-   - /System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
 +  - /System/Library/PrivateFrameworks/TCC.framework/TCC
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 21934
--  Symbols:   46920
+-  Symbols:   44665
 -  CStrings:  9182
 +  Functions: 21956
-+  Symbols:   46998
++  Symbols:   44720
 +  CStrings:  9193
- 
 Symbols:
 + +[BMStreamBase(PeriodicMaintenance_Private) _atLeastOneSegmentFileInDirectory:fileManager:]
 + -[BMComputeSourceClient sendEvent:account:remoteName:timestamp:signpostID:sendFullEvent:completion:]
@@ -198,29 +140,6 @@ Symbols:
 + __os_feature_enabled_impl
 + _executePruningPolicyForAccount:includeStorageCleanup:.onceToken
 + _kTCCServiceSiriAccess
-+ _objc_msgSend$_invalidBookmarkError:
-+ _objc_msgSend$_repopulateSubscriptionSubstreamForStream:
-+ _objc_msgSend$_resetMainUnitOnUnrealisticFutureFrame
-+ _objc_msgSend$_resetStreamWithConfig:eventDataClass:
-+ _objc_msgSend$_resetSubscriptionSubstreamOnUnrealisticFutureFrameForStream:
-+ _objc_msgSend$_resetTombstoneSubstoreOnUnrealisticFutureFrameWithConfig:
-+ _objc_msgSend$_resetTombstoneSubstoresOnUnrealisticFutureFrame
-+ _objc_msgSend$_sendEventWithStreamIdentifier:timestamp:signpostID:eventData:eventDataVersion:account:remoteName:acknowledgement:
-+ _objc_msgSend$_writeEvent:timestamp:signpostID:notifyCompute:completion:
-+ _objc_msgSend$executePruningPolicyForAccount:includeStorageCleanup:
-+ _objc_msgSend$initWithStream:permission:config:
-+ _objc_msgSend$initWithStream:useCase:schema:publisherBlockWithOptions:acceptPublisherOptions:
-+ _objc_msgSend$isTimeTravelStreamResetEnabled
-+ _objc_msgSend$isTimeTravelStreamResetEnabledForConfig:
-+ _objc_msgSend$resetOnUnrealisticFutureFrame
-+ _objc_msgSend$resetStream
-+ _objc_msgSend$resetStreamWithReason:
-+ _objc_msgSend$resetSubscriptionSubstreamsOnUnrealisticFutureFrame
-+ _objc_msgSend$resetSubstoreOnUnrealisticFutureFrame
-+ _objc_msgSend$sendEvent:account:remoteName:timestamp:signpostID:sendFullEvent:completion:
-+ _objc_msgSend$sendEvent:timestamp:completion:
-+ _objc_msgSend$sendEventWithStreamIdentifier:timestamp:signpostID:eventData:eventDataVersion:account:remoteName:acknowledgement:
-+ _objc_msgSend$timestampIsUnreachablyInTheFuture:
 + _swift_retain_x10
 + _symbolic So12BMStreamBaseC_____Kc So18BMStreamIdentifiera
 + _symbolic _____ 12BiomeStreams14UnifiedLibraryO0D033_850BEB6472663B017EAF49437FB662E4LLO16StreamBaseLookupC

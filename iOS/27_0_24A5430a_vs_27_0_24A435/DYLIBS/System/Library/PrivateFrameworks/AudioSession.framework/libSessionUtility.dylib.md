@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AudioSession.framework/libSessionUtility.dylib`
 
-```diff
+### Section Size Changes
 
- 449.107.0.0.0
--  __TEXT.__text: 0x3dd28
-+  __TEXT.__text: 0x3dd94
-   __TEXT.__realtime: 0xc4
-   __TEXT.__objc_methlist: 0x844
-   __TEXT.__gcc_except_tab: 0x241c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3dd28` | `0x3dd94` | **`+0x6c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN5caulk10concurrent25guarded_lookup_hash_tableIjPN4avas4util16BaseOpaqueObjectELNS0_33guarded_lookup_hash_table_optionsE0ENS3_24OpaqueObjectIdentityHashEE10table_impl12addOrReplaceEjS5_b : 144 -> 148
 ~ __ZN4avas12WorkloopPool12handleBlocksEPU31objcproto20OS_dispatch_workloop8NSObject : 496 -> 516

@@ -2,75 +2,51 @@
 
 > `/usr/libexec/thermalmonitord`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__unwind_info`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x526b0` | `0x52568` | **`-0x148`** |
+| `__TEXT.__oslogstring` | `0x9e28` | `0x9de9` | **`-0x3f`** |
+| `__DATA.__objc_const` | `0xc948` | `0xc928` | **`-0x20`** |
+| `__DATA_CONST.__cfstring` | `0x6780` | `0x6760` | **`-0x20`** |
+| `__TEXT.__objc_methname` | `0x839a` | `0x838f` | **`-0xb`** |
+| `__TEXT.__cstring` | `0x4df6` | `0x4df1` | **`-0x5`** |
+| `__DATA.__objc_ivar` | `0xa30` | `0xa2c` | **`-0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
 - `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__const`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -2087.40.7.0.0
--  __TEXT.__text: 0x51f70
 +2087.40.8.0.1
-+  __TEXT.__text: 0x51e28
-   __TEXT.__auth_stubs: 0x13e0
-   __TEXT.__objc_stubs: 0x4f20
-   __TEXT.__objc_methlist: 0x4014
-   __TEXT.__const: 0x1560
-   __TEXT.__objc_classname: 0x1303
-   __TEXT.__objc_methtype: 0x1b05
--  __TEXT.__objc_methname: 0x839a
--  __TEXT.__cstring: 0x4df6
-+  __TEXT.__objc_methname: 0x838f
-+  __TEXT.__cstring: 0x4df1
-   __TEXT.__gcc_except_tab: 0x3ac
--  __TEXT.__oslogstring: 0x9e28
-+  __TEXT.__oslogstring: 0x9de9
-   __TEXT.__unwind_info: 0x1b48
-   __DATA_CONST.__const: 0x1458
--  __DATA_CONST.__cfstring: 0x6780
-+  __DATA_CONST.__cfstring: 0x6760
-   __DATA_CONST.__objc_classlist: 0x520
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x38
 
-   __DATA_CONST.__auth_got: 0xa08
-   __DATA_CONST.__got: 0x630
-   __DATA_CONST.__auth_ptr: 0x10
--  __DATA.__objc_const: 0xc948
-+  __DATA.__objc_const: 0xc928
-   __DATA.__objc_selrefs: 0x1990
--  __DATA.__objc_ivar: 0xa30
-+  __DATA.__objc_ivar: 0xa2c
-   __DATA.__objc_data: 0x3340
-   __DATA.__data: 0x370
-   __DATA.__common: 0x9f6
-
-   - /usr/lib/libobjc.A.dylib
-   Functions: 2001
-   Symbols:   417
 -  CStrings:  3748
 +  CStrings:  3745
- 
 Functions:
-~ sub_1000031ec : 660 -> 636
-~ sub_1000037b4 -> sub_10000379c : 1384 -> 1184
-~ sub_10002a4b0 -> sub_10002a3d0 : 656 -> 584
-~ sub_10002a740 -> sub_10002a618 : 240 -> 212
-~ sub_10002aa1c -> sub_10002a8d8 : 36 -> 32
+~ sub_100003204 : 660 -> 636
+~ sub_1000037cc -> sub_1000037b4 : 1384 -> 1184
+~ sub_10002a8d8 -> sub_10002a7f8 : 656 -> 584
+~ sub_10002ab68 -> sub_10002aa40 : 240 -> 212
+~ sub_10002ae44 -> sub_10002ad00 : 36 -> 32
 CStrings:
 - "<Notice> AOP sensor update found for sensor# %d with value: %d"
 - "aopSensors"

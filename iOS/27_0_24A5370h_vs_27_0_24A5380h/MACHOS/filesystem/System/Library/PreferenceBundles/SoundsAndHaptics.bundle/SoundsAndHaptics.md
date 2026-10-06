@@ -2,25 +2,28 @@
 
 > `/System/Library/PreferenceBundles/SoundsAndHaptics.bundle/SoundsAndHaptics`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x1ca` | `0x1da` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__text: 0x38dc
-   __TEXT.__auth_stubs: 0x5b0
-   __TEXT.__objc_stubs: 0xe0
--  __TEXT.__const: 0x1ca
-+  __TEXT.__const: 0x1da
-   __TEXT.__objc_classname: 0x9d
-   __TEXT.__constg_swiftt: 0xd0
-   __TEXT.__swift5_typeref: 0x144
-Sections:
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__data : content changed
-
+-1129.0.0.0.0
++2027.0.1.100.0
 ```

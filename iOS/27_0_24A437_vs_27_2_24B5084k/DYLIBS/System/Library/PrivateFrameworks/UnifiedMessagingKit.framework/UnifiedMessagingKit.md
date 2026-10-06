@@ -2,111 +2,60 @@
 
 > `/System/Library/PrivateFrameworks/UnifiedMessagingKit.framework/UnifiedMessagingKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x475c10` | `0x4afd50` | **`+0x3a140`** |
+| `__TEXT.__swift5_typeref` | `0x63100` | `0x6950c` | **`+0x640c`** |
+| `__TEXT.__const` | `0x67d16` | `0x6bc86` | **`+0x3f70`** |
+| `__DATA.__bss` | `0x6d238` | `0x70538` | **`+0x3300`** |
+| `__AUTH_CONST.__const` | `0x2cc10` | `0x2f220` | **`+0x2610`** |
+| `__TEXT.__eh_frame` | `0x1d374` | `0x1eea0` | **`+0x1b2c`** |
+| `__TEXT.__unwind_info` | `0x13f18` | `0x14e38` | **`+0xf20`** |
+| `__DATA.__data` | `0x13b10` | `0x14900` | **`+0xdf0`** |
+| `__TEXT.__swift5_fieldmd` | `0x11a10` | `0x12718` | **`+0xd08`** |
+| `__TEXT.__constg_swiftt` | `0xfc7c` | `0x10938` | **`+0xcbc`** |
+| `__TEXT.__cstring` | `0xd978` | `0xe4a8` | **`+0xb30`** |
+| `__AUTH.__data` | `0xb728` | `0xc0b8` | **`+0x990`** |
+| `__TEXT.__swift5_capture` | `0x5040` | `0x5900` | **`+0x8c0`** |
+| `__AUTH_CONST.__objc_const` | `0x8960` | `0x9098` | **`+0x738`** |
+| `__TEXT.__swift5_reflstr` | `0xb9fc` | `0xc09c` | **`+0x6a0`** |
+| `__TEXT.__swift5_assocty` | `0x33d0` | `0x35c8` | **`+0x1f8`** |
+| `__TEXT.__swift5_proto` | `0x38f0` | `0x3aa0` | **`+0x1b0`** |
+| `__AUTH_CONST.__auth_got` | `0x3c10` | `0x3d78` | **`+0x168`** |
+| `__TEXT.__objc_methlist` | `0x1ef4` | `0x2014` | **`+0x120`** |
+| `__TEXT.__swift_as_cont` | `0xbc0` | `0xcd4` | **`+0x114`** |
+| `__TEXT.__swift5_types` | `0x1490` | `0x1580` | **`+0xf0`** |
+| `__TEXT.__swift_as_entry` | `0x67c` | `0x75c` | **`+0xe0`** |
+| `__TEXT.__swift_as_ret` | `0x618` | `0x6e0` | **`+0xc8`** |
+| `__AUTH.__objc_data` | `0x30a0` | `0x3160` | **`+0xc0`** |
+| `__DATA_CONST.__got` | `0x1f48` | `0x1fd8` | **`+0x90`** |
+| `__DATA_CONST.__objc_selrefs` | `0x17f0` | `0x1880` | **`+0x90`** |
+| `__TEXT.__swift5_builtin` | `0x488` | `0x4c4` | **`+0x3c`** |
+| `__DATA_CONST.__objc_classlist` | `0x348` | `0x380` | **`+0x38`** |
+| `__TEXT.__swift5_mpenum` | `0x220` | `0x258` | **`+0x38`** |
+| `__TEXT.__swift5_protos` | `0x8c` | `0xb0` | **`+0x24`** |
+| `__DATA_CONST.__objc_protolist` | `0x288` | `0x2a8` | **`+0x20`** |
+| `__DATA.__common` | `0x348` | `0x358` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x1d8` | `0x1e8` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x838` | `0x840` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3.0.50.2.3
--  __TEXT.__text: 0x448a00
--  __TEXT.__objc_methlist: 0x1ef4
--  __TEXT.__const: 0x67d16
--  __TEXT.__constg_swiftt: 0xfc7c
--  __TEXT.__swift5_typeref: 0x63100
--  __TEXT.__swift5_builtin: 0x488
--  __TEXT.__swift5_reflstr: 0xb9fc
--  __TEXT.__swift5_fieldmd: 0x11a10
--  __TEXT.__swift5_assocty: 0x33d0
--  __TEXT.__swift5_proto: 0x38f0
--  __TEXT.__swift5_types: 0x1490
--  __TEXT.__swift5_capture: 0x5040
--  __TEXT.__cstring: 0xd978
--  __TEXT.__swift_as_entry: 0x67c
--  __TEXT.__swift_as_cont: 0xbc0
--  __TEXT.__swift_as_ret: 0x618
--  __TEXT.__swift5_mpenum: 0x220
--  __TEXT.__swift5_protos: 0x8c
 +3.1.7.0.0
-+  __TEXT.__text: 0x4804fc
-+  __TEXT.__objc_methlist: 0x2014
-+  __TEXT.__const: 0x6bc86
-+  __TEXT.__constg_swiftt: 0x10938
-+  __TEXT.__swift5_typeref: 0x6950c
-+  __TEXT.__swift5_builtin: 0x4c4
-+  __TEXT.__swift5_reflstr: 0xc09c
-+  __TEXT.__swift5_fieldmd: 0x12718
-+  __TEXT.__swift5_assocty: 0x35c8
-+  __TEXT.__swift5_proto: 0x3aa0
-+  __TEXT.__swift5_types: 0x1580
-+  __TEXT.__cstring: 0xe4a8
-+  __TEXT.__swift5_capture: 0x5900
-+  __TEXT.__swift_as_entry: 0x75c
-+  __TEXT.__swift_as_ret: 0x6e0
-+  __TEXT.__swift_as_cont: 0xcd4
-+  __TEXT.__swift5_mpenum: 0x258
-+  __TEXT.__swift5_protos: 0xb0
-   __TEXT.__oslogstring: 0xb3
--  __TEXT.__unwind_info: 0x18d08
--  __TEXT.__eh_frame: 0x1d3b4
-+  __TEXT.__unwind_info: 0x19e88
-+  __TEXT.__eh_frame: 0x1eee0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x838
--  __DATA_CONST.__objc_classlist: 0x348
--  __DATA_CONST.__objc_protolist: 0x288
-+  __DATA_CONST.__const: 0x840
-+  __DATA_CONST.__objc_classlist: 0x380
-+  __DATA_CONST.__objc_protolist: 0x2a8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x17f0
--  __DATA_CONST.__objc_protorefs: 0x1d8
--  __DATA_CONST.__got: 0x1f48
--  __AUTH_CONST.__const: 0x2cc10
--  __AUTH_CONST.__objc_const: 0x8960
--  __AUTH_CONST.__auth_got: 0x3c10
--  __AUTH.__objc_data: 0x30a0
--  __AUTH.__data: 0xb728
--  __DATA.__data: 0x13b10
-+  __DATA_CONST.__objc_selrefs: 0x1880
-+  __DATA_CONST.__objc_protorefs: 0x1e8
-+  __DATA_CONST.__got: 0x1fd8
-+  __AUTH_CONST.__const: 0x2f220
-+  __AUTH_CONST.__objc_const: 0x9098
-+  __AUTH_CONST.__auth_got: 0x3d78
-+  __AUTH.__objc_data: 0x3160
-+  __AUTH.__data: 0xc0b8
-+  __DATA.__data: 0x14900
-   __DATA.__objc_stublist: 0x8
--  __DATA.__common: 0x348
-+  __DATA.__common: 0x358
-   __DATA_DIRTY.__objc_data: 0xa0
-   __DATA_DIRTY.__data: 0x1898
--  __DATA_DIRTY.__common: 0x28
-   __DATA_DIRTY.__bss: 0x3500
-+  __DATA_DIRTY.__common: 0x28
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswiftCoreLocation.dylib
-   - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
 +  - /usr/lib/swift/libswiftIntents.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 32900
--  Symbols:   10512
+-  Functions: 32901
+-  Symbols:   10040
 -  CStrings:  1541
 +  Functions: 34252
-+  Symbols:   10975
++  Symbols:   10500
 +  CStrings:  1621
- 
 Symbols:
 + _OBJC_CLASS_$_NSURLSessionDownloadTask
 + _OBJC_METACLASS_$__TtCC25UnifiedMessagingKitJSCore27ForegroundContentDownloaderP33_6EF95CF4BBB0E7E39B3A31DAEBE9EB998Delegate
@@ -251,9 +200,6 @@ Symbols:
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE15navigationTitleyQrAA18LocalizedStringKeyVFQOyAA4FormVyAA12TupleContentVyAA7SectionVyAA4TextVAJyAA07LabeledK0VyA2NG_A2QQPGAA05EmptyC0VG_ALyAnJyAQ_AJyAQ_AQQPGSgAQSgAXQPGATGALyAnvTGQPGG_Qo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE29navigationBarTitleDisplayModeyQrAA010NavigationE4ItemV0fgH0OFQOyAcAE0dF0yQrAA18LocalizedStringKeyVFQOyAA4ListVys5NeverOAA7ForEachVySay19UnifiedMessagingKit14RenderingErrorVGSSAA15ModifiedContentVyAA6VStackVyAA05TupleX0VyAA4TextV_AA6HStackVyA_yA1__AcAE13textSelectionyQrqd__AA17TextSelectabilityRd__lFQOyA1__AA24EnabledTextSelectabilityVQo_QPGGSgA11_A11_A11_AR011NodeExcerptC033_D5A6ACFB5D0419B63CA7DDF40ADFDB1CLLVSgAR09ParsePathC0A13_LLVSgQPGGAA14_PaddingLayoutVGGG_Qo__Qo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE5sheet11isPresented9onDismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAcAE11refreshable6actionQryyYaYbc_tFQOyAcAE15navigationTitleyQrAA18LocalizedStringKeyVFQOyAA5GroupVyAA19_ConditionalContentVy19UnifiedMessagingKit010EmptyStateC0VAcAE9listStyleyQrqd__AA9ListStyleRd__lFQOyAA4ListVys5NeverOAA05TupleY0VyAA7SectionVyAA4TextVAA7ForEachVySaySSGSSAcAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyAA6ButtonVyAA6HStackVyA9_yAA6VStackVyA9_yA13__A13_QPGG_AA6SpacerVAA08ModifiedY0VyAA5ImageVAA012_EnvironmentV15WritingModifierVyAA5ColorVSgGGQPGGG_AA16PlainButtonStyleVQo_GAA05EmptyC0VG_A11_yA22_yA9_yA13__A28_A30_yA20_yA13_GA34_yAA4FontVSgGGSgQPGGAZyA13_A15_ySay0Z18MessagingKitJSCore22DataSourceHistoryEntryVG10Foundation4UUIDVAA14NavigationLinkVyA_020DataSourceHistoryRowC0VA_023DataSourceHistoryDetailC0VGGGA13_GQPGG_AA21InsetGroupedListStyleVQo_GG_Qo__Qo__A_016DataSourceInvokeC0VSgQo__Qo_HO
-+ _objc_msgSend$originalRequest
-+ _objc_msgSend$response
-+ _objc_msgSend$taskIdentifier
 + _symbolic $s19UnifiedMessagingKit20DataSourceDefinitionP
 + _symbolic $s25UnifiedMessagingKitJSCore14ContentStoringP
 + _symbolic $s25UnifiedMessagingKitJSCore18ContentDownloadingP

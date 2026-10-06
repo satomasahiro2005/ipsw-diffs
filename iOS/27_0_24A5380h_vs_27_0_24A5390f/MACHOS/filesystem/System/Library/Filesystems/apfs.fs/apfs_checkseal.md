@@ -2,33 +2,29 @@
 
 > `/System/Library/Filesystems/apfs.fs/apfs_checkseal`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4fb80` | `0x4fd84` | **`+0x204`** |
+| `__TEXT.__cstring` | `0x10016` | `0x10104` | **`+0xee`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -3283.0.9.502.1
--  __TEXT.__text: 0x4fb80
 +3283.0.13.0.0
-+  __TEXT.__text: 0x4fd84
-   __TEXT.__auth_stubs: 0x760
-   __TEXT.__const: 0x4c0
--  __TEXT.__cstring: 0x10016
-+  __TEXT.__cstring: 0x10104
-   __TEXT.__unwind_info: 0x900
-   __DATA_CONST.__const: 0x7b8
-   __DATA_CONST.__cfstring: 0x160
 
-   - /usr/lib/libutil.dylib
-   Functions: 747
-   Symbols:   133
 -  CStrings:  1290
 +  CStrings:  1294
- 
 Functions:
 ~ sub_100004bf8 : 596 -> 640
 ~ sub_10001d1c8 -> sub_10001d1f4 : 520 -> 508

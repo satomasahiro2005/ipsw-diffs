@@ -2,19 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/DesktopServicesUI.framework/DesktopServicesUI`
 
-```diff
+### Section Size Changes
 
- 1857.0.0.0.0
--  __TEXT.__text: 0x6cb90
-+  __TEXT.__text: 0x6cbbc
-   __TEXT.__objc_methlist: 0x258
-   __TEXT.__const: 0x4128
-   __TEXT.__gcc_except_tab: 0x28
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6cb90` | `0x6cbbc` | **`+0x2c`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_25ec248fc -> sub_25f91f8fc : 428 -> 436
-~ sub_25ec24c3c -> sub_25f91fc44 : 416 -> 424
-~ sub_25ec40260 -> sub_25f93b270 : 252 -> 260
-~ sub_25ec40484 -> sub_25f93b49c : 360 -> 372
-~ sub_25ec40a64 -> sub_25f93ba88 : 4348 -> 4352
-~ sub_25ec7a2ac -> sub_25f9752d4 : 968 -> 972
+~ sub_25eaf38fc -> sub_25f8038fc : 428 -> 436
+~ sub_25eaf3c3c -> sub_25f803c44 : 416 -> 424
+~ sub_25eb0f260 -> sub_25f81f270 : 252 -> 260
+~ sub_25eb0f484 -> sub_25f81f49c : 360 -> 372
+~ sub_25eb0fa64 -> sub_25f81fa88 : 4348 -> 4352
+~ sub_25eb492ac -> sub_25f8592d4 : 968 -> 972
 ```

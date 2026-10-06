@@ -2,42 +2,21 @@
 
 > `/System/Library/Frameworks/Foundation.framework/Foundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc33380` | `0xc33ca0` | **`+0x920`** |
+| `__AUTH_CONST.__auth_got` | `0x5510` | `0x5518` | **`+0x8`** |
+| `__TEXT.__eh_frame` | `0x223ec` | `0x223f4` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x1de18` | `0x1de10` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 5027.0.69.0.0
--  __TEXT.__text: 0xc33380
-+  __TEXT.__text: 0xc33ca0
-   __TEXT.__delay_stubs: 0x800
-   __TEXT.__delay_helper: 0x184
-   __TEXT.__objc_methlist: 0x247ac
-
-   __TEXT.__dof_NSXPCConn: 0x26cc
-   __TEXT.__dof_NSXPCLis0: 0x865
-   __TEXT.__dof_NSProgres: 0x115b
--  __TEXT.__unwind_info: 0x1de18
--  __TEXT.__eh_frame: 0x223ec
-+  __TEXT.__unwind_info: 0x1de10
-+  __TEXT.__eh_frame: 0x223f4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __AUTH_CONST.__objc_intobj: 0x1260
-   __AUTH_CONST.__objc_arrayobj: 0x2238
-   __AUTH_CONST.__objc_dictobj: 0x20a8
--  __AUTH_CONST.__auth_got: 0x5510
-+  __AUTH_CONST.__auth_got: 0x5518
-   __AUTH.__objc_data: 0x79c8
-   __AUTH.__data: 0x6a30
-   __DATA.__objc_ivar: 0x1494
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   Functions: 43696
--  Symbols:   96219
-+  Symbols:   96220
-   CStrings:  7831
- 
+-  Symbols:   91860
++  Symbols:   91861
 Symbols:
 + _swift_retain_x12
 + _swift_retain_x13

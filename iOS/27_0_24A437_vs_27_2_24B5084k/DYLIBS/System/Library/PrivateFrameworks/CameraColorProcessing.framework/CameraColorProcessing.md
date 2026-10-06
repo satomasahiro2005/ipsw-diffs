@@ -2,58 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/CameraColorProcessing.framework/CameraColorProcessing`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x65b08` | `0x8aa54` | **`+0x24f4c`** |
+| `__TEXT.__oslogstring` | `0x280a` | `0xb989` | **`+0x917f`** |
+| `__TEXT.__cstring` | `0x54b9` | `0x94a0` | **`+0x3fe7`** |
+| `__TEXT.__gcc_except_tab` | `0x3f0c` | `0x50cc` | **`+0x11c0`** |
+| `__AUTH_CONST.__cfstring` | `0x2cc0` | `0x3080` | **`+0x3c0`** |
+| `__TEXT.__unwind_info` | `0xae8` | `0xc50` | **`+0x168`** |
+| `__TEXT.__const` | `0x6a84` | `0x6ab4` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x528` | `0x540` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x4b0` | `0x4b8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -764.22.13.0.0
--  __TEXT.__text: 0x65494
 +764.40.4.122.1
-+  __TEXT.__text: 0x8a1a0
-   __TEXT.__objc_methlist: 0x1fa4
--  __TEXT.__const: 0x6a84
--  __TEXT.__gcc_except_tab: 0x3f0c
--  __TEXT.__cstring: 0x54b9
-+  __TEXT.__const: 0x6ab4
-+  __TEXT.__gcc_except_tab: 0x50cc
-+  __TEXT.__cstring: 0x94a0
-   __TEXT.__dlopen_cstrs: 0xf0
--  __TEXT.__oslogstring: 0x280a
--  __TEXT.__unwind_info: 0xf20
-+  __TEXT.__oslogstring: 0xb989
-+  __TEXT.__unwind_info: 0x1050
-   __TEXT.__eh_frame: 0xa0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0xf58
-   __DATA_CONST.__objc_superrefs: 0xa8
-   __DATA_CONST.__objc_arraydata: 0x3b0
--  __DATA_CONST.__got: 0x4b0
-+  __DATA_CONST.__got: 0x4b8
-   __AUTH_CONST.__const: 0x4b8
--  __AUTH_CONST.__cfstring: 0x2cc0
-+  __AUTH_CONST.__cfstring: 0x3080
-   __AUTH_CONST.__objc_const: 0x4d00
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__objc_intobj: 0x2e8
-   __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x528
-+  __AUTH_CONST.__auth_got: 0x540
-   __DATA.__objc_ivar: 0x490
-   __DATA.__data: 0xcb8
-   __DATA_DIRTY.__objc_data: 0x820
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1152
--  Symbols:   2248
+-  Symbols:   1856
 -  CStrings:  991
 +  Functions: 1365
-+  Symbols:   2316
++  Symbols:   1922
 +  CStrings:  1896
- 
 Symbols:
 + GCC_except_table19
 + GCC_except_table28
@@ -122,8 +97,6 @@ Symbols:
 + ___clang_call_terminate
 + ___cxa_begin_catch
 + _e5rt_get_last_error_message
-+ _objc_msgSend$compareAWBMetadata:withReference:
-+ _objc_msgSend$extractAWBMetadataFromRawMetadata:toDriverInput:
 + _objc_release_x9
 - _FigSignalErrorAtGM
 - _objc_retain_x28

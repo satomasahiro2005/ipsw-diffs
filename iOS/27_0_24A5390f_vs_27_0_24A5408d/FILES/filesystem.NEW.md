@@ -1,4 +1,4 @@
-## filesystem — NEW (5781)
+## filesystem — NEW (5778)
 
 - `/Applications/Coverage Details.app/Library/SharedWebCredentials/account.apple.com.json`
 - `/Applications/Preferences.app/Do-not-translate.loctable`
@@ -1776,9 +1776,6 @@
 - `/System/Library/PrivateFrameworks/AccessibilitySharedSupport.framework/DrillOut.aiff`
 - `/System/Library/PrivateFrameworks/AccessibilitySharedSupport.framework/Metadata.generativefunctions/n8ROveKHLH0JfrPMTKxaNuNfBek.`
 - `/System/Library/PrivateFrameworks/AccessibilitySharedUISupport.framework/default.metallib`
-- `/System/Library/PrivateFrameworks/AppleDepth.framework/MLModels/Mona-OS26/Compiled-H18-d23-v159-v53-v54-v57/build_config.plist`
-- `/System/Library/PrivateFrameworks/AppleDepth.framework/MLModels/Mona-OS26/Compiled-H18-d23-v159-v53-v54-v57/model.bundle/H18.bundle/H18.e5`
-- `/System/Library/PrivateFrameworks/AppleDepth.framework/MLModels/Mona-OS26/Compiled-H18-d23-v159-v53-v54-v57/model.bundle/H18.bundle/main_height576_width768/main_ane/model.hwx`
 - `/System/Library/PrivateFrameworks/AppleDepth.framework/MLModels/Mona-OS26/model.json`
 - `/System/Library/PrivateFrameworks/AskToPeopleBridge.framework/Info.plist`
 - `/System/Library/PrivateFrameworks/AskToPeopleBridge.framework/Localizable.loctable`

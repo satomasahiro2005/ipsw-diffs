@@ -2,125 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/CoreBrightness.framework/CoreBrightness`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1681ec` | `0x16a888` | **`+0x269c`** |
+| `__AUTH.__objc_data` | `0x1630` | `0x2630` | **`+0x1000`** |
+| `__DATA_DIRTY.__objc_data` | `0x3238` | `0x2238` | **`-0x1000`** |
+| `__TEXT.__oslogstring` | `0x18fed` | `0x1963d` | **`+0x650`** |
+| `__AUTH_CONST.__objc_const` | `0x331f0` | `0x334e0` | **`+0x2f0`** |
+| `__TEXT.__cstring` | `0xcdf5` | `0xcb1a` | **`-0x2db`** |
+| `__DATA_DIRTY.__data` | `0x318` | `0x4e8` | **`+0x1d0`** |
+| `__AUTH.__data` | `0x7f0` | `0x640` | **`-0x1b0`** |
+| `__TEXT.__objc_methlist` | `0xcf0c` | `0xd08c` | **`+0x180`** |
+| `__AUTH_CONST.__cfstring` | `0xe260` | `0xe380` | **`+0x120`** |
+| `__DATA_CONST.__objc_selrefs` | `0x57b8` | `0x5898` | **`+0xe0`** |
+| `__DATA_CONST.__got` | `0x710` | `0x7c0` | **`+0xb0`** |
+| `__TEXT.__unwind_info` | `0x54f0` | `0x5580` | **`+0x90`** |
+| `__DATA.__data` | `0x2eaf0` | `0x2eb78` | **`+0x88`** |
+| `__AUTH_CONST.__const` | `0x3d90` | `0x3dc8` | **`+0x38`** |
+| `__DATA.__bss` | `0x6690` | `0x66c0` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x2e98` | `0x2ec0` | **`+0x28`** |
+| `__DATA.__objc_ivar` | `0x16c4` | `0x16e0` | **`+0x1c`** |
+| `__DATA_DIRTY.__bss` | `0x90` | `0xa0` | **`+0x10`** |
+| `__TEXT.__const` | `0x16a08` | `0x169f8` | **`-0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x2758` | `0x2768` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0xa4e` | `0xa44` | **`-0xa`** |
+| `__DATA_CONST.__objc_protolist` | `0x360` | `0x368` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0xeb5` | `0xeb0` | **`-0x5`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1681ec
--  __TEXT.__objc_methlist: 0xcf0c
--  __TEXT.__cstring: 0xcdf5
--  __TEXT.__const: 0x16a08
--  __TEXT.__oslogstring: 0x18fed
--  __TEXT.__gcc_except_tab: 0x2758
-+  __TEXT.__text: 0x16a888
-+  __TEXT.__objc_methlist: 0xd08c
-+  __TEXT.__cstring: 0xcb1a
-+  __TEXT.__const: 0x169f8
-+  __TEXT.__oslogstring: 0x1963d
-+  __TEXT.__gcc_except_tab: 0x2768
-   __TEXT.__dlopen_cstrs: 0x1d5
--  __TEXT.__swift5_typeref: 0xeb5
-+  __TEXT.__swift5_typeref: 0xeb0
-   __TEXT.__constg_swiftt: 0xc2c
-   __TEXT.__swift5_builtin: 0xdc
--  __TEXT.__swift5_reflstr: 0xa4e
-+  __TEXT.__swift5_reflstr: 0xa44
-   __TEXT.__swift5_fieldmd: 0x1018
-   __TEXT.__swift5_assocty: 0x288
-   __TEXT.__swift5_proto: 0x308
+-2300.0.0.502.1
++2300.0.10.0.1
 
-   __TEXT.__swift5_capture: 0x3d0
-   __TEXT.__swift5_mpenum: 0x28
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__unwind_info: 0x54f0
-+  __TEXT.__unwind_info: 0x5580
-   __TEXT.__eh_frame: 0xb90
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2e98
-+  __DATA_CONST.__const: 0x2ec0
-   __DATA_CONST.__objc_classlist: 0x6f0
-   __DATA_CONST.__objc_catlist: 0x10
--  __DATA_CONST.__objc_protolist: 0x360
-+  __DATA_CONST.__objc_protolist: 0x368
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x57b8
-+  __DATA_CONST.__objc_selrefs: 0x5898
-   __DATA_CONST.__objc_protorefs: 0x138
-   __DATA_CONST.__objc_superrefs: 0x5b8
-   __DATA_CONST.__objc_arraydata: 0xcb8
--  __DATA_CONST.__got: 0x710
--  __AUTH_CONST.__const: 0x3d90
--  __AUTH_CONST.__cfstring: 0xe260
--  __AUTH_CONST.__objc_const: 0x331f0
-+  __DATA_CONST.__got: 0x7c0
-+  __AUTH_CONST.__const: 0x3dc8
-+  __AUTH_CONST.__cfstring: 0xe380
-+  __AUTH_CONST.__objc_const: 0x334e0
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_doubleobj: 0x70
-   __AUTH_CONST.__objc_intobj: 0xd80
-
-   __AUTH_CONST.__objc_dictobj: 0x550
-   __AUTH_CONST.__objc_floatobj: 0x1a0
-   __AUTH_CONST.__auth_got: 0x1370
--  __AUTH.__objc_data: 0x1630
--  __AUTH.__data: 0x7f0
--  __DATA.__objc_ivar: 0x16c4
--  __DATA.__data: 0x2eaf0
--  __DATA.__bss: 0x6690
-+  __AUTH.__objc_data: 0x2630
-+  __AUTH.__data: 0x640
-+  __DATA.__objc_ivar: 0x16e0
-+  __DATA.__data: 0x2eb78
-+  __DATA.__bss: 0x66c0
-   __DATA.__common: 0x10
--  __DATA_DIRTY.__objc_data: 0x3238
--  __DATA_DIRTY.__data: 0x318
-+  __DATA_DIRTY.__objc_data: 0x2238
-+  __DATA_DIRTY.__data: 0x4e8
-   __DATA_DIRTY.__common: 0x10
--  __DATA_DIRTY.__bss: 0x90
-+  __DATA_DIRTY.__bss: 0xa0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMotion.framework/CoreMotion
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8593
--  Symbols:   21908
--  CStrings:  6461
+-  Symbols:   10038
+-  CStrings:  4647
 +  Functions: 8675
-+  Symbols:   22106
-+  CStrings:  6493
- 
-Sections:
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
++  Symbols:   10075
++  CStrings:  4670
 Symbols:
 + +[CBDisplayHandle handleForUniqueID:]
 + +[CBDisplayHandle handleWithDisplayID:andUUID:andUniqueID:]
@@ -202,41 +125,6 @@ Symbols:
 + ____CFXLogHandle_block_invoke
 + _binFromAb
 + _kCBKeyDisplayUniqueID
-+ _objc_msgSend$acknowledgeEvent:
-+ _objc_msgSend$checkSensorEnablementConditions
-+ _objc_msgSend$componentsJoinedByString:
-+ _objc_msgSend$copyDescription
-+ _objc_msgSend$createConfigurationFromConfigurationProvider:withFallback:
-+ _objc_msgSend$findContrastIndicatorNodeForContext:
-+ _objc_msgSend$getDCPRoleIDFromContext:
-+ _objc_msgSend$getOcclusionDrivesGrimaldi
-+ _objc_msgSend$handleForUniqueID:
-+ _objc_msgSend$initWithContext:min:max:maxBoost:andFrameInfoProvider:
-+ _objc_msgSend$initWithDisplayID:andUUID:andUniqueID:
-+ _objc_msgSend$initWithUniqueID:
-+ _objc_msgSend$initialiseLimits:
-+ _objc_msgSend$isAODDisabled
-+ _objc_msgSend$isFactorDisabled
-+ _objc_msgSend$isFrontLuxSatisfied
-+ _objc_msgSend$isGrimaldiLuxInUse
-+ _objc_msgSend$isOtherALSDisabled
-+ _objc_msgSend$isPropertyDisabled
-+ _objc_msgSend$newColorSampleConditionWeightedForServices:
-+ _objc_msgSend$newColorSampleLogWeightedForServices:
-+ _objc_msgSend$newColorSampleWinnerTakesAllForServices:
-+ _objc_msgSend$null
-+ _objc_msgSend$readerWithService:andPlane:
-+ _objc_msgSend$requestBrightnessTransactionForDisplayUUID:builtIn:
-+ _objc_msgSend$selectedServices
-+ _objc_msgSend$sensorIsSampling
-+ _objc_msgSend$setAodDisabled:
-+ _objc_msgSend$setFactorDisabled:
-+ _objc_msgSend$setFrontLux:
-+ _objc_msgSend$setGrimaldiLuxInUse:
-+ _objc_msgSend$setOtherALSDisabled:
-+ _objc_msgSend$setPropertyDisabled:
-+ _objc_msgSend$shouldUseRLux:rLux:inUse:
-+ _objc_msgSend$uniqueId
 + _snprintf
 + _strcmp
 - +[CBHandle globalHandle]
@@ -281,19 +169,6 @@ Symbols:
 - ___cxa_atexit
 - ___cxa_guard_abort
 - _get_type_metadata 15Synchronization5MutexVySo9CPMSAgentCG noncopyable
-- _objc_msgSend$acknowledgeHIDEvent:from:
-- _objc_msgSend$checkSensorEnablementConditions:
-- _objc_msgSend$evaluateSamplingFrequencyWithLux:andCap:
-- _objc_msgSend$getDCPRoleIDFromString
-- _objc_msgSend$initGlobal
-- _objc_msgSend$initialiseLimits
-- _objc_msgSend$newColorSampleConditionWeighted
-- _objc_msgSend$newColorSampleLogWeighted
-- _objc_msgSend$newColorSampleWinnerTakesAll
-- _objc_msgSend$setProperty:forKey:error:
-- _objc_msgSend$shouldUseRLux:rLux:
-- _objc_msgSend$shouldUseRearLuxFrontLux:rearLux:andCap:
-- _objc_msgSend$startSampling
 - _swift_runtimeSupportsNoncopyableTypes
 - _swift_willThrowTypedImpl
 - _syslog
@@ -339,5 +214,4 @@ CStrings:
 - "com.apple.CoreBrightness.CBALSSelectionPolicy.%d"
 - "starting"
 - "stopping"
-
 ```

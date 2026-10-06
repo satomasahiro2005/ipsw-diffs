@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/SwiftUITracingSupport.framework/SwiftUITracingSupport`
 
-```diff
+### Section Size Changes
 
- 87.0.0.0.0
--  __TEXT.__text: 0x35fcc0
-+  __TEXT.__text: 0x35fcd0
-   __TEXT.__objc_methlist: 0x144
-   __TEXT.__const: 0x1cc78
-   __TEXT.__swift5_typeref: 0xa1f4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x367e64` | `0x367e74` | **`+0x10`** |
+
+### Other Changes
+
+```text
 Functions:
-~ _$s21SwiftUITracingSupport4HostC19onBeginTracing_syncyySo13OS_xpc_object_pF : 2308 -> 2316
+~ _$s21SwiftUITracingSupport4HostC19onBeginTracing_syncyySo13OS_xpc_object_pF : 2340 -> 2348
 ~ _$s21SwiftUITracingSupport6ClientC19onBeginTracing_syncyySo13OS_xpc_object_pF : 712 -> 720
 ```

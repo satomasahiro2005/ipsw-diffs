@@ -2,33 +2,34 @@
 
 > `/System/Library/ScreenReader/BrailleTables/BrailleNBSC.brailletable/BrailleNBSC`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__objc_methlist`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x140f8` | `0x1419c` | **`+0xa4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
 - `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__init_offsets`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 16.0.0.0.0
--  __TEXT.__text: 0x140f8
-+  __TEXT.__text: 0x1419c
-   __TEXT.__auth_stubs: 0x400
-   __TEXT.__objc_stubs: 0x320
-   __TEXT.__init_offsets: 0x4
+```text
 Functions:
 ~ __ZN5ktoau10SelectListEPwS0_ : 2308 -> 2352
 ~ __ZN5ktoau16SelectSetubiListEPwS0_ : 576 -> 604

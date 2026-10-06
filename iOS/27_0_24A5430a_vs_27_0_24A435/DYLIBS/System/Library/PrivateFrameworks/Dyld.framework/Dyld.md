@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/Dyld.framework/Dyld`
 
-```diff
+### Section Size Changes
 
- 27062.0.0.0.0
--  __TEXT.__text: 0x51de4
-+  __TEXT.__text: 0x51e98
-   __TEXT.__objc_methlist: 0x6ac
-   __TEXT.__const: 0x34b8
-   __TEXT.__swift5_typeref: 0xd57
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x51de4` | `0x51e98` | **`+0xb4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_19e3a125c -> sub_19e46225c : 1804 -> 1812
 ~ sub_19e3a3640 -> sub_19e464648 : 792 -> 812

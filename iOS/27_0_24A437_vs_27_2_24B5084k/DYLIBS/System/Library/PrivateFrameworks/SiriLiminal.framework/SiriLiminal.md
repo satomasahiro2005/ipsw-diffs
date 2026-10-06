@@ -2,45 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/SiriLiminal.framework/SiriLiminal`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x56ed0` | `0x57780` | **`+0x8b0`** |
+| `__TEXT.__cstring` | `0x58f9` | `0x5abe` | **`+0x1c5`** |
+| `__TEXT.__gcc_except_tab` | `0x42a0` | `0x4328` | **`+0x88`** |
+| `__TEXT.__unwind_info` | `0x20a0` | `0x20b0` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0xe40` | `0xe48` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x1310` | `0x1318` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.70.47.11.1
--  __TEXT.__text: 0x556cc
--  __TEXT.__objc_methlist: 0x1310
 +3605.23.1.0.0
-+  __TEXT.__text: 0x55f5c
-+  __TEXT.__objc_methlist: 0x1318
-   __TEXT.__const: 0xdb0
--  __TEXT.__cstring: 0x58f9
--  __TEXT.__gcc_except_tab: 0x42a0
-+  __TEXT.__cstring: 0x5abe
-+  __TEXT.__gcc_except_tab: 0x4328
-   __TEXT.__oslogstring: 0xdec
--  __TEXT.__unwind_info: 0x2330
-+  __TEXT.__unwind_info: 0x2340
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0xe40
-+  __DATA_CONST.__objc_selrefs: 0xe48
-   __DATA_CONST.__objc_superrefs: 0xb8
-   __DATA_CONST.__objc_arraydata: 0x68
-   __DATA_CONST.__got: 0x250
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1629
--  Symbols:   2985
+-  Symbols:   2701
 -  CStrings:  668
 +  Functions: 1632
-+  Symbols:   2991
++  Symbols:   2707
 +  CStrings:  678
- 
 Symbols:
 + -[SLNCThresholdConfiguration initWithMitigationAsset:]
 + -[SLUresMitigator initWithConfig:bnnsIrPath:ncThresholdConfiguration:error:]
@@ -74,7 +59,6 @@ Symbols:
 + __ZTSNSt3__110__function6__baseIFvNS_17basic_string_viewIcNS_11char_traitsIcEEEEPNS_6vectorINS_4pairIS5_iEENS_9allocatorIS8_EEEEiEEE
 + __ZTSNSt3__110__function6__funcIZNK13sentencepiece3bpe5Model12SampleEncodeENS_17basic_string_viewIcNS_11char_traitsIcEEEEfE3$_0FvS8_PNS_6vectorINS_4pairIS8_iEENS_9allocatorISC_EEEEiEEE
 + __ZTVNSt3__110__function6__funcIZNK13sentencepiece3bpe5Model12SampleEncodeENS_17basic_string_viewIcNS_11char_traitsIcEEEEfE3$_0FvS8_PNS_6vectorINS_4pairIS8_iEENS_9allocatorISC_EEEEiEEE
-+ _objc_msgSend$initWithConfig:bnnsIrPath:ncThresholdConfiguration:error:
 - -[SLNCThresholdConfiguration initWithMitigationConfiguration:]
 - GCC_except_table111
 - GCC_except_table120
@@ -101,7 +85,6 @@ Symbols:
 - __ZTSNSt3__110__function6__baseIFvNS_17basic_string_viewIcNS_11char_traitsIcEEEEPNS_6vectorINS_4pairIS5_iEENS_9allocatorIS8_EEEEEEE
 - __ZTSNSt3__110__function6__funcIZNK13sentencepiece3bpe5Model12SampleEncodeENS_17basic_string_viewIcNS_11char_traitsIcEEEEfE3$_0FvS8_PNS_6vectorINS_4pairIS8_iEENS_9allocatorISC_EEEEEEE
 - __ZTVNSt3__110__function6__funcIZNK13sentencepiece3bpe5Model12SampleEncodeENS_17basic_string_viewIcNS_11char_traitsIcEEEEfE3$_0FvS8_PNS_6vectorINS_4pairIS8_iEENS_9allocatorISC_EEEEEEE
-- _objc_msgSend$initWithConfig:bnnsIrPath:error:
 CStrings:
 + "!pieces_blob.empty()"
 + "(piece_offsets_[i]) < (pieces_blob.size())"

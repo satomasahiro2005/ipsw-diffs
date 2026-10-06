@@ -2,81 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/ShortcutsLanguage.framework/ShortcutsLanguage`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x141b70` | `0x14e49c` | **`+0xc92c`** |
+| `__AUTH_CONST.__const` | `0x6540` | `0x6118` | **`-0x428`** |
+| `__TEXT.__swift5_capture` | `0x2a08` | `0x262c` | **`-0x3dc`** |
+| `__TEXT.__cstring` | `0x8126` | `0x8356` | **`+0x230`** |
+| `__AUTH.__data` | `0x14c8` | `0x16a8` | **`+0x1e0`** |
+| `__TEXT.__eh_frame` | `0x6f88` | `0x70c8` | **`+0x140`** |
+| `__TEXT.__const` | `0x77b49` | `0x77a49` | **`-0x100`** |
+| `__TEXT.__swift5_reflstr` | `0x336d` | `0x345d` | **`+0xf0`** |
+| `__DATA.__data` | `0x1bf0` | `0x1ca8` | **`+0xb8`** |
+| `__TEXT.__unwind_info` | `0x39e0` | `0x3a90` | **`+0xb0`** |
+| `__TEXT.__swift5_typeref` | `0x1a6a` | `0x1b00` | **`+0x96`** |
+| `__AUTH_CONST.__auth_got` | `0x12b0` | `0x1320` | **`+0x70`** |
+| `__TEXT.__swift5_fieldmd` | `0x2d4c` | `0x2dac` | **`+0x60`** |
+| `__DATA_CONST.__got` | `0x910` | `0x958` | **`+0x48`** |
+| `__AUTH_CONST.__objc_const` | `0x1b28` | `0x1b68` | **`+0x40`** |
+| `__TEXT.__constg_swiftt` | `0x199c` | `0x19d8` | **`+0x3c`** |
+| `__TEXT.__swift5_builtin` | `0x1e0` | `0x1b8` | **`-0x28`** |
+| `__TEXT.__swift5_mpenum` | `0x1c0` | `0x1a4` | **`-0x1c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x548` | `0x558` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -5034.0.12.100.0
--  __TEXT.__text: 0x141b70
 +5037.103.100.0.0
-+  __TEXT.__text: 0x14e49c
-   __TEXT.__objc_methlist: 0x468
--  __TEXT.__const: 0x77b49
--  __TEXT.__swift5_typeref: 0x1a6a
--  __TEXT.__swift5_fieldmd: 0x2d4c
--  __TEXT.__constg_swiftt: 0x199c
--  __TEXT.__swift5_builtin: 0x1e0
--  __TEXT.__swift5_reflstr: 0x336d
-+  __TEXT.__const: 0x77a49
-+  __TEXT.__swift5_typeref: 0x1b00
-+  __TEXT.__swift5_fieldmd: 0x2dac
-+  __TEXT.__constg_swiftt: 0x19d8
-+  __TEXT.__swift5_builtin: 0x1b8
-+  __TEXT.__swift5_reflstr: 0x345d
-   __TEXT.__swift5_assocty: 0x240
-   __TEXT.__swift5_protos: 0x48
-   __TEXT.__swift5_proto: 0x678
-   __TEXT.__swift5_types: 0x210
--  __TEXT.__cstring: 0x8126
-+  __TEXT.__cstring: 0x8356
-   __TEXT.__swift_as_entry: 0x138
-   __TEXT.__swift_as_ret: 0x184
-   __TEXT.__swift_as_cont: 0x3e8
--  __TEXT.__swift5_capture: 0x2a08
-+  __TEXT.__swift5_capture: 0x262c
-   __TEXT.__oslogstring: 0xc0
--  __TEXT.__swift5_mpenum: 0x1c0
--  __TEXT.__unwind_info: 0x39e0
--  __TEXT.__eh_frame: 0x6f88
-+  __TEXT.__swift5_mpenum: 0x1a4
-+  __TEXT.__unwind_info: 0x3a90
-+  __TEXT.__eh_frame: 0x70c8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x80
-   __DATA_CONST.__objc_protolist: 0x90
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x548
-+  __DATA_CONST.__objc_selrefs: 0x558
-   __DATA_CONST.__objc_protorefs: 0x48
--  __DATA_CONST.__got: 0x910
--  __AUTH_CONST.__const: 0x6540
-+  __DATA_CONST.__got: 0x958
-+  __AUTH_CONST.__const: 0x6118
-   __AUTH_CONST.__cfstring: 0x2a0
--  __AUTH_CONST.__objc_const: 0x1b28
--  __AUTH_CONST.__auth_got: 0x12b0
-+  __AUTH_CONST.__objc_const: 0x1b68
-+  __AUTH_CONST.__auth_got: 0x1320
-   __AUTH.__objc_data: 0x110
--  __AUTH.__data: 0x14c8
--  __DATA.__data: 0x1bf0
-+  __AUTH.__data: 0x16a8
-+  __DATA.__data: 0x1ca8
-   __DATA.__bss: 0xc130
-   __DATA.__common: 0x40
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6529
--  Symbols:   1928
+-  Symbols:   1801
 -  CStrings:  1006
 +  Functions: 6605
-+  Symbols:   1946
++  Symbols:   1817
 +  CStrings:  1016
- 
 Symbols:
 + _OBJC_CLASS_$_WFTriggerInputVariable
 + _OUTLINED_FUNCTION_383
@@ -93,8 +55,6 @@ Symbols:
 + ___swift_exist.box.addr_destructor.288Tm
 + ___swift_exist.box.addr_destructor.55Tm
 + ___swift_exist.box.addr_destructor.91Tm
-+ _objc_msgSend$initWithVariableProvider:triggerIdentifier:aggrandizements:
-+ _objc_msgSend$supportsCoercion
 + _swift_cvw_initEnumMetadataMultiPayloadWithLayoutString
 + _swift_cvw_multiPayloadEnumGeneric_destructiveInjectEnumTag
 + _swift_cvw_multiPayloadEnumGeneric_getEnumTag

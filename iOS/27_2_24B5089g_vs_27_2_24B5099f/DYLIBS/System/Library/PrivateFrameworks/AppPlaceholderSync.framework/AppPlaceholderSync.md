@@ -2,32 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/AppPlaceholderSync.framework/AppPlaceholderSync`
 
-```diff
+### Section Size Changes
 
- 54.1.1.0.0
--  __TEXT.__text: 0x2905c
-+  __TEXT.__text: 0x29080
-   __TEXT.__objc_methlist: 0x2c
-   __TEXT.__const: 0x1398
-   __TEXT.__swift5_typeref: 0x6ca
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x7a0` | `0x720` | **`-0x80`** |
+| `__DATA_DIRTY.__bss` | `0xd00` | `0xd80` | **`+0x80`** |
+| `__TEXT.__eh_frame` | `0x5d0` | `0x5f8` | **`+0x28`** |
+| `__TEXT.__text` | `0x2a430` | `0x2a454` | **`+0x24`** |
+| `__TEXT.__unwind_info` | `0x5a0` | `0x5a8` | **`+0x8`** |
 
-   __TEXT.__swift_as_ret: 0x8
-   __TEXT.__swift_as_cont: 0x8
-   __TEXT.__unwind_info: 0x7b0
--  __TEXT.__eh_frame: 0x5d0
-+  __TEXT.__eh_frame: 0x5f8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+### Other Changes
 
-   __DATA_DIRTY.__objc_data: 0x140
-   __DATA_DIRTY.__data: 0xbd0
-   __DATA_DIRTY.__common: 0x68
--  __DATA_DIRTY.__bss: 0xd00
-+  __DATA_DIRTY.__bss: 0xd80
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight
+```text
 Functions:
-~ sub_2276d2b0c -> sub_22692ab0c : 32 -> 68
+~ sub_229d8ae10 -> sub_22900be10 : 32 -> 68
 ```

@@ -2,14 +2,16 @@
 
 > `/System/Library/UserNotifications/Bundles/com.apple.ScreenTimeEnabledNotifications.bundle/com.apple.ScreenTimeEnabledNotifications`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x58` | `0x60` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -649.0.0.0.0
 +655.0.101.0.0
-   __TEXT.__text: 0x0
--  __TEXT.__const: 0x58
-+  __TEXT.__const: 0x60
-   - /usr/lib/libSystem.B.dylib
-   Functions: 0
-   Symbols:   0
 ```

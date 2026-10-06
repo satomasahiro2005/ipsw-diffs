@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/ManagedSettings.framework/ManagedSettings`
 
-```diff
+### Section Size Changes
 
- 304.2.7.0.0
--  __TEXT.__text: 0xc1940
-+  __TEXT.__text: 0xc19dc
-   __TEXT.__objc_methlist: 0x4b4
-   __TEXT.__const: 0x8278
-   __TEXT.__cstring: 0x25c2
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc1940` | `0xc19dc` | **`+0x9c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1db6b5890 -> sub_1dbd3b890 : 944 -> 956
 ~ sub_1db6b6df8 -> sub_1dbd3ce04 : 1136 -> 1140

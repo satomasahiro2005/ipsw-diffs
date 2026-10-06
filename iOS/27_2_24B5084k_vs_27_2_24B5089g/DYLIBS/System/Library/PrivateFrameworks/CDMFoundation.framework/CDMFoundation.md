@@ -2,66 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/CDMFoundation.framework/CDMFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x28b1a4` | `0x28b290` | **`+0xec`** |
+| `__AUTH_CONST.__cfstring` | `0x8660` | `0x86e0` | **`+0x80`** |
+| `__TEXT.__cstring` | `0x1c783` | `0x1c7c0` | **`+0x3d`** |
+| `__DATA_CONST.__const` | `0x1f08` | `0x1f28` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5500` | `0x5510` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x8cd8` | `0x8ce0` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x80f8` | `0x8100` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3605.16.1.0.0
--  __TEXT.__text: 0x272d8c
--  __TEXT.__objc_methlist: 0x8cd8
 +3605.18.1.0.0
-+  __TEXT.__text: 0x272e78
-+  __TEXT.__objc_methlist: 0x8ce0
-   __TEXT.__const: 0xd388
-   __TEXT.__swift5_typeref: 0x423c
-   __TEXT.__swift5_fieldmd: 0x3d80
-   __TEXT.__constg_swiftt: 0x55d4
-   __TEXT.__swift5_protos: 0x98
--  __TEXT.__cstring: 0x1c783
-+  __TEXT.__cstring: 0x1c7c0
-   __TEXT.__swift5_types: 0x574
-   __TEXT.__swift5_proto: 0x9ac
-   __TEXT.__swift5_reflstr: 0x306a
 
-   __TEXT.__swift_as_cont: 0x42c
-   __TEXT.__gcc_except_tab: 0xc560
-   __TEXT.__ustring: 0x17c
--  __TEXT.__unwind_info: 0x99d8
-+  __TEXT.__unwind_info: 0x99e0
-   __TEXT.__eh_frame: 0x7a20
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1f08
-+  __DATA_CONST.__const: 0x1f28
-   __DATA_CONST.__objc_classlist: 0x918
-   __DATA_CONST.__objc_catlist: 0x50
-   __DATA_CONST.__objc_protolist: 0x148
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5500
-+  __DATA_CONST.__objc_selrefs: 0x5510
-   __DATA_CONST.__objc_protorefs: 0x88
-   __DATA_CONST.__objc_superrefs: 0x438
-   __DATA_CONST.__objc_arraydata: 0x260
-   __DATA_CONST.__got: 0x26f8
-   __AUTH_CONST.__const: 0xc8c0
--  __AUTH_CONST.__cfstring: 0x8660
-+  __AUTH_CONST.__cfstring: 0x86e0
-   __AUTH_CONST.__objc_const: 0x132b0
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_arrayobj: 0xc0
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 13047
--  Symbols:   11491
+-  Symbols:   9126
 -  CStrings:  4742
 +  Functions: 13048
-+  Symbols:   11498
++  Symbols:   9131
 +  CStrings:  4746
- 
 Symbols:
 + +[CDMSELFLogUtil requesterFlowForConnectionId:]
 + GCC_except_table1013
@@ -180,8 +145,6 @@ Symbols:
 + _kSelfRequesterSkimmer
 + _kSelfRequesterTrustedAgent
 + _kSelfRequesterUSOEntityGenerator
-+ _objc_msgSend$requesterFlowForConnectionId:
-+ _objc_msgSend$setRequesterFlow:
 - GCC_except_table1012
 - GCC_except_table1017
 - GCC_except_table1020
@@ -295,7 +258,7 @@ Symbols:
 - GCC_except_table881
 - GCC_except_table917
 Functions:
-~ +[CDMSELFLogUtil createSELFMetadataWithNlId:andWithTrpId:andWithRequestId:andWithResultCandidateId:andWithConnectionId:] : 560 -> 588
+~ +[CDMSELFLogUtil createSELFMetadataWithNlId:andWithTrpId:andWithRequestId:andWithResultCandidateId:andWithConnectionId:] : 572 -> 600
 + +[CDMSELFLogUtil requesterFlowForConnectionId:]
 CStrings:
 + "FuzzyShortcutMatcher"

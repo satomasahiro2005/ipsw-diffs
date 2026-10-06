@@ -2,42 +2,27 @@
 
 > `com.apple.iokit.IOUSBHostFamily`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x94420` | `0x942b4` | **`-0x16c`** |
+| `__TEXT.__cstring` | `0xa425` | `0xa379` | **`-0xac`** |
+| `__TEXT.__os_log` | `0x86e6` | `0x866a` | **`-0x7c`** |
+| `__TEXT.__const` | `0x2008` | `0x2018` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0xc878` | `0xc880` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__cstring: 0xa425
--  __TEXT.__os_log: 0x86e6
--  __TEXT.__const: 0x2008
--  __TEXT_EXEC.__text: 0x94420
-+  __TEXT.__cstring: 0xa379
-+  __TEXT.__os_log: 0x866a
-+  __TEXT.__const: 0x2018
-+  __TEXT_EXEC.__text: 0x942b4
-   __TEXT_EXEC.__auth_stubs: 0xd40
-   __DATA.__data: 0x1f0
-   __DATA.__common: 0x970
-   __DATA.__bss: 0x10
-   __DATA_CONST.__mod_init_func: 0xf0
-   __DATA_CONST.__mod_term_func: 0xe8
--  __DATA_CONST.__const: 0xc878
-+  __DATA_CONST.__const: 0xc880
-   __DATA_CONST.__kalloc_type: 0x1b80
-   __DATA_CONST.__kalloc_var: 0x280
-   __DATA_CONST.__auth_got: 0x6a0
-   __DATA_CONST.__got: 0x1f0
+-1617.0.1.0.0
 -  Functions: 1972
++1617.0.3.0.0
 +  Functions: 1974
-   Symbols:   0
--  CStrings:  1652
-+  CStrings:  1647
- 
-Sections:
-~ __DATA.__data : content changed
-~ __DATA_CONST.__mod_init_func : content changed
-~ __DATA_CONST.__mod_term_func : content changed
-~ __DATA_CONST.__kalloc_type : content changed
-~ __DATA_CONST.__kalloc_var : content changed
-~ __DATA_CONST.__auth_got : content changed
-~ __DATA_CONST.__got : content changed
+
+-  CStrings:  1153
++  CStrings:  1150
 CStrings:
 + "%s@%s: %s::%s: blocked\n"
 + "121111121222121211211111222222222222222222222222222222222222222222222222222222222222222212121121111122222222222222221211222222222222222222222222222222222222222222222222212111111111222122222222"
@@ -50,5 +35,4 @@ CStrings:
 - "121111121222121211211111222222222222222222222222222222222222222222222222222222222222222212121121111122222222222222221211222222222222222222222222222222222222222222222222212111111111222112222222221212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121211"
 - "initForServiceInTaskWithOptions"
 - "powerStateWillChangeTo_block_invoke"
-
 ```

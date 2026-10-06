@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/NewsUI2.framework/NewsUI2`
 
-```diff
+### Section Size Changes
 
- 5934.3.0.0.0
--  __TEXT.__text: 0x147fc84
-+  __TEXT.__text: 0x147ff30
-   __TEXT.__objc_methlist: 0xd62c
-   __TEXT.__const: 0xd7294
-   __TEXT.__cstring: 0x5b3c8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x147fc84` | `0x147ff30` | **`+0x2ac`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_21e72b790 -> sub_21e72e790 : 508 -> 512
 ~ sub_21e76cd30 -> sub_21e76fd34 : 1104 -> 1100

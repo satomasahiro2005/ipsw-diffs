@@ -2,71 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/CoreRecognition.framework/CoreRecognition`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5b334` | `0x5c1a4` | **`+0xe70`** |
+| `__TEXT.__gcc_except_tab` | `0x87a4` | `0x8938` | **`+0x194`** |
+| `__AUTH_CONST.__cfstring` | `0xfbe0` | `0xfcc0` | **`+0xe0`** |
+| `__AUTH_CONST.__objc_const` | `0x3938` | `0x39c8` | **`+0x90`** |
+| `__DATA_CONST.__objc_arraydata` | `0x3dc0` | `0x3e20` | **`+0x60`** |
+| `__TEXT.__cstring` | `0x4b5f` | `0x4bb9` | **`+0x5a`** |
+| `__AUTH.__objc_data` | `0x7d0` | `0x820` | **`+0x50`** |
+| `__AUTH_CONST.__const` | `0x9b0` | `0x9f0` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x14f0` | `0x1530` | **`+0x40`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x1f8` | `0x228` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2078` | `0x20a0` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0xad0` | `0xaf0` | **`+0x20`** |
+| `__DATA.__bss` | `0x90` | `0xa0` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x23ec` | `0x23fc` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0xd0` | `0xd8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -446.13.100.0.0
--  __TEXT.__text: 0x5a380
--  __TEXT.__objc_methlist: 0x23ec
 +446.13.101.0.0
-+  __TEXT.__text: 0x5b1cc
-+  __TEXT.__objc_methlist: 0x23fc
-   __TEXT.__const: 0x744
--  __TEXT.__cstring: 0x4b5f
-+  __TEXT.__cstring: 0x4bb9
-   __TEXT.__ustring: 0x1282
--  __TEXT.__gcc_except_tab: 0x87a4
-+  __TEXT.__gcc_except_tab: 0x8938
-   __TEXT.__oslogstring: 0x3d6
--  __TEXT.__unwind_info: 0x1658
-+  __TEXT.__unwind_info: 0x1690
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xad0
--  __DATA_CONST.__objc_classlist: 0xd0
-+  __DATA_CONST.__const: 0xaf0
-+  __DATA_CONST.__objc_classlist: 0xd8
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2078
-+  __DATA_CONST.__objc_selrefs: 0x20a0
-   __DATA_CONST.__objc_superrefs: 0x60
--  __DATA_CONST.__objc_arraydata: 0x3dc0
-+  __DATA_CONST.__objc_arraydata: 0x3e20
-   __DATA_CONST.__got: 0x5a0
--  __AUTH_CONST.__const: 0x9b0
--  __AUTH_CONST.__cfstring: 0xfbe0
--  __AUTH_CONST.__objc_const: 0x3938
-+  __AUTH_CONST.__const: 0x9f0
-+  __AUTH_CONST.__cfstring: 0xfcc0
-+  __AUTH_CONST.__objc_const: 0x39c8
-   __AUTH_CONST.__weak_auth_got: 0x38
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__objc_doubleobj: 0x90
--  __AUTH_CONST.__objc_arrayobj: 0x1f8
-+  __AUTH_CONST.__objc_arrayobj: 0x228
-   __AUTH_CONST.__objc_intobj: 0xa8
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x7d0
-+  __AUTH.__objc_data: 0x820
-   __DATA.__objc_ivar: 0x2cc
-   __DATA.__data: 0x240
-   __DATA.__common: 0x60
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1122
--  Symbols:   3287
+-  Symbols:   2330
 -  CStrings:  2127
 +  Functions: 1129
-+  Symbols:   3311
++  Symbols:   2350
 +  CStrings:  2135
- 
 Symbols:
 + +[CRCameraReader hkNumberFeaturesFromFeatures:]
 + -[CRCameraReader previewInputOrientation]
@@ -110,11 +78,6 @@ Symbols:
 + ___isNonNameString_block_invoke
 + _extractCardCodeHKFlat
 + _formatHKCardCode
-+ _objc_msgSend$decimalDigitCharacterSet
-+ _objc_msgSend$hkNumberFeaturesFromFeatures:
-+ _objc_msgSend$previewInputOrientation
-+ _objc_msgSend$rangeOfCharacterFromSet:
-+ _objc_msgSend$stringByAppendingFormat:
 + _objc_release_x2
 - GCC_except_table111
 - GCC_except_table115
@@ -139,7 +102,6 @@ Symbols:
 - GCC_except_table366
 - GCC_except_table369
 - ___block_descriptor_74_ea8_32s40s48s56s_e30_v32?0"CRTextFeature"8Q16^B24ls32l8s40l8s48l8s56l8
-- _objc_msgSend$captureBufferRotationAngle
 CStrings:
 + "%C"
 + "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:293: libc++ Hardening assertion __k != __leftmost failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"

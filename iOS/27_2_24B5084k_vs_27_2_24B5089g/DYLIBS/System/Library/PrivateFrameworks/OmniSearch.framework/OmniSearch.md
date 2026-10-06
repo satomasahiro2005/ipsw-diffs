@@ -2,83 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/OmniSearch.framework/OmniSearch`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x370b0` | `0x36030` | **`-0x1080`** |
+| `__DATA_DIRTY.__bss` | `0x20400` | `0x21480` | **`+0x1080`** |
+| `__DATA_DIRTY.__data` | `0xb690` | `0xc598` | **`+0xf08`** |
+| `__TEXT.__text` | `0x64671c` | `0x647228` | **`+0xb0c`** |
+| `__AUTH.__data` | `0x4070` | `0x3800` | **`-0x870`** |
+| `__DATA.__data` | `0x8b58` | `0x84c0` | **`-0x698`** |
+| `__DATA.__common` | `0x668` | `0x5c8` | **`-0xa0`** |
+| `__DATA_DIRTY.__common` | `0x328` | `0x3c8` | **`+0xa0`** |
+| `__TEXT.__oslogstring` | `0x1a7ae` | `0x1a81e` | **`+0x70`** |
+| `__DATA_DIRTY.__objc_data` | `0x590` | `0x5e8` | **`+0x58`** |
+| `__AUTH.__objc_data` | `0x198` | `0x148` | **`-0x50`** |
+| `__TEXT.__eh_frame` | `0x2477c` | `0x247a4` | **`+0x28`** |
+| `__TEXT.__const` | `0x3acac` | `0x3acd0` | **`+0x24`** |
+| `__AUTH_CONST.__auth_got` | `0x6f80` | `0x6fa0` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x9e2f` | `0x9e4f` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x17b68` | `0x17b88` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0xe0dc` | `0xe0e8` | **`+0xc`** |
+| `__DATA_CONST.__got` | `0x47a8` | `0x47b0` | **`+0x8`** |
+| `__TEXT.__constg_swiftt` | `0xa368` | `0xa370` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0xfe31` | `0xfe32` | **`+0x1`** |
+
+### Other Changes
+
 ```diff
 
 -3605.23.1.1.2
--  __TEXT.__text: 0x609b68
 +3605.25.3.1.1
-+  __TEXT.__text: 0x60a608
-   __TEXT.__objc_methlist: 0x1020
--  __TEXT.__const: 0x3acac
--  __TEXT.__swift5_typeref: 0xfe31
-+  __TEXT.__const: 0x3acd0
-+  __TEXT.__swift5_typeref: 0xfe32
-   __TEXT.__swift5_capture: 0xa70c
-   __TEXT.__cstring: 0x19400
--  __TEXT.__constg_swiftt: 0xa368
--  __TEXT.__swift5_fieldmd: 0xe0dc
-+  __TEXT.__constg_swiftt: 0xa370
-+  __TEXT.__swift5_fieldmd: 0xe0e8
-   __TEXT.__swift5_builtin: 0x294
--  __TEXT.__swift5_reflstr: 0x9e2f
-+  __TEXT.__swift5_reflstr: 0x9e4f
-   __TEXT.__swift5_assocty: 0x2698
-   __TEXT.__swift5_proto: 0x2e68
-   __TEXT.__swift5_types: 0xd08
-   __TEXT.__swift_as_entry: 0xb34
-   __TEXT.__swift_as_ret: 0xc64
--  __TEXT.__oslogstring: 0x1a7ae
-+  __TEXT.__oslogstring: 0x1a81e
-   __TEXT.__swift_as_cont: 0x14c8
-   __TEXT.__swift5_protos: 0x168
-   __TEXT.__swift5_mpenum: 0xdc
--  __TEXT.__unwind_info: 0x1d238
--  __TEXT.__eh_frame: 0x247d4
-+  __TEXT.__unwind_info: 0x1d260
-+  __TEXT.__eh_frame: 0x247fc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x2a00
-   __DATA_CONST.__objc_protorefs: 0xa8
--  __DATA_CONST.__got: 0x47a8
-+  __DATA_CONST.__got: 0x47b0
-   __AUTH_CONST.__const: 0x371c1
-   __AUTH_CONST.__objc_const: 0x6800
--  __AUTH_CONST.__auth_got: 0x6f80
--  __AUTH.__objc_data: 0x198
--  __AUTH.__data: 0x4070
--  __DATA.__data: 0x8b58
--  __DATA.__common: 0x668
--  __DATA_DIRTY.__objc_data: 0x590
--  __DATA_DIRTY.__data: 0xb690
--  __DATA_DIRTY.__bss: 0x20400
--  __DATA_DIRTY.__common: 0x328
-+  __AUTH_CONST.__auth_got: 0x6fa0
-+  __AUTH.__objc_data: 0x148
-+  __AUTH.__data: 0x3800
-+  __DATA.__data: 0x84c0
-+  __DATA.__common: 0x5c8
-+  __DATA_DIRTY.__objc_data: 0x5e8
-+  __DATA_DIRTY.__data: 0xc598
-+  __DATA_DIRTY.__bss: 0x21480
-+  __DATA_DIRTY.__common: 0x3c8
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 44951
--  Symbols:   76762
+-  Functions: 44953
+-  Symbols:   75690
 -  CStrings:  3666
-+  Functions: 44972
-+  Symbols:   76779
++  Functions: 44974
++  Symbols:   75707
 +  CStrings:  3668
- 
 Symbols:
 + _$s10OmniSearch011HybridLocalB5UtilsV25applicationEntityTypeNameSSvgZ
 + _$s10OmniSearch011HybridLocalB5UtilsV25applicationEntityTypeNameSSvpZMV

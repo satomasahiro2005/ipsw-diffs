@@ -2,38 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/ACCBaker.framework/ACCBaker`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x350c4
-+  __TEXT.__text: 0x35160
-   __TEXT.__const: 0x22728
-   __TEXT.__gcc_except_tab: 0x2a04
-   __TEXT.__cstring: 0x60c7
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x350c4` | `0x35160` | **`+0x9c`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2495824c8 -> sub_24dce34c8 : 440 -> 432
-~ sub_249584d88 -> sub_24dce5d80 : 348 -> 324
-~ sub_24958dbd4 -> sub_24dceebb4 : 2024 -> 2016
-~ sub_24958e3bc -> sub_24dcef394 : 4908 -> 4936
-~ sub_249591d28 -> sub_24dcf2d1c : 3388 -> 3360
-~ sub_249592c58 -> sub_24dcf3c30 : 1092 -> 1044
-~ sub_2495a2278 -> sub_24dd03220 : 3056 -> 3048
-~ sub_2495a2fec -> sub_24dd03f8c : 884 -> 872
-~ sub_2495a72d0 -> sub_24dd08264 : 4868 -> 4896
-~ sub_2495a85d8 -> sub_24dd09588 : 396 -> 388
-~ sub_2495a888c -> sub_24dd09834 : 4724 -> 4832
-~ sub_2495a9b00 -> sub_24dd0ab14 : 5068 -> 5096
-~ sub_2495aaecc -> sub_24dd0befc : 4920 -> 5028
-
+~ sub_2494484c8 -> sub_24dba94c8 : 440 -> 432
+~ sub_24944ad88 -> sub_24dbabd80 : 348 -> 324
+~ sub_249453bd4 -> sub_24dbb4bb4 : 2024 -> 2016
+~ sub_2494543bc -> sub_24dbb5394 : 4908 -> 4936
+~ sub_249457d28 -> sub_24dbb8d1c : 3388 -> 3360
+~ sub_249458c58 -> sub_24dbb9c30 : 1092 -> 1044
+~ sub_249468278 -> sub_24dbc9220 : 3056 -> 3048
+~ sub_249468fec -> sub_24dbc9f8c : 884 -> 872
+~ sub_24946d2d0 -> sub_24dbce264 : 4868 -> 4896
+~ sub_24946e5d8 -> sub_24dbcf588 : 396 -> 388
+~ sub_24946e88c -> sub_24dbcf834 : 4724 -> 4832
+~ sub_24946fb00 -> sub_24dbd0b14 : 5068 -> 5096
+~ sub_249470ecc -> sub_24dbd1efc : 4920 -> 5028
 ```

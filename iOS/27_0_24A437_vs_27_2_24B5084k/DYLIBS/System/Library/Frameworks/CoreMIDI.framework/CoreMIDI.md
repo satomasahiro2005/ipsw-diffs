@@ -2,50 +2,33 @@
 
 > `/System/Library/Frameworks/CoreMIDI.framework/CoreMIDI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa5460` | `0xa6270` | **`+0xe10`** |
+| `__DATA.__bss` | `0x11f0` | `0x1390` | **`+0x1a0`** |
+| `__TEXT.__gcc_except_tab` | `0xdfd4` | `0xe164` | **`+0x190`** |
+| `__TEXT.__oslogstring` | `0x2cbc` | `0x2db0` | **`+0xf4`** |
+| `__TEXT.__unwind_info` | `0x4068` | `0x40f0` | **`+0x88`** |
+| `__TEXT.__cstring` | `0x4576` | `0x4563` | **`-0x13`** |
+| `__AUTH_CONST.__const` | `0x3a38` | `0x3a30` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x318` | `0x320` | **`+0x8`** |
+| `__TEXT.__realtime` | `0x183c` | `0x1834` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -333.0.0.0.0
--  __TEXT.__text: 0xa3ddc
--  __TEXT.__realtime: 0x1818
 +333.201.0.0.0
-+  __TEXT.__text: 0xa4c04
-+  __TEXT.__realtime: 0x1810
-   __TEXT.__objc_methlist: 0x15c0
-   __TEXT.__const: 0xa48
-   __TEXT.__dlopen_cstrs: 0x4e
--  __TEXT.__gcc_except_tab: 0xdfd4
--  __TEXT.__cstring: 0x4576
--  __TEXT.__oslogstring: 0x2cbc
--  __TEXT.__unwind_info: 0x4480
-+  __TEXT.__gcc_except_tab: 0xe164
-+  __TEXT.__cstring: 0x4563
-+  __TEXT.__oslogstring: 0x2db0
-+  __TEXT.__unwind_info: 0x4508
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xc10
-   __DATA_CONST.__objc_superrefs: 0x98
--  __DATA_CONST.__got: 0x318
--  __AUTH_CONST.__const: 0x3a38
-+  __DATA_CONST.__got: 0x320
-+  __AUTH_CONST.__const: 0x3a30
-   __AUTH_CONST.__cfstring: 0x1aa0
-   __AUTH_CONST.__objc_const: 0x2680
-   __AUTH_CONST.__weak_auth_got: 0x30
-
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2685
--  Symbols:   5363
+-  Symbols:   5092
 -  CStrings:  1009
 +  Functions: 2699
-+  Symbols:   5387
++  Symbols:   5116
 +  CStrings:  1011
- 
 Symbols:
 + GCC_except_table1000
 + GCC_except_table1001

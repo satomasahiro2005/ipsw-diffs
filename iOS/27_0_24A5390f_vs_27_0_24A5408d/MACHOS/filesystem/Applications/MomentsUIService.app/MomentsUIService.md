@@ -2,37 +2,40 @@
 
 > `/Applications/MomentsUIService.app/MomentsUIService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2903a8` | `0x29038c` | **`-0x1c`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
 - `__TEXT.__const`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_entry`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
 - `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -416.0.0.0.0
--  __TEXT.__text: 0x2903a8
 +417.0.0.0.0
-+  __TEXT.__text: 0x29038c
-   __TEXT.__auth_stubs: 0x4ab0
-   __TEXT.__objc_stubs: 0x9400
-   __TEXT.__objc_methlist: 0x4064
 Symbols:
 + _$s16MomentsUIService29MOSuggestionAssetCacheManagerC05builde9AndReturnD033_CA39EDEF807D759D646E82273DC41013LL_9cacheType10completionyAA0cD9ReferenceC_AA0cD8TileSizeOySo0cD0CyyXlGSgctF04$s16a11UIService29cdef19C08retrieveD3For33_jklmno42LL_9withTypes9cacheType10completionyAA0cD9s28C_SaySo0c6AssetsR0aGSgAA0cD8tU27OySo0cD0CyyXlGSgctFyATcfU0_AOIegg_Tf1nnEn_nTf4nnng_n
 + _$s16MomentsUIService29MOSuggestionAssetCacheManagerC08retrieveD3For33_CA39EDEF807D759D646E82273DC41013LL_9withTypes9cacheType10completionyAA0cD9ReferenceC_SaySo0c6AssetsR0aGSgAA0cD8TileSizeOySo0cD0CyyXlGSgctF04$s16a11UIService29cdef11C17retrieveuh2_9o43Types5queue9cacheType10completionySayAA0cD9t43CG_SaySo0chN0aGSgSo012OS_dispatch_L0CAA0cD8vW40OySaySo0cD0CyyXlGGSgctFyyYbcfU_yAVSgcfU_AjPSayAC0cD22CompletionResultHolderVGz_XxS2iz_XxSayAJGSayASGSgIegg_Tf1nnnEn_n

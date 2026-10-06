@@ -2,72 +2,32 @@
 
 > `/System/Library/Frameworks/SafariServices.framework/SafariServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1856c8` | `0x1857f0` | **`+0x128`** |
+| `__AUTH.__data` | `0x2e0` | `0x2b0` | **`-0x30`** |
+| `__DATA_DIRTY.__data` | `—` | `0x30` | **`+0x30`** |
+| `__AUTH.__objc_data` | `0x5e98` | `0x5ec0` | **`+0x28`** |
+| `__DATA_DIRTY.__objc_data` | `0xb40` | `0xb18` | **`-0x28`** |
+| `__TEXT.__objc_methlist` | `0x1bdbc` | `0x1bde4` | **`+0x28`** |
+| `__AUTH_CONST.__objc_const` | `0x2c700` | `0x2c718` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x12390` | `0x123a8` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x9268` | `0x9280` | **`+0x18`** |
+| `__TEXT.__gcc_except_tab` | `0xfe5c` | `0xfe60` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -625.2.4.1.0
--  __TEXT.__text: 0x17a3d0
--  __TEXT.__objc_methlist: 0x1bdbc
 +625.2.5.10.1
-+  __TEXT.__text: 0x17a4f8
-+  __TEXT.__objc_methlist: 0x1bde4
-   __TEXT.__const: 0x2ec4
-   __TEXT.__cstring: 0xd640
--  __TEXT.__gcc_except_tab: 0xfe5c
-+  __TEXT.__gcc_except_tab: 0xfe60
-   __TEXT.__dlopen_cstrs: 0xb7f
-   __TEXT.__oslogstring: 0x83a7
-   __TEXT.__ustring: 0x3774
 
-   __TEXT.__swift_as_entry: 0x70
-   __TEXT.__swift_as_ret: 0x7c
-   __TEXT.__swift_as_cont: 0xfc
--  __TEXT.__unwind_info: 0xa628
-+  __TEXT.__unwind_info: 0xa638
-   __TEXT.__eh_frame: 0x1208
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x100
-   __DATA_CONST.__objc_protolist: 0x8e0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x12390
-+  __DATA_CONST.__objc_selrefs: 0x123a8
-   __DATA_CONST.__objc_protorefs: 0x160
-   __DATA_CONST.__objc_superrefs: 0x858
-   __DATA_CONST.__objc_arraydata: 0x5a8
-   __DATA_CONST.__got: 0x2728
-   __AUTH_CONST.__const: 0x2270
-   __AUTH_CONST.__cfstring: 0xc640
--  __AUTH_CONST.__objc_const: 0x2c700
-+  __AUTH_CONST.__objc_const: 0x2c718
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0xca8
-   __AUTH_CONST.__objc_arrayobj: 0x4f8
-   __AUTH_CONST.__objc_doubleobj: 0xc0
-   __AUTH_CONST.__objc_dictobj: 0xa0
-   __AUTH_CONST.__auth_got: 0x14a8
--  __AUTH.__objc_data: 0x5e98
--  __AUTH.__data: 0x2e0
-+  __AUTH.__objc_data: 0x5ec0
-+  __AUTH.__data: 0x2b0
-   __DATA.__objc_ivar: 0x1f34
-   __DATA.__data: 0x6950
--  __DATA_DIRTY.__objc_data: 0xb40
-+  __DATA_DIRTY.__objc_data: 0xb18
-+  __DATA_DIRTY.__data: 0x30
-   __DATA_DIRTY.__bss: 0x10
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9308
--  Symbols:   24523
+-  Symbols:   17546
 +  Functions: 9311
-+  Symbols:   24525
-   CStrings:  2573
- 
++  Symbols:   17547
 Symbols:
 + -[_SFBrowserContentViewController bannerLayoutMargins]
 + -[_SFNavigationBar _tabBarHeightContribution]
@@ -159,7 +119,6 @@ Symbols:
 + GCC_except_table665
 + GCC_except_table667
 + GCC_except_table674
-+ _objc_msgSend$bannerLayoutMargins
 - GCC_except_table133
 - GCC_except_table179
 - GCC_except_table233

@@ -2,71 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/AudioDSPManager.framework/AudioDSPManager`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc008c` | `0xc1124` | **`+0x1098`** |
+| `__TEXT.__const` | `0xf008` | `0xf468` | **`+0x460`** |
+| `__AUTH_CONST.__const` | `0x7fe0` | `0x8168` | **`+0x188`** |
+| `__TEXT.__cstring` | `0x65f1` | `0x674e` | **`+0x15d`** |
+| `__TEXT.__oslogstring` | `0x3c59` | `0x3ce1` | **`+0x88`** |
+| `__TEXT.__unwind_info` | `0x3ca8` | `0x3d10` | **`+0x68`** |
+| `__TEXT.__gcc_except_tab` | `0x7300` | `0x7364` | **`+0x64`** |
+| `__DATA.__data` | `0x1590` | `0x15d0` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x1588` | `0x15a0` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
 -241.110.0.0.0
--  __TEXT.__text: 0xbc310
 +241.205.0.0.0
-+  __TEXT.__text: 0xbd374
-   __TEXT.__realtime: 0x170
-   __TEXT.__init_offsets: 0x10
-   __TEXT.__objc_methlist: 0x8f0
--  __TEXT.__const: 0xf008
-+  __TEXT.__const: 0xf468
-   __TEXT.__dlopen_cstrs: 0x54
-   __TEXT.__swift5_typeref: 0x2898
-   __TEXT.__swift5_fieldmd: 0x1918
 
-   __TEXT.__swift5_types: 0x22c
-   __TEXT.__swift5_reflstr: 0x14ac
-   __TEXT.__swift5_assocty: 0x548
--  __TEXT.__cstring: 0x65f1
-+  __TEXT.__cstring: 0x674e
-   __TEXT.__swift_as_entry: 0x50
-   __TEXT.__swift_as_ret: 0x44
-   __TEXT.__swift_as_cont: 0x64
-   __TEXT.__swift5_builtin: 0x78
-   __TEXT.__swift5_mpenum: 0x54
-   __TEXT.__swift5_capture: 0x31c
--  __TEXT.__gcc_except_tab: 0x7300
--  __TEXT.__oslogstring: 0x3c59
--  __TEXT.__unwind_info: 0x44a8
-+  __TEXT.__gcc_except_tab: 0x7364
-+  __TEXT.__oslogstring: 0x3ce1
-+  __TEXT.__unwind_info: 0x4520
-   __TEXT.__eh_frame: 0x3860
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0x608
-   __DATA_CONST.__objc_superrefs: 0x38
-   __DATA_CONST.__got: 0x5d8
--  __AUTH_CONST.__const: 0x7fe0
-+  __AUTH_CONST.__const: 0x8168
-   __AUTH_CONST.__cfstring: 0x1000
-   __AUTH_CONST.__objc_const: 0x14c8
-   __AUTH_CONST.__weak_auth_got: 0x20
--  __AUTH_CONST.__auth_got: 0x1588
-+  __AUTH_CONST.__auth_got: 0x15a0
-   __AUTH.__objc_data: 0x618
-   __AUTH.__data: 0x600
-   __DATA.__objc_ivar: 0x70
--  __DATA.__data: 0x1590
-+  __DATA.__data: 0x15d0
-   __DATA.__cf_except_bt: 0x2000
-   __DATA.__crash_info: 0x148
-   __DATA.__common: 0x30
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3643
--  Symbols:   4567
+-  Symbols:   4412
 -  CStrings:  1245
 +  Functions: 3669
-+  Symbols:   4626
++  Symbols:   4471
 +  CStrings:  1251
- 
 Symbols:
 + GCC_except_table1000
 + GCC_except_table1006

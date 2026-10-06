@@ -2,50 +2,30 @@
 
 > `com.apple.driver.AppleH16ANEInterface`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA.__data`
-- `__DATA_CONST.__mod_init_func`
-- `__DATA_CONST.__mod_term_func`
-- `__DATA_CONST.__kalloc_type`
-- `__DATA_CONST.__kalloc_var`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x1476a8` | `0x149aa4` | **`+0x23fc`** |
+| `__TEXT.__os_log` | `0x3ac29` | `0x3ace0` | **`+0xb7`** |
+| `__DATA_CONST.__const` | `0xf950` | `0xf990` | **`+0x40`** |
+| `__TEXT_EXEC.__auth_stubs` | `0x1250` | `0x1270` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0x928` | `0x938` | **`+0x10`** |
+| `__TEXT.__const` | `0x1030` | `0x1020` | **`-0x10`** |
+| `__DATA.__common` | `0x7b0` | `0x7b8` | **`+0x8`** |
+| `__TEXT.__cstring` | `0x11588` | `0x1158a` | **`+0x2`** |
+
+### Other Changes
 
 ```diff
 
 -10.15.4.0.0
--  __TEXT.__const: 0x1030
--  __TEXT.__cstring: 0x11588
--  __TEXT.__os_log: 0x3ac29
--  __TEXT_EXEC.__text: 0x1476a8
--  __TEXT_EXEC.__auth_stubs: 0x1250
-+10.16.2.0.0
-+  __TEXT.__const: 0x1020
-+  __TEXT.__cstring: 0x1158a
-+  __TEXT.__os_log: 0x3ace0
-+  __TEXT_EXEC.__text: 0x149aa4
-+  __TEXT_EXEC.__auth_stubs: 0x1270
-   __DATA.__data: 0x482c
--  __DATA.__common: 0x7b0
-+  __DATA.__common: 0x7b8
-   __DATA.__bss: 0x818
-   __DATA_CONST.__mod_init_func: 0x2f0
-   __DATA_CONST.__mod_term_func: 0x128
--  __DATA_CONST.__const: 0xf950
-+  __DATA_CONST.__const: 0xf990
-   __DATA_CONST.__kalloc_type: 0x6c80
-   __DATA_CONST.__kalloc_var: 0x8890
--  __DATA_CONST.__auth_got: 0x928
-+  __DATA_CONST.__auth_got: 0x938
-   __DATA_CONST.__got: 0x140
-   __DATA_CONST.__auth_ptr: 0x8
 -  Functions: 4916
++10.16.2.0.0
 +  Functions: 4921
-   Symbols:   0
+
 -  CStrings:  5201
 +  CStrings:  5203
- 
 CStrings:
 + "%s: %s:   surface=%p uuid=0x%llx mode=%u\n"
 + "%s: %s: Client program size : %llu maxMapSize: %llu minMapSize %llu\n"

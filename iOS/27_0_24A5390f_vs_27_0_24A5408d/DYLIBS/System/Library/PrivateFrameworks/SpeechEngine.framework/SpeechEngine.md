@@ -2,88 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/SpeechEngine.framework/SpeechEngine`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x12f514` | `0x133470` | **`+0x3f5c`** |
+| `__TEXT.__eh_frame` | `0xdf94` | `0xe394` | **`+0x400`** |
+| `__TEXT.__cstring` | `0x5521` | `0x5771` | **`+0x250`** |
+| `__TEXT.__swift5_reflstr` | `0x39c6` | `0x3b06` | **`+0x140`** |
+| `__AUTH_CONST.__objc_const` | `0x5038` | `0x5158` | **`+0x120`** |
+| `__TEXT.__unwind_info` | `0x5df8` | `0x5f00` | **`+0x108`** |
+| `__DATA.__data` | `0x2a68` | `0x2968` | **`-0x100`** |
+| `__TEXT.__swift5_fieldmd` | `0x4768` | `0x4838` | **`+0xd0`** |
+| `__AUTH_CONST.__const` | `0xbec0` | `0xbe28` | **`-0x98`** |
+| `__TEXT.__const` | `0xe380` | `0xe3f0` | **`+0x70`** |
+| `__TEXT.__swift5_capture` | `0x1ab8` | `0x1a48` | **`-0x70`** |
+| `__TEXT.__swift_as_cont` | `0xb98` | `0xc00` | **`+0x68`** |
+| `__TEXT.__oslogstring` | `0x412f` | `0x417f` | **`+0x50`** |
+| `__DATA_CONST.__const` | `0x218` | `0x258` | **`+0x40`** |
+| `__TEXT.__swift5_typeref` | `0x390c` | `0x3948` | **`+0x3c`** |
+| `__DATA.__common` | `0x3e0` | `0x400` | **`+0x20`** |
+| `__DATA_DIRTY.__data` | `0x59d0` | `0x59f0` | **`+0x20`** |
+| `__TEXT.__swift_as_ret` | `0x410` | `0x424` | **`+0x14`** |
+| `__TEXT.__swift_as_entry` | `0x404` | `0x414` | **`+0x10`** |
+| `__TEXT.__constg_swiftt` | `0x5180` | `0x518c` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x1988` | `0x1990` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.76.1.0.0
--  __TEXT.__text: 0x12f514
 +3600.85.2.0.0
-+  __TEXT.__text: 0x133470
-   __TEXT.__objc_methlist: 0xdc
--  __TEXT.__const: 0xe380
--  __TEXT.__cstring: 0x5521
--  __TEXT.__swift5_typeref: 0x390c
--  __TEXT.__constg_swiftt: 0x5180
--  __TEXT.__swift5_reflstr: 0x39c6
--  __TEXT.__swift5_fieldmd: 0x4768
-+  __TEXT.__const: 0xe3f0
-+  __TEXT.__cstring: 0x5771
-+  __TEXT.__swift5_typeref: 0x3948
-+  __TEXT.__constg_swiftt: 0x518c
-+  __TEXT.__swift5_reflstr: 0x3b06
-+  __TEXT.__swift5_fieldmd: 0x4838
-   __TEXT.__swift5_builtin: 0x1b8
-   __TEXT.__swift5_assocty: 0x1c8
-   __TEXT.__swift5_protos: 0x3c
-   __TEXT.__swift5_proto: 0x9ec
-   __TEXT.__swift5_types: 0x470
--  __TEXT.__swift_as_entry: 0x404
--  __TEXT.__swift_as_ret: 0x410
-+  __TEXT.__swift_as_entry: 0x414
-+  __TEXT.__swift_as_ret: 0x424
-   __TEXT.__swift5_mpenum: 0x60
--  __TEXT.__swift_as_cont: 0xb98
--  __TEXT.__swift5_capture: 0x1ab8
--  __TEXT.__oslogstring: 0x412f
--  __TEXT.__unwind_info: 0x5df8
--  __TEXT.__eh_frame: 0xdf94
-+  __TEXT.__swift_as_cont: 0xc00
-+  __TEXT.__swift5_capture: 0x1a48
-+  __TEXT.__oslogstring: 0x417f
-+  __TEXT.__unwind_info: 0x5f00
-+  __TEXT.__eh_frame: 0xe394
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x218
-+  __DATA_CONST.__const: 0x258
-   __DATA_CONST.__objc_classlist: 0x1c8
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x3f8
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xbec0
--  __AUTH_CONST.__objc_const: 0x5038
--  __AUTH_CONST.__auth_got: 0x1988
-+  __AUTH_CONST.__const: 0xbe28
-+  __AUTH_CONST.__objc_const: 0x5158
-+  __AUTH_CONST.__auth_got: 0x1990
-   __AUTH.__objc_data: 0xe8
-   __AUTH.__data: 0xe80
--  __DATA.__data: 0x2a68
-+  __DATA.__data: 0x2968
-   __DATA.__bss: 0x13630
--  __DATA.__common: 0x3e0
-+  __DATA.__common: 0x400
-   __DATA_DIRTY.__objc_data: 0x6e8
--  __DATA_DIRTY.__data: 0x59d0
-+  __DATA_DIRTY.__data: 0x59f0
-   __DATA_DIRTY.__common: 0x198
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9065
--  Symbols:   2500
+-  Symbols:   2382
 -  CStrings:  899
 +  Functions: 9128
-+  Symbols:   2498
++  Symbols:   2380
 +  CStrings:  914
- 
 Symbols:
 + _NSUnderlyingErrorKey
 + ___swift_closure_destructor.395Tm

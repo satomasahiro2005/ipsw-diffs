@@ -2,42 +2,15 @@
 
 > `/System/Library/Frameworks/CoreText.framework/CoreText`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x15d16c
-+  __TEXT.__text: 0x15c9f8
-   __TEXT.__delay_helper: 0x264
-   __TEXT.__objc_methlist: 0xdd4
-   __TEXT.__const: 0x51ca4
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__dof_CoreText : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__objc_dataobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15d16c` | `0x15c9f8` | **`-0x774`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNK5TFont14CopyDescriptorEb : 4496 -> 4484
 ~ __ZL8GetTablev : 248 -> 244
@@ -181,5 +154,4 @@ Functions:
 ~ __ZNK3OTL4BASE11ValueForTagERK5TFontjj : 904 -> 912
 ~ __ZN22UniversalShapingEngine18ApplyScriptShapingERKN3OTL4GSUBEPNS0_12GlyphLookupsE : 8824 -> 8816
 ~ __ZL19FeatureParamsForTagIN3OTL29CharacterVariantFeatureParamsEEPKT_PK8__CFDataj : 512 -> 508
-
 ```

@@ -2,85 +2,56 @@
 
 > `/usr/libexec/centaurid`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x30c80` | `0x356ec` | **`+0x4a6c`** |
+| `__DATA_CONST.__cfstring` | `0x10cc0` | `0x11400` | **`+0x740`** |
+| `__TEXT.__cstring` | `0x19ba3` | `0x1a222` | **`+0x67f`** |
+| `__TEXT.__objc_stubs` | `0x3560` | `0x3bc0` | **`+0x660`** |
+| `__TEXT.__objc_methname` | `0x33b6` | `0x3994` | **`+0x5de`** |
+| `__TEXT.__oslogstring` | `0x5d62` | `0x6333` | **`+0x5d1`** |
+| `__DATA.__objc_const` | `0x1c40` | `0x20f8` | **`+0x4b8`** |
+| `__TEXT.__objc_methlist` | `0x115c` | `0x13e4` | **`+0x288`** |
+| `__DATA.__objc_selrefs` | `0xe70` | `0x1008` | **`+0x198`** |
+| `__DATA.__objc_data` | `0x4b0` | `0x5f0` | **`+0x140`** |
+| `__TEXT.__gcc_except_tab` | `0x15f0` | `0x1730` | **`+0x140`** |
+| `__TEXT.__objc_methtype` | `0x99c` | `0xaca` | **`+0x12e`** |
+| `__DATA_CONST.__const` | `0x7a8` | `0x880` | **`+0xd8`** |
+| `__TEXT.__unwind_info` | `0x7d8` | `0x890` | **`+0xb8`** |
+| `__TEXT.__objc_classname` | `0x190` | `0x1f2` | **`+0x62`** |
+| `__DATA_CONST.__objc_arraydata` | `0xa1e0` | `0xa238` | **`+0x58`** |
+| `__DATA.__bss` | `0xa0` | `0xd0` | **`+0x30`** |
+| `__DATA.__objc_ivar` | `0x1bc` | `0x1ec` | **`+0x30`** |
+| `__DATA_CONST.__objc_arrayobj` | `0x5a0` | `0x5d0` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x200` | `0x228` | **`+0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x78` | `0x98` | **`+0x20`** |
+| `__TEXT.__auth_stubs` | `0xa80` | `0xaa0` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0x558` | `0x568` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x68` | `0x78` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -128.0.0.0.0
--  __TEXT.__text: 0x30788
--  __TEXT.__auth_stubs: 0xa80
--  __TEXT.__objc_stubs: 0x3560
--  __TEXT.__objc_methlist: 0x115c
 +129.0.0.0.0
-+  __TEXT.__text: 0x350d0
-+  __TEXT.__auth_stubs: 0xaa0
-+  __TEXT.__objc_stubs: 0x3bc0
-+  __TEXT.__objc_methlist: 0x13e4
-   __TEXT.__const: 0x120
--  __TEXT.__gcc_except_tab: 0x15f0
--  __TEXT.__cstring: 0x19ba3
--  __TEXT.__oslogstring: 0x5d62
--  __TEXT.__objc_methname: 0x33b6
--  __TEXT.__objc_classname: 0x190
--  __TEXT.__objc_methtype: 0x99c
--  __TEXT.__unwind_info: 0xad8
--  __DATA_CONST.__const: 0x7a8
--  __DATA_CONST.__cfstring: 0x10cc0
--  __DATA_CONST.__objc_classlist: 0x78
-+  __TEXT.__gcc_except_tab: 0x1730
-+  __TEXT.__cstring: 0x1a222
-+  __TEXT.__oslogstring: 0x6333
-+  __TEXT.__objc_methname: 0x3994
-+  __TEXT.__objc_classname: 0x1f2
-+  __TEXT.__objc_methtype: 0xaca
-+  __TEXT.__unwind_info: 0xbb8
-+  __DATA_CONST.__const: 0x880
-+  __DATA_CONST.__cfstring: 0x11400
-+  __DATA_CONST.__objc_classlist: 0x98
-   __DATA_CONST.__objc_protolist: 0x38
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x68
--  __DATA_CONST.__objc_arraydata: 0xa1e0
--  __DATA_CONST.__objc_arrayobj: 0x5a0
-+  __DATA_CONST.__objc_superrefs: 0x78
-+  __DATA_CONST.__objc_arraydata: 0xa238
-+  __DATA_CONST.__objc_arrayobj: 0x5d0
-   __DATA_CONST.__objc_intobj: 0x94b0
-   __DATA_CONST.__objc_dictobj: 0x1c48
--  __DATA_CONST.__auth_got: 0x558
--  __DATA_CONST.__got: 0x200
-+  __DATA_CONST.__auth_got: 0x568
-+  __DATA_CONST.__got: 0x228
-   __DATA_CONST.__auth_ptr: 0x8
--  __DATA.__objc_const: 0x1c40
--  __DATA.__objc_selrefs: 0xe70
--  __DATA.__objc_ivar: 0x1bc
--  __DATA.__objc_data: 0x4b0
-+  __DATA.__objc_const: 0x20f8
-+  __DATA.__objc_selrefs: 0x1008
-+  __DATA.__objc_ivar: 0x1ec
-+  __DATA.__objc_data: 0x5f0
-   __DATA.__data: 0x2a8
-   - /AppleInternal/Library/Frameworks/TapToRadarKit.framework/TapToRadarKit
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 629
 -  Symbols:   243
 -  CStrings:  3511
 +  Functions: 697
 +  Symbols:   248
 +  CStrings:  3677
- 
 Symbols:
 + _CentauriControllerPortOff
 + _NSLocalizedDescriptionKey

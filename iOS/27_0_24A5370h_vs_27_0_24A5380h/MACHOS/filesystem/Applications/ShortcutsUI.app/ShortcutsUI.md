@@ -2,15 +2,16 @@
 
 > `/Applications/ShortcutsUI.app/ShortcutsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x3e0` | `0x408` | **`+0x28`** |
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_intobj: 0x60
-   __DATA_CONST.__objc_doubleobj: 0x40
-   __DATA_CONST.__auth_got: 0x368
--  __DATA_CONST.__got: 0x3e0
-+  __DATA_CONST.__got: 0x408
-   __DATA.__objc_const: 0x4128
-   __DATA.__objc_selrefs: 0x1cf0
-   __DATA.__objc_ivar: 0x27c
-
+-5028.0.21.0.0
++5032.5.0.0.0
 ```

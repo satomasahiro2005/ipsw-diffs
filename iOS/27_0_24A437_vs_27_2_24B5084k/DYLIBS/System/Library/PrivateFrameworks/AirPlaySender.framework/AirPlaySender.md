@@ -2,58 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/AirPlaySender.framework/AirPlaySender`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x244090` | `0x2463d4` | **`+0x2344`** |
+| `__TEXT.__cstring` | `0x8ec83` | `0x8f88f` | **`+0xc0c`** |
+| `__AUTH_CONST.__cfstring` | `0x148e0` | `0x149e0` | **`+0x100`** |
+| `__TEXT.__dlopen_cstrs` | `0x5c1` | `0x61a` | **`+0x59`** |
+| `__DATA_CONST.__const` | `0x76a8` | `0x7700` | **`+0x58`** |
+| `__TEXT.__unwind_info` | `0x58c0` | `0x58f0` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x2388` | `0x23b0` | **`+0x28`** |
+| `__TEXT.__gcc_except_tab` | `0xa88` | `0xaa4` | **`+0x1c`** |
+| `__DATA.__bss` | `0x608` | `0x618` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb08` | `0xb18` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -980.77.1.2.0
--  __TEXT.__text: 0x2372e4
 +1005.7.1.0.0
-+  __TEXT.__text: 0x239660
-   __TEXT.__objc_methlist: 0x7ec
--  __TEXT.__cstring: 0x8ec83
-+  __TEXT.__cstring: 0x8f88f
-   __TEXT.__const: 0x61f0
--  __TEXT.__gcc_except_tab: 0xa88
--  __TEXT.__dlopen_cstrs: 0x5c1
-+  __TEXT.__gcc_except_tab: 0xaa4
-+  __TEXT.__dlopen_cstrs: 0x61a
-   __TEXT.__oslogstring: 0x1009
--  __TEXT.__unwind_info: 0x91c0
-+  __TEXT.__unwind_info: 0x9220
-   __TEXT.__eh_frame: 0x48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x76a8
-+  __DATA_CONST.__const: 0x7700
-   __DATA_CONST.__objc_classlist: 0x38
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb08
-+  __DATA_CONST.__objc_selrefs: 0xb18
-   __DATA_CONST.__objc_superrefs: 0x38
-   __DATA_CONST.__objc_arraydata: 0x170
--  __DATA_CONST.__got: 0x2388
-+  __DATA_CONST.__got: 0x23b0
-   __AUTH_CONST.__const: 0x7780
--  __AUTH_CONST.__cfstring: 0x148e0
-+  __AUTH_CONST.__cfstring: 0x149e0
-   __AUTH_CONST.__objc_const: 0xed0
-   __AUTH_CONST.__objc_dictobj: 0x1b8
-   __AUTH_CONST.__objc_intobj: 0x150
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
--  Functions: 11438
--  Symbols:   8943
+-  Functions: 11443
+-  Symbols:   8664
 -  CStrings:  11583
-+  Functions: 11452
-+  Symbols:   8952
++  Functions: 11457
++  Symbols:   8671
 +  CStrings:  11654
- 
 Symbols:
 + GCC_except_table26
 + _APCarPlayCarNeedsVTAlwaysActive
@@ -87,8 +63,6 @@ Symbols:
 + _kFigEndpointCarPlayVideoPlaybackPlayerEvent_ButtonTapped
 + _kFigEndpointNotification_CarPlayVideoPlaybackPlayerEvent
 + _kFigEndpointProperty_CarPlayScreenFadeDurationInSeconds
-+ _objc_msgSend$initWithName:
-+ _objc_msgSend$ppid
 + _sessionfactory_RemoveAirPlaySession
 + _sessionfactory_RemoveSessionClient
 - _APTDiagnosticMulticastDataToAllHosts

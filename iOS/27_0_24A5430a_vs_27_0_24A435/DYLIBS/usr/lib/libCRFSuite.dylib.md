@@ -2,14 +2,15 @@
 
 > `/usr/lib/libCRFSuite.dylib`
 
-```diff
+### Section Size Changes
 
- 55.0.0.0.0
--  __TEXT.__text: 0x2f6c4
-+  __TEXT.__text: 0x2f738
-   __TEXT.__cstring: 0x2551
-   __TEXT.__const: 0x9d0
-   __TEXT.__gcc_except_tab: 0x10d0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2f6c4` | `0x2f738` | **`+0x74`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _cqdb_writer_put : 472 -> 480
 ~ _cqdb_reader : 488 -> 484

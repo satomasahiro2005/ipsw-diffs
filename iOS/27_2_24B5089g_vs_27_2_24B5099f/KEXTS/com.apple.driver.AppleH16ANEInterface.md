@@ -2,38 +2,29 @@
 
 > `com.apple.driver.AppleH16ANEInterface`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x15b014` | `0x15bb10` | **`+0xafc`** |
+| `__TEXT.__os_log` | `0x3dfe8` | `0x3e23b` | **`+0x253`** |
+| `__TEXT.__cstring` | `0x11ddc` | `0x11ec2` | **`+0xe6`** |
+| `__DATA_CONST.__const` | `0x10058` | `0x100c0` | **`+0x68`** |
+| `__TEXT.__const` | `0x1250` | `0x1260` | **`+0x10`** |
+| `__TEXT_EXEC.__auth_stubs` | `0x1290` | `0x12a0` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x948` | `0x950` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -10.101.100.0.0
--  __TEXT.__cstring: 0x11ddc
--  __TEXT.__os_log: 0x3dfe8
--  __TEXT.__const: 0x1250
--  __TEXT_EXEC.__text: 0x154344
--  __TEXT_EXEC.__auth_stubs: 0x1290
-+10.102.3.0.0
-+  __TEXT.__cstring: 0x11ec2
-+  __TEXT.__os_log: 0x3e23b
-+  __TEXT.__const: 0x1260
-+  __TEXT_EXEC.__text: 0x154dd8
-+  __TEXT_EXEC.__auth_stubs: 0x12a0
-   __DATA.__data: 0x54f4
-   __DATA.__common: 0x7e0
-   __DATA_CONST.__mod_init_func: 0x300
-   __DATA_CONST.__mod_term_func: 0x138
--  __DATA_CONST.__const: 0x10058
-+  __DATA_CONST.__const: 0x100c0
-   __DATA_CONST.__kalloc_var: 0x8c00
-   __DATA_CONST.__kalloc_type: 0x7040
--  __DATA_CONST.__auth_got: 0x948
-+  __DATA_CONST.__auth_got: 0x950
-   __DATA_CONST.__got: 0x148
-   __DATA_CONST.__auth_ptr: 0x8
 -  Functions: 5091
++10.102.3.0.0
 +  Functions: 5100
-   Symbols:   0
+
 -  CStrings:  5447
 +  CStrings:  5458
- 
 CStrings:
 + "%s: %s: ANE%u: AGX peer already latched, ignoring additional %s service\n"
 + "%s: %s: ANE%u: FW shared event signaling disabled, cleared FW-FW signaling for programHandle: 0x%llx transactionId: 0x%llx\n"

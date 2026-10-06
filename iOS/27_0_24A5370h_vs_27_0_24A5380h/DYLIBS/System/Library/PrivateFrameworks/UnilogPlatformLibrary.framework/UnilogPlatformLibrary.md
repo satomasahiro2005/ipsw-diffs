@@ -2,27 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/UnilogPlatformLibrary.framework/UnilogPlatformLibrary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x7c80` | `0x7c00` | **`-0x80`** |
+| `__DATA_DIRTY.__bss` | `0x680` | `0x700` | **`+0x80`** |
+| `__DATA.__data` | `0x8f8` | `0x8f0` | **`-0x8`** |
+| `__DATA_DIRTY.__data` | `0x1c0` | `0x1c8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
-   __AUTH_CONST.__const: 0x1b53
-   __AUTH_CONST.__auth_got: 0x250
-   __AUTH.__data: 0xe8
--  __DATA.__data: 0x8f8
--  __DATA.__bss: 0x7c80
--  __DATA_DIRTY.__data: 0x1c0
--  __DATA_DIRTY.__bss: 0x680
-+  __DATA.__data: 0x8f0
-+  __DATA.__bss: 0x7c00
-+  __DATA_DIRTY.__data: 0x1c8
-+  __DATA_DIRTY.__bss: 0x700
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/Dendrite.framework/Dendrite
-   - /System/Library/PrivateFrameworks/UnilogCommonLibrary.framework/UnilogCommonLibrary
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH.__data : content changed
-
+-2.0.6.0.0
++2.0.8.0.0
 ```

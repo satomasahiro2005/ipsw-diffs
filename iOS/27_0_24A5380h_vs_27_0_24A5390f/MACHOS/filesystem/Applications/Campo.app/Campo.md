@@ -2,102 +2,60 @@
 
 > `/Applications/Campo.app/Campo`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_entry`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xdddc` | `0xed80` | **`+0xfa4`** |
+| `__TEXT.__eh_frame` | `0xa00` | `0xb70` | **`+0x170`** |
+| `__TEXT.__unwind_info` | `0x5d8` | `0x640` | **`+0x68`** |
+| `__TEXT.__auth_stubs` | `0xe40` | `0xe90` | **`+0x50`** |
+| `__TEXT.__const` | `0x644` | `0x684` | **`+0x40`** |
+| `__TEXT.__swift5_capture` | `0x268` | `0x2a0` | **`+0x38`** |
+| `__TEXT.__swift_as_cont` | `0x60` | `0x94` | **`+0x34`** |
+| `__DATA_CONST.__auth_got` | `0x728` | `0x750` | **`+0x28`** |
+| `__TEXT.__swift5_typeref` | `0x462` | `0x43e` | **`-0x24`** |
+| `__TEXT.__cstring` | `0x3bd` | `0x3dd` | **`+0x20`** |
+| `__TEXT.__objc_methname` | `0x17dc` | `0x17bc` | **`-0x20`** |
+| `__TEXT.__objc_methtype` | `0xda2` | `0xd82` | **`-0x20`** |
+| `__TEXT.__objc_stubs` | `0x720` | `0x700` | **`-0x20`** |
+| `__DATA_CONST.__got` | `0x208` | `0x1f0` | **`-0x18`** |
+| `__DATA.__data` | `0x8b8` | `0x8a8` | **`-0x10`** |
+| `__DATA_CONST.__auth_ptr` | `0x230` | `0x220` | **`-0x10`** |
+| `__TEXT.__swift_as_entry` | `0x3c` | `0x48` | **`+0xc`** |
+| `__DATA.__objc_selrefs` | `0x520` | `0x518` | **`-0x8`** |
+| `__TEXT.__swift_as_ret` | `0x38` | `0x40` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_const`
 - `__DATA.__objc_data`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_classlist`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_types`
+
+### Other Changes
 
 ```diff
 
 -73.0.5.102.0
--  __TEXT.__text: 0xdddc
--  __TEXT.__auth_stubs: 0xe40
--  __TEXT.__objc_stubs: 0x720
 +73.0.12.0.0
-+  __TEXT.__text: 0xed80
-+  __TEXT.__auth_stubs: 0xe90
-+  __TEXT.__objc_stubs: 0x700
-   __TEXT.__objc_methlist: 0x634
--  __TEXT.__const: 0x644
-+  __TEXT.__const: 0x684
-   __TEXT.__constg_swiftt: 0x2bc
--  __TEXT.__swift5_typeref: 0x462
-+  __TEXT.__swift5_typeref: 0x43e
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_reflstr: 0x17c
-   __TEXT.__swift5_fieldmd: 0x1c0
-   __TEXT.__swift5_assocty: 0x48
-   __TEXT.__swift5_proto: 0x2c
-   __TEXT.__swift5_types: 0x38
--  __TEXT.__objc_methname: 0x17dc
--  __TEXT.__objc_methtype: 0xda2
--  __TEXT.__cstring: 0x3bd
-+  __TEXT.__objc_methname: 0x17bc
-+  __TEXT.__objc_methtype: 0xd82
-+  __TEXT.__cstring: 0x3dd
-   __TEXT.__objc_classname: 0x204
--  __TEXT.__swift5_capture: 0x268
--  __TEXT.__swift_as_entry: 0x3c
--  __TEXT.__swift_as_ret: 0x38
--  __TEXT.__swift_as_cont: 0x60
-+  __TEXT.__swift5_capture: 0x2a0
-+  __TEXT.__swift_as_entry: 0x48
-+  __TEXT.__swift_as_ret: 0x40
-+  __TEXT.__swift_as_cont: 0x94
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__unwind_info: 0x5d8
--  __TEXT.__eh_frame: 0xa00
-+  __TEXT.__unwind_info: 0x640
-+  __TEXT.__eh_frame: 0xb70
-   __DATA_CONST.__const: 0x848
-   __DATA_CONST.__objc_classlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x38
--  __DATA_CONST.__auth_got: 0x728
--  __DATA_CONST.__got: 0x208
--  __DATA_CONST.__auth_ptr: 0x230
-+  __DATA_CONST.__auth_got: 0x750
-+  __DATA_CONST.__got: 0x1f0
-+  __DATA_CONST.__auth_ptr: 0x220
-   __DATA.__objc_const: 0x930
--  __DATA.__objc_selrefs: 0x520
-+  __DATA.__objc_selrefs: 0x518
-   __DATA.__objc_data: 0x300
--  __DATA.__data: 0x8b8
-+  __DATA.__data: 0x8a8
-   __DATA.__bss: 0x580
-   __DATA.__common: 0x228
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
 
-   - /System/Library/PrivateFrameworks/CampoUIServices.framework/CampoUIServices
-   - /System/Library/PrivateFrameworks/SearchUI.framework/SearchUI
-   - /System/Library/PrivateFrameworks/SiriActivation.framework/SiriActivation
 +  - /System/Library/PrivateFrameworks/SnippetUI.framework/SnippetUI
-   - /System/Library/PrivateFrameworks/SpotlightUIInternal.framework/SpotlightUIInternal
-   - /System/Library/PrivateFrameworks/SpotlightUIShared.framework/SpotlightUIShared
-   - /usr/lib/libSystem.B.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 498
 -  Symbols:   397
 -  CStrings:  316
 +  Functions: 528
 +  Symbols:   398
 +  CStrings:  315
- 
 Symbols:
 + _$s15CampoUIInternal18CarPlayImageLoaderC08loadCardE03for12cornerRadius10renderSize07displayM00N5Scale11colorSchemeSo7UIImageCAA0cD16ConversationItemV_12CoreGraphics7CGFloatVSo6CGSizeVAsQ7SwiftUI05ColorQ0OtYaF
 + _$s15CampoUIInternal18CarPlayImageLoaderC08loadCardE03for12cornerRadius10renderSize07displayM00N5Scale11colorSchemeSo7UIImageCAA0cD16ConversationItemV_12CoreGraphics7CGFloatVSo6CGSizeVAsQ7SwiftUI05ColorQ0OtYaFTu

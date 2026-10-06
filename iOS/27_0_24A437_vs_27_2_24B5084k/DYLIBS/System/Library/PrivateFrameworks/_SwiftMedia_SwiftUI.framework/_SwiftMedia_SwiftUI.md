@@ -2,66 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/_SwiftMedia_SwiftUI.framework/_SwiftMedia_SwiftUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10e93c` | `0x10e724` | **`-0x218`** |
+| `__TEXT.__swift5_typeref` | `0xc8ce` | `0xc898` | **`-0x36`** |
+| `__AUTH_CONST.__const` | `0x8ff8` | `0x8fd0` | **`-0x28`** |
+| `__DATA.__data` | `0x4878` | `0x4868` | **`-0x10`** |
+| `__TEXT.__const` | `0xe894` | `0xe884` | **`-0x10`** |
+| `__TEXT.__swift5_capture` | `0x23cc` | `0x23bc` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1a08` | `0x1a00` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0xde0` | `0xdd8` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x4310` | `0x4308` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -60.73.1.1.0
--  __TEXT.__text: 0x105ba4
 +70.3.1.0.0
-+  __TEXT.__text: 0x1059a4
-   __TEXT.__objc_methlist: 0x51c
--  __TEXT.__const: 0xe894
-+  __TEXT.__const: 0xe884
-   __TEXT.__constg_swiftt: 0x5cac
--  __TEXT.__swift5_typeref: 0xc8ce
-+  __TEXT.__swift5_typeref: 0xc898
-   __TEXT.__swift5_builtin: 0x12c
-   __TEXT.__swift5_reflstr: 0x3486
-   __TEXT.__swift5_fieldmd: 0x32a0
-   __TEXT.__swift5_assocty: 0x978
-   __TEXT.__swift5_proto: 0x49c
-   __TEXT.__swift5_types: 0x3a8
--  __TEXT.__swift5_capture: 0x23cc
-+  __TEXT.__swift5_capture: 0x23bc
-   __TEXT.__swift5_mpenum: 0x20
-   __TEXT.__cstring: 0x3fe1
-   __TEXT.__swift5_protos: 0x34
 
-   __TEXT.__swift_as_ret: 0x128
-   __TEXT.__swift_as_cont: 0x308
-   __TEXT.__oslogstring: 0x95
--  __TEXT.__unwind_info: 0x5198
-+  __TEXT.__unwind_info: 0x5178
-   __TEXT.__eh_frame: 0x441c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x7c0
-   __DATA_CONST.__objc_protorefs: 0x30
--  __DATA_CONST.__got: 0xde0
--  __AUTH_CONST.__const: 0x8ff8
-+  __DATA_CONST.__got: 0xdd8
-+  __AUTH_CONST.__const: 0x8fd0
-   __AUTH_CONST.__objc_const: 0x4550
--  __AUTH_CONST.__auth_got: 0x1a08
-+  __AUTH_CONST.__auth_got: 0x1a00
-   __AUTH.__objc_data: 0xe28
-   __AUTH.__data: 0x3cf0
--  __DATA.__data: 0x4878
-+  __DATA.__data: 0x4868
-   __DATA.__common: 0x320
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AVKit.framework/AVKit
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6324
--  Symbols:   2488
+-  Symbols:   2298
 +  Functions: 6318
-+  Symbols:   2487
-   CStrings:  352
- 
++  Symbols:   2297
 Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyAA6ZStackVyAA05TupleD0VyACyACyAA5ColorVAA30_SafeAreaRegionsIgnoringLayoutVGAA25_AllowsHitTestingModifierVG_AA012_ConditionalD0VyAQyAQyAA9EmptyViewVASGAQyAA6VStackVyAGyACyAA5ImageVAA022_EnvironmentKeyWritingP0VyAA4FontVSgGG_AA4TextVQPGGAA0S0PAAE12onTapGesture5count7performQrSi_yyctFQOyACyA7_AA01_d5ShapeP0VyAA9RectangleVGG_Qo_GGA7_GQPGGAZyAISgGGAZyAA0G6SchemeOGGAAA8_HPA27_AAA8_HPA24_AAA8_HPyHC_A26_AA0sP0HPyHCHC_A30_AAA32_HPyHCHC
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyACyACyACyAA24ButtonStyleConfigurationV5LabelVAA18_AspectRatioLayoutVGAA010_FlexFrameK0VGAA19_BackgroundModifierVyAA10_ShapeViewVy01_a6Media_aB00r12ToolbarHoverP033_13C8CD8EDD3EEE0C39FCF7D5151BC698LLVAA5ColorVGGGAA01_dpO0VyAA7CapsuleVGGAA010_AnimationO0VySdGGAA0Q0HPA4_AAA9_HPAzAA9_HPAmAA9_HPAjAA9_HPAgAA9_HPyHC_AiA0qO0HPyHCHC_AlAA10_HPyHCHC_AyAA10_HPyHCHC_A3_AAA10_HPyHCHC_A7_AAA10_HPyHCHC

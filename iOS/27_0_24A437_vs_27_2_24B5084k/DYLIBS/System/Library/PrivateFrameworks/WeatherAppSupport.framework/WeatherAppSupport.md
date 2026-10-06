@@ -2,96 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/WeatherAppSupport.framework/WeatherAppSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x219950` | `0x21d5e0` | **`+0x3c90`** |
+| `__DATA.__bss` | `0x15390` | `0x15fa0` | **`+0xc10`** |
+| `__TEXT.__const` | `0x21164` | `0x21ad4` | **`+0x970`** |
+| `__TEXT.__constg_swiftt` | `0xac5c` | `0xb1a4` | **`+0x548`** |
+| `__DATA_DIRTY.__bss` | `0xb130` | `0xac30` | **`-0x500`** |
+| `__DATA.__data` | `0x3cb0` | `0x4100` | **`+0x450`** |
+| `__AUTH_CONST.__const` | `0x10168` | `0x10588` | **`+0x420`** |
+| `__TEXT.__swift5_typeref` | `0xfa1c` | `0xfc02` | **`+0x1e6`** |
+| `__TEXT.__swift5_fieldmd` | `0x8748` | `0x88d8` | **`+0x190`** |
+| `__TEXT.__swift5_reflstr` | `0x5c9d` | `0x5e1d` | **`+0x180`** |
+| `__TEXT.__unwind_info` | `0x7f28` | `0x8080` | **`+0x158`** |
+| `__AUTH.__data` | `0x3940` | `0x3a88` | **`+0x148`** |
+| `__DATA_DIRTY.__data` | `0x8b18` | `0x8a40` | **`-0xd8`** |
+| `__TEXT.__swift5_assocty` | `0x1c80` | `0x1d40` | **`+0xc0`** |
+| `__TEXT.__eh_frame` | `0x4140` | `0x40d0` | **`-0x70`** |
+| `__TEXT.__oslogstring` | `0x169a` | `0x170a` | **`+0x70`** |
+| `__TEXT.__swift5_capture` | `0x14e0` | `0x147c` | **`-0x64`** |
+| `__AUTH_CONST.__objc_const` | `0x2748` | `0x2790` | **`+0x48`** |
+| `__TEXT.__swift5_proto` | `0x10d8` | `0x1110` | **`+0x38`** |
+| `__TEXT.__swift5_types` | `0xb34` | `0xb68` | **`+0x34`** |
+| `__DATA.__common` | `0x38` | `0x68` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x570` | `0x5a0` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x3dff0` | `0x3e010` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x3648` | `0x3658` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x1af8` | `0x1b08` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x498` | `0x488` | **`-0x10`** |
+| `__DATA_DIRTY.__common` | `0x348` | `0x350` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1454.1.0.0.0
--  __TEXT.__text: 0x205ff4
 +1470.0.0.0.0
-+  __TEXT.__text: 0x209afc
-   __TEXT.__objc_methlist: 0x410
--  __TEXT.__const: 0x21164
--  __TEXT.__swift5_typeref: 0xfa1c
--  __TEXT.__oslogstring: 0x169a
--  __TEXT.__cstring: 0x3dff0
--  __TEXT.__constg_swiftt: 0xac5c
--  __TEXT.__swift5_reflstr: 0x5c9d
--  __TEXT.__swift5_fieldmd: 0x8748
-+  __TEXT.__const: 0x21ad4
-+  __TEXT.__swift5_typeref: 0xfc02
-+  __TEXT.__oslogstring: 0x170a
-+  __TEXT.__cstring: 0x3e010
-+  __TEXT.__constg_swiftt: 0xb1a4
-+  __TEXT.__swift5_reflstr: 0x5e1d
-+  __TEXT.__swift5_fieldmd: 0x88d8
-   __TEXT.__swift5_builtin: 0x26c
--  __TEXT.__swift5_assocty: 0x1c80
--  __TEXT.__swift5_proto: 0x10d8
--  __TEXT.__swift5_types: 0xb34
-+  __TEXT.__swift5_assocty: 0x1d40
-+  __TEXT.__swift5_proto: 0x1110
-+  __TEXT.__swift5_types: 0xb68
-   __TEXT.__swift5_protos: 0xec
--  __TEXT.__swift5_capture: 0x14e0
-+  __TEXT.__swift5_capture: 0x147c
-   __TEXT.__swift5_mpenum: 0x188
-   __TEXT.__swift5_types2: 0x8
-   __TEXT.__swift_as_entry: 0x68
-   __TEXT.__swift_as_ret: 0x60
-   __TEXT.__swift_as_cont: 0x78
--  __TEXT.__unwind_info: 0x9ad8
--  __TEXT.__eh_frame: 0x4140
-+  __TEXT.__unwind_info: 0x9d18
-+  __TEXT.__eh_frame: 0x40d0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x570
-+  __DATA_CONST.__const: 0x5a0
-   __DATA_CONST.__objc_classlist: 0x170
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x498
-+  __DATA_CONST.__objc_selrefs: 0x488
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__got: 0x1af8
--  __AUTH_CONST.__const: 0x10168
--  __AUTH_CONST.__objc_const: 0x2748
--  __AUTH_CONST.__auth_got: 0x3648
-+  __DATA_CONST.__got: 0x1b08
-+  __AUTH_CONST.__const: 0x10588
-+  __AUTH_CONST.__objc_const: 0x2790
-+  __AUTH_CONST.__auth_got: 0x3658
-   __AUTH.__objc_data: 0x440
--  __AUTH.__data: 0x3940
--  __DATA.__data: 0x3cb0
--  __DATA.__common: 0x38
-+  __AUTH.__data: 0x3a88
-+  __DATA.__data: 0x4100
-+  __DATA.__common: 0x68
-   __DATA_DIRTY.__objc_data: 0xa0
--  __DATA_DIRTY.__data: 0x8b18
--  __DATA_DIRTY.__bss: 0xb130
--  __DATA_DIRTY.__common: 0x348
-+  __DATA_DIRTY.__data: 0x8a40
-+  __DATA_DIRTY.__bss: 0xac30
-+  __DATA_DIRTY.__common: 0x350
-   - /System/Library/Frameworks/Charts.framework/Charts
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 14591
--  Symbols:   4168
+-  Symbols:   4097
 -  CStrings:  2370
 +  Functions: 14814
-+  Symbols:   4225
++  Symbols:   4156
 +  CStrings:  2372
- 
 Symbols:
 + _OUTLINED_FUNCTION_144
 + _OUTLINED_FUNCTION_145
@@ -317,8 +272,6 @@ Symbols:
 - _get_witness_table SQRzs12IdentifiableRzsAAR_7SwiftUI4ViewR0_r1_lAB15ModifiedContentVyAbCPABE18scrollTargetLayout9isEnabledQrSb_tFQOyAB09EquatableD0Vy17WeatherAppSupport018_PagingDynamicGridD8PageList33_2C3402935BF02193125758C5DD908A0CLLVyxq_q0_GG_Qo_AK01_qrP30HorizontalScrollOffsetModifier33_50B931A23186B3A85819274B09D1804BLLVGAbCHPqd__AbCHD2_AQHO_AtB0D8ModifierHPyHCHC
 - _get_witness_table SQRzs12IdentifiableRzsAAR_7SwiftUI4ViewR0_r1_lqd0__AbCHD3_AbCPABE4task2id4name8priority4file4line_Qrqd___SSSgScPSSSiyyYaYAcntSQRd__lFQOyAB15ModifiedContentVyAB6IDViewVyAB6ZStackVyAB012_ConditionalL0VyAMyAMyAOyAB09EquatableD0Vy17WeatherAppSupport022_PagingDynamicGridPagelD033_2C3402935BF02193125758C5DD908A0CLLVyxq_q0_GG2IDsAAPQzGAB21_TraitWritingModifierVyAB18TransitionTraitKeyVGGAB25_AppearanceActionModifierVGAMyA_A8_GGGSbGAB30_EnvironmentKeyWritingModifierVySbGG_SbQo_HO
 - _get_witness_table s12IdentifiableRz7SwiftUI4ViewR_r0_lqd__AbCHD2_AbCPABE15coordinateSpaceyQrAB015NamedCoordinateF0VFQOyAB15ModifiedContentVyAIyAIy17WeatherAppSupport34DynamicGridActiveGeometryContainerVy2IDQzAIyAIyAIyAIyAB06ScrollD0VyAIyAdBEAEyQrAGFQOyAB09_VariadicD0O4TreeVy_AB18_LazyLayoutRoot_V1VyAJ01_noX033_C01D98A167D01790FCA221A3CA834D61LLVyANGGAB05TupleJ0VyAIyAdBEAEyQrAGFQOyAIyAB6IDViewVyAIyATy_AVyAJ01_nowjX0AXLLVyANGGA1_yAB7ForEachVySayxGAnJ01_noJ0AXLLVyxq_GG_A9_ySayAJ0nO10DecorationV8ResolvedVyAN_GGAJ03Anyno13SupplementarydS0VAJ01_no10DecorationD0AXLLVyANGGQPGGAB21_TraitWritingModifierVyAB18TransitionTraitKeyVGGAJ0noj4AreaS0VGAJ010_DeterminenoJ11Compression33_22DFF8F53B1AB23CBDD531F91183DA5DLLVG_Qo_AJ01_nojrQ8Modifier33_50B931A23186B3A85819274B09D1804BLLVG_A26_QPGG_Qo_AJ01_no14PagingVerticalT14OffsetModifierA44_LLVGGAB30_EnvironmentKeyWritingModifierVyAJ14PinningAnchorsVGGA55_yShyAJ0nO28ResolvedDecorationDescriptorVGGGA55_yAJ03AnynO11ArrangementVGGAB32_EnvironmentKeyTransformModifierVyAJ0qX7ContextVGGGAB20_BackdropGroupEffectVGAJ01_no4PageQ8ModifierA44_LLVyANGGAJ01_qx12ContextValueR8Modifier33_35C6CD2979E3C01DA480F935574197F0LLVG_Qo_HO
-- _objc_msgSend$currentDevice
-- _objc_msgSend$userInterfaceIdiom
 - _symbolic SDy__________G 17WeatherAppSupport25DynamicGridPinningAnchorsV3KeyV AC6Anchor33_219D795AF2A04919DEC8A327AF80D2C6LLV
 - _symbolic _____ 17WeatherAppSupport18_PagingScrollPhase33_2C3402935BF02193125758C5DD908A0CLLC
 - _symbolic _____ 17WeatherAppSupport25DynamicGridPinningAnchorsV

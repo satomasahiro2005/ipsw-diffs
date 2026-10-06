@@ -2,105 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/PlatformSSO.framework/PlatformSSO`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH.__objc_data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5adf0` | `0x5be94` | **`+0x10a4`** |
+| `__TEXT.__oslogstring` | `0x2531` | `0x28f1` | **`+0x3c0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2398` | `0x2400` | **`+0x68`** |
+| `__TEXT.__objc_methlist` | `0x3534` | `0x358c` | **`+0x58`** |
+| `__TEXT.__dlopen_cstrs` | `0x110` | `0x162` | **`+0x52`** |
+| `__TEXT.__gcc_except_tab` | `0x13a8` | `0x13f8` | **`+0x50`** |
+| `__AUTH_CONST.__cfstring` | `0x3a00` | `0x3a40` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x8256` | `0x8296` | **`+0x40`** |
+| `__AUTH_CONST.__objc_const` | `0x8608` | `0x8640` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0x1578` | `0x15a8` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x740` | `0x750` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0xf60` | `0xf50` | **`-0x10`** |
+| `__DATA.__objc_ivar` | `0x38c` | `0x390` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -643.0.21.0.0
--  __TEXT.__text: 0x5adf0
--  __TEXT.__objc_methlist: 0x3534
 +643.0.33.0.0
-+  __TEXT.__text: 0x5be94
-+  __TEXT.__objc_methlist: 0x358c
-   __TEXT.__const: 0x322
--  __TEXT.__cstring: 0x8256
--  __TEXT.__oslogstring: 0x2531
--  __TEXT.__gcc_except_tab: 0x13a8
--  __TEXT.__dlopen_cstrs: 0x110
-+  __TEXT.__cstring: 0x8296
-+  __TEXT.__oslogstring: 0x28f1
-+  __TEXT.__gcc_except_tab: 0x13f8
-+  __TEXT.__dlopen_cstrs: 0x162
-   __TEXT.__swift5_typeref: 0xd9
-   __TEXT.__swift5_capture: 0x14c
-   __TEXT.__constg_swiftt: 0x4c
 
-   __TEXT.__swift_as_entry: 0x30
-   __TEXT.__swift_as_ret: 0x54
-   __TEXT.__swift_as_cont: 0x58
--  __TEXT.__unwind_info: 0x1578
-+  __TEXT.__unwind_info: 0x15a8
-   __TEXT.__eh_frame: 0x628
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xf60
-+  __DATA_CONST.__const: 0xf50
-   __DATA_CONST.__objc_classlist: 0x108
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2398
-+  __DATA_CONST.__objc_selrefs: 0x2400
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__objc_superrefs: 0xc8
-   __DATA_CONST.__objc_arraydata: 0x10
-   __DATA_CONST.__got: 0x438
-   __AUTH_CONST.__const: 0xc80
--  __AUTH_CONST.__cfstring: 0x3a00
--  __AUTH_CONST.__objc_const: 0x8608
-+  __AUTH_CONST.__cfstring: 0x3a40
-+  __AUTH_CONST.__objc_const: 0x8640
-   __AUTH_CONST.__objc_intobj: 0xc0
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x740
-+  __AUTH_CONST.__auth_got: 0x750
-   __AUTH.__objc_data: 0xa00
--  __DATA.__objc_ivar: 0x38c
-+  __DATA.__objc_ivar: 0x390
-   __DATA.__data: 0x600
-   __DATA.__bss: 0x340
-   __DATA_DIRTY.__objc_data: 0x50
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2126
--  Symbols:   3601
+-  Symbols:   2648
 -  CStrings:  1034
 +  Functions: 2144
-+  Symbols:   3618
++  Symbols:   2656
 +  CStrings:  1050
- 
 Symbols:
 + -[PODirectoryServices fullNameForUserName:]
 + -[POExtension _validateExtensionTeamIdentifier:]
@@ -127,19 +59,6 @@ Symbols:
 + ___getSOUtilsClass_block_invoke
 + _audit_stringAppSSOCore
 + _getSOUtilsClass.softClass
-+ _objc_msgSend$_extensionBundle
-+ _objc_msgSend$_validateExtensionTeamIdentifier:
-+ _objc_msgSend$bundleURL
-+ _objc_msgSend$checkSignatureOfFile:teamIdentifier:trusted:signedBySet:certificates:error:
-+ _objc_msgSend$extension
-+ _objc_msgSend$extensionTeamIdentifier
-+ _objc_msgSend$hasAnyMDMProfileForExtension:teamIdentifier:
-+ _objc_msgSend$initWithExtensionBundleIdentifier:teamIdentifier:extensionManager:delegate:
-+ _objc_msgSend$isConfigurationActiveForExtensionIdentifier:teamIdentifier:runningAsAgent:completion:
-+ _objc_msgSend$isExtensionSignatureValidated
-+ _objc_msgSend$loadSSOExtensionWithExtensionBundleIdentifier:teamIdentifier:
-+ _objc_msgSend$setExtensionTeamIdentifier:
-+ _objc_msgSend$teamIdentifierForXPCConnection:
 + _objc_retainBlock
 - GCC_except_table107
 - GCC_except_table113
@@ -159,10 +78,6 @@ Symbols:
 - ___block_descriptor_57_e8_32s40s48s_e20_v24?0Q8"NSError"16ls32l8s40l8s48l8
 - _isCallerCurrentSSOExtension.extensionIdentifier
 - _isCallerCurrentSSOExtension.onceToken
-- _objc_msgSend$hasAnyMDMProfileForExtension:
-- _objc_msgSend$initWithExtensionBundleIdentifier:extensionManager:delegate:
-- _objc_msgSend$isConfigurationActiveForExtensionIdentifier:runningAsAgent:completion:
-- _objc_msgSend$loadSSOExtensionWithExtensionBundleIdentifier:
 CStrings:
 + ")#Y"
 + "Apple"

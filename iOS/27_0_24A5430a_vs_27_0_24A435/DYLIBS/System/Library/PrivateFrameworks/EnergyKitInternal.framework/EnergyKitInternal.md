@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/EnergyKitInternal.framework/EnergyKitInternal`
 
-```diff
+### Section Size Changes
 
- 490.1.4.0.0
--  __TEXT.__text: 0x88dc8
-+  __TEXT.__text: 0x88de0
-   __TEXT.__objc_methlist: 0x4f0
-   __TEXT.__const: 0x2470
-   __TEXT.__swift5_typeref: 0xac8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x88dc8` | `0x88de0` | **`+0x18`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s17EnergyKitInternal0A4SiteC05setUpD20NotificationObserver33_5B1A32222C754A8B7A12B214B59E538ELLyyFy10Foundation0G0VYbcfU_ : 1020 -> 1024
 ~ _$s17EnergyKitInternal0aB7ManagerC29setUpSiteNotificationObserveryyFy10Foundation0H0VYbcfU_ : 732 -> 740

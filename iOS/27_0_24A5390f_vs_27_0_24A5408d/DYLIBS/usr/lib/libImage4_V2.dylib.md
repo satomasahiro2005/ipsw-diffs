@@ -2,28 +2,19 @@
 
 > `/usr/lib/libImage4_V2.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x19c93` | `0x1e323` | **`+0x4690`** |
+| `__DATA_CONST.__const` | `0x4ca0` | `0x50f0` | **`+0x450`** |
+
+### Other Changes
+
 ```diff
 
- 27.0.3.0.0
-   __TEXT.__text: 0x1a3fc
-   __TEXT.__cstring: 0x25b2
--  __TEXT.__const: 0x19c93
-+  __TEXT.__const: 0x1e323
-   __TEXT.__unwind_info: 0x550
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x4ca0
-+  __DATA_CONST.__const: 0x50f0
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x2bb8
-   __AUTH_CONST.__auth_got: 0x2a0
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/system/libcorecrypto.dylib
-   Functions: 639
 -  Symbols:   1806
 +  Symbols:   1827
-   CStrings:  283
- 
 Symbols:
 + _ApplePlatformBootstrapRootCAG1
 + _ApplePlatformBootstrapRootCAG1PublicKey

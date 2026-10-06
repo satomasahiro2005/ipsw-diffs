@@ -2,75 +2,49 @@
 
 > `/usr/libexec/peakpowermanagerd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__unwind_info`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1081c` | `0x109f4` | **`+0x1d8`** |
+| `__TEXT.__oslogstring` | `0xabf` | `0xb38` | **`+0x79`** |
+| `__TEXT.__cstring` | `0x8cd` | `0x93e` | **`+0x71`** |
+| `__TEXT.__objc_stubs` | `0x2280` | `0x22c0` | **`+0x40`** |
+| `__TEXT.__gcc_except_tab` | `0x90` | `0xc4` | **`+0x34`** |
+| `__DATA_CONST.__const` | `0xd8` | `0xf8` | **`+0x20`** |
+| `__TEXT.__auth_stubs` | `0x730` | `0x750` | **`+0x20`** |
+| `__TEXT.__objc_methname` | `0x2b40` | `0x2b5f` | **`+0x1f`** |
+| `__DATA.__objc_selrefs` | `0xc20` | `0xc30` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x3a8` | `0x3b8` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0xa0` | `0xb0` | **`+0x10`** |
+| `__DATA.__bss` | `0x29` | `0x31` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
 - `__DATA_CONST.__cfstring`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA.__objc_const`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__const`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -1191.0.27.0.0
--  __TEXT.__text: 0x1081c
--  __TEXT.__auth_stubs: 0x730
--  __TEXT.__objc_stubs: 0x2280
 +1191.0.37.0.0
-+  __TEXT.__text: 0x109f4
-+  __TEXT.__auth_stubs: 0x750
-+  __TEXT.__objc_stubs: 0x22c0
-   __TEXT.__objc_methlist: 0x10f4
--  __TEXT.__objc_methname: 0x2b40
--  __TEXT.__cstring: 0x8cd
-+  __TEXT.__objc_methname: 0x2b5f
-+  __TEXT.__cstring: 0x93e
-   __TEXT.__objc_classname: 0x50
-   __TEXT.__objc_methtype: 0x332
--  __TEXT.__gcc_except_tab: 0x90
-+  __TEXT.__gcc_except_tab: 0xc4
-   __TEXT.__const: 0x58
--  __TEXT.__oslogstring: 0xabf
-+  __TEXT.__oslogstring: 0xb38
-   __TEXT.__unwind_info: 0x2c8
--  __DATA_CONST.__const: 0xd8
-+  __DATA_CONST.__const: 0xf8
-   __DATA_CONST.__cfstring: 0xac0
-   __DATA_CONST.__objc_classlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x20
--  __DATA_CONST.__auth_got: 0x3a8
--  __DATA_CONST.__got: 0xa0
-+  __DATA_CONST.__auth_got: 0x3b8
-+  __DATA_CONST.__got: 0xb0
-   __DATA.__objc_const: 0x13f0
--  __DATA.__objc_selrefs: 0xc20
-+  __DATA.__objc_selrefs: 0xc30
-   __DATA.__objc_ivar: 0x114
-   __DATA.__objc_data: 0x140
-   __DATA.__data: 0x60
--  __DATA.__bss: 0x29
-+  __DATA.__bss: 0x31
-   __DATA.__common: 0x10
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 447
 -  Symbols:   146
 -  CStrings:  679
 +  Functions: 450
 +  Symbols:   150
 +  CStrings:  686
- 
 Symbols:
 + _OBJC_CLASS_$_NSValue
 + _bootstrap_check_in

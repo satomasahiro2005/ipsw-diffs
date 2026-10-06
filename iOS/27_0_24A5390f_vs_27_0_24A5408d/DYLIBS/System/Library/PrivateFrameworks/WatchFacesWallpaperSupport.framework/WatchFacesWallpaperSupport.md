@@ -2,88 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/WatchFacesWallpaperSupport.framework/WatchFacesWallpaperSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x41b90` | `0x43260` | **`+0x16d0`** |
+| `__DATA.__bss` | `0x5400` | `0x5700` | **`+0x300`** |
+| `__TEXT.__const` | `0x418a` | `0x434a` | **`+0x1c0`** |
+| `__TEXT.__oslogstring` | `0x16bc` | `0x174c` | **`+0x90`** |
+| `__TEXT.__swift5_typeref` | `0x11bc` | `0x1238` | **`+0x7c`** |
+| `__AUTH_CONST.__objc_const` | `0x2330` | `0x23a0` | **`+0x70`** |
+| `__DATA.__data` | `0xdb0` | `0xe10` | **`+0x60`** |
+| `__TEXT.__constg_swiftt` | `0x1640` | `0x1694` | **`+0x54`** |
+| `__TEXT.__swift5_fieldmd` | `0x1504` | `0x1544` | **`+0x40`** |
+| `__TEXT.__swift5_reflstr` | `0xf50` | `0xf90` | **`+0x40`** |
+| `__TEXT.__swift5_assocty` | `0xf0` | `0x120` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0xe48` | `0xe78` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0x2d08` | `0x2d30` | **`+0x28`** |
+| `__DATA_DIRTY.__objc_data` | `0x210` | `0x238` | **`+0x28`** |
+| `__TEXT.__swift5_proto` | `0x2d4` | `0x2ec` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x1b8` | `0x1cc` | **`+0x14`** |
+| `__DATA_CONST.__const` | `0x208` | `0x218` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0xc58` | `0xc48` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xb08` | `0xb10` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xcf8` | `0xd00` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0xe44` | `0xe4c` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x180` | `0x184` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2483.512.0.0.0
--  __TEXT.__text: 0x41b90
--  __TEXT.__objc_methlist: 0xe44
--  __TEXT.__const: 0x418a
--  __TEXT.__swift5_typeref: 0x11bc
 +2483.523.0.4.0
-+  __TEXT.__text: 0x43260
-+  __TEXT.__objc_methlist: 0xe4c
-+  __TEXT.__const: 0x434a
-+  __TEXT.__swift5_typeref: 0x1238
-   __TEXT.__cstring: 0xab3
-   __TEXT.__swift5_capture: 0xe4
--  __TEXT.__oslogstring: 0x16bc
--  __TEXT.__constg_swiftt: 0x1640
--  __TEXT.__swift5_reflstr: 0xf50
--  __TEXT.__swift5_fieldmd: 0x1504
--  __TEXT.__swift5_builtin: 0x1b8
--  __TEXT.__swift5_assocty: 0xf0
--  __TEXT.__swift5_proto: 0x2d4
--  __TEXT.__swift5_types: 0x180
-+  __TEXT.__oslogstring: 0x174c
-+  __TEXT.__constg_swiftt: 0x1694
-+  __TEXT.__swift5_reflstr: 0xf90
-+  __TEXT.__swift5_fieldmd: 0x1544
-+  __TEXT.__swift5_builtin: 0x1cc
-+  __TEXT.__swift5_assocty: 0x120
-+  __TEXT.__swift5_proto: 0x2ec
-+  __TEXT.__swift5_types: 0x184
-   __TEXT.__swift5_mpenum: 0x4c
-   __TEXT.__swift5_protos: 0x28
-   __TEXT.__swift_as_entry: 0x8
-   __TEXT.__swift_as_ret: 0x4
-   __TEXT.__swift_as_cont: 0x4
--  __TEXT.__unwind_info: 0xe48
-+  __TEXT.__unwind_info: 0xe78
-   __TEXT.__eh_frame: 0xb80
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x208
-+  __DATA_CONST.__const: 0x218
-   __DATA_CONST.__objc_classlist: 0x78
-   __DATA_CONST.__objc_protolist: 0xc0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xcf8
-+  __DATA_CONST.__objc_selrefs: 0xd00
-   __DATA_CONST.__objc_protorefs: 0x60
-   __DATA_CONST.__got: 0x310
--  __AUTH_CONST.__const: 0x2d08
--  __AUTH_CONST.__objc_const: 0x2330
--  __AUTH_CONST.__auth_got: 0xb08
-+  __AUTH_CONST.__const: 0x2d30
-+  __AUTH_CONST.__objc_const: 0x23a0
-+  __AUTH_CONST.__auth_got: 0xb10
-   __AUTH.__objc_data: 0x178
-   __AUTH.__data: 0x658
--  __DATA.__data: 0xdb0
--  __DATA.__bss: 0x5400
--  __DATA_DIRTY.__objc_data: 0x210
--  __DATA_DIRTY.__data: 0xc58
-+  __DATA.__data: 0xe10
-+  __DATA.__bss: 0x5700
-+  __DATA_DIRTY.__objc_data: 0x238
-+  __DATA_DIRTY.__data: 0xc48
-   __DATA_DIRTY.__bss: 0x500
-   __DATA_DIRTY.__common: 0x88
-   - /System/Library/Frameworks/ClockKit.framework/ClockKit
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1660
--  Symbols:   1032
+-  Symbols:   864
 -  CStrings:  164
 +  Functions: 1700
-+  Symbols:   1041
++  Symbols:   873
 +  CStrings:  167
- 
 Symbols:
 + _associated conformance So13NSRunLoopModeaSHSCSQ
 + _associated conformance So13NSRunLoopModeas20_SwiftNewtypeWrapperSCSY

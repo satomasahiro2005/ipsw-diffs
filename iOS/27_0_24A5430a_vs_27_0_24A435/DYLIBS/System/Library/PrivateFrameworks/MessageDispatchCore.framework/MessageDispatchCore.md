@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MessageDispatchCore.framework/MessageDispatchCore`
 
-```diff
+### Section Size Changes
 
- 2027.0.13.0.0
--  __TEXT.__text: 0x1d510
-+  __TEXT.__text: 0x1d630
-   __TEXT.__objc_methlist: 0x38
-   __TEXT.__const: 0x838
-   __TEXT.__swift5_typeref: 0x3e7
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1d510` | `0x1d630` | **`+0x120`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s19MessageDispatchCore0B13ListenerTableC8dispatch11messageCode6header0G4Data10Foundation0J0VSgs6UInt32V_xAKtYaKFTY0_ : 2996 -> 3000
 ~ _$s19MessageDispatchCore0B13ListenerTableC8register11messageCode8priority7handleryq__AC8PriorityOyxq__Gqd_0_Sgx_qd__tYaYbKctKAA0B12SerializableRd__AaLRd_0_r0_lF10Foundation4DataVSgx_APtYaKcfU_TY0_ : 964 -> 968

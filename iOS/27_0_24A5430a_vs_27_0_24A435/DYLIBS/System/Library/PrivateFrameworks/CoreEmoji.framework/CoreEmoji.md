@@ -2,22 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/CoreEmoji.framework/CoreEmoji`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x27680` | `0x276a8` | **`+0x28`** |
+
+### Other Changes
+
 ```diff
 
- 284.0.0.0.0
--  __TEXT.__text: 0x27680
-+  __TEXT.__text: 0x276a8
-   __TEXT.__const: 0x2dbc
-   __TEXT.__cstring: 0x4242
-   __TEXT.__gcc_except_tab: 0x1b94
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libsqlite3.dylib
-   Functions: 785
 -  Symbols:   1366
 +  Symbols:   1367
-   CStrings:  247
- 
 Symbols:
 + _OUTLINED_FUNCTION_3
 Functions:

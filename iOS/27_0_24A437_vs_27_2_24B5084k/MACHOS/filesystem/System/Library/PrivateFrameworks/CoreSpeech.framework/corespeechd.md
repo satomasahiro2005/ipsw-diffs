@@ -2,112 +2,70 @@
 
 > `/System/Library/PrivateFrameworks/CoreSpeech.framework/corespeechd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_dictobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x189b44` | `0x181cac` | **`-0x7e98`** |
+| `__TEXT.__objc_stubs` | `0x22c80` | `0x22320` | **`-0x960`** |
+| `__TEXT.__cstring` | `0x31719` | `0x30f03` | **`-0x816`** |
+| `__DATA_CONST.__const` | `0x6660` | `0x5e50` | **`-0x810`** |
+| `__DATA_CONST.__cfstring` | `0x96a0` | `0x9100` | **`-0x5a0`** |
+| `__TEXT.__oslogstring` | `0x27fa2` | `0x27ae9` | **`-0x4b9`** |
+| `__TEXT.__objc_methname` | `0x48eb4` | `0x48a57` | **`-0x45d`** |
+| `__TEXT.__objc_methtype` | `0x9a30` | `0x973d` | **`-0x2f3`** |
+| `__DATA.__objc_selrefs` | `0xd2e8` | `0xd0f0` | **`-0x1f8`** |
+| `__TEXT.__unwind_info` | `0x6308` | `0x6130` | **`-0x1d8`** |
+| `__DATA.__data` | `0x44a4` | `0x45c4` | **`+0x120`** |
+| `__DATA.__objc_const` | `0x2c3b0` | `0x2c4b0` | **`+0x100`** |
+| `__TEXT.__auth_stubs` | `0x1710` | `0x1610` | **`-0x100`** |
+| `__TEXT.__gcc_except_tab` | `0x31ec` | `0x30f8` | **`-0xf4`** |
+| `__DATA.__objc_data` | `0x6590` | `0x64a0` | **`-0xf0`** |
+| `__DATA_CONST.__got` | `0x15d0` | `0x1540` | **`-0x90`** |
+| `__DATA_CONST.__auth_got` | `0xba0` | `0xb20` | **`-0x80`** |
+| `__TEXT.__objc_methlist` | `0x1c1ec` | `0x1c178` | **`-0x74`** |
+| `__TEXT.__objc_classname` | `0x3a11` | `0x3a44` | **`+0x33`** |
+| `__DATA_CONST.__objc_superrefs` | `0x858` | `0x838` | **`-0x20`** |
+| `__DATA.__objc_ivar` | `0x2250` | `0x226c` | **`+0x1c`** |
+| `__DATA.__bss` | `0x710` | `0x6f8` | **`-0x18`** |
+| `__DATA_CONST.__objc_arrayobj` | `0x168` | `0x180` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0xa28` | `0xa10` | **`-0x18`** |
+| `__DATA_CONST.__objc_protolist` | `0x5b8` | `0x5d0` | **`+0x18`** |
+| `__TEXT.__const` | `0x3c0` | `0x3d0` | **`+0x10`** |
+| `__DATA_CONST.__objc_arraydata` | `0x288` | `0x290` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x100` | `0xf8` | **`-0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+
+### Other Changes
 
 ```diff
 
 -3600.70.47.11.1
--  __TEXT.__text: 0x184bb8
--  __TEXT.__auth_stubs: 0x1710
 +3605.23.1.0.0
-+  __TEXT.__text: 0x17cef4
-+  __TEXT.__auth_stubs: 0x1610
-   __TEXT.__lazy_helpers: 0x54
--  __TEXT.__objc_stubs: 0x22c80
--  __TEXT.__objc_methlist: 0x1c1ec
-+  __TEXT.__objc_stubs: 0x22320
-+  __TEXT.__objc_methlist: 0x1c178
-   __TEXT.__dlopen_cstrs: 0x31a
--  __TEXT.__const: 0x3c0
--  __TEXT.__gcc_except_tab: 0x31ec
--  __TEXT.__objc_methname: 0x48eb4
--  __TEXT.__cstring: 0x31719
--  __TEXT.__oslogstring: 0x27fa2
--  __TEXT.__objc_classname: 0x3a11
--  __TEXT.__objc_methtype: 0x9a30
--  __TEXT.__unwind_info: 0x7808
--  __DATA_CONST.__const: 0x6660
--  __DATA_CONST.__cfstring: 0x96a0
--  __DATA_CONST.__objc_classlist: 0xa28
-+  __TEXT.__const: 0x3d0
-+  __TEXT.__gcc_except_tab: 0x30f8
-+  __TEXT.__objc_methname: 0x48a57
-+  __TEXT.__cstring: 0x30f03
-+  __TEXT.__oslogstring: 0x27ae9
-+  __TEXT.__objc_classname: 0x3a44
-+  __TEXT.__objc_methtype: 0x973d
-+  __TEXT.__unwind_info: 0x75e8
-+  __DATA_CONST.__const: 0x5e50
-+  __DATA_CONST.__cfstring: 0x9100
-+  __DATA_CONST.__objc_classlist: 0xa10
-   __DATA_CONST.__objc_catlist: 0x28
--  __DATA_CONST.__objc_protolist: 0x5b8
-+  __DATA_CONST.__objc_protolist: 0x5d0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_protorefs: 0x100
--  __DATA_CONST.__objc_superrefs: 0x858
-+  __DATA_CONST.__objc_protorefs: 0xf8
-+  __DATA_CONST.__objc_superrefs: 0x838
-   __DATA_CONST.__objc_doubleobj: 0x80
-   __DATA_CONST.__objc_intobj: 0xd38
--  __DATA_CONST.__objc_arraydata: 0x288
--  __DATA_CONST.__objc_arrayobj: 0x168
-+  __DATA_CONST.__objc_arraydata: 0x290
-+  __DATA_CONST.__objc_arrayobj: 0x180
-   __DATA_CONST.__objc_dictobj: 0x348
-   __DATA_CONST.__objc_floatobj: 0x5b0
--  __DATA_CONST.__auth_got: 0xba0
--  __DATA_CONST.__got: 0x15d0
-+  __DATA_CONST.__auth_got: 0xb20
-+  __DATA_CONST.__got: 0x1540
-   __DATA_CONST.__auth_ptr: 0x8
--  __DATA.__objc_const: 0x2c3b0
--  __DATA.__objc_selrefs: 0xd2e8
--  __DATA.__objc_ivar: 0x2250
--  __DATA.__objc_data: 0x6590
-+  __DATA.__objc_const: 0x2c4b0
-+  __DATA.__objc_selrefs: 0xd0f0
-+  __DATA.__objc_ivar: 0x226c
-+  __DATA.__objc_data: 0x64a0
-   __DATA.__lazy_load_got: 0x8
--  __DATA.__data: 0x44a4
-+  __DATA.__data: 0x45c4
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
 
-   - /System/Library/Frameworks/SoundAnalysis.framework/SoundAnalysis
-   - /System/Library/Frameworks/Speech.framework/Speech
-   - /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
 +  - /System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore
-   - /System/Library/PrivateFrameworks/BackgroundSystemTasks.framework/BackgroundSystemTasks
-   - /System/Library/PrivateFrameworks/BiomeLibrary.framework/BiomeLibrary
-   - /System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
 +  - /usr/lib/swift/libswiftAVFoundation.dylib
 +  - /usr/lib/swift/libswiftAccelerate.dylib
 +  - /usr/lib/swift/libswiftCoreAudio.dylib
 +  - /usr/lib/swift/libswiftCoreAudio_Private.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
+
 +  - /usr/lib/swift/libswiftCoreImage.dylib
 +  - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
+
 +  - /usr/lib/swift/libswiftMLCompute.dylib
 +  - /usr/lib/swift/libswiftMetal.dylib
 +  - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
+
 +  - /usr/lib/swift/libswiftQuartzCore.dylib
 +  - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
+
 -  Functions: 10695
 -  Symbols:   1056
 -  CStrings:  17547
@@ -116,7 +74,6 @@
 +  Functions: 10579
 +  Symbols:   1035
 +  CStrings:  17361
- 
 Symbols:
 + _CSSupportsCompanionRuntime
 + _OBJC_CLASS_$_CESRBackgroundSystemTask

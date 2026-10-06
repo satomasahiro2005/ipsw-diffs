@@ -2,14 +2,15 @@
 
 > `/usr/lib/libBBUpdaterDynamic.dylib`
 
-```diff
+### Section Size Changes
 
- 1585.0.0.0.0
--  __TEXT.__text: 0x182b34
-+  __TEXT.__text: 0x182cec
-   __TEXT.__init_offsets: 0x164
-   __TEXT.__const: 0xaa20
-   __TEXT.__cstring: 0x281da
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x182b34` | `0x182cec` | **`+0x1b8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__16vectorINS_9sub_matchIPKcEENS_9allocatorIS4_EEE6assignEmRKS4_ : 460 -> 476
 ~ __ZNKSt3__111basic_regexIcNS_12regex_traitsIcEEE29__match_at_start_posix_nosubsINS_9allocatorINS_9sub_matchIPKcEEEEEEbS8_S8_RNS_13match_resultsIS8_T_EENS_15regex_constants15match_flag_typeEb : 2240 -> 2244

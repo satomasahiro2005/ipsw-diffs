@@ -2,39 +2,27 @@
 
 > `com.apple.driver.AppleSMC`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x1f4` | `0x254` | **`+0x60`** |
+| `__TEXT_EXEC.__text` | `0x2b570` | `0x2b544` | **`-0x2c`** |
+| `__TEXT.__cstring` | `0x9603` | `0x95e3` | **`-0x20`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__cstring: 0x9603
--  __TEXT.__const: 0x1f4
-+  __TEXT.__cstring: 0x95e3
-+  __TEXT.__const: 0x254
-   __TEXT.__os_log: 0xd97
--  __TEXT_EXEC.__text: 0x2b570
-+  __TEXT_EXEC.__text: 0x2b544
-   __TEXT_EXEC.__auth_stubs: 0xac0
-   __DATA.__data: 0xcc
-   __DATA.__common: 0x4e0
+-793.0.0.0.0
++794.0.0.0.0
 
-   __DATA_CONST.__auth_ptr: 0x8
-   Functions: 1010
-   Symbols:   0
--  CStrings:  1157
-+  CStrings:  1156
- 
-Sections:
-~ __DATA.__data : content changed
-~ __DATA_CONST.__mod_init_func : content changed
-~ __DATA_CONST.__mod_term_func : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__kalloc_type : content changed
-~ __DATA_CONST.__kalloc_var : content changed
-~ __DATA_CONST.__auth_got : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA_CONST.__auth_ptr : content changed
+-  CStrings:  1110
++  CStrings:  1109
 Functions:
 ~ __ZN8AppleSMC37sensorHubDirectWriteSensorExchangeKeyEjP17SMCSensorEx_Jumbo : 364 -> 376
-~ sub_fffffe0009657488 -> sub_fffffe00096577f4 : 64 -> 68
-~ sub_fffffe00096574c8 -> sub_fffffe0009657838 : 68 -> 76
+~ sub_fffffff009656788 -> sub_fffffff009657214 : 64 -> 68
+~ sub_fffffff0096567c8 -> sub_fffffff009657258 : 68 -> 76
 ~ __ZN8AppleSMC13setPowerStateEmP9IOService : 552 -> 468
 ~ __ZN20AppleSMCKeysEndpoint19_keyEndpointHandlerEPvS0_ : 2084 -> 2104
 ~ __ZN20AppleSMCKeysEndpoint22_powerStateActionGatedEmPv : 1276 -> 1272
@@ -52,5 +40,4 @@ CStrings:
 - "AppleSMCEmbedded::%s(): ENTER powerStateOrdinal=%x, newState=%x\n"
 - "AppleSMCEmbedded::%s(): kPowerOff\n"
 - "Jun 18 2026"
-
 ```

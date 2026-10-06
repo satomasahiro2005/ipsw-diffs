@@ -2,64 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/MTInferenceToolLib.framework/MTInferenceToolLib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c510` | `0x1c5b8` | **`+0xa8`** |
+| `__AUTH_CONST.__const` | `0x2768` | `0x2780` | **`+0x18`** |
+| `__TEXT.__swift5_fieldmd` | `0xf60` | `0xf6c` | **`+0xc`** |
+| `__TEXT.__swift5_reflstr` | `0xba2` | `0xbaa` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1c510
-+  __TEXT.__text: 0x1c5b8
-   __TEXT.__const: 0x30b8
-   __TEXT.__constg_swiftt: 0x7c8
-   __TEXT.__swift5_typeref: 0x7e8
--  __TEXT.__swift5_fieldmd: 0xf60
-+  __TEXT.__swift5_fieldmd: 0xf6c
-   __TEXT.__cstring: 0xf07
-   __TEXT.__swift5_builtin: 0x14
--  __TEXT.__swift5_reflstr: 0xba2
-+  __TEXT.__swift5_reflstr: 0xbaa
-   __TEXT.__swift5_assocty: 0x270
-   __TEXT.__swift5_proto: 0x2c4
-   __TEXT.__swift5_types: 0xd8
+-384.1.0.0.0
++384.3.0.0.0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xb8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2768
-+  __AUTH_CONST.__const: 0x2780
-   __AUTH_CONST.__auth_got: 0x690
-   __AUTH.__data: 0x248
-   __DATA.__data: 0xa60
-
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 990
-   Symbols:   459
 -  CStrings:  124
 +  CStrings:  125
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH.__data : content changed
 Functions:
-~ sub_287b37f18 -> sub_287eecf18 : 800 -> 792
-~ sub_287b3c264 -> sub_287ef125c : 88 -> 120
-~ sub_287b3c2bc -> sub_287ef12d4 : 160 -> 192
-~ sub_287b3c35c -> sub_287ef1394 : 140 -> 172
-~ sub_287b3c3e8 -> sub_287ef1440 : 156 -> 188
-~ sub_287b3c490 -> sub_287ef1508 : 92 -> 124
-~ sub_287b3cec0 -> sub_287ef1f58 : 756 -> 772
+~ sub_2879e8f18 -> sub_28c6ccf18 : 800 -> 792
+~ sub_2879ed264 -> sub_28c6d125c : 88 -> 120
+~ sub_2879ed2bc -> sub_28c6d12d4 : 160 -> 192
+~ sub_2879ed35c -> sub_28c6d1394 : 140 -> 172
+~ sub_2879ed3e8 -> sub_28c6d1440 : 156 -> 188
+~ sub_2879ed490 -> sub_28c6d1508 : 92 -> 124
+~ sub_2879edec0 -> sub_28c6d1f58 : 756 -> 772
 CStrings:
 + "ifp_lora"
-
 ```

@@ -2,18 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/WorldAwareSpatialAudio.framework/WorldAwareSpatialAudio`
 
-```diff
+### Section Size Changes
 
- 47.0.0.0.0
--  __TEXT.__text: 0x970f4
-+  __TEXT.__text: 0x97108
-   __TEXT.__objc_methlist: 0x4cc
-   __TEXT.__const: 0x5a78
-   __TEXT.__gcc_except_tab: 0x14
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x970f4` | `0x97108` | **`+0x14`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2b798c8a0 -> sub_2b8c658a0 : 404 -> 408
-~ sub_2b7994870 -> sub_2b8c6d874 : 384 -> 388
-~ sub_2b7996e80 -> sub_2b8c6fe88 : 236 -> 240
-~ sub_2b7996f6c -> sub_2b8c6ff78 : 236 -> 240
-~ sub_2b79ad994 -> sub_2b8c869a4 : 2428 -> 2432
+~ sub_2b78758a0 -> sub_2b8b408a0 : 404 -> 408
+~ sub_2b787d870 -> sub_2b8b48874 : 384 -> 388
+~ sub_2b787fe80 -> sub_2b8b4ae88 : 236 -> 240
+~ sub_2b787ff6c -> sub_2b8b4af78 : 236 -> 240
+~ sub_2b7896994 -> sub_2b8b619a4 : 2428 -> 2432
 ```

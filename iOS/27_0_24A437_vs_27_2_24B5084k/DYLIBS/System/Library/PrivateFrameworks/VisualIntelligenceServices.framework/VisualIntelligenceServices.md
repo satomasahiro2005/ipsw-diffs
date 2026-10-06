@@ -2,82 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/VisualIntelligenceServices.framework/VisualIntelligenceServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7d198` | `0x802a0` | **`+0x3108`** |
+| `__TEXT.__const` | `0xf064` | `0xfd84` | **`+0xd20`** |
+| `__DATA.__bss` | `0x13900` | `0x14600` | **`+0xd00`** |
+| `__AUTH_CONST.__const` | `0x8378` | `0x8948` | **`+0x5d0`** |
+| `__TEXT.__eh_frame` | `0x4028` | `0x41e8` | **`+0x1c0`** |
+| `__DATA_DIRTY.__data` | `0x1c00` | `0x1ab0` | **`-0x150`** |
+| `__TEXT.__unwind_info` | `0x2798` | `0x28d0` | **`+0x138`** |
+| `__TEXT.__swift5_fieldmd` | `0x3000` | `0x3110` | **`+0x110`** |
+| `__TEXT.__swift5_typeref` | `0x2f7c` | `0x307e` | **`+0x102`** |
+| `__DATA.__data` | `0x1ac8` | `0x1ba8` | **`+0xe0`** |
+| `__TEXT.__constg_swiftt` | `0x2758` | `0x2838` | **`+0xe0`** |
+| `__TEXT.__oslogstring` | `0xd0d` | `0xd8d` | **`+0x80`** |
+| `__TEXT.__swift5_proto` | `0xd9c` | `0xe04` | **`+0x68`** |
+| `__TEXT.__swift5_reflstr` | `0x18a0` | `0x18f0` | **`+0x50`** |
+| `__TEXT.__cstring` | `0x1589` | `0x15c9` | **`+0x40`** |
+| `__TEXT.__swift5_capture` | `0x524` | `0x54c` | **`+0x28`** |
+| `__TEXT.__swift5_types` | `0x404` | `0x424` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xb20` | `0xb38` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x210` | `0x228` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x8c` | `0xa0` | **`+0x14`** |
+| `__TEXT.__swift5_mpenum` | `0x20` | `0x30` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0xc8` | `0xd0` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x10c` | `0x114` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x110` | `0x118` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -246.0.0.0.0
--  __TEXT.__text: 0x777ec
--  __TEXT.__const: 0xf064
--  __TEXT.__cstring: 0x1589
--  __TEXT.__oslogstring: 0xd0d
--  __TEXT.__swift5_typeref: 0x2f7c
--  __TEXT.__constg_swiftt: 0x2758
--  __TEXT.__swift5_reflstr: 0x18a0
--  __TEXT.__swift5_fieldmd: 0x3000
--  __TEXT.__swift5_builtin: 0x8c
--  __TEXT.__swift5_capture: 0x524
--  __TEXT.__swift5_types: 0x404
--  __TEXT.__swift_as_entry: 0x10c
--  __TEXT.__swift_as_ret: 0x110
--  __TEXT.__swift_as_cont: 0xc8
--  __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__swift5_proto: 0xd9c
 +246.1.17.0.0
-+  __TEXT.__text: 0x7a728
-+  __TEXT.__const: 0xfd84
-+  __TEXT.__cstring: 0x15c9
-+  __TEXT.__oslogstring: 0xd8d
-+  __TEXT.__swift5_typeref: 0x307e
-+  __TEXT.__constg_swiftt: 0x2838
-+  __TEXT.__swift5_reflstr: 0x18f0
-+  __TEXT.__swift5_fieldmd: 0x3110
-+  __TEXT.__swift5_builtin: 0xa0
-+  __TEXT.__swift5_capture: 0x54c
-+  __TEXT.__swift5_types: 0x424
-+  __TEXT.__swift_as_entry: 0x114
-+  __TEXT.__swift_as_ret: 0x118
-+  __TEXT.__swift_as_cont: 0xd0
-+  __TEXT.__swift5_mpenum: 0x30
-+  __TEXT.__swift5_proto: 0xe04
-   __TEXT.__swift5_protos: 0x1c
--  __TEXT.__swift5_assocty: 0x210
--  __TEXT.__unwind_info: 0x32b0
--  __TEXT.__eh_frame: 0x4028
-+  __TEXT.__swift5_assocty: 0x228
-+  __TEXT.__unwind_info: 0x3420
-+  __TEXT.__eh_frame: 0x41e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x20
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x8378
-+  __AUTH_CONST.__const: 0x8948
-   __AUTH_CONST.__objc_const: 0x910
--  __AUTH_CONST.__auth_got: 0xb20
-+  __AUTH_CONST.__auth_got: 0xb38
-   __AUTH.__objc_data: 0x50
-   __AUTH.__data: 0x338
--  __DATA.__data: 0x1ac8
-+  __DATA.__data: 0x1ba8
-   __DATA_DIRTY.__objc_data: 0xa0
--  __DATA_DIRTY.__data: 0x1c00
-+  __DATA_DIRTY.__data: 0x1ab0
-   __DATA_DIRTY.__common: 0x60
-   __DATA_DIRTY.__bss: 0x7700
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3713
--  Symbols:   1480
+-  Symbols:   1476
 -  CStrings:  290
 +  Functions: 3824
-+  Symbols:   1512
++  Symbols:   1508
 +  CStrings:  296
- 
 Symbols:
 + _associated conformance 26VisualIntelligenceServices0A32ActionPredictionServiceInterfaceO21ClientToDaemonMessageO25PresentFeedbackCodingKeys33_A10C0AA022A930E3A585E2256D46C407LLOSHAASQ
 + _associated conformance 26VisualIntelligenceServices0A32ActionPredictionServiceInterfaceO21ClientToDaemonMessageO25PresentFeedbackCodingKeys33_A10C0AA022A930E3A585E2256D46C407LLOs0N3KeyAAs23CustomStringConvertible

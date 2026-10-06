@@ -2,123 +2,54 @@
 
 > `/System/Library/Frameworks/Foundation.framework/Foundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc0a210` | `0xc33380` | **`+0x29170`** |
+| `__AUTH_CONST.__const` | `0x377c0` | `0x372c8` | **`-0x4f8`** |
+| `__AUTH_CONST.__objc_const` | `0x34588` | `0x346c0` | **`+0x138`** |
+| `__TEXT.__swift5_capture` | `0x3900` | `0x37cc` | **`-0x134`** |
+| `__TEXT.__objc_methlist` | `0x24694` | `0x247ac` | **`+0x118`** |
+| `__AUTH.__objc_data` | `0x78b8` | `0x79c8` | **`+0x110`** |
+| `__AUTH_CONST.__auth_got` | `0x5420` | `0x5510` | **`+0xf0`** |
+| `__TEXT.__cstring` | `0x33d92` | `0x33e5f` | **`+0xcd`** |
+| `__TEXT.__eh_frame` | `0x22484` | `0x223ec` | **`-0x98`** |
+| `__TEXT.__oslogstring` | `0xfaea` | `0xfb73` | **`+0x89`** |
+| `__TEXT.__const` | `0x407dc3` | `0x407e43` | **`+0x80`** |
+| `__TEXT.__swift5_typeref` | `0xdd69` | `0xdde1` | **`+0x78`** |
+| `__DATA_DIRTY.__common` | `0x328` | `0x2c8` | **`-0x60`** |
+| `__TEXT.__constg_swiftt` | `0xec18` | `0xec74` | **`+0x5c`** |
+| `__DATA.__common` | `0x89d1` | `0x8a29` | **`+0x58`** |
+| `__TEXT.__unwind_info` | `0x1ddd0` | `0x1de18` | **`+0x48`** |
+| `__AUTH.__data` | `0x69f0` | `0x6a30` | **`+0x40`** |
+| `__DATA.__data` | `0xd1b4` | `0xd1ec` | **`+0x38`** |
+| `__DATA_CONST.__got` | `0x2a38` | `0x2a60` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x25f20` | `0x25f40` | **`+0x20`** |
+| `__TEXT.__swift5_builtin` | `0x8e8` | `0x8fc` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x1718` | `0x1728` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0x5158` | `0x5168` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0xefdc` | `0xefec` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x9d0c` | `0x9cfc` | **`-0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0xf78` | `0xf80` | **`+0x8`** |
+| `__DATA_DIRTY.__objc_data` | `0x6258` | `0x6250` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0x1218` | `0x1220` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x1498` | `0x1494` | **`-0x4`** |
+| `__TEXT.__dof_NSXPCProx` | `0x7a3` | `0x7a2` | **`-0x1`** |
+
+### Other Changes
+
 ```diff
 
 -5027.0.63.2.0
--  __TEXT.__text: 0xc0a210
 +5027.0.69.0.0
-+  __TEXT.__text: 0xc33380
-   __TEXT.__delay_stubs: 0x800
-   __TEXT.__delay_helper: 0x184
--  __TEXT.__objc_methlist: 0x24694
--  __TEXT.__const: 0x407dc3
--  __TEXT.__cstring: 0x33d92
-+  __TEXT.__objc_methlist: 0x247ac
-+  __TEXT.__const: 0x407e43
-+  __TEXT.__cstring: 0x33e5f
-   __TEXT.__dlopen_cstrs: 0x5d
--  __TEXT.__swift5_typeref: 0xdd69
--  __TEXT.__constg_swiftt: 0xec18
--  __TEXT.__swift5_reflstr: 0x9d0c
--  __TEXT.__swift5_fieldmd: 0xefdc
--  __TEXT.__swift5_builtin: 0x8e8
-+  __TEXT.__swift5_typeref: 0xdde1
-+  __TEXT.__constg_swiftt: 0xec74
-+  __TEXT.__swift5_reflstr: 0x9cfc
-+  __TEXT.__swift5_fieldmd: 0xefec
-+  __TEXT.__swift5_builtin: 0x8fc
-   __TEXT.__swift5_assocty: 0x5380
-   __TEXT.__swift5_proto: 0x3adc
--  __TEXT.__swift5_types: 0x1218
--  __TEXT.__swift5_capture: 0x3900
-+  __TEXT.__swift5_types: 0x1220
-+  __TEXT.__swift5_capture: 0x37cc
-   __TEXT.__swift5_protos: 0x138
-   __TEXT.__swift5_mpenum: 0x324
--  __TEXT.__oslogstring: 0xfaea
-+  __TEXT.__oslogstring: 0xfb73
-   __TEXT.__swift5_types2: 0x4c
-   __TEXT.__swift_as_entry: 0x104
-   __TEXT.__swift_as_ret: 0x170
 
-   __TEXT.__gcc_except_tab: 0x601c
-   __TEXT.__ustring: 0x53a
-   __TEXT.__dof_NSProcess: 0x34f
--  __TEXT.__dof_NSXPCProx: 0x7a3
-+  __TEXT.__dof_NSXPCProx: 0x7a2
-   __TEXT.__dof_NSXPCList: 0x2e9
-   __TEXT.__dof_NSXPCConn: 0x26cc
-   __TEXT.__dof_NSXPCLis0: 0x865
-   __TEXT.__dof_NSProgres: 0x115b
--  __TEXT.__unwind_info: 0x1ddd0
--  __TEXT.__eh_frame: 0x22484
-+  __TEXT.__unwind_info: 0x1de18
-+  __TEXT.__eh_frame: 0x223ec
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xb6f8
--  __DATA_CONST.__objc_classlist: 0x1718
-+  __DATA_CONST.__objc_classlist: 0x1728
-   __DATA_CONST.__objc_nlclslist: 0x30
-   __DATA_CONST.__objc_catlist: 0x1a8
-   __DATA_CONST.__objc_nlcatlist: 0x8
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xc948
-   __DATA_CONST.__objc_protorefs: 0x128
--  __DATA_CONST.__objc_superrefs: 0xf78
-+  __DATA_CONST.__objc_superrefs: 0xf80
-   __DATA_CONST.__objc_arraydata: 0xe098
--  __DATA_CONST.__got: 0x2a38
--  __AUTH_CONST.__const: 0x377c0
--  __AUTH_CONST.__cfstring: 0x25f20
--  __AUTH_CONST.__objc_const: 0x34588
-+  __DATA_CONST.__got: 0x2a60
-+  __AUTH_CONST.__const: 0x372c8
-+  __AUTH_CONST.__cfstring: 0x25f40
-+  __AUTH_CONST.__objc_const: 0x346c0
-   __AUTH_CONST.__objc_intobj: 0x1260
-   __AUTH_CONST.__objc_arrayobj: 0x2238
-   __AUTH_CONST.__objc_dictobj: 0x20a8
--  __AUTH_CONST.__auth_got: 0x5420
--  __AUTH.__objc_data: 0x78b8
--  __AUTH.__data: 0x69f0
--  __DATA.__objc_ivar: 0x1498
--  __DATA.__data: 0xd1b4
-+  __AUTH_CONST.__auth_got: 0x5510
-+  __AUTH.__objc_data: 0x79c8
-+  __AUTH.__data: 0x6a30
-+  __DATA.__objc_ivar: 0x1494
-+  __DATA.__data: 0xd1ec
-   __DATA.__crash_info: 0x148
-   __DATA.__bss: 0x688a8
--  __DATA.__common: 0x89d1
-+  __DATA.__common: 0x8a29
-   __DATA_DIRTY.__objc_ivar: 0x574
--  __DATA_DIRTY.__objc_data: 0x6258
--  __DATA_DIRTY.__data: 0x5158
-+  __DATA_DIRTY.__objc_data: 0x6250
-+  __DATA_DIRTY.__data: 0x5168
-   __DATA_DIRTY.__bss: 0x8870
--  __DATA_DIRTY.__common: 0x328
-+  __DATA_DIRTY.__common: 0x2c8
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 43692
--  Symbols:   96108
+-  Symbols:   91748
 -  CStrings:  7827
 +  Functions: 43696
-+  Symbols:   96219
++  Symbols:   91860
 +  CStrings:  7831
- 
 Symbols:
 + +[_NSPredicateOperatorUtilities copyRegexFindSafePattern:toBuffer:capacity:]
 + +[_NSPredicateUtilities _predicateKeyPathComponents:]
@@ -405,7 +336,6 @@ Symbols:
 + __PROPERTIES__TtC10Foundation34_NSSwiftImmortalCharacterSetBridge
 + ___45-[NSPredicate _logCopyDropsEvaluationBlocked]_block_invoke
 + __logCopyDropsEvaluationBlocked.onceToken
-+ _objc_msgSend$copyRegexFindSafePattern:toBuffer:capacity:
 + _symbolic Say_____G 10Foundation3URLV
 + _symbolic SayxGz_______lXX 10Foundation3URLV
 + _symbolic So29_NSImmortalCharacterSetBridgeC
@@ -592,8 +522,6 @@ Symbols:
 - _$sypypSgIgnr_ypAAIegnr_TR
 - _OBJC_IVAR_$__NSMutableCharacterSetBridge._isImmortal
 - __OBJC_$_INSTANCE_VARIABLES__NSMutableCharacterSetBridge
-- _objc_msgSend$_setImmortal
-- _objc_msgSend$copyRegexFindSafePattern:toBuffer:
 - _swift_retain_x4
 CStrings:
 + "Failed to provide an adequately sized buffer for escaping regex pattern string"

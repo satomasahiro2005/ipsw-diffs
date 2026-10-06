@@ -2,94 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd92138` | `0xddefb4` | **`+0x4ce7c`** |
+| `__AUTH_CONST.__objc_const` | `0x17da90` | `0x184b20` | **`+0x7090`** |
+| `__TEXT.__objc_methlist` | `0x10ad94` | `0x10fec4` | **`+0x5130`** |
+| `__TEXT.__cstring` | `0x95c1d` | `0x98e0b` | **`+0x31ee`** |
+| `__AUTH_CONST.__cfstring` | `0x80460` | `0x834e0` | **`+0x3080`** |
+| `__DATA_CONST.__const` | `0x3d8d0` | `0x3ff70` | **`+0x26a0`** |
+| `__AUTH_CONST.__const` | `0x25be9` | `0x27211` | **`+0x1628`** |
+| `__TEXT.__unwind_info` | `0x32f68` | `0x34590` | **`+0x1628`** |
+| `__DATA_CONST.__objc_selrefs` | `0x42ed0` | `0x44460` | **`+0x1590`** |
+| `__AUTH.__objc_data` | `0x29db0` | `0x2b020` | **`+0x1270`** |
+| `__DATA.__bss` | `0x1f980` | `0x20b80` | **`+0x1200`** |
+| `__TEXT.__const` | `0x17bc4` | `0x18c04` | **`+0x1040`** |
+| `__DATA.__objc_ivar` | `0x12be8` | `0x13160` | **`+0x578`** |
+| `__TEXT.__constg_swiftt` | `0x7f74` | `0x8458` | **`+0x4e4`** |
+| `__TEXT.__swift5_builtin` | `0x4a60` | `0x4d30` | **`+0x2d0`** |
+| `__TEXT.__swift5_proto` | `0x139c` | `0x159c` | **`+0x200`** |
+| `__DATA_CONST.__got` | `0x69b0` | `0x6ba8` | **`+0x1f8`** |
+| `__DATA_CONST.__objc_classlist` | `0x6878` | `0x6a50` | **`+0x1d8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x6828` | `0x6a00` | **`+0x1d8`** |
+| `__DATA.__data` | `0x3508` | `0x36c0` | **`+0x1b8`** |
+| `__TEXT.__swift5_typeref` | `0x1edc` | `0x1ff2` | **`+0x116`** |
+| `__TEXT.__eh_frame` | `0x4db8` | `0x4cc8` | **`-0xf0`** |
+| `__AUTH_CONST.__auth_got` | `0x928` | `0x9c8` | **`+0xa0`** |
+| `__TEXT.__swift5_types` | `0xf34` | `0xfc8` | **`+0x94`** |
+| `__TEXT.__oslogstring` | `0xc1` | `0x111` | **`+0x50`** |
+| `__AUTH_CONST.__objc_intobj` | `0xcf0` | `0xd20` | **`+0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0x45c` | `0x488` | **`+0x2c`** |
+| `__DATA.__common` | `0x20` | `0x38` | **`+0x18`** |
+| `__TEXT.__swift5_capture` | `—` | `0x14` | **`+0x14`** |
+| `__TEXT.__swift5_reflstr` | `0x21d` | `0x22d` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `0x24` | `0x28` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3600.85.1.0.0
--  __TEXT.__text: 0xd5c540
--  __TEXT.__objc_methlist: 0x10ad94
--  __TEXT.__const: 0x17bc4
--  __TEXT.__swift5_typeref: 0x1edc
--  __TEXT.__cstring: 0x95c1d
--  __TEXT.__constg_swiftt: 0x7f74
--  __TEXT.__swift5_reflstr: 0x21d
--  __TEXT.__swift5_fieldmd: 0x45c
--  __TEXT.__swift5_builtin: 0x4a60
 +3605.27.1.1.1
-+  __TEXT.__text: 0xda7cbc
-+  __TEXT.__objc_methlist: 0x10fec4
-+  __TEXT.__const: 0x18c04
-+  __TEXT.__swift5_typeref: 0x1ff2
-+  __TEXT.__cstring: 0x98e0b
-+  __TEXT.__constg_swiftt: 0x8458
-+  __TEXT.__swift5_reflstr: 0x22d
-+  __TEXT.__swift5_fieldmd: 0x488
-+  __TEXT.__swift5_builtin: 0x4d30
-   __TEXT.__swift5_assocty: 0x150
--  __TEXT.__swift5_proto: 0x139c
--  __TEXT.__swift5_types: 0xf34
--  __TEXT.__oslogstring: 0xc1
--  __TEXT.__swift5_protos: 0x24
--  __TEXT.__unwind_info: 0x36c38
--  __TEXT.__eh_frame: 0x4dc0
-+  __TEXT.__swift5_proto: 0x159c
-+  __TEXT.__swift5_types: 0xfc8
-+  __TEXT.__oslogstring: 0x111
-+  __TEXT.__swift5_protos: 0x28
-+  __TEXT.__swift5_capture: 0x14
-+  __TEXT.__unwind_info: 0x37e78
-+  __TEXT.__eh_frame: 0x4cd0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3d8d0
--  __DATA_CONST.__objc_classlist: 0x6878
-+  __DATA_CONST.__const: 0x3ff70
-+  __DATA_CONST.__objc_classlist: 0x6a50
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x42ed0
-+  __DATA_CONST.__objc_selrefs: 0x44460
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x6828
--  __DATA_CONST.__got: 0x69b0
--  __AUTH_CONST.__const: 0x25be9
--  __AUTH_CONST.__cfstring: 0x80460
--  __AUTH_CONST.__objc_const: 0x17da90
--  __AUTH_CONST.__objc_intobj: 0xcf0
--  __AUTH_CONST.__auth_got: 0x928
--  __AUTH.__objc_data: 0x29db0
-+  __DATA_CONST.__objc_superrefs: 0x6a00
-+  __DATA_CONST.__got: 0x6ba8
-+  __AUTH_CONST.__const: 0x27211
-+  __AUTH_CONST.__cfstring: 0x834e0
-+  __AUTH_CONST.__objc_const: 0x184b20
-+  __AUTH_CONST.__objc_intobj: 0xd20
-+  __AUTH_CONST.__auth_got: 0x9c8
-+  __AUTH.__objc_data: 0x2b020
-   __AUTH.__data: 0x160
--  __DATA.__objc_ivar: 0x12be8
--  __DATA.__data: 0x3508
--  __DATA.__common: 0x20
-+  __DATA.__objc_ivar: 0x13160
-+  __DATA.__data: 0x36c0
-+  __DATA.__common: 0x38
-   __DATA_DIRTY.__objc_data: 0x17970
-   __DATA_DIRTY.__data: 0x238
-   __DATA_DIRTY.__common: 0x38
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 94031
--  Symbols:   146377
+-  Symbols:   132275
 -  CStrings:  17568
 +  Functions: 96249
-+  Symbols:   149148
++  Symbols:   134766
 +  CStrings:  17961
- 
 Symbols:
 + +[TCSchemaTCClientEvent(Component) joinability]
 + +[TCSchemaTCClientEvent(InnerEventContainer) getInnerTypeStringByTag:]
@@ -2542,286 +2503,6 @@ Symbols:
 + ___swift_memcpy16_8
 + ___unnamed_12
 + ___unnamed_8
-+ _objc_msgSend$activeRuntimeAtRequestStart
-+ _objc_msgSend$activeRuntimeSwitchAttempted
-+ _objc_msgSend$addAppPartyTypes:
-+ _objc_msgSend$addCascadeDomainMetrics:
-+ _objc_msgSend$addCriterionResults:
-+ _objc_msgSend$addExcludedSignals:
-+ _objc_msgSend$addRequestedDomain:
-+ _objc_msgSend$agenticGradingInferenceGenerated
-+ _objc_msgSend$appPartyTypes
-+ _objc_msgSend$applicableWeightMilliunits
-+ _objc_msgSend$architectureUsed
-+ _objc_msgSend$asrRisk
-+ _objc_msgSend$averageTimeBetweenContentInMs
-+ _objc_msgSend$cascadeDomainMetrics
-+ _objc_msgSend$cascadeItemType
-+ _objc_msgSend$cascadeSetCount
-+ _objc_msgSend$categoryScore
-+ _objc_msgSend$classifyContext
-+ _objc_msgSend$clearAppPartyTypes
-+ _objc_msgSend$clearCascadeDomainMetrics
-+ _objc_msgSend$clearCriterionResults
-+ _objc_msgSend$clearExcludedSignals
-+ _objc_msgSend$clearRequestedDomain
-+ _objc_msgSend$confMarginBucket
-+ _objc_msgSend$contentEventCount
-+ _objc_msgSend$contentStreamingDurationInMs
-+ _objc_msgSend$criterionId
-+ _objc_msgSend$criterionResults
-+ _objc_msgSend$dataSharingPromptVersion
-+ _objc_msgSend$deleteDomainId
-+ _objc_msgSend$domainId
-+ _objc_msgSend$dropReason
-+ _objc_msgSend$elapsedSinceActivationInMs
-+ _objc_msgSend$elapsedToForwardCompletedInMs
-+ _objc_msgSend$errorClass
-+ _objc_msgSend$errorResults
-+ _objc_msgSend$eventStreamResultType
-+ _objc_msgSend$excludedScope
-+ _objc_msgSend$excludedSignals
-+ _objc_msgSend$executorDurationInMs
-+ _objc_msgSend$executorInjectableContentClassifierCallContext
-+ _objc_msgSend$executorModelDurationInMs
-+ _objc_msgSend$fuzzyMatchScore
-+ _objc_msgSend$gate
-+ _objc_msgSend$gated
-+ _objc_msgSend$generalResults
-+ _objc_msgSend$graderResult
-+ _objc_msgSend$graderType
-+ _objc_msgSend$hasVoiceTrigger
-+ _objc_msgSend$inputCharCount
-+ _objc_msgSend$inputTokenBucketOdm
-+ _objc_msgSend$inputTokenBucketPcc
-+ _objc_msgSend$isAnnounceEligible
-+ _objc_msgSend$isConversationContinuation
-+ _objc_msgSend$isGuest
-+ _objc_msgSend$isPQA
-+ _objc_msgSend$isRemoteExecution
-+ _objc_msgSend$isShadowMode
-+ _objc_msgSend$itemsEnumeratedCount
-+ _objc_msgSend$judged
-+ _objc_msgSend$latencyBucket
-+ _objc_msgSend$loadContext
-+ _objc_msgSend$longestTimeBetweenContentInMs
-+ _objc_msgSend$matchedField
-+ _objc_msgSend$mediaRank
-+ _objc_msgSend$mergeOutcome
-+ _objc_msgSend$mergedItemCount
-+ _objc_msgSend$mergedRank
-+ _objc_msgSend$milestone
-+ _objc_msgSend$multiDeviceRoutingMode
-+ _objc_msgSend$nBestPhrases
-+ _objc_msgSend$notJudgedReason
-+ _objc_msgSend$numActivatedNCBVQEntitiesFromJIT
-+ _objc_msgSend$numEnrolledMembers
-+ _objc_msgSend$numIdentityTransitions
-+ _objc_msgSend$numInteractionsConsidered
-+ _objc_msgSend$numInteractionsGraded
-+ _objc_msgSend$numResultsReceived
-+ _objc_msgSend$odmThreshold
-+ _objc_msgSend$outputTokenBucketOdm
-+ _objc_msgSend$outputTokenBucketPcc
-+ _objc_msgSend$parseOutcome
-+ _objc_msgSend$pegasusItemCount
-+ _objc_msgSend$pegasusThreshold
-+ _objc_msgSend$perceptionClassification
-+ _objc_msgSend$phase
-+ _objc_msgSend$phrasesWithChoice
-+ _objc_msgSend$plannerDurationInMs
-+ _objc_msgSend$plannerModelDurationInMs
-+ _objc_msgSend$promptOrdinal
-+ _objc_msgSend$provenance
-+ _objc_msgSend$queryRewritten
-+ _objc_msgSend$reachedLastLine
-+ _objc_msgSend$regrade
-+ _objc_msgSend$requestedDomains
-+ _objc_msgSend$requesterFlow
-+ _objc_msgSend$responseGenerationDurationInMs
-+ _objc_msgSend$responseGenerationModelDurationInMs
-+ _objc_msgSend$resultOrdinal
-+ _objc_msgSend$retries
-+ _objc_msgSend$rootIfSessionId
-+ _objc_msgSend$rubricVersion
-+ _objc_msgSend$runId
-+ _objc_msgSend$runSampleProbability
-+ _objc_msgSend$saRemoteSearchContext
-+ _objc_msgSend$safetyDurationInMs
-+ _objc_msgSend$safetyModelDurationInMs
-+ _objc_msgSend$sampleAgreement
-+ _objc_msgSend$samples
-+ _objc_msgSend$scoreOdm
-+ _objc_msgSend$scorePcc
-+ _objc_msgSend$scorePegasus
-+ _objc_msgSend$selectedHypothesisIndex
-+ _objc_msgSend$selectionOutcome
-+ _objc_msgSend$setActiveRuntimeAtRequestStart:
-+ _objc_msgSend$setActiveRuntimeSwitchAttempted:
-+ _objc_msgSend$setAgenticGradingInferenceGenerated:
-+ _objc_msgSend$setApplicableWeightMilliunits:
-+ _objc_msgSend$setArchitectureUsed:
-+ _objc_msgSend$setAsrRisk:
-+ _objc_msgSend$setAverageTimeBetweenContentInMs:
-+ _objc_msgSend$setCascadeItemType:
-+ _objc_msgSend$setCascadeSetCount:
-+ _objc_msgSend$setCategoryScore:
-+ _objc_msgSend$setClassifyContext:
-+ _objc_msgSend$setConfMarginBucket:
-+ _objc_msgSend$setContentEventCount:
-+ _objc_msgSend$setContentStreamingDurationInMs:
-+ _objc_msgSend$setCriterionId:
-+ _objc_msgSend$setDataSharingPromptVersion:
-+ _objc_msgSend$setDomainId:
-+ _objc_msgSend$setDropReason:
-+ _objc_msgSend$setElapsedSinceActivationInMs:
-+ _objc_msgSend$setElapsedToForwardCompletedInMs:
-+ _objc_msgSend$setErrorClass:
-+ _objc_msgSend$setErrorResults:
-+ _objc_msgSend$setEventStreamResultType:
-+ _objc_msgSend$setExcludedScope:
-+ _objc_msgSend$setExecutorDurationInMs:
-+ _objc_msgSend$setExecutorInjectableContentClassifierCallContext:
-+ _objc_msgSend$setExecutorModelDurationInMs:
-+ _objc_msgSend$setFuzzyMatchScore:
-+ _objc_msgSend$setGate:
-+ _objc_msgSend$setGated:
-+ _objc_msgSend$setGeneralResults:
-+ _objc_msgSend$setGraderResult:
-+ _objc_msgSend$setGraderType:
-+ _objc_msgSend$setHasVoiceTrigger:
-+ _objc_msgSend$setInputCharCount:
-+ _objc_msgSend$setInputTokenBucketOdm:
-+ _objc_msgSend$setInputTokenBucketPcc:
-+ _objc_msgSend$setIsAnnounceEligible:
-+ _objc_msgSend$setIsConversationContinuation:
-+ _objc_msgSend$setIsGuest:
-+ _objc_msgSend$setIsPQA:
-+ _objc_msgSend$setIsRemoteExecution:
-+ _objc_msgSend$setIsShadowMode:
-+ _objc_msgSend$setItemsEnumeratedCount:
-+ _objc_msgSend$setJudged:
-+ _objc_msgSend$setLatencyBucket:
-+ _objc_msgSend$setLoadContext:
-+ _objc_msgSend$setLongestTimeBetweenContentInMs:
-+ _objc_msgSend$setMatchedField:
-+ _objc_msgSend$setMediaRank:
-+ _objc_msgSend$setMergeOutcome:
-+ _objc_msgSend$setMergedItemCount:
-+ _objc_msgSend$setMergedRank:
-+ _objc_msgSend$setMilestone:
-+ _objc_msgSend$setMultiDeviceRoutingMode:
-+ _objc_msgSend$setNBestPhrases:
-+ _objc_msgSend$setNotJudgedReason:
-+ _objc_msgSend$setNumActivatedNCBVQEntitiesFromJIT:
-+ _objc_msgSend$setNumEnrolledMembers:
-+ _objc_msgSend$setNumIdentityTransitions:
-+ _objc_msgSend$setNumInteractionsConsidered:
-+ _objc_msgSend$setNumInteractionsGraded:
-+ _objc_msgSend$setNumResultsReceived:
-+ _objc_msgSend$setOdmThreshold:
-+ _objc_msgSend$setOutputTokenBucketOdm:
-+ _objc_msgSend$setOutputTokenBucketPcc:
-+ _objc_msgSend$setParseOutcome:
-+ _objc_msgSend$setPegasusItemCount:
-+ _objc_msgSend$setPegasusThreshold:
-+ _objc_msgSend$setPerceptionClassification:
-+ _objc_msgSend$setPhase:
-+ _objc_msgSend$setPhrasesWithChoice:
-+ _objc_msgSend$setPlannerDurationInMs:
-+ _objc_msgSend$setPlannerModelDurationInMs:
-+ _objc_msgSend$setPromptOrdinal:
-+ _objc_msgSend$setProvenance:
-+ _objc_msgSend$setQueryRewritten:
-+ _objc_msgSend$setReachedLastLine:
-+ _objc_msgSend$setRegrade:
-+ _objc_msgSend$setRequesterFlow:
-+ _objc_msgSend$setResponseGenerationDurationInMs:
-+ _objc_msgSend$setResponseGenerationModelDurationInMs:
-+ _objc_msgSend$setResultOrdinal:
-+ _objc_msgSend$setRetries:
-+ _objc_msgSend$setRootIfSessionId:
-+ _objc_msgSend$setRubricVersion:
-+ _objc_msgSend$setRunId:
-+ _objc_msgSend$setRunSampleProbability:
-+ _objc_msgSend$setSaRemoteSearchContext:
-+ _objc_msgSend$setSafetyDurationInMs:
-+ _objc_msgSend$setSafetyModelDurationInMs:
-+ _objc_msgSend$setSampleAgreement:
-+ _objc_msgSend$setSamples:
-+ _objc_msgSend$setScoreOdm:
-+ _objc_msgSend$setScorePcc:
-+ _objc_msgSend$setScorePegasus:
-+ _objc_msgSend$setSelectedHypothesisIndex:
-+ _objc_msgSend$setSelectionOutcome:
-+ _objc_msgSend$setSpeakerIdResultReceived:
-+ _objc_msgSend$setSpeakerIdentificationResultReceived:
-+ _objc_msgSend$setSpeakerIdentificationSettled:
-+ _objc_msgSend$setSpeechGradingInferenceMetadata:
-+ _objc_msgSend$setStHybridLocalSearchContext:
-+ _objc_msgSend$setStMediaSearchContext:
-+ _objc_msgSend$setStMediaSearchMergeContext:
-+ _objc_msgSend$setStateAtSettlement:
-+ _objc_msgSend$setStringMatchStrategy:
-+ _objc_msgSend$setSuccessResults:
-+ _objc_msgSend$setTcId:
-+ _objc_msgSend$setThin:
-+ _objc_msgSend$setTimeToFirstContentInMs:
-+ _objc_msgSend$setTimeToResponseFinishInMs:
-+ _objc_msgSend$setTimeToResponseStartInMs:
-+ _objc_msgSend$setTokenBucketScheme:
-+ _objc_msgSend$setTokenCounts:
-+ _objc_msgSend$setTopHypothesisConfBucket:
-+ _objc_msgSend$setTotalRequestDurationInMs:
-+ _objc_msgSend$setTotalTokenBucketOdm:
-+ _objc_msgSend$setTotalTokenBucketPcc:
-+ _objc_msgSend$setTotalWeightMilliunits:
-+ _objc_msgSend$setUeiCarPlayBannerPreprocessedTapped:
-+ _objc_msgSend$setUeiResponseScrolled:
-+ _objc_msgSend$setUserClassification:
-+ _objc_msgSend$setUserIdentityChecked:
-+ _objc_msgSend$setUserIdentityClassification:
-+ _objc_msgSend$setUserIdentityConfirmationRequested:
-+ _objc_msgSend$setUserIdentityConfirmationResolved:
-+ _objc_msgSend$setVerdict:
-+ _objc_msgSend$setWasAlsoReturnedByPegasus:
-+ _objc_msgSend$setWasForwarded:
-+ _objc_msgSend$setWasIdentityTransition:
-+ _objc_msgSend$speakerIdResultReceived
-+ _objc_msgSend$speakerIdentificationResultReceived
-+ _objc_msgSend$speakerIdentificationSettled
-+ _objc_msgSend$speechGradingInferenceMetadata
-+ _objc_msgSend$stHybridLocalSearchContext
-+ _objc_msgSend$stMediaSearchContext
-+ _objc_msgSend$stMediaSearchMergeContext
-+ _objc_msgSend$stateAtSettlement
-+ _objc_msgSend$stringMatchStrategy
-+ _objc_msgSend$successResults
-+ _objc_msgSend$tcId
-+ _objc_msgSend$thin
-+ _objc_msgSend$timeToFirstContentInMs
-+ _objc_msgSend$timeToResponseFinishInMs
-+ _objc_msgSend$timeToResponseStartInMs
-+ _objc_msgSend$tokenBucketScheme
-+ _objc_msgSend$tokenCounts
-+ _objc_msgSend$topHypothesisConfBucket
-+ _objc_msgSend$totalRequestDurationInMs
-+ _objc_msgSend$totalTokenBucketOdm
-+ _objc_msgSend$totalTokenBucketPcc
-+ _objc_msgSend$totalWeightMilliunits
-+ _objc_msgSend$ueiCarPlayBannerPreprocessedTapped
-+ _objc_msgSend$ueiResponseScrolled
-+ _objc_msgSend$userClassification
-+ _objc_msgSend$userIdentityChecked
-+ _objc_msgSend$userIdentityClassification
-+ _objc_msgSend$userIdentityConfirmationRequested
-+ _objc_msgSend$userIdentityConfirmationResolved
-+ _objc_msgSend$verdict
-+ _objc_msgSend$wasAlsoReturnedByPegasus
-+ _objc_msgSend$wasForwarded
-+ _objc_msgSend$wasIdentityTransition
-+ _objc_msgSend$whichGraderresult
-+ _objc_msgSend$whichPlannertoolsresult
 + _swift_deallocObject
 + _swift_getFunctionTypeMetadata2
 + _swift_retain_x20

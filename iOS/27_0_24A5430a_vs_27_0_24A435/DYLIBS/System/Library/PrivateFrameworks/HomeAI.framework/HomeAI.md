@@ -2,29 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/HomeAI.framework/HomeAI`
 
-```diff
+### Section Size Changes
 
- 378.0.0.0.0
--  __TEXT.__text: 0x17aa40
-+  __TEXT.__text: 0x17b54c
-   __TEXT.__init_offsets: 0x10
-   __TEXT.__objc_methlist: 0xa25c
-   __TEXT.__const: 0x495d
-   __TEXT.__cstring: 0xd9f1
--  __TEXT.__gcc_except_tab: 0xc1f8
-+  __TEXT.__gcc_except_tab: 0xc210
-   __TEXT.__oslogstring: 0xe4cc
-   __TEXT.__dlopen_cstrs: 0x16e
-   __TEXT.__swift5_typeref: 0x21
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17aa40` | `0x17b54c` | **`+0xb0c`** |
+| `__TEXT.__gcc_except_tab` | `0xc1f8` | `0xc210` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x5090` | `0x5088` | **`-0x8`** |
 
-   __TEXT.__swift5_reflstr: 0x74
-   __TEXT.__swift5_fieldmd: 0x4c
-   __TEXT.__swift5_types: 0x4
--  __TEXT.__unwind_info: 0x5090
-+  __TEXT.__unwind_info: 0x5088
-   __TEXT.__eh_frame: 0x50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+### Other Changes
+
+```text
 Functions:
 ~ -[HMISignificantActivityFcosDetector _postProcessOffsetsZero:offsetsOne:scores:yaws:rolls:outputPredictions:] : 1760 -> 1800
 ~ -[HMIBackgroundEstimator _copyFromPixelBuffer:toInputBuffer:translateCol:translateRow:] : 492 -> 488

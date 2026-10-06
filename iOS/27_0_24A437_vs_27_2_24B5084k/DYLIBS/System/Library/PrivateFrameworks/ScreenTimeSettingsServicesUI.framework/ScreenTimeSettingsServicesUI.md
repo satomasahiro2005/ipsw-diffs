@@ -2,110 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/ScreenTimeSettingsServicesUI.framework/ScreenTimeSettingsServicesUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x673e18` | `0x68b54c` | **`+0x17734`** |
+| `__TEXT.__const` | `0x377a4` | `0x38914` | **`+0x1170`** |
+| `__AUTH_CONST.__const` | `0x20b08` | `0x215d8` | **`+0xad0`** |
+| `__DATA.__bss` | `0x26998` | `0x273b8` | **`+0xa20`** |
+| `__TEXT.__cstring` | `0x1b283` | `0x1bb43` | **`+0x8c0`** |
+| `__TEXT.__constg_swiftt` | `0x1202c` | `0x124c4` | **`+0x498`** |
+| `__DATA.__data` | `0x117d8` | `0x11bc0` | **`+0x3e8`** |
+| `__TEXT.__eh_frame` | `0x14ff0` | `0x153c8` | **`+0x3d8`** |
+| `__AUTH.__data` | `0x11a00` | `0x11d78` | **`+0x378`** |
+| `__TEXT.__swift5_reflstr` | `0xc2e7` | `0xc647` | **`+0x360`** |
+| `__TEXT.__swift5_capture` | `0x89a8` | `0x8ce4` | **`+0x33c`** |
+| `__TEXT.__swift5_fieldmd` | `0xbaf0` | `0xbd58` | **`+0x268`** |
+| `__AUTH_CONST.__objc_const` | `0x96d0` | `0x9870` | **`+0x1a0`** |
+| `__DATA_DIRTY.__bss` | `0x1730` | `0x15b0` | **`-0x180`** |
+| `__TEXT.__swift5_assocty` | `0x2e88` | `0x2f78` | **`+0xf0`** |
+| `__TEXT.__swift_as_cont` | `0xc68` | `0xd08` | **`+0xa0`** |
+| `__AUTH_CONST.__auth_got` | `0x4b88` | `0x4c20` | **`+0x98`** |
+| `__DATA_CONST.__got` | `0x2838` | `0x28c0` | **`+0x88`** |
+| `__TEXT.__oslogstring` | `0x54a5` | `0x5525` | **`+0x80`** |
+| `__TEXT.__swift5_typeref` | `0x5f8f0` | `0x5f882` | **`-0x6e`** |
+| `__DATA_DIRTY.__data` | `0x3bc8` | `0x3c30` | **`+0x68`** |
+| `__TEXT.__swift_as_ret` | `0x51c` | `0x554` | **`+0x38`** |
+| `__TEXT.__swift5_types` | `0xc20` | `0xc48` | **`+0x28`** |
+| `__TEXT.__swift5_protos` | `0xc0` | `0xa0` | **`-0x20`** |
+| `__TEXT.__swift_as_entry` | `0x530` | `0x550` | **`+0x20`** |
+| `__DATA.__common` | `0x3f8` | `0x410` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0x14cc` | `0x14e0` | **`+0x14`** |
+| `__DATA_CONST.__const` | `0x470` | `0x480` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x104f8` | `0x104e8` | **`-0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0xf18` | `0xf10` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -97.0.104.0.0
--  __TEXT.__text: 0x63ae78
 +97.1.6.1.0
-+  __TEXT.__text: 0x6510b8
-   __TEXT.__objc_methlist: 0xba0
--  __TEXT.__const: 0x377a4
-+  __TEXT.__const: 0x38914
-   __TEXT.__gcc_except_tab: 0xd0
--  __TEXT.__cstring: 0x1b283
-+  __TEXT.__cstring: 0x1bb43
-   __TEXT.__dlopen_cstrs: 0x164
--  __TEXT.__oslogstring: 0x54a5
--  __TEXT.__constg_swiftt: 0x1202c
--  __TEXT.__swift5_typeref: 0x5f8f0
-+  __TEXT.__oslogstring: 0x5525
-+  __TEXT.__constg_swiftt: 0x124c4
-+  __TEXT.__swift5_typeref: 0x5f882
-   __TEXT.__swift5_builtin: 0x154
--  __TEXT.__swift5_reflstr: 0xc2e7
--  __TEXT.__swift5_fieldmd: 0xbaf0
--  __TEXT.__swift5_assocty: 0x2e88
--  __TEXT.__swift5_proto: 0x14cc
--  __TEXT.__swift5_types: 0xc20
--  __TEXT.__swift5_capture: 0x89a8
--  __TEXT.__swift_as_entry: 0x530
--  __TEXT.__swift_as_ret: 0x51c
--  __TEXT.__swift_as_cont: 0xc68
--  __TEXT.__swift5_protos: 0xc0
-+  __TEXT.__swift5_reflstr: 0xc647
-+  __TEXT.__swift5_fieldmd: 0xbd58
-+  __TEXT.__swift5_assocty: 0x2f78
-+  __TEXT.__swift5_proto: 0x14e0
-+  __TEXT.__swift5_types: 0xc48
-+  __TEXT.__swift5_capture: 0x8ce4
-+  __TEXT.__swift_as_entry: 0x550
-+  __TEXT.__swift_as_ret: 0x554
-+  __TEXT.__swift_as_cont: 0xd08
-+  __TEXT.__swift5_protos: 0xa0
-   __TEXT.__swift5_mpenum: 0x5c
--  __TEXT.__unwind_info: 0x14340
--  __TEXT.__eh_frame: 0x15000
-+  __TEXT.__unwind_info: 0x148e0
-+  __TEXT.__eh_frame: 0x153d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x470
-+  __DATA_CONST.__const: 0x480
-   __DATA_CONST.__objc_classlist: 0x3b0
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0xb0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xf18
-+  __DATA_CONST.__objc_selrefs: 0xf10
-   __DATA_CONST.__objc_protorefs: 0x50
-   __DATA_CONST.__objc_superrefs: 0x18
--  __DATA_CONST.__got: 0x2838
--  __AUTH_CONST.__const: 0x20b08
-+  __DATA_CONST.__got: 0x28c0
-+  __AUTH_CONST.__const: 0x215d8
-   __AUTH_CONST.__cfstring: 0x160
--  __AUTH_CONST.__objc_const: 0x96d0
--  __AUTH_CONST.__auth_got: 0x4b88
-+  __AUTH_CONST.__objc_const: 0x9870
-+  __AUTH_CONST.__auth_got: 0x4c20
-   __AUTH.__objc_data: 0x20b0
--  __AUTH.__data: 0x11a00
-+  __AUTH.__data: 0x11d78
-   __DATA.__objc_ivar: 0x28
--  __DATA.__data: 0x117d8
--  __DATA.__common: 0x3f8
-+  __DATA.__data: 0x11bc0
-+  __DATA.__common: 0x410
-   __DATA_DIRTY.__objc_data: 0x550
--  __DATA_DIRTY.__data: 0x3bc8
--  __DATA_DIRTY.__bss: 0x1730
-+  __DATA_DIRTY.__data: 0x3c30
-+  __DATA_DIRTY.__bss: 0x15b0
-   __DATA_DIRTY.__common: 0x70
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/Charts.framework/Charts
 
-   - /System/Library/PrivateFrameworks/Settings.framework/Settings
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices
 +  - /System/Library/PrivateFrameworks/TCC.framework/TCC
-   - /System/Library/PrivateFrameworks/_IconServices_SwiftUI.framework/_IconServices_SwiftUI
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 24111
--  Symbols:   8774
+-  Symbols:   8427
 -  CStrings:  2182
 +  Functions: 24603
-+  Symbols:   8834
++  Symbols:   8488
 +  CStrings:  2211
- 
 Symbols:
 + _CTCategoryIdentifierHealthAndFitness
 + _CTCategoryIdentifierShoppingAndFood
@@ -967,7 +913,6 @@ Symbols:
 - _keypath_set.84Tm
 - _keypath_set.85Tm
 - _keypath_set.90Tm
-- _objc_msgSend$supportedWebBrowserBundleIdentifiersForDeviceFamily:
 - _swift_release_x13
 - _symbolic $s28ScreenTimeSettingsServicesUI0A22DistanceStateProvidingP
 - _symbolic $s28ScreenTimeSettingsServicesUI0B33AllowanceScheduleSummaryProvidingP

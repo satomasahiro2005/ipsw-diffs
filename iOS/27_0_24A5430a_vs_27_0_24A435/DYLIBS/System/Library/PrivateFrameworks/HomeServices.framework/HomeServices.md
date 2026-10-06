@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/HomeServices.framework/HomeServices`
 
-```diff
+### Section Size Changes
 
- 490.1.4.0.0
--  __TEXT.__text: 0x8f320
-+  __TEXT.__text: 0x8f3ac
-   __TEXT.__objc_methlist: 0x154
-   __TEXT.__const: 0x61d0
-   __TEXT.__constg_swiftt: 0x13d0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8f320` | `0x8f3ac` | **`+0x8c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1dafc0710 -> sub_1d7eeb710 : 1232 -> 1240
 ~ sub_1dafc0c24 -> sub_1d7eebc2c : 316 -> 320

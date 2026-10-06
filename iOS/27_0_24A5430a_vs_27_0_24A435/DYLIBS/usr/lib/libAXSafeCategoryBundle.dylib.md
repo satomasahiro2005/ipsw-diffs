@@ -2,22 +2,18 @@
 
 > `/usr/lib/libAXSafeCategoryBundle.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x11fc` | `0x11f8` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
- 3240.9.0.0.0
--  __TEXT.__text: 0x11fc
-+  __TEXT.__text: 0x11f8
-   __TEXT.__objc_methlist: 0xb0
-   __TEXT.__const: 0x8
-   __TEXT.__cstring: 0x277
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 25
--  Symbols:   139
-+  Symbols:   140
-   CStrings:  21
- 
+-  Symbols:   114
++  Symbols:   115
 Symbols:
 + _objc_release_x26
 Functions:

@@ -2,81 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/iTunesCloud.framework/iTunesCloud`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3c126c` | `0x3c9cac` | **`+0x8a40`** |
+| `__TEXT.__oslogstring` | `0x20a3c` | `0x22336` | **`+0x18fa`** |
+| `__AUTH_CONST.__objc_const` | `0x30920` | `0x31728` | **`+0xe08`** |
+| `__TEXT.__objc_methlist` | `0x1811c` | `0x187cc` | **`+0x6b0`** |
+| `__AUTH_CONST.__cfstring` | `0x185c0` | `0x18a80` | **`+0x4c0`** |
+| `__TEXT.__cstring` | `0x175fa` | `0x17a42` | **`+0x448`** |
+| `__AUTH.__objc_data` | `0x53c0` | `0x5640` | **`+0x280`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa320` | `0xa570` | **`+0x250`** |
+| `__AUTH_CONST.__const` | `0x18438` | `0x18638` | **`+0x200`** |
+| `__TEXT.__unwind_info` | `0x6970` | `0x6b10` | **`+0x1a0`** |
+| `__DATA.__data` | `0x3078` | `0x3198` | **`+0x120`** |
+| `__DATA_CONST.__const` | `0x7338` | `0x7448` | **`+0x110`** |
+| `__DATA.__objc_ivar` | `0x2400` | `0x24a8` | **`+0xa8`** |
+| `__DATA.__bss` | `0x4d0` | `0x540` | **`+0x70`** |
+| `__AUTH_CONST.__objc_intobj` | `0x438` | `0x480` | **`+0x48`** |
+| `__TEXT.__gcc_except_tab` | `0x2b08` | `0x2b50` | **`+0x48`** |
+| `__DATA_CONST.__objc_classlist` | `0xd90` | `0xdd0` | **`+0x40`** |
+| `__DATA_CONST.__objc_superrefs` | `0xbc0` | `0xc00` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x1058` | `0x1088` | **`+0x30`** |
+| `__DATA_CONST.__objc_protolist` | `0x2e8` | `0x300` | **`+0x18`** |
+| `__DATA_CONST.__objc_protorefs` | `0xb8` | `0xc8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -4026.110.81.1.0
--  __TEXT.__text: 0x3c126c
--  __TEXT.__objc_methlist: 0x1811c
 +4026.110.1.0.0
-+  __TEXT.__text: 0x3c9cac
-+  __TEXT.__objc_methlist: 0x187cc
-   __TEXT.__const: 0x225e8
-   __TEXT.__dlopen_cstrs: 0x4cf
--  __TEXT.__gcc_except_tab: 0x2b08
--  __TEXT.__cstring: 0x175fa
--  __TEXT.__oslogstring: 0x20a3c
-+  __TEXT.__gcc_except_tab: 0x2b50
-+  __TEXT.__cstring: 0x17a42
-+  __TEXT.__oslogstring: 0x22336
-   __TEXT.__ustring: 0x8e
--  __TEXT.__unwind_info: 0x6970
-+  __TEXT.__unwind_info: 0x6b10
-   __TEXT.__eh_frame: 0x50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7338
--  __DATA_CONST.__objc_classlist: 0xd90
-+  __DATA_CONST.__const: 0x7448
-+  __DATA_CONST.__objc_classlist: 0xdd0
-   __DATA_CONST.__objc_catlist: 0x78
--  __DATA_CONST.__objc_protolist: 0x2e8
-+  __DATA_CONST.__objc_protolist: 0x300
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa320
--  __DATA_CONST.__objc_protorefs: 0xb8
--  __DATA_CONST.__objc_superrefs: 0xbc0
-+  __DATA_CONST.__objc_selrefs: 0xa570
-+  __DATA_CONST.__objc_protorefs: 0xc8
-+  __DATA_CONST.__objc_superrefs: 0xc00
-   __DATA_CONST.__objc_arraydata: 0x498
--  __DATA_CONST.__got: 0x1058
--  __AUTH_CONST.__const: 0x18438
--  __AUTH_CONST.__cfstring: 0x185c0
--  __AUTH_CONST.__objc_const: 0x30920
--  __AUTH_CONST.__objc_intobj: 0x438
-+  __DATA_CONST.__got: 0x1088
-+  __AUTH_CONST.__const: 0x18638
-+  __AUTH_CONST.__cfstring: 0x18a80
-+  __AUTH_CONST.__objc_const: 0x31728
-+  __AUTH_CONST.__objc_intobj: 0x480
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__objc_dictobj: 0x258
-   __AUTH_CONST.__auth_got: 0xa68
--  __AUTH.__objc_data: 0x53c0
--  __DATA.__objc_ivar: 0x2400
--  __DATA.__data: 0x3078
--  __DATA.__bss: 0x4d0
-+  __AUTH.__objc_data: 0x5640
-+  __DATA.__objc_ivar: 0x24a8
-+  __DATA.__data: 0x3198
-+  __DATA.__bss: 0x540
-   __DATA.__common: 0xb88
-   __DATA_DIRTY.__objc_data: 0x33e0
-   __DATA_DIRTY.__data: 0x108
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 10003
--  Symbols:   21094
+-  Symbols:   17542
 -  CStrings:  5387
 +  Functions: 10164
-+  Symbols:   21444
++  Symbols:   17844
 +  CStrings:  5496
- 
 Symbols:
 + +[ICCloudAPNSChannelPushMessage ISO8601TimestampFromDate:]
 + +[ICCloudAPNSChannelPushMessage dateFromISO8601Timestamp:]
@@ -585,54 +549,6 @@ Symbols:
 + __remoteObjectInterface.sRemoteInterface
 + _allLibraryAlbumsConfiguration.sConfiguration
 + _allLibraryAlbumsConfiguration.sOnceToken
-+ _objc_msgSend$_buildConnectionWithListenerEndpoint:
-+ _objc_msgSend$_commitAvailability:source:
-+ _objc_msgSend$_dispatchObserveAllUpdate:
-+ _objc_msgSend$_exportedInterface
-+ _objc_msgSend$_fetchActiveUserBagAndCommit:
-+ _objc_msgSend$_fetchBagWithReason:
-+ _objc_msgSend$_handleConnectionLoss:forConnection:
-+ _objc_msgSend$_initInternal
-+ _objc_msgSend$_mintedToken
-+ _objc_msgSend$_notifyRenewalWaitersIfFinished
-+ _objc_msgSend$_registerForAllLibraryAlbumUpdatesWithHandler:completionHandler:
-+ _objc_msgSend$_scheduleBagFetchRetry
-+ _objc_msgSend$_sendResyncOnConnection:
-+ _objc_msgSend$_snapshotChannelStatesForResync
-+ _objc_msgSend$_tearDownAllRegistrationsWithError:notifyDaemon:
-+ _objc_msgSend$_xpcSetObservesAllLibraryAlbumChannels:
-+ _objc_msgSend$_xpcUpdateReasonsWithState:completion:
-+ _objc_msgSend$allLibraryAlbumsConfiguration
-+ _objc_msgSend$anyObject
-+ _objc_msgSend$cancelledUpdateWithError:
-+ _objc_msgSend$channelID
-+ _objc_msgSend$cloudChannelSubscriptionsDidBecomeDisabled:
-+ _objc_msgSend$cloudChannelSubscriptionsDidBecomeEnabled:
-+ _objc_msgSend$dateFromISO8601Timestamp:
-+ _objc_msgSend$deliverTestCloudChannelPushMessageWithUserInfo:completion:
-+ _objc_msgSend$entityType
-+ _objc_msgSend$expectedReleaseDate
-+ _objc_msgSend$handleCloudServerSetupCompleted
-+ _objc_msgSend$handler
-+ _objc_msgSend$initWithChannelID:contentType:storeID:storefront:goLiveDate:relevanceBitmask:receivedDate:
-+ _objc_msgSend$initWithChannelID:entityType:storeID:reason:expectedReleaseDate:
-+ _objc_msgSend$initWithChannelID:entityType:storeID:reasons:expectedReleaseDate:
-+ _objc_msgSend$initWithConfiguration:handler:
-+ _objc_msgSend$initWithType:pushMessage:error:channelIDs:unsubscribeReason:resubscribeReason:
-+ _objc_msgSend$isAvailable
-+ _objc_msgSend$observer
-+ _objc_msgSend$observesAllLibraryAlbums
-+ _objc_msgSend$pushReceivedUpdateWithMessage:
-+ _objc_msgSend$registerForUpdatesWithConfiguration:updateHandler:completionHandler:
-+ _objc_msgSend$resubscribedUpdateWithChannelIDs:reason:
-+ _objc_msgSend$resyncWithChannelStates:completion:
-+ _objc_msgSend$setObserver:
-+ _objc_msgSend$setObservesAllLibraryAlbumChannels:completion:
-+ _objc_msgSend$unregisterUpdatesForChannelID:reason:
-+ _objc_msgSend$unregisterUpdatesForTokens:
-+ _objc_msgSend$unsubscribedUpdateWithChannelIDs:reason:
-+ _objc_msgSend$updateMonitoredReasonsWithChannelState:completion:
-+ _objc_msgSend$updateTestLibraryChannelRegistrationsWithAddedStates:removedChannelIDs:completion:
 + _sharedInstance.sOnceToken
 + _sharedInstance.sSharedInstance
 - GCC_except_table1057

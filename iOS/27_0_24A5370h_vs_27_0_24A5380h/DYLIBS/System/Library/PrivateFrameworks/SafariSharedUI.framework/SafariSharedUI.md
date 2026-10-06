@@ -2,126 +2,61 @@
 
 > `/System/Library/PrivateFrameworks/SafariSharedUI.framework/SafariSharedUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3ce76c` | `0x44a8c4` | **`+0x7c158`** |
+| `__TEXT.__cstring` | `0x26559` | `0x33a09` | **`+0xd4b0`** |
+| `__TEXT.__eh_frame` | `0x1ab4c` | `0x1fd7c` | **`+0x5230`** |
+| `__TEXT.__const` | `0x4d904` | `0x51ad4` | **`+0x41d0`** |
+| `__AUTH_CONST.__const` | `0x17a38` | `0x1b800` | **`+0x3dc8`** |
+| `__DATA.__bss` | `0x1bb80` | `0x1f500` | **`+0x3980`** |
+| `__TEXT.__unwind_info` | `0x12040` | `0x13cb0` | **`+0x1c70`** |
+| `__TEXT.__swift5_typeref` | `0x231e0` | `0x2403a` | **`+0xe5a`** |
+| `__TEXT.__oslogstring` | `0x1085d` | `0x1161d` | **`+0xdc0`** |
+| `__TEXT.__swift5_reflstr` | `0x6640` | `0x7400` | **`+0xdc0`** |
+| `__TEXT.__swift5_fieldmd` | `0x6154` | `0x6ec4` | **`+0xd70`** |
+| `__AUTH_CONST.__objc_const` | `0x1d7b8` | `0x1e358` | **`+0xba0`** |
+| `__DATA.__data` | `0xa014` | `0xaa74` | **`+0xa60`** |
+| `__TEXT.__constg_swiftt` | `0x6ad4` | `0x73cc` | **`+0x8f8`** |
+| `__AUTH.__data` | `0x5dc0` | `0x6660` | **`+0x8a0`** |
+| `__TEXT.__swift5_capture` | `0x3538` | `0x3da8` | **`+0x870`** |
+| `__TEXT.__gcc_except_tab` | `0xed88` | `0xf1d0` | **`+0x448`** |
+| `__TEXT.__swift_as_cont` | `0x15f0` | `0x1974` | **`+0x384`** |
+| `__AUTH_CONST.__cfstring` | `0x10f20` | `0x11200` | **`+0x2e0`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa3c0` | `0xa650` | **`+0x290`** |
+| `__AUTH.__objc_data` | `0x6370` | `0x65c8` | **`+0x258`** |
+| `__TEXT.__swift_as_ret` | `0x9f8` | `0xc38` | **`+0x240`** |
+| `__TEXT.__swift5_assocty` | `0x1008` | `0x1200` | **`+0x1f8`** |
+| `__TEXT.__objc_methlist` | `0xebbc` | `0xed9c` | **`+0x1e0`** |
+| `__TEXT.__swift5_proto` | `0xda0` | `0xf68` | **`+0x1c8`** |
+| `__AUTH_CONST.__auth_got` | `0x3c60` | `0x3e20` | **`+0x1c0`** |
+| `__TEXT.__swift_as_entry` | `0x70c` | `0x8b4` | **`+0x1a8`** |
+| `__DATA.__common` | `0x2f8` | `0x480` | **`+0x188`** |
+| `__DATA_CONST.__const` | `0x7e28` | `0x7f98` | **`+0x170`** |
+| `__TEXT.__swift5_types` | `0x66c` | `0x738` | **`+0xcc`** |
+| `__DATA_CONST.__objc_classlist` | `0x930` | `0x978` | **`+0x48`** |
+| `__DATA_CONST.__got` | `0x2ce8` | `0x2cc8` | **`-0x20`** |
+| `__DATA_CONST.__objc_protolist` | `0x320` | `0x340` | **`+0x20`** |
+| `__DATA_CONST.__objc_protorefs` | `0xb0` | `0xc8` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x2d0` | `0x2e4` | **`+0x14`** |
+| `__DATA.__objc_ivar` | `0x1084` | `0x108c` | **`+0x8`** |
+| `__DATA_CONST.__objc_catlist` | `0x168` | `0x170` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x3ce76c
-+  __TEXT.__text: 0x44a8c4
-   __TEXT.__delay_stubs: 0x80
-   __TEXT.__delay_helper: 0x14c
--  __TEXT.__objc_methlist: 0xebbc
--  __TEXT.__const: 0x4d904
--  __TEXT.__gcc_except_tab: 0xed88
--  __TEXT.__cstring: 0x26559
--  __TEXT.__oslogstring: 0x1085d
-+  __TEXT.__objc_methlist: 0xed9c
-+  __TEXT.__const: 0x51ad4
-+  __TEXT.__gcc_except_tab: 0xf1d0
-+  __TEXT.__cstring: 0x33a09
-+  __TEXT.__oslogstring: 0x1161d
-   __TEXT.__ustring: 0x1fc2
-   __TEXT.__dlopen_cstrs: 0x363
--  __TEXT.__constg_swiftt: 0x6ad4
--  __TEXT.__swift5_typeref: 0x231e0
--  __TEXT.__swift5_fieldmd: 0x6154
--  __TEXT.__swift5_builtin: 0x2d0
--  __TEXT.__swift5_reflstr: 0x6640
--  __TEXT.__swift5_assocty: 0x1008
--  __TEXT.__swift5_proto: 0xda0
--  __TEXT.__swift5_types: 0x66c
--  __TEXT.__swift_as_entry: 0x70c
--  __TEXT.__swift_as_ret: 0x9f8
--  __TEXT.__swift_as_cont: 0x15f0
-+  __TEXT.__constg_swiftt: 0x73cc
-+  __TEXT.__swift5_typeref: 0x2403a
-+  __TEXT.__swift5_fieldmd: 0x6ec4
-+  __TEXT.__swift5_builtin: 0x2e4
-+  __TEXT.__swift5_reflstr: 0x7400
-+  __TEXT.__swift5_assocty: 0x1200
-+  __TEXT.__swift5_proto: 0xf68
-+  __TEXT.__swift5_types: 0x738
-+  __TEXT.__swift_as_entry: 0x8b4
-+  __TEXT.__swift_as_ret: 0xc38
-+  __TEXT.__swift_as_cont: 0x1974
-   __TEXT.__swift5_protos: 0x48
-   __TEXT.__swift5_mpenum: 0x6c
--  __TEXT.__swift5_capture: 0x3538
--  __TEXT.__unwind_info: 0x12040
--  __TEXT.__eh_frame: 0x1ab4c
-+  __TEXT.__swift5_capture: 0x3da8
-+  __TEXT.__unwind_info: 0x13cb0
-+  __TEXT.__eh_frame: 0x1fd7c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7e28
--  __DATA_CONST.__objc_classlist: 0x930
--  __DATA_CONST.__objc_catlist: 0x168
--  __DATA_CONST.__objc_protolist: 0x320
-+  __DATA_CONST.__const: 0x7f98
-+  __DATA_CONST.__objc_classlist: 0x978
-+  __DATA_CONST.__objc_catlist: 0x170
-+  __DATA_CONST.__objc_protolist: 0x340
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa3c0
--  __DATA_CONST.__objc_protorefs: 0xb0
-+  __DATA_CONST.__objc_selrefs: 0xa650
-+  __DATA_CONST.__objc_protorefs: 0xc8
-   __DATA_CONST.__objc_superrefs: 0x4f0
-   __DATA_CONST.__objc_arraydata: 0x1a60
--  __DATA_CONST.__got: 0x2ce8
--  __AUTH_CONST.__const: 0x17a38
--  __AUTH_CONST.__cfstring: 0x10f20
--  __AUTH_CONST.__objc_const: 0x1d7b8
-+  __DATA_CONST.__got: 0x2cc8
-+  __AUTH_CONST.__const: 0x1b800
-+  __AUTH_CONST.__cfstring: 0x11200
-+  __AUTH_CONST.__objc_const: 0x1e358
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x6d8
-   __AUTH_CONST.__objc_doubleobj: 0x50
-   __AUTH_CONST.__objc_arrayobj: 0x798
-   __AUTH_CONST.__objc_dictobj: 0x1e0
--  __AUTH_CONST.__auth_got: 0x3c60
--  __AUTH.__objc_data: 0x6370
--  __AUTH.__data: 0x5dc0
--  __DATA.__objc_ivar: 0x1084
--  __DATA.__data: 0xa014
--  __DATA.__bss: 0x1bb80
--  __DATA.__common: 0x2f8
-+  __AUTH_CONST.__auth_got: 0x3e20
-+  __AUTH.__objc_data: 0x65c8
-+  __AUTH.__data: 0x6660
-+  __DATA.__objc_ivar: 0x108c
-+  __DATA.__data: 0xaa74
-+  __DATA.__bss: 0x1f500
-+  __DATA.__common: 0x480
-   __DATA_DIRTY.__objc_data: 0x140
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Accounts.framework/Accounts
+-625.1.20.10.3
++625.1.22.10.3
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 18402
--  Symbols:   29477
--  CStrings:  7057
+-  Symbols:   14754
+-  CStrings:  4933
 +  Functions: 19895
-+  Symbols:   30299
-+  CStrings:  7379
- 
-Sections:
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   15132
++  CStrings:  5231
 Symbols:
 + +[WBSCloudExtensionStateManager _determineNewTabPageFromCloudDeviceState:andLocalState:]
 + +[WBSSearchEngineBannerDetectionMessageHandler sharedInstance]
@@ -370,99 +305,6 @@ Symbols:
 + _keypath_get_selector_shouldApplyBlendMode
 + _keypath_set.45Tm
 + _memcmp
-+ _objc_msgSend$_determineNewTabPageFromCloudDeviceState:andLocalState:
-+ _objc_msgSend$_downloadFirstValidImageWithURLs:inURLSession:urlsToResponsesDictionary:failedURLDownloadsToErrorsDictionary:options:decodingWebView:completionHandler:
-+ _objc_msgSend$_downloadFirstValidImageWithURLs:options:decodingWebView:completionHandler:
-+ _objc_msgSend$_filterExtractedString:options:completionHandler:
-+ _objc_msgSend$_iconForPointSize:
-+ _objc_msgSend$_isKeybagLocked
-+ _objc_msgSend$_isSymbolImage
-+ _objc_msgSend$_keepWebViewForFetchingImagesWarm
-+ _objc_msgSend$_magicExtensionsDidUpdateWithAddedExtensions:updatedExtensions:deletedExtensions:
-+ _objc_msgSend$_performResumeBrowsingDailyReportWithClusterManager:profileIdentifiersProvider:
-+ _objc_msgSend$_releaseWebViewForFetchingImages
-+ _objc_msgSend$_scheduleNextResumeBrowsingDailyReportWithClusterManager:profileIdentifiersProvider:
-+ _objc_msgSend$_scheduleWebViewForFetchingImagesRelease
-+ _objc_msgSend$_setAllowFileAccessFromFileURLs:
-+ _objc_msgSend$_setAllowedNetworkHosts:
-+ _objc_msgSend$_setHasAccessToFileURLs:
-+ _objc_msgSend$_stableSymbolPlatterColor
-+ _objc_msgSend$_startTextExtraction
-+ _objc_msgSend$_wbsImageFromImageData:decodingWebView:completionHandler:
-+ _objc_msgSend$addBuffer:name:contentWorld:
-+ _objc_msgSend$addContentRuleList:
-+ _objc_msgSend$automaticPasswordChangeController:firstVisibleFormMatchingPredicate:completionHandler:
-+ _objc_msgSend$canFillCredentials
-+ _objc_msgSend$canFillNewPassword
-+ _objc_msgSend$clustersForProfileIdentifier:
-+ _objc_msgSend$compileContentRuleListForIdentifier:encodedContentRuleList:completionHandler:
-+ _objc_msgSend$contactStore
-+ _objc_msgSend$controlIDsSkippedDueToMatchingValue
-+ _objc_msgSend$controls
-+ _objc_msgSend$createDirectoryAtPath:withIntermediateDirectories:attributes:error:
-+ _objc_msgSend$defaultStore
-+ _objc_msgSend$delegateWithCompletion:
-+ _objc_msgSend$descriptorForRequiredKeysForStyle:
-+ _objc_msgSend$didDetectSearchEngineBannerWithLinkToApp:wasUserLoggedIn:
-+ _objc_msgSend$didObserveSearchEngineBannerAction:withLinkToApp:
-+ _objc_msgSend$digits
-+ _objc_msgSend$downloadImageWithURL:options:decodingWebView:completionHandler:
-+ _objc_msgSend$emailAddresses
-+ _objc_msgSend$enabledSectionIdentifiers
-+ _objc_msgSend$formattedInternationalStringValue
-+ _objc_msgSend$formattedStringValue
-+ _objc_msgSend$givenName
-+ _objc_msgSend$initWithCGColor:
-+ _objc_msgSend$initWithCGImage:scale:orientation:
-+ _objc_msgSend$initWithDouble:
-+ _objc_msgSend$isAutoFilledTextField
-+ _objc_msgSend$isSecureTextField
-+ _objc_msgSend$loadExtensionAndTransitionToPreviewingWithForceReload:completionHandler:
-+ _objc_msgSend$loadFileURL:allowingReadAccessToURL:
-+ _objc_msgSend$lock
-+ _objc_msgSend$magicExtensionsController:didFinishRefiningExtension:name:icon:shouldReloadPage:shouldPromptAboutNewTabPage:
-+ _objc_msgSend$middleName
-+ _objc_msgSend$notifyExtensionWasAdded:
-+ _objc_msgSend$numberWithUnsignedChar:
-+ _objc_msgSend$phoneNumbers
-+ _objc_msgSend$reload
-+ _objc_msgSend$removeScriptMessageHandlerForName:contentWorld:
-+ _objc_msgSend$reportNotifyMeWhenActiveAutomationsWithNumberOfActiveAutomations:
-+ _objc_msgSend$reportNotifyMeWhenCreationFailureWithEntryPoint:failureReason:
-+ _objc_msgSend$reportNotifyMeWhenPollResult:errorType:
-+ _objc_msgSend$reportNotifyMeWhenSetupPresentedWithEntryPoint:outcome:triggerConditionType:pollingFrequency:editFrequency:hasPriceDropSuggestion:hasInStockSuggestion:hasEventRegistration:hasEventTickets:softLimitWarningShown:
-+ _objc_msgSend$reportResumeBrowsingDailyUsageWithSectionEnabled:numberOfTopics:numberOfRemoteTopics:numberOfRecentlyClosedTopics:
-+ _objc_msgSend$responseWithURL:pageContext:
-+ _objc_msgSend$safari_URLByRemovingUserPasswordQueryAndFragment
-+ _objc_msgSend$safari_addSearchEngineBannerDetectionMessageHandler
-+ _objc_msgSend$safari_iconServicesImageForSymbolName:color:size:
-+ _objc_msgSend$safari_iconServicesImageWithColor:size:
-+ _objc_msgSend$safari_profileIdentifier
-+ _objc_msgSend$safari_saveWebpageCompleteToURL:withCollectionMethod:collectionOptions:completionHandler:
-+ _objc_msgSend$safari_searchEngineBannerDetectionContentWorld
-+ _objc_msgSend$sensitiveReplacementStrings
-+ _objc_msgSend$setAllowsContentJavaScript:
-+ _objc_msgSend$setIsRunningAutomaticPasswordChangeSubtest:
-+ _objc_msgSend$setShouldApplyBlendMode:
-+ _objc_msgSend$shouldApplyBlendMode
-+ _objc_msgSend$snapshottedPassword
-+ _objc_msgSend$snapshottedUserName
-+ _objc_msgSend$stringByStandardizingPath
-+ _objc_msgSend$stringFromContact:style:
-+ _objc_msgSend$systemBrownColor
-+ _objc_msgSend$systemGrayColor
-+ _objc_msgSend$systemGreenColor
-+ _objc_msgSend$systemIndigoColor
-+ _objc_msgSend$systemOrangeColor
-+ _objc_msgSend$systemPinkColor
-+ _objc_msgSend$systemPurpleColor
-+ _objc_msgSend$systemRedColor
-+ _objc_msgSend$systemTealColor
-+ _objc_msgSend$systemYellowColor
-+ _objc_msgSend$temporaryDirectory
-+ _objc_msgSend$unformattedInternationalStringValue
-+ _objc_msgSend$unlock
-+ _objc_msgSend$usesElementActionClassifier
 + _scheduleResumeBrowsingDailyReportWithClusterManager:profileIdentifiersProvider:.onceToken
 + _searchEngineBannerDetectorSource
 + _searchEngineBannerDetectorSourceLength
@@ -870,19 +712,6 @@ Symbols:
 - _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVyAA15NavigationStackVySay012SafariSharedB0026WBSMagicExtensionsCreationC0V11DestinationOGAcAE7toolbar7contentQrqd__yXE_tAA07ToolbarI0Rd__lFQOyAHyAcAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAcAE5sheet4item0D7DismissARQrAA7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lFQOyAcAE010navigationQ03for11destinationQrqd__m_qd_0_qd__ctSHRd__AaBRd_0_r0_lFQOyAHyAcAE0S7Margins__A6_QrAA4EdgeO3SetV_12CoreGraphics7CGFloatVSgAA0I15MarginPlacementVtFQOyAA06ScrollC0VyAA6VStackVyAA05TupleI0VyAK0no11SuggestionsC0V_AHyAHyAHyAK26WBSIntelligencePromptFieldVyAM18FocusedPromptFieldOSgGAA14_PaddingLayoutVGA34_GA34_GSgQPGGG_Qo_AA06_InsetC8ModifierVyAHyA32_AM22BottomBarPromptPadding33_EDA74447DC0BA7607B36EC70B14EEDEELLVGSgGG_AoHyAcAEAtUQrAW_tFQOyAcAEAqRQrqd__yXE_tAaSRd__lFQOyAHyAA5GroupVyAA012_ConditionalI0VyAcAEA8___A6_QrA12__A16_A18_tFQOyA20_yA22_yA24_yAK0no18SuggestionCategoryC0V_A37_QPGGG_Qo_AHyA22_yA24_yA32_Sg_AK0no15AppStoreResultsC0VQPGGAA24_BackgroundStyleModifierVyAA15BackgroundStyleVGGGGA50_G_AA05TupletI0VyAA0tI7BuilderV10buildBlockyQrxAaSRzlFZQOy_AA0T4ItemVyytAA4MenuVyAA5ImageVA24_yAA6ButtonVyAA5LabelVyAA4TextVA86_GG_A94_A94_A94_QPGGGQo_Sg_A82_yytA88_yAA18DefaultButtonLabelVGGtGQo__Qo_AA0X18AttachmentModifierVGQo__0lM020WBSAgentInstructionsCAK0no13DebugSettingsC0VQo__Qo_A108_G_A104_Qo_GAA25_AppearanceActionModifierVG_A31_Qo__APQo_HO
 - _keypath_get.43Tm
 - _keypath_get.55Tm
-- _objc_msgSend$_addBuffer:contentWorld:name:
-- _objc_msgSend$_determineNewTabPageFromCloudDeviceState:
-- _objc_msgSend$_downloadFirstValidImageWithURLs:inURLSession:urlsToResponsesDictionary:failedURLDownloadsToErrorsDictionary:options:completionHandler:
-- _objc_msgSend$_magicExtensionsDidUpdateWithDeletedExtensions:
-- _objc_msgSend$_wbsImageFromImageData:completionHandler:
-- _objc_msgSend$automaticPasswordChangeController:canAutoFillNewPasswordOnPageWithCompletionHandler:
-- _objc_msgSend$initWithInteger:
-- _objc_msgSend$loadExtensionAndTransitionToPreviewingWithCompletionHandler:
-- _objc_msgSend$magicExtensionsController:didFinishRefiningExtension:name:icon:webView:shouldPromptAboutNewTabPage:
-- _objc_msgSend$pattern
-- _objc_msgSend$setNumberStyle:
-- _objc_msgSend$stringFromNumber:
-- _objc_msgSend$worldWithConfiguration:
 - _symbolic SS4name_SS11descriptionSS6symbolt
 - _symbolic SSSg_____YbScMYccSg 14SafariSharedUI20WBSElementTextResultV
 - _symbolic Say_____G 12SafariShared13WBSAgentToolsO0aB2UIE13ProbeDocumentV9ArgumentsV4ModeO
@@ -1606,5 +1435,4 @@ CStrings:
 - "⛔️ Temporarily blocking scroll after %{public}ld consecutive scrolls; classifier suggests (relaxed): %{private}s"
 - "🔄 Retrying after failure"
 - "🔄 Retrying after success without filling a new password"
-
 ```

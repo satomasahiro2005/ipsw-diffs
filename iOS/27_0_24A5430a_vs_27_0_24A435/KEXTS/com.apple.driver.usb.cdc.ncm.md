@@ -2,128 +2,127 @@
 
 > `com.apple.driver.usb.cdc.ncm`
 
-```diff
+### Section Size Changes
 
- 397.0.0.0.0
-   __TEXT.__cstring: 0x2414
-   __TEXT.__const: 0xca
--  __TEXT_EXEC.__text: 0xd6e0
-+  __TEXT_EXEC.__text: 0xd950
-   __TEXT_EXEC.__auth_stubs: 0x5c0
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x100
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0xd6e0` | `0xd950` | **`+0x270`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_fffffe0009a85bf0 -> sub_fffffe0009b14b90 : 72 -> 76
-~ sub_fffffe0009a85c40 -> sub_fffffe0009b14be4 : 52 -> 56
-~ sub_fffffe0009a85c74 -> sub_fffffe0009b14c1c : 52 -> 56
-~ sub_fffffe0009a85cb8 -> sub_fffffe0009b14c64 : 68 -> 72
-~ sub_fffffe0009a85d24 -> sub_fffffe0009b14cd4 : 72 -> 76
-~ sub_fffffe0009a85d6c -> sub_fffffe0009b14d20 : 104 -> 108
-~ sub_fffffe0009a85de8 -> sub_fffffe0009b14da0 : 88 -> 92
-~ sub_fffffe0009a85e40 -> sub_fffffe0009b14dfc : 88 -> 92
-~ sub_fffffe0009a85ed8 -> sub_fffffe0009b14e98 : 160 -> 164
-~ sub_fffffe0009a85f80 -> sub_fffffe0009b14f44 : 80 -> 84
-~ sub_fffffe0009a85fe0 -> sub_fffffe0009b14fa8 : 72 -> 76
-~ sub_fffffe0009a86030 -> sub_fffffe0009b14ffc : 52 -> 56
-~ sub_fffffe0009a86074 -> sub_fffffe0009b15044 : 68 -> 72
-~ sub_fffffe0009a860e0 -> sub_fffffe0009b150b4 : 104 -> 108
-~ sub_fffffe0009a8615c -> sub_fffffe0009b15134 : 88 -> 92
-~ sub_fffffe0009a861b4 -> sub_fffffe0009b15190 : 260 -> 264
-~ sub_fffffe0009a862b8 -> sub_fffffe0009b15298 : 176 -> 180
+~ sub_fffffff009a90490 -> sub_fffffff009b1b8e0 : 72 -> 76
+~ sub_fffffff009a904e0 -> sub_fffffff009b1b934 : 52 -> 56
+~ sub_fffffff009a90514 -> sub_fffffff009b1b96c : 52 -> 56
+~ sub_fffffff009a90558 -> sub_fffffff009b1b9b4 : 68 -> 72
+~ sub_fffffff009a905c4 -> sub_fffffff009b1ba24 : 72 -> 76
+~ sub_fffffff009a9060c -> sub_fffffff009b1ba70 : 104 -> 108
+~ sub_fffffff009a90688 -> sub_fffffff009b1baf0 : 88 -> 92
+~ sub_fffffff009a906e0 -> sub_fffffff009b1bb4c : 88 -> 92
+~ sub_fffffff009a90778 -> sub_fffffff009b1bbe8 : 160 -> 164
+~ sub_fffffff009a90820 -> sub_fffffff009b1bc94 : 80 -> 84
+~ sub_fffffff009a90880 -> sub_fffffff009b1bcf8 : 72 -> 76
+~ sub_fffffff009a908d0 -> sub_fffffff009b1bd4c : 52 -> 56
+~ sub_fffffff009a90914 -> sub_fffffff009b1bd94 : 68 -> 72
+~ sub_fffffff009a90980 -> sub_fffffff009b1be04 : 104 -> 108
+~ sub_fffffff009a909fc -> sub_fffffff009b1be84 : 88 -> 92
+~ sub_fffffff009a90a54 -> sub_fffffff009b1bee0 : 260 -> 264
+~ sub_fffffff009a90b58 -> sub_fffffff009b1bfe8 : 176 -> 180
 ~ __ZN15AppleUSBNCMData7armReadEv : 328 -> 332
-~ sub_fffffe0009a864b0 -> sub_fffffe0009b15498 : 72 -> 76
-~ sub_fffffe0009a86500 -> sub_fffffe0009b154ec : 52 -> 56
-~ sub_fffffe0009a86534 -> sub_fffffe0009b15524 : 52 -> 56
-~ sub_fffffe0009a86578 -> sub_fffffe0009b1556c : 68 -> 72
-~ sub_fffffe0009a865e4 -> sub_fffffe0009b155dc : 72 -> 76
-~ sub_fffffe0009a8662c -> sub_fffffe0009b15628 : 104 -> 108
-~ sub_fffffe0009a866a8 -> sub_fffffe0009b156a8 : 88 -> 92
-~ sub_fffffe0009a86700 -> sub_fffffe0009b15704 : 88 -> 92
-~ sub_fffffe0009a86758 -> sub_fffffe0009b15760 : 72 -> 76
-~ sub_fffffe0009a867a8 -> sub_fffffe0009b157b4 : 88 -> 92
-~ sub_fffffe0009a86808 -> sub_fffffe0009b15818 : 88 -> 92
-~ sub_fffffe0009a86860 -> sub_fffffe0009b15874 : 88 -> 92
-~ sub_fffffe0009a868b8 -> sub_fffffe0009b158d0 : 108 -> 112
-~ sub_fffffe0009a8694c -> sub_fffffe0009b15968 : 72 -> 76
-~ sub_fffffe0009a86994 -> sub_fffffe0009b159b4 : 52 -> 56
-~ sub_fffffe0009a869e4 -> sub_fffffe0009b15a08 : 116 -> 120
+~ sub_fffffff009a90d50 -> sub_fffffff009b1c1e8 : 72 -> 76
+~ sub_fffffff009a90da0 -> sub_fffffff009b1c23c : 52 -> 56
+~ sub_fffffff009a90dd4 -> sub_fffffff009b1c274 : 52 -> 56
+~ sub_fffffff009a90e18 -> sub_fffffff009b1c2bc : 68 -> 72
+~ sub_fffffff009a90e84 -> sub_fffffff009b1c32c : 72 -> 76
+~ sub_fffffff009a90ecc -> sub_fffffff009b1c378 : 104 -> 108
+~ sub_fffffff009a90f48 -> sub_fffffff009b1c3f8 : 88 -> 92
+~ sub_fffffff009a90fa0 -> sub_fffffff009b1c454 : 88 -> 92
+~ sub_fffffff009a90ff8 -> sub_fffffff009b1c4b0 : 72 -> 76
+~ sub_fffffff009a91048 -> sub_fffffff009b1c504 : 88 -> 92
+~ sub_fffffff009a910a8 -> sub_fffffff009b1c568 : 88 -> 92
+~ sub_fffffff009a91100 -> sub_fffffff009b1c5c4 : 88 -> 92
+~ sub_fffffff009a91158 -> sub_fffffff009b1c620 : 108 -> 112
+~ sub_fffffff009a911ec -> sub_fffffff009b1c6b8 : 72 -> 76
+~ sub_fffffff009a91234 -> sub_fffffff009b1c704 : 52 -> 56
+~ sub_fffffff009a91284 -> sub_fffffff009b1c758 : 116 -> 120
 ~ __ZN15AppleUSBNCMData5startEP9IOService : 2956 -> 2960
-~ sub_fffffe0009a875e4 -> sub_fffffe0009b16610 : 108 -> 112
+~ sub_fffffff009a91e84 -> sub_fffffff009b1d360 : 108 -> 112
 ~ __ZN15AppleUSBNCMData29setPropertiesForInterfaceRoleEv : 204 -> 208
 ~ __ZN15AppleUSBNCMData31configureBSDInterfaceThreadCallEPvS0_ : 804 -> 808
 ~ __ZN15AppleUSBNCMData13willTerminateEP9IOServicej : 552 -> 556
 ~ __ZN15AppleUSBNCMData4stopEP9IOService : 600 -> 604
-~ sub_fffffe0009a87ec0 -> sub_fffffe0009b16f00 : 352 -> 356
-~ sub_fffffe0009a88020 -> sub_fffffe0009b17064 : 228 -> 232
+~ sub_fffffff009a92760 -> sub_fffffff009b1dc50 : 352 -> 356
+~ sub_fffffff009a928c0 -> sub_fffffff009b1ddb4 : 228 -> 232
 ~ __ZN15AppleUSBNCMData27matchedBSDInterfaceNotifierEPvP9IOServiceP10IONotifier : 184 -> 188
 ~ __ZN15AppleUSBNCMData16setDataAlternateEv : 144 -> 148
 ~ __ZN15AppleUSBNCMData9lockNetifEv : 140 -> 144
-~ sub_fffffe0009a883a0 -> sub_fffffe0009b173f4 : 216 -> 220
-~ sub_fffffe0009a884f4 -> sub_fffffe0009b1754c : 140 -> 144
-~ sub_fffffe0009a88580 -> sub_fffffe0009b175dc : 200 -> 204
-~ sub_fffffe0009a886f0 -> sub_fffffe0009b17750 : 184 -> 188
-~ sub_fffffe0009a887a8 -> sub_fffffe0009b1780c : 188 -> 192
-~ sub_fffffe0009a888c0 -> sub_fffffe0009b17928 : 396 -> 400
-~ sub_fffffe0009a88a4c -> sub_fffffe0009b17ab8 : 232 -> 236
+~ sub_fffffff009a92c40 -> sub_fffffff009b1e144 : 216 -> 220
+~ sub_fffffff009a92d94 -> sub_fffffff009b1e29c : 140 -> 144
+~ sub_fffffff009a92e20 -> sub_fffffff009b1e32c : 200 -> 204
+~ sub_fffffff009a92f90 -> sub_fffffff009b1e4a0 : 184 -> 188
+~ sub_fffffff009a93048 -> sub_fffffff009b1e55c : 188 -> 192
+~ sub_fffffff009a93160 -> sub_fffffff009b1e678 : 396 -> 400
+~ sub_fffffff009a932ec -> sub_fffffff009b1e808 : 232 -> 236
 ~ __ZN15AppleUSBNCMData17dataWriteCompleteEPvij : 456 -> 460
-~ sub_fffffe0009a88e10 -> sub_fffffe0009b17e84 : 120 -> 124
+~ sub_fffffff009a936b0 -> sub_fffffff009b1ebd4 : 120 -> 124
 ~ __ZN15AppleUSBNCMData16dataReadCompleteEPvij : 448 -> 452
-~ sub_fffffe0009a8907c -> sub_fffffe0009b180f8 : 292 -> 296
+~ sub_fffffff009a9391c -> sub_fffffff009b1ee48 : 292 -> 296
 ~ __ZN15AppleUSBNCMData7armReadEP15InputPipeRecord : 400 -> 404
 ~ __ZN15AppleUSBNCMData20setCarPlayPropertiesEv : 1064 -> 1068
 ~ __ZN15AppleUSBNCMData15selectNTBFormatEv : 456 -> 460
-~ sub_fffffe0009a89948 -> sub_fffffe0009b189d4 : 200 -> 204
-~ sub_fffffe0009a89a10 -> sub_fffffe0009b18aa0 : 68 -> 72
-~ sub_fffffe0009a89d84 -> sub_fffffe0009b18e18 : 72 -> 76
-~ sub_fffffe0009a89dd4 -> sub_fffffe0009b18e6c : 52 -> 56
-~ sub_fffffe0009a89e08 -> sub_fffffe0009b18ea4 : 52 -> 56
-~ sub_fffffe0009a89e4c -> sub_fffffe0009b18eec : 68 -> 72
-~ sub_fffffe0009a89eb8 -> sub_fffffe0009b18f5c : 72 -> 76
-~ sub_fffffe0009a89f00 -> sub_fffffe0009b18fa8 : 104 -> 108
-~ sub_fffffe0009a89f7c -> sub_fffffe0009b19028 : 88 -> 92
-~ sub_fffffe0009a89fd4 -> sub_fffffe0009b19084 : 88 -> 92
-~ sub_fffffe0009a8a02c -> sub_fffffe0009b190e0 : 140 -> 144
-~ sub_fffffe0009a8a0b8 -> sub_fffffe0009b19170 : 200 -> 204
+~ sub_fffffff009a941e8 -> sub_fffffff009b1f724 : 200 -> 204
+~ sub_fffffff009a942b0 -> sub_fffffff009b1f7f0 : 68 -> 72
+~ sub_fffffff009a94624 -> sub_fffffff009b1fb68 : 72 -> 76
+~ sub_fffffff009a94674 -> sub_fffffff009b1fbbc : 52 -> 56
+~ sub_fffffff009a946a8 -> sub_fffffff009b1fbf4 : 52 -> 56
+~ sub_fffffff009a946ec -> sub_fffffff009b1fc3c : 68 -> 72
+~ sub_fffffff009a94758 -> sub_fffffff009b1fcac : 72 -> 76
+~ sub_fffffff009a947a0 -> sub_fffffff009b1fcf8 : 104 -> 108
+~ sub_fffffff009a9481c -> sub_fffffff009b1fd78 : 88 -> 92
+~ sub_fffffff009a94874 -> sub_fffffff009b1fdd4 : 88 -> 92
+~ sub_fffffff009a948cc -> sub_fffffff009b1fe30 : 140 -> 144
+~ sub_fffffff009a94958 -> sub_fffffff009b1fec0 : 200 -> 204
 ~ __ZN18AppleUSBNCMControl5startEP9IOService : 928 -> 932
-~ sub_fffffe0009a8a520 -> sub_fffffe0009b195e0 : 112 -> 116
-~ sub_fffffe0009a8a5ac -> sub_fffffe0009b19670 : 80 -> 84
-~ sub_fffffe0009a8a750 -> sub_fffffe0009b19818 : 72 -> 76
-~ sub_fffffe0009a8a7a0 -> sub_fffffe0009b1986c : 52 -> 56
-~ sub_fffffe0009a8a7d4 -> sub_fffffe0009b198a4 : 52 -> 56
-~ sub_fffffe0009a8a818 -> sub_fffffe0009b198ec : 68 -> 72
-~ sub_fffffe0009a8a884 -> sub_fffffe0009b1995c : 72 -> 76
-~ sub_fffffe0009a8a8cc -> sub_fffffe0009b199a8 : 104 -> 108
-~ sub_fffffe0009a8a948 -> sub_fffffe0009b19a28 : 88 -> 92
-~ sub_fffffe0009a8a9a0 -> sub_fffffe0009b19a84 : 88 -> 92
+~ sub_fffffff009a94dc0 -> sub_fffffff009b20330 : 112 -> 116
+~ sub_fffffff009a94e4c -> sub_fffffff009b203c0 : 80 -> 84
+~ sub_fffffff009a94ff0 -> sub_fffffff009b20568 : 72 -> 76
+~ sub_fffffff009a95040 -> sub_fffffff009b205bc : 52 -> 56
+~ sub_fffffff009a95074 -> sub_fffffff009b205f4 : 52 -> 56
+~ sub_fffffff009a950b8 -> sub_fffffff009b2063c : 68 -> 72
+~ sub_fffffff009a95124 -> sub_fffffff009b206ac : 72 -> 76
+~ sub_fffffff009a9516c -> sub_fffffff009b206f8 : 104 -> 108
+~ sub_fffffff009a951e8 -> sub_fffffff009b20778 : 88 -> 92
+~ sub_fffffff009a95240 -> sub_fffffff009b207d4 : 88 -> 92
 ~ __ZN20AppleUSBNCM11Control5startEP9IOService : 932 -> 936
-~ sub_fffffe0009a8b040 -> sub_fffffe0009b1a12c : 80 -> 84
-~ sub_fffffe0009a8b384 -> sub_fffffe0009b1a474 : 96 -> 100
-~ sub_fffffe0009a8b3e4 -> sub_fffffe0009b1a4d8 : 212 -> 216
+~ sub_fffffff009a958e0 -> sub_fffffff009b20e7c : 80 -> 84
+~ sub_fffffff009a95c24 -> sub_fffffff009b211c4 : 96 -> 100
+~ sub_fffffff009a95c84 -> sub_fffffff009b21228 : 212 -> 216
 ~ __ZN17AppleUSBNCM11Data25notificationCallbackGatedEP18AppleUSBNCMControlPvP18USBCDCNotification : 348 -> 352
 ~ __ZN15AppleUSBNCMData4initEP12OSDictionary : 324 -> 328
 ~ __ZN15AppleUSBNCMData19initStatsIOReporterEv : 544 -> 548
-~ sub_fffffe0009a8b978 -> sub_fffffe0009b1aa7c : 304 -> 308
-~ sub_fffffe0009a8baa8 -> sub_fffffe0009b1abb0 : 260 -> 264
-~ sub_fffffe0009a8bbac -> sub_fffffe0009b1acb8 : 800 -> 804
+~ sub_fffffff009a96218 -> sub_fffffff009b217cc : 304 -> 308
+~ sub_fffffff009a96348 -> sub_fffffff009b21900 : 260 -> 264
+~ sub_fffffff009a9644c -> sub_fffffff009b21a08 : 800 -> 804
 ~ __ZN15AppleUSBNCMData32setAppleInternalCoProcPropertiesEv : 140 -> 144
-~ sub_fffffe0009a8bf58 -> sub_fffffe0009b1b06c : 216 -> 220
+~ sub_fffffff009a967f8 -> sub_fffffff009b21dbc : 216 -> 220
 ~ __ZN15AppleUSBNCMData22powerStateWillChangeToEmmP9IOService : 364 -> 368
 ~ __ZN15AppleUSBNCMData21powerStateDidChangeToEmmP9IOService : 436 -> 440
-~ sub_fffffe0009a8c560 -> sub_fffffe0009b1b680 : 280 -> 284
+~ sub_fffffff009a96e00 -> sub_fffffff009b223d0 : 280 -> 284
 ~ __ZN15AppleUSBNCMData12setAlternateEt : 288 -> 292
 ~ __ZN15AppleUSBNCMData13configureDataEv : 452 -> 456
 ~ __ZN15AppleUSBNCMData6enableEP18IONetworkInterface : 760 -> 764
 ~ __ZN15AppleUSBNCMData18setupDataTransfersEv : 432 -> 436
 ~ __ZN15AppleUSBNCMData7disableEP18IONetworkInterface : 480 -> 484
-~ sub_fffffe0009a8d0f0 -> sub_fffffe0009b1c228 : 148 -> 152
+~ sub_fffffff009a97990 -> sub_fffffff009b22f78 : 148 -> 152
 ~ __ZN15AppleUSBNCMData18configureInterfaceEP18IONetworkInterface : 424 -> 428
 ~ __ZN15AppleUSBNCMData18chooseIdlePoliciesEv : 472 -> 476
 ~ __ZN15AppleUSBNCMData14transmitRecordEP16OutputPipeRecord : 360 -> 364
-~ sub_fffffe0009a8d66c -> sub_fffffe0009b1c7b4 : 364 -> 368
+~ sub_fffffff009a97f0c -> sub_fffffff009b23504 : 364 -> 368
 ~ __ZN15AppleUSBNCMData25notificationCallbackGatedEP18AppleUSBNCMControlPvP18USBCDCNotification : 592 -> 596
 ~ __ZN15AppleUSBNCMData7armReadEv.cold.1 : 140 -> 144
-~ sub_fffffe0009a8db98 -> sub_fffffe0009b1ccec : 52 -> 56
-~ sub_fffffe0009a8dbcc -> sub_fffffe0009b1cd24 : 152 -> 156
+~ sub_fffffff009a98438 -> sub_fffffff009b23a3c : 52 -> 56
+~ sub_fffffff009a9846c -> sub_fffffff009b23a74 : 152 -> 156
 ~ __ZN15AppleUSBNCMData29setPropertiesForInterfaceRoleEv.cold.1 : 184 -> 188
 ~ __ZN15AppleUSBNCMData29setPropertiesForInterfaceRoleEv.cold.2 : 168 -> 172
 ~ __ZN15AppleUSBNCMData31configureBSDInterfaceThreadCallEPvS0_.cold.1 : 172 -> 176
@@ -131,28 +130,28 @@ Functions:
 ~ __ZN15AppleUSBNCMData4stopEP9IOService.cold.1 : 144 -> 148
 ~ __ZN15AppleUSBNCMData16setDataAlternateEv.cold.1 : 144 -> 148
 ~ __ZN15AppleUSBNCMData7armReadEP15InputPipeRecord.cold.1 : 152 -> 156
-~ sub_fffffe0009a8e0d0 -> sub_fffffe0009b1d248 : 140 -> 144
+~ sub_fffffff009a98970 -> sub_fffffff009b23f98 : 140 -> 144
 ~ __ZN15AppleUSBNCMData7armReadEP15InputPipeRecord.cold.3 : 140 -> 144
 ~ __ZN18AppleUSBNCMControl5probeEP9IOServicePi : 360 -> 364
 ~ __ZN18AppleUSBNCMControl17copyDataInterfaceEv : 236 -> 240
 ~ __ZN18AppleUSBNCMControl27getMACAddressFromDescriptorEh : 496 -> 500
 ~ __ZN18AppleUSBNCMControl18cacheNTBParametersEv : 692 -> 696
 ~ __ZN18AppleUSBNCMControl24cacheAppleInterfaceFlagsEv : 504 -> 508
-~ sub_fffffe0009a8ead8 -> sub_fffffe0009b1dc6c : 248 -> 252
-~ sub_fffffe0009a8ebd0 -> sub_fffffe0009b1dd68 : 432 -> 436
+~ sub_fffffff009a99378 -> sub_fffffff009b249bc : 248 -> 252
+~ sub_fffffff009a99470 -> sub_fffffff009b24ab8 : 432 -> 436
 ~ __ZN18AppleUSBNCMControl18setMulticastFilterEP17IOEthernetAddressj : 256 -> 260
 ~ __ZN18AppleUSBNCMControl15getPacketFilterEPt : 260 -> 264
 ~ __ZN18AppleUSBNCMControl15setPacketFilterEt : 232 -> 236
 ~ __ZN18AppleUSBNCMControl17setNetworkAddressEPht : 456 -> 460
-~ sub_fffffe0009a8f3f8 -> sub_fffffe0009b1e5a4 : 172 -> 176
+~ sub_fffffff009a99c98 -> sub_fffffff009b252f4 : 172 -> 176
 ~ __ZN18AppleUSBNCMControl12getNTBFormatEPt : 252 -> 256
 ~ __ZN18AppleUSBNCMControl12setNTBFormatEt : 232 -> 236
 ~ __ZN18AppleUSBNCMControl15getNTBInputSizeEPj : 252 -> 256
 ~ __ZN18AppleUSBNCMControl15setNTBInputSizeEj : 244 -> 248
-~ sub_fffffe0009a8f9f8 -> sub_fffffe0009b1ebb8 : 132 -> 136
+~ sub_fffffff009a9a298 -> sub_fffffff009b25908 : 132 -> 136
 ~ __ZN18AppleUSBNCMControl16getDatagramLimitEPt : 252 -> 256
 ~ __ZN18AppleUSBNCMControl16setDatagramLimitEt : 232 -> 236
-~ sub_fffffe0009a8fce4 -> sub_fffffe0009b1eeb0 : 140 -> 144
+~ sub_fffffff009a9a584 -> sub_fffffff009b25c00 : 140 -> 144
 ~ __ZN18AppleUSBNCMControl10getCRCModeEPt : 252 -> 256
 ~ __ZN18AppleUSBNCMControl10setCRCModeEt : 232 -> 236
 ~ __ZN20AppleUSBNCM11Control5probeEP9IOServicePi : 432 -> 436
@@ -168,5 +167,5 @@ Functions:
 ~ __ZN20AppleUSBNCM11Control33setExtendedFeaturePresenceOffloadE26NCMPresenceOffloadTypeCodePvt : 360 -> 364
 ~ __ZN20AppleUSBNCM11Control32getExtendedFeatureReceiveOffloadE25NCMReceiveOffloadTypeCodePvPt : 368 -> 372
 ~ __ZN20AppleUSBNCM11Control32setExtendedFeatureReceiveOffloadE25NCMReceiveOffloadTypeCodePvt : 360 -> 364
-~ sub_fffffe0009a93298 -> sub_fffffe0009b224a4 : 56 -> 60
+~ sub_fffffff009a9db38 -> sub_fffffff009b291f4 : 56 -> 60
 ```

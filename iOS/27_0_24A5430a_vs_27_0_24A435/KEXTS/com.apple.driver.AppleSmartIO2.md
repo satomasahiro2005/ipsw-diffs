@@ -2,14 +2,20 @@
 
 > `com.apple.driver.AppleSmartIO2`
 
-```diff
+### Section Size Changes
 
- 150.0.0.0.0
-   __TEXT.__cstring: 0x4721
-   __TEXT.__const: 0x60
--  __TEXT_EXEC.__text: 0xb498
-+  __TEXT_EXEC.__text: 0xba34
-   __TEXT_EXEC.__auth_stubs: 0x3b0
-   __DATA.__data: 0x7f8
-   __DATA.__common: 0x1a0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0xb498` | `0xba34` | **`+0x59c`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
+```diff
+CStrings:
++ "21:25:30"
+- "22:10:31"
 ```

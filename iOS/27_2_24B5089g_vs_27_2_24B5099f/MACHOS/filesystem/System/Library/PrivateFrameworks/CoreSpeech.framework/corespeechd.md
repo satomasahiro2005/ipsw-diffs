@@ -2,91 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/CoreSpeech.framework/corespeechd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x181cd0` | `0x1833e0` | **`+0x1710`** |
+| `__TEXT.__objc_methname` | `0x48a91` | `0x49237` | **`+0x7a6`** |
+| `__TEXT.__oslogstring` | `0x27ae9` | `0x280c5` | **`+0x5dc`** |
+| `__DATA.__objc_const` | `0x2c4b0` | `0x2c900` | **`+0x450`** |
+| `__TEXT.__objc_stubs` | `0x22340` | `0x22660` | **`+0x320`** |
+| `__TEXT.__cstring` | `0x30f03` | `0x3116b` | **`+0x268`** |
+| `__TEXT.__objc_methlist` | `0x1c178` | `0x1c3a0` | **`+0x228`** |
+| `__DATA.__objc_selrefs` | `0xd0f8` | `0xd210` | **`+0x118`** |
+| `__TEXT.__objc_methtype` | `0x973d` | `0x97e8` | **`+0xab`** |
+| `__DATA.__objc_data` | `0x64a0` | `0x6540` | **`+0xa0`** |
+| `__DATA_CONST.__cfstring` | `0x9100` | `0x9180` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x6128` | `0x61a0` | **`+0x78`** |
+| `__TEXT.__gcc_except_tab` | `0x30f8` | `0x3138` | **`+0x40`** |
+| `__DATA.__objc_ivar` | `0x226c` | `0x22a8` | **`+0x3c`** |
+| `__TEXT.__objc_classname` | `0x3a44` | `0x3a7f` | **`+0x3b`** |
+| `__DATA_CONST.__const` | `0x5e50` | `0x5e80` | **`+0x30`** |
+| `__DATA_CONST.__objc_intobj` | `0xd38` | `0xd50` | **`+0x18`** |
+| `__DATA.__bss` | `0x6f8` | `0x708` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x1540` | `0x1550` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0xa10` | `0xa20` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x838` | `0x848` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__objc_arraydata`
 - `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
 - `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__data`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -3605.25.1.0.0
--  __TEXT.__text: 0x17cf18
 +3605.31.3.0.0
-+  __TEXT.__text: 0x17e5f8
-   __TEXT.__auth_stubs: 0x1610
-   __TEXT.__lazy_helpers: 0x54
--  __TEXT.__objc_stubs: 0x22340
--  __TEXT.__objc_methlist: 0x1c178
-+  __TEXT.__objc_stubs: 0x22660
-+  __TEXT.__objc_methlist: 0x1c3a0
-   __TEXT.__dlopen_cstrs: 0x31a
-   __TEXT.__const: 0x3d0
--  __TEXT.__gcc_except_tab: 0x30f8
--  __TEXT.__objc_methname: 0x48a91
--  __TEXT.__cstring: 0x30f03
--  __TEXT.__oslogstring: 0x27ae9
--  __TEXT.__objc_classname: 0x3a44
--  __TEXT.__objc_methtype: 0x973d
--  __TEXT.__unwind_info: 0x75e8
--  __DATA_CONST.__const: 0x5e50
--  __DATA_CONST.__cfstring: 0x9100
--  __DATA_CONST.__objc_classlist: 0xa10
-+  __TEXT.__gcc_except_tab: 0x3138
-+  __TEXT.__objc_methname: 0x49237
-+  __TEXT.__cstring: 0x3116b
-+  __TEXT.__oslogstring: 0x280c5
-+  __TEXT.__objc_classname: 0x3a7f
-+  __TEXT.__objc_methtype: 0x97e8
-+  __TEXT.__unwind_info: 0x7658
-+  __DATA_CONST.__const: 0x5e80
-+  __DATA_CONST.__cfstring: 0x9180
-+  __DATA_CONST.__objc_classlist: 0xa20
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x5d0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0xf8
--  __DATA_CONST.__objc_superrefs: 0x838
-+  __DATA_CONST.__objc_superrefs: 0x848
-   __DATA_CONST.__objc_doubleobj: 0x80
--  __DATA_CONST.__objc_intobj: 0xd38
-+  __DATA_CONST.__objc_intobj: 0xd50
-   __DATA_CONST.__objc_arraydata: 0x290
-   __DATA_CONST.__objc_arrayobj: 0x180
-   __DATA_CONST.__objc_dictobj: 0x348
-   __DATA_CONST.__objc_floatobj: 0x5b0
-   __DATA_CONST.__auth_got: 0xb20
--  __DATA_CONST.__got: 0x1540
-+  __DATA_CONST.__got: 0x1550
-   __DATA_CONST.__auth_ptr: 0x8
--  __DATA.__objc_const: 0x2c4b0
--  __DATA.__objc_selrefs: 0xd0f8
--  __DATA.__objc_ivar: 0x226c
--  __DATA.__objc_data: 0x64a0
-+  __DATA.__objc_const: 0x2c900
-+  __DATA.__objc_selrefs: 0xd210
-+  __DATA.__objc_ivar: 0x22a8
-+  __DATA.__objc_data: 0x6540
-   __DATA.__lazy_load_got: 0x8
-   __DATA.__data: 0x45c4
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10579
 -  Symbols:   1035
 -  CStrings:  17362
 +  Functions: 10623
 +  Symbols:   1037
 +  CStrings:  17449
- 
 Symbols:
 + _OBJC_CLASS_$_CSFModelConfigDecoder
 + _OBJC_CLASS_$_LBLocalSpeechRecognizerTurnEndContext

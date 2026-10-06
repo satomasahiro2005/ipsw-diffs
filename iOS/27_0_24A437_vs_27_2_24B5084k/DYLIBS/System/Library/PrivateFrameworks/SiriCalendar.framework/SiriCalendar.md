@@ -2,84 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/SiriCalendar.framework/SiriCalendar`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c210` | `0x20e80` | **`+0x4c70`** |
+| `__DATA.__bss` | `0x7980` | `0x8380` | **`+0xa00`** |
+| `__TEXT.__const` | `0x4be0` | `0x5188` | **`+0x5a8`** |
+| `__AUTH_CONST.__auth_got` | `0x2b0` | `0x5b0` | **`+0x300`** |
+| `__TEXT.__unwind_info` | `0xcd0` | `0xec0` | **`+0x1f0`** |
+| `__DATA.__data` | `0x9f8` | `0xbb0` | **`+0x1b8`** |
+| `__AUTH_CONST.__objc_const` | `—` | `0x1a0` | **`+0x1a0`** |
+| `__TEXT.__swift5_typeref` | `0xf2a` | `0x1078` | **`+0x14e`** |
+| `__TEXT.__eh_frame` | `0x948` | `0xa70` | **`+0x128`** |
+| `__TEXT.__constg_swiftt` | `0xacc` | `0xb88` | **`+0xbc`** |
+| `__AUTH_CONST.__const` | `0x1e88` | `0x1f40` | **`+0xb8`** |
+| `__DATA_CONST.__const` | `0xf0` | `0x1a0` | **`+0xb0`** |
+| `__TEXT.__oslogstring` | `—` | `0x9a` | **`+0x9a`** |
+| `__AUTH.__objc_data` | `—` | `0x90` | **`+0x90`** |
+| `__TEXT.__swift5_fieldmd` | `0xd98` | `0xe28` | **`+0x90`** |
+| `__AUTH.__data` | `—` | `0x80` | **`+0x80`** |
+| `__TEXT.__swift5_proto` | `0x4d8` | `0x528` | **`+0x50`** |
+| `__TEXT.__swift5_reflstr` | `0x48b` | `0x4cb` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x2f7` | `0x336` | **`+0x3f`** |
+| `__DATA.__common` | `—` | `0x20` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x14` | **`+0x14`** |
+| `__DATA_CONST.__objc_selrefs` | `0x18` | `0x28` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x138` | `0x144` | **`+0xc`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__objc_classname` | `—` | `0x0` | **`+0x0`** |
+| `__TEXT.__objc_methtype` | `—` | `0x0` | **`+0x0`** |
+
+### Other Changes
+
 ```diff
 
 -3600.18.9.11.1
--  __TEXT.__text: 0x1af78
--  __TEXT.__const: 0x4be0
--  __TEXT.__cstring: 0x2f7
--  __TEXT.__swift5_typeref: 0xf2a
--  __TEXT.__constg_swiftt: 0xacc
--  __TEXT.__swift5_reflstr: 0x48b
--  __TEXT.__swift5_fieldmd: 0xd98
 +3605.6.1.0.0
-+  __TEXT.__text: 0x1f910
-+  __TEXT.__const: 0x5188
-+  __TEXT.__cstring: 0x336
-+  __TEXT.__swift5_typeref: 0x1078
-+  __TEXT.__constg_swiftt: 0xb88
-+  __TEXT.__swift5_reflstr: 0x4cb
-+  __TEXT.__swift5_fieldmd: 0xe28
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_assocty: 0x90
--  __TEXT.__swift5_proto: 0x4d8
--  __TEXT.__swift5_types: 0x138
--  __TEXT.__unwind_info: 0x1128
--  __TEXT.__eh_frame: 0x948
-+  __TEXT.__swift5_proto: 0x528
-+  __TEXT.__swift5_types: 0x144
-+  __TEXT.__oslogstring: 0x9a
-+  __TEXT.__swift_as_entry: 0x8
-+  __TEXT.__swift_as_ret: 0x8
-+  __TEXT.__swift_as_cont: 0x14
-+  __TEXT.__unwind_info: 0x13b0
-+  __TEXT.__eh_frame: 0xa70
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-+  __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0xf0
-+  __TEXT.__objc_methtype: 0x0
-+  __DATA_CONST.__const: 0x1a0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x18
-+  __DATA_CONST.__objc_selrefs: 0x28
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1e88
--  __AUTH_CONST.__auth_got: 0x2b0
--  __DATA.__data: 0x9f8
-+  __AUTH_CONST.__const: 0x1f40
-+  __AUTH_CONST.__objc_const: 0x1a0
-+  __AUTH_CONST.__auth_got: 0x5b0
-+  __AUTH.__objc_data: 0x90
-+  __AUTH.__data: 0x80
-+  __DATA.__data: 0xbb0
-+  __DATA.__common: 0x20
-   __DATA_DIRTY.__data: 0x7b0
-   __DATA_DIRTY.__bss: 0x2180
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-+  - /System/Library/PrivateFrameworks/AppIntentsServices.framework/AppIntentsServices
-   - /System/Library/PrivateFrameworks/CalendarUIKit.framework/CalendarUIKit
-+  - /System/Library/PrivateFrameworks/LinkServices.framework/LinkServices
-   - /System/Library/PrivateFrameworks/SiriUtilities.framework/SiriUtilities
-   - /System/Library/PrivateFrameworks/SnippetKit.framework/SnippetKit
-   - /usr/lib/libSystem.B.dylib
 
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
++  - /System/Library/PrivateFrameworks/AppIntentsServices.framework/AppIntentsServices
+
++  - /System/Library/PrivateFrameworks/LinkServices.framework/LinkServices
+
 +  - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 1473
--  Symbols:   584
+-  Symbols:   581
 -  CStrings:  23
 +  Functions: 1670
-+  Symbols:   672
++  Symbols:   667
 +  CStrings:  27
- 
 Symbols:
 + _OBJC_CLASS_$_LNEnvironment
 + _OBJC_METACLASS_$__TtCs12_SwiftObject
@@ -124,8 +97,6 @@ Symbols:
 + _malloc_size
 + _memcpy
 + _memmove
-+ _objc_msgSend$defaultEnvironment
-+ _objc_msgSend$description
 + _objc_opt_self
 + _objc_release_x27
 + _objc_retain

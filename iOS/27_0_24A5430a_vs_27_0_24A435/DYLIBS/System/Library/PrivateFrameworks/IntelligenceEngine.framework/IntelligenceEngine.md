@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/IntelligenceEngine.framework/IntelligenceEngine`
 
-```diff
+### Section Size Changes
 
- 3500.3.1.0.0
--  __TEXT.__text: 0x1a5674
-+  __TEXT.__text: 0x1a56d8
-   __TEXT.__init_offsets: 0x44
-   __TEXT.__objc_methlist: 0xbcc
-   __TEXT.__const: 0x3800
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a5674` | `0x1a56d8` | **`+0x64`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN4siri12intelligence8Escaping12EscapeVectorERKNSt3__16vectorINS2_12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEENS7_IS9_EEEE : 544 -> 552
 ~ __ZN4siri12intelligence6IsSeedEv : 36 -> 8

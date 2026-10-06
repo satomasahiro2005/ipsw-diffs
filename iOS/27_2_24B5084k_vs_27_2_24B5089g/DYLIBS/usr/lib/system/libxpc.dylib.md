@@ -2,14 +2,9 @@
 
 > `/usr/lib/system/libxpc.dylib`
 
-```diff
+### Section Size Changes
 
-   __DATA.__data: 0xba8
-   __DATA.__crash_info: 0x148
-   __DATA_DIRTY.__objc_data: 0xaf0
--  __DATA_DIRTY.__bss: 0x138
-+  __DATA_DIRTY.__bss: 0x140
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/system/libcompiler_rt.dylib
-   - /usr/lib/system/libdispatch.dylib
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x58` | `0x50` | **`-0x8`** |
+| `__DATA_DIRTY.__bss` | `0x138` | `0x140` | **`+0x8`** |

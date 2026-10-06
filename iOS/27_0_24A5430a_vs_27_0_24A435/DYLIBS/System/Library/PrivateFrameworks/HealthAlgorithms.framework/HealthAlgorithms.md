@@ -2,35 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/HealthAlgorithms.framework/HealthAlgorithms`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4cd10` | `0x4d6d8` | **`+0x9c8`** |
+| `__DATA_CONST.__const` | `0x3c0` | `0x408` | **`+0x48`** |
+| `__TEXT.__cstring` | `0x1cf2` | `0x1d01` | **`+0xf`** |
+
+### Other Changes
+
 ```diff
 
- 151.0.0.0.0
--  __TEXT.__text: 0x4cd10
-+  __TEXT.__text: 0x4d6d8
-   __TEXT.__objc_methlist: 0x13bc
-   __TEXT.__const: 0xf2f6
-   __TEXT.__gcc_except_tab: 0x475c
--  __TEXT.__cstring: 0x1cf2
-+  __TEXT.__cstring: 0x1d01
-   __TEXT.__oslogstring: 0x6cc
-   __TEXT.__dlopen_cstrs: 0x4e
-   __TEXT.__unwind_info: 0x1618
-
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3c0
-+  __DATA_CONST.__const: 0x408
-   __DATA_CONST.__objc_classlist: 0xf0
-   __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
-
-   - /usr/lib/libobjc.A.dylib
-   Functions: 1709
-   Symbols:   2907
 -  CStrings:  365
 +  CStrings:  368
- 
 Functions:
 ~ __ZNSt3__16vectorIdNS_9allocatorIdEEE6insertENS_11__wrap_iterIPKdEERS5_ : 488 -> 484
 ~ __ZNSt3__114__split_bufferIdRNS_9allocatorIdEEE12emplace_backIJRKdEEEvDpOT_ : 256 -> 260

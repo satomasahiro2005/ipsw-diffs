@@ -2,7 +2,7 @@
 
 > `/Applications/CarPlaySettings.app/CarPlaySettings`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
-- `__DATA.__objc_data`
 - `__DATA.__data`
+- `__DATA.__objc_data`

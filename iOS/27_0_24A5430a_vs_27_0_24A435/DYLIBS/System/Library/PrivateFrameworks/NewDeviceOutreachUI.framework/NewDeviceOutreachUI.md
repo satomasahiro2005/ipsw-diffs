@@ -2,17 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/NewDeviceOutreachUI.framework/NewDeviceOutreachUI`
 
-```diff
+### Section Size Changes
 
- 624.0.13.0.0
--  __TEXT.__text: 0x3ce4c
-+  __TEXT.__text: 0x3ce50
-   __TEXT.__objc_methlist: 0x990
-   __TEXT.__const: 0x1284
-   __TEXT.__cstring: 0x866
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3ce4c` | `0x3ce50` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_292e830d0 -> sub_293be80d0 : 2568 -> 2572
-~ sub_292e8c014 -> sub_293bf1018 : 1808 -> 1812
-~ sub_292e8cb54 -> sub_293bf1b5c : 880 -> 884
-~ sub_292e90e20 -> sub_293bf5e2c : 992 -> 984
+~ sub_292d690d0 -> sub_293abc0d0 : 2568 -> 2572
+~ sub_292d72014 -> sub_293ac5018 : 1808 -> 1812
+~ sub_292d72b54 -> sub_293ac5b5c : 880 -> 884
+~ sub_292d76e20 -> sub_293ac9e2c : 992 -> 984
 ```

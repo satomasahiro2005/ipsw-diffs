@@ -2,49 +2,30 @@
 
 > `/usr/lib/libquic.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd0200` | `0xd0a68` | **`+0x868`** |
+| `__TEXT.__oslogstring` | `0x12459` | `0x1260d` | **`+0x1b4`** |
+| `__TEXT.__cstring` | `0x8823` | `0x88b5` | **`+0x92`** |
+| `__DATA_CONST.__const` | `0x25b0` | `0x25e0` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0xd30` | `0xd18` | **`-0x18`** |
+| `__AUTH_CONST.__auth_got` | `0xdd8` | `0xdc8` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -6681.2.2.0.0
--  __TEXT.__text: 0xce8b8
 +6681.40.80.0.0
-+  __TEXT.__text: 0xcf110
-   __TEXT.__objc_methlist: 0x244
-   __TEXT.__const: 0x3b5
--  __TEXT.__cstring: 0x8823
--  __TEXT.__oslogstring: 0x12459
-+  __TEXT.__cstring: 0x88b5
-+  __TEXT.__oslogstring: 0x1260d
-   __TEXT.__unwind_info: 0x12a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x25b0
-+  __DATA_CONST.__const: 0x25e0
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x1e8
 
-   __AUTH_CONST.__const: 0xcd0
-   __AUTH_CONST.__cfstring: 0x1320
-   __AUTH_CONST.__objc_const: 0xf8
--  __AUTH_CONST.__auth_got: 0xdd8
-+  __AUTH_CONST.__auth_got: 0xdc8
-   __AUTH.__objc_data: 0x50
-   __AUTH.__data: 0x118
-   __DATA.__objc_ivar: 0xc
-
-   - /System/Library/Frameworks/Security.framework/Security
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1156
--  Symbols:   1711
+-  Symbols:   1660
 -  CStrings:  2606
 +  Functions: 1157
-+  Symbols:   1710
++  Symbols:   1659
 +  CStrings:  2618
- 
 Symbols:
 + ___os_log_helper_1_2_16_8_34_4_0_8_34_4_0_4_0_4_0_4_0_4_0_8_34_8_34_4_0_4_0_4_0_4_0_4_0_4_0
 + __quic_timer_remove

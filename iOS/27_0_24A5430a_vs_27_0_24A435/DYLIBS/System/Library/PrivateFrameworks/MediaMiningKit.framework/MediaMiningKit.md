@@ -2,18 +2,21 @@
 
 > `/System/Library/PrivateFrameworks/MediaMiningKit.framework/MediaMiningKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x82b60` | `0x82b70` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.234.0.0
--  __TEXT.__text: 0x82b60
 +912.0.235.0.0
-+  __TEXT.__text: 0x82b70
-   __TEXT.__objc_methlist: 0x71f8
-   __TEXT.__const: 0xb60
-   __TEXT.__cstring: 0x3fec
 Functions:
-~ sub_28ea27ccc -> sub_28f775ccc : 648 -> 652
-~ sub_28ea27f54 -> sub_28f775f58 : 360 -> 364
-~ sub_28ea28240 -> sub_28f776248 : 360 -> 364
-~ sub_28ea283a8 -> sub_28f7763b4 : 360 -> 364
+~ sub_28e8fbccc -> sub_28f642ccc : 648 -> 652
+~ sub_28e8fbf54 -> sub_28f642f58 : 360 -> 364
+~ sub_28e8fc240 -> sub_28f643248 : 360 -> 364
+~ sub_28e8fc3a8 -> sub_28f6433b4 : 360 -> 364
 ```

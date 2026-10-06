@@ -2,111 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xaf7f74` | `0xb07b50` | **`+0xfbdc`** |
+| `__AUTH_CONST.__objc_const` | `0x285030` | `0x287848` | **`+0x2818`** |
+| `__TEXT.__oslogstring` | `0x6312a` | `0x64e36` | **`+0x1d0c`** |
+| `__TEXT.__objc_methlist` | `0xbcab8` | `0xbd8d0` | **`+0xe18`** |
+| `__TEXT.__cstring` | `0x8435f` | `0x84d46` | **`+0x9e7`** |
+| `__AUTH_CONST.__cfstring` | `0x73ca0` | `0x744e0` | **`+0x840`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4e198` | `0x4e7d0` | **`+0x638`** |
+| `__AUTH.__objc_data` | `0xe010` | `0xe3d0` | **`+0x3c0`** |
+| `__TEXT.__unwind_info` | `0x2e170` | `0x2e4d8` | **`+0x368`** |
+| `__TEXT.__gcc_except_tab` | `0x181f4` | `0x184fc` | **`+0x308`** |
+| `__DATA.__data` | `0x20bc0` | `0x20ec0` | **`+0x300`** |
+| `__DATA_CONST.__const` | `0x1d730` | `0x1d940` | **`+0x210`** |
+| `__DATA.__objc_ivar` | `0xfaa4` | `0xfc10` | **`+0x16c`** |
+| `__DATA_DIRTY.__objc_data` | `0x26ca0` | `0x26bb0` | **`-0xf0`** |
+| `__AUTH_CONST.__const` | `0x10af8` | `0x10b88` | **`+0x90`** |
+| `__DATA.__bss` | `0xa28` | `0xa80` | **`+0x58`** |
+| `__DATA_CONST.__objc_classlist` | `0x5478` | `0x54c0` | **`+0x48`** |
+| `__DATA_CONST.__objc_protolist` | `0x2a90` | `0x2ad0` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0xa8b8` | `0xa8f0` | **`+0x38`** |
+| `__DATA_CONST.__objc_superrefs` | `0x4048` | `0x4080` | **`+0x38`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x1758` | `0x1728` | **`-0x30`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x820` | `0x850` | **`+0x30`** |
+| `__TEXT.__const` | `0x112a0` | `0x112c0` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x2c88` | `0x2ca0` | **`+0x18`** |
+| `__DATA_CONST.__objc_arraydata` | `0x18a0` | `0x1888` | **`-0x18`** |
+| `__DATA_DIRTY.__bss` | `0x18d8` | `0x18c8` | **`-0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0xd0` | `0xd8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -4630.1.102.0.0
--  __TEXT.__text: 0xaf7f74
 +4636.102.1.0.0
-+  __TEXT.__text: 0xb07b50
-   __TEXT.__init_offsets: 0x4
--  __TEXT.__objc_methlist: 0xbcab8
--  __TEXT.__const: 0x112a0
--  __TEXT.__oslogstring: 0x6312a
--  __TEXT.__cstring: 0x8435f
--  __TEXT.__gcc_except_tab: 0x181f4
-+  __TEXT.__objc_methlist: 0xbd8d0
-+  __TEXT.__const: 0x112c0
-+  __TEXT.__oslogstring: 0x64e36
-+  __TEXT.__cstring: 0x84d46
-+  __TEXT.__gcc_except_tab: 0x184fc
-   __TEXT.__ustring: 0xd04
-   __TEXT.__dlopen_cstrs: 0x373
--  __TEXT.__unwind_info: 0x2e170
-+  __TEXT.__unwind_info: 0x2e4d8
-   __TEXT.__eh_frame: 0x48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1d730
--  __DATA_CONST.__objc_classlist: 0x5478
-+  __DATA_CONST.__const: 0x1d940
-+  __DATA_CONST.__objc_classlist: 0x54c0
-   __DATA_CONST.__objc_catlist: 0x338
-   __DATA_CONST.__objc_nlcatlist: 0x8
--  __DATA_CONST.__objc_protolist: 0x2a90
-+  __DATA_CONST.__objc_protolist: 0x2ad0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4e198
--  __DATA_CONST.__objc_protorefs: 0xd0
--  __DATA_CONST.__objc_superrefs: 0x4048
--  __DATA_CONST.__objc_arraydata: 0x18a0
--  __DATA_CONST.__got: 0xa8b8
--  __AUTH_CONST.__const: 0x10af8
--  __AUTH_CONST.__cfstring: 0x73ca0
--  __AUTH_CONST.__objc_const: 0x285030
-+  __DATA_CONST.__objc_selrefs: 0x4e7d0
-+  __DATA_CONST.__objc_protorefs: 0xd8
-+  __DATA_CONST.__objc_superrefs: 0x4080
-+  __DATA_CONST.__objc_arraydata: 0x1888
-+  __DATA_CONST.__got: 0xa8f0
-+  __AUTH_CONST.__const: 0x10b88
-+  __AUTH_CONST.__cfstring: 0x744e0
-+  __AUTH_CONST.__objc_const: 0x287848
-   __AUTH_CONST.__weak_auth_got: 0x10
--  __AUTH_CONST.__objc_arrayobj: 0x1758
--  __AUTH_CONST.__objc_doubleobj: 0x820
--  __AUTH_CONST.__objc_intobj: 0x2c88
-+  __AUTH_CONST.__objc_arrayobj: 0x1728
-+  __AUTH_CONST.__objc_doubleobj: 0x850
-+  __AUTH_CONST.__objc_intobj: 0x2ca0
-   __AUTH_CONST.__objc_dictobj: 0x2f8
-   __AUTH_CONST.__auth_got: 0x2bc0
--  __AUTH.__objc_data: 0xe010
--  __DATA.__objc_ivar: 0xfaa4
--  __DATA.__data: 0x20bc0
--  __DATA.__bss: 0xa28
-+  __AUTH.__objc_data: 0xe3d0
-+  __DATA.__objc_ivar: 0xfc10
-+  __DATA.__data: 0x20ec0
-+  __DATA.__bss: 0xa80
-   __DATA.__common: 0xa40
--  __DATA_DIRTY.__objc_data: 0x26ca0
-+  __DATA_DIRTY.__objc_data: 0x26bb0
-   __DATA_DIRTY.__data: 0x140
--  __DATA_DIRTY.__bss: 0x18d8
-+  __DATA_DIRTY.__bss: 0x18c8
-   __DATA_DIRTY.__common: 0x40
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /System/Library/Frameworks/MultipeerConnectivity.framework/MultipeerConnectivity
-   - /System/Library/Frameworks/Network.framework/Network
-   - /System/Library/Frameworks/NotificationCenter.framework/NotificationCenter
 +  - /System/Library/Frameworks/PencilKit.framework/PencilKit
-   - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
-   - /System/Library/Frameworks/SafariServices.framework/SafariServices
-   - /System/Library/Frameworks/Security.framework/Security
 
-   - /System/Library/PrivateFrameworks/SplashBoard.framework/SplashBoard
-   - /System/Library/PrivateFrameworks/SpotlightUI.framework/SpotlightUI
-   - /System/Library/PrivateFrameworks/SpringBoardDisplay.framework/SpringBoardDisplay
 +  - /System/Library/PrivateFrameworks/SpringBoardDisplayServices.framework/SpringBoardDisplayServices
-   - /System/Library/PrivateFrameworks/SpringBoardFoundation.framework/SpringBoardFoundation
-   - /System/Library/PrivateFrameworks/SpringBoardHome.framework/SpringBoardHome
-   - /System/Library/PrivateFrameworks/SpringBoardIntents.framework/SpringBoardIntents
 
-   - /usr/lib/libsp.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libutil.dylib
 -  Functions: 73090
--  Symbols:   151251
+-  Symbols:   118667
 -  CStrings:  23326
 +  Functions: 73431
-+  Symbols:   151928
++  Symbols:   119179
 +  CStrings:  23474
- 
 Symbols:
 + +[SBAssistantIslandWorkspace terminateNonIslandSpotlight]
 + +[SBCoreSmartPowerNapHIDCoordinator coordinatorForWindowSceneManager:]
@@ -955,279 +899,6 @@ Symbols:
 + _kCoverSheetGrabberPulseTeachOutCount
 + _keyboardFocusController:didAddDeferringRuleForTarget:.onceToken
 + _keyboardFocusController:didAddDeferringRuleForTarget:.sEnabled
-+ _objc_msgSend$_acquireAssertion
-+ _objc_msgSend$_acquireHideSystemStatusBarAssertionIfNeeded
-+ _objc_msgSend$_addOutstandingProcessIdentity:
-+ _objc_msgSend$_applicationNameForOverlayStatusBar
-+ _objc_msgSend$_applyListeningThinkingWaveSettings:
-+ _objc_msgSend$_applyPreferredBrightness:
-+ _objc_msgSend$_baseContentOriginOffset
-+ _objc_msgSend$_beginObservingAppFlyInSettle
-+ _objc_msgSend$_beginWaitingForAppFlyInSettle
-+ _objc_msgSend$_canPerformMotionWake
-+ _objc_msgSend$_canPresentGrabberForHandoff
-+ _objc_msgSend$_cancelDeferredMenuBarPeekTimerForSwitcherContentController:
-+ _objc_msgSend$_cancelPendingShake
-+ _objc_msgSend$_centerStatusBarPartFrame
-+ _objc_msgSend$_checkAndPostDismissalNearlyCompleteNotificationWithProgress:isPresenting:isOverApp:
-+ _objc_msgSend$_cleanupQueuesOnWithdrawForRequest:
-+ _objc_msgSend$_clearStatusBarPartAlphaOverridesIfNeeded
-+ _objc_msgSend$_clientPreferredRootWindowTransform
-+ _objc_msgSend$_collapsedContentOriginOffset
-+ _objc_msgSend$_combinedInAppPartAlphas
-+ _objc_msgSend$_configureDisplayClientForDisplayConfiguration:
-+ _objc_msgSend$_contentFrameInSceneReferenceSpace
-+ _objc_msgSend$_cornerCenterForContext:withFrame:scale:grabberHandoffFrame:
-+ _objc_msgSend$_createLayoutPublisherForRootDisplayIdentityIfNeeded:displayConfiguration:
-+ _objc_msgSend$_deviceIsChinaSKU
-+ _objc_msgSend$_deviceSupportsAppleIntelligence
-+ _objc_msgSend$_didFinishOffscreenTransition
-+ _objc_msgSend$_dismissMenuBarAnimated:clearStatusBarAssertions:
-+ _objc_msgSend$_dismissMenuBarAnimated:clearStatusBarAssertions:withCompletion:
-+ _objc_msgSend$_dismissalCompletionLeavingGroup:foldingFinishedInto:
-+ _objc_msgSend$_expandedContentOriginOffset
-+ _objc_msgSend$_fakedResizingDisplayConfigurationForFrame:
-+ _objc_msgSend$_finishWaitingForAppFlyInSettle
-+ _objc_msgSend$_flushPendingBrightnessToScene:
-+ _objc_msgSend$_forwardElementContextChangesFromElement:forActivityIdentifier:
-+ _objc_msgSend$_handlePresenceMotion
-+ _objc_msgSend$_handleState:
-+ _objc_msgSend$_handleStateOnMainQueue:
-+ _objc_msgSend$_hasResizedSinceEnteringDisplay
-+ _objc_msgSend$_invalidateLayoutPublisherForRootDisplayIdentity:
-+ _objc_msgSend$_isAssistantIslandVisiblyPresentedOnWindowScene:
-+ _objc_msgSend$_isInCallOnReceiverRoute
-+ _objc_msgSend$_isMotionDetectionCapable
-+ _objc_msgSend$_isPrewarmDisabledForClientCrashLoop
-+ _objc_msgSend$_isSuppressionActive
-+ _objc_msgSend$_isSystemApertureGestureRecognizer:
-+ _objc_msgSend$_isThermalCriticalGlyphBloomEligibleDevice
-+ _objc_msgSend$_keyboardHostComponent
-+ _objc_msgSend$_leadingStatusBarPartFrameIncludingCenterPartIfNecessary
-+ _objc_msgSend$_metricsForWindowScene:
-+ _objc_msgSend$_noteClientDidCrash
-+ _objc_msgSend$_noteSmartCoverDidOpenOnMain
-+ _objc_msgSend$_recomputeAggregateStyle
-+ _objc_msgSend$_reconsiderButtonEnablement
-+ _objc_msgSend$_registerZOrderStageResolverForWindowSceneIfNeeded:
-+ _objc_msgSend$_requireGesturesToFail:forSearchGesture:
-+ _objc_msgSend$_requireGesturesToFail:forTodayViewController:
-+ _objc_msgSend$_sceneHandleForActivityIdentifier:
-+ _objc_msgSend$_scheduleShake
-+ _objc_msgSend$_setClientPreferredRootWindowTransform:
-+ _objc_msgSend$_setHostWindowAlpha:
-+ _objc_msgSend$_setMenuBarVisible:animated:userInitiated:clearStatusBarAssertionsForDismissal:
-+ _objc_msgSend$_setMenuViewEnabled:withProvidingAppRestricted:
-+ _objc_msgSend$_setObjectWithinCrudeProximity:
-+ _objc_msgSend$_setRequestedIndicatorElevationStyle:
-+ _objc_msgSend$_setupBackgroundKeepAlive
-+ _objc_msgSend$_shouldBloomForThermalCriticalUnlock
-+ _objc_msgSend$_stopObservingAppFlyInSettle
-+ _objc_msgSend$_tearDownAnnounceOnWithdrawForLinwoodPreprocessForRequest:
-+ _objc_msgSend$_tearDownAnnounceOnWithdrawForRequest:revokeSucceeded:
-+ _objc_msgSend$_tearDownDisplayClient
-+ _objc_msgSend$_tearDownMorphHandle
-+ _objc_msgSend$_timeLabelFrameInWindow:statusBar:
-+ _objc_msgSend$_updateBackgroundAngelKeepAlive
-+ _objc_msgSend$_updateDimmingViewMaskPositionForOffScreenWithBounds:
-+ _objc_msgSend$_updateHideSystemStatusBarAssertionForCurrentContext
-+ _objc_msgSend$_updateHostingDisplayBacklightStateActive
-+ _objc_msgSend$_updateKeyboardFocusSuppression
-+ _objc_msgSend$_updateListeningThinkingWaveSettings
-+ _objc_msgSend$_updateMotionDetectionCapability
-+ _objc_msgSend$_updateMotionDetectionIdleTimerAssertion
-+ _objc_msgSend$_updateMotionDetectionListening
-+ _objc_msgSend$_updateMotionDetectionWake
-+ _objc_msgSend$_updateRequestedIndicatorElevationStyleForAllControllerProxies
-+ _objc_msgSend$_updateResidentInactive
-+ _objc_msgSend$_updateResidentInactiveStageForWindowScene:
-+ _objc_msgSend$_updateResidentInactiveStages
-+ _objc_msgSend$_updateSceneHandleForActivityIdentifier:withDestinationToken:layoutDirection:
-+ _objc_msgSend$_updateScreenBrightness:
-+ _objc_msgSend$_updateStatusBarWindowLevelOverride
-+ _objc_msgSend$_updateSystemApertureAnimationStyle
-+ _objc_msgSend$_windowControlsLayoutForApplicationFrame:screenBounds:application:switcherController:displayEdgeInfo:statusBarHidden:preferredWindowControlsPlacement:
-+ _objc_msgSend$_withdrawNotificationRequest:tearDownAnnounceForLinwoodPreprocess:
-+ _objc_msgSend$acquireDisableTapToWakeAssertionForReason:
-+ _objc_msgSend$activateWithError:
-+ _objc_msgSend$addWindowControlsPresentationObserver:
-+ _objc_msgSend$ambientDefaultMetrics
-+ _objc_msgSend$ambientWidgetMetrics
-+ _objc_msgSend$appFlyInDidSettle
-+ _objc_msgSend$appFlyInDidSettleTimestamp
-+ _objc_msgSend$appFlyInSettleFallbackTimer
-+ _objc_msgSend$appNameMenuBarProvider
-+ _objc_msgSend$appNameStatusBarOverlayData
-+ _objc_msgSend$bannerHandoffInstantAppear
-+ _objc_msgSend$brightnessClient
-+ _objc_msgSend$brightnessWithError:
-+ _objc_msgSend$canSwapApplicationIconsInProminentPositionsWithBundleIdentifier:withApplicationIconsWithBundleIdentifier:
-+ _objc_msgSend$centerStatusBarPartFrameForSwitcherContentController:
-+ _objc_msgSend$centerStatusBarPartFrameShouldBeConsideredInWindowingLayoutForSwitcherContentController:
-+ _objc_msgSend$contentOriginOffset
-+ _objc_msgSend$coordinatorForWindowSceneManager:
-+ _objc_msgSend$couldSupportMedusa
-+ _objc_msgSend$coverSheetGrabberManager
-+ _objc_msgSend$createSceneForSceneEntity:
-+ _objc_msgSend$currentKeyboardProxyOwner
-+ _objc_msgSend$currentPresentationTransformForVisibleAppLayout:
-+ _objc_msgSend$customBannerTransitionStyleGlass_cornerAnchorYOffset
-+ _objc_msgSend$customBannerTransitionStyleGlass_morphHandleCornerRadius
-+ _objc_msgSend$customBannerTransitionStyleGlass_morphHandleCrossFadeStartFraction
-+ _objc_msgSend$dismissExpandedModuleAnimated:completion:
-+ _objc_msgSend$dismissMenuIfPresented
-+ _objc_msgSend$dismissPresentedMenu
-+ _objc_msgSend$dismissWindowControlsMenuForMainMenuPresentation
-+ _objc_msgSend$displayItemIsDiscreteResizable:
-+ _objc_msgSend$embeddedDisplayChamoisSnapPaddingSettings
-+ _objc_msgSend$externalDisplayChamoisSnapPaddingSettings
-+ _objc_msgSend$fetchOrCreateNewStageControllerForWindowScene:state:chatSessionIdentifier:spotlightInvocationSource:dismissesControlCenterIfVisible:actions:completion:
-+ _objc_msgSend$floatingPresentationStatusBarOutset
-+ _objc_msgSend$formatDateAsTimeStyle:
-+ _objc_msgSend$fullScreenSnapPadding
-+ _objc_msgSend$gestureManagerIsActivityResignedActive:
-+ _objc_msgSend$handoffBannerDismiss
-+ _objc_msgSend$hasGlass
-+ _objc_msgSend$hasPostedDismissalNearlyCompleteNotification
-+ _objc_msgSend$inAppStatusBarPartAlphasForSwitcherContentController:
-+ _objc_msgSend$initWithClientID:
-+ _objc_msgSend$initWithConfiguration:windowScene:activeLayoutDirection:
-+ _objc_msgSend$initWithIdentifier:forReason:partAlphas:invalidationBlock:
-+ _objc_msgSend$initWithServiceListenerFactory:connectedDisplayInfoFactory:layoutPublisherFactory:defaults:
-+ _objc_msgSend$initWithStageResolverBlock:specifierDescription:componentOrder:arbiter:
-+ _objc_msgSend$initWithWindowScene:allowsPortraitInAmbient:activeLayoutDirection:
-+ _objc_msgSend$initWithWindowScene:applicationController:supportsResizing:debugName:
-+ _objc_msgSend$initWithWindowSceneManager:cspn:
-+ _objc_msgSend$interItemPadding
-+ _objc_msgSend$invalidateLayoutPublisher:observer:
-+ _objc_msgSend$invalidateOnSystemSleep
-+ _objc_msgSend$invalidateOnSystemSleepAfterMinimumActiveInterval:
-+ _objc_msgSend$isDeviceEligible
-+ _objc_msgSend$isDisconnected
-+ _objc_msgSend$isHomeScreenTranslationEnabled
-+ _objc_msgSend$isPeriocularMatchingEnabled
-+ _objc_msgSend$isPresentedOnBehalfOfSiri
-+ _objc_msgSend$isResidentInactive
-+ _objc_msgSend$isResizableAppHostingWindowScene
-+ _objc_msgSend$isWaitingForAppFlyInSettle
-+ _objc_msgSend$layoutPublisherForRootDisplayIdentity:
-+ _objc_msgSend$leadingItemSpacingForMenuBarViewController:
-+ _objc_msgSend$listeningThinkingWaveActiveGaussianRadius
-+ _objc_msgSend$listeningThinkingWaveInitialGaussianRadius
-+ _objc_msgSend$listeningThinkingWaveLensingAmount
-+ _objc_msgSend$listeningThinkingWaveLensingHeight
-+ _objc_msgSend$listeningThinkingWaveVariableBlurLocation
-+ _objc_msgSend$listeningThinkingWaveVariableBlurRadius
-+ _objc_msgSend$main_processDidExit:
-+ _objc_msgSend$menuBarLeadingItemSpacing
-+ _objc_msgSend$menuBarUsesStatusBarCenterRegion
-+ _objc_msgSend$modalFullScreenMetrics
-+ _objc_msgSend$multiAppCenterPadding
-+ _objc_msgSend$newBannerMorphHandleView
-+ _objc_msgSend$newBannerMorphHandleViewWithLegibilitySettings:
-+ _objc_msgSend$newBlockBasedZOrderStageResolver:forRole:
-+ _objc_msgSend$newDisplayClientForID:withError:
-+ _objc_msgSend$newDisplayLinkWithTarget:selector:
-+ _objc_msgSend$newLayoutPublisherWithInstanceIdentifier:displayConfiguration:observer:
-+ _objc_msgSend$noteSignificantEvent
-+ _objc_msgSend$noteSmartCoverDidOpen
-+ _objc_msgSend$observesProximityForBacklightChanges
-+ _objc_msgSend$overrideIconImageAppearance
-+ _objc_msgSend$overrideIconImageStyleConfiguration
-+ _objc_msgSend$performCustomTransitionToVisible:withAnimationSettings:completion:
-+ _objc_msgSend$pointInScreenFixedCoordinateSpace:isInsideKeyboardContentOnDisplay:
-+ _objc_msgSend$prepareForActivationWithContext:presentationMode:presentEmbedded:shouldUseResizableViewController:windowScene:completion:
-+ _objc_msgSend$proxiedKeyboardOwner
-+ _objc_msgSend$proximitySuspensionMode
-+ _objc_msgSend$refreshMotionDetectionWake
-+ _objc_msgSend$registerBrightnessObserver:
-+ _objc_msgSend$registerWithCallback:callback:
-+ _objc_msgSend$removeStageResolver:
-+ _objc_msgSend$removeWindowControlsPresentationObserver:
-+ _objc_msgSend$replaceApplicationIconsWithBundleIdentifier:withApplicationIconsWithBundleIdentifier:
-+ _objc_msgSend$requestInAppStatusBarHiddenAssertionForReason:partAlphas:animated:
-+ _objc_msgSend$requestedElevationStyle
-+ _objc_msgSend$requestedIndicatorElevationStyle
-+ _objc_msgSend$requiresClassicTreatmentForApplication:
-+ _objc_msgSend$resizingCapabilityOverrideForApps
-+ _objc_msgSend$resizingCoordinator:didUpdateResizingPossible:preferredSize:
-+ _objc_msgSend$reversedOrderedSet
-+ _objc_msgSend$sb_disallowsKeyboardPresentationInDefaultInputUIPresenter
-+ _objc_msgSend$sb_setDisallowsKeyboardPresentationInDefaultInputUIPresenter:
-+ _objc_msgSend$sbh_iconImageAppearanceFromTraitCollection:overrideIconImageAppearance:overrideIconImageStyleConfiguration:
-+ _objc_msgSend$sceneResizingCapability
-+ _objc_msgSend$sceneResizingCapabilityForApplication:
-+ _objc_msgSend$screenBrightness
-+ _objc_msgSend$secureIndicatorElevationServer:didChangeRequestedElevationStyle:
-+ _objc_msgSend$setActiveWindowScene:activeLayoutDirection:
-+ _objc_msgSend$setAppFlyInDidSettle:
-+ _objc_msgSend$setAppFlyInDidSettleTimestamp:
-+ _objc_msgSend$setAppFlyInSettleFallbackTimer:
-+ _objc_msgSend$setBannerHandoffInstantAppear:
-+ _objc_msgSend$setBrightness:error:
-+ _objc_msgSend$setContentOriginOffset:
-+ _objc_msgSend$setCustomBannerTransitionStyleGlass_cornerAnchorYOffset:
-+ _objc_msgSend$setCustomBannerTransitionStyleGlass_morphHandleCornerRadius:
-+ _objc_msgSend$setCustomBannerTransitionStyleGlass_morphHandleCrossFadeStartFraction:
-+ _objc_msgSend$setDeviceCanBeTreatedAsEffectivelyLocked:
-+ _objc_msgSend$setDismissalCommitted:
-+ _objc_msgSend$setEmbeddedDisplayChamoisSnapPaddingSettings:
-+ _objc_msgSend$setExternalDisplayChamoisSnapPaddingSettings:
-+ _objc_msgSend$setFloatingPresentationStatusBarOutset:
-+ _objc_msgSend$setFullScreenSnapPadding:
-+ _objc_msgSend$setHasPostedDismissalNearlyCompleteNotification:
-+ _objc_msgSend$setHomeScreenTranslationEnabled:
-+ _objc_msgSend$setHostingDisplayBacklightStateActive:
-+ _objc_msgSend$setInterItemPadding:
-+ _objc_msgSend$setIsWaitingForAppFlyInSettle:
-+ _objc_msgSend$setLastSettledPresentedState:
-+ _objc_msgSend$setListeningThinkingWaveActiveGaussianRadius:
-+ _objc_msgSend$setListeningThinkingWaveInitialGaussianRadius:
-+ _objc_msgSend$setListeningThinkingWaveLensingAmount:
-+ _objc_msgSend$setListeningThinkingWaveLensingHeight:
-+ _objc_msgSend$setListeningThinkingWaveVariableBlurLocation:
-+ _objc_msgSend$setListeningThinkingWaveVariableBlurRadius:
-+ _objc_msgSend$setMultiAppCenterPadding:
-+ _objc_msgSend$setObservesProximityForBacklightChanges:
-+ _objc_msgSend$setOnAC:
-+ _objc_msgSend$setPersistentMenuBarLeadingStyle:
-+ _objc_msgSend$setProximitySuspensionMode:
-+ _objc_msgSend$setRequestedIndicatorElevationStyle:
-+ _objc_msgSend$setScreenBrightness:
-+ _objc_msgSend$setShouldUseResizableViewController:
-+ _objc_msgSend$setSingleAppCenterPadding:
-+ _objc_msgSend$setStatusBarPartAlphas:nubViewHidden:animator:
-+ _objc_msgSend$setSuppressTeachPulse:
-+ _objc_msgSend$setSystemApertureAnimationStyle:
-+ _objc_msgSend$setSystemApertureUnifiedAnimationEnabled:
-+ _objc_msgSend$setUIKitMainLike
-+ _objc_msgSend$setUsesSecureIndicatorLayer:
-+ _objc_msgSend$shouldUseResizableViewController
-+ _objc_msgSend$singleAppCenterPadding
-+ _objc_msgSend$supportsSceneResizingForApplication:
-+ _objc_msgSend$supportsSolariumSafeAreasRegardlessOfWindowingModeForApplication:switcherController:
-+ _objc_msgSend$supportsiPhoneResizing
-+ _objc_msgSend$suppressKeyboardFocusRequestsForReason:
-+ _objc_msgSend$suppressTeachPulse
-+ _objc_msgSend$swapApplicationIconsInProminentPositionsWithBundleIdentifier:withApplicationIconsWithBundleIdentifier:
-+ _objc_msgSend$switcherContentController:displayItemIsClassic:
-+ _objc_msgSend$switcherContentController:displayItemSupportsMedusa:
-+ _objc_msgSend$syncState
-+ _objc_msgSend$systemApertureAnimationStyle
-+ _objc_msgSend$systemApertureSceneElement:destinationTokenDidChange:
-+ _objc_msgSend$systemApertureSceneElement:layoutDirectionDidChange:
-+ _objc_msgSend$systemApertureUnifiedAnimationEnabled
-+ _objc_msgSend$targetGrabberFrameInCoordinateSpace:
-+ _objc_msgSend$terminateNonIslandSpotlight
-+ _objc_msgSend$ui_renderingEnvironment
-+ _objc_msgSend$unregister
-+ _objc_msgSend$unregisterBrightnessObserver:
-+ _objc_msgSend$updateInAppStatusBarHiddenAssertion:partAlphas:animated:
-+ _objc_msgSend$updateMenuBarEnablementForAppRestrictionChange
-+ _objc_msgSend$updateMenuEnablementForAppRestrictionChange
-+ _objc_msgSend$updateSpotlightInvocationSource:
-+ _objc_msgSend$usesSecureIndicatorLayer
-+ _objc_msgSend$windowControlsWillBeginPresentingMenuForSceneProvider:
 - +[SBApplication(Classic) restrictedDisplayConfigurationForResizableAppWithDisplayConfiguration:size:]
 - +[SBApplication(Classic) restrictedDisplayConfigurationForUIRequiresFullScreenAppWithDisplayConfiguration:size:]
 - +[SBBrightnessLevelSceneExtension hostComponents]
@@ -1563,114 +1234,6 @@ Symbols:
 - __effectiveProgressForDismissProgress
 - _kSnappedTrackingResponse
 - _kWindowDragVelocityThresholdForMaintainingTightSpringsAroundSnapPoints
-- _objc_msgSend$_ambientDefaultMetricsForWindowScene:
-- _objc_msgSend$_ambientWidgetMetricsForWindowScene:
-- _objc_msgSend$_appRequiresClassicTreatmentInCurrentWindowManagementContext
-- _objc_msgSend$_armMatchPasscodeFallbackTimerIfNeeded
-- _objc_msgSend$_beginAnimatingExitSnapPointRampingPropertyX
-- _objc_msgSend$_beginAnimatingExitSnapPointRampingPropertyY
-- _objc_msgSend$_containerBoundsForWindowScene:containerOrientation:
-- _objc_msgSend$_defaultMetricsForWindowScene:
-- _objc_msgSend$_dismissMenuBarAnimated:
-- _objc_msgSend$_dismissMenuBarAnimated:withCompletion:
-- _objc_msgSend$_exitSnapPointRampingSettings
-- _objc_msgSend$_handleMatchPasscodeFallbackForEvent:
-- _objc_msgSend$_homeScreenOpacityForProgress:
-- _objc_msgSend$_initializeExitSnapRampingPropertyX
-- _objc_msgSend$_initializeExitSnapRampingPropertyY
-- _objc_msgSend$_invalidateIfOrphaned
-- _objc_msgSend$_invalidateMatchPasscodeFallbackTimer
-- _objc_msgSend$_isClassicViaOverride
-- _objc_msgSend$_isMotionToWakeUserSettingEnabled
-- _objc_msgSend$_leftCornerCenterForContext:withFrame:scale:
-- _objc_msgSend$_leftHitTestRectForFrame:
-- _objc_msgSend$_limitedWidthSystemApertureMetricsForWindowScene:
-- _objc_msgSend$_lockScreenNotificationListItemMetricsWithScaleFactor:screen:
-- _objc_msgSend$_matchPasscodeFallbackFailureSettings
-- _objc_msgSend$_matchPasscodeFallbackInterval
-- _objc_msgSend$_matchPasscodeFallbackTimerFired
-- _objc_msgSend$_modalFullScreenMetricsForWindowScene:
-- _objc_msgSend$_rightHitTestRectForFrame:
-- _objc_msgSend$_screenForWindowScene:
-- _objc_msgSend$_setMenuBarVisible:animated:userInitiated:
-- _objc_msgSend$_shouldLayOutSelectedItemAtSnappedFrame
-- _objc_msgSend$_systemApertureMetricsForWindowScene:
-- _objc_msgSend$_systemApertureMetricsWithJindoMetricsProvider:maximumLeadingTrailingViewSize:uniformEdgeInsets:
-- _objc_msgSend$_updateMotionDetection
-- _objc_msgSend$_windowControlsLayoutForApplicationFrame:screenBounds:application:windowManagementContext:displayEdgeInfo:statusBarHidden:displayConfiguration:preferredWindowControlsPlacement:
-- _objc_msgSend$acquireMotionDetectionWakeEnableAssertionWithReason:
-- _objc_msgSend$activitySystemApertureElementObserver
-- _objc_msgSend$addFileStackWithURL:
-- _objc_msgSend$allVisiblePeripheralFrames
-- _objc_msgSend$applicationCompatibilityModeProvider
-- _objc_msgSend$canSwapApplicationIconsInProminentPositionsWithBundleIdentifier:withApplicationIconsWithWithBundleIdentifier:
-- _objc_msgSend$customBannerTransitionStyleGlass_dismissAlphaFraction
-- _objc_msgSend$displayItemIsResizableUIRequiresFullScreen:
-- _objc_msgSend$fetchOrCreateNewStageControllerForWindowScene:state:chatSessionIdentifier:spotlightInvocationSource:actions:completion:
-- _objc_msgSend$fixed:
-- _objc_msgSend$horizontalInterItemPadding
-- _objc_msgSend$idealSearchPlatterWidth
-- _objc_msgSend$initWithApplication:windowManagementContext:
-- _objc_msgSend$initWithLockScreenMetrics:
-- _objc_msgSend$initWithMinimum:maximum:
-- _objc_msgSend$initWithObstructionSize:obstructionTopMargin:expandedMetricsRequest:compactLeadingMetricsRequest:compactTrailingMetricsRequest:minimalMetricsRequest:
-- _objc_msgSend$initWithServiceListenerFactory:connectedDisplayInfoFactory:defaults:
-- _objc_msgSend$initWithTop:leading:bottom:trailing:
-- _objc_msgSend$initWithWidth:height:cornerRadius:edgeInsets:clipMargin:
-- _objc_msgSend$initWithWidth:height:cornerRadius:edgeInsets:clipMargin:scaleFactor:
-- _objc_msgSend$initWithWindowScene:applicationController:debugName:
-- _objc_msgSend$initWithWindowScene:backlightController:
-- _objc_msgSend$isMenuBarDismissing
-- _objc_msgSend$isResizablePhoneAppOnPad
-- _objc_msgSend$isResizablePhoneAppOnResizableDisplays
-- _objc_msgSend$isResizableUIRequiresFullScreenAppOnPad
-- _objc_msgSend$isTrailingStatusBarRegionPreferredHiddenByApp
-- _objc_msgSend$logTelemetryForMotionToWakeEnabled:
-- _objc_msgSend$minimumContinuousCornerRadius
-- _objc_msgSend$positionXSettings
-- _objc_msgSend$positionYSettings
-- _objc_msgSend$prepareForActivationWithContext:presentationMode:presentEmbedded:windowScene:completion:
-- _objc_msgSend$requiresClassicTreatmentInSwitcherWindowManagementContext:
-- _objc_msgSend$resizingAvailability
-- _objc_msgSend$resizingAvailabilityOnResizableDisplays
-- _objc_msgSend$resizingCoordinator:didUpdateAvailability:preferredSize:
-- _objc_msgSend$restrictedClassicModeDisplayConfigurationForDisplayConfiguration:windowManagementContext:
-- _objc_msgSend$restrictedDisplayConfigurationForResizableAppWithDisplayConfiguration:size:
-- _objc_msgSend$restrictedDisplayConfigurationForUIRequiresFullScreenAppWithDisplayConfiguration:size:
-- _objc_msgSend$sb_supportsResizing
-- _objc_msgSend$setAmbientMetrics:
-- _objc_msgSend$setCustomBannerTransitionStyleGlass_dismissAlphaFraction:
-- _objc_msgSend$setHorizontalInterItemPadding:
-- _objc_msgSend$setJiggleLock:
-- _objc_msgSend$setLeading:
-- _objc_msgSend$setLimitedWidthSystemApertureMetrics:
-- _objc_msgSend$setMenuBarStatusBarFollowingAppLeadingStyle:
-- _objc_msgSend$setMenuBarStatusBarFollowingSystemStyle:
-- _objc_msgSend$setPositionXSettings:
-- _objc_msgSend$setPositionYSettings:
-- _objc_msgSend$setShowPasscode:
-- _objc_msgSend$setSuspendProximitySensor:
-- _objc_msgSend$setSystemApertureMetrics:
-- _objc_msgSend$setTrailing:
-- _objc_msgSend$setTransitionOnlyHelperStatusBar:
-- _objc_msgSend$setVerticalInterItemPadding:
-- _objc_msgSend$setVibrate:
-- _objc_msgSend$setWaitUntilButtonUp:
-- _objc_msgSend$setWindowControlsAvoidanceOffset:
-- _objc_msgSend$shouldPresentEmbeddedInTargetSceneIfRequested
-- _objc_msgSend$shouldSystemGestureReceiveTouchWithLocation:ignoringUCB:
-- _objc_msgSend$standBy
-- _objc_msgSend$supportsSceneResizingOnDisplayConfiguration:
-- _objc_msgSend$supportsSolariumSafeAreasRegardlessOfWindowingModeForApplication:windowManagementContext:
-- _objc_msgSend$suspendProximitySensor
-- _objc_msgSend$swapApplicationIconsInProminentPositionsWithBundleIdentifier:withApplicationIconsWithWithBundleIdentifier:
-- _objc_msgSend$transitionOnlyHelperStatusBar
-- _objc_msgSend$updateSystemApertureMetricsForWindowScene:
-- _objc_msgSend$verticalInterItemPadding
-- _objc_msgSend$wantsFullScreen
-- _objc_msgSend$windowControlsAvoidanceOffset
-- _objc_msgSend$windowSceneForDisplayConfigurationForClassicApps
-- _objc_msgSend$withdrawNotificationRequest:
 CStrings:
 + "#AnnounceNotification CarPlay presentable will not appear as banner for %{public}@ (reason: %{public}@); recovering fallback queue."
 + "#CarPlayDebug CarPlay skipping fallback banner for %{public}@; request was withdrawn before announce failure callback"

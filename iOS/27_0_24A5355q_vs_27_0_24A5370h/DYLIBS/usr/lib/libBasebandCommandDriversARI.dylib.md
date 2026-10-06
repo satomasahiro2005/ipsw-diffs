@@ -2,55 +2,30 @@
 
 > `/usr/lib/libBasebandCommandDriversARI.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc15dc` | `0xc1670` | **`+0x94`** |
+| `__TEXT.__cstring` | `0x357a` | `0x35ef` | **`+0x75`** |
+| `__DATA_CONST.__const` | `0x1378` | `0x13b0` | **`+0x38`** |
+| `__TEXT.__gcc_except_tab` | `0xe28c` | `0xe298` | **`+0xc`** |
+| `__DATA.__data` | `0x210` | `0x218` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x3a00` | `0x39f8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1563.0.0.0.0
--  __TEXT.__text: 0xc15dc sha256:ea998b5ea5fd53d6862482cb3a10fb61343d6542c46d2ee205df8a6eebf6187c
--  __TEXT.__init_offsets: 0x14 sha256:aa8219f3d8b1b5e340d79102c09e7cc16355434ab2ae659cc100db56a588fc60
 +1570.0.0.0.0
-+  __TEXT.__text: 0xc1670 sha256:c87c327806b75f25c87ecbbc58de2b1d66b5a73f53862a7ee8c4dc3bc4e4b419
-+  __TEXT.__init_offsets: 0x14 sha256:a4b58a29260772644532af66ea73e8767b4c45b313405458c8754dcf48991b4b
-   __TEXT.__const: 0x8580 sha256:895f6e36b6e30908ecd3e170fabedb6f07f2ade56dc68ca44fdc55a926ade64c
--  __TEXT.__cstring: 0x357a sha256:762fa8bca0de53961eacef2e5ef7443a87ec6a9fbe4c88ff63d8eb63194b863a
--  __TEXT.__gcc_except_tab: 0xe28c sha256:d758191d52db44fb7b66e3463995ca55b33898fd14a0ec1b6b81de3f885b747c
-+  __TEXT.__cstring: 0x35ef sha256:cdd605c54f2f7ae7507f03773f43c60ffc6ef7022575013a38559d24678014d4
-+  __TEXT.__gcc_except_tab: 0xe298 sha256:dc9a3ae257f77a7d7c1c43ff7a7ad9242c0c35f5fc91c637b372b508e3461990
-   __TEXT.__oslogstring: 0x26ef sha256:a60591845ae6204b7705efa04154b1ff75e5a89e8ac036b85f8f12e19643707a
--  __TEXT.__unwind_info: 0x3a00 sha256:c3097757d931219dd1d420013c7ec5b041fd9c11a6c4fc80d0c072c849f79e93
-+  __TEXT.__unwind_info: 0x39f8 sha256:6fe85c579cc7a4f2aad6111ab0457e63e66ccb5c442fd3b311663411a7332b4f
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x1378 sha256:6728ff4ecbb511226ca1ce810a7478dc85b246df5e6f4d4cbff485232e4387bc
-+  __DATA_CONST.__const: 0x13b0 sha256:3c18cffe3853d78ad7695b2c79749cf787f76ebd36a2b0d3296f46de61d38491
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x10 sha256:0294809f5269258f8ea3166da8598374b98b42ffc419529dc2bb93f3ac4ed311
--  __DATA_CONST.__got: 0x670 sha256:bf3151ddf2a938c656223b2d676e02e604aa27aa1f8a4586a9acc1eebe460068
--  __AUTH_CONST.__const: 0x7010 sha256:ea371afa8d319e70e679c1659650bcad3f93ac21d25b608c12a1a47fe21d16a1
--  __AUTH_CONST.__cfstring: 0xa0 sha256:8003f11f97fa3ec2a20ab5f007ab15f78e3985af4fa60cbcb59492bb505169f6
--  __AUTH_CONST.__weak_auth_got: 0x10 sha256:eea02642beb18481e7c20f71accafc70bde0c2fbe6d247660b04514b5f07518f
-+  __DATA_CONST.__weak_got: 0x10 sha256:5903c4604a79e4037fe14409722fa72f300e8d9060026e2628ee62d05783a7b3
-+  __DATA_CONST.__got: 0x670 sha256:9fc7f5ce7b7e288816ec341abbc0775496e6b1f4a8675829d12390a5f24091d6
-+  __AUTH_CONST.__const: 0x7010 sha256:19bf195ac5637e66927d415df8bb4c08a02668d1342002c5d87aa07bce5c9800
-+  __AUTH_CONST.__cfstring: 0xa0 sha256:3315986b1c8fccdc4c51ae0bacefeba5da0abc8de20191f421ca01212ff3c13c
-+  __AUTH_CONST.__weak_auth_got: 0x10 sha256:2f053c8f7ae2d3be9c474895041cbe7a14dbee64dce28f717cce8078e8bd92f8
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__data: 0x210 sha256:28b33b0d1be2e265f7acc95bc7d1f2a91c2072f682b150a8ef54f1a00e9bda3f
-+  __DATA.__data: 0x218 sha256:292e1959f39c6b8cd29a7cab3feeb770a11f062547023775c8583d289b8d2155
-   __DATA.__common: 0x40 sha256:f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b
-   __DATA_DIRTY.__data: 0xf0 sha256:55087826650f4a49e95d85bec646e983bb8f37e1ab6f4efc39c5963d25e85bdc
-   __DATA_DIRTY.__bss: 0x110 sha256:e4d879a3407de578f579dfab4366fcea75a6649c683d9efe4f056f6505437574
 
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  UUID: C4F5CBD6-07AF-38CE-B0D5-FCC8C0426D12
 -  Functions: 2233
--  Symbols:   7636
--  CStrings:  866
-+  UUID: 88B0D9D1-01DD-339C-92ED-A59852530CC5
+-  Symbols:   4716
+-  CStrings:  857
 +  Functions: 2232
-+  Symbols:   7641
-+  CStrings:  872
- 
++  Symbols:   4721
++  CStrings:  863
 Symbols:
 + __ZN3abm18kTraceMultiChannelE
 + __ZN3abm23kKeyMultiChannelEnabledE
@@ -282,7 +257,6 @@ Symbols:
 + __ZNSt3__1plB9fqe220106IcNS_11char_traitsIcEENS_9allocatorIcEEEENS_12basic_stringIT_T0_T1_EERKS9_PKS6_
 + __ZSt28__throw_bad_array_new_lengthB9fqe220106v
 + __ZZSt29__make_exception_ptr_explicitB9fqe220106INSt3__112future_errorEESt13exception_ptrRT_ENUlPvE_8__invokeES5_
-+ ___block_literal_global.54
 - __ZN12capabilities5trace22supportedModemFeaturesEv
 - __ZN12capabilities5traceanENS0_12ModemFeatureES1_
 - __ZN3abm26getActiveTraceChannelCountEv
@@ -508,9 +482,7 @@ Symbols:
 - __ZNSt3__1plB9fqe220100IcNS_11char_traitsIcEENS_9allocatorIcEEEENS_12basic_stringIT_T0_T1_EERKS9_PKS6_
 - __ZSt28__throw_bad_array_new_lengthB9fqe220100v
 - __ZZSt29__make_exception_ptr_explicitB9fqe220100INSt3__112future_errorEESt13exception_ptrRT_ENUlPvE_8__invokeES5_
-- ___block_literal_global.53
 CStrings:
-+ "/AppleInternal/Library/BuildRoots/4~CSILugADkjf5IWkRyB8JiDjjJyllmxHkj5cMyRI/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/ARI/ari_sdk_msg.h"
 + "AppleBasebandManager-AppleBasebandServices_Manager-1570"
 + "Force_Metric_Submission"
 + "MultiChannel"
@@ -518,7 +490,5 @@ CStrings:
 + "channel_id"
 + "configured_threshold_mbps"
 + "duration_seconds"
-- "/AppleInternal/Library/BuildRoots/4~CQhsugCziGl4vQ_jGOdWa3M3YoZO7rQSf5CIMGw/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/ARI/ari_sdk_msg.h"
 - "AppleBasebandManager-AppleBasebandServices_Manager-1563"
-
 ```

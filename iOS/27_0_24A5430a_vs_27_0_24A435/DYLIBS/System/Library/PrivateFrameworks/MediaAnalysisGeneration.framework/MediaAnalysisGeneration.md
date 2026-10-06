@@ -2,24 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/MediaAnalysisGeneration.framework/MediaAnalysisGeneration`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xea8` | `0xeb4` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
- 435.79.1.5.0
--  __TEXT.__text: 0xea8
-+  __TEXT.__text: 0xeb4
-   __TEXT.__objc_methlist: 0xc0
-   __TEXT.__const: 0x60
-   __TEXT.__gcc_except_tab: 0x1c
-
-   - /System/Library/Frameworks/IOSurface.framework/IOSurface
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 27
--  Symbols:   143
+-  Symbols:   121
 +  Functions: 28
-+  Symbols:   144
-   CStrings:  13
- 
++  Symbols:   122
 Symbols:
 + _OUTLINED_FUNCTION_2
 Functions:

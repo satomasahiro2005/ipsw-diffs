@@ -2,5 +2,14 @@
 
 > `/System/Library/PreferenceBundles/InputAccessoriesBundle.bundle/InputAccessoriesBundle`
 
-Sections:
-~ __TEXT.__const : content changed
+### Same-size Content Changes
+
+- `__TEXT.__const`
+
+### Other Changes
+
+```diff
+
+-18.0.0.0.0
++2027.0.1.0.0
+```

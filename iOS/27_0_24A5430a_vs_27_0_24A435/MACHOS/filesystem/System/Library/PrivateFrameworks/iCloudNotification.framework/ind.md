@@ -2,19 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/iCloudNotification.framework/ind`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x356cc` | `0x356d4` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__objc_methlist`
 - `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 301.24.0.27.0
--  __TEXT.__text: 0x356cc
-+  __TEXT.__text: 0x356d4
-   __TEXT.__auth_stubs: 0x1400
-   __TEXT.__objc_stubs: 0x4660
-   __TEXT.__objc_methlist: 0x1bfc
+```text
 Functions:
 ~ sub_10000305c : 20 -> 12
 ~ sub_100003070 -> sub_100003068 : 16 -> 20

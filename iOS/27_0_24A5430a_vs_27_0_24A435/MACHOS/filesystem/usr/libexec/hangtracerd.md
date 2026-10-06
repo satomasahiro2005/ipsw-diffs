@@ -2,30 +2,27 @@
 
 > `/usr/libexec/hangtracerd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x400` | `0x430` | **`+0x30`** |
+| `__TEXT.__text` | `0x36f50` | `0x36f48` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 426.0.0.0.0
--  __TEXT.__text: 0x36f50
-+  __TEXT.__text: 0x36f48
-   __TEXT.__auth_stubs: 0xfa0
-   __TEXT.__objc_stubs: 0x5ca0
-   __TEXT.__objc_methlist: 0x289c
--  __TEXT.__const: 0x400
-+  __TEXT.__const: 0x430
-   __TEXT.__cstring: 0x4da0
-   __TEXT.__objc_methname: 0x9c5b
-   __TEXT.__objc_classname: 0x37d
+```text
 Functions:
 ~ sub_100002e68 : 4540 -> 4504
 ~ sub_10000be1c -> sub_10000bdf8 : 1396 -> 1392

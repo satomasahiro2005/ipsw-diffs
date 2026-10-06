@@ -2,5 +2,14 @@
 
 > `/Applications/FamilyControlsAuthenticationUI.app/FamilyControlsAuthenticationUI`
 
-Sections:
-~ __TEXT.__const : content changed
+### Same-size Content Changes
+
+- `__TEXT.__const`
+
+### Other Changes
+
+```diff
+
+-1242.0.0.0.0
++1244.0.0.0.0
+```

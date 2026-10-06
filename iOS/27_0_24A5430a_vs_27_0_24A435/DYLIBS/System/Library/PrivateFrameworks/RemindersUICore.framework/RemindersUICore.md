@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/RemindersUICore.framework/RemindersUICore`
 
-```diff
+### Section Size Changes
 
- 4046.11.0.0.0
--  __TEXT.__text: 0xb7fda8
-+  __TEXT.__text: 0xb7f9ac
-   __TEXT.__objc_methlist: 0x7a60
-   __TEXT.__const: 0x40de4
-   __TEXT.__gcc_except_tab: 0x88
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb7fda8` | `0xb7f9ac` | **`-0x3fc`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_221d78edc -> sub_2225aaedc : 752 -> 756
 ~ sub_221e0bc14 -> sub_22263dc18 : 1588 -> 1604

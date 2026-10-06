@@ -2,18 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/BiometricSupport.framework/BiometricSupport`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4ed98` | `0x4ed9c` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__oslogstring`
 
-```diff
+### Other Changes
 
- 577.0.0.0.0
--  __TEXT.__text: 0x4ed98
-+  __TEXT.__text: 0x4ed9c
-   __TEXT.__objc_methlist: 0x291c
-   __TEXT.__const: 0x13ec
-   __TEXT.__cstring: 0x6fdc
+```diff
 CStrings:
 + "AssertMacros: %s (value = 0x%lx), version: BiometricKit-577~3209, %s file: %s, line: %d\n\n"
 - "AssertMacros: %s (value = 0x%lx), version: BiometricKit-577~3230, %s file: %s, line: %d\n\n"

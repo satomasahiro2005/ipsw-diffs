@@ -2,44 +2,20 @@
 
 > `/usr/lib/libATCommandStudioDynamic.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x55c30` | `0x55a38` | **`-0x1f8`** |
+| `__TEXT.__unwind_info` | `0x2310` | `0x2300` | **`-0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x5888` | `0x5884` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1563.0.0.0.0
--  __TEXT.__text: 0x55c30 sha256:85f20a40355d6cba5872f406ee1f828aeb8c086eebdf7d9c8672ff97a938e293
--  __TEXT.__init_offsets: 0x10 sha256:e7655f4402bd644e22bff875c4c36c490093eeccbfdeab2173c30f5b80bbeb31
 +1570.0.0.0.0
-+  __TEXT.__text: 0x55a38 sha256:d5e32f129f80d9e5f7272e0141a79a57149a959a982011f3020cbf871a7fcbae
-+  __TEXT.__init_offsets: 0x10 sha256:7865aa4c47a58c0e43e13b51cc93cb7ce6eec4502a8684eefed1462457165302
-   __TEXT.__const: 0x1b00 sha256:500acfbff6f8487d8c6894c34838e79b0cab1827aa3b72f72d37b068535d1f66
--  __TEXT.__gcc_except_tab: 0x5888 sha256:f1ebfa3c366c553c397b0bc623b5662e81b913dcf579f7f2aa1445194f285278
--  __TEXT.__cstring: 0x2032 sha256:4bd8043f1ab4c994f6721bc66efd64e0914524da894e877425bfd40934b05650
-+  __TEXT.__gcc_except_tab: 0x5884 sha256:86efddc92d1df3dea45f41b5c5821cb853290961dd7ef8cc91b3297566d68662
-+  __TEXT.__cstring: 0x2032 sha256:5643126d029726d7eefbcc60da12c1b721e64a50b7b4212a8105a43eeb8f89bd
-   __TEXT.__oslogstring: 0x2525 sha256:71a879518a3ec210c5670a2c7c870e498ce4541ca9136ec1464e52f1ca848062
--  __TEXT.__unwind_info: 0x2310 sha256:469c6522e208c630602a750ce2fca25c125ac35ee395801e8d9914e2c58a3b3d
-+  __TEXT.__unwind_info: 0x2300 sha256:69920d5a417d28726a7abf614ae5d56b05c408fbd1320d49e2ec2d514f795ff2
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0xa80 sha256:eca1708f947250572b450708267a539b7aec9050b8d159a98e432f9de5faac8c
--  __DATA_CONST.__weak_got: 0x48 sha256:ea2b995b39a9b97ac68b3195d8c89980a6d018b26dc5cf27aa5b0e5aeaa241f4
-+  __DATA_CONST.__const: 0xa80 sha256:3cab85dbca9cc851a69384f9407fb005369db488bf24820ceee16955aa5f91c0
-+  __DATA_CONST.__weak_got: 0x48 sha256:80ab9ae0fa0961ab79a8ecd45bc8077f08701de576338db669f62df0ba3b5ceb
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x24f8 sha256:43fe4c4a34e36d1c013f47760a09031f0a9664e9c4577ef2a4771f13ca8e6361
--  __AUTH_CONST.__weak_auth_got: 0x20 sha256:933fbc1ea3c831567dfc853d70e45d918c6f4d128631d64cd4e716726587fc9c
-+  __AUTH_CONST.__const: 0x24f8 sha256:1951dffa05f10475629f4acaf7ab056933db115a55f952f195165519be455e37
-+  __AUTH_CONST.__weak_auth_got: 0x20 sha256:1b9fdfbdaac993f064a4a5c4768d4b845cc8e8a0f1859bb298cad252bdb5c3fc
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__common: 0x10 sha256:374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb
-   __DATA_DIRTY.__data: 0x108 sha256:6284330bff3c8491d413f7fee5de6596eca41f1a76cca093a56e851bc68c1765
-
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libmav_ipc_router_dynamic.dylib
--  UUID: F3FE87C5-3F44-3878-AF1E-68F1BAFEC585
-+  UUID: 885B9CC1-72E6-3A1E-A7C2-FA7205167050
-   Functions: 1434
-   Symbols:   3571
-   CStrings:  540
 Symbols:
 + __ZNKSt3__111__move_implINS_17_ClassicAlgPolicyEEclB9noe220106IPN3qmi11ClientProxy5State11TransactionENS_16__deque_iteratorIS7_S8_RS7_PS8_lLl128EEELi0EEENS_4pairIT_T0_EESE_SE_SF_
 + __ZNKSt3__120__move_backward_implINS_17_ClassicAlgPolicyEEclB9noe220106IPN3qmi11ClientProxy5State11TransactionENS_16__deque_iteratorIS7_S8_RS7_PS8_lLl128EEELi0EEENS_4pairIT_T0_EESE_SE_SF_
@@ -381,5 +357,4 @@ Symbols:
 - __ZNSt3__16vectorItNS_9allocatorItEEE20__throw_length_errorB9noe220100Ev
 - __ZNSt3__1eqB9noe220100IcNS_11char_traitsIcEENS_9allocatorIcEEEEbRKNS_12basic_stringIT_T0_T1_EEPKS6_
 - __ZSt28__throw_bad_array_new_lengthB9noe220100v
-
 ```

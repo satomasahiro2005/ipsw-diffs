@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AudioServerDriver.framework/AudioServerDriver`
 
-```diff
+### Section Size Changes
 
- 1200.31.0.0.0
--  __TEXT.__text: 0x6bfcc
-+  __TEXT.__text: 0x6c1f8
-   __TEXT.__objc_methlist: 0x43fc
-   __TEXT.__gcc_except_tab: 0x3f58
-   __TEXT.__const: 0x79c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6bfcc` | `0x6c1f8` | **`+0x22c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN18ASDSRCStreamHelper9readInputEjPK28AudioServerPlugInIOCycleInfoPvS3_j : 2152 -> 2160
 ~ __ZN18ASDSRCStreamHelper8writeMixEjPK28AudioServerPlugInIOCycleInfoPvS3_j : 2440 -> 2488

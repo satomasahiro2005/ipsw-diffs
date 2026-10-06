@@ -2,15 +2,14 @@
 
 > `/Applications/DiagnosticsService.app/PlugIns/Diagnostic-8262.appex/Diagnostic-8262`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -1307.40.51.0.0
 +1307.40.64.0.0
-   __TEXT.__text: 0x27ec
-   __TEXT.__auth_stubs: 0x2c0
-   __TEXT.__objc_stubs: 0x820
 ```

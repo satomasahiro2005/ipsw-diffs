@@ -2,79 +2,57 @@
 
 > `/Applications/MomentsUIService.app/MomentsUIService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x290248` | `0x2903a8` | **`+0x160`** |
+| `__TEXT.__eh_frame` | `0x86f8` | `0x8650` | **`-0xa8`** |
+| `__TEXT.__unwind_info` | `0x7728` | `0x76f8` | **`-0x30`** |
+| `__TEXT.__const` | `0xb3d4` | `0xb3b4` | **`-0x20`** |
+| `__TEXT.__swift5_typeref` | `0x4562` | `0x456e` | **`+0xc`** |
+| `__TEXT.__swift_as_cont` | `0x72c` | `0x720` | **`-0xc`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__cstring`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x290248
-+  __TEXT.__text: 0x2903a8
-   __TEXT.__auth_stubs: 0x4ab0
-   __TEXT.__objc_stubs: 0x9400
-   __TEXT.__objc_methlist: 0x4064
--  __TEXT.__const: 0xb3d4
-+  __TEXT.__const: 0xb3b4
-   __TEXT.__gcc_except_tab: 0x204
-   __TEXT.__cstring: 0xa048
-   __TEXT.__objc_methname: 0x12565
-   __TEXT.__oslogstring: 0xd6e3
-   __TEXT.__objc_classname: 0x2d88
-   __TEXT.__objc_methtype: 0x3d39
--  __TEXT.__swift5_typeref: 0x4562
-+  __TEXT.__swift5_typeref: 0x456e
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__constg_swiftt: 0x754c
-   __TEXT.__swift5_builtin: 0x384
+-412.0.0.0.0
++415.0.0.0.0
 
-   __TEXT.__swift5_capture: 0x3da8
-   __TEXT.__swift_as_entry: 0x33c
-   __TEXT.__swift_as_ret: 0x454
--  __TEXT.__swift_as_cont: 0x72c
-+  __TEXT.__swift_as_cont: 0x720
-   __TEXT.__swift5_protos: 0x48
--  __TEXT.__unwind_info: 0x7728
--  __TEXT.__eh_frame: 0x86f8
-+  __TEXT.__unwind_info: 0x76f8
-+  __TEXT.__eh_frame: 0x8650
-   __DATA_CONST.__const: 0x10400
-   __DATA_CONST.__cfstring: 0x1fc0
-   __DATA_CONST.__objc_classlist: 0x550
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   - @rpath/MomentsUIServiceCore.framework/MomentsUIServiceCore
 -  Functions: 11034
--  Symbols:   81786
+-  Symbols:   26535
 +  Functions: 11028
-+  Symbols:   81761
-   CStrings:  5260
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__swift5_entry : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
-~ __DATA.__bss : content changed
-~ __DATA.__common : content changed
++  Symbols:   26531
 Symbols:
 + _$s16MomentsUIService25MOBundleProcessingSessionC08_runFullD014triggerRefreshySb_tYaKFTQ40_
 + _$s16MomentsUIService25MOBundleProcessingSessionC08_runFullD014triggerRefreshySb_tYaKFTY41_
@@ -104,5 +82,4 @@ Symbols:
 - _$ss9TaskLocalC9withValue_9operation9isolation4file4lineqd__x_qd__yYaKXEScA_pSgYiSSSutYaKlF
 - _$ss9TaskLocalC9withValue_9operation9isolation4file4lineqd__x_qd__yYaKXEScA_pSgYiSSSutYaKlFTu
 - _swift_willThrowTypedImpl
-
 ```

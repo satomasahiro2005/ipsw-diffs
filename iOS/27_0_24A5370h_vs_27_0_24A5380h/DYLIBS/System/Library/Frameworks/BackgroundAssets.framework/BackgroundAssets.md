@@ -2,83 +2,33 @@
 
 > `/System/Library/Frameworks/BackgroundAssets.framework/BackgroundAssets`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x90c34` | `0x91238` | **`+0x604`** |
+| `__TEXT.__eh_frame` | `0x41a0` | `0x4168` | **`-0x38`** |
+| `__DATA.__data` | `0x13a8` | `0x1380` | **`-0x28`** |
+| `__TEXT.__swift5_typeref` | `0x121f` | `0x120d` | **`-0x12`** |
+| `__TEXT.__const` | `0x3028` | `0x3018` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xfa8` | `0xfb0` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x1ae0` | `0x1ae8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x90c34
-+  __TEXT.__text: 0x91238
-   __TEXT.__objc_methlist: 0x1450
--  __TEXT.__const: 0x3028
-+  __TEXT.__const: 0x3018
-   __TEXT.__gcc_except_tab: 0x3a0
-   __TEXT.__cstring: 0x424a
-   __TEXT.__oslogstring: 0x4738
--  __TEXT.__swift5_typeref: 0x121f
-+  __TEXT.__swift5_typeref: 0x120d
-   __TEXT.__swift5_fieldmd: 0x930
-   __TEXT.__constg_swiftt: 0xc60
-   __TEXT.__swift5_builtin: 0x8c
+-271.0.0.0.0
++274.0.0.0.0
 
-   __TEXT.__swift_as_ret: 0x154
-   __TEXT.__swift_as_cont: 0x244
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x1ae0
--  __TEXT.__eh_frame: 0x41a0
-+  __TEXT.__unwind_info: 0x1ae8
-+  __TEXT.__eh_frame: 0x4168
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __AUTH_CONST.__const: 0x1e60
-   __AUTH_CONST.__cfstring: 0x1140
-   __AUTH_CONST.__objc_const: 0x2ac8
--  __AUTH_CONST.__auth_got: 0xfa8
-+  __AUTH_CONST.__auth_got: 0xfb0
-   __AUTH.__objc_data: 0x898
-   __AUTH.__data: 0xb70
-   __DATA.__objc_ivar: 0x120
--  __DATA.__data: 0x13a8
-+  __DATA.__data: 0x1380
-   __DATA.__crash_info: 0x148
-   __DATA.__bss: 0x3c60
-   __DATA.__common: 0x50
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1963
--  Symbols:   2619
+-  Symbols:   1512
 +  Functions: 1962
-+  Symbols:   2616
-   CStrings:  735
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   1509
 Symbols:
 + -[BAAgentClientProxy initWithAppBundleIdentifier:downloadManager:]
 + -[BADownloadManager initWithAppBundleIdentifier:]
@@ -106,5 +56,4 @@ CStrings:
 + "App bundle identifier (%@) is not a valid bundle identifier."
 - "Application identifier (%@) has invalid app store metadata dictionary."
 - "Application identifier (%@) is not a valid bundle identifier."
-
 ```

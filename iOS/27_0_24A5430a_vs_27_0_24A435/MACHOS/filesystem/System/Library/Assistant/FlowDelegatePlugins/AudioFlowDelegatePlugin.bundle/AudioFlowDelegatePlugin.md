@@ -2,32 +2,33 @@
 
 > `/System/Library/Assistant/FlowDelegatePlugins/AudioFlowDelegatePlugin.bundle/AudioFlowDelegatePlugin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2cc620` | `0x2cc660` | **`+0x40`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__const`
 - `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
 - `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
 
-```diff
+### Other Changes
 
- 3600.33.17.0.0
--  __TEXT.__text: 0x2cc620
-+  __TEXT.__text: 0x2cc660
-   __TEXT.__auth_stubs: 0x6f20
-   __TEXT.__objc_stubs: 0x2ec0
-   __TEXT.__objc_methlist: 0x6e8
+```text
 Functions:
 ~ sub_12a84 : 1248 -> 1228
 ~ sub_1f95c -> sub_1f948 : 752 -> 756

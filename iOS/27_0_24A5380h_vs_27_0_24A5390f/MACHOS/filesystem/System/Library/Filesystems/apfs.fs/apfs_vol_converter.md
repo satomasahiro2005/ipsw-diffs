@@ -2,34 +2,29 @@
 
 > `/System/Library/Filesystems/apfs.fs/apfs_vol_converter`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5a594` | `0x5a7a8` | **`+0x214`** |
+| `__TEXT.__cstring` | `0x11f54` | `0x1203d` | **`+0xe9`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -3283.0.9.502.1
--  __TEXT.__text: 0x5a594
 +3283.0.13.0.0
-+  __TEXT.__text: 0x5a7a8
-   __TEXT.__auth_stubs: 0xa10
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__const: 0x750
--  __TEXT.__cstring: 0x11f54
-+  __TEXT.__cstring: 0x1203d
-   __TEXT.__gcc_except_tab: 0x6a4
-   __TEXT.__unwind_info: 0xcb0
-   __DATA_CONST.__const: 0xb20
 
-   - /usr/lib/libutil.dylib
-   Functions: 906
-   Symbols:   187
 -  CStrings:  1610
 +  CStrings:  1614
- 
 Functions:
 ~ sub_10001974c : 596 -> 640
 ~ sub_1000312a4 -> sub_1000312d0 : 508 -> 512

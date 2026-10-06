@@ -2,146 +2,67 @@
 
 > `/System/Library/PrivateFrameworks/VisualIntelligenceUI.framework/VisualIntelligenceUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__vfx_script_tbl`
-- `__DATA.__objc_stublist`
-- `__DATA.__common`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x36d670` | `0x38fedc` | **`+0x2286c`** |
+| `__TEXT.__const` | `0x20b84` | `0x21f34` | **`+0x13b0`** |
+| `__DATA.__bss` | `0xb940` | `0xcab0` | **`+0x1170`** |
+| `__TEXT.__oslogstring` | `0x413f` | `0x4f92` | **`+0xe53`** |
+| `__AUTH_CONST.__const` | `0xe298` | `0xee28` | **`+0xb90`** |
+| `__DATA.__data` | `0x84c4` | `0x8e30` | **`+0x96c`** |
+| `__TEXT.__eh_frame` | `0xa388` | `0xac10` | **`+0x888`** |
+| `__TEXT.__swift5_fieldmd` | `0x67c0` | `0x6cd8` | **`+0x518`** |
+| `__TEXT.__swift5_reflstr` | `0x7888` | `0x7d58` | **`+0x4d0`** |
+| `__AUTH.__data` | `0x2ec8` | `0x3378` | **`+0x4b0`** |
+| `__TEXT.__unwind_info` | `0x90c0` | `0x9560` | **`+0x4a0`** |
+| `__DATA_DIRTY.__data` | `0x80d8` | `0x7c58` | **`-0x480`** |
+| `__TEXT.__constg_swiftt` | `0x716c` | `0x75b4` | **`+0x448`** |
+| `__TEXT.__swift5_capture` | `0x3778` | `0x3abc` | **`+0x344`** |
+| `__TEXT.__swift5_typeref` | `0x471d8` | `0x474b2` | **`+0x2da`** |
+| `__AUTH.__objc_data` | `0xcc0` | `0xf30` | **`+0x270`** |
+| `__TEXT.__cstring` | `0x71d8` | `0x73c8` | **`+0x1f0`** |
+| `__AUTH_CONST.__objc_const` | `0x9b68` | `0x9ce8` | **`+0x180`** |
+| `__TEXT.__swift5_assocty` | `0x1cb8` | `0x1da8` | **`+0xf0`** |
+| `__AUTH_CONST.__auth_got` | `0x4bd0` | `0x4cb8` | **`+0xe8`** |
+| `__DATA_DIRTY.__bss` | `0x7b30` | `0x7ab0` | **`-0x80`** |
+| `__TEXT.__swift5_proto` | `0x8a4` | `0x924` | **`+0x80`** |
+| `__DATA_CONST.__got` | `0x2ca0` | `0x2c28` | **`-0x78`** |
+| `__DATA_DIRTY.__objc_data` | `0xfa0` | `0xf48` | **`-0x58`** |
+| `__TEXT.__lazy_helpers` | `0x1fac` | `0x1f58` | **`-0x54`** |
+| `__TEXT.__objc_methlist` | `0x10b4` | `0x1104` | **`+0x50`** |
+| `__TEXT.__swift_as_cont` | `0x4d8` | `0x528` | **`+0x50`** |
+| `__TEXT.__swift5_types` | `0x5f4` | `0x638` | **`+0x44`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1470` | `0x14b0` | **`+0x40`** |
+| `__TEXT.__swift_as_ret` | `0x254` | `0x27c` | **`+0x28`** |
+| `__TEXT.__swift_as_entry` | `0x294` | `0x2b0` | **`+0x1c`** |
+| `__DATA_CONST.__objc_classlist` | `0x1e0` | `0x1f8` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x140` | `0x154` | **`+0x14`** |
+| `__AUTH_CONST.__lazy_load_got` | `0x280` | `0x278` | **`-0x8`** |
+| `__DATA_CONST.__const` | `0x9e8` | `0x9f0` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -224.1.0.0.0
--  __TEXT.__text: 0x36d670
--  __TEXT.__lazy_helpers: 0x1fac
--  __TEXT.__objc_methlist: 0x10b4
--  __TEXT.__const: 0x20b84
--  __TEXT.__cstring: 0x71d8
--  __TEXT.__swift5_typeref: 0x471d8
--  __TEXT.__swift5_capture: 0x3778
--  __TEXT.__constg_swiftt: 0x716c
--  __TEXT.__swift5_reflstr: 0x7888
--  __TEXT.__swift5_assocty: 0x1cb8
--  __TEXT.__swift5_fieldmd: 0x67c0
--  __TEXT.__swift5_builtin: 0x140
--  __TEXT.__swift5_proto: 0x8a4
--  __TEXT.__swift5_types: 0x5f4
--  __TEXT.__swift_as_entry: 0x294
--  __TEXT.__swift_as_cont: 0x4d8
--  __TEXT.__oslogstring: 0x413f
--  __TEXT.__swift_as_ret: 0x254
--  __TEXT.__swift5_protos: 0x2c
 +234.0.0.0.0
-+  __TEXT.__text: 0x38fedc
-+  __TEXT.__lazy_helpers: 0x1f58
-+  __TEXT.__objc_methlist: 0x1104
-+  __TEXT.__const: 0x21f34
-+  __TEXT.__cstring: 0x73c8
-+  __TEXT.__swift5_typeref: 0x474b2
-+  __TEXT.__swift5_capture: 0x3abc
-+  __TEXT.__constg_swiftt: 0x75b4
-+  __TEXT.__swift5_reflstr: 0x7d58
-+  __TEXT.__swift5_assocty: 0x1da8
-+  __TEXT.__swift5_fieldmd: 0x6cd8
-+  __TEXT.__swift5_builtin: 0x154
-+  __TEXT.__swift5_proto: 0x924
-+  __TEXT.__swift5_types: 0x638
-+  __TEXT.__swift_as_entry: 0x2b0
-+  __TEXT.__swift_as_ret: 0x27c
-+  __TEXT.__swift_as_cont: 0x528
-   __TEXT.__swift5_mpenum: 0x40
--  __TEXT.__unwind_info: 0x90c0
--  __TEXT.__eh_frame: 0xa388
-+  __TEXT.__oslogstring: 0x4f92
-+  __TEXT.__swift5_protos: 0x2c
-+  __TEXT.__unwind_info: 0x9560
-+  __TEXT.__eh_frame: 0xac10
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9e8
--  __DATA_CONST.__objc_classlist: 0x1e0
-+  __DATA_CONST.__const: 0x9f0
-+  __DATA_CONST.__objc_classlist: 0x1f8
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x148
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1470
-+  __DATA_CONST.__objc_selrefs: 0x14b0
-   __DATA_CONST.__objc_protorefs: 0xa8
-   __DATA_CONST.__vfx_script_tbl: 0x10
--  __DATA_CONST.__got: 0x2ca0
--  __AUTH_CONST.__const: 0xe298
--  __AUTH_CONST.__objc_const: 0x9b68
--  __AUTH_CONST.__lazy_load_got: 0x280
--  __AUTH_CONST.__auth_got: 0x4bd0
--  __AUTH.__objc_data: 0xcc0
--  __AUTH.__data: 0x2ec8
--  __DATA.__data: 0x84c4
-+  __DATA_CONST.__got: 0x2c28
-+  __AUTH_CONST.__const: 0xee28
-+  __AUTH_CONST.__objc_const: 0x9ce8
-+  __AUTH_CONST.__lazy_load_got: 0x278
-+  __AUTH_CONST.__auth_got: 0x4cb8
-+  __AUTH.__objc_data: 0xf30
-+  __AUTH.__data: 0x3378
-+  __DATA.__data: 0x8e30
-   __DATA.__objc_stublist: 0x8
--  __DATA.__bss: 0xb940
-+  __DATA.__bss: 0xcab0
-   __DATA.__common: 0xa8
--  __DATA_DIRTY.__objc_data: 0xfa0
--  __DATA_DIRTY.__data: 0x80d8
--  __DATA_DIRTY.__bss: 0x7b30
-+  __DATA_DIRTY.__objc_data: 0xf48
-+  __DATA_DIRTY.__data: 0x7c58
-+  __DATA_DIRTY.__bss: 0x7ab0
-   __DATA_DIRTY.__common: 0x100
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
 
-   - /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
-   - /System/Library/PrivateFrameworks/HealthAppServices.framework/HealthAppServices
-   - /System/Library/PrivateFrameworks/HealthAppServicesUI.framework/HealthAppServicesUI
 +  - /System/Library/PrivateFrameworks/HealthExperienceUI.framework/HealthExperienceUI
-   - /System/Library/PrivateFrameworks/HealthUI.framework/HealthUI
+
 -  - /System/Library/PrivateFrameworks/IconServices.framework/IconServices
-   - /System/Library/PrivateFrameworks/InputToolKitUI.framework/InputToolKitUI
-   - /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf
-   - /System/Library/PrivateFrameworks/MapsUI.framework/MapsUI
 
-   - /System/Library/PrivateFrameworks/SearchUI.framework/SearchUI
-   - /System/Library/PrivateFrameworks/SiriActivation.framework/SiriActivation
-   - /System/Library/PrivateFrameworks/SiriCalendarUI.framework/SiriCalendarUI
 +  - /System/Library/PrivateFrameworks/SiriUICardKitProviderSupport.framework/SiriUICardKitProviderSupport
-   - /System/Library/PrivateFrameworks/SnippetUI.framework/SnippetUI
-   - /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices
-   - /System/Library/PrivateFrameworks/SystemUIAnimationKit.framework/SystemUIAnimationKit
 
-   - /System/Library/PrivateFrameworks/VisualIntelligenceServices.framework/VisualIntelligenceServices
-   - /System/Library/PrivateFrameworks/VisualLookUp.framework/VisualLookUp
-   - /System/Library/PrivateFrameworks/VoiceTriggerUI.framework/VoiceTriggerUI
 +  - /System/Library/PrivateFrameworks/_IconServices_SwiftUI.framework/_IconServices_SwiftUI
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 13967
--  Symbols:   5991
+-  Symbols:   5555
 -  CStrings:  935
 +  Functions: 14399
-+  Symbols:   6138
++  Symbols:   5692
 +  CStrings:  990
- 
 Symbols:
 + _OBJC_CLASS_$_CNContactStore$lazyGOT$loadHelper_x21
 + _OBJC_CLASS_$_ISIcon$lazyGOT
@@ -253,19 +174,6 @@ Symbols:
 + _keypath_set.51Tm
 + _keypath_set.84Tm
 + _lazyLoadFlag$IconServices
-+ _objc_msgSend$commitPendingAuthorizationsWithCompletion:
-+ _objc_msgSend$currentDevice
-+ _objc_msgSend$currentTraitCollection
-+ _objc_msgSend$description
-+ _objc_msgSend$formattedStringValue
-+ _objc_msgSend$prepareForRenderer:progressHandler:
-+ _objc_msgSend$renderer
-+ _objc_msgSend$service
-+ _objc_msgSend$setPreferredAction:
-+ _objc_msgSend$setReportAConcernAction:
-+ _objc_msgSend$urlString
-+ _objc_msgSend$userInterfaceIdiom
-+ _objc_msgSend$username
 + _os_unfair_lock_lock
 + _os_unfair_lock_unlock
 + _symbolic SDyS2SG
@@ -739,9 +647,6 @@ Symbols:
 - _keypath_set.99Tm
 - _lazyLoadFlag$QuartzCore
 - _lazyLoadFlag$SiriUICardKitProviderSupport
-- _objc_msgSend$addToRunLoop:forMode:
-- _objc_msgSend$displayLinkWithTarget:selector:
-- _objc_msgSend$mainRunLoop
 - _symbolic Say_____G 20VisualIntelligenceUI22AnalyticsImageBundleIDO
 - _symbolic Say_____G 20VisualIntelligenceUI27VIUIPeriodicOpacityAnimatorC0E17AnimationMetadataV
 - _symbolic So13CADisplayLinkCSg

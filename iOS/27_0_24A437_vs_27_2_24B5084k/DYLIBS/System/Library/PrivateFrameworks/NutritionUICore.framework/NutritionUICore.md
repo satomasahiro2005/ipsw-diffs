@@ -2,74 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/NutritionUICore.framework/NutritionUICore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14ddc` | `0x1f840` | **`+0xaa64`** |
+| `__TEXT.__swift5_typeref` | `0x2d10` | `0x6e1e` | **`+0x410e`** |
+| `__TEXT.__const` | `0x15f4` | `0x2054` | **`+0xa60`** |
+| `__DATA.__bss` | `0x15a0` | `0x1b80` | **`+0x5e0`** |
+| `__AUTH_CONST.__const` | `0xff0` | `0x14e0` | **`+0x4f0`** |
+| `__DATA.__data` | `0x7d0` | `0xcc0` | **`+0x4f0`** |
+| `__TEXT.__unwind_info` | `0x4e8` | `0x6c8` | **`+0x1e0`** |
+| `__TEXT.__constg_swiftt` | `0x484` | `0x610` | **`+0x18c`** |
+| `__TEXT.__swift5_fieldmd` | `0x498` | `0x610` | **`+0x178`** |
+| `__AUTH_CONST.__auth_got` | `0x7b8` | `0x900` | **`+0x148`** |
+| `__DATA_CONST.__got` | `0x268` | `0x388` | **`+0x120`** |
+| `__TEXT.__swift5_reflstr` | `0x2e0` | `0x3e0` | **`+0x100`** |
+| `__AUTH.__data` | `0x490` | `0x528` | **`+0x98`** |
+| `__TEXT.__cstring` | `0x509` | `0x586` | **`+0x7d`** |
+| `__TEXT.__eh_frame` | `0x130` | `0x1a0` | **`+0x70`** |
+| `__TEXT.__swift5_assocty` | `0x1c8` | `0x210` | **`+0x48`** |
+| `__TEXT.__swift5_capture` | `0x60` | `0xa4` | **`+0x44`** |
+| `__TEXT.__swift5_proto` | `0xa8` | `0xd4` | **`+0x2c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8` | `0x28` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x60` | `0x80` | **`+0x20`** |
+| `__DATA.__common` | `0x60` | `0x70` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -30.0.7.0.0
--  __TEXT.__text: 0x1477c
--  __TEXT.__const: 0x15f4
--  __TEXT.__swift5_typeref: 0x2d10
--  __TEXT.__swift5_reflstr: 0x2e0
--  __TEXT.__swift5_assocty: 0x1c8
--  __TEXT.__constg_swiftt: 0x484
--  __TEXT.__swift5_fieldmd: 0x498
--  __TEXT.__swift5_capture: 0x60
--  __TEXT.__cstring: 0x509
--  __TEXT.__swift5_proto: 0xa8
--  __TEXT.__swift5_types: 0x60
 +30.40.5.0.0
-+  __TEXT.__text: 0x1ee00
-+  __TEXT.__const: 0x2054
-+  __TEXT.__swift5_typeref: 0x6e1e
-+  __TEXT.__constg_swiftt: 0x610
-+  __TEXT.__swift5_types: 0x80
-+  __TEXT.__swift5_reflstr: 0x3e0
-+  __TEXT.__swift5_assocty: 0x210
-+  __TEXT.__swift5_fieldmd: 0x610
-+  __TEXT.__swift5_proto: 0xd4
-+  __TEXT.__swift5_capture: 0xa4
-+  __TEXT.__cstring: 0x586
-   __TEXT.__oslogstring: 0x85
--  __TEXT.__unwind_info: 0x628
--  __TEXT.__eh_frame: 0x130
-+  __TEXT.__unwind_info: 0x8c8
-+  __TEXT.__eh_frame: 0x1a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__const: 0xb8
-   __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8
--  __DATA_CONST.__got: 0x268
--  __AUTH_CONST.__const: 0xff0
-+  __DATA_CONST.__objc_selrefs: 0x28
-+  __DATA_CONST.__got: 0x388
-+  __AUTH_CONST.__const: 0x14e0
-   __AUTH_CONST.__objc_const: 0x1d0
--  __AUTH_CONST.__auth_got: 0x7b8
-+  __AUTH_CONST.__auth_got: 0x900
-   __AUTH.__objc_data: 0x50
--  __AUTH.__data: 0x490
--  __DATA.__data: 0x7d0
--  __DATA.__common: 0x60
-+  __AUTH.__data: 0x528
-+  __DATA.__data: 0xcc0
-+  __DATA.__common: 0x70
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 471
--  Symbols:   377
+-  Symbols:   376
 -  CStrings:  52
 +  Functions: 673
-+  Symbols:   528
++  Symbols:   523
 +  CStrings:  56
- 
 Symbols:
 + _OBJC_CLASS_$_UIColor
 + __Block_copy
@@ -97,10 +68,6 @@ Symbols:
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE5sheet11isPresented9onDismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAA15ModifiedContentVyAA06ScrollC0VyAMyAMyAA6VStackVyAA05TupleL0VyAMyAMyAMyAMyAMyAMyAcAE15dynamicTypeSizeyQrAA07DynamicqR0OFQOyAA4TextV_Qo_AA24_ForegroundStyleModifierVyAA5ColorVGGAA16_FlexFrameLayoutVGAA08_OverlayW0VyAMyAcAE06buttonV0yQrqd__AA015PrimitiveButtonV0Rd__lFQOyAA6ButtonVyAMyAMyAMyAMyAMyAA5ImageVAA022_EnvironmentKeyWritingW0VyAA4FontVSgGGA2_GAA01_Z6LayoutVGAA011_BackgroundW0VyAA06_ShapeC0VyAA6CircleVA1_GGGAA01_l5ShapeW0VyA31_GGG_AA011PlainButtonV0VQo_AA023AccessibilityAttachmentW0VGSgGGAA14_PaddingLayoutVGA50_GA44_GSg_AMyAMyAMyAXA50_GA50_GA44_GAMyAMyAMyAxA06_FixedR6LayoutVGA50_GA44_GSgA63_ASy15NutritionUICore22SegmentedQualitySliderV_AMyAMyAQyAA7ForEachVySaySi6offset_A64_15NutritionFactorV7elementtGSSASyAMyAMyA64_18NutritionFactorRowVA50_GA50_G_AMyAA7DividerVA64_22NutritionVibrancyBlend33_0B3A6136B4AFB6EE2D4D20EDFFBA6DFFLLVGSgQPGGGA50_GA50_GQPGSgAMyAXA82_GQPGGA50_GA50_GGA44_G_AcAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQOyA64_20NutritionDetailSheetV_A64_24NutritionUIConfigurationCQo_Qo_HO
 + _objc_allocWithZone
 + _objc_autoreleaseReturnValue
-+ _objc_msgSend$accessibilityContrast
-+ _objc_msgSend$initWithDynamicProvider:
-+ _objc_msgSend$initWithRed:green:blue:alpha:
-+ _objc_msgSend$userInterfaceStyle
 + _objc_retain_x19
 + _objc_retain_x21
 + _swift_getForeignTypeMetadata

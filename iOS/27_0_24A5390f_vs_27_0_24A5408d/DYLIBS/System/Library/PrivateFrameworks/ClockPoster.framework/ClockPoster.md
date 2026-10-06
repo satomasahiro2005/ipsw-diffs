@@ -2,16 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/ClockPoster.framework/ClockPoster`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xdffa4` | `0xdff90` | **`-0x14`** |
+
+### Other Changes
+
 ```diff
 
 -111.0.0.0.0
--  __TEXT.__text: 0xdffa4
 +119.0.0.0.0
-+  __TEXT.__text: 0xdff90
-   __TEXT.__objc_methlist: 0x84c
-   __TEXT.__const: 0xc504
-   __TEXT.__cstring: 0xfc4
 Functions:
-~ sub_257f3e4d0 -> sub_2579474d0 : 1552 -> 1540
-~ sub_257f40044 -> sub_257949038 : 1444 -> 1436
+~ sub_257dee4d0 -> sub_25783e4d0 : 1552 -> 1540
+~ sub_257df0044 -> sub_257840038 : 1444 -> 1436
 ```

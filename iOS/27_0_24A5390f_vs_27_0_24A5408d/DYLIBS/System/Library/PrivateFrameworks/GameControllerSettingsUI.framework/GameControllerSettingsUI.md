@@ -2,44 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/GameControllerSettingsUI.framework/GameControllerSettingsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1cad34` | `0x1cb16c` | **`+0x438`** |
+| `__TEXT.__swift5_typeref` | `0x18696` | `0x186c8` | **`+0x32`** |
+| `__TEXT.__const` | `0x111a4` | `0x11184` | **`-0x20`** |
+| `__TEXT.__cstring` | `0x253b` | `0x255b` | **`+0x20`** |
+| `__DATA.__data` | `0x48c8` | `0x48c0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -7.0.18.0.0
--  __TEXT.__text: 0x1cad34
 +7.0.20.0.0
-+  __TEXT.__text: 0x1cb16c
-   __TEXT.__objc_methlist: 0x7bc
--  __TEXT.__const: 0x111a4
-+  __TEXT.__const: 0x11184
-   __TEXT.__gcc_except_tab: 0x10
--  __TEXT.__cstring: 0x253b
-+  __TEXT.__cstring: 0x255b
-   __TEXT.__dlopen_cstrs: 0x4c
--  __TEXT.__swift5_typeref: 0x18696
-+  __TEXT.__swift5_typeref: 0x186c8
-   __TEXT.__oslogstring: 0xf7c
-   __TEXT.__swift5_reflstr: 0x3cb4
-   __TEXT.__swift5_assocty: 0x1188
 
-   __AUTH.__objc_data: 0xef8
-   __AUTH.__data: 0x51b8
-   __DATA.__objc_ivar: 0x8
--  __DATA.__data: 0x48c8
-+  __DATA.__data: 0x48c0
-   __DATA.__bss: 0xece0
-   __DATA.__common: 0x220
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8535
--  Symbols:   22374
+-  Symbols:   22117
 -  CStrings:  379
 +  Functions: 8536
-+  Symbols:   22376
++  Symbols:   22119
 +  CStrings:  380
- 
 Symbols:
 + _$s24GameControllerSettingsUI27GCSUIControllerListItemViewV4bodyQrvg05SwiftD012TupleContentVyAE6ButtonVyAE4TextVGSg_AmE7DividerVSgAMQPGyXEfU0_
 + _$s24GameControllerSettingsUI27GCSUIControllerListItemViewV4bodyQrvg05SwiftD012TupleContentVyAE6ButtonVyAE4TextVGSg_AmE7DividerVSgAMQPGyXEfU0_AKyXEfU0_

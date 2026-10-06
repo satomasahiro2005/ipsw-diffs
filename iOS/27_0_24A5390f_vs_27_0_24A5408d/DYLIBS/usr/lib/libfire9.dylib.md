@@ -2,39 +2,31 @@
 
 > `/usr/lib/libfire9.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x301f94` | `0x302628` | **`+0x694`** |
+| `__TEXT.__oslogstring` | `0x1938e` | `0x1943e` | **`+0xb0`** |
+| `__TEXT.__const` | `0x9f6e8` | `0x9f758` | **`+0x70`** |
+| `__TEXT.__cstring` | `0x1bd44` | `0x1bd1a` | **`-0x2a`** |
+| `__AUTH_CONST.__auth_got` | `0x228` | `0x220` | **`-0x8`** |
+| `__DATA.__bss` | `0x26d8` | `0x26d0` | **`-0x8`** |
+| `__DATA_CONST.__const` | `0xaa00` | `0xaa08` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -30.0.0.0.0
--  __TEXT.__text: 0x301f94
--  __TEXT.__const: 0x9f6e8
--  __TEXT.__cstring: 0x1bd44
--  __TEXT.__oslogstring: 0x1938e
 +32.0.0.0.0
-+  __TEXT.__text: 0x302628
-+  __TEXT.__const: 0x9f758
-+  __TEXT.__cstring: 0x1bd1a
-+  __TEXT.__oslogstring: 0x1943e
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0xaa00
-+  __DATA_CONST.__const: 0xaa08
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0xf728
-   __AUTH_CONST.__weak_auth_got: 0x20
--  __AUTH_CONST.__auth_got: 0x228
-+  __AUTH_CONST.__auth_got: 0x220
-   __DATA.__data: 0x148
-   __DATA.__common: 0x640
--  __DATA.__bss: 0x26d8
-+  __DATA.__bss: 0x26d0
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
+
 -  Functions: 7594
 -  Symbols:   8823
 -  CStrings:  5180
 +  Functions: 7601
 +  Symbols:   8827
 +  CStrings:  5183
- 
 Symbols:
 + __ZN13FireDeviceLog13LoggingBuffer5ResetEv
 + __ZN15FireResourceMgr5resetEv
@@ -95,6 +87,7 @@ Symbols:
 CStrings:
 + "#fgd,reset"
 + "@(#)Broadcom GLL ver. 172.20.28 670616, 2026/Jul/16, 16:02:15, build_job_id:__BUILDJOBID__, %s://depot/client/core/rel/Olympic/OSX_20.28.658483.v9.0/...\n"
++ "Aug  3 2026, 21:35:14"
 + "ChipData_GRABSNQ_670616"
 + "ERROR: LTO/RTO mimatch. Expected %s, got %s\n"
 + "FIRE@32 GLL@670616"
@@ -109,6 +102,7 @@ CStrings:
 - "ChipData_GRABSNQ_669867"
 - "FIRE@30 GLL@669867"
 - "FireMessageHandler"
+- "Jul 10 2026, 01:09:00"
 - "abnormalStopCrash"
 - "esw_gll_patch_generator.py:://depot/client/core/rel/Olympic/OSX_20.28.658483.v9.0/proprietary/deliverables/esw5_dev:LOX_A8@$Change: 669866 $"
 - "esw_gll_patch_generator.py:://depot/client/core/rel/Olympic/OSX_20.28.658483.v9.0/proprietary/deliverables/esw5_dev:LOX_B0@$Change: 669866 $"

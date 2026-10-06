@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ReminderKitInternal.framework/ReminderKitInternal`
 
-```diff
+### Section Size Changes
 
- 4046.11.0.0.0
--  __TEXT.__text: 0x3063dc
-+  __TEXT.__text: 0x30661c
-   __TEXT.__objc_methlist: 0x1f20
-   __TEXT.__const: 0x2d008
-   __TEXT.__gcc_except_tab: 0x84
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3063dc` | `0x30661c` | **`+0x240`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_2021e2f9c -> sub_202879f9c : 904 -> 908
 ~ sub_2021ee640 -> sub_202885644 : 1016 -> 1020

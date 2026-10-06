@@ -2,14 +2,15 @@
 
 > `/usr/lib/libskit.dylib`
 
-```diff
+### Section Size Changes
 
- 3600.15.2.0.0
--  __TEXT.__text: 0x239f0
-+  __TEXT.__text: 0x23a84
-   __TEXT.__const: 0xc41
-   __TEXT.__gcc_except_tab: 0xd90
-   __TEXT.__oslogstring: 0x2325
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x239f0` | `0x23a84` | **`+0x94`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN4skit8internal12MultiIndexV25flushEv : 2084 -> 2088
 ~ __ZN4skit8internal12MultiIndexV26appendERKNS_11TokenStreamEfNS_4UuidEPK5iovecib : 3912 -> 3920

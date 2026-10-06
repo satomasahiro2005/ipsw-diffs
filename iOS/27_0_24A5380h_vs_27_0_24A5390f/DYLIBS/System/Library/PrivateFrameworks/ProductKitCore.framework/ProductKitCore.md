@@ -2,97 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/ProductKitCore.framework/ProductKitCore`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb8b10` | `0xbefdc` | **`+0x64cc`** |
+| `__DATA.__bss` | `0x12410` | `0x12d90` | **`+0x980`** |
+| `__TEXT.__const` | `0xe164` | `0xe894` | **`+0x730`** |
+| `__TEXT.__eh_frame` | `0xa15c` | `0xa514` | **`+0x3b8`** |
+| `__TEXT.__cstring` | `0x2d68` | `0x3028` | **`+0x2c0`** |
+| `__TEXT.__swift5_fieldmd` | `0x304c` | `0x32b8` | **`+0x26c`** |
+| `__TEXT.__swift5_reflstr` | `0x1f5e` | `0x218e` | **`+0x230`** |
+| `__TEXT.__swift5_typeref` | `0x2adc` | `0x2c78` | **`+0x19c`** |
+| `__AUTH_CONST.__const` | `0x63b8` | `0x6530` | **`+0x178`** |
+| `__TEXT.__unwind_info` | `0x3708` | `0x3880` | **`+0x178`** |
+| `__AUTH.__data` | `0x1520` | `0x1660` | **`+0x140`** |
+| `__TEXT.__constg_swiftt` | `0x216c` | `0x2280` | **`+0x114`** |
+| `__DATA.__data` | `0x21c0` | `0x22a8` | **`+0xe8`** |
+| `__TEXT.__swift5_proto` | `0x948` | `0x994` | **`+0x4c`** |
+| `__TEXT.__swift_as_cont` | `0x880` | `0x8bc` | **`+0x3c`** |
+| `__TEXT.__swift5_assocty` | `0x558` | `0x588` | **`+0x30`** |
+| `__TEXT.__swift5_acfuncs` | `0x2d0` | `0x2f8` | **`+0x28`** |
+| `__TEXT.__swift_as_entry` | `0x424` | `0x440` | **`+0x1c`** |
+| `__TEXT.__swift_as_ret` | `0x418` | `0x430` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0x2e4` | `0x2f4` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xf00` | `0xf08` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x38` | `0x3c` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -151.100.1.2.1
--  __TEXT.__text: 0xb8b10
 +152.100.1.0.0
-+  __TEXT.__text: 0xbefdc
-   __TEXT.__objc_methlist: 0x11c
--  __TEXT.__const: 0xe164
--  __TEXT.__constg_swiftt: 0x216c
--  __TEXT.__swift5_typeref: 0x2adc
--  __TEXT.__swift5_reflstr: 0x1f5e
--  __TEXT.__swift5_fieldmd: 0x304c
-+  __TEXT.__const: 0xe894
-+  __TEXT.__constg_swiftt: 0x2280
-+  __TEXT.__swift5_typeref: 0x2c78
-+  __TEXT.__swift5_reflstr: 0x218e
-+  __TEXT.__swift5_fieldmd: 0x32b8
-   __TEXT.__swift5_builtin: 0xb4
--  __TEXT.__swift5_assocty: 0x558
-+  __TEXT.__swift5_assocty: 0x588
-   __TEXT.__oslogstring: 0x17c1
--  __TEXT.__swift5_proto: 0x948
--  __TEXT.__swift5_types: 0x2e4
--  __TEXT.__swift_as_entry: 0x424
--  __TEXT.__swift_as_ret: 0x418
--  __TEXT.__swift_as_cont: 0x880
--  __TEXT.__cstring: 0x2d68
--  __TEXT.__swift5_protos: 0x38
-+  __TEXT.__swift5_proto: 0x994
-+  __TEXT.__swift5_types: 0x2f4
-+  __TEXT.__swift_as_entry: 0x440
-+  __TEXT.__swift_as_ret: 0x430
-+  __TEXT.__swift_as_cont: 0x8bc
-+  __TEXT.__cstring: 0x3028
-+  __TEXT.__swift5_protos: 0x3c
-   __TEXT.__swift5_capture: 0x248
-   __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__swift5_acfuncs: 0x2d0
--  __TEXT.__unwind_info: 0x3708
--  __TEXT.__eh_frame: 0xa15c
-+  __TEXT.__swift5_acfuncs: 0x2f8
-+  __TEXT.__unwind_info: 0x3880
-+  __TEXT.__eh_frame: 0xa514
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0x260
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__got: 0x478
--  __AUTH_CONST.__const: 0x63b8
-+  __AUTH_CONST.__const: 0x6530
-   __AUTH_CONST.__objc_const: 0xb88
--  __AUTH_CONST.__auth_got: 0xf00
-+  __AUTH_CONST.__auth_got: 0xf08
-   __AUTH.__objc_data: 0xf0
--  __AUTH.__data: 0x1520
--  __DATA.__data: 0x21c0
--  __DATA.__bss: 0x12410
-+  __AUTH.__data: 0x1660
-+  __DATA.__data: 0x22a8
-+  __DATA.__bss: 0x12d90
-   __DATA.__common: 0x78
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3846
--  Symbols:   1287
+-  Symbols:   1230
 -  CStrings:  648
 +  Functions: 3937
-+  Symbols:   1311
++  Symbols:   1254
 +  CStrings:  669
- 
 Symbols:
 + _associated conformance 14ProductKitCore9ProxSetupO04HomeB0O12PrimaryVideoV10CodingKeys33_5067D99D06C9A346F020C4B02C170248LLOSHAASQ
 + _associated conformance 14ProductKitCore9ProxSetupO04HomeB0O12PrimaryVideoV10CodingKeys33_5067D99D06C9A346F020C4B02C170248LLOs0I3KeyAAs23CustomStringConvertible

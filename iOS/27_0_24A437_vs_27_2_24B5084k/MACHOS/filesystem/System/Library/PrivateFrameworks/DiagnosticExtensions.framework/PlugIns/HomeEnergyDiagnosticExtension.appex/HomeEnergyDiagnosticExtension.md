@@ -2,84 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/DiagnosticExtensions.framework/PlugIns/HomeEnergyDiagnosticExtension.appex/HomeEnergyDiagnosticExtension`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x243c` | `0xe530` | **`+0xc0f4`** |
+| `__TEXT.__auth_stubs` | `0x4e0` | `0xfb0` | **`+0xad0`** |
+| `__TEXT.__cstring` | `0x2e9` | `0x9b2` | **`+0x6c9`** |
+| `__DATA_CONST.__auth_got` | `0x278` | `0x7e0` | **`+0x568`** |
+| `__TEXT.__eh_frame` | `0x48` | `0x2f8` | **`+0x2b0`** |
+| `__TEXT.__const` | `0x7a` | `0x262` | **`+0x1e8`** |
+| `__TEXT.__objc_stubs` | `0x160` | `0x320` | **`+0x1c0`** |
+| `__DATA_CONST.__const` | `0x88` | `0x1f8` | **`+0x170`** |
+| `__TEXT.__unwind_info` | `0xa0` | `0x210` | **`+0x170`** |
+| `__TEXT.__objc_methname` | `0xeb` | `0x25a` | **`+0x16f`** |
+| `__DATA.__data` | `0x68` | `0x170` | **`+0x108`** |
+| `__TEXT.__swift5_typeref` | `0x38` | `0x13a` | **`+0x102`** |
+| `__DATA_CONST.__got` | `0x88` | `0x148` | **`+0xc0`** |
+| `__DATA.__objc_selrefs` | `0x70` | `0xe0` | **`+0x70`** |
+| `__TEXT.__constg_swiftt` | `0x38` | `0x8c` | **`+0x54`** |
+| `__DATA_CONST.__auth_ptr` | `0x28` | `0x70` | **`+0x48`** |
+| `__TEXT.__swift5_fieldmd` | `0x10` | `0x40` | **`+0x30`** |
+| `__TEXT.__swift5_types` | `0x4` | `0x10` | **`+0xc`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_const`
 - `__DATA.__objc_data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__objc_classlist`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
 -490.1.4.0.0
--  __TEXT.__text: 0x238c
--  __TEXT.__auth_stubs: 0x4e0
--  __TEXT.__objc_stubs: 0x160
 +504.0.0.0.0
-+  __TEXT.__text: 0xe0f4
-+  __TEXT.__auth_stubs: 0xfb0
-+  __TEXT.__objc_stubs: 0x320
-   __TEXT.__objc_methlist: 0x5c
--  __TEXT.__const: 0x7a
--  __TEXT.__cstring: 0x2e9
-+  __TEXT.__const: 0x262
-+  __TEXT.__cstring: 0x9b2
-   __TEXT.__oslogstring: 0x54
-   __TEXT.__objc_classname: 0x35
--  __TEXT.__objc_methname: 0xeb
-+  __TEXT.__objc_methname: 0x25a
-   __TEXT.__objc_methtype: 0x32
--  __TEXT.__swift5_typeref: 0x38
--  __TEXT.__constg_swiftt: 0x38
--  __TEXT.__swift5_fieldmd: 0x10
--  __TEXT.__swift5_types: 0x4
--  __TEXT.__unwind_info: 0xc0
--  __TEXT.__eh_frame: 0x48
--  __DATA_CONST.__const: 0x88
-+  __TEXT.__swift5_typeref: 0x13a
-+  __TEXT.__constg_swiftt: 0x8c
-+  __TEXT.__swift5_fieldmd: 0x40
-+  __TEXT.__swift5_types: 0x10
-+  __TEXT.__unwind_info: 0x258
-+  __TEXT.__eh_frame: 0x2f8
-+  __DATA_CONST.__const: 0x1f8
-   __DATA_CONST.__cfstring: 0x20
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x278
--  __DATA_CONST.__got: 0x88
--  __DATA_CONST.__auth_ptr: 0x28
-+  __DATA_CONST.__auth_got: 0x7e0
-+  __DATA_CONST.__got: 0x148
-+  __DATA_CONST.__auth_ptr: 0x70
-   __DATA.__objc_const: 0x100
--  __DATA.__objc_selrefs: 0x70
-+  __DATA.__objc_selrefs: 0xe0
-   __DATA.__objc_ivar: 0x4
-   __DATA.__objc_data: 0x100
--  __DATA.__data: 0x68
-+  __DATA.__data: 0x170
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/DiagnosticExtensions.framework/DiagnosticExtensions
+
 +  - /System/Library/PrivateFrameworks/EnergyKitFoundation.framework/EnergyKitFoundation
 +  - /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
+
 +  - /usr/lib/libsqlite3.dylib
-   - /usr/lib/swift/libswiftAppleArchive.dylib
-   - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
+
 +  - /usr/lib/swift/libswiftCoreLocation.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftSystem.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
+
 -  Functions: 19
 -  Symbols:   198
 -  CStrings:  37
@@ -87,7 +54,6 @@
 +  Functions: 117
 +  Symbols:   623
 +  CStrings:  93
- 
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/HomeEnergyDaemon/install/TempContent/Objects/homeenergyd.build/HomeEnergyDiagnosticExtension.build/Objects-normal/arm64e/EnergySitePayloadDump.o
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/HomeEnergyDaemon/install/TempContent/Objects/homeenergyd.build/HomeEnergyDiagnosticExtension.build/Objects-normal/arm64e/EnergySiteStoreRedactor.o

@@ -2,31 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/NanoFaceGallery.framework/NanoFaceGallery`
 
-```diff
+### Section Size Changes
 
- 2483.523.0.4.0
--  __TEXT.__text: 0xdebbc
-+  __TEXT.__text: 0xdec1c
-   __TEXT.__objc_methlist: 0x6e0
-   __TEXT.__const: 0x9fc4
-   __TEXT.__cstring: 0x1e8a
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xdebbc` | `0xdec1c` | **`+0x60`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_29249ce60 -> sub_293201e60 : 980 -> 992
-~ sub_29249d494 -> sub_2932024a0 : 992 -> 984
-~ sub_29249d874 -> sub_293202878 : 992 -> 984
-~ sub_29249deec -> sub_293202ee8 : 1012 -> 1008
-~ sub_29249f034 -> sub_29320402c : 356 -> 360
-~ sub_29249f198 -> sub_293204194 : 656 -> 660
-~ sub_29249fa64 -> sub_293204a64 : 356 -> 360
-~ sub_29249fbc8 -> sub_293204bcc : 704 -> 708
-~ sub_2924a20e0 -> sub_2932070e8 : 1352 -> 1368
-~ sub_2924aaf7c -> sub_29320ff94 : 880 -> 872
-~ sub_2924af050 -> sub_293214060 : 1420 -> 1416
-~ sub_2924d51cc -> sub_29323a1d8 : 5344 -> 5348
-~ sub_2924f3b54 -> sub_293258b64 : 588 -> 604
-~ sub_29250044c -> sub_29326546c : 5576 -> 5640
-~ sub_292509fe4 -> sub_29326f044 : 1480 -> 1488
-~ sub_292547348 -> sub_2932ac3b0 : 1192 -> 1204
-~ sub_292551acc -> sub_2932b6b40 : 1632 -> 1624
-~ sub_2925536c0 -> sub_2932b872c : 1324 -> 1312
+~ sub_292382e60 -> sub_2930d5e60 : 980 -> 992
+~ sub_292383494 -> sub_2930d64a0 : 992 -> 984
+~ sub_292383874 -> sub_2930d6878 : 992 -> 984
+~ sub_292383eec -> sub_2930d6ee8 : 1012 -> 1008
+~ sub_292385034 -> sub_2930d802c : 356 -> 360
+~ sub_292385198 -> sub_2930d8194 : 656 -> 660
+~ sub_292385a64 -> sub_2930d8a64 : 356 -> 360
+~ sub_292385bc8 -> sub_2930d8bcc : 704 -> 708
+~ sub_2923880e0 -> sub_2930db0e8 : 1352 -> 1368
+~ sub_292390f7c -> sub_2930e3f94 : 880 -> 872
+~ sub_292395050 -> sub_2930e8060 : 1420 -> 1416
+~ sub_2923bb1cc -> sub_29310e1d8 : 5344 -> 5348
+~ sub_2923d9b54 -> sub_29312cb64 : 588 -> 604
+~ sub_2923e644c -> sub_29313946c : 5576 -> 5640
+~ sub_2923effe4 -> sub_293143044 : 1480 -> 1488
+~ sub_29242d348 -> sub_2931803b0 : 1192 -> 1204
+~ sub_292437acc -> sub_29318ab40 : 1632 -> 1624
+~ sub_2924396c0 -> sub_29318c72c : 1324 -> 1312
 ```

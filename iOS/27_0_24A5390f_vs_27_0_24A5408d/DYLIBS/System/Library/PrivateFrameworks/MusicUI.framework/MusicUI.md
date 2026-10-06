@@ -2,131 +2,64 @@
 
 > `/System/Library/PrivateFrameworks/MusicUI.framework/MusicUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x99f8f4` | `0x9a2eac` | **`+0x35b8`** |
+| `__TEXT.__swift5_typeref` | `0x93ad6` | `0x94e5c` | **`+0x1386`** |
+| `__TEXT.__const` | `0x6e114` | `0x6e924` | **`+0x810`** |
+| `__DATA.__bss` | `0x38790` | `0x38e20` | **`+0x690`** |
+| `__DATA.__data` | `0x18d48` | `0x191b0` | **`+0x468`** |
+| `__AUTH_CONST.__objc_const` | `0x16050` | `0x164a0` | **`+0x450`** |
+| `__AUTH_CONST.__const` | `0x3d3c8` | `0x3d7f8` | **`+0x430`** |
+| `__TEXT.__unwind_info` | `0x1f320` | `0x1f6b0` | **`+0x390`** |
+| `__TEXT.__swift5_reflstr` | `0x1f4df` | `0x1f79f` | **`+0x2c0`** |
+| `__TEXT.__swift5_fieldmd` | `0x1d158` | `0x1d3ec` | **`+0x294`** |
+| `__DATA_DIRTY.__bss` | `0x35030` | `0x34db0` | **`-0x280`** |
+| `__AUTH.__objc_data` | `0x1dc8` | `0x2020` | **`+0x258`** |
+| `__AUTH.__data` | `0xda30` | `0xdc60` | **`+0x230`** |
+| `__TEXT.__eh_frame` | `0x332bc` | `0x33498` | **`+0x1dc`** |
+| `__TEXT.__constg_swiftt` | `0x1f064` | `0x1f1fc` | **`+0x198`** |
+| `__TEXT.__oslogstring` | `0x9567` | `0x96c7` | **`+0x160`** |
+| `__TEXT.__cstring` | `0xd8be` | `0xd9de` | **`+0x120`** |
+| `__TEXT.__swift5_capture` | `0xbd34` | `0xbe50` | **`+0x11c`** |
+| `__TEXT.__objc_methlist` | `0x2810` | `0x2910` | **`+0x100`** |
+| `__DATA_DIRTY.__data` | `0x280b8` | `0x27fe8` | **`-0xd0`** |
+| `__TEXT.__swift5_assocty` | `0x8958` | `0x89a0` | **`+0x48`** |
+| `__TEXT.__swift5_types` | `0x1e28` | `0x1e50` | **`+0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x600` | `0x620` | **`+0x20`** |
+| `__TEXT.__swift5_proto` | `0x3a20` | `0x3a3c` | **`+0x1c`** |
+| `__AUTH_CONST.__auth_got` | `0x6188` | `0x6198` | **`+0x10`** |
+| `__DATA.__common` | `0x4b8` | `0x4c8` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x3630` | `0x3640` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x378` | `0x388` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x208` | `0x218` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2228` | `0x2238` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x3b0` | `0x3b8` | **`+0x8`** |
+| `__DATA_DIRTY.__common` | `0x510` | `0x518` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x262c` | `0x2630` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x1258` | `0x1254` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -4026.100.81.0.0
--  __TEXT.__text: 0x99f8f4
--  __TEXT.__objc_methlist: 0x2810
--  __TEXT.__const: 0x6e114
 +4026.110.3.0.0
-+  __TEXT.__text: 0x9a2eac
-+  __TEXT.__objc_methlist: 0x2910
-+  __TEXT.__const: 0x6e924
-   __TEXT.__gcc_except_tab: 0x70
--  __TEXT.__cstring: 0xd8be
-+  __TEXT.__cstring: 0xd9de
-   __TEXT.__dlopen_cstrs: 0x5a
--  __TEXT.__constg_swiftt: 0x1f064
--  __TEXT.__swift5_typeref: 0x93ad6
-+  __TEXT.__constg_swiftt: 0x1f1fc
-+  __TEXT.__swift5_typeref: 0x94e5c
-   __TEXT.__swift5_builtin: 0x4c4
--  __TEXT.__swift5_reflstr: 0x1f4df
--  __TEXT.__swift5_fieldmd: 0x1d158
--  __TEXT.__swift5_assocty: 0x8958
--  __TEXT.__swift5_proto: 0x3a20
--  __TEXT.__swift5_types: 0x1e28
--  __TEXT.__swift5_capture: 0xbd34
--  __TEXT.__oslogstring: 0x9567
-+  __TEXT.__swift5_reflstr: 0x1f79f
-+  __TEXT.__swift5_fieldmd: 0x1d3ec
-+  __TEXT.__swift5_assocty: 0x89a0
-+  __TEXT.__swift5_proto: 0x3a3c
-+  __TEXT.__swift5_types: 0x1e50
-+  __TEXT.__swift5_capture: 0xbe50
-+  __TEXT.__oslogstring: 0x96c7
-   __TEXT.__swift_as_entry: 0x1028
--  __TEXT.__swift_as_ret: 0x1258
--  __TEXT.__swift_as_cont: 0x262c
-+  __TEXT.__swift_as_ret: 0x1254
-+  __TEXT.__swift_as_cont: 0x2630
-   __TEXT.__swift5_protos: 0x210
-   __TEXT.__swift5_mpenum: 0x1b8
--  __TEXT.__unwind_info: 0x1f320
--  __TEXT.__eh_frame: 0x332bc
-+  __TEXT.__unwind_info: 0x1f6b0
-+  __TEXT.__eh_frame: 0x33498
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3b0
--  __DATA_CONST.__objc_classlist: 0x600
-+  __DATA_CONST.__const: 0x3b8
-+  __DATA_CONST.__objc_classlist: 0x620
-   __DATA_CONST.__objc_catlist: 0x28
--  __DATA_CONST.__objc_protolist: 0x378
-+  __DATA_CONST.__objc_protolist: 0x388
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2228
--  __DATA_CONST.__objc_protorefs: 0x208
--  __DATA_CONST.__got: 0x3630
--  __AUTH_CONST.__const: 0x3d3c8
-+  __DATA_CONST.__objc_selrefs: 0x2238
-+  __DATA_CONST.__objc_protorefs: 0x218
-+  __DATA_CONST.__got: 0x3640
-+  __AUTH_CONST.__const: 0x3d7f8
-   __AUTH_CONST.__cfstring: 0x20
--  __AUTH_CONST.__objc_const: 0x16050
--  __AUTH_CONST.__auth_got: 0x6188
--  __AUTH.__objc_data: 0x1dc8
--  __AUTH.__data: 0xda30
--  __DATA.__data: 0x18d48
--  __DATA.__bss: 0x38790
--  __DATA.__common: 0x4b8
-+  __AUTH_CONST.__objc_const: 0x164a0
-+  __AUTH_CONST.__auth_got: 0x6198
-+  __AUTH.__objc_data: 0x2020
-+  __AUTH.__data: 0xdc60
-+  __DATA.__data: 0x191b0
-+  __DATA.__bss: 0x38e20
-+  __DATA.__common: 0x4c8
-   __DATA_DIRTY.__objc_data: 0x2f60
--  __DATA_DIRTY.__data: 0x280b8
--  __DATA_DIRTY.__bss: 0x35030
--  __DATA_DIRTY.__common: 0x510
-+  __DATA_DIRTY.__data: 0x27fe8
-+  __DATA_DIRTY.__bss: 0x34db0
-+  __DATA_DIRTY.__common: 0x518
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
 
-   - /System/Library/Frameworks/_AppIntents_SwiftUI.framework/_AppIntents_SwiftUI
-   - /System/Library/Frameworks/_LocationEssentials.framework/_LocationEssentials
-   - /System/Library/Frameworks/_MusicKit_SwiftUI.framework/_MusicKit_SwiftUI
 -  - /System/Library/PrivateFrameworks/AXCoreUtilities.framework/AXCoreUtilities
-   - /System/Library/PrivateFrameworks/AXRuntime.framework/AXRuntime
-   - /System/Library/PrivateFrameworks/AppleAccountUI.framework/AppleAccountUI
-   - /System/Library/PrivateFrameworks/AppleIDSSOAuthentication.framework/AppleIDSSOAuthentication
 
-   - /System/Library/PrivateFrameworks/AppleMediaServicesUI.framework/AppleMediaServicesUI
-   - /System/Library/PrivateFrameworks/AppleMediaServicesUIKitInternal.framework/AppleMediaServicesUIKitInternal
-   - /System/Library/PrivateFrameworks/ApplePushService.framework/ApplePushService
 +  - /System/Library/PrivateFrameworks/AsyncAlgorithmsInternal.framework/AsyncAlgorithmsInternal
-   - /System/Library/PrivateFrameworks/AttributeGraph.framework/AttributeGraph
-   - /System/Library/PrivateFrameworks/ContactsUICore.framework/ContactsUICore
-   - /System/Library/PrivateFrameworks/ControlCenterServices.framework/ControlCenterServices
 
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftObservation.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
 -  - /usr/lib/swift/libswiftRegexBuilder.dylib
-   - /usr/lib/swift/libswiftSpatial.dylib
-   - /usr/lib/swift/libswiftSynchronization.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 52313
--  Symbols:   17331
+-  Symbols:   16640
 -  CStrings:  2224
 +  Functions: 52671
-+  Symbols:   17441
++  Symbols:   16752
 +  CStrings:  2232
- 
 Symbols:
 + _OBJC_CLASS_$__TtC7MusicUI16DragItemProvider
 + _OBJC_CLASS_$__TtC7MusicUI23JSDeepLinkReferrerStore
@@ -212,8 +145,6 @@ Symbols:
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBP011_JetEngine_aB0E19automationSemanticsyQr0dE0010AutomationG0VFQOyAA15ModifiedContentVyAcAE11buttonStyleyQrqd__AA015PrimitiveButtonL0Rd__lFQOy05MusicB006ActionN0VyAJyAA6HStackVyAA05TupleJ0VyAJyAJyAJyAJyAJyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA011_ForegroundlW0VyAA5ColorVGGAA12_FrameLayoutVGAA011_BackgroundlW0VyA4_GGAA11_ClipEffectVyAA6CircleVGG_AJyAA6VStackVyASyAA4TextV_A23_SgQPGGAA16_FlexFrameLayoutVGQPGGAA01_j5ShapeW0VyAA9RectangleVGGG_AA05PlainnL0VQo_AA01_tu9TransformW0VySbGG_Qo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE10onKeyPress_6actionQrAA0E10EquivalentV_AA0eF0V6ResultOyctFQOyAcAE01_D13ButtonGesture8pressing7performQrySbcSg_yyctFQOyAA15ModifiedContentVyAQyAcAE7focusedyQrAA10FocusStateV7BindingVySb_GFQOyAcAE19focusEffectDisabledyQrSbFQOyAcAE9focusableyQrSbFQOyAA09PrimitiveJ18StyleConfigurationV5LabelV_Qo__Qo__Qo_AA19_BackgroundModifierVyAA5ColorVSgGGAA01_O13ShapeModifierVyAA9RectangleVGG_Qo__Qo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA19_ConditionalContentVyAA08ModifiedJ0VyAC011_JetEngine_aB0E19automationSemanticsyQr0lM0010AutomationO0VFQOyAMyAMyAMy05MusicB012ActionButtonVyAMyAMyAMyAMyAA06_ShapeC0VyAA6CircleVAA5ColorVGAA16_BlendModeEffectVGAA12_FrameLayoutVGAS011InnerStrokeC8Modifier33_07BF97FC6ACFAFCAA9CBB7ED81BC8B8FLLVyAYGGAA16_OverlayModifierVyAMyAMyAMyAMyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGA17_yA15_5ScaleOGGAA24_ForegroundStyleModifierVyA_GGAA08_OpacityY0VGGGGAA32_EnvironmentKeyTransformModifierVySbGGA17_ySbGGAA31AccessibilityAttachmentModifierVG_Qo_AS15UnifiedMessagesO15PopoverModifierVGA46_G_Qo_HO
-+ _objc_msgSend$invalidateIntrinsicContentSize
-+ _objc_msgSend$setShouldAutomaticallyReportMetrics:
 + _symbolic $s7MusicUI25JSDeepLinkReferralExports33_C057140BA5628CFEA2DC1465C3DA017ELLP
 + _symbolic $s7MusicUI30JSDeepLinkReferrerStoreExports33_C057140BA5628CFEA2DC1465C3DA017ELLP
 + _symbolic So14NSItemProviderC
@@ -500,10 +431,6 @@ Symbols:
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBP011_JetEngine_aB0E19automationSemanticsyQr0dE0010AutomationG0VFQOyAA15ModifiedContentVyAJy05MusicB012ActionButtonVyAJyAJyAJyAA06_ShapeC0VyAA6CircleVAA5ColorVGAA12_FrameLayoutVGAK011InnerStrokeC8Modifier33_07BF97FC6ACFAFCAA9CBB7ED81BC8B8FLLVyAQGGAA08_OverlayU0VyAJyAJyAJyAJyAA5ImageVAA022_EnvironmentKeyWritingU0VyAA4FontVSgGGA6_yA4_5ScaleOGGAA016_ForegroundStyleU0VyASGGAA14_OpacityEffectVGGGGAA024_EnvironmentKeyTransformU0VySbGGA6_ySbGG_Qo_HO
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBP011_JetEngine_aB0E19automationSemanticsyQr0dE0010AutomationG0VFQOyAcAE11buttonStyleyQrqd__AA015PrimitiveButtonJ0Rd__lFQOy05MusicB006ActionL0VyAA15ModifiedContentVyAA6HStackVyAA05TupleP0VyAOyAOyAOyAOyAOyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA011_ForegroundjW0VyAA5ColorVGGAA12_FrameLayoutVGAA011_BackgroundjW0VyA4_GGAA11_ClipEffectVyAA6CircleVGG_AOyAA6VStackVyASyAA4TextV_A23_QPGGAA16_FlexFrameLayoutVGQPGGAA01_p5ShapeW0VyAA9RectangleVGGG_AA05PlainlJ0VQo__Qo_HO
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE10onKeyPress_6actionQrAA0E10EquivalentV_AA0eF0V6ResultOyctFQOyAcAE01_D13ButtonGesture8pressing7performQrySbcSg_yyctFQOyAA15ModifiedContentVyAQyAcAE7focusedyQrAA10FocusStateV7BindingVySb_GFQOyAcAE19focusEffectDisabledyQrSbFQOyAcAE9focusableyQrSbFQOyAA09PrimitiveJ18StyleConfigurationV5LabelV_Qo__Qo__Qo_AA011_BackgroundY8ModifierVyAA5ColorVGGAA01_O13ShapeModifierVyAA9RectangleVGG_Qo__Qo_HO
-- _objc_msgSend$_setLargeTitleAccessoryView:alignToBaseline:
-- _objc_msgSend$ams_primaryText
-- _objc_msgSend$setPreferredNavigationBarTintColor:
-- _objc_msgSend$systemVersion
 - _symbolic _____ 7MusicUI16ReplayButtonView33_76E501BB592231426FE57573590997CFLLV
 - _symbolic _____ 7MusicUI23ItemWidthEnvironmentKey031_36F817275C45D4C2060B7C1A06A6D5L0LLO
 - _symbolic _____ 7MusicUI28PrivacyLinkViewRepresentable33_126D915BFA01026418055A0621AD6694LLV

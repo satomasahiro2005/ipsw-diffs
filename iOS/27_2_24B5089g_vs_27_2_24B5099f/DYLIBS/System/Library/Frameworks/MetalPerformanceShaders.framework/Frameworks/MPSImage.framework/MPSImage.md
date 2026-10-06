@@ -2,15 +2,18 @@
 
 > `/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSImage.framework/MPSImage`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4754c` | `0x4755c` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -130.1.1.0.0
--  __TEXT.__text: 0x47270
 +130.1.3.0.0
-+  __TEXT.__text: 0x47280
-   __TEXT.__objc_methlist: 0x2348
-   __TEXT.__const: 0x2cb78
-   __TEXT.__gcc_except_tab: 0x1204
 Functions:
-~ sub_24be018a8 -> sub_24b17f8a8 : 1772 -> 1788
+~ sub_24e775aa0 -> sub_24db33aa0 : 1772 -> 1788
 ```

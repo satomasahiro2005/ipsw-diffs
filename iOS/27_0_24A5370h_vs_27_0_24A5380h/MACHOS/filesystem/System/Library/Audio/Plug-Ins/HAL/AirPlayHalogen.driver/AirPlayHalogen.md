@@ -2,18 +2,24 @@
 
 > `/System/Library/Audio/Plug-Ins/HAL/AirPlayHalogen.driver/AirPlayHalogen`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xeccc` | `0xecd0` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xeccc
-+  __TEXT.__text: 0xecd0
-   __TEXT.__auth_stubs: 0x970
-   __TEXT.__const: 0xcc
-   __TEXT.__cstring: 0x3468
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA.__data : content changed
+-980.63.2.0.0
++980.67.2.0.0
 Functions:
 ~ sub_1b6c : 732 -> 736
-
 ```

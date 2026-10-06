@@ -2,88 +2,59 @@
 
 > `/System/Library/PrivateFrameworks/AppStoreUtilities.framework/AppStoreUtilities`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfe94` | `0x12880` | **`+0x29ec`** |
+| `__DATA.__bss` | `0x18` | `0x4a0` | **`+0x488`** |
+| `__TEXT.__const` | `0x98` | `0x428` | **`+0x390`** |
+| `__TEXT.__swift5_typeref` | `—` | `0x23c` | **`+0x23c`** |
+| `__AUTH_CONST.__auth_got` | `0x488` | `0x658` | **`+0x1d0`** |
+| `__AUTH_CONST.__objc_const` | `0x2328` | `0x2488` | **`+0x160`** |
+| `__TEXT.__eh_frame` | `—` | `0x160` | **`+0x160`** |
+| `__AUTH_CONST.__const` | `0x80` | `0x1c0` | **`+0x140`** |
+| `__TEXT.__unwind_info` | `0x670` | `0x770` | **`+0x100`** |
+| `__DATA.__data` | `0x2a0` | `0x330` | **`+0x90`** |
+| `__TEXT.__constg_swiftt` | `—` | `0x7c` | **`+0x7c`** |
+| `__TEXT.__objc_methlist` | `0x1484` | `0x14fc` | **`+0x78`** |
+| `__TEXT.__swift5_capture` | `—` | `0x68` | **`+0x68`** |
+| `__DATA_CONST.__const` | `0x890` | `0x8e8` | **`+0x58`** |
+| `__TEXT.__cstring` | `0x8cf` | `0x924` | **`+0x55`** |
+| `__AUTH.__objc_data` | `0x8c0` | `0x910` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x200` | `0x248` | **`+0x48`** |
+| `__TEXT.__swift5_assocty` | `—` | `0x48` | **`+0x48`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb30` | `0xb68` | **`+0x38`** |
+| `__TEXT.__swift5_fieldmd` | `—` | `0x2c` | **`+0x2c`** |
+| `__TEXT.__swift5_proto` | `—` | `0x28` | **`+0x28`** |
+| `__TEXT.__swift5_reflstr` | `—` | `0x22` | **`+0x22`** |
+| `__AUTH_CONST.__cfstring` | `0xc40` | `0xc20` | **`-0x20`** |
+| `__DATA_CONST.__objc_protolist` | `0x38` | `0x50` | **`+0x18`** |
+| `__DATA_CONST.__objc_protorefs` | `0x8` | `0x20` | **`+0x18`** |
+| `__TEXT.__gcc_except_tab` | `0x37c` | `0x394` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `—` | `0x14` | **`+0x14`** |
+| `__DATA.__objc_ivar` | `0x120` | `0x130` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x10` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0xe0` | `0xe8` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0xc0` | `0xc8` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `—` | `0x4` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__DATA_CONST.__objc_imageinfo`
-- `__AUTH_CONST.__objc_intobj`
+
+### Other Changes
 
 ```diff
 
 -13.0.40.0.0
--  __TEXT.__text: 0xfe94
--  __TEXT.__objc_methlist: 0x1484
--  __TEXT.__const: 0x98
--  __TEXT.__cstring: 0x8cf
--  __TEXT.__gcc_except_tab: 0x37c
 +13.0.43.0.0
-+  __TEXT.__text: 0x12880
-+  __TEXT.__objc_methlist: 0x14fc
-+  __TEXT.__const: 0x428
-+  __TEXT.__swift5_typeref: 0x23c
-+  __TEXT.__swift5_capture: 0x68
-+  __TEXT.__cstring: 0x924
-+  __TEXT.__swift5_fieldmd: 0x2c
-+  __TEXT.__constg_swiftt: 0x7c
-+  __TEXT.__swift5_reflstr: 0x22
-+  __TEXT.__swift5_assocty: 0x48
-+  __TEXT.__swift5_builtin: 0x14
-+  __TEXT.__swift5_protos: 0x4
-+  __TEXT.__swift5_proto: 0x28
-+  __TEXT.__swift5_types: 0x8
-+  __TEXT.__swift_as_entry: 0x8
-+  __TEXT.__swift_as_ret: 0x8
-+  __TEXT.__swift_as_cont: 0x10
-+  __TEXT.__gcc_except_tab: 0x394
-   __TEXT.__oslogstring: 0x798
--  __TEXT.__unwind_info: 0x670
-+  __TEXT.__unwind_info: 0x770
-+  __TEXT.__eh_frame: 0x160
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x890
--  __DATA_CONST.__objc_classlist: 0xe0
--  __DATA_CONST.__objc_protolist: 0x38
-+  __DATA_CONST.__const: 0x8e8
-+  __DATA_CONST.__objc_classlist: 0xe8
-+  __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb30
--  __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0xc0
--  __DATA_CONST.__got: 0x200
--  __AUTH_CONST.__const: 0x80
--  __AUTH_CONST.__cfstring: 0xc40
--  __AUTH_CONST.__objc_const: 0x2328
-+  __DATA_CONST.__objc_selrefs: 0xb68
-+  __DATA_CONST.__objc_protorefs: 0x20
-+  __DATA_CONST.__objc_superrefs: 0xc8
-+  __DATA_CONST.__got: 0x248
-+  __AUTH_CONST.__const: 0x1c0
-+  __AUTH_CONST.__cfstring: 0xc20
-+  __AUTH_CONST.__objc_const: 0x2488
-   __AUTH_CONST.__objc_intobj: 0x18
--  __AUTH_CONST.__auth_got: 0x488
--  __AUTH.__objc_data: 0x8c0
--  __DATA.__objc_ivar: 0x120
--  __DATA.__data: 0x2a0
--  __DATA.__bss: 0x18
-+  __AUTH_CONST.__auth_got: 0x658
-+  __AUTH.__objc_data: 0x910
-+  __DATA.__objc_ivar: 0x130
-+  __DATA.__data: 0x330
-+  __DATA.__bss: 0x4a0
-   __DATA.__common: 0x18
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 476
--  Symbols:   1316
+-  Symbols:   1076
 -  CStrings:  171
 +  - /usr/lib/swift/libswiftCore.dylib
 +  - /usr/lib/swift/libswiftCoreFoundation.dylib
@@ -93,9 +64,8 @@
 +  - /usr/lib/swift/libswift_Builtin_float.dylib
 +  - /usr/lib/swift/libswift_Concurrency.dylib
 +  Functions: 560
-+  Symbols:   1447
++  Symbols:   1203
 +  CStrings:  172
- 
 Symbols:
 + +[ASUDefaultsManager databaseEncryptionKeyWithIdentifier:domain:]
 + +[ASUDefaultsManager setDatabaseEncryptionKey:withIdentifier:domain:]
@@ -194,13 +164,6 @@ Symbols:
 + _block_destroy_helper
 + _flat unique So24ASUSQLiteDatabaseSession_p
 + _flat unique So28ASUSQLiteDatabaseTransaction_p
-+ _objc_msgSend$asyncModifyUsingTransaction:completion:
-+ _objc_msgSend$asyncReadUsingSession:completion:
-+ _objc_msgSend$domain
-+ _objc_msgSend$firstObject
-+ _objc_msgSend$identifier
-+ _objc_msgSend$modifyStore:usingTransactionClass:withBlock:
-+ _objc_msgSend$subarrayWithRange:
 + _sqlite3_config
 + _swift_allocBox
 + _swift_allocObject
@@ -287,9 +250,6 @@ Symbols:
 - __OBJC_$_INSTANCE_METHODS_ASUSQLiteEntity(ASUSQLiteMemoryEntity|SQLiteTypeChecking|ASUSQLiteQuery)
 - __OBJC_$_INSTANCE_METHODS_ASUSQLiteMemoryEntity(SQLiteTypeChecking|ASUSQLiteQuery)
 - ___block_descriptor_64_e8_32s40bs48r_e41_v32?0"ASUSQLiteCursor"8"NSError"16^B24ls32l8s40l8r48l8
-- _objc_msgSend$appendFormat:
-- _objc_msgSend$componentsJoinedByString:
-- _objc_msgSend$dictionaryWithCapacity:
 CStrings:
 + "_createCheckedContinuation(_:)"
 + "com.apple.appstored.ASUSQLiteConnection.AfterTransactionBlocks"

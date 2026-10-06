@@ -2,59 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/EmbeddingCore.framework/EmbeddingCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x69eac` | `0x6bca0` | **`+0x1df4`** |
+| `__TEXT.__cstring` | `0x5816` | `0x5df2` | **`+0x5dc`** |
+| `__TEXT.__gcc_except_tab` | `0x7184` | `0x7308` | **`+0x184`** |
+| `__TEXT.__oslogstring` | `0x184f` | `0x191f` | **`+0xd0`** |
+| `__AUTH_CONST.__cfstring` | `0x19e0` | `0x1a60` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x2a60` | `0x2aa8` | **`+0x48`** |
+| `__DATA_CONST.__objc_selrefs` | `0xd28` | `0xd38` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x3b8` | `0x3c0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -435.79.1.5.0
--  __TEXT.__text: 0x680f4
 +460.7.1.0.0
-+  __TEXT.__text: 0x69f08
-   __TEXT.__objc_methlist: 0x1954
-   __TEXT.__const: 0x1160
--  __TEXT.__gcc_except_tab: 0x7184
--  __TEXT.__cstring: 0x5816
--  __TEXT.__oslogstring: 0x184f
-+  __TEXT.__gcc_except_tab: 0x7308
-+  __TEXT.__cstring: 0x5df2
-+  __TEXT.__oslogstring: 0x191f
-   __TEXT.__swift5_typeref: 0xc3
-   __TEXT.__constg_swiftt: 0x1b8
-   __TEXT.__swift5_builtin: 0x14
 
-   __TEXT.__swift5_fieldmd: 0xec
-   __TEXT.__swift5_proto: 0x8
-   __TEXT.__swift5_types: 0x14
--  __TEXT.__unwind_info: 0x2eb8
-+  __TEXT.__unwind_info: 0x2f98
-   __TEXT.__eh_frame: 0xb0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x18
--  __DATA_CONST.__objc_selrefs: 0xd28
-+  __DATA_CONST.__objc_selrefs: 0xd38
-   __DATA_CONST.__objc_superrefs: 0xa0
-   __DATA_CONST.__objc_arraydata: 0x350
--  __DATA_CONST.__got: 0x3b8
-+  __DATA_CONST.__got: 0x3c0
-   __AUTH_CONST.__const: 0x1920
--  __AUTH_CONST.__cfstring: 0x19e0
-+  __AUTH_CONST.__cfstring: 0x1a60
-   __AUTH_CONST.__objc_const: 0x3988
-   __AUTH_CONST.__weak_auth_got: 0x50
-   __AUTH_CONST.__objc_intobj: 0x168
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 2075
--  Symbols:   3603
+-  Symbols:   3307
 -  CStrings:  717
 +  Functions: 2125
-+  Symbols:   3611
++  Symbols:   3314
 +  CStrings:  740
- 
 Symbols:
 + GCC_except_table110
 + GCC_except_table118
@@ -88,8 +61,6 @@ Symbols:
 + __ZTSNSt3__110__function6__funcIZNK13sentencepiece3bpe5Model12SampleEncodeENS_17basic_string_viewIcNS_11char_traitsIcEEEEfE3$_0FvS8_PNS_6vectorINS_4pairIS8_iEENS_9allocatorISC_EEEEiEEE
 + __ZTVNSt3__110__function6__funcIZNK13sentencepiece3bpe5Model12SampleEncodeENS_17basic_string_viewIcNS_11char_traitsIcEEEEfE3$_0FvS8_PNS_6vectorINS_4pairIS8_iEENS_9allocatorISC_EEEEiEEE
 + __ZZL15ForcedBatchSizevE9batchSize
-+ _objc_msgSend$persistentDomainForName:
-+ _objc_msgSend$standardUserDefaults
 - GCC_except_table111
 - GCC_except_table120
 - GCC_except_table122
@@ -115,7 +86,6 @@ Symbols:
 - __ZTSNSt3__110__function6__baseIFvNS_17basic_string_viewIcNS_11char_traitsIcEEEEPNS_6vectorINS_4pairIS5_iEENS_9allocatorIS8_EEEEEEE
 - __ZTSNSt3__110__function6__funcIZNK13sentencepiece3bpe5Model12SampleEncodeENS_17basic_string_viewIcNS_11char_traitsIcEEEEfE3$_0FvS8_PNS_6vectorINS_4pairIS8_iEENS_9allocatorISC_EEEEEEE
 - __ZTVNSt3__110__function6__funcIZNK13sentencepiece3bpe5Model12SampleEncodeENS_17basic_string_viewIcNS_11char_traitsIcEEEEfE3$_0FvS8_PNS_6vectorINS_4pairIS8_iEENS_9allocatorISC_EEEEEEE
-- _objc_msgSend$computeUnits
 CStrings:
 + "!pieces_blob.empty()"
 + "(piece_offsets_[i]) < (pieces_blob.size())"

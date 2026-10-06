@@ -2,105 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x306638` | `0x305570` | **`-0x10c8`** |
+| `__TEXT.__realtime` | `0x396e8` | `0x38e50` | **`-0x898`** |
+| `__AUTH.__objc_data` | `0x938` | `0xe60` | **`+0x528`** |
+| `__DATA_DIRTY.__objc_data` | `0xc58` | `0x730` | **`-0x528`** |
+| `__DATA_DIRTY.__bss` | `0x220` | `0x2b0` | **`+0x90`** |
+| `__DATA_CONST.__got` | `0x5a0` | `0x5d8` | **`+0x38`** |
+| `__AUTH_CONST.__const` | `0x1b900` | `0x1b920` | **`+0x20`** |
+| `__DATA.__bss` | `0x20e08` | `0x20e00` | **`-0x8`** |
+| `__DATA_CONST.__const` | `0x90e0` | `0x90e8` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x26d04` | `0x26d0c` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x3c84` | `0x3c8c` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0xe5e0` | `0xe5d8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x306638
--  __TEXT.__realtime: 0x396e8
--  __TEXT.__objc_methlist: 0x3c84
-+  __TEXT.__text: 0x305570
-+  __TEXT.__realtime: 0x38e50
-+  __TEXT.__objc_methlist: 0x3c8c
-   __TEXT.__const: 0x2462a
-   __TEXT.__dlopen_cstrs: 0x50a
--  __TEXT.__gcc_except_tab: 0x26d04
-+  __TEXT.__gcc_except_tab: 0x26d0c
-   __TEXT.__cstring: 0x212ea
-   __TEXT.__oslogstring: 0x155cd
-   __TEXT.__dof_AudioTool: 0x4f1
+-1626.30.0.0.0
++1633.1.0.0.0
 
-   __TEXT.__dof_AudioConv: 0x129e
-   __TEXT.__dof_AUHostin0: 0x4a9
-   __TEXT.__dof_IPCAudioU: 0x582
--  __TEXT.__unwind_info: 0xe5e0
-+  __TEXT.__unwind_info: 0xe5d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x90e0
-+  __DATA_CONST.__const: 0x90e8
-   __DATA_CONST.__objc_classlist: 0x228
-   __DATA_CONST.__objc_protolist: 0xc8
-   __DATA_CONST.__objc_imageinfo: 0x8
-
-   __DATA_CONST.__objc_protorefs: 0x70
-   __DATA_CONST.__objc_superrefs: 0x1e0
-   __DATA_CONST.__objc_arraydata: 0x70
--  __DATA_CONST.__got: 0x5a0
--  __AUTH_CONST.__const: 0x1b900
-+  __DATA_CONST.__got: 0x5d8
-+  __AUTH_CONST.__const: 0x1b920
-   __AUTH_CONST.__cfstring: 0x8620
-   __AUTH_CONST.__objc_const: 0x6980
-   __AUTH_CONST.__weak_auth_got: 0x40
-
-   __AUTH_CONST.__objc_intobj: 0x90
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__auth_got: 0x1a00
--  __AUTH.__objc_data: 0x938
-+  __AUTH.__objc_data: 0xe60
-   __AUTH.__data: 0x98
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x18
-   __DATA.__objc_ivar: 0x4e8
-   __DATA.__data: 0xb18
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x20e08
-+  __DATA.__bss: 0x20e00
-   __DATA.__common: 0x10
--  __DATA_DIRTY.__objc_data: 0xc58
-+  __DATA_DIRTY.__objc_data: 0x730
-   __DATA_DIRTY.__data: 0x94
--  __DATA_DIRTY.__bss: 0x220
-+  __DATA_DIRTY.__bss: 0x2b0
-   __DATA_DIRTY.__common: 0x10
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libxml2.2.dylib
 -  Functions: 12151
--  Symbols:   31621
+-  Symbols:   19428
 +  Functions: 12156
-+  Symbols:   31637
-   CStrings:  7844
- 
-Sections:
-~ __TEXT.__cstring : content changed
-~ __TEXT.__dof_AudioTool : content changed
-~ __TEXT.__dof_AUHosting : content changed
-~ __TEXT.__dof_AudioConv : content changed
-~ __TEXT.__dof_AUHostin0 : content changed
-~ __TEXT.__dof_IPCAudioU : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__objc_ivar : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   19438
 Symbols:
 + -[AUAudioUnit_XH extension]
 + GCC_except_table10001
@@ -2210,5 +2139,4 @@ Symbols:
 - __ZNSt3__16vectorIN22ACRendererSharedMemory7ElementENS_9allocatorIS2_EEE24__emplace_back_slow_pathIJPN2CA17StreamDescriptionEjRjRPhSC_EEEPS2_DpOT_
 - ____ZN10applesauce8dispatch2v19sync_implIZ36-[AUAudioUnitV2Bridge parameterTree]E3$_8EEvPU28objcproto17OS_dispatch_queue8NSObjectOT_NSt3__117integral_constantIbLb1EEE_block_invoke
 - ____ZN10applesauce8dispatch2v19sync_implIZ42-[AUAudioUnitV2Bridge invalidateAudioUnit]E3$_7EEvPU28objcproto17OS_dispatch_queue8NSObjectOT_NSt3__117integral_constantIbLb1EEE_block_invoke
-
 ```

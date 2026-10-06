@@ -2,30 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/iCloudDriveCore.framework/Frameworks/libos-brain.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x20b82c` | `0x20b830` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
 - `__DATA_CONST.__const`
 - `__DATA_CONST.__got`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 5168.0.55.0.0
--  __TEXT.__text: 0x20b82c
-+  __TEXT.__text: 0x20b830
-   __TEXT.__auth_stubs: 0x2a20
-   __TEXT.__objc_stubs: 0x1f60
-   __TEXT.__objc_methlist: 0xd0c
+```text
 Functions:
 ~ sub_9f7c : 7620 -> 7480
 ~ sub_1627c -> sub_161f0 : 808 -> 812

@@ -2,87 +2,55 @@
 
 > `/usr/sbin/wifid`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c1f4c` | `0x1c3224` | **`+0x12d8`** |
+| `__TEXT.__cstring` | `0x75423` | `0x758b2` | **`+0x48f`** |
+| `__TEXT.__objc_methname` | `0x1b14f` | `0x1b37f` | **`+0x230`** |
+| `__TEXT.__objc_stubs` | `0x14e40` | `0x14fa0` | **`+0x160`** |
+| `__DATA_CONST.__cfstring` | `0x1c6a0` | `0x1c7a0` | **`+0x100`** |
+| `__DATA.__objc_const` | `0xd390` | `0xd480` | **`+0xf0`** |
+| `__TEXT.__gcc_except_tab` | `0x2904` | `0x29a8` | **`+0xa4`** |
+| `__TEXT.__objc_methlist` | `0x6820` | `0x68a0` | **`+0x80`** |
+| `__DATA.__objc_selrefs` | `0x6328` | `0x6390` | **`+0x68`** |
+| `__DATA_CONST.__const` | `0x7ba8` | `0x7c00` | **`+0x58`** |
+| `__TEXT.__unwind_info` | `0x4568` | `0x45a0` | **`+0x38`** |
+| `__TEXT.__auth_stubs` | `0x2bc0` | `0x2bf0` | **`+0x30`** |
+| `__DATA_CONST.__auth_got` | `0x15f0` | `0x1608` | **`+0x18`** |
+| `__DATA_CONST.__objc_intobj` | `0x13e0` | `0x13f8` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0xa14` | `0xa28` | **`+0x14`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -2027.18.0.0.0
--  __TEXT.__text: 0x1c1f4c
--  __TEXT.__auth_stubs: 0x2bc0
--  __TEXT.__objc_stubs: 0x14e40
--  __TEXT.__objc_methlist: 0x6820
--  __TEXT.__gcc_except_tab: 0x2904
 +2027.24.0.0.0
-+  __TEXT.__text: 0x1c3224
-+  __TEXT.__auth_stubs: 0x2bf0
-+  __TEXT.__objc_stubs: 0x14fa0
-+  __TEXT.__objc_methlist: 0x68a0
-+  __TEXT.__gcc_except_tab: 0x29a8
-   __TEXT.__const: 0xe5b
--  __TEXT.__cstring: 0x75423
--  __TEXT.__objc_methname: 0x1b14f
-+  __TEXT.__cstring: 0x758b2
-+  __TEXT.__objc_methname: 0x1b37f
-   __TEXT.__objc_classname: 0x85e
-   __TEXT.__objc_methtype: 0x33ac
-   __TEXT.__dlopen_cstrs: 0x33c
-   __TEXT.__oslogstring: 0x27ef
-   __TEXT.__ustring: 0x4c2
--  __TEXT.__unwind_info: 0x4568
--  __DATA_CONST.__const: 0x7ba8
--  __DATA_CONST.__cfstring: 0x1c6a0
-+  __TEXT.__unwind_info: 0x45a0
-+  __DATA_CONST.__const: 0x7c00
-+  __DATA_CONST.__cfstring: 0x1c7a0
-   __DATA_CONST.__objc_classlist: 0x200
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0xc8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x1c8
--  __DATA_CONST.__objc_intobj: 0x13e0
-+  __DATA_CONST.__objc_intobj: 0x13f8
-   __DATA_CONST.__objc_arraydata: 0x718
-   __DATA_CONST.__objc_arrayobj: 0x258
-   __DATA_CONST.__objc_dictobj: 0x208
--  __DATA_CONST.__auth_got: 0x15f0
-+  __DATA_CONST.__auth_got: 0x1608
-   __DATA_CONST.__got: 0x1400
-   __DATA_CONST.__auth_ptr: 0x160
--  __DATA.__objc_const: 0xd390
--  __DATA.__objc_selrefs: 0x6328
--  __DATA.__objc_ivar: 0xa14
-+  __DATA.__objc_const: 0xd480
-+  __DATA.__objc_selrefs: 0x6390
-+  __DATA.__objc_ivar: 0xa28
-   __DATA.__objc_data: 0x1400
-   __DATA.__data: 0x1130
-   __DATA.__bss: 0x998
 
-   - /usr/lib/liblockdown.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libpcap.A.dylib
 -  Functions: 8785
 -  Symbols:   1345
 -  CStrings:  17300
 +  Functions: 8809
 +  Symbols:   1348
 +  CStrings:  17347
- 
 Symbols:
 + _nw_path_get_status
 + _nw_path_is_constrained

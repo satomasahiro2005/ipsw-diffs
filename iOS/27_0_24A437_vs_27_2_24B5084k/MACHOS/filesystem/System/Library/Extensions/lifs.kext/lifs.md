@@ -2,44 +2,37 @@
 
 > `/System/Library/Extensions/lifs.kext/lifs`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x2099c` | `0x20e08` | **`+0x46c`** |
+| `__TEXT.__os_log` | `0x1f5d` | `0x1ffc` | **`+0x9f`** |
+| `__TEXT.__cstring` | `0x29fa` | `0x2a13` | **`+0x19`** |
+| `__TEXT.__const` | `0x338` | `0x348` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x80` | `0x88` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__DATA.__data`
-- `__DATA_CONST.__mod_init_func`
-- `__DATA_CONST.__mod_term_func`
 - `__DATA_CONST.__const`
 - `__DATA_CONST.__kalloc_type`
 - `__DATA_CONST.__kalloc_var`
+- `__DATA_CONST.__mod_init_func`
+- `__DATA_CONST.__mod_term_func`
+
+### Other Changes
 
 ```diff
 
 -974.0.13.0.2
--  __TEXT.__os_log: 0x1f5d
--  __TEXT.__cstring: 0x29fa
--  __TEXT.__const: 0x338
--  __TEXT_EXEC.__text: 0x20598
-+974.40.11.0.0
-+  __TEXT.__os_log: 0x1ffc
-+  __TEXT.__cstring: 0x2a13
-+  __TEXT.__const: 0x348
-+  __TEXT_EXEC.__text: 0x20a04
-   __TEXT_EXEC.__auth_stubs: 0xfb0
-   __DATA.__data: 0x578
-   __DATA.__common: 0x138
-
-   __DATA_CONST.__kalloc_type: 0xe40
-   __DATA_CONST.__kalloc_var: 0xf0
-   __DATA_CONST.__auth_got: 0x7d8
--  __DATA_CONST.__got: 0x80
-+  __DATA_CONST.__got: 0x88
-   __DATA_CONST.__auth_ptr: 0x8
 -  Functions: 460
 -  Symbols:   1244
 -  CStrings:  520
++974.40.11.0.0
 +  Functions: 463
 +  Symbols:   1249
 +  CStrings:  524
- 
 Symbols:
 + _lifs_abandon_sync_req
 + _lifs_io_lock_override_owned
@@ -100,7 +93,7 @@ Symbols:
 - lifs_vnop_strategy_done.kalloc_type_view_1797
 Functions:
 ~ _lifs_mount_request : 764 -> 760
-~ _lifs_req_callback_thread : 448 -> 444
+~ _lifs_req_callback_thread : 460 -> 456
 + _lifs_abandon_sync_req
 ~ _lifs_vnop_write : 1244 -> 1252
 ~ _lifs_vnop_read : 536 -> 544
@@ -109,10 +102,10 @@ Functions:
 ~ _lifs_vnop_close : 1016 -> 1052
 ~ _lifs_vnop_getattr : 1060 -> 1232
 ~ _lifs_vnop_pagein : 1004 -> 1012
-~ _lifs_vnop_pageout : 1176 -> 1184
+~ _lifs_vnop_pageout : 1184 -> 1192
 + _lifs_update_attrs_if_needed
-~ _lifs_io_strategy_thread : 448 -> 444
-~ _lifs_endio_thread : 424 -> 412
+~ _lifs_io_strategy_thread : 460 -> 456
+~ _lifs_endio_thread : 436 -> 424
 ~ _lifs_mount : 2204 -> 2180
 ~ _lifs_unmount : 1288 -> 1284
 ~ _lifs_getattr : 984 -> 988

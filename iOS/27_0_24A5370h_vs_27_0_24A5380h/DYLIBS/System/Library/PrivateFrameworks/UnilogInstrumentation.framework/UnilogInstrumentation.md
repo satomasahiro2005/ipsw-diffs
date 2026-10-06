@@ -2,99 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/UnilogInstrumentation.framework/UnilogInstrumentation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc290` | `0x18cc4` | **`+0xca34`** |
+| `__TEXT.__eh_frame` | `0x398` | `0xa70` | **`+0x6d8`** |
+| `__TEXT.__const` | `0x9f0` | `0x1010` | **`+0x620`** |
+| `__DATA.__bss` | `0x990` | `0xe90` | **`+0x500`** |
+| `__AUTH.__data` | `0x4f8` | `0x8a8` | **`+0x3b0`** |
+| `__AUTH_CONST.__const` | `0x5e8` | `0x908` | **`+0x320`** |
+| `__DATA.__data` | `0x320` | `0x640` | **`+0x320`** |
+| `__TEXT.__unwind_info` | `0x398` | `0x688` | **`+0x2f0`** |
+| `__TEXT.__constg_swiftt` | `0x3d4` | `0x69c` | **`+0x2c8`** |
+| `__AUTH_CONST.__auth_got` | `0x5e0` | `0x888` | **`+0x2a8`** |
+| `__TEXT.__swift5_typeref` | `0x376` | `0x5f8` | **`+0x282`** |
+| `__TEXT.__swift5_fieldmd` | `0x284` | `0x47c` | **`+0x1f8`** |
+| `__TEXT.__oslogstring` | `0x101` | `0x2f1` | **`+0x1f0`** |
+| `__TEXT.__swift5_reflstr` | `0xec` | `0x215` | **`+0x129`** |
+| `__AUTH_CONST.__objc_const` | `0x600` | `0x710` | **`+0x110`** |
+| `__DATA_CONST.__got` | `0x148` | `0x230` | **`+0xe8`** |
+| `__TEXT.__swift5_capture` | `0x38` | `0xe4` | **`+0xac`** |
+| `__AUTH.__objc_data` | `0x160` | `0x1b0` | **`+0x50`** |
+| `__TEXT.__swift_as_entry` | `0xc` | `0x50` | **`+0x44`** |
+| `__TEXT.__cstring` | `0x1c1` | `0x1f1` | **`+0x30`** |
+| `__TEXT.__swift5_proto` | `0x5c` | `0x8c` | **`+0x30`** |
+| `__TEXT.__swift_as_cont` | `0x8` | `0x34` | **`+0x2c`** |
+| `__TEXT.__swift5_types` | `0x40` | `0x68` | **`+0x28`** |
+| `__TEXT.__swift_as_ret` | `0x8` | `0x30` | **`+0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x40` | `0x48` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x30` | `0x38` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x8` | `0x10` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xc290
-+  __TEXT.__text: 0x18cc4
-   __TEXT.__objc_methlist: 0x44
--  __TEXT.__const: 0x9f0
--  __TEXT.__swift5_typeref: 0x376
--  __TEXT.__constg_swiftt: 0x3d4
--  __TEXT.__swift5_fieldmd: 0x284
--  __TEXT.__swift5_reflstr: 0xec
-+  __TEXT.__const: 0x1010
-+  __TEXT.__constg_swiftt: 0x69c
-+  __TEXT.__swift5_typeref: 0x5f8
-   __TEXT.__swift5_builtin: 0x28
--  __TEXT.__swift5_types: 0x40
--  __TEXT.__cstring: 0x1c1
--  __TEXT.__oslogstring: 0x101
--  __TEXT.__swift5_capture: 0x38
--  __TEXT.__swift5_protos: 0x8
--  __TEXT.__swift5_proto: 0x5c
--  __TEXT.__swift_as_entry: 0xc
--  __TEXT.__swift_as_ret: 0x8
--  __TEXT.__swift_as_cont: 0x8
-+  __TEXT.__swift5_reflstr: 0x215
-+  __TEXT.__swift5_fieldmd: 0x47c
-+  __TEXT.__swift5_types: 0x68
-+  __TEXT.__swift5_proto: 0x8c
-+  __TEXT.__swift_as_entry: 0x50
-+  __TEXT.__swift_as_ret: 0x30
-+  __TEXT.__swift_as_cont: 0x34
-+  __TEXT.__oslogstring: 0x2f1
-+  __TEXT.__cstring: 0x1f1
-+  __TEXT.__swift5_protos: 0x10
-+  __TEXT.__swift5_capture: 0xe4
-   __TEXT.__swift5_assocty: 0x30
--  __TEXT.__unwind_info: 0x398
--  __TEXT.__eh_frame: 0x398
-+  __TEXT.__unwind_info: 0x688
-+  __TEXT.__eh_frame: 0xa70
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x58
--  __DATA_CONST.__objc_classlist: 0x40
-+  __DATA_CONST.__objc_classlist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x30
--  __DATA_CONST.__got: 0x148
--  __AUTH_CONST.__const: 0x5e8
--  __AUTH_CONST.__objc_const: 0x600
--  __AUTH_CONST.__auth_got: 0x5e0
--  __AUTH.__objc_data: 0x160
--  __AUTH.__data: 0x4f8
--  __DATA.__data: 0x320
--  __DATA.__bss: 0x990
-+  __DATA_CONST.__objc_selrefs: 0x38
-+  __DATA_CONST.__got: 0x230
-+  __AUTH_CONST.__const: 0x908
-+  __AUTH_CONST.__objc_const: 0x710
-+  __AUTH_CONST.__auth_got: 0x888
-+  __AUTH.__objc_data: 0x1b0
-+  __AUTH.__data: 0x8a8
-+  __DATA.__data: 0x640
-+  __DATA.__bss: 0xe90
-   __DATA.__common: 0x20
+-2.0.1.0.0
++2.0.2.0.0
 +  - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-+  - /System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams
-   - /System/Library/PrivateFrameworks/Dendrite.framework/Dendrite
-   - /System/Library/PrivateFrameworks/IntelligencePlatformLibrary.framework/IntelligencePlatformLibrary
-   - /System/Library/PrivateFrameworks/UnilogCommonLibrary.framework/UnilogCommonLibrary
-+  - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftCore.dylib
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
++  - /System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams
+
++  - /usr/lib/libMobileGestalt.dylib
+
 -  Functions: 269
--  Symbols:   275
+-  Symbols:   250
 -  CStrings:  23
 +  Functions: 474
-+  Symbols:   390
++  Symbols:   332
 +  CStrings:  36
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __DATA_CONST.__const : content changed
 Symbols:
 + _MobileGestalt_copy_buildVersion_obj
 + _MobileGestalt_get_current_device
@@ -113,7 +70,6 @@ Symbols:
 + _associated conformance 21UnilogInstrumentation15IdentifierSpaceOSHAASQ
 + _associated conformance 21UnilogInstrumentation18IdentifierProviderC8CacheKey33_D2E5F6091AAE096B04697F2BAAC6CCFFLLVSHAASQ
 + _associated conformance 21UnilogInstrumentation19LongLivedIdentifierVSHAASQ
-+ _objc_msgSend$initWithStartDate:endDate:maxEvents:lastN:reversed:
 + _objc_release
 + _objc_release_x23
 + _objc_release_x24
@@ -199,5 +155,4 @@ CStrings:
 + "Safari client"
 + "UnilogInstrumentation.IdentifierProvider"
 + "client space "
-
 ```

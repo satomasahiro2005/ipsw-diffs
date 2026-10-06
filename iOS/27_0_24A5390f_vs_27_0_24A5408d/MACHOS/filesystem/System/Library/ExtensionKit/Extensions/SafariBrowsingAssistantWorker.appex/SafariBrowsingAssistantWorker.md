@@ -2,15 +2,14 @@
 
 > `/System/Library/ExtensionKit/Extensions/SafariBrowsingAssistantWorker.appex/SafariBrowsingAssistantWorker`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -3600.17.2.0.0
 +3600.21.1.0.0
-   __TEXT.__text: 0x28e24
-   __TEXT.__auth_stubs: 0x13f0
-   __TEXT.__objc_stubs: 0x4a0
 ```

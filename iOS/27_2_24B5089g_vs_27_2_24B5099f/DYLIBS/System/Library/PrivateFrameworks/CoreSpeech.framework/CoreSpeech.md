@@ -2,72 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/CoreSpeech.framework/CoreSpeech`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14ab68` | `0x14be74` | **`+0x130c`** |
+| `__TEXT.__oslogstring` | `0x2022c` | `0x2047d` | **`+0x251`** |
+| `__AUTH_CONST.__objc_const` | `0x21380` | `0x214f8` | **`+0x178`** |
+| `__TEXT.__cstring` | `0x28db4` | `0x28ef4` | **`+0x140`** |
+| `__TEXT.__objc_methlist` | `0x14eb4` | `0x14fcc` | **`+0x118`** |
+| `__DATA_CONST.__const` | `0x4230` | `0x4300` | **`+0xd0`** |
+| `__DATA_CONST.__objc_selrefs` | `0xae18` | `0xaee8` | **`+0xd0`** |
+| `__TEXT.__gcc_except_tab` | `0x3270` | `0x32e8` | **`+0x78`** |
+| `__TEXT.__unwind_info` | `0x4f80` | `0x4ff8` | **`+0x78`** |
+| `__AUTH_CONST.__cfstring` | `0x9620` | `0x9640` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x199c` | `0x19bc` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x1b38` | `0x1b48` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3605.25.1.0.0
--  __TEXT.__text: 0x146630
 +3605.31.3.0.0
-+  __TEXT.__text: 0x1478e8
-   __TEXT.__lazy_helpers: 0x54
--  __TEXT.__objc_methlist: 0x14eb4
-+  __TEXT.__objc_methlist: 0x14fcc
-   __TEXT.__const: 0x42c
-   __TEXT.__dlopen_cstrs: 0x1e0
--  __TEXT.__gcc_except_tab: 0x3270
--  __TEXT.__cstring: 0x28db4
--  __TEXT.__oslogstring: 0x2022c
--  __TEXT.__unwind_info: 0x6260
-+  __TEXT.__gcc_except_tab: 0x32e8
-+  __TEXT.__cstring: 0x28ef4
-+  __TEXT.__oslogstring: 0x2047d
-+  __TEXT.__unwind_info: 0x62c0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4230
-+  __DATA_CONST.__const: 0x4300
-   __DATA_CONST.__objc_classlist: 0x860
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x4e0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0xae18
-+  __DATA_CONST.__objc_selrefs: 0xaee8
-   __DATA_CONST.__objc_protorefs: 0x98
-   __DATA_CONST.__objc_superrefs: 0x698
-   __DATA_CONST.__objc_arraydata: 0x3f0
--  __DATA_CONST.__got: 0x1b38
-+  __DATA_CONST.__got: 0x1b48
-   __AUTH_CONST.__const: 0x1e20
--  __AUTH_CONST.__cfstring: 0x9620
--  __AUTH_CONST.__objc_const: 0x21380
-+  __AUTH_CONST.__cfstring: 0x9640
-+  __AUTH_CONST.__objc_const: 0x214f8
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__lazy_load_got: 0x8
-   __AUTH_CONST.__objc_intobj: 0x9a8
 
-   __AUTH_CONST.__objc_arrayobj: 0x120
-   __AUTH_CONST.__auth_got: 0xda0
-   __AUTH.__objc_data: 0x3c50
--  __DATA.__objc_ivar: 0x199c
-+  __DATA.__objc_ivar: 0x19bc
-   __DATA.__data: 0x3a14
-   __DATA.__common: 0x10
-   __DATA_DIRTY.__objc_data: 0x1770
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 8147
 -  Symbols:   14188
 -  CStrings:  5597
 +  Functions: 8182
 +  Symbols:   14234
 +  CStrings:  5612
- 
 Symbols:
 + -[CSEndpointDelayReporter analytics]
 + -[CSEndpointDelayReporter selfLoggingStream]

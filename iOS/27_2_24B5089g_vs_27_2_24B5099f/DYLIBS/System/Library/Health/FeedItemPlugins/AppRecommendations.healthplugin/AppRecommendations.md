@@ -2,17 +2,20 @@
 
 > `/System/Library/Health/FeedItemPlugins/AppRecommendations.healthplugin/AppRecommendations`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x22c10` | `0x22c24` | **`+0x14`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.45.2.4
--  __TEXT.__text: 0x21bb8
 +7027.1.54.2.3
-+  __TEXT.__text: 0x21bcc
-   __TEXT.__objc_methlist: 0x2a4
-   __TEXT.__const: 0x962
-   __TEXT.__constg_swiftt: 0x428
 Functions:
-~ sub_24f8f1478 -> sub_24ec8d478 : 4048 -> 4052
-~ sub_24f902fbc -> sub_24ec9efc0 : 1292 -> 1296
-~ sub_24f907ecc -> sub_24eca3ed4 : 260 -> 272
+~ sub_252790604 -> sub_251b77604 : 4136 -> 4140
+~ sub_2527a2908 -> sub_251b8990c : 1372 -> 1376
+~ sub_2527a7b74 -> sub_251b8eb7c : 260 -> 272
 ```

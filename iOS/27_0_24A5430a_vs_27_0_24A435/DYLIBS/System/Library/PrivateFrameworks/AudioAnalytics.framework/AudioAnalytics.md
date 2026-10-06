@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AudioAnalytics.framework/AudioAnalytics`
 
-```diff
+### Section Size Changes
 
- 300.0.0.0.0
--  __TEXT.__text: 0x18860
-+  __TEXT.__text: 0x18884
-   __TEXT.__objc_methlist: 0x1f4
-   __TEXT.__const: 0x9a0
-   __TEXT.__gcc_except_tab: 0x80
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x18860` | `0x18884` | **`+0x24`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1cabf49a8 -> sub_1cb1089a8 : 752 -> 756
 ~ sub_1cabf4dc8 -> sub_1cb108dcc : 416 -> 420

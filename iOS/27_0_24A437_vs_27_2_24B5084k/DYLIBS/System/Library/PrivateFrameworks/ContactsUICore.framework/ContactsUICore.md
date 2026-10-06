@@ -2,122 +2,62 @@
 
 > `/System/Library/PrivateFrameworks/ContactsUICore.framework/ContactsUICore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3e5c0c` | `0x3f8af0` | **`+0x12ee4`** |
+| `__TEXT.__const` | `0x31734` | `0x33664` | **`+0x1f30`** |
+| `__TEXT.__swift5_typeref` | `0x2d012` | `0x2e956` | **`+0x1944`** |
+| `__DATA.__bss` | `0x25b48` | `0x26bd8` | **`+0x1090`** |
+| `__AUTH_CONST.__const` | `0x1a330` | `0x1b048` | **`+0xd18`** |
+| `__TEXT.__eh_frame` | `0xe23c` | `0xe8e8` | **`+0x6ac`** |
+| `__DATA.__data` | `0xfd28` | `0x10278` | **`+0x550`** |
+| `__TEXT.__swift5_fieldmd` | `0x9b90` | `0xa0e0` | **`+0x550`** |
+| `__TEXT.__unwind_info` | `0xe360` | `0xe848` | **`+0x4e8`** |
+| `__TEXT.__constg_swiftt` | `0xce84` | `0xd364` | **`+0x4e0`** |
+| `__TEXT.__swift5_reflstr` | `0x9269` | `0x96c3` | **`+0x45a`** |
+| `__AUTH.__data` | `0x8e78` | `0x9228` | **`+0x3b0`** |
+| `__AUTH_CONST.__objc_const` | `0x1c9e0` | `0x1cc90` | **`+0x2b0`** |
+| `__TEXT.__oslogstring` | `0x871d` | `0x889d` | **`+0x180`** |
+| `__TEXT.__cstring` | `0xbd26` | `0xbe36` | **`+0x110`** |
+| `__TEXT.__swift5_assocty` | `0x2918` | `0x2a20` | **`+0x108`** |
+| `__DATA_DIRTY.__bss` | `0x3608` | `0x3508` | **`-0x100`** |
+| `__AUTH_CONST.__auth_got` | `0x4058` | `0x4140` | **`+0xe8`** |
+| `__TEXT.__swift5_capture` | `0x3858` | `0x38ec` | **`+0x94`** |
+| `__DATA_CONST.__got` | `0x2e48` | `0x2ed8` | **`+0x90`** |
+| `__TEXT.__gcc_except_tab` | `0xe0c` | `0xd80` | **`-0x8c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6910` | `0x6998` | **`+0x88`** |
+| `__TEXT.__swift5_proto` | `0x1558` | `0x15d8` | **`+0x80`** |
+| `__TEXT.__swift5_types` | `0xb8c` | `0xbf0` | **`+0x64`** |
+| `__DATA_CONST.__const` | `0x3cc8` | `0x3c78` | **`-0x50`** |
+| `__TEXT.__objc_methlist` | `0xaeb4` | `0xaf04` | **`+0x50`** |
+| `__TEXT.__swift_as_cont` | `0xa00` | `0xa4c` | **`+0x4c`** |
+| `__TEXT.__swift_as_ret` | `0x4a8` | `0x4d8` | **`+0x30`** |
+| `__TEXT.__swift_as_entry` | `0x514` | `0x540` | **`+0x2c`** |
+| `__AUTH_CONST.__cfstring` | `0x2c40` | `0x2c60` | **`+0x20`** |
+| `__DATA.__common` | `0x1530` | `0x1548` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x280` | `0x294` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0xb88` | `0xb98` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0x3338` | `0x3328` | **`-0x10`** |
+| `__TEXT.__swift5_mpenum` | `0x150` | `0x144` | **`-0xc`** |
+
+### Other Changes
+
 ```diff
 
 -3720.100.1.0.0
--  __TEXT.__text: 0x3c801c
--  __TEXT.__objc_methlist: 0xaeb4
--  __TEXT.__const: 0x31734
--  __TEXT.__oslogstring: 0x871d
--  __TEXT.__cstring: 0xbd26
--  __TEXT.__gcc_except_tab: 0xe0c
 +3723.200.41.0.0
-+  __TEXT.__text: 0x3da5f4
-+  __TEXT.__objc_methlist: 0xaf04
-+  __TEXT.__const: 0x33664
-+  __TEXT.__oslogstring: 0x889d
-+  __TEXT.__cstring: 0xbe36
-+  __TEXT.__gcc_except_tab: 0xd80
-   __TEXT.__dlopen_cstrs: 0xd94
--  __TEXT.__constg_swiftt: 0xce84
--  __TEXT.__swift5_typeref: 0x2d012
--  __TEXT.__swift5_fieldmd: 0x9b90
--  __TEXT.__swift5_reflstr: 0x9269
--  __TEXT.__swift5_builtin: 0x280
--  __TEXT.__swift5_assocty: 0x2918
-+  __TEXT.__constg_swiftt: 0xd364
-+  __TEXT.__swift5_typeref: 0x2e956
-+  __TEXT.__swift5_fieldmd: 0xa0e0
-+  __TEXT.__swift5_reflstr: 0x96c3
-+  __TEXT.__swift5_builtin: 0x294
-+  __TEXT.__swift5_assocty: 0x2a20
-   __TEXT.__swift5_protos: 0xe0
--  __TEXT.__swift5_proto: 0x1558
--  __TEXT.__swift5_types: 0xb8c
--  __TEXT.__swift_as_entry: 0x514
--  __TEXT.__swift_as_ret: 0x4a8
--  __TEXT.__swift_as_cont: 0xa00
--  __TEXT.__swift5_capture: 0x3858
--  __TEXT.__swift5_mpenum: 0x150
--  __TEXT.__unwind_info: 0x12280
--  __TEXT.__eh_frame: 0xe264
-+  __TEXT.__swift5_proto: 0x15d8
-+  __TEXT.__swift5_types: 0xbf0
-+  __TEXT.__swift_as_entry: 0x540
-+  __TEXT.__swift_as_ret: 0x4d8
-+  __TEXT.__swift_as_cont: 0xa4c
-+  __TEXT.__swift5_capture: 0x38ec
-+  __TEXT.__swift5_mpenum: 0x144
-+  __TEXT.__unwind_info: 0x12800
-+  __TEXT.__eh_frame: 0xe918
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3cc8
--  __DATA_CONST.__objc_classlist: 0xb88
-+  __DATA_CONST.__const: 0x3c78
-+  __DATA_CONST.__objc_classlist: 0xb98
-   __DATA_CONST.__objc_catlist: 0x78
-   __DATA_CONST.__objc_protolist: 0x420
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6910
-+  __DATA_CONST.__objc_selrefs: 0x6998
-   __DATA_CONST.__objc_protorefs: 0x150
-   __DATA_CONST.__objc_superrefs: 0x4d0
-   __DATA_CONST.__objc_arraydata: 0xc8
--  __DATA_CONST.__got: 0x2e48
--  __AUTH_CONST.__const: 0x1a330
--  __AUTH_CONST.__cfstring: 0x2c40
--  __AUTH_CONST.__objc_const: 0x1c9e0
-+  __DATA_CONST.__got: 0x2ed8
-+  __AUTH_CONST.__const: 0x1b048
-+  __AUTH_CONST.__cfstring: 0x2c60
-+  __AUTH_CONST.__objc_const: 0x1cc90
-   __AUTH_CONST.__objc_intobj: 0x360
-   __AUTH_CONST.__objc_arrayobj: 0xa8
-   __AUTH_CONST.__objc_doubleobj: 0x50
--  __AUTH_CONST.__auth_got: 0x4058
-+  __AUTH_CONST.__auth_got: 0x4140
-   __AUTH.__objc_data: 0x67d0
--  __AUTH.__data: 0x8e78
-+  __AUTH.__data: 0x9228
-   __DATA.__objc_ivar: 0x754
--  __DATA.__data: 0xfd28
-+  __DATA.__data: 0x10278
-   __DATA.__objc_stublist: 0x18
--  __DATA.__common: 0x1530
-+  __DATA.__common: 0x1548
-   __DATA_DIRTY.__objc_data: 0x30f8
--  __DATA_DIRTY.__data: 0x3338
--  __DATA_DIRTY.__bss: 0x3608
-+  __DATA_DIRTY.__data: 0x3328
-+  __DATA_DIRTY.__bss: 0x3508
-   __DATA_DIRTY.__common: 0x1e8
 +  - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
 
-   - /System/Library/Frameworks/Vision.framework/Vision
-   - /System/Library/Frameworks/_Contacts_AppIntents.framework/_Contacts_AppIntents
-   - /System/Library/PrivateFrameworks/AppIntentsServices.framework/AppIntentsServices
 -  - /System/Library/PrivateFrameworks/AvatarKit.framework/AvatarKit
-   - /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation
-   - /System/Library/PrivateFrameworks/ContactsMetrics.framework/ContactsMetrics
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 21388
--  Symbols:   16488
+-  Symbols:   13849
 -  CStrings:  2101
 +  Functions: 21798
-+  Symbols:   16715
++  Symbols:   14059
 +  CStrings:  2111
- 
 Symbols:
 + +[CNUIAvatarImageGenerator imageFromMetadata:size:minimumHorizontalMargin:completionHandler:]
 + +[CNUIMemojiMetadata metadataWithAvatarRecordData:poseConfigurationData:shouldBuildAvatar:]
@@ -239,30 +179,6 @@ Symbols:
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA5GroupVyAA19_ConditionalContentVyAA7ForEachVySay14ContactsUICore018ContactCardDetailsC5ModelC7SectionVG10Foundation4UUIDVAaPVyAA05EmptyC0VAA05TupleJ0VyAM0oP7ActionsVSgSg_ALySayAM0oP15PropertyRowItemVGA4_AJyAJyAJyAA08ModifiedJ0VyAM0oP5NotesVAA31AccessibilityAttachmentModifierVGAXGAM0op9ToneAlertC0VSgGAJyA7_yAM0op7LabeledyC0VA11_GA20_GGSgSgGQPGAXGGA27_GG_AM0oP13ConfigurationVQo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE20listRowSeparatorTint_5edgesQrAA5ColorVSg_AA12VerticalEdgeO3SetVtFQOyAA01_C16Modifier_ContentVy14ContactsUICore07PalettefG033_21807226F3F1DA9316FB5141FD77792DLLVG_Qo_HO
 + _keypath_set.112Tm
-+ _objc_msgSend$addInteraction:
-+ _objc_msgSend$cnui_isUnknown
-+ _objc_msgSend$configurationByApplyingConfiguration:
-+ _objc_msgSend$configurationWithTextStyle:scale:
-+ _objc_msgSend$configurationWithWeight:
-+ _objc_msgSend$didSelectActionItem:actionType:sourceView:
-+ _objc_msgSend$imageFromMetadata:size:minimumHorizontalMargin:completionHandler:
-+ _objc_msgSend$intrinsicContentSize
-+ _objc_msgSend$metadataWithAvatarRecordData:poseConfigurationData:shouldBuildAvatar:
-+ _objc_msgSend$monogramWithData:
-+ _objc_msgSend$renderImmediateMonogramWithInitials:avatarRecipeData:contactType:scope:
-+ _objc_msgSend$renderedBasicMonogramForContact:scope:prohibitedSources:
-+ _objc_msgSend$renderedBasicMonogramForString:color:scope:prohibitedSources:
-+ _objc_msgSend$resolvedColorWithTraitCollection:
-+ _objc_msgSend$setLargeContentTitle:
-+ _objc_msgSend$setMinimumHorizontalMargin:
-+ _objc_msgSend$setPhotoPosterInfo:
-+ _objc_msgSend$setScalesLargeContentImage:
-+ _objc_msgSend$setSceneIdentifierRawValue:
-+ _objc_msgSend$setShowsLargeContentViewer:
-+ _objc_msgSend$shouldHideSharedProfileMenuInContacts
-+ _objc_msgSend$systemGray2Color
-+ _objc_msgSend$systemIndigoColor
-+ _objc_msgSend$traitCollectionWithUserInterfaceStyle:
 + _swift_task_getMainExecutor
 + _symbolic SDy__________G 14ContactsUICore25ContactCardRelatedNameKeyV AA0cdeF12RowViewModelC
 + _symbolic Say_____G 7SwiftUI17ContentShapeKindsV
@@ -687,13 +603,6 @@ Symbols:
 - _keypath_set.132Tm
 - _keypath_set.73Tm
 - _log
-- _objc_msgSend$didSelectActionItem:actionType:
-- _objc_msgSend$imageFromMetadata:size:completionHandler:
-- _objc_msgSend$metadataWithAvatarRecordData:poseConfigurationData:
-- _objc_msgSend$renderedLikenessesForContacts:scope:workScheduler:
-- _objc_msgSend$setPhotoPosterSeedColorHasColor:red:green:blue:alpha:
-- _objc_msgSend$setShowsMenuFromSource:
-- _objc_msgSend$valueWithCGRect:
 - _symbolic SS_So7NSValueCt
 - _symbolic _____ 14ContactsUICore16HeaderLabelColorV4RoleO
 - _symbolic _____ 14ContactsUICore18ContactCardDetailsV19RelationPropertyRow33_F7A372D046C417C85363D6347CC6691ELLV

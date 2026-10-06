@@ -2,103 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/SEService.framework/SEService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1142f4` | `0x11ce80` | **`+0x8b8c`** |
+| `__DATA.__bss` | `0x1c790` | `0x1ec10` | **`+0x2480`** |
+| `__TEXT.__const` | `0x18930` | `0x19ca8` | **`+0x1378`** |
+| `__AUTH_CONST.__const` | `0xa9f0` | `0xb660` | **`+0xc70`** |
+| `__TEXT.__eh_frame` | `0x6700` | `0x6b04` | **`+0x404`** |
+| `__TEXT.__swift5_fieldmd` | `0x3cec` | `0x4094` | **`+0x3a8`** |
+| `__TEXT.__swift5_typeref` | `0x4430` | `0x47b3` | **`+0x383`** |
+| `__TEXT.__constg_swiftt` | `0x3a0c` | `0x3d34` | **`+0x328`** |
+| `__TEXT.__unwind_info` | `0x5380` | `0x5660` | **`+0x2e0`** |
+| `__DATA.__data` | `0x3750` | `0x39a0` | **`+0x250`** |
+| `__TEXT.__swift5_reflstr` | `0x1952` | `0x1b44` | **`+0x1f2`** |
+| `__TEXT.__cstring` | `0x8e85` | `0x9075` | **`+0x1f0`** |
+| `__TEXT.__swift5_proto` | `0x1400` | `0x152c` | **`+0x12c`** |
+| `__AUTH_CONST.__objc_const` | `0x8428` | `0x84e8` | **`+0xc0`** |
+| `__TEXT.__swift5_capture` | `0x1e4` | `0x294` | **`+0xb0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1b78` | `0x1c10` | **`+0x98`** |
+| `__TEXT.__objc_methlist` | `0x3ccc` | `0x3d24` | **`+0x58`** |
+| `__TEXT.__swift5_types` | `0x5c8` | `0x620` | **`+0x58`** |
+| `__AUTH_CONST.__auth_got` | `0x1040` | `0x1070` | **`+0x30`** |
+| `__TEXT.__oslogstring` | `0x2e57` | `0x2e87` | **`+0x30`** |
+| `__DATA_DIRTY.__data` | `0x2a48` | `0x2a28` | **`-0x20`** |
+| `__DATA.__objc_ivar` | `0x394` | `0x3ac` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x378` | `0x390` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x258` | `0x26c` | **`+0x14`** |
+| `__TEXT.__gcc_except_tab` | `0x1ab4` | `0x1aa8` | **`-0xc`** |
+| `__TEXT.__swift5_mpenum` | `0xf4` | `0xfc` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x4` | `0xc` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x374` | `0x37c` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x140` | `0x144` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -70.39.1.0.0
--  __TEXT.__text: 0x10b768
--  __TEXT.__objc_methlist: 0x3ccc
--  __TEXT.__const: 0x18930
--  __TEXT.__gcc_except_tab: 0x1ab4
--  __TEXT.__cstring: 0x8e85
--  __TEXT.__oslogstring: 0x2e57
 +71.7.0.0.0
-+  __TEXT.__text: 0x113e74
-+  __TEXT.__objc_methlist: 0x3d24
-+  __TEXT.__const: 0x19ca8
-+  __TEXT.__cstring: 0x9075
-+  __TEXT.__oslogstring: 0x2e87
-+  __TEXT.__gcc_except_tab: 0x1aa8
-   __TEXT.__dlopen_cstrs: 0x64
--  __TEXT.__swift5_typeref: 0x4430
--  __TEXT.__constg_swiftt: 0x3a0c
--  __TEXT.__swift5_fieldmd: 0x3cec
--  __TEXT.__swift5_builtin: 0x258
--  __TEXT.__swift5_mpenum: 0xf4
--  __TEXT.__swift5_reflstr: 0x1952
--  __TEXT.__swift5_proto: 0x1400
--  __TEXT.__swift5_types: 0x5c8
--  __TEXT.__swift5_assocty: 0x378
--  __TEXT.__swift_as_entry: 0x140
-+  __TEXT.__swift5_typeref: 0x47b3
-+  __TEXT.__swift5_reflstr: 0x1b44
-+  __TEXT.__swift5_assocty: 0x390
-+  __TEXT.__constg_swiftt: 0x3d34
-+  __TEXT.__swift5_fieldmd: 0x4094
-+  __TEXT.__swift5_builtin: 0x26c
-+  __TEXT.__swift5_proto: 0x152c
-+  __TEXT.__swift5_types: 0x620
-+  __TEXT.__swift5_mpenum: 0xfc
-+  __TEXT.__swift5_capture: 0x294
-+  __TEXT.__swift_as_entry: 0x144
-   __TEXT.__swift_as_ret: 0x114
--  __TEXT.__swift_as_cont: 0x374
--  __TEXT.__swift5_capture: 0x1e4
--  __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0x6758
--  __TEXT.__eh_frame: 0x6700
-+  __TEXT.__swift_as_cont: 0x37c
-+  __TEXT.__swift5_protos: 0xc
-+  __TEXT.__unwind_info: 0x6b38
-+  __TEXT.__eh_frame: 0x6b04
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x120
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1b78
-+  __DATA_CONST.__objc_selrefs: 0x1c10
-   __DATA_CONST.__objc_protorefs: 0xa0
-   __DATA_CONST.__objc_superrefs: 0x100
-   __DATA_CONST.__objc_arraydata: 0xe8
-   __DATA_CONST.__got: 0x740
--  __AUTH_CONST.__const: 0xa9f0
-+  __AUTH_CONST.__const: 0xb660
-   __AUTH_CONST.__cfstring: 0x46e0
--  __AUTH_CONST.__objc_const: 0x8428
--  __AUTH_CONST.__objc_arrayobj: 0x78
--  __AUTH_CONST.__objc_dictobj: 0x118
-+  __AUTH_CONST.__objc_const: 0x84e8
-   __AUTH_CONST.__objc_intobj: 0x78
--  __AUTH_CONST.__auth_got: 0x1040
-+  __AUTH_CONST.__objc_dictobj: 0x118
-+  __AUTH_CONST.__objc_arrayobj: 0x78
-+  __AUTH_CONST.__auth_got: 0x1070
-   __AUTH.__objc_data: 0x7c0
-   __AUTH.__data: 0xa8
--  __DATA.__objc_ivar: 0x394
--  __DATA.__data: 0x3750
-+  __DATA.__objc_ivar: 0x3ac
-+  __DATA.__data: 0x39a0
-   __DATA.__common: 0x40
-   __DATA_DIRTY.__objc_data: 0x2700
--  __DATA_DIRTY.__data: 0x2a48
-+  __DATA_DIRTY.__data: 0x2a28
-   __DATA_DIRTY.__bss: 0xb910
-   __DATA_DIRTY.__common: 0x110
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 7231
--  Symbols:   5319
+-  Symbols:   4703
 -  CStrings:  1355
 +  Functions: 7511
-+  Symbols:   5451
++  Symbols:   4816
 +  CStrings:  1368
- 
 Symbols:
 + -[SESNFCAppSettingsContext bundle:hasEntitlement:]
 + -[SESNFCAppSettingsContext eligibilityForKind:service:]
@@ -157,26 +107,6 @@ Symbols:
 + _associated conformance 9SEService20AppMigrationInternalO5TypesO9ErrorCodeO23SerializationCodingKeys33_C352F89A29641555C860C1DB4D8FA3FFLLOs0I3KeyAAs28CustomDebugStringConvertible
 + _get_enum_tag_for_layout_string 9SEService20AppMigrationInternalO11XPCResponseO
 + _get_enum_tag_for_layout_string 9SEService20AppMigrationInternalO5TypesO9ErrorCodeO
-+ _objc_msgSend$applicationIdentifier
-+ _objc_msgSend$applicationState
-+ _objc_msgSend$bundle:hasEntitlement:
-+ _objc_msgSend$bundleIdentifier
-+ _objc_msgSend$developerType
-+ _objc_msgSend$eligibilityForKind:service:
-+ _objc_msgSend$enumeratorWithOptions:
-+ _objc_msgSend$fireOnChange
-+ _objc_msgSend$iTunesMetadata
-+ _objc_msgSend$initWithBundleId:onChange:tccAccessProvider:installedProvider:entitlementProvider:eligibilityProvider:defaultsSuiteName:
-+ _objc_msgSend$isBundleInstalled:allowPlaceholder:
-+ _objc_msgSend$isInstalled
-+ _objc_msgSend$liveEntitlementRecordForBundleId:
-+ _objc_msgSend$localizedName
-+ _objc_msgSend$nextObject
-+ _objc_msgSend$reconcile
-+ _objc_msgSend$storeFront
-+ _objc_msgSend$storeItemIdentifier
-+ _objc_msgSend$tccAccessForService:bundleId:
-+ _objc_msgSend$teamIdentifier
 + _swift_retain_x23
 + _symbolic $s9SEService12TCCProvidingP
 + _symbolic $s9SEService14LSAppProvidingP
@@ -235,7 +165,6 @@ Symbols:
 + _type_layout_string 9SEService20AppMigrationInternalO11XPCResponseO
 + _type_layout_string 9SEService20AppMigrationInternalO5TypesO9ErrorCodeO
 - -[SESNFCAppSettingsContext reconcileWithRecord:]
-- _objc_msgSend$reconcileWithRecord:
 CStrings:
 + "An app migration is already in progress"
 + "App migration XPC error: "

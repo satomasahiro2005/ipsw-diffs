@@ -2,57 +2,37 @@
 
 > `/System/Library/AccessibilityBundles/ShortcutsUI.axbundle/ShortcutsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x468` | `0x978` | **`+0x510`** |
+| `__AUTH_CONST.__objc_const` | `0x1b0` | `0x3f0` | **`+0x240`** |
+| `__AUTH_CONST.__cfstring` | `0x220` | `0x3e0` | **`+0x1c0`** |
+| `__AUTH.__objc_data` | `0xf0` | `0x230` | **`+0x140`** |
+| `__TEXT.__cstring` | `0x163` | `0x26c` | **`+0x109`** |
+| `__TEXT.__objc_methlist` | `0x5c` | `0x13c` | **`+0xe0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x90` | `0xf0` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x80` | `0xb8` | **`+0x38`** |
+| `__DATA_CONST.__const` | `0x40` | `0x68` | **`+0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x18` | `0x38` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x20` | `0x30` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x8` | `0x18` | **`+0x10`** |
+| `__TEXT.__const` | `—` | `0x8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x468
--  __TEXT.__objc_methlist: 0x5c
--  __TEXT.__cstring: 0x163
--  __TEXT.__unwind_info: 0x80
-+  __TEXT.__text: 0x978
-+  __TEXT.__objc_methlist: 0x13c
-+  __TEXT.__const: 0x8
-+  __TEXT.__cstring: 0x26c
-+  __TEXT.__unwind_info: 0xb8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x40
--  __DATA_CONST.__objc_classlist: 0x18
-+  __DATA_CONST.__const: 0x68
-+  __DATA_CONST.__objc_classlist: 0x38
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x90
--  __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__got: 0x20
-+  __DATA_CONST.__objc_selrefs: 0xf0
-+  __DATA_CONST.__objc_superrefs: 0x18
-+  __DATA_CONST.__got: 0x30
-   __AUTH_CONST.__const: 0x60
--  __AUTH_CONST.__cfstring: 0x220
--  __AUTH_CONST.__objc_const: 0x1b0
-+  __AUTH_CONST.__cfstring: 0x3e0
-+  __AUTH_CONST.__objc_const: 0x3f0
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0xf0
-+  __AUTH.__objc_data: 0x230
-   __DATA.__bss: 0x10
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+-3039.1.0.0.0
++3042.0.0.0.0
 
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 9
--  Symbols:   82
--  CStrings:  36
+-  Symbols:   60
+-  CStrings:  20
 +  Functions: 25
-+  Symbols:   144
-+  CStrings:  67
- 
-Sections:
-~ __AUTH_CONST.__const : content changed
++  Symbols:   101
++  CStrings:  37
 Symbols:
 + +[WFEggTimerControlAccessibility _accessibilityPerformValidations:]
 + +[WFEggTimerControlAccessibility(SafeCategory) safeCategoryBaseClass]
@@ -95,11 +75,6 @@ Symbols:
 + __OBJC_METACLASS_RO_$___WFEggTimerViewControllerAccessibility_super
 + ___61-[WFEggTimerControlAccessibility _axAdjustTimerValueForward:]_block_invoke
 + ___block_descriptor_48_e8_32s_e5_v8?0ls32l8
-+ _objc_msgSend$_axAdjustTimerValueForward:
-+ _objc_msgSend$safeDoubleForKey:
-+ _objc_msgSend$setCurrentValue:
-+ _objc_msgSend$validateClass:isKindOfClass:
-+ _objc_msgSend$valueChangedHandler
 Functions:
 ~ ___50+[AXShortcutsUIGlue accessibilityInitializeBundle]_block_invoke_3 : 20 -> 112
 CStrings:
@@ -120,5 +95,4 @@ CStrings:
 + "v"
 + "v8@?0"
 + "valueChangedHandler"
-
 ```

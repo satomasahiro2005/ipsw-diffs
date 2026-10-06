@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/SensingAlgsPadHostServiceJ8xx.framework/SensingAlgsPadHostServiceJ8xx`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x570f4
-+  __TEXT.__text: 0x570cc
-   __TEXT.__objc_methlist: 0x838
-   __TEXT.__cstring: 0x125a
-   __TEXT.__const: 0x18aa5a
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x570f4` | `0x570cc` | **`-0x28`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
+```diff
 Functions:
 ~ __ZN22Device0x038FireflyTask17runBeforeChildrenEv : 524 -> 532
 ~ __ZN22Device0x039FireflyTask17runBeforeChildrenEv : 524 -> 532
@@ -52,5 +40,4 @@ CStrings:
 - "21.0.0 (clang-2100.3.23.3) [+internal-os]"
 - "24A366"
 - "SensingAlgsPadHostServiceJ8xx-10~4382"
-
 ```

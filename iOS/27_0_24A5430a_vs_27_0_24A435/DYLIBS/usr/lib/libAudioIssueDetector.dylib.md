@@ -2,14 +2,15 @@
 
 > `/usr/lib/libAudioIssueDetector.dylib`
 
-```diff
+### Section Size Changes
 
- 881.117.20.0.0
--  __TEXT.__text: 0x378b8
-+  __TEXT.__text: 0x37918
-   __TEXT.__realtime: 0x18f0
-   __TEXT.__objc_methlist: 0x8b4
-   __TEXT.__const: 0x324
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x378b8` | `0x37918` | **`+0x60`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNKSt3__111basic_regexIcNS_12regex_traitsIcEEE8__searchINS_9allocatorINS_9sub_matchIPKcEEEEEEbS8_S8_RNS_13match_resultsIS8_T_EENS_15regex_constants15match_flag_typeE : 4088 -> 4128
 ~ __ZNSt3__16vectorINS_9sub_matchIPKcEENS_9allocatorIS4_EEE6assignEmRKS4_ : 328 -> 324

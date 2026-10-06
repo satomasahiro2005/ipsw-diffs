@@ -2,57 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/CopresenceCore.framework/CopresenceCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2ef420` | `0x2ed1b0` | **`-0x2270`** |
+| `__TEXT.__eh_frame` | `0xdd20` | `0xdb48` | **`-0x1d8`** |
+| `__TEXT.__unwind_info` | `0xa148` | `0xa0e0` | **`-0x68`** |
+| `__TEXT.__swift_as_ret` | `0x308` | `0x2c4` | **`-0x44`** |
+| `__TEXT.__const` | `0x16104` | `0x160d4` | **`-0x30`** |
+| `__TEXT.__cstring` | `0x6633` | `0x6613` | **`-0x20`** |
+| `__TEXT.__oslogstring` | `0xff95` | `0xff75` | **`-0x20`** |
+| `__TEXT.__swift_as_cont` | `0x6f4` | `0x6d8` | **`-0x1c`** |
+| `__TEXT.__swift5_typeref` | `0x7e00` | `0x7dec` | **`-0x14`** |
+| `__TEXT.__swift5_capture` | `0x41b8` | `0x41a8` | **`-0x10`** |
+| `__TEXT.__swift_as_entry` | `0x318` | `0x310` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -301.100.1.0.0
--  __TEXT.__text: 0x2ef420
 +303.100.1.0.0
-+  __TEXT.__text: 0x2ed1b0
-   __TEXT.__objc_methlist: 0x341c
--  __TEXT.__const: 0x16104
--  __TEXT.__oslogstring: 0xff95
--  __TEXT.__cstring: 0x6633
-+  __TEXT.__const: 0x160d4
-+  __TEXT.__oslogstring: 0xff75
-+  __TEXT.__cstring: 0x6613
-   __TEXT.__gcc_except_tab: 0x40
-   __TEXT.__dlopen_cstrs: 0x66
--  __TEXT.__swift5_typeref: 0x7e00
--  __TEXT.__swift5_capture: 0x41b8
-+  __TEXT.__swift5_typeref: 0x7dec
-+  __TEXT.__swift5_capture: 0x41a8
-   __TEXT.__swift5_reflstr: 0x6210
-   __TEXT.__swift5_assocty: 0x858
-   __TEXT.__swift5_fieldmd: 0x61f0
 
-   __TEXT.__swift5_protos: 0xf4
-   __TEXT.__swift5_proto: 0xebc
-   __TEXT.__swift5_types: 0x63c
--  __TEXT.__swift_as_entry: 0x318
--  __TEXT.__swift_as_ret: 0x308
--  __TEXT.__swift_as_cont: 0x6f4
-+  __TEXT.__swift_as_entry: 0x310
-+  __TEXT.__swift_as_ret: 0x2c4
-+  __TEXT.__swift_as_cont: 0x6d8
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0xa148
--  __TEXT.__eh_frame: 0xdd20
-+  __TEXT.__unwind_info: 0xa0e0
-+  __TEXT.__eh_frame: 0xdb48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 16518
--  Symbols:   33317
+-  Symbols:   32741
 -  CStrings:  1815
 +  Functions: 16501
-+  Symbols:   33284
++  Symbols:   32708
 +  CStrings:  1813
- 
 Symbols:
 + _$s14CopresenceCore11ABCReporterC6report4with8durationSDys11AnyHashableVypGAI_SdtF
 + _$s14CopresenceCore11ABCReporterC6report4with8durationSDys11AnyHashableVypGAI_SdtFTj

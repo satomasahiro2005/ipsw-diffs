@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/TeaBreeze.framework/TeaBreeze`
 
-```diff
+### Section Size Changes
 
- 1478.1.0.0.0
--  __TEXT.__text: 0x3c1ec
-+  __TEXT.__text: 0x3c1fc
-   __TEXT.__const: 0x2990
-   __TEXT.__swift5_typeref: 0xfb2
-   __TEXT.__constg_swiftt: 0x1c5c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3c1ec` | `0x3c1fc` | **`+0x10`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1dd77b8a0 -> sub_1dddf68a0 : 904 -> 916
 ~ sub_1dd77dbf8 -> sub_1dddf8c04 : 680 -> 684

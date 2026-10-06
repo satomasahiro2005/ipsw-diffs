@@ -2,23 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/AppStoreComponents.framework/AppStoreComponents`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x90e94` | `0x90ea8` | **`+0x14`** |
+
+### Other Changes
+
 ```diff
 
- 27.0.46.2.1
--  __TEXT.__text: 0x90e94
-+  __TEXT.__text: 0x90ea8
-   __TEXT.__objc_methlist: 0x8c54
-   __TEXT.__const: 0x2394
-   __TEXT.__cstring: 0x3961
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3825
 +  Functions: 3826
-   Symbols:   7633
-   CStrings:  973
- 
 Functions:
 ~ _OUTLINED_FUNCTION_1 : 16 -> 32
 ~ _OUTLINED_FUNCTION_2 : 32 -> 16

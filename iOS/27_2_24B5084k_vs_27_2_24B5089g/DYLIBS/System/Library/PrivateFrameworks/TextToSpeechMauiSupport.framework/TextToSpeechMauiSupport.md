@@ -2,32 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/TextToSpeechMauiSupport.framework/TextToSpeechMauiSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x56babc` | `0x56bb08` | **`+0x4c`** |
+| `__TEXT.__eh_frame` | `0x1c20` | `0x1be8` | **`-0x38`** |
+
+### Other Changes
+
 ```diff
 
 -683.2.0.0.0
--  __TEXT.__text: 0x5653a4
 +683.2.1.0.0
-+  __TEXT.__text: 0x5653e8
-   __TEXT.__const: 0xc891a
-   __TEXT.__cstring: 0x54cec
-   __TEXT.__constg_swiftt: 0x888
 
-   __TEXT.__gcc_except_tab: 0x5ee8
-   __TEXT.__ustring: 0x8
-   __TEXT.__unwind_info: 0xce08
--  __TEXT.__eh_frame: 0x1c20
-+  __TEXT.__eh_frame: 0x1be8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 15081
--  Symbols:   18764
-+  Symbols:   18765
-   CStrings:  10976
- 
+-  Symbols:   18739
++  Symbols:   18740
 Symbols:
 + GCC_except_table11616
 + GCC_except_table11618

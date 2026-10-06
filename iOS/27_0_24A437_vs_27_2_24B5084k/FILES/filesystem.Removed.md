@@ -1,4 +1,4 @@
-## filesystem — Removed (1578)
+## filesystem — Removed (1570)
 
 - `/Applications/Campo.app/AppIcon60x60@2x.png`
 - `/Applications/Campo.app/Assets.car`
@@ -15,8 +15,8 @@
 - `/Applications/Feedback Assistant iOS.app/Base.lproj/Main.storyboardc/UITableViewController-9Xy-T3-16a.nib`
 - `/Applications/HomeUIService.app/HSSensitiveStrings-ActivityState.loctable`
 - `/Applications/ServicesPaymentAngel.app/com.apple.ServicesPaymentAngel.plist`
-- `/System/ExclaveCore/usr/share/exclavecore_sharedcache/t8160.RELEASE.restore.stripped.sharedcache`
-- `/System/ExclaveCore/usr/share/exclavecore_sharedcache/t8160.RELEASE.stripped.sharedcache`
+- `/System/ExclaveCore/usr/share/exclavecore_sharedcache/t8140.RELEASE.restore.stripped.sharedcache`
+- `/System/ExclaveCore/usr/share/exclavecore_sharedcache/t8140.RELEASE.stripped.sharedcache`
 - `/System/Library/AccessibilityBundles/Moments.axbundle/Accessibility-Jurassic.loctable`
 - `/System/Library/AccessibilityBundles/Music.axbundle/Accessibility-AQ.loctable`
 - `/System/Library/AccessibilityBundles/MusicApplication.axbundle/Accessibility-AQ.loctable`
@@ -47,10 +47,6 @@
 - `/System/Library/Audio/Tunings/Generic/CinematicSeparation/shared/M_FOA_Studio/AU/aufx-nnet-appl.plist`
 - `/System/Library/Audio/Tunings/Generic/CinematicSeparation/shared/M_FOA_Studio/AU/vi-nnet.mil`
 - `/System/Library/Audio/Tunings/Generic/CinematicSeparation/shared/M_FOA_Studio/AU/weights/vi-nnet.weight.bin`
-- `/System/Library/Carrier Bundles/iPhone/Smartfren_id.bundle/overrides_V63_V64s_V68.plist`
-- `/System/Library/Carrier Bundles/iPhone/Smartfren_id.bundle/signatures/overrides_V63_V64s_V68.plist`
-- `/System/Library/Carrier Bundles/iPhone/Unitel_mn.bundle/overrides_V63_V64s_V68.plist`
-- `/System/Library/Carrier Bundles/iPhone/Unitel_mn.bundle/signatures/overrides_V63_V64s_V68.plist`
 - `/System/Library/CoreServices/BluetoothUIService.app/Banner-PID-8215-Seed-mov/Banner-PID-8215-12-Loop.mov`
 - `/System/Library/CoreServices/BluetoothUIService.app/Banner-PID-8215-Seed-mov/Banner-PID-8215-13-Loop.mov`
 - `/System/Library/CoreServices/BluetoothUIService.app/Banner-PID-8229-Seed-mov/Banner-PID-8229-5-Loop.mov`
@@ -91,8 +87,8 @@
 - `/System/Library/Frameworks/FinanceKit.framework/Finance.momd/24A-466.omo`
 - `/System/Library/Frameworks/ReplayKit.framework/Localizable_XROS-V68.loctable`
 - `/System/Library/Frameworks/Security.framework/XPCServices/TrustedPeersHelper.xpc/TrustedPeersHelper.momd/TrustedPeersHelper_6.omo`
-- `/System/Library/Frameworks/Vision.framework/anodv3_drop3.H19.espresso.hwx`
-- `/System/Library/Frameworks/Vision.framework/anodv3_drop3.H19.espresso.precompilation_info`
+- `/System/Library/Frameworks/Vision.framework/anodv3_drop3.H17.espresso.hwx`
+- `/System/Library/Frameworks/Vision.framework/anodv3_drop3.H17.espresso.precompilation_info`
 - `/System/Library/Frameworks/Vision.framework/anodv3_drop3.espresso.net`
 - `/System/Library/Frameworks/Vision.framework/anodv3_drop3.espresso.shape`
 - `/System/Library/Frameworks/_LinkPresentation_AppIntents.framework/com.apple.-LinkPresentation-AppIntents.plist`
@@ -521,10 +517,6 @@
 - `/System/Library/PrivateFrameworks/AppleMediaServicesUI.framework/zh_TW.lproj/NearField.stringsdict`
 - `/System/Library/PrivateFrameworks/AssistantServices.framework/latency_response.caf`
 - `/System/Library/PrivateFrameworks/CMCapture.framework/BWPreviewStitcherNode.ci.metallib`
-- `/System/Library/PrivateFrameworks/CMCapture.framework/V63/FrontMetadataCamera-DeviceInfoBase.plist`
-- `/System/Library/PrivateFrameworks/CMCapture.framework/V63/FrontUltraWideCamera-DeviceInfoBase.plist`
-- `/System/Library/PrivateFrameworks/CMCapture.framework/V63/FrontVirtualCamera-DeviceInfoBase.plist`
-- `/System/Library/PrivateFrameworks/CMCapture.framework/V63/FrontVirtualTrueDepthCamera-DeviceInfoBase.plist`
 - `/System/Library/PrivateFrameworks/CameraKit.framework/Info.plist`
 - `/System/Library/PrivateFrameworks/CameraKit.framework/InfoPlist.loctable`
 - `/System/Library/PrivateFrameworks/CameraKit.framework/_CodeSignature/CodeResources`
@@ -659,8 +651,8 @@
 - `/System/Library/PrivateFrameworks/SiriSignals.framework/default_factors_352.pb`
 - `/System/Library/PrivateFrameworks/TVRemoteUI.framework/Intents.intentdefinition`
 - `/System/Library/PrivateFrameworks/TelephonyUtilities.framework/XPCServices/com.apple.FaceTime.FTConversationService.xpc/FaceTime.momd/FaceTime 7.omo`
-- `/System/Library/PrivateFrameworks/VisualIntelligenceCore.framework/visualgrounding_md10_v1_x7shu4ydiy_epoch_10_categorynumber32_palettized.bundle/H19.bundle/H19.e5`
-- `/System/Library/PrivateFrameworks/VisualIntelligenceCore.framework/visualgrounding_md10_v1_x7shu4ydiy_epoch_10_categorynumber32_palettized.bundle/H19.bundle/main/main_ane/model.hwx`
+- `/System/Library/PrivateFrameworks/VisualIntelligenceCore.framework/visualgrounding_md10_v1_x7shu4ydiy_epoch_10_categorynumber32_palettized.bundle/H17.bundle/H17.e5`
+- `/System/Library/PrivateFrameworks/VisualIntelligenceCore.framework/visualgrounding_md10_v1_x7shu4ydiy_epoch_10_categorynumber32_palettized.bundle/H17.bundle/main/main_ane/model.hwx`
 - `/System/Library/PrivateFrameworks/VisualIntelligenceCore.framework/visualgrounding_md10_v1_x7shu4ydiy_epoch_10_categorynumber32_palettized_text_feats.bin`
 - `/System/Library/PrivateFrameworks/WiFiKitUI.framework/WIFI.ca/index.xml`
 - `/System/Library/PrivateFrameworks/WiFiKitUI.framework/WIFI.ca/main.caml`

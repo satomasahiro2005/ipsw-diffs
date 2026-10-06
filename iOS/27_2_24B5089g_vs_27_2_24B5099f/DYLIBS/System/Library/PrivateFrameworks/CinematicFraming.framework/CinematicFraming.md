@@ -2,63 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/CinematicFraming.framework/CinematicFraming`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x31c10` | `0x23288` | **`-0xe988`** |
+| `__TEXT.__oslogstring` | `0x5e29` | `—` | **`-0x5e29`** |
+| `__TEXT.__cstring` | `0x33eb` | `0x1dff` | **`-0x15ec`** |
+| `__TEXT.__gcc_except_tab` | `0x1268` | `0xca8` | **`-0x5c0`** |
+| `__TEXT.__unwind_info` | `0x9c0` | `0x890` | **`-0x130`** |
+| `__AUTH_CONST.__cfstring` | `0x1780` | `0x1680` | **`-0x100`** |
+| `__TEXT.__const` | `0x6f0` | `0x690` | **`-0x60`** |
+| `__DATA.__common` | `0x30` | `—` | **`-0x30`** |
+| `__DATA_DIRTY.__common` | `0x20` | `—` | **`-0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x16b8` | `0x16a8` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -764.40.5.0.0
--  __TEXT.__text: 0x317d8
 +764.40.7.0.0
-+  __TEXT.__text: 0x22de4
-   __TEXT.__objc_methlist: 0x247c
--  __TEXT.__const: 0x6f0
--  __TEXT.__gcc_except_tab: 0x1268
--  __TEXT.__oslogstring: 0x5e29
--  __TEXT.__cstring: 0x33eb
-+  __TEXT.__const: 0x690
-+  __TEXT.__gcc_except_tab: 0xca8
-+  __TEXT.__cstring: 0x1dff
-   __TEXT.__dlopen_cstrs: 0x52
--  __TEXT.__unwind_info: 0xbb0
-+  __TEXT.__unwind_info: 0xa70
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0xc8
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x16b8
-+  __DATA_CONST.__objc_selrefs: 0x16a8
-   __DATA_CONST.__objc_superrefs: 0xb0
-   __DATA_CONST.__objc_arraydata: 0xf0
-   __DATA_CONST.__got: 0x1f8
-   __AUTH_CONST.__const: 0x40
--  __AUTH_CONST.__cfstring: 0x1780
-+  __AUTH_CONST.__cfstring: 0x1680
-   __AUTH_CONST.__objc_const: 0x4ea0
-   __AUTH_CONST.__objc_intobj: 0x120
-   __AUTH_CONST.__objc_dictobj: 0xf0
-
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__objc_ivar: 0x580
--  __DATA.__common: 0x30
-   __DATA_DIRTY.__objc_data: 0x7d0
-   __DATA_DIRTY.__data: 0x3a0
--  __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 880
 -  Symbols:   1645
 -  CStrings:  664
 +  Functions: 845
 +  Symbols:   1618
 +  CStrings:  306
- 
 Symbols:
 + _FigSignalErrorAtGM
 + _objc_retain_x27

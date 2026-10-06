@@ -2,79 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/PhotoLibrary.framework/PhotoLibrary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3d5cc` | `0x36d50` | **`-0x687c`** |
+| `__TEXT.__objc_methlist` | `0x58a4` | `0x4f6c` | **`-0x938`** |
+| `__AUTH_CONST.__objc_const` | `0x85c0` | `0x7d90` | **`-0x830`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4480` | `0x3d50` | **`-0x730`** |
+| `__AUTH_CONST.__cfstring` | `0x2140` | `0x1d00` | **`-0x440`** |
+| `__TEXT.__cstring` | `0x29b7` | `0x261c` | **`-0x39b`** |
+| `__TEXT.__unwind_info` | `0x1240` | `0x1098` | **`-0x1a8`** |
+| `__AUTH.__objc_data` | `0xc30` | `0xb40` | **`-0xf0`** |
+| `__TEXT.__const` | `0x460` | `0x378` | **`-0xe8`** |
+| `__TEXT.__oslogstring` | `0x99c` | `0x90d` | **`-0x8f`** |
+| `__DATA.__objc_ivar` | `0x8f0` | `0x87c` | **`-0x74`** |
+| `__DATA.__data` | `0x830` | `0x7d0` | **`-0x60`** |
+| `__DATA_CONST.__got` | `0x9d0` | `0x978` | **`-0x58`** |
+| `__DATA_CONST.__const` | `0x9e8` | `0xa18` | **`+0x30`** |
+| `__AUTH_CONST.__objc_dictobj` | `0x50` | `0x28` | **`-0x28`** |
+| `__AUTH_CONST.__const` | `0x140` | `0x120` | **`-0x20`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x20` | `—` | **`-0x20`** |
+| `__DATA.__bss` | `0x260` | `0x240` | **`-0x20`** |
+| `__DATA_CONST.__objc_arraydata` | `0x78` | `0x58` | **`-0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x1b0` | `0x198` | **`-0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1a0` | `0x188` | **`-0x18`** |
+| `__DATA_CONST.__objc_catlist` | `0x28` | `0x20` | **`-0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0xa8` | `0xa0` | **`-0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x30c` | `0x310` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.235.0.0
--  __TEXT.__text: 0x3bad0
--  __TEXT.__objc_methlist: 0x58a4
--  __TEXT.__const: 0x460
 +916.40.110.0.0
-+  __TEXT.__text: 0x355f0
-+  __TEXT.__objc_methlist: 0x4f6c
-+  __TEXT.__const: 0x378
-   __TEXT.__dlopen_cstrs: 0x1f4
--  __TEXT.__gcc_except_tab: 0x30c
--  __TEXT.__cstring: 0x29b7
--  __TEXT.__oslogstring: 0x99c
--  __TEXT.__unwind_info: 0x1730
-+  __TEXT.__gcc_except_tab: 0x310
-+  __TEXT.__cstring: 0x261c
-+  __TEXT.__oslogstring: 0x90d
-+  __TEXT.__unwind_info: 0x14e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9e8
--  __DATA_CONST.__objc_classlist: 0x1b0
--  __DATA_CONST.__objc_catlist: 0x28
--  __DATA_CONST.__objc_protolist: 0xa8
-+  __DATA_CONST.__const: 0xa18
-+  __DATA_CONST.__objc_classlist: 0x198
-+  __DATA_CONST.__objc_catlist: 0x20
-+  __DATA_CONST.__objc_protolist: 0xa0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4480
--  __DATA_CONST.__objc_superrefs: 0x1a0
--  __DATA_CONST.__objc_arraydata: 0x78
--  __DATA_CONST.__got: 0x9d0
--  __AUTH_CONST.__const: 0x140
--  __AUTH_CONST.__cfstring: 0x2140
--  __AUTH_CONST.__objc_const: 0x85c0
--  __AUTH_CONST.__objc_doubleobj: 0x20
--  __AUTH_CONST.__objc_dictobj: 0x50
-+  __DATA_CONST.__objc_selrefs: 0x3d50
-+  __DATA_CONST.__objc_superrefs: 0x188
-+  __DATA_CONST.__objc_arraydata: 0x58
-+  __DATA_CONST.__got: 0x978
-+  __AUTH_CONST.__const: 0x120
-+  __AUTH_CONST.__cfstring: 0x1d00
-+  __AUTH_CONST.__objc_const: 0x7d90
-   __AUTH_CONST.__objc_arrayobj: 0x48
-+  __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_intobj: 0x18
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0xc30
--  __DATA.__objc_ivar: 0x8f0
--  __DATA.__data: 0x830
-+  __AUTH.__objc_data: 0xb40
-+  __DATA.__objc_ivar: 0x87c
-+  __DATA.__data: 0x7d0
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0x4b0
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1830
--  Symbols:   5395
+-  Symbols:   3716
 -  CStrings:  433
 +  Functions: 1635
-+  Symbols:   4989
++  Symbols:   3439
 +  CStrings:  396
- 
 Symbols:
 + GCC_except_table1048
 + GCC_except_table1053
@@ -392,135 +361,6 @@ Symbols:
 - _iosp_poolUpdateBuffPosition
 - _kMemSubPoolDefaultBuffSizes
 - _malloc_type_realloc
-- _objc_msgSend$_adjustZoomForEnteringMode:
-- _objc_msgSend$_bodyFontDescriptor
-- _objc_msgSend$_canPinch
-- _objc_msgSend$_commonPLCropOverlayWallpaperBottomBarInitialization
-- _objc_msgSend$_commonPLCropOverlayWallpaperBottomBarInitializationPad
-- _objc_msgSend$_commonPLCropOverlayWallpaperBottomBarInitializationPhone
-- _objc_msgSend$_emphasizedBodyFontDescriptor
-- _objc_msgSend$_emphasizedShortCaptionFontDescriptor
-- _objc_msgSend$_imagePickerDidCompleteWithInfoArray:
-- _objc_msgSend$_indexOfNextNonEmptyAssetContainerAfterContainerIndex:wrap:
-- _objc_msgSend$_indexOfPreviousNonEmptyAssetContainerBeforeContainerIndex:wrap:
-- _objc_msgSend$_invalidateCache
-- _objc_msgSend$_layoutSubviewsPad
-- _objc_msgSend$_layoutSubviewsPhone
-- _objc_msgSend$_remakerModeForSelectedOption
-- _objc_msgSend$_removeAllAnimations:
-- _objc_msgSend$_setCustomCenterOverlay:
-- _objc_msgSend$_shortBodyFontDescriptor
-- _objc_msgSend$_shortCaptionFontDescriptor
-- _objc_msgSend$_shortSubheadlineFontDescriptor
-- _objc_msgSend$_sizeForString:
-- _objc_msgSend$_updateCachedValues
-- _objc_msgSend$_updateMotionToggle
-- _objc_msgSend$_updateWallpaperBottomBarSettingButtons
-- _objc_msgSend$activateConstraints:
-- _objc_msgSend$addObjectsFromArray:
-- _objc_msgSend$allAssetsCount
-- _objc_msgSend$appendFormat:
-- _objc_msgSend$array
-- _objc_msgSend$assetCollectionsFetchResult
-- _objc_msgSend$assetContainerForAsset:
-- _objc_msgSend$assetContainerForAssetGlobalIndex:
-- _objc_msgSend$assetContentChanged
-- _objc_msgSend$assetCountForContainerAtIndex:
-- _objc_msgSend$assetInAssetContainer:atIndex:
-- _objc_msgSend$autoLayoutCommonWallpaperButton
-- _objc_msgSend$beginTrackingPinch:
-- _objc_msgSend$bundleWithPath:
-- _objc_msgSend$changeDetailsForFetchResult:
-- _objc_msgSend$changeDetailsForObject:
-- _objc_msgSend$completeTrackingPinch:toState:duration:
-- _objc_msgSend$componentsJoinedByString:
-- _objc_msgSend$constraintsWithVisualFormat:options:metrics:views:
-- _objc_msgSend$continueTrackingPinch:
-- _objc_msgSend$convertRect:fromCoordinateSpace:
-- _objc_msgSend$copyCGImageFromImageGenerator:atTime:actualTime:error:
-- _objc_msgSend$decrementAssetIndexPath:insideCurrentAssetContainer:andWrap:
-- _objc_msgSend$defaultDurationForTransition:
-- _objc_msgSend$doCancelButton
-- _objc_msgSend$doSetBothScreenButton
-- _objc_msgSend$doSetButton
-- _objc_msgSend$doSetHomeScreenButton
-- _objc_msgSend$doSetLockScreenButton
-- _objc_msgSend$fetchAssetsInAssetCollection:options:
-- _objc_msgSend$fetchPHObjectsForOIDs:
-- _objc_msgSend$fetchResultAfterChanges
-- _objc_msgSend$firstAssetIndexPath
-- _objc_msgSend$font
-- _objc_msgSend$fontDescriptorWithSymbolicTraits:
-- _objc_msgSend$globalIndexForIndexPath:
-- _objc_msgSend$globalIndexOfAsset:
-- _objc_msgSend$hasIncrementalChanges
-- _objc_msgSend$imageWithCGImage:
-- _objc_msgSend$incrementAssetIndexPath:insideCurrentAssetContainer:andWrap:
-- _objc_msgSend$indexOfObject:
-- _objc_msgSend$indexOffsetForAssetContainerAtAssetIndex:
-- _objc_msgSend$indexPathForItem:inSection:
-- _objc_msgSend$indexPathForRow:inSection:
-- _objc_msgSend$indexPathsForVisibleRows
-- _objc_msgSend$initWithContentColor:
-- _objc_msgSend$initWithMedia:
-- _objc_msgSend$initWithSettings:strength:string:font:
-- _objc_msgSend$insertedObjects
-- _objc_msgSend$isWallpaperUIMode:
-- _objc_msgSend$item
-- _objc_msgSend$lastAssetIndexPath
-- _objc_msgSend$librarySpecificFetchOptions
-- _objc_msgSend$lightGrayColor
-- _objc_msgSend$motionToggle
-- _objc_msgSend$motionToggleHidden
-- _objc_msgSend$motionToggledManually:
-- _objc_msgSend$notifyExpansionFraction:force:
-- _objc_msgSend$numberOfRowsInSection:
-- _objc_msgSend$numberOfSections
-- _objc_msgSend$objectAtIndexedSubscript:
-- _objc_msgSend$photoTileViewControllerCanShowCenterOverlay:
-- _objc_msgSend$photoTileViewControllerCustomCenterOverlay:
-- _objc_msgSend$pl_indexPathForLastRow
-- _objc_msgSend$pl_managedAssetsForAssets:
-- _objc_msgSend$pl_resetContentOffsetFromContentInsets
-- _objc_msgSend$pl_scrollToBottom:
-- _objc_msgSend$preferredFontDescriptorWithTextStyle:addingSymbolicTraits:options:
-- _objc_msgSend$principalClass
-- _objc_msgSend$publishingAgentCancelButtonClicked:
-- _objc_msgSend$publishingAgentDoneButtonClicked:
-- _objc_msgSend$publishingAgentWillBeDisplayed:
-- _objc_msgSend$randomTransition
-- _objc_msgSend$rectForRowAtIndexPath:
-- _objc_msgSend$removeObjectsForKeys:
-- _objc_msgSend$removedObjects
-- _objc_msgSend$row
-- _objc_msgSend$screens
-- _objc_msgSend$scrollRectToVisible:animated:
-- _objc_msgSend$scrollToRowAtIndexPath:atScrollPosition:animated:
-- _objc_msgSend$section
-- _objc_msgSend$setActive:
-- _objc_msgSend$setBadgeVisible:
-- _objc_msgSend$setImageAsHomeScreenAndLockScreenClicked:
-- _objc_msgSend$setImageAsHomeScreenClicked:
-- _objc_msgSend$setImageAsLockScreenClicked:
-- _objc_msgSend$setIncludeHiddenAssets:
-- _objc_msgSend$setMaxToggleWidth:
-- _objc_msgSend$setModalPresentationStyle:
-- _objc_msgSend$setMotionToggleHidden:
-- _objc_msgSend$setMotionToggleIsOn:
-- _objc_msgSend$setShouldOnlyShowHomeScreenButton:
-- _objc_msgSend$setShouldOnlyShowLockScreenButton:
-- _objc_msgSend$setString:
-- _objc_msgSend$setToolbarVisible:
-- _objc_msgSend$setWallpaperBottomBar:
-- _objc_msgSend$showErrorIndicator
-- _objc_msgSend$sizeWithAttributes:
-- _objc_msgSend$snapState:
-- _objc_msgSend$string
-- _objc_msgSend$tableFooterView
-- _objc_msgSend$updateForChangedSettings:
-- _objc_msgSend$updatePinchState:
-- _objc_msgSend$wallpaperBottomBar
-- _objc_msgSend$widthForToggleText
 - _objc_retain_x26
 - _sharedCache.onceToken
 - _sharedCache.sharedCache

@@ -2,5 +2,6 @@
 
 > `/usr/libexec/online-auth-agent`
 
-Sections:
-~ __TEXT.__eh_frame : content changed
+### Same-size Content Changes
+
+- `__TEXT.__eh_frame`

@@ -2,132 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4c7454` | `0x4ca918` | **`+0x34c4`** |
+| `__AUTH_CONST.__const` | `0x1e938` | `0x1ee38` | **`+0x500`** |
+| `__TEXT.__oslogstring` | `0x9057` | `0x9317` | **`+0x2c0`** |
+| `__TEXT.__swift5_reflstr` | `0x101de` | `0x1043e` | **`+0x260`** |
+| `__TEXT.__swift5_fieldmd` | `0xde78` | `0xe0c8` | **`+0x250`** |
+| `__TEXT.__swift5_capture` | `0x56bc` | `0x5870` | **`+0x1b4`** |
+| `__DATA_DIRTY.__data` | `0x1350` | `0x1480` | **`+0x130`** |
+| `__DATA.__data` | `0xfd10` | `0xfc00` | **`-0x110`** |
+| `__TEXT.__swift5_typeref` | `0x29878` | `0x29988` | **`+0x110`** |
+| `__AUTH.__objc_data` | `0x15460` | `0x153c0` | **`-0xa0`** |
+| `__TEXT.__objc_methlist` | `0x1d0b4` | `0x1d154` | **`+0xa0`** |
+| `__TEXT.__eh_frame` | `0x9aa4` | `0x9b3c` | **`+0x98`** |
+| `__TEXT.__unwind_info` | `0x13638` | `0x136c0` | **`+0x88`** |
+| `__TEXT.__const` | `0x28d74` | `0x28df4` | **`+0x80`** |
+| `__AUTH.__data` | `0xfbc0` | `0xfc10` | **`+0x50`** |
+| `__AUTH_CONST.__objc_const` | `0x55240` | `0x55280` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x17a8f` | `0x17acf` | **`+0x40`** |
+| `__TEXT.__gcc_except_tab` | `0x1a60` | `0x1a24` | **`-0x3c`** |
+| `__DATA_CONST.__got` | `0x2df0` | `0x2e28` | **`+0x38`** |
+| `__DATA.__common` | `0x1650` | `0x1620` | **`-0x30`** |
+| `__DATA_DIRTY.__common` | `0xc8` | `0xf8` | **`+0x30`** |
+| `__DATA.__objc_ivar` | `0x1724` | `0x1744` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0xdf30` | `0xdf50` | **`+0x20`** |
+| `__TEXT.__constg_swiftt` | `0x10188` | `0x101a4` | **`+0x1c`** |
+| `__AUTH_CONST.__auth_got` | `0x3ce8` | `0x3cf8` | **`+0x10`** |
+| `__DATA.__bss` | `0x1f698` | `0x1f6a8` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x1208` | `0x11f8` | **`-0x10`** |
+| `__TEXT.__swift5_types` | `0xe1c` | `0xe20` | **`+0x4`** |
+| `__TEXT.__swift_as_cont` | `0x748` | `0x74c` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0x2f0` | `0x2f4` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x2d4` | `0x2d8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x4c7454
--  __TEXT.__objc_methlist: 0x1d0b4
--  __TEXT.__const: 0x28d74
--  __TEXT.__cstring: 0x17a8f
--  __TEXT.__gcc_except_tab: 0x1a60
--  __TEXT.__oslogstring: 0x9057
-+  __TEXT.__text: 0x4ca918
-+  __TEXT.__objc_methlist: 0x1d154
-+  __TEXT.__const: 0x28df4
-+  __TEXT.__cstring: 0x17acf
-+  __TEXT.__gcc_except_tab: 0x1a24
-+  __TEXT.__oslogstring: 0x9317
-   __TEXT.__ustring: 0x16
-   __TEXT.__dlopen_cstrs: 0x4e
--  __TEXT.__swift5_typeref: 0x29878
--  __TEXT.__constg_swiftt: 0x10188
--  __TEXT.__swift5_reflstr: 0x101de
--  __TEXT.__swift5_fieldmd: 0xde78
-+  __TEXT.__swift5_typeref: 0x29988
-+  __TEXT.__constg_swiftt: 0x101a4
-+  __TEXT.__swift5_reflstr: 0x1043e
-+  __TEXT.__swift5_fieldmd: 0xe0c8
-   __TEXT.__swift5_builtin: 0x5b4
-   __TEXT.__swift5_assocty: 0x2580
-   __TEXT.__swift5_proto: 0x107c
--  __TEXT.__swift5_types: 0xe1c
--  __TEXT.__swift5_capture: 0x56bc
--  __TEXT.__swift_as_entry: 0x2f0
--  __TEXT.__swift_as_ret: 0x2d4
-+  __TEXT.__swift5_types: 0xe20
-+  __TEXT.__swift5_capture: 0x5870
-+  __TEXT.__swift_as_entry: 0x2f4
-+  __TEXT.__swift_as_ret: 0x2d8
-   __TEXT.__swift5_protos: 0xac
-   __TEXT.__swift5_mpenum: 0xf0
--  __TEXT.__swift_as_cont: 0x748
--  __TEXT.__unwind_info: 0x13638
--  __TEXT.__eh_frame: 0x9aa4
-+  __TEXT.__swift_as_cont: 0x74c
-+  __TEXT.__unwind_info: 0x136c0
-+  __TEXT.__eh_frame: 0x9b3c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x48c0
--  __DATA_CONST.__objc_classlist: 0x1208
-+  __DATA_CONST.__objc_classlist: 0x11f8
-   __DATA_CONST.__objc_catlist: 0x118
-   __DATA_CONST.__objc_protolist: 0x518
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xdf30
-+  __DATA_CONST.__objc_selrefs: 0xdf50
-   __DATA_CONST.__objc_protorefs: 0x220
-   __DATA_CONST.__objc_classrefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x698
-   __DATA_CONST.__objc_arraydata: 0x408
--  __DATA_CONST.__got: 0x2df0
--  __AUTH_CONST.__const: 0x1e938
-+  __DATA_CONST.__got: 0x2e28
-+  __AUTH_CONST.__const: 0x1ee38
-   __AUTH_CONST.__cfstring: 0xa000
--  __AUTH_CONST.__objc_const: 0x55240
-+  __AUTH_CONST.__objc_const: 0x55280
-   __AUTH_CONST.__objc_intobj: 0xb28
-   __AUTH_CONST.__objc_doubleobj: 0x70
-   __AUTH_CONST.__objc_arrayobj: 0x120
-   __AUTH_CONST.__objc_dictobj: 0xf0
--  __AUTH_CONST.__auth_got: 0x3ce8
--  __AUTH.__objc_data: 0x15460
--  __AUTH.__data: 0xfbc0
--  __DATA.__objc_ivar: 0x1724
--  __DATA.__data: 0xfd10
-+  __AUTH_CONST.__auth_got: 0x3cf8
-+  __AUTH.__objc_data: 0x153c0
-+  __AUTH.__data: 0xfc10
-+  __DATA.__objc_ivar: 0x1744
-+  __DATA.__data: 0xfc00
-   __DATA.__objc_stublist: 0xc0
--  __DATA.__bss: 0x1f698
--  __DATA.__common: 0x1650
-+  __DATA.__bss: 0x1f6a8
-+  __DATA.__common: 0x1620
-   __DATA_DIRTY.__objc_data: 0x2d80
--  __DATA_DIRTY.__data: 0x1350
-+  __DATA_DIRTY.__data: 0x1480
-   __DATA_DIRTY.__bss: 0x7d0
--  __DATA_DIRTY.__common: 0xc8
-+  __DATA_DIRTY.__common: 0xf8
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/Accounts.framework/Accounts
+-821.0.16.0.0
++821.0.18.0.0
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 33573
--  Symbols:   51668
--  CStrings:  4517
+-  Symbols:   20251
+-  CStrings:  3239
 +  Functions: 33645
-+  Symbols:   51836
-+  CStrings:  4524
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_classrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __DATA.__objc_stublist : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   20285
++  CStrings:  3246
 Symbols:
 + -[GKNoContentView updateConfiguration]
 + -[GKPlaceholderView .cxx_destruct]
@@ -176,14 +99,6 @@ Symbols:
 + ___swift_memcpy82_8
 + _get_witness_table 7SwiftUI19_ConditionalContentVyAA16SubscriptionViewVySo20NSNotificationCenterC10FoundationE9PublisherVAA0F0PAAE7gesture_9includingQrqd___AA11GestureMaskVtAA0M0Rd__lFQOyAL8SettingsE22settingsListAppearanceQryFQOyAA0Q0Vys5NeverO04GamehB009SignedOutF0VG_Qo__AA06_EndedM0VyAA08_ChangedM0VyAA04DragM0VGGQo_GAlAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAlAE21navigationDestination4item11destinationQrAA7BindingVyqd__SgG_qd_0_qd__ctSHRd__AaKRd_0_r0_lFQOyAlAE5sheetA18_9onDismiss7contentQrA23__yycSgqd_0_qd__cts12IdentifiableRd__AaKRd_0_r0_lFQOyAEyAjlAEAM_ANQrqd___APtAaQRd__lFQOyAlREASQryFQOyAUyAwA05TupleD0VyAX14ProfileSectionV_AX14FriendsSectionVAX16ASCLockupSection33_BB2F83A3CC7FD3C3300A6520E4677A93LLVSgAX012ShareFriendsQ7SectionVAX25HelpFriendsFindYouSectionVAX21FriendRequestsSectionVAX21ProfilePrivacySectionVAX20NearbyPlayersSectionVAX17SafetyLinkSectionVSgAX31ResetAnalyticsIdentifierSectionVSgAX04SignV7SectionVQPGG_Qo__A8_Qo_G_AX0thO11DestinationOAlAE11environmentyQrA22_Rld__C11Observation10ObservableRd__lFQOyAA08ModifiedD0VyAX0O6ScreenA36_LLVAA30_EnvironmentKeyWritingModifierVyAX0thO0CSgGG_AX0thO5StateCQo_Qo__A63_A80_Qo__Qo_GAaKHPA10_AaKHPyHC_qd__AaKHD2_A83_HOHC
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE15navigationTitleyQrAA4TextVFQOyAA15ModifiedContentVyAcAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQOyAA5GroupVyAA012_ConditionalQ0VyAA08ProgressC0VyAA05EmptyC0VA1_GAcAEAdeF_Qrqd___SbyyctSQRd__lFQOyAcAEARyQrASRld__CAtURd__lFQOyAQy010GameCenterB008SettingsC0VAA30_EnvironmentKeyWritingModifierVyA3_0yZ8SettingsCSgGG_A3_0yz9ContainerC5ModelCQo__A14_5StateOQo_SgGG_A3_17ProfileEditorDataCQo_A7_yA3_19PresentationContextOGG_Qo__Qo__AA10ScenePhaseOQo_HO
-+ _objc_msgSend$buttonProperties
-+ _objc_msgSend$emptyConfiguration
-+ _objc_msgSend$initWithConfiguration:
-+ _objc_msgSend$plainButtonConfiguration
-+ _objc_msgSend$setButton:
-+ _objc_msgSend$setPrimaryAction:
-+ _objc_msgSend$setSecondaryText:
-+ _objc_msgSend$updateConfiguration
 + _symbolic SaySo13GKAchievementCGIegr_
 + _symbolic So24UIContentUnavailableViewC
 + _symbolic _____ 12GameCenterUI0aB12RestrictionsV
@@ -219,8 +134,6 @@ Symbols:
 - ___swift_memcpy113_8
 - _get_witness_table 7SwiftUI19_ConditionalContentVyAA16SubscriptionViewVySo20NSNotificationCenterC10FoundationE9PublisherVAA0F0PAAE7gesture_9includingQrqd___AA11GestureMaskVtAA0M0Rd__lFQOyAL8SettingsE22settingsListAppearanceQryFQOyAA0Q0Vys5NeverO04GamehB009SignedOutF0VG_Qo__AA06_EndedM0VyAA08_ChangedM0VyAA04DragM0VGGQo_GAlAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAlAE21navigationDestination4item11destinationQrAA7BindingVyqd__SgG_qd_0_qd__ctSHRd__AaKRd_0_r0_lFQOyAlAE5sheetA18_9onDismiss7contentQrA23__yycSgqd_0_qd__cts12IdentifiableRd__AaKRd_0_r0_lFQOyAEyAjlAEAM_ANQrqd___APtAaQRd__lFQOyAlREASQryFQOyAUyAwA05TupleD0VyAX14ProfileSectionV_AX14FriendsSectionVAX16ASCLockupSection33_BB2F83A3CC7FD3C3300A6520E4677A93LLVSgAX012ShareFriendsQ7SectionVAX25HelpFriendsFindYouSectionVAX21FriendRequestsSectionVAX21ProfilePrivacySectionVAX20NearbyPlayersSectionVAX17SafetyLinkSectionVSgAX31ResetAnalyticsIdentifierSectionVSgAX04SignV7SectionVQPGG_Qo__A8_Qo_G_AX0thO11DestinationOAX0O6ScreenA36_LLVQo__A63_AlAE11environmentyQrA22_Rld__C11Observation10ObservableRd__lFQOyAA08ModifiedD0VyA65_AA30_EnvironmentKeyWritingModifierVyAX0thO0CSgGG_AX0thO5StateCQo_Qo__Qo_GAaKHPA10_AaKHPyHC_qd__AaKHD2_A83_HOHC
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE15navigationTitleyQrAA4TextVFQOyAA15ModifiedContentVyAcAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQOyAA5GroupVyAA012_ConditionalM0VyAA08ProgressC0VyAA05EmptyC0VAZGAcAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAcAEAOyQrAPRld__CAqRRd__lFQOyANy010GameCenterB008SettingsC0VAA30_EnvironmentKeyWritingModifierVyA3_0yZ8SettingsCSgGG_A3_0yz9ContainerC5ModelCQo__A14_5StateOQo_SgGG_A3_17ProfileEditorDataCQo_A7_yA3_19PresentationContextOGG_Qo__Qo_HO
-- _objc_msgSend$_actionButton
-- _objc_msgSend$initWithFrame:title:style:
 - _symbolic So28GKBaseContentUnavailableViewC
 - _symbolic _____y_____y__________y_____y_____y__________G_Qo_______y_____y_____GGQo_G_____y_____y_____yAByAC_____y_____yADyAE_____y________________Sg______________________________Sg_____Sg_____QPGG_Qo__AMQo_G___________Qo__A8______y_____yA9______y_____SgGG______Qo_Qo__Qo_G 7SwiftUI19_ConditionalContentV AA16SubscriptionViewV So20NSNotificationCenterC10FoundationE9PublisherV AA0F0PAAE7gesture_9includingQrqd___AA11GestureMaskVtAA0M0Rd__lFQO AL8SettingsE22settingsListAppearanceQryFQO AA0Q0V s5NeverO 04GamehB009SignedOutF0V AA06_EndedM0V AA08_ChangedM0V AA04DragM0V AlAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQO AlAE21navigationDestination4item11destinationQrAA7BindingVyqd__SgG_qd_0_qd__ctSHRd__AaKRd_0_r0_lFQO AlAE5sheetA12_9onDismiss7contentQrA17__yycSgqd_0_qd__cts12IdentifiableRd__AaKRd_0_r0_lFQO AlAEAM_ANQrqd___APtAaQRd__lFQO AlREASQryFQO AA05TupleD0V AX14ProfileSectionV AX14FriendsSectionV AX16ASCLockupSection33_BB2F83A3CC7FD3C3300A6520E4677A93LLV AX012ShareFriendsQ7SectionV AX25HelpFriendsFindYouSectionV AX21FriendRequestsSectionV AX21ProfilePrivacySectionV AX20NearbyPlayersSectionV AX17SafetyLinkSectionV AX31ResetAnalyticsIdentifierSectionV AX04SignV7SectionV AX0thO11DestinationO AX0O6ScreenA30_LLV AlAE11environmentyQrA16_Rld__C11Observation10ObservableRd__lFQO AA08ModifiedD0V AA30_EnvironmentKeyWritingModifierV AX0thO0C AX0thO5StateC
 - _symbolic _____y_____y__________y_____y_____y__________G_Qo_______y_____y_____GGQo_G_____y_____y_____yAByAC_____y_____yADyAE_____y________________Sg______________________________Sg_____Sg_____QPGG_Qo__AMQo_G___________Qo__A8______y_____yA9______y_____SgGG______Qo_Qo__Qo__G 7SwiftUI19_ConditionalContentV7StorageO AA16SubscriptionViewV So20NSNotificationCenterC10FoundationE9PublisherV AA0G0PAAE7gesture_9includingQrqd___AA11GestureMaskVtAA0N0Rd__lFQO AN8SettingsE22settingsListAppearanceQryFQO AA0R0V s5NeverO 04GameiB009SignedOutG0V AA06_EndedN0V AA08_ChangedN0V AA04DragN0V AnAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQO AnAE21navigationDestination4item11destinationQrAA7BindingVyqd__SgG_qd_0_qd__ctSHRd__AaMRd_0_r0_lFQO AnAE5sheetA14_9onDismiss7contentQrA19__yycSgqd_0_qd__cts12IdentifiableRd__AaMRd_0_r0_lFQO AnAEAO_APQrqd___ARtAaSRd__lFQO AnTEAUQryFQO AA05TupleD0V AZ14ProfileSectionV AZ14FriendsSectionV AZ16ASCLockupSection33_BB2F83A3CC7FD3C3300A6520E4677A93LLV AZ012ShareFriendsR7SectionV AZ25HelpFriendsFindYouSectionV AZ21FriendRequestsSectionV AZ21ProfilePrivacySectionV AZ20NearbyPlayersSectionV AZ17SafetyLinkSectionV AZ31ResetAnalyticsIdentifierSectionV AZ04SignW7SectionV AZ0uiP11DestinationO AZ0P6ScreenA32_LLV AnAE11environmentyQrA18_Rld__C11Observation10ObservableRd__lFQO AA08ModifiedD0V AA30_EnvironmentKeyWritingModifierV AZ0uiP0C AZ0uiP5StateC
@@ -235,5 +148,4 @@ CStrings:
 + "GameCenterRestrictions.isLockedDown read"
 + "GameCenterRestrictions: GKPreferences.shared unavailable; falling back to most restrictive state"
 + "com.apple.systempreferences"
-
 ```

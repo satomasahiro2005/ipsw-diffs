@@ -2,99 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/PrivateCloudCompute.framework/PrivateCloudCompute`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0xe980` | `0xdc80` | **`-0xd00`** |
+| `__DATA_DIRTY.__bss` | `0xa700` | `0xb280` | **`+0xb80`** |
+| `__DATA_DIRTY.__data` | `0x3168` | `0x36f0` | **`+0x588`** |
+| `__DATA.__data` | `0x1528` | `0x1088` | **`-0x4a0`** |
+| `__AUTH.__data` | `0x190` | `0x58` | **`-0x138`** |
+| `__TEXT.__text` | `0xbf758` | `0xbf860` | **`+0x108`** |
+| `__TEXT.__eh_frame` | `0x8198` | `0x8258` | **`+0xc0`** |
+| `__TEXT.__swift5_reflstr` | `0x3b56` | `0x3bc6` | **`+0x70`** |
+| `__TEXT.__swift5_typeref` | `0x2d21` | `0x2ce3` | **`-0x3e`** |
+| `__TEXT.__swift_as_cont` | `0x478` | `0x43c` | **`-0x3c`** |
+| `__TEXT.__const` | `0xeebc` | `0xee8c` | **`-0x30`** |
+| `__TEXT.__constg_swiftt` | `0x288c` | `0x2868` | **`-0x24`** |
+| `__AUTH_CONST.__const` | `0x8388` | `0x8368` | **`-0x20`** |
+| `__TEXT.__swift_as_entry` | `0x328` | `0x348` | **`+0x20`** |
+| `__TEXT.__swift_as_ret` | `0x374` | `0x38c` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x3c48` | `0x3c60` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0xce8` | `0xcdc` | **`-0xc`** |
+| `__DATA_CONST.__got` | `0x450` | `0x448` | **`-0x8`** |
+| `__TEXT.__swift5_fieldmd` | `0x3f04` | `0x3f0c` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x3e0` | `0x3dc` | **`-0x4`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xbf758
-+  __TEXT.__text: 0xbf860
-   __TEXT.__objc_methlist: 0x150
--  __TEXT.__const: 0xeebc
-+  __TEXT.__const: 0xee8c
-   __TEXT.__cstring: 0x2acf
-   __TEXT.__oslogstring: 0xcdb
--  __TEXT.__swift5_typeref: 0x2d21
--  __TEXT.__swift5_fieldmd: 0x3f04
--  __TEXT.__constg_swiftt: 0x288c
-+  __TEXT.__swift5_typeref: 0x2ce3
-+  __TEXT.__swift5_fieldmd: 0x3f0c
-+  __TEXT.__constg_swiftt: 0x2868
-   __TEXT.__swift5_builtin: 0x78
--  __TEXT.__swift5_reflstr: 0x3b56
-+  __TEXT.__swift5_reflstr: 0x3bc6
-   __TEXT.__swift5_protos: 0x28
--  __TEXT.__swift5_proto: 0xce8
--  __TEXT.__swift5_types: 0x3e0
-+  __TEXT.__swift5_proto: 0xcdc
-+  __TEXT.__swift5_types: 0x3dc
-   __TEXT.__swift5_assocty: 0x348
-   __TEXT.__swift5_capture: 0x718
--  __TEXT.__swift_as_entry: 0x328
--  __TEXT.__swift_as_ret: 0x374
--  __TEXT.__swift_as_cont: 0x478
-+  __TEXT.__swift_as_entry: 0x348
-+  __TEXT.__swift_as_ret: 0x38c
-+  __TEXT.__swift_as_cont: 0x43c
-   __TEXT.__swift5_mpenum: 0x38
-   __TEXT.__swift5_types2: 0x8
--  __TEXT.__unwind_info: 0x3c48
--  __TEXT.__eh_frame: 0x8198
-+  __TEXT.__unwind_info: 0x3c60
-+  __TEXT.__eh_frame: 0x8258
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-2570.0.5.0.0
++2570.0.12.0.0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x140
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__got: 0x450
--  __AUTH_CONST.__const: 0x8388
-+  __DATA_CONST.__got: 0x448
-+  __AUTH_CONST.__const: 0x8368
-   __AUTH_CONST.__objc_const: 0xa80
-   __AUTH_CONST.__auth_got: 0xd30
-   __AUTH.__objc_data: 0x48
--  __AUTH.__data: 0x190
--  __DATA.__data: 0x1528
--  __DATA.__bss: 0xe980
-+  __AUTH.__data: 0x58
-+  __DATA.__data: 0x1088
-+  __DATA.__bss: 0xdc80
-   __DATA_DIRTY.__objc_data: 0x78
--  __DATA_DIRTY.__data: 0x3168
--  __DATA_DIRTY.__bss: 0xa700
-+  __DATA_DIRTY.__data: 0x36f0
-+  __DATA_DIRTY.__bss: 0xb280
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/Network.framework/Network
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 4845
--  Symbols:   1944
+-  Symbols:   1448
 +  Functions: 4842
-+  Symbols:   1932
-   CStrings:  362
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__oslogstring : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_types2 : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   1436
 Symbols:
 + _symbolic _____y_____yx_GG 15Synchronization5MutexVAARi_zrlE 19PrivateCloudCompute10AsyncEventC0G5State33_7EBD88DFD30C77B138A303F474E43ED4LLO
 + _symbolic _____y_____yx_GG 15Synchronization5MutexVAARi_zrlE 19PrivateCloudCompute36CheckedCancellableContinuationCanary33_EDB4D61775E434FD32327756FD09F4C0LLC5StateO
@@ -115,5 +62,4 @@ Symbols:
 CStrings:
 + "identifySeedBuildsInClientInfo"
 - "noUniqueIdentifier"
-
 ```

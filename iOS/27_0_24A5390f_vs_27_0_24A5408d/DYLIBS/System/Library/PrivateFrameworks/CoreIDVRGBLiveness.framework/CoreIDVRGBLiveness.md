@@ -2,79 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/CoreIDVRGBLiveness.framework/CoreIDVRGBLiveness`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6e8a0` | `0x6f04c` | **`+0x7ac`** |
+| `__TEXT.__swift5_typeref` | `0x928c` | `0x94be` | **`+0x232`** |
+| `__TEXT.__swift5_reflstr` | `0x24b1` | `0x2501` | **`+0x50`** |
+| `__AUTH_CONST.__const` | `0x2750` | `0x2778` | **`+0x28`** |
+| `__TEXT.__swift5_fieldmd` | `0x1b8c` | `0x1bb0` | **`+0x24`** |
+| `__DATA.__data` | `0x19e0` | `0x1a00` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x1080` | `0x1098` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa28` | `0xa40` | **`+0x18`** |
+| `__AUTH.__data` | `0x1820` | `0x1830` | **`+0x10`** |
+| `__TEXT.__const` | `0x4364` | `0x4374` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x704` | `0x714` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x1518` | `0x1528` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -9.38.0.0.0
--  __TEXT.__text: 0x6e8a0
 +9.42.0.0.0
-+  __TEXT.__text: 0x6f04c
-   __TEXT.__objc_methlist: 0x40c
--  __TEXT.__const: 0x4364
--  __TEXT.__swift5_typeref: 0x928c
--  __TEXT.__swift5_fieldmd: 0x1b8c
-+  __TEXT.__const: 0x4374
-+  __TEXT.__swift5_typeref: 0x94be
-+  __TEXT.__swift5_fieldmd: 0x1bb0
-   __TEXT.__constg_swiftt: 0x1984
--  __TEXT.__swift5_reflstr: 0x24b1
-+  __TEXT.__swift5_reflstr: 0x2501
-   __TEXT.__swift5_builtin: 0x140
-   __TEXT.__swift5_assocty: 0x300
-   __TEXT.__cstring: 0x3e11
-   __TEXT.__oslogstring: 0x239e
--  __TEXT.__swift5_capture: 0x704
-+  __TEXT.__swift5_capture: 0x714
-   __TEXT.__swift5_protos: 0x1c
-   __TEXT.__swift5_proto: 0x180
-   __TEXT.__swift5_types: 0x118
-   __TEXT.__swift_as_entry: 0x80
-   __TEXT.__swift_as_ret: 0xa0
-   __TEXT.__swift_as_cont: 0x16c
--  __TEXT.__unwind_info: 0x1518
-+  __TEXT.__unwind_info: 0x1528
-   __TEXT.__eh_frame: 0x2164
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x80
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa28
-+  __DATA_CONST.__objc_selrefs: 0xa40
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2750
-+  __AUTH_CONST.__const: 0x2778
-   __AUTH_CONST.__objc_const: 0x2028
--  __AUTH_CONST.__auth_got: 0x1080
-+  __AUTH_CONST.__auth_got: 0x1098
-   __AUTH.__objc_data: 0x828
--  __AUTH.__data: 0x1820
--  __DATA.__data: 0x19e0
-+  __AUTH.__data: 0x1830
-+  __DATA.__data: 0x1a00
-   __DATA.__common: 0xa0
-   __DATA.__bss: 0x2f60
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2108
--  Symbols:   1287
+-  Symbols:   1009
 +  Functions: 2113
-+  Symbols:   1297
-   CStrings:  426
- 
++  Symbols:   1016
 Symbols:
 + _CGRectGetMaxX
 + _CGRectGetMinX
 + _CGRectGetMinY
 + _UIEdgeInsetsInsetRect
 + _get_witness_table qd0__7SwiftUI4ViewHD5_AaBPAAE5alert_11isPresented7actions7messageQrqd___AA7BindingVySbGqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAA15ModifiedContentVyALyAcAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAmnO_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAmnO_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE7toolbar7contentQrqd__yXE_tAA07ToolbarK0Rd__lFQOyAcAE29navigationBarBackButtonHiddenyQrSbFQOyALyAA6ZStackVyAA05TupleK0VyAcAE08safeAreaT04edge9alignment7spacingAQQrAA12VerticalEdgeO_AA19HorizontalAlignmentV12CoreGraphics7CGFloatVSgqd__yXEtAaBRd__lFQOyAcAE20scrollBounceBehavior_4axesQrAA20ScrollBounceBehaviorV_AA4AxisO3SetVtFQOyALyAA06ScrollC0VyAUyAWyAcAE22containerRelativeFrame_AZQrA15__AA9AlignmentVtFQOyAA5ColorV_Qo_Sg_ALyAA6VStackVyAWyALyALyALyALyALyAUyAWyALyAcAE0L16LongPressGesture15minimumDuration15maximumDistance8pressing7performQrSd_A6_ySbcSgyyctFQOyALyALyALyALyALyAcAE20accessibilityFocusedyQrAA23AccessibilityFocusStateVAHVySb_GFQOyALyAA5ImageVAA31AccessibilityAttachmentModifierVG_Qo_AA16_OverlayModifierVyALyALyALyALyALyALyALyALyALyAcAE10fontWeightyQrAA4FontV6WeightVSgFQOyALyAA6HStackVyAWyA39__AA4TextVQPGGAA30_EnvironmentKeyWritingModifierVyA48_SgGG_Qo_AA24_ForegroundStyleModifierVyA22_GGAA14_PaddingLayoutVGA69_GAA34_InsettableBackgroundShapeModifierVyA22_AA16RoundedRectangleVGGAA13_OffsetEffectVGAA12_ScaleEffectVGAA14_OpacityEffectVGAA18_AnimationModifierVySbGGA41_GGGAA11_ClipEffectVyA75_GGA89_GA85_GA89_G_Qo_AA32_EnvironmentKeyTransformModifierVySbGG_ALyALyALy18CoreIDVRGBLiveness015LivePhotoPlayerC0VA85_GA96_GAA25_AllowsHitTestingModifierVGQPGGAA18_AspectRatioLayoutVGA69_GAA033_AccessibilityIgnoresInvertColorsC8ModifierVGA106_22HideRecordingsModifier33_EF6CD7E295E8BE1BCE02A118F529AD00LLVGAA12_FrameLayoutVG_ALyALyA26_yAWyAcAEA33_yQrA37_FQOyALyAcAEA46_yQrA51_FQOyALyALyALyA55_AA16_FlexFrameLayoutVGA59_yAA13TextAlignmentOGGA61_G_Qo_AA16_FixedSizeLayoutVG_Qo__ALyALyA138_A65_yAA22HierarchicalShapeStyleVGGA140_GQPGGA69_GA69_GAWyAA6SpacerV_ALyALyALyA26_yAWyALyALyAcAE11buttonStyleyQrqd__AA09PrimitiveV5StyleRd__lFQOyALyALyAA0V0VyAA012_ConditionalK0VyALyALyALyAA08ProgressC0VyAA05EmptyC0VA163_GA59_yAA11ControlSizeOGGA59_yAA13AnyShapeStyleVSgGGA131_GA132_GGA167_GA59_yAA0V11BorderShapeVGG_AA014GlassProminentV5StyleVQo_A172_GA104_GSg_AcAEA154_yQrqd__AAA155_Rd__lFQOyALyAcAEA46_yQrA51_FQOyALyALyA157_yA132_GA167_GA172_G_Qo_A180_G_AA05GlassV5StyleVQo_SgQPGGA69_GA69_GAA21_TraitWritingModifierVyAA22LayoutPriorityTraitKeyVGGQPGSgQPGGA131_GQPGGGAA23_GeometryActionModifierVyA6_GG_Qo__AcAE18scrollPocketTag_v15styleQrAA0T16MagicPocketStyleV_tFQOyALyAA20GlassEffectContainerVyA200_GAA01_K13ShapeModifierVyAA9RectangleVGG_Qo_SgQo__ALyALyALyAUyAUyAWyALyALyALyALyA106_13CameraPreviewVAA30_SafeAreaRegionsIgnoringLayoutVGAA11_BlurEffectVGA88_yA6_GGA85_G_ALyALyALyA22_A239_GA85_GA244_GALyALyALyA106_08CoachingC0VA85_GA128_GA89_GQPGGGA106_18SceneSessionReader33_B2E9B1B8C27AD5F9EDBC7C83E9ADBDA5LLVGA45_yAcAE15dynamicTypeSizeyQrAA15DynamicTypeSizeOFQOyALyAA6IDViewVyALyALyALyALyALyALyALyALyA55_A135_GA69_GA69_GAA13_ShadowEffectVGA76_GA69_GA69_GA128_GSSGA202_yAA18TransitionTraitKeyVGG_Qo_SgGGA88_ySSSgGGSgQPGGA239_G_Qo__AA0R4ItemVyytALyALyA157_yA39_SgGA172_GA104_GGSgQo__A286_Qo__SbQo__A286_Qo_AA25_AppearanceActionModifierVGA307_G_SSAWyA159_yA157_yA55_GA310_G_A311_SgQPGA55_Qo_HO
-+ _objc_msgSend$convertRect:toCoordinateSpace:
-+ _objc_msgSend$safeAreaInsets
-+ _objc_msgSend$window
 + _symbolic _____yAAyAAyAAy__________G_____G_____y_____GG_____G 7SwiftUI15ModifiedContentV 18CoreIDVRGBLiveness13CameraPreviewV AA30_SafeAreaRegionsIgnoringLayoutV AA11_BlurEffectV AA18_AnimationModifierV 0E8Graphics7CGFloatV AA08_OpacityO0V
 + _symbolic _____yAAyAAy_____yABy_____yAAyAAyAAyAAy__________G_____G_____y_____GG_____G_AAyAAyAAy_____AEGAMGAKGAAyAAyAAy_____AMG_____GAIySbGGQPGGG_____G_____y_____yAAy_____yAAyAAyAAyAAyAAyAAyAAyAAy__________y_____GG_____GA9_G_____G_____yAO_____GGA9_GA9_GAUGSSG_____y_____GG_Qo_SgGGAIySSSgGG 7SwiftUI15ModifiedContentV AA6ZStackV AA05TupleD0V 18CoreIDVRGBLiveness13CameraPreviewV AA30_SafeAreaRegionsIgnoringLayoutV AA11_BlurEffectV AA18_AnimationModifierV 0G8Graphics7CGFloatV AA08_OpacityQ0V AA5ColorV AH12CoachingViewV AA06_FrameO0V AH18SceneSessionReader33_B2E9B1B8C27AD5F9EDBC7C83E9ADBDA5LLV AA08_OverlayS0V AA0Y0PAAE15dynamicTypeSizeyQrAA15DynamicTypeSizeOFQO AA6IDViewV AA4TextV AA022_EnvironmentKeyWritingS0V AA13TextAlignmentO AA08_PaddingO0V AA07_ShadowQ0V AA026_InsettableBackgroundShapeS0V AA16RoundedRectangleV AA013_TraitWritingS0V AA18TransitionTraitKeyV
 + _symbolic _____yAAyAAy_____yABy_____yAAyAAyAAyAAy__________G_____G_____y_____GG_____G_AAyAAyAAy_____AEGAMGAKGAAyAAyAAy_____AMG_____GAIySbGGQPGGG_____G_____y_____yAAy_____yAAyAAyAAyAAyAAyAAyAAyAAy__________y_____GG_____GA9_G_____G_____yAO_____GGA9_GA9_GAUGSSG_____y_____GG_Qo_SgGGAIySSSgGGSg 7SwiftUI15ModifiedContentV AA6ZStackV AA05TupleD0V 18CoreIDVRGBLiveness13CameraPreviewV AA30_SafeAreaRegionsIgnoringLayoutV AA11_BlurEffectV AA18_AnimationModifierV 0G8Graphics7CGFloatV AA08_OpacityQ0V AA5ColorV AH12CoachingViewV AA06_FrameO0V AH18SceneSessionReader33_B2E9B1B8C27AD5F9EDBC7C83E9ADBDA5LLV AA08_OverlayS0V AA0Y0PAAE15dynamicTypeSizeyQrAA15DynamicTypeSizeOFQO AA6IDViewV AA4TextV AA022_EnvironmentKeyWritingS0V AA13TextAlignmentO AA08_PaddingO0V AA07_ShadowQ0V AA026_InsettableBackgroundShapeS0V AA16RoundedRectangleV AA013_TraitWritingS0V AA18TransitionTraitKeyV

@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/RelativeMotion.framework/RelativeMotion`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_8 : 8 -> 20

@@ -2,101 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/GameServicesCore.framework/GameServicesCore`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x33b264` | `0x33e7a4` | **`+0x3540`** |
+| `__TEXT.__oslogstring` | `0x40e8` | `0x3fb8` | **`-0x130`** |
+| `__AUTH_CONST.__auth_got` | `0x39d0` | `0x3af0` | **`+0x120`** |
+| `__TEXT.__swift5_typeref` | `0xbc66` | `0xbd5e` | **`+0xf8`** |
+| `__AUTH_CONST.__const` | `0x10420` | `0x10340` | **`-0xe0`** |
+| `__TEXT.__swift5_fieldmd` | `0x71bc` | `0x7274` | **`+0xb8`** |
+| `__DATA.__bss` | `0x282b8` | `0x28338` | **`+0x80`** |
+| `__DATA.__data` | `0x49c0` | `0x4a30` | **`+0x70`** |
+| `__TEXT.__swift5_capture` | `0x12d8` | `0x1278` | **`-0x60`** |
+| `__TEXT.__eh_frame` | `0x311a4` | `0x311fc` | **`+0x58`** |
+| `__DATA_DIRTY.__data` | `0x4478` | `0x4440` | **`-0x38`** |
+| `__TEXT.__unwind_info` | `0x112a8` | `0x112e0` | **`+0x38`** |
+| `__TEXT.__swift5_reflstr` | `0x4f96` | `0x4fc6` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x738` | `0x710` | **`-0x28`** |
+| `__TEXT.__swift_as_cont` | `0x28b8` | `0x2890` | **`-0x28`** |
+| `__AUTH_CONST.__objc_const` | `0x5338` | `0x5318` | **`-0x20`** |
+| `__DATA_CONST.__const` | `0x288` | `0x2a8` | **`+0x20`** |
+| `__TEXT.__constg_swiftt` | `0x69f8` | `0x6a10` | **`+0x18`** |
+| `__TEXT.__swift5_acfuncs` | `0xec4` | `0xeb0` | **`-0x14`** |
+| `__AUTH.__data` | `0x38a0` | `0x38b0` | **`+0x10`** |
+| `__TEXT.__swift_as_ret` | `0x1a40` | `0x1a34` | **`-0xc`** |
+| `__TEXT.__swift5_types` | `0x750` | `0x754` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -821.0.25.0.0
--  __TEXT.__text: 0x2fd368
 +821.1.8.0.0
-+  __TEXT.__text: 0x3009f4
-   __TEXT.__objc_methlist: 0x274
-   __TEXT.__const: 0x282b0
--  __TEXT.__swift5_typeref: 0xbc66
-+  __TEXT.__swift5_typeref: 0xbd5e
-   __TEXT.__swift_as_entry: 0x1440
--  __TEXT.__swift_as_ret: 0x1a40
--  __TEXT.__swift_as_cont: 0x28b8
--  __TEXT.__swift5_reflstr: 0x4f96
-+  __TEXT.__swift_as_ret: 0x1a34
-+  __TEXT.__swift_as_cont: 0x2890
-+  __TEXT.__swift5_reflstr: 0x4fc6
-   __TEXT.__swift5_assocty: 0x1140
--  __TEXT.__constg_swiftt: 0x69f8
--  __TEXT.__swift5_fieldmd: 0x71bc
-+  __TEXT.__constg_swiftt: 0x6a10
-+  __TEXT.__swift5_fieldmd: 0x7274
-   __TEXT.__swift5_proto: 0x1758
--  __TEXT.__swift5_types: 0x750
-+  __TEXT.__swift5_types: 0x754
-   __TEXT.__cstring: 0x486f
-   __TEXT.__swift5_protos: 0x108
-   __TEXT.__swift5_builtin: 0x104
--  __TEXT.__swift5_capture: 0x12d8
-+  __TEXT.__swift5_capture: 0x1278
-   __TEXT.__swift5_mpenum: 0x30
--  __TEXT.__oslogstring: 0x40e8
--  __TEXT.__swift5_acfuncs: 0xec4
--  __TEXT.__unwind_info: 0x13528
--  __TEXT.__eh_frame: 0x3120c
-+  __TEXT.__oslogstring: 0x3fb8
-+  __TEXT.__swift5_acfuncs: 0xeb0
-+  __TEXT.__unwind_info: 0x135c8
-+  __TEXT.__eh_frame: 0x3126c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x288
-+  __DATA_CONST.__const: 0x2a8
-   __DATA_CONST.__objc_classlist: 0x260
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x738
-+  __DATA_CONST.__objc_selrefs: 0x710
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x10420
--  __AUTH_CONST.__objc_const: 0x5338
--  __AUTH_CONST.__auth_got: 0x39d0
-+  __AUTH_CONST.__const: 0x10340
-+  __AUTH_CONST.__objc_const: 0x5318
-+  __AUTH_CONST.__auth_got: 0x3af0
-   __AUTH.__objc_data: 0x758
--  __AUTH.__data: 0x38a0
--  __DATA.__data: 0x49c0
-+  __AUTH.__data: 0x38b0
-+  __DATA.__data: 0x4a30
-   __DATA.__common: 0xd8
-   __DATA_DIRTY.__objc_data: 0x618
--  __DATA_DIRTY.__data: 0x4478
-+  __DATA_DIRTY.__data: 0x4440
-   __DATA_DIRTY.__common: 0x168
-   __DATA_DIRTY.__bss: 0x6580
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 
-   - /System/Library/PrivateFrameworks/IntelligencePlatformLibrary.framework/IntelligencePlatformLibrary
-   - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
-   - /System/Library/PrivateFrameworks/OpenAPIRuntimeInternal.framework/OpenAPIRuntimeInternal
 -  - /System/Library/PrivateFrameworks/ScreenTimeCore.framework/ScreenTimeCore
 +  - /System/Library/PrivateFrameworks/ScreenTimeSettingsServices.framework/ScreenTimeSettingsServices
-   - /System/Library/PrivateFrameworks/iCalendar.framework/iCalendar
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 22045
--  Symbols:   4693
+-  Functions: 22046
+-  Symbols:   4500
 -  CStrings:  827
-+  Functions: 22065
-+  Symbols:   4698
++  Functions: 22066
++  Symbols:   4510
 +  CStrings:  821
- 
 Symbols:
 + ___swift_closure_destructor.208Tm
 + _flat unique 16GameServicesCore9ListensTo_px15ObservedRequestAaBPRts_XP
@@ -128,11 +80,6 @@ Symbols:
 - _OBJC_CLASS_$_NSXPCConnection
 - _OBJC_CLASS_$_STExceptionApp
 - ___swift_closure_destructor.210Tm
-- _objc_msgSend$activate
-- _objc_msgSend$asynchronousExceptionServiceWithErrorHandler:
-- _objc_msgSend$exceptionConnection
-- _objc_msgSend$fetchAllAppExceptionsForRequesterDSID:completionHandler:
-- _objc_msgSend$ratingValue
 - _symbolic B1
 - _symbolic SDy_____SDyAA_____GG 16GameServicesCore15StoreIdentifierO AA11AnyListener33_C5A6F7E04C4B8D0027F89A401EAB0CC0LLV
 - _symbolic SDy__________G 16GameServicesCore15StoreIdentifierO AA11AnyListener33_C5A6F7E04C4B8D0027F89A401EAB0CC0LLV

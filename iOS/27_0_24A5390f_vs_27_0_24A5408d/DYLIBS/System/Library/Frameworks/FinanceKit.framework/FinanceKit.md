@@ -2,132 +2,66 @@
 
 > `/System/Library/Frameworks/FinanceKit.framework/FinanceKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7d3940` | `0x7e7324` | **`+0x139e4`** |
+| `__DATA.__bss` | `0xdc460` | `0xdd0d0` | **`+0xc70`** |
+| `__TEXT.__const` | `0x8af48` | `0x8bad8` | **`+0xb90`** |
+| `__TEXT.__eh_frame` | `0x383a8` | `0x38efc` | **`+0xb54`** |
+| `__AUTH_CONST.__const` | `0x46e50` | `0x47520` | **`+0x6d0`** |
+| `__TEXT.__unwind_info` | `0x23928` | `0x23d70` | **`+0x448`** |
+| `__TEXT.__swift5_typeref` | `0x1b6e2` | `0x1bada` | **`+0x3f8`** |
+| `__TEXT.__constg_swiftt` | `0x18924` | `0x18bbc` | **`+0x298`** |
+| `__DATA.__data` | `0x13d20` | `0x13fa0` | **`+0x280`** |
+| `__TEXT.__oslogstring` | `0x8dc9` | `0x9049` | **`+0x280`** |
+| `__TEXT.__swift5_fieldmd` | `0x1ee70` | `0x1f0b8` | **`+0x248`** |
+| `__AUTH.__data` | `0x8948` | `0x8b48` | **`+0x200`** |
+| `__AUTH.__objc_data` | `0x3308` | `0x34c0` | **`+0x1b8`** |
+| `__TEXT.__swift5_reflstr` | `0x12bc7` | `0x12d67` | **`+0x1a0`** |
+| `__AUTH_CONST.__objc_const` | `0x174d0` | `0x175d0` | **`+0x100`** |
+| `__AUTH_CONST.__auth_got` | `0x2bf8` | `0x2cc0` | **`+0xc8`** |
+| `__DATA_CONST.__const` | `0x6238` | `0x62d8` | **`+0xa0`** |
+| `__TEXT.__swift5_assocty` | `0x3498` | `0x3528` | **`+0x90`** |
+| `__TEXT.__swift5_proto` | `0x7a9c` | `0x7b14` | **`+0x78`** |
+| `__TEXT.__swift5_capture` | `0x299c` | `0x2a08` | **`+0x6c`** |
+| `__TEXT.__swift_as_cont` | `0x1ee4` | `0x1f4c` | **`+0x68`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5338` | `0x5398` | **`+0x60`** |
+| `__DATA_DIRTY.__objc_data` | `0x7138` | `0x70d8` | **`-0x60`** |
+| `__DATA_CONST.__got` | `0x15e8` | `0x1640` | **`+0x58`** |
+| `__TEXT.__cstring` | `0x1666e` | `0x1661e` | **`-0x50`** |
+| `__DATA_DIRTY.__data` | `0xe6e0` | `0xe720` | **`+0x40`** |
+| `__TEXT.__swift5_types` | `0x2594` | `0x25d0` | **`+0x3c`** |
+| `__TEXT.__swift_as_ret` | `0xc60` | `0xc94` | **`+0x34`** |
+| `__TEXT.__swift_as_entry` | `0xbf8` | `0xc28` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x4b64` | `0x4b8c` | **`+0x28`** |
+| `__TEXT.__swift5_builtin` | `0x5c8` | `0x5dc` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0xb60` | `0xb70` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `0x234` | `0x240` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
 -366.1.0.0.0
--  __TEXT.__text: 0x7d3940
--  __TEXT.__objc_methlist: 0x4b64
--  __TEXT.__const: 0x8af48
--  __TEXT.__cstring: 0x1666e
--  __TEXT.__oslogstring: 0x8dc9
 +376.0.1.0.0
-+  __TEXT.__text: 0x7e7324
-+  __TEXT.__objc_methlist: 0x4b8c
-+  __TEXT.__const: 0x8bad8
-+  __TEXT.__cstring: 0x1661e
-+  __TEXT.__oslogstring: 0x9049
-   __TEXT.__gcc_except_tab: 0x14
--  __TEXT.__swift5_typeref: 0x1b6e2
--  __TEXT.__constg_swiftt: 0x18924
--  __TEXT.__swift5_reflstr: 0x12bc7
--  __TEXT.__swift5_fieldmd: 0x1ee70
--  __TEXT.__swift5_builtin: 0x5c8
--  __TEXT.__swift5_assocty: 0x3498
--  __TEXT.__swift5_capture: 0x299c
--  __TEXT.__swift5_proto: 0x7a9c
--  __TEXT.__swift5_types: 0x2594
--  __TEXT.__swift_as_entry: 0xbf8
--  __TEXT.__swift_as_cont: 0x1ee4
--  __TEXT.__swift_as_ret: 0xc60
--  __TEXT.__swift5_protos: 0x234
-+  __TEXT.__swift5_typeref: 0x1bada
-+  __TEXT.__constg_swiftt: 0x18bbc
-+  __TEXT.__swift5_reflstr: 0x12d67
-+  __TEXT.__swift5_fieldmd: 0x1f0b8
-+  __TEXT.__swift5_builtin: 0x5dc
-+  __TEXT.__swift5_assocty: 0x3528
-+  __TEXT.__swift5_capture: 0x2a08
-+  __TEXT.__swift5_proto: 0x7b14
-+  __TEXT.__swift5_types: 0x25d0
-+  __TEXT.__swift_as_entry: 0xc28
-+  __TEXT.__swift_as_cont: 0x1f4c
-+  __TEXT.__swift_as_ret: 0xc94
-+  __TEXT.__swift5_protos: 0x240
-   __TEXT.__swift5_mpenum: 0x22c
--  __TEXT.__unwind_info: 0x23928
--  __TEXT.__eh_frame: 0x383a8
-+  __TEXT.__unwind_info: 0x23d70
-+  __TEXT.__eh_frame: 0x38efc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x6238
--  __DATA_CONST.__objc_classlist: 0xb60
-+  __DATA_CONST.__const: 0x62d8
-+  __DATA_CONST.__objc_classlist: 0xb70
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x130
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5338
-+  __DATA_CONST.__objc_selrefs: 0x5398
-   __DATA_CONST.__objc_protorefs: 0xb8
-   __DATA_CONST.__objc_superrefs: 0x1e0
--  __DATA_CONST.__got: 0x15e8
--  __AUTH_CONST.__const: 0x46e50
-+  __DATA_CONST.__got: 0x1640
-+  __AUTH_CONST.__const: 0x47520
-   __AUTH_CONST.__cfstring: 0x500
--  __AUTH_CONST.__objc_const: 0x174d0
-+  __AUTH_CONST.__objc_const: 0x175d0
-   __AUTH_CONST.__objc_intobj: 0x60
--  __AUTH_CONST.__auth_got: 0x2bf8
--  __AUTH.__objc_data: 0x3308
--  __AUTH.__data: 0x8948
-+  __AUTH_CONST.__auth_got: 0x2cc0
-+  __AUTH.__objc_data: 0x34c0
-+  __AUTH.__data: 0x8b48
-   __DATA.__objc_ivar: 0x51c
--  __DATA.__data: 0x13d20
--  __DATA.__bss: 0xdc460
-+  __DATA.__data: 0x13fa0
-+  __DATA.__bss: 0xdd0d0
-   __DATA.__common: 0x110
--  __DATA_DIRTY.__objc_data: 0x7138
--  __DATA_DIRTY.__data: 0xe6e0
-+  __DATA_DIRTY.__objc_data: 0x70d8
-+  __DATA_DIRTY.__data: 0xe720
-   __DATA_DIRTY.__bss: 0x11690
-   __DATA_DIRTY.__common: 0x180
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 
-   - /System/Library/Frameworks/DeviceCheck.framework/DeviceCheck
-   - /System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 -  - /System/Library/Frameworks/FoundationModels.framework/FoundationModels
-   - /System/Library/Frameworks/ImageIO.framework/ImageIO
-   - /System/Library/Frameworks/Security.framework/Security
-   - /System/Library/Frameworks/UserNotifications.framework/UserNotifications
 
-   - /System/Library/PrivateFrameworks/DeviceIdentity.framework/DeviceIdentity
-   - /System/Library/PrivateFrameworks/EmailCore.framework/EmailCore
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
 +  - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
-   - /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
-   - /System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog
-   - /System/Library/PrivateFrameworks/NearField.framework/NearField
+
 +  - /System/Library/PrivateFrameworks/OSEligibility.framework/OSEligibility
-   - /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices
-   - /System/Library/PrivateFrameworks/StoreServices.framework/StoreServices
-   - /System/Library/PrivateFrameworks/SymptomDiagnosticReporter.framework/SymptomDiagnosticReporter
-   - /System/Library/PrivateFrameworks/TCC.framework/TCC
+
 +  - /System/Library/PrivateFrameworks/TokenGeneration.framework/TokenGeneration
 +  - /System/Library/PrivateFrameworks/TokenGenerationCore.framework/TokenGenerationCore
-   - /System/Library/PrivateFrameworks/Trial.framework/Trial
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 50996
--  Symbols:   17714
+-  Symbols:   15264
 -  CStrings:  2994
 +  Functions: 51313
-+  Symbols:   17804
++  Symbols:   15343
 +  CStrings:  3012
- 
 Symbols:
 + _DCErrorDomain
 + _OBJC_CLASS_$_CNPhoneNumber
@@ -175,22 +109,6 @@ Symbols:
 + _keypath_get_selector_exchangeToken
 + _keypath_get_selector_fusionCluster
 + _keypath_get_selector_retryCount
-+ _objc_msgSend$associatedPhoneNumbersValue
-+ _objc_msgSend$documentPhoneNumbersValue
-+ _objc_msgSend$emailMetadataMessageIDHash
-+ _objc_msgSend$exchangeToken
-+ _objc_msgSend$fusionCluster
-+ _objc_msgSend$initWithStringValue:
-+ _objc_msgSend$refreshAllObjects
-+ _objc_msgSend$retryCount
-+ _objc_msgSend$setAssociatedPhoneNumbersValue:
-+ _objc_msgSend$setDocumentPhoneNumbersValue:
-+ _objc_msgSend$setEmailMetadataMessageIDHash:
-+ _objc_msgSend$setExchangeToken:
-+ _objc_msgSend$setFetchBatchSize:
-+ _objc_msgSend$setFusionCluster:
-+ _objc_msgSend$setRetryCount:
-+ _objc_msgSend$unformattedInternationalStringValue
 + _symbolic $s10FinanceKit25SiriExcludedAppsProvidingP
 + _symbolic $s10FinanceKit26AccountAnnotationProvidingP
 + _symbolic $s10FinanceKit38FoundInPhotoModelAvailabilityProvidingP
@@ -261,11 +179,6 @@ Symbols:
 - _associated conformance 10FinanceKit22ManagedBiomeOrderEmailC14ShippingStatusOSHAASQ
 - _keypath_get_selector_emailMetadataReplyToDisplayName
 - _keypath_get_selector_emailMetadataReplyToEmailAddress
-- _objc_msgSend$emailMetadataReplyToDisplayName
-- _objc_msgSend$emailMetadataReplyToEmailAddress
-- _objc_msgSend$mutableCopy
-- _objc_msgSend$setEmailMetadataReplyToDisplayName:
-- _objc_msgSend$setEmailMetadataReplyToEmailAddress:
 - _os_eligibility_get_domain_answer
 - _symbolic _____ 10FinanceKit22ManagedBiomeOrderEmailC
 - _symbolic _____ 10FinanceKit22ManagedBiomeOrderEmailC0E11ContentTypeO

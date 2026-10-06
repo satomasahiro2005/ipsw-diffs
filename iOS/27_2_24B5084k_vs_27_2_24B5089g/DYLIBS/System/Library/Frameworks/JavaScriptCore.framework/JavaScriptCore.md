@@ -2,64 +2,36 @@
 
 > `/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2368d54` | `0x2363c24` | **`-0x5130`** |
+| `__TEXT.__cstring` | `0x1275d8` | `0x127838` | **`+0x260`** |
+| `__DATA_DIRTY.__data` | `0x13ed8` | `0x13ff0` | **`+0x118`** |
+| `__DATA.__data` | `0x10570` | `0x104b0` | **`-0xc0`** |
+| `__AUTH.__data` | `0x288` | `0x238` | **`-0x50`** |
+| `__AUTH.__objc_data` | `0xf0` | `0xa0` | **`-0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x280` | `0x2d0` | **`+0x50`** |
+| `__TEXT.__const` | `0xa0fe4` | `0xa1014` | **`+0x30`** |
+| `__DATA.__common` | `0x2d60` | `0x2d40` | **`-0x20`** |
+| `__DATA_DIRTY.__common` | `0x485150` | `0x485170` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x2918` | `0x2930` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x201f8` | `0x201e0` | **`-0x18`** |
+
+### Other Changes
+
 ```diff
 
 -625.2.4.1.0
--  __TEXT.__text: 0x22ecc94
 +625.2.5.10.1
-+  __TEXT.__text: 0x22e7bd4
-   __TEXT.__jsc_int: 0x6a5b8
-   __TEXT.__objc_methlist: 0xb9c
--  __TEXT.__const: 0xa0fe4
-+  __TEXT.__const: 0xa1014
-   __TEXT.__dlsym_cstr: 0x34
--  __TEXT.__cstring: 0x1275d8
-+  __TEXT.__cstring: 0x127838
-   __TEXT.__oslogstring: 0xa0f
--  __TEXT.__gcc_except_tab: 0x2918
-+  __TEXT.__gcc_except_tab: 0x2930
-   __TEXT.__ustring: 0x10
--  __TEXT.__unwind_info: 0x208a8
-+  __TEXT.__unwind_info: 0x20888
-   __TEXT.__eh_frame: 0x50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __AUTH_CONST.__objc_const: 0xdf8
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__auth_got: 0x1810
--  __AUTH.__objc_data: 0xf0
--  __AUTH.__data: 0x288
-+  __AUTH.__objc_data: 0xa0
-+  __AUTH.__data: 0x238
-   __DATA.__objc_ivar: 0x80
-   __DATA.__crash_info: 0x148
--  __DATA.__data: 0x10570
--  __DATA.__common: 0x2d60
-+  __DATA.__data: 0x104b0
-+  __DATA.__common: 0x2d40
-   __DATA_DIRTY.__objc_ivar: 0x8
--  __DATA_DIRTY.__objc_data: 0x280
--  __DATA_DIRTY.__data: 0x13ed8
-+  __DATA_DIRTY.__objc_data: 0x2d0
-+  __DATA_DIRTY.__data: 0x13ff0
-   __DATA_DIRTY.__wtf_config: 0x4000
--  __DATA_DIRTY.__common: 0x485150
-+  __DATA_DIRTY.__common: 0x485170
-   __DATA_DIRTY.__bss: 0xf650
-   - /System/Library/Frameworks/BrowserEngineCore.framework/BrowserEngineCore
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 40106
--  Symbols:   48367
+-  Symbols:   48157
 -  CStrings:  25828
 +  Functions: 40097
-+  Symbols:   48373
++  Symbols:   48163
 +  CStrings:  25836
- 
 Symbols:
 + __ZN3JSC10AccessCase13createReplaceERNS_2VMEPNS_6JSCellENS_19CacheableIdentifierEiPNS_9StructureEb
 + __ZN3JSC10JSFunction41reifyLazyPropertyForHostOrBuiltinIfNeededERNS_2VMEPNS_14JSGlobalObjectENS_12PropertyNameE

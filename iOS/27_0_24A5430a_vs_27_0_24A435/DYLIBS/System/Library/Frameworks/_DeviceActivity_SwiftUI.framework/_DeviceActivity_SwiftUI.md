@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/_DeviceActivity_SwiftUI.framework/_DeviceActivity_SwiftUI`
 
-```diff
+### Section Size Changes
 
- 407.0.0.0.0
--  __TEXT.__text: 0x1bc18
-+  __TEXT.__text: 0x1bc1c
-   __TEXT.__objc_methlist: 0x1d4
-   __TEXT.__const: 0xf58
-   __TEXT.__swift5_typeref: 0xa74
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1bc18` | `0x1bc1c` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_24d657904 -> sub_24e05b904 : 3264 -> 3268
+~ sub_24d504904 -> sub_24df0f904 : 3264 -> 3268
 ```

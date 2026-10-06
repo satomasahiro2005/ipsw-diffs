@@ -2,15 +2,18 @@
 
 > `/System/Library/Frameworks/CoreTelephony.framework/Support/libCommCenterBase.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd293c` | `0xd2960` | **`+0x24`** |
+
+### Other Changes
+
 ```diff
 
 -13487.6.0.0.0
--  __TEXT.__text: 0xd293c
 +13487.7.0.0.0
-+  __TEXT.__text: 0xd2960
-   __TEXT.__init_offsets: 0x20
-   __TEXT.__objc_methlist: 0x110
-   __TEXT.__const: 0xd360
 Functions:
 ~ __ZNSt3__16vectorIjNS_9allocatorIjEEE24__emplace_back_slow_pathIJRKjEEEPjDpOT_ : 184 -> 176
 ~ __ZNSt3__16vectorIPKN14ServiceManager7ServiceENS_9allocatorIS4_EEE24__emplace_back_slow_pathIJS4_EEEPS4_DpOT_ : 184 -> 176

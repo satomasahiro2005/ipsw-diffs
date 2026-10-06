@@ -2,51 +2,28 @@
 
 > `/System/Library/PrivateFrameworks/IntentsFoundation.framework/IntentsFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x93fc` | `0x97bc` | **`+0x3c0`** |
+| `__AUTH_CONST.__objc_const` | `0x11c8` | `0x13c8` | **`+0x200`** |
+| `__TEXT.__objc_methlist` | `0xbd4` | `0xd44` | **`+0x170`** |
+| `__DATA_CONST.__objc_catlist` | `0xa8` | `0xe8` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x960` | `0x970` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x348` | `0x350` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -4016.0.51.1.102
--  __TEXT.__text: 0x8dfc
--  __TEXT.__objc_methlist: 0xbd4
 +4016.1.8.0.0
-+  __TEXT.__text: 0x909c
-+  __TEXT.__objc_methlist: 0xd44
-   __TEXT.__const: 0x80
-   __TEXT.__gcc_except_tab: 0xf8
-   __TEXT.__cstring: 0x415
--  __TEXT.__unwind_info: 0x448
-+  __TEXT.__unwind_info: 0x4a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x3f0
-   __DATA_CONST.__objc_classlist: 0x50
--  __DATA_CONST.__objc_catlist: 0xa8
-+  __DATA_CONST.__objc_catlist: 0xe8
-   __DATA_CONST.__objc_protolist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x960
-+  __DATA_CONST.__objc_selrefs: 0x970
-   __DATA_CONST.__objc_superrefs: 0x30
-   __DATA_CONST.__got: 0x170
-   __AUTH_CONST.__const: 0x60
-   __AUTH_CONST.__cfstring: 0x480
--  __AUTH_CONST.__objc_const: 0x11c8
-+  __AUTH_CONST.__objc_const: 0x13c8
-   __AUTH_CONST.__objc_intobj: 0x18
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__objc_ivar: 0x74
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 262
--  Symbols:   814
+-  Symbols:   619
 +  Functions: 286
-+  Symbols:   862
-   CStrings:  56
- 
++  Symbols:   667
 Symbols:
 + -[NSArray(IFTypedCopy) if_typedCopy]
 + -[NSArray(IFTypedCopy) if_typedMutableCopy]

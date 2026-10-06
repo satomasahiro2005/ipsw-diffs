@@ -2,25 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/SiriAutoComplete.framework/SiriAutoComplete`
 
-```diff
+### Section Size Changes
 
- 3605.6.1.0.0
--  __TEXT.__text: 0x50c24
-+  __TEXT.__text: 0x50c44
-   __TEXT.__const: 0x2b20
-   __TEXT.__constg_swiftt: 0xec8
-   __TEXT.__swift5_typeref: 0xce2
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__eh_frame` | `0x2e88` | `0x2eb0` | **`+0x28`** |
+| `__TEXT.__text` | `0x5515c` | `0x5517c` | **`+0x20`** |
 
-   __TEXT.__swift5_assocty: 0x18
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x1780
--  __TEXT.__eh_frame: 0x2e88
-+  __TEXT.__unwind_info: 0x1788
-+  __TEXT.__eh_frame: 0x2eb0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+### Other Changes
+
+```text
 Functions:
-~ sub_2a754eddc -> sub_2a721bddc : 36 -> 68
+~ sub_2ac841464 -> sub_2ac571464 : 36 -> 68
 ```

@@ -2,87 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/NewsUI2.framework/XPCServices/NewsScoringService.xpc/NewsScoringService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8408` | `0x877c` | **`+0x374`** |
+| `__DATA.__bss` | `0x480` | `0x600` | **`+0x180`** |
+| `__TEXT.__const` | `0x382` | `0x422` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x589` | `0x619` | **`+0x90`** |
+| `__DATA.__objc_const` | `0xec0` | `0xf08` | **`+0x48`** |
+| `__TEXT.__auth_stubs` | `0xd20` | `0xd50` | **`+0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0x140` | `0x168` | **`+0x28`** |
+| `__DATA.__data` | `0x860` | `0x880` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x7b4` | `0x7d4` | **`+0x20`** |
+| `__TEXT.__constg_swiftt` | `0x1f4` | `0x210` | **`+0x1c`** |
+| `__DATA_CONST.__auth_got` | `0x698` | `0x6b0` | **`+0x18`** |
+| `__TEXT.__swift5_typeref` | `0x1ff` | `0x215` | **`+0x16`** |
+| `__TEXT.__objc_methname` | `0x16d9` | `0x16c9` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x298` | `0x2a8` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x24` | `0x30` | **`+0xc`** |
+| `__TEXT.__objc_methtype` | `0xb7f` | `0xb76` | **`-0x9`** |
+| `__DATA.__objc_data` | `0x2a0` | `0x2a8` | **`+0x8`** |
+| `__DATA.__objc_selrefs` | `0x488` | `0x490` | **`+0x8`** |
+| `__DATA_CONST.__auth_ptr` | `0x110` | `0x118` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x270` | `0x278` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x24` | `0x28` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_reflstr`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x8408
--  __TEXT.__auth_stubs: 0xd20
-+  __TEXT.__text: 0x877c
-+  __TEXT.__auth_stubs: 0xd50
-   __TEXT.__objc_stubs: 0x260
--  __TEXT.__objc_methlist: 0x7b4
--  __TEXT.__const: 0x382
--  __TEXT.__objc_methname: 0x16d9
-+  __TEXT.__objc_methlist: 0x7d4
-+  __TEXT.__const: 0x422
-+  __TEXT.__objc_methname: 0x16c9
-   __TEXT.__oslogstring: 0x172
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__constg_swiftt: 0x1f4
--  __TEXT.__swift5_typeref: 0x1ff
-+  __TEXT.__constg_swiftt: 0x210
-+  __TEXT.__swift5_typeref: 0x215
-   __TEXT.__swift5_builtin: 0x14
--  __TEXT.__swift5_types: 0x24
-+  __TEXT.__swift5_types: 0x28
-   __TEXT.__objc_classname: 0x2df
--  __TEXT.__objc_methtype: 0xb7f
-+  __TEXT.__objc_methtype: 0xb76
-   __TEXT.__swift5_reflstr: 0x137
--  __TEXT.__swift5_fieldmd: 0x140
-+  __TEXT.__swift5_fieldmd: 0x168
-   __TEXT.__cstring: 0x524
-   __TEXT.__swift5_capture: 0x160
--  __TEXT.__swift5_proto: 0x24
--  __TEXT.__unwind_info: 0x298
-+  __TEXT.__swift5_proto: 0x30
-+  __TEXT.__unwind_info: 0x2a8
-   __TEXT.__eh_frame: 0xd8
--  __DATA_CONST.__const: 0x589
-+  __DATA_CONST.__const: 0x619
-   __DATA_CONST.__objc_classlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x98
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x50
--  __DATA_CONST.__auth_got: 0x698
--  __DATA_CONST.__got: 0x270
--  __DATA_CONST.__auth_ptr: 0x110
--  __DATA.__objc_const: 0xec0
--  __DATA.__objc_selrefs: 0x488
--  __DATA.__objc_data: 0x2a0
--  __DATA.__data: 0x860
-+  __DATA_CONST.__auth_got: 0x6b0
-+  __DATA_CONST.__got: 0x278
-+  __DATA_CONST.__auth_ptr: 0x118
-+  __DATA.__objc_const: 0xf08
-+  __DATA.__objc_selrefs: 0x490
-+  __DATA.__objc_data: 0x2a8
-+  __DATA.__data: 0x880
-   __DATA.__common: 0x18
--  __DATA.__bss: 0x480
-+  __DATA.__bss: 0x600
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreML.framework/CoreML
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+-5920.0.0.0.0
++5923.0.0.0.0
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 209
 -  Symbols:   138
 -  CStrings:  325
 +  Functions: 214
 +  Symbols:   140
 +  CStrings:  330
- 
-Sections:
-~ __TEXT.__swift5_entry : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_reflstr : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
 Symbols:
 + _objc_autorelease
 + _swift_willThrow
@@ -96,5 +65,4 @@ CStrings:
 + "zipForExportWithFilename:error:"
 - "readBaseDirectoryWithAccessor:"
 - "v24@0:8@?<v@?@\"NSURL\">16"
-
 ```

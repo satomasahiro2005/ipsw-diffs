@@ -2,47 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/StorageUI.framework/StorageUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x13414` | `0x134a4` | **`+0x90`** |
+| `__TEXT.__swift5_typeref` | `0xe66` | `0xebe` | **`+0x58`** |
+| `__TEXT.__swift5_fieldmd` | `0x544` | `0x52c` | **`-0x18`** |
+| `__AUTH.__data` | `0x408` | `0x3f8` | **`-0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x3cf` | `0x3df` | **`+0x10`** |
+| `__DATA.__data` | `0x4d8` | `0x4d0` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x5e0` | `0x5d8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -177.0.0.0.0
--  __TEXT.__text: 0x12c6c
 +177.1.1.0.0
-+  __TEXT.__text: 0x12cc8
-   __TEXT.__objc_methlist: 0x58
-   __TEXT.__const: 0x11a0
-   __TEXT.__cstring: 0x7d7
-   __TEXT.__constg_swiftt: 0x468
--  __TEXT.__swift5_typeref: 0xe66
-+  __TEXT.__swift5_typeref: 0xebe
-   __TEXT.__swift5_builtin: 0x28
--  __TEXT.__swift5_reflstr: 0x3cf
--  __TEXT.__swift5_fieldmd: 0x544
-+  __TEXT.__swift5_reflstr: 0x3df
-+  __TEXT.__swift5_fieldmd: 0x52c
-   __TEXT.__swift5_assocty: 0x180
-   __TEXT.__swift5_proto: 0x90
-   __TEXT.__swift5_types: 0x4c
 
-   __AUTH_CONST.__objc_const: 0x268
-   __AUTH_CONST.__auth_got: 0x908
-   __AUTH.__objc_data: 0xf0
--  __AUTH.__data: 0x408
--  __DATA.__data: 0x4d8
-+  __AUTH.__data: 0x3f8
-+  __DATA.__data: 0x4d0
-   __DATA.__common: 0x68
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 511
--  Symbols:   480
+-  Symbols:   445
 +  Functions: 510
-+  Symbols:   478
-   CStrings:  76
- 
++  Symbols:   443
 Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyAA4ViewPAAE7popover11isPresented16attachmentAnchor9arrowEdge7contentQrAA7BindingVySbG_AA017PopoverAttachmentJ0OAA0L0OSgqd__yctAaDRd__lFQOyACyAA6ZStackVyAA05TupleD0VyACyAeAE12onTapGesture5count7performQrSi_yyctFQOy07StorageB00X22GaugeElementBackgroundV_Qo_AA24_BackgroundStyleModifierVyAA5ColorVGG_AA0E8ThatFitsVyAVyACyACyAA4TextVAA14_PaddingLayoutVGAA16_FixedSizeLayoutVG_AA6SpacerVQPGGSgQPGGAA20_HoverRegionModifierVG_AZ0xy4ItemoE0VQo_AA013AccessibilityP8ModifierVGAA12_FrameLayoutVGAaDHPA33_AaDHPqd0__AaDHD3_A30_HO_A32_AA0E8ModifierHPyHCHC_A35_AAA37_HPyHCHC
 + _swift_release_x26

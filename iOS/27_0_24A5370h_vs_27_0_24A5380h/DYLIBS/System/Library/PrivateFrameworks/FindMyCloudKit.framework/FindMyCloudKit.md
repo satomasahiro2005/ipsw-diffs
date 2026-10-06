@@ -2,39 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/FindMyCloudKit.framework/FindMyCloudKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6fac0` | `0x6fab0` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x1f70` | `0x1f78` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x6fac0
-+  __TEXT.__text: 0x6fab0
-   __TEXT.__objc_methlist: 0x14
-   __TEXT.__const: 0x1d00
-   __TEXT.__constg_swiftt: 0x7bc
-
-   __TEXT.__swift_as_cont: 0x7fc
-   __TEXT.__swift5_capture: 0x2ec
-   __TEXT.__swift5_mpenum: 0x14
--  __TEXT.__unwind_info: 0x1f70
-+  __TEXT.__unwind_info: 0x1f78
-   __TEXT.__eh_frame: 0x6af8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
-
+-105.30.5.27.1
++106.30.6.14.3
 ```

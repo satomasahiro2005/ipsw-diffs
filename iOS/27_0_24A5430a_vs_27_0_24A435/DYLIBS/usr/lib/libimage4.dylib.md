@@ -2,18 +2,19 @@
 
 > `/usr/lib/libimage4.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2bc38` | `0x2bc28` | **`-0x10`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
 
-```diff
+### Other Changes
 
- 374.0.0.0.0
--  __TEXT.__text: 0x2bc38
-+  __TEXT.__text: 0x2bc28
-   __TEXT.__const: 0x1f4d0
-   __TEXT.__cstring: 0x697c
-   __TEXT.__oslogstring: 0x7e
+```diff
 Functions:
 ~ _parse_chain : 584 -> 576
 ~ _parse_ec_chain : 588 -> 580

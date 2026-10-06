@@ -2,53 +2,40 @@
 
 > `/System/Library/HIDPlugins/ServicePlugins/PSVR2HIDServicePlugin.plugin/PSVR2HIDServicePlugin`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4884` | `0x4954` | **`+0xd0`** |
+| `__TEXT.__oslogstring` | `0x936` | `0x963` | **`+0x2d`** |
+| `__TEXT.__auth_stubs` | `0x6f0` | `0x700` | **`+0x10`** |
+| `__TEXT.__const` | `0x50` | `0x60` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x388` | `0x390` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x4884
--  __TEXT.__auth_stubs: 0x6f0
-+  __TEXT.__text: 0x4954
-+  __TEXT.__auth_stubs: 0x700
-   __TEXT.__objc_stubs: 0x580
-   __TEXT.__objc_methlist: 0x460
--  __TEXT.__const: 0x50
-+  __TEXT.__const: 0x60
-   __TEXT.__gcc_except_tab: 0x88
-+  __TEXT.__oslogstring: 0x963
-   __TEXT.__cstring: 0x167
-   __TEXT.__objc_methname: 0xa03
--  __TEXT.__oslogstring: 0x936
-   __TEXT.__objc_classname: 0xaa
-   __TEXT.__objc_methtype: 0x8ff
-   __TEXT.__unwind_info: 0x160
+-14.0.17.0.0
++14.0.19.0.0
 
-   __DATA_CONST.__objc_intobj: 0x30
-   __DATA_CONST.__objc_arraydata: 0x20
-   __DATA_CONST.__objc_dictobj: 0x28
--  __DATA_CONST.__auth_got: 0x388
-+  __DATA_CONST.__auth_got: 0x390
-   __DATA_CONST.__got: 0x88
-   __DATA.__objc_const: 0x698
-   __DATA.__objc_selrefs: 0x2f0
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 83
 -  Symbols:   140
--  CStrings:  296
+-  CStrings:  283
 +  Symbols:   141
-+  CStrings:  297
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
++  CStrings:  284
 Symbols:
 + _IOObjectCopyClass
 Functions:
@@ -63,5 +50,4 @@ Functions:
 ~ sub_528c -> sub_533c : 20 -> 52
 CStrings:
 + "%{public}@ probe <%{public}@ %#010llx> (%zi)"
-
 ```

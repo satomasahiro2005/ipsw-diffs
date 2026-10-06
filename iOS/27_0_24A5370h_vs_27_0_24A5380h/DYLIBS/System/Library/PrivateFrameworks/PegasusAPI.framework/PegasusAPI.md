@@ -2,86 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/PegasusAPI.framework/PegasusAPI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__data` | `0x47388` | `0x5c248` | **`+0x14ec0`** |
+| `__TEXT.__text` | `0xbfcb8c` | `0xc0deb4` | **`+0x11328`** |
+| `__AUTH.__data` | `0x1d3e0` | `0xc570` | **`-0x10e70`** |
+| `__DATA.__data` | `0x2a500` | `0x27080` | **`-0x3480`** |
+| `__DATA_DIRTY.__bss` | `0x13280` | `0x14880` | **`+0x1600`** |
+| `__TEXT.__const` | `0x10e6c8` | `0x10fbb8` | **`+0x14f0`** |
+| `__DATA_DIRTY.__objc_data` | `0x1fe0` | `0x33e0` | **`+0x1400`** |
+| `__AUTH.__objc_data` | `0x1400` | `0x50` | **`-0x13b0`** |
+| `__TEXT.__eh_frame` | `0x72a88` | `0x73610` | **`+0xb88`** |
+| `__TEXT.__unwind_info` | `0x55008` | `0x558b0` | **`+0x8a8`** |
+| `__DATA.__bss` | `0x152180` | `0x152780` | **`+0x600`** |
+| `__TEXT.__swift5_fieldmd` | `0x349e4` | `0x34db0` | **`+0x3cc`** |
+| `__TEXT.__constg_swiftt` | `0x2c8b0` | `0x2cc40` | **`+0x390`** |
+| `__AUTH_CONST.__objc_const` | `0x21ed8` | `0x22148` | **`+0x270`** |
+| `__AUTH_CONST.__const` | `0x23388` | `0x235d8` | **`+0x250`** |
+| `__TEXT.__swift5_reflstr` | `0x320b5` | `0x322b5` | **`+0x200`** |
+| `__TEXT.__swift5_typeref` | `0x19041` | `0x1922d` | **`+0x1ec`** |
+| `__DATA_CONST.__const` | `0x14000` | `0x141a0` | **`+0x1a0`** |
+| `__TEXT.__cstring` | `0x10050` | `0x101f0` | **`+0x1a0`** |
+| `__TEXT.__swift5_proto` | `0xb2b8` | `0xb398` | **`+0xe0`** |
+| `__TEXT.__swift5_assocty` | `0x51c0` | `0x5220` | **`+0x60`** |
+| `__TEXT.__swift5_types` | `0x2228` | `0x2258` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x838` | `0x830` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x5f0` | `0x5f8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xbfcb8c
--  __TEXT.__const: 0x10e6c8
--  __TEXT.__constg_swiftt: 0x2c8b0
--  __TEXT.__swift5_typeref: 0x19041
--  __TEXT.__swift5_fieldmd: 0x349e4
--  __TEXT.__swift5_types: 0x2228
--  __TEXT.__swift5_reflstr: 0x320b5
--  __TEXT.__swift5_proto: 0xb2b8
--  __TEXT.__swift5_assocty: 0x51c0
--  __TEXT.__cstring: 0x10050
-+  __TEXT.__text: 0xc0deb4
-+  __TEXT.__const: 0x10fbb8
-+  __TEXT.__constg_swiftt: 0x2cc40
-+  __TEXT.__swift5_typeref: 0x1922d
-+  __TEXT.__swift5_fieldmd: 0x34db0
-+  __TEXT.__swift5_types: 0x2258
-+  __TEXT.__swift5_reflstr: 0x322b5
-+  __TEXT.__swift5_proto: 0xb398
-+  __TEXT.__swift5_assocty: 0x5220
-+  __TEXT.__cstring: 0x101f0
-   __TEXT.__swift5_builtin: 0x12c
-   __TEXT.__swift5_mpenum: 0x80
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__unwind_info: 0x55008
--  __TEXT.__eh_frame: 0x72a88
-+  __TEXT.__unwind_info: 0x558b0
-+  __TEXT.__eh_frame: 0x73610
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x14000
--  __DATA_CONST.__objc_classlist: 0x5f0
-+  __DATA_CONST.__const: 0x141a0
-+  __DATA_CONST.__objc_classlist: 0x5f8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x40
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x23388
--  __AUTH_CONST.__objc_const: 0x21ed8
--  __AUTH_CONST.__auth_got: 0x838
--  __AUTH.__objc_data: 0x1400
--  __AUTH.__data: 0x1d3e0
--  __DATA.__data: 0x2a500
--  __DATA.__bss: 0x152180
--  __DATA_DIRTY.__objc_data: 0x1fe0
--  __DATA_DIRTY.__data: 0x47388
--  __DATA_DIRTY.__bss: 0x13280
-+  __AUTH_CONST.__const: 0x235d8
-+  __AUTH_CONST.__objc_const: 0x22148
-+  __AUTH_CONST.__auth_got: 0x830
-+  __AUTH.__objc_data: 0x50
-+  __AUTH.__data: 0xc570
-+  __DATA.__data: 0x27080
-+  __DATA.__bss: 0x152780
-+  __DATA_DIRTY.__objc_data: 0x33e0
-+  __DATA_DIRTY.__data: 0x5c248
-+  __DATA_DIRTY.__bss: 0x14880
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf
-   - /usr/lib/libSystem.B.dylib
+-3600.56.7.0.0
++3600.56.16.0.0
 
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 132357
--  Symbols:   70146
+-  Symbols:   15571
 -  CStrings:  1377
 +  Functions: 133027
-+  Symbols:   70524
++  Symbols:   15637
 +  CStrings:  1384
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
 Symbols:
 + __DATA__TtCV10PegasusAPI59Apple_Parsec_DeviceExpert_V1alpha_DeviceExpertSearchRequestP33_4258DE3C42363B23E8414EBE8D43740C13_StorageClass
 + __IVARS__TtCV10PegasusAPI59Apple_Parsec_DeviceExpert_V1alpha_DeviceExpertSearchRequestP33_4258DE3C42363B23E8414EBE8D43740C13_StorageClass
@@ -177,5 +139,4 @@ CStrings:
 + "apple.parsec.device_expert.v1alpha.QuickAnswersExtension"
 + "apple.parsec.device_expert.v1alpha.QuickAnswersInput"
 + "apple.parsec.search.NumberFormat"
-
 ```

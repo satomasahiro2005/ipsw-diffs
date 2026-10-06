@@ -2,12 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/DocumentManager.framework/DocumentManager`
 
-```diff
+### Section Size Changes
 
- 401.0.0.0.0
--  __TEXT.__text: 0x338f4
-+  __TEXT.__text: 0x338fc
-   __TEXT.__objc_methlist: 0x2e44
-   __TEXT.__const: 0x1b0
-   __TEXT.__cstring: 0x4dde
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x338f4` | `0x338fc` | **`+0x8`** |

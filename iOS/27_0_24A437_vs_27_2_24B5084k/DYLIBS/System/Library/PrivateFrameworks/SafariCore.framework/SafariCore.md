@@ -2,109 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/SafariCore.framework/SafariCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ed8b0` | `0x1f46a0` | **`+0x6df0`** |
+| `__DATA.__bss` | `0xa420` | `0xa730` | **`+0x310`** |
+| `__AUTH_CONST.__const` | `0xb048` | `0xb328` | **`+0x2e0`** |
+| `__TEXT.__oslogstring` | `0xe371` | `0xe651` | **`+0x2e0`** |
+| `__AUTH_CONST.__objc_const` | `0x16308` | `0x165e0` | **`+0x2d8`** |
+| `__TEXT.__const` | `0x7aa4` | `0x7d24` | **`+0x280`** |
+| `__TEXT.__objc_methlist` | `0xd124` | `0xd2ec` | **`+0x1c8`** |
+| `__AUTH.__objc_data` | `0x2220` | `0x23a8` | **`+0x188`** |
+| `__TEXT.__unwind_info` | `0x9b78` | `0x9cf0` | **`+0x178`** |
+| `__TEXT.__constg_swiftt` | `0x21f4` | `0x2340` | **`+0x14c`** |
+| `__DATA.__data` | `0x3560` | `0x36a0` | **`+0x140`** |
+| `__DATA_CONST.__const` | `0x59b8` | `0x5ad8` | **`+0x120`** |
+| `__TEXT.__gcc_except_tab` | `0x77c8` | `0x78c0` | **`+0xf8`** |
+| `__TEXT.__swift5_typeref` | `0x25c2` | `0x26ba` | **`+0xf8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7608` | `0x76d0` | **`+0xc8`** |
+| `__TEXT.__swift5_capture` | `0x1490` | `0x1538` | **`+0xa8`** |
+| `__TEXT.__cstring` | `0x17047` | `0x170e7` | **`+0xa0`** |
+| `__TEXT.__swift5_fieldmd` | `0x1990` | `0x1a30` | **`+0xa0`** |
+| `__AUTH.__data` | `0x1010` | `0x1080` | **`+0x70`** |
+| `__TEXT.__swift5_reflstr` | `0x14fb` | `0x156b` | **`+0x70`** |
+| `__TEXT.__eh_frame` | `0xa430` | `0xa460` | **`+0x30`** |
+| `__TEXT.__swift5_assocty` | `0x608` | `0x638` | **`+0x30`** |
+| `__DATA.__common` | `0x88` | `0xa8` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x13b0` | `0x13c8` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0x4c8` | `0x4e0` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x140` | `0x154` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x6f8` | `0x708` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x210` | `0x21c` | **`+0xc`** |
+| `__DATA.__objc_ivar` | `0xd30` | `0xd34` | **`+0x4`** |
+| `__TEXT.__swift5_protos` | `0x2c` | `0x30` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0x32c` | `0x328` | **`-0x4`** |
+| `__TEXT.__swift_as_ret` | `0x37c` | `0x378` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -625.1.29.10.29
--  __TEXT.__text: 0x1dc084
--  __TEXT.__objc_methlist: 0xd124
--  __TEXT.__const: 0x7aa4
--  __TEXT.__gcc_except_tab: 0x77c8
--  __TEXT.__cstring: 0x17047
 +625.2.4.1.0
-+  __TEXT.__text: 0x1e2a74
-+  __TEXT.__objc_methlist: 0xd2ec
-+  __TEXT.__const: 0x7d24
-+  __TEXT.__gcc_except_tab: 0x78c0
-+  __TEXT.__cstring: 0x170e7
-   __TEXT.__ustring: 0x2784
--  __TEXT.__oslogstring: 0xe371
-+  __TEXT.__oslogstring: 0xe651
-   __TEXT.__dlopen_cstrs: 0x157
--  __TEXT.__constg_swiftt: 0x21f4
--  __TEXT.__swift5_typeref: 0x25c2
--  __TEXT.__swift5_reflstr: 0x14fb
--  __TEXT.__swift5_fieldmd: 0x1990
--  __TEXT.__swift5_builtin: 0x140
--  __TEXT.__swift5_assocty: 0x608
--  __TEXT.__swift5_proto: 0x4c8
--  __TEXT.__swift5_types: 0x210
-+  __TEXT.__constg_swiftt: 0x2340
-+  __TEXT.__swift5_typeref: 0x26ba
-+  __TEXT.__swift5_reflstr: 0x156b
-+  __TEXT.__swift5_fieldmd: 0x1a30
-+  __TEXT.__swift5_builtin: 0x154
-+  __TEXT.__swift5_assocty: 0x638
-+  __TEXT.__swift5_proto: 0x4e0
-+  __TEXT.__swift5_types: 0x21c
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__swift_as_entry: 0x32c
--  __TEXT.__swift_as_ret: 0x37c
-+  __TEXT.__swift_as_entry: 0x328
-+  __TEXT.__swift_as_ret: 0x378
-   __TEXT.__swift_as_cont: 0x704
--  __TEXT.__swift5_capture: 0x1490
--  __TEXT.__swift5_protos: 0x2c
-+  __TEXT.__swift5_capture: 0x1538
-+  __TEXT.__swift5_protos: 0x30
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0xbc40
--  __TEXT.__eh_frame: 0xa448
-+  __TEXT.__unwind_info: 0xbe08
-+  __TEXT.__eh_frame: 0xa478
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x59b8
--  __DATA_CONST.__objc_classlist: 0x6f8
-+  __DATA_CONST.__const: 0x5ad8
-+  __DATA_CONST.__objc_classlist: 0x708
-   __DATA_CONST.__objc_catlist: 0x160
-   __DATA_CONST.__objc_protolist: 0x218
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7608
-+  __DATA_CONST.__objc_selrefs: 0x76d0
-   __DATA_CONST.__objc_protorefs: 0xf8
-   __DATA_CONST.__objc_superrefs: 0x4c0
-   __DATA_CONST.__objc_arraydata: 0x2aa0
--  __DATA_CONST.__got: 0x13b0
--  __AUTH_CONST.__const: 0xb048
-+  __DATA_CONST.__got: 0x13c8
-+  __AUTH_CONST.__const: 0xb328
-   __AUTH_CONST.__cfstring: 0x1af00
--  __AUTH_CONST.__objc_const: 0x16308
-+  __AUTH_CONST.__objc_const: 0x165e0
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x930
-   __AUTH_CONST.__objc_dictobj: 0x190
-   __AUTH_CONST.__objc_arrayobj: 0x5a0
-   __AUTH_CONST.__auth_got: 0x21b8
--  __AUTH.__objc_data: 0x2220
--  __AUTH.__data: 0x1010
--  __DATA.__objc_ivar: 0xd30
--  __DATA.__data: 0x3560
--  __DATA.__common: 0x88
-+  __AUTH.__objc_data: 0x23a8
-+  __AUTH.__data: 0x1080
-+  __DATA.__objc_ivar: 0xd34
-+  __DATA.__data: 0x36a0
-+  __DATA.__common: 0xa8
-   __DATA_DIRTY.__objc_data: 0x2980
-   __DATA_DIRTY.__data: 0xdc8
-   __DATA_DIRTY.__bss: 0x690
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 11245
--  Symbols:   14585
+-  Functions: 11246
+-  Symbols:   12025
 -  CStrings:  5271
-+  Functions: 11384
-+  Symbols:   14674
++  Functions: 11385
++  Symbols:   12090
 +  CStrings:  5283
- 
 Symbols:
 + +[NSURLSessionConfiguration(SafariCoreExtras) safari_persistentStateSessionConfiguration]
 + +[WBSFeatureAvailability automaticPasswordChangeShouldAlwaysRecommend]
@@ -187,31 +134,6 @@ Symbols:
 + _associated conformance So13NSRunLoopModeas20_SwiftNewtypeWrapperSCSY
 + _associated conformance So13NSRunLoopModeas20_SwiftNewtypeWrapperSCs35_HasCustomAnyHashableRepresentation
 + _automaticPasswordChangeTestFestModeEnabled
-+ _objc_msgSend$_adoptSidecarDataFromSavedAccount:
-+ _objc_msgSend$_logSavedAccountsWithTOTPGeneratorsOnlyInPasskeySidecars:
-+ _objc_msgSend$_savedAccountConflictingWithSavedAccountOnInternalQueue:afterUpdatingUsername:password:
-+ _objc_msgSend$_savedAccountDidAdoptSidecarDataFromConflictingSavedAccount:
-+ _objc_msgSend$automaticPasswordChangeShouldAlwaysRecommend
-+ _objc_msgSend$block
-+ _objc_msgSend$canSaveUser:password:forProtectionSpace:highLevelDomain:notes:customTitle:groupID:completionHandler:
-+ _objc_msgSend$canSaveUser:password:forUserTypedSite:notes:customTitle:groupID:completionHandler:
-+ _objc_msgSend$currentURLChanged:inTabWithUUID:
-+ _objc_msgSend$defaultSessionConfiguration
-+ _objc_msgSend$emailProviderFraudTargets
-+ _objc_msgSend$hasScheduledRun
-+ _objc_msgSend$initWithHighPriorityTargets:targets:financialTargets:emailProviderFraudTargets:
-+ _objc_msgSend$initWithRunLoop:modes:block:
-+ _objc_msgSend$isAutomaticPasswordChangeTestFestModeEnabled
-+ _objc_msgSend$isDebugAccountForAutomaticPasswordChangeForDomain:
-+ _objc_msgSend$isUUIDHighLevelDomain:
-+ _objc_msgSend$modes
-+ _objc_msgSend$performIfScheduled
-+ _objc_msgSend$performInModes:block:
-+ _objc_msgSend$reportNavigationEvent:inTabWithUUID:
-+ _objc_msgSend$runLoop
-+ _objc_msgSend$safari_getAllowsCredentialSavingWithCompletionHandler:
-+ _objc_msgSend$setHasScheduledRun:
-+ _objc_msgSend$set_sourceApplicationBundleIdentifier:
 + _symbolic $s10SafariCore45WBSAutomaticPasswordChangeCompletionReportingP
 + _symbolic Shy_____G 10Foundation4UUIDV
 + _symbolic So25WBSRunLoopCoalescedUpdateCSgXw
@@ -256,7 +178,6 @@ Symbols:
 - ___swift_closure_destructor.53Tm
 - ___swift_closure_destructor.57Tm
 - ___swift_closure_destructor.605Tm
-- _objc_msgSend$initWithHighPriorityTargets:targets:financialTargets:
 - _symbolic So15NSXPCConnectionC
 - _symbolic _____y_____G s23_ContiguousArrayStorageC 10SafariCore26WBSLocalizedPluralVariableV
 CStrings:

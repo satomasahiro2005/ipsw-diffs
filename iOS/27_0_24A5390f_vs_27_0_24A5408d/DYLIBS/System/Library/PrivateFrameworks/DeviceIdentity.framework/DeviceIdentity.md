@@ -2,38 +2,24 @@
 
 > `/System/Library/PrivateFrameworks/DeviceIdentity.framework/DeviceIdentity`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0xe1ba` | `0x1054a` | **`+0x2390`** |
+| `__DATA_CONST.__const` | `0x3ca0` | `0x4090` | **`+0x3f0`** |
+| `__TEXT.__text` | `0x1d9c8` | `0x1d9f0` | **`+0x28`** |
+| `__TEXT.__cstring` | `0x429d` | `0x42a1` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1145.0.1.0.0
--  __TEXT.__text: 0x1d9c8
 +1145.0.1.0.1
-+  __TEXT.__text: 0x1d9f0
-   __TEXT.__objc_methlist: 0x504
--  __TEXT.__cstring: 0x429d
-+  __TEXT.__cstring: 0x42a1
-   __TEXT.__gcc_except_tab: 0xaa0
--  __TEXT.__const: 0xe1ba
-+  __TEXT.__const: 0x1054a
-   __TEXT.__ustring: 0x4
-   __TEXT.__oslogstring: 0x676
-   __TEXT.__dlopen_cstrs: 0x134
 
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3ca0
-+  __DATA_CONST.__const: 0x4090
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x10
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 288
--  Symbols:   1135
-+  Symbols:   1147
-   CStrings:  696
- 
+-  Symbols:   998
++  Symbols:   1010
 Symbols:
 + _ApplePlatformBootstrapRootCAG1
 + _ApplePlatformBootstrapRootCAG1SPKI

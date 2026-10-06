@@ -2,15 +2,21 @@
 
 > `/sbin/route`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3cc4` | `0x3ca0` | **`-0x24`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x3cc4
-+  __TEXT.__text: 0x3ca0
-   __TEXT.__auth_stubs: 0x3f0
-   __TEXT.__const: 0x28
-   __TEXT.__cstring: 0xa22
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __DATA.__data : content changed
-
+-754.0.0.0.0
++755.0.0.0.0
 ```

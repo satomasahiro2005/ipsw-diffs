@@ -2,23 +2,23 @@
 
 > `/System/Library/PrivateFrameworks/SensingAlgsService.framework/SensingAlgsService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x210d0` | `0x2111c` | **`+0x4c`** |
+| `__TEXT.__const` | `0x1cdb` | `0x1ceb` | **`+0x10`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -70.0.0.0.0
--  __TEXT.__text: 0x210d0
 +72.0.0.0.0
-+  __TEXT.__text: 0x2111c
-   __TEXT.__objc_methlist: 0x7f0
-   __TEXT.__gcc_except_tab: 0xe88
--  __TEXT.__const: 0x1cdb
-+  __TEXT.__const: 0x1ceb
-   __TEXT.__cstring: 0x3df
-   __TEXT.__oslogstring: 0x1796
-   __TEXT.__unwind_info: 0xad0
 Symbols:
 + GCC_except_table110
 - GCC_except_table112

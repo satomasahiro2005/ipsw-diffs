@@ -2,14 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/FitnessIntelligenceSnapshotting.framework/FitnessIntelligenceSnapshotting`
 
-```diff
+### Section Size Changes
 
-   __AUTH.__data: 0x3d0
-   __DATA.__data: 0x430
-   __DATA_DIRTY.__objc_data: 0x2e0
--  __DATA_DIRTY.__data: 0xbd0
-+  __DATA_DIRTY.__data: 0xbe0
-   __DATA_DIRTY.__common: 0xb8
-   __DATA_DIRTY.__bss: 0x180
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__data` | `0xbd0` | `0xbe0` | **`+0x10`** |

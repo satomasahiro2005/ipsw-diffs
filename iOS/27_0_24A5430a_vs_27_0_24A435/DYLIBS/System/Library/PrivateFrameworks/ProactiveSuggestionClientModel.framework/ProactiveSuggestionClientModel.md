@@ -2,23 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/ProactiveSuggestionClientModel.framework/ProactiveSuggestionClientModel`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6ea24` | `0x6ea10` | **`-0x14`** |
+
+### Other Changes
+
 ```diff
 
- 671.0.2.0.1
--  __TEXT.__text: 0x6ea24
-+  __TEXT.__text: 0x6ea10
-   __TEXT.__objc_methlist: 0x76d4
-   __TEXT.__const: 0x190
-   __TEXT.__cstring: 0x49fc
-
-   - /System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 3217
 +  Functions: 3218
-   Symbols:   6096
-   CStrings:  1042
- 
 Functions:
 ~ _OUTLINED_FUNCTION_2 : 32 -> 24
 + _OUTLINED_FUNCTION_2

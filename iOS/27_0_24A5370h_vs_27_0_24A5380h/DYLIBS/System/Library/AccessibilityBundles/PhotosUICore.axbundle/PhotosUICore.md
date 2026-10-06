@@ -2,73 +2,40 @@
 
 > `/System/Library/AccessibilityBundles/PhotosUICore.axbundle/PhotosUICore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x18390` | `0x17ebc` | **`-0x4d4`** |
+| `__DATA_DIRTY.__objc_data` | `0x22b0` | `0x2530` | **`+0x280`** |
+| `__AUTH.__objc_data` | `0x3c0` | `0x1e0` | **`-0x1e0`** |
+| `__AUTH_CONST.__objc_const` | `0x4d48` | `0x4e68` | **`+0x120`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1250` | `0x1200` | **`-0x50`** |
+| `__DATA_CONST.__const` | `0x810` | `0x7c8` | **`-0x48`** |
+| `__AUTH_CONST.__cfstring` | `0x49a0` | `0x4960` | **`-0x40`** |
+| `__AUTH_CONST.__const` | `0x220` | `0x1e0` | **`-0x40`** |
+| `__TEXT.__cstring` | `0x39ac` | `0x398d` | **`-0x1f`** |
+| `__TEXT.__gcc_except_tab` | `0x694` | `0x67c` | **`-0x18`** |
+| `__TEXT.__objc_methlist` | `0x2820` | `0x2808` | **`-0x18`** |
+| `__TEXT.__unwind_info` | `0x8c8` | `0x8b0` | **`-0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x3d8` | `0x3e8` | **`+0x10`** |
+| `__DATA.__bss` | `0x41` | `0x39` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x200` | `0x208` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x198` | `0x1a0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x18390
--  __TEXT.__objc_methlist: 0x2820
-+  __TEXT.__text: 0x17ebc
-+  __TEXT.__objc_methlist: 0x2808
-   __TEXT.__const: 0x48
--  __TEXT.__gcc_except_tab: 0x694
--  __TEXT.__cstring: 0x39ac
-+  __TEXT.__gcc_except_tab: 0x67c
-+  __TEXT.__cstring: 0x398d
-   __TEXT.__oslogstring: 0x17
--  __TEXT.__unwind_info: 0x8c8
-+  __TEXT.__unwind_info: 0x8b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x810
--  __DATA_CONST.__objc_classlist: 0x3d8
-+  __DATA_CONST.__const: 0x7c8
-+  __DATA_CONST.__objc_classlist: 0x3e8
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1250
-+  __DATA_CONST.__objc_selrefs: 0x1200
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__objc_superrefs: 0x198
--  __DATA_CONST.__got: 0x200
--  __AUTH_CONST.__const: 0x220
--  __AUTH_CONST.__cfstring: 0x49a0
--  __AUTH_CONST.__objc_const: 0x4d48
-+  __DATA_CONST.__objc_superrefs: 0x1a0
-+  __DATA_CONST.__got: 0x208
-+  __AUTH_CONST.__const: 0x1e0
-+  __AUTH_CONST.__cfstring: 0x4960
-+  __AUTH_CONST.__objc_const: 0x4e68
-   __AUTH_CONST.__objc_intobj: 0x48
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x3c0
-+  __AUTH.__objc_data: 0x1e0
-   __DATA.__objc_ivar: 0x18
-   __DATA.__data: 0x240
--  __DATA.__bss: 0x41
--  __DATA_DIRTY.__objc_data: 0x22b0
-+  __DATA.__bss: 0x39
-+  __DATA_DIRTY.__objc_data: 0x2530
-   __DATA_DIRTY.__bss: 0x8
-   - /System/Library/Frameworks/ContactsUI.framework/ContactsUI
-   - /System/Library/Frameworks/CoreData.framework/CoreData
+-3039.1.0.0.0
++3042.0.0.0.0
 
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 767
--  Symbols:   2940
--  CStrings:  1235
+-  Symbols:   1740
+-  CStrings:  647
 +  Functions: 757
-+  Symbols:   2915
-+  CStrings:  1231
- 
-Sections:
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __DATA.__data : content changed
++  Symbols:   1738
++  CStrings:  645
 Symbols:
 + +[PXTintAdjustingButtonAccessibility _accessibilityPerformValidations:]
 + +[PXTintAdjustingButtonAccessibility(SafeCategory) safeCategoryBaseClass]
@@ -122,9 +89,6 @@ Symbols:
 + __OBJC_CLASS_RO_$___PXTintAdjustingButtonAccessibility_super
 + __OBJC_METACLASS_RO_$_PXTintAdjustingButtonAccessibility
 + __OBJC_METACLASS_RO_$___PXTintAdjustingButtonAccessibility_super
-+ _objc_msgSend$CGColor
-+ _objc_msgSend$_axFilterSymbolName
-+ _objc_msgSend$_axIsFiltering
 - -[AXPhotosGroupAccessibilityElement _accessibilityFeedViewController]
 - -[AXPhotosGroupAccessibilityElement _accessibilityHasVisibleFrame]
 - -[AXPhotosGroupAccessibilityElement _axFeedContentLayoutClass]
@@ -179,18 +143,6 @@ Symbols:
 - ___AXPhotosGroupAccessibilityElement___axFeedViewControllerClass
 - ___block_descriptor_48_e8_B16?08l
 - ___block_descriptor_56_e8_32r_e15_v32?08Q16^B24lr32l8
-- _objc_msgSend$_accessibilityElements
-- _objc_msgSend$_accessibilityFeedViewController
-- _objc_msgSend$_accessibilityFindDescendant:
-- _objc_msgSend$_accessibilityIsInFeedView
-- _objc_msgSend$_accessibilityIsInFeedViewController
-- _objc_msgSend$_axFeedContentLayoutClass
-- _objc_msgSend$_axFeedViewControllerClass
-- _objc_msgSend$_axIsFeedContentLayout
-- _objc_msgSend$_axIsStoryTransitionLayout
-- _objc_msgSend$_setAxFeedContentLayoutClass:
-- _objc_msgSend$_setAxFeedViewControllerClass:
-- _objc_msgSend$safeCGFloatForKey:
 CStrings:
 + "PXTintAdjustingButton"
 + "PXTintAdjustingButtonAccessibility"
@@ -208,5 +160,4 @@ CStrings:
 - "gadgetSpec"
 - "interItemSpacing"
 - "{PXAssetBadgeInfo=Qdqq}"
-
 ```

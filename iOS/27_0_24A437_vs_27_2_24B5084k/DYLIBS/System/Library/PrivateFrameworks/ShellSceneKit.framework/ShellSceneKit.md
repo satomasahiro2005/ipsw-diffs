@@ -2,89 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/ShellSceneKit.framework/ShellSceneKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xef9c8` | `0xf42ac` | **`+0x48e4`** |
+| `__AUTH_CONST.__const` | `0x81c0` | `0x8670` | **`+0x4b0`** |
+| `__TEXT.__swift5_capture` | `0x2204` | `0x23e4` | **`+0x1e0`** |
+| `__TEXT.__unwind_info` | `0x32b8` | `0x33e8` | **`+0x130`** |
+| `__AUTH_CONST.__objc_const` | `0x6d18` | `0x6e10` | **`+0xf8`** |
+| `__AUTH.__data` | `0x690` | `0x740` | **`+0xb0`** |
+| `__TEXT.__cstring` | `0x2d1b` | `0x2dbb` | **`+0xa0`** |
+| `__TEXT.__const` | `0x82f0` | `0x8340` | **`+0x50`** |
+| `__TEXT.__oslogstring` | `0xbe3` | `0xc23` | **`+0x40`** |
+| `__TEXT.__constg_swiftt` | `0x1f04` | `0x1f40` | **`+0x3c`** |
+| `__TEXT.__swift5_fieldmd` | `0x1be4` | `0x1c18` | **`+0x34`** |
+| `__DATA_DIRTY.__data` | `0x13a8` | `0x13d8` | **`+0x30`** |
+| `__TEXT.__swift5_reflstr` | `0x164b` | `0x166b` | **`+0x20`** |
+| `__DATA.__bss` | `0x8970` | `0x8980` | **`+0x10`** |
+| `__DATA.__data` | `0x14d0` | `0x14e0` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0xc18` | `0xc28` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0x25b4` | `0x25a4` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xcd8` | `0xcd0` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x640` | `0x648` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x200` | `0x208` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x28c` | `0x290` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -54.0.1.0.0
--  __TEXT.__text: 0xed674
 +54.1.4.0.0
-+  __TEXT.__text: 0xf1f40
-   __TEXT.__objc_methlist: 0x1700
--  __TEXT.__const: 0x82f0
--  __TEXT.__cstring: 0x2d1b
--  __TEXT.__swift5_typeref: 0x25b4
--  __TEXT.__swift5_capture: 0x2204
--  __TEXT.__oslogstring: 0xbe3
--  __TEXT.__constg_swiftt: 0x1f04
--  __TEXT.__swift5_reflstr: 0x164b
--  __TEXT.__swift5_fieldmd: 0x1be4
--  __TEXT.__swift5_types: 0x28c
-+  __TEXT.__const: 0x8340
-+  __TEXT.__cstring: 0x2dbb
-+  __TEXT.__swift5_typeref: 0x25a4
-+  __TEXT.__swift5_capture: 0x23e4
-+  __TEXT.__oslogstring: 0xc23
-+  __TEXT.__constg_swiftt: 0x1f40
-+  __TEXT.__swift5_reflstr: 0x166b
-+  __TEXT.__swift5_fieldmd: 0x1c18
-+  __TEXT.__swift5_types: 0x290
-   __TEXT.__swift5_proto: 0x578
-   __TEXT.__swift5_protos: 0x4c
-   __TEXT.__swift5_assocty: 0x498
 
-   __TEXT.__swift_as_ret: 0x4c
-   __TEXT.__swift_as_cont: 0x88
-   __TEXT.__swift5_types2: 0x8
--  __TEXT.__unwind_info: 0x5ac8
-+  __TEXT.__unwind_info: 0x5c50
-   __TEXT.__eh_frame: 0x1eb0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x438
--  __DATA_CONST.__objc_classlist: 0x200
-+  __DATA_CONST.__objc_classlist: 0x208
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x1a8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xc18
-+  __DATA_CONST.__objc_selrefs: 0xc28
-   __DATA_CONST.__objc_protorefs: 0xe8
-   __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__got: 0x640
--  __AUTH_CONST.__const: 0x81c0
-+  __DATA_CONST.__got: 0x648
-+  __AUTH_CONST.__const: 0x8670
-   __AUTH_CONST.__cfstring: 0x120
--  __AUTH_CONST.__objc_const: 0x6d18
--  __AUTH_CONST.__auth_got: 0xcd8
-+  __AUTH_CONST.__objc_const: 0x6e10
-+  __AUTH_CONST.__auth_got: 0xcd0
-   __AUTH.__objc_data: 0x12a8
--  __AUTH.__data: 0x690
-+  __AUTH.__data: 0x740
-   __DATA.__objc_ivar: 0xc
--  __DATA.__data: 0x14d0
-+  __DATA.__data: 0x14e0
-   __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0x1188
--  __DATA_DIRTY.__data: 0x13a8
-+  __DATA_DIRTY.__data: 0x13d8
-   __DATA_DIRTY.__bss: 0x2de0
-   __DATA_DIRTY.__common: 0x90
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5911
--  Symbols:   10279
+-  Symbols:   10033
 -  CStrings:  373
 +  Functions: 6004
-+  Symbols:   10337
++  Symbols:   10089
 +  CStrings:  380
- 
 Symbols:
 + _$s13ShellSceneKit13HardwareStateC10invalidateyyF
 + _$s13ShellSceneKit13HardwareStateC10invalidateyyF10Foundation4UUIDVycfu0_
@@ -192,8 +148,6 @@ Symbols:
 + __METACLASS_DATA__TtC13ShellSceneKit18FrameRateAssertion
 + ___unnamed_14
 + ___unnamed_18
-+ _objc_msgSend$immutableCADisplay
-+ _objc_msgSend$originatingConfiguration
 + _symbolic So27CADisplayFrameRateAssertionC
 + _symbolic _____ 13ShellSceneKit18FrameRateAssertionC
 + _symbolic _____Sg 13ShellSceneKit18FrameRateAssertionC

@@ -2,94 +2,58 @@
 
 > `/System/Library/AccessibilityBundles/AXUltronPluginService.axuiservice/AXUltronPluginService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x390c` | `0x43dc` | **`+0xad0`** |
+| `__TEXT.__objc_methname` | `0xcaf` | `0x106e` | **`+0x3bf`** |
+| `__TEXT.__objc_stubs` | `0x8e0` | `0xba0` | **`+0x2c0`** |
+| `__TEXT.__oslogstring` | `0x545` | `0x74a` | **`+0x205`** |
+| `__DATA.__objc_selrefs` | `0x390` | `0x480` | **`+0xf0`** |
+| `__TEXT.__objc_methlist` | `0x42c` | `0x4fc` | **`+0xd0`** |
+| `__DATA.__objc_const` | `0x4a0` | `0x568` | **`+0xc8`** |
+| `__DATA_CONST.__cfstring` | `0xa0` | `0x120` | **`+0x80`** |
+| `__DATA.__data` | `0x188` | `0x1e8` | **`+0x60`** |
+| `__DATA_CONST.__got` | `0xd8` | `0x130` | **`+0x58`** |
+| `__TEXT.__auth_stubs` | `0x5e0` | `0x630` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x10c` | `0x144` | **`+0x38`** |
+| `__TEXT.__objc_methtype` | `0x3d9` | `0x404` | **`+0x2b`** |
+| `__DATA_CONST.__auth_got` | `0x300` | `0x328` | **`+0x28`** |
+| `__DATA_CONST.__objc_dictobj` | `—` | `0x28` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x198` | `0x1b8` | **`+0x20`** |
+| `__TEXT.__cstring` | `0xd3` | `0xef` | **`+0x1c`** |
+| `__TEXT.__objc_classname` | `0x81` | `0x95` | **`+0x14`** |
+| `__DATA_CONST.__objc_arraydata` | `—` | `0x10` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x18` | `0x24` | **`+0xc`** |
+| `__DATA_CONST.__objc_protolist` | `0x18` | `0x20` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__const`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_data`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
- 3240.9.0.0.0
--  __TEXT.__text: 0x390c
--  __TEXT.__auth_stubs: 0x5e0
--  __TEXT.__objc_stubs: 0x8e0
--  __TEXT.__objc_methlist: 0x42c
-+  __TEXT.__text: 0x43dc
-+  __TEXT.__auth_stubs: 0x630
-+  __TEXT.__objc_stubs: 0xba0
-+  __TEXT.__objc_methlist: 0x4fc
-   __TEXT.__const: 0x1d0
--  __TEXT.__objc_classname: 0x81
--  __TEXT.__objc_methname: 0xcaf
--  __TEXT.__objc_methtype: 0x3d9
-+  __TEXT.__objc_classname: 0x95
-+  __TEXT.__objc_methname: 0x106e
-+  __TEXT.__objc_methtype: 0x404
-   __TEXT.__constg_swiftt: 0x88
-   __TEXT.__swift5_typeref: 0x93
-   __TEXT.__swift5_fieldmd: 0x10
-
-   __TEXT.__swift_as_entry: 0xc
-   __TEXT.__swift_as_ret: 0x8
-   __TEXT.__swift_as_cont: 0x8
--  __TEXT.__gcc_except_tab: 0x10c
--  __TEXT.__oslogstring: 0x545
--  __TEXT.__cstring: 0xd3
--  __TEXT.__unwind_info: 0x198
-+  __TEXT.__gcc_except_tab: 0x144
-+  __TEXT.__oslogstring: 0x74a
-+  __TEXT.__cstring: 0xef
-+  __TEXT.__unwind_info: 0x1b8
-   __TEXT.__eh_frame: 0x108
-   __DATA_CONST.__const: 0x228
--  __DATA_CONST.__cfstring: 0xa0
-+  __DATA_CONST.__cfstring: 0x120
-   __DATA_CONST.__objc_classlist: 0x18
--  __DATA_CONST.__objc_protolist: 0x18
-+  __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x10
--  __DATA_CONST.__auth_got: 0x300
--  __DATA_CONST.__got: 0xd8
-+  __DATA_CONST.__objc_arraydata: 0x10
-+  __DATA_CONST.__objc_dictobj: 0x28
-+  __DATA_CONST.__auth_got: 0x328
-+  __DATA_CONST.__got: 0x130
-   __DATA_CONST.__auth_ptr: 0x80
--  __DATA.__objc_const: 0x4a0
--  __DATA.__objc_selrefs: 0x390
--  __DATA.__objc_ivar: 0x18
-+  __DATA.__objc_const: 0x568
-+  __DATA.__objc_selrefs: 0x480
-+  __DATA.__objc_ivar: 0x24
-   __DATA.__objc_data: 0x160
--  __DATA.__data: 0x188
-+  __DATA.__data: 0x1e8
-   __DATA.__common: 0x8
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 94
 -  Symbols:   143
 -  CStrings:  224
 +  Functions: 108
 +  Symbols:   161
 +  CStrings:  275
- 
 Symbols:
 + _AXIDSServiceDeviceNRIdentifierKey
 + _AXIDSServiceDeviceNearbyStatusKey

@@ -2,44 +2,24 @@
 
 > `/System/Library/PrivateFrameworks/SiriUtilities.framework/SiriUtilities`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6c508` | `0x6c5dc` | **`+0xd4`** |
+| `__DATA.__bss` | `0x2ec0` | `0x2e40` | **`-0x80`** |
+| `__DATA_DIRTY.__bss` | `0x3710` | `0x3790` | **`+0x80`** |
+| `__TEXT.__eh_frame` | `0x2dc8` | `0x2de8` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x29f8` | `0x2a08` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
- 3600.1.3.0.0
--  __TEXT.__text: 0x68ba8
-+  __TEXT.__text: 0x68c7c
-   __TEXT.__objc_methlist: 0x2ac
-   __TEXT.__const: 0x50c0
-   __TEXT.__cstring: 0x155e
-
-   __TEXT.__swift_as_ret: 0x70
-   __TEXT.__swift_as_cont: 0x8c
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x3228
--  __TEXT.__eh_frame: 0x2dd8
-+  __TEXT.__unwind_info: 0x3240
-+  __TEXT.__eh_frame: 0x2df8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0x398
-   __DATA_DIRTY.__data: 0x2810
--  __DATA_DIRTY.__bss: 0x3710
-+  __DATA_DIRTY.__bss: 0x3790
-   __DATA_DIRTY.__common: 0x588
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 4417
 -  Symbols:   8292
 +  Functions: 4421
 +  Symbols:   8296
-   CStrings:  256
- 
 Symbols:
 + _$sSdySdSgxcSyRzlufcSbSpySdGXEfU_SbSPys4Int8VGXEfU_TA
 + _$sSdySdSgxcSyRzlufcSbSpySdGXEfU_SbSPys4Int8VGXEfU_Tm

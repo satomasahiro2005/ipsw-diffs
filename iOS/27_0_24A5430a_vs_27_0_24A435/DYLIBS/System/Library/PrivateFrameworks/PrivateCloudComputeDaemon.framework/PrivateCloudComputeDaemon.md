@@ -2,23 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/PrivateCloudComputeDaemon.framework/PrivateCloudComputeDaemon`
 
-```diff
+### Section Size Changes
 
- 2570.2.1.0.0
--  __TEXT.__text: 0x2c1228
-+  __TEXT.__text: 0x2c1028
-   __TEXT.__objc_methlist: 0x3c8
-   __TEXT.__const: 0x171b8
-   __TEXT.__constg_swiftt: 0x5c24
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2c1228` | `0x2c1028` | **`-0x200`** |
+| `__DATA_CONST.__got` | `0x1310` | `0x1308` | **`-0x8`** |
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x3a0
-   __DATA_CONST.__objc_protorefs: 0x28
--  __DATA_CONST.__got: 0x1310
-+  __DATA_CONST.__got: 0x1308
-   __AUTH_CONST.__const: 0xac30
-   __AUTH_CONST.__objc_const: 0x3f08
-   __AUTH_CONST.__auth_got: 0x2670
+### Other Changes
+
+```text
 Functions:
 ~ sub_23e02bd1c -> sub_23e967d1c : 1384 -> 1388
 ~ sub_23e02ea64 -> sub_23e96aa68 : 4144 -> 4132

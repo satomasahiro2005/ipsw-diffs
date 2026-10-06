@@ -2,27 +2,22 @@
 
 > `/usr/lib/updaters/libVinylUpdater.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4d594` | `0x4d590` | **`-0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
 
+### Other Changes
+
 ```diff
 
- 178.0.0.0.0
--  __TEXT.__text: 0x4d594
-+  __TEXT.__text: 0x4d590
-   __TEXT.__init_offsets: 0x48
-   __TEXT.__const: 0x53f1
-   __TEXT.__gcc_except_tab: 0x47b4
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 1295
 +  Functions: 1296
-   Symbols:   2145
-   CStrings:  1279
- 
 Functions:
 ~ _OUTLINED_FUNCTION_2 : 12 -> 20
 + _OUTLINED_FUNCTION_3

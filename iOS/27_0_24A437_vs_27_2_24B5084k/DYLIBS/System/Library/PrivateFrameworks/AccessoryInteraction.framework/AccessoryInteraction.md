@@ -2,29 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/AccessoryInteraction.framework/AccessoryInteraction`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x923f8` | `0x923f4` | **`-0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__oslogstring`
+
+### Other Changes
 
 ```diff
 
 -32.0.0.0.0
--  __TEXT.__text: 0x90878
 +33.0.0.0.0
-+  __TEXT.__text: 0x90874
-   __TEXT.__objc_methlist: 0x7010
-   __TEXT.__const: 0x9f0
-   __TEXT.__oslogstring: 0x2a906
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
--  Functions: 2643
--  Symbols:   5513
-+  Functions: 2645
-+  Symbols:   5515
-   CStrings:  2699
- 
+-  Functions: 2660
+-  Symbols:   3711
++  Functions: 2662
++  Symbols:   3713
 Symbols:
 + _SPSimpleBeaconNameString
 + _SPUnknownBeaconNameString

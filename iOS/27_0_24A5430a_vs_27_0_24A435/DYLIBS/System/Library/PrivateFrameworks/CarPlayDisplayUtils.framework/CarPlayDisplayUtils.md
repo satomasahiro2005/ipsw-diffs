@@ -2,21 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/CarPlayDisplayUtils.framework/CarPlayDisplayUtils`
 
-```diff
+### Section Size Changes
 
- 799.3.0.0.0
--  __TEXT.__text: 0x15df8
-+  __TEXT.__text: 0x15e38
-   __TEXT.__const: 0x10e0
-   __TEXT.__swift5_typeref: 0x2f2
-   __TEXT.__constg_swiftt: 0x274
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15df8` | `0x15e38` | **`+0x40`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_256f0198c -> sub_257a9a98c : 1000 -> 1008
-~ sub_256f01db4 -> sub_257a9adbc : 1872 -> 1876
-~ sub_256f04b5c -> sub_257a9db68 : 968 -> 972
-~ sub_256f05224 -> sub_257a9e234 : 880 -> 884
-~ sub_256f0c6e0 -> sub_257aa56f4 : 344 -> 340
-~ sub_256f0c838 -> sub_257aa5848 : 756 -> 752
-~ sub_256f0f520 -> sub_257aa852c : 1912 -> 1956
-~ sub_256f100f8 -> sub_257aa9130 : 252 -> 260
+~ sub_256dcb98c -> sub_25796398c : 1000 -> 1008
+~ sub_256dcbdb4 -> sub_257963dbc : 1872 -> 1876
+~ sub_256dceb5c -> sub_257966b68 : 968 -> 972
+~ sub_256dcf224 -> sub_257967234 : 880 -> 884
+~ sub_256dd66e0 -> sub_25796e6f4 : 344 -> 340
+~ sub_256dd6838 -> sub_25796e848 : 756 -> 752
+~ sub_256dd9520 -> sub_25797152c : 1912 -> 1956
+~ sub_256dda0f8 -> sub_257972130 : 252 -> 260
 ```

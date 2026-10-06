@@ -2,23 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/SpotlightKnowledgeDaemon.framework/SpotlightKnowledgeDaemon`
 
-```diff
+### Section Size Changes
 
- 2459.105.0.0.0
--  __TEXT.__text: 0x48c2cc
-+  __TEXT.__text: 0x48c78c
-   __TEXT.__objc_methlist: 0x9968
-   __TEXT.__const: 0x17418
-   __TEXT.__oslogstring: 0x1186e
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x48c2cc` | `0x48c78c` | **`+0x4c0`** |
+| `__TEXT.__unwind_info` | `0xc880` | `0xc878` | **`-0x8`** |
 
-   __TEXT.__swift_as_cont: 0x574
-   __TEXT.__swift5_protos: 0x274
-   __TEXT.__swift5_mpenum: 0x94
--  __TEXT.__unwind_info: 0xc880
-+  __TEXT.__unwind_info: 0xc878
-   __TEXT.__eh_frame: 0x14680
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+### Other Changes
+
+```text
 Functions:
 ~ sub_20869a054 -> sub_208c9b054 : 896 -> 900
 ~ sub_2086a7d98 -> sub_208ca8d9c : 3020 -> 3092

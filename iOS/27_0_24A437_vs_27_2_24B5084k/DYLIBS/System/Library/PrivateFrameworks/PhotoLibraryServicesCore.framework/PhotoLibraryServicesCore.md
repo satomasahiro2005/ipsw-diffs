@@ -2,70 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/PhotoLibraryServicesCore.framework/PhotoLibraryServicesCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcbe58` | `0xccdc0` | **`+0xf68`** |
+| `__TEXT.__oslogstring` | `0xb26b` | `0xb38c` | **`+0x121`** |
+| `__TEXT.__cstring` | `0x161df` | `0x162ab` | **`+0xcc`** |
+| `__TEXT.__gcc_except_tab` | `0x5710` | `0x57cc` | **`+0xbc`** |
+| `__AUTH_CONST.__const` | `0x35e8` | `0x3660` | **`+0x78`** |
+| `__TEXT.__unwind_info` | `0x3488` | `0x34d8` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4ca8` | `0x4cc8` | **`+0x20`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x288` | `0x2a0` | **`+0x18`** |
+| `__AUTH_CONST.__objc_intobj` | `0x918` | `0x930` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x834c` | `0x8364` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0xe48` | `0xe50` | **`+0x8`** |
+| `__AUTH_CONST.__objc_const` | `0xaa08` | `0xaa00` | **`-0x8`** |
+| `__DATA_CONST.__const` | `0x3cb0` | `0x3ca8` | **`-0x8`** |
+| `__DATA_CONST.__objc_arraydata` | `0x420` | `0x428` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.235.0.0
--  __TEXT.__text: 0xc7078
--  __TEXT.__objc_methlist: 0x834c
 +916.40.110.0.0
-+  __TEXT.__text: 0xc7ff8
-+  __TEXT.__objc_methlist: 0x8364
-   __TEXT.__const: 0x23cc
-   __TEXT.__dlopen_cstrs: 0x19c
--  __TEXT.__gcc_except_tab: 0x5710
--  __TEXT.__cstring: 0x161df
--  __TEXT.__oslogstring: 0xb26b
-+  __TEXT.__gcc_except_tab: 0x57cc
-+  __TEXT.__cstring: 0x162ab
-+  __TEXT.__oslogstring: 0xb38c
-   __TEXT.__ustring: 0x4
--  __TEXT.__unwind_info: 0x4250
-+  __TEXT.__unwind_info: 0x42a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3cb0
-+  __DATA_CONST.__const: 0x3ca8
-   __DATA_CONST.__objc_classlist: 0x408
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x160
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4ca8
-+  __DATA_CONST.__objc_selrefs: 0x4cc8
-   __DATA_CONST.__objc_protorefs: 0xc8
-   __DATA_CONST.__objc_superrefs: 0x268
--  __DATA_CONST.__objc_arraydata: 0x420
-+  __DATA_CONST.__objc_arraydata: 0x428
-   __DATA_CONST.__got: 0xa48
--  __AUTH_CONST.__const: 0x35e8
-+  __AUTH_CONST.__const: 0x3660
-   __AUTH_CONST.__cfstring: 0x122e0
--  __AUTH_CONST.__objc_const: 0xaa08
--  __AUTH_CONST.__objc_intobj: 0x918
-+  __AUTH_CONST.__objc_const: 0xaa00
-+  __AUTH_CONST.__objc_intobj: 0x930
-   __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__objc_dictobj: 0x50
--  __AUTH_CONST.__objc_arrayobj: 0x288
--  __AUTH_CONST.__auth_got: 0xe48
-+  __AUTH_CONST.__objc_arrayobj: 0x2a0
-+  __AUTH_CONST.__auth_got: 0xe50
-   __AUTH.__objc_data: 0x370
-   __DATA.__objc_ivar: 0x678
-   __DATA.__data: 0x10e0
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libperfcheck.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 3976
--  Symbols:   9456
+-  Symbols:   7916
 -  CStrings:  3697
 +  Functions: 3988
-+  Symbols:   9472
++  Symbols:   7930
 +  CStrings:  3704
- 
 Symbols:
 + +[PLFileUtilities addOwnerWritePermissionIfNecessaryToFileAtPath:]
 + +[PLSecurity isEntitledForPrivatePhotosTCCForToken:]
@@ -281,10 +249,6 @@ Symbols:
 + ___56-[PLAssetsdNonBindingDebugClient stateCaptureDictionary]_block_invoke
 + ___block_descriptor_98_e8_32bs40n18_8_8_t0w1_s8_t16w32_e51_v16?0"<PLAssetsdLibraryInternalServiceProtocol>"8l
 + _fchmodat
-+ _objc_msgSend$addOwnerWritePermissionIfNecessaryToFileAtPath:
-+ _objc_msgSend$getSearchDonationProgressShouldCompute:shouldReport:reply:
-+ _objc_msgSend$getStateCaptureDictionaryWithReply:
-+ _objc_msgSend$isEntitledForPrivatePhotosTCCForToken:
 - -[PLPhotoLibraryPathManagerCore assetUUIDRecoveryMappingPath]
 - -[PLPhotoLibraryPathManagerCore postInit]
 - -[PLPhotoLibraryPathManagerCore setAssetUUIDRecoveryMappingPath:]
@@ -485,8 +449,6 @@ Symbols:
 - _PLIsSharedCollectionsFeatureEnabled
 - _PUTGetCurrentAccess
 - ___62+[PLSecurity isEntitledForPhotoKitOrPrivatePhotosTCCForToken:]_block_invoke
-- _objc_msgSend$postInit
-- _objc_msgSend$setAssetUUIDRecoveryMappingPath:
 CStrings:
 + "-[PLAssetsdLibraryInternalClient getSearchDonationProgressShouldCompute:shouldReport:completionHandler:]_block_invoke"
 + "-[PLAssetsdNonBindingDebugClient stateCaptureDictionary]_block_invoke"

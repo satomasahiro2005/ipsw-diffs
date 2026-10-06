@@ -2,14 +2,15 @@
 
 > `/usr/lib/system/libsystem_info.dylib`
 
-```diff
+### Section Size Changes
 
- 603.0.0.0.0
--  __TEXT.__text: 0x247f4
-+  __TEXT.__text: 0x24800
-   __TEXT.__const: 0x330
-   __TEXT.__cstring: 0x1fd7
-   __TEXT.__oslogstring: 0xe88
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x247f4` | `0x24800` | **`+0xc`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __fsi_get_validation : 324 -> 320
 ~ _dn_expand : 324 -> 328

@@ -2,40 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/TelephonyUtilities.framework/PlugIns/PhoneIntentHandler.appex/PhoneIntentHandler`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x4c0` | `0x4e8` | **`+0x28`** |
+| `__TEXT.__text` | `0x2def0` | `0x2dee8` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2def0
-+  __TEXT.__text: 0x2dee8
-   __TEXT.__auth_stubs: 0xe00
-   __TEXT.__objc_stubs: 0x52c0
-   __TEXT.__objc_methlist: 0x2138
-
-   __DATA_CONST.__objc_arraydata: 0x1d0
-   __DATA_CONST.__objc_arrayobj: 0x18
-   __DATA_CONST.__auth_got: 0x710
--  __DATA_CONST.__got: 0x4c0
-+  __DATA_CONST.__got: 0x4e8
-   __DATA_CONST.__auth_ptr: 0x68
-   __DATA.__objc_const: 0x4718
-   __DATA.__objc_selrefs: 0x17c8
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
+-1612.100.3.2.1
++1614.100.3.2.1
 Symbols:
 + _TUShouldUseSuperboxForAllProviders
 - _TUShouldUseSuperboxTelephonyProvider
 Functions:
 ~ sub_1000112a8 : 2040 -> 2032
-
 ```

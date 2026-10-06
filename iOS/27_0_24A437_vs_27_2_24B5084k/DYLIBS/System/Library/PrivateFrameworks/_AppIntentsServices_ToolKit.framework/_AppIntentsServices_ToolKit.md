@@ -2,69 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/_AppIntentsServices_ToolKit.framework/_AppIntentsServices_ToolKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x102b0` | `0x10f34` | **`+0xc84`** |
+| `__TEXT.__eh_frame` | `0x440` | `0x518` | **`+0xd8`** |
+| `__TEXT.__oslogstring` | `0x3be` | `0x45e` | **`+0xa0`** |
+| `__AUTH_CONST.__auth_got` | `0x728` | `0x780` | **`+0x58`** |
+| `__TEXT.__cstring` | `0x22a` | `0x24a` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x340` | `0x360` | **`+0x20`** |
+| `__DATA.__common` | `0x30` | `0x48` | **`+0x18`** |
+| `__DATA.__data` | `0x238` | `0x248` | **`+0x10`** |
+| `__TEXT.__const` | `0x5f0` | `0x5e8` | **`-0x8`** |
+| `__TEXT.__swift5_typeref` | `0x274` | `0x27c` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x4` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `—` | `0x4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -41.0.50.0.0
--  __TEXT.__text: 0xf8e4
--  __TEXT.__swift5_typeref: 0x274
--  __TEXT.__const: 0x5f0
--  __TEXT.__swift5_capture: 0xa0
--  __TEXT.__cstring: 0x22a
 +41.1.9.0.0
-+  __TEXT.__text: 0x1047c
-+  __TEXT.__const: 0x5e8
-+  __TEXT.__swift5_typeref: 0x27c
-   __TEXT.__constg_swiftt: 0x1fc
-   __TEXT.__swift5_reflstr: 0x84
-   __TEXT.__swift5_fieldmd: 0x10c
--  __TEXT.__swift5_types: 0x1c
--  __TEXT.__oslogstring: 0x3be
--  __TEXT.__swift5_proto: 0x14
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x3c8
--  __TEXT.__eh_frame: 0x440
-+  __TEXT.__swift5_types: 0x1c
-+  __TEXT.__swift5_capture: 0xa0
-+  __TEXT.__oslogstring: 0x45e
-+  __TEXT.__swift5_proto: 0x14
-+  __TEXT.__cstring: 0x24a
-+  __TEXT.__swift_as_entry: 0x4
-+  __TEXT.__swift_as_ret: 0x4
-+  __TEXT.__swift_as_cont: 0x8
-+  __TEXT.__unwind_info: 0x3f0
-+  __TEXT.__eh_frame: 0x518
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x328
-   __AUTH_CONST.__objc_const: 0x268
--  __AUTH_CONST.__auth_got: 0x728
-+  __AUTH_CONST.__auth_got: 0x780
-   __AUTH.__data: 0x330
--  __DATA.__data: 0x238
--  __DATA.__common: 0x30
-+  __DATA.__data: 0x248
-+  __DATA.__common: 0x48
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 +  - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 328
--  Symbols:   304
+-  Symbols:   295
 -  CStrings:  33
 +  Functions: 342
-+  Symbols:   312
++  Symbols:   303
 +  CStrings:  36
- 
 Symbols:
 + ___swift_async_cont_functlets
 + ___swift_async_entry_functlets

@@ -2,72 +2,51 @@
 
 > `/Applications/DiagnosticsService.app/PlugIns/Diagnostic-8389.appex/Diagnostic-8389`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__objc_methname`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1dc9c` | `0x1deb0` | **`+0x214`** |
+| `__TEXT.__oslogstring` | `0x54` | `0x18f` | **`+0x13b`** |
+| `__TEXT.__objc_stubs` | `0xb00` | `0xb20` | **`+0x20`** |
+| `__TEXT.__auth_stubs` | `0xf70` | `0xf80` | **`+0x10`** |
+| `__TEXT.__const` | `0x36d0` | `0x36e0` | **`+0x10`** |
+| `__DATA.__objc_selrefs` | `0x4e8` | `0x4f0` | **`+0x8`** |
+| `__DATA_CONST.__auth_got` | `0x7c0` | `0x7c8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_data`
-- `__DATA.__data`
-- `__DATA.__bss`
-- `__DATA.__common`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__objc_methname`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -1374.0.5.0.0
--  __TEXT.__text: 0x1dc9c
--  __TEXT.__auth_stubs: 0xf70
--  __TEXT.__objc_stubs: 0xb00
 +1374.0.27.0.0
-+  __TEXT.__text: 0x1deb0
-+  __TEXT.__auth_stubs: 0xf80
-+  __TEXT.__objc_stubs: 0xb20
-   __TEXT.__objc_methlist: 0x5d4
--  __TEXT.__const: 0x36d0
-+  __TEXT.__const: 0x36e0
-   __TEXT.__cstring: 0x11bd
--  __TEXT.__oslogstring: 0x54
-+  __TEXT.__oslogstring: 0x18f
-   __TEXT.__objc_classname: 0x1f4
-   __TEXT.__objc_methname: 0x15fd
-   __TEXT.__objc_methtype: 0x86b
 
-   __DATA_CONST.__objc_protorefs: 0x78
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__objc_intobj: 0x48
--  __DATA_CONST.__auth_got: 0x7c0
-+  __DATA_CONST.__auth_got: 0x7c8
-   __DATA_CONST.__got: 0x230
-   __DATA_CONST.__auth_ptr: 0x198
-   __DATA.__objc_const: 0xbf0
--  __DATA.__objc_selrefs: 0x4e8
-+  __DATA.__objc_selrefs: 0x4f0
-   __DATA.__objc_ivar: 0xc
-   __DATA.__objc_data: 0x7e8
-   __DATA.__data: 0x11f0
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 857
 -  Symbols:   196
 -  CStrings:  438
 +  Symbols:   197
 +  CStrings:  447
- 
 Symbols:
 + __os_log_impl
 Functions:

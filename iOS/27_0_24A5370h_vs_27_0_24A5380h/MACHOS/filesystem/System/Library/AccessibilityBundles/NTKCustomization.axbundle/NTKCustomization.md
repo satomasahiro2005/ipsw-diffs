@@ -2,64 +2,45 @@
 
 > `/System/Library/AccessibilityBundles/NTKCustomization.axbundle/NTKCustomization`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf1ac` | `0xeff0` | **`-0x1bc`** |
+| `__DATA.__objc_const` | `0x3d58` | `0x3c38` | **`-0x120`** |
+| `__DATA_CONST.__cfstring` | `0x3680` | `0x35c0` | **`-0xc0`** |
+| `__DATA.__objc_data` | `0x21c0` | `0x2120` | **`-0xa0`** |
+| `__TEXT.__cstring` | `0x2e93` | `0x2e02` | **`-0x91`** |
+| `__TEXT.__gcc_except_tab` | `0x390` | `0x404` | **`+0x74`** |
+| `__TEXT.__objc_classname` | `0x117c` | `0x1118` | **`-0x64`** |
+| `__TEXT.__objc_methlist` | `0x187c` | `0x182c` | **`-0x50`** |
+| `__TEXT.__objc_stubs` | `0x1d60` | `0x1d80` | **`+0x20`** |
+| `__TEXT.__objc_methname` | `0x2569` | `0x2586` | **`+0x1d`** |
+| `__DATA_CONST.__objc_classlist` | `0x360` | `0x350` | **`-0x10`** |
+| `__DATA.__objc_selrefs` | `0xa68` | `0xa70` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x108` | `0x100` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x628` | `0x620` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__auth_got`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_catlist`
+- `__TEXT.__objc_methtype`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xf1ac
-+  __TEXT.__text: 0xeff0
-   __TEXT.__auth_stubs: 0x620
--  __TEXT.__objc_stubs: 0x1d60
--  __TEXT.__objc_methlist: 0x187c
-+  __TEXT.__objc_stubs: 0x1d80
-+  __TEXT.__objc_methlist: 0x182c
-   __TEXT.__const: 0x48
--  __TEXT.__gcc_except_tab: 0x390
--  __TEXT.__objc_classname: 0x117c
--  __TEXT.__cstring: 0x2e93
--  __TEXT.__objc_methname: 0x2569
-+  __TEXT.__gcc_except_tab: 0x404
-+  __TEXT.__objc_classname: 0x1118
-+  __TEXT.__cstring: 0x2e02
-+  __TEXT.__objc_methname: 0x2586
-   __TEXT.__objc_methtype: 0x228
--  __TEXT.__unwind_info: 0x628
-+  __TEXT.__unwind_info: 0x620
-   __DATA_CONST.__const: 0x3f0
--  __DATA_CONST.__cfstring: 0x3680
--  __DATA_CONST.__objc_classlist: 0x360
-+  __DATA_CONST.__cfstring: 0x35c0
-+  __DATA_CONST.__objc_classlist: 0x350
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_superrefs: 0x108
-+  __DATA_CONST.__objc_superrefs: 0x100
-   __DATA_CONST.__auth_got: 0x320
-   __DATA_CONST.__got: 0x198
--  __DATA.__objc_const: 0x3d58
--  __DATA.__objc_selrefs: 0xa68
-+  __DATA.__objc_const: 0x3c38
-+  __DATA.__objc_selrefs: 0xa70
-   __DATA.__objc_ivar: 0x4
--  __DATA.__objc_data: 0x21c0
-+  __DATA.__objc_data: 0x2120
-   __DATA.__bss: 0x40
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/ClockKit.framework/ClockKit
+-1032.0.0.0.0
++1034.0.0.0.0
 
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 525
--  Symbols:   1530
--  CStrings:  1388
+-  Symbols:   1514
+-  CStrings:  852
 +  Functions: 520
-+  Symbols:   1516
-+  CStrings:  1374
- 
-Sections:
-~ __TEXT.__objc_methtype : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__auth_got : content changed
++  Symbols:   1500
++  CStrings:  844
 Symbols:
 + GCC_except_table215
 + GCC_except_table217
@@ -128,5 +109,4 @@ CStrings:
 - "_close"
 - "_header"
 - "close.button"
-
 ```

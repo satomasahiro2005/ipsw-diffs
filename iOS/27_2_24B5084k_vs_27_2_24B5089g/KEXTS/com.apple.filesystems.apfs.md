@@ -2,55 +2,51 @@
 
 > `com.apple.filesystems.apfs`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x1539a8` | `0x153b3c` | **`+0x194`** |
+| `__TEXT.__cstring` | `0x4ff4b` | `0x4ffa5` | **`+0x5a`** |
+| `__DATA_CONST.__const` | `0x6890` | `0x6898` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3288.40.13.0.0
 +3288.40.14.0.0
-   __TEXT.__const: 0x94c
--  __TEXT.__cstring: 0x4ff4b
--  __TEXT_EXEC.__text: 0x151068
-+  __TEXT.__cstring: 0x4ffa5
-+  __TEXT_EXEC.__text: 0x1511c8
-   __TEXT_EXEC.__auth_stubs: 0x2360
-   __DATA.__data: 0x75c
-   __DATA_CONST.__mod_init_func: 0x10
-   __DATA_CONST.__mod_term_func: 0x10
--  __DATA_CONST.__const: 0x6890
-+  __DATA_CONST.__const: 0x6898
-   __DATA_CONST.__kalloc_type: 0x5440
-   __DATA_CONST.__kalloc_var: 0x2bc0
-   __DATA_CONST.__assert: 0x14
 
-   __DATA_CONST.__auth_ptr: 0x8
-   Functions: 2395
-   Symbols:   0
--  CStrings:  6954
-+  CStrings:  6955
- 
+-  CStrings:  6955
++  CStrings:  6956
 Functions:
-~ sub_fffffe000ab3818c -> sub_fffffe000aac3c0c : 948 -> 976
-~ sub_fffffe000ab38540 -> sub_fffffe000aac3fdc : 384 -> 388
-~ sub_fffffe000ab48864 -> sub_fffffe000aad4304 : 3448 -> 3552
-~ sub_fffffe000abbe8fc -> sub_fffffe000ab4a404 : 3332 -> 3392
-~ sub_fffffe000abcb1f4 -> sub_fffffe000ab56d38 : 2268 -> 2272
-~ sub_fffffe000abd5f64 -> sub_fffffe000ab61aac : 644 -> 668
-~ sub_fffffe000ac3f7f8 -> sub_fffffe000abcb358 : 3800 -> 3848
-~ sub_fffffe000ac410e4 -> sub_fffffe000abccc74 : 6368 -> 6376
-~ sub_fffffe000ac43a00 -> sub_fffffe000abcf598 : 2504 -> 2508
-~ sub_fffffe000ac443c8 -> sub_fffffe000abcff64 : 4340 -> 4364
-~ sub_fffffe000ac48140 -> sub_fffffe000abd3cf4 : 3688 -> 3732
+~ sub_fffffff00aa18ca4 -> sub_fffffff00aa1be44 : 948 -> 976
+~ sub_fffffff00aa19058 -> sub_fffffff00aa1c214 : 384 -> 388
+~ sub_fffffff00aa294f8 -> sub_fffffff00aa2c6b8 : 3448 -> 3552
+~ sub_fffffff00aaa09a4 -> sub_fffffff00aaa3bcc : 3332 -> 3392
+~ sub_fffffff00aaad334 -> sub_fffffff00aab0598 : 2268 -> 2272
+~ sub_fffffff00aab822c -> sub_fffffff00aabb494 : 656 -> 680
+~ sub_fffffff00ab2259c -> sub_fffffff00ab2581c : 3832 -> 3888
+~ sub_fffffff00ab23eac -> sub_fffffff00ab27164 : 6384 -> 6396
+~ sub_fffffff00ab2680c -> sub_fffffff00ab29ad0 : 2520 -> 2528
+~ sub_fffffff00ab271e4 -> sub_fffffff00ab2a4b0 : 4344 -> 4376
+~ sub_fffffff00ab2af74 -> sub_fffffff00ab2e260 : 3736 -> 3808
 CStrings:
 + "%s:%d: %s Defrag run time %llu.%03llumSec, reallocated %llu blocks in %llu extents across %llu dstreams, finished with error %d\n"
 + "12111112122212121111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
 + "12111112122212121112111222222222222222221111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111121111111111111111111111111111111111111111111111111111111111111111111111111111111111111111112"
++ "19:33:45"
 + "2026/09/13"
 + "3288.40.14"
 + "FX defrag: Number of dstreams with at least one reallocated extent"
++ "Sep 13 2026"
 + "apfs-3288.40.14"
 - "%s:%d: %s Defrag run time %llu.%03llumSec, reallocated %llu blocks in %llu extents, finished with error %d\n"
 - "1211111212221212111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
 - "1211111212221212111211122222222222222222111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111112111111111111111111111111111111111111111111111111111111111111111111111111111111111111111112"
 - "2026/09/04"
+- "23:03:37"
 - "3288.40.13"
+- "Sep  4 2026"
 - "apfs-3288.40.13"
 ```

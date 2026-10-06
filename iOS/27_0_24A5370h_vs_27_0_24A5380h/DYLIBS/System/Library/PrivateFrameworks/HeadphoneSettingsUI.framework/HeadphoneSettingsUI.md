@@ -2,119 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/HeadphoneSettingsUI.framework/HeadphoneSettingsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1dd858` | `0x20de9c` | **`+0x30644`** |
+| `__TEXT.__swift5_typeref` | `0x7bda` | `0xc64e` | **`+0x4a74`** |
+| `__AUTH_CONST.__const` | `0xf6a8` | `0x10bf8` | **`+0x1550`** |
+| `__TEXT.__const` | `0xc6e4` | `0xd6d4` | **`+0xff0`** |
+| `__DATA.__bss` | `0xefb8` | `0xfc78` | **`+0xcc0`** |
+| `__DATA.__data` | `0x3290` | `0x3b00` | **`+0x870`** |
+| `__TEXT.__swift5_capture` | `0x4840` | `0x4ff0` | **`+0x7b0`** |
+| `__DATA_DIRTY.__objc_data` | `0xa0` | `0x558` | **`+0x4b8`** |
+| `__AUTH.__objc_data` | `0x35a8` | `0x3100` | **`-0x4a8`** |
+| `__TEXT.__unwind_info` | `0x3bb0` | `0x3f48` | **`+0x398`** |
+| `__TEXT.__constg_swiftt` | `0x4638` | `0x49b4` | **`+0x37c`** |
+| `__TEXT.__eh_frame` | `0x1490` | `0x17c0` | **`+0x330`** |
+| `__AUTH_CONST.__auth_got` | `0x20f0` | `0x2348` | **`+0x258`** |
+| `__TEXT.__swift5_fieldmd` | `0x2054` | `0x2260` | **`+0x20c`** |
+| `__TEXT.__cstring` | `0xa4ae` | `0xa69e` | **`+0x1f0`** |
+| `__TEXT.__oslogstring` | `0x685f` | `0x69ff` | **`+0x1a0`** |
+| `__TEXT.__swift5_reflstr` | `0x1e8b` | `0x202b` | **`+0x1a0`** |
+| `__AUTH.__data` | `0x29f0` | `0x2b58` | **`+0x168`** |
+| `__DATA_CONST.__got` | `0xf18` | `0x1060` | **`+0x148`** |
+| `__TEXT.__swift5_assocty` | `0xc88` | `0xd78` | **`+0xf0`** |
+| `__TEXT.__swift5_proto` | `0xa90` | `0xb04` | **`+0x74`** |
+| `__TEXT.__swift5_types` | `0x4c4` | `0x520` | **`+0x5c`** |
+| `__DATA_DIRTY.__data` | `—` | `0x50` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2830` | `0x2860` | **`+0x30`** |
+| `__TEXT.__swift_as_cont` | `0xd8` | `0x104` | **`+0x2c`** |
+| `__TEXT.__swift5_builtin` | `0x35c` | `0x384` | **`+0x28`** |
+| `__TEXT.__swift_as_entry` | `0x94` | `0xb4` | **`+0x20`** |
+| `__TEXT.__swift_as_ret` | `0x60` | `0x7c` | **`+0x1c`** |
+| `__TEXT.__swift5_protos` | `0xa4` | `0xa8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1dd858
-+  __TEXT.__text: 0x20de9c
-   __TEXT.__objc_methlist: 0x36cc
--  __TEXT.__const: 0xc6e4
--  __TEXT.__cstring: 0xa4ae
-+  __TEXT.__const: 0xd6d4
-+  __TEXT.__cstring: 0xa69e
-   __TEXT.__gcc_except_tab: 0x578
--  __TEXT.__oslogstring: 0x685f
--  __TEXT.__swift5_typeref: 0x7bda
--  __TEXT.__swift5_capture: 0x4840
--  __TEXT.__swift5_reflstr: 0x1e8b
--  __TEXT.__swift5_assocty: 0xc88
--  __TEXT.__swift5_fieldmd: 0x2054
--  __TEXT.__constg_swiftt: 0x4638
--  __TEXT.__swift5_builtin: 0x35c
--  __TEXT.__swift5_protos: 0xa4
--  __TEXT.__swift5_proto: 0xa90
--  __TEXT.__swift5_types: 0x4c4
--  __TEXT.__swift_as_entry: 0x94
--  __TEXT.__swift_as_ret: 0x60
--  __TEXT.__swift_as_cont: 0xd8
-+  __TEXT.__oslogstring: 0x69ff
-+  __TEXT.__swift5_typeref: 0xc64e
-+  __TEXT.__swift5_capture: 0x4ff0
-+  __TEXT.__swift5_reflstr: 0x202b
-+  __TEXT.__swift5_assocty: 0xd78
-+  __TEXT.__swift5_fieldmd: 0x2260
-+  __TEXT.__constg_swiftt: 0x49b4
-+  __TEXT.__swift5_builtin: 0x384
-+  __TEXT.__swift5_protos: 0xa8
-+  __TEXT.__swift5_proto: 0xb04
-+  __TEXT.__swift5_types: 0x520
-+  __TEXT.__swift_as_entry: 0xb4
-+  __TEXT.__swift_as_ret: 0x7c
-+  __TEXT.__swift_as_cont: 0x104
-   __TEXT.__swift5_mpenum: 0x2c
--  __TEXT.__unwind_info: 0x3bb0
--  __TEXT.__eh_frame: 0x1490
-+  __TEXT.__unwind_info: 0x3f48
-+  __TEXT.__eh_frame: 0x17c0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-40.31.1.0.0
++40.33.1.0.0
 
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2830
-+  __DATA_CONST.__objc_selrefs: 0x2860
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__objc_superrefs: 0xf0
-   __DATA_CONST.__objc_arraydata: 0x248
--  __DATA_CONST.__got: 0xf18
--  __AUTH_CONST.__const: 0xf6a8
-+  __DATA_CONST.__got: 0x1060
-+  __AUTH_CONST.__const: 0x10bf8
-   __AUTH_CONST.__cfstring: 0x3200
-   __AUTH_CONST.__objc_const: 0xa770
-   __AUTH_CONST.__objc_intobj: 0x1e0
-   __AUTH_CONST.__objc_arrayobj: 0x108
-   __AUTH_CONST.__objc_doubleobj: 0xa0
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x20f0
--  __AUTH.__objc_data: 0x35a8
--  __AUTH.__data: 0x29f0
-+  __AUTH_CONST.__auth_got: 0x2348
-+  __AUTH.__objc_data: 0x3100
-+  __AUTH.__data: 0x2b58
-   __DATA.__objc_ivar: 0x688
--  __DATA.__data: 0x3290
-+  __DATA.__data: 0x3b00
-   __DATA.__objc_stublist: 0x8
--  __DATA.__bss: 0xefb8
-+  __DATA.__bss: 0xfc78
-   __DATA.__common: 0x598
--  __DATA_DIRTY.__objc_data: 0xa0
-+  __DATA_DIRTY.__objc_data: 0x558
-+  __DATA_DIRTY.__data: 0x50
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8613
--  Symbols:   8961
--  CStrings:  2084
+-  Symbols:   3931
+-  CStrings:  1685
 +  Functions: 9356
-+  Symbols:   9402
-+  CStrings:  2109
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __DATA.__objc_ivar : content changed
-~ __DATA.__objc_stublist : content changed
++  Symbols:   4110
++  CStrings:  1710
 Symbols:
 + _OBJC_CLASS_$_AADeviceConfig
 + ___swift_memcpy17_8
@@ -141,12 +75,6 @@ Symbols:
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVyAHyAHyAcAE7gesture_9includingQrqd___AA11GestureMaskVtAA0L0Rd__lFQOyAHyAHyAHyAA6HStackVyAA05TupleI0VyAHyAHyAHyAcAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAHyAHyAHyAcAE0d3TapL05count7performQrSi_yyctFQOyAHyAHyAHyAA012_ConditionalI0VyAZyAHyAHyAA5ImageVAA25_ForegroundStyleModifier2VyAA22HierarchicalShapeStyleVA4_GGAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAHyAHyA0_A12_GAA24_ForegroundStyleModifierVyA4_GGGAZyA18_A18_GGAA12_FrameLayoutVGAA01_I13ShapeModifierVyAA7CapsuleVGGAA19_BackgroundModifierVyAHyAHyAA06_ShapeC0VyA28_AA13AnyShapeStyleVGAA22_MatchedGeometryEffectVySSGGAA14_PaddingLayoutVGSgGG_Qo_AA0S18AttachmentModifierVGA23_GAA01_I17ShapeKindModifierVyAA9RectangleVGG_Qo_A50_GAA14_OpacityEffectVGAA16_FlexFrameLayoutVG_AHyAHyAcAEArSQrAU_tFQOyAHyAHyA48_A23_GA57_G_Qo_A50_GA65_GAHyAHyAZyAHyAcAE0P7FocusedyQrAA0S10FocusStateV7BindingVySb_GFQOyAHyAcAEArSQrAU_tFQOyAHyAcAEAvwXQrSi_yyctFQOyAHyAHyAA6ZStackVyAHy017HeadphoneSettingsB0014AdaptiveSliderC0VA65_GGA23_GA26_yA56_GG_Qo_A57_G_Qo_A50_G_Qo_A50_GA93_GA65_GAA18_AnimationModifierVySbGGA71_QPGGAA24_BackgroundStyleModifierVyAA5ColorVGGA98_GA29_G_AA06_EndedL0VyAA08_ChangedL0VyAA04DragL0VGGQo_A32_yAA14GeometryReaderVyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAHyA105_AA25_AppearanceActionModifierVG_12CoreGraphics7CGFloatVQo_GGGA65_GAA16_OverlayModifierVyAHyA80_018AdaptiveSliderThumC0VA50_GSgGG_So17AAAutoANCStrengthVQo_HO
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVyAA6VStackVyAA05TupleI0VyAHyAHy017HeadphoneSettingsB029SegmentedListeningModeControlVAA30_EnvironmentKeyWritingModifierVy0L7Manager0L6DeviceCSgGGAQyAR8AADeviceCSgGG_AM0pQ6LabelsVQPGGAA017_AppearanceActionU0VG_So011CBListeningP0VQo__AO05AudioP0OQo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE12onTapGesture5count7performQrSi_yyctFQOyAA15ModifiedContentVyAHyAHyAA012_ConditionalJ0VyAJyAHyAHyAA5ImageVAA25_ForegroundStyleModifier2VyAA017HierarchicalShapeN0VAPGGAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAHyAHyAlXGAA01_mnU0VyAPGGGAJyA2_A2_GGAA12_FrameLayoutVGAA01_jqU0VyAA7CapsuleVGGAA011_BackgroundU0VyAHyAHyAA01_qC0VyA12_AA03AnyqN0VGAA22_MatchedGeometryEffectVySSGGAA08_PaddingX0VGSgGG_Qo_HO
-+ _objc_msgSend$setPreferenceEQGainHigh:
-+ _objc_msgSend$setPreferenceEQGainLow:
-+ _objc_msgSend$setPreferenceEQGainMid:
-+ _objc_msgSend$systemGray3Color
-+ _objc_msgSend$systemGray4Color
-+ _objc_msgSend$systemGray5Color
 + _swift_checkMetadataState
 + _symbolic $s19HeadphoneSettingsUI42ModernListeningModeControlFeatureProvidingP
 + _symbolic $ss12CaseIterableP
@@ -385,5 +313,4 @@ CStrings:
 + "sendSliderValue(value:)"
 - "Capture a photo, start or stop recording, and more using either Press Once or Press and Hold. When using AirPods for camera actions, if you select Press Once, media control gestures will be unavailable, and if you select Press and Hold, listening mode and Siri gestures will be unavailable."
 - "Volume"
-
 ```

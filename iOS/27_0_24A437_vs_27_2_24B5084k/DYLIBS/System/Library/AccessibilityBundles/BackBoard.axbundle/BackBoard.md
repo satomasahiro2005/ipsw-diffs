@@ -2,88 +2,44 @@
 
 > `/System/Library/AccessibilityBundles/BackBoard.axbundle/BackBoard`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x281ec` | `0x28850` | **`+0x664`** |
+| `__TEXT.__oslogstring` | `0x1fc0` | `0x2233` | **`+0x273`** |
+| `__AUTH_CONST.__objc_const` | `0x3098` | `0x3158` | **`+0xc0`** |
+| `__TEXT.__gcc_except_tab` | `0x698` | `0x5e8` | **`-0xb0`** |
+| `__AUTH_CONST.__cfstring` | `0x1da0` | `0x1e20` | **`+0x80`** |
+| `__AUTH_CONST.__const` | `0xfc0` | `0x1040` | **`+0x80`** |
+| `__TEXT.__cstring` | `0x2369` | `0x23d1` | **`+0x68`** |
+| `__TEXT.__dlopen_cstrs` | `0x2d9` | `0x33b` | **`+0x62`** |
+| `__AUTH.__objc_data` | `0x260` | `0x2b0` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x232c` | `0x237c` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0xc68` | `0xca0` | **`+0x38`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1c08` | `0x1c38` | **`+0x30`** |
+| `__DATA.__bss` | `0x510` | `0x538` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x8f8` | `0x910` | **`+0x18`** |
+| `__DATA_DIRTY.__bss` | `0x208` | `0x218` | **`+0x10`** |
+| `__TEXT.__const` | `0x500` | `0x510` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0xd10` | `0xd00` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x6a8` | `0x6b0` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x158` | `0x160` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x160` | `0x164` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3048.0.0.0.0
--  __TEXT.__text: 0x26fb0
--  __TEXT.__objc_methlist: 0x232c
--  __TEXT.__dlopen_cstrs: 0x2d9
--  __TEXT.__const: 0x500
--  __TEXT.__cstring: 0x2369
--  __TEXT.__oslogstring: 0x1fc0
 +3050.3.0.0.0
-+  __TEXT.__text: 0x275c0
-+  __TEXT.__objc_methlist: 0x237c
-+  __TEXT.__dlopen_cstrs: 0x33b
-+  __TEXT.__const: 0x510
-+  __TEXT.__cstring: 0x23d1
-+  __TEXT.__oslogstring: 0x2233
-   __TEXT.__constg_swiftt: 0x2e0
-   __TEXT.__swift5_typeref: 0x17e
-   __TEXT.__swift5_reflstr: 0x115
 
-   __TEXT.__swift_as_entry: 0x18
-   __TEXT.__swift_as_ret: 0x14
-   __TEXT.__swift_as_cont: 0x18
--  __TEXT.__gcc_except_tab: 0x698
--  __TEXT.__unwind_info: 0x1010
-+  __TEXT.__gcc_except_tab: 0x5e8
-+  __TEXT.__unwind_info: 0xff8
-   __TEXT.__eh_frame: 0x218
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x8f8
--  __DATA_CONST.__objc_classlist: 0x158
-+  __DATA_CONST.__const: 0x910
-+  __DATA_CONST.__objc_classlist: 0x160
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1c08
-+  __DATA_CONST.__objc_selrefs: 0x1c38
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0xc0
-   __DATA_CONST.__objc_arraydata: 0x80
--  __DATA_CONST.__got: 0x6a8
--  __AUTH_CONST.__const: 0xfc0
--  __AUTH_CONST.__cfstring: 0x1da0
--  __AUTH_CONST.__objc_const: 0x3098
-+  __DATA_CONST.__got: 0x6b0
-+  __AUTH_CONST.__const: 0x1040
-+  __AUTH_CONST.__cfstring: 0x1e20
-+  __AUTH_CONST.__objc_const: 0x3158
-   __AUTH_CONST.__objc_intobj: 0x1c8
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__objc_dictobj: 0xa0
-   __AUTH_CONST.__objc_arrayobj: 0x48
--  __AUTH_CONST.__auth_got: 0xc68
--  __AUTH.__objc_data: 0x260
--  __DATA.__objc_ivar: 0x160
-+  __AUTH_CONST.__auth_got: 0xca0
-+  __AUTH.__objc_data: 0x2b0
-+  __DATA.__objc_ivar: 0x164
-   __DATA.__data: 0x3b8
-   __DATA_DIRTY.__objc_data: 0xdd8
-   __DATA_DIRTY.__data: 0x138
--  __DATA_DIRTY.__bss: 0x208
-+  __DATA_DIRTY.__bss: 0x218
-   __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1027
--  Symbols:   2846
+-  Symbols:   2106
 -  CStrings:  492
 +  Functions: 1037
-+  Symbols:   2869
++  Symbols:   2124
 +  CStrings:  506
- 
 Symbols:
 + +[AXBChatterboxManager initializeMonitor]
 + -[AXBChatterboxManager setChatterboxEnabled:]
@@ -134,11 +90,6 @@ Symbols:
 + ___41+[AXBChatterboxManager initializeMonitor]_block_invoke_2
 + ___AXBCaseAccommodationsEnabled_block_invoke
 + ___AXBCaseAccommodationsEnabled_block_invoke_2
-+ _objc_msgSend$_reconcileGrayscaleCacheWithColorFilters
-+ _objc_msgSend$chatterboxEnabled
-+ _objc_msgSend$setChatterboxEnabled:
-+ _objc_msgSend$startChatterboxAndReturnError:
-+ _objc_msgSend$stopChatterboxAndReturnError:
 + _sAXBCaseAccommodationsEnabled
 - GCC_except_table196
 - GCC_except_table229

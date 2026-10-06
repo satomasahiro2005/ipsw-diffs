@@ -2,105 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/HealthMenstrualCyclesUI.framework/HealthMenstrualCyclesUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5626c` | `0x6cf10` | **`+0x16ca4`** |
+| `__DATA.__bss` | `0x1950` | `0x2710` | **`+0xdc0`** |
+| `__TEXT.__const` | `0x22f4` | `0x2eb4` | **`+0xbc0`** |
+| `__DATA.__data` | `0x13f0` | `0x1c78` | **`+0x888`** |
+| `__TEXT.__swift5_typeref` | `0xf7a` | `0x13fa` | **`+0x480`** |
+| `__AUTH.__data` | `0x11b8` | `0x1538` | **`+0x380`** |
+| `__AUTH_CONST.__const` | `0x1478` | `0x17f8` | **`+0x380`** |
+| `__TEXT.__cstring` | `0x1233` | `0x15a7` | **`+0x374`** |
+| `__TEXT.__unwind_info` | `0x1240` | `0x1570` | **`+0x330`** |
+| `__TEXT.__swift5_fieldmd` | `0xbfc` | `0xeb0` | **`+0x2b4`** |
+| `__AUTH_CONST.__auth_got` | `0xf00` | `0x11b0` | **`+0x2b0`** |
+| `__TEXT.__constg_swiftt` | `0x1268` | `0x1514` | **`+0x2ac`** |
+| `__DATA_CONST.__got` | `0x800` | `0x9a8` | **`+0x1a8`** |
+| `__AUTH_CONST.__objc_const` | `0x15b0` | `0x1750` | **`+0x1a0`** |
+| `__TEXT.__swift5_reflstr` | `0x103f` | `0x11cd` | **`+0x18e`** |
+| `__TEXT.__swift5_assocty` | `0x2d8` | `0x400` | **`+0x128`** |
+| `__AUTH.__objc_data` | `0x1020` | `0x1100` | **`+0xe0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x830` | `0x8d8` | **`+0xa8`** |
+| `__TEXT.__swift5_proto` | `0xbc` | `0x128` | **`+0x6c`** |
+| `__TEXT.__swift5_capture` | `0x3e8` | `0x450` | **`+0x68`** |
+| `__TEXT.__objc_methlist` | `0x724` | `0x76c` | **`+0x48`** |
+| `__TEXT.__swift5_builtin` | `0x50` | `0x8c` | **`+0x3c`** |
+| `__TEXT.__swift5_types` | `0xc8` | `0xf8` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x228` | `0x248` | **`+0x20`** |
+| `__DATA.__common` | `0x88` | `0x98` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x78` | `0x88` | **`+0x10`** |
+| `__TEXT.__eh_frame` | `0x138` | `0x130` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -7027.0.72.2.7
--  __TEXT.__text: 0x53b68
--  __TEXT.__objc_methlist: 0x724
--  __TEXT.__const: 0x22f4
--  __TEXT.__cstring: 0x1233
--  __TEXT.__swift5_typeref: 0xf7a
--  __TEXT.__swift5_reflstr: 0x103f
--  __TEXT.__swift5_assocty: 0x2d8
--  __TEXT.__constg_swiftt: 0x1268
--  __TEXT.__swift5_fieldmd: 0xbfc
--  __TEXT.__swift5_builtin: 0x50
--  __TEXT.__swift5_capture: 0x3e8
--  __TEXT.__swift5_proto: 0xbc
--  __TEXT.__swift5_types: 0xc8
 +7027.1.36.2.7
-+  __TEXT.__text: 0x6a1a8
-+  __TEXT.__objc_methlist: 0x76c
-+  __TEXT.__const: 0x2eb4
-+  __TEXT.__cstring: 0x15a7
-+  __TEXT.__swift5_typeref: 0x13fa
-+  __TEXT.__swift5_reflstr: 0x11cd
-+  __TEXT.__swift5_assocty: 0x400
-+  __TEXT.__constg_swiftt: 0x1514
-+  __TEXT.__swift5_fieldmd: 0xeb0
-+  __TEXT.__swift5_builtin: 0x8c
-+  __TEXT.__swift5_capture: 0x450
-+  __TEXT.__swift5_proto: 0x128
-+  __TEXT.__swift5_types: 0xf8
-   __TEXT.__oslogstring: 0x85
--  __TEXT.__unwind_info: 0x1848
--  __TEXT.__eh_frame: 0x138
-+  __TEXT.__unwind_info: 0x1d88
-+  __TEXT.__eh_frame: 0x130
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x228
--  __DATA_CONST.__objc_classlist: 0x78
-+  __DATA_CONST.__const: 0x248
-+  __DATA_CONST.__objc_classlist: 0x88
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x830
-+  __DATA_CONST.__objc_selrefs: 0x8d8
-   __DATA_CONST.__objc_superrefs: 0x10
--  __DATA_CONST.__got: 0x800
--  __AUTH_CONST.__const: 0x1478
-+  __DATA_CONST.__got: 0x9a8
-+  __AUTH_CONST.__const: 0x17f8
-   __AUTH_CONST.__cfstring: 0x4c0
--  __AUTH_CONST.__objc_const: 0x15b0
--  __AUTH_CONST.__auth_got: 0xf00
--  __AUTH.__objc_data: 0x1020
--  __AUTH.__data: 0x11b8
-+  __AUTH_CONST.__objc_const: 0x1750
-+  __AUTH_CONST.__auth_got: 0x11b0
-+  __AUTH.__objc_data: 0x1100
-+  __AUTH.__data: 0x1538
-   __DATA.__objc_ivar: 0x40
--  __DATA.__data: 0x13f0
--  __DATA.__common: 0x88
-+  __DATA.__data: 0x1c78
-+  __DATA.__common: 0x98
-   __DATA_DIRTY.__objc_data: 0x50
-   __DATA_DIRTY.__data: 0xb0
-   __DATA_DIRTY.__bss: 0x80
 
-   - /System/Library/PrivateFrameworks/HealthUI.framework/HealthUI
-   - /System/Library/PrivateFrameworks/MentalHealth.framework/MentalHealth
-   - /System/Library/PrivateFrameworks/SleepHealth.framework/SleepHealth
 +  - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-+  - /usr/lib/swift/libswiftAVFoundation.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftCoreImage.dylib
-   - /usr/lib/swift/libswiftCoreLocation.dylib
-+  - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /usr/lib/swift/libswiftAVFoundation.dylib
+
++  - /usr/lib/swift/libswiftCoreMIDI.dylib
+
 -  Functions: 1928
--  Symbols:   867
+-  Symbols:   675
 -  CStrings:  114
 +  Functions: 2348
-+  Symbols:   978
++  Symbols:   766
 +  CStrings:  135
- 
 Symbols:
 + _CGBitmapContextCreate
 + _CGColorSpaceCreateDeviceRGB
@@ -155,27 +107,6 @@ Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA014_ViewModifier_D0Vy021HealthMenstrualCyclesB018AdaptableBlendMode07_C9CD68M24E6CFBC9EC1AA02A748454AC6LLVGAA01_kL6EffectVGAA0E0HPAjaNHPyHC_AlA0eF0HPyHCHC
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyACyACyAA4ViewPAAE10gaugeStyleyQrqd__AA05GaugeG0Rd__lFQOyAA0H0VyAA4TextVAA05EmptyE0VA2MG_021HealthMenstrualCyclesB0022PregnancyStripedLinearhG0VQo_AA12_FrameLayoutVGAA010_FixedSizeR0VGAA30_EnvironmentKeyWritingModifierVy12CoreGraphics7CGFloatVGGAA023AccessibilityAttachmentX0VGAaDHPA3_AaDHPAxaDHPAuaDHPqd0__AaDHD3_ARHO_AtA0eX0HPyHCHC_AwAA7_HPyHCHC_A2_AAA7_HPyHCHC_A5_AAA7_HPyHCHC
 + _get_witness_table 7SwiftUI19_ConditionalContentVyAA08ModifiedD0VyAA4ViewPAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAA6VStackVyAEyAA0F8ThatFitsVyAA05TupleD0VyAEyAA6HStackVyAQyAEyAMyAQyASyAQyAEyAA4TextVAA0J18AttachmentModifierVG_AQyAA6SpacerV_AEyAEyAEyAA5ImageVAA022_EnvironmentKeyWritingT0VyAA4FontVSgGGA2_yAA5ColorVSgGGA2_yAA13AnyShapeStyleVSgGGQPGSgQPGG_AEyAEyAEyAU021HealthMenstrualCyclesB018AdaptableBlendMode33_C9CD68C9E6CFBC9EC1AA02A748454AC6LLVGAA16_FixedSizeLayoutVGAWGQPGGAA14_PaddingLayoutVG_AEyAA7DividerVAA13_OffsetEffectVGAEyAMyAQyA29__A29_QPGGA34_GAzgAE22containerRelativeFrame_9alignment_QrAA4AxisO3SetV_AA9AlignmentV12CoreGraphics7CGFloatVA54__A47_tctFQOyAEyAMyAQyASyAQyAEyA22_26PregnancyModeTimelineGaugeVA34_G_AEyA17_A34_GQPGG_AOyAQyASyAQyA30__AZA30_QPGG_ASyAQyAMyAQyA30__A30_QPGG_AZQPGGQPGGQPGGA34_G_Qo_QPGGA39_G_AEyAA6ZStackVyAQyASyAQyAZ_AEyAEyA17_AA12_FrameLayoutVGA34_GQPGG_ASyAQyAMyAQyA32__A42_QPGG_AzgAEA44__A45__QrA49__A51_A54_A54__A47_tctFQOyAEyAMyAQyA57__A68_QPGGA34_G_Qo_QPGGQPGGA34_GA77_yAQyA83__AEyAMyAQyAEyASyAQyA35__AEyA37_A34_GA43_QPGGA39_G_A87_QPGGA39_GQPGGQPGGA34_GG_Qo_AWGAEyAEyAEyAgAEAhIQrAK_tFQOyAMyAQyA32__A87_QPGG_Qo_AWGA34_GA34_GGAaFHPA109_AaFHPqd__AaFHD2_A108_HO_AwA0fT0HPyHCHC_A115_AaFHPA114_AaFHPA113_AaFHPqd__AaFHD2_A112_HO_AwAA117_HPyHCHC_A34_AAA117_HPyHCHC_A34_AAA117_HPyHCHCHC
-+ _objc_msgSend$CGContext
-+ _objc_msgSend$bleedingAfterMenopauseLevel
-+ _objc_msgSend$displayScale
-+ _objc_msgSend$drawAtPoint:
-+ _objc_msgSend$fontDescriptorByAddingAttributes:
-+ _objc_msgSend$fontDescriptorWithDesign:
-+ _objc_msgSend$fontDescriptorWithSymbolicTraits:
-+ _objc_msgSend$fontWithDescriptor:size:
-+ _objc_msgSend$hkmc_ovulationDayImageHighContrast
-+ _objc_msgSend$imageAsset
-+ _objc_msgSend$imageWithTraitCollection:
-+ _objc_msgSend$initWithRed:green:blue:alpha:
-+ _objc_msgSend$invalidateIntrinsicContentSize
-+ _objc_msgSend$preferredFontDescriptorWithTextStyle:
-+ _objc_msgSend$setContentHuggingPriority:forAxis:
-+ _objc_msgSend$setFill
-+ _objc_msgSend$setScale:
-+ _objc_msgSend$size
-+ _objc_msgSend$systemGray5Color
-+ _objc_msgSend$tertiaryLabelColor
-+ _objc_msgSend$userInterfaceStyle
 + _objc_release_x9
 + _objc_retain_x25
 + _objc_retain_x27
@@ -216,7 +147,6 @@ Symbols:
 + _type_layout_string So12UIFontWeighta
 + _type_layout_string So6CGSizeV
 - ___swift_memcpy192_8
-- _objc_msgSend$hkmc_ovulationDayCycleTimelineReversedColor
 CStrings:
 + ".MenstrualCycle."
 + "FIRST_TRIMESTER_SHORT"

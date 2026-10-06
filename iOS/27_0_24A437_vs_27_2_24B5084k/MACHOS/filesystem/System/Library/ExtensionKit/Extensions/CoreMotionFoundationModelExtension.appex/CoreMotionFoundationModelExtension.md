@@ -2,27 +2,28 @@
 
 > `/System/Library/ExtensionKit/Extensions/CoreMotionFoundationModelExtension.appex/CoreMotionFoundationModelExtension`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9488` | `0x9490` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__TEXT.__const`
-- `__TEXT.__swift5_entry`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
 - `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA.__data`
 
-```diff
+### Other Changes
 
- 26.0.0.0.0
--  __TEXT.__text: 0x8e48
-+  __TEXT.__text: 0x8e50
-   __TEXT.__auth_stubs: 0x8a0
-   __TEXT.__objc_stubs: 0xa0
-   __TEXT.__const: 0x292
+```text
 Functions:
-~ sub_100002520 : 864 -> 868
-~ sub_100002970 -> sub_100002974 : 128 -> 132
+~ sub_1000025a0 : 880 -> 884
+~ sub_100002a40 -> sub_100002a44 : 140 -> 144
 ```

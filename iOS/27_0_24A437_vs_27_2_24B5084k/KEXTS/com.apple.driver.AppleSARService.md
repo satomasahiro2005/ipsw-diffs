@@ -2,35 +2,26 @@
 
 > `com.apple.driver.AppleSARService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0xfb790` | `0xfc7d8` | **`+0x1048`** |
+| `__TEXT.__cstring` | `0x1fd60` | `0x200b6` | **`+0x356`** |
+| `__TEXT.__os_log` | `0x24f7a` | `0x25297` | **`+0x31d`** |
+| `__DATA_CONST.__const` | `0xdd08` | `0xdec8` | **`+0x1c0`** |
+
+### Other Changes
+
 ```diff
 
 -1585.0.0.0.0
--  __TEXT.__os_log: 0x24f7a
-+1594.0.0.0.0
-+  __TEXT.__os_log: 0x25297
-   __TEXT.__const: 0x1286
--  __TEXT.__cstring: 0x1fd60
--  __TEXT_EXEC.__text: 0xfa188
-+  __TEXT.__cstring: 0x200b6
-+  __TEXT_EXEC.__text: 0xfb1c0
-   __TEXT_EXEC.__auth_stubs: 0x730
-   __DATA.__data: 0x133
-   __DATA.__common: 0x11b8
-   __DATA_CONST.__mod_init_func: 0xe8
-   __DATA_CONST.__mod_term_func: 0xf0
--  __DATA_CONST.__const: 0xdd08
-+  __DATA_CONST.__const: 0xdec8
-   __DATA_CONST.__kalloc_type: 0xd640
-   __DATA_CONST.__kalloc_var: 0x280
-   __DATA_CONST.__auth_got: 0x398
-   __DATA_CONST.__got: 0xd0
-   __DATA_CONST.__auth_ptr: 0x18
 -  Functions: 1866
++1594.0.0.0.0
 +  Functions: 1876
-   Symbols:   0
+
 -  CStrings:  2447
 +  CStrings:  2470
- 
 CStrings:
 + "#D: %s::%s:%d: HSAR Metric: enum/state fields done, OBD_raw=%u (rfsensing=%u) OBD_ca=%u, BT_pwr=%d BT_conn=%d, Cell_on=%d TxSusp=%d MmW_on=%d Stewie_on=%d TxActive=%d Cell_connected_ca=%u, WiFi_pwr=%d TimeAvgMode=%u, uplink_constraint_condition=%u"
 + "#D: %s::%s:%d: Max TER Consumption: %u"

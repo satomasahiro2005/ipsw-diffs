@@ -2,84 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/SiriNetwork.framework/SiriNetwork`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x13784c` | `0x13af40` | **`+0x36f4`** |
+| `__TEXT.__eh_frame` | `0x8420` | `0x87e8` | **`+0x3c8`** |
+| `__TEXT.__oslogstring` | `0xab57` | `0xadc7` | **`+0x270`** |
+| `__TEXT.__unwind_info` | `0x5040` | `0x5110` | **`+0xd0`** |
+| `__AUTH_CONST.__const` | `0xa9c8` | `0xaa48` | **`+0x80`** |
+| `__DATA.__bss` | `0x5a00` | `0x5980` | **`-0x80`** |
+| `__TEXT.__const` | `0x9120` | `0x90d0` | **`-0x50`** |
+| `__TEXT.__cstring` | `0x1f83` | `0x1fc3` | **`+0x40`** |
+| `__TEXT.__swift5_reflstr` | `0x4668` | `0x4698` | **`+0x30`** |
+| `__TEXT.__swift_as_cont` | `0x6f4` | `0x724` | **`+0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0x3758` | `0x372c` | **`-0x2c`** |
+| `__TEXT.__swift5_typeref` | `0x3344` | `0x331a` | **`-0x2a`** |
+| `__TEXT.__swift_as_entry` | `0x360` | `0x384` | **`+0x24`** |
+| `__TEXT.__swift_as_ret` | `0x340` | `0x364` | **`+0x24`** |
+| `__AUTH_CONST.__objc_const` | `0xc3e0` | `0xc400` | **`+0x20`** |
+| `__DATA.__data` | `0x1368` | `0x1388` | **`+0x20`** |
+| `__TEXT.__swift5_assocty` | `0x410` | `0x428` | **`+0x18`** |
+| `__TEXT.__constg_swiftt` | `0x5818` | `0x5804` | **`-0x14`** |
+| `__TEXT.__swift5_capture` | `0x2c1c` | `0x2c2c` | **`+0x10`** |
+| `__AUTH.__data` | `0x7b8` | `0x7b0` | **`-0x8`** |
+| `__AUTH_CONST.__auth_got` | `0x1a10` | `0x1a18` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x454` | `0x450` | **`-0x4`** |
+| `__TEXT.__swift5_protos` | `0xc8` | `0xc4` | **`-0x4`** |
+| `__TEXT.__swift5_types` | `0x244` | `0x240` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3600.30.8.0.0
--  __TEXT.__text: 0x12a3b4
 +3605.6.1.0.0
-+  __TEXT.__text: 0x12d6b8
-   __TEXT.__objc_methlist: 0x282c
--  __TEXT.__const: 0x9120
--  __TEXT.__cstring: 0x1f83
--  __TEXT.__constg_swiftt: 0x5818
--  __TEXT.__swift5_typeref: 0x3344
--  __TEXT.__swift5_reflstr: 0x4668
--  __TEXT.__swift5_fieldmd: 0x3758
-+  __TEXT.__const: 0x90d0
-+  __TEXT.__cstring: 0x1fc3
-+  __TEXT.__constg_swiftt: 0x5804
-+  __TEXT.__swift5_typeref: 0x331a
-+  __TEXT.__swift5_reflstr: 0x4698
-+  __TEXT.__swift5_fieldmd: 0x372c
-   __TEXT.__swift5_builtin: 0x168
--  __TEXT.__swift5_assocty: 0x410
--  __TEXT.__swift5_capture: 0x2c1c
--  __TEXT.__oslogstring: 0xab57
--  __TEXT.__swift5_proto: 0x454
--  __TEXT.__swift5_types: 0x244
-+  __TEXT.__swift5_assocty: 0x428
-+  __TEXT.__swift5_capture: 0x2c2c
-+  __TEXT.__oslogstring: 0xadc7
-+  __TEXT.__swift5_proto: 0x450
-+  __TEXT.__swift5_types: 0x240
-   __TEXT.__swift5_mpenum: 0x44
--  __TEXT.__swift5_protos: 0xc8
--  __TEXT.__swift_as_entry: 0x360
--  __TEXT.__swift_as_ret: 0x340
--  __TEXT.__swift_as_cont: 0x6f4
-+  __TEXT.__swift5_protos: 0xc4
-+  __TEXT.__swift_as_entry: 0x384
-+  __TEXT.__swift_as_ret: 0x364
-+  __TEXT.__swift_as_cont: 0x724
-   __TEXT.__swift5_acfuncs: 0x14
--  __TEXT.__unwind_info: 0x5d20
--  __TEXT.__eh_frame: 0x8428
-+  __TEXT.__unwind_info: 0x5e50
-+  __TEXT.__eh_frame: 0x87f0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_protorefs: 0x88
-   __DATA_CONST.__objc_superrefs: 0x50
-   __DATA_CONST.__got: 0x988
--  __AUTH_CONST.__const: 0xa9c8
-+  __AUTH_CONST.__const: 0xaa48
-   __AUTH_CONST.__cfstring: 0x260
--  __AUTH_CONST.__objc_const: 0xc3e0
--  __AUTH_CONST.__auth_got: 0x1a10
-+  __AUTH_CONST.__objc_const: 0xc400
-+  __AUTH_CONST.__auth_got: 0x1a18
-   __AUTH.__objc_data: 0x318
--  __AUTH.__data: 0x7b8
-+  __AUTH.__data: 0x7b0
-   __DATA.__objc_ivar: 0x1ac
--  __DATA.__data: 0x1368
-+  __DATA.__data: 0x1388
-   __DATA.__common: 0x10
-   __DATA_DIRTY.__objc_data: 0x1e40
-   __DATA_DIRTY.__data: 0x4e70
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9263
--  Symbols:   15676
+-  Symbols:   15101
 -  CStrings:  833
 +  Functions: 9353
-+  Symbols:   15758
++  Symbols:   15183
 +  CStrings:  845
- 
 Symbols:
 + _$s11SiriNetwork013MessageCenterC0CAA0cD10MessagableA2aDP23messageDebugDescriptionSSSgvgTW
 + _$s11SiriNetwork013MessageCenterbC0V10CodingKeys33_3471D5903CD9ED5FA93F8F42D4782669LLO8rawValueAFSgSS_tcfCTv_r

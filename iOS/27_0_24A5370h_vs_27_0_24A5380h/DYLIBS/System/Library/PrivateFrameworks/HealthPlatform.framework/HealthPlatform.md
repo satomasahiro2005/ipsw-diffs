@@ -2,94 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/HealthPlatform.framework/HealthPlatform`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ad8b8` | `0x1ac9d8` | **`-0xee0`** |
+| `__DATA.__bss` | `0xf440` | `0xe8c0` | **`-0xb80`** |
+| `__DATA_DIRTY.__bss` | `0x6f80` | `0x7b00` | **`+0xb80`** |
+| `__DATA_DIRTY.__data` | `0x5df8` | `0x64d8` | **`+0x6e0`** |
+| `__AUTH.__data` | `0x15d8` | `0x1188` | **`-0x450`** |
+| `__DATA.__data` | `0x2880` | `0x2530` | **`-0x350`** |
+| `__TEXT.__swift5_typeref` | `0x517e` | `0x5288` | **`+0x10a`** |
+| `__TEXT.__unwind_info` | `0x67f8` | `0x6758` | **`-0xa0`** |
+| `__AUTH_CONST.__const` | `0x110e0` | `0x11108` | **`+0x28`** |
+| `__TEXT.__swift5_capture` | `0x30d0` | `0x30e0` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x1050` | `0x1048` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1ad8b8
-+  __TEXT.__text: 0x1ac9d8
-   __TEXT.__objc_methlist: 0xb24
-   __TEXT.__const: 0xff20
-   __TEXT.__constg_swiftt: 0x5830
--  __TEXT.__swift5_typeref: 0x517e
-+  __TEXT.__swift5_typeref: 0x5288
-   __TEXT.__swift5_builtin: 0x1cc
-   __TEXT.__swift5_reflstr: 0x3d27
-   __TEXT.__swift5_fieldmd: 0x499c
+-7027.0.60.2.2
++7027.0.64.0.0
 
-   __TEXT.__swift5_protos: 0x104
-   __TEXT.__oslogstring: 0x60dc
-   __TEXT.__cstring: 0x5be5
--  __TEXT.__swift5_capture: 0x30d0
-+  __TEXT.__swift5_capture: 0x30e0
-   __TEXT.__swift5_mpenum: 0x64
-   __TEXT.__swift_as_entry: 0xf0
-   __TEXT.__swift_as_ret: 0xf0
-   __TEXT.__swift_as_cont: 0x1d4
--  __TEXT.__unwind_info: 0x67f8
-+  __TEXT.__unwind_info: 0x6758
-   __TEXT.__eh_frame: 0x661c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x10a8
-   __DATA_CONST.__objc_protorefs: 0xa8
--  __DATA_CONST.__got: 0x1050
--  __AUTH_CONST.__const: 0x110e0
-+  __DATA_CONST.__got: 0x1048
-+  __AUTH_CONST.__const: 0x11108
-   __AUTH_CONST.__objc_const: 0x5d18
-   __AUTH_CONST.__auth_got: 0x1ea8
-   __AUTH.__objc_data: 0xc50
--  __AUTH.__data: 0x15d8
--  __DATA.__data: 0x2880
--  __DATA.__bss: 0xf440
-+  __AUTH.__data: 0x1188
-+  __DATA.__data: 0x2530
-+  __DATA.__bss: 0xe8c0
-   __DATA.__common: 0x48
-   __DATA_DIRTY.__objc_data: 0x1070
--  __DATA_DIRTY.__data: 0x5df8
--  __DATA_DIRTY.__bss: 0x6f80
-+  __DATA_DIRTY.__data: 0x64d8
-+  __DATA_DIRTY.__bss: 0x7b00
-   __DATA_DIRTY.__common: 0x68
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-
-   - /usr/lib/swift/libswift_DarwinFoundation3.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10232
--  Symbols:   5105
+-  Symbols:   2600
 +  Functions: 10189
-+  Symbols:   5109
-   CStrings:  935
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   2602
 Symbols:
 + ___swift_closure_destructor.101Tm
 + ___swift_closure_destructor.41Tm
@@ -152,5 +95,4 @@ Symbols:
 CStrings:
 + "07162026_rdar://174045498_24A_"
 - "06032026_rdar://178691245_24A_"
-
 ```

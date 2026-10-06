@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/Navigation.framework/Navigation`
 
-```diff
+### Section Size Changes
 
- 2435.30.6.12.9
--  __TEXT.__text: 0x220378
-+  __TEXT.__text: 0x220340
-   __TEXT.__objc_methlist: 0x12394
-   __TEXT.__const: 0xdc9c
-   __TEXT.__dlopen_cstrs: 0x104
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x220378` | `0x220340` | **`-0x38`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[MNRouteDivergenceFinder findAllOverlapRangesBetweenRoutes:] : 3620 -> 3628
 ~ -[MNRouteDivergenceFinder findOverlappingSectionsForRoutes:] : 5064 -> 5052

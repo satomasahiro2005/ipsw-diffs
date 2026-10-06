@@ -2,41 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/PerfPowerServicesReader.framework/PerfPowerServicesReader`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14ae34` | `0x14ac44` | **`-0x1f0`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x14ae34
-+  __TEXT.__text: 0x14ac44
-   __TEXT.__init_offsets: 0xdc
-   __TEXT.__objc_methlist: 0x12d7c
-   __TEXT.__const: 0x5fe2
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+-3486.0.21.502.1
++3486.0.46.502.1
 Functions:
 ~ -[PPSHistogram indicesFor:] : 1268 -> 1240
 ~ -[PPSHistogram recordSample:] : 1252 -> 1196
@@ -55,5 +32,4 @@ Functions:
 ~ __ZNSt3__116__rotate_forwardB9fqe220106INS_17_ClassicAlgPolicyENS_11__wrap_iterIPNS_4pairIddEEEEEET0_S7_S7_S7_ : 212 -> 196
 ~ __ZN5boost7archive17archive_exceptionC2ENS1_14exception_codeEPKcS4_ : 1692 -> 1612
 ~ __ZN5boost7archive17archive_exceptionC1ENS1_14exception_codeEPKcS4_ : 1588 -> 1508
-
 ```

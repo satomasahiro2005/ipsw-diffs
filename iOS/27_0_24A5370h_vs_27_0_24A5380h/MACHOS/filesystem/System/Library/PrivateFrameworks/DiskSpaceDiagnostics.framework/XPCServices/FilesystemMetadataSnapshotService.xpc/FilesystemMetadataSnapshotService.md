@@ -2,37 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/DiskSpaceDiagnostics.framework/XPCServices/FilesystemMetadataSnapshotService.xpc/FilesystemMetadataSnapshotService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14240` | `0x1442c` | **`+0x1ec`** |
+| `__TEXT.__cstring` | `0x2660` | `0x26c5` | **`+0x65`** |
+| `__TEXT.__oslogstring` | `0x197f` | `0x19de` | **`+0x5f`** |
+| `__TEXT.__const` | `0x190` | `0x178` | **`-0x18`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x14240
-+  __TEXT.__text: 0x1442c
-   __TEXT.__auth_stubs: 0xb10
-   __TEXT.__objc_stubs: 0x1a00
-   __TEXT.__objc_methlist: 0x8fc
--  __TEXT.__const: 0x190
--  __TEXT.__cstring: 0x2660
--  __TEXT.__oslogstring: 0x197f
-+  __TEXT.__const: 0x178
-+  __TEXT.__cstring: 0x26c5
-+  __TEXT.__oslogstring: 0x19de
-   __TEXT.__objc_methname: 0x2604
-   __TEXT.__objc_classname: 0x11f
-   __TEXT.__objc_methtype: 0x5c7
+-1022.0.0.0.0
++1023.0.1.0.0
 
-   - /usr/lib/libobjc.A.dylib
-   Functions: 331
-   Symbols:   325
--  CStrings:  1112
-+  CStrings:  1116
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__data : content changed
+-  CStrings:  946
++  CStrings:  950
 Functions:
 ~ sub_10000d104 : 8764 -> 9256
 CStrings:
@@ -42,5 +39,4 @@ CStrings:
 + "Skipping descendents of cryptex graft host at %s"
 + "Skipping descendents of cryptex graft host at %s\n"
 - "1022"
-
 ```

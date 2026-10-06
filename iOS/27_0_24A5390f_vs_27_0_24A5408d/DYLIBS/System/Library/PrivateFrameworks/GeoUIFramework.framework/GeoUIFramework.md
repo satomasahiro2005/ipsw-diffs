@@ -2,83 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/GeoUIFramework.framework/GeoUIFramework`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x23de0` | `0x2c280` | **`+0x84a0`** |
+| `__TEXT.__swift5_typeref` | `0x1c2e` | `0x3179` | **`+0x154b`** |
+| `__DATA.__bss` | `0x4ba0` | `0x58e8` | **`+0xd48`** |
+| `__TEXT.__const` | `0x3478` | `0x3fa0` | **`+0xb28`** |
+| `__AUTH_CONST.__const` | `0x1ae8` | `0x20a0` | **`+0x5b8`** |
+| `__DATA.__data` | `0xc58` | `0x1050` | **`+0x3f8`** |
+| `__TEXT.__constg_swiftt` | `0x954` | `0xbc8` | **`+0x274`** |
+| `__AUTH_CONST.__auth_got` | `0x920` | `0xaf8` | **`+0x1d8`** |
+| `__TEXT.__swift5_fieldmd` | `0x99c` | `0xb6c` | **`+0x1d0`** |
+| `__TEXT.__unwind_info` | `0xb48` | `0xd18` | **`+0x1d0`** |
+| `__TEXT.__cstring` | `0x7fb` | `0x941` | **`+0x146`** |
+| `__TEXT.__eh_frame` | `0x7c8` | `0x8a8` | **`+0xe0`** |
+| `__TEXT.__swift5_reflstr` | `0x4a0` | `0x56f` | **`+0xcf`** |
+| `__TEXT.__swift5_assocty` | `0x288` | `0x348` | **`+0xc0`** |
+| `__AUTH.__data` | `0x4f0` | `0x580` | **`+0x90`** |
+| `__TEXT.__swift5_proto` | `0x25c` | `0x2c4` | **`+0x68`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb0` | `0x108` | **`+0x58`** |
+| `__TEXT.__swift5_capture` | `0x1e4` | `0x21c` | **`+0x38`** |
+| `__TEXT.__swift5_types` | `0xc4` | `0xf0` | **`+0x2c`** |
+| `__TEXT.__oslogstring` | `0xd5` | `0xf1` | **`+0x1c`** |
+
+### Other Changes
+
 ```diff
 
 -3600.36.14.0.0
--  __TEXT.__text: 0x23de0
--  __TEXT.__const: 0x3478
--  __TEXT.__swift5_typeref: 0x1c2e
--  __TEXT.__swift5_capture: 0x1e4
--  __TEXT.__cstring: 0x7fb
--  __TEXT.__swift5_reflstr: 0x4a0
--  __TEXT.__swift5_assocty: 0x288
--  __TEXT.__constg_swiftt: 0x954
--  __TEXT.__swift5_fieldmd: 0x99c
 +3600.36.19.0.0
-+  __TEXT.__text: 0x2c280
-+  __TEXT.__const: 0x3fa0
-+  __TEXT.__swift5_typeref: 0x3179
-+  __TEXT.__swift5_capture: 0x21c
-+  __TEXT.__cstring: 0x941
-+  __TEXT.__swift5_reflstr: 0x56f
-+  __TEXT.__swift5_assocty: 0x348
-+  __TEXT.__constg_swiftt: 0xbc8
-+  __TEXT.__swift5_fieldmd: 0xb6c
-   __TEXT.__swift5_builtin: 0x3c
--  __TEXT.__oslogstring: 0xd5
--  __TEXT.__swift5_proto: 0x25c
--  __TEXT.__swift5_types: 0xc4
-+  __TEXT.__oslogstring: 0xf1
-+  __TEXT.__swift5_proto: 0x2c4
-+  __TEXT.__swift5_types: 0xf0
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0xb48
--  __TEXT.__eh_frame: 0x7c8
-+  __TEXT.__unwind_info: 0xd18
-+  __TEXT.__eh_frame: 0x8a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__const: 0xd0
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb0
-+  __DATA_CONST.__objc_selrefs: 0x108
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1ae8
-+  __AUTH_CONST.__const: 0x20a0
-   __AUTH_CONST.__objc_const: 0x90
--  __AUTH_CONST.__auth_got: 0x920
--  __AUTH.__data: 0x4f0
--  __DATA.__data: 0xc58
--  __DATA.__bss: 0x4ba0
-+  __AUTH_CONST.__auth_got: 0xaf8
-+  __AUTH.__data: 0x580
-+  __DATA.__data: 0x1050
-+  __DATA.__bss: 0x58e8
-   __DATA.__common: 0x60
-   __DATA_DIRTY.__data: 0x98
-   __DATA_DIRTY.__bss: 0x80
-
-   - /System/Library/PrivateFrameworks/SiriUtilities.framework/SiriUtilities
-   - /System/Library/PrivateFrameworks/SnippetKit.framework/SnippetKit
-   - /System/Library/PrivateFrameworks/SnippetUI.framework/SnippetUI
 +  - /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1097
--  Symbols:   3373
+-  Symbols:   3351
 -  CStrings:  64
 +  Functions: 1320
-+  Symbols:   4151
++  Symbols:   4118
 +  CStrings:  76
- 
 Symbols:
 + _$s10Foundation13URLComponentsV3urlAA3URLVSgvg
 + _$s10Foundation13URLComponentsV4pathSSvs
@@ -844,17 +807,6 @@ Symbols:
 + _get_witness_table 9SnippetUI14ComponentStackVy05SwiftB012TupleContentVyAD6ZStackVyAFyAD4ViewP08_MapKit_eB0E8mapScopeyQrAD9NamespaceV2IDVFQOyAjDE12onTapGesture5count7performQrSi_yyctFQOyAA0jI0V_Qo__Qo__AjDEAqrSQrSi_yyctFQOyAD08ModifiedG0VyAYyAYyAYyAYyAYyAA017PrimaryHeaderRichI0VAD14_PaddingLayoutVGA1_GAD34_InsettableBackgroundShapeModifierVyAD8MaterialVAD16RoundedRectangleVGGAD30_EnvironmentKeyWritingModifierVyAD11ColorSchemeOGGA1_GA1_G_Qo_QPGG_AjAE10separators_10isOverrideQr0aK014SeparatorStyleO_SbtFQOyAYyAjDE16privacySensitiveyQrSbFQOyAYyAYyAjDE11buttonStyleyQrqd__AD11ButtonStyleRd__lFQOyAD9ShareLinkVys15CollectionOfOneVy10Foundation3URLVGs5NeverOA40_AD21DefaultShareLinkLabelVG_AA21ButtonItemButtonStyleVQo_AD010_FlexFrameZ0VGA13_yA35_6LocaleVGG_Qo_A1_G_Qo_QPGGAdIHPyHC
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBP07SnippetB0E19setHostCornerRadiusyQrSo07VRXHostgH0VFQOyAcDE0eF6BorderyQrSo0iJ0VFQOyAcDE07requestF10Background_8accepted6deniedQrAD0fL0OSg_qd__xcqd_0_xctAaBRd__AaBRd_0_r0_lFQOyAA15ModifiedContentVyAA6VStackVyAA05TupleP0VyAA7ForEachVySaySi6offset_14GeoUIFramework0V10DataModelsO023PlaceDisambiguationListX5ModelV0Z0V7elementtGSiAZ010WatchPlainD4CardVyAZ05WatchZ9CardLabelVGG_ARyAZ010MapsFooterC0VAA14_PaddingLayoutVGQPGGAA16_FlexFrameLayoutVG_A22_A22_Qo__Qo__Qo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE16privacySensitiveyQrSbFQOyAA15ModifiedContentVyAFyAcAE11buttonStyleyQrqd__AA06ButtonI0Rd__lFQOyAA9ShareLinkVys15CollectionOfOneVy10Foundation3URLVGs5NeverOArA07DefaultkL5LabelVG_07SnippetB00j4ItemjI0VQo_AA16_FlexFrameLayoutVGAA30_EnvironmentKeyWritingModifierVyAM6LocaleVGG_Qo_HO
-+ _objc_msgSend$button
-+ _objc_msgSend$image
-+ _objc_msgSend$phoneNumber
-+ _objc_msgSend$primary_button
-+ _objc_msgSend$punchoutWithURL:
-+ _objc_msgSend$secondary_button
-+ _objc_msgSend$setPunchout:
-+ _objc_msgSend$supportsTelephonyCalls
-+ _objc_msgSend$symbolName
-+ _objc_msgSend$systemGrayColor
-+ _objc_msgSend$title
 + _objc_release
 + _objc_retain_x19
 + _objc_retain_x9

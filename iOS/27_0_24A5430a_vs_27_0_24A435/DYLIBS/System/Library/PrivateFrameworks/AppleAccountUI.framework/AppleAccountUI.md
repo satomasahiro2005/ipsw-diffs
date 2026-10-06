@@ -2,12 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/AppleAccountUI.framework/AppleAccountUI`
 
-```diff
+### Section Size Changes
 
- 588.0.0.0.0
--  __TEXT.__text: 0x38735c
-+  __TEXT.__text: 0x387688
-   __TEXT.__delay_stubs: 0x80
-   __TEXT.__delay_helper: 0x2d0
-   __TEXT.__objc_methlist: 0xc33c
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x38735c` | `0x387688` | **`+0x32c`** |

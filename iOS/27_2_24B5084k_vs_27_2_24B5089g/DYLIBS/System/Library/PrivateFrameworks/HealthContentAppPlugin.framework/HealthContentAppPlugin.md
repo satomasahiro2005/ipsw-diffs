@@ -2,93 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/HealthContentAppPlugin.framework/HealthContentAppPlugin`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x58a38` | `0x5c0f8` | **`+0x36c0`** |
+| `__TEXT.__oslogstring` | `0xc78` | `0x1088` | **`+0x410`** |
+| `__TEXT.__eh_frame` | `0x1d3c` | `0x1e7c` | **`+0x140`** |
+| `__AUTH.__data` | `0x928` | `0x808` | **`-0x120`** |
+| `__DATA_DIRTY.__data` | `0x338` | `0x3f8` | **`+0xc0`** |
+| `__TEXT.__cstring` | `0xd5e` | `0xcbe` | **`-0xa0`** |
+| `__TEXT.__swift5_reflstr` | `0x5b1` | `0x511` | **`-0xa0`** |
+| `__TEXT.__swift5_fieldmd` | `0x640` | `0x5b4` | **`-0x8c`** |
+| `__AUTH_CONST.__const` | `0xf00` | `0xe80` | **`-0x80`** |
+| `__DATA.__bss` | `0x1e18` | `0x1d98` | **`-0x80`** |
+| `__TEXT.__const` | `0x1a90` | `0x1a20` | **`-0x70`** |
+| `__DATA.__data` | `0xf58` | `0xef0` | **`-0x68`** |
+| `__AUTH.__objc_data` | `0x238` | `0x1e8` | **`-0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x50` | `0xa0` | **`+0x50`** |
+| `__TEXT.__constg_swiftt` | `0x7a0` | `0x750` | **`-0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x1630` | `0x1668` | **`+0x38`** |
+| `__AUTH_CONST.__objc_const` | `0x920` | `0x940` | **`+0x20`** |
+| `__TEXT.__swift5_builtin` | `0x3c` | `0x28` | **`-0x14`** |
+| `__TEXT.__swift5_typeref` | `0x958` | `0x946` | **`-0x12`** |
+| `__TEXT.__unwind_info` | `0xf38` | `0xf48` | **`+0x10`** |
+| `__DATA.__common` | `0x50` | `0x48` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x100` | `0x108` | **`+0x8`** |
+| `__DATA_DIRTY.__common` | `0x8` | `0x10` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x78` | `0x70` | **`-0x8`** |
+| `__TEXT.__swift5_capture` | `0x42c` | `0x428` | **`-0x4`** |
+| `__TEXT.__swift5_proto` | `0x110` | `0x10c` | **`-0x4`** |
+| `__TEXT.__swift_as_cont` | `0x164` | `0x168` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.36.2.7
--  __TEXT.__text: 0x54ea8
 +7027.1.45.2.4
-+  __TEXT.__text: 0x584cc
-   __TEXT.__objc_methlist: 0x14
--  __TEXT.__const: 0x1a90
--  __TEXT.__cstring: 0xd5e
--  __TEXT.__constg_swiftt: 0x7a0
--  __TEXT.__swift5_typeref: 0x958
--  __TEXT.__swift5_reflstr: 0x5b1
-+  __TEXT.__const: 0x1a20
-+  __TEXT.__swift5_typeref: 0x946
-+  __TEXT.__swift5_capture: 0x428
-+  __TEXT.__constg_swiftt: 0x750
-+  __TEXT.__swift5_reflstr: 0x511
-   __TEXT.__swift5_assocty: 0x1a8
--  __TEXT.__swift5_fieldmd: 0x640
--  __TEXT.__swift5_builtin: 0x3c
--  __TEXT.__swift5_capture: 0x42c
--  __TEXT.__oslogstring: 0xc78
--  __TEXT.__swift5_proto: 0x110
--  __TEXT.__swift5_types: 0x78
-+  __TEXT.__swift5_fieldmd: 0x5b4
-+  __TEXT.__swift5_builtin: 0x28
-+  __TEXT.__oslogstring: 0x1088
-+  __TEXT.__swift5_proto: 0x10c
-+  __TEXT.__swift5_types: 0x70
-   __TEXT.__swift_as_entry: 0x60
-   __TEXT.__swift_as_ret: 0xac
--  __TEXT.__swift_as_cont: 0x164
-+  __TEXT.__swift_as_cont: 0x168
-+  __TEXT.__cstring: 0xcbe
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0x1328
--  __TEXT.__eh_frame: 0x1d3c
-+  __TEXT.__unwind_info: 0x1310
-+  __TEXT.__eh_frame: 0x1e7c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__const: 0xe0
-   __DATA_CONST.__objc_classlist: 0x68
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x100
-+  __DATA_CONST.__objc_selrefs: 0x108
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xf00
--  __AUTH_CONST.__objc_const: 0x920
--  __AUTH_CONST.__auth_got: 0x1630
--  __AUTH.__objc_data: 0x238
--  __AUTH.__data: 0x928
--  __DATA.__data: 0xf58
--  __DATA.__common: 0x50
--  __DATA_DIRTY.__objc_data: 0x50
--  __DATA_DIRTY.__data: 0x338
-+  __AUTH_CONST.__const: 0xe80
-+  __AUTH_CONST.__objc_const: 0x940
-+  __AUTH_CONST.__auth_got: 0x1668
-+  __AUTH.__objc_data: 0x1e8
-+  __AUTH.__data: 0x808
-+  __DATA.__data: 0xef0
-+  __DATA.__common: 0x48
-+  __DATA_DIRTY.__objc_data: 0xa0
-+  __DATA_DIRTY.__data: 0x3f8
-+  __DATA_DIRTY.__common: 0x10
-   __DATA_DIRTY.__bss: 0x400
--  __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1222
--  Symbols:   502
+-  Symbols:   471
 -  CStrings:  127
 +  Functions: 1209
-+  Symbols:   495
++  Symbols:   463
 +  CStrings:  141
- 
 Symbols:
-+ _objc_msgSend$isBeingDismissed
 + _objc_retain_x28
 + _swift_retain_n
 + _symbolic SDySS_____G 14HealthPlatform14PluginFeedItemV

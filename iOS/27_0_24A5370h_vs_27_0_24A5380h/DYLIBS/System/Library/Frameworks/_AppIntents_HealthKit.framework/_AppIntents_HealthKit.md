@@ -2,23 +2,16 @@
 
 > `/System/Library/Frameworks/_AppIntents_HealthKit.framework/_AppIntents_HealthKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0xd6` | `0xce` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__text: 0x2bc
-   __TEXT.__swift5_typeref: 0x61
-   __TEXT.__swift5_fieldmd: 0x3c
--  __TEXT.__const: 0xd6
-+  __TEXT.__const: 0xce
-   __TEXT.__constg_swiftt: 0x88
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift5_reflstr: 0x9
-Sections:
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __AUTH_CONST.__const : content changed
-
+-301.0.42.7.0
++301.0.43.6.0
 ```

@@ -2,93 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/ServicesIntelligence.framework/servicesintelligenced`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_fieldmd`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1275c` | `0x139a0` | **`+0x1244`** |
+| `__TEXT.__eh_frame` | `0xe38` | `0x1078` | **`+0x240`** |
+| `__TEXT.__oslogstring` | `0xd6c` | `0xe5c` | **`+0xf0`** |
+| `__TEXT.__auth_stubs` | `0xb80` | `0xc50` | **`+0xd0`** |
+| `__TEXT.__cstring` | `0x688` | `0x5c8` | **`-0xc0`** |
+| `__DATA_CONST.__got` | `0x190` | `0x230` | **`+0xa0`** |
+| `__DATA_CONST.__auth_got` | `0x5c8` | `0x630` | **`+0x68`** |
+| `__TEXT.__unwind_info` | `0x498` | `0x4e8` | **`+0x50`** |
+| `__TEXT.__const` | `0x2ca` | `0x302` | **`+0x38`** |
+| `__DATA.__data` | `0x290` | `0x2c0` | **`+0x30`** |
+| `__TEXT.__swift5_typeref` | `0x177` | `0x193` | **`+0x1c`** |
+| `__TEXT.__swift_as_entry` | `0x54` | `0x68` | **`+0x14`** |
+| `__TEXT.__swift_as_ret` | `0x98` | `0xac` | **`+0x14`** |
+| `__DATA_CONST.__auth_ptr` | `0xa0` | `0xb0` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x1c8` | `0x1d4` | **`+0xc`** |
+| `__DATA_CONST.__const` | `0x740` | `0x748` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0xe0` | `0xe8` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_fieldmd`
+
+### Other Changes
 
 ```diff
 
 -1.65.0.0.0
--  __TEXT.__text: 0x1275c
--  __TEXT.__auth_stubs: 0xb80
 +1.69.0.0.0
-+  __TEXT.__text: 0x139a0
-+  __TEXT.__auth_stubs: 0xc50
-   __TEXT.__objc_stubs: 0x380
-   __TEXT.__objc_methlist: 0x104
--  __TEXT.__const: 0x2ca
--  __TEXT.__cstring: 0x688
--  __TEXT.__swift5_typeref: 0x177
-+  __TEXT.__const: 0x302
-+  __TEXT.__cstring: 0x5c8
-+  __TEXT.__swift5_typeref: 0x193
-   __TEXT.__objc_methtype: 0x12c
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__constg_swiftt: 0x74
 
-   __TEXT.__swift5_types: 0x8
-   __TEXT.__objc_classname: 0x3e
-   __TEXT.__objc_methname: 0x487
--  __TEXT.__swift5_capture: 0x1c8
--  __TEXT.__oslogstring: 0xd6c
--  __TEXT.__swift_as_entry: 0x54
--  __TEXT.__swift_as_ret: 0x98
--  __TEXT.__swift_as_cont: 0xe0
--  __TEXT.__unwind_info: 0x498
--  __TEXT.__eh_frame: 0xe38
--  __DATA_CONST.__const: 0x740
-+  __TEXT.__oslogstring: 0xe5c
-+  __TEXT.__swift5_capture: 0x1d4
-+  __TEXT.__swift_as_entry: 0x68
-+  __TEXT.__swift_as_ret: 0xac
-+  __TEXT.__swift_as_cont: 0xe8
-+  __TEXT.__unwind_info: 0x4e8
-+  __TEXT.__eh_frame: 0x1078
-+  __DATA_CONST.__const: 0x748
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__auth_got: 0x5c8
--  __DATA_CONST.__got: 0x190
--  __DATA_CONST.__auth_ptr: 0xa0
-+  __DATA_CONST.__auth_got: 0x630
-+  __DATA_CONST.__got: 0x230
-+  __DATA_CONST.__auth_ptr: 0xb0
-   __DATA.__objc_const: 0x1d8
-   __DATA.__objc_selrefs: 0x180
--  __DATA.__data: 0x290
-+  __DATA.__data: 0x2c0
-   __DATA.__common: 0x10
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/HealthKit.framework/HealthKit
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
 +  - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
 
-   - /usr/lib/swift/libswift_DarwinFoundation2.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 269
 -  Symbols:   274
 -  CStrings:  166
 +  Functions: 285
 +  Symbols:   309
 +  CStrings:  162
- 
 Symbols:
 + _$s20ServicesIntelligence16PowerLogReporterO6DomainO8appstoreyA2EmFWC
 + _$s20ServicesIntelligence16PowerLogReporterO6DomainO8platformyA2EmFWC

@@ -2,6 +2,8 @@
 
 > `/System/Library/PreferenceBundles/MapsSettings.bundle/MapsSettings`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_32b78 : 24 -> 12

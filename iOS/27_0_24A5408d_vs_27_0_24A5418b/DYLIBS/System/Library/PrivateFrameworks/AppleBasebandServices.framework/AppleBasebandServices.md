@@ -2,53 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/AppleBasebandServices.framework/AppleBasebandServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1b08c` | `0x1a768` | **`-0x924`** |
+| `__TEXT.__gcc_except_tab` | `0x107c` | `0xd7c` | **`-0x300`** |
+| `__TEXT.__const` | `0x638` | `0x560` | **`-0xd8`** |
+| `__TEXT.__unwind_info` | `0x660` | `0x5d8` | **`-0x88`** |
+| `__AUTH_CONST.__const` | `0x7d0` | `0x780` | **`-0x50`** |
+| `__DATA.__data` | `0xd8` | `0x88` | **`-0x50`** |
+| `__TEXT.__cstring` | `0x317` | `0x2e3` | **`-0x34`** |
+| `__TEXT.__oslogstring` | `0x25f` | `0x236` | **`-0x29`** |
+| `__AUTH_CONST.__cfstring` | `0x20` | `—` | **`-0x20`** |
+| `__DATA_CONST.__weak_got` | `0x20` | `0x10` | **`-0x10`** |
+| `__DATA_DIRTY.__data` | `0x8` | `—` | **`-0x8`** |
+| `__TEXT.__init_offsets` | `0x4` | `—` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
- 1585.0.0.0.0
--  __TEXT.__text: 0x1b08c
--  __TEXT.__init_offsets: 0x4
--  __TEXT.__const: 0x638
--  __TEXT.__gcc_except_tab: 0x107c
--  __TEXT.__oslogstring: 0x25f
--  __TEXT.__cstring: 0x317
--  __TEXT.__unwind_info: 0x660
-+  __TEXT.__text: 0x1a768
-+  __TEXT.__const: 0x560
-+  __TEXT.__gcc_except_tab: 0xd7c
-+  __TEXT.__oslogstring: 0x236
-+  __TEXT.__cstring: 0x2e3
-+  __TEXT.__unwind_info: 0x5d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
-   __DATA_CONST.__const: 0xc8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__weak_got: 0x20
-+  __DATA_CONST.__weak_got: 0x10
-   __DATA_CONST.__objc_selrefs: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x7d0
--  __AUTH_CONST.__cfstring: 0x20
-+  __AUTH_CONST.__const: 0x780
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__data: 0xd8
--  __DATA_DIRTY.__data: 0x8
-+  __DATA.__data: 0x88
-   __DATA_DIRTY.__bss: 0x40
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMotion.framework/CoreMotion
-
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 263
--  Symbols:   628
+-  Symbols:   627
 -  CStrings:  65
 +  Functions: 255
-+  Symbols:   587
++  Symbols:   586
 +  CStrings:  62
- 
 Symbols:
 - GCC_except_table10
 - GCC_except_table23

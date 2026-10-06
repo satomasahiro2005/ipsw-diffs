@@ -2,23 +2,22 @@
 
 > `/System/Library/Extensions/AppleT8122.kext/AppleT8122`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0xeba8` | `0xef74` | **`+0x3cc`** |
+
+### Same-size Content Changes
 
 - `__DATA.__data`
+- `__DATA_CONST.__const`
 - `__DATA_CONST.__mod_init_func`
 - `__DATA_CONST.__mod_term_func`
-- `__DATA_CONST.__const`
 
-```diff
+### Other Changes
 
-   __TEXT.__cstring: 0x5df3
-   __TEXT.__const: 0xd0
-   __TEXT.__os_log: 0xe18
--  __TEXT_EXEC.__text: 0xeba8
-+  __TEXT_EXEC.__text: 0xef74
-   __TEXT_EXEC.__auth_stubs: 0x3e0
-   __DATA.__data: 0x58b4
-   __DATA.__common: 0x108
+```text
 Functions:
 ~ __ZN10AppleH15IO9MetaClassC1Ev : 72 -> 76
 ~ __ZN10AppleH15IOC2EPK11OSMetaClass : 52 -> 56

@@ -2,23 +2,24 @@
 
 > `/System/Library/PrivateFrameworks/UIUnderstanding.framework/UIUnderstanding`
 
-```diff
+### Section Size Changes
 
- 2.8.0.0.0
--  __TEXT.__text: 0x61a1c
-+  __TEXT.__text: 0x61a38
-   __TEXT.__objc_methlist: 0xa48
-   __TEXT.__const: 0x3586
-   __TEXT.__oslogstring: 0x848
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x61a1c` | `0x61a38` | **`+0x1c`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2b1c61ab4 -> sub_2b2a5eab4 : 352 -> 348
-~ sub_2b1c61c14 -> sub_2b2a5ec10 : 804 -> 800
-~ sub_2b1c7cbd8 -> sub_2b2a79bd0 : 788 -> 804
-~ sub_2b1c7fa3c -> sub_2b2a7ca44 : 1600 -> 1596
-~ sub_2b1c81134 -> sub_2b2a7e138 : 3064 -> 3068
-~ sub_2b1c978e4 -> sub_2b2a948ec : 1392 -> 1388
-~ sub_2b1c9a9e8 -> sub_2b2a979ec : 3184 -> 3192
-~ sub_2b1ca82f8 -> sub_2b2aa5304 : 836 -> 844
-~ sub_2b1ca8dd8 -> sub_2b2aa5dec : 340 -> 344
-~ sub_2b1ca8f2c -> sub_2b2aa5f44 : 404 -> 408
+~ sub_2b1b4aab4 -> sub_2b2947ab4 : 352 -> 348
+~ sub_2b1b4ac14 -> sub_2b2947c10 : 804 -> 800
+~ sub_2b1b65bd8 -> sub_2b2962bd0 : 788 -> 804
+~ sub_2b1b68a3c -> sub_2b2965a44 : 1600 -> 1596
+~ sub_2b1b6a134 -> sub_2b2967138 : 3064 -> 3068
+~ sub_2b1b808e4 -> sub_2b297d8ec : 1392 -> 1388
+~ sub_2b1b839e8 -> sub_2b29809ec : 3184 -> 3192
+~ sub_2b1b912f8 -> sub_2b298e304 : 836 -> 844
+~ sub_2b1b91dd8 -> sub_2b298edec : 340 -> 344
+~ sub_2b1b91f2c -> sub_2b298ef44 : 404 -> 408
 ```

@@ -2,5 +2,14 @@
 
 > `/System/Library/ExtensionKit/Extensions/ActionButtonSettingsAppIntents.appex/ActionButtonSettingsAppIntents`
 
-Sections:
-~ __TEXT.__const : content changed
+### Same-size Content Changes
+
+- `__TEXT.__const`
+
+### Other Changes
+
+```diff
+
+-66.0.0.0.0
++67.0.0.0.0
+```

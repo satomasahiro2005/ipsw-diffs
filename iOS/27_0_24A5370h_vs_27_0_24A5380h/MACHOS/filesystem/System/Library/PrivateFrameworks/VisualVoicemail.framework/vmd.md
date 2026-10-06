@@ -2,84 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/VisualVoicemail.framework/vmd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb97cc` | `0xbb3c8` | **`+0x1bfc`** |
+| `__DATA.__objc_const` | `0x123a0` | `0x127b8` | **`+0x418`** |
+| `__TEXT.__oslogstring` | `0x15d57` | `0x16107` | **`+0x3b0`** |
+| `__TEXT.__objc_methname` | `0x1262f` | `0x12963` | **`+0x334`** |
+| `__TEXT.__objc_stubs` | `0xdf60` | `0xe0e0` | **`+0x180`** |
+| `__TEXT.__gcc_except_tab` | `0xc920` | `0xca98` | **`+0x178`** |
+| `__TEXT.__objc_methlist` | `0x7b1c` | `0x7c24` | **`+0x108`** |
+| `__DATA.__objc_selrefs` | `0x46f0` | `0x4778` | **`+0x88`** |
+| `__TEXT.__unwind_info` | `0x3fa0` | `0x4028` | **`+0x88`** |
+| `__TEXT.__cstring` | `0x478a` | `0x47fa` | **`+0x70`** |
+| `__DATA_CONST.__got` | `0x7c8` | `0x820` | **`+0x58`** |
+| `__DATA_CONST.__cfstring` | `0x54e0` | `0x5520` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x33c8` | `0x3400` | **`+0x38`** |
+| `__TEXT.__objc_methtype` | `0x34e0` | `0x34f4` | **`+0x14`** |
+| `__DATA.__objc_ivar` | `0x798` | `0x79c` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__init_offsets`
+- `__TEXT.__swift5_typeref`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xb97cc
-+  __TEXT.__text: 0xbb3c8
-   __TEXT.__auth_stubs: 0x18b0
--  __TEXT.__objc_stubs: 0xdf60
-+  __TEXT.__objc_stubs: 0xe0e0
-   __TEXT.__init_offsets: 0x8
--  __TEXT.__objc_methlist: 0x7b1c
--  __TEXT.__cstring: 0x478a
-+  __TEXT.__objc_methlist: 0x7c24
-+  __TEXT.__cstring: 0x47fa
-   __TEXT.__objc_classname: 0xe0a
--  __TEXT.__objc_methname: 0x1262f
--  __TEXT.__objc_methtype: 0x34e0
-+  __TEXT.__objc_methname: 0x12963
-+  __TEXT.__objc_methtype: 0x34f4
-   __TEXT.__const: 0x522
--  __TEXT.__gcc_except_tab: 0xc920
--  __TEXT.__oslogstring: 0x15d57
-+  __TEXT.__gcc_except_tab: 0xca98
-+  __TEXT.__oslogstring: 0x16107
-   __TEXT.__constg_swiftt: 0x38
-   __TEXT.__swift5_typeref: 0x3b
-   __TEXT.__swift5_fieldmd: 0x10
-   __TEXT.__swift5_types: 0x4
--  __TEXT.__unwind_info: 0x3fa0
-+  __TEXT.__unwind_info: 0x4028
-   __TEXT.__eh_frame: 0x40
--  __DATA_CONST.__const: 0x33c8
--  __DATA_CONST.__cfstring: 0x54e0
-+  __DATA_CONST.__const: 0x3400
-+  __DATA_CONST.__cfstring: 0x5520
-   __DATA_CONST.__objc_classlist: 0x2e0
-   __DATA_CONST.__objc_catlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x160
+-952.0.0.0.0
++954.0.0.0.0
 
-   __DATA_CONST.__objc_dictobj: 0x50
-   __DATA_CONST.__objc_arrayobj: 0x60
-   __DATA_CONST.__auth_got: 0xc70
--  __DATA_CONST.__got: 0x7c8
-+  __DATA_CONST.__got: 0x820
-   __DATA_CONST.__auth_ptr: 0x40
--  __DATA.__objc_const: 0x123a0
--  __DATA.__objc_selrefs: 0x46f0
--  __DATA.__objc_ivar: 0x798
-+  __DATA.__objc_const: 0x127b8
-+  __DATA.__objc_selrefs: 0x4778
-+  __DATA.__objc_ivar: 0x79c
-   __DATA.__objc_data: 0x1d20
-   __DATA.__data: 0x1220
-   __DATA.__bss: 0x620
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3522
 +  Functions: 3551
-   Symbols:   710
--  CStrings:  6534
-+  CStrings:  6573
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
+
+-  CStrings:  5795
++  CStrings:  5832
 CStrings:
 + "%s#E Active context has nil labelID, skipping: %@"
 + "%s#E Failed to fetch QuickSwitch voicemail controller data: %@"
@@ -124,5 +96,4 @@ CStrings:
 - "%s#I Adding cellular availability for public network: %@, labelID: %@"
 - "VMQuickSwitchDataTypeOperation"
 - "processQuickSwitchData:isSelfDevice:"
-
 ```

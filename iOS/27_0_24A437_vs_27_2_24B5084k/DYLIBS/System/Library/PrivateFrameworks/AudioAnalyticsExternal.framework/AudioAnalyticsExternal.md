@@ -2,92 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/AudioAnalyticsExternal.framework/AudioAnalyticsExternal`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6c230` | `0x77754` | **`+0xb524`** |
+| `__DATA.__bss` | `0xc60` | `0x1370` | **`+0x710`** |
+| `__AUTH_CONST.__const` | `0x2208` | `0x2820` | **`+0x618`** |
+| `__TEXT.__const` | `0x3308` | `0x3878` | **`+0x570`** |
+| `__TEXT.__swift5_fieldmd` | `0x1914` | `0x1c54` | **`+0x340`** |
+| `__TEXT.__swift5_reflstr` | `0x1c2a` | `0x1eca` | **`+0x2a0`** |
+| `__AUTH.__data` | `0x4f8` | `0x768` | **`+0x270`** |
+| `__TEXT.__swift5_typeref` | `0xe66` | `0x107a` | **`+0x214`** |
+| `__DATA.__data` | `0x370` | `0x548` | **`+0x1d8`** |
+| `__TEXT.__unwind_info` | `0x1020` | `0x11d8` | **`+0x1b8`** |
+| `__TEXT.__cstring` | `0x194a` | `0x1afa` | **`+0x1b0`** |
+| `__TEXT.__oslogstring` | `0x2b7e` | `0x2d2e` | **`+0x1b0`** |
+| `__DATA_CONST.__got` | `0x570` | `0x718` | **`+0x1a8`** |
+| `__TEXT.__constg_swiftt` | `0x143c` | `0x158c` | **`+0x150`** |
+| `__AUTH_CONST.__auth_got` | `0x12a0` | `0x13d8` | **`+0x138`** |
+| `__AUTH_CONST.__objc_const` | `0x2178` | `0x2268` | **`+0xf0`** |
+| `__TEXT.__eh_frame` | `0xe48` | `0xf30` | **`+0xe8`** |
+| `__AUTH.__objc_data` | `0x1e0` | `0x230` | **`+0x50`** |
+| `__TEXT.__swift5_assocty` | `0xd8` | `0x120` | **`+0x48`** |
+| `__TEXT.__swift5_proto` | `0x184` | `0x1bc` | **`+0x38`** |
+| `__DATA.__common` | `0x68` | `0x78` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x130` | `0x140` | **`+0x10`** |
+| `__TEXT.__swift5_types2` | `0xc` | `0x18` | **`+0xc`** |
+| `__DATA_CONST.__const` | `0x170` | `0x178` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0xe0` | `0xe8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -300.0.0.0.0
--  __TEXT.__text: 0x69540
 +300.202.0.0.0
-+  __TEXT.__text: 0x743a0
-   __TEXT.__objc_methlist: 0x14
--  __TEXT.__const: 0x3308
--  __TEXT.__cstring: 0x194a
--  __TEXT.__swift5_typeref: 0xe66
--  __TEXT.__constg_swiftt: 0x143c
--  __TEXT.__swift5_reflstr: 0x1c2a
--  __TEXT.__swift5_fieldmd: 0x1914
-+  __TEXT.__const: 0x3878
-+  __TEXT.__cstring: 0x1afa
-+  __TEXT.__swift5_typeref: 0x107a
-+  __TEXT.__constg_swiftt: 0x158c
-+  __TEXT.__swift5_reflstr: 0x1eca
-+  __TEXT.__swift5_fieldmd: 0x1c54
-   __TEXT.__swift5_builtin: 0xa0
--  __TEXT.__swift5_assocty: 0xd8
--  __TEXT.__oslogstring: 0x2b7e
-+  __TEXT.__swift5_assocty: 0x120
-+  __TEXT.__oslogstring: 0x2d2e
-   __TEXT.__swift5_capture: 0x1e0
--  __TEXT.__swift5_proto: 0x184
--  __TEXT.__swift5_types: 0x130
-+  __TEXT.__swift5_proto: 0x1bc
-+  __TEXT.__swift5_types: 0x140
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__swift5_types2: 0xc
-+  __TEXT.__swift5_types2: 0x18
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__unwind_info: 0x1468
--  __TEXT.__eh_frame: 0xe50
-+  __TEXT.__unwind_info: 0x1678
-+  __TEXT.__eh_frame: 0xf38
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x170
--  __DATA_CONST.__objc_classlist: 0xe0
-+  __DATA_CONST.__const: 0x178
-+  __DATA_CONST.__objc_classlist: 0xe8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x210
--  __DATA_CONST.__got: 0x570
--  __AUTH_CONST.__const: 0x2208
--  __AUTH_CONST.__objc_const: 0x2178
--  __AUTH_CONST.__auth_got: 0x12a0
--  __AUTH.__objc_data: 0x1e0
--  __AUTH.__data: 0x4f8
--  __DATA.__data: 0x370
--  __DATA.__common: 0x68
-+  __DATA_CONST.__got: 0x718
-+  __AUTH_CONST.__const: 0x2820
-+  __AUTH_CONST.__objc_const: 0x2268
-+  __AUTH_CONST.__auth_got: 0x13d8
-+  __AUTH.__objc_data: 0x230
-+  __AUTH.__data: 0x768
-+  __DATA.__data: 0x548
-+  __DATA.__common: 0x78
-   __DATA_DIRTY.__objc_data: 0x5f0
-   __DATA_DIRTY.__data: 0x26c0
-   __DATA_DIRTY.__bss: 0x2180
 
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/DiagnosticRequest.framework/DiagnosticRequest
-   - /System/Library/PrivateFrameworks/HID.framework/HID
 +  - /System/Library/PrivateFrameworks/IntelligencePlatformLibrary.framework/IntelligencePlatformLibrary
-   - /System/Library/PrivateFrameworks/MediaExperience.framework/MediaExperience
-   - /System/Library/PrivateFrameworks/PowerLog.framework/PowerLog
-   - /System/Library/PrivateFrameworks/RTCReporting.framework/RTCReporting
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1460
--  Symbols:   824
+-  Symbols:   758
 -  CStrings:  366
 +  Functions: 1604
-+  Symbols:   873
++  Symbols:   807
 +  CStrings:  389
- 
 Symbols:
 + __DATA__TtC22AudioAnalyticsExternal22BehavioralVolumeWorker
 + __IVARS__TtC22AudioAnalyticsExternal22BehavioralVolumeWorker

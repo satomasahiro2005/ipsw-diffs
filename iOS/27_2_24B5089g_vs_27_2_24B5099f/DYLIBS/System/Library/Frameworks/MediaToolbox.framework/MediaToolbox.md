@@ -2,92 +2,44 @@
 
 > `/System/Library/Frameworks/MediaToolbox.framework/MediaToolbox`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10508b4` | `0xc3050c` | **`-0x4203a8`** |
+| `__TEXT.__oslogstring` | `0x16f8f4` | `0x6750a` | **`-0x1083ea`** |
+| `__TEXT.__cstring` | `0x140997` | `0x718b7` | **`-0xcf0e0`** |
+| `__AUTH_CONST.__cfstring` | `0x53aa0` | `0x50720` | **`-0x3380`** |
+| `__DATA.__common` | `0x32e8` | `0x20d8` | **`-0x1210`** |
+| `__TEXT.__unwind_info` | `0x157b0` | `0x148c8` | **`-0xee8`** |
+| `__TEXT.__gcc_except_tab` | `0x1ef4` | `0x1624` | **`-0x8d0`** |
+| `__DATA_CONST.__const` | `0x24df8` | `0x24aa0` | **`-0x358`** |
+| `__DATA_DIRTY.__common` | `0x410` | `0x220` | **`-0x1f0`** |
+| `__TEXT.__const` | `0x299c0` | `0x297f0` | **`-0x1d0`** |
+| `__DATA.__bss` | `0x5408` | `0x5248` | **`-0x1c0`** |
+| `__AUTH_CONST.__auth_got` | `0x5d18` | `0x5c70` | **`-0xa8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x24f0` | `0x24a0` | **`-0x50`** |
+| `__AUTH_CONST.__const` | `0x47ef8` | `0x47eb8` | **`-0x40`** |
+| `__TEXT.__lazy_helpers` | `0x3654` | `0x3618` | **`-0x3c`** |
+| `__TEXT.__eh_frame` | `0x4b0` | `0x478` | **`-0x38`** |
+| `__DATA.__data` | `0x3268` | `0x3288` | **`+0x20`** |
+| `__DATA_DIRTY.__data` | `0x52c` | `0x50c` | **`-0x20`** |
+| `__DATA_DIRTY.__bss` | `0x1b78` | `0x1b90` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x4948` | `0x4938` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3385.8.1.11.1
--  __TEXT.__text: 0xfff588
--  __TEXT.__lazy_helpers: 0x3654
 +3385.12.1.0.0
-+  __TEXT.__text: 0xbdd908
-+  __TEXT.__lazy_helpers: 0x3618
-   __TEXT.__objc_methlist: 0x2b7c
--  __TEXT.__const: 0x299c0
--  __TEXT.__cstring: 0x140997
--  __TEXT.__oslogstring: 0x16f8f4
--  __TEXT.__gcc_except_tab: 0x1ef4
-+  __TEXT.__const: 0x297f0
-+  __TEXT.__cstring: 0x718b7
-+  __TEXT.__oslogstring: 0x6750a
-+  __TEXT.__gcc_except_tab: 0x1624
-   __TEXT.__dlopen_cstrs: 0x32e
-   __TEXT.__ustring: 0x24e
-   __TEXT.__swift5_typeref: 0x1d1
 
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0x30
--  __TEXT.__unwind_info: 0x23ce8
--  __TEXT.__eh_frame: 0x4b0
-+  __TEXT.__unwind_info: 0x21f98
-+  __TEXT.__eh_frame: 0x478
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x24df8
-+  __DATA_CONST.__const: 0x24aa0
-   __DATA_CONST.__objc_classlist: 0x228
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x24f0
-+  __DATA_CONST.__objc_selrefs: 0x24a0
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x1f0
-   __DATA_CONST.__objc_arraydata: 0x50
--  __DATA_CONST.__got: 0x4948
--  __AUTH_CONST.__const: 0x47ef8
--  __AUTH_CONST.__cfstring: 0x53aa0
-+  __DATA_CONST.__got: 0x4938
-+  __AUTH_CONST.__const: 0x47eb8
-+  __AUTH_CONST.__cfstring: 0x50720
-   __AUTH_CONST.__objc_const: 0x59c8
-   __AUTH_CONST.__weak_auth_got: 0x20
-   __AUTH_CONST.__lazy_load_got: 0x4e0
-
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x5d18
-+  __AUTH_CONST.__auth_got: 0x5c70
-   __AUTH.__objc_data: 0xf50
-   __AUTH.__data: 0x940
-   __DATA.__objc_ivar: 0x3c0
--  __DATA.__data: 0x3270
--  __DATA.__common: 0x32e8
-+  __DATA.__data: 0x3290
-+  __DATA.__common: 0x20d8
-   __DATA_DIRTY.__objc_data: 0x640
--  __DATA_DIRTY.__data: 0x52c
--  __DATA_DIRTY.__bss: 0x1b78
--  __DATA_DIRTY.__common: 0x410
-+  __DATA_DIRTY.__data: 0x50c
-+  __DATA_DIRTY.__bss: 0x1b90
-+  __DATA_DIRTY.__common: 0x220
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 53369
+-  Functions: 53371
 -  Symbols:   45559
 -  CStrings:  57600
-+  Functions: 43767
++  Functions: 43769
 +  Symbols:   44351
 +  CStrings:  20988
- 
 Symbols:
 + GCC_except_table137
 + GCC_except_table191

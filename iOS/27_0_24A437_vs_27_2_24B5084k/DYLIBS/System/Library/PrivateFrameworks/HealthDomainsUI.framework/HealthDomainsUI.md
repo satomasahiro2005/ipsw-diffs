@@ -2,102 +2,60 @@
 
 > `/System/Library/PrivateFrameworks/HealthDomainsUI.framework/HealthDomainsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc890` | `0x6e86c` | **`+0x61fdc`** |
+| `__DATA.__bss` | `0x590` | `0x8af8` | **`+0x8568`** |
+| `__TEXT.__const` | `0x7e4` | `0x3bf4` | **`+0x3410`** |
+| `__AUTH_CONST.__const` | `0x850` | `0x35d8` | **`+0x2d88`** |
+| `__DATA.__data` | `0x518` | `0x2670` | **`+0x2158`** |
+| `__DATA_CONST.__got` | `0x0` | `0x1870` | **`+0x1870`** |
+| `__TEXT.__cstring` | `0x36a` | `0x18df` | **`+0x1575`** |
+| `__TEXT.__unwind_info` | `0x3d0` | `0x1798` | **`+0x13c8`** |
+| `__TEXT.__eh_frame` | `0x80` | `0x1384` | **`+0x1304`** |
+| `__TEXT.__swift5_typeref` | `0x356` | `0x160a` | **`+0x12b4`** |
+| `__AUTH_CONST.__auth_got` | `0x690` | `0x1390` | **`+0xd00`** |
+| `__TEXT.__constg_swiftt` | `0x560` | `0xf24` | **`+0x9c4`** |
+| `__AUTH.__data` | `0x220` | `0xaa8` | **`+0x888`** |
+| `__TEXT.__swift5_fieldmd` | `0x2f8` | `0xa44` | **`+0x74c`** |
+| `__TEXT.__swift5_reflstr` | `0x1f9` | `0x759` | **`+0x560`** |
+| `__DATA.__common` | `0x78` | `0x5a0` | **`+0x528`** |
+| `__TEXT.__swift5_capture` | `0x168` | `0x598` | **`+0x430`** |
+| `__TEXT.__swift5_proto` | `0x2c` | `0x450` | **`+0x424`** |
+| `__AUTH_CONST.__objc_const` | `0x708` | `0xa30` | **`+0x328`** |
+| `__TEXT.__swift5_assocty` | `0x50` | `0x2c0` | **`+0x270`** |
+| `__AUTH.__objc_data` | `0x508` | `0x610` | **`+0x108`** |
+| `__TEXT.__swift_as_cont` | `—` | `0xd8` | **`+0xd8`** |
+| `__DATA_CONST.__const` | `0x98` | `0x130` | **`+0x98`** |
+| `__TEXT.__swift5_types` | `0x4c` | `0xe0` | **`+0x94`** |
+| `__TEXT.__swift_as_ret` | `—` | `0x90` | **`+0x90`** |
+| `__TEXT.__oslogstring` | `0x1e` | `0xa5` | **`+0x87`** |
+| `__DATA_CONST.__objc_selrefs` | `0x518` | `0x598` | **`+0x80`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x5c` | **`+0x5c`** |
+| `__TEXT.__swift5_builtin` | `0x14` | `0x3c` | **`+0x28`** |
+| `__TEXT.__objc_methlist` | `0x4cc` | `0x4ec` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x40` | `0x50` | **`+0x10`** |
+| `__TEXT.__swift5_mpenum` | `0x14` | `0x1c` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0xc` | `0x14` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -7027.0.72.2.7
--  __TEXT.__text: 0xc320
--  __TEXT.__objc_methlist: 0x4cc
--  __TEXT.__const: 0x7e4
--  __TEXT.__oslogstring: 0x1e
--  __TEXT.__cstring: 0x36a
--  __TEXT.__swift5_typeref: 0x356
--  __TEXT.__swift5_capture: 0x168
--  __TEXT.__constg_swiftt: 0x560
--  __TEXT.__swift5_reflstr: 0x1f9
--  __TEXT.__swift5_fieldmd: 0x2f8
--  __TEXT.__swift5_assocty: 0x50
--  __TEXT.__swift5_proto: 0x2c
--  __TEXT.__swift5_types: 0x4c
--  __TEXT.__swift5_builtin: 0x14
--  __TEXT.__swift5_mpenum: 0x14
--  __TEXT.__swift5_protos: 0xc
--  __TEXT.__unwind_info: 0x520
--  __TEXT.__eh_frame: 0x80
 +7027.1.36.2.7
-+  __TEXT.__text: 0x6b318
-+  __TEXT.__objc_methlist: 0x4ec
-+  __TEXT.__const: 0x3bf4
-+  __TEXT.__oslogstring: 0xa5
-+  __TEXT.__cstring: 0x18df
-+  __TEXT.__constg_swiftt: 0xf24
-+  __TEXT.__swift5_typeref: 0x160a
-+  __TEXT.__swift5_builtin: 0x3c
-+  __TEXT.__swift5_reflstr: 0x759
-+  __TEXT.__swift5_fieldmd: 0xa44
-+  __TEXT.__swift5_assocty: 0x2c0
-+  __TEXT.__swift5_proto: 0x450
-+  __TEXT.__swift5_types: 0xe0
-+  __TEXT.__swift5_capture: 0x598
-+  __TEXT.__swift5_protos: 0x14
-+  __TEXT.__swift_as_entry: 0x5c
-+  __TEXT.__swift_as_cont: 0xd8
-+  __TEXT.__swift_as_ret: 0x90
-+  __TEXT.__swift5_mpenum: 0x1c
-+  __TEXT.__unwind_info: 0x2178
-+  __TEXT.__eh_frame: 0x1384
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x98
--  __DATA_CONST.__objc_classlist: 0x40
-+  __DATA_CONST.__const: 0x130
-+  __DATA_CONST.__objc_classlist: 0x50
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x518
-+  __DATA_CONST.__objc_selrefs: 0x598
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x850
--  __AUTH_CONST.__objc_const: 0x708
--  __AUTH_CONST.__auth_got: 0x690
--  __AUTH.__objc_data: 0x508
--  __AUTH.__data: 0x220
--  __DATA.__data: 0x518
--  __DATA.__common: 0x78
-+  __DATA_CONST.__got: 0x1870
-+  __AUTH_CONST.__const: 0x35d8
-+  __AUTH_CONST.__objc_const: 0xa30
-+  __AUTH_CONST.__auth_got: 0x1390
-+  __AUTH.__objc_data: 0x610
-+  __AUTH.__data: 0xaa8
-+  __DATA.__data: 0x2670
-+  __DATA.__common: 0x5a0
 +  - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/DeveloperToolsSupport.framework/DeveloperToolsSupport
 
-   - /usr/lib/swift/libswiftMetal.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
 +  - /usr/lib/swift/libswiftObservation.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
-   - /usr/lib/swift/libswiftSpatial.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 375
--  Symbols:   407
+-  Symbols:   320
 -  CStrings:  24
 +  Functions: 2323
-+  Symbols:   704
++  Symbols:   601
 +  CStrings:  157
- 
 Symbols:
 + _CGRectGetMaxX
 + _CGRectGetMaxY
@@ -214,22 +172,6 @@ Symbols:
 + _initializeAvailabilityCheck
 + _keypath_setTm
 + _malloc
-+ _objc_msgSend$configurationWithWeight:
-+ _objc_msgSend$defaultWorkspace
-+ _objc_msgSend$hk_tapToRadarURLForBundleID:component:title:description:classification:reproducibility:keywords:autoDiagnostics:attachments:collaborationContactHandles:diagnosticExtensionOptions:
-+ _objc_msgSend$initWithInteger:
-+ _objc_msgSend$isAppleInternalInstall
-+ _objc_msgSend$openSensitiveURL:withOptions:
-+ _objc_msgSend$secondarySystemGroupedBackgroundColor
-+ _objc_msgSend$setImage:
-+ _objc_msgSend$setMenu:
-+ _objc_msgSend$sharedBehavior
-+ _objc_msgSend$systemGray2Color
-+ _objc_msgSend$systemGray5Color
-+ _objc_msgSend$systemGroupedBackgroundColor
-+ _objc_msgSend$systemImageNamed:
-+ _objc_msgSend$systemImageNamed:withConfiguration:
-+ _objc_msgSend$tertiarySystemGroupedBackgroundColor
 + _objc_retain_x20
 + _rewind
 + _sscanf

@@ -2,46 +2,25 @@
 
 > `/usr/lib/swift/libswiftAVFoundation.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3f290` | `0x3f46c` | **`+0x1dc`** |
+| `__DATA_CONST.__objc_selrefs` | `0x978` | `0x980` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x1338` | `0x1340` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 2450.77.1.1.0
--  __TEXT.__text: 0x3f290
-+  __TEXT.__text: 0x3f46c
-   __TEXT.__objc_methlist: 0x27c
-   __TEXT.__const: 0x39a4
-   __TEXT.__swift5_typeref: 0x18a2
-
-   __TEXT.__swift_as_ret: 0x124
-   __TEXT.__swift_as_cont: 0x184
-   __TEXT.__swift5_mpenum: 0x30
--  __TEXT.__unwind_info: 0x1338
-+  __TEXT.__unwind_info: 0x1340
-   __TEXT.__eh_frame: 0x24e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x978
-+  __DATA_CONST.__objc_selrefs: 0x980
-   __DATA_CONST.__objc_protorefs: 0x40
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x2e10
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1796
--  Symbols:   4726
+-  Symbols:   4454
 +  Functions: 1797
-+  Symbols:   4729
-   CStrings:  64
- 
++  Symbols:   4456
 Symbols:
 + _$sSo21AVCaptureDeviceFormatC12AVFoundationE28recommendedLensApertureStopsSaySfGvg
 + _$sSo21AVCaptureDeviceFormatC12AVFoundationE28recommendedLensApertureStopsSaySfGvpMV
-+ _objc_msgSend$recommendedLensApertureStops
 Functions:
 ~ _$ss17_dictionaryUpCastySDyq0_q1_GSDyxq_GSHRzSHR0_r2_lFSS_yps11AnyHashableVypTg5 : 680 -> 684
 ~ _$ss17_dictionaryUpCastySDyq0_q1_GSDyxq_GSHRzSHR0_r2_lFSS_s11AnyHashableVAEypTg5 : 724 -> 728

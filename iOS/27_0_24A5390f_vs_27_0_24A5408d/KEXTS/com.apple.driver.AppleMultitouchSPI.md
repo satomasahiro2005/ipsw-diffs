@@ -2,43 +2,37 @@
 
 > `com.apple.driver.AppleMultitouchSPI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x1e6bc` | `0x7ac` | **`-0x1df10`** |
+| `__TEXT.__cstring` | `0x3f4b` | `0x8b` | **`-0x3ec0`** |
+| `__DATA_CONST.__const` | `0x2e50` | `0x28` | **`-0x2e28`** |
+| `__TEXT.__os_log` | `0x63b` | `0xc5` | **`-0x576`** |
+| `__TEXT_EXEC.__auth_stubs` | `0x5e0` | `0xd0` | **`-0x510`** |
+| `__DATA_CONST.__kalloc_type` | `0x3c0` | `0x80` | **`-0x340`** |
+| `__DATA_CONST.__auth_got` | `0x2f0` | `0x68` | **`-0x288`** |
+| `__DATA.__common` | `0x178` | `0x10` | **`-0x168`** |
+| `__TEXT.__const` | `0x168` | `0x50` | **`-0x118`** |
+| `__DATA.__data` | `0x190` | `0xc8` | **`-0xc8`** |
+| `__DATA_CONST.__got` | `0xc0` | `0x10` | **`-0xb0`** |
+| `__DATA_CONST.__kalloc_var` | `0x140` | `0xa0` | **`-0xa0`** |
+| `__DATA_CONST.__mod_init_func` | `0x40` | `—` | **`-0x40`** |
+| `__DATA_CONST.__mod_term_func` | `0x40` | `—` | **`-0x40`** |
+| `__DATA.__bss` | `0xc` | `—` | **`-0xc`** |
+
+### Other Changes
+
 ```diff
 
 -10100.40.2.0.0
--  __TEXT.__const: 0x168
--  __TEXT.__cstring: 0x3f4b
--  __TEXT.__os_log: 0x63b
--  __TEXT_EXEC.__text: 0x1e6bc
--  __TEXT_EXEC.__auth_stubs: 0x5e0
--  __DATA.__data: 0x190
--  __DATA.__common: 0x178
--  __DATA.__bss: 0xc
--  __DATA_CONST.__mod_init_func: 0x40
--  __DATA_CONST.__mod_term_func: 0x40
--  __DATA_CONST.__const: 0x2e50
--  __DATA_CONST.__kalloc_type: 0x3c0
--  __DATA_CONST.__kalloc_var: 0x140
--  __DATA_CONST.__auth_got: 0x2f0
--  __DATA_CONST.__got: 0xc0
 -  Functions: 460
 +10100.44.0.0.0
-+  __TEXT.__const: 0x50
-+  __TEXT.__cstring: 0x8b
-+  __TEXT.__os_log: 0xc5
-+  __TEXT_EXEC.__text: 0x7ac
-+  __TEXT_EXEC.__auth_stubs: 0xd0
-+  __DATA.__data: 0xc8
-+  __DATA.__common: 0x10
-+  __DATA_CONST.__const: 0x28
-+  __DATA_CONST.__kalloc_var: 0xa0
-+  __DATA_CONST.__kalloc_type: 0x80
-+  __DATA_CONST.__auth_got: 0x68
-+  __DATA_CONST.__got: 0x10
 +  Functions: 19
-   Symbols:   0
+
 -  CStrings:  457
 +  CStrings:  11
- 
 CStrings:
 - "\n"
 - " %02X"

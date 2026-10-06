@@ -2,42 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/CoreSymbolication.framework/coresymbolicationd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8508` | `0x8884` | **`+0x37c`** |
+| `__TEXT.__cstring` | `0x5f1` | `0x656` | **`+0x65`** |
+| `__TEXT.__gcc_except_tab` | `0x6f8` | `0x750` | **`+0x58`** |
+| `__DATA_CONST.__const` | `0x3f8` | `0x428` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x418` | `0x428` | **`+0x10`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -64578.77.1.0.0
--  __TEXT.__text: 0x8508
 +64578.82.1.0.0
-+  __TEXT.__text: 0x8884
-   __TEXT.__auth_stubs: 0x790
-   __TEXT.__const: 0x29f
--  __TEXT.__gcc_except_tab: 0x6f8
--  __TEXT.__cstring: 0x5f1
-+  __TEXT.__gcc_except_tab: 0x750
-+  __TEXT.__cstring: 0x656
-   __TEXT.__oslogstring: 0x37a
--  __TEXT.__unwind_info: 0x418
--  __DATA_CONST.__const: 0x3f8
-+  __TEXT.__unwind_info: 0x428
-+  __DATA_CONST.__const: 0x428
-   __DATA_CONST.__auth_got: 0x3d0
-   __DATA_CONST.__got: 0xe0
-   __DATA.__data: 0xd8
 
-   - /System/Library/PrivateFrameworks/CoreSymbolication.framework/CoreSymbolication
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 171
 -  Symbols:   421
 -  CStrings:  59
 +  Functions: 173
 +  Symbols:   425
 +  CStrings:  68
- 
 Symbols:
 + GCC_except_table49
 + GCC_except_table50

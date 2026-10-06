@@ -2,127 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/PhotosUIPrivate.framework/PhotosUIPrivate`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_catlist2`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__vfx_script_tbl`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__objc_stublist`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x58652c` | `0x5871d8` | **`+0xcac`** |
+| `__DATA.__bss` | `0x185e0` | `0x18170` | **`-0x470`** |
+| `__TEXT.__const` | `0x198b8` | `0x196a8` | **`-0x210`** |
+| `__AUTH_CONST.__objc_const` | `0x85528` | `0x85620` | **`+0xf8`** |
+| `__TEXT.__swift5_typeref` | `0x164ac` | `0x16578` | **`+0xcc`** |
+| `__AUTH_CONST.__const` | `0x179f8` | `0x17948` | **`-0xb0`** |
+| `__TEXT.__objc_methlist` | `0x502bc` | `0x5034c` | **`+0x90`** |
+| `__AUTH_CONST.__cfstring` | `0x26860` | `0x268c0` | **`+0x60`** |
+| `__TEXT.__oslogstring` | `0x14d85` | `0x14dd5` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2a4f8` | `0x2a540` | **`+0x48`** |
+| `__TEXT.__swift5_assocty` | `0x1930` | `0x18e8` | **`-0x48`** |
+| `__DATA.__data` | `0x14288` | `0x14248` | **`-0x40`** |
+| `__TEXT.__constg_swiftt` | `0xac50` | `0xac10` | **`-0x40`** |
+| `__TEXT.__cstring` | `0x34abd` | `0x34af5` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0x18190` | `0x181c0` | **`+0x30`** |
+| `__TEXT.__eh_frame` | `0x7348` | `0x7320` | **`-0x28`** |
+| `__TEXT.__gcc_except_tab` | `0x87d8` | `0x87fc` | **`+0x24`** |
+| `__TEXT.__swift5_proto` | `0xc28` | `0xc04` | **`-0x24`** |
+| `__TEXT.__swift5_reflstr` | `0x8477` | `0x8497` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x5478` | `0x5490` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x5cb4` | `0x5cc8` | **`+0x14`** |
+| `__TEXT.__swift5_builtin` | `0x71c` | `0x708` | **`-0x14`** |
+| `__DATA_CONST.__got` | `0x5750` | `0x5740` | **`-0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x7064` | `0x7054` | **`-0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x10e8` | `0x10f0` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x780` | `0x778` | **`-0x8`** |
+| `__TEXT.__swift_as_cont` | `0x584` | `0x57c` | **`-0x8`** |
+| `__TEXT.__swift_as_ret` | `0x264` | `0x260` | **`-0x4`** |
+
+### Other Changes
 
 ```diff
 
 -910.27.103.0.0
--  __TEXT.__text: 0x58652c
--  __TEXT.__objc_methlist: 0x502bc
--  __TEXT.__const: 0x198b8
 +910.33.102.0.0
-+  __TEXT.__text: 0x5871d8
-+  __TEXT.__objc_methlist: 0x5034c
-+  __TEXT.__const: 0x196a8
-   __TEXT.__dlopen_cstrs: 0x69b
--  __TEXT.__swift5_typeref: 0x164ac
--  __TEXT.__constg_swiftt: 0xac50
--  __TEXT.__swift5_builtin: 0x71c
--  __TEXT.__swift5_reflstr: 0x8477
--  __TEXT.__swift5_fieldmd: 0x7064
--  __TEXT.__swift5_assocty: 0x1930
-+  __TEXT.__swift5_typeref: 0x16578
-+  __TEXT.__constg_swiftt: 0xac10
-+  __TEXT.__swift5_builtin: 0x708
-+  __TEXT.__swift5_reflstr: 0x8497
-+  __TEXT.__swift5_fieldmd: 0x7054
-+  __TEXT.__swift5_assocty: 0x18e8
-   __TEXT.__swift5_capture: 0x4ce0
--  __TEXT.__swift5_proto: 0xc28
--  __TEXT.__swift5_types: 0x780
--  __TEXT.__oslogstring: 0x14d85
--  __TEXT.__cstring: 0x34abd
-+  __TEXT.__swift5_proto: 0xc04
-+  __TEXT.__swift5_types: 0x778
-+  __TEXT.__oslogstring: 0x14dd5
-+  __TEXT.__cstring: 0x34af5
-   __TEXT.__swift_as_entry: 0x260
--  __TEXT.__swift_as_ret: 0x264
--  __TEXT.__swift_as_cont: 0x584
-+  __TEXT.__swift_as_ret: 0x260
-+  __TEXT.__swift_as_cont: 0x57c
-   __TEXT.__swift5_protos: 0x74
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__gcc_except_tab: 0x87d8
-+  __TEXT.__gcc_except_tab: 0x87fc
-   __TEXT.__ustring: 0x146
--  __TEXT.__unwind_info: 0x18190
--  __TEXT.__eh_frame: 0x7348
-+  __TEXT.__unwind_info: 0x181c0
-+  __TEXT.__eh_frame: 0x7320
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist2: 0x10
-   __DATA_CONST.__objc_protolist: 0x1448
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2a4f8
-+  __DATA_CONST.__objc_selrefs: 0x2a540
-   __DATA_CONST.__objc_protorefs: 0x518
--  __DATA_CONST.__objc_superrefs: 0x10e8
-+  __DATA_CONST.__objc_superrefs: 0x10f0
-   __DATA_CONST.__vfx_script_tbl: 0x10
-   __DATA_CONST.__objc_arraydata: 0x15f0
--  __DATA_CONST.__got: 0x5750
--  __AUTH_CONST.__const: 0x179f8
--  __AUTH_CONST.__cfstring: 0x26860
--  __AUTH_CONST.__objc_const: 0x85528
-+  __DATA_CONST.__got: 0x5740
-+  __AUTH_CONST.__const: 0x17948
-+  __AUTH_CONST.__cfstring: 0x268c0
-+  __AUTH_CONST.__objc_const: 0x85620
-   __AUTH_CONST.__objc_arrayobj: 0xed0
-   __AUTH_CONST.__objc_intobj: 0x1620
-   __AUTH_CONST.__objc_dictobj: 0x398
-   __AUTH_CONST.__objc_doubleobj: 0x210
--  __AUTH_CONST.__auth_got: 0x5478
-+  __AUTH_CONST.__auth_got: 0x5490
-   __AUTH.__objc_data: 0x190d8
-   __AUTH.__data: 0x4fc8
--  __DATA.__objc_ivar: 0x5cb4
--  __DATA.__data: 0x14288
-+  __DATA.__objc_ivar: 0x5cc8
-+  __DATA.__data: 0x14248
-   __DATA.__objc_stublist: 0x28
--  __DATA.__bss: 0x185e0
-+  __DATA.__bss: 0x18170
-   __DATA.__common: 0x358
-   __DATA_DIRTY.__objc_data: 0x22a0
-   __DATA_DIRTY.__data: 0x250
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 41710
--  Symbols:   67507
+-  Symbols:   49064
 -  CStrings:  8021
 +  Functions: 41688
-+  Symbols:   67517
++  Symbols:   49065
 +  CStrings:  8022
- 
 Symbols:
 + -[PUCleanupToolController _frameOfAsset]
 + -[PUCleanupToolController _statusViewManagers]
@@ -700,32 +625,6 @@ Symbols:
 + ___block_descriptor_44_e8_32w_e5_v8?0lw32l8
 + ___block_descriptor_48_e8_32w40w_e17_v16?0"UIImage"8lw32l8w40l8
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyAA13_VariadicViewO4TreeVy_AA11_LayoutRootVyAA03AnyH0VGAA05TupleD0VyACyACyAA0F0PAAE9animation_4bodyQrAA9AnimationVSg_qd__AA011PlaceholderdF0VyxGXEtAaORd__lFQOyACyACyACyACy12PhotosUIEdit14PhotoStyleDPadVAA20_GeometryGroupEffectVGAA012_AspectRatioH0VGAA06_FrameH0VGAA32_EnvironmentKeyTransformModifierVySbGG_ACyAWyA12_GAA08_OpacityW0VGQo_AA16_OverlayModifierVyACyApAEAQ_ARQrAU_qd__AXXEtAaORd__lFQOyACyACyAA4TextVA15_GAA010_FixedSizeH0VG_ACyAWyA25_GA15_GQo_AA07_OffsetW0VGSgGGAA21_TraitWritingModifierVyAA14ZIndexTraitKeyVGG_ACyACyACyACyAA0V0VyAA012_ConditionalD0VyACyAY0rS13PaletteSliderVA7_GSgAA6VStackVyAY16ExpandableSliderVGGSgGA30_GA36_yAA18TransitionTraitKeyVGGA39_GAA25_AppearanceActionModifierVGAA6SpacerVSgQPGGAA05_FlexzH0VGAA30_EnvironmentKeyWritingModifierVyAA0H9DirectionOGGAaOHPA73_AaOHPA70_AaOHPAlA01_ef1_fI0HPyHC_A69_AaOHPA40_AaOHPA34_AaOHPqd0__AaOHD3_A17_HO_A33_AA0F8ModifierHPyHCHC_A39_AAA81_HPyHCHC_A65_AaOHPA62_AaOHPA61_AaOHPA57_AaOHPA56_AaOHPA55_AaOHpA54_AaOHPA48_AaOHpA47_AaOHPA46_AaOHPyHC_A7_AAA81_HPyHCHC_HC_A53_AaOHPyHCHC_HC_HC_A30_AAA81_HPyHCHC_A60_AAA81_HPyHCHC_A39_AAA81_HPyHCHC_A64_AAA81_HPyHCHCA68_AaOHpA67_AaOHPyHC_HCHX_HCHC_A72_AAA81_HPyHCHC_A78_AAA81_HPyHCHC
-+ _objc_msgSend$_clearImageOverrideState
-+ _objc_msgSend$_defaultInitialToolControllerTag
-+ _objc_msgSend$_discardAllVKAnalysisForYIFromAssetViewModelIfNeeded
-+ _objc_msgSend$_frameOfAsset
-+ _objc_msgSend$_spotlightPlatterClipViewWithCornerRadius:
-+ _objc_msgSend$_statusViewManagers
-+ _objc_msgSend$_updateStatusViewsLayoutProperties
-+ _objc_msgSend$_updateStatusViewsPlatters
-+ _objc_msgSend$analyzingWorkingQueue
-+ _objc_msgSend$convertTime:toSpace:
-+ _objc_msgSend$hasDisplayedImageOverride
-+ _objc_msgSend$initWithImage:asset:
-+ _objc_msgSend$initWithPhotoLibrary:suggestionGroup:isProcessing:isDeviceAspectRatioContentMode:contentHasSpecialFilter:containerIdentifier:
-+ _objc_msgSend$isCurrentlySmartStyleable
-+ _objc_msgSend$needsOutfillSafeEdgesLoad
-+ _objc_msgSend$oneUpPresentationHelperPreferredModalPresentationStyle:
-+ _objc_msgSend$px_renderedImage
-+ _objc_msgSend$setAllowsCollectionPlaybackFromSingleAssetPresentation:
-+ _objc_msgSend$setIdealWidth:
-+ _objc_msgSend$setIsIPadLandscapeLayout:
-+ _objc_msgSend$setIsIPadLayout:
-+ _objc_msgSend$setNeedsOutfillSafeEdgesLoad:
-+ _objc_msgSend$shouldInitiallyZoomContentWithSize:toFillViewWithSize:forAssetMediaType:mediaSubtypes:userInterfaceIdiom:
-+ _objc_msgSend$tilingViewControllerTransitionClipCornerRadius:
-+ _objc_msgSend$tilingViewControllerTransitionClipSourceView:
-+ _objc_msgSend$visualIntelligenceInteractionForVI
 + _symbolic _____yAAy_____y______y_____G_____yAAyAAy_____yAAyAAyAAyAAy__________G_____G_____G_____ySbGG_AAy_____yAPG_____GQo______yAAy_____yAAyAAy_____ASG_____G_AAyAQyAZGASGQo______GSgGG_____y_____GG_AAyAAyAAyAAy_____y_____yAAy_____ALGSg_____y_____GGSgGA2_GA7_y_____GGA9_G_____G_____SgQPGG_____G_____y_____GG 7SwiftUI15ModifiedContentV AA13_VariadicViewO4TreeV AA11_LayoutRootV AA03AnyH0V AA05TupleD0V AA0F0PAAE9animation_4bodyQrAA9AnimationVSg_qd__AA011PlaceholderdF0VyxGXEtAaNRd__lFQO 12PhotosUIEdit14PhotoStyleDPadV AA20_GeometryGroupEffectV AA012_AspectRatioH0V AA06_FrameH0V AA32_EnvironmentKeyTransformModifierV AV AA08_OpacityW0V AA16_OverlayModifierV AoAEAP_AQQrAT_qd__AWXEtAaNRd__lFQO AA4TextV AA010_FixedSizeH0V AA07_OffsetW0V AA21_TraitWritingModifierV AA14ZIndexTraitKeyV AA0V0V AA012_ConditionalD0V AX0rS13PaletteSliderV AA6VStackV AX16ExpandableSliderV AA18TransitionTraitKeyV AA25_AppearanceActionModifierV AA6SpacerV AA05_FlexzH0V AA30_EnvironmentKeyWritingModifierV AA0H9DirectionO
 + _type_layout_string SC12PXStoryErrorLeV
 - +[PUInternalAutoLoopFeedbackActivity activityCategory]
@@ -1302,23 +1201,6 @@ Symbols:
 - _associated conformance So23PXAppIntentsNSErrorCodeV10Foundation06_ErrorD8ProtocolSC01_F4TypeAcDP_AC014_BridgedStoredC0
 - _associated conformance So23PXAppIntentsNSErrorCodeV10Foundation06_ErrorD8ProtocolSCSQ
 - _get_witness_table 7SwiftUI15ModifiedContentVyAA13_VariadicViewO4TreeVy_AA11_LayoutRootVyAA03AnyH0VGAA05TupleD0VyACyACyAA0F0PAAE9animation_4bodyQrAA9AnimationVSg_qd__AA011PlaceholderdF0VyxGXEtAaORd__lFQOyACyACyACyACy12PhotosUIEdit14PhotoStyleDPadVAA20_GeometryGroupEffectVGAA012_AspectRatioH0VGAA06_FrameH0VGAA32_EnvironmentKeyTransformModifierVySbGG_ACyAWyA12_GAA08_OpacityW0VGQo_AA16_OverlayModifierVyACyApAEAQ_ARQrAU_qd__AXXEtAaORd__lFQOyACyACyAA4TextVA15_GAA010_FixedSizeH0VG_ACyAWyA25_GA15_GQo_AA07_OffsetW0VGSgGGAA21_TraitWritingModifierVyAA14ZIndexTraitKeyVGG_ACyACyACyACyAA0V0VyAA012_ConditionalD0VyACyAY0rS13PaletteSliderVA7_GSgAA6VStackVyAY16ExpandableSliderVGGSgGA30_GA36_yAA18TransitionTraitKeyVGGA39_GAA25_AppearanceActionModifierVGAA6SpacerVSgQPGGAA05_FlexzH0VGAaOHPA70_AaOHPAlA01_ef1_fI0HPyHC_A69_AaOHPA40_AaOHPA34_AaOHPqd0__AaOHD3_A17_HO_A33_AA0F8ModifierHPyHCHC_A39_AAA75_HPyHCHC_A65_AaOHPA62_AaOHPA61_AaOHPA57_AaOHPA56_AaOHPA55_AaOHpA54_AaOHPA48_AaOHpA47_AaOHPA46_AaOHPyHC_A7_AAA75_HPyHCHC_HC_A53_AaOHPyHCHC_HC_HC_A30_AAA75_HPyHCHC_A60_AAA75_HPyHCHC_A39_AAA75_HPyHCHC_A64_AAA75_HPyHCHCA68_AaOHpA67_AaOHPyHC_HCHX_HCHC_A72_AAA75_HPyHCHC
-- _objc_msgSend$_discardAllVKAnalysisForYIFromAssetViewModel
-- _objc_msgSend$_updatePromptViewPlatter
-- _objc_msgSend$canPerformEditRequestWithAssets:adjustments:completionHandler:
-- _objc_msgSend$hasTrimmedVideo
-- _objc_msgSend$initWithAsset:delegate:
-- _objc_msgSend$initWithPhotoLibrary:suggestionGroup:isProcessing:isDeviceAspectRatioContentMode:contentHasSpecialFilter:
-- _objc_msgSend$interactionForVI
-- _objc_msgSend$isFillScreenModeEnabled
-- _objc_msgSend$isFillScreenModeEnabledDidChange
-- _objc_msgSend$loadVideoFrameQueue
-- _objc_msgSend$oneUpPresentationHelperPrefersCurrentContextModalPresentation:
-- _objc_msgSend$renderMeteorPlusAsHDR
-- _objc_msgSend$setIsFillScreenModeEnabledDidChange:
-- _objc_msgSend$setRenderMeteorPlusAsHDR:
-- _objc_msgSend$setServerSafety:
-- _objc_msgSend$shouldInitiallyZoomContentWithSize:toFillViewWithSize:forAssetMediaType:userInterfaceIdiom:
-- _objc_msgSend$showLoopBadges
 - _symbolic _____ SC23PXAppIntentsNSErrorCodeLeV
 - _symbolic _____ So23PXAppIntentsNSErrorCodeV
 - _type_layout_string SC23PXAppIntentsNSErrorCodeLeV

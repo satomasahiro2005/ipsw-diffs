@@ -2,69 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/WellnessUI.framework/WellnessUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_selrefs`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x8090` | `0x5d10` | **`-0x2380`** |
+| `__DATA_DIRTY.__bss` | `0x80` | `0x2400` | **`+0x2380`** |
+| `__DATA_DIRTY.__data` | `0x98` | `0x18f0` | **`+0x1858`** |
+| `__AUTH.__data` | `0x14e0` | `0x258` | **`-0x1288`** |
+| `__DATA.__data` | `0x10d0` | `0xb38` | **`-0x598`** |
+| `__TEXT.__text` | `0x62e20` | `0x631a4` | **`+0x384`** |
+| `__TEXT.__swift5_typeref` | `0x2818` | `0x291a` | **`+0x102`** |
+| `__TEXT.__const` | `0x59c4` | `0x59f4` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x1698` | `0x16a0` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -3600.12.12.0.0
--  __TEXT.__text: 0x62e20
--  __TEXT.__const: 0x59c4
--  __TEXT.__swift5_typeref: 0x2818
 +3600.12.14.0.0
-+  __TEXT.__text: 0x631a4
-+  __TEXT.__const: 0x59f4
-+  __TEXT.__swift5_typeref: 0x291a
-   __TEXT.__swift5_capture: 0x610
-   __TEXT.__swift5_reflstr: 0x1357
-   __TEXT.__swift5_assocty: 0x248
 
-   __TEXT.__cstring: 0xc92
-   __TEXT.__swift5_proto: 0x400
-   __TEXT.__swift5_types: 0x13c
--  __TEXT.__unwind_info: 0x1698
-+  __TEXT.__unwind_info: 0x16a0
-   __TEXT.__eh_frame: 0xa40
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __AUTH_CONST.__const: 0x2048
-   __AUTH_CONST.__objc_const: 0x1b0
-   __AUTH_CONST.__auth_got: 0x978
--  __AUTH.__data: 0x14e0
--  __DATA.__data: 0x10d0
--  __DATA.__bss: 0x8090
-+  __AUTH.__data: 0x258
-+  __DATA.__data: 0xb38
-+  __DATA.__bss: 0x5d10
-   __DATA.__common: 0xc8
--  __DATA_DIRTY.__data: 0x98
--  __DATA_DIRTY.__bss: 0x80
-+  __DATA_DIRTY.__data: 0x18f0
-+  __DATA_DIRTY.__bss: 0x2400
-   - /System/Library/Frameworks/DeveloperToolsSupport.framework/DeveloperToolsSupport
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/HealthKit.framework/HealthKit
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2097
--  Symbols:   5552
+-  Symbols:   5531
 +  Functions: 2100
-+  Symbols:   5571
-   CStrings:  87
- 
++  Symbols:   5550
 Symbols:
 + _$s10WellnessUI17SnippetHeaderViewV_05SwiftB00E0P0cB0E16componentSpacing3top6bottomQr12CoreGraphics7CGFloatV_AMtFQOyAfGE10separators_10isOverrideQr0C3Kit14SeparatorStyleO_SbtFQOyAG018FactItemHeroNumberE0V_Qo__Qo_AfGEAhiJQrAM_AMtFQOyAG015StatusIndicatorE0V_Qo_tMR
 + _$s10WellnessUI17SnippetHeaderViewV_05SwiftB00E0P0cB0E16componentSpacing3top6bottomQr12CoreGraphics7CGFloatV_AMtFQOyAfGE10separators_10isOverrideQr0C3Kit14SeparatorStyleO_SbtFQOyAG018FactItemHeroNumberE0V_Qo__Qo_AfGEAhiJQrAM_AMtFQOyAG015StatusIndicatorE0V_Qo_tMd

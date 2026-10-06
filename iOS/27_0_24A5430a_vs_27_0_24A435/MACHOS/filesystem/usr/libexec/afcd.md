@@ -2,6 +2,8 @@
 
 > `/usr/libexec/afcd`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_100001a28 : 16 -> 20

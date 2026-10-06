@@ -2,81 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/MDM.framework/MDM`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x585d0` | `0x5559c` | **`-0x3034`** |
+| `__AUTH_CONST.__cfstring` | `0x52c0` | `0x4bc0` | **`-0x700`** |
+| `__TEXT.__oslogstring` | `0x76e4` | `0x70d4` | **`-0x610`** |
+| `__TEXT.__cstring` | `0x58c0` | `0x532d` | **`-0x593`** |
+| `__DATA_CONST.__objc_selrefs` | `0x35c0` | `0x3478` | **`-0x148`** |
+| `__TEXT.__objc_methlist` | `0x43a4` | `0x42d4` | **`-0xd0`** |
+| `__DATA_CONST.__const` | `0x1f68` | `0x1eb8` | **`-0xb0`** |
+| `__AUTH_CONST.__objc_const` | `0x6c08` | `0x6c58` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x1310` | `0x12c0` | **`-0x50`** |
+| `__DATA_CONST.__got` | `0x1270` | `0x1230` | **`-0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x7e8` | `0x7e0` | **`-0x8`** |
+| `__DATA.__objc_ivar` | `0x2a4` | `0x2ac` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -113.0.2.0.0
--  __TEXT.__text: 0x585d0
--  __TEXT.__objc_methlist: 0x43a4
 +113.2.5.0.0
-+  __TEXT.__text: 0x5559c
-+  __TEXT.__objc_methlist: 0x42d4
-   __TEXT.__const: 0x1c2
-   __TEXT.__gcc_except_tab: 0xf08
--  __TEXT.__cstring: 0x58c0
--  __TEXT.__oslogstring: 0x76e4
-+  __TEXT.__cstring: 0x532d
-+  __TEXT.__oslogstring: 0x70d4
-   __TEXT.__dlopen_cstrs: 0x55
-   __TEXT.__swift5_typeref: 0x3c
-   __TEXT.__swift5_capture: 0x68
-   __TEXT.__swift_as_entry: 0xc
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x18
--  __TEXT.__unwind_info: 0x1310
-+  __TEXT.__unwind_info: 0x12c0
-   __TEXT.__eh_frame: 0x178
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1f68
-+  __DATA_CONST.__const: 0x1eb8
-   __DATA_CONST.__objc_classlist: 0x1a0
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0xb8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x35c0
-+  __DATA_CONST.__objc_selrefs: 0x3478
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__objc_superrefs: 0x130
-   __DATA_CONST.__objc_arraydata: 0x408
--  __DATA_CONST.__got: 0x1270
-+  __DATA_CONST.__got: 0x1230
-   __AUTH_CONST.__const: 0x630
--  __AUTH_CONST.__cfstring: 0x52c0
--  __AUTH_CONST.__objc_const: 0x6c08
-+  __AUTH_CONST.__cfstring: 0x4bc0
-+  __AUTH_CONST.__objc_const: 0x6c58
-   __AUTH_CONST.__objc_arrayobj: 0x8d0
-   __AUTH_CONST.__objc_intobj: 0x660
--  __AUTH_CONST.__auth_got: 0x7e8
-+  __AUTH_CONST.__auth_got: 0x7e0
-   __AUTH.__objc_data: 0x638
--  __DATA.__objc_ivar: 0x2a4
-+  __DATA.__objc_ivar: 0x2ac
-   __DATA.__data: 0x7f0
-   __DATA.__bss: 0x1c0
-   __DATA_DIRTY.__objc_data: 0xa28
 
-   - /System/Library/PrivateFrameworks/RemoteManagementModel.framework/RemoteManagementModel
-   - /System/Library/PrivateFrameworks/ScreenTimeCore.framework/ScreenTimeCore
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
 -  - /System/Library/PrivateFrameworks/SoftwareUpdateServices.framework/SoftwareUpdateServices
-   - /System/Library/PrivateFrameworks/SpringBoardFoundation.framework/SpringBoardFoundation
-   - /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices
-   - /System/Library/PrivateFrameworks/SpringBoardUIServices.framework/SpringBoardUIServices
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 1711
--  Symbols:   4970
+-  Symbols:   3443
 -  CStrings:  1370
 +  Functions: 1687
-+  Symbols:   4897
++  Symbols:   3409
 +  CStrings:  1272
- 
 Symbols:
 + -[MDMDEPPushTokenManager cachedLastPushTokenHash]
 + -[MDMDEPPushTokenManager cachedLastSyncedEligibility]
@@ -105,10 +62,6 @@ Symbols:
 + _OBJC_CLASS_$_DMCProcessAssertion
 + _OBJC_IVAR_$_MDMDEPPushTokenManager._cachedLastPushTokenHash
 + _OBJC_IVAR_$_MDMDEPPushTokenManager._cachedLastSyncedEligibility
-+ _objc_msgSend$cachedLastPushTokenHash
-+ _objc_msgSend$cachedLastSyncedEligibility
-+ _objc_msgSend$setCachedLastPushTokenHash:
-+ _objc_msgSend$setCachedLastSyncedEligibility:
 - +[MDMParser _dmfAction:fromMDMActionString:]
 - +[MDMParser _errorFromDMFSoftwareUpdateError:]
 - +[MDMParser _errorWithDomain:code:descriptionKey:underlyingError:type:]
@@ -170,49 +123,6 @@ Symbols:
 - _kMDMPRequestTypeScheduleOSUpdateScan
 - _kMDMPSettingsSettingsSoftwareUpdate
 - _kSettingsSettingsSoftwareUpdatePathKey
-- _objc_msgSend$_availableOSUpdates:assertion:completionBlock:
-- _objc_msgSend$_dmfAction:fromMDMActionString:
-- _objc_msgSend$_dmfScheduleOSUpdate:assertion:completionBlock:
-- _objc_msgSend$_errorFromDMFSoftwareUpdateError:
-- _objc_msgSend$_errorWithDomain:code:descriptionKey:underlyingError:type:
-- _objc_msgSend$_performSetUpdatePath:
-- _objc_msgSend$_platformSupportsOSUpdateManagement
-- _objc_msgSend$_rejectSoftwareUpdateBecauseOfMalformedRequestCompletionBlock:
-- _objc_msgSend$_rejectSoftwareUpdateBecauseUserLoggedInCompletionBlock:
-- _objc_msgSend$_resolvedInstallActionStringForAction:
-- _objc_msgSend$_scheduleOSUpdate:assertion:completionBlock:
-- _objc_msgSend$_scheduleOSUpdateScan:assertion:completionBlock:
-- _objc_msgSend$_shouldUseDelayWithRequest:
-- _objc_msgSend$_softwareUpdatesNotPermittedWithLoggedInUserError
-- _objc_msgSend$_statusFromError:action:
-- _objc_msgSend$_statusOfOSUpdates:assertion:completionBlock:
-- _objc_msgSend$_updateDictionaryFromUpdate:
-- _objc_msgSend$_useDelayFlagAllowed
-- _objc_msgSend$action
-- _objc_msgSend$allowsInstallLater
-- _objc_msgSend$alternateDSID
-- _objc_msgSend$boolForKey:
-- _objc_msgSend$build
-- _objc_msgSend$currentProductType
-- _objc_msgSend$downloadPercentComplete
-- _objc_msgSend$downloadSize
-- _objc_msgSend$humanReadableName
-- _objc_msgSend$installSize
-- _objc_msgSend$isCritical
-- _objc_msgSend$isSplat
-- _objc_msgSend$lowercaseString
-- _objc_msgSend$productKey
-- _objc_msgSend$productName
-- _objc_msgSend$restartRequired
-- _objc_msgSend$setAction:
-- _objc_msgSend$setProductKey:
-- _objc_msgSend$setProductVersion:
-- _objc_msgSend$setUseDelay:
-- _objc_msgSend$softwareUpdateDeviceIDWithDefaultValue:
-- _objc_msgSend$softwareUpdatePathFromDisk
-- _objc_msgSend$supplementalBuild
-- _objc_msgSend$supplementalVersionExtra
-- _objc_msgSend$update
 CStrings:
 + "DEP push token sync in flight"
 + "Failed to persist lastPushTokenHash (cache is authoritative) with error: %{public}@"

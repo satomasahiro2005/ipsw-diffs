@@ -2,141 +2,66 @@
 
 > `/System/Library/PrivateFrameworks/HomeUI.framework/HomeUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7a5a88` | `0x7e3fbc` | **`+0x3e534`** |
+| `__TEXT.__swift5_typeref` | `0x18090` | `0x1abf6` | **`+0x2b66`** |
+| `__TEXT.__const` | `0x19834` | `0x1b030` | **`+0x17fc`** |
+| `__TEXT.__eh_frame` | `0x11c24` | `0x13120` | **`+0x14fc`** |
+| `__AUTH_CONST.__const` | `0x190d8` | `0x1a4f0` | **`+0x1418`** |
+| `__TEXT.__oslogstring` | `0x2d996` | `0x2eaad` | **`+0x1117`** |
+| `__DATA.__data` | `0x14330` | `0x14fa0` | **`+0xc70`** |
+| `__TEXT.__cstring` | `0x41d17` | `0x428c2` | **`+0xbab`** |
+| `__TEXT.__unwind_info` | `0x1aed8` | `0x1ba08` | **`+0xb30`** |
+| `__DATA.__bss` | `0x12a68` | `0x133d8` | **`+0x970`** |
+| `__TEXT.__constg_swiftt` | `0xcea4` | `0xd72c` | **`+0x888`** |
+| `__TEXT.__swift5_reflstr` | `0x7257` | `0x77e7` | **`+0x590`** |
+| `__TEXT.__swift5_fieldmd` | `0x6ce0` | `0x725c` | **`+0x57c`** |
+| `__TEXT.__swift5_capture` | `0x42c4` | `0x47f0` | **`+0x52c`** |
+| `__AUTH_CONST.__objc_const` | `0x90718` | `0x90c10` | **`+0x4f8`** |
+| `__AUTH.__data` | `0x59f8` | `0x5d48` | **`+0x350`** |
+| `__AUTH_CONST.__auth_got` | `0x4cb8` | `0x4ed8` | **`+0x220`** |
+| `__DATA_CONST.__got` | `0x6e58` | `0x6fd0` | **`+0x178`** |
+| `__TEXT.__objc_methlist` | `0x5016c` | `0x502d4` | **`+0x168`** |
+| `__AUTH.__objc_data` | `0x1c860` | `0x1c9c0` | **`+0x160`** |
+| `__DATA_CONST.__objc_selrefs` | `0x220e8` | `0x22230` | **`+0x148`** |
+| `__TEXT.__swift_as_cont` | `0xc74` | `0xd44` | **`+0xd0`** |
+| `__TEXT.__swift5_assocty` | `0x12a8` | `0x1368` | **`+0xc0`** |
+| `__TEXT.__swift_as_ret` | `0x574` | `0x608` | **`+0x94`** |
+| `__DATA_CONST.__const` | `0xf530` | `0xf4b0` | **`-0x80`** |
+| `__TEXT.__swift_as_entry` | `0x568` | `0x5e4` | **`+0x7c`** |
+| `__TEXT.__swift5_types` | `0x7e4` | `0x854` | **`+0x70`** |
+| `__TEXT.__swift5_proto` | `0xa20` | `0xa74` | **`+0x54`** |
+| `__TEXT.__gcc_except_tab` | `0x8aa4` | `0x8ae0` | **`+0x3c`** |
+| `__DATA.__common` | `0x3c8` | `0x3f0` | **`+0x28`** |
+| `__DATA_DIRTY.__objc_data` | `0x7fc0` | `0x7fd8` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x2910` | `0x2920` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0x1918` | `0x1908` | **`-0x10`** |
+| `__TEXT.__swift5_protos` | `0x7c` | `0x88` | **`+0xc`** |
+| `__DATA.__objc_stublist` | `0x78` | `0x80` | **`+0x8`** |
+| `__DATA_CONST.__objc_catlist2` | `0x10` | `0x18` | **`+0x8`** |
+| `__DATA_DIRTY.__objc_ivar` | `0x3b0c` | `0x3b14` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x98` | `0x90` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__ustring`
+
+### Other Changes
+
 ```diff
 
 -1216.4.0.1.11
--  __TEXT.__text: 0x7a5a88 sha256:b625f939dbf27f234af8c380f688d6f1a83dc0bb53f1bd7a540e1dbcec5a8633
--  __TEXT.__objc_methlist: 0x5016c sha256:7a62b186b7e1d2ea4aaf5c5e672918082a3a8f5145987507b32a69cf0a584e45
--  __TEXT.__const: 0x19834 sha256:db549835243110cb79be5ddbca967e698c8236f9e40805bdbfbd47880b7dfdd7
--  __TEXT.__dlopen_cstrs: 0x344 sha256:3633d2693f3311f0a3ad40b6d4da59db316453f0db49b11ce4eee4413bc54c8d
--  __TEXT.__constg_swiftt: 0xcea4 sha256:20471c5d9ec9aeaeb41e1195a0b5a9c58283df3d6f288f3631c2606e6a58ef4b
--  __TEXT.__swift5_typeref: 0x18090 sha256:5ab865162dfc4f2e1e273be0df69155e2545a89584dfcfaddcfabf5f145487a5
--  __TEXT.__swift5_reflstr: 0x7257 sha256:44fca872ce2ec29d4fe7fe263615dc039e4f9ac846881ab2d8eddca9221adca5
--  __TEXT.__swift5_fieldmd: 0x6ce0 sha256:4cb7d4741db64bffb27e8fa1a43b2c675069c18596f543bdd82365efd8ded4ff
--  __TEXT.__swift5_builtin: 0x618 sha256:f03abd8625c782ef81b71953b688bc4fbbddec8ab6169a3dad9f1f9a8f578db8
--  __TEXT.__swift5_assocty: 0x12a8 sha256:bf7e15973df1a09aaf40ccef718a2e0fecd5095e5ea66266337852ba671d8f8b
--  __TEXT.__swift5_capture: 0x42c4 sha256:4826a6e07bb0d6ca354d9357aad690afd22e94abe123d738edd18824a8d0abc6
--  __TEXT.__oslogstring: 0x2d996 sha256:fdb6b8c4cd9a6cceaec9e2018739d5b8c45c8576361d42e87bde1577fce47885
--  __TEXT.__cstring: 0x41d17 sha256:cb632f33145293f3198d36fd53a2e3c1ca80a9d7a05fcb34955191bc01375f09
--  __TEXT.__swift5_proto: 0xa20 sha256:8be726cb724c95cc265969a8100fad2dc9898aa541cf08f30311a4a592c5a6e9
--  __TEXT.__swift5_types: 0x7e4 sha256:10141de75395eda504455961fa941ed40c1fe3998582166c9013ac7c4a233470
--  __TEXT.__swift5_mpenum: 0x98 sha256:43d18eb027081c922d0aa3184c95f77b61b200d4bbecafba0bf0ae1c89dc5bf6
--  __TEXT.__swift_as_entry: 0x568 sha256:d06e39b41769540739245a730157204abe8a8093d1e93aa53b98b533302cfe10
--  __TEXT.__swift_as_ret: 0x574 sha256:2c584b817bd26b9134d2ae79774fbce9dfbef959bddc26187a21b7c81631d0d9
--  __TEXT.__swift_as_cont: 0xc74 sha256:35985d9442af29f3fcfcb24a94577a8607e83bb4369a65301f97e1d5a5bf8f9d
--  __TEXT.__swift5_protos: 0x7c sha256:6d83ae9079caa5089c7dcb06010285566123965dd6b0e2d06f94846a98f03ec5
--  __TEXT.__gcc_except_tab: 0x8aa4 sha256:0d9741bbf50bb6eed1cd2cdea03a07d5948c0dd94f111542ce79c14a486201f9
--  __TEXT.__ustring: 0x7e sha256:f19ebc1b329c5b26aab9c938b3fc61c0568d79178248ae9aa4f17b1b180c50f8
--  __TEXT.__unwind_info: 0x1aed8 sha256:2b6dc8fb51fde2c7edf4fe842d930cc60487c6bb8375b30269f9152b39413d1f
--  __TEXT.__eh_frame: 0x11c24 sha256:dd60734d585c313984bed82c42ab23505fb23965be1e17046cc6c9efd7e2416b
 +1227.0.0.0.1
-+  __TEXT.__text: 0x7e3fbc sha256:cd9a90153578120a8321662657a7fd430e6772684c26c5ca256525e7869e4d76
-+  __TEXT.__objc_methlist: 0x502d4 sha256:893755c5d9c1fe02df599ba9b87631ded6151975a952c80187e91c953b874b86
-+  __TEXT.__const: 0x1b030 sha256:568c46b88d78619a2fcf8690b53ac12a16d5c88b6974f5e477779aee782ca755
-+  __TEXT.__dlopen_cstrs: 0x344 sha256:dff27a0cef8b300203b834f129c680a08817b739bb94d70b6f1ef2811d38634a
-+  __TEXT.__constg_swiftt: 0xd72c sha256:ebdcecc769463eff40f34a223215d1fbd68653553627c3191a4aeb361a0ef919
-+  __TEXT.__swift5_typeref: 0x1abf6 sha256:0d40ae24a29520b2b0d87afe58087bc6d96b68a8129d927bd27bebdff5257d3a
-+  __TEXT.__swift5_reflstr: 0x77e7 sha256:96b0b415e4ec1c9bf8e2606f61400e6fad855f155e7adb75c536f89cc950d043
-+  __TEXT.__swift5_fieldmd: 0x725c sha256:e1b4e93bfb3e9290c810a242c93ad0dd0410abfc046d85150cd1246e8a229313
-+  __TEXT.__swift5_builtin: 0x618 sha256:76e58b3e371ac11fbcd04eb71f245c28cebf91654a78ca030f2f95925305a87d
-+  __TEXT.__swift5_assocty: 0x1368 sha256:6c957a3eb7a1978ed66372d123c59c79bcad87a33cd7e3ac56a84a11f517b160
-+  __TEXT.__swift5_proto: 0xa74 sha256:a485f74ab1fc0562b16144bcd444676f94c27d2ecaf43e1b3e5d8f7a33a77ef8
-+  __TEXT.__swift5_types: 0x854 sha256:96a43c4a8279a460d910d95f4feeea5ec2ec7804084f41e20feef740168397a1
-+  __TEXT.__swift5_capture: 0x47f0 sha256:d476f91a67b0da746fbc1e5686c61e873385cf1b72c5c473d78a793008048310
-+  __TEXT.__oslogstring: 0x2eaad sha256:bedc2b003e5d5d5e55b27f02e50fb554c32a538c0959cec0c7e52e3b564d313a
-+  __TEXT.__cstring: 0x428c2 sha256:eacb7a083e154b2f09ae8bd776ba64e4c63fc32c9cc79f8d52a9fb1a9f22257a
-+  __TEXT.__swift5_protos: 0x88 sha256:a43847b2fbedd196751f53e998c1c27f700480ba4aeca518576de8be17542ef8
-+  __TEXT.__swift_as_entry: 0x5e4 sha256:1c43a2ff83279f43f9b83e2afdc7661024cf2b4fda0af187fa12c29f9cede2cb
-+  __TEXT.__swift_as_ret: 0x608 sha256:872ef91044aadf067d960c4434b1a965f0254372e9f536473a5e03d0f4d3ea0b
-+  __TEXT.__swift_as_cont: 0xd44 sha256:c09633c4118e658ae5627cebecd2b460e73eee5fc6b5ac560904ceb9677ef58c
-+  __TEXT.__swift5_mpenum: 0x90 sha256:73a0d22af61f3b35002bfcf1bdf526d7094269c4e0928e912e876d7fc112eec3
-+  __TEXT.__gcc_except_tab: 0x8ae0 sha256:54e4636bc6c93902c61cb775229b2915906097b45464930c0dd924895c67dc76
-+  __TEXT.__ustring: 0x7e sha256:6282474270c415a23d88d588970f5cfbcb2d5eefb1d6d10db86bcb967ea9f68c
-+  __TEXT.__unwind_info: 0x1ba08 sha256:92ec338f080ed19fee0d6ff41390e767ea93b07ead931d78b7b1765ebb62981d
-+  __TEXT.__eh_frame: 0x13120 sha256:f88fbbdd74b03def32a8d478085c0096627378560ba121ab94625805f261a822
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xf530 sha256:02a10fa4fdeb1e97875140c3b8949470f5d5cffb1da1be42b14a00b8393fcac2
--  __DATA_CONST.__objc_classlist: 0x2910 sha256:613526e69ee10fa885884df05cf42dd972557beb219acafa9dba28f2d6285bd3
--  __DATA_CONST.__objc_catlist: 0x208 sha256:39c20bdc89bff7b5072c0a55b5d6dd8fd26adb212c44a6270341da3a238c5a91
--  __DATA_CONST.__objc_catlist2: 0x10 sha256:94c8afa20868ef247296f48bf8f3fa845c48315204cf1cefaad22d8f804e0781
--  __DATA_CONST.__objc_protolist: 0x1260 sha256:8fbb172370fc39980b2f821bc00c3a6358a8039bdc9e66e51cf97effee54aa8a
-+  __DATA_CONST.__const: 0xf4b0 sha256:cf65dd7c4fffd265926d263ed10492301f72204bfd052ba601dfca6f4f7b519d
-+  __DATA_CONST.__objc_classlist: 0x2920 sha256:0db5fdf2debb10f7800bb50f90907ad84855336fccaa591c85509c60fefa6d94
-+  __DATA_CONST.__objc_catlist: 0x208 sha256:08afacedca0aabb864e2be258d698ebcd055794c4dac7c127e08e4480fdda472
-+  __DATA_CONST.__objc_catlist2: 0x18 sha256:b39023235da1410f5419e4c34ccbe60e12bb9392ff626f3f6155dcb249575688
-+  __DATA_CONST.__objc_protolist: 0x1260 sha256:2cfb06c45055b6a9a949600da075e21e77b25d2fc032c325cb43e094f3b242c7
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0x220e8 sha256:274aa4e332269b5937a1fbf1ea5a3d7a838f86237a78146708e58c3081a23b04
--  __DATA_CONST.__objc_protorefs: 0x6c8 sha256:6fb935098edfc4c3c9fcffadd5416c2edbc244b93ad3c5c715c8c7eaeac77ca1
--  __DATA_CONST.__objc_superrefs: 0x1ef0 sha256:8cfab07f2019b1e0a4fde3a797e79e66d5395559e40094529a05645cea52871e
--  __DATA_CONST.__objc_arraydata: 0x9b0 sha256:47e3a22f9918753905d3aff1b45488c0ad296c1ec92a9b7e5bc9ce97b8bd0c57
--  __DATA_CONST.__got: 0x6e58 sha256:6624b805bb7641bd5f4d714da05162d445ba599cf82876f2ba5c5dd7031b49e1
--  __AUTH_CONST.__const: 0x190d8 sha256:5989b3e3deffa38506f73f2e496d1b1e2b461be98ee7e0b1dff6288b0b13438a
--  __AUTH_CONST.__cfstring: 0x22960 sha256:38f023f97039eb138dcb068ca69c87540be432a327e3764c76dc1025a0ac7bb1
--  __AUTH_CONST.__objc_const: 0x90718 sha256:37fc3979ee455dbd419b5fcafb34f9135e553315500d614793570cdaf3037a57
--  __AUTH_CONST.__objc_intobj: 0x1bf0 sha256:1ec1a734317a6a10826d9cda0c7abf59136b9bbcf77493903e9b15f72ad9ee93
--  __AUTH_CONST.__objc_doubleobj: 0x540 sha256:f9c79d3752c96fc0cff378423cde91a2074dbeb6a017b47aaac0f69728bb36db
--  __AUTH_CONST.__objc_arrayobj: 0x540 sha256:ee195947cf4dd1f800ef263cef88dc819393d4cec0d8c24cec2b3c6a36e71da7
--  __AUTH_CONST.__objc_dictobj: 0x578 sha256:65da36ff2b6a9ca5716d18bf6857ea42835a39a86688e1eea42bfffcdab575fb
--  __AUTH_CONST.__objc_floatobj: 0x40 sha256:e0a0d8ca116a809964f321d16959433f3e0cbf26369048f22bf522448b69113d
--  __AUTH_CONST.__auth_got: 0x4cb8 sha256:261798bfe56835963a373e932cd844f83f8d4a31d84818bb0528054f4f0aa742
--  __AUTH.__objc_data: 0x1c860 sha256:03c26a8058e17028e9ccd1697e9b20c985167b8ce9bd5fe468999c78017778dd
--  __AUTH.__data: 0x59f8 sha256:ea6328f6b871daaa5ed5fe379af529d9dfa3219c1401ded7866af5698d00f3cd
--  __DATA.__objc_ivar: 0x1940 sha256:4c9493d6ebdba9eb737c611c1cc12fc92422dae0274fe5324778ee8725690360
--  __DATA.__data: 0x14330 sha256:3d813ea683cb7d13495b499f2c6033ed041ec8b3e9efba3e217fa2743f2df022
--  __DATA.__objc_stublist: 0x78 sha256:66b3e2eb43396e0becc0122c36f544e4af7c05936ae96edd8bd5cb4632a22ff4
--  __DATA.__bss: 0x12a68 sha256:15f843130e1a4e14f5e6dfa2abef7d4b43b7add871827336122e72ef8b2f1d37
--  __DATA.__common: 0x3c8 sha256:dbf8d8b8a0add3afbe05f5f9b5b4466e9059131ee5b623079466786a570fa0bf
--  __DATA_DIRTY.__objc_ivar: 0x3b0c sha256:8c4b6870de4b80cfe115001fd038bd6cd4c82ba926b6ccc63cdd181eb1267e34
--  __DATA_DIRTY.__objc_data: 0x7fc0 sha256:b1fdfca86ae6ed49dd048a11629c0f969dc751b9687327972c81b158160574af
--  __DATA_DIRTY.__data: 0x1918 sha256:6e00d0f43709a60124c75e40e3fa1d34f550bd467e59c81922ebfbf388145dda
--  __DATA_DIRTY.__bss: 0x14d0 sha256:e91cd4549f79e30257a982833be61fda21d7f2c94ea2fa361a2e305d00f451b6
-+  __DATA_CONST.__objc_selrefs: 0x22230 sha256:9317eb17e54f75eb427d6941224b6f4994cade832b583da997e19cdaf2ba0064
-+  __DATA_CONST.__objc_protorefs: 0x6c8 sha256:eb255692e42e59b3f748401e2ea0ac5463b873e6f8d403a0ee6e6962b9929fb7
-+  __DATA_CONST.__objc_superrefs: 0x1ef0 sha256:32a5333061b80c98b153804114518c2d6a2da439a40e9d5c0d1272867045fef2
-+  __DATA_CONST.__objc_arraydata: 0x9b0 sha256:63c9ce41713b84ebf02edbc17255152b6ef8b0cbb042afc5e85f570a18e06173
-+  __DATA_CONST.__got: 0x6fd0 sha256:471647efe29ed5c244f8b5b566913041d0f09e1c5624d6f8621519eeb6801522
-+  __AUTH_CONST.__const: 0x1a4f0 sha256:1ac460ea54d59bf77d361b27e8e7914c76fec483bd0e93899ec954c5215d6086
-+  __AUTH_CONST.__cfstring: 0x22960 sha256:1d62b458b11458319800ebcdeab8f80bdfa02cb52548af3dd3f23fbac90fdf66
-+  __AUTH_CONST.__objc_const: 0x90c10 sha256:3116cd12ad4583e6191e67c7a91e999654e517ac55c95a32423d75a6aedae0dd
-+  __AUTH_CONST.__objc_intobj: 0x1bf0 sha256:5761b2f703177d1cdb7252c77c43340cd2e86ba8322dd29c7db7a416402c4ad5
-+  __AUTH_CONST.__objc_doubleobj: 0x540 sha256:c33da295ff1af2600368a1c4412840507f7e072fc8897d4c8d09c0c66d77f907
-+  __AUTH_CONST.__objc_arrayobj: 0x540 sha256:1b6638b27c2dc577ba48511c54652b0c129d177261a41d513842b99a24e34f69
-+  __AUTH_CONST.__objc_dictobj: 0x578 sha256:130a9dde60b37a33df5e80cef59920036055a960e012a753d48674b8e9326241
-+  __AUTH_CONST.__objc_floatobj: 0x40 sha256:aab47ebfef94ac0742a27ec7f6fba5a03b96640bb010907068aa0aa665c3e0e4
-+  __AUTH_CONST.__auth_got: 0x4ed8 sha256:93efcd8efd118f1e2e36b6fc8b88cd746705cf89d202714378fe472ddb21aeaa
-+  __AUTH.__objc_data: 0x1c9c0 sha256:5a75cbbb5db969b14db216873cbbb29449da77b414b2bb2b4e947138a2f43dcd
-+  __AUTH.__data: 0x5d48 sha256:872a1a14129060a26c4546024f3344d1d8b94ccfa0a0ebcc47740f9ff9058f68
-+  __DATA.__objc_ivar: 0x1940 sha256:d65386f95f1021fbbcd66ec9e0539dac91da6df153e5f1bb30f272013a6fc36a
-+  __DATA.__data: 0x14fa0 sha256:1ef945984ce2e654105d2eb6344fda3c3fc751d1db5e2a4c65f71cca4c154614
-+  __DATA.__objc_stublist: 0x80 sha256:0c0928dea5bf6045de8b39a9f05c8aee54fbcae902d1906fb32567ae46914789
-+  __DATA.__bss: 0x133d8 sha256:07b6db97af99ab54f81a697f054238e0dad7e57e4d011b95a76f544cfa701236
-+  __DATA.__common: 0x3f0 sha256:20215ce6310dc33801b9b26c6b28aad0e984134d9f226e0c3bbf7ef7275532a1
-+  __DATA_DIRTY.__objc_ivar: 0x3b14 sha256:c2f2a637e56da3c54bf66ffb58f95d32d6e353eddbd7b068bae9d1d1e4ee277c
-+  __DATA_DIRTY.__objc_data: 0x7fd8 sha256:39530ebda189f102d2f5a56e275e02a0956b5704237c5e6bbd4294b39ad70448
-+  __DATA_DIRTY.__data: 0x1908 sha256:a9a978618a96c731adbc6bde544b20e885c8c0745806ea8518afb185219e2266
-   __DATA_DIRTY.__common: 0xa0 sha256:8514ca8962eba7c967a442d245ce1ab678dd1cc1abeda0e50f065569f80014d4
-+  __DATA_DIRTY.__bss: 0x14d0 sha256:e91cd4549f79e30257a982833be61fda21d7f2c94ea2fa361a2e305d00f451b6
-   - /System/Library/Frameworks/ARKit.framework/ARKit
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: A08EAF14-A89B-306C-AC01-F01C3D935341
 -  Functions: 42701
--  Symbols:   92683
--  CStrings:  13948
-+  UUID: 8744BFF3-8E32-3C1F-AC24-3D16AB9B9D86
+-  Symbols:   46819
+-  CStrings:  9524
 +  Functions: 43504
-+  Symbols:   93180
-+  CStrings:  14066
- 
++  Symbols:   47076
++  CStrings:  9642
 Symbols:
 + -[HUControllableItemCollectionViewController hiddenItem]
 + -[HUControllableItemCollectionViewController setCellHidden:forItem:]
@@ -207,169 +132,20 @@ Symbols:
 + __PROPERTIES__TtCO6HomeUI14AccessorySetup21UseSiriViewController
 + __PROPERTIES__TtCO6HomeUI14AccessorySetup40SecureClassAccessoryAccessViewController
 + __PROPERTIES__TtCO6HomeUI14AccessorySetup46MultipleAccessoriesSetupOverviewViewController
-+ __PROTOCOLS_HUAccessorySetupOnboardingFlow.20
 + __PROTOCOLS__TtCO6HomeUI14AccessorySetup21UseSiriViewController
-+ __PROTOCOLS__TtCO6HomeUI14AccessorySetup21UseSiriViewController.1
-+ __PROTOCOLS__TtCO6HomeUI14AccessorySetup26CameraAccessViewController.1
 + __PROTOCOLS__TtCO6HomeUI14AccessorySetup40SecureClassAccessoryAccessViewController
-+ __PROTOCOLS__TtCO6HomeUI14AccessorySetup40SecureClassAccessoryAccessViewController.1
 + __PROTOCOLS__TtCO6HomeUI14AccessorySetup46MultipleAccessoriesSetupOverviewViewController
-+ __PROTOCOLS__TtCO6HomeUI14AccessorySetup46MultipleAccessoriesSetupOverviewViewController.1
-+ ___101-[HUFeatureOnboarder _findNextAppropriateFlowByRemovingFlow:currentOnboardingFlowClass:usageOptions:]_block_invoke.193
-+ ___101-[HUFeatureOnboarder _findNextAppropriateFlowByRemovingFlow:currentOnboardingFlowClass:usageOptions:]_block_invoke.197
-+ ___101-[HUFeatureOnboarder _findNextAppropriateFlowByRemovingFlow:currentOnboardingFlowClass:usageOptions:]_block_invoke.201
-+ ___101-[HUFeatureOnboarder _findNextAppropriateFlowByRemovingFlow:currentOnboardingFlowClass:usageOptions:]_block_invoke_2.198
-+ ___101-[HUFeatureOnboarder _findNextAppropriateFlowByRemovingFlow:currentOnboardingFlowClass:usageOptions:]_block_invoke_3.200
-+ ___106-[HUDashboardViewController(ContextMenu) collectionView:contextMenuConfigurationForItemAtIndexPath:point:]_block_invoke.1341
-+ ___106-[HUDashboardViewController(ContextMenu) collectionView:contextMenuConfigurationForItemAtIndexPath:point:]_block_invoke.1395
-+ ___106-[HUDashboardViewController(ContextMenu) collectionView:contextMenuConfigurationForItemAtIndexPath:point:]_block_invoke_2.1349
-+ ___116-[HUDashboardViewController(HomeKitObjectPresenting) presentItemWithUUID:destination:secondaryDestination:animated:]_block_invoke.824
-+ ___116-[HUDashboardViewController(HomeKitObjectPresenting) presentItemWithUUID:destination:secondaryDestination:animated:]_block_invoke.826
-+ ___116-[HUDashboardViewController(HomeKitObjectPresenting) presentItemWithUUID:destination:secondaryDestination:animated:]_block_invoke.827
-+ ___119-[HUAccessorySettingsSiriRecognitionLanguageViewController _turnOffVoiceIDAndChangeSiriLanguageForAllMediaAccessories:]_block_invoke.133
-+ ___119-[HUAccessorySettingsSiriRecognitionLanguageViewController _turnOffVoiceIDAndChangeSiriLanguageForAllMediaAccessories:]_block_invoke.140
-+ ___37-[HUCameraController nextControlItem]_block_invoke.195
-+ ___38-[HUCameraController cameraPickerMenu]_block_invoke.224
-+ ___44-[HUEnergyAccessoryItemProvider reloadItems]_block_invoke.8
-+ ___45-[HUServiceDetailsViewController _removeItem]_block_invoke.326
-+ ___45-[HUServiceDetailsViewController _removeItem]_block_invoke_2.327
-+ ___53-[HUServiceDetailsViewController _didSelectRoomItem:]_block_invoke.966
-+ ___58-[HUServiceDetailsViewController initWithServiceLikeItem:]_block_invoke.256
-+ ___58-[HUServiceDetailsViewController initWithServiceLikeItem:]_block_invoke.258
-+ ___59-[HUDashboardItemManager _buildSectionsWithDisplayedItems:]_block_invoke.304
-+ ___60-[HUServiceDetailsViewController _exportDiagnosticsForItem:]_block_invoke.788
-+ ___61-[HUCameraController _refreshClipCacheAndRefetchForClipUUID:]_block_invoke.209
-+ ___62-[HUAccessorySettingsItemModuleController _handleButtonPress:]_block_invoke.614
-+ ___62-[HUAccessorySettingsItemModuleController _handleButtonPress:]_block_invoke.622
-+ ___62-[HUCameraUpgradeOfferBannerItem _subclass_updateWithOptions:]_block_invoke.102
 + ___62-[HUEnergySettingsItemModule buildSectionsWithDisplayedItems:]_block_invoke
 + ___62-[HUEnergySettingsItemModule buildSectionsWithDisplayedItems:]_block_invoke_2
-+ ___63-[HUServiceDetailsViewController didSelectHeaderWarningAction:]_block_invoke.1056
 + ___64-[HUAboutResidentDeviceViewController updateViewsAndConstraints]_block_invoke
-+ ___64-[HUAccessorySettingsItemModuleController switchCell:didTurnOn:]_block_invoke.557
-+ ___64-[HUAccessorySettingsItemModuleController switchCell:didTurnOn:]_block_invoke.571
-+ ___67-[HUFeatureOnboarder resumeOnboardingFromPresentingViewController:]_block_invoke.220
-+ ___67-[HUServiceDetailsViewController _presentResetHomePodConfirmation:]_block_invoke.766
-+ ___67-[HUServiceDetailsViewController _presentResetHomePodConfirmation:]_block_invoke.770
-+ ___68-[HUServiceDetailsViewController tableView:didSelectRowAtIndexPath:]_block_invoke.657
-+ ___68-[HUServiceDetailsViewController tableView:didSelectRowAtIndexPath:]_block_invoke.664
-+ ___68-[HUServiceDetailsViewController tableView:didSelectRowAtIndexPath:]_block_invoke.671
-+ ___68-[HUServiceDetailsViewController tableView:didSelectRowAtIndexPath:]_block_invoke.707
-+ ___70-[HUServiceDetailsViewController _offerToCreateHomeTheaterIfPossible:]_block_invoke.1030
-+ ___70-[HUServiceDetailsViewController _offerToCreateHomeTheaterIfPossible:]_block_invoke.1034
-+ ___70-[HUServiceDetailsViewController _presentRemoveFromGroupConfirmation:]_block_invoke.802
-+ ___72-[HUManagedConfigurationProfilesViewController _fetchDataAndReloadTable]_block_invoke.102
-+ ___72-[HUManagedConfigurationProfilesViewController _fetchDataAndReloadTable]_block_invoke.99
-+ ___74-[HUCameraPresenceRecordingSettingsModule updateStreamingSetting:isRetry:]_block_invoke.127
-+ ___74-[HUCameraPresenceRecordingSettingsModule updateStreamingSetting:isRetry:]_block_invoke.128
-+ ___74-[HUCameraPresenceRecordingSettingsModule updateStreamingSetting:isRetry:]_block_invoke_2.131
-+ ___74-[HUServiceDetailsViewController _presentHomeAccessoryRemoveConfirmation:]_block_invoke.867
-+ ___75+[HUHomeFeatureOnboardingUtilities checkSiriForiCloudEnabledPromptingUser:]_block_invoke.250
-+ ___75+[HUHomeFeatureOnboardingUtilities checkSiriForiCloudEnabledPromptingUser:]_block_invoke.255
-+ ___76+[HUHomeFeatureOnboardingUtilities checkVoiceProfileAvailabiltyForLanguage:]_block_invoke.306
-+ ___76+[HUHomeFeatureOnboardingUtilities home:processHomeFeatureOnboarderResults:]_block_invoke.259
-+ ___76+[HUHomeFeatureOnboardingUtilities home:processHomeFeatureOnboarderResults:]_block_invoke.262
-+ ___76+[HUHomeFeatureOnboardingUtilities home:processHomeFeatureOnboarderResults:]_block_invoke.266
-+ ___76+[HUHomeFeatureOnboardingUtilities home:processHomeFeatureOnboarderResults:]_block_invoke.269
-+ ___76+[HUHomeFeatureOnboardingUtilities home:processHomeFeatureOnboarderResults:]_block_invoke_2.263
-+ ___76+[HUHomeFeatureOnboardingUtilities home:processHomeFeatureOnboarderResults:]_block_invoke_2.267
-+ ___76+[HUHomeFeatureOnboardingUtilities home:processHomeFeatureOnboarderResults:]_block_invoke_2.270
-+ ___76-[HUManagedConfigurationProfilesViewController _removeProfileForIdentifier:]_block_invoke.114
-+ ___79-[HUFeatureOnboarder startOnboardingWithPresentingViewController:usageOptions:]_block_invoke.183
-+ ___79-[HUServiceDetailsViewController _presentEcosystemAccessoryRemoveConfirmation:]_block_invoke.808
-+ ___79-[HUServiceDetailsViewController _presentEcosystemAccessoryRemoveConfirmation:]_block_invoke.811
-+ ___79-[HUServiceDetailsViewController _presentEcosystemAccessoryRemoveConfirmation:]_block_invoke.812
-+ ___79-[HUServiceDetailsViewController _presentEcosystemAccessoryRemoveConfirmation:]_block_invoke.813
-+ ___79-[HUServiceDetailsViewController _presentEcosystemAccessoryRemoveConfirmation:]_block_invoke.814
-+ ___79-[HUServiceDetailsViewController _presentEcosystemAccessoryRemoveConfirmation:]_block_invoke.817
-+ ___80-[HUManagedConfigurationProfilesViewController _reloadTableViewWithExistingData]_block_invoke.106
-+ ___80-[HUManagedConfigurationProfilesViewController _reloadTableViewWithExistingData]_block_invoke.111
-+ ___81-[HUServiceDetailsViewController _notifyOfHomeTheaterReconfigurationIfNecessary:]_block_invoke.1004
-+ ___81-[HUServiceDetailsViewController _notifyOfHomeTheaterReconfigurationIfNecessary:]_block_invoke.1008
-+ ___81-[HUServiceDetailsViewController _notifyOfHomeTheaterReconfigurationIfNecessary:]_block_invoke.1009
-+ ___81-[HUServiceDetailsViewController _notifyOfHomeTheaterReconfigurationIfNecessary:]_block_invoke.1010
-+ ___82-[HUDashboardViewController(Announce) _updateAnnounceNotificationSettingsIfNeeded]_block_invoke.1307
-+ ___86+[HUHomeFeatureOnboardingUtilities atLeastOneHomePodHasLanguageSettingsForHomeFuture:]_block_invoke.197
-+ ___87-[HUDashboardViewController presentationCoordinator:didRecognizeTapForItem:tappedArea:]_block_invoke.385
-+ ___87-[HUDashboardViewController presentationCoordinator:didRecognizeTapForItem:tappedArea:]_block_invoke.397
-+ ___87-[HUDashboardViewController presentationCoordinator:didRecognizeTapForItem:tappedArea:]_block_invoke_2.393
-+ ___88+[HUHomeFeatureOnboardingUtilities presentAlertConfirmingTurningOfVoiceRecognitionFrom:]_block_invoke.220
-+ ___88-[HUDashboardViewController presentationCoordinator:shouldBeginPresentationWithContext:]_block_invoke.371
-+ ___89+[HUHomeFeatureOnboardingUtilities presentAlertConfirmingTurningOffPersonalRequestsFrom:]_block_invoke.234
-+ ___89+[HUHomeFeatureOnboardingUtilities presentAlertConfirmingTurningOffPersonalRequestsFrom:]_block_invoke.237
-+ ___89-[HUFeatureOnboarder getNextViewControllerForOnboardingInput:currentOnboardingFlowClass:]_block_invoke.209
-+ ___89-[HUFeatureOnboarder getNextViewControllerForOnboardingInput:currentOnboardingFlowClass:]_block_invoke.213
-+ ___89-[HUFeatureOnboarder getNextViewControllerForOnboardingInput:currentOnboardingFlowClass:]_block_invoke.214
-+ ___92-[HUManagedConfigurationProfilesViewController profileViewControllerDidSelectRemoveProfile:]_block_invoke.143
 + ___block_descriptor_64_e8_32s40s48s56s_e16_v16?0"UIView"8ls32l8s40l8s48l8s56l8
-+ ___block_literal_global.1036
-+ ___block_literal_global.1047
-+ ___block_literal_global.1058
-+ ___block_literal_global.1067
-+ ___block_literal_global.1230
-+ ___block_literal_global.1234
-+ ___block_literal_global.1309
-+ ___block_literal_global.1335
-+ ___block_literal_global.1388
-+ ___block_literal_global.166
-+ ___block_literal_global.183
-+ ___block_literal_global.188
-+ ___block_literal_global.223
-+ ___block_literal_global.236
-+ ___block_literal_global.327
-+ ___block_literal_global.329
-+ ___block_literal_global.348
-+ ___block_literal_global.399
-+ ___block_literal_global.457
-+ ___block_literal_global.460
-+ ___block_literal_global.465
-+ ___block_literal_global.485
-+ ___block_literal_global.660
-+ ___block_literal_global.673
-+ ___block_literal_global.757
-+ ___block_literal_global.772
-+ ___block_literal_global.804
-+ ___block_literal_global.810
-+ ___block_literal_global.816
-+ ___block_literal_global.819
-+ ___block_literal_global.823
-+ ___block_literal_global.841
-+ ___block_literal_global.843
-+ ___block_literal_global.854
-+ ___block_literal_global.857
-+ ___block_literal_global.869
-+ ___block_literal_global.903
-+ ___block_literal_global.907
-+ ___block_literal_global.963
-+ ___block_literal_global.965
-+ ___block_literal_global.968
-+ ___block_literal_global.970
-+ ___swift__destructor.127
-+ ___swift__destructor.168
-+ ___swift__destructor.201
-+ ___swift__destructor.222
-+ ___swift__destructor.30
-+ ___swift__destructor.88
 + ___swift_assignWithCopy_strong
 + ___swift_assignWithTake_strong
 + ___swift_closure_destructor.103Tm
-+ ___swift_closure_destructor.144
-+ ___swift_closure_destructor.148
-+ ___swift_closure_destructor.157
-+ ___swift_closure_destructor.161
-+ ___swift_closure_destructor.171
-+ ___swift_closure_destructor.176
 + ___swift_closure_destructor.19Tm
-+ ___swift_closure_destructor.204
-+ ___swift_closure_destructor.210
-+ ___swift_closure_destructor.214
-+ ___swift_closure_destructor.225
 + ___swift_closure_destructor.65Tm
 + ___swift_closure_destructor.68Tm
-+ ___swift_closure_destructor.71
 + ___swift_closure_destructor.78Tm
-+ ___swift_closure_destructor.79
-+ ___swift_closure_destructor.91
 + ___swift_destroy_strong
 + ___swift_get_extra_inhabitant_index.35Tm
 + ___swift_initWithCopy_strong
@@ -400,109 +176,36 @@ Symbols:
 + _associated conformance 6HomeUI28AccessorySetupOnboardingStepO011SecureClassC0OSHAASQ
 + _associated conformance 6HomeUI28RecordingOptionSelectionView33_A1F1B13E850E72AF100F512E14949B2BLLVyxq_q0_q1_G05SwiftB00F0AA4BodyAfGP_AfG
 + _associated conformance 6HomeUI36SecureClassAccessoryIdentifiableUser33_80F39A016D6896EAD536A40C56E30B38LLVyxGs0F0AA2IDsAFP_SH
-+ _block_copy_helper.180
-+ _block_copy_helper.206
-+ _block_copy_helper.218
-+ _block_copy_helper.237
-+ _block_copy_helper.66
-+ _block_copy_helper.69
-+ _block_copy_helper.86
-+ _block_copy_helper.90
-+ _block_descriptor.182
-+ _block_descriptor.208
-+ _block_descriptor.220
-+ _block_descriptor.239
-+ _block_descriptor.68
-+ _block_descriptor.71
-+ _block_descriptor.88
-+ _block_descriptor.92
-+ _block_destroy_helper.181
-+ _block_destroy_helper.207
-+ _block_destroy_helper.219
-+ _block_destroy_helper.238
-+ _block_destroy_helper.67
-+ _block_destroy_helper.70
-+ _block_destroy_helper.87
-+ _block_destroy_helper.91
 + _generic environment 13HomeDataModel13CameraProfileRzAA17AccessoryProtocolR_AA0aG0R0_0A2UI33CloudSubscriptionFeaturesProviderR1_r2_l
 + _get_enum_tag_for_layout_string 6HomeUI14AccessorySetupO4FlowO5StateC4KindOy__xq_q0__G
-+ _get_underlying_type_ref 7SwiftUI4ViewPAAEAcAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOQr.5
-+ _get_underlying_type_ref 7SwiftUI4ViewPAAEAcAE4task2id4name8priority4file4line_Qrqd___SSSgScPSSSiyyYaYAcntSQRd__lFQOQr.1
-+ _get_underlying_type_ref 7SwiftUI4ViewPAAEAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOQr.3
-+ _get_underlying_witness 7SwiftUI4ViewPAAEAcAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOqd0__AaBHC.6
-+ _get_underlying_witness 7SwiftUI4ViewPAAEAcAE4task2id4name8priority4file4line_Qrqd___SSSgScPSSSiyyYaYAcntSQRd__lFQOqd0__AaBHC.2
-+ _get_underlying_witness 7SwiftUI4ViewPAAEAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOqd__AaBHC.4
-+ _get_witness_table 13HomeDataModel0A8ProtocolRzl7SwiftUI10ScrollViewVyAC0H0PACE23scrollContentBackgroundyQrAC10VisibilityOFQOyAgCE20listHasStackBehaviorQryFQOyAgCE0M7PaddingyQrAC4EdgeO3SetV_12CoreGraphics7CGFloatVtFQOyAgCE0M5StyleyQrqd__AC04ListW0Rd__lFQOyAC0X0Vys5NeverOAC7SectionVyAC05EmptyH0VAC7ForEachVyAC7BindingVySay0aF014AccessorySetupO010ServiceRowB0VGG10Foundation4UUIDVAC012_ConditionalJ0VyA17_yA8_19BasicNameServiceRowVA8_20ToggleNameServiceRowVGA17_yA8_22IdentifyNameServiceRowVy_xGA22_GGGA1_GG_AC012InsetGroupedxW0VQo__Qo__Qo__Qo_GAcFHPyHC.47
-+ _get_witness_table 13HomeDataModel0A8ProtocolRzl7SwiftUI15ModifiedContentVyAC4ViewPACE14scrollDisabledyQrSbFQOyAgCE0jH10BackgroundyQrAC10VisibilityOFQOyAEyAEyAgCE24listHasLazyStackBehaviorQryFQOyAgCE0N7PaddingyQrAC4EdgeO3SetV_12CoreGraphics7CGFloatVtFQOyAgCE0N5StyleyQrqd__AC04ListY0Rd__lFQOyAC0Z0Vys5NeverOAC05TupleH0VyAC7SectionVyAC05EmptyI0VAEyAC6HStackVyA0_y0A3UI2014SelectableIconI0V_AEyAgCE10fontWeightyQrAC4FontV6WeightVSgFQOyAC9TextFieldVyAC4TextVG_Qo_AC01_S6LayoutVGAC6SpacerVQPGGAC31AccessibilityAttachmentModifierVGA4_G_A2_yA4_A0_yA6_yA0_yA19__A26_AEyAEyAEyAgCE06buttonY0yQrqd__AC015PrimitiveButtonY0Rd__lFQOyAC4MenuVyA19_AC7ForEachVySaySSGSSAC6ButtonVyAC5LabelVyA19_AC5ImageVSgGGGG_AC014BorderedButtonY0VQo_AC30_EnvironmentKeyWritingModifierVyAC5ColorVSgGGAC011_ForegroundY8ModifierVyA57_GGA30_GQPGGSg_AEyAgCE0N9RowInsetsyQrAQ_ATSgtFQOyAgCEA33_yQrqd__ACA34_Rd__lFQOyAC0P5VGridVyA38_ySayAA10IconSymbolOGA74_A41_yA9_GGG_AC011PlainButtonY0VQo__Qo_A30_GSgQPGA4_GSgQPGG_AC012InsetGroupedzY0VQo__Qo__Qo_AC21_TraitWritingModifierVyAC0Z22SectionSpacingTraitKeyVGGA55_yAC0Z14SectionSpacingVSgGG_Qo__Qo_AC16_FixedSizeLayoutVGAcFHPqd__AcFHD2_A107_HO_A109_AC0I8ModifierHPyHCHC.45
-+ _get_witness_table 13HomeDataModel0A8ProtocolRzl7SwiftUI15ModifiedContentVyAEyAC6HStackVyAC05TupleH0VyAEyAC4ViewPACE11buttonStyleyQrqd__AC015PrimitiveButtonM0Rd__lFQOyAC0O0VyAEyAEyAC5ImageVAC30_EnvironmentKeyWritingModifierVyAC4FontVSgGGASyAC5ColorVSgGGG_AC05PlainoM0VQo_AC12_FrameLayoutVG_AkCE09textFieldM0yQrqd__AC09TextFieldM0Rd__lFQOyAC9TextFieldVyAC4TextVG_AC0w9TextFieldM0VQo_AC012_ConditionalH0VyAEyAkCE08progresskM0yQrqd__AC08ProgresskM0Rd__lFQOyAC08ProgressK0VyAC05EmptyK0VA26_G_AC016CircularProgresskM0VQo_AC12_ScaleEffectVGAkCEALyQrqd__AcMRd__lFQOyAOyA14_G_A4_Qo_GQPGGAC08_PaddingY0VGAC023AccessibilityAttachmentT0VGAcJHPA41_AcJHPA38_AcJHPyHC_A40_AC0kT0HPyHCHC_A43_ACA45_HPyHCHC.94
-+ _get_witness_table 13HomeDataModel13CameraProfileRzAA17AccessoryProtocolR_AA0aG0R0_0A2UI33CloudSubscriptionFeaturesProviderR1_r2_l05SwiftH014NavigationViewVyAG0O0PAGE7toolbar7contentQrqd__yXE_tAG14ToolbarContentRd__lFQOyAkGE29navigationBarTitleDisplayModeyQrAG0nU4ItemV0vwX0OFQOyAkGE0tV0yQrqd__SyRd__lFQOyAG4ListVys5NeverOAG7ForEachVySayAE0D15RecordingOptionVGAA0D0O06AccessX0OAkGE11buttonStyleyQrqd__AG20PrimitiveButtonStyleRd__lFQOyAG6ButtonVyAG6HStackVyAG05TupleS0VyAG6VStackVyA13_yAG4TextV_AG08ModifiedS0VyA17_AG16_FixedSizeLayoutVGQPGG_AG6SpacerVA19_yA19_yA19_yAG5ImageVAG30_EnvironmentKeyWritingModifierVyAG4FontVSgGGAG24_ForegroundStyleModifierVyAG5ColorVGGAG14_OpacityEffectVGQPGGG_AG16PlainButtonStyleVQo_GG_SSQo__Qo__A13_yAG0rY0VyytA9_yA28_GG_A58_QPGQo_GAgJHPyHC.53
-+ _get_witness_table 13HomeDataModel13CameraProfileRzAA17AccessoryProtocolR_AA0aG0R0_0A2UI33CloudSubscriptionFeaturesProviderR1_r2_lqd0__05SwiftH04ViewHD4_AgHPAGE5sheet4item9onDismiss7contentQrAG7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AgHRd_0_r0_lFQOyAG15ModifiedContentVyAG06ScrollN0VyAUyAUyAG6VStackVyAG7ForEachVySayAE23PresenceRecordingOptionVGAA0D0O0A8PresenceOAG05TupleW0VyAE0D17PresenceOptionRow33_A1F1B13E850E72AF100F512E14949B2BLLV_AUyAUyAG7DividerVAG14_PaddingLayoutVGA15_GSgQPGGGAG24_BackgroundStyleModifierVyAG5ColorVGGAG11_ClipEffectVyAG16RoundedRectangleVGGGAG16_FlexFrameLayoutVG_AE0d16RecordingOptionsN0V0U14PresenceOptionVyxq_q0_q1__GAE024RecordingOptionSelectionN0A10_LLVyxq_q0_q1_GQo_HO.36
-+ _get_witness_table 13HomeDataModel17AccessoryProtocolRzl7SwiftUI6VStackVyAC7ForEachVySay0aG00D5SetupO5EntryVy_xGG10Foundation4UUIDVAC15ModifiedContentVyAC4ViewPACE11buttonStyleyQrqd__AC015PrimitiveButtonS0Rd__lFQOyAC0U0VyASyASyASyASyAC6HStackVyAC05TupleP0VyASyAC6ZStackVyA1_yAC06_ShapeQ0VyAC6CircleVAC5ColorVG_ASyASyAC5ImageVAC30_EnvironmentKeyWritingModifierVyAC4FontVSgGGAC011_ForegroundS8ModifierVyA9_GGQPGGAC12_FrameLayoutVG_AEyA1_yAC4TextV_A30_QPGGAC6SpacerVASyA19_A21_yAC012HierarchicalyS0VGGQPGGAC14_PaddingLayoutVGA42_GAC011_BackgroundS8ModifierVyA9_GGAC11_ClipEffectVyAC16RoundedRectangleVGGG_AC05PlainuS0VQo_AC31AccessibilityAttachmentModifierVGGGAcTHPyHC.2
-+ _get_witness_table 13HomeDataModel17AccessoryProtocolRzl7SwiftUI6VStackVyAC7ForEachVySay0aG00D5SetupO5EntryVy_xGG10Foundation4UUIDVAC15ModifiedContentVyASyASyASyASyAC6HStackVyAC05TupleP0VyASyASyASyAC5ImageVAC30_EnvironmentKeyWritingModifierVyAC4FontVSgGGAC016_ForegroundStyleW0VyAC017HierarchicalShapeZ0VGGAC12_FrameLayoutVG_AEyAWyAC4TextV_A15_QPGGAC6SpacerVQPGGAC14_PaddingLayoutVGA23_GAC011_BackgroundzW0VyAC5ColorVGGAC11_ClipEffectVyAC16RoundedRectangleVGGAC023AccessibilityAttachmentW0VGGGAC4ViewHPyHC.1
-+ _get_witness_table 6HomeUI14AccessorySetupO16LockDataProviderRzlqd__05SwiftB04ViewHD2_AeFPAEE12onTapGesture5count7performQrSi_yyctFQOyAG0A8UICommonE2if_4thenQrSb_qd__xXEtAeFRd__lFQOyAE15ModifiedContentVyAOyAOyAgEE11glassEffect_2inQrAE5GlassV_qd__tAE5ShapeRd__lFQOyAOyAOyAE6VStackVyAE012_ConditionalS0VyAE05TupleS0VyAOyAOyAOyAOyAE6ZStackVyAZyAOyAE01_xI0VyAE6CircleVAE5ColorVGAE12_FrameLayoutVG_AOyAOyAE5ImageVAE30_EnvironmentKeyWritingModifierVyAE4FontVSgGGA14_yA6_SgGGQPGGA9_GAE08_OpacityU0VGAE14_PaddingLayoutVGA30_G_AOyAVyAZyAE4TextV_A34_QPGGAE16_FlexFrameLayoutVGQPGAE05EmptyI0VGGA38_GA30_G_AE16RoundedRectangleVQo_AE05_ClipU0VyA48_GGA30_GAE01_sX8ModifierVyA48_GG_A58_Qo__Qo_HO.4
-+ _get_witness_table 6HomeUI18UserAccessProviderRzAaBR_r0_lqd0__05SwiftB04ViewHD3_AcDPACE11safeAreaBar4edge9alignment7spacing7contentQrAC12VerticalEdgeO_AC19HorizontalAlignmentV12CoreGraphics7CGFloatVSgqd__yXEtAcDRd__lFQOyAC6VStackVyAC12TupleContentVyAA14AccessorySetupO07Membersd7SectionG0Vy_xGSg_AX016RestrictedGuestsd7SectionG0Vy_q_GQPGG_AeCE18scrollPocketTag_v15styleQrAC0J16MagicPocketStyleV_tFQOyAC08ModifiedX0VyAC5ColorVAC12_FrameLayoutVG_Qo_Qo_HO.52
-+ _get_witness_table 6HomeUI18UserAccessProviderRzl05SwiftB015ModifiedContentVyAC4ViewPACE5sheet4item9onDismiss7contentQrAC7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AcFRd_0_r0_lFQOyAC5GroupVyAC05TupleH0VyAEyAEyAC4TextVAC16_FlexFrameLayoutVGAC08_PaddingV0VG_AEyAEyAC6VStackVyAC7ForEachVySayAA015RestrictedGuestd7ControlI5ModelC16GuestContactPairVyx_GG10Foundation4UUIDVAUyAEyAA0cD3RowVA0_G_AC7DividerVSgQPGGGAC24_BackgroundStyleModifierVyAC5ColorVGGAC11_ClipEffectVyAC16RoundedRectangleVGGQPGSgG_AA020SecureClassAccessorypC033_80F39A016D6896EAD536A40C56E30B38LLVy0C0QzGAA0d14LevelSelectionI0VyA7_yxGGQo_AC31AccessibilityAttachmentModifierVGAcFHPqd0__AcFHD4_A49_HO_A51_AC0I8ModifierHPyHCHC.76
-+ _get_witness_table 6HomeUI18UserAccessProviderRzl05SwiftB015ModifiedContentVyAEyAEyAC10ScrollViewVyAC6VStackVyAC7ForEachVySayAA0cd7ControlJ5ModelC0C11ContactPairVyx_GG10Foundation4UUIDVAC05TupleH0VyAEyAA0cD3RowVAC14_PaddingLayoutVG_AC7DividerVSgQPGGGGAC010_FlexFrameW0VGAC24_BackgroundStyleModifierVyAC5ColorVGGAC11_ClipEffectVyAC16RoundedRectangleVGGAC0J0HPA15_ACA22_HPA9_ACA22_HPA6_ACA22_HPyHC_A8_AC0J8ModifierHPyHCHC_A14_ACA23_HPyHCHC_A20_ACA23_HPyHCHC.13
-+ _get_witness_table 6HomeUI18UserAccessProviderRzlqd0__05SwiftB04ViewHD4_AcDPACE5sheet4item9onDismiss7contentQrAC7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AcDRd_0_r0_lFQOyAC15ModifiedContentVyAQyAC6VStackVyAC05TupleP0VyAUyAQyAA0cD3RowVAC14_PaddingLayoutVG_AC7DividerVSgQPGSg_AA0cd4ListG0VyxGQPGGAC24_BackgroundStyleModifierVyAC5ColorVGGAC11_ClipEffectVyAC16RoundedRectangleVGG_AA020SecureClassAccessorynC033_80F39A016D6896EAD536A40C56E30B38LLVy0C0QzGAA0d14LevelSelectionG0VyAA0cd7ControlG5ModelCyxGGQo_HO.75
-+ _get_witness_table 6HomeUI18UserAccessProviderRzlqd0__05SwiftB04ViewHD4_AcDPACE5sheet4item9onDismiss7contentQrAC7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AcDRd_0_r0_lFQOyAeCE11safeAreaBar4edge9alignment7spacingAIQrAC12VerticalEdgeO_AC19HorizontalAlignmentV12CoreGraphics7CGFloatVSgqd__yXEtAcDRd__lFQOyAA0cd4ListG0VyxG_AeCE18scrollPocketTag_v15styleQrAC0Q16MagicPocketStyleV_tFQOyAC15ModifiedContentVyAC5ColorVAC12_FrameLayoutVG_Qo_Qo__AA14AccessorySetupO06Camerad7ContentG0V0nC0Vy_x_GAA0d14LevelSelectionG0VyAA0cd7ControlG5ModelCyxGGQo_HO.23
-+ _get_witness_table 6HomeUI21AccessLevelDataSourceRzl05SwiftB015ModifiedContentVyAEyAEyAC4ViewPACE5alert_11isPresented10presenting7actions7messageQrAC18LocalizedStringKeyV_AC7BindingVySbGqd_1_Sgqd__qd_1_XEqd_0_qd_1_XEtAcFRd__AcFRd_0_r1_lFQOyAC010NavigationJ0VyAgCE7toolbar7contentQrqd__yXE_tAC07ToolbarI0Rd__lFQOyAgCE29navigationBarTitleDisplayModeyQrAC0uZ4ItemV16TitleDisplayModeOFQOyAgCE0Y5TitleyQrqd__SyRd__lFQOyAC4ListVys5NeverOAC7ForEachVySay8Provider_0cD0QZGA10_AC6ButtonVyAC6HStackVyAC05TupleI0VyAEyAC4TextVAC16_FlexFrameLayoutVG_AEyAC5ImageVAC012_EnvironmentS15WritingModifierVyAC5ColorVSgGGSgQPGGGGG_SSQo__Qo__A17_yAC0X4ItemVyytA13_yA24_GG_A43_QPGQo_G_A17_yAEyA13_yA19_GAC31AccessibilityAttachmentModifierVG_A50_QPGA19_A10_Qo_A49_GAC25_AppearanceActionModifierVGA55_GAcFHPA56_AcFHPA53_AcFHPqd0__AcFHD4_A52_HO_A49_AC0J8ModifierHPyHCHC_A55_ACA58_HPyHCHC_A55_ACA58_HPyHCHC.27
-+ _get_witness_table 7SwiftUI15ModifiedContentVyAA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonG0Rd__lFQOyAA0I0VyACyACyAA6HStackVyAA05TupleD0VyACyACy08ContactsB006AvatarE0VAA12_FrameLayoutVGAA11_ClipEffectVyAA6CircleVGG_ACyAA4TextVAA05_FlexnO0VGACyACyA_AA30_EnvironmentKeyWritingModifierVyAA0S9AlignmentOGGAA08_OpacityQ0VGQPGGAA08_PaddingO0VGAA01_d5ShapeX0VyAA9RectangleVGGG_AA05PlainiG0VQo_AA023AccessibilityAttachmentX0VGAaDHPqd0__AaDHD3_A26_HO_A28_AA0eX0HPyHCHC.18
-+ _get_witness_table 7SwiftUI15ModifiedContentVyAA6ZStackVyACyACyAA4ViewP7HomeUI2E41optionalLabelWithTopLeadingLuminanceScrim_12cornerRadius7paddingQrSSSg_12CoreGraphics7CGFloatVAOtFQOyACyAgAE11glassEffect_2inQrAA5GlassV_qd__tAA5ShapeRd__lFQOyAgHE7prefers_3for7factors8location8priorityQr0G9DataModel6CameraO4ModeO_A0_11EnvironmentO5StateCy_AZ21LiveCameraEnvironmentV_GAH21MultiFactorVisibilityV7FactorsVAH06CameraF9RegistrarC8LocationOSgA15_8PriorityOtFQOyAH10CameraCellV_Qo__AA16RoundedRectangleVQo_AA05_ClipW0VyA25_GG_Qo_AA30_SafeAreaRegionsIgnoringLayoutVGAA31AccessibilityAttachmentModifierVGG0gB014AccessorySetupO28CameraStreamVisibilityLogger33_315A2C18A9058D451A4B9CCE27E43430LLVGAaFHPA38_AaFHPyHC_A44_AA0F8ModifierHPyHCHC.16
-+ _get_witness_table 7SwiftUI15ModifiedContentVyACyAA6HStackVyAA05TupleD0VyAA012_ConditionalD0VyACyAA5ColorVAA12_FrameLayoutVGACyAA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonM0Rd__lFQOyAA0O0VyACyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAXyAKSgGGG_AA05PlainoM0VQo_AMGG_ACyACyApAE09textFieldM0yQrqd__AA04TextxM0Rd__lFQOyAA0yX0VyAA0Y0VG_AA0vyxM0VQo_AA01_qr9TransformT0VySbGGA3_GApAEAQyQrqd__AaRRd__lFQOyATyACyAVA3_GG_A7_Qo_SgQPGGAA08_PaddingJ0VGAA023AccessibilityAttachmentT0VGAaOHPA34_AaOHPA31_AaOHPyHC_A33_AA0kT0HPyHCHC_A36_AAA38_HPyHCHC.93
-+ _get_witness_table 7SwiftUI15ModifiedContentVyACyAA6HStackVyAA05TupleD0VyACyACyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAKyAA5ColorVSgGGAA12_FrameLayoutVG_ACyACyAA4ViewPAAE14textFieldStyleyQrqd__AA04TextrS0Rd__lFQOyAA0tR0VyAA0T0VG_AA05PlaintrS0VQo_AA01_hi9TransformK0VySbGGATGAzAE06buttonS0yQrqd__AA015PrimitiveButtonS0Rd__lFQOyAA0Y0VyACyAiTGG_AA0uyS0VQo_SgQPGGAA08_PaddingO0VGAA023AccessibilityAttachmentK0VGAaYHPA28_AaYHPA25_AaYHPyHC_A27_AA0pK0HPyHCHC_A30_AAA32_HPyHCHC.92
-+ _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA4ListVys5NeverOAA05TupleD0VyAA7SectionVyAA4TextVAA7ForEachVySay13HomeDataModel19StaticCameraProfileVG10Foundation4UUIDVACyACyAA6ToggleVyAA6HStackVyAIy0lB017SnapshotThumbnail33_6A020151FA6C63C86827D1A374889D51LLV_AA6VStackVyAIyAM_AMSgQPGGQPGGGAA32_EnvironmentKeyTransformModifierVySbGGAA31AccessibilityAttachmentModifierVGGAA9EmptyViewVG_AKyA20_ACyACyAA6ButtonVyAZyAIyAM_AA6SpacerVA5_ACyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA24_ForegroundStyleModifierVyAA22HierarchicalShapeStyleVGGQPGGGA29_yAA5ColorVSgGGA16_GA20_GQPGGA16_GAA25_AppearanceActionModifierVGA55_GAA4ViewHPA56_AAA58_HPA53_AAA58_HPA52_AAA58_HPyHC_A16_AA12ViewModifierHPyHCHC_A55_AAA59_HPyHCHC_A55_AAA59_HPyHCHC.4
-+ _get_witness_table 7SwiftUI15ModifiedContentVyACyACyACyACyAA5ImageVAA18_AspectRatioLayoutVGAA06_FrameH0VGAA05_FlexiH0VGAA08_PaddingH0VGAA31AccessibilityAttachmentModifierVGAA4ViewHPAqaUHPAnaUHPAkaUHPAhaUHPAeaUHPyHC_AgA0oN0HPyHCHC_AjaVHPyHCHC_AmaVHPyHCHC_ApaVHPyHCHC_AsaVHPyHCHC.1
-+ _get_witness_table 7SwiftUI19_ConditionalContentVy04HomeB014AccessorySetupO14LockStatusViewVy_AF07DefaultH12DataProviderVGAF016OnboardingHeaderJ0VGAA0J0HPAkaOHPyHC_AmaOHPyHCHC.9
-+ _get_witness_table 7SwiftUI19_ConditionalContentVyAA08ModifiedD0VyAEyAEyAEyAA5ImageVAA18_AspectRatioLayoutVGAA06_FrameI0VGAA11_ClipEffectVyAA16RoundedRectangleVGGAA16_OverlayModifierVyAA21StrokeBorderShapeViewVyAqA5ColorVAA05EmptyT0VGGGAEyAEyAEyAEyAgA016_ForegroundStyleP0VyAYGGAA022_EnvironmentKeyWritingP0VyAA19SymbolRenderingModeVSgGGA8_yAA4FontVSgGGALGGAA0T0HPA2_AAA21_HPAsAA21_HPAmAA21_HPAjAA21_HPAgAA21_HPyHC_AiA0tP0HPyHCHC_AlAA22_HPyHCHC_ArAA22_HPyHCHC_A1_AAA22_HPyHCHC_A19_AAA21_HPA18_AAA21_HPA13_AAA21_HPA6_AAA21_HPAgAA21_HPyHC_A5_AAA22_HPyHCHC_A12_AAA22_HPyHCHC_A17_AAA22_HPyHCHC_AlAA22_HPyHCHCHC.48
-+ _get_witness_table 7SwiftUI4ListVys5NeverOAA7SectionVyAA9EmptyViewVAA7ForEachVySay10Foundation6LocaleV6locale_SS4nametGSSAA15ModifiedContentVyAA6ButtonVyAA6HStackVyAA05TupleO0VyAA4TextV_AA6SpacerVAA0G0PAAE10fontWeightyQrAA4FontV0V0VSgFQOyASyAA5ImageVAA24_ForegroundStyleModifierVyAA09TintShapeZ0VGG_Qo_SgQPGGGAA31AccessibilityAttachmentModifierVGGAIGGAAA2_HPyHC.1
-+ _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE4task2id4name8priority4file4line_Qrqd___SSSgScPSSSiyyYaYAcntSQRd__lFQOyAA15ModifiedContentVyALyAC7HomeUI2E19bridgedSceneUpdatesyQryAA0O5PhaseOcFQOyAA14GeometryReaderVyAA012_ConditionalK0VyALyALyALyALyALyALyALyAM10CameraCellV7prefers_7factors8locationAGQr0L9DataModel0U0O4ModeO_AM21MultiFactorVisibilityV7FactorsVAM0uC9RegistrarC8LocationOSgA8_8PriorityOtFQOy_Qo_AA11_ClipEffectVyAA16RoundedRectangleVGGAA16_OverlayModifierVyALyAM0U15AccessIndicatorVAA14_PaddingLayoutVGSgGGA22_yALyALyALyALyALyALyAcAE10fontWeightyQrAA4FontV6WeightVSgFQOyALyAA5ImageVAA18_AspectRatioLayoutVG_Qo_AA24_ForegroundStyleModifierVyAA5ColorVGGAA30_EnvironmentKeyWritingModifierVyAA19SymbolRenderingModeVSgGGAA16_FlexFrameLayoutVGAA14_OpacityEffectVGAA01_R14ActionModifierVySo6CGRectVA65_SQ12CoreGraphicsyHCg_GGAA13_OffsetEffectVGSgGGA22_yALyAA6VStackVyAA05TupleK0VyA55_Sg_AA6SpacerVALyALyALyA76_yA78_yAA4TextVSg_ATyALyA83_A60_GA83_GSgQPGGA57_GA50_ySiSgGGA67_GQPGGA26_GGGAA18_AnimationModifierVySbGGA102_GA102_GA46_GG_Qo_A50_yAPGGAA25_AllowsHitTestingModifierVG_10Foundation4UUIDVSgQo_HO.50
-+ _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVyAcAE20listHasStackBehaviorQryFQOyAHyAcAE0J5StyleyQrqd__AA04ListN0Rd__lFQOyAcAE06scrollI10BackgroundyQrAA10VisibilityOFQOyAA0O0VySSAA05TupleI0VyAHyAA7ForEachVySay010HomeEnergyB015ElectricUtilityVGSSAHy0vB009LegacyRowC0VAA21_TraitWritingModifierVyAA26IsSelectionEnabledTraitKeyVGGGA1_yAA0o3RowQ8TraitKeyVGG_AHyAHyAHyAA6ButtonVyAA4TextVGAA30_EnvironmentKeyWritingModifierVyAA5ColorVSgGGA9_GAA31AccessibilityAttachmentModifierVGSgQPGG_Qo__AA012InsetGroupedoN0VQo_AA16_FixedSizeLayoutVG_Qo_AA25_AppearanceActionModifierVG_SSSgQo_HO.67
-+ _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVyAA01_c9Modifier_I0Vy04HomeB014AccessorySetupO28CameraStreamVisibilityLogger33_315A2C18A9058D451A4B9CCE27E43430LLVGAA017_AppearanceActionJ0VG_SbQo__0K9DataModel0N0O0O5StateOQo_HO.18
-+ _get_witness_table qd0__7SwiftUI4ViewHD4_AaBPAAE5sheet4item9onDismiss7contentQrAA7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lFQOyAA15ModifiedContentVyAA6VStackVyAA05TupleL0VyAOyAQyAA7ForEachVySay13HomeDataModel16ThermostatPresetVGAxOyAcAE11buttonStyleyQrqd__AA015PrimitiveButtonW0Rd__lFQOyAA0Y0VyAOyAOyAOyAOy0q16AccessoryControlB00t18AutomationSettingsC0V0u15NavigationLabelC0VAA14_PaddingLayoutVGA8_GAA16_FlexFrameLayoutVGAA19_BackgroundModifierVyAA06_ShapeC0VyAA16RoundedRectangleVAA5ColorVGGGG_AA05PlainyW0VQo_AA31AccessibilityAttachmentModifierVGSgGGA8_GSg_AA6SpacerVQPGGA30_G_AXA2_0t13PresetsDetailC0VSgQo_HO.73
++ _get_underlying_type_ref 7SwiftUI4ViewPAAEAcAE4task2id4name8priority4file4line_Qrqd___SSSgScPSSSiyyYaYAcntSQRd__lFQOQr
++ _get_underlying_witness 7SwiftUI4ViewPAAEAcAE4task2id4name8priority4file4line_Qrqd___SSSgScPSSSiyyYaYAcntSQRd__lFQOqd0__AaBHC
++ _get_witness_table 13HomeDataModel0A8ProtocolRzl7SwiftUI15ModifiedContentVyAC4ViewPACE14scrollDisabledyQrSbFQOyAgCE0jH10BackgroundyQrAC10VisibilityOFQOyAEyAEyAgCE24listHasLazyStackBehaviorQryFQOyAgCE0N7PaddingyQrAC4EdgeO3SetV_12CoreGraphics7CGFloatVtFQOyAgCE0N5StyleyQrqd__AC04ListY0Rd__lFQOyAC0Z0Vys5NeverOAC05TupleH0VyAC7SectionVyAC05EmptyI0VAEyAC6HStackVyA0_y0A3UI2014SelectableIconI0V_AEyAgCE10fontWeightyQrAC4FontV6WeightVSgFQOyAC9TextFieldVyAC4TextVG_Qo_AC01_S6LayoutVGAC6SpacerVQPGGAC31AccessibilityAttachmentModifierVGA4_G_A2_yA4_A0_yA6_yA0_yA19__A26_AEyAEyAEyAgCE06buttonY0yQrqd__AC015PrimitiveButtonY0Rd__lFQOyAC4MenuVyA19_AC7ForEachVySaySSGSSAC6ButtonVyAC5LabelVyA19_AC5ImageVSgGGGG_AC014BorderedButtonY0VQo_AC30_EnvironmentKeyWritingModifierVyAC5ColorVSgGGAC011_ForegroundY8ModifierVyA57_GGA30_GQPGGSg_AEyAgCE0N9RowInsetsyQrAQ_ATSgtFQOyAgCEA33_yQrqd__ACA34_Rd__lFQOyAC0P5VGridVyA38_ySayAA10IconSymbolOGA74_A41_yA9_GGG_AC011PlainButtonY0VQo__Qo_A30_GSgQPGA4_GSgQPGG_AC012InsetGroupedzY0VQo__Qo__Qo_AC21_TraitWritingModifierVyAC0Z22SectionSpacingTraitKeyVGGA55_yAC0Z14SectionSpacingVSgGG_Qo__Qo_AC16_FixedSizeLayoutVGAcFHPqd__AcFHD2_A107_HO_A109_AC0I8ModifierHPyHCHC
++ _get_witness_table 13HomeDataModel13CameraProfileRzAA17AccessoryProtocolR_AA0aG0R0_0A2UI33CloudSubscriptionFeaturesProviderR1_r2_l05SwiftH014NavigationViewVyAG0O0PAGE7toolbar7contentQrqd__yXE_tAG14ToolbarContentRd__lFQOyAkGE29navigationBarTitleDisplayModeyQrAG0nU4ItemV0vwX0OFQOyAkGE0tV0yQrqd__SyRd__lFQOyAG4ListVys5NeverOAG7ForEachVySayAE0D15RecordingOptionVGAA0D0O06AccessX0OAkGE11buttonStyleyQrqd__AG20PrimitiveButtonStyleRd__lFQOyAG6ButtonVyAG6HStackVyAG05TupleS0VyAG6VStackVyA13_yAG4TextV_AG08ModifiedS0VyA17_AG16_FixedSizeLayoutVGQPGG_AG6SpacerVA19_yA19_yA19_yAG5ImageVAG30_EnvironmentKeyWritingModifierVyAG4FontVSgGGAG24_ForegroundStyleModifierVyAG5ColorVGGAG14_OpacityEffectVGQPGGG_AG16PlainButtonStyleVQo_GG_SSQo__Qo__A13_yAG0rY0VyytA9_yA28_GG_A58_QPGQo_GAgJHPyHC
++ _get_witness_table 13HomeDataModel13CameraProfileRzAA17AccessoryProtocolR_AA0aG0R0_0A2UI33CloudSubscriptionFeaturesProviderR1_r2_lqd0__05SwiftH04ViewHD4_AgHPAGE5sheet4item9onDismiss7contentQrAG7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AgHRd_0_r0_lFQOyAG15ModifiedContentVyAG06ScrollN0VyAUyAUyAG6VStackVyAG7ForEachVySayAE23PresenceRecordingOptionVGAA0D0O0A8PresenceOAG05TupleW0VyAE0D17PresenceOptionRow33_A1F1B13E850E72AF100F512E14949B2BLLV_AUyAUyAG7DividerVAG14_PaddingLayoutVGA15_GSgQPGGGAG24_BackgroundStyleModifierVyAG5ColorVGGAG11_ClipEffectVyAG16RoundedRectangleVGGGAG16_FlexFrameLayoutVG_AE0d16RecordingOptionsN0V0U14PresenceOptionVyxq_q0_q1__GAE024RecordingOptionSelectionN0A10_LLVyxq_q0_q1_GQo_HO
++ _get_witness_table 13HomeDataModel17AccessoryProtocolRzl7SwiftUI6VStackVyAC7ForEachVySay0aG00D5SetupO5EntryVy_xGG10Foundation4UUIDVAC15ModifiedContentVyAC4ViewPACE11buttonStyleyQrqd__AC015PrimitiveButtonS0Rd__lFQOyAC0U0VyASyASyASyASyAC6HStackVyAC05TupleP0VyASyAC6ZStackVyA1_yAC06_ShapeQ0VyAC6CircleVAC5ColorVG_ASyASyAC5ImageVAC30_EnvironmentKeyWritingModifierVyAC4FontVSgGGAC011_ForegroundS8ModifierVyA9_GGQPGGAC12_FrameLayoutVG_AEyA1_yAC4TextV_A30_QPGGAC6SpacerVASyA19_A21_yAC012HierarchicalyS0VGGQPGGAC14_PaddingLayoutVGA42_GAC011_BackgroundS8ModifierVyA9_GGAC11_ClipEffectVyAC16RoundedRectangleVGGG_AC05PlainuS0VQo_AC31AccessibilityAttachmentModifierVGGGAcTHPyHC
++ _get_witness_table 13HomeDataModel17AccessoryProtocolRzl7SwiftUI6VStackVyAC7ForEachVySay0aG00D5SetupO5EntryVy_xGG10Foundation4UUIDVAC15ModifiedContentVyASyASyASyASyAC6HStackVyAC05TupleP0VyASyASyASyAC5ImageVAC30_EnvironmentKeyWritingModifierVyAC4FontVSgGGAC016_ForegroundStyleW0VyAC017HierarchicalShapeZ0VGGAC12_FrameLayoutVG_AEyAWyAC4TextV_A15_QPGGAC6SpacerVQPGGAC14_PaddingLayoutVGA23_GAC011_BackgroundzW0VyAC5ColorVGGAC11_ClipEffectVyAC16RoundedRectangleVGGAC023AccessibilityAttachmentW0VGGGAC4ViewHPyHC
++ _get_witness_table 6HomeUI14AccessorySetupO16LockDataProviderRzlqd__05SwiftB04ViewHD2_AeFPAEE12onTapGesture5count7performQrSi_yyctFQOyAG0A8UICommonE2if_4thenQrSb_qd__xXEtAeFRd__lFQOyAE15ModifiedContentVyAOyAOyAgEE11glassEffect_2inQrAE5GlassV_qd__tAE5ShapeRd__lFQOyAOyAOyAE6VStackVyAE012_ConditionalS0VyAE05TupleS0VyAOyAOyAOyAOyAE6ZStackVyAZyAOyAE01_xI0VyAE6CircleVAE5ColorVGAE12_FrameLayoutVG_AOyAOyAE5ImageVAE30_EnvironmentKeyWritingModifierVyAE4FontVSgGGA14_yA6_SgGGQPGGA9_GAE08_OpacityU0VGAE14_PaddingLayoutVGA30_G_AOyAVyAZyAE4TextV_A34_QPGGAE16_FlexFrameLayoutVGQPGAE05EmptyI0VGGA38_GA30_G_AE16RoundedRectangleVQo_AE05_ClipU0VyA48_GGA30_GAE01_sX8ModifierVyA48_GG_A58_Qo__Qo_HO
++ _get_witness_table 6HomeUI18UserAccessProviderRzAaBR_r0_lqd0__05SwiftB04ViewHD3_AcDPACE11safeAreaBar4edge9alignment7spacing7contentQrAC12VerticalEdgeO_AC19HorizontalAlignmentV12CoreGraphics7CGFloatVSgqd__yXEtAcDRd__lFQOyAC6VStackVyAC12TupleContentVyAA14AccessorySetupO07Membersd7SectionG0Vy_xGSg_AX016RestrictedGuestsd7SectionG0Vy_q_GQPGG_AeCE18scrollPocketTag_v15styleQrAC0J16MagicPocketStyleV_tFQOyAC08ModifiedX0VyAC5ColorVAC12_FrameLayoutVG_Qo_Qo_HO
++ _get_witness_table 6HomeUI18UserAccessProviderRzl05SwiftB015ModifiedContentVyAC4ViewPACE5sheet4item9onDismiss7contentQrAC7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AcFRd_0_r0_lFQOyAC5GroupVyAC05TupleH0VyAEyAEyAC4TextVAC16_FlexFrameLayoutVGAC08_PaddingV0VG_AEyAEyAC6VStackVyAC7ForEachVySayAA015RestrictedGuestd7ControlI5ModelC16GuestContactPairVyx_GG10Foundation4UUIDVAUyAEyAA0cD3RowVA0_G_AC7DividerVSgQPGGGAC24_BackgroundStyleModifierVyAC5ColorVGGAC11_ClipEffectVyAC16RoundedRectangleVGGQPGSgG_AA020SecureClassAccessorypC033_80F39A016D6896EAD536A40C56E30B38LLVy0C0QzGAA0d14LevelSelectionI0VyA7_yxGGQo_AC31AccessibilityAttachmentModifierVGAcFHPqd0__AcFHD4_A49_HO_A51_AC0I8ModifierHPyHCHC
++ _get_witness_table 6HomeUI18UserAccessProviderRzl05SwiftB015ModifiedContentVyAEyAEyAC10ScrollViewVyAC6VStackVyAC7ForEachVySayAA0cd7ControlJ5ModelC0C11ContactPairVyx_GG10Foundation4UUIDVAC05TupleH0VyAEyAA0cD3RowVAC14_PaddingLayoutVG_AC7DividerVSgQPGGGGAC010_FlexFrameW0VGAC24_BackgroundStyleModifierVyAC5ColorVGGAC11_ClipEffectVyAC16RoundedRectangleVGGAC0J0HPA15_ACA22_HPA9_ACA22_HPA6_ACA22_HPyHC_A8_AC0J8ModifierHPyHCHC_A14_ACA23_HPyHCHC_A20_ACA23_HPyHCHC
++ _get_witness_table 6HomeUI18UserAccessProviderRzlqd0__05SwiftB04ViewHD4_AcDPACE5sheet4item9onDismiss7contentQrAC7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AcDRd_0_r0_lFQOyAC15ModifiedContentVyAQyAC6VStackVyAC05TupleP0VyAUyAQyAA0cD3RowVAC14_PaddingLayoutVG_AC7DividerVSgQPGSg_AA0cd4ListG0VyxGQPGGAC24_BackgroundStyleModifierVyAC5ColorVGGAC11_ClipEffectVyAC16RoundedRectangleVGG_AA020SecureClassAccessorynC033_80F39A016D6896EAD536A40C56E30B38LLVy0C0QzGAA0d14LevelSelectionG0VyAA0cd7ControlG5ModelCyxGGQo_HO
++ _get_witness_table 6HomeUI18UserAccessProviderRzlqd0__05SwiftB04ViewHD4_AcDPACE5sheet4item9onDismiss7contentQrAC7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AcDRd_0_r0_lFQOyAeCE11safeAreaBar4edge9alignment7spacingAIQrAC12VerticalEdgeO_AC19HorizontalAlignmentV12CoreGraphics7CGFloatVSgqd__yXEtAcDRd__lFQOyAA0cd4ListG0VyxG_AeCE18scrollPocketTag_v15styleQrAC0Q16MagicPocketStyleV_tFQOyAC15ModifiedContentVyAC5ColorVAC12_FrameLayoutVG_Qo_Qo__AA14AccessorySetupO06Camerad7ContentG0V0nC0Vy_x_GAA0d14LevelSelectionG0VyAA0cd7ControlG5ModelCyxGGQo_HO
++ _get_witness_table 6HomeUI21AccessLevelDataSourceRzl05SwiftB015ModifiedContentVyAEyAEyAC4ViewPACE5alert_11isPresented10presenting7actions7messageQrAC18LocalizedStringKeyV_AC7BindingVySbGqd_1_Sgqd__qd_1_XEqd_0_qd_1_XEtAcFRd__AcFRd_0_r1_lFQOyAC010NavigationJ0VyAgCE7toolbar7contentQrqd__yXE_tAC07ToolbarI0Rd__lFQOyAgCE29navigationBarTitleDisplayModeyQrAC0uZ4ItemV16TitleDisplayModeOFQOyAgCE0Y5TitleyQrqd__SyRd__lFQOyAC4ListVys5NeverOAC7ForEachVySay8Provider_0cD0QZGA10_AC6ButtonVyAC6HStackVyAC05TupleI0VyAEyAC4TextVAC16_FlexFrameLayoutVG_AEyAC5ImageVAC012_EnvironmentS15WritingModifierVyAC5ColorVSgGGSgQPGGGGG_SSQo__Qo__A17_yAC0X4ItemVyytA13_yA24_GG_A43_QPGQo_G_A17_yAEyA13_yA19_GAC31AccessibilityAttachmentModifierVG_A50_QPGA19_A10_Qo_A49_GAC25_AppearanceActionModifierVGA55_GAcFHPA56_AcFHPA53_AcFHPqd0__AcFHD4_A52_HO_A49_AC0J8ModifierHPyHCHC_A55_ACA58_HPyHCHC_A55_ACA58_HPyHCHC
++ _get_witness_table 7SwiftUI15ModifiedContentVyAA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonG0Rd__lFQOyAA0I0VyACyACyAA6HStackVyAA05TupleD0VyACyACy08ContactsB006AvatarE0VAA12_FrameLayoutVGAA11_ClipEffectVyAA6CircleVGG_ACyAA4TextVAA05_FlexnO0VGACyACyA_AA30_EnvironmentKeyWritingModifierVyAA0S9AlignmentOGGAA08_OpacityQ0VGQPGGAA08_PaddingO0VGAA01_d5ShapeX0VyAA9RectangleVGGG_AA05PlainiG0VQo_AA023AccessibilityAttachmentX0VGAaDHPqd0__AaDHD3_A26_HO_A28_AA0eX0HPyHCHC
++ _get_witness_table 7SwiftUI15ModifiedContentVyAA6ZStackVyACyACyAA4ViewP7HomeUI2E41optionalLabelWithTopLeadingLuminanceScrim_12cornerRadius7paddingQrSSSg_12CoreGraphics7CGFloatVAOtFQOyACyAgAE11glassEffect_2inQrAA5GlassV_qd__tAA5ShapeRd__lFQOyAgHE7prefers_3for7factors8location8priorityQr0G9DataModel6CameraO4ModeO_A0_11EnvironmentO5StateCy_AZ21LiveCameraEnvironmentV_GAH21MultiFactorVisibilityV7FactorsVAH06CameraF9RegistrarC8LocationOSgA15_8PriorityOtFQOyAH10CameraCellV_Qo__AA16RoundedRectangleVQo_AA05_ClipW0VyA25_GG_Qo_AA30_SafeAreaRegionsIgnoringLayoutVGAA31AccessibilityAttachmentModifierVGG0gB014AccessorySetupO28CameraStreamVisibilityLogger33_315A2C18A9058D451A4B9CCE27E43430LLVGAaFHPA38_AaFHPyHC_A44_AA0F8ModifierHPyHCHC
++ _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA4ListVys5NeverOAA05TupleD0VyAA7SectionVyAA4TextVAA7ForEachVySay13HomeDataModel19StaticCameraProfileVG10Foundation4UUIDVACyACyAA6ToggleVyAA6HStackVyAIy0lB017SnapshotThumbnail33_6A020151FA6C63C86827D1A374889D51LLV_AA6VStackVyAIyAM_AMSgQPGGQPGGGAA32_EnvironmentKeyTransformModifierVySbGGAA31AccessibilityAttachmentModifierVGGAA9EmptyViewVG_AKyA20_ACyACyAA6ButtonVyAZyAIyAM_AA6SpacerVA5_ACyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA24_ForegroundStyleModifierVyAA22HierarchicalShapeStyleVGGQPGGGA29_yAA5ColorVSgGGA16_GA20_GQPGGA16_GAA25_AppearanceActionModifierVGA55_GAA4ViewHPA56_AAA58_HPA53_AAA58_HPA52_AAA58_HPyHC_A16_AA12ViewModifierHPyHCHC_A55_AAA59_HPyHCHC_A55_AAA59_HPyHCHC
++ _get_witness_table 7SwiftUI15ModifiedContentVyACyACyACyACyAA5ImageVAA18_AspectRatioLayoutVGAA06_FrameH0VGAA05_FlexiH0VGAA08_PaddingH0VGAA31AccessibilityAttachmentModifierVGAA4ViewHPAqaUHPAnaUHPAkaUHPAhaUHPAeaUHPyHC_AgA0oN0HPyHCHC_AjaVHPyHCHC_AmaVHPyHCHC_ApaVHPyHCHC_AsaVHPyHCHC
++ _get_witness_table 7SwiftUI19_ConditionalContentVy04HomeB014AccessorySetupO14LockStatusViewVy_AF07DefaultH12DataProviderVGAF016OnboardingHeaderJ0VGAA0J0HPAkaOHPyHC_AmaOHPyHCHC
++ _get_witness_table 7SwiftUI4ListVys5NeverOAA7SectionVyAA9EmptyViewVAA7ForEachVySay10Foundation6LocaleV6locale_SS4nametGSSAA15ModifiedContentVyAA6ButtonVyAA6HStackVyAA05TupleO0VyAA4TextV_AA6SpacerVAA0G0PAAE10fontWeightyQrAA4FontV0V0VSgFQOyASyAA5ImageVAA24_ForegroundStyleModifierVyAA09TintShapeZ0VGG_Qo_SgQPGGGAA31AccessibilityAttachmentModifierVGGAIGGAAA2_HPyHC
++ _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE4task2id4name8priority4file4line_Qrqd___SSSgScPSSSiyyYaYAcntSQRd__lFQOyAA15ModifiedContentVyALyAC7HomeUI2E19bridgedSceneUpdatesyQryAA0O5PhaseOcFQOyAA14GeometryReaderVyAA012_ConditionalK0VyALyALyALyALyALyALyALyAM10CameraCellV7prefers_7factors8locationAGQr0L9DataModel0U0O4ModeO_AM21MultiFactorVisibilityV7FactorsVAM0uC9RegistrarC8LocationOSgA8_8PriorityOtFQOy_Qo_AA11_ClipEffectVyAA16RoundedRectangleVGGAA16_OverlayModifierVyALyAM0U15AccessIndicatorVAA14_PaddingLayoutVGSgGGA22_yALyALyALyALyALyALyAcAE10fontWeightyQrAA4FontV6WeightVSgFQOyALyAA5ImageVAA18_AspectRatioLayoutVG_Qo_AA24_ForegroundStyleModifierVyAA5ColorVGGAA30_EnvironmentKeyWritingModifierVyAA19SymbolRenderingModeVSgGGAA16_FlexFrameLayoutVGAA14_OpacityEffectVGAA01_R14ActionModifierVySo6CGRectVA65_SQ12CoreGraphicsyHCg_GGAA13_OffsetEffectVGSgGGA22_yALyAA6VStackVyAA05TupleK0VyA55_Sg_AA6SpacerVALyALyALyA76_yA78_yAA4TextVSg_ATyALyA83_A60_GA83_GSgQPGGA57_GA50_ySiSgGGA67_GQPGGA26_GGGAA18_AnimationModifierVySbGGA102_GA102_GA46_GG_Qo_A50_yAPGGAA25_AllowsHitTestingModifierVG_10Foundation4UUIDVSgQo_HO
++ _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVyAcAE20listHasStackBehaviorQryFQOyAHyAcAE0J5StyleyQrqd__AA04ListN0Rd__lFQOyAcAE06scrollI10BackgroundyQrAA10VisibilityOFQOyAA0O0VySSAA05TupleI0VyAHyAA7ForEachVySay010HomeEnergyB015ElectricUtilityVGSSAHy0vB009LegacyRowC0VAA21_TraitWritingModifierVyAA26IsSelectionEnabledTraitKeyVGGGA1_yAA0o3RowQ8TraitKeyVGG_AHyAHyAHyAA6ButtonVyAA4TextVGAA30_EnvironmentKeyWritingModifierVyAA5ColorVSgGGA9_GAA31AccessibilityAttachmentModifierVGSgQPGG_Qo__AA012InsetGroupedoN0VQo_AA16_FixedSizeLayoutVG_Qo_AA25_AppearanceActionModifierVG_SSSgQo_HO
++ _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVyAA01_c9Modifier_I0Vy04HomeB014AccessorySetupO28CameraStreamVisibilityLogger33_315A2C18A9058D451A4B9CCE27E43430LLVGAA017_AppearanceActionJ0VG_SbQo__0K9DataModel0N0O0O5StateOQo_HO
++ _get_witness_table qd0__7SwiftUI4ViewHD4_AaBPAAE5sheet4item9onDismiss7contentQrAA7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lFQOyAA15ModifiedContentVyAA6VStackVyAA05TupleL0VyAOyAQyAA7ForEachVySay13HomeDataModel16ThermostatPresetVGAxOyAcAE11buttonStyleyQrqd__AA015PrimitiveButtonW0Rd__lFQOyAA0Y0VyAOyAOyAOyAOy0q16AccessoryControlB00t18AutomationSettingsC0V0u15NavigationLabelC0VAA14_PaddingLayoutVGA8_GAA16_FlexFrameLayoutVGAA19_BackgroundModifierVyAA06_ShapeC0VyAA16RoundedRectangleVAA5ColorVGGGG_AA05PlainyW0VQo_AA31AccessibilityAttachmentModifierVGSgGGA8_GSg_AA6SpacerVQPGGA30_G_AXA2_0t13PresetsDetailC0VSgQo_HO
 + _keypath_get.180Tm
 + _keypath_get.7Tm
 + _keypath_get_selector_bounds
 + _keypath_set.181Tm
-+ _objc_msgSend$_stopEnergyPolling
-+ _objc_msgSend$addFeatureChangeObserverWithChange:
-+ _objc_msgSend$allowHeySiri
-+ _objc_msgSend$anchorPoint
-+ _objc_msgSend$associatedServiceTypesArrayFor:
-+ _objc_msgSend$canUse
-+ _objc_msgSend$clipCaptionLocales
-+ _objc_msgSend$energyPollerSubscriptionIDs
-+ _objc_msgSend$hf_fetchAccessorySettingsWithHomeIdentifier:accessoryIdentifier:keyPaths:completionHandler:
-+ _objc_msgSend$hf_isPowerStrip
-+ _objc_msgSend$initWithHome:accessories:flowDependencies:
-+ _objc_msgSend$initWithSiriEnabled:allowHeySiri:airPlayEnabled:playbackInfluencesForYouEnabled:shareSiriAnalyticsEnabled:explicitContentAllowed:
-+ _objc_msgSend$initWithSiriEnabled:allowHeySiri:airPlayEnabled:playbackInfluencesForYouEnabled:shareSiriAnalyticsEnabled:explicitContentAllowed:languageValue:
-+ _objc_msgSend$isAirPlayEnabled
-+ _objc_msgSend$isExplicitContentAllowed
-+ _objc_msgSend$isSiriEnabled
-+ _objc_msgSend$limit
-+ _objc_msgSend$outputGenderFromString:
-+ _objc_msgSend$outputVoiceGenderCode
-+ _objc_msgSend$outputVoiceLanguageCode
-+ _objc_msgSend$presentShareSiriAndDictationAlertForSingleAccessory:accessoryName:
-+ _objc_msgSend$productGroup
-+ _objc_msgSend$productNumber
-+ _objc_msgSend$rebuildMatterSnapshotIfNotCurrentHome
-+ _objc_msgSend$removeFeatureChangeObserverWithToken:
-+ _objc_msgSend$rescanEnergyPollingForVisibleItems
-+ _objc_msgSend$serviceProvidesPowerMeasurement:
-+ _objc_msgSend$setCellHidden:forItem:
-+ _objc_msgSend$setEnergyPollerSubscriptionIDs:
-+ _objc_msgSend$setShouldAdjustButtonTrayForKeyboard:
-+ _objc_msgSend$setSublayerTransform:
-+ _objc_msgSend$siriDataSharingOptInStatus
-+ _objc_msgSend$siriEndpointProfile
-+ _objc_msgSend$startPollingForService:clientName:
-+ _objc_msgSend$startStream
-+ _objc_msgSend$stopPolling:
-+ _objc_msgSend$stopStream
-+ _objc_msgSend$supportsIdentify
-+ _objc_msgSend$supportsNativeMatter
-+ _objc_msgSend$voiceNamesForOutputLanguageCode:gender:
 + _objc_retain_x12
 + _swift_cvw_initEnumMetadataSinglePayloadWithLayoutString
 + _swift_cvw_singlePayloadEnumGeneric_destructiveInjectEnumTag
@@ -865,145 +568,10 @@ Symbols:
 - __OBJC_CLASS_PROTOCOLS_$_UINavigationController(HomeUI|HUItemPresentationContainer|HUModalPresentation|HUPreloadingNavigationPresentation)
 - __OBJC_CLASS_PROTOCOLS_$_UIView(BuddyPinAutoLayout|HULayoutAnchorAdditions|HUGeometryAdditions)
 - __PROPERTIES__TtCO6HomeUI14AccessorySetup24LockAccessViewController
-- __PROTOCOLS_HUAccessorySetupOnboardingFlow.39
 - __PROTOCOLS__TtCO6HomeUI14AccessorySetup24LockAccessViewController
-- __PROTOCOLS__TtCO6HomeUI14AccessorySetup24LockAccessViewController.1
-- __PROTOCOLS__TtCO6HomeUI14AccessorySetup26CameraAccessViewController.5
-- ___101-[HUFeatureOnboarder _findNextAppropriateFlowByRemovingFlow:currentOnboardingFlowClass:usageOptions:]_block_invoke.196
-- ___101-[HUFeatureOnboarder _findNextAppropriateFlowByRemovingFlow:currentOnboardingFlowClass:usageOptions:]_block_invoke.200
-- ___101-[HUFeatureOnboarder _findNextAppropriateFlowByRemovingFlow:currentOnboardingFlowClass:usageOptions:]_block_invoke.204
-- ___101-[HUFeatureOnboarder _findNextAppropriateFlowByRemovingFlow:currentOnboardingFlowClass:usageOptions:]_block_invoke_2.201
-- ___101-[HUFeatureOnboarder _findNextAppropriateFlowByRemovingFlow:currentOnboardingFlowClass:usageOptions:]_block_invoke_3.203
-- ___106-[HUDashboardViewController(ContextMenu) collectionView:contextMenuConfigurationForItemAtIndexPath:point:]_block_invoke.1330
-- ___106-[HUDashboardViewController(ContextMenu) collectionView:contextMenuConfigurationForItemAtIndexPath:point:]_block_invoke.1384
-- ___106-[HUDashboardViewController(ContextMenu) collectionView:contextMenuConfigurationForItemAtIndexPath:point:]_block_invoke_2.1338
-- ___116-[HUDashboardViewController(HomeKitObjectPresenting) presentItemWithUUID:destination:secondaryDestination:animated:]_block_invoke.813
-- ___116-[HUDashboardViewController(HomeKitObjectPresenting) presentItemWithUUID:destination:secondaryDestination:animated:]_block_invoke.815
-- ___116-[HUDashboardViewController(HomeKitObjectPresenting) presentItemWithUUID:destination:secondaryDestination:animated:]_block_invoke.816
-- ___119-[HUAccessorySettingsSiriRecognitionLanguageViewController _turnOffVoiceIDAndChangeSiriLanguageForAllMediaAccessories:]_block_invoke.118
-- ___119-[HUAccessorySettingsSiriRecognitionLanguageViewController _turnOffVoiceIDAndChangeSiriLanguageForAllMediaAccessories:]_block_invoke.125
-- ___121+[HUHomeFeatureOnboardingUtilities onboardAccessorySetupFromPresentingViewController:usageOptions:home:flowDependencies:]_block_invoke.191
-- ___37-[HUCameraController nextControlItem]_block_invoke.180
-- ___38-[HUCameraController cameraPickerMenu]_block_invoke.209
 - ___44-[HUEnergyAccessoryItemProvider reloadItems]_block_invoke_3
-- ___45-[HUServiceDetailsViewController _removeItem]_block_invoke.315
-- ___45-[HUServiceDetailsViewController _removeItem]_block_invoke_2.316
-- ___53-[HUServiceDetailsViewController _didSelectRoomItem:]_block_invoke.956
-- ___58-[HUServiceDetailsViewController initWithServiceLikeItem:]_block_invoke.250
-- ___58-[HUServiceDetailsViewController initWithServiceLikeItem:]_block_invoke.252
-- ___59-[HUDashboardItemManager _buildSectionsWithDisplayedItems:]_block_invoke.305
-- ___59-[HUDashboardItemManager _buildSectionsWithDisplayedItems:]_block_invoke_2.311
-- ___60-[HUServiceDetailsViewController _exportDiagnosticsForItem:]_block_invoke.778
-- ___61-[HUCameraController _refreshClipCacheAndRefetchForClipUUID:]_block_invoke.194
-- ___62-[HUAccessorySettingsItemModuleController _handleButtonPress:]_block_invoke.593
-- ___62-[HUAccessorySettingsItemModuleController _handleButtonPress:]_block_invoke.601
-- ___62-[HUCameraUpgradeOfferBannerItem _subclass_updateWithOptions:]_block_invoke.87
-- ___63-[HUServiceDetailsViewController didSelectHeaderWarningAction:]_block_invoke.1046
-- ___64-[HUAccessorySettingsItemModuleController switchCell:didTurnOn:]_block_invoke.536
-- ___64-[HUAccessorySettingsItemModuleController switchCell:didTurnOn:]_block_invoke.550
-- ___67-[HUFeatureOnboarder resumeOnboardingFromPresentingViewController:]_block_invoke.223
-- ___67-[HUServiceDetailsViewController _presentResetHomePodConfirmation:]_block_invoke.756
-- ___67-[HUServiceDetailsViewController _presentResetHomePodConfirmation:]_block_invoke.760
-- ___68-[HUServiceDetailsViewController tableView:didSelectRowAtIndexPath:]_block_invoke.647
-- ___68-[HUServiceDetailsViewController tableView:didSelectRowAtIndexPath:]_block_invoke.654
-- ___68-[HUServiceDetailsViewController tableView:didSelectRowAtIndexPath:]_block_invoke.661
-- ___68-[HUServiceDetailsViewController tableView:didSelectRowAtIndexPath:]_block_invoke.697
-- ___70-[HUServiceDetailsViewController _offerToCreateHomeTheaterIfPossible:]_block_invoke.1020
-- ___70-[HUServiceDetailsViewController _offerToCreateHomeTheaterIfPossible:]_block_invoke.1024
-- ___70-[HUServiceDetailsViewController _presentRemoveFromGroupConfirmation:]_block_invoke.792
-- ___72-[HUManagedConfigurationProfilesViewController _fetchDataAndReloadTable]_block_invoke.84
-- ___72-[HUManagedConfigurationProfilesViewController _fetchDataAndReloadTable]_block_invoke.87
-- ___74-[HUCameraPresenceRecordingSettingsModule updateStreamingSetting:isRetry:]_block_invoke.112
-- ___74-[HUCameraPresenceRecordingSettingsModule updateStreamingSetting:isRetry:]_block_invoke.113
-- ___74-[HUCameraPresenceRecordingSettingsModule updateStreamingSetting:isRetry:]_block_invoke_2.116
-- ___74-[HUServiceDetailsViewController _presentHomeAccessoryRemoveConfirmation:]_block_invoke.857
-- ___75+[HUHomeFeatureOnboardingUtilities checkSiriForiCloudEnabledPromptingUser:]_block_invoke.251
-- ___75+[HUHomeFeatureOnboardingUtilities checkSiriForiCloudEnabledPromptingUser:]_block_invoke.257
-- ___76+[HUHomeFeatureOnboardingUtilities checkVoiceProfileAvailabiltyForLanguage:]_block_invoke.307
-- ___76+[HUHomeFeatureOnboardingUtilities home:processHomeFeatureOnboarderResults:]_block_invoke.260
-- ___76+[HUHomeFeatureOnboardingUtilities home:processHomeFeatureOnboarderResults:]_block_invoke.263
-- ___76+[HUHomeFeatureOnboardingUtilities home:processHomeFeatureOnboarderResults:]_block_invoke.267
-- ___76+[HUHomeFeatureOnboardingUtilities home:processHomeFeatureOnboarderResults:]_block_invoke.270
-- ___76+[HUHomeFeatureOnboardingUtilities home:processHomeFeatureOnboarderResults:]_block_invoke_2.264
-- ___76+[HUHomeFeatureOnboardingUtilities home:processHomeFeatureOnboarderResults:]_block_invoke_2.268
-- ___76+[HUHomeFeatureOnboardingUtilities home:processHomeFeatureOnboarderResults:]_block_invoke_2.271
-- ___76-[HUManagedConfigurationProfilesViewController _removeProfileForIdentifier:]_block_invoke.99
-- ___79-[HUFeatureOnboarder startOnboardingWithPresentingViewController:usageOptions:]_block_invoke.186
-- ___79-[HUServiceDetailsViewController _presentEcosystemAccessoryRemoveConfirmation:]_block_invoke.797
-- ___79-[HUServiceDetailsViewController _presentEcosystemAccessoryRemoveConfirmation:]_block_invoke.798
-- ___79-[HUServiceDetailsViewController _presentEcosystemAccessoryRemoveConfirmation:]_block_invoke.801
-- ___79-[HUServiceDetailsViewController _presentEcosystemAccessoryRemoveConfirmation:]_block_invoke.802
-- ___79-[HUServiceDetailsViewController _presentEcosystemAccessoryRemoveConfirmation:]_block_invoke.803
-- ___79-[HUServiceDetailsViewController _presentEcosystemAccessoryRemoveConfirmation:]_block_invoke.804
-- ___80-[HUManagedConfigurationProfilesViewController _reloadTableViewWithExistingData]_block_invoke.91
-- ___80-[HUManagedConfigurationProfilesViewController _reloadTableViewWithExistingData]_block_invoke.96
-- ___81-[HUServiceDetailsViewController _notifyOfHomeTheaterReconfigurationIfNecessary:]_block_invoke.1000
-- ___81-[HUServiceDetailsViewController _notifyOfHomeTheaterReconfigurationIfNecessary:]_block_invoke.994
-- ___81-[HUServiceDetailsViewController _notifyOfHomeTheaterReconfigurationIfNecessary:]_block_invoke.998
-- ___81-[HUServiceDetailsViewController _notifyOfHomeTheaterReconfigurationIfNecessary:]_block_invoke.999
-- ___82-[HUDashboardViewController(Announce) _updateAnnounceNotificationSettingsIfNeeded]_block_invoke.1296
-- ___86+[HUHomeFeatureOnboardingUtilities atLeastOneHomePodHasLanguageSettingsForHomeFuture:]_block_invoke.199
-- ___87-[HUDashboardViewController presentationCoordinator:didRecognizeTapForItem:tappedArea:]_block_invoke.374
-- ___87-[HUDashboardViewController presentationCoordinator:didRecognizeTapForItem:tappedArea:]_block_invoke.386
-- ___87-[HUDashboardViewController presentationCoordinator:didRecognizeTapForItem:tappedArea:]_block_invoke_2.382
-- ___88+[HUHomeFeatureOnboardingUtilities presentAlertConfirmingTurningOfVoiceRecognitionFrom:]_block_invoke.222
-- ___88-[HUDashboardViewController presentationCoordinator:shouldBeginPresentationWithContext:]_block_invoke.360
-- ___89+[HUHomeFeatureOnboardingUtilities presentAlertConfirmingTurningOffPersonalRequestsFrom:]_block_invoke.235
-- ___89+[HUHomeFeatureOnboardingUtilities presentAlertConfirmingTurningOffPersonalRequestsFrom:]_block_invoke.238
-- ___89-[HUFeatureOnboarder getNextViewControllerForOnboardingInput:currentOnboardingFlowClass:]_block_invoke.212
-- ___89-[HUFeatureOnboarder getNextViewControllerForOnboardingInput:currentOnboardingFlowClass:]_block_invoke.216
-- ___89-[HUFeatureOnboarder getNextViewControllerForOnboardingInput:currentOnboardingFlowClass:]_block_invoke.217
-- ___92-[HUManagedConfigurationProfilesViewController profileViewControllerDidSelectRemoveProfile:]_block_invoke.128
 - ___block_descriptor_64_e8_32s40s48s56s_e28_"NAFuture"16?0"NSNumber"8ls32l8s40l8s48l8s56l8
 - ___block_descriptor_64_e8_32s40s48w_e20_v24?08"NSError"16lw48l8s32l8s40l8
-- ___block_literal_global.1026
-- ___block_literal_global.1037
-- ___block_literal_global.1048
-- ___block_literal_global.1057
-- ___block_literal_global.1219
-- ___block_literal_global.1223
-- ___block_literal_global.1298
-- ___block_literal_global.1324
-- ___block_literal_global.1377
-- ___block_literal_global.237
-- ___block_literal_global.274
-- ___block_literal_global.312
-- ___block_literal_global.314
-- ___block_literal_global.319
-- ___block_literal_global.349
-- ___block_literal_global.388
-- ___block_literal_global.446
-- ___block_literal_global.449
-- ___block_literal_global.454
-- ___block_literal_global.474
-- ___block_literal_global.650
-- ___block_literal_global.663
-- ___block_literal_global.747
-- ___block_literal_global.762
-- ___block_literal_global.794
-- ___block_literal_global.800
-- ___block_literal_global.806
-- ___block_literal_global.809
-- ___block_literal_global.812
-- ___block_literal_global.831
-- ___block_literal_global.833
-- ___block_literal_global.844
-- ___block_literal_global.847
-- ___block_literal_global.859
-- ___block_literal_global.893
-- ___block_literal_global.896
-- ___block_literal_global.953
-- ___block_literal_global.955
-- ___block_literal_global.958
-- ___block_literal_global.960
-- ___swift__destructor.129
-- ___swift__destructor.143
-- ___swift__destructor.164
-- ___swift__destructor.48
-- ___swift__destructor.89
-- ___swift_closure_destructor.102
-- ___swift_closure_destructor.123
-- ___swift_closure_destructor.152
 - ___swift_closure_destructor.64Tm
 - ___swift_closure_destructor.77Tm
 - ___swift_get_extra_inhabitant_index.34Tm
@@ -1022,46 +590,25 @@ Symbols:
 - _associated conformance 6HomeUI26CameraRecordingOptionsViewV26IdentifiablePresenceOptionVyxq_q0__Gs0G0AA2IDsAGP_SH
 - _associated conformance 6HomeUI26CameraRecordingOptionsViewVyxq_q0_G05SwiftB00F0AA4BodyAeFP_AeF
 - _associated conformance 6HomeUI28RecordingOptionSelectionView33_A1F1B13E850E72AF100F512E14949B2BLLVyxq_q0_G05SwiftB00F0AA4BodyAfGP_AfG
-- _block_copy_helper.160
-- _block_copy_helper.68
-- _block_descriptor.162
-- _block_descriptor.70
-- _block_destroy_helper.161
-- _block_destroy_helper.69
 - _generic environment 13HomeDataModel13CameraProfileRzAA17AccessoryProtocolR_AA0aG0R0_r1_l
 - _get_enum_tag_for_layout_string 6HomeUI14AccessorySetupO20ServiceRowSourceTypeO
-- _get_underlying_type_ref 7SwiftUI4ViewPAAEAcAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOQr.3
-- _get_underlying_type_ref 7SwiftUI4ViewPAAEAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOQr.1
-- _get_underlying_witness 7SwiftUI4ViewPAAEAcAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOqd0__AaBHC.4
-- _get_underlying_witness 7SwiftUI4ViewPAAEAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOqd__AaBHC.2
-- _get_witness_table 13HomeDataModel0A8ProtocolRzl7SwiftUI10ScrollViewVyAC0H0PACE23scrollContentBackgroundyQrAC10VisibilityOFQOyAC08ModifiedJ0VyALyAgCE20listHasStackBehaviorQryFQOyAgCE0N7PaddingyQrAC4EdgeO3SetV_12CoreGraphics7CGFloatVtFQOyAgCE0N5StyleyQrqd__AC04ListX0Rd__lFQOyAC0Y0Vys5NeverOAC05TupleJ0VyAC7SectionVyAC05EmptyH0VALyAC6HStackVyA1_y0A3UI2014SelectableIconH0V_ALyAgCE10fontWeightyQrAC4FontV6WeightVSgFQOyAC9TextFieldVyAC4TextVG_Qo_AC01_R6LayoutVGAC6SpacerVQPGGAC31AccessibilityAttachmentModifierVGA5_G_A3_yA5_ALyAgCE0N9RowInsetsyQrAR_AUSgtFQOyAgCE06buttonX0yQrqd__AC015PrimitiveButtonX0Rd__lFQOyAC9LazyVGridVyAC7ForEachVySayAA10IconSymbolOGA43_AC6ButtonVyA10_GGG_AC011PlainButtonX0VQo__Qo_A31_GA5_GSgQPGG_AC012InsetGroupedyX0VQo__Qo__Qo_AC21_TraitWritingModifierVyAC0Y22SectionSpacingTraitKeyVGGAC30_EnvironmentKeyWritingModifierVyAC0Y14SectionSpacingVSgGG_Qo_GAcFHPyHC.32
-- _get_witness_table 13HomeDataModel0A8ProtocolRzl7SwiftUI10ScrollViewVyAC0H0PACE23scrollContentBackgroundyQrAC10VisibilityOFQOyAgCE20listHasStackBehaviorQryFQOyAgCE0M7PaddingyQrAC4EdgeO3SetV_12CoreGraphics7CGFloatVtFQOyAgCE0M5StyleyQrqd__AC04ListW0Rd__lFQOyAC0X0Vys5NeverOAC7SectionVyAC05EmptyH0VAC7ForEachVyAC7BindingVySay0aF014AccessorySetupO010ServiceRowB0VGG10Foundation4UUIDVAC012_ConditionalJ0VyA17_yA8_19BasicNameServiceRowVA8_20ToggleNameServiceRowVGA17_yA8_22IdentifyNameServiceRowVy_xGA22_GGGA1_GG_AC012InsetGroupedxW0VQo__Qo__Qo__Qo_GAcFHPyHC.46
-- _get_witness_table 13HomeDataModel0A8ProtocolRzl7SwiftUI15ModifiedContentVyAEyAC6HStackVyAC05TupleH0VyAEyAC4ViewPACE11buttonStyleyQrqd__AC015PrimitiveButtonM0Rd__lFQOyAC0O0VyAEyAEyAC5ImageVAC30_EnvironmentKeyWritingModifierVyAC4FontVSgGGASyAC5ColorVSgGGG_AC05PlainoM0VQo_AC12_FrameLayoutVG_AkCE09textFieldM0yQrqd__AC09TextFieldM0Rd__lFQOyAC9TextFieldVyAC4TextVG_AC0w9TextFieldM0VQo_AC012_ConditionalH0VyAEyAkCE08progresskM0yQrqd__AC08ProgresskM0Rd__lFQOyAC08ProgressK0VyAC05EmptyK0VA26_G_AC016CircularProgresskM0VQo_AC12_ScaleEffectVGAkCEALyQrqd__AcMRd__lFQOyAOyA14_G_A4_Qo_GQPGGAC08_PaddingY0VGAC023AccessibilityAttachmentT0VGAcJHPA41_AcJHPA38_AcJHPyHC_A40_AC0kT0HPyHCHC_A43_ACA45_HPyHCHC.93
-- _get_witness_table 13HomeDataModel13CameraProfileRzAA17AccessoryProtocolR_AA0aG0R0_r1_l7SwiftUI14NavigationViewVyAE0K0PAEE7toolbar7contentQrqd__yXE_tAE14ToolbarContentRd__lFQOyAiEE29navigationBarTitleDisplayModeyQrAE0jQ4ItemV0rsT0OFQOyAiEE0pR0yQrqd__SyRd__lFQOyAE4ListVys5NeverOAE7ForEachVySay0aI00D15RecordingOptionVGAA0D0O06AccessT0OAiEE11buttonStyleyQrqd__AE20PrimitiveButtonStyleRd__lFQOyAE6ButtonVyAE6HStackVyAE05TupleO0VyAE6VStackVyA12_yAE4TextV_AE08ModifiedO0VyA16_AE16_FixedSizeLayoutVGQPGG_AE6SpacerVA18_yA18_yA18_yAE5ImageVAE30_EnvironmentKeyWritingModifierVyAE4FontVSgGGAE24_ForegroundStyleModifierVyAE5ColorVGGAE14_OpacityEffectVGQPGGG_AE16PlainButtonStyleVQo_GG_SSQo__Qo__A12_yAE0nU0VyytA8_yA27_GG_A57_QPGQo_GAeHHPyHC.53
-- _get_witness_table 13HomeDataModel13CameraProfileRzAA17AccessoryProtocolR_AA0aG0R0_r1_lqd0__7SwiftUI4ViewHD4_AeFPAEE5sheet4item9onDismiss7contentQrAE7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AeFRd_0_r0_lFQOyAE15ModifiedContentVyAE06ScrollJ0VyASyASyAE6VStackVyAE7ForEachVySay0aI023PresenceRecordingOptionVGAA0D0O0aX0OAE05TupleS0VyAZ0dxZ3Row33_A1F1B13E850E72AF100F512E14949B2BLLV_ASyASyAE7DividerVAE14_PaddingLayoutVGA14_GSgQPGGGAE24_BackgroundStyleModifierVyAE5ColorVGGAE11_ClipEffectVyAE16RoundedRectangleVGGGAE16_FlexFrameLayoutVG_AZ0dy7OptionsJ0V0qxZ0Vyxq_q0__GAZ0yz9SelectionJ0A9_LLVyxq_q0_GQo_HO.36
-- _get_witness_table 13HomeDataModel17AccessoryProtocolRzl7SwiftUI6VStackVyAC7ForEachVySay0aG00D5SetupO07BridgedD5EntryVy_xGG10Foundation4UUIDVAC15ModifiedContentVyASyASyASyASyAC6HStackVyAC05TupleQ0VyASyASyASyAC5ImageVAC30_EnvironmentKeyWritingModifierVyAC4FontVSgGGAC016_ForegroundStyleX0VyAC22HierarchicalShapeStyleVGGAC12_FrameLayoutVG_AEyAWyAC4TextV_A15_QPGGAC6SpacerVQPGGAC14_PaddingLayoutVGA23_GAC016_BackgroundStyleX0VyAC5ColorVGGAC11_ClipEffectVyAC16RoundedRectangleVGGAC023AccessibilityAttachmentX0VGGGAC4ViewHPyHC.1
-- _get_witness_table 6HomeUI14AccessorySetupO16LockDataProviderRzlqd__05SwiftB04ViewHD2_AeFPAEE12onTapGesture5count7performQrSi_yyctFQOyAG0A8UICommonE2if_4thenQrSb_qd__xXEtAeFRd__lFQOyAE15ModifiedContentVyAOyAgEE11glassEffect_2inQrAE5GlassV_qd__tAE5ShapeRd__lFQOyAOyAOyAOyAE6VStackVyAE012_ConditionalS0VyAE05TupleS0VyAOyAOyAOyAOyAE6ZStackVyAZyAOyAE01_xI0VyAE6CircleVAE5ColorVGAE12_FrameLayoutVG_AOyAOyAE5ImageVAE30_EnvironmentKeyWritingModifierVyAE4FontVSgGGA14_yA6_SgGGQPGGA9_GAE08_OpacityU0VGAE14_PaddingLayoutVGA30_G_AOyAVyAZyAE4TextV_A34_QPGGAE16_FlexFrameLayoutVGQPGAE05EmptyI0VGGA38_GA30_GAE07_ShadowU0VG_AE16RoundedRectangleVQo_A30_GAE01_sX8ModifierVyA51_GG_A57_Qo__Qo_HO.4
-- _get_witness_table 6HomeUI18UserAccessProviderRzAaBR_r0_lqd0__05SwiftB04ViewHD4_AcDPACE5sheet4item9onDismiss7contentQrAC7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AcDRd_0_r0_lFQOyAeCEAfghIQrAM_ANqd_0_qd__ctsAORd__AcDRd_0_r0_lFQOyAC6VStackVyAC12TupleContentVyAC08ModifiedQ0VyAUyAQyASyASyAUyAA0cD3RowVAC14_PaddingLayoutVG_AC7DividerVSgQPGSg_AA0cd4ListG0VyxGQPGGAC24_BackgroundStyleModifierVyAC5ColorVGGAC11_ClipEffectVyAC16RoundedRectangleVGG_ASyAUyAUyAC4TextVAC010_FlexFrameU0VGAYG_AUyAUyAQyAC7ForEachVySayAA015RestrictedGuestd7ControlG5ModelC16GuestContactPairVyq__GG10Foundation4UUIDVA2_GGA13_GA19_GQPGSgQPGG_AA14AccessorySetupO04LockdqG0V0nC0Vy_xq__0C0QzGAA0d14LevelSelectionG0VyAA0cd7ControlG5ModelCyxGGQo__A51_y_xq__A52_Qy_GA56_yA30_yq_GGQo_HO.69
-- _get_witness_table 6HomeUI18UserAccessProviderRzl05SwiftB015ModifiedContentVyAEyAC6VStackVyAC7ForEachVySayAA0cD16ControlViewModelC0C11ContactPairVyx_GG10Foundation4UUIDVAC05TupleH0VyAEyAA0cD3RowVAC14_PaddingLayoutVG_AC7DividerVSgQPGGGAC24_BackgroundStyleModifierVyAC5ColorVGGAC11_ClipEffectVyAC16RoundedRectangleVGGAC0M0HPA9_ACA16_HPA3_ACA16_HPyHC_A8_AC0mZ0HPyHCHC_A14_ACA17_HPyHCHC.18
-- _get_witness_table 6HomeUI18UserAccessProviderRzlqd0__05SwiftB04ViewHD4_AcDPACE5sheet4item9onDismiss7contentQrAC7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AcDRd_0_r0_lFQOyAA0cd4ListG0VyxG_AA14AccessorySetupO06Camerad7ContentG0V0nC0Vy_x_GAA0d14LevelSelectionG0VyAA0cd7ControlG5ModelCyxGGQo_HO.131
-- _get_witness_table 6HomeUI21AccessLevelDataSourceRzl05SwiftB015ModifiedContentVyAEyAEyAC14NavigationViewVyAC0K0PACE7toolbar7contentQrqd__yXE_tAC07ToolbarI0Rd__lFQOyAiCE29navigationBarTitleDisplayModeyQrAC0jP4ItemV0qrS0OFQOyAiCE0oQ0yQrqd__SyRd__lFQOyAC4ListVys5NeverOAC7ForEachVySay8Provider_0cD0QZGA_AC6ButtonVyAC6HStackVyAC05TupleI0VyAEyAC4TextVAC16_FlexFrameLayoutVG_AEyAC5ImageVAC30_EnvironmentKeyWritingModifierVyAC5ColorVSgGGSgQPGGGGG_SSQo__Qo__A6_yAC0nT0VyytA2_yA13_GG_A32_QPGQo_GAC31AccessibilityAttachmentModifierVGAC25_AppearanceActionModifierVGA40_GAcHHPA41_AcHHPA38_AcHHPA35_AcHHPyHC_A37_AC0K8ModifierHPyHCHC_A40_ACA43_HPyHCHC_A40_ACA43_HPyHCHC.20
-- _get_witness_table 7SwiftUI15ModifiedContentVyAA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonG0Rd__lFQOyAA0I0VyACyACyAA6HStackVyAA05TupleD0VyACyACy08ContactsB006AvatarE0VAA12_FrameLayoutVGAA11_ClipEffectVyAA6CircleVGG_ACyAA4TextVAA05_FlexnO0VGACyA_AA08_OpacityQ0VGQPGGAA08_PaddingO0VGAA01_D13ShapeModifierVyAA9RectangleVGGG_AA05PlainiG0VQo_AA023AccessibilityAttachmentX0VGAaDHPqd0__AaDHD3_A20_HO_A22_AA0eX0HPyHCHC.17
-- _get_witness_table 7SwiftUI15ModifiedContentVyACyAA4ViewP7HomeUI2E19bridgedSceneUpdatesyQryAA0I5PhaseOcFQOyAA14GeometryReaderVyAA012_ConditionalD0VyACyACyACyACyACyACyACyAF10CameraCellV7prefers_7factors8locationQr0F9DataModel0O0O4ModeO_AF21MultiFactorVisibilityV7FactorsVAF0oE9RegistrarC8LocationOSgtFQOy_Qo_AA11_ClipEffectVyAA16RoundedRectangleVGGAA16_OverlayModifierVyACyAF0O15AccessIndicatorVAA14_PaddingLayoutVGSgGGA13_yACyACyACyACyACyACyAeAE10fontWeightyQrAA4FontV6WeightVSgFQOyACyAA5ImageVAA18_AspectRatioLayoutVG_Qo_AA24_ForegroundStyleModifierVyAA5ColorVGGAA30_EnvironmentKeyWritingModifierVyAA015SymbolRenderingV0VSgGGAA16_FlexFrameLayoutVGAA14_OpacityEffectVGAA01_L14ActionModifierVySo6CGRectVA56_SQ12CoreGraphicsyHCg_GGAA13_OffsetEffectVGSgGGA13_yACyAA6VStackVyAA05TupleD0VyA46_Sg_AA6SpacerVACyACyACyA67_yA69_yAA4TextVSg_AMyACyA74_A51_GA74_GSgQPGGA48_GA41_ySiSgGGA58_GQPGGA17_GGGAA18_AnimationModifierVySbGGA93_GA93_GA37_GG_Qo_A41_yAIGGAA25_AllowsHitTestingModifierVGAaDHPA101_AaDHPqd__AaDHD2_A99_HO_A100_AA0E8ModifierHPyHCHC_A103_AAA105_HPyHCHC.25
-- _get_witness_table 7SwiftUI15ModifiedContentVyACyAA6HStackVyAA05TupleD0VyAA012_ConditionalD0VyACyAA5ColorVAA12_FrameLayoutVGACyAA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonM0Rd__lFQOyAA0O0VyACyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAXyAKSgGGG_AA05PlainoM0VQo_AMGG_ACyACyApAE09textFieldM0yQrqd__AA04TextxM0Rd__lFQOyAA0yX0VyAA0Y0VG_AA0vyxM0VQo_AA01_qr9TransformT0VySbGGA3_GApAEAQyQrqd__AaRRd__lFQOyATyACyAVA3_GG_A7_Qo_SgQPGGAA08_PaddingJ0VGAA023AccessibilityAttachmentT0VGAaOHPA34_AaOHPA31_AaOHPyHC_A33_AA0kT0HPyHCHC_A36_AAA38_HPyHCHC.92
-- _get_witness_table 7SwiftUI15ModifiedContentVyACyAA6HStackVyAA05TupleD0VyACyACyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAKyAA5ColorVSgGGAA12_FrameLayoutVG_ACyACyAA4ViewPAAE14textFieldStyleyQrqd__AA04TextrS0Rd__lFQOyAA0tR0VyAA0T0VG_AA05PlaintrS0VQo_AA01_hi9TransformK0VySbGGATGAzAE06buttonS0yQrqd__AA015PrimitiveButtonS0Rd__lFQOyAA0Y0VyACyAiTGG_AA0uyS0VQo_SgQPGGAA08_PaddingO0VGAA023AccessibilityAttachmentK0VGAaYHPA28_AaYHPA25_AaYHPyHC_A27_AA0pK0HPyHCHC_A30_AAA32_HPyHCHC.91
-- _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA4ListVys5NeverOAA7SectionVyAA4TextVAA7ForEachVySay13HomeDataModel19StaticCameraProfileVG10Foundation4UUIDVACyACyAA6ToggleVyAA6HStackVyAA05TupleD0Vy0kB017SnapshotThumbnail33_6A020151FA6C63C86827D1A374889D51LLV_AA6VStackVyAZyAK_AKSgQPGGQPGGGAA32_EnvironmentKeyTransformModifierVySbGGAA31AccessibilityAttachmentModifierVGGAA9EmptyViewVGGA16_GAA25_AppearanceActionModifierVGA25_GAA4ViewHPA26_AAA28_HPA23_AAA28_HPA22_AAA28_HPyHC_A16_AA12ViewModifierHPyHCHC_A25_AAA29_HPyHCHC_A25_AAA29_HPyHCHC.5
-- _get_witness_table 7SwiftUI19_ConditionalContentVyAA08ModifiedD0VyAEyAEyAEyAA5ImageVAA18_AspectRatioLayoutVGAA06_FrameI0VGAA11_ClipEffectVyAA16RoundedRectangleVGGAA16_OverlayModifierVyAA21StrokeBorderShapeViewVyAqA5ColorVAA05EmptyT0VGGGAEyAEyAEyAEyAgA016_ForegroundStyleP0VyAYGGAA022_EnvironmentKeyWritingP0VyAA19SymbolRenderingModeVSgGGA8_yAA4FontVSgGGALGGAA0T0HPA2_AAA21_HPAsAA21_HPAmAA21_HPAjAA21_HPAgAA21_HPyHC_AiA0tP0HPyHCHC_AlAA22_HPyHCHC_ArAA22_HPyHCHC_A1_AAA22_HPyHCHC_A19_AAA21_HPA18_AAA21_HPA13_AAA21_HPA6_AAA21_HPAgAA21_HPyHC_A5_AAA22_HPyHCHC_A12_AAA22_HPyHCHC_A17_AAA22_HPyHCHC_AlAA22_HPyHCHCHC.46
-- _get_witness_table 7SwiftUI6ZStackVyAA15ModifiedContentVyAEyAA4ViewP7HomeUI2E41optionalLabelWithTopLeadingLuminanceScrim_12cornerRadius7paddingQrSSSg_12CoreGraphics7CGFloatVAOtFQOyAEyAgAE11glassEffect_2inQrAA5GlassV_qd__tAA5ShapeRd__lFQOyAgHE7prefers_3for7factorsQr0G9DataModel6CameraO4ModeO_AZ11EnvironmentO5StateCy_AX21LiveCameraEnvironmentV_GAH21MultiFactorVisibilityV7FactorsVtFQOyAH10CameraCellV_Qo__AA16RoundedRectangleVQo_AA05_ClipW0VyA16_GG_Qo_AA30_SafeAreaRegionsIgnoringLayoutVGAA31AccessibilityAttachmentModifierVGGAaFHPyHC.16
-- _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE5sheet11isPresented9onDismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAA15ModifiedContentVyAA6VStackVyAA05TupleL0VyAMyAOyAA7ForEachVySay13HomeDataModel16ThermostatPresetVGAvMyAcAE11buttonStyleyQrqd__AA015PrimitiveButtonW0Rd__lFQOyAA0Y0VyAMyAMyAMyAMy0q16AccessoryControlB00t18AutomationSettingsC0V0u15NavigationLabelC0VAA14_PaddingLayoutVGA6_GAA16_FlexFrameLayoutVGAA19_BackgroundModifierVyAA06_ShapeC0VyAA16RoundedRectangleVAA5ColorVGGGG_AA05PlainyW0VQo_AA31AccessibilityAttachmentModifierVGSgGGA6_GSg_AA6SpacerVQPGGA28_G_A0_0t13PresetsDetailC0VSgQo_HO.73
-- _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVyAcAE20listHasStackBehaviorQryFQOyAHyAcAE0J5StyleyQrqd__AA04ListN0Rd__lFQOyAcAE06scrollI10BackgroundyQrAA10VisibilityOFQOyAA0O0VySSAA05TupleI0VyAHyAA7ForEachVys10ArraySliceVy010HomeEnergyB015ElectricUtilityVGSSAHy0xB009LegacyRowC0VAA21_TraitWritingModifierVyAA26IsSelectionEnabledTraitKeyVGGGA3_yAA0o3RowQ8TraitKeyVGG_AHyAHyAHyAA6ButtonVyAA4TextVGAA30_EnvironmentKeyWritingModifierVyAA5ColorVSgGGA11_GAA31AccessibilityAttachmentModifierVGSgQPGG_Qo__AA012InsetGroupedoN0VQo_AA16_FixedSizeLayoutVG_Qo_AA25_AppearanceActionModifierVG_SSSgQo_HO.67
+- _get_witness_table 13HomeDataModel0A8ProtocolRzl7SwiftUI10ScrollViewVyAC0H0PACE23scrollContentBackgroundyQrAC10VisibilityOFQOyAC08ModifiedJ0VyALyAgCE20listHasStackBehaviorQryFQOyAgCE0N7PaddingyQrAC4EdgeO3SetV_12CoreGraphics7CGFloatVtFQOyAgCE0N5StyleyQrqd__AC04ListX0Rd__lFQOyAC0Y0Vys5NeverOAC05TupleJ0VyAC7SectionVyAC05EmptyH0VALyAC6HStackVyA1_y0A3UI2014SelectableIconH0V_ALyAgCE10fontWeightyQrAC4FontV6WeightVSgFQOyAC9TextFieldVyAC4TextVG_Qo_AC01_R6LayoutVGAC6SpacerVQPGGAC31AccessibilityAttachmentModifierVGA5_G_A3_yA5_ALyAgCE0N9RowInsetsyQrAR_AUSgtFQOyAgCE06buttonX0yQrqd__AC015PrimitiveButtonX0Rd__lFQOyAC9LazyVGridVyAC7ForEachVySayAA10IconSymbolOGA43_AC6ButtonVyA10_GGG_AC011PlainButtonX0VQo__Qo_A31_GA5_GSgQPGG_AC012InsetGroupedyX0VQo__Qo__Qo_AC21_TraitWritingModifierVyAC0Y22SectionSpacingTraitKeyVGGAC30_EnvironmentKeyWritingModifierVyAC0Y14SectionSpacingVSgGG_Qo_GAcFHPyHC
+- _get_witness_table 13HomeDataModel13CameraProfileRzAA17AccessoryProtocolR_AA0aG0R0_r1_l7SwiftUI14NavigationViewVyAE0K0PAEE7toolbar7contentQrqd__yXE_tAE14ToolbarContentRd__lFQOyAiEE29navigationBarTitleDisplayModeyQrAE0jQ4ItemV0rsT0OFQOyAiEE0pR0yQrqd__SyRd__lFQOyAE4ListVys5NeverOAE7ForEachVySay0aI00D15RecordingOptionVGAA0D0O06AccessT0OAiEE11buttonStyleyQrqd__AE20PrimitiveButtonStyleRd__lFQOyAE6ButtonVyAE6HStackVyAE05TupleO0VyAE6VStackVyA12_yAE4TextV_AE08ModifiedO0VyA16_AE16_FixedSizeLayoutVGQPGG_AE6SpacerVA18_yA18_yA18_yAE5ImageVAE30_EnvironmentKeyWritingModifierVyAE4FontVSgGGAE24_ForegroundStyleModifierVyAE5ColorVGGAE14_OpacityEffectVGQPGGG_AE16PlainButtonStyleVQo_GG_SSQo__Qo__A12_yAE0nU0VyytA8_yA27_GG_A57_QPGQo_GAeHHPyHC
+- _get_witness_table 13HomeDataModel13CameraProfileRzAA17AccessoryProtocolR_AA0aG0R0_r1_lqd0__7SwiftUI4ViewHD4_AeFPAEE5sheet4item9onDismiss7contentQrAE7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AeFRd_0_r0_lFQOyAE15ModifiedContentVyAE06ScrollJ0VyASyASyAE6VStackVyAE7ForEachVySay0aI023PresenceRecordingOptionVGAA0D0O0aX0OAE05TupleS0VyAZ0dxZ3Row33_A1F1B13E850E72AF100F512E14949B2BLLV_ASyASyAE7DividerVAE14_PaddingLayoutVGA14_GSgQPGGGAE24_BackgroundStyleModifierVyAE5ColorVGGAE11_ClipEffectVyAE16RoundedRectangleVGGGAE16_FlexFrameLayoutVG_AZ0dy7OptionsJ0V0qxZ0Vyxq_q0__GAZ0yz9SelectionJ0A9_LLVyxq_q0_GQo_HO
+- _get_witness_table 13HomeDataModel17AccessoryProtocolRzl7SwiftUI6VStackVyAC7ForEachVySay0aG00D5SetupO07BridgedD5EntryVy_xGG10Foundation4UUIDVAC15ModifiedContentVyASyASyASyASyAC6HStackVyAC05TupleQ0VyASyASyASyAC5ImageVAC30_EnvironmentKeyWritingModifierVyAC4FontVSgGGAC016_ForegroundStyleX0VyAC22HierarchicalShapeStyleVGGAC12_FrameLayoutVG_AEyAWyAC4TextV_A15_QPGGAC6SpacerVQPGGAC14_PaddingLayoutVGA23_GAC016_BackgroundStyleX0VyAC5ColorVGGAC11_ClipEffectVyAC16RoundedRectangleVGGAC023AccessibilityAttachmentX0VGGGAC4ViewHPyHC
+- _get_witness_table 6HomeUI14AccessorySetupO16LockDataProviderRzlqd__05SwiftB04ViewHD2_AeFPAEE12onTapGesture5count7performQrSi_yyctFQOyAG0A8UICommonE2if_4thenQrSb_qd__xXEtAeFRd__lFQOyAE15ModifiedContentVyAOyAgEE11glassEffect_2inQrAE5GlassV_qd__tAE5ShapeRd__lFQOyAOyAOyAOyAE6VStackVyAE012_ConditionalS0VyAE05TupleS0VyAOyAOyAOyAOyAE6ZStackVyAZyAOyAE01_xI0VyAE6CircleVAE5ColorVGAE12_FrameLayoutVG_AOyAOyAE5ImageVAE30_EnvironmentKeyWritingModifierVyAE4FontVSgGGA14_yA6_SgGGQPGGA9_GAE08_OpacityU0VGAE14_PaddingLayoutVGA30_G_AOyAVyAZyAE4TextV_A34_QPGGAE16_FlexFrameLayoutVGQPGAE05EmptyI0VGGA38_GA30_GAE07_ShadowU0VG_AE16RoundedRectangleVQo_A30_GAE01_sX8ModifierVyA51_GG_A57_Qo__Qo_HO
+- _get_witness_table 6HomeUI18UserAccessProviderRzAaBR_r0_lqd0__05SwiftB04ViewHD4_AcDPACE5sheet4item9onDismiss7contentQrAC7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AcDRd_0_r0_lFQOyAeCEAfghIQrAM_ANqd_0_qd__ctsAORd__AcDRd_0_r0_lFQOyAC6VStackVyAC12TupleContentVyAC08ModifiedQ0VyAUyAQyASyASyAUyAA0cD3RowVAC14_PaddingLayoutVG_AC7DividerVSgQPGSg_AA0cd4ListG0VyxGQPGGAC24_BackgroundStyleModifierVyAC5ColorVGGAC11_ClipEffectVyAC16RoundedRectangleVGG_ASyAUyAUyAC4TextVAC010_FlexFrameU0VGAYG_AUyAUyAQyAC7ForEachVySayAA015RestrictedGuestd7ControlG5ModelC16GuestContactPairVyq__GG10Foundation4UUIDVA2_GGA13_GA19_GQPGSgQPGG_AA14AccessorySetupO04LockdqG0V0nC0Vy_xq__0C0QzGAA0d14LevelSelectionG0VyAA0cd7ControlG5ModelCyxGGQo__A51_y_xq__A52_Qy_GA56_yA30_yq_GGQo_HO
+- _get_witness_table 6HomeUI18UserAccessProviderRzl05SwiftB015ModifiedContentVyAEyAC6VStackVyAC7ForEachVySayAA0cD16ControlViewModelC0C11ContactPairVyx_GG10Foundation4UUIDVAC05TupleH0VyAEyAA0cD3RowVAC14_PaddingLayoutVG_AC7DividerVSgQPGGGAC24_BackgroundStyleModifierVyAC5ColorVGGAC11_ClipEffectVyAC16RoundedRectangleVGGAC0M0HPA9_ACA16_HPA3_ACA16_HPyHC_A8_AC0mZ0HPyHCHC_A14_ACA17_HPyHCHC
+- _get_witness_table 6HomeUI18UserAccessProviderRzlqd0__05SwiftB04ViewHD4_AcDPACE5sheet4item9onDismiss7contentQrAC7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AcDRd_0_r0_lFQOyAA0cd4ListG0VyxG_AA14AccessorySetupO06Camerad7ContentG0V0nC0Vy_x_GAA0d14LevelSelectionG0VyAA0cd7ControlG5ModelCyxGGQo_HO
+- _get_witness_table 6HomeUI21AccessLevelDataSourceRzl05SwiftB015ModifiedContentVyAEyAEyAC14NavigationViewVyAC0K0PACE7toolbar7contentQrqd__yXE_tAC07ToolbarI0Rd__lFQOyAiCE29navigationBarTitleDisplayModeyQrAC0jP4ItemV0qrS0OFQOyAiCE0oQ0yQrqd__SyRd__lFQOyAC4ListVys5NeverOAC7ForEachVySay8Provider_0cD0QZGA_AC6ButtonVyAC6HStackVyAC05TupleI0VyAEyAC4TextVAC16_FlexFrameLayoutVG_AEyAC5ImageVAC30_EnvironmentKeyWritingModifierVyAC5ColorVSgGGSgQPGGGGG_SSQo__Qo__A6_yAC0nT0VyytA2_yA13_GG_A32_QPGQo_GAC31AccessibilityAttachmentModifierVGAC25_AppearanceActionModifierVGA40_GAcHHPA41_AcHHPA38_AcHHPA35_AcHHPyHC_A37_AC0K8ModifierHPyHCHC_A40_ACA43_HPyHCHC_A40_ACA43_HPyHCHC
+- _get_witness_table 7SwiftUI15ModifiedContentVyAA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonG0Rd__lFQOyAA0I0VyACyACyAA6HStackVyAA05TupleD0VyACyACy08ContactsB006AvatarE0VAA12_FrameLayoutVGAA11_ClipEffectVyAA6CircleVGG_ACyAA4TextVAA05_FlexnO0VGACyA_AA08_OpacityQ0VGQPGGAA08_PaddingO0VGAA01_D13ShapeModifierVyAA9RectangleVGGG_AA05PlainiG0VQo_AA023AccessibilityAttachmentX0VGAaDHPqd0__AaDHD3_A20_HO_A22_AA0eX0HPyHCHC
+- _get_witness_table 7SwiftUI15ModifiedContentVyACyAA4ViewP7HomeUI2E19bridgedSceneUpdatesyQryAA0I5PhaseOcFQOyAA14GeometryReaderVyAA012_ConditionalD0VyACyACyACyACyACyACyACyAF10CameraCellV7prefers_7factors8locationQr0F9DataModel0O0O4ModeO_AF21MultiFactorVisibilityV7FactorsVAF0oE9RegistrarC8LocationOSgtFQOy_Qo_AA11_ClipEffectVyAA16RoundedRectangleVGGAA16_OverlayModifierVyACyAF0O15AccessIndicatorVAA14_PaddingLayoutVGSgGGA13_yACyACyACyACyACyACyAeAE10fontWeightyQrAA4FontV6WeightVSgFQOyACyAA5ImageVAA18_AspectRatioLayoutVG_Qo_AA24_ForegroundStyleModifierVyAA5ColorVGGAA30_EnvironmentKeyWritingModifierVyAA015SymbolRenderingV0VSgGGAA16_FlexFrameLayoutVGAA14_OpacityEffectVGAA01_L14ActionModifierVySo6CGRectVA56_SQ12CoreGraphicsyHCg_GGAA13_OffsetEffectVGSgGGA13_yACyAA6VStackVyAA05TupleD0VyA46_Sg_AA6SpacerVACyACyACyA67_yA69_yAA4TextVSg_AMyACyA74_A51_GA74_GSgQPGGA48_GA41_ySiSgGGA58_GQPGGA17_GGGAA18_AnimationModifierVySbGGA93_GA93_GA37_GG_Qo_A41_yAIGGAA25_AllowsHitTestingModifierVGAaDHPA101_AaDHPqd__AaDHD2_A99_HO_A100_AA0E8ModifierHPyHCHC_A103_AAA105_HPyHCHC
+- _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA4ListVys5NeverOAA7SectionVyAA4TextVAA7ForEachVySay13HomeDataModel19StaticCameraProfileVG10Foundation4UUIDVACyACyAA6ToggleVyAA6HStackVyAA05TupleD0Vy0kB017SnapshotThumbnail33_6A020151FA6C63C86827D1A374889D51LLV_AA6VStackVyAZyAK_AKSgQPGGQPGGGAA32_EnvironmentKeyTransformModifierVySbGGAA31AccessibilityAttachmentModifierVGGAA9EmptyViewVGGA16_GAA25_AppearanceActionModifierVGA25_GAA4ViewHPA26_AAA28_HPA23_AAA28_HPA22_AAA28_HPyHC_A16_AA12ViewModifierHPyHCHC_A25_AAA29_HPyHCHC_A25_AAA29_HPyHCHC
+- _get_witness_table 7SwiftUI6ZStackVyAA15ModifiedContentVyAEyAA4ViewP7HomeUI2E41optionalLabelWithTopLeadingLuminanceScrim_12cornerRadius7paddingQrSSSg_12CoreGraphics7CGFloatVAOtFQOyAEyAgAE11glassEffect_2inQrAA5GlassV_qd__tAA5ShapeRd__lFQOyAgHE7prefers_3for7factorsQr0G9DataModel6CameraO4ModeO_AZ11EnvironmentO5StateCy_AX21LiveCameraEnvironmentV_GAH21MultiFactorVisibilityV7FactorsVtFQOyAH10CameraCellV_Qo__AA16RoundedRectangleVQo_AA05_ClipW0VyA16_GG_Qo_AA30_SafeAreaRegionsIgnoringLayoutVGAA31AccessibilityAttachmentModifierVGGAaFHPyHC
+- _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE5sheet11isPresented9onDismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAA15ModifiedContentVyAA6VStackVyAA05TupleL0VyAMyAOyAA7ForEachVySay13HomeDataModel16ThermostatPresetVGAvMyAcAE11buttonStyleyQrqd__AA015PrimitiveButtonW0Rd__lFQOyAA0Y0VyAMyAMyAMyAMy0q16AccessoryControlB00t18AutomationSettingsC0V0u15NavigationLabelC0VAA14_PaddingLayoutVGA6_GAA16_FlexFrameLayoutVGAA19_BackgroundModifierVyAA06_ShapeC0VyAA16RoundedRectangleVAA5ColorVGGGG_AA05PlainyW0VQo_AA31AccessibilityAttachmentModifierVGSgGGA6_GSg_AA6SpacerVQPGGA28_G_A0_0t13PresetsDetailC0VSgQo_HO
+- _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVyAcAE20listHasStackBehaviorQryFQOyAHyAcAE0J5StyleyQrqd__AA04ListN0Rd__lFQOyAcAE06scrollI10BackgroundyQrAA10VisibilityOFQOyAA0O0VySSAA05TupleI0VyAHyAA7ForEachVys10ArraySliceVy010HomeEnergyB015ElectricUtilityVGSSAHy0xB009LegacyRowC0VAA21_TraitWritingModifierVyAA26IsSelectionEnabledTraitKeyVGGGA3_yAA0o3RowQ8TraitKeyVGG_AHyAHyAHyAA6ButtonVyAA4TextVGAA30_EnvironmentKeyWritingModifierVyAA5ColorVSgGGA11_GAA31AccessibilityAttachmentModifierVGSgQPGG_Qo__AA012InsetGroupedoN0VQo_AA16_FixedSizeLayoutVG_Qo_AA25_AppearanceActionModifierVG_SSSgQo_HO
 - _keypath_get.16Tm
 - _keypath_set.17Tm
-- _objc_msgSend$_addGrabberIndicatorToViewController:
-- _objc_msgSend$_setUpTabBar
-- _objc_msgSend$initWithHome:accessory:flowDependencies:
-- _objc_msgSend$initWithUnsignedLongLong:
-- _objc_msgSend$setCurrentContext:
-- _objc_msgSend$updatePendingConfigurationIdentifier:completionHandler:
 - _objc_retain_x11
 - _symbolic 9Accessory______7Service_____QZ 13HomeDataModel05BasicA8ProtocolP AA09AccessoryE0P
 - _symbolic Say_____y_xGG 6HomeUI14AccessorySetupO07BridgedC5EntryV
@@ -1444,5 +991,4 @@ CStrings:
 - "[LockOnboardingPolicy] shouldShowHomeAccess:             isAllowedToEnableLockFeatures=%{bool}d,             hasResidentSupportingWalletKey=%{bool}d,             hasResidentSupportingAccessCodes=%{bool}d,             supportsWalletKey=%{bool}d,             supportsAccessCodes=%{bool}d"
 - "adaptive_navigation"
 - "uip_floating_tab_bar"
-
 ```

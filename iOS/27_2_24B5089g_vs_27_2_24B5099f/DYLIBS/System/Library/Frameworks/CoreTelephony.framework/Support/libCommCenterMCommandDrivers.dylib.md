@@ -2,55 +2,33 @@
 
 > `/System/Library/Frameworks/CoreTelephony.framework/Support/libCommCenterMCommandDrivers.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21cc4c` | `0x214d70` | **`-0x7edc`** |
+| `__TEXT.__oslogstring` | `0x1a8ba` | `0x1841a` | **`-0x24a0`** |
+| `__TEXT.__cstring` | `0xd786` | `0xcbd0` | **`-0xbb6`** |
+| `__TEXT.__gcc_except_tab` | `0x1e508` | `0x1e184` | **`-0x384`** |
+| `__TEXT.__const` | `0x26b68` | `0x26a78` | **`-0xf0`** |
+| `__DATA_CONST.__const` | `0xb4e8` | `0xb408` | **`-0xe0`** |
+| `__TEXT.__unwind_info` | `0xf4d8` | `0xf400` | **`-0xd8`** |
+| `__AUTH_CONST.__const` | `0x219f8` | `0x21940` | **`-0xb8`** |
+| `__AUTH_CONST.__cfstring` | `0x260` | `0x240` | **`-0x20`** |
+
+### Other Changes
+
 ```diff
 
 -13496.3.0.0.0
--  __TEXT.__text: 0x215844
 +13498.0.0.0.0
-+  __TEXT.__text: 0x20d89c
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__objc_methlist: 0x1cc
--  __TEXT.__const: 0x26b68
--  __TEXT.__cstring: 0xd786
--  __TEXT.__gcc_except_tab: 0x1e508
--  __TEXT.__oslogstring: 0x1a8ba
--  __TEXT.__unwind_info: 0x10258
-+  __TEXT.__const: 0x26a78
-+  __TEXT.__cstring: 0xcbd0
-+  __TEXT.__gcc_except_tab: 0x1e184
-+  __TEXT.__oslogstring: 0x1841a
-+  __TEXT.__unwind_info: 0x10180
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xb4e8
-+  __DATA_CONST.__const: 0xb408
-   __DATA_CONST.__objc_classlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
-   __DATA_CONST.__objc_selrefs: 0xe8
-   __DATA_CONST.__got: 0x510
--  __AUTH_CONST.__const: 0x219f8
--  __AUTH_CONST.__cfstring: 0x260
-+  __AUTH_CONST.__const: 0x21940
-+  __AUTH_CONST.__cfstring: 0x240
-   __AUTH_CONST.__objc_const: 0x798
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__auth_got: 0x0
 
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 12640
 -  Symbols:   19627
 -  CStrings:  4166
 +  Functions: 12612
 +  Symbols:   19603
 +  CStrings:  3899
- 
 Symbols:
 + GCC_except_table259
 + GCC_except_table260

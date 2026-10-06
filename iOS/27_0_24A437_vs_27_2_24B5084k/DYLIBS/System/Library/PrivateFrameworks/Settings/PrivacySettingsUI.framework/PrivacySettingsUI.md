@@ -2,87 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x67720` | `0x69b40` | **`+0x2420`** |
+| `__TEXT.__cstring` | `0x8334` | `0x85d4` | **`+0x2a0`** |
+| `__AUTH_CONST.__objc_const` | `0x65e8` | `0x6850` | **`+0x268`** |
+| `__AUTH_CONST.__cfstring` | `0x6f80` | `0x71e0` | **`+0x260`** |
+| `__TEXT.__oslogstring` | `0x2c60` | `0x2e70` | **`+0x210`** |
+| `__TEXT.__objc_methlist` | `0x428c` | `0x442c` | **`+0x1a0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3380` | `0x3460` | **`+0xe0`** |
+| `__AUTH.__objc_data` | `0x1780` | `0x1820` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x1838` | `0x18b0` | **`+0x78`** |
+| `__TEXT.__gcc_except_tab` | `0x12b0` | `0x130c` | **`+0x5c`** |
+| `__AUTH_CONST.__const` | `0xa70` | `0xab0` | **`+0x40`** |
+| `__DATA.__objc_ivar` | `0x470` | `0x490` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x1b28` | `0x1b48` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0xa80` | `0xa98` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0xac8` | `0xad8` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x240` | `0x250` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1d8` | `0x1e8` | **`+0x10`** |
+| `__TEXT.__const` | `0x524` | `0x534` | **`+0x10`** |
+| `__DATA.__data` | `0x5f8` | `0x600` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0x53a` | `0x542` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.6.104.0
--  __TEXT.__text: 0x654cc
--  __TEXT.__objc_methlist: 0x428c
--  __TEXT.__const: 0x524
--  __TEXT.__gcc_except_tab: 0x12b0
--  __TEXT.__cstring: 0x8334
--  __TEXT.__oslogstring: 0x2c60
 +2027.1.5.1.100
-+  __TEXT.__text: 0x67844
-+  __TEXT.__objc_methlist: 0x442c
-+  __TEXT.__const: 0x534
-+  __TEXT.__gcc_except_tab: 0x130c
-+  __TEXT.__cstring: 0x85d4
-+  __TEXT.__oslogstring: 0x2e70
-   __TEXT.__dlopen_cstrs: 0xe98
--  __TEXT.__swift5_typeref: 0x53a
-+  __TEXT.__swift5_typeref: 0x542
-   __TEXT.__swift5_capture: 0x1ac
-   __TEXT.__constg_swiftt: 0x26c
-   __TEXT.__swift5_reflstr: 0xe3
 
-   __TEXT.__swift_as_cont: 0x34
-   __TEXT.__swift5_assocty: 0x18
-   __TEXT.__swift5_proto: 0x4
--  __TEXT.__unwind_info: 0x1e98
-+  __TEXT.__unwind_info: 0x1f50
-   __TEXT.__eh_frame: 0x648
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1b28
--  __DATA_CONST.__objc_classlist: 0x240
-+  __DATA_CONST.__const: 0x1b48
-+  __DATA_CONST.__objc_classlist: 0x250
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x68
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3380
-+  __DATA_CONST.__objc_selrefs: 0x3460
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__objc_superrefs: 0x1d8
-+  __DATA_CONST.__objc_superrefs: 0x1e8
-   __DATA_CONST.__objc_arraydata: 0x188
--  __DATA_CONST.__got: 0xa80
--  __AUTH_CONST.__const: 0xa70
--  __AUTH_CONST.__cfstring: 0x6f80
--  __AUTH_CONST.__objc_const: 0x65e8
-+  __DATA_CONST.__got: 0xa98
-+  __AUTH_CONST.__const: 0xab0
-+  __AUTH_CONST.__cfstring: 0x71e0
-+  __AUTH_CONST.__objc_const: 0x6850
-   __AUTH_CONST.__objc_intobj: 0x360
-   __AUTH_CONST.__objc_arrayobj: 0x120
-   __AUTH_CONST.__objc_dictobj: 0x50
--  __AUTH_CONST.__auth_got: 0xac8
--  __AUTH.__objc_data: 0x1780
-+  __AUTH_CONST.__auth_got: 0xad8
-+  __AUTH.__objc_data: 0x1820
-   __AUTH.__data: 0x250
--  __DATA.__objc_ivar: 0x470
--  __DATA.__data: 0x5f8
-+  __DATA.__objc_ivar: 0x490
-+  __DATA.__data: 0x600
-   __DATA.__common: 0x30
-   __DATA_DIRTY.__objc_data: 0xf0
-   - /System/Library/Frameworks/AccessorySetupKit.framework/AccessorySetupKit
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2131
--  Symbols:   5046
+-  Symbols:   3702
 -  CStrings:  1408
 +  Functions: 2176
-+  Symbols:   5137
++  Symbols:   3773
 +  CStrings:  1441
- 
 Symbols:
 + +[PUIMotionSensorsAppPickerController installedApplicationsExcludingBundleIDs:]
 + -[PUIMotionFitnessController dealloc]
@@ -155,32 +112,8 @@ Symbols:
 + ___79+[PUIMotionSensorsAppPickerController installedApplicationsExcludingBundleIDs:]_block_invoke_2
 + ___block_descriptor_32_e51_q24?0"LSApplicationProxy"8"LSApplicationProxy"16l
 + _kTCCServiceMotionSensors
-+ _objc_msgSend$_applicationIconImageForBundleIdentifier:format:
-+ _objc_msgSend$allApps
-+ _objc_msgSend$allObjects
-+ _objc_msgSend$completionHandler
-+ _objc_msgSend$dequeueReusableCellWithIdentifier:
-+ _objc_msgSend$initWithExcludedBundleIDs:
-+ _objc_msgSend$installedApplicationsExcludingBundleIDs:
-+ _objc_msgSend$reloadRestrictedAccessSpecifiers
-+ _objc_msgSend$reloadRestrictedApps
-+ _objc_msgSend$reloadRowsAtIndexPaths:withRowAnimation:
-+ _objc_msgSend$removeObject:
-+ _objc_msgSend$restrictedAccessGroupSpecifiers
-+ _objc_msgSend$restrictedAppBundleIDs
-+ _objc_msgSend$row
-+ _objc_msgSend$selectedBundleIDs
-+ _objc_msgSend$setAccessoryType:
-+ _objc_msgSend$setAllApps:
-+ _objc_msgSend$setCompletionHandler:
-+ _objc_msgSend$startObservingAccessChanges
-+ _objc_msgSend$startObservingMotionSensorsEligibilityChanges
-+ _objc_msgSend$stopObservingAccessChanges
-+ _objc_msgSend$stopObservingMotionSensorsEligibilityChanges
 + _symbolic _____Sg 12FindMyLocate12ClientTargetV
 - -[PUIMotionFitnessController _appSpecifiers]
-- _objc_msgSend$_appSpecifiers
-- _objc_msgSend$initWithObjects:
 CStrings:
 + "### Failed to determine Motion Sensors restrict eligibility: %d"
 + "### Failed to register for Motion Sensors eligibility change notifications: %u"

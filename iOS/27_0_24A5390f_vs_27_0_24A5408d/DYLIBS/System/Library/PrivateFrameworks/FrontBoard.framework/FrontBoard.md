@@ -2,73 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/FrontBoard.framework/FrontBoard`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x83994` | `0x840ac` | **`+0x718`** |
+| `__TEXT.__cstring` | `0xb2be` | `0xb4cf` | **`+0x211`** |
+| `__AUTH_CONST.__cfstring` | `0x8de0` | `0x8ec0` | **`+0xe0`** |
+| `__DATA_DIRTY.__objc_data` | `0xeb0` | `0xe60` | **`-0x50`** |
+| `__AUTH_CONST.__objc_const` | `0xb698` | `0xb650` | **`-0x48`** |
+| `__TEXT.__gcc_except_tab` | `0xdcc` | `0xd8c` | **`-0x40`** |
+| `__DATA_CONST.__const` | `0x2818` | `0x2848` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3800` | `0x3828` | **`+0x28`** |
+| `__TEXT.__objc_methlist` | `0x5ac0` | `0x5a98` | **`-0x28`** |
+| `__TEXT.__oslogstring` | `0x6187` | `0x6176` | **`-0x11`** |
+| `__TEXT.__unwind_info` | `0x2000` | `0x2010` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x94c` | `0x954` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x910` | `0x908` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x2b8` | `0x2b0` | **`-0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x228` | `0x220` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1150.0.0.0.0
--  __TEXT.__text: 0x83994
--  __TEXT.__objc_methlist: 0x5ac0
 +1153.0.0.0.0
-+  __TEXT.__text: 0x840ac
-+  __TEXT.__objc_methlist: 0x5a98
-   __TEXT.__const: 0x2cc
--  __TEXT.__cstring: 0xb2be
--  __TEXT.__oslogstring: 0x6187
--  __TEXT.__gcc_except_tab: 0xdcc
-+  __TEXT.__cstring: 0xb4cf
-+  __TEXT.__oslogstring: 0x6176
-+  __TEXT.__gcc_except_tab: 0xd8c
-   __TEXT.__dlopen_cstrs: 0x20a
--  __TEXT.__unwind_info: 0x2000
-+  __TEXT.__unwind_info: 0x2010
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2818
--  __DATA_CONST.__objc_classlist: 0x2b8
-+  __DATA_CONST.__const: 0x2848
-+  __DATA_CONST.__objc_classlist: 0x2b0
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x270
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3800
-+  __DATA_CONST.__objc_selrefs: 0x3828
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x228
-+  __DATA_CONST.__objc_superrefs: 0x220
-   __DATA_CONST.__objc_arraydata: 0x20
--  __DATA_CONST.__got: 0x910
-+  __DATA_CONST.__got: 0x908
-   __AUTH_CONST.__const: 0x8a0
--  __AUTH_CONST.__cfstring: 0x8de0
--  __AUTH_CONST.__objc_const: 0xb698
-+  __AUTH_CONST.__cfstring: 0x8ec0
-+  __AUTH_CONST.__objc_const: 0xb650
-   __AUTH_CONST.__objc_intobj: 0x48
-   __AUTH_CONST.__objc_arrayobj: 0x30
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0xc80
--  __DATA.__objc_ivar: 0x94c
-+  __DATA.__objc_ivar: 0x954
-   __DATA.__data: 0x1d40
-   __DATA.__bss: 0x1d8
--  __DATA_DIRTY.__objc_data: 0xeb0
-+  __DATA_DIRTY.__objc_data: 0xe60
-   __DATA_DIRTY.__bss: 0x1b8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 3160
--  Symbols:   6193
+-  Symbols:   4765
 -  CStrings:  1765
 +  Functions: 3170
-+  Symbols:   6199
++  Symbols:   4766
 +  CStrings:  1774
- 
 Symbols:
 + -[FBProcess allowsTerminatingOnWatchdogViolations]
 + -[FBSystemService _beginFetchBTLPMTimeout]
@@ -100,12 +66,6 @@ Symbols:
 + ___block_descriptor_93_e8_32s40s48s56s64s72s80bs_e46_v16?0"<FBSWorkspaceServiceServerInterface>"8ls32l8s40l8s48l8s56l8s80l8s64l8s72l8
 + _getCBControllerClass
 + _getCBControllerLowPowerModeCompletionTimeoutSeconds
-+ _objc_msgSend$_beginFetchBTLPMTimeout
-+ _objc_msgSend$_bluetoothLPMTimeoutWithFetchTimeout:
-+ _objc_msgSend$_workspaceQueue_createWatchdogForProcess:sceneAction:settings:transitionContext:
-+ _objc_msgSend$allowsTerminatingOnWatchdogViolations
-+ _objc_msgSend$defaultWatchdogBehavior
-+ _objc_msgSend$removeObjectAtIndex:
 - -[FBUIApplicationWorkspaceScene .cxx_destruct]
 - -[FBUIApplicationWorkspaceScene _workspaceQueue_cancelWatchdogTimer:]
 - -[FBUIApplicationWorkspaceScene _workspaceQueue_createWatchdogForProcess:sceneAction:transitionContext:]
@@ -135,7 +95,6 @@ Symbols:
 - ___block_descriptor_56_e8_32s40s48r_e17_v16?0"NSError"8lr48l8s32l8s40l8
 - ___block_descriptor_85_e8_32s40s48s56s64s72bs_e46_v16?0"<FBSWorkspaceServiceServerInterface>"8ls32l8s40l8s48l8s72l8s56l8s64l8
 - _getkNISystemShutdownCompletionTimeoutSeconds
-- _objc_msgSend$_workspaceQueue_createWatchdogForProcess:sceneAction:transitionContext:
 CStrings:
 + "AllowTerminatingOnWatchdogViolations"
 + "BOOL _shouldRunWatchdog(FBProcess *__strong, _FBSceneAction, FBSSceneSettings *__strong, BOOL, FBWatchdogTransitionContext *__strong)"

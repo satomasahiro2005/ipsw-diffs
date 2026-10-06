@@ -2,88 +2,42 @@
 
 > `/System/Library/Frameworks/EventKit.framework/EventKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a30bc` | `0x1a3eb8` | **`+0xdfc`** |
+| `__TEXT.__oslogstring` | `0xefd8` | `0xf1b4` | **`+0x1dc`** |
+| `__AUTH_CONST.__objc_const` | `0x18628` | `0x187c8` | **`+0x1a0`** |
+| `__TEXT.__objc_methlist` | `0x15ac4` | `0x15b9c` | **`+0xd8`** |
+| `__TEXT.__cstring` | `0xbe6f` | `0xbdbf` | **`-0xb0`** |
+| `__AUTH.__objc_data` | `0x34d0` | `0x3520` | **`+0x50`** |
+| `__DATA.__data` | `0x2890` | `0x28e0` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0xae98` | `0xaee8` | **`+0x50`** |
+| `__TEXT.__const` | `0x4820` | `0x4870` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x6780` | `0x67c0` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x48e0` | `0x4908` | **`+0x28`** |
+| `__TEXT.__gcc_except_tab` | `0x3978` | `0x3950` | **`-0x28`** |
+| `__TEXT.__swift5_reflstr` | `0x1261` | `0x1271` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0xd7c` | `0xd88` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x7b0` | `0x7b8` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x250` | `0x258` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x530` | `0x538` | **`+0x8`** |
+| `__TEXT.__eh_frame` | `0x2618` | `0x2614` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1976.0.100.0.0
--  __TEXT.__text: 0x1989dc
--  __TEXT.__objc_methlist: 0x15ac4
--  __TEXT.__cstring: 0xbe6f
--  __TEXT.__const: 0x4820
--  __TEXT.__oslogstring: 0xefd8
--  __TEXT.__gcc_except_tab: 0x3978
 +1976.1.3.0.0
-+  __TEXT.__text: 0x1997a8
-+  __TEXT.__objc_methlist: 0x15b9c
-+  __TEXT.__cstring: 0xbdbf
-+  __TEXT.__const: 0x4870
-+  __TEXT.__oslogstring: 0xf1b4
-+  __TEXT.__gcc_except_tab: 0x3950
-   __TEXT.__dlopen_cstrs: 0x400
-   __TEXT.__ustring: 0x1a0
-   __TEXT.__swift5_typeref: 0x1988
--  __TEXT.__swift5_reflstr: 0x1261
-+  __TEXT.__swift5_reflstr: 0x1271
-   __TEXT.__swift5_assocty: 0x210
-   __TEXT.__constg_swiftt: 0x1300
-   __TEXT.__swift5_fieldmd: 0x11c8
 
-   __TEXT.__swift_as_ret: 0xec
-   __TEXT.__swift_as_cont: 0x1a8
-   __TEXT.__swift5_mpenum: 0x60
--  __TEXT.__unwind_info: 0x8388
--  __TEXT.__eh_frame: 0x2620
-+  __TEXT.__unwind_info: 0x83a8
-+  __TEXT.__eh_frame: 0x261c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x48e0
--  __DATA_CONST.__objc_classlist: 0x7b0
-+  __DATA_CONST.__const: 0x4908
-+  __DATA_CONST.__objc_classlist: 0x7b8
-   __DATA_CONST.__objc_catlist: 0xa0
--  __DATA_CONST.__objc_protolist: 0x250
-+  __DATA_CONST.__objc_protolist: 0x258
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xae98
-+  __DATA_CONST.__objc_selrefs: 0xaee8
-   __DATA_CONST.__objc_protorefs: 0x70
--  __DATA_CONST.__objc_superrefs: 0x530
-+  __DATA_CONST.__objc_superrefs: 0x538
-   __DATA_CONST.__objc_arraydata: 0x5d8
-   __DATA_CONST.__got: 0x1a50
-   __AUTH_CONST.__const: 0x4500
-   __AUTH_CONST.__cfstring: 0x9ec0
--  __AUTH_CONST.__objc_const: 0x18628
-+  __AUTH_CONST.__objc_const: 0x187c8
-   __AUTH_CONST.__objc_intobj: 0x6d8
-   __AUTH_CONST.__objc_arrayobj: 0x1f8
-   __AUTH_CONST.__objc_dictobj: 0x1b8
-   __AUTH_CONST.__objc_doubleobj: 0x100
-   __AUTH_CONST.__auth_got: 0x1428
--  __AUTH.__objc_data: 0x34d0
-+  __AUTH.__objc_data: 0x3520
-   __AUTH.__data: 0xf08
--  __DATA.__objc_ivar: 0xd7c
--  __DATA.__data: 0x2890
-+  __DATA.__objc_ivar: 0xd88
-+  __DATA.__data: 0x28e0
-   __DATA.__common: 0x68
-   __DATA_DIRTY.__objc_data: 0x1bd0
-   __DATA_DIRTY.__data: 0x8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10688
--  Symbols:   17573
+-  Symbols:   13255
 -  CStrings:  2669
 +  Functions: 10703
-+  Symbols:   17610
++  Symbols:   13284
 +  CStrings:  2672
- 
 Symbols:
 + +[EKAutocompletePendingSearch _shouldReturnResultForEvent:considerReadonlyEvents:enforceRecencyCutoff:ignoreScheduledEvents:initialEvent:]
 + +[EKAutocompleteSearch pasteboardResultsFromProvider:ignoreScheduledEvents:]
@@ -155,16 +109,6 @@ Symbols:
 + ___block_descriptor_120_e8_32s40s48s56r64r72r80r88r96r104r112r_e124_v56?0i8"NSDictionary"12"NSDictionary"20"NSDictionary"28"CADInMemoryChangeTimestamp"36"CADInMemoryChangeTimestamp"44B52lr56l8r64l8s32l8s40l8r72l8r80l8r88l8r96l8r104l8r112l8s48l8
 + ___block_descriptor_40_e8_32s_e61_q24?0"CalSpotlightQueryResult"8"CalSpotlightQueryResult"16ls32l8
 + ___block_descriptor_72_e8_32s40s48r56r64r_e23_v32?0"NSDate"8Q16^B24ls32l8r48l8r56l8s40l8r64l8
-+ _objc_msgSend$_isSuggestedEvent:confirmed:uniqueKey:
-+ _objc_msgSend$_shouldReturnResultForEvent:considerReadonlyEvents:enforceRecencyCutoff:ignoreScheduledEvents:initialEvent:
-+ _objc_msgSend$_suggestionsService
-+ _objc_msgSend$currentProcessIsIntentsExtension
-+ _objc_msgSend$gatherConfirmedSuggestions:rejectedSuggestions:deletedSuggestions:fromInsertedObjects:deletedObjects:
-+ _objc_msgSend$mapTableWithKeyOptions:valueOptions:
-+ _objc_msgSend$notifySuggestionsOfConfirmedSuggestions:rejectedSuggestions:deletedSuggestions:
-+ _objc_msgSend$pasteboardResultsFromProvider:ignoreScheduledEvents:
-+ _objc_msgSend$shouldNotifySuggestionsOfChangesToSuggestedEvents
-+ _objc_msgSend$suggestionsServiceOverride
 - +[EKEventStore _isConfirmedSuggestedEvent:uniqueKey:]
 - -[EKEventStore _SGSuggestionsServiceClass]
 - -[EKEventStore confirmSuggestedEvent:]
@@ -206,8 +150,6 @@ Symbols:
 - ___38-[EKEventStore confirmSuggestedEvent:]_block_invoke_2
 - ___block_descriptor_112_e8_32s40s48r56r64r72r80r88r96r104r_e93_v48?0i8"NSDictionary"12"NSDictionary"20"NSDictionary"28"CADInMemoryChangeTimestamp"36B44lr48l8r56l8s32l8s40l8r64l8r72l8r80l8r88l8r96l8r104l8
 - ___block_descriptor_80_e8_32s40s48s56r64r72r_e23_v32?0"NSDate"8Q16^B24ls32l8s40l8r56l8r64l8s48l8r72l8
-- _objc_msgSend$_isConfirmedSuggestedEvent:uniqueKey:
-- _objc_msgSend$confirmSuggestedEvent:
 CStrings:
 + "Found a deleted suggested event - notifying suggestions."
 + "Found a newly-confirmed suggested event - notifying suggestions."

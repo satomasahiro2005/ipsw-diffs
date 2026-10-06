@@ -2,48 +2,30 @@
 
 > `com.apple.driver.AppleSARService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0xe7f6c` | `0xef6c4` | **`+0x7758`** |
+| `__TEXT.__cstring` | `0x1c9c9` | `0x1dfd6` | **`+0x160d`** |
+| `__TEXT.__os_log` | `0x2224b` | `0x233e6` | **`+0x119b`** |
+| `__TEXT_EXEC.__auth_stubs` | `0x0` | `0x730` | **`+0x730`** |
+| `__TEXT.__const` | `0x1646` | `0x1246` | **`-0x400`** |
+| `__DATA_CONST.__const` | `0xd340` | `0xd6d0` | **`+0x390`** |
+| `__DATA_CONST.__kalloc_type` | `0xcd80` | `0xcf80` | **`+0x200`** |
+| `__DATA_CONST.__auth_got` | `0x390` | `0x398` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1563.0.0.0.0
--  __TEXT.__os_log: 0x2224b sha256:672689030c8cde5fd4e181d86b07ffcde44077eca2d4ed1d94cb5359cc4cec72
--  __TEXT.__const: 0x1646 sha256:b836ca06f0e7829e6d520d1ed753da2b66d0b406856a963f34ec230cafdd7266
--  __TEXT.__cstring: 0x1c9c9 sha256:f462e7128c8f3a6c68e81adce05adaaa4844805efaedb4272c729f0a96ccdab6
--  __TEXT_EXEC.__text: 0xe7f6c sha256:491bd6caa666850ddfceab892f0984fca4efdcbda24e2ac6a7ff5ad831577dc4
--  __TEXT_EXEC.__auth_stubs: 0x0
--  __DATA.__data: 0x133 sha256:cbee610b219dafa1c7016fb625cd31580b81284f6db7ec6c48d2fe6e5feed222
-+1570.0.0.0.0
-+  __TEXT.__os_log: 0x233e6 sha256:35aa9b33c6248bcc42d4123e58109d722f7a4ea842f2ab258b8710ecc6b0bcff
-+  __TEXT.__const: 0x1246 sha256:8a42d5a5709325cb67de50e706531ebd7a6b28acc061015d42807a19f113c4c4
-+  __TEXT.__cstring: 0x1dfd6 sha256:0ec8f9b4320562dfb7c3c1716b71b9c02dff296e9fb9a6cce1534a6911eefe42
-+  __TEXT_EXEC.__text: 0xef6c4 sha256:004d9159f4e4ff63e9ee95dfbb3c123f7bf93e139f5bb8d466f6031124755550
-+  __TEXT_EXEC.__auth_stubs: 0x730 sha256:f001c65804c78f53ae678246a803281fdb53ea69ff84f29a8b70ae0e0ff40464
-+  __DATA.__data: 0x133 sha256:dc3e90fce352dfa1c40d6bb2f118f87ef0c5f0aa72adb6d3ddbadc6873087b9c
-   __DATA.__common: 0x11b8 sha256:f50095b91cf5b6d3c17ab95301c6d8d4fbb3f0c53e5c6f6b1cc502b0868519fe
-   __DATA.__bss: 0xa8 sha256:e3c2af35d1dfc500e16f826a071cc311bf55003a3de77de7ea3376c6b6fa2857
--  __DATA_CONST.__mod_init_func: 0xe8 sha256:011581e04ad6ea10dfcf03e91a216097a4bf2817472fe39065b3d5811beeb057
--  __DATA_CONST.__mod_term_func: 0xf0 sha256:e346069c0afc2cb389d6257f5754bec23f7236dc7a8fa29568a36a5f569e157e
--  __DATA_CONST.__const: 0xd340 sha256:8eb7e37a3ca2d1799823b295d5d8cd28ec89994b2e58fc0d451dd04dc6bec44f
--  __DATA_CONST.__kalloc_type: 0xcd80 sha256:cd682c9762e56a231c21639b81afce1e3aa827f4412c5f4d27c2786ca11fe574
--  __DATA_CONST.__kalloc_var: 0x280 sha256:dee7caf8aecf41ba4ac6332efc1a65673124c34fafb84d232cc2185fcbab685c
--  __DATA_CONST.__auth_got: 0x390 sha256:9d4d11ee1a86507718f4ec8df035204d85152bae19f1b541551d643cec6142f0
--  __DATA_CONST.__got: 0xd0 sha256:8002c98c3a2e7a7ac5423b6c954742e452416d27a5892c228afb915d970ca452
--  __DATA_CONST.__auth_ptr: 0x18 sha256:c7502cd24624f9858eb55fe99f56ec98a5c349274a244ed53f193b86770a7306
--  UUID: FF97450F-4905-306F-8312-C43EE85888BA
 -  Functions: 1776
-+  __DATA_CONST.__mod_init_func: 0xe8 sha256:52ca8939a2aff49cab0ced1f9385add349deef90d9d251ac96aa24ec68487f57
-+  __DATA_CONST.__mod_term_func: 0xf0 sha256:e59dbb37aa42860a064d63efdff1b3b72a3626f857ff4797bfa053cccc9a02bb
-+  __DATA_CONST.__const: 0xd6d0 sha256:339acf15e3777668c7b3f1cac26cbfdab96c831f0f50ea874ad12b3cdc4c0765
-+  __DATA_CONST.__kalloc_type: 0xcf80 sha256:6d315d839c8fc5ae1e9e0eb3f3ddd1493416e9b674c072db87800712b67c9a94
-+  __DATA_CONST.__kalloc_var: 0x280 sha256:1a16c4fe41bd096ec0ad643d53965c1dd7143ac80ae81e4302ce361b440c09bf
-+  __DATA_CONST.__auth_got: 0x398 sha256:eea2da04cb9afb3edd0b7fce07745212557290abdc924a459e5a131145c66f4d
-+  __DATA_CONST.__got: 0xd0 sha256:312951217e19cd5ef2b966cd72373a794ca16c2bc1d17a214655acd6e8d0fed4
-+  __DATA_CONST.__auth_ptr: 0x18 sha256:0f40a65db3a6cc8623f5e92d4e85647fa4f005eac5941ef78d806d4f69e5fbf9
-+  UUID: 6C4AA3F2-1EB1-30E2-AA9E-C4A075270494
++1570.0.0.0.0
 +  Functions: 1814
-   Symbols:   0
--  CStrings:  3340
-+  CStrings:  3520
- 
+
+-  CStrings:  2176
++  CStrings:  2306
 CStrings:
 + "#D: %s::%s:%d: Budget has been overridden. No need to assign a budget"
 + "#D: %s::%s:%d: CoreAnalytics service not available for HSAR metric"
@@ -221,5 +203,4 @@ CStrings:
 - "1211111212221212121111211211211211211211211211221211211211212"
 - "121111121222121212111121121121121121121121121122121121121121221"
 - "sendingOutTxIndication"
-
 ```

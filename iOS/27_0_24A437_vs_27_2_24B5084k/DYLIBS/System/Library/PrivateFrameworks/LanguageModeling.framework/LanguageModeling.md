@@ -2,54 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/LanguageModeling.framework/LanguageModeling`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x173654` | `0x174420` | **`+0xdcc`** |
+| `__TEXT.__cstring` | `0xe12d` | `0xe2f7` | **`+0x1ca`** |
+| `__TEXT.__gcc_except_tab` | `0x14d50` | `0x14e78` | **`+0x128`** |
+| `__TEXT.__oslogstring` | `0x18ae` | `0x1929` | **`+0x7b`** |
+| `__AUTH_CONST.__cfstring` | `0x3060` | `0x30a0` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x78f8` | `0x7928` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x2758` | `0x2778` | **`+0x20`** |
+
+### Other Changes
+
 ```diff
 
 -449.2.0.0.0
--  __TEXT.__text: 0x16f67c
 +449.3.0.0.0
-+  __TEXT.__text: 0x17042c
-   __TEXT.__objc_methlist: 0x14
-   __TEXT.__const: 0xe6e0
--  __TEXT.__cstring: 0xe12d
--  __TEXT.__gcc_except_tab: 0x14d50
-+  __TEXT.__cstring: 0xe2f7
-+  __TEXT.__gcc_except_tab: 0x14e78
-   __TEXT.__dlopen_cstrs: 0x2cc
--  __TEXT.__oslogstring: 0x18ae
-+  __TEXT.__oslogstring: 0x1929
-   __TEXT.__ustring: 0x8ee
--  __TEXT.__unwind_info: 0x8328
-+  __TEXT.__unwind_info: 0x8358
-   __TEXT.__eh_frame: 0x50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2758
-+  __DATA_CONST.__const: 0x2778
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x18
 
-   __DATA_CONST.__objc_arraydata: 0x80
-   __DATA_CONST.__got: 0x2f8
-   __AUTH_CONST.__const: 0xa780
--  __AUTH_CONST.__cfstring: 0x3060
-+  __AUTH_CONST.__cfstring: 0x30a0
-   __AUTH_CONST.__objc_const: 0x90
-   __AUTH_CONST.__weak_auth_got: 0x50
-   __AUTH_CONST.__objc_dictobj: 0x28
-
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 5792
 +  Functions: 5797
-   Symbols:   1228
+
 -  CStrings:  2172
 +  CStrings:  2186
- 
 CStrings:
 + "!pieces_blob.empty()"
 + "(piece_offsets_[i]) < (pieces_blob.size())"

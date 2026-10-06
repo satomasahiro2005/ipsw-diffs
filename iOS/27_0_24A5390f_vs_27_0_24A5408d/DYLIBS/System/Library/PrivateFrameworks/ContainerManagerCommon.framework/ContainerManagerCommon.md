@@ -2,86 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/ContainerManagerCommon.framework/ContainerManagerCommon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__oslogstring` | `0xe701` | `0xe983` | **`+0x282`** |
+| `__TEXT.__objc_methlist` | `0xad2c` | `0xae74` | **`+0x148`** |
+| `__TEXT.__cstring` | `0x94f0` | `0x9585` | **`+0x95`** |
+| `__TEXT.__gcc_except_tab` | `0x240c` | `0x2498` | **`+0x8c`** |
+| `__TEXT.__const` | `0x1330` | `0x13b0` | **`+0x80`** |
+| `__AUTH_CONST.__objc_const` | `0x170d0` | `0x17058` | **`-0x78`** |
+| `__AUTH_CONST.__cfstring` | `0x4ce0` | `0x4d40` | **`+0x60`** |
+| `__DATA_DIRTY.__objc_data` | `0x3070` | `0x3020` | **`-0x50`** |
+| `__AUTH_CONST.__objc_intobj` | `0x1548` | `0x1590` | **`+0x48`** |
+| `__TEXT.__unwind_info` | `0x2530` | `0x2508` | **`-0x28`** |
+| `__DATA_CONST.__const` | `0x18f8` | `0x18d8` | **`-0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3750` | `0x3770` | **`+0x20`** |
+| `__TEXT.__text` | `0xf2ffc` | `0xf2fec` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x5c8` | `0x5c0` | **`-0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x4b0` | `0x4a8` | **`-0x8`** |
+| `__DATA.__objc_ivar` | `0xc14` | `0xc10` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -833.0.3.0.0
--  __TEXT.__text: 0xf2ffc
--  __TEXT.__objc_methlist: 0xad2c
--  __TEXT.__const: 0x1330
--  __TEXT.__cstring: 0x94f0
 +833.0.8.0.1
-+  __TEXT.__text: 0xf2fec
-+  __TEXT.__objc_methlist: 0xae74
-+  __TEXT.__const: 0x13b0
-+  __TEXT.__cstring: 0x9585
-   __TEXT.__swift5_typeref: 0x6d3
--  __TEXT.__oslogstring: 0xe701
-+  __TEXT.__oslogstring: 0xe983
-   __TEXT.__constg_swiftt: 0x670
-   __TEXT.__swift5_reflstr: 0x3da
-   __TEXT.__swift5_fieldmd: 0x4c8
 
-   __TEXT.__swift5_mpenum: 0x10
-   __TEXT.__swift5_capture: 0x78
-   __TEXT.__swift5_protos: 0x18
--  __TEXT.__gcc_except_tab: 0x240c
-+  __TEXT.__gcc_except_tab: 0x2498
-   __TEXT.__ustring: 0x16c
--  __TEXT.__unwind_info: 0x2530
-+  __TEXT.__unwind_info: 0x2508
-   __TEXT.__eh_frame: 0x5d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x18f8
--  __DATA_CONST.__objc_classlist: 0x5c8
-+  __DATA_CONST.__const: 0x18d8
-+  __DATA_CONST.__objc_classlist: 0x5c0
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x528
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3750
-+  __DATA_CONST.__objc_selrefs: 0x3770
-   __DATA_CONST.__objc_protorefs: 0xc8
--  __DATA_CONST.__objc_superrefs: 0x4b0
-+  __DATA_CONST.__objc_superrefs: 0x4a8
-   __DATA_CONST.__objc_arraydata: 0x2e0
-   __DATA_CONST.__got: 0x500
-   __AUTH_CONST.__const: 0x12c8
--  __AUTH_CONST.__cfstring: 0x4ce0
--  __AUTH_CONST.__objc_const: 0x170d0
-+  __AUTH_CONST.__cfstring: 0x4d40
-+  __AUTH_CONST.__objc_const: 0x17058
-   __AUTH_CONST.__objc_dictobj: 0x118
--  __AUTH_CONST.__objc_intobj: 0x1548
-+  __AUTH_CONST.__objc_intobj: 0x1590
-   __AUTH_CONST.__objc_arrayobj: 0xf0
-   __AUTH_CONST.__auth_got: 0x12d0
-   __AUTH.__objc_data: 0xd70
-   __AUTH.__data: 0xd0
--  __DATA.__objc_ivar: 0xc14
-+  __DATA.__objc_ivar: 0xc10
-   __DATA.__data: 0x3bb0
-   __DATA.__crash_info: 0x148
-   __DATA.__bss: 0xef8
--  __DATA_DIRTY.__objc_data: 0x3070
-+  __DATA_DIRTY.__objc_data: 0x3020
-   __DATA_DIRTY.__data: 0x448
-   __DATA_DIRTY.__bss: 0x6b0
-   __DATA_DIRTY.__common: 0x58
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 3653
--  Symbols:   8474
--  CStrings:  2011
+-  Symbols:   6905
+-  CStrings:  2012
 +  Functions: 3659
-+  Symbols:   8476
-+  CStrings:  2023
- 
++  Symbols:   6904
++  CStrings:  2024
 Symbols:
 + -[MCMClientIdentity _descriptionRedacting:]
 + -[MCMClientIdentity redactedDescription]
@@ -186,13 +140,6 @@ Symbols:
 + ___block_descriptor_56_e8_32s40s48r_e37_v16?0"<MCMContainerConfiguration>"8lr48l8s32l8s40l8
 + _kMCMXATTRMetadataBackupExcludeName
 + _kMCMXATTRMetadataBackupExcludeNameValue
-+ _objc_msgSend$_descriptionRedacting:
-+ _objc_msgSend$_excludeContainersFromBackupWithContext:containerConfig:
-+ _objc_msgSend$_excludeFromBackupWithContainer:
-+ _objc_msgSend$_shortDescriptionRedacting:
-+ _objc_msgSend$addExclusionFromBackupToURL:error:
-+ _objc_msgSend$excludeFromBackupIdentifiers
-+ _objc_msgSend$redactedShortDescription
 - -[MCMLazyDescription .cxx_destruct]
 - -[MCMLazyDescription characterAtIndex:]
 - -[MCMLazyDescription description]
@@ -297,14 +244,12 @@ Symbols:
 - ___block_descriptor_40_e8_32s_e18_"NSString"12?0B8ls32l8
 - ___block_descriptor_48_e8_32s40r_e14_"NSError"8?0ls32l8r40l8
 - ___block_descriptor_56_e8_32s40s48r_e37_v16?0"<MCMContainerConfiguration>"8ls32l8r48l8s40l8
-- _objc_msgSend$characterAtIndex:
-- _objc_msgSend$fullDescription
-- _objc_msgSend$getCharacters:range:
-- _objc_msgSend$initWithDescriber:
 CStrings:
 + "-[MCMFileManager addExclusionFromBackupToURL:error:]_block_invoke"
++ "22:29:48"
 + "Ambiguous persona with identifier: [🔒%{private}s]"
 + "Attempt to create a container identity without a user identity when one is required; identifier = [🔒%{private}@], class = %{public}@"
++ "Aug  3 2026"
 + "Completed Performing Exclude From Backup Migration [%@] on %@; success = %d"
 + "Exclude from backup identifiers malformed"
 + "ExcludePSCFromBackup"
@@ -356,6 +301,7 @@ CStrings:
 + "excludeFromBackupIdentifiers"
 + "nil path when trying to add backup exclusion"
 + "open(O_NOFOLLOW) of %s for chown failed: %s"
+- "02:13:54"
 - "<%@: %p; UID = %u, primaryGID = %u, name = [%@], homeDirectoryURL = [%@]>"
 - "<cm-redacted>"
 - "@\"NSString\"12@?0B8"
@@ -366,6 +312,7 @@ CStrings:
 - "Failed to invalidate code signing info for %@ : %@"
 - "Invalid app group identifier [%{public}@]"
 - "Invalid size (%lld) from dirstats on %{public}s using fallback: (err %d) %s"
+- "Jul  8 2026"
 - "MobileContainerManager-833.0.3~136"
 - "POSIX permission [%{public}@] value is not in a recognizable format; expected = POSIX mode bit string, got = %{public}@, errno = %{darwin.errno}d"
 - "Read [%{public}@], length = %{public}lu, options = 0x%{public}lx"

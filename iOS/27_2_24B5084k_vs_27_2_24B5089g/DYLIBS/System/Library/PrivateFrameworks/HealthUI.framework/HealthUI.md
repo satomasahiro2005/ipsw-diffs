@@ -2,112 +2,61 @@
 
 > `/System/Library/PrivateFrameworks/HealthUI.framework/HealthUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x56d820` | `0x56ed4c` | **`+0x152c`** |
+| `__TEXT.__eh_frame` | `0x5324` | `0x5e9c` | **`+0xb78`** |
+| `__DATA.__data` | `0xc490` | `0xbf28` | **`-0x568`** |
+| `__TEXT.__swift5_typeref` | `0x5f86` | `0x5b16` | **`-0x470`** |
+| `__DATA.__bss` | `0xc2c0` | `0xbea0` | **`-0x420`** |
+| `__TEXT.__oslogstring` | `0x7ada` | `0x7dba` | **`+0x2e0`** |
+| `__TEXT.__constg_swiftt` | `0x7608` | `0x738c` | **`-0x27c`** |
+| `__AUTH_CONST.__objc_const` | `0x67f90` | `0x681a0` | **`+0x210`** |
+| `__TEXT.__swift5_fieldmd` | `0x4afc` | `0x4928` | **`-0x1d4`** |
+| `__TEXT.__swift5_reflstr` | `0x4816` | `0x4646` | **`-0x1d0`** |
+| `__TEXT.__cstring` | `0x25974` | `0x25b24` | **`+0x1b0`** |
+| `__TEXT.__const` | `0xe844` | `0xe6d4` | **`-0x170`** |
+| `__AUTH_CONST.__const` | `0xd4b8` | `0xd380` | **`-0x138`** |
+| `__TEXT.__objc_methlist` | `0x3c078` | `0x3c168` | **`+0xf0`** |
+| `__AUTH.__data` | `0x3bc0` | `0x3c98` | **`+0xd8`** |
+| `__AUTH_CONST.__cfstring` | `0x1f4c0` | `0x1f580` | **`+0xc0`** |
+| `__AUTH_CONST.__auth_got` | `0x5240` | `0x52f8` | **`+0xb8`** |
+| `__TEXT.__swift5_assocty` | `0xe08` | `0xd60` | **`-0xa8`** |
+| `__DATA_CONST.__const` | `0x7be0` | `0x7c60` | **`+0x80`** |
+| `__DATA_CONST.__objc_selrefs` | `0x18d10` | `0x18d88` | **`+0x78`** |
+| `__TEXT.__swift5_capture` | `0x2028` | `0x1fb8` | **`-0x70`** |
+| `__TEXT.__swift_as_cont` | `0x248` | `0x2b4` | **`+0x6c`** |
+| `__DATA_CONST.__got` | `0x5030` | `0x5088` | **`+0x58`** |
+| `__DATA.__common` | `0x3a0` | `0x350` | **`-0x50`** |
+| `__TEXT.__swift_as_entry` | `0x118` | `0x164` | **`+0x4c`** |
+| `__TEXT.__swift_as_ret` | `0x118` | `0x158` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x12478` | `0x124a8` | **`+0x30`** |
+| `__TEXT.__swift5_proto` | `0x640` | `0x624` | **`-0x1c`** |
+| `__TEXT.__swift5_types` | `0x5f0` | `0x5d8` | **`-0x18`** |
+| `__DATA.__objc_ivar` | `0x40d0` | `0x40e4` | **`+0x14`** |
+| `__TEXT.__swift5_builtin` | `0x348` | `0x334` | **`-0x14`** |
+| `__TEXT.__swift5_mpenum` | `0x50` | `0x40` | **`-0x10`** |
+| `__DATA_CONST.__objc_catlist` | `0x2b8` | `0x2c0` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x2270` | `0x2278` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x1a0` | `0x198` | **`-0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x18a8` | `0x18b0` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x8c` | `0x88` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.36.2.7
--  __TEXT.__text: 0x5484ec
--  __TEXT.__objc_methlist: 0x3c078
--  __TEXT.__cstring: 0x25974
--  __TEXT.__const: 0xe844
 +7027.1.45.2.4
-+  __TEXT.__text: 0x5496e0
-+  __TEXT.__objc_methlist: 0x3c168
-+  __TEXT.__cstring: 0x25b24
-+  __TEXT.__const: 0xe6d4
-   __TEXT.__gcc_except_tab: 0x23e8
--  __TEXT.__oslogstring: 0x7ada
-+  __TEXT.__oslogstring: 0x7dba
-   __TEXT.__ustring: 0x56
-   __TEXT.__dlopen_cstrs: 0x367
--  __TEXT.__constg_swiftt: 0x7608
--  __TEXT.__swift5_typeref: 0x5f86
--  __TEXT.__swift5_reflstr: 0x4816
--  __TEXT.__swift5_fieldmd: 0x4afc
--  __TEXT.__swift5_builtin: 0x348
--  __TEXT.__swift5_assocty: 0xe08
--  __TEXT.__swift5_proto: 0x640
--  __TEXT.__swift5_types: 0x5f0
--  __TEXT.__swift5_capture: 0x2028
--  __TEXT.__swift5_protos: 0x8c
--  __TEXT.__swift_as_entry: 0x118
--  __TEXT.__swift_as_ret: 0x118
--  __TEXT.__swift_as_cont: 0x248
--  __TEXT.__swift5_mpenum: 0x50
--  __TEXT.__unwind_info: 0x16ff8
--  __TEXT.__eh_frame: 0x533c
-+  __TEXT.__constg_swiftt: 0x738c
-+  __TEXT.__swift5_typeref: 0x5b16
-+  __TEXT.__swift5_reflstr: 0x4646
-+  __TEXT.__swift5_fieldmd: 0x4928
-+  __TEXT.__swift5_builtin: 0x334
-+  __TEXT.__swift5_mpenum: 0x40
-+  __TEXT.__swift5_assocty: 0xd60
-+  __TEXT.__swift5_proto: 0x624
-+  __TEXT.__swift5_types: 0x5d8
-+  __TEXT.__swift5_capture: 0x1fb8
-+  __TEXT.__swift5_protos: 0x88
-+  __TEXT.__swift_as_entry: 0x164
-+  __TEXT.__swift_as_ret: 0x158
-+  __TEXT.__swift_as_cont: 0x2b4
-+  __TEXT.__unwind_info: 0x16fa8
-+  __TEXT.__eh_frame: 0x5eb4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7be0
--  __DATA_CONST.__objc_classlist: 0x2270
--  __DATA_CONST.__objc_catlist: 0x2b8
-+  __DATA_CONST.__const: 0x7c60
-+  __DATA_CONST.__objc_classlist: 0x2278
-+  __DATA_CONST.__objc_catlist: 0x2c0
-   __DATA_CONST.__objc_protolist: 0x6e8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x18d10
--  __DATA_CONST.__objc_protorefs: 0x1a0
--  __DATA_CONST.__objc_superrefs: 0x18a8
-+  __DATA_CONST.__objc_selrefs: 0x18d88
-+  __DATA_CONST.__objc_protorefs: 0x198
-+  __DATA_CONST.__objc_superrefs: 0x18b0
-   __DATA_CONST.__objc_arraydata: 0x21f0
--  __DATA_CONST.__got: 0x5030
--  __AUTH_CONST.__const: 0xd4b8
--  __AUTH_CONST.__cfstring: 0x1f4c0
--  __AUTH_CONST.__objc_const: 0x67f90
-+  __DATA_CONST.__got: 0x5088
-+  __AUTH_CONST.__const: 0xd380
-+  __AUTH_CONST.__cfstring: 0x1f580
-+  __AUTH_CONST.__objc_const: 0x681a0
-   __AUTH_CONST.__objc_intobj: 0x2be0
-   __AUTH_CONST.__objc_doubleobj: 0x350
-   __AUTH_CONST.__objc_arrayobj: 0xfc0
-   __AUTH_CONST.__objc_dictobj: 0xc8
--  __AUTH_CONST.__auth_got: 0x5240
-+  __AUTH_CONST.__auth_got: 0x52f8
-   __AUTH.__objc_data: 0x19550
--  __AUTH.__data: 0x3bc0
--  __DATA.__objc_ivar: 0x40d0
--  __DATA.__data: 0xc490
--  __DATA.__common: 0x3a0
-+  __AUTH.__data: 0x3c98
-+  __DATA.__objc_ivar: 0x40e4
-+  __DATA.__data: 0xbf28
-+  __DATA.__common: 0x350
-   __DATA_DIRTY.__objc_data: 0x1680
-   __DATA_DIRTY.__bss: 0x58
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 30958
--  Symbols:   46435
+-  Symbols:   36634
 -  CStrings:  5578
 +  Functions: 30852
-+  Symbols:   46470
++  Symbols:   36653
 +  CStrings:  5597
- 
 Symbols:
 + -[HKBilateralQuantitySample(HKDataMetadataDetailSection) _hk_formattedValueTextForQuantity:unit:displayType:unitController:]
 + -[HKBilateralQuantitySample(HKDataMetadataDetailSection) addDetailValuesToSection:]
@@ -205,29 +154,6 @@ Symbols:
 + _get_witness_table 8HealthUI23WasabiActionEnvironmentVy05SwiftB015ModifiedContentVyAFyAFyAD4ViewPADE14contentMargins__3forQrAD4EdgeO3SetV_12CoreGraphics7CGFloatVSgAD0H15MarginPlacementVtFQOyAD06ScrollI0VyAhDE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAhDEAwxyZA__QrA0__ScPSSSiyyYaYAcntFQOyAFyAFyAFyAD6VStackVyAD05TupleH0VyAD012_ConditionalH0VyAFyAFyAFyAH0a10FoundationB0E20tripleTextBlockStyleyQrA7_20TripleTextBlockStyleOFQOyAFyA7_15TripleTextBlockVyAD4TextVAD05EmptyI0VA16_A16_GAD31AccessibilityAttachmentModifierVG_Qo_AD14_PaddingLayoutVGA23_GAD16_FlexFrameLayoutVGAFyAFyAFyAHA7_EA8_yQrA10_FQOyA12_yAFyA14_A19_GA14_SgA16_A16_G_Qo_A23_GA23_GA23_GG_AFyAA0C9VideoTileVA23_GSgAFyA2_yA4_y0a7DomainsB027ClassificationLevelCarouselVyA41_32ClassificationLevelCarouselEntryVG_AFyAFyA14_A23_GA27_GSgQPGGA23_GSgAFyA2_yA4_yAFyA24_A27_G_AhDE11buttonStyleyQrqd__AD20PrimitiveButtonStyleRd__lFQOyAD6ButtonVyAD03AnyI0VG_AD16PlainButtonStyleVQo_QPGGA23_GSgAFyA2_yA4_yA54__AD7DividerVAD7ForEachVySay0aH017ArticleDescriptorVGSSAFy0ahB0020ArticleTileContainerI0VA23_GGQPGGA23_GSgA35_SgA6_yAA020ClassificationDetailI0V15LearnMoreButton33_A7BB11D57AC4A5F9A31FC7769437C860LLVAhDEA55_yQrqd__ADA56_Rd__lFQOyA58_yAFyAFyAFyAFyAFyAD5LabelVyAD6HStackVyA4_yA14__AD6SpacerVAFyAhDE10fontWeightyQrAD4FontV6WeightVSgFQOyAFyAD5ImageVAD24_ForegroundStyleModifierVyAD22HierarchicalShapeStyleVGG_Qo_AD01_E18KeyWritingModifierVyA105_5ScaleOGGQPGGA41_08SFSymbolI0VSgGA23_GA23_GA27_GAD24_BackgroundStyleModifierVyAD15BackgroundStyleVGGAD11_ClipEffectVyAD7CapsuleVGGG_A63_Qo_GSgQPGGA23_GA27_GA27_G_Qo__Qo_G_Qo_AD19_BackgroundModifierVyAFyAD5ColorVAD30_SafeAreaRegionsIgnoringLayoutVGGGA154_yAD14GeometryReaderVyAhDE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAFyA156_AD011_AppearanceD8ModifierVG_AQQo_GGGA7_30_NavigationTitleHiddenModifierVGGAdGHPyHC
 + _get_witness_table 9HealthKit21SleepAverageProvidingRzlAA0C10DaySummaryV7MetricsVAaBHPyHC
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE7toolbar_3forQrAA10VisibilityO_AA16ToolbarPlacementVdtFQOyAcAE29navigationBarTitleDisplayModeyQrAA010NavigationO4ItemV0pqR0OFQOyAcAE0nP0yQrqd__SyRd__lFQOyAA15ModifiedContentVy06HealthB016HostedController33_A71AB9B3B1B64A5A2225D349B1E9D45ELLVAA30_SafeAreaRegionsIgnoringLayoutVG_SSQo__Qo__Qo_Sg_Qo_HO
-+ _objc_msgSend$_cacheIdentityForDevices:name:
-+ _objc_msgSend$_cardioFitnessCacheKeyWithApplicationItems:representativeDisplayType:
-+ _objc_msgSend$_hk_formattedValueTextForQuantity:unit:displayType:unitController:
-+ _objc_msgSend$_identifiersForLogging:
-+ _objc_msgSend$_makeDistributionChartCacheForStyle:namedPredicate:
-+ _objc_msgSend$_purgeAllCaches
-+ _objc_msgSend$_purgeCaches:
-+ _objc_msgSend$_purgeCaches:affectedByUnitPreferenceChangeToTypes:
-+ _objc_msgSend$_removeFetchOperationsForIdentifiers:
-+ _objc_msgSend$_uniqueInteractiveChartsCaches
-+ _objc_msgSend$allPendingIdentifiers
-+ _objc_msgSend$cacheIdentity
-+ _objc_msgSend$customChartCacheForDisplayType:key:creatingWith:
-+ _objc_msgSend$initWithCustomCache:displayType:key:
-+ _objc_msgSend$initWithDistributionStyle:timeScope:predicateName:unitString:
-+ _objc_msgSend$initWithPredicate:name:cacheIdentity:
-+ _objc_msgSend$leftQuantity
-+ _objc_msgSend$localIdentifier
-+ _objc_msgSend$orderedSetWithArray:
-+ _objc_msgSend$purgeCachedResults
-+ _objc_msgSend$rightQuantity
-+ _objc_msgSend$shouldPurgeCachedResultsForUnitPreferenceChangeToTypes:
-+ _objc_msgSend$sortUsingSelector:
 + _symbolic Say_____G 8HealthUI40HKAuthorizationTimeBoundedViewControllerC3RowO
 + _symbolic Say______pG 8HealthUI17WasabiActionModelP
 + _symbolic Si__________y_____Sg______y_____yAFy_____yABy_____yAByAFy__________y_____GG______QPGG_ANQPGG_____GASGAFyAFyAHyAByAP______ANQPGGASGASGGQPGIegynr_ 8HealthUI25ClassificationOverlayViewV17ContributingValueV 05SwiftB012TupleContentV AF7DividerV AF012_ConditionalJ0V AF08ModifiedJ0V AF6VStackV AF6HStackV AF5ImageV AF24_ForegroundStyleModifierV AF5ColorV AF4TextV AF14_PaddingLayoutV AF6SpacerV
@@ -346,13 +272,6 @@ Symbols:
 - _get_witness_table 8HealthUI20OverlayCardContainerVy05SwiftB019_ConditionalContentVyAFyAD05TupleH0VyAA0C6HeaderV_AD08ModifiedH0VyAD4TextVAD14_PaddingLayoutVGALyALy0a7DomainsB026ClassificationLevelDiagramVyAR0pqR5EntryVGAD32_EnvironmentKeyTransformModifierVySbGGAPGQPGAHyAJ_ALyAD12ViewThatFitsVyAHyAD6HStackVyAHyAN_ANSgQPGG_AD6VStackVyA7_GQPGGAPGA0_QPGGAFyAHyAJ_ALyA5_yAHyAN_ALyAD5ImageVAD016_ForegroundStyleW0VyAD5ColorVGGQPGGAPGA6_QPGAHyAJ_AqLyALyA6_A20_yAD22HierarchicalShapeStyleVGGAPGA0_ALyAD7ForEachVySaySi6offset_AA0pcX0V17ContributingValueV7elementtGSSAHyAD7DividerVSg_ALyA3_yAHyA5_yAHyA24__AnD6SpacerVANQPGG_A10_yAHyA5_yAHyA24__ANQPGG_ANQPGGQPGGAD01_tu7WritingW0VyAD4FontVSgGGQPGGAPGQPGGGGAD0X0HPyHC
 - _get_witness_table 8HealthUI22VideoThumbnailCarouselVyAA06WasabiD5ImageV05SwiftB015ModifiedContentVyAHyAHyAF4ViewPAFE11buttonStyleyQrqd__AF015PrimitiveButtonM0Rd__lFQOyAA0f6ActionO0VyAA0cD0VyAEGG_AF05PlainoM0VQo_AF011_ForegroundM8ModifierVyAF5ColorVGGAF022_EnvironmentBackgroundmS0VyAYGGAF023AccessibilityAttachmentS0VGGAfIHPyHC
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE7toolbar_3forQrAA10VisibilityO_AA16ToolbarPlacementVdtFQOyAcAE29navigationBarTitleDisplayModeyQrAA010NavigationO4ItemV0pqR0OFQOyAcAE0nP0yQrqd__SyRd__lFQOyAA15ModifiedContentVy06HealthB016HostedController33_D14C244E13C4D4DB057A2AC47255317ELLVAA30_SafeAreaRegionsIgnoringLayoutVG_SSQo__Qo__Qo_Sg_Qo_HO
-- _objc_msgSend$_removeCustomCachesForDisplayTypeIdentifier:
-- _objc_msgSend$addCustomChartCache:forDisplayType:
-- _objc_msgSend$cacheIdentifier
-- _objc_msgSend$initWithCustomCache:displayType:
-- _objc_msgSend$initWithDistributionStyle:timeScope:predicateName:
-- _objc_msgSend$initWithPredicate:name:
-- _objc_msgSend$removeObjectsAtIndexes:
 - _symbolic $s7SwiftUI13PreferenceKeyP
 - _symbolic $s8HealthUI24WasabiAnalyticsReportingP
 - _symbolic Say_____G 8HealthUI40HKAuthorizationTimeBoundedViewControllerC3Row33_9BE20E9F5759C0A877E43F07F0B85A10LLO

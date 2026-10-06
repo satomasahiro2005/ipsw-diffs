@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/DriverKit.framework/DriverKit`
 
-```diff
+### Section Size Changes
 
- 509.2.1.0.0
--  __TEXT.__text: 0x37d34
-+  __TEXT.__text: 0x37dc4
-   __TEXT.__init_offsets: 0x8
-   __TEXT.__const: 0x5f7c
-   __TEXT.__cstring: 0x2f92
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x37d34` | `0x37dc4` | **`+0x90`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __Z21OSUnserializeXMLparsePv : 3952 -> 4072
 ~ _OSCreateObjectFromSerialization : 2196 -> 2200

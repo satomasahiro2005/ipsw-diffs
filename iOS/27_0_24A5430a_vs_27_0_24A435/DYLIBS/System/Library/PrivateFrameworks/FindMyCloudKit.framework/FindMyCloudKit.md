@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/FindMyCloudKit.framework/FindMyCloudKit`
 
-```diff
+### Section Size Changes
 
- 106.30.6.14.10
--  __TEXT.__text: 0x6fab0
-+  __TEXT.__text: 0x6fac4
-   __TEXT.__objc_methlist: 0x14
-   __TEXT.__const: 0x1d00
-   __TEXT.__constg_swiftt: 0x7bc
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6fab0` | `0x6fac4` | **`+0x14`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_23f06b544 -> sub_23f9a7544 : 14476 -> 14468
 ~ sub_23f072f1c -> sub_23f9aef14 : 736 -> 756

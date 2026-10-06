@@ -2,15 +2,14 @@
 
 > `/System/Library/PrivateFrameworks/CoreCDP.framework/cdpd`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__DATA.__objc_selrefs`
+
+### Other Changes
 
 ```diff
 
 -447.0.0.0.0
 +448.125.5.1.0
-   __TEXT.__text: 0x304
-   __TEXT.__auth_stubs: 0x120
-   __TEXT.__objc_stubs: 0x100
 ```

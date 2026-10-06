@@ -2,90 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/SiriInference.framework/SiriInference`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x30c1c8` | `0x311cb4` | **`+0x5aec`** |
+| `__TEXT.__oslogstring` | `0x13070` | `0x134e0` | **`+0x470`** |
+| `__AUTH.__data` | `0x45f0` | `0x4a20` | **`+0x430`** |
+| `__AUTH_CONST.__const` | `0x28080` | `0x283b8` | **`+0x338`** |
+| `__DATA_DIRTY.__data` | `0x9050` | `0x8d80` | **`-0x2d0`** |
+| `__TEXT.__const` | `0x25c58` | `0x25ed0` | **`+0x278`** |
+| `__DATA.__bss` | `0x2df20` | `0x2e120` | **`+0x200`** |
+| `__TEXT.__eh_frame` | `0x12264` | `0x12430` | **`+0x1cc`** |
+| `__AUTH_CONST.__objc_const` | `0x8048` | `0x81e8` | **`+0x1a0`** |
+| `__TEXT.__cstring` | `0xe474` | `0xe5b4` | **`+0x140`** |
+| `__TEXT.__unwind_info` | `0xade8` | `0xaf00` | **`+0x118`** |
+| `__TEXT.__swift5_capture` | `0x5874` | `0x5954` | **`+0xe0`** |
+| `__TEXT.__swift5_fieldmd` | `0xffd0` | `0x100ac` | **`+0xdc`** |
+| `__TEXT.__constg_swiftt` | `0xa724` | `0xa7ec` | **`+0xc8`** |
+| `__TEXT.__swift5_reflstr` | `0x10101` | `0x101bb` | **`+0xba`** |
+| `__AUTH.__objc_data` | `0x588` | `0x628` | **`+0xa0`** |
+| `__TEXT.__swift5_typeref` | `0x8bc2` | `0x8c62` | **`+0xa0`** |
+| `__DATA.__data` | `0x4b40` | `0x4bd0` | **`+0x90`** |
+| `__AUTH_CONST.__auth_got` | `0x2f78` | `0x2fb8` | **`+0x40`** |
+| `__DATA.__common` | `0xf0` | `0x100` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x238` | `0x248` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x3b8` | `0x3c8` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x1e98` | `0x1ea8` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0xbb8` | `0xbc8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3600.34.21.0.0
--  __TEXT.__text: 0x2f68b0
 +3605.12.1.0.0
-+  __TEXT.__text: 0x2fc114
-   __TEXT.__objc_methlist: 0x5d0
--  __TEXT.__const: 0x25c58
--  __TEXT.__swift5_typeref: 0x8bc2
--  __TEXT.__swift5_fieldmd: 0xffd0
--  __TEXT.__constg_swiftt: 0xa724
-+  __TEXT.__const: 0x25ed0
-+  __TEXT.__swift5_typeref: 0x8c62
-+  __TEXT.__swift5_fieldmd: 0x100ac
-+  __TEXT.__constg_swiftt: 0xa7ec
-   __TEXT.__swift5_builtin: 0x2d0
--  __TEXT.__swift5_reflstr: 0x10101
-+  __TEXT.__swift5_reflstr: 0x101bb
-   __TEXT.__swift5_assocty: 0x1410
-   __TEXT.__swift5_protos: 0x17c
--  __TEXT.__swift5_proto: 0x1e98
--  __TEXT.__swift5_types: 0xbb8
--  __TEXT.__cstring: 0xe474
--  __TEXT.__oslogstring: 0x13070
-+  __TEXT.__swift5_proto: 0x1ea8
-+  __TEXT.__swift5_types: 0xbc8
-+  __TEXT.__cstring: 0xe5b4
-+  __TEXT.__oslogstring: 0x134e0
-   __TEXT.__swift_as_entry: 0x11c
-   __TEXT.__swift_as_ret: 0xd4
-   __TEXT.__swift_as_cont: 0x17c
--  __TEXT.__swift5_capture: 0x5874
-+  __TEXT.__swift5_capture: 0x5954
-   __TEXT.__swift5_mpenum: 0x80
--  __TEXT.__unwind_info: 0xd320
--  __TEXT.__eh_frame: 0x12284
-+  __TEXT.__unwind_info: 0xd458
-+  __TEXT.__eh_frame: 0x12450
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x238
--  __DATA_CONST.__objc_classlist: 0x3b8
-+  __DATA_CONST.__const: 0x248
-+  __DATA_CONST.__objc_classlist: 0x3c8
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0xd8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x1d98
-   __DATA_CONST.__objc_protorefs: 0x70
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x28080
--  __AUTH_CONST.__objc_const: 0x8048
--  __AUTH_CONST.__auth_got: 0x2f78
--  __AUTH.__objc_data: 0x588
--  __AUTH.__data: 0x45f0
--  __DATA.__data: 0x4b40
--  __DATA.__common: 0xf0
-+  __AUTH_CONST.__const: 0x283b8
-+  __AUTH_CONST.__objc_const: 0x81e8
-+  __AUTH_CONST.__auth_got: 0x2fb8
-+  __AUTH.__objc_data: 0x628
-+  __AUTH.__data: 0x4a20
-+  __DATA.__data: 0x4bd0
-+  __DATA.__common: 0x100
-   __DATA_DIRTY.__objc_data: 0x9e0
--  __DATA_DIRTY.__data: 0x9050
-+  __DATA_DIRTY.__data: 0x8d80
-   __DATA_DIRTY.__bss: 0x9600
-   __DATA_DIRTY.__common: 0x2e0
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 19977
--  Symbols:   5882
+-  Symbols:   4966
 -  CStrings:  3182
 +  Functions: 20082
-+  Symbols:   5901
++  Symbols:   4985
 +  CStrings:  3201
- 
 Symbols:
 + __DATA__TtC13SiriInference18HypocorismProvider
 + __DATA__TtC13SiriInference25RelationshipAliasProvider

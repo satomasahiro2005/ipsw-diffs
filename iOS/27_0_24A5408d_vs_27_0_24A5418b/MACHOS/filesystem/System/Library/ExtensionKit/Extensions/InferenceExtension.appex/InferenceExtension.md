@@ -2,6 +2,8 @@
 
 > `/System/Library/ExtensionKit/Extensions/InferenceExtension.appex/InferenceExtension`
 
+### Other Changes
+
 ```diff
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/PostSiriEngagement/install/TempContent/Objects/PostSiriEngagement.build/InferenceExtension.build/Objects-normal/arm64e/InferenceExtension-44e5aa026c7adf945d9fe1660205e078.o

@@ -2,22 +2,19 @@
 
 > `/System/Library/Frameworks/GroupActivities.framework/GroupActivities`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x14420` | `0x143a0` | **`-0x80`** |
+| `__DATA_DIRTY.__bss` | `0x1880` | `0x1900` | **`+0x80`** |
+
+### Other Changes
+
 ```diff
 
 -309.200.41.0.0
 +309.200.51.0.0
-   __TEXT.__text: 0x1b9d74
-   __TEXT.__objc_methlist: 0x618
-   __TEXT.__const: 0x1176c
-
-   __DATA_DIRTY.__objc_data: 0xeb8
-   __DATA_DIRTY.__data: 0x49f8
-   __DATA_DIRTY.__common: 0x310
--  __DATA_DIRTY.__bss: 0x1880
-+  __DATA_DIRTY.__bss: 0x1900
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
 Symbols:
 + _$ss13_UnsafeBitsetV027_withTemporaryUninitializedB09wordCount4bodyxSi_xABq_YKXEtq_YKs5ErrorR_r0_lFZxSryAB4WordVGq_YKXEfU_s10_NativeSetVySo29TUConversationActivitySessionCG_s5NeverOTg506$ss13_ab8V013withd36B08capacity4bodyxSi_xABq_YKXEtq_YKs5i9R_r0_lFZxu12_YKXEfU_s10_kl6VySo29mno5CG_s5P4OTG5ABq_xRi_zRi0_zRi__Ri0__r0_lyApNIsgyrzr_Tf1nc_n06$ss10_kl29V6filteryAByxGSbxqd__YKXEqd__wi12Rd__lFADs13_ab5Vqd__z6U_So29mno4C_s5P4OTG5ANxSbq_Ri_zRi0_zRi__Ri0__r0_lyAmPIsgndzr_Tf1nc_n
 + _$ss13_UnsafeBitsetV027_withTemporaryUninitializedB09wordCount4bodyxSi_xABq_YKXEtq_YKs5ErrorR_r0_lFZxSryAB4WordVGq_YKXEfU_s17_NativeDictionaryVy10Foundation4UUIDV15GroupActivities0O12SessionTableC7Storage33_64E0A582F9EAD21E39070881D97E5C2ALLVG_s5NeverOTg506$ss13_ab8V013withd36B08capacity4bodyxSi_xABq_YKXEtq_YKs5i24R_r0_lFZxABq_YKXEfU_s17_kl22Vy10Foundation4UUIDV15o14Activities0L12qr14C7Storage33_64tuvwxyZ19C2ALLVG_s5NeverOTG5ABq_xRi_zRi0_zRi__Ri0__r0_lyAwUIsgyrzr_Tf1nc_n06$ss17_kl51V6filteryAByxq_GSbx3key_q_5valuet_tqd__YKXEqd__YKs5i12Rd__lFADs13_ab33Vqd__YKXEfU_10Foundation4UUIDV_15o14Activities0K12qr14C7Storage33_64tuvwxyZ17C2ALLVs5NeverOTG5AUxq_Sbq0_Ri_zRi0_zRi__Ri0__Ri_0_Ri0_0_r1_lyAntWIsgnndzr_Tf1nc_n

@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/SeymourClientServices.framework/SeymourClientServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2a698` | `0x2a6c0` | **`+0x28`** |
+| `__AUTH_CONST.__auth_got` | `0xc58` | `0xc50` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 2027.0.146.1.4
--  __TEXT.__text: 0x2a698
-+  __TEXT.__text: 0x2a6c0
-   __TEXT.__objc_methlist: 0x26c
-   __TEXT.__const: 0x1376
-   __TEXT.__cstring: 0x673
-
-   __AUTH_CONST.__const: 0x1228
-   __AUTH_CONST.__cfstring: 0x20
-   __AUTH_CONST.__objc_const: 0x608
--  __AUTH_CONST.__auth_got: 0xc58
-+  __AUTH_CONST.__auth_got: 0xc50
-   __DATA.__data: 0x4f0
-   __DATA_DIRTY.__objc_data: 0x50
-   __DATA_DIRTY.__data: 0x3f8
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 688
--  Symbols:   580
-+  Symbols:   579
-   CStrings:  93
- 
+-  Symbols:   462
++  Symbols:   461
 Symbols:
 - _objc_retain_x9
 Functions:

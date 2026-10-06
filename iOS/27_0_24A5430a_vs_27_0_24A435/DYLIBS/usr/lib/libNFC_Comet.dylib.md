@@ -2,42 +2,30 @@
 
 > `/usr/lib/libNFC_Comet.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc8c74` | `0xd6e38` | **`+0xe1c4`** |
+| `__TEXT.__cstring` | `0x3c3fe` | `0x41d46` | **`+0x5948`** |
+| `__AUTH.__data` | `0x1fd8` | `0x2248` | **`+0x270`** |
+| `__AUTH_CONST.__const` | `0x2d00` | `0x2ee0` | **`+0x1e0`** |
+| `__DATA.__data` | `0x4d1` | `0x5b1` | **`+0xe0`** |
+| `__TEXT.__unwind_info` | `0x12c0` | `0x1398` | **`+0xd8`** |
+| `__DATA_DIRTY.__data` | `0x1e` | `0xce` | **`+0xb0`** |
+| `__DATA_CONST.__const` | `0x1f0` | `0x230` | **`+0x40`** |
+| `__TEXT.__const` | `0xa70` | `0xaa0` | **`+0x30`** |
+
+### Other Changes
+
 ```diff
 
- 370.42.1.0.0
--  __TEXT.__text: 0xc8c74
--  __TEXT.__const: 0xa70
--  __TEXT.__cstring: 0x3c3fe
--  __TEXT.__unwind_info: 0x12c0
-+  __TEXT.__text: 0xd6e38
-+  __TEXT.__const: 0xaa0
-+  __TEXT.__cstring: 0x41d46
-+  __TEXT.__unwind_info: 0x1398
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x1f0
-+  __DATA_CONST.__const: 0x230
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2d00
-+  __AUTH_CONST.__const: 0x2ee0
-   __AUTH_CONST.__auth_got: 0x160
--  __AUTH.__data: 0x1fd8
--  __DATA.__data: 0x4d1
-+  __AUTH.__data: 0x2248
-+  __DATA.__data: 0x5b1
-   __DATA.__common: 0x38
--  __DATA_DIRTY.__data: 0x1e
-+  __DATA_DIRTY.__data: 0xce
-   __DATA_DIRTY.__common: 0x100
-   __DATA_DIRTY.__bss: 0x27
-   - /usr/lib/libNFC_HAL.dylib
-   - /usr/lib/libSystem.B.dylib
 -  Functions: 1868
 -  Symbols:   148
 -  CStrings:  5852
 +  Functions: 1970
 +  Symbols:   199
 +  CStrings:  6277
- 
 Symbols:
 + _gphLibNfc_GetNfccEseHashDumpSequence
 + _gphLibNfc_GetRandomDieIdSequence

@@ -2,14 +2,15 @@
 
 > `/usr/lib/i18n/libUTF8MAC.dylib`
 
-```diff
+### Section Size Changes
 
- 121.0.0.0.0
--  __TEXT.__text: 0xdf4
-+  __TEXT.__text: 0xdf8
-   __TEXT.__const: 0x34d4
-   __TEXT.__cstring: 0x76
-   __TEXT.__unwind_info: 0x90
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xdf4` | `0xdf8` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __citrus_UTF8MAC_mbrtowc_priv : 1204 -> 1208
 ```

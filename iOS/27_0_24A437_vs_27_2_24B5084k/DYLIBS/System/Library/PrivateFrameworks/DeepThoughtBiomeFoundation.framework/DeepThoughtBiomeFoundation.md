@@ -2,51 +2,24 @@
 
 > `/System/Library/PrivateFrameworks/DeepThoughtBiomeFoundation.framework/DeepThoughtBiomeFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__cfstring` | `0x38c0` | `0x3c20` | **`+0x360`** |
+| `__DATA_CONST.__const` | `0x1be8` | `0x1d88` | **`+0x1a0`** |
+| `__TEXT.__cstring` | `0x5c9c` | `0x5e0c` | **`+0x170`** |
+| `__TEXT.__text` | `0x70c20` | `0x70c58` | **`+0x38`** |
+
+### Other Changes
+
 ```diff
 
- 6.0.7.0.0
--  __TEXT.__text: 0x6e624
-+  __TEXT.__text: 0x6e65c
-   __TEXT.__objc_methlist: 0x910
-   __TEXT.__const: 0x3b48
-   __TEXT.__oslogstring: 0x1386
-
-   __TEXT.__swift5_assocty: 0x270
-   __TEXT.__swift5_proto: 0x158
-   __TEXT.__swift5_types: 0x290
--  __TEXT.__cstring: 0x5c9c
-+  __TEXT.__cstring: 0x5e0c
-   __TEXT.__swift5_protos: 0x24
-   __TEXT.__swift_as_entry: 0x7c
-   __TEXT.__swift5_capture: 0x4fc
-
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1be8
-+  __DATA_CONST.__const: 0x1d88
-   __DATA_CONST.__objc_classlist: 0x3a0
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x90
-
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x2638
--  __AUTH_CONST.__cfstring: 0x38c0
-+  __AUTH_CONST.__cfstring: 0x3c20
-   __AUTH_CONST.__objc_const: 0x49d8
-   __AUTH_CONST.__auth_got: 0xe40
-   __AUTH.__objc_data: 0x2928
-
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 2742
-   Symbols:   1512
 -  CStrings:  807
 +  CStrings:  834
- 
 Functions:
-~ sub_221ee2b08 -> sub_224097b08 : 6532 -> 6560
-~ sub_221eeb3c0 -> sub_2240a03dc : 6220 -> 6248
+~ sub_223fdab08 -> sub_22623ab08 : 6572 -> 6600
+~ sub_223fe3508 -> sub_226243524 : 6268 -> 6296
 CStrings:
 + "LOCALE_ACW_SA"
 + "LOCALE_AFB_AE"

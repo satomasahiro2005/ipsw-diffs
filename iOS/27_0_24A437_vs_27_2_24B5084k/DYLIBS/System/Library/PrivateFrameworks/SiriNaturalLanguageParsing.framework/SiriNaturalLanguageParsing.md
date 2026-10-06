@@ -2,59 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/SiriNaturalLanguageParsing.framework/SiriNaturalLanguageParsing`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14e54c` | `0x14f370` | **`+0xe24`** |
+| `__TEXT.__cstring` | `0xb987` | `0xbe0f` | **`+0x488`** |
+| `__DATA_CONST.__const` | `0x780` | `0xad8` | **`+0x358`** |
+| `__TEXT.__gcc_except_tab` | `0x13650` | `0x13730` | **`+0xe0`** |
+| `__TEXT.__oslogstring` | `0x97ba` | `0x983a` | **`+0x80`** |
+| `__AUTH_CONST.__cfstring` | `0x1860` | `0x1880` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x7000` | `0x7020` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x1458` | `0x1460` | **`+0x8`** |
+| `__TEXT.__const` | `0x8e2c` | `0x8e34` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.7.10.0.0
--  __TEXT.__text: 0x149bf0
 +3605.12.1.0.0
-+  __TEXT.__text: 0x14aa0c
-   __TEXT.__init_offsets: 0x168
-   __TEXT.__objc_methlist: 0x95c
--  __TEXT.__const: 0x8e2c
--  __TEXT.__cstring: 0xb987
--  __TEXT.__gcc_except_tab: 0x13650
--  __TEXT.__oslogstring: 0x97ba
-+  __TEXT.__const: 0x8e34
-+  __TEXT.__cstring: 0xbe0f
-+  __TEXT.__gcc_except_tab: 0x13730
-+  __TEXT.__oslogstring: 0x983a
-   __TEXT.__ustring: 0xd8
--  __TEXT.__unwind_info: 0x7830
-+  __TEXT.__unwind_info: 0x7850
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x780
-+  __DATA_CONST.__const: 0xad8
-   __DATA_CONST.__objc_classlist: 0xb0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x30
 
-   __DATA_CONST.__objc_superrefs: 0x88
-   __DATA_CONST.__got: 0x458
-   __AUTH_CONST.__const: 0x72c8
--  __AUTH_CONST.__cfstring: 0x1860
-+  __AUTH_CONST.__cfstring: 0x1880
-   __AUTH_CONST.__objc_const: 0x1430
-   __AUTH_CONST.__weak_auth_got: 0x50
--  __AUTH_CONST.__auth_got: 0x1458
-+  __AUTH_CONST.__auth_got: 0x1460
-   __AUTH.__objc_data: 0x6e0
-   __AUTH.__data: 0x118
-   __AUTH.__thread_vars: 0x30
-
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libmorphun.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 4902
--  Symbols:   9233
+-  Symbols:   8953
 -  CStrings:  2057
 +  Functions: 4906
-+  Symbols:   9244
++  Symbols:   8964
 +  CStrings:  2123
- 
 Symbols:
 + GCC_except_table110
 + GCC_except_table121

@@ -2,94 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/SiriKitRuntime.framework/SiriKitRuntime`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__data` | `0xc948` | `0xd578` | **`+0xc30`** |
+| `__DATA.__bss` | `0xe830` | `0xddb0` | **`-0xa80`** |
+| `__DATA_DIRTY.__bss` | `0x3c00` | `0x4680` | **`+0xa80`** |
+| `__AUTH.__data` | `0x2478` | `0x1ca8` | **`-0x7d0`** |
+| `__DATA.__data` | `0x3068` | `0x2c18` | **`-0x450`** |
+| `__TEXT.__text` | `0x473b8c` | `0x473f98` | **`+0x40c`** |
+| `__AUTH.__objc_data` | `0xe28` | `0xd88` | **`-0xa0`** |
+| `__DATA_DIRTY.__objc_data` | `0x1ca0` | `0x1d40` | **`+0xa0`** |
+| `__DATA.__common` | `0x238` | `0x1e8` | **`-0x50`** |
+| `__DATA_DIRTY.__common` | `0xb90` | `0xbe0` | **`+0x50`** |
+| `__TEXT.__eh_frame` | `0x16a00` | `0x16a50` | **`+0x50`** |
+| `__TEXT.__const` | `0x15e44` | `0x15e54` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x1258` | `0x124c` | **`-0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x4be8` | `0x4be0` | **`-0x8`** |
+| `__TEXT.__swift_as_entry` | `0x8cc` | `0x8d0` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x8dc` | `0x8e0` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x473b8c
-+  __TEXT.__text: 0x473f98
-   __TEXT.__objc_methlist: 0x16b4
--  __TEXT.__const: 0x15e44
-+  __TEXT.__const: 0x15e54
-   __TEXT.__cstring: 0xe584
-   __TEXT.__swift5_typeref: 0x6ced
-   __TEXT.__swift5_capture: 0x3d10
+-3600.28.2.0.0
++3600.28.3.0.0
 
-   __TEXT.__oslogstring: 0x2330d
-   __TEXT.__swift5_proto: 0xaf4
-   __TEXT.__swift5_types: 0x7cc
--  __TEXT.__swift_as_entry: 0x8cc
--  __TEXT.__swift_as_ret: 0x8dc
--  __TEXT.__swift_as_cont: 0x1258
-+  __TEXT.__swift_as_entry: 0x8d0
-+  __TEXT.__swift_as_ret: 0x8e0
-+  __TEXT.__swift_as_cont: 0x124c
-   __TEXT.__swift5_protos: 0x100
-   __TEXT.__swift5_mpenum: 0x60
-   __TEXT.__unwind_info: 0xb850
--  __TEXT.__eh_frame: 0x16a00
-+  __TEXT.__eh_frame: 0x16a50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __AUTH_CONST.__const: 0x15e70
-   __AUTH_CONST.__cfstring: 0x1560
-   __AUTH_CONST.__objc_const: 0xe598
--  __AUTH_CONST.__auth_got: 0x4be8
--  __AUTH.__objc_data: 0xe28
--  __AUTH.__data: 0x2478
-+  __AUTH_CONST.__auth_got: 0x4be0
-+  __AUTH.__objc_data: 0xd88
-+  __AUTH.__data: 0x1ca8
-   __DATA.__objc_ivar: 0x8
--  __DATA.__data: 0x3068
--  __DATA.__bss: 0xe830
--  __DATA.__common: 0x238
--  __DATA_DIRTY.__objc_data: 0x1ca0
--  __DATA_DIRTY.__data: 0xc948
--  __DATA_DIRTY.__bss: 0x3c00
--  __DATA_DIRTY.__common: 0xb90
-+  __DATA.__data: 0x2c18
-+  __DATA.__bss: 0xddb0
-+  __DATA.__common: 0x1e8
-+  __DATA_DIRTY.__objc_data: 0x1d40
-+  __DATA_DIRTY.__data: 0xd578
-+  __DATA_DIRTY.__bss: 0x4680
-+  __DATA_DIRTY.__common: 0xbe0
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 17010
--  Symbols:   52773
 +  Functions: 17008
-+  Symbols:   52768
-   CStrings:  3591
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
 Symbols:
 + _$s11SiriKitFlow11IntentTopicV3key_SaySSG5valuetWOhTm
 + _$s14SiriKitRuntime12EncoreEngineC6action022_574785BAD1D8178F3F4D6K9A75E70E1ELL4mode8starting7context10completionyAC10ActionModeO_AA4NodeCyAA15ActingFlowAgentCGSg0abW019ConversationContextVyAC0S7OutcomeOctFyyYacfU_TA.131TQ0_
@@ -129,5 +71,4 @@ Symbols:
 - _$ss9TaskLocalC9withValue_9operation9isolation4file4lineqd__x_qd__yYaKXEScA_pSgYiSSSutYaKlFTu
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.139TQ0_
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.139Tu
-
 ```

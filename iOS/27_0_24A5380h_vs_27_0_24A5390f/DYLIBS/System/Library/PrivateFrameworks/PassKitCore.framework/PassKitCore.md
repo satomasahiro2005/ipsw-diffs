@@ -2,135 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/PassKitCore.framework/PassKitCore`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_types2`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8f7dcc` | `0x900e28` | **`+0x905c`** |
+| `__AUTH_CONST.__cfstring` | `0x781e0` | `0x78de0` | **`+0xc00`** |
+| `__TEXT.__cstring` | `0x720f4` | `0x727d7` | **`+0x6e3`** |
+| `__TEXT.__oslogstring` | `0x3b52f` | `0x3bb29` | **`+0x5fa`** |
+| `__DATA_CONST.__const` | `0x22d58` | `0x23260` | **`+0x508`** |
+| `__AUTH_CONST.__const` | `0x25e18` | `0x26268` | **`+0x450`** |
+| `__AUTH_CONST.__objc_const` | `0xcf500` | `0xcf8d8` | **`+0x3d8`** |
+| `__DATA.__bss` | `0x260e8` | `0x26468` | **`+0x380`** |
+| `__TEXT.__const` | `0x2cf60` | `0x2d1a0` | **`+0x240`** |
+| `__AUTH.__objc_data` | `0x222c0` | `0x22498` | **`+0x1d8`** |
+| `__TEXT.__objc_methlist` | `0x72178` | `0x72340` | **`+0x1c8`** |
+| `__TEXT.__unwind_info` | `0x1f960` | `0x1fb00` | **`+0x1a0`** |
+| `__TEXT.__constg_swiftt` | `0x7264` | `0x73c0` | **`+0x15c`** |
+| `__AUTH.__data` | `0x5418` | `0x5528` | **`+0x110`** |
+| `__TEXT.__swift5_capture` | `0x4ddc` | `0x4eec` | **`+0x110`** |
+| `__TEXT.__swift5_reflstr` | `0x636d` | `0x644d` | **`+0xe0`** |
+| `__DATA.__data` | `0xa0b0` | `0xa170` | **`+0xc0`** |
+| `__TEXT.__eh_frame` | `0x88a8` | `0x8968` | **`+0xc0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x24f58` | `0x24ff8` | **`+0xa0`** |
+| `__TEXT.__swift5_typeref` | `0x8a28` | `0x8ac8` | **`+0xa0`** |
+| `__TEXT.__swift5_fieldmd` | `0x7ad0` | `0x7b60` | **`+0x90`** |
+| `__AUTH_CONST.__auth_got` | `0x2f90` | `0x2fb8` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0x5358` | `0x5380` | **`+0x28`** |
+| `__TEXT.__swift5_proto` | `0x13b0` | `0x13cc` | **`+0x1c`** |
+| `__AUTH_CONST.__objc_intobj` | `0x11a0` | `0x11b8` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x3df8` | `0x3e10` | **`+0x18`** |
+| `__DATA_DIRTY.__objc_ivar` | `0x1f20` | `0x1f30` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x72a4` | `0x72b0` | **`+0xc`** |
+| `__TEXT.__swift5_types` | `0x7c0` | `0x7cc` | **`+0xc`** |
+| `__TEXT.__swift_as_cont` | `0x3ac` | `0x3b8` | **`+0xc`** |
+| `__DATA_DIRTY.__bss` | `0x1300` | `0x1308` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x6a00` | `0x6a08` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x19c` | `0x1a0` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x1c0` | `0x1c4` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -1686.3.0.0.0
--  __TEXT.__text: 0x8f7dcc
--  __TEXT.__objc_methlist: 0x72178
--  __TEXT.__const: 0x2cf60
--  __TEXT.__swift5_typeref: 0x8a28
--  __TEXT.__cstring: 0x720f4
--  __TEXT.__constg_swiftt: 0x7264
--  __TEXT.__swift5_reflstr: 0x636d
--  __TEXT.__swift5_fieldmd: 0x7ad0
 +1689.3.0.0.0
-+  __TEXT.__text: 0x900e28
-+  __TEXT.__objc_methlist: 0x72340
-+  __TEXT.__const: 0x2d1a0
-+  __TEXT.__swift5_typeref: 0x8ac8
-+  __TEXT.__cstring: 0x727d7
-+  __TEXT.__constg_swiftt: 0x73c0
-+  __TEXT.__swift5_reflstr: 0x644d
-+  __TEXT.__swift5_fieldmd: 0x7b60
-   __TEXT.__swift5_builtin: 0x4ec
-   __TEXT.__swift5_assocty: 0xde0
--  __TEXT.__swift5_proto: 0x13b0
--  __TEXT.__swift5_types: 0x7c0
--  __TEXT.__swift5_capture: 0x4ddc
--  __TEXT.__oslogstring: 0x3b52f
--  __TEXT.__swift_as_entry: 0x19c
--  __TEXT.__swift_as_ret: 0x1c0
--  __TEXT.__swift_as_cont: 0x3ac
-+  __TEXT.__swift5_proto: 0x13cc
-+  __TEXT.__swift5_types: 0x7cc
-+  __TEXT.__swift5_capture: 0x4eec
-+  __TEXT.__oslogstring: 0x3bb29
-+  __TEXT.__swift_as_entry: 0x1a0
-+  __TEXT.__swift_as_ret: 0x1c4
-+  __TEXT.__swift_as_cont: 0x3b8
-   __TEXT.__swift5_protos: 0x6c
-   __TEXT.__swift5_mpenum: 0x128
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__gcc_except_tab: 0x6a00
-+  __TEXT.__gcc_except_tab: 0x6a08
-   __TEXT.__ustring: 0x1e6c
--  __TEXT.__unwind_info: 0x1f960
--  __TEXT.__eh_frame: 0x88a8
-+  __TEXT.__unwind_info: 0x1fb00
-+  __TEXT.__eh_frame: 0x8968
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x22d58
--  __DATA_CONST.__objc_classlist: 0x3df8
-+  __DATA_CONST.__const: 0x23260
-+  __DATA_CONST.__objc_classlist: 0x3e10
-   __DATA_CONST.__objc_catlist: 0x110
-   __DATA_CONST.__objc_protolist: 0x5c8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x24f58
-+  __DATA_CONST.__objc_selrefs: 0x24ff8
-   __DATA_CONST.__objc_protorefs: 0x260
-   __DATA_CONST.__objc_superrefs: 0x3140
-   __DATA_CONST.__objc_arraydata: 0x2810
--  __DATA_CONST.__got: 0x5358
--  __AUTH_CONST.__const: 0x25e18
--  __AUTH_CONST.__cfstring: 0x781e0
--  __AUTH_CONST.__objc_const: 0xcf500
-+  __DATA_CONST.__got: 0x5380
-+  __AUTH_CONST.__const: 0x26268
-+  __AUTH_CONST.__cfstring: 0x78de0
-+  __AUTH_CONST.__objc_const: 0xcf8d8
-   __AUTH_CONST.__objc_arrayobj: 0xd20
--  __AUTH_CONST.__objc_intobj: 0x11a0
-+  __AUTH_CONST.__objc_intobj: 0x11b8
-   __AUTH_CONST.__objc_dictobj: 0x15b8
-   __AUTH_CONST.__objc_doubleobj: 0x2b0
--  __AUTH_CONST.__auth_got: 0x2f90
--  __AUTH.__objc_data: 0x222c0
--  __AUTH.__data: 0x5418
-+  __AUTH_CONST.__auth_got: 0x2fb8
-+  __AUTH.__objc_data: 0x22498
-+  __AUTH.__data: 0x5528
-   __AUTH.__thread_vars: 0x18
-   __AUTH.__thread_bss: 0x8
--  __DATA.__objc_ivar: 0x72a4
--  __DATA.__data: 0xa0b0
--  __DATA.__bss: 0x260e8
-+  __DATA.__objc_ivar: 0x72b0
-+  __DATA.__data: 0xa170
-+  __DATA.__bss: 0x26468
-   __DATA.__common: 0xc49
--  __DATA_DIRTY.__objc_ivar: 0x1f20
-+  __DATA_DIRTY.__objc_ivar: 0x1f30
-   __DATA_DIRTY.__objc_data: 0x5eb0
-   __DATA_DIRTY.__data: 0x180
--  __DATA_DIRTY.__bss: 0x1300
-+  __DATA_DIRTY.__bss: 0x1308
-   __DATA_DIRTY.__common: 0x30
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 55281
--  Symbols:   90906
+-  Symbols:   78600
 -  CStrings:  21418
 +  Functions: 55447
-+  Symbols:   91059
++  Symbols:   78741
 +  CStrings:  21542
- 
 Symbols:
 + +[PKAnalyticsReporter(AppleCash) reportVIWalletEngagementForBillSplitWithSessionID:evenSplit:]
 + +[PKAnalyticsReporter(PassEngagement) _baseEngagementEventDictForPass:]
@@ -322,21 +245,6 @@ Symbols:
 + ___swift_store_extra_inhabitant_index.118Tm
 + _associated conformance 11PassKitCore27RemoteNetworkPaymentCodableO12HostMessagesO07InitialD17LinkIdRenderEventV10CodingKeys33_844B7028A69E4A0699BCD01BE3B4FA5ELLOs0O3KeyAAs23CustomStringConvertible
 + _associated conformance 11PassKitCore27RemoteNetworkPaymentCodableO12HostMessagesO07InitialD17LinkIdRenderEventV10CodingKeys33_844B7028A69E4A0699BCD01BE3B4FA5ELLOs0O3KeyAAs28CustomDebugStringConvertible
-+ _objc_msgSend$_baseEngagementEventDictForPass:
-+ _objc_msgSend$addPassesFromArchiveAtFileURL:completionHandler:
-+ _objc_msgSend$boolRestrictionForFeature:
-+ _objc_msgSend$flight:connectsToFlight:maximumLayover:
-+ _objc_msgSend$initWithAuthorizations:
-+ _objc_msgSend$initWithLegs:
-+ _objc_msgSend$insertOrUpdateDeviceOriginatedNearbyPeerPaymentTransactionWithIdentifier:secondarySourceDescription:secondarySourceFPANIdentifier:memo:counterpartAppearanceData:completion:
-+ _objc_msgSend$legs
-+ _objc_msgSend$peerPaymentSubType
-+ _objc_msgSend$prepareForNewRequestWithCompletion:
-+ _objc_msgSend$primaryVerificationMethod
-+ _objc_msgSend$removeAllPendingProvisioningsWithCompletion:
-+ _objc_msgSend$setEvictsObjectsWhenApplicationEntersBackground:
-+ _objc_msgSend$setPeerPaymentSubtype:
-+ _objc_msgSend$setTapDate:
 + _symbolic SaySo8PKFlightCG
 + _symbolic So33PKPaymentAuthorizationCoordinatorCSg
 + _symbolic _____ 11PassKitCore14JourneyBuilder33_AA7C74FA70349A1C32ADC92BDF704A46LLC
@@ -406,9 +314,6 @@ Symbols:
 - ___swift_get_extra_inhabitant_index.116Tm
 - ___swift_store_extra_inhabitant_index.117Tm
 - _notify_get_state
-- _objc_msgSend$insertOrUpdateDeviceOriginatedNearbyPeerPaymentTransactionWithIdentifier:memo:counterpartAppearanceData:completion:
-- _objc_msgSend$openOrderTrackingSettings
-- _objc_msgSend$usingSynchronousProxy:canAddCarKeyPassWithConfiguration:completion:
 CStrings:
 + "%@ Preflight: Failed to remove stale pending provisionings before starting. Error: %@. %@"
 + "15"

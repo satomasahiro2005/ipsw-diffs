@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/ISPServices.framework/ISPServices`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_1 : 12 -> 28

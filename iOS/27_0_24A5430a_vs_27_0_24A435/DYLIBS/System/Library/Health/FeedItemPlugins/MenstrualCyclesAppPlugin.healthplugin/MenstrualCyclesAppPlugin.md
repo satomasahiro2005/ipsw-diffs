@@ -2,14 +2,15 @@
 
 > `/System/Library/Health/FeedItemPlugins/MenstrualCyclesAppPlugin.healthplugin/MenstrualCyclesAppPlugin`
 
-```diff
+### Section Size Changes
 
- 7027.0.72.2.7
--  __TEXT.__text: 0x551eb8
-+  __TEXT.__text: 0x551fd4
-   __TEXT.__objc_methlist: 0x58d4
-   __TEXT.__cstring: 0x180e6
-   __TEXT.__const: 0x269d4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x551eb8` | `0x551fd4` | **`+0x11c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1d91322b4 -> sub_1d970e2b4 : 224 -> 228
 ~ sub_1d9132394 -> sub_1d970e398 : 4320 -> 4356

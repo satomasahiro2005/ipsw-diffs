@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/LocalAuthenticationCoreUI.framework/LocalAuthenticationCoreUI`
 
-```diff
+### Section Size Changes
 
- 2319.0.63.0.0
--  __TEXT.__text: 0x9bf00
-+  __TEXT.__text: 0x9bf48
-   __TEXT.__objc_methlist: 0x302c
-   __TEXT.__const: 0x6c44
-   __TEXT.__cstring: 0x2f46
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9bf00` | `0x9bf48` | **`+0x48`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s25LocalAuthenticationCoreUI21LACUIRatchetViewModelC8evaluate33_149E4B8064CDB5BECE4AD0D18E10DC5BLLSDys11AnyHashableVypGSgyYaKFTY2_ : 788 -> 792
 ~ _$s25LocalAuthenticationCoreUI21LACUIRatchetViewModelC15uiConfiguration33_149E4B8064CDB5BECE4AD0D18E10DC5BLLAA018LACUIAuthCountdownI0Vvg : 5080 -> 5084

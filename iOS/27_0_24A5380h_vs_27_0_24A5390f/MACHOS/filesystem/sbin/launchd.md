@@ -2,85 +2,51 @@
 
 > `/sbin/launchd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5a1b8` | `0x5a620` | **`+0x468`** |
+| `__TEXT.__cstring` | `0x1648e` | `0x16514` | **`+0x86`** |
+| `__TEXT.__gcc_except_tab` | `0xa8` | `0xc0` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x10f8` | `0x1110` | **`+0x18`** |
+| `__DATA.__bss` | `0xdd8` | `0xde8` | **`+0x10`** |
+| `__TEXT.__auth_stubs` | `0x26c0` | `0x26d0` | **`+0x10`** |
+| `__DATA.__data` | `0xac8` | `0xac0` | **`-0x8`** |
+| `__DATA_CONST.__auth_got` | `0x1368` | `0x1370` | **`+0x8`** |
+| `__DATA_CONST.__const` | `0x5998` | `0x59a0` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA.__os_assumes_log`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_classlist`
 - `__TEXT.__const`
 - `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_capture`
 - `__TEXT.__dof_launchd`
 - `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__os_assumes_log`
+- `__TEXT.__init_offsets`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_typeref`
+
+### Other Changes
 
 ```diff
 
 -3298.0.10.0.0
--  __TEXT.__text: 0x5a1b8
--  __TEXT.__auth_stubs: 0x26c0
 +3298.0.21.0.0
-+  __TEXT.__text: 0x5a620
-+  __TEXT.__auth_stubs: 0x26d0
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__objc_methlist: 0x20c
-   __TEXT.__const: 0x500
 
-   __TEXT.__swift5_fieldmd: 0x60
-   __TEXT.__swift5_proto: 0x8
-   __TEXT.__swift5_types: 0xc
--  __TEXT.__cstring: 0x1648e
-+  __TEXT.__cstring: 0x16514
-   __TEXT.__swift5_capture: 0x14
-   __TEXT.__objc_methtype: 0xf
-   __TEXT.__objc_classname: 0x212
-   __TEXT.__objc_methname: 0x1c
--  __TEXT.__gcc_except_tab: 0xa8
-+  __TEXT.__gcc_except_tab: 0xc0
-   __TEXT.__oslogstring: 0xd5
-   __TEXT.__config: 0x2a71
-   __TEXT.__dof_launchd: 0x67c
--  __TEXT.__unwind_info: 0x10f8
-+  __TEXT.__unwind_info: 0x1110
-   __TEXT.__eh_frame: 0x210
--  __DATA_CONST.__const: 0x5998
-+  __DATA_CONST.__const: 0x59a0
-   __DATA_CONST.__objc_classlist: 0xc0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0xb0
--  __DATA_CONST.__auth_got: 0x1368
-+  __DATA_CONST.__auth_got: 0x1370
-   __DATA_CONST.__got: 0x210
-   __DATA_CONST.__auth_ptr: 0x98
-   __DATA.__objc_const: 0xdf0
-   __DATA.__objc_selrefs: 0x8
-   __DATA.__objc_data: 0x6e0
--  __DATA.__data: 0xac8
-+  __DATA.__data: 0xac0
-   __DATA.__os_assumes_log: 0x8
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0xdd8
-+  __DATA.__bss: 0xde8
-   __DATA.__common: 0x7f0
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
 -  Functions: 1472
 -  Symbols:   706
 -  CStrings:  2805
 +  Functions: 1477
 +  Symbols:   707
 +  CStrings:  2808
- 
 Symbols:
 + _posix_spawnattr_set_shared_region_config_np
 CStrings:

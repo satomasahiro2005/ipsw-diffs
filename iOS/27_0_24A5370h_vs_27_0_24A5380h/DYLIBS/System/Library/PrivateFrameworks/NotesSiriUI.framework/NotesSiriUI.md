@@ -2,78 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/NotesSiriUI.framework/NotesSiriUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x154b8` | `0x1635c` | **`+0xea4`** |
+| `__TEXT.__swift5_typeref` | `0x404f` | `0x4351` | **`+0x302`** |
+| `__AUTH_CONST.__const` | `0x678` | `0x718` | **`+0xa0`** |
+| `__DATA.__data` | `0x9b8` | `0xa08` | **`+0x50`** |
+| `__TEXT.__swift5_capture` | `0x160` | `0x1a0` | **`+0x40`** |
+| `__TEXT.__const` | `0xd30` | `0xd60` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x8d0` | `0x8f0` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x468` | `0x488` | **`+0x20`** |
+| `__AUTH_CONST.__objc_const` | `0xc08` | `0xc10` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5e0` | `0x5e8` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x5e4` | `0x5ec` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x154b8
--  __TEXT.__objc_methlist: 0x5e4
--  __TEXT.__const: 0xd30
--  __TEXT.__swift5_typeref: 0x404f
-+  __TEXT.__text: 0x1635c
-+  __TEXT.__objc_methlist: 0x5ec
-+  __TEXT.__const: 0xd60
-+  __TEXT.__swift5_typeref: 0x4351
-   __TEXT.__swift5_fieldmd: 0x460
-   __TEXT.__constg_swiftt: 0x5bc
-   __TEXT.__swift5_reflstr: 0x471
-   __TEXT.__swift5_assocty: 0xf8
-   __TEXT.__cstring: 0x115
--  __TEXT.__swift5_capture: 0x160
-+  __TEXT.__swift5_capture: 0x1a0
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift5_proto: 0x30
-   __TEXT.__swift5_types: 0x2c
-   __TEXT.__oslogstring: 0x23b
--  __TEXT.__unwind_info: 0x468
-+  __TEXT.__unwind_info: 0x488
-   __TEXT.__eh_frame: 0x120
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+-2991.0.0.0.0
++2996.0.0.0.0
 
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5e0
-+  __DATA_CONST.__objc_selrefs: 0x5e8
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x678
--  __AUTH_CONST.__objc_const: 0xc08
--  __AUTH_CONST.__auth_got: 0x8d0
-+  __AUTH_CONST.__const: 0x718
-+  __AUTH_CONST.__objc_const: 0xc10
-+  __AUTH_CONST.__auth_got: 0x8f0
-   __AUTH.__objc_data: 0x190
-   __AUTH.__data: 0x5f0
--  __DATA.__data: 0x9b8
-+  __DATA.__data: 0xa08
-   __DATA.__bss: 0x5d0
-   __DATA.__common: 0x90
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 396
--  Symbols:   675
+-  Symbols:   495
 +  Functions: 405
-+  Symbols:   689
-   CStrings:  17
- 
-Sections:
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
++  Symbols:   501
 Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyAA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonG0Rd__lFQOyAA0I0VyACy09NotesSiriB00jk4ListE0V7NoteRow33_2F2BF5D6983523FA4E1186FB6AD10258LLVAA01_D13ShapeModifierVyAA9RectangleVGGG_AA05PlainiG0VQo_AL0mn13AccessibilityW0ANLLVGAA16_FlexFrameLayoutVGSgAaDHpA3_AaDHPA0_AaDHPqd0__AaDHD3_AYHO_A_AA0eW0HPyHCHC_A2_AAA5_HPyHCHC_HC
 + _get_witness_table 7SwiftUI6IDViewVyAA16SubscriptionViewVySo20NSNotificationCenterC10FoundationE9PublisherVAA6ZStackVyAA12TupleContentVyAA08ModifiedL0VyAA6VStackVyANyAA6HStackVyAA012_ConditionalL0VyAPyAA0E0PAAE11buttonStyleyQrqd__AA015PrimitiveButtonR0Rd__lFQOyAA0T0VyAPyAPyAPyAPyARyANyAPyAA6SpacerVAA12_FrameLayoutVG_APyATyANyA5__AVyARyANyAA4TextV_A5_ATyANyAPyAA5ImageVAA011_ForegroundR8ModifierVyAA017HierarchicalShapeR0VGG_A7_QPGGQPGGARyANyA7__A5_A7_A7_QPGGGA5_QPGGAA05_FlexvW0VGA5_QPGGA26_GAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGA14_GAA08_PaddingW0VGG_AA05PlaintR0VQo_AA31AccessibilityAttachmentModifierVGAVyAPyAPyAxAEAYyQrqd__AaZRd__lFQOyA0_y09NotesSiriB009NotesSiriX13EditorWrapperVG_A44_Qo_A47_GA40_GA54_GGG_APyAPyAPyAxAEAYyQrqd__AaZRd__lFQOyA0_y07SnippetB0013ReferenceRichE0VG_A44_Qo_A40_GAA19_BackgroundModifierVyA49_023NotesSiriBackgroundTintE0VGGA26_GSgQPGGAA21_TraitWritingModifierVyAA14ZIndexTraitKeyVGG_APyAxAEAYyQrqd__AaZRd__lFQOyA0_yAPyAPyAA9RectangleVA11_yAA5ColorVGGAA14_OpacityEffectVGG_A44_Qo_A79_GSgQPGGGAH4UUIDVGAaWHPyHC
@@ -137,5 +92,4 @@ Symbols:
 - _symbolic _____y_____y_____y_____yACyACyACyACy_____y_____yACy__________G_ACyAAyAEyAH_AByADyAEy______AhAyAEyACy__________y_____GG_AIQPGGQPGGADyAEyAI_Ah2IQPGGGAHQPGG_____GAHQPGGAXG_____y_____SgGGAMG_____G_Qo______GAByACyACy_____y______Qo_A10_GA7_GA14_GGG_ACyACyACy_____y______Qo_A7_G_____y_____GGAXGSgt 7SwiftUI6HStackV AA19_ConditionalContentV AA08ModifiedE0V AA4ViewPAAE12onTapGesture5count7performQrSi_yyctFQO AA6VStackV AA05TupleE0V AA6SpacerV AA12_FrameLayoutV AA4TextV AA5ImageV AA24_ForegroundStyleModifierV AA017HierarchicalShapeU0V AA05_FlexpQ0V AA022_EnvironmentKeyWritingV0V AA4FontV AA08_PaddingQ0V AA023AccessibilityAttachmentV0V AiAEAjkLQrSi_yyctFQO 09NotesSiriB009NotesSiriR13EditorWrapperV AiAEAjkLQrSi_yyctFQO 07SnippetB0013ReferenceRichG0V AA011_BackgroundV0V A11_023NotesSiriBackgroundTintG0V
 - _symbolic _____y_____y_____y_____y_____yAAy_____yAAyAAyAAyAAyAByACyAAy__________G_AAyADyACyAH_AEyAByACy______AhDyACyAAy__________y_____GG_AIQPGGQPGGAByACyAI_Ah2IQPGGGAHQPGG_____GAHQPGGAXG_____y_____SgGGAMG_____G_Qo______GAEyAAyAAy_____y______Qo_A10_GA7_GA14_GGG_AAyAAyAAy_____y______Qo_A7_G_____y_____GGAXGSgQPGG_____y_____GG 7SwiftUI15ModifiedContentV AA6VStackV AA05TupleD0V AA6HStackV AA012_ConditionalD0V AA4ViewPAAE12onTapGesture5count7performQrSi_yyctFQO AA6SpacerV AA12_FrameLayoutV AA4TextV AA5ImageV AA24_ForegroundStyleModifierV AA017HierarchicalShapeU0V AA05_FlexpQ0V AA022_EnvironmentKeyWritingV0V AA4FontV AA08_PaddingQ0V AA023AccessibilityAttachmentV0V AmAEAnoPQrSi_yyctFQO 09NotesSiriB009NotesSiriR13EditorWrapperV AmAEAnoPQrSi_yyctFQO 07SnippetB0013ReferenceRichI0V AA011_BackgroundV0V A11_023NotesSiriBackgroundTintI0V AA013_TraitWritingV0V AA14ZIndexTraitKeyV
 - _symbolic _____y_____y_____y_____y_____yAAy_____yAAyAAyAAyAAyAByACyAAy__________G_AAyADyACyAH_AEyAByACy______AhDyACyAAy__________y_____GG_AIQPGGQPGGAByACyAI_Ah2IQPGGGAHQPGG_____GAHQPGGAXG_____y_____SgGGAMG_____G_Qo______GAEyAAyAAy_____y______Qo_A10_GA7_GA14_GGG_AAyAAyAAy_____y______Qo_A7_G_____y_____GGAXGSgQPGG_____y_____GG_AAy_____yAAyAAy_____AKy_____GG_____G_Qo_A32_GSgt 7SwiftUI15ModifiedContentV AA6VStackV AA05TupleD0V AA6HStackV AA012_ConditionalD0V AA4ViewPAAE12onTapGesture5count7performQrSi_yyctFQO AA6SpacerV AA12_FrameLayoutV AA4TextV AA5ImageV AA24_ForegroundStyleModifierV AA017HierarchicalShapeU0V AA05_FlexpQ0V AA022_EnvironmentKeyWritingV0V AA4FontV AA08_PaddingQ0V AA023AccessibilityAttachmentV0V AmAEAnoPQrSi_yyctFQO 09NotesSiriB009NotesSiriR13EditorWrapperV AmAEAnoPQrSi_yyctFQO 07SnippetB0013ReferenceRichI0V AA011_BackgroundV0V A11_023NotesSiriBackgroundTintI0V AA013_TraitWritingV0V AA14ZIndexTraitKeyV AmAEAnoPQrSi_yyctFQO AA9RectangleV AA5ColorV AA14_OpacityEffectV
-
 ```

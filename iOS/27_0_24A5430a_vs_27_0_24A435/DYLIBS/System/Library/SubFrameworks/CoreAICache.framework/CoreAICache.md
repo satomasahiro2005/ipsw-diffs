@@ -2,14 +2,15 @@
 
 > `/System/Library/SubFrameworks/CoreAICache.framework/CoreAICache`
 
-```diff
+### Section Size Changes
 
- 3600.83.2.11.1
--  __TEXT.__text: 0x7090
-+  __TEXT.__text: 0x7094
-   __TEXT.__const: 0x470
-   __TEXT.__cstring: 0x425
-   __TEXT.__swift5_typeref: 0x108
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7090` | `0x7094` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2bb4a50c0 -> sub_2bc3070c0 : 288 -> 292
+~ sub_2bb3910c0 -> sub_2bc1e20c0 : 288 -> 292
 ```

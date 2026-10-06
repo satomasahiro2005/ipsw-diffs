@@ -2,70 +2,29 @@
 
 > `/System/Library/Frameworks/MapKit.framework/MapKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__objc_const` | `0x45ee8` | `0x45f18` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x26c74` | `0x26c94` | **`+0x20`** |
+| `__TEXT.__oslogstring` | `0x7ea8` | `0x7ebc` | **`+0x14`** |
+| `__TEXT.__text` | `0x291300` | `0x29130c` | **`+0xc`** |
+| `__DATA.__bss` | `0x4720` | `0x4718` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x14bc0` | `0x14bc8` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x323c` | `0x3240` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2552.31.6.17.11
--  __TEXT.__text: 0x26c0ec
--  __TEXT.__objc_methlist: 0x26c74
 +2552.31.6.17.16
-+  __TEXT.__text: 0x26c0f8
-+  __TEXT.__objc_methlist: 0x26c94
-   __TEXT.__const: 0x6920
-   __TEXT.__dlopen_cstrs: 0xbc
-   __TEXT.__cstring: 0x17beb
 
-   __TEXT.__swift5_protos: 0x70
-   __TEXT.__swift5_proto: 0x208
-   __TEXT.__swift5_types: 0x2d0
--  __TEXT.__oslogstring: 0x7ea8
-+  __TEXT.__oslogstring: 0x7ebc
-   __TEXT.__swift5_capture: 0x3a4
-   __TEXT.__swift_as_entry: 0x13c
-   __TEXT.__swift_as_ret: 0x134
-   __TEXT.__swift_as_cont: 0x1cc
-   __TEXT.__gcc_except_tab: 0x6298
-   __TEXT.__ustring: 0x19c
--  __TEXT.__unwind_info: 0xc4e0
-+  __TEXT.__unwind_info: 0xc4e8
-   __TEXT.__eh_frame: 0x2424
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_protolist: 0x660
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x14bc0
-+  __DATA_CONST.__objc_selrefs: 0x14bc8
-   __DATA_CONST.__objc_protorefs: 0xe8
-   __DATA_CONST.__objc_superrefs: 0xda0
-   __DATA_CONST.__objc_arraydata: 0x6b0
-   __DATA_CONST.__got: 0x2498
-   __AUTH_CONST.__const: 0x6878
-   __AUTH_CONST.__cfstring: 0x1bcc0
--  __AUTH_CONST.__objc_const: 0x45ee8
-+  __AUTH_CONST.__objc_const: 0x45f18
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_doubleobj: 0x220
-   __AUTH_CONST.__objc_intobj: 0xf18
-
-   __AUTH_CONST.__auth_got: 0x2098
-   __AUTH.__objc_data: 0x87c0
-   __AUTH.__data: 0x2d48
--  __DATA.__objc_ivar: 0x323c
-+  __DATA.__objc_ivar: 0x3240
-   __DATA.__data: 0x5608
-   __DATA.__common: 0x70
-   __DATA_DIRTY.__objc_data: 0x2648
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15078
 -  Symbols:   25339
 +  Functions: 15080
 +  Symbols:   25342
-   CStrings:  4616
- 
 Symbols:
 + -[MKAnnotationManager hasPendingVisibleAnnotationsUpdate]
 + -[MKPitchButton _updateEnabledState]

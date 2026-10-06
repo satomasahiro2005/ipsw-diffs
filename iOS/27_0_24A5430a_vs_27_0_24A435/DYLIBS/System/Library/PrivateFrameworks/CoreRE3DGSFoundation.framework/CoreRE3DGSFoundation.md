@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CoreRE3DGSFoundation.framework/CoreRE3DGSFoundation`
 
-```diff
+### Section Size Changes
 
- 20.0.0.0.0
--  __TEXT.__text: 0x8f9f4
-+  __TEXT.__text: 0x8fc04
-   __TEXT.__objc_methlist: 0x146c
-   __TEXT.__const: 0x4f5d
-   __TEXT.__gcc_except_tab: 0xaba4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8f9f4` | `0x8fc04` | **`+0x210`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__16vectorIN8nlohmann16json_abi_v3_11_310basic_jsonINS_3mapES0_NS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEbxydS8_NS2_14adl_serializerENS0_IhNS8_IhEEEEvEENS8_ISE_EEE7reserveEm : 224 -> 220
 ~ __ZN8nlohmann16json_abi_v3_11_36detail9dtoa_impl6grisu2IdEEvPcRiS5_T_ : 308 -> 312

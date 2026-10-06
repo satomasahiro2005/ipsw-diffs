@@ -2,112 +2,61 @@
 
 > `/System/Library/PrivateFrameworks/VoiceShortcuts.framework/VoiceShortcuts`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x149f94` | `0x13fbc4` | **`-0xa3d0`** |
+| `__TEXT.__oslogstring` | `0xfd79` | `0xe838` | **`-0x1541`** |
+| `__TEXT.__cstring` | `0xec22` | `0xe2b0` | **`-0x972`** |
+| `__DATA.__bss` | `0x46c0` | `0x4db0` | **`+0x6f0`** |
+| `__AUTH_CONST.__const` | `0xa5d8` | `0xab38` | **`+0x560`** |
+| `__TEXT.__eh_frame` | `0x8dd8` | `0x8918` | **`-0x4c0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4880` | `0x4448` | **`-0x438`** |
+| `__AUTH_CONST.__objc_const` | `0xa0d8` | `0x9d68` | **`-0x370`** |
+| `__TEXT.__objc_methlist` | `0x568c` | `0x534c` | **`-0x340`** |
+| `__TEXT.__const` | `0x6918` | `0x6c48` | **`+0x330`** |
+| `__TEXT.__swift5_capture` | `0x2ee8` | `0x315c` | **`+0x274`** |
+| `__DATA_CONST.__got` | `0x1a28` | `0x18a0` | **`-0x188`** |
+| `__DATA_CONST.__const` | `0x1e68` | `0x1d10` | **`-0x158`** |
+| `__TEXT.__unwind_info` | `0x4f88` | `0x4e38` | **`-0x150`** |
+| `__TEXT.__gcc_except_tab` | `0x90c` | `0x824` | **`-0xe8`** |
+| `__AUTH_CONST.__cfstring` | `0x3f40` | `0x3e60` | **`-0xe0`** |
+| `__DATA_CONST.__objc_catlist` | `0x110` | `0x68` | **`-0xa8`** |
+| `__TEXT.__swift5_typeref` | `0x350b` | `0x35b1` | **`+0xa6`** |
+| `__AUTH.__data` | `0x1400` | `0x14a0` | **`+0xa0`** |
+| `__TEXT.__constg_swiftt` | `0x223c` | `0x22b4` | **`+0x78`** |
+| `__TEXT.__swift5_assocty` | `0x618` | `0x690` | **`+0x78`** |
+| `__DATA.__data` | `0x2800` | `0x2860` | **`+0x60`** |
+| `__TEXT.__swift5_fieldmd` | `0x1834` | `0x1888` | **`+0x54`** |
+| `__AUTH.__objc_data` | `0x8b0` | `0x900` | **`+0x50`** |
+| `__TEXT.__swift_as_cont` | `0x79c` | `0x74c` | **`-0x50`** |
+| `__DATA_DIRTY.__data` | `0x2558` | `0x2518` | **`-0x40`** |
+| `__TEXT.__swift5_proto` | `0x410` | `0x448` | **`+0x38`** |
+| `__AUTH_CONST.__auth_got` | `0x2110` | `0x20f0` | **`-0x20`** |
+| `__TEXT.__swift_as_ret` | `0x344` | `0x324` | **`-0x20`** |
+| `__TEXT.__swift5_builtin` | `0x140` | `0x154` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x310` | `0x320` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x180` | `0x190` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x1541` | `0x1551` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x1f8` | `0x208` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x394` | `0x3a0` | **`+0xc`** |
+| `__DATA.__common` | `0x10` | `0x18` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x328` | `0x324` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -5037.109.0.0.0
--  __TEXT.__text: 0x13d05c
--  __TEXT.__objc_methlist: 0x568c
--  __TEXT.__const: 0x6918
 +5110.0.8.0.0
-+  __TEXT.__text: 0x1332a8
-+  __TEXT.__objc_methlist: 0x534c
-+  __TEXT.__const: 0x6c48
-   __TEXT.__dlopen_cstrs: 0x1e1
--  __TEXT.__oslogstring: 0xfd79
--  __TEXT.__swift5_typeref: 0x350b
--  __TEXT.__swift5_fieldmd: 0x1834
--  __TEXT.__constg_swiftt: 0x223c
--  __TEXT.__swift5_reflstr: 0x1541
--  __TEXT.__swift5_builtin: 0x140
--  __TEXT.__swift5_assocty: 0x618
--  __TEXT.__swift5_capture: 0x2ee8
--  __TEXT.__cstring: 0xec22
--  __TEXT.__swift5_proto: 0x410
--  __TEXT.__swift5_types: 0x1f8
--  __TEXT.__swift_as_entry: 0x328
--  __TEXT.__swift_as_ret: 0x344
--  __TEXT.__swift_as_cont: 0x79c
-+  __TEXT.__oslogstring: 0xe838
-+  __TEXT.__swift5_typeref: 0x35b1
-+  __TEXT.__swift5_fieldmd: 0x1888
-+  __TEXT.__constg_swiftt: 0x22b4
-+  __TEXT.__swift5_reflstr: 0x1551
-+  __TEXT.__swift5_builtin: 0x154
-+  __TEXT.__swift5_assocty: 0x690
-+  __TEXT.__swift5_capture: 0x315c
-+  __TEXT.__cstring: 0xe2b0
-+  __TEXT.__swift5_proto: 0x448
-+  __TEXT.__swift5_types: 0x208
-+  __TEXT.__swift_as_entry: 0x324
-+  __TEXT.__swift_as_ret: 0x324
-+  __TEXT.__swift_as_cont: 0x74c
-   __TEXT.__swift5_protos: 0x4c
-   __TEXT.__swift5_mpenum: 0x28
--  __TEXT.__gcc_except_tab: 0x90c
-+  __TEXT.__gcc_except_tab: 0x824
-   __TEXT.__ustring: 0x44
--  __TEXT.__unwind_info: 0x5e70
--  __TEXT.__eh_frame: 0x8dd8
-+  __TEXT.__unwind_info: 0x5d08
-+  __TEXT.__eh_frame: 0x8918
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1e68
--  __DATA_CONST.__objc_classlist: 0x310
--  __DATA_CONST.__objc_catlist: 0x110
-+  __DATA_CONST.__const: 0x1d10
-+  __DATA_CONST.__objc_classlist: 0x320
-+  __DATA_CONST.__objc_catlist: 0x68
-   __DATA_CONST.__objc_protolist: 0x2b8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4880
-+  __DATA_CONST.__objc_selrefs: 0x4448
-   __DATA_CONST.__objc_protorefs: 0xd0
--  __DATA_CONST.__objc_superrefs: 0x180
-+  __DATA_CONST.__objc_superrefs: 0x190
-   __DATA_CONST.__objc_arraydata: 0x40
--  __DATA_CONST.__got: 0x1a28
--  __AUTH_CONST.__const: 0xa5d8
--  __AUTH_CONST.__cfstring: 0x3f40
--  __AUTH_CONST.__objc_const: 0xa0d8
-+  __DATA_CONST.__got: 0x18a0
-+  __AUTH_CONST.__const: 0xab38
-+  __AUTH_CONST.__cfstring: 0x3e60
-+  __AUTH_CONST.__objc_const: 0x9d68
-   __AUTH_CONST.__objc_intobj: 0xc0
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x2110
--  __AUTH.__objc_data: 0x8b0
--  __AUTH.__data: 0x1400
--  __DATA.__objc_ivar: 0x394
--  __DATA.__data: 0x2800
--  __DATA.__common: 0x10
-+  __AUTH_CONST.__auth_got: 0x20f0
-+  __AUTH.__objc_data: 0x900
-+  __AUTH.__data: 0x14a0
-+  __DATA.__objc_ivar: 0x3a0
-+  __DATA.__data: 0x2860
-+  __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0x13c0
--  __DATA_DIRTY.__data: 0x2558
-+  __DATA_DIRTY.__data: 0x2518
-   __DATA_DIRTY.__crash_info: 0x148
-   __DATA_DIRTY.__bss: 0x2e40
-   __DATA_DIRTY.__common: 0x20
 
-   - /usr/lib/swift/libswift_DarwinFoundation3.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8058
--  Symbols:   7404
+-  Symbols:   5418
 -  CStrings:  2309
 +  Functions: 8036
-+  Symbols:   7128
++  Symbols:   5273
 +  CStrings:  2207
- 
 Symbols:
 + -[WFTriggerEventRunner completeInFlightRunForTestingWithClient:error:cancelled:]
 + -[WFTriggerEventRunner handleFinishedRunForClient:error:cancelled:]
@@ -208,19 +157,6 @@ Symbols:
 + _associated conformance SC11VCErrorCodeLeVSHSCSQ
 + _associated conformance So11VCErrorCodeV10Foundation06_ErrorB8ProtocolSC01_D4TypeAcDP_AC21_BridgedStoredNSError
 + _associated conformance So11VCErrorCodeV10Foundation06_ErrorB8ProtocolSCSQ
-+ _objc_msgSend$addTarget:selector:
-+ _objc_msgSend$client
-+ _objc_msgSend$handleFinishedRunForClient:error:cancelled:
-+ _objc_msgSend$hasUnifiedAutomationTriggers
-+ _objc_msgSend$initWithClient:triggerKey:workflowIdentifier:eventInfo:runEvent:startDate:
-+ _objc_msgSend$isTombstoned
-+ _objc_msgSend$numberOfEnabledUnifiedAutomationTriggers
-+ _objc_msgSend$removeTarget:selector:
-+ _objc_msgSend$resetTriggerNotificationLevels
-+ _objc_msgSend$runEvent
-+ _objc_msgSend$sortedValidRunEventsForTriggerKey:error:
-+ _objc_msgSend$startDate
-+ _objc_msgSend$takeInFlightRunForClient:
 + _swift_initStaticObject
 + _symbolic SDySo19WFUnifiedTriggerKeyC_____G 11WorkflowKit12WFNewTriggerC
 + _symbolic Say_____G 11WorkflowKit36WFUnifiedAutomationTriggerDescriptorC
@@ -494,150 +430,6 @@ Symbols:
 - ___swift_project_boxed_opaque_existential_0Tm
 - _associated conformance 14VoiceShortcuts22TriggerConversionErrorO10Foundation09LocalizedE0AAs0E0
 - _init_HKWorkoutActivityNameForActivityType
-- _objc_msgSend$AirplaneMode
-- _objc_msgSend$Alarm
-- _objc_msgSend$App
-- _objc_msgSend$BatteryLevel
-- _objc_msgSend$Bluetooth
-- _objc_msgSend$CarPlay
-- _objc_msgSend$Clock
-- _objc_msgSend$ComputedMode
-- _objc_msgSend$Connected
-- _objc_msgSend$ContextSync
-- _objc_msgSend$DSLPublisher
-- _objc_msgSend$DSLPublisherWithUseCase:
-- _objc_msgSend$Delivery
-- _objc_msgSend$DisplayConnected
-- _objc_msgSend$ExternalDisplay
-- _objc_msgSend$Health
-- _objc_msgSend$InFocus
-- _objc_msgSend$Keyboard
-- _objc_msgSend$LowPowerMode
-- _objc_msgSend$MultiTaskingArrangement
-- _objc_msgSend$NFCTag
-- _objc_msgSend$Notification
-- _objc_msgSend$PluggedIn
-- _objc_msgSend$Power
-- _objc_msgSend$SSID
-- _objc_msgSend$Screenshot
-- _objc_msgSend$Screenshots
-- _objc_msgSend$SoundDetection
-- _objc_msgSend$SpringBoard
-- _objc_msgSend$StageManagerMode
-- _objc_msgSend$Transaction
-- _objc_msgSend$UserFocus
-- _objc_msgSend$Wallet
-- _objc_msgSend$WalletTransaction
-- _objc_msgSend$WiFi
-- _objc_msgSend$WindowManagement
-- _objc_msgSend$Workout
-- _objc_msgSend$activitySemanticIdentifier
-- _objc_msgSend$activityType
-- _objc_msgSend$activityUniqueIdentifier
-- _objc_msgSend$alarmEventForCurrentAlarmState
-- _objc_msgSend$alarmIDs
-- _objc_msgSend$alarmState
-- _objc_msgSend$alarmType
-- _objc_msgSend$allBMApplianceTypes
-- _objc_msgSend$allConfiguredTriggers
-- _objc_msgSend$associateWorkflowToTriggerID:deletingExistingReference:notifyDaemon:workflowReference:completion:
-- _objc_msgSend$attaching
-- _objc_msgSend$batteryPercentage
-- _objc_msgSend$bmTypeForAXSDSoundDetectionType:
-- _objc_msgSend$bundleID
-- _objc_msgSend$configuredTriggerForTriggerID:
-- _objc_msgSend$configuredTriggersForWorkflowID:
-- _objc_msgSend$dateWithTimeIntervalSinceReferenceDate:
-- _objc_msgSend$dayOfMonth
-- _objc_msgSend$daysOfWeek
-- _objc_msgSend$deleteTriggerWithIdentifier:notifyDaemon:completion:
-- _objc_msgSend$drivableSinkWithBookmark:completion:shouldContinue:
-- _objc_msgSend$endTime
-- _objc_msgSend$eventBody
-- _objc_msgSend$eventInfoForEvent:completion:
-- _objc_msgSend$eventType
-- _objc_msgSend$getPreviousStateWithDeviceName:currentStateEvent:completionHandler:
-- _objc_msgSend$inProgressEventInfo
-- _objc_msgSend$inProgressRunEvent
-- _objc_msgSend$inProgressRunnerClient
-- _objc_msgSend$inProgressTriggerKey
-- _objc_msgSend$initWithClientName:
-- _objc_msgSend$initWithPassUniqueID:passLocalizedDescription:transactionType:transactionID:merchantType:poiCategory:
-- _objc_msgSend$initWithStartDate:endDate:maxEvents:lastN:reversed:
-- _objc_msgSend$isApplianceSoundDetectionType:
-- _objc_msgSend$isDeleted
-- _objc_msgSend$isEnabled
-- _objc_msgSend$isFirstPartyDonation
-- _objc_msgSend$isPassIdentifierValid:
-- _objc_msgSend$isSleepAlarm
-- _objc_msgSend$latestRunEventForLegacyTriggerIdentifier:
-- _objc_msgSend$launchReason
-- _objc_msgSend$merchant
-- _objc_msgSend$merchantType
-- _objc_msgSend$onBackground
-- _objc_msgSend$onConnect
-- _objc_msgSend$onDisable
-- _objc_msgSend$onDisconnect
-- _objc_msgSend$onEnable
-- _objc_msgSend$onEnd
-- _objc_msgSend$onFocus
-- _objc_msgSend$onStart
-- _objc_msgSend$passLocalizedDescription
-- _objc_msgSend$passUniqueID
-- _objc_msgSend$poiCategory
-- _objc_msgSend$publisherWithOptions:
-- _objc_msgSend$publisherWithUseCase:options:
-- _objc_msgSend$region
-- _objc_msgSend$registerContextSyncClient
-- _objc_msgSend$registerForUpdates:withIdentifier:shouldWake:forDeviceTypes:withError:
-- _objc_msgSend$runAfterConnectionInterruption
-- _objc_msgSend$saveNewConfiguredTrigger:notifyDaemon:completion:
-- _objc_msgSend$saveNewConfiguredTrigger:workflow:notifyDaemon:completion:
-- _objc_msgSend$selectedBundleIdentifiers
-- _objc_msgSend$selectedDevices
-- _objc_msgSend$selectedMerchantTypes
-- _objc_msgSend$selectedMerchants
-- _objc_msgSend$selectedNetworks
-- _objc_msgSend$selectedPassUniqueIDs
-- _objc_msgSend$selectedWorkoutTypes
-- _objc_msgSend$selection
-- _objc_msgSend$semanticModeIdentifier
-- _objc_msgSend$serializedData
-- _objc_msgSend$setEditableShortcut:
-- _objc_msgSend$setEnabled:
-- _objc_msgSend$setEndTime:
-- _objc_msgSend$setInProgressEventInfo:
-- _objc_msgSend$setInProgressRunEvent:
-- _objc_msgSend$setInProgressRunnerClient:
-- _objc_msgSend$setInProgressTriggerKey:
-- _objc_msgSend$setInterval:
-- _objc_msgSend$setMode:
-- _objc_msgSend$setRegion:
-- _objc_msgSend$setRequiresUserInactivity:
-- _objc_msgSend$setShouldPrompt:
-- _objc_msgSend$setShouldRecur:
-- _objc_msgSend$setStartTime:
-- _objc_msgSend$setTime:
-- _objc_msgSend$setTriggerData:
-- _objc_msgSend$setWithSet:
-- _objc_msgSend$sinkWithCompletion:receiveInput:
-- _objc_msgSend$soundDetectionType
-- _objc_msgSend$soundDetectionTypes
-- _objc_msgSend$startTime
-- _objc_msgSend$starting
-- _objc_msgSend$stream
-- _objc_msgSend$stringValue
-- _objc_msgSend$subscribeOn:
-- _objc_msgSend$tagID
-- _objc_msgSend$tagIdentifier
-- _objc_msgSend$time
-- _objc_msgSend$timestamp
-- _objc_msgSend$transactionID
-- _objc_msgSend$transactionType
-- _objc_msgSend$trigger
-- _objc_msgSend$unregisterForUpdates:withIdentifier:forDeviceTypes:withError:
-- _objc_msgSend$unsignedIntegerValue
-- _objc_msgSend$updateNotificationLevel:forConfiguredTrigger:error:
 - _softLink_HKWorkoutActivityNameForActivityType
 - _symbolic SccySo19WFConfiguredTriggerC_So19WFWorkflowReferenceCt______pG s5ErrorP
 - _symbolic SccySo19WFConfiguredTriggerC______pG s5ErrorP

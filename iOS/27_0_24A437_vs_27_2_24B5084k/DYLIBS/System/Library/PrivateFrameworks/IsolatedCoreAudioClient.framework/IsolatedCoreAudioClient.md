@@ -2,35 +2,28 @@
 
 > `/System/Library/PrivateFrameworks/IsolatedCoreAudioClient.framework/IsolatedCoreAudioClient`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1b538` | `0x1b630` | **`+0xf8`** |
+| `__TEXT.__oslogstring` | `0x2de2` | `0x2e1e` | **`+0x3c`** |
+| `__TEXT.__cstring` | `0xbdf` | `0xbfe` | **`+0x1f`** |
+| `__DATA.__bss` | `0x270` | `0x280` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -7.49.101.0.0
--  __TEXT.__text: 0x1af4c
 +7.49.200.0.0
-+  __TEXT.__text: 0x1b044
-   __TEXT.__objc_methlist: 0x80c
-   __TEXT.__const: 0x23ec
-   __TEXT.__gcc_except_tab: 0x1a84
--  __TEXT.__cstring: 0xbdf
--  __TEXT.__oslogstring: 0x2de2
--  __TEXT.__unwind_info: 0xf40
-+  __TEXT.__cstring: 0xbfe
-+  __TEXT.__oslogstring: 0x2e1e
-+  __TEXT.__unwind_info: 0xf48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 800
--  Symbols:   1806
+-  Symbols:   1695
 -  CStrings:  257
 +  Functions: 802
-+  Symbols:   1808
++  Symbols:   1697
 +  CStrings:  259
- 
 Symbols:
 + GCC_except_table474
 + GCC_except_table485

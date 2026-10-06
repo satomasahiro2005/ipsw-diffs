@@ -2,50 +2,29 @@
 
 > `/System/Library/Frameworks/CoreTelephony.framework/Support/libCellularDecoders.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2a140` | `0x2a0ec` | **`-0x54`** |
+| `__DATA.__bss` | `0x40` | `0x10` | **`-0x30`** |
+| `__DATA_DIRTY.__bss` | `—` | `0x30` | **`+0x30`** |
+| `__AUTH_CONST.__cfstring` | `0x880` | `0x8a0` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x428` | `0x430` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x1c04` | `0x1c00` | **`-0x4`** |
+| `__TEXT.__cstring` | `0x2454` | `0x2457` | **`+0x3`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2a140
--  __TEXT.__gcc_except_tab: 0x1c04
--  __TEXT.__cstring: 0x2454
-+  __TEXT.__text: 0x2a0ec
-+  __TEXT.__gcc_except_tab: 0x1c00
-+  __TEXT.__cstring: 0x2457
-   __TEXT.__const: 0x18c9
-   __TEXT.__oslogstring: 0x1acc
-   __TEXT.__unwind_info: 0xd00
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x428
-+  __DATA_CONST.__const: 0x430
-   __DATA_CONST.__weak_got: 0x8
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x1608
--  __AUTH_CONST.__cfstring: 0x880
-+  __AUTH_CONST.__cfstring: 0x8a0
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__data: 0x8
--  __DATA.__bss: 0x40
-+  __DATA.__bss: 0x10
-   __DATA_DIRTY.__data: 0x10
-+  __DATA_DIRTY.__bss: 0x30
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreTelephony.framework/Support/libCommCenterBase.dylib
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+-13473.1.0.0.0
++13478.3.1.3.0
 
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   Functions: 877
--  Symbols:   2210
--  CStrings:  548
-+  Symbols:   2211
-+  CStrings:  550
- 
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA.__data : content changed
+-  Symbols:   1361
+-  CStrings:  479
++  Symbols:   1362
++  CStrings:  480
 Symbols:
 + _kCTPhoneNumberRegistrationRequestIdKey
 Functions:
@@ -55,5 +34,4 @@ Functions:
 ~ __ZNSt3__15dequeINS_7__stateIcEENS_9allocatorIS2_EEE19__add_back_capacityEv : 484 -> 472
 CStrings:
 + "id"
-
 ```

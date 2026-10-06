@@ -2,43 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/SentencePieceInternal.framework/SentencePieceInternal`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7d0ac` | `0x7daac` | **`+0xa00`** |
+| `__TEXT.__cstring` | `0x62a0` | `0x63eb` | **`+0x14b`** |
+| `__TEXT.__gcc_except_tab` | `0x87a4` | `0x8888` | **`+0xe4`** |
+| `__TEXT.__unwind_info` | `0x38b0` | `0x38c0` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x128` | `0x130` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -70.0.0.0.0
--  __TEXT.__text: 0x7b4dc
 +70.3.0.0.0
-+  __TEXT.__text: 0x7bebc
-   __TEXT.__objc_methlist: 0x208
-   __TEXT.__const: 0x2487
--  __TEXT.__gcc_except_tab: 0x87a4
--  __TEXT.__cstring: 0x62a0
--  __TEXT.__unwind_info: 0x3d88
-+  __TEXT.__gcc_except_tab: 0x8888
-+  __TEXT.__cstring: 0x63eb
-+  __TEXT.__unwind_info: 0x3da0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__weak_got: 0x10
-   __DATA_CONST.__objc_selrefs: 0x180
-   __DATA_CONST.__objc_superrefs: 0x10
--  __DATA_CONST.__got: 0x128
-+  __DATA_CONST.__got: 0x130
-   __AUTH_CONST.__const: 0x20b0
-   __AUTH_CONST.__cfstring: 0x40
-   __AUTH_CONST.__objc_const: 0x218
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2479
--  Symbols:   3663
+-  Symbols:   3650
 -  CStrings:  550
 +  Functions: 2481
-+  Symbols:   3665
++  Symbols:   3652
 +  CStrings:  560
- 
 Symbols:
 + GCC_except_table118
 + GCC_except_table125

@@ -2,37 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/RESync.framework/RESync`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x78560` | `0x78378` | **`-0x1e8`** |
+| `__DATA_CONST.__got` | `0x0` | `0x80` | **`+0x80`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x78560
-+  __TEXT.__text: 0x78378
-   __TEXT.__objc_methlist: 0x2d4
-   __TEXT.__const: 0x1fe8
-   __TEXT.__cstring: 0x6dee
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x280
-   __DATA_CONST.__objc_superrefs: 0x10
--  __DATA_CONST.__got: 0x0
-+  __DATA_CONST.__got: 0x80
-   __AUTH_CONST.__const: 0x3858
-   __AUTH_CONST.__cfstring: 0xa0
-   __AUTH_CONST.__objc_const: 0x5e8
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+-453.0.2.0.5
++453.0.4.0.2
 Functions:
 ~ __ZN2re11TypeBuilder8commitToENS_6TypeIDE : 7980 -> 7800
 ~ __ZN2re12DynamicArrayINS_12EnumConstantEE4copyEmPKS1_m : 804 -> 752
@@ -64,5 +46,4 @@ Functions:
 ~ __ZN2re18DebugDiscoveryView25removeIdentityWithAddressERKNS_7AddressE : 548 -> 552
 ~ __ZZN2re8snapshot12introspected4readINS0_12DecoderOPACKEEEvRT_PvRKNS_20IntrospectionPointerEENKUlRNS0_7DecoderERS6_NSA_24DeserializePointerActionEyE_clESB_SC_SD_y : 920 -> 936
 ~ __ZZN2re8snapshot12introspected4readINS0_12DecoderOPACKEEEvRT_PvRKNS_22IntrospectionStructureEENKUlRNS0_7DecoderERS6_NSA_24DeserializePointerActionEyE_clESB_SC_SD_y : 1544 -> 1552
-
 ```

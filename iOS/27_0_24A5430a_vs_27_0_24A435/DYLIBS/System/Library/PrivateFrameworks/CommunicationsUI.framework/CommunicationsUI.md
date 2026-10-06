@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CommunicationsUI.framework/CommunicationsUI`
 
-```diff
+### Section Size Changes
 
- 153.100.1.2.29
--  __TEXT.__text: 0x3192d8
-+  __TEXT.__text: 0x319340
-   __TEXT.__objc_methlist: 0x2fc0
-   __TEXT.__const: 0x231c4
-   __TEXT.__swift5_typeref: 0x30aa2
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3192d8` | `0x319340` | **`+0x68`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1c5263e08 -> sub_1c5760e08 : 3344 -> 3360
 ~ sub_1c5264f28 -> sub_1c5761f38 : 2452 -> 2448

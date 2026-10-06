@@ -2,71 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/SiriPhoneCATs.framework/SiriPhoneCATs`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x79590` | `0x79fbc` | **`+0xa2c`** |
+| `__DATA.__bss` | `0x160d8` | `0x16260` | **`+0x188`** |
+| `__AUTH_CONST.__const` | `0xd740` | `0xd868` | **`+0x128`** |
+| `__TEXT.__const` | `0xe624` | `0xe70c` | **`+0xe8`** |
+| `__TEXT.__eh_frame` | `0x9140` | `0x9200` | **`+0xc0`** |
+| `__TEXT.__swift5_reflstr` | `0x38cb` | `0x393c` | **`+0x71`** |
+| `__TEXT.__cstring` | `0x4c61` | `0x4ccc` | **`+0x6b`** |
+| `__TEXT.__unwind_info` | `0x3e20` | `0x3e70` | **`+0x50`** |
+| `__TEXT.__swift5_fieldmd` | `0x3698` | `0x36e4` | **`+0x4c`** |
+| `__TEXT.__constg_swiftt` | `0x3ebc` | `0x3ed8` | **`+0x1c`** |
+| `__TEXT.__swift5_assocty` | `0x13f8` | `0x1410` | **`+0x18`** |
+| `__TEXT.__swift5_typeref` | `0x1192` | `0x11a0` | **`+0xe`** |
+| `__TEXT.__swift5_proto` | `0xb20` | `0xb2c` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x460` | `0x468` | **`+0x8`** |
+| `__DATA.__data` | `0x1260` | `0x1268` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x5c8` | `0x5d0` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x5c8` | `0x5d0` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x400` | `0x404` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3600.38.22.11.2
--  __TEXT.__text: 0x6f964
--  __TEXT.__const: 0xe624
--  __TEXT.__cstring: 0x4c61
--  __TEXT.__swift5_typeref: 0x1192
--  __TEXT.__swift5_reflstr: 0x38cb
--  __TEXT.__swift5_assocty: 0x13f8
--  __TEXT.__constg_swiftt: 0x3ebc
--  __TEXT.__swift5_fieldmd: 0x3698
--  __TEXT.__swift5_proto: 0xb20
--  __TEXT.__swift5_types: 0x400
--  __TEXT.__swift_as_entry: 0x5c8
--  __TEXT.__swift_as_ret: 0x5c8
 +3605.17.1.1.1
-+  __TEXT.__text: 0x70294
-+  __TEXT.__const: 0xe70c
-+  __TEXT.__cstring: 0x4ccc
-+  __TEXT.__swift5_typeref: 0x11a0
-+  __TEXT.__swift5_reflstr: 0x393c
-+  __TEXT.__swift5_assocty: 0x1410
-+  __TEXT.__constg_swiftt: 0x3ed8
-+  __TEXT.__swift5_fieldmd: 0x36e4
-+  __TEXT.__swift5_proto: 0xb2c
-+  __TEXT.__swift5_types: 0x404
-+  __TEXT.__swift_as_entry: 0x5d0
-+  __TEXT.__swift_as_ret: 0x5d0
-   __TEXT.__swift_as_cont: 0xb90
-   __TEXT.__swift5_protos: 0x1c
--  __TEXT.__unwind_info: 0x46f8
--  __TEXT.__eh_frame: 0x9140
-+  __TEXT.__unwind_info: 0x4750
-+  __TEXT.__eh_frame: 0x9200
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xd740
-+  __AUTH_CONST.__const: 0xd868
-   __AUTH_CONST.__cfstring: 0x220
-   __AUTH_CONST.__objc_const: 0x1da8
--  __AUTH_CONST.__auth_got: 0x460
-+  __AUTH_CONST.__auth_got: 0x468
-   __AUTH.__objc_data: 0xa58
-   __AUTH.__data: 0x2278
--  __DATA.__data: 0x1260
-+  __DATA.__data: 0x1268
-   __DATA.__common: 0x400
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5977
--  Symbols:   16172
+-  Symbols:   16171
 -  CStrings:  610
 +  Functions: 6004
-+  Symbols:   16217
++  Symbols:   16216
 +  CStrings:  614
- 
 Symbols:
 + _$s13SiriPhoneCATs09StartCallC6SimpleC36IntentConfirmationEmergencyVoiceOnlyO8rawValueAESgSS_tcfC
 + _$s13SiriPhoneCATs09StartCallC6SimpleC36IntentConfirmationEmergencyVoiceOnlyO8rawValueAESgSS_tcfCTv_r

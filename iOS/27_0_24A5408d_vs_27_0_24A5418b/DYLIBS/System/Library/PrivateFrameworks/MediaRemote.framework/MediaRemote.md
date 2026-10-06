@@ -2,71 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/MediaRemote.framework/MediaRemote`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x317068` | `0x317a24` | **`+0x9bc`** |
+| `__AUTH_CONST.__objc_const` | `0x47e80` | `0x47f48` | **`+0xc8`** |
+| `__TEXT.__oslogstring` | `0xea48` | `0xeaed` | **`+0xa5`** |
+| `__TEXT.__objc_methlist` | `0x2c788` | `0x2c818` | **`+0x90`** |
+| `__TEXT.__cstring` | `0x2de92` | `0x2df00` | **`+0x6e`** |
+| `__AUTH_CONST.__cfstring` | `0x24a20` | `0x24a80` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0xbb08` | `0xbb58` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0xf930` | `0xf978` | **`+0x48`** |
+| `__DATA.__bss` | `0x998` | `0x9b8` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x33e4` | `0x33ec` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0xbe10` | `0xbe18` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -4026.110.83.1.0
--  __TEXT.__text: 0x317068
--  __TEXT.__objc_methlist: 0x2c788
 +4026.110.4.0.0
-+  __TEXT.__text: 0x317a24
-+  __TEXT.__objc_methlist: 0x2c818
-   __TEXT.__const: 0x6b0
--  __TEXT.__cstring: 0x2de92
--  __TEXT.__oslogstring: 0xea48
-+  __TEXT.__cstring: 0x2df00
-+  __TEXT.__oslogstring: 0xeaed
-   __TEXT.__gcc_except_tab: 0x6368
-   __TEXT.__dlopen_cstrs: 0x777
-   __TEXT.__ustring: 0x7b8
--  __TEXT.__unwind_info: 0xbe10
-+  __TEXT.__unwind_info: 0xbe18
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xbb08
-+  __DATA_CONST.__const: 0xbb58
-   __DATA_CONST.__objc_classlist: 0x1210
-   __DATA_CONST.__objc_catlist: 0x78
-   __DATA_CONST.__objc_protolist: 0x260
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xf930
-+  __DATA_CONST.__objc_selrefs: 0xf978
-   __DATA_CONST.__objc_protorefs: 0x88
-   __DATA_CONST.__objc_superrefs: 0x1038
-   __DATA_CONST.__objc_arraydata: 0x260
-   __DATA_CONST.__got: 0x14d0
-   __AUTH_CONST.__const: 0x3440
--  __AUTH_CONST.__cfstring: 0x24a20
--  __AUTH_CONST.__objc_const: 0x47e80
-+  __AUTH_CONST.__cfstring: 0x24a80
-+  __AUTH_CONST.__objc_const: 0x47f48
-   __AUTH_CONST.__objc_arrayobj: 0x180
-   __AUTH_CONST.__objc_intobj: 0x4f8
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__auth_got: 0xbc0
-   __AUTH.__objc_data: 0x8700
--  __DATA.__objc_ivar: 0x33e4
-+  __DATA.__objc_ivar: 0x33ec
-   __DATA.__data: 0x1ca8
--  __DATA.__bss: 0x998
-+  __DATA.__bss: 0x9b8
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0x2da0
-   __DATA_DIRTY.__data: 0x88
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 21013
--  Symbols:   35571
+-  Symbols:   30239
 -  CStrings:  6771
 +  Functions: 21030
-+  Symbols:   35599
++  Symbols:   30262
 +  CStrings:  6776
- 
 Symbols:
 + -[MRAVLightweightReconnaissanceSession searchOutputDevices:protocolUID:appVended:timeout:details:queue:completion:]
 + -[MRIRRoute appVendedContainerBundleID]
@@ -97,11 +61,6 @@ Symbols:
 + _appVendedRouteRecommendationsEnabled.onceToken
 + _disableRemoteMediaExtensionNetworkPolicies.onceToken
 + _disableRemoteMediaExtensionNetworkPolicies.result
-+ _objc_msgSend$appVendedContainerBundleID
-+ _objc_msgSend$ignoreList
-+ _objc_msgSend$isBundleIDAllowed:
-+ _objc_msgSend$searchOutputDevices:protocolUID:appVended:timeout:details:queue:completion:
-+ _objc_msgSend$setAppVendedContainerBundleID:
 - ___105-[MRAVLightweightReconnaissanceSession searchOutputDevices:protocolUID:timeout:details:queue:completion:]_block_invoke
 - ___105-[MRAVLightweightReconnaissanceSession searchOutputDevices:protocolUID:timeout:details:queue:completion:]_block_invoke_2
 - ___105-[MRAVLightweightReconnaissanceSession searchOutputDevices:protocolUID:timeout:details:queue:completion:]_block_invoke_3

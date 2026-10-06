@@ -2,80 +2,52 @@
 
 > `/Applications/Device Recovery Assistant.app/Device Recovery Assistant`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1f290` | `0x1e18c` | **`-0x1104`** |
+| `__DATA.__objc_const` | `0x6ad8` | `0x64c8` | **`-0x610`** |
+| `__TEXT.__objc_methname` | `0x8bcb` | `0x88a2` | **`-0x329`** |
+| `__TEXT.__objc_stubs` | `0x63e0` | `0x6120` | **`-0x2c0`** |
+| `__TEXT.__objc_methlist` | `0x2f08` | `0x2d18` | **`-0x1f0`** |
+| `__TEXT.__oslogstring` | `0x3650` | `0x34ef` | **`-0x161`** |
+| `__TEXT.__cstring` | `0x3644` | `0x3553` | **`-0xf1`** |
+| `__DATA.__objc_selrefs` | `0x2340` | `0x2260` | **`-0xe0`** |
+| `__TEXT.__objc_methtype` | `0x261b` | `0x2551` | **`-0xca`** |
+| `__DATA.__data` | `0xd9c` | `0xcdc` | **`-0xc0`** |
+| `__DATA.__objc_data` | `0xb90` | `0xaf0` | **`-0xa0`** |
+| `__DATA_CONST.__cfstring` | `0x1a00` | `0x1960` | **`-0xa0`** |
+| `__TEXT.__objc_classname` | `0x6f2` | `0x689` | **`-0x69`** |
+| `__DATA_CONST.__const` | `0x9f0` | `0xa18` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x708` | `0x6e0` | **`-0x28`** |
+| `__TEXT.__gcc_except_tab` | `0xf8` | `0x118` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x21c` | `0x200` | **`-0x1c`** |
+| `__DATA_CONST.__objc_intobj` | `—` | `0x18` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x128` | `0x118` | **`-0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x120` | `0x110` | **`-0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x118` | `0x108` | **`-0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__auth_got`
+- `__DATA_CONST.__got`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1f290
-+  __TEXT.__text: 0x1e18c
-   __TEXT.__auth_stubs: 0x830
--  __TEXT.__objc_stubs: 0x63e0
--  __TEXT.__objc_methlist: 0x2f08
--  __TEXT.__cstring: 0x3644
-+  __TEXT.__objc_stubs: 0x6120
-+  __TEXT.__objc_methlist: 0x2d18
-+  __TEXT.__cstring: 0x3553
-   __TEXT.__const: 0xa8
--  __TEXT.__objc_methname: 0x8bcb
--  __TEXT.__oslogstring: 0x3650
--  __TEXT.__objc_classname: 0x6f2
--  __TEXT.__objc_methtype: 0x261b
--  __TEXT.__gcc_except_tab: 0xf8
-+  __TEXT.__objc_methname: 0x88a2
-+  __TEXT.__oslogstring: 0x34ef
-+  __TEXT.__objc_classname: 0x689
-+  __TEXT.__objc_methtype: 0x2551
-+  __TEXT.__gcc_except_tab: 0x118
-   __TEXT.__ustring: 0x18
--  __TEXT.__unwind_info: 0x708
--  __DATA_CONST.__const: 0x9f0
--  __DATA_CONST.__cfstring: 0x1a00
--  __DATA_CONST.__objc_classlist: 0x128
--  __DATA_CONST.__objc_protolist: 0x120
-+  __TEXT.__unwind_info: 0x6e0
-+  __DATA_CONST.__const: 0xa18
-+  __DATA_CONST.__cfstring: 0x1960
-+  __DATA_CONST.__objc_classlist: 0x118
-+  __DATA_CONST.__objc_protolist: 0x110
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_superrefs: 0x118
-+  __DATA_CONST.__objc_superrefs: 0x108
-+  __DATA_CONST.__objc_intobj: 0x18
-   __DATA_CONST.__auth_got: 0x428
-   __DATA_CONST.__got: 0x4c0
--  __DATA.__objc_const: 0x6ad8
--  __DATA.__objc_selrefs: 0x2340
--  __DATA.__objc_ivar: 0x21c
--  __DATA.__objc_data: 0xb90
--  __DATA.__data: 0xd9c
-+  __DATA.__objc_const: 0x64c8
-+  __DATA.__objc_selrefs: 0x2260
-+  __DATA.__objc_ivar: 0x200
-+  __DATA.__objc_data: 0xaf0
-+  __DATA.__data: 0xcdc
-   __DATA.__bss: 0x90
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+-144.0.0.0.0
++148.0.0.0.0
 
-   - /System/Library/Frameworks/CoreText.framework/CoreText
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
 +  - /System/Library/Frameworks/LocalAuthenticationEmbeddedUI.framework/LocalAuthenticationEmbeddedUI
-   - /System/Library/Frameworks/Network.framework/Network
-   - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
-   - /System/Library/Frameworks/UIKit.framework/UIKit
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 813
 -  Symbols:   307
--  CStrings:  2594
+-  CStrings:  2389
 +  Functions: 781
 +  Symbols:   306
-+  CStrings:  2529
- 
-Sections:
-~ __DATA_CONST.__auth_got : content changed
-~ __DATA_CONST.__got : content changed
++  CStrings:  2328
 Symbols:
 + _OBJC_CLASS_$_LAPasscodeVerificationService
 + _OBJC_CLASS_$_LAPasscodeVerificationServiceOptions
@@ -208,5 +180,4 @@ CStrings:
 - "v32@0:8@\"BFFPasscodeInputView\"16@\"NSString\"24"
 - "v32@0:8@\"BFFPasscodeInputView\"16@\"UIButton\"24"
 - "v32@0:8@\"PasscodeViewController\"16@\"NSString\"24"
-
 ```

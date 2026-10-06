@@ -2,90 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/TranslationUI.framework/TranslationUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10a510` | `0x10e370` | **`+0x3e60`** |
+| `__TEXT.__swift5_typeref` | `0xc27e` | `0xcca8` | **`+0xa2a`** |
+| `__AUTH_CONST.__const` | `0x69a0` | `0x6b08` | **`+0x168`** |
+| `__DATA.__data` | `0x2af8` | `0x2bc8` | **`+0xd0`** |
+| `__TEXT.__oslogstring` | `0x2781` | `0x2811` | **`+0x90`** |
+| `__TEXT.__swift5_capture` | `0x11d8` | `0x1268` | **`+0x90`** |
+| `__TEXT.__const` | `0xae44` | `0xaec4` | **`+0x80`** |
+| `__TEXT.__swift5_reflstr` | `0x25c3` | `0x2643` | **`+0x80`** |
+| `__TEXT.__cstring` | `0x20d6` | `0x2116` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x3600` | `0x3640` | **`+0x40`** |
+| `__TEXT.__swift5_fieldmd` | `0x2800` | `0x2830` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0xef0` | `0xf18` | **`+0x28`** |
+| `__AUTH_CONST.__objc_const` | `0x26a8` | `0x26c8` | **`+0x20`** |
+| `__DATA_DIRTY.__data` | `0x2ae8` | `0x2b08` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x1fd8` | `0x1fe8` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0xdf8` | `0xe08` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -389.1.0.0.0
--  __TEXT.__text: 0x100940
 +393.1.0.0.0
-+  __TEXT.__text: 0x104660
-   __TEXT.__objc_methlist: 0xb8c
--  __TEXT.__const: 0xae44
--  __TEXT.__cstring: 0x20d6
--  __TEXT.__oslogstring: 0x2781
-+  __TEXT.__const: 0xaec4
-+  __TEXT.__cstring: 0x2116
-+  __TEXT.__oslogstring: 0x2811
-   __TEXT.__gcc_except_tab: 0x3c
--  __TEXT.__swift5_typeref: 0xc27e
--  __TEXT.__swift5_capture: 0x11d8
-+  __TEXT.__swift5_typeref: 0xcca8
-+  __TEXT.__swift5_capture: 0x1268
-   __TEXT.__constg_swiftt: 0x32c4
-   __TEXT.__swift5_builtin: 0x12c
--  __TEXT.__swift5_reflstr: 0x25c3
--  __TEXT.__swift5_fieldmd: 0x2800
-+  __TEXT.__swift5_reflstr: 0x2643
-+  __TEXT.__swift5_fieldmd: 0x2830
-   __TEXT.__swift5_assocty: 0xcd8
-   __TEXT.__swift5_proto: 0x538
-   __TEXT.__swift5_types: 0x304
 
-   __TEXT.__swift_as_ret: 0x108
-   __TEXT.__swift_as_cont: 0x314
-   __TEXT.__swift5_protos: 0xc
--  __TEXT.__unwind_info: 0x4470
-+  __TEXT.__unwind_info: 0x44e0
-   __TEXT.__eh_frame: 0x3bdc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x58
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xdf8
-+  __DATA_CONST.__objc_selrefs: 0xe08
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__objc_superrefs: 0x18
--  __DATA_CONST.__got: 0xef0
--  __AUTH_CONST.__const: 0x69a0
-+  __DATA_CONST.__got: 0xf18
-+  __AUTH_CONST.__const: 0x6b08
-   __AUTH_CONST.__cfstring: 0x400
--  __AUTH_CONST.__objc_const: 0x26a8
--  __AUTH_CONST.__auth_got: 0x1fd8
-+  __AUTH_CONST.__objc_const: 0x26c8
-+  __AUTH_CONST.__auth_got: 0x1fe8
-   __AUTH.__objc_data: 0xa78
-   __AUTH.__data: 0xfa0
-   __DATA.__objc_ivar: 0x1c
--  __DATA.__data: 0x2af8
-+  __DATA.__data: 0x2bc8
-   __DATA.__common: 0x138
-   __DATA_DIRTY.__objc_data: 0x8e0
--  __DATA_DIRTY.__data: 0x2ae8
-+  __DATA_DIRTY.__data: 0x2b08
-   __DATA_DIRTY.__bss: 0x2240
-   __DATA_DIRTY.__common: 0x120
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5045
--  Symbols:   2649
+-  Symbols:   2289
 -  CStrings:  466
 +  Functions: 5086
-+  Symbols:   2667
++  Symbols:   2305
 +  CStrings:  471
- 
 Symbols:
 + _OBJC_CLASS_$__LTLanguageStatusConfiguration
 + ___swift_closure_destructor.25Tm
 + ___swift_closure_destructor.45Tm
 + ___swift_closure_destructor.79Tm
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBP8SettingsE48emitNavigationEventOnAppearForApplicationSetting010associatedK16BundleIdentifier5title09localizedF10Components8deepLinkQrSS_10Foundation23LocalizedStringResourceVSayALGAJ3URLVtFQOyAA15ModifiedContentVyAcAE29navigationBarTitleDisplayModeyQrAA0F7BarItemV16TitleDisplayModeOFQOyAcAE15navigationTitleyQrAA4TextVFQOyAcAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAcAE26interactiveDismissDisabledyQrSbFQOyAcAE9listStyleyQrqd__AA9ListStyleRd__lFQOyAcAE5alert11isPresentedA_QrAA7BindingVySbG_AA5AlertVyXEtFQOyAcAEA4_A5_A_QrA8__A10_yXEtFQOyAA4ListVys5NeverOAA12TupleContentVyAcAE13listRowInsetsyQrAA4EdgeO3SetV_12CoreGraphics7CGFloatVSgtFQOyAcAE16listRowSeparator_5edgesQrAA10VisibilityO_AA12VerticalEdgeOA20_VtFQOyAcAE18listSectionMarginsyQrA21__A25_tFQOyAcAEA33_yQrA21__A25_tFQOyAQyAA7SectionVyAA05EmptyC0VAQyAA03AnyC0VAA16_FlexFrameLayoutVGA37_GAA21_TraitWritingModifierVyAA25ListRowBackgroundTraitKeyVGG_Qo__Qo__Qo__Qo_Sg_A35_yAQyAYSgAA31AccessibilityAttachmentModifierVGA16_yAA19_ConditionalContentVyAQyAA0J4EachVySay011TranslationB013LanguageModelVGSSAQyA63_16LanguageListItemVA45_yAA24IsDeleteDisabledTraitKeyVGGGA45_yAA0H14DeleteTraitKeyVGGAcAEA4_A5_A_QrA8__A10_yXEtFQOyAQyA62_yA66_SSAcAE12swipeActions4edge15allowsFullSwipeA_QrAA14HorizontalEdgeO_Sbqd__yXEtAaBRd__lFQOyA68__AA6ButtonVyAcAE10labelStyleyQrqd__AA10LabelStyleRd__lFQOyAA5LabelVyAyA5ImageVG_AA18IconOnlyLabelStyleVQo_GQo_GA76_G_Qo_G_A63_15DeleteAllButtonVSgQPGA37_GSgA35_yA58_A62_yA66_SSAQyAQyA63_22LanguageDownloadButtonVA57_GAA32_EnvironmentKeyTransformModifierVySbGGGA37_GQPGG_Qo__Qo__AA21InsetGroupedListStyleVQo__Qo__A16_yAA11ToolbarItemVyytAcAE18confirmationDialog_A5_0P10Visibility7actions7messageQrAA0vW3KeyV_A8_A29_qd__yXEqd_0_yXEtAaBRd__AaBRd_0_r0_lFQOyAQyA84_yAA18DefaultButtonLabelVGA57_G_A84_yAYGAYQo_GSg_A125_yytA60_yA60_yAQyAQyA134_A112_GA57_GAQyA136_A57_GGAQyAA10EditButtonVA57_GGSgGQPGQo__Qo__Qo_AA30_EnvironmentKeyWritingModifierVyA7_yAA8EditModeOGSgGG_Qo_HO
-+ _objc_msgSend$initWithConfiguration:observations:
-+ _objc_msgSend$initWithTaskHint:engineType:useDedicatedMachPort:
 + _symbolic _____yAAy_____yABy_____y_____G_____ySbGG_____GAByACy_____GAIGGABy_____AIGG 7SwiftUI19_ConditionalContentV AA08ModifiedD0V AA6ButtonV AA07DefaultF5LabelV AA32_EnvironmentKeyTransformModifierV AA023AccessibilityAttachmentL0V AA4TextV AA04EditF0V
 + _symbolic _____yAAy_____yABy_____y_____G_____ySbGG_____GAByACy_____GAIGGABy_____AIGGSg 7SwiftUI19_ConditionalContentV AA08ModifiedD0V AA6ButtonV AA07DefaultF5LabelV AA32_EnvironmentKeyTransformModifierV AA023AccessibilityAttachmentL0V AA4TextV AA04EditF0V
 + _symbolic _____yAAy_____y_____G_____ySbGG_____G 7SwiftUI15ModifiedContentV AA6ButtonV AA07DefaultE5LabelV AA32_EnvironmentKeyTransformModifierV AA023AccessibilityAttachmentK0V

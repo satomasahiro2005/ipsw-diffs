@@ -2,15 +2,16 @@
 
 > `/System/Library/Messages/iMessageEffects/CKSpotlightEffect.bundle/CKSpotlightEffect`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0xb0` | `0xb8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_arraydata: 0x200
-   __DATA_CONST.__objc_arrayobj: 0x150
-   __DATA_CONST.__auth_got: 0xf8
--  __DATA_CONST.__got: 0xb0
-+  __DATA_CONST.__got: 0xb8
-   __DATA.__objc_const: 0x8a0
-   __DATA.__objc_selrefs: 0x388
-   __DATA.__objc_ivar: 0x98
-
+-1483.100.10.2.4
++1486.100.5.2.1
 ```

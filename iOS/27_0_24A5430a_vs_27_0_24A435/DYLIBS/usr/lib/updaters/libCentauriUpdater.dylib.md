@@ -2,14 +2,15 @@
 
 > `/usr/lib/updaters/libCentauriUpdater.dylib`
 
-```diff
+### Section Size Changes
 
- 80.0.0.0.0
--  __TEXT.__text: 0x229f0
-+  __TEXT.__text: 0x22a44
-   __TEXT.__const: 0x590
-   __TEXT.__gcc_except_tab: 0x1adc
-   __TEXT.__cstring: 0x5681
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x229f0` | `0x22a44` | **`+0x54`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN17CentauriTransport14parseCrashlogsEPK9__CFArray : 6640 -> 6688
 ~ __ZNSt3__13mapIN17CentauriTransport8BootModeENS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_4lessIS2_EENS6_INS_4pairIKS2_S8_EEEEEC2B9nqe220106ESt16initializer_listISD_ERKSA_ : 84 -> 88

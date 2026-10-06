@@ -2,94 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/OmniSearchClient.framework/OmniSearchClient`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3ebac` | `0x40948` | **`+0x1d9c`** |
+| `__AUTH_CONST.__const` | `0x1678` | `0x1848` | **`+0x1d0`** |
+| `__TEXT.__unwind_info` | `0xd98` | `0xf00` | **`+0x168`** |
+| `__AUTH_CONST.__objc_const` | `0x280` | `0x378` | **`+0xf8`** |
+| `__TEXT.__const` | `0x1808` | `0x18e8` | **`+0xe0`** |
+| `__TEXT.__eh_frame` | `0x1ef0` | `0x1fb8` | **`+0xc8`** |
+| `__AUTH.__data` | `0x1e8` | `0x2a0` | **`+0xb8`** |
+| `__AUTH_CONST.__auth_got` | `0x1218` | `0x12c0` | **`+0xa8`** |
+| `__TEXT.__swift5_capture` | `0x5d0` | `0x658` | **`+0x88`** |
+| `__TEXT.__constg_swiftt` | `0x4f0` | `0x558` | **`+0x68`** |
+| `__TEXT.__swift5_typeref` | `0xb3b` | `0xb99` | **`+0x5e`** |
+| `__TEXT.__oslogstring` | `0xda3` | `0xdf3` | **`+0x50`** |
+| `__TEXT.__swift5_fieldmd` | `0x640` | `0x690` | **`+0x50`** |
+| `__DATA.__data` | `0x440` | `0x480` | **`+0x40`** |
+| `__DATA_DIRTY.__data` | `0xae8` | `0xaa8` | **`-0x40`** |
+| `__TEXT.__swift5_reflstr` | `0x4b3` | `0x4f3` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x59f` | `0x56f` | **`-0x30`** |
+| `__TEXT.__swift5_builtin` | `—` | `0x14` | **`+0x14`** |
+| `__DATA_CONST.__const` | `0x138` | `0x128` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x18` | `0x20` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x54` | `0x5c` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0xc8` | `0xcc` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0xa0` | `0xa4` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0xe0` | `0xe4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3600.56.27.0.0
--  __TEXT.__text: 0x3ebac
 +3600.56.32.11.4
-+  __TEXT.__text: 0x40948
-   __TEXT.__objc_methlist: 0x38
--  __TEXT.__const: 0x1808
--  __TEXT.__swift5_typeref: 0xb3b
--  __TEXT.__swift5_capture: 0x5d0
--  __TEXT.__oslogstring: 0xda3
--  __TEXT.__cstring: 0x59f
--  __TEXT.__swift5_fieldmd: 0x640
--  __TEXT.__constg_swiftt: 0x4f0
--  __TEXT.__swift5_reflstr: 0x4b3
-+  __TEXT.__const: 0x18e8
-+  __TEXT.__swift5_typeref: 0xb99
-+  __TEXT.__cstring: 0x56f
-+  __TEXT.__oslogstring: 0xdf3
-+  __TEXT.__swift5_capture: 0x658
-+  __TEXT.__swift5_fieldmd: 0x690
-+  __TEXT.__constg_swiftt: 0x558
-+  __TEXT.__swift5_reflstr: 0x4f3
-+  __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__swift5_proto: 0xc8
--  __TEXT.__swift5_types: 0x54
--  __TEXT.__swift_as_entry: 0xa0
--  __TEXT.__swift_as_ret: 0xe0
-+  __TEXT.__swift5_proto: 0xcc
-+  __TEXT.__swift5_types: 0x5c
-+  __TEXT.__swift_as_entry: 0xa4
-+  __TEXT.__swift_as_ret: 0xe4
-   __TEXT.__swift_as_cont: 0x194
-   __TEXT.__swift5_assocty: 0xa8
--  __TEXT.__unwind_info: 0xd98
--  __TEXT.__eh_frame: 0x1ef0
-+  __TEXT.__unwind_info: 0xf00
-+  __TEXT.__eh_frame: 0x1fb8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x138
--  __DATA_CONST.__objc_classlist: 0x18
-+  __DATA_CONST.__const: 0x128
-+  __DATA_CONST.__objc_classlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xb0
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1678
--  __AUTH_CONST.__objc_const: 0x280
--  __AUTH_CONST.__auth_got: 0x1218
--  __AUTH.__data: 0x1e8
--  __DATA.__data: 0x440
-+  __AUTH_CONST.__const: 0x1848
-+  __AUTH_CONST.__objc_const: 0x378
-+  __AUTH_CONST.__auth_got: 0x12c0
-+  __AUTH.__data: 0x2a0
-+  __DATA.__data: 0x480
-   __DATA.__bss: 0x1700
-   __DATA.__common: 0x1
--  __DATA_DIRTY.__data: 0xae8
-+  __DATA_DIRTY.__data: 0xaa8
-   __DATA_DIRTY.__common: 0x50
-   __DATA_DIRTY.__bss: 0x180
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
 
-   - /System/Library/Frameworks/_MediaIntents_AppIntents.framework/_MediaIntents_AppIntents
-   - /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
-   - /System/Library/PrivateFrameworks/FlowToolTypes.framework/FlowToolTypes
 +  - /System/Library/PrivateFrameworks/IntelligenceFlowErrorTypes.framework/IntelligenceFlowErrorTypes
-   - /System/Library/PrivateFrameworks/IntelligenceFlowShared.framework/IntelligenceFlowShared
-   - /System/Library/PrivateFrameworks/LinkMetadata.framework/LinkMetadata
-   - /System/Library/PrivateFrameworks/NetworkServiceProxy.framework/NetworkServiceProxy
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1729
--  Symbols:   3671
+-  Symbols:   3652
 +  Functions: 1785
-+  Symbols:   3788
-   CStrings:  95
- 
++  Symbols:   3769
 Symbols:
 + _$s017_MediaIntents_AppB035HomeDeviceGroupRepresentationEntityV25SpotlightResultQuantifierO10everywhereyA2EmFWC
 + _$s017_MediaIntents_AppB035HomeDeviceGroupRepresentationEntityV25SpotlightResultQuantifierOMa

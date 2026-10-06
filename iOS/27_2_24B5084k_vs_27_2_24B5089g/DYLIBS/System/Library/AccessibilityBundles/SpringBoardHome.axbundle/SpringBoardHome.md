@@ -2,60 +2,33 @@
 
 > `/System/Library/AccessibilityBundles/SpringBoardHome.axbundle/SpringBoardHome`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21da4` | `0x22310` | **`+0x56c`** |
+| `__AUTH_CONST.__cfstring` | `0x5e80` | `0x5f20` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0x514e` | `0x51ca` | **`+0x7c`** |
+| `__TEXT.__objc_methlist` | `0x21ec` | `0x2224` | **`+0x38`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1008` | `0x1030` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0xb68` | `0xb88` | **`+0x20`** |
+| `__DATA.__bss` | `0x158` | `0x140` | **`-0x18`** |
+| `__DATA_DIRTY.__bss` | `0x38` | `0x50` | **`+0x18`** |
+| `__TEXT.__gcc_except_tab` | `0xb6c` | `0xb80` | **`+0x14`** |
+
+### Other Changes
+
 ```diff
 
 -3050.3.0.0.0
--  __TEXT.__text: 0x2109c
--  __TEXT.__objc_methlist: 0x21ec
 +3050.3.1.0.0
-+  __TEXT.__text: 0x215e4
-+  __TEXT.__objc_methlist: 0x2224
-   __TEXT.__dlopen_cstrs: 0x228
-   __TEXT.__const: 0x58
--  __TEXT.__gcc_except_tab: 0xb6c
--  __TEXT.__cstring: 0x514e
-+  __TEXT.__gcc_except_tab: 0xb80
-+  __TEXT.__cstring: 0x51ca
-   __TEXT.__oslogstring: 0x1f0
--  __TEXT.__unwind_info: 0xd58
-+  __TEXT.__unwind_info: 0xd78
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__const: 0x7e0
-   __DATA_CONST.__objc_classlist: 0x430
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1008
-+  __DATA_CONST.__objc_selrefs: 0x1030
-   __DATA_CONST.__objc_superrefs: 0x160
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x220
--  __AUTH_CONST.__cfstring: 0x5e80
-+  __AUTH_CONST.__cfstring: 0x5f20
-   __AUTH_CONST.__objc_const: 0x4b60
-   __AUTH_CONST.__objc_intobj: 0x90
-   __AUTH_CONST.__auth_got: 0x0
-
-   __DATA.__data: 0x30
-   __DATA.__common: 0x60
-   __DATA_DIRTY.__objc_data: 0x2990
--  __DATA_DIRTY.__bss: 0x38
-+  __DATA_DIRTY.__bss: 0x50
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 844
--  Symbols:   2263
+-  Symbols:   1869
 -  CStrings:  847
 +  Functions: 850
-+  Symbols:   2275
++  Symbols:   1876
 +  CStrings:  852
- 
 Symbols:
 + -[SBHWidgetWrapperViewAccessibility _axAddWidgetDetailSheetPageControl]
 + -[SBHWidgetWrapperViewAccessibility _axAddWidgetDetailSheet]
@@ -118,11 +91,6 @@ Symbols:
 + GCC_except_table841
 + GCC_except_table844
 + ___74-[SBHWidgetWrapperViewAccessibility _axScrollAddWidgetDetailSheetByPages:]_block_invoke
-+ _objc_msgSend$_axAddWidgetDetailSheet
-+ _objc_msgSend$_axAddWidgetDetailSheetPageControl
-+ _objc_msgSend$_axScrollAddWidgetDetailSheetByPages:
-+ _objc_msgSend$_scrollToPageIndex:animated:
-+ _objc_msgSend$parentViewController
 - GCC_except_table110
 - GCC_except_table137
 - GCC_except_table165

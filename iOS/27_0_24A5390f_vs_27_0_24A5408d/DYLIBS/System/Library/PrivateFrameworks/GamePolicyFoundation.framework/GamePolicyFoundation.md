@@ -2,17 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/GamePolicyFoundation.framework/GamePolicyFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3cb0c` | `0x3caf0` | **`-0x1c`** |
+
+### Other Changes
+
 ```diff
 
 -4.0.6.0.0
--  __TEXT.__text: 0x3cb0c
 +4.0.7.0.0
-+  __TEXT.__text: 0x3caf0
-   __TEXT.__objc_methlist: 0x6a8
-   __TEXT.__const: 0x20e0
-   __TEXT.__cstring: 0x1a0a
 Functions:
-~ sub_2670982a8 -> sub_266b8d2a8 : 1588 -> 1580
-~ sub_267098d8c -> sub_266b8dd84 : 796 -> 784
-~ sub_26709976c -> sub_266b8e758 : 1444 -> 1436
+~ sub_266f3f2a8 -> sub_266aa02a8 : 1588 -> 1580
+~ sub_266f3fd8c -> sub_266aa0d84 : 796 -> 784
+~ sub_266f4076c -> sub_266aa1758 : 1444 -> 1436
 ```

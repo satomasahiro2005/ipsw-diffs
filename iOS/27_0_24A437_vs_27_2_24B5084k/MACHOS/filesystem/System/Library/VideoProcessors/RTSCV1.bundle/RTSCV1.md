@@ -2,73 +2,48 @@
 
 > `/System/Library/VideoProcessors/RTSCV1.bundle/RTSCV1`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf46c` | `0x161a0` | **`+0x6d34`** |
+| `__TEXT.__oslogstring` | `—` | `0x2a2b` | **`+0x2a2b`** |
+| `__TEXT.__cstring` | `0x8e8` | `0x1d26` | **`+0x143e`** |
+| `__TEXT.__gcc_except_tab` | `0x318` | `0x664` | **`+0x34c`** |
+| `__TEXT.__unwind_info` | `0x420` | `0x4c0` | **`+0xa0`** |
+| `__TEXT.__auth_stubs` | `0x660` | `0x6b0` | **`+0x50`** |
+| `__TEXT.__const` | `0x2f0` | `0x338` | **`+0x48`** |
+| `__DATA.__common` | `—` | `0x40` | **`+0x40`** |
+| `__DATA_CONST.__cfstring` | `0x200` | `0x240` | **`+0x40`** |
+| `__DATA_CONST.__auth_got` | `0x340` | `0x368` | **`+0x28`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
 -764.22.13.0.0
--  __TEXT.__text: 0xf2c8
--  __TEXT.__auth_stubs: 0x660
 +764.40.4.122.1
-+  __TEXT.__text: 0x15ffc
-+  __TEXT.__auth_stubs: 0x6b0
-   __TEXT.__objc_stubs: 0x1720
-   __TEXT.__objc_methlist: 0xf74
--  __TEXT.__const: 0x2f0
--  __TEXT.__cstring: 0x8e8
-+  __TEXT.__const: 0x338
-+  __TEXT.__cstring: 0x1d26
-+  __TEXT.__oslogstring: 0x2a2b
-   __TEXT.__objc_methname: 0x319e
-   __TEXT.__objc_classname: 0x1c1
-   __TEXT.__objc_methtype: 0x15b4
--  __TEXT.__gcc_except_tab: 0x318
--  __TEXT.__unwind_info: 0x548
--  __DATA_CONST.__cfstring: 0x200
-+  __TEXT.__gcc_except_tab: 0x664
-+  __TEXT.__unwind_info: 0x588
-+  __DATA_CONST.__cfstring: 0x240
-   __DATA_CONST.__objc_classlist: 0x80
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x78
-   __DATA_CONST.__objc_intobj: 0x18
--  __DATA_CONST.__auth_got: 0x340
-+  __DATA_CONST.__auth_got: 0x368
-   __DATA_CONST.__got: 0x1a8
-   __DATA_CONST.__auth_ptr: 0x8
-   __DATA.__objc_const: 0x2988
 
-   __DATA.__objc_ivar: 0x2e0
-   __DATA.__objc_data: 0x500
-   __DATA.__data: 0x180
-+  __DATA.__common: 0x40
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 354
 -  Symbols:   968
 -  CStrings:  754
 +  Functions: 353
 +  Symbols:   998
 +  CStrings:  965
- 
 Symbols:
 + GCC_except_table14
 + GCC_except_table17

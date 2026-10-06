@@ -2,107 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/NotesUI.framework/NotesUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2bb898` | `0x2bfd78` | **`+0x44e0`** |
+| `__TEXT.__cstring` | `0x13ffd` | `0x141cd` | **`+0x1d0`** |
+| `__AUTH_CONST.__cfstring` | `0xc1a0` | `0xc340` | **`+0x1a0`** |
+| `__TEXT.__objc_methlist` | `0x16ff8` | `0x17168` | **`+0x170`** |
+| `__AUTH_CONST.__objc_const` | `0x242b0` | `0x24400` | **`+0x150`** |
+| `__DATA_CONST.__objc_selrefs` | `0xff68` | `0x10088` | **`+0x120`** |
+| `__TEXT.__gcc_except_tab` | `0x4924` | `0x4a1c` | **`+0xf8`** |
+| `__DATA.__data` | `0x56e4` | `0x57d4` | **`+0xf0`** |
+| `__DATA_CONST.__const` | `0x6508` | `0x65f8` | **`+0xf0`** |
+| `__AUTH_CONST.__const` | `0xa2e0` | `0xa3a8` | **`+0xc8`** |
+| `__TEXT.__oslogstring` | `0xa155` | `0xa215` | **`+0xc0`** |
+| `__TEXT.__unwind_info` | `0x9bf8` | `0x9cb8` | **`+0xc0`** |
+| `__TEXT.__swift5_typeref` | `0xc8c4` | `0xc942` | **`+0x7e`** |
+| `__AUTH_CONST.__auth_got` | `0x3320` | `0x3360` | **`+0x40`** |
+| `__TEXT.__const` | `0x9ff4` | `0xa034` | **`+0x40`** |
+| `__TEXT.__eh_frame` | `0x46e8` | `0x4718` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x2ee8` | `0x2f08` | **`+0x20`** |
+| `__DATA_DIRTY.__data` | `0x25e0` | `0x25c0` | **`-0x20`** |
+| `__TEXT.__swift5_capture` | `0x202c` | `0x2040` | **`+0x14`** |
+| `__AUTH.__data` | `0x1c48` | `0x1c50` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x3c0` | `0x3c8` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x11d0` | `0x11d4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2998.0.0.0.0
--  __TEXT.__text: 0x2bb898
 +3001.2.1.0.0
-+  __TEXT.__text: 0x2bfd78
-   __TEXT.__delay_stubs: 0x40
-   __TEXT.__delay_helper: 0x6ec
-   __TEXT.__init_offsets: 0x4
--  __TEXT.__objc_methlist: 0x16ff8
--  __TEXT.__const: 0x9ff4
--  __TEXT.__cstring: 0x13ffd
--  __TEXT.__gcc_except_tab: 0x4924
--  __TEXT.__oslogstring: 0xa155
-+  __TEXT.__objc_methlist: 0x17168
-+  __TEXT.__const: 0xa034
-+  __TEXT.__cstring: 0x141cd
-+  __TEXT.__gcc_except_tab: 0x4a1c
-+  __TEXT.__oslogstring: 0xa215
-   __TEXT.__ustring: 0x13896
--  __TEXT.__swift5_typeref: 0xc8c4
-+  __TEXT.__swift5_typeref: 0xc942
-   __TEXT.__constg_swiftt: 0x3b78
-   __TEXT.__swift5_reflstr: 0x2284
-   __TEXT.__swift5_fieldmd: 0x2560
 
-   __TEXT.__swift5_assocty: 0x7f0
-   __TEXT.__swift5_proto: 0x404
-   __TEXT.__swift5_types: 0x30c
--  __TEXT.__swift5_capture: 0x202c
-+  __TEXT.__swift5_capture: 0x2040
-   __TEXT.__swift5_protos: 0x24
-   __TEXT.__swift_as_entry: 0xf8
-   __TEXT.__swift_as_ret: 0x108
-   __TEXT.__swift_as_cont: 0x1e0
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x9bf8
--  __TEXT.__eh_frame: 0x46e8
-+  __TEXT.__unwind_info: 0x9cb8
-+  __TEXT.__eh_frame: 0x4718
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x6508
-+  __DATA_CONST.__const: 0x65f8
-   __DATA_CONST.__objc_classlist: 0xac8
-   __DATA_CONST.__objc_catlist: 0x2c8
-   __DATA_CONST.__objc_catlist2: 0x10
--  __DATA_CONST.__objc_protolist: 0x3c0
-+  __DATA_CONST.__objc_protolist: 0x3c8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0xff68
-+  __DATA_CONST.__objc_selrefs: 0x10088
-   __DATA_CONST.__objc_protorefs: 0x178
-   __DATA_CONST.__objc_superrefs: 0x6a0
-   __DATA_CONST.__objc_arraydata: 0x328
--  __DATA_CONST.__got: 0x2ee8
--  __AUTH_CONST.__const: 0xa2e0
--  __AUTH_CONST.__cfstring: 0xc1a0
--  __AUTH_CONST.__objc_const: 0x242b0
-+  __DATA_CONST.__got: 0x2f08
-+  __AUTH_CONST.__const: 0xa3a8
-+  __AUTH_CONST.__cfstring: 0xc340
-+  __AUTH_CONST.__objc_const: 0x24400
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_arrayobj: 0x1e0
-   __AUTH_CONST.__objc_intobj: 0x660
-   __AUTH_CONST.__objc_doubleobj: 0x120
-   __AUTH_CONST.__objc_dictobj: 0x50
--  __AUTH_CONST.__auth_got: 0x3320
-+  __AUTH_CONST.__auth_got: 0x3360
-   __AUTH.__objc_data: 0x40c8
--  __AUTH.__data: 0x1c48
--  __DATA.__objc_ivar: 0x11d0
--  __DATA.__data: 0x56e4
-+  __AUTH.__data: 0x1c50
-+  __DATA.__objc_ivar: 0x11d4
-+  __DATA.__data: 0x57d4
-   __DATA.__objc_stublist: 0x28
-   __DATA.__bss: 0x4160
-   __DATA.__common: 0x70
-   __DATA_DIRTY.__objc_data: 0x40c8
--  __DATA_DIRTY.__data: 0x25e0
-+  __DATA_DIRTY.__data: 0x25c0
-   __DATA_DIRTY.__bss: 0x4550
-   __DATA_DIRTY.__common: 0x60
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 14892
--  Symbols:   22085
+-  Symbols:   15883
 -  CStrings:  3246
 +  Functions: 14940
-+  Symbols:   22166
++  Symbols:   15942
 +  CStrings:  3268
- 
 Symbols:
 + +[ICDeviceSupport(UI) isEnhancedSiriAvailable]
 + +[UIAction(IC) ic_actionWithAttributedTitle:image:handler:]
@@ -169,31 +108,6 @@ Symbols:
 + ___block_descriptor_40_e8_32w_e18_v16?0"UIAction"8lw32l8
 + ___block_descriptor_40_e8_32w_e25_"UIMenu"16?0"NSArray"8lw32l8
 + ___block_descriptor_88_e8_32s40s48s56bs64bs72r80r_e27_v40?08{_NSRange=QQ}16^B32ls56l8s32l8r72l8s40l8s48l8r80l8s64l8
-+ _objc_msgSend$_activationInteractionPolicy
-+ _objc_msgSend$_presentMenuAtLocation:
-+ _objc_msgSend$copy:
-+ _objc_msgSend$cut:
-+ _objc_msgSend$deleteBackward
-+ _objc_msgSend$dividerContextMenuInteraction
-+ _objc_msgSend$dividerLineEditMenu
-+ _objc_msgSend$dividerLineRangeInTextView:
-+ _objc_msgSend$enclosingTextView
-+ _objc_msgSend$ic_actionWithAttributedTitle:image:handler:
-+ _objc_msgSend$isEnhancedSiriAvailable
-+ _objc_msgSend$isEqualToNumber:
-+ _objc_msgSend$isFiringFromMaximumDelay
-+ _objc_msgSend$isFiringImmediately
-+ _objc_msgSend$linkedNoteIsPasswordProtected
-+ _objc_msgSend$menuWithTitle:children:
-+ _objc_msgSend$paste:
-+ _objc_msgSend$performDividerLineEdit:
-+ _objc_msgSend$performWithAttributedTitle:contents:pinned:container:error:
-+ _objc_msgSend$performWithAttributedTitle:contents:pinned:stylesTitle:error:
-+ _objc_msgSend$selectDividerLine
-+ _objc_msgSend$setDividerContextMenuInteraction:
-+ _objc_msgSend$setNumberOfTapsRequired:
-+ _objc_msgSend$setPaperHasGraph:
-+ _objc_msgSend$setupDividerInteractions
 + _symbolic SDy__________G 10Foundation4UUIDV So29ICCalculateDocumentControllerC7NotesUIE5IndexC
 + _symbolic _____Sg 8PaperKit19SharedCanvasElementO
 + _symbolic ___________t 10Foundation4UUIDV So29ICCalculateDocumentControllerC7NotesUIE5IndexC
@@ -216,9 +130,6 @@ Symbols:
 - ___77-[ICCreateHTMLNoteAction performWithTitle:contents:pinned:stylesTitle:error:]_block_invoke
 - ___79-[ICCreateModernNoteAction performWithTitle:contents:pinned:stylesTitle:error:]_block_invoke
 - ___block_descriptor_80_e8_32s40s48s56bs64r72r_e27_v40?08{_NSRange=QQ}16^B32ls56l8s32l8r64l8s40l8s48l8r72l8
-- _objc_msgSend$isStringMarkdown:
-- _objc_msgSend$linkedNoteIsPasswordProtectedAndLocked
-- _objc_msgSend$performWithTitle:contents:pinned:stylesTitle:error:
 CStrings:
 + "-[ICCreateNoteAction performWithAttributedTitle:contents:pinned:container:error:]"
 + "@\"NSArray\"16@?0@\"NSPresentationIntent\"8"

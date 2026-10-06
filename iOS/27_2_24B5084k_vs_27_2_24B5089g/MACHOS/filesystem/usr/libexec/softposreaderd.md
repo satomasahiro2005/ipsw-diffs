@@ -2,6 +2,6 @@
 
 > `/usr/libexec/softposreaderd`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__eh_frame`

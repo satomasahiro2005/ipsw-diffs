@@ -2,63 +2,42 @@
 
 > `/private/var/staged_system_apps/News.app/PlugIns/NewsTag.appex/NewsTag`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9a95c` | `0x9aa04` | **`+0xa8`** |
+| `__TEXT.__eh_frame` | `0x1abc` | `0x1b14` | **`+0x58`** |
+| `__TEXT.__auth_stubs` | `0x32d0` | `0x32f0` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0x1980` | `0x1990` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x2080` | `0x2090` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_intobj`
 - `__TEXT.__const`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_entry`
 - `__TEXT.__swift5_typeref`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift5_entry`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -5962.0.0.0.0
--  __TEXT.__text: 0x966e8
--  __TEXT.__auth_stubs: 0x32d0
 +5969.0.0.0.0
-+  __TEXT.__text: 0x96790
-+  __TEXT.__auth_stubs: 0x32f0
-   __TEXT.__objc_stubs: 0x50a0
-   __TEXT.__objc_methlist: 0x3f18
-   __TEXT.__const: 0x6c14
 
-   __TEXT.__swift_as_entry: 0x20
-   __TEXT.__swift_as_ret: 0x1c
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__unwind_info: 0x2a10
--  __TEXT.__eh_frame: 0x1abc
-+  __TEXT.__unwind_info: 0x2a20
-+  __TEXT.__eh_frame: 0x1b14
-   __DATA_CONST.__const: 0x40e0
-   __DATA_CONST.__cfstring: 0xb00
-   __DATA_CONST.__objc_classlist: 0x200
-
-   __DATA_CONST.__objc_protorefs: 0x160
-   __DATA_CONST.__objc_superrefs: 0xb0
-   __DATA_CONST.__objc_intobj: 0x1e0
--  __DATA_CONST.__auth_got: 0x1980
-+  __DATA_CONST.__auth_got: 0x1990
-   __DATA_CONST.__got: 0xc50
-   __DATA_CONST.__auth_ptr: 0xb28
-   __DATA.__objc_const: 0x8bc8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2985
 +  Functions: 2987
-   Symbols:   618
-   CStrings:  2569
- 
 ```

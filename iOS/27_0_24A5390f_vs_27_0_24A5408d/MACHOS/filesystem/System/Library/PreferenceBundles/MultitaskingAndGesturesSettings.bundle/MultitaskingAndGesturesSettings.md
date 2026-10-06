@@ -2,15 +2,14 @@
 
 > `/System/Library/PreferenceBundles/MultitaskingAndGesturesSettings.bundle/MultitaskingAndGesturesSettings`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -1211.0.0.0.0
 +1214.0.0.0.0
-   __TEXT.__text: 0x38ee4
-   __TEXT.__auth_stubs: 0x1ad0
-   __TEXT.__objc_stubs: 0x880
 ```

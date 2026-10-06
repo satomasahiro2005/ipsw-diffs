@@ -2,19 +2,20 @@
 
 > `/System/Library/AppRemovalServices/com.apple.Translate.appremoval.xpc/com.apple.Translate.appremoval`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1774` | `0x1778` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 389.1.0.0.0
--  __TEXT.__text: 0x1774
-+  __TEXT.__text: 0x1778
-   __TEXT.__auth_stubs: 0x440
-   __TEXT.__objc_stubs: 0x120
-   __TEXT.__objc_methlist: 0x174
+```text
 Functions:
 ~ sub_100002224 : 356 -> 360
 ```

@@ -2,15 +2,14 @@
 
 > `/usr/sbin/ckksctl`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -62460.0.55.0.1
 +62460.2.1.0.0
-   __TEXT.__text: 0x5d84
-   __TEXT.__auth_stubs: 0x440
-   __TEXT.__objc_stubs: 0x860
 ```

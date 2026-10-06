@@ -2,96 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/FitnessWorkoutSession.framework/FitnessWorkoutSession`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2d838` | `0x3616c` | **`+0x8934`** |
+| `__DATA.__bss` | `0xc9b8` | `0xdc60` | **`+0x12a8`** |
+| `__TEXT.__const` | `0x6b70` | `0x753c` | **`+0x9cc`** |
+| `__TEXT.__cstring` | `0x3bc` | `0x8c9` | **`+0x50d`** |
+| `__TEXT.__swift5_typeref` | `0x1a17` | `0x1d91` | **`+0x37a`** |
+| `__DATA_CONST.__got` | `0x0` | `0x330` | **`+0x330`** |
+| `__DATA.__data` | `0x1288` | `0x14b0` | **`+0x228`** |
+| `__TEXT.__swift5_fieldmd` | `0x1208` | `0x1410` | **`+0x208`** |
+| `__TEXT.__unwind_info` | `0x12b0` | `0x1418` | **`+0x168`** |
+| `__TEXT.__eh_frame` | `0x18f4` | `0x1798` | **`-0x15c`** |
+| `__AUTH_CONST.__const` | `0x2d38` | `0x2e38` | **`+0x100`** |
+| `__TEXT.__swift5_reflstr` | `0x8d7` | `0x9c9` | **`+0xf2`** |
+| `__AUTH_CONST.__auth_got` | `0x688` | `0x778` | **`+0xf0`** |
+| `__TEXT.__constg_swiftt` | `0x10b0` | `0x1184` | **`+0xd4`** |
+| `__AUTH.__data` | `0x4c0` | `0x558` | **`+0x98`** |
+| `__TEXT.__swift5_proto` | `0x64c` | `0x6e0` | **`+0x94`** |
+| `__TEXT.__swift5_assocty` | `0x110` | `0xd0` | **`-0x40`** |
+| `__TEXT.__swift5_capture` | `0x250` | `0x228` | **`-0x28`** |
+| `__TEXT.__swift5_types` | `0x1d0` | `0x1ec` | **`+0x1c`** |
+| `__TEXT.__swift_as_cont` | `0x80` | `0x68` | **`-0x18`** |
+| `__TEXT.__swift5_builtin` | `0x28` | `0x14` | **`-0x14`** |
+| `__TEXT.__swift_as_ret` | `0x54` | `0x44` | **`-0x10`** |
+| `__TEXT.__swift_as_entry` | `0x48` | `0x3c` | **`-0xc`** |
+| `__TEXT.__oslogstring` | `0x1d` | `0x28` | **`+0xb`** |
+| `__TEXT.__swift5_mpenum` | `0x10` | `0x8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2d838
-+  __TEXT.__text: 0x3616c
-   __TEXT.__objc_methlist: 0xac
--  __TEXT.__const: 0x6b70
--  __TEXT.__swift5_typeref: 0x1a17
--  __TEXT.__cstring: 0x3bc
--  __TEXT.__constg_swiftt: 0x10b0
--  __TEXT.__swift5_reflstr: 0x8d7
--  __TEXT.__swift5_fieldmd: 0x1208
--  __TEXT.__swift5_proto: 0x64c
--  __TEXT.__swift5_types: 0x1d0
--  __TEXT.__swift5_capture: 0x250
--  __TEXT.__swift5_assocty: 0x110
--  __TEXT.__oslogstring: 0x1d
--  __TEXT.__swift_as_entry: 0x48
--  __TEXT.__swift_as_ret: 0x54
--  __TEXT.__swift_as_cont: 0x80
--  __TEXT.__swift5_builtin: 0x28
--  __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x12b0
--  __TEXT.__eh_frame: 0x18f4
-+  __TEXT.__const: 0x753c
-+  __TEXT.__swift5_typeref: 0x1d91
-+  __TEXT.__cstring: 0x8c9
-+  __TEXT.__constg_swiftt: 0x1184
-+  __TEXT.__swift5_reflstr: 0x9c9
-+  __TEXT.__swift5_fieldmd: 0x1410
-+  __TEXT.__swift5_proto: 0x6e0
-+  __TEXT.__swift5_types: 0x1ec
-+  __TEXT.__swift5_capture: 0x228
-+  __TEXT.__swift5_assocty: 0xd0
-+  __TEXT.__oslogstring: 0x28
-+  __TEXT.__swift_as_entry: 0x3c
-+  __TEXT.__swift_as_ret: 0x44
-+  __TEXT.__swift_as_cont: 0x68
-+  __TEXT.__swift5_builtin: 0x14
-+  __TEXT.__swift5_mpenum: 0x8
-+  __TEXT.__unwind_info: 0x1418
-+  __TEXT.__eh_frame: 0x1798
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-2027.0.117.0.2
++2027.0.124.0.3
 
-   __DATA_CONST.__objc_classlist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x270
--  __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2d38
-+  __DATA_CONST.__got: 0x330
-+  __AUTH_CONST.__const: 0x2e38
-   __AUTH_CONST.__objc_const: 0x360
--  __AUTH_CONST.__auth_got: 0x688
-+  __AUTH_CONST.__auth_got: 0x778
-   __AUTH.__objc_data: 0x1c8
--  __AUTH.__data: 0x4c0
--  __DATA.__data: 0x1288
--  __DATA.__bss: 0xc9b8
-+  __AUTH.__data: 0x558
-+  __DATA.__data: 0x14b0
-+  __DATA.__bss: 0xdc60
-   __DATA.__common: 0x20
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AVKit.framework/AVKit
-
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/PrivateFrameworks/DataFlow.framework/DataFlow
 +  - /System/Library/PrivateFrameworks/FitnessUtilities.framework/FitnessUtilities
-   - /System/Library/PrivateFrameworks/SeymourCore.framework/SeymourCore
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1651
--  Symbols:   997
+-  Symbols:   837
 -  CStrings:  24
 +  Functions: 1833
-+  Symbols:   1052
++  Symbols:   896
 +  CStrings:  49
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
 Symbols:
 + ___swift_memcpy24_8
 + ___swift_memcpy2_1
@@ -518,5 +473,4 @@ CStrings:
 - "navigateToCountdown"
 - "startCountdownSequence"
 - "supportsTapToSkip"
-
 ```

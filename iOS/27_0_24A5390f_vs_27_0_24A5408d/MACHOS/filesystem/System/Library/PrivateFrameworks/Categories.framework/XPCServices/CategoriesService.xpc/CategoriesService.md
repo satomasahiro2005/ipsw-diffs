@@ -2,87 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/Categories.framework/XPCServices/CategoriesService.xpc/CategoriesService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__oslogstring` | `0x746` | `0x62c` | **`-0x11a`** |
+| `__DATA_CONST.__cfstring` | `0x9e0` | `0xac0` | **`+0xe0`** |
+| `__TEXT.__gcc_except_tab` | `0x180` | `0x100` | **`-0x80`** |
+| `__TEXT.__objc_methname` | `0xeac` | `0xf12` | **`+0x66`** |
+| `__DATA_CONST.__objc_arraydata` | `—` | `0x58` | **`+0x58`** |
+| `__DATA_CONST.__objc_dictobj` | `—` | `0x50` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x394` | `0x3cc` | **`+0x38`** |
+| `__DATA.__objc_const` | `0x790` | `0x7c0` | **`+0x30`** |
+| `__DATA_CONST.__objc_intobj` | `—` | `0x30` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x2a0` | `0x2c0` | **`+0x20`** |
+| `__TEXT.__objc_stubs` | `0xee0` | `0xec0` | **`-0x20`** |
+| `__TEXT.__text` | `0x50d4` | `0x50b4` | **`-0x20`** |
+| `__TEXT.__objc_methtype` | `0x2e8` | `0x2ce` | **`-0x1a`** |
+| `__DATA_CONST.__objc_arrayobj` | `—` | `0x18` | **`+0x18`** |
+| `__DATA.__bss` | `0x38` | `0x48` | **`+0x10`** |
+| `__DATA.__objc_selrefs` | `0x4a0` | `0x490` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x1c8` | `0x1b8` | **`-0x10`** |
+| `__TEXT.__auth_stubs` | `0x420` | `0x410` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x178` | `0x188` | **`+0x10`** |
+| `__TEXT.__cstring` | `0x60e` | `0x61c` | **`+0xe`** |
+| `__DATA_CONST.__auth_got` | `0x220` | `0x218` | **`-0x8`** |
+| `__TEXT.__const` | `0xb8` | `0xc0` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x24` | `0x28` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -56.0.0.0.0
--  __TEXT.__text: 0x50d4
--  __TEXT.__auth_stubs: 0x420
--  __TEXT.__objc_stubs: 0xee0
--  __TEXT.__objc_methlist: 0x394
--  __TEXT.__const: 0xb8
--  __TEXT.__objc_methname: 0xeac
--  __TEXT.__oslogstring: 0x746
--  __TEXT.__cstring: 0x60e
 +58.0.1.0.0
-+  __TEXT.__text: 0x50b4
-+  __TEXT.__auth_stubs: 0x410
-+  __TEXT.__objc_stubs: 0xec0
-+  __TEXT.__objc_methlist: 0x3cc
-+  __TEXT.__const: 0xc0
-+  __TEXT.__objc_methname: 0xf12
-+  __TEXT.__oslogstring: 0x62c
-+  __TEXT.__cstring: 0x61c
-   __TEXT.__objc_classname: 0xbb
--  __TEXT.__objc_methtype: 0x2e8
--  __TEXT.__gcc_except_tab: 0x180
--  __TEXT.__unwind_info: 0x178
--  __DATA_CONST.__const: 0x2a0
--  __DATA_CONST.__cfstring: 0x9e0
-+  __TEXT.__objc_methtype: 0x2ce
-+  __TEXT.__gcc_except_tab: 0x100
-+  __TEXT.__unwind_info: 0x188
-+  __DATA_CONST.__const: 0x2c0
-+  __DATA_CONST.__cfstring: 0xac0
-   __DATA_CONST.__objc_classlist: 0x30
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x28
--  __DATA_CONST.__auth_got: 0x220
--  __DATA_CONST.__got: 0x1c8
--  __DATA.__objc_const: 0x790
--  __DATA.__objc_selrefs: 0x4a0
--  __DATA.__objc_ivar: 0x24
-+  __DATA_CONST.__objc_intobj: 0x30
-+  __DATA_CONST.__objc_arraydata: 0x58
-+  __DATA_CONST.__objc_dictobj: 0x50
-+  __DATA_CONST.__objc_arrayobj: 0x18
-+  __DATA_CONST.__auth_got: 0x218
-+  __DATA_CONST.__got: 0x1b8
-+  __DATA.__objc_const: 0x7c0
-+  __DATA.__objc_selrefs: 0x490
-+  __DATA.__objc_ivar: 0x28
-   __DATA.__objc_data: 0x1e0
-   __DATA.__data: 0x120
--  __DATA.__bss: 0x38
-+  __DATA.__bss: 0x48
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+
 +  - /System/Library/PrivateFrameworks/AppleMediaServices.framework/AppleMediaServices
-   - /System/Library/PrivateFrameworks/Categories.framework/Categories
-   - /System/Library/PrivateFrameworks/ContextKit.framework/ContextKit
-   - /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
+
 -  Functions: 87
 +  Functions: 88
-   Symbols:   146
+
 -  CStrings:  359
 +  CStrings:  356
- 
 Symbols:
 + _AMSErrorDomain
 + _AMSMediaTaskPlatformAppleTV

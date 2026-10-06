@@ -2,58 +2,37 @@
 
 > `/System/Library/AccessibilityBundles/PreferencesFramework.axbundle/PreferencesFramework`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7c14` | `0x847c` | **`+0x868`** |
+| `__AUTH_CONST.__objc_const` | `0x2fd0` | `0x30f0` | **`+0x120`** |
+| `__AUTH.__objc_data` | `0x1e0` | `0x280` | **`+0xa0`** |
+| `__AUTH_CONST.__cfstring` | `0x2060` | `0x20e0` | **`+0x80`** |
+| `__TEXT.__cstring` | `0x1941` | `0x19b3` | **`+0x72`** |
+| `__TEXT.__objc_methlist` | `0x1024` | `0x1074` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x1f8` | `0x238` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6d0` | `0x710` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x378` | `0x3a0` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x140` | `0x160` | **`+0x20`** |
+| `__DATA.__bss` | `0x8` | `0x18` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x2a8` | `0x2b8` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0xd0` | `0xd8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3050.3.0.0.0
--  __TEXT.__text: 0x77f8
--  __TEXT.__objc_methlist: 0x1024
 +3050.3.1.0.0
-+  __TEXT.__text: 0x803c
-+  __TEXT.__objc_methlist: 0x1074
-   __TEXT.__const: 0x38
-   __TEXT.__gcc_except_tab: 0xb4
--  __TEXT.__cstring: 0x1941
--  __TEXT.__unwind_info: 0x420
-+  __TEXT.__cstring: 0x19b3
-+  __TEXT.__unwind_info: 0x448
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x2f8
--  __DATA_CONST.__objc_classlist: 0x2a8
-+  __DATA_CONST.__objc_classlist: 0x2b8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6d0
--  __DATA_CONST.__objc_superrefs: 0xd0
--  __DATA_CONST.__got: 0x1f8
--  __AUTH_CONST.__const: 0x140
--  __AUTH_CONST.__cfstring: 0x2060
--  __AUTH_CONST.__objc_const: 0x2fd0
-+  __DATA_CONST.__objc_selrefs: 0x710
-+  __DATA_CONST.__objc_superrefs: 0xd8
-+  __DATA_CONST.__got: 0x238
-+  __AUTH_CONST.__const: 0x160
-+  __AUTH_CONST.__cfstring: 0x20e0
-+  __AUTH_CONST.__objc_const: 0x30f0
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x1e0
-+  __AUTH.__objc_data: 0x280
-   __DATA_DIRTY.__objc_data: 0x18b0
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libMobileCheckpoint.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 298
--  Symbols:   1046
+-  Symbols:   880
 -  CStrings:  291
 +  Functions: 306
-+  Symbols:   1087
++  Symbols:   915
 +  CStrings:  295
- 
 Symbols:
 + +[PSSwitchTableCellAccessibility _accessibilityPerformValidations:]
 + +[PSSwitchTableCellAccessibility(SafeCategory) safeCategoryBaseClass]
@@ -94,12 +73,6 @@ Symbols:
 + __axCollectContentFrames.ExcludedClasses
 + __axCollectContentFrames.onceToken
 + _dispatch_once
-+ _objc_msgSend$alpha
-+ _objc_msgSend$axArrayByIgnoringNilElementsWithCount:
-+ _objc_msgSend$bezierPathWithRect:
-+ _objc_msgSend$convertRect:fromView:
-+ _objc_msgSend$setWithArray:
-+ _objc_msgSend$subviews
 + _objc_release_x9
 - GCC_except_table109
 - GCC_except_table114

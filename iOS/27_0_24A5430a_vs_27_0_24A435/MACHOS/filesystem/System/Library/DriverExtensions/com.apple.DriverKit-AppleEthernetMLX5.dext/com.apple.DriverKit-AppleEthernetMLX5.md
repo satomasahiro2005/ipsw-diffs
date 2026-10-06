@@ -2,20 +2,21 @@
 
 > `/System/Library/DriverExtensions/com.apple.DriverKit-AppleEthernetMLX5.dext/com.apple.DriverKit-AppleEthernetMLX5`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x193e0` | `0x19420` | **`+0x40`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 171.0.0.0.0
--  __TEXT.__text: 0x193e0
-+  __TEXT.__text: 0x19420
-   __TEXT.__auth_stubs: 0x660
-   __TEXT.__cstring: 0x3ff3
-   __TEXT.__const: 0x2268
+```text
 Functions:
 ~ __ZN27DriverKit_AppleEthernetMLX519QueueInterrupt_ImplEP8OSActionyy : 108 -> 112
 ~ __ZN33DriverKit_AppleEthernetMLX5_IVars16allocDBFromPgDirER24AppleEthernetMLX5DBPgDirRN4mlx52DBE : 76 -> 84

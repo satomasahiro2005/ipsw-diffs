@@ -2,81 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/HangTracer.framework/PlugIns/HangLogsDiagnosticExtension.appex/HangLogsDiagnosticExtension`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__gcc_except_tab`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x133b0` | `0x14a70` | **`+0x16c0`** |
+| `__TEXT.__oslogstring` | `0x1cb8` | `0x2145` | **`+0x48d`** |
+| `__TEXT.__objc_methname` | `0x447c` | `0x46b9` | **`+0x23d`** |
+| `__DATA.__objc_const` | `0x1fa8` | `0x21c8` | **`+0x220`** |
+| `__TEXT.__objc_methtype` | `0x852` | `0xa29` | **`+0x1d7`** |
+| `__TEXT.__objc_methlist` | `0xbbc` | `0xd2c` | **`+0x170`** |
+| `__TEXT.__cstring` | `0x26e5` | `0x281c` | **`+0x137`** |
+| `__DATA.__data` | `0x10c` | `0x204` | **`+0xf8`** |
+| `__DATA_CONST.__const` | `0xd58` | `0xe48` | **`+0xf0`** |
+| `__DATA_CONST.__cfstring` | `0x2680` | `0x2760` | **`+0xe0`** |
+| `__DATA.__objc_selrefs` | `0xbe8` | `0xcc0` | **`+0xd8`** |
+| `__TEXT.__auth_stubs` | `0xa30` | `0xab0` | **`+0x80`** |
+| `__DATA.__bss` | `0xf0` | `0x150` | **`+0x60`** |
+| `__TEXT.__objc_stubs` | `0x1cc0` | `0x1d20` | **`+0x60`** |
+| `__DATA.__objc_data` | `0x2d0` | `0x320` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x400` | `0x448` | **`+0x48`** |
+| `__DATA_CONST.__auth_got` | `0x528` | `0x568` | **`+0x40`** |
+| `__TEXT.__objc_classname` | `0xa2` | `0xde` | **`+0x3c`** |
+| `__TEXT.__const` | `0x260` | `0x280` | **`+0x20`** |
+| `__DATA_CONST.__objc_protolist` | `—` | `0x10` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x48` | `0x50` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__gcc_except_tab`
+
+### Other Changes
 
 ```diff
 
 -424.0.0.0.0
--  __TEXT.__text: 0x133b0
--  __TEXT.__auth_stubs: 0xa30
 +426.0.0.0.0
-+  __TEXT.__text: 0x14a70
-+  __TEXT.__auth_stubs: 0xab0
-   __TEXT.__delay_helper: 0xdc
--  __TEXT.__objc_stubs: 0x1cc0
--  __TEXT.__objc_methlist: 0xbbc
--  __TEXT.__const: 0x260
--  __TEXT.__cstring: 0x26e5
--  __TEXT.__oslogstring: 0x1cb8
-+  __TEXT.__objc_stubs: 0x1d20
-+  __TEXT.__objc_methlist: 0xd2c
-+  __TEXT.__const: 0x280
-+  __TEXT.__cstring: 0x281c
-+  __TEXT.__oslogstring: 0x2145
-   __TEXT.__gcc_except_tab: 0x1cc
--  __TEXT.__objc_classname: 0xa2
--  __TEXT.__objc_methname: 0x447c
--  __TEXT.__objc_methtype: 0x852
-+  __TEXT.__objc_classname: 0xde
-+  __TEXT.__objc_methname: 0x46b9
-+  __TEXT.__objc_methtype: 0xa29
-   __TEXT.__ustring: 0xe0
--  __TEXT.__unwind_info: 0x400
--  __DATA_CONST.__const: 0xd58
--  __DATA_CONST.__cfstring: 0x2680
--  __DATA_CONST.__objc_classlist: 0x48
-+  __TEXT.__unwind_info: 0x448
-+  __DATA_CONST.__const: 0xe48
-+  __DATA_CONST.__cfstring: 0x2760
-+  __DATA_CONST.__objc_classlist: 0x50
-+  __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x20
-   __DATA_CONST.__objc_intobj: 0x78
-   __DATA_CONST.__objc_doubleobj: 0x10
--  __DATA_CONST.__auth_got: 0x528
-+  __DATA_CONST.__auth_got: 0x568
-   __DATA_CONST.__got: 0x1d0
--  __DATA.__objc_const: 0x1fa8
--  __DATA.__objc_selrefs: 0xbe8
-+  __DATA.__objc_const: 0x21c8
-+  __DATA.__objc_selrefs: 0xcc0
-   __DATA.__objc_ivar: 0x22c
--  __DATA.__objc_data: 0x2d0
--  __DATA.__data: 0x10c
--  __DATA.__bss: 0xf0
-+  __DATA.__objc_data: 0x320
-+  __DATA.__data: 0x204
-+  __DATA.__bss: 0x150
-   __DATA.__common: 0x18
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
 
-   - /usr/lib/libapp_launch_measurement.dylib
-   - /usr/lib/libarchive.2.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 456
 -  Symbols:   478
 -  CStrings:  1206
 +  Functions: 484
 +  Symbols:   503
 +  CStrings:  1284
- 
 Symbols:
 + _HTEndNonResponsiveTaskAtTime
 + _MCTU_TO_MS

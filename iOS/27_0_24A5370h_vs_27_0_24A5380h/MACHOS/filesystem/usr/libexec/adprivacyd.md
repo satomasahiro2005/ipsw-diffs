@@ -2,5 +2,14 @@
 
 > `/usr/libexec/adprivacyd`
 
-Sections:
-~ __DATA.__objc_selrefs : content changed
+### Same-size Content Changes
+
+- `__DATA.__objc_selrefs`
+
+### Other Changes
+
+```diff
+
+-638.1.0.0.0
++638.1.3.0.0
+```

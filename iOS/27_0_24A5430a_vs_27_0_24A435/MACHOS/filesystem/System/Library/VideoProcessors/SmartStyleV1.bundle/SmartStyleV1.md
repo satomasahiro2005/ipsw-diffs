@@ -2,72 +2,48 @@
 
 > `/System/Library/VideoProcessors/SmartStyleV1.bundle/SmartStyleV1`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe660` | `0xea80` | **`+0x420`** |
+| `__TEXT.__objc_methname` | `0x5133` | `0x5432` | **`+0x2ff`** |
+| `__DATA.__objc_const` | `0x28c0` | `0x2a28` | **`+0x168`** |
+| `__TEXT.__objc_stubs` | `0x2380` | `0x24e0` | **`+0x160`** |
+| `__TEXT.__objc_methlist` | `0x1774` | `0x1844` | **`+0xd0`** |
+| `__TEXT.__objc_methtype` | `0x13cf` | `0x1499` | **`+0xca`** |
+| `__DATA.__objc_selrefs` | `0xc18` | `0xc80` | **`+0x68`** |
+| `__TEXT.__cstring` | `0x1caa` | `0x1cf0` | **`+0x46`** |
+| `__TEXT.__const` | `0x70` | `0xb0` | **`+0x40`** |
+| `__DATA_CONST.__cfstring` | `0x2a0` | `0x2c0` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x200` | `0x214` | **`+0x14`** |
+| `__TEXT.__unwind_info` | `0x370` | `0x378` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
 - `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
- 764.22.13.0.0
--  __TEXT.__text: 0xe660
-+  __TEXT.__text: 0xea80
-   __TEXT.__auth_stubs: 0x570
--  __TEXT.__objc_stubs: 0x2380
--  __TEXT.__objc_methlist: 0x1774
--  __TEXT.__const: 0x70
--  __TEXT.__objc_methname: 0x5133
--  __TEXT.__cstring: 0x1caa
-+  __TEXT.__objc_stubs: 0x24e0
-+  __TEXT.__objc_methlist: 0x1844
-+  __TEXT.__const: 0xb0
-+  __TEXT.__objc_methname: 0x5432
-+  __TEXT.__cstring: 0x1cf0
-   __TEXT.__objc_classname: 0x247
--  __TEXT.__objc_methtype: 0x13cf
--  __TEXT.__unwind_info: 0x370
-+  __TEXT.__objc_methtype: 0x1499
-+  __TEXT.__unwind_info: 0x378
-   __DATA_CONST.__const: 0x40
--  __DATA_CONST.__cfstring: 0x2a0
-+  __DATA_CONST.__cfstring: 0x2c0
-   __DATA_CONST.__objc_classlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
-
-   __DATA_CONST.__auth_got: 0x2c0
-   __DATA_CONST.__got: 0x1d8
-   __DATA_CONST.__auth_ptr: 0x8
--  __DATA.__objc_const: 0x28c0
--  __DATA.__objc_selrefs: 0xc18
--  __DATA.__objc_ivar: 0x200
-+  __DATA.__objc_const: 0x2a28
-+  __DATA.__objc_selrefs: 0xc80
-+  __DATA.__objc_ivar: 0x214
-   __DATA.__objc_data: 0x280
-   __DATA.__data: 0x3c0
-   __DATA.__common: 0x60
-
-   - /System/Library/PrivateFrameworks/CMImaging.framework/CMImaging
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 486
 -  Symbols:   971
 -  CStrings:  914
 +  Functions: 496
 +  Symbols:   996
 +  CStrings:  948
- 
 Symbols:
 + -[CMISmartStyleProcessorInputOutputV1 inputFaceNormalizedRects]
 + -[CMISmartStyleProcessorInputOutputV1 inputSkinMaskPCR]

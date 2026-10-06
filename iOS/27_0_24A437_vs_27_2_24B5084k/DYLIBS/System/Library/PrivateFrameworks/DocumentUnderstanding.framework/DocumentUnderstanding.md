@@ -2,45 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/DocumentUnderstanding.framework/DocumentUnderstanding`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1bc090` | `0x1bc920` | **`+0x890`** |
+| `__TEXT.__cstring` | `0xb097` | `0xb243` | **`+0x1ac`** |
+| `__TEXT.__gcc_except_tab` | `0x40f0` | `0x4178` | **`+0x88`** |
+| `__TEXT.__unwind_info` | `0x7888` | `0x78a0` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
 -176.3.0.1.0
--  __TEXT.__text: 0x1aea98
 +186.0.0.0.0
-+  __TEXT.__text: 0x1af328
-   __TEXT.__objc_methlist: 0x89d4
-   __TEXT.__const: 0xcc50
-   __TEXT.__dlopen_cstrs: 0xaa
 
-   __TEXT.__swift5_fieldmd: 0x3dd0
-   __TEXT.__swift5_builtin: 0x140
-   __TEXT.__swift5_assocty: 0x9a8
--  __TEXT.__cstring: 0xb097
-+  __TEXT.__cstring: 0xb243
-   __TEXT.__swift5_proto: 0x764
-   __TEXT.__swift5_types: 0x388
-   __TEXT.__swift5_capture: 0xabc
-
-   __TEXT.__swift_as_cont: 0x430
-   __TEXT.__swift5_protos: 0x24
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__gcc_except_tab: 0x40f0
--  __TEXT.__unwind_info: 0xb110
-+  __TEXT.__gcc_except_tab: 0x4178
-+  __TEXT.__unwind_info: 0xb128
-   __TEXT.__eh_frame: 0xa47c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 13417
 +  Functions: 13422
-   Symbols:   875
+
 -  CStrings:  1143
 +  CStrings:  1153
- 
 CStrings:
 + "!pieces_blob.empty()"
 + "(piece_offsets_[i]) < (pieces_blob.size())"

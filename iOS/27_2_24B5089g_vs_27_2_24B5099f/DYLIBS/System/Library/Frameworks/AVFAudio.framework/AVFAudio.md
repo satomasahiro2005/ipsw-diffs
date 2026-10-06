@@ -2,72 +2,34 @@
 
 > `/System/Library/Frameworks/AVFAudio.framework/AVFAudio`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x1220` | `—` | **`-0x1220`** |
+| `__DATA_DIRTY.__objc_data` | `0xe10` | `0x2030` | **`+0x1220`** |
+| `__TEXT.__text` | `0x113e00` | `0x11438c` | **`+0x58c`** |
+| `__TEXT.__oslogstring` | `0x18210` | `0x1830e` | **`+0xfe`** |
+| `__TEXT.__cstring` | `0xfe65` | `0xfeee` | **`+0x89`** |
+| `__TEXT.__gcc_except_tab` | `0x12568` | `0x125e0` | **`+0x78`** |
+| `__AUTH_CONST.__cfstring` | `0x3900` | `0x3920` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x5b1c` | `0x5b2c` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x6318` | `0x6328` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3408` | `0x3410` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -794.208.0.0.0
--  __TEXT.__text: 0x1113d8
 +794.210.0.0.0
-+  __TEXT.__text: 0x111964
-   __TEXT.__realtime: 0x1d04
--  __TEXT.__objc_methlist: 0x5b1c
-+  __TEXT.__objc_methlist: 0x5b2c
-   __TEXT.__dlopen_cstrs: 0xa9
-   __TEXT.__const: 0xb80
--  __TEXT.__cstring: 0xfe65
-+  __TEXT.__cstring: 0xfeee
-   __TEXT.__swift5_typeref: 0x256
-   __TEXT.__swift5_reflstr: 0x109
-   __TEXT.__swift5_assocty: 0x78
 
-   __TEXT.__swift5_builtin: 0x78
-   __TEXT.__swift5_mpenum: 0x18
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__gcc_except_tab: 0x12568
--  __TEXT.__oslogstring: 0x18210
--  __TEXT.__unwind_info: 0x67b8
-+  __TEXT.__gcc_except_tab: 0x125e0
-+  __TEXT.__oslogstring: 0x1830e
-+  __TEXT.__unwind_info: 0x67c8
-   __TEXT.__eh_frame: 0x2e0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x338
-   __DATA_CONST.__objc_protolist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3408
-+  __DATA_CONST.__objc_selrefs: 0x3410
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__objc_superrefs: 0x2d0
-   __DATA_CONST.__objc_arraydata: 0xf0
-   __DATA_CONST.__got: 0x6b8
-   __AUTH_CONST.__const: 0x7018
--  __AUTH_CONST.__cfstring: 0x3900
-+  __AUTH_CONST.__cfstring: 0x3920
-   __AUTH_CONST.__objc_const: 0x8b98
-   __AUTH_CONST.__weak_auth_got: 0x38
-   __AUTH_CONST.__objc_intobj: 0x78
-   __AUTH_CONST.__objc_dictobj: 0x258
-   __AUTH_CONST.__auth_got: 0x1248
--  __AUTH.__objc_data: 0x1220
-   __DATA.__objc_ivar: 0x444
-   __DATA.__data: 0x930
--  __DATA_DIRTY.__objc_data: 0xe10
-+  __DATA_DIRTY.__objc_data: 0x2030
-   __DATA_DIRTY.__bss: 0x38
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4136
 -  Symbols:   8065
 -  CStrings:  3370
 +  Functions: 4137
 +  Symbols:   8067
 +  CStrings:  3377
- 
 Symbols:
 + -[AVVCSessionManager setPrefersAggressiveEchoCancellation:error:]
 + GCC_except_table3007

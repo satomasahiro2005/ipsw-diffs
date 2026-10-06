@@ -2,137 +2,67 @@
 
 > `/System/Library/Frameworks/_RealityKit_ComputeGraph.framework/_RealityKit_ComputeGraph`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x62fa8` | `0x51fd4` | **`-0x10fd4`** |
+| `__DATA.__bss` | `0x1f18` | `0x1588` | **`-0x990`** |
+| `__TEXT.__const` | `0x2898` | `0x1f18` | **`-0x980`** |
+| `__AUTH_CONST.__const` | `0x1750` | `0x11f8` | **`-0x558`** |
+| `__TEXT.__constg_swiftt` | `0xd0c` | `0x978` | **`-0x394`** |
+| `__AUTH_CONST.__objc_const` | `0x1de0` | `0x1a50` | **`-0x390`** |
+| `__AUTH.__data` | `0x11f0` | `0xea0` | **`-0x350`** |
+| `__TEXT.__unwind_info` | `0x14b8` | `0x11c0` | **`-0x2f8`** |
+| `__TEXT.__swift5_fieldmd` | `0xd9c` | `0xb0c` | **`-0x290`** |
+| `__TEXT.__swift5_typeref` | `0xe44` | `0xbd4` | **`-0x270`** |
+| `__TEXT.__cstring` | `0xe55` | `0xc05` | **`-0x250`** |
+| `__TEXT.__swift5_reflstr` | `0x94e` | `0x76e` | **`-0x1e0`** |
+| `__DATA.__data` | `0xc60` | `0xab0` | **`-0x1b0`** |
+| `__TEXT.__eh_frame` | `0x293c` | `0x2790` | **`-0x1ac`** |
+| `__AUTH_CONST.__auth_got` | `0x16e8` | `0x1618` | **`-0xd0`** |
+| `__AUTH.__objc_data` | `0x2f8` | `0x260` | **`-0x98`** |
+| `__DATA_CONST.__const` | `0x1d8` | `0x158` | **`-0x80`** |
+| `__DATA.__common` | `0x268` | `0x1f8` | **`-0x70`** |
+| `__TEXT.__swift5_capture` | `0x21c` | `0x1b8` | **`-0x64`** |
+| `__TEXT.__swift5_proto` | `0xfc` | `0xa4` | **`-0x58`** |
+| `__TEXT.__oslogstring` | `0xec` | `0x12c` | **`+0x40`** |
+| `__TEXT.__swift5_types` | `0x108` | `0xdc` | **`-0x2c`** |
+| `__DATA_CONST.__got` | `0x4c0` | `0x498` | **`-0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x68` | `0x50` | **`-0x18`** |
+| `__TEXT.__swift5_assocty` | `0x78` | `0x60` | **`-0x18`** |
+| `__TEXT.__swift5_builtin` | `0x50` | `0x3c` | **`-0x14`** |
+| `__TEXT.__swift_as_cont` | `0x338` | `0x32c` | **`-0xc`** |
+| `__TEXT.__swift_as_entry` | `0xe4` | `0xd8` | **`-0xc`** |
+| `__TEXT.__swift5_mpenum` | `0x10` | `0x8` | **`-0x8`** |
+| `__TEXT.__swift_as_ret` | `0xe0` | `0xd8` | **`-0x8`** |
+| `__TEXT.__swift5_protos` | `0xc` | `0x8` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -23.0.1.0.0
--  __TEXT.__text: 0x62fa8 sha256:0cce9faa3a54ac69f911bde73d2e7a6255985fedf902e0bb50e6c18275a58b6e
--  __TEXT.__objc_methlist: 0xea4 sha256:191da5f76d073265d333d6b5cbed10b4c6b53ab5497cdb7d100ac83f4513fe5b
--  __TEXT.__const: 0x2898 sha256:abc8609fbb1a8c1899488b0baa35ca8c073b4cecb59e99e5732a038f081bdce5
--  __TEXT.__cstring: 0xe55 sha256:778cf4cbfbf340fdc054ec4919867ff2b65632465f8612308ea4b8a514f8dbf1
--  __TEXT.__swift5_typeref: 0xe44 sha256:103c335462f2df74021ae8d4eea11a7735c681a91374f41c54bb982251f25372
--  __TEXT.__swift5_capture: 0x21c sha256:9e15e9e7ebcbf7da2f2233c533056471ff883cbe093d09785e6e9dd50880b810
--  __TEXT.__swift5_reflstr: 0x94e sha256:4dacc05e1034d9814ab463850c2422bba10d89ca3a58cbef3c8481a0502cda44
--  __TEXT.__swift5_assocty: 0x78 sha256:37090cb33f342ff5c3bc89f3297af2f4bfe97e4a3236cc08b1ec6d4b5c186d62
--  __TEXT.__constg_swiftt: 0xd0c sha256:72d1fda86dd0369a33593310437fa8c9e3b8656466e270c49aee83cd07d1e6bd
--  __TEXT.__swift5_builtin: 0x50 sha256:b75b9a136ebbe8f25a688f5161cfb335962aac76e67eefadb0d7175f4214bf4f
--  __TEXT.__swift5_mpenum: 0x10 sha256:99f14ebfada924a97b320fde85e86d66b3670fafdd5f603b5af62cac6eb371d7
--  __TEXT.__swift5_fieldmd: 0xd9c sha256:bde867d2a8a79ded69eafa2e8730757b82a5df1283180ea23e7c33c9adffac04
--  __TEXT.__swift5_proto: 0xfc sha256:80303e040efb9d73196ba1c55c1ee7e8d731e821ec8654c8d4e43e3d5a5a2c59
--  __TEXT.__swift5_types: 0x108 sha256:4b45521887960fdb8404bc99b706186d3609bccecba4644c55d7cb2c19137aeb
--  __TEXT.__swift5_types2: 0x8 sha256:4663a881bbdf1e8575d463e8258b729be84254cebe5dc0a0ec7960f9d9786288
--  __TEXT.__swift_as_entry: 0xe4 sha256:2bdaeb6a43fa4917069e2a7dd5c83e84da02b82436281ad5ed35163d9d552e80
--  __TEXT.__swift_as_ret: 0xe0 sha256:fc815bfea80ae44fca03c581b68c297c096b596d345a7a8a479ade363bc98a0b
--  __TEXT.__swift_as_cont: 0x338 sha256:4530e9139edc17442e66a71c0ac3a8a0cbce2d786d42288038bfcce1e7d4bacf
--  __TEXT.__oslogstring: 0xec sha256:4f728d5ee7226b4eecc0bd9abc5322e88f16a46b9c2e91001b72e8c151a3c9b4
--  __TEXT.__swift5_protos: 0xc sha256:7b6d5ae68ce67bf38c713aa7c63f7ae8bce4120893ea17fa8c46ea1542c36869
--  __TEXT.__unwind_info: 0x14b8 sha256:c99bb77b426d653f279a1f00fe028265fc123b47cd0df8cb9ad7f695540dcaef
--  __TEXT.__eh_frame: 0x293c sha256:f9286f81add0a68e3eaf5f081c5cf36e8b4c34ac5241e5cb23e6632ebde76120
 +25.0.0.0.0
-+  __TEXT.__text: 0x51fd4 sha256:504e4c8a03436ebb7310a2640edbf742f5d3ba38acb1e95041db478bbe4012ca
-+  __TEXT.__objc_methlist: 0xea4 sha256:3447bc2fb7172e351900726ecd7464871bafd2b91c872a8587234d627c9ce4cd
-+  __TEXT.__const: 0x1f18 sha256:42a8cc647cb09f838f352942aef8ac78bdddad836de71a01da8f31a5af5933db
-+  __TEXT.__cstring: 0xc05 sha256:2fe341f3f9c620eee0ebbfc50d30f302c44b75248724aa87845e3c038e0d10d3
-+  __TEXT.__swift5_typeref: 0xbd4 sha256:817ee200b7a27fef485a0b11cc1c514db419b946eb7233967e154ae3b851f1c2
-+  __TEXT.__swift5_capture: 0x1b8 sha256:ebdc6a8b87dddb655c75b2ab49941636c2a71be2a496e4b1e92b2d96d232ea11
-+  __TEXT.__constg_swiftt: 0x978 sha256:b724c94891cc1df79de9698a2088d05648a740b53008eb8af225cfe2f02210a5
-+  __TEXT.__swift5_reflstr: 0x76e sha256:97f4e1479832cc91ef9b30a7b5111e8fdc78c7795d855fe862066c55fe1f7da1
-+  __TEXT.__swift5_fieldmd: 0xb0c sha256:5c1d50da22555d003840fcc715e00323ae24acec10f13999dd907d3257963365
-+  __TEXT.__swift5_proto: 0xa4 sha256:2e05e7d1de5429b110a854262cefc437fa555ba5451e7a1ecf30219fd931dc38
-+  __TEXT.__swift5_types: 0xdc sha256:c799c12da681c068c58f4059090b846d554792002b9c628ac6252040e9b1f541
-+  __TEXT.__swift5_types2: 0x8 sha256:3a4a81ff4ac9aad440da803f662f3e03f855793377ee3072303541549021ea7b
-+  __TEXT.__swift_as_entry: 0xd8 sha256:8d996761f44523c3d0b6c55094538f7e17f7d3dfb07355231c28e5bde065b732
-+  __TEXT.__swift_as_ret: 0xd8 sha256:7ebf466e30d61beb9cca83604d0c2e0d082035d48f8daae4e47288e83b3d7f02
-+  __TEXT.__swift_as_cont: 0x32c sha256:6f7b9ef7f93bfa3891f0e784b3db9ac4818b147c4797f77df717252cb8beafed
-+  __TEXT.__oslogstring: 0x12c sha256:5a038c57c41ae62f8fbdc9bb2e084e5c0bd296454495f71ad029a2c6ea2ea66b
-+  __TEXT.__swift5_assocty: 0x60 sha256:8dfccff59d15eec01577c5edc99aaad445294a96515cd85682bb1133af0dcd0a
-+  __TEXT.__swift5_builtin: 0x3c sha256:a345abfdbbd4ac40ac6f7c73117f5eed29a079af00ecc492b2ec18d14ffdcbcd
-+  __TEXT.__swift5_mpenum: 0x8 sha256:5bd589ee886f9c7d5b50db8bfaa408de8ffbc653538b579303e65942ffe8537d
-+  __TEXT.__swift5_protos: 0x8 sha256:f43a52bdab14566d26a013b1239c39cbbfac4d7de7ade88891bacffc8c50714a
-+  __TEXT.__unwind_info: 0x11c0 sha256:bf864ecda9d79c4700c44e68a9c0a89a8544b860b5661ef315047f53b59dfd0b
-+  __TEXT.__eh_frame: 0x2790 sha256:3eb65f535e9c619d483411646b8f1cbf636ecfac7f9f607ced6ab60e8aef05ba
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1d8 sha256:dcc51bc54fce6d1938bbb15aa77264cb4054f26d8a9abc608845066e4ad62e20
--  __DATA_CONST.__objc_classlist: 0x68 sha256:91775266aae28293f574040912f05ddb6a1c18e18397e4f5503b06c90d6413e8
--  __DATA_CONST.__objc_protolist: 0x90 sha256:1fc0096151b354625900d2e523a6517e5510d5ba621014392ae8af08e94b8179
-+  __DATA_CONST.__const: 0x158 sha256:80537bc4795b47bdf89cfb27a38862c1be84ae825fef2938dc267394c381c254
-+  __DATA_CONST.__objc_classlist: 0x50 sha256:6832fd4cc4792dffd21e6b4d555a61f1716e1d301bce527d1201e012c95c1f67
-+  __DATA_CONST.__objc_protolist: 0x90 sha256:f447fff8cf1abd415753d89e317c4749799caa511729e26e19a5888cc3fd8e57
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0x968 sha256:50c047162d098a86465a3137f6e2a2f195eb781ebdf836a4117f7b0fbf1a8114
--  __DATA_CONST.__objc_protorefs: 0x48 sha256:d02a62da4aae7f24d3fa8268bd5413a1a4ad7262f0033fd827edf15b6f7863b9
--  __DATA_CONST.__objc_superrefs: 0x8 sha256:a6187e7840de644717a48c89e518379dc8519f8afc0593e0849322fc92340ac2
--  __DATA_CONST.__got: 0x4c0 sha256:3d6ce7a1b02112cfe967e9074ecb9a2fc805962ab1f8610af9fc15a19f6beb5b
--  __AUTH_CONST.__const: 0x1750 sha256:c34a7c6a1abd34fb036cd7757016a26d8981d662fcf13102a8b8b2b7e953a0f3
--  __AUTH_CONST.__objc_const: 0x1de0 sha256:35c9e174f3d0e85867ddbcb7617370526b8724b395e51fc25f1b45d9ce5d5ca2
--  __AUTH_CONST.__auth_got: 0x16e8 sha256:30dca44465ca4232ef08cd974a4523e8a379d5992a3488d76bdd62c0debf7e6d
--  __AUTH.__objc_data: 0x2f8 sha256:12621ca5c256c096595d5bd071b871b3488b7d0e0b030c47ce1ddf1b2f38c157
--  __AUTH.__data: 0x11f0 sha256:74966cb41d45d0d444dadc1214b56a216dae50129b5b11d4c1d1c89107b2d152
-+  __DATA_CONST.__objc_selrefs: 0x968 sha256:8f6de7580d443a26dd169be9786a7e04e4fb6af6d91a948edcaeaa922b45dbe2
-+  __DATA_CONST.__objc_protorefs: 0x48 sha256:4d228390c64ad30bc4c5613f2756774735f08efe4b339ca85b9d7acd50cfa316
-+  __DATA_CONST.__objc_superrefs: 0x8 sha256:f901cf24d37a6a3956367f2ede2c56f3d4aad1c4c5104ca96371dd621adb6111
-+  __DATA_CONST.__got: 0x498 sha256:0431cac2032ea4bcb2898170f201fde7f46d109a5f3d9f8434d2bdad6084d56b
-+  __AUTH_CONST.__const: 0x11f8 sha256:14e4b6a49e45f39a394e08dad4d4371c42622452a7f4caac249bc79da8c075dc
-+  __AUTH_CONST.__objc_const: 0x1a50 sha256:c57b7da359ac21ad28aa05696d8b7adaffb20a32a180846e6334f26ab1f0c868
-+  __AUTH_CONST.__auth_got: 0x1618 sha256:12d6fa7a49166a4091333823e827d8f039ffed732e14d08b3d388ceca7be6fbc
-+  __AUTH.__objc_data: 0x260 sha256:4c7e7e8eb3bf18908a18ae76df828cce70445dfd16d858583927620f19647f3a
-+  __AUTH.__data: 0xea0 sha256:85e16d42fc12d92a1258d2882bf967ae0d3cf04132467ac2b8a29520d0215c8c
-   __DATA.__objc_ivar: 0x4 sha256:dc765660b06ee03dd16fd7ca5b957e8c805161ac2c4af28c5a100ab2ab432ca1
--  __DATA.__data: 0xc60 sha256:87089fc97e3d0b148b96c90c57c966481345311485d0b2d85b15a22c6bde0f5e
--  __DATA.__objc_stublist: 0x8 sha256:cb381df5af30b5c5999fb741e19d62cfdb810d3a2112fcab205cef5f42d23076
--  __DATA.__common: 0x268 sha256:f9d54bbe3ccaf08564c2928c55218a3f696989a05dffc8edf057773751aae153
--  __DATA.__bss: 0x1f18 sha256:88cf05347147cc1f6f0bf11362a93bac60d77386d2a3800e37a23ecf732b62c9
-+  __DATA.__data: 0xab0 sha256:2a1d97d8dba23defd0f9fa1c2831b944adf2b94974fb15bff2ab0ca314ab3791
-+  __DATA.__objc_stublist: 0x8 sha256:2cc97f8fac794ce360e81e4c0b7013e723cbd7b54f9a359458c407349e959dea
-+  __DATA.__common: 0x1f8 sha256:696bda342649ec9268da57b6a279df6f24b0e857d5e6d0605fd25af95adc3cee
-+  __DATA.__bss: 0x1588 sha256:226e1e16624064c1b01d5d1435f0d973989f502f0fdab0f47e62b14414b3f5e7
-   - /System/Library/Frameworks/ComputeGraph.framework/ComputeGraph
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/Metal.framework/Metal
-   - /System/Library/Frameworks/MetalKit.framework/MetalKit
-   - /System/Library/Frameworks/RealityFoundation.framework/RealityFoundation
+
 +  - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/PrivateFrameworks/CoreRE.framework/CoreRE
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
+
 +  - /usr/lib/swift/libswiftARKit.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
-   - /usr/lib/swift/libswiftCompression.dylib
 
-   - /usr/lib/swift/libswiftCoreLocation.dylib
-   - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
 +  - /usr/lib/swift/libswiftGLKit.dylib
-   - /usr/lib/swift/libswiftMLCompute.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
-+  - /usr/lib/swift/libswiftModelIO.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
-+  - /usr/lib/swift/libswiftSceneKit.dylib
-   - /usr/lib/swift/libswiftSpatial.dylib
-+  - /usr/lib/swift/libswiftSpriteKit.dylib
-   - /usr/lib/swift/libswiftSynchronization.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: 8E2148DA-A699-304A-848F-052B31109688
++  - /usr/lib/swift/libswiftModelIO.dylib
+
++  - /usr/lib/swift/libswiftSceneKit.dylib
+
++  - /usr/lib/swift/libswiftSpriteKit.dylib
+
 -  Functions: 1572
--  Symbols:   6210
+-  Symbols:   4516
 -  CStrings:  58
-+  UUID: 548B733E-6796-32D1-A872-C08B836DFF84
 +  Functions: 1247
-+  Symbols:   5098
++  Symbols:   3745
 +  CStrings:  45
- 
 Symbols:
 + _$s10Foundation11JSONDecoderC6decode_4fromxxm_AA4DataVtKSeRzlFTj
 + _$s10Foundation11JSONDecoderCACycfc
@@ -363,11 +293,11 @@ Symbols:
 + _$s24_RealityKit_ComputeGraph3LogV7runtime_Wz
 + _$sSD24_RealityKit_ComputeGraph0cD00D10DefinitionV9InputPortVRszrlE9migratingSDyAFq_GSDyAB0c4NodeD0V0G0O7AddressVq_G_tcfC0aB015TextureResourceC_Tt0g5
 + _$sSD8_VariantV8asNatives01_C10DictionaryVyxq_GvMSi_12ComputeGraph0e4NodeF0V0G0VTg5
-+ _$sSD8_VariantV8asNatives01_C10DictionaryVyxq_GvMSi_12ComputeGraph0e4NodeF0V0G0VTg5.resume.0
++ _$sSD8_VariantV8asNatives01_C10DictionaryVyxq_GvMSi_12ComputeGraph0e4NodeF0V0G0VTg5.resume
 + _$sSD8_VariantVyq_SgxciMSi_12ComputeGraph0b4NodeC0V0D0VTg5
-+ _$sSD8_VariantVyq_SgxciMSi_12ComputeGraph0b4NodeC0V0D0VTg5.resume.0
++ _$sSD8_VariantVyq_SgxciMSi_12ComputeGraph0b4NodeC0V0D0VTg5.resume
 + _$sSDyq_SgxciMSi_12ComputeGraph0a4NodeB0V0C0VTg5
-+ _$sSDyq_SgxciMSi_12ComputeGraph0a4NodeB0V0C0VTg5.resume.0
++ _$sSDyq_SgxciMSi_12ComputeGraph0a4NodeB0V0C0VTg5.resume
 + _$sSay24_RealityKit_ComputeGraph0cD5AssetC6SchemaO0E5IndexVGMR
 + _$sSay24_RealityKit_ComputeGraph0cD5AssetC6SchemaO0E5IndexVGMd
 + _$sSay24_RealityKit_ComputeGraph0cD5AssetC6SchemaO0E5IndexVGSayxGSEsSERzlWL
@@ -394,7 +324,7 @@ Symbols:
 + _$ss17_NativeDictionaryV7_insert2at3key5valueys10_HashTableV6BucketV_xnq_ntFSi_12ComputeGraph0j4NodeK0V0L0VTg5
 + _$ss17_NativeDictionaryV8setValue_6forKey8isUniqueyq_n_xSbtF12ComputeGraph0i4NodeJ0V4PortO7AddressV_10RealityKit15TextureResourceCTg5
 + _$ss17_NativeDictionaryV_8isUniqueq_Sgx_SbtciMSi_12ComputeGraph0e4NodeF0V0G0VTg5
-+ _$ss17_NativeDictionaryV_8isUniqueq_Sgx_SbtciMSi_12ComputeGraph0e4NodeF0V0G0VTg5.resume.0
++ _$ss17_NativeDictionaryV_8isUniqueq_Sgx_SbtciMSi_12ComputeGraph0e4NodeF0V0G0VTg5.resume
 + _$ss18_DictionaryStorageCy12ComputeGraph0D10DefinitionV9InputPortV10RealityKit15TextureResourceCGMR
 + _$ss18_DictionaryStorageCy12ComputeGraph0D10DefinitionV9InputPortV10RealityKit15TextureResourceCGMd
 + _$ss18_DictionaryStorageCy12ComputeGraph0c4NodeD0V4PortO7AddressV012_RealityKit_cD00cD5AssetC6SchemaO0J5IndexVGMR
@@ -417,9 +347,6 @@ Symbols:
 + _$ss26DefaultStringInterpolationVN
 + _$ss26DefaultStringInterpolationVs16TextOutputStreamsWP
 + _RECustomComponentGetObject
-+ ___swift_closure_destructor.10
-+ ___swift_closure_destructor.14
-+ ___swift_closure_destructor.25
 + ___swift_memcpy0_1
 + __swift_FORCE_LOAD_$_swiftARKit
 + __swift_FORCE_LOAD_$_swiftARKit_$__RealityKit_ComputeGraph
@@ -439,12 +366,6 @@ Symbols:
 + _associated conformance 24_RealityKit_ComputeGraph0cD5AssetC6SchemaO14ModelReferenceV10CodingKeys33_65CF057E4553BD001473A8062372E6A7LLOSHAASQ
 + _associated conformance 24_RealityKit_ComputeGraph0cD5AssetC6SchemaO14ModelReferenceV10CodingKeys33_65CF057E4553BD001473A8062372E6A7LLOs0I3KeyAAs23CustomStringConvertible
 + _associated conformance 24_RealityKit_ComputeGraph0cD5AssetC6SchemaO14ModelReferenceV10CodingKeys33_65CF057E4553BD001473A8062372E6A7LLOs0I3KeyAAs28CustomDebugStringConvertible
-+ _block_copy_helper.1
-+ _block_copy_helper.27
-+ _block_descriptor.29
-+ _block_descriptor.3
-+ _block_destroy_helper.2
-+ _block_destroy_helper.28
 + _swift_getEnumCaseMultiPayload
 + _swift_initStructMetadata
 + _symbolic Say_____G 24_RealityKit_ComputeGraph0cD5AssetC6SchemaO0E5IndexV
@@ -489,7 +410,7 @@ Symbols:
 - _$s10RealityKit6EntityC0A10FoundationE7restore_8newValueyxm_xSgtAA9ComponentRzlF
 - _$s10RealityKit6EntityC10initialize8fromCoreyAA02__C3RefV_tFTq
 - _$s10RealityKit6EntityC12ComponentSetV0A10FoundationE9optimizedxSgxm_tcAA0D0RzluiM12ComputeGraph0i10SimulationD0V_Ttg5
-- _$s10RealityKit6EntityC12ComponentSetV0A10FoundationE9optimizedxSgxm_tcAA0D0RzluiM12ComputeGraph0i10SimulationD0V_Ttg5.resume.0
+- _$s10RealityKit6EntityC12ComponentSetV0A10FoundationE9optimizedxSgxm_tcAA0D0RzluiM12ComputeGraph0i10SimulationD0V_Ttg5.resume
 - _$s10RealityKit6EntityCACycfCTq
 - _$s10RealityKit6EntityCMm
 - _$s10RealityKit6EntityCMu
@@ -571,11 +492,11 @@ Symbols:
 - _$s12ComputeGraph0B16GlobalParametersC17RealityFoundation18TransientComponentAAMc
 - _$s12ComputeGraph0B16GlobalParametersC17RealityFoundation18TransientComponentAAMcMK
 - _$s12ComputeGraph0B16GlobalParametersC7globals012_RealityKit_aB020SharedUniformStorageVvM
-- _$s12ComputeGraph0B16GlobalParametersC7globals012_RealityKit_aB020SharedUniformStorageVvM.resume.0
+- _$s12ComputeGraph0B16GlobalParametersC7globals012_RealityKit_aB020SharedUniformStorageVvM.resume
 - _$s12ComputeGraph0B16GlobalParametersC7globals012_RealityKit_aB020SharedUniformStorageVvMTq
 - _$s12ComputeGraph0B16GlobalParametersC7globals012_RealityKit_aB020SharedUniformStorageVvpWvd
 - _$s12ComputeGraph0B16GlobalParametersC7globals012_RealityKit_aB020SharedUniformStorageVvr
-- _$s12ComputeGraph0B16GlobalParametersC7globals012_RealityKit_aB020SharedUniformStorageVvr.resume.0
+- _$s12ComputeGraph0B16GlobalParametersC7globals012_RealityKit_aB020SharedUniformStorageVvr.resume
 - _$s12ComputeGraph0B16GlobalParametersC7globals012_RealityKit_aB020SharedUniformStorageVvrTq
 - _$s12ComputeGraph0B16GlobalParametersC7globals012_RealityKit_aB020SharedUniformStorageVvs
 - _$s12ComputeGraph0B16GlobalParametersC7globals012_RealityKit_aB020SharedUniformStorageVvsTq
@@ -651,12 +572,12 @@ Symbols:
 - _$s12ComputeGraph0B19SimulationComponentV8PlayModeOwui
 - _$s12ComputeGraph0B19SimulationComponentV8PlayModeOwup
 - _$s12ComputeGraph0B19SimulationComponentV8playModeAC04PlayF0OvM
-- _$s12ComputeGraph0B19SimulationComponentV8playModeAC04PlayF0OvM.resume.0
+- _$s12ComputeGraph0B19SimulationComponentV8playModeAC04PlayF0OvM.resume
 - _$s12ComputeGraph0B19SimulationComponentV8playModeAC04PlayF0Ovg
 - _$s12ComputeGraph0B19SimulationComponentV8playModeAC04PlayF0OvpMV
 - _$s12ComputeGraph0B19SimulationComponentV8playModeAC04PlayF0Ovs
 - _$s12ComputeGraph0B19SimulationComponentV9sortGroup17RealityFoundation09ModelSortF0VSgvM
-- _$s12ComputeGraph0B19SimulationComponentV9sortGroup17RealityFoundation09ModelSortF0VSgvM.resume.0
+- _$s12ComputeGraph0B19SimulationComponentV9sortGroup17RealityFoundation09ModelSortF0VSgvM.resume
 - _$s12ComputeGraph0B19SimulationComponentV9sortGroup17RealityFoundation09ModelSortF0VSgvg
 - _$s12ComputeGraph0B19SimulationComponentV9sortGroup17RealityFoundation09ModelSortF0VSgvpMV
 - _$s12ComputeGraph0B19SimulationComponentV9sortGroup17RealityFoundation09ModelSortF0VSgvs
@@ -835,12 +756,12 @@ Symbols:
 - _$s12ComputeGraph17ParticleViewpointV10RealityKit9ComponentAadEP7__store9attribute2to6offsetyAdE_p_SvSitFZTW
 - _$s12ComputeGraph17ParticleViewpointV10RealityKit9ComponentAadEP8__toCoreyyAD02__G3RefVFTW
 - _$s12ComputeGraph17ParticleViewpointV12viewPositions5SIMD3VySfGSgvM
-- _$s12ComputeGraph17ParticleViewpointV12viewPositions5SIMD3VySfGSgvM.resume.0
+- _$s12ComputeGraph17ParticleViewpointV12viewPositions5SIMD3VySfGSgvM.resume
 - _$s12ComputeGraph17ParticleViewpointV12viewPositions5SIMD3VySfGSgvg
 - _$s12ComputeGraph17ParticleViewpointV12viewPositions5SIMD3VySfGSgvpMV
 - _$s12ComputeGraph17ParticleViewpointV12viewPositions5SIMD3VySfGSgvs
 - _$s12ComputeGraph17ParticleViewpointV13viewDirections5SIMD3VySfGSgvM
-- _$s12ComputeGraph17ParticleViewpointV13viewDirections5SIMD3VySfGSgvM.resume.0
+- _$s12ComputeGraph17ParticleViewpointV13viewDirections5SIMD3VySfGSgvM.resume
 - _$s12ComputeGraph17ParticleViewpointV13viewDirections5SIMD3VySfGSgvg
 - _$s12ComputeGraph17ParticleViewpointV13viewDirections5SIMD3VySfGSgvpMV
 - _$s12ComputeGraph17ParticleViewpointV13viewDirections5SIMD3VySfGSgvs
@@ -883,7 +804,7 @@ Symbols:
 - _$s12ComputeGraph24ParticleSimulationEntityC012_RealityKit_aB0E21loadDebugDrawMaterialyyFyyYacfU_Tu
 - _$s12ComputeGraph24ParticleSimulationEntityC012_RealityKit_aB0E23finishDebugDrawMaterialyy0F10Foundation06ShaderbK0VF
 - _$s12ComputeGraph24ParticleSimulationEntityC07emitterB8ResourceAA0abG0CSgvM
-- _$s12ComputeGraph24ParticleSimulationEntityC07emitterB8ResourceAA0abG0CSgvM.resume.0
+- _$s12ComputeGraph24ParticleSimulationEntityC07emitterB8ResourceAA0abG0CSgvM.resume
 - _$s12ComputeGraph24ParticleSimulationEntityC07emitterB8ResourceAA0abG0CSgvMTj
 - _$s12ComputeGraph24ParticleSimulationEntityC07emitterB8ResourceAA0abG0CSgvMTq
 - _$s12ComputeGraph24ParticleSimulationEntityC07emitterB8ResourceAA0abG0CSgvg
@@ -903,7 +824,7 @@ Symbols:
 - _$s12ComputeGraph24ParticleSimulationEntityC11fastForward9stepCount0H9DeltaTime7groupIdySi_SfSiSgtF
 - _$s12ComputeGraph24ParticleSimulationEntityC11fastForwardyyF
 - _$s12ComputeGraph24ParticleSimulationEntityC11pipeline_v1AA0a4NodeB0V9PipelinesVvM
-- _$s12ComputeGraph24ParticleSimulationEntityC11pipeline_v1AA0a4NodeB0V9PipelinesVvM.resume.0
+- _$s12ComputeGraph24ParticleSimulationEntityC11pipeline_v1AA0a4NodeB0V9PipelinesVvM.resume
 - _$s12ComputeGraph24ParticleSimulationEntityC11pipeline_v1AA0a4NodeB0V9PipelinesVvMTj
 - _$s12ComputeGraph24ParticleSimulationEntityC11pipeline_v1AA0a4NodeB0V9PipelinesVvMTq
 - _$s12ComputeGraph24ParticleSimulationEntityC11pipeline_v1AA0a4NodeB0V9PipelinesVvg
@@ -923,7 +844,7 @@ Symbols:
 - _$s12ComputeGraph24ParticleSimulationEntityC14firstParameter5named4with6bundleAA0G6HandleVSgSS_S2SSgtF
 - _$s12ComputeGraph24ParticleSimulationEntityC14recreateMeshesyyF
 - _$s12ComputeGraph24ParticleSimulationEntityC14simulationRateAA0dG0VvM
-- _$s12ComputeGraph24ParticleSimulationEntityC14simulationRateAA0dG0VvM.resume.0
+- _$s12ComputeGraph24ParticleSimulationEntityC14simulationRateAA0dG0VvM.resume
 - _$s12ComputeGraph24ParticleSimulationEntityC14simulationRateAA0dG0Vvg
 - _$s12ComputeGraph24ParticleSimulationEntityC14simulationRateAA0dG0VvpMV
 - _$s12ComputeGraph24ParticleSimulationEntityC14simulationRateAA0dG0Vvs
@@ -931,7 +852,7 @@ Symbols:
 - _$s12ComputeGraph24ParticleSimulationEntityC15updateMaterialsyyF
 - _$s12ComputeGraph24ParticleSimulationEntityC15updateMaterialsyyFTq
 - _$s12ComputeGraph24ParticleSimulationEntityC16pendingSpawnListSDySiSgSayAA07ElementG10ParametersVGGvM
-- _$s12ComputeGraph24ParticleSimulationEntityC16pendingSpawnListSDySiSgSayAA07ElementG10ParametersVGGvM.resume.0
+- _$s12ComputeGraph24ParticleSimulationEntityC16pendingSpawnListSDySiSgSayAA07ElementG10ParametersVGGvM.resume
 - _$s12ComputeGraph24ParticleSimulationEntityC16pendingSpawnListSDySiSgSayAA07ElementG10ParametersVGGvMTq
 - _$s12ComputeGraph24ParticleSimulationEntityC16pendingSpawnListSDySiSgSayAA07ElementG10ParametersVGGvg
 - _$s12ComputeGraph24ParticleSimulationEntityC16pendingSpawnListSDySiSgSayAA07ElementG10ParametersVGGvgTq
@@ -948,7 +869,7 @@ Symbols:
 - _$s12ComputeGraph24ParticleSimulationEntityC17updateRenderOrderyyF
 - _$s12ComputeGraph24ParticleSimulationEntityC18flushPendingSpawns5usingySo24MTLComputeCommandEncoder_p_tF
 - _$s12ComputeGraph24ParticleSimulationEntityC19simulationComponentAA0bdG0VSgvM
-- _$s12ComputeGraph24ParticleSimulationEntityC19simulationComponentAA0bdG0VSgvM.resume.0
+- _$s12ComputeGraph24ParticleSimulationEntityC19simulationComponentAA0bdG0VSgvM.resume
 - _$s12ComputeGraph24ParticleSimulationEntityC19simulationComponentAA0bdG0VSgvMTq
 - _$s12ComputeGraph24ParticleSimulationEntityC19simulationComponentAA0bdG0VSgvg
 - _$s12ComputeGraph24ParticleSimulationEntityC19simulationComponentAA0bdG0VSgvgTq
@@ -963,7 +884,7 @@ Symbols:
 - _$s12ComputeGraph24ParticleSimulationEntityC6create33_8FC7B8B9DE9540D5D070D9AD52508B66LL4mesh012_RealityKit_aB018OutputLowLevelMeshC_0qR00E0CSgtAG0S8InitInfoV_tFTf4nd_n
 - _$s12ComputeGraph24ParticleSimulationEntityC6create33_8FC7B8B9DE9540D5D070D9AD52508B66LL9instances012_RealityKit_aB023OutputLowLevelInstancesC_0qR00E0CSgtAG0S8InitInfoV_tFTf4nd_n
 - _$s12ComputeGraph24ParticleSimulationEntityC6modelsSDySi10RealityKit14ModelComponentVGSgvM
-- _$s12ComputeGraph24ParticleSimulationEntityC6modelsSDySi10RealityKit14ModelComponentVGSgvM.resume.0
+- _$s12ComputeGraph24ParticleSimulationEntityC6modelsSDySi10RealityKit14ModelComponentVGSgvM.resume
 - _$s12ComputeGraph24ParticleSimulationEntityC6modelsSDySi10RealityKit14ModelComponentVGSgvMTj
 - _$s12ComputeGraph24ParticleSimulationEntityC6modelsSDySi10RealityKit14ModelComponentVGSgvMTq
 - _$s12ComputeGraph24ParticleSimulationEntityC6modelsSDySi10RealityKit14ModelComponentVGSgvg
@@ -977,7 +898,7 @@ Symbols:
 - _$s12ComputeGraph24ParticleSimulationEntityC7prepare7encoder13commandBufferySo24MTLComputeCommandEncoder_p_So010MTLCommandI0_ptF
 - _$s12ComputeGraph24ParticleSimulationEntityC7prepare7encoder13commandBufferySo24MTLComputeCommandEncoder_p_So010MTLCommandI0_ptFTq
 - _$s12ComputeGraph24ParticleSimulationEntityC8pipelineAA0aB9PipelinesVvM
-- _$s12ComputeGraph24ParticleSimulationEntityC8pipelineAA0aB9PipelinesVvM.resume.0
+- _$s12ComputeGraph24ParticleSimulationEntityC8pipelineAA0aB9PipelinesVvM.resume
 - _$s12ComputeGraph24ParticleSimulationEntityC8pipelineAA0aB9PipelinesVvMTj
 - _$s12ComputeGraph24ParticleSimulationEntityC8pipelineAA0aB9PipelinesVvMTq
 - _$s12ComputeGraph24ParticleSimulationEntityC8pipelineAA0aB9PipelinesVvg
@@ -988,7 +909,7 @@ Symbols:
 - _$s12ComputeGraph24ParticleSimulationEntityC8pipelineAA0aB9PipelinesVvsTj
 - _$s12ComputeGraph24ParticleSimulationEntityC8pipelineAA0aB9PipelinesVvsTq
 - _$s12ComputeGraph24ParticleSimulationEntityC8resourceAA0aB8ResourceCSgvM
-- _$s12ComputeGraph24ParticleSimulationEntityC8resourceAA0aB8ResourceCSgvM.resume.0
+- _$s12ComputeGraph24ParticleSimulationEntityC8resourceAA0aB8ResourceCSgvM.resume
 - _$s12ComputeGraph24ParticleSimulationEntityC8resourceAA0aB8ResourceCSgvMTj
 - _$s12ComputeGraph24ParticleSimulationEntityC8resourceAA0aB8ResourceCSgvMTq
 - _$s12ComputeGraph24ParticleSimulationEntityC8resourceAA0aB8ResourceCSgvW
@@ -1009,7 +930,7 @@ Symbols:
 - _$s12ComputeGraph24ParticleSimulationEntityC8resourceAcA0aB8ResourceC_tcfcTf4gn_n
 - _$s12ComputeGraph24ParticleSimulationEntityC8resourceAcA0aB8ResourceC_tcfcySwXEfU_TA
 - _$s12ComputeGraph24ParticleSimulationEntityC9materialsSDySi10RealityKit8Material_pGSgvM
-- _$s12ComputeGraph24ParticleSimulationEntityC9materialsSDySi10RealityKit8Material_pGSgvM.resume.0
+- _$s12ComputeGraph24ParticleSimulationEntityC9materialsSDySi10RealityKit8Material_pGSgvM.resume
 - _$s12ComputeGraph24ParticleSimulationEntityC9materialsSDySi10RealityKit8Material_pGSgvMTj
 - _$s12ComputeGraph24ParticleSimulationEntityC9materialsSDySi10RealityKit8Material_pGSgvMTq
 - _$s12ComputeGraph24ParticleSimulationEntityC9materialsSDySi10RealityKit8Material_pGSgvg
@@ -1111,7 +1032,7 @@ Symbols:
 - _$s24_RealityKit_ComputeGraph0cD11Resource_v2C10contentsOf6bundleAC10Foundation3URLV_So8NSBundleCSgtYaKcfCTY0_
 - _$s24_RealityKit_ComputeGraph0cD11Resource_v2C10contentsOf6bundleAC10Foundation3URLV_So8NSBundleCSgtYaKcfCTu
 - _$s24_RealityKit_ComputeGraph0cD11Resource_v2C5asset0aB09__REAssetCSgvM
-- _$s24_RealityKit_ComputeGraph0cD11Resource_v2C5asset0aB09__REAssetCSgvM.resume.0
+- _$s24_RealityKit_ComputeGraph0cD11Resource_v2C5asset0aB09__REAssetCSgvM.resume
 - _$s24_RealityKit_ComputeGraph0cD11Resource_v2C5asset0aB09__REAssetCSgvMTq
 - _$s24_RealityKit_ComputeGraph0cD11Resource_v2C5asset0aB09__REAssetCSgvg
 - _$s24_RealityKit_ComputeGraph0cD11Resource_v2C5asset0aB09__REAssetCSgvgTq
@@ -1121,7 +1042,7 @@ Symbols:
 - _$s24_RealityKit_ComputeGraph0cD11Resource_v2C5graph0cD00c4NodeD0VSgvg
 - _$s24_RealityKit_ComputeGraph0cD11Resource_v2C5graph0cD00c4NodeD0VSgvpMV
 - _$s24_RealityKit_ComputeGraph0cD11Resource_v2C8contentsAA0E8ContentsCvM
-- _$s24_RealityKit_ComputeGraph0cD11Resource_v2C8contentsAA0E8ContentsCvM.resume.0
+- _$s24_RealityKit_ComputeGraph0cD11Resource_v2C8contentsAA0E8ContentsCvM.resume
 - _$s24_RealityKit_ComputeGraph0cD11Resource_v2C8contentsAA0E8ContentsCvMTq
 - _$s24_RealityKit_ComputeGraph0cD11Resource_v2C8contentsAA0E8ContentsCvg
 - _$s24_RealityKit_ComputeGraph0cD11Resource_v2C8contentsAA0E8ContentsCvgTq
@@ -1219,7 +1140,7 @@ Symbols:
 - _$s24_RealityKit_ComputeGraph0cD8SettingsV11resource_v2AA0cd9Resource_G0CSgvs
 - _$s24_RealityKit_ComputeGraph0cD9ComponentV10registeredSbvpZfiSbyXEfU_ys13OpaquePointerV_SvtcfU2_To
 - _$s24_RealityKit_ComputeGraph0cD9ComponentV11resource_v2AA0cd9Resource_G0CSgvM
-- _$s24_RealityKit_ComputeGraph0cD9ComponentV11resource_v2AA0cd9Resource_G0CSgvM.resume.0
+- _$s24_RealityKit_ComputeGraph0cD9ComponentV11resource_v2AA0cd9Resource_G0CSgvM.resume
 - _$s24_RealityKit_ComputeGraph0cD9ComponentV11resource_v2AA0cd9Resource_G0CSgvg
 - _$s24_RealityKit_ComputeGraph0cD9ComponentV11resource_v2AA0cd9Resource_G0CSgvpACTK
 - _$s24_RealityKit_ComputeGraph0cD9ComponentV11resource_v2AA0cd9Resource_G0CSgvpACTk
@@ -1477,10 +1398,6 @@ Symbols:
 - __METACLASS_DATA__TtC12ComputeGraph24ParticleSimulationEntity
 - __METACLASS_DATA__TtC24_RealityKit_ComputeGraph21GraphSimulationSystem
 - __METACLASS_DATA__TtC24_RealityKit_ComputeGraph23ComputeGraphResource_v2
-- ___swift_closure_destructor.17
-- ___swift_closure_destructor.2
-- ___swift_closure_destructor.21
-- ___swift_closure_destructor.32
 - ___swift_memcpy48_8
 - ___swift_memcpy4_4
 - ___swift_memcpy9_8
@@ -1498,13 +1415,6 @@ Symbols:
 - _associated conformance 24_RealityKit_ComputeGraph17CodableBufferInfoV10CodingKeys33_65CF057E4553BD001473A8062372E6A7LLOSHAASQ
 - _associated conformance 24_RealityKit_ComputeGraph17CodableBufferInfoV10CodingKeys33_65CF057E4553BD001473A8062372E6A7LLOs0H3KeyAAs23CustomStringConvertible
 - _associated conformance 24_RealityKit_ComputeGraph17CodableBufferInfoV10CodingKeys33_65CF057E4553BD001473A8062372E6A7LLOs0H3KeyAAs28CustomDebugStringConvertible
-- _block_copy_helper.34
-- _block_copy_helper.7
-- _block_descriptor.36
-- _block_descriptor.9
-- _block_destroy_helper.35
-- _block_destroy_helper.8
-- _get_type_metadata 24_RealityKit_ComputeGraph20SharedUniformStorageV noncopyable.31
 - _objc_release_x28
 - _object_getClass
 - _swift_makeBoxUnique
@@ -1603,5 +1513,4 @@ CStrings:
 - "outputMeshMaterials"
 - "outputMeshes"
 - "textures"
-
 ```

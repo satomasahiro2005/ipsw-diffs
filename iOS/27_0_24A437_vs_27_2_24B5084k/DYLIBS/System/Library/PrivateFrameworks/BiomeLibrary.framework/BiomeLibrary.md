@@ -2,76 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/BiomeLibrary.framework/BiomeLibrary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7584dc` | `0x75a8a4` | **`+0x23c8`** |
+| `__AUTH_CONST.__cfstring` | `0x4b4c0` | `0x4b940` | **`+0x480`** |
+| `__TEXT.__cstring` | `0x4e9fa` | `0x4ed07` | **`+0x30d`** |
+| `__DATA_CONST.__const` | `0x1ebc8` | `0x1ee88` | **`+0x2c0`** |
+| `__AUTH_CONST.__objc_const` | `0xa2f50` | `0xa30a0` | **`+0x150`** |
+| `__TEXT.__const` | `0x47d8` | `0x4868` | **`+0x90`** |
+| `__TEXT.__objc_methlist` | `0x50564` | `0x505d4` | **`+0x70`** |
+| `__DATA_CONST.__objc_selrefs` | `0x129d8` | `0x12a38` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0xb210` | `0xb260` | **`+0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0xb990` | `0xb940` | **`-0x50`** |
+| `__AUTH_CONST.__const` | `0x9b38` | `0x9b78` | **`+0x40`** |
+| `__DATA_CONST.__objc_arraydata` | `0xb278` | `0xb2b0` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0xf678` | `0xf6a0` | **`+0x28`** |
+| `__DATA.__objc_ivar` | `0x8220` | `0x823c` | **`+0x1c`** |
+| `__AUTH_CONST.__auth_got` | `0x3a0` | `0x3b0` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -436.6.0.0.0
--  __TEXT.__text: 0x739e2c
--  __TEXT.__objc_methlist: 0x50564
--  __TEXT.__const: 0x47d8
 +441.22.0.1.0
-+  __TEXT.__text: 0x73c1b8
-+  __TEXT.__objc_methlist: 0x505d4
-+  __TEXT.__const: 0x4868
-   __TEXT.__swift5_typeref: 0x17e
-   __TEXT.__swift5_capture: 0x30
--  __TEXT.__cstring: 0x4e9fa
-+  __TEXT.__cstring: 0x4ed07
-   __TEXT.__constg_swiftt: 0x5b8
-   __TEXT.__swift5_fieldmd: 0x210
-   __TEXT.__swift5_types: 0x84
-   __TEXT.__oslogstring: 0x47
--  __TEXT.__unwind_info: 0x12380
-+  __TEXT.__unwind_info: 0x123b8
-   __TEXT.__eh_frame: 0x40
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1ebc8
-+  __DATA_CONST.__const: 0x1ee88
-   __DATA_CONST.__objc_classlist: 0x2320
-   __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x129d8
-+  __DATA_CONST.__objc_selrefs: 0x12a38
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x1b40
--  __DATA_CONST.__objc_arraydata: 0xb278
-+  __DATA_CONST.__objc_arraydata: 0xb2b0
-   __DATA_CONST.__got: 0x1c10
--  __AUTH_CONST.__const: 0x9b38
--  __AUTH_CONST.__cfstring: 0x4b4c0
--  __AUTH_CONST.__objc_const: 0xa2f50
-+  __AUTH_CONST.__const: 0x9b78
-+  __AUTH_CONST.__cfstring: 0x4b940
-+  __AUTH_CONST.__objc_const: 0xa30a0
-   __AUTH_CONST.__objc_arrayobj: 0x66c0
-   __AUTH_CONST.__objc_intobj: 0x300
--  __AUTH_CONST.__auth_got: 0x3a0
--  __AUTH.__objc_data: 0xb210
-+  __AUTH_CONST.__auth_got: 0x3b0
-+  __AUTH.__objc_data: 0xb260
-   __AUTH.__data: 0x118
--  __DATA.__objc_ivar: 0x8220
-+  __DATA.__objc_ivar: 0x823c
-   __DATA.__data: 0x328
--  __DATA_DIRTY.__objc_data: 0xb990
-+  __DATA_DIRTY.__objc_data: 0xb940
-   __DATA_DIRTY.__data: 0x430
-   __DATA_DIRTY.__bss: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 28727
--  Symbols:   60713
+-  Symbols:   53071
 -  CStrings:  9772
 +  Functions: 28751
-+  Symbols:   60770
++  Symbols:   53117
 +  CStrings:  9808
- 
 Symbols:
 + +[BMSafariSearchEngine columns]
 + +[BMSafariSearchEngine eventWithData:dataVersion:]
@@ -162,22 +125,6 @@ Symbols:
 + ___BMGeneratedImageFailureReasonBlocklistCategoryFromString_block_invoke
 + ___BMGeneratedImageFailureReasonFailureReasonFromString_block_invoke
 + ___BMGeneratedImageFailureReasonSafetyCategoryFromString_block_invoke
-+ _objc_msgSend$SearchEngine
-+ _objc_msgSend$blockingSafetyModel
-+ _objc_msgSend$blocklistCategory
-+ _objc_msgSend$configurationForSearchEngine
-+ _objc_msgSend$initWithLaunchReason:type:starting:absoluteTimestamp:bundleID:parentBundleID:extensionHostID:shortVersionString:exactVersionString:dyldPlatform:isNativeArchitecture:displayType:transitionReason:
-+ _objc_msgSend$initWithOwnerPairingUrl:carBrand:alreadyProvisioned:carModel:carIdentifier:pairingCode:userIdentifier:provisioningCodeExpiration:spotlightUniqueIdentifier:spotlightDomainIdentifier:spotlightBundleIdentifier:dateSent:cccManufacturer:cccBrand:supportedTransports:sourceLanguage:messageIdentifier:
-+ _objc_msgSend$initWithSearchEngineIdentifier:
-+ _objc_msgSend$initWithTimestamp:identifier:userInterfaceLanguage:userSetRegionFormat:reason:feature:userPrompt:rewrittenPrompt:safetyCategory:blocklistCategory:blockingSafetyModel:failureReason:
-+ _objc_msgSend$rewrittenPrompt
-+ _objc_msgSend$safetyCategory
-+ _objc_msgSend$searchEngineIdentifier
-+ _objc_msgSend$setValue:forKey:
-+ _objc_msgSend$storeConfigurationForSearchEngine
-+ _objc_msgSend$syncPolicyForSearchEngine
-+ _objc_msgSend$transitionReason
-+ _objc_msgSend$userPrompt
 + _objc_opt_respondsToSelector
 - +[BMSiriHomeHistory columns]
 - +[BMSiriHomeHistory eventWithData:dataVersion:]
@@ -223,11 +170,6 @@ Symbols:
 - __OBJC_METACLASS_RO_$_BMSiriHomeHistory
 - ___28+[BMSiriHomeHistory columns]_block_invoke
 - ___28+[BMSiriHomeHistory columns]_block_invoke_2
-- _objc_msgSend$HomeHistory
-- _objc_msgSend$configurationForHomeHistory
-- _objc_msgSend$initWithTimestamp:identifier:userInterfaceLanguage:userSetRegionFormat:reason:feature:
-- _objc_msgSend$storeConfigurationForHomeHistory
-- _objc_msgSend$syncPolicyForHomeHistory
 CStrings:
 + "!D"
 + "AppleProducts"

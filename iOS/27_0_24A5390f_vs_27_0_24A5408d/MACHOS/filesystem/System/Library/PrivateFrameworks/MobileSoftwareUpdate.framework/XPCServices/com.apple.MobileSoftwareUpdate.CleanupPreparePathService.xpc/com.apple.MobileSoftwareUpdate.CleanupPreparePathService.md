@@ -2,74 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/MobileSoftwareUpdate.framework/XPCServices/com.apple.MobileSoftwareUpdate.CleanupPreparePathService.xpc/com.apple.MobileSoftwareUpdate.CleanupPreparePathService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__auth_ptr`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x29a1c` | `0x29b5c` | **`+0x140`** |
+| `__DATA_CONST.__cfstring` | `0xaaa0` | `0xab60` | **`+0xc0`** |
+| `__TEXT.__cstring` | `0x1170b` | `0x117b9` | **`+0xae`** |
+| `__TEXT.__objc_methname` | `0x3c3b` | `0x3c82` | **`+0x47`** |
+| `__TEXT.__objc_stubs` | `0x3780` | `0x37c0` | **`+0x40`** |
+| `__DATA.__objc_selrefs` | `0x1168` | `0x1180` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x1714` | `0x172c` | **`+0x18`** |
+| `__TEXT.__gcc_except_tab` | `0x540` | `0x54c` | **`+0xc`** |
+| `__DATA_CONST.__got` | `0x2f8` | `0x300` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x8e0` | `0x8e8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_data`
-- `__DATA.__data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_superrefs`
+
+### Other Changes
 
 ```diff
 
 -2718.0.12.0.0
--  __TEXT.__text: 0x29a1c
 +2718.0.18.0.0
-+  __TEXT.__text: 0x29b5c
-   __TEXT.__auth_stubs: 0x1650
--  __TEXT.__objc_stubs: 0x3780
--  __TEXT.__objc_methlist: 0x1714
--  __TEXT.__cstring: 0x1170b
-+  __TEXT.__objc_stubs: 0x37c0
-+  __TEXT.__objc_methlist: 0x172c
-+  __TEXT.__cstring: 0x117b9
-   __TEXT.__const: 0x1218
--  __TEXT.__gcc_except_tab: 0x540
--  __TEXT.__objc_methname: 0x3c3b
-+  __TEXT.__gcc_except_tab: 0x54c
-+  __TEXT.__objc_methname: 0x3c82
-   __TEXT.__objc_classname: 0x1b7
-   __TEXT.__objc_methtype: 0xe04
-   __TEXT.__oslogstring: 0x1c6
--  __TEXT.__unwind_info: 0x8e0
-+  __TEXT.__unwind_info: 0x8e8
-   __DATA_CONST.__const: 0x1670
--  __DATA_CONST.__cfstring: 0xaaa0
-+  __DATA_CONST.__cfstring: 0xab60
-   __DATA_CONST.__objc_classlist: 0xa8
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x18
 
-   __DATA_CONST.__objc_dictobj: 0x28
-   __DATA_CONST.__objc_intobj: 0x30
-   __DATA_CONST.__auth_got: 0xb38
--  __DATA_CONST.__got: 0x2f8
-+  __DATA_CONST.__got: 0x300
-   __DATA_CONST.__auth_ptr: 0x40
-   __DATA.__objc_const: 0x1fa0
--  __DATA.__objc_selrefs: 0x1168
-+  __DATA.__objc_selrefs: 0x1180
-   __DATA.__objc_ivar: 0x170
-   __DATA.__objc_data: 0x690
-   __DATA.__data: 0x4e0
-
-   - /usr/lib/liblzma.5.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libpartition2_dynamic.dylib
 -  Functions: 819
 -  Symbols:   2215
 -  CStrings:  2990
 +  Functions: 821
 +  Symbols:   2220
 +  CStrings:  2999
- 
 Symbols:
 + +[MSUBootFirmwareUpdater hasExclusiveUSBHostDeviceMode]
 + -[UMEventRecorder _getCoalescedSubTargetID]

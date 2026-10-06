@@ -2,75 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/PhotosPosterUI.framework/PhotosPosterUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc5adc` | `0xc5ca4` | **`+0x1c8`** |
+| `__TEXT.__cstring` | `0x6df5` | `0x6e36` | **`+0x41`** |
+| `__AUTH_CONST.__cfstring` | `0x5020` | `0x5060` | **`+0x40`** |
+| `__TEXT.__const` | `0x2ef0` | `0x2f18` | **`+0x28`** |
+| `__TEXT.__gcc_except_tab` | `0x1998` | `0x19ac` | **`+0x14`** |
+| `__AUTH_CONST.__auth_got` | `0x1b08` | `0x1b10` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x11f8` | `0x1200` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x3178` | `0x3170` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.234.0.0
--  __TEXT.__text: 0xc5adc
 +912.0.235.0.0
-+  __TEXT.__text: 0xc5ca4
-   __TEXT.__objc_methlist: 0xa624
-   __TEXT.__dlopen_cstrs: 0x64
--  __TEXT.__const: 0x2ef0
-+  __TEXT.__const: 0x2f18
-   __TEXT.__constg_swiftt: 0x177c
-   __TEXT.__swift5_typeref: 0x50c2
-   __TEXT.__swift5_builtin: 0xdc
 
-   __TEXT.__swift5_assocty: 0x2d8
-   __TEXT.__swift5_proto: 0xd0
-   __TEXT.__swift5_types: 0xb8
--  __TEXT.__cstring: 0x6df5
-+  __TEXT.__cstring: 0x6e36
-   __TEXT.__swift5_capture: 0x8cc
-   __TEXT.__oslogstring: 0x49ee
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x10
--  __TEXT.__gcc_except_tab: 0x1998
-+  __TEXT.__gcc_except_tab: 0x19ac
-   __TEXT.__ustring: 0xdc
--  __TEXT.__unwind_info: 0x3178
-+  __TEXT.__unwind_info: 0x3170
-   __TEXT.__eh_frame: 0x4dc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_protorefs: 0x88
-   __DATA_CONST.__objc_superrefs: 0x268
-   __DATA_CONST.__objc_arraydata: 0x60
--  __DATA_CONST.__got: 0x11f8
-+  __DATA_CONST.__got: 0x1200
-   __AUTH_CONST.__const: 0x32c0
--  __AUTH_CONST.__cfstring: 0x5020
-+  __AUTH_CONST.__cfstring: 0x5060
-   __AUTH_CONST.__objc_const: 0x119a8
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__objc_doubleobj: 0x60
-   __AUTH_CONST.__objc_intobj: 0xf0
--  __AUTH_CONST.__auth_got: 0x1b08
-+  __AUTH_CONST.__auth_got: 0x1b10
-   __AUTH.__objc_data: 0x3088
-   __AUTH.__data: 0x9b0
-   __DATA.__objc_ivar: 0xa88
-
-   - /System/Library/PrivateFrameworks/ShareSheet.framework/ShareSheet
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
 +  - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5304
--  Symbols:   10161
+-  Symbols:   7121
 -  CStrings:  1243
 +  Functions: 5306
-+  Symbols:   10166
++  Symbols:   7126
 +  CStrings:  1245
- 
 Symbols:
 + GCC_except_table1924
 + GCC_except_table1928

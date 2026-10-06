@@ -2,26 +2,19 @@
 
 > `/usr/lib/system/libcorecrypto_noasm.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8743c` | `0x87290` | **`-0x1ac`** |
+| `__TEXT.__unwind_info` | `0x1c40` | `0x1c38` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x8743c
-+  __TEXT.__text: 0x87290
-   __TEXT.__const: 0x201e8
-   __TEXT.__cstring: 0x5530
-   __TEXT.__fips_hmacs: 0x20
-   __TEXT.__oslogstring: 0x60
--  __TEXT.__unwind_info: 0x1c40
-+  __TEXT.__unwind_info: 0x1c38
-   __TEXT.__eh_frame: 0x488
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x1ec8
-Sections:
-~ __TEXT.__fips_hmacs : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
+-2109.0.7.0.0
++2109.0.11.0.0
 Functions:
 ~ _ccmlkem_poly_compress_encode_d4 : 1296 -> 1300
 ~ _ccmlkem_poly_compress_encode_d5 : 1824 -> 1816
@@ -48,5 +41,4 @@ Functions:
 ~ _ccaes_gladman_encrypt : 3108 -> 3092
 ~ _ccaes_gladman_decrypt : 3292 -> 3268
 ~ _ccpolyzp_po2cyc_ctx_init_ws : 1784 -> 1796
-
 ```

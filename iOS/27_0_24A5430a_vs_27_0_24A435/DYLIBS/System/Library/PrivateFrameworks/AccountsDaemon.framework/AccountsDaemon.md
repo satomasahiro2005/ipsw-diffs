@@ -2,12 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/AccountsDaemon.framework/AccountsDaemon`
 
-```diff
+### Section Size Changes
 
- 1123.0.0.0.0
--  __TEXT.__text: 0x83730
-+  __TEXT.__text: 0x8377c
-   __TEXT.__objc_methlist: 0x3c8c
-   __TEXT.__const: 0xd0a
-   __TEXT.__oslogstring: 0x90ca
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x83730` | `0x8377c` | **`+0x4c`** |

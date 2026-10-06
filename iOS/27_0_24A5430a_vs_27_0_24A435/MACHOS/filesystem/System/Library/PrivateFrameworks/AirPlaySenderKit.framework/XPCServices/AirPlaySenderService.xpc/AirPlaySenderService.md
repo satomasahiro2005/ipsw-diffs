@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/AirPlaySenderKit.framework/XPCServices/AirPlaySenderService.xpc/AirPlaySenderService`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_1000088fc : 12 -> 20

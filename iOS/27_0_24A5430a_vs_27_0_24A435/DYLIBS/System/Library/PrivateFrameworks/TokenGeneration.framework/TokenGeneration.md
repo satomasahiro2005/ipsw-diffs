@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/TokenGeneration.framework/TokenGeneration`
 
-```diff
+### Section Size Changes
 
- 301.6.0.5.102
--  __TEXT.__text: 0x154c64
-+  __TEXT.__text: 0x154a7c
-   __TEXT.__objc_methlist: 0x104
-   __TEXT.__const: 0xa940
-   __TEXT.__swift5_typeref: 0x3319
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x154c64` | `0x154a7c` | **`-0x1e8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s15TokenGeneration19ModelManagerSessionV13configurationAcA0E13ConfigurationV_tcfCTf4nd_n : 6864 -> 6820
 ~ _$s9PromptKit31GenerativeConfigurationProtocolP0C6ModelsE18samplingParameters15TokenGeneration08SamplingH0VSgvg : 2596 -> 2600

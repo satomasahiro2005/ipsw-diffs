@@ -2,15 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/SeymourClient.framework/SeymourClient`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e5fb8` | `0x1e5f54` | **`-0x64`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.134.0.0
--  __TEXT.__text: 0x1e5fb8
 +2027.0.146.0.2
-+  __TEXT.__text: 0x1e5f54
-   __TEXT.__objc_methlist: 0x3f4
-   __TEXT.__const: 0xf56c
-   __TEXT.__cstring: 0x759d
 Functions:
 ~ sub_212e9e8f0 -> sub_2124b98f0 : 1380 -> 1368
 ~ sub_212e9f484 -> sub_2124ba478 : 1756 -> 1748

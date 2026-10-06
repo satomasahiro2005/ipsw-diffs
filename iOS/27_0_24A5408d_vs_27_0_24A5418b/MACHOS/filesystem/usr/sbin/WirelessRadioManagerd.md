@@ -2,35 +2,31 @@
 
 > `/usr/sbin/WirelessRadioManagerd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17171c` | `0x17172c` | **`+0x10`** |
+| `__TEXT.__cstring` | `0x5a21d` | `0x5a227` | **`+0xa`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
 - `__TEXT.__init_offsets`
 - `__TEXT.__objc_methlist`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -1939.2.0.0.0
--  __TEXT.__text: 0x17171c
 +1939.3.0.0.0
-+  __TEXT.__text: 0x17172c
-   __TEXT.__auth_stubs: 0x26f0
-   __TEXT.__objc_stubs: 0x21740
-   __TEXT.__init_offsets: 0xc
-   __TEXT.__objc_methlist: 0x11bfc
-   __TEXT.__const: 0x11e08
-   __TEXT.__gcc_except_tab: 0x6364
--  __TEXT.__cstring: 0x5a21d
-+  __TEXT.__cstring: 0x5a227
-   __TEXT.__objc_methname: 0x346f4
-   __TEXT.__objc_classname: 0x11e2
-   __TEXT.__objc_methtype: 0x8b17
 Functions:
 ~ sub_100057384 : 2620 -> 2636
 CStrings:

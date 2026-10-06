@@ -2,103 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/CoreHandwriting.framework/CoreHandwriting`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x36959c` | `0x34fac0` | **`-0x19adc`** |
+| `__TEXT.__cstring` | `0xc429` | `0x8935` | **`-0x3af4`** |
+| `__TEXT.__gcc_except_tab` | `0x50ff0` | `0x5155c` | **`+0x56c`** |
+| `__AUTH_CONST.__objc_const` | `0x1caa0` | `0x1cbd0` | **`+0x130`** |
+| `__DATA_CONST.__got` | `0x9b0` | `0xac0` | **`+0x110`** |
+| `__TEXT.__oslogstring` | `0x17029` | `0x170b1` | **`+0x88`** |
+| `__AUTH.__objc_data` | `0x64d0` | `0x6520` | **`+0x50`** |
+| `__DATA_CONST.__const` | `0x5388` | `0x53d8` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0xdecc` | `0xdf1c` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x65e0` | `0x6610` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0xbba0` | `0xbb80` | **`-0x20`** |
+| `__TEXT.__const` | `0xd880` | `0xd890` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x1510` | `0x151c` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x12b8` | `0x12b0` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0xa10` | `0xa18` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x36959c
-+  __TEXT.__text: 0x34fac0
-   __TEXT.__init_offsets: 0x4
--  __TEXT.__objc_methlist: 0xdecc
--  __TEXT.__const: 0xd880
-+  __TEXT.__objc_methlist: 0xdf1c
-+  __TEXT.__const: 0xd890
-   __TEXT.__dlopen_cstrs: 0x2ae
-   __TEXT.__constg_swiftt: 0x140
-   __TEXT.__swift5_typeref: 0x103
+-585.0.0.0.0
++587.0.0.0.0
 
-   __TEXT.__swift5_assocty: 0x60
-   __TEXT.__swift5_proto: 0x30
-   __TEXT.__swift5_types: 0x14
--  __TEXT.__cstring: 0xc429
--  __TEXT.__oslogstring: 0x17029
--  __TEXT.__gcc_except_tab: 0x50ff0
-+  __TEXT.__cstring: 0x8935
-+  __TEXT.__oslogstring: 0x170b1
-+  __TEXT.__gcc_except_tab: 0x5155c
-   __TEXT.__ustring: 0x2786
--  __TEXT.__unwind_info: 0xbba0
-+  __TEXT.__unwind_info: 0xbb80
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x5388
--  __DATA_CONST.__objc_classlist: 0xa10
-+  __DATA_CONST.__const: 0x53d8
-+  __DATA_CONST.__objc_classlist: 0xa18
-   __DATA_CONST.__objc_catlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x110
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x18
--  __DATA_CONST.__objc_selrefs: 0x65e0
-+  __DATA_CONST.__objc_selrefs: 0x6610
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x7a8
-   __DATA_CONST.__objc_arraydata: 0x2458
--  __DATA_CONST.__got: 0x9b0
-+  __DATA_CONST.__got: 0xac0
-   __AUTH_CONST.__const: 0x5020
-   __AUTH_CONST.__cfstring: 0xf100
--  __AUTH_CONST.__objc_const: 0x1caa0
-+  __AUTH_CONST.__objc_const: 0x1cbd0
-   __AUTH_CONST.__weak_auth_got: 0x38
-   __AUTH_CONST.__objc_dictobj: 0x4b0
-   __AUTH_CONST.__objc_arrayobj: 0xd80
-   __AUTH_CONST.__objc_intobj: 0x1758
-   __AUTH_CONST.__objc_floatobj: 0x40
-   __AUTH_CONST.__objc_doubleobj: 0x100
--  __AUTH_CONST.__auth_got: 0x12b8
--  __AUTH.__objc_data: 0x64d0
-+  __AUTH_CONST.__auth_got: 0x12b0
-+  __AUTH.__objc_data: 0x6520
-   __AUTH.__data: 0x50
--  __DATA.__objc_ivar: 0x1510
-+  __DATA.__objc_ivar: 0x151c
-   __DATA.__data: 0xec8
-   __DATA.__bss: 0x1320
-   __DATA.__common: 0x80
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 7480
 -  Symbols:   1194
--  CStrings:  5184
+-  CStrings:  3635
 +  Functions: 7472
 +  Symbols:   1193
-+  CStrings:  5148
- 
-Sections:
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  CStrings:  3599
 Symbols:
 - __ZNSt3__132__internal_log_hardening_failureEPKc
 CStrings:
@@ -146,5 +82,4 @@ CStrings:
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:1371: libc++ Hardening assertion __pos <= size() failed: string index out of bounds\n"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:1502: libc++ Hardening assertion !empty() failed: string::back(): string is empty\n"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:3393: libc++ Hardening assertion !empty() failed: string::pop_back(): string is already empty\n"
-
 ```

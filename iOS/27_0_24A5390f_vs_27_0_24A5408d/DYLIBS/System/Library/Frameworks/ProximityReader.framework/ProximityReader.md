@@ -2,79 +2,40 @@
 
 > `/System/Library/Frameworks/ProximityReader.framework/ProximityReader`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xca184` | `0xca6c4` | **`+0x540`** |
+| `__TEXT.__swift5_typeref` | `0x25ba` | `0x27bc` | **`+0x202`** |
+| `__AUTH_CONST.__const` | `0x5df8` | `0x5d80` | **`-0x78`** |
+| `__TEXT.__cstring` | `0x36fa` | `0x369a` | **`-0x60`** |
+| `__TEXT.__swift5_reflstr` | `0x2fc4` | `0x2f74` | **`-0x50`** |
+| `__DATA.__data` | `0x1258` | `0x1298` | **`+0x40`** |
+| `__TEXT.__swift5_fieldmd` | `0x2b98` | `0x2b5c` | **`-0x3c`** |
+| `__TEXT.__const` | `0x7bf0` | `0x7c20` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x17c8` | `0x17e8` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x9c0` | `0x9e0` | **`+0x20`** |
+| `__TEXT.__oslogstring` | `0x2a36` | `0x2a56` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x3878` | `0x3868` | **`-0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6b8` | `0x6b0` | **`-0x8`** |
+| `__TEXT.__eh_frame` | `0x6e00` | `0x6e08` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -150.32.0.0.0
--  __TEXT.__text: 0xca184
 +150.35.0.0.0
-+  __TEXT.__text: 0xca6c4
-   __TEXT.__objc_methlist: 0x630
--  __TEXT.__const: 0x7bf0
--  __TEXT.__cstring: 0x36fa
--  __TEXT.__swift5_typeref: 0x25ba
--  __TEXT.__swift5_reflstr: 0x2fc4
-+  __TEXT.__const: 0x7c20
-+  __TEXT.__cstring: 0x369a
-+  __TEXT.__swift5_typeref: 0x27bc
-+  __TEXT.__swift5_reflstr: 0x2f74
-   __TEXT.__swift5_assocty: 0x368
-   __TEXT.__constg_swiftt: 0x241c
--  __TEXT.__swift5_fieldmd: 0x2b98
-+  __TEXT.__swift5_fieldmd: 0x2b5c
-   __TEXT.__swift5_proto: 0x47c
-   __TEXT.__swift5_types: 0x2b4
-   __TEXT.__swift5_capture: 0xd64
--  __TEXT.__oslogstring: 0x2a36
-+  __TEXT.__oslogstring: 0x2a56
-   __TEXT.__swift5_builtin: 0x8c
-   __TEXT.__swift_as_entry: 0x2e0
-   __TEXT.__swift_as_ret: 0x2e0
-   __TEXT.__swift_as_cont: 0x708
-   __TEXT.__swift5_protos: 0x24
-   __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__unwind_info: 0x3878
--  __TEXT.__eh_frame: 0x6e00
-+  __TEXT.__unwind_info: 0x3868
-+  __TEXT.__eh_frame: 0x6e08
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6b8
-+  __DATA_CONST.__objc_selrefs: 0x6b0
-   __DATA_CONST.__objc_protorefs: 0x60
--  __DATA_CONST.__got: 0x9c0
--  __AUTH_CONST.__const: 0x5df8
-+  __DATA_CONST.__got: 0x9e0
-+  __AUTH_CONST.__const: 0x5d80
-   __AUTH_CONST.__cfstring: 0x5a0
-   __AUTH_CONST.__objc_const: 0x1e20
--  __AUTH_CONST.__auth_got: 0x17c8
-+  __AUTH_CONST.__auth_got: 0x17e8
-   __AUTH.__objc_data: 0x5f8
-   __AUTH.__data: 0x3418
--  __DATA.__data: 0x1258
-+  __DATA.__data: 0x1298
-   __DATA.__bss: 0xa280
-   __DATA.__common: 0xa9
-   __DATA_DIRTY.__objc_data: 0x50
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4202
--  Symbols:   1410
+-  Symbols:   1257
 -  CStrings:  563
 +  Functions: 4206
-+  Symbols:   1411
++  Symbols:   1259
 +  CStrings:  558
- 
 Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA6ZStackVyAA05TupleD0VyAA6HStackVyAGyACyAA4ViewPAAE11glassEffect_2inQrAA5GlassV_qd__tAA5ShapeRd__lFQOyACyAA6ButtonVyACyACyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAVyAA5ColorVSgGGAA12_FrameLayoutVGGAA05_ClipJ0VyAA6CircleVGG_A12_Qo_AA08_PaddingW0VG_AA6SpacerVQPGG_ACy15ProximityReader014DiscoveryErrorH0VAA017_AppearanceActionS0VGQPGGAA024_SafeAreaRegionsIgnoringW0VGAaJHPA30_AaJHPyHC_A32_AA0hS0HPyHCHC
-+ _objc_msgSend$setCountry:
 + _symbolic _____Sg 7SwiftUI4FontV
 + _symbolic _____Sg 7SwiftUI4FontV6DesignO
 + _symbolic _____yAAyAAy__________y_____SgGGACy_____SgGG_____G 7SwiftUI15ModifiedContentV AA5ImageV AA30_EnvironmentKeyWritingModifierV AA4FontV AA5ColorV AA12_FrameLayoutV
@@ -93,8 +54,6 @@ Symbols:
 + _symbolic _____y_____y_____y_____yACy_____yACyACyACy__________y_____SgGGAFy_____SgGG_____GG_____y_____GG_ASQo______G______QPGG 7SwiftUI6HStackV AA12TupleContentV AA08ModifiedE0V AA4ViewPAAE11glassEffect_2inQrAA5GlassV_qd__tAA5ShapeRd__lFQO AA6ButtonV AA5ImageV AA30_EnvironmentKeyWritingModifierV AA4FontV AA5ColorV AA12_FrameLayoutV AA05_ClipI0V AA6CircleV AA08_PaddingV0V AA6SpacerV
 + _symbolic _____y_____y_____y_____yACy_____yACyACyACy__________y_____SgGGAFy_____SgGG_____GG_____y_____GG_ASQo______G______QPGG_ACy__________Gt 7SwiftUI6HStackV AA12TupleContentV AA08ModifiedE0V AA4ViewPAAE11glassEffect_2inQrAA5GlassV_qd__tAA5ShapeRd__lFQO AA6ButtonV AA5ImageV AA30_EnvironmentKeyWritingModifierV AA4FontV AA5ColorV AA12_FrameLayoutV AA05_ClipI0V AA6CircleV AA08_PaddingV0V AA6SpacerV 15ProximityReader014DiscoveryErrorG0V AA017_AppearanceActionR0V
 - _get_witness_table 7SwiftUI15ModifiedContentVyAA6ZStackVyAA05TupleD0VyAA6HStackVyAGyAA6SpacerV_AA6ButtonVyACyACyACyAA5ImageVAA12_FrameLayoutVGAA30_EnvironmentKeyWritingModifierVyAA5ColorVSgGGAA08_PaddingL0VGGQPGG_ACy15ProximityReader18DiscoveryErrorViewVAA017_AppearanceActionP0VGQPGGAA024_SafeAreaRegionsIgnoringL0VGAA0W0HPA11_AAA15_HPyHC_A13_AA0wP0HPyHCHC
-- _objc_msgSend$postalAddressWithDictionaryRepresentation:
-- _objc_msgSend$systemDarkGrayColor
 - _swift_initStackObject
 - _symbolic SS_SSt
 - _symbolic ___________y_____yACyACy__________G_____y_____SgGG_____GGt 7SwiftUI6SpacerV AA6ButtonV AA15ModifiedContentV AA5ImageV AA12_FrameLayoutV AA30_EnvironmentKeyWritingModifierV AA5ColorV AA08_PaddingI0V

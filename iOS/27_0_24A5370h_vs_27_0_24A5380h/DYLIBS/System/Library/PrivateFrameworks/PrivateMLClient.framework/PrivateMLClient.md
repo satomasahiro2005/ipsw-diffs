@@ -2,100 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/PrivateMLClient.framework/PrivateMLClient`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__data` | `0xff30` | `0x142d0` | **`+0x43a0`** |
+| `__AUTH.__data` | `0x5cb8` | `0x26e8` | **`-0x35d0`** |
+| `__TEXT.__text` | `0x405cf8` | `0x409258` | **`+0x3560`** |
+| `__DATA_DIRTY.__bss` | `0x8480` | `0xa200` | **`+0x1d80`** |
+| `__DATA.__bss` | `0x4ad80` | `0x49600` | **`-0x1780`** |
+| `__DATA.__data` | `0x98e0` | `0x8d48` | **`-0xb98`** |
+| `__AUTH_CONST.__const` | `0xb9b8` | `0xae68` | **`-0xb50`** |
+| `__TEXT.__oslogstring` | `0x78a0` | `0x6e60` | **`-0xa40`** |
+| `__TEXT.__swift5_capture` | `0x2670` | `0x21a0` | **`-0x4d0`** |
+| `__TEXT.__const` | `0x306e8` | `0x308d8` | **`+0x1f0`** |
+| `__TEXT.__cstring` | `0xb315` | `0xb4b5` | **`+0x1a0`** |
+| `__AUTH.__objc_data` | `0x2d0` | `0x140` | **`-0x190`** |
+| `__DATA_DIRTY.__objc_data` | `0x5f0` | `0x780` | **`+0x190`** |
+| `__TEXT.__eh_frame` | `0x19230` | `0x19370` | **`+0x140`** |
+| `__TEXT.__unwind_info` | `0x110f0` | `0x11230` | **`+0x140`** |
+| `__TEXT.__swift5_reflstr` | `0x7ea5` | `0x7f75` | **`+0xd0`** |
+| `__TEXT.__swift5_fieldmd` | `0x9ab8` | `0x9b74` | **`+0xbc`** |
+| `__DATA_CONST.__const` | `0x4b00` | `0x4b70` | **`+0x70`** |
+| `__DATA.__common` | `0x40` | `0x8` | **`-0x38`** |
+| `__DATA_DIRTY.__common` | `0x18` | `0x50` | **`+0x38`** |
+| `__TEXT.__constg_swiftt` | `0x7464` | `0x749c` | **`+0x38`** |
+| `__TEXT.__swift5_assocty` | `0xad0` | `0xb00` | **`+0x30`** |
+| `__TEXT.__swift5_proto` | `0x29cc` | `0x29fc` | **`+0x30`** |
+| `__TEXT.__swift5_typeref` | `0x70e6` | `0x7116` | **`+0x30`** |
+| `__TEXT.__swift_as_cont` | `0x4f8` | `0x4d4` | **`-0x24`** |
+| `__AUTH_CONST.__objc_const` | `0x31b0` | `0x3190` | **`-0x20`** |
+| `__TEXT.__swift5_builtin` | `0x190` | `0x17c` | **`-0x14`** |
+| `__AUTH_CONST.__auth_got` | `0x1680` | `0x1688` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `0xc0` | `0xb8` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0x930` | `0x938` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x1c0` | `0x1c8` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x160` | `0x164` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x405cf8
--  __TEXT.__const: 0x306e8
--  __TEXT.__swift5_typeref: 0x70e6
--  __TEXT.__oslogstring: 0x78a0
--  __TEXT.__cstring: 0xb315
--  __TEXT.__constg_swiftt: 0x7464
--  __TEXT.__swift5_builtin: 0x190
--  __TEXT.__swift5_reflstr: 0x7ea5
--  __TEXT.__swift5_fieldmd: 0x9ab8
--  __TEXT.__swift5_capture: 0x2670
--  __TEXT.__swift5_proto: 0x29cc
--  __TEXT.__swift5_types: 0x930
--  __TEXT.__swift5_assocty: 0xad0
--  __TEXT.__swift5_mpenum: 0xc0
--  __TEXT.__swift_as_entry: 0x160
--  __TEXT.__swift_as_ret: 0x1c0
--  __TEXT.__swift_as_cont: 0x4f8
-+  __TEXT.__text: 0x409258
-+  __TEXT.__const: 0x308d8
-+  __TEXT.__swift5_typeref: 0x7116
-+  __TEXT.__oslogstring: 0x6e60
-+  __TEXT.__cstring: 0xb4b5
-+  __TEXT.__constg_swiftt: 0x749c
-+  __TEXT.__swift5_builtin: 0x17c
-+  __TEXT.__swift5_reflstr: 0x7f75
-+  __TEXT.__swift5_fieldmd: 0x9b74
-+  __TEXT.__swift5_proto: 0x29fc
-+  __TEXT.__swift5_types: 0x938
-+  __TEXT.__swift5_assocty: 0xb00
-+  __TEXT.__swift5_mpenum: 0xb8
-+  __TEXT.__swift5_capture: 0x21a0
-+  __TEXT.__swift_as_entry: 0x164
-+  __TEXT.__swift_as_ret: 0x1c8
-+  __TEXT.__swift_as_cont: 0x4d4
-   __TEXT.__swift5_protos: 0x18
--  __TEXT.__unwind_info: 0x110f0
--  __TEXT.__eh_frame: 0x19230
-+  __TEXT.__unwind_info: 0x11230
-+  __TEXT.__eh_frame: 0x19370
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4b00
-+  __DATA_CONST.__const: 0x4b70
-   __DATA_CONST.__objc_classlist: 0x110
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xc8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xb9b8
--  __AUTH_CONST.__objc_const: 0x31b0
--  __AUTH_CONST.__auth_got: 0x1680
--  __AUTH.__objc_data: 0x2d0
--  __AUTH.__data: 0x5cb8
--  __DATA.__data: 0x98e0
--  __DATA.__bss: 0x4ad80
--  __DATA.__common: 0x40
--  __DATA_DIRTY.__objc_data: 0x5f0
--  __DATA_DIRTY.__data: 0xff30
--  __DATA_DIRTY.__bss: 0x8480
--  __DATA_DIRTY.__common: 0x18
-+  __AUTH_CONST.__const: 0xae68
-+  __AUTH_CONST.__objc_const: 0x3190
-+  __AUTH_CONST.__auth_got: 0x1688
-+  __AUTH.__objc_data: 0x140
-+  __AUTH.__data: 0x26e8
-+  __DATA.__data: 0x8d48
-+  __DATA.__bss: 0x49600
-+  __DATA.__common: 0x8
-+  __DATA_DIRTY.__objc_data: 0x780
-+  __DATA_DIRTY.__data: 0x142d0
-+  __DATA_DIRTY.__bss: 0xa200
-+  __DATA_DIRTY.__common: 0x50
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
+-204.0.2.0.0
++207.0.3.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 27826
--  Symbols:   5473
--  CStrings:  2033
+-  Symbols:   3970
+-  CStrings:  2026
 +  Functions: 27810
-+  Symbols:   5339
-+  CStrings:  2048
- 
-Sections:
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
++  Symbols:   3982
++  CStrings:  2041
 Symbols:
 + ___swift_closure_destructor.1754Tm
 + ___swift_closure_destructor.27Tm
@@ -363,5 +319,4 @@ CStrings:
 - "requestIdentifier=%{public, signpost.description=attribute,public}s useCaseIdentifier=%{public, signpost.description=attribute,public}s cachedTokensCount=%{public, signpost.description=attribute,public}ld cacheableTokensCount=%{public, signpost.description=attribute,public}ld prefixTriePromptNumTokensRequestedFromFile=%{public, signpost.description=attribute,public}ld prefixTriePromptNumTokensReadFromFile=%{public, signpost.description=attribute,public}ld prefixTriePromptNumBytesRequestedFromFile=%{public, signpost.description=attribute,public}ld prefixTriePromptNumBytesReadFromFile=%{public, signpost.description=attribute,public}ld"
 - "requestIdentifier=%{public, signpost.description=attribute,public}s useCaseIdentifier=%{public, signpost.description=attribute,public}s timeToFirstTokenMillis=%{public, signpost.description=attribute,public}f extendLatencyMillis=%{public, signpost.description=attribute,public}f totalInferenceMillis=%{public, signpost.description=attribute,public}f tokenRate=%{public, signpost.description=attribute,public}f"
 - "requestIdentifier=%{public, signpost.description=attribute,public}s useCaseIdentifier=%{public, signpost.description=attribute,public}s timeToFirstTokenMillis=%{public, signpost.description=attribute,public}f extendLatencyMillis=%{public, signpost.description=attribute,public}f totalInferenceMillis=%{public, signpost.description=attribute,public}f tokenRate=%{public, signpost.description=attribute,public}f speculativeDecodingAcceptanceRate=%{public, signpost.description=attribute,public}f draftModelInferenceCallCount=%{public, signpost.description=attribute,public}u targetModelInferenceCallCount=%{public, signpost.description=attribute,public}u draftOutputTokenCount=%{public, signpost.description=attribute,public}u targetOutputTokenCount=%{public, signpost.description=attribute,public}u draftModelTotalInferenceLatencyMillis=%{public, signpost.description=attribute,public}llu targetModelTotalInferenceLatencyMillis=%{public, signpost.description=attribute,public}llu draftSteps=%{public, signpost.description=attribute,public}llu inputTokensCount=%{public, signpost.description=attribute,public}u outputTokensCount=%{public, signpost.description=attribute,public}u fragmentKvCacheHitCount=%{public, signpost.description=attribute,public}ld fragmentKvCacheMissCount=%{public, signpost.description=attribute,public}ld requestCachedTokensCount=%{public, signpost.description=attribute,public}ld requestMissedTokensCount=%{public, signpost.description=attribute,public}ld prefixKVCacheTokensMatchCount=%{public, signpost.description=attribute,public}ld promptModulesKVCacheTokensMatchCount=%{public, signpost.description=attribute,public}ld prefixKvCacheTokensDiffCount=%{public, signpost.description=attribute,public}ld promptModuleTokensDiffCount=%{public, signpost.description=attribute,public}ld userTokensCount=%{public, signpost.description=attribute,public}ld kvCacheReused=%{public, signpost.description=attribute,public}s kvCacheReuseFetchLatencyMillis=%{public, signpost.description=attribute,public}ld kvCacheReuseFetchSizeBytes=%{public, signpost.description=attribute,public}ld cachedTokensCount=%{public, signpost.description=attribute,public}ld cacheableTokensCount=%{public, signpost.description=attribute,public}ld kvCacheReuseNonStaticTokensCount=%{public, signpost.description=attribute,public}ld kvCacheReuseIsFromSameEnsemble=%{public, signpost.description=attribute,public}s kvCacheStorageType=%{public, signpost.description=attribute,public}s kvCacheLocationType=%{public, signpost.description=attribute,public}s kvCacheReuseEffectiveness=%{public, signpost.description=attribute,public}f prefixTriePromptNumTokensRequestedFromFile=%{public, signpost.description=attribute,public}ld prefixTriePromptNumTokensReadFromFile=%{public, signpost.description=attribute,public}ld prefixTriePromptNumBytesRequestedFromFile=%{public, signpost.description=attribute,public}ld prefixTriePromptNumBytesReadFromFile=%{public, signpost.description=attribute,public}ld inferenceCachedTokenCount=%{public, signpost.description=attribute,public}ld thoughtTokenCount=%{public, signpost.description=attribute,public}ld firstTokenRateIncludingCached=%{public, signpost.description=attribute,public}f firstTokenRateExcludingCachedAndPreprocessing=%{public, signpost.description=attribute,public}f"
-
 ```

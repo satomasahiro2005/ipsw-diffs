@@ -2,56 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/ANSTKit.framework/ANSTKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc8b30` | `0xc8f4c` | **`+0x41c`** |
+| `__AUTH_CONST.__cfstring` | `0x7fa0` | `0x8060` | **`+0xc0`** |
+| `__TEXT.__cstring` | `0x1040d` | `0x104ba` | **`+0xad`** |
+| `__AUTH_CONST.__objc_const` | `0xe778` | `0xe7d8` | **`+0x60`** |
+| `__TEXT.__objc_methlist` | `0x636c` | `0x6384` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1df0` | `0x1e00` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0xc10` | `0xc18` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -44.0.0.0.0
--  __TEXT.__text: 0xc71c4
--  __TEXT.__objc_methlist: 0x636c
 +45.0.0.0.0
-+  __TEXT.__text: 0xc75e0
-+  __TEXT.__objc_methlist: 0x6384
-   __TEXT.__const: 0x3798
--  __TEXT.__cstring: 0x1040d
-+  __TEXT.__cstring: 0x104ba
-   __TEXT.__oslogstring: 0x3a86
-   __TEXT.__gcc_except_tab: 0x4b88
-   __TEXT.__ustring: 0x32
 
-   __DATA_CONST.__objc_protolist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x18
--  __DATA_CONST.__objc_selrefs: 0x1df0
-+  __DATA_CONST.__objc_selrefs: 0x1e00
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x3e8
-   __DATA_CONST.__objc_arraydata: 0x120
-   __DATA_CONST.__got: 0x5e0
-   __AUTH_CONST.__const: 0x228
--  __AUTH_CONST.__cfstring: 0x7fa0
--  __AUTH_CONST.__objc_const: 0xe778
-+  __AUTH_CONST.__cfstring: 0x8060
-+  __AUTH_CONST.__objc_const: 0xe7d8
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x318
-   __AUTH_CONST.__objc_arrayobj: 0x120
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__auth_got: 0x988
-   __AUTH.__objc_data: 0x50
--  __DATA.__objc_ivar: 0xc10
-+  __DATA.__objc_ivar: 0xc18
-   __DATA.__data: 0x700
-   __DATA_DIRTY.__objc_data: 0x2990
-   __DATA_DIRTY.__bss: 0x30
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2993
 +  Functions: 2995
-   Symbols:   1190
+
 -  CStrings:  1822
 +  CStrings:  1828
- 
 CStrings:
 + "    eyeCloseConf        %ld\n"
 + "    eyeOccludedConf        %ld\n"

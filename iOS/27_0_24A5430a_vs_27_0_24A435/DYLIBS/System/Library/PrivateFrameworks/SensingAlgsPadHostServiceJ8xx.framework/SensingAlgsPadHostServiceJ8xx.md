@@ -2,17 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/SensingAlgsPadHostServiceJ8xx.framework/SensingAlgsPadHostServiceJ8xx`
 
-```diff
+### Section Size Changes
 
- 10.0.0.0.0
--  __TEXT.__text: 0x570cc
-+  __TEXT.__text: 0x570f8
-   __TEXT.__objc_methlist: 0x838
--  __TEXT.__cstring: 0x125c
-+  __TEXT.__cstring: 0x125a
-   __TEXT.__const: 0x18aa5a
-   __TEXT.__oslogstring: 0x1d12
-   __TEXT.__gcc_except_tab: 0x2064
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x570cc` | `0x570f8` | **`+0x2c`** |
+| `__TEXT.__cstring` | `0x125c` | `0x125a` | **`-0x2`** |
+
+### Other Changes
+
+```diff
 Functions:
 ~ __ZN29Device0x039P100CalBlobHandler18loadBloomingParamsEPK25tP100CalibrationTable0400 : 512 -> 516
 ~ __ZN13SA2DArrayBaseIfE14copyFromBufferItEEvPKT_jRK13IterationRect : 328 -> 336

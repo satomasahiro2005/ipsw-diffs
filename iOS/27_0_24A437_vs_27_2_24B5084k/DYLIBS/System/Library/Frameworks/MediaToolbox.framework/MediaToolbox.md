@@ -2,93 +2,45 @@
 
 > `/System/Library/Frameworks/MediaToolbox.framework/MediaToolbox`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc2cb84` | `0x1050890` | **`+0x423d0c`** |
+| `__TEXT.__oslogstring` | `0x670f8` | `0x16f8f4` | **`+0x1087fc`** |
+| `__TEXT.__cstring` | `0x71567` | `0x140997` | **`+0xcf430`** |
+| `__AUTH_CONST.__cfstring` | `0x504a0` | `0x53aa0` | **`+0x3600`** |
+| `__DATA.__common` | `0x20d8` | `0x32e8` | **`+0x1210`** |
+| `__TEXT.__unwind_info` | `0x14870` | `0x157b0` | **`+0xf40`** |
+| `__TEXT.__gcc_except_tab` | `0x15ec` | `0x1ef4` | **`+0x908`** |
+| `__DATA_CONST.__const` | `0x249a8` | `0x24df8` | **`+0x450`** |
+| `__TEXT.__const` | `0x29720` | `0x299c0` | **`+0x2a0`** |
+| `__DATA.__bss` | `0x5208` | `0x5408` | **`+0x200`** |
+| `__DATA_DIRTY.__common` | `0x220` | `0x410` | **`+0x1f0`** |
+| `__AUTH_CONST.__const` | `0x47da8` | `0x47ef8` | **`+0x150`** |
+| `__AUTH_CONST.__auth_got` | `0x5c88` | `0x5d18` | **`+0x90`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2498` | `0x24f0` | **`+0x58`** |
+| `__DATA_DIRTY.__bss` | `0x1bc0` | `0x1b78` | **`-0x48`** |
+| `__TEXT.__lazy_helpers` | `0x3618` | `0x3654` | **`+0x3c`** |
+| `__TEXT.__eh_frame` | `0x478` | `0x4b0` | **`+0x38`** |
+| `__DATA.__data` | `0x3288` | `0x3268` | **`-0x20`** |
+| `__DATA_DIRTY.__data` | `0x50c` | `0x52c` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x4938` | `0x4948` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x2b74` | `0x2b7c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3350.77.1.6.0
--  __TEXT.__text: 0xbda4ac
--  __TEXT.__lazy_helpers: 0x3618
--  __TEXT.__objc_methlist: 0x2b74
--  __TEXT.__const: 0x29720
--  __TEXT.__cstring: 0x71567
--  __TEXT.__oslogstring: 0x670f8
--  __TEXT.__gcc_except_tab: 0x15ec
 +3385.7.1.0.0
-+  __TEXT.__text: 0xfff564
-+  __TEXT.__lazy_helpers: 0x3654
-+  __TEXT.__objc_methlist: 0x2b7c
-+  __TEXT.__const: 0x299c0
-+  __TEXT.__cstring: 0x140997
-+  __TEXT.__oslogstring: 0x16f8f4
-+  __TEXT.__gcc_except_tab: 0x1ef4
-   __TEXT.__dlopen_cstrs: 0x32e
-   __TEXT.__ustring: 0x24e
-   __TEXT.__swift5_typeref: 0x1d1
 
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0x30
--  __TEXT.__unwind_info: 0x21f28
--  __TEXT.__eh_frame: 0x478
-+  __TEXT.__unwind_info: 0x23ce8
-+  __TEXT.__eh_frame: 0x4b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x249a8
-+  __DATA_CONST.__const: 0x24df8
-   __DATA_CONST.__objc_classlist: 0x228
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2498
-+  __DATA_CONST.__objc_selrefs: 0x24f0
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x1f0
-   __DATA_CONST.__objc_arraydata: 0x50
--  __DATA_CONST.__got: 0x4938
--  __AUTH_CONST.__const: 0x47da8
--  __AUTH_CONST.__cfstring: 0x504a0
-+  __DATA_CONST.__got: 0x4948
-+  __AUTH_CONST.__const: 0x47ef8
-+  __AUTH_CONST.__cfstring: 0x53aa0
-   __AUTH_CONST.__objc_const: 0x59c8
-   __AUTH_CONST.__weak_auth_got: 0x20
-   __AUTH_CONST.__lazy_load_got: 0x4e0
-
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x5c88
-+  __AUTH_CONST.__auth_got: 0x5d18
-   __AUTH.__objc_data: 0x1040
-   __AUTH.__data: 0x940
-   __DATA.__objc_ivar: 0x3c0
--  __DATA.__data: 0x3290
--  __DATA.__common: 0x20d8
-+  __DATA.__data: 0x3270
-+  __DATA.__common: 0x32e8
-   __DATA_DIRTY.__objc_data: 0x550
--  __DATA_DIRTY.__data: 0x50c
--  __DATA_DIRTY.__bss: 0x1bc0
--  __DATA_DIRTY.__common: 0x220
-+  __DATA_DIRTY.__data: 0x52c
-+  __DATA_DIRTY.__bss: 0x1b78
-+  __DATA_DIRTY.__common: 0x410
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 43710
--  Symbols:   45199
+-  Functions: 43712
+-  Symbols:   44308
 -  CStrings:  20947
-+  Functions: 53369
-+  Symbols:   46461
++  Functions: 53371
++  Symbols:   45559
 +  CStrings:  57600
- 
 Symbols:
 + -[FigNSURLSession initWithClientBundleIdentifier:clientPersonaIdentifier:dispatchQueue:useNWLoader:createOptions:]
 + -[FigNeroLayer .cxx_destruct]
@@ -1447,18 +1399,6 @@ Symbols:
 + _nero_ensureStarted
 + _nero_syncMessageHandler
 + _nero_tellOctaviaDisplayWasDetached
-+ _objc_msgSend$_multipathAlternatePort
-+ _objc_msgSend$_usesNWLoader
-+ _objc_msgSend$countOfResponseBodyBytesReceived
-+ _objc_msgSend$currentThread
-+ _objc_msgSend$filepath
-+ _objc_msgSend$initWithClientBundleIdentifier:clientPersonaIdentifier:dispatchQueue:useNWLoader:createOptions:
-+ _objc_msgSend$response
-+ _objc_msgSend$responseStartDate
-+ _objc_msgSend$setBackgroundColor:
-+ _objc_msgSend$setBorderColor:
-+ _objc_msgSend$setBorderWidth:
-+ _objc_msgSend$set_connectionCachePurgeTimeout:
 + _oobtcontroller_isPreparingTrackItem
 + _pap_applyCachedPropertiesOnMediaControl.forceAirPlayVideoSeekToDateAsSeekToTime
 + _pap_applyCachedPropertiesOnMediaControl.initOnce
@@ -1688,7 +1628,6 @@ Symbols:
 - _kFigAudioQueueOfflineMixerProperty_ConnectedAudioQueueCount
 - _kFigReportingEventKey_Export_ClientProcessName
 - _nrp_createWithFigRenderPipeline
-- _objc_msgSend$initWithClientBundleIdentifier:clientPersonaIdentifier:dispatchQueue:useNWLoader:
 - _piqca_setProperty.sFigCAImageQueueSetInterpolationCurve
 - _playerairplay_getPreloadAssetPropertiesArray.once
 - _playerairplay_getPreloadAssetPropertiesArray.sPreloadAssetPropertiesArray

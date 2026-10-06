@@ -2,79 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/WiFiPeerToPeer.framework/WiFiPeerToPeer`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3d44c` | `0x3f2ec` | **`+0x1ea0`** |
+| `__TEXT.__cstring` | `0x869c` | `0x9780` | **`+0x10e4`** |
+| `__TEXT.__oslogstring` | `0x1332` | `0x1bf5` | **`+0x8c3`** |
+| `__AUTH_CONST.__objc_const` | `0x9b20` | `0x9b88` | **`+0x68`** |
+| `__AUTH.__objc_data` | `0x98` | `0x48` | **`-0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x17f8` | `0x1848` | **`+0x50`** |
+| `__TEXT.__const` | `0x250` | `0x270` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0xf48` | `0xf60` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x5494` | `0x54a4` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x718` | `0x724` | **`+0xc`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2230` | `0x2238` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x3d44c
--  __TEXT.__objc_methlist: 0x5494
--  __TEXT.__const: 0x250
--  __TEXT.__oslogstring: 0x1332
-+  __TEXT.__text: 0x3f2ec
-+  __TEXT.__objc_methlist: 0x54a4
-+  __TEXT.__const: 0x270
-+  __TEXT.__oslogstring: 0x1bf5
-   __TEXT.__swift5_typeref: 0x8c
--  __TEXT.__cstring: 0x869c
-+  __TEXT.__cstring: 0x9780
-   __TEXT.__constg_swiftt: 0x70
-   __TEXT.__swift5_reflstr: 0x7
-   __TEXT.__swift5_fieldmd: 0x2c
-   __TEXT.__swift5_types: 0x8
-   __TEXT.__gcc_except_tab: 0x2f0
--  __TEXT.__unwind_info: 0xf48
-+  __TEXT.__unwind_info: 0xf60
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-885.66.4.1.0
++885.69.4.1.0
 
-   __DATA_CONST.__objc_classlist: 0x260
-   __DATA_CONST.__objc_protolist: 0x100
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2230
-+  __DATA_CONST.__objc_selrefs: 0x2238
-   __DATA_CONST.__objc_protorefs: 0xd0
-   __DATA_CONST.__objc_superrefs: 0x240
-   __DATA_CONST.__got: 0x328
-   __AUTH_CONST.__const: 0x4a8
-   __AUTH_CONST.__cfstring: 0x6a80
--  __AUTH_CONST.__objc_const: 0x9b20
-+  __AUTH_CONST.__objc_const: 0x9b88
-   __AUTH_CONST.__objc_intobj: 0x18
-   __AUTH_CONST.__auth_got: 0x560
--  __AUTH.__objc_data: 0x98
--  __DATA.__objc_ivar: 0x718
-+  __AUTH.__objc_data: 0x48
-+  __DATA.__objc_ivar: 0x724
-   __DATA.__data: 0xc80
-   __DATA.__common: 0x18
--  __DATA_DIRTY.__objc_data: 0x17f8
-+  __DATA_DIRTY.__objc_data: 0x1848
-   __DATA_DIRTY.__data: 0x60
-   __DATA_DIRTY.__common: 0x8
-   __DATA_DIRTY.__bss: 0x70
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   Functions: 1722
--  Symbols:   5904
--  CStrings:  1922
-+  Symbols:   5907
-+  CStrings:  2023
- 
-Sections:
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
+-  Symbols:   3392
+-  CStrings:  1082
++  Symbols:   3395
++  CStrings:  1183
 Symbols:
 + _OBJC_IVAR_$_WiFiAwareDataSession._logger
 + _OBJC_IVAR_$_WiFiAwarePublisher._logger
@@ -258,5 +212,4 @@ CStrings:
 - "datapathPairingDidSucceed PairingKeyStoreID: %@ DeviceID: %llu"
 - "q"
 - "\xe1Q"
-
 ```

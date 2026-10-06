@@ -2,148 +2,67 @@
 
 > `/System/Library/PrivateFrameworks/MobileSafariUI.framework/MobileSafariUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2da14c` | `0x2ee340` | **`+0x141f4`** |
+| `__TEXT.__eh_frame` | `0x239c` | `0x3834` | **`+0x1498`** |
+| `__TEXT.__const` | `0x4550` | `0x4e50` | **`+0x900`** |
+| `__AUTH_CONST.__const` | `0x8160` | `0x88c0` | **`+0x760`** |
+| `__DATA.__bss` | `0x33c0` | `0x3ae0` | **`+0x720`** |
+| `__TEXT.__swift5_typeref` | `0x5e23` | `0x6499` | **`+0x676`** |
+| `__TEXT.__unwind_info` | `0xfc38` | `0x10288` | **`+0x650`** |
+| `__AUTH_CONST.__objc_const` | `0x32e70` | `0x33428` | **`+0x5b8`** |
+| `__TEXT.__oslogstring` | `0xadef` | `0xb21f` | **`+0x430`** |
+| `__AUTH.__data` | `0xd50` | `0x1160` | **`+0x410`** |
+| `__TEXT.__cstring` | `0x10714` | `0x10a64` | **`+0x350`** |
+| `__DATA.__data` | `0x98d8` | `0x9be8` | **`+0x310`** |
+| `__TEXT.__constg_swiftt` | `0x1cb0` | `0x1f38` | **`+0x288`** |
+| `__TEXT.__swift5_fieldmd` | `0xd94` | `0x1000` | **`+0x26c`** |
+| `__TEXT.__swift5_capture` | `0x22a8` | `0x2508` | **`+0x260`** |
+| `__AUTH_CONST.__auth_got` | `0x2ba0` | `0x2df0` | **`+0x250`** |
+| `__AUTH.__objc_data` | `0x3140` | `0x3330` | **`+0x1f0`** |
+| `__TEXT.__swift5_reflstr` | `0xf60` | `0x1100` | **`+0x1a0`** |
+| `__TEXT.__objc_methlist` | `0x24bb4` | `0x24d44` | **`+0x190`** |
+| `__DATA_CONST.__got` | `0x36a0` | `0x37f8` | **`+0x158`** |
+| `__TEXT.__swift_as_cont` | `0x160` | `0x2ac` | **`+0x14c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x185a8` | `0x186e0` | **`+0x138`** |
+| `__TEXT.__gcc_except_tab` | `0x1f3dc` | `0x1f4bc` | **`+0xe0`** |
+| `__TEXT.__swift_as_ret` | `0xd8` | `0x150` | **`+0x78`** |
+| `__TEXT.__swift5_assocty` | `0x4f8` | `0x560` | **`+0x68`** |
+| `__TEXT.__swift_as_entry` | `0xb0` | `0x110` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x9850` | `0x98a0` | **`+0x50`** |
+| `__AUTH_CONST.__cfstring` | `0xdd60` | `0xdd20` | **`-0x40`** |
+| `__TEXT.__swift5_proto` | `0x1c8` | `0x200` | **`+0x38`** |
+| `__DATA_CONST.__objc_classlist` | `0x9f0` | `0xa20` | **`+0x30`** |
+| `__TEXT.__swift5_types` | `0x134` | `0x160` | **`+0x2c`** |
+| `__DATA.__objc_ivar` | `0x20c4` | `0x20dc` | **`+0x18`** |
+| `__DATA_CONST.__objc_protolist` | `0xbd0` | `0xbe8` | **`+0x18`** |
+| `__DATA_CONST.__objc_protorefs` | `0x1d8` | `0x1f0` | **`+0x18`** |
+| `__DATA_DIRTY.__data` | `0x12f0` | `0x12e8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -625.1.24.10.1
--  __TEXT.__text: 0x2da14c
--  __TEXT.__objc_methlist: 0x24bb4
--  __TEXT.__const: 0x4550
--  __TEXT.__gcc_except_tab: 0x1f3dc
--  __TEXT.__cstring: 0x10714
 +625.1.29.10.3
-+  __TEXT.__text: 0x2ee340
-+  __TEXT.__objc_methlist: 0x24d44
-+  __TEXT.__const: 0x4e50
-+  __TEXT.__gcc_except_tab: 0x1f4bc
-+  __TEXT.__cstring: 0x10a64
-   __TEXT.__dlopen_cstrs: 0x7e6
--  __TEXT.__oslogstring: 0xadef
-+  __TEXT.__oslogstring: 0xb21f
-   __TEXT.__ustring: 0x11da
--  __TEXT.__swift5_typeref: 0x5e23
--  __TEXT.__constg_swiftt: 0x1cb0
-+  __TEXT.__swift5_typeref: 0x6499
-+  __TEXT.__constg_swiftt: 0x1f38
-+  __TEXT.__swift5_reflstr: 0x1100
-+  __TEXT.__swift5_fieldmd: 0x1000
-   __TEXT.__swift5_builtin: 0x1cc
--  __TEXT.__swift5_reflstr: 0xf60
--  __TEXT.__swift5_fieldmd: 0xd94
--  __TEXT.__swift5_assocty: 0x4f8
--  __TEXT.__swift5_proto: 0x1c8
--  __TEXT.__swift5_types: 0x134
--  __TEXT.__swift5_capture: 0x22a8
--  __TEXT.__swift_as_entry: 0xb0
--  __TEXT.__swift_as_ret: 0xd8
--  __TEXT.__swift_as_cont: 0x160
-+  __TEXT.__swift5_assocty: 0x560
-+  __TEXT.__swift5_capture: 0x2508
-+  __TEXT.__swift5_proto: 0x200
-+  __TEXT.__swift5_types: 0x160
-+  __TEXT.__swift_as_entry: 0x110
-+  __TEXT.__swift_as_ret: 0x150
-+  __TEXT.__swift_as_cont: 0x2ac
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_protos: 0xc
--  __TEXT.__unwind_info: 0xfc38
--  __TEXT.__eh_frame: 0x239c
-+  __TEXT.__unwind_info: 0x10288
-+  __TEXT.__eh_frame: 0x3834
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9850
--  __DATA_CONST.__objc_classlist: 0x9f0
-+  __DATA_CONST.__const: 0x98a0
-+  __DATA_CONST.__objc_classlist: 0xa20
-   __DATA_CONST.__objc_catlist: 0xb0
--  __DATA_CONST.__objc_protolist: 0xbd0
-+  __DATA_CONST.__objc_protolist: 0xbe8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x185a8
--  __DATA_CONST.__objc_protorefs: 0x1d8
-+  __DATA_CONST.__objc_selrefs: 0x186e0
-+  __DATA_CONST.__objc_protorefs: 0x1f0
-   __DATA_CONST.__objc_superrefs: 0x690
-   __DATA_CONST.__objc_arraydata: 0x368
--  __DATA_CONST.__got: 0x36a0
--  __AUTH_CONST.__const: 0x8160
--  __AUTH_CONST.__cfstring: 0xdd60
--  __AUTH_CONST.__objc_const: 0x32e70
-+  __DATA_CONST.__got: 0x37f8
-+  __AUTH_CONST.__const: 0x88c0
-+  __AUTH_CONST.__cfstring: 0xdd20
-+  __AUTH_CONST.__objc_const: 0x33428
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x4c8
-   __AUTH_CONST.__objc_dictobj: 0xc8
-   __AUTH_CONST.__objc_arrayobj: 0x2b8
-   __AUTH_CONST.__objc_doubleobj: 0x80
--  __AUTH_CONST.__auth_got: 0x2ba0
--  __AUTH.__objc_data: 0x3140
--  __AUTH.__data: 0xd50
--  __DATA.__objc_ivar: 0x20c4
--  __DATA.__data: 0x98d8
-+  __AUTH_CONST.__auth_got: 0x2df0
-+  __AUTH.__objc_data: 0x3330
-+  __AUTH.__data: 0x1160
-+  __DATA.__objc_ivar: 0x20dc
-+  __DATA.__data: 0x9be8
-   __DATA.__objc_stublist: 0x10
--  __DATA.__bss: 0x33c0
-+  __DATA.__bss: 0x3ae0
-   __DATA.__common: 0xa1
-   __DATA_DIRTY.__objc_data: 0x4640
--  __DATA_DIRTY.__data: 0x12f0
-+  __DATA_DIRTY.__data: 0x12e8
-   __DATA_DIRTY.__bss: 0xb90
-   __DATA_DIRTY.__common: 0x48
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 
-   - /System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight
-   - /System/Library/Frameworks/CoreTelephony.framework/CoreTelephony
-   - /System/Library/Frameworks/CoreText.framework/CoreText
 +  - /System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-   - /System/Library/Frameworks/ImageIO.framework/ImageIO
 
-   - /System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication
-   - /System/Library/Frameworks/Network.framework/Network
-   - /System/Library/Frameworks/PencilKit.framework/PencilKit
 +  - /System/Library/Frameworks/PermissionKit.framework/PermissionKit
-   - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
-   - /System/Library/Frameworks/SafariServices.framework/SafariServices
-   - /System/Library/Frameworks/Security.framework/Security
 
-   - /System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers
-   - /System/Library/Frameworks/UserNotifications.framework/UserNotifications
-   - /System/Library/Frameworks/WebKit.framework/WebKit
 +  - /System/Library/Frameworks/_PermissionKit_UIKit.framework/_PermissionKit_UIKit
-   - /System/Library/PrivateFrameworks/AppStoreComponents.framework/AppStoreComponents
-   - /System/Library/PrivateFrameworks/AppSupport.framework/AppSupport
-   - /System/Library/PrivateFrameworks/AppleAccount.framework/AppleAccount
 
-   - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
-   - /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset
-   - /System/Library/PrivateFrameworks/MobileSafari.framework/MobileSafari
 +  - /System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit
-   - /System/Library/PrivateFrameworks/PassKitCore.framework/PassKitCore
-   - /System/Library/PrivateFrameworks/PasswordManagerUI.framework/PasswordManagerUI
-   - /System/Library/PrivateFrameworks/SafariCore.framework/SafariCore
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15889
--  Symbols:   32815
+-  Symbols:   22844
 -  CStrings:  3254
 +  Functions: 16267
-+  Symbols:   33020
++  Symbols:   23016
 +  CStrings:  3282
- 
 Symbols:
 + +[TabMenuProvider _menuElementsByReversingElements:]
 + +[TabMenuProvider addressFieldActionProviderForTab:dataSource:reversingForUpwardPresentation:]
@@ -386,47 +305,6 @@ Symbols:
 + _dlopen
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyAA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonG0Rd__lFQOyAA0I0VyACyACyACyACyAA4TextVAA14_PaddingLayoutVGAMGAA010_FlexFrameL0VGAQGG_AA014GlassProminentiG0VQo_AMGAMGAaDHPAxaDHPqd0__AaDHD3_AWHO_AmA0E8ModifierHPyHCHC_AmaZHPyHCHC
 + _get_witness_table 7SwiftUI6VStackVyAA12TupleContentVy012MobileSafariB026OBWelcomeControllerWrapper33_BF1EA923D948EF2471F46C3093C6ABEALLV_AF20AskForApprovalButtonAHLLVAA08ModifiedE0VyAMyAMyAA4ViewPAAE11buttonStyleyQrqd__AA09PrimitivevZ0Rd__lFQOyAA0V0VyAMyAMyAMyAA4TextVAA14_PaddingLayoutVGAWGAA16_FlexFrameLayoutVGG_AA05GlassvZ0VQo_AA30_EnvironmentKeyWritingModifierVyAA5ColorVSgGGAWGAWGQPGGAaNHPyHC
-+ _objc_msgSend$_addIdentifierPendingUpdate:
-+ _objc_msgSend$_contextMenuOpensUpward
-+ _objc_msgSend$_mainFrameNavigation
-+ _objc_msgSend$_menuElementsByReversingElements:
-+ _objc_msgSend$_setEdgeVisibility:
-+ _objc_msgSend$_updateAttachModeForDroppedItems:withClusterID:
-+ _objc_msgSend$accessibilityLabel
-+ _objc_msgSend$accountableHost
-+ _objc_msgSend$activate
-+ _objc_msgSend$addressFieldActionProviderForTab:dataSource:reversingForUpwardPresentation:
-+ _objc_msgSend$allowDownloadDialogWithDownload:accountableHost:navigatedWebView:allowViewAction:completionHandler:
-+ _objc_msgSend$bannerLayoutMargins
-+ _objc_msgSend$catalogViewControllerWallpaperDidUpdate:
-+ _objc_msgSend$dataForKey:
-+ _objc_msgSend$downloadBlockedDialogWithFileType:accountableHost:presentingURL:completionHandler:
-+ _objc_msgSend$dynamicBarAnimatorStateDidChange:
-+ _objc_msgSend$initWithThumbnailCacheDirectoryURL:metadataStore:
-+ _objc_msgSend$initWithTitle:detailText:icon:contentLayout:
-+ _objc_msgSend$initWithWebView:parentViewController:significantChangePresenter:
-+ _objc_msgSend$mainFrameNavigation
-+ _objc_msgSend$moveWebExtensionTab:beforeTab:
-+ _objc_msgSend$noteAppNavigationInWebView:category:
-+ _objc_msgSend$presentClusterOnboardingTipFrom:in:
-+ _objc_msgSend$pressured
-+ _objc_msgSend$promoCategoryForNavigationURL:
-+ _objc_msgSend$relatedTabsInfo
-+ _objc_msgSend$resetForWebView:
-+ _objc_msgSend$safari_accountableHostWithOpenerHost:hasUserGesture:
-+ _objc_msgSend$safari_setInteger:andNotifyForKey:
-+ _objc_msgSend$safari_supportsOpenInNewWindow
-+ _objc_msgSend$safari_topOriginHost
-+ _objc_msgSend$searchTextIsEmpty
-+ _objc_msgSend$setAccessibilityLabel:
-+ _objc_msgSend$setAccountableHost:
-+ _objc_msgSend$setIsAccessibilityElement:
-+ _objc_msgSend$setSearchTextIsEmpty:
-+ _objc_msgSend$shouldPromoteRecentSearchesStartPageModuleBelowFavorites
-+ _objc_msgSend$sourceClusterID
-+ _objc_msgSend$unifiedBarExtendsIntoUnsafeArea
-+ _objc_msgSend$userDidOpenRelatedTabsViewWithCompletion:
-+ _objc_msgSend$webViewShouldIgnoreTopUnsafeArea
 + _swift_getAssociatedConformanceWitness
 + _swift_getErrorValue
 + _swift_weakDestroy
@@ -642,14 +520,6 @@ Symbols:
 - ___destroy_helper_block_ea8_32c93_ZTSKZ80-[BrowserController windowScene:performActionForShortcutItem:completionHandler:]E3$_3
 - ___swift_closure_destructor.239Tm
 - ___swift_closure_destructor.254Tm
-- _objc_msgSend$_updateAttachModeForDroppedItems:inSection:
-- _objc_msgSend$allowDownloadDialogWithDownload:initiatingSecurityOrigin:navigatedWebView:allowViewAction:completionHandler:
-- _objc_msgSend$downloadBlockedDialogWithFileType:initiatingSecurityOrigin:presentingURL:completionHandler:
-- _objc_msgSend$initWithWebView:parentViewController:
-- _objc_msgSend$isRecentSearchesInStartPageEnabled
-- _objc_msgSend$securityOrigin
-- _objc_msgSend$setSafari_overrideUserInterfaceStyle:
-- _objc_msgSend$shouldPromoteRecentSearchesStartPageModuleBellowFavorites
 CStrings:
 + "%@, %@"
 + ".pendingApproval"

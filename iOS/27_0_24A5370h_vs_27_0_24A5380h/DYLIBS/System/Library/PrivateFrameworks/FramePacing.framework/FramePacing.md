@@ -2,79 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/FramePacing.framework/FramePacing`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x263ac` | `0x26ad0` | **`+0x724`** |
+| `__TEXT.__cstring` | `0x2fae` | `0x30aa` | **`+0xfc`** |
+| `__AUTH_CONST.__objc_const` | `0x2ff0` | `0x2fa8` | **`-0x48`** |
+| `__DATA_CONST.__objc_selrefs` | `0xc58` | `0xc90` | **`+0x38`** |
+| `__AUTH_CONST.__cfstring` | `0x1320` | `0x1340` | **`+0x20`** |
+| `__AUTH_CONST.__const` | `0x580` | `0x5a0` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x158` | `0x170` | **`+0x18`** |
+| `__TEXT.__gcc_except_tab` | `0xb88` | `0xb70` | **`-0x18`** |
+| `__DATA_DIRTY.__bss` | `0x268` | `0x278` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x1588` | `0x1578` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0xb48` | `0xb38` | **`-0x10`** |
+| `__DATA.__objc_ivar` | `0x330` | `0x328` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x263ac
--  __TEXT.__objc_methlist: 0x1588
-+  __TEXT.__text: 0x26ad0
-+  __TEXT.__objc_methlist: 0x1578
-   __TEXT.__const: 0x1e0
--  __TEXT.__gcc_except_tab: 0xb88
--  __TEXT.__cstring: 0x2fae
-+  __TEXT.__gcc_except_tab: 0xb70
-+  __TEXT.__cstring: 0x30aa
-   __TEXT.__oslogstring: 0xd675
--  __TEXT.__unwind_info: 0xb48
-+  __TEXT.__unwind_info: 0xb38
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-5.0.19.0.0
++5.0.22.0.0
 
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0xc58
-+  __DATA_CONST.__objc_selrefs: 0xc90
-   __DATA_CONST.__objc_superrefs: 0x98
-   __DATA_CONST.__objc_arraydata: 0x70
--  __DATA_CONST.__got: 0x158
--  __AUTH_CONST.__const: 0x580
--  __AUTH_CONST.__cfstring: 0x1320
--  __AUTH_CONST.__objc_const: 0x2ff0
-+  __DATA_CONST.__got: 0x170
-+  __AUTH_CONST.__const: 0x5a0
-+  __AUTH_CONST.__cfstring: 0x1340
-+  __AUTH_CONST.__objc_const: 0x2fa8
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x18
-   __AUTH_CONST.__objc_arrayobj: 0x120
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0x2d0
--  __DATA.__objc_ivar: 0x330
-+  __DATA.__objc_ivar: 0x328
-   __DATA.__data: 0x288
-   __DATA.__bss: 0x18
-   __DATA.__common: 0x40
-   __DATA_DIRTY.__objc_data: 0x3c0
-   __DATA_DIRTY.__data: 0x4
--  __DATA_DIRTY.__bss: 0x268
-+  __DATA_DIRTY.__bss: 0x278
-   __DATA_DIRTY.__common: 0x80
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 732
--  Symbols:   2467
--  CStrings:  738
-+  Symbols:   2477
-+  CStrings:  751
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+-  Symbols:   1440
+-  CStrings:  586
++  Symbols:   1442
++  CStrings:  598
 Symbols:
 + -[FPMTLMetricsMTLLayerTracking _pruneStaleDrawableStates]
 + GCC_except_table100
@@ -92,14 +47,6 @@ Symbols:
 + _fopen
 + _fprintf
 + _fwrite
-+ _objc_msgSend$_pruneStaleDrawableStates
-+ _objc_msgSend$allKeys
-+ _objc_msgSend$array
-+ _objc_msgSend$defaultManager
-+ _objc_msgSend$fileExistsAtPath:
-+ _objc_msgSend$firstObject
-+ _objc_msgSend$removeItemAtPath:error:
-+ _objc_msgSend$removeObjectsForKeys:
 + _setlinebuf
 - -[FPMTLMetricsServiceInternal metalGetEncoderCounterOffset:encoderTraceId:]
 - GCC_except_table102
@@ -131,5 +78,4 @@ CStrings:
 + "vertex"
 + "w"
 - "com.apple.dock"
-
 ```

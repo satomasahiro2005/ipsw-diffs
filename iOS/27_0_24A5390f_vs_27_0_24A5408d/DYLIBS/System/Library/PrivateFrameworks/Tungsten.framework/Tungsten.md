@@ -2,63 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/Tungsten.framework/Tungsten`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfcb9c` | `0xfcecc` | **`+0x330`** |
+| `__AUTH_CONST.__objc_const` | `0x22cd0` | `0x22d20` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x11c90` | `0x11ca8` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7f28` | `0x7f38` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x19f0` | `0x19f8` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x3504` | `0x350c` | **`+0x8`** |
+| `__TEXT.__cstring` | `0xd782` | `0xd784` | **`+0x2`** |
+
+### Other Changes
+
 ```diff
 
 -910.33.102.0.0
--  __TEXT.__text: 0xfcb9c
--  __TEXT.__objc_methlist: 0x11c90
 +912.0.111.0.0
-+  __TEXT.__text: 0xfcecc
-+  __TEXT.__objc_methlist: 0x11ca8
-   __TEXT.__const: 0x39c0
-   __TEXT.__constg_swiftt: 0x244
-   __TEXT.__swift5_typeref: 0x125e
 
-   __TEXT.__swift5_types: 0x1c
-   __TEXT.__swift5_fieldmd: 0x7c8
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__cstring: 0xd782
--  __TEXT.__gcc_except_tab: 0x3504
-+  __TEXT.__cstring: 0xd784
-+  __TEXT.__gcc_except_tab: 0x350c
-   __TEXT.__oslogstring: 0x25bb
-   __TEXT.__ustring: 0x3c
-   __TEXT.__unwind_info: 0x4658
-
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x2d0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7f28
-+  __DATA_CONST.__objc_selrefs: 0x7f38
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__objc_superrefs: 0x6d0
-   __DATA_CONST.__objc_arraydata: 0xb18
-   __DATA_CONST.__got: 0xe70
-   __AUTH_CONST.__const: 0xd98
-   __AUTH_CONST.__cfstring: 0x7d00
--  __AUTH_CONST.__objc_const: 0x22cd0
-+  __AUTH_CONST.__objc_const: 0x22d20
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x2010
-   __AUTH_CONST.__objc_arrayobj: 0x78
-   __AUTH_CONST.__auth_got: 0x12a8
-   __AUTH.__objc_data: 0x4fd0
-   __AUTH.__data: 0x338
--  __DATA.__objc_ivar: 0x19f0
-+  __DATA.__objc_ivar: 0x19f8
-   __DATA.__data: 0x2768
-   __DATA.__bss: 0x1ba0
-   __DATA.__common: 0x20
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6753
--  Symbols:   15057
+-  Symbols:   11639
 +  Functions: 6755
-+  Symbols:   15063
-   CStrings:  1893
- 
++  Symbols:   11643
 Symbols:
 + -[PXGAssetImageCache _cacheImage:orientation:isDegraded:forRequestID:retainPastCancellation:outCGImage:]
 + -[PXGAssetImageCache cacheCGImage:orientation:isDegraded:forRequestID:retainPastCancellation:]
@@ -186,10 +152,6 @@ Symbols:
 + _OBJC_IVAR_$__PXGAssetImageCacheEntry._retainPastCancellation
 + ___104-[PXGAssetImageCache _cacheImage:orientation:isDegraded:forRequestID:retainPastCancellation:outCGImage:]_block_invoke
 + ___block_descriptor_66_e8_32s40r_e5_v8?0ls32l8r40l8
-+ _objc_msgSend$_cacheImage:orientation:isDegraded:forRequestID:retainPastCancellation:outCGImage:
-+ _objc_msgSend$cacheCGImage:orientation:isDegraded:forRequestID:retainPastCancellation:
-+ _objc_msgSend$retainPastCancellation
-+ _objc_msgSend$setRetainPastCancellation:
 - -[PXGAssetImageCache _cacheImage:orientation:isDegraded:forRequestID:outCGImage:]
 - -[PXGAssetImageCache cacheCGImage:orientation:isDegraded:forRequestID:]
 - GCC_except_table1535
@@ -312,6 +274,4 @@ Symbols:
 - GCC_except_table5803
 - ___81-[PXGAssetImageCache _cacheImage:orientation:isDegraded:forRequestID:outCGImage:]_block_invoke
 - ___block_descriptor_65_e8_32s40r_e5_v8?0ls32l8r40l8
-- _objc_msgSend$_cacheImage:orientation:isDegraded:forRequestID:outCGImage:
-- _objc_msgSend$cacheCGImage:orientation:isDegraded:forRequestID:
 ```

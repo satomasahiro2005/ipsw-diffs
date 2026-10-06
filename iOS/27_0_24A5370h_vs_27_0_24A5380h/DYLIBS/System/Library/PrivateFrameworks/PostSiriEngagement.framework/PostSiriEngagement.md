@@ -2,63 +2,25 @@
 
 > `/System/Library/PrivateFrameworks/PostSiriEngagement.framework/PostSiriEngagement`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__data` | `0x1d08` | `0x2008` | **`+0x300`** |
+| `__AUTH.__data` | `0x15d8` | `0x1328` | **`-0x2b0`** |
+| `__TEXT.__text` | `0x992e4` | `0x99210` | **`-0xd4`** |
+| `__DATA.__data` | `0x880` | `0x828` | **`-0x58`** |
+| `__AUTH_CONST.__auth_got` | `0xec0` | `0xeb8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x992e4
-+  __TEXT.__text: 0x99210
-   __TEXT.__objc_methlist: 0x1ec
-   __TEXT.__const: 0x42b8
-   __TEXT.__cstring: 0x2a13
+-3600.40.1.0.0
++3600.43.1.0.0
 
-   __AUTH_CONST.__cfstring: 0x80
-   __AUTH_CONST.__objc_const: 0x2488
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0xec0
-+  __AUTH_CONST.__auth_got: 0xeb8
-   __AUTH.__objc_data: 0xf0
--  __AUTH.__data: 0x15d8
--  __DATA.__data: 0x880
-+  __AUTH.__data: 0x1328
-+  __DATA.__data: 0x828
-   __DATA.__bss: 0x4410
-   __DATA.__common: 0x40
-   __DATA_DIRTY.__objc_data: 0x230
--  __DATA_DIRTY.__data: 0x1d08
-+  __DATA_DIRTY.__data: 0x2008
-   __DATA_DIRTY.__bss: 0x510
-   __DATA_DIRTY.__common: 0x68
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 2816
--  Symbols:   8598
-+  Symbols:   8597
-   CStrings:  354
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+-  Symbols:   6730
++  Symbols:   6729
 Symbols:
 - _swift_willThrowTypedImpl
 Functions:
@@ -87,5 +49,4 @@ Functions:
 ~ _$ss6_merge3low3mid4high6buffer2bySbSpyxG_A3GSbx_xtKXEtKlF18PostSiriEngagement14TranscriptTaskC_Tg504$s18gh12Engagement23j62SignalFactoryC05buildD5Tasks15siriUISessionId8bmEventsSayAA0D4k5CGSS_V59So018BMIntelligenceFlowD15DatastreamEventCGtFSbAH_AHtXEfU9_Tf1nnnnc_n : 1232 -> 1220
 ~ _$ss6_merge3low3mid4high6buffer2bySbSpyxG_A3GSbx_xtKXEtKlF18PostSiriEngagement14TranscriptStepC_Tg504$s18gh12Engagement23j71SignalFactoryC05buildD5Tasks15siriUISessionId8bmEventsSayAA0D4TaskCGSS_v47So018BMIntelligenceFlowD15DatastreamEventCGtFSbwxK11C_ANtXEfU5_Tf1nnnnc_nTm : 1232 -> 1220
 ~ _$ss6_merge3low3mid4high6buffer2bySbSpyxG_A3GSbx_xtKXEtKlF18PostSiriEngagement32ExtendedBMHomeKitClientAccessoryV_Tg504$s18gh16Engagement36Homeln94ControlSignalFactoryC27processBiomeEventsToSignals02bmL013siriUISessionAA10PSESignalsVSayAA014j8BMHomee6M28F0VG_AA0bQ0VtFSbAJ_AJtXEfU5_Tf1nnnnc_nTm : 544 -> 540
-
 ```

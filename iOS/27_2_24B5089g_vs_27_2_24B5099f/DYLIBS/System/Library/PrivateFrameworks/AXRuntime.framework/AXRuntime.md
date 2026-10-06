@@ -2,49 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/AXRuntime.framework/AXRuntime`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4e830` | `0x4ea04` | **`+0x1d4`** |
+| `__TEXT.__gcc_except_tab` | `0xb7c` | `0xbbc` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x1298` | `0x12c0` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x13b0` | `0x13c8` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x395c` | `0x396c` | **`+0x10`** |
+| `__DATA.__bss` | `0x308` | `0x310` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2440` | `0x2448` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3245.8.2.0.0
--  __TEXT.__text: 0x4cf4c
--  __TEXT.__objc_methlist: 0x395c
 +3245.8.4.2.0
-+  __TEXT.__text: 0x4d108
-+  __TEXT.__objc_methlist: 0x396c
-   __TEXT.__const: 0x458
-   __TEXT.__dlopen_cstrs: 0x303
--  __TEXT.__gcc_except_tab: 0xb7c
-+  __TEXT.__gcc_except_tab: 0xbbc
-   __TEXT.__oslogstring: 0x1792
-   __TEXT.__cstring: 0x5d92
-   __TEXT.__ustring: 0x4
--  __TEXT.__unwind_info: 0x17a0
-+  __TEXT.__unwind_info: 0x17b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1298
-+  __DATA_CONST.__const: 0x12c0
-   __DATA_CONST.__objc_classlist: 0xe8
-   __DATA_CONST.__objc_catlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2440
-+  __DATA_CONST.__objc_selrefs: 0x2448
-   __DATA_CONST.__objc_superrefs: 0xa8
-   __DATA_CONST.__objc_arraydata: 0xc0
-   __DATA_CONST.__got: 0x2e0
 
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1654
 -  Symbols:   3258
 +  Functions: 1659
 +  Symbols:   3263
-   CStrings:  963
- 
 Symbols:
 + +[AXUIElement uiElementAtCoordinate:forApplication:contextId:displayId:allowSameProcess:coordinateIsInHostedCoordinates:hitTestType:]
 + GCC_except_table1184

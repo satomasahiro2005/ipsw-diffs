@@ -2,15 +2,14 @@
 
 > `/System/Library/CoreServices/RawCameraSupport.bundle/RawCameraSupport`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -1821.40.4.0.0
 +1821.40.5.0.0
-   __TEXT.__text: 0x0
-   __TEXT.__const: 0x50
-   - /usr/lib/libSystem.B.dylib
 ```

@@ -2,77 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/AXMediaUtilities.framework/AXMediaUtilities`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd6490` | `0xd6f80` | **`+0xaf0`** |
+| `__TEXT.__oslogstring` | `0x5529` | `0x5678` | **`+0x14f`** |
+| `__TEXT.__gcc_except_tab` | `0x58d0` | `0x5960` | **`+0x90`** |
+| `__AUTH_CONST.__objc_const` | `0x14448` | `0x144a8` | **`+0x60`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6300` | `0x6340` | **`+0x40`** |
+| `__TEXT.__objc_methlist` | `0xb61c` | `0xb644` | **`+0x28`** |
+| `__TEXT.__cstring` | `0xa772` | `0xa793` | **`+0x21`** |
+| `__AUTH_CONST.__cfstring` | `0xcdc0` | `0xcde0` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x35a0` | `0x35b8` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x418` | `0x428` | **`+0x10`** |
+| `__TEXT.__const` | `0x168c` | `0x169c` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0xed0` | `0xed8` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0xe90` | `0xe98` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -186.0.0.0.0
--  __TEXT.__text: 0xd2890
--  __TEXT.__objc_methlist: 0xb61c
--  __TEXT.__const: 0x168c
 +187.3.0.0.0
-+  __TEXT.__text: 0xd3364
-+  __TEXT.__objc_methlist: 0xb644
-+  __TEXT.__const: 0x169c
-   __TEXT.__dlopen_cstrs: 0xc72
-   __TEXT.__swift5_typeref: 0x2f0
--  __TEXT.__cstring: 0xa772
-+  __TEXT.__cstring: 0xa793
-   __TEXT.__swift5_reflstr: 0x25d
-   __TEXT.__swift5_assocty: 0xc0
-   __TEXT.__constg_swiftt: 0x3f8
 
-   __TEXT.__swift5_builtin: 0x50
-   __TEXT.__swift5_proto: 0x8c
-   __TEXT.__swift5_types: 0x30
--  __TEXT.__gcc_except_tab: 0x58d0
--  __TEXT.__oslogstring: 0x5529
-+  __TEXT.__gcc_except_tab: 0x5960
-+  __TEXT.__oslogstring: 0x5678
-   __TEXT.__ustring: 0x422
--  __TEXT.__unwind_info: 0x4058
-+  __TEXT.__unwind_info: 0x4078
-   __TEXT.__eh_frame: 0x390
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_protolist: 0xd0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6300
-+  __DATA_CONST.__objc_selrefs: 0x6340
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x418
-+  __DATA_CONST.__objc_superrefs: 0x428
-   __DATA_CONST.__objc_arraydata: 0x6b8
--  __DATA_CONST.__got: 0xe90
-+  __DATA_CONST.__got: 0xe98
-   __AUTH_CONST.__const: 0x1d28
--  __AUTH_CONST.__cfstring: 0xcdc0
--  __AUTH_CONST.__objc_const: 0x14448
-+  __AUTH_CONST.__cfstring: 0xcde0
-+  __AUTH_CONST.__objc_const: 0x144a8
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0xab0
-   __AUTH_CONST.__objc_doubleobj: 0x290
-
-   __AUTH_CONST.__auth_got: 0xf08
-   __AUTH.__objc_data: 0x3db0
-   __AUTH.__data: 0x78
--  __DATA.__objc_ivar: 0xed0
-+  __DATA.__objc_ivar: 0xed8
-   __DATA.__data: 0xe38
-   __DATA.__common: 0x80
-   __DATA_DIRTY.__objc_data: 0x2d0
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4764
--  Symbols:   11231
+-  Symbols:   8774
 -  CStrings:  2513
 +  Functions: 4772
-+  Symbols:   11248
++  Symbols:   8783
 +  CStrings:  2522
- 
 Symbols:
 + +[AXMPhotoAssetData systemPhotoLibraryURL]
 + -[AXMVisionEngineCache purgeCount]
@@ -321,16 +281,6 @@ Symbols:
 + ___34-[AXMVisionEngineCache purgeCount]_block_invoke
 + ___58-[AXMVisionEngineCache setResult:forKey:ifNotPurgedSince:]_block_invoke
 + ___block_descriptor_88_e8_32s40s48r_e18_v16?0"AXMetric"8ls32l8s40l8r48l8
-+ _objc_msgSend$cachePurgeCountWhenScheduled
-+ _objc_msgSend$initWithPixelBuffer:
-+ _objc_msgSend$localizedDescription
-+ _objc_msgSend$purgeCount
-+ _objc_msgSend$setCachePurgeCountWhenScheduled:
-+ _objc_msgSend$setColorSpace:
-+ _objc_msgSend$setResult:forKey:ifNotPurgedSince:
-+ _objc_msgSend$startTaskToRender:fromRect:toDestination:atPoint:error:
-+ _objc_msgSend$systemPhotoLibraryURL
-+ _objc_msgSend$waitUntilCompletedAndReturnError:
 - -[AXMVisionEngineCache setResult:forKey:]
 - GCC_except_table1007
 - GCC_except_table1008
@@ -569,8 +519,6 @@ Symbols:
 - GCC_except_table998
 - ___41-[AXMVisionEngineCache setResult:forKey:]_block_invoke
 - ___block_descriptor_80_e8_32s40s_e18_v16?0"AXMetric"8ls32l8s40l8
-- _objc_msgSend$render:toCVPixelBuffer:bounds:colorSpace:
-- _objc_msgSend$setResult:forKey:
 CStrings:
 + "%{public}@"
 + "AXMPhotoAssetData: PHPhotoLibrary unavailable - no system photo library URL"

@@ -2,21 +2,22 @@
 
 > `/usr/sbin/racoon`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x62f28` | `0x62f40` | **`+0x18`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 1130.0.0.0.0
--  __TEXT.__text: 0x62f28
-+  __TEXT.__text: 0x62f40
-   __TEXT.__auth_stubs: 0x1060
-   __TEXT.__const: 0x70ea
-   __TEXT.__oslogstring: 0xc479
+```text
 Functions:
 ~ sub_100018e2c : 856 -> 860
 ~ sub_100023ad8 -> sub_100023adc : 1216 -> 1220

@@ -2,51 +2,50 @@
 
 > `com.apple.driver.AppleGameControllerPersonality`
 
-```diff
+### Section Size Changes
 
- 14.0.24.0.0
-   __TEXT.__cstring: 0x2dc
-   __TEXT.__os_log: 0x17e
--  __TEXT_EXEC.__text: 0x26a4
-+  __TEXT_EXEC.__text: 0x2734
-   __TEXT_EXEC.__auth_stubs: 0x150
-   __DATA.__data: 0xc8
-   __DATA.__common: 0xb0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x26a4` | `0x2734` | **`+0x90`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_fffffe0008b9d510 -> sub_fffffe0008bf1c10 : 72 -> 76
-~ sub_fffffe0008b9d560 -> sub_fffffe0008bf1c64 : 52 -> 56
-~ sub_fffffe0008b9d5a4 -> sub_fffffe0008bf1cac : 68 -> 72
-~ sub_fffffe0008b9d610 -> sub_fffffe0008bf1d1c : 104 -> 108
-~ sub_fffffe0008b9d68c -> sub_fffffe0008bf1d9c : 88 -> 92
-~ sub_fffffe0008b9d6ec -> sub_fffffe0008bf1e00 : 80 -> 84
-~ sub_fffffe0008b9d74c -> sub_fffffe0008bf1e64 : 72 -> 76
-~ sub_fffffe0008b9d79c -> sub_fffffe0008bf1eb8 : 52 -> 56
-~ sub_fffffe0008b9d7e0 -> sub_fffffe0008bf1f00 : 68 -> 72
-~ sub_fffffe0008b9d84c -> sub_fffffe0008bf1f70 : 104 -> 108
-~ sub_fffffe0008b9d8c8 -> sub_fffffe0008bf1ff0 : 88 -> 92
-~ sub_fffffe0008b9d920 -> sub_fffffe0008bf204c : 164 -> 168
-~ sub_fffffe0008b9d9c4 -> sub_fffffe0008bf20f4 : 172 -> 176
-~ sub_fffffe0008b9da78 -> sub_fffffe0008bf21ac : 80 -> 84
-~ sub_fffffe0008b9db04 -> sub_fffffe0008bf223c : 72 -> 76
-~ sub_fffffe0008b9db54 -> sub_fffffe0008bf2290 : 52 -> 56
-~ sub_fffffe0008b9db98 -> sub_fffffe0008bf22d8 : 68 -> 72
-~ sub_fffffe0008b9dc04 -> sub_fffffe0008bf2348 : 104 -> 108
-~ sub_fffffe0008b9dc80 -> sub_fffffe0008bf23c8 : 88 -> 92
-~ sub_fffffe0008b9dd0c -> sub_fffffe0008bf2458 : 420 -> 424
-~ sub_fffffe0008b9deb8 -> sub_fffffe0008bf2608 : 80 -> 84
-~ sub_fffffe0008b9df18 -> sub_fffffe0008bf266c : 72 -> 76
-~ sub_fffffe0008b9df68 -> sub_fffffe0008bf26c0 : 52 -> 56
-~ sub_fffffe0008b9dfac -> sub_fffffe0008bf2708 : 68 -> 72
-~ sub_fffffe0008b9e018 -> sub_fffffe0008bf2778 : 104 -> 108
-~ sub_fffffe0008b9e094 -> sub_fffffe0008bf27f8 : 88 -> 92
-~ sub_fffffe0008b9e0f4 -> sub_fffffe0008bf285c : 80 -> 84
+~ sub_fffffff008bb9190 -> sub_fffffff008c0aad0 : 72 -> 76
+~ sub_fffffff008bb91e0 -> sub_fffffff008c0ab24 : 52 -> 56
+~ sub_fffffff008bb9224 -> sub_fffffff008c0ab6c : 68 -> 72
+~ sub_fffffff008bb9290 -> sub_fffffff008c0abdc : 104 -> 108
+~ sub_fffffff008bb930c -> sub_fffffff008c0ac5c : 88 -> 92
+~ sub_fffffff008bb936c -> sub_fffffff008c0acc0 : 80 -> 84
+~ sub_fffffff008bb93cc -> sub_fffffff008c0ad24 : 72 -> 76
+~ sub_fffffff008bb941c -> sub_fffffff008c0ad78 : 52 -> 56
+~ sub_fffffff008bb9460 -> sub_fffffff008c0adc0 : 68 -> 72
+~ sub_fffffff008bb94cc -> sub_fffffff008c0ae30 : 104 -> 108
+~ sub_fffffff008bb9548 -> sub_fffffff008c0aeb0 : 88 -> 92
+~ sub_fffffff008bb95a0 -> sub_fffffff008c0af0c : 164 -> 168
+~ __ZN32AppleGCHIDProviderPropertyMerger15mergePropertiesEP9IOServiceP12OSDictionary : 172 -> 176
+~ sub_fffffff008bb96f8 -> sub_fffffff008c0b06c : 80 -> 84
+~ sub_fffffff008bb9784 -> sub_fffffff008c0b0fc : 72 -> 76
+~ sub_fffffff008bb97d4 -> sub_fffffff008c0b150 : 52 -> 56
+~ sub_fffffff008bb9818 -> sub_fffffff008c0b198 : 68 -> 72
+~ sub_fffffff008bb9884 -> sub_fffffff008c0b208 : 104 -> 108
+~ sub_fffffff008bb9900 -> sub_fffffff008c0b288 : 88 -> 92
+~ __ZN30SteamControllerUserEventDriver17handleInputReportEyjPvm : 420 -> 424
+~ sub_fffffff008bb9b38 -> sub_fffffff008c0b4c8 : 80 -> 84
+~ sub_fffffff008bb9b98 -> sub_fffffff008c0b52c : 72 -> 76
+~ sub_fffffff008bb9be8 -> sub_fffffff008c0b580 : 52 -> 56
+~ sub_fffffff008bb9c2c -> sub_fffffff008c0b5c8 : 68 -> 72
+~ sub_fffffff008bb9c98 -> sub_fffffff008c0b638 : 104 -> 108
+~ sub_fffffff008bb9d14 -> sub_fffffff008c0b6b8 : 88 -> 92
+~ sub_fffffff008bb9d74 -> sub_fffffff008c0b71c : 80 -> 84
 ~ __ZN32AppleGCHIDProviderPropertyMerger5probeEP9IOServicePi : 676 -> 680
-~ sub_fffffe0008b9e488 -> sub_fffffe0008bf2bf8 : 856 -> 860
-~ sub_fffffe0008b9e7e0 -> sub_fffffe0008bf2f54 : 584 -> 588
+~ sub_fffffff008bba108 -> sub_fffffff008c0bab8 : 856 -> 860
+~ sub_fffffff008bba460 -> sub_fffffff008c0be14 : 584 -> 588
 ~ __ZN25AppleGCHIDUserEventDriver5probeEP9IOServicePi : 1276 -> 1280
 ~ __ZN25AppleGCHIDUserEventDriver11handleStartEP9IOService : 308 -> 312
-~ sub_fffffe0008b9f058 -> sub_fffffe0008bf37d8 : 232 -> 236
-~ sub_fffffe0008b9f140 -> sub_fffffe0008bf38c4 : 460 -> 464
-~ sub_fffffe0008b9f30c -> sub_fffffe0008bf3a94 : 316 -> 320
+~ __ZN30SteamControllerUserEventDriver5probeEP9IOServicePi : 232 -> 236
+~ __ZN30SteamControllerUserEventDriver11handleStartEP9IOService : 460 -> 464
+~ sub_fffffff008bbaf8c -> sub_fffffff008c0c954 : 316 -> 320
 ~ __ZN37AppleGCIOHIDEventDriverPropertyMerger5probeEP9IOServicePi : 1900 -> 1904
 ```

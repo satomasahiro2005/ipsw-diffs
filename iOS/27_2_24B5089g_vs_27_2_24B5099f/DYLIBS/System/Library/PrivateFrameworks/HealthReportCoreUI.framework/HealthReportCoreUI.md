@@ -2,92 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/HealthReportCoreUI.framework/HealthReportCoreUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14d30c` | `0x164f6c` | **`+0x17c60`** |
+| `__DATA.__data` | `0x5158` | `0x5a98` | **`+0x940`** |
+| `__TEXT.__swift5_typeref` | `0x3d4a` | `0x40e0` | **`+0x396`** |
+| `__TEXT.__unwind_info` | `0x4468` | `0x4778` | **`+0x310`** |
+| `__TEXT.__cstring` | `0x3fa7` | `0x42a7` | **`+0x300`** |
+| `__AUTH_CONST.__const` | `0x7c30` | `0x7a28` | **`-0x208`** |
+| `__AUTH_CONST.__auth_got` | `0x32c0` | `0x34c0` | **`+0x200`** |
+| `__TEXT.__swift5_reflstr` | `0x2648` | `0x27e8` | **`+0x1a0`** |
+| `__TEXT.__eh_frame` | `0x3cac` | `0x3e3c` | **`+0x190`** |
+| `__DATA.__bss` | `0xa1c8` | `0xa348` | **`+0x180`** |
+| `__AUTH_CONST.__objc_const` | `0x1650` | `0x1798` | **`+0x148`** |
+| `__AUTH.__data` | `0x3098` | `0x31c8` | **`+0x130`** |
+| `__TEXT.__swift5_fieldmd` | `0x2efc` | `0x2fe8` | **`+0xec`** |
+| `__DATA_CONST.__got` | `0x1b80` | `0x1c68` | **`+0xe8`** |
+| `__TEXT.__const` | `0x9454` | `0x9374` | **`-0xe0`** |
+| `__TEXT.__constg_swiftt` | `0x3a28` | `0x39b0` | **`-0x78`** |
+| `__AUTH.__objc_data` | `0x5a8` | `0x5f8` | **`+0x50`** |
+| `__TEXT.__swift5_capture` | `0x183c` | `0x180c` | **`-0x30`** |
+| `__DATA_CONST.__const` | `0x2f8` | `0x2d8` | **`-0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x340` | `0x360` | **`+0x20`** |
+| `__TEXT.__oslogstring` | `0xeec` | `0xecc` | **`-0x20`** |
+| `__DATA.__common` | `0x3e0` | `0x3f0` | **`+0x10`** |
+| `__TEXT.__swift5_assocty` | `0xb18` | `0xb28` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x510` | `0x51c` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0xb0` | `0xb8` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x32c` | `0x328` | **`-0x4`** |
+| `__TEXT.__swift_as_cont` | `0x288` | `0x28c` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0x10c` | `0x110` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x124` | `0x128` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.45.2.4
--  __TEXT.__text: 0x141d44
 +7027.1.54.2.3
-+  __TEXT.__text: 0x158f1c
-   __TEXT.__objc_methlist: 0xd0
--  __TEXT.__const: 0x9454
--  __TEXT.__swift5_typeref: 0x3d4a
--  __TEXT.__cstring: 0x3fa7
--  __TEXT.__constg_swiftt: 0x3a28
--  __TEXT.__swift5_reflstr: 0x2648
--  __TEXT.__swift5_fieldmd: 0x2efc
-+  __TEXT.__const: 0x9374
-+  __TEXT.__cstring: 0x42a7
-+  __TEXT.__swift5_typeref: 0x40e0
-+  __TEXT.__constg_swiftt: 0x39b0
-+  __TEXT.__swift5_fieldmd: 0x2fe8
-+  __TEXT.__swift5_reflstr: 0x27e8
-   __TEXT.__swift5_builtin: 0xf0
--  __TEXT.__swift5_assocty: 0xb18
--  __TEXT.__swift5_capture: 0x183c
--  __TEXT.__swift5_proto: 0x510
--  __TEXT.__swift5_types: 0x32c
--  __TEXT.__oslogstring: 0xeec
-+  __TEXT.__swift5_assocty: 0xb28
-+  __TEXT.__swift5_capture: 0x180c
-+  __TEXT.__swift5_proto: 0x51c
-+  __TEXT.__swift5_types: 0x328
-+  __TEXT.__oslogstring: 0xecc
-   __TEXT.__swift5_protos: 0x50
-   __TEXT.__swift5_mpenum: 0x28
--  __TEXT.__swift_as_entry: 0x10c
--  __TEXT.__swift_as_ret: 0x124
--  __TEXT.__swift_as_cont: 0x288
--  __TEXT.__unwind_info: 0x57f8
--  __TEXT.__eh_frame: 0x3cac
-+  __TEXT.__swift_as_entry: 0x110
-+  __TEXT.__swift_as_ret: 0x128
-+  __TEXT.__swift_as_cont: 0x28c
-+  __TEXT.__unwind_info: 0x5bc8
-+  __TEXT.__eh_frame: 0x3e44
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2f8
--  __DATA_CONST.__objc_classlist: 0xb0
-+  __DATA_CONST.__const: 0x2d8
-+  __DATA_CONST.__objc_classlist: 0xb8
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x340
-+  __DATA_CONST.__objc_selrefs: 0x360
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__got: 0x1b80
--  __AUTH_CONST.__const: 0x7c30
--  __AUTH_CONST.__objc_const: 0x1650
--  __AUTH_CONST.__auth_got: 0x32c0
--  __AUTH.__objc_data: 0x5a8
--  __AUTH.__data: 0x3098
--  __DATA.__data: 0x5158
--  __DATA.__common: 0x3e0
-+  __DATA_CONST.__got: 0x1c68
-+  __AUTH_CONST.__const: 0x7a28
-+  __AUTH_CONST.__objc_const: 0x1798
-+  __AUTH_CONST.__auth_got: 0x34c0
-+  __AUTH.__objc_data: 0x5f8
-+  __AUTH.__data: 0x31c8
-+  __DATA.__data: 0x5a98
-+  __DATA.__common: 0x3f0
-   - /System/Library/Frameworks/Charts.framework/Charts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6270
 -  Symbols:   1433
 -  CStrings:  445
 +  Functions: 6544
 +  Symbols:   1436
 +  CStrings:  454
- 
 Symbols:
 + __DATA__TtC18HealthReportCoreUI23ExpiringExperienceState
 + __DATA__TtC18HealthReportCoreUI29ClassificationDetailViewModel

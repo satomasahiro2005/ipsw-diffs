@@ -2,11 +2,13 @@
 
 > `/System/Library/PrivateFrameworks/HealthRecordServices.framework/XPCServices/com.apple.health.records.legacy-ingestion.xpc/com.apple.health.records.legacy-ingestion`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
+- `__DATA_CONST.__const`
 - `__TEXT.__objc_methlist`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
+
+### Other Changes
 
 ```text
 Functions:

@@ -2,17 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/iCloudSubscriptionOptimizerClient.framework/iCloudSubscriptionOptimizerClient`
 
-```diff
+### Section Size Changes
 
- 71.0.0.0.0
--  __TEXT.__text: 0xe5d4
-+  __TEXT.__text: 0xe604
-   __TEXT.__objc_methlist: 0x450
-   __TEXT.__const: 0x6f0
-   __TEXT.__cstring: 0xb48
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe5d4` | `0xe604` | **`+0x30`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2b92cea20 -> sub_2ba130a20 : 984 -> 992
-~ sub_2b92cedf8 -> sub_2ba130e00 : 3884 -> 3916
-~ sub_2b92cfd24 -> sub_2ba131d4c : 648 -> 652
-~ sub_2b92d11ac -> sub_2ba1331d8 : 968 -> 972
+~ sub_2b91baa20 -> sub_2ba00ba20 : 984 -> 992
+~ sub_2b91badf8 -> sub_2ba00be00 : 3884 -> 3916
+~ sub_2b91bbd24 -> sub_2ba00cd4c : 648 -> 652
+~ sub_2b91bd1ac -> sub_2ba00e1d8 : 968 -> 972
 ```

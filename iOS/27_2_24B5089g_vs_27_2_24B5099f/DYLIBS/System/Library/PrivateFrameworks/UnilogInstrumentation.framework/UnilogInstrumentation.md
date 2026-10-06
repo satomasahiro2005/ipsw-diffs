@@ -2,43 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/UnilogInstrumentation.framework/UnilogInstrumentation`
 
-```diff
+### Section Size Changes
 
- 2.1.1.0.0
--  __TEXT.__text: 0x1a3fc
-+  __TEXT.__text: 0x1a1e4
-   __TEXT.__objc_methlist: 0x44
-   __TEXT.__const: 0x1060
-   __TEXT.__constg_swiftt: 0x684
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1b960` | `0x1b748` | **`-0x218`** |
+| `__DATA.__data` | `0x520` | `0x518` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x2b0` | `0x2a8` | **`-0x8`** |
 
-   __DATA_CONST.__objc_classlist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x38
--  __DATA_CONST.__got: 0x2b0
-+  __DATA_CONST.__got: 0x2a8
-   __AUTH_CONST.__const: 0xa28
-   __AUTH_CONST.__objc_const: 0x710
-   __AUTH_CONST.__auth_got: 0x8d0
-   __AUTH.__objc_data: 0x160
-   __AUTH.__data: 0x6a8
--  __DATA.__data: 0x520
-+  __DATA.__data: 0x518
-   __DATA.__common: 0x20
-   __DATA_DIRTY.__objc_data: 0x50
-   __DATA_DIRTY.__data: 0x370
+### Other Changes
+
+```text
 Functions:
-~ sub_2b5b2c324 -> sub_2b5877324 : 828 -> 756
-~ sub_2b5b2d30c -> sub_2b58782c4 : 2616 -> 2548
-~ sub_2b5b399b4 -> sub_2b5884928 : 568 -> 484
-~ sub_2b5b3bbac -> sub_2b5886acc : 60 -> 72
-~ sub_2b5b3bbe8 -> sub_2b5886b14 : 12 -> 60
-~ sub_2b5b3bbf4 -> sub_2b5886b50 : 24 -> 12
-~ sub_2b5b3bc0c -> sub_2b5886b5c : 8 -> 24
-~ sub_2b5b3bc14 -> sub_2b5886b74 : 24 -> 8
-~ sub_2b5b3bc2c -> sub_2b5886b7c : 8 -> 24
-~ sub_2b5b3bc34 -> sub_2b5886b94 : 72 -> 8
-~ sub_2b5b3bcdc -> sub_2b5886bfc : 316 -> 268
-~ sub_2b5b3c3f0 -> sub_2b58872e0 : 1772 -> 1632
-~ sub_2b5b3cadc -> sub_2b5887940 : 1772 -> 1632
-~ sub_2b5b3ddf8 -> sub_2b5888bd0 : 72 -> 88
+~ sub_2b9ab141c -> sub_2b98a141c : 852 -> 780
+~ sub_2b9ab2500 -> sub_2b98a24b8 : 2668 -> 2600
+~ sub_2b9abf504 -> sub_2b98af478 : 568 -> 484
+~ sub_2b9ac1994 -> sub_2b98b18b4 : 60 -> 72
+~ sub_2b9ac19d0 -> sub_2b98b18fc : 12 -> 60
+~ sub_2b9ac19dc -> sub_2b98b1938 : 24 -> 12
+~ sub_2b9ac19f4 -> sub_2b98b1944 : 8 -> 24
+~ sub_2b9ac19fc -> sub_2b98b195c : 24 -> 8
+~ sub_2b9ac1a14 -> sub_2b98b1964 : 8 -> 24
+~ sub_2b9ac1a1c -> sub_2b98b197c : 72 -> 8
+~ sub_2b9ac1ac4 -> sub_2b98b19e4 : 336 -> 288
+~ sub_2b9ac2240 -> sub_2b98b2130 : 1792 -> 1652
+~ sub_2b9ac2940 -> sub_2b98b27a4 : 1792 -> 1652
+~ sub_2b9ac3d58 -> sub_2b98b3b30 : 72 -> 88
 ```

@@ -2,34 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/FusionTracker.framework/FusionTracker`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3965c` | `0x39538` | **`-0x124`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x3965c
-+  __TEXT.__text: 0x39538
-   __TEXT.__objc_methlist: 0xb48
-   __TEXT.__const: 0x22f4
-   __TEXT.__gcc_except_tab: 0x36b4
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
+-551.0.0.0.0
++556.0.0.0.1
 Functions:
 ~ __ZN10AcAttrNode11postProcessEPK8BmBufferjR15AcAttrNodeStateR6AcFacej : 1824 -> 1804
 ~ __ZN2ft16HungarianMatcher5MatchEPKfmm : 804 -> 792
@@ -49,5 +33,4 @@ Functions:
 ~ __ZN9TtDetNode11postProcessEPK8BmBufferjR14TtDetNodeStateP8TtResultP7TtPoint : 2856 -> 2836
 ~ _FTComputeMeanColor : 496 -> 480
 ~ __ZN2ft26GenerateObservationMatchesERKNSt3__16vectorINS_11ObservationENS0_9allocatorIS2_EEEERKNS1_INS_10TrackMatchENS3_IS8_EEEERKNS1_INS0_10shared_ptrINS_5TrackEEENS3_ISF_EEEE : 1028 -> 1020
-
 ```

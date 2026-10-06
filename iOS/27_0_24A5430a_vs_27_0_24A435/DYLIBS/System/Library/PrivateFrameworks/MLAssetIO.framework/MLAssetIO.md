@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MLAssetIO.framework/MLAssetIO`
 
-```diff
+### Section Size Changes
 
- 3600.25.2.0.0
--  __TEXT.__text: 0x60360
-+  __TEXT.__text: 0x60364
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__objc_methlist: 0x1184
-   __TEXT.__const: 0x7254
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x60360` | `0x60364` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __GLOBAL__I_000102 : 160 -> 164
 ~ __ZN8nlohmann6detail9dtoa_impl36get_cached_power_for_binary_exponentEi : 184 -> 188

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/PostSiriEngagement.framework/PostSiriEngagement`
 
-```diff
+### Section Size Changes
 
- 3600.52.1.0.0
--  __TEXT.__text: 0x987bc
-+  __TEXT.__text: 0x98acc
-   __TEXT.__objc_methlist: 0x1ec
-   __TEXT.__const: 0x42c8
-   __TEXT.__cstring: 0x2a13
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x987bc` | `0x98acc` | **`+0x310`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s18PostSiriEngagement19PSEMediaSELFEmitterC04emitD012mediaSignals09appLaunchH04taskySayAA6SignalCG_AjA0B13ExecutionTaskCtF : 5812 -> 5828
 ~ _$sSDyq_SgxcigSS_ypTg5 : 100 -> 104

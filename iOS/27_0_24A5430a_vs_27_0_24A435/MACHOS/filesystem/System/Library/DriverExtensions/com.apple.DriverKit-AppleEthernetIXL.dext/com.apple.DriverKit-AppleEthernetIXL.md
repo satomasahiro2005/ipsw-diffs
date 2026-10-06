@@ -2,18 +2,19 @@
 
 > `/System/Library/DriverExtensions/com.apple.DriverKit-AppleEthernetIXL.dext/com.apple.DriverKit-AppleEthernetIXL`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1b188` | `0x1b194` | **`+0xc`** |
+
+### Same-size Content Changes
 
 - `__DATA_CONST.__const`
 
-```diff
+### Other Changes
 
- 171.0.0.0.0
--  __TEXT.__text: 0x1b188
-+  __TEXT.__text: 0x1b194
-   __TEXT.__auth_stubs: 0x5a0
-   __TEXT.__cstring: 0x3eec
-   __TEXT.__const: 0xaa8
+```text
 Functions:
 ~ __Z19i40e_get_dcb_configP7i40e_hw : 772 -> 780
 ~ __ZL23i40e_read_nvm_buffer_aqP7i40e_hwtPtS1_ : 256 -> 260

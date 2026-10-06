@@ -2,24 +2,17 @@
 
 > `/System/Library/VideoDecoders/VCPMP4V.videodecoder`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x215ac
-+  __TEXT.__text: 0x21138
-   __TEXT.__const: 0x15550
-   __TEXT.__gcc_except_tab: 0x28
-   __TEXT.__cstring: 0xa9
--  __TEXT.__unwind_info: 0x2c0
--  __TEXT.__eh_frame: 0xa0
-+  __TEXT.__unwind_info: 0x2c8
-+  __TEXT.__eh_frame: 0x50
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0xd8
-Sections:
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x215ac` | `0x21138` | **`-0x474`** |
+| `__TEXT.__eh_frame` | `0xa0` | `0x50` | **`-0x50`** |
+| `__TEXT.__unwind_info` | `0x2c0` | `0x2c8` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __Z8MC_1H_1VPhiPKhiPKsS1_ : 224 -> 208
 ~ __Z8MC_2H_1VPhiPKhiPKsiS1_ : 288 -> 272
@@ -57,5 +50,4 @@ Functions:
 ~ __Z12MC_2H_1V_VecPhiPKhiPKsi : 88 -> 80
 ~ __Z18Reconstruct_8x8VecPhiS_iPshhhiPKh : 588 -> 580
 ~ _SideExtendBuffer_U8 : 576 -> 612
-
 ```

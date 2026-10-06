@@ -2,81 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a0e88` | `0x1a268c` | **`+0x1804`** |
+| `__TEXT.__oslogstring` | `0xf8f8` | `0xfbb3` | **`+0x2bb`** |
+| `__TEXT.__cstring` | `0x3da93` | `0x3dc51` | **`+0x1be`** |
+| `__AUTH_CONST.__const` | `0x3ca0` | `0x3dc0` | **`+0x120`** |
+| `__DATA.__data` | `0x48c0` | `0x4988` | **`+0xc8`** |
+| `__DATA.__bss` | `0x13b8` | `0x1470` | **`+0xb8`** |
+| `__AUTH_CONST.__objc_const` | `0x366a8` | `0x36758` | **`+0xb0`** |
+| `__TEXT.__objc_methlist` | `0x1f374` | `0x1f404` | **`+0x90`** |
+| `__TEXT.__unwind_info` | `0x8228` | `0x8290` | **`+0x68`** |
+| `__DATA_CONST.__const` | `0x8738` | `0x8788` | **`+0x50`** |
+| `__AUTH_CONST.__cfstring` | `0x28820` | `0x28860` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0xc240` | `0xc280` | **`+0x40`** |
+| `__AUTH.__data` | `0x248` | `0x280` | **`+0x38`** |
+| `__DATA_DIRTY.__bss` | `0x1f8` | `0x1c8` | **`-0x30`** |
+| `__AUTH_CONST.__objc_intobj` | `0x2718` | `0x2730` | **`+0x18`** |
+| `__DATA_CONST.__objc_protolist` | `0x5f8` | `0x608` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xad8` | `0xae0` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x16f8` | `0x1700` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3605.24.1.1.1
--  __TEXT.__text: 0x196214
--  __TEXT.__objc_methlist: 0x1f374
 +3605.30.1.1.1
-+  __TEXT.__text: 0x197988
-+  __TEXT.__objc_methlist: 0x1f404
-   __TEXT.__const: 0x3d0
-   __TEXT.__dlopen_cstrs: 0x538
-   __TEXT.__gcc_except_tab: 0x21e0
--  __TEXT.__cstring: 0x3da93
--  __TEXT.__oslogstring: 0xf8f8
-+  __TEXT.__cstring: 0x3dc51
-+  __TEXT.__oslogstring: 0xfbb3
-   __TEXT.__ustring: 0x2ac
--  __TEXT.__unwind_info: 0x9f48
-+  __TEXT.__unwind_info: 0x9fd8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x8738
-+  __DATA_CONST.__const: 0x8788
-   __DATA_CONST.__objc_classlist: 0xf00
-   __DATA_CONST.__objc_catlist: 0x2a8
--  __DATA_CONST.__objc_protolist: 0x5f8
-+  __DATA_CONST.__objc_protolist: 0x608
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xc240
-+  __DATA_CONST.__objc_selrefs: 0xc280
-   __DATA_CONST.__objc_protorefs: 0x178
-   __DATA_CONST.__objc_superrefs: 0xf18
-   __DATA_CONST.__objc_arraydata: 0x2450
--  __DATA_CONST.__got: 0x16f8
--  __AUTH_CONST.__const: 0x3ca0
--  __AUTH_CONST.__cfstring: 0x28820
--  __AUTH_CONST.__objc_const: 0x366a8
--  __AUTH_CONST.__objc_intobj: 0x2718
-+  __DATA_CONST.__got: 0x1700
-+  __AUTH_CONST.__const: 0x3dc0
-+  __AUTH_CONST.__cfstring: 0x28860
-+  __AUTH_CONST.__objc_const: 0x36758
-+  __AUTH_CONST.__objc_intobj: 0x2730
-   __AUTH_CONST.__objc_dictobj: 0xd20
-   __AUTH_CONST.__objc_arrayobj: 0x5d0
-   __AUTH_CONST.__objc_doubleobj: 0x40
--  __AUTH_CONST.__auth_got: 0xad8
-+  __AUTH_CONST.__auth_got: 0xae0
-   __AUTH.__objc_data: 0x84f8
--  __AUTH.__data: 0x248
-+  __AUTH.__data: 0x280
-   __DATA.__objc_ivar: 0x25ac
--  __DATA.__data: 0x48c0
-+  __DATA.__data: 0x4988
-   __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0x1108
-   __DATA_DIRTY.__data: 0x18
--  __DATA_DIRTY.__bss: 0x1f8
-+  __DATA_DIRTY.__bss: 0x1c8
-   __DATA_DIRTY.__common: 0xf8
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12191
 -  Symbols:   22344
 -  CStrings:  8665
 +  Functions: 12227
 +  Symbols:   22414
 +  CStrings:  8694
- 
 Symbols:
 + +[AFFeatureFlags(SWEFeatureFlags) isLinwoodModalityConnectionSkipEnabled]
 + -[AFPreferences assistantEnabledBeforeRestrictionIsCurrentVersion]

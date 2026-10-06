@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/VectorSearch.framework/VectorSearch`
 
-```diff
+### Section Size Changes
 
- 53.0.0.0.0
--  __TEXT.__text: 0x843f4
-+  __TEXT.__text: 0x84720
-   __TEXT.__objc_methlist: 0xa1c
-   __TEXT.__const: 0x324a
-   __TEXT.__constg_swiftt: 0x10fc
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x843f4` | `0x84720` | **`+0x32c`** |
+
+### Other Changes
+
+```diff
 Symbols:
 + _swift_release_x11
 - _swift_release_x10

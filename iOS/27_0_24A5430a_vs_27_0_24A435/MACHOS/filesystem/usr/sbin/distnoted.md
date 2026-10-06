@@ -2,6 +2,6 @@
 
 > `/usr/sbin/distnoted`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__dof_distnoted`

@@ -2,64 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/FRC.framework/FRC`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x402b4` | `0x43148` | **`+0x2e94`** |
+| `__AUTH_CONST.__objc_const` | `0xa710` | `0xaf20` | **`+0x810`** |
+| `__TEXT.__cstring` | `0x660c` | `0x696e` | **`+0x362`** |
+| `__AUTH_CONST.__cfstring` | `0x3ec0` | `0x41e0` | **`+0x320`** |
+| `__TEXT.__oslogstring` | `0xec3` | `0x1029` | **`+0x166`** |
+| `__TEXT.__objc_methlist` | `0x3a9c` | `0x3bcc` | **`+0x130`** |
+| `__DATA.__objc_ivar` | `0xdb0` | `0xe88` | **`+0xd8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x22d8` | `0x2388` | **`+0xb0`** |
+| `__TEXT.__unwind_info` | `0xc78` | `0xcd8` | **`+0x60`** |
+| `__AUTH.__objc_data` | `—` | `0x50` | **`+0x50`** |
+| `__AUTH_CONST.__const` | `0x118` | `0x138` | **`+0x20`** |
+| `__TEXT.__const` | `0x5a0` | `0x5c0` | **`+0x20`** |
+| `__DATA.__bss` | `0x50` | `0x60` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x460` | `0x468` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x178` | `0x180` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x138` | `0x140` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -259.0.0.0.0
--  __TEXT.__text: 0x3f7a8
--  __TEXT.__objc_methlist: 0x3a9c
--  __TEXT.__const: 0x5a0
--  __TEXT.__cstring: 0x660c
--  __TEXT.__oslogstring: 0xec3
 +263.0.0.0.0
-+  __TEXT.__text: 0x425f4
-+  __TEXT.__objc_methlist: 0x3bcc
-+  __TEXT.__const: 0x5c0
-+  __TEXT.__cstring: 0x696e
-+  __TEXT.__oslogstring: 0x1029
-   __TEXT.__gcc_except_tab: 0x26c
--  __TEXT.__unwind_info: 0x1028
-+  __TEXT.__unwind_info: 0x10c0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x708
--  __DATA_CONST.__objc_classlist: 0x178
-+  __DATA_CONST.__objc_classlist: 0x180
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x22d8
--  __DATA_CONST.__objc_superrefs: 0x138
--  __DATA_CONST.__got: 0x460
--  __AUTH_CONST.__const: 0x118
--  __AUTH_CONST.__cfstring: 0x3ec0
--  __AUTH_CONST.__objc_const: 0xa710
-+  __DATA_CONST.__objc_selrefs: 0x2388
-+  __DATA_CONST.__objc_superrefs: 0x140
-+  __DATA_CONST.__got: 0x468
-+  __AUTH_CONST.__const: 0x138
-+  __AUTH_CONST.__cfstring: 0x41e0
-+  __AUTH_CONST.__objc_const: 0xaf20
-   __AUTH_CONST.__auth_got: 0x7c8
--  __DATA.__objc_ivar: 0xdb0
-+  __AUTH.__objc_data: 0x50
-+  __DATA.__objc_ivar: 0xe88
-   __DATA.__data: 0x140
-   __DATA_DIRTY.__objc_data: 0xeb0
-   __DATA_DIRTY.__bss: 0x8
 
-   - /System/Library/PrivateFrameworks/IOSurfaceAccelerator.framework/IOSurfaceAccelerator
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1445
--  Symbols:   3839
+-  Symbols:   2981
 -  CStrings:  843
 +  Functions: 1488
-+  Symbols:   3947
++  Symbols:   3071
 +  CStrings:  888
- 
 Symbols:
 + -[FRCMotionBlurFlowRefiner .cxx_destruct]
 + -[FRCMotionBlurFlowRefiner computeDilatedErrorMap:errorMap:dilatedErrorMap:searchRadius:]
@@ -152,24 +128,6 @@ Symbols:
 + ___FRCMotionBlurFlowRefinerLog_block_invoke
 + _createInputTextureFromCVPixelBuffer
 + _kCVPixelFormatContainsGrayscale
-+ _objc_msgSend$computeDilatedErrorMap:errorMap:dilatedErrorMap:searchRadius:
-+ _objc_msgSend$computeDisparityEdgeMap:disparity:disparityEdgeMap:edgeTolerance:
-+ _objc_msgSend$computeVelocityEdgeMap:inVelocity:velocityEdgeMap:edgeThresh:
-+ _objc_msgSend$computeVelocityMapWithDisplacement:displacement:outVelocity:outNeighborMaxVelocity:tileMax:
-+ _objc_msgSend$correctDisplacementErrorWithDisparity:inDisplacement:disparity:displacementErrorMap:debugTexture:correcttedDisplacement:sparseSampleStep:invUpscaleRatio:
-+ _objc_msgSend$correctDisplacementMagnitudeError:inDisplacement:correcttedDisplacement:debugTexture:
-+ _objc_msgSend$detectDisplacementErrorWithDisparity:inDisplacement:disparity:lowResDisplacementErrorMap:disparityEdgeMaxMap:velocityEdgeMap:displacementErrorMap:debugTexture:sparseSampleStep:invUpscaleRatio:isSecondIteration:isUpscaled:
-+ _objc_msgSend$dispatchThreads:threadsPerThreadgroup:
-+ _objc_msgSend$encodeNeighborMaxFlowToCommandBuffer:tileMax:neighborMax:
-+ _objc_msgSend$encodePostUpscaleFlowRefineToCommandBuffer:disparity:rgbaSizeVelocity:upsampledVelocity:
-+ _objc_msgSend$encodePreUpscaleFlowRefineToCommandBuffer:opticalFlow:disparity:velocity:neighborMaxVelocity:
-+ _objc_msgSend$encodeTileMaxVelocityToCommandBuffer:velocity:tileMax:
-+ _objc_msgSend$encodeVelocityForMotionBlurToCommandBuffer:displacement:velocity:
-+ _objc_msgSend$ensureDisparityEdgeMapsForDisparity:
-+ _objc_msgSend$initWithDevice:commmandQueue:mode:deterministicAccumulation:
-+ _objc_msgSend$isUsageSupported:
-+ _objc_msgSend$setDeterministicAccumulation:
-+ _objc_msgSend$upsampleVelocity:inVelocity:disparity:upsampledVelocity:
 - _OBJC_IVAR_$_NeuFlow._useDistilledModel
 CStrings:
 + "Cannot allocate FlowUpscaler"

@@ -2,99 +2,64 @@
 
 > `/System/Library/AccessibilityBundles/ZoomWindow.axuiservice/ZoomWindow`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__cstring`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6cacc` | `0x6ccec` | **`+0x220`** |
+| `__TEXT.__objc_methname` | `0x1153b` | `0x1160b` | **`+0xd0`** |
+| `__TEXT.__objc_stubs` | `0xbdc0` | `0xbe40` | **`+0x80`** |
+| `__TEXT.__oslogstring` | `0xb4c` | `0xb94` | **`+0x48`** |
+| `__DATA.__objc_const` | `0x79f0` | `0x7a20` | **`+0x30`** |
+| `__TEXT.__auth_stubs` | `0x22d0` | `0x2300` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x4de8` | `0x4e10` | **`+0x28`** |
+| `__DATA.__objc_selrefs` | `0x38b8` | `0x38d8` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0x1178` | `0x1190` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x960` | `0x968` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x1aa8` | `0x1ab0` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x6a4` | `0x6a8` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA.__objc_stublist`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__const`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_data`
-- `__DATA.__data`
-- `__DATA.__objc_stublist`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__cstring`
+- `__TEXT.__eh_frame`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -913.3.1.0.0
--  __TEXT.__text: 0x6a838
--  __TEXT.__auth_stubs: 0x22d0
--  __TEXT.__objc_stubs: 0xbdc0
--  __TEXT.__objc_methlist: 0x4de8
 +913.3.2.0.0
-+  __TEXT.__text: 0x6aa58
-+  __TEXT.__auth_stubs: 0x2300
-+  __TEXT.__objc_stubs: 0xbe40
-+  __TEXT.__objc_methlist: 0x4e10
-   __TEXT.__const: 0x20d0
--  __TEXT.__objc_methname: 0x1153b
-+  __TEXT.__objc_methname: 0x1160b
-   __TEXT.__objc_classname: 0x93a
-   __TEXT.__objc_methtype: 0x3a5a
-   __TEXT.__constg_swiftt: 0xd5c
 
-   __TEXT.__swift5_reflstr: 0x632
-   __TEXT.__swift5_builtin: 0x64
-   __TEXT.__swift5_assocty: 0x1a0
--  __TEXT.__oslogstring: 0xb4c
-+  __TEXT.__oslogstring: 0xb94
-   __TEXT.__cstring: 0x26d8
-   __TEXT.__swift5_capture: 0x240
-   __TEXT.__swift5_proto: 0x6c
-
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x10
-   __TEXT.__gcc_except_tab: 0x8c0
--  __TEXT.__unwind_info: 0x1f50
-+  __TEXT.__unwind_info: 0x1f58
-   __TEXT.__eh_frame: 0x418
-   __DATA_CONST.__const: 0x1870
-   __DATA_CONST.__cfstring: 0x1900
-
-   __DATA_CONST.__objc_arrayobj: 0xd8
-   __DATA_CONST.__objc_dictobj: 0x50
-   __DATA_CONST.__objc_doubleobj: 0x30
--  __DATA_CONST.__auth_got: 0x1178
--  __DATA_CONST.__got: 0x960
-+  __DATA_CONST.__auth_got: 0x1190
-+  __DATA_CONST.__got: 0x968
-   __DATA_CONST.__auth_ptr: 0x640
--  __DATA.__objc_const: 0x79f0
--  __DATA.__objc_selrefs: 0x38b8
--  __DATA.__objc_ivar: 0x6a4
-+  __DATA.__objc_const: 0x7a20
-+  __DATA.__objc_selrefs: 0x38d8
-+  __DATA.__objc_ivar: 0x6a8
-   __DATA.__objc_data: 0x19d0
-   __DATA.__data: 0x1b20
-   __DATA.__objc_stublist: 0x10
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2562
 -  Symbols:   5028
 -  CStrings:  3307
 +  Functions: 2565
 +  Symbols:   5040
 +  CStrings:  3314
- 
 Symbols:
 + -[ZWEventProcessor _accessibilityShouldIgnoreEventRep:]
 + -[ZWEventProcessor disabledIDMappingRegistry]

@@ -2,120 +2,68 @@
 
 > `/Applications/MusicRecognition.app/MusicRecognition`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_entry`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xdca90` | `0xd9fd4` | **`-0x2abc`** |
+| `__TEXT.__const` | `0xa784` | `0xa324` | **`-0x460`** |
+| `__TEXT.__eh_frame` | `0x6c80` | `0x68b8` | **`-0x3c8`** |
+| `__TEXT.__swift5_typeref` | `0x6602` | `0x63ba` | **`-0x248`** |
+| `__DATA.__data` | `0x5fb0` | `0x5d98` | **`-0x218`** |
+| `__TEXT.__unwind_info` | `0x39e0` | `0x37f8` | **`-0x1e8`** |
+| `__TEXT.__swift5_reflstr` | `0x2c5f` | `0x2abf` | **`-0x1a0`** |
+| `__DATA.__objc_const` | `0x2d08` | `0x2b78` | **`-0x190`** |
+| `__DATA_CONST.__auth_ptr` | `0x1d20` | `0x1c10` | **`-0x110`** |
+| `__TEXT.__objc_methname` | `0x37b5` | `0x36e5` | **`-0xd0`** |
+| `__DATA.__bss` | `0xcb08` | `0xca58` | **`-0xb0`** |
+| `__TEXT.__cstring` | `0x2d63` | `0x2df3` | **`+0x90`** |
+| `__TEXT.__swift5_fieldmd` | `0x2308` | `0x2290` | **`-0x78`** |
+| `__DATA.__objc_data` | `0x14f0` | `0x14a0` | **`-0x50`** |
+| `__TEXT.__swift_as_cont` | `0x5e4` | `0x598` | **`-0x4c`** |
+| `__TEXT.__swift_as_entry` | `0x308` | `0x2c0` | **`-0x48`** |
+| `__TEXT.__objc_stubs` | `0x2560` | `0x25a0` | **`+0x40`** |
+| `__TEXT.__constg_swiftt` | `0x231c` | `0x22e4` | **`-0x38`** |
+| `__TEXT.__swift_as_ret` | `0x304` | `0x2d0` | **`-0x34`** |
+| `__TEXT.__auth_stubs` | `0x45c0` | `0x4590` | **`-0x30`** |
+| `__TEXT.__objc_classname` | `0xaf0` | `0xac0` | **`-0x30`** |
+| `__TEXT.__oslogstring` | `0x1514` | `0x1544` | **`+0x30`** |
+| `__TEXT.__swift5_assocty` | `0xd10` | `0xcf0` | **`-0x20`** |
+| `__DATA_CONST.__auth_got` | `0x22e8` | `0x22d0` | **`-0x18`** |
+| `__DATA_CONST.__const` | `0x4d78` | `0x4d90` | **`+0x18`** |
+| `__DATA.__objc_selrefs` | `0xc50` | `0xc60` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x1370` | `0x1380` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0xe6c` | `0xe5c` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x150` | `0x148` | **`-0x8`** |
+| `__TEXT.__swift5_proto` | `0x67c` | `0x678` | **`-0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA.__common`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_types`
+
+### Other Changes
 
 ```diff
 
 -427.0.40.0.0
--  __TEXT.__text: 0xdca90
--  __TEXT.__auth_stubs: 0x45c0
--  __TEXT.__objc_stubs: 0x2560
 +427.0.44.0.0
-+  __TEXT.__text: 0xd9fd4
-+  __TEXT.__auth_stubs: 0x4590
-+  __TEXT.__objc_stubs: 0x25a0
-   __TEXT.__objc_methlist: 0xa04
--  __TEXT.__const: 0xa784
--  __TEXT.__constg_swiftt: 0x231c
--  __TEXT.__swift5_typeref: 0x6602
--  __TEXT.__swift5_reflstr: 0x2c5f
--  __TEXT.__swift5_assocty: 0xd10
-+  __TEXT.__const: 0xa324
-+  __TEXT.__constg_swiftt: 0x22e4
-+  __TEXT.__swift5_typeref: 0x63ba
-+  __TEXT.__swift5_reflstr: 0x2abf
-+  __TEXT.__swift5_assocty: 0xcf0
-   __TEXT.__swift5_builtin: 0xb4
--  __TEXT.__swift5_fieldmd: 0x2308
--  __TEXT.__cstring: 0x2d63
--  __TEXT.__swift5_proto: 0x67c
-+  __TEXT.__swift5_fieldmd: 0x2290
-+  __TEXT.__cstring: 0x2df3
-+  __TEXT.__swift5_proto: 0x678
-   __TEXT.__swift5_types: 0x250
--  __TEXT.__swift_as_entry: 0x308
--  __TEXT.__swift_as_ret: 0x304
-+  __TEXT.__swift_as_entry: 0x2c0
-+  __TEXT.__swift_as_ret: 0x2d0
-   __TEXT.__swift5_protos: 0x24
--  __TEXT.__objc_classname: 0xaf0
--  __TEXT.__objc_methname: 0x37b5
--  __TEXT.__oslogstring: 0x1514
--  __TEXT.__swift5_capture: 0xe6c
--  __TEXT.__swift_as_cont: 0x5e4
-+  __TEXT.__objc_classname: 0xac0
-+  __TEXT.__objc_methname: 0x36e5
-+  __TEXT.__oslogstring: 0x1544
-+  __TEXT.__swift5_capture: 0xe5c
-+  __TEXT.__swift_as_cont: 0x598
-   __TEXT.__objc_methtype: 0x966
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__unwind_info: 0x39e0
--  __TEXT.__eh_frame: 0x6c80
--  __DATA_CONST.__const: 0x4d78
--  __DATA_CONST.__objc_classlist: 0x150
-+  __TEXT.__unwind_info: 0x37f8
-+  __TEXT.__eh_frame: 0x68b8
-+  __DATA_CONST.__const: 0x4d90
-+  __DATA_CONST.__objc_classlist: 0x148
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x38
--  __DATA_CONST.__auth_got: 0x22e8
--  __DATA_CONST.__got: 0x1370
--  __DATA_CONST.__auth_ptr: 0x1d20
--  __DATA.__objc_const: 0x2d08
--  __DATA.__objc_selrefs: 0xc50
--  __DATA.__objc_data: 0x14f0
--  __DATA.__data: 0x5fb0
--  __DATA.__bss: 0xcb08
-+  __DATA_CONST.__auth_got: 0x22d0
-+  __DATA_CONST.__got: 0x1380
-+  __DATA_CONST.__auth_ptr: 0x1c10
-+  __DATA.__objc_const: 0x2b78
-+  __DATA.__objc_selrefs: 0xc60
-+  __DATA.__objc_data: 0x14a0
-+  __DATA.__data: 0x5d98
-+  __DATA.__bss: 0xca58
-   __DATA.__common: 0x188
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
 
-   - /System/Library/Frameworks/WidgetKit.framework/WidgetKit
-   - /System/Library/Frameworks/_AppIntents_SwiftUI.framework/_AppIntents_SwiftUI
-   - /System/Library/Frameworks/_LocationEssentials.framework/_LocationEssentials
 -  - /System/Library/Frameworks/_MusicKit_SwiftUI.framework/_MusicKit_SwiftUI
-   - /System/Library/PrivateFrameworks/ActivityUIServices.framework/ActivityUIServices
-   - /System/Library/PrivateFrameworks/AdaptiveMusic.framework/AdaptiveMusic
-   - /System/Library/PrivateFrameworks/AppProtection.framework/AppProtection
 
-   - /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices
-   - /System/Library/PrivateFrameworks/SpringBoardUIServices.framework/SpringBoardUIServices
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
 -  - /System/Library/PrivateFrameworks/_MusicKitInternal_SwiftUI.framework/_MusicKitInternal_SwiftUI
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4344
 -  Symbols:   2436
 -  CStrings:  1095
 +  Functions: 4183
 +  Symbols:   2402
 +  CStrings:  1091
- 
 Symbols:
 + _$s10AppIntents11EntityQueryP22displayRepresentations3forSDy0C0_2IDQZAA21DisplayRepresentationVGSayAHG_tYaKFTq
 + _$s10AppIntents11EntityQueryPAAE22displayRepresentations3forSDy0C0_2IDQZAA21DisplayRepresentationVGSayAHG_tYaKF

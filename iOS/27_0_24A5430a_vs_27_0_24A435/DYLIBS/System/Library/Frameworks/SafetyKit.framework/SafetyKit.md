@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/SafetyKit.framework/SafetyKit`
 
-```diff
+### Section Size Changes
 
- 174.0.0.0.0
--  __TEXT.__text: 0xfd28
-+  __TEXT.__text: 0xfd20
-   __TEXT.__objc_methlist: 0xe44
-   __TEXT.__const: 0xe8
-   __TEXT.__cstring: 0x19dc
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfd28` | `0xfd20` | **`-0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[SALocationManager notifyLocation:].cold.1 : 84 -> 88
 ~ -[SALocationManager stopMonitoringLocation].cold.1 : 84 -> 88

@@ -2,19 +2,15 @@
 
 > `/usr/lib/libxo.dylib`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0xfcac
-+  __TEXT.__text: 0xfbfc
-   __TEXT.__const: 0x58a
-   __TEXT.__cstring: 0xe85
-   __TEXT.__unwind_info: 0x2a8
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfcac` | `0xfbfc` | **`-0xb0`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _xo_buf_append_div : 3680 -> 3664
 ~ _xo_simplify_format : 1612 -> 1584
@@ -24,5 +20,4 @@ Functions:
 ~ _xo_format_value : 4852 -> 4788
 ~ _xo_name_lookup : 264 -> 256
 ~ _xo_trim_ws : 184 -> 180
-
 ```

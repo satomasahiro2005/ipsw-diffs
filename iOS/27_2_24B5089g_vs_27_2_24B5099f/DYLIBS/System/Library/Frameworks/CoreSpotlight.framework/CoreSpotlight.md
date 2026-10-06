@@ -2,89 +2,44 @@
 
 > `/System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17d220` | `0x180300` | **`+0x30e0`** |
+| `__AUTH_CONST.__objc_const` | `0x1f820` | `0x20100` | **`+0x8e0`** |
+| `__TEXT.__objc_methlist` | `0x14440` | `0x147d8` | **`+0x398`** |
+| `__AUTH_CONST.__cfstring` | `0x2de80` | `0x2e140` | **`+0x2c0`** |
+| `__TEXT.__cstring` | `0x2bc60` | `0x2bedd` | **`+0x27d`** |
+| `__TEXT.__gcc_except_tab` | `0x94fc` | `0x9718` | **`+0x21c`** |
+| `__TEXT.__oslogstring` | `0xbd15` | `0xbf0c` | **`+0x1f7`** |
+| `__AUTH.__objc_data` | `0x5618` | `0x57a8` | **`+0x190`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa4d8` | `0xa618` | **`+0x140`** |
+| `__DATA_CONST.__const` | `0x65e0` | `0x6718` | **`+0x138`** |
+| `__TEXT.__unwind_info` | `0x5f60` | `0x6060` | **`+0x100`** |
+| `__DATA.__objc_ivar` | `0x1400` | `0x1468` | **`+0x68`** |
+| `__AUTH_CONST.__auth_got` | `0x1130` | `0x1160` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0xa90` | `0xab8` | **`+0x28`** |
+| `__DATA_CONST.__objc_superrefs` | `0x720` | `0x748` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x2410` | `0x2430` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0xe50` | `0xe70` | **`+0x20`** |
+| `__AUTH.__thread_vars` | `0x48` | `0x60` | **`+0x18`** |
+| `__AUTH.__thread_bss` | `0x18` | `0x28` | **`+0x10`** |
+| `__DATA.__bss` | `0x1990` | `0x19a0` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -2465.1.3.0.0
--  __TEXT.__text: 0x176310
--  __TEXT.__objc_methlist: 0x14440
 +2465.1.7.0.0
-+  __TEXT.__text: 0x1792f4
-+  __TEXT.__objc_methlist: 0x147d8
-   __TEXT.__const: 0xf08
--  __TEXT.__gcc_except_tab: 0x94fc
--  __TEXT.__cstring: 0x2bc60
--  __TEXT.__oslogstring: 0xbd15
-+  __TEXT.__cstring: 0x2bedd
-+  __TEXT.__gcc_except_tab: 0x9718
-+  __TEXT.__oslogstring: 0xbf0c
-   __TEXT.__ustring: 0x218e
-   __TEXT.__dlopen_cstrs: 0x4c4
-   __TEXT.__constg_swiftt: 0x1bc
 
-   __TEXT.__swift_as_cont: 0xc
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x7150
-+  __TEXT.__unwind_info: 0x7290
-   __TEXT.__eh_frame: 0x210
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x65e0
--  __DATA_CONST.__objc_classlist: 0xa90
-+  __DATA_CONST.__const: 0x6718
-+  __DATA_CONST.__objc_classlist: 0xab8
-   __DATA_CONST.__objc_catlist: 0x60
-   __DATA_CONST.__objc_protolist: 0xa8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa4d8
-+  __DATA_CONST.__objc_selrefs: 0xa618
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__objc_superrefs: 0x720
-+  __DATA_CONST.__objc_superrefs: 0x748
-   __DATA_CONST.__objc_arraydata: 0x11290
--  __DATA_CONST.__got: 0xe50
--  __AUTH_CONST.__const: 0x2410
--  __AUTH_CONST.__cfstring: 0x2de80
--  __AUTH_CONST.__objc_const: 0x1f820
-+  __DATA_CONST.__got: 0xe70
-+  __AUTH_CONST.__const: 0x2430
-+  __AUTH_CONST.__cfstring: 0x2e140
-+  __AUTH_CONST.__objc_const: 0x20100
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x3ae0
-   __AUTH_CONST.__objc_dictobj: 0xaf78
-   __AUTH_CONST.__objc_intobj: 0xe58
-   __AUTH_CONST.__objc_doubleobj: 0x180
-   __AUTH_CONST.__objc_floatobj: 0x20
--  __AUTH_CONST.__auth_got: 0x1130
--  __AUTH.__objc_data: 0x5618
-+  __AUTH_CONST.__auth_got: 0x1160
-+  __AUTH.__objc_data: 0x57a8
-   __AUTH.__data: 0x3a0
--  __AUTH.__thread_vars: 0x48
--  __AUTH.__thread_bss: 0x18
--  __DATA.__objc_ivar: 0x1400
-+  __AUTH.__thread_vars: 0x60
-+  __AUTH.__thread_bss: 0x28
-+  __DATA.__objc_ivar: 0x1468
-   __DATA.__data: 0x1c60
-   __DATA_DIRTY.__objc_data: 0x1388
-   __DATA_DIRTY.__data: 0x20
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 8869
 -  Symbols:   14514
 -  CStrings:  8077
 +  Functions: 8955
 +  Symbols:   14690
 +  CStrings:  8104
- 
 Symbols:
 + +[CSBundleFilterAttributeBackfillGroup supportsSecureCoding]
 + +[CSBundleFilterAttributeBackfillResult supportsSecureCoding]

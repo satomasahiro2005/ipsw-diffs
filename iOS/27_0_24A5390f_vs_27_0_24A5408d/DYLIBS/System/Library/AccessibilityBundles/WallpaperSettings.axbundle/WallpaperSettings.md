@@ -2,31 +2,25 @@
 
 > `/System/Library/AccessibilityBundles/WallpaperSettings.axbundle/WallpaperSettings`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__oslogstring` | `0x3e` | `0x3be` | **`+0x380`** |
+| `__TEXT.__text` | `0x18d8` | `0x1c44` | **`+0x36c`** |
+| `__TEXT.__const` | `0x20` | `0x38` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
 -3045.0.0.0.0
--  __TEXT.__text: 0x18d8
 +3048.0.0.0.0
-+  __TEXT.__text: 0x1c44
-   __TEXT.__objc_methlist: 0x150
--  __TEXT.__const: 0x20
-+  __TEXT.__const: 0x38
-   __TEXT.__gcc_except_tab: 0x18
-   __TEXT.__cstring: 0xaa1
--  __TEXT.__oslogstring: 0x3e
-+  __TEXT.__oslogstring: 0x3be
-   __TEXT.__unwind_info: 0xd8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 32
--  Symbols:   167
+-  Symbols:   134
 -  CStrings:  212
-+  Symbols:   169
++  Symbols:   136
 +  CStrings:  219
- 
 Symbols:
 + _AXAIWhiteGloveLoggingEnabled
 + __os_log_error_impl

@@ -2,24 +2,25 @@
 
 > `/System/Library/PrivateFrameworks/AutomationMode.framework/AutomationModeUI.app/AutomationModeUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xae9c` | `0xaea0` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__const`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
 - `__TEXT.__swift5_entry`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA.__objc_data`
-- `__DATA.__data`
 
-```diff
+### Other Changes
 
- 34.0.0.0.0
--  __TEXT.__text: 0xae9c
-+  __TEXT.__text: 0xaea0
-   __TEXT.__auth_stubs: 0xcb0
-   __TEXT.__objc_stubs: 0x7a0
-   __TEXT.__objc_methlist: 0x154
+```text
 Functions:
 ~ sub_100006fec : 680 -> 684
 ```

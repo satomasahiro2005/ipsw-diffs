@@ -2,24 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/WebGPU.framework/WebGPU`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x23ec88` | `0x240678` | **`+0x19f0`** |
+| `__TEXT.__unwind_info` | `0x4388` | `0x4380` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -625.1.29.10.28
--  __TEXT.__text: 0x23ec88
 +625.1.29.10.29
-+  __TEXT.__text: 0x240678
-   __TEXT.__objc_methlist: 0x1f0
-   __TEXT.__const: 0x1f94
-   __TEXT.__gcc_except_tab: 0xa3d0
-
-   __TEXT.__swift5_types: 0x4c
-   __TEXT.__swift5_protos: 0x50
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0x4388
-+  __TEXT.__unwind_info: 0x4380
-   __TEXT.__eh_frame: 0xfa0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 Functions:
 ~ __ZN6WebGPU19RenderBundleEncoder4drawEjjjj : 1668 -> 1676
 ~ __ZN6WebGPU6Device15createBindGroupERK23WGPUBindGroupDescriptor : 18300 -> 18284

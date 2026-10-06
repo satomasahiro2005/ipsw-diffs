@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/HealthPlatformCore.framework/HealthPlatformCore`
 
-```diff
+### Section Size Changes
 
- 7027.0.72.2.7
--  __TEXT.__text: 0xbc7ac
-+  __TEXT.__text: 0xbc794
-   __TEXT.__objc_methlist: 0x3b8
-   __TEXT.__const: 0x2c58
-   __TEXT.__cstring: 0x26dd
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbc7ac` | `0xbc794` | **`-0x18`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_22ed55d24 -> sub_22f5fad24 : 4900 -> 4908
 ~ sub_22ed7faa8 -> sub_22f624ab0 : 256 -> 264

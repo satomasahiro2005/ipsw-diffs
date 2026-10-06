@@ -2,94 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/CAFCombine.framework/CAFCombine`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x12fdcc` | `0x133c4c` | **`+0x3e80`** |
+| `__AUTH_CONST.__objc_const` | `0x2b850` | `0x2bf90` | **`+0x740`** |
+| `__TEXT.__const` | `0x1b1e4` | `0x1b714` | **`+0x530`** |
+| `__AUTH.__objc_data` | `0xdcf8` | `0xdfa0` | **`+0x2a8`** |
+| `__DATA.__bss` | `0x15b90` | `0x15df0` | **`+0x260`** |
+| `__TEXT.__constg_swiftt` | `0x8a08` | `0x8bb4` | **`+0x1ac`** |
+| `__TEXT.__objc_methlist` | `0x7704` | `0x785c` | **`+0x158`** |
+| `__TEXT.__unwind_info` | `0x79f8` | `0x7b38` | **`+0x140`** |
+| `__DATA.__data` | `0xb7d0` | `0xb900` | **`+0x130`** |
+| `__TEXT.__swift5_reflstr` | `0x83ac` | `0x84ac` | **`+0x100`** |
+| `__TEXT.__swift5_typeref` | `0xa5a0` | `0xa690` | **`+0xf0`** |
+| `__TEXT.__swift5_fieldmd` | `0x40a8` | `0x4178` | **`+0xd0`** |
+| `__AUTH.__data` | `0x3f98` | `0x4028` | **`+0x90`** |
+| `__TEXT.__cstring` | `0x59da` | `0x5a5a` | **`+0x80`** |
+| `__DATA_CONST.__const` | `0x1598` | `0x1600` | **`+0x68`** |
+| `__TEXT.__swift5_assocty` | `0x2e40` | `0x2e88` | **`+0x48`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2f38` | `0x2f70` | **`+0x38`** |
+| `__DATA_CONST.__objc_protolist` | `0x860` | `0x870` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x9b0` | `0x9bc` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x3e8` | `0x3f0` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x430` | `0x438` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x308` | `0x30c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x12fdcc
--  __TEXT.__objc_methlist: 0x7704
--  __TEXT.__const: 0x1b1e4
--  __TEXT.__swift5_typeref: 0xa5a0
--  __TEXT.__cstring: 0x59da
-+  __TEXT.__text: 0x133c4c
-+  __TEXT.__objc_methlist: 0x785c
-+  __TEXT.__const: 0x1b714
-+  __TEXT.__swift5_typeref: 0xa690
-+  __TEXT.__cstring: 0x5a5a
-   __TEXT.__swift5_capture: 0x240
--  __TEXT.__constg_swiftt: 0x8a08
-+  __TEXT.__constg_swiftt: 0x8bb4
-   __TEXT.__swift5_builtin: 0x488
--  __TEXT.__swift5_reflstr: 0x83ac
--  __TEXT.__swift5_fieldmd: 0x40a8
--  __TEXT.__swift5_assocty: 0x2e40
--  __TEXT.__swift5_proto: 0x9b0
--  __TEXT.__swift5_types: 0x308
-+  __TEXT.__swift5_reflstr: 0x84ac
-+  __TEXT.__swift5_fieldmd: 0x4178
-+  __TEXT.__swift5_assocty: 0x2e88
-+  __TEXT.__swift5_proto: 0x9bc
-+  __TEXT.__swift5_types: 0x30c
-   __TEXT.__swift_as_entry: 0xc
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x18
-   __TEXT.__swift5_protos: 0x14
-   __TEXT.__oslogstring: 0xc
--  __TEXT.__unwind_info: 0x79f8
-+  __TEXT.__unwind_info: 0x7b38
-   __TEXT.__eh_frame: 0x688
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1598
--  __DATA_CONST.__objc_classlist: 0x3e8
--  __DATA_CONST.__objc_protolist: 0x860
-+  __DATA_CONST.__const: 0x1600
-+  __DATA_CONST.__objc_classlist: 0x3f0
-+  __DATA_CONST.__objc_protolist: 0x870
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2f38
--  __DATA_CONST.__objc_protorefs: 0x430
-+  __DATA_CONST.__objc_selrefs: 0x2f70
-+  __DATA_CONST.__objc_protorefs: 0x438
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x2358
--  __AUTH_CONST.__objc_const: 0x2b850
-+  __AUTH_CONST.__objc_const: 0x2bf90
-   __AUTH_CONST.__auth_got: 0xa90
--  __AUTH.__objc_data: 0xdcf8
--  __AUTH.__data: 0x3f98
--  __DATA.__data: 0xb7d0
--  __DATA.__bss: 0x15b90
-+  __AUTH.__objc_data: 0xdfa0
-+  __AUTH.__data: 0x4028
-+  __DATA.__data: 0xb900
-+  __DATA.__bss: 0x15df0
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0x100
-   __DATA_DIRTY.__data: 0xa0
+-534.3.0.0.0
++537.3.0.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 16828
--  Symbols:   50597
+-  Symbols:   33386
 -  CStrings:  557
 +  Functions: 17046
-+  Symbols:   51236
++  Symbols:   33778
 +  CStrings:  560
- 
-Sections:
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__eh_frame : content changed
-~ __AUTH_CONST.__const : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
 Symbols:
 + _$s10CAFCombine13CAFObservablePAAE12notifyChangeyyFAA35CAFButtonActionStatusItemObservableC_Tg5
 + _$s10CAFCombine13SafePublishedC14projectedValue7Combine12AnyPublisherVyq_s5NeverOGvgAA23CAFWiFiStatusObservableC_So15CAFButtonActionVSgTg5
@@ -487,5 +439,4 @@ CStrings:
 + ", buttonAction: "
 + "<CAFButtonActionStatusItemObservable: "
 + "CAFCombine.CAFButtonActionStatusItemObservable"
-
 ```

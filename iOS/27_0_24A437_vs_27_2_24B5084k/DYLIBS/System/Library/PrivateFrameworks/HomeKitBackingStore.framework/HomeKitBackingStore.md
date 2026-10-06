@@ -2,49 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/HomeKitBackingStore.framework/HomeKitBackingStore`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9e414` | `0x9e5e4` | **`+0x1d0`** |
+| `__DATA.__bss` | `0x80` | `0x150` | **`+0xd0`** |
+| `__DATA_DIRTY.__bss` | `0x1e0` | `0x110` | **`-0xd0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2d00` | `0x2d20` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x549c` | `0x54b4` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x1df8` | `0x1e00` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__oslogstring`
+
+### Other Changes
 
 ```diff
 
 -1493.1.5.1.1
--  __TEXT.__text: 0x9bf0c
--  __TEXT.__objc_methlist: 0x549c
 +1514.0.0.0.1
-+  __TEXT.__text: 0x9c0c4
-+  __TEXT.__objc_methlist: 0x54b4
-   __TEXT.__const: 0x140
-   __TEXT.__gcc_except_tab: 0x521c
-   __TEXT.__cstring: 0x74d0
 
-   __DATA_CONST.__objc_catlist: 0xc8
-   __DATA_CONST.__objc_protolist: 0xc0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2d00
-+  __DATA_CONST.__objc_selrefs: 0x2d20
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__objc_superrefs: 0x2d0
-   __DATA_CONST.__objc_arraydata: 0x98
-
-   __DATA.__objc_ivar: 0x5c0
-   __DATA.__data: 0x910
-   __DATA_DIRTY.__objc_data: 0x1d10
--  __DATA_DIRTY.__bss: 0x1e0
-+  __DATA_DIRTY.__bss: 0x110
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreLocation.framework/CoreLocation
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 2134
--  Symbols:   5556
+-  Symbols:   4318
 +  Functions: 2136
-+  Symbols:   5558
-   CStrings:  2410
- 
++  Symbols:   4316
 Symbols:
 + -[HMBCloudDatabase notifyDelegateOfCloudPullForZoneWithID:label:]
 + -[HMBCloudDatabase notifyDelegateOfCloudZoneStartUpForZoneWithID:]
@@ -158,10 +141,6 @@ Symbols:
 + _logCategory._hmf_once_v51
 + _logCategory._hmf_once_v56
 + _logCategory._hmf_once_v63
-+ _objc_msgSend$cloudDatabase:didPerformCloudPullForZoneWithID:label:
-+ _objc_msgSend$cloudDatabase:willStartUpCloudZoneForZoneWithID:
-+ _objc_msgSend$notifyDelegateOfCloudPullForZoneWithID:label:
-+ _objc_msgSend$notifyDelegateOfCloudZoneStartUpForZoneWithID:
 - GCC_except_table1002
 - GCC_except_table1003
 - GCC_except_table1007

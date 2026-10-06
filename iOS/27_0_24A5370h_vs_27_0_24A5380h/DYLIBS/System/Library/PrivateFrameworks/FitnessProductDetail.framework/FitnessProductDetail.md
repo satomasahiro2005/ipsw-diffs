@@ -2,88 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/FitnessProductDetail.framework/FitnessProductDetail`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbab2c` | `0xb1494` | **`-0x9698`** |
+| `__DATA.__bss` | `0x192f0` | `0x16ad0` | **`-0x2820`** |
+| `__TEXT.__const` | `0xe994` | `0xd104` | **`-0x1890`** |
+| `__AUTH_CONST.__const` | `0x5608` | `0x4c68` | **`-0x9a0`** |
+| `__DATA_DIRTY.__bss` | `0xd80` | `0x880` | **`-0x500`** |
+| `__TEXT.__eh_frame` | `0x28b8` | `0x23c8` | **`-0x4f0`** |
+| `__DATA_DIRTY.__data` | `0x1238` | `0xdc8` | **`-0x470`** |
+| `__TEXT.__constg_swiftt` | `0x2380` | `0x1f68` | **`-0x418`** |
+| `__TEXT.__swift5_typeref` | `0x6a9c` | `0x6694` | **`-0x408`** |
+| `__TEXT.__swift5_fieldmd` | `0x2a08` | `0x2628` | **`-0x3e0`** |
+| `__TEXT.__unwind_info` | `0x27f0` | `0x2430` | **`-0x3c0`** |
+| `__DATA.__data` | `0x3020` | `0x2d40` | **`-0x2e0`** |
+| `__TEXT.__swift5_reflstr` | `0x1768` | `0x1518` | **`-0x250`** |
+| `__TEXT.__swift5_proto` | `0xcf8` | `0xb90` | **`-0x168`** |
+| `__TEXT.__swift5_types` | `0x3b0` | `0x348` | **`-0x68`** |
+| `__TEXT.__swift5_assocty` | `0x278` | `0x238` | **`-0x40`** |
+| `__AUTH_CONST.__auth_got` | `0xe70` | `0xe50` | **`-0x20`** |
+| `__TEXT.__swift5_capture` | `0x6c4` | `0x6a4` | **`-0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x30` | `0x20` | **`-0x10`** |
+| `__TEXT.__swift_as_cont` | `0xb4` | `0xa8` | **`-0xc`** |
+| `__AUTH.__data` | `0x658` | `0x660` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x700` | `0x6f8` | **`-0x8`** |
+| `__TEXT.__swift_as_ret` | `0x68` | `0x60` | **`-0x8`** |
+| `__TEXT.__swift_as_entry` | `0x48` | `0x44` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xbab2c
--  __TEXT.__const: 0xe994
--  __TEXT.__swift5_typeref: 0x6a9c
--  __TEXT.__swift5_reflstr: 0x1768
--  __TEXT.__swift5_assocty: 0x278
--  __TEXT.__constg_swiftt: 0x2380
--  __TEXT.__swift5_fieldmd: 0x2a08
-+  __TEXT.__text: 0xb1494
-+  __TEXT.__const: 0xd104
-+  __TEXT.__swift5_typeref: 0x6694
-+  __TEXT.__swift5_reflstr: 0x1518
-+  __TEXT.__swift5_assocty: 0x238
-+  __TEXT.__constg_swiftt: 0x1f68
-+  __TEXT.__swift5_fieldmd: 0x2628
-   __TEXT.__cstring: 0x798
-   __TEXT.__swift5_builtin: 0x28
--  __TEXT.__swift5_proto: 0xcf8
--  __TEXT.__swift5_types: 0x3b0
--  __TEXT.__swift5_capture: 0x6c4
--  __TEXT.__swift_as_entry: 0x48
--  __TEXT.__swift_as_ret: 0x68
--  __TEXT.__swift_as_cont: 0xb4
-+  __TEXT.__swift5_proto: 0xb90
-+  __TEXT.__swift5_types: 0x348
-+  __TEXT.__swift5_capture: 0x6a4
-+  __TEXT.__swift_as_entry: 0x44
-+  __TEXT.__swift_as_ret: 0x60
-+  __TEXT.__swift_as_cont: 0xa8
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__oslogstring: 0xb9
--  __TEXT.__unwind_info: 0x27f0
--  __TEXT.__eh_frame: 0x28b8
-+  __TEXT.__unwind_info: 0x2430
-+  __TEXT.__eh_frame: 0x23c8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-2027.0.117.0.2
++2027.0.124.0.3
 
-   __DATA_CONST.__const: 0xa0
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x30
--  __DATA_CONST.__got: 0x700
--  __AUTH_CONST.__const: 0x5608
-+  __DATA_CONST.__objc_selrefs: 0x20
-+  __DATA_CONST.__got: 0x6f8
-+  __AUTH_CONST.__const: 0x4c68
-   __AUTH_CONST.__objc_const: 0x120
--  __AUTH_CONST.__auth_got: 0xe70
--  __AUTH.__data: 0x658
--  __DATA.__data: 0x3020
--  __DATA.__bss: 0x192f0
-+  __AUTH_CONST.__auth_got: 0xe50
-+  __AUTH.__data: 0x660
-+  __DATA.__data: 0x2d40
-+  __DATA.__bss: 0x16ad0
-   __DATA.__common: 0x18
--  __DATA_DIRTY.__data: 0x1238
--  __DATA_DIRTY.__bss: 0xd80
-+  __DATA_DIRTY.__data: 0xdc8
-+  __DATA_DIRTY.__bss: 0x880
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3717
--  Symbols:   1812
+-  Symbols:   1638
 +  Functions: 3382
-+  Symbols:   1665
-   CStrings:  60
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __AUTH_CONST.__objc_const : content changed
++  Symbols:   1506
 Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA5GroupVyAA012_ConditionalD0VyAGyACyACyAA9RectangleVAA12_FrameLayoutVGAA15_HiddenModifierVGAGyACyACyAA4ViewPAAE10labelStyleyQrqd__AA05LabelN0Rd__lFQOyAA0O0VyAA4TextVAA5ImageVG_20FitnessProductDetail021WorkoutScheduleBanneroN0VQo_AA08_PaddingI0VGA4_GAA05EmptyL0VGGAGyAGyAoGyACyACyACyACyACyAWA4_GA4_GA4_GAA05_FlexhI0VGAA011_BackgroundnK0VyAA5ColorVGGA8_GGA8_GGGAA017_AppearanceActionK0VGAaPHPA27_AaPHPA26_AaPHPA10_AaPHPAoaPHPAlaPHPAiaPHPyHC_AkA0lK0HPyHCHC_AnAA31_HPyHCHC_A9_AaPHPA6_AaPHPA5_AaPHPqd0__AaPHD3_A2_HO_A4_AAA31_HPyHCHC_A4_AAA31_HPyHCHC_A8_AaPHPyHCHCHC_A25_AaPHPA24_AaPHPAoaPHPAlaPHPAiaPHPyHC_AkAA31_HPyHCHC_AnAA31_HPyHCHC_A23_AaPHPA22_AaPHPA16_AaPHPA13_AaPHPA12_AaPHPA11_AaPHPAwaPHPyHC_A4_AAA31_HPyHCHC_A4_AAA31_HPyHCHC_A4_AAA31_HPyHCHC_A15_AAA31_HPyHCHC_A21_AAA31_HPyHCHC_A8_AaPHPyHCHCHC_A8_AaPHPyHCHCHC_HC_A29_AAA31_HPyHCHC
 + _get_witness_table 7SwiftUI4ViewRzAaBR_AaBR0_AaBR1_r2_lAA15ModifiedContentVyAaBP011FitnessCoreB0E04rootF18AccessibilityScopeyQrSSd_tFQOyAeFE07fitnessI10IdentifieryQrSSd_tFQOyAA5GroupVyAA012_ConditionalE0VyALyAA08ProgressC0VyAA05EmptyC0VAPGAA0e11UnavailableC0VyAA5LabelVyAA4TextVAA5ImageVGAWSgAPGGAeAE15navigationTitleyQrAWFQOyAJyALyAA14GeometryReaderVyAA06ScrollC0VyADyADyAA6VStackVyAA05TupleE0VyA8_yALyA8_yA10_yADyADyADyADyADyADyxAA0I18AttachmentModifierVGAA12_FrameLayoutVGAA11_ClipEffectVyAA9RectangleVGGAA16_OverlayModifierVyADyADyADyA8_yA10_yADyADyADyADyAwA30_EnvironmentKeyWritingModifierVySiSgGGA12_GAA14_PaddingLayoutVGA32_G_ADyADyADyA8_yA10_yA8_yA10_yALyAA6ButtonVyAWGAA6HStackVyAA7ForEachVySay0F13ProductDetail20WorkoutDetailTrainerVGA44_AWGGGSg_ADyAwA16_FixedSizeLayoutVGQPGG_AE011_JetEngine_aB0E14impressionable_13configuration8position20definesParentContextQr9JetEngine17ImpressionMetricsVSg_A60_21ImpressionsCalculatorC13ConfigurationVA27_SbtFQOyq0__Qo_QPGGA32_GA32_GA32_GSgQPGSgGA32_GA32_GA32_GGGAA30_SafeAreaRegionsIgnoringLayoutVGAA01_W14ActionModifierVy0G8Graphics7CGFloatVGG_ADyq1_A84_GQPGGADyA8_yA10_yADyADyA13_AA18_AspectRatioLayoutVGA24_yADyA76_A32_GGG_q1_QPGGA18_yAA16RoundedRectangleVGGGG_ADyADyAJyA10_yA30_Sg_A70_Sg0f6CanvasB0011DescriptionC0VyAPGADyADyA8_yA10_yADyA39_yA10_yADyAEA55_EA56__A57_A58_A59_QrA63__A67_A27_SbtFQOyADyAWA26_yAY5ScaleOGG_Qo_A12_G_AA6SpacerVADyADyA37_AA24_ForegroundStyleModifierVyAA5ColorVGGA12_GSgQPGGA32_G_A41_ySaySi_A42_23WorkoutDetailMusicTrackVtGSSAeAE12onTapGesture5count7performQrSi_yyctFQOyADyAeAE20accessibilityElement8childrenQrAA0I13ChildBehaviorV_tFQOyA8_yALyA10_yADyA39_yA10_yADyAeAE8staticIf_4then4elseQrqd___qd_0_xXEqd_1_xXEtAA0C14InputPredicateRd__AaBRd_0_AaBRd_1_r1_lFQOyADyADyxA97_GA15_G_AA8SolariumVADyA150_A106_GA153_Qo_A106_G_ADyA8_yA10_yA39_yA10_yADyA29_A26_ySbGG_A_QPGG_A157_QPGGA32_GQPGGAA16_FlexFrameLayoutVG_ADyADyADyADyAA7DividerVAA21_OverlayStyleModifierVyA127_GGA21_GA32_GA84_GSgQPGA8_yA10_yA153__ADyA8_yA10_yA39_yA10_yADyADyA29_A51_GA156_G_A_QPGG_A157_QPGGA32_GA174_SgQPGGGG_Qo_A12_G_Qo_GQPGGA32_GAA24_BackgroundStyleModifierVyA127_GGSgA10_yADyADyADyADyq_A32_GA32_GA84_GA32_G_ADyA8_yA10_yADyAWA12_G_A2WA10_yAW_AWQPGSgA209_QPGSgGA32_GQPGSgA8_yA10_yA207__AWQPGGSgQPGGAA23SafeAreaPaddingModifierVGA222_GQPGGA32_GA32_GGGALyA6_yADyADyADyA8_yA10_yAA09_VariadicC0O4TreeVy_AA11_LayoutRootVyA42_15TwoColumnHStackVGA10_yA8_yA10_yADyA109_A32_G_A33_A70_ADyA115_A32_GQPGG_A196_QPGG_ADyq_A84_GSgADyADyADyA234_y_A236_yA42_16EqualWidthHStackVGA10_yA212_Sg_A218_A127_SgQPGGA32_GA32_GA200_GQPGGA222_GA222_GA222_GGA4_yADyA6_yADyADyADyA8_yA10_yA8_yA10_yADyADyA8_yADyA109_A15_GGA166_GA32_G_A33_A70_QPGG_A196_ADyA246_A32_GSgADyADyADyADyA8_yA10_yA213_Sg_A218_QPGGA166_GA32_GA32_GA200_GQPGGA222_GA222_GA222_GGA84_GGGGG_Qo_GG_Qo__Qo_AA25_AppearanceActionModifierVGAaBHPqd__AaBHD2_A294_HO_A296_AA0C8ModifierHPyHCHC
@@ -172,8 +130,6 @@ Symbols:
 - _get_witness_table 7SwiftUI15ModifiedContentVyAA5GroupVyAA012_ConditionalD0VyAGyACyACyAA9RectangleVAA12_FrameLayoutVGAA15_HiddenModifierVGAGyAA4ViewPAAE10labelStyleyQrqd__AA05LabelN0Rd__lFQOyAA0O0VyAA4TextVAA5ImageVG_20FitnessProductDetail021WorkoutScheduleBanneroN0VQo_AA05EmptyL0VGGAGyAGyAoGyACyACyACyAwA08_PaddingI0VGAA05_FlexhI0VGAA011_BackgroundnK0VyAA5ColorVGGA4_GGA4_GGGAA017_AppearanceActionK0VGAaPHPA23_AaPHPA22_AaPHPA6_AaPHPAoaPHPAlaPHPAiaPHPyHC_AkA0lK0HPyHCHC_AnAA27_HPyHCHC_A5_AaPHPqd0__AaPHD3_A2_HO_A4_AaPHPyHCHCHC_A21_AaPHPA20_AaPHPAoaPHPAlaPHPAiaPHPyHC_AkAA27_HPyHCHC_AnAA27_HPyHCHC_A19_AaPHPA18_AaPHPA12_AaPHPA9_AaPHPAwaPHPyHC_A8_AAA27_HPyHCHC_A11_AAA27_HPyHCHC_A17_AAA27_HPyHCHC_A4_AaPHPyHCHCHC_A4_AaPHPyHCHCHC_HC_A25_AAA27_HPyHCHC
 - _get_witness_table 7SwiftUI4ViewRzAaBR_AaBR0_AaBR1_r2_lAA15ModifiedContentVyAaBP011FitnessCoreB0E04rootF18AccessibilityScopeyQrSSd_tFQOyAeFE07fitnessI10IdentifieryQrSSd_tFQOyAA5GroupVyAA012_ConditionalE0VyALyAA08ProgressC0VyAA05EmptyC0VAPGAA0e11UnavailableC0VyAA5LabelVyAA4TextVAA5ImageVGAWSgAPGGAeAE15navigationTitleyQrAWFQOyAJyALyAA14GeometryReaderVyAA06ScrollC0VyADyADyAA6VStackVyAA05TupleE0VyA8_yALyAA6ZStackVyA10_yADyADyADyxAA30_SafeAreaRegionsIgnoringLayoutVGAA0I18AttachmentModifierVGAA18_AspectRatioLayoutVG_A8_yA10_yAA6SpacerV_A10_yADyADyADyADyAwA30_EnvironmentKeyWritingModifierVySiSgGGA17_GAA14_PaddingLayoutVGA31_G_ADyADyADyA8_yA10_yA8_yA10_yALyAA6ButtonVyAWGAA6HStackVyAA7ForEachVySay0F13ProductDetail20WorkoutDetailTrainerVGA43_AWGGGSg_ADyAwA16_FixedSizeLayoutVGQPGG_AE011_JetEngine_aB0E14impressionable_13configuration8position20definesParentContextQr9JetEngine17ImpressionMetricsVSg_A59_21ImpressionsCalculatorC13ConfigurationVA26_SbtFQOyq0__Qo_QPGGA31_GA31_GA31_GSgQPGSgADyADyq1_AA23SafeAreaPaddingModifierVGA77_GQPGGQPGGADyA8_yA10_yADyADyADyxA17_GA20_GAA16_OverlayModifierVyADyA75_A31_GGG_A79_QPGGAA11_ClipEffectVyAA16RoundedRectangleVGGGG_ADyADyAJyA10_yA29_Sg_A69_Sg0f6CanvasB0011DescriptionC0VyAPGADyADyA8_yA10_yADyA38_yA10_yADyAEA54_EA55__A56_A57_A58_QrA62__A66_A26_SbtFQOyADyAWA25_yAY5ScaleOGG_Qo_A17_G_A23_ADyADyA36_AA24_ForegroundStyleModifierVyAA5ColorVGGA17_GSgQPGGA31_G_A40_ySaySi_A41_23WorkoutDetailMusicTrackVtGSSAeAE12onTapGesture5count7performQrSi_yyctFQOyADyAeAE20accessibilityElement8childrenQrAA0I13ChildBehaviorV_tFQOyA8_yALyA10_yADyA38_yA10_yADyAeAE8staticIf_4then4elseQrqd___qd_0_xXEqd_1_xXEtAA0C14InputPredicateRd__AaBRd_0_AaBRd_1_r1_lFQOyADyADyxA20_GAA12_FrameLayoutVG_AA8SolariumVADyA141_A97_GA144_Qo_A97_G_ADyA8_yA10_yA38_yA10_yADyA28_A25_ySbGG_A_QPGG_A148_QPGGA31_GQPGGAA16_FlexFrameLayoutVG_ADyADyADyADyAA7DividerVAA21_OverlayStyleModifierVyA116_GGA94_yAA9RectangleVGGA31_GA14_GSgQPGA8_yA10_yA144__ADyA8_yA10_yA38_yA10_yADyADyA28_A50_GA147_G_A_QPGG_A148_QPGGA31_GA168_SgQPGGGG_Qo_A17_G_Qo_GQPGGA31_GAA24_BackgroundStyleModifierVyA116_GGSgA10_yADyADyq_A14_GA31_G_ADyA8_yA10_yADyAWA17_G_A2WA10_yAW_AWQPGSgA201_QPGSgGA31_GQPGSgA8_yA10_yA199__AWQPGGSgQPGGA77_GA77_GQPGGA31_GA31_GGGALyA6_yADyADyADyA8_yA10_yAA09_VariadicC0O4TreeVy_AA11_LayoutRootVyA41_15TwoColumnHStackVGA10_yA8_yA10_yADyA100_A31_G_A32_A69_ADyA106_A31_GQPGG_A190_QPGG_A197_SgADyADyADyA224_y_A226_yA41_16EqualWidthHStackVGA10_yA204_Sg_A210_A116_SgQPGGA31_GA31_GA194_GQPGGA77_GA77_GA77_GGA4_yADyA6_yADyADyADyA8_yA10_yA8_yA10_yADyADyA8_yADyA100_A140_GGA157_GA31_G_A32_A69_QPGG_A190_A198_SgADyADyADyADyA8_yA10_yA205_Sg_A210_QPGGA157_GA31_GA31_GA194_GQPGGA77_GA77_GA77_GGA14_GGGGG_Qo_GG_Qo__Qo_AA25_AppearanceActionModifierVGAaBHPqd__AaBHD2_A282_HO_A284_AA0C8ModifierHPyHCHC
 - _get_witness_table 7SwiftUI4ViewRzlAA15ModifiedContentVyADyAA6ZStackVyAA05TupleE0VyADyAA5ColorVAA12_FrameLayoutVG_AA012_ConditionalE0VyAA05EmptyC0VAA6VStackVyAHyADyADyxALGAA11_ClipEffectVyAA16RoundedRectangleVGGSg_ASyAHyADyADyADyAA4TextVALGAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA016_ForegroundStyleV0VyAJGGSg_A14_QPGGQPGGGQPGGAA08_PaddingJ0VGAA017_AppearanceActionV0VGAaBHPA24_AaBHPA21_AaBHPyHC_A23_AA0cV0HPyHCHC_A26_AAA28_HPyHCHC
-- _objc_msgSend$bounds
-- _objc_msgSend$mainScreen
 - _swift_release_n
 - _swift_retain_n
 - _swift_retain_x26
@@ -275,5 +231,4 @@ Symbols:
 - _type_layout_string 20FitnessProductDetail32WorkoutContextMenuPreviewFeatureV14TaskIdentifierO
 - _type_layout_string 20FitnessProductDetail36WorkoutContextMenuPreviewEnvironmentV
 - _type_layout_string 7SwiftUI4ViewRzl20FitnessProductDetail025WorkoutContextMenuPreviewC0V6Layout33_D732B52B5CE8B15791BF3C66709D65F7LLVyx_G
-
 ```

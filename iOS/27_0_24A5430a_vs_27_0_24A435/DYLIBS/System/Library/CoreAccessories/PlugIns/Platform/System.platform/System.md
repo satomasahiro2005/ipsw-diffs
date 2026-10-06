@@ -2,6 +2,8 @@
 
 > `/System/Library/CoreAccessories/PlugIns/Platform/System.platform/System`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_7 : 28 -> 12

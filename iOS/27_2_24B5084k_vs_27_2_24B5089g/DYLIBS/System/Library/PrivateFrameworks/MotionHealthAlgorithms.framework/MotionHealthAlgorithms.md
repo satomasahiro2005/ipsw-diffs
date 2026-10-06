@@ -2,94 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/MotionHealthAlgorithms.framework/MotionHealthAlgorithms`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbdcd0` | `0xc1c34` | **`+0x3f64`** |
+| `__TEXT.__oslogstring` | `0x1d83` | `0x1687` | **`-0x6fc`** |
+| `__AUTH_CONST.__const` | `0x83d0` | `0x88d8` | **`+0x508`** |
+| `__TEXT.__eh_frame` | `0x4124` | `0x3c4c` | **`-0x4d8`** |
+| `__TEXT.__swift5_reflstr` | `0x3a2b` | `0x3e80` | **`+0x455`** |
+| `__TEXT.__swift5_fieldmd` | `0x33b4` | `0x3648` | **`+0x294`** |
+| `__DATA.__bss` | `0x4948` | `0x4ba8` | **`+0x260`** |
+| `__TEXT.__cstring` | `0x6070` | `0x61fb` | **`+0x18b`** |
+| `__TEXT.__const` | `0x6038` | `0x61b4` | **`+0x17c`** |
+| `__TEXT.__swift5_typeref` | `0x1698` | `0x17d6` | **`+0x13e`** |
+| `__TEXT.__constg_swiftt` | `0x2f18` | `0x3040` | **`+0x128`** |
+| `__DATA.__common` | `0x100` | `0x220` | **`+0x120`** |
+| `__AUTH.__data` | `0x3550` | `0x3618` | **`+0xc8`** |
+| `__AUTH_CONST.__objc_const` | `0x4fb0` | `0x5070` | **`+0xc0`** |
+| `__TEXT.__gcc_except_tab` | `0x308` | `0x268` | **`-0xa0`** |
+| `__TEXT.__swift_as_cont` | `0x3b8` | `0x334` | **`-0x84`** |
+| `__TEXT.__swift_as_entry` | `0x244` | `0x1cc` | **`-0x78`** |
+| `__TEXT.__swift_as_ret` | `0x240` | `0x1cc` | **`-0x74`** |
+| `__TEXT.__swift5_capture` | `0x1294` | `0x12e8` | **`+0x54`** |
+| `__DATA.__data` | `0x1050` | `0x1000` | **`-0x50`** |
+| `__AUTH_CONST.__cfstring` | `0x6e0` | `0x6a0` | **`-0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x798` | `0x758` | **`-0x40`** |
+| `__TEXT.__objc_methlist` | `0x94c` | `0x91c` | **`-0x30`** |
+| `__TEXT.__swift5_assocty` | `0x348` | `0x360` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0x234` | `0x24c` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x2c78` | `0x2c60` | **`-0x18`** |
+| `__TEXT.__swift5_proto` | `0x224` | `0x238` | **`+0x14`** |
+| `__AUTH_CONST.__auth_got` | `0xfb8` | `0xfa8` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3186.0.12.0.0
--  __TEXT.__text: 0xb751c
--  __TEXT.__objc_methlist: 0x94c
--  __TEXT.__const: 0x6038
--  __TEXT.__cstring: 0x6070
--  __TEXT.__swift5_typeref: 0x1698
--  __TEXT.__swift5_capture: 0x1294
--  __TEXT.__constg_swiftt: 0x2f18
--  __TEXT.__swift5_reflstr: 0x3a2b
--  __TEXT.__swift5_fieldmd: 0x33b4
--  __TEXT.__swift5_types: 0x234
--  __TEXT.__swift_as_entry: 0x244
--  __TEXT.__swift_as_ret: 0x240
--  __TEXT.__swift_as_cont: 0x3b8
--  __TEXT.__swift5_proto: 0x224
--  __TEXT.__swift5_assocty: 0x348
 +3186.0.17.0.1
-+  __TEXT.__text: 0xbb648
-+  __TEXT.__objc_methlist: 0x91c
-+  __TEXT.__const: 0x61b4
-+  __TEXT.__cstring: 0x61fb
-+  __TEXT.__swift5_typeref: 0x17d6
-+  __TEXT.__swift5_capture: 0x12e8
-+  __TEXT.__constg_swiftt: 0x3040
-+  __TEXT.__swift5_reflstr: 0x3e80
-+  __TEXT.__swift5_fieldmd: 0x3648
-+  __TEXT.__swift5_types: 0x24c
-+  __TEXT.__swift_as_entry: 0x1cc
-+  __TEXT.__swift_as_ret: 0x1cc
-+  __TEXT.__swift_as_cont: 0x334
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_protos: 0x14
-+  __TEXT.__swift5_proto: 0x238
-+  __TEXT.__swift5_assocty: 0x360
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__gcc_except_tab: 0x308
--  __TEXT.__oslogstring: 0x1d83
--  __TEXT.__unwind_info: 0x3740
--  __TEXT.__eh_frame: 0x4184
-+  __TEXT.__gcc_except_tab: 0x268
-+  __TEXT.__oslogstring: 0x1687
-+  __TEXT.__unwind_info: 0x3788
-+  __TEXT.__eh_frame: 0x3cac
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_protolist: 0x90
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x798
-+  __DATA_CONST.__objc_selrefs: 0x758
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x83d0
--  __AUTH_CONST.__cfstring: 0x6e0
--  __AUTH_CONST.__objc_const: 0x4fb0
-+  __AUTH_CONST.__const: 0x88d8
-+  __AUTH_CONST.__cfstring: 0x6a0
-+  __AUTH_CONST.__objc_const: 0x5070
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__auth_got: 0xfb8
-+  __AUTH_CONST.__auth_got: 0xfa8
-   __AUTH.__objc_data: 0x1078
--  __AUTH.__data: 0x3550
-+  __AUTH.__data: 0x3618
-   __DATA.__objc_ivar: 0x70
--  __DATA.__data: 0x1050
--  __DATA.__common: 0x100
-+  __DATA.__data: 0x1000
-+  __DATA.__common: 0x220
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4609
--  Symbols:   10569
+-  Symbols:   10366
 -  CStrings:  792
 +  Functions: 4703
-+  Symbols:   10718
++  Symbols:   10523
 +  CStrings:  782
- 
 Symbols:
 + +[StepTestHRRHistoricalDataBridge cardioHealthManager]
 + +[StepTestHistoricalDataBridge cardioHealthManager]
@@ -687,8 +645,6 @@ Symbols:
 + _get_enum_tag_for_layout_string 22MotionHealthAlgorithms12HRStreamKeysV8TimelineVSg
 + _get_enum_tag_for_layout_string SaySfG1l_AA1rtSg
 + _memset
-+ _objc_msgSend$cardioHealthManager
-+ _objc_msgSend$getMostRecentVO2MaxInfo:completion:
 + _symbolic SSSic
 + _symbolic SaySfG1l_AA1rtSg
 + _symbolic SaySi5stage_Sd14continuousTimetG
@@ -1158,16 +1114,6 @@ Symbols:
 - ___swift_memcpy112_8
 - ___swift_memcpy160_8
 - _associated conformance 22MotionHealthAlgorithms16HeartRateManagerC9NCHRError33_111CFCE3B0E6B46878C72B6478D9EB05LLOSHAASQ
-- _objc_msgSend$daysSinceLastPhoneVO2Max:
-- _objc_msgSend$daysSinceLastWatchVO2Max:
-- _objc_msgSend$dictionary
-- _objc_msgSend$errorWithDomain:code:userInfo:
-- _objc_msgSend$getMostRecentPhoneVO2Max:completion:
-- _objc_msgSend$getMostRecentStepTestVO2MaxInfo:completion:
-- _objc_msgSend$getMostRecentWatchVO2Max:completion:
-- _objc_msgSend$intValue
-- _objc_msgSend$sessionId
-- _objc_msgSend$sharedCardioHealthManager
 - _symbolic SS_ypSgt
 - _symbolic SS_ypSgtIeAgHr_
 - _symbolic SS_ypSgtSg

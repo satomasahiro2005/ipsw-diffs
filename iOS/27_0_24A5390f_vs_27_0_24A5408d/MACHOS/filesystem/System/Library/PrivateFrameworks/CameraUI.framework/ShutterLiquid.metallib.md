@@ -2,17 +2,10 @@
 
 > `/System/Library/PrivateFrameworks/CameraUI.framework/ShutterLiquid.metallib`
 
-```diff
+### Section Size Changes
 
-   __TEXT.__reflection: 0x960
--  __TEXT.__vertex: 0x9a0
--  __TEXT.__fragment: 0xf70
-+  __TEXT.__vertex: 0x9b0
-+  __TEXT.__fragment: 0xf80
-   __TEXT.__descriptor: 0xe0
--  __TEXT.__metallib: 0x33e0
-+  __TEXT.__metallib: 0x33f0
-   Functions: 0
-   Symbols:   0
-   CStrings:  0
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__fragment` | `0xf50` | `0xf60` | **`+0x10`** |
+| `__TEXT.__metallib` | `0x33e0` | `0x33f0` | **`+0x10`** |
+| `__TEXT.__vertex` | `0x9f0` | `0xa00` | **`+0x10`** |

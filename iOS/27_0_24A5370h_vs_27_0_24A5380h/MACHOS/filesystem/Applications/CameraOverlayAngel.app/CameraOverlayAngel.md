@@ -2,113 +2,71 @@
 
 > `/Applications/CameraOverlayAngel.app/CameraOverlayAngel`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x30440` | `0x2ce3c` | **`-0x3604`** |
+| `__TEXT.__objc_methname` | `0x8a21` | `0x81f1` | **`-0x830`** |
+| `__TEXT.__objc_stubs` | `0x6220` | `0x5be0` | **`-0x640`** |
+| `__DATA.__objc_const` | `0x3ab8` | `0x37b8` | **`-0x300`** |
+| `__TEXT.__objc_methlist` | `0x274c` | `0x255c` | **`-0x1f0`** |
+| `__DATA_CONST.__const` | `0x1528` | `0x1340` | **`-0x1e8`** |
+| `__DATA.__objc_data` | `0x1070` | `0xeb8` | **`-0x1b8`** |
+| `__DATA.__objc_selrefs` | `0x1e60` | `0x1cb0` | **`-0x1b0`** |
+| `__DATA.__bss` | `0xf50` | `0xdd0` | **`-0x180`** |
+| `__TEXT.__const` | `0xeb8` | `0xd50` | **`-0x168`** |
+| `__TEXT.__cstring` | `0x1166` | `0x1009` | **`-0x15d`** |
+| `__TEXT.__constg_swiftt` | `0x968` | `0x850` | **`-0x118`** |
+| `__TEXT.__unwind_info` | `0xc78` | `0xb70` | **`-0x108`** |
+| `__TEXT.__oslogstring` | `0x124f` | `0x115a` | **`-0xf5`** |
+| `__TEXT.__objc_methtype` | `0x2149` | `0x205f` | **`-0xea`** |
+| `__TEXT.__swift5_reflstr` | `0x80a` | `0x724` | **`-0xe6`** |
+| `__TEXT.__gcc_except_tab` | `0x260` | `0x1a4` | **`-0xbc`** |
+| `__TEXT.__swift5_fieldmd` | `0x6f0` | `0x638` | **`-0xb8`** |
+| `__DATA_CONST.__cfstring` | `0xa80` | `0x9e0` | **`-0xa0`** |
+| `__DATA.__data` | `0x1500` | `0x1470` | **`-0x90`** |
+| `__TEXT.__auth_stubs` | `0x1340` | `0x12c0` | **`-0x80`** |
+| `__TEXT.__objc_classname` | `0x6ef` | `0x690` | **`-0x5f`** |
+| `__TEXT.__swift5_typeref` | `0x95a` | `0x900` | **`-0x5a`** |
+| `__DATA.__common` | `0x68` | `0xb0` | **`+0x48`** |
+| `__DATA_CONST.__got` | `0x488` | `0x440` | **`-0x48`** |
+| `__DATA_CONST.__auth_got` | `0x9b0` | `0x970` | **`-0x40`** |
+| `__TEXT.__swift5_capture` | `0x124` | `0xf4` | **`-0x30`** |
+| `__DATA_CONST.__auth_ptr` | `0x158` | `0x170` | **`+0x18`** |
+| `__DATA_CONST.__objc_intobj` | `0xa8` | `0x90` | **`-0x18`** |
+| `__TEXT.__swift5_assocty` | `0x150` | `0x138` | **`-0x18`** |
+| `__TEXT.__swift5_builtin` | `0x8c` | `0x78` | **`-0x14`** |
+| `__TEXT.__swift5_proto` | `0xb0` | `0xa4` | **`-0xc`** |
+| `__TEXT.__swift5_types` | `0x64` | `0x58` | **`-0xc`** |
+| `__DATA.__objc_ivar` | `0x1ec` | `0x1e4` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0xb0` | `0xa8` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_doubleobj`
+- `__DATA_CONST.__objc_floatobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_protos`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x30440
--  __TEXT.__auth_stubs: 0x1340
--  __TEXT.__objc_stubs: 0x6220
--  __TEXT.__objc_methlist: 0x274c
--  __TEXT.__const: 0xeb8
--  __TEXT.__gcc_except_tab: 0x260
--  __TEXT.__cstring: 0x1166
--  __TEXT.__objc_methname: 0x8a21
--  __TEXT.__oslogstring: 0x124f
--  __TEXT.__objc_classname: 0x6ef
--  __TEXT.__objc_methtype: 0x2149
-+  __TEXT.__text: 0x2ce3c
-+  __TEXT.__auth_stubs: 0x12c0
-+  __TEXT.__objc_stubs: 0x5be0
-+  __TEXT.__objc_methlist: 0x255c
-+  __TEXT.__const: 0xd50
-+  __TEXT.__gcc_except_tab: 0x1a4
-+  __TEXT.__cstring: 0x1009
-+  __TEXT.__objc_methname: 0x81f1
-+  __TEXT.__oslogstring: 0x115a
-+  __TEXT.__objc_classname: 0x690
-+  __TEXT.__objc_methtype: 0x205f
-   __TEXT.__dlopen_cstrs: 0x6e
--  __TEXT.__constg_swiftt: 0x968
--  __TEXT.__swift5_typeref: 0x95a
--  __TEXT.__swift5_builtin: 0x8c
--  __TEXT.__swift5_reflstr: 0x80a
--  __TEXT.__swift5_assocty: 0x150
--  __TEXT.__swift5_proto: 0xb0
--  __TEXT.__swift5_types: 0x64
--  __TEXT.__swift5_fieldmd: 0x6f0
--  __TEXT.__swift5_capture: 0x124
-+  __TEXT.__constg_swiftt: 0x850
-+  __TEXT.__swift5_typeref: 0x900
-+  __TEXT.__swift5_builtin: 0x78
-+  __TEXT.__swift5_reflstr: 0x724
-+  __TEXT.__swift5_assocty: 0x138
-+  __TEXT.__swift5_proto: 0xa4
-+  __TEXT.__swift5_types: 0x58
-+  __TEXT.__swift5_fieldmd: 0x638
-+  __TEXT.__swift5_capture: 0xf4
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__unwind_info: 0xc78
-+  __TEXT.__unwind_info: 0xb70
-   __TEXT.__eh_frame: 0x200
--  __DATA_CONST.__const: 0x1528
--  __DATA_CONST.__cfstring: 0xa80
--  __DATA_CONST.__objc_classlist: 0xb0
-+  __DATA_CONST.__const: 0x1340
-+  __DATA_CONST.__cfstring: 0x9e0
-+  __DATA_CONST.__objc_classlist: 0xa8
-   __DATA_CONST.__objc_protolist: 0x190
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x90
-   __DATA_CONST.__objc_superrefs: 0x48
-   __DATA_CONST.__objc_doubleobj: 0x60
--  __DATA_CONST.__objc_intobj: 0xa8
-+  __DATA_CONST.__objc_intobj: 0x90
-   __DATA_CONST.__objc_arraydata: 0x10
-   __DATA_CONST.__objc_arrayobj: 0x18
-   __DATA_CONST.__objc_floatobj: 0x10
--  __DATA_CONST.__auth_got: 0x9b0
--  __DATA_CONST.__got: 0x488
--  __DATA_CONST.__auth_ptr: 0x158
--  __DATA.__objc_const: 0x3ab8
--  __DATA.__objc_selrefs: 0x1e60
--  __DATA.__objc_ivar: 0x1ec
--  __DATA.__objc_data: 0x1070
--  __DATA.__data: 0x1500
--  __DATA.__bss: 0xf50
--  __DATA.__common: 0x68
-+  __DATA_CONST.__auth_got: 0x970
-+  __DATA_CONST.__got: 0x440
-+  __DATA_CONST.__auth_ptr: 0x170
-+  __DATA.__objc_const: 0x37b8
-+  __DATA.__objc_selrefs: 0x1cb0
-+  __DATA.__objc_ivar: 0x1e4
-+  __DATA.__objc_data: 0xeb8
-+  __DATA.__data: 0x1470
-+  __DATA.__bss: 0xdd0
-+  __DATA.__common: 0xb0
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+-4167.0.0.0.2
++4171.0.0.0.1
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1146
 -  Symbols:   547
--  CStrings:  1951
+-  CStrings:  1863
 +  Functions: 1065
 +  Symbols:   530
-+  CStrings:  1848
- 
-Sections:
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_doubleobj : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__objc_floatobj : content changed
++  CStrings:  1766
 Symbols:
 + _OBJC_METACLASS_$_UIApplication
 + _swift_release_x26
@@ -241,5 +199,4 @@ CStrings:
 - "v16@?0@\"UIGraphicsImageRendererContext\"8"
 - "v24@?0d8d16"
 - "v32@0:8@\"CAMSystemOverlayStateMachine\"16q24"
-
 ```

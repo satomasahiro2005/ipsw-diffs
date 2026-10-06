@@ -2,59 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/AirPlaySender.framework/AirPlaySender`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x241554` | `0x243ad0` | **`+0x257c`** |
+| `__TEXT.__cstring` | `0x8dd16` | `0x8ea9c` | **`+0xd86`** |
+| `__AUTH_CONST.__cfstring` | `0x147c0` | `0x14880` | **`+0xc0`** |
+| `__DATA_CONST.__const` | `0x75d0` | `0x7668` | **`+0x98`** |
+| `__TEXT.__unwind_info` | `0x5818` | `0x58a0` | **`+0x88`** |
+| `__TEXT.__const` | `0x6150` | `0x61b0` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0xa48` | `0xa88` | **`+0x40`** |
+| `__TEXT.__oslogstring` | `0xfdd` | `0x1009` | **`+0x2c`** |
+| `__DATA_CONST.__objc_selrefs` | `0xaa0` | `0xab8` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x2370` | `0x2378` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -980.71.1.0.0
--  __TEXT.__text: 0x241554
 +980.75.1.0.0
-+  __TEXT.__text: 0x243ad0
-   __TEXT.__objc_methlist: 0x7ec
--  __TEXT.__cstring: 0x8dd16
--  __TEXT.__const: 0x6150
--  __TEXT.__gcc_except_tab: 0xa48
-+  __TEXT.__cstring: 0x8ea9c
-+  __TEXT.__const: 0x61b0
-+  __TEXT.__gcc_except_tab: 0xa88
-   __TEXT.__dlopen_cstrs: 0x5c1
--  __TEXT.__oslogstring: 0xfdd
--  __TEXT.__unwind_info: 0x5818
-+  __TEXT.__oslogstring: 0x1009
-+  __TEXT.__unwind_info: 0x58a0
-   __TEXT.__eh_frame: 0x48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x75d0
-+  __DATA_CONST.__const: 0x7668
-   __DATA_CONST.__objc_classlist: 0x38
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xaa0
-+  __DATA_CONST.__objc_selrefs: 0xab8
-   __DATA_CONST.__objc_superrefs: 0x38
-   __DATA_CONST.__objc_arraydata: 0x170
--  __DATA_CONST.__got: 0x2370
-+  __DATA_CONST.__got: 0x2378
-   __AUTH_CONST.__const: 0x7740
--  __AUTH_CONST.__cfstring: 0x147c0
-+  __AUTH_CONST.__cfstring: 0x14880
-   __AUTH_CONST.__objc_const: 0xed0
-   __AUTH_CONST.__objc_dictobj: 0x1b8
-   __AUTH_CONST.__objc_intobj: 0x150
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 11380
--  Symbols:   8894
+-  Symbols:   8628
 -  CStrings:  11533
 +  Functions: 11431
-+  Symbols:   8927
++  Symbols:   8658
 +  CStrings:  11570
- 
 Symbols:
 + GCC_except_table129
 + GCC_except_table130
@@ -90,9 +65,6 @@ Symbols:
 + _manager_performProactiveNANAutoPair
 + _manager_performProactiveNANBootstrap
 + _manager_registerDiscoveryQueryObserver
-+ _objc_msgSend$addOperationWithBlock:
-+ _objc_msgSend$cancelAllOperations
-+ _objc_msgSend$setMaxConcurrentOperationCount:
 - GCC_except_table87
 - _FigSignalErrorAt3
 - _emp_isEndpointCacheable

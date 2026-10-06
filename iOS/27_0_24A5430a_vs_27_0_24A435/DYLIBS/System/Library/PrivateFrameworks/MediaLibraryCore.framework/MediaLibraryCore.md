@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MediaLibraryCore.framework/MediaLibraryCore`
 
-```diff
+### Section Size Changes
 
- 4026.100.85.0.0
--  __TEXT.__text: 0x3a1b8c
-+  __TEXT.__text: 0x3a1ba4
-   __TEXT.__const: 0xd262
-   __TEXT.__gcc_except_tab: 0x2aa84
-   __TEXT.__cstring: 0x5add
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3a1b8c` | `0x3a1ba4` | **`+0x18`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN6mlcore20LocalizedSearchQuery22_performWeightedSearchENSt3__110shared_ptrINS_11TransactionEEENS1_8functionIFvNS2_INS_11QueryResultEEEEEE : 13760 -> 13764
 ~ __ZNSt3__16vectorIPN6mlcore17ModelPropertyBaseENS_9allocatorIS3_EEE24__emplace_back_slow_pathIJS3_EEEPS3_DpOT_ : 184 -> 176

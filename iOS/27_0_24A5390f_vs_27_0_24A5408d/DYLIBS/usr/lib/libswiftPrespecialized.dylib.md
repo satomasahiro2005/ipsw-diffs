@@ -2,27 +2,22 @@
 
 > `/usr/lib/libswiftPrespecialized.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__const` | `0x3bd348` | `0x3c0fd8` | **`+0x3c90`** |
+| `__AUTH.__data` | `0xd4848` | `0xd4590` | **`-0x2b8`** |
+| `__AUTH_CONST.__const` | `0x740f8` | `0x74088` | **`-0x70`** |
+| `__DATA_CONST.__ptrhashtabkey` | `0x32630` | `0x325d0` | **`-0x60`** |
+| `__DATA_CONST.__ptrhashtab` | `0x1ece8` | `0x1eca8` | **`-0x40`** |
+
+### Other Changes
+
 ```diff
 
- 0.0.0.0.0
-   __TEXT.__text: 0x0
-   __TEXT.__lldb_no_nlist: 0x0
--  __DATA_CONST.__const: 0x3bd360
--  __DATA_CONST.__ptrhashtab: 0x1ece8
--  __DATA_CONST.__ptrhashtabkey: 0x32630
--  __AUTH_CONST.__const: 0x740f8
--  __AUTH.__data: 0xd4848
-+  __DATA_CONST.__const: 0x3c0fd8
-+  __DATA_CONST.__ptrhashtab: 0x1eca8
-+  __DATA_CONST.__ptrhashtabkey: 0x325d0
-+  __AUTH_CONST.__const: 0x74088
-+  __AUTH.__data: 0xd4590
-   - /usr/lib/libSystem.B.dylib
-   Functions: 0
--  Symbols:   190247
+-  Symbols:   190245
 +  Symbols:   190790
-   CStrings:  0
- 
 Symbols:
 + _$s012_SwiftMedia_A2UI0B12GroupContentPAAE012mediaLegibleE7PaddingyQr0aC010EdgeInsetsVFQOMQ
 + _$s012_SwiftMedia_A2UI0B12GroupContentPAAE18mediaPlayerOverlay9alignment013insetsLegibleE07contentQr0aC09AlignmentV_Sbqd__SbctAH4ViewRd__lFQOMQ
@@ -1561,8 +1556,6 @@ Symbols:
 - _$s21IntelligenceFlowProto019VersionedTranscriptc14SystemResponseG7ContextVMn
 - _$s21ServicesAnalyticsCore0cB11MessageKindOMn
 - _$s21ServicesAnalyticsCore0cB15MessageEnvelopeVMn
-- _$s22FindMyBeaconingSupport13SystemKeyTypeOMn
-- _$s22FindMyBeaconingSupport5ErrorOMn
 - _$s22SoftwareUpdateUIBridge29SUUIBridgePlatformEnvironmentC_13configurationAC0aB12UIFoundation20SUUIDeviceDescriptorV23ProductFamilyIdentifierV_AE27SUUIExperienceConfigurationVtcfCTq
 - _$s22VisualIntelligenceCore23StillImageMediaManifestC13cvCoordinator14requestsStream5frameACyxGAA13CVCoordinatorC_ScSySayAA16DetectionRequestVGGxtcfCTq
 - _$s23AccessibilityReaderData23AXRTextStylingFormatterC13formattedTextSo18NSAttributedStringCyFTq

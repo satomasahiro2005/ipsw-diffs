@@ -2,131 +2,62 @@
 
 > `/System/Library/PrivateFrameworks/SpotlightUIInternal.framework/SpotlightUIInternal`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4a2a0` | `0x4ea80` | **`+0x47e0`** |
+| `__TEXT.__oslogstring` | `0xe95` | `0x12da` | **`+0x445`** |
+| `__TEXT.__const` | `0x10a8` | `0x1398` | **`+0x2f0`** |
+| `__AUTH_CONST.__objc_const` | `0x8f48` | `0x91f0` | **`+0x2a8`** |
+| `__DATA.__bss` | `0x950` | `0xbf8` | **`+0x2a8`** |
+| `__AUTH_CONST.__const` | `0xa78` | `0xca8` | **`+0x230`** |
+| `__TEXT.__objc_methlist` | `0x5b38` | `0x5d00` | **`+0x1c8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x41a0` | `0x42d8` | **`+0x138`** |
+| `__AUTH.__objc_data` | `0xa80` | `0xb98` | **`+0x118`** |
+| `__TEXT.__cstring` | `0x130f` | `0x1218` | **`-0xf7`** |
+| `__TEXT.__unwind_info` | `0x14d8` | `0x15b8` | **`+0xe0`** |
+| `__TEXT.__swift5_typeref` | `0xd6a` | `0xe00` | **`+0x96`** |
+| `__DATA_DIRTY.__objc_data` | `0xa48` | `0xac8` | **`+0x80`** |
+| `__TEXT.__swift5_capture` | `0x1ec` | `0x26c` | **`+0x80`** |
+| `__AUTH_CONST.__auth_got` | `0xd58` | `0xda0` | **`+0x48`** |
+| `__TEXT.__swift5_fieldmd` | `0x358` | `0x3a0` | **`+0x48`** |
+| `__AUTH_CONST.__cfstring` | `0x15e0` | `0x15a0` | **`-0x40`** |
+| `__DATA.__data` | `0x16f8` | `0x1738` | **`+0x40`** |
+| `__TEXT.__eh_frame` | `0xbb4` | `0xbf0` | **`+0x3c`** |
+| `__AUTH.__data` | `0x408` | `0x3d0` | **`-0x38`** |
+| `__TEXT.__swift5_assocty` | `0xf0` | `0x128` | **`+0x38`** |
+| `__DATA_CONST.__got` | `0xa58` | `0xa88` | **`+0x30`** |
+| `__TEXT.__swift5_reflstr` | `0x2fb` | `0x326` | **`+0x2b`** |
+| `__TEXT.__gcc_except_tab` | `0x29c` | `0x27c` | **`-0x20`** |
+| `__TEXT.__swift5_proto` | `0x4c` | `0x60` | **`+0x14`** |
+| `__DATA.__objc_ivar` | `0x410` | `0x420` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x1c8` | `0x1d8` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x1d0` | `0x1e0` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x54` | `0x60` | **`+0xc`** |
+| `__TEXT.__swift_as_entry` | `0x28` | `0x34` | **`+0xc`** |
+| `__DATA_CONST.__const` | `0xb78` | `0xb70` | **`-0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x30` | `0x38` | **`+0x8`** |
+| `__TEXT.__constg_swiftt` | `0x67c` | `0x684` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x7c` | `0x84` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x3c` | `0x44` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x4` | `—` | **`-0x4`** |
+
+### Other Changes
 
 ```diff
 
 -236.0.4.100.0
--  __TEXT.__text: 0x4a2a0
--  __TEXT.__objc_methlist: 0x5b38
--  __TEXT.__const: 0x10a8
--  __TEXT.__cstring: 0x130f
--  __TEXT.__gcc_except_tab: 0x29c
--  __TEXT.__oslogstring: 0xe95
 +236.0.11.100.0
-+  __TEXT.__text: 0x4ea80
-+  __TEXT.__objc_methlist: 0x5d00
-+  __TEXT.__const: 0x1398
-+  __TEXT.__cstring: 0x1218
-+  __TEXT.__oslogstring: 0x12da
-+  __TEXT.__gcc_except_tab: 0x27c
-   __TEXT.__ustring: 0x4
-   __TEXT.__dlopen_cstrs: 0x54
--  __TEXT.__constg_swiftt: 0x67c
--  __TEXT.__swift5_typeref: 0xd6a
--  __TEXT.__swift5_fieldmd: 0x358
--  __TEXT.__swift5_capture: 0x1ec
--  __TEXT.__swift5_types: 0x54
--  __TEXT.__swift_as_entry: 0x28
--  __TEXT.__swift_as_ret: 0x3c
--  __TEXT.__swift_as_cont: 0x7c
--  __TEXT.__swift5_reflstr: 0x2fb
-+  __TEXT.__constg_swiftt: 0x684
-+  __TEXT.__swift5_typeref: 0xe00
-+  __TEXT.__swift5_fieldmd: 0x3a0
-+  __TEXT.__swift5_capture: 0x26c
-+  __TEXT.__swift5_types: 0x60
-+  __TEXT.__swift_as_entry: 0x34
-+  __TEXT.__swift_as_ret: 0x44
-+  __TEXT.__swift_as_cont: 0x84
-+  __TEXT.__swift5_reflstr: 0x326
-   __TEXT.__swift5_builtin: 0x50
--  __TEXT.__swift5_assocty: 0xf0
--  __TEXT.__swift5_proto: 0x4c
-+  __TEXT.__swift5_assocty: 0x128
-+  __TEXT.__swift5_proto: 0x60
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0x14d8
--  __TEXT.__eh_frame: 0xbb4
-+  __TEXT.__unwind_info: 0x15b8
-+  __TEXT.__eh_frame: 0xbf0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xb78
--  __DATA_CONST.__objc_classlist: 0x1c8
-+  __DATA_CONST.__const: 0xb70
-+  __DATA_CONST.__objc_classlist: 0x1d8
-   __DATA_CONST.__objc_catlist: 0x8
--  __DATA_CONST.__objc_protolist: 0x1d0
-+  __DATA_CONST.__objc_protolist: 0x1e0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x41a0
--  __DATA_CONST.__objc_protorefs: 0x30
-+  __DATA_CONST.__objc_selrefs: 0x42d8
-+  __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__objc_superrefs: 0x130
-   __DATA_CONST.__objc_arraydata: 0x90
--  __DATA_CONST.__got: 0xa58
--  __AUTH_CONST.__const: 0xa78
--  __AUTH_CONST.__cfstring: 0x15e0
--  __AUTH_CONST.__objc_const: 0x8f48
-+  __DATA_CONST.__got: 0xa88
-+  __AUTH_CONST.__const: 0xca8
-+  __AUTH_CONST.__cfstring: 0x15a0
-+  __AUTH_CONST.__objc_const: 0x91f0
-   __AUTH_CONST.__objc_doubleobj: 0x60
-   __AUTH_CONST.__objc_intobj: 0x48
-   __AUTH_CONST.__objc_arrayobj: 0x60
--  __AUTH_CONST.__auth_got: 0xd58
--  __AUTH.__objc_data: 0xa80
--  __AUTH.__data: 0x408
--  __DATA.__objc_ivar: 0x410
--  __DATA.__data: 0x16f8
--  __DATA.__bss: 0x950
--  __DATA_DIRTY.__objc_data: 0xa48
-+  __AUTH_CONST.__auth_got: 0xda0
-+  __AUTH.__objc_data: 0xb98
-+  __AUTH.__data: 0x3d0
-+  __DATA.__objc_ivar: 0x420
-+  __DATA.__data: 0x1738
-+  __DATA.__bss: 0xbf8
-+  __DATA_DIRTY.__objc_data: 0xac8
-   __DATA_DIRTY.__data: 0x1c8
-   __DATA_DIRTY.__bss: 0x260
-   __DATA_DIRTY.__common: 0x8
 
-   - /System/Library/PrivateFrameworks/GenerativePartnerService.framework/GenerativePartnerService
-   - /System/Library/PrivateFrameworks/GenerativePartnerServiceUI.framework/GenerativePartnerServiceUI
-   - /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
 -  - /System/Library/PrivateFrameworks/IconServices.framework/IconServices
-   - /System/Library/PrivateFrameworks/MaterialKit.framework/MaterialKit
-   - /System/Library/PrivateFrameworks/Search.framework/Search
-   - /System/Library/PrivateFrameworks/SearchFoundation.framework/SearchFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1938
--  Symbols:   4745
+-  Symbols:   3205
 -  CStrings:  332
 +  Functions: 2038
-+  Symbols:   4822
++  Symbols:   3251
 +  CStrings:  337
- 
 Symbols:
 + -[SPUIResultsViewController flushPendingSectionsUpdate]
 + -[SPUISearchStateRestorationContext displayState]
@@ -203,50 +134,6 @@ Symbols:
 + _flat unique So29SUISAccessoryFeedbackDelegate_p
 + _get_witness_table 7SwiftUI15ModifiedContentVy19SpotlightUIInternal23SearchUIImageViewBridge33_2102EC304E763A420A65D2540E713AF9LLVAA12_FrameLayoutVGAA0I0HPAgaKHPyHC_AiA0I8ModifierHPyHCHC
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA6ZStackVyAA7ForEachVys18ReversedCollectionVySaySi6offset_So7SFImageC7elementtGGSiACyACy19SpotlightUIInternal12AppIconImage33_2102EC304E763A420A65D2540E713AF9LLVAA14_PaddingLayoutVGAA21_TraitWritingModifierVyAA14ZIndexTraitKeyVGGGGAA06_FrameZ0VGAA4ViewHPA2_AAA6_HPyHC_A4_AA12ViewModifierHPyHCHC
-+ _objc_msgSend$_expectedState
-+ _objc_msgSend$array
-+ _objc_msgSend$askSiriEnterTimer
-+ _objc_msgSend$bundleIdentifierForDefaultAppToOpenURL:
-+ _objc_msgSend$checkAndExecutePendingEnter
-+ _objc_msgSend$decodeIntegerForKey:
-+ _objc_msgSend$encodeInteger:forKey:
-+ _objc_msgSend$firePendingEnter
-+ _objc_msgSend$flushPendingSectionsUpdate
-+ _objc_msgSend$initWithCommand:rowModel:button:environment:
-+ _objc_msgSend$initWithResults:triggerEvent:
-+ _objc_msgSend$invalidateAskSiriEnterTimer
-+ _objc_msgSend$isAccessoryStateShowMore
-+ _objc_msgSend$metricsForTextStyle:
-+ _objc_msgSend$newFTECount
-+ _objc_msgSend$numberWithUnsignedInteger:
-+ _objc_msgSend$pendingEnterIsReady
-+ _objc_msgSend$pendingEnterQueryId
-+ _objc_msgSend$punchout
-+ _objc_msgSend$readRestorationData
-+ _objc_msgSend$restoreWithDisplayState:
-+ _objc_msgSend$scaledFontForFont:
-+ _objc_msgSend$scheduleAskSiriEnter
-+ _objc_msgSend$searchStringForMarkedText
-+ _objc_msgSend$selectFirstResultAndEnter
-+ _objc_msgSend$sendExternalProviderChangeFeedbackWithIdentifier:queryId:
-+ _objc_msgSend$sendFeedbackForShowMoreButtonPress
-+ _objc_msgSend$sendResultsExpandedFeedbackWithResults:queryId:
-+ _objc_msgSend$sendSiriClassificationFeedbackIfNeededWithDisplayState:queryContext:elevatedResult:queryId:
-+ _objc_msgSend$setAskSiriEnterTimer:
-+ _objc_msgSend$setBundleIdentifier:
-+ _objc_msgSend$setGoTakeoverResult:
-+ _objc_msgSend$setNewFTECount:
-+ _objc_msgSend$setPendingEnterQueryId:
-+ _objc_msgSend$setPlaceholderVisibility:
-+ _objc_msgSend$setShouldRestore:
-+ _objc_msgSend$setSize:
-+ _objc_msgSend$sharedSpotlightCardLoader
-+ _objc_msgSend$shouldRestore
-+ _objc_msgSend$shouldSuppressAskSiriForAuthenticationState:
-+ _objc_msgSend$spui_applyDynamicTypeFont
-+ _objc_msgSend$syntheticCollapsedShowMoreResult
-+ _objc_msgSend$unsignedIntegerValue
-+ _objc_msgSend$urls
 + _objc_retain_x28
 + _swift_errorRetain
 + _swift_isEscapingClosureAtFileLocation
@@ -329,19 +216,6 @@ Symbols:
 - _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE4task2id4name8priority4file4line_Qrqd___SSSgScPSSSiyyYaYAcntSQRd__lFQOyAA15ModifiedContentVyAA5GroupVyAA012_ConditionalK0VyALyAA5ImageVAA21_TraitWritingModifierVyAA010TransitionO3KeyVGGAA5ColorVGGAA12_FrameLayoutVG_SSQo_HO
 - _initializeAvailabilityCheck
 - _malloc
-- _objc_msgSend$CGImage
-- _objc_msgSend$dataWithContentsOfURL:options:error:
-- _objc_msgSend$getImageForImageDescriptor:completion:
-- _objc_msgSend$initFileURLWithPath:isDirectory:
-- _objc_msgSend$initWithBundleIdentifier:
-- _objc_msgSend$initWithSize:scale:
-- _objc_msgSend$objectAtIndex:
-- _objc_msgSend$path
-- _objc_msgSend$prepareImageForDescriptor:
-- _objc_msgSend$restorationDataQueue
-- _objc_msgSend$restorationUrl
-- _objc_msgSend$sendToListener:identifier:queryId:
-- _objc_msgSend$writeToURL:atomically:
 - _restorationDataQueue.onceToken
 - _restorationDataQueue.queue
 - _rewind

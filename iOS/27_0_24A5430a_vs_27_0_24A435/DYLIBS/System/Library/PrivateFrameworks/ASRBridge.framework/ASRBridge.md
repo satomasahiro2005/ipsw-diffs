@@ -2,32 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/ASRBridge.framework/ASRBridge`
 
-```diff
+### Section Size Changes
 
- 3600.70.47.11.1
--  __TEXT.__text: 0x5576c
-+  __TEXT.__text: 0x55818
-   __TEXT.__objc_methlist: 0xb58
-   __TEXT.__const: 0xe48
-   __TEXT.__constg_swiftt: 0xf94
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5576c` | `0x55818` | **`+0xac`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_24f46dc5c -> sub_24febbc5c : 2948 -> 2976
-~ sub_24f46f1bc -> sub_24febd1d8 : 1324 -> 1352
-~ sub_24f46f838 -> sub_24febd870 : 2944 -> 2964
-~ sub_24f470464 -> sub_24febe4b0 : 108 -> 128
-~ sub_24f471b60 -> sub_24febfbc0 : 2704 -> 2716
-~ sub_24f475318 -> sub_24fec3384 : 5916 -> 5928
-~ sub_24f4930d8 -> sub_24fee1150 : 1120 -> 1124
-~ sub_24f4991e0 -> sub_24fee725c : 6764 -> 6772
-~ sub_24f4a628c -> sub_24fef4310 : 7004 -> 6928
-~ sub_24f4ae464 -> sub_24fefc49c : 1472 -> 1528
-~ sub_24f4aea68 -> sub_24fefcad8 : 2852 -> 2876
-~ sub_24f4aff98 -> sub_24fefe020 : 1544 -> 1540
-~ sub_24f4b05a0 -> sub_24fefe624 : 2756 -> 2736
-~ sub_24f4b28d4 -> sub_24ff00944 : 1336 -> 1328
-~ sub_24f4b66b4 -> sub_24ff0471c : 1444 -> 1508
-~ sub_24f4bc5a8 -> sub_24ff0a650 : 992 -> 984
-~ sub_24f4be0a8 -> sub_24ff0c148 : 340 -> 344
-~ sub_24f4be1fc -> sub_24ff0c2a0 : 356 -> 360
-~ sub_24f4be360 -> sub_24ff0c408 : 352 -> 356
+~ sub_24f31ac5c -> sub_24fd6fc5c : 2948 -> 2976
+~ sub_24f31c1bc -> sub_24fd711d8 : 1324 -> 1352
+~ sub_24f31c838 -> sub_24fd71870 : 2944 -> 2964
+~ sub_24f31d464 -> sub_24fd724b0 : 108 -> 128
+~ sub_24f31eb60 -> sub_24fd73bc0 : 2704 -> 2716
+~ sub_24f322318 -> sub_24fd77384 : 5916 -> 5928
+~ sub_24f3400d8 -> sub_24fd95150 : 1120 -> 1124
+~ sub_24f3461e0 -> sub_24fd9b25c : 6764 -> 6772
+~ sub_24f35328c -> sub_24fda8310 : 7004 -> 6928
+~ sub_24f35b464 -> sub_24fdb049c : 1472 -> 1528
+~ sub_24f35ba68 -> sub_24fdb0ad8 : 2852 -> 2876
+~ sub_24f35cf98 -> sub_24fdb2020 : 1544 -> 1540
+~ sub_24f35d5a0 -> sub_24fdb2624 : 2756 -> 2736
+~ sub_24f35f8d4 -> sub_24fdb4944 : 1336 -> 1328
+~ sub_24f3636b4 -> sub_24fdb871c : 1444 -> 1508
+~ sub_24f3695a8 -> sub_24fdbe650 : 992 -> 984
+~ sub_24f36b0a8 -> sub_24fdc0148 : 340 -> 344
+~ sub_24f36b1fc -> sub_24fdc02a0 : 356 -> 360
+~ sub_24f36b360 -> sub_24fdc0408 : 352 -> 356
 ```

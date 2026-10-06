@@ -2,105 +2,43 @@
 
 > `/System/Library/Frameworks/RealityFoundation.framework/RealityFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5e00ac` | `0x5dd604` | **`-0x2aa8`** |
+| `__TEXT.__oslogstring` | `0x5238` | `0x5768` | **`+0x530`** |
+| `__TEXT.__cstring` | `0x13e24` | `0x142b4` | **`+0x490`** |
+| `__TEXT.__const` | `0x6a1e4` | `0x6a4e4` | **`+0x300`** |
+| `__DATA.__bss` | `0x6f7b0` | `0x6f920` | **`+0x170`** |
+| `__DATA.__data` | `0x11038` | `0x11190` | **`+0x158`** |
+| `__TEXT.__swift5_typeref` | `0x15a40` | `0x15b1a` | **`+0xda`** |
+| `__DATA_DIRTY.__data` | `0x3a8` | `0x468` | **`+0xc0`** |
+| `__AUTH.__data` | `0x1a160` | `0x1a0a8` | **`-0xb8`** |
+| `__TEXT.__eh_frame` | `0x19730` | `0x197b0` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x17770` | `0x177e8` | **`+0x78`** |
+| `__TEXT.__swift5_reflstr` | `0x12c0b` | `0x12c5b` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x9a50` | `0x9a88` | **`+0x38`** |
+| `__TEXT.__swift5_fieldmd` | `0x1b750` | `0x1b72c` | **`-0x24`** |
+| `__DATA_CONST.__got` | `0x19e0` | `0x19c8` | **`-0x18`** |
+| `__TEXT.__swift5_proto` | `0x42bc` | `0x42d0` | **`+0x14`** |
+| `__AUTH_CONST.__const` | `0x9eb80` | `0x9eb90` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x4260` | `0x4270` | **`+0x10`** |
+| `__DATA.__common` | `0x350` | `0x348` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x5e00ac
-+  __TEXT.__text: 0x5dd604
-   __TEXT.__objc_methlist: 0x1a2c
--  __TEXT.__const: 0x6a1e4
-+  __TEXT.__const: 0x6a4e4
-   __TEXT.__constg_swiftt: 0x1cecc
--  __TEXT.__swift5_typeref: 0x15a40
-+  __TEXT.__swift5_typeref: 0x15b1a
-   __TEXT.__swift5_builtin: 0x15e0
--  __TEXT.__swift5_reflstr: 0x12c0b
--  __TEXT.__swift5_fieldmd: 0x1b750
-+  __TEXT.__swift5_reflstr: 0x12c5b
-+  __TEXT.__swift5_fieldmd: 0x1b72c
-   __TEXT.__swift5_assocty: 0x3d08
--  __TEXT.__swift5_proto: 0x42bc
-+  __TEXT.__swift5_proto: 0x42d0
-   __TEXT.__swift5_types: 0x2394
-   __TEXT.__swift5_capture: 0x9790
--  __TEXT.__cstring: 0x13e24
--  __TEXT.__oslogstring: 0x5238
-+  __TEXT.__cstring: 0x142b4
-+  __TEXT.__oslogstring: 0x5768
-   __TEXT.__swift5_mpenum: 0x3fc
-   __TEXT.__swift5_protos: 0x250
-   __TEXT.__swift_as_entry: 0x418
-   __TEXT.__swift_as_ret: 0x420
-   __TEXT.__swift_as_cont: 0xc84
-   __TEXT.__swift5_types2: 0x10
--  __TEXT.__unwind_info: 0x17770
--  __TEXT.__eh_frame: 0x19730
-+  __TEXT.__unwind_info: 0x177e8
-+  __TEXT.__eh_frame: 0x197b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4260
-+  __DATA_CONST.__const: 0x4270
-   __DATA_CONST.__objc_classlist: 0x9b0
-   __DATA_CONST.__objc_protolist: 0x100
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x1488
-   __DATA_CONST.__objc_protorefs: 0x80
--  __DATA_CONST.__got: 0x19e0
--  __AUTH_CONST.__const: 0x9eb80
-+  __DATA_CONST.__got: 0x19c8
-+  __AUTH_CONST.__const: 0x9eb90
-   __AUTH_CONST.__objc_const: 0x13298
--  __AUTH_CONST.__auth_got: 0x9a50
-+  __AUTH_CONST.__auth_got: 0x9a88
-   __AUTH.__objc_data: 0x5e8
--  __AUTH.__data: 0x1a160
--  __DATA.__data: 0x11038
--  __DATA.__bss: 0x6f7b0
--  __DATA.__common: 0x350
-+  __AUTH.__data: 0x1a0a8
-+  __DATA.__data: 0x11190
-+  __DATA.__bss: 0x6f920
-+  __DATA.__common: 0x348
-   __DATA_DIRTY.__objc_data: 0x80
--  __DATA_DIRTY.__data: 0x3a8
-+  __DATA_DIRTY.__data: 0x468
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
+-453.0.2.0.5
++453.0.4.0.2
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 43477
--  Symbols:   149504
--  CStrings:  2240
+-  Symbols:   106093
+-  CStrings:  2239
 +  Functions: 43492
-+  Symbols:   148799
-+  CStrings:  2265
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_types2 : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   106180
++  CStrings:  2264
 Symbols:
 + _$s10RealityKit16__ServiceLocatorC14engineQueueKey33_F50A054CE3363D666CF89736DED4EF50LL8Dispatch0o8SpecificG0CyytGvpZ
 + _$s10RealityKit16__ServiceLocatorC14engineQueueKey33_F50A054CE3363D666CF89736DED4EF50LL_WZ
@@ -581,5 +519,4 @@ CStrings:
 + "requestPath(to:) failed: entity '%{public}@' does not have an active NavigationComponent. Ensure the entity has a NavigationComponent and has been added to a RealityKit scene."
 + "requestPath(to:) failed: the entity has been deallocated."
 - "RealityFoundation"
-
 ```

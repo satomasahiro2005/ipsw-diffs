@@ -2,98 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/HearingTest.framework/HearingTest`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd0998` | `0xdc388` | **`+0xb9f0`** |
+| `__TEXT.__oslogstring` | `0x7f61` | `0x8951` | **`+0x9f0`** |
+| `__TEXT.__cstring` | `0x1ef2` | `0x2472` | **`+0x580`** |
+| `__TEXT.__eh_frame` | `0x29ec` | `0x2f3c` | **`+0x550`** |
+| `__AUTH_CONST.__const` | `0xcb84` | `0xcf94` | **`+0x410`** |
+| `__TEXT.__const` | `0x4e20` | `0x5200` | **`+0x3e0`** |
+| `__TEXT.__swift5_reflstr` | `0x2a87` | `0x2e07` | **`+0x380`** |
+| `__AUTH.__objc_data` | `0x19e0` | `0x1c50` | **`+0x270`** |
+| `__TEXT.__swift5_fieldmd` | `0x236c` | `0x25d4` | **`+0x268`** |
+| `__TEXT.__constg_swiftt` | `0x2618` | `0x2814` | **`+0x1fc`** |
+| `__AUTH_CONST.__objc_const` | `0x3e68` | `0x4058` | **`+0x1f0`** |
+| `__TEXT.__unwind_info` | `0x1b88` | `0x1d68` | **`+0x1e0`** |
+| `__DATA.__bss` | `0x4a80` | `0x4bf0` | **`+0x170`** |
+| `__TEXT.__swift5_capture` | `0x28ec` | `0x29cc` | **`+0xe0`** |
+| `__DATA.__data` | `0x1458` | `0x1518` | **`+0xc0`** |
+| `__TEXT.__swift5_typeref` | `0x1564` | `0x160e` | **`+0xaa`** |
+| `__TEXT.__swift_as_cont` | `0x11c` | `0x188` | **`+0x6c`** |
+| `__AUTH_CONST.__auth_got` | `0xdc8` | `0xdf8` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x544` | `0x574` | **`+0x30`** |
+| `__AUTH.__data` | `0x1f90` | `0x1fb0` | **`+0x20`** |
+| `__TEXT.__swift_as_ret` | `0x58` | `0x74` | **`+0x1c`** |
+| `__TEXT.__swift_as_entry` | `0x80` | `0x94` | **`+0x14`** |
+| `__TEXT.__swift5_types` | `0x1a4` | `0x1b4` | **`+0x10`** |
+| `__DATA.__common` | `0x91` | `0x99` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0xe0` | `0xe8` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x680` | `0x688` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x268` | `0x270` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xd0998
--  __TEXT.__objc_methlist: 0x544
--  __TEXT.__const: 0x4e20
--  __TEXT.__constg_swiftt: 0x2618
--  __TEXT.__swift5_typeref: 0x1564
-+  __TEXT.__text: 0xdc388
-+  __TEXT.__objc_methlist: 0x574
-+  __TEXT.__const: 0x5200
-+  __TEXT.__constg_swiftt: 0x2814
-+  __TEXT.__swift5_typeref: 0x160e
-   __TEXT.__swift5_builtin: 0x190
--  __TEXT.__swift5_reflstr: 0x2a87
--  __TEXT.__swift5_fieldmd: 0x236c
-+  __TEXT.__swift5_reflstr: 0x2e07
-+  __TEXT.__swift5_fieldmd: 0x25d4
-   __TEXT.__swift5_assocty: 0x3a0
--  __TEXT.__swift5_proto: 0x268
--  __TEXT.__swift5_types: 0x1a4
--  __TEXT.__swift5_capture: 0x28ec
--  __TEXT.__cstring: 0x1ef2
--  __TEXT.__oslogstring: 0x7f61
--  __TEXT.__swift_as_entry: 0x80
--  __TEXT.__swift_as_ret: 0x58
--  __TEXT.__swift_as_cont: 0x11c
-+  __TEXT.__swift5_proto: 0x270
-+  __TEXT.__swift5_types: 0x1b4
-+  __TEXT.__swift5_capture: 0x29cc
-+  __TEXT.__cstring: 0x2472
-+  __TEXT.__oslogstring: 0x8951
-+  __TEXT.__swift_as_entry: 0x94
-+  __TEXT.__swift_as_ret: 0x74
-+  __TEXT.__swift_as_cont: 0x188
-   __TEXT.__swift5_protos: 0x20
-   __TEXT.__swift5_mpenum: 0xd0
--  __TEXT.__unwind_info: 0x1b88
--  __TEXT.__eh_frame: 0x29ec
-+  __TEXT.__unwind_info: 0x1d68
-+  __TEXT.__eh_frame: 0x2f3c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x208
--  __DATA_CONST.__objc_classlist: 0xe0
-+  __DATA_CONST.__objc_classlist: 0xe8
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x680
-+  __DATA_CONST.__objc_selrefs: 0x688
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xcb84
--  __AUTH_CONST.__objc_const: 0x3e68
--  __AUTH_CONST.__auth_got: 0xdc8
--  __AUTH.__objc_data: 0x19e0
--  __AUTH.__data: 0x1f90
--  __DATA.__data: 0x1458
--  __DATA.__bss: 0x4a80
--  __DATA.__common: 0x91
-+  __AUTH_CONST.__const: 0xcf94
-+  __AUTH_CONST.__objc_const: 0x4058
-+  __AUTH_CONST.__auth_got: 0xdf8
-+  __AUTH.__objc_data: 0x1c50
-+  __AUTH.__data: 0x1fb0
-+  __DATA.__data: 0x1518
-+  __DATA.__bss: 0x4bf0
-+  __DATA.__common: 0x99
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
+-400.38.0.0.0
++400.39.0.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3741
--  Symbols:   3699
+-  Symbols:   1094
 -  CStrings:  735
 +  Functions: 3876
-+  Symbols:   3782
++  Symbols:   1126
 +  CStrings:  814
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
 Symbols:
 + _OBJC_CLASS_$_NSTimer
 + _OBJC_CLASS_$__TtC11HearingTest26KagraCLIReplacementManager
@@ -105,7 +58,6 @@ Symbols:
 + ___swift_memcpy114_8
 + ___swift_memcpy121_8
 + _get_enum_tag_for_layout_string 11HearingTest12KagraCommand33_7F31AA47CF9215F198953C6DA9C1783ELLO
-+ _objc_msgSend$scheduledTimerWithTimeInterval:repeats:block:
 + _swift_deletedAsyncMethodErrorTu
 + _swift_getAtKeyPath
 + _swift_getKeyPath
@@ -208,5 +160,4 @@ CStrings:
 + "com.apple.iOS"
 + "playMainTone(audioDeviceTest:frequency:dBFSLevel:side:numberOfPulses:pulseDuration:pauseDuration:volume:)"
 + "playPilotTone(audioDeviceTest:device:pilotVolume:pilotDuration:pilotFrequency:startDelay:volume:occluded:)"
-
 ```

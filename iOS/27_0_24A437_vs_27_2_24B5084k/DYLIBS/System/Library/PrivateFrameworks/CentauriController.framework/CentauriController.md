@@ -2,33 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/CentauriController.framework/CentauriController`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x69d4` | `0x6b04` | **`+0x130`** |
+| `__TEXT.__cstring` | `0x187d` | `0x1885` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -128.0.0.0.0
--  __TEXT.__text: 0x68e8
 +129.0.0.0.0
-+  __TEXT.__text: 0x6a18
-   __TEXT.__gcc_except_tab: 0x68c
-   __TEXT.__const: 0x305
-   __TEXT.__oslogstring: 0xb
--  __TEXT.__cstring: 0x187d
--  __TEXT.__unwind_info: 0x490
-+  __TEXT.__cstring: 0x1885
-+  __TEXT.__unwind_info: 0x498
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x1c0
-   __DATA_CONST.__weak_got: 0x10
 
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 181
 -  Symbols:   410
 -  CStrings:  164
 +  Functions: 185
 +  Symbols:   412
 +  CStrings:  165
- 
 Symbols:
 + GCC_except_table106
 + GCC_except_table110

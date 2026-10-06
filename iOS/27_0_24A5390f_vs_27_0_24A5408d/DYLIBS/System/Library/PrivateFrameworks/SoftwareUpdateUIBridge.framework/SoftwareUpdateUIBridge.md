@@ -2,107 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/SoftwareUpdateUIBridge.framework/SoftwareUpdateUIBridge`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x16db8` | `0x33240` | **`+0x1c488`** |
+| `__AUTH_CONST.__objc_const` | `0x2a98` | `0x50e0` | **`+0x2648`** |
+| `__DATA_CONST.__const` | `0x1398` | `0x37c0` | **`+0x2428`** |
+| `__TEXT.__oslogstring` | `0x5d0` | `0x196c` | **`+0x139c`** |
+| `__TEXT.__cstring` | `0x1db7` | `0x2ab7` | **`+0xd00`** |
+| `__TEXT.__objc_methlist` | `0xa8c` | `0x1634` | **`+0xba8`** |
+| `__TEXT.__gcc_except_tab` | `0x2dc` | `0xd80` | **`+0xaa4`** |
+| `__DATA_CONST.__objc_selrefs` | `0x528` | `0xb68` | **`+0x640`** |
+| `__DATA.__data` | `0x4b0` | `0x840` | **`+0x390`** |
+| `__TEXT.__unwind_info` | `0x508` | `0x890` | **`+0x388`** |
+| `__AUTH_CONST.__cfstring` | `0x1200` | `0x1520` | **`+0x320`** |
+| `__AUTH.__objc_data` | `0x828` | `0xab0` | **`+0x288`** |
+| `__DATA_CONST.__got` | `0x240` | `0x468` | **`+0x228`** |
+| `__AUTH_CONST.__const` | `0x690` | `0x840` | **`+0x1b0`** |
+| `__AUTH_CONST.__auth_got` | `0x548` | `0x5f8` | **`+0xb0`** |
+| `__TEXT.__swift5_capture` | `0x290` | `0x334` | **`+0xa4`** |
+| `__DATA.__objc_ivar` | `0x94` | `0x128` | **`+0x94`** |
+| `__TEXT.__const` | `0x420` | `0x480` | **`+0x60`** |
+| `__DATA_CONST.__objc_classlist` | `0xb0` | `0xf0` | **`+0x40`** |
+| `__DATA_CONST.__objc_protolist` | `0x60` | `0xa0` | **`+0x40`** |
+| `__DATA_CONST.__objc_superrefs` | `0x30` | `0x68` | **`+0x38`** |
+| `__TEXT.__swift5_typeref` | `0x1c9` | `0x1ed` | **`+0x24`** |
+| `__AUTH.__data` | `0x50` | `0x60` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0xe5` | `0xf5` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0xa8` | `0xb4` | **`+0xc`** |
+| `__DATA.__common` | `0x38` | `0x40` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -772.0.10.0.0
--  __TEXT.__text: 0x16db8
--  __TEXT.__objc_methlist: 0xa8c
--  __TEXT.__cstring: 0x1db7
--  __TEXT.__gcc_except_tab: 0x2dc
--  __TEXT.__oslogstring: 0x5d0
--  __TEXT.__swift5_typeref: 0x1c9
--  __TEXT.__const: 0x420
--  __TEXT.__swift5_capture: 0x290
 +772.0.20.0.0
-+  __TEXT.__text: 0x33240
-+  __TEXT.__objc_methlist: 0x1634
-+  __TEXT.__const: 0x480
-+  __TEXT.__gcc_except_tab: 0xd80
-+  __TEXT.__cstring: 0x2ab7
-+  __TEXT.__oslogstring: 0x196c
-+  __TEXT.__swift5_typeref: 0x1ed
-+  __TEXT.__swift5_capture: 0x334
-   __TEXT.__constg_swiftt: 0xf0
--  __TEXT.__swift5_reflstr: 0xe5
--  __TEXT.__swift5_fieldmd: 0xa8
-+  __TEXT.__swift5_reflstr: 0xf5
-+  __TEXT.__swift5_fieldmd: 0xb4
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_proto: 0x18
-   __TEXT.__swift5_types: 0x10
 
-   __TEXT.__swift_as_ret: 0x8
-   __TEXT.__swift_as_cont: 0x4
-   __TEXT.__swift5_assocty: 0x60
--  __TEXT.__unwind_info: 0x508
-+  __TEXT.__unwind_info: 0x890
-   __TEXT.__eh_frame: 0x18c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1398
--  __DATA_CONST.__objc_classlist: 0xb0
--  __DATA_CONST.__objc_protolist: 0x60
-+  __DATA_CONST.__const: 0x37c0
-+  __DATA_CONST.__objc_classlist: 0xf0
-+  __DATA_CONST.__objc_protolist: 0xa0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x528
-+  __DATA_CONST.__objc_selrefs: 0xb68
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__objc_superrefs: 0x30
--  __DATA_CONST.__got: 0x240
--  __AUTH_CONST.__const: 0x690
--  __AUTH_CONST.__cfstring: 0x1200
--  __AUTH_CONST.__objc_const: 0x2a98
-+  __DATA_CONST.__objc_superrefs: 0x68
-+  __DATA_CONST.__got: 0x468
-+  __AUTH_CONST.__const: 0x840
-+  __AUTH_CONST.__cfstring: 0x1520
-+  __AUTH_CONST.__objc_const: 0x50e0
-   __AUTH_CONST.__objc_intobj: 0x18
--  __AUTH_CONST.__auth_got: 0x548
--  __AUTH.__objc_data: 0x828
--  __AUTH.__data: 0x50
--  __DATA.__objc_ivar: 0x94
--  __DATA.__data: 0x4b0
-+  __AUTH_CONST.__auth_got: 0x5f8
-+  __AUTH.__objc_data: 0xab0
-+  __AUTH.__data: 0x60
-+  __DATA.__objc_ivar: 0x128
-+  __DATA.__data: 0x840
-   __DATA.__bss: 0x490
--  __DATA.__common: 0x38
-+  __DATA.__common: 0x40
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset
 +  - /System/Library/PrivateFrameworks/NanoRegistry.framework/NanoRegistry
 +  - /System/Library/PrivateFrameworks/PairedDeviceRegistry.framework/PairedDeviceRegistry
-   - /System/Library/PrivateFrameworks/Preferences.framework/Preferences
-   - /System/Library/PrivateFrameworks/Seeding.framework/Seeding
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-+  - /System/Library/PrivateFrameworks/SoftwareUpdateBridge.framework/SoftwareUpdateBridge
-   - /System/Library/PrivateFrameworks/SoftwareUpdateCore.framework/SoftwareUpdateCore
-   - /System/Library/PrivateFrameworks/SoftwareUpdateCoreSupport.framework/SoftwareUpdateCoreSupport
-   - /System/Library/PrivateFrameworks/SoftwareUpdateUIFoundation.framework/SoftwareUpdateUIFoundation
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/PrivateFrameworks/SoftwareUpdateBridge.framework/SoftwareUpdateBridge
+
 -  Functions: 473
--  Symbols:   769
+-  Symbols:   717
 -  CStrings:  248
 +  Functions: 714
-+  Symbols:   1415
++  Symbols:   1198
 +  CStrings:  381
- 
 Symbols:
 + +[SUUIBridgeDescriptor supportsSecureCoding]
 + +[SUUIBridgeDocumentation supportsSecureCoding]
@@ -589,173 +537,6 @@ Symbols:
 + _kSU_S_QueryingManagerState
 + _memset
 + _objc_enumerationMutation
-+ _objc_msgSend$_broadcastWithBlock:
-+ _objc_msgSend$_classifyScanError:withDescriptor:intoParam:
-+ _objc_msgSend$_companionConnectivityTimeoutError
-+ _objc_msgSend$_initWithClient:
-+ _objc_msgSend$_isScanPhaseConnectivityError:
-+ _objc_msgSend$_removeObserverForToken:
-+ _objc_msgSend$_shouldSkipManagerStateQuery:
-+ _objc_msgSend$action_CheckForAvailableUpdate:error:
-+ _objc_msgSend$action_ObserveConcurrentQueries:error:
-+ _objc_msgSend$action_QueryCurrentDownload:error:
-+ _objc_msgSend$action_QueryFullScanMetadata:error:
-+ _objc_msgSend$action_QueryManagerState:error:
-+ _objc_msgSend$action_ReportScanCanceled:error:
-+ _objc_msgSend$action_ReportScanOutcome:error:
-+ _objc_msgSend$addObject:
-+ _objc_msgSend$allObjects
-+ _objc_msgSend$archivedDataWithRootObject:requiringSecureCoding:error:
-+ _objc_msgSend$betaPrograms
-+ _objc_msgSend$bodyForAdmissionControlDenial:
-+ _objc_msgSend$bodyTokenWithType:parameters:
-+ _objc_msgSend$boolValue
-+ _objc_msgSend$bridgeClient
-+ _objc_msgSend$bridgeLogger
-+ _objc_msgSend$callbackQueue
-+ _objc_msgSend$concurrentQueue
-+ _objc_msgSend$containsObject:
-+ _objc_msgSend$count
-+ _objc_msgSend$countByEnumeratingWithState:objects:count:
-+ _objc_msgSend$currentDownload
-+ _objc_msgSend$currentDownloadForDescriptor:completion:
-+ _objc_msgSend$currentState
-+ _objc_msgSend$decodeObjectOfClass:forKey:
-+ _objc_msgSend$descriptionForObject:properties:
-+ _objc_msgSend$deviceType
-+ _objc_msgSend$documentation
-+ _objc_msgSend$downloadSize
-+ _objc_msgSend$emptyScanResults
-+ _objc_msgSend$encodeObject:forKey:
-+ _objc_msgSend$enrolledBetaProgram
-+ _objc_msgSend$enrolledBetaProgramForDevice:completion:
-+ _objc_msgSend$errorWithDomain:code:userInfo:
-+ _objc_msgSend$estimatedTimeRemaining
-+ _objc_msgSend$firstObject
-+ _objc_msgSend$floatValue
-+ _objc_msgSend$followupEvent:withInfo:
-+ _objc_msgSend$fullUpdateName
-+ _objc_msgSend$getDevicesMatchingPlatforms:completion:
-+ _objc_msgSend$hash
-+ _objc_msgSend$hashTableWithOptions:
-+ _objc_msgSend$headingForAdmissionControlDenial:
-+ _objc_msgSend$headingTokenWithType:parameters:
-+ _objc_msgSend$humanReadableUpdateName
-+ _objc_msgSend$initFromScanParam:withIdentifier:
-+ _objc_msgSend$initWithDelegate:
-+ _objc_msgSend$initWithDescriptor:
-+ _objc_msgSend$initWithDeviceType:
-+ _objc_msgSend$initWithDocumentation:
-+ _objc_msgSend$initWithDownload:
-+ _objc_msgSend$initWithEnvironment:forPairedDevice:bridgeClient:identifier:
-+ _objc_msgSend$initWithFullScanContext:
-+ _objc_msgSend$initWithIdentifier:environment:usingBridgeClient:andBetaManager:withCompletionQueue:
-+ _objc_msgSend$initWithPreferredDescriptor:andRefreshContext:
-+ _objc_msgSend$initWithProgress:
-+ _objc_msgSend$installUpdate:
-+ _objc_msgSend$installationSize
-+ _objc_msgSend$invalidate
-+ _objc_msgSend$invocationWithMethodSignature:
-+ _objc_msgSend$invoke
-+ _objc_msgSend$isAutoUpdateScheduled
-+ _objc_msgSend$isDone
-+ _objc_msgSend$isEqual:
-+ _objc_msgSend$isInvalidated
-+ _objc_msgSend$isNonBlockingErrorForStatefulDescriptor:download:
-+ _objc_msgSend$isUpdateReadyForInstallation
-+ _objc_msgSend$licenseAgreement
-+ _objc_msgSend$localizedStringFromNumber:numberStyle:
-+ _objc_msgSend$longLongValue
-+ _objc_msgSend$manager:didChangeProgressOnDownload:
-+ _objc_msgSend$manager:didFailDownload:withError:
-+ _objc_msgSend$manager:didFailInstallation:withError:
-+ _objc_msgSend$manager:didFinishInstallation:
-+ _objc_msgSend$manager:installationAwaitingUserInteraction:
-+ _objc_msgSend$manager:installationOfUpdate:willProceed:waitingForAdmissionControl:
-+ _objc_msgSend$manager:scanRequestDidLocateUpdate:error:
-+ _objc_msgSend$manager:userInstallRequestTypeDidChange:
-+ _objc_msgSend$managerState:
-+ _objc_msgSend$managerUserDidAcceptTermsAndConditionsForUpdate:
-+ _objc_msgSend$methodSignatureForSelector:
-+ _objc_msgSend$null
-+ _objc_msgSend$numberWithFloat:
-+ _objc_msgSend$numberWithInteger:
-+ _objc_msgSend$numberWithUnsignedInteger:
-+ _objc_msgSend$objectForKey:
-+ _objc_msgSend$observer
-+ _objc_msgSend$operationError
-+ _objc_msgSend$options
-+ _objc_msgSend$percentComplete
-+ _objc_msgSend$phase
-+ _objc_msgSend$portionComplete
-+ _objc_msgSend$postEvent:withInfo:
-+ _objc_msgSend$postEvent:withInfo:endingActivity:
-+ _objc_msgSend$preferencesIcon
-+ _objc_msgSend$preferredDescriptor
-+ _objc_msgSend$preferredUpdateDownloadError
-+ _objc_msgSend$preferredUpdateDownloadable
-+ _objc_msgSend$preparationSize
-+ _objc_msgSend$productBuildVersion
-+ _objc_msgSend$productSystemName
-+ _objc_msgSend$productVersion
-+ _objc_msgSend$programID
-+ _objc_msgSend$progress
-+ _objc_msgSend$publisher
-+ _objc_msgSend$purgeUpdate:completion:
-+ _objc_msgSend$queryProgramsForSystemAccountsWithPlatforms:retryConfiguration:identifier:completion:
-+ _objc_msgSend$quickConfiguration
-+ _objc_msgSend$raise:format:
-+ _objc_msgSend$releaseNotes
-+ _objc_msgSend$releaseNotesSummary
-+ _objc_msgSend$removeAllObjects
-+ _objc_msgSend$removeObject:
-+ _objc_msgSend$removeObjectForKey:
-+ _objc_msgSend$scanError
-+ _objc_msgSend$scanForUpdates
-+ _objc_msgSend$scanForUpdatesWithCompletion:
-+ _objc_msgSend$scanGroup
-+ _objc_msgSend$scheduleConcurrentActionWithSelector:eventInfo:
-+ _objc_msgSend$seedingBetaManager
-+ _objc_msgSend$selfRetain
-+ _objc_msgSend$setArgument:atIndex:
-+ _objc_msgSend$setBetaPrograms:
-+ _objc_msgSend$setCallbackQueue:
-+ _objc_msgSend$setCurrentDownload:
-+ _objc_msgSend$setDelegate:
-+ _objc_msgSend$setEmptyScanResults:
-+ _objc_msgSend$setEnrolledBetaProgram:
-+ _objc_msgSend$setIsUpdateReadyForInstallation:
-+ _objc_msgSend$setManagerState:
-+ _objc_msgSend$setObject:forKey:
-+ _objc_msgSend$setObserver:
-+ _objc_msgSend$setOperationError:
-+ _objc_msgSend$setPreferredDescriptor:
-+ _objc_msgSend$setPreferredUpdateDownloadError:
-+ _objc_msgSend$setPreferredUpdateDownloadable:
-+ _objc_msgSend$setScanError:
-+ _objc_msgSend$setSelector:
-+ _objc_msgSend$setSelfRetain:
-+ _objc_msgSend$setTarget:
-+ _objc_msgSend$setToken:
-+ _objc_msgSend$setUserInstallRequestTypeForUpdate:userInstallRequestType:completion:
-+ _objc_msgSend$startDownload:
-+ _objc_msgSend$statefulUILogger
-+ _objc_msgSend$stringFromByteCount:countStyle:
-+ _objc_msgSend$stringWithUTF8String:
-+ _objc_msgSend$strongToStrongObjectsMapTable
-+ _objc_msgSend$systemBuildVersion
-+ _objc_msgSend$token
-+ _objc_msgSend$totalRequiredFreeSpace
-+ _objc_msgSend$unarchivedObjectOfClass:fromData:error:
-+ _objc_msgSend$underlyingDescriptor
-+ _objc_msgSend$underlyingDocumentation
-+ _objc_msgSend$underlyingDownload
-+ _objc_msgSend$underlyingProgress
-+ _objc_msgSend$unsignedIntegerValue
-+ _objc_msgSend$userDidAcceptTermsAndConditionsForUpdate:completion:
-+ _objc_msgSend$userInfo
-+ _objc_msgSend$valueForKey:
-+ _objc_msgSend$valueForProperty:
 + _objc_opt_isKindOfClass
 + _objc_opt_respondsToSelector
 + _objc_unsafeClaimAutoreleasedReturnValue
@@ -774,8 +555,6 @@ Symbols:
 - ___34-[SUUIBridgeScanOperation cancel:]_block_invoke
 - ___81-[SUUIBridgeScanOperation checkForAvailableUpdatesWithContext:completionHandler:]_block_invoke
 - ___os_log_helper_16_2_4_8_32_8_66_8_66_8_64
-- _objc_msgSend$initWithEnvironment:identifier:
-- _objc_msgSend$initWithIdentifier:environment:withCompletionQueue:
 CStrings:
 + ""
 + " "

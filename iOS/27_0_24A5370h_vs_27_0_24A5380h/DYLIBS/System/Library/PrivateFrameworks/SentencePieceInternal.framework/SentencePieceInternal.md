@@ -2,36 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/SentencePieceInternal.framework/SentencePieceInternal`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x7db08
-+  __TEXT.__text: 0x7d02c
-   __TEXT.__objc_methlist: 0x208
-   __TEXT.__const: 0x2487
--  __TEXT.__gcc_except_tab: 0x87a8
-+  __TEXT.__gcc_except_tab: 0x87a4
-   __TEXT.__cstring: 0x62a0
-   __TEXT.__unwind_info: 0x3898
-   __TEXT.__objc_stubs: 0x0
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7db08` | `0x7d02c` | **`-0xadc`** |
+| `__TEXT.__gcc_except_tab` | `0x87a8` | `0x87a4` | **`-0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN5utils23createCFArrayFromPiecesERKNSt3__16vectorINS0_12basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEENS5_IS7_EEEE : 280 -> 260
 ~ __ZNSt3__15dequeIZNK5Darts15DoubleArrayImplIvvivE16predictiveSearchINS3_16result_pair_typeEEEmPKcPT_mmiE5StateNS_9allocatorISA_EEE19__add_back_capacityEv : 484 -> 472
@@ -151,5 +131,4 @@ Functions:
 ~ __ZN6google8protobuf8internal14WireFormatLite22WriteGroupMaybeToArrayEiRKNS0_11MessageLiteEPNS0_2io17CodedOutputStreamE : 388 -> 368
 ~ __ZN13sentencepiece5error5AbortEv.cold.1 : 72 -> 64
 ~ __ZN6google8protobuf8internal16ReadSizeFallbackEPKcj : 120 -> 124
-
 ```

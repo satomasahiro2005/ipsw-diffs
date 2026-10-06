@@ -2,61 +2,30 @@
 
 > `/System/Library/SubFrameworks/ShaderGraph.framework/ShaderGraph`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ebd9c` | `0x1eb250` | **`-0xb4c`** |
+| `__DATA_DIRTY.__data` | `0x1b98` | `0x2500` | **`+0x968`** |
+| `__AUTH.__objc_data` | `0x6f8` | `—` | **`-0x6f8`** |
+| `__DATA_DIRTY.__objc_data` | `0xd00` | `0x13f8` | **`+0x6f8`** |
+| `__AUTH.__data` | `0x610` | `—` | **`-0x610`** |
+| `__DATA.__data` | `0x38a0` | `0x3570` | **`-0x330`** |
+| `__TEXT.__eh_frame` | `0x86cc` | `0x873c` | **`+0x70`** |
+| `__AUTH_CONST.__const` | `0x19240` | `0x191f0` | **`-0x50`** |
+| `__TEXT.__swift5_capture` | `0x960` | `0x93c` | **`-0x24`** |
+| `__TEXT.__unwind_info` | `0x55c8` | `0x55e8` | **`+0x20`** |
+| `__TEXT.__const` | `0x12b60` | `0x12b70` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
- 159.40.2.0.0
--  __TEXT.__text: 0x1e75c8
-+  __TEXT.__text: 0x1e6a88
-   __TEXT.__objc_methlist: 0xf78
--  __TEXT.__const: 0x12b60
-+  __TEXT.__const: 0x12b70
-   __TEXT.__cstring: 0x1c40d
-   __TEXT.__oslogstring: 0x13f9
-   __TEXT.__swift5_typeref: 0x3e32
-
-   __TEXT.__swift5_fieldmd: 0x4cb8
-   __TEXT.__swift5_proto: 0x834
-   __TEXT.__swift5_types: 0x4bc
--  __TEXT.__swift5_capture: 0x960
-+  __TEXT.__swift5_capture: 0x93c
-   __TEXT.__swift5_protos: 0x44
--  __TEXT.__unwind_info: 0x6da0
--  __TEXT.__eh_frame: 0x86dc
-+  __TEXT.__unwind_info: 0x6dd8
-+  __TEXT.__eh_frame: 0x874c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0x828
-   __DATA_CONST.__objc_protorefs: 0x50
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x19240
-+  __AUTH_CONST.__const: 0x191f0
-   __AUTH_CONST.__objc_const: 0x6ab8
-   __AUTH_CONST.__auth_got: 0x11d0
--  __AUTH.__objc_data: 0x6f8
--  __AUTH.__data: 0x610
--  __DATA.__data: 0x38a0
-+  __DATA.__data: 0x3570
-   __DATA.__common: 0x1ff8
--  __DATA_DIRTY.__objc_data: 0xd00
--  __DATA_DIRTY.__data: 0x1b98
-+  __DATA_DIRTY.__objc_data: 0x13f8
-+  __DATA_DIRTY.__data: 0x2500
-   __DATA_DIRTY.__common: 0x40
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8293
 -  Symbols:   18358
 +  Functions: 8298
 +  Symbols:   18365
-   CStrings:  3060
- 
 Symbols:
 + _$s11ShaderGraph7SGGraphC15depthFirstVisit4from16includeSubgraphs14inputPredicate_yAA6SGNodeC_S2bAA7SGInputCXEyAI_AISgtKXEtKF04$s11a53Graph05inferA16HasCustomUniform4from10shaderTypeSbAA7c20C_So06SGDataI0VtKFSbvm12CKXEfU0_yAA6L12C_ALSgtXEfU_SbTf1nnncn_nTf4nnndn_n
 + _$s11ShaderGraph7SGGraphC15depthFirstVisit4from16includeSubgraphs14inputPredicate_yAA6SGNodeC_S2bAA7SGInputCXEyAI_AISgtKXEtKFTf4nnnnd_n

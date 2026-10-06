@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/FindMyLocate.framework/FindMyLocate`
 
-```diff
+### Section Size Changes
 
- 141.30.6.14.13
--  __TEXT.__text: 0x160914
-+  __TEXT.__text: 0x160950
-   __TEXT.__objc_methlist: 0x11a4
-   __TEXT.__cstring: 0x3183
-   __TEXT.__swift5_typeref: 0x3af1
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x160914` | `0x160950` | **`+0x3c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1bf0a6b18 -> sub_1bf55cb18 : 1308 -> 1312
 ~ sub_1bf0b0e7c -> sub_1bf566e80 : 772 -> 784

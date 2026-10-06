@@ -2,83 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/OmniSearchTypes.framework/OmniSearchTypes`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7e258` | `0x8e6c4` | **`+0x1046c`** |
+| `__DATA.__bss` | `0xa700` | `0xdd80` | **`+0x3680`** |
+| `__AUTH_CONST.__const` | `0x59b8` | `0x9020` | **`+0x3668`** |
+| `__TEXT.__const` | `0x9888` | `0xb8e8` | **`+0x2060`** |
+| `__TEXT.__cstring` | `0x2016` | `0x2ef6` | **`+0xee0`** |
+| `__TEXT.__swift5_fieldmd` | `0x5034` | `0x5e78` | **`+0xe44`** |
+| `__TEXT.__swift5_reflstr` | `0x24c1` | `0x32b1` | **`+0xdf0`** |
+| `__TEXT.__unwind_info` | `0x2688` | `0x2d28` | **`+0x6a0`** |
+| `__DATA.__data` | `0x1050` | `0x1570` | **`+0x520`** |
+| `__TEXT.__eh_frame` | `0x2340` | `0x2848` | **`+0x508`** |
+| `__TEXT.__swift5_typeref` | `0x176c` | `0x1be2` | **`+0x476`** |
+| `__TEXT.__constg_swiftt` | `0x1790` | `0x1ad0` | **`+0x340`** |
+| `__TEXT.__swift5_assocty` | `0x2b0` | `0x490` | **`+0x1e0`** |
+| `__TEXT.__swift5_proto` | `0x930` | `0xae4` | **`+0x1b4`** |
+| `__AUTH_CONST.__auth_got` | `0x970` | `0xa78` | **`+0x108`** |
+| `__DATA_DIRTY.__data` | `0x2a60` | `0x2b10` | **`+0xb0`** |
+| `__TEXT.__swift5_types` | `0x238` | `0x298` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x108` | `0x120` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x28` | `0x3c` | **`+0x14`** |
+| `__TEXT.__swift5_mpenum` | `0x18` | `0x20` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x14` | `0x18` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3600.56.32.11.5
--  __TEXT.__text: 0x7b39c
 +3605.23.1.1.2
-+  __TEXT.__text: 0x8b2c8
-   __TEXT.__objc_methlist: 0x38
--  __TEXT.__const: 0x9888
--  __TEXT.__swift5_typeref: 0x176c
--  __TEXT.__constg_swiftt: 0x1790
--  __TEXT.__swift5_reflstr: 0x24c1
--  __TEXT.__swift5_fieldmd: 0x5034
--  __TEXT.__swift5_builtin: 0x28
--  __TEXT.__swift5_types: 0x238
--  __TEXT.__cstring: 0x2016
-+  __TEXT.__const: 0xb8e8
-+  __TEXT.__swift5_typeref: 0x1be2
-+  __TEXT.__constg_swiftt: 0x1ad0
-+  __TEXT.__swift5_reflstr: 0x32b1
-+  __TEXT.__swift5_fieldmd: 0x5e78
-+  __TEXT.__swift5_builtin: 0x3c
-+  __TEXT.__swift5_types: 0x298
-+  __TEXT.__cstring: 0x2ef6
-   __TEXT.__oslogstring: 0x18a
-   __TEXT.__swift5_capture: 0x24
--  __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__swift5_protos: 0x14
--  __TEXT.__swift5_proto: 0x930
--  __TEXT.__swift5_assocty: 0x2b0
-+  __TEXT.__swift5_mpenum: 0x20
-+  __TEXT.__swift5_protos: 0x18
-+  __TEXT.__swift5_proto: 0xae4
-+  __TEXT.__swift5_assocty: 0x490
-   __TEXT.__swift_as_entry: 0x4
-   __TEXT.__swift_as_cont: 0x4
--  __TEXT.__unwind_info: 0x2ef0
--  __TEXT.__eh_frame: 0x2348
-+  __TEXT.__unwind_info: 0x36e0
-+  __TEXT.__eh_frame: 0x2850
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x108
-+  __DATA_CONST.__const: 0x120
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xe8
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x59b8
-+  __AUTH_CONST.__const: 0x9020
-   __AUTH_CONST.__objc_const: 0x278
--  __AUTH_CONST.__auth_got: 0x970
-+  __AUTH_CONST.__auth_got: 0xa78
-   __AUTH.__data: 0x1e0
--  __DATA.__data: 0x1050
-+  __DATA.__data: 0x1570
-   __DATA.__common: 0x30
--  __DATA_DIRTY.__data: 0x2a60
-+  __DATA_DIRTY.__data: 0x2b10
-   __DATA_DIRTY.__bss: 0x7c80
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4859
--  Symbols:   9856
+-  Symbols:   9827
 -  CStrings:  366
 +  Functions: 5640
-+  Symbols:   11732
++  Symbols:   11703
 +  CStrings:  597
- 
 Symbols:
 + _$s10PegasusAPI50Apple_Parsec_Siri_V2alpha_MultiUserResponseContextV0H18IdentificationTypeO8rawValueSivg
 + _$s10PegasusAPI50Apple_Parsec_Siri_V2alpha_MultiUserResponseContextV0H18IdentificationTypeOMa

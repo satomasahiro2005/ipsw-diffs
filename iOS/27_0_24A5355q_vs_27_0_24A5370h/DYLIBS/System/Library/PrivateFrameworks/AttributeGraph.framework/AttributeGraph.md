@@ -2,80 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/AttributeGraph.framework/AttributeGraph`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3da50` | `0x3d8cc` | **`-0x184`** |
+| `__TEXT.__unwind_info` | `0x1550` | `0x1538` | **`-0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x7f8` | `0x800` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 8.0.64.0.0
--  __TEXT.__text: 0x3da50 sha256:cf06b68c6a88062110821080a481e4a2ff7568707f9f133e6b3d670c48c41aaf
--  __TEXT.__objc_methlist: 0x20 sha256:f63f9bb6f9fe464b1f965e5f90f95d4698f8dca4442d7667d59bf4be1b3c5154
--  __TEXT.__const: 0x14f0 sha256:2f2106c34132b61dd346cb67c520775b97d2fbd76feb324eca9ca4e962379ac3
--  __TEXT.__gcc_except_tab: 0x1248 sha256:15695119cbc4b409c75d5ed9789c3323790853f89557c03ea65bb10ef2dbb283
-+  __TEXT.__text: 0x3d8cc sha256:fb2d69cde3d33c32014e1cf098116b21c508b3b4ce283e20d553fffaeea99694
-+  __TEXT.__objc_methlist: 0x20 sha256:c8eb6eae39f413e555ff3b41e859cc8c61a3f9a6b40de281dc6453a99959dba4
-+  __TEXT.__const: 0x14f0 sha256:e234a397b6072479fb3656c44aa2286e06a145af93b6671b3481f23e6655fab6
-+  __TEXT.__gcc_except_tab: 0x1248 sha256:a9d7686b70bc4b57937f4ec51301430c241c2957f595d241a7e1230a702ba5b8
-   __TEXT.__cstring: 0x17d6 sha256:0bd70c9af95a5e3aee27e299207e81a524033fb340752145394211d55e46dbdb
-   __TEXT.__oslogstring: 0xd8 sha256:be3d2211a40ad631f59492dd39defc31c13228949d0018a718d776d3fd0a2858
-   __TEXT.__ustring: 0x38 sha256:2e9254162aa77a1252f2db1f1ff585095a319d42a2c30d99c72d95c7c8e65c14
--  __TEXT.__swift5_typeref: 0x310 sha256:801db67229ecf8920d3f2720a8811e26f2f32241427804cb5f5f2f475bc893db
--  __TEXT.__constg_swiftt: 0x510 sha256:eac5febb42d37a1921bd73a6edff97ad868d6e7673fce215955b01564c619766
-+  __TEXT.__swift5_typeref: 0x310 sha256:55f3eb3c60418a9b5c42b49865e030e12e492307606690072a8c63f320d00d8f
-+  __TEXT.__constg_swiftt: 0x510 sha256:a1cf2e8fe6b72a38e10ab6e27296930b74a8c7c455b3391ae8d523d79bf6a42f
-   __TEXT.__swift5_reflstr: 0xef sha256:13f3e0e1a1aec554613adf74657edf7283f0233373b139f8c7dc58b8a8cc0852
-   __TEXT.__swift5_fieldmd: 0x33c sha256:8cee54b6214ab6d50f8e490ccae1a9620eeb6cc2f75760f637e0d376abb11f50
-   __TEXT.__swift5_builtin: 0xf0 sha256:238dd59322aa98b2367d46615fef76669439cffa3fc709f1cffcf021c0bd5d50
-
-   __TEXT.__swift5_types: 0x68 sha256:3797c88d1039a2b3e2caa96eac52b13fb369973031020c1f944b0fb858ef4b7a
-   __TEXT.__swift5_capture: 0x98 sha256:f0c41cf5826bd788fbd71021ab68ac71d6d4f19ad03f81d0ac60f5d993c838c6
-   __TEXT.__swift5_protos: 0x14 sha256:fc4398443e57c6051984fcc8cdf1f41a698f2783ef12df06b5065db5f7542fb1
--  __TEXT.__unwind_info: 0x1550 sha256:4b97d7930d44d693eb0634bf9dc9f75f62e8cdf3ee2275d1184b34d048cce43f
--  __TEXT.__eh_frame: 0x98 sha256:ab0bb53fc644363d6fab3762b5b50d497ec3fc6b6dcc14494d87fed7a20becb5
-+  __TEXT.__unwind_info: 0x1538 sha256:294ca1d42796d6412d4ab68a9aeb30038b317dacc48cea7ebed4bc840f270654
-+  __TEXT.__eh_frame: 0x98 sha256:1def24b26a88b35c2434e65effeea244e0a0e7402c23ebd0809d60f4b14a8ec9
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2a8 sha256:6971de16e8758ec398e314d0d69f36e786047b0b38989cc911c04514c1039873
--  __DATA_CONST.__objc_classlist: 0x8 sha256:2def8919dd4bffa76327c17ce5c95807892a05267b880be9e7170744b880b603
-+  __DATA_CONST.__const: 0x2a8 sha256:efa8a7d7365a503a22b2a9b5d1a95329e9ce110950d039efb467045f56efb839
-+  __DATA_CONST.__objc_classlist: 0x8 sha256:54b28a70e5f3e7477513c91b5ab9f23431584c92f0395447e18f9da7cda429f1
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0x1a0 sha256:52fe01c5e23d8b275a5766f2d5442719dd3ff267bc805b9085ce8b5d3a7e5e25
--  __DATA_CONST.__got: 0x150 sha256:757f3b9f188fe012b3bb7d5aae997e94ec6c0b47a97eb92a0edeb36077302f4d
--  __AUTH_CONST.__const: 0x12e0 sha256:575ca64c68c1c697b29842043de3cb8232fc5dc3ec3b9f9e6ec0d8b4d4d5c646
--  __AUTH_CONST.__cfstring: 0x10a0 sha256:d110527bd4a4132bdbdb92842bae4c1d99f458f6a5092c52cba121752516d960
--  __AUTH_CONST.__objc_const: 0x90 sha256:e74e07ce73d3b9aad5799511939986ddd50a6209294a644f62bd5e7c8075f541
--  __AUTH_CONST.__weak_auth_got: 0x18 sha256:9301580f2a4c506b3a281d68e0e22bffb435cbb497ce8c36f9bdbf987996a481
--  __AUTH_CONST.__objc_intobj: 0x18 sha256:53850502c67c44854b4e827061d86f6bdf468f6f95a8e3c8946a660e6887b365
--  __AUTH_CONST.__auth_got: 0x7f8 sha256:2c2bc349e0bcde11b38485c903432d1ddaaf0b4a89fa70444a3a3da1e85d5db0
--  __AUTH.__objc_data: 0x50 sha256:ee93af219db6cda9e2b017e049e487d228a39f6b8fa0606ab346f7db62a186f2
--  __AUTH.__data: 0x50 sha256:d9726007a03fa4798c5e447ba6cad52efe740e91c88f3679e890770bef2a6f94
-+  __DATA_CONST.__objc_selrefs: 0x1a0 sha256:adba8a4bcef545944452a03819d15987e9102614d67addad3a88d796b293ebcb
-+  __DATA_CONST.__got: 0x150 sha256:8b3b2c2c5b4579389e8c261849acf9f6022cbfeea96c75d381c6db7b0500971d
-+  __AUTH_CONST.__const: 0x12e0 sha256:42002b394596bebcaf7571deeea8e4088be36d396d432fec3c98fd65911bfed4
-+  __AUTH_CONST.__cfstring: 0x10a0 sha256:d079555c335f2032c6ea0021195ed8cd256dfbf4573708ab29de18770699e3e7
-+  __AUTH_CONST.__objc_const: 0x90 sha256:f4c34f8b296ae41a47a3f79d4e23133fc4298d180ffe7b4f1b9ebe0704c17690
-+  __AUTH_CONST.__weak_auth_got: 0x18 sha256:29088a447bd737ef9fbfae413fb96a052bde0411bc28166e36dc698bd3ad3621
-+  __AUTH_CONST.__objc_intobj: 0x18 sha256:2e449db4d648b1915aaea8b82c049aa9ba7d8f073a06278ddf50a77b8ed9ed2a
-+  __AUTH_CONST.__auth_got: 0x800 sha256:e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad
-+  __AUTH.__objc_data: 0x50 sha256:5c6582bab8641aceb16b0065356ee9d7b18e339fe55fd04e64955e4ee672ceae
-+  __AUTH.__data: 0x50 sha256:cb960e0345d0a5d870775c5460736eb40b1e7c6af9b94d05dd97594e22d6d039
-   __DATA.__data: 0x268 sha256:f9d54bbe3ccaf08564c2928c55218a3f696989a05dffc8edf057773751aae153
-   __DATA.__crash_info: 0x148 sha256:6da6349e97370e8d430272961ce52dff296ff7c22208bd465045a16f557b12e4
-   __DATA.__bss: 0x16b0 sha256:ae30239640bbf39a3c862e109e405d064fec1a2ff740f4967a1a6bae73822593
-
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
--  UUID: ED2721D3-946D-35D9-BBE0-FC106BA41759
 -  Functions: 1732
--  Symbols:   2717
-+  UUID: 88826504-2ABC-3852-9216-8E5E82EEC89F
+-  Symbols:   1542
 +  Functions: 1731
-+  Symbols:   2714
-   CStrings:  468
- 
++  Symbols:   1543
 Symbols:
 + __ZNKSt3__114default_deleteIN2AG4data5table11malloc_zoneEEclB9fqe220106EPS4_
 + __ZNSt3__110__function12__value_funcIFjPKN2AG5swift8metadataEEEC2B9fqe220106ERKS8_
@@ -144,7 +86,6 @@ Symbols:
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeImmEENS_22__unordered_map_hasherImNS_4pairIKmmEENS_4hashImEENS_8equal_toImEEEENS_21__unordered_map_equalImS6_SA_S8_EENS_9allocatorIS6_EEE16__emplace_uniqueB9fqe220106IJRKNS_21piecewise_construct_tENS_5tupleIJOmEEENSL_IJEEEEEENS4_INS_15__hash_iteratorIPNS_11__hash_nodeIS2_PvEEEEbEEDpOT_ENKUlRS5_SK_OSN_OSO_E_clESZ_SK_S10_S11_
 + __ZZNSt3__112__hash_tableImNS_4hashImEENS_8equal_toImEENS_9allocatorImEEE16__emplace_uniqueB9fqe220106IJmEEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeImPvEEEEbEEDpOT_ENKUlRKmOmE_clESL_SM_
 + _objc_retain_x21
-- __ZN2AG5Graph20remove_removed_inputENS_11AttributeIDES1_.cold.1
 - __ZNKSt3__114default_deleteIN2AG4data5table11malloc_zoneEEclB9fqe220100EPS4_
 - __ZNSt3__110__function12__value_funcIFjPKN2AG5swift8metadataEEEC2B9fqe220100ERKS8_
 - __ZNSt3__110__function12__value_funcIFjPKN2AG5swift8metadataEEED2B9fqe220100Ev
@@ -211,5 +152,4 @@ Symbols:
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeImN2AG5Graph12ProfileTrace10UpdateDataEEENS_22__unordered_map_hasherImNS_4pairIKmS5_EENS_4hashImEENS_8equal_toImEEEENS_21__unordered_map_equalImSA_SE_SC_EENS_9allocatorISA_EEE16__emplace_uniqueB9fqe220100IJRKNS_21piecewise_construct_tENS_5tupleIJOmEEENSP_IJEEEEEENS8_INS_15__hash_iteratorIPNS_11__hash_nodeIS6_PvEEEEbEEDpOT_ENKUlRS9_SO_OSR_OSS_E_clES13_SO_S14_S15_
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeImmEENS_22__unordered_map_hasherImNS_4pairIKmmEENS_4hashImEENS_8equal_toImEEEENS_21__unordered_map_equalImS6_SA_S8_EENS_9allocatorIS6_EEE16__emplace_uniqueB9fqe220100IJRKNS_21piecewise_construct_tENS_5tupleIJOmEEENSL_IJEEEEEENS4_INS_15__hash_iteratorIPNS_11__hash_nodeIS2_PvEEEEbEEDpOT_ENKUlRS5_SK_OSN_OSO_E_clESZ_SK_S10_S11_
 - __ZZNSt3__112__hash_tableImNS_4hashImEENS_8equal_toImEENS_9allocatorImEEE16__emplace_uniqueB9fqe220100IJmEEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeImPvEEEEbEEDpOT_ENKUlRKmOmE_clESL_SM_
-
 ```

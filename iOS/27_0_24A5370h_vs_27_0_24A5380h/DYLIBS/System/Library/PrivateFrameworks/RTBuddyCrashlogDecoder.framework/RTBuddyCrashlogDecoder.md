@@ -2,38 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/RTBuddyCrashlogDecoder.framework/RTBuddyCrashlogDecoder`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2854` | `0x29d8` | **`+0x184`** |
+| `__AUTH_CONST.__cfstring` | `0x600` | `0x620` | **`+0x20`** |
+| `__AUTH_CONST.__const` | `0x260` | `0x280` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x19c2` | `0x19d9` | **`+0x17`** |
+| `__DATA.__data` | `0xb8` | `0xc0` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0xf8` | `0x100` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2854
-+  __TEXT.__text: 0x29d8
-   __TEXT.__const: 0x11
--  __TEXT.__cstring: 0x19c2
--  __TEXT.__unwind_info: 0xf8
-+  __TEXT.__cstring: 0x19d9
-+  __TEXT.__unwind_info: 0x100
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x628
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x260
--  __AUTH_CONST.__cfstring: 0x600
-+  __AUTH_CONST.__const: 0x280
-+  __AUTH_CONST.__cfstring: 0x620
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__data: 0xb8
-+  __DATA.__data: 0xc0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
+-778.0.2.0.0
++778.0.6.0.0
+
 -  Functions: 49
--  Symbols:   148
--  CStrings:  304
+-  Symbols:   119
+-  CStrings:  256
 +  Functions: 50
-+  Symbols:   151
-+  CStrings:  307
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __DATA_CONST.__const : content changed
++  Symbols:   121
++  CStrings:  258
 Symbols:
 + __ZL27_rtk_symbols_section_decodePK27RTK_scrlg_section_decoder_sP26RTK_scrlg_section_writer_sPKvm
 + _rtkit_symbols_section_decoder
@@ -46,5 +38,4 @@ Functions:
 CStrings:
 + "Symbols Section"
 + "images"
-
 ```

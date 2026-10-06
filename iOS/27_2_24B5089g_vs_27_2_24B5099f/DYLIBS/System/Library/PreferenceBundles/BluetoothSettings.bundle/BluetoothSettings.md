@@ -2,20 +2,18 @@
 
 > `/System/Library/PreferenceBundles/BluetoothSettings.bundle/BluetoothSettings`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__oslogstring` | `0x2172` | `0x2182` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -2701.2.0.0.0
 +2701.4.0.0.0
-   __TEXT.__text: 0x235c0
-   __TEXT.__objc_methlist: 0x17e4
-   __TEXT.__cstring: 0x1af1
-   __TEXT.__const: 0x598
-   __TEXT.__gcc_except_tab: 0x2e8
--  __TEXT.__oslogstring: 0x2172
-+  __TEXT.__oslogstring: 0x2182
-   __TEXT.__ustring: 0x8c
-   __TEXT.__swift5_typeref: 0x34a
-   __TEXT.__constg_swiftt: 0x15c
 Symbols:
 + -[BTSDevicesController handleDADaemonSessionEvent:]
 + -[BTSDevicesController reinitDADaemonSession]

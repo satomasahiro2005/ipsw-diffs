@@ -2,31 +2,18 @@
 
 > `/System/Library/SubFrameworks/RealityCoreRenderer.framework/RealityCoreRenderer`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__objc_const` | `0x4f10` | `0x4f48` | **`+0x38`** |
+| `__TEXT.__text` | `0xc6068` | `0xc6094` | **`+0x2c`** |
+| `__TEXT.__objc_methlist` | `0x1a04` | `0x1a24` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1240` | `0x1258` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
-
- 24.0.7.0.0
--  __TEXT.__text: 0xc6068
--  __TEXT.__objc_methlist: 0x1a04
-+  __TEXT.__text: 0xc6094
-+  __TEXT.__objc_methlist: 0x1a24
-   __TEXT.__const: 0x86f4
-   __TEXT.__constg_swiftt: 0x2fdc
-   __TEXT.__swift5_typeref: 0x1d22
-
-   __DATA_CONST.__objc_classlist: 0x1a8
-   __DATA_CONST.__objc_protolist: 0x120
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1240
-+  __DATA_CONST.__objc_selrefs: 0x1258
-   __DATA_CONST.__objc_protorefs: 0x90
-   __DATA_CONST.__objc_superrefs: 0x18
-   __DATA_CONST.__got: 0x448
-   __AUTH_CONST.__const: 0x2d100
--  __AUTH_CONST.__objc_const: 0x4f10
-+  __AUTH_CONST.__objc_const: 0x4f48
-   __AUTH_CONST.__auth_got: 0xf18
-   __AUTH.__data: 0x358
-   __DATA.__objc_ivar: 0xc
 Symbols:
 + _swift_retain_x11
 - _swift_retain_x10

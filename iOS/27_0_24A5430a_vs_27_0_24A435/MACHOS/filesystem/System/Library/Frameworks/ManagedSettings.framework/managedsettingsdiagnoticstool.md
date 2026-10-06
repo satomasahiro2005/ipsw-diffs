@@ -2,22 +2,23 @@
 
 > `/System/Library/Frameworks/ManagedSettings.framework/managedsettingsdiagnoticstool`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6aac` | `0x6ab0` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_data`
+- `__DATA_CONST.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 304.2.7.0.0
--  __TEXT.__text: 0x6aac
-+  __TEXT.__text: 0x6ab0
-   __TEXT.__auth_stubs: 0x780
-   __TEXT.__objc_stubs: 0xf00
-   __TEXT.__objc_methlist: 0x674
+```text
 Functions:
 ~ sub_10000169c : 6588 -> 6592
 ```

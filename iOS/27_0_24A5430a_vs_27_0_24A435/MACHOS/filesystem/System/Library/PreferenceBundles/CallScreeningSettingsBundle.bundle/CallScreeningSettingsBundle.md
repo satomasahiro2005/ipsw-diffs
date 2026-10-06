@@ -2,22 +2,23 @@
 
 > `/System/Library/PreferenceBundles/CallScreeningSettingsBundle.bundle/CallScreeningSettingsBundle`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1f4c` | `0x1f50` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_data`
+- `__DATA_CONST.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 3072.100.1.2.5
--  __TEXT.__text: 0x1f4c
-+  __TEXT.__text: 0x1f50
-   __TEXT.__auth_stubs: 0x4c0
-   __TEXT.__objc_stubs: 0x4e0
-   __TEXT.__objc_methlist: 0xfc
+```text
 Functions:
 ~ sub_1f74 : 444 -> 448
 ```

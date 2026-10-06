@@ -2,20 +2,15 @@
 
 > `/System/Library/VideoEncoders/AppleProResHWEncoder.videoencoder`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x208b0
-+  __TEXT.__text: 0x20820
-   __TEXT.__const: 0x746f0
-   __TEXT.__gcc_except_tab: 0x310
-   __TEXT.__cstring: 0x1403
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x208b0` | `0x20820` | **`-0x90`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __Z18convert32BGRAtoRGBPhjjj : 92 -> 84
 ~ __Z14APR_ImgFmt_4CCj : 76 -> 80
@@ -30,5 +25,4 @@ Functions:
 ~ __ZNSt3__119__partial_sort_implB9fqe220106INS_17_ClassicAlgPolicyERNS_6__lessIvvEENS_16reverse_iteratorINS_11__wrap_iterIPNS_4pairIttEEEEEESB_EET1_SC_SC_T2_OT0_ : 428 -> 420
 ~ __ZN19ProResFrameReceiver21PerformAlphaUpscalingEP10__CVBufferPK8S_ImgFmt : 884 -> 880
 ~ __ZNSt3__15dequeIPvNS_9allocatorIS1_EEE19__add_back_capacityEv : 484 -> 472
-
 ```

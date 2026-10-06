@@ -2,90 +2,57 @@
 
 > `/System/Library/Snippets/UIPlugins/SiriLinkUIPlugin.bundle/SiriLinkUIPlugin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_reflstr`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__auth_ptr`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x52778` | `0x508e0` | **`-0x1e98`** |
+| `__TEXT.__objc_stubs` | `0x720` | `0x580` | **`-0x1a0`** |
+| `__TEXT.__eh_frame` | `0x1ff0` | `0x1ea8` | **`-0x148`** |
+| `__TEXT.__objc_methname` | `0x58d` | `0x4cc` | **`-0xc1`** |
+| `__TEXT.__auth_stubs` | `0x1bb0` | `0x1b00` | **`-0xb0`** |
+| `__TEXT.__const` | `0x7d28` | `0x7cb8` | **`-0x70`** |
+| `__TEXT.__unwind_info` | `0x1e78` | `0x1e08` | **`-0x70`** |
+| `__DATA.__objc_selrefs` | `0x1c8` | `0x160` | **`-0x68`** |
+| `__DATA_CONST.__auth_got` | `0xde0` | `0xd88` | **`-0x58`** |
+| `__TEXT.__swift5_typeref` | `0x3ec4` | `0x3e70` | **`-0x54`** |
+| `__DATA.__data` | `0x3758` | `0x3708` | **`-0x50`** |
+| `__DATA_CONST.__got` | `0x668` | `0x640` | **`-0x28`** |
+| `__TEXT.__swift5_fieldmd` | `0x177c` | `0x1754` | **`-0x28`** |
+| `__DATA_CONST.__const` | `0x39f8` | `0x39d8` | **`-0x20`** |
+| `__TEXT.__swift5_capture` | `0x2fc` | `0x2dc` | **`-0x20`** |
+| `__TEXT.__constg_swiftt` | `0x1988` | `0x196c` | **`-0x1c`** |
+| `__TEXT.__swift5_types` | `0x214` | `0x210` | **`-0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_const`
 - `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_classlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_reflstr`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -3605.7.1.0.0
--  __TEXT.__text: 0x4ed5c
--  __TEXT.__auth_stubs: 0x1bb0
--  __TEXT.__objc_stubs: 0x720
--  __TEXT.__const: 0x7d28
--  __TEXT.__swift5_typeref: 0x3ec4
--  __TEXT.__swift5_capture: 0x2fc
 +3605.6.1.0.0
-+  __TEXT.__text: 0x4cee8
-+  __TEXT.__auth_stubs: 0x1b00
-+  __TEXT.__objc_stubs: 0x580
-+  __TEXT.__const: 0x7cb8
-+  __TEXT.__swift5_typeref: 0x3e70
-+  __TEXT.__swift5_capture: 0x2dc
-   __TEXT.__swift5_reflstr: 0x972
-   __TEXT.__swift5_assocty: 0x3c8
--  __TEXT.__constg_swiftt: 0x1988
--  __TEXT.__swift5_fieldmd: 0x177c
-+  __TEXT.__constg_swiftt: 0x196c
-+  __TEXT.__swift5_fieldmd: 0x1754
-   __TEXT.__swift5_builtin: 0x50
-   __TEXT.__swift5_proto: 0x688
--  __TEXT.__swift5_types: 0x214
-+  __TEXT.__swift5_types: 0x210
-   __TEXT.__swift_as_entry: 0x88
-   __TEXT.__swift_as_ret: 0x94
-   __TEXT.__swift_as_cont: 0xd0
 
-   __TEXT.__objc_methtype: 0x82
-   __TEXT.__swift5_mpenum: 0x10
-   __TEXT.__objc_classname: 0xf9
--  __TEXT.__objc_methname: 0x58d
--  __TEXT.__unwind_info: 0x2598
--  __TEXT.__eh_frame: 0x1ff8
--  __DATA_CONST.__const: 0x39f8
-+  __TEXT.__objc_methname: 0x4cc
-+  __TEXT.__unwind_info: 0x2528
-+  __TEXT.__eh_frame: 0x1eb0
-+  __DATA_CONST.__const: 0x39d8
-   __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0xde0
--  __DATA_CONST.__got: 0x668
-+  __DATA_CONST.__auth_got: 0xd88
-+  __DATA_CONST.__got: 0x640
-   __DATA_CONST.__auth_ptr: 0x820
-   __DATA.__objc_const: 0x238
--  __DATA.__objc_selrefs: 0x1c8
-+  __DATA.__objc_selrefs: 0x160
-   __DATA.__objc_data: 0x98
--  __DATA.__data: 0x3758
-+  __DATA.__data: 0x3708
-   __DATA.__common: 0x90
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3050
 -  Symbols:   8451
 -  CStrings:  152
 +  Functions: 3016
 +  Symbols:   8358
 +  CStrings:  139
- 
 Symbols:
 + _$s10SnippetKit16CodableAceObjectVySo19SAStartLocalRequestCGSgMa
 + _$s16SiriLinkUIPlugin18WorkflowDataModelsO17CustomIntentModelV10CodingKeys33_849978E4D5D87ADEB69D13D2EA96D7F3LLOwetTm

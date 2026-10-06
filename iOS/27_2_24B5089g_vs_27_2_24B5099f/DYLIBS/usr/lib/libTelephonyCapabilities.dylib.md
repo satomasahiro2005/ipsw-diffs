@@ -2,53 +2,35 @@
 
 > `/usr/lib/libTelephonyCapabilities.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x54070` | `0x2aaa4` | **`-0x295cc`** |
+| `__TEXT.__gcc_except_tab` | `0x8ac0` | `0x1ecc` | **`-0x6bf4`** |
+| `__TEXT.__cstring` | `0x4a54` | `0x9ff` | **`-0x4055`** |
+| `__TEXT.__unwind_info` | `0x3d78` | `0x22c0` | **`-0x1ab8`** |
+| `__TEXT.__const` | `0x3ea4` | `0x28cc` | **`-0x15d8`** |
+| `__DATA_CONST.__const` | `0x11d0` | `0x188` | **`-0x1048`** |
+| `__TEXT.__oslogstring` | `0x4c1` | `0x1b0` | **`-0x311`** |
+| `__AUTH_CONST.__const` | `0x178` | `0x100` | **`-0x78`** |
+| `__DATA_DIRTY.__data` | `0xb0` | `0x58` | **`-0x58`** |
+| `__TEXT.__init_offsets` | `0x5c` | `0xc` | **`-0x50`** |
+| `__AUTH_CONST.__cfstring` | `0x40` | `—` | **`-0x40`** |
+| `__DATA.__common` | `0x180` | `0x160` | **`-0x20`** |
+| `__DATA_DIRTY.__bss` | `0x1890` | `0x18b0` | **`+0x20`** |
+| `__DATA.__bss` | `0x4` | `—` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
- 6575.0.0.0.0
--  __TEXT.__text: 0x53c28
--  __TEXT.__init_offsets: 0x5c
--  __TEXT.__const: 0x3ea4
--  __TEXT.__gcc_except_tab: 0x8ac0
--  __TEXT.__cstring: 0x4a54
--  __TEXT.__oslogstring: 0x4c1
--  __TEXT.__unwind_info: 0x3de8
-+  __TEXT.__text: 0x2a730
-+  __TEXT.__init_offsets: 0xc
-+  __TEXT.__gcc_except_tab: 0x1ecc
-+  __TEXT.__const: 0x28cc
-+  __TEXT.__cstring: 0x9ff
-+  __TEXT.__oslogstring: 0x1b0
-+  __TEXT.__unwind_info: 0x23b0
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x11d0
-+  __DATA_CONST.__const: 0x188
-   __DATA_CONST.__weak_got: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x178
--  __AUTH_CONST.__cfstring: 0x40
-+  __AUTH_CONST.__const: 0x100
-   __AUTH_CONST.__weak_auth_got: 0x20
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__common: 0x180
--  __DATA_DIRTY.__data: 0xb0
--  __DATA_DIRTY.__bss: 0x1890
-+  __DATA.__common: 0x160
-+  __DATA_DIRTY.__data: 0x58
-+  __DATA_DIRTY.__bss: 0x18b0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-
-   - /usr/lib/libTelephonyBasebandDynamic.dylib
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 1879
 -  Symbols:   3059
 -  CStrings:  714
 +  Functions: 1487
 +  Symbols:   1881
 +  CStrings:  160
- 
 Symbols:
 + GCC_except_table171
 + GCC_except_table174

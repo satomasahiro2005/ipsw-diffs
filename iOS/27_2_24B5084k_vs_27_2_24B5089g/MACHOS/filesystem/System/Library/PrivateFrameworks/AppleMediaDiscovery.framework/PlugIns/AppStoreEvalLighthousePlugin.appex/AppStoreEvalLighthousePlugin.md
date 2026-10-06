@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/AppleMediaDiscovery.framework/PlugIns/AppStoreEvalLighthousePlugin.appex/AppStoreEvalLighthousePlugin`
 
+### Other Changes
+
 ```diff
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/AppleMediaDiscoveryFramework/install/TempContent/Objects/AppleMediaDiscoveryFramework.build/AppStoreEvalLighthousePlugin.build/Objects-normal/arm64e/AMDCoreMLDataProvider-38f9908d0912485c1e527193b9a2c8e4.o

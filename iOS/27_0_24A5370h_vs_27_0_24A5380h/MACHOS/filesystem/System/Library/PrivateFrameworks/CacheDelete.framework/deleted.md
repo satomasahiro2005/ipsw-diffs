@@ -2,86 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/CacheDelete.framework/deleted`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5a190` | `0x5a8a4` | **`+0x714`** |
+| `__DATA.__objc_const` | `0x48a8` | `0x4a68` | **`+0x1c0`** |
+| `__TEXT.__objc_methname` | `0x7c09` | `0x7d7f` | **`+0x176`** |
+| `__TEXT.__objc_stubs` | `0x6780` | `0x6880` | **`+0x100`** |
+| `__TEXT.__objc_methlist` | `0x2f24` | `0x2fcc` | **`+0xa8`** |
+| `__TEXT.__oslogstring` | `0xab5b` | `0xabe3` | **`+0x88`** |
+| `__TEXT.__cstring` | `0x48da` | `0x493b` | **`+0x61`** |
+| `__DATA_CONST.__cfstring` | `0x4ae0` | `0x4b40` | **`+0x60`** |
+| `__DATA.__objc_data` | `0xb40` | `0xb90` | **`+0x50`** |
+| `__DATA.__objc_selrefs` | `0x1e90` | `0x1ee0` | **`+0x50`** |
+| `__DATA.__bss` | `0x1f8` | `0x230` | **`+0x38`** |
+| `__DATA_CONST.__got` | `0x230` | `0x268` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0xdd8` | `0xe00` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x1ce8` | `0x1d08` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x384` | `0x39c` | **`+0x18`** |
+| `__DATA_CONST.__objc_arrayobj` | `0x1c8` | `0x1e0` | **`+0x18`** |
+| `__TEXT.__objc_classname` | `0x3f1` | `0x407` | **`+0x16`** |
+| `__TEXT.__gcc_except_tab` | `0x28fc` | `0x2910` | **`+0x14`** |
+| `__DATA_CONST.__objc_arraydata` | `0x568` | `0x578` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x120` | `0x128` | **`+0x8`** |
+| `__TEXT.__objc_methtype` | `0xe73` | `0xe7b` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x5a190
-+  __TEXT.__text: 0x5a8a4
-   __TEXT.__auth_stubs: 0xf20
--  __TEXT.__objc_stubs: 0x6780
--  __TEXT.__objc_methlist: 0x2f24
-+  __TEXT.__objc_stubs: 0x6880
-+  __TEXT.__objc_methlist: 0x2fcc
-   __TEXT.__const: 0x190
--  __TEXT.__gcc_except_tab: 0x28fc
--  __TEXT.__cstring: 0x48da
--  __TEXT.__objc_methname: 0x7c09
--  __TEXT.__oslogstring: 0xab5b
--  __TEXT.__objc_classname: 0x3f1
--  __TEXT.__objc_methtype: 0xe73
--  __TEXT.__unwind_info: 0xdd8
--  __DATA_CONST.__const: 0x1ce8
--  __DATA_CONST.__cfstring: 0x4ae0
--  __DATA_CONST.__objc_classlist: 0x120
-+  __TEXT.__gcc_except_tab: 0x2910
-+  __TEXT.__cstring: 0x493b
-+  __TEXT.__objc_methname: 0x7d7f
-+  __TEXT.__oslogstring: 0xabe3
-+  __TEXT.__objc_classname: 0x407
-+  __TEXT.__objc_methtype: 0xe7b
-+  __TEXT.__unwind_info: 0xe00
-+  __DATA_CONST.__const: 0x1d08
-+  __DATA_CONST.__cfstring: 0x4b40
-+  __DATA_CONST.__objc_classlist: 0x128
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x68
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0xe8
--  __DATA_CONST.__objc_arraydata: 0x568
--  __DATA_CONST.__objc_arrayobj: 0x1c8
-+  __DATA_CONST.__objc_arraydata: 0x578
-+  __DATA_CONST.__objc_arrayobj: 0x1e0
-   __DATA_CONST.__objc_intobj: 0x1e0
-   __DATA_CONST.__objc_doubleobj: 0x20
-   __DATA_CONST.__objc_dictobj: 0x320
-   __DATA_CONST.__auth_got: 0x7a0
--  __DATA_CONST.__got: 0x230
-+  __DATA_CONST.__got: 0x268
-   __DATA_CONST.__auth_ptr: 0x8
--  __DATA.__objc_const: 0x48a8
--  __DATA.__objc_selrefs: 0x1e90
--  __DATA.__objc_ivar: 0x384
--  __DATA.__objc_data: 0xb40
-+  __DATA.__objc_const: 0x4a68
-+  __DATA.__objc_selrefs: 0x1ee0
-+  __DATA.__objc_ivar: 0x39c
-+  __DATA.__objc_data: 0xb90
-   __DATA.__data: 0x4f0
-   __DATA.__common: 0x1
--  __DATA.__bss: 0x1f8
-+  __DATA.__bss: 0x230
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+-904.0.0.0.0
++904.0.5.0.0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1222
--  Symbols:   3156
--  CStrings:  3773
+-  Symbols:   2995
+-  CStrings:  3128
 +  Functions: 1236
-+  Symbols:   3191
-+  CStrings:  3802
- 
-Sections:
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
-~ __DATA.__data : content changed
++  Symbols:   3030
++  CStrings:  3154
 Symbols:
 + +[AppContainerCaches deleteAppCaches:options:]
 + -[AppCacheDeleteOptions .cxx_destruct]
@@ -183,5 +152,4 @@ CStrings:
 - "allVisibleAppBundleIDs"
 - "buildAppInfoForBundleIDs:"
 - "deleteAppCaches:urgency:telemetry:group:fairPurgeMode:"
-
 ```

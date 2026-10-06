@@ -2,10 +2,12 @@
 
 > `/usr/libexec/cryptexd`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
-- `__TEXT.__cstring`
 - `__DATA.__data`
+- `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 Symbols:

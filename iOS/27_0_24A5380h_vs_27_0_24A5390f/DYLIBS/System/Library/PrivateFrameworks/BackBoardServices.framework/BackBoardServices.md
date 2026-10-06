@@ -2,88 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/BackBoardServices.framework/BackBoardServices`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_floatobj`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x897a4` | `0x8a250` | **`+0xaac`** |
+| `__AUTH_CONST.__objc_const` | `0x121b8` | `0x123c0` | **`+0x208`** |
+| `__AUTH_CONST.__cfstring` | `0xa2a0` | `0xa400` | **`+0x160`** |
+| `__TEXT.__cstring` | `0xb8c3` | `0xba23` | **`+0x160`** |
+| `__TEXT.__objc_methlist` | `0x8ca4` | `0x8d94` | **`+0xf0`** |
+| `__AUTH.__objc_data` | `0x2440` | `0x24e0` | **`+0xa0`** |
+| `__TEXT.__oslogstring` | `0x2651` | `0x26b6` | **`+0x65`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3078` | `0x30a0` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x1608` | `0x1628` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x2368` | `0x2388` | **`+0x20`** |
+| `__DATA.__bss` | `0x5f0` | `0x600` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x1938` | `0x1948` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x7d0` | `0x7e0` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x5e0` | `0x5f0` | **`+0x10`** |
+| `__TEXT.__const` | `0x3e8` | `0x3f8` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x918` | `0x924` | **`+0xc`** |
+| `__DATA_CONST.__objc_superrefs` | `0x418` | `0x420` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -868.0.0.0.0
--  __TEXT.__text: 0x897a4
--  __TEXT.__objc_methlist: 0x8ca4
--  __TEXT.__const: 0x3e8
 +873.100.0.0.0
-+  __TEXT.__text: 0x8a250
-+  __TEXT.__objc_methlist: 0x8d94
-+  __TEXT.__const: 0x3f8
-   __TEXT.__dlopen_cstrs: 0x18e
-   __TEXT.__gcc_except_tab: 0x558
--  __TEXT.__cstring: 0xb8c3
--  __TEXT.__oslogstring: 0x2651
-+  __TEXT.__cstring: 0xba23
-+  __TEXT.__oslogstring: 0x26b6
-   __TEXT.__ustring: 0x14
--  __TEXT.__unwind_info: 0x2368
-+  __TEXT.__unwind_info: 0x2388
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1938
--  __DATA_CONST.__objc_classlist: 0x5e0
-+  __DATA_CONST.__const: 0x1948
-+  __DATA_CONST.__objc_classlist: 0x5f0
-   __DATA_CONST.__objc_protolist: 0x1b8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3078
-+  __DATA_CONST.__objc_selrefs: 0x30a0
-   __DATA_CONST.__objc_protorefs: 0xe8
--  __DATA_CONST.__objc_superrefs: 0x418
-+  __DATA_CONST.__objc_superrefs: 0x420
-   __DATA_CONST.__objc_arraydata: 0x70
--  __DATA_CONST.__got: 0x7d0
--  __AUTH_CONST.__const: 0x1608
--  __AUTH_CONST.__cfstring: 0xa2a0
--  __AUTH_CONST.__objc_const: 0x121b8
-+  __DATA_CONST.__got: 0x7e0
-+  __AUTH_CONST.__const: 0x1628
-+  __AUTH_CONST.__cfstring: 0xa400
-+  __AUTH_CONST.__objc_const: 0x123c0
-   __AUTH_CONST.__objc_intobj: 0x1b0
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__objc_arrayobj: 0x30
-   __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__auth_got: 0x760
--  __AUTH.__objc_data: 0x2440
--  __DATA.__objc_ivar: 0x918
-+  __AUTH.__objc_data: 0x24e0
-+  __DATA.__objc_ivar: 0x924
-   __DATA.__data: 0x14b0
--  __DATA.__bss: 0x5f0
-+  __DATA.__bss: 0x600
-   __DATA_DIRTY.__objc_data: 0x1680
-   __DATA_DIRTY.__data: 0x50
-   __DATA_DIRTY.__bss: 0x1d0
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 3466
--  Symbols:   7533
+-  Symbols:   6553
 -  CStrings:  1944
 +  Functions: 3485
-+  Symbols:   7573
++  Symbols:   6591
 +  CStrings:  1957
- 
 Symbols:
 + +[BKSHardwareButtonLongPressDescriptor supportsSecureCoding]
 + +[BKSHardwareButtonService sharedInstance]
@@ -152,8 +105,6 @@ Symbols:
 + __OBJC_METACLASS_RO_$_BKSHardwareButtonLongPressDescriptor
 + __OBJC_METACLASS_RO_$_BKSHardwareButtonService
 + ___42+[BKSHardwareButtonService sharedInstance]_block_invoke
-+ _objc_msgSend$setAvoidCancelingContinuingClients:
-+ _objc_msgSend$shouldAvoidCancelingContinuingClients
 - GCC_except_table1209
 - GCC_except_table1226
 - GCC_except_table1228

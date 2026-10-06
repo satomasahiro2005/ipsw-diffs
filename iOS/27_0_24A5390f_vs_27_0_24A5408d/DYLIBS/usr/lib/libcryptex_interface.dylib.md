@@ -2,28 +2,23 @@
 
 > `/usr/lib/libcryptex_interface.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x752c` | `0x7574` | **`+0x48`** |
+| `__TEXT.__cstring` | `0xc7e` | `0xc8e` | **`+0x10`** |
+| `__TEXT.__const` | `0x150` | `0x158` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -761.0.15.0.0
--  __TEXT.__text: 0x752c
 +761.0.17.502.1
-+  __TEXT.__text: 0x7574
-   __TEXT.__objc_methlist: 0x110
--  __TEXT.__const: 0x150
--  __TEXT.__cstring: 0xc7e
-+  __TEXT.__const: 0x158
-+  __TEXT.__cstring: 0xc8e
-   __TEXT.__oslogstring: 0x934
-   __TEXT.__gcc_except_tab: 0x2bc
-   __TEXT.__unwind_info: 0x280
 
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 179
--  Symbols:   408
-+  Symbols:   409
-   CStrings:  177
- 
+-  Symbols:   393
++  Symbols:   394
 Symbols:
 + _xpc_dictionary_get_uint64
 Functions:

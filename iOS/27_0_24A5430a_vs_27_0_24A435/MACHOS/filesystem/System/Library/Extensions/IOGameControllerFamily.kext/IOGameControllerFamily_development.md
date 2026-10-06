@@ -2,23 +2,22 @@
 
 > `/System/Library/Extensions/IOGameControllerFamily.kext/IOGameControllerFamily_development`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x2a93c` | `0x2b468` | **`+0xb2c`** |
+
+### Same-size Content Changes
 
 - `__DATA.__data`
+- `__DATA_CONST.__const`
 - `__DATA_CONST.__mod_init_func`
 - `__DATA_CONST.__mod_term_func`
-- `__DATA_CONST.__const`
 
-```diff
+### Other Changes
 
-   __TEXT.__const: 0x480
-   __TEXT.__cstring: 0x27de
-   __TEXT.__os_log: 0x90fa
--  __TEXT_EXEC.__text: 0x2a93c
-+  __TEXT_EXEC.__text: 0x2b468
-   __TEXT_EXEC.__auth_stubs: 0x540
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x2b8
+```text
 Functions:
 ~ __ZN34PSVR2SenseDeviceFastPathUserClient9MetaClassC1Ev : 72 -> 76
 ~ __ZN34PSVR2SenseDeviceFastPathUserClientC2EPK11OSMetaClass : 56 -> 60

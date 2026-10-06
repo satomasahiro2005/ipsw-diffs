@@ -2,14 +2,15 @@
 
 > `/usr/lib/libBasebandCommandDriversMIPC.dylib`
 
-```diff
+### Section Size Changes
 
- 1585.0.0.0.0
--  __TEXT.__text: 0x83eb0
-+  __TEXT.__text: 0x83f48
-   __TEXT.__init_offsets: 0x18
-   __TEXT.__const: 0xa3f0
-   __TEXT.__gcc_except_tab: 0x7598
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x83eb0` | `0x83f48` | **`+0x98`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__16vectorINS_9sub_matchIPKcEENS_9allocatorIS4_EEE6assignEmRKS4_ : 460 -> 476
 ~ __ZNSt3__16vectorINS_9sub_matchIPKcEENS_9allocatorIS4_EEE6resizeEmRKS4_ : 396 -> 420

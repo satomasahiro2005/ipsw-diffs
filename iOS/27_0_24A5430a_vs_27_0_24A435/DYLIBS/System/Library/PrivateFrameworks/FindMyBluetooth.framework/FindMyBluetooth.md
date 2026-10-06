@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/FindMyBluetooth.framework/FindMyBluetooth`
 
-```diff
+### Section Size Changes
 
- 106.30.6.14.10
--  __TEXT.__text: 0xdecd4
-+  __TEXT.__text: 0xded30
-   __TEXT.__objc_methlist: 0x6fc
-   __TEXT.__const: 0x6ac8
-   __TEXT.__swift5_typeref: 0x1d34
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xdecd4` | `0xded30` | **`+0x5c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_206e6a358 -> sub_2074f1358 : 604 -> 608
 ~ sub_206e715dc -> sub_2074f85e0 : 752 -> 756

@@ -2,130 +2,63 @@
 
 > `/System/Library/PrivateFrameworks/AppleMediaServicesUI.framework/AppleMediaServicesUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2372fc` | `0x23a820` | **`+0x3524`** |
+| `__TEXT.__eh_frame` | `0x8808` | `0x8cb0` | **`+0x4a8`** |
+| `__TEXT.__swift5_typeref` | `0x16368` | `0x16734` | **`+0x3cc`** |
+| `__AUTH_CONST.__objc_const` | `0x225f0` | `0x228f8` | **`+0x308`** |
+| `__AUTH.__data` | `0x6680` | `0x6940` | **`+0x2c0`** |
+| `__AUTH_CONST.__const` | `0xada8` | `0xb058` | **`+0x2b0`** |
+| `__AUTH_CONST.__cfstring` | `0xb4e0` | `0xb240` | **`-0x2a0`** |
+| `__DATA_DIRTY.__objc_data` | `0xdb8` | `0xfe8` | **`+0x230`** |
+| `__DATA.__bss` | `0xc8e0` | `0xc6f0` | **`-0x1f0`** |
+| `__TEXT.__cstring` | `0xfd97` | `0xff87` | **`+0x1f0`** |
+| `__TEXT.__oslogstring` | `0xa895` | `0xa6bb` | **`-0x1da`** |
+| `__DATA.__data` | `0x7bbc` | `0x7d7c` | **`+0x1c0`** |
+| `__TEXT.__constg_swiftt` | `0x6c34` | `0x6db8` | **`+0x184`** |
+| `__AUTH.__objc_data` | `0x9240` | `0x90c0` | **`-0x180`** |
+| `__TEXT.__swift5_fieldmd` | `0x3e78` | `0x3f90` | **`+0x118`** |
+| `__AUTH_CONST.__auth_got` | `0x2cf8` | `0x2df8` | **`+0x100`** |
+| `__TEXT.__swift5_reflstr` | `0x38e5` | `0x39e5` | **`+0x100`** |
+| `__DATA_CONST.__got` | `0x1f88` | `0x2078` | **`+0xf0`** |
+| `__TEXT.__objc_methlist` | `0x113dc` | `0x1130c` | **`-0xd0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x9348` | `0x9290` | **`-0xb8`** |
+| `__TEXT.__unwind_info` | `0x9730` | `0x97d8` | **`+0xa8`** |
+| `__TEXT.__gcc_except_tab` | `0x15b0` | `0x1518` | **`-0x98`** |
+| `__DATA_DIRTY.__bss` | `0x48` | `0xc8` | **`+0x80`** |
+| `__DATA_CONST.__const` | `0x3fd0` | `0x3f60` | **`-0x70`** |
+| `__TEXT.__swift5_capture` | `0x1da8` | `0x1e0c` | **`+0x64`** |
+| `__TEXT.__const` | `0x106c4` | `0x10714` | **`+0x50`** |
+| `__TEXT.__swift_as_cont` | `0x700` | `0x74c` | **`+0x4c`** |
+| `__DATA.__common` | `0x468` | `0x42a` | **`-0x3e`** |
+| `__TEXT.__swift5_assocty` | `0x1440` | `0x1410` | **`-0x30`** |
+| `__TEXT.__swift_as_ret` | `0x2d0` | `0x2f8` | **`+0x28`** |
+| `__TEXT.__swift_as_entry` | `0x250` | `0x26c` | **`+0x1c`** |
+| `__DATA_CONST.__objc_classlist` | `0xb40` | `0xb58` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0x4f0` | `0x504` | **`+0x14`** |
+| `__DATA.__objc_ivar` | `0x1114` | `0x1104` | **`-0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x418` | `0x428` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x150` | `0x160` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x690` | `0x688` | **`-0x8`** |
+| `__DATA_DIRTY.__data` | `0x158` | `0x150` | **`-0x8`** |
+| `__TEXT.__swift5_proto` | `0x600` | `0x5f8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2372fc
-+  __TEXT.__text: 0x23a820
-   __TEXT.__delay_helper: 0x114
--  __TEXT.__objc_methlist: 0x113dc
--  __TEXT.__const: 0x106c4
--  __TEXT.__gcc_except_tab: 0x15b0
--  __TEXT.__oslogstring: 0xa895
--  __TEXT.__cstring: 0xfd97
-+  __TEXT.__objc_methlist: 0x1130c
-+  __TEXT.__const: 0x10714
-+  __TEXT.__gcc_except_tab: 0x1518
-+  __TEXT.__oslogstring: 0xa6bb
-+  __TEXT.__cstring: 0xff87
-   __TEXT.__dlopen_cstrs: 0xe35
-   __TEXT.__ustring: 0x13a
--  __TEXT.__constg_swiftt: 0x6c34
--  __TEXT.__swift5_typeref: 0x16368
-+  __TEXT.__constg_swiftt: 0x6db8
-+  __TEXT.__swift5_typeref: 0x16734
-   __TEXT.__swift5_builtin: 0x21c
--  __TEXT.__swift5_reflstr: 0x38e5
--  __TEXT.__swift5_fieldmd: 0x3e78
--  __TEXT.__swift5_assocty: 0x1440
--  __TEXT.__swift5_proto: 0x600
--  __TEXT.__swift5_types: 0x4f0
--  __TEXT.__swift5_capture: 0x1da8
-+  __TEXT.__swift5_reflstr: 0x39e5
-+  __TEXT.__swift5_fieldmd: 0x3f90
-+  __TEXT.__swift5_assocty: 0x1410
-+  __TEXT.__swift5_proto: 0x5f8
-+  __TEXT.__swift5_types: 0x504
-+  __TEXT.__swift5_capture: 0x1e0c
-   __TEXT.__swift5_protos: 0x34
--  __TEXT.__swift_as_entry: 0x250
--  __TEXT.__swift_as_ret: 0x2d0
--  __TEXT.__swift_as_cont: 0x700
-+  __TEXT.__swift_as_entry: 0x26c
-+  __TEXT.__swift_as_ret: 0x2f8
-+  __TEXT.__swift_as_cont: 0x74c
-   __TEXT.__swift5_mpenum: 0x50
--  __TEXT.__unwind_info: 0x9730
--  __TEXT.__eh_frame: 0x8808
-+  __TEXT.__unwind_info: 0x97d8
-+  __TEXT.__eh_frame: 0x8cb0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3fd0
--  __DATA_CONST.__objc_classlist: 0xb40
-+  __DATA_CONST.__const: 0x3f60
-+  __DATA_CONST.__objc_classlist: 0xb58
-   __DATA_CONST.__objc_catlist: 0xa0
--  __DATA_CONST.__objc_protolist: 0x418
-+  __DATA_CONST.__objc_protolist: 0x428
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x9348
--  __DATA_CONST.__objc_protorefs: 0x150
--  __DATA_CONST.__objc_superrefs: 0x690
-+  __DATA_CONST.__objc_selrefs: 0x9290
-+  __DATA_CONST.__objc_protorefs: 0x160
-+  __DATA_CONST.__objc_superrefs: 0x688
-   __DATA_CONST.__objc_arraydata: 0x340
--  __DATA_CONST.__got: 0x1f88
--  __AUTH_CONST.__const: 0xada8
--  __AUTH_CONST.__cfstring: 0xb4e0
--  __AUTH_CONST.__objc_const: 0x225f0
-+  __DATA_CONST.__got: 0x2078
-+  __AUTH_CONST.__const: 0xb058
-+  __AUTH_CONST.__cfstring: 0xb240
-+  __AUTH_CONST.__objc_const: 0x228f8
-   __AUTH_CONST.__objc_intobj: 0x408
-   __AUTH_CONST.__objc_dictobj: 0x258
-   __AUTH_CONST.__objc_doubleobj: 0x60
-   __AUTH_CONST.__objc_arrayobj: 0x108
--  __AUTH_CONST.__auth_got: 0x2cf8
--  __AUTH.__objc_data: 0x9240
--  __AUTH.__data: 0x6680
--  __DATA.__objc_ivar: 0x1114
--  __DATA.__data: 0x7bbc
-+  __AUTH_CONST.__auth_got: 0x2df8
-+  __AUTH.__objc_data: 0x90c0
-+  __AUTH.__data: 0x6940
-+  __DATA.__objc_ivar: 0x1104
-+  __DATA.__data: 0x7d7c
-   __DATA.__objc_stublist: 0x20
--  __DATA.__bss: 0xc8e0
--  __DATA.__common: 0x468
--  __DATA_DIRTY.__objc_data: 0xdb8
--  __DATA_DIRTY.__data: 0x158
--  __DATA_DIRTY.__bss: 0x48
-+  __DATA.__bss: 0xc6f0
-+  __DATA.__common: 0x42a
-+  __DATA_DIRTY.__objc_data: 0xfe8
-+  __DATA_DIRTY.__data: 0x150
-+  __DATA_DIRTY.__bss: 0xc8
-   __DATA_DIRTY.__common: 0x10
-   - /System/Library/Frameworks/ARKit.framework/ARKit
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
+-8.0.38.0.0
++8.0.43.0.0
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 16179
--  Symbols:   30139
--  CStrings:  4504
+-  Symbols:   13424
+-  CStrings:  3060
 +  Functions: 16236
-+  Symbols:   30120
-+  CStrings:  4494
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __DATA.__objc_stublist : content changed
++  Symbols:   13387
++  CStrings:  3069
 Symbols:
 + -[AMSUIWebClientContext originalAccount]
 + GCC_except_table103
@@ -192,21 +125,6 @@ Symbols:
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE16headerProminenceyQrAA0E0OFQOyAA7SectionVy018AppleMediaServicesB0016ExpandableHeaderC0VAcAE13textSelectionyQrqd__AA17TextSelectabilityRd__lFQOyAA15ModifiedContentVyAOyAA0N0VAA16_FlexFrameLayoutVGAA08_PaddingT0VG_AA07EnablednO0VQo_AA05EmptyC0VG_Qo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE16headerProminenceyQrAA0E0OFQOyAA7SectionVy018AppleMediaServicesB0016ExpandableHeaderC0VAcAE13textSelectionyQrqd__AA17TextSelectabilityRd__lFQOyAA15ModifiedContentVyAOyAA0N0VAA16_FlexFrameLayoutVGAA08_PaddingT0VG_AA07EnablednO0VQo_AA05EmptyC0VG_Qo_HOTm
 + _kCFAllocatorDefault
-+ _objc_msgSend$ageEstimationServiceWithReply:
-+ _objc_msgSend$configureWithConfiguration:
-+ _objc_msgSend$connectionWithMediaType:
-+ _objc_msgSend$currentEstimateWithReply:
-+ _objc_msgSend$hasEligibleDocument
-+ _objc_msgSend$initWithAccount:viewController:bag:
-+ _objc_msgSend$initWithAccountParameters:viewController:bag:
-+ _objc_msgSend$initWithCommunicationSafetyState:webContentFilterState:
-+ _objc_msgSend$initWithInteger:
-+ _objc_msgSend$initWithMinAge:nonce:allowedDocuments:
-+ _objc_msgSend$manualCaptureOverride
-+ _objc_msgSend$processFrameWithSurface:viewportSize:orientation:boundingBox:hasBoundingBox:
-+ _objc_msgSend$setInterface:forSelector:argumentIndex:ofReply:
-+ _objc_msgSend$setInterruptionHandler:
-+ _objc_msgSend$setInvalidationHandler:
 + _objc_release_x10
 + _os_signpost_enabled
 + _os_signpost_id_generate
@@ -414,43 +332,6 @@ Symbols:
 - _kAccountParamDeviceId
 - _kAccountParamMMEClientInfo
 - _kPaymentVerificationHeader
-- _objc_msgSend$_allowedAccountParameters:
-- _objc_msgSend$_contextCombining:with:accountParameters:account:
-- _objc_msgSend$_descriptorForMinimumAge:allowedDocumentTypes:
-- _objc_msgSend$_documentTypeAllowed:allowedDocumentTypes:
-- _objc_msgSend$_finishPromiseWithResult:error:
-- _objc_msgSend$_identityController
-- _objc_msgSend$_identityRequestWithDescriptor:nonce:
-- _objc_msgSend$_nonceFromString:
-- _objc_msgSend$_promiseToTryNextFlowWithResult:error:continuationBlock:
-- _objc_msgSend$_tokenFromDictionary:
-- _objc_msgSend$addElements:withIntentToStore:
-- _objc_msgSend$ageThresholdElementWithAge:
-- _objc_msgSend$ams_isSimpleProfile
-- _objc_msgSend$ams_selectedProfileForMediaType:
-- _objc_msgSend$ams_setStorefront:
-- _objc_msgSend$ams_simpleProfileAccountsForMediaType:
-- _objc_msgSend$ams_simpleProfileAccountsForiTunesAccount:
-- _objc_msgSend$biometricsDenied
-- _objc_msgSend$checkCanRequestDocument:completion:
-- _objc_msgSend$encryptedData
-- _objc_msgSend$initWithDescriptors:
-- _objc_msgSend$parentAccount
-- _objc_msgSend$performApplePayTaskWithFeatureFlag:
-- _objc_msgSend$performCardOnFileTaskWithFeatureFlag:
-- _objc_msgSend$performIDCardTaskWithFeatureFlag:
-- _objc_msgSend$performRemoteDisabledFeatureWithBag:featureKey:featureBlock:
-- _objc_msgSend$performWebFlowTask
-- _objc_msgSend$requestDocument:completion:
-- _objc_msgSend$setBiometricsDenied:
-- _objc_msgSend$setDescriptor:
-- _objc_msgSend$setHeader:withValueIn:forKey:onRequest:
-- _objc_msgSend$setMerchantIdentifier:
-- _objc_msgSend$setNonce:
-- _objc_msgSend$setRegionCode:
-- _objc_msgSend$setWebVC:
-- _objc_msgSend$webVC
-- _objc_msgSend$willNotStoreIntent
 - _symbolic SaySo8NSNumberCG
 - _symbolic SccySo7NSArrayC______pG s5ErrorP
 - _symbolic ShySo8NSNumberCG
@@ -600,5 +481,4 @@ CStrings:
 - "pvt"
 - "v24@?0@\"PKIdentityDocument\"8@\"NSError\"16"
 - "verifyPaymentCommerceURL"
-
 ```

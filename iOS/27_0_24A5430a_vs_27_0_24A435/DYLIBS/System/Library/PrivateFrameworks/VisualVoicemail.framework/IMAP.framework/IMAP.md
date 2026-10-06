@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/VisualVoicemail.framework/IMAP.framework/IMAP`
 
-```diff
+### Section Size Changes
 
- 958.0.0.0.0
--  __TEXT.__text: 0xb1244
-+  __TEXT.__text: 0xb1248
-   __TEXT.__objc_methlist: 0xaaa4
-   __TEXT.__const: 0x268
-   __TEXT.__gcc_except_tab: 0xb628
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb1244` | `0xb1248` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZL11IMAPScanUidP23IMAPInlineSetEnumerator : 304 -> 308
 ```

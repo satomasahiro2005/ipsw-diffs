@@ -2,88 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/ServicesIntelligence.framework/ServicesIntelligence`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21fe34` | `0x21bf54` | **`-0x3ee0`** |
+| `__AUTH_CONST.__const` | `0x139c0` | `0x12938` | **`-0x1088`** |
+| `__TEXT.__swift5_capture` | `0xfd0` | `0x4a4` | **`-0xb2c`** |
+| `__DATA.__bss` | `0x2e5a8` | `0x2eca8` | **`+0x700`** |
+| `__TEXT.__unwind_info` | `0x9af0` | `0x9ec8` | **`+0x3d8`** |
+| `__TEXT.__oslogstring` | `0x9f6f` | `0xa2b0` | **`+0x341`** |
+| `__TEXT.__eh_frame` | `0x1bd40` | `0x1bab4` | **`-0x28c`** |
+| `__TEXT.__cstring` | `0x4cd8` | `0x4e53` | **`+0x17b`** |
+| `__TEXT.__swift5_fieldmd` | `0x6a50` | `0x6b78` | **`+0x128`** |
+| `__TEXT.__swift5_reflstr` | `0x3ce3` | `0x3df4` | **`+0x111`** |
+| `__TEXT.__swift_as_cont` | `0x19d0` | `0x1ac8` | **`+0xf8`** |
+| `__DATA.__data` | `0x4678` | `0x4750` | **`+0xd8`** |
+| `__TEXT.__const` | `0x21d38` | `0x21dec` | **`+0xb4`** |
+| `__TEXT.__constg_swiftt` | `0x4df4` | `0x4ea0` | **`+0xac`** |
+| `__TEXT.__swift_as_ret` | `0xc14` | `0xca0` | **`+0x8c`** |
+| `__DATA_DIRTY.__data` | `0x2af0` | `0x2b70` | **`+0x80`** |
+| `__TEXT.__swift5_typeref` | `0x5a6d` | `0x5ac5` | **`+0x58`** |
+| `__TEXT.__swift5_proto` | `0x1b0c` | `0x1b48` | **`+0x3c`** |
+| `__TEXT.__swift_as_entry` | `0x644` | `0x678` | **`+0x34`** |
+| `__AUTH_CONST.__auth_got` | `0x1418` | `0x1400` | **`-0x18`** |
+| `__TEXT.__swift5_assocty` | `0x608` | `0x620` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0x7d8` | `0x7ec` | **`+0x14`** |
+
+### Other Changes
+
 ```diff
 
 -1.69.0.0.0
--  __TEXT.__text: 0x21fe34
 +1.77.0.0.0
-+  __TEXT.__text: 0x21bf54
-   __TEXT.__objc_methlist: 0x2ec
--  __TEXT.__const: 0x21d38
--  __TEXT.__swift5_typeref: 0x5a6d
--  __TEXT.__constg_swiftt: 0x4df4
--  __TEXT.__swift5_reflstr: 0x3ce3
--  __TEXT.__swift5_fieldmd: 0x6a50
-+  __TEXT.__const: 0x21dec
-+  __TEXT.__swift5_typeref: 0x5ac5
-+  __TEXT.__constg_swiftt: 0x4ea0
-+  __TEXT.__swift5_reflstr: 0x3df4
-+  __TEXT.__swift5_fieldmd: 0x6b78
-   __TEXT.__swift5_builtin: 0x1a4
--  __TEXT.__swift5_assocty: 0x608
--  __TEXT.__oslogstring: 0x9f6f
--  __TEXT.__swift5_proto: 0x1b0c
--  __TEXT.__swift5_types: 0x7d8
--  __TEXT.__swift_as_entry: 0x644
--  __TEXT.__swift_as_ret: 0xc14
--  __TEXT.__swift_as_cont: 0x19d0
--  __TEXT.__cstring: 0x4cd8
--  __TEXT.__swift5_capture: 0xfd0
--  __TEXT.__swift5_mpenum: 0xe8
-+  __TEXT.__swift5_assocty: 0x620
-+  __TEXT.__cstring: 0x4e53
-+  __TEXT.__swift5_proto: 0x1b48
-+  __TEXT.__swift5_types: 0x7ec
-+  __TEXT.__oslogstring: 0xa2b0
-+  __TEXT.__swift_as_entry: 0x678
-+  __TEXT.__swift_as_ret: 0xca0
-+  __TEXT.__swift_as_cont: 0x1ac8
-   __TEXT.__swift5_protos: 0x38
--  __TEXT.__unwind_info: 0x9af0
--  __TEXT.__eh_frame: 0x1bd40
-+  __TEXT.__swift5_capture: 0x4a4
-+  __TEXT.__swift5_mpenum: 0xe8
-+  __TEXT.__unwind_info: 0x9ec8
-+  __TEXT.__eh_frame: 0x1bab4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0x420
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x139c0
-+  __AUTH_CONST.__const: 0x12938
-   __AUTH_CONST.__objc_const: 0x1820
--  __AUTH_CONST.__auth_got: 0x1418
-+  __AUTH_CONST.__auth_got: 0x1400
-   __AUTH.__objc_data: 0x228
-   __AUTH.__data: 0xae8
--  __DATA.__data: 0x4678
--  __DATA.__bss: 0x2e5a8
-+  __DATA.__data: 0x4750
-+  __DATA.__bss: 0x2eca8
-   __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0x540
--  __DATA_DIRTY.__data: 0x2af0
--  __DATA_DIRTY.__common: 0x120
-+  __DATA_DIRTY.__data: 0x2b70
-   __DATA_DIRTY.__bss: 0x6e80
-+  __DATA_DIRTY.__common: 0x120
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreLocation.framework/CoreLocation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10986
--  Symbols:   2905
+-  Symbols:   2826
 -  CStrings:  1174
 +  Functions: 10917
-+  Symbols:   2921
++  Symbols:   2842
 +  CStrings:  1194
- 
 Symbols:
 + ___swift_closure_destructor.22Tm
 + ___unnamed_14

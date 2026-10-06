@@ -2,71 +2,51 @@
 
 > `/System/ExclaveKit/System/Library/PrivateFrameworks/TokenGeneration.framework/TokenGeneration`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10ce4` | `0x10e60` | **`+0x17c`** |
+| `__TEXT.__cstring` | `0xfe8` | `0x10e8` | **`+0x100`** |
+| `__TEXT.__swift5_reflstr` | `0x491` | `0x4d1` | **`+0x40`** |
+| `__TEXT.__swift5_fieldmd` | `0x500` | `0x530` | **`+0x30`** |
+| `__TEXT.__const` | `0x928` | `0x950` | **`+0x28`** |
+| `__TEXT.__swift5_typeref` | `0x3ca` | `0x3d4` | **`+0xa`** |
+| `__DATA.__data` | `0x7f0` | `0x7f8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_classlist`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x10ce4
-+  __TEXT.__text: 0x10e60
-   __TEXT.__auth_stubs: 0xd90
--  __TEXT.__const: 0x928
-+  __TEXT.__const: 0x950
-   __TEXT.__constg_swiftt: 0x308
--  __TEXT.__swift5_typeref: 0x3ca
-+  __TEXT.__swift5_typeref: 0x3d4
-   __TEXT.__swift5_builtin: 0x14
--  __TEXT.__swift5_reflstr: 0x491
--  __TEXT.__swift5_fieldmd: 0x500
-+  __TEXT.__swift5_reflstr: 0x4d1
-+  __TEXT.__swift5_fieldmd: 0x530
-   __TEXT.__swift5_types: 0x40
-   __TEXT.__swift5_assocty: 0xa8
-   __TEXT.__swift5_proto: 0x48
+-294.0.7.0.0
++297.0.6.0.0
 
-   __TEXT.__swift_as_ret: 0x38
-   __TEXT.__swift_as_cont: 0x58
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__cstring: 0xfe8
-+  __TEXT.__cstring: 0x10e8
-   __TEXT.__oslogstring: 0x1fb
-   __TEXT.__swift5_capture: 0xfc
-   __TEXT.__objc_classname: 0x26
-
-   __DATA_CONST.__auth_ptr: 0x1b8
-   __DATA.__objc_const: 0xd0
-   __DATA.__objc_data: 0x50
--  __DATA.__data: 0x7f0
-+  __DATA.__data: 0x7f8
-   __DATA.__bss: 0x280
-   __DATA.__common: 0x8
-   - /System/ExclaveKit/System/Library/Frameworks/ConclaveWaker.framework/ConclaveWaker
-
-   - /System/ExclaveKit/usr/lib/swift/libswift_Builtin_float.dylib
-   - /System/ExclaveKit/usr/lib/swift/libswift_Concurrency.dylib
-   - /System/ExclaveKit/usr/lib/swift/libswiftos.dylib
 -  Functions: 380
--  Symbols:   3111
+-  Symbols:   1204
 -  CStrings:  84
 +  Functions: 381
-+  Symbols:   3128
++  Symbols:   1211
 +  CStrings:  88
- 
-Sections:
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_data : content changed
 Symbols:
 + _$s15TokenGeneration0aB5ErrorO18missingEntitlementyACSS_AC7ContextVtcACmFWC
 + _$s15TokenGeneration0aB5ErrorO20unrecognizedPrefixIDyACSS_AC7ContextVtcACmFWC
@@ -80,5 +60,4 @@ CStrings:
 + "An error explaining the prompt referenced an unrecognized system-instruction prefix ID"
 + "Missing required entitlement: "
 + "Unrecognized system-instruction prefix ID: "
-
 ```

@@ -2,90 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/AVFCapture.framework/AVFCapture`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x180924` | `0x12e15c` | **`-0x527c8`** |
+| `__TEXT.__oslogstring` | `0x24f93` | `0x9806` | **`-0x1b78d`** |
+| `__TEXT.__cstring` | `0x37a39` | `0x2bd79` | **`-0xbcc0`** |
+| `__AUTH_CONST.__cfstring` | `0x15ee0` | `0x15540` | **`-0x9a0`** |
+| `__TEXT.__gcc_except_tab` | `0x3078` | `0x2b6c` | **`-0x50c`** |
+| `__DATA.__common` | `0x3a0` | `0x1c0` | **`-0x1e0`** |
+| `__TEXT.__unwind_info` | `0x53c8` | `0x5208` | **`-0x1c0`** |
+| `__DATA.__bss` | `0x9f0` | `0x8e0` | **`-0x110`** |
+| `__DATA_DIRTY.__bss` | `0x3d8` | `0x4e8` | **`+0x110`** |
+| `__DATA_DIRTY.__common` | `0x230` | `0x160` | **`-0xd0`** |
+| `__DATA_CONST.__const` | `0x88f0` | `0x8938` | **`+0x48`** |
+| `__TEXT.__objc_methlist` | `0xffe4` | `0x1002c` | **`+0x48`** |
+| `__TEXT.__const` | `0xef2` | `0xec2` | **`-0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8850` | `0x8828` | **`-0x28`** |
+| `__AUTH_CONST.__const` | `0xe10` | `0xdf0` | **`-0x20`** |
+| `__AUTH_CONST.__objc_const` | `0x1a670` | `0x1a690` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x1120` | `0x1108` | **`-0x18`** |
+| `__DATA_DIRTY.__data` | `0x170` | `0x178` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x1c74` | `0x1c78` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -761.0.0.0.3
--  __TEXT.__text: 0x180924
--  __TEXT.__objc_methlist: 0xffe4
--  __TEXT.__const: 0xef2
--  __TEXT.__gcc_except_tab: 0x3078
--  __TEXT.__cstring: 0x37a39
--  __TEXT.__oslogstring: 0x24f93
 +764.22.5.122.2
-+  __TEXT.__text: 0x12e15c
-+  __TEXT.__objc_methlist: 0x1002c
-+  __TEXT.__const: 0xec2
-+  __TEXT.__gcc_except_tab: 0x2b6c
-+  __TEXT.__cstring: 0x2bd79
-+  __TEXT.__oslogstring: 0x9806
-   __TEXT.__dlopen_cstrs: 0x274
-   __TEXT.__ustring: 0x54
-   __TEXT.__swift5_typeref: 0xef
 
-   __TEXT.__swift5_reflstr: 0x24
-   __TEXT.__swift5_fieldmd: 0x50
-   __TEXT.__swift5_types: 0x8
--  __TEXT.__unwind_info: 0x53c8
-+  __TEXT.__unwind_info: 0x5208
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x88f0
-+  __DATA_CONST.__const: 0x8938
-   __DATA_CONST.__objc_classlist: 0x638
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0xb0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8850
-+  __DATA_CONST.__objc_selrefs: 0x8828
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x568
-   __DATA_CONST.__objc_arraydata: 0x458
-   __DATA_CONST.__got: 0x2b50
--  __AUTH_CONST.__const: 0xe10
--  __AUTH_CONST.__cfstring: 0x15ee0
--  __AUTH_CONST.__objc_const: 0x1a670
-+  __AUTH_CONST.__const: 0xdf0
-+  __AUTH_CONST.__cfstring: 0x15540
-+  __AUTH_CONST.__objc_const: 0x1a690
-   __AUTH_CONST.__objc_intobj: 0xa80
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x330
-   __AUTH_CONST.__objc_floatobj: 0x10
--  __AUTH_CONST.__auth_got: 0x1120
-+  __AUTH_CONST.__auth_got: 0x1108
-   __AUTH.__objc_data: 0x2370
-   __AUTH.__data: 0x28
--  __DATA.__objc_ivar: 0x1c74
-+  __DATA.__objc_ivar: 0x1c78
-   __DATA.__data: 0xdc0
--  __DATA.__common: 0x3a0
--  __DATA.__bss: 0x9f0
-+  __DATA.__bss: 0x8e0
-+  __DATA.__common: 0x1c0
-   __DATA_DIRTY.__objc_data: 0x1ae0
--  __DATA_DIRTY.__data: 0x170
--  __DATA_DIRTY.__common: 0x230
--  __DATA_DIRTY.__bss: 0x3d8
-+  __DATA_DIRTY.__data: 0x178
-+  __DATA_DIRTY.__bss: 0x4e8
-+  __DATA_DIRTY.__common: 0x160
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVRouting.framework/AVRouting
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7512
--  Symbols:   16995
+-  Symbols:   13462
 -  CStrings:  5776
 +  Functions: 7331
-+  Symbols:   16990
++  Symbols:   13469
 +  CStrings:  3869
- 
 Symbols:
 + -[AVCaptureSession _buildAndRunGraph:skipWait:]
 + -[AVCaptureSession _commitConfigurationAndSkipWait:]
@@ -197,13 +150,6 @@ Symbols:
 + ___block_descriptor_74_e8_32o40r_e5_v8?0lr40l8s32l8
 + ___block_descriptor_80_e8_32o40o48o56r64r72r_e5_v8?0lr56l8s32l8r64l8s40l8s48l8r72l8
 + _avccm_VideoEffectsModuleShouldBeShownForBundleID
-+ _objc_msgSend$_buildAndRunGraph:skipWait:
-+ _objc_msgSend$_commitConfigurationAndSkipWait:
-+ _objc_msgSend$_rebuildGraphAndSkipWait:
-+ _objc_msgSend$_sendFigCaptureSessionConfiguration:
-+ _objc_msgSend$flush
-+ _objc_msgSend$setOpacity:
-+ _objc_msgSend$undimLayerWithAnimationDuration:
 + _objc_release_x1
 - GCC_except_table113
 - GCC_except_table115
@@ -305,25 +251,6 @@ Symbols:
 - _gAVPortraitEffectsMatteTrace
 - _gAVSemanticSegmentationMatteTrace
 - _gAVSmartStyleSettingsTrace
-- _objc_msgSend$_metadataConstantValueToName:
-- _objc_msgSend$cinematicAudioSettings
-- _objc_msgSend$dotString
-- _objc_msgSend$fileSystemRepresentation
-- _objc_msgSend$metadataObjectsDelegate
-- _objc_msgSend$nonretainedObjectValue
-- _objc_msgSend$now
-- _objc_msgSend$previewHeight
-- _objc_msgSend$previewWidth
-- _objc_msgSend$rawThumbnailHeight
-- _objc_msgSend$rawThumbnailWidth
-- _objc_msgSend$sampleBufferDelegate
-- _objc_msgSend$setDateFormat:
-- _objc_msgSend$spiDebugDescription
-- _objc_msgSend$stringFromDate:
-- _objc_msgSend$thumbnailContentsDelegate
-- _objc_msgSend$thumbnailHeight
-- _objc_msgSend$thumbnailWidth
-- _objc_msgSend$writeToFile:atomically:encoding:error:
 - _objc_release_x27
 - _vpl_pointToString
 - _vpl_rectValueToString

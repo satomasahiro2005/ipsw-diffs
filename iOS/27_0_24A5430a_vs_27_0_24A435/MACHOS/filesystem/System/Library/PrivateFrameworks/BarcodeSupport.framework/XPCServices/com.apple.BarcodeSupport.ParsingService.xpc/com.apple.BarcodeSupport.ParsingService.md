@@ -2,10 +2,12 @@
 
 > `/System/Library/PrivateFrameworks/BarcodeSupport.framework/XPCServices/com.apple.BarcodeSupport.ParsingService.xpc/com.apple.BarcodeSupport.ParsingService`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__objc_methlist`
 - `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```text
 Functions:

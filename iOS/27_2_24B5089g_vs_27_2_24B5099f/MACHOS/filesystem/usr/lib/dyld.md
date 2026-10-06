@@ -2,44 +2,35 @@
 
 > `/usr/lib/dyld`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9f00c` | `0x9ee60` | **`-0x1ac`** |
+| `__TEXT.__cstring` | `0x12587` | `0x1263d` | **`+0xb6`** |
+| `__DATA_DIRTY.__data` | `0x6c` | `0x64` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x35c0` | `0x35b8` | **`-0x8`** |
+
+### Same-size Content Changes
+
 - `__AUTH_CONST.__const`
 - `__DATA.__data`
+- `__DATA_CONST.__const`
 - `__DATA_DIRTY.__all_image_info`
+- `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -27102.0.0.0.0
--  __TEXT.__text: 0x9a61c
-+27104.0.0.0.0
-+  __TEXT.__text: 0x9a4b0
-   __TEXT.__const: 0x1998
--  __TEXT.__cstring: 0x12587
--  __TEXT.__unwind_info: 0x3650
-+  __TEXT.__cstring: 0x1263d
-+  __TEXT.__unwind_info: 0x3648
-   __DATA_CONST.__const: 0x5618
-   __AUTH_CONST.__const: 0x2760
-   __DATA.__data: 0x1c0
-   __DATA.__crash_info: 0x148
-   __DATA.__common: 0x8f0
--  __DATA_DIRTY.__data: 0x6c
-   __DATA_DIRTY.__all_image_info: 0x170
-+  __DATA_DIRTY.__data: 0x64
-   __DATA_DIRTY.__common: 0x1160
-   __DATA_DIRTY.__bss: 0x1bc0
-   __TPRO_CONST.__data: 0xe1
-   __TPRO_CONST.__allocator: 0x20000
 -  Functions: 3425
 -  Symbols:   3673
 -  CStrings:  2256
++27104.0.0.0.0
 +  Functions: 3423
 +  Symbols:   3667
 +  CStrings:  2260
- 
 Symbols:
 + __ZNK6mach_o6Header22parse_dylinker_commandERKNS0_15LoadCommandInfoEPNS_5ErrorE
 - _OUTLINED_FUNCTION_38

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/NewsAds.framework/NewsAds`
 
-```diff
+### Section Size Changes
 
- 5934.3.0.0.0
--  __TEXT.__text: 0x9ed00
-+  __TEXT.__text: 0x9ed5c
-   __TEXT.__objc_methlist: 0x39fc
-   __TEXT.__const: 0xc2c8
-   __TEXT.__constg_swiftt: 0x4494
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9ed00` | `0x9ed5c` | **`+0x5c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1dfd2a2b4 -> sub_1dfee12b4 : 880 -> 888
 ~ sub_1dfd47154 -> sub_1dfefe15c : 744 -> 748

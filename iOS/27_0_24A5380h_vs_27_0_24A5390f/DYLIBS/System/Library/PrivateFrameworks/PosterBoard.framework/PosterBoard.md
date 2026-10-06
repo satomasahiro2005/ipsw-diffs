@@ -2,109 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/PosterBoard.framework/PosterBoard`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x272a9c` | `0x2742a4` | **`+0x1808`** |
+| `__TEXT.__oslogstring` | `0x1db6a` | `0x1e04a` | **`+0x4e0`** |
+| `__AUTH_CONST.__cfstring` | `0xc180` | `0xc300` | **`+0x180`** |
+| `__AUTH_CONST.__objc_const` | `0x3d940` | `0x3daa0` | **`+0x160`** |
+| `__TEXT.__cstring` | `0x143c5` | `0x144e5` | **`+0x120`** |
+| `__TEXT.__objc_methlist` | `0xee5c` | `0xeee4` | **`+0x88`** |
+| `__DATA_CONST.__objc_selrefs` | `0x9bc8` | `0x9c30` | **`+0x68`** |
+| `__DATA.__objc_ivar` | `0x105c` | `0x1084` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x9230` | `0x9250` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x4604` | `0x4624` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x6c00` | `0x6c18` | **`+0x18`** |
+| `__DATA.__bss` | `0x2f38` | `0x2f48` | **`+0x10`** |
+| `__TEXT.__const` | `0x73d4` | `0x73e4` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x2450` | `0x2458` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x1da8` | `0x1db0` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -347.102.0.0.0
--  __TEXT.__text: 0x272a9c
--  __TEXT.__objc_methlist: 0xee5c
--  __TEXT.__const: 0x73d4
--  __TEXT.__gcc_except_tab: 0x4604
--  __TEXT.__cstring: 0x143c5
--  __TEXT.__oslogstring: 0x1db6a
 +350.1.100.0.0
-+  __TEXT.__text: 0x2742a4
-+  __TEXT.__objc_methlist: 0xeee4
-+  __TEXT.__const: 0x73e4
-+  __TEXT.__gcc_except_tab: 0x4624
-+  __TEXT.__cstring: 0x144e5
-+  __TEXT.__oslogstring: 0x1e04a
-   __TEXT.__dlopen_cstrs: 0x2c6
-   __TEXT.__ustring: 0xe
-   __TEXT.__swift5_typeref: 0x89b6
 
-   __TEXT.__swift_as_ret: 0x34
-   __TEXT.__swift_as_cont: 0xe0
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x6c00
-+  __TEXT.__unwind_info: 0x6c18
-   __TEXT.__eh_frame: 0x1a38
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0xf0
-   __DATA_CONST.__objc_protolist: 0x6c8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x9bc8
-+  __DATA_CONST.__objc_selrefs: 0x9c30
-   __DATA_CONST.__objc_protorefs: 0x2c8
-   __DATA_CONST.__objc_superrefs: 0x3e0
-   __DATA_CONST.__objc_arraydata: 0x140
--  __DATA_CONST.__got: 0x1da8
--  __AUTH_CONST.__const: 0x9230
--  __AUTH_CONST.__cfstring: 0xc180
--  __AUTH_CONST.__objc_const: 0x3d940
-+  __DATA_CONST.__got: 0x1db0
-+  __AUTH_CONST.__const: 0x9250
-+  __AUTH_CONST.__cfstring: 0xc300
-+  __AUTH_CONST.__objc_const: 0x3daa0
-   __AUTH_CONST.__objc_arrayobj: 0xa8
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__objc_intobj: 0x90
-   __AUTH_CONST.__objc_dictobj: 0xa0
--  __AUTH_CONST.__auth_got: 0x2450
-+  __AUTH_CONST.__auth_got: 0x2458
-   __AUTH.__objc_data: 0x3b38
-   __AUTH.__data: 0xfc0
--  __DATA.__objc_ivar: 0x105c
-+  __DATA.__objc_ivar: 0x1084
-   __DATA.__data: 0x62a0
--  __DATA.__bss: 0x2f38
-+  __DATA.__bss: 0x2f48
-   __DATA.__common: 0x130
-   __DATA_DIRTY.__objc_data: 0x6e98
-   __DATA_DIRTY.__data: 0x1548
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10824
--  Symbols:   15084
+-  Symbols:   11046
 -  CStrings:  3942
 +  Functions: 10841
-+  Symbols:   15123
++  Symbols:   11074
 +  CStrings:  3968
- 
 Symbols:
 + -[PBFLockScreenColorConfigurationCache _stateCaptureDescription]
 + -[PBFLockScreenColorConfigurationCache dealloc]
@@ -146,25 +76,6 @@ Symbols:
 + ___58-[PBFLockScreenColorConfigurationCache initWithCachePath:]_block_invoke_2
 + ___70-[PBFPosterSnapshotManager _lock_scheduleStartupRetryRekickWithDelay:]_block_invoke
 + ___PBFLogSnapshotProviderTracker_block_invoke
-+ _objc_msgSend$_lock_reclaimSnapshotterState:
-+ _objc_msgSend$_lock_scheduleStartupRetryRekickWithDelay:
-+ _objc_msgSend$_stateCaptureDescription
-+ _objc_msgSend$briefStateCaptureLine
-+ _objc_msgSend$consumeStartupRetryIfAvailable
-+ _objc_msgSend$dequeueSnapshotterForPath:error:
-+ _objc_msgSend$fileModificationDate
-+ _objc_msgSend$fileSize
-+ _objc_msgSend$initWithDefaultInstanceIdentifier:maxNumberOfInstancesPerExtension:
-+ _objc_msgSend$initWithProvider:extension:extensionInstanceProvider:
-+ _objc_msgSend$initWithRuntimeAssertionProvider:modelCoordinatorProvider:extensionProvider:applicationStateMonitor:
-+ _objc_msgSend$instanceForExtension:reason:
-+ _objc_msgSend$invalidateCache
-+ _objc_msgSend$releaseSnapshotter:shouldTerminate:
-+ _objc_msgSend$snapshotterDidInvalidateScene:
-+ _objc_msgSend$startupRetriesRemaining
-+ _objc_msgSend$terminateAndReclaimSnapshotterImmediately:
-+ _objc_msgSend$transactionDidCommitWithCollection:
-+ _objc_msgSend$transactionDidFailWithError:
 - -[PBFLockScreenRoleCoordinator _updateColorConfigurationCacheWithCollection:]
 - -[PBFPosterSnapshotManager initWithRuntimeAssertionProvider:modelCoordinatorProvider:applicationStateMonitor:]
 - -[PBFPosterSnapshotProviderTracker alignmentKeys]
@@ -177,14 +88,6 @@ Symbols:
 - _OBJC_IVAR_$_PBFPosterSnapshotProviderTracker._extensionProvider
 - _OBJC_IVAR_$_PBFPosterSnapshotProviderTracker._lock_snapshottersByAlignmentKey
 - _PBFAlignmentKeyForPath
-- _objc_msgSend$_updateColorConfigurationCacheWithCollection:
-- _objc_msgSend$createSnapshotterForPath:error:
-- _objc_msgSend$initWithProvider:extensionProvider:
-- _objc_msgSend$initWithRuntimeAssertionProvider:modelCoordinatorProvider:applicationStateMonitor:
-- _objc_msgSend$releaseSnapshotter:
-- _objc_msgSend$removeSnapshotterForAlignmentKey:
-- _objc_msgSend$snapshotterDidInvalidateScene:shouldTerminate:
-- _objc_msgSend$snapshotterForAlignmentKey:
 CStrings:
 + "  %@\n"
 + "(pooled, no reason)"

@@ -2,110 +2,67 @@
 
 > `/System/Library/PrivateFrameworks/AppleIntelligenceReportingProcessing.framework/XPCServices/AppleIntelligenceReportingProcessingService.xpc/AppleIntelligenceReportingProcessingService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_entry`
-- `__TEXT.__objc_methtype`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xeb864` | `0x103390` | **`+0x17b2c`** |
+| `__DATA.__bss` | `0x7410` | `0x8d10` | **`+0x1900`** |
+| `__DATA_CONST.__const` | `0x8ef0` | `0xa440` | **`+0x1550`** |
+| `__TEXT.__const` | `0x63e6` | `0x74a6` | **`+0x10c0`** |
+| `__TEXT.__eh_frame` | `0x5850` | `0x6820` | **`+0xfd0`** |
+| `__TEXT.__oslogstring` | `0x4c1e` | `0x5b3e` | **`+0xf20`** |
+| `__TEXT.__unwind_info` | `0x2fe8` | `0x35c0` | **`+0x5d8`** |
+| `__TEXT.__swift5_fieldmd` | `0x30cc` | `0x365c` | **`+0x590`** |
+| `__DATA.__data` | `0x3c68` | `0x4160` | **`+0x4f8`** |
+| `__TEXT.__swift5_capture` | `0x2220` | `0x26f0` | **`+0x4d0`** |
+| `__TEXT.__swift5_typeref` | `0x2720` | `0x2b28` | **`+0x408`** |
+| `__TEXT.__constg_swiftt` | `0x2098` | `0x2434` | **`+0x39c`** |
+| `__TEXT.__swift5_reflstr` | `0x2d6d` | `0x30bd` | **`+0x350`** |
+| `__DATA_CONST.__cfstring` | `0x7e0` | `0xb20` | **`+0x340`** |
+| `__TEXT.__cstring` | `0x4de3` | `0x50c3` | **`+0x2e0`** |
+| `__TEXT.__objc_stubs` | `0x1a00` | `0x1ca0` | **`+0x2a0`** |
+| `__TEXT.__objc_methname` | `0x1d15` | `0x1efc` | **`+0x1e7`** |
+| `__DATA.__objc_const` | `0x18b0` | `0x1a30` | **`+0x180`** |
+| `__TEXT.__auth_stubs` | `0x2ed0` | `0x3030` | **`+0x160`** |
+| `__TEXT.__swift5_proto` | `0x3e0` | `0x4b4` | **`+0xd4`** |
+| `__DATA_CONST.__auth_got` | `0x1770` | `0x1820` | **`+0xb0`** |
+| `__TEXT.__objc_classname` | `0x5d8` | `0x688` | **`+0xb0`** |
+| `__DATA.__objc_selrefs` | `0x680` | `0x728` | **`+0xa8`** |
+| `__DATA_CONST.__got` | `0xb18` | `0xbc0` | **`+0xa8`** |
+| `__TEXT.__swift_as_cont` | `0x214` | `0x2b0` | **`+0x9c`** |
+| `__DATA_CONST.__auth_ptr` | `0xc50` | `0xce8` | **`+0x98`** |
+| `__TEXT.__swift_as_ret` | `0x144` | `0x1ac` | **`+0x68`** |
+| `__TEXT.__swift_as_entry` | `0xfc` | `0x15c` | **`+0x60`** |
+| `__TEXT.__swift5_types` | `0x1d8` | `0x234` | **`+0x5c`** |
+| `__TEXT.__swift5_assocty` | `0x1b0` | `0x1e0` | **`+0x30`** |
+| `__TEXT.__swift5_builtin` | `0x28` | `0x3c` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x98` | `0xa8` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `0x48` | `0x54` | **`+0xc`** |
+| `__DATA.__common` | `0x1c0` | `0x1b8` | **`-0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x8` | `0x10` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_data`
+- `__TEXT.__objc_methtype`
+- `__TEXT.__swift5_entry`
+
+### Other Changes
 
 ```diff
 
 -232.2.1.0.0
--  __TEXT.__text: 0xe2dd4
--  __TEXT.__auth_stubs: 0x2ed0
--  __TEXT.__objc_stubs: 0x1a00
--  __TEXT.__const: 0x63e6
--  __TEXT.__swift5_typeref: 0x2720
--  __TEXT.__cstring: 0x4de3
 +232.40.11.0.0
-+  __TEXT.__text: 0xf9860
-+  __TEXT.__auth_stubs: 0x3030
-+  __TEXT.__objc_stubs: 0x1ca0
-+  __TEXT.__const: 0x74a6
-+  __TEXT.__swift5_typeref: 0x2b28
-+  __TEXT.__cstring: 0x50c3
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__constg_swiftt: 0x2098
--  __TEXT.__swift5_builtin: 0x28
--  __TEXT.__swift5_types: 0x1d8
--  __TEXT.__oslogstring: 0x4c1e
--  __TEXT.__swift5_reflstr: 0x2d6d
--  __TEXT.__swift5_assocty: 0x1b0
--  __TEXT.__swift5_fieldmd: 0x30cc
--  __TEXT.__objc_methname: 0x1d15
-+  __TEXT.__constg_swiftt: 0x2434
-+  __TEXT.__swift5_builtin: 0x3c
-+  __TEXT.__swift5_types: 0x234
-+  __TEXT.__oslogstring: 0x5b3e
-+  __TEXT.__swift5_reflstr: 0x30bd
-+  __TEXT.__swift5_assocty: 0x1e0
-+  __TEXT.__swift5_fieldmd: 0x365c
-+  __TEXT.__objc_methname: 0x1efc
-   __TEXT.__objc_methtype: 0x2e
--  __TEXT.__objc_classname: 0x5d8
--  __TEXT.__swift5_protos: 0x48
--  __TEXT.__swift5_proto: 0x3e0
--  __TEXT.__swift_as_entry: 0xfc
--  __TEXT.__swift_as_ret: 0x144
--  __TEXT.__swift_as_cont: 0x214
--  __TEXT.__swift5_capture: 0x2220
--  __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x3b40
--  __TEXT.__eh_frame: 0x5858
--  __DATA_CONST.__const: 0x8ef0
--  __DATA_CONST.__cfstring: 0x7e0
--  __DATA_CONST.__objc_classlist: 0x98
-+  __TEXT.__objc_classname: 0x688
-+  __TEXT.__swift5_protos: 0x54
-+  __TEXT.__swift5_proto: 0x4b4
-+  __TEXT.__swift_as_entry: 0x15c
-+  __TEXT.__swift_as_ret: 0x1ac
-+  __TEXT.__swift_as_cont: 0x2b0
-+  __TEXT.__swift5_mpenum: 0x10
-+  __TEXT.__swift5_capture: 0x26f0
-+  __TEXT.__unwind_info: 0x4248
-+  __TEXT.__eh_frame: 0x6828
-+  __DATA_CONST.__const: 0xa440
-+  __DATA_CONST.__cfstring: 0xb20
-+  __DATA_CONST.__objc_classlist: 0xa8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x1770
--  __DATA_CONST.__got: 0xb18
--  __DATA_CONST.__auth_ptr: 0xc50
--  __DATA.__objc_const: 0x18b0
--  __DATA.__objc_selrefs: 0x680
-+  __DATA_CONST.__auth_got: 0x1820
-+  __DATA_CONST.__got: 0xbc0
-+  __DATA_CONST.__auth_ptr: 0xce8
-+  __DATA.__objc_const: 0x1a30
-+  __DATA.__objc_selrefs: 0x728
-   __DATA.__objc_data: 0xf0
--  __DATA.__data: 0x3c68
--  __DATA.__common: 0x1c0
-+  __DATA.__data: 0x4160
-+  __DATA.__common: 0x1b8
-   - /AppleInternal/Library/Frameworks/TapToRadarKit.framework/TapToRadarKit
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/IntelligencePlatformLibrary.framework/IntelligencePlatformLibrary
 +  - /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset
-   - /System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog
-   - /System/Library/PrivateFrameworks/SiriAnalytics.framework/SiriAnalytics
-   - /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 6517
+-  Functions: 6518
 -  Symbols:   11044
 -  CStrings:  1135
-+  Functions: 7143
++  Functions: 7144
 +  Symbols:   12257
 +  CStrings:  1221
- 
 Symbols:
 + $s43AppleIntelligenceReportingProcessingService17AssetBringUpStateC23factoryMigrationResultsAA07FactorykL0VSgvM.resume
 + $s43AppleIntelligenceReportingProcessingService21BiomeStoreEnumerationO9enumerate6stream7useCase6logger9startDate03endO07convertSayq_GSo8BMStreamCyxG_SS2os6LoggerV10Foundation0O0VSgAUq_Sgx_ATtXEtYaKSo11BMStoreDataRzr0_lFZSSycfu0_TA

@@ -2,26 +2,21 @@
 
 > `/usr/lib/libETLSAHDynamic.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2514` | `0x2258` | **`-0x2bc`** |
+| `__TEXT.__cstring` | `0x95d` | `0x7fe` | **`-0x15f`** |
+
+### Other Changes
+
 ```diff
 
- 1585.0.0.0.0
--  __TEXT.__text: 0x2514
-+  __TEXT.__text: 0x2258
-   __TEXT.__const: 0x40
--  __TEXT.__cstring: 0x95d
-+  __TEXT.__cstring: 0x7fe
-   __TEXT.__unwind_info: 0xe0
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x80
-
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   Functions: 41
 -  Symbols:   55
 -  CStrings:  75
 +  Symbols:   54
 +  CStrings:  67
- 
 Symbols:
 - __ETLDebugPrintBinaryVerbose
 Functions:

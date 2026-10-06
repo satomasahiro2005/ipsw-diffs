@@ -2,16 +2,19 @@
 
 > `/System/Library/Filesystems/ntfs.fs/ntfs.util`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x1580
-+  __TEXT.__text: 0x157c
-   __TEXT.__auth_stubs: 0x210
-   __TEXT.__const: 0x40
-   __TEXT.__cstring: 0x4b4
-Sections:
-~ __TEXT.__unwind_info : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1580` | `0x157c` | **`-0x4`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_100001258 : 164 -> 160
-
 ```

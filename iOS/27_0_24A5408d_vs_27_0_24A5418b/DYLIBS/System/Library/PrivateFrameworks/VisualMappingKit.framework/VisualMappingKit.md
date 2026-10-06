@@ -2,19 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/VisualMappingKit.framework/VisualMappingKit`
 
-```diff
+### Section Size Changes
 
- 9.26.5.12.5
--  __TEXT.__text: 0xab792c
-+  __TEXT.__text: 0xab78a8
-   __TEXT.__const: 0x5e6c0
-   __TEXT.__cstring: 0x248be
--  __TEXT.__gcc_except_tab: 0x7110c
-+  __TEXT.__gcc_except_tab: 0x71124
-   __TEXT.__oslogstring: 0x49d7
-   __TEXT.__unwind_info: 0x1b910
-   __TEXT.__eh_frame: 0xf94
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xab792c` | `0xab78a8` | **`-0x84`** |
+| `__TEXT.__gcc_except_tab` | `0x7110c` | `0x71124` | **`+0x18`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2b4e5b5e0 -> sub_2b4d9a5e0 : 896 -> 800
-~ sub_2b4e5b960 -> sub_2b4d9a900 : 3508 -> 3472
+~ sub_2b4d655e0 -> sub_2b4ccd5e0 : 896 -> 800
+~ sub_2b4d65960 -> sub_2b4ccd900 : 3508 -> 3472
 ```

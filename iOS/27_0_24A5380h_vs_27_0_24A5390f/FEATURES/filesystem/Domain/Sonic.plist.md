@@ -4,16 +4,10 @@
 
 ```diff
 
- 		<key>DevelopmentPhase</key>
- 		<string>FeatureComplete</string>
- 	</dict>
 +	<key>TransitionPlanCommit</key>
 +	<dict>
 +		<key>DevelopmentPhase</key>
 +		<string>FeatureComplete</string>
 +	</dict>
- 	<key>XSQ</key>
- 	<dict>
- 		<key>DevelopmentPhase</key>
 
 ```

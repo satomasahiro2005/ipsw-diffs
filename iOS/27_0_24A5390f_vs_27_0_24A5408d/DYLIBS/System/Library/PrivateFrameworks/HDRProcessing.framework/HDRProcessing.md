@@ -2,43 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/HDRProcessing.framework/HDRProcessing`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa81f8` | `0xa8500` | **`+0x308`** |
+| `__TEXT.__oslogstring` | `0xf1a0` | `0xf446` | **`+0x2a6`** |
+| `__AUTH_CONST.__cfstring` | `0x5460` | `0x5480` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x85e7` | `0x85fa` | **`+0x13`** |
+| `__TEXT.__const` | `0x4c08` | `0x4c18` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -1.515.1.0.0
--  __TEXT.__text: 0xa81f8
 +1.517.51.0.0
-+  __TEXT.__text: 0xa8500
-   __TEXT.__objc_methlist: 0x2548
--  __TEXT.__const: 0x4c08
-+  __TEXT.__const: 0x4c18
-   __TEXT.__gcc_except_tab: 0x25ac
--  __TEXT.__oslogstring: 0xf1a0
--  __TEXT.__cstring: 0x85e7
-+  __TEXT.__oslogstring: 0xf446
-+  __TEXT.__cstring: 0x85fa
-   __TEXT.__unwind_info: 0x15f0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_arraydata: 0x40
-   __DATA_CONST.__got: 0x2e0
-   __AUTH_CONST.__const: 0x200
--  __AUTH_CONST.__cfstring: 0x5460
-+  __AUTH_CONST.__cfstring: 0x5480
-   __AUTH_CONST.__objc_const: 0x7e00
-   __AUTH_CONST.__weak_auth_got: 0x20
-   __AUTH_CONST.__objc_intobj: 0x60
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 1338
--  Symbols:   3511
+-  Symbols:   2911
 -  CStrings:  1536
 +  Functions: 1342
-+  Symbols:   3515
++  Symbols:   2915
 +  CStrings:  1539
- 
 Symbols:
 + _isSupportedDISPInputFormat
 + _isSupportedDISPOutputFormat

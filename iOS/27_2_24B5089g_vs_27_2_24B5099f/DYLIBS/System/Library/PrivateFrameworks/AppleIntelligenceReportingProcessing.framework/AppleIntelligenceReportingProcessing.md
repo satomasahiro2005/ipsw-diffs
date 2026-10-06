@@ -2,54 +2,28 @@
 
 > `/System/Library/PrivateFrameworks/AppleIntelligenceReportingProcessing.framework/AppleIntelligenceReportingProcessing`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__oslogstring` | `0x641e` | `0x64be` | **`+0xa0`** |
+| `__TEXT.__text` | `0x11e020` | `0x11e084` | **`+0x64`** |
+| `__TEXT.__unwind_info` | `0x3e48` | `0x3e78` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0xaa8` | `0xab8` | **`+0x10`** |
+| `__TEXT.__cstring` | `0x5203` | `0x5213` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1ac0` | `0x1ac8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -232.40.14.502.1
--  __TEXT.__text: 0x113870
 +232.40.17.0.0
-+  __TEXT.__text: 0x1138d8
-   __TEXT.__const: 0x9626
-   __TEXT.__swift5_typeref: 0x2d29
--  __TEXT.__cstring: 0x5203
--  __TEXT.__oslogstring: 0x641e
-+  __TEXT.__cstring: 0x5213
-+  __TEXT.__oslogstring: 0x64be
-   __TEXT.__swift5_reflstr: 0x32dd
-   __TEXT.__swift5_assocty: 0x210
-   __TEXT.__swift5_fieldmd: 0x37d8
 
-   __TEXT.__swift_as_cont: 0x274
-   __TEXT.__swift5_mpenum: 0x10
-   __TEXT.__swift5_capture: 0x2a70
--  __TEXT.__unwind_info: 0x4d08
-+  __TEXT.__unwind_info: 0x4d30
-   __TEXT.__eh_frame: 0x6a58
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__const: 0x798
-   __DATA_CONST.__objc_classlist: 0xa0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xaa8
-+  __DATA_CONST.__objc_selrefs: 0xab8
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0xb128
-   __AUTH_CONST.__cfstring: 0xb20
-   __AUTH_CONST.__objc_const: 0x1998
--  __AUTH_CONST.__auth_got: 0x1ac0
-+  __AUTH_CONST.__auth_got: 0x1ac8
-   __AUTH.__objc_data: 0x50
-   __AUTH.__data: 0x1508
-   __DATA.__data: 0x1418
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 8573
 -  Symbols:   12889
 -  CStrings:  935
 +  Symbols:   12888
 +  CStrings:  937
- 
 Symbols:
 + _$s10Foundation4DateV2geoiySbAC_ACtFZ
 + _$s10Foundation4DateV2leoiySbAC_ACtFZ

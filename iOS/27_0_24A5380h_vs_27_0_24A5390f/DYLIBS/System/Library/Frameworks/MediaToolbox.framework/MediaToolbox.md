@@ -2,116 +2,39 @@
 
 > `/System/Library/Frameworks/MediaToolbox.framework/MediaToolbox`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__lazy_load_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x103e7d4` | `0x10482e4` | **`+0x9b10`** |
+| `__TEXT.__oslogstring` | `0x16b7fa` | `0x16d3f5` | **`+0x1bfb`** |
+| `__TEXT.__cstring` | `0x13f4b7` | `0x13fcc7` | **`+0x810`** |
+| `__AUTH_CONST.__cfstring` | `0x53540` | `0x537a0` | **`+0x260`** |
+| `__AUTH_CONST.__const` | `0x47c58` | `0x47df8` | **`+0x1a0`** |
+| `__TEXT.__unwind_info` | `0x156a8` | `0x15768` | **`+0xc0`** |
+| `__DATA_CONST.__const` | `0x24888` | `0x24938` | **`+0xb0`** |
+| `__DATA_CONST.__got` | `0x4920` | `0x4968` | **`+0x48`** |
+| `__DATA.__common` | `0x32a8` | `0x32e8` | **`+0x40`** |
+| `__DATA.__bss` | `0x5348` | `0x5378` | **`+0x30`** |
+| `__TEXT.__const` | `0x29930` | `0x29910` | **`-0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x1e50` | `0x1e64` | **`+0x14`** |
+| `__DATA.__data` | `0x33d8` | `0x33e8` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x1ba8` | `0x1bb8` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0x534` | `0x52c` | **`-0x8`** |
+
+### Other Changes
 
 ```diff
 
 -3350.67.2.0.0
--  __TEXT.__text: 0x103e7d4
 +3350.71.2.11.1
-+  __TEXT.__text: 0x10482e4
-   __TEXT.__lazy_helpers: 0x3600
-   __TEXT.__objc_methlist: 0x2b84
--  __TEXT.__const: 0x29930
--  __TEXT.__cstring: 0x13f4b7
--  __TEXT.__oslogstring: 0x16b7fa
--  __TEXT.__gcc_except_tab: 0x1e50
-+  __TEXT.__const: 0x29910
-+  __TEXT.__cstring: 0x13fcc7
-+  __TEXT.__oslogstring: 0x16d3f5
-+  __TEXT.__gcc_except_tab: 0x1e64
-   __TEXT.__dlopen_cstrs: 0x32e
-   __TEXT.__ustring: 0x246
-   __TEXT.__swift5_typeref: 0x1d1
 
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0x30
--  __TEXT.__unwind_info: 0x156a8
-+  __TEXT.__unwind_info: 0x15768
-   __TEXT.__eh_frame: 0x4b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x24888
-+  __DATA_CONST.__const: 0x24938
-   __DATA_CONST.__objc_classlist: 0x228
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
-
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x1f0
-   __DATA_CONST.__objc_arraydata: 0x50
--  __DATA_CONST.__got: 0x4920
--  __AUTH_CONST.__const: 0x47c58
--  __AUTH_CONST.__cfstring: 0x53540
-+  __DATA_CONST.__got: 0x4968
-+  __AUTH_CONST.__const: 0x47df8
-+  __AUTH_CONST.__cfstring: 0x537a0
-   __AUTH_CONST.__objc_const: 0x59c8
-   __AUTH_CONST.__weak_auth_got: 0x20
-   __AUTH_CONST.__lazy_load_got: 0x4d8
-
-   __AUTH.__objc_data: 0x1040
-   __AUTH.__data: 0x940
-   __DATA.__objc_ivar: 0x3c0
--  __DATA.__data: 0x33d8
--  __DATA.__common: 0x32a8
--  __DATA.__bss: 0x5348
-+  __DATA.__data: 0x33e8
-+  __DATA.__common: 0x32e8
-+  __DATA.__bss: 0x5378
-   __DATA_DIRTY.__objc_data: 0x550
--  __DATA_DIRTY.__data: 0x534
--  __DATA_DIRTY.__bss: 0x1ba8
-+  __DATA_DIRTY.__data: 0x52c
-+  __DATA_DIRTY.__bss: 0x1bb8
-   __DATA_DIRTY.__common: 0x410
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 53101
--  Symbols:   46254
+-  Symbols:   45358
 -  CStrings:  57344
 +  Functions: 53207
-+  Symbols:   46392
++  Symbols:   45496
 +  CStrings:  57462
- 
 Symbols:
 + _FigBufferedAirPlayLoudnessRegistryCopyLoudnessForOverlapType
 + _FigBufferedAirPlayLoudnessRegistryCreate

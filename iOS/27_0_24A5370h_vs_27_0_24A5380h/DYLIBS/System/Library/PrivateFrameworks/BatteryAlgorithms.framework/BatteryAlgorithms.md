@@ -2,35 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/BatteryAlgorithms.framework/BatteryAlgorithms`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x80218
-+  __TEXT.__text: 0x800b8
-   __TEXT.__objc_methlist: 0xb04
-   __TEXT.__const: 0xa9e0
-   __TEXT.__cstring: 0x3ecb
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x80218` | `0x800b8` | **`-0x160`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNKSt3__121__murmur2_or_cityhashImLm64EEclB9fqe220106EPKvm : 532 -> 520
 ~ __ZN16TypeErasedConfig6parser12stringParserIbEEvPT_NSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEE : 1552 -> 1540
@@ -53,5 +33,4 @@ Functions:
 ~ __ZN13CafeSwellAlgo10SyncedDataC2EdRKNS_8BDCInputEd : 604 -> 596
 ~ __ZN4ACAM4initE18InitializationDataP10simpleListI20ACAMPersistentStatesE : 2424 -> 2408
 ~ __ZN4ACAM16recordStatisticsEv : 164 -> 172
-
 ```

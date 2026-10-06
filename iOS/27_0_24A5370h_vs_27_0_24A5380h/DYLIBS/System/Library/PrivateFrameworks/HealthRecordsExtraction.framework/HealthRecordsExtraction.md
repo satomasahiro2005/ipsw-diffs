@@ -2,118 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/HealthRecordsExtraction.framework/HealthRecordsExtraction`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x141428` | `0x147f50` | **`+0x6b28`** |
+| `__DATA.__bss` | `0x18bd0` | `0x199d0` | **`+0xe00`** |
+| `__TEXT.__const` | `0xcea0` | `0xd7a0` | **`+0x900`** |
+| `__AUTH_CONST.__const` | `0xef98` | `0xf720` | **`+0x788`** |
+| `__TEXT.__eh_frame` | `0x6dfc` | `0x71d4` | **`+0x3d8`** |
+| `__TEXT.__swift5_fieldmd` | `0x3a64` | `0x3c78` | **`+0x214`** |
+| `__AUTH.__objc_data` | `0xf18` | `0xd38` | **`-0x1e0`** |
+| `__DATA_DIRTY.__objc_data` | `—` | `0x1e0` | **`+0x1e0`** |
+| `__TEXT.__swift5_reflstr` | `0x1e9c` | `0x1fec` | **`+0x150`** |
+| `__TEXT.__cstring` | `0xc804` | `0xc93c` | **`+0x138`** |
+| `__AUTH.__data` | `0x2078` | `0x1f58` | **`-0x120`** |
+| `__TEXT.__constg_swiftt` | `0x21b8` | `0x22c0` | **`+0x108`** |
+| `__AUTH_CONST.__auth_got` | `0x1268` | `0x12f8` | **`+0x90`** |
+| `__TEXT.__swift5_typeref` | `0x1ae8` | `0x1b70` | **`+0x88`** |
+| `__DATA.__data` | `0x2b80` | `0x2bf0` | **`+0x70`** |
+| `__TEXT.__swift5_proto` | `0xce4` | `0xd54` | **`+0x70`** |
+| `__TEXT.__swift5_assocty` | `0x498` | `0x4e0` | **`+0x48`** |
+| `__TEXT.__swift5_builtin` | `0x154` | `0x190` | **`+0x3c`** |
+| `__TEXT.__unwind_info` | `0x4498` | `0x4468` | **`-0x30`** |
+| `__TEXT.__swift5_types` | `0x308` | `0x330` | **`+0x28`** |
+| `__TEXT.__swift5_mpenum` | `0x38` | `0x50` | **`+0x18`** |
+| `__TEXT.__swift5_capture` | `0x608` | `0x618` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0xb28` | `0xb20` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x141428
-+  __TEXT.__text: 0x147f50
-   __TEXT.__objc_methlist: 0x17dc
--  __TEXT.__const: 0xcea0
-+  __TEXT.__const: 0xd7a0
-   __TEXT.__gcc_except_tab: 0x2600
--  __TEXT.__cstring: 0xc804
-+  __TEXT.__cstring: 0xc93c
-   __TEXT.__oslogstring: 0x2761
-   __TEXT.__ustring: 0x72
-   __TEXT.__dlopen_cstrs: 0x56
--  __TEXT.__constg_swiftt: 0x21b8
--  __TEXT.__swift5_typeref: 0x1ae8
--  __TEXT.__swift5_builtin: 0x154
--  __TEXT.__swift5_reflstr: 0x1e9c
--  __TEXT.__swift5_fieldmd: 0x3a64
--  __TEXT.__swift5_assocty: 0x498
--  __TEXT.__swift5_proto: 0xce4
--  __TEXT.__swift5_types: 0x308
--  __TEXT.__swift5_capture: 0x608
-+  __TEXT.__constg_swiftt: 0x22c0
-+  __TEXT.__swift5_typeref: 0x1b70
-+  __TEXT.__swift5_builtin: 0x190
-+  __TEXT.__swift5_reflstr: 0x1fec
-+  __TEXT.__swift5_fieldmd: 0x3c78
-+  __TEXT.__swift5_assocty: 0x4e0
-+  __TEXT.__swift5_proto: 0xd54
-+  __TEXT.__swift5_types: 0x330
-+  __TEXT.__swift5_capture: 0x618
-   __TEXT.__swift_as_entry: 0x184
-   __TEXT.__swift_as_ret: 0x20c
-   __TEXT.__swift_as_cont: 0x2f4
-   __TEXT.__swift5_protos: 0x38
--  __TEXT.__swift5_mpenum: 0x38
--  __TEXT.__unwind_info: 0x4498
--  __TEXT.__eh_frame: 0x6dfc
-+  __TEXT.__swift5_mpenum: 0x50
-+  __TEXT.__unwind_info: 0x4468
-+  __TEXT.__eh_frame: 0x71d4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-7027.0.60.2.2
++7027.0.64.0.0
 
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0xa0
-   __DATA_CONST.__objc_arraydata: 0x78
--  __DATA_CONST.__got: 0xb28
--  __AUTH_CONST.__const: 0xef98
-+  __DATA_CONST.__got: 0xb20
-+  __AUTH_CONST.__const: 0xf720
-   __AUTH_CONST.__cfstring: 0x3f40
-   __AUTH_CONST.__objc_const: 0x30d8
-   __AUTH_CONST.__objc_intobj: 0xa8
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x1268
--  __AUTH.__objc_data: 0xf18
--  __AUTH.__data: 0x2078
-+  __AUTH_CONST.__auth_got: 0x12f8
-+  __AUTH.__objc_data: 0xd38
-+  __AUTH.__data: 0x1f58
-   __DATA.__objc_ivar: 0x140
--  __DATA.__data: 0x2b80
--  __DATA.__bss: 0x18bd0
-+  __DATA.__data: 0x2bf0
-+  __DATA.__bss: 0x199d0
-   __DATA.__common: 0x78
-+  __DATA_DIRTY.__objc_data: 0x1e0
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight
-
-   - /System/Library/PrivateFrameworks/CBORLibrary.framework/CBORLibrary
-   - /System/Library/PrivateFrameworks/HealthOntologyKit.framework/HealthOntologyKit
-   - /System/Library/PrivateFrameworks/HealthRecordServices.framework/HealthRecordServices
 +  - /System/Library/PrivateFrameworks/HealthUtilities.framework/HealthUtilities
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5669
--  Symbols:   3871
--  CStrings:  1812
+-  Symbols:   2155
+-  CStrings:  1309
 +  Functions: 5792
-+  Symbols:   3906
-+  CStrings:  1822
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
++  Symbols:   2185
++  CStrings:  1319
 Symbols:
 + _adler32
 + _associated conformance 23HealthRecordsExtraction20CompressionAlgorithmOSHAASQ
@@ -162,5 +93,4 @@ CStrings:
 + "Using injected nonce, rather than generating a new one. I hope you're just debugging!"
 + "dir"
 - "com.apple.HealthKit"
-
 ```

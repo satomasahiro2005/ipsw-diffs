@@ -2,10 +2,12 @@
 
 > `/usr/libexec/biometrickitd`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
-- `__TEXT.__oslogstring`
 - `__DATA.__objc_selrefs`
+- `__TEXT.__oslogstring`
+
+### Other Changes
 
 ```diff
 CStrings:

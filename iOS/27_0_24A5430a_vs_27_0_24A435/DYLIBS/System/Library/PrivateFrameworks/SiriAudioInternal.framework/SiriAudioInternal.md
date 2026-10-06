@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/SiriAudioInternal.framework/SiriAudioInternal`
 
-```diff
+### Section Size Changes
 
- 3600.33.17.0.0
--  __TEXT.__text: 0x4874c
-+  __TEXT.__text: 0x48734
-   __TEXT.__objc_methlist: 0x388
-   __TEXT.__const: 0x10e8
-   __TEXT.__cstring: 0xb2a
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4874c` | `0x48734` | **`-0x18`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2a526c058 -> sub_2a6022058 : 2380 -> 2376
-~ sub_2a52966c8 -> sub_2a604c6c4 : 1248 -> 1228
+~ sub_2a5162058 -> sub_2a5f14058 : 2380 -> 2376
+~ sub_2a518c6c8 -> sub_2a5f3e6c4 : 1248 -> 1228
 ```

@@ -2,63 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/VoiceProcessor.framework/VoiceProcessor`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2978ec` | `0x2984cc` | **`+0xbe0`** |
+| `__TEXT.__gcc_except_tab` | `0x239e0` | `0x23b94` | **`+0x1b4`** |
+| `__TEXT.__cstring` | `0x43d3c` | `0x43e6c` | **`+0x130`** |
+| `__AUTH_CONST.__const` | `0x18490` | `0x18560` | **`+0xd0`** |
+| `__TEXT.__unwind_info` | `0xca70` | `0xcb18` | **`+0xa8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x530` | `0x598` | **`+0x68`** |
+| `__TEXT.__oslogstring` | `0x10953` | `0x109aa` | **`+0x57`** |
+| `__AUTH_CONST.__cfstring` | `0x3420` | `0x3440` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x378` | `0x390` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
- 85.107.0.0.0
--  __TEXT.__text: 0x2978ec
-+  __TEXT.__text: 0x2984cc
-   __TEXT.__realtime: 0x1f70
-   __TEXT.__objc_methlist: 0x598
-   __TEXT.__const: 0x5a6c
-
-   __TEXT.__swift5_typeref: 0xd9
-   __TEXT.__swift5_reflstr: 0x4a
-   __TEXT.__swift5_fieldmd: 0x4c
--  __TEXT.__oslogstring: 0x10953
--  __TEXT.__cstring: 0x43d3c
-+  __TEXT.__oslogstring: 0x109aa
-+  __TEXT.__cstring: 0x43e6c
-   __TEXT.__swift5_capture: 0xe4
-   __TEXT.__swift5_proto: 0x4
-   __TEXT.__swift5_types: 0x4
-   __TEXT.__swift_as_entry: 0x24
-   __TEXT.__swift_as_ret: 0x1c
-   __TEXT.__swift_as_cont: 0x18
--  __TEXT.__gcc_except_tab: 0x239e0
--  __TEXT.__unwind_info: 0xca70
-+  __TEXT.__gcc_except_tab: 0x23b94
-+  __TEXT.__unwind_info: 0xcb18
-   __TEXT.__eh_frame: 0x4b8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x530
-+  __DATA_CONST.__objc_selrefs: 0x598
-   __DATA_CONST.__objc_superrefs: 0x28
-   __DATA_CONST.__objc_arraydata: 0x258
--  __DATA_CONST.__got: 0x378
--  __AUTH_CONST.__const: 0x18490
--  __AUTH_CONST.__cfstring: 0x3420
-+  __DATA_CONST.__got: 0x390
-+  __AUTH_CONST.__const: 0x18560
-+  __AUTH_CONST.__cfstring: 0x3440
-   __AUTH_CONST.__objc_const: 0xb08
-   __AUTH_CONST.__weak_auth_got: 0x38
-   __AUTH_CONST.__objc_intobj: 0x78
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10597
--  Symbols:   16303
+-  Symbols:   16200
 -  CStrings:  6209
 +  Functions: 10615
-+  Symbols:   16353
++  Symbols:   16237
 +  CStrings:  6217
- 
 Symbols:
 + GCC_except_table10000
 + GCC_except_table10009
@@ -2077,19 +2044,6 @@ Symbols:
 + ___copy_helper_block_ea8_40c112_ZTSN5caulk16inplace_functionIFvN2vp8services16Device_Pose_InfoEELm32ELm8ENS_23inplace_function_detail6vtableEEE
 + ___destroy_helper_block_ea8_32c81_ZTSN5caulk16inplace_functionIFvdELm32ELm8ENS_23inplace_function_detail6vtableEEE
 + ___destroy_helper_block_ea8_40c112_ZTSN5caulk16inplace_functionIFvN2vp8services16Device_Pose_InfoEELm32ELm8ENS_23inplace_function_detail6vtableEEE
-+ _objc_msgSend$angleDegrees
-+ _objc_msgSend$isAngleValid
-+ _objc_msgSend$isAvailable
-+ _objc_msgSend$localizedDescription
-+ _objc_msgSend$propertyA
-+ _objc_msgSend$propertyB
-+ _objc_msgSend$propertyC
-+ _objc_msgSend$setAngleUpdateInterval:
-+ _objc_msgSend$setUnderlyingQueue:
-+ _objc_msgSend$startAngleUpdatesToQueue:handler:
-+ _objc_msgSend$startUpdatesToQueue:withHandler:
-+ _objc_msgSend$stopAngleUpdates
-+ _objc_msgSend$stopUpdates
 - GCC_except_table1000
 - GCC_except_table10008
 - GCC_except_table10018

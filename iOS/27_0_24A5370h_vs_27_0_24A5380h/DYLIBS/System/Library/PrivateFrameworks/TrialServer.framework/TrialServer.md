@@ -2,136 +2,66 @@
 
 > `/System/Library/PrivateFrameworks/TrialServer.framework/TrialServer`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15e124` | `0x151730` | **`-0xc9f4`** |
+| `__DATA.__bss` | `0x10a0` | `0x118` | **`-0xf88`** |
+| `__AUTH_CONST.__auth_got` | `0xf40` | `0x0` | **`-0xf40`** |
+| `__TEXT.__const` | `0x18ec` | `0xeec` | **`-0xa00`** |
+| `__TEXT.__cstring` | `0x16dfb` | `0x1698c` | **`-0x46f`** |
+| `__AUTH_CONST.__const` | `0x1708` | `0x1320` | **`-0x3e8`** |
+| `__TEXT.__unwind_info` | `0x4650` | `0x4378` | **`-0x2d8`** |
+| `__TEXT.__eh_frame` | `0x2d0` | `—` | **`-0x2d0`** |
+| `__TEXT.__constg_swiftt` | `0x2c4` | `0x38` | **`-0x28c`** |
+| `__TEXT.__swift5_typeref` | `0x260` | `0x14` | **`-0x24c`** |
+| `__DATA.__data` | `0x2d7c` | `0x2b40` | **`-0x23c`** |
+| `__AUTH_CONST.__cfstring` | `0xeca0` | `0xeea0` | **`+0x200`** |
+| `__TEXT.__oslogstring` | `0x1e04e` | `0x1de95` | **`-0x1b9`** |
+| `__AUTH.__data` | `0x880` | `0x6e0` | **`-0x1a0`** |
+| `__AUTH.__objc_data` | `0x14d0` | `0x1398` | **`-0x138`** |
+| `__AUTH_CONST.__objc_const` | `0x18418` | `0x182e0` | **`-0x138`** |
+| `__DATA_CONST.__got` | `0x1578` | `0x1440` | **`-0x138`** |
+| `__TEXT.__delay_helper` | `0x794` | `0x8cc` | **`+0x138`** |
+| `__TEXT.__swift5_fieldmd` | `0x10c` | `0x10` | **`-0xfc`** |
+| `__TEXT.__swift5_assocty` | `0x90` | `—` | **`-0x90`** |
+| `__DATA_CONST.__objc_selrefs` | `0x65f8` | `0x6570` | **`-0x88`** |
+| `__TEXT.__swift5_proto` | `0x7c` | `—` | **`-0x7c`** |
+| `__TEXT.__swift5_reflstr` | `0x6a` | `—` | **`-0x6a`** |
+| `__DATA_CONST.__const` | `0x68d8` | `0x6940` | **`+0x68`** |
+| `__TEXT.__swift5_builtin` | `0x64` | `—` | **`-0x64`** |
+| `__TEXT.__objc_methlist` | `0xc814` | `0xc7b4` | **`-0x60`** |
+| `__TEXT.__swift5_capture` | `0x50` | `—` | **`-0x50`** |
+| `__TEXT.__swift5_types` | `0x40` | `0x4` | **`-0x3c`** |
+| `__TEXT.__gcc_except_tab` | `0x7ebc` | `0x7ee8` | **`+0x2c`** |
+| `__DATA_CONST.__objc_classlist` | `0x9d0` | `0x9c0` | **`-0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x280` | `0x270` | **`-0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x60` | `0x50` | **`-0x10`** |
+| `__DATA_DIRTY.__bss` | `0x3c8` | `0x3d8` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x960` | `0x968` | **`+0x8`** |
+| `__DATA_DIRTY.__objc_ivar` | `0x1f8` | `0x1fc` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x15e124
-+  __TEXT.__text: 0x151730
-   __TEXT.__delay_stubs: 0x80
--  __TEXT.__delay_helper: 0x794
--  __TEXT.__objc_methlist: 0xc814
--  __TEXT.__const: 0x18ec
-+  __TEXT.__delay_helper: 0x8cc
-+  __TEXT.__objc_methlist: 0xc7b4
-+  __TEXT.__const: 0xeec
-   __TEXT.__dlopen_cstrs: 0x54
--  __TEXT.__cstring: 0x16dfb
--  __TEXT.__swift5_typeref: 0x260
--  __TEXT.__swift5_reflstr: 0x6a
--  __TEXT.__swift5_assocty: 0x90
--  __TEXT.__constg_swiftt: 0x2c4
--  __TEXT.__swift5_fieldmd: 0x10c
--  __TEXT.__swift5_builtin: 0x64
--  __TEXT.__swift5_capture: 0x50
--  __TEXT.__swift5_proto: 0x7c
--  __TEXT.__swift5_types: 0x40
--  __TEXT.__oslogstring: 0x1e04e
--  __TEXT.__gcc_except_tab: 0x7ebc
--  __TEXT.__unwind_info: 0x4650
--  __TEXT.__eh_frame: 0x2d0
-+  __TEXT.__cstring: 0x1698c
-+  __TEXT.__constg_swiftt: 0x38
-+  __TEXT.__swift5_typeref: 0x14
-+  __TEXT.__swift5_fieldmd: 0x10
-+  __TEXT.__swift5_types: 0x4
-+  __TEXT.__oslogstring: 0x1de95
-+  __TEXT.__gcc_except_tab: 0x7ee8
-+  __TEXT.__unwind_info: 0x4378
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x68d8
--  __DATA_CONST.__objc_classlist: 0x9d0
-+  __DATA_CONST.__const: 0x6940
-+  __DATA_CONST.__objc_classlist: 0x9c0
-   __DATA_CONST.__objc_catlist: 0x88
--  __DATA_CONST.__objc_protolist: 0x280
-+  __DATA_CONST.__objc_protolist: 0x270
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x65f8
--  __DATA_CONST.__objc_protorefs: 0x60
-+  __DATA_CONST.__objc_selrefs: 0x6570
-+  __DATA_CONST.__objc_protorefs: 0x50
-   __DATA_CONST.__objc_superrefs: 0x630
-   __DATA_CONST.__objc_arraydata: 0x388
--  __DATA_CONST.__got: 0x1578
--  __AUTH_CONST.__const: 0x1708
--  __AUTH_CONST.__cfstring: 0xeca0
--  __AUTH_CONST.__objc_const: 0x18418
-+  __DATA_CONST.__got: 0x1440
-+  __AUTH_CONST.__const: 0x1320
-+  __AUTH_CONST.__cfstring: 0xeea0
-+  __AUTH_CONST.__objc_const: 0x182e0
-   __AUTH_CONST.__objc_intobj: 0xe40
-   __AUTH_CONST.__objc_arrayobj: 0x378
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0xf40
--  __AUTH.__objc_data: 0x14d0
--  __AUTH.__data: 0x880
--  __DATA.__objc_ivar: 0x960
--  __DATA.__data: 0x2d7c
-+  __AUTH_CONST.__auth_got: 0x0
-+  __AUTH.__objc_data: 0x1398
-+  __AUTH.__data: 0x6e0
-+  __DATA.__objc_ivar: 0x968
-+  __DATA.__data: 0x2b40
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x10a0
-+  __DATA.__bss: 0x118
-   __DATA.__common: 0x28
--  __DATA_DIRTY.__objc_ivar: 0x1f8
-+  __DATA_DIRTY.__objc_ivar: 0x1fc
-   __DATA_DIRTY.__objc_data: 0x4e48
-   __DATA_DIRTY.__data: 0x10
--  __DATA_DIRTY.__bss: 0x3c8
-+  __DATA_DIRTY.__bss: 0x3d8
-   __DATA_DIRTY.__common: 0x38
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/CoreTelephony.framework/CoreTelephony
+-505.0.0.0.0
++507.0.0.0.0
+
 -  - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/PushKit.framework/PushKit
-   - /System/Library/Frameworks/Security.framework/Security
 
-   - /System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams
-   - /System/Library/PrivateFrameworks/CacheDelete.framework/CacheDelete
-   - /System/Library/PrivateFrameworks/CoreSymbolication.framework/CoreSymbolication
 -  - /System/Library/PrivateFrameworks/CryptoKitPrivate.framework/CryptoKitPrivate
-   - /System/Library/PrivateFrameworks/DeviceIdentity.framework/DeviceIdentity
-   - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
-   - /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
 
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /System/Library/PrivateFrameworks/SoftwareUpdateCoreSupport.framework/SoftwareUpdateCoreSupport
-   - /System/Library/PrivateFrameworks/Trial.framework/Trial
 +  - /System/Library/PrivateFrameworks/TrialEncryption.framework/TrialEncryption
-   - /System/Library/PrivateFrameworks/TrialProto.framework/TrialProto
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libParallelCompression.dylib
 
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  - /usr/lib/swift/libswiftos.dylib
 -  Functions: 5242
--  Symbols:   18297
--  CStrings:  6166
+-  Symbols:   9533
+-  CStrings:  4255
 +  Functions: 4979
-+  Symbols:   18142
-+  CStrings:  6155
- 
-Sections:
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   9386
++  CStrings:  4228
 Symbols:
 + +[TRITaskUtils updateRolloutHistoryDatabaseWithAllocationStatus:forRollout:ramp:deployment:fps:namespaces:telemetryMetric:categoricalReason:rolloutRecord:isBecomingObsolete:context:]
 + -[TRIBAACertManager _issueAndWaitForCerts:semaphore:]
@@ -187,14 +117,6 @@ Symbols:
 + _kTRIBAACertValidityDays
 + _kTRIBAAKeychainAccessGroup
 + _kTRIBAAKeychainLabel
-+ _objc_msgSend$_buildOptions
-+ _objc_msgSend$_emitWKMSAndBAAMetricsForError:
-+ _objc_msgSend$_issueAndWaitForCerts:semaphore:
-+ _objc_msgSend$baaCertOutcomeIfApplicableFor:
-+ _objc_msgSend$initWithBase64Encoder:timeProvider:deviceIdentityProvider:semaphoreTimeoutNanos:
-+ _objc_msgSend$issueCertificateOnQueue:completion:
-+ _objc_msgSend$updateRolloutHistoryDatabaseWithAllocationStatus:forRollout:ramp:deployment:fps:namespaces:telemetryMetric:categoricalReason:rolloutRecord:isBecomingObsolete:context:
-+ _objc_msgSend$wkmsOutcomeFor:
 + _symbolic _____ 11TrialServer30TRIDecryptionOutcomeClassifierC
 - -[TRIBAACertManager _issueAndWaitForCerts:semaphore:resultKey:result:]
 - _NSURLAuthenticationMethodClientCertificate
@@ -293,22 +215,6 @@ Symbols:
 - _memcpy
 - _memmove
 - _objc_allocWithZone
-- _objc_msgSend$_copyDeviceIdentityOptions
-- _objc_msgSend$_issueAndWaitForCerts:semaphore:resultKey:result:
-- _objc_msgSend$authenticationMethod
-- _objc_msgSend$dataTaskWithRequest:completionHandler:
-- _objc_msgSend$defaultSessionConfiguration
-- _objc_msgSend$init
-- _objc_msgSend$initWithBase64Encoder:timeProvider:
-- _objc_msgSend$initWithIdentity:certificates:persistence:
-- _objc_msgSend$initWithTrust:
-- _objc_msgSend$invalidateAndCancel
-- _objc_msgSend$protectionSpace
-- _objc_msgSend$serverTrust
-- _objc_msgSend$sessionWithConfiguration:
-- _objc_msgSend$sessionWithConfiguration:delegate:delegateQueue:
-- _objc_msgSend$setTimeoutIntervalForResource:
-- _objc_msgSend$statusCode
 - _swift_allocBox
 - _swift_allocError
 - _swift_allocObject
@@ -492,5 +398,4 @@ CStrings:
 - "https://assets-external.sd.apple.com/"
 - "init()"
 - "wrapped-key"
-
 ```

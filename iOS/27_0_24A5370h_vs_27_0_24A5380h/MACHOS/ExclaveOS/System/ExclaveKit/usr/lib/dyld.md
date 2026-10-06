@@ -2,41 +2,36 @@
 
 > `/System/ExclaveKit/usr/lib/dyld`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5b508` | `0x5bb58` | **`+0x650`** |
+| `__AUTH_CONST.__const` | `0x3e58` | `0x3ee8` | **`+0x90`** |
+| `__TEXT.__cstring` | `0xe4dd` | `0xe51e` | **`+0x41`** |
+| `__TEXT.__unwind_info` | `0x1e68` | `0x1e80` | **`+0x18`** |
+
+### Same-size Content Changes
+
+- `__AUTH.__data`
+- `__DATA.__data`
+- `__DATA_CONST.__const`
+- `__DATA_DIRTY.__all_image_info`
+- `__TEXT.__const`
+- `__TEXT.__eh_frame`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x5b508
-+  __TEXT.__text: 0x5bb58
-   __TEXT.__const: 0x1c0a8
--  __TEXT.__cstring: 0xe4dd
--  __TEXT.__unwind_info: 0x1e68
-+  __TEXT.__cstring: 0xe51e
-+  __TEXT.__unwind_info: 0x1e80
-   __TEXT.__eh_frame: 0x48
-   __DATA_CONST.__const: 0xaf0
--  __AUTH_CONST.__const: 0x3e58
-+  __AUTH_CONST.__const: 0x3ee8
-   __AUTH.__data: 0x470
-   __DATA.__data: 0x1448
-   __DATA.__ENDPOINTS: 0x62a
-
-   __DATA.__common: 0x550
-   __DATA.__bss: 0xba3f8
-   __DATA_DIRTY.__all_image_info: 0x170
+-27056.0.0.0.0
 -  Functions: 2737
--  Symbols:   2861
+-  Symbols:   2413
 -  CStrings:  1460
++27059.3.0.0.0
 +  Functions: 2744
-+  Symbols:   2871
++  Symbols:   2420
 +  CStrings:  1461
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA.__bss : content changed
-~ __DATA_DIRTY.__all_image_info : content changed
 Symbols:
 + _OUTLINED_FUNCTION_15
 + _ZNK5dyld46Loader14getExportsTrieERyRj
@@ -103,5 +98,4 @@ CStrings:
 - "this->startupContractVersion == 1"
 - "v32@?0{span<const unsigned char, 18446744073709551615UL>=*Q}8^B24"
 - "write_float"
-
 ```

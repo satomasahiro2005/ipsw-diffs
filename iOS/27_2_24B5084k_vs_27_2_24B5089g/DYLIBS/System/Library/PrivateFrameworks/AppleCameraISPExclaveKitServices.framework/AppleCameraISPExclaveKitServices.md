@@ -2,49 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/AppleCameraISPExclaveKitServices.framework/AppleCameraISPExclaveKitServices`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x32b94` | `0x32ca4` | **`+0x110`** |
+| `__TEXT.__oslogstring` | `0x442e` | `0x44fe` | **`+0xd0`** |
+| `__TEXT.__gcc_except_tab` | `0x928` | `0x934` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x588` | `0x590` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -20.104.4.0.0
--  __TEXT.__text: 0x32984
 +20.105.6.0.0
-+  __TEXT.__text: 0x32a94
-   __TEXT.__const: 0x2fa
--  __TEXT.__gcc_except_tab: 0x928
--  __TEXT.__oslogstring: 0x442e
-+  __TEXT.__gcc_except_tab: 0x934
-+  __TEXT.__oslogstring: 0x44fe
-   __TEXT.__cstring: 0x8d16
-   __TEXT.__swift5_typeref: 0x2e
-   __TEXT.__constg_swiftt: 0x48
-   __TEXT.__swift5_fieldmd: 0x10
-   __TEXT.__swift5_types: 0x4
--  __TEXT.__unwind_info: 0x12e0
-+  __TEXT.__unwind_info: 0x12d8
-   __TEXT.__eh_frame: 0x70
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __AUTH_CONST.__cfstring: 0x5e0
-   __AUTH_CONST.__objc_const: 0x90
-   __AUTH_CONST.__weak_auth_got: 0x28
--  __AUTH_CONST.__auth_got: 0x588
-+  __AUTH_CONST.__auth_got: 0x590
-   __AUTH.__data: 0x98
-   __DATA.__data: 0x118bd0
-   __DATA.__common: 0x98
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   Functions: 1197
 -  Symbols:   782
 -  CStrings:  824
 +  Symbols:   783
 +  CStrings:  828
- 
 Symbols:
 + _usleep
 CStrings:

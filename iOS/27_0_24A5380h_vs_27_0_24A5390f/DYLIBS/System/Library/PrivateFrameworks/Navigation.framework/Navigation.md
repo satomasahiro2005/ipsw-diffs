@@ -2,115 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/Navigation.framework/Navigation`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_floatobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x5830` | `0x3280` | **`-0x25b0`** |
+| `__DATA_DIRTY.__objc_data` | `0x1b10` | `0x40c0` | **`+0x25b0`** |
+| `__DATA_DIRTY.__data` | `0x2c8` | `0xb88` | **`+0x8c0`** |
+| `__AUTH.__data` | `0x4ef8` | `0x46e0` | **`-0x818`** |
+| `__DATA.__bss` | `0x12710` | `0x127e0` | **`+0xd0`** |
+| `__DATA_DIRTY.__bss` | `0x240` | `0x178` | **`-0xc8`** |
+| `__DATA.__common` | `0x318` | `0x2b0` | **`-0x68`** |
+| `__DATA_DIRTY.__common` | `—` | `0x68` | **`+0x68`** |
+| `__DATA.__data` | `0x7ae8` | `0x7aa8` | **`-0x40`** |
+| `__TEXT.__text` | `0x21ec5c` | `0x21ec9c` | **`+0x40`** |
+| `__AUTH_CONST.__cfstring` | `0xcde0` | `0xce00` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x20639` | `0x2064f` | **`+0x16`** |
+| `__DATA_CONST.__const` | `0x4010` | `0x4018` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8dc8` | `0x8dd0` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x12284` | `0x1228c` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -2435.30.6.12.2
--  __TEXT.__text: 0x21ec5c
--  __TEXT.__objc_methlist: 0x12284
 +2435.30.6.12.5
-+  __TEXT.__text: 0x21ec9c
-+  __TEXT.__objc_methlist: 0x1228c
-   __TEXT.__const: 0xdc7c
-   __TEXT.__dlopen_cstrs: 0x104
-   __TEXT.__constg_swiftt: 0x4978
 
-   __TEXT.__swift5_assocty: 0x600
-   __TEXT.__swift5_proto: 0x968
-   __TEXT.__swift5_types: 0x544
--  __TEXT.__cstring: 0x20639
-+  __TEXT.__cstring: 0x2064f
-   __TEXT.__swift5_capture: 0xf90
-   __TEXT.__swift_as_entry: 0x1a4
-   __TEXT.__swift_as_ret: 0x170
-
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4010
-+  __DATA_CONST.__const: 0x4018
-   __DATA_CONST.__objc_classlist: 0xa38
-   __DATA_CONST.__objc_catlist: 0x140
-   __DATA_CONST.__objc_protolist: 0x320
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8dc8
-+  __DATA_CONST.__objc_selrefs: 0x8dd0
-   __DATA_CONST.__objc_protorefs: 0x158
-   __DATA_CONST.__objc_superrefs: 0x528
-   __DATA_CONST.__objc_arraydata: 0x2e0
-   __DATA_CONST.__got: 0x13d8
-   __AUTH_CONST.__const: 0xb718
--  __AUTH_CONST.__cfstring: 0xcde0
-+  __AUTH_CONST.__cfstring: 0xce00
-   __AUTH_CONST.__objc_const: 0x22100
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x570
-
-   __AUTH_CONST.__objc_arrayobj: 0x180
-   __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__auth_got: 0x1cc0
--  __AUTH.__objc_data: 0x5830
--  __AUTH.__data: 0x4ef8
-+  __AUTH.__objc_data: 0x3280
-+  __AUTH.__data: 0x46e0
-   __DATA.__objc_ivar: 0x1574
--  __DATA.__data: 0x7ae8
--  __DATA.__bss: 0x12710
--  __DATA.__common: 0x318
--  __DATA_DIRTY.__objc_data: 0x1b10
--  __DATA_DIRTY.__data: 0x2c8
--  __DATA_DIRTY.__bss: 0x240
-+  __DATA.__data: 0x7aa8
-+  __DATA.__bss: 0x127e0
-+  __DATA.__common: 0x2b0
-+  __DATA_DIRTY.__objc_data: 0x40c0
-+  __DATA_DIRTY.__data: 0xb88
-+  __DATA_DIRTY.__bss: 0x178
-+  __DATA_DIRTY.__common: 0x68
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11095
--  Symbols:   16974
+-  Symbols:   12950
 -  CStrings:  4003
 +  Functions: 11096
-+  Symbols:   16976
++  Symbols:   12951
 +  CStrings:  4004
- 
 Symbols:
 + -[MNGuidanceManager _announce:parentEvent:sourceID:sourceGuidanceObject:options:completionHandler:]
 + -[MNGuidanceManager _handleCompositeAnnouncementComponent:parentEvent:options:completionHandler:]
@@ -230,10 +154,6 @@ Symbols:
 + ___63-[MNGuidanceManager _handleCompositeAnnouncementEvent:options:]_block_invoke
 + ___86-[MNGuidanceManager _notifySpeechEvent:waypointCategory:startingVariantIndex:options:]_block_invoke
 + ___99-[MNGuidanceManager _announce:parentEvent:sourceID:sourceGuidanceObject:options:completionHandler:]_block_invoke
-+ _objc_msgSend$_announce:parentEvent:sourceID:sourceGuidanceObject:options:completionHandler:
-+ _objc_msgSend$_handleCompositeAnnouncementComponent:parentEvent:options:completionHandler:
-+ _objc_msgSend$_handleCompositeAnnouncementEvent:options:
-+ _objc_msgSend$_notifySpeechEvent:waypointCategory:startingVariantIndex:options:
 - -[MNGuidanceManager _announce:parentEvent:sourceID:sourceGuidanceObject:completionHandler:]
 - -[MNGuidanceManager _handleCompositeAnnouncementComponent:parentEvent:completionHandler:]
 - -[MNGuidanceManager _handleCompositeAnnouncementEvent:]
@@ -351,9 +271,6 @@ Symbols:
 - ___55-[MNGuidanceManager _handleCompositeAnnouncementEvent:]_block_invoke
 - ___78-[MNGuidanceManager _notifySpeechEvent:waypointCategory:startingVariantIndex:]_block_invoke
 - ___91-[MNGuidanceManager _announce:parentEvent:sourceID:sourceGuidanceObject:completionHandler:]_block_invoke
-- _objc_msgSend$_announce:parentEvent:sourceID:sourceGuidanceObject:completionHandler:
-- _objc_msgSend$_handleCompositeAnnouncementComponent:parentEvent:completionHandler:
-- _objc_msgSend$_handleCompositeAnnouncementEvent:
 CStrings:
 + "-[MNGuidanceManager _handleCompositeAnnouncementComponent:parentEvent:options:completionHandler:]"
 + "BASEMAP_PATCH"

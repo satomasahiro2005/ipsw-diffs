@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/HomeEnergyUI.framework/HomeEnergyUI`
 
-```diff
+### Section Size Changes
 
- 490.1.4.0.0
--  __TEXT.__text: 0x265528
-+  __TEXT.__text: 0x265540
-   __TEXT.__objc_methlist: 0x23c
-   __TEXT.__const: 0x106d0
-   __TEXT.__constg_swiftt: 0x4dc8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x265528` | `0x265540` | **`+0x18`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_21344bfcc -> sub_213c26fcc : 2244 -> 2248
 ~ sub_21349b2ec -> sub_213c762f0 : 688 -> 692

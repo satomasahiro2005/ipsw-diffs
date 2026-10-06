@@ -2,71 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/AppleIntelligenceReporting.framework/AppleIntelligenceReporting`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x77b0c` | `0x7cde0` | **`+0x52d4`** |
+| `__DATA.__bss` | `0x1c910` | `0x1de10` | **`+0x1500`** |
+| `__TEXT.__const` | `0xed9c` | `0xf78c` | **`+0x9f0`** |
+| `__AUTH_CONST.__const` | `0x6640` | `0x6ad8` | **`+0x498`** |
+| `__TEXT.__swift5_fieldmd` | `0x3608` | `0x3960` | **`+0x358`** |
+| `__TEXT.__eh_frame` | `0x3380` | `0x3620` | **`+0x2a0`** |
+| `__TEXT.__swift5_reflstr` | `0x221d` | `0x247e` | **`+0x261`** |
+| `__TEXT.__unwind_info` | `0x29b8` | `0x2bc8` | **`+0x210`** |
+| `__DATA.__data` | `0x2588` | `0x2700` | **`+0x178`** |
+| `__TEXT.__constg_swiftt` | `0x238c` | `0x24dc` | **`+0x150`** |
+| `__TEXT.__swift5_typeref` | `0x2e25` | `0x2f5f` | **`+0x13a`** |
+| `__AUTH.__data` | `0x1a8` | `0x2c0` | **`+0x118`** |
+| `__TEXT.__swift5_proto` | `0xe90` | `0xf38` | **`+0xa8`** |
+| `__TEXT.__cstring` | `0x1866` | `0x1906` | **`+0xa0`** |
+| `__TEXT.__swift5_assocty` | `0x180` | `0x1b0` | **`+0x30`** |
+| `__TEXT.__swift5_types` | `0x3dc` | `0x404` | **`+0x28`** |
+
+### Other Changes
+
 ```diff
 
 -232.2.1.0.0
--  __TEXT.__text: 0x73558
--  __TEXT.__const: 0xed9c
--  __TEXT.__swift5_typeref: 0x2e25
 +232.40.11.0.0
-+  __TEXT.__text: 0x78654
-+  __TEXT.__const: 0xf78c
-+  __TEXT.__swift5_typeref: 0x2f5f
-   __TEXT.__oslogstring: 0x5eb
--  __TEXT.__constg_swiftt: 0x238c
--  __TEXT.__swift5_reflstr: 0x221d
--  __TEXT.__swift5_fieldmd: 0x3608
--  __TEXT.__cstring: 0x1866
--  __TEXT.__swift5_proto: 0xe90
--  __TEXT.__swift5_types: 0x3dc
-+  __TEXT.__constg_swiftt: 0x24dc
-+  __TEXT.__swift5_reflstr: 0x247e
-+  __TEXT.__swift5_fieldmd: 0x3960
-+  __TEXT.__cstring: 0x1906
-+  __TEXT.__swift5_proto: 0xf38
-+  __TEXT.__swift5_types: 0x404
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__swift5_assocty: 0x180
-+  __TEXT.__swift5_assocty: 0x1b0
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_mpenum: 0x2a0
-   __TEXT.__swift5_capture: 0x170
-   __TEXT.__swift_as_entry: 0xc
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x20
--  __TEXT.__unwind_info: 0x37b0
--  __TEXT.__eh_frame: 0x3380
-+  __TEXT.__unwind_info: 0x3a38
-+  __TEXT.__eh_frame: 0x3620
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x30
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x6640
-+  __AUTH_CONST.__const: 0x6ad8
-   __AUTH_CONST.__objc_const: 0x650
-   __AUTH_CONST.__auth_got: 0x17a8
--  __AUTH.__data: 0x1a8
--  __DATA.__data: 0x2588
-+  __AUTH.__data: 0x2c0
-+  __DATA.__data: 0x2700
-   __DATA.__common: 0x30
-   __DATA_DIRTY.__objc_data: 0x50
-   __DATA_DIRTY.__data: 0xe50
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 5145
--  Symbols:   14333
+-  Symbols:   14327
 -  CStrings:  211
 +  Functions: 5353
-+  Symbols:   14850
++  Symbols:   14844
 +  CStrings:  216
- 
 Symbols:
 + _$s26AppleIntelligenceReporting22UAFAssetSetStatusEventV05AssetE0V05assetE2IdSSSgvg
 + _$s26AppleIntelligenceReporting22UAFAssetSetStatusEventV05AssetE0V05assetE2IdSSSgvpMV

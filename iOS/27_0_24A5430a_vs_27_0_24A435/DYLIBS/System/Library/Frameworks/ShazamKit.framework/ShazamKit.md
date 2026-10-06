@@ -2,117 +2,59 @@
 
 > `/System/Library/Frameworks/ShazamKit.framework/ShazamKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa172c` | `0xa68cc` | **`+0x51a0`** |
+| `__DATA.__bss` | `0x2018` | `0x2c28` | **`+0xc10`** |
+| `__TEXT.__const` | `0x222b7` | `0x22a97` | **`+0x7e0`** |
+| `__TEXT.__eh_frame` | `0x24c0` | `0x2b68` | **`+0x6a8`** |
+| `__AUTH_CONST.__const` | `0x2160` | `0x27a8` | **`+0x648`** |
+| `__AUTH_CONST.__objc_const` | `0x9f08` | `0xa398` | **`+0x490`** |
+| `__TEXT.__constg_swiftt` | `0x7bc` | `0xa6c` | **`+0x2b0`** |
+| `__DATA_DIRTY.__data` | `0x7e8` | `0xa78` | **`+0x290`** |
+| `__TEXT.__swift5_fieldmd` | `0x66c` | `0x89c` | **`+0x230`** |
+| `__TEXT.__unwind_info` | `0x34e8` | `0x36c8` | **`+0x1e0`** |
+| `__TEXT.__cstring` | `0x3a9b` | `0x3c4d` | **`+0x1b2`** |
+| `__TEXT.__swift5_reflstr` | `0x4c2` | `0x5ee` | **`+0x12c`** |
+| `__AUTH_CONST.__auth_got` | `0x1330` | `0x1418` | **`+0xe8`** |
+| `__TEXT.__swift5_typeref` | `0xfd4` | `0x10ac` | **`+0xd8`** |
+| `__DATA.__data` | `0x1b2480` | `0x1b2530` | **`+0xb0`** |
+| `__AUTH.__data` | `0x298` | `0x338` | **`+0xa0`** |
+| `__TEXT.__objc_methlist` | `0x5170` | `0x5200` | **`+0x90`** |
+| `__AUTH_CONST.__cfstring` | `0x27a0` | `0x2820` | **`+0x80`** |
+| `__TEXT.__swift5_proto` | `0x184` | `0x1e4` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0x50` | `0xa0` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x868` | `0x8b0` | **`+0x48`** |
+| `__TEXT.__swift5_types` | `0x94` | `0xd8` | **`+0x44`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2518` | `0x2558` | **`+0x40`** |
+| `__TEXT.__oslogstring` | `0x1431` | `0x1471` | **`+0x40`** |
+| `__DATA_CONST.__objc_classlist` | `0x370` | `0x3a0` | **`+0x30`** |
+| `__TEXT.__swift5_builtin` | `0xb4` | `0xdc` | **`+0x28`** |
+| `__TEXT.__swift_as_cont` | `0x164` | `0x184` | **`+0x20`** |
+| `__TEXT.__swift5_assocty` | `0x230` | `0x248` | **`+0x18`** |
+| `__DATA_CONST.__const` | `0x900` | `0x910` | **`+0x10`** |
+| `__TEXT.__swift_as_ret` | `0xc8` | `0xd4` | **`+0xc`** |
+| `__DATA.__objc_ivar` | `0x4e4` | `0x4ec` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x150` | `0x158` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x18` | `0x20` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0xb4` | `0xbc` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x38a0` | `0x38a4` | **`+0x4`** |
+| `__TEXT.__swift5_protos` | `0x14` | `0x18` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
- 427.0.48.0.0
--  __TEXT.__text: 0xa172c
--  __TEXT.__objc_methlist: 0x5170
--  __TEXT.__const: 0x222b7
--  __TEXT.__cstring: 0x3a9b
--  __TEXT.__gcc_except_tab: 0x38a0
--  __TEXT.__oslogstring: 0x1431
--  __TEXT.__constg_swiftt: 0x7bc
--  __TEXT.__swift5_typeref: 0xfd4
--  __TEXT.__swift5_builtin: 0xb4
--  __TEXT.__swift5_reflstr: 0x4c2
--  __TEXT.__swift5_fieldmd: 0x66c
--  __TEXT.__swift5_assocty: 0x230
--  __TEXT.__swift5_proto: 0x184
--  __TEXT.__swift5_types: 0x94
--  __TEXT.__swift_as_entry: 0xb4
--  __TEXT.__swift_as_ret: 0xc8
--  __TEXT.__swift_as_cont: 0x164
--  __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__swift5_protos: 0x14
-+  __TEXT.__text: 0xa68cc
-+  __TEXT.__objc_methlist: 0x5200
-+  __TEXT.__const: 0x22a97
-+  __TEXT.__cstring: 0x3c4d
-+  __TEXT.__gcc_except_tab: 0x38a4
-+  __TEXT.__oslogstring: 0x1471
-+  __TEXT.__constg_swiftt: 0xa6c
-+  __TEXT.__swift5_typeref: 0x10ac
-+  __TEXT.__swift5_builtin: 0xdc
-+  __TEXT.__swift5_reflstr: 0x5ee
-+  __TEXT.__swift5_fieldmd: 0x89c
-+  __TEXT.__swift5_assocty: 0x248
-+  __TEXT.__swift5_proto: 0x1e4
-+  __TEXT.__swift5_types: 0xd8
-+  __TEXT.__swift_as_entry: 0xbc
-+  __TEXT.__swift_as_ret: 0xd4
-+  __TEXT.__swift_as_cont: 0x184
-+  __TEXT.__swift5_mpenum: 0x20
-+  __TEXT.__swift5_protos: 0x18
-   __TEXT.__swift5_capture: 0x324
--  __TEXT.__unwind_info: 0x34e8
--  __TEXT.__eh_frame: 0x24c0
-+  __TEXT.__unwind_info: 0x36c8
-+  __TEXT.__eh_frame: 0x2b68
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x900
--  __DATA_CONST.__objc_classlist: 0x370
-+  __DATA_CONST.__const: 0x910
-+  __DATA_CONST.__objc_classlist: 0x3a0
-   __DATA_CONST.__objc_catlist: 0x18
--  __DATA_CONST.__objc_protolist: 0x150
-+  __DATA_CONST.__objc_protolist: 0x158
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x20
--  __DATA_CONST.__objc_selrefs: 0x2518
-+  __DATA_CONST.__objc_selrefs: 0x2558
-   __DATA_CONST.__objc_protorefs: 0x60
-   __DATA_CONST.__objc_superrefs: 0x258
--  __DATA_CONST.__got: 0x868
--  __AUTH_CONST.__const: 0x2160
--  __AUTH_CONST.__cfstring: 0x27a0
--  __AUTH_CONST.__objc_const: 0x9f08
-+  __DATA_CONST.__got: 0x8b0
-+  __AUTH_CONST.__const: 0x27a8
-+  __AUTH_CONST.__cfstring: 0x2820
-+  __AUTH_CONST.__objc_const: 0xa398
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__objc_intobj: 0x120
--  __AUTH_CONST.__auth_got: 0x1330
--  __AUTH.__objc_data: 0x50
--  __AUTH.__data: 0x298
--  __DATA.__objc_ivar: 0x4e4
--  __DATA.__data: 0x1b2480
-+  __AUTH_CONST.__auth_got: 0x1418
-+  __AUTH.__objc_data: 0xa0
-+  __AUTH.__data: 0x338
-+  __DATA.__objc_ivar: 0x4ec
-+  __DATA.__data: 0x1b2530
-   __DATA.__common: 0x1d8
-   __DATA_DIRTY.__objc_data: 0x2288
--  __DATA_DIRTY.__data: 0x7e8
-+  __DATA_DIRTY.__data: 0xa78
-   __DATA_DIRTY.__bss: 0x160
-   __DATA_DIRTY.__common: 0x10
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-
-   - /System/Library/PrivateFrameworks/CollectionsInternal.framework/CollectionsInternal
-   - /System/Library/PrivateFrameworks/MusicKitInternal.framework/MusicKitInternal
-   - /System/Library/PrivateFrameworks/ShazamCore.framework/ShazamCore
 +  - /System/Library/PrivateFrameworks/Tightbeam.framework/Tightbeam
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3651
--  Symbols:   6149
+-  Symbols:   5136
 -  CStrings:  575
 +  Functions: 3816
-+  Symbols:   6238
++  Symbols:   5217
 +  CStrings:  587
- 
 Symbols:
 + +[SHAmbientSession activateSessionWithContext:completionHandler:]
 + +[SHAmbientSession deactivateSessionWithContext:completionHandler:]
@@ -164,15 +106,6 @@ Symbols:
 + _associated conformance 9ShazamKit25SignatureInvocationSourceOSHAASQ
 + _get_enum_tag_for_layout_string 9ShazamKit16SignaturePayloadO
 + _mach_continuous_time
-+ _objc_msgSend$activateSessionWithContext:completionHandler:
-+ _objc_msgSend$deactivateSessionWithContext:completionHandler:
-+ _objc_msgSend$enableInstant
-+ _objc_msgSend$initWithHostTime:sampleTime:atRate:
-+ _objc_msgSend$initWithRequestID:notifications:deadline:storeSignatureOnNoMatch:enableLiveActivity:enableInstant:invocationSource:preferredInputAudioRoute:
-+ _objc_msgSend$setAmbientSessionActiveState:forContext:completionHandler:
-+ _objc_msgSend$setEnableInstant:
-+ _objc_msgSend$setMusicDetected:completionHandler:
-+ _objc_msgSend$setMusicDetectedState:completionHandler:
 + _swift_deallocPartialClassInstance
 + _swift_defaultActor_deallocate
 + _swift_defaultActor_destroy
@@ -206,7 +139,6 @@ Symbols:
 + _type_layout_string 9ShazamKit9AudioTimeV
 + _type_layout_string 9ShazamKit9SignatureV
 - -[SHRecordRequest initWithRequestID:notifications:deadline:storeSignatureOnNoMatch:enableLiveActivity:invocationSource:preferredInputAudioRoute:]
-- _objc_msgSend$initWithRequestID:notifications:deadline:storeSignatureOnNoMatch:enableLiveActivity:invocationSource:preferredInputAudioRoute:
 CStrings:
 + "Encrypted data is not currently supported"
 + "Invalid key value while decoding result type for signature"

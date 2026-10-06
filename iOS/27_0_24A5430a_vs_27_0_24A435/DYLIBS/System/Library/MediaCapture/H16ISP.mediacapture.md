@@ -2,57 +2,30 @@
 
 > `/System/Library/MediaCapture/H16ISP.mediacapture`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1d4354` | `0x1d8594` | **`+0x4240`** |
+| `__TEXT.__oslogstring` | `0x1de9e` | `0x1e771` | **`+0x8d3`** |
+| `__DATA_CONST.__got` | `0x3520` | `0x3600` | **`+0xe0`** |
+| `__TEXT.__cstring` | `0x19bb8` | `0x19c87` | **`+0xcf`** |
+| `__AUTH_CONST.__cfstring` | `0xa220` | `0xa2c0` | **`+0xa0`** |
+| `__AUTH_CONST.__const` | `0x2e58` | `0x2ed0` | **`+0x78`** |
+| `__TEXT.__const` | `0x2f228` | `0x2f298` | **`+0x70`** |
+| `__TEXT.__unwind_info` | `0x4018` | `0x4038` | **`+0x20`** |
+| `__DATA_DIRTY.__data` | `0x218` | `0x220` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 6.21.0.0.0
--  __TEXT.__text: 0x1d4354
-+  __TEXT.__text: 0x1d8594
-   __TEXT.__objc_methlist: 0x270
-   __TEXT.__gcc_except_tab: 0x6448
--  __TEXT.__const: 0x2f228
--  __TEXT.__cstring: 0x19bb8
--  __TEXT.__oslogstring: 0x1de9e
--  __TEXT.__unwind_info: 0x4018
-+  __TEXT.__const: 0x2f298
-+  __TEXT.__cstring: 0x19c87
-+  __TEXT.__oslogstring: 0x1e771
-+  __TEXT.__unwind_info: 0x4038
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0x8f0
-   __DATA_CONST.__objc_superrefs: 0x18
-   __DATA_CONST.__objc_arraydata: 0x58
--  __DATA_CONST.__got: 0x3520
--  __AUTH_CONST.__const: 0x2e58
--  __AUTH_CONST.__cfstring: 0xa220
-+  __DATA_CONST.__got: 0x3600
-+  __AUTH_CONST.__const: 0x2ed0
-+  __AUTH_CONST.__cfstring: 0xa2c0
-   __AUTH_CONST.__objc_const: 0x8a0
-   __AUTH_CONST.__weak_auth_got: 0xa0
-   __AUTH_CONST.__objc_intobj: 0x168
-
-   __DATA.__data: 0x382670
-   __DATA.__common: 0x30
-   __DATA_DIRTY.__objc_data: 0x50
--  __DATA_DIRTY.__data: 0x218
-+  __DATA_DIRTY.__data: 0x220
-   __DATA_DIRTY.__bss: 0x9a8
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libtailspin.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 5971
--  Symbols:   8511
+-  Symbols:   8249
 -  CStrings:  6428
 +  Functions: 6000
-+  Symbols:   8558
++  Symbols:   8296
 +  CStrings:  6470
- 
 Symbols:
 + GCC_except_table466
 + GCC_except_table515

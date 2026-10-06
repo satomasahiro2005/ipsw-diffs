@@ -2,41 +2,38 @@
 
 > `/private/var/staged_system_apps/Books.app/Frameworks/BKLibrary.framework/BKLibrary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x6b0` | `0x708` | **`+0x58`** |
+| `__TEXT.__text` | `0x8ee34` | `0x8ee1c` | **`-0x18`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x8ee34
-+  __TEXT.__text: 0x8ee1c
-   __TEXT.__auth_stubs: 0x1610
-   __TEXT.__objc_stubs: 0xc1e0
-   __TEXT.__objc_methlist: 0x63a0
-
-   __DATA_CONST.__objc_arrayobj: 0x138
-   __DATA_CONST.__objc_doubleobj: 0x10
-   __DATA_CONST.__auth_got: 0xb18
--  __DATA_CONST.__got: 0x6b0
-+  __DATA_CONST.__got: 0x708
-   __DATA_CONST.__auth_ptr: 0x238
-   __DATA.__objc_const: 0x8bb0
-   __DATA.__objc_selrefs: 0x40b8
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
-
+-6636.0.0.0.0
++6643.0.0.0.0
 ```

@@ -2,51 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/SoftwareUpdateUIFoundation.framework/SoftwareUpdateUIFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xad4d4` | `0xae414` | **`+0xf40`** |
+| `__TEXT.__oslogstring` | `0xaab7` | `0xad07` | **`+0x250`** |
+| `__TEXT.__cstring` | `0x6d48` | `0x6d98` | **`+0x50`** |
+| `__AUTH_CONST.__cfstring` | `0x3f40` | `0x3f80` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x1200` | `0x1218` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
 -772.0.20.0.0
--  __TEXT.__text: 0xac41c
 +772.40.11.0.0
-+  __TEXT.__text: 0xad350
-   __TEXT.__objc_methlist: 0x22f4
-   __TEXT.__const: 0x23c0
--  __TEXT.__cstring: 0x6d48
-+  __TEXT.__cstring: 0x6d98
-   __TEXT.__gcc_except_tab: 0x2500
--  __TEXT.__oslogstring: 0xaab7
-+  __TEXT.__oslogstring: 0xad07
-   __TEXT.__swift5_typeref: 0x785
-   __TEXT.__swift5_reflstr: 0x61e
-   __TEXT.__swift5_assocty: 0x480
 
-   __TEXT.__swift_as_ret: 0x38
-   __TEXT.__swift_as_cont: 0x48
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0x22d8
-+  __TEXT.__unwind_info: 0x22e8
-   __TEXT.__eh_frame: 0xb00
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_superrefs: 0x110
-   __DATA_CONST.__got: 0x460
-   __AUTH_CONST.__const: 0x1790
--  __AUTH_CONST.__cfstring: 0x3f40
-+  __AUTH_CONST.__cfstring: 0x3f80
-   __AUTH_CONST.__objc_const: 0x6a10
-   __AUTH_CONST.__objc_intobj: 0xd8
-   __AUTH_CONST.__auth_got: 0x910
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2096
--  Symbols:   2785
+-  Symbols:   2307
 -  CStrings:  967
 +  Functions: 2099
-+  Symbols:   2788
++  Symbols:   2310
 +  CStrings:  975
- 
 Symbols:
 + GCC_except_table29
 + GCC_except_table33

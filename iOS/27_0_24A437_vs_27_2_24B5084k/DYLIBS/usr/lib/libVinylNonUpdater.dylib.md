@@ -2,39 +2,24 @@
 
 > `/usr/lib/libVinylNonUpdater.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0xba3f` | `0xca08` | **`+0xfc9`** |
+| `__TEXT.__text` | `0x59518` | `0x5a06c` | **`+0xb54`** |
+| `__TEXT.__const` | `0x7424` | `0x7484` | **`+0x60`** |
+| `__DATA.__data` | `0xc98` | `0xcc0` | **`+0x28`** |
+| `__TEXT.__gcc_except_tab` | `0x4e90` | `0x4e94` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
- 178.0.0.0.0
--  __TEXT.__text: 0x58558
-+  __TEXT.__text: 0x590a0
-   __TEXT.__init_offsets: 0x54
--  __TEXT.__const: 0x7424
--  __TEXT.__gcc_except_tab: 0x4e90
--  __TEXT.__cstring: 0xba3f
-+  __TEXT.__const: 0x7484
-+  __TEXT.__gcc_except_tab: 0x4e94
-+  __TEXT.__cstring: 0xca08
-   __TEXT.__oslogstring: 0x7c
-   __TEXT.__unwind_info: 0x22e8
-   __TEXT.__auth_stubs: 0x0
-
-   __AUTH_CONST.__cfstring: 0xcc0
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__auth_got: 0xe88
--  __DATA.__data: 0xc98
-+  __DATA.__data: 0xcc0
-   __DATA.__common: 0x48
-   __DATA_DIRTY.__data: 0x28
-   __DATA_DIRTY.__common: 0x18
-
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   Functions: 1700
 -  Symbols:   3148
 -  CStrings:  1411
 +  Symbols:   3158
 +  CStrings:  1555
- 
 Symbols:
 + ___der_key_state_abs_last_mesa_auth
 + ___der_key_state_abs_last_mesa_unlock

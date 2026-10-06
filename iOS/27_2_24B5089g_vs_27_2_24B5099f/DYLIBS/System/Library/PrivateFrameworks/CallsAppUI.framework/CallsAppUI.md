@@ -2,87 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/CallsAppUI.framework/CallsAppUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x104f04` | `0x107fac` | **`+0x30a8`** |
+| `__AUTH_CONST.__const` | `0x5c90` | `0x5f30` | **`+0x2a0`** |
+| `__TEXT.__swift5_typeref` | `0xe95e` | `0xeb60` | **`+0x202`** |
+| `__TEXT.__eh_frame` | `0x3d80` | `0x3f28` | **`+0x1a8`** |
+| `__TEXT.__const` | `0x8af4` | `0x8bf4` | **`+0x100`** |
+| `__TEXT.__swift5_capture` | `0x2268` | `0x2354` | **`+0xec`** |
+| `__TEXT.__swift5_reflstr` | `0x2b3c` | `0x2c1c` | **`+0xe0`** |
+| `__DATA.__data` | `0x2d28` | `0x2de8` | **`+0xc0`** |
+| `__TEXT.__unwind_info` | `0x3738` | `0x37e8` | **`+0xb0`** |
+| `__TEXT.__swift5_fieldmd` | `0x233c` | `0x23d4` | **`+0x98`** |
+| `__TEXT.__oslogstring` | `0x19a4` | `0x1a34` | **`+0x90`** |
+| `__AUTH_CONST.__objc_const` | `0x81c8` | `0x8248` | **`+0x80`** |
+| `__DATA.__bss` | `0x2648` | `0x26c8` | **`+0x80`** |
+| `__AUTH_CONST.__auth_got` | `0x2b40` | `0x2b90` | **`+0x50`** |
+| `__TEXT.__constg_swiftt` | `0x41ac` | `0x41fc` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x1340` | `0x1368` | **`+0x28`** |
+| `__DATA_DIRTY.__objc_data` | `0xf70` | `0xf88` | **`+0x18`** |
+| `__TEXT.__swift_as_cont` | `0x298` | `0x2b0` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x154` | `0x168` | **`+0x14`** |
+| `__DATA_DIRTY.__data` | `0x44f0` | `0x44e0` | **`-0x10`** |
+| `__TEXT.__swift_as_entry` | `0x164` | `0x170` | **`+0xc`** |
+| `__TEXT.__swift5_mpenum` | `0x10` | `0x18` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x214` | `0x21c` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x2b8` | `0x2bc` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x108` | `0x10c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -156.200.88.2.3
--  __TEXT.__text: 0xfb8b0
 +156.200.120.0.0
-+  __TEXT.__text: 0xfe734
-   __TEXT.__objc_methlist: 0x1360
--  __TEXT.__const: 0x8af4
--  __TEXT.__constg_swiftt: 0x41ac
--  __TEXT.__swift5_typeref: 0xe95e
--  __TEXT.__swift5_reflstr: 0x2b3c
--  __TEXT.__swift5_fieldmd: 0x233c
--  __TEXT.__swift5_builtin: 0x154
-+  __TEXT.__const: 0x8bf4
-+  __TEXT.__constg_swiftt: 0x41fc
-+  __TEXT.__swift5_typeref: 0xeb60
-+  __TEXT.__swift5_reflstr: 0x2c1c
-+  __TEXT.__swift5_fieldmd: 0x23d4
-+  __TEXT.__swift5_builtin: 0x168
-   __TEXT.__swift5_assocty: 0x728
-   __TEXT.__cstring: 0x1bfb
--  __TEXT.__swift5_proto: 0x2b8
--  __TEXT.__swift5_types: 0x214
--  __TEXT.__swift5_capture: 0x2268
--  __TEXT.__oslogstring: 0x19a4
-+  __TEXT.__swift5_proto: 0x2bc
-+  __TEXT.__swift5_types: 0x21c
-+  __TEXT.__swift5_capture: 0x2354
-+  __TEXT.__oslogstring: 0x1a34
-   __TEXT.__swift5_protos: 0x58
--  __TEXT.__swift_as_entry: 0x164
--  __TEXT.__swift_as_ret: 0x108
--  __TEXT.__swift_as_cont: 0x298
--  __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x4338
--  __TEXT.__eh_frame: 0x3d80
-+  __TEXT.__swift_as_entry: 0x170
-+  __TEXT.__swift_as_ret: 0x10c
-+  __TEXT.__swift_as_cont: 0x2b0
-+  __TEXT.__swift5_mpenum: 0x18
-+  __TEXT.__unwind_info: 0x43f8
-+  __TEXT.__eh_frame: 0x3f28
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x1688
-   __DATA_CONST.__objc_protorefs: 0xe8
--  __DATA_CONST.__got: 0x1340
--  __AUTH_CONST.__const: 0x5c90
--  __AUTH_CONST.__objc_const: 0x81c8
--  __AUTH_CONST.__auth_got: 0x2b40
-+  __DATA_CONST.__got: 0x1368
-+  __AUTH_CONST.__const: 0x5f30
-+  __AUTH_CONST.__objc_const: 0x8248
-+  __AUTH_CONST.__auth_got: 0x2b90
-   __AUTH.__objc_data: 0x1af0
-   __AUTH.__data: 0x17b8
--  __DATA.__data: 0x2d28
-+  __DATA.__data: 0x2de8
-   __DATA.__objc_stublist: 0x8
-   __DATA.__common: 0x190
--  __DATA_DIRTY.__objc_data: 0xf70
--  __DATA_DIRTY.__data: 0x44f0
-+  __DATA_DIRTY.__objc_data: 0xf88
-+  __DATA_DIRTY.__data: 0x44e0
-   __DATA_DIRTY.__bss: 0x2d00
-   __DATA_DIRTY.__common: 0xf8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5087
 -  Symbols:   2325
 -  CStrings:  293
 +  Functions: 5137
 +  Symbols:   2341
 +  CStrings:  295
- 
 Symbols:
 + _OBJC_CLASS_$_UIDeferredMenuElement
 + ___swift_closure_destructor.151Tm

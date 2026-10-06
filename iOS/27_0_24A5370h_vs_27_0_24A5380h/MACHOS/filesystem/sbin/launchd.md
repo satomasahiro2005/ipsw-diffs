@@ -2,87 +2,55 @@
 
 > `/sbin/launchd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x590f0` | `0x5a1b8` | **`+0x10c8`** |
+| `__TEXT.__config` | `0x2de8` | `0x2a71` | **`-0x377`** |
+| `__TEXT.__cstring` | `0x1626f` | `0x1648e` | **`+0x21f`** |
+| `__TEXT.__oslogstring` | `—` | `0xd5` | **`+0xd5`** |
+| `__TEXT.__gcc_except_tab` | `—` | `0xa8` | **`+0xa8`** |
+| `__DATA_CONST.__const` | `0x58f8` | `0x5998` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x1068` | `0x10f8` | **`+0x90`** |
+| `__TEXT.__auth_stubs` | `0x2650` | `0x26c0` | **`+0x70`** |
+| `__DATA_CONST.__auth_got` | `0x1328` | `0x1368` | **`+0x40`** |
+| `__TEXT.__const` | `0x4f0` | `0x500` | **`+0x10`** |
+| `__DATA.__common` | `0x7f8` | `0x7f0` | **`-0x8`** |
+| `__DATA.__data` | `0xac0` | `0xac8` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x208` | `0x210` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA.__os_assumes_log`
+- `__DATA_CONST.__auth_ptr`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__dof_launchd`
+- `__TEXT.__eh_frame`
+- `__TEXT.__init_offsets`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x590f0
--  __TEXT.__auth_stubs: 0x2650
-+  __TEXT.__text: 0x5a1b8
-+  __TEXT.__auth_stubs: 0x26c0
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__objc_methlist: 0x20c
--  __TEXT.__const: 0x4f0
-+  __TEXT.__const: 0x500
-   __TEXT.__launchd: 0x1
-   __TEXT.__constg_swiftt: 0xf8
-   __TEXT.__swift5_typeref: 0x5e
+-3298.0.4.502.1
++3298.0.10.0.0
 
-   __TEXT.__swift5_fieldmd: 0x60
-   __TEXT.__swift5_proto: 0x8
-   __TEXT.__swift5_types: 0xc
--  __TEXT.__cstring: 0x1626f
-+  __TEXT.__cstring: 0x1648e
-   __TEXT.__swift5_capture: 0x14
-   __TEXT.__objc_methtype: 0xf
-   __TEXT.__objc_classname: 0x212
-   __TEXT.__objc_methname: 0x1c
--  __TEXT.__config: 0x2de8
-+  __TEXT.__gcc_except_tab: 0xa8
-+  __TEXT.__oslogstring: 0xd5
-+  __TEXT.__config: 0x2a71
-   __TEXT.__dof_launchd: 0x67c
--  __TEXT.__unwind_info: 0x1068
-+  __TEXT.__unwind_info: 0x10f8
-   __TEXT.__eh_frame: 0x210
--  __DATA_CONST.__const: 0x58f8
-+  __DATA_CONST.__const: 0x5998
-   __DATA_CONST.__objc_classlist: 0xc0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0xb0
--  __DATA_CONST.__auth_got: 0x1328
--  __DATA_CONST.__got: 0x208
-+  __DATA_CONST.__auth_got: 0x1368
-+  __DATA_CONST.__got: 0x210
-   __DATA_CONST.__auth_ptr: 0x98
-   __DATA.__objc_const: 0xdf0
-   __DATA.__objc_selrefs: 0x8
-   __DATA.__objc_data: 0x6e0
--  __DATA.__data: 0xac0
-+  __DATA.__data: 0xac8
-   __DATA.__os_assumes_log: 0x8
-   __DATA.__crash_info: 0x148
-   __DATA.__bss: 0xdd8
--  __DATA.__common: 0x7f8
-+  __DATA.__common: 0x7f0
-   - /usr/lib/libSystem.B.dylib
 +  - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsandbox.1.dylib
-   - /usr/lib/swift/libswiftCore.dylib
 
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
 -  Functions: 1452
 -  Symbols:   697
--  CStrings:  2787
+-  CStrings:  2785
 +  Functions: 1472
 +  Symbols:   706
-+  CStrings:  2807
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__dof_launchd : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__os_assumes_log : content changed
++  CStrings:  2805
 Symbols:
 + __Unwind_Resume
 + __ZSt9terminatev
@@ -148,5 +116,4 @@ CStrings:
 - "v32@?0^{_launch_service_s={_launch_object_s=^vB}^{_launch_service_static_s}{?={?=^{_launch_service_s}^^{_launch_service_s}}{?=^{_launch_service_s}^^{_launch_service_s}{qm_trace=*i*i}}{?=^{_launch_service_s}^^{_launch_service_s}}{?=^{_launch_service_s}^^{_launch_service_s}}{?=^{_launch_service_s}^^{_launch_service_s}}}{?={?=^{_launch_event_subscription_s}}{?=^{_launch_event_provider_s}}{?=^{_launch_endpoint_s}}{?=^{_launch_endpoint_s}}{?=^{_launch_endpoint_s}}{?=^{_launch_endpoint_s}}{?=^{_launch_endpoint_s}}{?=^{_launch_socket_s}}{_instances_s=^{_launch_service_s}^^{_launch_service_s}{qm_trace=*i*i}}^{_launch_domain_s}^{_launch_service_s}II^v^{dispatch_group_s}iiis*^{_launch_coalition_s}^{_launch_coalition_s}^{dispatch_group_s}^{dispatch_group_s}^{_launch_job_s}ICiib1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}{?={_xpc_token_s=IIIIIiii}[16C]CI^*****^v^v*^v^v{?=^{_launch_pended_request_s}}{_launch_service_delegate_s=^?^?^?^?^?^?^v}**Q*I^v^v^v^v^v^v{?=^{_launch_service_semaphore_s}}{?=^{_launch_service_rlimit_s}}[3i]Iii^{dispatch_source_s}II[16I]i**SQi^{dispatch_source_s}II^{_launch_diagnostic_thread_s}^{dispatch_source_s}^{dispatch_source_s}II^{dispatch_source_s}I*II^{?}IiiiiiQIIIIIIII^{_launch_jetsam_stats_s}CQQ{?=^{_launch_envvar_s}}sCIISCIQ{_launch_throttle_stats_s=BBIQ^v^v{_launch_exit_status_s=C{proc_exitreasonbasicinfo=IQQI}iQQb1b1b1}}IC{?=*Qiiii^{dispatch_source_s}^{dispatch_source_s}SSb8b4b20CSib1b1b1b1b1b1b1b1b1b1b1b1b1}{_launch_exit_status_s=C{proc_exitreasonbasicinfo=IQQI}iQQb1b1b1}{?=*^v*^v^{?}I^viisb1b1b1b1b1b1b1C}^{_launch_attribution_node_s}ICIIC**^{_os_opaque_64_map_s}b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}[0c]}8*16^{_launch_lint_s=@?*B}24"
 - "v32@?0^{_launch_service_s={_launch_object_s=^vB}^{_launch_service_static_s}{?={?=^{_launch_service_s}^^{_launch_service_s}}{?=^{_launch_service_s}^^{_launch_service_s}{qm_trace=*i*i}}{?=^{_launch_service_s}^^{_launch_service_s}}{?=^{_launch_service_s}^^{_launch_service_s}}{?=^{_launch_service_s}^^{_launch_service_s}}}{?={?=^{_launch_event_subscription_s}}{?=^{_launch_event_provider_s}}{?=^{_launch_endpoint_s}}{?=^{_launch_endpoint_s}}{?=^{_launch_endpoint_s}}{?=^{_launch_endpoint_s}}{?=^{_launch_endpoint_s}}{?=^{_launch_socket_s}}{_instances_s=^{_launch_service_s}^^{_launch_service_s}{qm_trace=*i*i}}^{_launch_domain_s}^{_launch_service_s}II^v^{dispatch_group_s}iiis*^{_launch_coalition_s}^{_launch_coalition_s}^{dispatch_group_s}^{dispatch_group_s}^{_launch_job_s}ICiib1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}{?={_xpc_token_s=IIIIIiii}[16C]CI^*****^v^v*^v^v{?=^{_launch_pended_request_s}}{_launch_service_delegate_s=^?^?^?^?^?^?^v}**Q*I^v^v^v^v^v^v{?=^{_launch_service_semaphore_s}}{?=^{_launch_service_rlimit_s}}[3i]Iii^{dispatch_source_s}II[16I]i**SQi^{dispatch_source_s}II^{_launch_diagnostic_thread_s}^{dispatch_source_s}^{dispatch_source_s}II^{dispatch_source_s}I*II^{?}IiiiiiQIIIIIIII^{_launch_jetsam_stats_s}CQQ{?=^{_launch_envvar_s}}sCIISCIQ{_launch_throttle_stats_s=BBIQ^v^v{_launch_exit_status_s=C{proc_exitreasonbasicinfo=IQQI}iQQb1b1b1}}IC{?=*Qiiii^{dispatch_source_s}^{dispatch_source_s}SSb8b4b20CSib1b1b1b1b1b1b1b1b1b1b1b1b1}{_launch_exit_status_s=C{proc_exitreasonbasicinfo=IQQI}iQQb1b1b1}{?=*^v*^v^{?}I^viisb1b1b1b1b1b1b1C}^{_launch_attribution_node_s}ICIIC**^{_os_opaque_64_map_s}b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}[0c]}8^v16^{_launch_lint_s=@?*B}24"
 - "v32@?0^{_launch_service_s={_launch_object_s=^vB}^{_launch_service_static_s}{?={?=^{_launch_service_s}^^{_launch_service_s}}{?=^{_launch_service_s}^^{_launch_service_s}{qm_trace=*i*i}}{?=^{_launch_service_s}^^{_launch_service_s}}{?=^{_launch_service_s}^^{_launch_service_s}}{?=^{_launch_service_s}^^{_launch_service_s}}}{?={?=^{_launch_event_subscription_s}}{?=^{_launch_event_provider_s}}{?=^{_launch_endpoint_s}}{?=^{_launch_endpoint_s}}{?=^{_launch_endpoint_s}}{?=^{_launch_endpoint_s}}{?=^{_launch_endpoint_s}}{?=^{_launch_socket_s}}{_instances_s=^{_launch_service_s}^^{_launch_service_s}{qm_trace=*i*i}}^{_launch_domain_s}^{_launch_service_s}II^v^{dispatch_group_s}iiis*^{_launch_coalition_s}^{_launch_coalition_s}^{dispatch_group_s}^{dispatch_group_s}^{_launch_job_s}ICiib1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}{?={_xpc_token_s=IIIIIiii}[16C]CI^*****^v^v*^v^v{?=^{_launch_pended_request_s}}{_launch_service_delegate_s=^?^?^?^?^?^?^v}**Q*I^v^v^v^v^v^v{?=^{_launch_service_semaphore_s}}{?=^{_launch_service_rlimit_s}}[3i]Iii^{dispatch_source_s}II[16I]i**SQi^{dispatch_source_s}II^{_launch_diagnostic_thread_s}^{dispatch_source_s}^{dispatch_source_s}II^{dispatch_source_s}I*II^{?}IiiiiiQIIIIIIII^{_launch_jetsam_stats_s}CQQ{?=^{_launch_envvar_s}}sCIISCIQ{_launch_throttle_stats_s=BBIQ^v^v{_launch_exit_status_s=C{proc_exitreasonbasicinfo=IQQI}iQQb1b1b1}}IC{?=*Qiiii^{dispatch_source_s}^{dispatch_source_s}SSb8b4b20CSib1b1b1b1b1b1b1b1b1b1b1b1b1}{_launch_exit_status_s=C{proc_exitreasonbasicinfo=IQQI}iQQb1b1b1}{?=*^v*^v^{?}I^viisb1b1b1b1b1b1b1C}^{_launch_attribution_node_s}ICIIC**^{_os_opaque_64_map_s}b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}[0c]}8q16^{_launch_lint_s=@?*B}24"
-
 ```

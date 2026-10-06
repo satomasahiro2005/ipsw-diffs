@@ -2,84 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/HomeUICommon.framework/HomeUICommon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x34b64` | `0x34790` | **`-0x3d4`** |
+| `__DATA_DIRTY.__data` | `0x480` | `0x3a0` | **`-0xe0`** |
+| `__TEXT.__eh_frame` | `0x748` | `0x7e8` | **`+0xa0`** |
+| `__TEXT.__swift5_typeref` | `0x19c6` | `0x192a` | **`-0x9c`** |
+| `__AUTH.__data` | `0xb20` | `0xba8` | **`+0x88`** |
+| `__DATA_DIRTY.__bss` | `0x460` | `0x3e0` | **`-0x80`** |
+| `__DATA.__bss` | `0xfa8` | `0x1008` | **`+0x60`** |
+| `__DATA.__data` | `0xb78` | `0xbd8` | **`+0x60`** |
+| `__TEXT.__oslogstring` | `0x9dd` | `0x99d` | **`-0x40`** |
+| `__TEXT.__const` | `0x1c78` | `0x1c48` | **`-0x30`** |
+| `__AUTH_CONST.__auth_got` | `0xf88` | `0xfa0` | **`+0x18`** |
+| `__DATA_CONST.__const` | `0x528` | `0x518` | **`-0x10`** |
+| `__TEXT.__swift5_reflstr` | `0xc7b` | `0xc6b` | **`-0x10`** |
+| `__TEXT.__swift_as_cont` | `0x44` | `0x4c` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0xdc8` | `0xdd0` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x18` | `0x1c` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x10` | `0x14` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1238.0.0.0.0
--  __TEXT.__text: 0x34b64
 +1241.1.7.1.2
-+  __TEXT.__text: 0x34790
-   __TEXT.__objc_methlist: 0xe6c
--  __TEXT.__const: 0x1c78
--  __TEXT.__swift5_typeref: 0x19c6
--  __TEXT.__swift5_reflstr: 0xc7b
-+  __TEXT.__const: 0x1c48
-+  __TEXT.__swift5_typeref: 0x192a
-+  __TEXT.__swift5_reflstr: 0xc6b
-   __TEXT.__swift5_assocty: 0x208
-   __TEXT.__constg_swiftt: 0xdd8
-   __TEXT.__swift5_fieldmd: 0xb04
 
-   __TEXT.__swift5_types: 0x8c
-   __TEXT.__cstring: 0x288c
-   __TEXT.__swift5_capture: 0x208
--  __TEXT.__swift_as_entry: 0x18
--  __TEXT.__swift_as_ret: 0x10
--  __TEXT.__swift_as_cont: 0x44
--  __TEXT.__oslogstring: 0x9dd
-+  __TEXT.__swift_as_entry: 0x1c
-+  __TEXT.__swift_as_ret: 0x14
-+  __TEXT.__swift_as_cont: 0x4c
-+  __TEXT.__oslogstring: 0x99d
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__gcc_except_tab: 0x50
--  __TEXT.__unwind_info: 0xdc8
--  __TEXT.__eh_frame: 0x748
-+  __TEXT.__unwind_info: 0xdd0
-+  __TEXT.__eh_frame: 0x7e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x528
-+  __DATA_CONST.__const: 0x518
-   __DATA_CONST.__objc_classlist: 0xd0
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x60
-
-   __AUTH_CONST.__cfstring: 0xa00
-   __AUTH_CONST.__objc_const: 0x1e60
-   __AUTH_CONST.__objc_intobj: 0x30
--  __AUTH_CONST.__auth_got: 0xf88
-+  __AUTH_CONST.__auth_got: 0xfa0
-   __AUTH.__objc_data: 0x5f8
--  __AUTH.__data: 0xb20
-+  __AUTH.__data: 0xba8
-   __DATA.__objc_ivar: 0x88
--  __DATA.__data: 0xb78
--  __DATA.__bss: 0xfa8
-+  __DATA.__data: 0xbd8
-+  __DATA.__bss: 0x1008
-   __DATA.__common: 0x20
-   __DATA_DIRTY.__objc_ivar: 0x4c
-   __DATA_DIRTY.__objc_data: 0x3e8
--  __DATA_DIRTY.__data: 0x480
--  __DATA_DIRTY.__bss: 0x460
-+  __DATA_DIRTY.__data: 0x3a0
-+  __DATA_DIRTY.__bss: 0x3e0
-   __DATA_DIRTY.__common: 0x18
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1221
 +  Functions: 1214
-   Symbols:   1577
+
 -  CStrings:  342
 +  CStrings:  341
- 
 Symbols:
 + _associated conformance 12HomeUICommon0A26EnergyDashboardContentViewV7SwiftUI0F0AA4BodyAdEP_AdE
 + _get_witness_table 7SwiftUI16SubscriptionViewVySo20NSNotificationCenterC10FoundationE9PublisherVAA15ModifiedContentVyAA6VStackVyAA05TupleJ0VyAJyALyANy010HomeEnergyB0015GridForecastAppD0V_AJyAA0D0PAAE12onTapGesture5count7performQrSi_yyctFQOyAO18InlineEducationTipV_Qo_AA25_AppearanceActionModifierVGSgQPGGA_GSg_AO020UtilityUsageAndRatesD0VSgQPGGA_GGAaRHPyHC

@@ -2,80 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/CoreSuggestions.framework/CoreSuggestions`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH.__objc_data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8e458` | `0x8e4ac` | **`+0x54`** |
+| `__AUTH_CONST.__cfstring` | `0xa780` | `0xa7a0` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x7d94` | `0x7db2` | **`+0x1e`** |
+| `__DATA.__bss` | `0x348` | `0x350` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4198` | `0x41a0` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0xa09c` | `0xa0a4` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -1337.0.0.0.0
--  __TEXT.__text: 0x8e458
--  __TEXT.__objc_methlist: 0xa09c
 +1341.0.0.0.0
-+  __TEXT.__text: 0x8e4ac
-+  __TEXT.__objc_methlist: 0xa0a4
-   __TEXT.__const: 0x858
-   __TEXT.__dlopen_cstrs: 0x74
-   __TEXT.__gcc_except_tab: 0x6ec
--  __TEXT.__cstring: 0x7d94
-+  __TEXT.__cstring: 0x7db2
-   __TEXT.__oslogstring: 0x273d
-   __TEXT.__ustring: 0x4
-   __TEXT.__unwind_info: 0x2240
 
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x180
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4198
-+  __DATA_CONST.__objc_selrefs: 0x41a0
-   __DATA_CONST.__objc_protorefs: 0x70
-   __DATA_CONST.__objc_superrefs: 0x470
-   __DATA_CONST.__objc_arraydata: 0x2b0
-   __DATA_CONST.__got: 0x748
-   __AUTH_CONST.__const: 0x5a0
--  __AUTH_CONST.__cfstring: 0xa780
-+  __AUTH_CONST.__cfstring: 0xa7a0
-   __AUTH_CONST.__objc_const: 0xebb8
-   __AUTH_CONST.__objc_intobj: 0x138
-   __AUTH_CONST.__objc_dictobj: 0x140
-
-   __AUTH.__objc_data: 0x1e0
-   __DATA.__objc_ivar: 0x8f4
-   __DATA.__data: 0x1210
--  __DATA.__bss: 0x348
-+  __DATA.__bss: 0x350
-   __DATA_DIRTY.__objc_data: 0x2ee0
-   __DATA_DIRTY.__data: 0x100
-   __DATA_DIRTY.__bss: 0x110
-
-   - /System/Library/PrivateFrameworks/TCC.framework/TCC
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 3431
--  Symbols:   7649
+-  Symbols:   6410
 -  CStrings:  1658
 +  Functions: 3432
-+  Symbols:   7651
++  Symbols:   6412
 +  CStrings:  1659
- 
 Symbols:
 + +[SGEntityTag eventNotAutoAddableToCalendar]
 + GCC_except_table1010

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ReminderKit.framework/ReminderKit`
 
-```diff
+### Section Size Changes
 
- 4046.11.0.0.0
--  __TEXT.__text: 0x13bfbc
-+  __TEXT.__text: 0x13bfac
-   __TEXT.__objc_methlist: 0x15c10
-   __TEXT.__const: 0x1717
-   __TEXT.__oslogstring: 0x11bbc
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x13bfbc` | `0x13bfac` | **`-0x10`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _OUTLINED_FUNCTION_17 : 20 -> 12
 ~ _OUTLINED_FUNCTION_18 : 12 -> 20

@@ -2,97 +2,40 @@
 
 > `/System/Library/Frameworks/CoreAudio.framework/CoreAudio`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x53c520` | `0x54233c` | **`+0x5e1c`** |
+| `__TEXT.__oslogstring` | `0x4239b` | `0x42eec` | **`+0xb51`** |
+| `__TEXT.__gcc_except_tab` | `0x5805c` | `0x58754` | **`+0x6f8`** |
+| `__TEXT.__cstring` | `0x315c1` | `0x31be2` | **`+0x621`** |
+| `__AUTH_CONST.__const` | `0x33e30` | `0x34328` | **`+0x4f8`** |
+| `__TEXT.__realtime` | `0x28d24` | `0x29120` | **`+0x3fc`** |
+| `__TEXT.__const` | `0x55b40` | `0x55ed0` | **`+0x390`** |
+| `__TEXT.__unwind_info` | `0x19410` | `0x19680` | **`+0x270`** |
+| `__AUTH_CONST.__cfstring` | `0x4140` | `0x4240` | **`+0x100`** |
+| `__DATA.__bss` | `0x4070` | `0x4130` | **`+0xc0`** |
+| `__TEXT.__dlopen_cstrs` | `—` | `0x6d` | **`+0x6d`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb78` | `0xbc8` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x15d8` | `0x1600` | **`+0x28`** |
+| `__AUTH.__thread_vars` | `—` | `0x18` | **`+0x18`** |
+| `__DATA_CONST.__const` | `0x66e0` | `0x66d8` | **`-0x8`** |
+| `__AUTH.__thread_bss` | `—` | `0x4` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -477.2.2.0.0
--  __TEXT.__text: 0x53c520
--  __TEXT.__realtime: 0x28d24
 +481.0.0.0.0
-+  __TEXT.__text: 0x54233c
-+  __TEXT.__realtime: 0x29120
-   __TEXT.__delay_stubs: 0x780
-   __TEXT.__delay_helper: 0x148
-   __TEXT.__objc_methlist: 0x175c
--  __TEXT.__const: 0x55b40
--  __TEXT.__cstring: 0x315c1
--  __TEXT.__gcc_except_tab: 0x5805c
--  __TEXT.__oslogstring: 0x4239b
--  __TEXT.__unwind_info: 0x19410
-+  __TEXT.__const: 0x55ed0
-+  __TEXT.__cstring: 0x31be2
-+  __TEXT.__dlopen_cstrs: 0x6d
-+  __TEXT.__gcc_except_tab: 0x58754
-+  __TEXT.__oslogstring: 0x42eec
-+  __TEXT.__unwind_info: 0x19680
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x66e0
-+  __DATA_CONST.__const: 0x66d8
-   __DATA_CONST.__objc_classlist: 0xc0
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x20
--  __DATA_CONST.__objc_selrefs: 0xb78
-+  __DATA_CONST.__objc_selrefs: 0xbc8
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__objc_superrefs: 0x88
-   __DATA_CONST.__objc_arraydata: 0x60
-   __DATA_CONST.__got: 0x420
--  __AUTH_CONST.__const: 0x33e30
--  __AUTH_CONST.__cfstring: 0x4140
-+  __AUTH_CONST.__const: 0x34328
-+  __AUTH_CONST.__cfstring: 0x4240
-   __AUTH_CONST.__objc_const: 0x28e8
-   __AUTH_CONST.__weak_auth_got: 0x48
-   __AUTH_CONST.__objc_intobj: 0x18
-   __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__auth_got: 0x15d8
-+  __AUTH_CONST.__auth_got: 0x1600
-   __AUTH.__data: 0x120
-+  __AUTH.__thread_vars: 0x18
-+  __AUTH.__thread_bss: 0x4
-   __DATA.__objc_ivar: 0x168
-   __DATA.__data: 0x778
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x4070
-+  __DATA.__bss: 0x4130
-   __DATA_DIRTY.__objc_data: 0x780
-   __DATA_DIRTY.__data: 0x168
-   __DATA_DIRTY.__bss: 0x164c
 
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 19017
--  Symbols:   35212
+-  Symbols:   34936
 -  CStrings:  7000
 +  Functions: 19114
-+  Symbols:   35418
++  Symbols:   35132
 +  CStrings:  7066
- 
 Symbols:
 + GCC_except_table10004
 + GCC_except_table10019
@@ -3525,16 +3468,6 @@ Symbols:
 + __tlv_bootstrap
 + _dispatch_queue_get_label
 + _objc_getClass
-+ _objc_msgSend$createDraft:forProcessNamed:withDisplayReason:completionHandler:
-+ _objc_msgSend$handleFailureInFunction:file:lineNumber:description:
-+ _objc_msgSend$initWithName:version:identifier:
-+ _objc_msgSend$setClassification:
-+ _objc_msgSend$setComponent:
-+ _objc_msgSend$setProblemDescription:
-+ _objc_msgSend$setReproducibility:
-+ _objc_msgSend$setTitle:
-+ _objc_msgSend$shared
-+ _objc_msgSend$stringWithCString:encoding:
 - GCC_except_table10006
 - GCC_except_table10007
 - GCC_except_table10008

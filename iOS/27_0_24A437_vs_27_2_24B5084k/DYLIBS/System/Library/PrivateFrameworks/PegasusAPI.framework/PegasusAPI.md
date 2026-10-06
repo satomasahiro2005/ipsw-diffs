@@ -2,78 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/PegasusAPI.framework/PegasusAPI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc110ec` | `0xc7fd1c` | **`+0x6ec30`** |
+| `__TEXT.__eh_frame` | `0x737a8` | `0x77d38` | **`+0x4590`** |
+| `__TEXT.__unwind_info` | `0x55a28` | `0x57ea0` | **`+0x2478`** |
+| `__TEXT.__const` | `0x1101a8` | `0x112188` | **`+0x1fe0`** |
+| `__AUTH_CONST.__objc_const` | `0x22140` | `0x23af8` | **`+0x19b8`** |
+| `__TEXT.__swift5_reflstr` | `0x32375` | `0x33a05` | **`+0x1690`** |
+| `__DATA_DIRTY.__data` | `0x5c250` | `0x5d780` | **`+0x1530`** |
+| `__DATA.__bss` | `0x153080` | `0x154580` | **`+0x1500`** |
+| `__TEXT.__constg_swiftt` | `0x2cce8` | `0x2e118` | **`+0x1430`** |
+| `__DATA_CONST.__const` | `0x141d0` | `0x14e70` | **`+0xca0`** |
+| `__TEXT.__swift5_fieldmd` | `0x34ee8` | `0x35a00` | **`+0xb18`** |
+| `__DATA.__data` | `0x271d8` | `0x27a90` | **`+0x8b8`** |
+| `__AUTH.__data` | `0xc690` | `0xcdf8` | **`+0x768`** |
+| `__TEXT.__swift5_typeref` | `0x192c5` | `0x1942f` | **`+0x16a`** |
+| `__AUTH_CONST.__const` | `0x236e8` | `0x237e8` | **`+0x100`** |
+| `__TEXT.__cstring` | `0x10240` | `0x10340` | **`+0x100`** |
+| `__TEXT.__swift5_proto` | `0xb3e0` | `0xb488` | **`+0xa8`** |
+| `__AUTH.__objc_data` | `0xa0` | `0xf0` | **`+0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x33e0` | `0x3390` | **`-0x50`** |
+| `__TEXT.__swift5_assocty` | `0x5250` | `0x5280` | **`+0x30`** |
+| `__TEXT.__swift5_types` | `0x2264` | `0x2284` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x5f8` | `0x600` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.56.26.11.2
--  __TEXT.__text: 0xbd095c
--  __TEXT.__const: 0x1101a8
--  __TEXT.__constg_swiftt: 0x2cce8
--  __TEXT.__swift5_typeref: 0x192c5
--  __TEXT.__swift5_fieldmd: 0x34ee8
--  __TEXT.__swift5_types: 0x2264
--  __TEXT.__swift5_reflstr: 0x32375
--  __TEXT.__swift5_proto: 0xb3e0
--  __TEXT.__swift5_assocty: 0x5250
--  __TEXT.__cstring: 0x10240
 +3605.21.1.1.1
-+  __TEXT.__text: 0xc3cc64
-+  __TEXT.__const: 0x112188
-+  __TEXT.__swift5_typeref: 0x1942f
-+  __TEXT.__swift5_reflstr: 0x33a05
-+  __TEXT.__swift5_assocty: 0x5280
-+  __TEXT.__constg_swiftt: 0x2e118
-+  __TEXT.__swift5_fieldmd: 0x35a00
-+  __TEXT.__swift5_proto: 0xb488
-+  __TEXT.__swift5_types: 0x2284
-+  __TEXT.__cstring: 0x10340
-   __TEXT.__swift5_builtin: 0x12c
-   __TEXT.__swift5_mpenum: 0x80
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__unwind_info: 0x66150
--  __TEXT.__eh_frame: 0x737a8
-+  __TEXT.__unwind_info: 0x68ac0
-+  __TEXT.__eh_frame: 0x77d38
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x141d0
--  __DATA_CONST.__objc_classlist: 0x5f8
-+  __DATA_CONST.__const: 0x14e70
-+  __DATA_CONST.__objc_classlist: 0x600
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x40
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x236e8
--  __AUTH_CONST.__objc_const: 0x22140
-+  __AUTH_CONST.__const: 0x237e8
-+  __AUTH_CONST.__objc_const: 0x23af8
-   __AUTH_CONST.__auth_got: 0x830
--  __AUTH.__objc_data: 0xa0
--  __AUTH.__data: 0xc690
--  __DATA.__data: 0x271d8
--  __DATA_DIRTY.__objc_data: 0x33e0
--  __DATA_DIRTY.__data: 0x5c250
-+  __AUTH.__objc_data: 0xf0
-+  __AUTH.__data: 0xcdf8
-+  __DATA.__data: 0x27a90
-+  __DATA_DIRTY.__objc_data: 0x3390
-+  __DATA_DIRTY.__data: 0x5d780
-   __DATA_DIRTY.__bss: 0x14880
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf
 
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
--  Functions: 133185
--  Symbols:   15663
+-  Functions: 133186
+-  Symbols:   15655
 -  CStrings:  1386
-+  Functions: 135410
-+  Symbols:   15713
++  Functions: 135411
++  Symbols:   15705
 +  CStrings:  1391
- 
 Symbols:
 + __DATA__TtCV10PegasusAPI23Geopb_StructuredAddressP33_ED2D6EE4388E1EEB90A8D4C7BB98BC4313_StorageClass
 + __DATA__TtCV10PegasusAPI66Apple_Parsec_Sam_V1alpha_StandardRepresentations_Video_VideoResultP33_E4A2175809744ABB03FC10328E28F24E13_StorageClass

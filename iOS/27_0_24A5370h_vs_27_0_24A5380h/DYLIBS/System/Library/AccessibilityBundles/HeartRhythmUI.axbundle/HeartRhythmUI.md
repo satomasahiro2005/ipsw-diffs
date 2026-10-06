@@ -2,59 +2,34 @@
 
 > `/System/Library/AccessibilityBundles/HeartRhythmUI.axbundle/HeartRhythmUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1664` | `0xfb0` | **`-0x6b4`** |
+| `__AUTH_CONST.__objc_const` | `0x1050` | `0xab0` | **`-0x5a0`** |
+| `__DATA_DIRTY.__objc_data` | `0x910` | `0x5f0` | **`-0x320`** |
+| `__TEXT.__cstring` | `0x74e` | `0x555` | **`-0x1f9`** |
+| `__TEXT.__objc_methlist` | `0x46c` | `0x2fc` | **`-0x170`** |
+| `__AUTH_CONST.__cfstring` | `0x640` | `0x4e0` | **`-0x160`** |
+| `__DATA_CONST.__objc_classlist` | `0xe8` | `0x98` | **`-0x50`** |
+| `__TEXT.__unwind_info` | `0x128` | `0xe8` | **`-0x40`** |
+| `__DATA_CONST.__objc_superrefs` | `0x60` | `0x38` | **`-0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0x138` | `0x128` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1664
--  __TEXT.__objc_methlist: 0x46c
-+  __TEXT.__text: 0xfb0
-+  __TEXT.__objc_methlist: 0x2fc
-   __TEXT.__const: 0x8
-   __TEXT.__gcc_except_tab: 0x28
--  __TEXT.__cstring: 0x74e
--  __TEXT.__unwind_info: 0x128
-+  __TEXT.__cstring: 0x555
-+  __TEXT.__unwind_info: 0xe8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x90
--  __DATA_CONST.__objc_classlist: 0xe8
-+  __DATA_CONST.__objc_classlist: 0x98
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x138
--  __DATA_CONST.__objc_superrefs: 0x60
-+  __DATA_CONST.__objc_selrefs: 0x128
-+  __DATA_CONST.__objc_superrefs: 0x38
-   __DATA_CONST.__got: 0x68
-   __AUTH_CONST.__const: 0x60
--  __AUTH_CONST.__cfstring: 0x640
--  __AUTH_CONST.__objc_const: 0x1050
-+  __AUTH_CONST.__cfstring: 0x4e0
-+  __AUTH_CONST.__objc_const: 0xab0
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__bss: 0x10
--  __DATA_DIRTY.__objc_data: 0x910
-+  __DATA_DIRTY.__objc_data: 0x5f0
-   __DATA_DIRTY.__bss: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+-3039.1.0.0.0
++3042.0.0.0.0
 
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 76
--  Symbols:   378
--  CStrings:  108
+-  Symbols:   277
+-  CStrings:  59
 +  Functions: 55
-+  Symbols:   285
-+  CStrings:  86
- 
-Sections:
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
++  Symbols:   206
++  CStrings:  48
 Symbols:
 + GCC_except_table38
 - +[HRAtrialFibrillationIntroViewControllerAccessibility _accessibilityPerformValidations:]
@@ -129,7 +104,6 @@ Symbols:
 - __OBJC_METACLASS_RO_$___HROnboardingElectrocardiogramTakeRecordingViewControllerAccessibility_super
 - __OBJC_METACLASS_RO_$___HROnboardingHeroExplanationViewControllerAccessibility_super
 - __OBJC_METACLASS_RO_$___HRSpeedBumpViewControllerAccessibility_super
-- _objc_msgSend$validateClass:
 CStrings:
 - "HRAtrialFibrillationIntroViewController"
 - "HRAtrialFibrillationIntroViewControllerAccessibility"
@@ -142,5 +116,4 @@ CStrings:
 - "HRSpeedBumpViewController"
 - "HRSpeedBumpViewControllerAccessibility"
 - "setUpUI"
-
 ```

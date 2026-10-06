@@ -2,84 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/LocalAuthenticationCoreUI.framework/LocalAuthenticationCoreUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9b3e0` | `0x9bf00` | **`+0xb20`** |
+| `__TEXT.__swift5_typeref` | `0xfe72` | `0xff3c` | **`+0xca`** |
+| `__DATA_DIRTY.__data` | `0x2310` | `0x22b0` | **`-0x60`** |
+| `__DATA.__data` | `0x2208` | `0x2258` | **`+0x50`** |
+| `__TEXT.__const` | `0x6c84` | `0x6c44` | **`-0x40`** |
+| `__TEXT.__constg_swiftt` | `0x2270` | `0x229c` | **`+0x2c`** |
+| `__TEXT.__swift5_fieldmd` | `0x13a8` | `0x13d0` | **`+0x28`** |
+| `__AUTH_CONST.__auth_got` | `0x16c0` | `0x16d0` | **`+0x10`** |
+| `__AUTH_CONST.__const` | `0x40d0` | `0x40e0` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1d08` | `0x1d18` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x10e1` | `0x10f1` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0xda0` | `0xda8` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x3024` | `0x302c` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x27f8` | `0x2800` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2319.0.46.0.0
--  __TEXT.__text: 0x9b3e0
--  __TEXT.__objc_methlist: 0x3024
--  __TEXT.__const: 0x6c84
 +2319.0.63.0.0
-+  __TEXT.__text: 0x9bf00
-+  __TEXT.__objc_methlist: 0x302c
-+  __TEXT.__const: 0x6c44
-   __TEXT.__cstring: 0x2f46
-   __TEXT.__oslogstring: 0xe8d
-   __TEXT.__gcc_except_tab: 0x14c
--  __TEXT.__swift5_typeref: 0xfe72
--  __TEXT.__constg_swiftt: 0x2270
-+  __TEXT.__swift5_typeref: 0xff3c
-+  __TEXT.__constg_swiftt: 0x229c
-   __TEXT.__swift5_builtin: 0xdc
--  __TEXT.__swift5_reflstr: 0x10e1
--  __TEXT.__swift5_fieldmd: 0x13a8
-+  __TEXT.__swift5_reflstr: 0x10f1
-+  __TEXT.__swift5_fieldmd: 0x13d0
-   __TEXT.__swift5_assocty: 0x450
-   __TEXT.__swift5_proto: 0x198
-   __TEXT.__swift5_types: 0x178
 
-   __TEXT.__swift_as_entry: 0x54
-   __TEXT.__swift_as_ret: 0x6c
-   __TEXT.__swift_as_cont: 0x114
--  __TEXT.__unwind_info: 0x27f8
-+  __TEXT.__unwind_info: 0x2800
-   __TEXT.__eh_frame: 0x15c0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x2b0
-   __DATA_CONST.__objc_protolist: 0x220
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1d08
-+  __DATA_CONST.__objc_selrefs: 0x1d18
-   __DATA_CONST.__objc_protorefs: 0xe0
-   __DATA_CONST.__objc_superrefs: 0x138
-   __DATA_CONST.__objc_arraydata: 0x20
--  __DATA_CONST.__got: 0xda0
--  __AUTH_CONST.__const: 0x40d0
-+  __DATA_CONST.__got: 0xda8
-+  __AUTH_CONST.__const: 0x40e0
-   __AUTH_CONST.__cfstring: 0xe20
-   __AUTH_CONST.__objc_const: 0xc1e8
-   __AUTH_CONST.__objc_intobj: 0xc0
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__auth_got: 0x16c0
-+  __AUTH_CONST.__auth_got: 0x16d0
-   __AUTH.__objc_data: 0x658
-   __AUTH.__data: 0xe0
-   __DATA.__objc_ivar: 0x210
--  __DATA.__data: 0x2208
-+  __DATA.__data: 0x2258
-   __DATA.__objc_stublist: 0x10
-   __DATA.__bss: 0x20b0
-   __DATA.__common: 0x58
-   __DATA_DIRTY.__objc_data: 0x1fa0
--  __DATA_DIRTY.__data: 0x2310
-+  __DATA_DIRTY.__data: 0x22b0
-   __DATA_DIRTY.__bss: 0xd90
-   __DATA_DIRTY.__common: 0x48
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4471
--  Symbols:   11008
+-  Symbols:   10337
 +  Functions: 4490
-+  Symbols:   11049
-   CStrings:  396
- 
++  Symbols:   10376
 Symbols:
 + _$s25LocalAuthenticationCoreUI19KeypadButtonMetrics33_78DD84C298C0D03A21B74EAAABF5C184LLVMF
 + _$s25LocalAuthenticationCoreUI19KeypadButtonMetrics33_78DD84C298C0D03A21B74EAAABF5C184LLVMXX
@@ -188,8 +140,6 @@ Symbols:
 + _CGRectGetHeight
 + _CGRectGetWidth
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA4ViewPAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyACyACyAA4GridVyAA7ForEachVySaySaySo31LACUIPasscodeNumberPadCharacterVGGApCyAA0L3RowVyAMyApoCyACyACyACy023LocalAuthenticationCoreB0011LACUINumberQ6ButtonVAA12_FrameLayoutVGAA12_ScaleEffectVGAXGAA32_EnvironmentKeyTransformModifierVySbGGGGAA30_EnvironmentKeyWritingModifierVyAA0Z9DirectionOGGGGA12_GAA19_BackgroundModifierVyAT21LACUIWindowSizeReaderVGG_Qo_AA0I18AttachmentModifierVGAaDHPqd__AaDHD2_A23_HO_A25_AA0E8ModifierHPyHCHC
-+ _objc_msgSend$childViewControllers
-+ _objc_msgSend$navigationBar
 + _symbolic _____ 25LocalAuthenticationCoreUI19KeypadButtonMetrics33_78DD84C298C0D03A21B74EAAABF5C184LLV
 + _symbolic _____yAAyAAyAAy__________G_____GACG_____ySbGG 7SwiftUI15ModifiedContentV 023LocalAuthenticationCoreB020LACUINumberPadButtonV AA12_FrameLayoutV AA12_ScaleEffectV AA32_EnvironmentKeyTransformModifierV
 + _symbolic _____yAAyAAy__________G_____GACG 7SwiftUI15ModifiedContentV 023LocalAuthenticationCoreB020LACUINumberPadButtonV AA12_FrameLayoutV AA12_ScaleEffectV

@@ -2,43 +2,19 @@
 
 > `/usr/lib/libPCITransport.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1b4c4` | `0x1b514` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0xe00` | `0xe08` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1158.0.0.0.0
--  __TEXT.__text: 0x1b4c4 sha256:134f192687637c1831a084955d0f6859519873f8b7e975568a073161941988dc
--  __TEXT.__gcc_except_tab: 0x1c90 sha256:8f675f906130f3a4bee2707a354f4fc987fa6f6e2e5b0013e79f03e7f04063d2
 +1159.0.0.0.0
-+  __TEXT.__text: 0x1b514 sha256:1bfec6ee84f82dadb03b9ff36207dc114fe1a945d375f918bbb2f26b6f7736b3
-+  __TEXT.__gcc_except_tab: 0x1c90 sha256:5361d6d959d905dafaf7bec89bd7eccdd5eaf443a0c83355f92a36b94bf7718d
-   __TEXT.__const: 0xe14 sha256:638253bffdac8c0df429a8e0027c0ff0d5a3c33b088916019b80f5db827d06c8
-   __TEXT.__cstring: 0x245a sha256:543ca4724ecd3ee564eeed887a264f9e3af4f07c011e65846d349d9bc3f74edc
-   __TEXT.__oslogstring: 0x10e0 sha256:cb756442f33c8c4bc5913220620cfe04f581d7d5c3ec7ea234794bc41cd1cd8a
--  __TEXT.__unwind_info: 0xe00 sha256:cd58b0fa1b50618655a20a29bfce807530a4dd83f63a48c31aba95f29a643401
-+  __TEXT.__unwind_info: 0xe08 sha256:6244b9164dccab651c8abc3afbd95e57bc8981f8c6e41f4882f47ea9ca241003
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x900 sha256:061ee590f088c0fd7371277500a175ae8f65a49cb1a4a4ba3449ca3f0e1bd10a
--  __DATA_CONST.__weak_got: 0x10 sha256:f05da27038095e457b567c32a73020d6acc396fb3e94494518051c5ac8775e95
-+  __DATA_CONST.__const: 0x900 sha256:013ae4ba6b5ccad914ad7acd911d001bb30b2bda4db3d8e32dd3ff63d2b8ee8a
-+  __DATA_CONST.__weak_got: 0x10 sha256:6ada809e439c54a9780e3745040bf9f4c3f352cfb78dadbf47950d7dd41bdeec
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xe28 sha256:bed09418bbcb1b016dc77d8f04afde960de0dbaf3be276e03893e882123fc281
--  __AUTH_CONST.__cfstring: 0x2a0 sha256:ab32c521901627bba7a8f0eeb325aa769ac4b6a099d32d2f40321b45d228041e
--  __AUTH_CONST.__weak_auth_got: 0x18 sha256:c4f685488ee12499860f131fd37a6f4fe49fe5255e7ca8c7761452c34ebde4a0
-+  __AUTH_CONST.__const: 0xe28 sha256:d2df23fec8a76f5db99a89f4b1f573754737af6bfd41da1de281ff6f5168984e
-+  __AUTH_CONST.__cfstring: 0x2a0 sha256:90e9e85894e3f1a598366e7e3eeb3fa320177afab62b01cfee8f2425b2637eb2
-+  __AUTH_CONST.__weak_auth_got: 0x18 sha256:b896e58b37daaf2a7f592fc0e1e641ae5be291b98c2bb1bce9a8c26681571f63
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__bss: 0x40 sha256:f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b
-   __DATA_DIRTY.__bss: 0x120 sha256:2d5565fb483d8ea4525a7a9229677d1038ad34b6e22c8d5152e1d7f7b9817597
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
--  UUID: 7C5139BE-14EA-3A4C-8A32-E1AB306EF1B6
-+  UUID: F6DF22CD-C780-3D83-946D-DD540E9C98CE
-   Functions: 689
-   Symbols:   2050
-   CStrings:  483
 Symbols:
 + __ZNKSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEE4viewB9fqe220106Ev
 + __ZNKSt3__129_AllocatorDestroyRangeReverseINS_9allocatorIN3pci9transport11kernelTrace19traceCodeAttachmentEEEPS5_EclB9fqe220106Ev
@@ -82,7 +58,6 @@ Symbols:
 + __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEE15__init_buf_ptrsB9fqe220106Ev
 + __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B9fqe220106Ej
 + __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorIN3pci9transport11kernelTrace19traceCodeAttachmentENS_9allocatorIS5_EEE12emplace_backIJRKS5_EEERS5_DpOT_EUlvE_ZNS9_IJSB_EEESC_SF_EUlvE0_EEvbT_T0_
-+ __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorIN3pci9transport11kernelTrace19traceCodeAttachmentENS_9allocatorIS5_EEE12emplace_backIJRKS5_EEERS5_DpOT_EUlvE_ZNS9_IJSB_EEESC_SF_EUlvE0_EEvbT_T0_.cold.1
 + __ZNSt3__116__pad_and_outputB9fqe220106IcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_
 + __ZNSt3__119__allocate_at_leastB9fqe220106INS_9allocatorIN3pci9transport11kernelTrace19traceCodeAttachmentEEENS_16allocator_traitsIS6_EEEENS_19__allocation_resultINT0_7pointerENSA_9size_typeEEERT_m
 + __ZNSt3__119__allocate_at_leastB9fqe220106INS_9allocatorIPvEENS_16allocator_traitsIS3_EEEENS_19__allocation_resultINT0_7pointerENS7_9size_typeEEERT_m
@@ -176,7 +151,6 @@ Symbols:
 - __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEE15__init_buf_ptrsB9fqe220100Ev
 - __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B9fqe220100Ej
 - __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorIN3pci9transport11kernelTrace19traceCodeAttachmentENS_9allocatorIS5_EEE12emplace_backIJRKS5_EEERS5_DpOT_EUlvE_ZNS9_IJSB_EEESC_SF_EUlvE0_EEvbT_T0_
-- __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorIN3pci9transport11kernelTrace19traceCodeAttachmentENS_9allocatorIS5_EEE12emplace_backIJRKS5_EEERS5_DpOT_EUlvE_ZNS9_IJSB_EEESC_SF_EUlvE0_EEvbT_T0_.cold.1
 - __ZNSt3__116__pad_and_outputB9fqe220100IcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_
 - __ZNSt3__119__allocate_at_leastB9fqe220100INS_9allocatorIN3pci9transport11kernelTrace19traceCodeAttachmentEEENS_16allocator_traitsIS6_EEEENS_19__allocation_resultINT0_7pointerENSA_9size_typeEEERT_m
 - __ZNSt3__119__allocate_at_leastB9fqe220100INS_9allocatorIPvEENS_16allocator_traitsIS3_EEEENS_19__allocation_resultINT0_7pointerENS7_9size_typeEEERT_m
@@ -228,5 +202,4 @@ Symbols:
 - __ZNSt3__16vectorIPvNS_9allocatorIS1_EEE20__throw_length_errorB9fqe220100Ev
 - __ZSt28__throw_bad_array_new_lengthB9fqe220100v
 - __ZZNSt3__112__hash_tableIPvNS_4hashIS1_EENS_8equal_toIS1_EENS_9allocatorIS1_EEE16__emplace_uniqueB9fqe220100IJRKS1_EEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIS1_S1_EEEEbEEDpOT_ENKUlSB_SB_E_clESB_SB_
-
 ```

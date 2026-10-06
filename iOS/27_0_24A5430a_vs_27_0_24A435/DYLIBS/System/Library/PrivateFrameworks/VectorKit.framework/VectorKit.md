@@ -2,23 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/VectorKit.framework/VectorKit`
 
-```diff
+### Section Size Changes
 
- 2043.30.6.12.19
--  __TEXT.__text: 0x1218df0
-+  __TEXT.__text: 0x121b2d0
-   __TEXT.__objc_methlist: 0x11074
-   __TEXT.__const: 0x79338
--  __TEXT.__gcc_except_tab: 0x75f64
-+  __TEXT.__gcc_except_tab: 0x75fc8
-   __TEXT.__oslogstring: 0x11516
-   __TEXT.__cstring: 0x9af30
-   __TEXT.__ustring: 0xf8
--  __TEXT.__unwind_info: 0x33c38
-+  __TEXT.__unwind_info: 0x33c20
-   __TEXT.__eh_frame: 0x1d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1218df0` | `0x121b2d0` | **`+0x24e0`** |
+| `__TEXT.__gcc_except_tab` | `0x75f64` | `0x75fc8` | **`+0x64`** |
+| `__TEXT.__unwind_info` | `0x33c38` | `0x33c20` | **`-0x18`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN2md19BuildingRenderLayer13heightAtPointERKN2gm6MatrixIdLi3ELi1EEE : 2252 -> 2248
 ~ __ZN3ggl18MetalDeviceContext12doRenderWorkEPNS_13CommandBufferE : 19096 -> 19152

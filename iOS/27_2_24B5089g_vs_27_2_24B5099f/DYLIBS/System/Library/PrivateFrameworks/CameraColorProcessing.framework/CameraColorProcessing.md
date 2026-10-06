@@ -2,58 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/CameraColorProcessing.framework/CameraColorProcessing`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8aa54` | `0x65bb8` | **`-0x24e9c`** |
+| `__TEXT.__oslogstring` | `0xb989` | `0x280a` | **`-0x917f`** |
+| `__TEXT.__cstring` | `0x94a0` | `0x54b9` | **`-0x3fe7`** |
+| `__TEXT.__gcc_except_tab` | `0x50cc` | `0x3f3c` | **`-0x1190`** |
+| `__AUTH_CONST.__cfstring` | `0x3080` | `0x2cc0` | **`-0x3c0`** |
+| `__TEXT.__unwind_info` | `0xc50` | `0xae8` | **`-0x168`** |
+| `__TEXT.__const` | `0x6ab4` | `0x6a84` | **`-0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x540` | `0x528` | **`-0x18`** |
+| `__DATA_CONST.__got` | `0x4b8` | `0x4b0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -764.40.5.0.0
--  __TEXT.__text: 0x8a1a0
 +764.40.7.0.0
-+  __TEXT.__text: 0x65544
-   __TEXT.__objc_methlist: 0x1fa4
--  __TEXT.__const: 0x6ab4
--  __TEXT.__gcc_except_tab: 0x50cc
--  __TEXT.__cstring: 0x94a0
-+  __TEXT.__const: 0x6a84
-+  __TEXT.__gcc_except_tab: 0x3f3c
-+  __TEXT.__cstring: 0x54b9
-   __TEXT.__dlopen_cstrs: 0xf0
--  __TEXT.__oslogstring: 0xb989
--  __TEXT.__unwind_info: 0x1050
-+  __TEXT.__oslogstring: 0x280a
-+  __TEXT.__unwind_info: 0xf20
-   __TEXT.__eh_frame: 0xa0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0xf58
-   __DATA_CONST.__objc_superrefs: 0xa8
-   __DATA_CONST.__objc_arraydata: 0x3b0
--  __DATA_CONST.__got: 0x4b8
-+  __DATA_CONST.__got: 0x4b0
-   __AUTH_CONST.__const: 0x4b8
--  __AUTH_CONST.__cfstring: 0x3080
-+  __AUTH_CONST.__cfstring: 0x2cc0
-   __AUTH_CONST.__objc_const: 0x4d00
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__objc_intobj: 0x2e8
-   __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x540
-+  __AUTH_CONST.__auth_got: 0x528
-   __DATA.__objc_ivar: 0x490
-   __DATA.__data: 0x718
-   __DATA_DIRTY.__objc_data: 0x820
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1365
 -  Symbols:   1922
 -  CStrings:  1896
 +  Functions: 1152
 +  Symbols:   1856
 +  CStrings:  991
- 
 Symbols:
 + _FigSignalErrorAtGM
 + _objc_retain_x28

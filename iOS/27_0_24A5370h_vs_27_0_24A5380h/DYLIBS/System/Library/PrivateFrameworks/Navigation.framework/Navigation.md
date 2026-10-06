@@ -2,120 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/Navigation.framework/Navigation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x42f0` | `0x5830` | **`+0x1540`** |
+| `__DATA_DIRTY.__objc_data` | `0x3050` | `0x1b10` | **`-0x1540`** |
+| `__TEXT.__text` | `0x21e6e8` | `0x21ec5c` | **`+0x574`** |
+| `__TEXT.__eh_frame` | `0x52d4` | `0x5344` | **`+0x70`** |
+| `__DATA_CONST.__got` | `0x1380` | `0x13d8` | **`+0x58`** |
+| `__TEXT.__oslogstring` | `0xfe3f` | `0xfe79` | **`+0x3a`** |
+| `__AUTH_CONST.__objc_const` | `0x220e0` | `0x22100` | **`+0x20`** |
+| `__DATA.__data` | `0x7b08` | `0x7ae8` | **`-0x20`** |
+| `__TEXT.__objc_methlist` | `0x12264` | `0x12284` | **`+0x20`** |
+| `__TEXT.__swift5_typeref` | `0x38a8` | `0x388a` | **`-0x1e`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8db8` | `0x8dc8` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0x2d8` | `0x2c8` | **`-0x10`** |
+| `__DATA.__objc_ivar` | `0x1570` | `0x1574` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0x1a0` | `0x1a4` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x16c` | `0x170` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x21e6e8
--  __TEXT.__objc_methlist: 0x12264
-+  __TEXT.__text: 0x21ec5c
-+  __TEXT.__objc_methlist: 0x12284
-   __TEXT.__const: 0xdc7c
-   __TEXT.__dlopen_cstrs: 0x104
-   __TEXT.__constg_swiftt: 0x4978
--  __TEXT.__swift5_typeref: 0x38a8
-+  __TEXT.__swift5_typeref: 0x388a
-   __TEXT.__swift5_builtin: 0x230
-   __TEXT.__swift5_reflstr: 0x35e6
-   __TEXT.__swift5_fieldmd: 0x4598
+-2433.30.6.5.1
++2435.30.6.12.2
 
-   __TEXT.__swift5_types: 0x544
-   __TEXT.__cstring: 0x20639
-   __TEXT.__swift5_capture: 0xf90
--  __TEXT.__swift_as_entry: 0x1a0
--  __TEXT.__swift_as_ret: 0x16c
-+  __TEXT.__swift_as_entry: 0x1a4
-+  __TEXT.__swift_as_ret: 0x170
-   __TEXT.__swift_as_cont: 0x358
--  __TEXT.__oslogstring: 0xfe3f
-+  __TEXT.__oslogstring: 0xfe79
-   __TEXT.__swift5_protos: 0x4c
-   __TEXT.__swift5_mpenum: 0x78
-   __TEXT.__gcc_except_tab: 0x4e44
-   __TEXT.__ustring: 0x222
-   __TEXT.__unwind_info: 0x7808
--  __TEXT.__eh_frame: 0x52d4
-+  __TEXT.__eh_frame: 0x5344
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_protolist: 0x320
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8db8
-+  __DATA_CONST.__objc_selrefs: 0x8dc8
-   __DATA_CONST.__objc_protorefs: 0x158
-   __DATA_CONST.__objc_superrefs: 0x528
-   __DATA_CONST.__objc_arraydata: 0x2e0
--  __DATA_CONST.__got: 0x1380
-+  __DATA_CONST.__got: 0x13d8
-   __AUTH_CONST.__const: 0xb718
-   __AUTH_CONST.__cfstring: 0xcde0
--  __AUTH_CONST.__objc_const: 0x220e0
-+  __AUTH_CONST.__objc_const: 0x22100
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x570
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_arrayobj: 0x180
-   __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__auth_got: 0x1cc0
--  __AUTH.__objc_data: 0x42f0
-+  __AUTH.__objc_data: 0x5830
-   __AUTH.__data: 0x4ef8
--  __DATA.__objc_ivar: 0x1570
--  __DATA.__data: 0x7b08
-+  __DATA.__objc_ivar: 0x1574
-+  __DATA.__data: 0x7ae8
-   __DATA.__bss: 0x12710
-   __DATA.__common: 0x318
--  __DATA_DIRTY.__objc_data: 0x3050
--  __DATA_DIRTY.__data: 0x2d8
-+  __DATA_DIRTY.__objc_data: 0x1b10
-+  __DATA_DIRTY.__data: 0x2c8
-   __DATA_DIRTY.__bss: 0x240
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11094
--  Symbols:   23688
--  CStrings:  5631
 +  Functions: 11095
-+  Symbols:   23692
-+  CStrings:  5632
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH.__data : content changed
+
+-  CStrings:  4002
++  CStrings:  4003
 Symbols:
 + -[MNAudioHardwareEngine _preSynthesizeNextQueuedEvent]
 + -[MNAudioSystemEventQueue peek]
@@ -251,9 +173,6 @@ Symbols:
 + GCC_except_table5763
 + _OBJC_IVAR_$_MNAudioHardwareEngine._lastPreSynthesizedUtterance
 + ___31-[MNAudioSystemEventQueue peek]_block_invoke
-+ _objc_msgSend$_preSynthesizeNextQueuedEvent
-+ _objc_msgSend$cache:
-+ _objc_msgSend$peek
 - GCC_except_table1131
 - GCC_except_table1136
 - GCC_except_table1659
@@ -390,5 +309,4 @@ Symbols:
 - _swift_runtimeSupportsNoncopyableTypes
 CStrings:
 + "ⓜ Failed to pre-synthesize utterance '%{private}@' : %@"
-
 ```

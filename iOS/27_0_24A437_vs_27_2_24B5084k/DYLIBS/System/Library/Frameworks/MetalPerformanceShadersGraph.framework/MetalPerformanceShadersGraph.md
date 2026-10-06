@@ -2,111 +2,57 @@
 
 > `/System/Library/Frameworks/MetalPerformanceShadersGraph.framework/MetalPerformanceShadersGraph`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21ae450` | `0x21dbad0` | **`+0x2d680`** |
+| `__TEXT.__cstring` | `0xef469` | `0xf1b00` | **`+0x2697`** |
+| `__TEXT.__const` | `0x6d008` | `0x6de08` | **`+0xe00`** |
+| `__TEXT.__gcc_except_tab` | `0x137244` | `0x137fa0` | **`+0xd5c`** |
+| `__AUTH_CONST.__cfstring` | `0x141c0` | `0x14cc0` | **`+0xb00`** |
+| `__AUTH_CONST.__const` | `0xa90e8` | `0xa9ba0` | **`+0xab8`** |
+| `__TEXT.__unwind_info` | `0x671c0` | `0x67648` | **`+0x488`** |
+| `__TEXT.__oslogstring` | `0x347f` | `0x378f` | **`+0x310`** |
+| `__DATA.__bss` | `0x2fa0` | `0x3150` | **`+0x1b0`** |
+| `__DATA_CONST.__objc_arraydata` | `0x19d8` | `0x1ad8` | **`+0x100`** |
+| `__AUTH_CONST.__objc_const` | `0x127f8` | `0x128d8` | **`+0xe0`** |
+| `__DATA.__data` | `0x7700` | `0x77b8` | **`+0xb8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4688` | `0x4738` | **`+0xb0`** |
+| `__DATA.__common` | `0x24e0` | `0x2448` | **`-0x98`** |
+| `__TEXT.__objc_methlist` | `0x84e4` | `0x8564` | **`+0x80`** |
+| `__TEXT.__swift5_typeref` | `0xb00` | `0xb72` | **`+0x72`** |
+| `__TEXT.__constg_swiftt` | `0x51c` | `0x580` | **`+0x64`** |
+| `__TEXT.__swift5_fieldmd` | `0x5d0` | `0x630` | **`+0x60`** |
+| `__AUTH_CONST.__objc_dictobj` | `0x5c8` | `0x618` | **`+0x50`** |
+| `__AUTH.__data` | `0x50b8` | `0x50f8` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x2728` | `0x2760` | **`+0x38`** |
+| `__TEXT.__eh_frame` | `0x143c` | `0x1474` | **`+0x38`** |
+| `__DATA_CONST.__got` | `0xff8` | `0x1028` | **`+0x30`** |
+| `__TEXT.__swift5_capture` | `0x370` | `0x340` | **`-0x30`** |
+| `__TEXT.__swift5_reflstr` | `0x525` | `0x552` | **`+0x2d`** |
+| `__DATA_CONST.__const` | `0x4ba8` | `0x4bd0` | **`+0x28`** |
+| `__TEXT.__swift5_builtin` | `0x3c` | `0x50` | **`+0x14`** |
+| `__DATA.__objc_ivar` | `0x270` | `0x27c` | **`+0xc`** |
+| `__DATA_DIRTY.__objc_ivar` | `0xa3c` | `0xa48` | **`+0xc`** |
+| `__TEXT.__swift5_proto` | `0x144` | `0x150` | **`+0xc`** |
+| `__TEXT.__swift5_types` | `0x88` | `0x94` | **`+0xc`** |
+| `__TEXT.__swift5_mpenum` | `0x10` | `0x18` | **`+0x8`** |
+| `__TEXT.__mpsgraph_init_` | `0x44` | `0x40` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7.0.80.0.0
--  __TEXT.__text: 0x2173920
--  __TEXT.__mpsgraph_init_: 0x44
--  __TEXT.__objc_methlist: 0x84e4
--  __TEXT.__const: 0x6d008
--  __TEXT.__cstring: 0xef469
--  __TEXT.__swift5_typeref: 0xb00
--  __TEXT.__swift5_capture: 0x370
--  __TEXT.__oslogstring: 0x347f
--  __TEXT.__constg_swiftt: 0x51c
--  __TEXT.__swift5_fieldmd: 0x5d0
--  __TEXT.__swift5_reflstr: 0x525
--  __TEXT.__swift5_builtin: 0x3c
--  __TEXT.__swift5_proto: 0x144
--  __TEXT.__swift5_types: 0x88
--  __TEXT.__swift5_mpenum: 0x10
 +7.1.4.0.0
-+  __TEXT.__text: 0x21a0e6c
-+  __TEXT.__mpsgraph_init_: 0x40
-+  __TEXT.__objc_methlist: 0x8564
-+  __TEXT.__const: 0x6de08
-+  __TEXT.__cstring: 0xf1b00
-+  __TEXT.__swift5_typeref: 0xb72
-+  __TEXT.__swift5_capture: 0x340
-+  __TEXT.__oslogstring: 0x378f
-+  __TEXT.__constg_swiftt: 0x580
-+  __TEXT.__swift5_reflstr: 0x552
-+  __TEXT.__swift5_fieldmd: 0x630
-+  __TEXT.__swift5_builtin: 0x50
-+  __TEXT.__swift5_mpenum: 0x18
-+  __TEXT.__swift5_proto: 0x150
-+  __TEXT.__swift5_types: 0x94
-   __TEXT.__swift_as_entry: 0x14
-   __TEXT.__swift_as_ret: 0x4
-   __TEXT.__swift_as_cont: 0x10
--  __TEXT.__gcc_except_tab: 0x137244
-+  __TEXT.__gcc_except_tab: 0x137fa0
-   __TEXT.__ustring: 0x19c
--  __TEXT.__unwind_info: 0x773b8
--  __TEXT.__eh_frame: 0x144c
-+  __TEXT.__unwind_info: 0x77958
-+  __TEXT.__eh_frame: 0x1484
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4ba8
-+  __DATA_CONST.__const: 0x4bd0
-   __DATA_CONST.__objc_classlist: 0x7e0
-   __DATA_CONST.__objc_protolist: 0xa0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x4688
-+  __DATA_CONST.__objc_selrefs: 0x4738
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__objc_superrefs: 0x230
--  __DATA_CONST.__objc_arraydata: 0x19d8
--  __DATA_CONST.__got: 0xff8
--  __AUTH_CONST.__const: 0xa90e8
--  __AUTH_CONST.__cfstring: 0x141c0
--  __AUTH_CONST.__objc_const: 0x127f8
-+  __DATA_CONST.__objc_arraydata: 0x1ad8
-+  __DATA_CONST.__got: 0x1028
-+  __AUTH_CONST.__const: 0xa9ba0
-+  __AUTH_CONST.__cfstring: 0x14cc0
-+  __AUTH_CONST.__objc_const: 0x128d8
-   __AUTH_CONST.__weak_auth_got: 0x60
-   __AUTH_CONST.__objc_intobj: 0x768
-   __AUTH_CONST.__objc_arrayobj: 0x2430
--  __AUTH_CONST.__objc_dictobj: 0x5c8
--  __AUTH_CONST.__auth_got: 0x2728
-+  __AUTH_CONST.__objc_dictobj: 0x618
-+  __AUTH_CONST.__auth_got: 0x2760
-   __AUTH.__objc_data: 0x4e70
--  __AUTH.__data: 0x50b8
-+  __AUTH.__data: 0x50f8
-   __AUTH.__thread_vars: 0x168
-   __AUTH.__thread_data: 0x1
-   __AUTH.__thread_bss: 0x1b0
--  __DATA.__objc_ivar: 0x270
--  __DATA.__data: 0x7700
-+  __DATA.__objc_ivar: 0x27c
-+  __DATA.__data: 0x77b8
-   __DATA.__crash_info: 0x148
--  __DATA.__common: 0x24e0
--  __DATA_DIRTY.__objc_ivar: 0xa3c
-+  __DATA.__common: 0x2448
-+  __DATA_DIRTY.__objc_ivar: 0xa48
-   __DATA_DIRTY.__objc_data: 0x50
-   __DATA_DIRTY.__data: 0xf0
-   __DATA_DIRTY.__bss: 0x1630
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 104836
--  Symbols:   142061
+-  Symbols:   140505
 -  CStrings:  20975
 +  Functions: 105298
-+  Symbols:   142707
++  Symbols:   141132
 +  CStrings:  21156
- 
 Symbols:
 + -[MPSGraph(MPSGraphQuantizationOps) quantizeTensor:scaleTensor:zeroPointTensor:minTensor:dataType:axis:name:]
 + -[MPSGraph(MPSGraphQuantizationOps) quantizeTensor:scaleTensor:zeroPointTensor:minTensor:dataType:name:]
@@ -1812,29 +1758,6 @@ Symbols:
 + _mlir_mps_setMemrefAllocCallbackWithRegistry
 + _mlir_mps_setMemrefViewCallbackWithRegistry
 + _objc_copyWeak
-+ _objc_msgSend$addEvents:opIds:
-+ _objc_msgSend$aneProfilingMask
-+ _objc_msgSend$createMLIRLibraryWithMPSGraphPackage:packageKey:appendOptimizedModules:descriptor:
-+ _objc_msgSend$dataWithContentsOfFile:options:error:
-+ _objc_msgSend$decimalDigitCharacterSet
-+ _objc_msgSend$decodePerformanceStats:withOptions:
-+ _objc_msgSend$enableShapeShifterControlFlow
-+ _objc_msgSend$forceViewLocalAllocForTesting
-+ _objc_msgSend$hasFusedKernelSupportForDevice:environment:queryQuantizationDescriptor:keyQuantizationDescriptor:valueQuantizationDescriptor:srcNDArrayDescriptors:
-+ _objc_msgSend$initWithDevice:IOSurface:offset:rowBytesAlignment:shape:dataType:
-+ _objc_msgSend$initWithDevice:isSorted:batchDims:hasLHSIndices:hasUnsortOrder:sourceCount:
-+ _objc_msgSend$initWithDevice:kernelType:maskType:qQuantizationDescriptor:kQuantizationDescriptor:vQuantizationDescriptor:sourceCount:
-+ _objc_msgSend$initWithDevice:leftQuantizationDescriptor:rightQuantizationDescriptor:isSorted:batchDims:hasLHSIndices:hasUnsortOrder:sourceCount:
-+ _objc_msgSend$initWithMPSGraphPackageAtURL:adapterExecutable:compilationDescriptor:error:
-+ _objc_msgSend$initWithMPSGraphPackageAtURL:compilationDescriptor:error:
-+ _objc_msgSend$initWithMTLBuffer:offset:shape:strides:interleaves:dataType:
-+ _objc_msgSend$invertedSet
-+ _objc_msgSend$key
-+ _objc_msgSend$perfStats
-+ _objc_msgSend$rangeOfCharacterFromSet:
-+ _objc_msgSend$requestProfilingStatsWithDictionary:profilingCallback:
-+ _objc_msgSend$setEnableShapeShifterControlFlow:
-+ _objc_msgSend$setIsQueryQuantized:
 + _symbolic SDySS_____G s6UInt64V
 + _symbolic SS_SSt
 + _symbolic _____ 28MetalPerformanceShadersGraph21MPSGraphDelegateErrorO010DeprecatedF14HookCodingKeys33_51F12A6571D1E1A2D3D9B4FC3E781AB3LLO
@@ -2965,10 +2888,6 @@ Symbols:
 - _associated conformance 28MetalPerformanceShadersGraph21MPSGraphDelegateErrorO33MalformedAdapterPackageCodingKeys33_6D50CC86E2CCE881D418F1204106A462LLOs0K3KeyAAs28CustomDebugStringConvertible
 - _associated conformance 28MetalPerformanceShadersGraph21MPSGraphDelegateErrorO36NdxExpectedButNotAvailableCodingKeys33_6D50CC86E2CCE881D418F1204106A462LLOs0M3KeyAAs23CustomStringConvertible
 - _associated conformance 28MetalPerformanceShadersGraph21MPSGraphDelegateErrorO36NdxExpectedButNotAvailableCodingKeys33_6D50CC86E2CCE881D418F1204106A462LLOs0M3KeyAAs28CustomDebugStringConvertible
-- _objc_msgSend$createMLIRLibraryWithMPSGraphPackage:packageKey:appendOptimizedModules:descriptor:outNDXCapable:
-- _objc_msgSend$initWithDevice:quantizationDescriptor:sourceCount:
-- _objc_msgSend$initWithMPSGraphPackageAtURL:adapterExecutable:compilationDescriptor:
-- _objc_msgSend$serializeToMPSGraphPackageAtURL:descriptor:outNDXCapable:
 - _symbolic _____ 28MetalPerformanceShadersGraph21MPSGraphDelegateErrorO010DeprecatedF14HookCodingKeys33_6D50CC86E2CCE881D418F1204106A462LLO
 - _symbolic _____ 28MetalPerformanceShadersGraph21MPSGraphDelegateErrorO010NdxRuntimeG10CodingKeys33_6D50CC86E2CCE881D418F1204106A462LLO
 - _symbolic _____ 28MetalPerformanceShadersGraph21MPSGraphDelegateErrorO012AneInferenceG10CodingKeys33_6D50CC86E2CCE881D418F1204106A462LLO

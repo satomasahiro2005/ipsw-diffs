@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/GameControllerSettings.framework/GameControllerSettings`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__auth_got` | `0x5e8` | `0x5e0` | **`-0x8`** |
+| `__TEXT.__text` | `0x3dc2c` | `0x3dc34` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 14.0.24.0.0
--  __TEXT.__text: 0x3dc2c
-+  __TEXT.__text: 0x3dc34
-   __TEXT.__objc_methlist: 0x1744
-   __TEXT.__const: 0x2ce0
-   __TEXT.__cstring: 0xe02
-
-   __AUTH_CONST.__const: 0x1090
-   __AUTH_CONST.__cfstring: 0x1500
-   __AUTH_CONST.__objc_const: 0x45b8
--  __AUTH_CONST.__auth_got: 0x5e8
-+  __AUTH_CONST.__auth_got: 0x5e0
-   __AUTH.__data: 0x1d0
-   __DATA.__objc_ivar: 0x184
-   __DATA.__data: 0x8e0
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 1494
--  Symbols:   3464
-+  Symbols:   3463
-   CStrings:  190
- 
+-  Symbols:   3264
++  Symbols:   3263
 Symbols:
 - _objc_retain_x9
 Functions:

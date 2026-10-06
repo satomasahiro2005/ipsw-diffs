@@ -2,24 +2,25 @@
 
 > `/usr/libexec/checkpointd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA.__objc_selrefs`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x54568` | `0x54538` | **`-0x30`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__eh_frame`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 40.0.0.0.0
--  __TEXT.__text: 0x5438c
-+  __TEXT.__text: 0x5435c
-   __TEXT.__auth_stubs: 0x320
-   __TEXT.__objc_stubs: 0x320
-   __TEXT.__cstring: 0x644
+```text
 Functions:
 ~ sub_100000bdc : 4908 -> 4860
 ```

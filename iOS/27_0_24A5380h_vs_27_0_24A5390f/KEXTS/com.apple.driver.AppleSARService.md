@@ -2,47 +2,26 @@
 
 > `com.apple.driver.AppleSARService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA.__data`
-- `__DATA_CONST.__mod_init_func`
-- `__DATA_CONST.__mod_term_func`
-- `__DATA_CONST.__kalloc_type`
-- `__DATA_CONST.__kalloc_var`
-- `__DATA_CONST.__auth_got`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0xf15bc` | `0xf2500` | **`+0xf44`** |
+| `__TEXT.__os_log` | `0x23d84` | `0x23f39` | **`+0x1b5`** |
+| `__TEXT.__cstring` | `0x1eb2e` | `0x1ecad` | **`+0x17f`** |
+| `__DATA_CONST.__const` | `0xd6f0` | `0xd730` | **`+0x40`** |
+
+### Other Changes
 
 ```diff
 
 -1576.0.0.0.0
--  __TEXT.__os_log: 0x23d84
-+1580.0.0.0.0
-+  __TEXT.__os_log: 0x23f39
-   __TEXT.__const: 0x124e
--  __TEXT.__cstring: 0x1eb2e
--  __TEXT_EXEC.__text: 0xf15bc
-+  __TEXT.__cstring: 0x1ecad
-+  __TEXT_EXEC.__text: 0xf2500
-   __TEXT_EXEC.__auth_stubs: 0x730
-   __DATA.__data: 0x133
-   __DATA.__common: 0x11b8
-   __DATA.__bss: 0xa8
-   __DATA_CONST.__mod_init_func: 0xe8
-   __DATA_CONST.__mod_term_func: 0xf0
--  __DATA_CONST.__const: 0xd6f0
-+  __DATA_CONST.__const: 0xd730
-   __DATA_CONST.__kalloc_type: 0xcf80
-   __DATA_CONST.__kalloc_var: 0x280
-   __DATA_CONST.__auth_got: 0x398
-   __DATA_CONST.__got: 0xd0
-   __DATA_CONST.__auth_ptr: 0x18
 -  Functions: 1818
++1580.0.0.0.0
 +  Functions: 1823
-   Symbols:   0
+
 -  CStrings:  2332
 +  CStrings:  2340
- 
 CStrings:
 + "#D: %s::%s:%d: Dequeued Tx indication: %u (remaining queue count: %u)"
 + "#D: %s::%s:%d: HSAR Metric: enum/state fields done, OBD=%u, BT_conn=%d, Cell_on=%d, WiFi_pwr=%d, uplink_constraint_condition=%u"

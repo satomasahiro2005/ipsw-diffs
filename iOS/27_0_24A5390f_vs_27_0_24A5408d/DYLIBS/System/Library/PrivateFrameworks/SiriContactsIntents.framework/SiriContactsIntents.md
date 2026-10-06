@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/SiriContactsIntents.framework/SiriContactsIntents`
 
+### Other Changes
+
 ```diff
 Symbols:
 + _$s19SiriContactsIntents0A16KitContactIntentPAAE22runReferenceResolution_10completiony0ahI027RRReferenceResolverProtocol_p_yAA0adeF13ResolvedValueOctFZAA03Gete9AttributeF0C_Tt1g504$s19ab11Intents0A18dp6Entityf9PAAE22runh19Resolutionyy0aiJ027klm10_pFyAA0ad7e3G13no18OcfU_Tf0ns_nAA0en9Q7G0C_Tg5AKSgXwTf1nE_n

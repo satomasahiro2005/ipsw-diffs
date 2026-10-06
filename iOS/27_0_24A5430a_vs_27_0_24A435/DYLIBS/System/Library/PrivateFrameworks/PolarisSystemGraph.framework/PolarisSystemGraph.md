@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/PolarisSystemGraph.framework/PolarisSystemGraph`
 
-```diff
+### Section Size Changes
 
- 256.0.5.0.0
--  __TEXT.__text: 0xaa04
-+  __TEXT.__text: 0xaa0c
-   __TEXT.__objc_methlist: 0x1300
-   __TEXT.__const: 0x78
-   __TEXT.__cstring: 0x755
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xaa04` | `0xaa0c` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[PSSGMessageBase initWithRawMessage:] : 444 -> 452
 ```

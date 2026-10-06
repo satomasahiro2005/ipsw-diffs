@@ -2,28 +2,18 @@
 
 > `com.apple.driver.AppleM68Buttons`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x1d09c` | `0x1d094` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__cstring: 0x4e79
-   __TEXT.__const: 0x208
-   __TEXT.__os_log: 0x61f
--  __TEXT_EXEC.__text: 0x1d09c
-+  __TEXT_EXEC.__text: 0x1d094
-   __TEXT_EXEC.__auth_stubs: 0x4d0
-   __DATA.__data: 0xca
-   __DATA.__common: 0x88
-Sections:
-~ __TEXT.__cstring : content changed
-~ __DATA.__data : content changed
-~ __DATA_CONST.__mod_init_func : content changed
-~ __DATA_CONST.__mod_term_func : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__kalloc_type : content changed
-~ __DATA_CONST.__kalloc_var : content changed
-~ __DATA_CONST.__auth_got : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA_CONST.__auth_ptr : content changed
+-130.0.0.0.0
++132.0.0.0.0
 Functions:
 ~ _LibCall_ACMContextVerifyPolicyAndCopyRequirementEx : 1512 -> 1504
-
 ```

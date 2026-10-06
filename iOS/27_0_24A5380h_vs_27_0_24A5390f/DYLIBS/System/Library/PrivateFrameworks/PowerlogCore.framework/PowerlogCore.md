@@ -2,91 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/PowerlogCore.framework/PowerlogCore`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_nlclslist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH.__objc_data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__cfstring` | `0x67280` | `0x6be60` | **`+0x4be0`** |
+| `__TEXT.__cstring` | `0x3ff65` | `0x42c16` | **`+0x2cb1`** |
+| `__DATA_CONST.__objc_arraydata` | `0x41680` | `0x43d08` | **`+0x2688`** |
+| `__TEXT.__text` | `0xe6d4c` | `0xe7c60` | **`+0xf14`** |
+| `__AUTH_CONST.__objc_dictobj` | `0xf690` | `0xf7f8` | **`+0x168`** |
+| `__TEXT.__oslogstring` | `0x88f8` | `0x8a24` | **`+0x12c`** |
+| `__TEXT.__gcc_except_tab` | `0x297c` | `0x29f0` | **`+0x74`** |
+| `__DATA_CONST.__const` | `0x25a0` | `0x25f0` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x30a0` | `0x30e0` | **`+0x40`** |
+| `__TEXT.__const` | `0x1b68` | `0x1ba0` | **`+0x38`** |
+| `__TEXT.__objc_methlist` | `0x9728` | `0x9758` | **`+0x30`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x1170` | `0x1188` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5950` | `0x5968` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0xda8` | `0xdb8` | **`+0x10`** |
+
+### Other Changes
 
 ```diff
 
 -3486.0.46.502.1
--  __TEXT.__text: 0xe6d4c
--  __TEXT.__objc_methlist: 0x9728
--  __TEXT.__const: 0x1b68
--  __TEXT.__cstring: 0x3ff65
--  __TEXT.__oslogstring: 0x88f8
--  __TEXT.__gcc_except_tab: 0x297c
--  __TEXT.__unwind_info: 0x30a0
 +3486.0.81.502.4
-+  __TEXT.__text: 0xe7c60
-+  __TEXT.__objc_methlist: 0x9758
-+  __TEXT.__const: 0x1ba0
-+  __TEXT.__cstring: 0x42c16
-+  __TEXT.__oslogstring: 0x8a24
-+  __TEXT.__gcc_except_tab: 0x29f0
-+  __TEXT.__unwind_info: 0x30e0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x25a0
-+  __DATA_CONST.__const: 0x25f0
-   __DATA_CONST.__objc_classlist: 0x378
-   __DATA_CONST.__objc_nlclslist: 0x80
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5950
-+  __DATA_CONST.__objc_selrefs: 0x5968
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x2d0
--  __DATA_CONST.__objc_arraydata: 0x41680
-+  __DATA_CONST.__objc_arraydata: 0x43d08
-   __DATA_CONST.__got: 0x7e8
-   __AUTH_CONST.__const: 0x24e0
--  __AUTH_CONST.__cfstring: 0x67280
-+  __AUTH_CONST.__cfstring: 0x6be60
-   __AUTH_CONST.__objc_const: 0xaa00
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x4a70
-   __AUTH_CONST.__objc_doubleobj: 0x13a0
--  __AUTH_CONST.__objc_arrayobj: 0x1170
--  __AUTH_CONST.__objc_dictobj: 0xf690
--  __AUTH_CONST.__auth_got: 0xda8
-+  __AUTH_CONST.__objc_arrayobj: 0x1188
-+  __AUTH_CONST.__objc_dictobj: 0xf7f8
-+  __AUTH_CONST.__auth_got: 0xdb8
-   __AUTH.__objc_data: 0x460
-   __DATA.__objc_ivar: 0x7cc
-   __DATA.__data: 0x4a0
 
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libsystemstats.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 4929
--  Symbols:   9326
+-  Symbols:   7237
 -  CStrings:  14518
 +  Functions: 4940
-+  Symbols:   9336
++  Symbols:   7246
 +  CStrings:  15136
- 
 Symbols:
 + -[PLContextualizedMetricData addGlitchWithDuration:scrollDuration:glitchCount:isScrollStart:]
 + -[PLContextualizedMetricData setAnimationHitchTotalAnimationDuration:weightedGlitchRatioSum:]
@@ -101,15 +48,12 @@ Symbols:
 + ___block_descriptor_56_e8_32s40s48r_e20_v20?0B8"NSError"12ls32l8r48l8s40l8
 + _dispatch_block_create
 + _dispatch_block_wait
-+ _objc_msgSend$initWithEntryKey:withDate:capacity:
-+ _objc_msgSend$shouldStartTrialsTaskingToday:
 + _shouldStartTrialsTaskingToday:.classDebugEnabled
 + _shouldStartTrialsTaskingToday:.defaultOnce
 - -[PLContextualizedMetricData addGlitchWithDuration:scrollDuration:glitchCount:isScrollStart:glitchRatio:animationDuration:]
 - -[PLSubmissionConfig shouldStartTrialsTaskingToday]
 - ___51-[PLSubmissionConfig shouldStartTrialsTaskingToday]_block_invoke
 - ___block_descriptor_40_e8_32s_e20_v20?0B8"NSError"12ls32l8
-- _objc_msgSend$shouldStartTrialsTaskingToday
 - _shouldStartTrialsTaskingToday.classDebugEnabled
 - _shouldStartTrialsTaskingToday.defaultOnce
 CStrings:

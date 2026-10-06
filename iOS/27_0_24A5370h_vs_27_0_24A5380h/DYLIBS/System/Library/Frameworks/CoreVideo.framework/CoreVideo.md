@@ -2,67 +2,28 @@
 
 > `/System/Library/Frameworks/CoreVideo.framework/CoreVideo`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0xba6c` | `0xc53c` | **`+0xad0`** |
+| `__TEXT.__text` | `0x6e464` | `0x6eeb8` | **`+0xa54`** |
+| `__TEXT.__unwind_info` | `0x1d18` | `0x1d70` | **`+0x58`** |
+| `__AUTH_CONST.__auth_got` | `0xea0` | `0xeb0` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x6e464
-+  __TEXT.__text: 0x6eeb8
-   __TEXT.__const: 0x5ca8
--  __TEXT.__cstring: 0xba6c
-+  __TEXT.__cstring: 0xc53c
-   __TEXT.__oslogstring: 0x2e3
-   __TEXT.__objc_databytes: 0x493
-   __TEXT.__gcc_except_tab: 0x64
+-758.23.0.0.0
++758.25.0.0.0
 
-   __TEXT.__swift5_capture: 0x68
-   __TEXT.__swift5_types2: 0x8
-   __TEXT.__dof_CVPixelBu: 0x24a
--  __TEXT.__unwind_info: 0x1d18
-+  __TEXT.__unwind_info: 0x1d70
-   __TEXT.__eh_frame: 0x85c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __AUTH_CONST.__objc_dictobj: 0x192d0
-   __AUTH_CONST.__objc_intobj: 0x2268
-   __AUTH_CONST.__objc_arrayobj: 0x4878
--  __AUTH_CONST.__auth_got: 0xea0
-+  __AUTH_CONST.__auth_got: 0xeb0
-   __AUTH.__objc_dataobj: 0x9a8
-   __AUTH.__objc_databytes: 0x330
-   __AUTH.__data: 0x758
-
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 3621
--  Symbols:   11308
--  CStrings:  1385
+-  Symbols:   8138
+-  CStrings:  1026
 +  Functions: 3631
-+  Symbols:   11330
-+  CStrings:  1420
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__dof_CVPixelBu : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH.__objc_dataobj : content changed
-~ __AUTH.__objc_databytes : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
++  Symbols:   8150
++  CStrings:  1061
 Symbols:
 + _CFAllocatorGetTypeID
 + _CFSetApplyFunction
@@ -122,5 +83,4 @@ CStrings:
 - "bytes per row alignemnt vs exact bytes per row mismatch"
 - "custom layout size mismatch"
 - "planar bytes per row alignemnt vs exact bytes per row mismatch"
-
 ```

@@ -2,106 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/FindMyLocate.framework/FindMyLocate`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x160950` | `0x16927c` | **`+0x892c`** |
+| `__DATA.__bss` | `0x15e00` | `0x18600` | **`+0x2800`** |
+| `__TEXT.__const` | `0x11980` | `0x12ee0` | **`+0x1560`** |
+| `__AUTH_CONST.__const` | `0xbb90` | `0xc1e0` | **`+0x650`** |
+| `__TEXT.__swift5_typeref` | `0x3af1` | `0x4087` | **`+0x596`** |
+| `__DATA.__data` | `0x1ef0` | `0x22f0` | **`+0x400`** |
+| `__TEXT.__unwind_info` | `0x6078` | `0x6450` | **`+0x3d8`** |
+| `__TEXT.__eh_frame` | `0xf2a8` | `0xf5a4` | **`+0x2fc`** |
+| `__TEXT.__swift5_reflstr` | `0x259a` | `0x27ea` | **`+0x250`** |
+| `__TEXT.__swift5_fieldmd` | `0x3b00` | `0x3d40` | **`+0x240`** |
+| `__TEXT.__swift5_assocty` | `0x3b8` | `0x5b0` | **`+0x1f8`** |
+| `__AUTH_CONST.__auth_got` | `0xe68` | `0xff8` | **`+0x190`** |
+| `__TEXT.__constg_swiftt` | `0x3164` | `0x32d0` | **`+0x16c`** |
+| `__TEXT.__swift5_proto` | `0xf60` | `0x10a0` | **`+0x140`** |
+| `__TEXT.__cstring` | `0x3183` | `0x32a3` | **`+0x120`** |
+| `__AUTH.__data` | `0x510` | `0x590` | **`+0x80`** |
+| `__DATA_CONST.__const` | `0xd8` | `0x158` | **`+0x80`** |
+| `__AUTH_CONST.__objc_const` | `0x2df0` | `0x2e50` | **`+0x60`** |
+| `__TEXT.__swift_as_entry` | `0x764` | `0x7a8` | **`+0x44`** |
+| `__TEXT.__swift_as_ret` | `0x90c` | `0x940` | **`+0x34`** |
+| `__TEXT.__swift5_types` | `0x440` | `0x470` | **`+0x30`** |
+| `__DATA.__common` | `0x50` | `0x58` | **`+0x8`** |
+| `__DATA_DIRTY.__data` | `0x32f0` | `0x32f8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -141.30.6.14.13
--  __TEXT.__text: 0x14d110
 +141.31.6.16.16
-+  __TEXT.__text: 0x1556e4
-   __TEXT.__objc_methlist: 0x11a4
--  __TEXT.__cstring: 0x3183
--  __TEXT.__swift5_typeref: 0x3af1
--  __TEXT.__const: 0x11980
-+  __TEXT.__cstring: 0x32a3
-+  __TEXT.__swift5_typeref: 0x4087
-+  __TEXT.__const: 0x12ee0
-   __TEXT.__oslogstring: 0x28b6
--  __TEXT.__constg_swiftt: 0x3164
-+  __TEXT.__constg_swiftt: 0x32d0
-   __TEXT.__swift5_builtin: 0x64
--  __TEXT.__swift5_reflstr: 0x259a
--  __TEXT.__swift5_fieldmd: 0x3b00
--  __TEXT.__swift5_types: 0x440
-+  __TEXT.__swift5_reflstr: 0x27ea
-+  __TEXT.__swift5_fieldmd: 0x3d40
-+  __TEXT.__swift5_types: 0x470
-   __TEXT.__swift5_protos: 0x1c
--  __TEXT.__swift5_assocty: 0x3b8
--  __TEXT.__swift5_proto: 0xf60
-+  __TEXT.__swift5_assocty: 0x5b0
-+  __TEXT.__swift5_proto: 0x10a0
-   __TEXT.__swift5_capture: 0x1c00
--  __TEXT.__swift_as_entry: 0x764
--  __TEXT.__swift_as_ret: 0x90c
-+  __TEXT.__swift_as_entry: 0x7a8
-+  __TEXT.__swift_as_ret: 0x940
-   __TEXT.__swift_as_cont: 0x11e8
-   __TEXT.__swift5_mpenum: 0x24
--  __TEXT.__unwind_info: 0x7708
--  __TEXT.__eh_frame: 0xf2b0
-+  __TEXT.__unwind_info: 0x7bf8
-+  __TEXT.__eh_frame: 0xf5ac
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xd8
-+  __DATA_CONST.__const: 0x158
-   __DATA_CONST.__objc_classlist: 0x78
-   __DATA_CONST.__objc_protolist: 0xa0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xc60
-   __DATA_CONST.__objc_protorefs: 0x70
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xbb90
--  __AUTH_CONST.__objc_const: 0x2df0
--  __AUTH_CONST.__auth_got: 0xe68
-+  __AUTH_CONST.__const: 0xc1e0
-+  __AUTH_CONST.__objc_const: 0x2e50
-+  __AUTH_CONST.__auth_got: 0xff8
-   __AUTH.__objc_data: 0x90
--  __AUTH.__data: 0x510
--  __DATA.__data: 0x1ef0
--  __DATA.__common: 0x50
-+  __AUTH.__data: 0x590
-+  __DATA.__data: 0x22f0
-+  __DATA.__common: 0x58
-   __DATA_DIRTY.__objc_data: 0x3d8
--  __DATA_DIRTY.__data: 0x32f0
-+  __DATA_DIRTY.__data: 0x32f8
-   __DATA_DIRTY.__common: 0x2f0
-   __DATA_DIRTY.__bss: 0x8880
-   - /System/Library/Frameworks/Accounts.framework/Accounts
+
 +  - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+
 +  - /System/Library/Frameworks/GeoToolbox.framework/GeoToolbox
-   - /System/Library/Frameworks/NearbyInteraction.framework/NearbyInteraction
+
 +  - /System/Library/Frameworks/_GeoToolbox_AppIntents.framework/_GeoToolbox_AppIntents
-   - /System/Library/Frameworks/_LocationEssentials.framework/_LocationEssentials
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/FindMyBase.framework/FindMyBase
 
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftCoreLocation.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
 +  - /usr/lib/swift/libswiftIntents.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7139
--  Symbols:   1969
+-  Symbols:   1842
 -  CStrings:  554
 +  Functions: 7507
-+  Symbols:   2124
++  Symbols:   1997
 +  CStrings:  563
- 
 Symbols:
 + ___swift_memcpy225_8
 + ___swift_memcpy48_8

@@ -2,46 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/MetadataUtilities.framework/MetadataUtilities`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x8483` | `0x7b6d` | **`-0x916`** |
+| `__TEXT.__text` | `0x74b14` | `0x74de4` | **`+0x2d0`** |
+| `__TEXT.__oslogstring` | `0x1eb5` | `0x2056` | **`+0x1a1`** |
+| `__TEXT.__unwind_info` | `0xf28` | `0xf68` | **`+0x40`** |
+| `__DATA_DIRTY.__bss` | `0x398` | `0x388` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -2465.1.3.0.0
--  __TEXT.__text: 0x73824
 +2465.1.7.0.0
-+  __TEXT.__text: 0x73ac4
-   __TEXT.__objc_methlist: 0x494
-   __TEXT.__const: 0x543e
--  __TEXT.__cstring: 0x8483
--  __TEXT.__oslogstring: 0x1eb5
-+  __TEXT.__cstring: 0x7b6d
-+  __TEXT.__oslogstring: 0x2056
-   __TEXT.__ustring: 0x9a
-   __TEXT.__gcc_except_tab: 0x18
-   __TEXT.__dlopen_cstrs: 0x54
--  __TEXT.__unwind_info: 0x1a08
-+  __TEXT.__unwind_info: 0x19b8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA.__common: 0x858
-   __DATA_DIRTY.__objc_data: 0x320
-   __DATA_DIRTY.__data: 0x1b8
--  __DATA_DIRTY.__bss: 0x398
-+  __DATA_DIRTY.__bss: 0x388
-   __DATA_DIRTY.__common: 0xf0
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 1676
 -  Symbols:   2168
 -  CStrings:  1824
 +  Functions: 1659
 +  Symbols:   2182
 +  CStrings:  1794
- 
 Symbols:
 + __MDPlistContainerAbandonBuild
 + ___copyCSObject_block_invoke

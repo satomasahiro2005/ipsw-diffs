@@ -2,44 +2,27 @@
 
 > `com.apple.driver.ApplePPMCPMS`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x52528` | `0x52f7c` | **`+0xa54`** |
+| `__TEXT.__cstring` | `0xf5ef` | `0xf84a` | **`+0x25b`** |
+| `__TEXT.__os_log` | `0x3d65` | `0x3e3d` | **`+0xd8`** |
+| `__DATA_CONST.__const` | `0x5a78` | `0x5af0` | **`+0x78`** |
+| `__TEXT.__const` | `0x1130` | `0x1150` | **`+0x20`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__const: 0x1130
--  __TEXT.__cstring: 0xf5ef
--  __TEXT.__os_log: 0x3d65
--  __TEXT_EXEC.__text: 0x52528
-+  __TEXT.__const: 0x1150
-+  __TEXT.__cstring: 0xf84a
-+  __TEXT.__os_log: 0x3e3d
-+  __TEXT_EXEC.__text: 0x52f7c
-   __TEXT_EXEC.__auth_stubs: 0x7b0
-   __DATA.__data: 0x164
-   __DATA.__common: 0x500
-   __DATA.__bss: 0x1c8
-   __DATA_CONST.__mod_init_func: 0xe0
-   __DATA_CONST.__mod_term_func: 0xb0
--  __DATA_CONST.__const: 0x5a78
-+  __DATA_CONST.__const: 0x5af0
-   __DATA_CONST.__kalloc_type: 0x900
-   __DATA_CONST.__kalloc_var: 0x140
-   __DATA_CONST.__auth_got: 0x3d8
-   __DATA_CONST.__got: 0xe0
-   __DATA_CONST.__auth_ptr: 0x8
+-1191.0.4.502.1
 -  Functions: 2163
++1191.0.16.0.0
 +  Functions: 2168
-   Symbols:   0
+
 -  CStrings:  1837
 +  CStrings:  1855
- 
-Sections:
-~ __DATA.__data : content changed
-~ __DATA_CONST.__mod_init_func : content changed
-~ __DATA_CONST.__mod_term_func : content changed
-~ __DATA_CONST.__kalloc_type : content changed
-~ __DATA_CONST.__kalloc_var : content changed
-~ __DATA_CONST.__auth_got : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA_CONST.__auth_ptr : content changed
 CStrings:
 + "%s::%s:%s: Failed to enqueue and send Pmax telemetry, batteryPackIndex %d\n\n"
 + "%s::%s:%s: createPmaxDictionary returned 0x%x, batteryPackIndex %d\n\n"
@@ -101,5 +84,4 @@ CStrings:
 - "static ApplePPMCPMSSystemCapabilityMonitor *ApplePPMCPMSSystemCapabilityMonitor::withParent(ApplePPM *, uint8_t)"
 - "virtual bool ApplePPMCPMSSystemCapabilityMonitor::initWithParent(ApplePPM *, uint8_t)"
 - "virtual bool ApplePPMSystemCapabilityMonitor::initWithParent(ApplePPM *, uint8_t)"
-
 ```

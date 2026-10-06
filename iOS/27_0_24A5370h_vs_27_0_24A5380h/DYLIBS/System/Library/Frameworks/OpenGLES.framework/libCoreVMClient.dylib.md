@@ -2,18 +2,16 @@
 
 > `/System/Library/Frameworks/OpenGLES.framework/libCoreVMClient.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__unwind_info` | `0x110` | `0x118` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__text: 0x3b5c
-   __TEXT.__cstring: 0xed4
-   __TEXT.__const: 0x10
--  __TEXT.__unwind_info: 0x110
-+  __TEXT.__unwind_info: 0x118
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0xe0
-   __DATA_CONST.__got: 0x0
-Sections:
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__const : content changed
-
+-403.1.0.0.0
++404.0.0.0.0
 ```

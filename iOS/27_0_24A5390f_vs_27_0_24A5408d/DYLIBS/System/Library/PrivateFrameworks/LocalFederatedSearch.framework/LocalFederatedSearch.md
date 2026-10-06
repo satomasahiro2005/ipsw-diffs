@@ -2,15 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/LocalFederatedSearch.framework/LocalFederatedSearch`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbdb8c` | `0xbdb54` | **`-0x38`** |
+
+### Other Changes
+
 ```diff
 
 -3600.56.27.0.0
--  __TEXT.__text: 0xbdb8c
 +3600.56.32.11.4
-+  __TEXT.__text: 0xbdb54
-   __TEXT.__objc_methlist: 0x2c
-   __TEXT.__const: 0x5bd8
-   __TEXT.__swift5_typeref: 0x167c
 Functions:
 ~ _$ss17FixedWidthIntegerPsE_5radixxSgqd___SitcSyRd__lufcADSRys5UInt8VGXEfU_Si_SsTG5SiTf3nnpSi10_n : 320 -> 304
 ~ _OUTLINED_FUNCTION_69 -> _OUTLINED_FUNCTION_19 : 16 -> 28

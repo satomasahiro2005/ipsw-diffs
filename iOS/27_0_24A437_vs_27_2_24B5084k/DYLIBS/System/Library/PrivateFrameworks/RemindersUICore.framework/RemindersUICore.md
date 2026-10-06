@@ -2,109 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/RemindersUICore.framework/RemindersUICore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb7f9ac` | `0xb8d9d8` | **`+0xe02c`** |
+| `__AUTH_CONST.__const` | `0x4da80` | `0x4ea60` | **`+0xfe0`** |
+| `__TEXT.__const` | `0x40de4` | `0x41614` | **`+0x830`** |
+| `__DATA.__bss` | `0x27e10` | `0x28610` | **`+0x800`** |
+| `__AUTH_CONST.__objc_const` | `0x2b408` | `0x2b8c8` | **`+0x4c0`** |
+| `__TEXT.__swift5_reflstr` | `0x1a06d` | `0x1a50d` | **`+0x4a0`** |
+| `__TEXT.__swift5_fieldmd` | `0x1b058` | `0x1b458` | **`+0x400`** |
+| `__TEXT.__swift5_capture` | `0xd888` | `0xdc44` | **`+0x3bc`** |
+| `__TEXT.__swift5_typeref` | `0x29030` | `0x293be` | **`+0x38e`** |
+| `__TEXT.__constg_swiftt` | `0x2211c` | `0x22484` | **`+0x368`** |
+| `__AUTH.__data` | `0x17650` | `0x17930` | **`+0x2e0`** |
+| `__TEXT.__unwind_info` | `0x1cac0` | `0x1cd78` | **`+0x2b8`** |
+| `__TEXT.__cstring` | `0x27fa0` | `0x28210` | **`+0x270`** |
+| `__TEXT.__oslogstring` | `0x18da7` | `0x18fa7` | **`+0x200`** |
+| `__DATA.__data` | `0x110a8` | `0x11228` | **`+0x180`** |
+| `__DATA_DIRTY.__objc_data` | `0x4e90` | `0x4f90` | **`+0x100`** |
+| `__TEXT.__eh_frame` | `0x157e4` | `0x158c4` | **`+0xe0`** |
+| `__TEXT.__swift5_assocty` | `0x26b0` | `0x2758` | **`+0xa8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5dc8` | `0x5e38` | **`+0x70`** |
+| `__AUTH.__objc_data` | `0xa598` | `0xa5e8` | **`+0x50`** |
+| `__TEXT.__swift5_proto` | `0x235c` | `0x23ac` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x3388` | `0x33c8` | **`+0x40`** |
+| `__TEXT.__swift5_types` | `0x1dc4` | `0x1e00` | **`+0x3c`** |
+| `__AUTH_CONST.__auth_got` | `0x5290` | `0x52c8` | **`+0x38`** |
+| `__DATA_CONST.__const` | `0x3028` | `0x3058` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x7a60` | `0x7a88` | **`+0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x1230` | `0x1248` | **`+0x18`** |
+| `__DATA_DIRTY.__data` | `0x13e28` | `0x13e18` | **`-0x10`** |
+| `__TEXT.__swift5_protos` | `0x8c0` | `0x8d0` | **`+0x10`** |
+| `__DATA.__common` | `0x3e0` | `0x3e8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -4046.11.0.0.0
--  __TEXT.__text: 0xb2b25c
--  __TEXT.__objc_methlist: 0x7a60
--  __TEXT.__const: 0x40de4
 +4076.0.0.0.0
-+  __TEXT.__text: 0xb38f44
-+  __TEXT.__objc_methlist: 0x7a88
-+  __TEXT.__const: 0x41614
-   __TEXT.__gcc_except_tab: 0x88
--  __TEXT.__cstring: 0x27fa0
--  __TEXT.__oslogstring: 0x18da7
-+  __TEXT.__cstring: 0x28210
-+  __TEXT.__oslogstring: 0x18fa7
-   __TEXT.__ustring: 0x10
--  __TEXT.__constg_swiftt: 0x2211c
--  __TEXT.__swift5_typeref: 0x29030
-+  __TEXT.__constg_swiftt: 0x22484
-+  __TEXT.__swift5_typeref: 0x293be
-   __TEXT.__swift5_builtin: 0xb18
--  __TEXT.__swift5_reflstr: 0x1a06d
--  __TEXT.__swift5_fieldmd: 0x1b058
--  __TEXT.__swift5_assocty: 0x26b0
--  __TEXT.__swift5_proto: 0x235c
--  __TEXT.__swift5_types: 0x1dc4
--  __TEXT.__swift5_capture: 0xd888
-+  __TEXT.__swift5_reflstr: 0x1a50d
-+  __TEXT.__swift5_fieldmd: 0x1b458
-+  __TEXT.__swift5_assocty: 0x2758
-+  __TEXT.__swift5_proto: 0x23ac
-+  __TEXT.__swift5_types: 0x1e00
-+  __TEXT.__swift5_capture: 0xdc44
-   __TEXT.__swift5_mpenum: 0x388
--  __TEXT.__swift5_protos: 0x8c0
-+  __TEXT.__swift5_protos: 0x8d0
-   __TEXT.__swift_as_entry: 0x4e4
-   __TEXT.__swift_as_ret: 0x590
-   __TEXT.__swift_as_cont: 0xac8
--  __TEXT.__unwind_info: 0x25070
--  __TEXT.__eh_frame: 0x15804
-+  __TEXT.__unwind_info: 0x253b8
-+  __TEXT.__eh_frame: 0x158e4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3028
--  __DATA_CONST.__objc_classlist: 0x1230
-+  __DATA_CONST.__const: 0x3058
-+  __DATA_CONST.__objc_classlist: 0x1248
-   __DATA_CONST.__objc_catlist: 0xe8
-   __DATA_CONST.__objc_protolist: 0x4a8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5dc8
-+  __DATA_CONST.__objc_selrefs: 0x5e38
-   __DATA_CONST.__objc_protorefs: 0x238
-   __DATA_CONST.__objc_superrefs: 0xd0
-   __DATA_CONST.__objc_arraydata: 0xb0
--  __DATA_CONST.__got: 0x3388
--  __AUTH_CONST.__const: 0x4da80
-+  __DATA_CONST.__got: 0x33c8
-+  __AUTH_CONST.__const: 0x4ea60
-   __AUTH_CONST.__cfstring: 0xaa0
--  __AUTH_CONST.__objc_const: 0x2b408
-+  __AUTH_CONST.__objc_const: 0x2b8c8
-   __AUTH_CONST.__objc_intobj: 0x1f8
-   __AUTH_CONST.__objc_arrayobj: 0xf0
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_floatobj: 0x10
--  __AUTH_CONST.__auth_got: 0x5290
--  __AUTH.__objc_data: 0xa598
--  __AUTH.__data: 0x17650
-+  __AUTH_CONST.__auth_got: 0x52c8
-+  __AUTH.__objc_data: 0xa5e8
-+  __AUTH.__data: 0x17930
-   __AUTH.__thread_vars: 0x18
-   __AUTH.__thread_bss: 0x8
-   __DATA.__objc_ivar: 0x1c4
--  __DATA.__data: 0x110a8
-+  __DATA.__data: 0x11228
-   __DATA.__objc_stublist: 0x1d8
--  __DATA.__common: 0x3e0
--  __DATA_DIRTY.__objc_data: 0x4e90
--  __DATA_DIRTY.__data: 0x13e28
-+  __DATA.__common: 0x3e8
-+  __DATA_DIRTY.__objc_data: 0x4f90
-+  __DATA_DIRTY.__data: 0x13e18
-   __DATA_DIRTY.__bss: 0x7bc0
-   __DATA_DIRTY.__common: 0x318
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 48695
--  Symbols:   15450
+-  Symbols:   13142
 -  CStrings:  4423
 +  Functions: 48995
-+  Symbols:   15540
++  Symbols:   13218
 +  CStrings:  4454
- 
 Symbols:
 + _OBJC_CLASS_$_UICubicTimingParameters
 + _OBJC_CLASS_$_UISplitViewController
@@ -135,20 +80,6 @@ Symbols:
 + _associated conformance 15RemindersUICore54TTRIRemindersListSelfSizingCellInvalidationCoordinatorC8WatchdogOSHAASQ
 + _keypath_get.103Tm
 + _keypath_set.104Tm
-+ _objc_msgSend$addAnimations:
-+ _objc_msgSend$addCompletion:
-+ _objc_msgSend$anchorPoint
-+ _objc_msgSend$areAnimationsEnabled
-+ _objc_msgSend$cancelInteractiveMovement
-+ _objc_msgSend$finishAnimationAtPosition:
-+ _objc_msgSend$initWithControlPoint1:controlPoint2:
-+ _objc_msgSend$initWithDuration:timingParameters:
-+ _objc_msgSend$setAnchorPoint:
-+ _objc_msgSend$setAnimationsEnabled:
-+ _objc_msgSend$splitViewController
-+ _objc_msgSend$startAnimationAfterDelay:
-+ _objc_msgSend$stopAnimation:
-+ _objc_msgSend$transitionDuration
 + _swift_task_getMainExecutor
 + _swift_task_isCurrentExecutor
 + _symbolic $s15RemindersUICore30TTRStackViewAccessoryAnimatingP

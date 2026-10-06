@@ -2,20 +2,21 @@
 
 > `/Applications/DiagnosticsService.app/PlugIns/Diagnostic-8253.appex/Diagnostic-8253`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x13828` | `0x13820` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__const`
 - `__TEXT.__gcc_except_tab`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
 
-```diff
+### Other Changes
 
- 60.0.0.0.0
--  __TEXT.__text: 0x13828
-+  __TEXT.__text: 0x13820
-   __TEXT.__auth_stubs: 0x710
-   __TEXT.__objc_stubs: 0x860
-   __TEXT.__objc_methlist: 0xf8
+```text
 Functions:
 ~ sub_100005da4 : 268 -> 260
 ```

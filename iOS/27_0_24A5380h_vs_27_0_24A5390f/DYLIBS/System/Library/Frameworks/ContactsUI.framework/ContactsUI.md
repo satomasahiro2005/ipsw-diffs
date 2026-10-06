@@ -2,126 +2,49 @@
 
 > `/System/Library/Frameworks/ContactsUI.framework/ContactsUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x386b48` | `0x3876c8` | **`+0xb80`** |
+| `__AUTH.__objc_data` | `0xfd08` | `0xfa88` | **`-0x280`** |
+| `__DATA_DIRTY.__objc_data` | `0x2068` | `0x22e8` | **`+0x280`** |
+| `__TEXT.__oslogstring` | `0xaccf` | `0xae20` | **`+0x151`** |
+| `__TEXT.__gcc_except_tab` | `0x3208` | `0x32f8` | **`+0xf0`** |
+| `__DATA.__bss` | `0xa4f8` | `0xa470` | **`-0x88`** |
+| `__DATA_DIRTY.__bss` | `0xd0` | `0x158` | **`+0x88`** |
+| `__DATA_DIRTY.__data` | `0x58` | `0xd8` | **`+0x80`** |
+| `__AUTH_CONST.__const` | `0xa370` | `0xa3e8` | **`+0x78`** |
+| `__DATA.__data` | `0xad18` | `0xad78` | **`+0x60`** |
+| `__AUTH_CONST.__objc_const` | `0x594f8` | `0x59528` | **`+0x30`** |
+| `__TEXT.__swift5_capture` | `0x1550` | `0x1574` | **`+0x24`** |
+| `__TEXT.__swift5_typeref` | `0xefce` | `0xeff2` | **`+0x24`** |
+| `__DATA.__common` | `0x378` | `0x358` | **`-0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x18568` | `0x18588` | **`+0x20`** |
+| `__DATA_DIRTY.__common` | `—` | `0x20` | **`+0x20`** |
+| `__AUTH.__data` | `0x36b8` | `0x36a0` | **`-0x18`** |
+| `__TEXT.__objc_methlist` | `0x394bc` | `0x394d4` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0xdcd8` | `0xdcf0` | **`+0x18`** |
+| `__TEXT.__const` | `0xc460` | `0xc470` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x3c54` | `0x3c58` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_dictobj`
+
+### Other Changes
 
 ```diff
 
 -1454.100.1.0.0
--  __TEXT.__text: 0x386b48
--  __TEXT.__objc_methlist: 0x394bc
 +1456.100.1.2.1
-+  __TEXT.__text: 0x3876c8
-+  __TEXT.__objc_methlist: 0x394d4
-   __TEXT.__dlopen_cstrs: 0x183b
--  __TEXT.__const: 0xc460
--  __TEXT.__oslogstring: 0xaccf
--  __TEXT.__swift5_typeref: 0xefce
-+  __TEXT.__const: 0xc470
-+  __TEXT.__oslogstring: 0xae20
-+  __TEXT.__swift5_typeref: 0xeff2
-   __TEXT.__cstring: 0x1393b
-   __TEXT.__constg_swiftt: 0x55a8
-   __TEXT.__swift5_reflstr: 0x38d1
-   __TEXT.__swift5_fieldmd: 0x3598
-   __TEXT.__swift5_builtin: 0x230
-   __TEXT.__swift5_assocty: 0xeb8
--  __TEXT.__swift5_capture: 0x1550
-+  __TEXT.__swift5_capture: 0x1574
-   __TEXT.__swift5_proto: 0x454
-   __TEXT.__swift5_types: 0x3d0
-   __TEXT.__swift_as_entry: 0xa8
 
-   __TEXT.__swift_as_cont: 0x1e8
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_protos: 0x18
--  __TEXT.__gcc_except_tab: 0x3208
-+  __TEXT.__gcc_except_tab: 0x32f8
-   __TEXT.__ustring: 0x79a
--  __TEXT.__unwind_info: 0xdcd8
-+  __TEXT.__unwind_info: 0xdcf0
-   __TEXT.__eh_frame: 0x260c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x130
-   __DATA_CONST.__objc_protolist: 0x980
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x18568
-+  __DATA_CONST.__objc_selrefs: 0x18588
-   __DATA_CONST.__objc_protorefs: 0x1a8
-   __DATA_CONST.__objc_superrefs: 0xf38
-   __DATA_CONST.__objc_arraydata: 0x5f0
-   __DATA_CONST.__got: 0x2b50
--  __AUTH_CONST.__const: 0xa370
-+  __AUTH_CONST.__const: 0xa3e8
-   __AUTH_CONST.__cfstring: 0xba60
--  __AUTH_CONST.__objc_const: 0x594f8
-+  __AUTH_CONST.__objc_const: 0x59528
-   __AUTH_CONST.__objc_doubleobj: 0xd0
-   __AUTH_CONST.__objc_intobj: 0x498
-   __AUTH_CONST.__objc_arrayobj: 0x2b8
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__auth_got: 0x2cb8
--  __AUTH.__objc_data: 0xfd08
--  __AUTH.__data: 0x36b8
--  __DATA.__objc_ivar: 0x3c54
--  __DATA.__data: 0xad18
--  __DATA.__bss: 0xa4f8
--  __DATA.__common: 0x378
--  __DATA_DIRTY.__objc_data: 0x2068
--  __DATA_DIRTY.__data: 0x58
--  __DATA_DIRTY.__bss: 0xd0
-+  __AUTH.__objc_data: 0xfa88
-+  __AUTH.__data: 0x36a0
-+  __DATA.__objc_ivar: 0x3c58
-+  __DATA.__data: 0xad78
-+  __DATA.__bss: 0xa470
-+  __DATA.__common: 0x358
-+  __DATA_DIRTY.__objc_data: 0x22e8
-+  __DATA_DIRTY.__data: 0xd8
-+  __DATA_DIRTY.__bss: 0x158
-+  __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 24369
--  Symbols:   44618
+-  Symbols:   34119
 -  CStrings:  3230
 +  Functions: 24380
-+  Symbols:   44627
++  Symbols:   34126
 +  CStrings:  3233
- 
 Symbols:
 + -[CNAccountsAndGroupsViewController collectionViewBottomConstraint]
 + -[CNAccountsAndGroupsViewController setCollectionViewBottomConstraint:]
@@ -331,11 +254,6 @@ Symbols:
 + GCC_except_table9958
 + _OBJC_IVAR_$_CNAccountsAndGroupsViewController._collectionViewBottomConstraint
 + ___block_descriptor_40_e8_32s_e70_v24?0"CNContactListCollectionViewCell"8"UICellConfigurationState"16ls32l8
-+ _objc_msgSend$collectionViewBottomConstraint
-+ _objc_msgSend$isToolbarHidden
-+ _objc_msgSend$reason
-+ _objc_msgSend$setCollectionViewBottomConstraint:
-+ _objc_msgSend$setContentInsetsReference:
 + _symbolic So6UIViewCSgXw
 + _symbolic So6UIViewCSgXwz_Xx
 - GCC_except_table10130
@@ -541,9 +459,6 @@ Symbols:
 - GCC_except_table9951
 - GCC_except_table9956
 - ___block_descriptor_48_e8_32s40s_e70_v24?0"CNContactListCollectionViewCell"8"UICellConfigurationState"16ls32l8s40l8
-- _objc_msgSend$backgroundConfiguration
-- _objc_msgSend$overlaidDisplayModes
-- _objc_msgSend$splitViewDisplayMode
 CStrings:
 + "Caught UITableView batch-update exception while inserting %{private}@: %{public}@ — %{public}@. Falling back to reloadData."
 + "Caught UITableView batch-update exception while reloading sections %{public}@: %{public}@ — %{public}@. Falling back to reloadData."

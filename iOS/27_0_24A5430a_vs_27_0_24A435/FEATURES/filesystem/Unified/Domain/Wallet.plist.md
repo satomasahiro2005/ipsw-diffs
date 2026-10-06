@@ -4,9 +4,6 @@
 
 ```diff
 
- 		<key>State</key>
- 		<string>dynamic</string>
- 	</dict>
 +	<key>TreeStar</key>
 +	<dict>
 +		<key>Attributes</key>
@@ -21,8 +18,5 @@
 +		<key>State</key>
 +		<string>dynamic</string>
 +	</dict>
- </dict>
- </plist>
- 
 
 ```

@@ -2,27 +2,22 @@
 
 > `/usr/lib/libswiftPrespecialized.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__const` | `0x3b8920` | `0x3bd348` | **`+0x4a28`** |
+| `__AUTH.__data` | `0xd49b0` | `0xd4848` | **`-0x168`** |
+| `__AUTH_CONST.__const` | `0x74208` | `0x740f8` | **`-0x110`** |
+| `__DATA_CONST.__ptrhashtabkey` | `0x32678` | `0x32630` | **`-0x48`** |
+| `__DATA_CONST.__ptrhashtab` | `0x1ed18` | `0x1ece8` | **`-0x30`** |
+
+### Other Changes
+
 ```diff
 
- 0.0.0.0.0
-   __TEXT.__text: 0x0
-   __TEXT.__lldb_no_nlist: 0x0
--  __DATA_CONST.__const: 0x3b8938
--  __DATA_CONST.__ptrhashtab: 0x1ed18
--  __DATA_CONST.__ptrhashtabkey: 0x32678
--  __AUTH_CONST.__const: 0x74208
--  __AUTH.__data: 0xd49b0
-+  __DATA_CONST.__const: 0x3bd360
-+  __DATA_CONST.__ptrhashtab: 0x1ece8
-+  __DATA_CONST.__ptrhashtabkey: 0x32630
-+  __AUTH_CONST.__const: 0x740f8
-+  __AUTH.__data: 0xd4848
-   - /usr/lib/libSystem.B.dylib
-   Functions: 0
--  Symbols:   189364
-+  Symbols:   190247
-   CStrings:  0
- 
+-  Symbols:   189362
++  Symbols:   190245
 Symbols:
 + _$s09HealthAppA6Daemon30UserInteractionStateSyncEntityCMn
 + _$s10AppIntents16PreparableIntentP7prepareyyYaKFTq

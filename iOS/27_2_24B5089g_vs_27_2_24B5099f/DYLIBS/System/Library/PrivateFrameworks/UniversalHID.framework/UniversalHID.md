@@ -2,32 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/UniversalHID.framework/UniversalHID`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x91ed8` | `0x91f54` | **`+0x7c`** |
+| `__TEXT.__eh_frame` | `0x13e8` | `0x1408` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x44c0` | `0x44c8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 94.0.0.0.0
--  __TEXT.__text: 0x8eecc
-+  __TEXT.__text: 0x8ef48
-   __TEXT.__objc_methlist: 0x1ac
-   __TEXT.__const: 0xa628
-   __TEXT.__constg_swiftt: 0x22e8
-
-   __TEXT.__swift5_protos: 0x58
-   __TEXT.__swift5_capture: 0x7ec
-   __TEXT.__oslogstring: 0x449
--  __TEXT.__unwind_info: 0x5488
--  __TEXT.__eh_frame: 0x13e8
-+  __TEXT.__unwind_info: 0x5490
-+  __TEXT.__eh_frame: 0x1408
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 8680
 +  Functions: 8683
-   Symbols:   1345
-   CStrings:  141
- 
 ```

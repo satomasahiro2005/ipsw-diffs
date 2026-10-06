@@ -2,94 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/AgentCanvasPersistence.framework/AgentCanvasPersistence`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__bss` | `—` | `0x3c80` | **`+0x3c80`** |
+| `__DATA.__bss` | `0xbc10` | `0x8110` | **`-0x3b00`** |
+| `__TEXT.__text` | `0x636f8` | `0x65f5c` | **`+0x2864`** |
+| `__DATA_DIRTY.__data` | `—` | `0x1200` | **`+0x1200`** |
+| `__DATA.__data` | `0x1740` | `0xdb0` | **`-0x990`** |
+| `__AUTH.__data` | `0xc10` | `0x568` | **`-0x6a8`** |
+| `__TEXT.__eh_frame` | `0x3518` | `0x3668` | **`+0x150`** |
+| `__TEXT.__const` | `0x6740` | `0x6640` | **`-0x100`** |
+| `__TEXT.__swift5_typeref` | `0x167c` | `0x16d4` | **`+0x58`** |
+| `__AUTH.__objc_data` | `0x50` | `—` | **`-0x50`** |
+| `__DATA_DIRTY.__objc_data` | `—` | `0x50` | **`+0x50`** |
+| `__AUTH_CONST.__const` | `0x4388` | `0x4350` | **`-0x38`** |
+| `__DATA.__common` | `0x30` | `—` | **`-0x30`** |
+| `__DATA_DIRTY.__common` | `—` | `0x30` | **`+0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0x1130` | `0x1160` | **`+0x30`** |
+| `__TEXT.__constg_swiftt` | `0x106c` | `0x1094` | **`+0x28`** |
+| `__TEXT.__swift5_assocty` | `0x120` | `0x138` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x50` | `0x3c` | **`-0x14`** |
+| `__TEXT.__swift5_capture` | `0xa7c` | `0xa90` | **`+0x14`** |
+| `__TEXT.__swift5_reflstr` | `0xa89` | `0xa99` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x5e8` | `0x5f4` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0xda8` | `0xdb0` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x20` | `0x18` | **`-0x8`** |
+| `__TEXT.__swift_as_cont` | `0x108` | `0x110` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0xdc` | `0xe4` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x110` | `0x118` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x636f8
-+  __TEXT.__text: 0x65f5c
-   __TEXT.__objc_methlist: 0x26c
--  __TEXT.__const: 0x6740
--  __TEXT.__swift5_typeref: 0x167c
--  __TEXT.__swift5_fieldmd: 0x1130
--  __TEXT.__constg_swiftt: 0x106c
-+  __TEXT.__const: 0x6640
-+  __TEXT.__swift5_typeref: 0x16d4
-+  __TEXT.__swift5_fieldmd: 0x1160
-+  __TEXT.__constg_swiftt: 0x1094
-   __TEXT.__swift5_protos: 0x1c
--  __TEXT.__swift5_proto: 0x5e8
--  __TEXT.__swift_as_entry: 0xdc
--  __TEXT.__swift_as_ret: 0x110
--  __TEXT.__swift_as_cont: 0x108
-+  __TEXT.__swift5_proto: 0x5f4
-+  __TEXT.__swift_as_entry: 0xe4
-+  __TEXT.__swift_as_ret: 0x118
-+  __TEXT.__swift_as_cont: 0x110
-   __TEXT.__cstring: 0xce4
--  __TEXT.__swift5_reflstr: 0xa89
--  __TEXT.__swift5_assocty: 0x120
-+  __TEXT.__swift5_reflstr: 0xa99
-+  __TEXT.__swift5_assocty: 0x138
-   __TEXT.__swift5_types: 0x178
--  __TEXT.__swift5_capture: 0xa7c
--  __TEXT.__swift5_builtin: 0x50
--  __TEXT.__swift5_mpenum: 0x20
-+  __TEXT.__swift5_capture: 0xa90
-+  __TEXT.__swift5_builtin: 0x3c
-+  __TEXT.__swift5_mpenum: 0x18
-   __TEXT.__oslogstring: 0x6cb
-   __TEXT.__unwind_info: 0x1f20
--  __TEXT.__eh_frame: 0x3518
-+  __TEXT.__eh_frame: 0x3668
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-67.4.100.0.0
++73.0.5.102.0
 
-   __DATA_CONST.__objc_selrefs: 0x240
-   __DATA_CONST.__objc_protorefs: 0x50
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x4388
-+  __AUTH_CONST.__const: 0x4350
-   __AUTH_CONST.__objc_const: 0x5f8
--  __AUTH_CONST.__auth_got: 0xda8
--  __AUTH.__objc_data: 0x50
--  __AUTH.__data: 0xc10
--  __DATA.__data: 0x1740
--  __DATA.__bss: 0xbc10
--  __DATA.__common: 0x30
-+  __AUTH_CONST.__auth_got: 0xdb0
-+  __AUTH.__data: 0x568
-+  __DATA.__data: 0xdb0
-+  __DATA.__bss: 0x8110
-+  __DATA_DIRTY.__objc_data: 0x50
-+  __DATA_DIRTY.__data: 0x1200
-+  __DATA_DIRTY.__bss: 0x3c80
-+  __DATA_DIRTY.__common: 0x30
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/PrivateFrameworks/AgentCanvasFoundation.framework/AgentCanvasFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3215
--  Symbols:   2871
+-  Symbols:   1067
 -  CStrings:  125
 +  Functions: 3275
-+  Symbols:   2916
++  Symbols:   1070
 +  CStrings:  126
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__objc_const : content changed
 Symbols:
 + _OUTLINED_FUNCTION_190
 + _OUTLINED_FUNCTION_191
@@ -116,5 +76,4 @@ Symbols:
 - _type_layout_string 22AgentCanvasPersistence18FileAttachmentInfoV
 CStrings:
 + "bookmarks"
-
 ```

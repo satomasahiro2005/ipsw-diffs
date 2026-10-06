@@ -2,61 +2,43 @@
 
 > `/System/Library/Frameworks/IdentityLookup.framework/IdentityLookup`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x274ec` | `0x285b4` | **`+0x10c8`** |
+| `__TEXT.__oslogstring` | `0xdbd` | `0xe7d` | **`+0xc0`** |
+| `__TEXT.__cstring` | `0xab1` | `0xaf5` | **`+0x44`** |
+| `__DATA_CONST.__objc_selrefs` | `0x860` | `0x878` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x270` | `0x278` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0xb10` | `0xb08` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1403.100.1.0.0
--  __TEXT.__text: 0x2659c
 +1406.200.51.2.1
-+  __TEXT.__text: 0x27664
-   __TEXT.__objc_methlist: 0x112c
-   __TEXT.__const: 0xda0
--  __TEXT.__oslogstring: 0xdbd
--  __TEXT.__cstring: 0xab1
-+  __TEXT.__oslogstring: 0xe7d
-+  __TEXT.__cstring: 0xaf5
-   __TEXT.__gcc_except_tab: 0xf0
-   __TEXT.__swift5_typeref: 0x4f2
-   __TEXT.__swift5_reflstr: 0x2d8
 
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x860
-+  __DATA_CONST.__objc_selrefs: 0x878
-   __DATA_CONST.__objc_protorefs: 0x60
-   __DATA_CONST.__objc_superrefs: 0x80
--  __DATA_CONST.__got: 0x270
-+  __DATA_CONST.__got: 0x278
-   __AUTH_CONST.__const: 0x9c8
-   __AUTH_CONST.__cfstring: 0x2c0
-   __AUTH_CONST.__objc_const: 0x2508
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 952
--  Symbols:   1314
+-  Symbols:   1109
 -  CStrings:  155
-+  Symbols:   1318
++  Symbols:   1110
 +  CStrings:  160
- 
 Symbols:
 + _OBJC_CLASS_$_NSUserDefaults
-+ _objc_msgSend$boolForKey:
-+ _objc_msgSend$initWithSuiteName:
-+ _objc_msgSend$standardUserDefaults
 Functions:
-~ sub_246d0c8b0 -> sub_24a97a8b0 : 6876 -> 10480
-~ sub_246d1cd28 -> sub_24a98bb3c : 44 -> 236
-~ sub_246d1cd54 -> sub_24a98bc28 : 236 -> 96
-~ sub_246d1ce40 -> sub_24a98bc88 : 96 -> 76
-~ sub_246d1cea0 -> sub_24a98bcd4 : 76 -> 44
-~ sub_246d1ff24 -> sub_24a98ed38 : 584 -> 628
-~ sub_246d2016c -> sub_24a98efac : 460 -> 472
-~ sub_246d20408 -> sub_24a98f254 : 1164 -> 1180
-~ sub_246d2095c -> sub_24a98f7b8 : 2176 -> 2728
-~ sub_246d211dc -> sub_24a990260 : 264 -> 280
-~ sub_246d212e4 -> sub_24a990378 : 340 -> 360
-~ sub_246d21b3c -> sub_24a990be4 : 2360 -> 2392
+~ sub_24996de64 -> sub_24d2f2e64 : 6896 -> 10500
+~ sub_24997e938 -> sub_24d30474c : 44 -> 236
+~ sub_24997e964 -> sub_24d304838 : 236 -> 96
+~ sub_24997ea50 -> sub_24d304898 : 96 -> 76
+~ sub_24997eab0 -> sub_24d3048e4 : 76 -> 44
+~ sub_249981c34 -> sub_24d307a48 : 696 -> 740
+~ sub_249981eec -> sub_24d307d2c : 484 -> 496
+~ sub_2499821d4 -> sub_24d308020 : 1188 -> 1204
+~ sub_249982774 -> sub_24d3085d0 : 2188 -> 2740
+~ sub_249983000 -> sub_24d309084 : 276 -> 292
+~ sub_249983114 -> sub_24d3091a8 : 352 -> 372
+~ sub_2499839a4 -> sub_24d309a4c : 2380 -> 2412
 CStrings:
 + "Extension %s, failed plist validation: %@ marking as uninstalled"
 + "NSPIRConfiguration"

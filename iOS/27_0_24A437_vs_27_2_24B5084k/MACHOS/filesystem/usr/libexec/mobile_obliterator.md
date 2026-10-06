@@ -2,28 +2,32 @@
 
 > `/usr/libexec/mobile_obliterator`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1bc18` | `0x1bc88` | **`+0x70`** |
+| `__DATA.__bss` | `0x2ae0` | `0x2af8` | **`+0x18`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -402.0.0.0.0
--  __TEXT.__text: 0x1b9ec
 +402.40.2.0.0
-+  __TEXT.__text: 0x1ba5c
-   __TEXT.__auth_stubs: 0x1540
-   __TEXT.__objc_stubs: 0x920
-   __TEXT.__objc_methlist: 0x1fc
 Functions:
-~ sub_1000147fc : 240 -> 292
-~ sub_1000148ec -> sub_100014920 : 388 -> 336
-~ sub_100014a70 : 444 -> 552
-~ sub_100014f84 -> sub_100014ff0 : 1172 -> 1176
+~ sub_100014954 : 252 -> 304
+~ sub_100014a50 -> sub_100014a84 : 388 -> 336
+~ sub_100014bd4 : 444 -> 552
+~ sub_1000150e8 -> sub_100015154 : 1176 -> 1180
 ```

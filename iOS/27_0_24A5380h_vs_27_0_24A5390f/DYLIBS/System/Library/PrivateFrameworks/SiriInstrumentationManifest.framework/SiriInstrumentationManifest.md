@@ -2,57 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/SiriInstrumentationManifest.framework/SiriInstrumentationManifest`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5ad8ac` | `0x5bba84` | **`+0xe1d8`** |
+| `__DATA.__bss` | `0xb6000` | `0xb8c00` | **`+0x2c00`** |
+| `__TEXT.__cstring` | `0xae6fb` | `0xb0c7b` | **`+0x2580`** |
+| `__TEXT.__const` | `0xcea76` | `0xd0d56` | **`+0x22e0`** |
+| `__AUTH_CONST.__const` | `0x87288` | `0x88998` | **`+0x1710`** |
+| `__TEXT.__constg_swiftt` | `0x1c69c` | `0x1cb6c` | **`+0x4d0`** |
+| `__TEXT.__unwind_info` | `0x1b2f8` | `0x1b7a0` | **`+0x4a8`** |
+| `__TEXT.__swift5_assocty` | `0x185a0` | `0x189c0` | **`+0x420`** |
+| `__DATA.__data` | `0xb600` | `0xb8c0` | **`+0x2c0`** |
+| `__TEXT.__swift5_fieldmd` | `0x103c0` | `0x10680` | **`+0x2c0`** |
+| `__TEXT.__swift5_typeref` | `0xe3d4` | `0xe63c` | **`+0x268`** |
+| `__TEXT.__swift5_reflstr` | `0x921c` | `0x93a8` | **`+0x18c`** |
+| `__TEXT.__swift5_proto` | `0x81e0` | `0x8340` | **`+0x160`** |
+| `__TEXT.__swift5_types` | `0x40f0` | `0x41a0` | **`+0xb0`** |
+
+### Other Changes
+
 ```diff
 
 -3600.49.7.1.1
--  __TEXT.__text: 0x5ad8ac
--  __TEXT.__const: 0xcea76
--  __TEXT.__cstring: 0xae6fb
--  __TEXT.__swift5_typeref: 0xe3d4
--  __TEXT.__swift5_reflstr: 0x921c
--  __TEXT.__swift5_assocty: 0x185a0
--  __TEXT.__constg_swiftt: 0x1c69c
--  __TEXT.__swift5_fieldmd: 0x103c0
--  __TEXT.__swift5_proto: 0x81e0
--  __TEXT.__swift5_types: 0x40f0
--  __TEXT.__unwind_info: 0x1b2f8
 +3600.49.12.1.1
-+  __TEXT.__text: 0x5bba84
-+  __TEXT.__const: 0xd0d56
-+  __TEXT.__cstring: 0xb0c7b
-+  __TEXT.__swift5_typeref: 0xe63c
-+  __TEXT.__swift5_reflstr: 0x93a8
-+  __TEXT.__swift5_assocty: 0x189c0
-+  __TEXT.__constg_swiftt: 0x1cb6c
-+  __TEXT.__swift5_fieldmd: 0x10680
-+  __TEXT.__swift5_proto: 0x8340
-+  __TEXT.__swift5_types: 0x41a0
-+  __TEXT.__unwind_info: 0x1b7a0
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x87288
-+  __AUTH_CONST.__const: 0x88998
-   __AUTH_CONST.__auth_got: 0x1c8
--  __DATA.__data: 0xb600
--  __DATA.__bss: 0xb6000
-+  __DATA.__data: 0xb8c0
-+  __DATA.__bss: 0xb8c00
-   __DATA_DIRTY.__data: 0x4df0
-   __DATA_DIRTY.__bss: 0x4dc00
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 40698
 -  Symbols:   8369
 -  CStrings:  15533
 +  Functions: 41119
 +  Symbols:   8457
 +  CStrings:  15734
- 
 Symbols:
 + _associated conformance 27SiriInstrumentationManifest013ODDSiriSchemad18ExtensionProvider_C0V17PoirotSchematizer07MessageC12ConstructingAaD0ecK0
 + _associated conformance 27SiriInstrumentationManifest013ODDSiriSchemad21ExtensionRequestType_C0V17PoirotSchematizer04EnumC12ConstructingAaD0ecL0

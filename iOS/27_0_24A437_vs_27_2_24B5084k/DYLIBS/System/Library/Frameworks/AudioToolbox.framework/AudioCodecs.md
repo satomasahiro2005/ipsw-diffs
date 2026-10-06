@@ -2,36 +2,27 @@
 
 > `/System/Library/Frameworks/AudioToolbox.framework/AudioCodecs`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x69677c` | `0x696690` | **`-0xec`** |
+| `__TEXT.__const` | `0x33e20c` | `0x33e14c` | **`-0xc0`** |
+| `__TEXT.__cstring` | `0xfe7c` | `0xfe6c` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x9c60` | `0x9c58` | **`-0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x11fd0` | `0x11fcc` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -818.0.0.0.0
--  __TEXT.__text: 0x68f2ec
 +818.203.0.0.0
-+  __TEXT.__text: 0x68f1f8
-   __TEXT.__realtime: 0x123c
--  __TEXT.__const: 0x33e20c
--  __TEXT.__cstring: 0xfe7c
--  __TEXT.__gcc_except_tab: 0x11fd0
-+  __TEXT.__const: 0x33e14c
-+  __TEXT.__cstring: 0xfe6c
-+  __TEXT.__gcc_except_tab: 0x11fcc
-   __TEXT.__oslogstring: 0x1bb02
-   __TEXT.__ustring: 0x20
--  __TEXT.__unwind_info: 0xb000
-+  __TEXT.__unwind_info: 0xaff0
-   __TEXT.__eh_frame: 0x6a8
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0xd930
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 9828
 -  Symbols:   17174
 +  Functions: 9826
 +  Symbols:   17169
-   CStrings:  3594
- 
 Symbols:
 + GCC_except_table10036
 + GCC_except_table10060
@@ -1591,7 +1582,9 @@ CStrings:
 + "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/include/c++/v1/string_view:343: libc++ Hardening assertion (__end - __begin) >= 0 failed: std::string_view::string_view(iterator, sentinel) received invalid range\n"
 + "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/include/c++/v1/valarray:826: libc++ Hardening assertion __i < size() failed: valarray::operator[] index out of bounds\n"
 + "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/include/c++/v1/valarray:831: libc++ Hardening assertion __i < size() failed: valarray::operator[] index out of bounds\n"
++ "01:16:56"
 + "Apple LLVM 21.0.0 (clang-2100.3.34.1) [+internal-os]"
++ "Sep  1 2026"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:293: libc++ Hardening assertion __k != __leftmost failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:603: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:615: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
@@ -1640,5 +1633,7 @@ CStrings:
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string_view:343: libc++ Hardening assertion (__end - __begin) >= 0 failed: std::string_view::string_view(iterator, sentinel) received invalid range\n"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/valarray:826: libc++ Hardening assertion __i < size() failed: valarray::operator[] index out of bounds\n"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/valarray:831: libc++ Hardening assertion __i < size() failed: valarray::operator[] index out of bounds\n"
+- "15:34:39"
 - "Apple LLVM 21.0.0 (clang-2100.3.31.1) [+internal-os]"
+- "Aug  8 2026"
 ```

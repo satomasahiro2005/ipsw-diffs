@@ -2,98 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/SpotlightDaemon.framework/SpotlightDaemon`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH.__objc_data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbc484` | `0xc06f8` | **`+0x4274`** |
+| `__TEXT.__oslogstring` | `0xc3d0` | `0xcb64` | **`+0x794`** |
+| `__AUTH_CONST.__cfstring` | `0x7b40` | `0x7fe0` | **`+0x4a0`** |
+| `__TEXT.__cstring` | `0x932b` | `0x96b7` | **`+0x38c`** |
+| `__DATA_CONST.__const` | `0x44f0` | `0x4730` | **`+0x240`** |
+| `__TEXT.__gcc_except_tab` | `0x4710` | `0x4944` | **`+0x234`** |
+| `__TEXT.__objc_methlist` | `0x48b4` | `0x49cc` | **`+0x118`** |
+| `__AUTH_CONST.__const` | `0x1228` | `0x1308` | **`+0xe0`** |
+| `__TEXT.__unwind_info` | `0x2720` | `0x2800` | **`+0xe0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3b08` | `0x3bd8` | **`+0xd0`** |
+| `__AUTH_CONST.__objc_const` | `0x5ec0` | `0x5f48` | **`+0x88`** |
+| `__DATA.__bss` | `0xf0` | `0x150` | **`+0x60`** |
+| `__AUTH_CONST.__auth_got` | `0x1110` | `0x1130` | **`+0x20`** |
+| `__TEXT.__const` | `0x3c0` | `0x3d8` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x4fc` | `0x50c` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x6f0` | `0x6e0` | **`-0x10`** |
+| `__DATA_CONST.__objc_arraydata` | `0x2f8` | `0x300` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -2451.1.101.0.0
--  __TEXT.__text: 0xbc484
--  __TEXT.__objc_methlist: 0x48b4
--  __TEXT.__const: 0x3c0
--  __TEXT.__cstring: 0x932b
--  __TEXT.__gcc_except_tab: 0x4710
--  __TEXT.__oslogstring: 0xc3d0
 +2454.100.0.0.0
-+  __TEXT.__text: 0xc06f8
-+  __TEXT.__objc_methlist: 0x49cc
-+  __TEXT.__const: 0x3d8
-+  __TEXT.__cstring: 0x96b7
-+  __TEXT.__gcc_except_tab: 0x4944
-+  __TEXT.__oslogstring: 0xcb64
-   __TEXT.__dlopen_cstrs: 0x4a
--  __TEXT.__unwind_info: 0x2720
-+  __TEXT.__unwind_info: 0x2800
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x44f0
-+  __DATA_CONST.__const: 0x4730
-   __DATA_CONST.__objc_classlist: 0x1b0
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3b08
-+  __DATA_CONST.__objc_selrefs: 0x3bd8
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x138
--  __DATA_CONST.__objc_arraydata: 0x2f8
-+  __DATA_CONST.__objc_arraydata: 0x300
-   __DATA_CONST.__got: 0xbe8
--  __AUTH_CONST.__const: 0x1228
--  __AUTH_CONST.__cfstring: 0x7b40
--  __AUTH_CONST.__objc_const: 0x5ec0
-+  __AUTH_CONST.__const: 0x1308
-+  __AUTH_CONST.__cfstring: 0x7fe0
-+  __AUTH_CONST.__objc_const: 0x5f48
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x390
-   __AUTH_CONST.__objc_intobj: 0x228
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x1110
-+  __AUTH_CONST.__auth_got: 0x1130
-   __AUTH.__objc_data: 0x140
--  __DATA.__objc_ivar: 0x4fc
-+  __DATA.__objc_ivar: 0x50c
-   __DATA.__data: 0x418
--  __DATA.__bss: 0xf0
-+  __DATA.__bss: 0x150
-   __DATA.__common: 0x4
-   __DATA_DIRTY.__objc_data: 0xfa0
-   __DATA_DIRTY.__data: 0x158
--  __DATA_DIRTY.__bss: 0x6f0
-+  __DATA_DIRTY.__bss: 0x6e0
-   __DATA_DIRTY.__common: 0x18
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libutil.dylib
 -  Functions: 3249
--  Symbols:   6524
+-  Symbols:   4883
 -  CStrings:  2591
 +  Functions: 3320
-+  Symbols:   6646
++  Symbols:   4979
 +  CStrings:  2661
- 
 Symbols:
 + -[SPConcreteCoreSpotlightIndexer _finishUserActivityPurgeWithDeleted:completionHandler:]
 + -[SPConcreteCoreSpotlightIndexer deleteUserActivitiesForBundleID:activityType:fromClient:completionHandler:]
@@ -287,33 +230,6 @@ Symbols:
 + _logForCSSignpostQueryTelemetry
 + _logForCSSignpostQueryTelemetry.onceToken
 + _logForCSSignpostQueryTelemetry.sQueryTelemetryLog
-+ _objc_msgSend$_armLongRunningQueryTimerWithMode:queryContext:
-+ _objc_msgSend$_effectiveLongQueryMode
-+ _objc_msgSend$_finishUserActivityPurgeWithDeleted:completionHandler:
-+ _objc_msgSend$_handleLongRunningQueryTimerFireWithMode:thresholdNSec:daemonName:bundleIDs:
-+ _objc_msgSend$_prepareSIQueryWithQueryString:queryContext:
-+ _objc_msgSend$_terminateForLongRunningQueryTimeout
-+ _objc_msgSend$allMigratedOrPendingBundles
-+ _objc_msgSend$clearPendingRegistration:
-+ _objc_msgSend$contentTypeTree
-+ _objc_msgSend$deleteUserActivitiesForBundleID:activityType:fromClient:completionHandler:
-+ _objc_msgSend$doubleForKey:
-+ _objc_msgSend$foundItemCount
-+ _objc_msgSend$integerForKey:
-+ _objc_msgSend$isBundlePendingRegistration:
-+ _objc_msgSend$issueNotesReindexIfNeeded:group:
-+ _objc_msgSend$issuePriorityIndexFixupAppClips
-+ _objc_msgSend$issueUserActivityPurgeCommand:completionHandler:
-+ _objc_msgSend$issueUserActivityPurgeFixup:
-+ _objc_msgSend$longQueryHandlingModeOverride
-+ _objc_msgSend$longQueryTimeoutOverride
-+ _objc_msgSend$longRunningQueryTimer
-+ _objc_msgSend$markBundlePendingRegistration:
-+ _objc_msgSend$resetUserActivityPurgeFixupVersion
-+ _objc_msgSend$runUserActivityPurgeFixupWithGroup:
-+ _objc_msgSend$setByAddingObjectsFromSet:
-+ _objc_msgSend$setLongRunningQueryTimer:
-+ _objc_msgSend$supportsLongRunningQueryTimer
 + _objc_setProperty_atomic_copy
 + _sSPLongRunningQueryMode
 + _sSPLongRunningQueryThresholdNSec
@@ -416,7 +332,6 @@ Symbols:
 - __OBJC_$_PROP_LIST_SPHDBBundleRegistry
 - ___block_descriptor_48_e8_32s40r_e42_v48?0^{__CFString=}8B16B20q24q32?<v?>40ls32l8r40l8
 - ___block_descriptor_65_e8_32s40s48s56s_e40_v16?0"SPConcreteCoreSpotlightIndexer"8ls32l8s40l8s48l8s56l8
-- _objc_msgSend$migratedBundles
 CStrings:
 + "\"\\"
 + "%@\n%@"

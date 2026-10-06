@@ -2,41 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/NumberAdder.framework/NumberAdder`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xdd0` | `0xe0c` | **`+0x3c`** |
+| `__TEXT.__gcc_except_tab` | `0xe4` | `0xd4` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x148` | `0x138` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xdd0
-+  __TEXT.__text: 0xe0c
-   __TEXT.__objc_methlist: 0x80
-   __TEXT.__const: 0xa9
--  __TEXT.__gcc_except_tab: 0xe4
-+  __TEXT.__gcc_except_tab: 0xd4
-   __TEXT.__cstring: 0x149
-   __TEXT.__oslogstring: 0xdf
--  __TEXT.__unwind_info: 0x148
-+  __TEXT.__unwind_info: 0x138
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 35
--  Symbols:   180
-+  Symbols:   177
-   CStrings:  15
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__objc_data : content changed
+-  Symbols:   137
++  Symbols:   134
 Symbols:
 + GCC_except_table21
 + ____ZN19CLConnectionDeleterclEP12CLConnection_block_invoke
@@ -56,5 +35,4 @@ Functions:
 ~ __ZNSt12length_errorC1B9fqe220106EPKc -> ____ZL43_CLLogObjectForCategory_NumberAdder_Defaultv_block_invoke : 52 -> 48
 ~ ____ZL43_CLLogObjectForCategory_NumberAdder_Defaultv_block_invoke -> __ZNSt3__110unique_ptrI12CLConnection19CLConnectionDeleterE5resetB9fqe220106EPS1_ : 48 -> 128
 ~ __ZNSt3__110unique_ptrI12CLConnection19CLConnectionDeleterE5resetB9fqe220106EPS1_ -> ____ZN19CLConnectionDeleterclEP12CLConnection_block_invoke : 44 -> 8
-
 ```

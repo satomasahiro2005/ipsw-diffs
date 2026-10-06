@@ -2,54 +2,45 @@
 
 > `/usr/libexec/wifip2pd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__cstring`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5e6b80` | `0x5e6aa4` | **`-0xdc`** |
+| `__DATA.__data` | `0x15098` | `0x15088` | **`-0x10`** |
+| `__TEXT.__const` | `0x404f0` | `0x40500` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__cstring`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -887.6.0.0.0
--  __TEXT.__text: 0x5c70f8
 +887.7.0.0.0
-+  __TEXT.__text: 0x5c7030
-   __TEXT.__auth_stubs: 0x51c0
-   __TEXT.__objc_stubs: 0x4720
-   __TEXT.__objc_methlist: 0x1bf4
--  __TEXT.__const: 0x404f0
-+  __TEXT.__const: 0x40500
-   __TEXT.__swift5_typeref: 0xd379
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__cstring: 0xfa0a
-
-   __DATA.__objc_const: 0xacb0
-   __DATA.__objc_selrefs: 0x16e0
-   __DATA.__objc_data: 0x1920
--  __DATA.__data: 0x15098
-+  __DATA.__data: 0x15088
-   __DATA.__common: 0xb88
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
 Functions:
-~ sub_1004e0060 : 1644 -> 1444
+~ sub_1004f9390 : 1708 -> 1488
 CStrings:
 + "5b4900baeac11f144b8c4cb9be7ef1c0108b627ed27e8e9251c819fbf83c9169"
 + "75c46db78806764c088fff258f8506514e47b881a11bde6428ca968cd4149466"

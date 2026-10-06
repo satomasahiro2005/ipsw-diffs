@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CallsAppServices.framework/CallsAppServices`
 
-```diff
+### Section Size Changes
 
- 153.100.1.2.29
--  __TEXT.__text: 0xd3c9c
-+  __TEXT.__text: 0xd3c8c
-   __TEXT.__objc_methlist: 0x16b4
-   __TEXT.__const: 0x4a2e
-   __TEXT.__constg_swiftt: 0x1f84
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd3c9c` | `0xd3c8c` | **`-0x10`** |
+
+### Other Changes
+
+```diff
 Symbols:
 + _objc_retain_x11
 - _objc_retain_x10

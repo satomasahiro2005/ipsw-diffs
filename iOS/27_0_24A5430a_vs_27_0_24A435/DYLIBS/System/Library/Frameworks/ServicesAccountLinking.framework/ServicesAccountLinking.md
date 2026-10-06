@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/ServicesAccountLinking.framework/ServicesAccountLinking`
 
-```diff
+### Section Size Changes
 
- 1.5.1.0.0
--  __TEXT.__text: 0x4078
-+  __TEXT.__text: 0x407c
-   __TEXT.__objc_methlist: 0x50
-   __TEXT.__const: 0x40a
-   __TEXT.__constg_swiftt: 0xf0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4078` | `0x407c` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_24b67edcc -> sub_24c06adcc : 680 -> 684
+~ sub_24b52bdcc -> sub_24bf1edcc : 680 -> 684
 ```

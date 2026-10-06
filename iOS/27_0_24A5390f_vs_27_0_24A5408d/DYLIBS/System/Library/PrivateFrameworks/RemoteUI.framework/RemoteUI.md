@@ -2,105 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/RemoteUI.framework/RemoteUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x147d30` | `0x14e380` | **`+0x6650`** |
+| `__TEXT.__swift5_typeref` | `0x9488` | `0x9f34` | **`+0xaac`** |
+| `__TEXT.__const` | `0xf614` | `0xfb74` | **`+0x560`** |
+| `__DATA.__bss` | `0x130f8` | `0x13538` | **`+0x440`** |
+| `__TEXT.__constg_swiftt` | `0x5418` | `0x5684` | **`+0x26c`** |
+| `__AUTH.__data` | `0x2fb8` | `0x3158` | **`+0x1a0`** |
+| `__AUTH_CONST.__const` | `0x8890` | `0x8a30` | **`+0x1a0`** |
+| `__DATA.__data` | `0x48d0` | `0x4a60` | **`+0x190`** |
+| `__TEXT.__swift5_reflstr` | `0x2b0a` | `0x2c9a` | **`+0x190`** |
+| `__TEXT.__oslogstring` | `0x2a8e` | `0x2bfe` | **`+0x170`** |
+| `__AUTH.__objc_data` | `0x3ea8` | `0x3fe0` | **`+0x138`** |
+| `__TEXT.__unwind_info` | `0x57e8` | `0x5920` | **`+0x138`** |
+| `__TEXT.__swift5_fieldmd` | `0x395c` | `0x3a68` | **`+0x10c`** |
+| `__TEXT.__eh_frame` | `0x4f70` | `0x5050` | **`+0xe0`** |
+| `__AUTH_CONST.__objc_const` | `0xef20` | `0xefd0` | **`+0xb0`** |
+| `__TEXT.__swift5_assocty` | `0x13f8` | `0x1490` | **`+0x98`** |
+| `__TEXT.__cstring` | `0x567d` | `0x56ed` | **`+0x70`** |
+| `__DATA_CONST.__const` | `0x1638` | `0x1668` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x1240` | `0x1260` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x8f74` | `0x8f54` | **`-0x20`** |
+| `__TEXT.__swift5_capture` | `0xd74` | `0xd94` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x494` | `0x4b0` | **`+0x1c`** |
+| `__AUTH_CONST.__auth_got` | `0x21d0` | `0x21e8` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5708` | `0x56f0` | **`-0x18`** |
+| `__TEXT.__swift5_proto` | `0x948` | `0x960` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x448` | `0x458` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x290` | `0x280` | **`-0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0xc8` | `0xc0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -635.0.0.0.0
--  __TEXT.__text: 0x147d30
--  __TEXT.__objc_methlist: 0x8f74
--  __TEXT.__const: 0xf614
--  __TEXT.__cstring: 0x567d
--  __TEXT.__oslogstring: 0x2a8e
 +639.1.1.0.0
-+  __TEXT.__text: 0x14e380
-+  __TEXT.__objc_methlist: 0x8f54
-+  __TEXT.__const: 0xfb74
-+  __TEXT.__cstring: 0x56ed
-+  __TEXT.__oslogstring: 0x2bfe
-   __TEXT.__gcc_except_tab: 0x7e8
-   __TEXT.__dlopen_cstrs: 0x313
--  __TEXT.__swift5_typeref: 0x9488
--  __TEXT.__swift5_reflstr: 0x2b0a
--  __TEXT.__swift5_assocty: 0x13f8
--  __TEXT.__constg_swiftt: 0x5418
--  __TEXT.__swift5_fieldmd: 0x395c
--  __TEXT.__swift5_proto: 0x948
--  __TEXT.__swift5_types: 0x494
--  __TEXT.__swift5_capture: 0xd74
-+  __TEXT.__swift5_typeref: 0x9f34
-+  __TEXT.__swift5_reflstr: 0x2c9a
-+  __TEXT.__swift5_assocty: 0x1490
-+  __TEXT.__constg_swiftt: 0x5684
-+  __TEXT.__swift5_fieldmd: 0x3a68
-+  __TEXT.__swift5_proto: 0x960
-+  __TEXT.__swift5_types: 0x4b0
-+  __TEXT.__swift5_capture: 0xd94
-   __TEXT.__swift_as_entry: 0x128
-   __TEXT.__swift_as_ret: 0x12c
-   __TEXT.__swift_as_cont: 0x1c0
-   __TEXT.__swift5_protos: 0x7c
-   __TEXT.__swift5_builtin: 0x1cc
-   __TEXT.__swift5_mpenum: 0x3c
--  __TEXT.__unwind_info: 0x57e8
--  __TEXT.__eh_frame: 0x4f70
-+  __TEXT.__unwind_info: 0x5920
-+  __TEXT.__eh_frame: 0x5050
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1638
--  __DATA_CONST.__objc_classlist: 0x448
-+  __DATA_CONST.__const: 0x1668
-+  __DATA_CONST.__objc_classlist: 0x458
-   __DATA_CONST.__objc_catlist: 0x80
--  __DATA_CONST.__objc_protolist: 0x290
-+  __DATA_CONST.__objc_protolist: 0x280
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5708
--  __DATA_CONST.__objc_protorefs: 0xc8
-+  __DATA_CONST.__objc_selrefs: 0x56f0
-+  __DATA_CONST.__objc_protorefs: 0xc0
-   __DATA_CONST.__objc_superrefs: 0x1b8
-   __DATA_CONST.__objc_arraydata: 0x100
--  __DATA_CONST.__got: 0x1240
--  __AUTH_CONST.__const: 0x8890
-+  __DATA_CONST.__got: 0x1260
-+  __AUTH_CONST.__const: 0x8a30
-   __AUTH_CONST.__cfstring: 0x44a0
--  __AUTH_CONST.__objc_const: 0xef20
-+  __AUTH_CONST.__objc_const: 0xefd0
-   __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__objc_intobj: 0x138
-   __AUTH_CONST.__objc_dictobj: 0xa0
-   __AUTH_CONST.__objc_arrayobj: 0x30
-   __AUTH_CONST.__objc_doubleobj: 0x30
--  __AUTH_CONST.__auth_got: 0x21d0
--  __AUTH.__objc_data: 0x3ea8
--  __AUTH.__data: 0x2fb8
-+  __AUTH_CONST.__auth_got: 0x21e8
-+  __AUTH.__objc_data: 0x3fe0
-+  __AUTH.__data: 0x3158
-   __DATA.__objc_ivar: 0x81c
--  __DATA.__data: 0x48d0
-+  __DATA.__data: 0x4a60
-   __DATA.__objc_stublist: 0x8
--  __DATA.__bss: 0x130f8
-+  __DATA.__bss: 0x13538
-   __DATA.__common: 0xa8
-   __DATA_DIRTY.__objc_data: 0x208
-   __DATA_DIRTY.__data: 0x28
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8048
--  Symbols:   8601
+-  Symbols:   6596
 -  CStrings:  1139
 +  Functions: 8169
-+  Symbols:   8659
++  Symbols:   6653
 +  CStrings:  1147
- 
 Symbols:
 + -[RUIPaddingWebview _updateContentMargins]
 + -[RUIPaddingWebview safeAreaInsetsDidChange]
@@ -139,7 +86,6 @@ Symbols:
 + _get_witness_table 7SwiftUI6VStackVyAA12TupleContentVyAA08ModifiedE0VyAGyAGyAA6HStackVyAEyAA6SpacerV_AGyAA7AnyViewVAA12_FrameLayoutVGAKQPGGAA08_PaddingL0VGATGAA30_EnvironmentKeyWritingModifierVyAA13TextAlignmentOGG_AGyAGyAA0J0PAAE10fontWeightyQrAA4FontV0U0VSgFQOyAGyAGyAA0R0VA_GAXyA5_SgGG_Qo_AXySiSgGGAA010_FixedSizeL0VGAGyAGyAGyAGyAGyAGyAMA13_GAA016_ForegroundStyleQ0VyAA017HierarchicalShapeZ0VGGAXyy10Foundation16AttributedStringVzcGGA17_GA_GA20_GSgQPGGAAA1_HPyHC
 + _get_witness_table 7SwiftUI6VStackVyAA12TupleContentVyAA7AnyViewV_AA08ModifiedE0VyAA6SpacerVAA12_FrameLayoutVGAgEyAN_06RemoteB0018CenteringContainerG0VQPGSgAkGSgAkTQPGGAA0G0HPyHC
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBP06RemoteB0E06appendC7ContextyQrAD0cF0OFQOyAA5GroupVyAA19_ConditionalContentVyAA03AnyC0VAKyAA6ButtonVyAA6HStackVyAA05TupleI0VyAA5ImageVSg_AA4TextVQPGGGAcDE11openURLView4withQrAD9URLLoaderV_tFQOyAX_Qo_GGG_Qo_HO
-+ _objc_msgSend$_updateContentMargins
 + _symbolic _____ 8RemoteUI12KeyboardViewV
 + _symbolic _____ 8RemoteUI18KeyboardControllerC
 + _symbolic _____ 8RemoteUI22CenteringContainerViewV

@@ -2,35 +2,29 @@
 
 > `/System/Library/Frameworks/CoreTelephony.framework/Support/libSystemDetermination.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x72158` | `0x715b0` | **`-0xba8`** |
+| `__TEXT.__oslogstring` | `0xa4a0` | `0xa02c` | **`-0x474`** |
+| `__TEXT.__gcc_except_tab` | `0x5bc0` | `0x5b3c` | **`-0x84`** |
+| `__TEXT.__const` | `0x4289` | `0x4279` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x2510` | `0x2508` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -13496.3.0.0.0
--  __TEXT.__text: 0x7093c
--  __TEXT.__const: 0x4289
--  __TEXT.__gcc_except_tab: 0x5bc0
 +13498.0.0.0.0
-+  __TEXT.__text: 0x6fd8c
-+  __TEXT.__const: 0x4279
-+  __TEXT.__gcc_except_tab: 0x5b3c
-   __TEXT.__cstring: 0x36ea
--  __TEXT.__oslogstring: 0xa4a0
--  __TEXT.__unwind_info: 0x2830
-+  __TEXT.__oslogstring: 0xa02c
-+  __TEXT.__unwind_info: 0x2810
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0xe00
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1856
 -  Symbols:   3065
 -  CStrings:  1485
 +  Functions: 1854
 +  Symbols:   3057
 +  CStrings:  1463
- 
 Symbols:
 + __ZNSt3__110unique_ptrIZNK3ctu20SharedSynchronizableIN2sd18RcsPcscfConnectionEE15execute_wrappedIZZNS4_17handleStateChangeEvEUb_E3$_0EEvOT_EUlvE_NS_14default_deleteISA_EEED1B9foe220106Ev
 + __ZNSt3__110unique_ptrIZNK3ctu20SharedSynchronizableIN2sd18RcsPcscfConnectionEE15execute_wrappedIZZNS4_17handleStateChangeEvEUb_E3$_1EEvOT_EUlvE_NS_14default_deleteISA_EEED1B9foe220106Ev

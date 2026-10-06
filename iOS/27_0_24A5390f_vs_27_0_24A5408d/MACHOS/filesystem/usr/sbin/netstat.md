@@ -2,30 +2,25 @@
 
 > `/usr/sbin/netstat`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0xf116` | `0xf2c1` | **`+0x1ab`** |
+| `__TEXT.__text` | `0x1b114` | `0x1b288` | **`+0x174`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
- 755.0.0.0.0
--  __TEXT.__text: 0x1b114
-+  __TEXT.__text: 0x1b288
-   __TEXT.__auth_stubs: 0x4e0
--  __TEXT.__cstring: 0xf116
-+  __TEXT.__cstring: 0xf2c1
-   __TEXT.__const: 0x3d8
-   __TEXT.__unwind_info: 0x200
-   __DATA_CONST.__const: 0x14b8
-
-   - /usr/lib/libpcap.A.dylib
-   Functions: 124
-   Symbols:   269
 -  CStrings:  2371
 +  CStrings:  2381
- 
 Functions:
 ~ _print_if_lpw_stats : 2164 -> 2392
 ~ _print_droptap_stats : 4308 -> 4344

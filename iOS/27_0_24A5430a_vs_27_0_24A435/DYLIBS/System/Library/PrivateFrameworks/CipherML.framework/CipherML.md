@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/CipherML.framework/CipherML`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1dd700` | `0x1dd764` | **`+0x64`** |
+| `__AUTH_CONST.__auth_got` | `0x1968` | `0x1970` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 383.0.24.0.0
--  __TEXT.__text: 0x1dd700
-+  __TEXT.__text: 0x1dd764
-   __TEXT.__objc_methlist: 0x14ec
-   __TEXT.__const: 0x121c0
-   __TEXT.__cstring: 0x3798
-
-   __AUTH_CONST.__const: 0x64b0
-   __AUTH_CONST.__cfstring: 0xb00
-   __AUTH_CONST.__objc_const: 0x3c08
--  __AUTH_CONST.__auth_got: 0x1968
-+  __AUTH_CONST.__auth_got: 0x1970
-   __AUTH.__objc_data: 0x48
-   __AUTH.__data: 0x1380
-   __DATA.__objc_ivar: 0xd8
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 9968
--  Symbols:   21172
-+  Symbols:   21173
-   CStrings:  573
- 
+-  Symbols:   20877
++  Symbols:   20878
 Symbols:
 + _swift_release_x10
 Functions:

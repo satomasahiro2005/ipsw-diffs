@@ -2,86 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/SiriAppIntentsRuntime.framework/SiriAppIntentsRuntime`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9d554` | `0x9e34c` | **`+0xdf8`** |
+| `__DATA_DIRTY.__data` | `0xd68` | `0xfa0` | **`+0x238`** |
+| `__AUTH.__data` | `0xae8` | `0x900` | **`-0x1e8`** |
+| `__TEXT.__eh_frame` | `0x5d60` | `0x5e98` | **`+0x138`** |
+| `__TEXT.__oslogstring` | `0x404d` | `0x40cd` | **`+0x80`** |
+| `__AUTH_CONST.__const` | `0x53f0` | `0x5468` | **`+0x78`** |
+| `__DATA.__data` | `0xc48` | `0xbe8` | **`-0x60`** |
+| `__TEXT.__unwind_info` | `0x21f0` | `0x2240` | **`+0x50`** |
+| `__TEXT.__swift5_capture` | `0x1cc4` | `0x1d0c` | **`+0x48`** |
+| `__DATA.__common` | `0xd0` | `0xa0` | **`-0x30`** |
+| `__DATA_DIRTY.__common` | `0xf8` | `0x128` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x448` | `0x464` | **`+0x1c`** |
+| `__TEXT.__swift5_typeref` | `0x1acb` | `0x1ae7` | **`+0x1c`** |
+| `__DATA_DIRTY.__objc_data` | `0xa20` | `0xa38` | **`+0x18`** |
+| `__TEXT.__swift_as_cont` | `0x3ec` | `0x400` | **`+0x14`** |
+| `__AUTH_CONST.__auth_got` | `0x1af0` | `0x1af8` | **`+0x8`** |
+| `__AUTH_CONST.__objc_const` | `0x1120` | `0x1128` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x458` | `0x460` | **`+0x8`** |
+| `__TEXT.__constg_swiftt` | `0x10d4` | `0x10dc` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x264` | `0x26c` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x208` | `0x210` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3605.15.1.0.0
--  __TEXT.__text: 0x942f4
--  __TEXT.__objc_methlist: 0x448
 +3605.17.1.0.0
-+  __TEXT.__text: 0x94f98
-+  __TEXT.__objc_methlist: 0x464
-   __TEXT.__const: 0x3810
-   __TEXT.__cstring: 0x16d1
--  __TEXT.__constg_swiftt: 0x10d4
--  __TEXT.__swift5_typeref: 0x1acb
-+  __TEXT.__constg_swiftt: 0x10dc
-+  __TEXT.__swift5_typeref: 0x1ae7
-   __TEXT.__swift5_reflstr: 0xeea
-   __TEXT.__swift5_fieldmd: 0xc84
--  __TEXT.__oslogstring: 0x404d
-+  __TEXT.__oslogstring: 0x40cd
-   __TEXT.__swift5_builtin: 0x50
-   __TEXT.__swift5_assocty: 0xe0
-   __TEXT.__swift5_proto: 0x1ac
-   __TEXT.__swift5_types: 0x104
--  __TEXT.__swift_as_entry: 0x264
--  __TEXT.__swift_as_ret: 0x208
--  __TEXT.__swift_as_cont: 0x3ec
--  __TEXT.__swift5_capture: 0x1cc4
-+  __TEXT.__swift_as_entry: 0x26c
-+  __TEXT.__swift_as_ret: 0x210
-+  __TEXT.__swift_as_cont: 0x400
-+  __TEXT.__swift5_capture: 0x1d0c
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x2698
--  __TEXT.__eh_frame: 0x5d70
-+  __TEXT.__unwind_info: 0x26e8
-+  __TEXT.__eh_frame: 0x5ea0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x90
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x458
-+  __DATA_CONST.__objc_selrefs: 0x460
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x53f0
--  __AUTH_CONST.__objc_const: 0x1120
--  __AUTH_CONST.__auth_got: 0x1af0
-+  __AUTH_CONST.__const: 0x5468
-+  __AUTH_CONST.__objc_const: 0x1128
-+  __AUTH_CONST.__auth_got: 0x1af8
-   __AUTH.__objc_data: 0xf0
--  __AUTH.__data: 0xae8
--  __DATA.__data: 0xc48
--  __DATA.__common: 0xd0
--  __DATA_DIRTY.__objc_data: 0xa20
--  __DATA_DIRTY.__data: 0xd68
-+  __AUTH.__data: 0x900
-+  __DATA.__data: 0xbe8
-+  __DATA.__common: 0xa0
-+  __DATA_DIRTY.__objc_data: 0xa38
-+  __DATA_DIRTY.__data: 0xfa0
-   __DATA_DIRTY.__bss: 0xb80
--  __DATA_DIRTY.__common: 0xf8
-+  __DATA_DIRTY.__common: 0x128
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3608
 +  Functions: 3643
-   Symbols:   228
+
 -  CStrings:  384
 +  CStrings:  386
- 
 CStrings:
 + "Failed to fetch session events (framed): %@"
 + "Fetching session events (framed) for %s from %s until %s"

@@ -2,78 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/HDRProcessing.framework/HDRProcessing`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__gcc_except_tab`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa757c` | `0xa81f8` | **`+0xc7c`** |
+| `__AUTH.__objc_data` | `0x410` | `—` | **`-0x410`** |
+| `__DATA_DIRTY.__objc_data` | `0x780` | `0xb90` | **`+0x410`** |
+| `__TEXT.__cstring` | `0x85c5` | `0x85e7` | **`+0x22`** |
+| `__AUTH_CONST.__cfstring` | `0x5440` | `0x5460` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x2d0` | `0x2e0` | **`+0x10`** |
+| `__TEXT.__const` | `0x4bf8` | `0x4c08` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x15e8` | `0x15f0` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__TEXT.__oslogstring`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -1.514.1.0.0
--  __TEXT.__text: 0xa757c
 +1.515.1.0.0
-+  __TEXT.__text: 0xa81f8
-   __TEXT.__objc_methlist: 0x2548
--  __TEXT.__const: 0x4bf8
-+  __TEXT.__const: 0x4c08
-   __TEXT.__gcc_except_tab: 0x25ac
-   __TEXT.__oslogstring: 0xf1a0
--  __TEXT.__cstring: 0x85c5
--  __TEXT.__unwind_info: 0x15e8
-+  __TEXT.__cstring: 0x85e7
-+  __TEXT.__unwind_info: 0x15f0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0x1580
-   __DATA_CONST.__objc_superrefs: 0x108
-   __DATA_CONST.__objc_arraydata: 0x40
--  __DATA_CONST.__got: 0x2d0
-+  __DATA_CONST.__got: 0x2e0
-   __AUTH_CONST.__const: 0x200
--  __AUTH_CONST.__cfstring: 0x5440
-+  __AUTH_CONST.__cfstring: 0x5460
-   __AUTH_CONST.__objc_const: 0x7e00
-   __AUTH_CONST.__weak_auth_got: 0x20
-   __AUTH_CONST.__objc_intobj: 0x60
-   __AUTH_CONST.__objc_arrayobj: 0x90
-   __AUTH_CONST.__auth_got: 0x568
--  __AUTH.__objc_data: 0x410
-   __DATA.__objc_ivar: 0xb84
-   __DATA.__data: 0x940
-   __DATA.__common: 0x30
-   __DATA.__bss: 0x3228
-   __DATA_DIRTY.__objc_ivar: 0xe8
--  __DATA_DIRTY.__objc_data: 0x780
-+  __DATA_DIRTY.__objc_data: 0xb90
-   __DATA_DIRTY.__data: 0x4
-   __DATA_DIRTY.__common: 0xb430
-   __DATA_DIRTY.__bss: 0x510
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 1336
--  Symbols:   3509
+-  Symbols:   2909
 -  CStrings:  1535
 +  Functions: 1338
-+  Symbols:   3511
++  Symbols:   2911
 +  CStrings:  1536
- 
 Symbols:
 + -[HistBasedToneMapping getHistStatFromLayer:HDRMode:HDRProfile:transferFunction:videoFullRangeFlag:bitDepth:temporalMode:iirAlpha:frameNumber:]
 + -[HistBasedToneMapping normalizeHistData:hdrProfile:transferFunction:videoFullRangeFlag:bitDepth:]
@@ -81,16 +39,10 @@ Symbols:
 + _SMPTE_ST_2094_50_SPI_ConvertSyntaxElementsToMetadataSet
 + _SMPTE_ST_2094_50_SPI_DecodeBinaryDataToSyntaxElements
 + _SMPTE_ST_2094_50_SPI_GenerateToneMapLUT
-+ _objc_msgSend$getHistStatFromLayer:HDRMode:HDRProfile:transferFunction:videoFullRangeFlag:bitDepth:temporalMode:iirAlpha:frameNumber:
-+ _objc_msgSend$normalizeHistData:hdrProfile:transferFunction:videoFullRangeFlag:bitDepth:
-+ _objc_msgSend$normalizeHistDataForDoViInput:
 - -[HistBasedToneMapping getHistStatFromLayer:HDRMode:transferFunction:videoFullRangeFlag:bitDepth:temporalMode:iirAlpha:frameNumber:]
 - -[HistBasedToneMapping normalizeHistData:transferFunction:videoFullRangeFlag:bitDepth:]
 - -[HistBasedToneMapping normalizeHistDataForDoViInput]
 - __ZL10descendingPKvS0_
-- _objc_msgSend$getHistStatFromLayer:HDRMode:transferFunction:videoFullRangeFlag:bitDepth:temporalMode:iirAlpha:frameNumber:
-- _objc_msgSend$normalizeHistData:transferFunction:videoFullRangeFlag:bitDepth:
-- _objc_msgSend$normalizeHistDataForDoViInput
 CStrings:
 + " [1.515.1] \n"
 + " [1.515.1]      No entries to dump!\n"

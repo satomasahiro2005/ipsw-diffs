@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/LighthouseCoreMLFeatureStore.framework/LighthouseCoreMLFeatureStore`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_1 -> _OUTLINED_FUNCTION_0 : 20 -> 28

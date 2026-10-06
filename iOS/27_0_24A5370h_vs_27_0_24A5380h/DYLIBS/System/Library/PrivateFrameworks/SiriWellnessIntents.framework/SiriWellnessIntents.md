@@ -2,48 +2,21 @@
 
 > `/System/Library/PrivateFrameworks/SiriWellnessIntents.framework/SiriWellnessIntents`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__oslogstring` | `0x3cd1` | `0x3df1` | **`+0x120`** |
+| `__TEXT.__text` | `0x142dec` | `0x142e88` | **`+0x9c`** |
+| `__TEXT.__eh_frame` | `0x275c` | `0x2784` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x1b98` | `0x1ba0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x142dec
-+  __TEXT.__text: 0x142e88
-   __TEXT.__objc_methlist: 0x1180
-   __TEXT.__const: 0x4af8
-   __TEXT.__cstring: 0x20f8
-
-   __TEXT.__swift5_types: 0x1c0
-   __TEXT.__swift5_protos: 0x44
-   __TEXT.__swift5_capture: 0x4540
--  __TEXT.__oslogstring: 0x3cd1
-+  __TEXT.__oslogstring: 0x3df1
-   __TEXT.__swift_as_entry: 0x270
-   __TEXT.__swift_as_ret: 0x3c4
-   __TEXT.__swift_as_cont: 0x448
--  __TEXT.__unwind_info: 0x1b98
--  __TEXT.__eh_frame: 0x275c
-+  __TEXT.__unwind_info: 0x1ba0
-+  __TEXT.__eh_frame: 0x2784
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
+-3600.12.4.1.1
++3600.12.12.0.0
 CStrings:
 + "    Built MatchedMedName:\n        scheduleID (%{sensitive}s),\n        medID (%{sensitive}s),\n        name (%{sensitive}s),\n        schedule (%{sensitive}s),\n        loggedTime (%{sensitive}s),\n        status (%{sensitive}s),\n        dosage (%{sensitive}s),\n        dosageUnit (%{sensitive}s),\n        strength (%{sensitive}s),\n        strengthUnit (%{sensitive}s),\n        completionStatus (%{sensitive}s)"
 + "%{sensitive}@"
@@ -71,5 +44,4 @@ CStrings:
 - "summary: %@"
 - "updateDosageForDoseEvent: asNeededDosageFromHealthApp (%s)"
 - "updateDosageForDoseEvent: using healthAppDosage (%s)"
-
 ```

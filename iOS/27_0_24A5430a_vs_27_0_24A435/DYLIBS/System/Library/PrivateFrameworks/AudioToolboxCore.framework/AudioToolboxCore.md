@@ -2,30 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore`
 
-```diff
+### Section Size Changes
 
- 1638.104.3.0.0
--  __TEXT.__text: 0x3057d0
--  __TEXT.__realtime: 0x38e00
-+  __TEXT.__text: 0x305a28
-+  __TEXT.__realtime: 0x3910c
-   __TEXT.__objc_methlist: 0x3c94
-   __TEXT.__const: 0x2462a
-   __TEXT.__dlopen_cstrs: 0x50a
--  __TEXT.__gcc_except_tab: 0x26da4
-+  __TEXT.__gcc_except_tab: 0x26db4
-   __TEXT.__cstring: 0x212ea
-   __TEXT.__oslogstring: 0x1563e
-   __TEXT.__dof_AudioTool: 0x4f1
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__realtime` | `0x38e00` | `0x3910c` | **`+0x30c`** |
+| `__TEXT.__text` | `0x3057d0` | `0x305a28` | **`+0x258`** |
+| `__TEXT.__gcc_except_tab` | `0x26da4` | `0x26db4` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0xe600` | `0xe608` | **`+0x8`** |
 
-   __TEXT.__dof_AudioConv: 0x129e
-   __TEXT.__dof_AUHostin0: 0x4a9
-   __TEXT.__dof_IPCAudioU: 0x582
--  __TEXT.__unwind_info: 0xe600
-+  __TEXT.__unwind_info: 0xe608
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+### Other Changes
+
+```text
 Functions:
 ~ _AudioFormatGetProperty : 14624 -> 14636
 ~ _AudioFormatGetPropertyInfo : 6832 -> 6836

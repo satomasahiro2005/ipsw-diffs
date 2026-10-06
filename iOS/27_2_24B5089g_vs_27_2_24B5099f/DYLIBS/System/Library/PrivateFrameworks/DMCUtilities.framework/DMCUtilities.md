@@ -2,79 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/DMCUtilities.framework/DMCUtilities`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x36938` | `0x37628` | **`+0xcf0`** |
+| `__TEXT.__oslogstring` | `0x5a74` | `0x5bf5` | **`+0x181`** |
+| `__DATA_CONST.__objc_selrefs` | `0x26d0` | `0x2790` | **`+0xc0`** |
+| `__TEXT.__objc_methlist` | `0x3004` | `0x309c` | **`+0x98`** |
+| `__AUTH_CONST.__objc_const` | `0x4640` | `0x46d0` | **`+0x90`** |
+| `__TEXT.__gcc_except_tab` | `0x5fc` | `0x654` | **`+0x58`** |
+| `__DATA_DIRTY.__objc_data` | `0xa0` | `0xf0` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0xe40` | `0xe88` | **`+0x48`** |
+| `__AUTH_CONST.__cfstring` | `0x4460` | `0x44a0` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x3b2d` | `0x3b61` | **`+0x34`** |
+| `__AUTH_CONST.__objc_intobj` | `0x168` | `0x198` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x1318` | `0x1340` | **`+0x28`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x18` | `0x30` | **`+0x18`** |
+| `__DATA_CONST.__objc_arraydata` | `0x28` | `0x38` | **`+0x10`** |
+| `__TEXT.__const` | `0x1a8` | `0x1b8` | **`+0x10`** |
+| `__DATA.__bss` | `0x928` | `0x930` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x710` | `0x718` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x1a0` | `0x1a8` | **`+0x8`** |
+| `__DATA.__data` | `0x300` | `0x2f9` | **`-0x7`** |
+
+### Other Changes
+
 ```diff
 
 -113.40.17.0.0
--  __TEXT.__text: 0x352e0
--  __TEXT.__objc_methlist: 0x3004
--  __TEXT.__const: 0x1a8
--  __TEXT.__gcc_except_tab: 0x5fc
--  __TEXT.__cstring: 0x3b2d
--  __TEXT.__oslogstring: 0x5a74
 +113.40.20.0.0
-+  __TEXT.__text: 0x35f88
-+  __TEXT.__objc_methlist: 0x309c
-+  __TEXT.__const: 0x1b8
-+  __TEXT.__gcc_except_tab: 0x654
-+  __TEXT.__cstring: 0x3b61
-+  __TEXT.__oslogstring: 0x5bf5
-   __TEXT.__dlopen_cstrs: 0x165
--  __TEXT.__unwind_info: 0x1300
-+  __TEXT.__unwind_info: 0x1350
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1318
--  __DATA_CONST.__objc_classlist: 0x1a0
-+  __DATA_CONST.__const: 0x1340
-+  __DATA_CONST.__objc_classlist: 0x1a8
-   __DATA_CONST.__objc_catlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x38
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x26d0
-+  __DATA_CONST.__objc_selrefs: 0x2790
-   __DATA_CONST.__objc_superrefs: 0xc8
--  __DATA_CONST.__objc_arraydata: 0x28
--  __DATA_CONST.__got: 0x710
-+  __DATA_CONST.__objc_arraydata: 0x38
-+  __DATA_CONST.__got: 0x718
-   __AUTH_CONST.__const: 0xd00
--  __AUTH_CONST.__cfstring: 0x4460
--  __AUTH_CONST.__objc_const: 0x4640
--  __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__objc_intobj: 0x168
-+  __AUTH_CONST.__cfstring: 0x44a0
-+  __AUTH_CONST.__objc_const: 0x46d0
-+  __AUTH_CONST.__objc_arrayobj: 0x30
-+  __AUTH_CONST.__objc_intobj: 0x198
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__auth_got: 0x800
-   __AUTH.__objc_data: 0xfa0
-   __DATA.__objc_ivar: 0x214
--  __DATA.__data: 0x300
--  __DATA_DIRTY.__objc_data: 0xa0
-+  __DATA.__data: 0x2f9
-+  __DATA_DIRTY.__objc_data: 0xf0
-   __DATA_DIRTY.__bss: 0xd0
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-+  - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/CoreTelephony.framework/CoreTelephony
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
 
-   - /usr/lib/liblockdown.dylib
-   - /usr/lib/libmis.dylib
-   - /usr/lib/libobjc.A.dylib
++  - /System/Library/Frameworks/CoreServices.framework/CoreServices
+
 -  Functions: 1441
 -  Symbols:   2841
 -  CStrings:  1044
 +  Functions: 1460
 +  Symbols:   2863
 +  CStrings:  1052
- 
 Symbols:
 + +[DMCAppNetworkAccessCheck _stateForBundleID:]
 + +[DMCAppNetworkAccessCheck _stateForPolicy:]

@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/MapKit.framework/MapKit`
 
-```diff
+### Section Size Changes
 
- 2552.30.6.12.12
--  __TEXT.__text: 0x28fef0
-+  __TEXT.__text: 0x28fee8
-   __TEXT.__objc_methlist: 0x26b94
-   __TEXT.__const: 0x6910
-   __TEXT.__dlopen_cstrs: 0xbc
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x28fef0` | `0x28fee8` | **`-0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[MKGradientPolylineRenderer drawMapRect:zoomScale:inContext:] : 3912 -> 3908
 ~ ___64-[MKOverlayView _forEachMapRectForKey:withContext:performBlock:]_block_invoke : 592 -> 596

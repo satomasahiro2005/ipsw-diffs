@@ -2,42 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/ASEProcessing.framework/ASEProcessing`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8fe8` | `0x8e9c` | **`-0x14c`** |
+| `__DATA_CONST.__const` | `0x228` | `0x2a8` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x170` | `0x178` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__oslogstring`
+
+### Other Changes
 
 ```diff
 
 -1.58.0.0.0
--  __TEXT.__text: 0x8fe8
 +1.59.0.0.0
-+  __TEXT.__text: 0x8e9c
-   __TEXT.__objc_methlist: 0x2dc
-   __TEXT.__const: 0x63bc
-   __TEXT.__cstring: 0x448
-   __TEXT.__oslogstring: 0x2bd
--  __TEXT.__unwind_info: 0x170
-+  __TEXT.__unwind_info: 0x178
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x228
-+  __DATA_CONST.__const: 0x2a8
-   __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x180
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 122
--  Symbols:   712
+-  Symbols:   673
 +  Functions: 123
-+  Symbols:   713
-   CStrings:  61
- 
++  Symbols:   674
 Symbols:
 + _getWeightedBlendConfig
 Functions:

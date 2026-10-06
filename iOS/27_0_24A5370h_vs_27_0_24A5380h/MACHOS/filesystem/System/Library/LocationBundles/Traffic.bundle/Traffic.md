@@ -2,13 +2,16 @@
 
 > `/System/Library/LocationBundles/Traffic.bundle/Traffic`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x40` | `0x38` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__text: 0x0
--  __TEXT.__const: 0x40
-+  __TEXT.__const: 0x38
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /usr/lib/libSystem.B.dylib
-   Functions: 0
-
+-3169.4.0.0.0
++3176.0.0.0.0
 ```

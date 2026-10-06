@@ -2,82 +2,34 @@
 
 > `/System/Library/AccessibilityBundles/UIKit.axbundle/UIKit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH.__objc_data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x158874` | `0x15951c` | **`+0xca8`** |
+| `__AUTH_CONST.__cfstring` | `0x1df20` | `0x1dfc0` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0x192e0` | `0x19341` | **`+0x61`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5d48` | `0x5d80` | **`+0x38`** |
+| `__TEXT.__objc_methlist` | `0xfb24` | `0xfb5c` | **`+0x38`** |
+| `__AUTH_CONST.__objc_const` | `0x20720` | `0x20740` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x42a0` | `0x42b8` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0xfc8` | `0xfd0` | **`+0x8`** |
+| `__TEXT.__const` | `0x1a0` | `0x1a8` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -3042.0.0.0.0
--  __TEXT.__text: 0x158874
--  __TEXT.__objc_methlist: 0xfb24
 +3045.0.0.0.0
-+  __TEXT.__text: 0x15951c
-+  __TEXT.__objc_methlist: 0xfb5c
-   __TEXT.__dlopen_cstrs: 0xb8
--  __TEXT.__const: 0x1a0
-+  __TEXT.__const: 0x1a8
-   __TEXT.__gcc_except_tab: 0x35c4
--  __TEXT.__cstring: 0x192e0
-+  __TEXT.__cstring: 0x19341
-   __TEXT.__oslogstring: 0x24cb
-   __TEXT.__ustring: 0x78
--  __TEXT.__unwind_info: 0x42a0
-+  __TEXT.__unwind_info: 0x42b8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5d48
-+  __DATA_CONST.__objc_selrefs: 0x5d80
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_superrefs: 0xa80
-   __DATA_CONST.__objc_arraydata: 0x160
--  __DATA_CONST.__got: 0xfc8
-+  __DATA_CONST.__got: 0xfd0
-   __AUTH_CONST.__const: 0x17c0
--  __AUTH_CONST.__cfstring: 0x1df20
--  __AUTH_CONST.__objc_const: 0x20720
-+  __AUTH_CONST.__cfstring: 0x1dfc0
-+  __AUTH_CONST.__objc_const: 0x20740
-   __AUTH_CONST.__objc_intobj: 0x210
-   __AUTH_CONST.__objc_dictobj: 0x140
-   __AUTH_CONST.__objc_arrayobj: 0x18
-
-   __DATA_DIRTY.__objc_data: 0x105e0
-   __DATA_DIRTY.__common: 0x8
-   __DATA_DIRTY.__bss: 0x1e9
 +  - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreTelephony.framework/CoreTelephony
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 5973
--  Symbols:   14021
+-  Symbols:   11870
 -  CStrings:  4198
 +  Functions: 5978
-+  Symbols:   14039
++  Symbols:   11884
 +  CStrings:  4203
- 
 Symbols:
 + -[UIImageAccessibility accessibilityImageDataSize]
 + -[UIImageAccessibility accessibilityImageDataWithParameters:]
@@ -261,10 +213,6 @@ Symbols:
 + ____accessibilityRGBAImageData_block_invoke
 + __accessibilityRGBAImageData
 + _fmod
-+ _objc_msgSend$CGImage
-+ _objc_msgSend$dataWithBytes:length:
-+ _objc_msgSend$decelerationRate
-+ _objc_msgSend$preferredFormat
 + _vImageUnpremultiplyData_RGBA8888
 - GCC_except_table1104
 - GCC_except_table1111

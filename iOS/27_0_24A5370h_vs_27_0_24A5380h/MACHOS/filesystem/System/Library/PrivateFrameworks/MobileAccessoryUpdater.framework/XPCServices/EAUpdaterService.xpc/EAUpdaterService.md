@@ -2,19 +2,25 @@
 
 > `/System/Library/PrivateFrameworks/MobileAccessoryUpdater.framework/XPCServices/EAUpdaterService.xpc/EAUpdaterService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xed5c` | `0xed68` | **`+0xc`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__const`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xed5c
-+  __TEXT.__text: 0xed68
-   __TEXT.__auth_stubs: 0x590
-   __TEXT.__objc_stubs: 0x2dc0
-   __TEXT.__objc_methlist: 0xd6c
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
+-1587.0.3.0.3
++1587.0.21.0.0
 Functions:
 ~ sub_10000a4ac : 424 -> 428
 ~ sub_10000e21c -> sub_10000e220 : 1112 -> 1120
-
 ```

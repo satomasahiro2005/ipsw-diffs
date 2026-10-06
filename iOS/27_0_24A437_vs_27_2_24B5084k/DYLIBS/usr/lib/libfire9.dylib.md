@@ -2,34 +2,28 @@
 
 > `/usr/lib/libfire9.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x9f758` | `0x555a8` | **`-0x4a1b0`** |
+| `__TEXT.__cstring` | `0x1bd1a` | `0x1bbf6` | **`-0x124`** |
+| `__DATA_CONST.__const` | `0xaa08` | `0xa960` | **`-0xa8`** |
+| `__TEXT.__text` | `0x302ae8` | `0x302b7c` | **`+0x94`** |
+
+### Other Changes
+
 ```diff
 
 -32.0.0.0.0
--  __TEXT.__text: 0x2fb0a4
--  __TEXT.__const: 0x9f758
--  __TEXT.__cstring: 0x1bd1a
 +34.0.3.0.0
-+  __TEXT.__text: 0x2fb140
-+  __TEXT.__const: 0x555a8
-+  __TEXT.__cstring: 0x1bbf6
-   __TEXT.__oslogstring: 0x1943e
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0xaa08
-+  __DATA_CONST.__const: 0xa960
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0xf728
-   __AUTH_CONST.__weak_auth_got: 0x20
 
-   __DATA.__common: 0x640
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 7601
 -  Symbols:   8827
 -  CStrings:  5183
 +  Functions: 7605
 +  Symbols:   8820
 +  CStrings:  5181
- 
 Symbols:
 + __ZN7BlueFin10GlDineCtrl23ChipData_GRABSNQ_674435EPvs
 + __ZN7BlueFin11GlDbgEngine23ChipData_GRABSNQ_674435EPvs
@@ -76,8 +70,10 @@ CStrings:
 + "@(#)Broadcom GLL ver. 172.20.28 674435, 2026/Aug/28, 16:56:33, build_job_id:__BUILDJOBID__, %s://depot/client/core/rel/Olympic/OSX_20.28.658483.v9.0/...\n"
 + "ChipData_GRABSNQ_674435"
 + "FIRE@34.0.3 GLL@674435"
++ "Sep  4 2026, 20:21:23"
 + "esw_gll_patch_generator.py:://depot/client/core/rel/Olympic/OSX_20.28.658483.v9.0/proprietary/deliverables/esw5_dev:LOX_FE@$Change: 673063 $"
 - "@(#)Broadcom GLL ver. 172.20.28 670616, 2026/Jul/16, 16:02:15, build_job_id:__BUILDJOBID__, %s://depot/client/core/rel/Olympic/OSX_20.28.658483.v9.0/...\n"
+- "Aug  8 2026, 14:23:03"
 - "ChipData_GRABSNQ_670616"
 - "FIRE@32 GLL@670616"
 - "esw_gll_patch_generator.py:://depot/client/core/rel/Olympic/OSX_20.28.658483.v9.0/proprietary/deliverables/esw5_dev:LOX_A8@$Change: 670125 $"

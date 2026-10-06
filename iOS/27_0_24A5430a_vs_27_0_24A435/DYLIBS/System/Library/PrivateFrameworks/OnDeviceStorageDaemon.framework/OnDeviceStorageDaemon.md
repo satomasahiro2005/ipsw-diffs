@@ -2,35 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/OnDeviceStorageDaemon.framework/OnDeviceStorageDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15c8c0` | `0x15c970` | **`+0xb0`** |
+| `__AUTH_CONST.__auth_got` | `0x1ee0` | `0x1ed8` | **`-0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x4518` | `0x451c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
- 3.0.59.0.0
--  __TEXT.__text: 0x15c8c0
-+  __TEXT.__text: 0x15c970
-   __TEXT.__objc_methlist: 0x38
-   __TEXT.__const: 0x17134
--  __TEXT.__gcc_except_tab: 0x4518
-+  __TEXT.__gcc_except_tab: 0x451c
-   __TEXT.__cstring: 0x7abc
-   __TEXT.__constg_swiftt: 0x21f4
-   __TEXT.__swift5_typeref: 0x22a2
-
-   __AUTH_CONST.__const: 0x3da8
-   __AUTH_CONST.__objc_const: 0x1f20
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__auth_got: 0x1ee0
-+  __AUTH_CONST.__auth_got: 0x1ed8
-   __AUTH.__objc_data: 0x48
-   __AUTH.__data: 0x3b8
-   __AUTH.__thread_vars: 0x30
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 4779
--  Symbols:   2558
-+  Symbols:   2557
-   CStrings:  1048
- 
+-  Symbols:   2520
++  Symbols:   2519
 Symbols:
 - _swift_release_x10
 Functions:

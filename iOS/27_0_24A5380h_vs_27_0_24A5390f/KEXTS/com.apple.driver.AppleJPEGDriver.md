@@ -2,45 +2,32 @@
 
 > `com.apple.driver.AppleJPEGDriver`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__auth_got`
-- `__DATA_CONST.__got`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x2b598` | `0x2d24c` | **`+0x1cb4`** |
+| `__DATA.__data` | `0x2208` | `0x2e58` | **`+0xc50`** |
+| `__TEXT.__const` | `0x39ec` | `0x3e9c` | **`+0x4b0`** |
+| `__TEXT.__os_log` | `0x9690` | `0x9b22` | **`+0x492`** |
+| `__DATA_CONST.__const` | `0x4b50` | `0x4df0` | **`+0x2a0`** |
+| `__TEXT.__cstring` | `0x2a63` | `0x2b2e` | **`+0xcb`** |
+| `__DATA_CONST.__kalloc_type` | `0xd80` | `0xdc0` | **`+0x40`** |
+| `__DATA.__common` | `0x3d0` | `0x3f8` | **`+0x28`** |
+| `__DATA_CONST.__mod_init_func` | `0xc0` | `0xc8` | **`+0x8`** |
+| `__DATA_CONST.__mod_term_func` | `0xc0` | `0xc8` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -8.1.3.0.0
--  __TEXT.__cstring: 0x2a63
--  __TEXT.__os_log: 0x9690
--  __TEXT.__const: 0x39ec
--  __TEXT_EXEC.__text: 0x2b598
-+8.1.5.0.0
-+  __TEXT.__cstring: 0x2b2e
-+  __TEXT.__os_log: 0x9b22
-+  __TEXT.__const: 0x3e9c
-+  __TEXT_EXEC.__text: 0x2d24c
-   __TEXT_EXEC.__auth_stubs: 0x680
--  __DATA.__data: 0x2208
--  __DATA.__common: 0x3d0
-+  __DATA.__data: 0x2e58
-+  __DATA.__common: 0x3f8
-   __DATA.__bss: 0x1
--  __DATA_CONST.__mod_init_func: 0xc0
--  __DATA_CONST.__mod_term_func: 0xc0
--  __DATA_CONST.__const: 0x4b50
--  __DATA_CONST.__kalloc_type: 0xd80
-+  __DATA_CONST.__mod_init_func: 0xc8
-+  __DATA_CONST.__mod_term_func: 0xc8
-+  __DATA_CONST.__const: 0x4df0
-+  __DATA_CONST.__kalloc_type: 0xdc0
-   __DATA_CONST.__auth_got: 0x340
-   __DATA_CONST.__got: 0x98
 -  Functions: 1741
++8.1.5.0.0
 +  Functions: 1807
-   Symbols:   0
+
 -  CStrings:  520
 +  CStrings:  533
- 
 CStrings:
 + "1211111212221212121111111222112222122222211111"
 + "121121"

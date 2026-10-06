@@ -2,123 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/AudioDSPManager.framework/AudioDSPManager`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_capture`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__weak_auth_got`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbbe2c` | `0xbed20` | **`+0x2ef4`** |
+| `__TEXT.__const` | `0xe9c8` | `0xf248` | **`+0x880`** |
+| `__TEXT.__cstring` | `0x60ee` | `0x6730` | **`+0x642`** |
+| `__DATA.__bss` | `0x7d60` | `0x8060` | **`+0x300`** |
+| `__AUTH_CONST.__const` | `0x7ce8` | `0x7fd8` | **`+0x2f0`** |
+| `__TEXT.__oslogstring` | `0x3982` | `0x3bb3` | **`+0x231`** |
+| `__DATA_DIRTY.__bss` | `0x23a0` | `0x22a0` | **`-0x100`** |
+| `__TEXT.__swift5_reflstr` | `0x13bc` | `0x149c` | **`+0xe0`** |
+| `__AUTH.__objc_data` | `0x410` | `0x4d8` | **`+0xc8`** |
+| `__DATA.__data` | `0x14a0` | `0x1560` | **`+0xc0`** |
+| `__DATA_DIRTY.__objc_data` | `0x830` | `0x778` | **`-0xb8`** |
+| `__TEXT.__swift5_typeref` | `0x2748` | `0x27f8` | **`+0xb0`** |
+| `__DATA_CONST.__const` | `0xba0` | `0xc48` | **`+0xa8`** |
+| `__TEXT.__unwind_info` | `0x3b40` | `0x3bd0` | **`+0x90`** |
+| `__TEXT.__constg_swiftt` | `0x1cf4` | `0x1d80` | **`+0x8c`** |
+| `__AUTH.__data` | `0x4f8` | `0x560` | **`+0x68`** |
+| `__TEXT.__swift5_fieldmd` | `0x18b8` | `0x18fc` | **`+0x44`** |
+| `__DATA_DIRTY.__data` | `0x1118` | `0x10e0` | **`-0x38`** |
+| `__TEXT.__eh_frame` | `0x35e0` | `0x3618` | **`+0x38`** |
+| `__TEXT.__swift5_assocty` | `0x528` | `0x548` | **`+0x20`** |
+| `__AUTH_CONST.__objc_const` | `0x1068` | `0x1078` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x7b8` | `0x7c8` | **`+0x10`** |
+| `__TEXT.__swift5_mpenum` | `0x64` | `0x54` | **`-0x10`** |
+| `__TEXT.__swift5_proto` | `0x564` | `0x574` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1538` | `0x1540` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x220` | `0x228` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x715c` | `0x7158` | **`-0x4`** |
+
+### Other Changes
 
 ```diff
 
 -241.105.0.0.0
--  __TEXT.__text: 0xbbe2c
 +241.108.0.0.0
-+  __TEXT.__text: 0xbed20
-   __TEXT.__realtime: 0x170
-   __TEXT.__init_offsets: 0x10
--  __TEXT.__objc_methlist: 0x7b8
--  __TEXT.__const: 0xe9c8
-+  __TEXT.__objc_methlist: 0x7c8
-+  __TEXT.__const: 0xf248
-   __TEXT.__dlopen_cstrs: 0x54
--  __TEXT.__swift5_typeref: 0x2748
--  __TEXT.__swift5_fieldmd: 0x18b8
--  __TEXT.__constg_swiftt: 0x1cf4
-+  __TEXT.__swift5_typeref: 0x27f8
-+  __TEXT.__swift5_fieldmd: 0x18fc
-+  __TEXT.__constg_swiftt: 0x1d80
-   __TEXT.__swift5_protos: 0x58
--  __TEXT.__swift5_proto: 0x564
--  __TEXT.__swift5_types: 0x220
--  __TEXT.__swift5_reflstr: 0x13bc
--  __TEXT.__swift5_assocty: 0x528
--  __TEXT.__cstring: 0x60ee
-+  __TEXT.__swift5_proto: 0x574
-+  __TEXT.__swift5_types: 0x228
-+  __TEXT.__swift5_reflstr: 0x149c
-+  __TEXT.__swift5_assocty: 0x548
-+  __TEXT.__cstring: 0x6730
-   __TEXT.__swift_as_entry: 0x50
-   __TEXT.__swift_as_ret: 0x44
-   __TEXT.__swift_as_cont: 0x64
-   __TEXT.__swift5_builtin: 0x78
--  __TEXT.__swift5_mpenum: 0x64
-+  __TEXT.__swift5_mpenum: 0x54
-   __TEXT.__swift5_capture: 0x2cc
--  __TEXT.__gcc_except_tab: 0x715c
--  __TEXT.__oslogstring: 0x3982
--  __TEXT.__unwind_info: 0x3b40
--  __TEXT.__eh_frame: 0x35e0
-+  __TEXT.__gcc_except_tab: 0x7158
-+  __TEXT.__oslogstring: 0x3bb3
-+  __TEXT.__unwind_info: 0x3bd0
-+  __TEXT.__eh_frame: 0x3618
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xba0
-+  __DATA_CONST.__const: 0xc48
-   __DATA_CONST.__objc_classlist: 0x88
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   __DATA_CONST.__objc_selrefs: 0x578
-   __DATA_CONST.__objc_superrefs: 0x18
-   __DATA_CONST.__got: 0x5c0
--  __AUTH_CONST.__const: 0x7ce8
-+  __AUTH_CONST.__const: 0x7fd8
-   __AUTH_CONST.__cfstring: 0xfc0
--  __AUTH_CONST.__objc_const: 0x1068
-+  __AUTH_CONST.__objc_const: 0x1078
-   __AUTH_CONST.__weak_auth_got: 0x20
--  __AUTH_CONST.__auth_got: 0x1538
--  __AUTH.__objc_data: 0x410
--  __AUTH.__data: 0x4f8
-+  __AUTH_CONST.__auth_got: 0x1540
-+  __AUTH.__objc_data: 0x4d8
-+  __AUTH.__data: 0x560
-   __DATA.__objc_ivar: 0x5c
--  __DATA.__data: 0x14a0
-+  __DATA.__data: 0x1560
-   __DATA.__cf_except_bt: 0x2000
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x7d60
-+  __DATA.__bss: 0x8060
-   __DATA.__common: 0x30
--  __DATA_DIRTY.__objc_data: 0x830
--  __DATA_DIRTY.__data: 0x1118
--  __DATA_DIRTY.__bss: 0x23a0
-+  __DATA_DIRTY.__objc_data: 0x778
-+  __DATA_DIRTY.__data: 0x10e0
-+  __DATA_DIRTY.__bss: 0x22a0
-   __DATA_DIRTY.__common: 0x60
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3560
--  Symbols:   4401
+-  Symbols:   4264
 -  CStrings:  1196
 +  Functions: 3612
-+  Symbols:   4487
++  Symbols:   4350
 +  CStrings:  1238
- 
 Symbols:
 + -[NotificationVendorProxy handleRegistrationOutcome:]
 + GCC_except_table1002
@@ -577,9 +505,6 @@ Symbols:
 + _associated conformance 20AudioDSPManagerSwift19NotificationStreamsO9InferenceVAA0D6StreamAA21CanonicalBuildFailureAaFP_s5Error
 + _associated conformance 20AudioDSPManagerSwift26StreamBuildInapplicabilityOSHAASQ
 + _get_enum_tag_for_layout_string 20AudioDSPManagerSwift27ListenerRegistrationOutcomeC5State33_991632502FC77BF4D394226A5D1A55D8LLO
-+ _objc_msgSend$deregisterListenerWithRegistrationOutcome:
-+ _objc_msgSend$errorCondition
-+ _objc_msgSend$handleRegistrationOutcome:
 + _symbolic 21CanonicalBuildFailure_____Qz 20AudioDSPManagerSwift18NotificationStreamP
 + _symbolic _____ 20AudioDSPManagerSwift15NoStreamOutcomeO
 + _symbolic _____ 20AudioDSPManagerSwift19NotificationStreamsO10DevicePoseV21CanonicalBuildFailureO
@@ -974,9 +899,6 @@ Symbols:
 - _associated conformance 20AudioDSPManagerSwift19NotificationStreamsO10DevicePoseV10BuildErrorOSHAASQ
 - _associated conformance 20AudioDSPManagerSwift19NotificationStreamsO11DeviceAngleV10BuildErrorOSHAASQ
 - _get_enum_tag_for_layout_string 20AudioDSPManagerSwift27ListenerRegistrationResultsC5StateO
-- _objc_msgSend$deregisterListenerWithRegistrationResults:
-- _objc_msgSend$error
-- _objc_msgSend$handleRegistrationResults:
 - _symbolic _____ 20AudioDSPManagerSwift19NotificationStreamsO10DevicePoseV10BuildErrorO
 - _symbolic _____ 20AudioDSPManagerSwift19NotificationStreamsO11DeviceAngleV10BuildErrorO
 - _symbolic _____ 20AudioDSPManagerSwift27ListenerRegistrationResultsC

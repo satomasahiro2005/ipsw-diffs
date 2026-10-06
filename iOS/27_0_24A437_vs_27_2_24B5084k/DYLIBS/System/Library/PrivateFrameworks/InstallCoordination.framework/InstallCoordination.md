@@ -2,78 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/InstallCoordination.framework/InstallCoordination`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6c874` | `0x6f2c0` | **`+0x2a4c`** |
+| `__AUTH_CONST.__objc_const` | `0xcb68` | `0xd440` | **`+0x8d8`** |
+| `__TEXT.__cstring` | `0x102c0` | `0x10831` | **`+0x571`** |
+| `__TEXT.__objc_methlist` | `0x48b0` | `0x4b90` | **`+0x2e0`** |
+| `__AUTH_CONST.__cfstring` | `0x6240` | `0x6480` | **`+0x240`** |
+| `__TEXT.__oslogstring` | `0x86c9` | `0x885d` | **`+0x194`** |
+| `__AUTH.__objc_data` | `0x410` | `0x5a0` | **`+0x190`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2360` | `0x2458` | **`+0xf8`** |
+| `__TEXT.__unwind_info` | `0x1a90` | `0x1b58` | **`+0xc8`** |
+| `__TEXT.__gcc_except_tab` | `0x1ef8` | `0x1f58` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x1e98` | `0x1ee0` | **`+0x48`** |
+| `__AUTH_CONST.__const` | `0x380` | `0x3c0` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x4d0` | `0x510` | **`+0x40`** |
+| `__DATA_CONST.__objc_classlist` | `0x1f8` | `0x220` | **`+0x28`** |
+| `__DATA_CONST.__objc_superrefs` | `0x168` | `0x190` | **`+0x28`** |
+| `__DATA.__bss` | `0xa8` | `0xc8` | **`+0x20`** |
+| `__AUTH.__data` | `0x8` | `0x20` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x258` | `0x268` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x68` | `0x60` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -842.0.1.0.0
--  __TEXT.__text: 0x6b5a8
--  __TEXT.__objc_methlist: 0x48b0
 +849.40.2.502.1
-+  __TEXT.__text: 0x6df7c
-+  __TEXT.__objc_methlist: 0x4b90
-   __TEXT.__const: 0x100
--  __TEXT.__cstring: 0x102c0
--  __TEXT.__oslogstring: 0x86c9
--  __TEXT.__gcc_except_tab: 0x1ef8
-+  __TEXT.__cstring: 0x10831
-+  __TEXT.__oslogstring: 0x885d
-+  __TEXT.__gcc_except_tab: 0x1f58
-   __TEXT.__ustring: 0x4
--  __TEXT.__unwind_info: 0x2328
-+  __TEXT.__unwind_info: 0x2448
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1e98
--  __DATA_CONST.__objc_classlist: 0x1f8
-+  __DATA_CONST.__const: 0x1ee0
-+  __DATA_CONST.__objc_classlist: 0x220
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0xe8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2360
-+  __DATA_CONST.__objc_selrefs: 0x2458
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__objc_superrefs: 0x168
-+  __DATA_CONST.__objc_superrefs: 0x190
-   __DATA_CONST.__objc_arraydata: 0x120
--  __DATA_CONST.__got: 0x4d0
--  __AUTH_CONST.__const: 0x380
--  __AUTH_CONST.__cfstring: 0x6240
--  __AUTH_CONST.__objc_const: 0xcb68
-+  __DATA_CONST.__got: 0x510
-+  __AUTH_CONST.__const: 0x3c0
-+  __AUTH_CONST.__cfstring: 0x6480
-+  __AUTH_CONST.__objc_const: 0xd440
-   __AUTH_CONST.__objc_intobj: 0x330
-   __AUTH_CONST.__objc_arrayobj: 0x120
-   __AUTH_CONST.__auth_got: 0x608
--  __AUTH.__objc_data: 0x410
--  __AUTH.__data: 0x8
--  __DATA.__objc_ivar: 0x258
-+  __AUTH.__objc_data: 0x5a0
-+  __AUTH.__data: 0x20
-+  __DATA.__objc_ivar: 0x268
-   __DATA.__data: 0xae8
-   __DATA_DIRTY.__objc_data: 0xfa0
-   __DATA_DIRTY.__data: 0x8
--  __DATA_DIRTY.__bss: 0x68
-+  __DATA_DIRTY.__bss: 0x60
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2206
--  Symbols:   3899
+-  Symbols:   3071
 -  CStrings:  1897
 +  Functions: 2277
-+  Symbols:   4032
++  Symbols:   3179
 +  CStrings:  1929
- 
 Symbols:
 + +[IXAppInstallCoordinator(IXAppReplacement) _deviceHasPersonas]
 + +[IXAppInstallCoordinator(IXAppReplacement) _personaForIdentity:record:error:]
@@ -184,31 +149,6 @@ Symbols:
 + ___95+[IXAppInstallCoordinator(IXAppReplacement) appReplacementRefusedForAppIdentity:options:error:]_block_invoke
 + ___98+[IXAppInstallCoordinator(IXAppReplacement) getAppReplacementSource:forAppIdentity:options:error:]_block_invoke
 + ___99+[IXAppInstallCoordinator(IXAppReplacement) resumeInterruptedAppReplacementWithOptions:completion:]_block_invoke
-+ _objc_msgSend$_deviceHasPersonas
-+ _objc_msgSend$_personaForIdentity:record:error:
-+ _objc_msgSend$_personaForRecord:error:
-+ _objc_msgSend$_remote_appReplacementRefusedForAppIdentity:options:completion:
-+ _objc_msgSend$_remote_performAppReplacementFromAppIdentity:toAppIdentity:options:completion:
-+ _objc_msgSend$_remote_recordAppReplacementNotApplicableForAppIdentity:options:completion:
-+ _objc_msgSend$_remote_resetAppReplacementStateForAppIdentity:options:completion:
-+ _objc_msgSend$_remote_resumeInterruptedAppReplacementWithOptions:completion:
-+ _objc_msgSend$bundleContainerURL
-+ _objc_msgSend$bundleRecordWithApplicationIdentifier:error:
-+ _objc_msgSend$compare:options:
-+ _objc_msgSend$dataContainerURL
-+ _objc_msgSend$destinationIdentity
-+ _objc_msgSend$deviceHasPersonas
-+ _objc_msgSend$entitlements
-+ _objc_msgSend$entityType
-+ _objc_msgSend$getAppReplacementState:forBundleContainerURL:error:
-+ _objc_msgSend$hasUnresolvedPersona
-+ _objc_msgSend$initWithSourceIdentity:destinationIdentity:entityType:dataContainerURL:
-+ _objc_msgSend$installBuildVersion
-+ _objc_msgSend$objectForKey:ofClass:
-+ _objc_msgSend$objectForKey:ofClass:valuesOfClass:
-+ _objc_msgSend$sourceIdentity
-+ _objc_msgSend$status
-+ _objc_msgSend$typeForInstallMachinery
 - __OBJC_$_CLASS_METHODS_IXAppInstallCoordinator(IXTesting|IXPersonaBasedMultiUser|IXDiskImageMounter|IXRootContentRegistration|IXSimpleInstaller|IXSimpleInstallerPrivate|IXPersona|IXPersona_Private|IXOSModuleRegistration|IXPersonaConstruction|IXDemoteToPlaceholder|IXDemoteToPlaceholderTesting)
 CStrings:
 + "%@ is not installed for persona %@. Found: %@"

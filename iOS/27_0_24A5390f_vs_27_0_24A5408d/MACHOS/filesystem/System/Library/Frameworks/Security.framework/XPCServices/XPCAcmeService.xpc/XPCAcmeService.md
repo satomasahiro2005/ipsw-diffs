@@ -2,79 +2,53 @@
 
 > `/System/Library/Frameworks/Security.framework/XPCServices/XPCAcmeService.xpc/XPCAcmeService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__objc_superrefs`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__objc_methtype` | `0x65` | `0x6c4` | **`+0x65f`** |
+| `__TEXT.__objc_methname` | `0x2db` | `0x8cb` | **`+0x5f0`** |
+| `__TEXT.__text` | `0x3744` | `0x3c24` | **`+0x4e0`** |
+| `__DATA.__objc_const` | `0x130` | `0x3f0` | **`+0x2c0`** |
+| `__TEXT.__objc_stubs` | `0x3c0` | `0x600` | **`+0x240`** |
+| `__TEXT.__objc_methlist` | `0x8c` | `0x28c` | **`+0x200`** |
+| `__DATA.__objc_selrefs` | `0x120` | `0x2c8` | **`+0x1a8`** |
+| `__DATA.__data` | `0x40` | `0x1c0` | **`+0x180`** |
+| `__DATA_CONST.__cfstring` | `0x2a0` | `0x320` | **`+0x80`** |
+| `__TEXT.__objc_classname` | `0xb` | `0x75` | **`+0x6a`** |
+| `__DATA.__objc_data` | `0x50` | `0xa0` | **`+0x50`** |
+| `__TEXT.__auth_stubs` | `0x9c0` | `0x970` | **`-0x50`** |
+| `__DATA_CONST.__auth_got` | `0x4f0` | `0x4c8` | **`-0x28`** |
+| `__DATA_CONST.__const` | `0x220` | `0x1f8` | **`-0x28`** |
+| `__DATA_CONST.__objc_protolist` | `—` | `0x20` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0xf8` | `0x110` | **`+0x18`** |
+| `__TEXT.__cstring` | `0x35a` | `0x36d` | **`+0x13`** |
+| `__DATA.__objc_ivar` | `0xc` | `0x14` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x8` | `0x10` | **`+0x8`** |
+| `__TEXT.__const` | `0xb8` | `0xb0` | **`-0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -62460.0.55.0.1
--  __TEXT.__text: 0x3744
--  __TEXT.__auth_stubs: 0x9c0
--  __TEXT.__objc_stubs: 0x3c0
--  __TEXT.__objc_methlist: 0x8c
--  __TEXT.__const: 0xb8
 +62460.2.1.0.0
-+  __TEXT.__text: 0x3c24
-+  __TEXT.__auth_stubs: 0x970
-+  __TEXT.__objc_stubs: 0x600
-+  __TEXT.__objc_methlist: 0x28c
-+  __TEXT.__const: 0xb0
-   __TEXT.__gcc_except_tab: 0xb4
--  __TEXT.__cstring: 0x35a
--  __TEXT.__objc_methname: 0x2db
--  __TEXT.__objc_classname: 0xb
--  __TEXT.__objc_methtype: 0x65
-+  __TEXT.__cstring: 0x36d
-+  __TEXT.__objc_methname: 0x8cb
-+  __TEXT.__objc_classname: 0x75
-+  __TEXT.__objc_methtype: 0x6c4
-   __TEXT.__oslogstring: 0x95
-   __TEXT.__unwind_info: 0x150
--  __DATA_CONST.__const: 0x220
--  __DATA_CONST.__cfstring: 0x2a0
--  __DATA_CONST.__objc_classlist: 0x8
-+  __DATA_CONST.__const: 0x1f8
-+  __DATA_CONST.__cfstring: 0x320
-+  __DATA_CONST.__objc_classlist: 0x10
-+  __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__auth_got: 0x4f0
--  __DATA_CONST.__got: 0xf8
-+  __DATA_CONST.__auth_got: 0x4c8
-+  __DATA_CONST.__got: 0x110
-   __DATA_CONST.__auth_ptr: 0x8
--  __DATA.__objc_const: 0x130
--  __DATA.__objc_selrefs: 0x120
--  __DATA.__objc_ivar: 0xc
--  __DATA.__objc_data: 0x50
--  __DATA.__data: 0x40
-+  __DATA.__objc_const: 0x3f0
-+  __DATA.__objc_selrefs: 0x2c8
-+  __DATA.__objc_ivar: 0x14
-+  __DATA.__objc_data: 0xa0
-+  __DATA.__data: 0x1c0
-   __DATA.__bss: 0x38
 +  - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
 
-   - /System/Library/PrivateFrameworks/CrashReporterSupport.framework/CrashReporterSupport
-   - /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
-   - /usr/lib/libSystem.B.dylib
 +  - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libobjc.A.dylib
+
 -  Functions: 61
 -  Symbols:   200
 -  CStrings:  103
 +  Functions: 58
 +  Symbols:   198
 +  CStrings:  213
- 
 Symbols:
 + _OBJC_CLASS_$_NSMutableData
 + _OBJC_CLASS_$_NSURLComponents

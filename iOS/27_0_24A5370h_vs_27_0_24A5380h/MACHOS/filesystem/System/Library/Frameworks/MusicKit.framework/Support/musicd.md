@@ -2,109 +2,68 @@
 
 > `/System/Library/Frameworks/MusicKit.framework/Support/musicd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2737c` | `0x29108` | **`+0x1d8c`** |
+| `__DATA.__bss` | `0xf80` | `0x1300` | **`+0x380`** |
+| `__TEXT.__eh_frame` | `0x2290` | `0x25a0` | **`+0x310`** |
+| `__TEXT.__const` | `0x1378` | `0x15a8` | **`+0x230`** |
+| `__DATA.__data` | `0xac0` | `0xb98` | **`+0xd8`** |
+| `__TEXT.__cstring` | `0x560` | `0x4a0` | **`-0xc0`** |
+| `__TEXT.__unwind_info` | `0xa48` | `0xb00` | **`+0xb8`** |
+| `__DATA.__objc_const` | `0x560` | `0x610` | **`+0xb0`** |
+| `__TEXT.__auth_stubs` | `0x14c0` | `0x1450` | **`-0x70`** |
+| `__TEXT.__objc_stubs` | `0x400` | `0x3a0` | **`-0x60`** |
+| `__TEXT.__constg_swiftt` | `0x3ac` | `0x404` | **`+0x58`** |
+| `__DATA.__objc_data` | `0xf0` | `0x140` | **`+0x50`** |
+| `__TEXT.__swift5_reflstr` | `0x2c2` | `0x312` | **`+0x50`** |
+| `__DATA_CONST.__auth_got` | `0xa68` | `0xa30` | **`-0x38`** |
+| `__TEXT.__swift5_assocty` | `0xe8` | `0x120` | **`+0x38`** |
+| `__TEXT.__swift5_fieldmd` | `0x2b0` | `0x2e4` | **`+0x34`** |
+| `__TEXT.__objc_classname` | `0x11f` | `0x14f` | **`+0x30`** |
+| `__TEXT.__objc_methname` | `0x667` | `0x637` | **`-0x30`** |
+| `__TEXT.__swift5_typeref` | `0x6e6` | `0x712` | **`+0x2c`** |
+| `__DATA.__common` | `0x40` | `0x68` | **`+0x28`** |
+| `__TEXT.__oslogstring` | `0x13d7` | `0x13b7` | **`-0x20`** |
+| `__TEXT.__swift5_proto` | `0x7c` | `0x98` | **`+0x1c`** |
+| `__DATA.__objc_selrefs` | `0x1a0` | `0x188` | **`-0x18`** |
+| `__TEXT.__swift_as_cont` | `0x18c` | `0x1a4` | **`+0x18`** |
+| `__TEXT.__swift5_acfuncs` | `0x8c` | `0xa0` | **`+0x14`** |
+| `__TEXT.__swift_as_ret` | `0x104` | `0x118` | **`+0x14`** |
+| `__TEXT.__swift_as_entry` | `0xd0` | `0xe0` | **`+0x10`** |
+| `__DATA_CONST.__auth_ptr` | `0x360` | `0x368` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x448` | `0x450` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x28` | `0x30` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x38` | `0x3c` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_protos`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2737c
--  __TEXT.__auth_stubs: 0x14c0
--  __TEXT.__objc_stubs: 0x400
-+  __TEXT.__text: 0x29108
-+  __TEXT.__auth_stubs: 0x1450
-+  __TEXT.__objc_stubs: 0x3a0
-   __TEXT.__objc_methlist: 0x104
--  __TEXT.__const: 0x1378
--  __TEXT.__cstring: 0x560
--  __TEXT.__constg_swiftt: 0x3ac
--  __TEXT.__swift5_typeref: 0x6e6
-+  __TEXT.__const: 0x15a8
-+  __TEXT.__cstring: 0x4a0
-+  __TEXT.__constg_swiftt: 0x404
-+  __TEXT.__swift5_typeref: 0x712
-   __TEXT.__swift5_builtin: 0x28
--  __TEXT.__swift5_reflstr: 0x2c2
--  __TEXT.__swift5_assocty: 0xe8
--  __TEXT.__swift5_proto: 0x7c
--  __TEXT.__swift5_types: 0x38
--  __TEXT.__objc_methname: 0x667
-+  __TEXT.__swift5_reflstr: 0x312
-+  __TEXT.__swift5_assocty: 0x120
-+  __TEXT.__swift5_proto: 0x98
-+  __TEXT.__swift5_types: 0x3c
-+  __TEXT.__objc_methname: 0x637
-   __TEXT.__objc_methtype: 0x147
--  __TEXT.__oslogstring: 0x13d7
-+  __TEXT.__oslogstring: 0x13b7
-   __TEXT.__swift5_capture: 0x1d8
--  __TEXT.__swift5_fieldmd: 0x2b0
--  __TEXT.__swift_as_entry: 0xd0
--  __TEXT.__swift_as_ret: 0x104
--  __TEXT.__swift_as_cont: 0x18c
--  __TEXT.__objc_classname: 0x11f
--  __TEXT.__swift5_acfuncs: 0x8c
-+  __TEXT.__swift5_fieldmd: 0x2e4
-+  __TEXT.__swift_as_entry: 0xe0
-+  __TEXT.__swift_as_ret: 0x118
-+  __TEXT.__swift_as_cont: 0x1a4
-+  __TEXT.__objc_classname: 0x14f
-+  __TEXT.__swift5_acfuncs: 0xa0
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__unwind_info: 0xa48
--  __TEXT.__eh_frame: 0x2290
-+  __TEXT.__unwind_info: 0xb00
-+  __TEXT.__eh_frame: 0x25a0
-   __DATA_CONST.__const: 0x880
--  __DATA_CONST.__objc_classlist: 0x28
-+  __DATA_CONST.__objc_classlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__auth_got: 0xa68
--  __DATA_CONST.__got: 0x448
--  __DATA_CONST.__auth_ptr: 0x360
--  __DATA.__objc_const: 0x560
--  __DATA.__objc_selrefs: 0x1a0
--  __DATA.__objc_data: 0xf0
--  __DATA.__data: 0xac0
--  __DATA.__bss: 0xf80
--  __DATA.__common: 0x40
-+  __DATA_CONST.__auth_got: 0xa30
-+  __DATA_CONST.__got: 0x450
-+  __DATA_CONST.__auth_ptr: 0x368
-+  __DATA.__objc_const: 0x610
-+  __DATA.__objc_selrefs: 0x188
-+  __DATA.__objc_data: 0x140
-+  __DATA.__data: 0xb98
-+  __DATA.__bss: 0x1300
-+  __DATA.__common: 0x68
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/MusicKit.framework/MusicKit
-   - /System/Library/PrivateFrameworks/AppleMediaServices.framework/AppleMediaServices
-   - /System/Library/PrivateFrameworks/BackgroundSystemTasks.framework/BackgroundSystemTasks
-+  - /System/Library/PrivateFrameworks/MusicKitIntelligence.framework/MusicKitIntelligence
-   - /System/Library/PrivateFrameworks/MusicKitInternal.framework/MusicKitInternal
-   - /System/Library/PrivateFrameworks/MusicLibrary.framework/MusicLibrary
-   - /System/Library/PrivateFrameworks/XPCDistributed.framework/XPCDistributed
+-4026.110.78.1.0
++4026.100.85.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/PrivateFrameworks/MusicKitIntelligence.framework/MusicKitIntelligence
+
 -  Functions: 902
 -  Symbols:   579
 -  CStrings:  194
 +  Functions: 943
 +  Symbols:   572
 +  CStrings:  189
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_entry : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
 Symbols:
 + _$s10Foundation10URLRequestV10httpMethodSSSgvs
 + _$s10Foundation10URLRequestV3url11cachePolicy15timeoutIntervalAcA3URLV_So017NSURLRequestCacheE0VSdtcfC
@@ -197,5 +156,4 @@ CStrings:
 - "setDateStyle:"
 - "setTimeStyle:"
 - "stringFromDate:"
-
 ```

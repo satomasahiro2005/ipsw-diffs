@@ -2,119 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/Spotlight.framework/Spotlight`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9ad0c` | `0x9beb8` | **`+0x11ac`** |
+| `__TEXT.__cstring` | `0x38da` | `0x35bc` | **`-0x31e`** |
+| `__AUTH_CONST.__objc_const` | `0x4918` | `0x4710` | **`-0x208`** |
+| `__TEXT.__oslogstring` | `0x5428` | `0x5608` | **`+0x1e0`** |
+| `__TEXT.__unwind_info` | `0x1670` | `0x17e0` | **`+0x170`** |
+| `__TEXT.__objc_methlist` | `0x2b9c` | `0x2ad4` | **`-0xc8`** |
+| `__DATA_DIRTY.__objc_data` | `0xf20` | `0xe60` | **`-0xc0`** |
+| `__TEXT.__eh_frame` | `0x1090` | `0x1130` | **`+0xa0`** |
+| `__AUTH_CONST.__cfstring` | `0x2f80` | `0x2fe0` | **`+0x60`** |
+| `__AUTH_CONST.__const` | `0x1460` | `0x1400` | **`-0x60`** |
+| `__AUTH_CONST.__objc_intobj` | `0x1f8` | `0x258` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0x130` | `0xe8` | **`-0x48`** |
+| `__AUTH_CONST.__auth_got` | `0x1338` | `0x12f0` | **`-0x48`** |
+| `__DATA_DIRTY.__data` | `0x330` | `0x2f0` | **`-0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2e78` | `0x2e40` | **`-0x38`** |
+| `__TEXT.__swift5_capture` | `0x3a4` | `0x3c8` | **`+0x24`** |
+| `__DATA.__bss` | `0x8b0` | `0x8d0` | **`+0x20`** |
+| `__TEXT.__const` | `0xe08` | `0xe24` | **`+0x1c`** |
+| `__TEXT.__swift5_reflstr` | `0x31d` | `0x334` | **`+0x17`** |
+| `__DATA.__objc_ivar` | `0x3d8` | `0x3c4` | **`-0x14`** |
+| `__TEXT.__swift5_builtin` | `0x28` | `0x3c` | **`+0x14`** |
+| `__TEXT.__swift_as_entry` | `0x84` | `0x98` | **`+0x14`** |
+| `__TEXT.__swift_as_ret` | `0x64` | `0x78` | **`+0x14`** |
+| `__TEXT.__swift5_typeref` | `0x7cf` | `0x7bc` | **`-0x13`** |
+| `__DATA_CONST.__objc_classlist` | `0x150` | `0x140` | **`-0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x90` | `0xa0` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x6c0` | `0x6b0` | **`-0x10`** |
+| `__TEXT.__constg_swiftt` | `0x404` | `0x414` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x108` | `0x118` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x18f8` | `0x18f0` | **`-0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x556c` | `0x5564` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2454.100.0.0.0
--  __TEXT.__text: 0x9ad0c
--  __TEXT.__objc_methlist: 0x2b9c
--  __TEXT.__const: 0xe08
--  __TEXT.__oslogstring: 0x5428
--  __TEXT.__cstring: 0x38da
--  __TEXT.__gcc_except_tab: 0x556c
 +2459.102.0.0.0
-+  __TEXT.__text: 0x9beb8
-+  __TEXT.__objc_methlist: 0x2ad4
-+  __TEXT.__const: 0xe24
-+  __TEXT.__oslogstring: 0x5608
-+  __TEXT.__cstring: 0x35bc
-+  __TEXT.__gcc_except_tab: 0x5564
-   __TEXT.__ustring: 0x6
--  __TEXT.__swift5_typeref: 0x7cf
-+  __TEXT.__swift5_typeref: 0x7bc
-   __TEXT.__swift5_fieldmd: 0x298
--  __TEXT.__constg_swiftt: 0x404
--  __TEXT.__swift5_reflstr: 0x31d
-+  __TEXT.__constg_swiftt: 0x414
-+  __TEXT.__swift5_reflstr: 0x334
-   __TEXT.__swift5_protos: 0x10
-   __TEXT.__swift5_proto: 0x50
-   __TEXT.__swift5_types: 0x38
--  __TEXT.__swift_as_entry: 0x84
--  __TEXT.__swift_as_ret: 0x64
--  __TEXT.__swift_as_cont: 0x108
--  __TEXT.__swift5_capture: 0x3a4
-+  __TEXT.__swift_as_entry: 0x98
-+  __TEXT.__swift_as_ret: 0x78
-+  __TEXT.__swift_as_cont: 0x118
-+  __TEXT.__swift5_capture: 0x3c8
-   __TEXT.__swift5_assocty: 0x60
--  __TEXT.__swift5_builtin: 0x28
--  __TEXT.__unwind_info: 0x1670
--  __TEXT.__eh_frame: 0x1090
-+  __TEXT.__swift5_builtin: 0x3c
-+  __TEXT.__unwind_info: 0x17e0
-+  __TEXT.__eh_frame: 0x1130
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xe28
--  __DATA_CONST.__objc_classlist: 0x150
-+  __DATA_CONST.__objc_classlist: 0x140
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2e78
-+  __DATA_CONST.__objc_selrefs: 0x2e40
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x90
-+  __DATA_CONST.__objc_superrefs: 0xa0
-   __DATA_CONST.__objc_arraydata: 0x3e8
--  __DATA_CONST.__got: 0x18f8
--  __AUTH_CONST.__const: 0x1460
--  __AUTH_CONST.__cfstring: 0x2f80
--  __AUTH_CONST.__objc_const: 0x4918
-+  __DATA_CONST.__got: 0x18f0
-+  __AUTH_CONST.__const: 0x1400
-+  __AUTH_CONST.__cfstring: 0x2fe0
-+  __AUTH_CONST.__objc_const: 0x4710
-   __AUTH_CONST.__weak_auth_got: 0x10
--  __AUTH_CONST.__objc_intobj: 0x1f8
-+  __AUTH_CONST.__objc_intobj: 0x258
-   __AUTH_CONST.__objc_arrayobj: 0xc0
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x1338
--  __AUTH.__objc_data: 0x130
-+  __AUTH_CONST.__auth_got: 0x12f0
-+  __AUTH.__objc_data: 0xe8
-   __AUTH.__data: 0x28
--  __DATA.__objc_ivar: 0x3d8
-+  __DATA.__objc_ivar: 0x3c4
-   __DATA.__data: 0x750
--  __DATA.__bss: 0x8b0
--  __DATA_DIRTY.__objc_data: 0xf20
--  __DATA_DIRTY.__data: 0x330
--  __DATA_DIRTY.__bss: 0x6c0
-+  __DATA.__bss: 0x8d0
-+  __DATA_DIRTY.__objc_data: 0xe60
-+  __DATA_DIRTY.__data: 0x2f0
-+  __DATA_DIRTY.__bss: 0x6b0
-   __DATA_DIRTY.__common: 0x50
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/Contacts.framework/Contacts
 
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/CoreParsec.framework/CoreParsec
-   - /System/Library/PrivateFrameworks/DictionaryServices.framework/DictionaryServices
 -  - /System/Library/PrivateFrameworks/GenerativeSearch.framework/GenerativeSearch
 -  - /System/Library/PrivateFrameworks/GenerativeSearchAdapter.framework/GenerativeSearchAdapter
-   - /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
-   - /System/Library/PrivateFrameworks/HybridSearch.framework/HybridSearch
-   - /System/Library/PrivateFrameworks/HybridSearchAdapter.framework/HybridSearchAdapter
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1717
--  Symbols:   4497
+-  Symbols:   3224
 -  CStrings:  937
 +  Functions: 1714
-+  Symbols:   4466
++  Symbols:   3184
 +  CStrings:  932
- 
 Symbols:
 + +[SPKSearchToolGSMailQuery _classifyPlannerPredictedApps:]
 + +[SPKSearchToolGSMailQuery _combineMailCategory:withCategory:]
@@ -136,21 +75,6 @@ Symbols:
 + ___block_descriptor_56_e8_32bs40w_e29_v24?0"NSArray"8"NSError"16lw40l8s32l8
 + ___swift_closure_destructor.186Tm
 + ___swift_memcpy4_4
-+ _objc_msgSend$_classifyPlannerPredictedApps:
-+ _objc_msgSend$_combineMailCategory:withCategory:
-+ _objc_msgSend$_fetchActionSuggestionsWithQueryId:completion:
-+ _objc_msgSend$_sendRankingFeedbackWithQueryId:
-+ _objc_msgSend$normalizedGSL2RelevanceScore
-+ _objc_msgSend$presentIntentArgTypes
-+ _objc_msgSend$prewarmForUseCaseIdentifier:
-+ _objc_msgSend$rawGSL2Score
-+ _objc_msgSend$resolveMailScopes:forParses:
-+ _objc_msgSend$searchToolPredictedAppBundleIDs
-+ _objc_msgSend$setLikelihood:
-+ _objc_msgSend$setQueryProcessor:
-+ _objc_msgSend$setWithSet:
-+ _objc_msgSend$topicalityScoreWithEvaluator:quParsedEvaluator:isSearchToolClient:quParsedArgSearchTermsEvaluator:
-+ _objc_msgSend$unionSet:
 + _sLegacyZKWQueue
 + _swift_getForeignTypeMetadata
 + _symbolic _____ So16os_unfair_lock_sV
@@ -219,12 +143,6 @@ Symbols:
 - _kCFPreferencesAnyHost
 - _kCFPreferencesCurrentUser
 - _notify_cancel
-- _objc_msgSend$_fetchActionSuggestionsWithCompletion:
-- _objc_msgSend$_sendRankingFeedback
-- _objc_msgSend$firstMatchInString:options:range:
-- _objc_msgSend$initWithPattern:options:error:
-- _objc_msgSend$sleepForTimeInterval:
-- _objc_msgSend$topicalityScoreWithEvaluator:quParsedEvaluator:isSearchToolClient:quParsedArgSearchTermsEvaluator:isSiriDeserving:
 - _swift_unexpectedError
 - _symbolic SaySo19NSRegularExpressionCG
 - _symbolic _____ 9Spotlight25SiriIntentRegexClassifierC

@@ -2,38 +2,41 @@
 
 > `/Applications/AuthorizationPromptService.app/AuthorizationPromptService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21888` | `0x218a4` | **`+0x1c`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
 - `__TEXT.__const`
 - `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
 - `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
 - `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -919.0.0.0.0
--  __TEXT.__text: 0x20840
 +921.0.0.0.0
-+  __TEXT.__text: 0x20874
-   __TEXT.__auth_stubs: 0x1a70
-   __TEXT.__objc_stubs: 0xce0
-   __TEXT.__objc_methlist: 0x704
 Functions:
-~ sub_100006ff4 : 340 -> 332
-~ sub_1000071a4 -> sub_10000719c : 412 -> 408
-~ sub_10000758c -> sub_100007580 : 1388 -> 1428
-~ sub_100008078 -> sub_100008094 : 1808 -> 1832
+~ sub_100007294 : 352 -> 332
+~ sub_10000745c -> sub_100007448 : 424 -> 408
+~ sub_100007874 -> sub_100007850 : 1388 -> 1428
+~ sub_10000837c -> sub_100008380 : 1808 -> 1832
 ```

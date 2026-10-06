@@ -2,14 +2,15 @@
 
 > `/usr/lib/libETLEFSDumpDynamic.dylib`
 
-```diff
+### Section Size Changes
 
- 1585.0.0.0.0
--  __TEXT.__text: 0xeab8
-+  __TEXT.__text: 0xeb6c
-   __TEXT.__const: 0x488
-   __TEXT.__gcc_except_tab: 0x6c0
-   __TEXT.__oslogstring: 0x1f
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xeab8` | `0xeb6c` | **`+0xb4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _ETLEFCopyCrashLocationDetailsM20 : 4428 -> 4436
 ~ __ZNKSt3__111basic_regexIcNS_12regex_traitsIcEEE21__match_at_start_ecmaINS_9allocatorINS_9sub_matchIPKcEEEEEEbS8_S8_RNS_13match_resultsIS8_T_EENS_15regex_constants15match_flag_typeEb : 1772 -> 1816

@@ -2,9 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/RenderBox.framework/archive.metallib`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__metallib`
-- `__TEXT.__fragment`
-- `__TEXT.__visible`
 - `__TEXT.__vertex`
+- `__TEXT.__visible`

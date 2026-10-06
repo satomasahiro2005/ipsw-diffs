@@ -2,50 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/IPTelephony.framework/Support/libIPTelephony.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__oslogstring` | `0x4cdca` | `0x4cbd8` | **`-0x1f2`** |
+| `__TEXT.__text` | `0x4abc60` | `0x4abd1c` | **`+0xbc`** |
+| `__TEXT.__unwind_info` | `0x181e0` | `0x181f8` | **`+0x18`** |
+| `__TEXT.__const` | `0x1f9fc` | `0x1f9ec` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x16b8` | `0x16b0` | **`-0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x41f04` | `0x41f0c` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -2765.0.1.0.0
--  __TEXT.__text: 0x49dc9c
 +2772.1.0.0.0
-+  __TEXT.__text: 0x49dd64
-   __TEXT.__init_offsets: 0x1a8
-   __TEXT.__objc_methlist: 0x74c
--  __TEXT.__const: 0x1f9fc
--  __TEXT.__gcc_except_tab: 0x41f04
-+  __TEXT.__const: 0x1f9ec
-+  __TEXT.__gcc_except_tab: 0x41f0c
-   __TEXT.__cstring: 0x14117
--  __TEXT.__oslogstring: 0x4cdca
--  __TEXT.__unwind_info: 0x19908
-+  __TEXT.__oslogstring: 0x4cbd8
-+  __TEXT.__unwind_info: 0x19910
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __AUTH_CONST.__objc_const: 0xb80
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x60
--  __AUTH_CONST.__auth_got: 0x16b8
-+  __AUTH_CONST.__auth_got: 0x16b0
-   __AUTH.__objc_data: 0x140
-   __DATA.__objc_ivar: 0x4c
-   __DATA.__data: 0x2c8
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libprotobuf-lite.dylib
-   - /usr/lib/libxml2.2.dylib
 -  Functions: 16439
--  Symbols:   25130
+-  Symbols:   24910
 -  CStrings:  8704
 +  Functions: 16440
-+  Symbols:   25128
++  Symbols:   24908
 +  CStrings:  8703
- 
 Symbols:
 + __ZN15SipTcpTransport16handleSystemWakeEv
 + __ZN18IPTelephonyManager4initEv

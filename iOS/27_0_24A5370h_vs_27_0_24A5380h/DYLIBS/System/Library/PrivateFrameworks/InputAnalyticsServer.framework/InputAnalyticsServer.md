@@ -2,120 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/InputAnalyticsServer.framework/InputAnalyticsServer`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x74ab8` | `0x7b324` | **`+0x686c`** |
+| `__AUTH_CONST.__objc_const` | `0x9de8` | `0xa498` | **`+0x6b0`** |
+| `__TEXT.__cstring` | `0x5ab7` | `0x6152` | **`+0x69b`** |
+| `__AUTH_CONST.__cfstring` | `0x5fc0` | `0x6540` | **`+0x580`** |
+| `__TEXT.__oslogstring` | `0x7373` | `0x7810` | **`+0x49d`** |
+| `__TEXT.__objc_methlist` | `0x5c54` | `0x605c` | **`+0x408`** |
+| `__AUTH_CONST.__objc_intobj` | `0x1458` | `0x1770` | **`+0x318`** |
+| `__DATA_CONST.__got` | `0x1630` | `0x18c0` | **`+0x290`** |
+| `__DATA_DIRTY.__objc_data` | `0x1ab8` | `0x1d10` | **`+0x258`** |
+| `__DATA_DIRTY.__bss` | `0x428` | `0x678` | **`+0x250`** |
+| `__AUTH_CONST.__const` | `0x12c8` | `0x14b8` | **`+0x1f0`** |
+| `__DATA.__bss` | `0x8d0` | `0x730` | **`-0x1a0`** |
+| `__DATA_CONST.__const` | `0x14a8` | `0x1638` | **`+0x190`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2f20` | `0x30a0` | **`+0x180`** |
+| `__TEXT.__unwind_info` | `0x1660` | `0x1778` | **`+0x118`** |
+| `__DATA_DIRTY.__data` | `0x140` | `0x240` | **`+0x100`** |
+| `__TEXT.__gcc_except_tab` | `0xcb0` | `0xd64` | **`+0xb4`** |
+| `__DATA.__data` | `0x588` | `0x4e8` | **`-0xa0`** |
+| `__AUTH.__objc_data` | `0xa10` | `0xa88` | **`+0x78`** |
+| `__AUTH_CONST.__auth_got` | `0xb78` | `0xbf0` | **`+0x78`** |
+| `__DATA_CONST.__objc_classlist` | `0x380` | `0x3c8` | **`+0x48`** |
+| `__TEXT.__const` | `0xa18` | `0xa50` | **`+0x38`** |
+| `__AUTH.__data` | `0x50` | `0x28` | **`-0x28`** |
+| `__DATA.__objc_ivar` | `0x71c` | `0x738` | **`+0x1c`** |
+| `__TEXT.__swift5_typeref` | `0x297` | `0x2aa` | **`+0x13`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x74ab8
--  __TEXT.__objc_methlist: 0x5c54
--  __TEXT.__const: 0xa18
--  __TEXT.__gcc_except_tab: 0xcb0
--  __TEXT.__cstring: 0x5ab7
--  __TEXT.__oslogstring: 0x7373
--  __TEXT.__swift5_typeref: 0x297
-+  __TEXT.__text: 0x7b324
-+  __TEXT.__objc_methlist: 0x605c
-+  __TEXT.__const: 0xa50
-+  __TEXT.__gcc_except_tab: 0xd64
-+  __TEXT.__cstring: 0x6152
-+  __TEXT.__oslogstring: 0x7810
-+  __TEXT.__swift5_typeref: 0x2aa
-   __TEXT.__constg_swiftt: 0x164
-   __TEXT.__swift5_fieldmd: 0x88
-   __TEXT.__swift5_builtin: 0x50
+-141.0.0.0.0
++145.0.0.0.0
 
-   __TEXT.__swift5_assocty: 0x60
-   __TEXT.__swift5_proto: 0x30
-   __TEXT.__swift5_types: 0x20
--  __TEXT.__swift5_capture: 0x98
-   __TEXT.__swift_as_entry: 0x30
-   __TEXT.__swift_as_ret: 0x38
-   __TEXT.__swift_as_cont: 0x40
--  __TEXT.__unwind_info: 0x1660
-+  __TEXT.__swift5_capture: 0x98
-+  __TEXT.__unwind_info: 0x1778
-   __TEXT.__eh_frame: 0x5f8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x14a8
--  __DATA_CONST.__objc_classlist: 0x380
-+  __DATA_CONST.__const: 0x1638
-+  __DATA_CONST.__objc_classlist: 0x3c8
-   __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2f20
-+  __DATA_CONST.__objc_selrefs: 0x30a0
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x210
-   __DATA_CONST.__objc_arraydata: 0x3a0
--  __DATA_CONST.__got: 0x1630
--  __AUTH_CONST.__const: 0x12c8
--  __AUTH_CONST.__cfstring: 0x5fc0
--  __AUTH_CONST.__objc_const: 0x9de8
--  __AUTH_CONST.__objc_intobj: 0x1458
-+  __DATA_CONST.__got: 0x18c0
-+  __AUTH_CONST.__const: 0x14b8
-+  __AUTH_CONST.__cfstring: 0x6540
-+  __AUTH_CONST.__objc_const: 0xa498
-+  __AUTH_CONST.__objc_intobj: 0x1770
-   __AUTH_CONST.__objc_arrayobj: 0x4e0
--  __AUTH_CONST.__auth_got: 0xb78
--  __AUTH.__objc_data: 0xa10
--  __AUTH.__data: 0x50
--  __DATA.__objc_ivar: 0x71c
--  __DATA.__data: 0x588
--  __DATA.__bss: 0x8d0
--  __DATA_DIRTY.__objc_data: 0x1ab8
--  __DATA_DIRTY.__data: 0x140
--  __DATA_DIRTY.__bss: 0x428
-+  __AUTH_CONST.__auth_got: 0xbf0
-+  __AUTH.__objc_data: 0xa88
-+  __AUTH.__data: 0x28
-+  __DATA.__objc_ivar: 0x738
-+  __DATA.__data: 0x4e8
-+  __DATA.__bss: 0x730
-+  __DATA_DIRTY.__objc_data: 0x1d10
-+  __DATA_DIRTY.__data: 0x240
-+  __DATA_DIRTY.__bss: 0x678
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
 +  - /usr/lib/swift/libswiftRegexBuilder.dylib
-   - /usr/lib/swift/libswiftSpatial.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2669
 -  Symbols:   913
--  CStrings:  2134
+-  CStrings:  1369
 +  Functions: 2786
 +  Symbols:   968
-+  CStrings:  2253
- 
-Sections:
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
++  CStrings:  1444
 Symbols:
 + _CFPreferencesCopyAppValue
 + _IAChannelSidecar
@@ -258,5 +189,4 @@ CStrings:
 - "Created substitute analytics session ID for PanelRequested %{private}@"
 - "Multiple analyzers (%lu) tried to claim PanelAppeared (%{sensitive}@)"
 - "Name of file attachment on the Report a Concern form where users share feedback with Apple. The Input attachment contains the email, voicemail, or conversation used to generate a smart action"
-
 ```

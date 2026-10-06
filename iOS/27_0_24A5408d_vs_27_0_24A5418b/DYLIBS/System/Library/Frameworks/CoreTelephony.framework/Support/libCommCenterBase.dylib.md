@@ -2,57 +2,31 @@
 
 > `/System/Library/Frameworks/CoreTelephony.framework/Support/libCommCenterBase.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd2ff4` | `0xd293c` | **`-0x6b8`** |
+| `__TEXT.__cstring` | `0x14ac8` | `0x148cb` | **`-0x1fd`** |
+| `__TEXT.__oslogstring` | `0x2849` | `0x26f1` | **`-0x158`** |
+| `__DATA_CONST.__const` | `0x76e0` | `0x7640` | **`-0xa0`** |
+| `__AUTH_CONST.__const` | `0x14480` | `0x14448` | **`-0x38`** |
+| `__TEXT.__gcc_except_tab` | `0x13be4` | `0x13bc4` | **`-0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xc38` | `0xc28` | **`-0x10`** |
+| `__TEXT.__const` | `0xd370` | `0xd360` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x4e60` | `0x4e58` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -13487.3.0.0.0
--  __TEXT.__text: 0xd2ff4
 +13487.6.0.0.0
-+  __TEXT.__text: 0xd293c
-   __TEXT.__init_offsets: 0x20
-   __TEXT.__objc_methlist: 0x110
--  __TEXT.__const: 0xd370
--  __TEXT.__cstring: 0x14ac8
--  __TEXT.__gcc_except_tab: 0x13be4
--  __TEXT.__oslogstring: 0x2849
--  __TEXT.__unwind_info: 0x4e60
-+  __TEXT.__const: 0xd360
-+  __TEXT.__cstring: 0x148cb
-+  __TEXT.__gcc_except_tab: 0x13bc4
-+  __TEXT.__oslogstring: 0x26f1
-+  __TEXT.__unwind_info: 0x4e58
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x76e0
-+  __DATA_CONST.__const: 0x7640
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   __DATA_CONST.__objc_selrefs: 0x188
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__got: 0x218
--  __AUTH_CONST.__const: 0x14480
-+  __AUTH_CONST.__const: 0x14448
-   __AUTH_CONST.__cfstring: 0x2ce0
-   __AUTH_CONST.__objc_const: 0x200
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__auth_got: 0xc38
-+  __AUTH_CONST.__auth_got: 0xc28
-   __DATA.__objc_ivar: 0x8
-   __DATA.__data: 0x70
-   __DATA.__bss: 0x5
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 5765
--  Symbols:   9507
+-  Symbols:   9472
 -  CStrings:  4497
-+  Symbols:   9504
++  Symbols:   9469
 +  CStrings:  4464
- 
 Symbols:
 + ___TUAssertTrigger
 - _TelephonyUtilIsOversteerEnabled

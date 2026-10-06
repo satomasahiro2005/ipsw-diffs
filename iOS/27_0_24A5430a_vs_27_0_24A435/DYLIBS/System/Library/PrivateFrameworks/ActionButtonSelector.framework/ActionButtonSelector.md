@@ -2,42 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/ActionButtonSelector.framework/ActionButtonSelector`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe830` | `0xeb7c` | **`+0x34c`** |
+| `__AUTH_CONST.__cfstring` | `0xce0` | `0xe00` | **`+0x120`** |
+| `__TEXT.__cstring` | `0x701` | `0x7ba` | **`+0xb9`** |
+| `__TEXT.__const` | `0x3e0` | `0x428` | **`+0x48`** |
+| `__AUTH_CONST.__const` | `0x1e0` | `0x200` | **`+0x20`** |
+| `__DATA.__bss` | `0x88` | `0x98` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
- 68.101.0.0.0
--  __TEXT.__text: 0xe830
-+  __TEXT.__text: 0xeb7c
-   __TEXT.__objc_methlist: 0x9a4
--  __TEXT.__const: 0x3e0
-+  __TEXT.__const: 0x428
-   __TEXT.__gcc_except_tab: 0x3bc
--  __TEXT.__cstring: 0x701
-+  __TEXT.__cstring: 0x7ba
-   __TEXT.__oslogstring: 0x2fb
-   __TEXT.__unwind_info: 0x4d8
-   __TEXT.__objc_stubs: 0x0
-
-   __DATA_CONST.__objc_superrefs: 0x88
-   __DATA_CONST.__objc_arraydata: 0x80
-   __DATA_CONST.__got: 0x1e0
--  __AUTH_CONST.__const: 0x1e0
--  __AUTH_CONST.__cfstring: 0xce0
-+  __AUTH_CONST.__const: 0x200
-+  __AUTH_CONST.__cfstring: 0xe00
-   __AUTH_CONST.__objc_const: 0x2038
-   __AUTH_CONST.__objc_intobj: 0x120
-   __AUTH_CONST.__objc_doubleobj: 0x250
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 330
--  Symbols:   1147
+-  Symbols:   835
 -  CStrings:  137
 +  Functions: 334
-+  Symbols:   1152
++  Symbols:   840
 +  CStrings:  146
- 
 Symbols:
 + _ABDeviceIsV6x
 + _ABDeviceIsV6x.onceToken

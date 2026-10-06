@@ -2,144 +2,72 @@
 
 > `/System/Library/PrivateFrameworks/TextInputUI.framework/TextInputUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x135a98` | `0x1400fc` | **`+0xa664`** |
+| `__AUTH_CONST.__objc_const` | `0x197f0` | `0x1a1c0` | **`+0x9d0`** |
+| `__TEXT.__objc_methlist` | `0xfeac` | `0x10604` | **`+0x758`** |
+| `__TEXT.__const` | `0x368e` | `0x3c7e` | **`+0x5f0`** |
+| `__DATA.__bss` | `0x2e18` | `0x33b8` | **`+0x5a0`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa358` | `0xa830` | **`+0x4d8`** |
+| `__TEXT.__swift5_typeref` | `0x198c` | `0x1dee` | **`+0x462`** |
+| `__AUTH_CONST.__const` | `0x2c30` | `0x2fe8` | **`+0x3b8`** |
+| `__DATA.__data` | `0x28f8` | `0x2ca8` | **`+0x3b0`** |
+| `__TEXT.__oslogstring` | `0x618c` | `0x6533` | **`+0x3a7`** |
+| `__TEXT.__eh_frame` | `0x1884` | `0x1c14` | **`+0x390`** |
+| `__AUTH.__objc_data` | `0x39d0` | `0x3c38` | **`+0x268`** |
+| `__TEXT.__unwind_info` | `0x4230` | `0x4480` | **`+0x250`** |
+| `__TEXT.__constg_swiftt` | `0x17c8` | `0x19c0` | **`+0x1f8`** |
+| `__AUTH.__data` | `0x990` | `0xb80` | **`+0x1f0`** |
+| `__AUTH_CONST.__auth_got` | `0x1bd0` | `0x1da8` | **`+0x1d8`** |
+| `__TEXT.__swift5_fieldmd` | `0xcd4` | `0xe38` | **`+0x164`** |
+| `__TEXT.__swift5_capture` | `0x4f8` | `0x624` | **`+0x12c`** |
+| `__DATA_CONST.__got` | `0x14d0` | `0x15e8` | **`+0x118`** |
+| `__TEXT.__cstring` | `0xd835` | `0xd935` | **`+0x100`** |
+| `__TEXT.__swift5_reflstr` | `0xca5` | `0xd95` | **`+0xf0`** |
+| `__AUTH_CONST.__cfstring` | `0xeb00` | `0xebe0` | **`+0xe0`** |
+| `__TEXT.__swift5_assocty` | `0x2f0` | `0x370` | **`+0x80`** |
+| `__DATA_CONST.__objc_protolist` | `0x278` | `0x2b8` | **`+0x40`** |
+| `__TEXT.__swift5_proto` | `0x150` | `0x17c` | **`+0x2c`** |
+| `__DATA_CONST.__objc_protorefs` | `0x80` | `0xa8` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x7a98` | `0x7ab8` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x134` | `0x154` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x128` | `0x144` | **`+0x1c`** |
+| `__DATA_CONST.__objc_classlist` | `0x708` | `0x720` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x154` | `0x168` | **`+0x14`** |
+| `__TEXT.__swift_as_entry` | `0x60` | `0x74` | **`+0x14`** |
+| `__DATA_DIRTY.__data` | `0x2d8` | `0x2e8` | **`+0x10`** |
+| `__DATA.__common` | `0x280` | `0x288` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x1218` | `0x1220` | **`+0x8`** |
+| `__DATA_CONST.__objc_catlist` | `0x50` | `0x58` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x470` | `0x468` | **`-0x8`** |
+| `__DATA_DIRTY.__objc_data` | `0x20c8` | `0x20d0` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x70` | `0x78` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -9127.0.84.1.113
--  __TEXT.__text: 0x12eef8
--  __TEXT.__objc_methlist: 0xfeac
 +9127.1.6.0.0
-+  __TEXT.__text: 0x138f58
-+  __TEXT.__objc_methlist: 0x10604
-   __TEXT.__dlopen_cstrs: 0x3f1
--  __TEXT.__const: 0x368e
--  __TEXT.__swift5_typeref: 0x198c
--  __TEXT.__swift5_capture: 0x4f8
--  __TEXT.__cstring: 0xd835
--  __TEXT.__constg_swiftt: 0x17c8
--  __TEXT.__swift5_reflstr: 0xca5
--  __TEXT.__swift5_assocty: 0x2f0
--  __TEXT.__swift5_fieldmd: 0xcd4
--  __TEXT.__swift5_builtin: 0x154
--  __TEXT.__oslogstring: 0x618c
--  __TEXT.__swift5_proto: 0x150
--  __TEXT.__swift5_types: 0x128
--  __TEXT.__swift_as_entry: 0x60
--  __TEXT.__swift_as_ret: 0x70
--  __TEXT.__swift_as_cont: 0x134
--  __TEXT.__swift5_protos: 0xc
-+  __TEXT.__const: 0x3c7e
-+  __TEXT.__swift5_typeref: 0x1dee
-+  __TEXT.__swift5_capture: 0x624
-+  __TEXT.__cstring: 0xd935
-+  __TEXT.__constg_swiftt: 0x19c0
-+  __TEXT.__swift5_reflstr: 0xd95
-+  __TEXT.__swift5_assocty: 0x370
-+  __TEXT.__swift5_fieldmd: 0xe38
-+  __TEXT.__swift5_builtin: 0x168
-+  __TEXT.__oslogstring: 0x6533
-+  __TEXT.__swift5_proto: 0x17c
-+  __TEXT.__swift5_types: 0x144
-+  __TEXT.__swift_as_entry: 0x74
-+  __TEXT.__swift_as_ret: 0x78
-+  __TEXT.__swift_as_cont: 0x154
-   __TEXT.__swift5_mpenum: 0x1c
-+  __TEXT.__swift5_protos: 0xc
-   __TEXT.__ustring: 0x258
--  __TEXT.__unwind_info: 0x5048
--  __TEXT.__eh_frame: 0x1884
-+  __TEXT.__unwind_info: 0x5308
-+  __TEXT.__eh_frame: 0x1c14
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7a98
--  __DATA_CONST.__objc_classlist: 0x708
--  __DATA_CONST.__objc_catlist: 0x50
--  __DATA_CONST.__objc_protolist: 0x278
-+  __DATA_CONST.__const: 0x7ab8
-+  __DATA_CONST.__objc_classlist: 0x720
-+  __DATA_CONST.__objc_catlist: 0x58
-+  __DATA_CONST.__objc_protolist: 0x2b8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa358
--  __DATA_CONST.__objc_protorefs: 0x80
--  __DATA_CONST.__objc_superrefs: 0x470
-+  __DATA_CONST.__objc_selrefs: 0xa830
-+  __DATA_CONST.__objc_protorefs: 0xa8
-+  __DATA_CONST.__objc_superrefs: 0x468
-   __DATA_CONST.__objc_arraydata: 0xae0
--  __DATA_CONST.__got: 0x14d0
--  __AUTH_CONST.__const: 0x2c30
--  __AUTH_CONST.__cfstring: 0xeb00
--  __AUTH_CONST.__objc_const: 0x197f0
-+  __DATA_CONST.__got: 0x15e8
-+  __AUTH_CONST.__const: 0x2fe8
-+  __AUTH_CONST.__cfstring: 0xebe0
-+  __AUTH_CONST.__objc_const: 0x1a1c0
-   __AUTH_CONST.__objc_intobj: 0x3d8
-   __AUTH_CONST.__objc_arrayobj: 0x288
-   __AUTH_CONST.__objc_doubleobj: 0x170
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__objc_floatobj: 0xe0
--  __AUTH_CONST.__auth_got: 0x1bd0
--  __AUTH.__objc_data: 0x39d0
--  __AUTH.__data: 0x990
--  __DATA.__objc_ivar: 0x1218
--  __DATA.__data: 0x28f8
--  __DATA.__common: 0x280
--  __DATA_DIRTY.__objc_data: 0x20c8
--  __DATA_DIRTY.__data: 0x2d8
-+  __AUTH_CONST.__auth_got: 0x1da8
-+  __AUTH.__objc_data: 0x3c38
-+  __AUTH.__data: 0xb80
-+  __DATA.__objc_ivar: 0x1220
-+  __DATA.__data: 0x2ca8
-+  __DATA.__common: 0x288
-+  __DATA_DIRTY.__objc_data: 0x20d0
-+  __DATA_DIRTY.__data: 0x2e8
-   __DATA_DIRTY.__bss: 0x4e0
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/Frameworks/CoreVideo.framework/CoreVideo
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/ImageIO.framework/ImageIO
 +  - /System/Library/Frameworks/ImagePlayground.framework/ImagePlayground
-   - /System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication
-   - /System/Library/Frameworks/Metal.framework/Metal
-   - /System/Library/Frameworks/MetalKit.framework/MetalKit
 
-   - /usr/lib/swift/libswiftCoreLocation.dylib
-   - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
 +  - /usr/lib/swift/libswiftGLKit.dylib
-   - /usr/lib/swift/libswiftIntents.dylib
-   - /usr/lib/swift/libswiftMLCompute.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
+
 +  - /usr/lib/swift/libswiftMetalKit.dylib
 +  - /usr/lib/swift/libswiftModelIO.dylib
-   - /usr/lib/swift/libswiftNaturalLanguage.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftObservation.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
-+  - /usr/lib/swift/libswiftSceneKit.dylib
-   - /usr/lib/swift/libswiftSpatial.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /usr/lib/swift/libswiftSceneKit.dylib
+
 -  Functions: 6872
--  Symbols:   15159
+-  Symbols:   10793
 -  CStrings:  2732
 +  Functions: 7070
-+  Symbols:   15344
++  Symbols:   10927
 +  CStrings:  2750
- 
 Symbols:
 + +[TUICandidateGrid isFullWidthSuggestionCandidate:]
 + -[TUICandidateGrid resetContentOffsetIfContentFits]
@@ -231,58 +159,6 @@ Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyAA4ViewPAAE10fontWeightyQrAA4FontV0G0VSgFQOyAA5ImageV_Qo_AA14_OpacityEffectVGAA16_OverlayModifierVyACy09TextInputB0022GenmojiButtonAnimationE0VAA023AccessibilityAttachmentM0VGGGAaDHPAqaDHPqd__AaDHD2_ANHO_ApA0eM0HPyHCHC_AzAA0_HPyHCHC
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA6HStackVyAA05TupleD0VyAA012_ConditionalD0VyACyAA6IDViewVy09TextInputB020GenmojiAnimatedGlyph33_4E3CCC217D4507E7AD2D9EBD007764CALLVSiGAA13_OffsetEffectVGACyAA4ViewPAAE10fontWeightyQrAA4FontV0Z0VSgFQOyAA5ImageV_Qo_ARGG_AuAEAVyQrA_FQOyACyAA0I0VAA30_EnvironmentKeyWritingModifierVySiSgGG_Qo_SgQPGGAA14_PaddingLayoutVGA17_GA8_yAA15DynamicTypeSizeOGGAaTHPA19_AaTHPA18_AaTHPA15_AaTHPyHC_A17_AA0X8ModifierHPyHCHC_A17_AAA24_HPyHCHC_A22_AAA24_HPyHCHC
 + _kCAPackageTypeCAMLBundle
-+ _objc_msgSend$URLForResource:withExtension:
-+ _objc_msgSend$URLForResource:withExtension:subdirectory:
-+ _objc_msgSend$_arrayCountOrNilDebugDescription:
-+ _objc_msgSend$activationState
-+ _objc_msgSend$attributedStringWithAdaptiveImageGlyph:attributes:
-+ _objc_msgSend$canInsertGenmoji
-+ _objc_msgSend$candidateGroupArrayByRepositioningCompositionCandidates:
-+ _objc_msgSend$candidatesByRepositioningFirstCompositionCandidate:
-+ _objc_msgSend$connectedScenes
-+ _objc_msgSend$delegateAsResponder
-+ _objc_msgSend$dismissViewControllerAnimated:completion:
-+ _objc_msgSend$foreachLayer:
-+ _objc_msgSend$hasOnlyProactiveCandidates
-+ _objc_msgSend$inputAccessoryViewController
-+ _objc_msgSend$insertAdaptiveImageGlyph:
-+ _objc_msgSend$insertAdaptiveImageGlyph:replacementRange:
-+ _objc_msgSend$insertSticker:deleteCount:
-+ _objc_msgSend$isChinaPolicyEnabledForMailReply
-+ _objc_msgSend$isDecelerating
-+ _objc_msgSend$isFullWidthSuggestionCandidate:
-+ _objc_msgSend$isGeometryFlipped
-+ _objc_msgSend$isKeyWindow
-+ _objc_msgSend$isNarrowLayout
-+ _objc_msgSend$isTracking
-+ _objc_msgSend$mask
-+ _objc_msgSend$packageWithContentsOfURL:type:options:error:
-+ _objc_msgSend$presentForInput:
-+ _objc_msgSend$presentForInput:rawInput:
-+ _objc_msgSend$presentForInput:sourceImage:
-+ _objc_msgSend$presentedViewController
-+ _objc_msgSend$repeatCount
-+ _objc_msgSend$replaceCharactersInRange:withAttributedString:
-+ _objc_msgSend$resetContentOffsetIfContentFits
-+ _objc_msgSend$rootLayer
-+ _objc_msgSend$selectedRange
-+ _objc_msgSend$sendAction:to:from:forEvent:
-+ _objc_msgSend$setGeometryFlipped:
-+ _objc_msgSend$setIsNarrowLayout:
-+ _objc_msgSend$setPosition:
-+ _objc_msgSend$setSelectedRange:
-+ _objc_msgSend$setSizeClassTraitChangeRegistration:
-+ _objc_msgSend$setSpeed:
-+ _objc_msgSend$setTimeOffset:
-+ _objc_msgSend$setTypingAttributes:
-+ _objc_msgSend$showSiriButtonOnLeft
-+ _objc_msgSend$showsFullWidthSuggestionCandidate
-+ _objc_msgSend$sizeClassTraitChangeRegistration
-+ _objc_msgSend$supportsAdaptiveImageGlyph
-+ _objc_msgSend$supportsGenmojiCreation
-+ _objc_msgSend$textStorage
-+ _objc_msgSend$textViewDidChange:
-+ _objc_msgSend$typingAttributes
 + _swift_dynamicCastObjCProtocolConditional
 + _swift_stdlib_random
 + _symbolic $s11TextInputUI18_UIKeyboardImplSPI33_63F729F5376141D9E861BEE38CFE8091LLP
@@ -340,7 +216,6 @@ Symbols:
 - -[TUIFlickVariantCell defaultFontSize]
 - -[TUIFlickVariantCell initWithFrame:string:annotation:traits:]
 - _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA6HStackVyAA05TupleD0VyACyAA5ImageVAA13_OffsetEffectVG_AA4ViewPAAE10fontWeightyQrAA4FontV0L0VSgFQOyACyAA4TextVAA30_EnvironmentKeyWritingModifierVySiSgGG_Qo_SgQPGGAA14_PaddingLayoutVGA5_GAXyAA15DynamicTypeSizeOGGAaMHPA7_AaMHPA6_AaMHPA3_AaMHPyHC_A5_AA0jR0HPyHCHC_A5_AAA12_HPyHCHC_A10_AAA12_HPyHCHC
-- _objc_msgSend$respondsToSelector:
 - _symbolic _____yAAyAAy_____y_____yAAy__________G______yAAy__________ySiSgGG_Qo_SgQPGG_____GAPGAHy_____GG 7SwiftUI15ModifiedContentV AA6HStackV AA05TupleD0V AA5ImageV AA13_OffsetEffectV AA4ViewPAAE10fontWeightyQrAA4FontV0L0VSgFQO AA4TextV AA30_EnvironmentKeyWritingModifierV AA14_PaddingLayoutV AA15DynamicTypeSizeO
 - _symbolic _____yAAy_____y_____yAAy__________G______yAAy__________ySiSgGG_Qo_SgQPGG_____GAPG 7SwiftUI15ModifiedContentV AA6HStackV AA05TupleD0V AA5ImageV AA13_OffsetEffectV AA4ViewPAAE10fontWeightyQrAA4FontV0L0VSgFQO AA4TextV AA30_EnvironmentKeyWritingModifierV AA14_PaddingLayoutV
 - _symbolic _____y__________G______yAAy__________ySiSgGG_Qo_Sgt 7SwiftUI15ModifiedContentV AA5ImageV AA13_OffsetEffectV AA4ViewPAAE10fontWeightyQrAA4FontV0J0VSgFQO AA4TextV AA30_EnvironmentKeyWritingModifierV

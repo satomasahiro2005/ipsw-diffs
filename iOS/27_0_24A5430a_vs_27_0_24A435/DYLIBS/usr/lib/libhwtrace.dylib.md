@@ -2,38 +2,25 @@
 
 > `/usr/lib/libhwtrace.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x27a5e8` | `0x27f5f8` | **`+0x5010`** |
+| `__TEXT.__const` | `0x175f50` | `0x176f50` | **`+0x1000`** |
+| `__TEXT.__cstring` | `0x16a53` | `0x16f45` | **`+0x4f2`** |
+| `__DATA_CONST.__const` | `0x30090` | `0x30098` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x31f8` | `0x3200` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 328.2.1.0.0
--  __TEXT.__text: 0x27a5e8
--  __TEXT.__const: 0x175f50
--  __TEXT.__cstring: 0x16a53
-+  __TEXT.__text: 0x27f5f8
-+  __TEXT.__const: 0x176f50
-+  __TEXT.__cstring: 0x16f45
-   __TEXT.__oslogstring: 0xaa5
-   __TEXT.__gcc_except_tab: 0x390
--  __TEXT.__unwind_info: 0x31f8
-+  __TEXT.__unwind_info: 0x3200
-   __TEXT.__eh_frame: 0x48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0x30090
-+  __DATA_CONST.__const: 0x30098
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x50
-   __DATA_CONST.__got: 0x0
-
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 4859
 +  Functions: 4867
-   Symbols:   597
+
 -  CStrings:  4319
 +  CStrings:  4359
- 
 CStrings:
 + ".x1"
 + "ASC8_CHINOOK_TCORE"

@@ -2,110 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/StatusKit.framework/StatusKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x48` | `0x460` | **`+0x418`** |
+| `__DATA_DIRTY.__objc_data` | `0xd00` | `0x8e8` | **`-0x418`** |
+| `__TEXT.__text` | `0x4583c` | `0x45974` | **`+0x138`** |
+| `__TEXT.__oslogstring` | `0x5329` | `0x5419` | **`+0xf0`** |
+| `__TEXT.__gcc_except_tab` | `0x884` | `0x8b8` | **`+0x34`** |
+| `__TEXT.__cstring` | `0x1d3e` | `0x1d6e` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0xa08` | `0x9e0` | **`-0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x11e0` | `0x1200` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x3a0` | `0x390` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xae8` | `0xaf0` | **`+0x8`** |
+| `__TEXT.__const` | `0x1920` | `0x1918` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x1550` | `0x1558` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0x7f6` | `0x7f0` | **`-0x6`** |
+| `__TEXT.__swift_as_cont` | `0x174` | `0x170` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x4583c
-+  __TEXT.__text: 0x45974
-   __TEXT.__objc_methlist: 0x2128
--  __TEXT.__const: 0x1920
--  __TEXT.__gcc_except_tab: 0x884
--  __TEXT.__oslogstring: 0x5329
--  __TEXT.__cstring: 0x1d3e
--  __TEXT.__swift5_typeref: 0x7f6
-+  __TEXT.__const: 0x1918
-+  __TEXT.__gcc_except_tab: 0x8b8
-+  __TEXT.__oslogstring: 0x5419
-+  __TEXT.__cstring: 0x1d6e
-+  __TEXT.__swift5_typeref: 0x7f0
-   __TEXT.__swift5_capture: 0x234
-   __TEXT.__constg_swiftt: 0x51c
-   __TEXT.__swift5_reflstr: 0x2f5
+-147.100.1.0.0
++149.100.1.0.0
 
-   __TEXT.__swift5_types: 0x54
-   __TEXT.__swift_as_entry: 0xd0
-   __TEXT.__swift_as_ret: 0xc4
--  __TEXT.__swift_as_cont: 0x174
-+  __TEXT.__swift_as_cont: 0x170
-   __TEXT.__swift5_assocty: 0x100
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift5_acfuncs: 0xb4
--  __TEXT.__unwind_info: 0x1550
-+  __TEXT.__unwind_info: 0x1558
-   __TEXT.__eh_frame: 0x1c08
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xa08
-+  __DATA_CONST.__const: 0x9e0
-   __DATA_CONST.__objc_classlist: 0x120
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x90
-
-   __DATA_CONST.__objc_protorefs: 0x40
-   __DATA_CONST.__objc_superrefs: 0xd8
-   __DATA_CONST.__objc_arraydata: 0xd0
--  __DATA_CONST.__got: 0x3a0
-+  __DATA_CONST.__got: 0x390
-   __AUTH_CONST.__const: 0xe68
--  __AUTH_CONST.__cfstring: 0x11e0
-+  __AUTH_CONST.__cfstring: 0x1200
-   __AUTH_CONST.__objc_const: 0x3890
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_arrayobj: 0x30
--  __AUTH_CONST.__auth_got: 0xae8
--  __AUTH.__objc_data: 0x48
-+  __AUTH_CONST.__auth_got: 0xaf0
-+  __AUTH.__objc_data: 0x460
-   __AUTH.__data: 0x88
-   __DATA.__objc_ivar: 0x1d4
-   __DATA.__data: 0x948
-   __DATA.__bss: 0x1810
-   __DATA.__common: 0x10
--  __DATA_DIRTY.__objc_data: 0xd00
-+  __DATA_DIRTY.__objc_data: 0x8e8
-   __DATA_DIRTY.__data: 0x7a0
-   __DATA_DIRTY.__bss: 0x170
-   __DATA_DIRTY.__common: 0x50
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 1704
--  Symbols:   5840
--  CStrings:  682
+-  Symbols:   3462
+-  CStrings:  539
 +  Functions: 1705
-+  Symbols:   5841
-+  CStrings:  685
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_acfuncs : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   3458
++  CStrings:  541
 Symbols:
 + _$s9StatusKit12SKAsyncQueueC4name14loggingEnabled9isolationACSS_SbScA_pSgYitcfcyyYacfU_yyYaXEfU_TQ0_
 + _$s9StatusKit12SKAsyncQueueC4name14loggingEnabled9isolationACSS_SbScA_pSgYitcfcyyYacfU_yyYaXEfU_TQ2_
@@ -140,5 +68,4 @@ CStrings:
 + "Attempted to set persistent payload on channel that is not equivalent to active channel"
 + "Idle exit is enabled, skipping presenceDaemonDisconnected delegate callback and reconnect"
 - "StatusKit/SKAsyncQueue.swift"
-
 ```

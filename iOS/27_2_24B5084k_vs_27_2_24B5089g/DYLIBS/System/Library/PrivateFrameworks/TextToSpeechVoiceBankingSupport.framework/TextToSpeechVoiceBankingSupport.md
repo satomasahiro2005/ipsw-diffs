@@ -2,73 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/TextToSpeechVoiceBankingSupport.framework/TextToSpeechVoiceBankingSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17461c` | `0x1761fc` | **`+0x1be0`** |
+| `__DATA.__bss` | `0x24c10` | `0x25ef0` | **`+0x12e0`** |
+| `__TEXT.__const` | `0x13e68` | `0x148f8` | **`+0xa90`** |
+| `__TEXT.__cstring` | `0xa137` | `0xa657` | **`+0x520`** |
+| `__TEXT.__unwind_info` | `0x5348` | `0x54d8` | **`+0x190`** |
+| `__TEXT.__swift5_proto` | `0x1234` | `0x12cc` | **`+0x98`** |
+| `__AUTH_CONST.__auth_got` | `0x1758` | `0x1798` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0xb490` | `0xb4c0` | **`+0x30`** |
+| `__DATA_DIRTY.__bss` | `0x7f0` | `0x820` | **`+0x30`** |
+| `__DATA_DIRTY.__data` | `0xdd8` | `0xde8` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0x461c` | `0x462a` | **`+0xe`** |
+
+### Other Changes
+
 ```diff
 
 -727.3.0.0.0
--  __TEXT.__text: 0x166d1c
 +727.3.1.0.0
-+  __TEXT.__text: 0x1686fc
-   __TEXT.__objc_methlist: 0xcd8
--  __TEXT.__const: 0x13e68
--  __TEXT.__swift5_typeref: 0x461c
--  __TEXT.__cstring: 0xa137
-+  __TEXT.__const: 0x148f8
-+  __TEXT.__swift5_typeref: 0x462a
-+  __TEXT.__cstring: 0xa657
-   __TEXT.__oslogstring: 0x3ead
-   __TEXT.__constg_swiftt: 0x38c0
-   __TEXT.__swift5_reflstr: 0x2932
 
-   __TEXT.__swift5_builtin: 0x1e0
-   __TEXT.__swift5_protos: 0x14
-   __TEXT.__swift5_assocty: 0x7c8
--  __TEXT.__swift5_proto: 0x1234
-+  __TEXT.__swift5_proto: 0x12cc
-   __TEXT.__swift_as_entry: 0x2e4
-   __TEXT.__swift_as_ret: 0x2f0
-   __TEXT.__swift_as_cont: 0x3fc
-   __TEXT.__swift5_mpenum: 0x18
-   __TEXT.__gcc_except_tab: 0x58
-   __TEXT.__dlopen_cstrs: 0x170
--  __TEXT.__unwind_info: 0x6818
-+  __TEXT.__unwind_info: 0x6948
-   __TEXT.__eh_frame: 0x7920
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__objc_superrefs: 0x20
-   __DATA_CONST.__got: 0x9d8
--  __AUTH_CONST.__const: 0xb490
-+  __AUTH_CONST.__const: 0xb4c0
-   __AUTH_CONST.__cfstring: 0x420
-   __AUTH_CONST.__objc_const: 0x2878
--  __AUTH_CONST.__auth_got: 0x1758
-+  __AUTH_CONST.__auth_got: 0x1798
-   __AUTH.__objc_data: 0xbe0
-   __AUTH.__data: 0x1e70
-   __DATA.__objc_ivar: 0x18
-   __DATA.__data: 0x2348
-   __DATA.__common: 0x3c0
-   __DATA_DIRTY.__objc_data: 0x7a0
--  __DATA_DIRTY.__data: 0xdd8
--  __DATA_DIRTY.__bss: 0x7f0
-+  __DATA_DIRTY.__data: 0xde8
-+  __DATA_DIRTY.__bss: 0x820
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7461
--  Symbols:   3107
+-  Symbols:   2626
 -  CStrings:  1260
 +  Functions: 7583
-+  Symbols:   3108
++  Symbols:   2627
 +  CStrings:  1298
- 
 Symbols:
 + _symbolic _____y_____G s23_ContiguousArrayStorageC 15AXCoreUtilities12AXCTLToolingO15ValueDescriptorV
 CStrings:

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SiriPaymentsIntents.framework/SiriPaymentsIntents`
 
-```diff
+### Section Size Changes
 
- 3600.3.1.0.0
--  __TEXT.__text: 0x1be038
-+  __TEXT.__text: 0x1be5e4
-   __TEXT.__objc_methlist: 0x26c
-   __TEXT.__const: 0x74c0
-   __TEXT.__swift5_typeref: 0x27a0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1be038` | `0x1be5e4` | **`+0x5ac`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s19SiriPaymentsIntents41SearchForAccountsUnsupportedValueStrategyC0A7KitFlow0ghkI5AsyncAadEP017makeUpdatedIntentegH013resolveRecord0O4TypeQzAD019ParameterResolutionQ0VyAJG_tYaKFTWTQ0_ : 360 -> 368
 ~ _$s19SiriPaymentsIntents38SearchForAccountsContinueInAppStrategyC04makeghI8Response22intentResolutionRecord0A7KitFlow6Output_pAF06IntentnO0VySo08INSearchefS0CSo0tefsL0CG_tYaKFTY2_ : 664 -> 668

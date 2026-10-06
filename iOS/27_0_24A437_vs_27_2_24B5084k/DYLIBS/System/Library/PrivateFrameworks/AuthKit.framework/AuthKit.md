@@ -2,80 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/AuthKit.framework/AuthKit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a1ba0` | `0x1a7cb0` | **`+0x6110`** |
+| `__AUTH_CONST.__objc_const` | `0x2e8c0` | `0x2f530` | **`+0xc70`** |
+| `__TEXT.__oslogstring` | `0x15b61` | `0x160e3` | **`+0x582`** |
+| `__TEXT.__objc_methlist` | `0x10584` | `0x10934` | **`+0x3b0`** |
+| `__TEXT.__cstring` | `0x12f98` | `0x1323c` | **`+0x2a4`** |
+| `__AUTH_CONST.__cfstring` | `0x13fc0` | `0x14240` | **`+0x280`** |
+| `__DATA_CONST.__objc_selrefs` | `0x81c0` | `0x8360` | **`+0x1a0`** |
+| `__AUTH.__objc_data` | `0x3890` | `0x3a20` | **`+0x190`** |
+| `__TEXT.__gcc_except_tab` | `0x6638` | `0x66fc` | **`+0xc4`** |
+| `__DATA_CONST.__const` | `0x7908` | `0x79c8` | **`+0xc0`** |
+| `__TEXT.__unwind_info` | `0x4878` | `0x4930` | **`+0xb8`** |
+| `__DATA.__data` | `0x1bf0` | `0x1c50` | **`+0x60`** |
+| `__DATA.__objc_ivar` | `0x1248` | `0x1290` | **`+0x48`** |
+| `__DATA_CONST.__objc_classlist` | `0x7d0` | `0x7f8` | **`+0x28`** |
+| `__DATA_CONST.__objc_superrefs` | `0x4c8` | `0x4f0` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x1400` | `0x1420` | **`+0x20`** |
+| `__DATA.__bss` | `0x6d0` | `0x6e8` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0xbc8` | `0xbd8` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x240` | `0x248` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__ustring`
+
+### Other Changes
 
 ```diff
 
 -559.0.0.0.0
--  __TEXT.__text: 0x19f218
--  __TEXT.__objc_methlist: 0x10584
 +560.125.4.1.0
-+  __TEXT.__text: 0x1a528c
-+  __TEXT.__objc_methlist: 0x10934
-   __TEXT.__const: 0xd30
--  __TEXT.__cstring: 0x12f98
--  __TEXT.__oslogstring: 0x15b61
--  __TEXT.__gcc_except_tab: 0x6638
-+  __TEXT.__cstring: 0x1323c
-+  __TEXT.__oslogstring: 0x160e3
-+  __TEXT.__gcc_except_tab: 0x66fc
-   __TEXT.__dlopen_cstrs: 0x267
-   __TEXT.__ustring: 0x34a
--  __TEXT.__unwind_info: 0x6f08
-+  __TEXT.__unwind_info: 0x7050
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7908
--  __DATA_CONST.__objc_classlist: 0x7d0
-+  __DATA_CONST.__const: 0x79c8
-+  __DATA_CONST.__objc_classlist: 0x7f8
-   __DATA_CONST.__objc_catlist: 0x88
--  __DATA_CONST.__objc_protolist: 0x240
-+  __DATA_CONST.__objc_protolist: 0x248
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x81c0
-+  __DATA_CONST.__objc_selrefs: 0x8360
-   __DATA_CONST.__objc_protorefs: 0xf0
--  __DATA_CONST.__objc_superrefs: 0x4c8
-+  __DATA_CONST.__objc_superrefs: 0x4f0
-   __DATA_CONST.__objc_arraydata: 0x358
--  __DATA_CONST.__got: 0xbc8
--  __AUTH_CONST.__const: 0x1400
--  __AUTH_CONST.__cfstring: 0x13fc0
--  __AUTH_CONST.__objc_const: 0x2e8c0
-+  __DATA_CONST.__got: 0xbd8
-+  __AUTH_CONST.__const: 0x1420
-+  __AUTH_CONST.__cfstring: 0x14240
-+  __AUTH_CONST.__objc_const: 0x2f530
-   __AUTH_CONST.__objc_intobj: 0x300
-   __AUTH_CONST.__objc_dictobj: 0x410
-   __AUTH_CONST.__objc_arrayobj: 0x90
-   __AUTH_CONST.__auth_got: 0x528
--  __AUTH.__objc_data: 0x3890
--  __DATA.__objc_ivar: 0x1248
--  __DATA.__data: 0x1bf0
-+  __AUTH.__objc_data: 0x3a20
-+  __DATA.__objc_ivar: 0x1290
-+  __DATA.__data: 0x1c50
-   __DATA_DIRTY.__objc_data: 0x1590
-   __DATA_DIRTY.__bss: 0x2f0
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 6112
--  Symbols:   14640
+-  Symbols:   12304
 -  CStrings:  4633
 +  Functions: 6192
-+  Symbols:   14848
++  Symbols:   12471
 +  CStrings:  4678
- 
 Symbols:
 + +[AKApprovalFlowCardCopy supportsSecureCoding]
 + +[AKApprovalFlowPushInfo supportsSecureCoding]
@@ -321,55 +288,6 @@ Symbols:
 + _kAKApprovalFlowRUIURLStringKey
 + _kAKBasicServerRequestAdditionalHeaders
 + _kAKSignoutInfoTelemetryFlowIDKey
-+ _objc_msgSend$_backoffControllerWhenFeatureEnabled
-+ _objc_msgSend$_clientInfoForContext:urlBagKey:
-+ _objc_msgSend$_logResponseForStep:data:httpResponse:
-+ _objc_msgSend$_maskedHeaderFields:
-+ _objc_msgSend$_pinViewAttributesFromResponse:
-+ _objc_msgSend$_propertyForKey:account:
-+ _objc_msgSend$_refreshAllTokensForAltDSID:completion:
-+ _objc_msgSend$_resetLoopProtectionState
-+ _objc_msgSend$_sendBackoffEventNamed:clientInfo:
-+ _objc_msgSend$_setValue:forKey:account:
-+ _objc_msgSend$_shouldAbortForRepeatedOrExcessiveResponse:
-+ _objc_msgSend$ak_extractURLCachePolicyContext
-+ _objc_msgSend$bypassesURLCache
-+ _objc_msgSend$cardCopy
-+ _objc_msgSend$clearServerBackoffCacheWithCompletion:
-+ _objc_msgSend$continuationHeaders
-+ _objc_msgSend$emailComponentsFromEmail:
-+ _objc_msgSend$idmsData
-+ _objc_msgSend$initWithAppServerName:userDefaults:
-+ _objc_msgSend$initWithBypassesURLCache:
-+ _objc_msgSend$initWithCodeType:messageId:ruiURLString:pushInfo:cardCopy:serverRequestConfiguration:
-+ _objc_msgSend$initWithPushCommand:idmsData:
-+ _objc_msgSend$initWithTitle:subtitle:primaryActionTitle:
-+ _objc_msgSend$injectServerBackoffForURLBagKey:clientBundleID:proxiedAppBundleID:durationSeconds:completion:
-+ _objc_msgSend$instancesRespondToSelector:
-+ _objc_msgSend$messageId
-+ _objc_msgSend$percentEncodedPath
-+ _objc_msgSend$percentEncodedQuery
-+ _objc_msgSend$primaryActionTitle
-+ _objc_msgSend$processBackoffInfoFrom:
-+ _objc_msgSend$pushCommand
-+ _objc_msgSend$pushInfo
-+ _objc_msgSend$readServerBackoffCacheForURLBagKey:completion:
-+ _objc_msgSend$refreshAllTokensForAltDSID:completion:
-+ _objc_msgSend$reportClientBackoffTelemetryForContext:urlBagKey:
-+ _objc_msgSend$requestByEnforcingURLCachePolicy:
-+ _objc_msgSend$resolvedAppleIDWithServerInfo:
-+ _objc_msgSend$ruiURLString
-+ _objc_msgSend$setCachePolicy:
-+ _objc_msgSend$setContinuationHeaders:
-+ _objc_msgSend$setPercentEncodedPath:
-+ _objc_msgSend$setPercentEncodedQuery:
-+ _objc_msgSend$setShouldReturnContinuationHeaders:
-+ _objc_msgSend$setTcEligibility:
-+ _objc_msgSend$shouldBackoffForURLBagKey:clientBundleID:proxiedAppBundleID:
-+ _objc_msgSend$shouldBackoffRequest:urlBagKey:
-+ _objc_msgSend$shouldBypassURLCacheForRequest:
-+ _objc_msgSend$subtitle
-+ _objc_msgSend$transparencyMetadataForAltDSID:flowId:completion:
 - -[AKAccountManager previousAccountInfoRefreshDateForAccount:]
 - -[AKAccountManager setPreviousAccountInfoRefreshDate:forAccount:]
 - -[AKAppleIDAuthenticationController __presentTestApprovalFlowWithXML:completion:]
@@ -447,14 +365,6 @@ Symbols:
 - ___block_descriptor_80_e8_32bs40r48r56r_e34_v24?0"NSDictionary"8"NSError"16lr40l8r48l8r56l8s32l8
 - _kAKApprovalFlowBaseURLStringKey
 - _kAKApprovalFlowInitialXMLKey
-- _objc_msgSend$__presentTestApprovalFlowWithXML:completion:
-- _objc_msgSend$_retrieveContinuationHeaders
-- _objc_msgSend$baseURLString
-- _objc_msgSend$encodeObject:
-- _objc_msgSend$initWithCodeType:baseURLString:initialXML:
-- _objc_msgSend$initialXML
-- _objc_msgSend$isTrustedDeviceIdEnabled
-- _objc_msgSend$setServerRequestConfiguration:
 CStrings:
 + "<%@: %p codeType=%@ messageId=%@ ruiURLString=%@ hasPushInfo=%@ cardCopy=%@>"
 + "<%@: %p pushCommand=%lu hasIdMSData=%@>"

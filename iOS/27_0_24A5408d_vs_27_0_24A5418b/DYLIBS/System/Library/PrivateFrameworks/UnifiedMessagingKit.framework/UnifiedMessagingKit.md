@@ -2,85 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/UnifiedMessagingKit.framework/UnifiedMessagingKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x47416c` | `0x475884` | **`+0x1718`** |
+| `__TEXT.__swift5_typeref` | `0x62d8a` | `0x63100` | **`+0x376`** |
+| `__TEXT.__const` | `0x67bf6` | `0x67d16` | **`+0x120`** |
+| `__DATA.__data` | `0x13a40` | `0x13b00` | **`+0xc0`** |
+| `__TEXT.__eh_frame` | `0x1d2c4` | `0x1d374` | **`+0xb0`** |
+| `__TEXT.__unwind_info` | `0x13e68` | `0x13f18` | **`+0xb0`** |
+| `__DATA.__bss` | `0x6d1b8` | `0x6d238` | **`+0x80`** |
+| `__TEXT.__swift5_reflstr` | `0xb9ac` | `0xb9fc` | **`+0x50`** |
+| `__TEXT.__constg_swiftt` | `0xfc38` | `0xfc7c` | **`+0x44`** |
+| `__TEXT.__swift5_fieldmd` | `0x119dc` | `0x11a10` | **`+0x34`** |
+| `__AUTH_CONST.__const` | `0x2cbe8` | `0x2cc10` | **`+0x28`** |
+| `__TEXT.__cstring` | `0xd958` | `0xd978` | **`+0x20`** |
+| `__TEXT.__swift5_assocty` | `0x33b8` | `0x33d0` | **`+0x18`** |
+| `__DATA_DIRTY.__data` | `0x1888` | `0x1898` | **`+0x10`** |
+| `__TEXT.__swift_as_ret` | `0x608` | `0x618` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x670` | `0x67c` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x3c08` | `0x3c10` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x1f40` | `0x1f48` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0xbb8` | `0xbc0` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x38ec` | `0x38f0` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0x148c` | `0x1490` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3.0.50.2.1
--  __TEXT.__text: 0x47416c
 +3.0.50.2.3
-+  __TEXT.__text: 0x475884
-   __TEXT.__objc_methlist: 0x1ef4
--  __TEXT.__const: 0x67bf6
--  __TEXT.__constg_swiftt: 0xfc38
--  __TEXT.__swift5_typeref: 0x62d8a
-+  __TEXT.__const: 0x67d16
-+  __TEXT.__constg_swiftt: 0xfc7c
-+  __TEXT.__swift5_typeref: 0x63100
-   __TEXT.__swift5_builtin: 0x488
--  __TEXT.__swift5_reflstr: 0xb9ac
--  __TEXT.__swift5_fieldmd: 0x119dc
--  __TEXT.__swift5_assocty: 0x33b8
--  __TEXT.__swift5_proto: 0x38ec
--  __TEXT.__swift5_types: 0x148c
-+  __TEXT.__swift5_reflstr: 0xb9fc
-+  __TEXT.__swift5_fieldmd: 0x11a10
-+  __TEXT.__swift5_assocty: 0x33d0
-+  __TEXT.__swift5_proto: 0x38f0
-+  __TEXT.__swift5_types: 0x1490
-   __TEXT.__swift5_capture: 0x5040
--  __TEXT.__cstring: 0xd958
--  __TEXT.__swift_as_entry: 0x670
--  __TEXT.__swift_as_cont: 0xbb8
--  __TEXT.__swift_as_ret: 0x608
-+  __TEXT.__cstring: 0xd978
-+  __TEXT.__swift_as_entry: 0x67c
-+  __TEXT.__swift_as_cont: 0xbc0
-+  __TEXT.__swift_as_ret: 0x618
-   __TEXT.__swift5_mpenum: 0x220
-   __TEXT.__swift5_protos: 0x8c
-   __TEXT.__oslogstring: 0xb3
--  __TEXT.__unwind_info: 0x13e68
--  __TEXT.__eh_frame: 0x1d2c4
-+  __TEXT.__unwind_info: 0x13f18
-+  __TEXT.__eh_frame: 0x1d374
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x17f0
-   __DATA_CONST.__objc_protorefs: 0x1d8
--  __DATA_CONST.__got: 0x1f40
--  __AUTH_CONST.__const: 0x2cbe8
-+  __DATA_CONST.__got: 0x1f48
-+  __AUTH_CONST.__const: 0x2cc10
-   __AUTH_CONST.__objc_const: 0x8960
--  __AUTH_CONST.__auth_got: 0x3c08
-+  __AUTH_CONST.__auth_got: 0x3c10
-   __AUTH.__objc_data: 0x30a0
-   __AUTH.__data: 0xb728
--  __DATA.__data: 0x13a40
-+  __DATA.__data: 0x13b00
-   __DATA.__objc_stublist: 0x8
--  __DATA.__bss: 0x6d1b8
-+  __DATA.__bss: 0x6d238
-   __DATA.__common: 0x340
-   __DATA_DIRTY.__objc_data: 0xa0
--  __DATA_DIRTY.__data: 0x1888
-+  __DATA_DIRTY.__data: 0x1898
-   __DATA_DIRTY.__common: 0x28
-   __DATA_DIRTY.__bss: 0x3500
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 32806
--  Symbols:   10495
+-  Symbols:   10023
 -  CStrings:  1540
 +  Functions: 32850
-+  Symbols:   10512
++  Symbols:   10040
 +  CStrings:  1541
- 
 Symbols:
 + ___unnamed_3
 + _associated conformance 19UnifiedMessagingKit21MessageIntentDispatchV7SwiftUI12ViewModifierAA4BodyAdEP_AD0I0

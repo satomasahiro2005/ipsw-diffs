@@ -2,102 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/SPOwner.framework/SPOwner`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x754f4` | `0x76bcc` | **`+0x16d8`** |
+| `__AUTH.__objc_data` | `0x1690` | `0x48` | **`-0x1648`** |
+| `__DATA_DIRTY.__objc_data` | `0x1450` | `0x2a98` | **`+0x1648`** |
+| `__TEXT.__oslogstring` | `0x76c8` | `0x7ed8` | **`+0x810`** |
+| `__AUTH_CONST.__objc_const` | `0x14048` | `0x14170` | **`+0x128`** |
+| `__TEXT.__objc_methlist` | `0xba14` | `0xbb14` | **`+0x100`** |
+| `__AUTH.__data` | `0xf0` | `—` | **`-0xf0`** |
+| `__DATA_DIRTY.__data` | `0xb8` | `0x1a8` | **`+0xf0`** |
+| `__TEXT.__gcc_except_tab` | `0x14d8` | `0x157c` | **`+0xa4`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3cf0` | `0x3d90` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x2130` | `0x21a8` | **`+0x78`** |
+| `__TEXT.__unwind_info` | `0x26c8` | `0x2738` | **`+0x70`** |
+| `__DATA_CONST.__got` | `0x5c8` | `0x5f8` | **`+0x30`** |
+| `__TEXT.__const` | `0x588` | `0x5b8` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x6a19` | `0x6a49` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0xc18` | `0xbf8` | **`-0x20`** |
+| `__DATA.__objc_ivar` | `0xee4` | `0xefc` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x678` | `0x688` | **`+0x10`** |
+| `__DATA.__bss` | `0x810` | `0x800` | **`-0x10`** |
+| `__DATA_DIRTY.__bss` | `0x340` | `0x350` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x754f4
--  __TEXT.__objc_methlist: 0xba14
--  __TEXT.__const: 0x588
--  __TEXT.__gcc_except_tab: 0x14d8
--  __TEXT.__cstring: 0x6a19
--  __TEXT.__oslogstring: 0x76c8
-+  __TEXT.__text: 0x76bcc
-+  __TEXT.__objc_methlist: 0xbb14
-+  __TEXT.__const: 0x5b8
-+  __TEXT.__gcc_except_tab: 0x157c
-+  __TEXT.__cstring: 0x6a49
-+  __TEXT.__oslogstring: 0x7ed8
-   __TEXT.__dlopen_cstrs: 0x5a
-   __TEXT.__constg_swiftt: 0x148
-   __TEXT.__swift5_typeref: 0x133
+-448.30.6.7.2
++449.30.6.14.8
 
-   __TEXT.__swift_as_entry: 0x1c
-   __TEXT.__swift_as_ret: 0x18
-   __TEXT.__swift_as_cont: 0x8
--  __TEXT.__unwind_info: 0x26c8
-+  __TEXT.__unwind_info: 0x2738
-   __TEXT.__eh_frame: 0x330
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2130
-+  __DATA_CONST.__const: 0x21a8
-   __DATA_CONST.__objc_classlist: 0x448
-   __DATA_CONST.__objc_protolist: 0x1c8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3cf0
-+  __DATA_CONST.__objc_selrefs: 0x3d90
-   __DATA_CONST.__objc_protorefs: 0xc8
-   __DATA_CONST.__objc_superrefs: 0x378
-   __DATA_CONST.__objc_arraydata: 0x18
--  __DATA_CONST.__got: 0x5c8
--  __AUTH_CONST.__const: 0xc18
-+  __DATA_CONST.__got: 0x5f8
-+  __AUTH_CONST.__const: 0xbf8
-   __AUTH_CONST.__cfstring: 0x5e80
--  __AUTH_CONST.__objc_const: 0x14048
-+  __AUTH_CONST.__objc_const: 0x14170
-   __AUTH_CONST.__objc_intobj: 0xa8
-   __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__auth_got: 0x678
--  __AUTH.__objc_data: 0x1690
--  __AUTH.__data: 0xf0
--  __DATA.__objc_ivar: 0xee4
-+  __AUTH_CONST.__auth_got: 0x688
-+  __AUTH.__objc_data: 0x48
-+  __DATA.__objc_ivar: 0xefc
-   __DATA.__data: 0x15c0
--  __DATA.__bss: 0x810
-+  __DATA.__bss: 0x800
-   __DATA.__common: 0x20
--  __DATA_DIRTY.__objc_data: 0x1450
--  __DATA_DIRTY.__data: 0xb8
--  __DATA_DIRTY.__bss: 0x340
-+  __DATA_DIRTY.__objc_data: 0x2a98
-+  __DATA_DIRTY.__data: 0x1a8
-+  __DATA_DIRTY.__bss: 0x350
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreLocation.framework/CoreLocation
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 4359
--  Symbols:   13434
--  CStrings:  2299
+-  Symbols:   7279
+-  CStrings:  1543
 +  Functions: 4390
-+  Symbols:   13521
-+  CStrings:  2326
- 
-Sections:
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __DATA.__data : content changed
++  Symbols:   7318
++  CStrings:  1570
 Symbols:
 + -[SPBeaconManager simpleBeaconSubscribersInfoWithCompletion:]
 + -[SPBeaconManagerSimpleBeaconUpdateInterface armDarwinReconnectObserver]
@@ -141,15 +83,6 @@ Symbols:
 + _bootstrap_port
 + _mach_port_deallocate
 + _mach_task_self_
-+ _objc_msgSend$armDarwinReconnectObserver
-+ _objc_msgSend$armReconnectWatchdog_locked
-+ _objc_msgSend$buildSessionForServiceName:
-+ _objc_msgSend$cancelReconnectWatchdog
-+ _objc_msgSend$handleReconnection
-+ _objc_msgSend$isSPDCurrentlyRunning
-+ _objc_msgSend$machServiceName
-+ _objc_msgSend$performProbeGatedRecoveryWithReason:
-+ _objc_msgSend$simpleBeaconSubscribersInfoWithCompletion:
 - ___51-[SPBeaconManagerSimpleBeaconUpdateInterface proxy]_block_invoke
 - ___51-[SPBeaconManagerSimpleBeaconUpdateInterface proxy]_block_invoke_2
 - ___66-[SPBeaconManagerSimpleBeaconUpdateInterface interruptionHandler:]_block_invoke
@@ -183,5 +116,4 @@ CStrings:
 + "invalidate"
 + "watchdog"
 - "Failed reconnecting to daemon after retry: %@."
-
 ```

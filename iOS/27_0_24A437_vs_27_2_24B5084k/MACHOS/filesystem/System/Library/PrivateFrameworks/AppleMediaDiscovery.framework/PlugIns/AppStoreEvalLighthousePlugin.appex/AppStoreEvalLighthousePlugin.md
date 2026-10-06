@@ -2,13 +2,12 @@
 
 > `/System/Library/PrivateFrameworks/AppleMediaDiscovery.framework/PlugIns/AppStoreEvalLighthousePlugin.appex/AppStoreEvalLighthousePlugin`
 
+### Other Changes
+
 ```diff
 
 -1.5.6.0.0
 +1.5.7.0.0
-   __TEXT.__text: 0x22440
-   __TEXT.__auth_stubs: 0x2f0
-   __TEXT.__objc_stubs: 0x1fc0
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/AppleMediaDiscoveryFramework/install/TempContent/Objects/AppleMediaDiscoveryFramework.build/AppStoreEvalLighthousePlugin.build/Objects-normal/arm64e/AMDCoreMLDataProvider-28079b5bad0f33d6b027ac9407d2f922.o
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/AppleMediaDiscoveryFramework/install/TempContent/Objects/AppleMediaDiscoveryFramework.build/AppStoreEvalLighthousePlugin.build/Objects-normal/arm64e/AMDCoreMLTrainer-bfb3bfad9e41fa09464e8d75357dc1ed.o

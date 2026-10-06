@@ -1,37 +1,14 @@
 ## RTKit.bin
 
-- `Battery Discharge`
-- `smc/socd.cpp`
-- `(SOCD) ERROR:Failed to create socd handle. Storage index %u, result %d`
-- `<<<PMU monitor crashlog end>>>`
-- `(SOCD) ERROR:Failed to initialize socd container, result %d`
-- `System Power In`
-- `(SOCD) ERROR:Failed to write event counters`
-- `(SOCD) ERROR:failed to read socd region`
-- `(SOCD) ERROR:Panic counter is about to overflow`
-- `appending PMU FW information to crashlog because of SPMI err`
-- `Measure invalid: v %d i %d`
-- `smc/smcmain.cpp`
-- `(SOCD) ERROR:Failed to allocate a region buffer`
-- `(SOCD) ERROR:failed to write socd region %d`
-- `spmi status: rd trans=%llu recovered=%u failed=%u, wr trans=%llu recovered=%u failed=%u, last_mbse=%c%c%c%c`
-- `smc/smc_watchdog.cpp`
-- `smc/spmi.cpp`
-- `(SOCD) ERROR:failed to read socd region %d`
-- `spmi status (err=0x%08x): id = 0x%02x, read at 0x%04x, len=%lu, retry=%u`
-- `(SOCD) ERROR:failed to fill socd region %d`
-- `(SOCD) ERROR:failed to fill socd region`
-- `(SOCD) ERROR:Failed to initialize the SOCD container. Storage index %u, result %d`
-- `Adapter Eff Loss`
-- `(SOCD) ERROR:Unkown report type %d`
-- `preventing overflow for %s accumulator, resetting`
-- `smc/smc_init.cpp`
-- `Battery Power`
-- `(SOCD) ERROR:Failed to allocate a region instance. Storage index %u`
-- `smc/ppm_task.cpp`
-- `(SOCD) ERROR:AP wdt counter is about to overflow`
-- `(SOCD) ERROR:failed to write socd region`
-- `spmi status (err=0x%08x): id = 0x%02x, write at 0x%04x, len=%lu, retry=%u`
-- `(SOCD) ERROR:Unknown SOCD storage type: %d`
-- `(SOCD) ERROR:Failed to load socd container, result: %d`
-- `(SOCD) ERROR:Failed to read event counters`
+- `PMU FW info:`
+- `fw_ver_string = %s`
+- `UUID: %02x%02x%02x%02x-%02x%02x-%02x%02x-%02x%02x-%02x%02x%02x%02x%02x%02x`
+- `status = 0x%x`
+- `assert_id = %d`
+- `ticks_diff = %lld, expected_ticks_diff = %lld, iter_counter = %u, previous_count = %u`
+- `Could not complete appending PMU FW information to crashlog because of SPMI err`
+- `d,  diff:%lld  expected_diff:%lld`
+- `PMU FW Monitor Parameters:`
+- `paniced_pmu_idx = %u, has_fw = %s, error_count = %u, spmi_error_count = %u`
+- `<<<PMU monitor crashlog start>>>`
+- `assert_params = 0x%x, 0x%x`

@@ -2,148 +2,75 @@
 
 > `/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ba1b98` | `0x1bca1dc` | **`+0x28644`** |
+| `__AUTH_CONST.__objc_const` | `0x277558` | `0x2791c8` | **`+0x1c70`** |
+| `__TEXT.__objc_methlist` | `0x19e4c0` | `0x19fa30` | **`+0x1570`** |
+| `__AUTH_CONST.__const` | `0x5a858` | `0x5bc60` | **`+0x1408`** |
+| `__TEXT.__cstring` | `0x10062a` | `0x10192d` | **`+0x1303`** |
+| `__TEXT.__swift5_reflstr` | `0x167be` | `0x175de` | **`+0xe20`** |
+| `__TEXT.__oslogstring` | `0x53bd7` | `0x54951` | **`+0xd7a`** |
+| `__DATA.__bss` | `0x3d050` | `0x3dd38` | **`+0xce8`** |
+| `__DATA.__common` | `0x2dc0` | `0x3928` | **`+0xb68`** |
+| `__AUTH.__objc_data` | `0x55668` | `0x560a8` | **`+0xa40`** |
+| `__TEXT.__constg_swiftt` | `0x1ccb8` | `0x1d4e0` | **`+0x828`** |
+| `__TEXT.__unwind_info` | `0x717b0` | `0x71f60` | **`+0x7b0`** |
+| `__TEXT.__swift5_fieldmd` | `0x16704` | `0x16e98` | **`+0x794`** |
+| `__DATA_DIRTY.__bss` | `0x164b0` | `0x15d30` | **`-0x780`** |
+| `__AUTH.__data` | `0x9dd0` | `0xa500` | **`+0x730`** |
+| `__DATA_CONST.__objc_selrefs` | `0x95508` | `0x95c30` | **`+0x728`** |
+| `__TEXT.__const` | `0x4be78` | `0x4c598` | **`+0x720`** |
+| `__DATA_DIRTY.__data` | `0xc09a` | `0xb9aa` | **`-0x6f0`** |
+| `__DATA.__data` | `0x322a0` | `0x328e0` | **`+0x640`** |
+| `__AUTH_CONST.__cfstring` | `0xb3080` | `0xb3680` | **`+0x600`** |
+| `__TEXT.__swift5_typeref` | `0x18966` | `0x18cb4` | **`+0x34e`** |
+| `__TEXT.__swift5_capture` | `0xa290` | `0xa52c` | **`+0x29c`** |
+| `__DATA_CONST.__const` | `0x3ea18` | `0x3ebf8` | **`+0x1e0`** |
+| `__TEXT.__gcc_except_tab` | `0x26830` | `0x269d4` | **`+0x1a4`** |
+| `__DATA_DIRTY.__objc_data` | `0x2e498` | `0x2e328` | **`-0x170`** |
+| `__DATA.__objc_ivar` | `0x11c50` | `0x11d90` | **`+0x140`** |
+| `__DATA_DIRTY.__common` | `0x770` | `0x650` | **`-0x120`** |
+| `__TEXT.__eh_frame` | `0xb608` | `0xb708` | **`+0x100`** |
+| `__DATA_DIRTY.__objc_ivar` | `0x8840` | `0x87ac` | **`-0x94`** |
+| `__TEXT.__swift5_assocty` | `0x4cd0` | `0x4d30` | **`+0x60`** |
+| `__TEXT.__dlopen_cstrs` | `0x5106` | `0x5164` | **`+0x5e`** |
+| `__DATA_CONST.__got` | `0x8f40` | `0x8f98` | **`+0x58`** |
+| `__DATA_CONST.__objc_classlist` | `0xb2e0` | `0xb330` | **`+0x50`** |
+| `__TEXT.__swift5_proto` | `0x24ac` | `0x24f8` | **`+0x4c`** |
+| `__TEXT.__swift5_types` | `0x1b70` | `0x1bb4` | **`+0x44`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x2df0` | `0x2e20` | **`+0x30`** |
+| `__AUTH_CONST.__objc_intobj` | `0x4f68` | `0x4f98` | **`+0x30`** |
+| `__DATA_CONST.__objc_arraydata` | `0x41c8` | `0x41f8` | **`+0x30`** |
+| `__DATA_CONST.__objc_superrefs` | `0x74d0` | `0x7500` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x8620` | `0x8648` | **`+0x28`** |
+| `__DATA_CONST.__objc_protolist` | `0x3530` | `0x3550` | **`+0x20`** |
+| `__DATA_CONST.__objc_protorefs` | `0xdb0` | `0xdc8` | **`+0x18`** |
+| `__TEXT.__swift5_protos` | `0x238` | `0x250` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x1310` | `0x1324` | **`+0x14`** |
+| `__DATA.__uikit_ip` | `0x990` | `0x998` | **`+0x8`** |
+| `__DATA_DIRTY.__uikit_ip` | `0x1198` | `0x11a0` | **`+0x8`** |
+| `__TEXT.__swift5_types2` | `0x4` | `0x8` | **`+0x4`** |
+| `__TEXT.__swift_as_cont` | `0x4f8` | `0x4f4` | **`-0x4`** |
+| `__TEXT.__swift_as_ret` | `0x228` | `0x22c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -9127.0.79.1.102
--  __TEXT.__text: 0x1ba1b98
 +9127.0.84.1.102
-+  __TEXT.__text: 0x1bca1dc
-   __TEXT.__delay_helper: 0x1bc
-   __TEXT.__init_offsets: 0x4
--  __TEXT.__objc_methlist: 0x19e4c0
--  __TEXT.__const: 0x4be78
--  __TEXT.__dlopen_cstrs: 0x5106
--  __TEXT.__swift5_typeref: 0x18966
--  __TEXT.__swift5_capture: 0xa290
--  __TEXT.__swift5_fieldmd: 0x16704
--  __TEXT.__constg_swiftt: 0x1ccb8
--  __TEXT.__swift5_reflstr: 0x167be
--  __TEXT.__swift5_builtin: 0x1310
--  __TEXT.__swift5_assocty: 0x4cd0
--  __TEXT.__swift5_protos: 0x238
--  __TEXT.__swift5_proto: 0x24ac
--  __TEXT.__swift5_types: 0x1b70
--  __TEXT.__cstring: 0x10062a
--  __TEXT.__oslogstring: 0x53bd7
-+  __TEXT.__objc_methlist: 0x19fa30
-+  __TEXT.__const: 0x4c598
-+  __TEXT.__dlopen_cstrs: 0x5164
-+  __TEXT.__swift5_typeref: 0x18cb4
-+  __TEXT.__swift5_capture: 0xa52c
-+  __TEXT.__swift5_fieldmd: 0x16e98
-+  __TEXT.__constg_swiftt: 0x1d4e0
-+  __TEXT.__swift5_reflstr: 0x175de
-+  __TEXT.__swift5_builtin: 0x1324
-+  __TEXT.__swift5_assocty: 0x4d30
-+  __TEXT.__swift5_protos: 0x250
-+  __TEXT.__swift5_proto: 0x24f8
-+  __TEXT.__swift5_types: 0x1bb4
-+  __TEXT.__cstring: 0x10192d
-+  __TEXT.__oslogstring: 0x54951
-   __TEXT.__swift_as_entry: 0x2ac
--  __TEXT.__swift_as_ret: 0x228
--  __TEXT.__swift_as_cont: 0x4f8
-+  __TEXT.__swift_as_ret: 0x22c
-+  __TEXT.__swift_as_cont: 0x4f4
-   __TEXT.__swift5_mpenum: 0x238
--  __TEXT.__swift5_types2: 0x4
--  __TEXT.__gcc_except_tab: 0x26830
-+  __TEXT.__swift5_types2: 0x8
-+  __TEXT.__gcc_except_tab: 0x269d4
-   __TEXT.__ustring: 0x2a80
--  __TEXT.__unwind_info: 0x717b0
--  __TEXT.__eh_frame: 0xb608
-+  __TEXT.__unwind_info: 0x71f60
-+  __TEXT.__eh_frame: 0xb708
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3ea18
--  __DATA_CONST.__objc_classlist: 0xb2e0
-+  __DATA_CONST.__const: 0x3ebf8
-+  __DATA_CONST.__objc_classlist: 0xb330
-   __DATA_CONST.__objc_catlist: 0x368
--  __DATA_CONST.__objc_protolist: 0x3530
-+  __DATA_CONST.__objc_protolist: 0x3550
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x95508
--  __DATA_CONST.__objc_protorefs: 0xdb0
--  __DATA_CONST.__objc_superrefs: 0x74d0
--  __DATA_CONST.__objc_arraydata: 0x41c8
--  __DATA_CONST.__got: 0x8f40
--  __AUTH_CONST.__const: 0x5a858
--  __AUTH_CONST.__cfstring: 0xb3080
--  __AUTH_CONST.__objc_const: 0x277558
-+  __DATA_CONST.__objc_selrefs: 0x95c30
-+  __DATA_CONST.__objc_protorefs: 0xdc8
-+  __DATA_CONST.__objc_superrefs: 0x7500
-+  __DATA_CONST.__objc_arraydata: 0x41f8
-+  __DATA_CONST.__got: 0x8f98
-+  __AUTH_CONST.__const: 0x5bc60
-+  __AUTH_CONST.__cfstring: 0xb3680
-+  __AUTH_CONST.__objc_const: 0x2791c8
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__objc_arrayobj: 0x2df0
-+  __AUTH_CONST.__objc_arrayobj: 0x2e20
-   __AUTH_CONST.__objc_doubleobj: 0xfb0
--  __AUTH_CONST.__objc_intobj: 0x4f68
-+  __AUTH_CONST.__objc_intobj: 0x4f98
-   __AUTH_CONST.__objc_dictobj: 0x6b8
-   __AUTH_CONST.__objc_floatobj: 0x30
--  __AUTH_CONST.__auth_got: 0x8620
--  __AUTH.__objc_data: 0x55668
--  __AUTH.__data: 0x9dd0
--  __DATA.__objc_ivar: 0x11c50
--  __DATA.__data: 0x322a0
--  __DATA.__uikit_ip: 0x990
-+  __AUTH_CONST.__auth_got: 0x8648
-+  __AUTH.__objc_data: 0x560a8
-+  __AUTH.__data: 0xa500
-+  __DATA.__objc_ivar: 0x11d90
-+  __DATA.__data: 0x328e0
-+  __DATA.__uikit_ip: 0x998
-   __DATA.__objc_stublist: 0x20
-   __DATA.__uikit_ipl: 0x30
--  __DATA.__bss: 0x3d050
--  __DATA.__common: 0x2dc0
--  __DATA_DIRTY.__objc_ivar: 0x8840
--  __DATA_DIRTY.__objc_data: 0x2e498
--  __DATA_DIRTY.__uikit_ip: 0x1198
--  __DATA_DIRTY.__data: 0xc09a
--  __DATA_DIRTY.__bss: 0x164b0
--  __DATA_DIRTY.__common: 0x770
-+  __DATA.__common: 0x3928
-+  __DATA.__bss: 0x3dd38
-+  __DATA_DIRTY.__objc_ivar: 0x87ac
-+  __DATA_DIRTY.__objc_data: 0x2e328
-+  __DATA_DIRTY.__uikit_ip: 0x11a0
-+  __DATA_DIRTY.__data: 0xb9aa
-+  __DATA_DIRTY.__bss: 0x15d30
-+  __DATA_DIRTY.__common: 0x650
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
 
-   - /System/Library/PrivateFrameworks/SensorKitHelper.framework/SensorKitHelper
-   - /System/Library/PrivateFrameworks/ShareSheet.framework/ShareSheet
-   - /System/Library/PrivateFrameworks/SignpostMetrics.framework/SignpostMetrics
 -  - /System/Library/PrivateFrameworks/SiriAvailability.framework/SiriAvailability
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /System/Library/PrivateFrameworks/StudyLog.framework/StudyLog
-   - /System/Library/PrivateFrameworks/TextInput.framework/TextInput
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 180355
--  Symbols:   291182
+-  Symbols:   228119
 -  CStrings:  33570
 +  Functions: 181252
-+  Symbols:   291924
++  Symbols:   228726
 +  CStrings:  33748
- 
 Symbols:
 + +[UIFont(UISystemStatusUISupport) _statusBarRoundedFontOfSize:weight:]
 + +[UIFont(UISystemStatusUISupport) _statusBarRoundedFontOfSize:weight:width:]
@@ -936,176 +863,6 @@ Symbols:
 + _kCAFilterInputBlurFillNormalOpacity
 + _keypath_get.36Tm
 + _keypath_get.40Tm
-+ _objc_msgSend$_activationInteractionPolicy
-+ _objc_msgSend$_animateUsing:tracking:animations:completion:
-+ _objc_msgSend$_attributedDescription
-+ _objc_msgSend$_baseInsetsForAccessoryOnEdge:hasCustomClientInsets:accessorySize:additionalInsetFromEdge:includingFloatingBarContainer:
-+ _objc_msgSend$_beginDelayingPresentationUntilSceneSized
-+ _objc_msgSend$_beginInteractiveSidebarToggleRevealing:
-+ _objc_msgSend$_canInteractivelyToggleSidebar
-+ _objc_msgSend$_cancelPendingSelectionUpdate
-+ _objc_msgSend$_clearState
-+ _objc_msgSend$_computeAvailable
-+ _objc_msgSend$_contentOverflowsPlatter
-+ _objc_msgSend$_declinesAssistantBandTapAtPoint:inView:
-+ _objc_msgSend$_defaultActionForLayer:forKey:
-+ _objc_msgSend$_endInteractiveSidebarToggleShowing:
-+ _objc_msgSend$_frameForPocketBarRegionWithPaletteLength:paletteHasFloatingElements:
-+ _objc_msgSend$_handleTestURL:
-+ _objc_msgSend$_installEmojiRemoteKeyViewProviderForKeyplaneName:
-+ _objc_msgSend$_installSidebarInteractiveGesturesIfNeeded
-+ _objc_msgSend$_intelligentAssistantMenuAttachmentEdge
-+ _objc_msgSend$_intelligentAssistantMenuPreviewRect
-+ _objc_msgSend$_intelligentAssistantMenuRect
-+ _objc_msgSend$_isHostingActiveDictation
-+ _objc_msgSend$_isInAnimationBlockWithAnimationsEffectivelyEnabled
-+ _objc_msgSend$_lastFloatingBarContainerProxy
-+ _objc_msgSend$_lastOverflowScenePadding
-+ _objc_msgSend$_layoutOverflowSceneIfNeeded
-+ _objc_msgSend$_menuAttachmentEdgeForPopoverLayoutInfo:
-+ _objc_msgSend$_menuPreviewRectForPopoverLayoutInfo:
-+ _objc_msgSend$_menuRectForPopoverLayoutInfo:
-+ _objc_msgSend$_overflowScenePlatterHosting
-+ _objc_msgSend$_panGesture
-+ _objc_msgSend$_performWithoutRecordingScrollPosition:
-+ _objc_msgSend$_pinnedFooterElementRespectsActionOrder
-+ _objc_msgSend$_preferredPlacement
-+ _objc_msgSend$_presentDictationRevertChoicesAndSelectRange:
-+ _objc_msgSend$_presentationSourceItemBounds
-+ _objc_msgSend$_reevaluateSupportedMonochromaticTreatment
-+ _objc_msgSend$_resolveAppearanceToAlternateOrHidden
-+ _objc_msgSend$_resolvedMorphableViewWithSourceRect:
-+ _objc_msgSend$_retrieveAnchorForRange:inContext:completion:
-+ _objc_msgSend$_retrieveAnchorForRange:inContext:view:completion:
-+ _objc_msgSend$_roundedCornerRadiusFactor
-+ _objc_msgSend$_sceneRegionHostInteraction
-+ _objc_msgSend$_sceneRegions
-+ _objc_msgSend$_setAllowsPocketElementPassThrough:
-+ _objc_msgSend$_setContentOverflowsPlatter:
-+ _objc_msgSend$_setDisplayedShareIsOwnRoot:
-+ _objc_msgSend$_setIntelligentAssistantMenuAttachmentEdge:
-+ _objc_msgSend$_setIntelligentAssistantMenuPreviewRect:
-+ _objc_msgSend$_setIntelligentAssistantMenuRect:
-+ _objc_msgSend$_setInteractiveSidebarRevealProgress:
-+ _objc_msgSend$_setLastFloatingBarContainerProxy:
-+ _objc_msgSend$_setPocketsEnabled:
-+ _objc_msgSend$_setPreferredPlacement:
-+ _objc_msgSend$_setSearchBarVisibilityWhenScrolling:
-+ _objc_msgSend$_setUpConstraints
-+ _objc_msgSend$_setZoomDismissCollapsesToSource:
-+ _objc_msgSend$_shouldClaimTouchForInteractiveSidebarRevealAtPoint:event:
-+ _objc_msgSend$_startWritingToolsWithTool:prompt:candidate:inputContextHistory:sender:externalProviderID:precomputedResultText:precomputedCitationsJSON:precomputedContentAdvisoriesJSON:precomputedResultReplacesExisting:
-+ _objc_msgSend$_startWritingToolsWithTool:prompt:sender:externalProviderID:precomputedResultText:precomputedCitationsJSON:precomputedContentAdvisoriesJSON:precomputedResultReplacesExisting:
-+ _objc_msgSend$_statusBarRoundedFontOfSize:weight:
-+ _objc_msgSend$_statusBarRoundedFontOfSize:weight:width:
-+ _objc_msgSend$_teardownZoomDismissProxyView
-+ _objc_msgSend$_textEffectManagerWritingDirectionForRange:inContext:writingDirection:
-+ _objc_msgSend$_topScrollEdgeEffectSuppressionLevel
-+ _objc_msgSend$_uninstallSceneActivationGestures
-+ _objc_msgSend$_uninstallSidebarInteractiveGestures
-+ _objc_msgSend$_updateActiveInputAssertionForResponder:
-+ _objc_msgSend$_updateFloatingBarContainerViewPosition
-+ _objc_msgSend$_updateSceneActivationGestures
-+ _objc_msgSend$_updateTrackedElementFor:with:
-+ _objc_msgSend$_validatorForSession:
-+ _objc_msgSend$_wantsToBecomeFirstResponderFromSearchIconButton
-+ _objc_msgSend$_zoomDismissCollapsesToSource
-+ _objc_msgSend$_zoomDismissProxyViewWithWindowFrame:inWindow:
-+ _objc_msgSend$_zoomTransitionSourceView
-+ _objc_msgSend$abort
-+ _objc_msgSend$accessibilityMenuMaximumWidthProvider
-+ _objc_msgSend$activationInteractionClient
-+ _objc_msgSend$activationInteractionPolicy
-+ _objc_msgSend$barPositionClientDidChangeResolvers:
-+ _objc_msgSend$cancelAllTextAnimations
-+ _objc_msgSend$cancelGrammarPresentation
-+ _objc_msgSend$compactConstraints
-+ _objc_msgSend$consumesFirstTap
-+ _objc_msgSend$currentPolicy
-+ _objc_msgSend$deferringPolicyStatus
-+ _objc_msgSend$didConfigureBackgroundBlur
-+ _objc_msgSend$didTouch:withLocationInWindow:withWindowBounds:withWindowFrameInScreen:withTrackpadFingerDownCount:withSystemDisplayIdentifier:
-+ _objc_msgSend$didUnmarkText
-+ _objc_msgSend$disableGenmojiCreationSuggestions
-+ _objc_msgSend$dockedWhenSplit
-+ _objc_msgSend$effectiveFloatingBarContainerProxyForSceneSafeAreaAlignedEdges
-+ _objc_msgSend$expectedWakeupBeforeCommitDeadline:forDisplayWithId:
-+ _objc_msgSend$firstCachedKeyWithDisplayType:
-+ _objc_msgSend$fontDescriptorWithName:size:
-+ _objc_msgSend$getIAPayloadKeyPencilSystemDisplayIdentifier
-+ _objc_msgSend$grammarEditMenuInteraction
-+ _objc_msgSend$grammarSuggestionsInfo
-+ _objc_msgSend$hideSelectionCommandsIfNeeded
-+ _objc_msgSend$independentFromSearchBarLayout
-+ _objc_msgSend$initWithFloatingBarContainerView:updateMode:host:owningViewController:
-+ _objc_msgSend$initWithSuggestions:selectedIndex:anchor:
-+ _objc_msgSend$initialSuggestion
-+ _objc_msgSend$isEmojiKeyplaneName:
-+ _objc_msgSend$isEmulatingIdiom
-+ _objc_msgSend$keyboardInTrackpadMode
-+ _objc_msgSend$keyboardInputRehostingSceneDidChangeKeyboardInTrackpadMode:
-+ _objc_msgSend$keyboardWindowSafeAreaBottomInset
-+ _objc_msgSend$leafValidator
-+ _objc_msgSend$mediaViewConstraints
-+ _objc_msgSend$minimumMaximumDetentEdgeAttachedCornerRadii
-+ _objc_msgSend$minimumMaximumDetentFloatingCornerRadii
-+ _objc_msgSend$observeEnhancedSiriAvailabilityChangesWithChangeHandler:
-+ _objc_msgSend$proofreadingGuessForString:
-+ _objc_msgSend$readableContentGuide
-+ _objc_msgSend$regionWithIdentifier:referenceFrame:type:active:margins:metadata:
-+ _objc_msgSend$rehostingKeyboardInTrackpadMode
-+ _objc_msgSend$rehostingVisibleKeyboardFrames
-+ _objc_msgSend$remoteContentViewForKey:
-+ _objc_msgSend$remoteEmojiInputView
-+ _objc_msgSend$restoresToEmojiInputMode
-+ _objc_msgSend$retrieveAnchorForRange:inContext:completion:
-+ _objc_msgSend$searchBarShouldBecomeFirstResponderForLayoutState:
-+ _objc_msgSend$separatorBottomConstraint
-+ _objc_msgSend$separatorTopConstraint
-+ _objc_msgSend$setAccessibilityMenuMaximumWidthProvider:
-+ _objc_msgSend$setActivationInteractionPolicy:
-+ _objc_msgSend$setBackgroundBlurView:
-+ _objc_msgSend$setCompactConstraints:
-+ _objc_msgSend$setConsumesFirstTap:
-+ _objc_msgSend$setDidConfigureBackgroundBlur:
-+ _objc_msgSend$setEmojiGridContainmentView:
-+ _objc_msgSend$setGrammarEditMenuInteraction:
-+ _objc_msgSend$setGrammarSuggestionsInfo:
-+ _objc_msgSend$setIndependentFromSearchBarLayout:
-+ _objc_msgSend$setKeyboardInTrackpadMode:
-+ _objc_msgSend$setKeyboardScreenTraits:
-+ _objc_msgSend$setLeafValidator:
-+ _objc_msgSend$setMediaViewConstraints:
-+ _objc_msgSend$setOrCreateTraitOverridesWith:
-+ _objc_msgSend$setOverrideBackgroundColor:
-+ _objc_msgSend$setPinnedToTop:
-+ _objc_msgSend$setPrecomputedResultReplacesExisting:
-+ _objc_msgSend$setRehostingKeyboardInTrackpadMode:
-+ _objc_msgSend$setRehostingVisibleKeyboardFrames:
-+ _objc_msgSend$setRemoteKeyViewProvider:
-+ _objc_msgSend$setSecondaryBackdropView:clipsToBounds:
-+ _objc_msgSend$setSharedConstraints:
-+ _objc_msgSend$setTraitHandle:
-+ _objc_msgSend$setUnobscuredContentRect:
-+ _objc_msgSend$setVisibleKeyboardFrames:
-+ _objc_msgSend$setWideConstraints:
-+ _objc_msgSend$set_contentOverflowsPlatter:
-+ _objc_msgSend$set_lastOverflowScenePadding:
-+ _objc_msgSend$sharedAvailability
-+ _objc_msgSend$sharedConstraints
-+ _objc_msgSend$shouldShowEnhancedSiri
-+ _objc_msgSend$shouldUseVibrantTitleLabels
-+ _objc_msgSend$sidebarRevealEdgePanGestureRecognizer
-+ _objc_msgSend$traitHandle
-+ _objc_msgSend$ui_activationInteractionClient
-+ _objc_msgSend$ui_barPositionClient
-+ _objc_msgSend$ui_barPositionClientComponent
-+ _objc_msgSend$ui_containsSceneRegions
-+ _objc_msgSend$ui_sceneRegionHost
-+ _objc_msgSend$useDynamicEmojiKeyplaneEnabled
-+ _objc_msgSend$visibleKeyboardFrames
-+ _objc_msgSend$wideConstraints
-+ _objc_msgSend$wireDynamicEmojiSearchDelegate
 + _requestContextsForScope:completion:.__s_category
 + _s_lock
 + _s_next_token
@@ -1512,41 +1269,6 @@ Symbols:
 - _kSOSiriCapabilitiesDidChangeNotification
 - _keypath_get.35Tm
 - _keypath_get.39Tm
-- _objc_msgSend$_frameForPocketBarRegionWithPaletteLength:
-- _objc_msgSend$_horizontalAlignment
-- _objc_msgSend$_isPhotosApp
-- _objc_msgSend$_preferredActivator
-- _objc_msgSend$_proxyWithUpdatesDisabledFor:
-- _objc_msgSend$_registerForAvailabilityChanges
-- _objc_msgSend$_setHorizontalAlignment:
-- _objc_msgSend$_startWritingToolsWithTool:prompt:sender:externalProviderID:precomputedResultText:precomputedCitationsJSON:precomputedContentAdvisoriesJSON:
-- _objc_msgSend$_updateFloatingBarContainerView
-- _objc_msgSend$adjustableConstraints
-- _objc_msgSend$containerViewTopConstraits
-- _objc_msgSend$didTouch:withLocationInWindow:withWindowBounds:withWindowFrameInScreen:withTrackpadFingerDownCount:
-- _objc_msgSend$expectedWakeupBeforeCommitDeadline:
-- _objc_msgSend$forceWindowEnabledIfAllowed
-- _objc_msgSend$initWithData:ofType:
-- _objc_msgSend$initWithFloatingBarContainerView:updateMode:host:
-- _objc_msgSend$landscapeButton
-- _objc_msgSend$landscapeConstraints
-- _objc_msgSend$landscapeTextBody
-- _objc_msgSend$launchDictationFeedbackApp
-- _objc_msgSend$mediaLayoutWidthAdjustment
-- _objc_msgSend$pointIsWithinKeyboardContent:onCompletion:
-- _objc_msgSend$portraitConstraints
-- _objc_msgSend$setAdjustableConstraints:
-- _objc_msgSend$setContainerViewTopConstraits:
-- _objc_msgSend$setLandscapeConstraints:
-- _objc_msgSend$setPortraitConstraints:
-- _objc_msgSend$setVideoHeight:
-- _objc_msgSend$setVideoWidth:
-- _objc_msgSend$setWidthAdjustmentConstraint:
-- _objc_msgSend$set_preferredActivator:
-- _objc_msgSend$setupConstraintData
-- _objc_msgSend$videoHeight
-- _objc_msgSend$videoWidth
-- _objc_msgSend$widthAdjustmentConstraint
 - _symbolic $s5UIKit20ScrollEdgeEffectViewC2v8V0B6PocketC8DelegateP
 - _symbolic $s5UIKit20ScrollEdgeEffectViewC2v8V7StylingP
 - _symbolic SO_SaySo15_UIBarItemGroupCGt

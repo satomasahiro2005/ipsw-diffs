@@ -2,97 +2,63 @@
 
 > `/Applications/MomentsUIService.app/MomentsUIService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x29089c` | `0x291504` | **`+0xc68`** |
+| `__TEXT.__oslogstring` | `0xd6e3` | `0xda03` | **`+0x320`** |
+| `__DATA_CONST.__cfstring` | `0x1fc0` | `0x2140` | **`+0x180`** |
+| `__TEXT.__objc_methname` | `0x12565` | `0x126b5` | **`+0x150`** |
+| `__TEXT.__cstring` | `0xa048` | `0xa158` | **`+0x110`** |
+| `__DATA.__objc_const` | `0xc960` | `0xca00` | **`+0xa0`** |
+| `__TEXT.__objc_stubs` | `0x9400` | `0x9480` | **`+0x80`** |
+| `__DATA_CONST.__const` | `0x104f0` | `0x10568` | **`+0x78`** |
+| `__TEXT.__objc_methtype` | `0x3d39` | `0x3d79` | **`+0x40`** |
+| `__TEXT.__objc_methlist` | `0x4064` | `0x4094` | **`+0x30`** |
+| `__DATA.__objc_selrefs` | `0x3668` | `0x3690` | **`+0x28`** |
+| `__TEXT.__gcc_except_tab` | `0x204` | `0x22c` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x76f0` | `0x7718` | **`+0x28`** |
+| `__DATA.__objc_ivar` | `0xd4` | `0xe8` | **`+0x14`** |
+| `__DATA_CONST.__got` | `0x1b98` | `0x1ba8` | **`+0x10`** |
+| `__TEXT.__const` | `0xb3b4` | `0xb3c4` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_got`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__auth_got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -502.0.5.0.0
--  __TEXT.__text: 0x27de78
 +502.0.8.0.0
-+  __TEXT.__text: 0x27eae0
-   __TEXT.__auth_stubs: 0x4aa0
--  __TEXT.__objc_stubs: 0x9400
--  __TEXT.__objc_methlist: 0x4064
--  __TEXT.__const: 0xb3b4
--  __TEXT.__gcc_except_tab: 0x204
--  __TEXT.__cstring: 0xa048
--  __TEXT.__objc_methname: 0x12565
--  __TEXT.__oslogstring: 0xd6e3
-+  __TEXT.__objc_stubs: 0x9480
-+  __TEXT.__objc_methlist: 0x4094
-+  __TEXT.__const: 0xb3c4
-+  __TEXT.__gcc_except_tab: 0x22c
-+  __TEXT.__cstring: 0xa158
-+  __TEXT.__objc_methname: 0x126b5
-+  __TEXT.__oslogstring: 0xda03
-   __TEXT.__objc_classname: 0x2d88
--  __TEXT.__objc_methtype: 0x3d39
-+  __TEXT.__objc_methtype: 0x3d79
-   __TEXT.__swift5_typeref: 0x456e
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__constg_swiftt: 0x754c
 
-   __TEXT.__swift_as_ret: 0x454
-   __TEXT.__swift_as_cont: 0x720
-   __TEXT.__swift5_protos: 0x48
--  __TEXT.__unwind_info: 0x9350
-+  __TEXT.__unwind_info: 0x9380
-   __TEXT.__eh_frame: 0x8670
--  __DATA_CONST.__const: 0x104f0
--  __DATA_CONST.__cfstring: 0x1fc0
-+  __DATA_CONST.__const: 0x10568
-+  __DATA_CONST.__cfstring: 0x2140
-   __DATA_CONST.__objc_classlist: 0x550
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x220
-
-   __DATA_CONST.__objc_arraydata: 0xf8
-   __DATA_CONST.__objc_arrayobj: 0x18
-   __DATA_CONST.__auth_got: 0x2560
--  __DATA_CONST.__got: 0x1b98
-+  __DATA_CONST.__got: 0x1ba8
-   __DATA_CONST.__auth_ptr: 0xf28
--  __DATA.__objc_const: 0xc960
--  __DATA.__objc_selrefs: 0x3668
--  __DATA.__objc_ivar: 0xd4
-+  __DATA.__objc_const: 0xca00
-+  __DATA.__objc_selrefs: 0x3690
-+  __DATA.__objc_ivar: 0xe8
-   __DATA.__objc_data: 0x7848
-   __DATA.__data: 0x9ba8
-   __DATA.__common: 0x960
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   - @rpath/MomentsUIServiceCore.framework/MomentsUIServiceCore
 -  Functions: 11030
 -  Symbols:   26528
 -  CStrings:  4968
 +  Functions: 11037
 +  Symbols:   26551
 +  CStrings:  5003
- 
 Symbols:
 + -[MOConfigurationManagerBase initWithDefaultsManager:enableTrialClient:eligibilityProvider:]
 + -[MOConfigurationManagerBase isActionSuggestionsEligible]

@@ -2,95 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/MediaPlaybackCore.framework/MediaPlaybackCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4a197c` | `0x4a320c` | **`+0x1890`** |
+| `__TEXT.__oslogstring` | `0x4c598` | `0x4ca61` | **`+0x4c9`** |
+| `__TEXT.__unwind_info` | `0xdd78` | `0xd950` | **`-0x428`** |
+| `__TEXT.__cstring` | `0x25ad1` | `0x25d8d` | **`+0x2bc`** |
+| `__AUTH_CONST.__cfstring` | `0x1ea00` | `0x1eba0` | **`+0x1a0`** |
+| `__AUTH_CONST.__objc_const` | `0x34770` | `0x34898` | **`+0x128`** |
+| `__TEXT.__gcc_except_tab` | `0x5988` | `0x5a3c` | **`+0xb4`** |
+| `__TEXT.__objc_methlist` | `0x17e10` | `0x17ec0` | **`+0xb0`** |
+| `__AUTH_CONST.__const` | `0x23858` | `0x238e0` | **`+0x88`** |
+| `__TEXT.__eh_frame` | `0x10284` | `0x10214` | **`-0x70`** |
+| `__DATA_CONST.__objc_selrefs` | `0xcb40` | `0xcb98` | **`+0x58`** |
+| `__DATA_CONST.__const` | `0x9380` | `0x93d0` | **`+0x50`** |
+| `__DATA.__data` | `0x72b0` | `0x7280` | **`-0x30`** |
+| `__TEXT.__swift5_reflstr` | `0x5a02` | `0x5a32` | **`+0x30`** |
+| `__DATA.__objc_ivar` | `0x1ac4` | `0x1ad8` | **`+0x14`** |
+| `__TEXT.__swift5_capture` | `0xaee4` | `0xaef8` | **`+0x14`** |
+| `__AUTH.__data` | `0x40b0` | `0x40c0` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x3458` | `0x3448` | **`-0x10`** |
+| `__TEXT.__swift5_typeref` | `0x547a` | `0x546a` | **`-0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x569c` | `0x56a8` | **`+0xc`** |
+| `__DATA_CONST.__objc_arraydata` | `0x290` | `0x298` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x6d0` | `0x6d8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -26110.26.31.301.0
--  __TEXT.__text: 0x48169c
--  __TEXT.__objc_methlist: 0x17e10
 +26200.26.36.301.0
-+  __TEXT.__text: 0x482e84
-+  __TEXT.__objc_methlist: 0x17ec0
-   __TEXT.__dlopen_cstrs: 0x114
-   __TEXT.__const: 0x10870
--  __TEXT.__oslogstring: 0x4c598
--  __TEXT.__cstring: 0x25ad1
--  __TEXT.__swift5_typeref: 0x547a
--  __TEXT.__swift5_capture: 0xaee4
-+  __TEXT.__oslogstring: 0x4ca61
-+  __TEXT.__cstring: 0x25d8d
-+  __TEXT.__swift5_typeref: 0x546a
-+  __TEXT.__swift5_capture: 0xaef8
-   __TEXT.__constg_swiftt: 0x7b40
--  __TEXT.__swift5_reflstr: 0x5a02
--  __TEXT.__swift5_fieldmd: 0x569c
-+  __TEXT.__swift5_reflstr: 0x5a32
-+  __TEXT.__swift5_fieldmd: 0x56a8
-   __TEXT.__swift5_builtin: 0x6f4
-   __TEXT.__swift5_mpenum: 0xf0
-   __TEXT.__swift5_assocty: 0xbc0
 
-   __TEXT.__swift_as_cont: 0xe14
-   __TEXT.__swift5_protos: 0xd8
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__gcc_except_tab: 0x5988
-+  __TEXT.__gcc_except_tab: 0x5a3c
-   __TEXT.__ustring: 0x4dc
--  __TEXT.__unwind_info: 0x10660
--  __TEXT.__eh_frame: 0x10304
-+  __TEXT.__unwind_info: 0x106a8
-+  __TEXT.__eh_frame: 0x10294
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9380
-+  __DATA_CONST.__const: 0x93d0
-   __DATA_CONST.__objc_classlist: 0xd30
-   __DATA_CONST.__objc_catlist: 0x298
-   __DATA_CONST.__objc_protolist: 0x7f0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xcb40
-+  __DATA_CONST.__objc_selrefs: 0xcb98
-   __DATA_CONST.__objc_protorefs: 0x3a0
--  __DATA_CONST.__objc_superrefs: 0x6d0
--  __DATA_CONST.__objc_arraydata: 0x290
--  __DATA_CONST.__got: 0x3458
--  __AUTH_CONST.__const: 0x23858
--  __AUTH_CONST.__cfstring: 0x1ea00
--  __AUTH_CONST.__objc_const: 0x34770
-+  __DATA_CONST.__objc_superrefs: 0x6d8
-+  __DATA_CONST.__objc_arraydata: 0x298
-+  __DATA_CONST.__got: 0x3448
-+  __AUTH_CONST.__const: 0x238e0
-+  __AUTH_CONST.__cfstring: 0x1eba0
-+  __AUTH_CONST.__objc_const: 0x34898
-   __AUTH_CONST.__objc_intobj: 0x888
-   __AUTH_CONST.__objc_arrayobj: 0x288
-   __AUTH_CONST.__objc_dictobj: 0xc8
-   __AUTH_CONST.__objc_doubleobj: 0x70
-   __AUTH_CONST.__auth_got: 0x3448
-   __AUTH.__objc_data: 0x5a40
--  __AUTH.__data: 0x40b0
--  __DATA.__objc_ivar: 0x1ac4
--  __DATA.__data: 0x72b0
-+  __AUTH.__data: 0x40c0
-+  __DATA.__objc_ivar: 0x1ad8
-+  __DATA.__data: 0x7280
-   __DATA.__common: 0x240
-   __DATA_DIRTY.__objc_data: 0x3590
-   __DATA_DIRTY.__data: 0x4548
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 24464
--  Symbols:   24238
+-  Functions: 24465
+-  Symbols:   18657
 -  CStrings:  8247
-+  Functions: 24485
-+  Symbols:   24264
++  Functions: 24486
++  Symbols:   18677
 +  CStrings:  8271
- 
 Symbols:
 + +[_MPCVideoViewControllerMediaFoundationImplementation keyPathsForValuesAffectingCustomControlItems]
 + -[MPCFuture _removeInvalidHandler:]
@@ -323,18 +274,6 @@ Symbols:
 + ___block_descriptor_49_e8_32s40s_e18_16?0"NSString"8ls32l8s40l8
 + ___block_descriptor_56_e8_32s40s48bs_e5_v8?0ls48l8s32l8s40l8
 + ___block_descriptor_61_e8_32s40s48s_e49_v16?0"MPIdentifierSet<MPMutableIdentifierSet>"8ls32l8s40l8s48l8
-+ _objc_msgSend$_removeInvalidHandler:
-+ _objc_msgSend$addPointer:
-+ _objc_msgSend$customControlItems
-+ _objc_msgSend$initWithProgressiveResults:properties:personalizationProperties:serverObjectDatabase:libraryObjectDatabase:performanceMetrics:
-+ _objc_msgSend$initWithRequest:serverObjectDatabase:account:
-+ _objc_msgSend$pointerAtIndex:
-+ _objc_msgSend$replacePointerAtIndex:withPointer:
-+ _objc_msgSend$setCustomControlItems:
-+ _objc_msgSend$setHandler:
-+ _objc_msgSend$strongObjectsPointerArray
-+ _objc_msgSend$tokenForDatabase:
-+ _objc_msgSend$versionHashesByStoreID
 - -[MPCFuture invalidBlocks]
 - -[MPCModelStorePlaybackItemsRequestAccumulation initWithProgressiveResults:properties:personalizationProperties:libraryObjectDatabase:performanceMetrics:]
 - -[_MPCModelStorePlaybackItemsRequestAccumulator_Legacy initWithRequest:serverObjectDatabase:]
@@ -545,12 +484,6 @@ Symbols:
 - _kMXSessionProperty_HostProcessAttribution
 - _kMXSession_HostProcessAttributionKey_AuditToken
 - _kMXSession_HostProcessAttributionKey_BundleID
-- _objc_msgSend$dataWithBytes:length:
-- _objc_msgSend$initWithProgressiveResults:properties:personalizationProperties:libraryObjectDatabase:performanceMetrics:
-- _objc_msgSend$initWithRequest:serverObjectDatabase:
-- _objc_msgSend$remoteHostProcessAuditToken
-- _objc_msgSend$setAudioSessionMXProperties:
-- _objc_msgSend$weakToStrongObjectsMapTable
 - _symbolic yt______pIgrzo_ s5ErrorP
 CStrings:
 + " versionHashesByStoreID=%@"

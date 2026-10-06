@@ -2,14 +2,9 @@
 
 > `/System/Library/PrivateFrameworks/ALUtil.framework/ALUtil.dylib`
 
-```diff
+### Section Size Changes
 
-   __DATA.__data: 0x38
-   __DATA.__common: 0x1
-   __DATA_DIRTY.__data: 0x3a0
--  __DATA_DIRTY.__bss: 0x3c0
-+  __DATA_DIRTY.__bss: 0x400
-   __DATA_DIRTY.__common: 0x9
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x1c8` | `0x188` | **`-0x40`** |
+| `__DATA_DIRTY.__bss` | `0x3c0` | `0x400` | **`+0x40`** |

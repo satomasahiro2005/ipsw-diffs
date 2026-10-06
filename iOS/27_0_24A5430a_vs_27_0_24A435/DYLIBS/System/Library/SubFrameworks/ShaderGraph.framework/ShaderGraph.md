@@ -2,14 +2,15 @@
 
 > `/System/Library/SubFrameworks/ShaderGraph.framework/ShaderGraph`
 
-```diff
+### Section Size Changes
 
- 159.0.7.0.2
--  __TEXT.__text: 0x1e96a0
-+  __TEXT.__text: 0x1e9688
-   __TEXT.__objc_methlist: 0xf48
-   __TEXT.__const: 0x12b60
-   __TEXT.__cstring: 0x1c26d
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e96a0` | `0x1e9688` | **`-0x18`** |
+
+### Other Changes
+
+```diff
 Symbols:
 + _swift_retain_x12
 - _swift_retain_x10

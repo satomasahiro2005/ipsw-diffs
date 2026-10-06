@@ -2,94 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/DirectResource.framework/DirectResource`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x67ee4` | `0x687f8` | **`+0x914`** |
+| `__TEXT.__cstring` | `0x26d` | `0x58d` | **`+0x320`** |
+| `__AUTH.__objc_data` | `—` | `0x280` | **`+0x280`** |
+| `__DATA_DIRTY.__objc_data` | `0x2d0` | `0x50` | **`-0x280`** |
+| `__TEXT.__swift5_typeref` | `0x1d02` | `0x1b88` | **`-0x17a`** |
+| `__TEXT.__swift5_reflstr` | `0x1535` | `0x161b` | **`+0xe6`** |
+| `__TEXT.__const` | `0x549e` | `0x53ce` | **`-0xd0`** |
+| `__DATA.__data` | `0xe90` | `0xdf8` | **`-0x98`** |
+| `__DATA.__bss` | `0x4ae0` | `0x4b60` | **`+0x80`** |
+| `__AUTH_CONST.__auth_got` | `0xb10` | `0xb30` | **`+0x20`** |
+| `__TEXT.__swift5_proto` | `0x4b0` | `0x4b4` | **`+0x4`** |
+| `__TEXT.__oslogstring` | `0x2ad` | `0x2aa` | **`-0x3`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x67ee4
-+  __TEXT.__text: 0x687f8
-   __TEXT.__objc_methlist: 0x21e4
--  __TEXT.__const: 0x549e
--  __TEXT.__swift5_typeref: 0x1d02
--  __TEXT.__swift5_reflstr: 0x1535
--  __TEXT.__swift5_assocty: 0x7f8
-+  __TEXT.__const: 0x53ce
-+  __TEXT.__cstring: 0x58d
-+  __TEXT.__swift5_typeref: 0x1b88
-   __TEXT.__constg_swiftt: 0x1e08
--  __TEXT.__swift5_fieldmd: 0x20a8
--  __TEXT.__swift5_builtin: 0x208
--  __TEXT.__swift5_proto: 0x4b0
-+  __TEXT.__swift5_proto: 0x4b4
-   __TEXT.__swift5_types: 0x284
-+  __TEXT.__swift5_reflstr: 0x161b
-+  __TEXT.__swift5_fieldmd: 0x20a8
-+  __TEXT.__oslogstring: 0x2aa
-+  __TEXT.__swift5_capture: 0x4ac
-+  __TEXT.__swift5_builtin: 0x208
-+  __TEXT.__swift5_assocty: 0x7f8
-   __TEXT.__swift5_protos: 0x54
-   __TEXT.__swift5_types2: 0x40
-   __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__cstring: 0x26d
--  __TEXT.__oslogstring: 0x2ad
--  __TEXT.__swift5_capture: 0x4ac
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0x4
-   __TEXT.__swift_as_cont: 0xc
+-47.0.0.0.0
++47.0.1.0.0
 
-   __AUTH_CONST.__const: 0x45d0
-   __AUTH_CONST.__cfstring: 0x20
-   __AUTH_CONST.__objc_const: 0x4bc0
--  __AUTH_CONST.__auth_got: 0xb10
-+  __AUTH_CONST.__auth_got: 0xb30
-+  __AUTH.__objc_data: 0x280
-   __AUTH.__data: 0xe38
--  __DATA.__data: 0xe90
--  __DATA.__bss: 0x4ae0
-+  __DATA.__data: 0xdf8
-+  __DATA.__bss: 0x4b60
-   __DATA.__common: 0x98
--  __DATA_DIRTY.__objc_data: 0x2d0
-+  __DATA_DIRTY.__objc_data: 0x50
-   __DATA_DIRTY.__data: 0x1420
-   __DATA_DIRTY.__common: 0x100
-   __DATA_DIRTY.__bss: 0xa0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2806
--  Symbols:   9821
--  CStrings:  32
+-  Symbols:   7043
+-  CStrings:  31
 +  Functions: 2785
-+  Symbols:   9754
-+  CStrings:  56
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_types2 : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   6982
++  CStrings:  55
 Symbols:
 + _$sSo14MTLPixelFormatV14DirectResourceE11descriptionSSvg
 + _$sSo14MTLTextureTypeV14DirectResourceE11descriptionSSvg
@@ -215,5 +157,4 @@ CStrings:
 + "ushort3Normalized"
 + "ushort4Normalized"
 + "ushortNormalized"
-
 ```

@@ -2,86 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/CoreEmbeddedSpeechRecognition.framework/XPCServices/com.apple.siri.embeddedspeech.xpc/com.apple.siri.embeddedspeech`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methtype`
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x33cdc` | `0x34ed4` | **`+0x11f8`** |
+| `__TEXT.__objc_methname` | `0xa6dc` | `0xa859` | **`+0x17d`** |
+| `__TEXT.__unwind_info` | `0x798` | `0x8c8` | **`+0x130`** |
+| `__TEXT.__objc_stubs` | `0x8500` | `0x8600` | **`+0x100`** |
+| `__TEXT.__cstring` | `0x4e7f` | `0x4f68` | **`+0xe9`** |
+| `__DATA_CONST.__const` | `0xd00` | `0xde8` | **`+0xe8`** |
+| `__TEXT.__gcc_except_tab` | `0x1b84` | `0x1aa4` | **`-0xe0`** |
+| `__TEXT.__oslogstring` | `0x4b76` | `0x4c38` | **`+0xc2`** |
+| `__TEXT.__const` | `0x100` | `0x150` | **`+0x50`** |
+| `__DATA.__objc_selrefs` | `0x2528` | `0x2568` | **`+0x40`** |
+| `__TEXT.__objc_methlist` | `0x1cfc` | `0x1d2c` | **`+0x30`** |
+| `__DATA.__objc_const` | `0x3260` | `0x3280` | **`+0x20`** |
+| `__DATA_CONST.__cfstring` | `0x2e00` | `0x2e20` | **`+0x20`** |
+| `__TEXT.__auth_stubs` | `0x970` | `0x980` | **`+0x10`** |
+| `__DATA.__bss` | `0x158` | `0x150` | **`-0x8`** |
+| `__DATA.__common` | `—` | `0x8` | **`+0x8`** |
+| `__DATA.__data` | `0x328` | `0x330` | **`+0x8`** |
+| `__DATA_CONST.__auth_got` | `0x4c8` | `0x4d0` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x868` | `0x870` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x304` | `0x308` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_data`
+- `__TEXT.__objc_methtype`
+
+### Other Changes
 
 ```diff
 
 -3600.70.47.11.1
--  __TEXT.__text: 0x33450
--  __TEXT.__auth_stubs: 0x970
--  __TEXT.__objc_stubs: 0x8500
--  __TEXT.__objc_methlist: 0x1cfc
--  __TEXT.__const: 0x100
--  __TEXT.__gcc_except_tab: 0x1b84
--  __TEXT.__cstring: 0x4e7f
--  __TEXT.__objc_methname: 0xa6dc
--  __TEXT.__oslogstring: 0x4b76
 +3605.10.1.0.0
-+  __TEXT.__text: 0x345c4
-+  __TEXT.__auth_stubs: 0x980
-+  __TEXT.__objc_stubs: 0x8600
-+  __TEXT.__objc_methlist: 0x1d2c
-+  __TEXT.__const: 0x150
-+  __TEXT.__gcc_except_tab: 0x1aa4
-+  __TEXT.__cstring: 0x4f68
-+  __TEXT.__objc_methname: 0xa859
-+  __TEXT.__oslogstring: 0x4c38
-   __TEXT.__objc_classname: 0x297
-   __TEXT.__objc_methtype: 0x1c1a
--  __TEXT.__unwind_info: 0x920
--  __DATA_CONST.__const: 0xd00
--  __DATA_CONST.__cfstring: 0x2e00
-+  __TEXT.__unwind_info: 0xc30
-+  __DATA_CONST.__const: 0xde8
-+  __DATA_CONST.__cfstring: 0x2e20
-   __DATA_CONST.__objc_classlist: 0xc8
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x40
 
-   __DATA_CONST.__objc_arraydata: 0xf8
-   __DATA_CONST.__objc_dictobj: 0x50
-   __DATA_CONST.__objc_arrayobj: 0x18
--  __DATA_CONST.__auth_got: 0x4c8
--  __DATA_CONST.__got: 0x868
-+  __DATA_CONST.__auth_got: 0x4d0
-+  __DATA_CONST.__got: 0x870
-   __DATA_CONST.__auth_ptr: 0x8
--  __DATA.__objc_const: 0x3260
--  __DATA.__objc_selrefs: 0x2528
--  __DATA.__objc_ivar: 0x304
-+  __DATA.__objc_const: 0x3280
-+  __DATA.__objc_selrefs: 0x2568
-+  __DATA.__objc_ivar: 0x308
-   __DATA.__objc_data: 0x7d0
--  __DATA.__data: 0x328
-+  __DATA.__data: 0x330
-+  __DATA.__common: 0x8
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libarchive.2.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 611
 -  Symbols:   428
 -  CStrings:  2564
 +  Functions: 836
 +  Symbols:   512
 +  CStrings:  2579
- 
 Symbols:
 + _ESLogContext
 + _ESLogInitIfNeeded

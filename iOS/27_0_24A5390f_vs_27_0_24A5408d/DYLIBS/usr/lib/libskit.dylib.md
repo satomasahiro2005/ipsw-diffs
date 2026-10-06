@@ -2,36 +2,29 @@
 
 > `/usr/lib/libskit.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x235e0` | `0x239f0` | **`+0x410`** |
+| `__TEXT.__oslogstring` | `0x21d5` | `0x2325` | **`+0x150`** |
+| `__TEXT.__gcc_except_tab` | `0xd68` | `0xd90` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x8e8` | `0x908` | **`+0x20`** |
+| `__TEXT.__const` | `0xc31` | `0xc41` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3600.15.1.0.0
--  __TEXT.__text: 0x235e0
--  __TEXT.__const: 0xc31
--  __TEXT.__gcc_except_tab: 0xd68
--  __TEXT.__oslogstring: 0x21d5
 +3600.15.2.0.0
-+  __TEXT.__text: 0x239f0
-+  __TEXT.__const: 0xc41
-+  __TEXT.__gcc_except_tab: 0xd90
-+  __TEXT.__oslogstring: 0x2325
-   __TEXT.__cstring: 0x215
-   __TEXT.__ustring: 0x398
--  __TEXT.__unwind_info: 0x8e8
-+  __TEXT.__unwind_info: 0x908
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
 
-   - /usr/lib/libmarisa.dylib
-   - /usr/lib/libmorphun.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 479
--  Symbols:   826
+-  Symbols:   825
 -  CStrings:  167
 +  Functions: 480
-+  Symbols:   829
++  Symbols:   828
 +  CStrings:  170
- 
 Symbols:
 + GCC_except_table103
 + GCC_except_table137

@@ -2,23 +2,21 @@
 
 > `/System/Library/PrivateFrameworks/CoreSuggestionsUI.framework/CoreSuggestionsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x113384` | `0x11345c` | **`+0xd8`** |
+
+### Other Changes
+
 ```diff
 
 -18.1.4.0.0
--  __TEXT.__text: 0x107d20
 +18.1.5.0.0
-+  __TEXT.__text: 0x107dcc
-   __TEXT.__objc_methlist: 0x3bdc
-   __TEXT.__const: 0xa7dc
-   __TEXT.__dlopen_cstrs: 0x1e8
 
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 8540
--  Symbols:   5862
-+  Symbols:   5861
-   CStrings:  740
- 
+-  Symbols:   5012
++  Symbols:   5011
 Symbols:
 + _OUTLINED_FUNCTION_475
 + _associated conformance 17CoreSuggestionsUI04$s17aB121UI0035SGActionSuggestionButtonswift_IgGGkfMX1193_0_33_1BA0EC3C760F5EC0D4E9642B4090B96ALl7PreviewfMf_15PreviewRegistryfMu_V04makeX021DeveloperToolsSupport0X0VyKFZ05SwiftC04View_pyScMYccfU_33__P_Previewable_Transform_WrapperL_VAhiA4BodyAhIP_AhI

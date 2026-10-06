@@ -2,18 +2,13 @@
 
 > `/System/Library/PrivateFrameworks/IconRendering.framework/binary.metallib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__metallib` | `0x950` | `0x820` | **`-0x130`** |
+| `__TEXT.__visible` | `0x3c00` | `0x3c50` | **`+0x50`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__reflection`
-
-```diff
-
--  __TEXT.__metallib: 0x950
-+  __TEXT.__metallib: 0x820
-   __TEXT.__descriptor: 0x40
--  __TEXT.__visible: 0x3b90
-+  __TEXT.__visible: 0x3bd0
-   __TEXT.__reflection: 0x3a0
-   Functions: 0
-   Symbols:   0
-```

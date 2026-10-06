@@ -2,22 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/AfibBurden.framework/XPCServices/AfibBurdenClassifierService.xpc/AfibBurdenClassifierService`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x127c4
-+  __TEXT.__text: 0x1272c
-   __TEXT.__auth_stubs: 0x7d0
-   __TEXT.__objc_stubs: 0x7e0
-   __TEXT.__objc_methlist: 0x554
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x127c4` | `0x1272c` | **`-0x98`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_100009ca0 : 196 -> 188
 ~ sub_100009d64 -> sub_100009d5c : 196 -> 188
@@ -29,5 +33,4 @@ Functions:
 ~ sub_10000c6bc -> sub_10000c67c : 744 -> 728
 ~ sub_10000e738 -> sub_10000e6e8 : 1308 -> 1272
 ~ sub_10000ee54 -> sub_10000ede0 : 796 -> 760
-
 ```

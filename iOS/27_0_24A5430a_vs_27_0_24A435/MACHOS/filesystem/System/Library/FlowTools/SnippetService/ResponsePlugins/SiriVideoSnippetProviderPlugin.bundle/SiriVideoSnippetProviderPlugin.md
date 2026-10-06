@@ -2,13 +2,15 @@
 
 > `/System/Library/FlowTools/SnippetService/ResponsePlugins/SiriVideoSnippetProviderPlugin.bundle/SiriVideoSnippetProviderPlugin`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
+- `__DATA.__data`
 - `__TEXT.__const`
 - `__TEXT.__constg_swiftt`
-- `__TEXT.__unwind_info`
 - `__TEXT.__eh_frame`
-- `__DATA.__data`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```text
 Functions:

@@ -2,90 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/CloudPhotoLibrary.framework/CloudPhotoLibrary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c9d34` | `0x1ca868` | **`+0xb34`** |
+| `__DATA_DIRTY.__objc_data` | `0x5960` | `0x62c0` | **`+0x960`** |
+| `__AUTH.__objc_data` | `0x960` | `0x50` | **`-0x910`** |
+| `__AUTH_CONST.__objc_const` | `0x23660` | `0x23890` | **`+0x230`** |
+| `__DATA.__data` | `0x14f0` | `0x1670` | **`+0x180`** |
+| `__TEXT.__oslogstring` | `0x16cf3` | `0x16c06` | **`-0xed`** |
+| `__DATA_DIRTY.__bss` | `0x320` | `0x390` | **`+0x70`** |
+| `__TEXT.__gcc_except_tab` | `0x4d0c` | `0x4d78` | **`+0x6c`** |
+| `__DATA.__bss` | `0xce8` | `0xc90` | **`-0x58`** |
+| `__DATA_CONST.__objc_selrefs` | `0x9310` | `0x92c8` | **`-0x48`** |
+| `__TEXT.__cstring` | `0x18083` | `0x180cb` | **`+0x48`** |
+| `__TEXT.__objc_methlist` | `0x15cac` | `0x15c64` | **`-0x48`** |
+| `__TEXT.__unwind_info` | `0x6cc8` | `0x6d10` | **`+0x48`** |
+| `__DATA_CONST.__got` | `0xb28` | `0xb48` | **`+0x20`** |
+| `__DATA_CONST.__objc_protolist` | `0x198` | `0x1b8` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x780` | `0x798` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x798` | `0x7a8` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x6f38` | `0x6f48` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x9e0` | `0x9e8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1c9d34
--  __TEXT.__objc_methlist: 0x15cac
-+  __TEXT.__text: 0x1ca868
-+  __TEXT.__objc_methlist: 0x15c64
-   __TEXT.__const: 0x328
--  __TEXT.__gcc_except_tab: 0x4d0c
--  __TEXT.__oslogstring: 0x16cf3
--  __TEXT.__cstring: 0x18083
--  __TEXT.__unwind_info: 0x6cc8
-+  __TEXT.__gcc_except_tab: 0x4d78
-+  __TEXT.__oslogstring: 0x16c06
-+  __TEXT.__cstring: 0x180cb
-+  __TEXT.__unwind_info: 0x6d10
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x6f38
--  __DATA_CONST.__objc_classlist: 0x9e0
-+  __DATA_CONST.__const: 0x6f48
-+  __DATA_CONST.__objc_classlist: 0x9e8
-   __DATA_CONST.__objc_catlist: 0x90
--  __DATA_CONST.__objc_protolist: 0x198
-+  __DATA_CONST.__objc_protolist: 0x1b8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x9310
-+  __DATA_CONST.__objc_selrefs: 0x92c8
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__objc_superrefs: 0x940
-   __DATA_CONST.__objc_arraydata: 0x1438
--  __DATA_CONST.__got: 0xb28
-+  __DATA_CONST.__got: 0xb48
-   __AUTH_CONST.__const: 0x2ca0
-   __AUTH_CONST.__cfstring: 0x17be0
--  __AUTH_CONST.__objc_const: 0x23660
--  __AUTH_CONST.__objc_intobj: 0x780
-+  __AUTH_CONST.__objc_const: 0x23890
-+  __AUTH_CONST.__objc_intobj: 0x798
-   __AUTH_CONST.__objc_arrayobj: 0x78
-   __AUTH_CONST.__objc_dictobj: 0x140
-   __AUTH_CONST.__objc_floatobj: 0x50
--  __AUTH_CONST.__auth_got: 0x798
--  __AUTH.__objc_data: 0x960
-+  __AUTH_CONST.__auth_got: 0x7a8
-+  __AUTH.__objc_data: 0x50
-   __DATA.__objc_ivar: 0x1c08
--  __DATA.__data: 0x14f0
--  __DATA.__bss: 0xce8
-+  __DATA.__data: 0x1670
-+  __DATA.__bss: 0xc90
-   __DATA.__common: 0x30
--  __DATA_DIRTY.__objc_data: 0x5960
--  __DATA_DIRTY.__bss: 0x320
-+  __DATA_DIRTY.__objc_data: 0x62c0
-+  __DATA_DIRTY.__bss: 0x390
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+-910.21.101.0.0
++910.27.103.0.0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libcupolicy.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 9763
--  Symbols:   30003
--  CStrings:  8461
+-  Symbols:   15489
+-  CStrings:  5140
 +  Functions: 9774
-+  Symbols:   30023
-+  CStrings:  8456
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __DATA.__objc_ivar : content changed
++  Symbols:   15531
++  CStrings:  5135
 Symbols:
 + -[CPLConfiguration delegate]
 + -[CPLConfiguration setDelegate:]
@@ -416,15 +369,6 @@ Symbols:
 + ___CPLSetRequestEngineBlock_block_invoke
 + ___block_descriptor_41_e8_32s_e8_v16?0Q8ls32l8
 + _dispatch_get_global_queue
-+ _objc_msgSend$configurationDidUpdate:
-+ _objc_msgSend$expirationDate
-+ _objc_msgSend$iCloudLibraryClientNeedsToVerifyTerms
-+ _objc_msgSend$isBadQuality
-+ _objc_msgSend$isSufficentlyDifferentFromNetworkState:
-+ _objc_msgSend$setBlocked:
-+ _objc_msgSend$setICloudLibraryClientNeedsToVerifyTerms:
-+ _objc_msgSend$setTurboMode:
-+ _objc_msgSend$shouldTriggerRetryOfNetworkOperationsFromNetworkState:
 - -[CPLConfiguration _save]
 - -[CPLEngineScheduler _allowsJustInCaseSessions]
 - -[CPLEngineScheduler _enableSynchronizationWithReasonLocked:]
@@ -712,48 +656,6 @@ Symbols:
 - ___50-[CPLEngineScheduler _turboModeSettingsHasChanged]_block_invoke
 - ___57-[CPLEngineSystemMonitor getStatusWithCompletionHandler:]_block_invoke_4
 - ___block_descriptor_40_e8_32s_e21_v20?0"NSString"8I16ls32l8
-- _objc_msgSend$_allowsJustInCaseSessions
-- _objc_msgSend$_backOff
-- _objc_msgSend$_disableFastRelaunchProtection
-- _objc_msgSend$_disableRetryAfterLocked
-- _objc_msgSend$_disableSynchronizationBecauseContainerHasBeenWipedLocked
-- _objc_msgSend$_disableSynchronizationWithReasonLocked:
-- _objc_msgSend$_enableSynchronizationWithReasonLocked:
-- _objc_msgSend$_handleResetAnchorWithError:completionHandler:
-- _objc_msgSend$_handleResetClientCacheWithError:completionHandler:
-- _objc_msgSend$_handleResetCloudCacheWithError:completionHandler:
-- _objc_msgSend$_handleResetGlobalAnchorWithError:completionHandler:
-- _objc_msgSend$_hasPermanentDataOverride
-- _objc_msgSend$_justInCaseSessionIsPossible
-- _objc_msgSend$_keepSessionInformation:
-- _objc_msgSend$_noteServerIsUnavailableWithErrorLocked:reason:
-- _objc_msgSend$_noteSignificantEvent
-- _objc_msgSend$_noteSyncSession:failedDuringPhase:withError:
-- _objc_msgSend$_noteSyncSessionNeededFromState:proposedScheduleDate:
-- _objc_msgSend$_noteSyncSessionNeededFromStateDontRewindImmediately:
-- _objc_msgSend$_permanentDataOverrideHasChanged
-- _objc_msgSend$_prepareFirstSession
-- _objc_msgSend$_reallyNoteServerHasChangesLocked
-- _objc_msgSend$_reallyStartSyncSession:
-- _objc_msgSend$_reallyUnscheduleSession
-- _objc_msgSend$_scheduleNextSyncSession
-- _objc_msgSend$_setRequiredFirstState:
-- _objc_msgSend$_startOverridingBudget:reason:
-- _objc_msgSend$_startRequiredSyncSession:
-- _objc_msgSend$_startSyncSession:withMinimalPhase:rewind:
-- _objc_msgSend$_startWatchingPermanentDataOverride
-- _objc_msgSend$_stopOverridingBudget:reason:
-- _objc_msgSend$_stopPreparingFirstSession
-- _objc_msgSend$_stopWatchingPermanentDataOverride
-- _objc_msgSend$_syncSessionIsPossible
-- _objc_msgSend$_unscheduleNextSyncSession
-- _objc_msgSend$_updateCanUseTurboModeOnScheduler
-- _objc_msgSend$_updateConfigurationDictionary:
-- _objc_msgSend$_updateLastSyncDateIfNecessaryLocked
-- _objc_msgSend$_updateOverridingForeground
-- _objc_msgSend$_withSystemBudgetOverride:
-- _objc_msgSend$setCanUseTurboMode:
-- _objc_msgSend$shouldUseTurboMode
 CStrings:
 + "\nTurbo mode: expires %@"
 + " blocked"
@@ -786,5 +688,4 @@ CStrings:
 - "turbo mode flags: %@"
 - "v20@?0@\"NSString\"8I16"
 - "\xf0\xf0a"
-
 ```

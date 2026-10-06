@@ -2,106 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/DeviceConfiguration.framework/DeviceConfiguration`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xab2c8` | `0xb17b8` | **`+0x64f0`** |
+| `__TEXT.__eh_frame` | `0x7c1c` | `0x8144` | **`+0x528`** |
+| `__AUTH_CONST.__const` | `0x5868` | `0x5ae0` | **`+0x278`** |
+| `__TEXT.__oslogstring` | `0x18cb` | `0x1aab` | **`+0x1e0`** |
+| `__TEXT.__const` | `0xa8a0` | `0xaa08` | **`+0x168`** |
+| `__TEXT.__unwind_info` | `0x2d48` | `0x2e98` | **`+0x150`** |
+| `__DATA.__bss` | `0xca80` | `0xcb80` | **`+0x100`** |
+| `__AUTH.__objc_data` | `0x880` | `0x948` | **`+0xc8`** |
+| `__AUTH_CONST.__objc_const` | `0x2848` | `0x2900` | **`+0xb8`** |
+| `__TEXT.__swift5_capture` | `0x9a0` | `0xa44` | **`+0xa4`** |
+| `__AUTH_CONST.__cfstring` | `—` | `0xa0` | **`+0xa0`** |
+| `__TEXT.__constg_swiftt` | `0x1da0` | `0x1e10` | **`+0x70`** |
+| `__TEXT.__cstring` | `0x1588` | `0x15f8` | **`+0x70`** |
+| `__TEXT.__swift5_typeref` | `0x253a` | `0x25a7` | **`+0x6d`** |
+| `__TEXT.__objc_methlist` | `0x5fc` | `0x664` | **`+0x68`** |
+| `__TEXT.__swift5_fieldmd` | `0x1b58` | `0x1bb4` | **`+0x5c`** |
+| `__DATA.__data` | `0x1ba8` | `0x1be8` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x130` | `0x168` | **`+0x38`** |
+| `__AUTH.__data` | `0xe80` | `0xeb0` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x320` | `0x340` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x1088` | `0x10a8` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x558` | `0x578` | **`+0x20`** |
+| `__TEXT.__swift_as_ret` | `0x2e0` | `0x300` | **`+0x20`** |
+| `__TEXT.__swift_as_entry` | `0x2e0` | `0x2fc` | **`+0x1c`** |
+| `__TEXT.__swift5_assocty` | `0x4d8` | `0x4f0` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0xef8` | `0xee8` | **`-0x10`** |
+| `__DATA_DIRTY.__data` | `0xa00` | `0xa10` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0xe8` | `0xf0` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x6e0` | `0x6e8` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x230` | `0x238` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xab2c8
--  __TEXT.__objc_methlist: 0x5fc
--  __TEXT.__const: 0xa8a0
--  __TEXT.__swift5_typeref: 0x253a
--  __TEXT.__swift5_capture: 0x9a0
--  __TEXT.__cstring: 0x1588
--  __TEXT.__swift5_fieldmd: 0x1b58
--  __TEXT.__constg_swiftt: 0x1da0
--  __TEXT.__oslogstring: 0x18cb
-+  __TEXT.__text: 0xb17b8
-+  __TEXT.__objc_methlist: 0x664
-+  __TEXT.__const: 0xaa08
-+  __TEXT.__cstring: 0x15f8
-+  __TEXT.__swift5_typeref: 0x25a7
-+  __TEXT.__swift5_capture: 0xa44
-+  __TEXT.__constg_swiftt: 0x1e10
-+  __TEXT.__swift5_reflstr: 0x10a8
-+  __TEXT.__swift5_fieldmd: 0x1bb4
-+  __TEXT.__oslogstring: 0x1aab
-   __TEXT.__swift5_builtin: 0xc8
--  __TEXT.__swift5_reflstr: 0x1088
--  __TEXT.__swift5_assocty: 0x4d8
-+  __TEXT.__swift5_assocty: 0x4f0
-   __TEXT.__swift5_protos: 0x34
--  __TEXT.__swift5_proto: 0x6e0
--  __TEXT.__swift5_types: 0x230
--  __TEXT.__swift_as_entry: 0x2e0
--  __TEXT.__swift_as_ret: 0x2e0
--  __TEXT.__swift_as_cont: 0x558
-+  __TEXT.__swift5_proto: 0x6e8
-+  __TEXT.__swift5_types: 0x238
-+  __TEXT.__swift_as_entry: 0x2fc
-+  __TEXT.__swift_as_ret: 0x300
-+  __TEXT.__swift_as_cont: 0x578
-   __TEXT.__swift5_acfuncs: 0x294
-   __TEXT.__swift5_mpenum: 0x50
--  __TEXT.__unwind_info: 0x2d48
--  __TEXT.__eh_frame: 0x7c1c
-+  __TEXT.__unwind_info: 0x2e98
-+  __TEXT.__eh_frame: 0x8144
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x130
--  __DATA_CONST.__objc_classlist: 0xe8
-+  __DATA_CONST.__const: 0x168
-+  __DATA_CONST.__objc_classlist: 0xf0
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x320
-+  __DATA_CONST.__objc_selrefs: 0x340
-   __DATA_CONST.__objc_protorefs: 0x50
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x5868
--  __AUTH_CONST.__objc_const: 0x2848
--  __AUTH_CONST.__auth_got: 0xef8
--  __AUTH.__objc_data: 0x880
--  __AUTH.__data: 0xe80
--  __DATA.__data: 0x1ba8
--  __DATA.__bss: 0xca80
-+  __AUTH_CONST.__const: 0x5ae0
-+  __AUTH_CONST.__cfstring: 0xa0
-+  __AUTH_CONST.__objc_const: 0x2900
-+  __AUTH_CONST.__auth_got: 0xee8
-+  __AUTH.__objc_data: 0x948
-+  __AUTH.__data: 0xeb0
-+  __DATA.__data: 0x1be8
-+  __DATA.__bss: 0xcb80
-   __DATA.__common: 0x168
-   __DATA_DIRTY.__objc_data: 0x290
--  __DATA_DIRTY.__data: 0xa00
-+  __DATA_DIRTY.__data: 0xa10
-   __DATA_DIRTY.__bss: 0x980
-   __DATA_DIRTY.__common: 0x40
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+-25.0.0.0.0
++26.0.0.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 3415
--  Symbols:   1926
+-  Symbols:   1210
 -  CStrings:  261
 +  Functions: 3506
-+  Symbols:   1962
-+  CStrings:  275
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_acfuncs : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   1230
++  CStrings:  270
 Symbols:
 + _DCProviderClassEducation
 + _DCProviderClassEnterprise
@@ -120,7 +68,6 @@ Symbols:
 + ___swift_memcpy48_8
 + _associated conformance 19DeviceConfiguration13ProviderClassOSHAASQ
 + _get_enum_tag_for_layout_string s8Sendable_pSg
-+ _objc_msgSend$getConfigurationSandboxExtensionWithConfigurationID:valuesOnly:replyHandler:
 + _symbolic SSSb__________y_____G______pIetMHgTyTgrzo_ 19DeviceConfiguration24AsyncConsumerServerActorC AA11XPCResponseO AA16SandboxExtensionC s5ErrorP
 + _symbolic SSSbx_____y_____G______p_____Rz_____RzlIetMHgTyTgrzo_ 19DeviceConfiguration11XPCResponseO AA16SandboxExtensionC s5ErrorP AA16AsyncConsumerXPCP 11Distributed01_J9ActorStubP
 + _symbolic SSSbx_____y_____G______p_____RzlIetWHgTyTgrzo_ 19DeviceConfiguration11XPCResponseO AA16SandboxExtensionC s5ErrorP AA16AsyncConsumerXPCP
@@ -138,7 +85,6 @@ Symbols:
 - ___swift_memcpy64_8
 - _associated conformance 19DeviceConfiguration16ProviderCategoryOSHAASQ
 - _get_enum_tag_for_layout_string 19DeviceConfiguration16ProviderCategoryO
-- _objc_msgSend$getConfigurationSandboxExtensionWithConfigurationID:replyHandler:
 - _swift_willThrowTypedImpl
 - _symbolic SS__________y_____G______pIetMHgTgrzo_ 19DeviceConfiguration24AsyncConsumerServerActorC AA11XPCResponseO AA16SandboxExtensionC s5ErrorP
 - _symbolic SSx_____y_____G______p_____Rz_____RzlIetMHgTgrzo_ 19DeviceConfiguration11XPCResponseO AA16SandboxExtensionC s5ErrorP AA16AsyncConsumerXPCP 11Distributed01_J9ActorStubP
@@ -165,5 +111,4 @@ CStrings:
 - "getConfigurationSandboxExtension returned nil sandboxExtension and nil error for '%{public}s'"
 - "getConfigurationSandboxExtension succeeded for '%{public}s'"
 - "getConfigurationSandboxExtension(configurationID:)"
-
 ```

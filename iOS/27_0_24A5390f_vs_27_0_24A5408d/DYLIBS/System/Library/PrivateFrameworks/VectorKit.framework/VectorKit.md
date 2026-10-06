@@ -2,70 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/VectorKit.framework/VectorKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x120fad0` | `0x1218df0` | **`+0x9320`** |
+| `__TEXT.__cstring` | `0x9abb8` | `0x9af30` | **`+0x378`** |
+| `__AUTH_CONST.__const` | `0x88fc0` | `0x892d8` | **`+0x318`** |
+| `__TEXT.__gcc_except_tab` | `0x75c94` | `0x75f64` | **`+0x2d0`** |
+| `__TEXT.__oslogstring` | `0x1127f` | `0x11516` | **`+0x297`** |
+| `__TEXT.__unwind_info` | `0x33ad0` | `0x33c38` | **`+0x168`** |
+| `__DATA_DIRTY.__bss` | `0x58f68` | `0x59078` | **`+0x110`** |
+| `__DATA.__bss` | `0xc218` | `0xc2f8` | **`+0xe0`** |
+| `__DATA_CONST.__const` | `0x29fd8` | `0x2a098` | **`+0xc0`** |
+| `__AUTH_CONST.__cfstring` | `0x8360` | `0x83c0` | **`+0x60`** |
+| `__TEXT.__const` | `0x792e8` | `0x79338` | **`+0x50`** |
+
+### Other Changes
+
 ```diff
 
 -2043.30.6.12.8
--  __TEXT.__text: 0x120fad0
 +2043.30.6.12.19
-+  __TEXT.__text: 0x1218df0
-   __TEXT.__objc_methlist: 0x11074
--  __TEXT.__const: 0x792e8
--  __TEXT.__gcc_except_tab: 0x75c94
--  __TEXT.__oslogstring: 0x1127f
--  __TEXT.__cstring: 0x9abb8
-+  __TEXT.__const: 0x79338
-+  __TEXT.__gcc_except_tab: 0x75f64
-+  __TEXT.__oslogstring: 0x11516
-+  __TEXT.__cstring: 0x9af30
-   __TEXT.__ustring: 0xf8
--  __TEXT.__unwind_info: 0x33ad0
-+  __TEXT.__unwind_info: 0x33c38
-   __TEXT.__eh_frame: 0x1d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x29fd8
-+  __DATA_CONST.__const: 0x2a098
-   __DATA_CONST.__objc_classlist: 0x558
-   __DATA_CONST.__objc_catlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x140
 
-   __DATA_CONST.__objc_superrefs: 0x500
-   __DATA_CONST.__objc_arraydata: 0x690
-   __DATA_CONST.__got: 0xab8
--  __AUTH_CONST.__const: 0x88fc0
--  __AUTH_CONST.__cfstring: 0x8360
-+  __AUTH_CONST.__const: 0x892d8
-+  __AUTH_CONST.__cfstring: 0x83c0
-   __AUTH_CONST.__objc_const: 0x1edc8
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__objc_intobj: 0x4c8
-
-   __AUTH.__thread_bss: 0x180
-   __DATA.__objc_ivar: 0x202c
-   __DATA.__data: 0x328b8
--  __DATA.__bss: 0xc218
-+  __DATA.__bss: 0xc2f8
-   __DATA_DIRTY.__objc_data: 0x1590
-   __DATA_DIRTY.__data: 0x1c
--  __DATA_DIRTY.__bss: 0x58f68
-+  __DATA_DIRTY.__bss: 0x59078
-   - /System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libxml2.2.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 58912
--  Symbols:   101092
+-  Symbols:   97779
 -  CStrings:  22156
 +  Functions: 59002
-+  Symbols:   101218
++  Symbols:   97905
 +  CStrings:  22180
- 
 Symbols:
 + GCC_except_table10019
 + GCC_except_table10023

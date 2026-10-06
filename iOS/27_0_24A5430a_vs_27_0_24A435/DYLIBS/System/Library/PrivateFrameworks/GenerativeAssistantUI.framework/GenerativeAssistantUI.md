@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/GenerativeAssistantUI.framework/GenerativeAssistantUI`
 
-```diff
+### Section Size Changes
 
- 3600.38.6.0.0
--  __TEXT.__text: 0x327ec
-+  __TEXT.__text: 0x327f0
-   __TEXT.__objc_methlist: 0x440
-   __TEXT.__const: 0x46e4
-   __TEXT.__gcc_except_tab: 0x10
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x327ec` | `0x327f0` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_266dbdb7c -> sub_267adcb7c : 648 -> 652
+~ sub_266c9fb7c -> sub_2679b8b7c : 648 -> 652
 ```

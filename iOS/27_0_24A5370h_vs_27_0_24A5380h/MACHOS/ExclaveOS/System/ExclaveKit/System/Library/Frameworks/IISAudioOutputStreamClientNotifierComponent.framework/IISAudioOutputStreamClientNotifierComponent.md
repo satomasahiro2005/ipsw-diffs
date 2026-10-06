@@ -2,77 +2,53 @@
 
 > `/System/ExclaveKit/System/Library/Frameworks/IISAudioOutputStreamClientNotifierComponent.framework/IISAudioOutputStreamClientNotifierComponent`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa128` | `0x95a8` | **`-0xb80`** |
+| `__TEXT.__eh_frame` | `0x538` | `0x460` | **`-0xd8`** |
+| `__DATA.__objc_const` | `0x268` | `0x320` | **`+0xb8`** |
+| `__DATA.__data` | `0x780` | `0x820` | **`+0xa0`** |
+| `__TEXT.__objc_classname` | `0x195` | `0x205` | **`+0x70`** |
+| `__TEXT.__cstring` | `0x61f` | `0x5bf` | **`-0x60`** |
+| `__DATA_CONST.__const` | `0x6f0` | `0x698` | **`-0x58`** |
+| `__TEXT.__constg_swiftt` | `0x4c8` | `0x504` | **`+0x3c`** |
+| `__TEXT.__unwind_info` | `0x2a8` | `0x278` | **`-0x30`** |
+| `__TEXT.__const` | `0x808` | `0x7e0` | **`-0x28`** |
+| `__TEXT.__auth_stubs` | `0x6d0` | `0x6f0` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x2f8` | `0x314` | **`+0x1c`** |
+| `__DATA_CONST.__auth_got` | `0x368` | `0x378` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x20` | `0x28` | **`+0x8`** |
+| `__TEXT.__objc_methname` | `0x33` | `0x3b` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0x24c` | `0x252` | **`+0x6`** |
+| `__TEXT.__swift5_types` | `0x3c` | `0x40` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__TIGHTBEAM`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__got`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_reflstr`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xa128
--  __TEXT.__auth_stubs: 0x6d0
--  __TEXT.__cstring: 0x61f
--  __TEXT.__const: 0x808
--  __TEXT.__constg_swiftt: 0x4c8
--  __TEXT.__swift5_typeref: 0x24c
-+  __TEXT.__text: 0x95a8
-+  __TEXT.__auth_stubs: 0x6f0
-+  __TEXT.__cstring: 0x5bf
-+  __TEXT.__const: 0x7e0
-+  __TEXT.__constg_swiftt: 0x504
-+  __TEXT.__swift5_typeref: 0x252
-   __TEXT.__swift5_builtin: 0x14
--  __TEXT.__swift5_types: 0x3c
--  __TEXT.__objc_classname: 0x195
--  __TEXT.__swift5_fieldmd: 0x2f8
-+  __TEXT.__swift5_types: 0x40
-+  __TEXT.__objc_classname: 0x205
-+  __TEXT.__swift5_fieldmd: 0x314
-   __TEXT.__swift5_proto: 0x4c
--  __TEXT.__objc_methname: 0x33
-+  __TEXT.__objc_methname: 0x3b
-   __TEXT.__objc_methtype: 0x1
-   __TEXT.__swift5_reflstr: 0x193
-   __TEXT.__oslogstring: 0x143
-   __TEXT.__swift5_capture: 0x60
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__unwind_info: 0x2a8
--  __TEXT.__eh_frame: 0x538
--  __DATA_CONST.__const: 0x6f0
--  __DATA_CONST.__objc_classlist: 0x20
-+  __TEXT.__unwind_info: 0x278
-+  __TEXT.__eh_frame: 0x460
-+  __DATA_CONST.__const: 0x698
-+  __DATA_CONST.__objc_classlist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x368
-+  __DATA_CONST.__auth_got: 0x378
-   __DATA_CONST.__got: 0xf0
-   __DATA_CONST.__auth_ptr: 0x100
--  __DATA.__objc_const: 0x268
-+  __DATA.__objc_const: 0x320
-   __DATA.__objc_data: 0xa0
--  __DATA.__data: 0x780
-+  __DATA.__data: 0x820
-   __DATA.__TIGHTBEAM: 0x10
-   __DATA.__common: 0x18
-   __DATA.__bss: 0x300
+-600.27.0.0.0
++600.28.0.0.0
 
-   - /System/ExclaveKit/usr/lib/swift/libswiftObjectiveC.dylib
-   - /System/ExclaveKit/usr/lib/swift/libswift_Builtin_float.dylib
-   - /System/ExclaveKit/usr/lib/swift/libswiftos.dylib
 -  Functions: 232
--  Symbols:   1837
--  CStrings:  48
+-  Symbols:   708
+-  CStrings:  43
 +  Functions: 224
-+  Symbols:   1825
-+  CStrings:  49
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_reflstr : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__TIGHTBEAM : content changed
++  Symbols:   714
++  CStrings:  44
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/AppleARMIISAudio_exclavekit/install/TempContent/Objects/AppleARMIISAudio.build/IISAudioOutputStreamClientNotifierComponent.build/Objects-normal/arm64e/IISAudioOutputStreamClientNotifierComponent-b4b56184f3d7acc495decd2df245c070.o
 + _$s43IISAudioOutputStreamClientNotifierComponent0abcdeF14HandlerContextC7handlerAA0abcdeF7Methods_pvpWvd
@@ -112,5 +88,4 @@ CStrings:
 + "_TtC43IISAudioOutputStreamClientNotifierComponent57IISAudioOutputStreamClientNotifierComponentHandlerContext"
 + "handler"
 - "invalid handler object, does not conform to IISAudioOutputStreamClientNotifierComponentMethods"
-
 ```

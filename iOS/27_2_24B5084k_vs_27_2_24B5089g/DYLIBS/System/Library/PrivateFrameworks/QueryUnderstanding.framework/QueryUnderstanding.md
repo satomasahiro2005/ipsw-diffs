@@ -2,74 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/QueryUnderstanding.framework/QueryUnderstanding`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7c58` | `0x8b84` | **`+0xf2c`** |
+| `__TEXT.__gcc_except_tab` | `0xa28` | `0xbc8` | **`+0x1a0`** |
+| `__TEXT.__oslogstring` | `0x655` | `0x73a` | **`+0xe5`** |
+| `__DATA_CONST.__const` | `0x778` | `0x820` | **`+0xa8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6d8` | `0x778` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x340` | `0x3d8` | **`+0x98`** |
+| `__TEXT.__objc_methlist` | `0x7ec` | `0x87c` | **`+0x90`** |
+| `__AUTH_CONST.__cfstring` | `0x5a0` | `0x620` | **`+0x80`** |
+| `__AUTH_CONST.__objc_const` | `0xfb0` | `0x1010` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0x50` | `—` | **`-0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x280` | `0x2d0` | **`+0x50`** |
+| `__TEXT.__cstring` | `0xebd` | `0xef5` | **`+0x38`** |
+| `__AUTH_CONST.__const` | `0xc0` | `0xe0` | **`+0x20`** |
+| `__DATA.__bss` | `0x28` | `0x18` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x178` | `0x188` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x70` | `0x80` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x94` | `0xa0` | **`+0xc`** |
+| `__TEXT.__const` | `0xc0` | `0xc8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3605.7.1.0.0
--  __TEXT.__text: 0x7a24
--  __TEXT.__objc_methlist: 0x7ec
--  __TEXT.__const: 0xc0
--  __TEXT.__cstring: 0xebd
--  __TEXT.__oslogstring: 0x655
--  __TEXT.__gcc_except_tab: 0xa28
--  __TEXT.__unwind_info: 0x378
 +3605.7.1.1.1
-+  __TEXT.__text: 0x8908
-+  __TEXT.__objc_methlist: 0x87c
-+  __TEXT.__const: 0xc8
-+  __TEXT.__cstring: 0xef5
-+  __TEXT.__oslogstring: 0x73a
-+  __TEXT.__gcc_except_tab: 0xbc8
-+  __TEXT.__unwind_info: 0x418
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x778
-+  __DATA_CONST.__const: 0x820
-   __DATA_CONST.__objc_classlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6d8
-+  __DATA_CONST.__objc_selrefs: 0x778
-   __DATA_CONST.__objc_superrefs: 0x38
-   __DATA_CONST.__objc_arraydata: 0x60
--  __DATA_CONST.__got: 0x178
--  __AUTH_CONST.__const: 0xc0
--  __AUTH_CONST.__cfstring: 0x5a0
--  __AUTH_CONST.__objc_const: 0xfb0
-+  __DATA_CONST.__got: 0x188
-+  __AUTH_CONST.__const: 0xe0
-+  __AUTH_CONST.__cfstring: 0x620
-+  __AUTH_CONST.__objc_const: 0x1010
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x60
-   __AUTH_CONST.__objc_intobj: 0x60
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x50
--  __DATA.__objc_ivar: 0x94
-+  __DATA.__objc_ivar: 0xa0
-   __DATA.__data: 0x180
--  __DATA_DIRTY.__objc_data: 0x280
-+  __DATA_DIRTY.__objc_data: 0x2d0
-   __DATA_DIRTY.__data: 0x1
--  __DATA_DIRTY.__bss: 0x70
-+  __DATA_DIRTY.__bss: 0x80
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreML.framework/CoreML
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 167
--  Symbols:   654
+-  Symbols:   495
 -  CStrings:  261
 +  Functions: 187
-+  Symbols:   716
++  Symbols:   542
 +  CStrings:  269
- 
 Symbols:
 + +[QUAssetHelper _acquireAssetLockAssertion]
 + -[QUAssetHelper _cacheKeyForLocale:]
@@ -120,21 +88,6 @@ Symbols:
 + _dispatch_semaphore_signal
 + _dispatch_semaphore_wait
 + _dispatch_time
-+ _objc_msgSend$_acquireAssetLockAssertion
-+ _objc_msgSend$_cacheKeyForLocale:
-+ _objc_msgSend$_onQueueHandleAssetSetUpdate
-+ _objc_msgSend$_populateForLocale:
-+ _objc_msgSend$_registerAssetObserver
-+ _objc_msgSend$_requestSandboxExtension
-+ _objc_msgSend$_unregisterAssetObserver
-+ _objc_msgSend$attributeWithCompletionPolicy:
-+ _objc_msgSend$consistencyToken
-+ _objc_msgSend$isLatestConsistencyToken:
-+ _objc_msgSend$null
-+ _objc_msgSend$observeAssetSet:queue:handler:
-+ _objc_msgSend$removeAllObjects
-+ _objc_msgSend$removeObserver:
-+ _objc_msgSend$requestSandboxExtension:queue:completion:
 + _objc_opt_isKindOfClass
 - GCC_except_table10
 - GCC_except_table25

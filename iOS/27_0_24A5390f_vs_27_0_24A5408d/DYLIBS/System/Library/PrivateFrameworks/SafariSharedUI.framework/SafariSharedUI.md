@@ -2,130 +2,68 @@
 
 > `/System/Library/PrivateFrameworks/SafariSharedUI.framework/SafariSharedUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x45c7ac` | `0x469580` | **`+0xcdd4`** |
+| `__TEXT.__swift5_typeref` | `0x24b94` | `0x25710` | **`+0xb7c`** |
+| `__TEXT.__cstring` | `0x340b9` | `0x349b9` | **`+0x900`** |
+| `__AUTH_CONST.__objc_const` | `0x1e8e0` | `0x1f0e0` | **`+0x800`** |
+| `__TEXT.__const` | `0x52014` | `0x525a4` | **`+0x590`** |
+| `__AUTH_CONST.__const` | `0x1afe0` | `0x1b458` | **`+0x478`** |
+| `__TEXT.__eh_frame` | `0x2097c` | `0x20dec` | **`+0x470`** |
+| `__TEXT.__objc_methlist` | `0xf344` | `0xf6d4` | **`+0x390`** |
+| `__AUTH_CONST.__cfstring` | `0x11240` | `0x11560` | **`+0x320`** |
+| `__DATA.__bss` | `0x20320` | `0x205b0` | **`+0x290`** |
+| `__TEXT.__unwind_info` | `0x14938` | `0x14720` | **`-0x218`** |
+| `__TEXT.__oslogstring` | `0x11a5d` | `0x11c6d` | **`+0x210`** |
+| `__DATA.__data` | `0xacf4` | `0xaed4` | **`+0x1e0`** |
+| `__DATA_CONST.__objc_selrefs` | `0xaa08` | `0xabc0` | **`+0x1b8`** |
+| `__TEXT.__gcc_except_tab` | `0xf250` | `0xf3e8` | **`+0x198`** |
+| `__TEXT.__swift5_reflstr` | `0x7628` | `0x77b5` | **`+0x18d`** |
+| `__AUTH.__data` | `0x6730` | `0x68b8` | **`+0x188`** |
+| `__TEXT.__constg_swiftt` | `0x7504` | `0x768c` | **`+0x188`** |
+| `__TEXT.__swift5_fieldmd` | `0x7038` | `0x716c` | **`+0x134`** |
+| `__DATA_CONST.__const` | `0x7f20` | `0x8030` | **`+0x110`** |
+| `__AUTH_CONST.__auth_got` | `0x3f00` | `0x3ff8` | **`+0xf8`** |
+| `__TEXT.__swift5_capture` | `0x3c40` | `0x3d08` | **`+0xc8`** |
+| `__DATA_CONST.__got` | `0x2d58` | `0x2e10` | **`+0xb8`** |
+| `__AUTH.__objc_data` | `0x65c0` | `0x6668` | **`+0xa8`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x798` | `0x7e0` | **`+0x48`** |
+| `__AUTH_CONST.__objc_dictobj` | `0x1e0` | `0x208` | **`+0x28`** |
+| `__DATA_CONST.__objc_arraydata` | `0x1a60` | `0x1a88` | **`+0x28`** |
+| `__DATA.__objc_ivar` | `0x108c` | `0x10ac` | **`+0x20`** |
+| `__DATA_CONST.__objc_protolist` | `0x370` | `0x390` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x1a04` | `0x1a20` | **`+0x1c`** |
+| `__AUTH_CONST.__objc_intobj` | `0x6d8` | `0x6f0` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x970` | `0x988` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x11f8` | `0x1210` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x2d0` | `0x2e4` | **`+0x14`** |
+| `__TEXT.__swift5_proto` | `0xfdc` | `0xff0` | **`+0x14`** |
+| `__TEXT.__swift5_types` | `0x750` | `0x764` | **`+0x14`** |
+| `__TEXT.__swift_as_entry` | `0x8dc` | `0x8f0` | **`+0x14`** |
+| `__TEXT.__swift_as_ret` | `0xc70` | `0xc84` | **`+0x14`** |
+| `__DATA_CONST.__objc_protorefs` | `0xe0` | `0xf0` | **`+0x10`** |
+| `__DATA.__common` | `0x498` | `0x490` | **`-0x8`** |
+| `__DATA_CONST.__objc_catlist` | `0x178` | `0x180` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x4f0` | `0x4f8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -625.1.24.10.1
--  __TEXT.__text: 0x45c7ac
 +625.1.29.10.3
-+  __TEXT.__text: 0x469580
-   __TEXT.__delay_stubs: 0x80
-   __TEXT.__delay_helper: 0x14c
--  __TEXT.__objc_methlist: 0xf344
--  __TEXT.__const: 0x52014
--  __TEXT.__gcc_except_tab: 0xf250
--  __TEXT.__cstring: 0x340b9
--  __TEXT.__oslogstring: 0x11a5d
-+  __TEXT.__objc_methlist: 0xf6d4
-+  __TEXT.__const: 0x525a4
-+  __TEXT.__gcc_except_tab: 0xf3e8
-+  __TEXT.__cstring: 0x349b9
-+  __TEXT.__oslogstring: 0x11c6d
-   __TEXT.__ustring: 0x1fc2
-   __TEXT.__dlopen_cstrs: 0x363
--  __TEXT.__constg_swiftt: 0x7504
--  __TEXT.__swift5_typeref: 0x24b94
--  __TEXT.__swift5_fieldmd: 0x7038
--  __TEXT.__swift5_builtin: 0x2d0
--  __TEXT.__swift5_reflstr: 0x7628
--  __TEXT.__swift5_assocty: 0x11f8
--  __TEXT.__swift5_proto: 0xfdc
--  __TEXT.__swift5_types: 0x750
--  __TEXT.__swift_as_entry: 0x8dc
--  __TEXT.__swift_as_ret: 0xc70
--  __TEXT.__swift_as_cont: 0x1a04
-+  __TEXT.__constg_swiftt: 0x768c
-+  __TEXT.__swift5_typeref: 0x25710
-+  __TEXT.__swift5_fieldmd: 0x716c
-+  __TEXT.__swift5_builtin: 0x2e4
-+  __TEXT.__swift5_reflstr: 0x77b5
-+  __TEXT.__swift5_assocty: 0x1210
-+  __TEXT.__swift5_proto: 0xff0
-+  __TEXT.__swift5_types: 0x764
-+  __TEXT.__swift_as_entry: 0x8f0
-+  __TEXT.__swift_as_ret: 0xc84
-+  __TEXT.__swift_as_cont: 0x1a20
-   __TEXT.__swift5_protos: 0x48
-   __TEXT.__swift5_mpenum: 0x64
--  __TEXT.__swift5_capture: 0x3c40
--  __TEXT.__unwind_info: 0x14938
--  __TEXT.__eh_frame: 0x2097c
-+  __TEXT.__swift5_capture: 0x3d08
-+  __TEXT.__unwind_info: 0x14720
-+  __TEXT.__eh_frame: 0x20dec
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7f20
--  __DATA_CONST.__objc_classlist: 0x970
--  __DATA_CONST.__objc_catlist: 0x178
--  __DATA_CONST.__objc_protolist: 0x370
-+  __DATA_CONST.__const: 0x8030
-+  __DATA_CONST.__objc_classlist: 0x988
-+  __DATA_CONST.__objc_catlist: 0x180
-+  __DATA_CONST.__objc_protolist: 0x390
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xaa08
--  __DATA_CONST.__objc_protorefs: 0xe0
--  __DATA_CONST.__objc_superrefs: 0x4f0
--  __DATA_CONST.__objc_arraydata: 0x1a60
--  __DATA_CONST.__got: 0x2d58
--  __AUTH_CONST.__const: 0x1afe0
--  __AUTH_CONST.__cfstring: 0x11240
--  __AUTH_CONST.__objc_const: 0x1e8e0
-+  __DATA_CONST.__objc_selrefs: 0xabc0
-+  __DATA_CONST.__objc_protorefs: 0xf0
-+  __DATA_CONST.__objc_superrefs: 0x4f8
-+  __DATA_CONST.__objc_arraydata: 0x1a88
-+  __DATA_CONST.__got: 0x2e10
-+  __AUTH_CONST.__const: 0x1b458
-+  __AUTH_CONST.__cfstring: 0x11560
-+  __AUTH_CONST.__objc_const: 0x1f0e0
-   __AUTH_CONST.__weak_auth_got: 0x10
--  __AUTH_CONST.__objc_intobj: 0x6d8
-+  __AUTH_CONST.__objc_intobj: 0x6f0
-   __AUTH_CONST.__objc_doubleobj: 0x50
--  __AUTH_CONST.__objc_arrayobj: 0x798
--  __AUTH_CONST.__objc_dictobj: 0x1e0
--  __AUTH_CONST.__auth_got: 0x3f00
--  __AUTH.__objc_data: 0x65c0
--  __AUTH.__data: 0x6730
--  __DATA.__objc_ivar: 0x108c
--  __DATA.__data: 0xacf4
--  __DATA.__bss: 0x20320
--  __DATA.__common: 0x498
-+  __AUTH_CONST.__objc_arrayobj: 0x7e0
-+  __AUTH_CONST.__objc_dictobj: 0x208
-+  __AUTH_CONST.__auth_got: 0x3ff8
-+  __AUTH.__objc_data: 0x6668
-+  __AUTH.__data: 0x68b8
-+  __DATA.__objc_ivar: 0x10ac
-+  __DATA.__data: 0xaed4
-+  __DATA.__bss: 0x205b0
-+  __DATA.__common: 0x490
-   __DATA_DIRTY.__objc_data: 0x140
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 
-   - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-   - /System/Library/Frameworks/Symbols.framework/Symbols
 +  - /System/Library/Frameworks/TipKit.framework/TipKit
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers
-   - /System/Library/Frameworks/UserNotifications.framework/UserNotifications
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 19993
--  Symbols:   19318
+-  Symbols:   15179
 -  CStrings:  5255
 +  Functions: 20227
-+  Symbols:   19466
++  Symbols:   15305
 +  CStrings:  5301
- 
 Symbols:
 + +[WBSSearchEngineBannerActivityTracker promoCategoryForNavigationURL:]
 + +[WBSSearchEngineBannerActivityTracker sharedTracker]
@@ -239,35 +177,6 @@ Symbols:
 + _imageAnalysisQueue.queue
 + _keypath_set.12Tm
 + _keypath_set.144Tm
-+ _objc_msgSend$bannerDidAppearInWebView:category:
-+ _objc_msgSend$bannerDidDismissInWebView:
-+ _objc_msgSend$bannerWasInteractedInWebView:
-+ _objc_msgSend$closeAfterPendingChangesWithCompletionHandler:
-+ _objc_msgSend$generation
-+ _objc_msgSend$getIsScreenTimeBlockingURL:completionHandler:
-+ _objc_msgSend$hasPendingNavigation
-+ _objc_msgSend$interacted
-+ _objc_msgSend$isPinnedTab
-+ _objc_msgSend$moveWebExtensionTab:beforeTab:error:
-+ _objc_msgSend$oneTimeCodeAppearsToHaveBeenFilledInItsEntirety
-+ _objc_msgSend$oneTimeCodeControlID
-+ _objc_msgSend$oneTimeCodeProviderForAutomaticPasswordChangeController:
-+ _objc_msgSend$openAndCheckIntegrity:createIfNeeded:fallBackToMemoryStoreIfError:lockingPolicy:busyTimeout:completionHandler:
-+ _objc_msgSend$pendingNavigationCategory
-+ _objc_msgSend$reportAcceptedWithCategory:
-+ _objc_msgSend$reportBannerAppearanceWithCategory:signedIn:
-+ _objc_msgSend$reportDismissedWithCategory:
-+ _objc_msgSend$resolved
-+ _objc_msgSend$safari_topOriginHost
-+ _objc_msgSend$securityOrigin
-+ _objc_msgSend$setAllowNodeSnapshotCreation:
-+ _objc_msgSend$setGeneration:
-+ _objc_msgSend$setHasPendingNavigation:
-+ _objc_msgSend$setInteracted:
-+ _objc_msgSend$setPendingNavigationCategory:
-+ _objc_msgSend$setResolved:
-+ _objc_msgSend$sharedTracker
-+ _objc_msgSend$snapshottedTOTPBase32EncodedKey
 + _symbolic Say_____y_______GG 6TipKit4TipsO5EventV8DonationV AC05EmptyE0V
 + _symbolic ScSySo21SFAutoFillOneTimeCodeCG
 + _symbolic So21WKWebExtensionContextC
@@ -342,13 +251,6 @@ Symbols:
 - ___swift_memcpy4_1
 - _associated conformance 14SafariSharedUI49WBSNotifyMeWhenTriggerConditionSelectionViewModelC7Combine16ObservableObjectAA0N19WillChangePublisherAdEP_AD0Q0
 - _get_witness_table 7SwiftUI15NavigationStackVyAA0C4PathVAA4ViewPAAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAA08ModifiedJ0VyAA06ScrollF0VyALyAgAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAA012SubscriptionF0VySo20NSNotificationCenterC10FoundationE9PublisherVALyALyAA6VStackVyAA05TupleJ0VyALyALyALyA_yA1_yALyALyALyALyAA5ImageVAA18_AspectRatioLayoutVGAA12_FrameLayoutVGAA11_ClipEffectVyAA16RoundedRectangleVGGAA16_OverlayModifierVyAA017StrokeBorderShapeF0VyA13_AA18_OpacityShapeStyleVyAA22HierarchicalShapeStyleVGAA05EmptyF0VGGG_A_yA1_yAA4TextV_ALyALyALyAA6HStackVyA1_yA3_Sg_A31_QPGGAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA24_ForegroundStyleModifierVyA23_GGAA16_FixedSizeLayoutVGQPGGAA012_ConditionalJ0VyA54_yA_yA1_yAA6SpacerV_ALyAgAE08progressF5StyleyQrqd__AA08ProgressF5StyleRd__lFQOyALyAA08ProgressF0VyA26_A26_GA38_yAA11ControlSizeOGG_AA016CircularProgressF5StyleVQo_AA16_FlexFrameLayoutVGA56_QPGGAA5GroupVyA1_yALyAgAE0H7Margins_3forQr12CoreGraphics7CGFloatV_AA0J15MarginPlacementVtFQOyAgAE9listStyleyQrqd__AA9ListStyleRd__lFQOyAgAE07listHasdR0QryFQOyAA4ListVys5NeverOA1_yAA6ButtonVyA31_GSg_AgAE18confirmationDialog_11isPresented15titleVisibility7actionsQrqd___AA7BindingVySbGAA10VisibilityOqd_0_yXEtSyRd__AaFRd_0_r0_lFQOyA92__SSA92_Qo_SgALyA92_A45_yAA14LinkShapeStyleVGGSgQPGG_Qo__AA14PlainListStyleVQo__Qo_A14_G_A56_QPGGGA75_yA1_yALyALyA33_yA1_yALyALyA3_A46_GA42_G_ALyA31_A49_GQPGGAA14_PaddingLayoutVGAA19_BackgroundModifierVyAA06_ShapeF0VyA13_AA5ColorVGGGSg_A75_yA1_yA_yA1_yA54_yA31_A31_G_ALy012SafariSharedB026WBSIntelligencePromptFieldVySbGAA0P18AttachmentModifierVGAgAE16scrollIndicators_4axesQrAA0L19IndicatorVisibilityV_AA4AxisO3SetVtFQOyANyA33_yAA7ForEachVySnySiGSiALyAgAE12onTapGesture5count7performQrSi_yyctFQOyALyALyALyALyALyA31_A38_ySiSgGGA49_GA127_GA127_GA130_yA132_yAA7CapsuleVA134_GGG_Qo_A145_GGGG_Qo_SgQPGG_A54_yALyA75_yA54_yAgAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyA91_yALyA31_A38_yAA13TextAlignmentOGGG_AA16PlainButtonStyleVQo_A31_GGA127_GALyA186_A127_GGSgALyAgAEA76__A77_QrA80__A82_tFQOyAgAEA83_yQrqd__AAA84_Rd__lFQOyAgAEA85_QryFQOyA87_yA89_A75_yA1_yA33_yA1_yA31__A56_AgAE12labelsHiddenQryFQOyALyAA6PickerVyA31_A140_24WBSNotifyMeWhenFrequencyOA1_yAgAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyA31__A201_Qo__A204_A204_A204_A204_SgQPGGA38_yA134_SgGG_Qo_QPGG_A54_yALyAgAE15datePickerStyleyQrqd__AA15DatePickerStyleRd__lFQOyAA10DatePickerVyA31_G_AA22CompactDatePickerStyleVQo_A209_GA222_GALyA140_39WBSNotifyMeWhenWeeklyRecurrenceSelectorVA70_GSgA140_40WBSNotifyMeWhenMonthlyRecurrenceSelectorVSgQPGGG_Qo__A114_Qo__Qo_A14_GSgALyA33_yA1_yALyA31_A145_G_AgAEA181_yQrqd__AAA182_Rd__lFQOyA92__A189_Qo_SgQPGGA127_GSgQPGGA117_A56_QPGGGQPGGA127_GA127_GA70_G_A56_SgQPGGA70_GAA25_AppearanceActionModifierVGG_Qo_A145_GGA130_yALyA134_AA30_SafeAreaRegionsIgnoringLayoutVGGG_A1_yAA0I4ItemVyytALyA91_yA121_GA145_GG_AA0I9ItemGroupVyA1_yALyA54_yA91_yA3_GAgAE9menuOrderyQrAA9MenuOrderVFQOyALyAA4MenuVyA3_A1_yA91_yAA5LabelVyA31_A3_GG_A288_QPGGA38_yA102_GG_Qo_GA46_G_A56_QPGGSgA273_yytALyALyAgAEA181_yQrqd__AAA182_Rd__lFQOyA91_yA54_yA54_yAgAEA57_yQrqd__AAA58_Rd__lFQOyA61__A67_Qo_A31_GA54_yA31_ALyA3_A45_yA134_GGGGG_AA25GlassProminentButtonStyleVQo_AA32_EnvironmentKeyTransformModifierVySbGGA145_GGQPGQo_GAaFHPyHC
-- _objc_msgSend$_extractPageTextForLanguageDetectionForWebView:completion:
-- _objc_msgSend$configureForMinimalOutput
-- _objc_msgSend$isBlockedByScreenTime
-- _objc_msgSend$pageContextDataFetcherGetPageContext:
-- _objc_msgSend$safari_bestLanguageTagWithOptions:
-- _objc_msgSend$setAllowNodeSerialization:
-- _objc_msgSend$setPageLanguage:
 - _symbolic _____Sg 14SafariSharedUI39WBSNotifyMeWhenShortcutsCreationRequestV
 - _symbolic _____yAAyAAyAAy__________G_____G_____y_____GG_____y_____yAH_____y_____G_____GGG______y_____y______AAyAAyAAy_____yAUyABSg_AVQPGG_____y_____SgGG_____yANGG_____GQPGG_____yA11_yATyAUy______AAy_____yAAy_____yA2PGA_y_____GG______Qo______GA12_QPGG_____yAUyAAy_____y_____y_____y_____y_____AUy_____yAVGSg______yA28__SSA28_Qo_SgAAyA28_A4_y_____GGSgQPGG_Qo_______Qo__Qo_AIG_A12_QPGGGA24_yAUyAAyAAyAWyAUyAAyAAyABA5_GA2_G_AAyAVA7_GQPGG_____G_____y_____yAH_____GGGSg_A24_yAUyATyAUyA11_yA2VG_AAy_____ySbG_____G_____y_____yAWy_____ySnySiGSiAAy_____yAAyAAyAAyAAyAAyAVA_ySiSgGGA7_GA51_GA51_GA53_yA54_y_____A55_GGG_Qo_A63_GGGG_Qo_SgQPGG_A11_yAAyA24_yA11_y_____yA27_yAAyAVA_y_____GGG______Qo_AVGGA51_GAAyA89_A51_GGSgAAy_____y_____y_____yA25_yA26_A24_yAUyAWyAUyAV_A12______yAAy_____yAV_____AUy_____yAV_A100_Qo__A101_A101_A101_A101_SgQPGGA_yA55_SgGG_Qo_QPGG_A11_yAAy_____y_____yAVG______Qo_A106_GA115_GAAy_____A20_GSg_____SgQPGGG_Qo__A39_Qo__Qo_AIGSgAAyAWyAUyAAyAVA63_G______yA28__A91_Qo_SgQPGGA51_GSgQPGGA42_A12_QPGGGt 7SwiftUI15ModifiedContentV AA5ImageV AA18_AspectRatioLayoutV AA06_FrameH0V AA11_ClipEffectV AA16RoundedRectangleV AA16_OverlayModifierV AA21StrokeBorderShapeViewV AA08_OpacityR5StyleV AA012HierarchicalrU0V AA05EmptyS0V AA6VStackV AA05TupleD0V AA4TextV AA6HStackV AA022_EnvironmentKeyWritingO0V AA4FontV AA011_ForegrounduO0V AA010_FixedSizeH0V AA012_ConditionalD0V AA6SpacerV AA0S0PAAE08progresssU0yQrqd__AA08ProgresssU0Rd__lFQO AA08ProgressS0V AA11ControlSizeO AA016CircularProgresssU0V AA05_FlexiH0V AA5GroupV A17_AAE14contentMargins_3forQr12CoreGraphics7CGFloatV_AA0D15MarginPlacementVtFQO A17_AAE04listU0yQrqd__AA04ListU0Rd__lFQO A17_AAE20listHasStackBehaviorQryFQO AA4ListV s5NeverO AA6ButtonV A17_AAE18confirmationDialog_11isPresented15titleVisibility7actionsQrqd___AA7BindingVySbGAA10VisibilityOqd_0_yXEtSyRd__AAA16_Rd_0_r0_lFQO AA04LinkrU0V AA09PlainListU0V AA08_PaddingH0V AA011_BackgroundO0V AA01_rS0V AA5ColorV 012SafariSharedB026WBSIntelligencePromptFieldV AA023AccessibilityAttachmentO0V A17_AAE16scrollIndicators_4axesQrAA25ScrollIndicatorVisibilityV_AA4AxisO3SetVtFQO AA06ScrollS0V AA7ForEachV A17_AAE12onTapGesture5count7performQrSi_yyctFQO AA7CapsuleV A17_AAE06buttonU0yQrqd__AA015PrimitiveButtonU0Rd__lFQO AA0Z9AlignmentO AA011PlainButtonU0V A17_AAEA30__A31_QrA34__A36_tFQO A17_AAEA37_yQrqd__AAA38_Rd__lFQO A17_AAEA39_QryFQO A17_AAE12labelsHiddenQryFQO AA6PickerV A67_24WBSNotifyMeWhenFrequencyO A17_AAE3tag_15includeOptionalQrqd___SbtSHRd__lFQO A17_AAE010datePickerU0yQrqd__AA010DatePickerU0Rd__lFQO AA10DatePickerV AA017CompactDatePickerU0V A67_39WBSNotifyMeWhenWeeklyRecurrenceSelectorV A67_40WBSNotifyMeWhenMonthlyRecurrenceSelectorV A17_AAEA89_yQrqd__AAA90_Rd__lFQO
 - _symbolic _____yAAyAAy_____y_____yAAyAAyAAyAAy__________G_____G_____y_____GG_____y_____yAJ_____y_____G_____GGG_AByACy______AAyAAyAAy_____yACyADSg_AVQPGG_____y_____SgGG_____yAPGG_____GQPGG_____yA11_yAByACy______AAy_____yAAy_____yA2RGA_y_____GG______Qo______GA12_QPGG_____yACyAAy_____y_____y_____y_____y_____ACy_____yAVGSg______yA28__SSA28_Qo_SgAAyA28_A4_y_____GGSgQPGG_Qo_______Qo__Qo_AKG_A12_QPGGGA24_yACyAAyAAyAWyACyAAyAAyADA5_GA2_G_AAyAVA7_GQPGG_____G_____y_____yAJ_____GGGSg_A24_yACyAByACyA11_yA2VG_AAy_____ySbG_____G_____y_____yAWy_____ySnySiGSiAAy_____yAAyAAyAAyAAyAAyAVA_ySiSgGGA7_GA51_GA51_GA53_yA54_y_____A55_GGG_Qo_A63_GGGG_Qo_SgQPGG_A11_yAAyA24_yA11_y_____yA27_yAAyAVA_y_____GGG______Qo_AVGGA51_GAAyA89_A51_GGSgAAy_____y_____y_____yA25_yA26_A24_yACyAWyACyAV_A12______yAAy_____yAV_____ACy_____yAV_A100_Qo__A101_A101_A101_A101_SgQPGGA_yA55_SgGG_Qo_QPGG_A11_yAAy_____y_____yAVG______Qo_A106_GA115_GAAy_____A20_GSg_____SgQPGGG_Qo__A39_Qo__Qo_AKGSgAAyAWyACyAAyAVA63_G______yA28__A91_Qo_SgQPGGA51_GSgQPGGA42_A12_QPGGGQPGGA51_GA51_GA20_G 7SwiftUI15ModifiedContentV AA6VStackV AA05TupleD0V AA5ImageV AA18_AspectRatioLayoutV AA06_FrameJ0V AA11_ClipEffectV AA16RoundedRectangleV AA16_OverlayModifierV AA21StrokeBorderShapeViewV AA08_OpacityT5StyleV AA012HierarchicaltW0V AA05EmptyU0V AA4TextV AA6HStackV AA022_EnvironmentKeyWritingQ0V AA4FontV AA011_ForegroundwQ0V AA010_FixedSizeJ0V AA012_ConditionalD0V AA6SpacerV AA0U0PAAE08progressuW0yQrqd__AA08ProgressuW0Rd__lFQO AA08ProgressU0V AA11ControlSizeO AA016CircularProgressuW0V AA05_FlexkJ0V AA5GroupV A17_AAE14contentMargins_3forQr12CoreGraphics7CGFloatV_AA0D15MarginPlacementVtFQO A17_AAE04listW0yQrqd__AA04ListW0Rd__lFQO A17_AAE20listHasStackBehaviorQryFQO AA4ListV s5NeverO AA6ButtonV A17_AAE18confirmationDialog_11isPresented15titleVisibility7actionsQrqd___AA7BindingVySbGAA10VisibilityOqd_0_yXEtSyRd__AAA16_Rd_0_r0_lFQO AA04LinktW0V AA09PlainListW0V AA08_PaddingJ0V AA011_BackgroundQ0V AA01_tU0V AA5ColorV 012SafariSharedB026WBSIntelligencePromptFieldV AA023AccessibilityAttachmentQ0V A17_AAE16scrollIndicators_4axesQrAA25ScrollIndicatorVisibilityV_AA4AxisO3SetVtFQO AA06ScrollU0V AA7ForEachV A17_AAE12onTapGesture5count7performQrSi_yyctFQO AA7CapsuleV A17_AAE06buttonW0yQrqd__AA015PrimitiveButtonW0Rd__lFQO AA0Z9AlignmentO AA011PlainButtonW0V A17_AAEA30__A31_QrA34__A36_tFQO A17_AAEA37_yQrqd__AAA38_Rd__lFQO A17_AAEA39_QryFQO A17_AAE12labelsHiddenQryFQO AA6PickerV A67_24WBSNotifyMeWhenFrequencyO A17_AAE3tag_15includeOptionalQrqd___SbtSHRd__lFQO A17_AAE010datePickerW0yQrqd__AA010DatePickerW0Rd__lFQO AA10DatePickerV AA017CompactDatePickerW0V A67_39WBSNotifyMeWhenWeeklyRecurrenceSelectorV A67_40WBSNotifyMeWhenMonthlyRecurrenceSelectorV A17_AAEA89_yQrqd__AAA90_Rd__lFQO

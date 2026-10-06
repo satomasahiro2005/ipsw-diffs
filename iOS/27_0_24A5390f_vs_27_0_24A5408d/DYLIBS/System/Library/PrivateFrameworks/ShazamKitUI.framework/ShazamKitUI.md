@@ -2,75 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/ShazamKitUI.framework/ShazamKitUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14e0a8` | `0x14ea90` | **`+0x9e8`** |
+| `__TEXT.__const` | `0xf7a4` | `0xf864` | **`+0xc0`** |
+| `__TEXT.__swift5_typeref` | `0xfde4` | `0xfd34` | **`-0xb0`** |
+| `__TEXT.__constg_swiftt` | `0x63d0` | `0x6414` | **`+0x44`** |
+| `__AUTH_CONST.__auth_got` | `0x2548` | `0x2578` | **`+0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0x3af4` | `0x3b1c` | **`+0x28`** |
+| `__TEXT.__swift5_reflstr` | `0x3446` | `0x3466` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x1320` | `0x1308` | **`-0x18`** |
+| `__TEXT.__eh_frame` | `0x2a1c` | `0x2a04` | **`-0x18`** |
+| `__DATA.__data` | `0x6e40` | `0x6e38` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x4228` | `0x4230` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x58` | `0x5c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -427.0.44.0.0
--  __TEXT.__text: 0x14e0a8
 +427.0.48.0.0
-+  __TEXT.__text: 0x14ea90
-   __TEXT.__objc_methlist: 0xe60
--  __TEXT.__const: 0xf7a4
-+  __TEXT.__const: 0xf864
-   __TEXT.__cstring: 0x3949
--  __TEXT.__constg_swiftt: 0x63d0
--  __TEXT.__swift5_typeref: 0xfde4
-+  __TEXT.__constg_swiftt: 0x6414
-+  __TEXT.__swift5_typeref: 0xfd34
-   __TEXT.__swift5_builtin: 0x12c
--  __TEXT.__swift5_reflstr: 0x3446
--  __TEXT.__swift5_fieldmd: 0x3af4
-+  __TEXT.__swift5_reflstr: 0x3466
-+  __TEXT.__swift5_fieldmd: 0x3b1c
-   __TEXT.__swift5_assocty: 0x1398
-   __TEXT.__swift5_capture: 0x1620
-   __TEXT.__swift5_proto: 0x590
 
-   __TEXT.__swift_as_ret: 0xb0
-   __TEXT.__swift_as_cont: 0x19c
-   __TEXT.__oslogstring: 0x41d
--  __TEXT.__swift5_protos: 0x58
-+  __TEXT.__swift5_protos: 0x5c
-   __TEXT.__swift5_mpenum: 0x24
--  __TEXT.__unwind_info: 0x4228
--  __TEXT.__eh_frame: 0x2a1c
-+  __TEXT.__unwind_info: 0x4230
-+  __TEXT.__eh_frame: 0x2a04
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__objc_superrefs: 0x50
-   __DATA_CONST.__objc_arraydata: 0x230
--  __DATA_CONST.__got: 0x1320
-+  __DATA_CONST.__got: 0x1308
-   __AUTH_CONST.__const: 0x81f0
-   __AUTH_CONST.__cfstring: 0x2c0
-   __AUTH_CONST.__objc_const: 0x2278
-
-   __AUTH_CONST.__objc_arrayobj: 0x210
-   __AUTH_CONST.__objc_floatobj: 0x190
-   __AUTH_CONST.__objc_intobj: 0x30
--  __AUTH_CONST.__auth_got: 0x2548
-+  __AUTH_CONST.__auth_got: 0x2578
-   __AUTH.__objc_data: 0xc70
-   __AUTH.__data: 0x25d8
-   __DATA.__objc_ivar: 0xa0
--  __DATA.__data: 0x6e40
-+  __DATA.__data: 0x6e38
-   __DATA.__bss: 0xb438
-   __DATA.__common: 0x1d0
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6166
--  Symbols:   3447
+-  Symbols:   3118
 +  Functions: 6163
-+  Symbols:   3448
-   CStrings:  434
- 
++  Symbols:   3119
 Symbols:
 + _get_witness_table 11ShazamKitUI13TrackProtocolRzl05SwiftC015ModifiedContentVyAC4ViewPACE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAgCE4task2id4name8priority4file4line_Qrqd___SSSgScPSSSiyyYaYAcntSQRd__lFQOyAgCE7toolbar7contentQrqd__yXE_tAC07ToolbarH0Rd__lFQOyAEyAEyAEyAgCE14scrollPosition_6anchorQrAC7BindingVyAC06ScrollX0VG_AC9UnitPointVSgtFQOyAC06ScrollI0VyAC6VStackVyAC05TupleH0VyAEyAA0d6HeaderI0VyAA0d7ArtworkI0Vy7ArtworkQzGAEyAA020MusicalFeaturesBadgeI0VAC31AccessibilityAttachmentModifierVGSgAA0d7DetailsI0VAA04Nanod8PlaybackI0VyxGAA0d12MusicButtonsI0VyxGAA0D16ActionOfferLabelVyxGGAC23_GeometryActionModifierVy12CoreGraphics7CGFloatVGG_AEyAA0D7SectionVyAC012_ConditionalH0VyAA0D12SectionTitleVAC05EmptyI0VGAEyAA0d12AnnouncementI0VyA14_GAC25_AppearanceActionModifierVGGAC21_TraitWritingModifierVyAC18TransitionTraitKeyVGGSgA42_yA49_AA0d13ArtistProfileI0VyA14_GGSgA42_yA49_A8_yAA0d8LocationI0VyA14_GSg_AA0d8MetadataI0VyA44_yAA0d18MetadataFieldValueI0VA76_GGQPGGSgAA0d6UpsellI0VSgQPGGG_Qo_AC23SafeAreaPaddingModifierVGAA0d17ArtworkBackgroundI033_588A9C1FBB67E7B4AEA815D3C7D54041LLVyAA0D21ArtworkBackgroundMaskA93_LLVGGAC18_AnimationModifierVySbGG_AA0dvI0VyxGSgQo__10Foundation4UUIDVQo__AA0D10ActionItemOyxGSgQo_AA0D13ActionHandler33_E2DC1EDD1BCE284E4C55EAE389018733LLVyxGGAcFHPqd0__AcFHD3_A116_HO_A120_AC0I8ModifierHPyHCHC
 + _get_witness_table 11ShazamKitUI13TrackProtocolRzl05SwiftC015ModifiedContentVyAEyAC4ViewPACE15sensoryFeedback_7trigger9conditionQrAC07SensoryK0V_qd__Sbqd___qd__tctSQRd__lFQOyAC4MenuVyAEyAEyAEyAC5ImageVAC24_ForegroundStyleModifierVyAC5ColorVGGAC023_IndefiniteSymbolEffectS0VGAC022_EnvironmentKeyWritingS0VyAC0H10TransitionVGGAA0d18ActionItemsHandlerI0VyxGG_AA0D11ActionToastOSgQo_AC01_h9ShapeKindS0VyAC6CircleVGGAC023AccessibilityAttachmentS0VGAcFHPA17_AcFHPqd0__AcFHD3_A11_HO_A16_AC0iS0HPyHCHC_A19_ACA21_HPyHCHC

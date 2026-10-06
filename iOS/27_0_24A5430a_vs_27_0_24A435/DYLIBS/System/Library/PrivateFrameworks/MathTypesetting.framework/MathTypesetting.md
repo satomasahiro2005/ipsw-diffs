@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MathTypesetting.framework/MathTypesetting`
 
-```diff
+### Section Size Changes
 
- 8.0.84.0.0
--  __TEXT.__text: 0x8496c
-+  __TEXT.__text: 0x84988
-   __TEXT.__objc_methlist: 0x2c94
-   __TEXT.__const: 0x24b74
-   __TEXT.__swift5_typeref: 0x19d
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8496c` | `0x84988` | **`+0x1c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _MathTopAccentAttachmentGetRecordAtIndex : 28 -> 32
 ~ __ZNSt3__16vectorI11EQKitLengthNS_9allocatorIS1_EEE24__emplace_back_slow_pathIJRKS1_EEEPS1_DpOT_ : 288 -> 284

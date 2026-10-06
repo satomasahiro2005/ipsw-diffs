@@ -2,41 +2,18 @@
 
 > `/usr/lib/libmav_ipc_router_dynamic.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb2e4` | `0xb304` | **`+0x20`** |
+
+### Other Changes
+
 ```diff
 
 -1563.0.0.0.0
--  __TEXT.__text: 0xb2e4 sha256:5fec38b7ba5bf0b1601522e8efc88900e31a225c5ce4a464fd82ed11fba43797
 +1570.0.0.0.0
-+  __TEXT.__text: 0xb304 sha256:b793475dba535055d9c9243059dc2ecc95e33bfde5a8e23ea205e9e3a388a67d
-   __TEXT.__const: 0x758 sha256:5114fbe13a47eaf0053b63429f3cc884df975486f36567a2e53536d66fd1d5e1
--  __TEXT.__gcc_except_tab: 0x470 sha256:79afc384dcf9256f145b51e401fa7fb6a614c4963b20554682fbe46076054fc7
-+  __TEXT.__gcc_except_tab: 0x470 sha256:b1f038aca0a6d9519521ebb07cd8fb03a05b13a32b93aadba2b93d1c4b3ddcf5
-   __TEXT.__cstring: 0x7c2 sha256:27a65b82e73ba2559407e9bdc96b929e1edc6aec6164f7658ac0dc2245c79cd1
-   __TEXT.__oslogstring: 0x2c7 sha256:79e3743f664876ec97e9365d8cc7b3d9560a79cc994372eaaee6933fd111e7fa
--  __TEXT.__unwind_info: 0x3e8 sha256:512bd51ee4c99e2ad4dadd68e0b967c2c7c4014273553b7a972eca1aebf4c829
-+  __TEXT.__unwind_info: 0x3e8 sha256:96034a178d976e6fa2ba57c78811e2ed25af33c0a35b45b2e907316f9b05361f
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x160 sha256:b75a1f24103c2a04339d021581ed5735ab17f4a4738705a73a69cb8643b2ac18
--  __DATA_CONST.__weak_got: 0x10 sha256:4b56bd161e9f16a6914ff5c4e01deb17325a9ae972d3ca2ea5b7325b348254d1
-+  __DATA_CONST.__const: 0x160 sha256:b77605ac8217e790e59f3ee96c907583e7a287378a8184df0dc5a449b316bffb
-+  __DATA_CONST.__weak_got: 0x10 sha256:006ec988456d14fc9b26cf92ad062ecf8c0fedc3592018fa9e9689b2c243d3a9
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x8f8 sha256:3eec5608d683c791e4cc3a63ca975bd3a67fc8b2baad1e794ba3edecf0f05e71
--  __AUTH_CONST.__weak_auth_got: 0x20 sha256:933fbc1ea3c831567dfc853d70e45d918c6f4d128631d64cd4e716726587fc9c
-+  __AUTH_CONST.__const: 0x8f8 sha256:2c00e9db2fa9642108af9c778d68416457222b2c936dd927b91b2d1fd7c78043
-+  __AUTH_CONST.__weak_auth_got: 0x20 sha256:1b9fdfbdaac993f064a4a5c4768d4b845cc8e8a0f1859bb298cad252bdb5c3fc
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA_DIRTY.__data: 0x18 sha256:956e5e646dd60f20e6c3ad4f4b90b0a890c6fb92d4301c83221ea2e4746f80db
-   __DATA_DIRTY.__common: 0x44 sha256:1751ac12e70e15b4f76c16775cd329ae55973b612521dab2de828a5cdb6c8ab3
-
-   - /usr/lib/libTelephonyCapabilities.dylib
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
--  UUID: ACCC8830-36E9-3250-884D-ABC260D87EA2
-+  UUID: FC0C22E7-BCEB-37C3-AD20-ACABB4535086
-   Functions: 215
-   Symbols:   600
-   CStrings:  77
 Symbols:
 + __ZNSt12length_errorC1B9noe220106EPKc
 + __ZNSt3__110shared_ptrI12mav_router_tED1B9noe220106Ev
@@ -86,5 +63,4 @@ Symbols:
 - __ZNSt3__16__treeINS_12__value_typeIj21PCITransportInterfaceEENS_19__map_value_compareIjNS_4pairIKjS2_EENS_4lessIjEEEENS_9allocatorIS7_EEE14__tree_deleterclB9noe220100EPNS_11__tree_nodeIS3_PvEE
 - __ZSt28__throw_bad_array_new_lengthB9noe220100v
 - __ZZNSt3__16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE20mav_router_channel_tEENS_19__map_value_compareIS7_NS_4pairIKS7_S8_EENS_4lessIS7_EEEENS5_ISD_EEE16__emplace_uniqueB9noe220100IJRKNS_21piecewise_construct_tENS_5tupleIJRSC_EEENSN_IJEEEEEENSB_INS_15__tree_iteratorIS9_PNS_11__tree_nodeIS9_PvEElEEbEEDpOT_ENKUlSO_SM_OSP_OSQ_E_clESO_SM_S11_S12_
-
 ```

@@ -2,78 +2,50 @@
 
 > `/Applications/DiagnosticsService.app/PlugIns/Diagnostic-8185.appex/Diagnostic-8185`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_arrayobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x18b8` | `0x2508` | **`+0xc50`** |
+| `__TEXT.__objc_stubs` | `0x460` | `0x920` | **`+0x4c0`** |
+| `__DATA_CONST.__cfstring` | `0x840` | `0xa80` | **`+0x240`** |
+| `__TEXT.__objc_methname` | `0x8d2` | `0xadc` | **`+0x20a`** |
+| `__TEXT.__cstring` | `0x480` | `0x5dc` | **`+0x15c`** |
+| `__TEXT.__objc_methtype` | `0x15f` | `0x27c` | **`+0x11d`** |
+| `__DATA.__data` | `0xc0` | `0x180` | **`+0xc0`** |
+| `__DATA.__objc_selrefs` | `0x2a0` | `0x360` | **`+0xc0`** |
+| `__TEXT.__auth_stubs` | `0x1a0` | `0x230` | **`+0x90`** |
+| `__DATA_CONST.__objc_dictobj` | `0x28` | `0xa0` | **`+0x78`** |
+| `__TEXT.__objc_methlist` | `0x2d4` | `0x344` | **`+0x70`** |
+| `__DATA_CONST.__objc_arraydata` | `0xb8` | `0x120` | **`+0x68`** |
+| `__DATA.__objc_const` | `0x770` | `0x7c8` | **`+0x58`** |
+| `__DATA_CONST.__auth_got` | `0xd8` | `0x120` | **`+0x48`** |
+| `__DATA_CONST.__objc_intobj` | `0xf0` | `0x138` | **`+0x48`** |
+| `__DATA_CONST.__got` | `0x60` | `0x98` | **`+0x38`** |
+| `__TEXT.__oslogstring` | `0x1ca` | `0x201` | **`+0x37`** |
+| `__TEXT.__objc_classname` | `0x3a` | `0x69` | **`+0x2f`** |
+| `__DATA_CONST.__const` | `—` | `0x28` | **`+0x28`** |
+| `__DATA_CONST.__objc_protolist` | `0x10` | `0x20` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__const` | `0x60` | `0x68` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_data`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_classlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
- 1307.2.4.0.0
--  __TEXT.__text: 0x18b8
--  __TEXT.__auth_stubs: 0x1a0
--  __TEXT.__objc_stubs: 0x460
--  __TEXT.__objc_methlist: 0x2d4
--  __TEXT.__const: 0x60
--  __TEXT.__oslogstring: 0x1ca
--  __TEXT.__cstring: 0x480
--  __TEXT.__objc_classname: 0x3a
--  __TEXT.__objc_methname: 0x8d2
--  __TEXT.__objc_methtype: 0x15f
-+  __TEXT.__text: 0x2508
-+  __TEXT.__auth_stubs: 0x230
-+  __TEXT.__objc_stubs: 0x920
-+  __TEXT.__objc_methlist: 0x344
-+  __TEXT.__const: 0x68
-+  __TEXT.__oslogstring: 0x201
-+  __TEXT.__cstring: 0x5dc
-+  __TEXT.__objc_classname: 0x69
-+  __TEXT.__objc_methname: 0xadc
-+  __TEXT.__objc_methtype: 0x27c
-   __TEXT.__unwind_info: 0x90
--  __DATA_CONST.__cfstring: 0x840
-+  __DATA_CONST.__const: 0x28
-+  __DATA_CONST.__cfstring: 0xa80
-   __DATA_CONST.__objc_classlist: 0x10
--  __DATA_CONST.__objc_protolist: 0x10
-+  __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_intobj: 0xf0
--  __DATA_CONST.__objc_arraydata: 0xb8
--  __DATA_CONST.__objc_dictobj: 0x28
-+  __DATA_CONST.__objc_protorefs: 0x8
-+  __DATA_CONST.__objc_intobj: 0x138
-+  __DATA_CONST.__objc_arraydata: 0x120
-+  __DATA_CONST.__objc_dictobj: 0xa0
-   __DATA_CONST.__objc_arrayobj: 0x30
--  __DATA_CONST.__auth_got: 0xd8
--  __DATA_CONST.__got: 0x60
--  __DATA.__objc_const: 0x770
--  __DATA.__objc_selrefs: 0x2a0
-+  __DATA_CONST.__auth_got: 0x120
-+  __DATA_CONST.__got: 0x98
-+  __DATA.__objc_const: 0x7c8
-+  __DATA.__objc_selrefs: 0x360
-   __DATA.__objc_ivar: 0x68
-   __DATA.__objc_data: 0xa0
--  __DATA.__data: 0xc0
-+  __DATA.__data: 0x180
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/CoreRepairCore.framework/CoreRepairCore
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 36
 -  Symbols:   56
 -  CStrings:  223
 +  Functions: 38
 +  Symbols:   72
 +  CStrings:  277
- 
 Symbols:
 + _MGGetBoolAnswer
 + _OBJC_CLASS_$_NSBundle

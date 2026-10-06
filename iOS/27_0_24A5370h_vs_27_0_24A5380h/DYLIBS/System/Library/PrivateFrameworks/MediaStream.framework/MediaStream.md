@@ -2,66 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/MediaStream.framework/MediaStream`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15710` | `0x15be4` | **`+0x4d4`** |
+| `__DATA_CONST.__got` | `0x5b0` | `0x5d0` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x788` | `0x7a0` | **`+0x18`** |
+| `__AUTH_CONST.__objc_const` | `0x22b0` | `0x22a8` | **`-0x8`** |
+| `__DATA.__bss` | `0x28` | `0x30` | **`+0x8`** |
+| `__DATA_DIRTY.__bss` | `0x170` | `0x168` | **`-0x8`** |
+| `__TEXT.__objc_methlist` | `0x19c4` | `0x19cc` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x15710
--  __TEXT.__objc_methlist: 0x19c4
-+  __TEXT.__text: 0x15be4
-+  __TEXT.__objc_methlist: 0x19cc
-   __TEXT.__const: 0x68
-   __TEXT.__gcc_except_tab: 0x110
-   __TEXT.__oslogstring: 0x1881
-   __TEXT.__cstring: 0x11f7
-   __TEXT.__ustring: 0x74
--  __TEXT.__unwind_info: 0x788
-+  __TEXT.__unwind_info: 0x7a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-910.21.101.0.0
++910.27.103.0.0
 
-   __DATA_CONST.__objc_selrefs: 0xf90
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0xa0
--  __DATA_CONST.__got: 0x5b0
-+  __DATA_CONST.__got: 0x5d0
-   __AUTH_CONST.__const: 0x300
-   __AUTH_CONST.__cfstring: 0xf80
--  __AUTH_CONST.__objc_const: 0x22b0
-+  __AUTH_CONST.__objc_const: 0x22a8
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__objc_ivar: 0x164
-   __DATA.__data: 0x300
--  __DATA.__bss: 0x28
-+  __DATA.__bss: 0x30
-   __DATA_DIRTY.__objc_data: 0x690
-   __DATA_DIRTY.__data: 0x8
--  __DATA_DIRTY.__bss: 0x170
-+  __DATA_DIRTY.__bss: 0x168
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 612
--  Symbols:   2272
+-  Symbols:   1342
 +  Functions: 614
-+  Symbols:   2280
-   CStrings:  394
- 
-Sections:
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   1348
 Symbols:
 + -[MSASConnection cancelMigrationToCPLForAlbumWithGUID:personID:clientVersion:completionBlock:]
 + -[MSASConnection completeMigrationToCPLForAlbumWithGUID:personID:clientVersion:sourceAssetCount:destinationAssetCount:completionBlock:]
@@ -101,5 +64,4 @@ Symbols:
 - ___82-[MSASConnection completeMigrationToCPLForAlbumWithGUID:personID:completionBlock:]_block_invoke
 - ___83-[MSASConnection unarchiveMigrationToCPLForAlbumWithGUID:personID:completionBlock:]_block_invoke
 - ___93-[MSASConnection failMigrationToCPLForAlbumWithGUID:migrationError:personID:completionBlock:]_block_invoke
-
 ```

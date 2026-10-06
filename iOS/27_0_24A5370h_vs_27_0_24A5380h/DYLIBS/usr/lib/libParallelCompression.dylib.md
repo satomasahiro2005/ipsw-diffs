@@ -2,19 +2,18 @@
 
 > `/usr/lib/libParallelCompression.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x55dac` | `0x55dbc` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x55dac
-+  __TEXT.__text: 0x55dbc
-   __TEXT.__cstring: 0xf571
-   __TEXT.__const: 0x830
-   __TEXT.__oslogstring: 0x31
-Sections:
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
+-465.0.0.0.0
++467.0.0.0.0
 Functions:
 ~ _processEntryThreadProc : 5836 -> 5824
 ~ _resizeStream : 960 -> 976
@@ -31,5 +30,4 @@ Functions:
 ~ _ParallelArchiveCombine : 2300 -> 2304
 ~ _loadDirectory : 1316 -> 1328
 ~ _updateOps : 2180 -> 2216
-
 ```

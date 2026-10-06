@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/DiskImageKit.framework/DiskImageKit`
 
-```diff
+### Section Size Changes
 
- 598.0.1.0.0
--  __TEXT.__text: 0x8eac
-+  __TEXT.__text: 0x8eb0
-   __TEXT.__const: 0x8c0
-   __TEXT.__swift5_typeref: 0x2c6
-   __TEXT.__swift5_fieldmd: 0x32c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8eac` | `0x8eb0` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_25f2dce48 -> sub_260409e48 : 1764 -> 1768
+~ sub_25f1abe48 -> sub_25febce48 : 1764 -> 1768
 ```

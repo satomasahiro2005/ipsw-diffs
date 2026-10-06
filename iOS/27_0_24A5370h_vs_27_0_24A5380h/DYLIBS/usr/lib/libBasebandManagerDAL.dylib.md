@@ -2,52 +2,32 @@
 
 > `/usr/lib/libBasebandManagerDAL.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ed5bc` | `0x1ed57c` | **`-0x40`** |
+| `__TEXT.__gcc_except_tab` | `0x2abd4` | `0x2abf8` | **`+0x24`** |
+| `__TEXT.__oslogstring` | `0xaa7f` | `0xaa9f` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x8340` | `0x8350` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1ed5bc
-+  __TEXT.__text: 0x1ed57c
-   __TEXT.__init_offsets: 0x14c
-   __TEXT.__objc_methlist: 0x3d4
-   __TEXT.__const: 0xedd8
-   __TEXT.__dlopen_cstrs: 0x52
--  __TEXT.__gcc_except_tab: 0x2abd4
--  __TEXT.__oslogstring: 0xaa7f
-+  __TEXT.__gcc_except_tab: 0x2abf8
-+  __TEXT.__oslogstring: 0xaa9f
-   __TEXT.__cstring: 0x5ec6
--  __TEXT.__unwind_info: 0x8340
-+  __TEXT.__unwind_info: 0x8350
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-1570.0.0.0.0
++1576.0.0.0.0
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libprotobuf-lite.dylib
-   - /usr/lib/libprotobuf.dylib
 -  Functions: 5239
--  Symbols:   15782
--  CStrings:  2093
+-  Symbols:   9057
+-  CStrings:  2035
 +  Functions: 5241
-+  Symbols:   15788
-+  CStrings:  2094
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__cstring : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
++  Symbols:   9064
++  CStrings:  2036
 Symbols:
 + GCC_except_table153
 + GCC_except_table204
@@ -127,5 +107,4 @@ CStrings:
 + "RFFE Scan Data is not supported"
 - "AppleBasebandManager-AppleBasebandServices_Manager-1570"
 - "AppleBasebandServices_Manager-1570"
-
 ```

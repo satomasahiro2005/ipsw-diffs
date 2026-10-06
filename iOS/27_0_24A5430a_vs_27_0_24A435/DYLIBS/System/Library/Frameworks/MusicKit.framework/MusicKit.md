@@ -2,24 +2,20 @@
 
 > `/System/Library/Frameworks/MusicKit.framework/MusicKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5414b0` | `0x541bdc` | **`+0x72c`** |
+
+### Other Changes
+
 ```diff
 
- 4026.110.3.0.0
--  __TEXT.__text: 0x5414b0
-+  __TEXT.__text: 0x541bdc
-   __TEXT.__objc_methlist: 0x229c
-   __TEXT.__const: 0x54d24
-   __TEXT.__gcc_except_tab: 0x2088
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 44301
--  Symbols:   12544
+-  Symbols:   11777
 +  Functions: 44349
-+  Symbols:   12552
-   CStrings:  1763
- 
++  Symbols:   11785
 Symbols:
 + _OUTLINED_FUNCTION_2196
 + _OUTLINED_FUNCTION_2197

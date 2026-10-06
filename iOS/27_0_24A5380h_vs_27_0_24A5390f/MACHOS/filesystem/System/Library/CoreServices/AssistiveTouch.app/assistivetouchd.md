@@ -2,122 +2,75 @@
 
 > `/System/Library/CoreServices/AssistiveTouch.app/assistivetouchd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_entry`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift_as_ret`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15e8bc` | `0x160d94` | **`+0x24d8`** |
+| `__DATA.__bss` | `0x4d30` | `0x50b0` | **`+0x380`** |
+| `__TEXT.__objc_methname` | `0x377c0` | `0x37a40` | **`+0x280`** |
+| `__TEXT.__objc_stubs` | `0x2b6c0` | `0x2b900` | **`+0x240`** |
+| `__TEXT.__const` | `0x45f0` | `0x4800` | **`+0x210`** |
+| `__DATA_CONST.__const` | `0x6a70` | `0x6c30` | **`+0x1c0`** |
+| `__TEXT.__eh_frame` | `0x48d0` | `0x4a48` | **`+0x178`** |
+| `__TEXT.__objc_methlist` | `0x1539c` | `0x1548c` | **`+0xf0`** |
+| `__DATA_CONST.__auth_ptr` | `0xb80` | `0xc48` | **`+0xc8`** |
+| `__TEXT.__unwind_info` | `0x5f48` | `0x6000` | **`+0xb8`** |
+| `__DATA.__objc_const` | `0x1c388` | `0x1c428` | **`+0xa0`** |
+| `__DATA.__objc_selrefs` | `0xc2d0` | `0xc368` | **`+0x98`** |
+| `__TEXT.__swift5_capture` | `0x788` | `0x81c` | **`+0x94`** |
+| `__TEXT.__auth_stubs` | `0x4080` | `0x4110` | **`+0x90`** |
+| `__TEXT.__swift5_typeref` | `0x1578` | `0x15d6` | **`+0x5e`** |
+| `__DATA_CONST.__auth_got` | `0x2050` | `0x2098` | **`+0x48`** |
+| `__TEXT.__objc_methtype` | `0x75ad` | `0x75e8` | **`+0x3b`** |
+| `__TEXT.__oslogstring` | `0x6ad8` | `0x6b12` | **`+0x3a`** |
+| `__DATA.__data` | `0x4190` | `0x41c0` | **`+0x30`** |
+| `__TEXT.__swift5_proto` | `0x264` | `0x280` | **`+0x1c`** |
+| `__TEXT.__gcc_except_tab` | `0x29fc` | `0x2a10` | **`+0x14`** |
+| `__DATA.__objc_ivar` | `0x12a4` | `0x12b4` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0xf7f` | `0xf6f` | **`-0x10`** |
+| `__TEXT.__swift_as_cont` | `0x308` | `0x318` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x3dc` | `0x3ec` | **`+0x10`** |
+| `__DATA.__objc_data` | `0x5ff8` | `0x6000` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x1be8` | `0x1be0` | **`-0x8`** |
+| `__TEXT.__constg_swiftt` | `0x1c1c` | `0x1c24` | **`+0x8`** |
+| `__TEXT.__cstring` | `0xde66` | `0xde67` | **`+0x1`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_stublist`
 - `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_doubleobj`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_doubleobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA.__objc_stublist`
-- `__DATA.__common`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -1500.0.0.0.0
--  __TEXT.__text: 0x15e8bc
--  __TEXT.__auth_stubs: 0x4080
--  __TEXT.__objc_stubs: 0x2b6c0
--  __TEXT.__objc_methlist: 0x1539c
--  __TEXT.__const: 0x45f0
 +1502.0.0.0.0
-+  __TEXT.__text: 0x160d94
-+  __TEXT.__auth_stubs: 0x4110
-+  __TEXT.__objc_stubs: 0x2b900
-+  __TEXT.__objc_methlist: 0x1548c
-+  __TEXT.__const: 0x4800
-   __TEXT.__dlopen_cstrs: 0x131
--  __TEXT.__swift5_typeref: 0x1578
-+  __TEXT.__swift5_typeref: 0x15d6
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__constg_swiftt: 0x1c1c
-+  __TEXT.__constg_swiftt: 0x1c24
-   __TEXT.__swift5_builtin: 0x1e0
--  __TEXT.__swift5_reflstr: 0xf7f
-+  __TEXT.__swift5_reflstr: 0xf6f
-   __TEXT.__swift5_fieldmd: 0xf64
-   __TEXT.__swift5_assocty: 0x2b8
--  __TEXT.__swift5_proto: 0x264
-+  __TEXT.__swift5_proto: 0x280
-   __TEXT.__swift5_types: 0x12c
-   __TEXT.__objc_classname: 0x2a44
--  __TEXT.__objc_methtype: 0x75ad
--  __TEXT.__objc_methname: 0x377c0
--  __TEXT.__cstring: 0xde66
--  __TEXT.__swift5_capture: 0x788
--  __TEXT.__oslogstring: 0x6ad8
-+  __TEXT.__objc_methtype: 0x75e8
-+  __TEXT.__objc_methname: 0x37a40
-+  __TEXT.__cstring: 0xde67
-+  __TEXT.__swift5_capture: 0x81c
-+  __TEXT.__oslogstring: 0x6b12
-   __TEXT.__swift5_protos: 0x18
--  __TEXT.__swift_as_entry: 0x3dc
-+  __TEXT.__swift_as_entry: 0x3ec
-   __TEXT.__swift_as_ret: 0x150
--  __TEXT.__swift_as_cont: 0x308
--  __TEXT.__gcc_except_tab: 0x29fc
--  __TEXT.__unwind_info: 0x5f48
--  __TEXT.__eh_frame: 0x48d0
--  __DATA_CONST.__const: 0x6a70
-+  __TEXT.__swift_as_cont: 0x318
-+  __TEXT.__gcc_except_tab: 0x2a10
-+  __TEXT.__unwind_info: 0x6000
-+  __TEXT.__eh_frame: 0x4a48
-+  __DATA_CONST.__const: 0x6c30
-   __DATA_CONST.__cfstring: 0x9e20
-   __DATA_CONST.__objc_classlist: 0x738
-   __DATA_CONST.__objc_catlist: 0x50
 
-   __DATA_CONST.__objc_arrayobj: 0x348
-   __DATA_CONST.__objc_intobj: 0x7f8
-   __DATA_CONST.__objc_dictobj: 0x280
--  __DATA_CONST.__auth_got: 0x2050
--  __DATA_CONST.__got: 0x1be8
--  __DATA_CONST.__auth_ptr: 0xb80
--  __DATA.__objc_const: 0x1c388
--  __DATA.__objc_selrefs: 0xc2d0
--  __DATA.__objc_ivar: 0x12a4
--  __DATA.__objc_data: 0x5ff8
--  __DATA.__data: 0x4190
-+  __DATA_CONST.__auth_got: 0x2098
-+  __DATA_CONST.__got: 0x1be0
-+  __DATA_CONST.__auth_ptr: 0xc48
-+  __DATA.__objc_const: 0x1c428
-+  __DATA.__objc_selrefs: 0xc368
-+  __DATA.__objc_ivar: 0x12b4
-+  __DATA.__objc_data: 0x6000
-+  __DATA.__data: 0x41c0
-   __DATA.__objc_stublist: 0x18
--  __DATA.__bss: 0x4d30
-+  __DATA.__bss: 0x50b0
-   __DATA.__common: 0xb8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9180
 -  Symbols:   2282
 -  CStrings:  11875
 +  Functions: 9247
 +  Symbols:   2315
 +  CStrings:  11901
- 
 Symbols:
 + _$s16AssistiveTouchUI0aB19SecureIntentManagerC15onWaitingChangeyycSgvsTj
 + _$s16AssistiveTouchUI0aB19SecureIntentManagerC6sharedACvgZ

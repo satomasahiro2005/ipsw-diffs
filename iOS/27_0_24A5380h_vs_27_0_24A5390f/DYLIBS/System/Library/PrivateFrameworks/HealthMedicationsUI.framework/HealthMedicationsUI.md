@@ -2,106 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/HealthMedicationsUI.framework/HealthMedicationsUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_catlist2`
-- `__DATA.__objc_stublist`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2d2238` | `0x2d36f0` | **`+0x14b8`** |
+| `__DATA.__data` | `0x7f90` | `0x8130` | **`+0x1a0`** |
+| `__AUTH.__objc_data` | `0x7e60` | `0x7fe8` | **`+0x188`** |
+| `__DATA.__bss` | `0x16768` | `0x168c8` | **`+0x160`** |
+| `__AUTH_CONST.__objc_const` | `0xe248` | `0xe398` | **`+0x150`** |
+| `__TEXT.__constg_swiftt` | `0xbe5c` | `0xbf50` | **`+0xf4`** |
+| `__AUTH.__data` | `0x77b8` | `0x7898` | **`+0xe0`** |
+| `__TEXT.__objc_methlist` | `0x1fac` | `0x2064` | **`+0xb8`** |
+| `__TEXT.__const` | `0x14544` | `0x145d4` | **`+0x90`** |
+| `__AUTH_CONST.__const` | `0xb178` | `0xb1f8` | **`+0x80`** |
+| `__TEXT.__swift5_reflstr` | `0x8879` | `0x88f9` | **`+0x80`** |
+| `__TEXT.__swift5_typeref` | `0x63c6` | `0x643e` | **`+0x78`** |
+| `__TEXT.__unwind_info` | `0x9130` | `0x91a8` | **`+0x78`** |
+| `__TEXT.__swift5_fieldmd` | `0x688c` | `0x68fc` | **`+0x70`** |
+| `__TEXT.__cstring` | `0x80ec` | `0x813c` | **`+0x50`** |
+| `__TEXT.__swift5_assocty` | `0x898` | `0x8e8` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1c38` | `0x1c80` | **`+0x48`** |
+| `__AUTH_CONST.__auth_got` | `0x37d8` | `0x3818` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x1d50` | `0x1d68` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x488` | `0x498` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x130` | `0x140` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x6b0` | `0x6c0` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0xd40` | `0xd4c` | **`+0xc`** |
+| `__DATA_CONST.__objc_protorefs` | `0xa0` | `0xa8` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -7027.0.64.0.0
--  __TEXT.__text: 0x2d2238
--  __TEXT.__objc_methlist: 0x1fac
--  __TEXT.__const: 0x14544
--  __TEXT.__cstring: 0x80ec
--  __TEXT.__constg_swiftt: 0xbe5c
--  __TEXT.__swift5_typeref: 0x63c6
--  __TEXT.__swift5_reflstr: 0x8879
--  __TEXT.__swift5_fieldmd: 0x688c
 +7027.0.67.2.1
-+  __TEXT.__text: 0x2d36f0
-+  __TEXT.__objc_methlist: 0x2064
-+  __TEXT.__const: 0x145d4
-+  __TEXT.__cstring: 0x813c
-+  __TEXT.__constg_swiftt: 0xbf50
-+  __TEXT.__swift5_typeref: 0x643e
-+  __TEXT.__swift5_reflstr: 0x88f9
-+  __TEXT.__swift5_fieldmd: 0x68fc
-   __TEXT.__swift5_builtin: 0x320
--  __TEXT.__swift5_assocty: 0x898
--  __TEXT.__swift5_proto: 0xd40
--  __TEXT.__swift5_types: 0x6b0
-+  __TEXT.__swift5_assocty: 0x8e8
-+  __TEXT.__swift5_proto: 0xd4c
-+  __TEXT.__swift5_types: 0x6c0
-   __TEXT.__swift5_capture: 0x3640
-   __TEXT.__oslogstring: 0x2fae
-   __TEXT.__swift5_protos: 0x7c
 
-   __TEXT.__swift_as_entry: 0x118
-   __TEXT.__swift_as_ret: 0x124
-   __TEXT.__swift_as_cont: 0x2f4
--  __TEXT.__unwind_info: 0x9130
-+  __TEXT.__unwind_info: 0x91a8
-   __TEXT.__eh_frame: 0x5e04
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xac0
--  __DATA_CONST.__objc_classlist: 0x488
-+  __DATA_CONST.__objc_classlist: 0x498
-   __DATA_CONST.__objc_catlist2: 0x48
--  __DATA_CONST.__objc_protolist: 0x130
-+  __DATA_CONST.__objc_protolist: 0x140
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1c38
--  __DATA_CONST.__objc_protorefs: 0xa0
--  __DATA_CONST.__got: 0x1d50
--  __AUTH_CONST.__const: 0xb178
--  __AUTH_CONST.__objc_const: 0xe248
--  __AUTH_CONST.__auth_got: 0x37d8
--  __AUTH.__objc_data: 0x7e60
--  __AUTH.__data: 0x77b8
--  __DATA.__data: 0x7f90
-+  __DATA_CONST.__objc_selrefs: 0x1c80
-+  __DATA_CONST.__objc_protorefs: 0xa8
-+  __DATA_CONST.__got: 0x1d68
-+  __AUTH_CONST.__const: 0xb1f8
-+  __AUTH_CONST.__objc_const: 0xe398
-+  __AUTH_CONST.__auth_got: 0x3818
-+  __AUTH.__objc_data: 0x7fe8
-+  __AUTH.__data: 0x7898
-+  __DATA.__data: 0x8130
-   __DATA.__objc_stublist: 0x100
--  __DATA.__bss: 0x16768
-+  __DATA.__bss: 0x168c8
-   __DATA.__common: 0x9a0
-   __DATA_DIRTY.__objc_data: 0x2378
-   __DATA_DIRTY.__data: 0x2cf0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 13820
--  Symbols:   4078
+-  Symbols:   3389
 -  CStrings:  902
 +  Functions: 13861
-+  Symbols:   4105
++  Symbols:   3415
 +  CStrings:  904
- 
 Symbols:
 + _OBJC_METACLASS_$__TtC19HealthMedicationsUIP33_F81FAD2FC332C028ABF1D6BA70C87A1832TextFieldSkippingGestureDelegate
 + _OBJC_METACLASS_$__TtCV19HealthMedicationsUIP33_7693CFD31215F55D9B32B8FE64BD524720ViewDidAppearTrigger10Controller
@@ -135,7 +77,6 @@ Symbols:
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE14contentMargins__3forQrAA4EdgeO3SetV_12CoreGraphics7CGFloatVSgAA22ContentMarginPlacementVtFQOyAA01_c9Modifier_L0Vy017HealthMedicationsB00q14OnboardingListE033_21E9F79CB6804BF110AEFD105A1E36FDLLVG_Qo_HO
 + _keypath_set.27Tm
 + _keypath_set.96Tm
-+ _objc_msgSend$superview
 + _symbolic _____ 19HealthMedicationsUI0B21OnboardingListMargins33_21E9F79CB6804BF110AEFD105A1E36FDLLV
 + _symbolic _____ 19HealthMedicationsUI20ViewDidAppearTrigger33_7693CFD31215F55D9B32B8FE64BD5247LLV
 + _symbolic _____ 19HealthMedicationsUI20ViewDidAppearTrigger33_7693CFD31215F55D9B32B8FE64BD5247LLV10ControllerC

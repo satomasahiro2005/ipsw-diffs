@@ -2,58 +2,44 @@
 
 > `/System/Library/NanoPreferenceBundles/Customization/CarouselAppViewSettings.bundle/CarouselAppViewSettings`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x241e8` | `0x22d08` | **`-0x14e0`** |
+| `__TEXT.__oslogstring` | `0x1750` | `0x13b3` | **`-0x39d`** |
+| `__TEXT.__gcc_except_tab` | `0x2cfc` | `0x2ab4` | **`-0x248`** |
+| `__DATA_CONST.__cfstring` | `0xec0` | `0xea0` | **`-0x20`** |
+| `__TEXT.__cstring` | `0xa6f` | `0xa54` | **`-0x1b`** |
+| `__TEXT.__unwind_info` | `0xfd0` | `0xfb8` | **`-0x18`** |
+| `__TEXT.__const` | `0x398` | `0x3a8` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
 - `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
 -1115.0.97.0.0
--  __TEXT.__text: 0x241e8
 +1115.0.101.0.0
-+  __TEXT.__text: 0x22d08
-   __TEXT.__auth_stubs: 0x7c0
-   __TEXT.__objc_stubs: 0x4120
-   __TEXT.__objc_methlist: 0x1a7c
--  __TEXT.__const: 0x398
--  __TEXT.__cstring: 0xa6f
--  __TEXT.__oslogstring: 0x1750
-+  __TEXT.__const: 0x3a8
-+  __TEXT.__cstring: 0xa54
-+  __TEXT.__oslogstring: 0x13b3
-   __TEXT.__objc_classname: 0x361
-   __TEXT.__objc_methname: 0x4826
-   __TEXT.__objc_methtype: 0x210d
--  __TEXT.__gcc_except_tab: 0x2cfc
--  __TEXT.__unwind_info: 0xfd0
-+  __TEXT.__gcc_except_tab: 0x2ab4
-+  __TEXT.__unwind_info: 0xfb8
-   __DATA_CONST.__const: 0x748
--  __DATA_CONST.__cfstring: 0xec0
-+  __DATA_CONST.__cfstring: 0xea0
-   __DATA_CONST.__objc_classlist: 0xd0
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 777
 +  Functions: 764
-   Symbols:   353
+
 -  CStrings:  1354
 +  CStrings:  1323
- 
 CStrings:
 - "(final)"
 - "WILL move %@ -> %s %@"

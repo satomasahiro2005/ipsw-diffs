@@ -2,47 +2,28 @@
 
 > `/System/Library/PrivateFrameworks/MultitouchSupport.framework/MultitouchSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e660` | `0x1ca58` | **`-0x1c08`** |
+| `__TEXT.__unwind_info` | `0x6c0` | `0x690` | **`-0x30`** |
+| `__TEXT.__const` | `0x2028` | `0x2008` | **`-0x20`** |
+| `__TEXT.__cstring` | `0x16b5` | `0x169d` | **`-0x18`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1e660
-+  __TEXT.__text: 0x1ca58
-   __TEXT.__objc_methlist: 0x2ec
--  __TEXT.__const: 0x2028
--  __TEXT.__cstring: 0x16b5
-+  __TEXT.__const: 0x2008
-+  __TEXT.__cstring: 0x169d
-   __TEXT.__oslogstring: 0x12b4
-   __TEXT.__tpad_act_plist: 0xe22d
--  __TEXT.__unwind_info: 0x6c0
-+  __TEXT.__unwind_info: 0x690
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-10100.39.0.0.0
++10100.40.0.0.0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 663
--  Symbols:   1431
--  CStrings:  484
+-  Symbols:   1005
+-  CStrings:  346
 +  Functions: 639
-+  Symbols:   1381
-+  CStrings:  483
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   980
++  CStrings:  345
 Symbols:
 + _MTParse_CompactV5BinaryPath
 - _MTConvert_CompactHeaderToV2Header
@@ -73,5 +54,4 @@ Symbols:
 - __Z35MTParse_CompactV10BinaryFrameHeaderP29MTCompactBinaryFrameHeaderV10P28MTParsedMultitouchFrameRep_tP10__MTDevice
 CStrings:
 - "Unknown data format %x\n"
-
 ```

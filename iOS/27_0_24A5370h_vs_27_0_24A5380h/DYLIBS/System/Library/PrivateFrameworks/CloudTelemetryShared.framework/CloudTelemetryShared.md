@@ -2,34 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/CloudTelemetryShared.framework/CloudTelemetryShared`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__unwind_info` | `0xe60` | `0xee8` | **`+0x88`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__swift_as_ret: 0x40
-   __TEXT.__swift_as_cont: 0x60
-   __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__unwind_info: 0xe60
-+  __TEXT.__unwind_info: 0xee8
-   __TEXT.__eh_frame: 0x1230
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
-
+-2721.0.0.0.0
++2722.0.0.0.0
 ```

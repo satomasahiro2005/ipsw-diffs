@@ -2,74 +2,38 @@
 
 > `/System/Library/Frameworks/SceneKit.framework/SceneKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x393ccc` | `0x3930dc` | **`-0xbf0`** |
+| `__AUTH_CONST.__objc_const` | `0x23448` | `0x23058` | **`-0x3f0`** |
+| `__TEXT.__gcc_except_tab` | `0x41dc` | `0x402c` | **`-0x1b0`** |
+| `__AUTH.__objc_data` | `0x4380` | `0x4290` | **`-0xf0`** |
+| `__TEXT.__objc_methlist` | `0x1793c` | `0x17854` | **`-0xe8`** |
+| `__TEXT.__oslogstring` | `0x167ad` | `0x166fc` | **`-0xb1`** |
+| `__DATA_CONST.__const` | `0x7aa0` | `0x7a00` | **`-0xa0`** |
+| `__AUTH_CONST.__cfstring` | `0x20ce0` | `0x20c60` | **`-0x80`** |
+| `__TEXT.__unwind_info` | `0xd508` | `0xd4b8` | **`-0x50`** |
+| `__DATA.__objc_ivar` | `0x1c94` | `0x1c5c` | **`-0x38`** |
+| `__DATA_CONST.__objc_classlist` | `0x6e0` | `0x6c8` | **`-0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x9758` | `0x9740` | **`-0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x600` | `0x5e8` | **`-0x18`** |
+| `__TEXT.__cstring` | `0x99c1b` | `0x99c1f` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -611.0.0.0.0
--  __TEXT.__text: 0x393ccc
--  __TEXT.__objc_methlist: 0x1793c
 +612.0.0.0.0
-+  __TEXT.__text: 0x3930dc
-+  __TEXT.__objc_methlist: 0x17854
-   __TEXT.__const: 0x26298
--  __TEXT.__oslogstring: 0x167ad
--  __TEXT.__cstring: 0x99c1b
--  __TEXT.__gcc_except_tab: 0x41dc
-+  __TEXT.__oslogstring: 0x166fc
-+  __TEXT.__cstring: 0x99c1f
-+  __TEXT.__gcc_except_tab: 0x402c
-   __TEXT.__ustring: 0x2e
--  __TEXT.__unwind_info: 0xd508
-+  __TEXT.__unwind_info: 0xd4b8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7aa0
--  __DATA_CONST.__objc_classlist: 0x6e0
-+  __DATA_CONST.__const: 0x7a00
-+  __DATA_CONST.__objc_classlist: 0x6c8
-   __DATA_CONST.__objc_catlist: 0xa0
-   __DATA_CONST.__objc_protolist: 0x338
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x9758
-+  __DATA_CONST.__objc_selrefs: 0x9740
-   __DATA_CONST.__objc_protorefs: 0x228
--  __DATA_CONST.__objc_superrefs: 0x600
-+  __DATA_CONST.__objc_superrefs: 0x5e8
-   __DATA_CONST.__objc_arraydata: 0x270
-   __DATA_CONST.__got: 0xc58
-   __AUTH_CONST.__const: 0x9410
--  __AUTH_CONST.__cfstring: 0x20ce0
--  __AUTH_CONST.__objc_const: 0x23448
-+  __AUTH_CONST.__cfstring: 0x20c60
-+  __AUTH_CONST.__objc_const: 0x23058
-   __AUTH_CONST.__weak_auth_got: 0x38
-   __AUTH_CONST.__objc_intobj: 0x558
-   __AUTH_CONST.__objc_arrayobj: 0xa8
 
-   __AUTH_CONST.__objc_dictobj: 0xf0
-   __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__auth_got: 0x1758
--  __AUTH.__objc_data: 0x4380
-+  __AUTH.__objc_data: 0x4290
-   __AUTH.__data: 0x4d70
--  __DATA.__objc_ivar: 0x1c94
-+  __DATA.__objc_ivar: 0x1c5c
-   __DATA.__data: 0x293c
-   __DATA.__bss: 0x2eb8
-   __DATA.__common: 0x1d1
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libxml2.2.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 19680
--  Symbols:   28275
+-  Symbols:   24517
 -  CStrings:  8045
 +  Functions: 19670
-+  Symbols:   28237
++  Symbols:   24479
 +  CStrings:  8037
- 
 Symbols:
 + -[SCNCaptureDeviceSource init]
 + -[SCNReplicatorConstraint dealloc]

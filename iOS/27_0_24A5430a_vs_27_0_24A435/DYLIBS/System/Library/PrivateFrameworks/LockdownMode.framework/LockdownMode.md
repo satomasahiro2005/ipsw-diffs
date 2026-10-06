@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/LockdownMode.framework/LockdownMode`
 
-```diff
+### Section Size Changes
 
- 128.0.8.0.0
--  __TEXT.__text: 0xd7b8
-+  __TEXT.__text: 0xd7bc
-   __TEXT.__objc_methlist: 0x3fc
-   __TEXT.__const: 0x3d4
-   __TEXT.__cstring: 0x2c6
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd7b8` | `0xd7bc` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_238f7e440 -> sub_23988b440 : 352 -> 356
 ```

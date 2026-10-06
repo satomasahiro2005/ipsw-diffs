@@ -2,74 +2,40 @@
 
 > `/System/Library/AccessibilityBundles/SpringBoard.axbundle/SpringBoard`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x399c4` | `0x38610` | **`-0x13b4`** |
+| `__AUTH_CONST.__cfstring` | `0xbde0` | `0xb940` | **`-0x4a0`** |
+| `__AUTH_CONST.__objc_const` | `0xb6f0` | `0xb270` | **`-0x480`** |
+| `__TEXT.__cstring` | `0xa83c` | `0xa401` | **`-0x43b`** |
+| `__DATA_DIRTY.__objc_data` | `0x5410` | `0x50f0` | **`-0x320`** |
+| `__TEXT.__objc_methlist` | `0x4d94` | `0x4c34` | **`-0x160`** |
+| `__AUTH.__objc_data` | `0xc30` | `0xcd0` | **`+0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x25d0` | `0x2568` | **`-0x68`** |
+| `__AUTH_CONST.__const` | `0x7d0` | `0x770` | **`-0x60`** |
+| `__DATA_CONST.__objc_classlist` | `0x9a0` | `0x960` | **`-0x40`** |
+| `__TEXT.__unwind_info` | `0x1328` | `0x12f0` | **`-0x38`** |
+| `__DATA_CONST.__got` | `0x5d8` | `0x5c0` | **`-0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x3e8` | `0x3d0` | **`-0x18`** |
+| `__DATA.__bss` | `0xe0` | `0xd0` | **`-0x10`** |
+| `__TEXT.__gcc_except_tab` | `0xa6c` | `0xa60` | **`-0xc`** |
+| `__TEXT.__const` | `0xc8` | `0xd0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3045.0.0.0.0
--  __TEXT.__text: 0x399c4
--  __TEXT.__objc_methlist: 0x4d94
 +3048.0.0.0.0
-+  __TEXT.__text: 0x38610
-+  __TEXT.__objc_methlist: 0x4c34
-   __TEXT.__dlopen_cstrs: 0x98
--  __TEXT.__const: 0xc8
--  __TEXT.__gcc_except_tab: 0xa6c
--  __TEXT.__cstring: 0xa83c
-+  __TEXT.__const: 0xd0
-+  __TEXT.__gcc_except_tab: 0xa60
-+  __TEXT.__cstring: 0xa401
-   __TEXT.__oslogstring: 0x72a
--  __TEXT.__unwind_info: 0x1328
-+  __TEXT.__unwind_info: 0x12f0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xdf0
--  __DATA_CONST.__objc_classlist: 0x9a0
-+  __DATA_CONST.__objc_classlist: 0x960
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x25d0
-+  __DATA_CONST.__objc_selrefs: 0x2568
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x3e8
-+  __DATA_CONST.__objc_superrefs: 0x3d0
-   __DATA_CONST.__objc_arraydata: 0x30
--  __DATA_CONST.__got: 0x5d8
--  __AUTH_CONST.__const: 0x7d0
--  __AUTH_CONST.__cfstring: 0xbde0
--  __AUTH_CONST.__objc_const: 0xb6f0
-+  __DATA_CONST.__got: 0x5c0
-+  __AUTH_CONST.__const: 0x770
-+  __AUTH_CONST.__cfstring: 0xb940
-+  __AUTH_CONST.__objc_const: 0xb270
-   __AUTH_CONST.__objc_intobj: 0xf0
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0xc30
-+  __AUTH.__objc_data: 0xcd0
-   __DATA.__objc_ivar: 0x68
-   __DATA.__data: 0x248
-   __DATA.__common: 0x11
--  __DATA.__bss: 0xe0
--  __DATA_DIRTY.__objc_data: 0x5410
-+  __DATA.__bss: 0xd0
-+  __DATA_DIRTY.__objc_data: 0x50f0
-   __DATA_DIRTY.__data: 0x4
-   __DATA_DIRTY.__bss: 0xb8
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1615
--  Symbols:   4763
+-  Symbols:   3875
 -  CStrings:  1674
 +  Functions: 1589
-+  Symbols:   4684
++  Symbols:   3804
 +  CStrings:  1632
- 
 Symbols:
 + +[SBChargingControllerAccessibility _accessibilityPerformValidations:]
 + +[SBChargingControllerAccessibility(SafeCategory) safeCategoryBaseClass]
@@ -151,10 +117,6 @@ Symbols:
 + ___63-[SpringBoardAccessibility takeScreenshotWithPresentationMode:]_block_invoke_2
 + ___90-[SBFluidSwitcherViewControllerAccessibility _axPostScreenChangeToFocusAppLayout:attempt:]_block_invoke
 + ___block_descriptor_56_e8_32s40w_e5_v8?0lw40l8s32l8
-+ _objc_msgSend$_axIsPresentingLibraryOrFolder
-+ _objc_msgSend$_axPostScreenChangeToFocusAppLayout:attempt:
-+ _objc_msgSend$allWindowsIncludingInternalWindows:onlyVisibleWindows:
-+ _objc_msgSend$alpha
 - +[SBMoveFloatingApplicationGestureWorkspaceTransactionAccessibility _accessibilityPerformValidations:]
 - +[SBMoveFloatingApplicationGestureWorkspaceTransactionAccessibility(SafeCategory) safeCategoryBaseClass]
 - +[SBMoveFloatingApplicationGestureWorkspaceTransactionAccessibility(SafeCategory) safeCategoryTargetClassName]
@@ -306,18 +268,6 @@ Symbols:
 - ___block_descriptor_40_e8_32w_e14_"NSArray"8?0lw32l8
 - _kVOTEventCommandActivateScreenExplorer
 - _kVOTEventCommandAskAboutScreen
-- _objc_msgSend$_accessibilitySideAppDividerElement
-- _objc_msgSend$_axDestinationAppName
-- _objc_msgSend$_axFloatingConfigurationForGestureEvent:withZeroVelocity:
-- _objc_msgSend$_axGetCurrentFloatingConfiguration
-- _objc_msgSend$_axInitialFloatingConfiguration
-- _objc_msgSend$_axSetCurrentFloatingConfiguration:
-- _objc_msgSend$_axSetFinishedFloatingConfiguration:
-- _objc_msgSend$_axSideAppDivider
-- _objc_msgSend$imageExplorerAskAboutScreenDynamicIslandActionEnabled
-- _objc_msgSend$imageExplorerScreenExplorerDynamicIslandActionEnabled
-- _objc_msgSend$setAccessibilityElementsBlock:
-- _objc_msgSend$triggerEventCommand:
 CStrings:
 + "SBAssistantSceneController"
 + "SBChargingController"

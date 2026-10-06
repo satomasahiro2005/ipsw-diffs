@@ -2,52 +2,31 @@
 
 > `/System/Library/Frameworks/CallKit.framework/CallKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x68388` | `0x68fa0` | **`+0xc18`** |
+| `__TEXT.__oslogstring` | `0x3d16` | `0x3e91` | **`+0x17b`** |
+| `__TEXT.__cstring` | `0x641a` | `0x6557` | **`+0x13d`** |
+| `__AUTH_CONST.__cfstring` | `0x43a0` | `0x4440` | **`+0xa0`** |
+| `__TEXT.__gcc_except_tab` | `0x6f8` | `0x784` | **`+0x8c`** |
+| `__DATA_CONST.__const` | `0xde0` | `0xe08` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x1e10` | `0x1e28` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
 -1406.200.62.0.0
--  __TEXT.__text: 0x659d0
 +1406.200.81.0.0
-+  __TEXT.__text: 0x665d0
-   __TEXT.__objc_methlist: 0x9324
-   __TEXT.__const: 0x130
--  __TEXT.__cstring: 0x641a
--  __TEXT.__oslogstring: 0x3d16
--  __TEXT.__gcc_except_tab: 0x6f8
--  __TEXT.__unwind_info: 0x2938
-+  __TEXT.__cstring: 0x6557
-+  __TEXT.__oslogstring: 0x3e91
-+  __TEXT.__gcc_except_tab: 0x784
-+  __TEXT.__unwind_info: 0x2968
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xde0
-+  __DATA_CONST.__const: 0xe08
-   __DATA_CONST.__objc_classlist: 0x410
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x1f0
 
-   __DATA_CONST.__objc_arraydata: 0x18
-   __DATA_CONST.__got: 0x4f0
-   __AUTH_CONST.__const: 0x560
--  __AUTH_CONST.__cfstring: 0x43a0
-+  __AUTH_CONST.__cfstring: 0x4440
-   __AUTH_CONST.__objc_const: 0xf138
-   __AUTH_CONST.__objc_intobj: 0x60
-   __AUTH_CONST.__objc_arrayobj: 0x48
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 3259
 -  Symbols:   5469
 -  CStrings:  1014
 +  Functions: 3269
 +  Symbols:   5473
 +  CStrings:  1031
- 
 Symbols:
 + GCC_except_table97
 + _OUTLINED_FUNCTION_5

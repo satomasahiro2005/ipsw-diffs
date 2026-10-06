@@ -2,26 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/DesktopServicesPriv.framework/DesktopServicesPriv`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a2c4c` | `0x1a2ca0` | **`+0x54`** |
+| `__TEXT.__gcc_except_tab` | `0x28f3c` | `0x28f44` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 1857.0.0.0.0
--  __TEXT.__text: 0x1a2c4c
-+  __TEXT.__text: 0x1a2ca0
-   __TEXT.__objc_methlist: 0x49ac
--  __TEXT.__gcc_except_tab: 0x28f3c
-+  __TEXT.__gcc_except_tab: 0x28f44
-   __TEXT.__const: 0x90a7
-   __TEXT.__cstring: 0x6f2c
-   __TEXT.__oslogstring: 0x8e12
-
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 7921
 +  Functions: 7920
-   Symbols:   13837
-   CStrings:  1924
- 
 Functions:
 ~ __ZN5TNode20IsDeferredForSymlinkEPKS_M7TFSInfoKFbvE : 548 -> 556
 ~ __ZNSt3__16vectorINS_9sub_matchIPKcEENS_9allocatorIS4_EEE6assignEmRKS4_ : 340 -> 336

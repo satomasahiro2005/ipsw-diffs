@@ -2,61 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/SignpostSupport.framework/SignpostSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x77584` | `0x78bc8` | **`+0x1644`** |
+| `__AUTH_CONST.__objc_const` | `0x16c38` | `0x17248` | **`+0x610`** |
+| `__TEXT.__cstring` | `0x1a737` | `0x1ac8f` | **`+0x558`** |
+| `__TEXT.__objc_methlist` | `0xa02c` | `0xa38c` | **`+0x360`** |
+| `__AUTH_CONST.__cfstring` | `0x1ca60` | `0x1cda0` | **`+0x340`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3b78` | `0x3cd0` | **`+0x158`** |
+| `__DATA.__objc_ivar` | `0xf30` | `0xf90` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x2540` | `0x2548` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x2604` | `0x2608` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -203.0.0.0.0
--  __TEXT.__text: 0x74dbc
--  __TEXT.__objc_methlist: 0xa02c
 +205.0.0.0.0
-+  __TEXT.__text: 0x7640c
-+  __TEXT.__objc_methlist: 0xa38c
-   __TEXT.__const: 0x19f8
--  __TEXT.__cstring: 0x1a737
-+  __TEXT.__cstring: 0x1ac8f
-   __TEXT.__oslogstring: 0xef4
--  __TEXT.__gcc_except_tab: 0x2604
-+  __TEXT.__gcc_except_tab: 0x2608
-   __TEXT.__ustring: 0x3e
--  __TEXT.__unwind_info: 0x3070
-+  __TEXT.__unwind_info: 0x30b8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3b78
-+  __DATA_CONST.__objc_selrefs: 0x3cd0
-   __DATA_CONST.__objc_superrefs: 0x488
-   __DATA_CONST.__objc_arraydata: 0x50c8
-   __DATA_CONST.__got: 0x470
-   __AUTH_CONST.__const: 0x1868
--  __AUTH_CONST.__cfstring: 0x1ca60
--  __AUTH_CONST.__objc_const: 0x16c38
-+  __AUTH_CONST.__cfstring: 0x1cda0
-+  __AUTH_CONST.__objc_const: 0x17248
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_arrayobj: 0x408
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_intobj: 0x1e0
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__objc_ivar: 0xf30
-+  __DATA.__objc_ivar: 0xf90
-   __DATA.__data: 0x1180
-   __DATA_DIRTY.__objc_data: 0x3390
-   __DATA_DIRTY.__bss: 0x18
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 4105
--  Symbols:   8824
+-  Symbols:   7286
 -  CStrings:  3920
 +  Functions: 4176
-+  Symbols:   8957
++  Symbols:   7382
 +  CStrings:  3945
- 
 Symbols:
 + -[SSPSMImmutableVMStats activeInternalCount]
 + -[SSPSMImmutableVMStats executableCount]
@@ -184,44 +156,6 @@ Symbols:
 + _OBJC_IVAR_$_SSVMStatsDeltas._purgeablePageableDelta
 + _OBJC_IVAR_$_SSVMStatsDeltas._purgeableWiredDelta
 + _OBJC_IVAR_$_SSVMStatsDeltas._realtimePageDelta
-+ _objc_msgSend$activeExternalPageCount
-+ _objc_msgSend$activeExternalPageDelta
-+ _objc_msgSend$activeExternalPageDeltaPerSecond
-+ _objc_msgSend$activeInternalCount
-+ _objc_msgSend$activeInternalPageCount
-+ _objc_msgSend$activeInternalPageDelta
-+ _objc_msgSend$activeInternalPageDeltaPerSecond
-+ _objc_msgSend$executableCount
-+ _objc_msgSend$executableCountDelta
-+ _objc_msgSend$executableCountDeltaPerSecond
-+ _objc_msgSend$inactiveExternalPageCount
-+ _objc_msgSend$inactiveExternalPageDelta
-+ _objc_msgSend$inactiveExternalPageDeltaPerSecond
-+ _objc_msgSend$inactiveInternalCount
-+ _objc_msgSend$inactiveInternalPageCount
-+ _objc_msgSend$inactiveInternalPageDelta
-+ _objc_msgSend$inactiveInternalPageDeltaPerSecond
-+ _objc_msgSend$initWithActiveCount:speculativeCount:inactiveCount:freeCount:wireCount:compressorPageCount:internalPageCount:externalPageCount:totalUncompressedPagesInCompressor:swappedCount:swapCount:pageSharedRegionCount:pageinsDelta:executableCount:purgeablePageableCount:purgeableWiredCount:activeInternalCount:inactiveInternalCount:realtimeCount:
-+ _objc_msgSend$pageinsDelta
-+ _objc_msgSend$pageinsIntervalDelta
-+ _objc_msgSend$pageinsPerSecond
-+ _objc_msgSend$purgeablePageableCount
-+ _objc_msgSend$purgeablePageableDelta
-+ _objc_msgSend$purgeablePageableDeltaPerSecond
-+ _objc_msgSend$purgeableWiredCount
-+ _objc_msgSend$purgeableWiredDelta
-+ _objc_msgSend$purgeableWiredDeltaPerSecond
-+ _objc_msgSend$realtimeCount
-+ _objc_msgSend$realtimePageCount
-+ _objc_msgSend$realtimePageDelta
-+ _objc_msgSend$realtimePageDeltaPerSecond
-+ _objc_msgSend$setActiveInternalCount:
-+ _objc_msgSend$setExecutableCount:
-+ _objc_msgSend$setInactiveInternalCount:
-+ _objc_msgSend$setPageinsDelta:
-+ _objc_msgSend$setPurgeablePageableCount:
-+ _objc_msgSend$setPurgeableWiredCount:
-+ _objc_msgSend$setRealtimeCount:
 - -[SSPSMMutableVMStats initWithActiveCount:speculativeCount:inactiveCount:freeCount:wireCount:compressorPageCount:internalPageCount:externalPageCount:totalUncompressedPagesInCompressor:swappedCount:swapCount:pageSharedRegionCount:]
 - -[SSPSMVMStats initWithActiveCount:speculativeCount:inactiveCount:freeCount:wireCount:compressorPageCount:internalPageCount:externalPageCount:totalUncompressedPagesInCompressor:swappedCount:swapCount:pageSharedRegionCount:]
 - GCC_except_table127
@@ -252,7 +186,6 @@ Symbols:
 - GCC_except_table367
 - GCC_except_table387
 - GCC_except_table88
-- _objc_msgSend$initWithActiveCount:speculativeCount:inactiveCount:freeCount:wireCount:compressorPageCount:internalPageCount:externalPageCount:totalUncompressedPagesInCompressor:swappedCount:swapCount:pageSharedRegionCount:
 CStrings:
 + "Active:                      %lld pages (%.1f/s)\nSpeculative:                 %lld pages (%.1f/s)\nInactive:                    %lld pages (%.1f/s)\nFree:                        %lld pages (%.1f/s)\nWired:                       %lld pages (%.1f/s)\nCompressor:                  %lld pages (%.1f/s)\nInternal:                    %lld pages (%.1f/s)\nExternal:                    %lld pages (%.1f/s)\nUncompressed-in-compressor:  %lld pages (%.1f/s)\nCompressed-in-core:          %lld pages (%.1f/s)\nSwapped:                     %lld pages (%.1f/s)\nSwap:                        %lld pages (%.1f/s)\nShared region:               %lld pages (%.1f/s)\nExecutable:                  %lld pages (%.1f/s)\nPurgeable pageable:          %lld pages (%.1f/s)\nPurgeable wired:             %lld pages (%.1f/s)\nActive internal:             %lld pages (%.1f/s)\nInactive internal:           %lld pages (%.1f/s)\nRealtime:                    %lld pages (%.1f/s)\nActive external:      %lld pages (%.1f/s)\nInactive external:    %lld pages (%.1f/s)"
 + "Active:                      %u pages\nSpeculative:                 %u pages\nInactive:                    %u pages\nFree:                        %u pages\nWired:                       %u pages\nCompressor:                  %u pages\nInternal:                    %u pages\nExternal:                    %u pages\nUncompressed-in-compressor:  %u pages\nCompressed-in-core:          %u pages\nSwapped:                     %u pages\nSwap:                        %u pages\nShared region:               %u pages\nPageins (per-interval):      %u pages (%.1f/s)\nExecutable:                  %u pages\nPurgeable pageable:          %u pages\nPurgeable wired:             %u pages\nActive internal:             %u pages\nInactive internal:           %u pages\nRealtime:                    %u pages\nActive external:      %u pages\nInactive external:    %u pages"

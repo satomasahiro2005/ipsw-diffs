@@ -1,4 +1,4 @@
-## ExclaveOS — NEW (36)
+## ExclaveOS — NEW (45)
 
 - `/System/ExclaveKit/System/Library/Frameworks/AppleCameraT8160_IR_ISP_EK_Component.framework/Info.plist`
 - `/System/ExclaveKit/System/Library/Frameworks/AppleCameraT8160_IR_ISP_EK_Component.framework/_CodeSignature/CodeResources`
@@ -10,14 +10,23 @@
 - `/System/ExclaveKit/System/Library/PrivateFrameworks/AppleCameraT8160_ExclaveISPSharedLib_exclavekit.framework/_CodeSignature/CodeResources`
 - `/System/ExclaveKit/System/Library/PrivateFrameworks/AtlantisProxTrustedFDR.framework/Info.plist`
 - `/System/ExclaveKit/System/Library/PrivateFrameworks/AtlantisProxTrustedFDR.framework/_CodeSignature/CodeResources`
+- `/System/ExclaveKit/System/Library/PrivateFrameworks/FaceIDCoreLib_exclavekit.framework/models/D9X.bundle/attention_detection_ir.bundle/H17.bundle/attention_detection_ir.H17.hwx`
 - `/System/ExclaveKit/System/Library/PrivateFrameworks/FaceIDCoreLib_exclavekit.framework/models/D9X.bundle/attention_detection_ir.bundle/version.txt`
+- `/System/ExclaveKit/System/Library/PrivateFrameworks/FaceIDCoreLib_exclavekit.framework/models/D9X.bundle/attention_detection_rgb.bundle/H17.bundle/attention_detection_rgb.H17.hwx`
 - `/System/ExclaveKit/System/Library/PrivateFrameworks/FaceIDCoreLib_exclavekit.framework/models/D9X.bundle/attention_detection_rgb.bundle/version.txt`
+- `/System/ExclaveKit/System/Library/PrivateFrameworks/FaceIDCoreLib_exclavekit.framework/models/D9X.bundle/backlit_sun_classifier.bundle/H17.bundle/backlit_sun_classifier.H17.hwx`
 - `/System/ExclaveKit/System/Library/PrivateFrameworks/FaceIDCoreLib_exclavekit.framework/models/D9X.bundle/backlit_sun_classifier.bundle/version.txt`
+- `/System/ExclaveKit/System/Library/PrivateFrameworks/FaceIDCoreLib_exclavekit.framework/models/D9X.bundle/face_detection_ir.bundle/H17.bundle/face_detection_ir.H17.hwx`
 - `/System/ExclaveKit/System/Library/PrivateFrameworks/FaceIDCoreLib_exclavekit.framework/models/D9X.bundle/face_detection_ir.bundle/version.txt`
+- `/System/ExclaveKit/System/Library/PrivateFrameworks/FaceIDCoreLib_exclavekit.framework/models/D9X.bundle/face_detection_rgb.bundle/H17.bundle/face_detection_rgb.H17.hwx`
 - `/System/ExclaveKit/System/Library/PrivateFrameworks/FaceIDCoreLib_exclavekit.framework/models/D9X.bundle/face_detection_rgb.bundle/version.txt`
+- `/System/ExclaveKit/System/Library/PrivateFrameworks/FaceIDCoreLib_exclavekit.framework/models/D9X.bundle/glasses_classifier.bundle/H17.bundle/glasses_classifier.H17.hwx`
 - `/System/ExclaveKit/System/Library/PrivateFrameworks/FaceIDCoreLib_exclavekit.framework/models/D9X.bundle/glasses_classifier.bundle/version.txt`
+- `/System/ExclaveKit/System/Library/PrivateFrameworks/FaceIDCoreLib_exclavekit.framework/models/D9X.bundle/glasswingnet.bundle/H17.bundle/glasswingnet.H17.hwx`
 - `/System/ExclaveKit/System/Library/PrivateFrameworks/FaceIDCoreLib_exclavekit.framework/models/D9X.bundle/glasswingnet.bundle/version.txt`
+- `/System/ExclaveKit/System/Library/PrivateFrameworks/FaceIDCoreLib_exclavekit.framework/models/D9X.bundle/landmark_semantic_face.bundle/H17.bundle/landmark_semantic_face.H17.hwx`
 - `/System/ExclaveKit/System/Library/PrivateFrameworks/FaceIDCoreLib_exclavekit.framework/models/D9X.bundle/landmark_semantic_face.bundle/version.txt`
+- `/System/ExclaveKit/System/Library/PrivateFrameworks/FaceIDCoreLib_exclavekit.framework/models/D9X.bundle/obstruction_detection.bundle/H17.bundle/obstruction_detection.H17.hwx`
 - `/System/ExclaveKit/System/Library/PrivateFrameworks/FaceIDCoreLib_exclavekit.framework/models/D9X.bundle/obstruction_detection.bundle/version.txt`
 - `/System/ExclaveKit/System/Library/PrivateFrameworks/FaceIDCoreLib_exclavekit.framework/models/V6X.bundle/attention_detection_ir.bundle/version.txt`
 - `/System/ExclaveKit/System/Library/PrivateFrameworks/FaceIDCoreLib_exclavekit.framework/models/V6X.bundle/attention_detection_rgb.bundle/version.txt`

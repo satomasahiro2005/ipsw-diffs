@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/AccessoryNotifications.framework/AccessoryNotifications`
 
-```diff
+### Section Size Changes
 
- 720.0.0.0.0
--  __TEXT.__text: 0x60c98
-+  __TEXT.__text: 0x60cd8
-   __TEXT.__objc_methlist: 0x1b4
-   __TEXT.__const: 0x96bc
-   __TEXT.__constg_swiftt: 0x18ac
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x60c98` | `0x60cd8` | **`+0x40`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_220dd8358 -> sub_2215cb358 : 1376 -> 1368
 ~ sub_220e14f3c -> sub_221607f34 : 352 -> 356

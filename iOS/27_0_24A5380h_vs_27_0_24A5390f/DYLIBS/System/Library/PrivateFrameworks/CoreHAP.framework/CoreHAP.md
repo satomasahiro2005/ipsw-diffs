@@ -2,114 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/CoreHAP.framework/CoreHAP`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_floatobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH.__thread_vars`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2ab5a4` | `0x2af29c` | **`+0x3cf8`** |
+| `__TEXT.__oslogstring` | `0x43aea` | `0x450b2` | **`+0x15c8`** |
+| `__AUTH_CONST.__objc_const` | `0x2afd0` | `0x2b280` | **`+0x2b0`** |
+| `__TEXT.__objc_methlist` | `0x18ad8` | `0x18c98` | **`+0x1c0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8218` | `0x8338` | **`+0x120`** |
+| `__TEXT.__cstring` | `0x14599` | `0x146a9` | **`+0x110`** |
+| `__AUTH.__objc_data` | `0x72e8` | `0x73b8` | **`+0xd0`** |
+| `__TEXT.__eh_frame` | `0x1000` | `0x1080` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x7768` | `0x77d8` | **`+0x70`** |
+| `__AUTH_CONST.__cfstring` | `0x10020` | `0x10080` | **`+0x60`** |
+| `__AUTH_CONST.__const` | `0x1448` | `0x1498` | **`+0x50`** |
+| `__TEXT.__swift5_reflstr` | `0x424` | `0x474` | **`+0x50`** |
+| `__TEXT.__constg_swiftt` | `0x918` | `0x960` | **`+0x48`** |
+| `__AUTH.__data` | `0x80` | `0xb0` | **`+0x30`** |
+| `__DATA.__data` | `0x2d72` | `0x2da2` | **`+0x30`** |
+| `__DATA.__objc_ivar` | `0x18fc` | `0x1924` | **`+0x28`** |
+| `__TEXT.__swift5_fieldmd` | `0x3cc` | `0x3f0` | **`+0x24`** |
+| `__TEXT.__gcc_except_tab` | `0x5ee8` | `0x5f00` | **`+0x18`** |
+| `__TEXT.__swift5_capture` | `0x278` | `0x288` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1338` | `0x1340` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x1028` | `0x1030` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0xc18` | `0xc20` | **`+0x8`** |
+| `__TEXT.__const` | `0x1230` | `0x1238` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -1484.2.0.0.0
--  __TEXT.__text: 0x2ab5a4
--  __TEXT.__objc_methlist: 0x18ad8
--  __TEXT.__const: 0x1230
 +1490.2.0.1.1
-+  __TEXT.__text: 0x2af29c
-+  __TEXT.__objc_methlist: 0x18c98
-+  __TEXT.__const: 0x1238
-   __TEXT.__dlopen_cstrs: 0x4e
--  __TEXT.__constg_swiftt: 0x918
-+  __TEXT.__constg_swiftt: 0x960
-   __TEXT.__swift5_typeref: 0x3e4
-   __TEXT.__swift5_builtin: 0x50
--  __TEXT.__swift5_reflstr: 0x424
--  __TEXT.__swift5_fieldmd: 0x3cc
-+  __TEXT.__swift5_reflstr: 0x474
-+  __TEXT.__swift5_fieldmd: 0x3f0
-   __TEXT.__swift5_assocty: 0xc0
-   __TEXT.__swift5_proto: 0x50
-   __TEXT.__swift5_types: 0x30
--  __TEXT.__cstring: 0x14599
--  __TEXT.__oslogstring: 0x43aea
--  __TEXT.__swift5_capture: 0x278
--  __TEXT.__gcc_except_tab: 0x5ee8
--  __TEXT.__unwind_info: 0x7768
--  __TEXT.__eh_frame: 0x1000
-+  __TEXT.__cstring: 0x146a9
-+  __TEXT.__oslogstring: 0x450b2
-+  __TEXT.__swift5_capture: 0x288
-+  __TEXT.__gcc_except_tab: 0x5f00
-+  __TEXT.__unwind_info: 0x77d8
-+  __TEXT.__eh_frame: 0x1080
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x59c0
--  __DATA_CONST.__objc_classlist: 0xc18
-+  __DATA_CONST.__objc_classlist: 0xc20
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x3b0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8218
-+  __DATA_CONST.__objc_selrefs: 0x8338
-   __DATA_CONST.__objc_protorefs: 0x100
-   __DATA_CONST.__objc_superrefs: 0xa68
-   __DATA_CONST.__objc_arraydata: 0x200
--  __DATA_CONST.__got: 0x1028
--  __AUTH_CONST.__const: 0x1448
--  __AUTH_CONST.__cfstring: 0x10020
--  __AUTH_CONST.__objc_const: 0x2afd0
-+  __DATA_CONST.__got: 0x1030
-+  __AUTH_CONST.__const: 0x1498
-+  __AUTH_CONST.__cfstring: 0x10080
-+  __AUTH_CONST.__objc_const: 0x2b280
-   __AUTH_CONST.__objc_intobj: 0x738
-   __AUTH_CONST.__objc_floatobj: 0x20
-   __AUTH_CONST.__objc_doubleobj: 0x40
-   __AUTH_CONST.__objc_arrayobj: 0xc0
--  __AUTH_CONST.__auth_got: 0x1338
--  __AUTH.__objc_data: 0x72e8
--  __AUTH.__data: 0x80
-+  __AUTH_CONST.__auth_got: 0x1340
-+  __AUTH.__objc_data: 0x73b8
-+  __AUTH.__data: 0xb0
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x28
--  __DATA.__objc_ivar: 0x18fc
--  __DATA.__data: 0x2d72
-+  __DATA.__objc_ivar: 0x1924
-+  __DATA.__data: 0x2da2
-   __DATA.__crash_info: 0x148
-   __DATA.__bss: 0xee0
-   __DATA.__common: 0x8
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9807
--  Symbols:   20135
+-  Symbols:   16467
 -  CStrings:  7087
 +  Functions: 9858
-+  Symbols:   20215
++  Symbols:   16520
 +  CStrings:  7178
- 
 Symbols:
 + -[HAP2Diagnostics notifyOperationTimeoutWithOperationName:]
 + -[HAPAccessoryServerBrowserNFC _logPrewarmTransition:]
@@ -643,35 +576,6 @@ Symbols:
 + ___73-[HAPAccessoryServerBrowserNFC startPrewarmDiscoveringNFCAccessoryServer]_block_invoke
 + ___74-[HAPAccessoryServerNFC pairSetupSessionDidEstablishSessionPendingCommit:]_block_invoke
 + ___swift_closure_destructor.181Tm
-+ _objc_msgSend$_abandonPreparedPairing
-+ _objc_msgSend$_logPrewarmTransition:
-+ _objc_msgSend$_pairingWorkElapsed
-+ _objc_msgSend$_prepareForPairing
-+ _objc_msgSend$_reapPrewarmServerIfNeeded
-+ _objc_msgSend$_rearmPrewarmAfterFailureEdge
-+ _objc_msgSend$failureReported
-+ _objc_msgSend$hap2DiagnosticsDidObserveOperationTimeoutWithOperationName:
-+ _objc_msgSend$isPrewarming
-+ _objc_msgSend$localizedDescription
-+ _objc_msgSend$nfcLastStepWorkElapsed
-+ _objc_msgSend$nfcPairingIdleAccumulated
-+ _objc_msgSend$nfcPauseStartTime
-+ _objc_msgSend$notifyOperationTimeoutWithOperationName:
-+ _objc_msgSend$pairSetupSessionDidEstablishSessionPendingCommit:
-+ _objc_msgSend$preparingPairing
-+ _objc_msgSend$prewarmRearmCount
-+ _objc_msgSend$proceedWithCommit
-+ _objc_msgSend$searching
-+ _objc_msgSend$setFailureReported:
-+ _objc_msgSend$setNfcLastStepWorkElapsed:
-+ _objc_msgSend$setNfcPairingIdleAccumulated:
-+ _objc_msgSend$setNfcPauseStartTime:
-+ _objc_msgSend$setPausesBeforeCommit:
-+ _objc_msgSend$setPreparedPendingCommit:
-+ _objc_msgSend$setPreparingPairing:
-+ _objc_msgSend$setPrewarmRearmCount:
-+ _objc_msgSend$setPrewarming:
-+ _objc_msgSend$setSearching:
 + _objc_retain_x10
 - -[HAPAccessoryServerNFC nfcLastStepTime]
 - -[HAPAccessoryServerNFC setNfcLastStepTime:]
@@ -1153,8 +1057,6 @@ Symbols:
 - GCC_except_table965
 - _OBJC_IVAR_$_HAPAccessoryServerNFC._nfcLastStepTime
 - ___swift_closure_destructor.173Tm
-- _objc_msgSend$nfcLastStepTime
-- _objc_msgSend$setNfcLastStepTime:
 CStrings:
 + "AID selected (pre-warm)"
 + "Abandoning pre-warmed pair-setup (non-fatal, pre-consent)"

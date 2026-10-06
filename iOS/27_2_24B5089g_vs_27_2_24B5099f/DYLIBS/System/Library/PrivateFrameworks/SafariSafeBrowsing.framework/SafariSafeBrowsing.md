@@ -2,17 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/SafariSafeBrowsing.framework/SafariSafeBrowsing`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x81d98` | `0x81dac` | **`+0x14`** |
+
+### Other Changes
+
 ```diff
 
 -625.2.5.10.1
--  __TEXT.__text: 0x7f950
 +625.2.7.1.0
-+  __TEXT.__text: 0x7f964
-   __TEXT.__objc_methlist: 0xf74
-   __TEXT.__gcc_except_tab: 0x8920
-   __TEXT.__cstring: 0x1f83
 Functions:
-~ sub_2963b768c -> sub_295ff368c : 1732 -> 1736
-~ sub_2963bb440 -> sub_295ff7444 : 108 -> 112
-~ sub_2963bb7f0 -> sub_295ff77f8 : 260 -> 272
+~ sub_299b21498 -> sub_2997da498 : 1744 -> 1748
+~ sub_299b2564c -> sub_2997de650 : 108 -> 112
+~ sub_299b25a0c -> sub_2997dea14 : 260 -> 272
 ```

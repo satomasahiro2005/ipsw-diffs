@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ManagedBackgroundAssetsHelper.framework/ManagedBackgroundAssetsHelper`
 
-```diff
+### Section Size Changes
 
- 2.0.35.1.0
--  __TEXT.__text: 0x1bb0fc
-+  __TEXT.__text: 0x1bb160
-   __TEXT.__objc_methlist: 0x1e4
-   __TEXT.__const: 0x14cb0
-   __TEXT.__constg_swiftt: 0x30b8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1bb0fc` | `0x1bb160` | **`+0x64`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_2145841e0 -> sub_214d621e0 : 352 -> 356
 ~ sub_214584a0c -> sub_214d62a10 : 512 -> 516

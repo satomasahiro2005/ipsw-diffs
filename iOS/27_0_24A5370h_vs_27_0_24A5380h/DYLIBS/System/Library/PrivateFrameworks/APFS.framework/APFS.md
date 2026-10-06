@@ -2,43 +2,24 @@
 
 > `/System/Library/PrivateFrameworks/APFS.framework/APFS`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x53c24` | `0x53f5c` | **`+0x338`** |
+| `__AUTH.__data` | `—` | `0x148` | **`+0x148`** |
+| `__DATA_DIRTY.__data` | `0x148` | `—` | **`-0x148`** |
+| `__TEXT.__cstring` | `0xe653` | `0xe776` | **`+0x123`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x53c24
-+  __TEXT.__text: 0x53f5c
-   __TEXT.__const: 0x8540
--  __TEXT.__cstring: 0xe653
-+  __TEXT.__cstring: 0xe776
-   __TEXT.__oslogstring: 0x11b8
-   __TEXT.__gcc_except_tab: 0x1c
-   __TEXT.__unwind_info: 0x9e0
+-3283.0.0.0.0
++3283.0.9.502.1
 
-   __AUTH_CONST.__cfstring: 0x1360
-   __AUTH_CONST.__weak_auth_got: 0x8
-   __AUTH_CONST.__auth_got: 0x638
-+  __AUTH.__data: 0x148
-   __DATA.__data: 0x9c
-   __DATA.__bss: 0x40
-   __DATA.__common: 0x418
--  __DATA_DIRTY.__data: 0x148
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-   - /usr/lib/libSystem.B.dylib
-
-   - /usr/lib/libutil.dylib
-   Functions: 901
-   Symbols:   1977
--  CStrings:  1549
-+  CStrings:  1554
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA.__data : content changed
+-  CStrings:  1395
++  CStrings:  1400
 Functions:
 ~ _omap_reap : 5244 -> 5360
 ~ _btree_node_compact : 1208 -> 1364
@@ -72,5 +53,4 @@ CStrings:
 - "%s:%d: %s failed to create bitmap object %lld: %d\n"
 - "%s:%d: %s failed to free internal pool block %lld: %d\n"
 - "3283"
-
 ```

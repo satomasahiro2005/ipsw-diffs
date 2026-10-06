@@ -2,112 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/ScreenReaderOutput.framework/ScreenReaderOutput`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x1260` | `0x2070` | **`+0xe10`** |
+| `__DATA_DIRTY.__objc_data` | `0xe10` | `—` | **`-0xe10`** |
+| `__TEXT.__text` | `0x9b508` | `0x9c314` | **`+0xe0c`** |
+| `__TEXT.__oslogstring` | `0x2763` | `0x287d` | **`+0x11a`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4678` | `0x4728` | **`+0xb0`** |
+| `__DATA.__data` | `0x1680` | `0x16e0` | **`+0x60`** |
+| `__DATA_CONST.__got` | `0x730` | `0x790` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x11f8` | `0x1248` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x8f70` | `0x8fc0` | **`+0x50`** |
+| `__AUTH_CONST.__objc_const` | `0xbc18` | `0xbbe0` | **`-0x38`** |
+| `__TEXT.__gcc_except_tab` | `0x1900` | `0x192c` | **`+0x2c`** |
+| `__TEXT.__unwind_info` | `0x2880` | `0x28a8` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x5480` | `0x5460` | **`-0x20`** |
+| `__AUTH_CONST.__const` | `0x3280` | `0x32a0` | **`+0x20`** |
+| `__TEXT.__const` | `0x182c` | `0x184c` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x59e1` | `0x59c1` | **`-0x20`** |
+| `__DATA_CONST.__objc_protolist` | `0x138` | `0x140` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x8c0` | `0x8bc` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x9b508
--  __TEXT.__objc_methlist: 0x8f70
--  __TEXT.__const: 0x182c
--  __TEXT.__cstring: 0x59e1
-+  __TEXT.__text: 0x9c314
-+  __TEXT.__objc_methlist: 0x8fc0
-+  __TEXT.__const: 0x184c
-+  __TEXT.__cstring: 0x59c1
-   __TEXT.__swift5_typeref: 0xeec
-   __TEXT.__constg_swiftt: 0x960
-   __TEXT.__swift5_builtin: 0xb4
-   __TEXT.__swift5_types: 0xa4
--  __TEXT.__oslogstring: 0x2763
-+  __TEXT.__oslogstring: 0x287d
-   __TEXT.__swift5_reflstr: 0x605
-   __TEXT.__swift5_assocty: 0x78
-   __TEXT.__swift5_fieldmd: 0x7f8
+-458.0.0.0.0
++460.0.0.0.0
 
-   __TEXT.__swift_as_ret: 0x5c
-   __TEXT.__swift_as_cont: 0x9c
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__gcc_except_tab: 0x1900
-+  __TEXT.__gcc_except_tab: 0x192c
-   __TEXT.__ustring: 0x9e
--  __TEXT.__unwind_info: 0x2880
-+  __TEXT.__unwind_info: 0x28a8
-   __TEXT.__eh_frame: 0xa30
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x11f8
-+  __DATA_CONST.__const: 0x1248
-   __DATA_CONST.__objc_classlist: 0x328
-   __DATA_CONST.__objc_catlist: 0x28
--  __DATA_CONST.__objc_protolist: 0x138
-+  __DATA_CONST.__objc_protolist: 0x140
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4678
-+  __DATA_CONST.__objc_selrefs: 0x4728
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_superrefs: 0x210
-   __DATA_CONST.__objc_arraydata: 0x380
--  __DATA_CONST.__got: 0x730
--  __AUTH_CONST.__const: 0x3280
--  __AUTH_CONST.__cfstring: 0x5480
--  __AUTH_CONST.__objc_const: 0xbc18
-+  __DATA_CONST.__got: 0x790
-+  __AUTH_CONST.__const: 0x32a0
-+  __AUTH_CONST.__cfstring: 0x5460
-+  __AUTH_CONST.__objc_const: 0xbbe0
-   __AUTH_CONST.__objc_intobj: 0xa38
-   __AUTH_CONST.__objc_dictobj: 0xa0
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__auth_got: 0x1098
--  __AUTH.__objc_data: 0x1260
-+  __AUTH.__objc_data: 0x2070
-   __AUTH.__data: 0xc40
--  __DATA.__objc_ivar: 0x8c0
--  __DATA.__data: 0x1680
-+  __DATA.__objc_ivar: 0x8bc
-+  __DATA.__data: 0x16e0
-   __DATA.__bss: 0x1208
-   __DATA.__common: 0x20
--  __DATA_DIRTY.__objc_data: 0xe10
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3959
--  Symbols:   11239
--  CStrings:  1697
+-  Symbols:   5746
+-  CStrings:  1057
 +  Functions: 3967
-+  Symbols:   11289
-+  CStrings:  1698
- 
-Sections:
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH.__data : content changed
++  Symbols:   5758
++  CStrings:  1059
 Symbols:
 + -[SCROBrailleClientXPC _handleXPCInvalidationForConnection:]
 + -[SCROBrailleDisplay _cancelThrottledFlushTimer]
@@ -230,39 +160,6 @@ Symbols:
 + ___block_descriptor_48_e8_32w40w_e5_v8?0lw32l8w40l8
 + ___block_descriptor_56_e8_32s40s48w_e5_v8?0ls32l8w48l8s40l8
 + __throttledFlushTimerHandler
-+ _objc_msgSend$_cancelThrottledFlushTimer
-+ _objc_msgSend$_connection
-+ _objc_msgSend$_flushOrDeferThrottledWrite
-+ _objc_msgSend$_handleWriteResult:cellsData:
-+ _objc_msgSend$_handleXPCInvalidationForConnection:
-+ _objc_msgSend$_scheduleThrottledFlushTimer:
-+ _objc_msgSend$_throttledFlushTimerFired
-+ _objc_msgSend$_updateWithWindow:isMainWindow:
-+ _objc_msgSend$activate
-+ _objc_msgSend$brailleAccessAppOpenCounts
-+ _objc_msgSend$cancelAlert
-+ _objc_msgSend$currentImage
-+ _objc_msgSend$date
-+ _objc_msgSend$hasAlert
-+ _objc_msgSend$incrementBrailleAccessOpenCountForApp:
-+ _objc_msgSend$incrementBrailleConnectSuccessCount
-+ _objc_msgSend$incrementBraillePanCount
-+ _objc_msgSend$incrementBrailleRoutingKeyCount
-+ _objc_msgSend$initWithBlock:
-+ _objc_msgSend$initWithRows:cols:subWindow:
-+ _objc_msgSend$recordConnectionTimestampForDisplayMatchingConfiguration:
-+ _objc_msgSend$routingKeyHitTestAtCellIndex:elementToken:isTextLine:brailleOffset:printTextOffset:statusCellIndex:shouldPerformActions:routerClickCount:
-+ _objc_msgSend$setBrailleAccessAppOpenCounts:
-+ _objc_msgSend$setElementToken:
-+ _objc_msgSend$setVoiceOverBrailleConnectSuccessCount:
-+ _objc_msgSend$setVoiceOverBrailleDisplayLastConnectedTimestamps:
-+ _objc_msgSend$setVoiceOverBraillePanCount:
-+ _objc_msgSend$setVoiceOverBrailleRoutingKeyCount:
-+ _objc_msgSend$subWindow
-+ _objc_msgSend$voiceOverBrailleConnectSuccessCount
-+ _objc_msgSend$voiceOverBrailleDisplayLastConnectedTimestamps
-+ _objc_msgSend$voiceOverBraillePanCount
-+ _objc_msgSend$voiceOverBrailleRoutingKeyCount
 - -[SCROBrailleClientXPC _handleXPCInvalidation]
 - -[SCROScriptClient _isReady]
 - -[SCROScriptClient _killConnection]
@@ -372,12 +269,6 @@ Symbols:
 - ___51-[SCROScriptClient _runAsyncWithConnection:object:]_block_invoke
 - ___block_descriptor_48_e8_32s40w_e5_v8?0ls32l8w40l8
 - ___block_descriptor_52_e8_32s40s_e5_v8?0ls32l8s40l8
-- _objc_msgSend$_handleXPCInvalidation
-- _objc_msgSend$_isReady
-- _objc_msgSend$_runAsyncWithConnection:object:
-- _objc_msgSend$_scriptDispatchQueue
-- _objc_msgSend$initWithRows:cols:
-- _objc_msgSend$routingKeyHitTestAtCellIndex:elementToken:isTextLine:brailleOffset:printTextOffset:statusCellIndex:shouldPerformActions:
 CStrings:
 + "Error: Exception while handling braille throttled flush timer: %@"
 + "SCROScriptClient XPC connection interrupted"
@@ -399,5 +290,4 @@ CStrings:
 - "XPC connection invalidated"
 - "file"
 - "identifier"
-
 ```

@@ -2,38 +2,28 @@
 
 > `com.apple.driver.AppleH16CameraInterface`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x9b0ac` | `0x9cd20` | **`+0x1c74`** |
+| `__TEXT.__cstring` | `0x19947` | `0x19f97` | **`+0x650`** |
+| `__TEXT.__os_log` | `0x15914` | `0x15bb4` | **`+0x2a0`** |
+| `__DATA_CONST.__const` | `0x19770` | `0x197d0` | **`+0x60`** |
+| `__TEXT_EXEC.__auth_stubs` | `0x10d0` | `0x10e0` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x868` | `0x870` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -6.14.1.0.0
-+6.18.0.0.0
-   __TEXT.__const: 0xa1b0
--  __TEXT.__cstring: 0x19947
--  __TEXT.__os_log: 0x15914
--  __TEXT_EXEC.__text: 0x9b0ac
--  __TEXT_EXEC.__auth_stubs: 0x10d0
-+  __TEXT.__cstring: 0x19f97
-+  __TEXT.__os_log: 0x15bb4
-+  __TEXT_EXEC.__text: 0x9cd20
-+  __TEXT_EXEC.__auth_stubs: 0x10e0
-   __DATA.__data: 0x2a8
-   __DATA.__common: 0x4f0
-   __DATA.__bss: 0x1f8
-   __DATA_CONST.__mod_init_func: 0x90
-   __DATA_CONST.__mod_term_func: 0x50
--  __DATA_CONST.__const: 0x19770
-+  __DATA_CONST.__const: 0x197d0
-   __DATA_CONST.__kalloc_type: 0x1200
-   __DATA_CONST.__kalloc_var: 0xa50
--  __DATA_CONST.__auth_got: 0x868
-+  __DATA_CONST.__auth_got: 0x870
-   __DATA_CONST.__got: 0x1d0
-   __DATA_CONST.__auth_ptr: 0x18
 -  Functions: 1818
++6.18.0.0.0
 +  Functions: 1822
-   Symbols:   0
+
 -  CStrings:  2338
 +  CStrings:  2398
- 
 CStrings:
 + "            ... ISP only crashlogs when it panics.\n"
 + "\"AppleH16CamIn::%s - CISP_CMDCH_ERROR_NOTIFICAITON_ERROR_SOURCE_ASYNCH_ERROR, L2C_ERR_STS(0x%x), L2C_ERR_ADR(0x%x), L2C_ERR_INF(0x%x), \t\t\t\t  MMU_ERR_STS(0x%x), LSU_ERR_STS(0x%x), LSU_ERR_CTL(0x%x), FED_ERR_STS(0x%x), FED_ERR_CTL(0x%x)\\n\" @%s:%d"

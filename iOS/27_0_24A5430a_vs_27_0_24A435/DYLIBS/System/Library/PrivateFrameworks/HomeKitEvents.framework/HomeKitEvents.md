@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/HomeKitEvents.framework/HomeKitEvents`
 
-```diff
+### Section Size Changes
 
- 1493.1.5.1.1
--  __TEXT.__text: 0x163938
-+  __TEXT.__text: 0x163978
-   __TEXT.__objc_methlist: 0x49c
-   __TEXT.__const: 0x18658
-   __TEXT.__constg_swiftt: 0x45f0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x163938` | `0x163978` | **`+0x40`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_22fd203a8 -> sub_2332df3a8 : 1204 -> 1212
 ~ sub_22fd231ac -> sub_2332e21b4 : 1508 -> 1512

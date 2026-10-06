@@ -2,60 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/FeedbackLogger.framework/FeedbackLogger`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1d25c` | `0x1d750` | **`+0x4f4`** |
+| `__TEXT.__oslogstring` | `0x1cfe` | `0x1dd7` | **`+0xd9`** |
+| `__TEXT.__unwind_info` | `0xa30` | `0xa80` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x260` | `0x2a4` | **`+0x44`** |
+| `__AUTH_CONST.__auth_got` | `0x880` | `0x8a8` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x428` | `0x450` | **`+0x28`** |
+| `__TEXT.__const` | `0x14a0` | `0x14c0` | **`+0x20`** |
+
+### Other Changes
+
 ```diff
 
 -3600.56.21.0.0
--  __TEXT.__text: 0x1d25c
 +3600.56.26.0.0
-+  __TEXT.__text: 0x1d750
-   __TEXT.__objc_methlist: 0x11fc
--  __TEXT.__const: 0x14a0
-+  __TEXT.__const: 0x14c0
-   __TEXT.__swift5_typeref: 0x4e7
-   __TEXT.__swift5_fieldmd: 0x3f4
-   __TEXT.__constg_swiftt: 0x288
 
-   __TEXT.__swift5_types: 0x38
-   __TEXT.__swift5_reflstr: 0x2fd
-   __TEXT.__swift5_capture: 0xec
--  __TEXT.__oslogstring: 0x1cfe
-+  __TEXT.__oslogstring: 0x1dd7
-   __TEXT.__swift5_assocty: 0xc0
--  __TEXT.__gcc_except_tab: 0x260
--  __TEXT.__unwind_info: 0xa30
-+  __TEXT.__gcc_except_tab: 0x2a4
-+  __TEXT.__unwind_info: 0xa80
-   __TEXT.__eh_frame: 0x538
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x428
-+  __DATA_CONST.__const: 0x450
-   __DATA_CONST.__objc_classlist: 0x78
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x28
-
-   __AUTH_CONST.__objc_intobj: 0xc0
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_arrayobj: 0x30
--  __AUTH_CONST.__auth_got: 0x880
-+  __AUTH_CONST.__auth_got: 0x8a8
-   __AUTH.__objc_data: 0x168
-   __AUTH.__data: 0x3d0
-   __DATA.__objc_ivar: 0x12c
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 926
--  Symbols:   1322
+-  Symbols:   1040
 -  CStrings:  340
 +  Functions: 929
-+  Symbols:   1329
++  Symbols:   1047
 +  CStrings:  344
- 
 Symbols:
 + GCC_except_table105
 + GCC_except_table107

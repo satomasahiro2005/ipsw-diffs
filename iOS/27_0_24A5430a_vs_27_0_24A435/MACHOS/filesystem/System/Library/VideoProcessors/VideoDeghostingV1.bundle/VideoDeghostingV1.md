@@ -2,25 +2,26 @@
 
 > `/System/Library/VideoProcessors/VideoDeghostingV1.bundle/VideoDeghostingV1`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1f6fc` | `0x1f754` | **`+0x58`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 764.22.13.0.0
--  __TEXT.__text: 0x1f6fc
-+  __TEXT.__text: 0x1f754
-   __TEXT.__auth_stubs: 0x780
-   __TEXT.__objc_stubs: 0x1ac0
-   __TEXT.__objc_methlist: 0x1304
+```text
 Functions:
 ~ sub_fc0c : 456 -> 460
 ~ sub_ff18 -> sub_ff1c : 460 -> 464

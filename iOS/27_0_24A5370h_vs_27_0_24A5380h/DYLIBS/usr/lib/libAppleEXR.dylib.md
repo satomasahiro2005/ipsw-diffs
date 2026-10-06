@@ -2,30 +2,15 @@
 
 > `/usr/lib/libAppleEXR.dylib`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x9f37c
-+  __TEXT.__text: 0x9fca4
-   __TEXT.__objc_methlist: 0x254
-   __TEXT.__const: 0x211bc
-   __TEXT.__gcc_except_tab: 0x4e0
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9f37c` | `0x9fca4` | **`+0x928`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZL21CompressedInterleave2IjL10StreamType1ELS0_0EEvPKvPK11TileDecoderRK8TileInfoRK11ChannelInfoSB_mmjPvl : 2036 -> 2056
 ~ __ZL21CompressedInterleave2ItL10StreamType1ELS0_0EEvPKvPK11TileDecoderRK8TileInfoRK11ChannelInfoSB_mmjPvl : 1228 -> 1248
@@ -167,5 +152,4 @@ Functions:
 ~ __ZL19Read4_NoCompressionIjL10StreamType0ELS0_1ELS0_1ELS0_1EEvPKvmPK11TileDecoderRK8TileInfoRK11ChannelInfoSB_SB_SB_mmjPvl : 780 -> 796
 ~ __ZL19Read4_NoCompressionItL10StreamType1ELS0_1ELS0_1ELS0_1EEvPKvmPK11TileDecoderRK8TileInfoRK11ChannelInfoSB_SB_SB_mmjPvl : 784 -> 800
 ~ __ZL19Read4_NoCompressionIjL10StreamType1ELS0_1ELS0_1ELS0_1EEvPKvmPK11TileDecoderRK8TileInfoRK11ChannelInfoSB_SB_SB_mmjPvl : 764 -> 780
-
 ```

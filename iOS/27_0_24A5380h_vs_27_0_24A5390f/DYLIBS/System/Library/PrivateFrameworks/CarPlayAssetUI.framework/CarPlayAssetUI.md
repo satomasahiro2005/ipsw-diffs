@@ -2,103 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/CarPlayAssetUI.framework/CarPlayAssetUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3a7080` | `0x3b8f6c` | **`+0x11eec`** |
+| `__TEXT.__const` | `0x78db4` | `0x7ce84` | **`+0x40d0`** |
+| `__DATA.__bss` | `0x82dc0` | `0x86530` | **`+0x3770`** |
+| `__AUTH_CONST.__const` | `0x29d58` | `0x2ada8` | **`+0x1050`** |
+| `__TEXT.__swift5_typeref` | `0x19a5a` | `0x1a8bc` | **`+0xe62`** |
+| `__DATA.__data` | `0x13240` | `0x13808` | **`+0x5c8`** |
+| `__TEXT.__unwind_info` | `0xfc68` | `0x10230` | **`+0x5c8`** |
+| `__TEXT.__constg_swiftt` | `0xc694` | `0xcc1c` | **`+0x588`** |
+| `__TEXT.__swift5_fieldmd` | `0xf9a0` | `0xff24` | **`+0x584`** |
+| `__TEXT.__eh_frame` | `0xfc38` | `0x101a8` | **`+0x570`** |
+| `__TEXT.__swift5_reflstr` | `0xa00f` | `0xa2df` | **`+0x2d0`** |
+| `__TEXT.__swift5_proto` | `0x4314` | `0x44e0` | **`+0x1cc`** |
+| `__AUTH.__data` | `0x4ca0` | `0x4dc0` | **`+0x120`** |
+| `__TEXT.__swift5_capture` | `0x2890` | `0x2994` | **`+0x104`** |
+| `__TEXT.__swift5_assocty` | `0x2470` | `0x2500` | **`+0x90`** |
+| `__TEXT.__swift5_types` | `0x1154` | `0x11d4` | **`+0x80`** |
+| `__AUTH_CONST.__objc_const` | `0x32b8` | `0x3318` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x13f8` | `0x1448` | **`+0x50`** |
+| `__TEXT.__cstring` | `0x73b7` | `0x73d7` | **`+0x20`** |
+| `__TEXT.__oslogstring` | `0x17df` | `0x17bf` | **`-0x20`** |
+| `__TEXT.__swift5_mpenum` | `0x84c` | `0x860` | **`+0x14`** |
+| `__DATA.__common` | `0x470` | `0x480` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x11c0` | `0x11d0` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x12e0` | `0x12d0` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x27c8` | `0x27d0` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -493.3.0.0.0
--  __TEXT.__text: 0x3a7080
 +496.0.0.0.0
-+  __TEXT.__text: 0x3b8f6c
-   __TEXT.__objc_methlist: 0x1504
--  __TEXT.__const: 0x78db4
--  __TEXT.__cstring: 0x73b7
--  __TEXT.__swift5_typeref: 0x19a5a
--  __TEXT.__swift5_reflstr: 0xa00f
--  __TEXT.__swift5_assocty: 0x2470
--  __TEXT.__constg_swiftt: 0xc694
--  __TEXT.__swift5_fieldmd: 0xf9a0
-+  __TEXT.__const: 0x7ce84
-+  __TEXT.__cstring: 0x73d7
-+  __TEXT.__swift5_typeref: 0x1a8bc
-+  __TEXT.__constg_swiftt: 0xcc1c
-+  __TEXT.__swift5_reflstr: 0xa2df
-+  __TEXT.__swift5_fieldmd: 0xff24
-   __TEXT.__swift5_builtin: 0x438
--  __TEXT.__swift5_proto: 0x4314
--  __TEXT.__swift5_types: 0x1154
--  __TEXT.__swift5_capture: 0x2890
--  __TEXT.__swift5_mpenum: 0x84c
--  __TEXT.__oslogstring: 0x17df
-+  __TEXT.__swift5_assocty: 0x2500
-+  __TEXT.__swift5_proto: 0x44e0
-+  __TEXT.__swift5_types: 0x11d4
-+  __TEXT.__swift5_capture: 0x2994
-+  __TEXT.__swift5_mpenum: 0x860
-   __TEXT.__swift5_protos: 0x78
-   __TEXT.__swift_as_entry: 0x70
-   __TEXT.__swift_as_ret: 0x54
-   __TEXT.__swift_as_cont: 0x118
--  __TEXT.__unwind_info: 0xfc68
--  __TEXT.__eh_frame: 0xfc38
-+  __TEXT.__oslogstring: 0x17bf
-+  __TEXT.__unwind_info: 0x10230
-+  __TEXT.__eh_frame: 0x101a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x13f8
-+  __DATA_CONST.__const: 0x1448
-   __DATA_CONST.__objc_classlist: 0xf8
-   __DATA_CONST.__objc_protolist: 0x1c0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x12e0
-+  __DATA_CONST.__objc_selrefs: 0x12d0
-   __DATA_CONST.__objc_protorefs: 0xe0
--  __DATA_CONST.__got: 0x11c0
--  __AUTH_CONST.__const: 0x29d58
--  __AUTH_CONST.__objc_const: 0x32b8
--  __AUTH_CONST.__auth_got: 0x27c8
-+  __DATA_CONST.__got: 0x11d0
-+  __AUTH_CONST.__const: 0x2ada8
-+  __AUTH_CONST.__objc_const: 0x3318
-+  __AUTH_CONST.__auth_got: 0x27d0
-   __AUTH.__objc_data: 0xb20
--  __AUTH.__data: 0x4ca0
--  __DATA.__data: 0x13240
--  __DATA.__bss: 0x82dc0
--  __DATA.__common: 0x470
-+  __AUTH.__data: 0x4dc0
-+  __DATA.__data: 0x13808
-+  __DATA.__bss: 0x86530
-+  __DATA.__common: 0x480
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 25950
--  Symbols:   70542
+-  Symbols:   70267
 -  CStrings:  1078
 +  Functions: 26584
-+  Symbols:   72241
++  Symbols:   71968
 +  CStrings:  1079
- 
 Symbols:
 + _$s14CarPlayAssetUI04$s14abC110UI0025InstrumentViewswift_jqFBgfMX121_0_33_10F972B8832A66557005349EDA27E5E2Ll7PreviewfMf_15PreviewRegistryfMu_V04makeU021DeveloperToolsSupport0U0VyKFZ
 + _$s14CarPlayAssetUI04$s14abC110UI0025InstrumentViewswift_jqFBgfMX121_0_33_10F972B8832A66557005349EDA27E5E2Ll7PreviewfMf_15PreviewRegistryfMu_V04makeU021DeveloperToolsSupport0U0VyKFZ05SwiftD04View_pyScMYccfU_
@@ -2385,8 +2331,6 @@ Symbols:
 - _get_witness_table 7SwiftUI19_ConditionalContentVyACyACyACyACyAA08ModifiedD0VyAEyAA5ColorVAA24_BackgroundStyleModifierVyAA8MaterialVGGAA14_OpacityEffectVGACyACyA2GGAQGGAA9EmptyViewVGAA5ImageVGACyA2XGGACyACyAX012CarPlayAssetB007RequestdN0VGAUGGAA0N0HPA_AAA6_HPAyAA6_HPAvAA6_HPAsAA6_HPApAA6_HPAmAA6_HPAgAA6_HPyHC_AlA0nI0HPyHCHC_AoAA7_HPyHCHC_ArAA6_HPAqAA6_HPAgAA6_HPyHC_AgAA6_HPyHCHC_AqAA6_HPAgAA6_HPyHC_AgAA6_HPyHCHCHCHC_AuAA6_HPyHCHC_AxAA6_HPyHCHC_AzAA6_HPAxAA6_HPyHC_AxAA6_HPyHCHCHC_A4_AAA6_HPA3_AAA6_HPAxAA6_HPyHC_A2_AAA6_HPyHCHC_AuAA6_HPyHCHCHC
 - _get_witness_table 7SwiftUI6ZStackVyAA19_ConditionalContentVyAEyAA05TupleE0VyAA08ModifiedE0VyAEyAEyAEyAEyAIyAA8AnyShapeVAA24_ForegroundStyleModifierVyAA8MaterialVGGAQGAGyAIyAkA15_BackdropEffectVyAIyAA01_nO11PlaceholderVAA05_BlurO0VGGG_AIyAkA08_OverlayL0VyAA01_I4ViewVyAkA5ColorVGGGSgQPGGAEyAqA0S0PAAE06_glassO0_2inQrAA6_GlassV_qd__tAA0I0Rd__lFQOyAIyAkMyA5_GG_AKQo_GGA20_G012CarPlayAssetB022OneFrameAppearanceFlip33_A67AB0634F80ACCD9340C000DE65822ELLVG_A25_8CarouselVyACyAGyAA7ForEachVySayA25_4SlotVGA25_11TaggedValueVyA35_10Foundation4UUIDVGAIyAIyAIyA25_04SlotS0VAA12_FrameLayoutVGAA15_PositionLayoutVGAA013_TraitWritingL0VyAA14ZIndexTraitKeyVGGG_A25_08TrackingS0VSgQPGGSgA25_9ComponentVGQPGA25_04DeckS0VyA29_A63_GGAGyA29__A63_QPGGGAAA12_HPyHC
 - _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAA15ModifiedContentVyAHyAHyAHyAHyAA6ZStackVyAA7ForEachVySay012CarPlayAssetB04ZoneVGAM11TaggedValueVyAOSSGAHyAHyAHyAHyAHyAHyAM0pC0VAA30_EnvironmentKeyWritingModifierVyARyAM6LayoutVSSGSgGGAA06_FrameW0VGAA09_PositionW0VGAM018DirectionalPaddingV033_7B51074619E88F9A5374CB07EC116614LLVyAOGGAWyAM0W9TreatmentCSgGGAA01_st9TransformV0VySbGGGSgGAA08_OverlayV0VyAM08TrackingC0VGGA26_yAM018AppearanceTrackingC0VGGA3_GAA011_BackgroundV0VyAHyAHyAHyAA012_ConditionalI0VyAJyAA05TupleI0VyAHyAHyAHyAHyAA03AnyC0VAA14_OpacityEffectVGAA17_SaturationEffectVGAA12_ScaleEffectVGAA11_BlurEffectVG_AHyAA012SubscriptionC0Vy7Combine9PublishedV9PublisherVySDyASSbG_GAA5ColorVGA45_GSgQPGGA66_GSgA3_GA51_GA6_GGGAA11_ClipEffectVyAA9RectangleVGG_SayAO0P6RegionOGQo_HO
-- _objc_msgSend$standardUserDefaults
-- _objc_msgSend$stringForKey:
 - _objc_release_x10
 - _symbolic Say_____G 14CarPlayAssetUI10InstrumentV4KindO
 - _symbolic _____ 14CarPlayAssetUI27InstrumentKindView_PreviewsV

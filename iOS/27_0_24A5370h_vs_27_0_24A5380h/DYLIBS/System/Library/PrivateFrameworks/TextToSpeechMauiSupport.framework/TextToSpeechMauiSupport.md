@@ -2,99 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/TextToSpeechMauiSupport.framework/TextToSpeechMauiSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x54c36c` | `0x53d018` | **`-0xf354`** |
+| `__TEXT.__gcc_except_tab` | `0x7c2c` | `0x74a4` | **`-0x788`** |
+| `__TEXT.__unwind_info` | `0xbca8` | `0xb830` | **`-0x478`** |
+| `__AUTH_CONST.__const` | `0x128c0` | `0x129b8` | **`+0xf8`** |
+| `__TEXT.__const` | `0xdd008` | `0xdd0c8` | **`+0xc0`** |
+| `__DATA.__bss` | `0xbf0` | `0xc70` | **`+0x80`** |
+| `__TEXT.__cstring` | `0x4850e` | `0x4856e` | **`+0x60`** |
+| `__TEXT.__eh_frame` | `0x18c0` | `0x1908` | **`+0x48`** |
+| `__TEXT.__swift5_typeref` | `0x7cf` | `0x795` | **`-0x3a`** |
+| `__TEXT.__swift5_capture` | `0x16c` | `0x1a0` | **`+0x34`** |
+| `__TEXT.__constg_swiftt` | `0x86c` | `0x888` | **`+0x1c`** |
+| `__DATA.__data` | `0x388` | `0x398` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x330` | `0x340` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x914` | `0x924` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xe68` | `0xe70` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x70` | `0x78` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x5c` | `0x60` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0x8c` | `0x90` | **`+0x4`** |
+| `__TEXT.__swift_as_cont` | `0xb8` | `0xbc` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x44` | `0x48` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__swift5_reflstr`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x54c36c
--  __TEXT.__const: 0xdd008
--  __TEXT.__cstring: 0x4850e
--  __TEXT.__constg_swiftt: 0x86c
--  __TEXT.__swift5_typeref: 0x7cf
-+  __TEXT.__text: 0x53d018
-+  __TEXT.__const: 0xdd0c8
-+  __TEXT.__cstring: 0x4856e
-+  __TEXT.__constg_swiftt: 0x888
-+  __TEXT.__swift5_typeref: 0x795
-   __TEXT.__swift5_builtin: 0x1b8
-   __TEXT.__swift5_reflstr: 0x64e
--  __TEXT.__swift5_fieldmd: 0x914
-+  __TEXT.__swift5_fieldmd: 0x924
-   __TEXT.__swift5_assocty: 0x78
--  __TEXT.__swift5_capture: 0x16c
--  __TEXT.__swift5_proto: 0x5c
--  __TEXT.__swift5_types: 0x8c
--  __TEXT.__swift_as_entry: 0x70
--  __TEXT.__swift_as_ret: 0x44
--  __TEXT.__swift_as_cont: 0xb8
-+  __TEXT.__swift5_capture: 0x1a0
-+  __TEXT.__swift5_proto: 0x60
-+  __TEXT.__swift5_types: 0x90
-+  __TEXT.__swift_as_entry: 0x78
-+  __TEXT.__swift_as_ret: 0x48
-+  __TEXT.__swift_as_cont: 0xbc
-   __TEXT.__oslogstring: 0xdbe
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__ustring: 0x8
--  __TEXT.__gcc_except_tab: 0x7c2c
--  __TEXT.__unwind_info: 0xbca8
--  __TEXT.__eh_frame: 0x18c0
-+  __TEXT.__gcc_except_tab: 0x74a4
-+  __TEXT.__unwind_info: 0xb830
-+  __TEXT.__eh_frame: 0x1908
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-676.0.0.0.0
++678.0.0.0.0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
-   __DATA_CONST.__objc_selrefs: 0xd0
--  __DATA_CONST.__got: 0x330
--  __AUTH_CONST.__const: 0x128c0
-+  __DATA_CONST.__got: 0x340
-+  __AUTH_CONST.__const: 0x129b8
-   __AUTH_CONST.__cfstring: 0x1e0
-   __AUTH_CONST.__objc_const: 0x590
-   __AUTH_CONST.__weak_auth_got: 0x20
--  __AUTH_CONST.__auth_got: 0xe68
-+  __AUTH_CONST.__auth_got: 0xe70
-   __AUTH.__objc_data: 0xf0
-   __AUTH.__data: 0x4d0
--  __DATA.__data: 0x388
-+  __DATA.__data: 0x398
-   __DATA.__objc_stublist: 0x8
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0xbf0
-+  __DATA.__bss: 0xc70
-   __DATA.__common: 0x54
-   __DATA_DIRTY.__objc_data: 0xd0
-   __DATA_DIRTY.__data: 0x208
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15482
--  Symbols:   25087
--  CStrings:  12620
+-  Symbols:   19004
+-  CStrings:  12606
 +  Functions: 15448
-+  Symbols:   24928
-+  CStrings:  12622
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_reflstr : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__objc_stublist : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   18938
++  CStrings:  12608
 Symbols:
 + GCC_except_table101
 + GCC_except_table108
@@ -267,5 +216,4 @@ Symbols:
 CStrings:
 + "/(?:[A-Za-z]+\\s+){2,}[A-Za-z]+(?:[!?]+|\\.(?!\\.))(?=\\s+[a-z])/"
 + "EnglishSentenceBoundary"
-
 ```

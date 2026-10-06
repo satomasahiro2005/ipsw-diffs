@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ISPExclaveKitServices.framework/ISPExclaveKitServices`
 
-```diff
+### Section Size Changes
 
- 6.21.0.0.0
--  __TEXT.__text: 0x27d88
-+  __TEXT.__text: 0x27da0
-   __TEXT.__const: 0x290
-   __TEXT.__gcc_except_tab: 0x774
-   __TEXT.__oslogstring: 0x30b9
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x27d88` | `0x27da0` | **`+0x18`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN22ISPExclaveKitTimerList8getTimerEv : 100 -> 104
 ~ __ZN22ISPExclaveKitTimerList11returnTimerEP27_ISPExclaveKitTimerListItem : 184 -> 188

@@ -2,85 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/SafariSharedUI.framework/SafariSharedUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4696d0` | `0x46a868` | **`+0x1198`** |
+| `__TEXT.__swift5_typeref` | `0x25710` | `0x257e6` | **`+0xd6`** |
+| `__TEXT.__const` | `0x525a4` | `0x52614` | **`+0x70`** |
+| `__TEXT.__swift5_reflstr` | `0x77b5` | `0x7815` | **`+0x60`** |
+| `__TEXT.__cstring` | `0x349b9` | `0x349f9` | **`+0x40`** |
+| `__TEXT.__swift5_fieldmd` | `0x716c` | `0x71a8` | **`+0x3c`** |
+| `__TEXT.__oslogstring` | `0x11c6d` | `0x11c8d` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x3ff8` | `0x4008` | **`+0x10`** |
+| `__DATA.__data` | `0xaed4` | `0xaee4` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x2e10` | `0x2e18` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xabc8` | `0xabd0` | **`+0x8`** |
+| `__TEXT.__eh_frame` | `0x20dec` | `0x20df4` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -625.1.29.10.29
--  __TEXT.__text: 0x43f738
 +625.1.29.10.33
-+  __TEXT.__text: 0x44086c
-   __TEXT.__delay_stubs: 0x80
-   __TEXT.__delay_helper: 0x14c
-   __TEXT.__objc_methlist: 0xf6e4
--  __TEXT.__const: 0x525a4
-+  __TEXT.__const: 0x52614
-   __TEXT.__gcc_except_tab: 0xf3e8
--  __TEXT.__cstring: 0x349b9
--  __TEXT.__oslogstring: 0x11c6d
-+  __TEXT.__cstring: 0x349f9
-+  __TEXT.__oslogstring: 0x11c8d
-   __TEXT.__ustring: 0x1fc2
-   __TEXT.__dlopen_cstrs: 0x363
-   __TEXT.__constg_swiftt: 0x768c
--  __TEXT.__swift5_typeref: 0x25710
--  __TEXT.__swift5_fieldmd: 0x716c
-+  __TEXT.__swift5_typeref: 0x257e6
-+  __TEXT.__swift5_fieldmd: 0x71a8
-   __TEXT.__swift5_builtin: 0x2e4
--  __TEXT.__swift5_reflstr: 0x77b5
-+  __TEXT.__swift5_reflstr: 0x7815
-   __TEXT.__swift5_assocty: 0x1210
-   __TEXT.__swift5_proto: 0xff0
-   __TEXT.__swift5_types: 0x764
 
-   __TEXT.__swift5_protos: 0x48
-   __TEXT.__swift5_mpenum: 0x64
-   __TEXT.__swift5_capture: 0x3d08
--  __TEXT.__unwind_info: 0x17460
--  __TEXT.__eh_frame: 0x20e14
-+  __TEXT.__unwind_info: 0x17470
-+  __TEXT.__eh_frame: 0x20e1c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x180
-   __DATA_CONST.__objc_protolist: 0x390
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xabc8
-+  __DATA_CONST.__objc_selrefs: 0xabd0
-   __DATA_CONST.__objc_protorefs: 0xf0
-   __DATA_CONST.__objc_superrefs: 0x4f8
-   __DATA_CONST.__objc_arraydata: 0x1a88
--  __DATA_CONST.__got: 0x2e10
-+  __DATA_CONST.__got: 0x2e18
-   __AUTH_CONST.__const: 0x1b458
-   __AUTH_CONST.__cfstring: 0x11560
-   __AUTH_CONST.__objc_const: 0x1f0f0
-
-   __AUTH_CONST.__objc_doubleobj: 0x50
-   __AUTH_CONST.__objc_arrayobj: 0x7e0
-   __AUTH_CONST.__objc_dictobj: 0x208
--  __AUTH_CONST.__auth_got: 0x3ff8
-+  __AUTH_CONST.__auth_got: 0x4008
-   __AUTH.__objc_data: 0x6668
-   __AUTH.__data: 0x68b8
-   __DATA.__objc_ivar: 0x10ac
--  __DATA.__data: 0xaed4
-+  __DATA.__data: 0xaee4
-   __DATA.__common: 0x490
-   __DATA_DIRTY.__objc_data: 0x140
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 20227
 -  Symbols:   15306
 -  CStrings:  5301
 +  Functions: 20235
 +  Symbols:   15309
 +  CStrings:  5303
- 
 Symbols:
 + _WBSDebugNotifyMeWhenJitterEnabledKey
 + ___swift_closure_destructor.97Tm

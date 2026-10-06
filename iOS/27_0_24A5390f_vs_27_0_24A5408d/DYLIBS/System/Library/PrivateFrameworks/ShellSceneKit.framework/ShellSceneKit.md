@@ -2,77 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/ShellSceneKit.framework/ShellSceneKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xed260` | `0xee118` | **`+0xeb8`** |
+| `__TEXT.__cstring` | `0x2c2b` | `0x2cab` | **`+0x80`** |
+| `__TEXT.__oslogstring` | `0xc23` | `0xbe3` | **`-0x40`** |
+| `__TEXT.__swift5_reflstr` | `0x158b` | `0x15cb` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0x81d8` | `0x81b0` | **`-0x28`** |
+| `__AUTH_CONST.__objc_const` | `0x6c88` | `0x6ca8` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xcb8` | `0xcc8` | **`+0x10`** |
+| `__DATA.__data` | `0x14a0` | `0x14b0` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x2214` | `0x2204` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x3290` | `0x3280` | **`-0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x1b9c` | `0x1ba8` | **`+0xc`** |
+| `__DATA_CONST.__objc_selrefs` | `0xbf0` | `0xbf8` | **`+0x8`** |
+| `__DATA_DIRTY.__objc_data` | `0x1180` | `0x1188` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -52.0.0.0.0
--  __TEXT.__text: 0xed260
 +54.0.0.0.0
-+  __TEXT.__text: 0xee118
-   __TEXT.__objc_methlist: 0x16b8
-   __TEXT.__const: 0x82b0
--  __TEXT.__cstring: 0x2c2b
-+  __TEXT.__cstring: 0x2cab
-   __TEXT.__swift5_typeref: 0x2568
--  __TEXT.__swift5_capture: 0x2214
--  __TEXT.__oslogstring: 0xc23
-+  __TEXT.__swift5_capture: 0x2204
-+  __TEXT.__oslogstring: 0xbe3
-   __TEXT.__constg_swiftt: 0x1f04
--  __TEXT.__swift5_reflstr: 0x158b
--  __TEXT.__swift5_fieldmd: 0x1b9c
-+  __TEXT.__swift5_reflstr: 0x15cb
-+  __TEXT.__swift5_fieldmd: 0x1ba8
-   __TEXT.__swift5_types: 0x28c
-   __TEXT.__swift5_proto: 0x578
-   __TEXT.__swift5_protos: 0x4c
 
-   __TEXT.__swift_as_ret: 0x4c
-   __TEXT.__swift_as_cont: 0x88
-   __TEXT.__swift5_types2: 0x8
--  __TEXT.__unwind_info: 0x3290
-+  __TEXT.__unwind_info: 0x3280
-   __TEXT.__eh_frame: 0x1eb0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x1a8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xbf0
-+  __DATA_CONST.__objc_selrefs: 0xbf8
-   __DATA_CONST.__objc_protorefs: 0xe8
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__got: 0x630
--  __AUTH_CONST.__const: 0x81d8
-+  __AUTH_CONST.__const: 0x81b0
-   __AUTH_CONST.__cfstring: 0x120
--  __AUTH_CONST.__objc_const: 0x6c88
--  __AUTH_CONST.__auth_got: 0xcb8
-+  __AUTH_CONST.__objc_const: 0x6ca8
-+  __AUTH_CONST.__auth_got: 0xcc8
-   __AUTH.__objc_data: 0x1238
-   __AUTH.__data: 0x660
-   __DATA.__objc_ivar: 0xc
--  __DATA.__data: 0x14a0
-+  __DATA.__data: 0x14b0
-   __DATA.__common: 0x18
-   __DATA.__bss: 0x8960
--  __DATA_DIRTY.__objc_data: 0x1180
-+  __DATA_DIRTY.__objc_data: 0x1188
-   __DATA_DIRTY.__data: 0x13b8
-   __DATA_DIRTY.__bss: 0x2de0
-   __DATA_DIRTY.__common: 0x90
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5877
--  Symbols:   10215
+-  Symbols:   9972
 -  CStrings:  367
 +  Functions: 5880
-+  Symbols:   10224
++  Symbols:   9980
 +  CStrings:  370
- 
 Symbols:
 + _$s13ShellSceneKit17FBSHardwareSourceC14displayMonitor_22willDisconnectIdentityySo010FBSDisplayG0C_So0kJ0CtFAA7DisplayV10IdentifierVycfu5_
 + _$s13ShellSceneKit17FBSHardwareSourceC14displayMonitor_22willDisconnectIdentityySo010FBSDisplayG0C_So0kJ0CtFAA7DisplayV10IdentifierVycfu5_TA
@@ -104,7 +64,6 @@ Symbols:
 + _$sSh6removeyxSgxF
 + _$sSo9CADisplayC13ShellSceneKitE15tagsDescription33_25496FD56A57C26EECCB67A09BF9F1E1LLSSvg
 + _NSStringFromBKSDisplayTags
-+ _objc_msgSend$tag
 - _$s13ShellSceneKit17FBSHardwareSourceC024configIdentityToHardwareG033_25496FD56A57C26EECCB67A09BF9F1E1LLSDySo010FBSDisplayG0CAA7DisplayV10IdentifierVGvg
 - _$s13ShellSceneKit17FBSHardwareSourceC024configIdentityToHardwareG033_25496FD56A57C26EECCB67A09BF9F1E1LLSDySo010FBSDisplayG0CAA7DisplayV10IdentifierVGvpWvd
 - _$s13ShellSceneKit17FBSHardwareSourceC024configIdentityToHardwareG033_25496FD56A57C26EECCB67A09BF9F1E1LLSDySo010FBSDisplayG0CAA7DisplayV10IdentifierVGvpfi

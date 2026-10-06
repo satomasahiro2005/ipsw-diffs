@@ -2,53 +2,37 @@
 
 > `/System/Library/Audio/Plug-Ins/HAL/BTAudioHALPlugin.driver/BTAudioHALPlugin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__objc_methlist`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7d47c` | `0x7dae0` | **`+0x664`** |
+| `__TEXT.__oslogstring` | `0x16af8` | `0x16dc1` | **`+0x2c9`** |
+| `__TEXT.__const` | `0x1a9c` | `0x1aec` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x1cd0` | `0x1cd8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
-- `__DATA.__data`
-- `__DATA.__bss`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__eh_frame`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__init_offsets`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
 -2700.43.0.0.0
--  __TEXT.__text: 0x7d47c
 +2700.46.1.1.0
-+  __TEXT.__text: 0x7dae0
-   __TEXT.__auth_stubs: 0x1370
-   __TEXT.__objc_stubs: 0x2800
-   __TEXT.__init_offsets: 0xa4
-   __TEXT.__objc_methlist: 0x118c
-   __TEXT.__gcc_except_tab: 0x2064
--  __TEXT.__const: 0x1a9c
-+  __TEXT.__const: 0x1aec
-   __TEXT.__cstring: 0x4f78
--  __TEXT.__oslogstring: 0x16af8
-+  __TEXT.__oslogstring: 0x16dc1
-   __TEXT.__objc_methname: 0x3ecc
-   __TEXT.__objc_classname: 0x154
-   __TEXT.__objc_methtype: 0x1257
--  __TEXT.__unwind_info: 0x1cd0
-+  __TEXT.__unwind_info: 0x1cd8
-   __TEXT.__eh_frame: 0x50
-   __DATA_CONST.__const: 0x5338
-   __DATA_CONST.__cfstring: 0x16a0
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libprotobuf.dylib
 -  Functions: 2872
 +  Functions: 2874
-   Symbols:   476
-   CStrings:  2994
- 
 CStrings:
 + " %{private, mask.hash}@ : Injecting silent Audio allowed to stop [%llu  %d]"
 + "%{private, mask.hash}@ : Injecting silent Audio started"

@@ -2,73 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/HealthDaemonFoundation.framework/HealthDaemonFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x761a4` | `0x771a0` | **`+0xffc`** |
+| `__TEXT.__gcc_except_tab` | `0x30a8` | `0x3118` | **`+0x70`** |
+| `__TEXT.__oslogstring` | `0x3775` | `0x37e5` | **`+0x70`** |
+| `__AUTH_CONST.__cfstring` | `0x4100` | `0x4140` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x29f8` | `0x2a28` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x11c0` | `0x11e8` | **`+0x28`** |
+| `__TEXT.__objc_methlist` | `0x3e0c` | `0x3e34` | **`+0x28`** |
+| `__DATA.__bss` | `0x1d10` | `0x1d30` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x4b4b` | `0x4b6b` | **`+0x20`** |
+| `__AUTH_CONST.__objc_const` | `0x8970` | `0x8988` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x21e0` | `0x21f8` | **`+0x18`** |
+| `__TEXT.__constg_swiftt` | `0xce4` | `0xcec` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.45.2.4
--  __TEXT.__text: 0x73460
--  __TEXT.__objc_methlist: 0x3e0c
 +7027.1.54.2.3
-+  __TEXT.__text: 0x743c4
-+  __TEXT.__objc_methlist: 0x3e34
-   __TEXT.__const: 0x23a2
--  __TEXT.__cstring: 0x4b4b
--  __TEXT.__oslogstring: 0x3775
--  __TEXT.__gcc_except_tab: 0x30a8
-+  __TEXT.__cstring: 0x4b6b
-+  __TEXT.__oslogstring: 0x37e5
-+  __TEXT.__gcc_except_tab: 0x3118
-   __TEXT.__swift5_typeref: 0xd2c
-   __TEXT.__swift5_reflstr: 0x90b
-   __TEXT.__swift5_assocty: 0xa8
--  __TEXT.__constg_swiftt: 0xce4
-+  __TEXT.__constg_swiftt: 0xcec
-   __TEXT.__swift5_builtin: 0xa0
-   __TEXT.__swift5_fieldmd: 0xa04
-   __TEXT.__swift5_proto: 0x100
 
-   __TEXT.__swift5_protos: 0x38
-   __TEXT.__swift5_mpenum: 0x24
-   __TEXT.__swift5_types2: 0xc
--  __TEXT.__unwind_info: 0x3180
-+  __TEXT.__unwind_info: 0x31b8
-   __TEXT.__eh_frame: 0x1548
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x11c0
-+  __DATA_CONST.__const: 0x11e8
-   __DATA_CONST.__objc_classlist: 0x308
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x100
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x21e0
-+  __DATA_CONST.__objc_selrefs: 0x21f8
-   __DATA_CONST.__objc_protorefs: 0x78
-   __DATA_CONST.__objc_superrefs: 0x1e0
-   __DATA_CONST.__objc_arraydata: 0x18
-   __DATA_CONST.__got: 0x6f0
-   __AUTH_CONST.__const: 0x2a60
--  __AUTH_CONST.__cfstring: 0x4100
--  __AUTH_CONST.__objc_const: 0x8970
-+  __AUTH_CONST.__cfstring: 0x4140
-+  __AUTH_CONST.__objc_const: 0x8988
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x78
-   __AUTH_CONST.__objc_doubleobj: 0x10
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 3131
 -  Symbols:   4006
 -  CStrings:  912
 +  Functions: 3144
 +  Symbols:   4016
 +  CStrings:  916
- 
 Symbols:
 + +[HDSQLiteSchemaEntity hasStaticJoinClauses]
 + -[HDSQLiteQueryDescriptor _uncachedJoinClauseForProperties:predicateJoinClauses:]

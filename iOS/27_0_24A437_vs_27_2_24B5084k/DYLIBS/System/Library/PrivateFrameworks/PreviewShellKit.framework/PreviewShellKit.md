@@ -2,88 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/PreviewShellKit.framework/PreviewShellKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfd51c` | `0x100d18` | **`+0x37fc`** |
+| `__TEXT.__eh_frame` | `0x9948` | `0x9d50` | **`+0x408`** |
+| `__TEXT.__const` | `0xb464` | `0xb684` | **`+0x220`** |
+| `__AUTH.__data` | `0x2538` | `0x2700` | **`+0x1c8`** |
+| `__TEXT.__cstring` | `0x4a6c` | `0x4bcc` | **`+0x160`** |
+| `__TEXT.__unwind_info` | `0x3f58` | `0x4070` | **`+0x118`** |
+| `__AUTH_CONST.__const` | `0x6e10` | `0x6d20` | **`-0xf0`** |
+| `__AUTH_CONST.__objc_const` | `0x31d0` | `0x32a8` | **`+0xd8`** |
+| `__TEXT.__oslogstring` | `0x2c4b` | `0x2cfc` | **`+0xb1`** |
+| `__TEXT.__constg_swiftt` | `0x2f80` | `0x2fe4` | **`+0x64`** |
+| `__DATA.__data` | `0x3760` | `0x37c0` | **`+0x60`** |
+| `__TEXT.__swift5_reflstr` | `0x1892` | `0x18e2` | **`+0x50`** |
+| `__TEXT.__swift5_fieldmd` | `0x231c` | `0x235c` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0xc98` | `0xcd0` | **`+0x38`** |
+| `__TEXT.__swift5_typeref` | `0x50ce` | `0x50fc` | **`+0x2e`** |
+| `__AUTH_CONST.__auth_got` | `0x2060` | `0x2088` | **`+0x28`** |
+| `__TEXT.__swift_as_cont` | `0x720` | `0x748` | **`+0x28`** |
+| `__TEXT.__swift_as_entry` | `0x314` | `0x338` | **`+0x24`** |
+| `__TEXT.__swift_as_ret` | `0x348` | `0x360` | **`+0x18`** |
+| `__TEXT.__swift5_capture` | `0x1928` | `0x1934` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0xc8` | `0xd0` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x310` | `0x314` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -24.0.45.1.0
--  __TEXT.__text: 0xeef28
 +24.20.6.0.0
-+  __TEXT.__text: 0xf227c
-   __TEXT.__objc_methlist: 0x6b4
--  __TEXT.__const: 0xb464
--  __TEXT.__cstring: 0x4a6c
--  __TEXT.__swift5_typeref: 0x50ce
--  __TEXT.__swift5_capture: 0x1928
--  __TEXT.__swift5_reflstr: 0x1892
-+  __TEXT.__const: 0xb684
-+  __TEXT.__cstring: 0x4bcc
-+  __TEXT.__swift5_typeref: 0x50fc
-+  __TEXT.__swift5_capture: 0x1934
-+  __TEXT.__swift5_reflstr: 0x18e2
-   __TEXT.__swift5_assocty: 0x3c8
--  __TEXT.__swift5_fieldmd: 0x231c
--  __TEXT.__constg_swiftt: 0x2f80
-+  __TEXT.__swift5_fieldmd: 0x235c
-+  __TEXT.__constg_swiftt: 0x2fe4
-   __TEXT.__swift5_builtin: 0x8c
-   __TEXT.__swift5_protos: 0x9c
-   __TEXT.__swift5_proto: 0x570
--  __TEXT.__swift5_types: 0x310
--  __TEXT.__swift_as_entry: 0x314
--  __TEXT.__swift_as_ret: 0x348
--  __TEXT.__swift_as_cont: 0x720
--  __TEXT.__oslogstring: 0x2c4b
-+  __TEXT.__swift5_types: 0x314
-+  __TEXT.__swift_as_entry: 0x338
-+  __TEXT.__swift_as_ret: 0x360
-+  __TEXT.__swift_as_cont: 0x748
-+  __TEXT.__oslogstring: 0x2cfc
-   __TEXT.__swift5_mpenum: 0x2c
--  __TEXT.__unwind_info: 0x4998
--  __TEXT.__eh_frame: 0x9968
-+  __TEXT.__unwind_info: 0x4b10
-+  __TEXT.__eh_frame: 0x9d70
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x218
--  __DATA_CONST.__objc_classlist: 0xc8
-+  __DATA_CONST.__objc_classlist: 0xd0
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0xb0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x5b0
-   __DATA_CONST.__objc_protorefs: 0x58
-   __DATA_CONST.__objc_superrefs: 0x20
--  __DATA_CONST.__got: 0xc98
--  __AUTH_CONST.__const: 0x6e10
--  __AUTH_CONST.__objc_const: 0x31d0
--  __AUTH_CONST.__auth_got: 0x2060
-+  __DATA_CONST.__got: 0xcd0
-+  __AUTH_CONST.__const: 0x6d20
-+  __AUTH_CONST.__objc_const: 0x32a8
-+  __AUTH_CONST.__auth_got: 0x2088
-   __AUTH.__objc_data: 0x8f0
--  __AUTH.__data: 0x2538
-+  __AUTH.__data: 0x2700
-   __DATA.__objc_ivar: 0x10
--  __DATA.__data: 0x3760
-+  __DATA.__data: 0x37c0
-   __DATA.__objc_stublist: 0x18
-   __DATA.__common: 0x58
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4676
--  Symbols:   1949
+-  Symbols:   1836
 -  CStrings:  492
 +  Functions: 4743
-+  Symbols:   1950
++  Symbols:   1837
 +  CStrings:  499
- 
 Symbols:
 + __DATA__TtC15PreviewShellKit21JITProductSeedTracker
 + __IVARS__TtC15PreviewShellKit21JITProductSeedTracker

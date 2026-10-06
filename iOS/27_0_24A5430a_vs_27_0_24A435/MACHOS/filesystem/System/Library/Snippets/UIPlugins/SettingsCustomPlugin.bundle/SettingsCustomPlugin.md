@@ -2,6 +2,8 @@
 
 > `/System/Library/Snippets/UIPlugins/SettingsCustomPlugin.bundle/SettingsCustomPlugin`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_746c : 12 -> 20

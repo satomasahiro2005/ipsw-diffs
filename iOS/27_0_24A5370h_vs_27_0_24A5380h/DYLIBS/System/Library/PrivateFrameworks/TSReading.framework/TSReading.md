@@ -2,49 +2,21 @@
 
 > `/System/Library/PrivateFrameworks/TSReading.framework/TSReading`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x340fb4
-+  __TEXT.__text: 0x340a0c
-   __TEXT.__objc_methlist: 0x34110
-   __TEXT.__const: 0x4778
-   __TEXT.__cstring: 0x48711
--  __TEXT.__gcc_except_tab: 0xcb14
-+  __TEXT.__gcc_except_tab: 0xcb08
-   __TEXT.__ustring: 0xf4
-   __TEXT.__oslogstring: 0x120
--  __TEXT.__unwind_info: 0xf108
-+  __TEXT.__unwind_info: 0xf0e0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__cstring : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__objc_ivar : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x340fb4` | `0x340a0c` | **`-0x5a8`** |
+| `__TEXT.__unwind_info` | `0xf108` | `0xf0e0` | **`-0x28`** |
+| `__TEXT.__gcc_except_tab` | `0xcb14` | `0xcb08` | **`-0xc`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
+```diff
 Functions:
 ~ __ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE17find_first_not_ofB9fqn220106EPKcm : 144 -> 140
 ~ __ZNK9EQKitPath14appendToCGPathEP6CGPathPK17CGAffineTransformPKNSt3__16vectorI7CGPointNS5_9allocatorIS7_EEEE : 388 -> 376
@@ -161,5 +133,4 @@ Functions:
 CStrings:
 + "Jun 23 2026"
 - "Jun 13 2026"
-
 ```

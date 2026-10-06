@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/DigitalSeparation.framework/DigitalSeparation`
 
-```diff
+### Section Size Changes
 
- 653.0.10.0.0
--  __TEXT.__text: 0x3a08c
-+  __TEXT.__text: 0x3a090
-   __TEXT.__objc_methlist: 0x202c
-   __TEXT.__cstring: 0x1927
-   __TEXT.__const: 0xbc8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3bd00` | `0x3bd04` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2610f0ae4 -> sub_25ff3dae4 : 144 -> 148
+~ sub_263d19e84 -> sub_263007e84 : 164 -> 168
 ```

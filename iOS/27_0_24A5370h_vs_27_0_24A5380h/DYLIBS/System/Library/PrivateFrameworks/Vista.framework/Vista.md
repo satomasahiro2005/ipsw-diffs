@@ -2,38 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/Vista.framework/Vista`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x828b0
-+  __TEXT.__text: 0x826c8
-   __TEXT.__objc_methlist: 0x35a4
-   __TEXT.__const: 0x1590
--  __TEXT.__gcc_except_tab: 0xaa34
-+  __TEXT.__gcc_except_tab: 0xaa30
-   __TEXT.__cstring: 0x303c
-   __TEXT.__oslogstring: 0x3399
-   __TEXT.__dlopen_cstrs: 0x4c
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x828b0` | `0x826c8` | **`-0x1e8`** |
+| `__TEXT.__gcc_except_tab` | `0xaa34` | `0xaa30` | **`-0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN3vst5splat35ProxyRendererImplVolumeProxyBuffersD2Ev : 96 -> 84
 ~ __ZN3vst4core11StackVectorINS_5splat13ProxyRenderer10VolumeInfoELm8EEC2EOS5_ : 312 -> 288
@@ -62,5 +40,4 @@ Functions:
 ~ __ZNSt3__135__uninitialized_allocator_copy_implB9fqe220106INS_9allocatorIN3vst4core3ply8PropertyEEEPKS5_S8_PS5_EET2_RT_T0_T1_SA_ : 236 -> 220
 ~ __ZN3vst5splat14VolumeDataImpl19_loadReduced3DGSPlyENSt3__14spanIKNS_4core3ply7ElementELm18446744073709551615EEE : 3304 -> 3276
 ~ __ZN3vst5splat24getAspenVertexPropertiesENSt3__14spanIKNS_4core3ply7ElementELm18446744073709551615EEE : 304 -> 288
-
 ```

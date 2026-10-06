@@ -2,14 +2,15 @@
 
 > `/usr/lib/libARI.dylib`
 
-```diff
+### Section Size Changes
 
- 1640.0.0.0.0
--  __TEXT.__text: 0x2072b4
-+  __TEXT.__text: 0x207354
-   __TEXT.__init_offsets: 0x8
-   __TEXT.__const: 0x15300
-   __TEXT.__gcc_except_tab: 0x1abd4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2072b4` | `0x207354` | **`+0xa0`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__16vectorIP8os_log_sNS_9allocatorIS2_EEE24__emplace_back_slow_pathIJS2_EEEPS2_DpOT_ : 188 -> 180
 ~ __ZNK6AriMsg13getEncodedBufEPj : 2796 -> 2800

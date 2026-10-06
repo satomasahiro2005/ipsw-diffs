@@ -2,84 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/TSPersistence.framework/TSPersistence`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x2f63f` | `0x2f258` | **`-0x3e7`** |
+| `__TEXT.__text` | `0x24540c` | `0x2450cc` | **`-0x340`** |
+| `__TEXT.__gcc_except_tab` | `0x28b78` | `0x28a70` | **`-0x108`** |
+| `__AUTH_CONST.__cfstring` | `0x40c0` | `0x4180` | **`+0xc0`** |
+| `__AUTH_CONST.__const` | `0xaac0` | `0xab60` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x54b0` | `0x5530` | **`+0x80`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5628` | `0x5668` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x10380` | `0x103b8` | **`+0x38`** |
+| `__DATA_CONST.__got` | `0x740` | `0x768` | **`+0x28`** |
+| `__AUTH_CONST.__objc_const` | `0x18040` | `0x18030` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xa28` | `0xa30` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0xd010` | `0xd018` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -487.0.0.0.0
--  __TEXT.__text: 0x24540c
 +488.0.0.0.0
-+  __TEXT.__text: 0x2450cc
-   __TEXT.__init_offsets: 0x14
--  __TEXT.__objc_methlist: 0xd010
--  __TEXT.__gcc_except_tab: 0x28b78
-+  __TEXT.__objc_methlist: 0xd018
-+  __TEXT.__gcc_except_tab: 0x28a70
-   __TEXT.__const: 0xab00
--  __TEXT.__cstring: 0x2f63f
-+  __TEXT.__cstring: 0x2f258
-   __TEXT.__swift5_typeref: 0x86
-   __TEXT.__constg_swiftt: 0x14c
-   __TEXT.__swift5_reflstr: 0x2d
-   __TEXT.__swift5_fieldmd: 0xa8
-   __TEXT.__swift5_proto: 0x10
-   __TEXT.__swift5_types: 0x18
--  __TEXT.__unwind_info: 0x10380
-+  __TEXT.__unwind_info: 0x103b8
-   __TEXT.__eh_frame: 0x48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x54b0
-+  __DATA_CONST.__const: 0x5530
-   __DATA_CONST.__objc_classlist: 0x768
-   __DATA_CONST.__objc_catlist: 0xb8
-   __DATA_CONST.__objc_protolist: 0x2b8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x98
--  __DATA_CONST.__objc_selrefs: 0x5628
-+  __DATA_CONST.__objc_selrefs: 0x5668
-   __DATA_CONST.__objc_protorefs: 0x68
-   __DATA_CONST.__objc_superrefs: 0x668
-   __DATA_CONST.__objc_arraydata: 0x130
--  __DATA_CONST.__got: 0x740
--  __AUTH_CONST.__const: 0xaac0
--  __AUTH_CONST.__cfstring: 0x40c0
--  __AUTH_CONST.__objc_const: 0x18040
-+  __DATA_CONST.__got: 0x768
-+  __AUTH_CONST.__const: 0xab60
-+  __AUTH_CONST.__cfstring: 0x4180
-+  __AUTH_CONST.__objc_const: 0x18030
-   __AUTH_CONST.__weak_auth_got: 0x118
-   __AUTH_CONST.__objc_arrayobj: 0x2d0
-   __AUTH_CONST.__objc_intobj: 0x18
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0xa28
-+  __AUTH_CONST.__auth_got: 0xa30
-   __AUTH.__objc_data: 0x4b98
-   __AUTH.__data: 0xa8
-   __DATA.__objc_ivar: 0x1074
 
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
 +  - /System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/AppEditIn.framework/AppEditIn
 +  - /System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/TSFundamentals.framework/TSFundamentals
 +  - /System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/TSGeometry.framework/TSGeometry
-   - /System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/TSUtility.framework/TSUtility
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12786
 -  Symbols:   5096
 -  CStrings:  3446
 +  Functions: 12802
 +  Symbols:   5103
 +  CStrings:  3445
- 
 Symbols:
 + _CFRetain
 + _OBJC_CLASS_$_AEIPixelmatorDocumentPreviewProvider

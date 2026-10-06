@@ -2,92 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/HealthMenstrualCyclesDaemon.framework/HealthMenstrualCyclesDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9203c` | `0x93ae8` | **`+0x1aac`** |
+| `__AUTH_CONST.__objc_const` | `0x6a48` | `0x70a8` | **`+0x660`** |
+| `__TEXT.__objc_methlist` | `0x37ec` | `0x3b24` | **`+0x338`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2e58` | `0x3080` | **`+0x228`** |
+| `__TEXT.__gcc_except_tab` | `0xe28` | `0xfc0` | **`+0x198`** |
+| `__DATA_CONST.__const` | `0x10a0` | `0x1180` | **`+0xe0`** |
+| `__TEXT.__oslogstring` | `0x6b5c` | `0x6c2c` | **`+0xd0`** |
+| `__TEXT.__cstring` | `0x39c1` | `0x3a51` | **`+0x90`** |
+| `__DATA.__objc_ivar` | `0x4bc` | `0x53c` | **`+0x80`** |
+| `__AUTH_CONST.__const` | `0x12b8` | `0x1318` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x18a0` | `0x1900` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0x410` | `0x460` | **`+0x50`** |
+| `__AUTH_CONST.__cfstring` | `0x2460` | `0x2480` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x11f8` | `0x1208` | **`+0x10`** |
+| `__DATA.__data` | `0x18f8` | `0x18e8` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0xd48` | `0xd40` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x1a8` | `0x1b0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.45.2.4
--  __TEXT.__text: 0x8eef0
--  __TEXT.__objc_methlist: 0x37ec
 +7027.1.54.2.3
-+  __TEXT.__text: 0x90924
-+  __TEXT.__objc_methlist: 0x3b24
-   __TEXT.__const: 0x1e30
--  __TEXT.__gcc_except_tab: 0xe28
--  __TEXT.__oslogstring: 0x6b5c
--  __TEXT.__cstring: 0x39c1
-+  __TEXT.__gcc_except_tab: 0xfc0
-+  __TEXT.__oslogstring: 0x6c2c
-+  __TEXT.__cstring: 0x3a51
-   __TEXT.__constg_swiftt: 0x81c
-   __TEXT.__swift5_typeref: 0xd1a
-   __TEXT.__swift5_reflstr: 0x871
 
-   __TEXT.__swift5_proto: 0x134
-   __TEXT.__swift5_types: 0x98
-   __TEXT.__swift5_protos: 0xc
--  __TEXT.__unwind_info: 0x20c0
-+  __TEXT.__unwind_info: 0x2128
-   __TEXT.__eh_frame: 0xed8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x10a0
--  __DATA_CONST.__objc_classlist: 0x1a8
-+  __DATA_CONST.__const: 0x1180
-+  __DATA_CONST.__objc_classlist: 0x1b0
-   __DATA_CONST.__objc_catlist: 0x90
-   __DATA_CONST.__objc_protolist: 0x280
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2e58
-+  __DATA_CONST.__objc_selrefs: 0x3080
-   __DATA_CONST.__objc_protorefs: 0xe0
-   __DATA_CONST.__objc_superrefs: 0x118
-   __DATA_CONST.__objc_arraydata: 0xc8
--  __DATA_CONST.__got: 0xd48
--  __AUTH_CONST.__const: 0x12b8
--  __AUTH_CONST.__cfstring: 0x2460
--  __AUTH_CONST.__objc_const: 0x6a48
-+  __DATA_CONST.__got: 0xd40
-+  __AUTH_CONST.__const: 0x1318
-+  __AUTH_CONST.__cfstring: 0x2480
-+  __AUTH_CONST.__objc_const: 0x70a8
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x258
-   __AUTH_CONST.__objc_doubleobj: 0x40
-   __AUTH_CONST.__objc_arrayobj: 0x78
--  __AUTH_CONST.__auth_got: 0x11f8
--  __AUTH.__objc_data: 0x410
-+  __AUTH_CONST.__auth_got: 0x1208
-+  __AUTH.__objc_data: 0x460
-   __AUTH.__data: 0x18
--  __DATA.__objc_ivar: 0x4bc
--  __DATA.__data: 0x18f8
-+  __DATA.__objc_ivar: 0x53c
-+  __DATA.__data: 0x18e8
-   __DATA.__objc_stublist: 0x8
-   __DATA_DIRTY.__objc_data: 0x11c0
-   __DATA_DIRTY.__data: 0xd20
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 +  - /usr/lib/libsqlite3.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
-   - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2424
 -  Symbols:   3006
 -  CStrings:  832
 +  Functions: 2502
 +  Symbols:   3132
 +  CStrings:  838
- 
 Symbols:
 + +[HDMCAnalysisManager _test_isFingerprint:equalToFingerprint:]
 + +[HDSampleEntity(HKMenstrualCycles) _hdmc_sampleInfo:inTransaction:cacheKey:error:typesProvider:]

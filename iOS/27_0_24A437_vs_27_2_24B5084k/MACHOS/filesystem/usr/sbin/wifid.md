@@ -2,103 +2,55 @@
 
 > `/usr/sbin/wifid`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_imageinfo`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__auth_got`
-- `__DATA_CONST.__auth_ptr`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c3d90` | `0x1c40e0` | **`+0x350`** |
+| `__TEXT.__cstring` | `0x75c31` | `0x75dc8` | **`+0x197`** |
+| `__TEXT.__objc_stubs` | `0x15040` | `0x150a0` | **`+0x60`** |
+| `__TEXT.__objc_methname` | `0x1b3fd` | `0x1b455` | **`+0x58`** |
+| `__DATA_CONST.__const` | `0x7c48` | `0x7c80` | **`+0x38`** |
+| `__DATA_CONST.__cfstring` | `0x1c920` | `0x1c900` | **`-0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x29b8` | `0x29d8` | **`+0x20`** |
+| `__DATA.__objc_selrefs` | `0x63b8` | `0x63d0` | **`+0x18`** |
+| `__DATA.__common` | `0x68` | `0x60` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x1400` | `0x1408` | **`+0x8`** |
+| `__TEXT.__const` | `0xe6b` | `0xe73` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_data`
-- `__DATA.__data`
+- `__DATA_CONST.__auth_got`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_imageinfo`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -2027.32.0.0.0
--  __TEXT.__text: 0x1ba6bc
 +2029.6.0.0.0
-+  __TEXT.__text: 0x1ba9f4
-   __TEXT.__auth_stubs: 0x2bf0
--  __TEXT.__objc_stubs: 0x15040
-+  __TEXT.__objc_stubs: 0x150a0
-   __TEXT.__objc_methlist: 0x68b0
--  __TEXT.__gcc_except_tab: 0x29b8
--  __TEXT.__const: 0xe6b
--  __TEXT.__cstring: 0x75c31
--  __TEXT.__objc_methname: 0x1b3fd
-+  __TEXT.__gcc_except_tab: 0x29d8
-+  __TEXT.__const: 0xe73
-+  __TEXT.__cstring: 0x75dc8
-+  __TEXT.__objc_methname: 0x1b455
-   __TEXT.__objc_classname: 0x85e
-   __TEXT.__objc_methtype: 0x33ac
-   __TEXT.__dlopen_cstrs: 0x33c
-   __TEXT.__oslogstring: 0x27ef
-   __TEXT.__ustring: 0x63e
--  __TEXT.__unwind_info: 0x6cb0
--  __DATA_CONST.__const: 0x7c48
--  __DATA_CONST.__cfstring: 0x1c920
-+  __TEXT.__unwind_info: 0x6cb8
-+  __DATA_CONST.__const: 0x7c80
-+  __DATA_CONST.__cfstring: 0x1c900
-   __DATA_CONST.__objc_classlist: 0x200
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0xc8
 
-   __DATA_CONST.__objc_arrayobj: 0x288
-   __DATA_CONST.__objc_dictobj: 0x208
-   __DATA_CONST.__auth_got: 0x1608
--  __DATA_CONST.__got: 0x1400
-+  __DATA_CONST.__got: 0x1408
-   __DATA_CONST.__auth_ptr: 0x160
-   __DATA.__objc_const: 0xd480
--  __DATA.__objc_selrefs: 0x63b8
-+  __DATA.__objc_selrefs: 0x63d0
-   __DATA.__objc_ivar: 0xa28
-   __DATA.__objc_data: 0x1400
-   __DATA.__data: 0x1130
--  __DATA.__common: 0x68
-+  __DATA.__common: 0x60
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-
-   - /System/Library/Frameworks/UserNotifications.framework/UserNotifications
-   - /System/Library/Frameworks/_LocationEssentials.framework/_LocationEssentials
-   - /System/Library/PrivateFrameworks/AssertionServices.framework/AssertionServices
 +  - /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard
-   - /System/Library/PrivateFrameworks/CPMS.framework/CPMS
-   - /System/Library/PrivateFrameworks/CaptiveNetwork.framework/CaptiveNetwork
-   - /System/Library/PrivateFrameworks/CarKit.framework/CarKit
 
-   - /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
-   - /System/Library/PrivateFrameworks/MobileStoreDemoKit.framework/MobileStoreDemoKit
-   - /System/Library/PrivateFrameworks/NanoRegistry.framework/NanoRegistry
 +  - /System/Library/PrivateFrameworks/OSAnalytics.framework/OSAnalytics
-   - /System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer
-   - /System/Library/PrivateFrameworks/Rapport.framework/Rapport
-   - /System/Library/PrivateFrameworks/RegulatoryDomain.framework/RegulatoryDomain
 
-   - /System/Library/PrivateFrameworks/WiFiPeerToPeer.framework/WiFiPeerToPeer
-   - /System/Library/PrivateFrameworks/WiFiPolicy.framework/WiFiPolicy
-   - /System/Library/PrivateFrameworks/WirelessCoexManager.framework/WirelessCoexManager
 +  - /System/Library/PrivateFrameworks/WirelessPerception.framework/WirelessPerception
 +  - /System/Library/PrivateFrameworks/WirelessPerceptionRuntime.framework/WirelessPerceptionRuntime
-   - /usr/lib/libAWDSupportFramework.dylib
-   - /usr/lib/libCTGreenTeaLogger.dylib
-   - /usr/lib/libDHCPServer.A.dylib
 
-   - /usr/lib/liblockdown.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libpcap.A.dylib
 -  Functions: 8814
 -  Symbols:   1348
 -  CStrings:  17375
@@ -111,7 +63,6 @@
 +  Functions: 8779
 +  Symbols:   1356
 +  CStrings:  17384
- 
 Symbols:
 + __swift_FORCE_LOAD_$_swiftCoreFoundation
 + __swift_FORCE_LOAD_$_swiftDispatch

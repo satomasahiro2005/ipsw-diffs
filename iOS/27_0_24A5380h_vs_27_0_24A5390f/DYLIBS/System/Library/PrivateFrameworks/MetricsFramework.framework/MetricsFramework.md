@@ -2,109 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/MetricsFramework.framework/MetricsFramework`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift5_protos`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__const` | `0x1b8` | `0x2768` | **`+0x25b0`** |
+| `__TEXT.__text` | `0x10d5d8` | `0x10b068` | **`-0x2570`** |
+| `__AUTH_CONST.__cfstring` | `0x44e0` | `0x6440` | **`+0x1f60`** |
+| `__TEXT.__cstring` | `0x71b0` | `0x80a0` | **`+0xef0`** |
+| `__TEXT.__eh_frame` | `0x77a8` | `0x76d8` | **`-0xd0`** |
+| `__AUTH.__data` | `0x47c8` | `0x4880` | **`+0xb8`** |
+| `__AUTH_CONST.__objc_const` | `0x5718` | `0x57a8` | **`+0x90`** |
+| `__TEXT.__constg_swiftt` | `0x53d4` | `0x5438` | **`+0x64`** |
+| `__TEXT.__const` | `0xd0b0` | `0xd110` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0xe58` | `0xea8` | **`+0x50`** |
+| `__TEXT.__oslogstring` | `0x6acc` | `0x6a7c` | **`-0x50`** |
+| `__TEXT.__swift5_typeref` | `0x2ea4` | `0x2ee2` | **`+0x3e`** |
+| `__AUTH_CONST.__auth_got` | `0xfe8` | `0xfb8` | **`-0x30`** |
+| `__TEXT.__swift5_capture` | `0x53c` | `0x50c` | **`-0x30`** |
+| `__TEXT.__unwind_info` | `0x3ac0` | `0x3a90` | **`-0x30`** |
+| `__AUTH_CONST.__const` | `0x8610` | `0x85e8` | **`-0x28`** |
+| `__TEXT.__swift5_fieldmd` | `0x4dd0` | `0x4df8` | **`+0x28`** |
+| `__DATA.__data` | `0x20a8` | `0x20c8` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0xbc8` | `0xbb8` | **`-0x10`** |
+| `__DATA_DIRTY.__data` | `0x33b0` | `0x33a0` | **`-0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x5848` | `0x5858` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x348` | `0x350` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x478` | `0x47c` | **`+0x4`** |
+| `__TEXT.__swift_as_cont` | `0x670` | `0x674` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0x440` | `0x444` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -3600.49.7.1.1
--  __TEXT.__text: 0x10d5d8
 +3600.49.12.1.1
-+  __TEXT.__text: 0x10b068
-   __TEXT.__objc_methlist: 0x14
--  __TEXT.__const: 0xd0b0
--  __TEXT.__swift5_typeref: 0x2ea4
--  __TEXT.__swift5_capture: 0x53c
--  __TEXT.__oslogstring: 0x6acc
--  __TEXT.__swift5_reflstr: 0x5848
-+  __TEXT.__const: 0xd110
-+  __TEXT.__swift5_typeref: 0x2ee2
-+  __TEXT.__swift5_capture: 0x50c
-+  __TEXT.__oslogstring: 0x6a7c
-+  __TEXT.__swift5_reflstr: 0x5858
-   __TEXT.__swift5_assocty: 0xdc0
--  __TEXT.__constg_swiftt: 0x53d4
--  __TEXT.__swift5_fieldmd: 0x4dd0
-+  __TEXT.__constg_swiftt: 0x5438
-+  __TEXT.__swift5_fieldmd: 0x4df8
-   __TEXT.__swift5_builtin: 0x244
--  __TEXT.__cstring: 0x71b0
-+  __TEXT.__cstring: 0x80a0
-   __TEXT.__swift5_proto: 0x800
--  __TEXT.__swift5_types: 0x478
--  __TEXT.__swift_as_entry: 0x440
-+  __TEXT.__swift5_types: 0x47c
-+  __TEXT.__swift_as_entry: 0x444
-   __TEXT.__swift_as_ret: 0x3e8
--  __TEXT.__swift_as_cont: 0x670
-+  __TEXT.__swift_as_cont: 0x674
-   __TEXT.__swift5_protos: 0x74
--  __TEXT.__unwind_info: 0x3ac0
--  __TEXT.__eh_frame: 0x77a8
-+  __TEXT.__unwind_info: 0x3a90
-+  __TEXT.__eh_frame: 0x76d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1b8
--  __DATA_CONST.__objc_classlist: 0x348
-+  __DATA_CONST.__const: 0x2768
-+  __DATA_CONST.__objc_classlist: 0x350
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xbc8
-+  __DATA_CONST.__objc_selrefs: 0xbb8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x8610
--  __AUTH_CONST.__cfstring: 0x44e0
--  __AUTH_CONST.__objc_const: 0x5718
--  __AUTH_CONST.__auth_got: 0xfe8
--  __AUTH.__objc_data: 0xe58
--  __AUTH.__data: 0x47c8
--  __DATA.__data: 0x20a8
-+  __AUTH_CONST.__const: 0x85e8
-+  __AUTH_CONST.__cfstring: 0x6440
-+  __AUTH_CONST.__objc_const: 0x57a8
-+  __AUTH_CONST.__auth_got: 0xfb8
-+  __AUTH.__objc_data: 0xea8
-+  __AUTH.__data: 0x4880
-+  __DATA.__data: 0x20c8
-   __DATA.__common: 0x1b0
-   __DATA.__bss: 0xd000
-   __DATA_DIRTY.__objc_data: 0x900
--  __DATA_DIRTY.__data: 0x33b0
-+  __DATA_DIRTY.__data: 0x33a0
-   __DATA_DIRTY.__bss: 0x2080
-   __DATA_DIRTY.__common: 0x120
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4883
--  Symbols:   2155
+-  Symbols:   1780
 -  CStrings:  1442
 +  Functions: 4870
-+  Symbols:   2156
++  Symbols:   1783
 +  CStrings:  1691
- 
 Symbols:
 + _OBJC_CLASS_$_BMSiriODDAssistantLLMSiriDigests
 + __DATA__TtC16MetricsFramework26LLMSiriDigestBiomeReporter
 + __IVARS__TtC16MetricsFramework26LLMSiriDigestBiomeReporter
 + __METACLASS_DATA__TtC16MetricsFramework26LLMSiriDigestBiomeReporter
-+ _objc_msgSend$ODDAssistantLLMSiriDigests
-+ _objc_msgSend$initWithOddId:deviceAggregationId:userAggregationId:digestDate:userAggregationIdRotationDate:userAggregationIdExpirationDate:deviceType:programCode:systemBuild:dataSharingOptInStatus:viewInterface:audioInterfaceVendorId:audioInterfaceProductId:asrLocation:nlLocation:siriInputLocaleLanguageCode:siriInputLocaleCountryCode:subDomain:invocationSource:executionCategory:orchestrationMode:totalTurnCount:validTurnCount:wkaSummarizationCount:onScreenAwarenessCount:contextualFollowUpCount:siriAppResumeCount:
 + _symbolic _____ 16MetricsFramework26LLMSiriDigestBiomeReporterC
 + _symbolic _____ySo32BMSiriODDAssistantLLMSiriDigestsCG 11DeepThought12BiomeDonatorC
 + _symbolic _____y_____G 11DeepThought13BatchReporterC 16MetricsFramework013LLMSiriDigestD0C
@@ -112,10 +57,6 @@ Symbols:
 - _OBJC_CLASS_$_NSArray
 - _OBJC_CLASS_$_NSDictionary
 - ___swift_project_boxed_opaque_existential_0Tm
-- _objc_msgSend$__swift_objectForKeyedSubscript:
-- _objc_msgSend$allKeys
-- _objc_msgSend$count
-- _objc_msgSend$objectAtIndexedSubscript:
 - _symbolic _____ySSG s11_SetStorageC
 - _symbolic _____y_____G 11DeepThought18BookmarkedReporterC 16MetricsFramework25LLMSiriDigestSELFReporterC
 CStrings:

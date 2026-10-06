@@ -2,100 +2,45 @@
 
 > `/System/Library/Frameworks/WebKit.framework/WebKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14b8aa0` | `0x14a1e18` | **`-0x16c88`** |
+| `__TEXT.__gcc_except_tab` | `0x87aec` | `0x87e90` | **`+0x3a4`** |
+| `__TEXT.__unwind_info` | `0x57508` | `0x57198` | **`-0x370`** |
+| `__TEXT.__cstring` | `0x21c95d` | `0x21cbbd` | **`+0x260`** |
+| `__TEXT.__oslogstring` | `0x64c43` | `0x64e9b` | **`+0x258`** |
+| `__AUTH.__objc_data` | `0x64a8` | `0x6278` | **`-0x230`** |
+| `__DATA_DIRTY.__objc_data` | `0x1f68` | `0x2198` | **`+0x230`** |
+| `__AUTH_CONST.__const` | `0x70ce8` | `0x70e18` | **`+0x130`** |
+| `__DATA.__common` | `0x1398` | `0x13f8` | **`+0x60`** |
+| `__TEXT.__objc_methlist` | `0x1b570` | `0x1b5b8` | **`+0x48`** |
+| `__TEXT.__const` | `0x9a24` | `0x9a64` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x232b0` | `0x232e8` | **`+0x38`** |
+| `__DATA.__data` | `0x41f0` | `0x41bc` | **`-0x34`** |
+| `__DATA_CONST.__objc_selrefs` | `0x11990` | `0x119c0` | **`+0x30`** |
+| `__DATA_DIRTY.__bss` | `0x2252` | `0x222a` | **`-0x28`** |
+| `__AUTH_CONST.__auth_got` | `0xd978` | `0xd998` | **`+0x20`** |
+| `__AUTH_CONST.__objc_const` | `0x2a950` | `0x2a968` | **`+0x18`** |
+| `__DATA_DIRTY.__data` | `0x54b0` | `0x54c8` | **`+0x18`** |
+| `__DATA.__bss` | `0x4b00` | `0x4af0` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x24f0` | `0x24e8` | **`-0x8`** |
+| `__DATA_DIRTY.__common` | `0x3248` | `0x3250` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -625.2.4.1.0
--  __TEXT.__text: 0x1469048
 +625.2.5.10.1
-+  __TEXT.__text: 0x1453718
-   __TEXT.__delay_helper: 0xdc
--  __TEXT.__objc_methlist: 0x1b570
-+  __TEXT.__objc_methlist: 0x1b5b8
-   __TEXT.__dlsym_cstr: 0xb98
-   __TEXT.__getClass_cstr: 0xcbb
--  __TEXT.__const: 0x9a24
--  __TEXT.__gcc_except_tab: 0x87aec
--  __TEXT.__cstring: 0x21c95d
-+  __TEXT.__const: 0x9a64
-+  __TEXT.__gcc_except_tab: 0x87e90
-+  __TEXT.__cstring: 0x21cbbd
-   __TEXT.__swift5_typeref: 0x1c0a
-   __TEXT.__constg_swiftt: 0x1c28
-   __TEXT.__swift5_reflstr: 0xbd8
 
-   __TEXT.__swift_as_ret: 0x174
-   __TEXT.__swift_as_cont: 0x24c
-   __TEXT.__swift5_types2: 0x8
--  __TEXT.__oslogstring: 0x64c43
-+  __TEXT.__oslogstring: 0x64e9b
-   __TEXT.__ustring: 0xddc
--  __TEXT.__unwind_info: 0x5f8b0
-+  __TEXT.__unwind_info: 0x5f528
-   __TEXT.__eh_frame: 0xa7b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x232b0
-+  __DATA_CONST.__const: 0x232e8
-   __DATA_CONST.__objc_classlist: 0xce8
-   __DATA_CONST.__objc_catlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x478
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x11990
-+  __DATA_CONST.__objc_selrefs: 0x119c0
-   __DATA_CONST.__objc_protorefs: 0xa8
-   __DATA_CONST.__objc_superrefs: 0xa08
-   __DATA_CONST.__objc_arraydata: 0x660
--  __DATA_CONST.__got: 0x24f0
--  __AUTH_CONST.__const: 0x70ce8
-+  __DATA_CONST.__got: 0x24e8
-+  __AUTH_CONST.__const: 0x70e18
-   __AUTH_CONST.__cfstring: 0x13c40
--  __AUTH_CONST.__objc_const: 0x2a950
-+  __AUTH_CONST.__objc_const: 0x2a968
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x618
-   __AUTH_CONST.__objc_dictobj: 0x140
-   __AUTH_CONST.__objc_arrayobj: 0x108
-   __AUTH_CONST.__objc_doubleobj: 0x20
--  __AUTH_CONST.__auth_got: 0xd978
--  __AUTH.__objc_data: 0x64a8
-+  __AUTH_CONST.__auth_got: 0xd998
-+  __AUTH.__objc_data: 0x6278
-   __AUTH.__data: 0xd58
-   __AUTH.__thread_vars: 0x60
-   __AUTH.__thread_bss: 0x20
-   __DATA.__objc_ivar: 0x1140
--  __DATA.__data: 0x41f0
--  __DATA.__common: 0x1398
-+  __DATA.__data: 0x41bc
-+  __DATA.__common: 0x13f8
-   __DATA_DIRTY.__objc_ivar: 0x4fc
--  __DATA_DIRTY.__objc_data: 0x1f68
--  __DATA_DIRTY.__data: 0x54b0
--  __DATA_DIRTY.__bss: 0x2252
--  __DATA_DIRTY.__common: 0x3248
-+  __DATA_DIRTY.__objc_data: 0x2198
-+  __DATA_DIRTY.__data: 0x54c8
-+  __DATA_DIRTY.__bss: 0x222a
-+  __DATA_DIRTY.__common: 0x3250
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/BrowserEngineKit.framework/BrowserEngineKit
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 77407
--  Symbols:   114556
+-  Symbols:   108572
 -  CStrings:  19651
 +  Functions: 77073
-+  Symbols:   114213
++  Symbols:   108227
 +  CStrings:  19659
- 
 Symbols:
 + +[WKWebView(WKTesting) _isAccessibilityEnabledForTesting]
 + +[WKWebView(WKTesting) _resetAccessibilityModeForTesting]
@@ -443,8 +388,6 @@ Symbols:
 + ____ZN6WebKit23SecurityFlagsController25platformRequestRemoteListEy_block_invoke
 + ____ZN6WebKit23SecurityFlagsController32platformObserveRemoteListChangesEv_block_invoke
 + ___block_descriptor_32_e24_v16?0"NSNotification"8l
-+ _objc_msgSend$_webViewDidCompleteApplePayPayment:
-+ _objc_msgSend$requestDisabledSecurityFlags:
 - GCC_except_table1000
 - GCC_except_table1026
 - GCC_except_table1028

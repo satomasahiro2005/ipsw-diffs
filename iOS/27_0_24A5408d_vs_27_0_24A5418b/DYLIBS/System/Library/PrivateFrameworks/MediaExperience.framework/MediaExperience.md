@@ -2,80 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/MediaExperience.framework/MediaExperience`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2534a8` | `0x252aec` | **`-0x9bc`** |
+| `__AUTH_CONST.__objc_const` | `0xd190` | `0xcec0` | **`-0x2d0`** |
+| `__AUTH_CONST.__cfstring` | `0x1c100` | `0x1bfe0` | **`-0x120`** |
+| `__TEXT.__objc_methlist` | `0x88d8` | `0x8818` | **`-0xc0`** |
+| `__TEXT.__gcc_except_tab` | `0x4e0c` | `0x4eb4` | **`+0xa8`** |
+| `__AUTH.__objc_data` | `0x1db0` | `0x1d10` | **`-0xa0`** |
+| `__TEXT.__unwind_info` | `0x5fe0` | `0x5f58` | **`-0x88`** |
+| `__DATA_CONST.__const` | `0x72c0` | `0x7248` | **`-0x78`** |
+| `__TEXT.__cstring` | `0x38c1a` | `0x38bac` | **`-0x6e`** |
+| `__DATA_CONST.__objc_selrefs` | `0x54a8` | `0x5448` | **`-0x60`** |
+| `__DATA.__objc_ivar` | `0xca4` | `0xc70` | **`-0x34`** |
+| `__DATA.__data` | `0x1428` | `0x1410` | **`-0x18`** |
+| `__DATA_CONST.__got` | `0xd18` | `0xd08` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x320` | `0x310` | **`-0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x2f0` | `0x2e0` | **`-0x10`** |
+| `__TEXT.__oslogstring` | `0x4fcdf` | `0x4fced` | **`+0xe`** |
+
+### Other Changes
+
 ```diff
 
 -360.75.1.1.0
--  __TEXT.__text: 0x2534a8
 +360.75.1.2.0
-+  __TEXT.__text: 0x252aec
-   __TEXT.__delay_helper: 0x304
-   __TEXT.__lazy_helpers: 0xfc
--  __TEXT.__objc_methlist: 0x88d8
--  __TEXT.__cstring: 0x38c1a
-+  __TEXT.__objc_methlist: 0x8818
-+  __TEXT.__cstring: 0x38bac
-   __TEXT.__const: 0x1d08
--  __TEXT.__gcc_except_tab: 0x4e0c
--  __TEXT.__oslogstring: 0x4fcdf
-+  __TEXT.__gcc_except_tab: 0x4eb4
-+  __TEXT.__oslogstring: 0x4fced
-   __TEXT.__dlopen_cstrs: 0x613
--  __TEXT.__unwind_info: 0x5fe0
-+  __TEXT.__unwind_info: 0x5f58
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x72c0
--  __DATA_CONST.__objc_classlist: 0x320
-+  __DATA_CONST.__const: 0x7248
-+  __DATA_CONST.__objc_classlist: 0x310
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x68
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x54a8
-+  __DATA_CONST.__objc_selrefs: 0x5448
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x2f0
-+  __DATA_CONST.__objc_superrefs: 0x2e0
-   __DATA_CONST.__objc_arraydata: 0xf8
--  __DATA_CONST.__got: 0xd18
-+  __DATA_CONST.__got: 0xd08
-   __AUTH_CONST.__const: 0x4968
--  __AUTH_CONST.__cfstring: 0x1c100
--  __AUTH_CONST.__objc_const: 0xd190
-+  __AUTH_CONST.__cfstring: 0x1bfe0
-+  __AUTH_CONST.__objc_const: 0xcec0
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__lazy_load_got: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x78
 
-   __AUTH_CONST.__objc_dictobj: 0x118
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x1db0
-+  __AUTH.__objc_data: 0x1d10
-   __AUTH.__data: 0x5f0
--  __DATA.__objc_ivar: 0xca4
--  __DATA.__data: 0x1428
-+  __DATA.__objc_ivar: 0xc70
-+  __DATA.__data: 0x1410
-   __DATA.__bss: 0x1370
-   __DATA.__common: 0x5d0
-   __DATA_DIRTY.__objc_data: 0x190
-
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 10098
--  Symbols:   15985
--  CStrings:  9875
+-  Symbols:   13561
+-  CStrings:  9876
 +  Functions: 10075
-+  Symbols:   15916
-+  CStrings:  9867
- 
++  Symbols:   13504
++  CStrings:  9868
 Symbols:
 + -[MXSystemMediaCastingController_Client handleActiveClientResigned:]
 + GCC_except_table60
@@ -90,8 +50,6 @@ Symbols:
 + ___block_descriptor_48_e8_32o40o_e20_v24?0"NSError"816ls32l8s40l8
 + ___block_descriptor_48_e8_32o40r_e22_v16?0"NSDictionary"8lr40l8s32l8
 + ___block_descriptor_56_e8_32o40o48r_e22_v16?0"NSDictionary"8lr48l8s32l8s40l8
-+ _objc_msgSend$handleActiveClientResigned
-+ _objc_msgSend$handleActiveClientResigned:
 - -[MXMDEExtensionRequest .cxx_destruct]
 - -[MXMDEExtensionRequest completeWithReplyError:result:]
 - -[MXMDEExtensionRequest dealloc]
@@ -162,20 +120,6 @@ Symbols:
 - _kMXSystemMediaCastingControllerMsgParam_RequestID
 - _kMXSystemMediaCastingControllerReplyParam_ErrorCode
 - _kMXSystemMediaCastingControllerReplyParam_Result
-- _objc_msgSend$completeWithError:result:
-- _objc_msgSend$completeWithReplyError:result:
-- _objc_msgSend$domain
-- _objc_msgSend$failUnresponsiveWithError:
-- _objc_msgSend$flushPendingHandlersWithError:
-- _objc_msgSend$handleAsyncResult:
-- _objc_msgSend$initWithClient:resultOpCode:requestID:
-- _objc_msgSend$initWithOperation:instance:completion:
-- _objc_msgSend$noteUnresponsiveExtensionForOperation:error:
-- _objc_msgSend$registerPendingHandler:
-- _objc_msgSend$remoteObjectProxyWithErrorHandler:
-- _objc_msgSend$resolveUnresponsive:error:result:
-- _objc_msgSend$sendVolumeRequestForOperation:completionHandler:send:
-- _objc_msgSend$takePendingHandlerForRequestID:
 CStrings:
 + "-MXSystemMediaCastingController_Server- %s: Failed to create ReportActiveClientResigned message for %{public}@, err %d"
 + "-MXSystemMediaCastingController_Server- %s: Timeout waiting for completion handler"
@@ -187,6 +131,8 @@ CStrings:
 + "-[MXSystemCastingExtensionInstance sendData:forApplicationID:withCompletionHandler:]_block_invoke"
 + "-[MXSystemCastingExtensionInstance setVolume:forDevice:completionHandler:]_block_invoke"
 + "-[MXSystemCastingExtensionInstance startApplicationWithURL:applicationID:launchType:withCompletionHandler:]_block_invoke"
++ "00:52:54"
++ "Aug 10 2026"
 + "SemaphoreTimedOut"
 + "Send data operation failed"
 + "dataLength"
@@ -202,6 +148,8 @@ CStrings:
 - "-[MXSystemCastingExtensionInstance sendVolumeRequestForOperation:completionHandler:send:]_block_invoke_3"
 - "-[MXSystemCastingExtensionInstance startApplicationWithURL:applicationID:launchType:withCompletionHandler:]_block_invoke_2"
 - "-[MXSystemMediaCastingController_Client handleAsyncResult:]"
+- "08:54:07"
+- "Aug  4 2026"
 - "Extension was unresponsive to a request"
 - "RequestID"
 - "Result"

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AfibBurden.framework/AfibBurden`
 
-```diff
+### Section Size Changes
 
- 20.0.0.0.0
--  __TEXT.__text: 0xfbe8
-+  __TEXT.__text: 0xfc4c
-   __TEXT.__objc_methlist: 0x2ac
-   __TEXT.__const: 0xae0
-   __TEXT.__gcc_except_tab: 0xe38
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfbe8` | `0xfc4c` | **`+0x64`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN8nlohmann6detail9dtoa_impl36get_cached_power_for_binary_exponentEi : 184 -> 188
 ~ __ZN9beryllium18BerylliumProcessor42interpolate_Tachograms_and_calc_AFibBurdenERKNS_7input_tERNS_8output_tE : 2564 -> 2588

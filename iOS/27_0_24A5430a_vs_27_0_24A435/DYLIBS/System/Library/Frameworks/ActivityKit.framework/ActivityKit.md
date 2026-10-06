@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/ActivityKit.framework/ActivityKit`
 
-```diff
+### Section Size Changes
 
- 312.100.0.0.0
--  __TEXT.__text: 0xc0adc
-+  __TEXT.__text: 0xc0b18
-   __TEXT.__objc_methlist: 0xf04
-   __TEXT.__const: 0xed4a
-   __TEXT.__cstring: 0x1e01
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc0adc` | `0xc0b18` | **`+0x3c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_19e65d88c -> sub_19e72188c : 4180 -> 4184
 ~ sub_19e65f3c8 -> sub_19e7233cc : 1356 -> 1340

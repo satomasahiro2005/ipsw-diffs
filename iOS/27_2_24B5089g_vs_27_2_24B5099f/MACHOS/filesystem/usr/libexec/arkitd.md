@@ -2,16 +2,15 @@
 
 > `/usr/libexec/arkitd`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
-- `__TEXT.__const`
 - `__DATA.__objc_selrefs`
+- `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -781.40.3.0.0
 +781.40.6.0.0
-   __TEXT.__text: 0xd88
-   __TEXT.__auth_stubs: 0x350
-   __TEXT.__objc_stubs: 0x2a0
 ```

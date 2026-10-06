@@ -2,86 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/CoordinationCore.framework/CoordinationCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4c6f4` | `0x3f3f0` | **`-0xd304`** |
+| `__AUTH_CONST.__objc_const` | `0x8168` | `0x6268` | **`-0x1f00`** |
+| `__TEXT.__objc_methlist` | `0x5114` | `0x3aac` | **`-0x1668`** |
+| `__TEXT.__oslogstring` | `0x4263` | `0x3311` | **`-0xf52`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2630` | `0x1948` | **`-0xce8`** |
+| `__DATA.__data` | `0xcc0` | `0x840` | **`-0x480`** |
+| `__AUTH_CONST.__cfstring` | `0x1380` | `0xf40` | **`-0x440`** |
+| `__TEXT.__cstring` | `0x1452` | `0x10c8` | **`-0x38a`** |
+| `__AUTH.__objc_data` | `0xcd0` | `0x960` | **`-0x370`** |
+| `__TEXT.__unwind_info` | `0x1698` | `0x1330` | **`-0x368`** |
+| `__DATA_CONST.__const` | `0x1d00` | `0x19c0` | **`-0x340`** |
+| `__TEXT.__gcc_except_tab` | `0x1ed0` | `0x1cd4` | **`-0x1fc`** |
+| `__DATA.__objc_ivar` | `0x554` | `0x43c` | **`-0x118`** |
+| `__DATA_CONST.__got` | `0x248` | `0x198` | **`-0xb0`** |
+| `__TEXT.__const` | `0x2c8` | `0x230` | **`-0x98`** |
+| `__AUTH_CONST.__const` | `0x180` | `0x120` | **`-0x60`** |
+| `__DATA_CONST.__objc_classlist` | `0x1f0` | `0x190` | **`-0x60`** |
+| `__DATA_CONST.__objc_protolist` | `0x110` | `0xb0` | **`-0x60`** |
+| `__DATA_CONST.__objc_superrefs` | `0x180` | `0x128` | **`-0x58`** |
+| `__DATA_DIRTY.__objc_data` | `0x690` | `0x640` | **`-0x50`** |
+| `__DATA.__bss` | `0x48` | `0x10` | **`-0x38`** |
+| `__AUTH_CONST.__objc_intobj` | `0x48` | `0x30` | **`-0x18`** |
+| `__DATA_CONST.__objc_protorefs` | `0x28` | `0x18` | **`-0x10`** |
+| `__DATA_CONST.__objc_catlist` | `0x18` | `0x10` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -249.0.4.0.0
--  __TEXT.__text: 0x4ae50
--  __TEXT.__objc_methlist: 0x5114
--  __TEXT.__const: 0x2c8
--  __TEXT.__gcc_except_tab: 0x1ed0
--  __TEXT.__oslogstring: 0x4263
--  __TEXT.__cstring: 0x1452
--  __TEXT.__unwind_info: 0x1c00
 +249.10.6.0.0
-+  __TEXT.__text: 0x3df34
-+  __TEXT.__objc_methlist: 0x3aac
-+  __TEXT.__const: 0x230
-+  __TEXT.__gcc_except_tab: 0x1cd4
-+  __TEXT.__oslogstring: 0x3311
-+  __TEXT.__cstring: 0x10c8
-+  __TEXT.__unwind_info: 0x17d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1d00
--  __DATA_CONST.__objc_classlist: 0x1f0
--  __DATA_CONST.__objc_catlist: 0x18
--  __DATA_CONST.__objc_protolist: 0x110
-+  __DATA_CONST.__const: 0x19c0
-+  __DATA_CONST.__objc_classlist: 0x190
-+  __DATA_CONST.__objc_catlist: 0x10
-+  __DATA_CONST.__objc_protolist: 0xb0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2630
--  __DATA_CONST.__objc_protorefs: 0x28
--  __DATA_CONST.__objc_superrefs: 0x180
-+  __DATA_CONST.__objc_selrefs: 0x1948
-+  __DATA_CONST.__objc_protorefs: 0x18
-+  __DATA_CONST.__objc_superrefs: 0x128
-   __DATA_CONST.__objc_arraydata: 0x10
--  __DATA_CONST.__got: 0x248
--  __AUTH_CONST.__const: 0x180
--  __AUTH_CONST.__cfstring: 0x1380
--  __AUTH_CONST.__objc_const: 0x8168
--  __AUTH_CONST.__objc_intobj: 0x48
-+  __DATA_CONST.__got: 0x198
-+  __AUTH_CONST.__const: 0x120
-+  __AUTH_CONST.__cfstring: 0xf40
-+  __AUTH_CONST.__objc_const: 0x6268
-+  __AUTH_CONST.__objc_intobj: 0x30
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0xcd0
--  __DATA.__objc_ivar: 0x554
--  __DATA.__data: 0xcc0
--  __DATA_DIRTY.__objc_data: 0x690
-+  __AUTH.__objc_data: 0x960
-+  __DATA.__objc_ivar: 0x43c
-+  __DATA.__data: 0x840
-+  __DATA_DIRTY.__objc_data: 0x640
-   __DATA_DIRTY.__bss: 0x60
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+
 -  - /System/Library/Frameworks/HomeKit.framework/HomeKit
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-   - /System/Library/Frameworks/Network.framework/Network
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
+
 -  - /System/Library/PrivateFrameworks/IDS.framework/IDS
-   - /System/Library/PrivateFrameworks/Rapport.framework/Rapport
+
 -  - /System/Library/PrivateFrameworks/StatusKit.framework/StatusKit
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
+
 -  Functions: 1856
--  Symbols:   4012
+-  Symbols:   3108
 -  CStrings:  635
 +  Functions: 1529
-+  Symbols:   3271
++  Symbols:   2541
 +  CStrings:  498
- 
 Symbols:
 - +[CODeviceClass isAudioAccessory]
 - +[COHomeKitAdapter setSharedInstance:]
@@ -647,180 +615,6 @@ Symbols:
 - _isAudioAccessory.result
 - _nextRetryTimeInterval.times
 - _objc_autorelease
-- _objc_msgSend$UUIDString
-- _objc_msgSend$_addAudioDestinationControllerListenerForAccessory:home:
-- _objc_msgSend$_commandPayload:
-- _objc_msgSend$_handleErrorFromMessage:incomingResponseIdentifier:from:
-- _objc_msgSend$_handleRequestFromMessage:incomingRequestIdentifier:from:
-- _objc_msgSend$_handleResponseFromMessage:incomingResponseIdentifier:from:
-- _objc_msgSend$_informObserver:aboutRecord:added:
-- _objc_msgSend$_informObserversAboutDevice:added:
-- _objc_msgSend$_postUsersChangedNotificationForHome:
-- _objc_msgSend$_recordForDevice:
-- _objc_msgSend$_removeAudioDestinationControllerListenerForAccessory:home:
-- _objc_msgSend$_retrainSubscriptionWithRetryCounter:
-- _objc_msgSend$_start
-- _objc_msgSend$_stripPotentialTokenURIWithToken:
-- _objc_msgSend$_synchronizeInitiate
-- _objc_msgSend$_synchronizePresence:
-- _objc_msgSend$_timerRequestAdded:
-- _objc_msgSend$_usersChangedInHome:
-- _objc_msgSend$acceptableResponsesForRequest:
-- _objc_msgSend$accessories
-- _objc_msgSend$accessoriesInMediaSystem:inHome:
-- _objc_msgSend$accessoriesInRoom:inHome:
-- _objc_msgSend$accessory
-- _objc_msgSend$activeTransports
-- _objc_msgSend$addDelegate:queue:
-- _objc_msgSend$addObserver:queue:
-- _objc_msgSend$addObserver:selector:name:object:
-- _objc_msgSend$arrayWithObjects:count:
-- _objc_msgSend$assertPresenceWithPresencePayload:completion:
-- _objc_msgSend$audioDestinationControllerDidUpdateForAccessory:inHome:
-- _objc_msgSend$audioDestinationControllerListeners
-- _objc_msgSend$authorizationStatus
-- _objc_msgSend$broadcast
-- _objc_msgSend$callStackSymbols
-- _objc_msgSend$callback
-- _objc_msgSend$category
-- _objc_msgSend$categoryType
-- _objc_msgSend$checkValue:forKey:isKindOfClass:error:
-- _objc_msgSend$co_IDSIdentifier
-- _objc_msgSend$co_SetIDSIdentifier:
-- _objc_msgSend$components
-- _objc_msgSend$condition
-- _objc_msgSend$currentAccessory
-- _objc_msgSend$currentMediaSystem
-- _objc_msgSend$decodeDictionary:error:
-- _objc_msgSend$defaultCenter
-- _objc_msgSend$deviceTokenURI
-- _objc_msgSend$devices
-- _objc_msgSend$dictionaryForKey:
-- _objc_msgSend$dictionaryRepresentation
-- _objc_msgSend$didAddDevice:
-- _objc_msgSend$didRemoveDevice:
-- _objc_msgSend$director
-- _objc_msgSend$discoveryDelegate
-- _objc_msgSend$encodeError:
-- _objc_msgSend$encodeRequest:withIDSIdentifier:
-- _objc_msgSend$encodeResponse:
-- _objc_msgSend$enqeueStart
-- _objc_msgSend$fromURIToken
-- _objc_msgSend$globalServiceName
-- _objc_msgSend$groups
-- _objc_msgSend$handleMessage:requestIdentifier:responseIdentifier:from:
-- _objc_msgSend$handleString
-- _objc_msgSend$hasOptedToHH2
-- _objc_msgSend$home
-- _objc_msgSend$homeForAccessory:
-- _objc_msgSend$homekit
-- _objc_msgSend$homes
-- _objc_msgSend$idsIdentifier
-- _objc_msgSend$idsPresenceProvider
-- _objc_msgSend$idsServiceProvider
-- _objc_msgSend$incomingResponseIdentifier
-- _objc_msgSend$informObserverAboutDevice:added:
-- _objc_msgSend$initWitAccessory:home:delegate:
-- _objc_msgSend$initWithConfiguration:
-- _objc_msgSend$initWithDictionary:
-- _objc_msgSend$initWithDictionary:error:
-- _objc_msgSend$initWithError:
-- _objc_msgSend$initWithHomeManager:
-- _objc_msgSend$initWithIDSService:meshName:
-- _objc_msgSend$initWithIdsIdentifier:deviceTokenURI:
-- _objc_msgSend$initWithMeshName:idsServiceName:
-- _objc_msgSend$initWithMessage:idsIdentifier:uriToken:requestIdentifier:responseIdentifier:
-- _objc_msgSend$initWithName:object:userInfo:
-- _objc_msgSend$initWithOptions:cachePolicy:
-- _objc_msgSend$initWithPresenceIdentifier:options:
-- _objc_msgSend$initWithPresenceProvider:
-- _objc_msgSend$initWithRequest:
-- _objc_msgSend$initWithRequest:at:callback:activity:
-- _objc_msgSend$initWithResponse:
-- _objc_msgSend$initWithService:
-- _objc_msgSend$initWithServiceIdentifier:
-- _objc_msgSend$initWithString:
-- _objc_msgSend$initWithUUIDString:
-- _objc_msgSend$inviteHandleFromPrimaryAccountHandle:completion:
-- _objc_msgSend$invitedHandles
-- _objc_msgSend$isAudioAccessory
-- _objc_msgSend$isSelfDevice
-- _objc_msgSend$keyPath
-- _objc_msgSend$localIDSIdentifierForDestination:
-- _objc_msgSend$lock
-- _objc_msgSend$mediaProfile
-- _objc_msgSend$mediaSystemForAccessory:inHome:
-- _objc_msgSend$mediaSystemUpdateHandlers
-- _objc_msgSend$mediaSystems
-- _objc_msgSend$message
-- _objc_msgSend$messageFactory
-- _objc_msgSend$minusSet:
-- _objc_msgSend$notificationWithName:object:
-- _objc_msgSend$numberWithInteger:
-- _objc_msgSend$object
-- _objc_msgSend$onDemandDiscoveryForRequest:
-- _objc_msgSend$onDemandRequest
-- _objc_msgSend$outgoingResponseIdentifier
-- _objc_msgSend$outstandingRequests
-- _objc_msgSend$payload
-- _objc_msgSend$payloadDictionary
-- _objc_msgSend$postNotification:
-- _objc_msgSend$presence
-- _objc_msgSend$presenceChannel
-- _objc_msgSend$presenceForMesh:
-- _objc_msgSend$presenceIdentifier
-- _objc_msgSend$presencePayload
-- _objc_msgSend$presentDevices
-- _objc_msgSend$queue
-- _objc_msgSend$registeredCommands
-- _objc_msgSend$releasePresenceWithCompletion:
-- _objc_msgSend$removeInvitedHandle:completion:
-- _objc_msgSend$requestIdentifier
-- _objc_msgSend$requestTimeout
-- _objc_msgSend$responseIdentifier
-- _objc_msgSend$retainTransientSubscriptionAssertionWithCompletion:
-- _objc_msgSend$retryAttempts
-- _objc_msgSend$retryTimer
-- _objc_msgSend$roomForAccessory:inHome:
-- _objc_msgSend$rooms
-- _objc_msgSend$rootGroup
-- _objc_msgSend$sendMessage:toDestination:completionHandler:
-- _objc_msgSend$sendMessage:toDestinations:priority:options:identifier:error:
-- _objc_msgSend$sendResponse:responseIdentifier:toDestination:
-- _objc_msgSend$service
-- _objc_msgSend$serviceDirector
-- _objc_msgSend$setAudioDestinationControllerListeners:
-- _objc_msgSend$setCurrentMediaSystem:
-- _objc_msgSend$setDelegateQueue:
-- _objc_msgSend$setDevices:
-- _objc_msgSend$setDiscoveryDelegate:
-- _objc_msgSend$setDiscretionary:
-- _objc_msgSend$setIdsBrowser:
-- _objc_msgSend$setItemValueClasses:forKeyPath:
-- _objc_msgSend$setOnDemandRequest:
-- _objc_msgSend$setPresence:
-- _objc_msgSend$setRetryAttempts:
-- _objc_msgSend$setRetryTimer:
-- _objc_msgSend$setServiceDirector:
-- _objc_msgSend$setWithObject:
-- _objc_msgSend$settings
-- _objc_msgSend$settingsForKeyPath:fromSettings:
-- _objc_msgSend$sharedInstance
-- _objc_msgSend$subarrayWithRange:
-- _objc_msgSend$tokenFromID:
-- _objc_msgSend$tokenFromURI:
-- _objc_msgSend$transportWithDiscoveryRecord:withExecutionContext:
-- _objc_msgSend$unarchivePayloadOfTypes:error:
-- _objc_msgSend$uniqueIdentifier
-- _objc_msgSend$unlock
-- _objc_msgSend$userID
-- _objc_msgSend$userInfo
-- _objc_msgSend$users
-- _objc_msgSend$validateValue:forKey:error:
-- _objc_msgSend$wait
-- _objc_msgSend$weakToStrongObjectsMapTable
-- _objc_msgSend$zoneForAccessory:inHome:
-- _objc_msgSend$zones
 - _presenceForMesh:.lock
 - _presenceForMesh:.registries
 - _settingsForKeyPath:fromSettings:.onceToken

@@ -2,105 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/HealthPlatformFoundation.framework/HealthPlatformFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x42c88` | `0x47ea0` | **`+0x5218`** |
+| `__DATA_DIRTY.__data` | `0x4b8` | `0x8b8` | **`+0x400`** |
+| `__TEXT.__const` | `0x2690` | `0x29a0` | **`+0x310`** |
+| `__DATA_DIRTY.__bss` | `0x500` | `0x800` | **`+0x300`** |
+| `__TEXT.__eh_frame` | `0x1b9c` | `0x1e2c` | **`+0x290`** |
+| `__TEXT.__unwind_info` | `0x1198` | `0x1350` | **`+0x1b8`** |
+| `__DATA.__bss` | `0x3080` | `0x3200` | **`+0x180`** |
+| `__TEXT.__swift5_fieldmd` | `0xb6c` | `0xce0` | **`+0x174`** |
+| `__AUTH_CONST.__const` | `0x1648` | `0x17b8` | **`+0x170`** |
+| `__TEXT.__constg_swiftt` | `0xd28` | `0xe8c` | **`+0x164`** |
+| `__AUTH.__data` | `0xb10` | `0x9d0` | **`-0x140`** |
+| `__AUTH_CONST.__objc_const` | `0x940` | `0xa68` | **`+0x128`** |
+| `__TEXT.__swift5_reflstr` | `0x790` | `0x890` | **`+0x100`** |
+| `__TEXT.__swift5_typeref` | `0xadb` | `0xbb5` | **`+0xda`** |
+| `__AUTH.__objc_data` | `0x180` | `0x1f8` | **`+0x78`** |
+| `__AUTH_CONST.__auth_got` | `0xa70` | `0xad0` | **`+0x60`** |
+| `__DATA_CONST.__objc_selrefs` | `0xd8` | `0x118` | **`+0x40`** |
+| `__DATA.__data` | `0xac8` | `0xb00` | **`+0x38`** |
+| `__TEXT.__swift_as_cont` | `0xe4` | `0x11c` | **`+0x38`** |
+| `__TEXT.__objc_methlist` | `0x178` | `0x1a8` | **`+0x30`** |
+| `__DATA_DIRTY.__objc_data` | `—` | `0x28` | **`+0x28`** |
+| `__TEXT.__swift5_proto` | `0x1cc` | `0x1f4` | **`+0x28`** |
+| `__TEXT.__swift_as_entry` | `0x88` | `0xb0` | **`+0x28`** |
+| `__TEXT.__cstring` | `0x563` | `0x583` | **`+0x20`** |
+| `__DATA.__common` | `0x28` | `0x10` | **`-0x18`** |
+| `__DATA_CONST.__got` | `0x358` | `0x370` | **`+0x18`** |
+| `__DATA_DIRTY.__common` | `0x18` | `0x30` | **`+0x18`** |
+| `__TEXT.__swift5_capture` | `0xbc` | `0xd0` | **`+0x14`** |
+| `__TEXT.__swift_as_ret` | `0x94` | `0xa8` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x58` | `0x68` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x20` | `0x30` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0xe8` | `0xf8` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x10` | `0x18` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x4c` | `0x50` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x42c88
--  __TEXT.__objc_methlist: 0x178
--  __TEXT.__const: 0x2690
--  __TEXT.__swift5_typeref: 0xadb
--  __TEXT.__swift5_capture: 0xbc
-+  __TEXT.__text: 0x47ea0
-+  __TEXT.__objc_methlist: 0x1a8
-+  __TEXT.__const: 0x29a0
-+  __TEXT.__swift5_typeref: 0xbb5
-+  __TEXT.__swift5_capture: 0xd0
-   __TEXT.__oslogstring: 0x828
--  __TEXT.__constg_swiftt: 0xd28
--  __TEXT.__swift5_reflstr: 0x790
--  __TEXT.__swift5_fieldmd: 0xb6c
-+  __TEXT.__constg_swiftt: 0xe8c
-+  __TEXT.__swift5_reflstr: 0x890
-+  __TEXT.__swift5_fieldmd: 0xce0
-   __TEXT.__swift5_builtin: 0x28
--  __TEXT.__cstring: 0x563
--  __TEXT.__swift5_proto: 0x1cc
--  __TEXT.__swift5_types: 0xe8
--  __TEXT.__swift_as_entry: 0x88
--  __TEXT.__swift_as_ret: 0x94
--  __TEXT.__swift_as_cont: 0xe4
-+  __TEXT.__cstring: 0x583
-+  __TEXT.__swift5_proto: 0x1f4
-+  __TEXT.__swift5_types: 0xf8
-+  __TEXT.__swift_as_entry: 0xb0
-+  __TEXT.__swift_as_ret: 0xa8
-+  __TEXT.__swift_as_cont: 0x11c
-   __TEXT.__swift5_assocty: 0xd8
--  __TEXT.__swift5_protos: 0x4c
-+  __TEXT.__swift5_protos: 0x50
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x1198
--  __TEXT.__eh_frame: 0x1b9c
-+  __TEXT.__unwind_info: 0x1350
-+  __TEXT.__eh_frame: 0x1e2c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xa0
--  __DATA_CONST.__objc_classlist: 0x58
--  __DATA_CONST.__objc_protolist: 0x20
-+  __DATA_CONST.__objc_classlist: 0x68
-+  __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xd8
--  __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__got: 0x358
--  __AUTH_CONST.__const: 0x1648
--  __AUTH_CONST.__objc_const: 0x940
--  __AUTH_CONST.__auth_got: 0xa70
--  __AUTH.__objc_data: 0x180
--  __AUTH.__data: 0xb10
--  __DATA.__data: 0xac8
--  __DATA.__bss: 0x3080
--  __DATA.__common: 0x28
--  __DATA_DIRTY.__data: 0x4b8
--  __DATA_DIRTY.__bss: 0x500
--  __DATA_DIRTY.__common: 0x18
-+  __DATA_CONST.__objc_selrefs: 0x118
-+  __DATA_CONST.__objc_protorefs: 0x18
-+  __DATA_CONST.__got: 0x370
-+  __AUTH_CONST.__const: 0x17b8
-+  __AUTH_CONST.__objc_const: 0xa68
-+  __AUTH_CONST.__auth_got: 0xad0
-+  __AUTH.__objc_data: 0x1f8
-+  __AUTH.__data: 0x9d0
-+  __DATA.__data: 0xb00
-+  __DATA.__bss: 0x3200
-+  __DATA.__common: 0x10
-+  __DATA_DIRTY.__objc_data: 0x28
-+  __DATA_DIRTY.__data: 0x8b8
-+  __DATA_DIRTY.__bss: 0x800
-+  __DATA_DIRTY.__common: 0x30
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreLocation.framework/CoreLocation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+-7027.0.60.2.2
++7027.0.64.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1445
--  Symbols:   607
+-  Symbols:   506
 -  CStrings:  82
 +  Functions: 1576
-+  Symbols:   658
++  Symbols:   542
 +  CStrings:  83
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
 Symbols:
 + __DATA__TtC24HealthPlatformFoundation17MockLocationCache
 + __DATA__TtC24HealthPlatformFoundationP33_C6F4530EE4D1FA0B901B90776DD1199E15ObserverAdapter
@@ -120,13 +73,6 @@ Symbols:
 + _associated conformance 24HealthPlatformFoundation14GeofenceRegionV10CodingKeys33_57162293FB96A153FDE8127E4727846DLLOs0F3KeyAAs28CustomDebugStringConvertible
 + _associated conformance 24HealthPlatformFoundation14GeofenceRegionVSHAASQ
 + _get_enum_tag_for_layout_string 24HealthPlatformFoundation15CurrentLocationVSgIeghHr_Sg
-+ _objc_msgSend$distanceFromLocation:
-+ _objc_msgSend$formattedAddressLines
-+ _objc_msgSend$initWithLatitude:longitude:
-+ _objc_msgSend$location
-+ _objc_msgSend$placemark
-+ _objc_msgSend$referenceLocation
-+ _objc_msgSend$startObservation:
 + _swift_asyncLet_begin
 + _swift_asyncLet_finish
 + _swift_asyncLet_get
@@ -157,5 +103,4 @@ Symbols:
 - _symbolic _____ 24HealthPlatformFoundation7ArbiterC17WeatherConditionsV
 CStrings:
 + "formattedAddressLines"
-
 ```

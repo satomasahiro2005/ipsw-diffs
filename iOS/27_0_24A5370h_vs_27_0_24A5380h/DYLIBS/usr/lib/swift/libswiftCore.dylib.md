@@ -2,102 +2,36 @@
 
 > `/usr/lib/swift/libswiftCore.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4b9ebc` | `0x4b8b30` | **`-0x138c`** |
+| `__DATA.__bss` | `0xf138` | `0xf438` | **`+0x300`** |
+| `__TEXT.__eh_frame` | `0x85c0` | `0x8798` | **`+0x1d8`** |
+| `__TEXT.__unwind_info` | `0xbcd0` | `0xbe70` | **`+0x1a0`** |
+| `__TEXT.__const` | `0xbb48b` | `0xbb5cb` | **`+0x140`** |
+| `__AUTH_CONST.__const` | `0x167c8` | `0x168e8` | **`+0x120`** |
+| `__AUTH.__data` | `0xe658` | `0xe718` | **`+0xc0`** |
+| `__DATA_DIRTY.__data` | `0x33c8` | `0x3308` | **`-0xc0`** |
+| `__TEXT.__constg_swiftt` | `0x9290` | `0x9310` | **`+0x80`** |
+| `__TEXT.__swift5_fieldmd` | `0x4b58` | `0x4b9c` | **`+0x44`** |
+| `__TEXT.__swift5_typeref` | `0x59cb` | `0x59e7` | **`+0x1c`** |
+| `__DATA_DIRTY.__bss` | `0x17580` | `0x17570` | **`-0x10`** |
+| `__TEXT.__swift5_proto` | `0x153c` | `0x154c` | **`+0x10`** |
+| `__TEXT.__swift5_types2` | `0x20` | `0x28` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x4b9ebc
-+  __TEXT.__text: 0x4b8b30
-   __TEXT.__lazy_helpers: 0x348
-   __TEXT.__init_offsets: 0x18
-   __TEXT.__objc_methlist: 0x1e1c
-   __TEXT.__cstring: 0x12d75
--  __TEXT.__const: 0xbb48b
-+  __TEXT.__const: 0xbb5cb
-   __TEXT.__oslogstring: 0xb7
-   __TEXT.__gcc_except_tab: 0xd8
-   __TEXT.__lldbsummaries: 0x46
--  __TEXT.__swift5_typeref: 0x59cb
-+  __TEXT.__swift5_typeref: 0x59e7
-   __TEXT.__swift5_capture: 0x3e8
-   __TEXT.__swift5_reflstr: 0x1511
-   __TEXT.__swift5_assocty: 0x5318
--  __TEXT.__constg_swiftt: 0x9290
--  __TEXT.__swift5_fieldmd: 0x4b58
-+  __TEXT.__constg_swiftt: 0x9310
-+  __TEXT.__swift5_fieldmd: 0x4b9c
-   __TEXT.__swift5_builtin: 0xbcc
-   __TEXT.__swift5_mpenum: 0x8c
-   __TEXT.__swift5_protos: 0x1ac
--  __TEXT.__swift5_proto: 0x153c
-+  __TEXT.__swift5_proto: 0x154c
-   __TEXT.__swift5_types: 0x948
--  __TEXT.__swift5_types2: 0x20
--  __TEXT.__unwind_info: 0xbcd0
--  __TEXT.__eh_frame: 0x85c0
-+  __TEXT.__swift5_types2: 0x28
-+  __TEXT.__unwind_info: 0xbe70
-+  __TEXT.__eh_frame: 0x8798
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-6.4.0.23.102
++6.4.0.25.5
 
-   __DATA_CONST.__objc_protorefs: 0x58
-   __DATA_CONST.__objc_superrefs: 0x40
-   __DATA_CONST.__got: 0x58
--  __AUTH_CONST.__const: 0x167c8
-+  __AUTH_CONST.__const: 0x168e8
-   __AUTH_CONST.__objc_const: 0x4b30
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__lazy_load_got: 0x48
-   __AUTH_CONST.__auth_got: 0x698
-   __AUTH.__objc_data: 0x1c8
--  __AUTH.__data: 0xe658
-+  __AUTH.__data: 0xe718
-   __DATA.__objc_ivar: 0x38
-   __DATA.__crash_info: 0x40
-   __DATA.__data: 0xbc4
--  __DATA.__bss: 0xf138
-+  __DATA.__bss: 0xf438
-   __DATA.__common: 0xb0
-   __DATA_DIRTY.__objc_data: 0xe08
--  __DATA_DIRTY.__data: 0x33c8
--  __DATA_DIRTY.__bss: 0x17580
-+  __DATA_DIRTY.__data: 0x3308
-+  __DATA_DIRTY.__bss: 0x17570
-   __DATA_DIRTY.__common: 0x58
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libswiftPrespecialized.dylib
 -  Functions: 23403
--  Symbols:   60081
+-  Symbols:   40179
 +  Functions: 23460
-+  Symbols:   60196
-   CStrings:  2767
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_types : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_nlclslist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__lazy_load_got : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   40274
 Symbols:
 + _$sSDsSHR_rlE9hashValueSivgTm
 + _$sSh11subtractingyShyxGqd__7ElementQyd__RszSTRd__lFTm
@@ -412,5 +346,4 @@ Symbols:
 - ___unnamed_969
 - ___unnamed_998
 - _symbolic _____ s3RefVsRi_zRi0_zrlE
-
 ```

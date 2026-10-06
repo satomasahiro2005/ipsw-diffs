@@ -2,72 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/GeoAnalytics.framework/geoanalyticsd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2019c` | `0x21f50` | **`+0x1db4`** |
+| `__DATA_CONST.__cfstring` | `0x12620` | `0x12760` | **`+0x140`** |
+| `__TEXT.__cstring` | `0xd992` | `0xdac8` | **`+0x136`** |
+| `__TEXT.__objc_stubs` | `0x3580` | `0x3660` | **`+0xe0`** |
+| `__TEXT.__objc_methname` | `0x2f8c` | `0x304d` | **`+0xc1`** |
+| `__TEXT.__oslogstring` | `0x118c` | `0x1241` | **`+0xb5`** |
+| `__DATA_CONST.__const` | `0x1090` | `0x1108` | **`+0x78`** |
+| `__TEXT.__objc_methlist` | `0xe44` | `0xe9c` | **`+0x58`** |
+| `__TEXT.__objc_methtype` | `0xbc7` | `0xc16` | **`+0x4f`** |
+| `__DATA.__objc_selrefs` | `0xee8` | `0xf20` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0x680` | `0x6b0` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x2b8` | `0x2d0` | **`+0x18`** |
+| `__TEXT.__gcc_except_tab` | `0x4e0` | `0x4f4` | **`+0x14`** |
+| `__DATA.__objc_const` | `0x1c28` | `0x1c38` | **`+0x10`** |
+| `__TEXT.__objc_classname` | `0x2b8` | `0x2c3` | **`+0xb`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -2075.30.6.12.8
--  __TEXT.__text: 0x2019c
 +2075.30.6.12.12
-+  __TEXT.__text: 0x21f50
-   __TEXT.__auth_stubs: 0x850
--  __TEXT.__objc_stubs: 0x3580
--  __TEXT.__objc_methlist: 0xe44
-+  __TEXT.__objc_stubs: 0x3660
-+  __TEXT.__objc_methlist: 0xe9c
-   __TEXT.__const: 0x110
--  __TEXT.__gcc_except_tab: 0x4e0
--  __TEXT.__cstring: 0xd992
--  __TEXT.__objc_methname: 0x2f8c
--  __TEXT.__objc_classname: 0x2b8
--  __TEXT.__objc_methtype: 0xbc7
--  __TEXT.__oslogstring: 0x118c
--  __TEXT.__unwind_info: 0x680
--  __DATA_CONST.__const: 0x1090
--  __DATA_CONST.__cfstring: 0x12620
-+  __TEXT.__gcc_except_tab: 0x4f4
-+  __TEXT.__cstring: 0xdac8
-+  __TEXT.__objc_methname: 0x304d
-+  __TEXT.__objc_classname: 0x2c3
-+  __TEXT.__objc_methtype: 0xc16
-+  __TEXT.__oslogstring: 0x1241
-+  __TEXT.__unwind_info: 0x6b0
-+  __DATA_CONST.__const: 0x1108
-+  __DATA_CONST.__cfstring: 0x12760
-   __DATA_CONST.__objc_classlist: 0xa8
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x88
-   __DATA_CONST.__auth_got: 0x438
--  __DATA_CONST.__got: 0x2b8
--  __DATA.__objc_const: 0x1c28
--  __DATA.__objc_selrefs: 0xee8
-+  __DATA_CONST.__got: 0x2d0
-+  __DATA.__objc_const: 0x1c38
-+  __DATA.__objc_selrefs: 0xf20
-   __DATA.__objc_ivar: 0xf8
-   __DATA.__objc_data: 0x690
-   __DATA.__data: 0x3c0
 
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 392
 -  Symbols:   241
 -  CStrings:  3319
 +  Functions: 402
 +  Symbols:   244
 +  CStrings:  3343
- 
 Symbols:
 + _GEOAPAnalyticsInspectionMaxRows
 + _NSLocalizedDescriptionKey

@@ -2,58 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/TSDrawables.framework/TSDrawables`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x1d3940
-+  __TEXT.__text: 0x1d2aa4
-   __TEXT.__init_offsets: 0xc
-   __TEXT.__objc_methlist: 0x11e80
-   __TEXT.__const: 0xca78
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1d3940` | `0x1d2aa4` | **`-0xe9c`** |
+| `__TEXT.__unwind_info` | `0x97c8` | `0x97c0` | **`-0x8`** |
 
-   __TEXT.__swift5_reflstr: 0x1d
-   __TEXT.__swift5_fieldmd: 0xa8
-   __TEXT.__swift5_types: 0x14
--  __TEXT.__unwind_info: 0x97c8
-+  __TEXT.__unwind_info: 0x97c0
-   __TEXT.__eh_frame: 0x48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
+### Other Changes
+
+```text
 Functions:
-~ sub_2b7be7760 -> sub_2b8cdc760 : 132 -> 144
-~ sub_2b7be79a8 -> sub_2b8cdc9b4 : 1264 -> 1272
-~ sub_2b7bf08e0 -> sub_2b8ce58f4 : 376 -> 384
+~ sub_2b7aa2760 -> sub_2b8b9e760 : 132 -> 144
+~ sub_2b7aa29a8 -> sub_2b8b9e9b4 : 1264 -> 1272
+~ sub_2b7aab8e0 -> sub_2b8ba78f4 : 376 -> 384
 ~ __ZNK6TSDSOS18SpecSetFillArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 308 -> 300
 ~ __ZNK6TSDSOS21SpecSetLineEndArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 308 -> 300
 ~ __ZNK6TSDSOS24SpecSetReflectionArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 308 -> 300
@@ -70,7 +32,7 @@ Functions:
 ~ __ZNK3TSD22PointPathSourceArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 564 -> 540
 ~ __ZNK3TSD23ScalarPathSourceArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 520 -> 504
 ~ __ZNK3TSD23BezierPathSourceArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 464 -> 448
-~ sub_2b7c44788 -> sub_2b8d39644 : 304 -> 292
+~ sub_2b7aff788 -> sub_2b8bfb644 : 304 -> 292
 ~ __ZNK3TSD24CalloutPathSourceArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 584 -> 568
 ~ __ZNK3TSD31ConnectionLinePathSourceArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 520 -> 504
 ~ __ZNK3TSD36EditableBezierPathSourceArchive_Node18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 712 -> 680
@@ -127,8 +89,8 @@ Functions:
 ~ __ZNK3TSD27SpecStrokeSetPatternArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 824 -> 792
 ~ __ZNK3TSD16MovieFingerprint18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 356 -> 348
 ~ __ZNK3TSD21MovieFingerprintTrack18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 1760 -> 1712
-~ sub_2b7c8a330 -> sub_2b8d7eb1c : 276 -> 268
-~ sub_2b7c8a448 -> sub_2b8d7ec2c : 152 -> 144
+~ sub_2b7b45330 -> sub_2b8c40b1c : 276 -> 268
+~ sub_2b7b45448 -> sub_2b8c40c2c : 152 -> 144
 ~ __ZN4Path12CloseSubpathEi : 92 -> 100
 ~ __ZN4Path6MoveToEff : 252 -> 260
 ~ __ZN4Path6MoveToEfff : 276 -> 284
@@ -136,7 +98,7 @@ Functions:
 ~ __ZN4Path17PointAndTangentAtEifR4vec2S1_ : 1020 -> 1016
 ~ __ZN4Path9PrevPointEiRfS0_ : 180 -> 160
 ~ __ZNK3TSD17UndoObjectArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 696 -> 672
-~ sub_2b7ce7888 -> sub_2b8ddc050 : 304 -> 292
+~ sub_2b7ba2888 -> sub_2b8c9e050 : 304 -> 292
 ~ __ZNK3TSD28GroupDrawablesCommandArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 604 -> 580
 ~ __ZNK3TSD26UngroupGroupCommandArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 604 -> 580
 ~ __ZNK3TSD37ContainerRemoveChildrenCommandArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 788 -> 756
@@ -195,5 +157,4 @@ Functions:
 ~ __ZNK3TSD34InsertCaptionOrTitleCommandArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 1032 -> 984
 ~ __ZNK3TSD34RemoveCaptionOrTitleCommandArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 868 -> 828
 ~ __ZNK3TSD41SetCaptionOrTitleVisibilityCommandArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 520 -> 504
-
 ```

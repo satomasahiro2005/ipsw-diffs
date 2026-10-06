@@ -2,78 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/AXRuntime.framework/AXRuntime`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH.__objc_data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4df30` | `0x4df88` | **`+0x58`** |
+| `__AUTH_CONST.__cfstring` | `0x50a0` | `0x50e0` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x5d6e` | `0x5d8e` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x1260` | `0x1270` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xa98` | `0xaa0` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -3234.5.0.0.0
--  __TEXT.__text: 0x4df30
 +3237.1.0.0.0
-+  __TEXT.__text: 0x4df88
-   __TEXT.__objc_methlist: 0x38f4
-   __TEXT.__const: 0x448
-   __TEXT.__dlopen_cstrs: 0x31a
-   __TEXT.__gcc_except_tab: 0xba4
-   __TEXT.__oslogstring: 0x1535
--  __TEXT.__cstring: 0x5d6e
-+  __TEXT.__cstring: 0x5d8e
-   __TEXT.__ustring: 0x4
-   __TEXT.__unwind_info: 0x1350
-   __TEXT.__objc_stubs: 0x0
 
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1260
-+  __DATA_CONST.__const: 0x1270
-   __DATA_CONST.__objc_classlist: 0xe8
-   __DATA_CONST.__objc_catlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x28
-
-   __DATA_CONST.__objc_arraydata: 0xc0
-   __DATA_CONST.__got: 0x2e8
-   __AUTH_CONST.__const: 0xbc8
--  __AUTH_CONST.__cfstring: 0x50a0
-+  __AUTH_CONST.__cfstring: 0x50e0
-   __AUTH_CONST.__objc_const: 0x3a08
-   __AUTH_CONST.__objc_intobj: 0x1650
-   __AUTH_CONST.__objc_arrayobj: 0x90
-   __AUTH_CONST.__objc_doubleobj: 0x20
--  __AUTH_CONST.__auth_got: 0xa98
-+  __AUTH_CONST.__auth_got: 0xaa0
-   __AUTH.__objc_data: 0x640
-   __DATA.__objc_ivar: 0x23c
-   __DATA.__data: 0x8b8
-
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1637
--  Symbols:   4001
+-  Symbols:   3236
 -  CStrings:  945
 +  Functions: 1638
-+  Symbols:   4005
++  Symbols:   3240
 +  CStrings:  947
- 
 Symbols:
 + GCC_except_table1169
 + GCC_except_table1321

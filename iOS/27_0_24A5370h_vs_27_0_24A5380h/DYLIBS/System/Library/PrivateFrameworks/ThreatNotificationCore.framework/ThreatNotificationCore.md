@@ -2,88 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/ThreatNotificationCore.framework/ThreatNotificationCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14124` | `0x15650` | **`+0x152c`** |
+| `__TEXT.__eh_frame` | `0x678` | `0x7a0` | **`+0x128`** |
+| `__TEXT.__unwind_info` | `0x5e0` | `0x678` | **`+0x98`** |
+| `__TEXT.__const` | `0xf64` | `0xfd4` | **`+0x70`** |
+| `__TEXT.__swift5_reflstr` | `0x2e3` | `0x353` | **`+0x70`** |
+| `__AUTH.__data` | `0x398` | `0x400` | **`+0x68`** |
+| `__TEXT.__constg_swiftt` | `0x8b4` | `0x918` | **`+0x64`** |
+| `__AUTH.__objc_data` | `—` | `0x50` | **`+0x50`** |
+| `__TEXT.__oslogstring` | `0x45a` | `0x49a` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0x1160` | `0x1198` | **`+0x38`** |
+| `__DATA_CONST.__const` | `0x88` | `0xb8` | **`+0x30`** |
+| `__DATA.__data` | `0x208` | `0x230` | **`+0x28`** |
+| `__TEXT.__swift5_fieldmd` | `0x554` | `0x578` | **`+0x24`** |
+| `__TEXT.__cstring` | `0x99c` | `0x9bc` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x6e0` | `0x6f8` | **`+0x18`** |
+| `__AUTH_CONST.__objc_const` | `0x7a0` | `0x7b8` | **`+0x18`** |
+| `__DATA.__common` | `—` | `0x10` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0xc4` | `0xd4` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x54` | `0x64` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x2c` | `0x3c` | **`+0x10`** |
+| `__TEXT.__swift_as_ret` | `0x24` | `0x30` | **`+0xc`** |
+| `__TEXT.__swift5_typeref` | `0x4d1` | `0x4d5` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x14124
--  __TEXT.__const: 0xf64
--  __TEXT.__cstring: 0x99c
--  __TEXT.__oslogstring: 0x45a
--  __TEXT.__swift5_typeref: 0x4d1
--  __TEXT.__constg_swiftt: 0x8b4
--  __TEXT.__swift5_reflstr: 0x2e3
--  __TEXT.__swift5_fieldmd: 0x554
-+  __TEXT.__text: 0x15650
-+  __TEXT.__const: 0xfd4
-+  __TEXT.__cstring: 0x9bc
-+  __TEXT.__oslogstring: 0x49a
-+  __TEXT.__swift5_typeref: 0x4d5
-+  __TEXT.__constg_swiftt: 0x918
-+  __TEXT.__swift5_reflstr: 0x353
-+  __TEXT.__swift5_fieldmd: 0x578
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_assocty: 0x90
-   __TEXT.__swift5_proto: 0x80
-   __TEXT.__swift5_types: 0xa0
--  __TEXT.__swift5_capture: 0xc4
--  __TEXT.__swift_as_entry: 0x2c
--  __TEXT.__swift_as_cont: 0x54
--  __TEXT.__swift_as_ret: 0x24
-+  __TEXT.__swift5_capture: 0xd4
-+  __TEXT.__swift_as_entry: 0x3c
-+  __TEXT.__swift_as_cont: 0x64
-+  __TEXT.__swift_as_ret: 0x30
-   __TEXT.__swift5_protos: 0x1c
--  __TEXT.__unwind_info: 0x5e0
--  __TEXT.__eh_frame: 0x678
-+  __TEXT.__unwind_info: 0x678
-+  __TEXT.__eh_frame: 0x7a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x88
-+  __DATA_CONST.__const: 0xb8
-   __DATA_CONST.__objc_classlist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x1f0
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1160
--  __AUTH_CONST.__objc_const: 0x7a0
--  __AUTH_CONST.__auth_got: 0x6e0
--  __AUTH.__data: 0x398
--  __DATA.__data: 0x208
-+  __AUTH_CONST.__const: 0x1198
-+  __AUTH_CONST.__objc_const: 0x7b8
-+  __AUTH_CONST.__auth_got: 0x6f8
-+  __AUTH.__objc_data: 0x50
-+  __AUTH.__data: 0x400
-+  __DATA.__data: 0x230
-   __DATA.__bss: 0xc80
-+  __DATA.__common: 0x10
-   __DATA_DIRTY.__data: 0x6a0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+-46.0.0.0.0
++46.0.1.0.0
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 550
--  Symbols:   2234
+-  Symbols:   1715
 -  CStrings:  69
 +  Functions: 591
-+  Symbols:   2331
++  Symbols:   1782
 +  CStrings:  71
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_DIRTY.__data : content changed
 Symbols:
 + _$s10Foundation4DateVSgMa
 + _$s10Foundation4DateVSgWOc
@@ -155,5 +113,4 @@ Symbols:
 CStrings:
 + "Failed to set threat notification date with error: %{public}@"
 + "setThreatNotificationDate(_:)"
-
 ```

@@ -2,86 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/BulletinBoard.framework/BulletinBoard`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__gcc_except_tab`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_intobj`
-- `__DATA.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x748c0` | `0x786f4` | **`+0x3e34`** |
+| `__TEXT.__oslogstring` | `0x5eea` | `0x65ef` | **`+0x705`** |
+| `__AUTH_CONST.__cfstring` | `0x6960` | `0x6be0` | **`+0x280`** |
+| `__AUTH.__objc_data` | `0x190` | `—` | **`-0x190`** |
+| `__DATA_DIRTY.__objc_data` | `0x1720` | `0x18b0` | **`+0x190`** |
+| `__TEXT.__cstring` | `0x62a4` | `0x6426` | **`+0x182`** |
+| `__DATA_CONST.__const` | `0x1f90` | `0x2038` | **`+0xa8`** |
+| `__TEXT.__const` | `0x170` | `0x190` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x860c` | `0x862c` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x20a0` | `0x20b8` | **`+0x18`** |
+| `__AUTH_CONST.__objc_const` | `0x107a8` | `0x107b8` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3fb8` | `0x3fc0` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -952.0.0.0.0
--  __TEXT.__text: 0x748c0
--  __TEXT.__objc_methlist: 0x860c
--  __TEXT.__const: 0x170
 +953.100.0.0.0
-+  __TEXT.__text: 0x786f4
-+  __TEXT.__objc_methlist: 0x862c
-+  __TEXT.__const: 0x190
-   __TEXT.__gcc_except_tab: 0x9b8
--  __TEXT.__cstring: 0x62a4
--  __TEXT.__oslogstring: 0x5eea
-+  __TEXT.__cstring: 0x6426
-+  __TEXT.__oslogstring: 0x65ef
-   __TEXT.__dlopen_cstrs: 0x19c
--  __TEXT.__unwind_info: 0x20a0
-+  __TEXT.__unwind_info: 0x20b8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1f90
-+  __DATA_CONST.__const: 0x2038
-   __DATA_CONST.__objc_classlist: 0x278
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x128
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3fb8
-+  __DATA_CONST.__objc_selrefs: 0x3fc0
-   __DATA_CONST.__objc_protorefs: 0x68
-   __DATA_CONST.__objc_superrefs: 0x210
-   __DATA_CONST.__objc_arraydata: 0x170
-   __DATA_CONST.__got: 0x5b8
-   __AUTH_CONST.__const: 0xae0
--  __AUTH_CONST.__cfstring: 0x6960
--  __AUTH_CONST.__objc_const: 0x107a8
-+  __AUTH_CONST.__cfstring: 0x6be0
-+  __AUTH_CONST.__objc_const: 0x107b8
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_intobj: 0xd8
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x190
-   __DATA.__objc_ivar: 0x8c4
-   __DATA.__data: 0xe00
-   __DATA.__bss: 0x88
--  __DATA_DIRTY.__objc_data: 0x1720
-+  __DATA_DIRTY.__objc_data: 0x18b0
-   __DATA_DIRTY.__data: 0x14
-   __DATA_DIRTY.__bss: 0x1a8
-   __DATA_DIRTY.__common: 0x70
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 3355
--  Symbols:   6836
+-  Symbols:   5162
 -  CStrings:  1378
 +  Functions: 3365
-+  Symbols:   6847
++  Symbols:   5172
 +  CStrings:  1431
- 
 Symbols:
 + -[BBBiometricResource isPasscodeSet]
 + -[BBSectionInfo changedPropertiesComparedTo:]
@@ -93,7 +43,6 @@ Symbols:
 + _BBStringFromBBSectionCategory
 + _BBStringFromBBSectionInfoSetting
 + _BBStringFromBBSectionType
-+ _objc_msgSend$changedPropertiesComparedTo:
 CStrings:
 + "%s: %@"
 + "%s: %@ -> %@"

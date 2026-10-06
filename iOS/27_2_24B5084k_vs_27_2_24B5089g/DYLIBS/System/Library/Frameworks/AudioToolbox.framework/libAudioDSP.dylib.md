@@ -2,40 +2,33 @@
 
 > `/System/Library/Frameworks/AudioToolbox.framework/libAudioDSP.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x37fcc8` | `0x380238` | **`+0x570`** |
+| `__TEXT.__oslogstring` | `0x2ad27` | `0x2acd3` | **`-0x54`** |
+| `__TEXT.__gcc_except_tab` | `0x313f4` | `0x31434` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0xe818` | `0xe848` | **`+0x30`** |
+| `__TEXT.__realtime` | `0x16cf30` | `0x16cf2c` | **`-0x4`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
 -881.207.0.0.0
--  __TEXT.__text: 0x378880
--  __TEXT.__realtime: 0x16b63c
 +881.208.0.0.0
-+  __TEXT.__text: 0x378dd4
-+  __TEXT.__realtime: 0x16b638
-   __TEXT.__delay_stubs: 0xb40
-   __TEXT.__delay_helper: 0x494
-   __TEXT.__objc_methlist: 0x334
-   __TEXT.__const: 0xa20f0
-   __TEXT.__dlopen_cstrs: 0x4f
-   __TEXT.__cstring: 0x34577
--  __TEXT.__gcc_except_tab: 0x313f4
--  __TEXT.__oslogstring: 0x2ad27
--  __TEXT.__unwind_info: 0xf9a0
-+  __TEXT.__gcc_except_tab: 0x31434
-+  __TEXT.__oslogstring: 0x2acd3
-+  __TEXT.__unwind_info: 0xf9e0
-   __TEXT.__eh_frame: 0xf8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 11402
--  Symbols:   17869
--  CStrings:  10978
+-  Symbols:   17736
+-  CStrings:  10981
 +  Functions: 11409
-+  Symbols:   17880
-+  CStrings:  10977
- 
++  Symbols:   17747
++  CStrings:  10980
 Symbols:
 + GCC_except_table10020
 + GCC_except_table1004
@@ -3153,5 +3146,13 @@ Symbols:
 - GCC_except_table9933
 - GCC_except_table9948
 CStrings:
++ "07:00:54"
++ "07:01:03"
++ "07:01:18"
++ "Sep 12 2026"
 - "%25s:%-5d mlock of BNNS IR file (%s) failed: %s; page faults may occur on IO thread"
+- "00:32:04"
+- "00:32:11"
+- "00:32:28"
+- "Sep  3 2026"
 ```

@@ -2,101 +2,41 @@
 
 > `/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__objc_ivar`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ec640c` | `0x23a439c` | **`+0x4ddf90`** |
+| `__TEXT.__const` | `0xa3414` | `0xa2624` | **`-0xdf0`** |
+| `__TEXT.__cstring` | `0x12696e` | `0x126161` | **`-0x80d`** |
+| `__DATA_DIRTY.__data` | `0x14768` | `0x14220` | **`-0x548`** |
+| `__TEXT.__unwind_info` | `0x1fca8` | `0x200d0` | **`+0x428`** |
+| `__TEXT.__jsc_int` | `0x695b8` | `0x691b8` | **`-0x400`** |
+| `__DATA_CONST.__const` | `0x320e8` | `0x31da8` | **`-0x340`** |
+| `__AUTH_CONST.__const` | `0x3d9a0` | `0x3dad8` | **`+0x138`** |
+| `__TEXT.__gcc_except_tab` | `0x28fc` | `0x2964` | **`+0x68`** |
+| `__DATA.__bss` | `0x13b0` | `0x1400` | **`+0x50`** |
+| `__DATA.__data` | `0x10558` | `0x10598` | **`+0x40`** |
+| `__DATA_CONST.__jsc_ops` | `0x38b0` | `0x38f0` | **`+0x40`** |
+| `__DATA.__common` | `0x2d11` | `0x2d49` | **`+0x38`** |
+| `__DATA_DIRTY.__bss` | `0xf368` | `0xf388` | **`+0x20`** |
+| `__DATA_DIRTY.__common` | `0x485180` | `0x485160` | **`-0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x1800` | `0x1818` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x288` | `0x280` | **`-0x8`** |
+
+### Other Changes
 
 ```diff
 
 -625.1.22.10.3
--  __TEXT.__text: 0x1ec640c
--  __TEXT.__jsc_int: 0x695b8
 +625.1.24.10.1
-+  __TEXT.__text: 0x23a439c
-+  __TEXT.__jsc_int: 0x691b8
-   __TEXT.__objc_methlist: 0xb9c
--  __TEXT.__const: 0xa3414
-+  __TEXT.__const: 0xa2624
-   __TEXT.__dlsym_cstr: 0x34
--  __TEXT.__cstring: 0x12696e
-+  __TEXT.__cstring: 0x126161
-   __TEXT.__oslogstring: 0xa0f
--  __TEXT.__gcc_except_tab: 0x28fc
-+  __TEXT.__gcc_except_tab: 0x2964
-   __TEXT.__ustring: 0x10
--  __TEXT.__unwind_info: 0x1fca8
-+  __TEXT.__unwind_info: 0x200d0
-   __TEXT.__eh_frame: 0x50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x320e8
-+  __DATA_CONST.__const: 0x31da8
-   __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x9f0
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x40
--  __DATA_CONST.__jsc_ops: 0x38b0
--  __DATA_CONST.__got: 0x288
--  __AUTH_CONST.__const: 0x3d9a0
-+  __DATA_CONST.__jsc_ops: 0x38f0
-+  __DATA_CONST.__got: 0x280
-+  __AUTH_CONST.__const: 0x3dad8
-   __AUTH_CONST.__cfstring: 0x10a0
-   __AUTH_CONST.__objc_const: 0xdf8
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__auth_got: 0x1800
-+  __AUTH_CONST.__auth_got: 0x1818
-   __AUTH.__objc_data: 0xf0
-   __AUTH.__data: 0x288
-   __DATA.__objc_ivar: 0x80
-   __DATA.__crash_info: 0x148
--  __DATA.__data: 0x10558
--  __DATA.__common: 0x2d11
--  __DATA.__bss: 0x13b0
-+  __DATA.__data: 0x10598
-+  __DATA.__common: 0x2d49
-+  __DATA.__bss: 0x1400
-   __DATA_DIRTY.__objc_ivar: 0x8
-   __DATA_DIRTY.__objc_data: 0x280
--  __DATA_DIRTY.__data: 0x14768
-+  __DATA_DIRTY.__data: 0x14220
-   __DATA_DIRTY.__wtf_config: 0x4000
--  __DATA_DIRTY.__common: 0x485180
--  __DATA_DIRTY.__bss: 0xf368
-+  __DATA_DIRTY.__common: 0x485160
-+  __DATA_DIRTY.__bss: 0xf388
-   - /System/Library/Frameworks/BrowserEngineCore.framework/BrowserEngineCore
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 39677
--  Symbols:   47967
+-  Symbols:   47757
 -  CStrings:  25807
 +  Functions: 39926
-+  Symbols:   48193
++  Symbols:   47983
 +  CStrings:  25795
- 
 Symbols:
 + GCC_except_table123
 + GCC_except_table131

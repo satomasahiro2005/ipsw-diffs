@@ -2,15 +2,14 @@
 
 > `/System/Library/PrivateFrameworks/Feedback.framework/PlugIns/DraftingExtension-iOS.appex/DraftingExtension-iOS`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -232.0.0.0.0
 +235.0.0.0.0
-   __TEXT.__text: 0x340
-   __TEXT.__auth_stubs: 0x100
-   __TEXT.__objc_methlist: 0x298
 ```

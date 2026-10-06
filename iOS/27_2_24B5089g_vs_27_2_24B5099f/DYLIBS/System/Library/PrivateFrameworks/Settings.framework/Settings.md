@@ -2,62 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/Settings.framework/Settings`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x91c00` | `0x91e98` | **`+0x298`** |
+| `__TEXT.__eh_frame` | `0x1c68` | `0x1cf8` | **`+0x90`** |
+| `__TEXT.__swift5_typeref` | `0x2f81` | `0x2fc9` | **`+0x48`** |
+| `__DATA.__data` | `0x1330` | `0x1370` | **`+0x40`** |
+| `__DATA_DIRTY.__data` | `0x2c58` | `0x2c28` | **`-0x30`** |
+| `__TEXT.__unwind_info` | `0x2148` | `0x2160` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x880` | `0x888` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2027.1.2.0.0
--  __TEXT.__text: 0x8d208
 +2027.1.3.0.0
-+  __TEXT.__text: 0x8d48c
-   __TEXT.__delay_helper: 0x1bc
-   __TEXT.__objc_methlist: 0xb08
-   __TEXT.__const: 0x6d50
-   __TEXT.__constg_swiftt: 0x2d98
--  __TEXT.__swift5_typeref: 0x2f81
-+  __TEXT.__swift5_typeref: 0x2fc9
-   __TEXT.__swift5_reflstr: 0x16ab
-   __TEXT.__swift5_fieldmd: 0x1868
-   __TEXT.__swift5_builtin: 0xdc
 
-   __TEXT.__swift_as_ret: 0x90
-   __TEXT.__swift_as_cont: 0x158
-   __TEXT.__lldbsummaries: 0xb3
--  __TEXT.__unwind_info: 0x29e0
--  __TEXT.__eh_frame: 0x1c70
-+  __TEXT.__unwind_info: 0x2a00
-+  __TEXT.__eh_frame: 0x1d00
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x818
-   __DATA_CONST.__objc_protorefs: 0xb8
--  __DATA_CONST.__got: 0x880
-+  __DATA_CONST.__got: 0x888
-   __AUTH_CONST.__const: 0x3b80
-   __AUTH_CONST.__objc_const: 0x4a80
-   __AUTH_CONST.__auth_got: 0x1618
-   __AUTH.__objc_data: 0x488
-   __AUTH.__data: 0x408
--  __DATA.__data: 0x1330
-+  __DATA.__data: 0x1370
-   __DATA.__common: 0x20
-   __DATA_DIRTY.__objc_data: 0xf08
--  __DATA_DIRTY.__data: 0x2c58
-+  __DATA_DIRTY.__data: 0x2c28
-   __DATA_DIRTY.__crash_info: 0x148
-   __DATA_DIRTY.__bss: 0x3e80
-   __DATA_DIRTY.__common: 0x90
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3258
 -  Symbols:   1542
 +  Functions: 3261
 +  Symbols:   1543
-   CStrings:  292
- 
 Symbols:
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE20_onEnvironmentChange_7performQrs7KeyPathCyAA0E6ValuesVqd__G_yqd__Sg_qd__tctSQRd__lFQOyAcAE0dF02of7initial_Qrqd___SbyyctSQRd__lFQOyAA15ModifiedContentVyAcAE7toolbar7contentQrqd__yXE_tAA07ToolbarN0Rd__lFQOyAcAEAQ8removingQrAA0Q15DefaultItemKindVSg_tFQOyAPyAcAEAlmN_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA01_c9Modifier_N0Vy8Settings0w33FeatureDescriptionNavigationTitlecV0VG_AA4TextVQo_AA017_AppearanceActionV0VG_Qo__AA0qT0VyytAPyAPyA3_AA14_OpacityEffectVGAA023AccessibilityAttachmentV0VGGSgQo_AA015_GeometryActionV0Vy12CoreGraphics7CGFloatVGG_SdQo__AA11ColorSchemeOQo_HO
 + _symbolic _____yAAy__________G_____G 7SwiftUI15ModifiedContentV AA4TextV AA14_OpacityEffectV AA31AccessibilityAttachmentModifierV

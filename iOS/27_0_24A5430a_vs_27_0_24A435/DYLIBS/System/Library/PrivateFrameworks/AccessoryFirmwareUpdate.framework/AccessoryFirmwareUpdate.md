@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/AccessoryFirmwareUpdate.framework/AccessoryFirmwareUpdate`
 
-```diff
+### Section Size Changes
 
- 32.0.0.0.0
--  __TEXT.__text: 0x1db24
-+  __TEXT.__text: 0x1db1c
-   __TEXT.__objc_methlist: 0x1d4
-   __TEXT.__const: 0xd70
-   __TEXT.__constg_swiftt: 0x7d8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1db24` | `0x1db1c` | **`-0x8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2504255a8 -> sub_250e745a8 : 316 -> 296
-~ sub_250432560 -> sub_250e8154c : 980 -> 992
+~ sub_24fea95a8 -> sub_250d3d5a8 : 316 -> 296
+~ sub_24feb6560 -> sub_250d4a54c : 980 -> 992
 ```

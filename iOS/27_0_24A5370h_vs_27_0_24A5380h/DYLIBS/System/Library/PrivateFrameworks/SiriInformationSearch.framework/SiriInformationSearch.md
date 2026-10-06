@@ -2,58 +2,24 @@
 
 > `/System/Library/PrivateFrameworks/SiriInformationSearch.framework/SiriInformationSearch`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2621cc` | `0x2620c0` | **`-0x10c`** |
+| `__TEXT.__swift5_typeref` | `0x40f0` | `0x40ea` | **`-0x6`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2621cc
-+  __TEXT.__text: 0x2620c0
-   __TEXT.__objc_methlist: 0x884
-   __TEXT.__const: 0xab8c
-   __TEXT.__cstring: 0x6971
--  __TEXT.__swift5_typeref: 0x40f0
-+  __TEXT.__swift5_typeref: 0x40ea
-   __TEXT.__swift5_fieldmd: 0x42e0
-   __TEXT.__constg_swiftt: 0x5eb4
-   __TEXT.__swift5_builtin: 0x17c
+-3600.38.2.0.0
++3600.38.3.0.0
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8413
--  Symbols:   27691
+-  Symbols:   21081
 +  Functions: 8412
-+  Symbols:   27689
-   CStrings:  1790
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   21079
 Symbols:
 + _$ss10_NativeSetV11subtractingyAByxGqd__7ElementQyd__RszSTRd__lFs6UInt16V_SayAHGTg5
 - _$sSh11subtractingyShyxGqd__7ElementQyd__RszSTRd__lFs6UInt16V_SayAFGTg5
@@ -94,5 +60,4 @@ Functions:
 - _$ss10_NativeSetV12intersectionyAByxGADFSS_Tg5
 - _$sSh11subtractingyShyxGqd__7ElementQyd__RszSTRd__lFs6UInt16V_SayAFGTg5
 + _$ss10_NativeSetV11subtractingyAByxGqd__7ElementQyd__RszSTRd__lFs6UInt16V_SayAHGTg5
-
 ```

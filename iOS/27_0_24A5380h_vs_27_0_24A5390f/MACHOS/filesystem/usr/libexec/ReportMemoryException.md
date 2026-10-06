@@ -2,74 +2,49 @@
 
 > `/usr/libexec/ReportMemoryException`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__got`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x93ac` | `0x9254` | **`-0x158`** |
+| `__DATA.__objc_const` | `0x90` | `0x168` | **`+0xd8`** |
+| `__DATA.__objc_data` | `0x50` | `0xa0` | **`+0x50`** |
+| `__TEXT.__auth_stubs` | `0x6d0` | `0x710` | **`+0x40`** |
+| `__TEXT.__objc_stubs` | `0x1040` | `0x1000` | **`-0x40`** |
+| `__DATA_CONST.__auth_got` | `0x378` | `0x398` | **`+0x20`** |
+| `__TEXT.__objc_methtype` | `0x31` | `0x4f` | **`+0x1e`** |
+| `__TEXT.__objc_methlist` | `0x14` | `0x2c` | **`+0x18`** |
+| `__TEXT.__objc_methname` | `0xb83` | `0xb72` | **`-0x11`** |
+| `__TEXT.__cstring` | `0xf4a` | `0xf56` | **`+0xc`** |
+| `__TEXT.__objc_classname` | `0xd` | `0x18` | **`+0xb`** |
+| `__DATA.__objc_ivar` | `—` | `0x8` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x8` | `0x10` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__const` | `0xf0` | `0xe8` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x170` | `0x178` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_intobj`
+
+### Other Changes
 
 ```diff
 
 -360.0.0.0.0
--  __TEXT.__text: 0x93ac
--  __TEXT.__auth_stubs: 0x6d0
--  __TEXT.__objc_stubs: 0x1040
--  __TEXT.__objc_methlist: 0x14
 +364.0.0.0.0
-+  __TEXT.__text: 0x9254
-+  __TEXT.__auth_stubs: 0x710
-+  __TEXT.__objc_stubs: 0x1000
-+  __TEXT.__objc_methlist: 0x2c
-   __TEXT.__dlopen_cstrs: 0x5a
--  __TEXT.__cstring: 0xf4a
--  __TEXT.__const: 0xf0
--  __TEXT.__objc_classname: 0xd
--  __TEXT.__objc_methtype: 0x31
-+  __TEXT.__cstring: 0xf56
-+  __TEXT.__const: 0xe8
-+  __TEXT.__objc_classname: 0x18
-+  __TEXT.__objc_methtype: 0x4f
-   __TEXT.__oslogstring: 0x1f0d
-   __TEXT.__gcc_except_tab: 0x28
--  __TEXT.__objc_methname: 0xb83
--  __TEXT.__unwind_info: 0x170
-+  __TEXT.__objc_methname: 0xb72
-+  __TEXT.__unwind_info: 0x178
-   __DATA_CONST.__const: 0x408
-   __DATA_CONST.__cfstring: 0x1220
--  __DATA_CONST.__objc_classlist: 0x8
-+  __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-+  __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__objc_intobj: 0x18
-   __DATA_CONST.__objc_arraydata: 0x30
-   __DATA_CONST.__objc_arrayobj: 0x18
--  __DATA_CONST.__auth_got: 0x378
-+  __DATA_CONST.__auth_got: 0x398
-   __DATA_CONST.__got: 0x150
--  __DATA.__objc_const: 0x90
-+  __DATA.__objc_const: 0x168
-   __DATA.__objc_selrefs: 0x410
--  __DATA.__objc_data: 0x50
-+  __DATA.__objc_ivar: 0x8
-+  __DATA.__objc_data: 0xa0
-   __DATA.__data: 0x2a8
-   __DATA.__crash_info: 0x148
-   __DATA.__common: 0x8
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 63
 -  Symbols:   488
 -  CStrings:  406
 +  Functions: 64
 +  Symbols:   499
 +  CStrings:  412
- 
 Symbols:
 + -[RMELogPath .cxx_destruct]
 + OBJC_IVAR_$_RMELogPath._fileCreationDate

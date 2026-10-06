@@ -2,85 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/ExclavePolarisBufferService.framework/ExclavePolarisBufferService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x43958` | `0x4e980` | **`+0xb028`** |
+| `__AUTH_CONST.__const` | `0x15d8` | `0x4640` | **`+0x3068`** |
+| `__TEXT.__swift5_capture` | `—` | `0x1110` | **`+0x1110`** |
+| `__TEXT.__const` | `0x2018` | `0x26f8` | **`+0x6e0`** |
+| `__TEXT.__swift5_typeref` | `0x854` | `0xe40` | **`+0x5ec`** |
+| `__DATA.__bss` | `0x1c00` | `0x2100` | **`+0x500`** |
+| `__TEXT.__swift5_reflstr` | `0x100d` | `0x14b0` | **`+0x4a3`** |
+| `__TEXT.__cstring` | `0x2e2b` | `0x326b` | **`+0x440`** |
+| `__TEXT.__swift5_fieldmd` | `0x10ec` | `0x1490` | **`+0x3a4`** |
+| `__TEXT.__oslogstring` | `0x6` | `0x2c4` | **`+0x2be`** |
+| `__TEXT.__constg_swiftt` | `0x1970` | `0x1b20` | **`+0x1b0`** |
+| `__AUTH_CONST.__objc_const` | `0x1c48` | `0x1d80` | **`+0x138`** |
+| `__TEXT.__unwind_info` | `0xa68` | `0xb70` | **`+0x108`** |
+| `__DATA_DIRTY.__data` | `0x2228` | `0x2318` | **`+0xf0`** |
+| `__AUTH.__data` | `0xd0` | `0x178` | **`+0xa8`** |
+| `__AUTH_CONST.__auth_got` | `0x4e0` | `0x580` | **`+0xa0`** |
+| `__DATA.__data` | `0x1c8` | `0x228` | **`+0x60`** |
+| `__TEXT.__swift5_builtin` | `0xc8` | `0x104` | **`+0x3c`** |
+| `__TEXT.__swift5_assocty` | `0x48` | `0x78` | **`+0x30`** |
+| `__TEXT.__swift5_types` | `0x110` | `0x13c` | **`+0x2c`** |
+| `__TEXT.__swift5_mpenum` | `0x38` | `0x60` | **`+0x28`** |
+| `__TEXT.__swift5_proto` | `0x120` | `0x148` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0xe8` | `0xf8` | **`+0x10`** |
+| `__DATA.__common` | `0x8` | `—` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0xf0` | `0xf8` | **`+0x8`** |
+| `__DATA_DIRTY.__common` | `0x48` | `0x50` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x43958
--  __TEXT.__const: 0x2018
--  __TEXT.__cstring: 0x2e2b
--  __TEXT.__oslogstring: 0x6
--  __TEXT.__swift5_typeref: 0x854
--  __TEXT.__constg_swiftt: 0x1970
--  __TEXT.__swift5_reflstr: 0x100d
--  __TEXT.__swift5_fieldmd: 0x10ec
--  __TEXT.__swift5_builtin: 0xc8
--  __TEXT.__swift5_proto: 0x120
--  __TEXT.__swift5_types: 0x110
--  __TEXT.__swift5_mpenum: 0x38
-+  __TEXT.__text: 0x4e980
-+  __TEXT.__const: 0x26f8
-+  __TEXT.__constg_swiftt: 0x1b20
-+  __TEXT.__swift5_typeref: 0xe40
-+  __TEXT.__swift5_reflstr: 0x14b0
-+  __TEXT.__swift5_fieldmd: 0x1490
-+  __TEXT.__swift5_builtin: 0x104
-+  __TEXT.__swift5_proto: 0x148
-+  __TEXT.__swift5_types: 0x13c
-+  __TEXT.__cstring: 0x326b
-+  __TEXT.__swift5_assocty: 0x78
-+  __TEXT.__swift5_mpenum: 0x60
-+  __TEXT.__swift5_capture: 0x1110
-+  __TEXT.__oslogstring: 0x2c4
-   __TEXT.__swift5_protos: 0x38
--  __TEXT.__swift5_assocty: 0x48
--  __TEXT.__unwind_info: 0xa68
-+  __TEXT.__unwind_info: 0xb70
-   __TEXT.__eh_frame: 0x1d28
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xe8
--  __DATA_CONST.__objc_classlist: 0xf0
-+  __DATA_CONST.__const: 0xf8
-+  __DATA_CONST.__objc_classlist: 0xf8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x15d8
--  __AUTH_CONST.__objc_const: 0x1c48
--  __AUTH_CONST.__auth_got: 0x4e0
--  __AUTH.__data: 0xd0
--  __DATA.__data: 0x1c8
--  __DATA.__common: 0x8
--  __DATA.__bss: 0x1c00
-+  __AUTH_CONST.__const: 0x4640
-+  __AUTH_CONST.__objc_const: 0x1d80
-+  __AUTH_CONST.__auth_got: 0x580
-+  __AUTH.__data: 0x178
-+  __DATA.__data: 0x228
-+  __DATA.__bss: 0x2100
-   __DATA_DIRTY.__objc_data: 0x410
--  __DATA_DIRTY.__data: 0x2228
--  __DATA_DIRTY.__common: 0x48
-+  __DATA_DIRTY.__data: 0x2318
-+  __DATA_DIRTY.__common: 0x50
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/PolarisRuntime.framework/PolarisRuntime
-   - /System/Library/PrivateFrameworks/Tightbeam.framework/Tightbeam
+-256.0.2.500.1
++256.0.3.0.0
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 866
--  Symbols:   3372
+-  Symbols:   2648
 -  CStrings:  265
 +  Functions: 1305
-+  Symbols:   5008
++  Symbols:   3178
 +  CStrings:  338
- 
-Sections:
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_DIRTY.__objc_data : content changed
 Symbols:
 + _$s27ExclavePolarisBufferService0B10SignposterV11endIntervalyyAA0b8SignpostG0VF
 + _$s27ExclavePolarisBufferService0B10SignposterV13beginInterval_2idAA0b8SignpostG0VAA0bI0O0G0O_2os12OSSignpostIDVtF
@@ -686,5 +651,4 @@ CStrings:
 + "resId:%llu"
 + "resId:%llu fId:%llu"
 + "sId:%u fId:%llu"
-
 ```

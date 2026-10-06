@@ -2,55 +2,31 @@
 
 > `/usr/lib/libhwtrace.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x27d1f8` | `0x2760b4` | **`-0x7144`** |
+| `__TEXT.__cstring` | `0x1af6d` | `0x16943` | **`-0x462a`** |
+| `__DATA_CONST.__const` | `0x2ffd0` | `0x30070` | **`+0xa0`** |
+| `__TEXT.__const` | `0x175ec0` | `0x175f40` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x3220` | `0x31e8` | **`-0x38`** |
+| `__AUTH_CONST.__const` | `0x78a0` | `0x78c8` | **`+0x28`** |
+| `__AUTH_CONST.__auth_got` | `0xb48` | `0xb40` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x27d1f8
--  __TEXT.__const: 0x175ec0
--  __TEXT.__cstring: 0x1af6d
-+  __TEXT.__text: 0x2760b4
-+  __TEXT.__const: 0x175f40
-+  __TEXT.__cstring: 0x16943
-   __TEXT.__oslogstring: 0xaa5
-   __TEXT.__gcc_except_tab: 0x390
--  __TEXT.__unwind_info: 0x3220
-+  __TEXT.__unwind_info: 0x31e8
-   __TEXT.__eh_frame: 0x48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0x2ffd0
-+  __DATA_CONST.__const: 0x30070
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x50
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x78a0
-+  __AUTH_CONST.__const: 0x78c8
-   __AUTH_CONST.__cfstring: 0x300
-   __AUTH_CONST.__weak_auth_got: 0x40
--  __AUTH_CONST.__auth_got: 0xb48
-+  __AUTH_CONST.__auth_got: 0xb40
-   __AUTH.__data: 0x18
-   __DATA.__data: 0x50
-   __DATA.__crash_info: 0x148
+-327.0.0.0.1
++328.0.6.0.0
 
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 4847
 -  Symbols:   598
--  CStrings:  4368
+-  CStrings:  4344
 +  Functions: 4842
 +  Symbols:   597
-+  CStrings:  4333
- 
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
++  CStrings:  4309
 Symbols:
 - __ZNSt3__132__internal_log_hardening_failureEPKc
 CStrings:
@@ -99,5 +75,4 @@ CStrings:
 - "libhwtrace @ tag libhwtrace-327.0.0.0.1"
 - "libhwtrace @ tag libhwtrace-327.0.0.0.1\n"
 - "tag libhwtrace-327.0.0.0.1"
-
 ```

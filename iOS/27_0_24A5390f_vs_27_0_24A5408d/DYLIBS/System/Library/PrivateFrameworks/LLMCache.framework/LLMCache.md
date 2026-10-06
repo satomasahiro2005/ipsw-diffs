@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/LLMCache.framework/LLMCache`
 
-```diff
+### Section Size Changes
 
- 3500.5.1.0.0
--  __TEXT.__text: 0x2b2c8
-+  __TEXT.__text: 0x2b29c
-   __TEXT.__const: 0x1018
-   __TEXT.__constg_swiftt: 0x604
-   __TEXT.__swift5_typeref: 0x328
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2b2c8` | `0x2b29c` | **`-0x2c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s8LLMCache20VectorDatabaseAccessC6delete7entriesySayAA19AnnotatedCacheEntryVG_tKF : 1904 -> 1892
 ~ _$s8LLMCache20VectorDatabaseAccessC8describe10identifierAA19AnnotatedCacheEntryVSS_tKF : 3344 -> 3336

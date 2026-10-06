@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AppleLDAP.framework/AppleLDAP`
 
-```diff
+### Section Size Changes
 
- 63.0.0.0.0
--  __TEXT.__text: 0xaa94
-+  __TEXT.__text: 0xaa98
-   __TEXT.__objc_methlist: 0x134
-   __TEXT.__const: 0x760
-   __TEXT.__cstring: 0xd6d
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xaa94` | `0xaa98` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __parse_simple_filter : 548 -> 552
 ```

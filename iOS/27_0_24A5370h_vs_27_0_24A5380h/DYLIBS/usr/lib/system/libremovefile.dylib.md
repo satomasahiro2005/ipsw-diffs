@@ -2,17 +2,15 @@
 
 > `/usr/lib/system/libremovefile.dylib`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x1fd8
-+  __TEXT.__text: 0x1fd0
-   __TEXT.__const: 0x48
-   __TEXT.__cstring: 0x5d
-   __TEXT.__unwind_info: 0xa8
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1fd8` | `0x1fd0` | **`-0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _overwrite_bytes : 296 -> 288
-
 ```

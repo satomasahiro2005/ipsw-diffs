@@ -2,18 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/DiskSpaceDiagnostics.framework/XPCServices/FilesystemMetadataSnapshotService.xpc/FilesystemMetadataSnapshotService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1448c` | `0x14490` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 1023.0.4.0.0
--  __TEXT.__text: 0x1448c
-+  __TEXT.__text: 0x14490
-   __TEXT.__auth_stubs: 0xb10
-   __TEXT.__objc_stubs: 0x1a00
-   __TEXT.__objc_methlist: 0x8fc
+```text
 Functions:
 ~ _ASP_GetIndirectionTableStatistics : 488 -> 492
 ```

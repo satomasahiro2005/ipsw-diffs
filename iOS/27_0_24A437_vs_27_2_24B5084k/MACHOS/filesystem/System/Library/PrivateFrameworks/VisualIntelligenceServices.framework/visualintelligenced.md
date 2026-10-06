@@ -2,90 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/VisualIntelligenceServices.framework/visualintelligenced`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x362c4` | `0x36e78` | **`+0xbb4`** |
+| `__TEXT.__eh_frame` | `0x22a0` | `0x2348` | **`+0xa8`** |
+| `__TEXT.__auth_stubs` | `0x1e00` | `0x1ea0` | **`+0xa0`** |
+| `__DATA_CONST.__auth_got` | `0xf08` | `0xf58` | **`+0x50`** |
+| `__DATA_CONST.__const` | `0x1468` | `0x14b8` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0xb90` | `0xbc8` | **`+0x38`** |
+| `__TEXT.__swift5_capture` | `0x6c0` | `0x6f0` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x6d8` | `0x700` | **`+0x28`** |
+| `__TEXT.__swift_as_cont` | `0x1d8` | `0x1ec` | **`+0x14`** |
+| `__DATA.__data` | `0xf70` | `0xf80` | **`+0x10`** |
+| `__DATA_CONST.__auth_ptr` | `0x3f8` | `0x408` | **`+0x10`** |
+| `__TEXT.__const` | `0x1568` | `0x1578` | **`+0x10`** |
+| `__TEXT.__cstring` | `0x987` | `0x997` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0x889` | `0x895` | **`+0xc`** |
+| `__TEXT.__constg_swiftt` | `0x560` | `0x568` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x120` | `0x124` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0xd8` | `0xdc` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__objc_classlist`
 - `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_entry`
 - `__TEXT.__swift5_fieldmd`
 - `__TEXT.__swift5_proto`
 - `__TEXT.__swift5_types`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_entry`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
+
+### Other Changes
 
 ```diff
 
 -246.0.0.0.0
--  __TEXT.__text: 0x33710
--  __TEXT.__auth_stubs: 0x1e00
 +246.1.17.0.0
-+  __TEXT.__text: 0x341bc
-+  __TEXT.__auth_stubs: 0x1ea0
-   __TEXT.__objc_stubs: 0x120
-   __TEXT.__objc_methlist: 0x104
--  __TEXT.__const: 0x1568
--  __TEXT.__cstring: 0x987
--  __TEXT.__swift5_typeref: 0x889
-+  __TEXT.__const: 0x1578
-+  __TEXT.__cstring: 0x997
-+  __TEXT.__swift5_typeref: 0x895
-   __TEXT.__objc_classname: 0x3a7
-   __TEXT.__objc_methname: 0x384
-   __TEXT.__objc_methtype: 0x15c
--  __TEXT.__constg_swiftt: 0x560
-+  __TEXT.__constg_swiftt: 0x568
-   __TEXT.__swift5_reflstr: 0x344
-   __TEXT.__swift5_fieldmd: 0x47c
-   __TEXT.__oslogstring: 0x151a
--  __TEXT.__swift5_capture: 0x6c0
-+  __TEXT.__swift5_capture: 0x6f0
-   __TEXT.__swift5_proto: 0xbc
-   __TEXT.__swift5_types: 0x60
--  __TEXT.__swift_as_entry: 0x120
--  __TEXT.__swift_as_ret: 0xd8
--  __TEXT.__swift_as_cont: 0x1d8
-+  __TEXT.__swift_as_entry: 0x124
-+  __TEXT.__swift_as_ret: 0xdc
-+  __TEXT.__swift_as_cont: 0x1ec
-   __TEXT.__swift5_assocty: 0x18
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__unwind_info: 0xd30
--  __TEXT.__eh_frame: 0x22a8
--  __DATA_CONST.__const: 0x1468
-+  __TEXT.__unwind_info: 0xd68
-+  __TEXT.__eh_frame: 0x2350
-+  __DATA_CONST.__const: 0x14b8
-   __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__auth_got: 0xf08
--  __DATA_CONST.__got: 0x6d8
--  __DATA_CONST.__auth_ptr: 0x3f8
-+  __DATA_CONST.__auth_got: 0xf58
-+  __DATA_CONST.__got: 0x700
-+  __DATA_CONST.__auth_ptr: 0x408
-   __DATA.__objc_const: 0x1098
-   __DATA.__objc_selrefs: 0xe8
-   __DATA.__objc_data: 0x50
--  __DATA.__data: 0xf70
-+  __DATA.__data: 0xf80
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/UIKit.framework/UIKit
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 742
 -  Symbols:   800
 -  CStrings:  244
 +  Functions: 754
 +  Symbols:   815
 +  CStrings:  245
- 
 Symbols:
 + _$s22VisualIntelligenceCore20ActionExecutionStateO19transportedSurfacesSaySo9IOSurfaceCGvg
 + _$s22VisualIntelligenceCore23FeedbackRemotePresenterO7present18encodedInteraction4kindy10Foundation4DataV_0aB8Services0D14EvaluationKindOtYaKFZ

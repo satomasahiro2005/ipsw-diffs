@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SiriActivation.framework/SiriActivation`
 
-```diff
+### Section Size Changes
 
- 3600.55.37.11.4
--  __TEXT.__text: 0x743f8
-+  __TEXT.__text: 0x74408
-   __TEXT.__objc_methlist: 0x6fa4
-   __TEXT.__const: 0x11dc
-   __TEXT.__cstring: 0xcc42
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x743f8` | `0x74408` | **`+0x10`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _OUTLINED_FUNCTION_0 : 20 -> 28
 ~ _OUTLINED_FUNCTION_1 : 28 -> 20

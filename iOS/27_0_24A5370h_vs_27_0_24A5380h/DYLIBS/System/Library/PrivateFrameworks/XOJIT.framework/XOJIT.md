@@ -2,50 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/XOJIT.framework/XOJIT`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x256d40
-+  __TEXT.__text: 0x255d08
-   __TEXT.__init_offsets: 0x11c
-   __TEXT.__const: 0x1e79c
-   __TEXT.__oslogstring: 0x16e
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__orc_runtime` | `0x7b1568` | `0x7b03b8` | **`-0x11b0`** |
+| `__TEXT.__text` | `0x256d40` | `0x255d08` | **`-0x1038`** |
+| `__TEXT.__unwind_info` | `0x5c68` | `0x5c28` | **`-0x40`** |
 
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0x30
--  __TEXT.__unwind_info: 0x5c68
-+  __TEXT.__unwind_info: 0x5c28
-   __TEXT.__eh_frame: 0x8f0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+### Other Changes
 
-   __DATA_CONST.__objc_classlist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x18
--  __DATA_CONST.__orc_runtime: 0x7b1568
-+  __DATA_CONST.__orc_runtime: 0x7b03b8
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x8da8
-   __AUTH_CONST.__objc_const: 0x770
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
+```text
 Functions:
 ~ _libcd_serialize_as_type : 1012 -> 1024
 ~ __ZN4llvm9StringMapINSt3__16atomicImEENS_15MallocAllocatorEE11try_emplaceIJiEEENS1_4pairINS_17StringMapIteratorIS3_EEbEENS_9StringRefEDpOT_ : 268 -> 260
@@ -363,5 +330,4 @@ Functions:
 ~ __ZL18matchIntrinsicTypePN4llvm4TypeERNS_8ArrayRefINS_9Intrinsic13IITDescriptorEEERNS_15SmallVectorImplIS1_EERNS7_INSt3__14pairIS1_S5_EEEEb : 1840 -> 1832
 ~ __ZN12_GLOBAL__N_18Verifier6verifyERKN4llvm8FunctionE : 6108 -> 6092
 ~ __ZN12_GLOBAL__N_18Verifier6verifyEv : 9948 -> 9932
-
 ```

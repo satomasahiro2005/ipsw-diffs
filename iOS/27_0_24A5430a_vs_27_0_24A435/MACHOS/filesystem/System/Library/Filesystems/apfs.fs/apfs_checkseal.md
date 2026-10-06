@@ -2,21 +2,22 @@
 
 > `/System/Library/Filesystems/apfs.fs/apfs_checkseal`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4fd84` | `0x4fef8` | **`+0x174`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 3288.2.1.0.0
--  __TEXT.__text: 0x4fd84
-+  __TEXT.__text: 0x4fef8
-   __TEXT.__auth_stubs: 0x760
-   __TEXT.__const: 0x4c0
-   __TEXT.__cstring: 0x10104
+```text
 Functions:
 ~ sub_100008350 : 636 -> 664
 ~ sub_10000876c -> sub_100008788 : 844 -> 868

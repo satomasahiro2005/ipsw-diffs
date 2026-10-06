@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CalendarIntegrationSupport.framework/CalendarIntegrationSupport`
 
-```diff
+### Section Size Changes
 
- 1246.0.0.0.0
--  __TEXT.__text: 0x1ccc0
-+  __TEXT.__text: 0x1ccdc
-   __TEXT.__objc_methlist: 0x23c
-   __TEXT.__oslogstring: 0xa37
-   __TEXT.__cstring: 0x140
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ccc0` | `0x1ccdc` | **`+0x1c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_22a67631c -> sub_22af0031c : 4388 -> 4396
 ~ sub_22a67aa80 -> sub_22af04a88 : 272 -> 280

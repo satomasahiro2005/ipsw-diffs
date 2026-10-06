@@ -2,106 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/AudioDSPManager.framework/AudioDSPManager`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbe264` | `0xc008c` | **`+0x1e28`** |
+| `__AUTH_CONST.__objc_const` | `0x1078` | `0x14c8` | **`+0x450`** |
+| `__TEXT.__eh_frame` | `0x3618` | `0x37f8` | **`+0x1e0`** |
+| `__TEXT.__gcc_except_tab` | `0x7158` | `0x7300` | **`+0x1a8`** |
+| `__AUTH.__objc_data` | `0x4d8` | `0x618` | **`+0x140`** |
+| `__TEXT.__objc_methlist` | `0x7c8` | `0x8f0` | **`+0x128`** |
+| `__AUTH_CONST.__const` | `0x7ed0` | `0x7fe0` | **`+0x110`** |
+| `__TEXT.__unwind_info` | `0x3ba0` | `0x3ca8` | **`+0x108`** |
+| `__TEXT.__cstring` | `0x6500` | `0x65f1` | **`+0xf1`** |
+| `__TEXT.__oslogstring` | `0x3b89` | `0x3c59` | **`+0xd0`** |
+| `__AUTH.__data` | `0x560` | `0x600` | **`+0xa0`** |
+| `__TEXT.__swift5_typeref` | `0x27f8` | `0x2898` | **`+0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x578` | `0x608` | **`+0x90`** |
+| `__TEXT.__const` | `0xef98` | `0xf008` | **`+0x70`** |
+| `__DATA_CONST.__const` | `0xc48` | `0xc98` | **`+0x50`** |
+| `__TEXT.__swift5_capture` | `0x2cc` | `0x31c` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x1540` | `0x1588` | **`+0x48`** |
+| `__AUTH_CONST.__cfstring` | `0xfc0` | `0x1000` | **`+0x40`** |
+| `__TEXT.__constg_swiftt` | `0x1d80` | `0x1dbc` | **`+0x3c`** |
+| `__DATA.__data` | `0x1560` | `0x1590` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0x88` | `0xb0` | **`+0x28`** |
+| `__DATA_CONST.__objc_superrefs` | `0x18` | `0x38` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x18fc` | `0x1918` | **`+0x1c`** |
+| `__DATA_CONST.__got` | `0x5c0` | `0x5d8` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x5c` | `0x70` | **`+0x14`** |
+| `__DATA.__bss` | `0x8060` | `0x8070` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x149c` | `0x14ac` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x228` | `0x22c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
- 241.110.0.0.0
--  __TEXT.__text: 0xbe264
-+  __TEXT.__text: 0xc008c
-   __TEXT.__realtime: 0x170
-   __TEXT.__init_offsets: 0x10
--  __TEXT.__objc_methlist: 0x7c8
--  __TEXT.__const: 0xef98
-+  __TEXT.__objc_methlist: 0x8f0
-+  __TEXT.__const: 0xf008
-   __TEXT.__dlopen_cstrs: 0x54
--  __TEXT.__swift5_typeref: 0x27f8
--  __TEXT.__swift5_fieldmd: 0x18fc
--  __TEXT.__constg_swiftt: 0x1d80
-+  __TEXT.__swift5_typeref: 0x2898
-+  __TEXT.__swift5_fieldmd: 0x1918
-+  __TEXT.__constg_swiftt: 0x1dbc
-   __TEXT.__swift5_protos: 0x58
-   __TEXT.__swift5_proto: 0x574
--  __TEXT.__swift5_types: 0x228
--  __TEXT.__swift5_reflstr: 0x149c
-+  __TEXT.__swift5_types: 0x22c
-+  __TEXT.__swift5_reflstr: 0x14ac
-   __TEXT.__swift5_assocty: 0x548
--  __TEXT.__cstring: 0x6500
-+  __TEXT.__cstring: 0x65f1
-   __TEXT.__swift_as_entry: 0x50
-   __TEXT.__swift_as_ret: 0x44
-   __TEXT.__swift_as_cont: 0x64
-   __TEXT.__swift5_builtin: 0x78
-   __TEXT.__swift5_mpenum: 0x54
--  __TEXT.__swift5_capture: 0x2cc
--  __TEXT.__gcc_except_tab: 0x7158
--  __TEXT.__oslogstring: 0x3b89
--  __TEXT.__unwind_info: 0x3ba0
--  __TEXT.__eh_frame: 0x3618
-+  __TEXT.__swift5_capture: 0x31c
-+  __TEXT.__gcc_except_tab: 0x7300
-+  __TEXT.__oslogstring: 0x3c59
-+  __TEXT.__unwind_info: 0x3ca8
-+  __TEXT.__eh_frame: 0x37f8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xc48
--  __DATA_CONST.__objc_classlist: 0x88
-+  __DATA_CONST.__const: 0xc98
-+  __DATA_CONST.__objc_classlist: 0xb0
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x20
--  __DATA_CONST.__objc_selrefs: 0x578
--  __DATA_CONST.__objc_superrefs: 0x18
--  __DATA_CONST.__got: 0x5c0
--  __AUTH_CONST.__const: 0x7ed0
--  __AUTH_CONST.__cfstring: 0xfc0
--  __AUTH_CONST.__objc_const: 0x1078
-+  __DATA_CONST.__objc_selrefs: 0x608
-+  __DATA_CONST.__objc_superrefs: 0x38
-+  __DATA_CONST.__got: 0x5d8
-+  __AUTH_CONST.__const: 0x7fe0
-+  __AUTH_CONST.__cfstring: 0x1000
-+  __AUTH_CONST.__objc_const: 0x14c8
-   __AUTH_CONST.__weak_auth_got: 0x20
--  __AUTH_CONST.__auth_got: 0x1540
--  __AUTH.__objc_data: 0x4d8
--  __AUTH.__data: 0x560
--  __DATA.__objc_ivar: 0x5c
--  __DATA.__data: 0x1560
-+  __AUTH_CONST.__auth_got: 0x1588
-+  __AUTH.__objc_data: 0x618
-+  __AUTH.__data: 0x600
-+  __DATA.__objc_ivar: 0x70
-+  __DATA.__data: 0x1590
-   __DATA.__cf_except_bt: 0x2000
-   __DATA.__crash_info: 0x148
-   __DATA.__common: 0x30
-
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
 +  - /usr/lib/swift/libswiftSynchronization.dylib
-   - /usr/lib/swift/libswiftSystem.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
+
 -  - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 3598
--  Symbols:   4454
+-  Symbols:   4317
 -  CStrings:  1233
 +  Functions: 3643
-+  Symbols:   4567
++  Symbols:   4412
 +  CStrings:  1245
- 
 Symbols:
 + +[CMAngleManagerShim isAvailable]
 + +[CMAngleManagerShim isClassAvailable]
@@ -184,24 +131,6 @@ Symbols:
 + _block_copy_helper
 + _block_descriptor
 + _block_destroy_helper
-+ _objc_msgSend$angleDegrees
-+ _objc_msgSend$angleUpdateInterval
-+ _objc_msgSend$initWithAngle:
-+ _objc_msgSend$initWithEvent:
-+ _objc_msgSend$isAngleValid
-+ _objc_msgSend$isAvailable
-+ _objc_msgSend$isClassAvailable
-+ _objc_msgSend$propertyA
-+ _objc_msgSend$setAngleUpdateInterval:
-+ _objc_msgSend$setName:
-+ _objc_msgSend$setQualityOfService:
-+ _objc_msgSend$shared
-+ _objc_msgSend$sharedManager
-+ _objc_msgSend$startAngleUpdatesToQueue:handler:
-+ _objc_msgSend$startUpdatesToQueue:handler:
-+ _objc_msgSend$startUpdatesToQueue:withHandler:
-+ _objc_msgSend$stopAngleUpdates
-+ _objc_msgSend$stopUpdates
 + _objc_release_x1
 + _objc_retainBlock
 + _objc_retain_x3

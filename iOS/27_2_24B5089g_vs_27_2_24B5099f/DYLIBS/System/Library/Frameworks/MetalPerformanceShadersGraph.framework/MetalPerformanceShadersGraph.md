@@ -2,74 +2,35 @@
 
 > `/System/Library/Frameworks/MetalPerformanceShadersGraph.framework/MetalPerformanceShadersGraph`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21dbad0` | `0x21dc91c` | **`+0xe4c`** |
+| `__TEXT.__const` | `0x6de08` | `0x6dea8` | **`+0xa0`** |
+| `__AUTH_CONST.__const` | `0xa9ba0` | `0xa9c30` | **`+0x90`** |
+| `__TEXT.__cstring` | `0xf1b00` | `0xf1b82` | **`+0x82`** |
+| `__TEXT.__gcc_except_tab` | `0x137fa0` | `0x138010` | **`+0x70`** |
+| `__AUTH_CONST.__cfstring` | `0x14cc0` | `0x14d20` | **`+0x60`** |
+| `__DATA_CONST.__objc_arraydata` | `0x1ad8` | `0x1b20` | **`+0x48`** |
+| `__AUTH_CONST.__objc_dictobj` | `0x618` | `0x640` | **`+0x28`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x2430` | `0x2448` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x67648` | `0x67660` | **`+0x18`** |
+| `__DATA.__data` | `0x77d0` | `0x77e0` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -7.1.4.0.0
--  __TEXT.__text: 0x21a0e6c
 +7.1.5.0.0
-+  __TEXT.__text: 0x21a1cc4
-   __TEXT.__mpsgraph_init_: 0x40
-   __TEXT.__objc_methlist: 0x8564
--  __TEXT.__const: 0x6de08
--  __TEXT.__cstring: 0xf1b00
-+  __TEXT.__const: 0x6dea8
-+  __TEXT.__cstring: 0xf1b82
-   __TEXT.__swift5_typeref: 0xb72
-   __TEXT.__swift5_capture: 0x340
-   __TEXT.__oslogstring: 0x378f
 
-   __TEXT.__swift_as_entry: 0x14
-   __TEXT.__swift_as_ret: 0x4
-   __TEXT.__swift_as_cont: 0x10
--  __TEXT.__gcc_except_tab: 0x137fa0
-+  __TEXT.__gcc_except_tab: 0x138010
-   __TEXT.__ustring: 0x19c
--  __TEXT.__unwind_info: 0x77958
-+  __TEXT.__unwind_info: 0x77970
-   __TEXT.__eh_frame: 0x1484
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0x4738
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__objc_superrefs: 0x230
--  __DATA_CONST.__objc_arraydata: 0x1ad8
-+  __DATA_CONST.__objc_arraydata: 0x1b20
-   __DATA_CONST.__got: 0x1028
--  __AUTH_CONST.__const: 0xa9ba0
--  __AUTH_CONST.__cfstring: 0x14cc0
-+  __AUTH_CONST.__const: 0xa9c30
-+  __AUTH_CONST.__cfstring: 0x14d20
-   __AUTH_CONST.__objc_const: 0x128d8
-   __AUTH_CONST.__weak_auth_got: 0x60
-   __AUTH_CONST.__objc_intobj: 0x768
--  __AUTH_CONST.__objc_arrayobj: 0x2430
--  __AUTH_CONST.__objc_dictobj: 0x618
-+  __AUTH_CONST.__objc_arrayobj: 0x2448
-+  __AUTH_CONST.__objc_dictobj: 0x640
-   __AUTH_CONST.__auth_got: 0x2760
-   __AUTH.__objc_data: 0x4e70
-   __AUTH.__data: 0x5100
-
-   __AUTH.__thread_data: 0x1
-   __AUTH.__thread_bss: 0x1b0
-   __DATA.__objc_ivar: 0x27c
--  __DATA.__data: 0x77d0
-+  __DATA.__data: 0x77e0
-   __DATA.__crash_info: 0x148
-   __DATA.__common: 0x2448
-   __DATA_DIRTY.__objc_ivar: 0xa48
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 105298
 -  Symbols:   141132
 -  CStrings:  21156
 +  Functions: 105307
 +  Symbols:   141150
 +  CStrings:  21161
- 
 Symbols:
 + GCC_except_table506
 + GCC_except_table507

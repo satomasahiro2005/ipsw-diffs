@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MTInferenceToolLib.framework/MTInferenceToolLib`
 
-```diff
+### Section Size Changes
 
- 389.1.0.0.0
--  __TEXT.__text: 0x1c5b8
-+  __TEXT.__text: 0x1c5c8
-   __TEXT.__const: 0x30a8
-   __TEXT.__constg_swiftt: 0x7c8
-   __TEXT.__swift5_typeref: 0x7e8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c5b8` | `0x1c5c8` | **`+0x10`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_28d6928f0 -> sub_28e3de8f0 : 772 -> 788
+~ sub_28d5668f0 -> sub_28e2ab8f0 : 772 -> 788
 ```

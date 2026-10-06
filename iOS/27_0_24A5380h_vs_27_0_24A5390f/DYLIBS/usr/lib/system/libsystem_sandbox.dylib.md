@@ -2,33 +2,23 @@
 
 > `/usr/lib/system/libsystem_sandbox.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__DATA_CONST.__const`
-- `__AUTH_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x84c` | `0xb68` | **`+0x31c`** |
+| `__TEXT.__text` | `0x3b58` | `0x3ce4` | **`+0x18c`** |
+| `__TEXT.__unwind_info` | `0x1d0` | `0x1d8` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -3051.0.30.0.0
--  __TEXT.__text: 0x3b58
 +3051.0.42.0.2
-+  __TEXT.__text: 0x3ce4
-   __TEXT.__const: 0x180
--  __TEXT.__cstring: 0x84c
--  __TEXT.__unwind_info: 0x1d0
-+  __TEXT.__cstring: 0xb68
-+  __TEXT.__unwind_info: 0x1d8
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x68
-   __DATA_CONST.__got: 0x0
 
-   - /usr/lib/system/libsystem_platform.dylib
-   Functions: 142
-   Symbols:   245
 -  CStrings:  75
 +  CStrings:  95
- 
 Functions:
 ~ _sandbox_extension_issue_file : 28 -> 36
 ~ _sandbox_extension_issue_file_to_process : 28 -> 36

@@ -2,30 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/WebCore.framework/Frameworks/libANGLE-shared.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x258cf4` | `0x258fa8` | **`+0x2b4`** |
+| `__TEXT.__cstring` | `0x44601` | `0x4488a` | **`+0x289`** |
+| `__TEXT.__const` | `0x83e80` | `0x83f00` | **`+0x80`** |
+
+### Other Changes
+
 ```diff
 
 -625.1.24.10.1
--  __TEXT.__text: 0x258cf4
--  __TEXT.__const: 0x83e80
--  __TEXT.__cstring: 0x44601
 +625.1.29.10.3
-+  __TEXT.__text: 0x258fa8
-+  __TEXT.__const: 0x83f00
-+  __TEXT.__cstring: 0x4488a
-   __TEXT.__gcc_except_tab: 0x2b44
-   __TEXT.__oslogstring: 0xf
-   __TEXT.__unwind_info: 0x9288
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 9075
--  Symbols:   13484
+-  Symbols:   13235
 -  CStrings:  7007
 +  Functions: 9076
-+  Symbols:   13485
++  Symbols:   13236
 +  CStrings:  7010
- 
 Symbols:
 + __ZN12_GLOBAL__N_114ProgramPrelude9negateIntEv
 + __ZN2gl33ValidateDrawElementsInstancedBaseEPKNS_7ContextEN5angle10EntryPointENS_13PrimitiveModeEiNS_16DrawElementsTypeEPKviij

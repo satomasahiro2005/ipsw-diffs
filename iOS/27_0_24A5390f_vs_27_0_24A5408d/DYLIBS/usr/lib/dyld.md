@@ -2,33 +2,27 @@
 
 > `/usr/lib/dyld`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9e8bc` | `0x9edac` | **`+0x4f0`** |
+| `__TEXT.__cstring` | `0x12499` | `0x124de` | **`+0x45`** |
+| `__DATA_CONST.__const` | `0x5590` | `0x55b0` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x35b0` | `0x35b8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -27060.1.0.0.0
--  __TEXT.__text: 0x9e8bc
-+27062.0.0.0.0
-+  __TEXT.__text: 0x9edac
-   __TEXT.__const: 0x1978
--  __TEXT.__cstring: 0x12499
--  __TEXT.__unwind_info: 0x35b0
--  __DATA_CONST.__const: 0x5590
-+  __TEXT.__cstring: 0x124de
-+  __TEXT.__unwind_info: 0x35b8
-+  __DATA_CONST.__const: 0x55b0
-   __AUTH_CONST.__const: 0x2758
-   __DATA.__data: 0x1c0
-   __DATA.__crash_info: 0x148
-
-   __DATA_DIRTY.__bss: 0x1bc0
-   __TPRO_CONST.__data: 0xe1
-   __TPRO_CONST.__allocator: 0x20000
 -  Functions: 3421
 -  Symbols:   3268
 -  CStrings:  2243
++27062.0.0.0.0
 +  Functions: 3423
 +  Symbols:   3271
 +  CStrings:  2244
- 
 Symbols:
 + __ZN3lsl6VectorIPKN5dyld46LoaderEE7reserveEy
 + __ZZNK5dyld46Loader17hasExportedSymbolER11DiagnosticsRNS_12RuntimeStateEPKcNS0_18ExportedSymbolModeENS0_12ResolverModeEPNS0_14ResolvedSymbolEbPN5dyld35ArrayIPKS0_EEENK3$_0clEv

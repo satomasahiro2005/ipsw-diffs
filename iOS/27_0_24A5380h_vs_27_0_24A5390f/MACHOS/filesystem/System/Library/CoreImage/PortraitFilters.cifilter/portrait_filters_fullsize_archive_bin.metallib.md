@@ -2,20 +2,14 @@
 
 > `/System/Library/CoreImage/PortraitFilters.cifilter/portrait_filters_fullsize_archive_bin.metallib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__reflection`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__metallib` | `0x17a7320` | `0x17f8ab0` | **`+0x51790`** |
+| `__TEXT.__compute` | `0xec5d0` | `0xec5c0` | **`-0x10`** |
+
+### Same-size Content Changes
+
 - `__TEXT.__descriptor`
-
-```diff
-
-   __TEXT.__reflection: 0x2a060
--  __TEXT.__compute: 0xec790
-+  __TEXT.__compute: 0xec780
-   __TEXT.__descriptor: 0xbed0
--  __TEXT.__metallib: 0x17a7320
-+  __TEXT.__metallib: 0x17f8ab0
-   Functions: 0
-   Symbols:   0
-   CStrings:  0
-```
+- `__TEXT.__reflection`

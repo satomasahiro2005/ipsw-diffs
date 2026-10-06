@@ -2,53 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/VoiceShortcutClient.framework/VoiceShortcutClient`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__objc_const` | `0x1a7d8` | `0x1a808` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0xceac` | `0xcec4` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6148` | `0x6158` | **`+0x10`** |
+| `__TEXT.__text` | `0x155528` | `0x155538` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0xd14` | `0xd18` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -5037.109.0.0.0
--  __TEXT.__text: 0x14af08
--  __TEXT.__objc_methlist: 0xceac
 +5037.111.0.0.0
-+  __TEXT.__text: 0x14af18
-+  __TEXT.__objc_methlist: 0xcec4
-   __TEXT.__const: 0x10300
-   __TEXT.__dlopen_cstrs: 0xdb4
-   __TEXT.__cstring: 0x18421
 
-   __DATA_CONST.__objc_catlist: 0xd8
-   __DATA_CONST.__objc_protolist: 0x180
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6148
-+  __DATA_CONST.__objc_selrefs: 0x6158
-   __DATA_CONST.__objc_protorefs: 0xa0
-   __DATA_CONST.__objc_superrefs: 0x7f0
-   __DATA_CONST.__objc_arraydata: 0x4740
-   __DATA_CONST.__got: 0x1218
-   __AUTH_CONST.__const: 0xa588
-   __AUTH_CONST.__cfstring: 0x19d20
--  __AUTH_CONST.__objc_const: 0x1a7d8
-+  __AUTH_CONST.__objc_const: 0x1a808
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x4d88
-   __AUTH_CONST.__objc_arrayobj: 0x180
-
-   __AUTH_CONST.__auth_got: 0x1e60
-   __AUTH.__objc_data: 0x36f0
-   __AUTH.__data: 0x1a80
--  __DATA.__objc_ivar: 0xd14
-+  __DATA.__objc_ivar: 0xd18
-   __DATA.__data: 0x46b0
-   __DATA.__common: 0x90
-   __DATA_DIRTY.__objc_data: 0x2a78
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10865
 -  Symbols:   11731
 +  Functions: 10867
 +  Symbols:   11734
-   CStrings:  4421
- 
 Symbols:
 + -[WFWorkflowRunningContext didSpreadModelRequestLoad]
 + -[WFWorkflowRunningContext setDidSpreadModelRequestLoad:]

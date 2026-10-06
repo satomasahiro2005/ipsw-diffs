@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/TouchController.framework/TouchController`
 
-```diff
+### Section Size Changes
 
- 2.0.7.0.0
--  __TEXT.__text: 0x31ca0
-+  __TEXT.__text: 0x31ca4
-   __TEXT.__objc_methlist: 0x23c4
-   __TEXT.__const: 0x1ea2
-   __TEXT.__cstring: 0x806
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x31ca0` | `0x31ca4` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_24bfd40d0 -> sub_24c9d70d0 : 356 -> 360
+~ sub_24be810d0 -> sub_24c88b0d0 : 356 -> 360
 ```

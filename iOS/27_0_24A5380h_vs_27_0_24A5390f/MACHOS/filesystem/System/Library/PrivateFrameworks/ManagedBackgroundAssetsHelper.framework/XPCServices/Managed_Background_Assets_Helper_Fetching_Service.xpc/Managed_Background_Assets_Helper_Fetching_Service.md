@@ -2,52 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/ManagedBackgroundAssetsHelper.framework/XPCServices/Managed Background Assets Helper Fetching Service.xpc/Managed Background Assets Helper Fetching Service`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_entry`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__got`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x234` | `0x1a0` | **`-0x94`** |
+| `__TEXT.__swift5_typeref` | `0x21` | `—` | **`-0x21`** |
+| `__TEXT.__auth_stubs` | `0xe0` | `0xc0` | **`-0x20`** |
+| `__DATA_CONST.__auth_got` | `0x78` | `0x68` | **`-0x10`** |
+| `__DATA_CONST.__auth_ptr` | `0x18` | `0x8` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x70` | `0x60` | **`-0x10`** |
+| `__DATA.__data` | `0x8` | `—` | **`-0x8`** |
+| `__TEXT.__const` | `0xa` | `0x2` | **`-0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_selrefs`
+- `__DATA_CONST.__got`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_entry`
+
+### Other Changes
 
 ```diff
 
 -2.0.30.0.0
--  __TEXT.__text: 0x234
--  __TEXT.__auth_stubs: 0xe0
 +2.0.32.0.0
-+  __TEXT.__text: 0x1a0
-+  __TEXT.__auth_stubs: 0xc0
-   __TEXT.__objc_stubs: 0x40
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__swift5_typeref: 0x21
--  __TEXT.__const: 0xa
-+  __TEXT.__const: 0x2
-   __TEXT.__objc_methname: 0x10
--  __TEXT.__unwind_info: 0x70
-+  __TEXT.__unwind_info: 0x60
-   __TEXT.__eh_frame: 0x48
-   __DATA_CONST.__const: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x78
-+  __DATA_CONST.__auth_got: 0x68
-   __DATA_CONST.__got: 0x10
--  __DATA_CONST.__auth_ptr: 0x18
-+  __DATA_CONST.__auth_ptr: 0x8
-   __DATA.__objc_selrefs: 0x10
--  __DATA.__data: 0x8
-   __DATA.__bss: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 4
 -  Symbols:   19
 +  Functions: 2
 +  Symbols:   18
-   CStrings:  2
- 
 Symbols:
 - _swift_getTypeByMangledNameInContext2
 ```

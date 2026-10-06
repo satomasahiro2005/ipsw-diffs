@@ -2,90 +2,56 @@
 
 > `/usr/libexec/nfcd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e854c` | `0x1edfa8` | **`+0x5a5c`** |
+| `__TEXT.__cstring` | `0x22a48` | `0x23238` | **`+0x7f0`** |
+| `__DATA_CONST.__cfstring` | `0x113a0` | `0x11920` | **`+0x580`** |
+| `__TEXT.__objc_methname` | `0x15a48` | `0x15f91` | **`+0x549`** |
+| `__TEXT.__oslogstring` | `0x20776` | `0x20c81` | **`+0x50b`** |
+| `__DATA.__objc_const` | `0x14ec8` | `0x15238` | **`+0x370`** |
+| `__TEXT.__objc_stubs` | `0xe060` | `0xe3c0` | **`+0x360`** |
+| `__DATA_CONST.__objc_intobj` | `0x7c20` | `0x7db8` | **`+0x198`** |
+| `__TEXT.__objc_methlist` | `0x9de4` | `0x9f4c` | **`+0x168`** |
+| `__TEXT.__delay_helper` | `0x172c` | `0x1878` | **`+0x14c`** |
+| `__DATA.__objc_selrefs` | `0x4bc8` | `0x4cf8` | **`+0x130`** |
+| `__TEXT.__auth_stubs` | `0x1880` | `0x1920` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x2c58` | `0x2cf8` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x9a50` | `0x9ae0` | **`+0x90`** |
+| `__DATA.__data` | `0x2b3c` | `0x2ba0` | **`+0x64`** |
+| `__TEXT.__objc_methtype` | `0x4e1f` | `0x4e81` | **`+0x62`** |
+| `__DATA.__objc_data` | `0x3f20` | `0x3f70` | **`+0x50`** |
+| `__DATA_CONST.__auth_got` | `0xcf0` | `0xd40` | **`+0x50`** |
+| `__DATA_CONST.__objc_dictobj` | `0x1040` | `0x1090` | **`+0x50`** |
+| `__DATA.__objc_ivar` | `0x1138` | `0x1180` | **`+0x48`** |
+| `__TEXT.__objc_classname` | `0x1d44` | `0x1d83` | **`+0x3f`** |
+| `__DATA_CONST.__objc_arraydata` | `0x1e70` | `0x1ea0` | **`+0x30`** |
+| `__DATA_CONST.__objc_arrayobj` | `0x360` | `0x378` | **`+0x18`** |
+| `__DATA.__bss` | `0x2c0` | `0x2d0` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0xa08` | `0xa18` | **`+0x10`** |
+| `__TEXT.__const` | `0x145c` | `0x144c` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x650` | `0x658` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x388` | `0x390` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x480` | `0x488` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__objc_catlist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__auth_ptr`
+
+### Other Changes
 
 ```diff
 
- 370.42.1.0.0
--  __TEXT.__text: 0x1e854c
--  __TEXT.__auth_stubs: 0x1880
-+  __TEXT.__text: 0x1edfa8
-+  __TEXT.__auth_stubs: 0x1920
-   __TEXT.__delay_stubs: 0x540
--  __TEXT.__delay_helper: 0x172c
--  __TEXT.__objc_stubs: 0xe060
--  __TEXT.__objc_methlist: 0x9de4
--  __TEXT.__const: 0x145c
--  __TEXT.__cstring: 0x22a48
--  __TEXT.__oslogstring: 0x20776
--  __TEXT.__objc_classname: 0x1d44
--  __TEXT.__objc_methname: 0x15a48
--  __TEXT.__objc_methtype: 0x4e1f
--  __TEXT.__unwind_info: 0x2c58
--  __DATA_CONST.__const: 0x9a50
--  __DATA_CONST.__cfstring: 0x113a0
--  __DATA_CONST.__objc_classlist: 0x650
-+  __TEXT.__delay_helper: 0x1878
-+  __TEXT.__objc_stubs: 0xe3c0
-+  __TEXT.__objc_methlist: 0x9f4c
-+  __TEXT.__const: 0x144c
-+  __TEXT.__cstring: 0x23238
-+  __TEXT.__oslogstring: 0x20c81
-+  __TEXT.__objc_classname: 0x1d83
-+  __TEXT.__objc_methname: 0x15f91
-+  __TEXT.__objc_methtype: 0x4e81
-+  __TEXT.__unwind_info: 0x2cf8
-+  __DATA_CONST.__const: 0x9ae0
-+  __DATA_CONST.__cfstring: 0x11920
-+  __DATA_CONST.__objc_classlist: 0x658
-   __DATA_CONST.__objc_catlist: 0x18
--  __DATA_CONST.__objc_protolist: 0x388
-+  __DATA_CONST.__objc_protolist: 0x390
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x1d8
--  __DATA_CONST.__objc_superrefs: 0x480
--  __DATA_CONST.__objc_intobj: 0x7c20
--  __DATA_CONST.__objc_arraydata: 0x1e70
--  __DATA_CONST.__objc_dictobj: 0x1040
--  __DATA_CONST.__objc_arrayobj: 0x360
--  __DATA_CONST.__auth_got: 0xcf0
--  __DATA_CONST.__got: 0xa08
-+  __DATA_CONST.__objc_superrefs: 0x488
-+  __DATA_CONST.__objc_intobj: 0x7db8
-+  __DATA_CONST.__objc_arraydata: 0x1ea0
-+  __DATA_CONST.__objc_dictobj: 0x1090
-+  __DATA_CONST.__objc_arrayobj: 0x378
-+  __DATA_CONST.__auth_got: 0xd40
-+  __DATA_CONST.__got: 0xa18
-   __DATA_CONST.__auth_ptr: 0x18
--  __DATA.__objc_const: 0x14ec8
--  __DATA.__objc_selrefs: 0x4bc8
--  __DATA.__objc_ivar: 0x1138
--  __DATA.__objc_data: 0x3f20
--  __DATA.__data: 0x2b3c
-+  __DATA.__objc_const: 0x15238
-+  __DATA.__objc_selrefs: 0x4cf8
-+  __DATA.__objc_ivar: 0x1180
-+  __DATA.__objc_data: 0x3f70
-+  __DATA.__data: 0x2ba0
-   __DATA.__common: 0x18
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMotion.framework/CoreMotion
-
-   - /usr/lib/libTelephonyBasebandDynamic.dylib
-   - /usr/lib/libnfshared.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 4281
 -  Symbols:   673
 -  CStrings:  11419
 +  Functions: 4334
 +  Symbols:   686
 +  CStrings:  11583
- 
 Symbols:
 + _NFDataAsHexString
 + _NFDriverGetBootMeasurements

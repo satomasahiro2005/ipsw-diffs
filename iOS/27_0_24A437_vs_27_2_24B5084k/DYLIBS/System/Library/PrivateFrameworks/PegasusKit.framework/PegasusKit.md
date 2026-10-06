@@ -2,105 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/PegasusKit.framework/PegasusKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf6cf0` | `0x10603c` | **`+0xf34c`** |
+| `__AUTH_CONST.__const` | `0xba68` | `0xc258` | **`+0x7f0`** |
+| `__AUTH.__data` | `0x6c8` | `0xbe0` | **`+0x518`** |
+| `__TEXT.__eh_frame` | `0x6c24` | `0x7118` | **`+0x4f4`** |
+| `__TEXT.__const` | `0x64a0` | `0x6980` | **`+0x4e0`** |
+| `__DATA.__bss` | `0x2720` | `0x2b20` | **`+0x400`** |
+| `__DATA.__data` | `0xe70` | `0x11f0` | **`+0x380`** |
+| `__TEXT.__oslogstring` | `0x2edf` | `0x325f` | **`+0x380`** |
+| `__TEXT.__unwind_info` | `0x2eb0` | `0x31c0` | **`+0x310`** |
+| `__TEXT.__swift5_typeref` | `0x2f3c` | `0x320a` | **`+0x2ce`** |
+| `__AUTH_CONST.__objc_const` | `0x26d0` | `0x2990` | **`+0x2c0`** |
+| `__TEXT.__swift5_fieldmd` | `0x1ec0` | `0x20f4` | **`+0x234`** |
+| `__TEXT.__constg_swiftt` | `0x2e08` | `0x302c` | **`+0x224`** |
+| `__TEXT.__cstring` | `0x2eb1` | `0x30b1` | **`+0x200`** |
+| `__TEXT.__swift5_capture` | `0x4128` | `0x4324` | **`+0x1fc`** |
+| `__TEXT.__swift5_reflstr` | `0x246d` | `0x263d` | **`+0x1d0`** |
+| `__AUTH_CONST.__auth_got` | `0x1bb8` | `0x1d18` | **`+0x160`** |
+| `__TEXT.__objc_methlist` | `0x3d0` | `0x508` | **`+0x138`** |
+| `__AUTH.__objc_data` | `0x1c0` | `0x2d0` | **`+0x110`** |
+| `__DATA_CONST.__objc_selrefs` | `0x488` | `0x538` | **`+0xb0`** |
+| `__DATA_CONST.__objc_protolist` | `0x80` | `0xc0` | **`+0x40`** |
+| `__DATA.__common` | `0xa0` | `0xd0` | **`+0x30`** |
+| `__TEXT.__swift5_assocty` | `0x2a8` | `0x2d8` | **`+0x30`** |
+| `__TEXT.__swift_as_cont` | `0x510` | `0x53c` | **`+0x2c`** |
+| `__TEXT.__swift5_proto` | `0x27c` | `0x2a0` | **`+0x24`** |
+| `__TEXT.__swift5_types` | `0x1b0` | `0x1d4` | **`+0x24`** |
+| `__DATA_CONST.__objc_protorefs` | `0x48` | `0x68` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x138` | `0x150` | **`+0x18`** |
+| `__TEXT.__swift_as_entry` | `0x238` | `0x24c` | **`+0x14`** |
+| `__TEXT.__swift_as_ret` | `0x298` | `0x2ac` | **`+0x14`** |
+| `__DATA_DIRTY.__data` | `0x74d8` | `0x74e8` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `0xa8` | `0xb0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.56.26.11.2
--  __TEXT.__text: 0xeaab4
--  __TEXT.__objc_methlist: 0x3d0
--  __TEXT.__const: 0x64a0
--  __TEXT.__swift5_typeref: 0x2f3c
--  __TEXT.__constg_swiftt: 0x2e08
--  __TEXT.__swift5_reflstr: 0x246d
--  __TEXT.__swift5_fieldmd: 0x1ec0
 +3605.21.1.1.1
-+  __TEXT.__text: 0xf933c
-+  __TEXT.__objc_methlist: 0x508
-+  __TEXT.__const: 0x6980
-+  __TEXT.__swift5_typeref: 0x320a
-+  __TEXT.__constg_swiftt: 0x302c
-+  __TEXT.__swift5_reflstr: 0x263d
-+  __TEXT.__swift5_fieldmd: 0x20f4
-   __TEXT.__swift5_builtin: 0x78
--  __TEXT.__cstring: 0x2eb1
--  __TEXT.__oslogstring: 0x2edf
--  __TEXT.__swift5_proto: 0x27c
--  __TEXT.__swift5_types: 0x1b0
--  __TEXT.__swift5_protos: 0xa8
--  __TEXT.__swift5_capture: 0x4128
--  __TEXT.__swift_as_entry: 0x238
--  __TEXT.__swift_as_ret: 0x298
--  __TEXT.__swift_as_cont: 0x510
--  __TEXT.__swift5_assocty: 0x2a8
-+  __TEXT.__cstring: 0x30b1
-+  __TEXT.__oslogstring: 0x325f
-+  __TEXT.__swift5_proto: 0x2a0
-+  __TEXT.__swift5_types: 0x1d4
-+  __TEXT.__swift5_protos: 0xb0
-+  __TEXT.__swift5_capture: 0x4324
-+  __TEXT.__swift_as_entry: 0x24c
-+  __TEXT.__swift_as_ret: 0x2ac
-+  __TEXT.__swift_as_cont: 0x53c
-+  __TEXT.__swift5_assocty: 0x2d8
-   __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__unwind_info: 0x3578
--  __TEXT.__eh_frame: 0x6c24
-+  __TEXT.__unwind_info: 0x3900
-+  __TEXT.__eh_frame: 0x7118
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x188
--  __DATA_CONST.__objc_classlist: 0x138
--  __DATA_CONST.__objc_protolist: 0x80
-+  __DATA_CONST.__objc_classlist: 0x150
-+  __DATA_CONST.__objc_protolist: 0xc0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x488
--  __DATA_CONST.__objc_protorefs: 0x48
-+  __DATA_CONST.__objc_selrefs: 0x538
-+  __DATA_CONST.__objc_protorefs: 0x68
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xba68
--  __AUTH_CONST.__objc_const: 0x26d0
--  __AUTH_CONST.__auth_got: 0x1bb8
--  __AUTH.__objc_data: 0x1c0
--  __AUTH.__data: 0x6c8
--  __DATA.__data: 0xe70
--  __DATA.__common: 0xa0
-+  __AUTH_CONST.__const: 0xc258
-+  __AUTH_CONST.__objc_const: 0x2990
-+  __AUTH_CONST.__auth_got: 0x1d18
-+  __AUTH.__objc_data: 0x2d0
-+  __AUTH.__data: 0xbe0
-+  __DATA.__data: 0x11f0
-+  __DATA.__common: 0xd0
-   __DATA_DIRTY.__objc_data: 0x460
--  __DATA_DIRTY.__data: 0x74d8
-+  __DATA_DIRTY.__data: 0x74e8
-   __DATA_DIRTY.__common: 0x100
-   __DATA_DIRTY.__bss: 0x1600
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
 
-   - /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf
-   - /System/Library/PrivateFrameworks/PegasusAPI.framework/PegasusAPI
-   - /System/Library/PrivateFrameworks/PegasusConfiguration.framework/PegasusConfiguration
 +  - /System/Library/PrivateFrameworks/SearchFoundation.framework/SearchFoundation
-   - /System/Library/PrivateFrameworks/SymptomDiagnosticReporter.framework/SymptomDiagnosticReporter
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 5620
--  Symbols:   1698
+-  Functions: 5621
+-  Symbols:   1600
 -  CStrings:  565
-+  Functions: 5918
-+  Symbols:   1806
++  Functions: 5919
++  Symbols:   1698
 +  CStrings:  599
- 
 Symbols:
 + _NSLocalizedDescriptionKey
 + _OBJC_CLASS_$_NSJSONSerialization
@@ -151,16 +104,6 @@ Symbols:
 + _associated conformance 10PegasusKit12NetworkStateO6SourceOSHAASQ
 + _associated conformance 10PegasusKit12NetworkStateO6SourceOs12CaseIterableAA8AllCasessAFP_Sl
 + _associated conformance 10PegasusKit18PGSCardLoaderErrorOSHAASQ
-+ _objc_msgSend$JSONObjectWithData:options:error:
-+ _objc_msgSend$cardSections
-+ _objc_msgSend$dataWithJSONObject:options:error:
-+ _objc_msgSend$initWithData:
-+ _objc_msgSend$initWithProtobuf:
-+ _objc_msgSend$setCardSections:
-+ _objc_msgSend$setImageData:
-+ _objc_msgSend$set_longLivedConnectionCachePurgeTimeout:
-+ _objc_msgSend$source
-+ _objc_msgSend$urlValue
 + _objc_retain_x10
 + _swift_deallocPartialClassInstance
 + _swift_release_x9

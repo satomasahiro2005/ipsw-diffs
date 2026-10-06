@@ -2,73 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/HomeEnergyDaemon.framework/HomeEnergyDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3ede28` | `0x3efab0` | **`+0x1c88`** |
+| `__TEXT.__swift5_reflstr` | `0x3974` | `0x3aa4` | **`+0x130`** |
+| `__TEXT.__cstring` | `0x5f21` | `0x6041` | **`+0x120`** |
+| `__DATA_DIRTY.__data` | `0x4fc8` | `0x50b8` | **`+0xf0`** |
+| `__TEXT.__swift5_fieldmd` | `0x3760` | `0x37d8` | **`+0x78`** |
+| `__DATA_DIRTY.__objc_data` | `0x5c0` | `0x610` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0xb650` | `0xb6a0` | **`+0x50`** |
+| `__AUTH_CONST.__objc_const` | `0x65b0` | `0x6568` | **`-0x48`** |
+| `__AUTH_CONST.__const` | `0xc430` | `0xc418` | **`-0x18`** |
+| `__TEXT.__constg_swiftt` | `0x4298` | `0x42b0` | **`+0x18`** |
+| `__DATA.__data` | `0x1a10` | `0x1a20` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x32f0` | `0x32e8` | **`-0x8`** |
+| `__DATA_DIRTY.__common` | `0x260` | `0x268` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 490.1.4.0.0
--  __TEXT.__text: 0x3ede28
-+  __TEXT.__text: 0x3efab0
-   __TEXT.__objc_methlist: 0xcf8
-   __TEXT.__const: 0xb910
-   __TEXT.__gcc_except_tab: 0x18
--  __TEXT.__cstring: 0x5f21
-+  __TEXT.__cstring: 0x6041
-   __TEXT.__swift5_typeref: 0x3500
-   __TEXT.__oslogstring: 0x118ef
-   __TEXT.__swift5_capture: 0x3bd8
--  __TEXT.__constg_swiftt: 0x4298
--  __TEXT.__swift5_reflstr: 0x3974
--  __TEXT.__swift5_fieldmd: 0x3760
-+  __TEXT.__constg_swiftt: 0x42b0
-+  __TEXT.__swift5_reflstr: 0x3aa4
-+  __TEXT.__swift5_fieldmd: 0x37d8
-   __TEXT.__swift5_builtin: 0xb4
-   __TEXT.__swift5_assocty: 0x330
-   __TEXT.__swift5_proto: 0x434
-
-   __TEXT.__swift_as_cont: 0x1c64
-   __TEXT.__swift5_protos: 0x48
-   __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__unwind_info: 0xb650
-+  __TEXT.__unwind_info: 0xb6a0
-   __TEXT.__eh_frame: 0x24458
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0x15f8
-   __DATA_CONST.__objc_protorefs: 0x50
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xc430
--  __AUTH_CONST.__objc_const: 0x65b0
--  __AUTH_CONST.__auth_got: 0x32f0
-+  __AUTH_CONST.__const: 0xc418
-+  __AUTH_CONST.__objc_const: 0x6568
-+  __AUTH_CONST.__auth_got: 0x32e8
-   __AUTH.__objc_data: 0x2a0
-   __AUTH.__data: 0x2458
--  __DATA.__data: 0x1a10
-+  __DATA.__data: 0x1a20
-   __DATA.__common: 0xb8
--  __DATA_DIRTY.__objc_data: 0x5c0
--  __DATA_DIRTY.__data: 0x4fc8
-+  __DATA_DIRTY.__objc_data: 0x610
-+  __DATA_DIRTY.__data: 0x50b8
-   __DATA_DIRTY.__bss: 0xc00
--  __DATA_DIRTY.__common: 0x260
-+  __DATA_DIRTY.__common: 0x268
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-
-   - /usr/lib/swift/libswift_DarwinFoundation3.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10910
--  Symbols:   21326
+-  Symbols:   20789
 -  CStrings:  1706
 +  Functions: 10927
-+  Symbols:   21350
++  Symbols:   20813
 +  CStrings:  1715
- 
 Symbols:
 + _$s16HomeEnergyDaemon0B17KitAnalyticsEventC4dataAA0bdeF4DataVSgvpACTk
 + _$s16HomeEnergyDaemon0B17KitAnalyticsEventCMU

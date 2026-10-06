@@ -2,19 +2,18 @@
 
 > `/usr/lib/libnfrestore.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xceb0` | `0xceac` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xceb0
-+  __TEXT.__text: 0xceac
-   __TEXT.__const: 0x80
-   __TEXT.__cstring: 0x2181
-   __TEXT.__oslogstring: 0x18cb
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
+-370.37.0.0.0
++370.38.2.0.0
 Functions:
-~ sub_2bfb06b74 -> sub_2c0b8eb74 : 7764 -> 7760
-
+~ sub_2bf9f7b74 -> sub_2bffbbb74 : 7764 -> 7760
 ```

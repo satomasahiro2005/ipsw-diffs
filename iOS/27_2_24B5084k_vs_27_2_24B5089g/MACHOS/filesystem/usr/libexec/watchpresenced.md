@@ -2,66 +2,45 @@
 
 > `/usr/libexec/watchpresenced`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6448` | `0x673c` | **`+0x2f4`** |
+| `__TEXT.__oslogstring` | `0x7e1` | `0x859` | **`+0x78`** |
+| `__TEXT.__gcc_except_tab` | `0x1b4` | `0x228` | **`+0x74`** |
+| `__DATA_CONST.__const` | `0x438` | `0x410` | **`-0x28`** |
+| `__TEXT.__objc_methname` | `0x192c` | `0x194c` | **`+0x20`** |
+| `__TEXT.__objc_stubs` | `0x1300` | `0x1320` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x278` | `0x290` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0xa14` | `0xa24` | **`+0x10`** |
+| `__DATA.__objc_selrefs` | `0x6c8` | `0x6d0` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
 - `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_const`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -29.0.0.0.0
--  __TEXT.__text: 0x627c
 +30.0.0.0.0
-+  __TEXT.__text: 0x6558
-   __TEXT.__auth_stubs: 0x440
--  __TEXT.__objc_stubs: 0x1300
--  __TEXT.__objc_methlist: 0xa14
-+  __TEXT.__objc_stubs: 0x1320
-+  __TEXT.__objc_methlist: 0xa24
-   __TEXT.__const: 0x98
-   __TEXT.__cstring: 0x411
--  __TEXT.__objc_methname: 0x192c
-+  __TEXT.__objc_methname: 0x194c
-   __TEXT.__objc_classname: 0x108
-   __TEXT.__objc_methtype: 0x641
--  __TEXT.__oslogstring: 0x7e1
--  __TEXT.__gcc_except_tab: 0x1b4
--  __TEXT.__unwind_info: 0x2e0
--  __DATA_CONST.__const: 0x438
-+  __TEXT.__oslogstring: 0x859
-+  __TEXT.__gcc_except_tab: 0x228
-+  __TEXT.__unwind_info: 0x300
-+  __DATA_CONST.__const: 0x410
-   __DATA_CONST.__cfstring: 0x500
-   __DATA_CONST.__objc_classlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x38
 
-   __DATA_CONST.__auth_got: 0x238
-   __DATA_CONST.__got: 0x178
-   __DATA.__objc_const: 0x1dc8
--  __DATA.__objc_selrefs: 0x6c8
-+  __DATA.__objc_selrefs: 0x6d0
-   __DATA.__objc_ivar: 0xd0
-   __DATA.__objc_data: 0x280
-   __DATA.__data: 0x2c0
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 176
 +  Functions: 181
-   Symbols:   124
+
 -  CStrings:  490
 +  CStrings:  493
- 
 Symbols:
 + _objc_release_x27
 - _objc_release_x28

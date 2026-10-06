@@ -2,52 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/_GeoToolbox_CoreLocation.framework/_GeoToolbox_CoreLocation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc60` | `0x1a38` | **`+0xdd8`** |
+| `__AUTH_CONST.__auth_got` | `0x140` | `0x1c8` | **`+0x88`** |
+| `__TEXT.__unwind_info` | `0x88` | `0xb0` | **`+0x28`** |
+| `__TEXT.__swift5_typeref` | `0xd` | `0x29` | **`+0x1c`** |
+| `__TEXT.__const` | `0x58` | `0x70` | **`+0x18`** |
+| `__DATA.__data` | `0x18` | `0x28` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x78` | `0x70` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x48` | `0x40` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -34.31.6.17.3
--  __TEXT.__text: 0xbf0
--  __TEXT.__const: 0x58
--  __TEXT.__swift5_typeref: 0xd
--  __TEXT.__unwind_info: 0x90
 +34.31.6.17.5
-+  __TEXT.__text: 0x1970
-+  __TEXT.__const: 0x70
-+  __TEXT.__swift5_typeref: 0x29
-+  __TEXT.__unwind_info: 0xc0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0x78
-+  __DATA_CONST.__const: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x48
-+  __DATA_CONST.__objc_selrefs: 0x40
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__auth_got: 0x140
--  __DATA.__data: 0x18
-+  __AUTH_CONST.__auth_got: 0x1c8
-+  __DATA.__data: 0x28
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreLocation.framework/CoreLocation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftCoreLocation.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
 -  - /usr/lib/swift/libswiftIntents.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9
 -  Symbols:   75
 +  Functions: 19
 +  Symbols:   82
-   CStrings:  0
- 
 Symbols:
 + __swiftEmptyDictionarySingleton
 + _bzero

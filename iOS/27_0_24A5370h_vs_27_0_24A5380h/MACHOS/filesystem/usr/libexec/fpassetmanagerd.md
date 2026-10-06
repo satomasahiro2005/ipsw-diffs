@@ -2,88 +2,57 @@
 
 > `/usr/libexec/fpassetmanagerd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1d230` | `0x1e0ac` | **`+0xe7c`** |
+| `__TEXT.__oslogstring` | `0x1818` | `0x1978` | **`+0x160`** |
+| `__TEXT.__eh_frame` | `0x8ec` | `0xa04` | **`+0x118`** |
+| `__TEXT.__auth_stubs` | `0xe00` | `0xe90` | **`+0x90`** |
+| `__DATA_CONST.__const` | `0x8c8` | `0x918` | **`+0x50`** |
+| `__DATA_CONST.__auth_got` | `0x708` | `0x750` | **`+0x48`** |
+| `__TEXT.__unwind_info` | `0x420` | `0x460` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x1a0` | `0x1d8` | **`+0x38`** |
+| `__TEXT.__cstring` | `0x96f` | `0x98f` | **`+0x20`** |
+| `__TEXT.__objc_methname` | `0x5c8` | `0x5e8` | **`+0x20`** |
+| `__TEXT.__objc_stubs` | `0x420` | `0x440` | **`+0x20`** |
+| `__DATA.__data` | `0x520` | `0x530` | **`+0x10`** |
+| `__TEXT.__const` | `0x5f8` | `0x608` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x24` | `0x34` | **`+0x10`** |
+| `__DATA.__objc_selrefs` | `0x1d8` | `0x1e0` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x28` | `0x30` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x24` | `0x28` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift5_types`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1d230
--  __TEXT.__auth_stubs: 0xe00
--  __TEXT.__objc_stubs: 0x420
-+  __TEXT.__text: 0x1e0ac
-+  __TEXT.__auth_stubs: 0xe90
-+  __TEXT.__objc_stubs: 0x440
-   __TEXT.__objc_methlist: 0x1b4
--  __TEXT.__const: 0x5f8
--  __TEXT.__cstring: 0x96f
-+  __TEXT.__const: 0x608
-+  __TEXT.__cstring: 0x98f
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__oslogstring: 0x1818
-+  __TEXT.__oslogstring: 0x1978
-   __TEXT.__objc_methtype: 0x1e4
-   __TEXT.__swift5_typeref: 0x2d4
-   __TEXT.__swift5_capture: 0x204
--  __TEXT.__swift_as_entry: 0x24
--  __TEXT.__swift_as_ret: 0x28
--  __TEXT.__swift_as_cont: 0x24
-+  __TEXT.__swift_as_entry: 0x28
-+  __TEXT.__swift_as_ret: 0x30
-+  __TEXT.__swift_as_cont: 0x34
-   __TEXT.__constg_swiftt: 0x220
-   __TEXT.__swift5_reflstr: 0x174
-   __TEXT.__swift5_fieldmd: 0x224
-   __TEXT.__swift5_proto: 0x24
-   __TEXT.__swift5_types: 0x24
-   __TEXT.__objc_classname: 0xde
--  __TEXT.__objc_methname: 0x5c8
--  __TEXT.__unwind_info: 0x420
--  __TEXT.__eh_frame: 0x8ec
--  __DATA_CONST.__const: 0x8c8
-+  __TEXT.__objc_methname: 0x5e8
-+  __TEXT.__unwind_info: 0x460
-+  __TEXT.__eh_frame: 0xa04
-+  __DATA_CONST.__const: 0x918
-   __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__auth_got: 0x708
--  __DATA_CONST.__got: 0x1a0
-+  __DATA_CONST.__auth_got: 0x750
-+  __DATA_CONST.__got: 0x1d8
-   __DATA_CONST.__auth_ptr: 0x180
-   __DATA.__objc_const: 0x3b0
--  __DATA.__objc_selrefs: 0x1d8
-+  __DATA.__objc_selrefs: 0x1e0
-   __DATA.__objc_data: 0x1e0
--  __DATA.__data: 0x520
-+  __DATA.__data: 0x530
-   __DATA.__common: 0x70
-   __DATA.__bss: 0x480
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+-1.3.0.0.0
++1.5.0.0.0
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 308
 -  Symbols:   336
--  CStrings:  278
+-  CStrings:  277
 +  Functions: 322
 +  Symbols:   350
-+  CStrings:  286
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_entry : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_data : content changed
++  CStrings:  285
 Symbols:
 + _$sScT6cancelyyF
 + _$sScTss5NeverORszABRs_rlE11isCancelledSbvgZ
@@ -108,5 +77,4 @@ CStrings:
 + "Periodic refresh cancelled due to expiration"
 + "Periodic task expired by system, cancelling async work"
 + "setExpirationHandler:"
-
 ```

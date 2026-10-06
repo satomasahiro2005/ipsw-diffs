@@ -2,27 +2,23 @@
 
 > `/System/Library/PrivateFrameworks/DirectResource.framework/DirectResource`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x69630` | `0x69654` | **`+0x24`** |
+| `__TEXT.__swift5_fieldmd` | `0x2114` | `0x2120` | **`+0xc`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__swift5_reflstr`
+
+### Other Changes
 
 ```diff
 
 -47.0.2.0.0
--  __TEXT.__text: 0x69630
 +47.0.2.0.1
-+  __TEXT.__text: 0x69654
-   __TEXT.__objc_methlist: 0x21e4
-   __TEXT.__const: 0x5496
-   __TEXT.__swift5_typeref: 0x1bbe
-   __TEXT.__swift5_reflstr: 0x1685
-   __TEXT.__swift5_assocty: 0x7f8
-   __TEXT.__constg_swiftt: 0x1e5c
--  __TEXT.__swift5_fieldmd: 0x2114
-+  __TEXT.__swift5_fieldmd: 0x2120
-   __TEXT.__swift5_builtin: 0x208
-   __TEXT.__swift5_proto: 0x4bc
-   __TEXT.__swift5_types: 0x290
 Functions:
 ~ _$s14DirectResource06MemoryB0C19sharedTextureHandle7textureACSo09MTLSharedeF0C_So10MTLTexture_pSgtcfC : 468 -> 472
 ~ _$s14DirectResource06MemoryB0C19sharedTextureHandle7textureACSo09MTLSharedeF0C_So10MTLTexture_ptcfC : 384 -> 388

@@ -2,18 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/Scandium.framework/Scandium`
 
-```diff
+### Section Size Changes
 
- 96.0.0.0.0
--  __TEXT.__text: 0x31398
-+  __TEXT.__text: 0x314f0
-   __TEXT.__objc_methlist: 0xe0
-   __TEXT.__const: 0x3b64
--  __TEXT.__gcc_except_tab: 0x2850
-+  __TEXT.__gcc_except_tab: 0x2864
-   __TEXT.__oslogstring: 0xcb3
-   __TEXT.__cstring: 0x2202
-   __TEXT.__unwind_info: 0xf70
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x31398` | `0x314f0` | **`+0x158`** |
+| `__TEXT.__gcc_except_tab` | `0x2850` | `0x2864` | **`+0x14`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN8Scandium16find_optical_genERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE : 1896 -> 2192
 ~ __ZN8Scandium11ScandiumPPG25scandium_beat_detection_t11compute_mavERKNSt3__15arrayINS3_IfLm960EEELm3EEERNS3_IfLm15EEE : 240 -> 244

@@ -2,102 +2,43 @@
 
 > `/System/Library/Frameworks/_MusicKit_SwiftUI.framework/_MusicKit_SwiftUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x30670` | `0x323d8` | **`+0x1d68`** |
+| `__TEXT.__eh_frame` | `0xabc` | `0xc30` | **`+0x174`** |
+| `__TEXT.__cstring` | `0x1332` | `0x1487` | **`+0x155`** |
+| `__AUTH_CONST.__auth_got` | `0xb80` | `0xc20` | **`+0xa0`** |
+| `__TEXT.__constg_swiftt` | `0x12fc` | `0x1398` | **`+0x9c`** |
+| `__TEXT.__oslogstring` | `0x66c` | `0x6fc` | **`+0x90`** |
+| `__DATA_DIRTY.__bss` | `0xf00` | `0xf80` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x11a8` | `0x1228` | **`+0x80`** |
+| `__DATA.__bss` | `0x3b70` | `0x3b18` | **`-0x58`** |
+| `__AUTH_CONST.__const` | `0x23e0` | `0x2430` | **`+0x50`** |
+| `__TEXT.__swift5_typeref` | `0x15f0` | `0x1622` | **`+0x32`** |
+| `__TEXT.__swift5_capture` | `0x428` | `0x458` | **`+0x30`** |
+| `__DATA.__data` | `0xea8` | `0xec8` | **`+0x20`** |
+| `__TEXT.__const` | `0x3514` | `0x3524` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0xa91` | `0xaa1` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0xd20` | `0xd2c` | **`+0xc`** |
+| `__TEXT.__swift_as_cont` | `0x28` | `0x30` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x14` | `0x18` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x14` | `0x18` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x30670
-+  __TEXT.__text: 0x323d8
-   __TEXT.__objc_methlist: 0x62c
--  __TEXT.__const: 0x3514
--  __TEXT.__cstring: 0x1332
--  __TEXT.__swift5_typeref: 0x15f0
--  __TEXT.__constg_swiftt: 0x12fc
--  __TEXT.__swift5_reflstr: 0xa91
--  __TEXT.__swift5_fieldmd: 0xd20
-+  __TEXT.__const: 0x3524
-+  __TEXT.__cstring: 0x1487
-+  __TEXT.__swift5_typeref: 0x1622
-+  __TEXT.__constg_swiftt: 0x1398
-+  __TEXT.__swift5_reflstr: 0xaa1
-+  __TEXT.__swift5_fieldmd: 0xd2c
-   __TEXT.__swift5_builtin: 0x50
--  __TEXT.__oslogstring: 0x66c
-+  __TEXT.__oslogstring: 0x6fc
-   __TEXT.__swift5_assocty: 0x238
-   __TEXT.__swift5_proto: 0x270
-   __TEXT.__swift5_types: 0x10c
--  __TEXT.__swift_as_entry: 0x14
--  __TEXT.__swift_as_ret: 0x14
--  __TEXT.__swift_as_cont: 0x28
--  __TEXT.__swift5_capture: 0x428
-+  __TEXT.__swift_as_entry: 0x18
-+  __TEXT.__swift_as_ret: 0x18
-+  __TEXT.__swift_as_cont: 0x30
-+  __TEXT.__swift5_capture: 0x458
-   __TEXT.__swift5_protos: 0x1c
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x11a8
--  __TEXT.__eh_frame: 0xabc
-+  __TEXT.__unwind_info: 0x1228
-+  __TEXT.__eh_frame: 0xc30
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-4026.110.78.1.0
++4026.100.85.0.0
 
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_superrefs: 0x18
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x23e0
-+  __AUTH_CONST.__const: 0x2430
-   __AUTH_CONST.__cfstring: 0x200
-   __AUTH_CONST.__objc_const: 0x1038
--  __AUTH_CONST.__auth_got: 0xb80
-+  __AUTH_CONST.__auth_got: 0xc20
-   __AUTH.__objc_data: 0x770
-   __AUTH.__data: 0x698
-   __DATA.__objc_ivar: 0x30
--  __DATA.__data: 0xea8
--  __DATA.__bss: 0x3b70
-+  __DATA.__data: 0xec8
-+  __DATA.__bss: 0x3b18
-   __DATA.__common: 0x78
-   __DATA_DIRTY.__objc_data: 0xa0
-   __DATA_DIRTY.__data: 0x9f0
--  __DATA_DIRTY.__bss: 0xf00
-+  __DATA_DIRTY.__bss: 0xf80
-   __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1847
--  Symbols:   1829
--  CStrings:  145
+-  Symbols:   932
+-  CStrings:  129
 +  Functions: 1881
-+  Symbols:   1889
-+  CStrings:  162
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   951
++  CStrings:  146
 Symbols:
 + ___isPlatformVersionAtLeast
 + ___swift_closure_destructor.10Tm
@@ -142,5 +83,4 @@ CStrings:
 + "_MusicKit_SwiftUI/MusicPicker.swift"
 + "kCFAllocatorNull"
 + "r"
-
 ```

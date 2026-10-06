@@ -2,104 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/ContainerManagerCommon.framework/ContainerManagerCommon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf3018` | `0x1059a4` | **`+0x1298c`** |
+| `__TEXT.__oslogstring` | `0xe983` | `0xfd87` | **`+0x1404`** |
+| `__AUTH_CONST.__objc_const` | `0x17058` | `0x178d8` | **`+0x880`** |
+| `__TEXT.__cstring` | `0x9585` | `0x9bc4` | **`+0x63f`** |
+| `__TEXT.__objc_methlist` | `0xae74` | `0xb3ac` | **`+0x538`** |
+| `__TEXT.__eh_frame` | `0x5d8` | `0x958` | **`+0x380`** |
+| `__AUTH_CONST.__const` | `0x12c8` | `0x15c0` | **`+0x2f8`** |
+| `__TEXT.__const` | `0x13b0` | `0x15e0` | **`+0x230`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3770` | `0x3960` | **`+0x1f0`** |
+| `__TEXT.__unwind_info` | `0x2508` | `0x26e0` | **`+0x1d8`** |
+| `__AUTH.__objc_data` | `0xd70` | `0xf40` | **`+0x1d0`** |
+| `__DATA.__data` | `0x3bb0` | `0x3d50` | **`+0x1a0`** |
+| `__TEXT.__swift5_reflstr` | `0x3da` | `0x56a` | **`+0x190`** |
+| `__TEXT.__swift5_typeref` | `0x6d3` | `0x85b` | **`+0x188`** |
+| `__TEXT.__swift5_fieldmd` | `0x4c8` | `0x644` | **`+0x17c`** |
+| `__TEXT.__constg_swiftt` | `0x670` | `0x7b0` | **`+0x140`** |
+| `__AUTH.__data` | `0xd0` | `0x1e8` | **`+0x118`** |
+| `__AUTH_CONST.__auth_got` | `0x12d0` | `0x13e0` | **`+0x110`** |
+| `__DATA_CONST.__objc_protolist` | `0x528` | `0x610` | **`+0xe8`** |
+| `__AUTH_CONST.__cfstring` | `0x4d40` | `0x4e20` | **`+0xe0`** |
+| `__DATA_CONST.__objc_protorefs` | `0xc8` | `0x1a8` | **`+0xe0`** |
+| `__TEXT.__gcc_except_tab` | `0x2498` | `0x2544` | **`+0xac`** |
+| `__DATA.__bss` | `0xef8` | `0xf58` | **`+0x60`** |
+| `__DATA.__common` | `—` | `0x48` | **`+0x48`** |
+| `__DATA.__objc_ivar` | `0xc10` | `0xc48` | **`+0x38`** |
+| `__TEXT.__swift5_capture` | `0x78` | `0xa8` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x500` | `0x520` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x98` | `0xb8` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x1590` | `0x15a8` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x5c0` | `0x5d8` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x104` | `0x118` | **`+0x14`** |
+| `__DATA_CONST.__const` | `0x18d8` | `0x18e0` | **`+0x8`** |
+| `__DATA_CONST.__objc_arraydata` | `0x2e0` | `0x2e8` | **`+0x8`** |
+| `__DATA_CONST.__objc_catlist` | `0x28` | `0x30` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -833.0.8.0.1
--  __TEXT.__text: 0xeed90
--  __TEXT.__objc_methlist: 0xae74
--  __TEXT.__const: 0x13b0
--  __TEXT.__cstring: 0x9585
--  __TEXT.__swift5_typeref: 0x6d3
--  __TEXT.__oslogstring: 0xe983
--  __TEXT.__constg_swiftt: 0x670
--  __TEXT.__swift5_reflstr: 0x3da
--  __TEXT.__swift5_fieldmd: 0x4c8
--  __TEXT.__swift5_builtin: 0x104
 +833.40.14.0.0
-+  __TEXT.__text: 0x1010b4
-+  __TEXT.__objc_methlist: 0xb3ac
-+  __TEXT.__const: 0x15e0
-+  __TEXT.__cstring: 0x9bc4
-+  __TEXT.__swift5_typeref: 0x85b
-+  __TEXT.__oslogstring: 0xfd87
-+  __TEXT.__constg_swiftt: 0x7b0
-+  __TEXT.__swift5_reflstr: 0x56a
-+  __TEXT.__swift5_fieldmd: 0x644
-+  __TEXT.__swift5_builtin: 0x118
-   __TEXT.__swift5_assocty: 0x138
-   __TEXT.__swift5_proto: 0xb0
--  __TEXT.__swift5_types: 0x98
-+  __TEXT.__swift5_types: 0xb8
-+  __TEXT.__swift5_capture: 0xa8
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__swift5_capture: 0x78
-   __TEXT.__swift5_protos: 0x18
--  __TEXT.__gcc_except_tab: 0x2498
-+  __TEXT.__gcc_except_tab: 0x2544
-   __TEXT.__ustring: 0x16c
--  __TEXT.__unwind_info: 0x3af8
--  __TEXT.__eh_frame: 0x5d8
-+  __TEXT.__unwind_info: 0x3df0
-+  __TEXT.__eh_frame: 0x958
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x18d8
--  __DATA_CONST.__objc_classlist: 0x5c0
--  __DATA_CONST.__objc_catlist: 0x28
--  __DATA_CONST.__objc_protolist: 0x528
-+  __DATA_CONST.__const: 0x18e0
-+  __DATA_CONST.__objc_classlist: 0x5d8
-+  __DATA_CONST.__objc_catlist: 0x30
-+  __DATA_CONST.__objc_protolist: 0x610
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3770
--  __DATA_CONST.__objc_protorefs: 0xc8
-+  __DATA_CONST.__objc_selrefs: 0x3960
-+  __DATA_CONST.__objc_protorefs: 0x1a8
-   __DATA_CONST.__objc_superrefs: 0x4a8
--  __DATA_CONST.__objc_arraydata: 0x2e0
--  __DATA_CONST.__got: 0x500
--  __AUTH_CONST.__const: 0x12c8
--  __AUTH_CONST.__cfstring: 0x4d40
--  __AUTH_CONST.__objc_const: 0x17058
-+  __DATA_CONST.__objc_arraydata: 0x2e8
-+  __DATA_CONST.__got: 0x520
-+  __AUTH_CONST.__const: 0x15c0
-+  __AUTH_CONST.__cfstring: 0x4e20
-+  __AUTH_CONST.__objc_const: 0x178d8
-   __AUTH_CONST.__objc_dictobj: 0x118
--  __AUTH_CONST.__objc_intobj: 0x1590
-+  __AUTH_CONST.__objc_intobj: 0x15a8
-   __AUTH_CONST.__objc_arrayobj: 0xf0
--  __AUTH_CONST.__auth_got: 0x12d0
--  __AUTH.__objc_data: 0xd70
--  __AUTH.__data: 0xd0
--  __DATA.__objc_ivar: 0xc10
--  __DATA.__data: 0x3bb0
-+  __AUTH_CONST.__auth_got: 0x13e0
-+  __AUTH.__objc_data: 0xf40
-+  __AUTH.__data: 0x1e8
-+  __DATA.__objc_ivar: 0xc48
-+  __DATA.__data: 0x3d50
-   __DATA.__crash_info: 0x148
-+  __DATA.__common: 0x48
-   __DATA_DIRTY.__objc_data: 0x3020
-   __DATA_DIRTY.__data: 0x448
-   __DATA_DIRTY.__bss: 0x6b0
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 3659
--  Symbols:   8476
--  CStrings:  2023
+-  Symbols:   6904
+-  CStrings:  2024
 +  Functions: 3856
-+  Symbols:   8667
-+  CStrings:  2107
- 
++  Symbols:   7041
++  CStrings:  2108
 Symbols:
 + +[MCMConcreteContainerIdentity containerIdentityWithUUID:userIdentity:identifier:containerConfig:platform:posixOwnership:instanceUUID:transient:userIdentityCache:error:]
 + +[MCMConcreteContainerIdentity containerIdentityWithUUID:userIdentity:identifier:containerConfig:platform:posixOwnership:instanceUUID:userIdentityCache:error:]
@@ -315,87 +269,6 @@ Symbols:
 + _flat unique So14MCMFileManager_p
 + _flat unique So17MCMCommandContext_p
 + _flat unique So22MCMContainerCacheEntry_p
-+ _objc_msgSend$MCM_isNull
-+ _objc_msgSend$MCM_null
-+ _objc_msgSend$_claimContainer:forInstanceUUID:classCache:error:
-+ _objc_msgSend$_concurrent_generateCacheEntryWithURL:identifier:containerPath:schemaVersion:posixOwnership:instanceUUID:uuid:metadata:
-+ _objc_msgSend$_concurrent_slowGenerateCacheEntryWithFileHandle:URL:identifier:uuid:schemaVersion:posixOwnership:instanceUUID:containerPath:
-+ _objc_msgSend$_fabricateMetadataForContainerPath:identifier:uuid:schemaVersion:posixOwnership:instanceUUID:userIdentityCache:
-+ _objc_msgSend$_getCachedUID:GID:name:flush:error:onCacheMiss:
-+ _objc_msgSend$_instanceUUID
-+ _objc_msgSend$_lock_addIdentityToInstanceIndex:
-+ _objc_msgSend$_lock_childIdentifiersForParentIdentifier:
-+ _objc_msgSend$_lock_removeIdentityFromInstanceIndex:
-+ _objc_msgSend$_metadataFromContainerPath:identifier:uuid:schemaVersion:posixOwnership:instanceUUID:userIdentityCache:
-+ _objc_msgSend$_posixUserWithUID:GID:name:error:
-+ _objc_msgSend$_validatedHomeDirectoryURLFromURL:redactName:resolvable:
-+ _objc_msgSend$cacheEntriesForIdentityIgnoringInstance:
-+ _objc_msgSend$cacheEntryForIdentity:multiInstance:
-+ _objc_msgSend$canSupersedeContainer
-+ _objc_msgSend$client
-+ _objc_msgSend$containerIdentityWithIdentifier:containerConfig:platform:posixOwnership:instanceUUID:userIdentityCache:error:
-+ _objc_msgSend$containerIdentityWithUUID:userIdentity:identifier:containerConfig:platform:posixOwnership:instanceUUID:containerPathIdentifier:existed:transient:userIdentityCache:error:
-+ _objc_msgSend$containerIdentityWithUUID:userIdentity:identifier:containerConfig:platform:posixOwnership:instanceUUID:transient:userIdentityCache:error:
-+ _objc_msgSend$containerIdentityWithUUID:userIdentity:identifier:containerConfig:platform:posixOwnership:instanceUUID:userIdentityCache:error:
-+ _objc_msgSend$containerIdentityWithUserIdentity:identifier:containerConfig:platform:posixOwnership:instanceUUID:transient:userIdentityCache:error:
-+ _objc_msgSend$containerIdentityWithUserIdentity:identifier:containerConfig:platform:posixOwnership:instanceUUID:userIdentityCache:error:
-+ _objc_msgSend$containerSchemaWithMetadata:finalContainerPath:dataProtectionClass:libraryRepair:error:
-+ _objc_msgSend$defaultInstanceUUID
-+ _objc_msgSend$deleteCorruptContainers
-+ _objc_msgSend$entriesForContainerIdentityIgnoringInstance:error:
-+ _objc_msgSend$entryForContainerIdentity:classCache:mutationAllowed:error:
-+ _objc_msgSend$errorByChangingType:
-+ _objc_msgSend$formerContainerPathIdentifier
-+ _objc_msgSend$formerIdentifier
-+ _objc_msgSend$formerInstanceUUID
-+ _objc_msgSend$formerUUID
-+ _objc_msgSend$identityByChangingInstanceUUID:
-+ _objc_msgSend$identityIgnoringInstance
-+ _objc_msgSend$initFromContainerPath:identifier:uuid:schemaVersion:posixOwnership:instanceUUID:userIdentityCache:
-+ _objc_msgSend$initWithConcreteContainerIdentity:predecessorContainerIdentity:parentIdentifier:renamePreferences:context:resultPromise:
-+ _objc_msgSend$initWithFormerIdentity:predecessorIdentity:renamePreferences:client:date:
-+ _objc_msgSend$initWithIdentifier:containerPath:schemaVersion:posixOwnership:instanceUUID:uuid:metadata:userIdentityCache:
-+ _objc_msgSend$initWithIdentifier:ownership:instanceUUID:
-+ _objc_msgSend$initWithMetadata:finalContainerPath:dataProtectionClass:libraryRepair:error:
-+ _objc_msgSend$initWithPlist:
-+ _objc_msgSend$initWithUID:primaryGID:homeDirectoryURL:unvalidatedHomeDirectoryURL:name:roleUser:validatedUser:
-+ _objc_msgSend$initWithUUID:containerPathIdentifier:identifier:containerConfig:POSIXUser:personaUniqueString:sandboxToken:existed:url:info:transient:userManagedAssetsRelPath:creator:posixOwnership:instanceUUID:
-+ _objc_msgSend$initWithUUID:containerPathIdentifier:identifier:containerConfig:POSIXUser:personaUniqueString:sandboxToken:existed:url:info:transient:userManagedAssetsRelPath:creator:posixOwnership:instanceUUID:relativePath:
-+ _objc_msgSend$initWithUUID:userIdentity:identifier:containerConfig:platform:posixOwnership:instanceUUID:containerPathIdentifier:existed:transient:userIdentityCache:error:
-+ _objc_msgSend$initWithUUID:userIdentity:identifier:containerConfig:platform:posixOwnership:instanceUUID:transient:userIdentityCache:error:
-+ _objc_msgSend$initWithUserIdentity:identifier:containerConfig:platform:posixOwnership:instanceUUID:transient:userIdentityCache:error:
-+ _objc_msgSend$initWithUserIdentity:identifier:containerConfig:platform:posixOwnership:instanceUUID:userIdentityCache:error:
-+ _objc_msgSend$initWithVersion1And2And3PlistDictionary:containerIdentity:error:
-+ _objc_msgSend$initWithVersion1PlistDictionary:posixOwnership:instanceUUID:userIdentityCache:error:
-+ _objc_msgSend$initWithVersion2PlistDictionary:instanceUUID:userIdentityCache:error:
-+ _objc_msgSend$initWithVersion3PlistDictionary:userIdentityCache:error:
-+ _objc_msgSend$instanceUUID
-+ _objc_msgSend$instanceUUIDForFileHandle:
-+ _objc_msgSend$instanceUUIDForURL:
-+ _objc_msgSend$isAllowedToSupersedeContainer
-+ _objc_msgSend$lock_instanceIndex
-+ _objc_msgSend$metadataByChangingSuperseded:
-+ _objc_msgSend$metadataByClearingPersistedStatus
-+ _objc_msgSend$parentIdentifier
-+ _objc_msgSend$posixUserWithError:
-+ _objc_msgSend$posixUserWithUID:GID:error:
-+ _objc_msgSend$predecessorContainerIdentity
-+ _objc_msgSend$predecessorContainerPathIdentifier
-+ _objc_msgSend$recordsFormerIdentityWithIdentifier:uuid:
-+ _objc_msgSend$removeCacheEntryForIdentity:containerPath:
-+ _objc_msgSend$removeContainerForUserIdentity:contentClass:containerIdentity:containerPath:transient:error:
-+ _objc_msgSend$removeMappingsForIdentifier:
-+ _objc_msgSend$renamePreferences
-+ _objc_msgSend$setInstanceUUID:forFileHandle:
-+ _objc_msgSend$stageForContainerPathIdentifier:
-+ _objc_msgSend$storedDate
-+ _objc_msgSend$storedFormerInstanceUUID
-+ _objc_msgSend$storedFormerUUID
-+ _objc_msgSend$superseded
-+ _objc_msgSend$unvalidatedPOSIXUserWithUID:GID:unvalidatedHomeDirectoryURL:
-+ _objc_msgSend$usesInstanceUUID
-+ _objc_msgSend$validatedUser
-+ _objc_msgSend$verificationErrorIsRecoverable:
 + _swift_allocBox
 + _swift_cvw_initStructMetadataWithLayoutString
 + _swift_cvw_initWithTake
@@ -543,33 +416,6 @@ Symbols:
 - __getCachedUID:GID:name:flush:onCacheMiss:.cacheByUID
 - __getCachedUID:GID:name:flush:onCacheMiss:.cacheByUIDGID
 - __getCachedUID:GID:name:flush:onCacheMiss:.onceToken
-- _objc_msgSend$_concurrent_generateCacheEntryWithURL:identifier:containerPath:schemaVersion:posixOwnership:uuid:metadata:
-- _objc_msgSend$_concurrent_slowGenerateCacheEntryWithFileHandle:URL:identifier:uuid:schemaVersion:posixOwnership:containerPath:
-- _objc_msgSend$_fabricateMetadataForContainerPath:identifier:uuid:schemaVersion:posixOwnership:userIdentityCache:
-- _objc_msgSend$_getCachedUID:GID:name:flush:onCacheMiss:
-- _objc_msgSend$_metadataFromContainerPath:identifier:uuid:schemaVersion:posixOwnership:userIdentityCache:
-- _objc_msgSend$_posixUserWithUID:GID:name:
-- _objc_msgSend$_replaceContainer:withContainer:changingParentIdentifier:
-- _objc_msgSend$cacheEntryForIdentity:
-- _objc_msgSend$containerIdentityWithUUID:userIdentity:identifier:containerConfig:platform:posixOwnership:containerPathIdentifier:existed:transient:userIdentityCache:error:
-- _objc_msgSend$containerIdentityWithUUID:userIdentity:identifier:containerConfig:platform:posixOwnership:transient:userIdentityCache:error:
-- _objc_msgSend$containerSchemaWithMetadata:finalContainerPath:dataProtectionClass:libraryRepair:
-- _objc_msgSend$initFromContainerPath:identifier:uuid:schemaVersion:posixOwnership:userIdentityCache:
-- _objc_msgSend$initWithIdentifier:containerPath:schemaVersion:posixOwnership:uuid:metadata:userIdentityCache:
-- _objc_msgSend$initWithIdentifier:ownership:
-- _objc_msgSend$initWithMetadata:finalContainerPath:dataProtectionClass:libraryRepair:
-- _objc_msgSend$initWithUID:GID:mode:isNull:
-- _objc_msgSend$initWithUID:primaryGID:homeDirectoryURL:unvalidatedHomeDirectoryURL:name:roleUser:
-- _objc_msgSend$initWithUUID:containerPathIdentifier:identifier:containerConfig:POSIXUser:personaUniqueString:sandboxToken:existed:url:info:transient:userManagedAssetsRelPath:creator:posixOwnership:
-- _objc_msgSend$initWithUUID:containerPathIdentifier:identifier:containerConfig:POSIXUser:personaUniqueString:sandboxToken:existed:url:info:transient:userManagedAssetsRelPath:creator:posixOwnership:relativePath:
-- _objc_msgSend$initWithUUID:userIdentity:identifier:containerConfig:platform:posixOwnership:containerPathIdentifier:existed:transient:userIdentityCache:error:
-- _objc_msgSend$initWithUUID:userIdentity:identifier:containerConfig:platform:posixOwnership:transient:userIdentityCache:error:
-- _objc_msgSend$initWithUserIdentity:identifier:containerConfig:platform:posixOwnership:transient:userIdentityCache:error:
-- _objc_msgSend$initWithUserIdentity:identifier:containerConfig:platform:posixOwnership:userIdentityCache:error:
-- _objc_msgSend$initWithVersion1And2PlistDictionary:containerIdentity:error:
-- _objc_msgSend$initWithVersion1PlistDictionary:posixOwnership:userIdentityCache:error:
-- _objc_msgSend$initWithVersion2PlistDictionary:userIdentityCache:error:
-- _objc_msgSend$stringWithFileSystemRepresentation:
 CStrings:
 + "%llu-%@-%d-%@-%@%@%@"
 + "%s built a no-instance identity for class %s"
@@ -579,6 +425,7 @@ CStrings:
 + "+[MCMContainerIdentity containerIdentityWithUserIdentity:identifier:containerConfig:platform:posixOwnership:transient:userIdentityCache:error:]"
 + "+[MCMContainerIdentity containerIdentityWithUserIdentity:identifier:containerConfig:platform:posixOwnership:userIdentityCache:error:]"
 + "-%@"
++ "00:56:24"
 + ":superseded"
 + "<%@(%@%s);%@;O%@;x%@;u%@;p%@;pf%d%s>"
 + "<%@(%@%s);%@;O%@;x%@;u%@;pf%d>"
@@ -659,6 +506,7 @@ CStrings:
 + "Retrieved cache entries ignoring instance; identity = %@, count = %lu"
 + "Retrieving cache entries ignoring instance; identity = %@, count = %lu"
 + "Schema creation failed; error = %@"
++ "Sep  4 2026"
 + "Skipping a candidate whose metadata would not read while resuming a supersede; path = 🔒%{private}s, error = %s"
 + "Skipping a claimant whose metadata will not read while resuming a supersede; identifier = [🔒%{private}s], error = %s"
 + "Successor container has no metadata file URL: %s"
@@ -699,6 +547,7 @@ CStrings:
 + "\x91"
 - "%llu-%@-%d-%@-%@%@"
 - "(%@|%llu|%@|%@|%@|%@|%@%s%s)"
+- "15:27:46"
 - "<%@(%@%s);%@;O%@;u%@;p%@;pf%d%s>"
 - "<%@(%@%s);%@;O%@;u%@;pf%d>"
 - "<%@(%@%s);%@;pf%d;O%@>"
@@ -711,6 +560,7 @@ CStrings:
 - "<%@: %p; userIdentity = %@, identifier = %@, class = %@, platform = %d, ownership = %@>"
 - "<%@: %p; userIdentity = %@, uuid = %@, containerClass = %@, transient = %d, identifier = %@, containerPath = %@, dataProtectionClass = %d, userManagedAssetsDirName = %@>"
 - "@\"MCMPOSIXUser\"8@?0"
+- "Aug  8 2026"
 - "Could not generate posix user details for user=%{public}@"
 - "Created new POSIX user: %{public}@"
 - "Failed to re-add container to cache for migration; metadata = %@, error = %@"

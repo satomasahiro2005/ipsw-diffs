@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/SiriTranslationUI.framework/SiriTranslationUI`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_29 : 36 -> 16

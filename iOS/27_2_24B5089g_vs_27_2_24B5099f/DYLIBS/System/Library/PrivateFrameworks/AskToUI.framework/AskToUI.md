@@ -2,89 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/AskToUI.framework/AskToUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x93750` | `0x98fdc` | **`+0x588c`** |
+| `__TEXT.__swift5_typeref` | `0x99ee` | `0x9e32` | **`+0x444`** |
+| `__TEXT.__eh_frame` | `0x2e8c` | `0x31b4` | **`+0x328`** |
+| `__TEXT.__const` | `0x51f8` | `0x5336` | **`+0x13e`** |
+| `__AUTH_CONST.__objc_const` | `0x12f8` | `0x13f0` | **`+0xf8`** |
+| `__DATA.__data` | `0x23d0` | `0x24b0` | **`+0xe0`** |
+| `__TEXT.__unwind_info` | `0x1ec0` | `0x1f88` | **`+0xc8`** |
+| `__AUTH.__data` | `0x1380` | `0x1440` | **`+0xc0`** |
+| `__TEXT.__swift5_reflstr` | `0x15e2` | `0x16a2` | **`+0xc0`** |
+| `__AUTH_CONST.__auth_got` | `0x1918` | `0x1998` | **`+0x80`** |
+| `__TEXT.__oslogstring` | `0x1be3` | `0x1c53` | **`+0x70`** |
+| `__TEXT.__swift5_fieldmd` | `0x1548` | `0x15ac` | **`+0x64`** |
+| `__AUTH_CONST.__const` | `0x3c18` | `0x3c68` | **`+0x50`** |
+| `__TEXT.__constg_swiftt` | `0x1c44` | `0x1c88` | **`+0x44`** |
+| `__DATA_CONST.__got` | `0x970` | `0x9b0` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x1959` | `0x1999` | **`+0x40`** |
+| `__TEXT.__swift5_capture` | `0xc54` | `0xc84` | **`+0x30`** |
+| `__TEXT.__swift_as_cont` | `0x1d4` | `0x200` | **`+0x2c`** |
+| `__DATA.__common` | `0x1a0` | `0x1c0` | **`+0x20`** |
+| `__TEXT.__swift_as_entry` | `0xd8` | `0xe4` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `0xb4` | `0xc0` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x78` | `0x80` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x17c` | `0x180` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -97.125.4.0.0
--  __TEXT.__text: 0x8dddc
 +97.125.7.0.0
-+  __TEXT.__text: 0x931d4
-   __TEXT.__objc_methlist: 0x4cc
--  __TEXT.__const: 0x51f8
--  __TEXT.__constg_swiftt: 0x1c44
--  __TEXT.__swift5_typeref: 0x99ee
-+  __TEXT.__const: 0x5336
-+  __TEXT.__constg_swiftt: 0x1c88
-+  __TEXT.__swift5_typeref: 0x9e32
-+  __TEXT.__swift5_fieldmd: 0x15ac
-   __TEXT.__swift5_builtin: 0x78
--  __TEXT.__swift5_reflstr: 0x15e2
--  __TEXT.__swift5_fieldmd: 0x1548
--  __TEXT.__cstring: 0x1959
--  __TEXT.__swift5_capture: 0xc54
--  __TEXT.__oslogstring: 0x1be3
-+  __TEXT.__swift5_reflstr: 0x16a2
-   __TEXT.__swift5_assocty: 0x468
--  __TEXT.__swift5_proto: 0x1f8
--  __TEXT.__swift5_types: 0x17c
--  __TEXT.__swift_as_entry: 0xd8
--  __TEXT.__swift_as_ret: 0xb4
--  __TEXT.__swift_as_cont: 0x1d4
-   __TEXT.__swift5_protos: 0x30
--  __TEXT.__unwind_info: 0x2450
--  __TEXT.__eh_frame: 0x2e8c
-+  __TEXT.__swift5_proto: 0x1f8
-+  __TEXT.__swift5_types: 0x180
-+  __TEXT.__cstring: 0x1999
-+  __TEXT.__swift5_capture: 0xc84
-+  __TEXT.__oslogstring: 0x1c53
-+  __TEXT.__swift_as_entry: 0xe4
-+  __TEXT.__swift_as_ret: 0xc0
-+  __TEXT.__swift_as_cont: 0x200
-+  __TEXT.__unwind_info: 0x2550
-+  __TEXT.__eh_frame: 0x31b4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x260
--  __DATA_CONST.__objc_classlist: 0x78
-+  __DATA_CONST.__objc_classlist: 0x80
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x90
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x730
-   __DATA_CONST.__objc_protorefs: 0x50
--  __DATA_CONST.__got: 0x970
--  __AUTH_CONST.__const: 0x3c18
--  __AUTH_CONST.__objc_const: 0x12f8
--  __AUTH_CONST.__auth_got: 0x1918
-+  __DATA_CONST.__got: 0x9b0
-+  __AUTH_CONST.__const: 0x3c68
-+  __AUTH_CONST.__objc_const: 0x13f0
-+  __AUTH_CONST.__auth_got: 0x1998
-   __AUTH.__objc_data: 0x8d8
--  __AUTH.__data: 0x1380
--  __DATA.__data: 0x23d0
-+  __AUTH.__data: 0x1440
-+  __DATA.__data: 0x24b0
-   __DATA.__objc_stublist: 0x8
--  __DATA.__common: 0x1a0
-+  __DATA.__common: 0x1c0
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/Contacts.framework/Contacts
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2533
 -  Symbols:   1396
 -  CStrings:  280
 +  Functions: 2581
 +  Symbols:   1421
 +  CStrings:  284
- 
 Symbols:
 + __DATA__TtC7AskToUI24NetworkIconResolverCache
 + __IVARS__TtC7AskToUI24NetworkIconResolverCache

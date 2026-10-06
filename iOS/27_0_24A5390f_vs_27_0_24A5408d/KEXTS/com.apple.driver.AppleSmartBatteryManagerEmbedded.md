@@ -2,41 +2,32 @@
 
 > `com.apple.driver.AppleSmartBatteryManagerEmbedded`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x304b8` | `0x315e4` | **`+0x112c`** |
+| `__TEXT.__cstring` | `0x7bf6` | `0x8289` | **`+0x693`** |
+| `__DATA.__bss` | `0x5350` | `0x5560` | **`+0x210`** |
+| `__TEXT.__const` | `0x2440` | `0x2630` | **`+0x1f0`** |
+| `__DATA.__common` | `0x3c0` | `0x4c8` | **`+0x108`** |
+| `__DATA_CONST.__kalloc_var` | `0x8c0` | `0x960` | **`+0xa0`** |
+| `__TEXT.__os_log` | `0x2970` | `0x28fb` | **`-0x75`** |
+| `__TEXT_EXEC.__auth_stubs` | `0x7a0` | `0x7c0` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0x3d0` | `0x3e0` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x100` | `0x108` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2043.0.31.0.0
--  __TEXT.__cstring: 0x7bf6
--  __TEXT.__const: 0x2440
--  __TEXT.__os_log: 0x2970
--  __TEXT_EXEC.__text: 0x304b8
--  __TEXT_EXEC.__auth_stubs: 0x7a0
-+2043.0.45.502.1
-+  __TEXT.__cstring: 0x8289
-+  __TEXT.__const: 0x2630
-+  __TEXT.__os_log: 0x28fb
-+  __TEXT_EXEC.__text: 0x315e4
-+  __TEXT_EXEC.__auth_stubs: 0x7c0
-   __DATA.__data: 0x1f0
--  __DATA.__common: 0x3c0
--  __DATA.__bss: 0x5350
-+  __DATA.__common: 0x4c8
-+  __DATA.__bss: 0x5560
-   __DATA_CONST.__mod_init_func: 0xa0
-   __DATA_CONST.__mod_term_func: 0x78
-   __DATA_CONST.__const: 0x5d58
-   __DATA_CONST.__kalloc_type: 0x700
--  __DATA_CONST.__kalloc_var: 0x8c0
--  __DATA_CONST.__auth_got: 0x3d0
--  __DATA_CONST.__got: 0x100
 -  Functions: 689
-+  __DATA_CONST.__kalloc_var: 0x960
-+  __DATA_CONST.__auth_got: 0x3e0
-+  __DATA_CONST.__got: 0x108
++2043.0.45.502.1
 +  Functions: 695
-   Symbols:   0
+
 -  CStrings:  1254
 +  CStrings:  1280
- 
 CStrings:
 + "1211111212221212111111111211111112221112"
 + "ApplePPMCPMS"

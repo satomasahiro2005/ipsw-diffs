@@ -2,83 +2,64 @@
 
 > `/System/Library/PrivateFrameworks/RemoteManagement.framework/XPCServices/WatchEnrollmentSubscriber.xpc/WatchEnrollmentSubscriber`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf6c` | `0x6d68` | **`+0x5dfc`** |
+| `__TEXT.__eh_frame` | `—` | `0x638` | **`+0x638`** |
+| `__TEXT.__auth_stubs` | `0x220` | `0x7c0` | **`+0x5a0`** |
+| `__TEXT.__objc_methtype` | `0x416` | `0x9b2` | **`+0x59c`** |
+| `__TEXT.__objc_methname` | `0x7ec` | `0xc40` | **`+0x454`** |
+| `__TEXT.__const` | `0x60` | `0x478` | **`+0x418`** |
+| `__DATA_CONST.__const` | `0x108` | `0x400` | **`+0x2f8`** |
+| `__TEXT.__swift5_typeref` | `—` | `0x2e4` | **`+0x2e4`** |
+| `__DATA_CONST.__auth_got` | `0x118` | `0x3e8` | **`+0x2d0`** |
+| `__DATA.__data` | `0x180` | `0x3d8` | **`+0x258`** |
+| `__TEXT.__unwind_info` | `0xb0` | `0x2a8` | **`+0x1f8`** |
+| `__DATA.__bss` | `0x10` | `0x200` | **`+0x1f0`** |
+| `__TEXT.__constg_swiftt` | `—` | `0x160` | **`+0x160`** |
+| `__TEXT.__swift5_capture` | `—` | `0x130` | **`+0x130`** |
+| `__DATA.__objc_data` | `0xa0` | `0x1b0` | **`+0x110`** |
+| `__DATA_CONST.__auth_ptr` | `—` | `0xe0` | **`+0xe0`** |
+| `__TEXT.__objc_stubs` | `0x340` | `0x280` | **`-0xc0`** |
+| `__TEXT.__objc_classname` | `0x9f` | `0x145` | **`+0xa6`** |
+| `__DATA_CONST.__cfstring` | `0xa0` | `—` | **`-0xa0`** |
+| `__TEXT.__cstring` | `0x101` | `0x193` | **`+0x92`** |
+| `__TEXT.__objc_methlist` | `0x2e8` | `0x378` | **`+0x90`** |
+| `__TEXT.__swift5_fieldmd` | `—` | `0x80` | **`+0x80`** |
+| `__TEXT.__swift5_reflstr` | `—` | `0x58` | **`+0x58`** |
+| `__DATA_CONST.__got` | `0x60` | `0xa8` | **`+0x48`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x48` | **`+0x48`** |
+| `__DATA.__objc_selrefs` | `0x200` | `0x240` | **`+0x40`** |
+| `__TEXT.__swift_as_ret` | `—` | `0x3c` | **`+0x3c`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x34` | **`+0x34`** |
+| `__DATA.__objc_const` | `0x400` | `0x3d0` | **`-0x30`** |
+| `__DATA_CONST.__objc_protolist` | `0x20` | `0x50` | **`+0x30`** |
+| `__DATA_CONST.__objc_protorefs` | `—` | `0x28` | **`+0x28`** |
+| `__TEXT.__swift5_builtin` | `—` | `0x28` | **`+0x28`** |
+| `__TEXT.__oslogstring` | `0x11a` | `0x139` | **`+0x1f`** |
+| `__DATA.__common` | `—` | `0x18` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `—` | `0x14` | **`+0x14`** |
+| `__TEXT.__swift5_types` | `—` | `0x14` | **`+0x14`** |
+| `__DATA_CONST.__objc_catlist` | `0x8` | `—` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x10` | `0x18` | **`+0x8`** |
+| `__TEXT.__swift5_entry` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `—` | `0x4` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__DATA_CONST.__objc_imageinfo`
+
+### Other Changes
 
 ```diff
 
 -624.40.12.0.0
--  __TEXT.__text: 0xf24
--  __TEXT.__auth_stubs: 0x220
--  __TEXT.__objc_stubs: 0x340
--  __TEXT.__objc_methlist: 0x2e8
--  __TEXT.__const: 0x60
--  __TEXT.__cstring: 0x101
--  __TEXT.__objc_classname: 0x9f
--  __TEXT.__objc_methname: 0x7ec
--  __TEXT.__objc_methtype: 0x416
--  __TEXT.__oslogstring: 0x11a
--  __TEXT.__unwind_info: 0xd0
--  __DATA_CONST.__const: 0x108
--  __DATA_CONST.__cfstring: 0xa0
--  __DATA_CONST.__objc_classlist: 0x10
--  __DATA_CONST.__objc_catlist: 0x8
--  __DATA_CONST.__objc_protolist: 0x20
-+624.40.13.0.0
-+  __TEXT.__text: 0x6654
-+  __TEXT.__auth_stubs: 0x7c0
-+  __TEXT.__objc_stubs: 0x280
-+  __TEXT.__objc_methlist: 0x378
-+  __TEXT.__const: 0x478
-+  __TEXT.__swift5_typeref: 0x2e4
-+  __TEXT.__swift5_entry: 0x8
-+  __TEXT.__constg_swiftt: 0x160
-+  __TEXT.__swift5_builtin: 0x28
-+  __TEXT.__swift5_types: 0x14
-+  __TEXT.__objc_classname: 0x145
-+  __TEXT.__objc_methname: 0xc40
-+  __TEXT.__objc_methtype: 0x9b2
-+  __TEXT.__swift5_fieldmd: 0x80
-+  __TEXT.__swift5_reflstr: 0x58
-+  __TEXT.__swift5_capture: 0x130
-+  __TEXT.__cstring: 0x193
-+  __TEXT.__oslogstring: 0x139
-+  __TEXT.__swift5_mpenum: 0x8
-+  __TEXT.__swift5_protos: 0x4
-+  __TEXT.__swift5_proto: 0x14
-+  __TEXT.__swift_as_entry: 0x34
-+  __TEXT.__swift_as_ret: 0x3c
-+  __TEXT.__swift_as_cont: 0x48
-+  __TEXT.__unwind_info: 0x300
-+  __TEXT.__eh_frame: 0x638
-+  __DATA_CONST.__const: 0x400
-+  __DATA_CONST.__objc_classlist: 0x18
-+  __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x118
--  __DATA_CONST.__got: 0x60
--  __DATA.__objc_const: 0x400
--  __DATA.__objc_selrefs: 0x200
--  __DATA.__objc_data: 0xa0
--  __DATA.__data: 0x180
 -  - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-+  __DATA_CONST.__objc_protorefs: 0x28
-+  __DATA_CONST.__auth_got: 0x3e8
-+  __DATA_CONST.__got: 0xa8
-+  __DATA_CONST.__auth_ptr: 0xe0
-+  __DATA.__objc_const: 0x3d0
-+  __DATA.__objc_selrefs: 0x240
-+  __DATA.__objc_data: 0x1b0
-+  __DATA.__data: 0x3d8
-+  __DATA.__common: 0x18
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
-   - /System/Library/PrivateFrameworks/RemoteManagement.framework/RemoteManagement
++624.40.13.0.0
 
-   - /System/Library/PrivateFrameworks/RemoteManagementStore.framework/RemoteManagementStore
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 26
 -  Symbols:   61
 -  CStrings:  131
@@ -93,7 +74,6 @@
 +  Functions: 157
 +  Symbols:   115
 +  CStrings:  161
- 
 Symbols:
 + _OBJC_CLASS_$_RMModelStatusReason
 + _OBJC_CLASS_$_RMStoreUtility

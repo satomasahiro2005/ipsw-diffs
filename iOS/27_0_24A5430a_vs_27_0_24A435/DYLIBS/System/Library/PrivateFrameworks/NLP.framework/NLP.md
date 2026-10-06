@@ -2,32 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/NLP.framework/NLP`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xca498` | `0xca454` | **`-0x44`** |
+| `__TEXT.__unwind_info` | `0x3a70` | `0x3a68` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 237.0.0.0.0
--  __TEXT.__text: 0xca498
-+  __TEXT.__text: 0xca454
-   __TEXT.__objc_methlist: 0x3cc
-   __TEXT.__const: 0x1f89
-   __TEXT.__cstring: 0x96fb
-
-   __TEXT.__ustring: 0x4e6
-   __TEXT.__oslogstring: 0x4c3
-   __TEXT.__dlopen_cstrs: 0x51
--  __TEXT.__unwind_info: 0x3a70
-+  __TEXT.__unwind_info: 0x3a68
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   - /usr/lib/libcmph.dylib
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2633
 +  Functions: 2632
-   Symbols:   4159
-   CStrings:  1662
- 
 Functions:
 ~ __ZN23NLGenericTransliterator20addEnglishCandidatesERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEERKNS0_6vectorIS6_NS4_IS6_EEEERNS9_IP26NLTransliterationCandidateNS4_ISF_EEEERNS0_13unordered_setIS6_NS0_4hashIS6_EENS0_8equal_toIS6_EESA_EEd : 1708 -> 1712
 ~ __ZNSt3__111__sift_downB9fqe220106INS_17_ClassicAlgPolicyELb0ER22entity_less_than_rangePNS_10shared_ptrIN2NL6EntityEEEEEvT2_OT1_NS_15iterator_traitsIS9_E15difference_typeESE_ : 600 -> 604

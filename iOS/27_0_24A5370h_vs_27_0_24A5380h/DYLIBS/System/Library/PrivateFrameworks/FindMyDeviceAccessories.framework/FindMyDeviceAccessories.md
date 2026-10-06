@@ -2,87 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/FindMyDeviceAccessories.framework/FindMyDeviceAccessories`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x27f44` | `0x26b38` | **`-0x140c`** |
+| `__TEXT.__eh_frame` | `0x2dd0` | `0x29a0` | **`-0x430`** |
+| `__DATA.__bss` | `0x39b0` | `0x3d60` | **`+0x3b0`** |
+| `__TEXT.__swift5_fieldmd` | `0x720` | `0x818` | **`+0xf8`** |
+| `__TEXT.__const` | `0x3756` | `0x367a` | **`-0xdc`** |
+| `__AUTH.__data` | `0x3c8` | `0x448` | **`+0x80`** |
+| `__AUTH_CONST.__const` | `0xc78` | `0xcf0` | **`+0x78`** |
+| `__TEXT.__swift5_typeref` | `0xb0f` | `0xa9f` | **`-0x70`** |
+| `__TEXT.__unwind_info` | `0xe88` | `0xe28` | **`-0x60`** |
+| `__TEXT.__swift5_reflstr` | `0x333` | `0x373` | **`+0x40`** |
+| `__TEXT.__constg_swiftt` | `0x718` | `0x744` | **`+0x2c`** |
+| `__TEXT.__swift_as_cont` | `0x258` | `0x22c` | **`-0x2c`** |
+| `__TEXT.__swift5_acfuncs` | `0x208` | `0x1e0` | **`-0x28`** |
+| `__TEXT.__cstring` | `0x50f` | `0x4ef` | **`-0x20`** |
+| `__TEXT.__swift5_proto` | `0x1e4` | `0x200` | **`+0x1c`** |
+| `__TEXT.__swift_as_entry` | `0x174` | `0x158` | **`-0x1c`** |
+| `__DATA_DIRTY.__data` | `0x280` | `0x298` | **`+0x18`** |
+| `__TEXT.__swift_as_ret` | `0x140` | `0x128` | **`-0x18`** |
+| `__DATA.__data` | `0x268` | `0x260` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0x80` | `0x88` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x27f44
--  __TEXT.__const: 0x3756
--  __TEXT.__swift5_typeref: 0xb0f
--  __TEXT.__cstring: 0x50f
--  __TEXT.__swift5_reflstr: 0x333
-+  __TEXT.__text: 0x26b38
-+  __TEXT.__const: 0x367a
-+  __TEXT.__swift5_typeref: 0xa9f
-+  __TEXT.__cstring: 0x4ef
-+  __TEXT.__swift5_reflstr: 0x373
-   __TEXT.__swift5_assocty: 0xd0
--  __TEXT.__constg_swiftt: 0x718
--  __TEXT.__swift5_fieldmd: 0x720
-+  __TEXT.__constg_swiftt: 0x744
-+  __TEXT.__swift5_fieldmd: 0x818
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__swift5_proto: 0x1e4
--  __TEXT.__swift5_types: 0x80
--  __TEXT.__swift5_acfuncs: 0x208
--  __TEXT.__swift_as_entry: 0x174
--  __TEXT.__swift_as_ret: 0x140
--  __TEXT.__swift_as_cont: 0x258
-+  __TEXT.__swift5_proto: 0x200
-+  __TEXT.__swift5_types: 0x88
-+  __TEXT.__swift5_acfuncs: 0x1e0
-+  __TEXT.__swift_as_entry: 0x158
-+  __TEXT.__swift_as_ret: 0x128
-+  __TEXT.__swift_as_cont: 0x22c
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0xe88
--  __TEXT.__eh_frame: 0x2dd0
-+  __TEXT.__unwind_info: 0xe28
-+  __TEXT.__eh_frame: 0x29a0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
+-481.30.6.7.1
++482.30.6.14.2
 
-   __DATA_CONST.__objc_classlist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xc78
-+  __AUTH_CONST.__const: 0xcf0
-   __AUTH_CONST.__objc_const: 0x310
-   __AUTH_CONST.__auth_got: 0x3d0
-   __AUTH.__objc_data: 0x50
--  __AUTH.__data: 0x3c8
--  __DATA.__data: 0x268
--  __DATA.__bss: 0x39b0
-+  __AUTH.__data: 0x448
-+  __DATA.__data: 0x260
-+  __DATA.__bss: 0x3d60
-   __DATA.__common: 0x10
-   __DATA_DIRTY.__objc_data: 0x50
--  __DATA_DIRTY.__data: 0x280
-+  __DATA_DIRTY.__data: 0x298
-   __DATA_DIRTY.__common: 0x10
-   __DATA_DIRTY.__bss: 0x4d0
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
 -  Functions: 887
--  Symbols:   302
+-  Symbols:   287
 +  Functions: 910
-+  Symbols:   308
-   CStrings:  29
- 
-Sections:
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   291
 Symbols:
 + ___swift_get_extra_inhabitant_indexTm
 + ___swift_store_extra_inhabitant_indexTm
@@ -117,5 +72,4 @@ CStrings:
 - "acknowlegePublishOfDeviceEvents(publishDate:)"
 - "fetchDeviceEventsForAccessoryIdentifiers(_:)"
 - "unpublishedPayloads(since:)"
-
 ```

@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/libmalloc_exclaves_introspector.framework/libmalloc_exclaves_introspector`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _mfmi_enumerator : 584 -> 580

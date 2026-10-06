@@ -2,134 +2,62 @@
 
 > `/System/Library/PrivateFrameworks/VideosUI.framework/VideosUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__DATA.__objc_stublist`
-- `__DATA_DIRTY.__common`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x103412c` | `0x1042dc0` | **`+0xec94`** |
+| `__TEXT.__swift5_typeref` | `0x128180` | `0x12a474` | **`+0x22f4`** |
+| `__TEXT.__oslogstring` | `0x4a89d` | `0x4af6d` | **`+0x6d0`** |
+| `__DATA.__data` | `0x219a8` | `0x21e58` | **`+0x4b0`** |
+| `__AUTH_CONST.__objc_const` | `0x88568` | `0x889d0` | **`+0x468`** |
+| `__DATA_DIRTY.__objc_data` | `0x27098` | `0x27418` | **`+0x380`** |
+| `__TEXT.__constg_swiftt` | `0x3c9a8` | `0x3cbbc` | **`+0x214`** |
+| `__AUTH_CONST.__const` | `0x777a8` | `0x779b8` | **`+0x210`** |
+| `__AUTH.__objc_data` | `0x1c6b0` | `0x1c880` | **`+0x1d0`** |
+| `__DATA_DIRTY.__data` | `0x69d08` | `0x69b38` | **`-0x1d0`** |
+| `__DATA.__bss` | `0x24e80` | `0x25030` | **`+0x1b0`** |
+| `__TEXT.__swift5_reflstr` | `0x36d71` | `0x36f21` | **`+0x1b0`** |
+| `__TEXT.__cstring` | `0x35446` | `0x355e6` | **`+0x1a0`** |
+| `__TEXT.__unwind_info` | `0x31850` | `0x319e0` | **`+0x190`** |
+| `__TEXT.__swift5_capture` | `0x17610` | `0x1779c` | **`+0x18c`** |
+| `__AUTH.__data` | `0x36428` | `0x365a8` | **`+0x180`** |
+| `__DATA_DIRTY.__bss` | `0x20750` | `0x205d0` | **`-0x180`** |
+| `__AUTH_CONST.__auth_got` | `0x6ae8` | `0x6be0` | **`+0xf8`** |
+| `__TEXT.__objc_methlist` | `0x337ec` | `0x338c4` | **`+0xd8`** |
+| `__TEXT.__swift5_fieldmd` | `0x29bf8` | `0x29cc0` | **`+0xc8`** |
+| `__TEXT.__const` | `0x84600` | `0x84540` | **`-0xc0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x18db8` | `0x18e68` | **`+0xb0`** |
+| `__TEXT.__eh_frame` | `0x26b5c` | `0x26c0c` | **`+0xb0`** |
+| `__DATA_CONST.__const` | `0x8fa8` | `0x8ff0` | **`+0x48`** |
+| `__TEXT.__gcc_except_tab` | `0x8ba0` | `0x8be8` | **`+0x48`** |
+| `__DATA_CONST.__got` | `0x5ba8` | `0x5bd8` | **`+0x30`** |
+| `__AUTH_CONST.__cfstring` | `0x1b540` | `0x1b560` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x2e18` | `0x2e30` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x5de0` | `0x5df8` | **`+0x18`** |
+| `__DATA.__common` | `0x1b20` | `0x1b30` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x30c8` | `0x30d8` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x2788` | `0x2794` | **`+0xc`** |
+| `__DATA_CONST.__objc_protorefs` | `0x658` | `0x660` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x1cf0` | `0x1cf8` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x2cc` | `0x2d0` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0x23ec` | `0x23f0` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0xbec` | `0xbf0` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0xcdc` | `0xcd8` | **`-0x4`** |
+
+### Other Changes
 
 ```diff
 
 -1145.0.2.0.1
--  __TEXT.__text: 0x103412c
--  __TEXT.__objc_methlist: 0x337ec
--  __TEXT.__cstring: 0x35446
--  __TEXT.__const: 0x84600
--  __TEXT.__oslogstring: 0x4a89d
--  __TEXT.__gcc_except_tab: 0x8ba0
 +1145.0.6.0.0
-+  __TEXT.__text: 0x1042dc0
-+  __TEXT.__objc_methlist: 0x338c4
-+  __TEXT.__cstring: 0x355e6
-+  __TEXT.__const: 0x84540
-+  __TEXT.__oslogstring: 0x4af6d
-+  __TEXT.__gcc_except_tab: 0x8be8
-   __TEXT.__ustring: 0xd2
-   __TEXT.__dlopen_cstrs: 0x6d
--  __TEXT.__constg_swiftt: 0x3c9a8
--  __TEXT.__swift5_typeref: 0x128180
--  __TEXT.__swift5_reflstr: 0x36d71
--  __TEXT.__swift5_fieldmd: 0x29bf8
-+  __TEXT.__constg_swiftt: 0x3cbbc
-+  __TEXT.__swift5_typeref: 0x12a474
-+  __TEXT.__swift5_reflstr: 0x36f21
-+  __TEXT.__swift5_fieldmd: 0x29cc0
-   __TEXT.__swift5_builtin: 0x938
--  __TEXT.__swift5_assocty: 0x5de0
--  __TEXT.__swift5_proto: 0x2788
--  __TEXT.__swift5_types: 0x23ec
--  __TEXT.__swift5_capture: 0x17610
--  __TEXT.__swift5_protos: 0x2cc
-+  __TEXT.__swift5_assocty: 0x5df8
-+  __TEXT.__swift5_proto: 0x2794
-+  __TEXT.__swift5_types: 0x23f0
-+  __TEXT.__swift5_capture: 0x1779c
-+  __TEXT.__swift5_protos: 0x2d0
-   __TEXT.__swift5_mpenum: 0x138
--  __TEXT.__swift_as_entry: 0xbec
--  __TEXT.__swift_as_ret: 0xcdc
--  __TEXT.__swift_as_cont: 0x1cf0
--  __TEXT.__unwind_info: 0x31850
--  __TEXT.__eh_frame: 0x26b5c
-+  __TEXT.__swift_as_entry: 0xbf0
-+  __TEXT.__swift_as_ret: 0xcd8
-+  __TEXT.__swift_as_cont: 0x1cf8
-+  __TEXT.__unwind_info: 0x319e0
-+  __TEXT.__eh_frame: 0x26c0c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x8fa8
--  __DATA_CONST.__objc_classlist: 0x30c8
-+  __DATA_CONST.__const: 0x8ff0
-+  __DATA_CONST.__objc_classlist: 0x30d8
-   __DATA_CONST.__objc_catlist: 0x148
-   __DATA_CONST.__objc_protolist: 0xd28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x18db8
--  __DATA_CONST.__objc_protorefs: 0x658
-+  __DATA_CONST.__objc_selrefs: 0x18e68
-+  __DATA_CONST.__objc_protorefs: 0x660
-   __DATA_CONST.__objc_superrefs: 0xcb0
-   __DATA_CONST.__objc_arraydata: 0xd70
--  __DATA_CONST.__got: 0x5ba8
--  __AUTH_CONST.__const: 0x777a8
--  __AUTH_CONST.__cfstring: 0x1b540
--  __AUTH_CONST.__objc_const: 0x88568
-+  __DATA_CONST.__got: 0x5bd8
-+  __AUTH_CONST.__const: 0x779b8
-+  __AUTH_CONST.__cfstring: 0x1b560
-+  __AUTH_CONST.__objc_const: 0x889d0
-   __AUTH_CONST.__objc_intobj: 0x2268
-   __AUTH_CONST.__objc_arrayobj: 0x3c0
-   __AUTH_CONST.__objc_doubleobj: 0x220
-   __AUTH_CONST.__objc_dictobj: 0x578
--  __AUTH_CONST.__auth_got: 0x6ae8
--  __AUTH.__objc_data: 0x1c6b0
--  __AUTH.__data: 0x36428
--  __DATA.__objc_ivar: 0x2e18
--  __DATA.__data: 0x219a8
-+  __AUTH_CONST.__auth_got: 0x6be0
-+  __AUTH.__objc_data: 0x1c880
-+  __AUTH.__data: 0x365a8
-+  __DATA.__objc_ivar: 0x2e30
-+  __DATA.__data: 0x21e58
-   __DATA.__objc_stublist: 0x28
--  __DATA.__bss: 0x24e80
--  __DATA.__common: 0x1b20
--  __DATA_DIRTY.__objc_data: 0x27098
--  __DATA_DIRTY.__data: 0x69d08
--  __DATA_DIRTY.__bss: 0x20750
-+  __DATA.__bss: 0x25030
-+  __DATA.__common: 0x1b30
-+  __DATA_DIRTY.__objc_data: 0x27418
-+  __DATA_DIRTY.__data: 0x69b38
-+  __DATA_DIRTY.__bss: 0x205d0
-   __DATA_DIRTY.__common: 0x1a80
-   - /System/Library/Frameworks/ARKit.framework/ARKit
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 84237
--  Symbols:   55551
+-  Symbols:   45845
 -  CStrings:  12082
 +  Functions: 84401
-+  Symbols:   55636
++  Symbols:   45909
 +  CStrings:  12108
- 
 Symbols:
 + -[FocusableTextView _fillLastVisibleLineForMoreFade]
 + -[FocusableTextView _restorePristineDescriptionForFadeFill]
@@ -301,29 +229,6 @@ Symbols:
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAA15ModifiedContentVyAA6VStackVyAA05TupleK0VyAA012_ConditionalK0VyAIyAOyAOy06VideosB0012StandardTextC033_9F6E14765133CE7217CD769C78AD854CLLVAP011DescriptionqC0ARLLVGAA05EmptyC0VGAA14_PaddingLayoutVGSgAIyA1_AA0G18AttachmentModifierVGG_AIyAOyAOyAIyAA6ZStackVyAIyAIyAA6IDViewVyAyP0qC5ModelCGAA21_TraitWritingModifierVyAA18TransitionTraitKeyVGGAA18_AnimationModifierVyA11_GGGAA11_ClipEffectVyAA9RectangleVGGAYGSgAIyA31_A3_GGAA16_OverlayModifierVyAOyAIyAIyAIyAOyAcAE0d10ShowsLargeK6VieweryQrqd__yXEAaBRd__lFQOyAIyAIyAIyAIyAIyAIyAcAE15dynamicTypeSizeyQrqd__SXRd__AA15DynamicTypeSizeO5BoundRtd__lFQOyAIyAOyAIyAOyAOyAIyAOyAIyAIyAcAE7kerningyQr12CoreGraphics7CGFloatVFQOyAIyAIyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA5ColorVSgGGA49_yAA4FontVSgGG_Qo_A49_yA45_GGAA19_BackgroundModifierVyAIyAA06_ShapeC0VyA27_A51_GAA13_ShadowEffectVGGGA62_GAA24_ForegroundStyleModifierVyAA22HierarchicalShapeStyleVGGAcAE12drawingGroup6opaque9colorModeQrSb_AA18ColorRenderingModeOtFQOyAIyA73_A75_yAA14LinearGradientVGG_Qo_GAIyA73_A53_GGA49_yAA8MaterialVSgGGA92_GA49_yAA0Q0V4CaseOSgGG_s19PartialRangeThroughVyA39_GQo_AA16_BlendModeEffectVGA49_ySiSgGGA61_GA49_yAA0Q9AlignmentOGGA49_yA100_14TruncationModeOGGA_G_A100_Qo_A125_GA49_yA47_5ScaleOGGAA13_OffsetEffectVGAA14_OpacityEffectVGAIyA137_A3_GGGGSgQPGGAA12_FrameLayoutVG_Qo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAA15ModifiedContentVyAIyAIyAIyAIyAA012_ConditionalK0VyAIyAA6VStackVyAIyAIyAA5GroupVyAA05TupleK0VyAIyAA6SpacerVAA12_FrameLayoutVG_AA6HStackVyAQyAKyAIyAKyAKyAKy06VideosB0010AsyncImageC0VAA05EmptyC0VGAY09CompositeV0VGA1_GAA08_PaddingR0VGA6_GSg_AsIyAIyAKyAIyAKyAKyAKyAKyAKyAIyAIyAIyAOyAKyAKyAA6IDViewVyAcAE16keyboardShortcutyQrAA16KeyboardShortcutVFQOyAcAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyAIyAIyAY19ButtonRepresentableVAA05_FlexqR0VGAA010_FixedSizeR0VG_AA28BorderedProminentButtonStyleVQo__Qo_10Foundation4UUIDVGA13_yAcAEA14__9modifiersQrAA13KeyEquivalentV_AA14EventModifiersVtFQOyAOyAKyAcAEA17_yQrqd__AAA18_Rd__lFQOyA26__AA19BorderedButtonStyleVQo_AcAEA17_yQrqd__AAA18_Rd__lFQOyA26__AA21BorderlessButtonStyleVQo_GG_Qo_A33_GGAKyAcAEA17_yQrqd__AAA18_Rd__lFQOyA26__AA16PlainButtonStyleVQo_A42_GGGAA30_EnvironmentKeyWritingModifierVyAA17ButtonBorderShapeVGGA58_yAA11ControlSizeOGGA58_yAA5ColorVSgGGAcAEA17_yQrqd__AA11ButtonStyleRd__lFQOyA26__AY16BasicButtonStyleVQo_GAKyAIyAIyAIyAOyAKyAKyA13_yAcAEA14_yQrA16_FQOyAcAEA17_yQrqd__AAA18_Rd__lFQOyAY07RoutingC0VyAY13DefaultButtonVG_A28_Qo__Qo_A33_GA13_yAcAEA14__A35_QrA37__A39_tFQOyAOyAKyAcAEA17_yQrqd__AAA18_Rd__lFQOyA81__A41_Qo_AcAEA17_yQrqd__AAA18_Rd__lFQOyA81__A44_Qo_GG_Qo_A33_GGAKyAcAEA17_yQrqd__AAA18_Rd__lFQOyA81__A52_Qo_A85_GGGA61_GA65_GA70_GAcAEA17_yQrqd__AAA72_Rd__lFQOyA81__A74_Qo_GGAKyA100_AKyAIyAIyAIyAOyAKyAKyA13_yAcAEA14_yQrA16_FQOyAcAEA17_yQrqd__AAA18_Rd__lFQOyAY012UpNextButtonC0VSg_A28_Qo__Qo_A33_GA13_yAcAEA14__A35_QrA37__A39_tFQOyAOyAKyAcAEA17_yQrqd__AAA18_Rd__lFQOyA104__A41_Qo_AcAEA17_yQrqd__AAA18_Rd__lFQOyA104__A44_Qo_GG_Qo_A33_GGAKyAcAEA17_yQrqd__AAA18_Rd__lFQOyA104__A52_Qo_A108_GGGA61_GA65_GA70_GAcAEA17_yQrqd__AAA72_Rd__lFQOyA104__A74_Qo_GGGAKyAKyAKyAY014DownloadButtonC0VSgA128_GA129_GAKyAKyAIyAIyAY16AccountHubButtonVA22_GA25_GAIyAIyAKyAIyAIyAIyAOyAKyAKyA13_yAcAEA14_yQrA16_FQOyAcAEA17_yQrqd__AAA18_Rd__lFQOyA78_yAY21AccountSettingsButtonVG_A28_Qo__Qo_A33_GA13_yAcAEA14__A35_QrA37__A39_tFQOyAOyAKyAcAEA17_yQrqd__AAA18_Rd__lFQOyA137__A41_Qo_AcAEA17_yQrqd__AAA18_Rd__lFQOyA137__A44_Qo_GG_Qo_A33_GGAKyAcAEA17_yQrqd__AAA18_Rd__lFQOyA137__A52_Qo_A141_GGGA61_GA65_GA70_GAcAEA17_yQrqd__AAA72_Rd__lFQOyA137__A74_Qo_GA22_GA25_GGSgA76_GGGAKyAKyAY23CountDownProgressButtonVAY12PickerButtonVGA1_GGAA0G18AttachmentModifierVGAIyA173_AY18ImpressionableItem33_279870158F59CE1CECC75FF3E99FC40ELLVGGA172_GAA32_EnvironmentKeyTransformModifierVySbGGSgQPGGAMyAQyAA7ForEachVySaySi_AY04TextC5ModelCtGSSSgAQyAKyAKyAY022ScaledBaselineRelativeP0VA194_GAVGSg_AKyAKyAY012StandardTextC033_9F6E14765133CE7217CD769C78AD854CLLVAY015DescriptionTextC0A199_LLVGA1_GA194_SgQPGG_AQyA205__A183_QPGSgAQyAV_A183_QPGSgQPGGAvY15SimpleSeparatorVQPGGA8_GA8_GGA22_GSgAIyAIyAIyAMyAXyAQyAIyAIyA9_A8_GA8_GSg_AMyAQyA215_Sg_AIyAXyAQyAMyAQyAVSg_AXyAQyA213__AsIyAIyA183_A8_GA8_GSgQPGGA227_A226_QPGG_A223_SgQPGGA8_GA226_QPGGQPGGGA8_GA8_GA22_GGAA01_K13ShapeModifierVyAA9RectangleVGGAY23TappableHighlightedArea33_6ECA81762323E6D1CADDB158CB2F2631LLVGAY18HighlightRowIfNeedA255_LLVGAY23SizeClassChangeModifier33_E4EC736A86928CA2EB3833FC5B8B4532LLVGA8_G_Qo_HO
 + _handleDocumentDataSource:targetResponder:appContext:documentOptions:completion:.sIsPresentingModalDocument
-+ _objc_msgSend$_fillLastVisibleLineForMoreFade
-+ _objc_msgSend$_restorePristineDescriptionForFadeFill
-+ _objc_msgSend$disableSubtitle:
-+ _objc_msgSend$ensureLayoutForRange:
-+ _objc_msgSend$fillsLastVisibleLineForMoreFade
-+ _objc_msgSend$hasActiveMockSession
-+ _objc_msgSend$hashTableWithOptions:
-+ _objc_msgSend$initWithObject:imageLoader:groupType:impressionIDWrapper:
-+ _objc_msgSend$isFederatedContent
-+ _objc_msgSend$makeImageProxyWithDescriptor:impressionIDWrapper:
-+ _objc_msgSend$makeImageViewWithDescriptor:existingView:impressionIDWrapper:
-+ _objc_msgSend$metricsForTextStyle:
-+ _objc_msgSend$overridesOrientationLock
-+ _objc_msgSend$playerTabsDidUpdate
-+ _objc_msgSend$replaceCharactersInRange:withAttributedString:
-+ _objc_msgSend$setFillsLastVisibleLineForMoreFade:
-+ _objc_msgSend$setIsFederatedContent:
-+ _objc_msgSend$setSubtitlesDisabled:
-+ _objc_msgSend$showImageView:transitionView:show:animated:
-+ _objc_msgSend$systemUptime
-+ _objc_msgSend$textContentManager
-+ _objc_msgSend$textStorage
-+ _objc_msgSend$viewControllerForColumn:
 + _symbolic $s8VideosUI26SourceViewModelReferencingP
 + _symbolic SDy__________G 8VideosUI7SizeKey33_C03085263DD3324DA564FD97E0991E8FLLV So6CGSizeV
 + _symbolic Say_____G 8VideosUI7SizeKey33_C03085263DD3324DA564FD97E0991E8FLLV
@@ -1065,8 +970,6 @@ Symbols:
 - _get_witness_table 7SwiftUI6HStackVyAA12TupleContentVyAA012_ConditionalE0Vy06VideosB09TextBadgeVAA08ModifiedE0VyAjA31AccessibilityAttachmentModifierVGGSg_AA6SpacerVAGyAGyAGyAH14AsyncImageViewVAA05EmptyQ0VGAH09CompositeP0VGAWGSgQPGGAA0Q0HPyHC
 - _get_witness_table 7SwiftUI6VStackVyAA12TupleContentVyAA6SpacerV_AA012_ConditionalE0VyAA4ViewPAAE023accessibilityShowsLargeE6VieweryQrqd__yXEAaJRd__lFQOyAA08ModifiedE0VyANyANyANyANyANyAkAE15dynamicTypeSizeyQrqd__SXRd__AA07DynamicoP0O5BoundRtd__lFQOyANyAIyANyAIyAIyANyAIyANyANyAkAE7kerningyQr12CoreGraphics7CGFloatVFQOyANyAA4TextVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGG_Qo_A_yAWGGAA19_BackgroundModifierVyANyAA06_ShapeH0VyAA9RectangleVAA5ColorVGAA13_ShadowEffectVGGGA7_GAA24_ForegroundStyleModifierVyAA22HierarchicalShapeStyleVGGANyA22_A24_yAA14LinearGradientVGGGANyA22_A_yA15_SgGGGA_yAA8MaterialVSgGGA37_GA_yAY4CaseOSgGG_s19PartialRangeThroughVyAQGQo_AA16_BlendModeEffectVGA_ySiSgGGA6_GA_yAA0W9AlignmentOGGA_yAY14TruncationModeOGGAA14_PaddingLayoutVG_AYQo_A70_GA72_AGQPGGAaJHPyHC
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAA15ModifiedContentVyAA6VStackVyAA05TupleK0VyAA012_ConditionalK0VyAIyAOyAOy06VideosB0012StandardTextC033_9F6E14765133CE7217CD769C78AD854CLLVAP011DescriptionqC0ARLLVGAA05EmptyC0VGAA14_PaddingLayoutVGSgAIyA1_AA0G18AttachmentModifierVGG_AIyAOyAOyAIyAA6ZStackVyAIyAIyAA6IDViewVyAyP0qC5ModelCGAA21_TraitWritingModifierVyAA18TransitionTraitKeyVGGAA18_AnimationModifierVyA11_GGGAA11_ClipEffectVyAA9RectangleVGGAYGSgAIyA31_A3_GGAA16_OverlayModifierVyAOyAIyAIyAIyAOyAcAE0d10ShowsLargeK6VieweryQrqd__yXEAaBRd__lFQOyAIyAIyAIyAIyAIyAIyAcAE15dynamicTypeSizeyQrqd__SXRd__AA15DynamicTypeSizeO5BoundRtd__lFQOyAIyAOyAIyAOyAOyAIyAOyAIyAIyAcAE7kerningyQr12CoreGraphics7CGFloatVFQOyAIyAIyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA5ColorVSgGGA49_yAA4FontVSgGG_Qo_A49_yA45_GGAA19_BackgroundModifierVyAIyAA06_ShapeC0VyA27_A51_GAA13_ShadowEffectVGGGA62_GAA24_ForegroundStyleModifierVyAA22HierarchicalShapeStyleVGGAIyA73_A75_yAA14LinearGradientVGGGAIyA73_A53_GGA49_yAA8MaterialVSgGGA86_GA49_yAA0Q0V4CaseOSgGG_s19PartialRangeThroughVyA39_GQo_AA16_BlendModeEffectVGA49_ySiSgGGA61_GA49_yAA0Q9AlignmentOGGA49_yA94_14TruncationModeOGGA_G_A94_Qo_A119_GA49_yA47_5ScaleOGGAA13_OffsetEffectVGAA14_OpacityEffectVGAIyA131_A3_GGGGSgQPGGAA12_FrameLayoutVG_Qo_HO
-- _objc_msgSend$_makeLastLineBreakByClipping
-- _objc_msgSend$showImageView:show:animated:
 - _symbolic Say_____G 8VideosUI20VUIContentRatingItemV
 - _symbolic Say_____G 8VideosUI26ScoreboardUpdatableWrapperC
 - _symbolic Si__________y_____y_____y_____y_____yACy__________G______yAIyAIyAIyACy__________GACyAL_____GGAIyAEyAEyAIyAIy_____yACyACyACyACyACyACy_____yACyAIyACyAIyAIyACyAIyACyACy_____yACy__________y_____SgGG_Qo_AQy_____GG_____yACy_____y__________G_____GGGAYG_____y_____GGACyA7_A8_y_____GGGACyA7_AQyA1_SgGGGAQy_____SgGGA19_GAQy_____SgGG______y_____GQo______GAQySiSgGGAXGAQy_____GGAQy_____GG_____G_APQo_A46_GACyA48_AMGG_AHQPGSg_ACy_____AKGQPG_____GGAIyAIy_____ACyA59_AMGGAIy_____ACyA62_AMGGGGAIy_____ACyA67_AMGGGQPGGA45_G_Qo_SiGIegynr_ 8VideosUI21SportsSeeAllPlayModelV 05SwiftB06IDViewV AD4ViewPADE16listRowSeparator_5edgesQrAD10VisibilityO_AD12VerticalEdgeO3SetVtFQO AD15ModifiedContentV AD6VStackV AD05TupleT0V AD6SpacerV AD12_FrameLayoutV AD012_ConditionalT0V AA0F4CellV AA0cf2ByfdeJ0V06GlobalF12CellModifier33_B5018FED309217B836BCA2AE8927CB7ALLV AD31AccessibilityAttachmentModifierV AhDE023accessibilityShowsLargeT6VieweryQrqd__yXEAdGRd__lFQO AhDE15dynamicTypeSizeyQrqd__SXRd__AD15DynamicTypeSizeO5BoundRtd__lFQO AhDE7kerningyQr12CoreGraphics7CGFloatVFQO AD4TextV AD30_EnvironmentKeyWritingModifierV AD4FontV A19_ AD19_BackgroundModifierV AD06_ShapeJ0V AD9RectangleV AD5ColorV AD13_ShadowEffectV AD24_ForegroundStyleModifierV AD22HierarchicalShapeStyleV AD14LinearGradientV AD8MaterialV A21_4CaseO s19PartialRangeThroughV A13_ AD16_BlendModeEffectV AD13TextAlignmentO A21_14TruncationModeO AD08_PaddingY0V AA0cF9GroupCellV AD05EmptyJ0V AA11DividerCellA6_LLV AA05ErrorJ0A6_LLV AA017BaseballBreaklineJ0V

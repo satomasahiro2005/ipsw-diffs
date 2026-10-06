@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AppRestrictionsCore.framework/AppRestrictionsCore`
 
-```diff
+### Section Size Changes
 
- 21.100.0.0.0
--  __TEXT.__text: 0x3fac
-+  __TEXT.__text: 0x3fb0
-   __TEXT.__objc_methlist: 0x43c
-   __TEXT.__const: 0x2f8
-   __TEXT.__cstring: 0x13c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3fac` | `0x3fb0` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_2250ab590 -> sub_2258ef590 : 244 -> 248
 ```

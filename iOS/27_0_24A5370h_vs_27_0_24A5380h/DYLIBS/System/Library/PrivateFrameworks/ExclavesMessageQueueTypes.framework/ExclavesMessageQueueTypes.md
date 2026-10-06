@@ -2,18 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/ExclavesMessageQueueTypes.framework/ExclavesMessageQueueTypes`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x848` | `0x838` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__text: 0x2a70
--  __TEXT.__const: 0x848
-+  __TEXT.__const: 0x838
-   __TEXT.__swift5_typeref: 0x1b9
-   __TEXT.__constg_swiftt: 0x20c
-   __TEXT.__swift5_reflstr: 0x76
-Sections:
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__eh_frame : content changed
-~ __AUTH_CONST.__const : content changed
-
+-66.0.0.0.1
++66.0.2.0.0
 ```

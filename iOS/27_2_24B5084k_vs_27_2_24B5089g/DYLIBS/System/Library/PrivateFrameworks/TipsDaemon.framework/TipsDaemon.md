@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/TipsDaemon.framework/TipsDaemon`
 
-```diff
+### Section Size Changes
 
- 866.2.2.0.0
--  __TEXT.__text: 0x9a940
-+  __TEXT.__text: 0x9a944
-   __TEXT.__objc_methlist: 0x38b8
-   __TEXT.__const: 0x3258
-   __TEXT.__oslogstring: 0x24c3
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa0654` | `0xa0658` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_242e5ee94 -> sub_2430e8e94 : 1136 -> 1140
+~ sub_245a3b340 -> sub_245c62340 : 1148 -> 1152
 ```

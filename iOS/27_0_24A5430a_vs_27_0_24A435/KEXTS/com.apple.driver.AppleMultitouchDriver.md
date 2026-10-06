@@ -2,14 +2,8 @@
 
 > `com.apple.driver.AppleMultitouchDriver`
 
-```diff
+### Section Size Changes
 
-   __TEXT.__const: 0x1a8
-   __TEXT.__cstring: 0x22d5
-   __TEXT.__os_log: 0x3a70
--  __TEXT_EXEC.__text: 0x1cccc
-+  __TEXT_EXEC.__text: 0x1d240
-   __TEXT_EXEC.__auth_stubs: 0x6a0
-   __DATA.__data: 0xca
-   __DATA.__common: 0x270
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x1cccc` | `0x1d240` | **`+0x574`** |

@@ -2,108 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/AVConference.framework/AVConference`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7d1200` | `0x7d4120` | **`+0x2f20`** |
+| `__AUTH.__objc_data` | `0x2760` | `—` | **`-0x2760`** |
+| `__DATA_DIRTY.__objc_data` | `0xa7d0` | `0xcf30` | **`+0x2760`** |
+| `__TEXT.__oslogstring` | `0x13dc25` | `0x13e750` | **`+0xb2b`** |
+| `__DATA_DIRTY.__bss` | `0x4c0` | `0xaf0` | **`+0x630`** |
+| `__DATA.__bss` | `0xef8` | `0x910` | **`-0x5e8`** |
+| `__TEXT.__cstring` | `0x9e6f4` | `0x9ead7` | **`+0x3e3`** |
+| `__DATA_CONST.__got` | `0x1a68` | `0x1e30` | **`+0x3c8`** |
+| `__DATA.__data` | `0x80d8` | `0x7d48` | **`-0x390`** |
+| `__DATA_DIRTY.__data` | `0x160` | `0x420` | **`+0x2c0`** |
+| `__AUTH_CONST.__cfstring` | `0x297e0` | `0x298e0` | **`+0x100`** |
+| `__AUTH.__data` | `—` | `0xf8` | **`+0xf8`** |
+| `__AUTH_CONST.__const` | `0x4468` | `0x4528` | **`+0xc0`** |
+| `__TEXT.__unwind_info` | `0x123e0` | `0x12490` | **`+0xb0`** |
+| `__DATA_CONST.__const` | `0x7660` | `0x7698` | **`+0x38`** |
+| `__TEXT.__objc_methlist` | `0x3a8b0` | `0x3a8e8` | **`+0x38`** |
+| `__AUTH_CONST.__objc_const` | `0x6cd68` | `0x6cd98` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x18bc0` | `0x18bf0` | **`+0x30`** |
+| `__DATA.__objc_ivar` | `0x76a8` | `0x76b8` | **`+0x10`** |
+| `__TEXT.__const` | `0xc6c0` | `0xc6b0` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x7d1200
--  __TEXT.__objc_methlist: 0x3a8b0
--  __TEXT.__const: 0xc6c0
--  __TEXT.__cstring: 0x9e6f4
--  __TEXT.__oslogstring: 0x13dc25
-+  __TEXT.__text: 0x7d4120
-+  __TEXT.__objc_methlist: 0x3a8e8
-+  __TEXT.__const: 0xc6b0
-+  __TEXT.__cstring: 0x9ead7
-+  __TEXT.__oslogstring: 0x13e750
-   __TEXT.__gcc_except_tab: 0x2d08
-   __TEXT.__ustring: 0x2d4
-   __TEXT.__dlopen_cstrs: 0x56
--  __TEXT.__unwind_info: 0x123e0
-+  __TEXT.__unwind_info: 0x12490
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7660
-+  __DATA_CONST.__const: 0x7698
-   __DATA_CONST.__objc_classlist: 0x14b8
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x510
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x18bc0
-+  __DATA_CONST.__objc_selrefs: 0x18bf0
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_superrefs: 0x1268
-   __DATA_CONST.__objc_arraydata: 0x27c8
--  __DATA_CONST.__got: 0x1a68
--  __AUTH_CONST.__const: 0x4468
--  __AUTH_CONST.__cfstring: 0x297e0
--  __AUTH_CONST.__objc_const: 0x6cd68
-+  __DATA_CONST.__got: 0x1e30
-+  __AUTH_CONST.__const: 0x4528
-+  __AUTH_CONST.__cfstring: 0x298e0
-+  __AUTH_CONST.__objc_const: 0x6cd98
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x52e0
-   __AUTH_CONST.__objc_arrayobj: 0x1d88
+-2235.52.1.11.1
++2235.55.1.0.0
 
-   __AUTH_CONST.__objc_doubleobj: 0x1d0
-   __AUTH_CONST.__objc_dictobj: 0x2d0
-   __AUTH_CONST.__auth_got: 0x2c38
--  __AUTH.__objc_data: 0x2760
--  __DATA.__objc_ivar: 0x76a8
--  __DATA.__data: 0x80d8
--  __DATA.__bss: 0xef8
-+  __AUTH.__data: 0xf8
-+  __DATA.__objc_ivar: 0x76b8
-+  __DATA.__data: 0x7d48
-+  __DATA.__bss: 0x910
-   __DATA.__common: 0x55
--  __DATA_DIRTY.__objc_data: 0xa7d0
--  __DATA_DIRTY.__data: 0x160
--  __DATA_DIRTY.__bss: 0x4c0
-+  __DATA_DIRTY.__objc_data: 0xcf30
-+  __DATA_DIRTY.__data: 0x420
-+  __DATA_DIRTY.__bss: 0xaf0
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-
-   - /System/Library/PrivateFrameworks/FTServices.framework/FTServices
-   - /System/Library/PrivateFrameworks/IDS.framework/IDS
-   - /System/Library/PrivateFrameworks/LoggingSupport.framework/LoggingSupport
 -  - /System/Library/PrivateFrameworks/MediaAnalysis.framework/MediaAnalysis
-   - /System/Library/PrivateFrameworks/MediaExperience.framework/MediaExperience
-   - /System/Library/PrivateFrameworks/OSAnalytics.framework/OSAnalytics
-   - /System/Library/PrivateFrameworks/PrivacyAccounting.framework/PrivacyAccounting
 
-   - /usr/lib/libspindump.dylib
-   - /usr/lib/libtailspin.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 35303
--  Symbols:   110846
--  CStrings:  39104
+-  Symbols:   41836
+-  CStrings:  33800
 +  Functions: 35352
-+  Symbols:   110985
-+  CStrings:  39167
- 
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__auth_got : content changed
++  Symbols:   41883
++  CStrings:  33855
 Symbols:
 + +[VCHardwareSettings supportsHEVCDecodingForHomeKit]
 + -[AVAudioDevice isEligibleToBeDefaultDeviceForScope:]
@@ -188,17 +126,6 @@ Symbols:
 + _initVCPCaptureAnalysisStartKey
 + _kVCExperimentEnableGroupSessionLeavingAutoStop
 + _kVCRTPInfoBufferClass
-+ _objc_msgSend$_dispatchedNotifyFrameRateBeingThrottledForClients:newFrameRate:thermalLevelDidChange:powerLevelDidChange:
-+ _objc_msgSend$_dispatchedNotifyThermalChangeForClients:
-+ _objc_msgSend$canvasSize
-+ _objc_msgSend$dispatchRemoteScreenAttributesDidChange:
-+ _objc_msgSend$onLocalDeviceOrientationDidChange
-+ _objc_msgSend$onRemoteScreenAspectRatiosDidChange:
-+ _objc_msgSend$onRemoteScreenAttributesDidChange:
-+ _objc_msgSend$presenceConfigurationProviderHasVideoStreamInput:
-+ _objc_msgSend$setAudioDeviceUID
-+ _objc_msgSend$supportHEVCForHomeKit
-+ _objc_msgSend$supportsHEVCDecodingForHomeKit
 - -[AVCMediaStreamNegotiatorSettingsNearbySystemAudio setAudioDeviceUIDForDeviceRole:]
 - -[AVCVideoStreamConfig pdDecryptionContext]
 - -[AVCVideoStreamConfig pdEncryptionContext]
@@ -235,11 +162,6 @@ Symbols:
 - ___block_descriptor_40_e8_32o_e520_v208?0{tagVCStatisticsMessage=iidBBBB(?={?=IIIIIIIddddd[64c]i}{?=IIIIIIIIIIIIIddIIdIB{?=iIIIIdddII}{?=SBBI}{tagVCStatisticsECNStats=SS}{tagVCStatisticsECNStats=SS}BBI}{?=dddIIIIIQI}{?=IBBBIIdIB{?=iIIIIdddII}}{?=CIIIIIIIIIddddIIII}{?=IIId}{?=iIIIIdddII}{?=IIII}{?=IIIIIIBBIi}{?=IIIIfBBddIIIQ}{?=CCCCQQQIIIQiIS(?={?=CCSSCCCCCCCfBS[6I]CqSfffff}{?=CsscCCCCSSC})}{tagVCStatisticsVideoLossFeedback=ISCC}{tagVCStatisticsLocalRCEvent=ddI}{tagVCStatisticsReceiveTimeReport=IIISSIBBddIIII}{tagVCStatisticsAddRemoveEndPoint=IB})}8ls32l8
 - ___block_descriptor_40_e8_32o_e521_v16?0r^{tagVCStatisticsMessage=iidBBBB(?={?=IIIIIIIddddd[64c]i}{?=IIIIIIIIIIIIIddIIdIB{?=iIIIIdddII}{?=SBBI}{tagVCStatisticsECNStats=SS}{tagVCStatisticsECNStats=SS}BBI}{?=dddIIIIIQI}{?=IBBBIIdIB{?=iIIIIdddII}}{?=CIIIIIIIIIddddIIII}{?=IIId}{?=iIIIIdddII}{?=IIII}{?=IIIIIIBBIi}{?=IIIIfBBddIIIQ}{?=CCCCQQQIIIQiIS(?={?=CCSSCCCCCCCfBS[6I]CqSfffff}{?=CsscCCCCSSC})}{tagVCStatisticsVideoLossFeedback=ISCC}{tagVCStatisticsLocalRCEvent=ddI}{tagVCStatisticsReceiveTimeReport=IIISSIBBddIIII}{tagVCStatisticsAddRemoveEndPoint=IB})}8ls32l8
 - ___block_descriptor_48_e8_32r40r_e520_v208?0{tagVCStatisticsMessage=iidBBBB(?={?=IIIIIIIddddd[64c]i}{?=IIIIIIIIIIIIIddIIdIB{?=iIIIIdddII}{?=SBBI}{tagVCStatisticsECNStats=SS}{tagVCStatisticsECNStats=SS}BBI}{?=dddIIIIIQI}{?=IBBBIIdIB{?=iIIIIdddII}}{?=CIIIIIIIIIddddIIII}{?=IIId}{?=iIIIIdddII}{?=IIII}{?=IIIIIIBBIi}{?=IIIIfBBddIIIQ}{?=CCCCQQQIIIQiIS(?={?=CCSSCCCCCCCfBS[6I]CqSfffff}{?=CsscCCCCSSC})}{tagVCStatisticsVideoLossFeedback=ISCC}{tagVCStatisticsLocalRCEvent=ddI}{tagVCStatisticsReceiveTimeReport=IIISSIBBddIIII}{tagVCStatisticsAddRemoveEndPoint=IB})}8lr32l8r40l8
-- _objc_msgSend$deserializePDDecryptionContext
-- _objc_msgSend$pdDecryptionContext
-- _objc_msgSend$pdEncryptionContext
-- _objc_msgSend$setAudioDeviceUIDForDeviceRole:
-- _objc_msgSend$setPdEncryptionContext:
 CStrings:
 + " [%s] %s:%d %@(%p) IDSDataChannelEventGroupSessionLeaving received"
 + " [%s] %s:%d %@(%p) _encoderVisibleRectMatchesRemoteFOV=%d"
@@ -322,5 +244,4 @@ CStrings:
 - "v208@?0{tagVCStatisticsMessage=iidBBBB(?={?=IIIIIIIddddd[64c]i}{?=IIIIIIIIIIIIIddIIdIB{?=iIIIIdddII}{?=SBBI}{tagVCStatisticsECNStats=SS}{tagVCStatisticsECNStats=SS}BBI}{?=dddIIIIIQI}{?=IBBBIIdIB{?=iIIIIdddII}}{?=CIIIIIIIIIddddIIII}{?=IIId}{?=iIIIIdddII}{?=IIII}{?=IIIIIIBBIi}{?=IIIIfBBddIIIQ}{?=CCCCQQQIIIQiIS(?={?=CCSSCCCCCCCfBS[6I]CqSfffff}{?=CsscCCCCSSC})}{tagVCStatisticsVideoLossFeedback=ISCC}{tagVCStatisticsLocalRCEvent=ddI}{tagVCStatisticsReceiveTimeReport=IIISSIBBddIIII}{tagVCStatisticsAddRemoveEndPoint=IB})}8"
 - "vcMediaStreamPDDecryptionContext"
 - "vcMediaStreamPDEncryptionContext"
-
 ```

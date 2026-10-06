@@ -2,51 +2,22 @@
 
 > `/System/Library/Frameworks/CoreImage.framework/CoreImage`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x349728` | `0x3497a0` | **`+0x78`** |
+| `__AUTH_CONST.__objc_const` | `0x2b488` | `0x2b4c0` | **`+0x38`** |
+| `__TEXT.__objc_methlist` | `0x15990` | `0x159b0` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8e38` | `0x8e50` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0xa8b0` | `0xa8a8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 1667.22.1.0.0
--  __TEXT.__text: 0x349728
--  __TEXT.__objc_methlist: 0x15990
-+  __TEXT.__text: 0x3497a0
-+  __TEXT.__objc_methlist: 0x159b0
-   __TEXT.__const: 0xe198
-   __TEXT.__gcc_except_tab: 0xa868
-   __TEXT.__cstring: 0x1049a8
-
-   __TEXT.__runtimeheader: 0x15aa4
-   __TEXT.__cikl2metal_pre: 0x54b
-   __TEXT.__grain: 0x105040
--  __TEXT.__unwind_info: 0xa8b0
-+  __TEXT.__unwind_info: 0xa8a8
-   __TEXT.__eh_frame: 0x350
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8e38
-+  __DATA_CONST.__objc_selrefs: 0x8e50
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x360
-   __DATA_CONST.__objc_arraydata: 0x1488
-   __DATA_CONST.__got: 0xaf8
-   __AUTH_CONST.__const: 0xde40
-   __AUTH_CONST.__cfstring: 0x1dba0
--  __AUTH_CONST.__objc_const: 0x2b488
-+  __AUTH_CONST.__objc_const: 0x2b4c0
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0xdc8
-   __AUTH_CONST.__objc_dictobj: 0x410
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 15165
 +  Functions: 15164
-   Symbols:   28584
-   CStrings:  8881
- 
 Functions:
 ~ __ZN2CI7Context16recursive_renderEPKNS_17RenderDestinationEPNS_8TileTaskERKNS_6roiKeyEPKNS_4NodeEb : 6060 -> 6056
 ~ __ZNSt3__16vectorIbNS_9allocatorIbEEE18__construct_at_endIPbS5_EEvT_T0_m : 196 -> 204

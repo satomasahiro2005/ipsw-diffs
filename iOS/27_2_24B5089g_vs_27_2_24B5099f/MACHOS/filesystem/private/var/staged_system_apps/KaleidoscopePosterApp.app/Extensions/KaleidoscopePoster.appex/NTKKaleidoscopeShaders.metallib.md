@@ -2,10 +2,8 @@
 
 > `/private/var/staged_system_apps/KaleidoscopePosterApp.app/Extensions/KaleidoscopePoster.appex/NTKKaleidoscopeShaders.metallib`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
-- `__TEXT.__reflection`
-- `__TEXT.__vertex`
-- `__TEXT.__fragment`
 - `__TEXT.__descriptor`
+- `__TEXT.__fragment`
 - `__TEXT.__metallib`

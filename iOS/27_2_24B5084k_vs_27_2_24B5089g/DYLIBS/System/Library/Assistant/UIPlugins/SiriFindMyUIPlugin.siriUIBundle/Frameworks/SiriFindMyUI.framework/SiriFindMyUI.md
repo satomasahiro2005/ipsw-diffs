@@ -2,83 +2,45 @@
 
 > `/System/Library/Assistant/UIPlugins/SiriFindMyUIPlugin.siriUIBundle/Frameworks/SiriFindMyUI.framework/SiriFindMyUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x52d08` | `0x5213c` | **`-0xbcc`** |
+| `__TEXT.__swift5_typeref` | `0x4702` | `0x40f8` | **`-0x60a`** |
+| `__TEXT.__unwind_info` | `0x1818` | `0x1628` | **`-0x1f0`** |
+| `__TEXT.__const` | `0x4e84` | `0x4d04` | **`-0x180`** |
+| `__DATA.__data` | `0x24e8` | `0x23a8` | **`-0x140`** |
+| `__DATA.__bss` | `0x3cb8` | `0x3ba8` | **`-0x110`** |
+| `__AUTH_CONST.__const` | `0x25a0` | `0x2640` | **`+0xa0`** |
+| `__AUTH.__data` | `0x17a0` | `0x1720` | **`-0x80`** |
+| `__DATA_DIRTY.__bss` | `—` | `0x80` | **`+0x80`** |
+| `__TEXT.__constg_swiftt` | `0x19f4` | `0x19a4` | **`-0x50`** |
+| `__TEXT.__swift5_capture` | `0x6a4` | `0x6f4` | **`+0x50`** |
+| `__DATA.__common` | `0x308` | `0x348` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x1a30` | `0x19f8` | **`-0x38`** |
+| `__DATA_CONST.__got` | `0xcf0` | `0xcc0` | **`-0x30`** |
+| `__TEXT.__swift5_reflstr` | `0xb7c` | `0xb4c` | **`-0x30`** |
+| `__TEXT.__swift5_assocty` | `0x628` | `0x610` | **`-0x18`** |
+| `__TEXT.__swift5_fieldmd` | `0x116c` | `0x115c` | **`-0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x508` | `0x510` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x1dc` | `0x1d8` | **`-0x4`** |
+| `__TEXT.__swift5_types` | `0x18c` | `0x188` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3605.13.1.0.0
--  __TEXT.__text: 0x4eeb4
 +3605.15.2.0.0
-+  __TEXT.__text: 0x4e288
-   __TEXT.__objc_methlist: 0x4f4
--  __TEXT.__const: 0x4e84
--  __TEXT.__constg_swiftt: 0x19f4
--  __TEXT.__swift5_typeref: 0x4702
--  __TEXT.__swift5_reflstr: 0xb7c
--  __TEXT.__swift5_fieldmd: 0x116c
-+  __TEXT.__const: 0x4d04
-+  __TEXT.__constg_swiftt: 0x19a4
-+  __TEXT.__swift5_typeref: 0x40f8
-+  __TEXT.__swift5_reflstr: 0xb4c
-+  __TEXT.__swift5_fieldmd: 0x115c
-   __TEXT.__swift5_builtin: 0xf0
--  __TEXT.__swift5_assocty: 0x628
--  __TEXT.__swift5_proto: 0x1dc
--  __TEXT.__swift5_types: 0x18c
--  __TEXT.__swift5_capture: 0x6a4
-+  __TEXT.__swift5_assocty: 0x610
-+  __TEXT.__swift5_proto: 0x1d8
-+  __TEXT.__swift5_types: 0x188
-+  __TEXT.__swift5_capture: 0x6f4
-   __TEXT.__cstring: 0x87a
-   __TEXT.__oslogstring: 0x593
-   __TEXT.__swift5_protos: 0xc
 
-   __TEXT.__swift_as_ret: 0x40
-   __TEXT.__swift_as_cont: 0x64
-   __TEXT.__swift5_mpenum: 0x14
--  __TEXT.__unwind_info: 0x1da8
-+  __TEXT.__unwind_info: 0x1c78
-   __TEXT.__eh_frame: 0xdf0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x508
-+  __DATA_CONST.__objc_selrefs: 0x510
-   __DATA_CONST.__objc_protorefs: 0x40
--  __DATA_CONST.__got: 0xcf0
--  __AUTH_CONST.__const: 0x25a0
-+  __DATA_CONST.__got: 0xcc0
-+  __AUTH_CONST.__const: 0x2640
-   __AUTH_CONST.__objc_const: 0x9a0
--  __AUTH_CONST.__auth_got: 0x1a30
-+  __AUTH_CONST.__auth_got: 0x19f8
-   __AUTH.__objc_data: 0x250
--  __AUTH.__data: 0x17a0
--  __DATA.__data: 0x24e8
--  __DATA.__common: 0x308
-+  __AUTH.__data: 0x1720
-+  __DATA.__data: 0x23a8
-+  __DATA.__common: 0x348
-+  __DATA_DIRTY.__bss: 0x80
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/ContactsUI.framework/ContactsUI
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2276
--  Symbols:   1350
+-  Symbols:   1269
 +  Functions: 2258
-+  Symbols:   1329
-   CStrings:  96
- 
++  Symbols:   1247
 Symbols:
 + _get_witness_table SeRzSERz7SwiftUI4ViewR_r0_lAA19_ConditionalContentVyADy07SnippetB014ComponentStackVyAA7ForEachVySay10SiriFindMy8SnippetsO18DisambiguationItemVy_xGGSSADyAaBPAEE16componentSpacing3top6bottomQr12CoreGraphics7CGFloatV_AWtFQOyAqEE10separators_10isOverrideQr0F3Kit14SeparatorStyleO_SbtFQOyAqEE0Q6Tapped0Y10Navigation7performQrSb_yyctFQOyq__Qo__Qo__Qo_A5_GGGAE0oC0VyA8_GGAGyAA05TupleE0VyAqEE6hidden_2onQrSb_So8VRXIdiomVdtFQOy0klmB00lm4SashC0V_Qo__A8_QPGGGAaBHPA13_AaBHPA9_AaBHPyHC_A12_AaBHPyHCHC_A25_AaBHPyHCHC
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBP07SnippetB0E26lastComponentBottomSpacingyQrAD0f5StackgH0OFQOyAD0fI0VyAA12TupleContentVyAcDE10separators_10isOverrideQr0D3Kit14SeparatorStyleO_SbtFQOyAD019SummaryItemStandardC0V_Qo__AA012_ConditionalK0VyAUyAD012BinaryButtonC0VAA0W0VyAA4TextVGGA0_GSgQPGG_Qo_HO
-+ _objc_msgSend$setUserInteractionEnabled:
 + _swift_release_x1
 + _symbolic _____yAAy__________y_____GGAEG 7SwiftUI19_ConditionalContentV 07SnippetB016BinaryButtonViewV AA0G0V AA4TextV
 + _symbolic _____yAAy__________y_____GGAEGSg 7SwiftUI19_ConditionalContentV 07SnippetB016BinaryButtonViewV AA0G0V AA4TextV

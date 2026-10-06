@@ -2,97 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/SeymourAsset.framework/SeymourAsset`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x27ee0` | `0x27d7c` | **`-0x164`** |
+| `__DATA_DIRTY.__data` | `0x5b8` | `0x4a0` | **`-0x118`** |
+| `__DATA.__bss` | `0x600` | `0x710` | **`+0x110`** |
+| `__DATA.__data` | `0x510` | `0x620` | **`+0x110`** |
+| `__DATA_DIRTY.__bss` | `0x100` | `—` | **`-0x100`** |
+| `__TEXT.__oslogstring` | `0xffe` | `0xf7e` | **`-0x80`** |
+| `__TEXT.__eh_frame` | `0x10d0` | `0x1140` | **`+0x70`** |
+| `__TEXT.__cstring` | `0x452` | `0x47b` | **`+0x29`** |
+| `__TEXT.__unwind_info` | `0x770` | `0x798` | **`+0x28`** |
+| `__TEXT.__const` | `0xbba` | `0xbda` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x9d0` | `0x9d8` | **`+0x8`** |
+| `__DATA_CONST.__const` | `0x90` | `0x88` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x360` | `0x368` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__swift5_reflstr`
+
+### Other Changes
 
 ```diff
 
 -2027.0.146.1.4
--  __TEXT.__text: 0x263e8
 +2027.1.50.0.1
-+  __TEXT.__text: 0x26270
-   __TEXT.__objc_methlist: 0x30c
--  __TEXT.__const: 0xbba
-+  __TEXT.__const: 0xbda
-   __TEXT.__swift5_typeref: 0xbda
--  __TEXT.__cstring: 0x452
--  __TEXT.__oslogstring: 0xffe
-+  __TEXT.__cstring: 0x47b
-+  __TEXT.__oslogstring: 0xf7e
-   __TEXT.__constg_swiftt: 0x380
-   __TEXT.__swift5_reflstr: 0x253
-   __TEXT.__swift5_fieldmd: 0x290
 
-   __TEXT.__swift_as_ret: 0x2c
-   __TEXT.__swift_as_cont: 0x80
-   __TEXT.__swift5_protos: 0x14
--  __TEXT.__unwind_info: 0x900
--  __TEXT.__eh_frame: 0x10d0
-+  __TEXT.__unwind_info: 0x920
-+  __TEXT.__eh_frame: 0x1140
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x90
-+  __DATA_CONST.__const: 0x88
-   __DATA_CONST.__objc_classlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x360
-+  __DATA_CONST.__objc_selrefs: 0x368
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0xe70
-   __AUTH_CONST.__objc_const: 0x7f8
--  __AUTH_CONST.__auth_got: 0x9d0
-+  __AUTH_CONST.__auth_got: 0x9d8
-   __AUTH.__objc_data: 0x90
--  __DATA.__data: 0x510
-+  __DATA.__data: 0x620
-   __DATA_DIRTY.__objc_data: 0x1b8
--  __DATA_DIRTY.__data: 0x5b8
-+  __DATA_DIRTY.__data: 0x4a0
-   __DATA_DIRTY.__common: 0x10
--  __DATA_DIRTY.__bss: 0x100
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-
-   - /System/Library/PrivateFrameworks/AppleMediaServices.framework/AppleMediaServices
-   - /System/Library/PrivateFrameworks/MessageDispatch.framework/MessageDispatch
-   - /System/Library/PrivateFrameworks/MessageDispatchCore.framework/MessageDispatchCore
 -  - /System/Library/PrivateFrameworks/SeymourClient.framework/SeymourClient
 +  - /System/Library/PrivateFrameworks/SeymourAssetCore.framework/SeymourAssetCore
-   - /System/Library/PrivateFrameworks/SeymourClientFoundation.framework/SeymourClientFoundation
+
 -  - /System/Library/PrivateFrameworks/SeymourCore.framework/SeymourCore
-   - /System/Library/PrivateFrameworks/SeymourCoreFoundation.framework/SeymourCoreFoundation
+
 -  - /System/Library/PrivateFrameworks/SeymourXPCServicesFoundation.framework/SeymourXPCServicesFoundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
 
-   - /usr/lib/swift/libswiftCoreAudio.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftCoreImage.dylib
 -  - /usr/lib/swift/libswiftCoreLocation.dylib
-   - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 560
--  Symbols:   535
+-  Symbols:   473
 +  Functions: 565
-+  Symbols:   537
-   CStrings:  83
- 
++  Symbols:   474
 Symbols:
-+ _objc_msgSend$setURLCache:
 + _swift_getKeyPath
 + _swift_readAtKeyPath
 + _swift_release_x24

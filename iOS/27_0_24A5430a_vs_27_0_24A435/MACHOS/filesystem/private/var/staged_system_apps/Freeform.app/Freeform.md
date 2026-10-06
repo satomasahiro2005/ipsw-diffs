@@ -2,73 +2,51 @@
 
 > `/private/var/staged_system_apps/Freeform.app/Freeform`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1465bd8` | `0x1465f2c` | **`+0x354`** |
+| `__TEXT.__objc_methname` | `0xc90c9` | `0xc91f9` | **`+0x130`** |
+| `__DATA.__objc_const` | `0x9c598` | `0x9c660` | **`+0xc8`** |
+| `__TEXT.__objc_methlist` | `0x57030` | `0x57098` | **`+0x68`** |
+| `__DATA.__objc_selrefs` | `0x25410` | `0x25458` | **`+0x48`** |
+| `__TEXT.__objc_methtype` | `0x24f00` | `0x24f10` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA.__objc_stublist`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_catlist`
 - `__DATA_CONST.__objc_catlist2`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_data`
-- `__DATA.__data`
-- `__DATA.__objc_stublist`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
- 656.2.1.0.0
--  __TEXT.__text: 0x1465bd8
-+  __TEXT.__text: 0x1465f2c
-   __TEXT.__auth_stubs: 0x10fe0
-   __TEXT.__objc_stubs: 0x6c500
--  __TEXT.__objc_methlist: 0x57030
-+  __TEXT.__objc_methlist: 0x57098
-   __TEXT.__const: 0x79b84
-   __TEXT.__gcc_except_tab: 0x1b494
-   __TEXT.__cstring: 0xc6935
-   __TEXT.__oslogstring: 0x29562
--  __TEXT.__objc_methname: 0xc90c9
-+  __TEXT.__objc_methname: 0xc91f9
-   __TEXT.__objc_classname: 0x15a17
--  __TEXT.__objc_methtype: 0x24f00
-+  __TEXT.__objc_methtype: 0x24f10
-   __TEXT.__ustring: 0x134c
-   __TEXT.__swift5_typeref: 0x37bc2
-   __TEXT.__constg_swiftt: 0x387e8
-
-   __DATA_CONST.__auth_got: 0x8808
-   __DATA_CONST.__got: 0x4cf8
-   __DATA_CONST.__auth_ptr: 0x6d08
--  __DATA.__objc_const: 0x9c598
--  __DATA.__objc_selrefs: 0x25410
-+  __DATA.__objc_const: 0x9c660
-+  __DATA.__objc_selrefs: 0x25458
-   __DATA.__objc_ivar: 0x38c4
-   __DATA.__objc_data: 0x4d468
-   __DATA.__data: 0x50478
-
-   - @rpath/TSUtility.framework/TSUtility
-   Functions: 91619
-   Symbols:   7834
 -  CStrings:  48742
 +  CStrings:  48751
- 
 Functions:
 ~ sub_100054b30 : 492 -> 496
 ~ sub_1000551e8 -> sub_1000551ec : 680 -> 684

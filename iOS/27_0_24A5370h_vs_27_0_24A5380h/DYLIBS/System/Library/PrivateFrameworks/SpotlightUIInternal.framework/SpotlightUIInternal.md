@@ -2,136 +2,62 @@
 
 > `/System/Library/PrivateFrameworks/SpotlightUIInternal.framework/SpotlightUIInternal`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x46e00` | `0x4a2a0` | **`+0x34a0`** |
+| `__DATA_DIRTY.__objc_data` | `0x5f0` | `0xa48` | **`+0x458`** |
+| `__AUTH.__objc_data` | `0xe38` | `0xa80` | **`-0x3b8`** |
+| `__DATA_DIRTY.__bss` | `0x38` | `0x260` | **`+0x228`** |
+| `__DATA.__bss` | `0xb58` | `0x950` | **`-0x208`** |
+| `__DATA_DIRTY.__data` | `—` | `0x1c8` | **`+0x1c8`** |
+| `__TEXT.__eh_frame` | `0x9f4` | `0xbb4` | **`+0x1c0`** |
+| `__AUTH_CONST.__objc_const` | `0x8da0` | `0x8f48` | **`+0x1a8`** |
+| `__TEXT.__oslogstring` | `0xd85` | `0xe95` | **`+0x110`** |
+| `__DATA_CONST.__objc_selrefs` | `0x40b0` | `0x41a0` | **`+0xf0`** |
+| `__TEXT.__objc_methlist` | `0x5a58` | `0x5b38` | **`+0xe0`** |
+| `__AUTH.__data` | `0x4b8` | `0x408` | **`-0xb0`** |
+| `__TEXT.__unwind_info` | `0x1430` | `0x14d8` | **`+0xa8`** |
+| `__TEXT.__const` | `0x1008` | `0x10a8` | **`+0xa0`** |
+| `__TEXT.__swift5_typeref` | `0xccc` | `0xd6a` | **`+0x9e`** |
+| `__AUTH_CONST.__cfstring` | `0x1580` | `0x15e0` | **`+0x60`** |
+| `__DATA_CONST.__got` | `0xa00` | `0xa58` | **`+0x58`** |
+| `__AUTH_CONST.__const` | `0xa48` | `0xa78` | **`+0x30`** |
+| `__DATA.__data` | `0x1728` | `0x16f8` | **`-0x30`** |
+| `__TEXT.__swift5_reflstr` | `0x2cb` | `0x2fb` | **`+0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0x330` | `0x358` | **`+0x28`** |
+| `__AUTH_CONST.__auth_got` | `0xd40` | `0xd58` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x400` | `0x410` | **`+0x10`** |
+| `__TEXT.__cstring` | `0x12ff` | `0x130f` | **`+0x10`** |
+| `__TEXT.__constg_swiftt` | `0x670` | `0x67c` | **`+0xc`** |
+| `__DATA.__common` | `0x8` | `—` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x1c0` | `0x1c8` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x1c8` | `0x1d0` | **`+0x8`** |
+| `__DATA_DIRTY.__common` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x74` | `0x7c` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x50` | `0x54` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x38` | `0x3c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x46e00
--  __TEXT.__objc_methlist: 0x5a58
--  __TEXT.__const: 0x1008
--  __TEXT.__cstring: 0x12ff
-+  __TEXT.__text: 0x4a2a0
-+  __TEXT.__objc_methlist: 0x5b38
-+  __TEXT.__const: 0x10a8
-+  __TEXT.__cstring: 0x130f
-   __TEXT.__gcc_except_tab: 0x29c
--  __TEXT.__oslogstring: 0xd85
-+  __TEXT.__oslogstring: 0xe95
-   __TEXT.__ustring: 0x4
-   __TEXT.__dlopen_cstrs: 0x54
--  __TEXT.__constg_swiftt: 0x670
--  __TEXT.__swift5_typeref: 0xccc
--  __TEXT.__swift5_fieldmd: 0x330
-+  __TEXT.__constg_swiftt: 0x67c
-+  __TEXT.__swift5_typeref: 0xd6a
-+  __TEXT.__swift5_fieldmd: 0x358
-   __TEXT.__swift5_capture: 0x1ec
--  __TEXT.__swift5_types: 0x50
-+  __TEXT.__swift5_types: 0x54
-   __TEXT.__swift_as_entry: 0x28
--  __TEXT.__swift_as_ret: 0x38
--  __TEXT.__swift_as_cont: 0x74
--  __TEXT.__swift5_reflstr: 0x2cb
-+  __TEXT.__swift_as_ret: 0x3c
-+  __TEXT.__swift_as_cont: 0x7c
-+  __TEXT.__swift5_reflstr: 0x2fb
-   __TEXT.__swift5_builtin: 0x50
-   __TEXT.__swift5_assocty: 0xf0
-   __TEXT.__swift5_proto: 0x4c
-   __TEXT.__swift5_mpenum: 0x10
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0x1430
--  __TEXT.__eh_frame: 0x9f4
-+  __TEXT.__unwind_info: 0x14d8
-+  __TEXT.__eh_frame: 0xbb4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xb78
--  __DATA_CONST.__objc_classlist: 0x1c0
-+  __DATA_CONST.__objc_classlist: 0x1c8
-   __DATA_CONST.__objc_catlist: 0x8
--  __DATA_CONST.__objc_protolist: 0x1c8
-+  __DATA_CONST.__objc_protolist: 0x1d0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x40b0
-+  __DATA_CONST.__objc_selrefs: 0x41a0
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__objc_superrefs: 0x130
-   __DATA_CONST.__objc_arraydata: 0x90
--  __DATA_CONST.__got: 0xa00
--  __AUTH_CONST.__const: 0xa48
--  __AUTH_CONST.__cfstring: 0x1580
--  __AUTH_CONST.__objc_const: 0x8da0
-+  __DATA_CONST.__got: 0xa58
-+  __AUTH_CONST.__const: 0xa78
-+  __AUTH_CONST.__cfstring: 0x15e0
-+  __AUTH_CONST.__objc_const: 0x8f48
-   __AUTH_CONST.__objc_doubleobj: 0x60
-   __AUTH_CONST.__objc_intobj: 0x48
-   __AUTH_CONST.__objc_arrayobj: 0x60
--  __AUTH_CONST.__auth_got: 0xd40
--  __AUTH.__objc_data: 0xe38
--  __AUTH.__data: 0x4b8
--  __DATA.__objc_ivar: 0x400
--  __DATA.__data: 0x1728
--  __DATA.__bss: 0xb58
--  __DATA.__common: 0x8
--  __DATA_DIRTY.__objc_data: 0x5f0
--  __DATA_DIRTY.__bss: 0x38
-+  __AUTH_CONST.__auth_got: 0xd58
-+  __AUTH.__objc_data: 0xa80
-+  __AUTH.__data: 0x408
-+  __DATA.__objc_ivar: 0x410
-+  __DATA.__data: 0x16f8
-+  __DATA.__bss: 0x950
-+  __DATA_DIRTY.__objc_data: 0xa48
-+  __DATA_DIRTY.__data: 0x1c8
-+  __DATA_DIRTY.__bss: 0x260
-+  __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
+-235.3.100.0.0
++236.0.4.100.0
 
-   - /System/Library/PrivateFrameworks/AppSupportUI.framework/AppSupportUI
-   - /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
-   - /System/Library/PrivateFrameworks/CampoServices.framework/CampoServices
 +  - /System/Library/PrivateFrameworks/DeviceManagement.framework/DeviceManagement
-   - /System/Library/PrivateFrameworks/FrontBoard.framework/FrontBoard
-+  - /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
-   - /System/Library/PrivateFrameworks/GenerativePartnerService.framework/GenerativePartnerService
-+  - /System/Library/PrivateFrameworks/GenerativePartnerServiceUI.framework/GenerativePartnerServiceUI
-   - /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
-   - /System/Library/PrivateFrameworks/IconServices.framework/IconServices
-   - /System/Library/PrivateFrameworks/MaterialKit.framework/MaterialKit
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
+
++  - /System/Library/PrivateFrameworks/GenerativePartnerServiceUI.framework/GenerativePartnerServiceUI
+
 -  Functions: 1889
--  Symbols:   6159
--  CStrings:  497
+-  Symbols:   3157
+-  CStrings:  327
 +  Functions: 1938
-+  Symbols:   6253
-+  CStrings:  505
- 
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
++  Symbols:   3205
++  CStrings:  332
 Symbols:
 + -[SPUINavigationController footerViewCache]
 + -[SPUINavigationController setFooterViewCache:]
@@ -176,39 +102,6 @@ Symbols:
 + ___swift_allocate_value_buffer
 + ___swift_project_value_buffer
 + __swiftEmptyDictionarySingleton
-+ _objc_msgSend$configurationForDefaultMainDisplayMonitor
-+ _objc_msgSend$displayPolicy
-+ _objc_msgSend$displayState
-+ _objc_msgSend$elements
-+ _objc_msgSend$elevatedResultShouldInvokeSiri:
-+ _objc_msgSend$footerViewCache
-+ _objc_msgSend$frontmostBundleIdentifier
-+ _objc_msgSend$handleNewQueryWithID:queryLength:
-+ _objc_msgSend$handleQueryCleared
-+ _objc_msgSend$handleResponseWithSignals:
-+ _objc_msgSend$hasPrefix:
-+ _objc_msgSend$hasPushedViewController
-+ _objc_msgSend$initWithQueryID:queryLength:isSiriWorthy:topHitIsElevatable:hasResults:queryFinished:priorityComplete:
-+ _objc_msgSend$integerValue
-+ _objc_msgSend$level
-+ _objc_msgSend$lock
-+ _objc_msgSend$monitorWithConfiguration:
-+ _objc_msgSend$providerCursorTintColor
-+ _objc_msgSend$requestPoliciesForBundleIdentifiers:completionHandler:
-+ _objc_msgSend$resultQualityTier
-+ _objc_msgSend$searchFieldContentsDidChange
-+ _objc_msgSend$sectionBundleIdentifier
-+ _objc_msgSend$setApplicationBundleIdPullDown:
-+ _objc_msgSend$setDisplayPolicy:
-+ _objc_msgSend$setDisplayState:
-+ _objc_msgSend$setFooterViewCache:
-+ _objc_msgSend$setProviderCursorTintColor:
-+ _objc_msgSend$setTransitionHandler:
-+ _objc_msgSend$sharedMonitor
-+ _objc_msgSend$shouldShowTopResultAboveFilterBarForSections:
-+ _objc_msgSend$splitSections:forElevation:elevatedSections:regularSections:
-+ _objc_msgSend$syntheticAskSiriResultForQueryContext:
-+ _objc_msgSend$unlock
 + _swift_allocError
 + _swift_continuation_throwingResume
 + _swift_continuation_throwingResumeWithError
@@ -229,11 +122,6 @@ Symbols:
 - ___65-[SPUINavigationController generateFooterViewForProactive:cache:]_block_invoke
 - _generateFooterViewForProactive:cache:.footerViewCache
 - _generateFooterViewForProactive:cache:.onceToken
-- _objc_msgSend$searchTextDidChange
-- _objc_msgSend$setSiriResult:
-- _objc_msgSend$shouldElevateTopHitResult:
-- _objc_msgSend$siriDeservingDecisions
-- _objc_msgSend$subarrayWithRange:
 - _swift_release_x28
 - _symbolic _____Sg 17SpotlightUIShared9DebouncerC
 - _symbolic _____SgXw 19SpotlightUIInternal21AccessoryStateManagerC
@@ -257,5 +145,4 @@ CStrings:
 - "didReceiveResponse"
 - "didReceiveResponse empty results: short circuiting"
 - "didReceiveResponse forced state or non results: short circuiting"
-
 ```

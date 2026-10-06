@@ -2,82 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/MicroLocationDaemon.framework/MicroLocationDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2e7fc8` | `0x2e88bc` | **`+0x8f4`** |
+| `__TEXT.__cstring` | `0x17993` | `0x17ae3` | **`+0x150`** |
+| `__DATA_CONST.__const` | `0x1788` | `0x1878` | **`+0xf0`** |
+| `__TEXT.__oslogstring` | `0x396bc` | `0x3974c` | **`+0x90`** |
+| `__TEXT.__const` | `0x161d0` | `0x16230` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0x331e0` | `0x33198` | **`-0x48`** |
+| `__AUTH_CONST.__const` | `0x10280` | `0x102b0` | **`+0x30`** |
+| `__AUTH_CONST.__objc_const` | `0x10530` | `0x10500` | **`-0x30`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x1130` | `0x1150` | **`+0x20`** |
+| `__AUTH_CONST.__objc_floatobj` | `0x370` | `0x390` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x806c` | `0x804c` | **`-0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4300` | `0x42f0` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x10600` | `0x10610` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x5b0` | `0x5ac` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -117.0.1.1.2
--  __TEXT.__text: 0x2e7fc8
--  __TEXT.__objc_methlist: 0x806c
--  __TEXT.__const: 0x161d0
--  __TEXT.__gcc_except_tab: 0x331e0
--  __TEXT.__cstring: 0x17993
--  __TEXT.__oslogstring: 0x396bc
 +117.0.1.1.7
-+  __TEXT.__text: 0x2e88bc
-+  __TEXT.__objc_methlist: 0x804c
-+  __TEXT.__const: 0x16230
-+  __TEXT.__gcc_except_tab: 0x33198
-+  __TEXT.__cstring: 0x17ae3
-+  __TEXT.__oslogstring: 0x3974c
-   __TEXT.__constg_swiftt: 0x11ac
-   __TEXT.__swift5_typeref: 0xdad
-   __TEXT.__swift5_fieldmd: 0xdb0
 
-   __TEXT.__swift5_capture: 0x180
-   __TEXT.__swift_as_entry: 0x1c
-   __TEXT.__swift_as_ret: 0xc
--  __TEXT.__unwind_info: 0x10600
-+  __TEXT.__unwind_info: 0x10610
-   __TEXT.__eh_frame: 0x1220
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1788
-+  __DATA_CONST.__const: 0x1878
-   __DATA_CONST.__objc_classlist: 0x738
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x168
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x20
--  __DATA_CONST.__objc_selrefs: 0x4300
-+  __DATA_CONST.__objc_selrefs: 0x42f0
-   __DATA_CONST.__objc_protorefs: 0x70
-   __DATA_CONST.__objc_superrefs: 0x288
-   __DATA_CONST.__objc_arraydata: 0xbd0
-   __DATA_CONST.__got: 0xaf8
--  __AUTH_CONST.__const: 0x10280
-+  __AUTH_CONST.__const: 0x102b0
-   __AUTH_CONST.__cfstring: 0x5ce0
--  __AUTH_CONST.__objc_const: 0x10530
-+  __AUTH_CONST.__objc_const: 0x10500
-   __AUTH_CONST.__weak_auth_got: 0x38
-   __AUTH_CONST.__objc_intobj: 0x20b8
--  __AUTH_CONST.__objc_doubleobj: 0x1130
--  __AUTH_CONST.__objc_floatobj: 0x370
-+  __AUTH_CONST.__objc_doubleobj: 0x1150
-+  __AUTH_CONST.__objc_floatobj: 0x390
-   __AUTH_CONST.__objc_dictobj: 0x8e8
-   __AUTH_CONST.__objc_arrayobj: 0x60
-   __AUTH_CONST.__auth_got: 0x1558
-   __AUTH.__objc_data: 0x1128
-   __AUTH.__data: 0x8b0
--  __DATA.__objc_ivar: 0x5b0
-+  __DATA.__objc_ivar: 0x5ac
-   __DATA.__data: 0x1000
-   __DATA.__bss: 0x2c40
-   __DATA.__common: 0x70
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 13107
--  Symbols:   18990
+-  Symbols:   17146
 -  CStrings:  5241
 +  Functions: 13122
-+  Symbols:   19009
++  Symbols:   17167
 +  CStrings:  5250
- 
 Symbols:
 + GCC_except_table175
 + GCC_except_table191
@@ -346,8 +302,6 @@ Symbols:
 - __ZZN35ULHomeSlamTrajectoryShapeSimilarity42generateSubSegmentWithTransitionCandidatesERKNSt3__16vectorI12ULOdometryDONS0_9allocatorIS2_EEEERKNS1_I9ULSegmentNS3_IS8_EEEERKNS1_I17ULFloorTransitionNS3_ISD_EEEERNS1_I40ULSubSegmentWithFloorTransitionCandidateNS3_ISI_EEEEENK3$_3clENS0_4spanIKS2_Lm18446744073709551615EEEfRKNS1_IN5boost5uuids4uuidENS3_ISS_EEEERKSS_bRKSD_PKc
 - __ZZNSt3__16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE11DeviceModelEENS_19__map_value_compareIS7_NS_4pairIKS7_S8_EENS_4lessIS7_EEEENS5_ISD_EEE21__insert_range_uniqueB9fqe220106IPKSD_SL_EEvT_T0_ENKUlRSC_RSK_E_clESO_SP_
 - __ZZNSt3__16vectorIZN36ULHomeSlamMappingLoopClosureDetector21filterByRFSuitabilityERK46ULHomeSlamRecurringSubTrajectoryMultiAlignmentRKNS0_I9ULSegmentNS_9allocatorIS5_EEEERKNS0_I12ULOdometryDONS6_ISB_EEEERKNS0_I22ULStaticIntervalObjectNS6_ISG_EEEERK24CLDistanceMatrixTemplateI24CLSymmetricMatrixStorageIfEEE9AlignedSINS6_ISR_EEE12emplace_backIJSR_EEERSR_DpOT_ENKUlvE0_clEv
-- _objc_msgSend$anchorDeviceModelAllowedMap
-- _objc_msgSend$setAnchorDeviceModelAllowedMap:
 CStrings:
 + "#HomeSLAM Loop Closure - RF suitability: dropping entire group, avg score %.3f > %.3f"
 + "#HomeSLAM Loop Closure - RF suitability: kept %lu / %lu spans"

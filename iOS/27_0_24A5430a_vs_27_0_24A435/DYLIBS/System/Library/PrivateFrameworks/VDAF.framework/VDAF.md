@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/VDAF.framework/VDAF`
 
-```diff
+### Section Size Changes
 
- 35.5.0.0.0
--  __TEXT.__text: 0xf08a4
-+  __TEXT.__text: 0xf08e0
-   __TEXT.__const: 0x6b30
-   __TEXT.__constg_swiftt: 0x2454
-   __TEXT.__swift5_typeref: 0x1fae
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf08a4` | `0xf08e0` | **`+0x3c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s4VDAF4PINEV5shard_5nonce9seedBytesAA15PINEPublicShareVyq0_G_SayAA09PINEInputH0Vyxq0_GGtq__Says5UInt8VGqd__tKSkRd__AO7ElementRtd__lFAA7Field40V_SRySfGAA19XofHmacSha256Aes128C10Foundation4DataVTB5 : 7372 -> 7392
 ~ _$s4VDAF4PINEV5shard_5nonce9seedBytesAA15PINEPublicShareVyq0_G_SayAA09PINEInputH0Vyxq0_GGtq__Says5UInt8VGqd__tKSkRd__AO7ElementRtd__lFAA7Field64V_SRySfGAA19XofHmacSha256Aes128C10Foundation4DataVTB5 : 7708 -> 7748

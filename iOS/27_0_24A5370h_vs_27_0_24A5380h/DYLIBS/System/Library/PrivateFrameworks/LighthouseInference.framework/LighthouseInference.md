@@ -2,98 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/LighthouseInference.framework/LighthouseInference`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__data` | `0x18` | `0x1270` | **`+0x1258`** |
+| `__TEXT.__text` | `0xb8854` | `0xb9708` | **`+0xeb4`** |
+| `__AUTH.__data` | `0x24e0` | `0x1858` | **`-0xc88`** |
+| `__DATA.__bss` | `0x6200` | `0x5680` | **`-0xb80`** |
+| `__DATA_DIRTY.__bss` | `—` | `0xb80` | **`+0xb80`** |
+| `__DATA.__data` | `0x1090` | `0xb08` | **`-0x588`** |
+| `__TEXT.__eh_frame` | `0x6874` | `0x66fc` | **`-0x178`** |
+| `__TEXT.__oslogstring` | `0x3142` | `0x3222` | **`+0xe0`** |
+| `__TEXT.__unwind_info` | `0x2870` | `0x27c8` | **`-0xa8`** |
+| `__AUTH.__objc_data` | `0xf0` | `0x50` | **`-0xa0`** |
+| `__DATA_DIRTY.__objc_data` | `—` | `0xa0` | **`+0xa0`** |
+| `__DATA.__common` | `0x98` | `0x10` | **`-0x88`** |
+| `__DATA_DIRTY.__common` | `—` | `0x88` | **`+0x88`** |
+| `__TEXT.__cstring` | `0x4b0f` | `0x4b2f` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x2022` | `0x2042` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xe98` | `0xeb0` | **`+0x18`** |
+| `__AUTH_CONST.__const` | `0x4648` | `0x4638` | **`-0x10`** |
+| `__TEXT.__const` | `0x5574` | `0x5564` | **`-0x10`** |
+| `__TEXT.__swift_as_ret` | `0x230` | `0x220` | **`-0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x1ba4` | `0x1bb0` | **`+0xc`** |
+| `__TEXT.__swift_as_cont` | `0x310` | `0x304` | **`-0xc`** |
+| `__TEXT.__swift5_typeref` | `0x164c` | `0x1656` | **`+0xa`** |
+| `__TEXT.__swift5_capture` | `0x454` | `0x44c` | **`-0x8`** |
+| `__TEXT.__swift_as_entry` | `0x20c` | `0x208` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xb8854
-+  __TEXT.__text: 0xb9708
-   __TEXT.__objc_methlist: 0x1ac
--  __TEXT.__const: 0x5574
--  __TEXT.__cstring: 0x4b0f
--  __TEXT.__swift5_typeref: 0x164c
--  __TEXT.__swift5_capture: 0x454
--  __TEXT.__oslogstring: 0x3142
--  __TEXT.__swift5_reflstr: 0x2022
-+  __TEXT.__const: 0x5564
-+  __TEXT.__cstring: 0x4b2f
-+  __TEXT.__swift5_typeref: 0x1656
-+  __TEXT.__swift5_capture: 0x44c
-+  __TEXT.__oslogstring: 0x3222
-+  __TEXT.__swift5_reflstr: 0x2042
-   __TEXT.__swift5_assocty: 0x480
-   __TEXT.__constg_swiftt: 0x1734
--  __TEXT.__swift5_fieldmd: 0x1ba4
-+  __TEXT.__swift5_fieldmd: 0x1bb0
-   __TEXT.__swift5_proto: 0x33c
-   __TEXT.__swift5_types: 0x1a0
--  __TEXT.__swift_as_entry: 0x20c
--  __TEXT.__swift_as_ret: 0x230
--  __TEXT.__swift_as_cont: 0x310
-+  __TEXT.__swift_as_entry: 0x208
-+  __TEXT.__swift_as_ret: 0x220
-+  __TEXT.__swift_as_cont: 0x304
-   __TEXT.__swift5_protos: 0x24
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__unwind_info: 0x2870
--  __TEXT.__eh_frame: 0x6874
-+  __TEXT.__unwind_info: 0x27c8
-+  __TEXT.__eh_frame: 0x66fc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-3600.40.1.0.0
++3600.43.1.0.0
 
-   __DATA_CONST.__objc_selrefs: 0x358
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x4648
-+  __AUTH_CONST.__const: 0x4638
-   __AUTH_CONST.__objc_const: 0x1718
--  __AUTH_CONST.__auth_got: 0xe98
--  __AUTH.__objc_data: 0xf0
--  __AUTH.__data: 0x24e0
--  __DATA.__data: 0x1090
--  __DATA.__bss: 0x6200
--  __DATA.__common: 0x98
--  __DATA_DIRTY.__data: 0x18
-+  __AUTH_CONST.__auth_got: 0xeb0
-+  __AUTH.__objc_data: 0x50
-+  __AUTH.__data: 0x1858
-+  __DATA.__data: 0xb08
-+  __DATA.__bss: 0x5680
-+  __DATA.__common: 0x10
-+  __DATA_DIRTY.__objc_data: 0xa0
-+  __DATA_DIRTY.__data: 0x1270
-+  __DATA_DIRTY.__common: 0x88
-+  __DATA_DIRTY.__bss: 0xb80
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2932
--  Symbols:   9489
--  CStrings:  703
+-  Symbols:   7014
+-  CStrings:  702
 +  Functions: 2928
-+  Symbols:   9488
-+  CStrings:  705
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__objc_const : content changed
++  Symbols:   7024
++  CStrings:  704
 Symbols:
 + _$s19LighthouseInference0B13FailureReasonOSgWOe
 + _$s19LighthouseInference0B5StateO22evaluatorSessionNoDatayA2CmFWC
@@ -168,5 +118,4 @@ CStrings:
 - "Inference Failure Reason - %s"
 - "No PSE events found from PSE Biome stream, existing inference task"
 - "No events loaded from stream: %s, existing inference"
-
 ```

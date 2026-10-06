@@ -2,98 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/_SwiftMedia_SwiftUI.framework/_SwiftMedia_SwiftUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1057f4` | `0x108fbc` | **`+0x37c8`** |
+| `__TEXT.__swift5_typeref` | `0xc51c` | `0xcbaa` | **`+0x68e`** |
+| `__AUTH_CONST.__const` | `0x8870` | `0x8bd0` | **`+0x360`** |
+| `__TEXT.__const` | `0xe364` | `0xe594` | **`+0x230`** |
+| `__DATA.__bss` | `0x89b8` | `0x8ad8` | **`+0x120`** |
+| `__AUTH_CONST.__objc_const` | `0x4378` | `0x4490` | **`+0x118`** |
+| `__TEXT.__swift5_capture` | `0x20f0` | `0x21e8` | **`+0xf8`** |
+| `__AUTH.__data` | `0x39c0` | `0x3a80` | **`+0xc0`** |
+| `__TEXT.__unwind_info` | `0x4050` | `0x4110` | **`+0xc0`** |
+| `__DATA.__data` | `0x45f0` | `0x4690` | **`+0xa0`** |
+| `__TEXT.__swift5_fieldmd` | `0x30c8` | `0x3148` | **`+0x80`** |
+| `__TEXT.__cstring` | `0x3db1` | `0x3e21` | **`+0x70`** |
+| `__AUTH_CONST.__auth_got` | `0x1850` | `0x18a8` | **`+0x58`** |
+| `__TEXT.__constg_swiftt` | `0x5820` | `0x5878` | **`+0x58`** |
+| `__TEXT.__swift5_reflstr` | `0x3286` | `0x32b6` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0xd48` | `0xd68` | **`+0x20`** |
+| `__TEXT.__eh_frame` | `0x4354` | `0x4334` | **`-0x20`** |
+| `__DATA.__common` | `0x308` | `0x2f8` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x150` | `0x158` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x798` | `0x7a0` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x474` | `0x47c` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x38c` | `0x394` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1057f4
-+  __TEXT.__text: 0x108fbc
-   __TEXT.__objc_methlist: 0x51c
--  __TEXT.__const: 0xe364
--  __TEXT.__constg_swiftt: 0x5820
--  __TEXT.__swift5_typeref: 0xc51c
-+  __TEXT.__const: 0xe594
-+  __TEXT.__constg_swiftt: 0x5878
-+  __TEXT.__swift5_typeref: 0xcbaa
-   __TEXT.__swift5_builtin: 0x12c
--  __TEXT.__swift5_reflstr: 0x3286
--  __TEXT.__swift5_fieldmd: 0x30c8
-+  __TEXT.__swift5_reflstr: 0x32b6
-+  __TEXT.__swift5_fieldmd: 0x3148
-   __TEXT.__swift5_assocty: 0x8e8
--  __TEXT.__swift5_proto: 0x474
--  __TEXT.__swift5_types: 0x38c
--  __TEXT.__swift5_capture: 0x20f0
-+  __TEXT.__swift5_proto: 0x47c
-+  __TEXT.__swift5_types: 0x394
-+  __TEXT.__swift5_capture: 0x21e8
-   __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__cstring: 0x3db1
-+  __TEXT.__cstring: 0x3e21
-   __TEXT.__swift5_protos: 0x34
-   __TEXT.__swift_as_entry: 0x144
-   __TEXT.__swift_as_ret: 0x124
-   __TEXT.__swift_as_cont: 0x300
-   __TEXT.__oslogstring: 0x95
--  __TEXT.__unwind_info: 0x4050
--  __TEXT.__eh_frame: 0x4354
-+  __TEXT.__unwind_info: 0x4110
-+  __TEXT.__eh_frame: 0x4334
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xc8
--  __DATA_CONST.__objc_classlist: 0x150
-+  __DATA_CONST.__objc_classlist: 0x158
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x798
-+  __DATA_CONST.__objc_selrefs: 0x7a0
-   __DATA_CONST.__objc_protorefs: 0x30
--  __DATA_CONST.__got: 0xd48
--  __AUTH_CONST.__const: 0x8870
--  __AUTH_CONST.__objc_const: 0x4378
--  __AUTH_CONST.__auth_got: 0x1850
-+  __DATA_CONST.__got: 0xd68
-+  __AUTH_CONST.__const: 0x8bd0
-+  __AUTH_CONST.__objc_const: 0x4490
-+  __AUTH_CONST.__auth_got: 0x18a8
-   __AUTH.__objc_data: 0xe28
--  __AUTH.__data: 0x39c0
--  __DATA.__data: 0x45f0
--  __DATA.__bss: 0x89b8
--  __DATA.__common: 0x308
-+  __AUTH.__data: 0x3a80
-+  __DATA.__data: 0x4690
-+  __DATA.__bss: 0x8ad8
-+  __DATA.__common: 0x2f8
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AVKit.framework/AVKit
-   - /System/Library/Frameworks/AVRouting.framework/AVRouting
+-60.59.2.0.0
++60.63.1.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6115
--  Symbols:   3453
+-  Symbols:   2227
 -  CStrings:  347
 +  Functions: 6191
-+  Symbols:   3516
++  Symbols:   2257
 +  CStrings:  348
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH.__objc_data : content changed
 Symbols:
 + __AXSAutomaticSubtitlesShowOnSkipBack
 + __AXSCommandAndControlEnabled
@@ -120,7 +68,6 @@ Symbols:
 + _get_witness_table 7SwiftUI19_ConditionalContentVyAA9EmptyViewVAA08ModifiedD0VyAA01_f9Modifier_D0Vy01_a6Media_aB006HideIffH033_FEE612C349B617678EB6EA5A3BC5B8CFLLVGAA013_TraitWritingH0VyAA010TransitionU3KeyVGGGAA0F0HPAeaVHPyHC_AtaVHPAnaVHPyHC_AsA0fH0HPyHCHCHC
 + _get_witness_table 7SwiftUI19_ConditionalContentVyACyAA4ViewPAAE12_glassEffect_2inQrAA6_GlassV_qd__tAA5ShapeRd__lFQOyAA08ModifiedD0VyALyAA01_e9Modifier_D0Vy01_a6Media_aB0014ToolBarPlatterL033_D57ED8294DEE59BD33DE0C70BE406CDALLVGAA12_FrameLayoutVGAA08_PaddingZ0VG_AA7CapsuleVQo_AVGACyAeAEAF_AGQrAI_qd__tAaJRd__lFQOyAY_AA6CircleVQo_AVGGAaDHPA1_AaDHPqd0__AaDHD3_A0_HO_AvaDHPAsaDHPyHC_AuA0eL0HPyHCHCHC_A5_AaDHPqd0__AaDHD3_A4_HO_AvaDHPAsaDHPyHC_AuAA7_HPyHCHCHCHC
 + _get_witness_table 7SwiftUI19_ConditionalContentVyACyAA4ViewPAAE12_glassEffect_2inQrAA6_GlassV_qd__tAA5ShapeRd__lFQOyAA08ModifiedD0VyALyALyAA6HStackVyAA05TupleD0VyAeAE15monospacedDigitQryFQOyALyAeAE10fontWeightyQrAA4FontV0Q0VSgFQOyALyALyAA4TextVAA31AccessibilityAttachmentModifierVGAA022_EnvironmentKeyWritingV0VyATSgGG_Qo_AA016_ForegroundStyleV0VyAA012HierarchicalJ5StyleVGG_Qo__01_a6Media_aB011TimelineBarVA13_QPGGA2_yAA15LayoutDirectionOGGAA14_PaddingLayoutVGA24_G_AA7CapsuleVQo_A25_GACyAeAEAF_AGQrAI_qd__tAaJRd__lFQOyALyALyALyAA6VStackVyAPyA16__ALyAA6SpacerVAA12_FrameLayoutVGALyANyAPyA6__A34_A6_QPGGA8_yAA5ColorVGGQPGGA21_GA24_GA24_G_A28_Qo_A47_GGAaDHPA30_AaDHPqd0__AaDHD3_A29_HO_A25_AaDHPA22_AaDHPA18_AaDHPyHC_A21_AA0eV0HPyHCHC_A24_AAA52_HPyHCHCHC_A50_AaDHPqd0__AaDHD3_A49_HO_A47_AaDHPA46_AaDHPA45_AaDHPyHC_A21_AAA52_HPyHCHC_A24_AAA52_HPyHCHCHCHC
-+ _objc_msgSend$isOverridingCaptionDisplayTypeWhileMuted
 + _symbolic Sbyc
 + _symbolic _____ 012_SwiftMedia_A2UI0B19ToolbarPlatterShapeO
 + _symbolic _____ 012_SwiftMedia_A2UI24StylePreviewHoverTrackerC
@@ -284,5 +231,4 @@ CStrings:
 - "showSubtitlesOnSkipBack"
 - "showSubtitlesWhenMuted"
 - "toggleSubtitlesOnMute(_:)"
-
 ```

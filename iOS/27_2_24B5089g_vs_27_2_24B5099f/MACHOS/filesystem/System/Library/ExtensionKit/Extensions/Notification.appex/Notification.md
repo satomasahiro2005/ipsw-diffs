@@ -2,15 +2,14 @@
 
 > `/System/Library/ExtensionKit/Extensions/Notification.appex/Notification`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -218.1.1.0.0
 +218.1.3.200.0
-   __TEXT.__text: 0x5b44
-   __TEXT.__auth_stubs: 0x910
-   __TEXT.__objc_stubs: 0x80
 ```

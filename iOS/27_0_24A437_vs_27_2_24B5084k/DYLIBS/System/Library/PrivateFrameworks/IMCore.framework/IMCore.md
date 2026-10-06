@@ -2,90 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/IMCore.framework/IMCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__const` | `0xc3f8` | `0xbef8` | **`-0x500`** |
+| `__AUTH_CONST.__objc_const` | `0x22418` | `0x22778` | **`+0x360`** |
+| `__TEXT.__text` | `0x2fd2ac` | `0x2fd5d4` | **`+0x328`** |
+| `__DATA.__bss` | `0x1eae0` | `0x1e870` | **`-0x270`** |
+| `__TEXT.__objc_methlist` | `0x18e4c` | `0x1906c` | **`+0x220`** |
+| `__TEXT.__cstring` | `0x13355` | `0x13175` | **`-0x1e0`** |
+| `__DATA_CONST.__objc_selrefs` | `0xeb20` | `0xeca0` | **`+0x180`** |
+| `__AUTH_CONST.__cfstring` | `0xbac0` | `0xbbe0` | **`+0x120`** |
+| `__TEXT.__oslogstring` | `0x23d1b` | `0x23dbb` | **`+0xa0`** |
+| `__TEXT.__gcc_except_tab` | `0x119c4` | `0x11928` | **`-0x9c`** |
+| `__AUTH_CONST.__auth_got` | `0x21a8` | `0x2228` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0xc3c0` | `0xc348` | **`-0x78`** |
+| `__DATA.__data` | `0x6558` | `0x65b8` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x58a8` | `0x5908` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0x40c0` | `0x4110` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x2890` | `0x28d0` | **`+0x40`** |
+| `__DATA.__objc_ivar` | `0x12c4` | `0x12f8` | **`+0x34`** |
+| `__AUTH_CONST.__objc_intobj` | `0x168` | `0x180` | **`+0x18`** |
+| `__DATA.__common` | `0x7e0` | `0x7f8` | **`+0x18`** |
+| `__TEXT.__eh_frame` | `0x72b0` | `0x72c0` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x918` | `0x920` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x580` | `0x588` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x5b8` | `0x5c0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1491.100.1.2.25
--  __TEXT.__text: 0x2ed828
 +1491.200.63.2.1
-+  __TEXT.__text: 0x2eda9c
-   __TEXT.__delay_stubs: 0x80
-   __TEXT.__delay_helper: 0x14c
--  __TEXT.__objc_methlist: 0x18e4c
-+  __TEXT.__objc_methlist: 0x1906c
-   __TEXT.__const: 0x116f0
--  __TEXT.__gcc_except_tab: 0x119c4
--  __TEXT.__cstring: 0x13355
--  __TEXT.__oslogstring: 0x23d1b
-+  __TEXT.__gcc_except_tab: 0x11928
-+  __TEXT.__cstring: 0x13175
-+  __TEXT.__oslogstring: 0x23dbb
-   __TEXT.__ustring: 0xc0
-   __TEXT.__dlopen_cstrs: 0x184
-   __TEXT.__swift5_typeref: 0x39ae
 
-   __TEXT.__swift_as_ret: 0x130
-   __TEXT.__swift_as_cont: 0x2e0
-   __TEXT.__swift5_mpenum: 0x40
--  __TEXT.__unwind_info: 0xe748
--  __TEXT.__eh_frame: 0x72b8
-+  __TEXT.__unwind_info: 0xe688
-+  __TEXT.__eh_frame: 0x72c8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x58a8
--  __DATA_CONST.__objc_classlist: 0x918
-+  __DATA_CONST.__const: 0x5908
-+  __DATA_CONST.__objc_classlist: 0x920
-   __DATA_CONST.__objc_catlist: 0xf0
--  __DATA_CONST.__objc_protolist: 0x580
-+  __DATA_CONST.__objc_protolist: 0x588
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xeb20
-+  __DATA_CONST.__objc_selrefs: 0xeca0
-   __DATA_CONST.__objc_protorefs: 0x1f0
--  __DATA_CONST.__objc_superrefs: 0x5b8
-+  __DATA_CONST.__objc_superrefs: 0x5c0
-   __DATA_CONST.__objc_arraydata: 0xa8
--  __DATA_CONST.__got: 0x2890
--  __AUTH_CONST.__const: 0xc3f8
--  __AUTH_CONST.__cfstring: 0xbac0
--  __AUTH_CONST.__objc_const: 0x22418
-+  __DATA_CONST.__got: 0x28d0
-+  __AUTH_CONST.__const: 0xbef8
-+  __AUTH_CONST.__cfstring: 0xbbe0
-+  __AUTH_CONST.__objc_const: 0x22778
-   __AUTH_CONST.__objc_arrayobj: 0xf0
--  __AUTH_CONST.__objc_intobj: 0x168
-+  __AUTH_CONST.__objc_intobj: 0x180
-   __AUTH_CONST.__objc_doubleobj: 0x20
--  __AUTH_CONST.__auth_got: 0x21a8
--  __AUTH.__objc_data: 0x40c0
-+  __AUTH_CONST.__auth_got: 0x2228
-+  __AUTH.__objc_data: 0x4110
-   __AUTH.__data: 0x2d20
--  __DATA.__objc_ivar: 0x12c4
--  __DATA.__data: 0x6558
--  __DATA.__common: 0x7e0
-+  __DATA.__objc_ivar: 0x12f8
-+  __DATA.__data: 0x65b8
-+  __DATA.__common: 0x7f8
-   __DATA_DIRTY.__objc_data: 0x1e38
-   __DATA_DIRTY.__data: 0x3f8
-   __DATA_DIRTY.__bss: 0x348
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15223
 -  Symbols:   2696
 -  CStrings:  5025
 +  Functions: 15190
 +  Symbols:   2726
 +  CStrings:  5014
- 
 Symbols:
 + _IMBalloonPluginIdentifierIsAppleCash
 + _IMConversationListSortingLogHandle

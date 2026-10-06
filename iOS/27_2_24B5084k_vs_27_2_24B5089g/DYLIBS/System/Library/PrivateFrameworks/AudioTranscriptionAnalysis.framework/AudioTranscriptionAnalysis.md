@@ -2,92 +2,62 @@
 
 > `/System/Library/PrivateFrameworks/AudioTranscriptionAnalysis.framework/AudioTranscriptionAnalysis`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x25abc` | `0x75a04` | **`+0x4ff48`** |
+| `__DATA.__bss` | `0xd0` | `0x2dc0` | **`+0x2cf0`** |
+| `__TEXT.__const` | `0xc0` | `0x2c86` | **`+0x2bc6`** |
+| `__TEXT.__oslogstring` | `0x610f` | `0x893e` | **`+0x282f`** |
+| `__AUTH_CONST.__const` | `0x440` | `0x26c8` | **`+0x2288`** |
+| `__TEXT.__eh_frame` | `—` | `0x2000` | **`+0x2000`** |
+| `__TEXT.__swift5_typeref` | `—` | `0x10df` | **`+0x10df`** |
+| `__TEXT.__unwind_info` | `0xa88` | `0x1b40` | **`+0x10b8`** |
+| `__TEXT.__swift5_fieldmd` | `—` | `0xf5c` | **`+0xf5c`** |
+| `__TEXT.__swift5_reflstr` | `—` | `0xf39` | **`+0xf39`** |
+| `__TEXT.__constg_swiftt` | `—` | `0xdb8` | **`+0xdb8`** |
+| `__AUTH_CONST.__auth_got` | `0x0` | `0xb48` | **`+0xb48`** |
+| `__TEXT.__cstring` | `0x4613` | `0x5123` | **`+0xb10`** |
+| `__AUTH_CONST.__objc_const` | `0x2ea8` | `0x3978` | **`+0xad0`** |
+| `__AUTH.__data` | `—` | `0xa60` | **`+0xa60`** |
+| `__DATA.__data` | `0x6c0` | `0xcc8` | **`+0x608`** |
+| `__TEXT.__swift5_capture` | `—` | `0x470` | **`+0x470`** |
+| `__TEXT.__swift5_proto` | `—` | `0x25c` | **`+0x25c`** |
+| `__AUTH.__objc_data` | `0x730` | `0x928` | **`+0x1f8`** |
+| `__TEXT.__objc_methlist` | `0x1b88` | `0x1d80` | **`+0x1f8`** |
+| `__DATA_CONST.__got` | `0x180` | `0x368` | **`+0x1e8`** |
+| `__DATA_CONST.__const` | `0x768` | `0x8d0` | **`+0x168`** |
+| `__TEXT.__swift5_types` | `—` | `0x14c` | **`+0x14c`** |
+| `__TEXT.__swift5_assocty` | `—` | `0xf0` | **`+0xf0`** |
+| `__TEXT.__swift_as_cont` | `—` | `0xe0` | **`+0xe0`** |
+| `__TEXT.__swift5_builtin` | `—` | `0xdc` | **`+0xdc`** |
+| `__TEXT.__gcc_except_tab` | `0x5f8` | `0x6b0` | **`+0xb8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xe50` | `0xf00` | **`+0xb0`** |
+| `__DATA.__common` | `—` | `0xa8` | **`+0xa8`** |
+| `__TEXT.__swift_as_entry` | `—` | `0xa8` | **`+0xa8`** |
+| `__TEXT.__swift_as_ret` | `—` | `0xa0` | **`+0xa0`** |
+| `__AUTH_CONST.__cfstring` | `0x1000` | `0x1080` | **`+0x80`** |
+| `__DATA_CONST.__objc_classlist` | `0xd8` | `0x110` | **`+0x38`** |
+| `__TEXT.__swift5_mpenum` | `—` | `0x38` | **`+0x38`** |
+| `__DATA_DIRTY.__bss` | `0x378` | `0x3a8` | **`+0x30`** |
+| `__TEXT.__swift5_protos` | `—` | `0x2c` | **`+0x2c`** |
+| `__DATA.__objc_ivar` | `0x1d0` | `0x1ec` | **`+0x1c`** |
+| `__DATA_CONST.__objc_superrefs` | `0xb0` | `0xb8` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__DATA_CONST.__objc_imageinfo`
+
+### Other Changes
 
 ```diff
 
 -10.10.0.0.0
--  __TEXT.__text: 0x25150
--  __TEXT.__objc_methlist: 0x1b88
--  __TEXT.__const: 0xc0
--  __TEXT.__cstring: 0x4613
--  __TEXT.__oslogstring: 0x610f
--  __TEXT.__gcc_except_tab: 0x5f8
--  __TEXT.__unwind_info: 0xeb8
 +30.4.0.0.0
-+  __TEXT.__text: 0x71d9c
-+  __TEXT.__objc_methlist: 0x1d80
-+  __TEXT.__const: 0x2c86
-+  __TEXT.__cstring: 0x5123
-+  __TEXT.__oslogstring: 0x893e
-+  __TEXT.__gcc_except_tab: 0x6b0
-+  __TEXT.__swift5_typeref: 0x10df
-+  __TEXT.__constg_swiftt: 0xdb8
-+  __TEXT.__swift5_builtin: 0xdc
-+  __TEXT.__swift5_mpenum: 0x38
-+  __TEXT.__swift5_reflstr: 0xf39
-+  __TEXT.__swift5_fieldmd: 0xf5c
-+  __TEXT.__swift5_proto: 0x25c
-+  __TEXT.__swift5_types: 0x14c
-+  __TEXT.__swift5_capture: 0x470
-+  __TEXT.__swift5_assocty: 0xf0
-+  __TEXT.__swift_as_entry: 0xa8
-+  __TEXT.__swift_as_ret: 0xa0
-+  __TEXT.__swift_as_cont: 0xe0
-+  __TEXT.__swift5_protos: 0x2c
-+  __TEXT.__unwind_info: 0x2308
-+  __TEXT.__eh_frame: 0x2000
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x768
--  __DATA_CONST.__objc_classlist: 0xd8
-+  __DATA_CONST.__const: 0x8d0
-+  __DATA_CONST.__objc_classlist: 0x110
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x90
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xe50
-+  __DATA_CONST.__objc_selrefs: 0xf00
-   __DATA_CONST.__objc_protorefs: 0x28
--  __DATA_CONST.__objc_superrefs: 0xb0
-+  __DATA_CONST.__objc_superrefs: 0xb8
-   __DATA_CONST.__objc_arraydata: 0x40
--  __DATA_CONST.__got: 0x180
--  __AUTH_CONST.__const: 0x440
--  __AUTH_CONST.__cfstring: 0x1000
--  __AUTH_CONST.__objc_const: 0x2ea8
-+  __DATA_CONST.__got: 0x368
-+  __AUTH_CONST.__const: 0x26c8
-+  __AUTH_CONST.__cfstring: 0x1080
-+  __AUTH_CONST.__objc_const: 0x3978
-   __AUTH_CONST.__objc_arrayobj: 0x48
--  __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x730
--  __DATA.__objc_ivar: 0x1d0
--  __DATA.__data: 0x6c0
-+  __AUTH_CONST.__auth_got: 0xb48
-+  __AUTH.__objc_data: 0x928
-+  __AUTH.__data: 0xa60
-+  __DATA.__objc_ivar: 0x1ec
-+  __DATA.__data: 0xcc8
-+  __DATA.__common: 0xa8
-   __DATA_DIRTY.__objc_data: 0x140
--  __DATA_DIRTY.__bss: 0x378
-+  __DATA_DIRTY.__bss: 0x3a8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
 
-   - /System/Library/PrivateFrameworks/SpeechTranslation.framework/SpeechTranslation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
--  Functions: 994
--  Symbols:   1660
+-  Functions: 1005
+-  Symbols:   1292
 -  CStrings:  701
 +  - /usr/lib/swift/libswiftCore.dylib
 +  - /usr/lib/swift/libswiftCoreAudio.dylib
@@ -102,10 +72,9 @@
 +  - /usr/lib/swift/libswift_Concurrency.dylib
 +  - /usr/lib/swift/libswiftos.dylib
 +  - /usr/lib/swift/libswiftsimd.dylib
-+  Functions: 2416
-+  Symbols:   2278
++  Functions: 2428
++  Symbols:   1880
 +  CStrings:  902
- 
 Symbols:
 + +[_ATATranslationClientList _computeOutputFrameCountForInputFrames:inputSampleRate:outputSampleRate:]
 + +[_ATATranslationClientList _convertBuffer:usingConverter:toFormat:]
@@ -351,44 +320,6 @@ Symbols:
 + _memcpy
 + _memmove
 + _objc_allocWithZone
-+ _objc_msgSend$_addToClientListWithIdentifier:clientPeer:xpcConnection:inReply:
-+ _objc_msgSend$_fetchRemoteServicePeerWithError:
-+ _objc_msgSend$_initWithPeerContext:delegate:delegateQueue:error:
-+ _objc_msgSend$_initWithPeerProvider:peerContext:delegate:delegateQueue:error:
-+ _objc_msgSend$_installPrimaryDisconnectHandlersForConnection:clientPeer:
-+ _objc_msgSend$_joinRefusalWhileDispatched
-+ _objc_msgSend$_notifyConnectionInvalidatedOnce
-+ _objc_msgSend$_remoteObjectProxyForConnection:
-+ _objc_msgSend$_setUpPeerProviderWhileLocked:withContext:error:
-+ _objc_msgSend$_transcriptionResultFromSpeechResult:
-+ _objc_msgSend$_translationResultFromBackendResult:
-+ _objc_msgSend$addSecondaryClientPeer:withXPCConnection:inReply:
-+ _objc_msgSend$channelCount
-+ _objc_msgSend$code
-+ _objc_msgSend$didNotifyConnectionInvalidated
-+ _objc_msgSend$domain
-+ _objc_msgSend$identifierForResultIsFinal:
-+ _objc_msgSend$initWithText:isFinal:identifier:
-+ _objc_msgSend$initWithTranscriptionIdentifier:delegate:delegateQueue:error:
-+ _objc_msgSend$initWithTranslationIdentifier:delegate:delegateQueue:error:
-+ _objc_msgSend$initWithUUIDString:
-+ _objc_msgSend$lookUpPreferredInputAudioFormatWithCompletionHandler:
-+ _objc_msgSend$onConnectionInvalidated
-+ _objc_msgSend$preferredTranslatedAudioFormat
-+ _objc_msgSend$reset
-+ _objc_msgSend$serverDidDisconnect
-+ _objc_msgSend$setContextualStrings:
-+ _objc_msgSend$setDidNotifyConnectionInvalidated:
-+ _objc_msgSend$setOnConnectionInvalidated:
-+ _objc_msgSend$setShouldReportPartialResults:
-+ _objc_msgSend$setUpPeerForDelegate:context:error:
-+ _objc_msgSend$startTranscriptionWithCompletionHandler:
-+ _objc_msgSend$startTranslationWithCompletionHandler:
-+ _objc_msgSend$transcribeAudioSamples:
-+ _objc_msgSend$transcriptionIdentifier
-+ _objc_msgSend$translateAudioSamples:
-+ _objc_msgSend$triggerDiagnosticsWithCompletionHandler:
-+ _objc_msgSend$userInfo
 + _objc_opt_self
 + _objc_retain_x27
 + _objc_sync_enter
@@ -833,14 +764,6 @@ Symbols:
 - ___block_descriptor_40_e8_32r_e34_v16?0"<_ATATranslationService>"8lr32l8
 - ___block_descriptor_40_e8_32r_e36_v16?0"<_ATATranscriptionService>"8lr32l8
 - ___block_descriptor_64_e8_32s40s48s56r_e5_v8?0lr56l8s32l8s40l8s48l8
-- _objc_msgSend$_addToClientListWithIdentifier:clientPeer:xpcConnection:
-- _objc_msgSend$_fetchRemoteServicePeer
-- _objc_msgSend$_initWithPeerContext:delegate:delegateQueue:
-- _objc_msgSend$_initWithPeerProvider:peerContext:delegate:delegateQueue:
-- _objc_msgSend$_remoteObjectProxyForConnection:isPrimary:
-- _objc_msgSend$_setUpPeerProviderWhileLocked:withContext:
-- _objc_msgSend$addSecondaryClientPeer:withXPCConnection:
-- _objc_msgSend$setUpPeerForDelegate:context:
 CStrings:
 + " error "
 + " reason "

@@ -2,29 +2,29 @@
 
 > `com.apple.driver.AppleParrot`
 
-```diff
+### Section Size Changes
 
- 4.0.0.0.0
-   __TEXT.__cstring: 0x1b3
--  __TEXT_EXEC.__text: 0x1000
-+  __TEXT_EXEC.__text: 0x1048
-   __TEXT_EXEC.__auth_stubs: 0xb0
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x38
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x1000` | `0x1048` | **`+0x48`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_fffffe00092ed5d0 -> sub_fffffe0009359220 : 72 -> 76
-~ sub_fffffe00092ed620 -> sub_fffffe0009359274 : 52 -> 56
-~ sub_fffffe00092ed654 -> sub_fffffe00093592ac : 52 -> 56
-~ sub_fffffe00092ed698 -> sub_fffffe00093592f4 : 68 -> 72
-~ sub_fffffe00092ed704 -> sub_fffffe0009359364 : 72 -> 76
-~ sub_fffffe00092ed74c -> sub_fffffe00093593b0 : 104 -> 108
-~ sub_fffffe00092ed7c8 -> sub_fffffe0009359430 : 88 -> 92
-~ sub_fffffe00092ed820 -> sub_fffffe000935948c : 88 -> 92
-~ sub_fffffe00092ed878 -> sub_fffffe00093594e8 : 160 -> 164
+~ sub_fffffff0092f5710 -> sub_fffffff00935d990 : 72 -> 76
+~ sub_fffffff0092f5760 -> sub_fffffff00935d9e4 : 52 -> 56
+~ sub_fffffff0092f5794 -> sub_fffffff00935da1c : 52 -> 56
+~ sub_fffffff0092f57d8 -> sub_fffffff00935da64 : 68 -> 72
+~ sub_fffffff0092f5844 -> sub_fffffff00935dad4 : 72 -> 76
+~ sub_fffffff0092f588c -> sub_fffffff00935db20 : 104 -> 108
+~ sub_fffffff0092f5908 -> sub_fffffff00935dba0 : 88 -> 92
+~ sub_fffffff0092f5960 -> sub_fffffff00935dbfc : 88 -> 92
+~ sub_fffffff0092f59b8 -> sub_fffffff00935dc58 : 160 -> 164
 ~ __ZN11AppleParrot13writeRegisterEhh : 256 -> 260
 ~ __ZN11AppleParrot9softResetEv : 152 -> 156
 ~ __ZN11AppleParrot13applyTunablesEv : 548 -> 552
-~ sub_fffffe00092edd7c -> sub_fffffe00093599fc : 80 -> 84
+~ sub_fffffff0092f5ebc -> sub_fffffff00935e16c : 80 -> 84
 ~ __ZN11AppleParrot4initEP12OSDictionary : 120 -> 124
 ~ __ZN11AppleParrot5startEP9IOService : 420 -> 424
 ~ __ZN11AppleParrot12readRegisterEhPh : 268 -> 272

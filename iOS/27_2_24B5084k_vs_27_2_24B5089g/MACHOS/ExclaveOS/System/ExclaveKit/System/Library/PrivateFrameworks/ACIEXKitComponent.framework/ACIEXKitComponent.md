@@ -2,61 +2,40 @@
 
 > `/System/ExclaveKit/System/Library/PrivateFrameworks/ACIEXKitComponent.framework/ACIEXKitComponent`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_protos`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x22bd8` | `0x2439c` | **`+0x17c4`** |
+| `__DATA_CONST.__const` | `0x1f40` | `0x2268` | **`+0x328`** |
+| `__DATA.__bss` | `0x2680` | `0x2980` | **`+0x300`** |
+| `__TEXT.__eh_frame` | `0x23f0` | `0x26e8` | **`+0x2f8`** |
+| `__TEXT.__const` | `0x1ce8` | `0x1f40` | **`+0x258`** |
+| `__TEXT.__swift5_fieldmd` | `0x1510` | `0x162c` | **`+0x11c`** |
+| `__TEXT.__swift5_reflstr` | `0x21e5` | `0x22f5` | **`+0x110`** |
+| `__TEXT.__constg_swiftt` | `0x8e4` | `0x970` | **`+0x8c`** |
+| `__TEXT.__unwind_info` | `0x7e8` | `0x870` | **`+0x88`** |
+| `__TEXT.__swift5_proto` | `0x1c0` | `0x1e8` | **`+0x28`** |
+| `__TEXT.__swift5_typeref` | `0x423` | `0x441` | **`+0x1e`** |
+| `__TEXT.__swift5_types` | `0xd8` | `0xec` | **`+0x14`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA_CONST.__auth_ptr`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_protos`
+
+### Other Changes
 
 ```diff
 
- 1.29.0.0.0
--  __TEXT.__text: 0x22b40
-+  __TEXT.__text: 0x24300
-   __TEXT.__auth_stubs: 0x640
--  __TEXT.__const: 0x1ce8
-+  __TEXT.__const: 0x1f40
-   __TEXT.__cstring: 0x664
-   __TEXT.__objc_classname: 0xc7
-   __TEXT.__objc_methname: 0x23
-   __TEXT.__objc_methtype: 0x1
--  __TEXT.__constg_swiftt: 0x8e4
--  __TEXT.__swift5_typeref: 0x423
--  __TEXT.__swift5_reflstr: 0x21e5
--  __TEXT.__swift5_fieldmd: 0x1510
-+  __TEXT.__constg_swiftt: 0x970
-+  __TEXT.__swift5_typeref: 0x441
-+  __TEXT.__swift5_reflstr: 0x22f5
-+  __TEXT.__swift5_fieldmd: 0x162c
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_assocty: 0x138
--  __TEXT.__swift5_proto: 0x1c0
--  __TEXT.__swift5_types: 0xd8
-+  __TEXT.__swift5_proto: 0x1e8
-+  __TEXT.__swift5_types: 0xec
-   __TEXT.__swift5_protos: 0x14
--  __TEXT.__unwind_info: 0x958
--  __TEXT.__eh_frame: 0x23f0
--  __DATA_CONST.__const: 0x1f40
-+  __TEXT.__unwind_info: 0x9e8
-+  __TEXT.__eh_frame: 0x26e8
-+  __DATA_CONST.__const: 0x2268
-   __DATA_CONST.__objc_classlist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__auth_got: 0x320
-
-   - /System/ExclaveKit/usr/lib/swift/libswiftObjectiveC.dylib
-   - /System/ExclaveKit/usr/lib/swift/libswift_Builtin_float.dylib
-   - /System/ExclaveKit/usr/lib/swift/libswiftos.dylib
 -  Functions: 606
 -  Symbols:   1634
 +  Functions: 642
 +  Symbols:   1741
-   CStrings:  36
- 
 Symbols:
 + _$s17ACIEXKitComponent15_ANESessionInfoV13unsafeMarshal4intoySrys5UInt8VG_tSo10tb_error_taYKFy9Tightbeam0K7MessageVnAJYKXEfU_
 + _$s17ACIEXKitComponent15_ANESessionInfoV13unsafeMarshal4intoySrys5UInt8VG_tSo10tb_error_taYKFy9Tightbeam0K7MessageVnAJYKXEfU_TA

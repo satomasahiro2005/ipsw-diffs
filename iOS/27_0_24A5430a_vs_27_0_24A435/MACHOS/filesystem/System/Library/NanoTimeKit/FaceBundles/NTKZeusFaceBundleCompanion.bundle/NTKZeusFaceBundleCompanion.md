@@ -2,83 +2,51 @@
 
 > `/System/Library/NanoTimeKit/FaceBundles/NTKZeusFaceBundleCompanion.bundle/NTKZeusFaceBundleCompanion`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2bfec` | `0x2d290` | **`+0x12a4`** |
+| `__TEXT.__objc_stubs` | `0x48a0` | `0x4b80` | **`+0x2e0`** |
+| `__TEXT.__objc_methname` | `0x4e8e` | `0x511e` | **`+0x290`** |
+| `__DATA.__objc_const` | `0x8860` | `0x89d0` | **`+0x170`** |
+| `__DATA_CONST.__cfstring` | `0x1400` | `0x1520` | **`+0x120`** |
+| `__DATA.__objc_selrefs` | `0x1868` | `0x1940` | **`+0xd8`** |
+| `__TEXT.__objc_methlist` | `0x2de8` | `0x2eb8` | **`+0xd0`** |
+| `__TEXT.__cstring` | `0xb76` | `0xc2b` | **`+0xb5`** |
+| `__TEXT.__objc_methtype` | `0xdc7` | `0xe22` | **`+0x5b`** |
+| `__DATA_CONST.__const` | `0xa38` | `0xa90` | **`+0x58`** |
+| `__DATA.__objc_data` | `0x1130` | `0x1180` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0xb20` | `0xb58` | **`+0x38`** |
+| `__DATA_CONST.__objc_intobj` | `0xd20` | `0xd50` | **`+0x30`** |
+| `__TEXT.__objc_classname` | `0x745` | `0x76c` | **`+0x27`** |
+| `__TEXT.__auth_stubs` | `0x8b0` | `0x8d0` | **`+0x20`** |
+| `__TEXT.__const` | `0x18e0` | `0x1900` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x1f4` | `0x204` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x468` | `0x478` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x540` | `0x550` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x1b8` | `0x1c0` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x148` | `0x150` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__objc_arraydata`
 - `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__data`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+
+### Other Changes
 
 ```diff
 
- 2483.523.0.4.0
--  __TEXT.__text: 0x2bfec
--  __TEXT.__auth_stubs: 0x8b0
--  __TEXT.__objc_stubs: 0x48a0
--  __TEXT.__objc_methlist: 0x2de8
--  __TEXT.__const: 0x18e0
--  __TEXT.__cstring: 0xb76
-+  __TEXT.__text: 0x2d290
-+  __TEXT.__auth_stubs: 0x8d0
-+  __TEXT.__objc_stubs: 0x4b80
-+  __TEXT.__objc_methlist: 0x2eb8
-+  __TEXT.__const: 0x1900
-+  __TEXT.__cstring: 0xc2b
-   __TEXT.__ustring: 0x62
--  __TEXT.__objc_methname: 0x4e8e
--  __TEXT.__objc_classname: 0x745
--  __TEXT.__objc_methtype: 0xdc7
-+  __TEXT.__objc_methname: 0x511e
-+  __TEXT.__objc_classname: 0x76c
-+  __TEXT.__objc_methtype: 0xe22
-   __TEXT.__gcc_except_tab: 0x188
--  __TEXT.__unwind_info: 0xb20
--  __DATA_CONST.__const: 0xa38
--  __DATA_CONST.__cfstring: 0x1400
--  __DATA_CONST.__objc_classlist: 0x1b8
-+  __TEXT.__unwind_info: 0xb58
-+  __DATA_CONST.__const: 0xa90
-+  __DATA_CONST.__cfstring: 0x1520
-+  __DATA_CONST.__objc_classlist: 0x1c0
-   __DATA_CONST.__objc_protolist: 0xa8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x148
--  __DATA_CONST.__objc_intobj: 0xd20
-+  __DATA_CONST.__objc_superrefs: 0x150
-+  __DATA_CONST.__objc_intobj: 0xd50
-   __DATA_CONST.__objc_arraydata: 0x298
-   __DATA_CONST.__objc_arrayobj: 0x318
-   __DATA_CONST.__objc_doubleobj: 0x2f0
--  __DATA_CONST.__auth_got: 0x468
--  __DATA_CONST.__got: 0x540
-+  __DATA_CONST.__auth_got: 0x478
-+  __DATA_CONST.__got: 0x550
-   __DATA_CONST.__auth_ptr: 0x8
--  __DATA.__objc_const: 0x8860
--  __DATA.__objc_selrefs: 0x1868
--  __DATA.__objc_ivar: 0x1f4
--  __DATA.__objc_data: 0x1130
-+  __DATA.__objc_const: 0x89d0
-+  __DATA.__objc_selrefs: 0x1940
-+  __DATA.__objc_ivar: 0x204
-+  __DATA.__objc_data: 0x1180
-   __DATA.__data: 0x7e0
-   __FONT_DATA.__ClipperFont: 0x15a8
-   __FONT_DATA.__CapeCodFont: 0x10e0
-
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 881
 -  Symbols:   428
 -  CStrings:  1332
 +  Functions: 898
 +  Symbols:   437
 +  CStrings:  1376
- 
 Symbols:
 + _NTKColorWithRGBA
 + _NTKDeviceIsZeusGoldSKU

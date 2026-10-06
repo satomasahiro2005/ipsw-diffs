@@ -2,69 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/MediaConversionService.framework/MediaConversionService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1eca8` | `0x1f210` | **`+0x568`** |
+| `__TEXT.__cstring` | `0x5ae4` | `0x5c3d` | **`+0x159`** |
+| `__AUTH_CONST.__cfstring` | `0x3520` | `0x35c0` | **`+0xa0`** |
+| `__TEXT.__oslogstring` | `0x292c` | `0x2985` | **`+0x59`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0xc0` | `0xf0` | **`+0x30`** |
+| `__AUTH_CONST.__objc_intobj` | `0x198` | `0x1c8` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0xcf8` | `0xd20` | **`+0x28`** |
+| `__DATA.__bss` | `0x40` | `0x50` | **`+0x10`** |
+| `__DATA_CONST.__objc_arraydata` | `0x5a8` | `0x5b8` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x30` | `0x20` | **`-0x10`** |
+| `__TEXT.__objc_methlist` | `0x1ff4` | `0x2004` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x7b0` | `0x7c0` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x16f0` | `0x16f8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -916.45.110.0.0
--  __TEXT.__text: 0x1e46c
--  __TEXT.__objc_methlist: 0x1ff4
 +916.51.202.0.0
-+  __TEXT.__text: 0x1e9c8
-+  __TEXT.__objc_methlist: 0x2004
-   __TEXT.__const: 0xc0
-   __TEXT.__gcc_except_tab: 0x5c0
--  __TEXT.__cstring: 0x5ae4
--  __TEXT.__oslogstring: 0x292c
--  __TEXT.__unwind_info: 0x910
-+  __TEXT.__cstring: 0x5c3d
-+  __TEXT.__oslogstring: 0x2985
-+  __TEXT.__unwind_info: 0x920
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xcf8
-+  __DATA_CONST.__const: 0xd20
-   __DATA_CONST.__objc_classlist: 0xc8
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x16f0
-+  __DATA_CONST.__objc_selrefs: 0x16f8
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x60
--  __DATA_CONST.__objc_arraydata: 0x5a8
-+  __DATA_CONST.__objc_arraydata: 0x5b8
-   __DATA_CONST.__got: 0x3d0
-   __AUTH_CONST.__const: 0x140
--  __AUTH_CONST.__cfstring: 0x3520
-+  __AUTH_CONST.__cfstring: 0x35c0
-   __AUTH_CONST.__objc_const: 0x30d8
--  __AUTH_CONST.__objc_intobj: 0x198
--  __AUTH_CONST.__objc_arrayobj: 0xc0
-+  __AUTH_CONST.__objc_intobj: 0x1c8
-+  __AUTH_CONST.__objc_arrayobj: 0xf0
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__objc_ivar: 0x26c
-   __DATA_DIRTY.__objc_data: 0x7d0
-   __DATA_DIRTY.__data: 0x4a8
--  __DATA_DIRTY.__bss: 0x30
-+  __DATA_DIRTY.__bss: 0x20
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /System/Library/PrivateFrameworks/PhotosFormats.framework/PhotosFormats
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 732
 -  Symbols:   1536
 -  CStrings:  631
 +  Functions: 736
 +  Symbols:   1542
 +  CStrings:  637
- 
 Symbols:
 + -[PHMediaFormatConversionImplementation_MediaConversionService _submitProvenanceProcessingRequest:destination:sourceURLCollection:options:completionHandler:]
 + -[PHMediaFormatConversionRequest _provenanceRenderOutputType]

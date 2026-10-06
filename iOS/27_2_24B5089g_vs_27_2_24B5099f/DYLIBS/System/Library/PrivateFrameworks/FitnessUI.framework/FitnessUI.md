@@ -2,83 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/FitnessUI.framework/FitnessUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xaaa54` | `0xab1cc` | **`+0x778`** |
+| `__TEXT.__const` | `0x3264` | `0x3374` | **`+0x110`** |
+| `__TEXT.__swift5_typeref` | `0x2fcc` | `0x309a` | **`+0xce`** |
+| `__DATA.__bss` | `0x3820` | `0x38d0` | **`+0xb0`** |
+| `__TEXT.__constg_swiftt` | `0x102c` | `0x10cc` | **`+0xa0`** |
+| `__AUTH_CONST.__const` | `0x2310` | `0x2358` | **`+0x48`** |
+| `__TEXT.__unwind_info` | `0x2fd8` | `0x3008` | **`+0x30`** |
+| `__DATA.__data` | `0x1508` | `0x1530` | **`+0x28`** |
+| `__TEXT.__swift5_assocty` | `0x198` | `0x1b0` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x1820` | `0x1830` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x510` | `0x520` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x928` | `0x938` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0xe20` | `0xe28` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0xe0` | `0xe4` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0xc8` | `0xcc` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__swift5_reflstr`
+
+### Other Changes
 
 ```diff
 
 -2027.1.22.0.0
--  __TEXT.__text: 0xa5efc
 +2027.1.27.0.0
-+  __TEXT.__text: 0xa6634
-   __TEXT.__objc_methlist: 0x6dbc
--  __TEXT.__const: 0x3264
-+  __TEXT.__const: 0x3374
-   __TEXT.__cstring: 0x61bd
-   __TEXT.__oslogstring: 0x1a2c
-   __TEXT.__gcc_except_tab: 0x380
-   __TEXT.__dlopen_cstrs: 0x140
-   __TEXT.__ustring: 0xe
--  __TEXT.__swift5_typeref: 0x2fcc
--  __TEXT.__constg_swiftt: 0x102c
--  __TEXT.__swift5_fieldmd: 0x928
--  __TEXT.__swift5_types: 0xc8
--  __TEXT.__swift5_capture: 0x510
-+  __TEXT.__swift5_typeref: 0x309a
-+  __TEXT.__constg_swiftt: 0x10cc
-+  __TEXT.__swift5_fieldmd: 0x938
-+  __TEXT.__swift5_types: 0xcc
-+  __TEXT.__swift5_capture: 0x520
-   __TEXT.__swift5_reflstr: 0x9a4
-   __TEXT.__swift5_protos: 0xc
--  __TEXT.__swift5_proto: 0xe0
-+  __TEXT.__swift5_proto: 0xe4
-   __TEXT.__swift_as_entry: 0x68
-   __TEXT.__swift_as_ret: 0x34
-   __TEXT.__swift_as_cont: 0x5c
--  __TEXT.__swift5_assocty: 0x198
-+  __TEXT.__swift5_assocty: 0x1b0
-   __TEXT.__swift5_builtin: 0xb4
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x3948
-+  __TEXT.__unwind_info: 0x3978
-   __TEXT.__eh_frame: 0xbd8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x208
-   __DATA_CONST.__objc_arraydata: 0x198
--  __DATA_CONST.__got: 0xe20
--  __AUTH_CONST.__const: 0x2310
-+  __DATA_CONST.__got: 0xe28
-+  __AUTH_CONST.__const: 0x2358
-   __AUTH_CONST.__cfstring: 0x3c40
-   __AUTH_CONST.__objc_const: 0xf560
-   __AUTH_CONST.__objc_arrayobj: 0x150
-   __AUTH_CONST.__objc_intobj: 0x540
-   __AUTH_CONST.__objc_doubleobj: 0x120
--  __AUTH_CONST.__auth_got: 0x1820
-+  __AUTH_CONST.__auth_got: 0x1830
-   __AUTH.__objc_data: 0x2140
-   __AUTH.__data: 0xf50
-   __DATA.__objc_ivar: 0x808
--  __DATA.__data: 0x1508
-+  __DATA.__data: 0x1530
-   __DATA.__common: 0x43a0
-   __DATA_DIRTY.__objc_data: 0x500
-   __DATA_DIRTY.__data: 0x98
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6081
 -  Symbols:   5216
 +  Functions: 6095
 +  Symbols:   5225
-   CStrings:  1046
- 
 Symbols:
 + _associated conformance 9FitnessUI32CircularComplicationContentFrame33_1C914A9F54FF27A449025B226BB1D356LLV05SwiftB012ViewModifierAA4BodyAeFP_AE0P0
 + _get_witness_table 7SwiftUI14GeometryReaderVyAA15ModifiedContentVyAEyAA014_ViewModifier_F0Vy07FitnessB0020CircularComplicationF5Frame33_1C914A9F54FF27A449025B226BB1D356LLVGAA01_L6LayoutVGAA05_FlexlU0VGGAA0G0HPyHC

@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/HomeUICommon.framework/HomeUICommon`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_214371b74 -> sub_214b4fb74 : 680 -> 684

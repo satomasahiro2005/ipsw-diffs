@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ReplicatorCore.framework/ReplicatorCore`
 
-```diff
+### Section Size Changes
 
- 176.0.0.0.0
--  __TEXT.__text: 0x7cf58
-+  __TEXT.__text: 0x7ceec
-   __TEXT.__objc_methlist: 0x660
-   __TEXT.__const: 0xf88
-   __TEXT.__constg_swiftt: 0xdb8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7cf58` | `0x7ceec` | **`-0x6c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_23e60ad58 -> sub_23ef46d58 : 3824 -> 3832
 ~ sub_23e60de70 -> sub_23ef49e78 : 14508 -> 14560

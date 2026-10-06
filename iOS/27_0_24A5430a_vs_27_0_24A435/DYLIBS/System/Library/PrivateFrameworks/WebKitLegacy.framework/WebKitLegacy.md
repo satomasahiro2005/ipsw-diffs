@@ -2,21 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/WebKitLegacy.framework/WebKitLegacy`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1651c4` | `0x16536c` | **`+0x1a8`** |
+| `__TEXT.__gcc_except_tab` | `0x13200` | `0x13244` | **`+0x44`** |
+
+### Other Changes
+
 ```diff
 
 -625.1.29.10.28
--  __TEXT.__text: 0x1651c4
 +625.1.29.10.29
-+  __TEXT.__text: 0x16536c
-   __TEXT.__objc_methlist: 0xf5f0
-   __TEXT.__const: 0x294
-   __TEXT.__getClass_cstr: 0x12
-   __TEXT.__dlsym_cstr: 0x39
--  __TEXT.__gcc_except_tab: 0x13200
-+  __TEXT.__gcc_except_tab: 0x13244
-   __TEXT.__cstring: 0x1c8d9
-   __TEXT.__oslogstring: 0x14a
-   __TEXT.__unwind_info: 0x9560
 Functions:
 ~ __ZN22BinaryPropertyListPlan17writeIntegerArrayEPKim : 868 -> 872
 ~ __ZN3WTF9HashTableI12IntegerArrayNS_12KeyValuePairIS1_mEENS_24KeyValuePairKeyExtractorIS3_EE16IntegerArrayHashNS_7HashMapIS1_mS6_22IntegerArrayHashTraitsNS_10HashTraitsImEENS_15HashTableTraitsELNS_17ShouldValidateKeyE1ENS_10FastMallocEE18KeyValuePairTraitsES8_SD_E6rehashENS_7CheckedIjNS_15CrashOnOverflowEEEPS3_ : 456 -> 460

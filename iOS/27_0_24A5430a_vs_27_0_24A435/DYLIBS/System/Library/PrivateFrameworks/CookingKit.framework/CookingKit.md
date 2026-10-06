@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CookingKit.framework/CookingKit`
 
-```diff
+### Section Size Changes
 
- 5934.3.0.0.0
--  __TEXT.__text: 0x36ad1c
-+  __TEXT.__text: 0x36ae28
-   __TEXT.__objc_methlist: 0xbc0
-   __TEXT.__const: 0x3abe4
-   __TEXT.__cstring: 0x7402
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x36ad1c` | `0x36ae28` | **`+0x10c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_2172cef40 -> sub_217aadf40 : 1040 -> 1044
 ~ sub_2172e4b4c -> sub_217ac3b50 : 244 -> 248

@@ -2,20 +2,21 @@
 
 > `/usr/bin/zprint`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2748` | `0x273c` | **`-0xc`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 1071.0.1.0.0
--  __TEXT.__text: 0x2748
-+  __TEXT.__text: 0x273c
-   __TEXT.__auth_stubs: 0x240
-   __TEXT.__const: 0x40
-   __TEXT.__cstring: 0xfcd
+```text
 Functions:
 ~ sub_100000828 : 3812 -> 3800
 ```

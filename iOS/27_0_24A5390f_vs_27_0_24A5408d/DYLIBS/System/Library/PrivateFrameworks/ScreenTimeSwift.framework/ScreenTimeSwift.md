@@ -2,94 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/ScreenTimeSwift.framework/ScreenTimeSwift`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x853c4` | `0x93f84` | **`+0xebc0`** |
+| `__TEXT.__eh_frame` | `0x3150` | `0x36a0` | **`+0x550`** |
+| `__TEXT.__const` | `0x440c` | `0x484c` | **`+0x440`** |
+| `__TEXT.__oslogstring` | `0x239f` | `0x27cf` | **`+0x430`** |
+| `__TEXT.__swift5_typeref` | `0x1730` | `0x1a64` | **`+0x334`** |
+| `__AUTH_CONST.__const` | `0x2c70` | `0x2ef8` | **`+0x288`** |
+| `__TEXT.__unwind_info` | `0x1790` | `0x19e8` | **`+0x258`** |
+| `__DATA.__bss` | `0x59b0` | `0x5bb0` | **`+0x200`** |
+| `__DATA.__data` | `0xf30` | `0x10f8` | **`+0x1c8`** |
+| `__AUTH.__data` | `0x98` | `0x258` | **`+0x1c0`** |
+| `__AUTH_CONST.__objc_const` | `0xfc8` | `0x1110` | **`+0x148`** |
+| `__TEXT.__constg_swiftt` | `0x10c8` | `0x1200` | **`+0x138`** |
+| `__TEXT.__swift5_reflstr` | `0x1cfb` | `0x1e2b` | **`+0x130`** |
+| `__TEXT.__swift5_fieldmd` | `0x1350` | `0x1474` | **`+0x124`** |
+| `__AUTH_CONST.__auth_got` | `0x13a8` | `0x1498` | **`+0xf0`** |
+| `__TEXT.__cstring` | `0xe17` | `0xed7` | **`+0xc0`** |
+| `__TEXT.__swift_as_cont` | `0x15c` | `0x1b8` | **`+0x5c`** |
+| `__AUTH.__objc_data` | `—` | `0x50` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0xdb8` | `0xe08` | **`+0x50`** |
+| `__TEXT.__swift5_capture` | `0x384` | `0x3c4` | **`+0x40`** |
+| `__TEXT.__swift_as_entry` | `0xbc` | `0xf0` | **`+0x34`** |
+| `__TEXT.__swift_as_ret` | `0xd0` | `0x104` | **`+0x34`** |
+| `__TEXT.__swift5_assocty` | `0x1b0` | `0x1e0` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x248` | `0x270` | **`+0x28`** |
+| `__TEXT.__swift5_proto` | `0x318` | `0x334` | **`+0x1c`** |
+| `__TEXT.__swift5_types` | `0x130` | `0x140` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `0x2c` | `0x38` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x18` | `0x20` | **`+0x8`** |
+| `__DATA_DIRTY.__data` | `0x1490` | `0x1498` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -649.0.0.0.0
--  __TEXT.__text: 0x853c4
--  __TEXT.__objc_methlist: 0x248
--  __TEXT.__const: 0x440c
--  __TEXT.__swift5_typeref: 0x1730
--  __TEXT.__swift5_capture: 0x384
--  __TEXT.__cstring: 0xe17
--  __TEXT.__oslogstring: 0x239f
--  __TEXT.__swift5_reflstr: 0x1cfb
--  __TEXT.__swift5_assocty: 0x1b0
--  __TEXT.__swift5_fieldmd: 0x1350
--  __TEXT.__constg_swiftt: 0x10c8
 +655.0.101.0.0
-+  __TEXT.__text: 0x93f84
-+  __TEXT.__objc_methlist: 0x270
-+  __TEXT.__const: 0x484c
-+  __TEXT.__swift5_typeref: 0x1a64
-+  __TEXT.__swift5_capture: 0x3c4
-+  __TEXT.__cstring: 0xed7
-+  __TEXT.__oslogstring: 0x27cf
-+  __TEXT.__swift5_reflstr: 0x1e2b
-+  __TEXT.__swift5_assocty: 0x1e0
-+  __TEXT.__swift5_fieldmd: 0x1474
-+  __TEXT.__constg_swiftt: 0x1200
-   __TEXT.__swift5_builtin: 0xa0
--  __TEXT.__swift5_protos: 0x2c
--  __TEXT.__swift5_proto: 0x318
--  __TEXT.__swift5_types: 0x130
--  __TEXT.__swift_as_entry: 0xbc
--  __TEXT.__swift_as_ret: 0xd0
--  __TEXT.__swift_as_cont: 0x15c
--  __TEXT.__unwind_info: 0x1790
--  __TEXT.__eh_frame: 0x3150
-+  __TEXT.__swift5_protos: 0x38
-+  __TEXT.__swift5_proto: 0x334
-+  __TEXT.__swift5_types: 0x140
-+  __TEXT.__swift_as_entry: 0xf0
-+  __TEXT.__swift_as_ret: 0x104
-+  __TEXT.__swift_as_cont: 0x1b8
-+  __TEXT.__unwind_info: 0x19e8
-+  __TEXT.__eh_frame: 0x36a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x2c8
--  __DATA_CONST.__objc_classlist: 0x18
-+  __DATA_CONST.__objc_classlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xdb8
-+  __DATA_CONST.__objc_selrefs: 0xe08
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2c70
--  __AUTH_CONST.__objc_const: 0xfc8
--  __AUTH_CONST.__auth_got: 0x13a8
--  __AUTH.__data: 0x98
--  __DATA.__data: 0xf30
--  __DATA.__bss: 0x59b0
-+  __AUTH_CONST.__const: 0x2ef8
-+  __AUTH_CONST.__objc_const: 0x1110
-+  __AUTH_CONST.__auth_got: 0x1498
-+  __AUTH.__objc_data: 0x50
-+  __AUTH.__data: 0x258
-+  __DATA.__data: 0x10f8
-+  __DATA.__bss: 0x5bb0
-   __DATA.__common: 0x68
-   __DATA_DIRTY.__objc_data: 0xf0
--  __DATA_DIRTY.__data: 0x1490
-+  __DATA_DIRTY.__data: 0x1498
-   __DATA_DIRTY.__bss: 0x280
-   __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2157
--  Symbols:   1291
+-  Symbols:   879
 -  CStrings:  220
 +  Functions: 2338
-+  Symbols:   1342
++  Symbols:   923
 +  CStrings:  235
- 
 Symbols:
 + _OBJC_CLASS_$_NSManagedObjectID
 + _OBJC_CLASS_$_STAppInfo
@@ -103,14 +62,6 @@ Symbols:
 + ___swift_memcpy6_1
 + _associated conformance 15ScreenTimeSwift21SignedOutUserAgeRangeOSHAASQ
 + _associated conformance 15ScreenTimeSwift21SignedOutUserAgeRangeOs12CaseIterableAA8AllCasessADP_Sl
-+ _objc_msgSend$displayNameForUsageLimitWithCategoryIdentifiers:bundleIdentifiers:webDomains:
-+ _objc_msgSend$familySettings
-+ _objc_msgSend$fetchAppInfoForBundleIdentifiers:completionHandler:
-+ _objc_msgSend$isFamilyOrganizer
-+ _objc_msgSend$isInFamily
-+ _objc_msgSend$setAllowedSiriVersionFooterHidden:
-+ _objc_msgSend$setSiriAIIsHidden:
-+ _objc_msgSend$sharedCache
 + _symbolic $s15ScreenTimeSwift28SignedOutUserAgeRangeLoadingP
 + _symbolic $s15ScreenTimeSwift28SignedOutUserAgeRangeStoringP
 + _symbolic $s15ScreenTimeSwift32RegulatoryRestrictionsReapplyingP
@@ -150,7 +101,6 @@ Symbols:
 - ___swift_closure_destructor.11Tm
 - ___swift_closure_destructor.62Tm
 - ___swift_memcpy5_1
-- _objc_msgSend$limitDisplayName
 - _swift_retain_x8
 CStrings:
 + "A Downtime Simple Schedule was provided, but Downtime is not translated to New Screen Time and is being dropped."

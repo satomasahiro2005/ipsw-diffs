@@ -2,95 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/MediaAnalysis.framework/MediaAnalysis`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4c7ab4` | `0x46a81c` | **`-0x5d298`** |
+| `__TEXT.__cstring` | `0x2c473` | `0x1fd53` | **`-0xc720`** |
+| `__TEXT.__gcc_except_tab` | `0x676c8` | `0x6476c` | **`-0x2f5c`** |
+| `__TEXT.__oslogstring` | `0x325eb` | `0x30b7b` | **`-0x1a70`** |
+| `__AUTH_CONST.__const` | `0x75c8` | `0x63a8` | **`-0x1220`** |
+| `__AUTH_CONST.__cfstring` | `0x1e560` | `0x1d4a0` | **`-0x10c0`** |
+| `__TEXT.__unwind_info` | `0x13f08` | `0x133b0` | **`-0xb58`** |
+| `__DATA.__bss` | `0x34e9` | `0x30d9` | **`-0x410`** |
+| `__DATA_DIRTY.__bss` | `0x938` | `0x758` | **`-0x1e0`** |
+| `__DATA.__data` | `0x200c` | `0x1efc` | **`-0x110`** |
+| `__DATA_CONST.__const` | `0x7bd0` | `0x7b50` | **`-0x80`** |
+| `__AUTH_CONST.__objc_const` | `0x41a10` | `0x41a30` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x38d0` | `0x38b8` | **`-0x18`** |
+| `__DATA_CONST.__got` | `0x2558` | `0x2548` | **`-0x10`** |
+| `__TEXT.__const` | `0x16618` | `0x16608` | **`-0x10`** |
+| `__TEXT.__objc_methlist` | `0x22b78` | `0x22b88` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x2570` | `0x2568` | **`-0x8`** |
+| `__DATA_DIRTY.__data` | `0x2b8` | `0x2b0` | **`-0x8`** |
+| `__DATA.__objc_ivar` | `0x368c` | `0x3690` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -435.73.2.0.0
--  __TEXT.__text: 0x4c7ab4
 +435.79.1.4.0
-+  __TEXT.__text: 0x46a81c
-   __TEXT.__delay_stubs: 0xc0
-   __TEXT.__delay_helper: 0xa4
--  __TEXT.__objc_methlist: 0x22b78
--  __TEXT.__const: 0x16618
--  __TEXT.__gcc_except_tab: 0x676c8
--  __TEXT.__cstring: 0x2c473
--  __TEXT.__oslogstring: 0x325eb
-+  __TEXT.__objc_methlist: 0x22b88
-+  __TEXT.__const: 0x16608
-+  __TEXT.__gcc_except_tab: 0x6476c
-+  __TEXT.__cstring: 0x1fd53
-+  __TEXT.__oslogstring: 0x30b7b
-   __TEXT.__dlopen_cstrs: 0x4b8
-   __TEXT.__ustring: 0x40
-   __TEXT.__swift5_typeref: 0x9dc
 
-   __TEXT.__swift_as_ret: 0x90
-   __TEXT.__swift_as_cont: 0xd8
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x13f08
-+  __TEXT.__unwind_info: 0x133b0
-   __TEXT.__eh_frame: 0x1a20
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7bd0
-+  __DATA_CONST.__const: 0x7b50
-   __DATA_CONST.__objc_classlist: 0x15b8
-   __DATA_CONST.__objc_catlist: 0x1c8
-   __DATA_CONST.__objc_protolist: 0x140
-
-   __DATA_CONST.__objc_protorefs: 0x60
-   __DATA_CONST.__objc_superrefs: 0xfa0
-   __DATA_CONST.__objc_arraydata: 0x12c0
--  __DATA_CONST.__got: 0x2558
--  __AUTH_CONST.__const: 0x75c8
--  __AUTH_CONST.__cfstring: 0x1e560
--  __AUTH_CONST.__objc_const: 0x41a10
-+  __DATA_CONST.__got: 0x2548
-+  __AUTH_CONST.__const: 0x63a8
-+  __AUTH_CONST.__cfstring: 0x1d4a0
-+  __AUTH_CONST.__objc_const: 0x41a30
-   __AUTH_CONST.__weak_auth_got: 0x80
-   __AUTH_CONST.__objc_floatobj: 0x2f0
-   __AUTH_CONST.__objc_arrayobj: 0xcf0
-   __AUTH_CONST.__objc_doubleobj: 0x490
--  __AUTH_CONST.__objc_intobj: 0x38d0
-+  __AUTH_CONST.__objc_intobj: 0x38b8
-   __AUTH_CONST.__objc_dictobj: 0xc8
--  __AUTH_CONST.__auth_got: 0x2570
-+  __AUTH_CONST.__auth_got: 0x2568
-   __AUTH.__objc_data: 0x2f0
-   __AUTH.__data: 0x118
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x10
--  __DATA.__objc_ivar: 0x368c
--  __DATA.__data: 0x200c
--  __DATA.__bss: 0x34e9
-+  __DATA.__objc_ivar: 0x3690
-+  __DATA.__data: 0x1efc
-+  __DATA.__bss: 0x30d9
-   __DATA.__common: 0x3c1
-   __DATA_DIRTY.__objc_data: 0xdc28
--  __DATA_DIRTY.__data: 0x2b8
--  __DATA_DIRTY.__bss: 0x938
-+  __DATA_DIRTY.__data: 0x2b0
-+  __DATA_DIRTY.__bss: 0x758
-   __DATA_DIRTY.__common: 0x30
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 20099
--  Symbols:   34714
+-  Symbols:   28485
 -  CStrings:  8909
 +  Functions: 16456
-+  Symbols:   34329
++  Symbols:   28099
 +  CStrings:  8322
- 
 Symbols:
 + +[MADEmbeddingStore embeddingStoreDirectoryForPhotoLibraryURL:]
 + +[MADVectorDatabaseManager _databaseDirectoryURLForPhotoLibraryURL:embeddingType:]
@@ -128,14 +76,6 @@ Symbols:
 + ___91-[VCPCaptureAnalysisSession analyzePixelBuffer:withTimestamp:andDuration:properties:error:]_block_invoke_2
 + ___91-[VCPCaptureAnalysisSession analyzePixelBuffer:withTimestamp:andDuration:properties:error:]_block_invoke_3
 + _e5rt_precompiled_compute_op_create_options_set_iosurface_memory_pool_id
-+ _objc_msgSend$_databaseDirectoryURLForPhotoLibraryURL:embeddingType:
-+ _objc_msgSend$accumulateInt64Value:forField:andEvent:
-+ _objc_msgSend$createPrecompiledOp:isPrecompiled:functionName:computeOpConfig:
-+ _objc_msgSend$databaseDirectoryURLForPhotoLibraryURL:embeddingType:
-+ _objc_msgSend$embeddingStoreDirectoryForPhotoLibraryURL:
-+ _objc_msgSend$initWithOptions:framesPerSync:frameLimit:sensitiveFrameCountThreshold:goreFrameCountThreshold:violentFrameCountThreshold:useUniformSampling:
-+ _objc_msgSend$isSystemPhotoLibraryURL:
-+ _objc_msgSend$mad_mediaAnalysisDirectoryForPhotoLibraryURL:
 + _sandbox_extension_issue_file_to_self
 - +[MADEmbeddingStore embeddingStoreDirectoryForPhotoLibrary:]
 - +[MADVectorDatabaseManager databaseDirectoryURLForPhotoLibrary:embeddingType:]
@@ -556,13 +496,6 @@ Symbols:
 - _mach_host_self
 - _mad_includeEntityNet.include
 - _mad_includeEntityNet.once
-- _objc_msgSend$_enableCoreDataMultithreadedAsserts
-- _objc_msgSend$createPrecompiledOp:isPrecompiled:functionName:computeUnits:aneVariantHint:
-- _objc_msgSend$databaseDirectoryURLForPhotoLibrary:embeddingType:
-- _objc_msgSend$initWithOptions:framesPerSync:frameLimit:sensitiveFrameCountThreshold:useUniformSampling:
-- _objc_msgSend$initWithSuiteName:
-- _objc_msgSend$processIdentifier
-- _objc_msgSend$tokenSegments
 - _proc_pid_rusage
 - _usePHAssetScene.once
 - _usePHAssetScene.use

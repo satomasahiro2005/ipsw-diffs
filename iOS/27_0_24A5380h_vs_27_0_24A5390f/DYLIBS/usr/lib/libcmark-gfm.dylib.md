@@ -2,27 +2,11 @@
 
 > `/usr/lib/libcmark-gfm.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__const`
-- `__AUTH_CONST.__const`
-- `__AUTH.__data`
-
-```diff
-
-   __AUTH_CONST.__const: 0x28
-   __AUTH_CONST.__auth_got: 0xf8
-   __AUTH.__data: 0x50
--  __DATA.__data: 0x150
--  __DATA.__bss: 0x210
-+  __DATA.__data: 0x110
-   __DATA.__common: 0x1
--  __DATA_DIRTY.__data: 0xc
--  __DATA_DIRTY.__bss: 0x10
-+  __DATA.__bss: 0x150
-+  __DATA_DIRTY.__data: 0x4c
-+  __DATA_DIRTY.__bss: 0xd0
-   __DATA_DIRTY.__common: 0x10
-   - /usr/lib/libSystem.B.dylib
-   Functions: 467
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x210` | `0x150` | **`-0xc0`** |
+| `__DATA_DIRTY.__bss` | `0x10` | `0xd0` | **`+0xc0`** |
+| `__DATA.__data` | `0x150` | `0x110` | **`-0x40`** |
+| `__DATA_DIRTY.__data` | `0xc` | `0x4c` | **`+0x40`** |

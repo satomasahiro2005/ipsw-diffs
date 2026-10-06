@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ProactivePredictionClient.framework/ProactivePredictionClient`
 
-```diff
+### Section Size Changes
 
- 671.0.2.0.1
--  __TEXT.__text: 0x25c80
-+  __TEXT.__text: 0x25c84
-   __TEXT.__objc_methlist: 0x47c
-   __TEXT.__const: 0x23f0
-   __TEXT.__gcc_except_tab: 0x18
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x25c80` | `0x25c84` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_29a53aa60 -> sub_29b2c6a60 : 13348 -> 13352
+~ sub_29a41fa60 -> sub_29b1a9a60 : 13348 -> 13352
 ```

@@ -2,66 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/ANECompiler.framework/ANECompiler`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ca50c0` | `0x1cc0cc0` | **`+0x1bc00`** |
+| `__TEXT.__const` | `0xc65ae` | `0xc91ee` | **`+0x2c40`** |
+| `__TEXT.__cstring` | `0x122ed5` | `0x125409` | **`+0x2534`** |
+| `__TEXT.__gcc_except_tab` | `0xd7444` | `0xd8f90` | **`+0x1b4c`** |
+| `__AUTH_CONST.__const` | `0xb1400` | `0xb2900` | **`+0x1500`** |
+| `__TEXT.__unwind_info` | `0x692b8` | `0x69ba0` | **`+0x8e8`** |
+| `__TEXT.__oslogstring` | `0x1fc67` | `0x2006a` | **`+0x403`** |
+| `__AUTH_CONST.__cfstring` | `0x9d00` | `0x9da0` | **`+0xa0`** |
+| `__DATA.__data` | `0xc740` | `0xc7c8` | **`+0x88`** |
+| `__DATA_CONST.__const` | `0x5ae8` | `0x5b40` | **`+0x58`** |
+| `__AUTH.__data` | `0x6678` | `0x6690` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x1218` | `0x1228` | **`+0x10`** |
+| `__DATA.__bss` | `0x13f10` | `0x13f20` | **`+0x10`** |
+| `__DATA.__common` | `0x2b58` | `0x2b60` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1ca50c0
-+  __TEXT.__text: 0x1cc0cc0
-   __TEXT.__init_offsets: 0x8
--  __TEXT.__const: 0xc65ae
--  __TEXT.__cstring: 0x122ed5
--  __TEXT.__oslogstring: 0x1fc67
--  __TEXT.__gcc_except_tab: 0xd7444
--  __TEXT.__unwind_info: 0x692b8
-+  __TEXT.__const: 0xc91ee
-+  __TEXT.__cstring: 0x125409
-+  __TEXT.__oslogstring: 0x2006a
-+  __TEXT.__gcc_except_tab: 0xd8f90
-+  __TEXT.__unwind_info: 0x69ba0
-   __TEXT.__eh_frame: 0x2bdc
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x5ae8
-+  __DATA_CONST.__const: 0x5b40
-   __DATA_CONST.__weak_got: 0x18
-   __DATA_CONST.__got: 0x1f0
--  __AUTH_CONST.__const: 0xb1400
--  __AUTH_CONST.__cfstring: 0x9d00
-+  __AUTH_CONST.__const: 0xb2900
-+  __AUTH_CONST.__cfstring: 0x9da0
-   __AUTH_CONST.__weak_auth_got: 0x50
--  __AUTH_CONST.__auth_got: 0x1218
--  __AUTH.__data: 0x6678
-+  __AUTH_CONST.__auth_got: 0x1228
-+  __AUTH.__data: 0x6690
-   __AUTH.__thread_vars: 0x198
-   __AUTH.__thread_data: 0x1
-   __AUTH.__thread_bss: 0x1b8
--  __DATA.__data: 0xc740
-+  __DATA.__data: 0xc7c8
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x13f10
--  __DATA.__common: 0x2b58
-+  __DATA.__bss: 0x13f20
-+  __DATA.__common: 0x2b60
-   __DATA_DIRTY.__data: 0x80
-   __DATA_DIRTY.__bss: 0x2138
-   __DATA_DIRTY.__common: 0x58
+-10.22.3.0.0
++10.23.3.0.0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libncurses.5.4.dylib
 -  Functions: 122731
--  Symbols:   373897
--  CStrings:  28889
+-  Symbols:   161130
+-  CStrings:  27587
 +  Functions: 123318
-+  Symbols:   375885
-+  CStrings:  29058
- 
-Sections:
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__thread_vars : content changed
++  Symbols:   162092
++  CStrings:  27751
 Symbols:
 + GCC_except_table1103
 + GCC_except_table1105
@@ -3462,5 +3434,4 @@ CStrings:
 - "in_fmt != ane_common_ch_cfg_in_fmt_e4_m3_v36"
 - "plist"
 - "task-level await token must be produced by 'anehlo.store' or 'anehlo.dst'"
-
 ```

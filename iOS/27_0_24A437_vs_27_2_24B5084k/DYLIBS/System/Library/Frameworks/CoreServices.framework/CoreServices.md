@@ -2,75 +2,38 @@
 
 > `/System/Library/Frameworks/CoreServices.framework/CoreServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c7974` | `0x1cd208` | **`+0x5894`** |
+| `__TEXT.__gcc_except_tab` | `0x29618` | `0x2a0f4` | **`+0xadc`** |
+| `__TEXT.__cstring` | `0x28c90` | `0x29500` | **`+0x870`** |
+| `__TEXT.__oslogstring` | `0x1667b` | `0x16b4b` | **`+0x4d0`** |
+| `__AUTH_CONST.__cfstring` | `0x17a60` | `0x17d20` | **`+0x2c0`** |
+| `__TEXT.__unwind_info` | `0xc630` | `0xc790` | **`+0x160`** |
+| `__DATA_CONST.__const` | `0x7478` | `0x75b0` | **`+0x138`** |
+| `__TEXT.__objc_methlist` | `0xe1fc` | `0xe2e4` | **`+0xe8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6548` | `0x65e0` | **`+0x98`** |
+| `__AUTH_CONST.__objc_const` | `0x156e8` | `0x15748` | **`+0x60`** |
+| `__AUTH_CONST.__const` | `0x3bb0` | `0x3be8` | **`+0x38`** |
+| `__AUTH_CONST.__objc_intobj` | `0x7f8` | `0x7e0` | **`-0x18`** |
+| `__TEXT.__const` | `0x9b0` | `0x9c0` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0xbf0` | `0xbf8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1517.0.1.0.0
--  __TEXT.__text: 0x1c09bc
 +1517.1.8.0.0
-+  __TEXT.__text: 0x1c61c8
-   __TEXT.__delay_helper: 0x1b8
-   __TEXT.__lazy_helpers: 0xa8
--  __TEXT.__objc_methlist: 0xe1fc
--  __TEXT.__const: 0x9b0
--  __TEXT.__cstring: 0x28c90
--  __TEXT.__oslogstring: 0x1667b
--  __TEXT.__gcc_except_tab: 0x29618
-+  __TEXT.__objc_methlist: 0xe2e4
-+  __TEXT.__const: 0x9c0
-+  __TEXT.__cstring: 0x29500
-+  __TEXT.__oslogstring: 0x16b4b
-+  __TEXT.__gcc_except_tab: 0x2a0f4
-   __TEXT.__ustring: 0x23c
--  __TEXT.__unwind_info: 0xdaf8
-+  __TEXT.__unwind_info: 0xdc78
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7478
-+  __DATA_CONST.__const: 0x75b0
-   __DATA_CONST.__objc_classlist: 0x7b0
-   __DATA_CONST.__objc_catlist: 0x78
-   __DATA_CONST.__objc_protolist: 0x180
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6548
-+  __DATA_CONST.__objc_selrefs: 0x65e0
-   __DATA_CONST.__objc_protorefs: 0x90
-   __DATA_CONST.__objc_superrefs: 0x640
-   __DATA_CONST.__objc_arraydata: 0x990
-   __DATA_CONST.__got: 0xbb8
--  __AUTH_CONST.__const: 0x3bb0
--  __AUTH_CONST.__cfstring: 0x17a60
--  __AUTH_CONST.__objc_const: 0x156e8
-+  __AUTH_CONST.__const: 0x3be8
-+  __AUTH_CONST.__cfstring: 0x17d20
-+  __AUTH_CONST.__objc_const: 0x15748
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__lazy_load_got: 0x10
--  __AUTH_CONST.__objc_intobj: 0x7f8
-+  __AUTH_CONST.__objc_intobj: 0x7e0
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_arrayobj: 0x150
-   __AUTH_CONST.__auth_got: 0x1968
-   __AUTH.__objc_data: 0x33b8
-   __AUTH.__data: 0x318
--  __DATA.__objc_ivar: 0xbf0
-+  __DATA.__objc_ivar: 0xbf8
-   __DATA.__data: 0x15c4
-   __DATA.__common: 0x40
-   __DATA_DIRTY.__objc_data: 0x1928
 
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 9545
--  Symbols:   16488
+-  Symbols:   14243
 -  CStrings:  6050
 +  Functions: 9604
-+  Symbols:   16564
++  Symbols:   14309
 +  CStrings:  6105
- 
 Symbols:
 + +[LSApplicationIdentity(Conveniences) applicationIdentityForJobLabel:error:]
 + +[LSApplicationRecord(AppReplacement) applicationRecordForPotentiallyReplacedBundleIdentifier:fetchingPlaceholder:error:]
@@ -232,17 +195,6 @@ Symbols:
 + ___destroy_helper_block_ea8_48c40_ZTSN14LaunchServices16BindingEvaluatorE
 + _kLSCanMigrateApplicationPreferencesEntitlement
 + _kLSCanSetSystemBuildVersionEntitlement
-+ _objc_msgSend$_bundleRecordForApplicationIdentifier:context:pluginFindOptions:error:
-+ _objc_msgSend$appReplacementSourceBundleIdentifier
-+ _objc_msgSend$findApplicationRecordWithError:
-+ _objc_msgSend$initWithJobLabel:error:
-+ _objc_msgSend$jobLabel
-+ _objc_msgSend$migrateBundleIdentifier:toBundleIdentifier:
-+ _objc_msgSend$migratePreferencesFromBundleIdentifier:toBundleIdentifier:destinationBundleVersion:completionHandler:
-+ _objc_msgSend$setAppReplacementSourceBundleIdentifier:
-+ _objc_msgSend$setAppReplacementSourceBundleIdentifier:forApplicationWithBundleIdentifier:operationUUID:reply:
-+ _objc_msgSend$setSystemBuildVersion:completionHandler:
-+ _objc_msgSend$shouldBeAlwaysAvailable
 - -[ICLBundleRecord(LSTransitional) ls_associatedPersonasIfAvailable]
 - GCC_except_table132
 - GCC_except_table158
@@ -337,7 +289,6 @@ Symbols:
 - ___block_descriptor_80_e8_32s40s48s56s64n6_8_8_s0_e387_v28?0"_LSDatabase"8I16r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIIIICCIII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIIC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}II{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IQQQIIIIIIIIIIQIIQQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[1I]II{LSAppClipFields=I}iIIIIIIIiII}20l
 - _ls_associatedPersonasIfAvailable.onceToken
 - _ls_associatedPersonasIfAvailable.responds
-- _objc_msgSend$ls_associatedPersonasIfAvailable
 CStrings:
 + " 5#1%4#0\"2"
 + "#LSAppRestrictionsManager clearing all values"

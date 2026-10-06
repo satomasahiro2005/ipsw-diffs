@@ -2,17 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/AppUserEvents.framework/AppUserEvents`
 
-```diff
+### Section Size Changes
 
- 10.0.0.0.0
--  __TEXT.__text: 0x34b64
-+  __TEXT.__text: 0x34b74
-   __TEXT.__objc_methlist: 0x20
-   __TEXT.__const: 0x3208
-   __TEXT.__constg_swiftt: 0x1674
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x34b64` | `0x34b74` | **`+0x10`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_253042b04 -> sub_253a9bb04 : 720 -> 724
-~ sub_253043330 -> sub_253a9c334 : 348 -> 352
-~ sub_25304348c -> sub_253a9c494 : 400 -> 404
-~ sub_25304361c -> sub_253a9c628 : 356 -> 360
+~ sub_252f0cb04 -> sub_253964b04 : 720 -> 724
+~ sub_252f0d330 -> sub_253965334 : 348 -> 352
+~ sub_252f0d48c -> sub_253965494 : 400 -> 404
+~ sub_252f0d61c -> sub_253965628 : 356 -> 360
 ```

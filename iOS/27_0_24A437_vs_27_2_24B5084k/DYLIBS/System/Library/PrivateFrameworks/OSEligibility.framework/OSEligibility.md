@@ -2,65 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/OSEligibility.framework/OSEligibility`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e744` | `0x1eacc` | **`+0x388`** |
+| `__DATA.__bss` | `0x8508` | `0x8698` | **`+0x190`** |
+| `__TEXT.__const` | `0x5054` | `0x5134` | **`+0xe0`** |
+| `__TEXT.__cstring` | `0x8f8` | `0x948` | **`+0x50`** |
+| `__TEXT.__swift5_typeref` | `0xe7e` | `0xeb0` | **`+0x32`** |
+| `__TEXT.__swift5_fieldmd` | `0x1578` | `0x15a0` | **`+0x28`** |
+| `__TEXT.__constg_swiftt` | `0xb84` | `0xba8` | **`+0x24`** |
+| `__AUTH_CONST.__const` | `0x1728` | `0x1748` | **`+0x20`** |
+| `__DATA.__data` | `0x648` | `0x658` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x10f4` | `0x1104` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x938` | `0x948` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x408` | `0x414` | **`+0xc`** |
+| `__TEXT.__swift5_types` | `0x12c` | `0x130` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -446.2.3.0.0
--  __TEXT.__text: 0x1d5f0
 +446.40.34.502.1
-+  __TEXT.__text: 0x1d938
-   __TEXT.__objc_methlist: 0x17c
--  __TEXT.__const: 0x5054
--  __TEXT.__swift5_typeref: 0xe7e
-+  __TEXT.__const: 0x5134
-+  __TEXT.__swift5_typeref: 0xeb0
-   __TEXT.__oslogstring: 0x1d0
--  __TEXT.__cstring: 0x8f8
--  __TEXT.__constg_swiftt: 0xb84
--  __TEXT.__swift5_reflstr: 0x10f4
--  __TEXT.__swift5_fieldmd: 0x1578
-+  __TEXT.__cstring: 0x948
-+  __TEXT.__constg_swiftt: 0xba8
-+  __TEXT.__swift5_reflstr: 0x1104
-+  __TEXT.__swift5_fieldmd: 0x15a0
-   __TEXT.__swift5_builtin: 0x50
-   __TEXT.__swift5_mpenum: 0x18
-   __TEXT.__swift5_assocty: 0x30
--  __TEXT.__swift5_proto: 0x408
--  __TEXT.__swift5_types: 0x12c
-+  __TEXT.__swift5_proto: 0x414
-+  __TEXT.__swift5_types: 0x130
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__unwind_info: 0xc98
-+  __TEXT.__unwind_info: 0xcb0
-   __TEXT.__eh_frame: 0x750
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0x150
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__got: 0xb8
--  __AUTH_CONST.__const: 0x1728
-+  __AUTH_CONST.__const: 0x1748
-   __AUTH_CONST.__objc_const: 0x480
-   __AUTH_CONST.__auth_got: 0x4d8
-   __AUTH.__objc_data: 0x70
-   __AUTH.__data: 0x290
--  __DATA.__data: 0x648
-+  __DATA.__data: 0x658
-   __DATA.__common: 0x30
-   __DATA_DIRTY.__data: 0x10
-   __DATA_DIRTY.__bss: 0x100
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 931
--  Symbols:   547
+-  Symbols:   533
 -  CStrings:  61
 +  Functions: 939
-+  Symbols:   552
++  Symbols:   538
 +  CStrings:  63
- 
 Symbols:
 + _associated conformance 13OSEligibility0A5InputO31CellularCapableDeviceCodingKeys33_81A58D0714076A766F79E84CC064AF12LLOs0F3KeyAAs23CustomStringConvertible
 + _associated conformance 13OSEligibility0A5InputO31CellularCapableDeviceCodingKeys33_81A58D0714076A766F79E84CC064AF12LLOs0F3KeyAAs28CustomDebugStringConvertible

@@ -2,18 +2,22 @@
 
 > `/System/Library/NanoTimeKit/ComplicationBundles/NanoCalendarComplicationsCompanion.bundle/NanoCalendarComplicationsCompanion`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x3a0` | `0x3a8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__oslogstring`
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_superrefs: 0x68
-   __DATA_CONST.__objc_intobj: 0x48
-   __DATA_CONST.__auth_got: 0x328
--  __DATA_CONST.__got: 0x3a0
-+  __DATA_CONST.__got: 0x3a8
-   __DATA.__objc_const: 0x2500
-   __DATA.__objc_selrefs: 0x1060
-   __DATA.__objc_ivar: 0x118
-Sections:
-~ __TEXT.__oslogstring : content changed
+-744.0.0.0.0
++745.0.0.0.0
 CStrings:
 + "==> alerts_ttl [Jun 24 2026 00:36:46]"
 + "==> always_on_display [Jun 24 2026 00:36:46]"
@@ -61,5 +65,4 @@ CStrings:
 - "==> user_data_change [Jun 13 2026 02:04:01]"
 - "==> user_interaction [Jun 13 2026 02:04:01]"
 - "==> utility [Jun 13 2026 02:04:01]"
-
 ```

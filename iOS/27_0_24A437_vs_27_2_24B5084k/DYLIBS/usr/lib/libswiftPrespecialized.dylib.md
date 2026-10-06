@@ -2,27 +2,22 @@
 
 > `/usr/lib/libswiftPrespecialized.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__const` | `0x3c4ae8` | `0x3eaab0` | **`+0x25fc8`** |
+| `__AUTH.__data` | `0xd4590` | `0xd3bb8` | **`-0x9d8`** |
+| `__AUTH_CONST.__const` | `0x74110` | `0x73f28` | **`-0x1e8`** |
+| `__DATA_CONST.__ptrhashtabkey` | `0x325e8` | `0x32468` | **`-0x180`** |
+| `__DATA_CONST.__ptrhashtab` | `0x1ecb8` | `0x1ebb8` | **`-0x100`** |
+
+### Other Changes
+
 ```diff
 
- 0.0.0.0.0
-   __TEXT.__text: 0x0
-   __TEXT.__lldb_no_nlist: 0x0
--  __DATA_CONST.__const: 0x3c47c0
--  __DATA_CONST.__ptrhashtab: 0x1ecb8
--  __DATA_CONST.__ptrhashtabkey: 0x325e8
--  __AUTH_CONST.__const: 0x74110
--  __AUTH.__data: 0xd4590
-+  __DATA_CONST.__const: 0x3eaab0
-+  __DATA_CONST.__ptrhashtab: 0x1ebb8
-+  __DATA_CONST.__ptrhashtabkey: 0x32468
-+  __AUTH_CONST.__const: 0x73f28
-+  __AUTH.__data: 0xd3bb8
-   - /usr/lib/libSystem.B.dylib
-   Functions: 0
--  Symbols:   191431
+-  Symbols:   191491
 +  Symbols:   199170
-   CStrings:  0
- 
 Symbols:
 + _$s012HealthReportA6Daemon08HDHealthB11StateDomainC6domainACSo010HDKeyValueF0C_tcfCTq
 + _$s012HealthReportA6Daemon08HDHealthB11StateDomainCMn
@@ -5668,127 +5663,68 @@ Symbols:
 + _$s18AssetMetricsCoreV20A13BringUpStatusVMn
 + _$s18AssetMetricsCoreV20A14BringUpResultsVMn
 + _$s18AssetMetricsCoreV20A15BringUpReporterCMn
-+ _$s18AssetMetricsCoreV20A15PenetrationDataV10CodingKeysOMn
-+ _$s18AssetMetricsCoreV20A15PenetrationDataVMn
 + _$s18AssetMetricsCoreV20A17BringUpCalculatorCMn
 + _$s18AssetMetricsCoreV20A17BringUpDataRecordVMn
-+ _$s18AssetMetricsCoreV20A18PenetrationResultsVMn
 + _$s18AssetMetricsCoreV20A19BringUpDataProviderVMn
 + _$s18AssetMetricsCoreV20A19BringUpSELFReporterCMn
-+ _$s18AssetMetricsCoreV20A19PenetrationReporterCMn
-+ _$s18AssetMetricsCoreV20A21PenetrationCalculatorCMn
-+ _$s18AssetMetricsCoreV20A21PenetrationDataRecordVMn
-+ _$s18AssetMetricsCoreV20A23PenetrationDataProviderVMn
-+ _$s18AssetMetricsCoreV20A23PenetrationSELFReporterCMn
-+ _$s18AssetMetricsCoreV20a11PenetrationB0CMn
-+ _$s18AssetMetricsCoreV20a3SetD0VMn
 + _$s18AssetMetricsCoreV20a7BringUpB0CMn
-+ _$s18AssetMetricsCoreV20aB10PluginNameOMn
-+ _$s18AssetMetricsCoreV20aB11WorkerErrorOMn
-+ _$s18AssetMetricsCoreV20aB13ErrorCategoryOMn
-+ _$s18AssetMetricsCoreV20aB14CalculatorTypeOMn
-+ _$s18AssetMetricsCoreV20aB16ExecutionOutcomeOMn
-+ _$s18AssetMetricsCoreV20aB20UserDefinedFunctionsOMn
-+ _$s18AssetMetricsCoreV20aB6WorkerV7SubtaskOMn
-+ _$s18AssetMetricsCoreV20aB6WorkerVMn
-+ _$s18AssetMetricsCoreV20aB8ExecutorCMn
 + _$s18AssetMetricsCoreV20aB8SQLErrorVMn
 + _$s18AssetMetricsCoreV20aB9SQLEngineV11SeedRefusalVMn
 + _$s18AssetMetricsCoreV20aB9SQLEngineV13UnseedOutcomeVMn
 + _$s18AssetMetricsCoreV20aB9SQLEngineV7OptionsVMn
 + _$s18AssetMetricsCoreV20aB9SQLEngineVMn
-+ _$s18AssetMetricsCoreV20aD0VMn
-+ _$s18AssetMetricsCoreV20abC20AnalyticsStatsLoggerVMn
-+ _$s18AssetMetricsCoreV211RowRendererVMn
 + _$s18AssetMetricsCoreV211SQLPlanNodeVMn
 + _$s18AssetMetricsCoreV211SeedReceiptVMn
-+ _$s18AssetMetricsCoreV212BookmarkModeOMn
 + _$s18AssetMetricsCoreV212LastSQLErrorOMn
 + _$s18AssetMetricsCoreV212MemoryReportVMn
 + _$s18AssetMetricsCoreV212OutputFormatOMn
 + _$s18AssetMetricsCoreV212SQLPlanStatsOMn
-+ _$s18AssetMetricsCoreV213EventMetadataVMn
 + _$s18AssetMetricsCoreV213SQLStreamReadVMn
-+ _$s18AssetMetricsCoreV214BookmarkConfigVMn
 + _$s18AssetMetricsCoreV214CLIPluginEntryVMn
-+ _$s18AssetMetricsCoreV214CalculatorBaseMp
-+ _$s18AssetMetricsCoreV214FBFBugReporterMp
-+ _$s18AssetMetricsCoreV214TimestampedRowMp
-+ _$s18AssetMetricsCoreV215ExtensionsUtilsCMn
 + _$s18AssetMetricsCoreV215MemoryFootprintOMn
 + _$s18AssetMetricsCoreV215SELFSeedContextVMn
-+ _$s18AssetMetricsCoreV215SQLRowDecodableMp
 + _$s18AssetMetricsCoreV215SQLWorkCountersVMn
 + _$s18AssetMetricsCoreV216AdHocQueryRunnerOMn
-+ _$s18AssetMetricsCoreV216BookmarkStrategyOMn
 + _$s18AssetMetricsCoreV216CLIExtractedRowsMp
 + _$s18AssetMetricsCoreV216CLIPluginCatalogOMn
-+ _$s18AssetMetricsCoreV216CalculatorPluginMp
 + _$s18AssetMetricsCoreV216JetsamPropertiesOMn
-+ _$s18AssetMetricsCoreV216ReportingServiceMp
 + _$s18AssetMetricsCoreV216RunIdentifiedRowMp
-+ _$s18AssetMetricsCoreV216SELFEventFactoryMp
 + _$s18AssetMetricsCoreV216SeedReceiptStoreVMn
 + _$s18AssetMetricsCoreV218AIRAssetStatusDataV10CodingKeysOMn
 + _$s18AssetMetricsCoreV218AIRAssetStatusDataVMn
-+ _$s18AssetMetricsCoreV218BiomeStreamCatalogO5EntryVMn
-+ _$s18AssetMetricsCoreV218BiomeStreamCatalogOMn
-+ _$s18AssetMetricsCoreV218BookmarkGuardUtilsOMn
-+ _$s18AssetMetricsCoreV219BiomeCalculatorBaseMp
-+ _$s18AssetMetricsCoreV219BiomeResultsWrapperCMn
-+ _$s18AssetMetricsCoreV219CAAnalyticsEventingMp
-+ _$s18AssetMetricsCoreV219CalculatorConstantsOMn
 + _$s18AssetMetricsCoreV220BuildHistoryProviderOMn
-+ _$s18AssetMetricsCoreV220FBFBugReporterClientC5LevelOMn
-+ _$s18AssetMetricsCoreV220FBFBugReporterClientC7SubTypeOMn
-+ _$s18AssetMetricsCoreV220FBFBugReporterClientCMn
-+ _$s18AssetMetricsCoreV220SELFReportingServiceCMn
 + _$s18AssetMetricsCoreV220UEIInvocationFactoryVMn
 + _$s18AssetMetricsCoreV221AIRAssetStatusResultsVMn
-+ _$s18AssetMetricsCoreV221BiomeSQLDatabaseUtilsOMn
 + _$s18AssetMetricsCoreV221SeedInputAvailabilityOMn
 + _$s18AssetMetricsCoreV222AIRAssetStatusReporterCMn
-+ _$s18AssetMetricsCoreV222FBFErrorSubTypeContextOMn
-+ _$s18AssetMetricsCoreV223StreamBookmarkServicingMp
 + _$s18AssetMetricsCoreV224AIRAssetStatusCalculatorC6doWorkyAA0eF7ResultsVAA0eF10DataRecordVYaKFTq
 + _$s18AssetMetricsCoreV224AIRAssetStatusCalculatorCMn
 + _$s18AssetMetricsCoreV224AIRAssetStatusDataRecordVMn
-+ _$s18AssetMetricsCoreV224SELFEventFactoryRegistryOMn
-+ _$s18AssetMetricsCoreV225CAAnalyticsEventSubmitterCMn
 + _$s18AssetMetricsCoreV225CountedStreamVirtualTableCMn
 + _$s18AssetMetricsCoreV225ORCHRequestContextFactoryVMn
 + _$s18AssetMetricsCoreV226AIRAssetStatusDataProviderVMn
 + _$s18AssetMetricsCoreV226AIRAssetStatusSELFReporterCMn
-+ _$s18AssetMetricsCoreV226BiomeResultsWrapperFactoryCMn
-+ _$s18AssetMetricsCoreV226BiomeSQLDatabaseUtilsErrorOMn
 + _$s18AssetMetricsCoreV226CombinedAIRAssetStatusDataVMn
-+ _$s18AssetMetricsCoreV226DeviceAggregationIdFetcherCMn
 + _$s18AssetMetricsCoreV226SELFSeedRequestCorrelationO8ShapeTagOMn
 + _$s18AssetMetricsCoreV226SELFSeedRequestCorrelationOMn
 + _$s18AssetMetricsCoreV227AIRAvailabilityChangeStatusV10CodingKeysOMn
 + _$s18AssetMetricsCoreV227AIRAvailabilityChangeStatusVMn
 + _$s18AssetMetricsCoreV227MSUInstallTimestampResolverOMn
 + _$s18AssetMetricsCoreV227SADAssetBringUpStateFactoryVMn
-+ _$s18AssetMetricsCoreV228DIMDeviceFixedContextFactoryVMn
 + _$s18AssetMetricsCoreV228UEISiriWasUnavailableFactoryVMn
 + _$s18AssetMetricsCoreV229AIRAvailabilityDetailedStatusVMn
-+ _$s18AssetMetricsCoreV229CalculatorQueryDebugFormatterOMn
 + _$s18AssetMetricsCoreV229RequestWithNoAssetsCalculatorCMn
 + _$s18AssetMetricsCoreV231RequestWithNoAssetsSELFReporterCMn
-+ _$s18AssetMetricsCoreV232DIMSiriAccountInformationFactoryVMn
 + _$s18AssetMetricsCoreV232ORCHIFProxyRequestContextFactoryVMn
 + _$s18AssetMetricsCoreV232ORCHServerFallbackContextFactoryVMn
-+ _$s18AssetMetricsCoreV232SyntheticLookbackBookmarkServiceCMn
 + _$s18AssetMetricsCoreV234SADAvailabilityChangeStatusFactoryVMn
 + _$s18AssetMetricsCoreV236SADAvailabilityDetailedStatusFactoryVMn
 + _$s18AssetMetricsCoreV241ACTVActivationOutcomeMissingAssetsFactoryVMn
-+ _$s18AssetMetricsCoreV245DIMEphemeralToAggregationIdentifierMapFactoryVMn
 + _$s18AssetMetricsCoreV245MHAssistantDaemonAudioRecordingContextFactoryVMn
 + _$s18AssetMetricsCoreV27CLIRowsVMn
 + _$s18AssetMetricsCoreV27RowJSONOMn
 + _$s18AssetMetricsCoreV28SeedPlanV8OverrideVMn
 + _$s18AssetMetricsCoreV28SeedPlanVMn
-+ _$s18AssetMetricsCoreV29EventTypeOMn
 + _$s18AssetMetricsCoreV29SeedValueOMn
 + _$s18AudioAnalyticsBase10DomainViewVMn
 + _$s18AudioAnalyticsBase15StringKeyDomainMp
@@ -10894,6 +10830,7 @@ Symbols:
 - _$s18AppleMediaServices17BinaryResultModelOMn
 - _$s18AppleMediaServices21KeychainStoreProtocolP10deleteDataSbyFTq
 - _$s18AppleMediaServices9URLSentryCMo
+- _$s18AssetMetricsCoreV223StreamBookmarkServicingP15getTimeInterval9eventTypeSdSg26DeepThoughtBiomeFoundation05EventL0O_tFTq
 - _$s18DoNotDisturbServer25DNDSImmersiveSceneMonitorC27isCurrentlyInImmersiveSpaceSbvgTq
 - _$s18HealthExperienceUI14SceneProvidingMp
 - _$s18HealthExperienceUI16DynamicFontLabelCN

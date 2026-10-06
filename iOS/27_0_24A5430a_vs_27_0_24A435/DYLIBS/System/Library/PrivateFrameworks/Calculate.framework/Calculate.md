@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/Calculate.framework/Calculate`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd783c` | `0xd785c` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xf38` | `0xf40` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 243.0.0.0.0
--  __TEXT.__text: 0xd783c
-+  __TEXT.__text: 0xd785c
-   __TEXT.__objc_methlist: 0x25e8
-   __TEXT.__const: 0x13f3c0
-   __TEXT.__constg_swiftt: 0x1b0c
-
-   __AUTH_CONST.__objc_intobj: 0x450
-   __AUTH_CONST.__objc_arrayobj: 0x678
-   __AUTH_CONST.__objc_dictobj: 0xc8
--  __AUTH_CONST.__auth_got: 0xf38
-+  __AUTH_CONST.__auth_got: 0xf40
-   __AUTH.__objc_data: 0xd8
-   __DATA.__objc_ivar: 0x368
-   __DATA.__data: 0x2c8
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   Functions: 3285
--  Symbols:   3346
-+  Symbols:   3347
-   CStrings:  637
- 
+-  Symbols:   2761
++  Symbols:   2762
 Symbols:
 + _objc_retain_x10
 Functions:

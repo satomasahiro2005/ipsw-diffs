@@ -2,97 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/PersonalizationPortraitInternals.framework/PersonalizationPortraitInternals`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x19554c` | `0x197374` | **`+0x1e28`** |
+| `__TEXT.__oslogstring` | `0x1aa6e` | `0x1af18` | **`+0x4aa`** |
+| `__AUTH_CONST.__objc_const` | `0x1adf8` | `0x1b100` | **`+0x308`** |
+| `__TEXT.__objc_methlist` | `0x143ec` | `0x14564` | **`+0x178`** |
+| `__DATA.__bss` | `0x2f8` | `0x438` | **`+0x140`** |
+| `__DATA.__data` | `0x1780` | `0x18a0` | **`+0x120`** |
+| `__DATA_DIRTY.__bss` | `0x740` | `0x648` | **`-0xf8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xae68` | `0xaf58` | **`+0xf0`** |
+| `__DATA_DIRTY.__data` | `0x4a8` | `0x3e8` | **`-0xc0`** |
+| `__AUTH.__objc_data` | `0x1370` | `0x1410` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0x16d42` | `0x16dd5` | **`+0x93`** |
+| `__AUTH_CONST.__const` | `0x3708` | `0x3748` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x5678` | `0x56b8` | **`+0x40`** |
+| `__TEXT.__eh_frame` | `0x2c8` | `0x300` | **`+0x38`** |
+| `__DATA.__objc_ivar` | `0x1268` | `0x128c` | **`+0x24`** |
+| `__DATA_CONST.__got` | `0x1978` | `0x1998` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0xa60` | `0xa70` | **`+0x10`** |
+| `__TEXT.__const` | `0xdc6` | `0xdd6` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x888c` | `0x889c` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xf20` | `0xf28` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x218` | `0x220` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x718` | `0x720` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1346.0.1.0.0
--  __TEXT.__text: 0x18fa88
--  __TEXT.__objc_methlist: 0x143ec
--  __TEXT.__const: 0xdc6
 +1351.0.0.0.0
-+  __TEXT.__text: 0x191754
-+  __TEXT.__objc_methlist: 0x14564
-+  __TEXT.__const: 0xdd6
-   __TEXT.__dlopen_cstrs: 0x302
-   __TEXT.__constg_swiftt: 0x454
-   __TEXT.__swift5_typeref: 0x5fa
-   __TEXT.__swift5_fieldmd: 0x160
--  __TEXT.__cstring: 0x16d42
-+  __TEXT.__cstring: 0x16dd5
-   __TEXT.__swift5_capture: 0x14c
--  __TEXT.__oslogstring: 0x1aa6e
-+  __TEXT.__oslogstring: 0x1af18
-   __TEXT.__swift5_types: 0x24
-   __TEXT.__swift5_reflstr: 0x102
-   __TEXT.__swift5_protos: 0x10
 
-   __TEXT.__swift_as_entry: 0x14
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0x4
--  __TEXT.__gcc_except_tab: 0x888c
-+  __TEXT.__gcc_except_tab: 0x889c
-   __TEXT.__ustring: 0x1e
--  __TEXT.__unwind_info: 0x8028
--  __TEXT.__eh_frame: 0x2c8
-+  __TEXT.__unwind_info: 0x8088
-+  __TEXT.__eh_frame: 0x300
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x8838
--  __DATA_CONST.__objc_classlist: 0xa60
-+  __DATA_CONST.__objc_classlist: 0xa70
-   __DATA_CONST.__objc_catlist: 0x10
--  __DATA_CONST.__objc_protolist: 0x218
-+  __DATA_CONST.__objc_protolist: 0x220
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0xae68
-+  __DATA_CONST.__objc_selrefs: 0xaf58
-   __DATA_CONST.__objc_protorefs: 0x130
--  __DATA_CONST.__objc_superrefs: 0x718
-+  __DATA_CONST.__objc_superrefs: 0x720
-   __DATA_CONST.__objc_arraydata: 0x870
--  __DATA_CONST.__got: 0x1978
--  __AUTH_CONST.__const: 0x3708
-+  __DATA_CONST.__got: 0x1998
-+  __AUTH_CONST.__const: 0x3748
-   __AUTH_CONST.__cfstring: 0x104a0
--  __AUTH_CONST.__objc_const: 0x1adf8
-+  __AUTH_CONST.__objc_const: 0x1b100
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x17a0
-   __AUTH_CONST.__objc_arrayobj: 0xb58
-   __AUTH_CONST.__objc_dictobj: 0x258
-   __AUTH_CONST.__objc_doubleobj: 0xd0
--  __AUTH_CONST.__auth_got: 0xf20
--  __AUTH.__objc_data: 0x1370
--  __DATA.__objc_ivar: 0x1268
--  __DATA.__data: 0x1780
-+  __AUTH_CONST.__auth_got: 0xf28
-+  __AUTH.__objc_data: 0x1410
-+  __DATA.__objc_ivar: 0x128c
-+  __DATA.__data: 0x18a0
-   __DATA_DIRTY.__objc_data: 0x5ae8
--  __DATA_DIRTY.__data: 0x4a8
--  __DATA_DIRTY.__bss: 0x740
-+  __DATA_DIRTY.__data: 0x3e8
-+  __DATA_DIRTY.__bss: 0x648
-   __DATA_DIRTY.__common: 0x30
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8855
--  Symbols:   17276
+-  Symbols:   14433
 -  CStrings:  4415
 +  Functions: 8906
-+  Symbols:   17388
++  Symbols:   14518
 +  CStrings:  4433
- 
 Symbols:
 + +[PPDefaultBrowserCheck sharedCheck]
 + +[PPHarvestingUtils effectiveRetentionWindowForDataSource:]
@@ -585,34 +534,6 @@ Symbols:
 + _init.onceToken
 + _kPPCanLearnFromAppKey_block_invoke._pasOnceToken25
 + _kTCCServiceSiriAccess
-+ _objc_msgSend$_currentDefaultBrowserBundleID
-+ _objc_msgSend$_rankedHighlightsWithLimit:client:variant:queryId:requestQoS:additionalIdentifiers:
-+ _objc_msgSend$accessValue
-+ _objc_msgSend$applicationIdentifiersForCurrentRequest
-+ _objc_msgSend$clientBundleID
-+ _objc_msgSend$clientIsWebBrowser
-+ _objc_msgSend$currentDefaultBrowserBundleID
-+ _objc_msgSend$defaultApplicationForCategory:error:
-+ _objc_msgSend$effectiveMaxAgeForBundleIdentifier:groupIdentifier:
-+ _objc_msgSend$effectiveRetentionWindowForDataSource:
-+ _objc_msgSend$effectiveRetentionWindowForDataSource:deletionPolicy:
-+ _objc_msgSend$externalEntitlement
-+ _objc_msgSend$initWithDefaultApplicationWorkspace
-+ _objc_msgSend$internalEntitlement
-+ _objc_msgSend$invalidateCachedDefaultBrowser
-+ _objc_msgSend$invalidateSocialHighlightCacheForClient:
-+ _objc_msgSend$isBundleIDCurrentDefaultBrowser:
-+ _objc_msgSend$registerMaxContentAge:oneDataSource:
-+ _objc_msgSend$setAccessValue:
-+ _objc_msgSend$setClientBundleID:
-+ _objc_msgSend$setClientIsWebBrowser:
-+ _objc_msgSend$setExternalEntitlement:
-+ _objc_msgSend$setInternalEntitlement:
-+ _objc_msgSend$sharedCheck
-+ _objc_msgSend$shouldAdmitByAgeForBundleIdentifier:groupIdentifier:date:
-+ _objc_msgSend$shouldAdmitByAgeForBundleIdentifier:groupIdentifier:date:deletionPolicy:
-+ _objc_msgSend$shouldAdmitByAgeForBundleIdentifier:groupIdentifier:date:deletionPolicy:asOfDate:
-+ _objc_msgSend$startObserving
 + _sHasHandledBrowserChange
 + _sLastHandledBrowserBundleID
 + _sLastHandledBrowserLock
@@ -1027,7 +948,6 @@ Symbols:
 - __handleCloudStorageDeletedByUser._pasOnceToken15
 - __triggerDelayedOperationWithCoalescingToken:operation:._pasOnceToken33
 - _kPPCanLearnFromAppKey_block_invoke._pasOnceToken24
-- _objc_msgSend$rankedHighlightsWithLimit:client:variant:queryId:requestQoS:
 - _rankedHighlightsWithLimit:client:variant:queryId:requestQoS:._pasExprOnceResult
 - _rankedHighlightsWithLimit:client:variant:queryId:requestQoS:._pasOnceToken3
 CStrings:

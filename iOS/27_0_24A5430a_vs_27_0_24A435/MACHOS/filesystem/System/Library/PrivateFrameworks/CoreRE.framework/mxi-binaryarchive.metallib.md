@@ -2,20 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CoreRE.framework/mxi-binaryarchive.metallib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__reflection`
-- `__TEXT.__compute`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__vertex` | `0x1e2a60` | `0x1d6d30` | **`-0xbd30`** |
+| `__TEXT.__fragment` | `0x2f01c0` | `0x2f6d40` | **`+0x6b80`** |
+| `__TEXT.__compute` | `0xc430` | `0xc440` | **`+0x10`** |
+
+### Same-size Content Changes
+
 - `__TEXT.__metallib`
-
-```diff
-
-   __TEXT.__reflection: 0x5bf00
--  __TEXT.__vertex: 0x1d73b0
--  __TEXT.__fragment: 0x303a60
-+  __TEXT.__vertex: 0x1deb20
-+  __TEXT.__fragment: 0x300c20
-   __TEXT.__compute: 0xc400
-   __TEXT.__descriptor: 0x42650
-   __TEXT.__metallib: 0x291c20
-```
+- `__TEXT.__reflection`

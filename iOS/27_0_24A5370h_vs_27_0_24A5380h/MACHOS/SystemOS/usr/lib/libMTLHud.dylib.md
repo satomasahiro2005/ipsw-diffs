@@ -2,83 +2,52 @@
 
 > `/usr/lib/libMTLHud.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2fb00` | `0x31348` | **`+0x1848`** |
+| `__TEXT.__objc_methtype` | `0x3f78` | `0x4462` | **`+0x4ea`** |
+| `__TEXT.__cstring` | `0x6bf2` | `0x6c99` | **`+0xa7`** |
+| `__TEXT.__objc_methname` | `0x4952` | `0x49e4` | **`+0x92`** |
+| `__TEXT.__gcc_except_tab` | `0x2008` | `0x208c` | **`+0x84`** |
+| `__DATA_CONST.__cfstring` | `0x3380` | `0x3400` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0xe20` | `0xe90` | **`+0x70`** |
+| `__DATA.__objc_const` | `0x3450` | `0x34b0` | **`+0x60`** |
+| `__TEXT.__objc_stubs` | `0x3b00` | `0x3b40` | **`+0x40`** |
+| `__DATA.__bss` | `0x1c50` | `0x1c68` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x1f0` | `0x208` | **`+0x18`** |
+| `__DATA_CONST.__objc_intobj` | `0x6a8` | `0x6c0` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x1cf4` | `0x1d0c` | **`+0x18`** |
+| `__DATA.__objc_selrefs` | `0x1518` | `0x1528` | **`+0x10`** |
+| `__DATA_CONST.__objc_arraydata` | `0x488` | `0x498` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x1ec` | `0x1f8` | **`+0xc`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__init_offsets`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2fb00
-+  __TEXT.__text: 0x31348
-   __TEXT.__auth_stubs: 0xc80
--  __TEXT.__objc_stubs: 0x3b00
-+  __TEXT.__objc_stubs: 0x3b40
-   __TEXT.__init_offsets: 0x4
--  __TEXT.__objc_methlist: 0x1cf4
-+  __TEXT.__objc_methlist: 0x1d0c
-   __TEXT.__const: 0x448
--  __TEXT.__gcc_except_tab: 0x2008
--  __TEXT.__cstring: 0x6bf2
-+  __TEXT.__gcc_except_tab: 0x208c
-+  __TEXT.__cstring: 0x6c99
-   __TEXT.__objc_classname: 0x3be
--  __TEXT.__objc_methname: 0x4952
--  __TEXT.__objc_methtype: 0x3f78
-+  __TEXT.__objc_methname: 0x49e4
-+  __TEXT.__objc_methtype: 0x4462
-   __TEXT.__ustring: 0xb8
-   __TEXT.__oslogstring: 0x9a
--  __TEXT.__unwind_info: 0xe20
-+  __TEXT.__unwind_info: 0xe90
-   __DATA_CONST.__const: 0xff8
--  __DATA_CONST.__cfstring: 0x3380
-+  __DATA_CONST.__cfstring: 0x3400
-   __DATA_CONST.__objc_classlist: 0xe8
-   __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0xc0
--  __DATA_CONST.__objc_intobj: 0x6a8
--  __DATA_CONST.__objc_arraydata: 0x488
-+  __DATA_CONST.__objc_intobj: 0x6c0
-+  __DATA_CONST.__objc_arraydata: 0x498
-   __DATA_CONST.__objc_arrayobj: 0x60
-   __DATA_CONST.__objc_dictobj: 0x50
-   __DATA_CONST.__auth_got: 0x658
--  __DATA_CONST.__got: 0x1f0
-+  __DATA_CONST.__got: 0x208
-   __DATA_CONST.__auth_ptr: 0x20
--  __DATA.__objc_const: 0x3450
--  __DATA.__objc_selrefs: 0x1518
--  __DATA.__objc_ivar: 0x1ec
-+  __DATA.__objc_const: 0x34b0
-+  __DATA.__objc_selrefs: 0x1528
-+  __DATA.__objc_ivar: 0x1f8
-   __DATA.__objc_data: 0x910
-   __DATA.__data: 0x698
-   __DATA.__thread_vars: 0x18
-   __DATA.__thread_bss: 0x1
--  __DATA.__bss: 0x1c50
-+  __DATA.__bss: 0x1c68
-   __DATA.__common: 0x41
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+-5.0.19.0.0
++5.0.22.0.0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 868
--  Symbols:   2421
--  CStrings:  2422
+-  Symbols:   2218
+-  CStrings:  2007
 +  Functions: 895
-+  Symbols:   2463
-+  CStrings:  2438
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
++  Symbols:   2254
++  CStrings:  2019
 Symbols:
 + -[HUDGPUTimeline alignedTimeRangeWithEncoderEnabled:cmdBufferEnabled:]
 + -[HUDGPUTimeline withCurrentCommandBufferTimeline:]
@@ -133,5 +102,4 @@ CStrings:
 + "{HUDGPUCommandBufferTimelineStore=\"allRanges\"{vector<FPMTLMetricsTimeRange, std::allocator<FPMTLMetricsTimeRange>>=\"__begin_\"^{FPMTLMetricsTimeRange}\"__end_\"^{FPMTLMetricsTimeRange}\"\"{?=\"__cap_\"^{FPMTLMetricsTimeRange}}}\"frameNumbers\"{vector<unsigned long long, std::allocator<unsigned long long>>=\"__begin_\"^Q\"__end_\"^Q\"\"{?=\"__cap_\"^Q}}\"markers\"{vector<unsigned long long, std::allocator<unsigned long long>>=\"__begin_\"^Q\"__end_\"^Q\"\"{?=\"__cap_\"^Q}}\"laneTracks\"{vector<HUDGPUTimelineTrack, std::allocator<HUDGPUTimelineTrack>>=\"__begin_\"^{HUDGPUTimelineTrack}\"__end_\"^{HUDGPUTimelineTrack}\"\"{?=\"__cap_\"^{HUDGPUTimelineTrack}}}\"uiTrackChunks\"{vector<HUDUISimpleTimelineTrackChunk, std::allocator<HUDUISimpleTimelineTrackChunk>>=\"__begin_\"^{HUDUISimpleTimelineTrackChunk}\"__end_\"^{HUDUISimpleTimelineTrackChunk}\"\"{?=\"__cap_\"^{HUDUISimpleTimelineTrackChunk}}}\"uiTracks\"{vector<HUDUISimpleTimelineTrack, std::allocator<HUDUISimpleTimelineTrack>>=\"__begin_\"^{HUDUISimpleTimelineTrack}\"__end_\"^{HUDUISimpleTimelineTrack}\"\"{?=\"__cap_\"^{HUDUISimpleTimelineTrack}}}\"uiTimeline\"{HUDUISimpleTimeline=\"tracks\"^{HUDUISimpleTimelineTrack}\"numTracks\"Q\"numMarkers\"Q\"markers\"^Q}\"lastPresentedTime\"Q\"earliestTime\"Q\"latestTime\"Q\"sampleCount\"Q}"
 + "{HUDTimeRange=QQ}24@0:8B16B20"
 - "^{_MTLHUDConfig=BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB[2c]ffffffQQQQddfffffIfIfIIQi@}16@0:8"
-
 ```

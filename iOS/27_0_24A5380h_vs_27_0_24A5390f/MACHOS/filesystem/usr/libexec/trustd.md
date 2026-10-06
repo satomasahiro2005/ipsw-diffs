@@ -2,94 +2,57 @@
 
 > `/usr/libexec/trustd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__constg_swiftt`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5a36c` | `0x58e00` | **`-0x156c`** |
+| `__DATA_CONST.__const` | `0x41a0` | `0x3da0` | **`-0x400`** |
+| `__TEXT.__cstring` | `0x5d3f` | `0x5fa4` | **`+0x265`** |
+| `__DATA_CONST.__cfstring` | `0x5a40` | `0x5b80` | **`+0x140`** |
+| `__TEXT.__objc_stubs` | `0x3340` | `0x32a0` | **`-0xa0`** |
+| `__TEXT.__objc_methname` | `0x2f93` | `0x2f08` | **`-0x8b`** |
+| `__DATA.__data` | `0x458` | `0x3f8` | **`-0x60`** |
+| `__TEXT.__gcc_except_tab` | `0xb04` | `0xab8` | **`-0x4c`** |
+| `__TEXT.__unwind_info` | `0x1028` | `0xff8` | **`-0x30`** |
+| `__DATA.__objc_selrefs` | `0xe50` | `0xe28` | **`-0x28`** |
+| `__TEXT.__auth_stubs` | `0x23a0` | `0x2380` | **`-0x20`** |
+| `__TEXT.__objc_methtype` | `0xc79` | `0xc5d` | **`-0x1c`** |
+| `__TEXT.__objc_classname` | `0x1ce` | `0x1b4` | **`-0x1a`** |
+| `__DATA_CONST.__got` | `0x930` | `0x918` | **`-0x18`** |
+| `__TEXT.__objc_methlist` | `0xe0c` | `0xdf4` | **`-0x18`** |
+| `__DATA_CONST.__auth_got` | `0x11e0` | `0x11d0` | **`-0x10`** |
+| `__TEXT.__oslogstring` | `0x5b59` | `0x5b4b` | **`-0xe`** |
+| `__DATA.__objc_const` | `0x1758` | `0x1750` | **`-0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x30` | `0x28` | **`-0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x8` | `—` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__objc_arraydata`
 - `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_data`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+
+### Other Changes
 
 ```diff
 
 -62460.0.38.0.1
--  __TEXT.__text: 0x5a36c
--  __TEXT.__auth_stubs: 0x23a0
--  __TEXT.__objc_stubs: 0x3340
--  __TEXT.__objc_methlist: 0xe0c
 +62460.0.55.0.1
-+  __TEXT.__text: 0x58e00
-+  __TEXT.__auth_stubs: 0x2380
-+  __TEXT.__objc_stubs: 0x32a0
-+  __TEXT.__objc_methlist: 0xdf4
-   __TEXT.__const: 0xbd90
-   __TEXT.__dlopen_cstrs: 0x54
--  __TEXT.__objc_classname: 0x1ce
--  __TEXT.__objc_methname: 0x2f93
--  __TEXT.__objc_methtype: 0xc79
-+  __TEXT.__objc_classname: 0x1b4
-+  __TEXT.__objc_methname: 0x2f08
-+  __TEXT.__objc_methtype: 0xc5d
-   __TEXT.__constg_swiftt: 0x38
-   __TEXT.__swift5_typeref: 0x17
-   __TEXT.__swift5_reflstr: 0x4
-   __TEXT.__swift5_fieldmd: 0x1c
-   __TEXT.__swift5_types: 0x4
--  __TEXT.__gcc_except_tab: 0xb04
--  __TEXT.__cstring: 0x5d3f
--  __TEXT.__oslogstring: 0x5b59
--  __TEXT.__unwind_info: 0x1028
--  __DATA_CONST.__const: 0x41a0
--  __DATA_CONST.__cfstring: 0x5a40
-+  __TEXT.__gcc_except_tab: 0xab8
-+  __TEXT.__cstring: 0x5fa4
-+  __TEXT.__oslogstring: 0x5b4b
-+  __TEXT.__unwind_info: 0xff8
-+  __DATA_CONST.__const: 0x3da0
-+  __DATA_CONST.__cfstring: 0x5b80
-   __DATA_CONST.__objc_classlist: 0x88
-   __DATA_CONST.__objc_catlist: 0x18
--  __DATA_CONST.__objc_protolist: 0x30
-+  __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x78
-   __DATA_CONST.__objc_intobj: 0x120
-   __DATA_CONST.__objc_arraydata: 0x100
-   __DATA_CONST.__objc_arrayobj: 0x60
-   __DATA_CONST.__objc_dictobj: 0x190
--  __DATA_CONST.__auth_got: 0x11e0
--  __DATA_CONST.__got: 0x930
-+  __DATA_CONST.__auth_got: 0x11d0
-+  __DATA_CONST.__got: 0x918
-   __DATA_CONST.__auth_ptr: 0x18
--  __DATA.__objc_const: 0x1758
--  __DATA.__objc_selrefs: 0xe50
-+  __DATA.__objc_const: 0x1750
-+  __DATA.__objc_selrefs: 0xe28
-   __DATA.__objc_ivar: 0xd0
-   __DATA.__objc_data: 0x5b8
--  __DATA.__data: 0x458
-+  __DATA.__data: 0x3f8
-   __DATA.__bss: 0x520
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 1220
 -  Symbols:   886
 -  CStrings:  2169
 +  Functions: 1197
 +  Symbols:   881
 +  CStrings:  2179
- 
 Symbols:
 + _SecFixTrustdFilePermissions
 - _OBJC_CLASS_$_NSXPCConnection

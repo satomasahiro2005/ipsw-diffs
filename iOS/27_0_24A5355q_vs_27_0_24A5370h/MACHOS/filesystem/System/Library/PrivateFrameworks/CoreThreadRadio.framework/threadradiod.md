@@ -2,126 +2,70 @@
 
 > `/System/Library/PrivateFrameworks/CoreThreadRadio.framework/threadradiod`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x41da20` | `0x418e10` | **`-0x4c10`** |
+| `__TEXT.__cstring` | `0x36ac2` | `0x37257` | **`+0x795`** |
+| `__TEXT.__oslogstring` | `0x27ab5` | `0x27f98` | **`+0x4e3`** |
+| `__TEXT.__objc_methtype` | `0x3ebf` | `0x4397` | **`+0x4d8`** |
+| `__TEXT.__eh_frame` | `0x1fd0` | `0x1cb0` | **`-0x320`** |
+| `__DATA_CONST.__const` | `0xdd00` | `0xda90` | **`-0x270`** |
+| `__TEXT.__gcc_except_tab` | `0x2a1c8` | `0x2a048` | **`-0x180`** |
+| `__TEXT.__objc_methname` | `0xf485` | `0xf603` | **`+0x17e`** |
+| `__TEXT.__auth_stubs` | `0x12980` | `0x12ac0` | **`+0x140`** |
+| `__DATA_CONST.__cfstring` | `0x6a20` | `0x6b40` | **`+0x120`** |
+| `__DATA.__bss` | `0x17ea9` | `0x17f81` | **`+0xd8`** |
+| `__TEXT.__unwind_info` | `0x12620` | `0x12560` | **`-0xc0`** |
+| `__DATA.__objc_const` | `0x8ac0` | `0x8b60` | **`+0xa0`** |
+| `__DATA_CONST.__auth_got` | `0x94d8` | `0x9578` | **`+0xa0`** |
+| `__TEXT.__objc_methlist` | `0x698c` | `0x6a1c` | **`+0x90`** |
+| `__TEXT.__const` | `0x8544` | `0x8584` | **`+0x40`** |
+| `__TEXT.__objc_stubs` | `0x9f60` | `0x9fa0` | **`+0x40`** |
+| `__DATA.__objc_selrefs` | `0x3800` | `0x3828` | **`+0x28`** |
+| `__DATA.__objc_ivar` | `0x550` | `0x560` | **`+0x10`** |
+| `__DATA.__common` | `0x3eec8` | `0x3eec0` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__init_offsets`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
 -431.0.2.0.0
--  __TEXT.__text: 0x41da20 sha256:e7e086e8aa542efc38163d4d28eb10014125249840cb6ae887532abe609661f8
--  __TEXT.__auth_stubs: 0x12980 sha256:a5122455edc6e86ea9c9c5e7e848804cb2f26f707103bc907e069e725aca691d
--  __TEXT.__objc_stubs: 0x9f60 sha256:195ac8e7be68b9ed5fba87b6163cdf8a74fa9691250ec7de919a091fc1143ecb
--  __TEXT.__init_offsets: 0xb0 sha256:040a6c3f5496cbcddb26640280a9a8e63aefe5c0b4912509688d91e1aeb9ca3b
--  __TEXT.__objc_methlist: 0x698c sha256:2123609447df4bf83653279442821d135feb6d493883f9c17b7bec304333ec63
--  __TEXT.__cstring: 0x36ac2 sha256:1187d7e18f56dd39b858055c88e60d21210d890b38acf4e757774e53a94e15d3
--  __TEXT.__const: 0x8544 sha256:f243974bfcd3ac123ca64485f53eb35d9fe3395f43be46813d47627dc4f5edad
 +434.0.1.0.0
-+  __TEXT.__text: 0x418e10 sha256:731d784e4b6074a2cb5e30f974dd26f0253313f731b9e71b840b45e7f44383f4
-+  __TEXT.__auth_stubs: 0x12ac0 sha256:eacc058d42529be53a49026bb44597ca601428a87906ed1b921b68457e234a72
-+  __TEXT.__objc_stubs: 0x9fa0 sha256:df41fa69e6faa339676067ce2701cfd5e9c3838178e1b8d7a9e23354b170aa9e
-+  __TEXT.__init_offsets: 0xb0 sha256:4734e90fc05c852a9c807ba40fcc40608f0b2b4c985bc1c15cdabfdcd5e3411d
-+  __TEXT.__objc_methlist: 0x6a1c sha256:5dc416370c3894941182b1ef3680cde0d96bf452c36db4fd9fff64663687ac6c
-+  __TEXT.__gcc_except_tab: 0x2a048 sha256:daf03d57e9f43be83fad195cc58e9844205564bec3f012e58cf0345620c31b55
-+  __TEXT.__const: 0x8584 sha256:1978d7fe960205b574810603c1d4bba793b41b33abb3f2b0f0e487a71ab985a9
-+  __TEXT.__oslogstring: 0x27f98 sha256:1bfe5cfe87cbfbf348fa898b6b2dc8cb40153e7e5febd029596a1fe89e06cfd5
-+  __TEXT.__cstring: 0x37257 sha256:3bb935307c563ee5053d8fac68eebc5f1ec3a19254cbcb53fa14df94e55abd7b
-   __TEXT.__objc_classname: 0x6eb sha256:0edc96a342c5142b24f3239f08579b683dba86b2d8e709e3296f78815f997c0e
--  __TEXT.__gcc_except_tab: 0x2a1c8 sha256:e2033e769c07962ea3c91eb3f15f3eb1596fdef9b7fc62d84d4abd9a3c326ca0
--  __TEXT.__objc_methname: 0xf485 sha256:f134ab2d7925f3e2fbb26715858165c4021869c686e2789992e5a6e8885d7284
--  __TEXT.__oslogstring: 0x27ab5 sha256:b272094802767ce545cd50049912595b465a13e01fcaee36871639a4deb486e4
--  __TEXT.__objc_methtype: 0x3ebf sha256:0038dfbda6f04ba0b9e494521d459e671f2e23512681115f5929c0103045838f
--  __TEXT.__swift5_typeref: 0x4ec sha256:48e738c7874ee1b35d93c927853c6b8d64c9287f83393aac97c89b4fdf1d7de1
-+  __TEXT.__objc_methname: 0xf603 sha256:9fa8e22dbfb7c2e092b9935e04bd100f9463e0cd53ecbf555c7e413fe4a8e633
-+  __TEXT.__objc_methtype: 0x4397 sha256:a074eb848f8bf7eea0826d0702967df3a48b4e360a475e616dbee2042543a7bd
-+  __TEXT.__swift5_typeref: 0x4ec sha256:16a7b3be72ec934afd674c285eca3f87d6aa63fe656118048c0e67b47596b2f3
-   __TEXT.__swift5_capture: 0x558 sha256:661012a49025cec7b27738d28279066c4318dd22f96ce3994fa66f157e862228
--  __TEXT.__swift5_fieldmd: 0x130 sha256:223cf3afab6163f43b83da3afc3862994ea46158fa5f81fc228af2dc5de7942a
--  __TEXT.__constg_swiftt: 0x12c sha256:d8d57410f177a3965f675ea6530b512298cc9e97386e0c0aa05e2e8729fbcae9
-+  __TEXT.__swift5_fieldmd: 0x130 sha256:f6513dae9bf541b8cc309d51f9d1f6c5e78c89e4c1f4881ebe273977e498778c
-+  __TEXT.__constg_swiftt: 0x12c sha256:5ed1e5cb889db13bd0497f07f0c1c2ce7c4842720b14ad977fed4bc6cbc9e1fb
-   __TEXT.__swift5_reflstr: 0xd7 sha256:b31ff52dc1197f4c1472e6f895923ad406288bb784ee63d1842a72427bd15552
--  __TEXT.__swift5_proto: 0x8 sha256:dbd2d8b92dea9bc67bdc7a0c57cac2196b5afe84b46422fd9b140ab9de7307cb
--  __TEXT.__swift5_types: 0x10 sha256:575be621f9afc69c81fa2aac5a37994787e097e64a06eac9c458607e786389ed
--  __TEXT.__swift_as_entry: 0xa4 sha256:74bf64b0629bd39aa24c18e22949c044bbe012378b3ef5a5b8caeb57664464bd
--  __TEXT.__swift_as_ret: 0x84 sha256:efe812e73e299fde50a3e17bcb77e6df874075eca2309499dcf0d86abd30994f
--  __TEXT.__swift_as_cont: 0x1ac sha256:d84d4eae57521cc29f1c39d200a2912a2973ac6ea48a120d20977da53bee77c6
--  __TEXT.__unwind_info: 0x12620 sha256:a12c39c9528da9c4193b673713fbd6034fe912b7ecf9c5fe5709db9c0b3137b5
--  __TEXT.__eh_frame: 0x1fd0 sha256:49e5afedd85924798797e712a9dc53db780e222adca0645dce00f412ea62eb69
--  __DATA_CONST.__const: 0xdd00 sha256:02ea8ce3a800a75b702a970057003fdad4f737e36a5a96c3e2756bb3f66c08ac
--  __DATA_CONST.__cfstring: 0x6a20 sha256:e670fe41f95b305f4352e3d60af9b8c1f442b6841453bc73c894c497c867b961
--  __DATA_CONST.__objc_classlist: 0x190 sha256:d5aeaf4d23773525240179cb4a585d7b3791548e5a9621d8a4a4828c1d2a76d4
--  __DATA_CONST.__objc_catlist: 0x28 sha256:c06a454e7d2b4a4ba1537610b187a2fc9629c95b8221aa8fa4c5091824399d7b
--  __DATA_CONST.__objc_protolist: 0x68 sha256:895fb63e495306e6f9d469dabf52521762047987573c4c36eb170b6c79393b04
-+  __TEXT.__swift5_proto: 0x8 sha256:8026ca51deff0a630d0282f7bd52ce5f927d2d5f66a6be2d703060617a56dccd
-+  __TEXT.__swift5_types: 0x10 sha256:811190bed220caf58548f384f76a10a3cf44fdc06885f9edd9a1554a59ae54e7
-+  __TEXT.__swift_as_entry: 0xa4 sha256:806b8ff5282dad5e7db922591c71a8fbae75fd68342caa9198fa53035c2c08fa
-+  __TEXT.__swift_as_ret: 0x84 sha256:74a855bf92fbab30f0efcedbde6d234a66f1a8bf80a12dec8164295e6526eaf7
-+  __TEXT.__swift_as_cont: 0x1ac sha256:abfcdfbe4941e00101518375bbbbb28b8656932071e9083bbef2e093e2bcfeb6
-+  __TEXT.__unwind_info: 0x12560 sha256:f9734ef114041f9d8c687fed444521536ad6914d3023ba0097c3a31f92a91567
-+  __TEXT.__eh_frame: 0x1cb0 sha256:27a1c28e11f4e5c04a0da827b0ca9a31b514b0cb3673db4a82a5ce7b7eb78ea9
-+  __DATA_CONST.__const: 0xda90 sha256:15aeaf64107aac67c3d1a8e649e91f9331bbb71c467742e8cf07665e67568a10
-+  __DATA_CONST.__cfstring: 0x6b40 sha256:24ee78cf434d1b54185d7fcc28894ed950531a100fa9f1f7e964d3f5375bb1bc
-+  __DATA_CONST.__objc_classlist: 0x190 sha256:8a39ca8ba206a8c9829121218616a045f83ad9c5b17090589566f86cdc9a16c1
-+  __DATA_CONST.__objc_catlist: 0x28 sha256:a2d959edbb046e1834971a905ce98eaed22d396f6bf33044f5eb88cb6c5d8517
-+  __DATA_CONST.__objc_protolist: 0x68 sha256:794e2839b2e465b6eb568280dbc3b1b276a1d90ec838e8a4ee8f76237a6aeb17
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:885ce8037a15de89b0ceb0054c31fc3de725513307f685be388961916dadcdb0
--  __DATA_CONST.__objc_protorefs: 0x10 sha256:9cd6a9a638f087cfb10d58e2138c162b925aff967fc33b1fc14f800dda3f4143
--  __DATA_CONST.__objc_superrefs: 0x140 sha256:fccd95fa64bcf3af7a86b2c9ccd726106558d838f411491ae3a78ddb48aef885
--  __DATA_CONST.__auth_got: 0x94d8 sha256:9fa6a3eb259a1855e6836340ce38bcdc8a5da9e9356b3de6400bdbbc6fb11c14
--  __DATA_CONST.__got: 0xb18 sha256:c80035d22f9b67360158ab5e501d0143a4322127617690bb9d043b407db6a4e3
--  __DATA_CONST.__auth_ptr: 0x220 sha256:eabeeeb13bd87c57a87595a26a8965f44bb68d69f05ef84d52cd7b03806d44ad
--  __DATA.__objc_const: 0x8ac0 sha256:4c0bc3e5242814b34721dd64490b2aa0927c547a576116baf0a18939192963bb
--  __DATA.__objc_selrefs: 0x3800 sha256:a40c3fd5390b604845e83b219bc194601d9c009bf73271b3165a5bd08689d27f
--  __DATA.__objc_ivar: 0x550 sha256:407410cc9368891f3ac4f3008fc9105e6598fee2e21ce81dcc0b5d83b3476299
--  __DATA.__objc_data: 0x1060 sha256:b3b62c63fc405b19530474e5ed819e6cf70697d862bfab2c6d151865927a7a99
--  __DATA.__data: 0xa09 sha256:bb7b52b30ec08b023eb0d9483e491552661f0132b9594602ef4c2d656118cbea
--  __DATA.__common: 0x3eec8 sha256:c17aa576056131ce466e70567c99aac3454a6deabaf4ebf58954cb11565d8a12
--  __DATA.__bss: 0x17ea9 sha256:d44e1f89ca52d94017353f55d6af244d27c4d7a53872c03fc7a3fd97cc48f720
-+  __DATA_CONST.__objc_protorefs: 0x10 sha256:a19581d2377d9f4806554478dc28059e8c5132e33e88aba20cddaf09b0b019a1
-+  __DATA_CONST.__objc_superrefs: 0x140 sha256:a17e7409ba7541113b02a256b93f37251cfb56131e30214168e891f916658230
-+  __DATA_CONST.__auth_got: 0x9578 sha256:e1d0c6b516f0953d7074bd00d4a411dde00a14026994d8ad52afc7a96a280d8c
-+  __DATA_CONST.__got: 0xb18 sha256:de21241170c3223ee5300acb3ce71f1f63ea15e69c37669af50e5039287dffe3
-+  __DATA_CONST.__auth_ptr: 0x220 sha256:a46f28e59c1c1e650e582e5f280a60ef3b43d614367e4271b8e2691060ca9c7e
-+  __DATA.__objc_const: 0x8b60 sha256:d59214ac844dce3f837530cb6cd9485c8506c4688c6f3bc16cfa5f3fcd46735a
-+  __DATA.__objc_selrefs: 0x3828 sha256:3229415df0c29bc52404fa6e0cdf4b4cce6bbfaea71635fe71a873a87e2ad03b
-+  __DATA.__objc_ivar: 0x560 sha256:18962a0cca586bdf1460444329604812705a74b31443cd355360174f37ec7dba
-+  __DATA.__objc_data: 0x1060 sha256:c7073d502efa82a18f5ac20462f53bfb86e188dabb9e005ae488a3f49da90f30
-+  __DATA.__data: 0xa09 sha256:0cc4ee83e866be28e3e2234609067d3c0869440b8fbc534e00d2a0bdfe98c26c
-+  __DATA.__common: 0x3eec0 sha256:9076f8b318e666513bbf414c178e48fcd4792bf545efff21aba70c29738c9e3a
-+  __DATA.__bss: 0x17f81 sha256:ba427e21c3514d461e489de7988bf73e830b8b26dc365346e111e2ac56ccfa1b
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/PrivateFrameworks/CoreThreadRadio.framework/CoreThreadRadio
-   - /System/Library/PrivateFrameworks/CoreUtils.framework/CoreUtils
-   - /System/Library/PrivateFrameworks/CoreWiFi.framework/CoreWiFi
 -  - /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
-   - /System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer
-+  - /System/Library/PrivateFrameworks/RegulatoryDomain.framework/RegulatoryDomain
-   - /System/Library/PrivateFrameworks/SymptomDiagnosticReporter.framework/SymptomDiagnosticReporter
-   - /System/Library/PrivateFrameworks/WirelessDiagnostics.framework/WirelessDiagnostics
-   - /usr/lib/AppleConvergedTransport.dylib
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
--  UUID: ECB6AD8D-E1B9-322D-80BF-35054B8C42BA
++  - /System/Library/PrivateFrameworks/RegulatoryDomain.framework/RegulatoryDomain
+
 -  Functions: 18254
--  Symbols:   92339
--  CStrings:  14287
-+  UUID: DC1502DD-270B-37B8-B5A1-34F2656C368D
+-  Symbols:   23987
+-  CStrings:  13384
 +  Functions: 18245
-+  Symbols:   92215
-+  CStrings:  14346
- 
++  Symbols:   23977
++  CStrings:  13434
 Symbols:
-+ -[GeoServicesHandler regulatoryAreaGeoChanged].cold.3
-+ -[GeoServicesHandler regulatoryAreaGeoChanged].cold.4
-+ -[GeoServicesHandler regulatoryAreaGeoChanged].cold.5
-+ -[GeoServicesHandler startMonitoring:].cold.3
-+ -[GeoServicesHandler startMonitoring:].cold.4
-+ -[GeoServicesHandler startMonitoring:].cold.5
-+ -[GeoServicesHandler startMonitoring:].cold.6
-+ -[THThreadNetworkCredentialsKeychainBackingStore areValidDataSetTLVs:creds:updateATS:isATSAppended:].cold.30
-+ -[THThreadNetworkCredentialsKeychainBackingStore didReceiveNetworkMessage:].cold.6
 + -[THThreadNetworkCredentialsKeychainBackingStore displayCredentialShareErrorDialogWithMessage:]
 + -[THThreadNetworkCredentialsKeychainBackingStore displayCredentialShareSuccessDialogWithMessage:]
 + -[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithExtendedPANId:completion:]
@@ -133,10 +77,6 @@ Symbols:
 + -[THThreadNetworkCredentialsStoreLocalClient findmDNSScanMatchingNetworkNameSupportingEPSKCwithExtendedPANId:completion:]
 + -[ThreadNetworkManagerInstance .cxx_construct]
 + -[ThreadNetworkManagerInstance checkAndUpdateNetworkParamsFromMdnsScan:borderAgentID:leaderBorderAgentID:params:]
-+ -[ThreadNetworkManagerInstance checkAndUpdateNetworkParamsFromMdnsScan:borderAgentID:leaderBorderAgentID:params:].cold.1
-+ -[ThreadNetworkManagerInstance checkAndUpdateNetworkParamsFromMdnsScan:borderAgentID:leaderBorderAgentID:params:].cold.2
-+ -[ThreadNetworkManagerInstance checkAndUpdateNetworkParamsFromMdnsScan:borderAgentID:leaderBorderAgentID:params:].cold.3
-+ -[ThreadNetworkManagerInstance createDriverInterface:].cold.3
 + -[ThreadNetworkManagerInstance lastKnownJoinedNetworkSignature]
 + -[ThreadNetworkManagerInstance persistlastKnownJoinedThreadRecordAndSignature]
 + -[ThreadNetworkManagerInstance processBorderAgentMatch:withFoundID:vendorName:networkName:mdnsNetworkName:appleVendorName:mdnsParams:]
@@ -144,411 +84,12 @@ Symbols:
 + -[ThreadNetworkManagerInstance setLastKnownJoinedNetworkSignature:]
 + -[ThreadNetworkManagerInstance setSelfHealHandler:]
 + -[ThreadNetworkManagerInstance updateLastKnownJoinedNetworkSignature]
-+ -[ThreadNetworkManagerInstance updateLastKnownJoinedNetworkSignature].cold.1
-+ -[ThreadNetworkManagerInstance updateLastKnownJoinedNetworkSignature].cold.2
-+ -[ThreadNetworkManagerInstance updateLastKnownJoinedNetworkSignature].cold.3
 + -[ThreadNetworkManagerInstance updateMeshcopRelatedParams:]
-+ -[ThreadNetworkManagerInstance updateMeshcopRelatedParams:].cold.1
-+ -[ThreadNetworkManagerInstance updateMeshcopRelatedParams:].cold.2
-+ -[ThreadNetworkManagerInstance updateMeshcopRelatedParams:].cold.3
 + -[ThreadNetworkManagerSelfHealHandler dealloc]
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(aes.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(asn1parse.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(asn1write.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(base64.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(bignum.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(bignum_core.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(ccm.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(cipher.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(cipher_wrap.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(cmac.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(constant_time.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(ctr_drbg.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(ecdsa.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(ecjpake.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(ecp.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(ecp_curves.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(entropy.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(md.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(oid.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(pem.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(pk.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(pk_ecc.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(pk_wrap.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(pkparse.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(platform.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(platform_util.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(rsa.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(rsa_alt_helpers.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(sha256.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedtls.a(ssl_ciphersuites.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedtls.a(ssl_client.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedtls.a(ssl_cookie.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedtls.a(ssl_msg.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedtls.a(ssl_tls.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedtls.a(ssl_tls12_client.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedtls.a(ssl_tls12_server.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedx509.a(x509.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedx509.a(x509_crt.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-cli-ftd.a(application_quality_info.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-cli-ftd.a(cli.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-cli-ftd.a(cli_coap.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-cli-ftd.a(cli_commissioner.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-cli-ftd.a(cli_dataset.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-cli-ftd.a(cli_history.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-cli-ftd.a(cli_joiner.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-cli-ftd.a(cli_network_data.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-cli-ftd.a(cli_throughput_monitor_coap.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-cli-ftd.a(cli_throughput_monitor_udp.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-cli-ftd.a(cli_udp.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-cli-ftd.a(cli_vendor.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(address_resolver.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(aes_ccm.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(aes_ecb.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(announce_begin_client.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(announce_begin_server.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(announce_sender.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(appender.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(application_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(application_metrics_manager.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(backbone_router_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(backbone_router_ftd_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(backbone_tmf.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(bbr_leader.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(bbr_local.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(bbr_manager.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(binary_search.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(border_agent.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(border_agent_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(border_router_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(channel_manager.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(channel_manager_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(channel_mask.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(checksum.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(child_supervision.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(child_supervision_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(child_table.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(coap.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(coap_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(coap_message.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(coap_secure.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(commissioner.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(commissioner_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(crc.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(crypto_platform.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(csl_tx_scheduler.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(data.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(data_poll_handler.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(data_poll_sender.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(dataset.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(dataset_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(dataset_ftd_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(dataset_manager.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(dataset_manager_ftd.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(dataset_updater.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(dataset_updater_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(dhcp6_client.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(dhcp6_server.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(diags_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(discover_scanner.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(dns_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(dns_types.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(dua_manager.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(energy_scan_client.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(energy_scan_server.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(error.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(error_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(extended_panid.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(factory_diags.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(frame_builder.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(frame_data.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(hap.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(heap-3b52c9f30213b52bb554de610cd401ce.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(heap-cff567d282e4ea2e93b96d80c081e620.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(history_tracker.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(history_tracker_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(hmac_sha256.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(icmp6.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(icmp6_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(indirect_sender.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(instance.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(instance_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(ip4_types.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(ip6.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(ip6_address.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(ip6_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(ip6_filter.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(ip6_headers.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(ip6_mpl.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(joiner.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(joiner_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(joiner_router.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(key_manager.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(link_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(link_api_internal.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(link_metrics.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(link_metrics_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(link_metrics_types.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(link_quality.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(link_raw.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(log.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(logging_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(lookup_table.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(lowpan.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mac.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mac_filter.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mac_frame.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mac_links.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mac_metrics.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mac_types.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(matter.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mbedtls.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mesh_diag.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mesh_diag_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mesh_forwarder.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mesh_forwarder_ftd.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(meshcop.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(meshcop_leader.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(meshcop_tlvs.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(message.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(message_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mle.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mle_ftd.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mle_tlvs.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mle_types.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mlr_manager.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(multicast_listeners_table.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(nat64_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(ndproxy_table.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(neighbor_table.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(netdata_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(netdiag_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(netif.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(network_data.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(network_data_leader.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(network_data_leader_ftd.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(network_data_local.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(network_data_notifier.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(network_data_service.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(network_data_tlvs.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(network_data_types.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(network_diagnostic.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(network_name.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(notifier.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(panid_query_client.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(panid_query_server.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(parse_cmdline.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(ping_sender.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(ping_sender_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(preference.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(radio.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(radio_callbacks.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(radio_platform.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(random.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(random_crypto_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(router_table.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(server_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(settings.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(sha256.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(slaac_address.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(socket.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(src_match_controller.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(storage.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(string.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(sub_mac.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(sub_mac_callbacks.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(tasklet.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(tasklet_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(thread_analytics_manager.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(thread_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(thread_ftd_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(thread_netif.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(time_ticker.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(timer.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(timestamp.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(tlvs.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(tmf.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(trickle_timer.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(udp6.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(udp_api.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(uptime.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(uri_paths.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(wakeup_tx_scheduler.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-hdlc.a(hdlc.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-platform.a(exit_code.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(alarm.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(backtrace.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(config_file.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(daemon.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(entropy.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(hardware_identifier.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(hdlc_skywalk_interface.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(infra_if.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(logging.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(mainloop.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(misc.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(multicast_backbone_interface.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(multicast_routing.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(netif.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(power.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(radio.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(radio_spinel.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(radio_url.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(rcp_caps_diag.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(settings.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(settings_file.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(system.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(udp.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-rcp2.a(cli_rcp2.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-rcp2.a(cli_vendor_rcp2.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-rcp2.a(mac_rcp2.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-rcp2.a(radio_posix_rcp2.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-rcp2.a(radio_spinel_rcp2.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-url.a(url.o)
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCountersCoexS.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCountersDiscoveryJoinS.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCountersEngagementS.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCountersIpv6S.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCountersJoinerS.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCountersMacRxS.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCountersMacTxS.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCountersNetworkS.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCountersPowerS.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCountersRadioS.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCountersReachabilityS.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCountersStabilityS.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCountersThreadMleS.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCtcsReadWriteStabilityS.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDFlagstoneCTCSNumberOfThirdPartyBRs.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDFlagstoneCTCSNumberPreferredNetworksByBorderRouters.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDFlagstoneCTCSStabilityMetrics.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDFlagstoneCoexMetrics.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDFlagstoneEngagementMetrics.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDFlagstoneIPMLEMetrics.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDFlagstoneMACMetrics.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDFlagstoneNetworkRadioMetrics.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDFlagstonePowerMetrics.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDFlagstoneStabilityMetrics.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDFlagstoneTopologyMetrics.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDHeaderInfoS.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDHistogramsCoexS.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDMetricsClient.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDMetricsHandlers.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDMetricsLogger.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDMetricsServerInterface.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDRadioStatsS.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/BTNotificationHelper.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/BackboneIPv6InterfaceHelper.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/BackboneIPv6InterfaceWrapper.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/BackboneNetworkMonitor.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/CAMetricsClient.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/CAMetricsHandlers.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/CoreAnalyticsMetricsHelper.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/CoreBTStateHandlerRcp.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/CoreThreadRadio_Entitlements.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/CtrInternalClient.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/CtrXPCDefs.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/CtrXPCServer.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/DatasetKeychainUtils_rcp.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/GeoServicesHandlerRcp.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/IPv6Helpers.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/InternalClientInterface_rcp.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/InternalClientUtil.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/InternalClient_rcp.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/InternalIPCAPI_rcp.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/InternalMessaging.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/NCPTypes.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/Pcap_rcp.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/PowerEventHandlerRcp.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/PowerEventListener.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/RcpConfigHelper.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/ServerClientState.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/ThroughputMonitor_coap.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/ThroughputMonitor_udp.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/WCMClient_rcp.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/XPCHelpers.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/XPCIPCAPI_v1_rcp.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/XPCIPCServer_rcp.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/any-to.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/child.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/cli_bbr.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/cli_link_metrics.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/cli_mac_filter.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/cli_mesh_diag.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/cli_ping.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/cli_utils.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/configuration.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/ctr_util_obj_c_interface.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/dhcp6_types.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/faultInfoCheck.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/getTime.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/host_context.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/host_interpreter.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/internalClientIPCHelper.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/log.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/logger.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/mac_header_ie.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/main.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/ne_tunnel.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/neighbor.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/network_diagnostic_tlvs.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/offset_range.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/rcp_srp_utils.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/router.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/secure_transport.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/spinel_driver.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/spinel_helper.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/spinel_manager.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/string-utils.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/sub_mac_csl_receiver.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/syslog.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/thread_link_info.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/time-utils.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/utils.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/verhoeff_checksum.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/verhoeff_checksum_api.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/version.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/write_crash_dump.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/xpc_server_helper.o
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/AWD/GeneratedData/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/AWD/src/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/CoreAnalytics/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/CrashDump/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/Entitlements/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/Logging/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/Rcp/host-ot-adaptation/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/Rcp/ipc-xpc/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/Rcp/util/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/openthread/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/openthread/src/cli/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/openthread/src/cli/ThroughputMonitor/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/openthread/src/core/api/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/openthread/src/core/backbone_router/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/openthread/src/core/coap/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/openthread/src/core/common/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/openthread/src/core/crypto/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/openthread/src/core/diags/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/openthread/src/core/instance/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/openthread/src/core/mac/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/openthread/src/core/meshcop/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/openthread/src/core/net/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/openthread/src/core/radio/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/openthread/src/core/thread/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/openthread/src/core/utils/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/openthread/src/core/utils/ThroughputMonitor/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/openthread/src/lib/hdlc/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/openthread/src/lib/platform/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/openthread/src/lib/spinel/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/openthread/src/lib/url/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/openthread/src/posix/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/openthread/src/posix/platform/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/openthread/src/rcp2/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/openthread/third_party/mbedtls/repo/library/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/wpantund/src/CtrXPC/Server/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/wpantund/src/CtrXPC/Shared/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/wpantund/src/ipc-xpc/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/wpantund/src/util/
-+ /Library/Caches/com.apple.xbs/8EE4F872-E655-4C82-9F2B-E295398C3E28/TemporaryDirectory.68kQqU/Sources/CoreThreadRadio/wpantund/src/wpantund/
++ /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(heap-3b52c9f30213b52bb554de610cd401ce.o)
++ /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(heap-cff567d282e4ea2e93b96d80c081e620.o)
++ /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CoreThreadRadio/openthread/src/cli/ThroughputMonitor/
++ /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CoreThreadRadio/openthread/src/core/utils/ThroughputMonitor/
 + GCC_except_table181
 + GCC_except_table193
 + GCC_except_table229
@@ -583,242 +124,74 @@ Symbols:
 + _CFUserNotificationDisplayNotice
 + _OBJC_CLASS_$_RDEstimate
 + _OUTLINED_FUNCTION_38
-+ _Z26create_new_crash_dump_filePKchNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE.cold.1
-+ _Z26create_new_crash_dump_filePKchNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE.cold.2
-+ _Z30readSpecificCountryCodeMappingPK10__CFString.cold.10
-+ _Z30readSpecificCountryCodeMappingPK10__CFString.cold.11
-+ _Z30readSpecificCountryCodeMappingPK10__CFString.cold.12
-+ _Z30readSpecificCountryCodeMappingPK10__CFString.cold.13
-+ _Z30readSpecificCountryCodeMappingPK10__CFString.cold.14
-+ _Z30readSpecificCountryCodeMappingPK10__CFString.cold.15
-+ _Z30readSpecificCountryCodeMappingPK10__CFString.cold.16
-+ _Z30readSpecificCountryCodeMappingPK10__CFString.cold.17
-+ _Z30readSpecificCountryCodeMappingPK10__CFString.cold.4
-+ _Z30readSpecificCountryCodeMappingPK10__CFString.cold.5
-+ _Z30readSpecificCountryCodeMappingPK10__CFString.cold.6
-+ _Z30readSpecificCountryCodeMappingPK10__CFString.cold.7
-+ _Z30readSpecificCountryCodeMappingPK10__CFString.cold.8
-+ _Z30readSpecificCountryCodeMappingPK10__CFString.cold.9
-+ _Z37get_timestamp_sniffer_backup_filenameRNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE.cold.1
-+ _ZL23get_formatted_timestampPcm.cold.1
-+ _ZL23get_formatted_timestampPcm.cold.2
-+ _ZN14RcpHostContext20getRcpSettingsParamsERaRhS1_RbS2_RjS3_S2_S2_S0_S0_S1_S1_S1_S1_S1_.cold.1
-+ _ZN14RcpHostContext20getRcpSettingsParamsERaRhS1_RbS2_RjS3_S2_S2_S0_S0_S1_S1_S1_S1_S1_.cold.2
-+ _ZN14RcpHostContext20getRcpSettingsParamsERaRhS1_RbS2_RjS3_S2_S2_S0_S0_S1_S1_S1_S1_S1_.cold.3
-+ _ZN14RcpHostContext20getRcpSettingsParamsERaRhS1_RbS2_RjS3_S2_S2_S0_S0_S1_S1_S1_S1_S1_.cold.4
-+ _ZN14RcpHostContext20getRcpSettingsParamsERaRhS1_RbS2_RjS3_S2_S2_S0_S0_S1_S1_S1_S1_S1_.cold.5
-+ _ZN14RcpHostContext20getRcpSettingsParamsERaRhS1_RbS2_RjS3_S2_S2_S0_S0_S1_S1_S1_S1_S1_.cold.6
-+ _ZN14RcpHostContext20getRcpSettingsParamsERaRhS1_RbS2_RjS3_S2_S2_S0_S0_S1_S1_S1_S1_S1_.cold.7
-+ _ZN14RcpHostContext20getRcpSettingsParamsERaRhS1_RbS2_RjS3_S2_S2_S0_S0_S1_S1_S1_S1_S1_.cold.8
-+ _ZN15HostInterpreter14ProcessRcpInitEhPPcPv.cold.9
-+ _ZN15HostInterpreter17route_was_removedE6OriginRK8in6_addrh21ExternalRoutePrioritybtbb.cold.1
-+ _ZN15HostInterpreter18ProcessPropertyGetEhPPcPv.cold.258
-+ _ZN15HostInterpreter18ProcessPropertyGetEhPPcPv.cold.259
-+ _ZN15HostInterpreter18ProcessPropertyGetEhPPcPv.cold.260
-+ _ZN15HostInterpreter18ProcessPropertyGetEhPPcPv.cold.261
-+ _ZN16XPCIPCAPI_v1_rcp15message_handlerERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEPvN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp20CallbackOtctl_HelperEPKcRKNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEESA_N8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp22interface_form_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp22interface_join_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp22interface_join_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.2
-+ _ZN16XPCIPCAPI_v1_rcp22interface_peek_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp22status_response_helperEiRKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp22status_response_helperEiRKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.2
-+ _ZN16XPCIPCAPI_v1_rcp23interface_leave_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp23interface_reset_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp24interface_status_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp25CallbackWithStatus_HelperEiRKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES8_N8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp26CallbackWithStatus2_HelperEiRKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES8_S8_N8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp26interface_prop_get_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp26interface_prop_get_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.2
-+ _ZN16XPCIPCAPI_v1_rcp26interface_prop_get_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.3
-+ _ZN16XPCIPCAPI_v1_rcp26interface_prop_get_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.4
-+ _ZN16XPCIPCAPI_v1_rcp26interface_prop_get_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.5
-+ _ZN16XPCIPCAPI_v1_rcp26interface_prop_get_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.6
-+ _ZN16XPCIPCAPI_v1_rcp26interface_prop_get_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.7
-+ _ZN16XPCIPCAPI_v1_rcp26interface_prop_get_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.8
-+ _ZN16XPCIPCAPI_v1_rcp26interface_prop_set_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp26interface_prop_set_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.2
-+ _ZN16XPCIPCAPI_v1_rcp26interface_prop_set_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.3
-+ _ZN16XPCIPCAPI_v1_rcp26interface_prop_set_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.4
-+ _ZN16XPCIPCAPI_v1_rcp27interface_otctl_cmd_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp27interface_route_add_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp28interface_hard_reset_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp29CallbackWithStatusArg1_HelperEiRKN5boost3anyERKNSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEESC_SC_N8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp29CallbackWithStatusArg1_HelperEiRKN5boost3anyERKNSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEESC_SC_N8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.2
-+ _ZN16XPCIPCAPI_v1_rcp29CallbackWithStatusArg2_HelperEiRKN5boost3anyERKNSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEESC_N8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp29CallbackWithStatusArg2_HelperEiRKN5boost3anyERKNSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEESC_N8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.2
-+ _ZN16XPCIPCAPI_v1_rcp29interface_service_add_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp29interface_service_add_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.2
-+ _ZN16XPCIPCAPI_v1_rcp29interface_thread_stop_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp30interface_route_remove_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp30interface_thread_start_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp30status_offline_response_helperEiRKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp30status_offline_response_helperEiRKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.2
-+ _ZN16XPCIPCAPI_v1_rcp30status_offline_response_helperEiRKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.3
-+ _ZN16XPCIPCAPI_v1_rcp31interface_update_accessory_addrEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp31interface_update_accessory_addrEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.2
-+ _ZN16XPCIPCAPI_v1_rcp31interface_update_accessory_addrEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.3
-+ _ZN16XPCIPCAPI_v1_rcp31interface_update_accessory_addrEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.4
-+ _ZN16XPCIPCAPI_v1_rcp31interface_update_accessory_addrEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.5
-+ _ZN16XPCIPCAPI_v1_rcp31interface_update_accessory_addrEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.6
-+ _ZN16XPCIPCAPI_v1_rcp31interface_update_accessory_addrEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.7
-+ _ZN16XPCIPCAPI_v1_rcp31interface_update_accessory_addrEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.8
-+ _ZN16XPCIPCAPI_v1_rcp31interface_update_accessory_addrEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.9
-+ _ZN16XPCIPCAPI_v1_rcp32interface_config_gateway_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp32interface_net_scan_start_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp32interface_service_remove_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp32interface_service_remove_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.2
-+ _ZN16XPCIPCAPI_v1_rcp35interface_energy_scan_start_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN16XPCIPCAPI_v1_rcp37interface_discover_scan_start_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-+ _ZN21ThroughputMonitor_udp13StopUdpClientEv.cold.1
-+ _ZN21ThroughputMonitor_udp13StopUdpClientEv.cold.2
-+ _ZN21ThroughputMonitor_udp13StopUdpServerEv.cold.1
-+ _ZN21ThroughputMonitor_udp13StopUdpServerEv.cold.2
-+ _ZN21ThroughputMonitor_udp13StopUdpServerEv.cold.3
-+ _ZN21ThroughputMonitor_udp14StartUdpClientEv.cold.1
-+ _ZN21ThroughputMonitor_udp14StartUdpClientEv.cold.2
-+ _ZN21ThroughputMonitor_udp14StartUdpClientEv.cold.3
-+ _ZN21ThroughputMonitor_udp14StartUdpClientEv.cold.4
-+ _ZN21ThroughputMonitor_udp14StartUdpClientEv.cold.5
-+ _ZN21ThroughputMonitor_udp14StartUdpClientEv.cold.6
-+ _ZN21ThroughputMonitor_udp14StartUdpServerEv.cold.1
-+ _ZN21ThroughputMonitor_udp14StartUdpServerEv.cold.2
-+ _ZN21ThroughputMonitor_udp14StartUdpServerEv.cold.3
-+ _ZN21ThroughputMonitor_udp14StartUdpServerEv.cold.4
-+ _ZN21ThroughputMonitor_udp14StartUdpServerEv.cold.5
-+ _ZN21ThroughputMonitor_udp14StopThmUdpTestEv.cold.1
-+ _ZN21ThroughputMonitor_udp14StopThmUdpTestEv.cold.2
-+ _ZN21ThroughputMonitor_udp15SendAckToClientEjyRK12otIp6Addresst.cold.1
-+ _ZN21ThroughputMonitor_udp15SendAckToClientEjyRK12otIp6Addresst.cold.2
-+ _ZN21ThroughputMonitor_udp15SendAckToClientEjyRK12otIp6Addresst.cold.3
-+ _ZN21ThroughputMonitor_udp15SendAckToClientEjyRK12otIp6Addresst.cold.4
-+ _ZN21ThroughputMonitor_udp17HandleAckReceivedEj.cold.1
-+ _ZN21ThroughputMonitor_udp17HandleAckReceivedEj.cold.2
-+ _ZN21ThroughputMonitor_udp17HandlePacketTimerEv.cold.1
-+ _ZN21ThroughputMonitor_udp17HandlePacketTimerEv.cold.2
-+ _ZN21ThroughputMonitor_udp17SendNextAckPacketEv.cold.1
-+ _ZN21ThroughputMonitor_udp17SendNextAckPacketEv.cold.2
-+ _ZN21ThroughputMonitor_udp19SendMessageToServerEt.cold.1
-+ _ZN21ThroughputMonitor_udp19SendMessageToServerEt.cold.2
-+ _ZN21ThroughputMonitor_udp19SendMessageToServerEt.cold.3
-+ _ZN21ThroughputMonitor_udp19SendMessageToServerEt.cold.4
-+ _ZN21ThroughputMonitor_udp19SendMessageToServerEt.cold.5
-+ _ZN21ThroughputMonitor_udp21HandleAckTimeoutTimerERN2ot5TimerE.cold.1
-+ _ZN21ThroughputMonitor_udp21HandleAckTimeoutTimerEv.cold.1
-+ _ZN21ThroughputMonitor_udp24RunThroughputMonitorTestEtjj.cold.1
-+ _ZN21ThroughputMonitor_udp24RunThroughputMonitorTestEtjj.cold.2
-+ _ZN21ThroughputMonitor_udp24RunThroughputMonitorTestEtjj.cold.3
-+ _ZN21ThroughputMonitor_udp24RunThroughputMonitorTestEtjj.cold.4
-+ _ZN21ThroughputMonitor_udp25RunAckBasedThroughputTestEtjj.cold.1
-+ _ZN21ThroughputMonitor_udp25RunAckBasedThroughputTestEtjj.cold.2
-+ _ZN21ThroughputMonitor_udp25RunAckBasedThroughputTestEtjj.cold.3
-+ _ZN21ThroughputMonitor_udp25RunAckBasedThroughputTestEtjj.cold.4
-+ _ZN21ThroughputMonitor_udp5ResetEv.cold.1
-+ _ZN21ThroughputMonitor_udp5ResetEv.cold.2
-+ _ZN21ThroughputMonitor_udp8StopTestENS_8TestTypeE.cold.1
-+ _ZN21ThroughputMonitor_udp8StopTestENS_8TestTypeE.cold.2
-+ _ZN22ThroughputMonitor_coap14HandleAckTimerEv.cold.1
-+ _ZN22ThroughputMonitor_coap14HandleAckTimerEv.cold.2
-+ _ZN22ThroughputMonitor_coap14HandleAckTimerEv.cold.3
-+ _ZN22ThroughputMonitor_coap14StopCoAPClientEv.cold.1
-+ _ZN22ThroughputMonitor_coap14StopCoAPClientEv.cold.2
-+ _ZN22ThroughputMonitor_coap14StopCoAPClientEv.cold.3
-+ _ZN22ThroughputMonitor_coap14StopCoAPClientEv.cold.4
-+ _ZN22ThroughputMonitor_coap14StopCoAPServerEv.cold.1
-+ _ZN22ThroughputMonitor_coap14StopCoAPServerEv.cold.2
-+ _ZN22ThroughputMonitor_coap14StopCoAPServerEv.cold.3
-+ _ZN22ThroughputMonitor_coap14StopCoAPServerEv.cold.4
-+ _ZN22ThroughputMonitor_coap15StartCoAPClientEPKc.cold.1
-+ _ZN22ThroughputMonitor_coap15StartCoAPClientEPKc.cold.2
-+ _ZN22ThroughputMonitor_coap15StartCoAPClientEPKc.cold.3
-+ _ZN22ThroughputMonitor_coap15StartCoAPClientEPKc.cold.4
-+ _ZN22ThroughputMonitor_coap15StartCoAPClientEPKc.cold.5
-+ _ZN22ThroughputMonitor_coap15StartCoAPServerEv.cold.1
-+ _ZN22ThroughputMonitor_coap15StartCoAPServerEv.cold.2
-+ _ZN22ThroughputMonitor_coap15StartCoAPServerEv.cold.3
-+ _ZN22ThroughputMonitor_coap15StartCoAPServerEv.cold.4
-+ _ZN22ThroughputMonitor_coap17HandlePacketTimerEv.cold.1
-+ _ZN22ThroughputMonitor_coap17HandlePacketTimerEv.cold.2
-+ _ZN22ThroughputMonitor_coap18HandleCoAPResponseEPvP9otMessagePK13otMessageInfo7otError.cold.8
-+ _ZN22ThroughputMonitor_coap21SendSingleCoAPMessageEb.cold.1
-+ _ZN22ThroughputMonitor_coap21SendSingleCoAPMessageEb.cold.2
-+ _ZN22ThroughputMonitor_coap21SendSingleCoAPMessageEb.cold.3
-+ _ZN22ThroughputMonitor_coap21SendSingleCoAPMessageEb.cold.4
-+ _ZN22ThroughputMonitor_coap21SendSingleCoAPMessageEb.cold.5
-+ _ZN22ThroughputMonitor_coap22StopCoAPThroughputTestEv.cold.1
-+ _ZN22ThroughputMonitor_coap22StopCoAPThroughputTestEv.cold.2
-+ _ZN22ThroughputMonitor_coap28RunCoAPThroughputMonitorTestEbtjj.cold.1
-+ _ZN22ThroughputMonitor_coap28RunCoAPThroughputMonitorTestEbtjj.cold.2
-+ _ZN22ThroughputMonitor_coap28RunCoAPThroughputMonitorTestEbtjj.cold.3
-+ _ZN22ThroughputMonitor_coap28RunCoAPThroughputMonitorTestEbtjj.cold.4
-+ _ZN22ThroughputMonitor_coap28RunCoAPThroughputMonitorTestEbtjj.cold.5
-+ _ZN22ThroughputMonitor_coap31RunCoAPconThroughputMonitorTestEtjj.cold.1
-+ _ZN22ThroughputMonitor_coap31RunCoAPconThroughputMonitorTestEtjj.cold.2
-+ _ZN22ThroughputMonitor_coap31RunCoAPconThroughputMonitorTestEtjj.cold.3
-+ _ZN22ThroughputMonitor_coap31RunCoAPconThroughputMonitorTestEtjj.cold.4
-+ _ZN22ThroughputMonitor_coap5ResetEv.cold.1
-+ _ZN22ThroughputMonitor_coap5ResetEv.cold.2
-+ _ZNSt3__110shared_ptrIN6CtrXPC6Server5StateEEC2B9nqe220106IS3_Li0EEEPT_.cold.1
-+ _ZNSt3__16vectorI12ServiceEntryNS_9allocatorIS1_EEE16__init_with_sizeB9nqe220106IPS1_S6_EEvT_T0_m.cold.1
-+ _ZNSt3__16vectorI12ServiceEntryNS_9allocatorIS1_EEE18__assign_with_sizeB9nqe220106INS_17_ClassicAlgPolicyEPS1_S7_EEvT0_T1_l.cold.1
-+ _ZNSt3__16vectorI12ServiceEntryNS_9allocatorIS1_EEE18__assign_with_sizeB9nqe220106INS_17_ClassicAlgPolicyEPS1_S7_EEvT0_T1_l.cold.2
-+ __100-[THThreadNetworkCredentialsKeychainBackingStore getRecordForPreferredNetwork:anyDsFormat:skipScan:]_block_invoke.174
-+ __102-[THThreadNetworkCredentialsStoreLocalClient enableCredentialSharingModeWithExtendedPANId:completion:]_block_invoke_2.cold.1
-+ __106-[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithExtendedPANId:completion:]_block_invoke.351
-+ __106-[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithExtendedPANId:completion:]_block_invoke.351.cold.1
-+ __106-[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithExtendedPANId:completion:]_block_invoke.355
-+ __106-[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithExtendedPANId:completion:]_block_invoke.355.cold.1
-+ __106-[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithExtendedPANId:completion:]_block_invoke.355.cold.2
-+ __106-[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithExtendedPANId:completion:]_block_invoke.358
-+ __106-[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithExtendedPANId:completion:]_block_invoke.358.cold.1
-+ __106-[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithExtendedPANId:completion:]_block_invoke.359
-+ __106-[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithExtendedPANId:completion:]_block_invoke.359.cold.1
-+ __106-[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithExtendedPANId:completion:]_block_invoke.363
-+ __106-[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithExtendedPANId:completion:]_block_invoke.363.cold.1
-+ __106-[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithExtendedPANId:completion:]_block_invoke.cold.1
-+ __109-[THThreadNetworkCredentialsKeychainBackingStore retrieveOrGeneratePreferredNetworkInternallyWithCompletion:]_block_invoke.176
-+ __109-[THThreadNetworkCredentialsKeychainBackingStore storeActiveDataSetRecordAndSyncWithErrComletion:completion:]_block_invoke.134
-+ __114-[THThreadNetworkCredentialsKeychainBackingStore performSyncOperationWithRecord:queue:timeoutValInSec:completion:]_block_invoke.132
-+ __114-[THThreadNetworkCredentialsKeychainBackingStore performSyncOperationWithRecord:queue:timeoutValInSec:completion:]_block_invoke.133
-+ __121-[THThreadNetworkCredentialsStoreLocalClient findmDNSScanMatchingNetworkNameSupportingEPSKCwithExtendedPANId:completion:]_block_invoke_2.cold.1
-+ __125-[THThreadNetworkCredentialsKeychainBackingStore findmDNSScanMatchingNetworkNameSupportingEPSKCwithExtendedPANId:completion:]_block_invoke.cold.1
-+ __47-[ThreadNetworkManagerInstance getPowerMetrics]_block_invoke.274
-+ __48-[ThreadNetworkManagerInstance getAllMacMetrics]_block_invoke.229
-+ __52-[ThreadNetworkManagerInstance getEngagementMetrics]_block_invoke.264
-+ __54-[ThreadNetworkManagerInstance getNetworkRadioMetrics]_block_invoke.211
-+ __65-[THThreadNetworkCredentialsKeychainBackingStore isFrozenRecord:]_block_invoke.146
-+ __72-[ThreadNetworkManagerInstance saveThreadConfiguration:passPhrase:uuid:]_block_invoke.381
-+ __72-[ThreadNetworkManagerInstance saveThreadConfiguration:passPhrase:uuid:]_block_invoke.381.cold.1
-+ __73-[THThreadNetworkCredentialsKeychainBackingStore retrieveThirdPartyInfo:]_block_invoke.77
-+ __73-[THThreadNetworkCredentialsKeychainBackingStore retrieveThirdPartyInfo:]_block_invoke.77.cold.1
-+ __73-[THThreadNetworkCredentialsKeychainBackingStore retrieveThirdPartyInfo:]_block_invoke.77.cold.2
-+ __73-[THThreadNetworkCredentialsKeychainBackingStore retrieveThirdPartyInfo:]_block_invoke.77.cold.3
-+ __73-[THThreadNetworkCredentialsKeychainBackingStore retrieveThirdPartyInfo:]_block_invoke.77.cold.4
-+ __73-[THThreadNetworkCredentialsKeychainBackingStore retrieveThirdPartyInfo:]_block_invoke.77.cold.5
-+ __80-[THThreadNetworkCredentialsKeychainBackingStore storeRecordAndSync:completion:]_block_invoke.67
-+ __80-[THThreadNetworkCredentialsKeychainBackingStore storeRecordAndSync:completion:]_block_invoke.69
-+ __80-[THThreadNetworkCredentialsKeychainBackingStore storeRecordAndSync:completion:]_block_invoke.70
-+ __80-[THThreadNetworkCredentialsKeychainBackingStore storeRecordAndSync:completion:]_block_invoke.74
-+ __80-[ThreadNetworkManagerInstance(RCP2CAMetrics_extension) getBTWifiLoadInfoEvent:]_block_invoke.261
-+ __85-[ThreadNetworkManagerInstance fillupThreadCredentialsToSelfHealThreadNetwork:store:]_block_invoke.319
-+ __85-[ThreadNetworkManagerInstance fillupThreadCredentialsToSelfHealThreadNetwork:store:]_block_invoke.319.cold.1
-+ __87-[THThreadNetworkCredentialsKeychainBackingStore deletePreferredNetworkWithCompletion:]_block_invoke.189
-+ __87-[THThreadNetworkCredentialsKeychainBackingStore deletePreferredNetworkWithCompletion:]_block_invoke.189.cold.1
-+ __87-[THThreadNetworkCredentialsKeychainBackingStore deletePreferredNetworkWithCompletion:]_block_invoke.189.cold.2
-+ __87-[THThreadNetworkCredentialsKeychainBackingStore deletePreferredNetworkWithCompletion:]_block_invoke.189.cold.3
-+ __87-[THThreadNetworkCredentialsKeychainBackingStore deletePreferredNetworkWithCompletion:]_block_invoke.189.cold.4
-+ __87-[THThreadNetworkCredentialsKeychainBackingStore deletePreferredNetworkWithCompletion:]_block_invoke.189.cold.5
-+ __87-[THThreadNetworkCredentialsKeychainBackingStore deletePreferredNetworkWithCompletion:]_block_invoke.189.cold.6
-+ __93-[THThreadNetworkCredentialsKeychainBackingStore storeActiveDataSetRecordAndSync:completion:]_block_invoke.126
-+ __93-[THThreadNetworkCredentialsKeychainBackingStore storeActiveDataSetRecordAndSync:completion:]_block_invoke.129
-+ __93-[THThreadNetworkCredentialsKeychainBackingStore storeActiveDataSetRecordAndSync:completion:]_block_invoke.130
-+ __93-[THThreadNetworkCredentialsKeychainBackingStore storeActiveDataSetRecordAndSync:completion:]_block_invoke.131
-+ __94-[THThreadNetworkCredentialsKeychainBackingStore storeCachedAODasPreferredNetwork:completion:]_block_invoke.162
-+ __Block_byref_object_copy_.317
-+ __Block_byref_object_copy_.356
-+ __Block_byref_object_dispose_.318
-+ __Block_byref_object_dispose_.357
++ _Z26create_new_crash_dump_filePKchNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE
++ _Z37get_timestamp_sniffer_backup_filenameRNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
++ _ZL23get_formatted_timestampPcm
++ _ZN14RcpHostContext20getRcpSettingsParamsERaRhS1_RbS2_RjS3_S2_S2_S0_S0_S1_S1_S1_S1_S1_
++ _ZN15HostInterpreter17route_was_removedE6OriginRK8in6_addrh21ExternalRoutePrioritybtbb
++ _ZN16XPCIPCAPI_v1_rcp15message_handlerERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEPvN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp20CallbackOtctl_HelperEPKcRKNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEESA_N8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp22interface_form_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp22interface_join_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp22interface_peek_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp22status_response_helperEiRKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp23interface_leave_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp23interface_reset_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp24interface_status_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp25CallbackWithStatus_HelperEiRKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES8_N8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp26CallbackWithStatus2_HelperEiRKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES8_S8_N8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp26interface_prop_get_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp26interface_prop_set_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp27interface_otctl_cmd_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp27interface_route_add_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp28interface_hard_reset_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp29CallbackWithStatusArg1_HelperEiRKN5boost3anyERKNSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEESC_SC_N8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp29CallbackWithStatusArg2_HelperEiRKN5boost3anyERKNSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEESC_N8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp29interface_service_add_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp29interface_thread_stop_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp30interface_route_remove_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp30interface_thread_start_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp30status_offline_response_helperEiRKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp31interface_update_accessory_addrEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp32interface_config_gateway_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp32interface_net_scan_start_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp32interface_service_remove_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp35interface_energy_scan_start_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN16XPCIPCAPI_v1_rcp37interface_discover_scan_start_handlerEPvRKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
++ _ZN21ThroughputMonitor_udp13StopUdpClientEv
++ _ZN21ThroughputMonitor_udp13StopUdpServerEv
++ _ZN21ThroughputMonitor_udp14StartUdpClientEv
++ _ZN21ThroughputMonitor_udp14StartUdpServerEv
++ _ZN21ThroughputMonitor_udp14StopThmUdpTestEv
++ _ZN21ThroughputMonitor_udp15SendAckToClientEjyRK12otIp6Addresst
++ _ZN21ThroughputMonitor_udp17HandleAckReceivedEj
++ _ZN21ThroughputMonitor_udp17HandlePacketTimerEv
++ _ZN21ThroughputMonitor_udp17SendNextAckPacketEv
++ _ZN21ThroughputMonitor_udp19SendMessageToServerEt
++ _ZN21ThroughputMonitor_udp21HandleAckTimeoutTimerERN2ot5TimerE
++ _ZN21ThroughputMonitor_udp21HandleAckTimeoutTimerEv
++ _ZN21ThroughputMonitor_udp24RunThroughputMonitorTestEtjj
++ _ZN21ThroughputMonitor_udp25RunAckBasedThroughputTestEtjj
++ _ZN21ThroughputMonitor_udp5ResetEv
++ _ZN21ThroughputMonitor_udp8StopTestENS_8TestTypeE
++ _ZN22ThroughputMonitor_coap14HandleAckTimerEv
++ _ZN22ThroughputMonitor_coap14StopCoAPClientEv
++ _ZN22ThroughputMonitor_coap14StopCoAPServerEv
++ _ZN22ThroughputMonitor_coap15StartCoAPClientEPKc
++ _ZN22ThroughputMonitor_coap15StartCoAPServerEv
++ _ZN22ThroughputMonitor_coap17HandlePacketTimerEv
++ _ZN22ThroughputMonitor_coap21SendSingleCoAPMessageEb
++ _ZN22ThroughputMonitor_coap22StopCoAPThroughputTestEv
++ _ZN22ThroughputMonitor_coap28RunCoAPThroughputMonitorTestEbtjj
++ _ZN22ThroughputMonitor_coap31RunCoAPconThroughputMonitorTestEtjj
++ _ZN22ThroughputMonitor_coap5ResetEv
++ _ZNSt3__110shared_ptrIN6CtrXPC6Server5StateEEC2B9nqe220106IS3_Li0EEEPT_
++ _ZNSt3__16vectorI12ServiceEntryNS_9allocatorIS1_EEE16__init_with_sizeB9nqe220106IPS1_S6_EEvT_T0_m
++ _ZNSt3__16vectorI12ServiceEntryNS_9allocatorIS1_EEE18__assign_with_sizeB9nqe220106INS_17_ClassicAlgPolicyEPS1_S7_EEvT0_T1_l
++ __102-[THThreadNetworkCredentialsStoreLocalClient enableCredentialSharingModeWithExtendedPANId:completion:]_block_invoke_2
++ __106-[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithExtendedPANId:completion:]_block_invoke
++ __121-[THThreadNetworkCredentialsStoreLocalClient findmDNSScanMatchingNetworkNameSupportingEPSKCwithExtendedPANId:completion:]_block_invoke_2
++ __125-[THThreadNetworkCredentialsKeychainBackingStore findmDNSScanMatchingNetworkNameSupportingEPSKCwithExtendedPANId:completion:]_block_invoke
 + __Z27get_host_rcp_setting_paramsRaRhS0_RbS1_RjS2_S1_S1_S_S_S0_S0_S0_S0_S0_
 + __Z39persist_coex_grant_ppi_abort_tx_enabledb
 + __Z41CAMetricsHandlers_meshcop_nwparams_update17CAMeshcopNwParams
@@ -1703,32 +1076,10 @@ Symbols:
 + ___69-[ThreadNetworkManagerInstance updateLastKnownJoinedNetworkSignature]_block_invoke
 + ___95-[THThreadNetworkCredentialsKeychainBackingStore displayCredentialShareErrorDialogWithMessage:]_block_invoke
 + ___97-[THThreadNetworkCredentialsKeychainBackingStore displayCredentialShareSuccessDialogWithMessage:]_block_invoke
-+ ___ZN14InternalIPCAPI16property_changedENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEN5boost3anyE_block_invoke.23
-+ ___ZN14InternalIPCAPI16property_changedENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEN5boost3anyE_block_invoke.23.cold.1
-+ ___ZN14InternalIPCAPI16property_changedENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEN5boost3anyE_block_invoke.23.cold.2
-+ ___ZN14InternalIPCAPI17IntBroadcastEventENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEN5boost3anyEN8dispatch8callbackIU13block_pointerFvvEEE_block_invoke.26
 + ___block_descriptor_40_ea8_32w_e8_v12?0i8lw32l8
 + ___block_descriptor_56_e8_32s40s48bs_e17_v16?0"NSArray"8ls32l8s48l8s40l8
 + ___block_descriptor_56_e8_32s40s48bs_e5_v8?0ls48l8s32l8s40l8
 + ___block_descriptor_56_ea8_32s40r48r_e40_v24?0"THNetworkSignature"8"NSError"16lr40l8r48l8s32l8
-+ __block_descriptor_tmp.134
-+ __block_descriptor_tmp.142
-+ __block_descriptor_tmp.143
-+ __block_descriptor_tmp.147
-+ __block_descriptor_tmp.150
-+ __block_descriptor_tmp.195
-+ __block_descriptor_tmp.200
-+ __block_descriptor_tmp.24
-+ __block_descriptor_tmp.41
-+ __block_descriptor_tmp.45
-+ __block_descriptor_tmp.49
-+ __block_descriptor_tmp.616
-+ __block_literal_global.137
-+ __block_literal_global.173
-+ __block_literal_global.276
-+ __block_literal_global.280
-+ __block_literal_global.282
-+ __block_literal_global.284
 + _arc4random_uniform
 + _gRssiImbalance
 + _gRxAntUtilization
@@ -1753,422 +1104,19 @@ Symbols:
 + _objc_msgSend$updateLastKnownJoinedNetworkSignature
 + _objc_retain_x9
 + _rcpHighPriorityBuffersAvailable
-+ main.cold.42
-+ main.cold.43
-+ main.cold.44
-+ main.cold.45
 - -[GeoServicesHandler countryConfigurationDidChangeNotification:]
 - -[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithCompletion:]
 - -[THThreadNetworkCredentialsKeychainBackingStore findmDNSScanMatchingNetworkNameSupportingEPSKCwithCompletion:]
 - -[THThreadNetworkCredentialsStoreLocalClient enableCredentialSharingModeWithCompletion:]
 - -[THThreadNetworkCredentialsStoreLocalClient findmDNSScanMatchingNetworkNameSupportingEPSKCwithCompletion:]
 - -[ThreadNetworkManagerInstance checkAndUpdateNetworkParamsFromMdnsScan:borderAgentID:leaderBorderAgentID:isNwFound:numAppleBRs:numThirdPartyBRs:isLeaderAppleDevice:numThreadNwsFound:shouldRunPeriodicTdm:]
-- -[ThreadNetworkManagerInstance checkAndUpdateNetworkParamsFromMdnsScan:borderAgentID:leaderBorderAgentID:isNwFound:numAppleBRs:numThirdPartyBRs:isLeaderAppleDevice:numThreadNwsFound:shouldRunPeriodicTdm:].cold.1
-- -[ThreadNetworkManagerInstance checkAndUpdateNetworkParamsFromMdnsScan:borderAgentID:leaderBorderAgentID:isNwFound:numAppleBRs:numThirdPartyBRs:isLeaderAppleDevice:numThreadNwsFound:shouldRunPeriodicTdm:].cold.2
-- -[ThreadNetworkManagerInstance checkAndUpdateNetworkParamsFromMdnsScan:borderAgentID:leaderBorderAgentID:isNwFound:numAppleBRs:numThirdPartyBRs:isLeaderAppleDevice:numThreadNwsFound:shouldRunPeriodicTdm:].cold.3
 - -[ThreadNetworkManagerInstance updateMeshcopRelatedParams:numAppleBRs:numThirdPartyBRs:isLeaderAppleDevice:numThreadNwsFound:shouldRunPeriodicTdm:]
-- -[ThreadNetworkManagerInstance updateMeshcopRelatedParams:numAppleBRs:numThirdPartyBRs:isLeaderAppleDevice:numThreadNwsFound:shouldRunPeriodicTdm:].cold.1
-- -[ThreadNetworkManagerInstance updateMeshcopRelatedParams:numAppleBRs:numThirdPartyBRs:isLeaderAppleDevice:numThreadNwsFound:shouldRunPeriodicTdm:].cold.2
-- -[ThreadNetworkManagerInstance updateMeshcopRelatedParams:numAppleBRs:numThirdPartyBRs:isLeaderAppleDevice:numThreadNwsFound:shouldRunPeriodicTdm:].cold.3
 - -[ThreadNetworkManagerInstance(RCP2CAMetrics_extension) getHWString]
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(aes.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(asn1parse.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(asn1write.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(base64.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(bignum.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(bignum_core.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(ccm.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(cipher.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(cipher_wrap.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(cmac.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(constant_time.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(ctr_drbg.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(ecdsa.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(ecjpake.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(ecp.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(ecp_curves.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(entropy.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(md.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(oid.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(pem.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(pk.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(pk_ecc.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(pk_wrap.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(pkparse.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(platform.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(platform_util.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(rsa.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(rsa_alt_helpers.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedcrypto.a(sha256.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedtls.a(ssl_ciphersuites.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedtls.a(ssl_client.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedtls.a(ssl_cookie.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedtls.a(ssl_msg.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedtls.a(ssl_tls.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedtls.a(ssl_tls12_client.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedtls.a(ssl_tls12_server.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedx509.a(x509.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libmbedx509.a(x509_crt.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-cli-ftd.a(application_quality_info.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-cli-ftd.a(cli.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-cli-ftd.a(cli_coap.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-cli-ftd.a(cli_commissioner.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-cli-ftd.a(cli_dataset.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-cli-ftd.a(cli_history.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-cli-ftd.a(cli_joiner.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-cli-ftd.a(cli_network_data.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-cli-ftd.a(cli_throughput_monitor_coap.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-cli-ftd.a(cli_throughput_monitor_udp.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-cli-ftd.a(cli_udp.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-cli-ftd.a(cli_vendor.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(address_resolver.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(aes_ccm.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(aes_ecb.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(announce_begin_client.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(announce_begin_server.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(announce_sender.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(appender.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(application_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(application_metrics_manager.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(backbone_router_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(backbone_router_ftd_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(backbone_tmf.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(bbr_leader.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(bbr_local.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(bbr_manager.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(binary_search.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(border_agent.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(border_agent_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(border_router_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(channel_manager.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(channel_manager_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(channel_mask.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(checksum.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(child_supervision.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(child_supervision_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(child_table.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(coap.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(coap_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(coap_message.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(coap_secure.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(commissioner.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(commissioner_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(crc.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(crypto_platform.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(csl_tx_scheduler.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(data.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(data_poll_handler.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(data_poll_sender.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(dataset.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(dataset_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(dataset_ftd_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(dataset_manager.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(dataset_manager_ftd.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(dataset_updater.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(dataset_updater_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(dhcp6_client.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(dhcp6_server.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(diags_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(discover_scanner.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(dns_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(dns_types.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(dua_manager.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(energy_scan_client.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(energy_scan_server.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(error.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(error_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(extended_panid.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(factory_diags.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(frame_builder.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(frame_data.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(hap.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(heap-4ee74696df453ebaaf30e0c061d250ca.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(heap-d58e98c1e0b2e19e2beb6963f67ba007.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(history_tracker.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(history_tracker_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(hmac_sha256.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(icmp6.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(icmp6_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(indirect_sender.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(instance.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(instance_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(ip4_types.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(ip6.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(ip6_address.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(ip6_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(ip6_filter.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(ip6_headers.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(ip6_mpl.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(joiner.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(joiner_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(joiner_router.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(key_manager.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(link_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(link_api_internal.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(link_metrics.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(link_metrics_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(link_metrics_types.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(link_quality.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(link_raw.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(log.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(logging_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(lookup_table.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(lowpan.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mac.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mac_filter.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mac_frame.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mac_links.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mac_metrics.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mac_types.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(matter.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mbedtls.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mesh_diag.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mesh_diag_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mesh_forwarder.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mesh_forwarder_ftd.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(meshcop.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(meshcop_leader.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(meshcop_tlvs.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(message.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(message_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mle.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mle_ftd.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mle_tlvs.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mle_types.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(mlr_manager.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(multicast_listeners_table.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(nat64_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(ndproxy_table.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(neighbor_table.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(netdata_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(netdiag_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(netif.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(network_data.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(network_data_leader.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(network_data_leader_ftd.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(network_data_local.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(network_data_notifier.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(network_data_service.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(network_data_tlvs.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(network_data_types.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(network_diagnostic.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(network_name.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(notifier.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(panid_query_client.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(panid_query_server.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(parse_cmdline.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(ping_sender.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(ping_sender_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(preference.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(radio.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(radio_callbacks.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(radio_platform.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(random.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(random_crypto_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(router_table.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(server_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(settings.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(sha256.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(slaac_address.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(socket.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(src_match_controller.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(storage.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(string.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(sub_mac.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(sub_mac_callbacks.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(tasklet.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(tasklet_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(thread_analytics_manager.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(thread_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(thread_ftd_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(thread_netif.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(time_ticker.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(timer.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(timestamp.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(tlvs.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(tmf.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(trickle_timer.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(udp6.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(udp_api.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(uptime.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(uri_paths.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(wakeup_tx_scheduler.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-hdlc.a(hdlc.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-platform.a(exit_code.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(alarm.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(backtrace.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(config_file.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(daemon.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(entropy.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(hardware_identifier.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(hdlc_skywalk_interface.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(infra_if.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(logging.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(mainloop.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(misc.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(multicast_backbone_interface.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(multicast_routing.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(netif.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(power.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(radio.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(radio_spinel.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(radio_url.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(rcp_caps_diag.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(settings.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(settings_file.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(system.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-posix.a(udp.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-rcp2.a(cli_rcp2.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-rcp2.a(cli_vendor_rcp2.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-rcp2.a(mac_rcp2.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-rcp2.a(radio_posix_rcp2.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-rcp2.a(radio_spinel_rcp2.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-url.a(url.o)
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCountersCoexS.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCountersDiscoveryJoinS.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCountersEngagementS.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCountersIpv6S.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCountersJoinerS.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCountersMacRxS.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCountersMacTxS.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCountersNetworkS.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCountersPowerS.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCountersRadioS.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCountersReachabilityS.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCountersStabilityS.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCountersThreadMleS.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDCtcsReadWriteStabilityS.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDFlagstoneCTCSNumberOfThirdPartyBRs.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDFlagstoneCTCSNumberPreferredNetworksByBorderRouters.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDFlagstoneCTCSStabilityMetrics.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDFlagstoneCoexMetrics.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDFlagstoneEngagementMetrics.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDFlagstoneIPMLEMetrics.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDFlagstoneMACMetrics.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDFlagstoneNetworkRadioMetrics.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDFlagstonePowerMetrics.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDFlagstoneStabilityMetrics.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDFlagstoneTopologyMetrics.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDHeaderInfoS.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDHistogramsCoexS.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDMetricsClient.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDMetricsHandlers.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDMetricsLogger.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDMetricsServerInterface.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/AWDRadioStatsS.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/BTNotificationHelper.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/BackboneIPv6InterfaceHelper.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/BackboneIPv6InterfaceWrapper.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/BackboneNetworkMonitor.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/CAMetricsClient.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/CAMetricsHandlers.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/ChattyMonitor.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/CoreAnalyticsMetricsHelper.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/CoreBTStateHandlerRcp.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/CoreThreadRadio_Entitlements.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/CtrInternalClient.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/CtrXPCDefs.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/CtrXPCServer.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/DatasetKeychainUtils_rcp.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/GeoServicesHandlerRcp.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/IPv6Helpers.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/InternalClientInterface_rcp.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/InternalClientUtil.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/InternalClient_rcp.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/InternalIPCAPI_rcp.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/InternalMessaging.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/NCPTypes.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/Pcap_rcp.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/PowerEventHandlerRcp.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/PowerEventListener.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/RcpConfigHelper.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/ServerClientState.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/ThroughputMonitor_coap.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/ThroughputMonitor_udp.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/WCMClient_rcp.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/XPCHelpers.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/XPCIPCAPI_v1_rcp.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/XPCIPCServer_rcp.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/any-to.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/child.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/cli_bbr.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/cli_link_metrics.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/cli_mac_filter.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/cli_mesh_diag.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/cli_ping.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/cli_utils.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/configuration.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/ctr_util_obj_c_interface.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/dhcp6_types.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/faultInfoCheck.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/getTime.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/host_context.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/host_interpreter.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/internalClientIPCHelper.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/log.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/logger.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/mac_header_ie.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/main.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/ne_tunnel.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/neighbor.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/network_diagnostic_tlvs.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/offset_range.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/rcp_srp_utils.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/router.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/secure_transport.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/spinel_driver.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/spinel_helper.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/spinel_manager.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/string-utils.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/sub_mac_csl_receiver.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/syslog.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/thread_link_info.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/time-utils.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/utils.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/verhoeff_checksum.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/verhoeff_checksum_api.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/version.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/write_crash_dump.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/xpc_server_helper.o
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/AWD/GeneratedData/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/AWD/src/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/ChattyMonitor/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/CoreAnalytics/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/CrashDump/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/Entitlements/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/Logging/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/Rcp/host-ot-adaptation/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/Rcp/ipc-xpc/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/Rcp/util/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/ThroughputMonitor/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/openthread/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/openthread/src/cli/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/openthread/src/core/api/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/openthread/src/core/backbone_router/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/openthread/src/core/coap/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/openthread/src/core/common/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/openthread/src/core/crypto/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/openthread/src/core/diags/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/openthread/src/core/instance/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/openthread/src/core/mac/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/openthread/src/core/meshcop/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/openthread/src/core/net/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/openthread/src/core/radio/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/openthread/src/core/thread/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/openthread/src/core/utils/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/openthread/src/lib/hdlc/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/openthread/src/lib/platform/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/openthread/src/lib/spinel/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/openthread/src/lib/url/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/openthread/src/posix/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/openthread/src/posix/platform/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/openthread/src/rcp2/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/openthread/third_party/mbedtls/repo/library/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/wpantund/src/CtrXPC/Server/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/wpantund/src/CtrXPC/Shared/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/wpantund/src/ipc-xpc/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/wpantund/src/util/
-- /Library/Caches/com.apple.xbs/01D329D4-12A3-42E7-A192-82B7C98B41E4/TemporaryDirectory.lFHP3Q/Sources/CoreThreadRadio/wpantund/src/wpantund/
+- /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(heap-4ee74696df453ebaaf30e0c061d250ca.o)
+- /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(heap-d58e98c1e0b2e19e2beb6963f67ba007.o)
+- /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/CoreThreadRadio/install/TempContent/Objects/CoreThreadRadio.build/threadradiod.build/Objects-normal/arm64e/ChattyMonitor.o
+- /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CoreThreadRadio/ChattyMonitor/
+- /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CoreThreadRadio/ThroughputMonitor/
 - ChattyMonitor.cpp
 - GCC_except_table183
 - GCC_except_table214
@@ -2212,229 +1160,77 @@ Symbols:
 - _RssiImbalance
 - _RxAntUtilization
 - _TxAntUtilization
-- _Z25readChattyMonitorSettingsv.cold.1
-- _ZN13ChattyMonitor10InitializeEP10otInstance.cold.1
-- _ZN13ChattyMonitor10InitializeEP10otInstance.cold.2
-- _ZN13ChattyMonitor22processResidentTrafficERN2ot3Ip67HeadersERNS0_7MessageEb7otError.cold.1
-- _ZN13ChattyMonitorC1EP10otInstance.cold.1
-- _ZN13ChattyMonitorC2EP10otInstance.cold.1
-- _ZN14InternalIPCAPI29CallbackWithStatusArg1_HelperEiRKN5boost3anyENSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEESA_SA_N8dispatch8callbackIU13block_pointerFvhS1_EEE.cold.3
-- _ZN14RcpHostContext20getRcpSettingsParamsERaRhS1_RbRjS3_S2_S2_S0_S0_S1_S1_S1_S1_S1_.cold.1
-- _ZN14RcpHostContext20getRcpSettingsParamsERaRhS1_RbRjS3_S2_S2_S0_S0_S1_S1_S1_S1_S1_.cold.2
-- _ZN14RcpHostContext20getRcpSettingsParamsERaRhS1_RbRjS3_S2_S2_S0_S0_S1_S1_S1_S1_S1_.cold.3
-- _ZN14RcpHostContext20getRcpSettingsParamsERaRhS1_RbRjS3_S2_S2_S0_S0_S1_S1_S1_S1_S1_.cold.4
-- _ZN14RcpHostContext20getRcpSettingsParamsERaRhS1_RbRjS3_S2_S2_S0_S0_S1_S1_S1_S1_S1_.cold.5
-- _ZN14RcpHostContext20getRcpSettingsParamsERaRhS1_RbRjS3_S2_S2_S0_S0_S1_S1_S1_S1_S1_.cold.6
-- _ZN14RcpHostContext20getRcpSettingsParamsERaRhS1_RbRjS3_S2_S2_S0_S0_S1_S1_S1_S1_S1_.cold.7
-- _ZN15HostInterpreter17route_was_removedE6OriginRK8in6_addrh21ExternalRoutePrioritybtb.cold.1
-- _ZN16XPCIPCAPI_v1_rcp15message_handlerENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEPvN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp20CallbackOtctl_HelperEPKcNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEES8_N8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp22interface_form_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp22interface_join_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp22interface_join_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.2
-- _ZN16XPCIPCAPI_v1_rcp22interface_peek_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp22status_response_helperEiNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp22status_response_helperEiNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.2
-- _ZN16XPCIPCAPI_v1_rcp23interface_leave_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp23interface_reset_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp24interface_status_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp25CallbackWithStatus_HelperEiNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES6_N8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp26CallbackWithStatus2_HelperEiNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES6_S6_N8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp26interface_prop_get_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp26interface_prop_get_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.2
-- _ZN16XPCIPCAPI_v1_rcp26interface_prop_get_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.3
-- _ZN16XPCIPCAPI_v1_rcp26interface_prop_get_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.4
-- _ZN16XPCIPCAPI_v1_rcp26interface_prop_get_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.5
-- _ZN16XPCIPCAPI_v1_rcp26interface_prop_get_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.6
-- _ZN16XPCIPCAPI_v1_rcp26interface_prop_set_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp26interface_prop_set_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.2
-- _ZN16XPCIPCAPI_v1_rcp26interface_prop_set_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.3
-- _ZN16XPCIPCAPI_v1_rcp26interface_prop_set_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.4
-- _ZN16XPCIPCAPI_v1_rcp27interface_otctl_cmd_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp27interface_route_add_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp28interface_hard_reset_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp29CallbackWithStatusArg1_HelperEiRKN5boost3anyENSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEESA_SA_N8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp29CallbackWithStatusArg1_HelperEiRKN5boost3anyENSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEESA_SA_N8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.2
-- _ZN16XPCIPCAPI_v1_rcp29CallbackWithStatusArg2_HelperEiRKN5boost3anyENSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEESA_N8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp29CallbackWithStatusArg2_HelperEiRKN5boost3anyENSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEESA_N8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.2
-- _ZN16XPCIPCAPI_v1_rcp29interface_service_add_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp29interface_service_add_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.2
-- _ZN16XPCIPCAPI_v1_rcp29interface_thread_stop_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp30interface_route_remove_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp30interface_thread_start_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp30status_offline_response_helperEiNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp30status_offline_response_helperEiNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.2
-- _ZN16XPCIPCAPI_v1_rcp30status_offline_response_helperEiNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.3
-- _ZN16XPCIPCAPI_v1_rcp31interface_update_accessory_addrEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp31interface_update_accessory_addrEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.2
-- _ZN16XPCIPCAPI_v1_rcp31interface_update_accessory_addrEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.3
-- _ZN16XPCIPCAPI_v1_rcp31interface_update_accessory_addrEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.4
-- _ZN16XPCIPCAPI_v1_rcp31interface_update_accessory_addrEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.5
-- _ZN16XPCIPCAPI_v1_rcp31interface_update_accessory_addrEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.6
-- _ZN16XPCIPCAPI_v1_rcp31interface_update_accessory_addrEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.7
-- _ZN16XPCIPCAPI_v1_rcp31interface_update_accessory_addrEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.8
-- _ZN16XPCIPCAPI_v1_rcp31interface_update_accessory_addrEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.9
-- _ZN16XPCIPCAPI_v1_rcp32interface_config_gateway_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp32interface_net_scan_start_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp32interface_service_remove_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp32interface_service_remove_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.2
-- _ZN16XPCIPCAPI_v1_rcp35interface_energy_scan_start_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN16XPCIPCAPI_v1_rcp37interface_discover_scan_start_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE.cold.1
-- _ZN21ThroughputMonitor_udp14stopClient_udpEv.cold.1
-- _ZN21ThroughputMonitor_udp14stopClient_udpEv.cold.2
-- _ZN21ThroughputMonitor_udp14stopServer_udpEv.cold.1
-- _ZN21ThroughputMonitor_udp14stopServer_udpEv.cold.2
-- _ZN21ThroughputMonitor_udp14stopServer_udpEv.cold.3
-- _ZN21ThroughputMonitor_udp15sendAckToClientEjyRK12otIp6Addresst.cold.1
-- _ZN21ThroughputMonitor_udp15sendAckToClientEjyRK12otIp6Addresst.cold.2
-- _ZN21ThroughputMonitor_udp15sendAckToClientEjyRK12otIp6Addresst.cold.3
-- _ZN21ThroughputMonitor_udp15sendAckToClientEjyRK12otIp6Addresst.cold.4
-- _ZN21ThroughputMonitor_udp15startClient_udpEv.cold.1
-- _ZN21ThroughputMonitor_udp15startClient_udpEv.cold.2
-- _ZN21ThroughputMonitor_udp15startClient_udpEv.cold.3
-- _ZN21ThroughputMonitor_udp15startClient_udpEv.cold.4
-- _ZN21ThroughputMonitor_udp15startClient_udpEv.cold.5
-- _ZN21ThroughputMonitor_udp15startClient_udpEv.cold.6
-- _ZN21ThroughputMonitor_udp15startServer_udpEv.cold.1
-- _ZN21ThroughputMonitor_udp15startServer_udpEv.cold.2
-- _ZN21ThroughputMonitor_udp15startServer_udpEv.cold.3
-- _ZN21ThroughputMonitor_udp15startServer_udpEv.cold.4
-- _ZN21ThroughputMonitor_udp15startServer_udpEv.cold.5
-- _ZN21ThroughputMonitor_udp16stopTHM_UDP_testEv.cold.1
-- _ZN21ThroughputMonitor_udp16stopTHM_UDP_testEv.cold.2
-- _ZN21ThroughputMonitor_udp17handleAckReceivedEj.cold.1
-- _ZN21ThroughputMonitor_udp17handleAckReceivedEj.cold.2
-- _ZN21ThroughputMonitor_udp17sendNextAckPacketEv.cold.1
-- _ZN21ThroughputMonitor_udp19ensureDispatchQueueEv.cold.1
-- _ZN21ThroughputMonitor_udp19sendMessageToServerEt.cold.1
-- _ZN21ThroughputMonitor_udp19sendMessageToServerEt.cold.2
-- _ZN21ThroughputMonitor_udp19sendMessageToServerEt.cold.3
-- _ZN21ThroughputMonitor_udp19sendMessageToServerEt.cold.4
-- _ZN21ThroughputMonitor_udp19sendMessageToServerEt.cold.5
-- _ZN21ThroughputMonitor_udp19sendMessageToServerEt.cold.6
-- _ZN21ThroughputMonitor_udp24cleanupDispatchResourcesEv.cold.1
-- _ZN21ThroughputMonitor_udp24cleanupDispatchResourcesEv.cold.2
-- _ZN21ThroughputMonitor_udp24runThroughputMonitorTestEtjj.cold.1
-- _ZN21ThroughputMonitor_udp24runThroughputMonitorTestEtjj.cold.2
-- _ZN21ThroughputMonitor_udp24runThroughputMonitorTestEtjj.cold.3
-- _ZN21ThroughputMonitor_udp24runThroughputMonitorTestEtjj.cold.4
-- _ZN21ThroughputMonitor_udp25initializeThroughputTimerEtjjNS_8TestTypeE.cold.1
-- _ZN21ThroughputMonitor_udp25initializeThroughputTimerEtjjNS_8TestTypeE.cold.2
-- _ZN21ThroughputMonitor_udp25runAckBasedThroughputTestEtjj.cold.1
-- _ZN21ThroughputMonitor_udp25runAckBasedThroughputTestEtjj.cold.2
-- _ZN21ThroughputMonitor_udp25runAckBasedThroughputTestEtjj.cold.3
-- _ZN21ThroughputMonitor_udp25runAckBasedThroughputTestEtjj.cold.4
-- _ZN21ThroughputMonitor_udp25runAckBasedThroughputTestEtjj.cold.5
-- _ZN21ThroughputMonitor_udp5resetEv.cold.1
-- _ZN21ThroughputMonitor_udp5resetEv.cold.2
-- _ZN21ThroughputMonitor_udp8stopTestENS_8TestTypeE.cold.1
-- _ZN21ThroughputMonitor_udp8stopTestENS_8TestTypeE.cold.2
-- _ZN22ThroughputMonitor_coap13startAckTimerEv.cold.1
-- _ZN22ThroughputMonitor_coap15stopClient_coapEv.cold.1
-- _ZN22ThroughputMonitor_coap15stopClient_coapEv.cold.2
-- _ZN22ThroughputMonitor_coap15stopClient_coapEv.cold.3
-- _ZN22ThroughputMonitor_coap15stopClient_coapEv.cold.4
-- _ZN22ThroughputMonitor_coap15stopServer_coapEv.cold.1
-- _ZN22ThroughputMonitor_coap15stopServer_coapEv.cold.2
-- _ZN22ThroughputMonitor_coap15stopServer_coapEv.cold.3
-- _ZN22ThroughputMonitor_coap15stopServer_coapEv.cold.4
-- _ZN22ThroughputMonitor_coap16startClient_coapEPc.cold.1
-- _ZN22ThroughputMonitor_coap16startClient_coapEPc.cold.2
-- _ZN22ThroughputMonitor_coap16startClient_coapEPc.cold.3
-- _ZN22ThroughputMonitor_coap16startClient_coapEPc.cold.4
-- _ZN22ThroughputMonitor_coap16startClient_coapEPc.cold.5
-- _ZN22ThroughputMonitor_coap16startServer_coapEv.cold.1
-- _ZN22ThroughputMonitor_coap16startServer_coapEv.cold.2
-- _ZN22ThroughputMonitor_coap16startServer_coapEv.cold.3
-- _ZN22ThroughputMonitor_coap16startServer_coapEv.cold.4
-- _ZN22ThroughputMonitor_coap19ensureDispatchQueueEv.cold.1
-- _ZN22ThroughputMonitor_coap19ensureDispatchQueueEv.cold.2
-- _ZN22ThroughputMonitor_coap19ensureDispatchQueueEv.cold.3
-- _ZN22ThroughputMonitor_coap21sendSingleCoAPMessageEb.cold.1
-- _ZN22ThroughputMonitor_coap21sendSingleCoAPMessageEb.cold.2
-- _ZN22ThroughputMonitor_coap21sendSingleCoAPMessageEb.cold.3
-- _ZN22ThroughputMonitor_coap21sendSingleCoAPMessageEb.cold.4
-- _ZN22ThroughputMonitor_coap21sendSingleCoAPMessageEb.cold.5
-- _ZN22ThroughputMonitor_coap22stopCoAPThroughputTestEv.cold.1
-- _ZN22ThroughputMonitor_coap22stopCoAPThroughputTestEv.cold.2
-- _ZN22ThroughputMonitor_coap24cleanupDispatchResourcesEv.cold.1
-- _ZN22ThroughputMonitor_coap24cleanupDispatchResourcesEv.cold.2
-- _ZN22ThroughputMonitor_coap24cleanupDispatchResourcesEv.cold.3
-- _ZN22ThroughputMonitor_coap28runCoAPThroughputMonitorTestEbtjj.cold.1
-- _ZN22ThroughputMonitor_coap28runCoAPThroughputMonitorTestEbtjj.cold.2
-- _ZN22ThroughputMonitor_coap28runCoAPThroughputMonitorTestEbtjj.cold.3
-- _ZN22ThroughputMonitor_coap28runCoAPThroughputMonitorTestEbtjj.cold.4
-- _ZN22ThroughputMonitor_coap28runCoAPThroughputMonitorTestEbtjj.cold.5
-- _ZN22ThroughputMonitor_coap31runCoAPconThroughputMonitorTestEtjj.cold.1
-- _ZN22ThroughputMonitor_coap31runCoAPconThroughputMonitorTestEtjj.cold.2
-- _ZN22ThroughputMonitor_coap31runCoAPconThroughputMonitorTestEtjj.cold.3
-- _ZN22ThroughputMonitor_coap5resetEv.cold.1
-- _ZN22ThroughputMonitor_coap5resetEv.cold.2
-- _ZN26NetworkDiagnosticsConfigDb9openFilesERNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE.cold.3
-- _ZN26NetworkDiagnosticsConfigDb9openFilesERNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE.cold.4
-- _ZN26NetworkDiagnosticsConfigDb9openFilesERNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE.cold.5
-- _ZN26NetworkDiagnosticsConfigDb9openFilesERNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE.cold.6
-- _ZN26NetworkDiagnosticsConfigDb9openFilesERNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE.cold.7
-- _ZN26NetworkDiagnosticsConfigDb9openFilesERNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE.cold.8
-- _ZNSt3__110shared_ptrIN6CtrXPC6Server5StateEEC2B9nqe220100IS3_Li0EEEPT_.cold.1
-- _ZNSt3__16vectorI12ServiceEntryNS_9allocatorIS1_EEE16__init_with_sizeB9nqe220100IPS1_S6_EEvT_T0_m.cold.1
-- _ZNSt3__16vectorI12ServiceEntryNS_9allocatorIS1_EEE18__assign_with_sizeB9nqe220100INS_17_ClassicAlgPolicyEPS1_S7_EEvT0_T1_l.cold.1
-- _ZNSt3__16vectorI12ServiceEntryNS_9allocatorIS1_EEE18__assign_with_sizeB9nqe220100INS_17_ClassicAlgPolicyEPS1_S7_EEvT0_T1_l.cold.2
-- __100-[THThreadNetworkCredentialsKeychainBackingStore getRecordForPreferredNetwork:anyDsFormat:skipScan:]_block_invoke.153
-- __107-[THThreadNetworkCredentialsStoreLocalClient findmDNSScanMatchingNetworkNameSupportingEPSKCwithCompletion:]_block_invoke_2.cold.1
-- __109-[THThreadNetworkCredentialsKeychainBackingStore retrieveOrGeneratePreferredNetworkInternallyWithCompletion:]_block_invoke.155
-- __109-[THThreadNetworkCredentialsKeychainBackingStore storeActiveDataSetRecordAndSyncWithErrComletion:completion:]_block_invoke.113
-- __111-[THThreadNetworkCredentialsKeychainBackingStore findmDNSScanMatchingNetworkNameSupportingEPSKCwithCompletion:]_block_invoke.cold.1
-- __114-[THThreadNetworkCredentialsKeychainBackingStore performSyncOperationWithRecord:queue:timeoutValInSec:completion:]_block_invoke.111
-- __114-[THThreadNetworkCredentialsKeychainBackingStore performSyncOperationWithRecord:queue:timeoutValInSec:completion:]_block_invoke.112
-- __47-[ThreadNetworkManagerInstance getPowerMetrics]_block_invoke.268
-- __48-[ThreadNetworkManagerInstance getAllMacMetrics]_block_invoke.223
-- __52-[ThreadNetworkManagerInstance getEngagementMetrics]_block_invoke.258
-- __54-[ThreadNetworkManagerInstance getNetworkRadioMetrics]_block_invoke.205
-- __65-[THThreadNetworkCredentialsKeychainBackingStore isFrozenRecord:]_block_invoke.125
-- __72-[ThreadNetworkManagerInstance saveThreadConfiguration:passPhrase:uuid:]_block_invoke.375
-- __72-[ThreadNetworkManagerInstance saveThreadConfiguration:passPhrase:uuid:]_block_invoke.375.cold.1
-- __73-[THThreadNetworkCredentialsKeychainBackingStore retrieveThirdPartyInfo:]_block_invoke.56
-- __73-[THThreadNetworkCredentialsKeychainBackingStore retrieveThirdPartyInfo:]_block_invoke.56.cold.1
-- __73-[THThreadNetworkCredentialsKeychainBackingStore retrieveThirdPartyInfo:]_block_invoke.56.cold.2
-- __73-[THThreadNetworkCredentialsKeychainBackingStore retrieveThirdPartyInfo:]_block_invoke.56.cold.3
-- __73-[THThreadNetworkCredentialsKeychainBackingStore retrieveThirdPartyInfo:]_block_invoke.56.cold.4
-- __73-[THThreadNetworkCredentialsKeychainBackingStore retrieveThirdPartyInfo:]_block_invoke.56.cold.5
-- __80-[THThreadNetworkCredentialsKeychainBackingStore storeRecordAndSync:completion:]_block_invoke.46
-- __80-[THThreadNetworkCredentialsKeychainBackingStore storeRecordAndSync:completion:]_block_invoke.48
-- __80-[THThreadNetworkCredentialsKeychainBackingStore storeRecordAndSync:completion:]_block_invoke.49
-- __80-[THThreadNetworkCredentialsKeychainBackingStore storeRecordAndSync:completion:]_block_invoke.53
-- __80-[ThreadNetworkManagerInstance(RCP2CAMetrics_extension) getBTWifiLoadInfoEvent:]_block_invoke.269
-- __85-[ThreadNetworkManagerInstance fillupThreadCredentialsToSelfHealThreadNetwork:store:]_block_invoke.313
-- __85-[ThreadNetworkManagerInstance fillupThreadCredentialsToSelfHealThreadNetwork:store:]_block_invoke.313.cold.1
-- __87-[THThreadNetworkCredentialsKeychainBackingStore deletePreferredNetworkWithCompletion:]_block_invoke.168
-- __87-[THThreadNetworkCredentialsKeychainBackingStore deletePreferredNetworkWithCompletion:]_block_invoke.168.cold.1
-- __87-[THThreadNetworkCredentialsKeychainBackingStore deletePreferredNetworkWithCompletion:]_block_invoke.168.cold.2
-- __87-[THThreadNetworkCredentialsKeychainBackingStore deletePreferredNetworkWithCompletion:]_block_invoke.168.cold.3
-- __87-[THThreadNetworkCredentialsKeychainBackingStore deletePreferredNetworkWithCompletion:]_block_invoke.168.cold.4
-- __87-[THThreadNetworkCredentialsKeychainBackingStore deletePreferredNetworkWithCompletion:]_block_invoke.168.cold.5
-- __87-[THThreadNetworkCredentialsKeychainBackingStore deletePreferredNetworkWithCompletion:]_block_invoke.168.cold.6
-- __88-[THThreadNetworkCredentialsStoreLocalClient enableCredentialSharingModeWithCompletion:]_block_invoke_2.cold.1
-- __92-[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithCompletion:]_block_invoke.327
-- __92-[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithCompletion:]_block_invoke.327.cold.1
-- __92-[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithCompletion:]_block_invoke.331
-- __92-[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithCompletion:]_block_invoke.331.cold.1
-- __92-[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithCompletion:]_block_invoke.331.cold.2
-- __92-[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithCompletion:]_block_invoke.340
-- __92-[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithCompletion:]_block_invoke.340.cold.1
-- __92-[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithCompletion:]_block_invoke.344
-- __92-[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithCompletion:]_block_invoke.344.cold.1
-- __92-[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithCompletion:]_block_invoke.348
-- __92-[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithCompletion:]_block_invoke.348.cold.1
-- __93-[THThreadNetworkCredentialsKeychainBackingStore storeActiveDataSetRecordAndSync:completion:]_block_invoke.105
-- __93-[THThreadNetworkCredentialsKeychainBackingStore storeActiveDataSetRecordAndSync:completion:]_block_invoke.108
-- __93-[THThreadNetworkCredentialsKeychainBackingStore storeActiveDataSetRecordAndSync:completion:]_block_invoke.109
-- __93-[THThreadNetworkCredentialsKeychainBackingStore storeActiveDataSetRecordAndSync:completion:]_block_invoke.110
-- __94-[THThreadNetworkCredentialsKeychainBackingStore storeCachedAODasPreferredNetwork:completion:]_block_invoke.141
-- __Block_byref_object_copy_.311
-- __Block_byref_object_copy_.338
-- __Block_byref_object_dispose_.312
-- __Block_byref_object_dispose_.339
+- _Z25readChattyMonitorSettingsv
+- _ZN13ChattyMonitor10InitializeEP10otInstance
+- _ZN13ChattyMonitor22processResidentTrafficERN2ot3Ip67HeadersERNS0_7MessageEb7otError
+- _ZN13ChattyMonitorC1EP10otInstance
+- _ZN13ChattyMonitorC2EP10otInstance
+- _ZN14RcpHostContext20getRcpSettingsParamsERaRhS1_RbRjS3_S2_S2_S0_S0_S1_S1_S1_S1_S1_
+- _ZN15HostInterpreter17route_was_removedE6OriginRK8in6_addrh21ExternalRoutePrioritybtb
+- _ZN16XPCIPCAPI_v1_rcp15message_handlerENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEPvN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp20CallbackOtctl_HelperEPKcNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEES8_N8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp22interface_form_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp22interface_join_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp22interface_peek_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp22status_response_helperEiNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp23interface_leave_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp23interface_reset_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp24interface_status_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp25CallbackWithStatus_HelperEiNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES6_N8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp26CallbackWithStatus2_HelperEiNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES6_S6_N8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp26interface_prop_get_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp26interface_prop_set_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp27interface_otctl_cmd_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp27interface_route_add_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp28interface_hard_reset_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp29CallbackWithStatusArg1_HelperEiRKN5boost3anyENSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEESA_SA_N8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp29CallbackWithStatusArg2_HelperEiRKN5boost3anyENSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEESA_N8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp29interface_service_add_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp29interface_thread_stop_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp30interface_route_remove_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp30interface_thread_start_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp30status_offline_response_helperEiNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp31interface_update_accessory_addrEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp32interface_config_gateway_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp32interface_net_scan_start_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp32interface_service_remove_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp35interface_energy_scan_start_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN16XPCIPCAPI_v1_rcp37interface_discover_scan_start_handlerEPvNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvhN3xpc4dictEEEE
+- _ZN21ThroughputMonitor_udp14stopClient_udpEv
+- _ZN21ThroughputMonitor_udp14stopServer_udpEv
+- _ZN21ThroughputMonitor_udp15sendAckToClientEjyRK12otIp6Addresst
+- _ZN21ThroughputMonitor_udp15startClient_udpEv
+- _ZN21ThroughputMonitor_udp15startServer_udpEv
+- _ZN21ThroughputMonitor_udp16stopTHM_UDP_testEv
+- _ZN21ThroughputMonitor_udp17handleAckReceivedEj
+- _ZN21ThroughputMonitor_udp17sendNextAckPacketEv
+- _ZN21ThroughputMonitor_udp19ensureDispatchQueueEv
+- _ZN21ThroughputMonitor_udp19sendMessageToServerEt
+- _ZN21ThroughputMonitor_udp24cleanupDispatchResourcesEv
+- _ZN21ThroughputMonitor_udp24runThroughputMonitorTestEtjj
+- _ZN21ThroughputMonitor_udp25initializeThroughputTimerEtjjNS_8TestTypeE
+- _ZN21ThroughputMonitor_udp25runAckBasedThroughputTestEtjj
+- _ZN21ThroughputMonitor_udp5resetEv
+- _ZN21ThroughputMonitor_udp8stopTestENS_8TestTypeE
+- _ZN22ThroughputMonitor_coap13startAckTimerEv
+- _ZN22ThroughputMonitor_coap15stopClient_coapEv
+- _ZN22ThroughputMonitor_coap15stopServer_coapEv
+- _ZN22ThroughputMonitor_coap16startClient_coapEPc
+- _ZN22ThroughputMonitor_coap16startServer_coapEv
+- _ZN22ThroughputMonitor_coap19ensureDispatchQueueEv
+- _ZN22ThroughputMonitor_coap21sendSingleCoAPMessageEb
+- _ZN22ThroughputMonitor_coap22stopCoAPThroughputTestEv
+- _ZN22ThroughputMonitor_coap24cleanupDispatchResourcesEv
+- _ZN22ThroughputMonitor_coap28runCoAPThroughputMonitorTestEbtjj
+- _ZN22ThroughputMonitor_coap31runCoAPconThroughputMonitorTestEtjj
+- _ZN22ThroughputMonitor_coap5resetEv
+- _ZNSt3__110shared_ptrIN6CtrXPC6Server5StateEEC2B9nqe220100IS3_Li0EEEPT_
+- _ZNSt3__16vectorI12ServiceEntryNS_9allocatorIS1_EEE16__init_with_sizeB9nqe220100IPS1_S6_EEvT_T0_m
+- _ZNSt3__16vectorI12ServiceEntryNS_9allocatorIS1_EEE18__assign_with_sizeB9nqe220100INS_17_ClassicAlgPolicyEPS1_S7_EEvT0_T1_l
+- __107-[THThreadNetworkCredentialsStoreLocalClient findmDNSScanMatchingNetworkNameSupportingEPSKCwithCompletion:]_block_invoke_2
+- __111-[THThreadNetworkCredentialsKeychainBackingStore findmDNSScanMatchingNetworkNameSupportingEPSKCwithCompletion:]_block_invoke
+- __88-[THThreadNetworkCredentialsStoreLocalClient enableCredentialSharingModeWithCompletion:]_block_invoke_2
+- __92-[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithCompletion:]_block_invoke
 - __Z15get_time_stringyPct
 - __Z22IsChattyMonitorEnabledv
 - __Z25get_homekit_metrics_indexh
@@ -3315,30 +2111,15 @@ Symbols:
 - ___88-[THThreadNetworkCredentialsStoreLocalClient enableCredentialSharingModeWithCompletion:]_block_invoke
 - ___88-[THThreadNetworkCredentialsStoreLocalClient enableCredentialSharingModeWithCompletion:]_block_invoke_2
 - ___92-[THThreadNetworkCredentialsKeychainBackingStore enableCredentialSharingModeWithCompletion:]_block_invoke
-- ___ZN14InternalIPCAPI16property_changedENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEN5boost3anyE_block_invoke.28
-- ___ZN14InternalIPCAPI16property_changedENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEN5boost3anyE_block_invoke.28.cold.1
-- ___ZN14InternalIPCAPI16property_changedENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEN5boost3anyE_block_invoke.28.cold.2
-- ___ZN14InternalIPCAPI17IntBroadcastEventENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEN5boost3anyEN8dispatch8callbackIU13block_pointerFvvEEE_block_invoke.31
-- ___ZN21ThroughputMonitor_udp17handleAckReceivedEj_block_invoke.cold.1
-- ___ZN21ThroughputMonitor_udp17sendNextAckPacketEv_block_invoke.cold.1
-- ___ZN21ThroughputMonitor_udp18scheduleAckTimeoutEv_block_invoke.cold.1
-- ___ZN21ThroughputMonitor_udp24cleanupDispatchResourcesEv_block_invoke.1
-- ___ZN21ThroughputMonitor_udp24cleanupDispatchResourcesEv_block_invoke.1.cold.1
-- ___ZN21ThroughputMonitor_udp25initializeThroughputTimerEtjjNS_8TestTypeE_block_invoke.cold.1
-- ___ZN22ThroughputMonitor_coap13startAckTimerEv_block_invoke.39
-- ___ZN22ThroughputMonitor_coap13startAckTimerEv_block_invoke.39.cold.1
-- ___ZN22ThroughputMonitor_coap13startAckTimerEv_block_invoke.cold.1
-- ___ZN22ThroughputMonitor_coap13startAckTimerEv_block_invoke.cold.2
-- ___ZN22ThroughputMonitor_coap13startAckTimerEv_block_invoke.cold.3
-- ___ZN22ThroughputMonitor_coap22stopCoAPThroughputTestEv_block_invoke.cold.1
-- ___ZN22ThroughputMonitor_coap24cleanupDispatchResourcesEv_block_invoke.33
-- ___ZN22ThroughputMonitor_coap24cleanupDispatchResourcesEv_block_invoke.33.cold.1
-- ___ZN22ThroughputMonitor_coap24cleanupDispatchResourcesEv_block_invoke.cold.1
-- ___ZN22ThroughputMonitor_coap28runCoAPThroughputMonitorTestEbtjj_block_invoke.24
-- ___ZN22ThroughputMonitor_coap28runCoAPThroughputMonitorTestEbtjj_block_invoke.24.cold.1
-- ___ZN22ThroughputMonitor_coap28runCoAPThroughputMonitorTestEbtjj_block_invoke.cold.1
-- ___ZN22ThroughputMonitor_coap28runCoAPThroughputMonitorTestEbtjj_block_invoke.cold.2
-- ___ZN22ThroughputMonitor_coap28runCoAPThroughputMonitorTestEbtjj_block_invoke.cold.3
+- ___ZN21ThroughputMonitor_udp17handleAckReceivedEj_block_invoke
+- ___ZN21ThroughputMonitor_udp17sendNextAckPacketEv_block_invoke
+- ___ZN21ThroughputMonitor_udp18scheduleAckTimeoutEv_block_invoke
+- ___ZN21ThroughputMonitor_udp24cleanupDispatchResourcesEv_block_invoke
+- ___ZN21ThroughputMonitor_udp25initializeThroughputTimerEtjjNS_8TestTypeE_block_invoke
+- ___ZN22ThroughputMonitor_coap13startAckTimerEv_block_invoke
+- ___ZN22ThroughputMonitor_coap22stopCoAPThroughputTestEv_block_invoke
+- ___ZN22ThroughputMonitor_coap24cleanupDispatchResourcesEv_block_invoke
+- ___ZN22ThroughputMonitor_coap28runCoAPThroughputMonitorTestEbtjj_block_invoke
 - ____ZN21ThroughputMonitor_udp17handleAckReceivedEj_block_invoke
 - ____ZN21ThroughputMonitor_udp17sendNextAckPacketEv_block_invoke
 - ____ZN21ThroughputMonitor_udp18scheduleAckTimeoutEv_block_invoke
@@ -3352,31 +2133,6 @@ Symbols:
 - ____ZN22ThroughputMonitor_coap28runCoAPThroughputMonitorTestEbtjj_block_invoke
 - ___block_descriptor_40_e8_32bs_e30_v24?0"NSString"8"NSError"16ls32l8
 - ___block_descriptor_48_e8_32s40bs_e17_v16?0"NSArray"8ls32l8s40l8
-- __block_descriptor_tmp.133
-- __block_descriptor_tmp.136
-- __block_descriptor_tmp.144
-- __block_descriptor_tmp.149
-- __block_descriptor_tmp.152
-- __block_descriptor_tmp.194
-- __block_descriptor_tmp.199
-- __block_descriptor_tmp.2
-- __block_descriptor_tmp.33
-- __block_descriptor_tmp.39
-- __block_descriptor_tmp.42
-- __block_descriptor_tmp.56
-- __block_descriptor_tmp.6
-- __block_descriptor_tmp.613
-- __block_literal_global.116
-- __block_literal_global.152
-- __block_literal_global.253
-- __block_literal_global.255
-- __block_literal_global.261
-- __block_literal_global.263
-- __block_literal_global.29
-- __block_literal_global.32
-- __block_literal_global.36
-- __block_literal_global.4
-- __block_literal_global.9
 - _dispatch_source_set_cancel_handler
 - _gChattyToNormalBytes
 - _gChattyToNormalCount
@@ -3456,26 +2212,6 @@ CStrings:
 + "-[ThreadNetworkManagerInstance retrieveActiveDataSetRecordForUniqueId:record:]_block_invoke"
 + "-[ThreadNetworkManagerInstance retrieveCredentialsForUniqueId:credentialsRecord_t:]_block_invoke"
 + "-[ThreadNetworkManagerInstance updateLastKnownJoinedNetworkSignature]"
-+ "/AppleInternal/Library/BuildRoots/4~CRskugClp7REWBApd7Rwi7brz7D-Bn8akQW_Dxk/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__hash_table:1855: libc++ Hardening assertion __p != end() failed: unordered container::erase(iterator) called with a non-dereferenceable iterator\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRskugClp7REWBApd7Rwi7brz7D-Bn8akQW_Dxk/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__hash_table:242: libc++ Hardening assertion __node_ != nullptr failed: Attempted to dereference a non-dereferenceable unordered container iterator\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRskugClp7REWBApd7Rwi7brz7D-Bn8akQW_Dxk/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__hash_table:248: libc++ Hardening assertion __node_ != nullptr failed: Attempted to dereference a non-dereferenceable unordered container iterator\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRskugClp7REWBApd7Rwi7brz7D-Bn8akQW_Dxk/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__hash_table:254: libc++ Hardening assertion __node_ != nullptr failed: Attempted to increment a non-incrementable unordered container iterator\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRskugClp7REWBApd7Rwi7brz7D-Bn8akQW_Dxk/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__memory/construct_at.h:47: libc++ Hardening assertion __location != nullptr failed: null pointer given to construct_at\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRskugClp7REWBApd7Rwi7brz7D-Bn8akQW_Dxk/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__memory/construct_at.h:59: libc++ Hardening assertion __loc != nullptr failed: null pointer given to destroy_at\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRskugClp7REWBApd7Rwi7brz7D-Bn8akQW_Dxk/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__memory/unique_ptr.h:583: libc++ Hardening assertion __checker_.__in_bounds<deleter_type>(std::__to_address(__ptr_), __i) failed: unique_ptr<T[]>::operator[](index): index out of range\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRskugClp7REWBApd7Rwi7brz7D-Bn8akQW_Dxk/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/deque:1565: libc++ Hardening assertion !empty() failed: deque::front called on an empty deque\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRskugClp7REWBApd7Rwi7brz7D-Bn8akQW_Dxk/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/deque:2199: libc++ Hardening assertion !empty() failed: deque::pop_front called on an empty deque\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRskugClp7REWBApd7Rwi7brz7D-Bn8akQW_Dxk/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/streambuf:301: libc++ Hardening assertion std::__is_valid_range(__gbeg, __gnext) failed: [gbeg, gnext) must be a valid range\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRskugClp7REWBApd7Rwi7brz7D-Bn8akQW_Dxk/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/streambuf:302: libc++ Hardening assertion std::__is_valid_range(__gbeg, __gend) failed: [gbeg, gend) must be a valid range\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRskugClp7REWBApd7Rwi7brz7D-Bn8akQW_Dxk/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/streambuf:303: libc++ Hardening assertion std::__is_valid_range(__gnext, __gend) failed: [gnext, gend) must be a valid range\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRskugClp7REWBApd7Rwi7brz7D-Bn8akQW_Dxk/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/streambuf:319: libc++ Hardening assertion std::__is_valid_range(__pbeg, __pend) failed: [pbeg, pend) must be a valid range\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRskugClp7REWBApd7Rwi7brz7D-Bn8akQW_Dxk/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:1074: libc++ Hardening assertion __s != nullptr failed: basic_string(const char*) detected nullptr\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRskugClp7REWBApd7Rwi7brz7D-Bn8akQW_Dxk/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:2219: libc++ Hardening assertion __s < __min_cap failed: __s should never be greater than or equal to the short string capacity\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRskugClp7REWBApd7Rwi7brz7D-Bn8akQW_Dxk/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:2226: libc++ Hardening assertion !__rep_.__s.__is_long_ failed: String has to be short when trying to get the short size\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRskugClp7REWBApd7Rwi7brz7D-Bn8akQW_Dxk/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:2235: libc++ Hardening assertion __rep_.__l.__is_long_ failed: String has to be long when trying to get the long size\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRskugClp7REWBApd7Rwi7brz7D-Bn8akQW_Dxk/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:2247: libc++ Hardening assertion __rep_.__l.__is_long_ failed: String has to be long when trying to get the long capacity\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRskugClp7REWBApd7Rwi7brz7D-Bn8akQW_Dxk/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:2252: libc++ Hardening assertion __rep_.__l.__is_long_ failed: String has to be long when trying to get the long pointer\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRskugClp7REWBApd7Rwi7brz7D-Bn8akQW_Dxk/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:2257: libc++ Hardening assertion __rep_.__l.__is_long_ failed: String has to be long when trying to get the long pointer\n"
 + "/System/Library/PrivateFrameworks/CoreThreadRadio.framework/com.apple.ccmapping_ios_vendor2_ver_100.plist"
 + "/System/Library/PrivateFrameworks/CoreThreadRadio.framework/com.apple.ccmapping_ios_vendor2_ver_101.plist"
 + "/System/Library/PrivateFrameworks/CoreThreadRadio.framework/com.apple.ccmapping_ios_vendor2_ver_200.plist"
@@ -3667,26 +2403,6 @@ CStrings:
 - "-[THThreadNetworkCredentialsStoreLocalClient findmDNSScanMatchingNetworkNameSupportingEPSKCwithCompletion:]_block_invoke_2"
 - "-[ThreadNetworkManagerInstance checkAndUpdateNetworkParamsFromMdnsScan:borderAgentID:leaderBorderAgentID:isNwFound:numAppleBRs:numThirdPartyBRs:isLeaderAppleDevice:numThreadNwsFound:shouldRunPeriodicTdm:]"
 - ".pcapng"
-- "/AppleInternal/Library/BuildRoots/4~CQKTugCRASNN_nymyvXlGTd9-Jm1mPQTPFRT07o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__hash_table:1855: libc++ Hardening assertion __p != end() failed: unordered container::erase(iterator) called with a non-dereferenceable iterator\n"
-- "/AppleInternal/Library/BuildRoots/4~CQKTugCRASNN_nymyvXlGTd9-Jm1mPQTPFRT07o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__hash_table:242: libc++ Hardening assertion __node_ != nullptr failed: Attempted to dereference a non-dereferenceable unordered container iterator\n"
-- "/AppleInternal/Library/BuildRoots/4~CQKTugCRASNN_nymyvXlGTd9-Jm1mPQTPFRT07o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__hash_table:248: libc++ Hardening assertion __node_ != nullptr failed: Attempted to dereference a non-dereferenceable unordered container iterator\n"
-- "/AppleInternal/Library/BuildRoots/4~CQKTugCRASNN_nymyvXlGTd9-Jm1mPQTPFRT07o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__hash_table:254: libc++ Hardening assertion __node_ != nullptr failed: Attempted to increment a non-incrementable unordered container iterator\n"
-- "/AppleInternal/Library/BuildRoots/4~CQKTugCRASNN_nymyvXlGTd9-Jm1mPQTPFRT07o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__memory/construct_at.h:47: libc++ Hardening assertion __location != nullptr failed: null pointer given to construct_at\n"
-- "/AppleInternal/Library/BuildRoots/4~CQKTugCRASNN_nymyvXlGTd9-Jm1mPQTPFRT07o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__memory/construct_at.h:59: libc++ Hardening assertion __loc != nullptr failed: null pointer given to destroy_at\n"
-- "/AppleInternal/Library/BuildRoots/4~CQKTugCRASNN_nymyvXlGTd9-Jm1mPQTPFRT07o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__memory/unique_ptr.h:583: libc++ Hardening assertion __checker_.__in_bounds<deleter_type>(std::__to_address(__ptr_), __i) failed: unique_ptr<T[]>::operator[](index): index out of range\n"
-- "/AppleInternal/Library/BuildRoots/4~CQKTugCRASNN_nymyvXlGTd9-Jm1mPQTPFRT07o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/deque:1565: libc++ Hardening assertion !empty() failed: deque::front called on an empty deque\n"
-- "/AppleInternal/Library/BuildRoots/4~CQKTugCRASNN_nymyvXlGTd9-Jm1mPQTPFRT07o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/deque:2199: libc++ Hardening assertion !empty() failed: deque::pop_front called on an empty deque\n"
-- "/AppleInternal/Library/BuildRoots/4~CQKTugCRASNN_nymyvXlGTd9-Jm1mPQTPFRT07o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/streambuf:301: libc++ Hardening assertion std::__is_valid_range(__gbeg, __gnext) failed: [gbeg, gnext) must be a valid range\n"
-- "/AppleInternal/Library/BuildRoots/4~CQKTugCRASNN_nymyvXlGTd9-Jm1mPQTPFRT07o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/streambuf:302: libc++ Hardening assertion std::__is_valid_range(__gbeg, __gend) failed: [gbeg, gend) must be a valid range\n"
-- "/AppleInternal/Library/BuildRoots/4~CQKTugCRASNN_nymyvXlGTd9-Jm1mPQTPFRT07o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/streambuf:303: libc++ Hardening assertion std::__is_valid_range(__gnext, __gend) failed: [gnext, gend) must be a valid range\n"
-- "/AppleInternal/Library/BuildRoots/4~CQKTugCRASNN_nymyvXlGTd9-Jm1mPQTPFRT07o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/streambuf:319: libc++ Hardening assertion std::__is_valid_range(__pbeg, __pend) failed: [pbeg, pend) must be a valid range\n"
-- "/AppleInternal/Library/BuildRoots/4~CQKTugCRASNN_nymyvXlGTd9-Jm1mPQTPFRT07o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:1074: libc++ Hardening assertion __s != nullptr failed: basic_string(const char*) detected nullptr\n"
-- "/AppleInternal/Library/BuildRoots/4~CQKTugCRASNN_nymyvXlGTd9-Jm1mPQTPFRT07o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:2219: libc++ Hardening assertion __s < __min_cap failed: __s should never be greater than or equal to the short string capacity\n"
-- "/AppleInternal/Library/BuildRoots/4~CQKTugCRASNN_nymyvXlGTd9-Jm1mPQTPFRT07o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:2226: libc++ Hardening assertion !__rep_.__s.__is_long_ failed: String has to be short when trying to get the short size\n"
-- "/AppleInternal/Library/BuildRoots/4~CQKTugCRASNN_nymyvXlGTd9-Jm1mPQTPFRT07o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:2235: libc++ Hardening assertion __rep_.__l.__is_long_ failed: String has to be long when trying to get the long size\n"
-- "/AppleInternal/Library/BuildRoots/4~CQKTugCRASNN_nymyvXlGTd9-Jm1mPQTPFRT07o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:2247: libc++ Hardening assertion __rep_.__l.__is_long_ failed: String has to be long when trying to get the long capacity\n"
-- "/AppleInternal/Library/BuildRoots/4~CQKTugCRASNN_nymyvXlGTd9-Jm1mPQTPFRT07o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:2252: libc++ Hardening assertion __rep_.__l.__is_long_ failed: String has to be long when trying to get the long pointer\n"
-- "/AppleInternal/Library/BuildRoots/4~CQKTugCRASNN_nymyvXlGTd9-Jm1mPQTPFRT07o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:2257: libc++ Hardening assertion __rep_.__l.__is_long_ failed: String has to be long when trying to get the long pointer\n"
 - "/System/Library/PrivateFrameworks/CoreThreadRadio.framework/com.apple.ccmapping_ios_vendor2_ver_100"
 - "/System/Library/PrivateFrameworks/CoreThreadRadio.framework/com.apple.ccmapping_ios_vendor2_ver_101"
 - "/System/Library/PrivateFrameworks/CoreThreadRadio.framework/com.apple.ccmapping_ios_vendor2_ver_200"
@@ -3847,5 +2563,4 @@ CStrings:
 - "void XPCIPCAPI_v1_rcp::interface_form_handler(xpc_object_t, std::string, Server::ResponseHandler)"
 - "void XPCIPCAPI_v1_rcp::interface_join_handler(xpc_object_t, std::string, Server::ResponseHandler)"
 - "yyyy-MM-dd HH:mm:ss"
-
 ```

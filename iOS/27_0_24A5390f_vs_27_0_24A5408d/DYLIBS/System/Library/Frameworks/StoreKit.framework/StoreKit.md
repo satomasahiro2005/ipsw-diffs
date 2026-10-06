@@ -2,97 +2,51 @@
 
 > `/System/Library/Frameworks/StoreKit.framework/StoreKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ed808` | `0x1f2d48` | **`+0x5540`** |
+| `__DATA.__bss` | `0x24a10` | `0x25e90` | **`+0x1480`** |
+| `__TEXT.__const` | `0x185b4` | `0x19194` | **`+0xbe0`** |
+| `__AUTH_CONST.__const` | `0x177c8` | `0x17ee0` | **`+0x718`** |
+| `__TEXT.__swift5_typeref` | `0x6452` | `0x665a` | **`+0x208`** |
+| `__TEXT.__unwind_info` | `0x9e20` | `0x9fc8` | **`+0x1a8`** |
+| `__DATA.__data` | `0x66e0` | `0x6860` | **`+0x180`** |
+| `__TEXT.__swift5_fieldmd` | `0x57a4` | `0x5904` | **`+0x160`** |
+| `__TEXT.__constg_swiftt` | `0x45b4` | `0x4700` | **`+0x14c`** |
+| `__TEXT.__eh_frame` | `0x127b0` | `0x128d8` | **`+0x128`** |
+| `__TEXT.__swift5_capture` | `0x3b7c` | `0x3c4c` | **`+0xd0`** |
+| `__TEXT.__swift5_proto` | `0x154c` | `0x15e4` | **`+0x98`** |
+| `__AUTH.__data` | `0x2820` | `0x27a0` | **`-0x80`** |
+| `__TEXT.__swift5_reflstr` | `0x3b14` | `0x3b84` | **`+0x70`** |
+| `__AUTH_CONST.__objc_const` | `0x169b8` | `0x16a20` | **`+0x68`** |
+| `__TEXT.__swift5_builtin` | `0x17c` | `0x1a4` | **`+0x28`** |
+| `__TEXT.__swift5_types` | `0x6d0` | `0x6f8` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x3760` | `0x3780` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x8471` | `0x8451` | **`-0x20`** |
+| `__TEXT.__swift5_assocty` | `0xbb0` | `0xbc8` | **`+0x18`** |
+| `__TEXT.__swift5_mpenum` | `0x40` | `0x58` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x30f8` | `0x3108` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x11a0` | `0x1194` | **`-0xc`** |
+| `__DATA_CONST.__got` | `0xb78` | `0xb80` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x5c5c` | `0x5c64` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x7a0` | `0x79c` | **`-0x4`** |
+| `__TEXT.__swift_as_ret` | `0x7e0` | `0x7dc` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -816.0.41.0.0
--  __TEXT.__text: 0x1ed808
--  __TEXT.__objc_methlist: 0x5c5c
 +816.0.47.2.2
-+  __TEXT.__text: 0x1f2d48
-+  __TEXT.__objc_methlist: 0x5c64
-   __TEXT.__gcc_except_tab: 0xd78
--  __TEXT.__cstring: 0x8471
--  __TEXT.__const: 0x185b4
-+  __TEXT.__cstring: 0x8451
-+  __TEXT.__const: 0x19194
-   __TEXT.__oslogstring: 0x2c80
-   __TEXT.__dlopen_cstrs: 0x3d0
--  __TEXT.__constg_swiftt: 0x45b4
--  __TEXT.__swift5_typeref: 0x6452
--  __TEXT.__swift5_builtin: 0x17c
--  __TEXT.__swift5_reflstr: 0x3b14
--  __TEXT.__swift5_fieldmd: 0x57a4
--  __TEXT.__swift5_assocty: 0xbb0
--  __TEXT.__swift5_proto: 0x154c
--  __TEXT.__swift5_types: 0x6d0
--  __TEXT.__swift5_capture: 0x3b7c
--  __TEXT.__swift_as_entry: 0x7a0
--  __TEXT.__swift_as_ret: 0x7e0
--  __TEXT.__swift_as_cont: 0x11a0
--  __TEXT.__swift5_mpenum: 0x40
-+  __TEXT.__constg_swiftt: 0x4700
-+  __TEXT.__swift5_typeref: 0x665a
-+  __TEXT.__swift5_builtin: 0x1a4
-+  __TEXT.__swift5_reflstr: 0x3b84
-+  __TEXT.__swift5_fieldmd: 0x5904
-+  __TEXT.__swift5_assocty: 0xbc8
-+  __TEXT.__swift5_proto: 0x15e4
-+  __TEXT.__swift5_types: 0x6f8
-+  __TEXT.__swift5_capture: 0x3c4c
-+  __TEXT.__swift_as_entry: 0x79c
-+  __TEXT.__swift_as_ret: 0x7dc
-+  __TEXT.__swift_as_cont: 0x1194
-+  __TEXT.__swift5_mpenum: 0x58
-   __TEXT.__swift5_protos: 0x30
--  __TEXT.__unwind_info: 0x9e20
--  __TEXT.__eh_frame: 0x127b0
-+  __TEXT.__unwind_info: 0x9fc8
-+  __TEXT.__eh_frame: 0x128d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x3a8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x30f8
-+  __DATA_CONST.__objc_selrefs: 0x3108
-   __DATA_CONST.__objc_protorefs: 0x1e8
-   __DATA_CONST.__objc_superrefs: 0x1d8
-   __DATA_CONST.__objc_arraydata: 0x60
--  __DATA_CONST.__got: 0xb78
--  __AUTH_CONST.__const: 0x177c8
--  __AUTH_CONST.__cfstring: 0x3760
--  __AUTH_CONST.__objc_const: 0x169b8
-+  __DATA_CONST.__got: 0xb80
-+  __AUTH_CONST.__const: 0x17ee0
-+  __AUTH_CONST.__cfstring: 0x3780
-+  __AUTH_CONST.__objc_const: 0x16a20
-   __AUTH_CONST.__objc_intobj: 0xf0
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__auth_got: 0x19a0
-   __AUTH.__objc_data: 0x21e8
--  __AUTH.__data: 0x2820
-+  __AUTH.__data: 0x27a0
-   __DATA.__objc_ivar: 0x5b8
--  __DATA.__data: 0x66e0
--  __DATA.__bss: 0x24a10
-+  __DATA.__data: 0x6860
-+  __DATA.__bss: 0x25e90
-   __DATA.__common: 0x60
-   __DATA_DIRTY.__objc_data: 0x5d8
-   __DATA_DIRTY.__data: 0x1dc0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15483
--  Symbols:   8318
--  CStrings:  1361
+-  Symbols:   7152
+-  CStrings:  1362
 +  Functions: 15695
-+  Symbols:   8377
-+  CStrings:  1362
- 
++  Symbols:   7210
++  CStrings:  1363
 Symbols:
 + _OBJC_CLASS_$_AMSRestrictions
 + _SKServerKeyDialog
@@ -124,8 +78,6 @@ Symbols:
 + _associated conformance 8StoreKit21SKUIEngagementRequestV4KindO29ManageSubscriptionsCodingKeys33_76ECC7C06851441D86DD3ECCE2F96D98LLOs0H3KeyAAs28CustomDebugStringConvertible
 + _get_enum_tag_for_layout_string 10Foundation4DataV15_RepresentationO
 + _get_enum_tag_for_layout_string 8StoreKit21SKUIEngagementRequestV4KindO
-+ _objc_msgSend$allowAccountModifications
-+ _objc_msgSend$showOfferCodeRedemptionWith:in:reply:
 + _symbolic SSSg19subscriptionGroupID_t
 + _symbolic _____ 8StoreKit19AppTransactionQueryV13IterationTypeO
 + _symbolic _____ 8StoreKit19AppTransactionQueryV13IterationTypeO10CodingKeys33_E20F9241F6478C3913B77C9D644A3940LLO
@@ -165,18 +117,21 @@ Symbols:
 - _associated conformance 8StoreKit26OfferCodeRedemptionRequestV10CodingKeys33_974E01167AC5E8883EC5069562A25F93LLOSHAASQ
 - _associated conformance 8StoreKit26OfferCodeRedemptionRequestV10CodingKeys33_974E01167AC5E8883EC5069562A25F93LLOs0G3KeyAAs23CustomStringConvertible
 - _associated conformance 8StoreKit26OfferCodeRedemptionRequestV10CodingKeys33_974E01167AC5E8883EC5069562A25F93LLOs0G3KeyAAs28CustomDebugStringConvertible
-- _objc_msgSend$showOfferCodeRedemptionWith:reply:
 - _symbolic _____ 8StoreKit26OfferCodeRedemptionRequestV
 - _symbolic _____ 8StoreKit26OfferCodeRedemptionRequestV10CodingKeys33_974E01167AC5E8883EC5069562A25F93LLO
 - _symbolic _____y_____G 8StoreKit11ServiceTaskV AA26OfferCodeRedemptionRequestV
 - _symbolic _____y_____G s22KeyedDecodingContainerV 8StoreKit26OfferCodeRedemptionRequestV10CodingKeys33_974E01167AC5E8883EC5069562A25F93LLO
 - _symbolic _____y_____G s22KeyedEncodingContainerV 8StoreKit26OfferCodeRedemptionRequestV10CodingKeys33_974E01167AC5E8883EC5069562A25F93LLO
 CStrings:
++ "19:49:07"
++ "Aug  6 2026"
 + "developerErrorCode"
 + "developerErrorMessage"
 + "dialog"
 + "options"
+- "05:47:57"
 - "Error displaying offer code redemption: "
+- "Jul 11 2026"
 - "dialog.developerErrorCode"
 - "dialog.developerErrorMessage"
 ```

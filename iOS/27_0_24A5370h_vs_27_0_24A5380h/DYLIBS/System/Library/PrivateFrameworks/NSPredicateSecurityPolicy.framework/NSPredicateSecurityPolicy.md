@@ -2,19 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/NSPredicateSecurityPolicy.framework/NSPredicateSecurityPolicy`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0xa28
-+  __TEXT.__text: 0xa2c
-   __TEXT.__const: 0x8220
-   __TEXT.__cstring: 0x13c
-   __TEXT.__unwind_info: 0x80
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa28` | `0xa2c` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _RTShouldApplyNSPredicateSecurityPolicy -> _isChildOfNSManagedObject : 284 -> 108
 ~ _isChildOfNSManagedObject -> _RTShouldApplyNSPredicateSecurityPolicy : 108 -> 284
 ~ _nspspHashName : 888 -> 892
-
 ```

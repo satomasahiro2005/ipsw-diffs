@@ -2,36 +2,25 @@
 
 > `/usr/lib/swift/libswift_RegexParser.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x81894` | `0x82208` | **`+0x974`** |
+| `__TEXT.__eh_frame` | `0x488` | `0x4b8` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x1900` | `0x1908` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -6.4.0.34.1
--  __TEXT.__text: 0x80464
 +6.4.2.1.7
-+  __TEXT.__text: 0x80df8
-   __TEXT.__swift5_typeref: 0xc08
-   __TEXT.__const: 0x5da8
-   __TEXT.__swift5_capture: 0x258
 
-   __TEXT.__swift5_proto: 0x544
-   __TEXT.__swift5_builtin: 0xdc
-   __TEXT.__swift5_mpenum: 0xc4
--  __TEXT.__unwind_info: 0x1f38
--  __TEXT.__eh_frame: 0x488
-+  __TEXT.__unwind_info: 0x1f58
-+  __TEXT.__eh_frame: 0x4b8
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__got: 0x0
-
-   __DATA_DIRTY.__bss: 0x100
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/swift/libswiftCore.dylib
 -  Functions: 2746
 -  Symbols:   6665
 +  Functions: 2754
 +  Symbols:   6673
-   CStrings:  804
- 
 Symbols:
 + _$s12_RegexParser0B0V18applySyntaxOptions33_F50E6FA39D48CAE20DE1ECAC5A1082E2LL2of8isScopedyAA3ASTV22MatchingOptionSequenceV_SbtF03mapT0L_yyAA0dE0V_SbAI0sT0VXEtF05$s12_a17Parser0B0V18applyd10Options33_fghijklmn24LL2of8isScopedyAA3ASTV22stU50V_SbtF03mapT0L0_yyAA0dE0V_AI0sT0V4KindOtFSbAPXEfU_AP4KindOTf1ncnn_n
 + _$s12_RegexParser0B0V18applySyntaxOptions33_F50E6FA39D48CAE20DE1ECAC5A1082E2LL2of8isScopedyAA3ASTV22MatchingOptionSequenceV_SbtF03mapT0L_yyAA0dE0V_SbAI0sT0VXEtF05$s12_a17Parser0B0V18applyd10Options33_fghijklmn24LL2of8isScopedyAA3ASTV22stU67V_SbtFSbAI0sT0Vcfu1_33_7bf159d6a9b162adada0d7e3a10aeab4AMSbTf3npk_nTf1ncnn_n

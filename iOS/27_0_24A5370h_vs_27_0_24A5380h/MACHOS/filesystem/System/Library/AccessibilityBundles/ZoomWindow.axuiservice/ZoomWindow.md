@@ -2,113 +2,73 @@
 
 > `/System/Library/AccessibilityBundles/ZoomWindow.axuiservice/ZoomWindow`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6b2c4` | `0x69dc4` | **`-0x1500`** |
+| `__TEXT.__objc_stubs` | `0xb960` | `0xbaa0` | **`+0x140`** |
+| `__TEXT.__objc_methname` | `0x1100b` | `0x1112b` | **`+0x120`** |
+| `__TEXT.__cstring` | `0x25ee` | `0x2580` | **`-0x6e`** |
+| `__TEXT.__const` | `0x1fa8` | `0x1f50` | **`-0x58`** |
+| `__DATA.__objc_selrefs` | `0x37a0` | `0x37f0` | **`+0x50`** |
+| `__TEXT.__swift5_reflstr` | `0x682` | `0x632` | **`-0x50`** |
+| `__TEXT.__objc_methlist` | `0x4cb0` | `0x4cf0` | **`+0x40`** |
+| `__TEXT.__oslogstring` | `0x404` | `0x437` | **`+0x33`** |
+| `__DATA_CONST.__got` | `0x918` | `0x948` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x17a8` | `0x17d0` | **`+0x28`** |
+| `__TEXT.__swift5_typeref` | `0x2cb2` | `0x2cd2` | **`+0x20`** |
+| `__TEXT.__objc_methtype` | `0x3a15` | `0x3a2e` | **`+0x19`** |
+| `__TEXT.__swift5_fieldmd` | `0x604` | `0x5ec` | **`-0x18`** |
+| `__DATA.__bss` | `0xf40` | `0xf30` | **`-0x10`** |
+| `__DATA.__data` | `0x1ad0` | `0x1ac0` | **`-0x10`** |
+| `__TEXT.__auth_stubs` | `0x2210` | `0x2220` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x1a18` | `0x1a08` | **`-0x10`** |
+| `__DATA.__objc_ivar` | `0x690` | `0x698` | **`+0x8`** |
+| `__DATA_CONST.__auth_got` | `0x1118` | `0x1120` | **`+0x8`** |
+| `__DATA_CONST.__auth_ptr` | `0x630` | `0x628` | **`-0x8`** |
+| `__TEXT.__swift5_capture` | `0x23c` | `0x240` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_stublist`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x6b2c4
--  __TEXT.__auth_stubs: 0x2210
--  __TEXT.__objc_stubs: 0xb960
--  __TEXT.__objc_methlist: 0x4cb0
--  __TEXT.__const: 0x1fa8
--  __TEXT.__objc_methname: 0x1100b
-+  __TEXT.__text: 0x69dc4
-+  __TEXT.__auth_stubs: 0x2220
-+  __TEXT.__objc_stubs: 0xbaa0
-+  __TEXT.__objc_methlist: 0x4cf0
-+  __TEXT.__const: 0x1f50
-+  __TEXT.__objc_methname: 0x1112b
-   __TEXT.__objc_classname: 0x920
--  __TEXT.__objc_methtype: 0x3a15
-+  __TEXT.__objc_methtype: 0x3a2e
-   __TEXT.__constg_swiftt: 0xd50
--  __TEXT.__swift5_typeref: 0x2cb2
--  __TEXT.__swift5_fieldmd: 0x604
--  __TEXT.__swift5_reflstr: 0x682
-+  __TEXT.__swift5_typeref: 0x2cd2
-+  __TEXT.__swift5_fieldmd: 0x5ec
-+  __TEXT.__swift5_reflstr: 0x632
-   __TEXT.__swift5_builtin: 0x64
-   __TEXT.__swift5_assocty: 0x188
--  __TEXT.__oslogstring: 0x404
--  __TEXT.__cstring: 0x25ee
--  __TEXT.__swift5_capture: 0x23c
-+  __TEXT.__oslogstring: 0x437
-+  __TEXT.__cstring: 0x2580
-+  __TEXT.__swift5_capture: 0x240
-   __TEXT.__swift5_proto: 0x64
-   __TEXT.__swift5_types: 0x74
-   __TEXT.__swift5_protos: 0x4
+-902.0.0.0.0
++904.0.0.0.0
 
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x10
-   __TEXT.__gcc_except_tab: 0x860
--  __TEXT.__unwind_info: 0x1a18
-+  __TEXT.__unwind_info: 0x1a08
-   __TEXT.__eh_frame: 0x420
--  __DATA_CONST.__const: 0x17a8
-+  __DATA_CONST.__const: 0x17d0
-   __DATA_CONST.__cfstring: 0x17e0
-   __DATA_CONST.__objc_classlist: 0x178
-   __DATA_CONST.__objc_catlist: 0x18
-
-   __DATA_CONST.__objc_arrayobj: 0xd8
-   __DATA_CONST.__objc_dictobj: 0x50
-   __DATA_CONST.__objc_doubleobj: 0x30
--  __DATA_CONST.__auth_got: 0x1118
--  __DATA_CONST.__got: 0x918
--  __DATA_CONST.__auth_ptr: 0x630
-+  __DATA_CONST.__auth_got: 0x1120
-+  __DATA_CONST.__got: 0x948
-+  __DATA_CONST.__auth_ptr: 0x628
-   __DATA.__objc_const: 0x7910
--  __DATA.__objc_selrefs: 0x37a0
--  __DATA.__objc_ivar: 0x690
-+  __DATA.__objc_selrefs: 0x37f0
-+  __DATA.__objc_ivar: 0x698
-   __DATA.__objc_data: 0x19d0
--  __DATA.__data: 0x1ad0
-+  __DATA.__data: 0x1ac0
-   __DATA.__objc_stublist: 0x10
--  __DATA.__bss: 0xf40
-+  __DATA.__bss: 0xf30
-   __DATA.__common: 0x28
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2528
--  Symbols:   5003
--  CStrings:  3445
+-  Symbols:   4936
+-  CStrings:  3230
 +  Functions: 2524
-+  Symbols:   5024
-+  CStrings:  3458
- 
-Sections:
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__objc_stublist : content changed
++  Symbols:   4959
++  CStrings:  3243
 Symbols:
 + -[ZWRootViewController _resolvedDisplayIDForScreen:]
 + -[ZWUIServer _defaultDisplayController]
@@ -203,5 +163,4 @@ CStrings:
 - "addContentViewController:withUserInteractionEnabled:forService:context:userInterfaceStyle:forWindowScene:completion:"
 - "addScene:isExternal:isMain:"
 - "sceneIdentifierForScene:"
-
 ```

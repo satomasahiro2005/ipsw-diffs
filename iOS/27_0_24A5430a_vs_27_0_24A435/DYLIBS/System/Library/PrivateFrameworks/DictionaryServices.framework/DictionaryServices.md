@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/DictionaryServices.framework/DictionaryServices`
 
-```diff
+### Section Size Changes
 
- 383.7.0.0.0
--  __TEXT.__text: 0x3ab84
-+  __TEXT.__text: 0x3ab98
-   __TEXT.__objc_methlist: 0x14
-   __TEXT.__gcc_except_tab: 0x124c
-   __TEXT.__cstring: 0x822e
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3ab84` | `0x3ab98` | **`+0x14`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _DCSNormalizeSearchStringWithOptionsAndLocale : 996 -> 1000
 ~ __ZN17TrieAccessContext18getMatchDataCommonElPPKhPlbP7CFRangePhS6_S3_ : 1164 -> 1172

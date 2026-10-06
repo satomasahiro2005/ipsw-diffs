@@ -2,14 +2,15 @@
 
 > `/usr/lib/libffi.dylib`
 
-```diff
+### Section Size Changes
 
- 40.0.0.0.0
--  __TEXT.__text: 0xd384
-+  __TEXT.__text: 0xd37c
-   __TEXT.__const: 0x150
-   __TEXT.__cstring: 0xa5
-   __TEXT.__unwind_info: 0x120
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd384` | `0xd37c` | **`-0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _ffi_closure_alloc : 564 -> 560
 ~ _ffi_closure_SYSV_inner : 988 -> 984

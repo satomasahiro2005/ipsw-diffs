@@ -2,58 +2,45 @@
 
 > `/usr/libexec/mmaintenanced`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2418c` | `0x24480` | **`+0x2f4`** |
+| `__TEXT.__oslogstring` | `0x2d46` | `0x2d76` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x218` | `0x240` | **`+0x28`** |
+| `__TEXT.__auth_stubs` | `0x13d0` | `0x13c0` | **`-0x10`** |
+| `__DATA_CONST.__auth_got` | `0x9f8` | `0x9f0` | **`-0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x868` | `0x864` | **`-0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__init_offsets`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2418c
--  __TEXT.__auth_stubs: 0x13d0
-+  __TEXT.__text: 0x24480
-+  __TEXT.__auth_stubs: 0x13c0
-   __TEXT.__objc_stubs: 0x540
-   __TEXT.__init_offsets: 0x8
--  __TEXT.__oslogstring: 0x2d46
-+  __TEXT.__oslogstring: 0x2d76
-   __TEXT.__const: 0x7f8
-   __TEXT.__cstring: 0x1bbd
--  __TEXT.__gcc_except_tab: 0x868
-+  __TEXT.__gcc_except_tab: 0x864
-   __TEXT.__swift5_typeref: 0xfe
-   __TEXT.__swift5_capture: 0x1ec
-   __TEXT.__constg_swiftt: 0x44
+-233.0.0.0.0
++233.0.0.502.1
 
-   __DATA_CONST.__const: 0x1438
-   __DATA_CONST.__cfstring: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x9f8
--  __DATA_CONST.__got: 0x218
-+  __DATA_CONST.__auth_got: 0x9f0
-+  __DATA_CONST.__got: 0x240
-   __DATA_CONST.__auth_ptr: 0xa0
-   __DATA.__objc_selrefs: 0x150
-   __DATA.__data: 0x1a8
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 695
--  Symbols:   3836
--  CStrings:  481
-+  Symbols:   3839
-+  CStrings:  482
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_selrefs : content changed
+-  Symbols:   1402
+-  CStrings:  477
++  Symbols:   1405
++  CStrings:  478
 Symbols:
 + _$s13ExclavesStats0aB6ServerCMm
 + _$s13ExclavesStats0aB6ServerCMn
@@ -72,5 +59,4 @@ Functions:
 ~ _$s23MemoryMaintenance_Swift24reportExclavesShmemStatsSbyF : 1116 -> 1516
 CStrings:
 + "ExclavesStats framework not available"
-
 ```

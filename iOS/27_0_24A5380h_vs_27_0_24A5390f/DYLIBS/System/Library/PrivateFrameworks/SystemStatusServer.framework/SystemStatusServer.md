@@ -2,77 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/SystemStatusServer.framework/SystemStatusServer`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_protolist`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1fac4` | `0x20774` | **`+0xcb0`** |
+| `__TEXT.__oslogstring` | `0xaee` | `0xe55` | **`+0x367`** |
+| `__AUTH_CONST.__objc_const` | `0x4260` | `0x44f8` | **`+0x298`** |
+| `__TEXT.__objc_methlist` | `0x1d90` | `0x1e98` | **`+0x108`** |
+| `__TEXT.__cstring` | `0x1c7a` | `0x1d3b` | **`+0xc1`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1358` | `0x1418` | **`+0xc0`** |
+| `__AUTH_CONST.__cfstring` | `0x1760` | `0x17e0` | **`+0x80`** |
+| `__AUTH.__objc_data` | `—` | `0x50` | **`+0x50`** |
+| `__DATA_CONST.__const` | `0xdd8` | `0xe28` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x870` | `0x8a0` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x410` | `0x438` | **`+0x28`** |
+| `__DATA.__objc_ivar` | `0x2a4` | `0x2c8` | **`+0x24`** |
+| `__AUTH_CONST.__const` | `0x2a0` | `0x2c0` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x328` | `0x33c` | **`+0x14`** |
+| `__DATA_DIRTY.__bss` | `0x60` | `0x70` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x128` | `0x130` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x108` | `0x110` | **`+0x8`** |
+| `__TEXT.__const` | `0xd0` | `0xd8` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -282.0.0.0.0
--  __TEXT.__text: 0x1fac4
--  __TEXT.__objc_methlist: 0x1d90
--  __TEXT.__const: 0xd0
 +284.1.0.0.0
-+  __TEXT.__text: 0x20774
-+  __TEXT.__objc_methlist: 0x1e98
-+  __TEXT.__const: 0xd8
-   __TEXT.__dlopen_cstrs: 0x52
--  __TEXT.__cstring: 0x1c7a
--  __TEXT.__gcc_except_tab: 0x328
--  __TEXT.__oslogstring: 0xaee
--  __TEXT.__unwind_info: 0x870
-+  __TEXT.__cstring: 0x1d3b
-+  __TEXT.__gcc_except_tab: 0x33c
-+  __TEXT.__oslogstring: 0xe55
-+  __TEXT.__unwind_info: 0x8a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xdd8
--  __DATA_CONST.__objc_classlist: 0x128
-+  __DATA_CONST.__const: 0xe28
-+  __DATA_CONST.__objc_classlist: 0x130
-   __DATA_CONST.__objc_protolist: 0xf8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1358
--  __DATA_CONST.__objc_superrefs: 0x108
--  __DATA_CONST.__got: 0x410
--  __AUTH_CONST.__const: 0x2a0
--  __AUTH_CONST.__cfstring: 0x1760
--  __AUTH_CONST.__objc_const: 0x4260
-+  __DATA_CONST.__objc_selrefs: 0x1418
-+  __DATA_CONST.__objc_superrefs: 0x110
-+  __DATA_CONST.__got: 0x438
-+  __AUTH_CONST.__const: 0x2c0
-+  __AUTH_CONST.__cfstring: 0x17e0
-+  __AUTH_CONST.__objc_const: 0x44f8
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__objc_ivar: 0x2a4
-+  __AUTH.__objc_data: 0x50
-+  __DATA.__objc_ivar: 0x2c8
-   __DATA.__data: 0xba0
-   __DATA_DIRTY.__objc_ivar: 0x8
-   __DATA_DIRTY.__objc_data: 0xb90
--  __DATA_DIRTY.__bss: 0x60
-+  __DATA_DIRTY.__bss: 0x70
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/CoreTelephony.framework/CoreTelephony
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 740
--  Symbols:   2165
+-  Symbols:   1666
 -  CStrings:  286
 +  Functions: 766
-+  Symbols:   2230
++  Symbols:   1718
 +  CStrings:  303
- 
 Symbols:
 + +[STStatusDomainPublisherXPCClientHandle _serverCompletionForXPCReplyBlock:]
 + -[STStatusDomainXPCClientWakeUpAssertion .cxx_destruct]
@@ -126,19 +91,6 @@ Symbols:
 + ___block_descriptor_40_e8_32bs_e37_v16?0"NSObject<OS_dispatch_queue>"8ls32l8
 + ___block_descriptor_40_e8_32w_e31_v16?0"BSContinuousMachTimer"8lw32l8
 + ___block_descriptor_74_e8_32s40s48s56bs_e5_v8?0ls32l8s56l8s40l8s48l8
-+ _objc_msgSend$_acquireNewHandleMessageAssertion
-+ _objc_msgSend$_handoffCurrentReplyToQueue:block:
-+ _objc_msgSend$_invalidateHandleMessageAssertion
-+ _objc_msgSend$acquire
-+ _objc_msgSend$acquireWithError:
-+ _objc_msgSend$attributeWithDomain:name:
-+ _objc_msgSend$clientPID
-+ _objc_msgSend$initWithClientAuditToken:queue:
-+ _objc_msgSend$initWithExplanation:target:attributes:
-+ _objc_msgSend$isApplication
-+ _objc_msgSend$relinquish
-+ _objc_msgSend$setInvalidateHandleMessageAssertionTimer:
-+ _objc_msgSend$targetWithPid:
 + _objc_opt_self
 + _objc_retainBlock
 - ___block_descriptor_74_e8_32s40s48s56bs_e5_v8?0ls32l8s40l8s48l8s56l8

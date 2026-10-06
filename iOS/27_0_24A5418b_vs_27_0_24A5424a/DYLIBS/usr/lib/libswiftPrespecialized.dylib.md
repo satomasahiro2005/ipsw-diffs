@@ -2,23 +2,18 @@
 
 > `/usr/lib/libswiftPrespecialized.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__const` | `0x3c10a0` | `0x3c10c0` | **`+0x20`** |
+
+### Other Changes
+
 ```diff
 
- 0.0.0.0.0
-   __TEXT.__text: 0x0
-   __TEXT.__lldb_no_nlist: 0x0
--  __DATA_CONST.__const: 0x3c10a0
-+  __DATA_CONST.__const: 0x3c10c0
-   __DATA_CONST.__ptrhashtab: 0x1eca8
-   __DATA_CONST.__ptrhashtabkey: 0x325d0
-   __AUTH_CONST.__const: 0x74088
-   __AUTH.__data: 0xd4590
-   - /usr/lib/libSystem.B.dylib
-   Functions: 0
 -  Symbols:   190792
 +  Symbols:   190794
-   CStrings:  0
- 
 Symbols:
 + _$s25CloudSubscriptionFeatures12TicketStatusC6encode4withySo7NSCoderC_tFTq
 + _$s9SiriSetup03$s9A118Setup0030DataSharingPageViewswift_eDAEifMX123_0_33_B1541E45459E914C828A8E80B3DC6141Ll7PreviewfMf_15PreviewRegistryfMu_VMn

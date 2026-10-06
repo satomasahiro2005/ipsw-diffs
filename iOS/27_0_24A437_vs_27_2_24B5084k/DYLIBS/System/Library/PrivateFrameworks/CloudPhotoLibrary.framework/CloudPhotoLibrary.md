@@ -2,67 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/CloudPhotoLibrary.framework/CloudPhotoLibrary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1cbee8` | `0x1cc23c` | **`+0x354`** |
+| `__AUTH_CONST.__cfstring` | `0x17d60` | `0x17e60` | **`+0x100`** |
+| `__TEXT.__cstring` | `0x181b9` | `0x18298` | **`+0xdf`** |
+| `__TEXT.__objc_methlist` | `0x15d54` | `0x15cbc` | **`-0x98`** |
+| `__TEXT.__oslogstring` | `0x16d40` | `0x16db8` | **`+0x78`** |
+| `__DATA_CONST.__objc_arraydata` | `0x1448` | `0x14b8` | **`+0x70`** |
+| `__AUTH_CONST.__objc_const` | `0x239e8` | `0x23a48` | **`+0x60`** |
+| `__AUTH_CONST.__objc_dictobj` | `0x140` | `0x190` | **`+0x50`** |
+| `__AUTH_CONST.__objc_intobj` | `0x798` | `0x7e0` | **`+0x48`** |
+| `__DATA_CONST.__objc_selrefs` | `0x9318` | `0x92e8` | **`-0x30`** |
+| `__TEXT.__gcc_except_tab` | `0x4d78` | `0x4d48` | **`-0x30`** |
+| `__TEXT.__unwind_info` | `0x6d60` | `0x6d50` | **`-0x10`** |
+| `__DATA.__objc_ivar` | `0x1c28` | `0x1c34` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x7a8` | `0x7a0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.235.0.0
--  __TEXT.__text: 0x1c35cc
--  __TEXT.__objc_methlist: 0x15d54
 +916.40.110.0.0
-+  __TEXT.__text: 0x1c392c
-+  __TEXT.__objc_methlist: 0x15cbc
-   __TEXT.__const: 0x328
--  __TEXT.__gcc_except_tab: 0x4d78
--  __TEXT.__oslogstring: 0x16d40
--  __TEXT.__cstring: 0x181b9
--  __TEXT.__unwind_info: 0x8530
-+  __TEXT.__gcc_except_tab: 0x4d48
-+  __TEXT.__oslogstring: 0x16db8
-+  __TEXT.__cstring: 0x18298
-+  __TEXT.__unwind_info: 0x8520
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x90
-   __DATA_CONST.__objc_protolist: 0x1b8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x9318
-+  __DATA_CONST.__objc_selrefs: 0x92e8
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__objc_superrefs: 0x940
--  __DATA_CONST.__objc_arraydata: 0x1448
-+  __DATA_CONST.__objc_arraydata: 0x14b8
-   __DATA_CONST.__got: 0xb48
-   __AUTH_CONST.__const: 0x2cc0
--  __AUTH_CONST.__cfstring: 0x17d60
--  __AUTH_CONST.__objc_const: 0x239e8
--  __AUTH_CONST.__objc_intobj: 0x798
-+  __AUTH_CONST.__cfstring: 0x17e60
-+  __AUTH_CONST.__objc_const: 0x23a48
-+  __AUTH_CONST.__objc_intobj: 0x7e0
-   __AUTH_CONST.__objc_arrayobj: 0x78
--  __AUTH_CONST.__objc_dictobj: 0x140
-+  __AUTH_CONST.__objc_dictobj: 0x190
-   __AUTH_CONST.__objc_floatobj: 0x50
--  __AUTH_CONST.__auth_got: 0x7a8
-+  __AUTH_CONST.__auth_got: 0x7a0
-   __AUTH.__objc_data: 0x50
--  __DATA.__objc_ivar: 0x1c28
-+  __DATA.__objc_ivar: 0x1c34
-   __DATA.__data: 0x1680
-   __DATA.__common: 0x30
-   __DATA_DIRTY.__objc_data: 0x62c0
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libcupolicy.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 9798
--  Symbols:   19170
--  CStrings:  5153
 +  Functions: 9795
-+  Symbols:   19161
+
+-  CStrings:  5153
 +  CStrings:  5161
- 
 Symbols:
 + +[CPLShare scopeTypeForShareURL:]
 + -[CPLEngineLibrary containerHasBeenWipedDueToEncryptedDataReset]
@@ -229,13 +199,6 @@ Symbols:
 + ___block_descriptor_80_e8_32s40s48r56r64r72r_e35_v16?0"CPLEngineStoreTransaction"8ls32l8s40l8r48l8r56l8r64l8r72l8
 + ___block_descriptor_80_e8_32s40s48r56r64r72r_e5_v8?0ls32l8s40l8r48l8r56l8r64l8r72l8
 + ___block_descriptor_88_e8_32s40s48s56r64r72r80r_e35_v16?0"CPLEngineStoreTransaction"8ls32l8s40l8s48l8r56l8r64l8r72l8r80l8
-+ _objc_msgSend$_contributorsUpdatesInTransaction:localChanges:
-+ _objc_msgSend$_updateContributors:localChanges:
-+ _objc_msgSend$containerHasBeenWipedDueToEncryptedDataReset
-+ _objc_msgSend$isSufficientlyDifferentFromNetworkState:
-+ _objc_msgSend$noteContainerHasBeenWipedDueToEncryptedDataReset
-+ _objc_msgSend$setContainerHasBeenWipedDueToEncryptedDataReset:
-+ _objc_msgSend$setUpdateSharingContributorUserIdentifiers:
 - -[CPLEngineLibrary containerHasBeenWiped]
 - -[CPLEngineLibrary setContainerHasBeenWiped:]
 - -[CPLEngineScheduler _disableSynchronizationBecauseContainerHasBeenWipedLocked]
@@ -401,22 +364,6 @@ Symbols:
 - ___block_descriptor_72_e8_32s40s48s56r64r_e9_B16?0^8ls32l8s40l8s48l8r56l8r64l8
 - ___block_descriptor_80_e8_32s40s48s56r64r72r_e35_v16?0"CPLEngineStoreTransaction"8ls32l8s40l8s48l8r56l8r64l8r72l8
 - __os_feature_enabled_impl
-- _objc_msgSend$_canUseOverQuotaRule
-- _objc_msgSend$_checkForRecordExistence
-- _objc_msgSend$_checkPrioritiesWithFetchCache:
-- _objc_msgSend$_clearUploadBatch
-- _objc_msgSend$_contributorsUpdatesInTransaction:
-- _objc_msgSend$_deleteGeneratedResourcesAfterError:
-- _objc_msgSend$_discardUploadedExtractedBatch:error:
-- _objc_msgSend$_extractAndUploadOneBatch
-- _objc_msgSend$_generateNeededDerivativesWithFetchCache:fingerprintContext:
-- _objc_msgSend$_prepareUploadBatch
-- _objc_msgSend$_reenqueueExtractedBatchWithRejectedRecords:extractedBatch:error:
-- _objc_msgSend$_updateContributors:
-- _objc_msgSend$containerHasBeenWiped
-- _objc_msgSend$isSufficentlyDifferentFromNetworkState:
-- _objc_msgSend$noteContainerHasBeenWiped
-- _objc_msgSend$setContainerHasBeenWiped:
 CStrings:
 + " - expiringState: %@, expiryDate: %@, viewingMode: %@, keyAsset: %@, thumbnailImageDataLength: %lu"
 + " - expiringState: %@, viewingMode: %@, keyAsset: %@, thumbnailImageDataLength: %lu"

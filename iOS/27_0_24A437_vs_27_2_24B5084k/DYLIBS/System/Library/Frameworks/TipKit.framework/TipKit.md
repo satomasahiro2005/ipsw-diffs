@@ -2,88 +2,46 @@
 
 > `/System/Library/Frameworks/TipKit.framework/TipKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7906c` | `0x707f0` | **`-0x887c`** |
+| `__TEXT.__swift5_typeref` | `0x6dfd` | `0x570d` | **`-0x16f0`** |
+| `__TEXT.__const` | `0x65f0` | `0x5f70` | **`-0x680`** |
+| `__DATA_DIRTY.__data` | `0x2958` | `0x25e8` | **`-0x370`** |
+| `__DATA_DIRTY.__bss` | `0x4230` | `0x3f30` | **`-0x300`** |
+| `__AUTH_CONST.__const` | `0x4260` | `0x4020` | **`-0x240`** |
+| `__DATA.__data` | `0x1008` | `0xe88` | **`-0x180`** |
+| `__TEXT.__unwind_info` | `0x26d8` | `0x2558` | **`-0x180`** |
+| `__TEXT.__constg_swiftt` | `0x2bdc` | `0x2a64` | **`-0x178`** |
+| `__TEXT.__swift5_fieldmd` | `0x1968` | `0x1878` | **`-0xf0`** |
+| `__TEXT.__eh_frame` | `0x1d9c` | `0x1cdc` | **`-0xc0`** |
+| `__TEXT.__swift5_assocty` | `0x658` | `0x5c8` | **`-0x90`** |
+| `__TEXT.__swift5_reflstr` | `0x10eb` | `0x106b` | **`-0x80`** |
+| `__TEXT.__swift5_capture` | `0x91c` | `0x8ac` | **`-0x70`** |
+| `__AUTH_CONST.__auth_got` | `0x1ba0` | `0x1b40` | **`-0x60`** |
+| `__DATA_CONST.__got` | `0xb08` | `0xab0` | **`-0x58`** |
+| `__DATA.__bss` | `0x2d10` | `0x2cd0` | **`-0x40`** |
+| `__TEXT.__cstring` | `0xedc` | `0xefc` | **`+0x20`** |
+| `__TEXT.__swift5_proto` | `0x39c` | `0x384` | **`-0x18`** |
+| `__TEXT.__swift5_types` | `0x230` | `0x218` | **`-0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4a0` | `0x498` | **`-0x8`** |
+| `__TEXT.__swift_as_cont` | `0xb8` | `0xbc` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0x80` | `0x7c` | **`-0x4`** |
+| `__DATA_DIRTY.__common` | `0x19` | `0x18` | **`-0x1`** |
+
+### Other Changes
+
 ```diff
 
 -129.0.0.0.0
--  __TEXT.__text: 0x73c78
 +129.1.2.0.0
-+  __TEXT.__text: 0x6b788
-   __TEXT.__objc_methlist: 0x528
--  __TEXT.__const: 0x65f0
--  __TEXT.__constg_swiftt: 0x2bdc
--  __TEXT.__swift5_typeref: 0x6dfd
-+  __TEXT.__const: 0x5f70
-+  __TEXT.__constg_swiftt: 0x2a64
-+  __TEXT.__swift5_typeref: 0x570d
-   __TEXT.__swift5_builtin: 0x8c
--  __TEXT.__swift5_reflstr: 0x10eb
--  __TEXT.__swift5_fieldmd: 0x1968
--  __TEXT.__swift5_assocty: 0x658
--  __TEXT.__swift5_proto: 0x39c
--  __TEXT.__swift5_types: 0x230
--  __TEXT.__swift5_capture: 0x91c
--  __TEXT.__cstring: 0xedc
--  __TEXT.__swift_as_entry: 0x80
-+  __TEXT.__swift5_reflstr: 0x106b
-+  __TEXT.__swift5_fieldmd: 0x1878
-+  __TEXT.__swift5_assocty: 0x5c8
-+  __TEXT.__swift5_proto: 0x384
-+  __TEXT.__swift5_types: 0x218
-+  __TEXT.__swift5_capture: 0x8ac
-+  __TEXT.__cstring: 0xefc
-+  __TEXT.__swift_as_entry: 0x7c
-   __TEXT.__swift_as_ret: 0x6c
--  __TEXT.__swift_as_cont: 0xb8
-+  __TEXT.__swift_as_cont: 0xbc
-   __TEXT.__swift5_protos: 0x28
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__oslogstring: 0x85
--  __TEXT.__unwind_info: 0x2eb8
--  __TEXT.__eh_frame: 0x1da4
-+  __TEXT.__unwind_info: 0x2ce8
-+  __TEXT.__eh_frame: 0x1ce4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x68
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4a0
-+  __DATA_CONST.__objc_selrefs: 0x498
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__got: 0xb08
--  __AUTH_CONST.__const: 0x4260
-+  __DATA_CONST.__got: 0xab0
-+  __AUTH_CONST.__const: 0x4020
-   __AUTH_CONST.__objc_const: 0xbf8
--  __AUTH_CONST.__auth_got: 0x1ba0
-+  __AUTH_CONST.__auth_got: 0x1b40
-   __AUTH.__objc_data: 0x268
-   __AUTH.__data: 0x250
--  __DATA.__data: 0x1008
-+  __DATA.__data: 0xe88
-   __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0x4b8
--  __DATA_DIRTY.__data: 0x2958
--  __DATA_DIRTY.__bss: 0x4230
--  __DATA_DIRTY.__common: 0x19
-+  __DATA_DIRTY.__data: 0x25e8
-+  __DATA_DIRTY.__bss: 0x3f30
-+  __DATA_DIRTY.__common: 0x18
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/CoreText.framework/CoreText
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3950
--  Symbols:   1612
+-  Symbols:   1502
 +  Functions: 3790
-+  Symbols:   1529
-   CStrings:  84
- 
++  Symbols:   1420
 Symbols:
 + ___swift_closure_destructor.9Tm
 + _get_underlying_type_ref 7SwiftUI4ViewPAAEAcAE4task2id4name8priority4file4line_Qrqd___SSSgScPSSSiyyYaYAcntSQRd__lFQOQr
@@ -147,7 +105,6 @@ Symbols:
 - _get_witness_table 7SwiftUI8StaticIfVyAA8SolariumVAA15ModifiedContentVy6TipKit04MinihE4ViewVAA26_PreferenceWritingModifierVyAA23PreferredColorSchemeKeyVGGAGyAH0jhK0VAOGGAA0K0HPAeA0K14InputPredicateHPyHC_ApaUHPAjaUHPyHC_AoA0kN0HPyHCHCAsaUHPAraUHPyHC_AoaWHPyHCHCHC
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAA15ModifiedContentVyAcAE14contentMargins__3forQrAA4EdgeO3SetV_12CoreGraphics7CGFloatVSgAA0K15MarginPlacementVtFQOyAA012_ConditionalK0VyAIyAA6ZStackVyAA05TupleK0VyAWyAIyAIyAIyAA6HStackVyA_yAIyAIy6TipKit04MinizC0V05ImageC033_B869B02C3D076A8CFB271086BF0E94FALLVAA14_PaddingLayoutVGAA0G18AttachmentModifierVGSg_AIyAA6VStackVyA_yA14__AIyAIyA4_05TitleC0A6_LLVA9_GA9_GSgAIyAIyA4_07MessageC0A6_LLVA9_GA9_GSgA4_07ActionsC0A6_LLVSgQPGGAA16_FlexFrameLayoutVGQPGGA33_GA9_GA2_0Z14ScrollModifierVGA38_G_A4_11CloseButtonA6_LLVQPGGAA23_GeometryActionModifierVySbGGA46_G_Qo_A2_0zC10BackgroundVG_Qo_HO
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAA15ModifiedContentVyAcAE14contentMargins__3forQrAA4EdgeO3SetV_12CoreGraphics7CGFloatVSgAA0K15MarginPlacementVtFQOyAA6ZStackVyAA05TupleK0VyAA012_ConditionalK0VyAIyAIyAA6VStackVyAYyAIyAIy6TipKit04Miniz8SolariumC0V05ImageC033_F24BE64D390132C191AEEBF32FB0F4FBLLVAA0G18AttachmentModifierVGAA14_PaddingLayoutVGSg_AIyAIyAA6HStackVyAYyA10_Sg_AIyA1_yAYyAIyAIyA4_05TitleC0A6_LLVA12_GA12_GSg_AIyA4_07MessageC0A6_LLVA12_GSgQPGGAA16_FlexFrameLayoutVGQPGGA12_GA30_GA4_07ActionsC0A6_LLVSgQPGGA12_GA2_0Z14ScrollModifierVGA41_G_AIyA4_11CloseButtonA6_LLVA12_GQPGG_Qo_A2_0zC10BackgroundVG_Qo_HO
-- _objc_msgSend$systemBackgroundColor
 - _swift_bridgeObjectRetain_n
 - _symbolic _____ 6TipKit04MiniA12SolariumViewV
 - _symbolic _____ 6TipKit04MiniA12SolariumViewV05ImageE033_F24BE64D390132C191AEEBF32FB0F4FBLLV

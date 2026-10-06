@@ -2,111 +2,59 @@
 
 > `/System/Library/PrivateFrameworks/FinanceDaemon.framework/FinanceDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4569e4` | `0x47b1cc` | **`+0x247e8`** |
+| `__TEXT.__eh_frame` | `0x248e8` | `0x25930` | **`+0x1048`** |
+| `__DATA_DIRTY.__bss` | `0x2e00` | `0x3c80` | **`+0xe80`** |
+| `__DATA_DIRTY.__data` | `0x5a80` | `0x6828` | **`+0xda8`** |
+| `__DATA.__bss` | `0x14150` | `0x136f0` | **`-0xa60`** |
+| `__TEXT.__unwind_info` | `0xb668` | `0xbec0` | **`+0x858`** |
+| `__TEXT.__const` | `0x166a2` | `0x16d82` | **`+0x6e0`** |
+| `__TEXT.__oslogstring` | `0x13ef2` | `0x144e2` | **`+0x5f0`** |
+| `__TEXT.__cstring` | `0xba95` | `0xbfd5` | **`+0x540`** |
+| `__AUTH_CONST.__const` | `0xe940` | `0xee68` | **`+0x528`** |
+| `__AUTH.__data` | `0x8f50` | `0x8a80` | **`-0x4d0`** |
+| `__TEXT.__swift5_reflstr` | `0x9634` | `0x9af4` | **`+0x4c0`** |
+| `__AUTH_CONST.__auth_got` | `0x6690` | `0x69c8` | **`+0x338`** |
+| `__TEXT.__swift5_fieldmd` | `0x77c4` | `0x7adc` | **`+0x318`** |
+| `__TEXT.__swift5_typeref` | `0x8cca` | `0x8f7a` | **`+0x2b0`** |
+| `__DATA.__data` | `0x4e18` | `0x4c70` | **`-0x1a8`** |
+| `__DATA_CONST.__got` | `0x2b08` | `0x2c70` | **`+0x168`** |
+| `__TEXT.__constg_swiftt` | `0x7b5c` | `0x7cb8` | **`+0x15c`** |
+| `__AUTH_CONST.__objc_const` | `0x7168` | `0x7228` | **`+0xc0`** |
+| `__TEXT.__swift_as_cont` | `0x141c` | `0x14c4` | **`+0xa8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2088` | `0x20f0` | **`+0x68`** |
+| `__AUTH.__objc_data` | `0x4a8` | `0x458` | **`-0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x5c0` | `0x610` | **`+0x50`** |
+| `__TEXT.__swift_as_ret` | `0xa60` | `0xaac` | **`+0x4c`** |
+| `__TEXT.__objc_methlist` | `0x798` | `0x7d0` | **`+0x38`** |
+| `__TEXT.__swift5_capture` | `0x2470` | `0x24a4` | **`+0x34`** |
+| `__TEXT.__swift5_assocty` | `0xe70` | `0xea0` | **`+0x30`** |
+| `__TEXT.__swift_as_entry` | `0x92c` | `0x95c` | **`+0x30`** |
+| `__TEXT.__swift5_types` | `0x804` | `0x828` | **`+0x24`** |
+| `__DATA.__common` | `0x100` | `0xe0` | **`-0x20`** |
+| `__DATA_CONST.__objc_protolist` | `0xa0` | `0xc0` | **`+0x20`** |
+| `__DATA_DIRTY.__common` | `0x80` | `0xa0` | **`+0x20`** |
+| `__TEXT.__swift5_proto` | `0xd08` | `0xd28` | **`+0x20`** |
+| `__DATA_CONST.__objc_protorefs` | `0x50` | `0x60` | **`+0x10`** |
+| `__TEXT.__swift5_types2` | `—` | `0x4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x4569e4
--  __TEXT.__objc_methlist: 0x798
--  __TEXT.__const: 0x166a2
--  __TEXT.__cstring: 0xba95
--  __TEXT.__oslogstring: 0x13ef2
--  __TEXT.__constg_swiftt: 0x7b5c
--  __TEXT.__swift5_typeref: 0x8cca
-+  __TEXT.__text: 0x47b1cc
-+  __TEXT.__objc_methlist: 0x7d0
-+  __TEXT.__const: 0x16d82
-+  __TEXT.__cstring: 0xbfd5
-+  __TEXT.__oslogstring: 0x144e2
-+  __TEXT.__constg_swiftt: 0x7cb8
-+  __TEXT.__swift5_typeref: 0x8f7a
-   __TEXT.__swift5_builtin: 0x17c
--  __TEXT.__swift5_reflstr: 0x9634
--  __TEXT.__swift5_fieldmd: 0x77c4
--  __TEXT.__swift5_capture: 0x2470
--  __TEXT.__swift5_assocty: 0xe70
--  __TEXT.__swift5_proto: 0xd08
--  __TEXT.__swift5_types: 0x804
--  __TEXT.__swift_as_entry: 0x92c
--  __TEXT.__swift_as_ret: 0xa60
--  __TEXT.__swift_as_cont: 0x141c
-+  __TEXT.__swift5_reflstr: 0x9af4
-+  __TEXT.__swift5_fieldmd: 0x7adc
-+  __TEXT.__swift5_capture: 0x24a4
-+  __TEXT.__swift5_assocty: 0xea0
-+  __TEXT.__swift5_proto: 0xd28
-+  __TEXT.__swift5_types: 0x828
-+  __TEXT.__swift_as_entry: 0x95c
-+  __TEXT.__swift_as_ret: 0xaac
-+  __TEXT.__swift_as_cont: 0x14c4
-   __TEXT.__swift5_protos: 0x168
-   __TEXT.__swift5_mpenum: 0x84
--  __TEXT.__unwind_info: 0xb668
--  __TEXT.__eh_frame: 0x248e8
-+  __TEXT.__swift5_types2: 0x4
-+  __TEXT.__unwind_info: 0xbec0
-+  __TEXT.__eh_frame: 0x25930
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-362.0.0.0.0
++365.0.0.0.0
 
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x188
-   __DATA_CONST.__objc_classlist: 0x350
--  __DATA_CONST.__objc_protolist: 0xa0
-+  __DATA_CONST.__objc_protolist: 0xc0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2088
--  __DATA_CONST.__objc_protorefs: 0x50
-+  __DATA_CONST.__objc_selrefs: 0x20f0
-+  __DATA_CONST.__objc_protorefs: 0x60
-   __DATA_CONST.__objc_superrefs: 0x10
--  __DATA_CONST.__got: 0x2b08
--  __AUTH_CONST.__const: 0xe940
--  __AUTH_CONST.__objc_const: 0x7168
--  __AUTH_CONST.__auth_got: 0x6690
--  __AUTH.__objc_data: 0x4a8
--  __AUTH.__data: 0x8f50
-+  __DATA_CONST.__got: 0x2c70
-+  __AUTH_CONST.__const: 0xee68
-+  __AUTH_CONST.__objc_const: 0x7228
-+  __AUTH_CONST.__auth_got: 0x69c8
-+  __AUTH.__objc_data: 0x458
-+  __AUTH.__data: 0x8a80
-   __DATA.__objc_ivar: 0x8
--  __DATA.__data: 0x4e18
--  __DATA.__bss: 0x14150
--  __DATA.__common: 0x100
--  __DATA_DIRTY.__objc_data: 0x5c0
--  __DATA_DIRTY.__data: 0x5a80
--  __DATA_DIRTY.__bss: 0x2e00
--  __DATA_DIRTY.__common: 0x80
-+  __DATA.__data: 0x4c70
-+  __DATA.__bss: 0x136f0
-+  __DATA.__common: 0xe0
-+  __DATA_DIRTY.__objc_data: 0x610
-+  __DATA_DIRTY.__data: 0x6828
-+  __DATA_DIRTY.__bss: 0x3c80
-+  __DATA_DIRTY.__common: 0xa0
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11538
--  Symbols:   6530
--  CStrings:  2390
+-  Symbols:   3704
+-  CStrings:  2389
 +  Functions: 11817
-+  Symbols:   6657
-+  CStrings:  2446
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
++  Symbols:   3772
++  CStrings:  2445
 Symbols:
 + _EMContentRepresentationTypeOriginalHTML
 + __OBJC_$_PROP_LIST_ECEmailAddressConvertible
@@ -136,28 +84,6 @@ Symbols:
 + _get_enum_tag_for_layout_string 10Foundation4DataV15_RepresentationO
 + _get_enum_tag_for_layout_string 10Foundation4DataVSg
 + _get_enum_tag_for_layout_string 13FinanceDaemon25FoundInMailItemReportDataV7AddressVSg
-+ _objc_msgSend$anyObject
-+ _objc_msgSend$biomeReceiptEmail
-+ _objc_msgSend$ccList
-+ _objc_msgSend$close
-+ _objc_msgSend$earliestEmailDateSent
-+ _objc_msgSend$em_isItemNotFoundError
-+ _objc_msgSend$estimatedDeliveryEndDateYear
-+ _objc_msgSend$evaluateWithObject:
-+ _objc_msgSend$hasCompletedReceiptDetailsEntityResolution
-+ _objc_msgSend$initWithDouble:
-+ _objc_msgSend$logo
-+ _objc_msgSend$merchantDomain
-+ _objc_msgSend$openPhotoLibraryWithWellKnownIdentifier:error:
-+ _objc_msgSend$recipientAddress
-+ _objc_msgSend$replyToList
-+ _objc_msgSend$rhsReceiptDetails
-+ _objc_msgSend$senderAddress
-+ _objc_msgSend$setExchangeTokenDigest:
-+ _objc_msgSend$setHasCompletedReceiptDetailsEntityResolution:
-+ _objc_msgSend$subject
-+ _objc_msgSend$subjectString
-+ _objc_msgSend$toList
 + _symbolic SS______t 10FinanceKit17ReceiptPhotoEventV
 + _symbolic SS______t 13FinanceDaemon25FoundInMailItemReportDataV
 + _symbolic Say_____G 13FinanceDaemon25FoundInMailItemReportDataV
@@ -224,16 +150,6 @@ Symbols:
 - ___swift_memcpy984_8
 - _get_type_metadata 15Synchronization5MutexVy10FinanceKit23ExtractedOrderAllowListVSgG noncopyable
 - _get_type_metadata 15Synchronization5MutexVySay13FinanceDaemon26PersistentHistoryObserving_pGG noncopyable
-- _objc_msgSend$initWithInteger:
-- _objc_msgSend$rawEmailType
-- _objc_msgSend$rawOrderContentType
-- _objc_msgSend$resolvedMerchantDisplayName
-- _objc_msgSend$setRawEmailType:
-- _objc_msgSend$setRawOrderContentType:
-- _objc_msgSend$setShippingInformationRawStatus:
-- _objc_msgSend$sharedPhotoLibrary
-- _objc_msgSend$shippingInformationRawStatus
-- _objc_msgSend$transactionIdentifiers
 - _swift_runtimeSupportsNoncopyableTypes
 - _symbolic So17EMDaemonInterfaceC
 - _symbolic _____ 10FinanceKit27BankConnectWebServiceClientC
@@ -329,5 +245,4 @@ CStrings:
 - "extractedOrder cannot be part of emailToClassicOrder edge"
 - "personalizedInsightsEnabled == YES"
 - "shippingMerchant"
-
 ```

@@ -2,43 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/ObjectUnderstanding.framework/ObjectUnderstanding`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x97b88
-+  __TEXT.__text: 0x97828
-   __TEXT.__init_offsets: 0x34
-   __TEXT.__objc_methlist: 0x1568
-   __TEXT.__const: 0x1b50
-   __TEXT.__gcc_except_tab: 0xcff4
-   __TEXT.__cstring: 0x23d4
-   __TEXT.__oslogstring: 0x23c3
--  __TEXT.__unwind_info: 0x2b30
-+  __TEXT.__unwind_info: 0x2b40
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x97b88` | `0x97828` | **`-0x360`** |
+| `__TEXT.__unwind_info` | `0x2b30` | `0x2b40` | **`+0x10`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN23OU3DKitchenObjectMerger29AlignApplianceWithNewCabinetsEv : 1372 -> 1348
 ~ __ZN23OU3DKitchenObjectMerger12FuseAndCarveEv : 4572 -> 4524
@@ -87,5 +60,4 @@ Functions:
 ~ __ZN6ou3dor15Object3DEncoder20ExtractImageFeaturesEP10__CVBufferl : 2020 -> 2012
 ~ __ZN6ou3dor15Object3DEncoder21ExtractObjectFeaturesEv : 652 -> 636
 ~ __ZNSt3__111__introsortINS_17_ClassicAlgPolicyERZN6ou3dor15Object3DEncoder11AddToObjectEONS3_10ObjectViewERNS3_15ObjectWithViewsILm3EEEE3$_0PS4_Lb0EEEvT1_SC_T0_NS_15iterator_traitsISC_E15difference_typeEb : 3092 -> 3088
-
 ```

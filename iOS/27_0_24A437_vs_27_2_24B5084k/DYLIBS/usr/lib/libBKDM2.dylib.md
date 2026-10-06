@@ -2,59 +2,34 @@
 
 > `/usr/lib/libBKDM2.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x88640` | `0x88800` | **`+0x1c0`** |
+| `__TEXT.__cstring` | `0x832a` | `0x83b3` | **`+0x89`** |
+| `__AUTH_CONST.__cfstring` | `0x6c40` | `0x6cc0` | **`+0x80`** |
+| `__TEXT.__objc_methlist` | `0x61bc` | `0x61d4` | **`+0x18`** |
+| `__DATA_CONST.__const` | `0x16d8` | `0x16e8` | **`+0x10`** |
+| `__DATA_CONST.__objc_arraydata` | `0x4d8` | `0x4e8` | **`+0x10`** |
+| `__TEXT.__const` | `0xd7f8` | `0xd802` | **`+0xa`** |
+| `__DATA_CONST.__objc_selrefs` | `0x40b0` | `0x40b8` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x1050` | `0x1058` | **`+0x8`** |
+| `__TEXT.__oslogstring` | `0x52f7` | `0x52f6` | **`-0x1`** |
+
+### Other Changes
+
 ```diff
 
 -980.0.26.0.0
--  __TEXT.__text: 0x87dc0
 +980.40.11.0.0
-+  __TEXT.__text: 0x87f74
-   __TEXT.__lazy_helpers: 0xa8
--  __TEXT.__objc_methlist: 0x61bc
--  __TEXT.__const: 0xd7f8
--  __TEXT.__cstring: 0x832a
--  __TEXT.__oslogstring: 0x52f7
-+  __TEXT.__objc_methlist: 0x61d4
-+  __TEXT.__const: 0xd802
-+  __TEXT.__cstring: 0x83b3
-+  __TEXT.__oslogstring: 0x52f6
-   __TEXT.__gcc_except_tab: 0x1a88
-   __TEXT.__ustring: 0x11c
--  __TEXT.__unwind_info: 0x1a20
-+  __TEXT.__unwind_info: 0x1a30
-   __TEXT.__eh_frame: 0x50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x16d8
-+  __DATA_CONST.__const: 0x16e8
-   __DATA_CONST.__objc_classlist: 0xf8
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x40b0
-+  __DATA_CONST.__objc_selrefs: 0x40b8
-   __DATA_CONST.__objc_superrefs: 0xd0
--  __DATA_CONST.__objc_arraydata: 0x4d8
-+  __DATA_CONST.__objc_arraydata: 0x4e8
-   __DATA_CONST.__got: 0x4a8
-   __AUTH_CONST.__const: 0xc28
--  __AUTH_CONST.__cfstring: 0x6c40
-+  __AUTH_CONST.__cfstring: 0x6cc0
-   __AUTH_CONST.__objc_const: 0xa490
-   __AUTH_CONST.__lazy_load_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x420
 
-   - /usr/lib/libSystemHealth.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 3153
--  Symbols:   5708
+-  Symbols:   4576
 -  CStrings:  1828
 +  Functions: 3156
-+  Symbols:   5714
++  Symbols:   4582
 +  CStrings:  1833
- 
 Symbols:
 + -[BioLog setPurgeableAtPath:directory:]
 + -[BiometricKitXPCServerPearl addDeviceSpecificProperties:]
@@ -75,9 +50,9 @@ Functions:
 ~ -[BioLog init] : 1748 -> 1744
 ~ -[BioLog createFileAtPath:contents:attributes:purgeable:] : 204 -> 200
 + -[BioLog setPurgeableAtPath:directory:]
-~ -[BioLog sequencePathForId:andSubdirectory:] : 244 -> 240
+~ -[BioLog sequencePathForId:andSubdirectory:] : 256 -> 252
 ~ -[BioLog logSequenceInfo:withContext:orientation:identities:] : 13328 -> 13392
-~ -[BioLog eventPathWithName:date:] : 344 -> 340
+~ -[BioLog eventPathWithName:date:] : 356 -> 352
 ~ -[BioLog logSecureFrameMeta:timestamp:frameNumber:fromCameraID:] : 5788 -> 5784
 + -[BiometricKitXPCServerPearl addDeviceSpecificProperties:].cold.1
 CStrings:

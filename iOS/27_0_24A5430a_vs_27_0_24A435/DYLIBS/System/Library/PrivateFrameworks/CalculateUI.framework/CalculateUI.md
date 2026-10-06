@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CalculateUI.framework/CalculateUI`
 
-```diff
+### Section Size Changes
 
- 243.0.0.0.0
--  __TEXT.__text: 0x8d13c
-+  __TEXT.__text: 0x8d15c
-   __TEXT.__objc_methlist: 0x5b8
-   __TEXT.__const: 0x5210
-   __TEXT.__swift5_typeref: 0xb227
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8d13c` | `0x8d15c` | **`+0x20`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_20cbbb368 -> sub_20d256368 : 812 -> 808
 ~ sub_20cbbe5d0 -> sub_20d2595cc : 364 -> 376

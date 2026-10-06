@@ -2,81 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/ServicesIntelligence.framework/servicesintelligenced`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xea00` | `0x1275c` | **`+0x3d5c`** |
+| `__TEXT.__oslogstring` | `0x8ac` | `0xd6c` | **`+0x4c0`** |
+| `__TEXT.__eh_frame` | `0xb80` | `0xe38` | **`+0x2b8`** |
+| `__TEXT.__objc_stubs` | `0x200` | `0x380` | **`+0x180`** |
+| `__TEXT.__objc_methname` | `0x367` | `0x487` | **`+0x120`** |
+| `__DATA_CONST.__const` | `0x628` | `0x740` | **`+0x118`** |
+| `__TEXT.__cstring` | `0x5b8` | `0x688` | **`+0xd0`** |
+| `__TEXT.__unwind_info` | `0x400` | `0x498` | **`+0x98`** |
+| `__TEXT.__auth_stubs` | `0xaf0` | `0xb80` | **`+0x90`** |
+| `__DATA.__objc_selrefs` | `0x120` | `0x180` | **`+0x60`** |
+| `__TEXT.__swift5_capture` | `0x170` | `0x1c8` | **`+0x58`** |
+| `__DATA_CONST.__auth_got` | `0x580` | `0x5c8` | **`+0x48`** |
+| `__DATA_CONST.__got` | `0x158` | `0x190` | **`+0x38`** |
+| `__TEXT.__const` | `0x29a` | `0x2ca` | **`+0x30`** |
+| `__TEXT.__swift_as_cont` | `0xb8` | `0xe0` | **`+0x28`** |
+| `__TEXT.__swift_as_ret` | `0x74` | `0x98` | **`+0x24`** |
+| `__TEXT.__swift_as_entry` | `0x44` | `0x54` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_typeref`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xea00
--  __TEXT.__auth_stubs: 0xaf0
--  __TEXT.__objc_stubs: 0x200
-+  __TEXT.__text: 0x1275c
-+  __TEXT.__auth_stubs: 0xb80
-+  __TEXT.__objc_stubs: 0x380
-   __TEXT.__objc_methlist: 0x104
--  __TEXT.__const: 0x29a
--  __TEXT.__cstring: 0x5b8
-+  __TEXT.__const: 0x2ca
-+  __TEXT.__cstring: 0x688
-   __TEXT.__swift5_typeref: 0x177
-   __TEXT.__objc_methtype: 0x12c
-   __TEXT.__swift5_entry: 0x8
+-1.60.0.0.0
++1.65.0.0.0
 
-   __TEXT.__swift5_fieldmd: 0x44
-   __TEXT.__swift5_types: 0x8
-   __TEXT.__objc_classname: 0x3e
--  __TEXT.__objc_methname: 0x367
--  __TEXT.__swift5_capture: 0x170
--  __TEXT.__oslogstring: 0x8ac
--  __TEXT.__swift_as_entry: 0x44
--  __TEXT.__swift_as_ret: 0x74
--  __TEXT.__swift_as_cont: 0xb8
--  __TEXT.__unwind_info: 0x400
--  __TEXT.__eh_frame: 0xb80
--  __DATA_CONST.__const: 0x628
-+  __TEXT.__objc_methname: 0x487
-+  __TEXT.__swift5_capture: 0x1c8
-+  __TEXT.__oslogstring: 0xd6c
-+  __TEXT.__swift_as_entry: 0x54
-+  __TEXT.__swift_as_ret: 0x98
-+  __TEXT.__swift_as_cont: 0xe0
-+  __TEXT.__unwind_info: 0x498
-+  __TEXT.__eh_frame: 0xe38
-+  __DATA_CONST.__const: 0x740
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__auth_got: 0x580
--  __DATA_CONST.__got: 0x158
-+  __DATA_CONST.__auth_got: 0x5c8
-+  __DATA_CONST.__got: 0x190
-   __DATA_CONST.__auth_ptr: 0xa0
-   __DATA.__objc_const: 0x1d8
--  __DATA.__objc_selrefs: 0x120
-+  __DATA.__objc_selrefs: 0x180
-   __DATA.__data: 0x290
-   __DATA.__common: 0x10
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_DarwinFoundation2.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 230
 -  Symbols:   258
 -  CStrings:  135
 +  Functions: 269
 +  Symbols:   274
 +  CStrings:  166
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_entry : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__data : content changed
 Symbols:
 + _$s10Foundation22_convertNSErrorToErrorys0E0_pSo0C0CSgF
 + _$s20ServicesIntelligence0aB8ProviderC17refreshDomainData6domain14requestContextyAA0E0O_AA07RequestI0VSgtYaKF
@@ -146,5 +119,4 @@ CStrings:
 - "[Daemon][refreshTopicMappings] complete"
 - "[Daemon][refreshTopicMappings] failed: %@"
 - "[Daemon][refreshTopicMappings] start"
-
 ```

@@ -2,76 +2,47 @@
 
 > `/usr/libexec/mobileactivationd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x34a01c` | `0x34b994` | **`+0x1978`** |
+| `__TEXT.__cstring` | `0xeb94` | `0xeea5` | **`+0x311`** |
+| `__DATA_CONST.__cfstring` | `0xd200` | `0xd4e0` | **`+0x2e0`** |
+| `__TEXT.__gcc_except_tab` | `0x1a94` | `0x1b88` | **`+0xf4`** |
+| `__DATA_CONST.__const` | `0x1c008` | `0x1c088` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x11f8` | `0x1238` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x498` | `0x4b0` | **`+0x18`** |
+| `__DATA.__bss` | `0x558` | `0x568` | **`+0x10`** |
+| `__TEXT.__auth_stubs` | `0x1230` | `0x1240` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x928` | `0x930` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x34a01c
--  __TEXT.__auth_stubs: 0x1230
-+  __TEXT.__text: 0x34b994
-+  __TEXT.__auth_stubs: 0x1240
-   __TEXT.__objc_stubs: 0x3240
-   __TEXT.__objc_methlist: 0x112c
-   __TEXT.__const: 0x5c4d3
--  __TEXT.__cstring: 0xeb94
-+  __TEXT.__cstring: 0xeea5
-   __TEXT.__objc_methname: 0x4044
-   __TEXT.__oslogstring: 0xf47
-   __TEXT.__objc_classname: 0x1a4
-   __TEXT.__objc_methtype: 0x1061
--  __TEXT.__gcc_except_tab: 0x1a94
-+  __TEXT.__gcc_except_tab: 0x1b88
-   __TEXT.__dlopen_cstrs: 0x294
-   __TEXT.__ustring: 0x4
--  __TEXT.__unwind_info: 0x11f8
-+  __TEXT.__unwind_info: 0x1238
-   __TEXT.__eh_frame: 0xa0
--  __DATA_CONST.__const: 0x1c008
--  __DATA_CONST.__cfstring: 0xd200
-+  __DATA_CONST.__const: 0x1c088
-+  __DATA_CONST.__cfstring: 0xd4e0
-   __DATA_CONST.__objc_classlist: 0x50
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x48
+-1144.0.0.0.0
++1145.0.1.0.0
 
-   __DATA_CONST.__objc_intobj: 0x330
-   __DATA_CONST.__objc_arraydata: 0x600
-   __DATA_CONST.__objc_arrayobj: 0xa8
--  __DATA_CONST.__auth_got: 0x928
--  __DATA_CONST.__got: 0x498
-+  __DATA_CONST.__auth_got: 0x930
-+  __DATA_CONST.__got: 0x4b0
-   __DATA_CONST.__auth_ptr: 0x78
-   __DATA.__objc_const: 0x1900
-   __DATA.__objc_selrefs: 0x10c0
-   __DATA.__objc_ivar: 0xfc
-   __DATA.__objc_data: 0x320
-   __DATA.__data: 0x1d38
--  __DATA.__bss: 0x558
-+  __DATA.__bss: 0x568
-   __DATA.__common: 0xb20
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/liblockdown.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1643
--  Symbols:   11035
--  CStrings:  4721
+-  Symbols:   4001
+-  CStrings:  3033
 +  Functions: 1658
-+  Symbols:   11149
-+  CStrings:  4778
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
++  Symbols:   4027
++  CStrings:  3067
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/MobileActivation/install/TempContent/Objects/MobileActivation.build/mobileactivationd.build/Objects-normal/arm64e/baa_request.o
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/MobileActivation/install/TempContent/Objects/MobileActivation.build/mobileactivationd.build/Objects-normal/arm64e/baa_rkproperties.o
@@ -152,5 +123,4 @@ CStrings:
 - "1144"
 - "Absinthe/2.0 iOS Device Activator (MobileActivation-1144 built on Jun 15 2026 at 23:58:33)"
 - "iOS Device Activator (MobileActivation-1144)"
-
 ```

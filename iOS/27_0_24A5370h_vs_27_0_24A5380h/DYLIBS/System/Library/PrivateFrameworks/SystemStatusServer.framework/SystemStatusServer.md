@@ -2,58 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/SystemStatusServer.framework/SystemStatusServer`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1fc3c` | `0x1fac4` | **`-0x178`** |
+| `__DATA_CONST.__const` | `0xe00` | `0xdd8` | **`-0x28`** |
+| `__TEXT.__cstring` | `0x1ca0` | `0x1c7a` | **`-0x26`** |
+| `__DATA_CONST.__got` | `0x418` | `0x410` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1360` | `0x1358` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1fc3c
-+  __TEXT.__text: 0x1fac4
-   __TEXT.__objc_methlist: 0x1d90
-   __TEXT.__const: 0xd0
-   __TEXT.__dlopen_cstrs: 0x52
--  __TEXT.__cstring: 0x1ca0
-+  __TEXT.__cstring: 0x1c7a
-   __TEXT.__gcc_except_tab: 0x328
-   __TEXT.__oslogstring: 0xaee
-   __TEXT.__unwind_info: 0x870
+-279.100.0.0.0
++282.0.0.0.0
 
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xe00
-+  __DATA_CONST.__const: 0xdd8
-   __DATA_CONST.__objc_classlist: 0x128
-   __DATA_CONST.__objc_protolist: 0xf8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1360
-+  __DATA_CONST.__objc_selrefs: 0x1358
-   __DATA_CONST.__objc_superrefs: 0x108
--  __DATA_CONST.__got: 0x418
-+  __DATA_CONST.__got: 0x410
-   __AUTH_CONST.__const: 0x2a0
-   __AUTH_CONST.__cfstring: 0x1760
-   __AUTH_CONST.__objc_const: 0x4260
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 742
--  Symbols:   2938
--  CStrings:  473
+-  Symbols:   1671
+-  CStrings:  287
 +  Functions: 740
-+  Symbols:   2930
-+  CStrings:  472
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   1666
++  CStrings:  286
 Symbols:
 + ___block_descriptor_74_e8_32s40s48s56bs_e5_v8?0ls32l8s40l8s48l8s56l8
 + _dispatch_block_create
@@ -62,7 +33,6 @@ Symbols:
 - ___76+[STStatusDomainPublisherXPCClientHandle _serverCompletionForXPCReplyBlock:]_block_invoke
 - ___block_descriptor_40_e8_32bs_e37_v16?0"NSObject<OS_dispatch_queue>"8ls32l8
 - ___block_descriptor_74_e8_32s40s48s56bs_e5_v8?0ls32l8s56l8s40l8s48l8
-- _objc_msgSend$_handoffCurrentReplyToQueue:block:
 - _objc_opt_self
 - _objc_retainBlock
 Functions:
@@ -82,5 +52,4 @@ Functions:
 - ___76+[STStatusDomainPublisherXPCClientHandle _serverCompletionForXPCReplyBlock:]_block_invoke
 CStrings:
 - "v16@?0@\"NSObject<OS_dispatch_queue>\"8"
-
 ```

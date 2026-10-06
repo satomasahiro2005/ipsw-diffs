@@ -2,115 +2,52 @@
 
 > `/System/Library/Frameworks/WebKit.framework/WebKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x149b83c` | `0x14b8aa0` | **`+0x1d264`** |
+| `__TEXT.__unwind_info` | `0x567e0` | `0x57508` | **`+0xd28`** |
+| `__TEXT.__cstring` | `0x21bdbd` | `0x21c95d` | **`+0xba0`** |
+| `__TEXT.__oslogstring` | `0x64342` | `0x64c43` | **`+0x901`** |
+| `__DATA.__bss` | `0x45f0` | `0x4b00` | **`+0x510`** |
+| `__TEXT.__const` | `0x96e4` | `0x9a24` | **`+0x340`** |
+| `__AUTH_CONST.__const` | `0x70ad0` | `0x70ce8` | **`+0x218`** |
+| `__DATA_CONST.__const` | `0x231b0` | `0x232b0` | **`+0x100`** |
+| `__DATA_DIRTY.__bss` | `0x2152` | `0x2252` | **`+0x100`** |
+| `__TEXT.__eh_frame` | `0xa474` | `0xa4f8` | **`+0x84`** |
+| `__TEXT.__objc_methlist` | `0x1b4f8` | `0x1b570` | **`+0x78`** |
+| `__AUTH_CONST.__objc_const` | `0x2a8e0` | `0x2a950` | **`+0x70`** |
+| `__TEXT.__gcc_except_tab` | `0x87b54` | `0x87aec` | **`-0x68`** |
+| `__TEXT.__swift5_typeref` | `0x1bb2` | `0x1c0a` | **`+0x58`** |
+| `__AUTH_CONST.__auth_got` | `0xd928` | `0xd978` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x11940` | `0x11990` | **`+0x50`** |
+| `__TEXT.__constg_swiftt` | `0x1be8` | `0x1c28` | **`+0x40`** |
+| `__TEXT.__swift5_fieldmd` | `0xe64` | `0xe9c` | **`+0x38`** |
+| `__TEXT.__swift5_proto` | `0x1c4` | `0x1f0` | **`+0x2c`** |
+| `__AUTH.__data` | `0xd30` | `0xd58` | **`+0x28`** |
+| `__DATA_DIRTY.__data` | `0x54d8` | `0x54b0` | **`-0x28`** |
+| `__DATA.__data` | `0x41d0` | `0x41f0` | **`+0x20`** |
+| `__DATA_DIRTY.__objc_ivar` | `0x4e8` | `0x4fc` | **`+0x14`** |
+| `__DATA.__common` | `0x13a8` | `0x1398` | **`-0x10`** |
+| `__DATA_DIRTY.__common` | `0x3258` | `0x3248` | **`-0x10`** |
+| `__TEXT.__swift5_reflstr` | `0xbc8` | `0xbd8` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x114c` | `0x1140` | **`-0xc`** |
+| `__TEXT.__swift5_types` | `0x1ac` | `0x1b4` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -625.1.29.10.29
--  __TEXT.__text: 0x144d8ac
 +625.2.4.1.0
-+  __TEXT.__text: 0x1469048
-   __TEXT.__delay_helper: 0xdc
--  __TEXT.__objc_methlist: 0x1b4f8
-+  __TEXT.__objc_methlist: 0x1b570
-   __TEXT.__dlsym_cstr: 0xb98
-   __TEXT.__getClass_cstr: 0xcbb
--  __TEXT.__const: 0x96e4
--  __TEXT.__gcc_except_tab: 0x87b54
--  __TEXT.__cstring: 0x21bdbd
--  __TEXT.__swift5_typeref: 0x1bb2
--  __TEXT.__constg_swiftt: 0x1be8
--  __TEXT.__swift5_reflstr: 0xbc8
--  __TEXT.__swift5_fieldmd: 0xe64
--  __TEXT.__swift5_types: 0x1ac
-+  __TEXT.__const: 0x9a24
-+  __TEXT.__gcc_except_tab: 0x87aec
-+  __TEXT.__cstring: 0x21c95d
-+  __TEXT.__swift5_typeref: 0x1c0a
-+  __TEXT.__constg_swiftt: 0x1c28
-+  __TEXT.__swift5_reflstr: 0xbd8
-+  __TEXT.__swift5_fieldmd: 0xe9c
-+  __TEXT.__swift5_types: 0x1b4
-   __TEXT.__swift5_capture: 0x7c8
-+  __TEXT.__swift5_proto: 0x1f0
-   __TEXT.__swift5_protos: 0x70
-   __TEXT.__swift5_builtin: 0x2a8
-   __TEXT.__swift5_mpenum: 0x30
--  __TEXT.__swift5_proto: 0x1c4
-   __TEXT.__swift5_assocty: 0x460
-   __TEXT.__swift_as_entry: 0x1b4
-   __TEXT.__swift_as_ret: 0x174
-   __TEXT.__swift_as_cont: 0x24c
-   __TEXT.__swift5_types2: 0x8
--  __TEXT.__oslogstring: 0x64342
-+  __TEXT.__oslogstring: 0x64c43
-   __TEXT.__ustring: 0xddc
--  __TEXT.__unwind_info: 0x5ea88
--  __TEXT.__eh_frame: 0xa72c
-+  __TEXT.__unwind_info: 0x5f8b0
-+  __TEXT.__eh_frame: 0xa7b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x231b0
-+  __DATA_CONST.__const: 0x232b0
-   __DATA_CONST.__objc_classlist: 0xce8
-   __DATA_CONST.__objc_catlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x478
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x11940
-+  __DATA_CONST.__objc_selrefs: 0x11990
-   __DATA_CONST.__objc_protorefs: 0xa8
-   __DATA_CONST.__objc_superrefs: 0xa08
-   __DATA_CONST.__objc_arraydata: 0x660
-   __DATA_CONST.__got: 0x24f0
--  __AUTH_CONST.__const: 0x70ad0
-+  __AUTH_CONST.__const: 0x70ce8
-   __AUTH_CONST.__cfstring: 0x13c40
--  __AUTH_CONST.__objc_const: 0x2a8e0
-+  __AUTH_CONST.__objc_const: 0x2a950
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x618
-   __AUTH_CONST.__objc_dictobj: 0x140
-   __AUTH_CONST.__objc_arrayobj: 0x108
-   __AUTH_CONST.__objc_doubleobj: 0x20
--  __AUTH_CONST.__auth_got: 0xd928
-+  __AUTH_CONST.__auth_got: 0xd978
-   __AUTH.__objc_data: 0x64a8
--  __AUTH.__data: 0xd30
-+  __AUTH.__data: 0xd58
-   __AUTH.__thread_vars: 0x60
-   __AUTH.__thread_bss: 0x20
--  __DATA.__objc_ivar: 0x114c
--  __DATA.__data: 0x41d0
--  __DATA.__common: 0x13a8
--  __DATA_DIRTY.__objc_ivar: 0x4e8
-+  __DATA.__objc_ivar: 0x1140
-+  __DATA.__data: 0x41f0
-+  __DATA.__common: 0x1398
-+  __DATA_DIRTY.__objc_ivar: 0x4fc
-   __DATA_DIRTY.__objc_data: 0x1f68
--  __DATA_DIRTY.__data: 0x54d8
--  __DATA_DIRTY.__bss: 0x2152
--  __DATA_DIRTY.__common: 0x3258
-+  __DATA_DIRTY.__data: 0x54b0
-+  __DATA_DIRTY.__bss: 0x2252
-+  __DATA_DIRTY.__common: 0x3248
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/BrowserEngineKit.framework/BrowserEngineKit
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 76789
--  Symbols:   113927
+-  Symbols:   107946
 -  CStrings:  19614
 +  Functions: 77407
-+  Symbols:   114556
++  Symbols:   108572
 +  CStrings:  19651
- 
 Symbols:
 + +[WKWebsiteDataStore(WKPrivate) _isSecurityFlagEnabledInUIProcessForTesting:]
 + +[WKWebsiteDataStore(WKPrivate) _setDisabledSecurityFlagsForTesting:]
@@ -2272,10 +2209,6 @@ Symbols:
 + _associated conformance 6WebKit7Angle2DVSHAASQ
 + _associated conformance 6WebKit7Angle2DVSLAASQ
 + _associated conformance 6WebKit7Angle2DVs18AdditiveArithmeticAASQ
-+ _objc_msgSend$_getSelectorPathData:completionHandler:
-+ _objc_msgSend$_needsForcedDisplayRefresh
-+ _objc_msgSend$_stopForcedDisplayRefresh
-+ _objc_msgSend$startForcedDisplayRefreshWindowWithInterval:duration:
 + _symbolic _____ 6WebKit7Angle2DV
 + _symbolic _____ 6WebKit7Angle2DV10CodingKeys33_87272F0E4D09E3A104814DFDF050252CLLO
 + _symbolic _____y_____G s22KeyedDecodingContainerV 6WebKit7Angle2DV10CodingKeys33_87272F0E4D09E3A104814DFDF050252CLLO
@@ -3822,7 +3755,6 @@ Symbols:
 - ___destroy_helper_block_e8_32c96_ZTSKZZ61-[WKWebView takeSnapshotWithConfiguration:completionHandler:]ENK4$_25clEvEUlP7CGImageE_
 - ___destroy_helper_block_e8_32c98_ZTSKZ85-[UIScrollView(WebKitInternal) _wk_setContentOffsetAndShowScrollIndicators:animated:]E3$_5
 - ___destroy_helper_block_e8_32c99_ZTSKZZZ61-[WKWebView takeSnapshotWithConfiguration:completionHandler:]EN4$_26clEvENUlvE_clEvEUlvE_
-- _objc_msgSend$_getSelectorPathDataForNode:completionHandler:
 CStrings:
 + " WHERE registrableDomain IN ("
 + "%p - [sessionID=%llu, error=%d, message=%{private}s] - ResourceLoadStatisticsStore::%{public}s: failed to bind domain"

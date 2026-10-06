@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/LightweightCodeRequirements.framework/LightweightCodeRequirements`
 
-```diff
+### Section Size Changes
 
- 22.0.0.0.0
--  __TEXT.__text: 0x3050c
-+  __TEXT.__text: 0x30530
-   __TEXT.__const: 0x5c52
-   __TEXT.__swift5_typeref: 0x16e2
-   __TEXT.__swift5_fieldmd: 0xf2c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3050c` | `0x30530` | **`+0x24`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1c11a6a20 -> sub_1c1664a20 : 580 -> 584
 ~ sub_1c11a719c -> sub_1c16651a0 : 3364 -> 3368

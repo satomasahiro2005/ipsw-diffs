@@ -2,41 +2,25 @@
 
 > `com.apple.driver.AppleSEPCredentialManager`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA.__data`
-- `__DATA_CONST.__mod_init_func`
-- `__DATA_CONST.__mod_term_func`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__kalloc_type`
-- `__DATA_CONST.__kalloc_var`
-- `__DATA_CONST.__auth_got`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x4dcf4` | `0x4e214` | **`+0x520`** |
+| `__TEXT.__cstring` | `0x1312c` | `0x13342` | **`+0x216`** |
+| `__TEXT.__const` | `0x420` | `0x428` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -949.0.9.0.0
--  __TEXT.__cstring: 0x1312c
--  __TEXT.__const: 0x420
--  __TEXT_EXEC.__text: 0x4dcf4
-+949.0.13.0.0
-+  __TEXT.__cstring: 0x13342
-+  __TEXT.__const: 0x428
-+  __TEXT_EXEC.__text: 0x4e214
-   __TEXT_EXEC.__auth_stubs: 0x660
-   __DATA.__data: 0x3061
-   __DATA.__common: 0x9c8
-
-   __DATA_CONST.__auth_got: 0x330
-   __DATA_CONST.__got: 0xc8
-   __DATA_CONST.__auth_ptr: 0x10
 -  Functions: 1016
++949.0.13.0.0
 +  Functions: 1019
-   Symbols:   0
+
 -  CStrings:  1971
 +  CStrings:  1981
- 
 CStrings:
 + "%s: %s: *** GOING OFFLINE *** ---> aborting SEP command=%u (isPoweringOff=%s, isSystemShuttingDown=%s).\n"
 + "%s: %s: marked system shutting down, stateFlags=0x%x.\n"

@@ -2,61 +2,30 @@
 
 > `/usr/lib/libAudioIssueDetector.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH.__objc_data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x38a98` | `0x378b8` | **`-0x11e0`** |
+| `__TEXT.__cstring` | `0x2942` | `0x1bee` | **`-0xd54`** |
+| `__TEXT.__realtime` | `0x1958` | `0x18f0` | **`-0x68`** |
+| `__TEXT.__oslogstring` | `0x3d0d` | `0x3cda` | **`-0x33`** |
+| `__TEXT.__unwind_info` | `0x1038` | `0x1028` | **`-0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x3064` | `0x305c` | **`-0x8`** |
+
+### Other Changes
 
 ```diff
 
 -881.108.0.0.0
--  __TEXT.__text: 0x38a98
--  __TEXT.__realtime: 0x1958
 +881.112.0.0.0
-+  __TEXT.__text: 0x378b8
-+  __TEXT.__realtime: 0x18f0
-   __TEXT.__objc_methlist: 0x8b4
-   __TEXT.__const: 0x324
-   __TEXT.__dlopen_cstrs: 0x6d
--  __TEXT.__gcc_except_tab: 0x3064
--  __TEXT.__cstring: 0x2942
--  __TEXT.__oslogstring: 0x3d0d
-+  __TEXT.__gcc_except_tab: 0x305c
-+  __TEXT.__cstring: 0x1bee
-+  __TEXT.__oslogstring: 0x3cda
-   __TEXT.__ustring: 0x2e
--  __TEXT.__unwind_info: 0x1038
-+  __TEXT.__unwind_info: 0x1028
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 745
--  Symbols:   2039
+-  Symbols:   1813
 -  CStrings:  557
 +  Functions: 743
-+  Symbols:   2036
++  Symbols:   1810
 +  CStrings:  545
- 
 Symbols:
 + GCC_except_table170
 + GCC_except_table172

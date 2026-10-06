@@ -2,77 +2,38 @@
 
 > `/System/Library/Frameworks/Security.framework/Security`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x181864` | `0x181a6c` | **`+0x208`** |
+| `__AUTH.__thread_bss` | `0x48` | `—` | **`-0x48`** |
+| `__AUTH.__thread_vars` | `0x30` | `—` | **`-0x30`** |
+| `__AUTH_CONST.__objc_const` | `0xa5f8` | `0xa628` | **`+0x30`** |
+| `__AUTH_CONST.__cfstring` | `0x178c0` | `0x178e0` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x194d2` | `0x194ec` | **`+0x1a`** |
+| `__DATA.__bss` | `0xa40` | `0xa50` | **`+0x10`** |
+| `__TEXT.__const` | `0x1b9b8` | `0x1b9c8` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x67bc` | `0x67cc` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x34d0` | `0x34d8` | **`+0x8`** |
+| `__DATA_DIRTY.__bss` | `0x280` | `0x288` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x5ff8` | `0x6000` | **`+0x8`** |
+| `__TEXT.__oslogstring` | `0xf8f9` | `0xf8f4` | **`-0x5`** |
+| `__DATA.__objc_ivar` | `0x670` | `0x674` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -62460.40.49.502.1
--  __TEXT.__text: 0x17d2b0
 +62460.40.56.502.1
-+  __TEXT.__text: 0x17d498
-   __TEXT.__lazy_helpers: 0x54
--  __TEXT.__objc_methlist: 0x67bc
--  __TEXT.__const: 0x1b9b8
-+  __TEXT.__objc_methlist: 0x67cc
-+  __TEXT.__const: 0x1b9c8
-   __TEXT.__dlopen_cstrs: 0xbc
--  __TEXT.__cstring: 0x194d2
-+  __TEXT.__cstring: 0x194ec
-   __TEXT.__gcc_except_tab: 0x7db4
--  __TEXT.__oslogstring: 0xf8f9
-+  __TEXT.__oslogstring: 0xf8f4
-   __TEXT.__ustring: 0x406
-   __TEXT.__dof_codesign: 0x1f2c
-   __TEXT.__dof_security_: 0x325
--  __TEXT.__unwind_info: 0x72e0
-+  __TEXT.__unwind_info: 0x72e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_protolist: 0x100
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x34d0
-+  __DATA_CONST.__objc_selrefs: 0x34d8
-   __DATA_CONST.__objc_protorefs: 0x60
-   __DATA_CONST.__objc_superrefs: 0x2f0
-   __DATA_CONST.__objc_arraydata: 0x100
-   __DATA_CONST.__got: 0x770
-   __AUTH_CONST.__const: 0x3f80
--  __AUTH_CONST.__cfstring: 0x178c0
--  __AUTH_CONST.__objc_const: 0xa5f8
-+  __AUTH_CONST.__cfstring: 0x178e0
-+  __AUTH_CONST.__objc_const: 0xa628
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__lazy_load_got: 0x8
-   __AUTH_CONST.__objc_arrayobj: 0x120
-
-   __AUTH_CONST.__auth_got: 0x1ff8
-   __AUTH.__objc_data: 0x1f90
-   __AUTH.__data: 0x1488
--  __AUTH.__thread_vars: 0x30
--  __AUTH.__thread_bss: 0x48
--  __DATA.__objc_ivar: 0x670
-+  __DATA.__objc_ivar: 0x674
-   __DATA.__data: 0x2180
-   __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0x190
-   __DATA_DIRTY.__data: 0x40
--  __DATA_DIRTY.__bss: 0x280
-+  __DATA_DIRTY.__bss: 0x288
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/libcoretls_cfhelpers.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 7137
--  Symbols:   14866
+-  Symbols:   13676
 -  CStrings:  5762
 +  Functions: 7140
-+  Symbols:   14869
++  Symbols:   13678
 +  CStrings:  5763
- 
 Symbols:
 + -[OTMetricsSessionData idMSTDLNotificationFlowID]
 + -[OTMetricsSessionData initWithFlowID:deviceSessionID:idMSTDLNotificationFlowID:]
@@ -420,7 +381,6 @@ Symbols:
 + _getThreadLocalClientKey.haveKey
 + _getThreadLocalClientKey.key
 + _getThreadLocalClientKey.onceToken
-+ _objc_msgSend$idMSTDLNotificationFlowID
 + _releaseThreadLocalClient
 - -[OTMetricsSessionData initWithFlowID:deviceSessionID:]
 - GCC_except_table1012

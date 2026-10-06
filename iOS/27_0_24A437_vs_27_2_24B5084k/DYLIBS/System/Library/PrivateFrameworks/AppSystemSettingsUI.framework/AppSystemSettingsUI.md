@@ -2,163 +2,85 @@
 
 > `/System/Library/PrivateFrameworks/AppSystemSettingsUI.framework/AppSystemSettingsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x46880` | `0x25040` | **`-0x21840`** |
+| `__TEXT.__swift5_typeref` | `0x205e` | `0xc8c` | **`-0x13d2`** |
+| `__TEXT.__cstring` | `0x32fc` | `0x237c` | **`-0xf80`** |
+| `__TEXT.__const` | `0x1bd8` | `0xe18` | **`-0xdc0`** |
+| `__DATA.__bss` | `0x9e0` | `0x140` | **`-0x8a0`** |
+| `__AUTH_CONST.__const` | `0x1078` | `0x890` | **`-0x7e8`** |
+| `__AUTH_CONST.__objc_const` | `0x1ea8` | `0x1738` | **`-0x770`** |
+| `__DATA.__data` | `0x9f8` | `0x368` | **`-0x690`** |
+| `__TEXT.__unwind_info` | `0xf68` | `0x9a8` | **`-0x5c0`** |
+| `__TEXT.__eh_frame` | `0xd38` | `0x900` | **`-0x438`** |
+| `__AUTH.__objc_data` | `0x6e8` | `0x2f8` | **`-0x3f0`** |
+| `__TEXT.__constg_swiftt` | `0x718` | `0x36c` | **`-0x3ac`** |
+| `__TEXT.__swift5_reflstr` | `0x627` | `0x2d7` | **`-0x350`** |
+| `__TEXT.__oslogstring` | `0xb85` | `0x855` | **`-0x330`** |
+| `__AUTH_CONST.__auth_got` | `0xe90` | `0xb70` | **`-0x320`** |
+| `__TEXT.__objc_methlist` | `0xfec` | `0xd04` | **`-0x2e8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1200` | `0xf30` | **`-0x2d0`** |
+| `__TEXT.__swift5_fieldmd` | `0x4a8` | `0x1f8` | **`-0x2b0`** |
+| `__AUTH.__data` | `0x2d8` | `0x50` | **`-0x288`** |
+| `__TEXT.__swift5_capture` | `0x490` | `0x218` | **`-0x278`** |
+| `__TEXT.__ustring` | `0x114` | `0x2f6` | **`+0x1e2`** |
+| `__DATA_CONST.__got` | `0x8b8` | `0x720` | **`-0x198`** |
+| `__DATA_DIRTY.__bss` | `0x710` | `0x610` | **`-0x100`** |
+| `__TEXT.__swift5_assocty` | `0x168` | `0x78` | **`-0xf0`** |
+| `__AUTH_CONST.__cfstring` | `0x15a0` | `0x1600` | **`+0x60`** |
+| `__TEXT.__swift5_proto` | `0x78` | `0x30` | **`-0x48`** |
+| `__TEXT.__swift5_types` | `0x74` | `0x34` | **`-0x40`** |
+| `__TEXT.__swift5_builtin` | `0x3c` | `—` | **`-0x3c`** |
+| `__DATA.__common` | `0x38` | `—` | **`-0x38`** |
+| `__DATA_CONST.__const` | `0x540` | `0x508` | **`-0x38`** |
+| `__TEXT.__swift_as_cont` | `0x8c` | `0x60` | **`-0x2c`** |
+| `__DATA_CONST.__objc_classlist` | `0x98` | `0x70` | **`-0x28`** |
+| `__TEXT.__gcc_except_tab` | `0x360` | `0x384` | **`+0x24`** |
+| `__DATA_CONST.__objc_protolist` | `0x68` | `0x48` | **`-0x20`** |
+| `__DATA_DIRTY.__data` | `0x790` | `0x770` | **`-0x20`** |
+| `__DATA_CONST.__objc_protorefs` | `0x28` | `0x18` | **`-0x10`** |
+| `__TEXT.__swift_as_entry` | `0x40` | `0x30` | **`-0x10`** |
+| `__TEXT.__swift_as_ret` | `0x48` | `0x3c` | **`-0xc`** |
+| `__DATA_DIRTY.__objc_data` | `0x378` | `0x380` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.7.0.0
--  __TEXT.__text: 0x4499c
--  __TEXT.__objc_methlist: 0xfec
--  __TEXT.__const: 0x1bd8
--  __TEXT.__gcc_except_tab: 0x360
--  __TEXT.__cstring: 0x32fc
--  __TEXT.__oslogstring: 0xb85
--  __TEXT.__ustring: 0x114
 +2027.1.3.0.0
-+  __TEXT.__text: 0x23c9c
-+  __TEXT.__objc_methlist: 0xd04
-+  __TEXT.__const: 0xe18
-+  __TEXT.__gcc_except_tab: 0x384
-+  __TEXT.__cstring: 0x237c
-+  __TEXT.__oslogstring: 0x855
-+  __TEXT.__ustring: 0x2f6
-   __TEXT.__dlopen_cstrs: 0x5e
--  __TEXT.__constg_swiftt: 0x718
--  __TEXT.__swift5_typeref: 0x205e
--  __TEXT.__swift5_builtin: 0x3c
--  __TEXT.__swift5_reflstr: 0x627
--  __TEXT.__swift5_assocty: 0x168
--  __TEXT.__swift5_fieldmd: 0x4a8
--  __TEXT.__swift5_capture: 0x490
--  __TEXT.__swift5_proto: 0x78
--  __TEXT.__swift5_types: 0x74
--  __TEXT.__swift_as_entry: 0x40
--  __TEXT.__swift_as_ret: 0x48
--  __TEXT.__swift_as_cont: 0x8c
--  __TEXT.__unwind_info: 0x1320
--  __TEXT.__eh_frame: 0xd38
-+  __TEXT.__constg_swiftt: 0x36c
-+  __TEXT.__swift5_typeref: 0xc8c
-+  __TEXT.__swift5_reflstr: 0x2d7
-+  __TEXT.__swift5_fieldmd: 0x1f8
-+  __TEXT.__swift5_capture: 0x218
-+  __TEXT.__swift5_proto: 0x30
-+  __TEXT.__swift5_types: 0x34
-+  __TEXT.__swift_as_entry: 0x30
-+  __TEXT.__swift_as_ret: 0x3c
-+  __TEXT.__swift_as_cont: 0x60
-+  __TEXT.__swift5_assocty: 0x78
-+  __TEXT.__unwind_info: 0xbd0
-+  __TEXT.__eh_frame: 0x900
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x540
--  __DATA_CONST.__objc_classlist: 0x98
-+  __DATA_CONST.__const: 0x508
-+  __DATA_CONST.__objc_classlist: 0x70
-   __DATA_CONST.__objc_catlist: 0x10
--  __DATA_CONST.__objc_protolist: 0x68
-+  __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1200
--  __DATA_CONST.__objc_protorefs: 0x28
-+  __DATA_CONST.__objc_selrefs: 0xf30
-+  __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x30
-   __DATA_CONST.__objc_arraydata: 0x18
--  __DATA_CONST.__got: 0x8b8
--  __AUTH_CONST.__const: 0x1078
--  __AUTH_CONST.__cfstring: 0x15a0
--  __AUTH_CONST.__objc_const: 0x1ea8
-+  __DATA_CONST.__got: 0x720
-+  __AUTH_CONST.__const: 0x890
-+  __AUTH_CONST.__cfstring: 0x1600
-+  __AUTH_CONST.__objc_const: 0x1738
-   __AUTH_CONST.__objc_intobj: 0x300
-   __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__auth_got: 0xe90
--  __AUTH.__objc_data: 0x6e8
--  __AUTH.__data: 0x2d8
-+  __AUTH_CONST.__auth_got: 0xb70
-+  __AUTH.__objc_data: 0x2f8
-+  __AUTH.__data: 0x50
-   __DATA.__objc_ivar: 0x84
--  __DATA.__data: 0x9f8
--  __DATA.__common: 0x38
--  __DATA_DIRTY.__objc_data: 0x378
--  __DATA_DIRTY.__data: 0x790
--  __DATA_DIRTY.__bss: 0x710
-+  __DATA.__data: 0x368
-+  __DATA_DIRTY.__objc_data: 0x380
-+  __DATA_DIRTY.__data: 0x770
-+  __DATA_DIRTY.__bss: 0x610
-   __DATA_DIRTY.__common: 0x28
-   - /System/Library/Frameworks/AccessoryLiveActivities.framework/AccessoryLiveActivities
-   - /System/Library/Frameworks/AccessorySetupKit.framework/AccessorySetupKit
 
-   - /System/Library/PrivateFrameworks/AccountsUI.framework/AccountsUI
-   - /System/Library/PrivateFrameworks/AppSystemSettings.framework/AppSystemSettings
-   - /System/Library/PrivateFrameworks/BulletinBoard.framework/BulletinBoard
 +  - /System/Library/PrivateFrameworks/CTMessagingSettings.framework/CTMessagingSettings
-   - /System/Library/PrivateFrameworks/CommunicationSafetySettingsUI.framework/CommunicationSafetySettingsUI
-   - /System/Library/PrivateFrameworks/CoreIDV.framework/CoreIDV
--  - /System/Library/PrivateFrameworks/CorePhoneNumbers.framework/CorePhoneNumbers
-   - /System/Library/PrivateFrameworks/DefaultAppsSettings.framework/DefaultAppsSettings
-   - /System/Library/PrivateFrameworks/DefaultAppsSettingsUI.framework/DefaultAppsSettingsUI
-   - /System/Library/PrivateFrameworks/DeviceAccess.framework/DeviceAccess
-   - /System/Library/PrivateFrameworks/DocumentManager.framework/DocumentManager
-   - /System/Library/PrivateFrameworks/DocumentManagerCore.framework/DocumentManagerCore
-   - /System/Library/PrivateFrameworks/FamilyControlsObjC.framework/FamilyControlsObjC
--  - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/IDS.framework/IDS
--  - /System/Library/PrivateFrameworks/IMSharedUtilities.framework/IMSharedUtilities
-   - /System/Library/PrivateFrameworks/IconServices.framework/IconServices
-   - /System/Library/PrivateFrameworks/IntlPreferences.framework/IntlPreferences
-   - /System/Library/PrivateFrameworks/LimitAdTracking.framework/LimitAdTracking
-   - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
-   - /System/Library/PrivateFrameworks/MomentsOnboardingAndSettings.framework/MomentsOnboardingAndSettings
-   - /System/Library/PrivateFrameworks/NetAppsUtilities.framework/NetAppsUtilities
-+  - /System/Library/PrivateFrameworks/OSEligibility.framework/OSEligibility
-   - /System/Library/PrivateFrameworks/Preferences.framework/Preferences
-   - /System/Library/PrivateFrameworks/PreferencesExtended.framework/PreferencesExtended
-   - /System/Library/PrivateFrameworks/SEService.framework/SEService
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
+-  - /System/Library/PrivateFrameworks/CorePhoneNumbers.framework/CorePhoneNumbers
+
+-  - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
+
+-  - /System/Library/PrivateFrameworks/IMSharedUtilities.framework/IMSharedUtilities
+
++  - /System/Library/PrivateFrameworks/OSEligibility.framework/OSEligibility
+
 -  - /usr/lib/swift/libswiftAVFoundation.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
+
 -  - /usr/lib/swift/libswiftAppleArchive.dylib
 -  - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
 
-   - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
-   - /usr/lib/swift/libswiftIntents.dylib
 -  - /usr/lib/swift/libswiftMLCompute.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
+
 -  - /usr/lib/swift/libswiftMetalKit.dylib
 -  - /usr/lib/swift/libswiftModelIO.dylib
 -  - /usr/lib/swift/libswiftNaturalLanguage.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftObservation.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1268
--  Symbols:   1711
+-  Symbols:   1277
 -  CStrings:  423
 +  Functions: 741
-+  Symbols:   1425
++  Symbols:   1043
 +  CStrings:  329
- 
 Symbols:
-+ _objc_msgSend$isDataLinkingTerminologyEligible
 - _OBJC_CLASS_$_CTBundle
 - _OBJC_CLASS_$_CTLazuliBusinessMessagingCapabilities
 - _OBJC_CLASS_$_CTLazuliEncryptionCapabilities
@@ -260,59 +182,6 @@ Symbols:
 - _keypath_get_selector_slotID
 - _keypath_set.16Tm
 - _keypath_setTm
-- _objc_msgSend$arrayForKey:
-- _objc_msgSend$businessMessagingCapabilities
-- _objc_msgSend$canSetSwitch
-- _objc_msgSend$carrierSupport
-- _objc_msgSend$contextWithXPCContextInfo:
-- _objc_msgSend$copyCarrierBundleValue:keyHierarchy:bundleType:error:
-- _objc_msgSend$copyCarrierBundleValueWithDefault:key:bundleType:error:
-- _objc_msgSend$copyMobileSubscriberCountryCode:error:
-- _objc_msgSend$copyMobileSubscriberIsoCountryCode:error:
-- _objc_msgSend$dictionaryForKey:
-- _objc_msgSend$disableBusinessMessaging:withError:
-- _objc_msgSend$disableLazuli:withError:
-- _objc_msgSend$disablementReason
-- _objc_msgSend$enableBusinessMessaging:withError:
-- _objc_msgSend$enableLazuli:withError:
-- _objc_msgSend$enabledByDefault
-- _objc_msgSend$encryptionCapabilities
-- _objc_msgSend$existingUserSubscriptions
-- _objc_msgSend$featureDisabledByProfile
-- _objc_msgSend$featureDisabledStoreDemo
-- _objc_msgSend$featureEnabledByDefault
-- _objc_msgSend$featureSupported
-- _objc_msgSend$formattedPhoneNumber
-- _objc_msgSend$getActiveContexts:
-- _objc_msgSend$getCurrentDataSubscriptionContextSync:
-- _objc_msgSend$getNumberSharingInfo:error:
-- _objc_msgSend$getSystemConfiguration:withError:
-- _objc_msgSend$init
-- _objc_msgSend$initWithBundleType:
-- _objc_msgSend$initWithSuiteName:
-- _objc_msgSend$label
-- _objc_msgSend$labelID
-- _objc_msgSend$messagingCapabilities
-- _objc_msgSend$mmsSupportedAndConfiguredForPhoneNumber:simID:
-- _objc_msgSend$navigationController
-- _objc_msgSend$openSensitiveURL:withOptions:
-- _objc_msgSend$operationStatus
-- _objc_msgSend$phoneNumber
-- _objc_msgSend$phoneSubscriptionWithSubscriptionSlot:andLabelID:
-- _objc_msgSend$popViewControllerAnimated:
-- _objc_msgSend$quickSwitchRole
-- _objc_msgSend$registrationState
-- _objc_msgSend$removeObjectForKey:
-- _objc_msgSend$setBool:forKey:
-- _objc_msgSend$setLazuliEncryption:enabled:withError:
-- _objc_msgSend$showSwitch
-- _objc_msgSend$slotID
-- _objc_msgSend$subscriptions
-- _objc_msgSend$supported
-- _objc_msgSend$switchState
-- _objc_msgSend$unselectSubscription:withError:
-- _objc_msgSend$userPreferenceForSwitch
-- _objc_msgSend$uuid
 - _objc_retain_x10
 - _objc_retain_x28
 - _swift_arrayInitWithTakeBackToFront

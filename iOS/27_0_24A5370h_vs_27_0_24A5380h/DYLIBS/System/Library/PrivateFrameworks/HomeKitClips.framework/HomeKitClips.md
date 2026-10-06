@@ -2,109 +2,60 @@
 
 > `/System/Library/PrivateFrameworks/HomeKitClips.framework/HomeKitClips`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x233ba8` | `0x27eca8` | **`+0x4b100`** |
+| `__DATA.__bss` | `0x14210` | `0x188b0` | **`+0x46a0`** |
+| `__TEXT.__const` | `0xf980` | `0x12a00` | **`+0x3080`** |
+| `__DATA_DIRTY.__data` | `0x808` | `0x34b0` | **`+0x2ca8`** |
+| `__TEXT.__eh_frame` | `0x132c4` | `0x15b24` | **`+0x2860`** |
+| `__AUTH.__data` | `0x5128` | `0x3620` | **`-0x1b08`** |
+| `__AUTH_CONST.__const` | `0x9cf8` | `0xb228` | **`+0x1530`** |
+| `__TEXT.__unwind_info` | `0x6d10` | `0x7f58` | **`+0x1248`** |
+| `__TEXT.__swift5_typeref` | `0x5046` | `0x606e` | **`+0x1028`** |
+| `__TEXT.__delay_helper` | `—` | `0xdb4` | **`+0xdb4`** |
+| `__AUTH.__objc_data` | `0xb88` | `0xd8` | **`-0xab0`** |
+| `__TEXT.__delay_stubs` | `—` | `0xa00` | **`+0xa00`** |
+| `__TEXT.__constg_swiftt` | `0x4274` | `0x4bb8` | **`+0x944`** |
+| `__TEXT.__oslogstring` | `0x6883` | `0x7173` | **`+0x8f0`** |
+| `__DATA_DIRTY.__objc_data` | `0x50` | `0x920` | **`+0x8d0`** |
+| `__DATA_DIRTY.__bss` | `—` | `0x800` | **`+0x800`** |
+| `__TEXT.__swift5_fieldmd` | `0x3e60` | `0x4660` | **`+0x800`** |
+| `__TEXT.__swift5_reflstr` | `0x3409` | `0x3936` | **`+0x52d`** |
+| `__DATA.__data` | `0x37c0` | `0x3c6c` | **`+0x4ac`** |
+| `__TEXT.__cstring` | `0x5490` | `0x5908` | **`+0x478`** |
+| `__AUTH_CONST.__objc_const` | `0x2618` | `0x2978` | **`+0x360`** |
+| `__TEXT.__swift5_assocty` | `0x778` | `0xa18` | **`+0x2a0`** |
+| `__TEXT.__swift5_proto` | `0xa90` | `0xcf0` | **`+0x260`** |
+| `__TEXT.__swift5_capture` | `0x16f0` | `0x191c` | **`+0x22c`** |
+| `__TEXT.__swift_as_cont` | `0xcfc` | `0xea0` | **`+0x1a4`** |
+| `__TEXT.__swift_as_ret` | `0x6e4` | `0x7e0` | **`+0xfc`** |
+| `__TEXT.__swift_as_entry` | `0x55c` | `0x64c` | **`+0xf0`** |
+| `__TEXT.__swift5_types` | `0x4c8` | `0x568` | **`+0xa0`** |
+| `__DATA.__common` | `0x3f0` | `0x488` | **`+0x98`** |
+| `__DATA_DIRTY.__common` | `0x30` | `0xb0` | **`+0x80`** |
+| `__AUTH_CONST.__auth_got` | `0x17c0` | `0x1818` | **`+0x58`** |
+| `__TEXT.__swift5_builtin` | `0x17c` | `0x190` | **`+0x14`** |
+| `__DATA_CONST.__const` | `0x108` | `0x118` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x158` | `0x168` | **`+0x10`** |
+| `__TEXT.__swift5_mpenum` | `0x28` | `0x30` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x70` | `0x74` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x233ba8
-+  __TEXT.__text: 0x27eca8
-+  __TEXT.__delay_stubs: 0xa00
-+  __TEXT.__delay_helper: 0xdb4
-   __TEXT.__objc_methlist: 0x6a4
--  __TEXT.__const: 0xf980
--  __TEXT.__swift5_typeref: 0x5046
--  __TEXT.__constg_swiftt: 0x4274
--  __TEXT.__swift5_fieldmd: 0x3e60
--  __TEXT.__swift5_reflstr: 0x3409
--  __TEXT.__swift5_builtin: 0x17c
--  __TEXT.__swift5_assocty: 0x778
--  __TEXT.__swift5_proto: 0xa90
--  __TEXT.__swift5_types: 0x4c8
--  __TEXT.__cstring: 0x5490
--  __TEXT.__oslogstring: 0x6883
--  __TEXT.__swift_as_entry: 0x55c
--  __TEXT.__swift_as_ret: 0x6e4
--  __TEXT.__swift_as_cont: 0xcfc
--  __TEXT.__swift5_protos: 0x70
--  __TEXT.__swift5_capture: 0x16f0
--  __TEXT.__swift5_mpenum: 0x28
--  __TEXT.__unwind_info: 0x6d10
--  __TEXT.__eh_frame: 0x132c4
-+  __TEXT.__const: 0x12a00
-+  __TEXT.__swift5_typeref: 0x606e
-+  __TEXT.__constg_swiftt: 0x4bb8
-+  __TEXT.__swift5_fieldmd: 0x4660
-+  __TEXT.__swift5_reflstr: 0x3936
-+  __TEXT.__swift5_builtin: 0x190
-+  __TEXT.__swift5_assocty: 0xa18
-+  __TEXT.__swift5_proto: 0xcf0
-+  __TEXT.__swift5_types: 0x568
-+  __TEXT.__cstring: 0x5908
-+  __TEXT.__oslogstring: 0x7173
-+  __TEXT.__swift_as_entry: 0x64c
-+  __TEXT.__swift_as_ret: 0x7e0
-+  __TEXT.__swift_as_cont: 0xea0
-+  __TEXT.__swift5_protos: 0x74
-+  __TEXT.__swift5_capture: 0x191c
-+  __TEXT.__swift5_mpenum: 0x30
-+  __TEXT.__unwind_info: 0x7f58
-+  __TEXT.__eh_frame: 0x15b24
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x108
--  __DATA_CONST.__objc_classlist: 0x158
-+  __DATA_CONST.__const: 0x118
-+  __DATA_CONST.__objc_classlist: 0x168
-   __DATA_CONST.__objc_protolist: 0x90
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xac8
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x9cf8
-+  __AUTH_CONST.__const: 0xb228
-   __AUTH_CONST.__cfstring: 0x20
--  __AUTH_CONST.__objc_const: 0x2618
--  __AUTH_CONST.__auth_got: 0x17c0
--  __AUTH.__objc_data: 0xb88
--  __AUTH.__data: 0x5128
--  __DATA.__data: 0x37c0
--  __DATA.__bss: 0x14210
--  __DATA.__common: 0x3f0
--  __DATA_DIRTY.__objc_data: 0x50
--  __DATA_DIRTY.__data: 0x808
--  __DATA_DIRTY.__common: 0x30
-+  __AUTH_CONST.__objc_const: 0x2978
-+  __AUTH_CONST.__auth_got: 0x1818
-+  __AUTH.__objc_data: 0xd8
-+  __AUTH.__data: 0x3620
-+  __DATA.__data: 0x3c6c
-+  __DATA.__bss: 0x188b0
-+  __DATA.__common: 0x488
-+  __DATA_DIRTY.__objc_data: 0x920
-+  __DATA_DIRTY.__data: 0x34b0
-+  __DATA_DIRTY.__common: 0xb0
-+  __DATA_DIRTY.__bss: 0x800
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
+-1479.0.0.1.0
++1484.2.0.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7732
--  Symbols:   3373
--  CStrings:  932
+-  Symbols:   2280
+-  CStrings:  931
 +  Functions: 8893
-+  Symbols:   3859
-+  CStrings:  1004
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
++  Symbols:   2672
++  CStrings:  1003
 Symbols:
 + _CGImageCreateWithImageInRect$delayInitStub
 + _CGImageDestinationAddImage$delayInitStub
@@ -717,5 +668,4 @@ CStrings:
 - "RecordStorage<CameraRecordingSession>"
 - "RecordStorage<CameraRecordingSessionMetadata>"
 - "RecordStorage<CameraRecordingTrack>"
-
 ```

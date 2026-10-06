@@ -2,58 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/WebCore.framework/Frameworks/libANGLE-shared.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_selrefs`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__weak_auth_got`
-- `__DATA.__data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x43d25` | `0x44601` | **`+0x8dc`** |
+| `__TEXT.__const` | `0x83f00` | `0x83e80` | **`-0x80`** |
+| `__TEXT.__unwind_info` | `0x92d8` | `0x9288` | **`-0x50`** |
+| `__DATA_DIRTY.__common` | `0x4f8` | `0x540` | **`+0x48`** |
+| `__DATA_CONST.__const` | `0x12fc8` | `0x12fe8` | **`+0x20`** |
+| `__TEXT.__text` | `0x258d10` | `0x258cf4` | **`-0x1c`** |
+| `__TEXT.__gcc_except_tab` | `0x2b5c` | `0x2b44` | **`-0x18`** |
+
+### Other Changes
 
 ```diff
 
 -625.1.22.10.3
--  __TEXT.__text: 0x258d10
--  __TEXT.__const: 0x83f00
--  __TEXT.__cstring: 0x43d25
--  __TEXT.__gcc_except_tab: 0x2b5c
 +625.1.24.10.1
-+  __TEXT.__text: 0x258cf4
-+  __TEXT.__const: 0x83e80
-+  __TEXT.__cstring: 0x44601
-+  __TEXT.__gcc_except_tab: 0x2b44
-   __TEXT.__oslogstring: 0xf
--  __TEXT.__unwind_info: 0x92d8
-+  __TEXT.__unwind_info: 0x9288
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0x12fc8
-+  __DATA_CONST.__const: 0x12fe8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x7c8
-   __DATA_CONST.__got: 0x0
 
-   __DATA.__common: 0x35c
-   __DATA_DIRTY.__data: 0xc70
-   __DATA_DIRTY.__bss: 0x1a0
--  __DATA_DIRTY.__common: 0x4f8
-+  __DATA_DIRTY.__common: 0x540
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 9088
--  Symbols:   13499
+-  Symbols:   13250
 -  CStrings:  6977
 +  Functions: 9075
-+  Symbols:   13484
++  Symbols:   13235
 +  CStrings:  7007
- 
 Symbols:
 + GCC_except_table101
 + GCC_except_table105

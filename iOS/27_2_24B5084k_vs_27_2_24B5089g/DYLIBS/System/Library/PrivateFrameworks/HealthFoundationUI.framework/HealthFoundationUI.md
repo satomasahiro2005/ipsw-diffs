@@ -2,89 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/HealthFoundationUI.framework/HealthFoundationUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8f1e8` | `0x95a10` | **`+0x6828`** |
+| `__TEXT.__const` | `0x4448` | `0x48a8` | **`+0x460`** |
+| `__DATA.__bss` | `0x42f8` | `0x4548` | **`+0x250`** |
+| `__TEXT.__swift5_reflstr` | `0x16c9` | `0x1869` | **`+0x1a0`** |
+| `__TEXT.__unwind_info` | `0x1b80` | `0x1cb8` | **`+0x138`** |
+| `__DATA.__data` | `0x2c98` | `0x2db8` | **`+0x120`** |
+| `__TEXT.__swift5_typeref` | `0x2054` | `0x215e` | **`+0x10a`** |
+| `__TEXT.__swift5_fieldmd` | `0x1a44` | `0x1b28` | **`+0xe4`** |
+| `__AUTH_CONST.__const` | `0x41c0` | `0x4288` | **`+0xc8`** |
+| `__TEXT.__eh_frame` | `0xb14` | `0xbdc` | **`+0xc8`** |
+| `__AUTH_CONST.__auth_got` | `0x16a0` | `0x1750` | **`+0xb0`** |
+| `__AUTH.__objc_data` | `0x440` | `0x3a0` | **`-0xa0`** |
+| `__DATA_DIRTY.__objc_data` | `—` | `0xa0` | **`+0xa0`** |
+| `__AUTH.__data` | `0x970` | `0x9f8` | **`+0x88`** |
+| `__TEXT.__constg_swiftt` | `0x294c` | `0x29b4` | **`+0x68`** |
+| `__TEXT.__swift5_assocty` | `0x818` | `0x878` | **`+0x60`** |
+| `__TEXT.__swift5_capture` | `0x804` | `0x83c` | **`+0x38`** |
+| `__DATA_CONST.__objc_selrefs` | `0x358` | `0x378` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0xb18` | `0xb30` | **`+0x18`** |
+| `__DATA_CONST.__const` | `0xc0` | `0xd0` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x230` | `0x240` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x224` | `0x230` | **`+0xc`** |
+| `__DATA_DIRTY.__data` | `0x10` | `0x18` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x20` | `0x24` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0x1c` | `0x20` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.36.2.7
--  __TEXT.__text: 0x8a030
 +7027.1.45.2.4
-+  __TEXT.__text: 0x904fc
-   __TEXT.__objc_methlist: 0x294
--  __TEXT.__const: 0x4448
-+  __TEXT.__const: 0x48a8
-   __TEXT.__oslogstring: 0x105
-   __TEXT.__cstring: 0x1ca3
--  __TEXT.__constg_swiftt: 0x294c
--  __TEXT.__swift5_typeref: 0x2054
--  __TEXT.__swift5_reflstr: 0x16c9
--  __TEXT.__swift5_assocty: 0x818
--  __TEXT.__swift5_fieldmd: 0x1a44
-+  __TEXT.__constg_swiftt: 0x29b4
-+  __TEXT.__swift5_typeref: 0x215e
-+  __TEXT.__swift5_reflstr: 0x1869
-+  __TEXT.__swift5_assocty: 0x878
-+  __TEXT.__swift5_fieldmd: 0x1b28
-   __TEXT.__swift5_builtin: 0xa0
--  __TEXT.__swift5_capture: 0x804
--  __TEXT.__swift5_proto: 0x230
--  __TEXT.__swift5_types: 0x224
-+  __TEXT.__swift5_capture: 0x83c
-+  __TEXT.__swift5_proto: 0x240
-+  __TEXT.__swift5_types: 0x230
-   __TEXT.__swift5_mpenum: 0x1c
--  __TEXT.__swift_as_entry: 0x1c
-+  __TEXT.__swift_as_entry: 0x20
-   __TEXT.__swift_as_ret: 0x14
--  __TEXT.__swift_as_cont: 0x20
-+  __TEXT.__swift_as_cont: 0x24
-   __TEXT.__swift5_protos: 0x18
--  __TEXT.__unwind_info: 0x2310
--  __TEXT.__eh_frame: 0xb2c
-+  __TEXT.__unwind_info: 0x24b8
-+  __TEXT.__eh_frame: 0xbf4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xc0
-+  __DATA_CONST.__const: 0xd0
-   __DATA_CONST.__objc_classlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x358
-+  __DATA_CONST.__objc_selrefs: 0x378
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__got: 0xb18
--  __AUTH_CONST.__const: 0x41c0
-+  __DATA_CONST.__got: 0xb30
-+  __AUTH_CONST.__const: 0x4288
-   __AUTH_CONST.__objc_const: 0x670
-   __AUTH_CONST.__objc_intobj: 0x30
--  __AUTH_CONST.__auth_got: 0x16a0
--  __AUTH.__objc_data: 0x440
--  __AUTH.__data: 0x970
--  __DATA.__data: 0x2c98
-+  __AUTH_CONST.__auth_got: 0x1750
-+  __AUTH.__objc_data: 0x3a0
-+  __AUTH.__data: 0x9f8
-+  __DATA.__data: 0x2db8
-   __DATA.__common: 0xd8
--  __DATA_DIRTY.__data: 0x10
-+  __DATA_DIRTY.__objc_data: 0xa0
-+  __DATA_DIRTY.__data: 0x18
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/DeveloperToolsSupport.framework/DeveloperToolsSupport
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2691
--  Symbols:   976
+-  Symbols:   904
 +  Functions: 2799
-+  Symbols:   997
-   CStrings:  122
- 
++  Symbols:   921
 Symbols:
 + ___swift_closure_destructor.27Tm
 + ___swift_memcpy168_8
@@ -101,10 +59,6 @@ Symbols:
 + _keypath_get_selector_compactAppearance
 + _keypath_get_selector_scrollEdgeAppearance
 + _keypath_get_selector_standardAppearance
-+ _objc_msgSend$compactAppearance
-+ _objc_msgSend$scrollEdgeAppearance
-+ _objc_msgSend$setCompactAppearance:
-+ _objc_msgSend$setScrollEdgeAppearance:
 + _objc_retain_x24
 + _objc_retain_x26
 + _swift_release_n

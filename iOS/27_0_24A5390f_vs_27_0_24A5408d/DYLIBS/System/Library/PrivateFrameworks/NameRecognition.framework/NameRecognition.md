@@ -2,74 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/NameRecognition.framework/NameRecognition`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7e19c` | `0x7ed9c` | **`+0xc00`** |
+| `__TEXT.__swift5_typeref` | `0x573f` | `0x5955` | **`+0x216`** |
+| `__TEXT.__cstring` | `0x1e56` | `0x1fdb` | **`+0x185`** |
+| `__AUTH_CONST.__auth_got` | `0x1610` | `0x16e0` | **`+0xd0`** |
+| `__TEXT.__constg_swiftt` | `0x1474` | `0x1510` | **`+0x9c`** |
+| `__TEXT.__eh_frame` | `0x38e0` | `0x395c` | **`+0x7c`** |
+| `__DATA_CONST.__got` | `0xa28` | `0xa70` | **`+0x48`** |
+| `__AUTH_CONST.__const` | `0x2ac8` | `0x2af8` | **`+0x30`** |
+| `__DATA.__bss` | `0x39b8` | `0x39e0` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x1d30` | `0x1d50` | **`+0x20`** |
+| `__DATA.__data` | `0x1bc0` | `0x1bd0` | **`+0x10`** |
+| `__TEXT.__const` | `0x4a58` | `0x4a68` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5d8` | `0x5e0` | **`+0x8`** |
+| `__TEXT.__swift5_capture` | `0x910` | `0x914` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3237.1.0.0.0
--  __TEXT.__text: 0x7e19c
 +3240.3.0.0.0
-+  __TEXT.__text: 0x7ed9c
-   __TEXT.__objc_methlist: 0x2c4
--  __TEXT.__const: 0x4a58
--  __TEXT.__constg_swiftt: 0x1474
--  __TEXT.__swift5_typeref: 0x573f
-+  __TEXT.__const: 0x4a68
-+  __TEXT.__constg_swiftt: 0x1510
-+  __TEXT.__swift5_typeref: 0x5955
-   __TEXT.__swift5_reflstr: 0x1085
-   __TEXT.__swift5_fieldmd: 0xe60
--  __TEXT.__cstring: 0x1e56
-+  __TEXT.__cstring: 0x1fdb
-   __TEXT.__oslogstring: 0xc4f
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_assocty: 0x360
 
-   __TEXT.__swift_as_entry: 0x10c
-   __TEXT.__swift_as_ret: 0x150
-   __TEXT.__swift_as_cont: 0x2cc
--  __TEXT.__swift5_capture: 0x910
-+  __TEXT.__swift5_capture: 0x914
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__unwind_info: 0x1d30
--  __TEXT.__eh_frame: 0x38e0
-+  __TEXT.__unwind_info: 0x1d50
-+  __TEXT.__eh_frame: 0x395c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5d8
-+  __DATA_CONST.__objc_selrefs: 0x5e0
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__got: 0xa28
--  __AUTH_CONST.__const: 0x2ac8
-+  __DATA_CONST.__got: 0xa70
-+  __AUTH_CONST.__const: 0x2af8
-   __AUTH_CONST.__objc_const: 0x1310
--  __AUTH_CONST.__auth_got: 0x1610
-+  __AUTH_CONST.__auth_got: 0x16e0
-   __AUTH.__objc_data: 0x7f8
-   __AUTH.__data: 0x1468
--  __DATA.__data: 0x1bc0
--  __DATA.__bss: 0x39b8
-+  __DATA.__data: 0x1bd0
-+  __DATA.__bss: 0x39e0
-   __DATA.__common: 0x48
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2360
--  Symbols:   1218
+-  Symbols:   1065
 -  CStrings:  240
 +  Functions: 2363
-+  Symbols:   1241
++  Symbols:   1087
 +  CStrings:  256
- 
 Symbols:
 + __MergedGlobals
 + ___isPlatformVersionAtLeast
@@ -91,7 +55,6 @@ Symbols:
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAcAE15navigationTitleyQrAA4TextVFQOyAcAE5sheet11isPresented9onDismissAEQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAcAEAjklEQrAO_APqd__yctAaBRd__lFQOyAcAE5alert_AK7actionsQrAI_AOqd__yXEtAaBRd__lFQOyAA4ListVys5NeverOAA05TupleG0VyAA7SectionVyAA05EmptyC0VAXyAA08ModifiedG0VyA2_yAcAE08progressC5StyleyQrqd__AA08ProgresscZ0Rd__lFQOyAA08ProgressC0VyAIA0_G_AA014LinearProgresscZ0VQo_AA30_EnvironmentKeyWritingModifierVyAA08AnyShapeZ0VSgGGAA18_AnimationModifierVySbGG_AA6ButtonVyAIGSgQPGA0_GSg_AA012_ConditionalG0VyA30_yAZyA0_AA6HStackVyAXyAA6SpacerV_A6_yA0_A0_GA34_QPGGA0_GAXyAZyA0_A2_yAA6ToggleVyAIG15NameRecognition19DisabledTapModifier33_92EA039E300F7A57F97CE558EEC0C532LLVGA0_G_AZyAIA2_yAA7ForEachVySayA42_14NREnrolledNameVGA51_A30_yAcAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyA32_yAXyAA6VStackVyAXyAI_AIQPGG_A34_QPGG_Qo_AIGGAA21_TraitWritingModifierVyAA16OnDeleteTraitKeyVGGA0_GAZyA0_A2_yA24_A45_GAISgGAZyA0_A73_A0_GSgQPGGA76_GQPGG_A24_Qo__A42_021OnboardingCoordinatorC0VQo__A42_05ErrorC0VQo__Qo__AA0F9ItemGroupVyAXyA2_yA2_yA2_yAA10EditButtonVAA14_OpacityEffectVGAA32_EnvironmentKeyTransformModifierVySbGGAA31AccessibilityAttachmentModifierVG_A23_yA2_yAA5ImageVA103_GGSgQPGGQo_HO
 + _initializeAvailabilityCheck
 + _malloc
-+ _objc_msgSend$setHostProcessAttribution:error:
 + _rewind
 + _sscanf
 + _symbolic ___________y_____yACyACy_____y_____y___________AfCyACy__________y_____SgGGAIy_____SgGGQPGG_____G_____yAJGG_____G_____y_____y_____yAFSS_____ySay_____GSS_____yAF_SSQo_GG______Qo__Qo_GSgACy_____y_____y_____A12_G______Qo_ATGSgAFSgA18_t 15NameRecognition18ClearableTextField33_6FFD6F4E401F9A876F66D6E1AB06847BLLV 7SwiftUI4MenuV AE15ModifiedContentV AE6HStackV AE05TupleS0V AE0D0V AE6SpacerV AE5ImageV AE30_EnvironmentKeyWritingModifierV AE5ColorV AE4FontV AE14_PaddingLayoutV AE24_BackgroundStyleModifierV 28AccessibilitySharedUISupport012AXOnboardingdE13ShapeModifierV AE4ViewPAEE12labelsHiddenQryFQO A6_AEE11pickerStyleyQrqd__AE11PickerStyleRd__lFQO AE6PickerV AE7ForEachV 10Foundation6LocaleV A6_AEE3tag_15includeOptionalQrqd___SbtSHRd__lFQO AE17InlinePickerStyleV A6_AEE17progressViewStyleyQrqd__AE17ProgressViewStyleRd__lFQO AE12ProgressViewV AE9EmptyViewV AE23LinearProgressViewStyleV

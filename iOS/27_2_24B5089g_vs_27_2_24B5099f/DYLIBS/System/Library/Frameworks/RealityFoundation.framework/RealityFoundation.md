@@ -2,36 +2,25 @@
 
 > `/System/Library/Frameworks/RealityFoundation.framework/RealityFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5e9014` | `0x5e908c` | **`+0x78`** |
+| `__TEXT.__eh_frame` | `0x19818` | `0x19840` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x17b50` | `0x17b58` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -453.40.4.0.0
--  __TEXT.__text: 0x5c6bf4
 +453.40.5.0.0
-+  __TEXT.__text: 0x5c6c6c
-   __TEXT.__objc_methlist: 0x1a34
-   __TEXT.__const: 0x6b674
-   __TEXT.__constg_swiftt: 0x1d0f8
 
-   __TEXT.__swift_as_ret: 0x410
-   __TEXT.__swift_as_cont: 0xc74
-   __TEXT.__swift5_types2: 0x10
--  __TEXT.__unwind_info: 0x1e2b8
--  __TEXT.__eh_frame: 0x19858
-+  __TEXT.__unwind_info: 0x1e2c0
-+  __TEXT.__eh_frame: 0x19880
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 43934
 -  Symbols:   107204
 +  Functions: 43935
 +  Symbols:   107205
-   CStrings:  2285
- 
 Symbols:
 + _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVy10Foundation3URLV_AH4DateVtG_Tg50108$s17RealityFoundation11ImageHelperC09enumerateC22FilesInFolderShallowly_6sortedSay0B03URLVGAH_SbtKFZSbAH_AF4h3Vt_Z11_AKttXEfU1_Tf1nnc_n
 + _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVySi6offset_10RealityKit12MeshResourceC0G10FoundationE4PartV7elementtG_Tg504$s10g5Kit12ij5C0A10k54E5ModelV7combineAA0cF10DefinitionCyKFSbSi6offset_AcDE4L26V7elementt_SiAJ_AlMttXEfU_Tf1nnc_n

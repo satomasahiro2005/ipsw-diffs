@@ -2,79 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/LocalSpeechRecognitionBridge.framework/LocalSpeechRecognitionBridge`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1bfb8` | `0x1d314` | **`+0x135c`** |
+| `__TEXT.__oslogstring` | `0x297f` | `0x2c72` | **`+0x2f3`** |
+| `__TEXT.__cstring` | `0x46e6` | `0x4981` | **`+0x29b`** |
+| `__DATA_CONST.__const` | `0x728` | `0x858` | **`+0x130`** |
+| `__AUTH_CONST.__cfstring` | `0x1980` | `0x1a20` | **`+0xa0`** |
+| `__AUTH_CONST.__const` | `0x80` | `0xc0` | **`+0x40`** |
+| `__TEXT.__gcc_except_tab` | `0x1d0` | `0x208` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0x6b0` | `0x6e8` | **`+0x38`** |
+| `__DATA_CONST.__objc_selrefs` | `0x12e0` | `0x1308` | **`+0x28`** |
+| `__TEXT.__objc_methlist` | `0x2494` | `0x24ac` | **`+0x18`** |
+| `__DATA.__bss` | `0x10` | `—` | **`-0x10`** |
+| `__DATA_DIRTY.__bss` | `0x48` | `0x58` | **`+0x10`** |
+| `__TEXT.__const` | `0xa0` | `0xb0` | **`+0x10`** |
+| `__AUTH_CONST.__objc_const` | `0x3cb8` | `0x3cc0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1bfb8
--  __TEXT.__objc_methlist: 0x2494
-+  __TEXT.__text: 0x1d314
-+  __TEXT.__objc_methlist: 0x24ac
-   __TEXT.__dlopen_cstrs: 0xb0
--  __TEXT.__const: 0xa0
--  __TEXT.__gcc_except_tab: 0x1d0
--  __TEXT.__cstring: 0x46e6
--  __TEXT.__oslogstring: 0x297f
--  __TEXT.__unwind_info: 0x6b0
-+  __TEXT.__const: 0xb0
-+  __TEXT.__gcc_except_tab: 0x208
-+  __TEXT.__cstring: 0x4981
-+  __TEXT.__oslogstring: 0x2c72
-+  __TEXT.__unwind_info: 0x6e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x728
-+  __DATA_CONST.__const: 0x858
-   __DATA_CONST.__objc_classlist: 0xe0
-   __DATA_CONST.__objc_protolist: 0xb8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x12e0
-+  __DATA_CONST.__objc_selrefs: 0x1308
-   __DATA_CONST.__objc_protorefs: 0x58
-   __DATA_CONST.__objc_superrefs: 0xc8
-   __DATA_CONST.__objc_arraydata: 0x20
-   __DATA_CONST.__got: 0x1e8
--  __AUTH_CONST.__const: 0x80
--  __AUTH_CONST.__cfstring: 0x1980
--  __AUTH_CONST.__objc_const: 0x3cb8
-+  __AUTH_CONST.__const: 0xc0
-+  __AUTH_CONST.__cfstring: 0x1a20
-+  __AUTH_CONST.__objc_const: 0x3cc0
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0x5a0
-   __DATA.__objc_ivar: 0x2c0
-   __DATA.__data: 0x8b0
--  __DATA.__bss: 0x10
-   __DATA_DIRTY.__objc_data: 0x320
--  __DATA_DIRTY.__bss: 0x48
-+  __DATA_DIRTY.__bss: 0x58
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+-3600.70.8.0.0
++3600.70.20.1.1
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 718
--  Symbols:   2539
--  CStrings:  785
+-  Symbols:   1454
+-  CStrings:  582
 +  Functions: 734
-+  Symbols:   2586
-+  CStrings:  811
- 
-Sections:
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   1471
++  CStrings:  603
 Symbols:
 + +[LBLocalSpeechRecognitionSettings companionSettingsWithRequestId:inputOrigin:]
 + -[LBAudioStreamConsumer _serviceWithErrorHandler:]
@@ -105,11 +64,6 @@ Symbols:
 + ___block_descriptor_66_e8_32s40s48s56s_e5_v8?0ls32l8s40l8s48l8s56l8
 + ___block_descriptor_73_e8_32s40s48bs56r64w_e5_v8?0lw64l8r56l8s32l8s48l8s40l8
 + ___block_descriptor_82_e8_32s40s48s56s_e5_v8?0ls32l8s40l8s48l8s56l8
-+ _objc_msgSend$_serviceWithErrorHandler:
-+ _objc_msgSend$remoteObjectProxyWithErrorHandler:
-+ _objc_msgSend$startCompanionRequestId:withStandaloneDisabled:inputOrigin:
-+ _objc_msgSend$stopConsumingForRequestId:completion:
-+ _objc_msgSend$streamInfo
 + _objc_unsafeClaimAutoreleasedReturnValue
 - -[LBAudioStreamConsumer _service]
 - GCC_except_table163
@@ -148,5 +102,4 @@ CStrings:
 + "[speechRecognitionMode = %@]"
 + "v16@?0@\"NSError\"8"
 - "[speechRecognitionMode = %lu]"
-
 ```

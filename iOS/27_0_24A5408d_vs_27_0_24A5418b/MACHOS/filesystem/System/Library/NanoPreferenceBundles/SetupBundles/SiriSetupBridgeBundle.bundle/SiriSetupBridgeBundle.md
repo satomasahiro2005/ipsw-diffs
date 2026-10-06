@@ -2,92 +2,56 @@
 
 > `/System/Library/NanoPreferenceBundles/SetupBundles/SiriSetupBridgeBundle.bundle/SiriSetupBridgeBundle`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4018` | `0x91ac` | **`+0x5194`** |
+| `__TEXT.__cstring` | `0x1b7` | `0x541` | **`+0x38a`** |
+| `__TEXT.__auth_stubs` | `0x5e0` | `0x930` | **`+0x350`** |
+| `__TEXT.__objc_methname` | `0x6e7` | `0xa1b` | **`+0x334`** |
+| `__TEXT.__objc_stubs` | `0x3c0` | `0x5a0` | **`+0x1e0`** |
+| `__TEXT.__objc_methlist` | `0x24c` | `0x424` | **`+0x1d8`** |
+| `__DATA_CONST.__const` | `0x260` | `0x430` | **`+0x1d0`** |
+| `__DATA.__objc_data` | `0x258` | `0x410` | **`+0x1b8`** |
+| `__DATA_CONST.__auth_got` | `0x2f8` | `0x4a0` | **`+0x1a8`** |
+| `__TEXT.__oslogstring` | `0x41d` | `0x5c3` | **`+0x1a6`** |
+| `__DATA.__objc_const` | `0x340` | `0x488` | **`+0x148`** |
+| `__DATA.__bss` | `0x190` | `0x68` | **`-0x128`** |
+| `__TEXT.__unwind_info` | `0x168` | `0x290` | **`+0x128`** |
+| `__TEXT.__constg_swiftt` | `0x120` | `0x244` | **`+0x124`** |
+| `__DATA.__objc_selrefs` | `0x200` | `0x310` | **`+0x110`** |
+| `__DATA.__data` | `0x1c0` | `0x288` | **`+0xc8`** |
+| `__TEXT.__swift5_capture` | `0x10` | `0xc0` | **`+0xb0`** |
+| `__TEXT.__swift5_typeref` | `0x108` | `0x199` | **`+0x91`** |
+| `__DATA_CONST.__got` | `0xa8` | `0x120` | **`+0x78`** |
+| `__TEXT.__objc_methtype` | `0x1ea` | `0x24c` | **`+0x62`** |
+| `__TEXT.__objc_classname` | `0xd8` | `0x12c` | **`+0x54`** |
+| `__TEXT.__swift5_reflstr` | `0x72` | `0xa7` | **`+0x35`** |
+| `__TEXT.__swift5_fieldmd` | `0x6c` | `0xa0` | **`+0x34`** |
+| `__DATA_CONST.__auth_ptr` | `0x80` | `0x60` | **`-0x20`** |
+| `__DATA_CONST.__objc_protolist` | `0x30` | `0x40` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0xc` | `—` | **`-0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x18` | `0x20` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x18` | `0x20` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0xc` | `0x10` | **`+0x4`** |
+| `__TEXT.__const` | `0x17a` | `0x178` | **`-0x2`** |
+
+### Other Changes
+
 ```diff
 
 -1359.7.0.0.0
--  __TEXT.__text: 0x4018
--  __TEXT.__auth_stubs: 0x5e0
--  __TEXT.__objc_stubs: 0x3c0
--  __TEXT.__objc_methlist: 0x24c
--  __TEXT.__const: 0x17a
--  __TEXT.__cstring: 0x1b7
--  __TEXT.__objc_classname: 0xd8
--  __TEXT.__objc_methtype: 0x1ea
--  __TEXT.__swift5_typeref: 0x108
--  __TEXT.__swift5_capture: 0x10
--  __TEXT.__objc_methname: 0x6e7
--  __TEXT.__oslogstring: 0x41d
--  __TEXT.__constg_swiftt: 0x120
--  __TEXT.__swift5_reflstr: 0x72
--  __TEXT.__swift5_fieldmd: 0x6c
--  __TEXT.__swift5_proto: 0xc
--  __TEXT.__swift5_types: 0xc
--  __TEXT.__unwind_info: 0x168
--  __DATA_CONST.__const: 0x260
--  __DATA_CONST.__objc_classlist: 0x18
--  __DATA_CONST.__objc_protolist: 0x30
 +1359.9.0.0.0
-+  __TEXT.__text: 0x91ac
-+  __TEXT.__auth_stubs: 0x930
-+  __TEXT.__objc_stubs: 0x5a0
-+  __TEXT.__objc_methlist: 0x424
-+  __TEXT.__const: 0x178
-+  __TEXT.__cstring: 0x541
-+  __TEXT.__objc_classname: 0x12c
-+  __TEXT.__objc_methtype: 0x24c
-+  __TEXT.__swift5_typeref: 0x199
-+  __TEXT.__swift5_capture: 0xc0
-+  __TEXT.__objc_methname: 0xa1b
-+  __TEXT.__oslogstring: 0x5c3
-+  __TEXT.__constg_swiftt: 0x244
-+  __TEXT.__swift5_reflstr: 0xa7
-+  __TEXT.__swift5_fieldmd: 0xa0
-+  __TEXT.__swift5_types: 0x10
-+  __TEXT.__unwind_info: 0x290
-+  __DATA_CONST.__const: 0x430
-+  __DATA_CONST.__objc_classlist: 0x20
-+  __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__auth_got: 0x2f8
--  __DATA_CONST.__got: 0xa8
--  __DATA_CONST.__auth_ptr: 0x80
--  __DATA.__objc_const: 0x340
--  __DATA.__objc_selrefs: 0x200
--  __DATA.__objc_data: 0x258
--  __DATA.__data: 0x1c0
-+  __DATA_CONST.__objc_protorefs: 0x20
-+  __DATA_CONST.__auth_got: 0x4a0
-+  __DATA_CONST.__got: 0x120
-+  __DATA_CONST.__auth_ptr: 0x60
-+  __DATA.__objc_const: 0x488
-+  __DATA.__objc_selrefs: 0x310
-+  __DATA.__objc_data: 0x410
-+  __DATA.__data: 0x288
-   __DATA.__common: 0x18
--  __DATA.__bss: 0x190
-+  __DATA.__bss: 0x68
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/PrivateFrameworks/AppleIDSSOAuthentication.framework/AppleIDSSOAuthentication
-   - /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
-   - /System/Library/PrivateFrameworks/BridgePreferences.framework/BridgePreferences
--  - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/NanoRegistry.framework/NanoRegistry
-   - /System/Library/PrivateFrameworks/SiriSetup.framework/SiriSetup
-   - /System/Library/PrivateFrameworks/SpeakerRecognition.framework/SpeakerRecognition
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+-  - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
+
 -  Functions: 87
 -  Symbols:   118
 -  CStrings:  133
 +  Functions: 190
 +  Symbols:   151
 +  CStrings:  202
- 
 Symbols:
 + _BPSPairingFlowIsTinkerPairing
 + _OBJC_CLASS_$_AFSettingsConnection

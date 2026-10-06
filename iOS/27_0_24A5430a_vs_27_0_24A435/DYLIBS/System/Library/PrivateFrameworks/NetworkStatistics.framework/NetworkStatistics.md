@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/NetworkStatistics.framework/NetworkStatistics`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_3 : 16 -> 12

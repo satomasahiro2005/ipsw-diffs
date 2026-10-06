@@ -2,24 +2,30 @@
 
 > `/System/Library/CoreServices/LiveTranscriptionUI.app/LiveTranscriptionUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x41e88` | `0x41e84` | **`-0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x41e88
-+  __TEXT.__text: 0x41e84
-   __TEXT.__auth_stubs: 0x1dd0
-   __TEXT.__objc_stubs: 0xb60
-   __TEXT.__objc_methlist: 0x918
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
+-579.1.0.0.0
++581.0.0.0.0
 Functions:
 ~ sub_100031180 : 416 -> 412
-
 ```

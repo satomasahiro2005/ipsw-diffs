@@ -2,7 +2,7 @@
 
 > `/System/Library/NanoTimeKit/FaceBundles/NTKWarlockFaceBundle.bundle/warlock.metallib`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__compute`
 - `__TEXT.__descriptor`

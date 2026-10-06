@@ -2,77 +2,43 @@
 
 > `/System/Library/Frameworks/ColorSync.framework/ColorSync`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x64538` | `0x682f4` | **`+0x3dbc`** |
+| `__TEXT.__eh_frame` | `0x130` | `0x790` | **`+0x660`** |
+| `__TEXT.__gcc_except_tab` | `0xeb0` | `0x14ac` | **`+0x5fc`** |
+| `__AUTH_CONST.__auth_got` | `0x660` | `0x7e8` | **`+0x188`** |
+| `__TEXT.__unwind_info` | `0x1168` | `0x12a8` | **`+0x140`** |
+| `__TEXT.__cstring` | `0x7086` | `0x710c` | **`+0x86`** |
+| `__AUTH_CONST.__const` | `0x7358` | `0x73b8` | **`+0x60`** |
+| `__TEXT.__constg_swiftt` | `0x1a4` | `0x204` | **`+0x60`** |
+| `__DATA.__data` | `0x918` | `0x970` | **`+0x58`** |
+| `__TEXT.__swift5_typeref` | `0x114` | `0x156` | **`+0x42`** |
+| `__TEXT.__const` | `0x122880` | `0x1228c0` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0xd8` | `0x110` | **`+0x38`** |
+| `__DATA.__bss` | `0x1180` | `0x11b0` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `—` | `0x30` | **`+0x30`** |
+| `__DATA_DIRTY.__bss` | `0x6b0` | `0x680` | **`-0x30`** |
+| `__AUTH_CONST.__cfstring` | `0x4dc0` | `0x4de0` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x34` | `0x3c` | **`+0x8`** |
+| `__TEXT.__objc_methname` | `—` | `0x0` | **`+0x0`** |
+| `__TEXT.__objc_stubs` | `—` | `0x0` | **`+0x0`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x64538
--  __TEXT.__const: 0x122880
--  __TEXT.__constg_swiftt: 0x1a4
--  __TEXT.__swift5_typeref: 0x114
-+  __TEXT.__text: 0x682f4
-+  __TEXT.__const: 0x1228c0
-+  __TEXT.__constg_swiftt: 0x204
-+  __TEXT.__swift5_typeref: 0x156
-   __TEXT.__swift5_fieldmd: 0x270
--  __TEXT.__swift5_types: 0x34
-+  __TEXT.__swift5_types: 0x3c
-+  __TEXT.__gcc_except_tab: 0x14ac
-   __TEXT.__swift5_reflstr: 0x2b5
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_proto: 0x4
--  __TEXT.__gcc_except_tab: 0xeb0
--  __TEXT.__cstring: 0x7086
-+  __TEXT.__cstring: 0x710c
-   __TEXT.__oslogstring: 0xb
--  __TEXT.__unwind_info: 0x1168
--  __TEXT.__eh_frame: 0x130
-+  __TEXT.__unwind_info: 0x12a8
-+  __TEXT.__eh_frame: 0x790
-+  __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-+  __TEXT.__objc_methname: 0x0
-   __DATA_CONST.__const: 0x1d00
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__got: 0xd8
--  __AUTH_CONST.__const: 0x7358
--  __AUTH_CONST.__cfstring: 0x4dc0
-+  __DATA_CONST.__objc_selrefs: 0x30
-+  __DATA_CONST.__got: 0x110
-+  __AUTH_CONST.__const: 0x73b8
-+  __AUTH_CONST.__cfstring: 0x4de0
-   __AUTH_CONST.__weak_auth_got: 0x20
--  __AUTH_CONST.__auth_got: 0x660
--  __DATA.__data: 0x918
--  __DATA.__bss: 0x1180
-+  __AUTH_CONST.__auth_got: 0x7e8
-+  __DATA.__data: 0x970
-+  __DATA.__bss: 0x11b0
-   __DATA_DIRTY.__data: 0x40
--  __DATA_DIRTY.__bss: 0x6b0
-+  __DATA_DIRTY.__bss: 0x680
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+-3922.0.0.0.0
++3924.1.0.0.0
 
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 1701
--  Symbols:   4771
--  CStrings:  1523
+-  Symbols:   3019
+-  CStrings:  901
 +  Functions: 1727
-+  Symbols:   4844
-+  CStrings:  1526
- 
-Sections:
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
++  Symbols:   3082
++  CStrings:  903
 Symbols:
 + GCC_except_table0
 + GCC_except_table1
@@ -148,12 +114,6 @@ Symbols:
 + _malloc_size
 + _objc_allocWithZone
 + _objc_msgSend
-+ _objc_msgSend$__swift_objectForKeyedSubscript:
-+ _objc_msgSend$__swift_setObject:forKeyedSubscript:
-+ _objc_msgSend$boolValue
-+ _objc_msgSend$floatValue
-+ _objc_msgSend$init
-+ _objc_msgSend$unsignedCharValue
 + _objc_opt_self
 + _objc_release_x19
 + _objc_release_x20
@@ -236,5 +196,4 @@ Symbols:
 CStrings:
 + "Headroom Adaptive Gain Curve"
 + "[176274466]fix_hagc_control_point_monotonicity: truncating %zu trailing point(s) after T(X[%zu]=%g)>=1.0"
-
 ```

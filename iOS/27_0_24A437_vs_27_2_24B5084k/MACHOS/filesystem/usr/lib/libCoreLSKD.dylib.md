@@ -2,19 +2,20 @@
 
 > `/usr/lib/libCoreLSKD.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x111450` | `0x111454` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 0.0.0.0.0
--  __TEXT.__text: 0x11167c
-+  __TEXT.__text: 0x111680
-   __TEXT.__auth_stubs: 0x10
-   __TEXT.__const: 0x991a0
-   __TEXT.__unwind_info: 0x168
+```text
 Functions:
-~ _BBdyFX9JObVXUh8aGhB0aD3 : 361688 -> 361692
+~ _BBdyFX9JObVXUh8aGhB0aD3 : 296804 -> 296808
 ```

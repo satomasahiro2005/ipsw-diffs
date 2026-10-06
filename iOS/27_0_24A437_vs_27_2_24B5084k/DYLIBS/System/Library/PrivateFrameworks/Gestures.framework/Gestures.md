@@ -2,96 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/Gestures.framework/Gestures`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x482018` | `0x4c7158` | **`+0x45140`** |
+| `__DATA.__bss` | `0x2f950` | `0x34cd0` | **`+0x5380`** |
+| `__TEXT.__const` | `0x1f5b0` | `0x229b8` | **`+0x3408`** |
+| `__TEXT.__eh_frame` | `0x35098` | `0x381cc` | **`+0x3134`** |
+| `__AUTH_CONST.__const` | `0x1a9d0` | `0x1cea8` | **`+0x24d8`** |
+| `__TEXT.__swift5_typeref` | `0x2413d` | `0x25a64` | **`+0x1927`** |
+| `__TEXT.__unwind_info` | `0x10310` | `0x11358` | **`+0x1048`** |
+| `__TEXT.__swift5_fieldmd` | `0x6a10` | `0x7670` | **`+0xc60`** |
+| `__DATA.__data` | `0xa0a8` | `0xac80` | **`+0xbd8`** |
+| `__TEXT.__constg_swiftt` | `0x92e0` | `0x9e82` | **`+0xba2`** |
+| `__TEXT.__cstring` | `0x1321d` | `0x13d24` | **`+0xb07`** |
+| `__TEXT.__swift5_reflstr` | `0x4be4` | `0x527e` | **`+0x69a`** |
+| `__TEXT.__oslogstring` | `0x1100` | `0x15a0` | **`+0x4a0`** |
+| `__TEXT.__swift5_proto` | `0x28a8` | `0x2cfc` | **`+0x454`** |
+| `__AUTH.__data` | `0x5008` | `0x5338` | **`+0x330`** |
+| `__AUTH_CONST.__objc_const` | `0x3698` | `0x3950` | **`+0x2b8`** |
+| `__TEXT.__swift5_types` | `0x934` | `0xa2c` | **`+0xf8`** |
+| `__TEXT.__swift5_assocty` | `0x2760` | `0x2808` | **`+0xa8`** |
+| `__TEXT.__swift5_capture` | `0x1b64` | `0x1bb8` | **`+0x54`** |
+| `__AUTH_CONST.__auth_got` | `0x12a0` | `0x1288` | **`-0x18`** |
+| `__DATA_CONST.__got` | `0x5a0` | `0x588` | **`-0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2a0` | `0x2b8` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x160` | `0x170` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `0x140` | `0x150` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x2b8` | `0x2b0` | **`-0x8`** |
+| `__DATA_DIRTY.__data` | `0x15b0` | `0x15b8` | **`+0x8`** |
+| `__DATA.__common` | `0x4d` | `0x48` | **`-0x5`** |
+
+### Other Changes
+
 ```diff
 
 -9127.0.84.1.111
--  __TEXT.__text: 0x47091c
 +9127.1.5.0.0
-+  __TEXT.__text: 0x4b4718
-   __TEXT.__objc_methlist: 0x614
--  __TEXT.__const: 0x1f5b0
-+  __TEXT.__const: 0x229b8
-   __TEXT.__gcc_except_tab: 0x10
--  __TEXT.__cstring: 0x1321d
-+  __TEXT.__cstring: 0x13d24
-   __TEXT.__dlopen_cstrs: 0x6d
--  __TEXT.__swift5_typeref: 0x2413d
--  __TEXT.__swift5_fieldmd: 0x6a10
--  __TEXT.__constg_swiftt: 0x92e0
-+  __TEXT.__constg_swiftt: 0x9e82
-+  __TEXT.__swift5_typeref: 0x25a64
-   __TEXT.__swift5_builtin: 0x26c
--  __TEXT.__swift5_reflstr: 0x4be4
--  __TEXT.__swift5_types: 0x934
--  __TEXT.__swift5_assocty: 0x2760
--  __TEXT.__swift5_proto: 0x28a8
--  __TEXT.__swift5_capture: 0x1b64
-+  __TEXT.__swift5_reflstr: 0x527e
-+  __TEXT.__swift5_fieldmd: 0x7670
-+  __TEXT.__swift5_types: 0xa2c
-+  __TEXT.__swift5_assocty: 0x2808
-+  __TEXT.__swift5_proto: 0x2cfc
-+  __TEXT.__swift5_capture: 0x1bb8
-+  __TEXT.__swift5_protos: 0x150
-   __TEXT.__swift5_mpenum: 0xec
--  __TEXT.__swift5_protos: 0x140
--  __TEXT.__oslogstring: 0x1100
-+  __TEXT.__oslogstring: 0x15a0
-   __TEXT.__swift_as_entry: 0x20
-   __TEXT.__swift_as_ret: 0x20
-   __TEXT.__swift_as_cont: 0x34
-   __TEXT.__swift5_types2: 0xc
--  __TEXT.__unwind_info: 0x14518
--  __TEXT.__eh_frame: 0x35138
-+  __TEXT.__unwind_info: 0x163c0
-+  __TEXT.__eh_frame: 0x3826c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2b8
--  __DATA_CONST.__objc_classlist: 0x160
-+  __DATA_CONST.__const: 0x2b0
-+  __DATA_CONST.__objc_classlist: 0x170
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2a0
-+  __DATA_CONST.__objc_selrefs: 0x2b8
-   __DATA_CONST.__objc_protorefs: 0x38
--  __DATA_CONST.__got: 0x5a0
--  __AUTH_CONST.__const: 0x1a9d0
--  __AUTH_CONST.__objc_const: 0x3698
--  __AUTH_CONST.__auth_got: 0x12a0
-+  __DATA_CONST.__got: 0x588
-+  __AUTH_CONST.__const: 0x1cea8
-+  __AUTH_CONST.__objc_const: 0x3950
-+  __AUTH_CONST.__auth_got: 0x1288
-   __AUTH.__objc_data: 0x90
--  __AUTH.__data: 0x5008
--  __DATA.__data: 0xa0a8
--  __DATA.__common: 0x4d
-+  __AUTH.__data: 0x5338
-+  __DATA.__data: 0xac80
-+  __DATA.__common: 0x48
-   __DATA_DIRTY.__objc_data: 0x228
--  __DATA_DIRTY.__data: 0x15b0
-+  __DATA_DIRTY.__data: 0x15b8
-   __DATA_DIRTY.__bss: 0x1200
-   __DATA_DIRTY.__common: 0x44
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 18172
--  Symbols:   4116
+-  Symbols:   4092
 -  CStrings:  565
 +  Functions: 19668
-+  Symbols:   4414
++  Symbols:   4387
 +  CStrings:  590
- 
 Symbols:
 + _CFBooleanGetTypeID
 + _CFGetTypeID
@@ -274,9 +230,6 @@ Symbols:
 + _get_witness_table 8Gestures16GestureComponentRzlAA12DiscreteGateVyxGAA0dC0HPyHC
 + _get_witness_table 8Gestures17EnvironmentWriterVyAA07RebaserB5ValueVAA21MapTransformComponentVyAGyAA05OneOfH0VyACyAA16ActiveEventTypesVAA03PaneH0VyAA08VelocityH0VyAA09ThresholdH0VyAA015TrackedCentroidH0VyAA0E10StabilizerVyAA22SeparationDistanceGateVyAA010ExpirationH0VyAA07TimeoutH033_834F97C056057EAA3E17D92190D7BF0CLLVyAA015OutputCombiningH0VyAYyA0_yAA015DynamicCombinerH0VyAA12RegionFilterVyAA0L6FilterVyAA0L6SourceVyAA05TouchL0VGAA21NoCodingConfigurationVGGGAA19CountGrowthResolverVyA12_GGGGAA0E16AwaitingResolverOySayA12_GGGGGGGGSo8CGVectorVGGAA02NoG0VyAkA0nE0VGGACyAkMyAOyAQyAA0q8LocationH0VyAA13ChangeTrackerVyAA20RequiredButtonFilterVyA6_yA8_yA10_yAA05MouseL0VGA15_GGGGGGA36_GGA43_GGAA03GetijE0VyA42_GGAA02TonhE0VGA40_yAeA0nhE0VGGAA07GestureH0HPyHC
 + _get_witness_table 8Gestures21MapTransformComponentVyAA09ThresholdD0VyACyAA06ReduceD0VyAA16MotionClassifierVyAA0G7SamplerVyAA06FingerH0VyAA15ValueStabilizerVyACyAA010ExpirationD0VyAA07TimeoutD033_834F97C056057EAA3E17D92190D7BF0CLLVyAA015OutputCombiningD0VyAQyATyAA015DynamicCombinerD0VyAA11EventSourceVyAA05TouchZ0VGGAA19CountGrowthResolverVyA0_GGGGAA0K16AwaitingResolverOySayA0_GGGGAA20FilterTerminalEventsVyA0_GGGGGGAA0G11AccumulatorVGAA019ClassifyAccumulatedG0VGGAA02Tog7TrackedC0VGAA07GestureD0HPyHC
-+ _objc_msgSend$boolValue
-+ _objc_msgSend$count
-+ _objc_msgSend$doubleValue
 + _symbolic $s8Gestures16FingerIdentifiedP
 + _symbolic $s8Gestures17ExternalDataValue33_024D19675B6F9784084A29A519628DADLLP
 + _symbolic $s8Gestures19EmptyValueProvidingP

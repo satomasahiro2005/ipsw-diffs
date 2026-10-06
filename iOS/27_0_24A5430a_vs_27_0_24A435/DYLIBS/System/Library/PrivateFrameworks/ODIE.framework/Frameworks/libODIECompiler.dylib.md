@@ -2,20 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/ODIE.framework/Frameworks/libODIECompiler.dylib`
 
-```diff
+### Section Size Changes
 
- 3600.83.2.11.1
--  __TEXT.__text: 0xc653e8
-+  __TEXT.__text: 0xc64de0
-   __TEXT.__init_offsets: 0x30
-   __TEXT.__const: 0x2a1c
-   __TEXT.__oslogstring: 0x3b
-   __TEXT.__cstring: 0xab8e0
--  __TEXT.__unwind_info: 0x2cf30
-+  __TEXT.__unwind_info: 0x2cf28
-   __TEXT.__eh_frame: 0x128
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x27b8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc653e8` | `0xc64de0` | **`-0x608`** |
+| `__TEXT.__unwind_info` | `0x2cf30` | `0x2cf28` | **`-0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNK4ODIE12Registration18KernelRegistryImpl12tryGetKernelENS_6Common9StringRefE : 236 -> 232
 ~ __ZN4ODIE12Registration14KernelRegistry9addKernelEONS0_6KernelEb : 1100 -> 1104

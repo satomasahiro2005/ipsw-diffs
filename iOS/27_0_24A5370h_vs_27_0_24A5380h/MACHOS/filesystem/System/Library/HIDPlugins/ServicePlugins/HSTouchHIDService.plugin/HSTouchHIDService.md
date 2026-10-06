@@ -2,73 +2,53 @@
 
 > `/System/Library/HIDPlugins/ServicePlugins/HSTouchHIDService.plugin/HSTouchHIDService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd2324` | `0xcf708` | **`-0x2c1c`** |
+| `__TEXT.__cstring` | `0xde34` | `0xc146` | **`-0x1cee`** |
+| `__TEXT.__unwind_info` | `0x4998` | `0x48f8` | **`-0xa0`** |
+| `__TEXT.__oslogstring` | `0x4bd5` | `0x4c4e` | **`+0x79`** |
+| `__TEXT.__const` | `0x3e2e` | `0x3e7e` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x280` | `0x2c8` | **`+0x48`** |
+| `__DATA_CONST.__const` | `0x1d90` | `0x1db8` | **`+0x28`** |
+| `__DATA_CONST.__cfstring` | `0x7580` | `0x7560` | **`-0x20`** |
+| `__TEXT.__gcc_except_tab` | `0xeac0` | `0xeaa4` | **`-0x1c`** |
+| `__TEXT.__auth_stubs` | `0x1930` | `0x1920` | **`-0x10`** |
+| `__DATA_CONST.__auth_got` | `0xca8` | `0xca0` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__init_offsets`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xd2324
--  __TEXT.__auth_stubs: 0x1930
-+  __TEXT.__text: 0xcf708
-+  __TEXT.__auth_stubs: 0x1920
-   __TEXT.__objc_stubs: 0x7ae0
-   __TEXT.__init_offsets: 0x150c
-   __TEXT.__objc_methlist: 0x5558
--  __TEXT.__const: 0x3e2e
--  __TEXT.__gcc_except_tab: 0xeac0
--  __TEXT.__cstring: 0xde34
--  __TEXT.__oslogstring: 0x4bd5
-+  __TEXT.__const: 0x3e7e
-+  __TEXT.__gcc_except_tab: 0xeaa4
-+  __TEXT.__cstring: 0xc146
-+  __TEXT.__oslogstring: 0x4c4e
-   __TEXT.__objc_methname: 0x908a
-   __TEXT.__objc_classname: 0xbb0
-   __TEXT.__objc_methtype: 0x58b1
--  __TEXT.__unwind_info: 0x4998
--  __DATA_CONST.__const: 0x1d90
--  __DATA_CONST.__cfstring: 0x7580
-+  __TEXT.__unwind_info: 0x48f8
-+  __DATA_CONST.__const: 0x1db8
-+  __DATA_CONST.__cfstring: 0x7560
-   __DATA_CONST.__objc_classlist: 0x3c8
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x60
+-10100.39.0.0.0
++10100.40.0.0.0
 
-   __DATA_CONST.__objc_arrayobj: 0x168
-   __DATA_CONST.__objc_floatobj: 0x20
-   __DATA_CONST.__objc_dictobj: 0x230
--  __DATA_CONST.__auth_got: 0xca8
--  __DATA_CONST.__got: 0x280
-+  __DATA_CONST.__auth_got: 0xca0
-+  __DATA_CONST.__got: 0x2c8
-   __DATA.__objc_const: 0x9eb0
-   __DATA.__objc_selrefs: 0x2430
-   __DATA.__objc_ivar: 0x730
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 5289
--  Symbols:   29607
--  CStrings:  5188
+-  Symbols:   7779
+-  CStrings:  4205
 +  Functions: 5284
-+  Symbols:   29594
-+  CStrings:  5166
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__objc_methlist : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
++  Symbols:   7772
++  CStrings:  4184
 Symbols:
 + GCC_except_table101
 + GCC_except_table104
@@ -425,5 +405,4 @@ CStrings:
 - "10000.39"
 - "DefaultMultitouchProperties"
 - "Setting up async IO queue"
-
 ```

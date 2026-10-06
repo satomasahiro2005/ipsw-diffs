@@ -2,36 +2,15 @@
 
 > `/usr/lib/libobjc.A.dylib`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x3d000
-+  __TEXT.__text: 0x3c8a0
-   __TEXT.__lazy_helpers: 0xa8
-   __TEXT.__objc_methlist: 0x5ec
-   __TEXT.__const: 0x4130
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__objc_opt_ro : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__dof_objc_runt : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_nlclslist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_scoffs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__lazy_load_got : content changed
-~ __AUTH_CONST.__auth_got : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__objc_opt_ptrs : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3d000` | `0x3c8a0` | **`-0x760`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _objc_retainAutoreleasedReturnValue : 156 -> 160
 ~ __objc_rootAllocWithZone : 328 -> 324
@@ -433,5 +412,4 @@ Functions:
 ~ -[NSObject doesNotRecognizeSelector:] : 68 -> 80
 ~ +[NSObject methodSignatureForSelector:] : 36 -> 24
 ~ -[NSObject methodSignatureForSelector:] : 24 -> 32
-
 ```

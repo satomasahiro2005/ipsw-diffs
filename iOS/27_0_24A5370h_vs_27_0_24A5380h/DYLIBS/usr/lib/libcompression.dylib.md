@@ -2,19 +2,18 @@
 
 > `/usr/lib/libcompression.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x64e0c` | `0x64b88` | **`-0x284`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x64e0c
-+  __TEXT.__text: 0x64b88
-   __TEXT.__const: 0x76e91
-   __TEXT.__cstring: 0x2ec
-   __TEXT.__unwind_info: 0x710
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__const : content changed
-~ __DATA.__data : content changed
+-212.0.0.0.1
++212.0.1.0.0
 Functions:
 ~ _DecodeVarLenUint8 : 456 -> 444
 ~ _BrotliBuildHuffmanTable : 560 -> 568
@@ -27,7 +26,7 @@ Functions:
 ~ _build_tree : 1168 -> 1184
 ~ _zlib_stream_get_encode_state_size : 60 -> 40
 ~ _lzbitmap_decode : 2212 -> 2220
-~ sub_2be5e57bc -> sub_2bf24d744 : 4 -> 12
+~ sub_2be4d67bc -> sub_2bf15e744 : 4 -> 12
 ~ _zero_coder_decode : 280 -> 276
 ~ _zero_coder_encode : 320 -> 332
 ~ _CountsCreateWithBuffer : 404 -> 396
@@ -56,5 +55,4 @@ Functions:
 ~ _crc32 : 808 -> 828
 ~ _yzip_plane_encoder_phase1 : 1868 -> 1864
 ~ _deflate_rle : 828 -> 832
-
 ```

@@ -2,26 +2,18 @@
 
 > `com.apple.driver.usb.AppleUSBCommon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x5b40` | `0x5b50` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__cstring: 0x365
-   __TEXT.__const: 0x18
-   __TEXT.__os_log: 0xef
--  __TEXT_EXEC.__text: 0x5b40
-+  __TEXT_EXEC.__text: 0x5b50
-   __TEXT_EXEC.__auth_stubs: 0x3a0
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x110
-Sections:
-~ __DATA.__data : content changed
-~ __DATA_CONST.__mod_init_func : content changed
-~ __DATA_CONST.__mod_term_func : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__kalloc_type : content changed
-~ __DATA_CONST.__kalloc_var : content changed
-~ __DATA_CONST.__auth_got : content changed
-~ __DATA_CONST.__got : content changed
+-1617.0.1.0.0
++1617.0.3.0.0
 Functions:
 ~ __ZN24AppleUSBRequestCompleter20completeRequestQueueEP11queue_entry : 2044 -> 2060
-
 ```

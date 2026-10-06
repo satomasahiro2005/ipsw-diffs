@@ -2,119 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/WorkoutUI.framework/WorkoutUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_catlist2`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH.__objc_data`
-- `__DATA.__objc_stublist`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x56a830` | `0x575b94` | **`+0xb364`** |
+| `__TEXT.__swift5_typeref` | `0xaac92` | `0xab46a` | **`+0x7d8`** |
+| `__AUTH_CONST.__const` | `0x20f98` | `0x21528` | **`+0x590`** |
+| `__TEXT.__const` | `0x3bee4` | `0x3c384` | **`+0x4a0`** |
+| `__DATA.__bss` | `0x1dac0` | `0x1df40` | **`+0x480`** |
+| `__TEXT.__oslogstring` | `0x92d2` | `0x9682` | **`+0x3b0`** |
+| `__TEXT.__eh_frame` | `0x8520` | `0x88b0` | **`+0x390`** |
+| `__AUTH.__data` | `0xa250` | `0xa4c0` | **`+0x270`** |
+| `__TEXT.__unwind_info` | `0xf388` | `0xf5d8` | **`+0x250`** |
+| `__AUTH_CONST.__objc_const` | `0xc248` | `0xc440` | **`+0x1f8`** |
+| `__TEXT.__swift5_capture` | `0x6fd0` | `0x718c` | **`+0x1bc`** |
+| `__TEXT.__constg_swiftt` | `0x113d0` | `0x11544` | **`+0x174`** |
+| `__TEXT.__cstring` | `0xef4d` | `0xf07d` | **`+0x130`** |
+| `__TEXT.__swift5_fieldmd` | `0xcad8` | `0xcbfc` | **`+0x124`** |
+| `__TEXT.__swift5_reflstr` | `0x11084` | `0x11194` | **`+0x110`** |
+| `__DATA.__data` | `0x16a98` | `0x16b88` | **`+0xf0`** |
+| `__AUTH_CONST.__auth_got` | `0x65d0` | `0x6610` | **`+0x40`** |
+| `__TEXT.__swift5_proto` | `0xf24` | `0xf4c` | **`+0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x588` | `0x5a0` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x3900` | `0x3918` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0xd28` | `0xd40` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x424` | `0x438` | **`+0x14`** |
+| `__TEXT.__swift_as_cont` | `0x3a8` | `0x3bc` | **`+0x14`** |
+| `__TEXT.__swift_as_entry` | `0x1b8` | `0x1c4` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `0x154` | `0x160` | **`+0xc`** |
+| `__DATA.__common` | `0x508` | `0x510` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x3140` | `0x3148` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2908` | `0x2910` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x30` | `0x38` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x54` | `0x58` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -2027.0.132.0.0
--  __TEXT.__text: 0x56a830
 +2027.0.137.0.0
-+  __TEXT.__text: 0x575b94
-   __TEXT.__objc_methlist: 0x3520
--  __TEXT.__const: 0x3bee4
--  __TEXT.__cstring: 0xef4d
--  __TEXT.__oslogstring: 0x92d2
-+  __TEXT.__const: 0x3c384
-+  __TEXT.__cstring: 0xf07d
-+  __TEXT.__oslogstring: 0x9682
-   __TEXT.__gcc_except_tab: 0x230
--  __TEXT.__swift5_typeref: 0xaac92
--  __TEXT.__swift5_capture: 0x6fd0
--  __TEXT.__constg_swiftt: 0x113d0
--  __TEXT.__swift5_reflstr: 0x11084
--  __TEXT.__swift5_assocty: 0x3900
--  __TEXT.__swift5_fieldmd: 0xcad8
--  __TEXT.__swift5_builtin: 0x424
--  __TEXT.__swift5_proto: 0xf24
--  __TEXT.__swift5_types: 0xd28
--  __TEXT.__swift_as_entry: 0x1b8
--  __TEXT.__swift_as_cont: 0x3a8
--  __TEXT.__swift_as_ret: 0x154
--  __TEXT.__swift5_mpenum: 0x30
--  __TEXT.__swift5_protos: 0x54
--  __TEXT.__unwind_info: 0xf388
--  __TEXT.__eh_frame: 0x8520
-+  __TEXT.__swift5_typeref: 0xab46a
-+  __TEXT.__swift5_capture: 0x718c
-+  __TEXT.__constg_swiftt: 0x11544
-+  __TEXT.__swift5_reflstr: 0x11194
-+  __TEXT.__swift5_assocty: 0x3918
-+  __TEXT.__swift5_fieldmd: 0xcbfc
-+  __TEXT.__swift5_builtin: 0x438
-+  __TEXT.__swift5_proto: 0xf4c
-+  __TEXT.__swift5_types: 0xd40
-+  __TEXT.__swift_as_entry: 0x1c4
-+  __TEXT.__swift_as_cont: 0x3bc
-+  __TEXT.__swift_as_ret: 0x160
-+  __TEXT.__swift5_mpenum: 0x38
-+  __TEXT.__swift5_protos: 0x58
-+  __TEXT.__unwind_info: 0xf5d8
-+  __TEXT.__eh_frame: 0x88b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x1038
--  __DATA_CONST.__objc_classlist: 0x588
-+  __DATA_CONST.__objc_classlist: 0x5a0
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_catlist2: 0x8
-   __DATA_CONST.__objc_protolist: 0x2a8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2908
-+  __DATA_CONST.__objc_selrefs: 0x2910
-   __DATA_CONST.__objc_protorefs: 0x150
-   __DATA_CONST.__objc_superrefs: 0xc8
--  __DATA_CONST.__got: 0x3140
--  __AUTH_CONST.__const: 0x20f98
-+  __DATA_CONST.__got: 0x3148
-+  __AUTH_CONST.__const: 0x21528
-   __AUTH_CONST.__cfstring: 0x7a0
--  __AUTH_CONST.__objc_const: 0xc248
-+  __AUTH_CONST.__objc_const: 0xc440
-   __AUTH_CONST.__objc_intobj: 0x48
--  __AUTH_CONST.__auth_got: 0x65d0
-+  __AUTH_CONST.__auth_got: 0x6610
-   __AUTH.__objc_data: 0x50d0
--  __AUTH.__data: 0xa250
-+  __AUTH.__data: 0xa4c0
-   __DATA.__objc_ivar: 0x154
--  __DATA.__data: 0x16a98
-+  __DATA.__data: 0x16b88
-   __DATA.__objc_stublist: 0x8
--  __DATA.__common: 0x508
--  __DATA.__bss: 0x1dac0
-+  __DATA.__common: 0x510
-+  __DATA.__bss: 0x1df40
-   __DATA_DIRTY.__objc_data: 0x1758
-   __DATA_DIRTY.__data: 0x4268
-   __DATA_DIRTY.__bss: 0x30b0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 29665
--  Symbols:   67154
+-  Symbols:   66147
 -  CStrings:  1981
 +  Functions: 29901
-+  Symbols:   67517
++  Symbols:   66509
 +  CStrings:  2000
- 
 Symbols:
 + _$s10Foundation12NotificationV6objectypSgvg
 + _$s10Foundation4UUIDVSgWOb
@@ -709,7 +644,6 @@ Symbols:
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE21navigationItemAdaptoryQrqd__AA012UINavigationeF0Rd__lFQOyAcAE0D5TitleyQrqd__SyRd__lFQOyAcAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAcAE5sheet11isPresented9onDismissAHQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAcAEAjklHQrAO_APqd__yctAaBRd__lFQOyAcAEAjklHQrAO_APqd__yctAaBRd__lFQOyAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE0D11Destination3for11destinationQrqd__m_qd_0_qd__ctSHRd__AaBRd_0_r0_lFQOyAcAEAwxYQrqd__m_qd_0_qd__ctSHRd__AaBRd_0_r0_lFQOyAA06ScrollC6ReaderVyAA06ScrollC0VyAcAE0P6Change2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA08ModifiedL0VyA6_yAA10LazyVStackVyAA05TupleL0VyAA9LazyVGridVyA10_y07WorkoutB028MediaConfigurationRoomButtonV_A13_019VoiceCompanionEntryC0VSgQPGG_AA6VStackVyA10_yA6_yA13_32WorkoutConfigurationFilterPickerVA13_11DebugBorderVGSg_A6_yA13_032NoWorkoutConfigurationsAvailableC0VAA14_PaddingLayoutVGSgA12_yAA7ForEachVySay11WorkoutCore20WorkoutConfigurationCG10Foundation4UUIDVAA6IDViewVyA6_yA6_yA6_yAA5GroupVyAA012_ConditionalL0VyA13_27RaceWorkoutConfigurationRowVAcAE5alert_AK7actionsQrqd___AOqd_0_yXEtSyRd__AaBRd_0_r0_lFQOyAcAE11contextMenu9menuItemsQrqd__yXE_tAaBRd__lFQOyAA6ButtonVyA13_23WorkoutConfigurationRowVG_A10_yA57_yAA5LabelVyAA4TextVAA5ImageVGGSg_A13_31ShareWorkoutConfigurationButtonVQPGQo__SSAcAE16keyboardShortcutyQrAA16KeyboardShortcutVFQOyA57_yA64_G_Qo_Qo_GGA32_GAA19_BackgroundModifierVyA6_yAA06_ShapeC0VyAA16RoundedRectangleVAA5ColorVGAA16_OverlayModifierVyAA017StrokeBorderShapeC0VyA88_A90_AA05EmptyC0VGGGGGA26_GA43_GGGA6_yA13_19CreateWorkoutButtonVAA16_FlexFrameLayoutVGSgQPGGQPGGA32_GA32_G_A39_SgQo_GG_A39_A6_yA6_yA47_yA49_yA49_yA13_024GoalWorkoutConfigurationC0VA13_028IntervalWorkoutConfigurationC0VGA49_yA13_025PacerWorkoutConfigurationC0VA13_024RaceWorkoutConfigurationC0VGGSgGAA30_EnvironmentKeyWritingModifierVyA13_28ConfigurationNavigationModelCSgGGA137_yA37_30WorkoutConfigurationDataSourceCSgGGQo__A13_018AlertConfigurationC5ModelCA13_018AlertConfigurationC0VQo__Qo__A6_yA13_10GoalPickerVA146_GQo__AA15NavigationStackVyAA14NavigationPathVA13_22MediaConfigurationRoomVGQo__AcAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQOyA13_29WorkoutBuddyConfigurationRoomV_A37_32WorkoutVoiceAvailabilityProviderCQo_Qo__AA0kE0VyytA13_20DeviceConnectionMenuVGQo__SSQo__A13_019MultilineNavigationE7AdapterVQo_HO
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAA15NavigationStackVyAA0H4PathVAcAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAA08ModifiedN0VyAOyAOyAOyAA4ListVys5NeverO07WorkoutB0022VoiceCompanionSettingsC0VGAA30_EnvironmentKeyWritingModifierVy12CoreGraphics7CGFloatVSgGGAA06_TraitxY0VyAA0p19SectionSpacingTraitW0VGGAYyAA0P14SectionSpacingVSgGGAT06InlineH8BarTitle33_B86241820663BC1B3220D14BE7395977LLVG_AA0M4ItemVyytAA6ButtonVyAA18DefaultButtonLabelVGGQo_G_SbQo_HO
 + _get_witness_table qd0__7SwiftUI4ViewHD4_AaBPAAE5sheet4item9onDismiss7contentQrAA7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lFQOyAcAE18navigationBarTitleyQrqd__SyRd__lFQOyAA06ScrollC0VyAcAE12scenePaddingyQrAA4EdgeO3SetVFQOyAA10LazyVStackVyAA12TupleContentVyAA08ModifiedV0VyAA4TextVAA16_FlexFrameLayoutVG_AA0S5VGridVyAA7ForEachVySaySo23FIUIWorkoutActivityTypeCGA10_07WorkoutB020GymKitActivityButton33_1A8F5B411870BA6CB91C574E5D11C98FLLVSgGGQPGG_Qo_G_SSQo__A12_22PresentedActivitySheetOAA012_ConditionalV0VyAA15NavigationStackVyAA14NavigationPathVA12_22MediaConfigurationRoomVGAcAE11environmentyQrAJRld__C11Observation10ObservableRd__lFQOyA12_29WorkoutBuddyConfigurationRoomV_11WorkoutCore32WorkoutVoiceAvailabilityProviderCQo_GQo_HO
-+ _objc_msgSend$checkInitiatorEligibilityWithHandler:
 + _symbolic $s9WorkoutUI08MirroredA12EndProvidingP
 + _symbolic Shy_____G 11SeymourCore13ContentRatingO
 + _symbolic _____ 9WorkoutUI017HealthKitMirroredA11EndProviderC

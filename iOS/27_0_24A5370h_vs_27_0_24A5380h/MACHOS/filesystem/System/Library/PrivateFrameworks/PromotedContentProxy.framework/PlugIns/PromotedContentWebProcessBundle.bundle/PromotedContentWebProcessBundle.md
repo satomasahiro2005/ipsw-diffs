@@ -2,70 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/PromotedContentProxy.framework/PlugIns/PromotedContentWebProcessBundle.bundle/PromotedContentWebProcessBundle`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x607c` | `0x5518` | **`-0xb64`** |
+| `__TEXT.__objc_stubs` | `0x1780` | `0x1360` | **`-0x420`** |
+| `__TEXT.__objc_methname` | `0x2993` | `0x25bf` | **`-0x3d4`** |
+| `__DATA_CONST.__cfstring` | `0xa20` | `0x720` | **`-0x300`** |
+| `__DATA.__objc_const` | `0x1298` | `0x10f0` | **`-0x1a8`** |
+| `__TEXT.__cstring` | `0x6a0` | `0x51d` | **`-0x183`** |
+| `__DATA.__objc_selrefs` | `0x968` | `0x818` | **`-0x150`** |
+| `__TEXT.__objc_methlist` | `0x1164` | `0x101c` | **`-0x148`** |
+| `__DATA.__objc_data` | `0x1e0` | `0x190` | **`-0x50`** |
+| `__DATA_CONST.__const` | `0x268` | `0x218` | **`-0x50`** |
+| `__DATA_CONST.__got` | `0xc8` | `0x88` | **`-0x40`** |
+| `__TEXT.__unwind_info` | `0x200` | `0x1c8` | **`-0x38`** |
+| `__TEXT.__objc_classname` | `0x1d8` | `0x1aa` | **`-0x2e`** |
+| `__TEXT.__objc_methtype` | `0xb0f` | `0xae2` | **`-0x2d`** |
+| `__DATA_CONST.__objc_catlist` | `0x18` | `—` | **`-0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x30` | `0x28` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x607c
-+  __TEXT.__text: 0x5518
-   __TEXT.__auth_stubs: 0x2f0
--  __TEXT.__objc_stubs: 0x1780
--  __TEXT.__objc_methlist: 0x1164
-+  __TEXT.__objc_stubs: 0x1360
-+  __TEXT.__objc_methlist: 0x101c
-   __TEXT.__const: 0x80
--  __TEXT.__cstring: 0x6a0
--  __TEXT.__objc_methname: 0x2993
-+  __TEXT.__cstring: 0x51d
-+  __TEXT.__objc_methname: 0x25bf
-   __TEXT.__oslogstring: 0x696
--  __TEXT.__objc_classname: 0x1d8
--  __TEXT.__objc_methtype: 0xb0f
--  __TEXT.__unwind_info: 0x200
--  __DATA_CONST.__const: 0x268
--  __DATA_CONST.__cfstring: 0xa20
--  __DATA_CONST.__objc_classlist: 0x30
--  __DATA_CONST.__objc_catlist: 0x18
-+  __TEXT.__objc_classname: 0x1aa
-+  __TEXT.__objc_methtype: 0xae2
-+  __TEXT.__unwind_info: 0x1c8
-+  __DATA_CONST.__const: 0x218
-+  __DATA_CONST.__cfstring: 0x720
-+  __DATA_CONST.__objc_classlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x18
-   __DATA_CONST.__auth_got: 0x180
--  __DATA_CONST.__got: 0xc8
--  __DATA.__objc_const: 0x1298
--  __DATA.__objc_selrefs: 0x968
-+  __DATA_CONST.__got: 0x88
-+  __DATA.__objc_const: 0x10f0
-+  __DATA.__objc_selrefs: 0x818
-   __DATA.__objc_ivar: 0x94
--  __DATA.__objc_data: 0x1e0
-+  __DATA.__objc_data: 0x190
-   __DATA.__data: 0x480
-   __DATA.__bss: 0x50
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+-557.1.21.0.0
++557.1.24.0.0
 
-   - /System/Library/Frameworks/WebKit.framework/WebKit
-   - /System/Library/PrivateFrameworks/APFoundation.framework/APFoundation
-   - /System/Library/PrivateFrameworks/AdPlatformsCommon.framework/AdPlatformsCommon
 +  - /System/Library/PrivateFrameworks/AdPlatformsCommonUI.framework/AdPlatformsCommonUI
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
+
 -  Functions: 232
 -  Symbols:   118
--  CStrings:  689
+-  CStrings:  605
 +  Functions: 208
 +  Symbols:   109
-+  CStrings:  589
- 
-Sections:
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA.__data : content changed
++  CStrings:  532
 Symbols:
 + _OBJC_CLASS_$_APProxyURLUtilities
 - _NSInvalidArgumentException
@@ -152,5 +131,4 @@ CStrings:
 - "substringFromIndex:"
 - "value"
 - "videoAdvertisingIdentifier"
-
 ```

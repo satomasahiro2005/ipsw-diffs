@@ -2,95 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/WebCore.framework/WebCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x407a0` | `0x1a200` | **`-0x265a0`** |
+| `__DATA.__common` | `0x1a3a0` | `0x372e8` | **`+0x1cf48`** |
+| `__TEXT.__text` | `0x3728d20` | `0x3735524` | **`+0xc804`** |
+| `__TEXT.__const` | `0x1b4710` | `0x1b0930` | **`-0x3de0`** |
+| `__TEXT.__unwind_info` | `0x777f8` | `0x78ea8` | **`+0x16b0`** |
+| `__DATA_CONST.__const` | `0x37f68` | `0x39550` | **`+0x15e8`** |
+| `__DATA_DIRTY.__bss` | `0xb7e0` | `0xa7c0` | **`-0x1020`** |
+| `__DATA.__data` | `0x1e710` | `0x1dec0` | **`-0x850`** |
+| `__TEXT.__eh_frame` | `0x180c` | `0x14a4` | **`-0x368`** |
+| `__TEXT.__cstring` | `0x335b3d` | `0x335871` | **`-0x2cc`** |
+| `__AUTH_CONST.__const` | `0x24db10` | `0x24dd40` | **`+0x230`** |
+| `__AUTH.__objc_data` | `0x1a10` | `0x1880` | **`-0x190`** |
+| `__DATA_DIRTY.__objc_data` | `0x640` | `0x7d0` | **`+0x190`** |
+| `__TEXT.__gcc_except_tab` | `0x366f4` | `0x36760` | **`+0x6c`** |
+| `__TEXT.__oslogstring` | `0x13f16` | `0x13f55` | **`+0x3f`** |
+| `__TEXT.__dlsym_cstr` | `0x7628` | `0x7657` | **`+0x2f`** |
+| `__DATA_DIRTY.__data` | `0x8c98` | `0x8cc0` | **`+0x28`** |
+| `__AUTH.__thread_vars` | `—` | `0x18` | **`+0x18`** |
+| `__AUTH.__data` | `0x15d8` | `0x15c8` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x6f68` | `0x6f58` | **`-0x10`** |
+| `__TEXT.__objc_methlist` | `0x5adc` | `0x5ae4` | **`+0x8`** |
+| `__AUTH.__thread_bss` | `—` | `0x4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -625.2.4.1.0
--  __TEXT.__text: 0x36a9c3c
--  __TEXT.__objc_methlist: 0x5adc
 +625.2.5.10.1
-+  __TEXT.__text: 0x36b69b8
-+  __TEXT.__objc_methlist: 0x5ae4
-   __TEXT.__getClass_cstr: 0x1290
--  __TEXT.__dlsym_cstr: 0x7628
--  __TEXT.__const: 0x1b4710
-+  __TEXT.__dlsym_cstr: 0x7657
-+  __TEXT.__const: 0x1b0930
-   __TEXT.__swift5_typeref: 0x2bb
--  __TEXT.__cstring: 0x335b3d
-+  __TEXT.__cstring: 0x335871
-   __TEXT.__constg_swiftt: 0x2e8
-   __TEXT.__swift5_fieldmd: 0x17c
-   __TEXT.__swift5_reflstr: 0x7f
-   __TEXT.__swift5_proto: 0x3c
-   __TEXT.__swift5_types: 0x44
--  __TEXT.__gcc_except_tab: 0x366f4
-+  __TEXT.__gcc_except_tab: 0x36760
-   __TEXT.__swift5_assocty: 0x1a0
-   __TEXT.__swift5_builtin: 0x14
--  __TEXT.__oslogstring: 0x13f16
-+  __TEXT.__oslogstring: 0x13f55
-   __TEXT.__ustring: 0x262
--  __TEXT.__unwind_info: 0x7e820
--  __TEXT.__eh_frame: 0x18c4
-+  __TEXT.__unwind_info: 0x7f988
-+  __TEXT.__eh_frame: 0x1554
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x37f68
-+  __DATA_CONST.__const: 0x39550
-   __DATA_CONST.__objc_classlist: 0x368
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x150
 
-   __DATA_CONST.__jsc_ops: 0x510
-   __DATA_CONST.__objc_arraydata: 0x98
-   __DATA_CONST.__got: 0x1458
--  __AUTH_CONST.__const: 0x24db10
-+  __AUTH_CONST.__const: 0x24dd40
-   __AUTH_CONST.__cfstring: 0x7960
-   __AUTH_CONST.__objc_const: 0x8e80
-   __AUTH_CONST.__weak_auth_got: 0x30
-
-   __AUTH_CONST.__objc_intobj: 0x270
-   __AUTH_CONST.__objc_doubleobj: 0x50
-   __AUTH_CONST.__objc_dictobj: 0x50
--  __AUTH_CONST.__auth_got: 0x6f68
--  __AUTH.__objc_data: 0x1a10
--  __AUTH.__data: 0x15d8
-+  __AUTH_CONST.__auth_got: 0x6f58
-+  __AUTH.__objc_data: 0x1880
-+  __AUTH.__data: 0x15c8
-+  __AUTH.__thread_vars: 0x18
-+  __AUTH.__thread_bss: 0x4
-   __DATA.__objc_ivar: 0x498
--  __DATA.__data: 0x1e710
--  __DATA.__common: 0x1a3a0
-+  __DATA.__data: 0x1dec0
-+  __DATA.__common: 0x372e8
-   __DATA_DIRTY.__objc_ivar: 0x50
--  __DATA_DIRTY.__objc_data: 0x640
--  __DATA_DIRTY.__data: 0x8c98
--  __DATA_DIRTY.__bss: 0xb7e0
-+  __DATA_DIRTY.__objc_data: 0x7d0
-+  __DATA_DIRTY.__data: 0x8cc0
-+  __DATA_DIRTY.__bss: 0xa7c0
-   __DATA_DIRTY.__common: 0x9944
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_StringProcessing.dylib
 -  Functions: 125799
--  Symbols:   159061
+-  Symbols:   156895
 -  CStrings:  33293
 +  Functions: 126650
-+  Symbols:   160557
++  Symbols:   158391
 +  CStrings:  33253
- 
 Symbols:
 + -[WebAVAudioSessionAvailableInputsListener sessionMediaServicesWereReset:]
 + GCC_except_table276

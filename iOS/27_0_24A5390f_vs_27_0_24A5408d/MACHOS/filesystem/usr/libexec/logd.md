@@ -2,6 +2,6 @@
 
 > `/usr/libexec/logd`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`

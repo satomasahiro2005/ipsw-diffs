@@ -2,48 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/iTunesStore.framework/iTunesStore`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__cstring`
-- `__TEXT.__const`
-- `__TEXT.__gcc_except_tab`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa0b30` | `0xa10c0` | **`+0x590`** |
+| `__TEXT.__unwind_info` | `0x1208` | `0x1200` | **`-0x8`** |
+
+### Other Changes
 
 ```diff
 
 -1453.0.5.0.0
--  __TEXT.__text: 0xa0b30
 +1453.0.6.0.0
-+  __TEXT.__text: 0xa10c0
-   __TEXT.__objc_methlist: 0x4f54
-   __TEXT.__cstring: 0x4ac9
-   __TEXT.__const: 0xf70
-   __TEXT.__gcc_except_tab: 0x1198
-   __TEXT.__oslogstring: 0x5de9
--  __TEXT.__unwind_info: 0x1208
-+  __TEXT.__unwind_info: 0x1200
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 Functions:
-~ sub_2b7cf07ec -> sub_2b954b7ec : 504 -> 492
-~ sub_2b7cf09e4 -> sub_2b954b9d8 : 740 -> 688
+~ sub_2b7bb97ec -> sub_2b93dd7ec : 504 -> 492
+~ sub_2b7bb99e4 -> sub_2b93dd9d8 : 740 -> 688
 ~ -[ISURLOperation _activeURLRequest] : 20 -> 88
 ~ -[ISURLOperation _activeURL] : 20 -> 108
 ~ -[ISURLOperation _setActiveURLRequest:] : 100 -> 132

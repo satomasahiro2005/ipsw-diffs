@@ -2,74 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/WebCore.framework/Frameworks/libwebrtc.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x6fef8` | `0xa6ff8` | **`+0x37100`** |
+| `__DATA.__bss` | `0x3bf60` | `0xf608` | **`-0x2c958`** |
+| `__DATA.__common` | `0x1f020` | `0x7a10` | **`-0x17610`** |
+| `__TEXT.__text` | `0xaafae0` | `0xab5804` | **`+0x5d24`** |
+| `__TEXT.__cstring` | `0x55fae` | `0x56a7a` | **`+0xacc`** |
+| `__DATA_DIRTY.__bss` | `0x2160` | `0x2ab0` | **`+0x950`** |
+| `__DATA.__data` | `0x1df0` | `0x1600` | **`-0x7f0`** |
+| `__DATA_DIRTY.__data` | `0xf0` | `0x800` | **`+0x710`** |
+| `__TEXT.__unwind_info` | `0x10dc0` | `0x11138` | **`+0x378`** |
+| `__DATA_CONST.__const` | `0x15e90` | `0x15f80` | **`+0xf0`** |
+| `__AUTH.__data` | `0x98` | `—` | **`-0x98`** |
+| `__AUTH_CONST.__const` | `0x20170` | `0x200d8` | **`-0x98`** |
+| `__AUTH.__thread_vars` | `0x60` | `0x48` | **`-0x18`** |
+| `__DATA_DIRTY.__common` | `0x468` | `0x470` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x1888` | `0x1890` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -625.2.4.1.0
--  __TEXT.__text: 0xa9dae4
 +625.2.5.10.1
-+  __TEXT.__text: 0xaa34d0
-   __TEXT.__objc_methlist: 0x14cc
--  __TEXT.__const: 0x6fef8
--  __TEXT.__cstring: 0x55fae
--  __TEXT.__gcc_except_tab: 0x1888
--  __TEXT.__unwind_info: 0x118c8
-+  __TEXT.__const: 0xa6ff8
-+  __TEXT.__cstring: 0x56a7a
-+  __TEXT.__gcc_except_tab: 0x1890
-+  __TEXT.__unwind_info: 0x11c48
-   __TEXT.__eh_frame: 0xc10
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x15e90
-+  __DATA_CONST.__const: 0x15f80
-   __DATA_CONST.__objc_classlist: 0x100
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x60
 
-   __DATA_CONST.__objc_superrefs: 0xa8
-   __DATA_CONST.__objc_arraydata: 0x40
-   __DATA_CONST.__got: 0x298
--  __AUTH_CONST.__const: 0x20170
-+  __AUTH_CONST.__const: 0x200d8
-   __AUTH_CONST.__cfstring: 0x360
-   __AUTH_CONST.__objc_const: 0x3548
-   __AUTH_CONST.__weak_auth_got: 0x48
-   __AUTH_CONST.__objc_intobj: 0x78
-   __AUTH_CONST.__objc_dictobj: 0xa0
-   __AUTH_CONST.__auth_got: 0xa18
--  __AUTH.__data: 0x98
--  __AUTH.__thread_vars: 0x60
-+  __AUTH.__thread_vars: 0x48
-   __AUTH.__thread_bss: 0x18
-   __DATA.__objc_ivar: 0x250
--  __DATA.__data: 0x1df0
--  __DATA.__common: 0x1f020
-+  __DATA.__data: 0x1600
-+  __DATA.__common: 0x7a10
-   __DATA_DIRTY.__objc_data: 0xa00
--  __DATA_DIRTY.__data: 0xf0
--  __DATA_DIRTY.__bss: 0x2160
--  __DATA_DIRTY.__common: 0x468
-+  __DATA_DIRTY.__data: 0x800
-+  __DATA_DIRTY.__bss: 0x2ab0
-+  __DATA_DIRTY.__common: 0x470
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 18374
--  Symbols:   23814
+-  Symbols:   23609
 -  CStrings:  9080
 +  Functions: 18614
-+  Symbols:   24047
++  Symbols:   23842
 +  CStrings:  9154
- 
 Symbols:
 + _ARGB1555ToUVMatrixRow_Any_NEON
 + _ARGB4444ToUVMatrixRow_Any_NEON

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/NANDInfo.framework/NANDInfo`
 
-```diff
+### Section Size Changes
 
- 849.0.11.0.0
--  __TEXT.__text: 0x1d298
-+  __TEXT.__text: 0x1d2a8
-   __TEXT.__objc_methlist: 0x344
-   __TEXT.__const: 0x150
-   __TEXT.__cstring: 0xc74c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1d298` | `0x1d2a8` | **`+0x10`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _ASPFTLParseBufferToDict : 852 -> 856
 ~ _ASPMSPParseSMBufferToDict : 1000 -> 1004

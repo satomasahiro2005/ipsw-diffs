@@ -2,14 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/SmartRepliesUI.framework/SmartRepliesUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x62` | `0x6a` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -176.3.0.0.0
 +176.3.0.1.0
-   __TEXT.__text: 0x34
--  __TEXT.__const: 0x62
-+  __TEXT.__const: 0x6a
-   __TEXT.__constg_swiftt: 0x5c
-   __TEXT.__swift5_typeref: 0x14
-   __TEXT.__swift5_fieldmd: 0x10
 ```

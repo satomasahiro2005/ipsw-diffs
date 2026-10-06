@@ -2,98 +2,60 @@
 
 > `/System/Library/FlowTools/Tools/SiriPhoneFlowTools.flowtool/SiriPhoneFlowTools`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift5_mpenum`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa5344` | `0xa331c` | **`-0x2028`** |
+| `__DATA_CONST.__const` | `0x5e50` | `0x5b80` | **`-0x2d0`** |
+| `__TEXT.__eh_frame` | `0x5f3c` | `0x5da4` | **`-0x198`** |
+| `__TEXT.__oslogstring` | `0x522e` | `0x50ce` | **`-0x160`** |
+| `__TEXT.__swift5_capture` | `0x840` | `0x720` | **`-0x120`** |
+| `__TEXT.__unwind_info` | `0x3248` | `0x31c8` | **`-0x80`** |
+| `__TEXT.__auth_stubs` | `0x2670` | `0x2690` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x48c` | `0x474` | **`-0x18`** |
+| `__DATA_CONST.__auth_got` | `0x1340` | `0x1350` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0x23fc` | `0x23ec` | **`-0x10`** |
+| `__DATA_CONST.__auth_ptr` | `0xb70` | `0xb78` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x340` | `0x338` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
 - `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
-- `__DATA.__bss`
-- `__DATA.__common`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_entry`
+
+### Other Changes
 
 ```diff
 
 -3600.38.13.0.0
--  __TEXT.__text: 0xa5344
--  __TEXT.__auth_stubs: 0x2670
 +3600.38.16.0.0
-+  __TEXT.__text: 0xa331c
-+  __TEXT.__auth_stubs: 0x2690
-   __TEXT.__objc_stubs: 0x1260
-   __TEXT.__objc_methlist: 0x154
-   __TEXT.__const: 0x8a58
-   __TEXT.__cstring: 0x1cb6
--  __TEXT.__swift5_typeref: 0x23fc
--  __TEXT.__oslogstring: 0x522e
--  __TEXT.__swift5_capture: 0x840
-+  __TEXT.__swift5_typeref: 0x23ec
-+  __TEXT.__oslogstring: 0x50ce
-+  __TEXT.__swift5_capture: 0x720
-   __TEXT.__constg_swiftt: 0x1c70
-   __TEXT.__swift5_fieldmd: 0x1d04
-   __TEXT.__swift5_reflstr: 0x1e1b
 
-   __TEXT.__objc_methtype: 0x17f
-   __TEXT.__swift5_protos: 0x70
-   __TEXT.__swift_as_entry: 0x2e8
--  __TEXT.__swift_as_ret: 0x340
--  __TEXT.__swift_as_cont: 0x48c
-+  __TEXT.__swift_as_ret: 0x338
-+  __TEXT.__swift_as_cont: 0x474
-   __TEXT.__swift5_mpenum: 0x84
--  __TEXT.__unwind_info: 0x3248
--  __TEXT.__eh_frame: 0x5f3c
--  __DATA_CONST.__const: 0x5e50
-+  __TEXT.__unwind_info: 0x31c8
-+  __TEXT.__eh_frame: 0x5da4
-+  __DATA_CONST.__const: 0x5b80
-   __DATA_CONST.__cfstring: 0xc0
-   __DATA_CONST.__objc_classlist: 0xe0
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x28
--  __DATA_CONST.__auth_got: 0x1340
-+  __DATA_CONST.__auth_got: 0x1350
-   __DATA_CONST.__got: 0xa18
--  __DATA_CONST.__auth_ptr: 0xb70
-+  __DATA_CONST.__auth_ptr: 0xb78
-   __DATA.__objc_const: 0x1a08
-   __DATA.__objc_selrefs: 0x548
-   __DATA.__objc_data: 0x48
-
-   - /System/Library/PrivateFrameworks/FlowToolTypes.framework/FlowToolTypes
-   - /System/Library/PrivateFrameworks/IntelligenceFlow.framework/IntelligenceFlow
-   - /System/Library/PrivateFrameworks/IntelligenceFlowShared.framework/IntelligenceFlowShared
 -  - /System/Library/PrivateFrameworks/IntelligencePlatform.framework/IntelligencePlatform
-   - /System/Library/PrivateFrameworks/Preferences.framework/Preferences
-   - /System/Library/PrivateFrameworks/Rapport.framework/Rapport
-   - /System/Library/PrivateFrameworks/SAObjects.framework/SAObjects
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5070
 -  Symbols:   11221
 -  CStrings:  794
 +  Functions: 5009
 +  Symbols:   11191
 +  CStrings:  789
- 
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/SiriPhone/install/Symbols/BuiltProducts/libSiriPhoneFlowToolsImplementation.a(SPHCallCenter-40380c6da971ffc6f3b9a2cf680ff133.o)
 + _$s10AppIntents11EntityQueryP22displayRepresentations3forSDy0C0_2IDQZAA21DisplayRepresentationVGSayAHG_tYaKFTq

@@ -2,90 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/PolarisExclaveSupport.framework/PolarisExclaveSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc6690` | `0xd384c` | **`+0xd1bc`** |
+| `__AUTH_CONST.__const` | `0x29b8` | `0x5a20` | **`+0x3068`** |
+| `__TEXT.__swift5_capture` | `0x7c` | `0x118c` | **`+0x1110`** |
+| `__TEXT.__const` | `0x5980` | `0x6040` | **`+0x6c0`** |
+| `__TEXT.__swift5_typeref` | `0x1ea0` | `0x2486` | **`+0x5e6`** |
+| `__DATA_DIRTY.__data` | `0x2728` | `0x2cd0` | **`+0x5a8`** |
+| `__TEXT.__swift5_reflstr` | `0x1d41` | `0x2251` | **`+0x510`** |
+| `__DATA.__bss` | `0x6fa0` | `0x74a0` | **`+0x500`** |
+| `__TEXT.__swift5_fieldmd` | `0x237c` | `0x27a4` | **`+0x428`** |
+| `__TEXT.__cstring` | `0x3d2e` | `0x414e` | **`+0x420`** |
+| `__AUTH.__data` | `0x1140` | `0xd98` | **`-0x3a8`** |
+| `__TEXT.__oslogstring` | `0x6` | `0x338` | **`+0x332`** |
+| `__AUTH_CONST.__objc_const` | `0x3490` | `0x36e0` | **`+0x250`** |
+| `__TEXT.__constg_swiftt` | `0x23d0` | `0x2584` | **`+0x1b4`** |
+| `__TEXT.__unwind_info` | `0x1cc8` | `0x1de0` | **`+0x118`** |
+| `__DATA.__data` | `0xe18` | `0xec8` | **`+0xb0`** |
+| `__AUTH_CONST.__auth_got` | `0xfc0` | `0x1068` | **`+0xa8`** |
+| `__AUTH.__objc_data` | `—` | `0x98` | **`+0x98`** |
+| `__DATA.__common` | `0x68` | `0x18` | **`-0x50`** |
+| `__DATA_DIRTY.__common` | `0x170` | `0x1c0` | **`+0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x408` | `0x3c0` | **`-0x48`** |
+| `__TEXT.__swift5_builtin` | `0x64` | `0xa0` | **`+0x3c`** |
+| `__TEXT.__swift5_assocty` | `0xd8` | `0x108` | **`+0x30`** |
+| `__TEXT.__swift5_types` | `0x250` | `0x27c` | **`+0x2c`** |
+| `__TEXT.__swift5_mpenum` | `0x1c` | `0x44` | **`+0x28`** |
+| `__TEXT.__swift5_proto` | `0x3e4` | `0x40c` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x1d8` | `0x1e8` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x1a0` | `0x1a8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xc6690
--  __TEXT.__const: 0x5980
--  __TEXT.__constg_swiftt: 0x23d0
--  __TEXT.__swift5_typeref: 0x1ea0
--  __TEXT.__swift5_reflstr: 0x1d41
--  __TEXT.__swift5_fieldmd: 0x237c
--  __TEXT.__swift5_builtin: 0x64
--  __TEXT.__oslogstring: 0x6
--  __TEXT.__swift5_types: 0x250
--  __TEXT.__cstring: 0x3d2e
-+  __TEXT.__text: 0xd384c
-+  __TEXT.__const: 0x6040
-+  __TEXT.__constg_swiftt: 0x2584
-+  __TEXT.__swift5_typeref: 0x2486
-+  __TEXT.__swift5_reflstr: 0x2251
-+  __TEXT.__swift5_fieldmd: 0x27a4
-+  __TEXT.__swift5_builtin: 0xa0
-+  __TEXT.__oslogstring: 0x338
-+  __TEXT.__swift5_proto: 0x40c
-+  __TEXT.__swift5_types: 0x27c
-+  __TEXT.__cstring: 0x414e
-   __TEXT.__swift5_protos: 0x74
--  __TEXT.__swift5_proto: 0x3e4
--  __TEXT.__swift5_assocty: 0xd8
--  __TEXT.__swift5_mpenum: 0x1c
-+  __TEXT.__swift5_assocty: 0x108
-+  __TEXT.__swift5_mpenum: 0x44
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__swift5_capture: 0x7c
--  __TEXT.__unwind_info: 0x1cc8
-+  __TEXT.__swift5_capture: 0x118c
-+  __TEXT.__unwind_info: 0x1de0
-   __TEXT.__eh_frame: 0x3e18
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1d8
--  __DATA_CONST.__objc_classlist: 0x1a0
-+  __DATA_CONST.__const: 0x1e8
-+  __DATA_CONST.__objc_classlist: 0x1a8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x29b8
--  __AUTH_CONST.__objc_const: 0x3490
--  __AUTH_CONST.__auth_got: 0xfc0
--  __AUTH.__data: 0x1140
--  __DATA.__data: 0xe18
--  __DATA.__common: 0x68
--  __DATA.__bss: 0x6fa0
--  __DATA_DIRTY.__objc_data: 0x408
--  __DATA_DIRTY.__data: 0x2728
--  __DATA_DIRTY.__common: 0x170
-+  __AUTH_CONST.__const: 0x5a20
-+  __AUTH_CONST.__objc_const: 0x36e0
-+  __AUTH_CONST.__auth_got: 0x1068
-+  __AUTH.__objc_data: 0x98
-+  __AUTH.__data: 0xd98
-+  __DATA.__data: 0xec8
-+  __DATA.__bss: 0x74a0
-+  __DATA.__common: 0x18
-+  __DATA_DIRTY.__objc_data: 0x3c0
-+  __DATA_DIRTY.__data: 0x2cd0
-+  __DATA_DIRTY.__common: 0x1c0
-   __DATA_DIRTY.__bss: 0x80
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/AlwaysOnExclavesServices.framework/AlwaysOnExclavesServices
+-256.0.2.500.1
++256.0.3.0.0
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 2520
--  Symbols:   9083
+-  Symbols:   7114
 -  CStrings:  344
 +  Functions: 2961
-+  Symbols:   10737
++  Symbols:   7656
 +  CStrings:  420
- 
-Sections:
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_types2 : content changed
-~ __TEXT.__eh_frame : content changed
 Symbols:
 + _$s21PolarisExclaveSupport0A10SignposterV11endIntervalyyAA0a8SignpostF0VF
 + _$s21PolarisExclaveSupport0A10SignposterV13beginInterval_2idAA0a8SignpostF0VAA0aH0O0F0O_2os12OSSignpostIDVtF
@@ -730,5 +692,4 @@ CStrings:
 + "sId:%u"
 + "sId:%u fId:%llu"
 - "DataOutputController"
-
 ```

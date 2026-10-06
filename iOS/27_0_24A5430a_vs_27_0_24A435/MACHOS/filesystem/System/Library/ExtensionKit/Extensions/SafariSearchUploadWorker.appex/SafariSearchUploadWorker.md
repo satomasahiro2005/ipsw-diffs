@@ -2,6 +2,8 @@
 
 > `/System/Library/ExtensionKit/Extensions/SafariSearchUploadWorker.appex/SafariSearchUploadWorker`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_100004b94 : 20 -> 12

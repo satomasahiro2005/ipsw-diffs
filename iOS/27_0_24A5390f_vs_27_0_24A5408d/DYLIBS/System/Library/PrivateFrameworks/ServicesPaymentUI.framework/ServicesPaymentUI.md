@@ -2,102 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/ServicesPaymentUI.framework/ServicesPaymentUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa7430` | `0xa9400` | **`+0x1fd0`** |
+| `__TEXT.__swift5_typeref` | `0x36d8` | `0x3aba` | **`+0x3e2`** |
+| `__AUTH_CONST.__objc_const` | `0x3c20` | `0x3938` | **`-0x2e8`** |
+| `__AUTH.__objc_data` | `0x7e8` | `0x6e8` | **`-0x100`** |
+| `__DATA.__data` | `0x1f50` | `0x2048` | **`+0xf8`** |
+| `__AUTH_CONST.__auth_got` | `0x17b0` | `0x1880` | **`+0xd0`** |
+| `__DATA_CONST.__got` | `0xa00` | `0xab0` | **`+0xb0`** |
+| `__TEXT.__const` | `0x76e8` | `0x7798` | **`+0xb0`** |
+| `__TEXT.__objc_methlist` | `0xa1c` | `0x97c` | **`-0xa0`** |
+| `__AUTH_CONST.__const` | `0x4888` | `0x4840` | **`-0x48`** |
+| `__DATA_CONST.__objc_selrefs` | `0xca0` | `0xce0` | **`+0x40`** |
+| `__DATA_DIRTY.__data` | `0x5e0` | `0x5a8` | **`-0x38`** |
+| `__TEXT.__swift5_reflstr` | `0x1b90` | `0x1bc0` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x2068` | `0x2090` | **`+0x28`** |
+| `__AUTH.__data` | `0x14f0` | `0x14d8` | **`-0x18`** |
+| `__DATA.__common` | `0x99` | `0xb0` | **`+0x17`** |
+| `__TEXT.__cstring` | `0x1641` | `0x1655` | **`+0x14`** |
+| `__DATA.__bss` | `0xa660` | `0xa670` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0xb0` | `0xa0` | **`-0x10`** |
+| `__DATA_DIRTY.__objc_data` | `0x11e8` | `0x11e0` | **`-0x8`** |
+| `__TEXT.__constg_swiftt` | `0x23d0` | `0x23d8` | **`+0x8`** |
+| `__TEXT.__eh_frame` | `0x3868` | `0x3870` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x204` | `0x1fc` | **`-0x8`** |
+| `__TEXT.__swift5_capture` | `0xc4c` | `0xc48` | **`-0x4`** |
+| `__TEXT.__swift5_fieldmd` | `0x1fc0` | `0x1fc4` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__oslogstring`
+
+### Other Changes
 
 ```diff
 
 -1.0.24.0.0
--  __TEXT.__text: 0xa7430
--  __TEXT.__objc_methlist: 0xa1c
--  __TEXT.__const: 0x76e8
--  __TEXT.__swift5_typeref: 0x36d8
--  __TEXT.__swift5_fieldmd: 0x1fc0
--  __TEXT.__constg_swiftt: 0x23d0
 +1.0.30.0.0
-+  __TEXT.__text: 0xa9400
-+  __TEXT.__objc_methlist: 0x97c
-+  __TEXT.__const: 0x7798
-+  __TEXT.__swift5_typeref: 0x3aba
-+  __TEXT.__swift5_fieldmd: 0x1fc4
-+  __TEXT.__constg_swiftt: 0x23d8
-   __TEXT.__swift5_builtin: 0x8c
--  __TEXT.__swift5_reflstr: 0x1b90
-+  __TEXT.__swift5_reflstr: 0x1bc0
-   __TEXT.__swift5_assocty: 0x6b8
-   __TEXT.__swift5_proto: 0x544
--  __TEXT.__swift5_types: 0x204
--  __TEXT.__cstring: 0x1641
--  __TEXT.__swift5_capture: 0xc4c
-+  __TEXT.__swift5_types: 0x1fc
-+  __TEXT.__cstring: 0x1655
-+  __TEXT.__swift5_capture: 0xc48
-   __TEXT.__swift_as_entry: 0x90
-   __TEXT.__swift_as_cont: 0x1f4
-   __TEXT.__swift_as_ret: 0xa8
-   __TEXT.__oslogstring: 0x2880
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__unwind_info: 0x2068
--  __TEXT.__eh_frame: 0x3868
-+  __TEXT.__unwind_info: 0x2090
-+  __TEXT.__eh_frame: 0x3870
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x168
--  __DATA_CONST.__objc_classlist: 0xb0
-+  __DATA_CONST.__objc_classlist: 0xa0
-   __DATA_CONST.__objc_protolist: 0xf8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xca0
-+  __DATA_CONST.__objc_selrefs: 0xce0
-   __DATA_CONST.__objc_protorefs: 0x98
--  __DATA_CONST.__got: 0xa00
--  __AUTH_CONST.__const: 0x4888
--  __AUTH_CONST.__objc_const: 0x3c20
--  __AUTH_CONST.__auth_got: 0x17b0
--  __AUTH.__objc_data: 0x7e8
--  __AUTH.__data: 0x14f0
--  __DATA.__data: 0x1f50
--  __DATA.__bss: 0xa660
--  __DATA.__common: 0x99
--  __DATA_DIRTY.__objc_data: 0x11e8
--  __DATA_DIRTY.__data: 0x5e0
-+  __DATA_CONST.__got: 0xab0
-+  __AUTH_CONST.__const: 0x4840
-+  __AUTH_CONST.__objc_const: 0x3938
-+  __AUTH_CONST.__auth_got: 0x1880
-+  __AUTH.__objc_data: 0x6e8
-+  __AUTH.__data: 0x14d8
-+  __DATA.__data: 0x2048
-+  __DATA.__bss: 0xa670
-+  __DATA.__common: 0xb0
-+  __DATA_DIRTY.__objc_data: 0x11e0
-+  __DATA_DIRTY.__data: 0x5a8
-   __DATA_DIRTY.__common: 0x70
-   __DATA_DIRTY.__bss: 0x100
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 
-   - /System/Library/PrivateFrameworks/PaymentUIBase.framework/PaymentUIBase
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-   - /System/Library/PrivateFrameworks/_JetEngine_SwiftUI.framework/_JetEngine_SwiftUI
 +  - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2823
--  Symbols:   8756
+-  Symbols:   8479
 +  Functions: 2835
-+  Symbols:   8868
-   CStrings:  345
- 
++  Symbols:   8574
 Symbols:
 + _$s10Foundation4DataV2eeoiySbAC_ACtFZTf4nnd_n
 + _$s17ServicesPaymentUI0B14SheetConstantsV10BackgroundV05sheetF005SwiftC05ColorVvpZ
@@ -292,36 +243,6 @@ Symbols:
 + _flat unique So13UIInteraction_p
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyAA4ViewPAAE20scrollBounceBehavior_4axesQrAA06ScrollgH0V_AA4AxisO3SetVtFQOyAA0jE0VyACyACyACyACy015ServicesPaymentB0013AppleIDSignInE0VAA16_FlexFrameLayoutVGATGAA08_PaddingT0VGAA23_GeometryActionModifierVy12CoreGraphics7CGFloatVGGG_Qo_AA011_BackgroundX0VyACyAA5ColorVAA024_SafeAreaRegionsIgnoringT0VGGGAA08_OverlayX0VyACyACyACyACyAeAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyAA6ButtonVyAeAE10fontWeightyQrAA4FontV6WeightVSgFQOyACyAA5ImageVAA022_EnvironmentKeyWritingX0VyA29_5ScaleOGG_Qo_G_AA16GlassButtonStyleVQo_A31_yAA17ButtonBorderShapeVGGA31_yAA11ControlSizeOGGAXGAXGGGAaDHPA15_AaDHPqd__AaDHD2_A6_HO_A14_AA0eX0HPyHCHC_A51_AAA53_HPyHCHC
 + _memcmp
-+ _objc_msgSend$addInteraction:
-+ _objc_msgSend$bottomEdgeEffect
-+ _objc_msgSend$configureWithTransparentBackground
-+ _objc_msgSend$constraintGreaterThanOrEqualToAnchor:
-+ _objc_msgSend$constraintLessThanOrEqualToAnchor:
-+ _objc_msgSend$contentInset
-+ _objc_msgSend$edge
-+ _objc_msgSend$inset
-+ _objc_msgSend$interactions
-+ _objc_msgSend$largeDetent
-+ _objc_msgSend$modalPresentationStyle
-+ _objc_msgSend$removeInteraction:
-+ _objc_msgSend$resolvedColorWithTraitCollection:
-+ _objc_msgSend$setCompactAppearance:
-+ _objc_msgSend$setContentInset:
-+ _objc_msgSend$setDetents:
-+ _objc_msgSend$setEdge:
-+ _objc_msgSend$setInset:
-+ _objc_msgSend$setInstructionBackdropColor:
-+ _objc_msgSend$setModalInPresentation:
-+ _objc_msgSend$setPrefersGrabberVisible:
-+ _objc_msgSend$setPrefersScrollingExpandsWhenScrolledToEdge:
-+ _objc_msgSend$setScrollEdgeAppearance:
-+ _objc_msgSend$setScrollView:
-+ _objc_msgSend$setSelectedDetentIdentifier:
-+ _objc_msgSend$setShowsInstructionBackdrop:animated:
-+ _objc_msgSend$setStandardAppearance:
-+ _objc_msgSend$setWidthFollowsPreferredContentSizeWhenEdgeAttached:
-+ _objc_msgSend$sheetPresentationController
-+ _objc_msgSend$softStyle
 + _symbolic So39UIScrollEdgeElementContainerInteractionCSg
 + _symbolic _____ 7SwiftUI11ControlSizeO
 + _symbolic _____ 7SwiftUI17ButtonBorderShapeV
@@ -468,19 +389,6 @@ Symbols:
 - ___swift_closure_destructor.247Tm
 - _get_witness_table 7SwiftUI15NavigationStackVyAA0C4PathVAA4ViewPAAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAA08ModifiedJ0VyALy015ServicesPaymentB0013AppleIDSignInF0VAA16_FlexFrameLayoutVGAA24_BackgroundStyleModifierVyAA5ColorVGG_AA0I4ItemVyytAA6ButtonVyAA5ImageVGGQo_GAaFHPyHC
 - _kCACornerCurveContinuous
-- _objc_msgSend$blackColor
-- _objc_msgSend$colorWithAlphaComponent:
-- _objc_msgSend$horizontalSizeClass
-- _objc_msgSend$initWithPresentedViewController:presentingViewController:
-- _objc_msgSend$insertSubview:atIndex:
-- _objc_msgSend$presentingViewController
-- _objc_msgSend$setAutoresizingMask:
-- _objc_msgSend$setClipsToBounds:
-- _objc_msgSend$setCornerCurve:
-- _objc_msgSend$setCornerRadius:
-- _objc_msgSend$setMaskedCorners:
-- _objc_msgSend$setTransitioningDelegate:
-- _objc_msgSend$transitionCoordinator
 - _symbolic So24UIPresentationControllerC
 - _symbolic _____ 17ServicesPaymentUI34PasswordSheetTransitioningDelegateC
 - _symbolic _____ 17ServicesPaymentUI35PasswordSheetPresentationControllerC

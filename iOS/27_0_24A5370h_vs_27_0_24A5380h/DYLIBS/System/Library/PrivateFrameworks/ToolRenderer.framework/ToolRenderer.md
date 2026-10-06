@@ -2,88 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/ToolRenderer.framework/ToolRenderer`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x81264` | `0x82fcc` | **`+0x1d68`** |
+| `__TEXT.__cstring` | `0x500b` | `0x54db` | **`+0x4d0`** |
+| `__TEXT.__eh_frame` | `0x5e98` | `0x5d60` | **`-0x138`** |
+| `__AUTH_CONST.__const` | `0x69f0` | `0x6998` | **`-0x58`** |
+| `__AUTH_CONST.__cfstring` | `0x1e0` | `0x220` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x2290` | `0x2258` | **`-0x38`** |
+| `__TEXT.__swift5_reflstr` | `0x16a7` | `0x16d7` | **`+0x30`** |
+| `__DATA.__data` | `0xd80` | `0xd60` | **`-0x20`** |
+| `__DATA_DIRTY.__data` | `0x118` | `0x138` | **`+0x20`** |
+| `__TEXT.__constg_swiftt` | `0x1160` | `0x1144` | **`-0x1c`** |
+| `__TEXT.__swift5_fieldmd` | `0x1cac` | `0x1cc0` | **`+0x14`** |
+| `__AUTH_CONST.__auth_got` | `0xcf8` | `0xd08` | **`+0x10`** |
+| `__TEXT.__const` | `0x57b2` | `0x57c2` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x570` | `0x560` | **`-0x10`** |
+| `__TEXT.__swift_as_entry` | `0x2a4` | `0x298` | **`-0xc`** |
+| `__TEXT.__swift5_typeref` | `0x140c` | `0x1406` | **`-0x6`** |
+| `__TEXT.__swift5_types` | `0x1dc` | `0x1d8` | **`-0x4`** |
+| `__TEXT.__swift_as_ret` | `0x1b8` | `0x1b4` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x81264
--  __TEXT.__const: 0x57b2
--  __TEXT.__swift5_typeref: 0x140c
-+  __TEXT.__text: 0x82fcc
-+  __TEXT.__const: 0x57c2
-+  __TEXT.__swift5_typeref: 0x1406
-   __TEXT.__swift5_capture: 0x9b0
--  __TEXT.__cstring: 0x500b
--  __TEXT.__swift5_reflstr: 0x16a7
-+  __TEXT.__cstring: 0x54db
-+  __TEXT.__swift5_reflstr: 0x16d7
-   __TEXT.__swift5_assocty: 0x438
--  __TEXT.__constg_swiftt: 0x1160
--  __TEXT.__swift5_fieldmd: 0x1cac
-+  __TEXT.__constg_swiftt: 0x1144
-+  __TEXT.__swift5_fieldmd: 0x1cc0
-   __TEXT.__swift5_builtin: 0x78
--  __TEXT.__swift5_proto: 0x570
--  __TEXT.__swift5_types: 0x1dc
--  __TEXT.__swift_as_entry: 0x2a4
--  __TEXT.__swift_as_ret: 0x1b8
-+  __TEXT.__swift5_proto: 0x560
-+  __TEXT.__swift5_types: 0x1d8
-+  __TEXT.__swift_as_entry: 0x298
-+  __TEXT.__swift_as_ret: 0x1b4
-   __TEXT.__swift_as_cont: 0x4d0
-   __TEXT.__oslogstring: 0x157
-   __TEXT.__swift5_protos: 0x30
-   __TEXT.__swift5_mpenum: 0x24
--  __TEXT.__unwind_info: 0x2290
--  __TEXT.__eh_frame: 0x5e98
-+  __TEXT.__unwind_info: 0x2258
-+  __TEXT.__eh_frame: 0x5d60
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-5028.0.21.0.0
++5032.5.0.0.0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x5a0
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x69f0
--  __AUTH_CONST.__cfstring: 0x1e0
-+  __AUTH_CONST.__const: 0x6998
-+  __AUTH_CONST.__cfstring: 0x220
-   __AUTH_CONST.__objc_const: 0xf8
--  __AUTH_CONST.__auth_got: 0xcf8
-+  __AUTH_CONST.__auth_got: 0xd08
-   __AUTH.__data: 0x5b8
--  __DATA.__data: 0xd80
-+  __DATA.__data: 0xd60
-   __DATA.__bss: 0x5e10
-   __DATA.__common: 0x8
--  __DATA_DIRTY.__data: 0x118
-+  __DATA_DIRTY.__data: 0x138
-   __DATA_DIRTY.__common: 0x30
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3522
--  Symbols:   3185
--  CStrings:  505
+-  Symbols:   1094
+-  CStrings:  490
 +  Functions: 3529
-+  Symbols:   3224
-+  CStrings:  512
- 
-Sections:
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__data : content changed
++  Symbols:   1097
++  CStrings:  495
 Symbols:
 + _OUTLINED_FUNCTION_317
 + ___swift_memcpy144_8
@@ -102,5 +56,4 @@ CStrings:
 + "is.workflow.actions.ride.requestride"
 - "\n\nclass Measurement:\n    \"\"\"A measurement of a quantity in a specific unit.\"\"\"\n    \n    def __init__(self, "
 - ":\n    display_name: Optional[str]\n    name_components: Optional[PersonNameComponents]\n    handle: Optional[PersonHandle]\n    label: Optional[PersonLabel]\n    relationship: Optional[PersonRelationship]"
-
 ```

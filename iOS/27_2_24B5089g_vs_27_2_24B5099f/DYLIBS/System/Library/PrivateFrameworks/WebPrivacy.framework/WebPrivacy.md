@@ -2,56 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/WebPrivacy.framework/WebPrivacy`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ca14` | `0x1eb34` | **`+0x2120`** |
+| `__TEXT.__gcc_except_tab` | `0x2bfc` | `0x2ee4` | **`+0x2e8`** |
+| `__TEXT.__unwind_info` | `0xfe0` | `0x1128` | **`+0x148`** |
+| `__AUTH_CONST.__const` | `0x10a0` | `0x11c8` | **`+0x128`** |
+| `__TEXT.__oslogstring` | `0x81f` | `0x89a` | **`+0x7b`** |
+| `__TEXT.__cstring` | `0x849` | `0x8ad` | **`+0x64`** |
+| `__DATA_CONST.__const` | `0x3c0` | `0x408` | **`+0x48`** |
+| `__AUTH_CONST.__cfstring` | `0x840` | `0x860` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x558` | `0x568` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x61c` | `0x624` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -58.0.0.0.0
--  __TEXT.__text: 0x1c33c
--  __TEXT.__objc_methlist: 0x61c
--  __TEXT.__gcc_except_tab: 0x2bfc
 +59.0.0.0.0
-+  __TEXT.__text: 0x1e428
-+  __TEXT.__objc_methlist: 0x624
-+  __TEXT.__gcc_except_tab: 0x2ee4
-   __TEXT.__const: 0x88
--  __TEXT.__cstring: 0x849
--  __TEXT.__oslogstring: 0x81f
--  __TEXT.__unwind_info: 0x1200
-+  __TEXT.__cstring: 0x8ad
-+  __TEXT.__oslogstring: 0x89a
-+  __TEXT.__unwind_info: 0x1368
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3c0
-+  __DATA_CONST.__const: 0x408
-   __DATA_CONST.__objc_classlist: 0x68
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x558
-+  __DATA_CONST.__objc_selrefs: 0x568
-   __DATA_CONST.__objc_superrefs: 0x58
-   __DATA_CONST.__objc_arraydata: 0x8
-   __DATA_CONST.__got: 0x1a8
--  __AUTH_CONST.__const: 0x10a0
--  __AUTH_CONST.__cfstring: 0x840
-+  __AUTH_CONST.__const: 0x11c8
-+  __AUTH_CONST.__cfstring: 0x860
-   __AUTH_CONST.__objc_const: 0x1008
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_arrayobj: 0x18
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 720
 -  Symbols:   1257
 -  CStrings:  159
 +  Functions: 772
 +  Symbols:   1338
 +  CStrings:  164
- 
 Symbols:
 + -[WPResources requestDisabledSecurityFlags:]
 + GCC_except_table100

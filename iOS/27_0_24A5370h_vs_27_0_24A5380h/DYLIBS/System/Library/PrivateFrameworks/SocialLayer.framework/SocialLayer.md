@@ -2,112 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/SocialLayer.framework/SocialLayer`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd862c` | `0xdace8` | **`+0x26bc`** |
+| `__TEXT.__eh_frame` | `0x2918` | `0x29e0` | **`+0xc8`** |
+| `__TEXT.__oslogstring` | `0xdc47` | `0xdcf7` | **`+0xb0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3af0` | `0x3b50` | **`+0x60`** |
+| `__DATA_DIRTY.__objc_data` | `0x7d0` | `0x820` | **`+0x50`** |
+| `__AUTH.__objc_data` | `0x22f0` | `0x22b0` | **`-0x40`** |
+| `__TEXT.__gcc_except_tab` | `0x1458` | `0x1498` | **`+0x40`** |
+| `__TEXT.__objc_methlist` | `0x64d4` | `0x650c` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0x3538` | `0x3570` | **`+0x38`** |
+| `__AUTH_CONST.__objc_const` | `0xb518` | `0xb548` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x572d` | `0x575d` | **`+0x30`** |
+| `__AUTH_CONST.__cfstring` | `0x2fa0` | `0x2fc0` | **`+0x20`** |
+| `__TEXT.__const` | `0x31b4` | `0x31d4` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0xe70` | `0xe80` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1370` | `0x1368` | **`-0x8`** |
+| `__DATA.__data` | `0x17a0` | `0x17a8` | **`+0x8`** |
+| `__TEXT.__constg_swiftt` | `0x13a8` | `0x13b0` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0x1340` | `0x1346` | **`+0x6`** |
+| `__DATA.__objc_ivar` | `0x624` | `0x628` | **`+0x4`** |
+| `__TEXT.__swift5_capture` | `0x710` | `0x714` | **`+0x4`** |
+| `__TEXT.__swift_as_cont` | `0x1b0` | `0x1b4` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0xfc` | `0x100` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xd862c
--  __TEXT.__objc_methlist: 0x64d4
--  __TEXT.__const: 0x31b4
--  __TEXT.__gcc_except_tab: 0x1458
--  __TEXT.__cstring: 0x572d
-+  __TEXT.__text: 0xdace8
-+  __TEXT.__objc_methlist: 0x650c
-+  __TEXT.__const: 0x31d4
-+  __TEXT.__gcc_except_tab: 0x1498
-+  __TEXT.__cstring: 0x575d
-   __TEXT.__dlopen_cstrs: 0x3a8
--  __TEXT.__oslogstring: 0xdc47
--  __TEXT.__swift5_typeref: 0x1340
--  __TEXT.__constg_swiftt: 0x13a8
-+  __TEXT.__oslogstring: 0xdcf7
-+  __TEXT.__swift5_typeref: 0x1346
-+  __TEXT.__constg_swiftt: 0x13b0
-   __TEXT.__swift5_reflstr: 0x7e3
-   __TEXT.__swift5_fieldmd: 0xd38
-   __TEXT.__swift5_builtin: 0xc8
-   __TEXT.__swift5_assocty: 0x170
-   __TEXT.__swift5_proto: 0x1b4
-   __TEXT.__swift5_types: 0x134
--  __TEXT.__swift5_capture: 0x710
-+  __TEXT.__swift5_capture: 0x714
-   __TEXT.__swift_as_entry: 0xa4
--  __TEXT.__swift_as_ret: 0xfc
--  __TEXT.__swift_as_cont: 0x1b0
-+  __TEXT.__swift_as_ret: 0x100
-+  __TEXT.__swift_as_cont: 0x1b4
-   __TEXT.__swift5_protos: 0x24
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x3538
--  __TEXT.__eh_frame: 0x2918
-+  __TEXT.__unwind_info: 0x3570
-+  __TEXT.__eh_frame: 0x29e0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-213.100.1.0.0
++214.100.1.0.0
 
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x150
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3af0
-+  __DATA_CONST.__objc_selrefs: 0x3b50
-   __DATA_CONST.__objc_protorefs: 0x98
-   __DATA_CONST.__objc_superrefs: 0x278
-   __DATA_CONST.__objc_arraydata: 0x38
--  __DATA_CONST.__got: 0xe70
-+  __DATA_CONST.__got: 0xe80
-   __AUTH_CONST.__const: 0x3728
--  __AUTH_CONST.__cfstring: 0x2fa0
--  __AUTH_CONST.__objc_const: 0xb518
-+  __AUTH_CONST.__cfstring: 0x2fc0
-+  __AUTH_CONST.__objc_const: 0xb548
-   __AUTH_CONST.__objc_intobj: 0xa8
-   __AUTH_CONST.__objc_arrayobj: 0x30
--  __AUTH_CONST.__auth_got: 0x1370
--  __AUTH.__objc_data: 0x22f0
-+  __AUTH_CONST.__auth_got: 0x1368
-+  __AUTH.__objc_data: 0x22b0
-   __AUTH.__data: 0xb70
--  __DATA.__objc_ivar: 0x624
--  __DATA.__data: 0x17a0
-+  __DATA.__objc_ivar: 0x628
-+  __DATA.__data: 0x17a8
-   __DATA.__bss: 0x2a80
-   __DATA.__common: 0x190
--  __DATA_DIRTY.__objc_data: 0x7d0
-+  __DATA_DIRTY.__objc_data: 0x820
-   __DATA_DIRTY.__bss: 0xe8
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5052
--  Symbols:   16864
--  CStrings:  1729
+-  Symbols:   9526
+-  CStrings:  1346
 +  Functions: 5061
-+  Symbols:   16904
-+  CStrings:  1734
- 
-Sections:
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH.__data : content changed
++  Symbols:   9541
++  CStrings:  1350
 Symbols:
 + +[SLDCollaborationAttributionViewRenderer paletteColorsForLevels:badgeColor:peopleColor:]
 + -[SLDImageSymbolConfiguration accentsBadgeLayer]
@@ -135,18 +69,6 @@ Symbols:
 + _OBJC_CLASS_$_UITraitCollection
 + _OBJC_IVAR_$_SLDImageSymbolConfiguration._accentsBadgeLayer
 + ___69-[SLDCollaborationAttributionViewRenderer drawGenericGlyphInContext:]_block_invoke
-+ _objc_msgSend$CGColor
-+ _objc_msgSend$accentsBadgeLayer
-+ _objc_msgSend$alignmentRect
-+ _objc_msgSend$configurationWithName:accentsBadgeLayer:
-+ _objc_msgSend$containsValueForKey:
-+ _objc_msgSend$imageWithPaletteColors:
-+ _objc_msgSend$paletteColorsForLevels:badgeColor:peopleColor:
-+ _objc_msgSend$paletteLevels
-+ _objc_msgSend$performAsCurrentTraitCollection:
-+ _objc_msgSend$setAccentsBadgeLayer:
-+ _objc_msgSend$systemRedColor
-+ _objc_msgSend$traitCollectionWithUserInterfaceStyle:
 + _symbolic _____ 2os6LoggerV
 - _$s11SocialLayer28CollaborationAttributionViewC23updatePlaceholderSymbol5scale6weight9pointSize4nameySo07UIImageH5ScaleV_So0nH6WeightV12CoreGraphics7CGFloatVSStFTf4nnndn_n
 - _$s11SocialLayer38CloudKitCollaborationInitiationRequestC20currentUserCanInvite33_16144F4078A0F0A7F307CC106E3EAB76LLSbyYaF
@@ -167,5 +89,4 @@ CStrings:
 + "currentUserCanInvite(for:logger:)"
 + "person.2"
 - "currentUserCanInvite()"
-
 ```

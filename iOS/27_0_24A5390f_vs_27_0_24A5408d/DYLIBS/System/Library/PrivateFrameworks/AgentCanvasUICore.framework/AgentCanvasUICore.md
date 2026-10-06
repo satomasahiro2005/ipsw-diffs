@@ -2,104 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/AgentCanvasUICore.framework/AgentCanvasUICore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5a4948` | `0x5b5004` | **`+0x106bc`** |
+| `__DATA.__bss` | `0x31d00` | `0x32b70` | **`+0xe70`** |
+| `__TEXT.__const` | `0x44c84` | `0x45a14` | **`+0xd90`** |
+| `__TEXT.__swift5_typeref` | `0x3f5c4` | `0x3ff7e` | **`+0x9ba`** |
+| `__TEXT.__unwind_info` | `0x153c8` | `0x15d58` | **`+0x990`** |
+| `__AUTH_CONST.__const` | `0x2c328` | `0x2c938` | **`+0x610`** |
+| `__TEXT.__constg_swiftt` | `0x16014` | `0x16548` | **`+0x534`** |
+| `__TEXT.__eh_frame` | `0x152d0` | `0x15730` | **`+0x460`** |
+| `__TEXT.__swift5_fieldmd` | `0x121dc` | `0x125c4` | **`+0x3e8`** |
+| `__AUTH.__data` | `0x8200` | `0x85c0` | **`+0x3c0`** |
+| `__DATA.__data` | `0xf6e0` | `0xfa88` | **`+0x3a8`** |
+| `__TEXT.__swift5_reflstr` | `0x10b04` | `0x10ea5` | **`+0x3a1`** |
+| `__TEXT.__cstring` | `0x12ddc` | `0x12ffc` | **`+0x220`** |
+| `__AUTH_CONST.__objc_const` | `0xad30` | `0xaf30` | **`+0x200`** |
+| `__TEXT.__swift5_assocty` | `0x4578` | `0x4698` | **`+0x120`** |
+| `__TEXT.__oslogstring` | `0x3913` | `0x3983` | **`+0x70`** |
+| `__TEXT.__swift5_proto` | `0x20d4` | `0x2144` | **`+0x70`** |
+| `__AUTH.__objc_data` | `0x1518` | `0x1570` | **`+0x58`** |
+| `__DATA_DIRTY.__data` | `0x10e38` | `0x10de8` | **`-0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x43a8` | `0x43f0` | **`+0x48`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1ca0` | `0x1ce8` | **`+0x48`** |
+| `__TEXT.__swift5_types` | `0x1534` | `0x157c` | **`+0x48`** |
+| `__TEXT.__objc_methlist` | `0x1514` | `0x1554` | **`+0x40`** |
+| `__TEXT.__swift5_capture` | `0x7d24` | `0x7d64` | **`+0x40`** |
+| `__DATA.__common` | `0x1178` | `0x11a8` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x9c8` | `0x9f0` | **`+0x28`** |
+| `__TEXT.__swift_as_cont` | `0x994` | `0x9b0` | **`+0x1c`** |
+| `__DATA_CONST.__objc_classlist` | `0x470` | `0x488` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x320` | `0x334` | **`+0x14`** |
+| `__DATA_DIRTY.__common` | `0x331` | `0x321` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x2448` | `0x2440` | **`-0x8`** |
+| `__TEXT.__swift_as_ret` | `0x520` | `0x528` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x118` | `0x11c` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0x530` | `0x534` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -73.0.12.0.0
--  __TEXT.__text: 0x5a4948
--  __TEXT.__objc_methlist: 0x1514
--  __TEXT.__const: 0x44c84
--  __TEXT.__constg_swiftt: 0x16014
--  __TEXT.__swift5_typeref: 0x3f5c4
--  __TEXT.__swift5_builtin: 0x320
--  __TEXT.__swift5_reflstr: 0x10b04
--  __TEXT.__swift5_fieldmd: 0x121dc
--  __TEXT.__swift5_assocty: 0x4578
--  __TEXT.__swift5_proto: 0x20d4
--  __TEXT.__swift5_types: 0x1534
--  __TEXT.__swift5_capture: 0x7d24
--  __TEXT.__cstring: 0x12ddc
--  __TEXT.__swift_as_entry: 0x530
--  __TEXT.__swift_as_ret: 0x520
--  __TEXT.__swift_as_cont: 0x994
--  __TEXT.__swift5_protos: 0x118
--  __TEXT.__oslogstring: 0x3913
 +73.0.24.102.0
-+  __TEXT.__text: 0x5b5004
-+  __TEXT.__objc_methlist: 0x1554
-+  __TEXT.__const: 0x45a14
-+  __TEXT.__constg_swiftt: 0x16548
-+  __TEXT.__swift5_typeref: 0x3ff7e
-+  __TEXT.__swift5_builtin: 0x334
-+  __TEXT.__swift5_reflstr: 0x10ea5
-+  __TEXT.__swift5_fieldmd: 0x125c4
-+  __TEXT.__swift5_assocty: 0x4698
-+  __TEXT.__swift5_proto: 0x2144
-+  __TEXT.__swift5_types: 0x157c
-+  __TEXT.__cstring: 0x12ffc
-+  __TEXT.__swift5_capture: 0x7d64
-+  __TEXT.__swift5_protos: 0x11c
-+  __TEXT.__swift_as_entry: 0x534
-+  __TEXT.__swift_as_ret: 0x528
-+  __TEXT.__swift_as_cont: 0x9b0
-+  __TEXT.__oslogstring: 0x3983
-   __TEXT.__swift5_mpenum: 0x110
--  __TEXT.__unwind_info: 0x153c8
--  __TEXT.__eh_frame: 0x152d0
-+  __TEXT.__unwind_info: 0x15d58
-+  __TEXT.__eh_frame: 0x15730
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9c8
--  __DATA_CONST.__objc_classlist: 0x470
-+  __DATA_CONST.__const: 0x9f0
-+  __DATA_CONST.__objc_classlist: 0x488
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x100
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1ca0
-+  __DATA_CONST.__objc_selrefs: 0x1ce8
-   __DATA_CONST.__objc_protorefs: 0x80
--  __DATA_CONST.__got: 0x2448
--  __AUTH_CONST.__const: 0x2c328
--  __AUTH_CONST.__objc_const: 0xad30
--  __AUTH_CONST.__auth_got: 0x43a8
--  __AUTH.__objc_data: 0x1518
--  __AUTH.__data: 0x8200
--  __DATA.__data: 0xf6e0
--  __DATA.__bss: 0x31d00
--  __DATA.__common: 0x1178
-+  __DATA_CONST.__got: 0x2440
-+  __AUTH_CONST.__const: 0x2c938
-+  __AUTH_CONST.__objc_const: 0xaf30
-+  __AUTH_CONST.__auth_got: 0x43f0
-+  __AUTH.__objc_data: 0x1570
-+  __AUTH.__data: 0x85c0
-+  __DATA.__data: 0xfa88
-+  __DATA.__bss: 0x32b70
-+  __DATA.__common: 0x11a8
-   __DATA_DIRTY.__objc_data: 0xfe8
--  __DATA_DIRTY.__data: 0x10e38
-+  __DATA_DIRTY.__data: 0x10de8
-   __DATA_DIRTY.__bss: 0xe0b0
--  __DATA_DIRTY.__common: 0x331
-+  __DATA_DIRTY.__common: 0x321
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 36676
--  Symbols:   10787
+-  Symbols:   9999
 -  CStrings:  1796
 +  Functions: 37146
-+  Symbols:   10874
++  Symbols:   10078
 +  CStrings:  1808
- 
 Symbols:
 + __DATA__TtC17AgentCanvasUICore20AttachmentSizeBridge
 + __DATA__TtC17AgentCanvasUICore23SupplementalRevealModel
@@ -173,18 +127,6 @@ Symbols:
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVyAHyAHyAA6ZStackVyAA05TupleI0VyAHyAHyAA16RoundedRectangleVAA24_ForegroundStyleModifierVyAA017HierarchicalShapeoP0VyAA010BackgroundO0VGGGAA013_TraitWritingP0VyAA010TransitionT3KeyVGGSg_AA012_ConditionalI0VyAHyAcAE8staticIf_4thenQrqd__m_qd_0_xXEtAA0C14InputPredicateRd__AaBRd_0_r0_lFQOyAcAE26_textSelectionGroupItem_v15valueQrqd___t16CoreTransferable12TransferableRd__lFQOyAcAE9draggableyQrqd__yXAA10_A11_Rd__lFQOy17AgentCanvasUICore7CroppedVyAHyA13_16CachedAsyncImageVyAHyAA5ImageVAA017_AppearanceActionP0VGAA05EmptyC0VGA13_011ImageRevealP033_9D1D4C528E003F418B9B599F8D1E7C42LLVGG_A13_38TransferableFullResolutionImagePromiseVQo__A32_Qo__A13_25ShowDebugOverlayPredicate33_F415B738CD8282A43EFDA6121F616B9FLLVAHyA34_A13_012DebugOverlayP0A36_LLVyA32_GGQo_A13_024RichTextImageContextMenuP0VGA30_GSgAHyA13_28ImageLoadingErrorPlaceholderVA28_GSgQPGGAA11_ClipEffectVyAA017ContainerRelativeR0VGGAA08_OverlayP0VyAHyA13_013VibrantBorderR033_7A8F265CA9E631082407AF389C1E0A5DLLVAA14_OpacityEffectVGSgGGAA010_ContainerrP0VyANGG_SbQo__SbQo_HO
 + _keypath_get_selector_enableCanvasTranscriptCaching
 + _keypath_get_selector_sharingRestrictedImageMaxSize
-+ _objc_msgSend$_enableCanvasTranscriptCaching
-+ _objc_msgSend$_sharingRestrictedImageMaxSize
-+ _objc_msgSend$_updateActivityItems:
-+ _objc_msgSend$alpha
-+ _objc_msgSend$enableCanvasTranscriptCaching
-+ _objc_msgSend$isHidden
-+ _objc_msgSend$setEnableCanvasTranscriptCaching:
-+ _objc_msgSend$setSharingRestrictedImageMaxSize:
-+ _objc_msgSend$set_enableCanvasTranscriptCaching:
-+ _objc_msgSend$set_sharingRestrictedImageMaxSize:
-+ _objc_msgSend$sharingRestrictedImageMaxSize
-+ _objc_msgSend$windowLevel
 + _symbolic $s17AgentCanvasUICore27RichTextInteractionReporterP
 + _symbolic SDySS_____G 12CoreGraphics7CGFloatV
 + _symbolic SDy_____ypG 17AgentCanvasUICore0B19TranscriptViewCacheC11CombinedKey33_1A6C3D1D6CE90946F1197C31113C782ALLV
@@ -400,10 +342,6 @@ Symbols:
 - _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE4task2id4name8priority4file4line_Qrqd___SSSgScPSSSiyyYaYAcntSQRd__lFQOyAA6ZStackVyAA19_ConditionalContentVyAQyAA08ModifiedP0VyASyAA5GroupVyAQyAcAE0D4DragyQrSo14NSItemProviderCycFQOyASyASyASyAcAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOy17AgentCanvasUICore012RichTextLinkC13RepresentableV_Qo_AA0Y18AttachmentModifierVGAA11_ClipEffectVyAA16RoundedRectangleVGGAA01_P17ShapeKindModifierVyA11_GG_Qo_A1_016LinkLoadingErrorC033_DC43A16A0CF8723BE292EF86F4CE23BALLVGGAA12_FrameLayoutVGA12_GA1_012RichTextFileC0VGAQyASyASyASyAA08ProgressC0VyAA05EmptyC0VA34_GA25_GA12_GA6_GASyASyA21_A25_GA12_GGGG_AMQo__SbQo_HO
 - _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVyAHyAHyAA6ZStackVyAA05TupleI0VyAHyAHyAA16RoundedRectangleVAA24_ForegroundStyleModifierVyAA017HierarchicalShapeoP0VyAA010BackgroundO0VGGGAA013_TraitWritingP0VyAA010TransitionT3KeyVGGSg_AHyAcAE8staticIf_4thenQrqd__m_qd_0_xXEtAA0C14InputPredicateRd__AaBRd_0_r0_lFQOyAcAE26_textSelectionGroupItem_v15valueQrqd___t16CoreTransferable12TransferableRd__lFQOyAcAE9draggableyQrqd__yXAA8_A9_Rd__lFQOy17AgentCanvasUICore7CroppedVyAHyA11_16CachedAsyncImageVyAHyAA5ImageVAA017_AppearanceActionP0VGAA05EmptyC0VGA11_011ImageRevealP033_9D1D4C528E003F418B9B599F8D1E7C42LLVGG_A11_38TransferableFullResolutionImagePromiseVQo__A30_Qo__A11_25ShowDebugOverlayPredicate33_F415B738CD8282A43EFDA6121F616B9FLLVAHyA32_A11_012DebugOverlayP0A34_LLVyA30_GGQo_A11_024RichTextImageContextMenuP0VGSgAHyA11_28ImageLoadingErrorPlaceholderVA26_GSgQPGGAA11_ClipEffectVyAA017ContainerRelativeR0VGGAA08_OverlayP0VyAHyA11_013VibrantBorderR033_7A8F265CA9E631082407AF389C1E0A5DLLVAA14_OpacityEffectVGSgGGAA010_ContainerrP0VyANGG_SbQo__SbQo_HO
 - _keypath_get_selector_enableCanvasVerticalOffset
-- _objc_msgSend$_enableCanvasVerticalOffset
-- _objc_msgSend$enableCanvasVerticalOffset
-- _objc_msgSend$setEnableCanvasVerticalOffset:
-- _objc_msgSend$set_enableCanvasVerticalOffset:
 - _symbolic SDySi_____G So6CGRectV
 - _symbolic SDySi_____GSg So6CGRectV
 - _symbolic Si4Item______2ID_____QZ_____yAFyAFyAFyAFyAFyAFyAFyAFyAFyAFyAFy_____y_____y_____yAFyAFyAFy__________G_____G_____ySbGGGSg_AFyAFyAFyAFy_____yAFyAFy_____y_____yxq_q0_q1_q2__AIyAFyAFyAFyAFy_____y_____y_____y_____y_____yq__Qo_______Qo_q_GG______AFyA______GQo______G_____GA6_G_____y_____yAaBQzq0_GSgGGGG_Qo______yA11_q1_q2_GGAKG______AFyA22______y_____GGQo_AOy_____GG_____G_____G_____y_____A37_SQ12CoreGraphicsyHCg_GGQPGG_____G_____yxGG_____G_____yAEGGA32_GA34_G_____GAPGAPG_____y_____GGA32_G_____GIegynr_ 17AgentCanvasUICore0B20TranscriptDataSourceP s12IdentifiableP 7SwiftUI15ModifiedContentV AF6VStackV AF05TupleK0V AA13AlignmentViewV AA0bd10TimeAnchorO0V AF14_PaddingLayoutV AF14_OpacityEffectV AF18_AnimationModifierV AF0O0PAFE8staticIf_4thenQrqd__m_qd_0_xXEtAF0O14InputPredicateRd__AfWRd_0_r0_lFQO AxFE20accessibilityElement8childrenQrAF26AccessibilityChildBehaviorV_tFQO AA0bdO0V04ItemO033_768BA63EE053D7643843F047FD77D77FLLV AxFEAY_AZQrqd__m_qd_0_xXEtAFA_Rd__AfWRd_0_r0_lFQO AF5GroupV AF012_ConditionalK0V AxFE13textSelectionyQrqd__AF17TextSelectabilityRd__lFQO AxFE22_textSelectionGroup_v1QryFQO AF24EnabledTextSelectabilityV AA25ShowDebugOverlayPredicate33_866E818E8B6758BDDF27E99FCB0682EFLLV AA012DebugOverlayW0A19_LLV AA035ResolvingMarkersOnTextSelectionCopyoW033_97DD36B287638FDFF33F1B0A466282EELLV AF017_AppearanceActionW0V AA021ContextMenuOrbOverlapW033_F842A5E53F131498B11DFA7D74C2B649LLV AA0B15ItemContextMenuV AA0b13ItemQuickMenuW033_8F6882F3E327ACFAB4A872B2277EC6B8LLV AA46ShouldShowVerticalSpacingDebugOverlayPredicate33_E6BF20B5E53716CB81E35F545BB39B7ALLV AF08_OverlayW0V AA27VerticalSpacingDebugOverlayA37_LLV AF11ColorSchemeO AF010_FlexFrameS0V AF010_FixedSizeS0V AF015_GeometryActionW0V So6CGSizeV AA0B22ItemGlobalFrameTracker33_F61E42F7B88A8A4EA0B123E574D93940LLV AA017GeometryReportingW0A7_LLV AA013CollapsedItemW0A7_LLV AF016_MatchedGeometryU0V AA024TransientStartItemAppearW0A7_LLV AF013_TraitWritingW0V AF18TransitionTraitKeyV AA022DynamicHeightContaineroW033_700CEAAAD5A3AD5FC4580EA62391B2DALLV

@@ -2,61 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/MobileAssetDaemon.framework/XPCServices/com.apple.MobileAsset.DownloadService.Builtin.xpc/com.apple.MobileAsset.DownloadService.Builtin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__oslogstring`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__auth_got`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21b68` | `0x21f04` | **`+0x39c`** |
+| `__DATA_CONST.__cfstring` | `0x2dc0` | `0x3060` | **`+0x2a0`** |
+| `__TEXT.__cstring` | `0x4421` | `0x4614` | **`+0x1f3`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_got`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__oslogstring`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -2215.0.20.0.0
--  __TEXT.__text: 0x214bc
 +2215.40.18.0.0
-+  __TEXT.__text: 0x21858
-   __TEXT.__auth_stubs: 0xda0
-   __TEXT.__objc_stubs: 0x46e0
-   __TEXT.__objc_methlist: 0x1ea4
-   __TEXT.__const: 0x69c
--  __TEXT.__cstring: 0x4421
-+  __TEXT.__cstring: 0x4614
-   __TEXT.__gcc_except_tab: 0x1184
-   __TEXT.__objc_methname: 0x5ed2
-   __TEXT.__oslogstring: 0x61e3
 
-   __TEXT.__unwind_info: 0x8c0
-   __TEXT.__eh_frame: 0xc4
-   __DATA_CONST.__const: 0x860
--  __DATA_CONST.__cfstring: 0x2dc0
-+  __DATA_CONST.__cfstring: 0x3060
-   __DATA_CONST.__objc_classlist: 0x88
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x80
-
-   - /usr/lib/swift/libswiftos.dylib
-   Functions: 687
-   Symbols:   352
 -  CStrings:  1999
 +  CStrings:  2020
- 
 Functions:
-~ sub_10000248c : 1744 -> 2668
+~ sub_1000024bc : 1744 -> 2668
 CStrings:
 + "AutoAuthorization"
 + "AutoConnectionObserver"

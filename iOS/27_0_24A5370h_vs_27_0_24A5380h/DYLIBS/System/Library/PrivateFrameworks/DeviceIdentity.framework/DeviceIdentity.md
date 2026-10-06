@@ -2,82 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/DeviceIdentity.framework/DeviceIdentity`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c524` | `0x1d9c8` | **`+0x14a4`** |
+| `__TEXT.__cstring` | `0x3f78` | `0x429d` | **`+0x325`** |
+| `__AUTH_CONST.__cfstring` | `0x4580` | `0x4860` | **`+0x2e0`** |
+| `__DATA_CONST.__got` | `0x0` | `0x248` | **`+0x248`** |
+| `__TEXT.__gcc_except_tab` | `0x950` | `0xaa0` | **`+0x150`** |
+| `__DATA_CONST.__const` | `0x3c48` | `0x3ca0` | **`+0x58`** |
+| `__TEXT.__unwind_info` | `0x3f0` | `0x438` | **`+0x48`** |
+| `__AUTH_CONST.__auth_got` | `0x488` | `0x4a0` | **`+0x18`** |
+| `__AUTH.__data` | `0x10` | `—` | **`-0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6a0` | `0x6b0` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0x10` | `0x20` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1c524
-+  __TEXT.__text: 0x1d9c8
-   __TEXT.__objc_methlist: 0x504
--  __TEXT.__cstring: 0x3f78
-+  __TEXT.__cstring: 0x429d
-+  __TEXT.__gcc_except_tab: 0xaa0
-   __TEXT.__const: 0xe1ba
-   __TEXT.__ustring: 0x4
-   __TEXT.__oslogstring: 0x676
--  __TEXT.__gcc_except_tab: 0x950
-   __TEXT.__dlopen_cstrs: 0x134
--  __TEXT.__unwind_info: 0x3f0
-+  __TEXT.__unwind_info: 0x438
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3c48
-+  __DATA_CONST.__const: 0x3ca0
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6a0
-+  __DATA_CONST.__objc_selrefs: 0x6b0
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__objc_arraydata: 0x5f8
--  __DATA_CONST.__got: 0x0
-+  __DATA_CONST.__got: 0x248
-   __AUTH_CONST.__const: 0x100
--  __AUTH_CONST.__cfstring: 0x4580
-+  __AUTH_CONST.__cfstring: 0x4860
-   __AUTH_CONST.__objc_const: 0x7b0
-   __AUTH_CONST.__objc_arrayobj: 0x90
-   __AUTH_CONST.__objc_intobj: 0x1f8
--  __AUTH_CONST.__auth_got: 0x488
--  __AUTH.__data: 0x10
-+  __AUTH_CONST.__auth_got: 0x4a0
-   __DATA.__objc_ivar: 0x54
-   __DATA.__data: 0xd4
-   __DATA.__bss: 0x90
-   __DATA_DIRTY.__objc_data: 0xa0
--  __DATA_DIRTY.__data: 0x10
-+  __DATA_DIRTY.__data: 0x20
-   __DATA_DIRTY.__bss: 0x58
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CryptoTokenKit.framework/CryptoTokenKit
+-1144.0.0.0.0
++1145.0.1.0.0
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 272
--  Symbols:   1404
--  CStrings:  1216
+-  Symbols:   970
+-  CStrings:  662
 +  Functions: 288
-+  Symbols:   1453
-+  CStrings:  1273
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   998
++  CStrings:  696
 Symbols:
 + GCC_except_table12
 + GCC_except_table19
@@ -105,8 +58,6 @@ Symbols:
 + _kMAOptionsBAAUniqueChipID
 + _kMAOptionsBAAUseIM4C
 + _kMAOptionsBAAVMIdentityAttestation
-+ _objc_msgSend$dictionaryWithDictionary:
-+ _objc_msgSend$unsignedLongLongValue
 + _objc_retain_x24
 + _objc_retain_x25
 + _udid_from_chipid_and_ecid
@@ -150,5 +101,4 @@ CStrings:
 + "scrt"
 + "ucrt"
 - "iOS Device Activator (MobileActivation-1144)"
-
 ```

@@ -2,75 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/ExclavePolarisBufferService.framework/ExclavePolarisBufferService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4e980` | `0x42728` | **`-0xc258`** |
+| `__AUTH_CONST.__const` | `0x4640` | `0x1ba0` | **`-0x2aa0`** |
+| `__TEXT.__swift5_capture` | `0x1110` | `—` | **`-0x1110`** |
+| `__TEXT.__oslogstring` | `0x2c4` | `0x108` | **`-0x1bc`** |
+| `__DATA_DIRTY.__data` | `0x2318` | `0x21c8` | **`-0x150`** |
+| `__AUTH_CONST.__objc_const` | `0x1d80` | `0x1c48` | **`-0x138`** |
+| `__TEXT.__const` | `0x26f8` | `0x2618` | **`-0xe0`** |
+| `__TEXT.__constg_swiftt` | `0x1b20` | `0x1a5c` | **`-0xc4`** |
+| `__TEXT.__unwind_info` | `0xb70` | `0xad0` | **`-0xa0`** |
+| `__TEXT.__cstring` | `0x326b` | `0x31db` | **`-0x90`** |
+| `__TEXT.__swift5_typeref` | `0xe40` | `0xdc2` | **`-0x7e`** |
+| `__AUTH_CONST.__auth_got` | `0x580` | `0x530` | **`-0x50`** |
+| `__DATA_CONST.__const` | `0xf8` | `0xa8` | **`-0x50`** |
+| `__TEXT.__swift5_fieldmd` | `0x1490` | `0x1450` | **`-0x40`** |
+| `__TEXT.__eh_frame` | `0x1d28` | `0x1cf8` | **`-0x30`** |
+| `__TEXT.__swift5_reflstr` | `0x14b0` | `0x1480` | **`-0x30`** |
+| `__DATA.__data` | `0x228` | `0x230` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0xf8` | `0xf0` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0x13c` | `0x138` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -256.0.3.0.0
--  __TEXT.__text: 0x4e980
--  __TEXT.__const: 0x26f8
--  __TEXT.__constg_swiftt: 0x1b20
--  __TEXT.__swift5_typeref: 0xe40
--  __TEXT.__swift5_reflstr: 0x14b0
--  __TEXT.__swift5_fieldmd: 0x1490
 +256.0.5.0.0
-+  __TEXT.__text: 0x42728
-+  __TEXT.__const: 0x2618
-+  __TEXT.__constg_swiftt: 0x1a5c
-+  __TEXT.__swift5_typeref: 0xdc2
-+  __TEXT.__swift5_reflstr: 0x1480
-+  __TEXT.__swift5_fieldmd: 0x1450
-   __TEXT.__swift5_builtin: 0x104
-+  __TEXT.__oslogstring: 0x108
-   __TEXT.__swift5_proto: 0x148
--  __TEXT.__swift5_types: 0x13c
--  __TEXT.__cstring: 0x326b
-+  __TEXT.__swift5_types: 0x138
-+  __TEXT.__cstring: 0x31db
-   __TEXT.__swift5_assocty: 0x78
-   __TEXT.__swift5_mpenum: 0x60
--  __TEXT.__swift5_capture: 0x1110
--  __TEXT.__oslogstring: 0x2c4
-   __TEXT.__swift5_protos: 0x38
--  __TEXT.__unwind_info: 0xb70
--  __TEXT.__eh_frame: 0x1d28
-+  __TEXT.__unwind_info: 0xad0
-+  __TEXT.__eh_frame: 0x1cf8
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xf8
--  __DATA_CONST.__objc_classlist: 0xf8
-+  __DATA_CONST.__const: 0xa8
-+  __DATA_CONST.__objc_classlist: 0xf0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x4640
--  __AUTH_CONST.__objc_const: 0x1d80
--  __AUTH_CONST.__auth_got: 0x580
-+  __AUTH_CONST.__const: 0x1ba0
-+  __AUTH_CONST.__objc_const: 0x1c48
-+  __AUTH_CONST.__auth_got: 0x530
-   __AUTH.__data: 0x178
--  __DATA.__data: 0x228
-+  __DATA.__data: 0x230
-   __DATA.__bss: 0x2100
-   __DATA_DIRTY.__objc_data: 0x410
--  __DATA_DIRTY.__data: 0x2318
-+  __DATA_DIRTY.__data: 0x21c8
-   __DATA_DIRTY.__common: 0x50
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/PolarisRuntime.framework/PolarisRuntime
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 1305
 -  Symbols:   3178
 -  CStrings:  338
 +  Functions: 981
 +  Symbols:   3005
 +  CStrings:  321
- 
 Symbols:
 + _$s27ExclavePolarisBufferService0B10SignposterV13beginInterval_2idAA0b8SignpostG0VAA0bI0O0G0OyXK_2os12OSSignpostIDVtF04$s27abc100Service0bcD7HandlerC24relinquishWriterResource8writerId5index05frameJ0ys6UInt64V_s6UInt32VAItKFAA0B8i2O8G7OyXEfu_AA0bcdP0Cs0V0VASTf1cnn_n
 + _$s27ExclavePolarisBufferService0B10SignposterV13beginInterval_2idAA0b8SignpostG0VAA0bI0O0G0OyXK_2os12OSSignpostIDVtF04$s27abc107Service0bcD7HandlerC21acquireReaderResource8readerId05frameJ0AA21PBSAcquireResultArrayVs6UInt64V_AJtKFAA0B8i2O8G7OyXEfu_AA0bcdP0Cs6UInt64VASTf1cnn_n

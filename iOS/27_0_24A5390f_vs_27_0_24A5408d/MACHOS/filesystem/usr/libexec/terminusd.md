@@ -2,108 +2,67 @@
 
 > `/usr/libexec/terminusd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1fcc44` | `0x200eb8` | **`+0x4274`** |
+| `__TEXT.__cstring` | `0x5185b` | `0x525cf` | **`+0xd74`** |
+| `__TEXT.__objc_methname` | `0x138a5` | `0x13205` | **`-0x6a0`** |
+| `__DATA.__objc_const` | `0x19c38` | `0x1a0e8` | **`+0x4b0`** |
+| `__DATA_CONST.__cfstring` | `0xdba0` | `0xdf80` | **`+0x3e0`** |
+| `__TEXT.__objc_stubs` | `0x9400` | `0x9020` | **`-0x3e0`** |
+| `__TEXT.__objc_methlist` | `0x5be4` | `0x58c4` | **`-0x320`** |
+| `__DATA.__objc_selrefs` | `0x2ee0` | `0x2d00` | **`-0x1e0`** |
+| `__TEXT.__objc_methtype` | `0x4467` | `0x4346` | **`-0x121`** |
+| `__DATA.__objc_data` | `0x3800` | `0x38f0` | **`+0xf0`** |
+| `__DATA.__objc_ivar` | `0x1fdc` | `0x2074` | **`+0x98`** |
+| `__TEXT.__gcc_except_tab` | `0x61f4` | `0x628c` | **`+0x98`** |
+| `__DATA_CONST.__const` | `0x4e20` | `0x4eb0` | **`+0x90`** |
+| `__TEXT.__objc_classname` | `0x148e` | `0x14dc` | **`+0x4e`** |
+| `__DATA_CONST.__objc_classlist` | `0x5a0` | `0x5b8` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x3170` | `0x3188` | **`+0x18`** |
+| `__DATA.__bss` | `0xcb8` | `0xcc8` | **`+0x10`** |
+| `__TEXT.__const` | `0x72c` | `0x73c` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__auth_got`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__auth_got`
-- `__DATA_CONST.__got`
-- `__DATA.__data`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -914.0.22.0.1
--  __TEXT.__text: 0x1fcc44
 +914.0.34.0.4
-+  __TEXT.__text: 0x200eb8
-   __TEXT.__auth_stubs: 0x3ed0
--  __TEXT.__objc_stubs: 0x9400
--  __TEXT.__objc_methlist: 0x5be4
--  __TEXT.__const: 0x72c
-+  __TEXT.__objc_stubs: 0x9020
-+  __TEXT.__objc_methlist: 0x58c4
-+  __TEXT.__const: 0x73c
-   __TEXT.__swift5_typeref: 0x4ce
--  __TEXT.__cstring: 0x5185b
-+  __TEXT.__cstring: 0x525cf
-   __TEXT.__swift5_capture: 0x4a4
--  __TEXT.__objc_methtype: 0x4467
-+  __TEXT.__objc_methtype: 0x4346
-   __TEXT.__oslogstring: 0x2dee
-   __TEXT.__constg_swiftt: 0x1f8
-   __TEXT.__swift5_reflstr: 0x8b
-   __TEXT.__swift5_fieldmd: 0xf0
--  __TEXT.__objc_classname: 0x148e
--  __TEXT.__objc_methname: 0x138a5
-+  __TEXT.__objc_classname: 0x14dc
-+  __TEXT.__objc_methname: 0x13205
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift5_proto: 0x18
 
-   __TEXT.__swift_as_entry: 0x50
-   __TEXT.__swift_as_ret: 0x4c
-   __TEXT.__swift_as_cont: 0xdc
--  __TEXT.__gcc_except_tab: 0x61f4
--  __TEXT.__unwind_info: 0x3170
-+  __TEXT.__gcc_except_tab: 0x628c
-+  __TEXT.__unwind_info: 0x3188
-   __TEXT.__eh_frame: 0xe90
--  __DATA_CONST.__const: 0x4e20
--  __DATA_CONST.__cfstring: 0xdba0
--  __DATA_CONST.__objc_classlist: 0x5a0
-+  __DATA_CONST.__const: 0x4eb0
-+  __DATA_CONST.__cfstring: 0xdf80
-+  __DATA_CONST.__objc_classlist: 0x5b8
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x1a0
-   __DATA_CONST.__objc_imageinfo: 0x8
-
-   __DATA_CONST.__auth_got: 0x1f78
-   __DATA_CONST.__got: 0xec0
-   __DATA_CONST.__auth_ptr: 0x1d8
--  __DATA.__objc_const: 0x19c38
--  __DATA.__objc_selrefs: 0x2ee0
--  __DATA.__objc_ivar: 0x1fdc
--  __DATA.__objc_data: 0x3800
-+  __DATA.__objc_const: 0x1a0e8
-+  __DATA.__objc_selrefs: 0x2d00
-+  __DATA.__objc_ivar: 0x2074
-+  __DATA.__objc_data: 0x38f0
-   __DATA.__data: 0x1938
--  __DATA.__bss: 0xcb8
-+  __DATA.__bss: 0xcc8
-   __DATA.__common: 0x18
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4016
 +  Functions: 3973
-   Symbols:   1536
--  CStrings:  11649
-+  CStrings:  11674
- 
+
+-  CStrings:  11650
++  CStrings:  11675
 Symbols:
 + _nrXPCKeyAllDevices
 - _nrXPCKeyPersistentMesh
@@ -153,9 +112,11 @@ CStrings:
 + "-[NRLinkManagerBluetooth startConnectPeripheralWatchdogIfNeeded]"
 + "-[NRLinkManagerBluetooth stopConnectPeripheralWatchdog]"
 + "-[NRVirtualMulticastManager registerPeerWithAddress:interfaceName:name:routeBitmap:linkType:completion:]_block_invoke"
++ "21:58:54"
 + "914.0.34.0.4"
 + "@\"NRAnalyticsMeshConvergence\""
 + "@\"NRAnalyticsMeshDataSession\""
++ "Aug  5 2026"
 + "Failed to serialize all devices"
 + "Mesh already registered with a different identifier"
 + "Mesh registered with a different identifier"
@@ -254,9 +215,11 @@ CStrings:
 - "-[NRBabelManager updateDistributees:]"
 - "-[NRLinkDirector setPersistentMesh:meshIdentifier:operationalProperties:]"
 - "-[NRVirtualMulticastManager registerPeerWithAddress:interfaceName:name:routeBitmap:completion:]_block_invoke"
+- "21:55:12"
 - "914.0.22.0.1"
 - "B24@0:8@?16"
 - "B40@0:8r*16Q24^(sockaddr_in_4_6={sockaddr=CC[14c]}{__sockaddr_header=CC}{sockaddr_in=CCS{in_addr=I}[8c]}{sockaddr_in6=CCSI{in6_addr=(?=[16C][8S][4I])}I})32"
+- "Jul 14 2026"
 - "T@\"NSArray\",&,N,V_routeEntriesSnapshot"
 - "T@\"NSMutableArray\",&,N,V_peers"
 - "T@\"NSMutableArray\",&,N,V_receivedDatagrams"

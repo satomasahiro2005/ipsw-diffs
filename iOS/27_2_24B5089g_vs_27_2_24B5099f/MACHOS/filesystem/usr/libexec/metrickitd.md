@@ -2,15 +2,14 @@
 
 > `/usr/libexec/metrickitd`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__DATA.__objc_selrefs`
+
+### Other Changes
 
 ```diff
 
 -369.0.0.0.0
 +369.40.1.0.0
-   __TEXT.__text: 0xe4
-   __TEXT.__auth_stubs: 0x80
-   __TEXT.__objc_stubs: 0xa0
 ```

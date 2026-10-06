@@ -2,52 +2,39 @@
 
 > `/usr/libexec/wifip2pd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5e5574` | `0x5e52f8` | **`-0x27c`** |
+| `__TEXT.__eh_frame` | `0x1e65c` | `0x1e664` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
 - `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__cstring`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__cstring`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
- 885.85.4.1.0
--  __TEXT.__text: 0x5e5574
-+  __TEXT.__text: 0x5e52f8
-   __TEXT.__auth_stubs: 0x5240
-   __TEXT.__objc_stubs: 0x4720
-   __TEXT.__objc_methlist: 0x1bf4
-
-   __TEXT.__swift_as_ret: 0x168
-   __TEXT.__swift_as_cont: 0x5f4
-   __TEXT.__unwind_info: 0x107e8
--  __TEXT.__eh_frame: 0x1e65c
-+  __TEXT.__eh_frame: 0x1e664
-   __DATA_CONST.__const: 0x39f28
-   __DATA_CONST.__cfstring: 0x20
-   __DATA_CONST.__objc_classlist: 0x1e0
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 24965
 +  Functions: 24922
-   Symbols:   2319
-   CStrings:  5523
- 
 Symbols:
 + _swift_retain_x12
 - _swift_retain_x11

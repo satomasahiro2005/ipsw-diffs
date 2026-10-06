@@ -2,18 +2,24 @@
 
 > `/System/Library/Audio/MIDI Drivers/AppleMIDIBluetoothDriver.plugin/AppleMIDIBluetoothDriver`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd854` | `0xd850` | **`-0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__const`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xd854
-+  __TEXT.__text: 0xd850
-   __TEXT.__realtime: 0x338
-   __TEXT.__auth_stubs: 0x6b0
-   __TEXT.__objc_stubs: 0x11c0
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
+-329.0.0.0.0
++330.0.0.0.0
 Functions:
 ~ sub_a7a4 : 1720 -> 1716
-
 ```

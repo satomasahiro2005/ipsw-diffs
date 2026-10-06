@@ -2,56 +2,43 @@
 
 > `/System/Library/FlowTools/SnippetService/ResponsePlugins/SiriTimeSnippetProviderPlugin.bundle/SiriTimeSnippetProviderPlugin`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3a2b0` | `0x39dbc` | **`-0x4f4`** |
+| `__TEXT.__auth_stubs` | `0x1450` | `0x1420` | **`-0x30`** |
+| `__TEXT.__eh_frame` | `0x1f48` | `0x1f18` | **`-0x30`** |
+| `__DATA_CONST.__auth_got` | `0xa30` | `0xa18` | **`-0x18`** |
+| `__DATA_CONST.__got` | `0x328` | `0x320` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0xcb8` | `0xcb0` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x3a2b0
--  __TEXT.__auth_stubs: 0x1450
-+  __TEXT.__text: 0x39dbc
-+  __TEXT.__auth_stubs: 0x1420
-   __TEXT.__objc_stubs: 0x140
-   __TEXT.__const: 0x1424
-   __TEXT.__swift5_typeref: 0x46c
+-3600.26.5.0.0
++3600.26.8.0.0
 
-   __TEXT.__swift5_capture: 0x30
-   __TEXT.__objc_methname: 0x213
-   __TEXT.__objc_methtype: 0x1
--  __TEXT.__unwind_info: 0xcb8
--  __TEXT.__eh_frame: 0x1f48
-+  __TEXT.__unwind_info: 0xcb0
-+  __TEXT.__eh_frame: 0x1f18
-   __DATA_CONST.__const: 0xff9
-   __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0xa30
--  __DATA_CONST.__got: 0x328
-+  __DATA_CONST.__auth_got: 0xa18
-+  __DATA_CONST.__got: 0x320
-   __DATA_CONST.__auth_ptr: 0x440
-   __DATA.__objc_const: 0x620
-   __DATA.__objc_selrefs: 0x50
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 939
--  Symbols:   7365
+-  Symbols:   2707
 +  Functions: 935
-+  Symbols:   7341
-   CStrings:  172
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
++  Symbols:   2699
 Symbols:
 + _$s18AppIntentsServices0A20IntentPerformOptionsV19allowLiveActivities019allowsPrepareBeforeE024assistantDismissalPolicy21confirmationCondition26connectionOperationTimeout18donateToTranscript19executionIdentifier19exportedContentType15interactionMode4kind015preferredBundleY024preferNoticePresentation21requestUnlockIfNeeded18snippetEnvironmentACSb_SbSo011LNAssistantnO0VSgSo029LNActionExecutionConfirmationQ0VSdSbSg10Foundation4UUIDVSg22UniformTypeIdentifiers6UTTypeVSgSo17LNInteractionModeVSo22LNTranscriptActionKindVSSSgS2bAA18SnippetEnvironmentVSgtcfC
 + _$s23FlowToolsSnippetService0cD7ContextV24outputGenerationManifest07SiriKitA006OutputgH0Vvg
@@ -77,5 +64,4 @@ Symbols:
 - _$s29SiriTimeSnippetProviderPlugin09StopwatchC7HandlerV6handle7payload0A7KitFlow6Output_p012IntelligenceK014SystemResponseV_tYaFTY2_
 - _$s29SiriTimeSnippetProviderPlugin09StopwatchC7HandlerV6handle7payload0A7KitFlow6Output_p012IntelligenceK014SystemResponseV_tYaFTY3_
 - _$s29SiriTimeSnippetProviderPlugin09StopwatchC7HandlerV6handle7payload0A7KitFlow6Output_p012IntelligenceK014SystemResponseV_tYaFTu
-
 ```

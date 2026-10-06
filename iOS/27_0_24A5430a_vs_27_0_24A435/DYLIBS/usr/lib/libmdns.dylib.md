@@ -2,14 +2,15 @@
 
 > `/usr/lib/libmdns.dylib`
 
-```diff
+### Section Size Changes
 
- 3111.0.5.0.1
--  __TEXT.__text: 0x31164
-+  __TEXT.__text: 0x31168
-   __TEXT.__objc_methlist: 0x2ec
-   __TEXT.__cstring: 0x21c9
-   __TEXT.__const: 0x1d0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x31164` | `0x31168` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __DNSMessageExtractRecordEx : 1616 -> 1620
 ```

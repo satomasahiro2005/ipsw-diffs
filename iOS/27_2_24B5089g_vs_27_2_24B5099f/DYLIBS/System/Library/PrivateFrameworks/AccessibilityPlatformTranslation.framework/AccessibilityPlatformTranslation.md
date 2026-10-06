@@ -2,64 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/AccessibilityPlatformTranslation.framework/AccessibilityPlatformTranslation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15a0c` | `0x16ac4` | **`+0x10b8`** |
+| `__AUTH_CONST.__objc_const` | `0x1430` | `0x17c0` | **`+0x390`** |
+| `__TEXT.__objc_methlist` | `0x11dc` | `0x1354` | **`+0x178`** |
+| `__DATA_CONST.__objc_selrefs` | `0xe70` | `0xf18` | **`+0xa8`** |
+| `__AUTH.__objc_data` | `0x280` | `0x320` | **`+0xa0`** |
+| `__TEXT.__oslogstring` | `0x6ab` | `0x726` | **`+0x7b`** |
+| `__DATA.__objc_ivar` | `0x108` | `0x140` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0x4f0` | `0x510` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x380` | `0x390` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x40` | `0x50` | **`+0x10`** |
+| `__TEXT.__cstring` | `0x26ae` | `0x26b1` | **`+0x3`** |
+
+### Other Changes
+
 ```diff
 
 -591.4.2.0.0
--  __TEXT.__text: 0x151e4
--  __TEXT.__objc_methlist: 0x11dc
 +591.4.4.0.0
-+  __TEXT.__text: 0x1626c
-+  __TEXT.__objc_methlist: 0x1354
-   __TEXT.__const: 0x5d8
-   __TEXT.__dlopen_cstrs: 0x6a
-   __TEXT.__gcc_except_tab: 0x2a0
--  __TEXT.__cstring: 0x26ae
--  __TEXT.__oslogstring: 0x6ab
--  __TEXT.__unwind_info: 0x608
-+  __TEXT.__cstring: 0x26b1
-+  __TEXT.__oslogstring: 0x726
-+  __TEXT.__unwind_info: 0x640
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xac0
--  __DATA_CONST.__objc_classlist: 0x40
-+  __DATA_CONST.__objc_classlist: 0x50
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xe70
-+  __DATA_CONST.__objc_selrefs: 0xf18
-   __DATA_CONST.__objc_superrefs: 0x38
-   __DATA_CONST.__objc_arraydata: 0x4b8
--  __DATA_CONST.__got: 0x380
-+  __DATA_CONST.__got: 0x390
-   __AUTH_CONST.__const: 0x2c0
-   __AUTH_CONST.__cfstring: 0x2680
--  __AUTH_CONST.__objc_const: 0x1430
-+  __AUTH_CONST.__objc_const: 0x17c0
-   __AUTH_CONST.__objc_intobj: 0xa98
-   __AUTH_CONST.__objc_arrayobj: 0x78
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x280
--  __DATA.__objc_ivar: 0x108
-+  __AUTH.__objc_data: 0x320
-+  __DATA.__objc_ivar: 0x140
-   __DATA.__data: 0x240
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 429
 -  Symbols:   933
 -  CStrings:  406
 +  Functions: 458
 +  Symbols:   992
 +  CStrings:  408
- 
 Symbols:
 + -[AXPRemoteCacheManager _runtimeDelegateToken]
 + -[AXPRemoteCacheManager dealloc]

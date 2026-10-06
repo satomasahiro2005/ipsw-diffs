@@ -2,128 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/SafariShared.framework/SafariShared`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_protos`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x29fe8c` | `0x2a6a40` | **`+0x6bb4`** |
+| `__TEXT.__const` | `0x981f4` | `0x9a814` | **`+0x2620`** |
+| `__DATA.__bss` | `0x7740` | `0x7a30` | **`+0x2f0`** |
+| `__TEXT.__cstring` | `0x233b7` | `0x23607` | **`+0x250`** |
+| `__AUTH_CONST.__const` | `0xa640` | `0xa860` | **`+0x220`** |
+| `__TEXT.__eh_frame` | `0x5218` | `0x53d0` | **`+0x1b8`** |
+| `__TEXT.__oslogstring` | `0x154b2` | `0x15642` | **`+0x190`** |
+| `__DATA.__data` | `0x5598` | `0x5708` | **`+0x170`** |
+| `__TEXT.__swift5_typeref` | `0x3524` | `0x3650` | **`+0x12c`** |
+| `__AUTH_CONST.__cfstring` | `0x1afe0` | `0x1b0a0` | **`+0xc0`** |
+| `__TEXT.__constg_swiftt` | `0x2050` | `0x2104` | **`+0xb4`** |
+| `__TEXT.__swift5_fieldmd` | `0x164c` | `0x1700` | **`+0xb4`** |
+| `__AUTH_CONST.__auth_got` | `0x2b38` | `0x2bc8` | **`+0x90`** |
+| `__TEXT.__gcc_except_tab` | `0x1ead0` | `0x1ea40` | **`-0x90`** |
+| `__TEXT.__unwind_info` | `0xed50` | `0xedd8` | **`+0x88`** |
+| `__DATA_CONST.__got` | `0x1fa8` | `0x2000` | **`+0x58`** |
+| `__TEXT.__swift5_reflstr` | `0x1458` | `0x14a8` | **`+0x50`** |
+| `__AUTH_CONST.__objc_const` | `0x28470` | `0x284a8` | **`+0x38`** |
+| `__TEXT.__objc_methlist` | `0x15f34` | `0x15f6c` | **`+0x38`** |
+| `__TEXT.__swift5_capture` | `0xbfc` | `0xc30` | **`+0x34`** |
+| `__DATA_CONST.__objc_selrefs` | `0xc038` | `0xc060` | **`+0x28`** |
+| `__TEXT.__swift5_proto` | `0x3e8` | `0x400` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x12c` | `0x140` | **`+0x14`** |
+| `__DATA_CONST.__const` | `0x16530` | `0x16520` | **`-0x10`** |
+| `__TEXT.__swift5_types` | `0x18c` | `0x198` | **`+0xc`** |
+| `__TEXT.__swift5_mpenum` | `0x20` | `0x28` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x191c` | `0x1920` | **`+0x4`** |
+| `__TEXT.__swift_as_cont` | `0x2e8` | `0x2ec` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0x17c` | `0x180` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x164` | `0x168` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -625.1.22.10.3
--  __TEXT.__text: 0x29fe8c
--  __TEXT.__objc_methlist: 0x15f34
--  __TEXT.__const: 0x981f4
--  __TEXT.__gcc_except_tab: 0x1ead0
--  __TEXT.__cstring: 0x233b7
 +625.1.24.10.1
-+  __TEXT.__text: 0x2a6a40
-+  __TEXT.__objc_methlist: 0x15f6c
-+  __TEXT.__const: 0x9a814
-+  __TEXT.__gcc_except_tab: 0x1ea40
-+  __TEXT.__cstring: 0x23607
-   __TEXT.__ustring: 0xcec0
--  __TEXT.__oslogstring: 0x154b2
-+  __TEXT.__oslogstring: 0x15642
-   __TEXT.__dlopen_cstrs: 0x2b7
--  __TEXT.__swift5_typeref: 0x3524
--  __TEXT.__swift5_fieldmd: 0x164c
--  __TEXT.__constg_swiftt: 0x2050
--  __TEXT.__swift5_builtin: 0x12c
--  __TEXT.__swift5_reflstr: 0x1458
-+  __TEXT.__swift5_typeref: 0x3650
-+  __TEXT.__swift5_fieldmd: 0x1700
-+  __TEXT.__constg_swiftt: 0x2104
-+  __TEXT.__swift5_builtin: 0x140
-+  __TEXT.__swift5_reflstr: 0x14a8
-   __TEXT.__swift5_assocty: 0x450
-   __TEXT.__swift5_protos: 0x38
--  __TEXT.__swift5_proto: 0x3e8
--  __TEXT.__swift5_types: 0x18c
--  __TEXT.__swift5_capture: 0xbfc
--  __TEXT.__swift_as_entry: 0x17c
--  __TEXT.__swift_as_ret: 0x164
--  __TEXT.__swift_as_cont: 0x2e8
--  __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__unwind_info: 0xed50
--  __TEXT.__eh_frame: 0x5218
-+  __TEXT.__swift5_proto: 0x400
-+  __TEXT.__swift5_types: 0x198
-+  __TEXT.__swift5_capture: 0xc30
-+  __TEXT.__swift_as_entry: 0x180
-+  __TEXT.__swift_as_ret: 0x168
-+  __TEXT.__swift_as_cont: 0x2ec
-+  __TEXT.__swift5_mpenum: 0x28
-+  __TEXT.__unwind_info: 0xedd8
-+  __TEXT.__eh_frame: 0x53d0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x16530
-+  __DATA_CONST.__const: 0x16520
-   __DATA_CONST.__objc_classlist: 0xcb8
-   __DATA_CONST.__objc_catlist: 0x90
-   __DATA_CONST.__objc_protolist: 0x2c8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0xc038
-+  __DATA_CONST.__objc_selrefs: 0xc060
-   __DATA_CONST.__objc_protorefs: 0xc0
-   __DATA_CONST.__objc_superrefs: 0x958
-   __DATA_CONST.__objc_arraydata: 0xb00
--  __DATA_CONST.__got: 0x1fa8
--  __AUTH_CONST.__const: 0xa640
--  __AUTH_CONST.__cfstring: 0x1afe0
--  __AUTH_CONST.__objc_const: 0x28470
-+  __DATA_CONST.__got: 0x2000
-+  __AUTH_CONST.__const: 0xa860
-+  __AUTH_CONST.__cfstring: 0x1b0a0
-+  __AUTH_CONST.__objc_const: 0x284a8
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x750
-   __AUTH_CONST.__objc_arrayobj: 0x360
-   __AUTH_CONST.__objc_dictobj: 0x140
-   __AUTH_CONST.__objc_doubleobj: 0xa0
--  __AUTH_CONST.__auth_got: 0x2b38
-+  __AUTH_CONST.__auth_got: 0x2bc8
-   __AUTH.__objc_data: 0x7c88
-   __AUTH.__data: 0x17c0
--  __DATA.__objc_ivar: 0x191c
--  __DATA.__data: 0x5598
--  __DATA.__bss: 0x7740
-+  __DATA.__objc_ivar: 0x1920
-+  __DATA.__data: 0x5708
-+  __DATA.__bss: 0x7a30
-   __DATA.__common: 0xa0
-   __DATA_DIRTY.__objc_data: 0x320
-   __DATA_DIRTY.__bss: 0x9
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 14472
--  Symbols:   23701
+-  Symbols:   19272
 -  CStrings:  6103
 +  Functions: 14553
-+  Symbols:   23730
++  Symbols:   19299
 +  CStrings:  6125
- 
 Symbols:
 + -[NSExtension(SafariSharedExtras) safari_sourceDisplayName]
 + -[WBSFormControlMetadata looksLikeIMEI1Field]
@@ -149,8 +75,6 @@ Symbols:
 + _associated conformance 12SafariShared18WBSAgentControllerC21ImageMetricsRedaction33_BB0CD2D0C8036A089F40018934D354B9LLV10CodingKeysOyx__Gs0P3KeyAAs28CustomDebugStringConvertible
 + _get_enum_tag_for_layout_string 12SafariShared13WBSAgentToolsO16ForbiddenPatternO
 + _get_witness_table 12SafariShared23WBSBookmarksClusterItemRzl7SwiftUI16SubscriptionViewVySo20NSNotificationCenterC10FoundationE9PublisherVAEyAjC15NavigationStackVyAC0N4PathVAC0I0PACE7toolbar7contentQrqd__yXE_tAC14ToolbarContentRd__lFQOyApCE29navigationBarTitleDisplayModeyQrAC0nvE0V0wxY0OFQOyApCE0uW0yQrAC18LocalizedStringKeyVFQOyApCE9formStyleyQrqd__AC9FormStyleRd__lFQOyAC4FormVyAC05TupleT0VyAC7SectionVyAC05EmptyI0VAC08ModifiedT0VyApCEA0_yQrqd__ACA1_Rd__lFQOyA11_yA3_yA5_yAC07LabeledT0VyAC4TextVAC012_ConditionalT0VyA15_A15_GG_A13_yA15_A15_GA20_A20_A20_A20_A20_QPGGAC30_EnvironmentKeyWritingModifierVyAC4FontVSgGG_AC16ColumnsFormStyleVQo_AC16_FlexFrameLayoutVGA9_G_A7_yA15_ApCE13listRowInsetsyQrAC4EdgeO3SetV_12CoreGraphics7CGFloatVSgtFQOyA11_yA11_yApCE20listSectionSeparator_5edgesQrAC10VisibilityO_AC12VerticalEdgeOA40_VtFQOyApCE9listStyleyQrqd__AC9ListStyleRd__lFQOyAC4ListVys5NeverOAC7ForEachVys18EnumeratedSequenceVySayxGGSSA11_yA11_yApCE11contextMenu9menuItemsQrqd__yXE_tAcORd__lFQOyAC6VStackVyA5_yAC6HStackVyA5_yA11_yA11_yAC6ZStackVyA5_yA11_yA15_AC15_HiddenModifierVG_A15_QPGGAC24_ForegroundStyleModifierVyAC22HierarchicalShapeStyleVGGAC21_TraitWritingModifierVyAC22LayoutPriorityTraitKeyVGGSg_A17_yA11_yA11_yA11_yA15_AC25_AlignmentWritingModifierVGA92_GA24_ySiSgGGA11_yA15_A96_GGAC6SpacerVA11_yA11_yAA5Badge33_6B35E660B29A4C294379B63C6CCC60D6LLVA88_GA79_yAC15BackgroundStyleVGGSgQPGG_A93_SgQPGG_AC4MenuVyAC5LabelVyA15_AC5ImageVGA5_yAC6ButtonVyA122_G_AC9ShareLinkVys15CollectionOfOneVySSGA58_A58_A122_GQPGGSgQo_AC14_PaddingLayoutVGA85_yAC25ListRowBackgroundTraitKeyVGGGG_AC14PlainListStyleVQo__Qo_A92_GAC12_FrameLayoutVG_Qo_A9_GA7_yA15_A56_yA58_AC12OutlineGroupVySayAA0cD7ManagerC14InspectorStateV07OutlineE0A103_LLOyx__GGs11AnyHashableVA17_yA68_yA5_yA15__A15_QPGGA135_GA169_AC15DisclosureGroupVyA169_AC23OutlineSubgroupChildrenVGGGA9_GQPGG_AC16GroupedFormStyleVQo__Qo__Qo__AC05TuplesT0VyAC0sE0VyytA124_yA121_GG_A188_yytA124_yA5_yA11_yA121_AC29_DiscreteSymbolEffectModifierVySbGG_A15_QPGGGAC0S6SpacerVA188_yytA117_yA121_A125_GGtGQo_GGGAcOHPyHC
-+ _objc_msgSend$initWithStartSearch:responseSize:statusCode:networkTimingData:
-+ _objc_msgSend$safari_localizedContainingAppDisplayName
 + _swift_unexpectedError
 + _symbolic SDySSSay_____GG 10SafariCore23WBSAnySendableEncodableV
 + _symbolic SDySS_____G 10SafariCore23WBSAnySendableEncodableV

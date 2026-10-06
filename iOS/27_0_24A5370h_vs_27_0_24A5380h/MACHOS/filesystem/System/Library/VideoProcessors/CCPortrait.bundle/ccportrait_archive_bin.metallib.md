@@ -2,19 +2,14 @@
 
 > `/System/Library/VideoProcessors/CCPortrait.bundle/ccportrait_archive_bin.metallib`
 
-```diff
+### Section Size Changes
 
-   __TEXT.__reflection: 0x17ca0
-   __TEXT.__compute: 0x14ebd0
-   __TEXT.__descriptor: 0x5c70
--  __TEXT.__metallib: 0x1eb0820
-+  __TEXT.__metallib: 0x1ebd8e0
-   Functions: 0
-   Symbols:   0
-   CStrings:  0
-Sections:
-~ __TEXT.__reflection : content changed
-~ __TEXT.__compute : content changed
-~ __TEXT.__descriptor : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__metallib` | `0x1eb0820` | `0x1ebd8e0` | **`+0xd0c0`** |
+| `__TEXT.__compute` | `0x1507b0` | `0x1507a0` | **`-0x10`** |
 
-```
+### Same-size Content Changes
+
+- `__TEXT.__descriptor`
+- `__TEXT.__reflection`

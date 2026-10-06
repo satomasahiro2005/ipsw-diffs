@@ -2,37 +2,25 @@
 
 > `/System/Library/Frameworks/NetworkExtension.framework/NetworkExtension`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x20ffec` | `0x2100e4` | **`+0xf8`** |
+| `__TEXT.__oslogstring` | `0x24d9d` | `0x24dc0` | **`+0x23`** |
+| `__TEXT.__unwind_info` | `0x56e0` | `0x56e8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2331.0.0.0.1
--  __TEXT.__text: 0x20ffec
 +2340.0.0.0.4
-+  __TEXT.__text: 0x2100e4
-   __TEXT.__objc_methlist: 0xf4d8
-   __TEXT.__const: 0x36a4
-   __TEXT.__swift5_typeref: 0xdda
 
-   __TEXT.__swift5_fieldmd: 0x680
-   __TEXT.__swift5_protos: 0x14
-   __TEXT.__cstring: 0x1963b
--  __TEXT.__oslogstring: 0x24d9d
-+  __TEXT.__oslogstring: 0x24dc0
-   __TEXT.__gcc_except_tab: 0x4ff4
--  __TEXT.__unwind_info: 0x56e0
-+  __TEXT.__unwind_info: 0x56e8
-   __TEXT.__eh_frame: 0x2bc0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8315
--  Symbols:   16566
+-  Symbols:   14394
 +  Functions: 8316
-+  Symbols:   16567
-   CStrings:  7220
- 
++  Symbols:   14395
 Symbols:
 + -[NEIKEv2EAP shouldHaveSessionKey]
 + GCC_except_table2940

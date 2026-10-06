@@ -2,18 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/CryptexServer.framework/CryptexServer`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x57230` | `0x57234` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
 
-```diff
+### Other Changes
 
- 761.2.1.0.0
--  __TEXT.__text: 0x57230
-+  __TEXT.__text: 0x57234
-   __TEXT.__objc_methlist: 0x104
-   __TEXT.__const: 0x1190
-   __TEXT.__cstring: 0xca5
+```diff
 Functions:
 ~ _$sSr15_stableSortImpl2byySbx_xtKXE_tKFySryxGz_SiztKXEfU_10CryptexKit11PkgObjectIdVyAD0G4MetaVG_Tg504$s10e4Kit6g56EnvV0A6ServerE6RecordV6encode2toys7Encoder_p_tKFSayAA0C8hi2Vyv2C4J27VGGShyANGXEfU_SbAN_ANtXEfU_Tf1nnncn_n : 2504 -> 2508
 ~ _$s13CryptexServer12PkgInventoryC7vfsInit33_9EDA62DDC8CCBC284DF525D42ACCF48ALLyyKF : 1192 -> 1176

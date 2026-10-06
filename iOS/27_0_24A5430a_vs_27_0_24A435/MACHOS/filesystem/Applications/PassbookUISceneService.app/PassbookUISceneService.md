@@ -2,6 +2,8 @@
 
 > `/Applications/PassbookUISceneService.app/PassbookUISceneService`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_1000045c4 : 12 -> 20

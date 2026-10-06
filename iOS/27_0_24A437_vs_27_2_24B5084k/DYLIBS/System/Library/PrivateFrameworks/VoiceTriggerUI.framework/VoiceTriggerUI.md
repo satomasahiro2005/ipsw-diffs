@@ -2,86 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/VoiceTriggerUI.framework/VoiceTriggerUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6c1c4` | `0x6ca70` | **`+0x8ac`** |
+| `__TEXT.__swift5_typeref` | `0x5450` | `0x5532` | **`+0xe2`** |
+| `__AUTH_CONST.__cfstring` | `0x2f00` | `0x2ea0` | **`-0x60`** |
+| `__AUTH_CONST.__objc_const` | `0x7748` | `0x7798` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x4cac` | `0x4cfc` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x33f8` | `0x3438` | **`+0x40`** |
+| `__TEXT.__swift5_reflstr` | `0x7eb` | `0x82b` | **`+0x40`** |
+| `__TEXT.__const` | `0x2524` | `0x2554` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x5e65` | `0x5e35` | **`-0x30`** |
+| `__AUTH.__data` | `0xa60` | `0xa88` | **`+0x28`** |
+| `__DATA.__data` | `0x1698` | `0x16b8` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xdf0` | `0xe08` | **`+0x18`** |
+| `__TEXT.__swift5_fieldmd` | `0x674` | `0x68c` | **`+0x18`** |
+| `__TEXT.__constg_swiftt` | `0xafc` | `0xb0c` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x18e8` | `0x18f8` | **`+0x10`** |
+| `__DATA.__common` | `0x40` | `0x48` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0xa38` | `0xa40` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x604` | `0x608` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3600.16.8.11.101
--  __TEXT.__text: 0x69bb4
--  __TEXT.__objc_methlist: 0x4cac
--  __TEXT.__const: 0x2524
 +3605.3.1.0.0
-+  __TEXT.__text: 0x6a43c
-+  __TEXT.__objc_methlist: 0x4cfc
-+  __TEXT.__const: 0x2554
-   __TEXT.__gcc_except_tab: 0x740
--  __TEXT.__cstring: 0x5e65
-+  __TEXT.__cstring: 0x5e35
-   __TEXT.__oslogstring: 0x2465
-   __TEXT.__dlopen_cstrs: 0x4e
--  __TEXT.__swift5_typeref: 0x5450
-+  __TEXT.__swift5_typeref: 0x5532
-   __TEXT.__swift5_capture: 0x3d0
--  __TEXT.__swift5_fieldmd: 0x674
--  __TEXT.__constg_swiftt: 0xafc
--  __TEXT.__swift5_reflstr: 0x7eb
-+  __TEXT.__swift5_fieldmd: 0x68c
-+  __TEXT.__constg_swiftt: 0xb0c
-+  __TEXT.__swift5_reflstr: 0x82b
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_assocty: 0x1d8
-   __TEXT.__swift5_protos: 0x8
 
-   __TEXT.__swift_as_entry: 0x2c
-   __TEXT.__swift_as_ret: 0x2c
-   __TEXT.__swift_as_cont: 0x48
--  __TEXT.__unwind_info: 0x1df0
-+  __TEXT.__unwind_info: 0x1e08
-   __TEXT.__eh_frame: 0x688
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x118
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x33f8
-+  __DATA_CONST.__objc_selrefs: 0x3438
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x138
-   __DATA_CONST.__objc_arraydata: 0x378
--  __DATA_CONST.__got: 0xa38
-+  __DATA_CONST.__got: 0xa40
-   __AUTH_CONST.__const: 0x1340
--  __AUTH_CONST.__cfstring: 0x2f00
--  __AUTH_CONST.__objc_const: 0x7748
-+  __AUTH_CONST.__cfstring: 0x2ea0
-+  __AUTH_CONST.__objc_const: 0x7798
-   __AUTH_CONST.__objc_arrayobj: 0x138
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__objc_intobj: 0x3d8
--  __AUTH_CONST.__auth_got: 0xdf0
-+  __AUTH_CONST.__auth_got: 0xe08
-   __AUTH.__objc_data: 0x1708
--  __AUTH.__data: 0xa60
--  __DATA.__objc_ivar: 0x604
--  __DATA.__data: 0x1698
--  __DATA.__common: 0x40
-+  __AUTH.__data: 0xa88
-+  __DATA.__objc_ivar: 0x608
-+  __DATA.__data: 0x16b8
-+  __DATA.__common: 0x48
-   __DATA_DIRTY.__objc_data: 0x2d0
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AVKit.framework/AVKit
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2404
--  Symbols:   4486
+-  Symbols:   3282
 -  CStrings:  859
 +  Functions: 2413
-+  Symbols:   4503
++  Symbols:   3293
 +  CStrings:  856
- 
 Symbols:
 + -[VTUIEnrollmentSetupIntroViewControllerGM _updateTopAnchorConstraint]
 + -[VTUIEnrollmentSetupIntroViewControllerGM setTopAnchorConstraint:]
@@ -94,12 +50,6 @@ Symbols:
 + _OBJC_CLASS_$_AFUIUtilities
 + _OBJC_IVAR_$_VTUIEnrollmentSetupIntroViewControllerGM._topAnchorConstraint
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA16SubscriptionViewVy7Combine9PublishedV9PublisherVySb_GAEyAkEyAkCyAA6ZStackVyAA05TupleD0VyACyACyAA6VStackVyAOyAMyAOyAA14GeometryReaderVyACyACyACyACyACyAA5ImageVAA18_AspectRatioLayoutVGAA010_FlexFrameR0VGAA01_tR0VGAZGAA31AccessibilityAttachmentModifierVGGSg_ACy012VoiceTriggerB0013GMDeviceSceneF0VAA14_OpacityEffectVGSgQPGG_ACyAA6SpacerVA1_GQPGGAA11_MaskEffectVyAA14LinearGradientVGGA5_G_A9_022GMEnrollmentSetupIntroF0VQPGGAA016_BackgroundStyleW0VyAA5ColorVGGGGGAA017_AppearanceActionW0VGAA0F0HPA42_AAA46_HPyHC_A44_AA0fW0HPyHCHC
-+ _objc_msgSend$_updateTopAnchorConstraint
-+ _objc_msgSend$horizontalSizeClass
-+ _objc_msgSend$overrideBuddyImage
-+ _objc_msgSend$shouldOverrideBuddyBehavior
-+ _objc_msgSend$shouldSkipGMEducationPages
-+ _objc_msgSend$verticalSizeClass
 + _swift_retain_x24
 + _symbolic _____yAAyAAyAAy__________G_____G_____GAEG 7SwiftUI15ModifiedContentV AA5ImageV AA18_AspectRatioLayoutV AA010_FlexFrameH0V AA01_jH0V
 + _symbolic _____yAAyAAy__________G_____G_____G 7SwiftUI15ModifiedContentV AA5ImageV AA18_AspectRatioLayoutV AA010_FlexFrameH0V AA01_jH0V

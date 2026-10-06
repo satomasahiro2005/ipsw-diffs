@@ -2,72 +2,47 @@
 
 > `/System/Library/AccessibilityBundles/InvertColorsManager.bundle/InvertColorsManager`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__objc_const` | `0x21558` | `0x20fb8` | **`-0x5a0`** |
+| `__DATA.__objc_data` | `0x10b80` | `0x10860` | **`-0x320`** |
+| `__TEXT.__text` | `0x20944` | `0x20694` | **`-0x2b0`** |
+| `__TEXT.__oslogstring` | `0xb76` | `0xd82` | **`+0x20c`** |
+| `__TEXT.__objc_classname` | `0xa230` | `0xa032` | **`-0x1fe`** |
+| `__DATA_CONST.__cfstring` | `0x8d80` | `0x8c00` | **`-0x180`** |
+| `__TEXT.__cstring` | `0x8d34` | `0x8bc8` | **`-0x16c`** |
+| `__TEXT.__objc_methlist` | `0x77bc` | `0x766c` | **`-0x150`** |
+| `__DATA_CONST.__objc_classlist` | `0x1ac0` | `0x1a70` | **`-0x50`** |
+| `__TEXT.__objc_methname` | `0x2c65` | `0x2c9f` | **`+0x3a`** |
+| `__TEXT.__unwind_info` | `0xf70` | `0xf48` | **`-0x28`** |
+| `__TEXT.__objc_stubs` | `0x2820` | `0x2840` | **`+0x20`** |
+| `__TEXT.__const` | `0xc8` | `0xe0` | **`+0x18`** |
+| `__DATA.__objc_selrefs` | `0xe10` | `0xe20` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x608` | `0x5f8` | **`-0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_catlist`
 - `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__got`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -3234.5.0.0.0
--  __TEXT.__text: 0x20944
 +3237.1.0.0.0
-+  __TEXT.__text: 0x20694
-   __TEXT.__auth_stubs: 0x7e0
--  __TEXT.__objc_stubs: 0x2820
--  __TEXT.__objc_methlist: 0x77bc
--  __TEXT.__const: 0xc8
-+  __TEXT.__objc_stubs: 0x2840
-+  __TEXT.__objc_methlist: 0x766c
-+  __TEXT.__const: 0xe0
-   __TEXT.__dlopen_cstrs: 0x6a
-   __TEXT.__gcc_except_tab: 0x1d8
--  __TEXT.__objc_classname: 0xa230
--  __TEXT.__cstring: 0x8d34
--  __TEXT.__objc_methname: 0x2c65
-+  __TEXT.__objc_classname: 0xa032
-+  __TEXT.__cstring: 0x8bc8
-+  __TEXT.__objc_methname: 0x2c9f
-   __TEXT.__objc_methtype: 0x334
--  __TEXT.__oslogstring: 0xb76
--  __TEXT.__unwind_info: 0xf70
-+  __TEXT.__oslogstring: 0xd82
-+  __TEXT.__unwind_info: 0xf48
-   __DATA_CONST.__const: 0x818
--  __DATA_CONST.__cfstring: 0x8d80
--  __DATA_CONST.__objc_classlist: 0x1ac0
-+  __DATA_CONST.__cfstring: 0x8c00
-+  __DATA_CONST.__objc_classlist: 0x1a70
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_superrefs: 0x608
-+  __DATA_CONST.__objc_superrefs: 0x5f8
-   __DATA_CONST.__auth_got: 0x400
-   __DATA_CONST.__got: 0x188
--  __DATA.__objc_const: 0x21558
--  __DATA.__objc_selrefs: 0xe10
--  __DATA.__objc_data: 0x10b80
-+  __DATA.__objc_const: 0x20fb8
-+  __DATA.__objc_selrefs: 0xe20
-+  __DATA.__objc_data: 0x10860
-   __DATA.__data: 0xc8
-   __DATA.__bss: 0xb0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1917
 -  Symbols:   1897
 -  CStrings:  2135
 +  Functions: 1897
 +  Symbols:   1877
 +  CStrings:  2125
- 
 Symbols:
 + _OBJC_CLASS_$_CNContactHeaderViewInvertColorsAccessibility
 + _OBJC_CLASS_$___CNContactHeaderViewInvertColorsAccessibility_super

@@ -2,42 +2,31 @@
 
 > `/usr/libexec/diskimagesiod`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ef5cc` | `0x1ef6c4` | **`+0xf8`** |
+| `__TEXT.__unwind_info` | `0xe120` | `0xe118` | **`-0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x1bdbc` | `0x1bdb8` | **`-0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
 
-```diff
+### Other Changes
 
- 598.0.1.0.0
--  __TEXT.__text: 0x1ef5cc
-+  __TEXT.__text: 0x1ef6c4
-   __TEXT.__auth_stubs: 0x2450
-   __TEXT.__objc_stubs: 0x6860
-   __TEXT.__objc_methlist: 0x3a1c
--  __TEXT.__gcc_except_tab: 0x1bdbc
-+  __TEXT.__gcc_except_tab: 0x1bdb8
-   __TEXT.__const: 0x17597
-   __TEXT.__cstring: 0x173e5
-   __TEXT.__oslogstring: 0x2dab
-
-   __TEXT.__swift5_fieldmd: 0x10
-   __TEXT.__swift5_types: 0x4
-   __TEXT.__ustring: 0x13c
--  __TEXT.__unwind_info: 0xe120
-+  __TEXT.__unwind_info: 0xe118
-   __TEXT.__eh_frame: 0xf0
-   __DATA_CONST.__const: 0x391f8
-   __DATA_CONST.__cfstring: 0x4c40
+```text
 Functions:
 ~ sub_10001c138 : 156 -> 152
 ~ sub_10001f7ac -> sub_10001f7a8 : 2132 -> 2148

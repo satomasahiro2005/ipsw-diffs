@@ -2,22 +2,21 @@
 
 > `com.apple.driver.AppleMultitouchSPI`
 
-```diff
+### Section Size Changes
 
-   __TEXT.__const: 0x50
-   __TEXT.__cstring: 0x8b
-   __TEXT.__os_log: 0xc5
--  __TEXT_EXEC.__text: 0x7ac
-+  __TEXT_EXEC.__text: 0x7c8
-   __TEXT_EXEC.__auth_stubs: 0xd0
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x10
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x7ac` | `0x7c8` | **`+0x1c`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_fffffe00092055a0 -> sub_fffffe000926d490 : 164 -> 168
-~ sub_fffffe0009205644 -> sub_fffffe000926d538 : 96 -> 100
-~ sub_fffffe00092056a4 -> sub_fffffe000926d59c : 568 -> 572
-~ sub_fffffe00092058dc -> sub_fffffe000926d7d8 : 96 -> 100
-~ sub_fffffe000920593c -> sub_fffffe000926d83c : 132 -> 136
-~ sub_fffffe00092059c0 -> sub_fffffe000926d8c4 : 132 -> 136
-~ sub_fffffe0009205a44 -> sub_fffffe000926d94c : 64 -> 68
+~ sub_fffffff0091f2040 -> sub_fffffff009255fe0 : 164 -> 168
+~ sub_fffffff0091f20e4 -> sub_fffffff009256088 : 96 -> 100
+~ sub_fffffff0091f2144 -> sub_fffffff0092560ec : 568 -> 572
+~ sub_fffffff0091f237c -> sub_fffffff009256328 : 96 -> 100
+~ sub_fffffff0091f23dc -> sub_fffffff00925638c : 132 -> 136
+~ sub_fffffff0091f2460 -> sub_fffffff009256414 : 132 -> 136
+~ sub_fffffff0091f24e4 -> sub_fffffff00925649c : 64 -> 68
 ```

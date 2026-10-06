@@ -2,95 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/AccessibilityUIUtilities.framework/AccessibilityUIUtilities`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x62084` | `0x61ce4` | **`-0x3a0`** |
+| `__TEXT.__oslogstring` | `0xe34` | `0x1155` | **`+0x321`** |
+| `__AUTH_CONST.__objc_const` | `0xa1e0` | `0xa370` | **`+0x190`** |
+| `__TEXT.__objc_methlist` | `0x6444` | `0x6534` | **`+0xf0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x50d8` | `0x51b0` | **`+0xd8`** |
+| `__TEXT.__constg_swiftt` | `0x8fc` | `0x848` | **`-0xb4`** |
+| `__AUTH.__data` | `0x5b0` | `0x508` | **`-0xa8`** |
+| `__AUTH_CONST.__const` | `0xae0` | `0xa38` | **`-0xa8`** |
+| `__AUTH.__objc_data` | `0x2260` | `0x2300` | **`+0xa0`** |
+| `__TEXT.__const` | `0xda0` | `0xd38` | **`-0x68`** |
+| `__TEXT.__swift5_typeref` | `0xb07` | `0xabb` | **`-0x4c`** |
+| `__TEXT.__swift5_fieldmd` | `0x29c` | `0x258` | **`-0x44`** |
+| `__TEXT.__cstring` | `0x5c86` | `0x5caf` | **`+0x29`** |
+| `__AUTH_CONST.__cfstring` | `0x69e0` | `0x6a00` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x1208` | `0x11f0` | **`-0x18`** |
+| `__DATA.__data` | `0x1340` | `0x1328` | **`-0x18`** |
+| `__TEXT.__swift5_capture` | `0x174` | `0x15c` | **`-0x18`** |
+| `__DATA.__objc_ivar` | `0x584` | `0x594` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x268` | `0x278` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x26c` | `0x25c` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x1190` | `0x1198` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x398` | `0x3a0` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x808` | `0x810` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x50` | `0x48` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3237.1.0.0.0
--  __TEXT.__text: 0x62084
--  __TEXT.__objc_methlist: 0x6444
--  __TEXT.__const: 0xda0
 +3240.3.0.0.0
-+  __TEXT.__text: 0x61ce4
-+  __TEXT.__objc_methlist: 0x6534
-+  __TEXT.__const: 0xd38
-   __TEXT.__dlopen_cstrs: 0x3ec
--  __TEXT.__constg_swiftt: 0x8fc
--  __TEXT.__swift5_typeref: 0xb07
-+  __TEXT.__constg_swiftt: 0x848
-+  __TEXT.__swift5_typeref: 0xabb
-   __TEXT.__swift5_builtin: 0x14
--  __TEXT.__swift5_reflstr: 0x26c
--  __TEXT.__swift5_fieldmd: 0x29c
-+  __TEXT.__swift5_reflstr: 0x25c
-+  __TEXT.__swift5_fieldmd: 0x258
-   __TEXT.__swift5_proto: 0x40
--  __TEXT.__swift5_types: 0x50
--  __TEXT.__swift5_capture: 0x174
--  __TEXT.__cstring: 0x5c86
-+  __TEXT.__swift5_types: 0x48
-+  __TEXT.__swift5_capture: 0x15c
-+  __TEXT.__cstring: 0x5caf
-   __TEXT.__swift5_assocty: 0xf8
-   __TEXT.__swift_as_entry: 0x30
-   __TEXT.__swift_as_cont: 0x48
--  __TEXT.__oslogstring: 0xe34
-+  __TEXT.__oslogstring: 0x1155
-   __TEXT.__swift_as_ret: 0x18
--  __TEXT.__gcc_except_tab: 0x808
-+  __TEXT.__gcc_except_tab: 0x810
-   __TEXT.__ustring: 0x4
-   __TEXT.__unwind_info: 0x1988
-   __TEXT.__eh_frame: 0x43c
 
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xdd0
--  __DATA_CONST.__objc_classlist: 0x398
-+  __DATA_CONST.__objc_classlist: 0x3a0
-   __DATA_CONST.__objc_catlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x140
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x50d8
-+  __DATA_CONST.__objc_selrefs: 0x51b0
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__objc_superrefs: 0x268
-+  __DATA_CONST.__objc_superrefs: 0x278
-   __DATA_CONST.__objc_arraydata: 0x80
--  __DATA_CONST.__got: 0x1190
--  __AUTH_CONST.__const: 0xae0
--  __AUTH_CONST.__cfstring: 0x69e0
--  __AUTH_CONST.__objc_const: 0xa1e0
-+  __DATA_CONST.__got: 0x1198
-+  __AUTH_CONST.__const: 0xa38
-+  __AUTH_CONST.__cfstring: 0x6a00
-+  __AUTH_CONST.__objc_const: 0xa370
-   __AUTH_CONST.__objc_intobj: 0x228
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_dictobj: 0x50
--  __AUTH_CONST.__auth_got: 0x1208
--  __AUTH.__objc_data: 0x2260
--  __AUTH.__data: 0x5b0
--  __DATA.__objc_ivar: 0x584
--  __DATA.__data: 0x1340
-+  __AUTH_CONST.__auth_got: 0x11f0
-+  __AUTH.__objc_data: 0x2300
-+  __AUTH.__data: 0x508
-+  __DATA.__objc_ivar: 0x594
-+  __DATA.__data: 0x1328
-   __DATA.__bss: 0xa50
-   __DATA.__common: 0x10
-   __DATA_DIRTY.__objc_data: 0x1e0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2412
--  Symbols:   6605
+-  Symbols:   4633
 -  CStrings:  1066
 +  Functions: 2409
-+  Symbols:   6654
++  Symbols:   4662
 +  CStrings:  1072
- 
 Symbols:
 + +[AXAssistiveTouchLargeContentHUDView defaultActivationDelay]
 + +[AXAssistiveTouchLargeContentHUDView shouldShowLargeContentViewer]
@@ -161,29 +114,6 @@ Symbols:
 + __OBJC_METACLASS_RO_$_AXAlertBannerSystemApertureTrailingButtonView
 + __OBJC_METACLASS_RO_$_AXAssistiveTouchLargeContentHUDView
 + ___49-[AXAssistiveTouchLargeContentHUDView dismissHUD]_block_invoke
-+ _objc_msgSend$_layoutHUDView
-+ _objc_msgSend$_playSpeechRateBounceEffectIfNeeded
-+ _objc_msgSend$_setWindowInterfaceOrientation:
-+ _objc_msgSend$_setupCompactTrailingView
-+ _objc_msgSend$compactTrailingView
-+ _objc_msgSend$configurationWithPointSize:weight:
-+ _objc_msgSend$dismissAnimated:completion:
-+ _objc_msgSend$initWithButton:
-+ _objc_msgSend$initWithHUDItem:
-+ _objc_msgSend$initWithTitle:image:imageInsets:scaleImage:
-+ _objc_msgSend$isBeingDismissed
-+ _objc_msgSend$isBeingPresented
-+ _objc_msgSend$item
-+ _objc_msgSend$prefersCompactActionLayout
-+ _objc_msgSend$presentedViewController
-+ _objc_msgSend$presentingViewController
-+ _objc_msgSend$setBaseBackgroundColor:
-+ _objc_msgSend$setBaseForegroundColor:
-+ _objc_msgSend$setCenter:
-+ _objc_msgSend$setCompactTrailingView:
-+ _objc_msgSend$setContentInsets:
-+ _objc_msgSend$setItem:
-+ _objc_msgSend$showAnimated:completion:
 - GCC_except_table1144
 - GCC_except_table1188
 - GCC_except_table1242
@@ -216,9 +146,6 @@ Symbols:
 - __METACLASS_DATA__TtC24AccessibilityUIUtilitiesP33_C2DA6A1A939BCBAD338EA5ABE47A0CE024AXSwiftUIModifierStorage
 - ___80-[AXUISettingsInstructionsView textView:primaryActionForTextItem:defaultAction:]_block_invoke_6
 - _get_witness_table 7SwiftUI4ViewRzlAA03AnyC0VAaBHPyHC
-- _objc_msgSend$_updateInterfaceOrientationFromDeviceOrientation:
-- _objc_msgSend$lock
-- _objc_msgSend$unlock
 - _symbolic SDySS_____G 24AccessibilityUIUtilities20AXStoredViewModifierV
 - _symbolic So6NSLockC
 - _symbolic _____ 24AccessibilityUIUtilities20AXStoredViewModifierV

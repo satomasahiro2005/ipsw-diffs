@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/DeviceSharing.framework/DeviceSharing`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xab498` | `0xab4d4` | **`+0x3c`** |
+| `__AUTH_CONST.__auth_got` | `0x1408` | `0x13f8` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
- 40.0.2.0.0
--  __TEXT.__text: 0xab498
-+  __TEXT.__text: 0xab4d4
-   __TEXT.__objc_methlist: 0x420
-   __TEXT.__const: 0x4540
-   __TEXT.__cstring: 0x285e
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x3090
-   __AUTH_CONST.__objc_const: 0x1758
--  __AUTH_CONST.__auth_got: 0x1408
-+  __AUTH_CONST.__auth_got: 0x13f8
-   __AUTH.__objc_data: 0x130
-   __AUTH.__data: 0x598
-   __DATA.__data: 0xec8
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 2686
--  Symbols:   1004
-+  Symbols:   1002
-   CStrings:  444
- 
+-  Symbols:   917
++  Symbols:   915
 Symbols:
 - _objc_release_x9
 - _swift_retain_x9

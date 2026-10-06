@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/AudioTranscriptionAnalysis.framework/AudioTranscriptionAnalysis`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_0 : 28 -> 20

@@ -2,90 +2,59 @@
 
 > `/System/Library/FlowTools/SnippetService/ResponsePlugins/SiriVideoSnippetProviderPlugin.bundle/SiriVideoSnippetProviderPlugin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift_as_entry`
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf630` | `0x164a8` | **`+0x6e78`** |
+| `__TEXT.__const` | `0x318` | `0x552` | **`+0x23a`** |
+| `__TEXT.__oslogstring` | `0x50f` | `0x3c1` | **`-0x14e`** |
+| `__TEXT.__auth_stubs` | `0xb10` | `0xc50` | **`+0x140`** |
+| `__TEXT.__eh_frame` | `0x770` | `0x658` | **`-0x118`** |
+| `__TEXT.__unwind_info` | `0x310` | `0x3c0` | **`+0xb0`** |
+| `__DATA_CONST.__auth_got` | `0x590` | `0x630` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x158` | `0x1f0` | **`+0x98`** |
+| `__TEXT.__cstring` | `0x191` | `0x222` | **`+0x91`** |
+| `__DATA.__common` | `0x18` | `0x98` | **`+0x80`** |
+| `__DATA.__data` | `0x220` | `0x298` | **`+0x78`** |
+| `__TEXT.__swift5_typeref` | `0x241` | `0x2af` | **`+0x6e`** |
+| `__DATA_CONST.__auth_ptr` | `0x188` | `0x1e8` | **`+0x60`** |
+| `__TEXT.__constg_swiftt` | `0x64` | `0xb8` | **`+0x54`** |
+| `__TEXT.__objc_stubs` | `0x100` | `0xc0` | **`-0x40`** |
+| `__TEXT.__swift5_fieldmd` | `0x20` | `0x5c` | **`+0x3c`** |
+| `__DATA_CONST.__got` | `0x1f0` | `0x228` | **`+0x38`** |
+| `__DATA.__bss` | `0x100` | `0x120` | **`+0x20`** |
+| `__TEXT.__objc_methname` | `0x55` | `0x40` | **`-0x15`** |
+| `__TEXT.__swift_as_cont` | `0x40` | `0x2c` | **`-0x14`** |
+| `__DATA.__objc_selrefs` | `0x40` | `0x30` | **`-0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x2` | `0x10` | **`+0xe`** |
+| `__TEXT.__swift5_types` | `0x8` | `0x14` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `0x34` | `0x28` | **`-0xc`** |
+| `__TEXT.__swift5_capture` | `0x2c` | `0x30` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_const`
+- `__DATA_CONST.__objc_classlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift_as_entry`
+
+### Other Changes
 
 ```diff
 
 -3600.28.7.0.0
--  __TEXT.__text: 0xe878
--  __TEXT.__auth_stubs: 0xb10
--  __TEXT.__objc_stubs: 0x100
--  __TEXT.__swift5_typeref: 0x241
--  __TEXT.__const: 0x318
--  __TEXT.__cstring: 0x191
 +3605.20.2.0.0
-+  __TEXT.__text: 0x154e8
-+  __TEXT.__auth_stubs: 0xc50
-+  __TEXT.__objc_stubs: 0xc0
-+  __TEXT.__cstring: 0x222
-+  __TEXT.__const: 0x552
-+  __TEXT.__swift5_typeref: 0x2af
-+  __TEXT.__constg_swiftt: 0xb8
-+  __TEXT.__swift5_fieldmd: 0x5c
-+  __TEXT.__swift5_types: 0x14
-+  __TEXT.__oslogstring: 0x3c1
-   __TEXT.__objc_classname: 0x45
--  __TEXT.__constg_swiftt: 0x64
--  __TEXT.__swift5_fieldmd: 0x20
-   __TEXT.__swift5_proto: 0x8
--  __TEXT.__swift5_types: 0x8
--  __TEXT.__oslogstring: 0x50f
--  __TEXT.__swift5_reflstr: 0x2
-+  __TEXT.__swift5_reflstr: 0x10
-   __TEXT.__swift5_assocty: 0x18
--  __TEXT.__swift5_capture: 0x2c
-+  __TEXT.__swift5_capture: 0x30
-   __TEXT.__swift_as_entry: 0x34
--  __TEXT.__swift_as_ret: 0x34
--  __TEXT.__swift_as_cont: 0x40
--  __TEXT.__objc_methname: 0x55
--  __TEXT.__unwind_info: 0x368
--  __TEXT.__eh_frame: 0x770
--  __DATA_CONST.__const: 0x158
-+  __TEXT.__swift_as_ret: 0x28
-+  __TEXT.__swift_as_cont: 0x2c
-+  __TEXT.__objc_methname: 0x40
-+  __TEXT.__unwind_info: 0x450
-+  __TEXT.__eh_frame: 0x658
-+  __DATA_CONST.__const: 0x1f0
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x590
--  __DATA_CONST.__got: 0x1f0
--  __DATA_CONST.__auth_ptr: 0x188
-+  __DATA_CONST.__auth_got: 0x630
-+  __DATA_CONST.__got: 0x228
-+  __DATA_CONST.__auth_ptr: 0x1e8
-   __DATA.__objc_const: 0x90
--  __DATA.__objc_selrefs: 0x40
--  __DATA.__data: 0x220
--  __DATA.__common: 0x18
-+  __DATA.__objc_selrefs: 0x30
-+  __DATA.__data: 0x298
-+  __DATA.__common: 0x98
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-+  - /System/Library/PrivateFrameworks/FlowToolTypes.framework/FlowToolTypes
-   - /System/Library/PrivateFrameworks/FlowToolsSnippetService.framework/FlowToolsSnippetService
-   - /System/Library/PrivateFrameworks/IntelligenceFlow.framework/IntelligenceFlow
-   - /System/Library/PrivateFrameworks/IntelligenceFlowShared.framework/IntelligenceFlowShared
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/PrivateFrameworks/FlowToolTypes.framework/FlowToolTypes
+
 -  Functions: 263
 -  Symbols:   91
 -  CStrings:  38
 +  Functions: 389
 +  Symbols:   983
 +  CStrings:  36
- 
 Symbols:
 + 
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/SiriVideo/install/TempContent/Objects/SiriVideo.build/SiriVideoSnippetProviderPlugin.build/Objects-normal/arm64e/BundleIDs.o

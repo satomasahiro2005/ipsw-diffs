@@ -2,63 +2,47 @@
 
 > `/System/Library/ExtensionKit/Extensions/SpringBoardAppReplacement.appex/SpringBoardAppReplacement`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14c` | `0x27c` | **`+0x130`** |
+| `__TEXT.__objc_stubs` | `0xa0` | `0x140` | **`+0xa0`** |
+| `__TEXT.__objc_methname` | `0x1f3` | `0x26f` | **`+0x7c`** |
+| `__DATA.__data` | `0xc0` | `0x120` | **`+0x60`** |
+| `__TEXT.__oslogstring` | `—` | `0x4e` | **`+0x4e`** |
+| `__DATA.__objc_selrefs` | `0xd8` | `0x108` | **`+0x30`** |
+| `__TEXT.__auth_stubs` | `0xd0` | `0x100` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x13c` | `0x164` | **`+0x28`** |
+| `__TEXT.__objc_methtype` | `0xf5` | `0x111` | **`+0x1c`** |
+| `__DATA_CONST.__auth_got` | `0x70` | `0x88` | **`+0x18`** |
+| `__TEXT.__objc_classname` | `0x3c` | `0x51` | **`+0x15`** |
+| `__DATA.__objc_const` | `0x1f8` | `0x208` | **`+0x10`** |
+| `__TEXT.__const` | `—` | `0x10` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x8` | `0x10` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x10` | `0x18` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x60` | `0x68` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA.__objc_data`
+
+### Other Changes
 
 ```diff
 
 -4637.1.8.101.0
--  __TEXT.__text: 0x140
--  __TEXT.__auth_stubs: 0xd0
--  __TEXT.__objc_stubs: 0xa0
--  __TEXT.__objc_methlist: 0x13c
--  __TEXT.__objc_methname: 0x1f3
--  __TEXT.__objc_classname: 0x3c
--  __TEXT.__objc_methtype: 0xf5
--  __TEXT.__unwind_info: 0x60
 +4637.1.12.101.0
-+  __TEXT.__text: 0x27c
-+  __TEXT.__auth_stubs: 0x100
-+  __TEXT.__objc_stubs: 0x140
-+  __TEXT.__objc_methlist: 0x164
-+  __TEXT.__const: 0x10
-+  __TEXT.__objc_methname: 0x26f
-+  __TEXT.__oslogstring: 0x4e
-+  __TEXT.__objc_classname: 0x51
-+  __TEXT.__objc_methtype: 0x111
-+  __TEXT.__unwind_info: 0x68
-   __DATA_CONST.__objc_classlist: 0x8
--  __DATA_CONST.__objc_protolist: 0x10
-+  __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-+  __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__auth_got: 0x70
--  __DATA_CONST.__got: 0x8
--  __DATA.__objc_const: 0x1f8
--  __DATA.__objc_selrefs: 0xd8
-+  __DATA_CONST.__auth_got: 0x88
-+  __DATA_CONST.__got: 0x10
-+  __DATA.__objc_const: 0x208
-+  __DATA.__objc_selrefs: 0x108
-   __DATA.__objc_data: 0x50
--  __DATA.__data: 0xc0
-+  __DATA.__data: 0x120
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/InstallCoordination.framework/InstallCoordination
-   - /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
+
 -  Functions: 2
 -  Symbols:   22
 -  CStrings:  50
 +  Functions: 3
 +  Symbols:   26
 +  CStrings:  60
- 
 Symbols:
 + _OBJC_CLASS_$_NSXPCInterface
 + _SBLogCommon

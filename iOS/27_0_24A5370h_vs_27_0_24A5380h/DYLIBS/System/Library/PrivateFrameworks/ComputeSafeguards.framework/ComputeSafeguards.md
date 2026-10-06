@@ -2,94 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/ComputeSafeguards.framework/ComputeSafeguards`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__oslogstring` | `0xe2fa` | `0xeffa` | **`+0xd00`** |
+| `__TEXT.__text` | `0x56250` | `0x56c98` | **`+0xa48`** |
+| `__AUTH_CONST.__objc_const` | `0x5680` | `0x59b0` | **`+0x330`** |
+| `__DATA_CONST.__objc_arraydata` | `0x2530` | `0x2200` | **`-0x330`** |
+| `__TEXT.__objc_methlist` | `0x3ed4` | `0x412c` | **`+0x258`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x318` | `0x150` | **`-0x1c8`** |
+| `__TEXT.__gcc_except_tab` | `0xf10` | `0x106c` | **`+0x15c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x25f0` | `0x2710` | **`+0x120`** |
+| `__DATA.__data` | `0x4f8` | `0x5b8` | **`+0xc0`** |
+| `__AUTH_CONST.__cfstring` | `0x6080` | `0x5fe0` | **`-0xa0`** |
+| `__TEXT.__unwind_info` | `0xf38` | `0xfa0` | **`+0x68`** |
+| `__DATA_DIRTY.__objc_data` | `0x8c0` | `0x910` | **`+0x50`** |
+| `__AUTH_CONST.__objc_intobj` | `0x678` | `0x6c0` | **`+0x48`** |
+| `__DATA.__bss` | `0xc8` | `0xa0` | **`-0x28`** |
+| `__DATA_DIRTY.__bss` | `0x1e0` | `0x208` | **`+0x28`** |
+| `__DATA.__objc_ivar` | `0x494` | `0x4b4` | **`+0x20`** |
+| `__TEXT.__const` | `0x320` | `0x308` | **`-0x18`** |
+| `__DATA_CONST.__const` | `0xa60` | `0xa70` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x68` | `0x78` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x4d8` | `0x4e0` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x308` | `0x310` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x140` | `0x148` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x18` | `0x20` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0xc0` | `0xc8` | **`+0x8`** |
+| `__TEXT.__cstring` | `0x5e0e` | `0x5e07` | **`-0x7`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x56250
--  __TEXT.__objc_methlist: 0x3ed4
--  __TEXT.__const: 0x320
--  __TEXT.__cstring: 0x5e0e
--  __TEXT.__oslogstring: 0xe2fa
--  __TEXT.__gcc_except_tab: 0xf10
--  __TEXT.__unwind_info: 0xf38
-+  __TEXT.__text: 0x56c98
-+  __TEXT.__objc_methlist: 0x412c
-+  __TEXT.__const: 0x308
-+  __TEXT.__cstring: 0x5e07
-+  __TEXT.__oslogstring: 0xeffa
-+  __TEXT.__gcc_except_tab: 0x106c
-+  __TEXT.__unwind_info: 0xfa0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xa60
--  __DATA_CONST.__objc_classlist: 0x140
--  __DATA_CONST.__objc_protolist: 0x68
-+  __DATA_CONST.__const: 0xa70
-+  __DATA_CONST.__objc_classlist: 0x148
-+  __DATA_CONST.__objc_protolist: 0x78
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x25f0
--  __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__objc_superrefs: 0xc0
--  __DATA_CONST.__objc_arraydata: 0x2530
--  __DATA_CONST.__got: 0x308
-+  __DATA_CONST.__objc_selrefs: 0x2710
-+  __DATA_CONST.__objc_protorefs: 0x20
-+  __DATA_CONST.__objc_superrefs: 0xc8
-+  __DATA_CONST.__objc_arraydata: 0x2200
-+  __DATA_CONST.__got: 0x310
-   __AUTH_CONST.__const: 0x500
--  __AUTH_CONST.__cfstring: 0x6080
--  __AUTH_CONST.__objc_const: 0x5680
--  __AUTH_CONST.__objc_intobj: 0x678
-+  __AUTH_CONST.__cfstring: 0x5fe0
-+  __AUTH_CONST.__objc_const: 0x59b0
-+  __AUTH_CONST.__objc_intobj: 0x6c0
-   __AUTH_CONST.__objc_dictobj: 0x550
--  __AUTH_CONST.__objc_arrayobj: 0x318
-+  __AUTH_CONST.__objc_arrayobj: 0x150
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x4d8
-+  __AUTH_CONST.__auth_got: 0x4e0
-   __AUTH.__objc_data: 0x3c0
--  __DATA.__objc_ivar: 0x494
--  __DATA.__data: 0x4f8
--  __DATA.__bss: 0xc8
-+  __DATA.__objc_ivar: 0x4b4
-+  __DATA.__data: 0x5b8
-+  __DATA.__bss: 0xa0
-   __DATA.__common: 0x48
--  __DATA_DIRTY.__objc_data: 0x8c0
--  __DATA_DIRTY.__bss: 0x1e0
-+  __DATA_DIRTY.__objc_data: 0x910
-+  __DATA_DIRTY.__bss: 0x208
-   __DATA_DIRTY.__common: 0x18
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-+  - /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
-   - /System/Library/PrivateFrameworks/PowerExceptions_ClientFramework.framework/PowerExceptions_ClientFramework
-   - /System/Library/PrivateFrameworks/PowerLog.framework/PowerLog
-   - /System/Library/PrivateFrameworks/PowerlogCore.framework/PowerlogCore
+-163.0.0.0.0
++174.0.0.0.0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libspindump.dylib
++  - /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
+
 -  Functions: 1908
--  Symbols:   5801
--  CStrings:  2578
+-  Symbols:   2444
+-  CStrings:  1792
 +  Functions: 1951
-+  Symbols:   5943
-+  CStrings:  2612
- 
-Sections:
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH.__objc_data : content changed
++  Symbols:   2507
++  CStrings:  1831
 Symbols:
 + -[CSMitigationManager isInternalBuild]
 + -[CSMitigationManager releaseOrphanedThrottledPIDs]
@@ -172,27 +129,6 @@ Symbols:
 + ___41-[CSRestrictionManager loadAppExemptions]_block_invoke
 + ___46-[CSRestrictionManager _initWithDataProvider:]_block_invoke
 + ___52-[CSMitigationManager restorePenaltyBoxFromPowerlog]_block_invoke
-+ _objc_msgSend$_resolveDASCoalitionIDForProcessName:
-+ _objc_msgSend$appMonitor
-+ _objc_msgSend$applyNavigatingState:
-+ _objc_msgSend$bgDaemonsByBundleID
-+ _objc_msgSend$conformsToProtocol:
-+ _objc_msgSend$dasExemptCoalitionIDsForSlotStamp
-+ _objc_msgSend$fgDaemonsByBundleID
-+ _objc_msgSend$getPowerlogRecords
-+ _objc_msgSend$initWithDispatchQueue:
-+ _objc_msgSend$initWithQueue:
-+ _objc_msgSend$isInternalBuild
-+ _objc_msgSend$liftMitigationsForRestoredDASIntensiveProcesses
-+ _objc_msgSend$navigating
-+ _objc_msgSend$navigationListener:didChangeNavigatingState:
-+ _objc_msgSend$navigationState
-+ _objc_msgSend$releaseOrphanedThrottledPIDs
-+ _objc_msgSend$restorePenaltyBoxFromPowerlog
-+ _objc_msgSend$seedPendingRestoreForUUID:withData:
-+ _objc_msgSend$startNavigationMonitoring
-+ _objc_msgSend$stateForBundleID:
-+ _objc_msgSend$valueForEntitlement:
 + _objc_unsafeClaimAutoreleasedReturnValue
 - -[CSIssueDetector initializeCPUDetectionRulesHardcoded]
 - GCC_except_table11
@@ -213,11 +149,6 @@ Symbols:
 - GCC_except_table79
 - GCC_except_table81
 - _OBJC_CLASS_$_NSPredicate
-- _objc_msgSend$arrayByAddingObject:
-- _objc_msgSend$dasExemptCoalitionIDs
-- _objc_msgSend$filteredArrayUsingPredicate:
-- _objc_msgSend$initializeCPUDetectionRulesHardcoded
-- _objc_msgSend$predicateWithFormat:
 CStrings:
 + "                             SELECT *                             FROM XPCMetrics_CPUViolations_1_2 WHERE timestamp >= %f AND timestamp <= %f ORDER BY timestamp ASC"
 + "#"
@@ -346,5 +277,4 @@ CStrings:
 - "isProcessAllowed: Process:%@ is externally exempt for CPUCoalition, respecting trials"
 - "safeguards_json_rules"
 - "|^(com\\.apple\\.)?driver\\."
-
 ```

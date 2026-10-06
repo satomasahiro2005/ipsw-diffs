@@ -2,76 +2,43 @@
 
 > `/System/Library/AccessibilityBundles/AccessibilitySettingsLoader.bundle/AccessibilitySettingsLoader`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x12b24` | `0x113b0` | **`-0x1774`** |
+| `__TEXT.__dlopen_cstrs` | `0x7e4` | `0x70c` | **`-0xd8`** |
+| `__DATA_CONST.__const` | `0x5d8` | `0x528` | **`-0xb0`** |
+| `__TEXT.__cstring` | `0x20cb` | `0x2036` | **`-0x95`** |
+| `__TEXT.__oslogstring` | `0x6a4` | `0x613` | **`-0x91`** |
+| `__TEXT.__gcc_except_tab` | `0x598` | `0x510` | **`-0x88`** |
+| `__DATA_DIRTY.__objc_data` | `0x3c0` | `0x370` | **`-0x50`** |
+| `__DATA.__bss` | `0x2e8` | `0x2a0` | **`-0x48`** |
+| `__AUTH_CONST.__const` | `0x620` | `0x5e0` | **`-0x40`** |
+| `__AUTH_CONST.__objc_const` | `0x2410` | `0x23d0` | **`-0x40`** |
+| `__TEXT.__unwind_info` | `0x770` | `0x730` | **`-0x40`** |
+| `__TEXT.__objc_methlist` | `0x11fc` | `0x11cc` | **`-0x30`** |
+| `__DATA_DIRTY.__bss` | `0x128` | `0x100` | **`-0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x14e0` | `0x1500` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x290` | `0x278` | **`-0x18`** |
+| `__DATA.__objc_ivar` | `0x30` | `0x38` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x178` | `0x170` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xdc0` | `0xdb8` | **`-0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0xc0` | `0xb8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3237.1.0.0.0
--  __TEXT.__text: 0x12b24
--  __TEXT.__objc_methlist: 0x11fc
--  __TEXT.__dlopen_cstrs: 0x7e4
 +3240.3.0.0.0
-+  __TEXT.__text: 0x113b0
-+  __TEXT.__objc_methlist: 0x11cc
-+  __TEXT.__dlopen_cstrs: 0x70c
-   __TEXT.__const: 0x78
--  __TEXT.__gcc_except_tab: 0x598
--  __TEXT.__cstring: 0x20cb
--  __TEXT.__oslogstring: 0x6a4
--  __TEXT.__unwind_info: 0x770
-+  __TEXT.__gcc_except_tab: 0x510
-+  __TEXT.__cstring: 0x2036
-+  __TEXT.__oslogstring: 0x613
-+  __TEXT.__unwind_info: 0x730
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x5d8
--  __DATA_CONST.__objc_classlist: 0x178
-+  __DATA_CONST.__const: 0x528
-+  __DATA_CONST.__objc_classlist: 0x170
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xdc0
-+  __DATA_CONST.__objc_selrefs: 0xdb8
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0xc0
-+  __DATA_CONST.__objc_superrefs: 0xb8
-   __DATA_CONST.__objc_arraydata: 0x38
--  __DATA_CONST.__got: 0x290
--  __AUTH_CONST.__const: 0x620
--  __AUTH_CONST.__cfstring: 0x14e0
--  __AUTH_CONST.__objc_const: 0x2410
-+  __DATA_CONST.__got: 0x278
-+  __AUTH_CONST.__const: 0x5e0
-+  __AUTH_CONST.__cfstring: 0x1500
-+  __AUTH_CONST.__objc_const: 0x23d0
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0xaf0
--  __DATA.__objc_ivar: 0x30
-+  __DATA.__objc_ivar: 0x38
-   __DATA.__data: 0x1e0
--  __DATA.__bss: 0x2e8
--  __DATA_DIRTY.__objc_data: 0x3c0
--  __DATA_DIRTY.__bss: 0x128
-+  __DATA.__bss: 0x2a0
-+  __DATA_DIRTY.__objc_data: 0x370
-+  __DATA_DIRTY.__bss: 0x100
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 419
--  Symbols:   1302
+-  Symbols:   1048
 -  CStrings:  330
 +  Functions: 399
-+  Symbols:   1266
++  Symbols:   1014
 +  CStrings:  323
- 
 Symbols:
 + -[AccessibilityFloatingUIKeyboardHelper _installSpringBoardTransitionHooks]
 + -[AccessibilityFloatingUIKeyboardHelper _keyboardSceneFrameFromNotification:]
@@ -122,14 +89,6 @@ Symbols:
 + ___75-[AccessibilityFloatingUIKeyboardHelper _installSpringBoardTransitionHooks]_block_invoke_2
 + ___75-[AccessibilityFloatingUIKeyboardHelper _installSpringBoardTransitionHooks]_block_invoke_3
 + ___79-[AccessibilityFloatingUIKeyboardHelper _scheduleDeferredKeyboardVisibleReread]_block_invoke
-+ _objc_msgSend$_installSpringBoardTransitionHooks
-+ _objc_msgSend$_keyboardSceneFrameFromNotification:
-+ _objc_msgSend$_scheduleDeferredKeyboardVisibleReread
-+ _objc_msgSend$_sendCurrentKeyboardStateToAssistiveTouch
-+ _objc_msgSend$_sendKeyboardVisibleWithSceneFrame:keyboardWindow:
-+ _objc_msgSend$astDispatchQueue
-+ _objc_msgSend$safeIvarForKey:
-+ _objc_msgSend$safeValueForKeyPath:
 - +[AssistiveTouchHelper initializeMonitoring]
 - -[AssistiveTouchHelper _astDispatchQueue]
 - -[AssistiveTouchHelper _sendKeyboardStatusUpdate:]
@@ -209,16 +168,6 @@ Symbols:
 - _enable.onceToken
 - _getAXUIKeyboardScreenFrameSymbolLoc.ptr
 - _get__UIAccessibilityCastAsClassSymbolLoc.ptr
-- _objc_msgSend$_astDispatchQueue
-- _objc_msgSend$_sendKeyboardStatusUpdate
-- _objc_msgSend$_sendKeyboardStatusUpdate:
-- _objc_msgSend$_sendKeyboardStatusUpdateHidden
-- _objc_msgSend$floatValue
-- _objc_msgSend$installKeyboardListener
-- _objc_msgSend$rectValue
-- _objc_msgSend$safeCGFloatForKey:
-- _objc_msgSend$safeCGPointForKey:
-- _objc_msgSend$setObject:forKey:
 - _objc_release_x27
 - _objc_release_x28
 - _soft_AXProcessIsAssistiveTouch

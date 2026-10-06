@@ -2,92 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/ReminderKitInternal.framework/ReminderKitInternal`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x87dc` | `0x1208c` | **`+0x98b0`** |
+| `__TEXT.__text` | `0x302c44` | `0x3063dc` | **`+0x3798`** |
+| `__DATA.__bss` | `0x364d0` | `0x36b50` | **`+0x680`** |
+| `__TEXT.__const` | `0x2ccd8` | `0x2d008` | **`+0x330`** |
+| `__AUTH_CONST.__const` | `0x23b40` | `0x23d20` | **`+0x1e0`** |
+| `__TEXT.__eh_frame` | `0x129a0` | `0x12b80` | **`+0x1e0`** |
+| `__TEXT.__unwind_info` | `0xc0f8` | `0xc208` | **`+0x110`** |
+| `__AUTH.__data` | `0x42d8` | `0x43d8` | **`+0x100`** |
+| `__AUTH_CONST.__objc_const` | `0x7720` | `0x7810` | **`+0xf0`** |
+| `__TEXT.__constg_swiftt` | `0xa600` | `0xa6f0` | **`+0xf0`** |
+| `__TEXT.__swift5_typeref` | `0xbe98` | `0xbf4a` | **`+0xb2`** |
+| `__AUTH.__objc_data` | `0x2f40` | `0x2ff0` | **`+0xb0`** |
+| `__TEXT.__swift5_fieldmd` | `0xb5ec` | `0xb694` | **`+0xa8`** |
+| `__DATA.__data` | `0x5f60` | `0x5ff0` | **`+0x90`** |
+| `__TEXT.__swift5_reflstr` | `0x6c2a` | `0x6cba` | **`+0x90`** |
+| `__DATA_CONST.__got` | `0x1238` | `0x1288` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x1ee8` | `0x1f20` | **`+0x38`** |
+| `__TEXT.__swift5_proto` | `0x2a44` | `0x2a78` | **`+0x34`** |
+| `__AUTH_CONST.__auth_got` | `0x2550` | `0x2580` | **`+0x30`** |
+| `__TEXT.__swift5_assocty` | `0x20a0` | `0x20c0` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0xecc` | `0xee4` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x548` | `0x558` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -4043.0.0.0.0
--  __TEXT.__text: 0x302c44
--  __TEXT.__objc_methlist: 0x1ee8
--  __TEXT.__const: 0x2ccd8
 +4046.11.0.0.0
-+  __TEXT.__text: 0x3063dc
-+  __TEXT.__objc_methlist: 0x1f20
-+  __TEXT.__const: 0x2d008
-   __TEXT.__gcc_except_tab: 0x84
--  __TEXT.__cstring: 0x87dc
-+  __TEXT.__cstring: 0x1208c
-   __TEXT.__oslogstring: 0x5ccf
--  __TEXT.__swift5_typeref: 0xbe98
--  __TEXT.__constg_swiftt: 0xa600
--  __TEXT.__swift5_reflstr: 0x6c2a
--  __TEXT.__swift5_fieldmd: 0xb5ec
-+  __TEXT.__swift5_typeref: 0xbf4a
-+  __TEXT.__constg_swiftt: 0xa6f0
-+  __TEXT.__swift5_reflstr: 0x6cba
-+  __TEXT.__swift5_fieldmd: 0xb694
-   __TEXT.__swift5_builtin: 0x5b4
--  __TEXT.__swift5_assocty: 0x20a0
--  __TEXT.__swift5_proto: 0x2a44
--  __TEXT.__swift5_types: 0xecc
-+  __TEXT.__swift5_assocty: 0x20c0
-+  __TEXT.__swift5_proto: 0x2a78
-+  __TEXT.__swift5_types: 0xee4
-   __TEXT.__swift5_mpenum: 0x240
-   __TEXT.__swift5_protos: 0xbc
-   __TEXT.__swift5_capture: 0x2e90
-   __TEXT.__swift_as_entry: 0x178
-   __TEXT.__swift_as_ret: 0x124
-   __TEXT.__swift_as_cont: 0x298
--  __TEXT.__unwind_info: 0xc0f8
--  __TEXT.__eh_frame: 0x129a0
-+  __TEXT.__unwind_info: 0xc208
-+  __TEXT.__eh_frame: 0x12b80
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xac0
--  __DATA_CONST.__objc_classlist: 0x548
-+  __DATA_CONST.__objc_classlist: 0x558
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0xc0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x19c0
-   __DATA_CONST.__objc_protorefs: 0x60
-   __DATA_CONST.__objc_superrefs: 0x48
--  __DATA_CONST.__got: 0x1238
--  __AUTH_CONST.__const: 0x23b40
-+  __DATA_CONST.__got: 0x1288
-+  __AUTH_CONST.__const: 0x23d20
-   __AUTH_CONST.__cfstring: 0x3e0
--  __AUTH_CONST.__objc_const: 0x7720
-+  __AUTH_CONST.__objc_const: 0x7810
-   __AUTH_CONST.__objc_intobj: 0x18
--  __AUTH_CONST.__auth_got: 0x2550
--  __AUTH.__objc_data: 0x2f40
--  __AUTH.__data: 0x42d8
-+  __AUTH_CONST.__auth_got: 0x2580
-+  __AUTH.__objc_data: 0x2ff0
-+  __AUTH.__data: 0x43d8
-   __DATA.__objc_ivar: 0x5c
--  __DATA.__data: 0x5f60
--  __DATA.__bss: 0x364d0
-+  __DATA.__data: 0x5ff0
-+  __DATA.__bss: 0x36b50
-   __DATA.__common: 0xa0
-   __DATA_DIRTY.__objc_data: 0x1558
-   __DATA_DIRTY.__data: 0x7da0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 18390
--  Symbols:   6737
+-  Symbols:   6014
 -  CStrings:  1242
 +  Functions: 18468
-+  Symbols:   6767
++  Symbols:   6044
 +  CStrings:  1245
- 
 Symbols:
 + _OBJC_CLASS_$_REMGrocerySuggestionInvocation_ClearInvocation
 + _OBJC_METACLASS_$_REMGrocerySuggestionInvocation_ClearInvocation

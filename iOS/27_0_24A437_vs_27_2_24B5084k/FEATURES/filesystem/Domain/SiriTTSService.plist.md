@@ -4,9 +4,6 @@
 
 ```diff
 
- 		<key>DevelopmentPhase</key>
- 		<string>FeatureComplete</string>
- 	</dict>
 -	<key>data_detection</key>
 -	<dict>
 -		<key>DevelopmentPhase</key>
@@ -17,13 +14,7 @@
 -		<key>DevelopmentPhase</key>
 -		<string>FeatureComplete</string>
 -	</dict>
- 	<key>ifp_fm_voices</key>
- 	<dict>
- 		<key>DevelopmentPhase</key>
 
- 		<key>DevelopmentPhase</key>
- 		<string>FeatureComplete</string>
- 	</dict>
 -	<key>use_F26Voices_asIN</key>
 -	<dict>
 -		<key>DevelopmentPhase</key>
@@ -44,11 +35,7 @@
 -		<key>DevelopmentPhase</key>
 -		<string>FeatureComplete</string>
 -	</dict>
- 	<key>use_F26Voices_enUS</key>
- 	<dict>
- 		<key>DevelopmentPhase</key>
- 		<string>FeatureComplete</string>
- 	</dict>
+
 -	<key>use_F26Voices_knIN</key>
 -	<dict>
 -		<key>DevelopmentPhase</key>
@@ -99,8 +86,5 @@
 -		<key>DevelopmentPhase</key>
 -		<string>FeatureComplete</string>
 -	</dict>
- </dict>
- </plist>
- 
 
 ```

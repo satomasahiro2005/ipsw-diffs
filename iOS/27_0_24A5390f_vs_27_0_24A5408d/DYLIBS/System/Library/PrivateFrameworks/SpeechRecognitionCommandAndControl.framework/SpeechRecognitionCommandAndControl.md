@@ -2,106 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/SpeechRecognitionCommandAndControl.framework/SpeechRecognitionCommandAndControl`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x122c48` | `0x123144` | **`+0x4fc`** |
+| `__TEXT.__oslogstring` | `0x41da` | `0x442a` | **`+0x250`** |
+| `__TEXT.__gcc_except_tab` | `0x2468` | `0x252c` | **`+0xc4`** |
+| `__AUTH_CONST.__cfstring` | `0x98a0` | `0x9960` | **`+0xc0`** |
+| `__TEXT.__objc_methlist` | `0xc004` | `0xc0b4` | **`+0xb0`** |
+| `__AUTH_CONST.__objc_const` | `0x119e8` | `0x11a88` | **`+0xa0`** |
+| `__AUTH_CONST.__const` | `0x4eb8` | `0x4e20` | **`-0x98`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7ed0` | `0x7f50` | **`+0x80`** |
+| `__DATA_CONST.__const` | `0x22f8` | `0x2348` | **`+0x50`** |
+| `__TEXT.__cstring` | `0x9617` | `0x9667` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x43b8` | `0x43e0` | **`+0x28`** |
+| `__TEXT.__swift5_capture` | `0xac8` | `0xaa8` | **`-0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x1f30` | `0x1f18` | **`-0x18`** |
+| `__TEXT.__const` | `0x4854` | `0x4844` | **`-0x10`** |
+| `__DATA.__objc_ivar` | `0xab0` | `0xabc` | **`+0xc`** |
+| `__TEXT.__swift5_fieldmd` | `0x1020` | `0x1014` | **`-0xc`** |
+| `__TEXT.__swift5_typeref` | `0x92d6` | `0x92cc` | **`-0xa`** |
+| `__AUTH.__objc_data` | `0x47f0` | `0x47f8` | **`+0x8`** |
+| `__DATA.__data` | `0x32f0` | `0x32f8` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x1548` | `0x1550` | **`+0x8`** |
+| `__TEXT.__constg_swiftt` | `0x20e0` | `0x20e8` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__swift5_reflstr`
+
+### Other Changes
 
 ```diff
 
 -185.0.0.0.0
--  __TEXT.__text: 0x122c48
--  __TEXT.__objc_methlist: 0xc004
--  __TEXT.__const: 0x4854
--  __TEXT.__oslogstring: 0x41da
--  __TEXT.__cstring: 0x9617
--  __TEXT.__gcc_except_tab: 0x2468
 +188.0.0.0.0
-+  __TEXT.__text: 0x123144
-+  __TEXT.__objc_methlist: 0xc0b4
-+  __TEXT.__const: 0x4844
-+  __TEXT.__oslogstring: 0x442a
-+  __TEXT.__cstring: 0x9667
-+  __TEXT.__gcc_except_tab: 0x252c
-   __TEXT.__ustring: 0x96
-   __TEXT.__dlopen_cstrs: 0x5e
--  __TEXT.__constg_swiftt: 0x20e0
--  __TEXT.__swift5_typeref: 0x92d6
-+  __TEXT.__constg_swiftt: 0x20e8
-+  __TEXT.__swift5_typeref: 0x92cc
-   __TEXT.__swift5_builtin: 0x104
-   __TEXT.__swift5_reflstr: 0xdb8
--  __TEXT.__swift5_fieldmd: 0x1020
-+  __TEXT.__swift5_fieldmd: 0x1014
-   __TEXT.__swift5_assocty: 0x458
--  __TEXT.__swift5_capture: 0xac8
-+  __TEXT.__swift5_capture: 0xaa8
-   __TEXT.__swift5_proto: 0x164
-   __TEXT.__swift5_types: 0x158
-   __TEXT.__swift_as_entry: 0x3c
-   __TEXT.__swift_as_ret: 0x4c
-   __TEXT.__swift_as_cont: 0x74
--  __TEXT.__unwind_info: 0x43b8
-+  __TEXT.__unwind_info: 0x43e0
-   __TEXT.__eh_frame: 0x1220
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x22f8
-+  __DATA_CONST.__const: 0x2348
-   __DATA_CONST.__objc_classlist: 0x540
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x1d8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7ed0
-+  __DATA_CONST.__objc_selrefs: 0x7f50
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__objc_superrefs: 0x2b0
-   __DATA_CONST.__objc_arraydata: 0x8a0
--  __DATA_CONST.__got: 0x1548
--  __AUTH_CONST.__const: 0x4eb8
--  __AUTH_CONST.__cfstring: 0x98a0
--  __AUTH_CONST.__objc_const: 0x119e8
-+  __DATA_CONST.__got: 0x1550
-+  __AUTH_CONST.__const: 0x4e20
-+  __AUTH_CONST.__cfstring: 0x9960
-+  __AUTH_CONST.__objc_const: 0x11a88
-   __AUTH_CONST.__objc_intobj: 0x390
-   __AUTH_CONST.__objc_doubleobj: 0x70
-   __AUTH_CONST.__objc_arrayobj: 0x120
-   __AUTH_CONST.__objc_dictobj: 0xf0
--  __AUTH_CONST.__auth_got: 0x1f30
--  __AUTH.__objc_data: 0x47f0
-+  __AUTH_CONST.__auth_got: 0x1f18
-+  __AUTH.__objc_data: 0x47f8
-   __AUTH.__data: 0x1710
--  __DATA.__objc_ivar: 0xab0
--  __DATA.__data: 0x32f0
-+  __DATA.__objc_ivar: 0xabc
-+  __DATA.__data: 0x32f8
-   __DATA.__objc_stublist: 0x10
-   __DATA.__bss: 0x32f0
-   __DATA.__common: 0x298
 
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftObservation.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
 +  - /usr/lib/swift/libswiftRegexBuilder.dylib
-   - /usr/lib/swift/libswiftSpatial.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7339
--  Symbols:   17688
+-  Symbols:   14820
 -  CStrings:  1848
 +  Functions: 7366
-+  Symbols:   17723
++  Symbols:   14844
 +  CStrings:  1862
- 
 Symbols:
 + +[CACSpokenCommandManager _shouldShowEnhancedSiri]
 + -[AXElement(CACScrolling) cacPerformScrollAction:]
@@ -199,23 +144,6 @@ Symbols:
 + ___swift_memcpy40_8
 + _kCACCommandContextPreventDuringKeyboardDictation
 + _kCACCommandContextRequiresSiriAIEnabled
-+ _objc_msgSend$_cachedScrollables
-+ _objc_msgSend$_displayTryEnhancedScrolling
-+ _objc_msgSend$_invalidateCachedScrollables
-+ _objc_msgSend$_screenElementsForScrollView:withAction:
-+ _objc_msgSend$_scrollDidMoveFromFrames:
-+ _objc_msgSend$_scrollableChildFramesForScrollView:withAction:
-+ _objc_msgSend$_scrollables
-+ _objc_msgSend$_shouldShowEnhancedSiri
-+ _objc_msgSend$cacPerformScrollAction:
-+ _objc_msgSend$elementFrame
-+ _objc_msgSend$elementRef
-+ _objc_msgSend$mapTableWithKeyOptions:valueOptions:
-+ _objc_msgSend$rectWithAXAttribute:
-+ _objc_msgSend$set_scrollables:
-+ _objc_msgSend$shouldShowEnhancedSiri
-+ _objc_msgSend$startTransactionWithUtteranceID:appBundleID:
-+ _objc_msgSend$toggleAccessibilityShortcutOption:
 - -[CACSpokenCommandManager _processScrollViews:]
 - GCC_except_table108
 - GCC_except_table109
@@ -287,12 +215,6 @@ Symbols:
 - __OBJC_$_INSTANCE_METHODS_AXElement(ScrollingPrivate|AXElementTextEditing|CACElement|CACElementTests)
 - ___74-[CACSpokenCommand(CACSpokenCommandAccessibility) enableSmartInvertColors]_block_invoke
 - ___75-[CACSpokenCommand(CACSpokenCommandAccessibility) disableSmartInvertColors]_block_invoke
-- _objc_msgSend$_processScrollViews:
-- _objc_msgSend$_scrollAncestorIsSelfForScrollView:scrollAction:resultScrollAncestor:
-- _objc_msgSend$respondsToUserInteraction
-- _objc_msgSend$setClassicInvertColors:
-- _objc_msgSend$setLastSmartInvertColorsEnablement:
-- _objc_msgSend$startTransactionWithUtteranceID:queryString:appBundleID:
 - _symbolic _____ySsG s23_ContiguousArrayStorageC
 CStrings:
 + "Failed to scroll any child element of scroll view."

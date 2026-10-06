@@ -2,6 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ActivityAwardsServices.framework/activityawardsd`
 
-Sections:
-~ __TEXT.__eh_frame : content changed
-~ __DATA.__objc_selrefs : content changed
+### Same-size Content Changes
+
+- `__DATA.__objc_selrefs`
+- `__TEXT.__eh_frame`
+
+### Other Changes
+
+```diff
+
+-2027.0.20.0.0
++2027.0.21.0.0
+```

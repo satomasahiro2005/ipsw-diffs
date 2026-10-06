@@ -2,77 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/MobileAssetDaemon.framework/MobileAssetDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x261210` | `0x262d64` | **`+0x1b54`** |
+| `__TEXT.__oslogstring` | `0x5b01d` | `0x5b5bd` | **`+0x5a0`** |
+| `__TEXT.__cstring` | `0x3fb77` | `0x3fd97` | **`+0x220`** |
+| `__AUTH_CONST.__cfstring` | `0x33240` | `0x333e0` | **`+0x1a0`** |
+| `__TEXT.__gcc_except_tab` | `0xd518` | `0xd5b4` | **`+0x9c`** |
+| `__TEXT.__objc_methlist` | `0x12dd4` | `0x12e2c` | **`+0x58`** |
+| `__TEXT.__unwind_info` | `0x48b0` | `0x4900` | **`+0x50`** |
+| `__AUTH_CONST.__const` | `0x1080` | `0x10c0` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb020` | `0xb058` | **`+0x38`** |
+| `__AUTH_CONST.__objc_const` | `0x191a8` | `0x191d8` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x3210` | `0x3230` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x1230` | `0x1238` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x1830` | `0x1834` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2215.40.19.0.0
--  __TEXT.__text: 0x25ce44
--  __TEXT.__objc_methlist: 0x12dd4
 +2215.40.21.502.1
-+  __TEXT.__text: 0x25e980
-+  __TEXT.__objc_methlist: 0x12e2c
-   __TEXT.__const: 0x158a
--  __TEXT.__cstring: 0x3fb77
--  __TEXT.__oslogstring: 0x5b01d
--  __TEXT.__gcc_except_tab: 0xd518
-+  __TEXT.__cstring: 0x3fd97
-+  __TEXT.__oslogstring: 0x5b5bd
-+  __TEXT.__gcc_except_tab: 0xd5b4
-   __TEXT.__dlopen_cstrs: 0x5a
-   __TEXT.__constg_swiftt: 0xf0
-   __TEXT.__swift5_typeref: 0x146
 
-   __TEXT.__swift5_assocty: 0x48
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_proto: 0x24
--  __TEXT.__unwind_info: 0x5a10
-+  __TEXT.__unwind_info: 0x5a68
-   __TEXT.__eh_frame: 0x10c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3210
-+  __DATA_CONST.__const: 0x3230
-   __DATA_CONST.__objc_classlist: 0x498
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0xb8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb020
-+  __DATA_CONST.__objc_selrefs: 0xb058
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x360
-   __DATA_CONST.__objc_arraydata: 0x1028
-   __DATA_CONST.__got: 0x12a0
--  __AUTH_CONST.__const: 0x1080
--  __AUTH_CONST.__cfstring: 0x33240
--  __AUTH_CONST.__objc_const: 0x191a8
-+  __AUTH_CONST.__const: 0x10c0
-+  __AUTH_CONST.__cfstring: 0x333e0
-+  __AUTH_CONST.__objc_const: 0x191d8
-   __AUTH_CONST.__objc_arrayobj: 0x390
-   __AUTH_CONST.__objc_intobj: 0x13c8
-   __AUTH_CONST.__objc_dictobj: 0x2d0
--  __AUTH_CONST.__auth_got: 0x1230
-+  __AUTH_CONST.__auth_got: 0x1238
-   __AUTH.__objc_data: 0x8c8
-   __AUTH.__data: 0xc0
--  __DATA.__objc_ivar: 0x1830
-+  __DATA.__objc_ivar: 0x1834
-   __DATA.__data: 0x1170
-   __DATA.__crash_info: 0x148
-   __DATA_DIRTY.__objc_data: 0x2580
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7327
 -  Symbols:   11506
 -  CStrings:  11064
 +  Functions: 7344
 +  Symbols:   11526
 +  CStrings:  11092
- 
 Symbols:
 + +[MAAutoAssetMigrationManager cleanupPreinstalledDirectoryAtPath:]
 + +[MAAutoAssetMigrationManager cleanupPreinstalledDirectory]

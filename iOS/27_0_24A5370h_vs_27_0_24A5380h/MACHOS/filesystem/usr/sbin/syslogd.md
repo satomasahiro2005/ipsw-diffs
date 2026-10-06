@@ -2,16 +2,20 @@
 
 > `/usr/sbin/syslogd`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x1356c
-+  __TEXT.__text: 0x1352c
-   __TEXT.__auth_stubs: 0xe00
-   __TEXT.__const: 0xc8
-   __TEXT.__cstring: 0x352c
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1356c` | `0x1352c` | **`-0x40`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_100001588 : 312 -> 288
 ~ sub_100004120 -> sub_100004108 : 2172 -> 2188
@@ -24,5 +28,4 @@ Functions:
 ~ sub_100010f94 -> sub_100010f6c : 1784 -> 1764
 ~ sub_100012c00 -> sub_100012bc4 : 168 -> 172
 ~ sub_100012ef4 -> sub_100012ebc : 420 -> 412
-
 ```

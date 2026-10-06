@@ -2,70 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/LegalAndRegulatorySettingsSupport.framework/LegalAndRegulatorySettingsSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb4584` | `0xb47d0` | **`+0x24c`** |
+| `__AUTH.__data` | `0x15d8` | `0x1658` | **`+0x80`** |
+| `__DATA.__bss` | `0x5ce8` | `0x5d68` | **`+0x80`** |
+| `__TEXT.__const` | `0xb498` | `0xb508` | **`+0x70`** |
+| `__TEXT.__eh_frame` | `0x1804` | `0x179c` | **`-0x68`** |
+| `__DATA.__data` | `0x2f30` | `0x2f88` | **`+0x58`** |
+| `__TEXT.__constg_swiftt` | `0x3330` | `0x3380` | **`+0x50`** |
+| `__TEXT.__swift5_typeref` | `0x6e0b` | `0x6e5b` | **`+0x50`** |
+| `__TEXT.__swift5_fieldmd` | `0x2770` | `0x2798` | **`+0x28`** |
+| `__TEXT.__swift5_assocty` | `0x878` | `0x890` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x2998` | `0x2980` | **`-0x18`** |
+| `__TEXT.__swift5_reflstr` | `0x1c8d` | `0x1c9d` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0xfc` | `0xf0` | **`-0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x16b8` | `0x16b0` | **`-0x8`** |
+| `__TEXT.__swift5_proto` | `0x360` | `0x364` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0x348` | `0x34c` | **`+0x4`** |
+| `__TEXT.__oslogstring` | `0x495` | `0x498` | **`+0x3`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.5.0.0
--  __TEXT.__text: 0xafbbc
--  __TEXT.__const: 0xb498
 +2027.1.2.1.0
-+  __TEXT.__text: 0xafe34
-+  __TEXT.__const: 0xb508
-   __TEXT.__cstring: 0x633e
--  __TEXT.__swift5_typeref: 0x6e0b
--  __TEXT.__constg_swiftt: 0x3330
--  __TEXT.__swift5_reflstr: 0x1c8d
--  __TEXT.__swift5_fieldmd: 0x2770
-+  __TEXT.__swift5_typeref: 0x6e5b
-+  __TEXT.__constg_swiftt: 0x3380
-+  __TEXT.__swift5_reflstr: 0x1c9d
-+  __TEXT.__swift5_fieldmd: 0x2798
-   __TEXT.__swift5_builtin: 0x1cc
--  __TEXT.__swift5_proto: 0x360
--  __TEXT.__swift5_types: 0x348
--  __TEXT.__swift5_assocty: 0x878
-+  __TEXT.__swift5_proto: 0x364
-+  __TEXT.__swift5_types: 0x34c
-+  __TEXT.__swift5_assocty: 0x890
-   __TEXT.__swift5_capture: 0x13d4
-   __TEXT.__swift_as_entry: 0x78
-   __TEXT.__swift_as_ret: 0x64
-   __TEXT.__swift5_protos: 0x24
--  __TEXT.__swift_as_cont: 0xfc
--  __TEXT.__oslogstring: 0x495
-+  __TEXT.__swift_as_cont: 0xf0
-+  __TEXT.__oslogstring: 0x498
-   __TEXT.__swift5_mpenum: 0x28
--  __TEXT.__unwind_info: 0x33a0
--  __TEXT.__eh_frame: 0x1804
-+  __TEXT.__unwind_info: 0x33a8
-+  __TEXT.__eh_frame: 0x179c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__got: 0x9d0
-   __AUTH_CONST.__const: 0x8328
-   __AUTH_CONST.__objc_const: 0x690
--  __AUTH_CONST.__auth_got: 0x16b8
-+  __AUTH_CONST.__auth_got: 0x16b0
-   __AUTH.__objc_data: 0x140
--  __AUTH.__data: 0x15d8
--  __DATA.__data: 0x2f30
-+  __AUTH.__data: 0x1658
-+  __DATA.__data: 0x2f88
-   __DATA.__common: 0x50
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4284
--  Symbols:   2103
+-  Symbols:   2043
 +  Functions: 4297
-+  Symbols:   2110
-   CStrings:  2618
- 
++  Symbols:   2050
 Symbols:
 + _associated conformance 33LegalAndRegulatorySettingsSupport0A21DocumentPlainTextViewV7SwiftUI0I0AA4BodyAdEP_AdE
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA4ViewPAAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAA06_UnaryE7AdaptorVyAA012_ConditionalD0VyAA14NavigationLinkVyAA4TextVs5NeverOGAMyAoKyAKy33LegalAndRegulatorySettingsSupport0p14DocumentSafetyq8HandlingsE0VAS28ChinaBlueStickerDynamicLabelVGAKyAS0pu5PlainnE0VAS0pu3WebE0VGGGGG_AS0pU10IdentifierOQo_AA31AccessibilityAttachmentModifierVGAaDHPqd0__AaDHD3_A8_HO_A10_AA0E8ModifierHPyHCHC

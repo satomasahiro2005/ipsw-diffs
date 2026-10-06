@@ -2,78 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/GenerativeAssistantUI.framework/GenerativeAssistantUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x327f0` | `0x32f08` | **`+0x718`** |
+| `__TEXT.__swift5_typeref` | `0x37a4` | `0x3752` | **`-0x52`** |
+| `__AUTH_CONST.__auth_got` | `0xe30` | `0xe10` | **`-0x20`** |
+| `__DATA.__data` | `0x14b0` | `0x14d0` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x798` | `0x7b8` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x5b0` | `0x5c8` | **`+0x18`** |
+| `__DATA.__bss` | `0x6550` | `0x6540` | **`-0x10`** |
+| `__TEXT.__const` | `0x46e4` | `0x46d4` | **`-0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0xec0` | `0xecc` | **`+0xc`** |
+| `__AUTH.__data` | `0xae8` | `0xae0` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0xdd8` | `0xde0` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__swift5_reflstr`
+
+### Other Changes
 
 ```diff
 
 -3600.38.6.0.0
--  __TEXT.__text: 0x30c24
 +3605.4.1.0.0
-+  __TEXT.__text: 0x31350
-   __TEXT.__objc_methlist: 0x440
--  __TEXT.__const: 0x46e4
-+  __TEXT.__const: 0x46d4
-   __TEXT.__gcc_except_tab: 0x10
--  __TEXT.__cstring: 0x798
-+  __TEXT.__cstring: 0x7b8
-   __TEXT.__dlopen_cstrs: 0x5a
-   __TEXT.__constg_swiftt: 0xdbc
--  __TEXT.__swift5_typeref: 0x37a4
-+  __TEXT.__swift5_typeref: 0x3752
-   __TEXT.__swift5_reflstr: 0xb45
--  __TEXT.__swift5_fieldmd: 0xec0
-+  __TEXT.__swift5_fieldmd: 0xecc
-   __TEXT.__swift5_types: 0x11c
-   __TEXT.__swift5_proto: 0x324
-   __TEXT.__swift5_assocty: 0x220
 
-   __TEXT.__swift_as_entry: 0x14
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0x20
--  __TEXT.__unwind_info: 0x11d0
-+  __TEXT.__unwind_info: 0x11f0
-   __TEXT.__eh_frame: 0xcc8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x328
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__got: 0x5b0
-+  __DATA_CONST.__got: 0x5c8
-   __AUTH_CONST.__const: 0x1c98
-   __AUTH_CONST.__objc_const: 0xd78
--  __AUTH_CONST.__auth_got: 0xe30
-+  __AUTH_CONST.__auth_got: 0xe10
-   __AUTH.__objc_data: 0x168
--  __AUTH.__data: 0xae8
--  __DATA.__data: 0x14b0
-+  __AUTH.__data: 0xae0
-+  __DATA.__data: 0x14d0
-   __DATA.__common: 0x58
-   __DATA_DIRTY.__data: 0x4e8
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-
-   - /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
-   - /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
-   - /System/Library/PrivateFrameworks/GenerativeAssistantCommon.framework/GenerativeAssistantCommon
 +  - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
-   - /System/Library/PrivateFrameworks/GenerativePartnerService.framework/GenerativePartnerService
-   - /System/Library/PrivateFrameworks/IntelligenceFlow.framework/IntelligenceFlow
-   - /System/Library/PrivateFrameworks/LinkServices.framework/LinkServices
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1276
--  Symbols:   858
+-  Symbols:   834
 -  CStrings:  60
 +  Functions: 1280
-+  Symbols:   857
++  Symbols:   833
 +  CStrings:  61
- 
 Symbols:
 + _get_witness_table 7SwiftUI6VStackVyAA15ModifiedContentVyAA6ZStackVyAA05TupleE0VyAA4TextV_AA4ViewP07SnippetB0E8readSize8onChangeQrySo6CGSizeVc_tFQOyAmAE0M10TapGesture5count7performQrSi_yyctFQOyAK_Qo__Qo_AEyAEyAmNE10engageableQryFQOyAK_Qo_AA24_ForegroundStyleModifierVyAA5ColorVGGAA13_OffsetEffectVGSgQPGGAA022_EnvironmentKeyWritingW0VyAA4FontVSgGGGAaLHPyHC
 + _symbolic _____Sg 16GenerativeModels19DisplayImagePayloadV

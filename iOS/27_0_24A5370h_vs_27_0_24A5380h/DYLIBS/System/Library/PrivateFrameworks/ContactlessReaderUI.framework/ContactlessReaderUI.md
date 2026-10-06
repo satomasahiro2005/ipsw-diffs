@@ -2,111 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/ContactlessReaderUI.framework/ContactlessReaderUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2c7a0c` | `0x2cdaa0` | **`+0x6094`** |
+| `__TEXT.__swift5_typeref` | `0x6195e` | `0x63c34` | **`+0x22d6`** |
+| `__TEXT.__const` | `0x1e094` | `0x1e684` | **`+0x5f0`** |
+| `__AUTH_CONST.__const` | `0x13828` | `0x13c50` | **`+0x428`** |
+| `__DATA.__data` | `0xa8d8` | `0xac48` | **`+0x370`** |
+| `__DATA.__bss` | `0x16d28` | `0x17088` | **`+0x360`** |
+| `__AUTH_CONST.__objc_const` | `0x8828` | `0x8608` | **`-0x220`** |
+| `__TEXT.__swift5_reflstr` | `0x7094` | `0x71e4` | **`+0x150`** |
+| `__TEXT.__swift5_fieldmd` | `0x7454` | `0x7594` | **`+0x140`** |
+| `__TEXT.__unwind_info` | `0x8928` | `0x8a40` | **`+0x118`** |
+| `__AUTH.__objc_data` | `0x29a8` | `0x2898` | **`-0x110`** |
+| `__TEXT.__oslogstring` | `0x4856` | `0x4956` | **`+0x100`** |
+| `__TEXT.__constg_swiftt` | `0x97f4` | `0x98cc` | **`+0xd8`** |
+| `__TEXT.__cstring` | `0x7446` | `0x7376` | **`-0xd0`** |
+| `__TEXT.__eh_frame` | `0xa264` | `0xa310` | **`+0xac`** |
+| `__TEXT.__swift5_assocty` | `0x1b50` | `0x1bf8` | **`+0xa8`** |
+| `__TEXT.__objc_methlist` | `0x1d08` | `0x1c78` | **`-0x90`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1ab8` | `0x1a60` | **`-0x58`** |
+| `__AUTH_CONST.__auth_got` | `0x3510` | `0x3558` | **`+0x48`** |
+| `__AUTH.__data` | `0x8758` | `0x8728` | **`-0x30`** |
+| `__DATA_CONST.__const` | `0x290` | `0x2c0` | **`+0x30`** |
+| `__TEXT.__swift5_capture` | `0x3d6c` | `0x3d8c` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x85c` | `0x87c` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x350` | `0x338` | **`-0x18`** |
+| `__TEXT.__swift5_proto` | `0xadc` | `0xaf4` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x10` | `—` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x1c18` | `0x1c28` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x230` | `0x240` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x10` | `—` | **`-0x10`** |
+| `__TEXT.__swift_as_cont` | `0x884` | `0x890` | **`+0xc`** |
+| `__DATA.__common` | `0x620` | `0x618` | **`-0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x140` | `0x148` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2c7a0c
--  __TEXT.__objc_methlist: 0x1d08
--  __TEXT.__const: 0x1e094
--  __TEXT.__cstring: 0x7446
--  __TEXT.__swift5_typeref: 0x6195e
--  __TEXT.__oslogstring: 0x4856
--  __TEXT.__constg_swiftt: 0x97f4
--  __TEXT.__swift5_fieldmd: 0x7454
--  __TEXT.__swift5_types: 0x85c
--  __TEXT.__swift5_capture: 0x3d6c
--  __TEXT.__swift5_reflstr: 0x7094
--  __TEXT.__swift5_assocty: 0x1b50
--  __TEXT.__swift5_proto: 0xadc
--  __TEXT.__swift5_builtin: 0x30c
--  __TEXT.__swift_as_entry: 0x470
--  __TEXT.__swift_as_cont: 0x884
--  __TEXT.__swift_as_ret: 0x3e0
--  __TEXT.__swift5_mpenum: 0x64
-+  __TEXT.__text: 0x2cdaa0
-+  __TEXT.__objc_methlist: 0x1c78
-+  __TEXT.__const: 0x1e684
-+  __TEXT.__cstring: 0x7376
-+  __TEXT.__swift5_typeref: 0x63c34
-+  __TEXT.__oslogstring: 0x4956
-+  __TEXT.__constg_swiftt: 0x98cc
-+  __TEXT.__swift5_fieldmd: 0x7594
-+  __TEXT.__swift5_types: 0x87c
-+  __TEXT.__swift5_capture: 0x3d8c
-+  __TEXT.__swift5_reflstr: 0x71e4
-+  __TEXT.__swift5_assocty: 0x1bf8
-+  __TEXT.__swift5_proto: 0xaf4
-   __TEXT.__swift5_protos: 0x44
-+  __TEXT.__swift_as_entry: 0x470
-+  __TEXT.__swift_as_ret: 0x3e0
-+  __TEXT.__swift_as_cont: 0x890
-+  __TEXT.__swift5_builtin: 0x30c
-+  __TEXT.__swift5_mpenum: 0x64
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0x8928
--  __TEXT.__eh_frame: 0xa264
-+  __TEXT.__unwind_info: 0x8a40
-+  __TEXT.__eh_frame: 0xa310
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x290
--  __DATA_CONST.__objc_classlist: 0x350
-+  __DATA_CONST.__const: 0x2c0
-+  __DATA_CONST.__objc_classlist: 0x338
-   __DATA_CONST.__objc_catlist: 0x8
--  __DATA_CONST.__objc_protolist: 0x230
-+  __DATA_CONST.__objc_protolist: 0x240
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1ab8
--  __DATA_CONST.__objc_protorefs: 0x140
--  __DATA_CONST.__objc_superrefs: 0x10
-+  __DATA_CONST.__objc_selrefs: 0x1a60
-+  __DATA_CONST.__objc_protorefs: 0x148
-   __DATA_CONST.__vfx_script_tby: 0x20
--  __DATA_CONST.__got: 0x1c18
--  __AUTH_CONST.__const: 0x13828
--  __AUTH_CONST.__objc_const: 0x8828
--  __AUTH_CONST.__auth_got: 0x3510
--  __AUTH.__objc_data: 0x29a8
--  __AUTH.__data: 0x8758
--  __DATA.__objc_ivar: 0x10
--  __DATA.__data: 0xa8d8
--  __DATA.__bss: 0x16d28
--  __DATA.__common: 0x620
-+  __DATA_CONST.__got: 0x1c28
-+  __AUTH_CONST.__const: 0x13c50
-+  __AUTH_CONST.__objc_const: 0x8608
-+  __AUTH_CONST.__auth_got: 0x3558
-+  __AUTH.__objc_data: 0x2898
-+  __AUTH.__data: 0x8728
-+  __DATA.__data: 0xac48
-+  __DATA.__bss: 0x17088
-+  __DATA.__common: 0x618
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
+-150.28.1.0.0
++150.30.1.0.0
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11896
--  Symbols:   9163
--  CStrings:  1346
+-  Symbols:   6027
+-  CStrings:  1345
 +  Functions: 12008
-+  Symbols:   9204
-+  CStrings:  1348
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_types2 : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__vfx_script_tby : content changed
++  Symbols:   6069
++  CStrings:  1347
 Symbols:
 + _UIAccessibilityIsReduceMotionEnabled
 + __OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_SBUISystemApertureElementEventHandling
@@ -164,8 +109,6 @@ Symbols:
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE33searchPresentationToolbarBehavioryQrAA06SearchefG0VFQOyAcAE10searchable4text9placement6promptQrAA7BindingVySSG_AA0H14FieldPlacementVqd__tSyRd__lFQOyAA15NavigationStackVyAA0P4PathVAA15ModifiedContentVyAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAUyAcAE5sheet11isPresented9onDismiss7contentQrALySbG_yycSgqd__yctAaBRd__lFQOyAcAE7toolbarA3_Qrqd__yXE_tAA0fT0Rd__lFQOyAcAE15navigationTitleyQrqd__SyRd__lFQOyAcAE29navigationBarTitleDisplayModeyQrAA0P7BarItemV16TitleDisplayModeOFQOyAcAE15dynamicTypeSizeyQrqd__SXRd__AA15DynamicTypeSizeO5BoundRtd__lFQOyAA5GroupVyAA012_ConditionalT0Vy017ContactlessReaderB0017CommonEmptyResultC0VAcAE06scrollT10BackgroundyQrAA10VisibilityOFQOyAUyAUyAA4ListVys5NeverOA22_yAA05TupleT0VyAA7ForEachVySayA23_0H12AddressModelC0H6ResultOGSOA23_10PaymentRowVyA23_010PaymentRowT0VyA22_yAUyAUyAUyAA5ImageVAA18_AspectRatioLayoutVGAA12_FrameLayoutVGAA11_ClipEffectVyAA6CircleVGGA23_14PaymentRowIconVGAA4TextVAUyAUyAUyAUyA64_AA30_EnvironmentKeyWritingModifierVySiSgGGA66_yA64_14TruncationModeOGGA66_yAA4FontVSgGGAA24_ForegroundStyleModifierVyAA22HierarchicalShapeStyleVGGGA23_19PaymentRowAccessoryVGG_A89_QPGA34_yAA7SectionVyA64_A36_ySayA23_14AddressDetailsV11MeCardEntry33_A0C16B968A557418AF300A704F408C8FLLVGSSA43_yA45_yA62_A64_A22_yA84_A64_GGA22_yAUyA20_yAUyAUyAUyAcAE10fontWeightyQrA75_6WeightVSgFQOyAUyA47_A77_G_Qo_A66_yA47_5ScaleOGGA83_GA52_GGA80_yAA5ColorVGGAA05EmptyC0VGGGA119_GSg_A92_yA64_A36_ySayA23_15ShippingAddressVGA126_ACA23_E22paymentRowSwipeActions4edge15allowsFullSwipeA3_QrAA14HorizontalEdgeO_Sbqd__yXEtAaBRd__lFQOyA43_yA85_A120_G_AA6ButtonVyAA5LabelVyA64_A47_GGQo_GA119_GSgA92_yA64_A36_yA127_A126_A121_SgGA119_GSgQPGGGAA21_TraitWritingModifierVyAA26ListSectionSpacingTraitKeyVGGA66_yAA18ListSectionSpacingVSgGG_Qo_GG_s19PartialRangeThroughVyA16_GQo__Qo__SSQo__A34_yAA0F4ItemVyytA135_yA47_GG_A172_yytAcAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyA135_yAUyA47_A116_GG_AA28BorderedProminentButtonStyleVQo_GQPGQo__A23_13AddressEditorVQo_AA25_AppearanceActionModifierVG_Qo_AA24_BackgroundStyleModifierVyAA15BackgroundStyleVGGG_SSQo__Qo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE33searchPresentationToolbarBehavioryQrAA06SearchefG0VFQOyAcAE10searchable4text9placement6promptQrAA7BindingVySSG_AA0H14FieldPlacementVqd__tSyRd__lFQOyAA15NavigationStackVyAA0P4PathVAA15ModifiedContentVyAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAUyAcAE5sheet11isPresented9onDismiss7contentQrALySbG_yycSgqd__yctAaBRd__lFQOyAcAE7toolbarA3_Qrqd__yXE_tAA0fT0Rd__lFQOyAcAE15navigationTitleyQrqd__SyRd__lFQOyAcAE29navigationBarTitleDisplayModeyQrAA0P7BarItemV16TitleDisplayModeOFQOyAcAE15dynamicTypeSizeyQrqd__SXRd__AA15DynamicTypeSizeO5BoundRtd__lFQOyAA5GroupVyAA012_ConditionalT0Vy017ContactlessReaderB0017CommonEmptyResultC0VAcAE06scrollT10BackgroundyQrAA10VisibilityOFQOyAUyAUyAA4ListVys5NeverOA22_yAA7ForEachVySayA23_0H12ContactModelC0H6ResultOGSOA23_10PaymentRowVyA23_010PaymentRowT0VyA22_yAUyAUyAUyAA5ImageVAA18_AspectRatioLayoutVGAA12_FrameLayoutVGAA11_ClipEffectVyAA6CircleVGGA23_14PaymentRowIconVGAA4TextVAUyAUyA62_AA30_EnvironmentKeyWritingModifierVySiSgGGA64_yA62_14TruncationModeOGGGA23_19PaymentRowAccessoryVGGAA05TupleT0VyAA7SectionVyA62_A34_ySayA23_12EmailDetailsV11MeCardEntry33_96B9F7C95B4B4E60D29AF7ED507B5FEFLLVGSSA41_yA43_yA60_A71_A62_GA22_yAUyA20_yAUyAUyAUyAcAE10fontWeightyQrAA4FontV6WeightVSgFQOyAUyA45_A64_yA90_SgGG_Qo_A64_yA45_5ScaleOGGAA24_ForegroundStyleModifierVyAA22HierarchicalShapeStyleVGGA50_GGA103_yAA5ColorVGGAA05EmptyC0VGGGA115_GSg_A80_yA115_AcAE5alert4itemA3_QrALyqd__SgG_AA5AlertVqd__XEts12IdentifiableRd__lFQOyA41_yA43_yA59_A62_A22_yA22_yA78_yA62__AUyAA7DividerVAA14_PaddingLayoutVGA62_QPGA22_yA62_A62_GGA62_GGA22_yAUyAA08ProgressC0VyA115_A115_GA106_GA116_GG_A23_11HideMyEmailV25AccountConfigurationErrorOQo_A62_GSgA80_yA62_A34_ySayA23_12EmailAddressVGA152_ACA23_E22paymentRowSwipeActions4edge15allowsFullSwipeA3_QrAA14HorizontalEdgeO_Sbqd__yXEtAaBRd__lFQOyA117__AA6ButtonVyAA5LabelVyA62_A45_GGQo_GA115_GSgAUyA80_yA115_A160_yA62_GA62_GAA21_TraitWritingModifierVyAA25ListRowBackgroundTraitKeyVGGQPGGGA172_yAA26ListSectionSpacingTraitKeyVGGA64_yAA18ListSectionSpacingVSgGG_Qo_GG_s19PartialRangeThroughVyA16_GQo__Qo__SSQo__A78_yAA0F4ItemVyytA160_yA45_GG_A199_yytAcAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyA160_yAUyA45_A112_GG_AA28BorderedProminentButtonStyleVQo_GQPGQo__A23_13ContactEditorVQo_AA25_AppearanceActionModifierVG_Qo_AA24_BackgroundStyleModifierVyAA15BackgroundStyleVGGG_SSQo__Qo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE33searchPresentationToolbarBehavioryQrAA06SearchefG0VFQOyAcAE10searchable4text9placement6promptQrAA7BindingVySSG_AA0H14FieldPlacementVqd__tSyRd__lFQOyAA15NavigationStackVyAA0P4PathVAA15ModifiedContentVyAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAUyAcAE5sheet11isPresented9onDismiss7contentQrALySbG_yycSgqd__yctAaBRd__lFQOyAcAE7toolbarA3_Qrqd__yXE_tAA0fT0Rd__lFQOyAcAE15navigationTitleyQrqd__SyRd__lFQOyAcAE29navigationBarTitleDisplayModeyQrAA0P7BarItemV16TitleDisplayModeOFQOyAcAE15dynamicTypeSizeyQrqd__SXRd__AA15DynamicTypeSizeO5BoundRtd__lFQOyAA5GroupVyAA012_ConditionalT0Vy017ContactlessReaderB0017CommonEmptyResultC0VAcAE06scrollT10BackgroundyQrAA10VisibilityOFQOyAUyAUyAA4ListVys5NeverOA22_yAA7ForEachVySayA23_0H12ContactModelC0H6ResultOGSOA23_10PaymentRowVyA23_010PaymentRowT0VyA22_yAUyAUyAUyAA5ImageVAA18_AspectRatioLayoutVGAA12_FrameLayoutVGAA11_ClipEffectVyAA6CircleVGGA23_14PaymentRowIconVGAA4TextVAUyAUyA62_AA30_EnvironmentKeyWritingModifierVySiSgGGA64_yA62_14TruncationModeOGGGA23_19PaymentRowAccessoryVGGAA05TupleT0VyAA7SectionVyA62_A34_ySayA23_12PhoneDetailsV11MeCardEntry33_317959E89DC1468DCB3F6BBCA2A1DC55LLVGSSA41_yA43_yA60_A71_A62_GA22_yAUyA20_yAUyAUyAUyAcAE10fontWeightyQrAA4FontV6WeightVSgFQOyAUyA45_A64_yA90_SgGG_Qo_A64_yA45_5ScaleOGGAA24_ForegroundStyleModifierVyAA22HierarchicalShapeStyleVGGA50_GGA103_yAA5ColorVGGAA05EmptyC0VGGGA115_GSg_A80_yA62_A34_ySayA23_11PhoneNumberVGA122_ACA23_E22paymentRowSwipeActions4edge15allowsFullSwipeA3_QrAA14HorizontalEdgeO_Sbqd__yXEtAaBRd__lFQOyA117__AA6ButtonVyAA5LabelVyA62_A45_GGQo_GA115_GSgAUyA80_yA115_A130_yA62_GA62_GAA21_TraitWritingModifierVyAA25ListRowBackgroundTraitKeyVGGQPGGGA142_yAA26ListSectionSpacingTraitKeyVGGA64_yAA18ListSectionSpacingVSgGG_Qo_GG_s19PartialRangeThroughVyA16_GQo__Qo__SSQo__A78_yAA0F4ItemVyytA130_yA45_GG_A169_yytAcAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyA130_yAUyA45_A112_GG_AA28BorderedProminentButtonStyleVQo_GQPGQo__A23_13ContactEditorVQo_AA25_AppearanceActionModifierVG_Qo_AA24_BackgroundStyleModifierVyAA15BackgroundStyleVGGG_SSQo__Qo_HO
-+ _objc_msgSend$systemRedColor
-+ _objc_msgSend$tertiarySystemFillColor
 + _symbolic $s7SwiftUI11ButtonStyleP
 + _symbolic Say_____G 19ContactlessReaderUI12EmailDetailsV11MeCardEntry012_96B9F7C95B4L19E60D29AF7ED507B5FEFLLV
 + _symbolic Say_____G 19ContactlessReaderUI12PhoneDetailsV11MeCardEntry33_317959E89DC1468DCB3F6BBCA2A1DC55LLV
@@ -766,11 +709,6 @@ Symbols:
 - _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVyAHy017ContactlessReaderB0011PINGeometryK0VyAA05TupleI0VyAHyAHyAcIE10invertable8invertedQrSb_tFQOyAHyAHyAHyAA6VStackVyAMyAHyAA6HStackVyAMyAHyAI19CircularButtonGlassVAA31AccessibilityAttachmentModifierVG_AcIE9limitSizeQryFQOyAHyAI013MBNWithAmountC0VAA14_OpacityEffectVG_Qo_AHyAA6SpacerVAA12_FrameLayoutVGQPGGAA16_FlexFrameLayoutVG_AHyAHyAHyAI09PINPromptC0VAA14_PaddingLayoutVGAA017_AllowsHitTestingW0VGAWGAA012_ConditionalI0VyAQyAMyA5__AHyAHyAHyAA09_VariadicC0O4TreeVy_AA11_LayoutRootVyAI15PINKeypadLayoutVGAA7ForEachVySayAI14PINButtonModelCG10Foundation4UUIDVAI09PINButtonC0VGGAA013_TraitWritingW0VyAA18TransitionTraitKeyVGGA12_GAA08_OverlayW0VyA28_y_A33_A35_yA38_A41_AI09PINActionsC0VGGGGA5_QPGGAHyAQyAMyA5__AHyAHyAHyAHyAHyAHyAHyAHyAA4TextVAA022_EnvironmentKeyWritingW0VyAA13TextAlignmentOGGA66_yAA5ColorVSgGGA17_GA66_y12CoreGraphics7CGFloatVGGA20_GAWGA47_yAA22LayoutPriorityTraitKeyVGGA1_GQPGGA54_yAHyAHyAHyAI010PINGestureC0VA12_GAA15_RotationEffectVGAA024_EnvironmentKeyTransformW0VySbGGSgGGGAHyAHyAI11PINAXButtonVA50_GAWGQPGGA47_yAA14ZIndexTraitKeyVGGA17_GA12_G_Qo_A20_GAWG_AMyAHyAHyAHyAHyAA9RectangleVAA23_SafeAreaIgnoringLayoutVGA74_GA50_GA113_G_AHyAHyAHyAHyAQyAMyA5__AHyAHyAcIE0xY5RangeQryFQOyAI011BottomErrorC0V_Qo_A17_GA17_GQPGGA123_GA50_GA113_GAA017_AppearanceActionW0VGQPGSgQPGGA140_GA140_G_AI16PhoneOrientationOQo__SbQo__AI11BottomErrorVSgQo__AI12PINViewStateC12CaptureStateOQo__SbQo__SbQo_HO
 - _get_witness_table qd0__7SwiftUI4ViewHD4_AaBPAAE18confirmationDialog_11isPresented15titleVisibility7actionsQrqd___AA7BindingVySbGAA0I0Oqd_0_yXEtSyRd__AaBRd_0_r0_lFQOyAA15ModifiedContentVyANyANyANyAcAE11buttonStyleyQrqd__AA015PrimitiveButtonO0Rd__lFQOyAA0Q0VyANyANyAA4TextVAA14_PaddingLayoutVGAVGG_AA05GlassqO0VQo_AA06_FrameT0VGAA32_EnvironmentKeyTransformModifierVySbGGAA013_TraitWritingZ0VyAA015TransitionTraitX0VGGAA023AccessibilityAttachmentZ0VG_SSAA05TupleM0VyARyATG_A19_QPGQo_HO
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE19allowsSecureDrawingQryFQOyAcAE12onTapGesture5count7performQrSi_yyctFQOyAA15ModifiedContentVyAIyAIyAcAE15dynamicTypeSizeyQrqd__SXRd__AA07DynamicoP0O5BoundRtd__lFQOyAA6HStackVyAA05TupleM0VyAIyAIyAIyAIyAIyAA5ImageVAA18_AspectRatioLayoutVGAA30_EnvironmentKeyWritingModifierVyAA19SymbolRenderingModeVSgGGAA25_ForegroundStyleModifier2VyAA22HierarchicalShapeStyleVA6_GGAYyAA4FontVSgGGAA06_FrameX0VG_AIyAA6VStackVyARyAIyAIyAIyAIyAIyAA4TextVAYySiSgGGAYy12CoreGraphics7CGFloatVGGA12_GAYyAA5ColorVSgGGAA010_FlexFrameX0VG_AA012_ConditionalM0VyAIyA20_A36_GAIy017ContactlessReaderB0018LiveActivityBasketC0VA36_GGSgQPGGAA08_PaddingX0VGSgAIyAIyAcAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyAA6ButtonVyA20_G_AA19BorderedButtonStyleVQo_AYyAA17ButtonBorderShapeVGGA33_GQPGG_s19PartialRangeThroughVyALGQo_A50_GAA24_BackgroundStyleModifierVyA31_GGAA01_M13ShapeModifierVyAA9RectangleVGG_Qo__Qo_HO
-- _objc_msgSend$colorWithRed:green:blue:alpha:
-- _objc_msgSend$setBlurRadius:
-- _objc_msgSend$setColorTint:
-- _objc_msgSend$setColorTintAlpha:
-- _objc_msgSend$setSaturationDeltaFactor:
 - _objc_storeStrong
 - _swift_release_x3
 - _swift_runtimeSupportsNoncopyableTypes
@@ -1262,5 +1200,4 @@ CStrings:
 - "Unexpected customer message: "
 - "measure(_:)"
 - "pinax_text_instructions"
-
 ```

@@ -2,15 +2,14 @@
 
 > `/usr/bin/vm_stat`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -1071.0.1.0.0
 +1071.40.6.0.0
-   __TEXT.__text: 0xbcc
-   __TEXT.__auth_stubs: 0x120
-   __TEXT.__const: 0x48
 ```

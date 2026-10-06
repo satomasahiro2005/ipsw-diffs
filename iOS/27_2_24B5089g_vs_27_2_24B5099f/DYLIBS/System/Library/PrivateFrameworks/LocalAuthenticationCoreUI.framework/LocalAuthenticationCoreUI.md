@@ -2,107 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/LocalAuthenticationCoreUI.framework/LocalAuthenticationCoreUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9e1e4` | `0x9edb8` | **`+0xbd4`** |
+| `__AUTH_CONST.__objc_const` | `0xc320` | `0xc7b8` | **`+0x498`** |
+| `__TEXT.__oslogstring` | `0xf8d` | `0x108d` | **`+0x100`** |
+| `__TEXT.__objc_methlist` | `0x30bc` | `0x317c` | **`+0xc0`** |
+| `__DATA.__data` | `0x23c0` | `0x2430` | **`+0x70`** |
+| `__AUTH.__objc_data` | `0x738` | `0x788` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1d48` | `0x1d98` | **`+0x50`** |
+| `__TEXT.__cstring` | `0x2fd6` | `0x3026` | **`+0x50`** |
+| `__AUTH_CONST.__const` | `0x4250` | `0x4280` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x2890` | `0x28c0` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x9f8` | `0xa20` | **`+0x28`** |
+| `__TEXT.__eh_frame` | `0x1648` | `0x1670` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0xe20` | `0xe40` | **`+0x20`** |
+| `__DATA_DIRTY.__data` | `0x2180` | `0x21a0` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x14c` | `0x16c` | **`+0x20`** |
+| `__DATA_DIRTY.__objc_data` | `0x1fa8` | `0x1fc0` | **`+0x18`** |
+| `__AUTH.__data` | `0x1d0` | `0x1c0` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x16c8` | `0x16d8` | **`+0x10`** |
+| `__TEXT.__const` | `0x6f54` | `0x6f64` | **`+0x10`** |
+| `__TEXT.__constg_swiftt` | `0x22b8` | `0x22c8` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x210` | `0x21c` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x2c0` | `0x2c8` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x220` | `0x228` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x138` | `0x140` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x19c` | `0x1a0` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2319.40.35.0.1
--  __TEXT.__text: 0x99948
--  __TEXT.__objc_methlist: 0x30bc
--  __TEXT.__const: 0x6f54
--  __TEXT.__cstring: 0x2fd6
--  __TEXT.__oslogstring: 0xf8d
--  __TEXT.__gcc_except_tab: 0x14c
 +2319.40.43.0.0
-+  __TEXT.__text: 0x9a504
-+  __TEXT.__objc_methlist: 0x317c
-+  __TEXT.__const: 0x6f64
-+  __TEXT.__cstring: 0x3026
-+  __TEXT.__oslogstring: 0x108d
-+  __TEXT.__gcc_except_tab: 0x16c
-   __TEXT.__swift5_typeref: 0x101a2
--  __TEXT.__constg_swiftt: 0x22b8
-+  __TEXT.__constg_swiftt: 0x22c8
-   __TEXT.__swift5_builtin: 0xdc
-   __TEXT.__swift5_reflstr: 0x1131
-   __TEXT.__swift5_fieldmd: 0x1410
-   __TEXT.__swift5_assocty: 0x468
--  __TEXT.__swift5_proto: 0x19c
-+  __TEXT.__swift5_proto: 0x1a0
-   __TEXT.__swift5_types: 0x17c
-   __TEXT.__swift5_capture: 0xfb0
-   __TEXT.__swift5_mpenum: 0x10
 
-   __TEXT.__swift_as_entry: 0x54
-   __TEXT.__swift_as_ret: 0x6c
-   __TEXT.__swift_as_cont: 0x114
--  __TEXT.__unwind_info: 0x3480
--  __TEXT.__eh_frame: 0x1650
-+  __TEXT.__unwind_info: 0x34b8
-+  __TEXT.__eh_frame: 0x1678
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9f8
--  __DATA_CONST.__objc_classlist: 0x2c0
--  __DATA_CONST.__objc_protolist: 0x220
-+  __DATA_CONST.__const: 0xa20
-+  __DATA_CONST.__objc_classlist: 0x2c8
-+  __DATA_CONST.__objc_protolist: 0x228
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1d48
-+  __DATA_CONST.__objc_selrefs: 0x1d98
-   __DATA_CONST.__objc_protorefs: 0xe0
--  __DATA_CONST.__objc_superrefs: 0x138
-+  __DATA_CONST.__objc_superrefs: 0x140
-   __DATA_CONST.__objc_arraydata: 0x20
-   __DATA_CONST.__got: 0xdc8
--  __AUTH_CONST.__const: 0x4250
--  __AUTH_CONST.__cfstring: 0xe20
--  __AUTH_CONST.__objc_const: 0xc320
-+  __AUTH_CONST.__const: 0x4280
-+  __AUTH_CONST.__cfstring: 0xe40
-+  __AUTH_CONST.__objc_const: 0xc7b8
-   __AUTH_CONST.__objc_intobj: 0xc0
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__auth_got: 0x16c8
--  __AUTH.__objc_data: 0x738
--  __AUTH.__data: 0x1d0
--  __DATA.__objc_ivar: 0x210
--  __DATA.__data: 0x23c0
-+  __AUTH_CONST.__auth_got: 0x16d8
-+  __AUTH.__objc_data: 0x788
-+  __AUTH.__data: 0x1c0
-+  __DATA.__objc_ivar: 0x21c
-+  __DATA.__data: 0x2430
-   __DATA.__objc_stublist: 0x10
-   __DATA.__common: 0x58
--  __DATA_DIRTY.__objc_data: 0x1fa8
--  __DATA_DIRTY.__data: 0x2180
-+  __DATA_DIRTY.__objc_data: 0x1fc0
-+  __DATA_DIRTY.__data: 0x21a0
-   __DATA_DIRTY.__bss: 0xd90
-   __DATA_DIRTY.__common: 0x48
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 +  - /System/Library/Frameworks/CoreMotion.framework/CoreMotion
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4555
 -  Symbols:   10523
 -  CStrings:  403
 +  Functions: 4569
 +  Symbols:   10562
 +  CStrings:  409
- 
 Symbols:
 + -[LACUITouchIDSensorReachabilityMonitor .cxx_destruct]
 + -[LACUITouchIDSensorReachabilityMonitor _applyDeviceStateEvent:]

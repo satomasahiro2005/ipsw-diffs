@@ -2,29 +2,22 @@
 
 > `/usr/lib/libswiftPrespecialized.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__const` | `0x4f2d0` | `0x74aa8` | **`+0x257d8`** |
+| `__DATA_CONST.__ptrhashtabkey` | `0x259f8` | `0x32a20` | **`+0xd028`** |
+| `__AUTH.__data` | `0xc9500` | `0xd4b18` | **`+0xb618`** |
+| `__DATA_CONST.__const` | `0x3a8758` | `0x3b34d8` | **`+0xad80`** |
+| `__DATA_CONST.__ptrhashtab` | `0x16e48` | `0x1ef88` | **`+0x8140`** |
+
+### Other Changes
+
 ```diff
 
- 0.0.0.0.0
-   __TEXT.__text: 0x0
-   __TEXT.__lldb_no_nlist: 0x0
--  __DATA_CONST.__const: 0x3a8758 sha256:efbba0f7f091dc643ecfbde15b48d7a514e27f4eef213b022cc33ae9ca426154
--  __DATA_CONST.__ptrhashtab: 0x16e48 sha256:2974b78f71d5b3bc3155f82bf804bbc3649860b56900f57604135b301f81c3a0
--  __DATA_CONST.__ptrhashtabkey: 0x259f8 sha256:33013472bcb59d303a77486d41d5f4b1d5bc33013385b67eceda980bb75076bd
--  __AUTH_CONST.__const: 0x4f2d0 sha256:85323f545bdf72d288c98ce8df99c5d4c3b152ddb604ae64c861ddb666f6fc44
--  __AUTH.__data: 0xc9500 sha256:badbd13848394f658fc094933a9d632b2480c37e212b4b0d25e8fb58bfa7129a
-+  __DATA_CONST.__const: 0x3b34f0 sha256:9fc1d4139d27a251fa6fc5a2214304e0d196f73c0aa1f4524c528b3f90393601
-+  __DATA_CONST.__ptrhashtab: 0x1ef88 sha256:b883d6edd34ea208ed4ce4fb99ce53a0a37995ce76da0f46cf430b596304f6e9
-+  __DATA_CONST.__ptrhashtabkey: 0x32a20 sha256:a12213613b830ad6e5795537bfa19d3d467bc55ca4a74cd4937c44cb2daaeb72
-+  __AUTH_CONST.__const: 0x74aa8 sha256:bde64f12f856d5c2804d88d7a53fc3ab4350c2a691d1925fc76401124f55a442
-+  __AUTH.__data: 0xd4b18 sha256:8903f5fd2e875515bec4bd742a25430052a4bb1ab015e4592ebb57ced52ac0a2
-   - /usr/lib/libSystem.B.dylib
--  UUID: B325D59F-A170-304B-B298-03AAEF2F73F8
-+  UUID: 8ABA1386-6FCC-3532-8B6D-475E530C9AD7
-   Functions: 0
 -  Symbols:   180742
-+  Symbols:   188436
-   CStrings:  0
- 
++  Symbols:   188434
 Symbols:
 + _$s015_AppUserEvents_A9Analytics0B14EventProcessorCMn
 + _$s015_AppUserEvents_A9Analytics0B15EventTranslatorVMn
@@ -2791,8 +2784,6 @@ Symbols:
 + _$s22AgentCanvasPersistence33PersistedContentTransformArtifactVMn
 + _$s22AlwaysOnExclavesDaemon21WorkerThreadPoolErrorOMn
 + _$s22AuthenticationServices24ASAuthorizationUIContextV14PasskeyMessageO4textSSvpMV
-+ _$s22FindMyBeaconingSupport13SystemKeyTypeOMn
-+ _$s22FindMyBeaconingSupport5ErrorOMn
 + _$s22GameCenterServerClient10OperationsO43PostWebObjectsGKProfileService_woaWaAppInitO21AcceptableContentTypeON
 + _$s22HealthBalanceAppPlugin0B34PromotionFeedItemViewActionHandlerC6didTapyyFTq
 + _$s22HealthDaemonFoundation27SQLiteDatabaseMigrationStepVN
@@ -9506,5 +9497,4 @@ Symbols:
 - _QuasarCCorrectiveRerankingParser_runJson
 - ___unnamed_atom_218
 - _kNANOSECONDS_PER_SECOND
-
 ```

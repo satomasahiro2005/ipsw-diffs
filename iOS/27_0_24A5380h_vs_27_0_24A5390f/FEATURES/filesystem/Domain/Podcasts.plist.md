@@ -4,28 +4,16 @@
 
 ```diff
 
- 		<key>DevelopmentPhase</key>
- 		<string>FeatureComplete</string>
- 	</dict>
 -	<key>UnifiedAccountHubInstrumentation</key>
--	<dict>
--		<key>DevelopmentPhase</key>
--		<string>FeatureComplete</string>
--	</dict>
- 	<key>UnsupportedTestAllowAllAXTextSizes</key>
- 	<dict>
- 		<key>DevelopmentPhase</key>
++	<key>UnsupportedTestAllowAllAXTextSizes</key>
 
- 		<key>DevelopmentPhase</key>
- 		<string>FeatureComplete</string>
- 	</dict>
+-	<key>UnsupportedTestAllowAllAXTextSizes</key>
++	<key>UseEpisodeDescriptionForSummary</key>
+
+-	<key>UseEpisodeDescriptionForSummary</key>
++	<key>WatchDormancy</key>
+
+-	<key>WatchDormancy</key>
 +	<key>WatchOSLazyStations</key>
-+	<dict>
-+		<key>DevelopmentPhase</key>
-+		<string>FeatureComplete</string>
-+	</dict>
- 	<key>WatchUpNextWidget</key>
- 	<dict>
- 		<key>DevelopmentPhase</key>
 
 ```

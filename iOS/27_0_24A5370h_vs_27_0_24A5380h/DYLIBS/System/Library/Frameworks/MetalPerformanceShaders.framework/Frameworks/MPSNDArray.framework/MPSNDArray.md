@@ -2,78 +2,39 @@
 
 > `/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNDArray.framework/MPSNDArray`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x127bfc` | `0x12d178` | **`+0x557c`** |
+| `__DATA_CONST.__const` | `0x1b898` | `0x1fd08` | **`+0x4470`** |
+| `__TEXT.__cstring` | `0x11189` | `0x121d6` | **`+0x104d`** |
+| `__AUTH_CONST.__cfstring` | `0x8600` | `0x9260` | **`+0xc60`** |
+| `__TEXT.__const` | `0x8a4d0` | `0x8ac30` | **`+0x760`** |
+| `__AUTH_CONST.__objc_const` | `0xf5c0` | `0xf7d0` | **`+0x210`** |
+| `__TEXT.__objc_methlist` | `0x70dc` | `0x7274` | **`+0x198`** |
+| `__TEXT.__gcc_except_tab` | `0x46a0` | `0x4794` | **`+0xf4`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1720` | `0x17c0` | **`+0xa0`** |
+| `__AUTH.__objc_data` | `—` | `0x50` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x1a40` | `0x1a88` | **`+0x48`** |
+| `__DATA.__objc_ivar` | `0x784` | `0x7a4` | **`+0x20`** |
+| `__DATA.__bss` | `0x640` | `0x648` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x878` | `0x880` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x850` | `0x858` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x127bfc
--  __TEXT.__objc_methlist: 0x70dc
--  __TEXT.__const: 0x8a4d0
--  __TEXT.__gcc_except_tab: 0x46a0
--  __TEXT.__cstring: 0x11189
-+  __TEXT.__text: 0x12d178
-+  __TEXT.__objc_methlist: 0x7274
-+  __TEXT.__const: 0x8ac30
-+  __TEXT.__gcc_except_tab: 0x4794
-+  __TEXT.__cstring: 0x121d6
-   __TEXT.__oslogstring: 0x13
--  __TEXT.__unwind_info: 0x1a40
-+  __TEXT.__unwind_info: 0x1a88
-   __TEXT.__eh_frame: 0xb8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1b898
--  __DATA_CONST.__objc_classlist: 0x878
-+  __DATA_CONST.__const: 0x1fd08
-+  __DATA_CONST.__objc_classlist: 0x880
-   __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1720
-+  __DATA_CONST.__objc_selrefs: 0x17c0
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x850
-+  __DATA_CONST.__objc_superrefs: 0x858
-   __DATA_CONST.__got: 0x350
-   __AUTH_CONST.__const: 0x45c0
--  __AUTH_CONST.__cfstring: 0x8600
--  __AUTH_CONST.__objc_const: 0xf5c0
-+  __AUTH_CONST.__cfstring: 0x9260
-+  __AUTH_CONST.__objc_const: 0xf7d0
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__auth_got: 0x5a8
-+  __AUTH.__objc_data: 0x50
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x20
--  __DATA.__objc_ivar: 0x784
-+  __DATA.__objc_ivar: 0x7a4
-   __DATA.__data: 0x9c4
--  __DATA.__bss: 0x640
-+  __DATA.__bss: 0x648
-   __DATA_DIRTY.__objc_data: 0x54b0
-   __DATA_DIRTY.__bss: 0x78
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+-130.0.10.2.0
++130.0.14.0.0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2413
--  Symbols:   8065
--  CStrings:  2640
+-  Symbols:   5007
+-  CStrings:  1569
 +  Functions: 2450
-+  Symbols:   8166
-+  CStrings:  2839
- 
-Sections:
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   5061
++  CStrings:  1669
 Symbols:
 + +[MPSNDArrayLinearAttention libraryInfo:]
 + +[MPSNDArrayLinearAttention supportsPostfixForDevice:]
@@ -134,22 +95,11 @@ Symbols:
 + __ZNK33MPSNDArrayMatMulA14DeviceBehavior17IsMatMulSupportedEPKvPK23NDArrayMultiaryCallInfoPNSt3__18optionalIbEE
 + __ZNK33MPSNDArrayMatMulA18DeviceBehavior17IsMatMulSupportedEPKvPK23NDArrayMultiaryCallInfoPNSt3__18optionalIbEE
 + __ZNK36MPSNDArrayMatMulCommonDeviceBehavior17IsMatMulSupportedEPKvPK23NDArrayMultiaryCallInfoPNSt3__18optionalIbEE
-+ _objc_msgSend$buildParamsForQueries:keys:values:decayGates:betaValues:initialState:outputState:output:g_exp:shapes:
-+ _objc_msgSend$dispatchChunkParallelWithEncoder:commandBuffer:params:A_chunks:B_chunks:initialState:S_state:shapes:laHash:
-+ _objc_msgSend$dispatchExponentiationWithEncoder:decayGates:expGatesPso:shapes:
-+ _objc_msgSend$dispatchSequentialWithEncoder:commandBuffer:params:shapes:laHash:
-+ _objc_msgSend$encodeImpl:commandBuffer:queries:keys:values:decayGates:betaValues:initialState:outputState:output:
-+ _objc_msgSend$extractShapesFromQueries:keys:values:decayGates:betaValues:initialState:outputState:output:
-+ _objc_msgSend$initWithDevice:leftQuantizationDescriptor:rightQuantizationDescriptor:isSorted:batchDims:hasLHSIndices:hasUnsortOrder:sourceCount:
-+ _objc_msgSend$memoryBarrierWithScope:
-+ _objc_msgSend$useResource:usage:
-+ _objc_msgSend$variant
 - GCC_except_table57
 - GCC_except_table83
 - __ZNK33MPSNDArrayMatMulA14DeviceBehavior17IsMatMulSupportedEPKvPK23NDArrayMultiaryCallInfo
 - __ZNK33MPSNDArrayMatMulA18DeviceBehavior17IsMatMulSupportedEPKvPK23NDArrayMultiaryCallInfo
 - __ZNK36MPSNDArrayMatMulCommonDeviceBehavior17IsMatMulSupportedEPKvPK23NDArrayMultiaryCallInfo
-- _objc_msgSend$initWithDevice:leftQuantizationDescriptor:rightQuantizationDescriptor:isSorted:batchDims:sourceCount:
 CStrings:
 + "    {{%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d}, {%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d}},"
 + "%@: dimension %lu is %lu, expected %lu"
@@ -259,5 +209,4 @@ CStrings:
 - "Quantized tensor should be in int8"
 - "Scale tensor should be in fp16 or fp32"
 - "{%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d}"
-
 ```

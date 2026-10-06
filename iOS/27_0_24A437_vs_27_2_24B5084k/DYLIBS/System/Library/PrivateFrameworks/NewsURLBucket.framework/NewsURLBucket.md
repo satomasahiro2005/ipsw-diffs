@@ -2,16 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/NewsURLBucket.framework/NewsURLBucket`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x40c8` | `0x40d8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -5934.3.0.0.0
--  __TEXT.__text: 0x3f30
 +5960.0.0.0.0
-+  __TEXT.__text: 0x3f40
-   __TEXT.__objc_methlist: 0x1c8
-   __TEXT.__const: 0x350
-   __TEXT.__cstring: 0x6b
 Functions:
-~ sub_290e09110 -> sub_296780110 : 764 -> 772
-~ sub_290e0c0fc -> sub_296783104 : 76 -> 84
+~ sub_293fb4164 -> sub_299f87164 : 764 -> 772
+~ sub_293fb7290 -> sub_299f8a298 : 80 -> 88
 ```

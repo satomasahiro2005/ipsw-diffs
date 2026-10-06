@@ -2,20 +2,21 @@
 
 > `/System/Library/UserEventPlugins/USBEthernetSharing.plugin/USBEthernetSharing`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2534` | `0x2544` | **`+0x10`** |
+
+### Same-size Content Changes
+
 - `__DATA.__cfstring`
+- `__DATA.__const`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 42.0.0.0.0
--  __TEXT.__text: 0x2534
-+  __TEXT.__text: 0x2544
-   __TEXT.__auth_stubs: 0x5e0
-   __TEXT.__const: 0x18
-   __TEXT.__cstring: 0xa47
+```text
 Functions:
 ~ sub_1750 : 376 -> 392
 ```

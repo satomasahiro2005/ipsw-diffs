@@ -2,73 +2,48 @@
 
 > `/System/Library/NanoPreferenceBundles/Applications/NanoPassbookBridgeSettings.bundle/NanoPassbookBridgeSettings`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x149a0` | `0x14c2c` | **`+0x28c`** |
+| `__TEXT.__objc_stubs` | `0x3f00` | `0x40c0` | **`+0x1c0`** |
+| `__TEXT.__objc_methname` | `0x70cb` | `0x724a` | **`+0x17f`** |
+| `__TEXT.__objc_methlist` | `0x1e54` | `0x1edc` | **`+0x88`** |
+| `__DATA.__objc_selrefs` | `0x1758` | `0x17d0` | **`+0x78`** |
+| `__DATA_CONST.__cfstring` | `0xae0` | `0xb20` | **`+0x40`** |
+| `__DATA.__objc_const` | `0x2c20` | `0x2c58` | **`+0x38`** |
+| `__DATA_CONST.__const` | `0xc10` | `0xc28` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x610` | `0x628` | **`+0x18`** |
+| `__TEXT.__cstring` | `0xedb` | `0xec7` | **`-0x14`** |
+| `__TEXT.__gcc_except_tab` | `0x49c` | `0x4b0` | **`+0x14`** |
+| `__TEXT.__objc_methtype` | `0x24f0` | `0x2504` | **`+0x14`** |
+| `__TEXT.__auth_stubs` | `0x730` | `0x740` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x3a8` | `0x3b0` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0xd4` | `0xd8` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -1341.0.0.0.0
--  __TEXT.__text: 0x149a0
--  __TEXT.__auth_stubs: 0x730
--  __TEXT.__objc_stubs: 0x3f00
--  __TEXT.__objc_methlist: 0x1e54
 +1347.0.0.0.0
-+  __TEXT.__text: 0x14c2c
-+  __TEXT.__auth_stubs: 0x740
-+  __TEXT.__objc_stubs: 0x40c0
-+  __TEXT.__objc_methlist: 0x1edc
-   __TEXT.__const: 0xb0
--  __TEXT.__objc_methname: 0x70cb
--  __TEXT.__cstring: 0xedb
-+  __TEXT.__objc_methname: 0x724a
-+  __TEXT.__cstring: 0xec7
-   __TEXT.__objc_classname: 0x3d1
--  __TEXT.__objc_methtype: 0x24f0
--  __TEXT.__gcc_except_tab: 0x49c
-+  __TEXT.__objc_methtype: 0x2504
-+  __TEXT.__gcc_except_tab: 0x4b0
-   __TEXT.__oslogstring: 0x2685
-   __TEXT.__ustring: 0x28
-   __TEXT.__dlopen_cstrs: 0xbc
--  __TEXT.__unwind_info: 0x610
--  __DATA_CONST.__const: 0xc10
--  __DATA_CONST.__cfstring: 0xae0
-+  __TEXT.__unwind_info: 0x628
-+  __DATA_CONST.__const: 0xc28
-+  __DATA_CONST.__cfstring: 0xb20
-   __DATA_CONST.__objc_classlist: 0x50
-   __DATA_CONST.__objc_protolist: 0x90
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x38
--  __DATA_CONST.__auth_got: 0x3a8
-+  __DATA_CONST.__auth_got: 0x3b0
-   __DATA_CONST.__got: 0x2f0
--  __DATA.__objc_const: 0x2c20
--  __DATA.__objc_selrefs: 0x1758
--  __DATA.__objc_ivar: 0xd4
-+  __DATA.__objc_const: 0x2c58
-+  __DATA.__objc_selrefs: 0x17d0
-+  __DATA.__objc_ivar: 0xd8
-   __DATA.__objc_data: 0x320
-   __DATA.__data: 0x6c0
-   __DATA.__bss: 0x40
 
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 493
 -  Symbols:   241
 -  CStrings:  1396
 +  Functions: 502
 +  Symbols:   242
 +  CStrings:  1416
- 
 Symbols:
 + _NPKPairedOrPairingDeviceSupportsSEPassRelevancy
 CStrings:

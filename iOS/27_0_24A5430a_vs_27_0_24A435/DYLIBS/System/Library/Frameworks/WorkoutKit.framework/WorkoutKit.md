@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/WorkoutKit.framework/WorkoutKit`
 
-```diff
+### Section Size Changes
 
- 2027.0.152.1.2
--  __TEXT.__text: 0x84778
-+  __TEXT.__text: 0x84780
-   __TEXT.__const: 0x7aa8
-   __TEXT.__cstring: 0xbc3
-   __TEXT.__swift5_typeref: 0x12d8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x84778` | `0x84780` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$sSo9HKWorkoutC10WorkoutKitE11workoutPlanAC0bE0VSgvgTY0_ : 864 -> 868
 ~ _$sSo9HKWorkoutC10WorkoutKitE011deserializeB4PlanAC0bE0VyKF : 540 -> 544

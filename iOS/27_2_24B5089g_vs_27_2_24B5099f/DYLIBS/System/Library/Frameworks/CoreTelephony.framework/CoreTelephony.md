@@ -2,87 +2,42 @@
 
 > `/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1d445c` | `0x1d0e64` | **`-0x35f8`** |
+| `__AUTH_CONST.__objc_const` | `0x376f0` | `0x37130` | **`-0x5c0`** |
+| `__TEXT.__oslogstring` | `0x54c6` | `0x50a6` | **`-0x420`** |
+| `__TEXT.__gcc_except_tab` | `0x25ac0` | `0x256b0` | **`-0x410`** |
+| `__TEXT.__objc_methlist` | `0x1fb8c` | `0x1f8b4` | **`-0x2d8`** |
+| `__TEXT.__unwind_info` | `0x110b8` | `0x10ec0` | **`-0x1f8`** |
+| `__AUTH.__objc_data` | `0xd138` | `0xcfa8` | **`-0x190`** |
+| `__TEXT.__cstring` | `0x22048` | `0x21ec8` | **`-0x180`** |
+| `__AUTH_CONST.__cfstring` | `0x20c40` | `0x20ba0` | **`-0xa0`** |
+| `__DATA_CONST.__const` | `0x78f8` | `0x7858` | **`-0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x88e8` | `0x88a8` | **`-0x40`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1d78` | `0x1d48` | **`-0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0x1988` | `0x1960` | **`-0x28`** |
+| `__AUTH_CONST.__const` | `0x2738` | `0x2718` | **`-0x20`** |
+| `__DATA_CONST.__got` | `0xc58` | `0xc38` | **`-0x20`** |
+| `__DATA_DIRTY.__bss` | `0x12e8` | `0x12c8` | **`-0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xf88` | `0xf70` | **`-0x18`** |
+| `__DATA.__objc_ivar` | `0x16bc` | `0x16ac` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -13496.3.0.0.0
--  __TEXT.__text: 0x1cb600
--  __TEXT.__objc_methlist: 0x1fb8c
 +13498.0.0.0.0
-+  __TEXT.__text: 0x1c80ac
-+  __TEXT.__objc_methlist: 0x1f8b4
-   __TEXT.__const: 0x1736
--  __TEXT.__gcc_except_tab: 0x25ac0
--  __TEXT.__cstring: 0x22048
--  __TEXT.__oslogstring: 0x54c6
-+  __TEXT.__gcc_except_tab: 0x256b0
-+  __TEXT.__cstring: 0x21ec8
-+  __TEXT.__oslogstring: 0x50a6
-   __TEXT.__swift5_typeref: 0x2b4
-   __TEXT.__constg_swiftt: 0x140
-   __TEXT.__swift5_builtin: 0x3c
 
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0x30
--  __TEXT.__unwind_info: 0x11b38
-+  __TEXT.__unwind_info: 0x11940
-   __TEXT.__eh_frame: 0x370
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x78f8
--  __DATA_CONST.__objc_classlist: 0x1988
-+  __DATA_CONST.__const: 0x7858
-+  __DATA_CONST.__objc_classlist: 0x1960
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x288
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x88e8
-+  __DATA_CONST.__objc_selrefs: 0x88a8
-   __DATA_CONST.__objc_protorefs: 0x48
--  __DATA_CONST.__objc_superrefs: 0x1d78
-+  __DATA_CONST.__objc_superrefs: 0x1d48
-   __DATA_CONST.__objc_arraydata: 0x30
--  __DATA_CONST.__got: 0xc58
--  __AUTH_CONST.__const: 0x2738
--  __AUTH_CONST.__cfstring: 0x20c40
--  __AUTH_CONST.__objc_const: 0x376f0
-+  __DATA_CONST.__got: 0xc38
-+  __AUTH_CONST.__const: 0x2718
-+  __AUTH_CONST.__cfstring: 0x20ba0
-+  __AUTH_CONST.__objc_const: 0x37130
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x30
-   __AUTH_CONST.__objc_arrayobj: 0x48
--  __AUTH_CONST.__auth_got: 0xf88
--  __AUTH.__objc_data: 0xd138
-+  __AUTH_CONST.__auth_got: 0xf70
-+  __AUTH.__objc_data: 0xcfa8
-   __AUTH.__data: 0xb0
--  __DATA.__objc_ivar: 0x16bc
-+  __DATA.__objc_ivar: 0x16ac
-   __DATA.__data: 0x2360
-   __DATA.__common: 0x10
-   __DATA_DIRTY.__objc_data: 0x2dc8
-   __DATA_DIRTY.__data: 0x90
--  __DATA_DIRTY.__bss: 0x12e8
-+  __DATA_DIRTY.__bss: 0x12c8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/Network.framework/Network
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
--  Functions: 13109
+-  Functions: 13110
 -  Symbols:   24204
 -  CStrings:  6532
 +  Functions: 13037
 +  Symbols:   24083
 +  CStrings:  6487
- 
 Symbols:
 - +[CTStewieAnywhereMessage supportsSecureCoding]
 - +[CTStewieDiagMessage supportsSecureCoding]

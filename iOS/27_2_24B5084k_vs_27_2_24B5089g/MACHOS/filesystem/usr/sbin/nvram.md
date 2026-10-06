@@ -2,15 +2,14 @@
 
 > `/usr/sbin/nvram`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -1071.40.6.0.0
 +1071.40.9.0.0
-   __TEXT.__text: 0x21d0
-   __TEXT.__auth_stubs: 0x470
-   __TEXT.__const: 0x48
 ```

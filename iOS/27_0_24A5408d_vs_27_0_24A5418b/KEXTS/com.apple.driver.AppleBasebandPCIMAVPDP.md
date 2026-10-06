@@ -2,35 +2,26 @@
 
 > `com.apple.driver.AppleBasebandPCIMAVPDP`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x25de4` | `0xc124` | **`-0x19cc0`** |
+| `__TEXT.__cstring` | `0x533c` | `0x130c` | **`-0x4030`** |
+| `__TEXT_EXEC.__auth_stubs` | `0x5e0` | `0x5a0` | **`-0x40`** |
+| `__DATA_CONST.__auth_got` | `0x2f0` | `0x2d0` | **`-0x20`** |
+| `__DATA_CONST.__got` | `0x78` | `0x68` | **`-0x10`** |
+| `__DATA_CONST.__const` | `0x3870` | `0x3868` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 960.0.0.0.0
-   __TEXT.__const: 0x100
--  __TEXT.__cstring: 0x533c
--  __TEXT_EXEC.__text: 0x25de4
--  __TEXT_EXEC.__auth_stubs: 0x5e0
-+  __TEXT.__cstring: 0x130c
-+  __TEXT_EXEC.__text: 0xc124
-+  __TEXT_EXEC.__auth_stubs: 0x5a0
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x128
-   __DATA.__bss: 0xc0
-   __DATA_CONST.__mod_init_func: 0x80
-   __DATA_CONST.__mod_term_func: 0x38
--  __DATA_CONST.__const: 0x3870
-+  __DATA_CONST.__const: 0x3868
-   __DATA_CONST.__weak_got: 0x20
-   __DATA_CONST.__kalloc_type: 0x400
--  __DATA_CONST.__auth_got: 0x2f0
--  __DATA_CONST.__got: 0x78
 -  Functions: 398
-+  __DATA_CONST.__auth_got: 0x2d0
-+  __DATA_CONST.__got: 0x68
 +  Functions: 390
-   Symbols:   0
+
 -  CStrings:  399
 +  CStrings:  84
- 
 CStrings:
 + "121111121222121211111112111211112111111111111121121121121111211211111212222"
 + "12111112122212121111211122222221211111222221212"

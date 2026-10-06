@@ -2,55 +2,34 @@
 
 > `/System/Library/AccessibilityBundles/SleepHealthUI.axbundle/SleepHealthUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__objc_const` | `0xab0` | `0xbd0` | **`+0x120`** |
+| `__TEXT.__text` | `0x1c34` | `0x1d0c` | **`+0xd8`** |
+| `__AUTH.__objc_data` | `—` | `0xa0` | **`+0xa0`** |
+| `__AUTH_CONST.__cfstring` | `0x720` | `0x780` | **`+0x60`** |
+| `__TEXT.__objc_methlist` | `0x418` | `0x478` | **`+0x60`** |
+| `__TEXT.__cstring` | `0x762` | `0x7b2` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x70` | `0x80` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x98` | `0xa8` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x228` | `0x238` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x110` | `0x118` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3048.0.0.0.0
--  __TEXT.__text: 0x1b20
--  __TEXT.__objc_methlist: 0x418
 +3050.3.0.0.0
-+  __TEXT.__text: 0x1bf8
-+  __TEXT.__objc_methlist: 0x478
-   __TEXT.__const: 0x10
-   __TEXT.__gcc_except_tab: 0x24
--  __TEXT.__cstring: 0x762
--  __TEXT.__unwind_info: 0x130
-+  __TEXT.__cstring: 0x7b2
-+  __TEXT.__unwind_info: 0x138
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xa8
--  __DATA_CONST.__objc_classlist: 0x98
-+  __DATA_CONST.__objc_classlist: 0xa8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x228
-+  __DATA_CONST.__objc_selrefs: 0x238
-   __DATA_CONST.__objc_superrefs: 0x10
--  __DATA_CONST.__got: 0x70
-+  __DATA_CONST.__got: 0x80
-   __AUTH_CONST.__const: 0xa0
--  __AUTH_CONST.__cfstring: 0x720
--  __AUTH_CONST.__objc_const: 0xab0
-+  __AUTH_CONST.__cfstring: 0x780
-+  __AUTH_CONST.__objc_const: 0xbd0
-   __AUTH_CONST.__auth_got: 0x0
-+  __AUTH.__objc_data: 0xa0
-   __DATA_DIRTY.__objc_data: 0x5f0
-   __DATA_DIRTY.__bss: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 79
--  Symbols:   304
+-  Symbols:   251
 -  CStrings:  66
 +  Functions: 85
-+  Symbols:   324
++  Symbols:   269
 +  CStrings:  69
- 
 Symbols:
 + +[ScheduleOccurrenceCellAccessibility _accessibilityPerformValidations:]
 + +[ScheduleOccurrenceCellAccessibility(SafeCategory) safeCategoryBaseClass]
@@ -70,10 +49,8 @@ Symbols:
 + __OBJC_CLASS_RO_$___ScheduleOccurrenceCellAccessibility_super
 + __OBJC_METACLASS_RO_$_ScheduleOccurrenceCellAccessibility
 + __OBJC_METACLASS_RO_$___ScheduleOccurrenceCellAccessibility_super
-+ _objc_msgSend$isUserInteractionEnabled
-+ _objc_msgSend$validateClass:isKindOfClass:
 Functions:
-~ ___52+[AXSleepHealthUIGlue accessibilityInitializeBundle]_block_invoke_3 : 220 -> 240
+~ ___52+[AXSleepHealthUIGlue accessibilityInitializeBundle]_block_invoke_3 : 232 -> 252
 CStrings:
 + "ScheduleOccurrenceCellAccessibility"
 + "SleepHealthUI.ScheduleOccurrenceCell"

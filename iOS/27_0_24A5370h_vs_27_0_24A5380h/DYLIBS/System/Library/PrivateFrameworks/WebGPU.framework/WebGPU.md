@@ -2,71 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/WebGPU.framework/WebGPU`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x23ded0` | `0x23cbf0` | **`-0x12e0`** |
+| `__TEXT.__cstring` | `0x3cb9c` | `0x3ccfc` | **`+0x160`** |
+| `__TEXT.__eh_frame` | `0xf08` | `0xf60` | **`+0x58`** |
+| `__TEXT.__unwind_info` | `0x42b8` | `0x42f0` | **`+0x38`** |
+| `__TEXT.__gcc_except_tab` | `0xa23c` | `0xa268` | **`+0x2c`** |
+| `__DATA.__data` | `0x148` | `0x150` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0x7bc` | `0x7c4` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x23ded0
-+  __TEXT.__text: 0x23cbf0
-   __TEXT.__objc_methlist: 0x1f0
-   __TEXT.__const: 0x22e4
--  __TEXT.__gcc_except_tab: 0xa23c
--  __TEXT.__swift5_typeref: 0x7bc
--  __TEXT.__cstring: 0x3cb9c
-+  __TEXT.__gcc_except_tab: 0xa268
-+  __TEXT.__swift5_typeref: 0x7c4
-+  __TEXT.__cstring: 0x3ccfc
-   __TEXT.__constg_swiftt: 0xb70
-   __TEXT.__swift5_fieldmd: 0x400
-   __TEXT.__swift5_builtin: 0xdc
+-625.1.20.10.3
++625.1.22.10.3
 
-   __TEXT.__swift5_types: 0x4c
-   __TEXT.__swift5_protos: 0x50
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0x42b8
--  __TEXT.__eh_frame: 0xf08
-+  __TEXT.__unwind_info: 0x42f0
-+  __TEXT.__eh_frame: 0xf60
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __AUTH.__objc_data: 0xf0
-   __AUTH.__data: 0x108
-   __DATA.__objc_ivar: 0x5c
--  __DATA.__data: 0x148
-+  __DATA.__data: 0x150
-   __DATA.__common: 0x90
-   __DATA.__bss: 0xa50
-   __DATA_DIRTY.__bss: 0x108
-
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 3585
--  Symbols:   7771
--  CStrings:  3156
+-  Symbols:   4030
+-  CStrings:  2700
 +  Functions: 3594
-+  Symbols:   7779
-+  CStrings:  3164
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
++  Symbols:   4034
++  CStrings:  2708
 Symbols:
 + __ZN4WGSLL24validateBitwiseShiftLeftERKN3WTF11FixedVectorINSt3__18optionalINS_13ConstantValueEEENS0_10FastMallocEEERKNS1_IPKNS_4TypeES6_EE
 + __ZN4WGSLL25validateBitwiseShiftRightERKN3WTF11FixedVectorINSt3__18optionalINS_13ConstantValueEEENS0_10FastMallocEEERKNS1_IPKNS_4TypeES6_EE
@@ -319,5 +279,4 @@ CStrings:
 - "auto WGSL::constantUnaryOperation(const FixedVector<ConstantValue> &, const (lambda at /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/WebGPU/Source/WebGPU/WGSL/ConstantFunctions.h:910:1) &)::(anonymous class)::operator()(auto &) const [arg:auto = const WGSL::ConstantValue]"
 - "auto WGSL::constantUnaryOperation(const FixedVector<ConstantValue> &, const (lambda at /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/WebGPU/Source/WebGPU/WGSL/ConstantFunctions.h:953:1) &)::(anonymous class)::operator()(auto &) const [arg:auto = WGSL::ConstantValue]"
 - "auto WGSL::constantUnaryOperation(const FixedVector<ConstantValue> &, const (lambda at /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/WebGPU/Source/WebGPU/WGSL/ConstantFunctions.h:953:1) &)::(anonymous class)::operator()(auto &) const [arg:auto = const WGSL::ConstantValue]"
-
 ```

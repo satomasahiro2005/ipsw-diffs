@@ -2,17 +2,20 @@
 
 > `/Applications/DDActionsService.app/DDActionsService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x360` | `0x368` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__const`
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_arraydata: 0x10
-   __DATA_CONST.__objc_dictobj: 0x28
-   __DATA_CONST.__auth_got: 0x358
--  __DATA_CONST.__got: 0x360
-+  __DATA_CONST.__got: 0x368
-   __DATA.__objc_const: 0x1d78
-   __DATA.__objc_selrefs: 0x10d8
-   __DATA.__objc_ivar: 0x10c
-Sections:
-~ __TEXT.__const : content changed
-
+-611.0.0.0.0
++612.0.0.0.0
 ```

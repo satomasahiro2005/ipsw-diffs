@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/FedStatsPluginCore.framework/FedStatsPluginCore`
 
-```diff
+### Section Size Changes
 
- 84.0.0.0.0
--  __TEXT.__text: 0x63e88
-+  __TEXT.__text: 0x63f54
-   __TEXT.__objc_methlist: 0xe0c
-   __TEXT.__const: 0x1e68
-   __TEXT.__cstring: 0x2b20
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x63e88` | `0x63f54` | **`+0xcc`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_20f2115a0 -> sub_20f8de5a0 : 1776 -> 1788
 ~ sub_20f211ef8 -> sub_20f8def04 : 2404 -> 2420

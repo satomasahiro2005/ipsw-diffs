@@ -2,14 +2,19 @@
 
 > `/System/Library/VideoCodecs/ave.videoencoder`
 
-```diff
+### Section Size Changes
 
- 913.43.1.0.0
--  __TEXT.__text: 0x172070
-+  __TEXT.__text: 0x172018
-   __TEXT.__init_offsets: 0xc
-   __TEXT.__const: 0x25294
-   __TEXT.__gcc_except_tab: 0x6e4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x172070` | `0x172018` | **`-0x58`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
+```diff
 Functions:
 ~ __Z19AVE_USL_Drv_PreparePvP23AppleAVEVA_InitSettingsPKc : 2760 -> 2756
 ~ __Z26AVE_RC_DecideVBVBufferSizedddyPd : 1536 -> 1524
@@ -30,4 +35,7 @@ Functions:
 ~ __ZN10htpc_codecILi8ELi8EE10dec_sampleEiii : 204 -> 208
 ~ __ZL19AVE_SEI_PrintPFDataPK17_S_AVE_SEI_PFDataiiPKc : 6988 -> 7004
 ~ __Z19AVE_MCTF_SMap_PrintPK16_S_AVE_MCTF_SMapjiPKci : 500 -> 536
+CStrings:
++ "21:31:54"
+- "22:18:17"
 ```

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MedicationsHealthAppPlugin.framework/MedicationsHealthAppPlugin`
 
-```diff
+### Section Size Changes
 
- 7027.0.72.2.7
--  __TEXT.__text: 0x120670
-+  __TEXT.__text: 0x1206c0
-   __TEXT.__objc_methlist: 0xca8
-   __TEXT.__const: 0x8b24
-   __TEXT.__constg_swiftt: 0x436c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x120670` | `0x1206c0` | **`+0x50`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_22e73d504 -> sub_22efe2504 : 2572 -> 2576
 ~ sub_22e741394 -> sub_22efe6398 : 1664 -> 1668

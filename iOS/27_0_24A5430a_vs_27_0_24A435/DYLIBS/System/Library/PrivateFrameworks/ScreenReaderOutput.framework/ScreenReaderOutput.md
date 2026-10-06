@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ScreenReaderOutput.framework/ScreenReaderOutput`
 
-```diff
+### Section Size Changes
 
- 465.0.0.0.0
--  __TEXT.__text: 0x9cbf0
-+  __TEXT.__text: 0x9cbf4
-   __TEXT.__objc_methlist: 0x9008
-   __TEXT.__const: 0x183c
-   __TEXT.__cstring: 0x5b79
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9cbf0` | `0x9cbf4` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2a0f3c414 -> sub_2a1cef414 : 968 -> 972
+~ sub_2a0e32414 -> sub_29ff76414 : 968 -> 972
 ```

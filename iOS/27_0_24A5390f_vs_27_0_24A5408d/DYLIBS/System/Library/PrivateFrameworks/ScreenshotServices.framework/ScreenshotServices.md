@@ -2,25 +2,23 @@
 
 > `/System/Library/PrivateFrameworks/ScreenshotServices.framework/ScreenshotServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e5fc` | `0x1e680` | **`+0x84`** |
+
+### Other Changes
+
 ```diff
 
 -444.0.0.0.0
--  __TEXT.__text: 0x1e5fc
 +447.100.0.0.0
-+  __TEXT.__text: 0x1e680
-   __TEXT.__objc_methlist: 0x265c
-   __TEXT.__const: 0x27c
-   __TEXT.__cstring: 0x207d
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 981
--  Symbols:   2864
+-  Symbols:   2121
 +  Functions: 982
-+  Symbols:   2865
-   CStrings:  487
- 
++  Symbols:   2122
 Symbols:
 + __SSVisualIntelligenceV2EnabledForContext
 Functions:

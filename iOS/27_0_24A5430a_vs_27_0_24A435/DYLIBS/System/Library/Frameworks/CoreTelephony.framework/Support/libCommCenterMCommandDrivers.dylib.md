@@ -2,15 +2,18 @@
 
 > `/System/Library/Frameworks/CoreTelephony.framework/Support/libCommCenterMCommandDrivers.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x214bb0` | `0x214c98` | **`+0xe8`** |
+
+### Other Changes
+
 ```diff
 
 -13487.6.0.0.0
--  __TEXT.__text: 0x214bb0
 +13487.7.0.0.0
-+  __TEXT.__text: 0x214c98
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__objc_methlist: 0x1cc
-   __TEXT.__const: 0x26a78
 Functions:
 ~ __ZNSt3__16vectorIN3nas3tlv18LteNeighborCell_V3ENS_9allocatorIS3_EEE6resizeEm : 284 -> 288
 ~ _DEREncoderAddData : 776 -> 780

@@ -2,15 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/AXImageExplorerServices.framework/AXImageExplorerServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x96b4` | `0x9698` | **`-0x1c`** |
+
+### Other Changes
+
 ```diff
 
 -3240.9.0.0.0
--  __TEXT.__text: 0x8fa0
 +3245.7.1.0.0
-+  __TEXT.__text: 0x8f84
-   __TEXT.__objc_methlist: 0x23c
-   __TEXT.__const: 0x5f8
-   __TEXT.__cstring: 0x49f
 Functions:
-~ sub_24d757e54 -> sub_251401e54 : 424 -> 396
+~ sub_24fe93f60 -> sub_253ca4f60 : 424 -> 396
 ```

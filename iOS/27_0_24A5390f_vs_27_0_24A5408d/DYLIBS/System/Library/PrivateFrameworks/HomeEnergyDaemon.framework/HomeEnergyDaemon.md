@@ -2,85 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/HomeEnergyDaemon.framework/HomeEnergyDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3ec6e4` | `0x3ede28` | **`+0x1744`** |
+| `__TEXT.__oslogstring` | `0x116af` | `0x118ef` | **`+0x240`** |
+| `__TEXT.__cstring` | `0x5f81` | `0x5f21` | **`-0x60`** |
+| `__TEXT.__eh_frame` | `0x24490` | `0x24458` | **`-0x38`** |
+| `__TEXT.__const` | `0xb8e0` | `0xb910` | **`+0x30`** |
+| `__TEXT.__swift5_typeref` | `0x34d0` | `0x3500` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0xb620` | `0xb650` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0xc408` | `0xc430` | **`+0x28`** |
+| `__DATA_DIRTY.__data` | `0x4fa8` | `0x4fc8` | **`+0x20`** |
+| `__TEXT.__constg_swiftt` | `0x4278` | `0x4298` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x3954` | `0x3974` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x1c7c` | `0x1c64` | **`-0x18`** |
+| `__TEXT.__swift5_capture` | `0x3bc4` | `0x3bd8` | **`+0x14`** |
+| `__AUTH_CONST.__auth_got` | `0x3300` | `0x32f0` | **`-0x10`** |
+| `__TEXT.__swift_as_ret` | `0xda8` | `0xd98` | **`-0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x3754` | `0x3760` | **`+0xc`** |
+| `__TEXT.__swift_as_entry` | `0xa90` | `0xa84` | **`-0xc`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1600` | `0x15f8` | **`-0x8`** |
+| `__DATA_DIRTY.__objc_data` | `0x5b8` | `0x5c0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -488.0.0.0.0
--  __TEXT.__text: 0x3ec6e4
 +490.1.4.0.0
-+  __TEXT.__text: 0x3ede28
-   __TEXT.__objc_methlist: 0xcf8
--  __TEXT.__const: 0xb8e0
-+  __TEXT.__const: 0xb910
-   __TEXT.__gcc_except_tab: 0x18
--  __TEXT.__cstring: 0x5f81
--  __TEXT.__swift5_typeref: 0x34d0
--  __TEXT.__oslogstring: 0x116af
--  __TEXT.__swift5_capture: 0x3bc4
--  __TEXT.__constg_swiftt: 0x4278
--  __TEXT.__swift5_reflstr: 0x3954
--  __TEXT.__swift5_fieldmd: 0x3754
-+  __TEXT.__cstring: 0x5f21
-+  __TEXT.__swift5_typeref: 0x3500
-+  __TEXT.__oslogstring: 0x118ef
-+  __TEXT.__swift5_capture: 0x3bd8
-+  __TEXT.__constg_swiftt: 0x4298
-+  __TEXT.__swift5_reflstr: 0x3974
-+  __TEXT.__swift5_fieldmd: 0x3760
-   __TEXT.__swift5_builtin: 0xb4
-   __TEXT.__swift5_assocty: 0x330
-   __TEXT.__swift5_proto: 0x434
-   __TEXT.__swift5_types: 0x37c
--  __TEXT.__swift_as_entry: 0xa90
--  __TEXT.__swift_as_ret: 0xda8
--  __TEXT.__swift_as_cont: 0x1c7c
-+  __TEXT.__swift_as_entry: 0xa84
-+  __TEXT.__swift_as_ret: 0xd98
-+  __TEXT.__swift_as_cont: 0x1c64
-   __TEXT.__swift5_protos: 0x48
-   __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__unwind_info: 0xb620
--  __TEXT.__eh_frame: 0x24490
-+  __TEXT.__unwind_info: 0xb650
-+  __TEXT.__eh_frame: 0x24458
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x98
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1600
-+  __DATA_CONST.__objc_selrefs: 0x15f8
-   __DATA_CONST.__objc_protorefs: 0x50
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xc408
-+  __AUTH_CONST.__const: 0xc430
-   __AUTH_CONST.__objc_const: 0x65b0
--  __AUTH_CONST.__auth_got: 0x3300
-+  __AUTH_CONST.__auth_got: 0x32f0
-   __AUTH.__objc_data: 0x2a0
-   __AUTH.__data: 0x2458
-   __DATA.__data: 0x1a10
-   __DATA.__common: 0xb8
-   __DATA.__bss: 0x7190
--  __DATA_DIRTY.__objc_data: 0x5b8
--  __DATA_DIRTY.__data: 0x4fa8
-+  __DATA_DIRTY.__objc_data: 0x5c0
-+  __DATA_DIRTY.__data: 0x4fc8
-   __DATA_DIRTY.__bss: 0xc00
-   __DATA_DIRTY.__common: 0x260
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-
-   - /usr/lib/swift/libswift_DarwinFoundation3.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10909
--  Symbols:   21316
+-  Symbols:   20778
 -  CStrings:  1704
 +  Functions: 10910
-+  Symbols:   21326
++  Symbols:   20789
 +  CStrings:  1706
- 
 Symbols:
 + _$s10Foundation4UUIDV_AA4DateVtMR
 + _$s10Foundation4UUIDV_AA4DateVtMd
@@ -193,7 +151,6 @@ Symbols:
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.81TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.81Tu
 + ___swift_closure_destructor.69Tm
-+ _objc_msgSend$lastFetchTimestamp
 + _symbolic SDy__________G 10Foundation4UUIDV AA4DateV
 + _symbolic ___________t 10Foundation4UUIDV AA4DateV
 + _symbolic _____y__________G s18_DictionaryStorageC 10Foundation4UUIDV AC4DateV
@@ -300,8 +257,6 @@ Symbols:
 - ___swift_closure_destructor.17Tm
 - ___swift_closure_destructor.25Tm
 - ___swift_closure_destructor.47Tm
-- _objc_msgSend$_beginActiveAssertionWithReason:
-- _objc_msgSend$_endActiveAssertion:
 CStrings:
 + "Skip scheduling on-demand background tasks, device not ready"
 + "[EventFetchStateManager] Failed to fetch last fetch timestamps: %@"

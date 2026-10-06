@@ -2,98 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/SiriLiminal.framework/SiriLiminal`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x56154` | `0x5718c` | **`+0x1038`** |
+| `__AUTH_CONST.__objc_const` | `0x2a50` | `0x2d48` | **`+0x2f8`** |
+| `__AUTH_CONST.__cfstring` | `0x13a0` | `0x1680` | **`+0x2e0`** |
+| `__TEXT.__objc_methlist` | `0x1198` | `0x1310` | **`+0x178`** |
+| `__TEXT.__cstring` | `0x57b5` | `0x58f9` | **`+0x144`** |
+| `__DATA_CONST.__objc_selrefs` | `0xd68` | `0xe40` | **`+0xd8`** |
+| `__AUTH.__objc_data` | `0x3c0` | `0x460` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x4c8` | `0x558` | **`+0x90`** |
+| `__TEXT.__unwind_info` | `0x2060` | `0x2090` | **`+0x30`** |
+| `__DATA.__objc_ivar` | `0x218` | `0x240` | **`+0x28`** |
+| `__TEXT.__gcc_except_tab` | `0x4268` | `0x428c` | **`+0x24`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x10` | `0x30` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0xc8` | `0xd8` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0xa8` | `0xb8` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x248` | `0x250` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.64.114.1.5
--  __TEXT.__text: 0x56154 sha256:d4e670a00bdc2768578e48030154fa2b348be9e0f0b36767092bcea8d94531bd
--  __TEXT.__objc_methlist: 0x1198 sha256:6294c0f148de5d61e49e932a619c1585fce3aae41e6ba299275db907f48f96b5
 +3600.70.8.0.0
-+  __TEXT.__text: 0x5718c sha256:675e0c8b2bcb218e74253dd2c3efec519ff1cefea42e0752ac1e5c375b52c58c
-+  __TEXT.__objc_methlist: 0x1310 sha256:41cfe995437be6e2014243f46022f707543d66bd53e1793a4a35d7733122d97b
-   __TEXT.__const: 0xdb0 sha256:ad60914041aa9dde78296d640b82b1bcdd64c2ead03e92e50a0181af5af9eba5
--  __TEXT.__cstring: 0x57b5 sha256:ad161dd55f03e210edce98b1dd12cd4bf20a096c8987f3257396d5cd94190e7e
--  __TEXT.__gcc_except_tab: 0x4268 sha256:de0afc34c85143a69b961566062dd3cfd53933b53966190f60cccaea7a3e6875
-+  __TEXT.__cstring: 0x58f9 sha256:1a4eaa45dde92d0d3053a8e1c83ba0c1c55de35b10dfebfd4e36fe1070920f0a
-+  __TEXT.__gcc_except_tab: 0x428c sha256:3e43cfc761e6d97942d992f06dfae530fb829d5ad287708e2e5995af1a39e495
-   __TEXT.__oslogstring: 0xd9f sha256:4cd8094298c502ae5a105cc0dfd0824c25e61b38b46c542a9cdc087c0391c119
--  __TEXT.__unwind_info: 0x2060 sha256:6df9c1b27ed15a7805c008b4da24388638bb46f2be19c5bd95bde73344cf9e66
-+  __TEXT.__unwind_info: 0x2090 sha256:e3225b0ed9377d8c0dc7161549ab486f8e91676c6a3cb63f5ea91710290b42a1
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4c8 sha256:24bff668d955dbf289172409b8a1a3cec02c30faab5b76cad2ba1060ab610564
--  __DATA_CONST.__objc_classlist: 0xc8 sha256:3a968b48bea2cb2d8a2a36de393f6e5803c0bacdcb48410e60e113d8af3944f4
--  __DATA_CONST.__objc_catlist: 0x8 sha256:5daaebd4d6b5be738c92fac8438a923c2e165a7f01a4c0708a9e0cee9c4ad1a1
--  __DATA_CONST.__objc_protolist: 0x20 sha256:891424b09be875502b25e6f9062695d1facc354515e3153f9d518afa533fcf13
-+  __DATA_CONST.__const: 0x558 sha256:ac5331c0b403d718e6be800f2f2a884cc05f750a579312a08257fdae2b2c5b2c
-+  __DATA_CONST.__objc_classlist: 0xd8 sha256:70c8edc7ab37b72bccd0948ab848216eb2ca356e4d7b4b931e593e0a2e777e0e
-+  __DATA_CONST.__objc_catlist: 0x8 sha256:401627c414992d47b99f4b3e1addf224705f34e6b67b38622edf0cf6f521088e
-+  __DATA_CONST.__objc_protolist: 0x20 sha256:4e34b87a820d27ca990be79fc7f224b148e770f21b8f2a4dc84e587b279fe8d9
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x10 sha256:db089a9946ee2f440f1454b6bd081bc906524b106b3b9bd5745c567d00425fed
--  __DATA_CONST.__objc_selrefs: 0xd68 sha256:bbe02e170faa0b048dcfdb1c7695759e63ee4de935cec2d540298ec73136cbd8
--  __DATA_CONST.__objc_superrefs: 0xa8 sha256:95f8c34d56bdf218dabb50d4fd5a6b76eb77f9db5db56b6470ff82bc7c40b7d9
--  __DATA_CONST.__objc_arraydata: 0x68 sha256:451cd66d3a233f251823c3678d64911c29f7f37cab531dbbfcd3b7fad3af5fe9
--  __DATA_CONST.__got: 0x248 sha256:7484e9dbd3ec36ff03042f4e6f9a6e2b7c4adccaee5e204f04f8cfdf39cf4ce0
--  __AUTH_CONST.__const: 0x1698 sha256:30b1707863ed118247a7f6a69147aed0565821258b9b3c59964f171a2a0b0f72
--  __AUTH_CONST.__cfstring: 0x13a0 sha256:cb1e0a7a71a913d871aa112ee3b3362d2a01132ead4a9f3254a45c2f7585975b
--  __AUTH_CONST.__objc_const: 0x2a50 sha256:35e91d10576fc1ea323e8056859c5d9f09bbc27dc7e463d11f129f5fab27b2aa
--  __AUTH_CONST.__weak_auth_got: 0x48 sha256:a12eddea0f6ad1e71ee988020df0a03ae9413266d2ccb04ea4754c1b7564d0ea
--  __AUTH_CONST.__objc_floatobj: 0xb0 sha256:8e6b989dd994e011fb17c42f9aa2dc5c0edf98a87f51182749951472360f14b8
--  __AUTH_CONST.__objc_intobj: 0x60 sha256:c933a2393d4f575525bdb7872677ca923288001b26af71c654e4cc493e44ca08
--  __AUTH_CONST.__objc_arrayobj: 0x30 sha256:de76db43a2507e01ece3ae11fb7f5a2cc7a069a049ca1f31059710cd4e738002
--  __AUTH_CONST.__objc_dictobj: 0x28 sha256:efc2387119dec6adde3331db0ef58459b6aa81b016309ab5191dbb34b131f43f
--  __AUTH_CONST.__objc_doubleobj: 0x10 sha256:dc39dc51d538e256063267fe57baacae24c5692226cc411c4db4798cee7fb999
-+  __DATA_CONST.__weak_got: 0x10 sha256:c9b00cf8e5fdc159d5e0657836ccec0cbd1eddc62a50f4b3c9f634c56153dbb7
-+  __DATA_CONST.__objc_selrefs: 0xe40 sha256:8882a31151c3f40f5d85f7ca62fb1c4020baed8ffdd92ca6a1b4da1051296f84
-+  __DATA_CONST.__objc_superrefs: 0xb8 sha256:f622944869ee28bca18640d9ab71857b8f006fadeb4710aa1b8e5de59e85a5e7
-+  __DATA_CONST.__objc_arraydata: 0x68 sha256:8940c7979e317954c85169b5b01b327aa145bc4aa0e384fc00283122eddb5c33
-+  __DATA_CONST.__got: 0x250 sha256:f303e7ff7ec56c25db8b69daea21d767a8f61f70783e5cbe8fd7774fa4e32725
-+  __AUTH_CONST.__const: 0x1698 sha256:245743ff92c331d67c3ef2ebe592bff23ab1d9339d3eb438d3700438704ec3e8
-+  __AUTH_CONST.__cfstring: 0x1680 sha256:484484631dd3a07b3bf7ea4163535fc1eb597d2779cdaf1c7b8e435e785860ad
-+  __AUTH_CONST.__objc_const: 0x2d48 sha256:ded8c363febf763eea2dd952d1a38491d8bccaa764997d6cecc8f461057d6f83
-+  __AUTH_CONST.__weak_auth_got: 0x48 sha256:c9a2002f057723af52fad0d1b46dc6ee89562b28b88ff900047dd0d8bfc854c6
-+  __AUTH_CONST.__objc_floatobj: 0xb0 sha256:ce2d1f52ec38bc23f0a394ac40a05d9221de6d37a27e0588d9624452d3733d87
-+  __AUTH_CONST.__objc_intobj: 0x60 sha256:0916caa3ce7a3abadc94de8d0b9ab7c676595675d0614c235f7db9ac6ca6c96d
-+  __AUTH_CONST.__objc_arrayobj: 0x30 sha256:5e7b0d5ecf1ede0e142cdbbebf55091dfaa7affcb470321b6e5d0dde20c9734d
-+  __AUTH_CONST.__objc_dictobj: 0x28 sha256:b2cef5b9e3dcf1cf73fcff6122c841f47cfd411a69ebfe832a4bfd15fd528090
-+  __AUTH_CONST.__objc_doubleobj: 0x30 sha256:f625b700c29cad4327a8516c9e58d997197303face4b5ab7f922be289f5035da
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x3c0 sha256:476db3c0b999c909822fc5ab23b0efc96d18162f201886ade97396a07bd02e77
--  __AUTH.__data: 0xe0 sha256:60c1367ddf8c24e8423a6f7f8436c71050790c9e066b7aa202c559dac6d4867a
--  __AUTH.__thread_vars: 0x30 sha256:a1bb7d2157843003be7d28ef65c46b3e0cfa49d2076db9d7b94039c04f0dc1fa
-+  __AUTH.__objc_data: 0x460 sha256:38443b2b6cc9dc23ade77f9717b44cd154b14b25b2c5efc3c4841895ab864612
-+  __AUTH.__data: 0xe0 sha256:90c32752bbc8657b137c2ebe67deeabbb41e4cd8931576e900860177210f8622
-+  __AUTH.__thread_vars: 0x30 sha256:babf95799c8962d16d9a010bebc3ab1489182334c012c530d6a91a66776edbfd
-   __AUTH.__thread_bss: 0x10 sha256:374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb
--  __DATA.__objc_ivar: 0x218 sha256:08bf89e997e46149ebec418b8be950f03fd61b13c8b4c1acbe533c37ffbf9a28
--  __DATA.__data: 0x27c sha256:bb20b1b7a5c61bc4bdf98ca8704c14291be3b13a8fd1755476651e02ee51c159
-+  __DATA.__objc_ivar: 0x240 sha256:98cc1c228ff12d4e4f1221f0975d210667757582dca5584faa24a13e48969037
-+  __DATA.__data: 0x27c sha256:7c80f0db6eca5bc843aa494338c73c70f1262279599c137f9095625b4e8964ef
-   __DATA.__bss: 0x49 sha256:9c56f48ae9bafd205262034bfcc2232b2c63348cb723d681ec39f13409f990cc
-   __DATA.__common: 0x2fd sha256:33be7fb5d1706975345ddc558245d5874e543a4b21ab13b0fc309bb9588c2ac2
--  __DATA_DIRTY.__objc_data: 0x410 sha256:097719510ce5af91398cee9996fceb5b9f471bf880258fe30c0e4a2418e2f6d1
--  __DATA_DIRTY.__data: 0x88 sha256:1d5bae651f6f555a11a6545518edcc8a360ab722a87304cea090f59c464666eb
-+  __DATA_DIRTY.__objc_data: 0x410 sha256:4a165eb172bc79130e048cdb5f175d083cebb3d6ff0b860f4b1d5a77a73b3f36
-+  __DATA_DIRTY.__data: 0x88 sha256:f8942581733e78a0abe7e9d9fb75eb907ab6f302728723ed5804ef8ca20a10c4
-   __DATA_DIRTY.__bss: 0x40 sha256:f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b
-   __DATA_DIRTY.__common: 0xd0 sha256:46f531b7ea0428fbf2c3ca2b60e8dc33d6bbfa000e0fd1b489c5e39140a47006
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  UUID: 84E3713E-C22E-3050-962B-270CEC09EED1
 -  Functions: 1600
--  Symbols:   4915
--  CStrings:  802
-+  UUID: 3BB1CFFB-BD4B-33D6-BE01-C19AC0A5D848
+-  Symbols:   2636
+-  CStrings:  644
 +  Functions: 1629
-+  Symbols:   5027
-+  CStrings:  848
- 
++  Symbols:   2701
++  CStrings:  667
 Symbols:
 + +[SLNCThresholdConfiguration _lookupInDict:modeKey:typeKey:inputOriginName:]
 + +[SLNCThresholdConfiguration _sentinelDefaultForInputOrigin:]
@@ -196,7 +137,6 @@ Symbols:
 + __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEE15__init_buf_ptrsB9fqe220106Ev
 + __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B9fqe220106Ej
 + __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSC_EEESD_SG_EUlvE0_EEvbT_T0_
-+ __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSC_EEESD_SG_EUlvE0_EEvbT_T0_.cold.1
 + __ZNSt3__116__pad_and_outputB9fqe220106IcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_
 + __ZNSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B9fqe220106Ev
 + __ZNSt3__119__allocate_at_leastB9fqe220106INS_9allocatorIN13sentencepiece22SentencePieceProcessor11ExtraOptionEEENS_16allocator_traitsIS5_EEEENS_19__allocation_resultINT0_7pointerENS9_9size_typeEEERT_m
@@ -346,35 +286,12 @@ Symbols:
 + __ZSt28__throw_bad_array_new_lengthB9fqe220106v
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEhEENS_22__unordered_map_hasherIS7_NS_4pairIKS7_hEENS_4hashIS7_EENS_8equal_toIS7_EEEENS_21__unordered_map_equalIS7_SC_SG_SE_EENS5_ISC_EEE16__emplace_uniqueB9fqe220106IJRKNS_21piecewise_construct_tENS_5tupleIJOS7_EEENSQ_IJEEEEEENSA_INS_15__hash_iteratorIPNS_11__hash_nodeIS8_PvEEEEbEEDpOT_ENKUlRSB_SP_OSS_OST_E_clES14_SP_S15_S16_
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeINS_17basic_string_viewIcNS_11char_traitsIcEEEENS_4pairIS5_S5_EEEENS_22__unordered_map_hasherIS5_NS6_IKS5_S7_EENS_4hashIS5_EENS_8equal_toIS5_EEEENS_21__unordered_map_equalIS5_SB_SF_SD_EENS_9allocatorISB_EEE16__emplace_uniqueB9fqe220106IJRKNS_21piecewise_construct_tENS_5tupleIJRSA_EEENSQ_IJEEEEEENS6_INS_15__hash_iteratorIPNS_11__hash_nodeIS8_PvEEEEbEEDpOT_ENKUlSR_SP_OSS_OST_E_clESR_SP_S14_S15_
-+ ___38-[SLUresMitigator _processInputFeats:]_block_invoke.401
-+ ___Block_byref_object_copy_.752
-+ ___Block_byref_object_copy_.896
-+ ___Block_byref_object_dispose_.753
-+ ___Block_byref_object_dispose_.897
 + ___block_descriptor_72_e8_32s40s48s56s64s_e39_v32?0"NSString"8"NSDictionary"16^B24ls32l8s40l8s48l8s56l8s64l8
 + _kCSAttSiriBPCategoryKey
 + _kCSAttSiriCCCategoryKey
 + _kCSAttSiriHSCategoryKey
 + _kCSAttSiriJSCategoryKey
 + _kCSAttSiriRTSCategoryKey
-+ _objc_msgSend$_lookupInDict:modeKey:typeKey:inputOriginName:
-+ _objc_msgSend$_sentinelDefaultForInputOrigin:
-+ _objc_msgSend$devicePrefixForPlatform:
-+ _objc_msgSend$hasThresholds
-+ _objc_msgSend$initWithNCThreshold:speakerIDThreshold:
-+ _objc_msgSend$inputOriginNameForInputOrigin:
-+ _objc_msgSend$micSourceForRecordRoute:
-+ _objc_msgSend$mode
-+ _objc_msgSend$modeKeyForMode:
-+ _objc_msgSend$ncThreshold
-+ _objc_msgSend$overrideKeyForSelfPlatform:servingPlatform:recordRoute:
-+ _objc_msgSend$recordRoute
-+ _objc_msgSend$resolveThresholdsForSelfPlatform:servingPlatform:mode:inputOrigin:recordRoute:
-+ _objc_msgSend$selfPlatform
-+ _objc_msgSend$servingPlatform
-+ _objc_msgSend$setObject:forKeyedSubscript:
-+ _objc_msgSend$speakerIDThreshold
-+ _objc_msgSend$typeKeyForThresholdType:
 + _objc_retain_x28
 + _objc_retain_x4
 + _objc_retain_x5
@@ -426,7 +343,6 @@ Symbols:
 - __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEE15__init_buf_ptrsB9fqe220100Ev
 - __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B9fqe220100Ej
 - __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSC_EEESD_SG_EUlvE0_EEvbT_T0_
-- __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSC_EEESD_SG_EUlvE0_EEvbT_T0_.cold.1
 - __ZNSt3__116__pad_and_outputB9fqe220100IcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_
 - __ZNSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B9fqe220100Ev
 - __ZNSt3__119__allocate_at_leastB9fqe220100INS_9allocatorIN13sentencepiece22SentencePieceProcessor11ExtraOptionEEENS_16allocator_traitsIS5_EEEENS_19__allocation_resultINT0_7pointerENS9_9size_typeEEERT_m
@@ -576,11 +492,6 @@ Symbols:
 - __ZSt28__throw_bad_array_new_lengthB9fqe220100v
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEhEENS_22__unordered_map_hasherIS7_NS_4pairIKS7_hEENS_4hashIS7_EENS_8equal_toIS7_EEEENS_21__unordered_map_equalIS7_SC_SG_SE_EENS5_ISC_EEE16__emplace_uniqueB9fqe220100IJRKNS_21piecewise_construct_tENS_5tupleIJOS7_EEENSQ_IJEEEEEENSA_INS_15__hash_iteratorIPNS_11__hash_nodeIS8_PvEEEEbEEDpOT_ENKUlRSB_SP_OSS_OST_E_clES14_SP_S15_S16_
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeINS_17basic_string_viewIcNS_11char_traitsIcEEEENS_4pairIS5_S5_EEEENS_22__unordered_map_hasherIS5_NS6_IKS5_S7_EENS_4hashIS5_EENS_8equal_toIS5_EEEENS_21__unordered_map_equalIS5_SB_SF_SD_EENS_9allocatorISB_EEE16__emplace_uniqueB9fqe220100IJRKNS_21piecewise_construct_tENS_5tupleIJRSA_EEENSQ_IJEEEEEENS6_INS_15__hash_iteratorIPNS_11__hash_nodeIS8_PvEEEEbEEDpOT_ENKUlSR_SP_OSS_OST_E_clESR_SP_S14_S15_
-- ___38-[SLUresMitigator _processInputFeats:]_block_invoke.363
-- ___Block_byref_object_copy_.654
-- ___Block_byref_object_copy_.795
-- ___Block_byref_object_dispose_.655
-- ___Block_byref_object_dispose_.796
 - ___block_descriptor_56_e8_32s40s48s_e39_v32?0"NSString"8"NSDictionary"16^B24ls32l8s40l8s48l8
 CStrings:
 + "BluetoothDoAP"
@@ -608,5 +519,4 @@ CStrings:
 + "vision"
 + "watch"
 - "Missing config for Ures %@"
-
 ```

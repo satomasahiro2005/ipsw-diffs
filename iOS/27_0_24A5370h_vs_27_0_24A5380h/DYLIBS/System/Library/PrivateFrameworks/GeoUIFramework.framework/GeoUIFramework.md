@@ -2,78 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/GeoUIFramework.framework/GeoUIFramework`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1f8d4` | `0x22eec` | **`+0x3618`** |
+| `__TEXT.__swift5_typeref` | `0xe8b` | `0x1762` | **`+0x8d7`** |
+| `__DATA.__bss` | `0x4680` | `0x4b18` | **`+0x498`** |
+| `__TEXT.__const` | `0x2ef0` | `0x3378` | **`+0x488`** |
+| `__AUTH_CONST.__const` | `0x18d8` | `0x1ac8` | **`+0x1f0`** |
+| `__DATA.__data` | `0x9b8` | `0xba0` | **`+0x1e8`** |
+| `__TEXT.__unwind_info` | `0xa38` | `0xb18` | **`+0xe0`** |
+| `__AUTH_CONST.__auth_got` | `0x7d8` | `0x8a8` | **`+0xd0`** |
+| `__TEXT.__eh_frame` | `0x720` | `0x7c8` | **`+0xa8`** |
+| `__TEXT.__swift5_fieldmd` | `0x8e4` | `0x980` | **`+0x9c`** |
+| `__AUTH.__data` | `0x460` | `0x4f0` | **`+0x90`** |
+| `__TEXT.__constg_swiftt` | `0x8a0` | `0x930` | **`+0x90`** |
+| `__TEXT.__cstring` | `0x771` | `0x7fb` | **`+0x8a`** |
+| `__TEXT.__swift5_reflstr` | `0x423` | `0x48a` | **`+0x67`** |
+| `__TEXT.__swift5_capture` | `0x194` | `0x1e4` | **`+0x50`** |
+| `__TEXT.__swift5_proto` | `0x234` | `0x258` | **`+0x24`** |
+| `__DATA_CONST.__objc_selrefs` | `0x90` | `0xa8` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x258` | `0x270` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0xb4` | `0xc0` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1f8d4
--  __TEXT.__const: 0x2ef0
--  __TEXT.__swift5_typeref: 0xe8b
--  __TEXT.__swift5_capture: 0x194
--  __TEXT.__cstring: 0x771
--  __TEXT.__swift5_reflstr: 0x423
--  __TEXT.__swift5_assocty: 0x258
--  __TEXT.__constg_swiftt: 0x8a0
--  __TEXT.__swift5_fieldmd: 0x8e4
-+  __TEXT.__text: 0x22eec
-+  __TEXT.__const: 0x3378
-+  __TEXT.__swift5_typeref: 0x1762
-+  __TEXT.__swift5_capture: 0x1e4
-+  __TEXT.__cstring: 0x7fb
-+  __TEXT.__swift5_reflstr: 0x48a
-+  __TEXT.__swift5_assocty: 0x270
-+  __TEXT.__constg_swiftt: 0x930
-+  __TEXT.__swift5_fieldmd: 0x980
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__oslogstring: 0xd5
--  __TEXT.__swift5_proto: 0x234
--  __TEXT.__swift5_types: 0xb4
-+  __TEXT.__swift5_proto: 0x258
-+  __TEXT.__swift5_types: 0xc0
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0xa38
--  __TEXT.__eh_frame: 0x720
-+  __TEXT.__unwind_info: 0xb18
-+  __TEXT.__eh_frame: 0x7c8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-3600.36.4.0.0
++3600.36.10.0.0
 
-   __DATA_CONST.__const: 0xd0
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x90
-+  __DATA_CONST.__objc_selrefs: 0xa8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x18d8
-+  __AUTH_CONST.__const: 0x1ac8
-   __AUTH_CONST.__objc_const: 0x90
--  __AUTH_CONST.__auth_got: 0x7d8
--  __AUTH.__data: 0x460
--  __DATA.__data: 0x9b8
--  __DATA.__bss: 0x4680
-+  __AUTH_CONST.__auth_got: 0x8a8
-+  __AUTH.__data: 0x4f0
-+  __DATA.__data: 0xba0
-+  __DATA.__bss: 0x4b18
-   __DATA.__common: 0x60
-   __DATA_DIRTY.__data: 0x98
-   __DATA_DIRTY.__bss: 0x80
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 988
--  Symbols:   3821
+-  Symbols:   2928
 -  CStrings:  60
 +  Functions: 1080
-+  Symbols:   4221
++  Symbols:   3233
 +  CStrings:  64
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __DATA_DIRTY.__data : content changed
 Symbols:
 + _$s10Foundation4DataV15_RepresentationOWOe
 + _$s10Foundation4DataV15_RepresentationOWOy
@@ -415,9 +380,6 @@ Symbols:
 + _get_enum_tag_for_layout_string 10Foundation4DataV15_RepresentationO
 + _get_witness_table 9SnippetUI14ComponentStackVy05SwiftB012TupleContentVyAD6ZStackVyAFyAD4ViewP08_MapKit_eB0E8mapScopeyQrAD9NamespaceV2IDVFQOyAjDE12onTapGesture5count7performQrSi_yyctFQOyAA0jI0V_Qo__Qo__AjDEAqrSQrSi_yyctFQOyAD08ModifiedG0VyAYyAYyAYyAYyAYyAA017PrimaryHeaderRichI0VAD14_PaddingLayoutVGA1_GAD34_InsettableBackgroundShapeModifierVyAD8MaterialVAD16RoundedRectangleVGGAD30_EnvironmentKeyWritingModifierVyAD11ColorSchemeOGGA1_GA1_G_Qo_QPGG_AjAE10separators_10isOverrideQr0aK014SeparatorStyleO_SbtFQOyAYyAjAEA23__A24_QrA27__SbtFQOyAjDE11buttonStyleyQrqd__AD20PrimitiveButtonStyleRd__lFQOyAA015ButtonContainerI0V_AA13RFButtonStyleVQo__Qo_A1_G_Qo_QPGGAdIHPyHC
 + _get_witness_table 9SnippetUI14ComponentStackVy05SwiftB06ZStackVyAD12TupleContentVyAD4ViewP08_MapKit_eB0E8mapScopeyQrAD9NamespaceV2IDVFQOyAjDE12onTapGesture5count7performQrSi_yyctFQOyAA0jI0V_Qo__Qo__AjDEAqrSQrSi_yyctFQOyAD08ModifiedH0VyAYyAYyAYyAYyAYyAA22VisualResponseProviderC4view3for7contextQrSaySo13SFCardSectionCG_AA7ContextCtFZQOy_Qo_AD14_PaddingLayoutVGA10_GAD34_InsettableBackgroundShapeModifierVyAD8MaterialVAD16RoundedRectangleVGGAD30_EnvironmentKeyWritingModifierVyAD11ColorSchemeOGGA10_GA10_G_Qo_SgQPGGGAdIHPyHC
-+ _objc_msgSend$cardSections
-+ _objc_msgSend$command
-+ _objc_msgSend$markers
 + _objc_retain_x25
 + _objc_retain_x8
 + _swift_dynamicCastObjCClass
@@ -550,5 +512,4 @@ CStrings:
 + "SinglePlaceInformView"
 + "singlePlaceInform"
 + "tapURLString"
-
 ```

@@ -2,15 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/CMCaptureDevice.framework/CMCaptureDevice`
 
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
-Sections:
-~ __TEXT.__cstring : content changed
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __DATA.__data : content changed
+
+-753.0.0.122.3
++758.0.0.122.2
 CStrings:
 + "description=CameraCapture_CMDevice-758.0.0.122.2"
 - "description=CameraCapture_CMDevice-753.0.0.122.3"
-
 ```

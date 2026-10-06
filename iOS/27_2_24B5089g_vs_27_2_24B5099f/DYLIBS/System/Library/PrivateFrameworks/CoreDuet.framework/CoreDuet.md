@@ -2,64 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1901a0` | `0x1904f4` | **`+0x354`** |
+| `__AUTH.__objc_data` | `0x5050` | `0x4f38` | **`-0x118`** |
+| `__DATA_DIRTY.__objc_data` | `0x2940` | `0x2a58` | **`+0x118`** |
+| `__TEXT.__cstring` | `0x15d57` | `0x15d8f` | **`+0x38`** |
+| `__TEXT.__gcc_except_tab` | `0x73e0` | `0x7408` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x12d40` | `0x12d60` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8088` | `0x80a8` | **`+0x20`** |
+| `__TEXT.__const` | `0x5b8` | `0x5d0` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0xa78` | `0xa80` | **`+0x8`** |
+| `__DATA.__bss` | `0xd70` | `0xd68` | **`-0x8`** |
+| `__DATA_DIRTY.__bss` | `0x220` | `0x228` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x54a8` | `0x54b0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1975.0.0.0.0
--  __TEXT.__text: 0x189b80
 +1976.0.0.0.0
-+  __TEXT.__text: 0x189ed8
-   __TEXT.__objc_methlist: 0x11734
--  __TEXT.__cstring: 0x15d57
--  __TEXT.__const: 0x5b8
-+  __TEXT.__cstring: 0x15d8f
-+  __TEXT.__const: 0x5d0
-   __TEXT.__oslogstring: 0x18dbb
--  __TEXT.__gcc_except_tab: 0x73e0
-+  __TEXT.__gcc_except_tab: 0x7408
-   __TEXT.__dlopen_cstrs: 0xb6
-   __TEXT.__unwind_info: 0x6930
-   __TEXT.__objc_stubs: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x78
-   __DATA_CONST.__objc_protolist: 0x220
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8088
-+  __DATA_CONST.__objc_selrefs: 0x80a8
-   __DATA_CONST.__objc_protorefs: 0x70
-   __DATA_CONST.__objc_superrefs: 0x698
-   __DATA_CONST.__objc_arraydata: 0x710
-   __DATA_CONST.__got: 0x11a8
-   __AUTH_CONST.__const: 0x1b20
--  __AUTH_CONST.__cfstring: 0x12d40
-+  __AUTH_CONST.__cfstring: 0x12d60
-   __AUTH_CONST.__objc_const: 0x22ec0
-   __AUTH_CONST.__objc_intobj: 0x22c8
-   __AUTH_CONST.__objc_doubleobj: 0x50
-   __AUTH_CONST.__objc_arrayobj: 0x630
-   __AUTH_CONST.__objc_dictobj: 0xc8
--  __AUTH_CONST.__auth_got: 0xa78
--  __AUTH.__objc_data: 0x5050
-+  __AUTH_CONST.__auth_got: 0xa80
-+  __AUTH.__objc_data: 0x4f38
-   __DATA.__objc_ivar: 0x177c
-   __DATA.__data: 0x1a40
-   __DATA.__common: 0x38
--  __DATA_DIRTY.__objc_data: 0x2940
--  __DATA_DIRTY.__bss: 0x220
-+  __DATA_DIRTY.__objc_data: 0x2a58
-+  __DATA_DIRTY.__bss: 0x228
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 8794
 -  Symbols:   13369
 -  CStrings:  4655
 +  Symbols:   13371
 +  CStrings:  4656
- 
 Symbols:
 + _CFStringNormalize
 + __CDNonASCIIDigitRangeStarts

@@ -2,15 +2,16 @@
 
 > `/System/Library/Filesystems/hfs.fs/hfs.util`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x98` | `0xa8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -751.0.0.0.0
 +753.40.2.0.0
-   __TEXT.__text: 0x47ac
-   __TEXT.__auth_stubs: 0x410
--  __TEXT.__const: 0x98
-+  __TEXT.__const: 0xa8
-   __TEXT.__cstring: 0x12a3
-   __TEXT.__unwind_info: 0xe8
-   __DATA_CONST.__auth_got: 0x208
 ```

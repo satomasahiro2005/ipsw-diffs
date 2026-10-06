@@ -2,117 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/HealthMenstrualCyclesDaemon.framework/HealthMenstrualCyclesDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8ddd4` | `0x919ac` | **`+0x3bd8`** |
+| `__DATA.__bss` | `0x10e0` | `0x13e0` | **`+0x300`** |
+| `__DATA.__data` | `0x1738` | `0x1968` | **`+0x230`** |
+| `__TEXT.__const` | `0x1cb0` | `0x1e30` | **`+0x180`** |
+| `__AUTH_CONST.__objc_const` | `0x6928` | `0x6a28` | **`+0x100`** |
+| `__TEXT.__cstring` | `0x3901` | `0x39c1` | **`+0xc0`** |
+| `__TEXT.__objc_methlist` | `0x372c` | `0x37d4` | **`+0xa8`** |
+| `__TEXT.__unwind_info` | `0x17d8` | `0x1880` | **`+0xa8`** |
+| `__AUTH_CONST.__const` | `0x1260` | `0x12b8` | **`+0x58`** |
+| `__TEXT.__oslogstring` | `0x6b0c` | `0x6b5c` | **`+0x50`** |
+| `__TEXT.__eh_frame` | `0xe90` | `0xed8` | **`+0x48`** |
+| `__AUTH_CONST.__auth_got` | `0x11b8` | `0x11f8` | **`+0x40`** |
+| `__AUTH_CONST.__cfstring` | `0x2420` | `0x2460` | **`+0x40`** |
+| `__DATA_CONST.__objc_protolist` | `0x240` | `0x280` | **`+0x40`** |
+| `__TEXT.__swift5_assocty` | `0x220` | `0x258` | **`+0x38`** |
+| `__DATA_CONST.__const` | `0x1020` | `0x1050` | **`+0x30`** |
+| `__DATA_DIRTY.__data` | `0xc90` | `0xcc0` | **`+0x30`** |
+| `__TEXT.__swift5_capture` | `0x244` | `0x274` | **`+0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0x718` | `0x740` | **`+0x28`** |
+| `__DATA_CONST.__objc_protorefs` | `0xc0` | `0xe0` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2e18` | `0x2e38` | **`+0x20`** |
+| `__TEXT.__constg_swiftt` | `0x7fc` | `0x81c` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x851` | `0x871` | **`+0x20`** |
+| `__TEXT.__swift5_proto` | `0x11c` | `0x134` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x50` | `0x64` | **`+0x14`** |
+| `__DATA_CONST.__got` | `0xd38` | `0xd48` | **`+0x10`** |
+| `__DATA_CONST.__objc_catlist` | `0x88` | `0x90` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0xd14` | `0xd1a` | **`+0x6`** |
+| `__TEXT.__swift5_types` | `0x94` | `0x98` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.0.72.2.7
--  __TEXT.__text: 0x8ad54
--  __TEXT.__objc_methlist: 0x372c
--  __TEXT.__const: 0x1cb0
 +7027.1.36.2.7
-+  __TEXT.__text: 0x8e884
-+  __TEXT.__objc_methlist: 0x37d4
-+  __TEXT.__const: 0x1e30
-   __TEXT.__gcc_except_tab: 0xdec
--  __TEXT.__oslogstring: 0x6b0c
--  __TEXT.__cstring: 0x3901
--  __TEXT.__constg_swiftt: 0x7fc
--  __TEXT.__swift5_typeref: 0xd14
--  __TEXT.__swift5_reflstr: 0x851
--  __TEXT.__swift5_fieldmd: 0x718
--  __TEXT.__swift5_builtin: 0x50
--  __TEXT.__swift5_assocty: 0x220
--  __TEXT.__swift5_capture: 0x244
--  __TEXT.__swift5_proto: 0x11c
--  __TEXT.__swift5_types: 0x94
-+  __TEXT.__oslogstring: 0x6b5c
-+  __TEXT.__cstring: 0x39c1
-+  __TEXT.__constg_swiftt: 0x81c
-+  __TEXT.__swift5_typeref: 0xd1a
-+  __TEXT.__swift5_reflstr: 0x871
-+  __TEXT.__swift5_fieldmd: 0x740
-+  __TEXT.__swift5_builtin: 0x64
-+  __TEXT.__swift5_assocty: 0x258
-+  __TEXT.__swift5_capture: 0x274
-+  __TEXT.__swift5_proto: 0x134
-+  __TEXT.__swift5_types: 0x98
-   __TEXT.__swift5_protos: 0xc
--  __TEXT.__unwind_info: 0x1fb8
--  __TEXT.__eh_frame: 0xe90
-+  __TEXT.__unwind_info: 0x20a0
-+  __TEXT.__eh_frame: 0xed8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1020
-+  __DATA_CONST.__const: 0x1050
-   __DATA_CONST.__objc_classlist: 0x1a8
--  __DATA_CONST.__objc_catlist: 0x88
--  __DATA_CONST.__objc_protolist: 0x240
-+  __DATA_CONST.__objc_catlist: 0x90
-+  __DATA_CONST.__objc_protolist: 0x280
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2e18
--  __DATA_CONST.__objc_protorefs: 0xc0
-+  __DATA_CONST.__objc_selrefs: 0x2e38
-+  __DATA_CONST.__objc_protorefs: 0xe0
-   __DATA_CONST.__objc_superrefs: 0x118
-   __DATA_CONST.__objc_arraydata: 0xc8
--  __DATA_CONST.__got: 0xd38
--  __AUTH_CONST.__const: 0x1260
--  __AUTH_CONST.__cfstring: 0x2420
--  __AUTH_CONST.__objc_const: 0x6928
-+  __DATA_CONST.__got: 0xd48
-+  __AUTH_CONST.__const: 0x12b8
-+  __AUTH_CONST.__cfstring: 0x2460
-+  __AUTH_CONST.__objc_const: 0x6a28
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x258
-   __AUTH_CONST.__objc_doubleobj: 0x40
-   __AUTH_CONST.__objc_arrayobj: 0x78
--  __AUTH_CONST.__auth_got: 0x11b8
-+  __AUTH_CONST.__auth_got: 0x11f8
-   __AUTH.__objc_data: 0x410
-   __AUTH.__data: 0x18
-   __DATA.__objc_ivar: 0x4b8
--  __DATA.__data: 0x1738
-+  __DATA.__data: 0x1968
-   __DATA.__objc_stublist: 0x8
-   __DATA_DIRTY.__objc_data: 0x11c0
--  __DATA_DIRTY.__data: 0xc90
-+  __DATA_DIRTY.__data: 0xcc0
-   __DATA_DIRTY.__bss: 0x1200
-   __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/PrivateFrameworks/HealthAlgorithms.framework/HealthAlgorithms
-   - /System/Library/PrivateFrameworks/HealthDaemon.framework/HealthDaemon
-   - /System/Library/PrivateFrameworks/HealthDaemonFoundation.framework/HealthDaemonFoundation
 +  - /System/Library/PrivateFrameworks/HealthFeatures.framework/HealthFeatures
-   - /System/Library/PrivateFrameworks/HealthKitOrchestrationAdditions.framework/HealthKitOrchestrationAdditions
-   - /System/Library/PrivateFrameworks/HealthMenstrualCycles.framework/HealthMenstrualCycles
-   - /System/Library/PrivateFrameworks/HealthOrchestration.framework/HealthOrchestration
 
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
 +  - /usr/lib/swift/libswiftCoreImage.dylib
-   - /usr/lib/swift/libswiftCoreLocation.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
-   - /usr/lib/swift/libswiftIntents.dylib
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2347
--  Symbols:   4263
+-  Symbols:   2958
 -  CStrings:  827
 +  Functions: 2419
-+  Symbols:   4305
++  Symbols:   2998
 +  CStrings:  831
- 
 Symbols:
 + -[HDMCDaySummaryEnumerator initWithProfile:calendarCache:dayIndexRange:richTypeDayIndexRange:ascending:includeFactors:includeWristTemperature:]
 + GCC_except_table9
@@ -154,23 +94,11 @@ Symbols:
 + _associated conformance So28HKFeatureAvailabilityContextaSHSCSQ
 + _associated conformance So28HKFeatureAvailabilityContextas20_SwiftNewtypeWrapperSCSY
 + _associated conformance So28HKFeatureAvailabilityContextas20_SwiftNewtypeWrapperSCs35_HasCustomAnyHashableRepresentation
-+ _objc_msgSend$hkmc_deviationDetectionRequirementSet
-+ _objc_msgSend$hkmc_heartRateInputRequirementSetForAppleWatch:
-+ _objc_msgSend$hkmc_menopauseRequirementSetForAppleWatch:
-+ _objc_msgSend$hkmc_wristTemperatureInputRequirementSetForAppleWatch:watchCapability:
-+ _objc_msgSend$initWithIdentifier:options:
-+ _objc_msgSend$initWithProfile:calendarCache:dayIndexRange:richTypeDayIndexRange:ascending:includeFactors:includeWristTemperature:
-+ _objc_msgSend$initWithProfile:gregorianCalendar:morningIndexRange:ascending:options:debugIdentifier:
 + _swift_dynamicCastMetatype
 + _symbolic _____ So28HKFeatureAvailabilityContexta
 + _symbolic yt
 - +[HDFeatureAvailabilityManager(HDMenstrualCycles) _hdmc_menopauseRequirementsForFeatureIdentifier:isAppleWatch:]
 - ___swift_memcpy24_8
-- _objc_msgSend$_hdmc_menopauseRequirementsForFeatureIdentifier:isAppleWatch:
-- _objc_msgSend$initWithFeatureAvailabilityProviding:healthDataSource:countryCodeSource:
-- _objc_msgSend$initWithFeatureAvailabilityProviding:healthDataSource:currentCountryCode:
-- _objc_msgSend$initWithIdentifier:healthStore:options:
-- _objc_msgSend$initWithProfile:cachingSession:gregorianCalendar:morningIndexRange:ascending:options:debugIdentifier:
 - _symbolic So21CHSTimelineControllerC
 CStrings:
 + "HDMCDaySummaryEnumerator.m"

@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/AppMigrationKit.framework/AppMigrationKit`
 
-```diff
+### Section Size Changes
 
- 138.0.0.0.0
--  __TEXT.__text: 0x76288
-+  __TEXT.__text: 0x76290
-   __TEXT.__objc_methlist: 0x7a4
-   __TEXT.__const: 0x4f20
-   __TEXT.__cstring: 0xeb4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x76288` | `0x76290` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_246d3255c -> sub_24770655c : 3296 -> 3304
+~ sub_246bf655c -> sub_2475c955c : 3296 -> 3304
 ```

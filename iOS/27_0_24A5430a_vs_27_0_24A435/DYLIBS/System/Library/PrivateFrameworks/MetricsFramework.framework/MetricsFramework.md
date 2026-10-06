@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MetricsFramework.framework/MetricsFramework`
 
-```diff
+### Section Size Changes
 
- 3600.49.21.11.1
--  __TEXT.__text: 0x10c834
-+  __TEXT.__text: 0x10cc00
-   __TEXT.__objc_methlist: 0x14
-   __TEXT.__const: 0xd120
-   __TEXT.__swift5_typeref: 0x2ef8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10c834` | `0x10cc00` | **`+0x3cc`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_20c2d6194 -> sub_20c971194 : 1828 -> 1868
 ~ sub_20c2e4fe4 -> sub_20c98000c : 1032 -> 1056

@@ -2,22 +2,23 @@
 
 > `/System/Library/PrivateFrameworks/BrailleTranslation.framework/BrailleTranslation`
 
-```diff
+### Section Size Changes
 
- 465.0.0.0.0
--  __TEXT.__text: 0x3236c
-+  __TEXT.__text: 0x32374
-   __TEXT.__objc_methlist: 0x1d1c
-   __TEXT.__const: 0xc50
-   __TEXT.__swift5_typeref: 0x234
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3236c` | `0x32374` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ +[BRLTBrailleString unicodeToDin:] : 452 -> 456
-~ sub_255a85a58 -> sub_25661ea5c : 600 -> 608
-~ sub_255a865ac -> sub_25661f5b8 : 2308 -> 2280
-~ sub_255a86eb0 -> sub_25661fea0 : 624 -> 632
-~ sub_255a87c94 -> sub_256620c8c : 468 -> 460
-~ sub_255a88950 -> sub_256621940 : 1832 -> 1828
-~ sub_255a9ad38 -> sub_256633d24 : 256 -> 264
-~ sub_255aa3110 -> sub_25663c104 : 252 -> 260
-~ sub_255aa34c4 -> sub_25663c4c0 : 360 -> 372
+~ sub_25594fa58 -> sub_2564e7a5c : 600 -> 608
+~ sub_2559505ac -> sub_2564e85b8 : 2308 -> 2280
+~ sub_255950eb0 -> sub_2564e8ea0 : 624 -> 632
+~ sub_255951c94 -> sub_2564e9c8c : 468 -> 460
+~ sub_255952950 -> sub_2564ea940 : 1832 -> 1828
+~ sub_255964d38 -> sub_2564fcd24 : 256 -> 264
+~ sub_25596d110 -> sub_256505104 : 252 -> 260
+~ sub_25596d4c4 -> sub_2565054c0 : 360 -> 372
 ```

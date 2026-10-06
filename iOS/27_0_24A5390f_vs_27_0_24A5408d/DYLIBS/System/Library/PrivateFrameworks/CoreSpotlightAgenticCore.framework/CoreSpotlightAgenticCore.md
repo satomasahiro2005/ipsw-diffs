@@ -2,81 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/CoreSpotlightAgenticCore.framework/CoreSpotlightAgenticCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x409688` | `0x40c254` | **`+0x2bcc`** |
+| `__TEXT.__cstring` | `0x2a819` | `0x2bfc9` | **`+0x17b0`** |
+| `__AUTH_CONST.__const` | `0x34e10` | `0x34ee8` | **`+0xd8`** |
+| `__TEXT.__eh_frame` | `0x193c4` | `0x1949c` | **`+0xd8`** |
+| `__TEXT.__unwind_info` | `0x131b0` | `0x13210` | **`+0x60`** |
+| `__AUTH_CONST.__auth_got` | `0x11d0` | `0x1200` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x800` | `0x830` | **`+0x30`** |
+| `__TEXT.__swift5_reflstr` | `0x4e76` | `0x4ea6` | **`+0x30`** |
+| `__DATA.__data` | `0x11030` | `0x11058` | **`+0x28`** |
+| `__TEXT.__const` | `0xaa9d8` | `0xaa9b8` | **`-0x20`** |
+| `__TEXT.__swift5_typeref` | `0x1124e` | `0x11264` | **`+0x16`** |
+| `__TEXT.__swift5_fieldmd` | `0x12e6c` | `0x12e78` | **`+0xc`** |
+| `__TEXT.__swift5_capture` | `0x2058` | `0x205c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2454.100.0.0.0
--  __TEXT.__text: 0x409688
 +2459.102.0.0.0
-+  __TEXT.__text: 0x40c254
-   __TEXT.__objc_methlist: 0x1bc
--  __TEXT.__const: 0xaa9d8
-+  __TEXT.__const: 0xaa9b8
-   __TEXT.__constg_swiftt: 0xd920
--  __TEXT.__swift5_typeref: 0x1124e
-+  __TEXT.__swift5_typeref: 0x11264
-   __TEXT.__swift5_builtin: 0x780
--  __TEXT.__swift5_reflstr: 0x4e76
--  __TEXT.__swift5_fieldmd: 0x12e6c
-+  __TEXT.__swift5_reflstr: 0x4ea6
-+  __TEXT.__swift5_fieldmd: 0x12e78
-   __TEXT.__swift5_assocty: 0x48b0
-   __TEXT.__swift5_proto: 0x67d0
-   __TEXT.__swift5_types: 0x1784
--  __TEXT.__cstring: 0x2a819
--  __TEXT.__swift5_capture: 0x2058
-+  __TEXT.__cstring: 0x2bfc9
-+  __TEXT.__swift5_capture: 0x205c
-   __TEXT.__swift5_protos: 0x20
-   __TEXT.__swift_as_entry: 0x49c
-   __TEXT.__swift_as_ret: 0x58c
-   __TEXT.__swift_as_cont: 0x4c8
-   __TEXT.__swift5_mpenum: 0xb7c
-   __TEXT.__oslogstring: 0x175
--  __TEXT.__unwind_info: 0x131b0
--  __TEXT.__eh_frame: 0x193c4
-+  __TEXT.__unwind_info: 0x13210
-+  __TEXT.__eh_frame: 0x1949c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0xe8
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x800
-+  __DATA_CONST.__objc_selrefs: 0x830
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x34e10
-+  __AUTH_CONST.__const: 0x34ee8
-   __AUTH_CONST.__objc_const: 0x1e20
--  __AUTH_CONST.__auth_got: 0x11d0
-+  __AUTH_CONST.__auth_got: 0x1200
-   __AUTH.__objc_data: 0x280
-   __AUTH.__data: 0x9928
--  __DATA.__data: 0x11030
-+  __DATA.__data: 0x11058
-   __DATA.__bss: 0xce860
-   __DATA.__common: 0x38
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 27404
--  Symbols:   9206
+-  Symbols:   8976
 -  CStrings:  2090
 +  Functions: 27434
-+  Symbols:   9215
++  Symbols:   8979
 +  CStrings:  2115
- 
 Symbols:
-+ _objc_msgSend$bindVariable
-+ _objc_msgSend$extractField
-+ _objc_msgSend$fromStageId
-+ _objc_msgSend$hasContactsAccess
-+ _objc_msgSend$selector
-+ _objc_msgSend$setTimeZone:
 + _objc_retain_x9
 + _swift_getObjCClassFromMetadata
 + _symbolic SaySo12_CSQueryNodeCG

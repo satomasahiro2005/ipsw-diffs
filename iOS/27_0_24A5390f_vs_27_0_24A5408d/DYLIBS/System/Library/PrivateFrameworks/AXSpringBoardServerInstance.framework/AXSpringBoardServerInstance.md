@@ -2,87 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/AXSpringBoardServerInstance.framework/AXSpringBoardServerInstance`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3d758` | `0x3e368` | **`+0xc10`** |
+| `__TEXT.__oslogstring` | `0x1712` | `0x18b9` | **`+0x1a7`** |
+| `__AUTH.__objc_data` | `0x3e0` | `0x520` | **`+0x140`** |
+| `__AUTH_CONST.__objc_const` | `0x3908` | `0x3a30` | **`+0x128`** |
+| `__DATA_CONST.__const` | `0x1058` | `0x10f8` | **`+0xa0`** |
+| `__DATA_DIRTY.__objc_data` | `0xf50` | `0xeb0` | **`-0xa0`** |
+| `__TEXT.__objc_methlist` | `0x3354` | `0x33d4` | **`+0x80`** |
+| `__TEXT.__gcc_except_tab` | `0xafc` | `0xb6c` | **`+0x70`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2910` | `0x2978` | **`+0x68`** |
+| `__TEXT.__unwind_info` | `0x11e0` | `0x1248` | **`+0x68`** |
+| `__TEXT.__cstring` | `0x6691` | `0x66a5` | **`+0x14`** |
+| `__DATA.__bss` | `0x848` | `0x838` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x860` | `0x870` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x1f0` | `0x200` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xbe0` | `0xbe8` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0xf8` | `0x100` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3237.1.0.0.0
--  __TEXT.__text: 0x3d758
--  __TEXT.__objc_methlist: 0x3354
 +3240.3.0.0.0
-+  __TEXT.__text: 0x3e368
-+  __TEXT.__objc_methlist: 0x33d4
-   __TEXT.__const: 0x5b0
-   __TEXT.__dlopen_cstrs: 0x3ae
-   __TEXT.__swift5_typeref: 0x188
 
-   __TEXT.__swift5_reflstr: 0x34
-   __TEXT.__swift5_assocty: 0x18
-   __TEXT.__swift5_capture: 0x98
--  __TEXT.__cstring: 0x6691
--  __TEXT.__oslogstring: 0x1712
-+  __TEXT.__cstring: 0x66a5
-+  __TEXT.__oslogstring: 0x18b9
-   __TEXT.__swift5_proto: 0x34
-   __TEXT.__swift5_types: 0x20
-   __TEXT.__swift_as_entry: 0x24
-   __TEXT.__swift_as_ret: 0x24
-   __TEXT.__swift_as_cont: 0x20
--  __TEXT.__gcc_except_tab: 0xafc
--  __TEXT.__unwind_info: 0x11e0
-+  __TEXT.__gcc_except_tab: 0xb6c
-+  __TEXT.__unwind_info: 0x1248
-   __TEXT.__eh_frame: 0x320
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1058
--  __DATA_CONST.__objc_classlist: 0x1f0
-+  __DATA_CONST.__const: 0x10f8
-+  __DATA_CONST.__objc_classlist: 0x200
-   __DATA_CONST.__objc_protolist: 0x78
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2910
--  __DATA_CONST.__objc_superrefs: 0xf8
-+  __DATA_CONST.__objc_selrefs: 0x2978
-+  __DATA_CONST.__objc_superrefs: 0x100
-   __DATA_CONST.__objc_arraydata: 0x120
--  __DATA_CONST.__got: 0x860
-+  __DATA_CONST.__got: 0x870
-   __AUTH_CONST.__const: 0xcc0
-   __AUTH_CONST.__cfstring: 0x6ac0
--  __AUTH_CONST.__objc_const: 0x3908
-+  __AUTH_CONST.__objc_const: 0x3a30
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_intobj: 0x528
-   __AUTH_CONST.__objc_arrayobj: 0x60
-   __AUTH_CONST.__objc_dictobj: 0x190
--  __AUTH_CONST.__auth_got: 0xbe0
--  __AUTH.__objc_data: 0x3e0
-+  __AUTH_CONST.__auth_got: 0xbe8
-+  __AUTH.__objc_data: 0x520
-   __AUTH.__data: 0x250
-   __DATA.__objc_ivar: 0x10c
-   __DATA.__data: 0x688
--  __DATA.__bss: 0x848
-+  __DATA.__bss: 0x838
-   __DATA.__common: 0x10
--  __DATA_DIRTY.__objc_data: 0xf50
-+  __DATA_DIRTY.__objc_data: 0xeb0
-   __DATA_DIRTY.__bss: 0xd8
-   - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1357
--  Symbols:   3661
+-  Symbols:   2670
 -  CStrings:  1110
 +  Functions: 1372
-+  Symbols:   3707
++  Symbols:   2704
 +  CStrings:  1116
- 
 Symbols:
 + +[AXSBDeviceApplicationSceneStatusBarBreadcrumbProviderAccessibility _shouldAddBreadcrumbToActivatingSceneEntity:sceneHandle:withTransitionContext:applicationController:]
 + +[AXSB_SBAssistantIslandStageCoordinator _accessibilityPerformValidations:]
@@ -216,20 +169,6 @@ Symbols:
 + ___block_descriptor_48_e8_32s40s_e25_v32?0"NSString"8Q16^B24ls32l8s40l8
 + ___block_descriptor_56_e8_32s40r48r_e5_v8?0ls32l8r40l8r48l8
 + ___block_descriptor_56_e8_32s40r_e5_v8?0lr40l8u48l8s32l8
-+ _objc_msgSend$_axActiveRemoteTransientOverlayIsGameCenterAccessPointOnly
-+ _objc_msgSend$_handleRecognitionOptionsAlert:
-+ _objc_msgSend$dictionaryWithDictionary:
-+ _objc_msgSend$handleActivityWillDismissFromBottomSwipeGesture
-+ _objc_msgSend$hasActiveSessionMatchingPredicate:options:
-+ _objc_msgSend$isShownWithinWindowScene:
-+ _objc_msgSend$null
-+ _objc_msgSend$performSynchronousWritingBlock:
-+ _objc_msgSend$reduceAmbientFullScreenLiveActivityWithServerInstance:
-+ _objc_msgSend$sb_initialClassName
-+ _objc_msgSend$sb_usesSceneBasedRemoteAlert
-+ _objc_msgSend$sceneIdentityForApplication:
-+ _objc_msgSend$stageState
-+ _objc_msgSend$transitionToCompactOverlayModeWithCompletion:
 - +[AXSBDeviceApplicationSceneStatusBarBreadcrumbProviderAccessibility _shouldAddBreadcrumbToActivatingSceneEntity:sceneHandle:withTransitionContext:]
 - +[AXSB_SBSceneManagerSafeCategory _accessibilityPerformValidations:]
 - +[AXSB_SBSceneManagerSafeCategory(SafeCategory) safeCategoryBaseClass]
@@ -328,8 +267,6 @@ Symbols:
 - ___148+[AXSBDeviceApplicationSceneStatusBarBreadcrumbProviderAccessibility _shouldAddBreadcrumbToActivatingSceneEntity:sceneHandle:withTransitionContext:]_block_invoke
 - ___148+[AXSBDeviceApplicationSceneStatusBarBreadcrumbProviderAccessibility _shouldAddBreadcrumbToActivatingSceneEntity:sceneHandle:withTransitionContext:]_block_invoke_2
 - __uiController.AX_SBUIController
-- _objc_msgSend$_appearState
-- _objc_msgSend$newSceneIdentityForApplication:
 CStrings:
 + "0@`"
 + "AXSBServer: ambient fullscreen Live Activity is presented but SBActivityAmbientViewController does not respond to transitionToCompactOverlayModeWithCompletion: (selector may have drifted on this train)"

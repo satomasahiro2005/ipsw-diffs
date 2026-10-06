@@ -2,24 +2,20 @@
 
 > `/System/Library/Frameworks/PushKit.framework/PushKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4988` | `0x4928` | **`-0x60`** |
+
+### Other Changes
+
 ```diff
 
- 111.100.1.0.0
--  __TEXT.__text: 0x4988
-+  __TEXT.__text: 0x4928
-   __TEXT.__objc_methlist: 0x798
-   __TEXT.__const: 0x48
-   __TEXT.__gcc_except_tab: 0x84
-
-   - /System/Library/Frameworks/Security.framework/Security
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 162
--  Symbols:   501
+-  Symbols:   415
 +  Functions: 161
-+  Symbols:   498
-   CStrings:  42
- 
++  Symbols:   412
 Symbols:
 - ___73-[PKPushRegistry voipPayloadReceived:mustPostCall:withCompletionHandler:]_block_invoke_7
 - _dispatch_after

@@ -2,127 +2,63 @@
 
 > `/System/Library/PrivateFrameworks/WorkflowUI.framework/WorkflowUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2da1a8` | `0x2d8520` | **`-0x1c88`** |
+| `__AUTH_CONST.__objc_const` | `0x1c8b0` | `0x1b910` | **`-0xfa0`** |
+| `__TEXT.__objc_methlist` | `0xd8d4` | `0xcfe4` | **`-0x8f0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8690` | `0x82c8` | **`-0x3c8`** |
+| `__DATA.__bss` | `0x17bb0` | `0x17f20` | **`+0x370`** |
+| `__AUTH_CONST.__cfstring` | `0x4d80` | `0x4a80` | **`-0x300`** |
+| `__AUTH.__objc_data` | `0x8ee0` | `0x8c08` | **`-0x2d8`** |
+| `__TEXT.__const` | `0x1e228` | `0x1e4a8` | **`+0x280`** |
+| `__TEXT.__cstring` | `0xb567` | `0xb2ee` | **`-0x279`** |
+| `__AUTH_CONST.__const` | `0x12b00` | `0x12d50` | **`+0x250`** |
+| `__TEXT.__constg_swiftt` | `0xa41c` | `0xa55c` | **`+0x140`** |
+| `__TEXT.__swift5_fieldmd` | `0x69f4` | `0x6af0` | **`+0xfc`** |
+| `__DATA.__data` | `0xce10` | `0xcd20` | **`-0xf0`** |
+| `__TEXT.__swift5_reflstr` | `0x6083` | `0x6153` | **`+0xd0`** |
+| `__TEXT.__eh_frame` | `0x73d4` | `0x7464` | **`+0x90`** |
+| `__DATA.__objc_ivar` | `0x9e8` | `0x95c` | **`-0x8c`** |
+| `__DATA_CONST.__const` | `0x23e0` | `0x2360` | **`-0x80`** |
+| `__TEXT.__swift5_capture` | `0x3f38` | `0x3fb4` | **`+0x7c`** |
+| `__DATA_CONST.__got` | `0x2c08` | `0x2b90` | **`-0x78`** |
+| `__TEXT.__unwind_info` | `0xb670` | `0xb600` | **`-0x70`** |
+| `__TEXT.__swift5_assocty` | `0x1c50` | `0x1cb0` | **`+0x60`** |
+| `__DATA_CONST.__objc_classlist` | `0x9d8` | `0x988` | **`-0x50`** |
+| `__DATA_CONST.__objc_superrefs` | `0x4a0` | `0x450` | **`-0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x10a8` | `0x1058` | **`-0x50`** |
+| `__AUTH_CONST.__objc_intobj` | `0x5b8` | `0x570` | **`-0x48`** |
+| `__TEXT.__swift5_typeref` | `0x297f0` | `0x29826` | **`+0x36`** |
+| `__DATA_CONST.__objc_protolist` | `0x5b0` | `0x588` | **`-0x28`** |
+| `__TEXT.__gcc_except_tab` | `0xc34` | `0xc18` | **`-0x1c`** |
+| `__TEXT.__swift5_proto` | `0xc84` | `0xca0` | **`+0x1c`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x120` | `0x108` | **`-0x18`** |
+| `__DATA_CONST.__objc_arraydata` | `0x1b0` | `0x198` | **`-0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x3890` | `0x3880` | **`-0x10`** |
+| `__DATA_DIRTY.__data` | `0x2a18` | `0x2a28` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x7b8` | `0x7c4` | **`+0xc`** |
+| `__DATA_CONST.__objc_catlist` | `0x120` | `0x118` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__oslogstring`
+
+### Other Changes
+
 ```diff
 
 -5025.0.25.103.0
--  __TEXT.__text: 0x2da1a8 sha256:a8ede383b8feebcd1ce281b050efcbf49e27f9b25b034c07cd002b8a4bf92332
--  __TEXT.__objc_methlist: 0xd8d4 sha256:9448947b68d007d6abc24a964a59f78ef1b42edee470ed24b5e20511015d71ee
--  __TEXT.__const: 0x1e228 sha256:e776259d559b636e0bc89d55579d981106678166a30d7bdfb5335b735cf505e0
 +5028.0.21.0.0
-+  __TEXT.__text: 0x2d8520 sha256:d3edb27f0febae7fc2ad0658e193e6f408b2d4ea6e45a75f2129d976abe37186
-+  __TEXT.__objc_methlist: 0xcfe4 sha256:8a894b7cd6287fee4d81ed70ebf3269eba0971056e55f7c9b2d74dd35bedc795
-+  __TEXT.__const: 0x1e4a8 sha256:cbb751e736ad8d73eb8586cf4dabb7670caef2ef9c8c305dd3642708a8d81eee
-   __TEXT.__dlopen_cstrs: 0x22e sha256:c0e038551a82d074d54c6824fce8afef53ad3c15a80e9dfb5e2f18a4fde6379e
--  __TEXT.__constg_swiftt: 0xa41c sha256:58bad1af73eb38a90c45b231e7398a0a171c52ab7df23dc3674716f58c9ec462
--  __TEXT.__swift5_typeref: 0x297f0 sha256:a879de54849d17719a97975d666bc35508e6016ff82cb9815407c53a17656663
--  __TEXT.__swift5_builtin: 0x58c sha256:cb13d01d36da5edb7f04b6072dae719a4ce2ad1ce25b7568a6576ee11998095d
--  __TEXT.__swift5_reflstr: 0x6083 sha256:8cd9fcd4dca92a5920dadffb9cbf30e296f015d3575e19f1a12edf5e18b2d82e
--  __TEXT.__swift5_fieldmd: 0x69f4 sha256:7ba3739e2619d939c1ab7798a057bb05ede071cd07d9011acdd988bc6387ef86
--  __TEXT.__swift5_assocty: 0x1c50 sha256:c39c23e05fbe75366db6f3376cb7cf7a8fde787ba436561abfaf6d052a4a972b
--  __TEXT.__swift5_proto: 0xc84 sha256:1ee067cd42d33a663ace4a0ce5ba57e8897c913a04ecbad527ec9f47b40b9414
--  __TEXT.__swift5_types: 0x7b8 sha256:2666d8368bb98985c525c9b73f083f4072d077698faa371089c2e06cceb25905
--  __TEXT.__cstring: 0xb567 sha256:0153a0b3e4111335e5acdf874b25bb7018a59510b25f5068d1b08586bd4bb175
--  __TEXT.__oslogstring: 0x270d sha256:64b1f858f07e110faea2a0256b18941368aa47a94ee086b07f43a60f9c8e82d2
--  __TEXT.__swift5_capture: 0x3f38 sha256:27bc2994694e32cdd25891ceea90d644e609dd3a83586bca334cda1af7787d3b
--  __TEXT.__swift_as_entry: 0x1a8 sha256:5f259842bd7a7d7a4f821ad6cfbda704bbc0df67d4afb61317188b25b66d0d1a
--  __TEXT.__swift_as_cont: 0x390 sha256:a59a33e984430388073d29af4c2d02f6d002071578642913ff124e30d0181628
--  __TEXT.__swift5_protos: 0x84 sha256:41b8525bf6f8910deff88f5efecc24d65c7c2d10dd6d833a3b7ac7107fa2d16a
--  __TEXT.__swift5_mpenum: 0x294 sha256:28c20db3c3f2661c4b1d595a99a2d9cf7df24482c79971f2879bb2166a04dedd
--  __TEXT.__swift_as_ret: 0x188 sha256:104e4e3ea3e439ac0f269585b355274e339d2ac0cc2032c591854f171b4ce771
--  __TEXT.__gcc_except_tab: 0xc34 sha256:b1c27ef579b3ca5f25680393dadcc477fc7c56da3511e32ed20246fd85552dd1
-+  __TEXT.__constg_swiftt: 0xa55c sha256:af8cc3b803a0b12214e14f20bb52cba17ff181167a4b3170a85717430a67f8ad
-+  __TEXT.__swift5_typeref: 0x29826 sha256:ec14326a7c3cef629538308444543380962a2700fff74fa41bd5f29c6bf4d6b9
-+  __TEXT.__swift5_builtin: 0x58c sha256:c2527ebcec755704539efc8f6ccfdb669975f6e97c392ff2f1c42fe36cf3b063
-+  __TEXT.__swift5_reflstr: 0x6153 sha256:859d6ceb7458ad10df6d052a75df30d8ce612ea505813a4bdd48b84121b33b18
-+  __TEXT.__swift5_fieldmd: 0x6af0 sha256:efe37cf9e3e6803fb514eea3cfa6a9bc8df1819d4a1e5bbaf18a09511a3404db
-+  __TEXT.__swift5_assocty: 0x1cb0 sha256:837234e1d8f9357c2aca34c8f90f7e3542e5631f4faf996df01d2947179a66bb
-+  __TEXT.__swift5_proto: 0xca0 sha256:762664ce214cd862f19b5265fa70f8b39710b8a83c43e476935177aaaf6943ab
-+  __TEXT.__swift5_types: 0x7c4 sha256:3de47a3caa1a88c83b82e63de1cdf5c296d029deec9f565e7ea35b990f70bd9a
-+  __TEXT.__cstring: 0xb2ee sha256:453c09de4a561eff69d26ee80db99eb7203e5d555b45fcf6d906d85e0cfd04a9
-+  __TEXT.__oslogstring: 0x270d sha256:809e51375e08577b44b342212dca92d658afc19b74afdeedfe3e5b4a7fa665b6
-+  __TEXT.__swift5_capture: 0x3fb4 sha256:aae77bea0ed863c507d98291b2435ace28e9ea6aad79c319a02a9813c52667fd
-+  __TEXT.__swift_as_entry: 0x1a8 sha256:0c09bf2c4e5773bea2220e9812e99fe5f781dfe7f46aa45b2e7ecad94f2c69d9
-+  __TEXT.__swift_as_cont: 0x390 sha256:f3470a2c92cf3705e8e4e4deb2b8f69aaccaeec71d51141bf67ec21a9d85ac06
-+  __TEXT.__swift5_protos: 0x84 sha256:b85e77e19ccced68cc9336ed1fb2cb1548e73ca623f7c7b9afc862b926ca6468
-+  __TEXT.__swift5_mpenum: 0x294 sha256:2464907004ebff622e176bb31f219e3ce010da377fc982b9b3f64c444b339ffd
-+  __TEXT.__swift_as_ret: 0x188 sha256:0d02d42bfe5f4da7ff92fbfad76cbde84da11809015c71238d15a0fe792c81c0
-+  __TEXT.__gcc_except_tab: 0xc18 sha256:cc3ba8b8e74ae2d7b2fa4536491efd686730fd0c056d7189e398da0fd3873fc5
-   __TEXT.__ustring: 0x30c sha256:fa75f2621f132dc0dcd527550e4f759f866b9a2e4c7abd94103f0ef1c046a125
--  __TEXT.__unwind_info: 0xb670 sha256:eab96e438ebcd27f361651d227bfd8fd796b9ad54f0630a7639538a233934e39
--  __TEXT.__eh_frame: 0x73d4 sha256:88badb97c2a8fe2c415a7f90fcc92b6d521fba902410e14e6c0684432bb382f8
-+  __TEXT.__unwind_info: 0xb600 sha256:1c0f4ac736d0151feba6f07194e43c739536c27f295374594af7a22d3c04286a
-+  __TEXT.__eh_frame: 0x7464 sha256:49d13dc4bdba3a360df9e4fe472ba4eb143b5805ece5f1b022417634e9f767b1
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x23e0 sha256:ef41d427ce33413b887035521791822fc6b3697bd88f0ec4db6b941d1e515929
--  __DATA_CONST.__objc_classlist: 0x9d8 sha256:92f05d20b38d69247c12916275fbe0b5fceb991ce4e7b97a18979a3bb57a4dfe
--  __DATA_CONST.__objc_catlist: 0x120 sha256:0f065c7684e41a7497f9c30e0fb2c66c0afe15224fb86e6b9821121c09e7143d
--  __DATA_CONST.__objc_protolist: 0x5b0 sha256:2af13f5615c051de91167ee2f18231a91b4425deb9c428919e263c056d036bd6
-+  __DATA_CONST.__const: 0x2360 sha256:84b2e4e1aabc9d14a50a99c9c27823f30322a2f83f145d59fa3cb13130822a8f
-+  __DATA_CONST.__objc_classlist: 0x988 sha256:fc5d397705b107b16532845cf28ffc6983b7fdc8e9295897c56347eed61af68b
-+  __DATA_CONST.__objc_catlist: 0x118 sha256:fe0aa617de88acc741692adc6ba7c3cb42ec920ecb78b35a0d7d2d9873338b1d
-+  __DATA_CONST.__objc_protolist: 0x588 sha256:8b7d75a56d97b9e7ac7ca95ea82263938eba63cdbcd112bfc92f446361ba1197
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0x8690 sha256:ceace01167a5c4099a9fe27479215dbfc2e26dbccc90d507a4391b0184f9d9a3
--  __DATA_CONST.__objc_protorefs: 0x208 sha256:6e6405aeb1130994cf3164d4105e785872c8946b2cca81c191e815c3e445ef97
--  __DATA_CONST.__objc_superrefs: 0x4a0 sha256:492733023dfa24099a13ceb34f40d0df872fb669cea9f48140e1e6f70d0fe7eb
--  __DATA_CONST.__objc_arraydata: 0x1b0 sha256:a958b4e5061ddc787fc05a9a7df2df87639fe5124d24e023a4f1d40287710fe4
--  __DATA_CONST.__got: 0x2c08 sha256:f4584385b051fa752a5aea9cbb096d1df98d88913b0f14992ea09cb76d358365
--  __AUTH_CONST.__const: 0x12b00 sha256:264bf71acee11850cb3aa02d0c4d4246268bb2a4b70fd086140e33f799e25699
--  __AUTH_CONST.__cfstring: 0x4d80 sha256:0e89cebf38482ccecdecbc281b0f3682d1f41bf2d1a12bd772a64d724025f3a8
--  __AUTH_CONST.__objc_const: 0x1c8b0 sha256:60bea5f5b1828fb1019a8bee6e464f85897d091fbcffe5934498007d8cec2833
--  __AUTH_CONST.__objc_intobj: 0x5b8 sha256:b5a469c45672d0dd3bc70f8f1ebc5e216f1e33cbd52faeefc69bcff0053af21b
--  __AUTH_CONST.__objc_arrayobj: 0x120 sha256:de94daa386e74c9a93982959e5d4669a4cfa8d157790e96a2440a980f5019be7
--  __AUTH_CONST.__objc_doubleobj: 0x50 sha256:f60b87237fc940a4563d10769190398cc1cd0736a73e48ae5e1c40a0141f3410
--  __AUTH_CONST.__auth_got: 0x3890 sha256:6ee35866a0bc39970ebadc496aaf2dcc41a3178320b727b979cf5492fc36cba6
--  __AUTH.__objc_data: 0x8ee0 sha256:e72ab807f9bd764c52df93c86b894a62afc5698c3e302fb97a1bb6a1ec612b7e
--  __AUTH.__data: 0x6628 sha256:c70552a362b150c47d7ad529307e63f4c41e4fb8addd07117bb2abd62a932831
--  __DATA.__objc_ivar: 0x9e8 sha256:2ce58ab40dfba3c74babbf4121be4f01b05e6081a25f7c5a80091fe836702d5f
--  __DATA.__data: 0xce10 sha256:ca71582bbd082711436bde34b3830149a96c277cdc70d292a3a3e47657e6e29a
--  __DATA.__objc_stublist: 0x8 sha256:dffcbdf24e0d4254e267bab71307dff9c991bb52096c675e40d471fb402ef1f2
--  __DATA.__bss: 0x17bb0 sha256:e6da5040cd854e914ae0ea9d85f741213ab077415c7498f2d41e0cf39ddb4b4d
-+  __DATA_CONST.__objc_selrefs: 0x82c8 sha256:4dc180da858a350a81e6a7de2ec464e17fd2320db0ee277e1d383daa8a94e78c
-+  __DATA_CONST.__objc_protorefs: 0x208 sha256:f9e59f90c2e22dffe9c4fbb223b5557ce9c7c728123a93b0a2fa8643bf0689a4
-+  __DATA_CONST.__objc_superrefs: 0x450 sha256:0a17ab65bccfdf6556a64bef216d9f49d5756da441d6d9a5d242682b512a5cbe
-+  __DATA_CONST.__objc_arraydata: 0x198 sha256:c309f2b5ae7c3c71d0a0b2169c46c89b5427ffc51918bc8bffe2b797c1578b8a
-+  __DATA_CONST.__got: 0x2b90 sha256:77bd6311061e8658539f49e00d0b464bc78cd7b20bb116f9d2d49c4b74248c74
-+  __AUTH_CONST.__const: 0x12d50 sha256:e1e2f44e6a29fa492efd51546351b9bc1bb276344eea2fe6a8400b4b7120427b
-+  __AUTH_CONST.__cfstring: 0x4a80 sha256:f6b0ded95e85cf650c303acb2000105c1e35423787f2ffc63e60792888ba2e4f
-+  __AUTH_CONST.__objc_const: 0x1b910 sha256:c383390018d16eed80d7c7b477b21c7c696837ae26feb72d34d46cfc98f44257
-+  __AUTH_CONST.__objc_intobj: 0x570 sha256:0db370766d3e2038b174001c92b4836d50483b91b5894dc26742e275853d12a1
-+  __AUTH_CONST.__objc_arrayobj: 0x108 sha256:365777cb588118f05cd28dbf8ac8e641ba2e0c09d03348e13a637b3750e1784b
-+  __AUTH_CONST.__objc_doubleobj: 0x50 sha256:8f92aa51d87a21c3bb14031cd993decbff714ec1379ecd86d4f04ead12395a04
-+  __AUTH_CONST.__auth_got: 0x3880 sha256:30b3cc21908e328640ea8de98a9dc3403b37bdc65e20bd661ab16278de72de57
-+  __AUTH.__objc_data: 0x8c08 sha256:2c5b167b31492475bdb9b198287e7d5856ab92724f1c34cc6db8833779ae774b
-+  __AUTH.__data: 0x6628 sha256:2844c747433a8db2c4c5944cc9fb9f9138785616e9c8eeeb4d6f098c4a191283
-+  __DATA.__objc_ivar: 0x95c sha256:a46cbc6b83c0f6c26a7e9da5734af84c0325a4d552e419328dd309d2a2e691c1
-+  __DATA.__data: 0xcd20 sha256:6aee790ba902cf0762b71acff014ae7d28557d6cc9892faff3b08a4936e224a2
-+  __DATA.__objc_stublist: 0x8 sha256:08daba6da8ab944d151979490791da577dabd9b0544cd5d87ad97535a60ace21
-+  __DATA.__bss: 0x17f20 sha256:a2257d0b831472465deab7dfb108b51325f7fb2955040c05f37c264dd7aaa61a
-   __DATA.__common: 0x160 sha256:ef6c72a2d354ccc85df070364251f5a9d0d963b33a6a998c8fd3a99c98dcd8f6
--  __DATA_DIRTY.__objc_data: 0x10a8 sha256:b90a2d675ac561b40d126ab78d7af0e42f8ed41c8b8ea955ccbf9cd345e32ee6
--  __DATA_DIRTY.__data: 0x2a18 sha256:980b87ec45c9401423aa67746a811ef4a62722584513dd665a7f09a562c85e88
-+  __DATA_DIRTY.__objc_data: 0x1058 sha256:58db6a3edcbd209337b920b1fe35acca1bc4edace250f95bfa5a54c63f52e7f4
-+  __DATA_DIRTY.__data: 0x2a28 sha256:8af27fab7dcd3386c06533e79fa153d70036ea3790599a556c92c716a6118bd2
-   __DATA_DIRTY.__bss: 0x1cd0 sha256:5d7fe6254dd9f0207868060ddd6bc04ddfe407216acada2793e509047c2e2330
-   __DATA_DIRTY.__common: 0xc8 sha256:6d9c54dee5660c46886f32d80e57e9dd0ffa57ee0cd2a762b036d9c8e0c3a33a
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: EACC3598-8536-39A8-8FE6-EFBE8FC0C625
 -  Functions: 20698
--  Symbols:   29651
--  CStrings:  2271
-+  UUID: 58D2609A-E26A-379D-8275-EC8D8B6C0282
+-  Symbols:   12508
+-  CStrings:  1660
 +  Functions: 20673
-+  Symbols:   29289
-+  CStrings:  2228
- 
++  Symbols:   12214
++  CStrings:  1641
 Symbols:
 + GCC_except_table1088
 + GCC_except_table1423
@@ -171,22 +107,6 @@ Symbols:
 + GCC_except_table906
 + GCC_except_table910
 + GCC_except_table961
-+ _HFTriggerIconFactoryFunction.4530
-+ _HFTriggerUISummaryFunction.4539
-+ _HUTriggerIconViewFunction.14398
-+ _HomeLibrary.sLib.15898
-+ _HomeLibrary.sLib.1674
-+ _HomeLibrary.sLib.4533
-+ _HomeLibrary.sOnce.15893
-+ _HomeLibrary.sOnce.1669
-+ _HomeLibrary.sOnce.4526
-+ _HomeUILibrary.sLib.14403
-+ _HomeUILibrary.sLib.15892
-+ _HomeUILibrary.sLib.4223
-+ _HomeUILibrary.sOnce.14393
-+ _HomeUILibrary.sOnce.15888
-+ _HomeUILibrary.sOnce.4216
-+ _MobileTimerLibraryCore.frameworkLibrary.4955
 + _OBJC_CLASS_$_UIGraphicsImageRenderer
 + _OBJC_CLASS_$_UIMenuElement
 + _OBJC_CLASS_$_WFUnifiedTriggerKey
@@ -197,88 +117,12 @@ Symbols:
 + _OUTLINED_FUNCTION_267
 + _OUTLINED_FUNCTION_268
 + _OUTLINED_FUNCTION_269
-+ _PassKitUILibraryCore.frameworkLibrary.18785
 + __OBJC_$_CATEGORY_INSTANCE_METHODS_UIFont_$_WFDynamicType
 + __OBJC_$_CATEGORY_UIFont_$_WFDynamicType
-+ __PROTOCOLS__TtC10WorkflowUI17LibraryDataSource.87
-+ ___50-[WFCompactHostingViewController cancelAndDismiss]_block_invoke.248
-+ ___52-[WFSystemOverlayViewController setEmbeddedPlatter:]_block_invoke.318
-+ ___52-[WFSystemOverlayViewController setEmbeddedPlatter:]_block_invoke_2.319
-+ ___52-[WFSystemOverlayViewController setEmbeddedPlatter:]_block_invoke_3.320
-+ ___52-[WFSystemOverlayViewController setEmbeddedPlatter:]_block_invoke_4.321
-+ ___52-[WFSystemOverlayViewController setEmbeddedPlatter:]_block_invoke_5.323
-+ ___52-[WFSystemOverlayViewController setEmbeddedPlatter:]_block_invoke_6.324
-+ ___54-[WFCompactHostingViewController handlePendingRequest]_block_invoke.330
-+ ___65-[WFSystemOverlayViewController transitionFromPlatter:toPlatter:]_block_invoke.334
-+ ___65-[WFSystemOverlayViewController transitionFromPlatter:toPlatter:]_block_invoke_2.336
-+ ___HomeLibrary_block_invoke.15896
-+ ___HomeLibrary_block_invoke.1672
-+ ___HomeLibrary_block_invoke.4532
-+ ___HomeUILibrary_block_invoke.14401
-+ ___HomeUILibrary_block_invoke.15890
-+ ___HomeUILibrary_block_invoke.4221
-+ ___MobileTimerLibraryCore_block_invoke.4956
-+ ___PassKitUILibraryCore_block_invoke.18786
-+ ___block_literal_global.10585
-+ ___block_literal_global.11071
-+ ___block_literal_global.11447
-+ ___block_literal_global.12239
-+ ___block_literal_global.12611
-+ ___block_literal_global.13283
-+ ___block_literal_global.13572
-+ ___block_literal_global.13729
-+ ___block_literal_global.13870
-+ ___block_literal_global.1405
-+ ___block_literal_global.14213
-+ ___block_literal_global.14394
-+ ___block_literal_global.15857
-+ ___block_literal_global.16135
-+ ___block_literal_global.1667
-+ ___block_literal_global.1796
-+ ___block_literal_global.19118
-+ ___block_literal_global.2353
-+ ___block_literal_global.237.9134
-+ ___block_literal_global.2586
-+ ___block_literal_global.2890
-+ ___block_literal_global.2978
-+ ___block_literal_global.3424
-+ ___block_literal_global.3603
-+ ___block_literal_global.4217
-+ ___block_literal_global.447
-+ ___block_literal_global.451
-+ ___block_literal_global.4520
-+ ___block_literal_global.4996
-+ ___block_literal_global.5255
-+ ___block_literal_global.5767
-+ ___block_literal_global.681
-+ ___block_literal_global.7047
-+ ___block_literal_global.7350
-+ ___block_literal_global.7830
-+ ___block_literal_global.8073
-+ ___block_literal_global.9155
-+ ___block_literal_global.9768
-+ ___swift__destructor.136
-+ ___swift__destructor.49
-+ ___swift__destructor.52
-+ ___swift_closure_destructor.106
-+ ___swift_closure_destructor.109
-+ ___swift_closure_destructor.115
-+ ___swift_closure_destructor.118
 + ___swift_closure_destructor.125Tm
 + ___swift_closure_destructor.132Tm
-+ ___swift_closure_destructor.136
 + ___swift_closure_destructor.136Tm
-+ ___swift_closure_destructor.139
 + ___swift_closure_destructor.140Tm
-+ ___swift_closure_destructor.142
-+ ___swift_closure_destructor.157
-+ ___swift_closure_destructor.167
-+ ___swift_closure_destructor.176
-+ ___swift_closure_destructor.214
-+ ___swift_closure_destructor.218
-+ ___swift_closure_destructor.226
-+ ___swift_closure_destructor.244
-+ ___swift_closure_destructor.261
 + ___swift_closure_destructor.37Tm
 + ___swift_closure_destructor.55Tm
 + ___swift_closure_destructor.73Tm
@@ -291,64 +135,12 @@ Symbols:
 + _associated conformance 10WorkflowUI16AutomationFilterOs12CaseIterableAA8AllCasessADP_Sl
 + _associated conformance 10WorkflowUI16AutomationFilterOs12IdentifiableAA2IDsADP_SH
 + _associated conformance 10WorkflowUI21FilterToolbarModifier33_C19CE08113141D3DFD99E26B3EF8CA35LLVyxG05SwiftB004ViewE0AA4BodyAfGP_AF0O0
-+ _audit_stringMobileTimer.4958
-+ _audit_stringPassKitUI.18791
-+ _block_copy_helper.115
-+ _block_copy_helper.120
-+ _block_copy_helper.39
-+ _block_copy_helper.47
-+ _block_copy_helper.53
-+ _block_copy_helper.69
-+ _block_copy_helper.75
-+ _block_descriptor.117
-+ _block_descriptor.122
-+ _block_descriptor.41
-+ _block_descriptor.49
-+ _block_descriptor.55
-+ _block_descriptor.71
-+ _block_descriptor.77
-+ _block_destroy_helper.116
-+ _block_destroy_helper.121
-+ _block_destroy_helper.40
-+ _block_destroy_helper.48
-+ _block_destroy_helper.54
-+ _block_destroy_helper.70
-+ _block_destroy_helper.76
-+ _classHFTriggerIconFactory.4528
-+ _classHFTriggerUISummary.4537
-+ _classHUTriggerIconView.14396
-+ _getHFTriggerIconFactoryClass.4523
-+ _getHFTriggerUISummaryClass.13735
-+ _getHFTriggerUISummaryClass.4522
-+ _getHUTriggerIconViewClass.14389
-+ _get_witness_table 10WorkflowUI22NameIconEditableObjectRzl05SwiftB015ModifiedContentVyAEyAC014_ViewModifier_I0VyAA06Editord6PickerJ0V15GroupBackground33_01595F130B1950C9456A9E56CFC0E88CLLVyx_GGAC01_o5StyleK0VyAC5ColorVGGAC11_ClipEffectVyAC16RoundedRectangleVGGAC0J0HPAtCA_HPAnCA_HPyHC_AsC0jK0HPyHCHC_AyCA0_HPyHCHC.145
-+ _get_witness_table 10WorkflowUI22NameIconEditableObjectRzl05SwiftB015ModifiedContentVyAEyAEyAC4ViewPACE5alert4item7contentQrAC7BindingVyqd__SgG_AC5AlertVqd__XEts12IdentifiableRd__lFQOyAC6VStackVyAC05TupleI0VyAUyAEyAA0ad6PickerJ0VAC14_PaddingLayoutVG_AC7DividerVQPGSg_AUyAEyAEyAA05ColorsJ0VAC31AccessibilityAttachmentModifierVGAYG_A0_QPGSgAEyAA05GlyphsJ0VA6_GSgQPGG_0A6UICore0O5ErrorVQo_AC022_EnvironmentKeyWritingZ0VyAC11ControlSizeOGGAC06_FrameU0VGAYGAcFHPA29_AcFHPA26_AcFHPqd0__AcFHD3_A20_HO_A25_AC0jZ0HPyHCHC_A28_ACA31_HPyHCHC_AyCA31_HPyHCHC.69
-+ _get_witness_table 10WorkflowUI22NameIconEditableObjectRzlqd__05SwiftB04ViewHD2_AcDPACE23scrollDismissesKeyboardyQrAC06ScrolljK4ModeVFQOyAC15ModifiedContentVyAC0lH6ReaderVyAC0lH0VyAC6VStackVyAC05TupleO0VyAC012_ConditionalO0VyAJyAJyAJyAA0ad6PickerH0VAC16_FlexFrameLayoutVGAC08_PaddingW0VGAA06EditordtH0V15GroupBackground33_01595F130B1950C9456A9E56CFC0E88CLLVyx_GGAJyAJyAJyAJyAA0d7PreviewH0VAC31AccessibilityAttachmentModifierVGAXGA_GA6_GGSg_AJyAJyAJyAA05ColortH0VA11_GAC24_BackgroundStyleModifierVyAC5ColorVGGAC11_ClipEffectVyAC16RoundedRectangleVGGSgAJyAJyAJyAJyAA05Glypht6CachedH0VA11_GA6_GAXGAA33ContainerMinimumDimensionModifierA4_LLVGSgQPGGGGA_G_Qo_HO.71
-+ _get_witness_table 7SwiftUI14GeometryReaderVyAA15NavigationStackVyAA0E4PathVAA4ViewPAAE11safeAreaBar4edge9alignment7spacing7contentQrAA12VerticalEdgeO_AA19HorizontalAlignmentV12CoreGraphics7CGFloatVSgqd__yXEtAaHRd__lFQOyAA15ModifiedContentVyAiAE7toolbarANQrqd__yXE_tAA07ToolbarX0Rd__lFQOyAiAE5sheet11isPresented9onDismissANQrAA7BindingVySbG_yycSgqd__yctAaHRd__lFQOyAiAEA_A0_A1_ANQrA4__A5_qd__yctAaHRd__lFQOyAA06ScrollH0VyAA05TupleX0VyAXyAXyAA6VStackVyA9_yAXyAXyAA4TextVAA30_EnvironmentKeyWritingModifierVyAA04TextS0OGGAA14_PaddingLayoutVG_AA012_ConditionalX0VyAXyAXyA19_A15_ySiSgGGAA16_FixedSizeLayoutVGAXyAXyAXyA19_A15_yAA5ColorVSgGGA26_GA29_GGQPGGA21_GA21_G_AA6SpacerVAA6HStackVyA9_yA44__AXy08WorkflowB015ShortcutChicletVAA12_FrameLayoutVGA44_QPGGAXyAXyA11_yA9_yAXyAXyA13_AA31AccessibilityAttachmentModifierVGA21_GSg_AXyAiAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyA46_yA9_yAXy18WorkflowUIServices04IconH0VA21_G_A13_QPGG_Qo_AA16_FlexFrameLayoutVGSgAA7ForEachVySaySo18WFWorkflowTypeNameaGSSAXyAiAEA60_A61_QrA63__tFQOyA46_yA9_yAXyA67_A21_G_A13_QPGSgG_Qo_A72_GGAXyAiAEA60_A61_QrA63__tFQOyA46_yA81_G_Qo_A72_GSgQPGGA21_GA21_GSgQPGG_A47_022GalleryShortcutActionsH0VQo__A47_013GalleryImportH0VQo__A9_yAA0Z4ItemVyytAA6ButtonVyAA18DefaultButtonLabelVGG_A105_yytAXyAiAE7popoverA0_16attachmentAnchor05arrowQ0ANQrA4__AA23PopoverAttachmentAnchorOAA0Q0OSgqd__yctAaHRd__lFQOyA107_yAA5ImageVG_A47_019GalleryShareHostingH033_C1BB828C9559C4A7511CBBEB5C4BF8C8LLVQo_A56_GGQPGQo_AA25_AppearanceActionModifierVG_AiAE18scrollPocketTag_v15styleQrAA0K16MagicPocketStyleV_tFQOyA11_yA9_yA95__AXyAXyAXyAXyAiAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyA107_yAXyAXyAA5GroupVyA24_yAA5LabelVyA13_A121_GA13_GGA15_yAA4FontVSgGGA72_GG_AA28BorderedProminentButtonStyleVQo_A15_yAA13AnyShapeStyleVSgGGA15_yAA11ControlSizeOGGA21_GA21_GQPGG_Qo_Qo_GGAaHHPyHC.2
-+ _get_witness_table 7SwiftUI15ModifiedContentVyAA4ViewPAAE5alert_11isPresented10presenting7actions7messageQrqd___AA7BindingVySbGqd_2_Sgqd_0_qd_2_XEqd_1_qd_2_XEtSyRd__AaDRd_0_AaDRd_1_r2_lFQOyAeAE15navigationTitleyQrqd__SyRd__lFQOyACyAA5GroupVyAA012_ConditionalD0Vy08WorkflowB0017TriggerEmptyStateE0VAA06ScrollE6ReaderVyAeAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyACyAA4ListVySo09WFUnifiedR3KeyCAA05TupleD0VyAeAE16headerProminenceyQrAA10ProminenceOFQOyAA7SectionVyAA4TextVAA7ForEachVySayAT27ConfiguredAutomationRowDataVGA3_ACyAeAE11contextMenu9menuItemsQrqd__yXE_tAaDRd__lFQOyAA6IDViewVyAeAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyAA6ButtonVyACyAT013AutomationRowE0VAA01_D13ShapeModifierVyAA9RectangleVGGG_AA16PlainButtonStyleVQo_A3_G_A5_yA25_yA12_G_AA7DividerVAA6ToggleVyA12_GA44_SgA45_A41_QPGSgQo_AA21_TraitWritingModifierVyAA25ListRowBackgroundTraitKeyVGGGAA0sE0VG_Qo_Sg_A14_ySaySS3key_SaySo13HFTriggerItemCG5valuetGSSAeAEA6_yQrA8_FQOyA10_yA12_A14_yA64_A63_A27_GA57_G_Qo_SgGSgQPGGAA06_InsetE8ModifierVyACyAA5ColorVAA12_FrameLayoutVGGG_A3_SgQo_GGGAA25_AppearanceActionModifierVG_SSQo__SSA39_A12_AT26AutomationTransactionErrorOQo_AT21FilterToolbarModifier33_C19CE08113141D3DFD99E26B3EF8CA35LLVyAT16AutomationFilterOGGAaDHPqd0__AaDHD5_A95_HO_A101_AA0E8ModifierHPyHCHC.130
-+ _get_witness_table 7SwiftUI15ModifiedContentVyACy12HomeUICommon15IconViewWrapperVAA24_ForegroundStyleModifierVyAA017HierarchicalShapeK0VGGAA16_FlexFrameLayoutVGAA0H0HPAlaPHPAfaPHPyHC_AkA0hL0HPyHCHC_AnaQHPyHCHC.33
-+ _get_witness_table 7SwiftUI15ModifiedContentVyACyAA6HStackVyAA05TupleD0VyAA6VStackVyAGyAEyAGyAA7AnyViewV_ACyAA0I0PAAE10fontWeightyQrAA4FontV0K0VSgFQOyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAPSgGG_Qo_AWyAA5ColorVSgGG08WorkflowB0011ActionIconsI033_5D0F3421E3A1794A86EFE17D97B07D1ALLVAA6SpacerVQPGG_ACyAA4TextVAWySiSgGGA17_QPGG_A10_ACyAmAE11toggleStyleyQrqd__AA11ToggleStyleRd__lFQOyAA6ToggleVyA14_G_AA17SwitchToggleStyleVQo_AA023AccessibilityAttachmentQ0VGQPGGAA14_PaddingLayoutVGA34_GAaLHPA35_AaLHPA32_AaLHPyHC_A34_AA0iQ0HPyHCHC_A34_AAA37_HPyHCHC.11
-+ _get_witness_table 7SwiftUI19_ConditionalContentVyACy18WorkflowUIServices8IconViewVAA6HStackVyAA7ForEachVySaySo07HFImageG10DescriptorCGSS0eB00m5ImageH033_5D0F3421E3A1794A86EFE17D97B07D1ALLVGGGAA05EmptyH0VGAA0H0HPAtaXHPAfaXHPyHC_AsaXHPyHCHC_AvaXHPyHCHC.34
-+ _get_witness_table 7SwiftUI6ZStackVyAA12TupleContentVyAA4ViewPAAE22containerRelativeFrame_9alignmentQrAA4AxisO3SetV_AA9AlignmentVtFQOyAA5ColorV_Qo__AA01_f9Modifier_E0Vy08WorkflowB0025ContainerMinimumDimensionO033_01595F130B1950C9456A9E56CFC0E88CLLVGQPGGAaFHPyHC.146
-+ _get_witness_table SHRzlqd0__7SwiftUI4ViewHD3_AaBPAAE21navigationItemAdaptoryQrqd__AA012UINavigationeF0Rd__lFQOyAA01_C16Modifier_ContentVy08WorkflowB0013FilterToolbarH033_C19CE08113141D3DFD99E26B3EF8CA35LLVyxGG_AH0k9BarButtonF0AJLLVyxGQo_HO.8
-+ _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE5sheet11isPresented9onDismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAcAEAdefGQrAJ_AKqd__yctAaBRd__lFQOyAA14GeometryReaderVyAcAE7toolbarAGQrqd__yXE_tAA14ToolbarContentRd__lFQOyAcAEAdefGQrAJ_AKqd__yctAaBRd__lFQOyAA08ModifiedO0VyAQyAQyAA6VStackVyAA05TupleO0VyAQyAQyAA4TextVAA30_EnvironmentKeyWritingModifierVyAA0S9AlignmentOGGAA14_PaddingLayoutVG_AA012_ConditionalO0VyAQyAQyAQyA1_AYyAA5ColorVSgGGAYySiSgGGAA010_FixedSizeZ0VGA17_GSgAA6SpacerVAQyAA6HStackVyAUyA21__AQy08WorkflowB015ShortcutChicletVAA06_FrameZ0VGA21_QPGGA3_GA21_AQyASyAUyAQyAQyAQyAwA023AccessibilityAttachmentW0VGA3_GA3_GSg_AQyAcAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyA23_yAUyAQyAQy18WorkflowUIServices04IconC0VA3_GA3_G_AWQPGG_Qo_AA010_FlexFrameZ0VGSgAA7ForEachVySay14WorkflowUICore23WorkflowTypeDisplayable_pGSSSgAQyAcAEA39_A40_QrA42__tFQOyA23_yA48_SgG_Qo_A52_GGA54_QPGGA3_GAQyAQyAcAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyAA6ButtonVyAQyAQyAA5GroupVyA6_yAA5LabelVyAwA5ImageVGAWGGAYyAA4FontVSgGGA52_GG_AA28BorderedProminentButtonStyleVQo_AYyAA13AnyShapeStyleVSgGGAYyAA11ControlSizeOGGQPGGA3_GA3_GAA016_BackgroundStyleW0VyA8_GG_A24_014ReportShortcutC0VQo__AUyAA0N4ItemVyytA72_yAWGG_A115_QPGQo_G_A24_022GalleryShortcutActionsC0VQo__A24_013GalleryImportC0VQo_HO.22
-+ _initHFTriggerIconFactory.4525
-+ _initHFTriggerUISummary.4535
-+ _initHUTriggerIconView.14392
++ _get_witness_table 7SwiftUI14GeometryReaderVyAA15NavigationStackVyAA0E4PathVAA4ViewPAAE11safeAreaBar4edge9alignment7spacing7contentQrAA12VerticalEdgeO_AA19HorizontalAlignmentV12CoreGraphics7CGFloatVSgqd__yXEtAaHRd__lFQOyAA15ModifiedContentVyAiAE7toolbarANQrqd__yXE_tAA07ToolbarX0Rd__lFQOyAiAE5sheet11isPresented9onDismissANQrAA7BindingVySbG_yycSgqd__yctAaHRd__lFQOyAiAEA_A0_A1_ANQrA4__A5_qd__yctAaHRd__lFQOyAA06ScrollH0VyAA05TupleX0VyAXyAXyAA6VStackVyA9_yAXyAXyAA4TextVAA30_EnvironmentKeyWritingModifierVyAA04TextS0OGGAA14_PaddingLayoutVG_AA012_ConditionalX0VyAXyAXyA19_A15_ySiSgGGAA16_FixedSizeLayoutVGAXyAXyAXyA19_A15_yAA5ColorVSgGGA26_GA29_GGQPGGA21_GA21_G_AA6SpacerVAA6HStackVyA9_yA44__AXy08WorkflowB015ShortcutChicletVAA12_FrameLayoutVGA44_QPGGAXyAXyA11_yA9_yAXyAXyA13_AA31AccessibilityAttachmentModifierVGA21_GSg_AXyAiAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyA46_yA9_yAXy18WorkflowUIServices04IconH0VA21_G_A13_QPGG_Qo_AA16_FlexFrameLayoutVGSgAA7ForEachVySaySo18WFWorkflowTypeNameaGSSAXyAiAEA60_A61_QrA63__tFQOyA46_yA9_yAXyA67_A21_G_A13_QPGSgG_Qo_A72_GGAXyAiAEA60_A61_QrA63__tFQOyA46_yA81_G_Qo_A72_GSgQPGGA21_GA21_GSgQPGG_A47_022GalleryShortcutActionsH0VQo__A47_013GalleryImportH0VQo__A9_yAA0Z4ItemVyytAA6ButtonVyAA18DefaultButtonLabelVGG_A105_yytAXyAiAE7popoverA0_16attachmentAnchor05arrowQ0ANQrA4__AA23PopoverAttachmentAnchorOAA0Q0OSgqd__yctAaHRd__lFQOyA107_yAA5ImageVG_A47_019GalleryShareHostingH033_C1BB828C9559C4A7511CBBEB5C4BF8C8LLVQo_A56_GGQPGQo_AA25_AppearanceActionModifierVG_AiAE18scrollPocketTag_v15styleQrAA0K16MagicPocketStyleV_tFQOyA11_yA9_yA95__AXyAXyAXyAXyAiAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyA107_yAXyAXyAA5GroupVyA24_yAA5LabelVyA13_A121_GA13_GGA15_yAA4FontVSgGGA72_GG_AA28BorderedProminentButtonStyleVQo_A15_yAA13AnyShapeStyleVSgGGA15_yAA11ControlSizeOGGA21_GA21_GQPGG_Qo_Qo_GGAaHHPyHC
++ _get_witness_table 7SwiftUI15ModifiedContentVyAA4ViewPAAE5alert_11isPresented10presenting7actions7messageQrqd___AA7BindingVySbGqd_2_Sgqd_0_qd_2_XEqd_1_qd_2_XEtSyRd__AaDRd_0_AaDRd_1_r2_lFQOyAeAE15navigationTitleyQrqd__SyRd__lFQOyACyAA5GroupVyAA012_ConditionalD0Vy08WorkflowB0017TriggerEmptyStateE0VAA06ScrollE6ReaderVyAeAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyACyAA4ListVySo09WFUnifiedR3KeyCAA05TupleD0VyAeAE16headerProminenceyQrAA10ProminenceOFQOyAA7SectionVyAA4TextVAA7ForEachVySayAT27ConfiguredAutomationRowDataVGA3_ACyAeAE11contextMenu9menuItemsQrqd__yXE_tAaDRd__lFQOyAA6IDViewVyAeAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyAA6ButtonVyACyAT013AutomationRowE0VAA01_D13ShapeModifierVyAA9RectangleVGGG_AA16PlainButtonStyleVQo_A3_G_A5_yA25_yA12_G_AA7DividerVAA6ToggleVyA12_GA44_SgA45_A41_QPGSgQo_AA21_TraitWritingModifierVyAA25ListRowBackgroundTraitKeyVGGGAA0sE0VG_Qo_Sg_A14_ySaySS3key_SaySo13HFTriggerItemCG5valuetGSSAeAEA6_yQrA8_FQOyA10_yA12_A14_yA64_A63_A27_GA57_G_Qo_SgGSgQPGGAA06_InsetE8ModifierVyACyAA5ColorVAA12_FrameLayoutVGGG_A3_SgQo_GGGAA25_AppearanceActionModifierVG_SSQo__SSA39_A12_AT26AutomationTransactionErrorOQo_AT21FilterToolbarModifier33_C19CE08113141D3DFD99E26B3EF8CA35LLVyAT16AutomationFilterOGGAaDHPqd0__AaDHD5_A95_HO_A101_AA0E8ModifierHPyHCHC
++ _get_witness_table 7SwiftUI15ModifiedContentVyACyAA6HStackVyAA05TupleD0VyAA6VStackVyAGyAEyAGyAA7AnyViewV_ACyAA0I0PAAE10fontWeightyQrAA4FontV0K0VSgFQOyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAPSgGG_Qo_AWyAA5ColorVSgGG08WorkflowB0011ActionIconsI033_5D0F3421E3A1794A86EFE17D97B07D1ALLVAA6SpacerVQPGG_ACyAA4TextVAWySiSgGGA17_QPGG_A10_ACyAmAE11toggleStyleyQrqd__AA11ToggleStyleRd__lFQOyAA6ToggleVyA14_G_AA17SwitchToggleStyleVQo_AA023AccessibilityAttachmentQ0VGQPGGAA14_PaddingLayoutVGA34_GAaLHPA35_AaLHPA32_AaLHPyHC_A34_AA0iQ0HPyHCHC_A34_AAA37_HPyHCHC
++ _get_witness_table SHRzlqd0__7SwiftUI4ViewHD3_AaBPAAE21navigationItemAdaptoryQrqd__AA012UINavigationeF0Rd__lFQOyAA01_C16Modifier_ContentVy08WorkflowB0013FilterToolbarH033_C19CE08113141D3DFD99E26B3EF8CA35LLVyxGG_AH0k9BarButtonF0AJLLVyxGQo_HO
++ _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE5sheet11isPresented9onDismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAcAEAdefGQrAJ_AKqd__yctAaBRd__lFQOyAA14GeometryReaderVyAcAE7toolbarAGQrqd__yXE_tAA14ToolbarContentRd__lFQOyAcAEAdefGQrAJ_AKqd__yctAaBRd__lFQOyAA08ModifiedO0VyAQyAQyAA6VStackVyAA05TupleO0VyAQyAQyAA4TextVAA30_EnvironmentKeyWritingModifierVyAA0S9AlignmentOGGAA14_PaddingLayoutVG_AA012_ConditionalO0VyAQyAQyAQyA1_AYyAA5ColorVSgGGAYySiSgGGAA010_FixedSizeZ0VGA17_GSgAA6SpacerVAQyAA6HStackVyAUyA21__AQy08WorkflowB015ShortcutChicletVAA06_FrameZ0VGA21_QPGGA3_GA21_AQyASyAUyAQyAQyAQyAwA023AccessibilityAttachmentW0VGA3_GA3_GSg_AQyAcAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyA23_yAUyAQyAQy18WorkflowUIServices04IconC0VA3_GA3_G_AWQPGG_Qo_AA010_FlexFrameZ0VGSgAA7ForEachVySay14WorkflowUICore23WorkflowTypeDisplayable_pGSSSgAQyAcAEA39_A40_QrA42__tFQOyA23_yA48_SgG_Qo_A52_GGA54_QPGGA3_GAQyAQyAcAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyAA6ButtonVyAQyAQyAA5GroupVyA6_yAA5LabelVyAwA5ImageVGAWGGAYyAA4FontVSgGGA52_GG_AA28BorderedProminentButtonStyleVQo_AYyAA13AnyShapeStyleVSgGGAYyAA11ControlSizeOGGQPGGA3_GA3_GAA016_BackgroundStyleW0VyA8_GG_A24_014ReportShortcutC0VQo__AUyAA0N4ItemVyytA72_yAWGG_A115_QPGQo_G_A24_022GalleryShortcutActionsC0VQo__A24_013GalleryImportC0VQo_HO
 + _keypath_get_selector_isEligibleForAutomaticDeletion
-+ _objc_msgSend$composeViewController:workflowDidChangeEligibilityForAutomaticDeletion:
-+ _objc_msgSend$composeViewControllerRequestedClose:
-+ _objc_msgSend$didFinalizeDismissal
-+ _objc_msgSend$fillRect:
-+ _objc_msgSend$finalizeDismissal
-+ _objc_msgSend$imageWithActions:
-+ _objc_msgSend$initWithSize:
-+ _objc_msgSend$initWithTitle:style:
-+ _objc_msgSend$initWithTrigger:parameter:question:defaultState:
-+ _objc_msgSend$initWithWorkflow:home:triggerInputType:isNewWorkflow:hideRunnerToolbar:
-+ _objc_msgSend$isDestructive
-+ _objc_msgSend$setDidFinalizeDismissal:
-+ _objc_msgSend$setPrimaryAction:
 + _symbolic SSxc
 + _symbolic Say_____G 10WorkflowUI16AutomationFilterO
 + _symbolic SayxG
@@ -649,22 +441,6 @@ Symbols:
 - GCC_except_table975
 - GCC_except_table979
 - _CGContextFillRect
-- _HFTriggerIconFactoryFunction.4873
-- _HFTriggerUISummaryFunction.4882
-- _HUTriggerIconViewFunction.15494
-- _HomeLibrary.sLib.1671
-- _HomeLibrary.sLib.17031
-- _HomeLibrary.sLib.4876
-- _HomeLibrary.sOnce.1666
-- _HomeLibrary.sOnce.17028
-- _HomeLibrary.sOnce.4869
-- _HomeUILibrary.sLib.15499
-- _HomeUILibrary.sLib.17027
-- _HomeUILibrary.sLib.4560
-- _HomeUILibrary.sOnce.15489
-- _HomeUILibrary.sOnce.17023
-- _HomeUILibrary.sOnce.4553
-- _MobileTimerLibraryCore.frameworkLibrary.5300
 - _OBJC_CLASS_$_NSCountedSet
 - _OBJC_CLASS_$_UITabBar
 - _OBJC_CLASS_$_UITabBarItem
@@ -727,7 +503,6 @@ Symbols:
 - _OBJC_METACLASS_$_WFGlyphView
 - _OBJC_METACLASS_$_WFIconComposePreviewView
 - _OBJC_METACLASS_$_WFIconComposeViewController
-- _PassKitUILibraryCore.frameworkLibrary.19913
 - _UIAccessibilityIsVoiceOverRunning
 - _UIAccessibilityTraitImage
 - _UIGraphicsBeginImageContext
@@ -816,220 +591,32 @@ Symbols:
 - __OBJC_PROTOCOL_$_WFColorPickerDelegate
 - __OBJC_PROTOCOL_$_WFGlyphPickerDelegate
 - __OBJC_PROTOCOL_$_WFGlyphPickerTabBarDelegate
-- __PROTOCOLS__TtC10WorkflowUI17LibraryDataSource.84
 - ___42-[WFGlyphPicker traitCollectionDidChange:]_block_invoke
 - ___44-[WFGlyphPicker indexPathForGlyphCharacter:]_block_invoke
 - ___45-[WFIconComposeViewController pickedSegment:]_block_invoke
-- ___50-[WFCompactHostingViewController cancelAndDismiss]_block_invoke.233
-- ___52-[WFSystemOverlayViewController setEmbeddedPlatter:]_block_invoke.303
-- ___52-[WFSystemOverlayViewController setEmbeddedPlatter:]_block_invoke_2.304
-- ___52-[WFSystemOverlayViewController setEmbeddedPlatter:]_block_invoke_3.305
-- ___52-[WFSystemOverlayViewController setEmbeddedPlatter:]_block_invoke_4.306
-- ___52-[WFSystemOverlayViewController setEmbeddedPlatter:]_block_invoke_5.308
-- ___52-[WFSystemOverlayViewController setEmbeddedPlatter:]_block_invoke_6.309
-- ___54-[WFCompactHostingViewController handlePendingRequest]_block_invoke.315
 - ___54-[WFGlyphPickerTabBar initWithTabNames:tabCharacters:]_block_invoke
-- ___65-[WFSystemOverlayViewController transitionFromPlatter:toPlatter:]_block_invoke.319
-- ___65-[WFSystemOverlayViewController transitionFromPlatter:toPlatter:]_block_invoke_2.321
 - ___67-[WFGlyphPicker collectionView:willDisplayCell:forItemAtIndexPath:]_block_invoke
-- ___Block_byref_object_copy_.18574
-- ___Block_byref_object_dispose_.18575
-- ___HomeLibrary_block_invoke.1669
-- ___HomeLibrary_block_invoke.17030
-- ___HomeLibrary_block_invoke.4875
-- ___HomeUILibrary_block_invoke.15497
-- ___HomeUILibrary_block_invoke.17026
-- ___HomeUILibrary_block_invoke.4558
-- ___MobileTimerLibraryCore_block_invoke.5301
-- ___PassKitUILibraryCore_block_invoke.19914
 - ___block_descriptor_40_e8_32s_e23_v32?0"UIView"8Q16^B24ls32l8
 - ___block_descriptor_40_e8_32s_e31_q24?0"NSNumber"8"NSNumber"16ls32l8
 - ___block_descriptor_42_e8_32r_e24_v32?0"NSArray"8Q16^B24lr32l8
 - ___block_descriptor_48_e8_32s40s_e21_24?0"NSNumber"8Q16ls32l8s40l8
-- ___block_literal_global.10276
-- ___block_literal_global.11146
-- ___block_literal_global.11632
-- ___block_literal_global.12062
-- ___block_literal_global.13077
-- ___block_literal_global.13449
-- ___block_literal_global.1402
-- ___block_literal_global.14133
-- ___block_literal_global.14661
-- ___block_literal_global.14818
-- ___block_literal_global.14966
-- ___block_literal_global.15309
-- ___block_literal_global.15490
-- ___block_literal_global.1664
-- ___block_literal_global.16992
-- ___block_literal_global.17258
-- ___block_literal_global.20246
-- ___block_literal_global.2057
-- ___block_literal_global.237.9641
-- ___block_literal_global.2635
-- ___block_literal_global.2869
-- ___block_literal_global.3170
-- ___block_literal_global.3258
-- ___block_literal_global.3729
-- ___block_literal_global.3912
-- ___block_literal_global.446
-- ___block_literal_global.450
-- ___block_literal_global.4554
-- ___block_literal_global.4863
-- ___block_literal_global.5341
-- ___block_literal_global.5601
-- ___block_literal_global.6223
-- ___block_literal_global.677
-- ___block_literal_global.7550
-- ___block_literal_global.7853
-- ___block_literal_global.8336
-- ___block_literal_global.8581
-- ___block_literal_global.9662
-- ___swift__destructor.130
-- ___swift__destructor.51
-- ___swift__destructor.54
 - ___swift_closure_destructor.100Tm
-- ___swift_closure_destructor.113
-- ___swift_closure_destructor.116
-- ___swift_closure_destructor.120
 - ___swift_closure_destructor.123Tm
-- ___swift_closure_destructor.126
 - ___swift_closure_destructor.126Tm
-- ___swift_closure_destructor.135
 - ___swift_closure_destructor.138Tm
 - ___swift_closure_destructor.184Tm
-- ___swift_closure_destructor.213
-- ___swift_closure_destructor.216
-- ___swift_closure_destructor.220
 - ___swift_closure_destructor.239Tm
 - ___swift_closure_destructor.245Tm
-- ___swift_closure_destructor.252
-- ___swift_closure_destructor.266
-- ___swift_closure_destructor.275
-- ___swift_closure_destructor.50
 - ___swift_closure_destructor.57Tm
 - ___swift_closure_destructor.66Tm
 - ___swift_closure_destructor.97Tm
 - ___swift_memcpy72_8
 - ___unnamed_39
-- _audit_stringMobileTimer.5303
-- _audit_stringPassKitUI.19919
-- _block_copy_helper.71
-- _block_copy_helper.77
-- _block_descriptor.73
-- _block_descriptor.79
-- _block_destroy_helper.72
-- _block_destroy_helper.78
-- _classHFTriggerIconFactory.4871
-- _classHFTriggerUISummary.4880
-- _classHUTriggerIconView.15492
-- _getHFTriggerIconFactoryClass.4866
-- _getHFTriggerUISummaryClass.14824
-- _getHFTriggerUISummaryClass.4865
-- _getHUTriggerIconViewClass.15485
-- _get_witness_table 10WorkflowUI22NameIconEditableObjectRzl05SwiftB015ModifiedContentVyAEyAC014_ViewModifier_I0VyAA06Editord6PickerJ0V15GroupBackground33_01595F130B1950C9456A9E56CFC0E88CLLVyx_GGAC01_o5StyleK0VyAC5ColorVGGAC11_ClipEffectVyAC16RoundedRectangleVGGAC0J0HPAtCA_HPAnCA_HPyHC_AsC0jK0HPyHCHC_AyCA0_HPyHCHC.146
-- _get_witness_table 10WorkflowUI22NameIconEditableObjectRzl05SwiftB015ModifiedContentVyAEyAEyAC4ViewPACE5alert4item7contentQrAC7BindingVyqd__SgG_AC5AlertVqd__XEts12IdentifiableRd__lFQOyAC6VStackVyAC05TupleI0VyAUyAEyAA0ad6PickerJ0VAC14_PaddingLayoutVG_AC7DividerVQPGSg_AUyAEyAEyAA05ColorsJ0VAC31AccessibilityAttachmentModifierVGAYG_A0_QPGSgAEyAA05GlyphsJ0VA6_GSgQPGG_0A6UICore0O5ErrorVQo_AC022_EnvironmentKeyWritingZ0VyAC11ControlSizeOGGAC06_FrameU0VGAYGAcFHPA29_AcFHPA26_AcFHPqd0__AcFHD3_A20_HO_A25_AC0jZ0HPyHCHC_A28_ACA31_HPyHCHC_AyCA31_HPyHCHC.70
-- _get_witness_table 10WorkflowUI22NameIconEditableObjectRzlqd__05SwiftB04ViewHD2_AcDPACE23scrollDismissesKeyboardyQrAC06ScrolljK4ModeVFQOyAC15ModifiedContentVyAC0lH6ReaderVyAC0lH0VyAC6VStackVyAC05TupleO0VyAC012_ConditionalO0VyAJyAJyAJyAA0ad6PickerH0VAC16_FlexFrameLayoutVGAC08_PaddingW0VGAA06EditordtH0V15GroupBackground33_01595F130B1950C9456A9E56CFC0E88CLLVyx_GGAJyAJyAJyAJyAA0d7PreviewH0VAC31AccessibilityAttachmentModifierVGAXGA_GA6_GGSg_AJyAJyAJyAA05ColortH0VA11_GAC24_BackgroundStyleModifierVyAC5ColorVGGAC11_ClipEffectVyAC16RoundedRectangleVGGSgAJyAJyAJyAJyAA05Glypht6CachedH0VA11_GA6_GAXGAA33ContainerMinimumDimensionModifierA4_LLVGSgQPGGGGA_G_Qo_HO.72
-- _get_witness_table 7SwiftUI14GeometryReaderVyAA15NavigationStackVyAA0E4PathVAA4ViewPAAE11safeAreaBar4edge9alignment7spacing7contentQrAA12VerticalEdgeO_AA19HorizontalAlignmentV12CoreGraphics7CGFloatVSgqd__yXEtAaHRd__lFQOyAA15ModifiedContentVyAiAE7toolbarANQrqd__yXE_tAA07ToolbarX0Rd__lFQOyAiAE5sheet11isPresented9onDismissANQrAA7BindingVySbG_yycSgqd__yctAaHRd__lFQOyAiAEA_A0_A1_ANQrA4__A5_qd__yctAaHRd__lFQOyAA06ScrollH0VyAA05TupleX0VyAXyAXyAA6VStackVyA9_yAXyAXyAA4TextVAA30_EnvironmentKeyWritingModifierVyAA04TextS0OGGAA14_PaddingLayoutVG_AA012_ConditionalX0VyAXyAXyA19_A15_ySiSgGGAA16_FixedSizeLayoutVGAXyAXyAXyA19_A15_yAA5ColorVSgGGA26_GA29_GGQPGGA21_GA21_G_AA6SpacerVAA6HStackVyA9_yA44__AXy08WorkflowB015ShortcutChicletVAA12_FrameLayoutVGA44_QPGGAXyAXyA11_yA9_yAXyAXyA13_AA31AccessibilityAttachmentModifierVGA21_GSg_AXyAiAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyA46_yA9_yAXy18WorkflowUIServices04IconH0VA21_G_A13_QPGG_Qo_AA16_FlexFrameLayoutVGSgAA7ForEachVySaySo18WFWorkflowTypeNameaGSSAXyAiAEA60_A61_QrA63__tFQOyA46_yA9_yAXyA67_A21_G_A13_QPGSgG_Qo_A72_GGQPGGA21_GA21_GSgQPGG_A47_022GalleryShortcutActionsH0VQo__A47_013GalleryImportH0VQo__A9_yAA0Z4ItemVyytAA6ButtonVyAA18DefaultButtonLabelVGG_A101_yytAXyAiAE7popoverA0_16attachmentAnchor05arrowQ0ANQrA4__AA23PopoverAttachmentAnchorOAA0Q0OSgqd__yctAaHRd__lFQOyA103_yAA5ImageVG_A47_019GalleryShareHostingH033_C1BB828C9559C4A7511CBBEB5C4BF8C8LLVQo_A56_GGQPGQo_AA25_AppearanceActionModifierVG_AiAE18scrollPocketTag_v15styleQrAA0K16MagicPocketStyleV_tFQOyA11_yA9_yA91__AXyAXyAXyAXyAiAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyA103_yAXyAXyAA5GroupVyA24_yAA5LabelVyA13_A117_GA13_GGA15_yAA4FontVSgGGA72_GG_AA28BorderedProminentButtonStyleVQo_A15_yAA13AnyShapeStyleVSgGGA15_yAA11ControlSizeOGGA21_GA21_GQPGG_Qo_Qo_GGAaHHPyHC.2
-- _get_witness_table 7SwiftUI15ModifiedContentVyACy12HomeUICommon15IconViewWrapperVAA24_ForegroundStyleModifierVyAA017HierarchicalShapeK0VGGAA16_FlexFrameLayoutVGAA0H0HPAlaPHPAfaPHPyHC_AkA0hL0HPyHCHC_AnaQHPyHCHC.32
-- _get_witness_table 7SwiftUI15ModifiedContentVyACyAA6HStackVyAA6VStackVyAA05TupleD0VyAEyAIyAA7AnyViewV_ACyAA0I0PAAE10fontWeightyQrAA4FontV0K0VSgFQOyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAPSgGG_Qo_AWyAA5ColorVSgGG08WorkflowB0011ActionIconsI033_5D0F3421E3A1794A86EFE17D97B07D1ALLVAA6SpacerVQPGG_ACyAA4TextVAWySiSgGGAA012_ConditionalD0VyA17_A17_GQPGGGAA14_PaddingLayoutVGA25_GAaLHPA26_AaLHPA23_AaLHPyHC_A25_AA0iQ0HPyHCHC_A25_AAA28_HPyHCHC.11
-- _get_witness_table 7SwiftUI19_ConditionalContentVyACy18WorkflowUIServices8IconViewVAA6HStackVyAA7ForEachVySaySo07HFImageG10DescriptorCGSS0eB00m5ImageH033_5D0F3421E3A1794A86EFE17D97B07D1ALLVGGGAA05EmptyH0VGAA0H0HPAtaXHPAfaXHPyHC_AsaXHPyHCHC_AvaXHPyHCHC.33
-- _get_witness_table 7SwiftUI6ZStackVyAA12TupleContentVyAA4ViewPAAE22containerRelativeFrame_9alignmentQrAA4AxisO3SetV_AA9AlignmentVtFQOyAA5ColorV_Qo__AA01_f9Modifier_E0Vy08WorkflowB0025ContainerMinimumDimensionO033_01595F130B1950C9456A9E56CFC0E88CLLVGQPGGAaFHPyHC.147
-- _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE5sheet11isPresented9onDismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAcAEAdefGQrAJ_AKqd__yctAaBRd__lFQOyAA14GeometryReaderVyAcAE7toolbarAGQrqd__yXE_tAA14ToolbarContentRd__lFQOyAcAEAdefGQrAJ_AKqd__yctAaBRd__lFQOyAA08ModifiedO0VyAQyAQyAA6VStackVyAA05TupleO0VyAQyAQyAA4TextVAA30_EnvironmentKeyWritingModifierVyAA0S9AlignmentOGGAA14_PaddingLayoutVG_AA012_ConditionalO0VyAQyAQyAQyA1_AYyAA5ColorVSgGGAYySiSgGGAA010_FixedSizeZ0VGA17_GSgAA6SpacerVAQyAA6HStackVyAUyA21__AQy08WorkflowB015ShortcutChicletVAA06_FrameZ0VGA21_QPGGA3_GA21_AQyASyAUyAQyAQyAQyAwA023AccessibilityAttachmentW0VGA3_GA3_GSg_AQyAcAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyA23_yAUyAQyAQy18WorkflowUIServices04IconC0VA3_GA3_G_AWQPGG_Qo_AA010_FlexFrameZ0VGSgAA7ForEachVySay14WorkflowUICore23WorkflowTypeDisplayable_pGSSSgAQyAcAEA39_A40_QrA42__tFQOyA23_yA48_SgG_Qo_A52_GGQPGGA3_GAQyAQyAcAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyAA6ButtonVyAQyAQyAA5GroupVyA6_yAA5LabelVyAwA5ImageVGAWGGAYyAA4FontVSgGGA52_GG_AA28BorderedProminentButtonStyleVQo_AYyAA13AnyShapeStyleVSgGGAYyAA11ControlSizeOGGQPGGA3_GA3_GAA016_BackgroundStyleW0VyA8_GG_A24_014ReportShortcutC0VQo__AUyAA0N4ItemVyytA72_yAWGG_A115_QPGQo_G_A24_022GalleryShortcutActionsC0VQo__A24_013GalleryImportC0VQo_HO.22
-- _get_witness_table qd0__7SwiftUI4ViewHD5_AaBPAAE5alert_11isPresented10presenting7actions7messageQrqd___AA7BindingVySbGqd_2_Sgqd_0_qd_2_XEqd_1_qd_2_XEtSyRd__AaBRd_0_AaBRd_1_r2_lFQOyAcAE15navigationTitleyQrqd__SyRd__lFQOyAA15ModifiedContentVyAA5GroupVyAA012_ConditionalN0Vy08WorkflowB0017TriggerEmptyStateC0VAA06ScrollC6ReaderVyAcAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAOyAA4ListVySSAA05TupleN0VyAcAE16headerProminenceyQrAA10ProminenceOFQOyAA7SectionVyAA4TextVAA7ForEachVySayAT27ConfiguredAutomationRowDataVGSSAOyAcAE12swipeActions4edge15allowsFullSwipe7contentQrAA14HorizontalEdgeO_Sbqd__yXEtAaBRd__lFQOyAcAE11contextMenu9menuItemsQrqd__yXE_tAaBRd__lFQOyAA6IDViewVyAOyAcAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyAA6ButtonVyAT013AutomationRowC0VG_AA25NavigationLinkButtonStyleVys5NeverOGQo_AA01_N13ShapeModifierVyAA9RectangleVGGSSG_ASyA3_yA29_yA10_G_AA6PickerVyA10_0Q3Kit019WFUnifiedAutomationR10EnablementOA12_ySayA49_05WFNewR0C010EnablementT0OGA55_AcAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyA10__A51_Qo_SgGGAA6ToggleVyA10_GSgSgAA7DividerVA46_QPGA46_GSgQo__A29_yAA5LabelVyA10_AA5ImageVGGQo_AA21_TraitWritingModifierVyAA25ListRowBackgroundTraitKeyVGGGAA0sC0VG_Qo_Sg_A12_ySaySS3key_SaySo13HFTriggerItemCG5valuetGSSAcAEA4_yQrA6_FQOyA8_yA10_A12_yA96_A95_A31_GA89_G_Qo_SgGSgQPGGAA06_InsetC8ModifierVyAOyAA5ColorVAA12_FrameLayoutVGGG_SSSgQo_GGGAA25_AppearanceActionModifierVG_SSQo__SSA46_A10_AT26AutomationTransactionErrorOQo_HO.121
-- _initHFTriggerIconFactory.4868
-- _initHFTriggerUISummary.4878
-- _initHUTriggerIconView.15488
+- _get_witness_table 7SwiftUI14GeometryReaderVyAA15NavigationStackVyAA0E4PathVAA4ViewPAAE11safeAreaBar4edge9alignment7spacing7contentQrAA12VerticalEdgeO_AA19HorizontalAlignmentV12CoreGraphics7CGFloatVSgqd__yXEtAaHRd__lFQOyAA15ModifiedContentVyAiAE7toolbarANQrqd__yXE_tAA07ToolbarX0Rd__lFQOyAiAE5sheet11isPresented9onDismissANQrAA7BindingVySbG_yycSgqd__yctAaHRd__lFQOyAiAEA_A0_A1_ANQrA4__A5_qd__yctAaHRd__lFQOyAA06ScrollH0VyAA05TupleX0VyAXyAXyAA6VStackVyA9_yAXyAXyAA4TextVAA30_EnvironmentKeyWritingModifierVyAA04TextS0OGGAA14_PaddingLayoutVG_AA012_ConditionalX0VyAXyAXyA19_A15_ySiSgGGAA16_FixedSizeLayoutVGAXyAXyAXyA19_A15_yAA5ColorVSgGGA26_GA29_GGQPGGA21_GA21_G_AA6SpacerVAA6HStackVyA9_yA44__AXy08WorkflowB015ShortcutChicletVAA12_FrameLayoutVGA44_QPGGAXyAXyA11_yA9_yAXyAXyA13_AA31AccessibilityAttachmentModifierVGA21_GSg_AXyAiAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyA46_yA9_yAXy18WorkflowUIServices04IconH0VA21_G_A13_QPGG_Qo_AA16_FlexFrameLayoutVGSgAA7ForEachVySaySo18WFWorkflowTypeNameaGSSAXyAiAEA60_A61_QrA63__tFQOyA46_yA9_yAXyA67_A21_G_A13_QPGSgG_Qo_A72_GGQPGGA21_GA21_GSgQPGG_A47_022GalleryShortcutActionsH0VQo__A47_013GalleryImportH0VQo__A9_yAA0Z4ItemVyytAA6ButtonVyAA18DefaultButtonLabelVGG_A101_yytAXyAiAE7popoverA0_16attachmentAnchor05arrowQ0ANQrA4__AA23PopoverAttachmentAnchorOAA0Q0OSgqd__yctAaHRd__lFQOyA103_yAA5ImageVG_A47_019GalleryShareHostingH033_C1BB828C9559C4A7511CBBEB5C4BF8C8LLVQo_A56_GGQPGQo_AA25_AppearanceActionModifierVG_AiAE18scrollPocketTag_v15styleQrAA0K16MagicPocketStyleV_tFQOyA11_yA9_yA91__AXyAXyAXyAXyAiAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyA103_yAXyAXyAA5GroupVyA24_yAA5LabelVyA13_A117_GA13_GGA15_yAA4FontVSgGGA72_GG_AA28BorderedProminentButtonStyleVQo_A15_yAA13AnyShapeStyleVSgGGA15_yAA11ControlSizeOGGA21_GA21_GQPGG_Qo_Qo_GGAaHHPyHC
+- _get_witness_table 7SwiftUI15ModifiedContentVyACyAA6HStackVyAA6VStackVyAA05TupleD0VyAEyAIyAA7AnyViewV_ACyAA0I0PAAE10fontWeightyQrAA4FontV0K0VSgFQOyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAPSgGG_Qo_AWyAA5ColorVSgGG08WorkflowB0011ActionIconsI033_5D0F3421E3A1794A86EFE17D97B07D1ALLVAA6SpacerVQPGG_ACyAA4TextVAWySiSgGGAA012_ConditionalD0VyA17_A17_GQPGGGAA14_PaddingLayoutVGA25_GAaLHPA26_AaLHPA23_AaLHPyHC_A25_AA0iQ0HPyHCHC_A25_AAA28_HPyHCHC
+- _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE5sheet11isPresented9onDismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAcAEAdefGQrAJ_AKqd__yctAaBRd__lFQOyAA14GeometryReaderVyAcAE7toolbarAGQrqd__yXE_tAA14ToolbarContentRd__lFQOyAcAEAdefGQrAJ_AKqd__yctAaBRd__lFQOyAA08ModifiedO0VyAQyAQyAA6VStackVyAA05TupleO0VyAQyAQyAA4TextVAA30_EnvironmentKeyWritingModifierVyAA0S9AlignmentOGGAA14_PaddingLayoutVG_AA012_ConditionalO0VyAQyAQyAQyA1_AYyAA5ColorVSgGGAYySiSgGGAA010_FixedSizeZ0VGA17_GSgAA6SpacerVAQyAA6HStackVyAUyA21__AQy08WorkflowB015ShortcutChicletVAA06_FrameZ0VGA21_QPGGA3_GA21_AQyASyAUyAQyAQyAQyAwA023AccessibilityAttachmentW0VGA3_GA3_GSg_AQyAcAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyA23_yAUyAQyAQy18WorkflowUIServices04IconC0VA3_GA3_G_AWQPGG_Qo_AA010_FlexFrameZ0VGSgAA7ForEachVySay14WorkflowUICore23WorkflowTypeDisplayable_pGSSSgAQyAcAEA39_A40_QrA42__tFQOyA23_yA48_SgG_Qo_A52_GGQPGGA3_GAQyAQyAcAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyAA6ButtonVyAQyAQyAA5GroupVyA6_yAA5LabelVyAwA5ImageVGAWGGAYyAA4FontVSgGGA52_GG_AA28BorderedProminentButtonStyleVQo_AYyAA13AnyShapeStyleVSgGGAYyAA11ControlSizeOGGQPGGA3_GA3_GAA016_BackgroundStyleW0VyA8_GG_A24_014ReportShortcutC0VQo__AUyAA0N4ItemVyytA72_yAWGG_A115_QPGQo_G_A24_022GalleryShortcutActionsC0VQo__A24_013GalleryImportC0VQo_HO
+- _get_witness_table qd0__7SwiftUI4ViewHD5_AaBPAAE5alert_11isPresented10presenting7actions7messageQrqd___AA7BindingVySbGqd_2_Sgqd_0_qd_2_XEqd_1_qd_2_XEtSyRd__AaBRd_0_AaBRd_1_r2_lFQOyAcAE15navigationTitleyQrqd__SyRd__lFQOyAA15ModifiedContentVyAA5GroupVyAA012_ConditionalN0Vy08WorkflowB0017TriggerEmptyStateC0VAA06ScrollC6ReaderVyAcAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAOyAA4ListVySSAA05TupleN0VyAcAE16headerProminenceyQrAA10ProminenceOFQOyAA7SectionVyAA4TextVAA7ForEachVySayAT27ConfiguredAutomationRowDataVGSSAOyAcAE12swipeActions4edge15allowsFullSwipe7contentQrAA14HorizontalEdgeO_Sbqd__yXEtAaBRd__lFQOyAcAE11contextMenu9menuItemsQrqd__yXE_tAaBRd__lFQOyAA6IDViewVyAOyAcAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyAA6ButtonVyAT013AutomationRowC0VG_AA25NavigationLinkButtonStyleVys5NeverOGQo_AA01_N13ShapeModifierVyAA9RectangleVGGSSG_ASyA3_yA29_yA10_G_AA6PickerVyA10_0Q3Kit019WFUnifiedAutomationR10EnablementOA12_ySayA49_05WFNewR0C010EnablementT0OGA55_AcAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyA10__A51_Qo_SgGGAA6ToggleVyA10_GSgSgAA7DividerVA46_QPGA46_GSgQo__A29_yAA5LabelVyA10_AA5ImageVGGQo_AA21_TraitWritingModifierVyAA25ListRowBackgroundTraitKeyVGGGAA0sC0VG_Qo_Sg_A12_ySaySS3key_SaySo13HFTriggerItemCG5valuetGSSAcAEA4_yQrA6_FQOyA8_yA10_A12_yA96_A95_A31_GA89_G_Qo_SgGSgQPGGAA06_InsetC8ModifierVyAOyAA5ColorVAA12_FrameLayoutVGGG_SSSgQo_GGGAA25_AppearanceActionModifierVG_SSQo__SSA46_A10_AT26AutomationTransactionErrorOQo_HO
 - _keypath_get_selector_fullScreenToggleEnabled
-- _objc_msgSend$addConstraint:
-- _objc_msgSend$addConstraints:
-- _objc_msgSend$collectionView
-- _objc_msgSend$collectionViewLayout
-- _objc_msgSend$colorCollectionView
-- _objc_msgSend$colorName
-- _objc_msgSend$colorNames
-- _objc_msgSend$colorPicker
-- _objc_msgSend$colorPicker:didSelectColor:
-- _objc_msgSend$colors
-- _objc_msgSend$composeViewControllerRequestedFullScreenToggle:
-- _objc_msgSend$constraintWithItem:attribute:relatedBy:toItem:attribute:multiplier:constant:
-- _objc_msgSend$constraintsWithVisualFormat:options:metrics:views:
-- _objc_msgSend$control
-- _objc_msgSend$countForObject:
-- _objc_msgSend$currentContextWithScale:
-- _objc_msgSend$customImageData
-- _objc_msgSend$dequeueReusableCellWithReuseIdentifier:forIndexPath:
-- _objc_msgSend$drawInContext:inRect:
-- _objc_msgSend$floatingView
-- _objc_msgSend$fullScreenToggleEnabled
-- _objc_msgSend$galleryCollectionSeeAllButtonFont
-- _objc_msgSend$galleryCollectionTitleFont
-- _objc_msgSend$glyphCharacterAtIndexPath:
-- _objc_msgSend$glyphDimension
-- _objc_msgSend$glyphInsets
-- _objc_msgSend$glyphPicker
-- _objc_msgSend$glyphPicker:didSelectGlyphWithCharacter:
-- _objc_msgSend$glyphPickerTabBar:didSelectTabAtIndex:
-- _objc_msgSend$glyphSections
-- _objc_msgSend$glyphView
-- _objc_msgSend$hasBorder
-- _objc_msgSend$iconDrawer
-- _objc_msgSend$indexPathForGlyphCharacter:
-- _objc_msgSend$indexPathForItem:inSection:
-- _objc_msgSend$initWithConfiguration:
-- _objc_msgSend$initWithControl:glyphDimension:sectionInset:
-- _objc_msgSend$initWithControl:glyphDimension:sectionInset:useSystemGlyphsOnly:useOutlineGlyphsOnly:
-- _objc_msgSend$initWithItems:
-- _objc_msgSend$initWithTabNames:tabCharacters:
-- _objc_msgSend$initWithTitle:image:tag:
-- _objc_msgSend$initWithWorkflow:home:triggerInputType:hideRunnerToolbar:
-- _objc_msgSend$isCircular
-- _objc_msgSend$item
-- _objc_msgSend$lastEvent
-- _objc_msgSend$localize:
-- _objc_msgSend$numberWithUnsignedShort:
-- _objc_msgSend$outline
-- _objc_msgSend$paletteColorConfiguration
-- _objc_msgSend$saveIcon:
-- _objc_msgSend$scrollToSection:
-- _objc_msgSend$sectionInset
-- _objc_msgSend$segmentedControl
-- _objc_msgSend$selectItemAtIndexPath:animated:scrollPosition:
-- _objc_msgSend$selectedRingView
-- _objc_msgSend$setAccessibilityValue:
-- _objc_msgSend$setBottomSeparator:
-- _objc_msgSend$setColorCollectionView:
-- _objc_msgSend$setColorName:
-- _objc_msgSend$setColorNames:
-- _objc_msgSend$setColorPicker:
-- _objc_msgSend$setDrawBackground:
-- _objc_msgSend$setFullScreenToggleEnabled:
-- _objc_msgSend$setGlyphCharacter:
-- _objc_msgSend$setGlyphInsets:
-- _objc_msgSend$setGlyphPicker:
-- _objc_msgSend$setGradient:
-- _objc_msgSend$setIconView:
-- _objc_msgSend$setItemPositioning:
-- _objc_msgSend$setItemSize:
-- _objc_msgSend$setLastEvent:
-- _objc_msgSend$setMinimumInteritemSpacing:
-- _objc_msgSend$setMinimumLineSpacing:
-- _objc_msgSend$setNeedsDisplay
-- _objc_msgSend$setOutline:
-- _objc_msgSend$setPressed:
-- _objc_msgSend$setScrollDirection:
-- _objc_msgSend$setSectionInset:
-- _objc_msgSend$setSelectedColor:
-- _objc_msgSend$setSelectedGlyphCharacter:
-- _objc_msgSend$setSelectedItem:
-- _objc_msgSend$setSelectedTabIndex:
-- _objc_msgSend$setTopSeperator:
-- _objc_msgSend$shareItem
-- _objc_msgSend$shouldShowShareButtonForDocumentMenu:
-- _objc_msgSend$tabBar
-- _objc_msgSend$updateAccessibilityValue
-- _objc_msgSend$useOutlineGlyphsOnly
-- _objc_msgSend$visibleCells
-- _objc_msgSend$wf_settingsBackgroundColor
 - _symbolic Say_____G 11WorkflowKit12WFNewTriggerC15EnablementStateO
 - _symbolic _____ 11WorkflowKit12WFNewTriggerC15EnablementStateO
 - _symbolic _____Sg 11WorkflowKit36WFUnifiedAutomationTriggerEnablementO
@@ -1175,5 +762,4 @@ CStrings:
 - "tabNames.count == tabCharacters.count"
 - "v32@?0@\"NSArray\"8Q16^B24"
 - "v32@?0@\"UIView\"8Q16^B24"
-
 ```

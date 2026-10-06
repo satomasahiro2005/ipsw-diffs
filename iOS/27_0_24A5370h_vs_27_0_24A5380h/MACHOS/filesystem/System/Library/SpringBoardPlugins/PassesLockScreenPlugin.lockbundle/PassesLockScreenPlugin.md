@@ -2,15 +2,16 @@
 
 > `/System/Library/SpringBoardPlugins/PassesLockScreenPlugin.lockbundle/PassesLockScreenPlugin`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x170` | `0x178` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_superrefs: 0x18
-   __DATA_CONST.__objc_intobj: 0x18
-   __DATA_CONST.__auth_got: 0x290
--  __DATA_CONST.__got: 0x170
-+  __DATA_CONST.__got: 0x178
-   __DATA.__objc_const: 0xe68
-   __DATA.__objc_selrefs: 0xaa8
-   __DATA.__objc_ivar: 0xb8
-
+-1682.1.0.0.0
++1686.3.0.0.0
 ```

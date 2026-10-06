@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SearchUI.framework/SearchUI`
 
-```diff
+### Section Size Changes
 
- 673.0.12.104.0
--  __TEXT.__text: 0xf5878
-+  __TEXT.__text: 0xf587c
-   __TEXT.__lazy_helpers: 0xa8
-   __TEXT.__objc_methlist: 0x12430
-   __TEXT.__const: 0x3a84
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf5878` | `0xf587c` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _OUTLINED_FUNCTION_1 -> _OUTLINED_FUNCTION_3 : 12 -> 32
 ~ _OUTLINED_FUNCTION_1 : 32 -> 20

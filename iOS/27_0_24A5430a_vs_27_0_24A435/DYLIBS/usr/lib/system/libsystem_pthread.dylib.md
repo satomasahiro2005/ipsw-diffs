@@ -2,6 +2,8 @@
 
 > `/usr/lib/system/libsystem_pthread.dylib`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _pthread_qos_max_parallelism : 372 -> 368

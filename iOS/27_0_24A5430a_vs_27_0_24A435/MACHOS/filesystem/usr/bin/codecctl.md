@@ -2,22 +2,23 @@
 
 > `/usr/bin/codecctl`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x82cc` | `0x82d0` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__init_offsets`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 600.85.0.0.0
--  __TEXT.__text: 0x82cc
-+  __TEXT.__text: 0x82d0
-   __TEXT.__auth_stubs: 0x620
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__const: 0x7c
+```text
 Functions:
 ~ sub_10000235c : 184 -> 180
 ~ sub_100007070 -> sub_10000706c : 188 -> 184

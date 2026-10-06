@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/TokenGenerationCore.framework/TokenGenerationCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__auth_got` | `0x2b30` | `0x2b38` | **`+0x8`** |
+| `__TEXT.__text` | `0x2ddf6c` | `0x2ddf68` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
- 301.6.0.5.102
--  __TEXT.__text: 0x2ddf6c
-+  __TEXT.__text: 0x2ddf68
-   __TEXT.__objc_methlist: 0xd4
-   __TEXT.__const: 0x36ba0
-   __TEXT.__gcc_except_tab: 0x41bc
-
-   __AUTH_CONST.__cfstring: 0xa0
-   __AUTH_CONST.__objc_const: 0x11f0
-   __AUTH_CONST.__weak_auth_got: 0x48
--  __AUTH_CONST.__auth_got: 0x2b30
-+  __AUTH_CONST.__auth_got: 0x2b38
-   __AUTH.__data: 0x1f48
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x10
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 16348
--  Symbols:   46226
-+  Symbols:   46227
-   CStrings:  1131
- 
+-  Symbols:   46168
++  Symbols:   46169
 Symbols:
 + _swift_retain_x10
 Functions:

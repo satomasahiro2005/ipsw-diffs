@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/DeviceSharing.framework/DeviceSharing`
 
-```diff
+### Section Size Changes
 
- 40.0.2.0.0
--  __TEXT.__text: 0xa1480
-+  __TEXT.__text: 0xa1490
-   __TEXT.__objc_methlist: 0x420
-   __TEXT.__const: 0x4540
-   __TEXT.__cstring: 0x285e
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xab4d4` | `0xab4e4` | **`+0x10`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_22c75b058 -> sub_22b9d7058 : 2448 -> 2452
-~ sub_22c75d7c4 -> sub_22b9d97c8 : 260 -> 272
+~ sub_22eb57218 -> sub_22ddfd218 : 2452 -> 2456
+~ sub_22eb599dc -> sub_22ddff9e0 : 260 -> 272
 ```

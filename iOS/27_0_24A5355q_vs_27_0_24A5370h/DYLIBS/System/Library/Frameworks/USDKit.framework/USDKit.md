@@ -2,97 +2,44 @@
 
 > `/System/Library/Frameworks/USDKit.framework/USDKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x28db24` | `0x2d56ec` | **`+0x47bc8`** |
+| `__TEXT.__eh_frame` | `0x9bea0` | `0xb1228` | **`+0x15388`** |
+| `__TEXT.__gcc_except_tab` | `0x3cbb4` | `0x44dd8` | **`+0x8224`** |
+| `__TEXT.__unwind_info` | `0x3aab8` | `0x42508` | **`+0x7a50`** |
+| `__TEXT.__const` | `0x26bd0` | `0x2cbf0` | **`+0x6020`** |
+| `__TEXT.__cstring` | `0x132ff` | `0x170ea` | **`+0x3deb`** |
+| `__AUTH_CONST.__const` | `0x1ffa0` | `0x23518` | **`+0x3578`** |
+| `__DATA.__bss` | `0x24bb0` | `0x270b0` | **`+0x2500`** |
+| `__DATA_CONST.__const` | `0x2250` | `0x27e0` | **`+0x590`** |
+| `__TEXT.__swift5_typeref` | `0x5e54` | `0x6298` | **`+0x444`** |
+| `__TEXT.__constg_swiftt` | `0x76bc` | `0x7ad8` | **`+0x41c`** |
+| `__TEXT.__swift5_fieldmd` | `0x42a4` | `0x45dc` | **`+0x338`** |
+| `__DATA.__data` | `0x3fa0` | `0x4258` | **`+0x2b8`** |
+| `__TEXT.__swift5_proto` | `0x1b08` | `0x1d24` | **`+0x21c`** |
+| `__TEXT.__swift5_assocty` | `0x56f0` | `0x58a8` | **`+0x1b8`** |
+| `__AUTH.__data` | `0x7410` | `0x7560` | **`+0x150`** |
+| `__TEXT.__swift5_builtin` | `0x125c` | `0x1310` | **`+0xb4`** |
+| `__TEXT.__swift5_types` | `0x980` | `0xa00` | **`+0x80`** |
+| `__AUTH_CONST.__auth_got` | `0x4480` | `0x44d0` | **`+0x50`** |
+| `__TEXT.__swift5_reflstr` | `0x1727` | `0x1777` | **`+0x50`** |
+
+### Other Changes
+
 ```diff
 
 -106.0.0.0.2
--  __TEXT.__text: 0x28db24 sha256:26122e93f710175382b1136ccb5d47d858bbca71a09b9df3e4e838b3e7457fc6
--  __TEXT.__const: 0x26bd0 sha256:dac70ffe4ccca3d6a279357e25fe31223d79a0ca7af190900fb637c928ff61f9
--  __TEXT.__gcc_except_tab: 0x3cbb4 sha256:920f42270742c88ffa3c6ebcccb563241bdfe3eca516aaa01d5bf3043ab6a61c
--  __TEXT.__cstring: 0x132ff sha256:40ffd2b2c1bb1445059ef308710698ccd7df2489e698a7ea8ce2b90686beab19
--  __TEXT.__swift5_typeref: 0x5e54 sha256:e4b8550f6446ff14d2a572454e73b56274de486d7d5fc2c3045afd745b1aa2e7
--  __TEXT.__swift5_reflstr: 0x1727 sha256:2f52709bebca6ecc5a3822f47995f667b6d94551304fdbc7be5842ada6638593
--  __TEXT.__swift5_assocty: 0x56f0 sha256:e96a1f575166afe0efdc080bec6cc494fc6585f3e1080800d2bc6b6e7df9638a
--  __TEXT.__constg_swiftt: 0x76bc sha256:00e3af0de8437f7d9b4684463b56a2f8d5ea5030a91948f91b0d72c0eca57586
--  __TEXT.__swift5_fieldmd: 0x42a4 sha256:1a427bc8cef48990a5ef171c8ea859988c396b7b48d44c445bb351e053917d93
--  __TEXT.__swift5_builtin: 0x125c sha256:1b4f012e4e3cc3e010861e662ca0d8ed8abf0b19a47ed0b1bb345d2c18c9d62c
--  __TEXT.__swift5_proto: 0x1b08 sha256:2e4f5651bface795d8edc7a38de318914f4c4cfe7a30e5ceac8d259513964e47
--  __TEXT.__swift5_types: 0x980 sha256:c0677b91b92861f650fbec1f1513a5b6dfc6743a38d392a60851a4e237851f2a
--  __TEXT.__swift5_types2: 0x8 sha256:1ae57f088c985440cf5671612c5ba96b9a10830280b7d14e32760529ab725e57
--  __TEXT.__swift5_capture: 0x22c sha256:03cea48e3ea30acb6efd6134ed30217542fe196094510f101d8201c6ee6ba046
--  __TEXT.__oslogstring: 0x5bb sha256:d6e6fd152b554431a6904769f62ab9947c987fe90b91090d7109199a3c604b80
--  __TEXT.__swift5_protos: 0xe0 sha256:486543e239f289cfbc6d4ef737cc6126cf4337e69c8c28284e4d886078853787
--  __TEXT.__swift5_mpenum: 0x10 sha256:89d41e1368350de6d3f8fefe0774732b5f4092e891cb614c843ac58d1c9bc3a4
--  __TEXT.__unwind_info: 0x3aab8 sha256:bbaaa881daad3cfa88c33ef0554cdfc38417ce661bce63c44e382b8509c209e9
--  __TEXT.__eh_frame: 0x9bea0 sha256:f719f451964fa6e2d243e0287e7d3038a9b749dbff8620e31d2ac83f8e337aed
 +106.0.3.0.1
-+  __TEXT.__text: 0x2d56ec sha256:55fb7ac6f94d94362b40fcad5d3fa6ff68b0d26100c2215e013559418fda2d23
-+  __TEXT.__const: 0x2cbf0 sha256:9463963a8e60cb6271bd82fe936f0e05c02a966609b383ba3131cf9bad36e84e
-+  __TEXT.__gcc_except_tab: 0x44dd8 sha256:569958cdd3e98883467209e774e3a884fc9d6b4780ead8611e4c73109230b76d
-+  __TEXT.__cstring: 0x170ea sha256:a0b0d4168ea4023f7644bc33e7cd2fd4590a5570101e5ba4b2e36bf5cdd50c52
-+  __TEXT.__swift5_typeref: 0x6298 sha256:90fcaa3b57ab5e2bba315afd93093bcf49e2a3d743937e78c7ffe8345874a855
-+  __TEXT.__swift5_reflstr: 0x1777 sha256:d014b967af901d1205599514066dae57bdd2499fb0b26b3d93d8235d4055dade
-+  __TEXT.__swift5_assocty: 0x58a8 sha256:9a259df19514a3b3088f15dbfb29e050bc88a09a5ecefa7f7e05646870b9ed1c
-+  __TEXT.__constg_swiftt: 0x7ad8 sha256:f6afe71659bbee1caf1ea296c77a6bcf74b756fdcf83b15f26d75c24230e4f96
-+  __TEXT.__swift5_fieldmd: 0x45dc sha256:ac7002cb500e1f4b496816a661a3f4c909119faf552231d85049fc9a84eb238b
-+  __TEXT.__swift5_builtin: 0x1310 sha256:f587925f3e26fcae59d3aa5f7d6380fbbf5189a7bd3f2735f080c80b24e6ef20
-+  __TEXT.__swift5_proto: 0x1d24 sha256:5efedf79c0fb2f9476d618097a26bb9e70713c8c2cf268eee81422cc43309417
-+  __TEXT.__swift5_types: 0xa00 sha256:4801cffa7a1b67f8504b56dd0bb65e95fdc2e44bc74fe6ad715d41f21ae21263
-+  __TEXT.__swift5_types2: 0x8 sha256:17d0bc8b53c14a86ee0240e178786e4e06525cc0cd7bfeb0aca5c3d4fd26433d
-+  __TEXT.__swift5_capture: 0x22c sha256:32035129dbeddb8746ff67a16c0376cdee267814b19aa168d588ff68508dbd7c
-+  __TEXT.__oslogstring: 0x5bb sha256:5afb61174231c03b163fe1cf77ce50cf7927e6445cab69f5e0a5cda20fa0c6cc
-+  __TEXT.__swift5_protos: 0xe0 sha256:396c9b4644b636a7b0d50daca4277e3281fb98e304572ca3dc1252b76598a0fa
-+  __TEXT.__swift5_mpenum: 0x10 sha256:1408044ee64959d8dbf8762d0d8d21d3c5617418d1543385e842cc8e5df0384e
-+  __TEXT.__unwind_info: 0x42508 sha256:9bcd5150b7dcfec184fb717ab92133b9659cb844a7047636dddcd1b8db1738f2
-+  __TEXT.__eh_frame: 0xb1228 sha256:ce68477cf35db91fbba3c8e18529b3a6b638734dbf80aef966766f08c4ece83e
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2250 sha256:40bb91909347c5d36f1e1f0ddc515d1f63439b93249619e998c3574e041f843d
--  __DATA_CONST.__objc_classlist: 0x110 sha256:e06ce8ceb1a64e8a7347b5ddde3fb89afabc31cb163a9ae547b2ea7377357737
-+  __DATA_CONST.__const: 0x27e0 sha256:5d0889716b15d89772c406458481ef4bd65f1302e8adbe5d6d6caa9a085e0235
-+  __DATA_CONST.__objc_classlist: 0x110 sha256:0f63a5e3de0240f946d10b34156a1a325b186271b31069205583f1d3292b9659
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__weak_got: 0x260 sha256:3f88814fb770d04ab581a9c9747bd9c7b4b9603d64c431c57cae64c3d2523330
--  __DATA_CONST.__objc_selrefs: 0x78 sha256:eff33780450a10d1e1f3927ba3853aed4342c9865c3c59ce5f8ca2c929eef3f0
-+  __DATA_CONST.__weak_got: 0x260 sha256:85e10671dd2e5396e14a7728574146ae79bc16a308579c1a3802dce5d48ad66e
-+  __DATA_CONST.__objc_selrefs: 0x78 sha256:91e0db98483179f018a7e799cfef029e679791244da00ab8101627e18716e624
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1ffa0 sha256:8fccf66c2f4770956deb116436775b39007c0573d0dcda53ba9322b2b7d1f29a
--  __AUTH_CONST.__cfstring: 0x80 sha256:307954223c6d843e9747b361fac2e6ae5b00e34396bf6ae3b3882f476e82c597
--  __AUTH_CONST.__objc_const: 0x1908 sha256:acfaed30e493910225178c9acffa98e74f5df7793694c116dd1104d3467e42bf
--  __AUTH_CONST.__weak_auth_got: 0xd38 sha256:7ff3197c962e6073ae3e8ff2138333a35e77c340000eaed391a668cbfde1c923
--  __AUTH_CONST.__auth_got: 0x4480 sha256:52c7ee67353df3b1b82f31f013cbde17453cee28c8812c8554f468ebaf1e85fe
--  __AUTH.__tf_func: 0x30 sha256:92eb9e9a0e7369a3b99018339ba485841121b2f08a2a8c78cbe7dafc7bea2a45
--  __AUTH.__data: 0x7410 sha256:5d21145653594b1eda765a66da37192273a678c50d2785c0bc7bb7d4b28d073d
--  __DATA.__data: 0x3fa0 sha256:ba82e4c055884b9e03184e7c046067f87e792ac327f28d00ed17aac382f3b929
--  __DATA.__bss: 0x24bb0 sha256:04119f8ed2169899ec8cbe9f624024d4dff9638327692974550983bbfbdfa2ba
-+  __AUTH_CONST.__const: 0x23518 sha256:7f3f75c30012bc09dd486dec5e53cdc4f23de372ab40cf40c6977f15121a4844
-+  __AUTH_CONST.__cfstring: 0x80 sha256:0c3cf2ad76b745a150a51f012cbe28b0f258b94780d23c80a43ca18142b9a052
-+  __AUTH_CONST.__objc_const: 0x1908 sha256:5a43a745806c22e6193c6938bc75dce308144a3006334c57af37d5fc0df4601b
-+  __AUTH_CONST.__weak_auth_got: 0xd38 sha256:f128747690bb1feeebe28ae24fdf793f38a3bd08da2824e4749ea4ebea05633f
-+  __AUTH_CONST.__auth_got: 0x44d0 sha256:97548fe523b648ea14555cf88a21d80277eb3666bba65fdde4e4c0f2053a55f8
-+  __AUTH.__tf_func: 0x30 sha256:01b96befe691ca95d8e3346e74d4f42bc9dd292a2da443ade7a786daefc8041a
-+  __AUTH.__data: 0x7560 sha256:9d55cd5168716cfdece182c1c421d843fea9b4d1d7cfc1858385f4a042419d56
-+  __DATA.__data: 0x4258 sha256:f63d77ebca283d1b35ae4e3db9aa7f31e4be647419284d1061fdb25dc3b3618e
-+  __DATA.__bss: 0x270b0 sha256:a60058edb4e4be790c67428486e42996792a1d134d3e7c6c406275a0a9c90ea5
-   __DATA.__common: 0x79 sha256:d8129de4286dc4fd245c7776b51d76aaa727956e8fc88ff928eb69ff7fc17e0b
-   __DATA_DIRTY.__tf_func: 0x0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   - /usr/lib/usd/libusd_ms.dylib
--  UUID: 583435F2-C110-3370-AC90-8280DAC96465
 -  Functions: 30798
--  Symbols:   92280
--  CStrings:  779
-+  UUID: CEBCBD20-D1AC-3F42-8148-8161ACC6A3E4
+-  Symbols:   59247
+-  CStrings:  771
 +  Functions: 34252
-+  Symbols:   100519
-+  CStrings:  903
- 
++  Symbols:   63673
++  CStrings:  895
 Symbols:
 + GCC_except_table10068
 + GCC_except_table10077
@@ -1098,7 +1045,7 @@ Symbols:
 + _$s6USDKit7GfVec4hVAA16USDValueProtocolA2aDP9_appendToyyAA8USDArrayVyxGzFTW
 + _$s6USDKit7SdfPathV5emptyACvgZTm
 + _$s6USDKit7USDPrimV12RelationshipV7targetsSayAA8USDLayerV4PathVGvM
-+ _$s6USDKit7USDPrimV12RelationshipV7targetsSayAA8USDLayerV4PathVGvM.resume.0
++ _$s6USDKit7USDPrimV12RelationshipV7targetsSayAA8USDLayerV4PathVGvM.resume
 + _$s6USDKit7USDPrimV12RelationshipV7targetsSayAA8USDLayerV4PathVGvg
 + _$s6USDKit7USDPrimV12RelationshipV7targetsSayAA8USDLayerV4PathVGvpMV
 + _$s6USDKit7USDPrimV12RelationshipV7targetsSayAA8USDLayerV4PathVGvs
@@ -1122,7 +1069,7 @@ Symbols:
 + _$s6USDKit7USDPrimV8PropertyV11VariabilityOAA16USDValueProtocolA2aHP9_appendToyyAA8USDArrayVyxGzFTW
 + _$s6USDKit7USDPrimV8isSchemaySbAA8USDTokenVF
 + _$s6USDKit7USDPrimV9AttributeV11connectionsSayAA8USDLayerV4PathVGvM
-+ _$s6USDKit7USDPrimV9AttributeV11connectionsSayAA8USDLayerV4PathVGvM.resume.0
++ _$s6USDKit7USDPrimV9AttributeV11connectionsSayAA8USDLayerV4PathVGvM.resume
 + _$s6USDKit7USDPrimV9AttributeV11connectionsSayAA8USDLayerV4PathVGvg
 + _$s6USDKit7USDPrimV9AttributeV11connectionsSayAA8USDLayerV4PathVGvpMV
 + _$s6USDKit7USDPrimV9AttributeV11connectionsSayAA8USDLayerV4PathVGvs
@@ -1145,25 +1092,25 @@ Symbols:
 + _$s6USDKit7USDPrimVSgMR
 + _$s6USDKit7USDPrimVSgMd
 + _$s6USDKit7USDPrimV_2asAA8USDArrayVySiGSgAA8USDTokenV_AGmtciM
-+ _$s6USDKit7USDPrimV_2asAA8USDArrayVySiGSgAA8USDTokenV_AGmtciM.resume.0
++ _$s6USDKit7USDPrimV_2asAA8USDArrayVySiGSgAA8USDTokenV_AGmtciM.resume
 + _$s6USDKit7USDPrimV_2asAA8USDArrayVySiGSgAA8USDTokenV_AGmtciM.resume.0Tm
 + _$s6USDKit7USDPrimV_2asAA8USDArrayVySiGSgAA8USDTokenV_AGmtcig
 + _$s6USDKit7USDPrimV_2asAA8USDArrayVySiGSgAA8USDTokenV_AGmtcis
 + _$s6USDKit7USDPrimV_2asAA8USDArrayVySiGSgAA8USDTokenV_AGmtcisTf4nndn_n
 + _$s6USDKit7USDPrimV_2asAA8USDArrayVySuGSgAA8USDTokenV_AGmtciM
-+ _$s6USDKit7USDPrimV_2asAA8USDArrayVySuGSgAA8USDTokenV_AGmtciM.resume.0
++ _$s6USDKit7USDPrimV_2asAA8USDArrayVySuGSgAA8USDTokenV_AGmtciM.resume
 + _$s6USDKit7USDPrimV_2asAA8USDArrayVySuGSgAA8USDTokenV_AGmtcig
 + _$s6USDKit7USDPrimV_2asAA8USDArrayVySuGSgAA8USDTokenV_AGmtcis
 + _$s6USDKit7USDPrimV_2asAA8USDArrayVySuGSgAA8USDTokenV_AGmtcisTf4nndn_n
 + _$s6USDKit7USDPrimV_2asSiSgAA8USDTokenV_SimtciM
-+ _$s6USDKit7USDPrimV_2asSiSgAA8USDTokenV_SimtciM.resume.0
++ _$s6USDKit7USDPrimV_2asSiSgAA8USDTokenV_SimtciM.resume
 + _$s6USDKit7USDPrimV_2asSiSgAA8USDTokenV_SimtciM.resume.0Tm
 + _$s6USDKit7USDPrimV_2asSiSgAA8USDTokenV_Simtcig
 + _$s6USDKit7USDPrimV_2asSiSgAA8USDTokenV_SimtcigTf4ndn_n
 + _$s6USDKit7USDPrimV_2asSiSgAA8USDTokenV_Simtcis
 + _$s6USDKit7USDPrimV_2asSiSgAA8USDTokenV_SimtcisTf4nndn_n
 + _$s6USDKit7USDPrimV_2asSuSgAA8USDTokenV_SumtciM
-+ _$s6USDKit7USDPrimV_2asSuSgAA8USDTokenV_SumtciM.resume.0
++ _$s6USDKit7USDPrimV_2asSuSgAA8USDTokenV_SumtciM.resume
 + _$s6USDKit7USDPrimV_2asSuSgAA8USDTokenV_Sumtcig
 + _$s6USDKit7USDPrimV_2asSuSgAA8USDTokenV_SumtcigTf4ndn_n
 + _$s6USDKit7USDPrimV_2asSuSgAA8USDTokenV_Sumtcis
@@ -1285,7 +1232,7 @@ Symbols:
 + _$s6USDKit8USDArrayVyxGSlAASl9formIndex5aftery0D0Qzz_tFTW
 + _$s6USDKit8USDArrayVyxGSlAASly11SubSequenceQzSny5IndexQzGcigTW
 + _$s6USDKit8USDArrayVyxGSlAASly7ElementQz5IndexQzcirTW
-+ _$s6USDKit8USDArrayVyxGSlAASly7ElementQz5IndexQzcirTW.resume.0
++ _$s6USDKit8USDArrayVyxGSlAASly7ElementQz5IndexQzcirTW.resume
 + _$s6USDKit8USDArrayVyxGs25ExpressibleByArrayLiteralAAMA
 + _$s6USDKit8USDArrayVyxGs25ExpressibleByArrayLiteralAAMc
 + _$s6USDKit8USDArrayVyxGs25ExpressibleByArrayLiteralAAMcMK
@@ -1293,7 +1240,7 @@ Symbols:
 + _$s6USDKit8USDArrayVyxSicig
 + _$s6USDKit8USDArrayVyxSicipMV
 + _$s6USDKit8USDArrayVyxSicir
-+ _$s6USDKit8USDArrayVyxSicir.resume.0
++ _$s6USDKit8USDArrayVyxSicir.resume
 + _$s6USDKit8USDLayerV10PermissionO10_makeArrayAA8USDArrayVyAEGyFZ
 + _$s6USDKit8USDLayerV10PermissionO11_arrayCountySiAA8USDArrayVyAEGFZ
 + _$s6USDKit8USDLayerV10PermissionO11_getElement4from2atAeA8USDArrayVyAEG_SitFZ
@@ -1577,7 +1524,7 @@ Symbols:
 + _$s6USDKit8USDLayerV9AssetPathVAA16USDValueProtocolA2aFP15_arrayValueTypeAA7USDPrimV9AttributeV0hI0VvgZTWTm
 + _$s6USDKit8USDLayerV9AssetPathVAA16USDValueProtocolA2aFP9_appendToyyAA8USDArrayVyxGzFTW
 + _$s6USDKit8USDStageV11defaultPrimAA7USDPrimVSgvM
-+ _$s6USDKit8USDStageV11defaultPrimAA7USDPrimVSgvM.resume.0
++ _$s6USDKit8USDStageV11defaultPrimAA7USDPrimVSgvM.resume
 + _$s6USDKit8USDStageV11defaultPrimAA7USDPrimVSgvpACTk
 + _$s6USDKit8USDStageV11defaultPrimAA7USDPrimVSgvs
 + _$s6USDKit8USDStageV6ObjectV18MetadataCollectionPAAE03setD0_5valueyAA8USDTokenV_SitKF
@@ -1648,7 +1595,7 @@ Symbols:
 + _$s6USDKit8USDValueV5QuatdV4real9imaginaryAESd_AC5Vec3dVtcfC
 + _$s6USDKit8USDValueV5QuatdV4real9imaginaryAESd_AC5Vec3dVtcfCTf4nnd_n
 + _$s6USDKit8USDValueV5QuatdV4realSdvM
-+ _$s6USDKit8USDValueV5QuatdV4realSdvM.resume.0
++ _$s6USDKit8USDValueV5QuatdV4realSdvM.resume
 + _$s6USDKit8USDValueV5QuatdV4realSdvg
 + _$s6USDKit8USDValueV5QuatdV4realSdvpMV
 + _$s6USDKit8USDValueV5QuatdV4realSdvs
@@ -1660,7 +1607,7 @@ Symbols:
 + _$s6USDKit8USDValueV5QuatdV9hashValueSivg
 + _$s6USDKit8USDValueV5QuatdV9hashValueSivpMV
 + _$s6USDKit8USDValueV5QuatdV9imaginaryAC5Vec3dVvM
-+ _$s6USDKit8USDValueV5QuatdV9imaginaryAC5Vec3dVvM.resume.0
++ _$s6USDKit8USDValueV5QuatdV9imaginaryAC5Vec3dVvM.resume
 + _$s6USDKit8USDValueV5QuatdV9imaginaryAC5Vec3dVvg
 + _$s6USDKit8USDValueV5QuatdV9imaginaryAC5Vec3dVvpMV
 + _$s6USDKit8USDValueV5QuatdV9imaginaryAC5Vec3dVvs
@@ -1761,7 +1708,7 @@ Symbols:
 + _$s6USDKit8USDValueV5QuatfV4real9imaginaryAESf_AC5Vec3fVtcfC
 + _$s6USDKit8USDValueV5QuatfV4real9imaginaryAESf_AC5Vec3fVtcfCTf4nnd_n
 + _$s6USDKit8USDValueV5QuatfV4realSfvM
-+ _$s6USDKit8USDValueV5QuatfV4realSfvM.resume.0
++ _$s6USDKit8USDValueV5QuatfV4realSfvM.resume
 + _$s6USDKit8USDValueV5QuatfV4realSfvg
 + _$s6USDKit8USDValueV5QuatfV4realSfvpMV
 + _$s6USDKit8USDValueV5QuatfV4realSfvs
@@ -1773,7 +1720,7 @@ Symbols:
 + _$s6USDKit8USDValueV5QuatfV9hashValueSivg
 + _$s6USDKit8USDValueV5QuatfV9hashValueSivpMV
 + _$s6USDKit8USDValueV5QuatfV9imaginaryAC5Vec3fVvM
-+ _$s6USDKit8USDValueV5QuatfV9imaginaryAC5Vec3fVvM.resume.0
++ _$s6USDKit8USDValueV5QuatfV9imaginaryAC5Vec3fVvM.resume
 + _$s6USDKit8USDValueV5QuatfV9imaginaryAC5Vec3fVvg
 + _$s6USDKit8USDValueV5QuatfV9imaginaryAC5Vec3fVvpMV
 + _$s6USDKit8USDValueV5QuatfV9imaginaryAC5Vec3fVvs
@@ -1875,7 +1822,7 @@ Symbols:
 + _$s6USDKit8USDValueV5QuathV4real9imaginaryAEs7Float16V_AC5Vec3hVtcfC
 + _$s6USDKit8USDValueV5QuathV4real9imaginaryAEs7Float16V_AC5Vec3hVtcfCTf4nnd_n
 + _$s6USDKit8USDValueV5QuathV4reals7Float16VvM
-+ _$s6USDKit8USDValueV5QuathV4reals7Float16VvM.resume.0
++ _$s6USDKit8USDValueV5QuathV4reals7Float16VvM.resume
 + _$s6USDKit8USDValueV5QuathV4reals7Float16Vvg
 + _$s6USDKit8USDValueV5QuathV4reals7Float16VvpMV
 + _$s6USDKit8USDValueV5QuathV4reals7Float16Vvs
@@ -1887,7 +1834,7 @@ Symbols:
 + _$s6USDKit8USDValueV5QuathV9hashValueSivg
 + _$s6USDKit8USDValueV5QuathV9hashValueSivpMV
 + _$s6USDKit8USDValueV5QuathV9imaginaryAC5Vec3hVvM
-+ _$s6USDKit8USDValueV5QuathV9imaginaryAC5Vec3hVvM.resume.0
++ _$s6USDKit8USDValueV5QuathV9imaginaryAC5Vec3hVvM.resume
 + _$s6USDKit8USDValueV5QuathV9imaginaryAC5Vec3hVvg
 + _$s6USDKit8USDValueV5QuathV9imaginaryAC5Vec3hVvpMV
 + _$s6USDKit8USDValueV5QuathV9imaginaryAC5Vec3hVvs
@@ -1966,12 +1913,12 @@ Symbols:
 + _$s6USDKit8USDValueV5Vec2dV15_arrayValueTypeAA7USDPrimV9AttributeV0eF0VvgZ
 + _$s6USDKit8USDValueV5Vec2dV15_arrayValueTypeAA7USDPrimV9AttributeV0eF0VvpZMV
 + _$s6USDKit8USDValueV5Vec2dV1xSdvM
-+ _$s6USDKit8USDValueV5Vec2dV1xSdvM.resume.0
++ _$s6USDKit8USDValueV5Vec2dV1xSdvM.resume
 + _$s6USDKit8USDValueV5Vec2dV1xSdvg
 + _$s6USDKit8USDValueV5Vec2dV1xSdvpMV
 + _$s6USDKit8USDValueV5Vec2dV1xSdvs
 + _$s6USDKit8USDValueV5Vec2dV1ySdvM
-+ _$s6USDKit8USDValueV5Vec2dV1ySdvM.resume.0
++ _$s6USDKit8USDValueV5Vec2dV1ySdvM.resume
 + _$s6USDKit8USDValueV5Vec2dV1ySdvg
 + _$s6USDKit8USDValueV5Vec2dV1ySdvpMV
 + _$s6USDKit8USDValueV5Vec2dV1ySdvs
@@ -2062,7 +2009,7 @@ Symbols:
 + _$s6USDKit8USDValueV5Vec2dVyAESd_SdtcfC
 + _$s6USDKit8USDValueV5Vec2dVyAEs5SIMD2VySdGcfC
 + _$s6USDKit8USDValueV5Vec2dVySdSiciM
-+ _$s6USDKit8USDValueV5Vec2dVySdSiciM.resume.0
++ _$s6USDKit8USDValueV5Vec2dVySdSiciM.resume
 + _$s6USDKit8USDValueV5Vec2dVySdSicig
 + _$s6USDKit8USDValueV5Vec2dVySdSicipMV
 + _$s6USDKit8USDValueV5Vec2dVySdSicis
@@ -2081,12 +2028,12 @@ Symbols:
 + _$s6USDKit8USDValueV5Vec2fV15_arrayValueTypeAA7USDPrimV9AttributeV0eF0VvgZ
 + _$s6USDKit8USDValueV5Vec2fV15_arrayValueTypeAA7USDPrimV9AttributeV0eF0VvpZMV
 + _$s6USDKit8USDValueV5Vec2fV1xSfvM
-+ _$s6USDKit8USDValueV5Vec2fV1xSfvM.resume.0
++ _$s6USDKit8USDValueV5Vec2fV1xSfvM.resume
 + _$s6USDKit8USDValueV5Vec2fV1xSfvg
 + _$s6USDKit8USDValueV5Vec2fV1xSfvpMV
 + _$s6USDKit8USDValueV5Vec2fV1xSfvs
 + _$s6USDKit8USDValueV5Vec2fV1ySfvM
-+ _$s6USDKit8USDValueV5Vec2fV1ySfvM.resume.0
++ _$s6USDKit8USDValueV5Vec2fV1ySfvM.resume
 + _$s6USDKit8USDValueV5Vec2fV1ySfvg
 + _$s6USDKit8USDValueV5Vec2fV1ySfvpMV
 + _$s6USDKit8USDValueV5Vec2fV1ySfvs
@@ -2177,7 +2124,7 @@ Symbols:
 + _$s6USDKit8USDValueV5Vec2fVyAESf_SftcfC
 + _$s6USDKit8USDValueV5Vec2fVyAEs5SIMD2VySfGcfC
 + _$s6USDKit8USDValueV5Vec2fVySfSiciM
-+ _$s6USDKit8USDValueV5Vec2fVySfSiciM.resume.0
++ _$s6USDKit8USDValueV5Vec2fVySfSiciM.resume
 + _$s6USDKit8USDValueV5Vec2fVySfSicig
 + _$s6USDKit8USDValueV5Vec2fVySfSicipMV
 + _$s6USDKit8USDValueV5Vec2fVySfSicis
@@ -2196,12 +2143,12 @@ Symbols:
 + _$s6USDKit8USDValueV5Vec2hV15_arrayValueTypeAA7USDPrimV9AttributeV0eF0VvgZ
 + _$s6USDKit8USDValueV5Vec2hV15_arrayValueTypeAA7USDPrimV9AttributeV0eF0VvpZMV
 + _$s6USDKit8USDValueV5Vec2hV1xs7Float16VvM
-+ _$s6USDKit8USDValueV5Vec2hV1xs7Float16VvM.resume.0
++ _$s6USDKit8USDValueV5Vec2hV1xs7Float16VvM.resume
 + _$s6USDKit8USDValueV5Vec2hV1xs7Float16Vvg
 + _$s6USDKit8USDValueV5Vec2hV1xs7Float16VvpMV
 + _$s6USDKit8USDValueV5Vec2hV1xs7Float16Vvs
 + _$s6USDKit8USDValueV5Vec2hV1ys7Float16VvM
-+ _$s6USDKit8USDValueV5Vec2hV1ys7Float16VvM.resume.0
++ _$s6USDKit8USDValueV5Vec2hV1ys7Float16VvM.resume
 + _$s6USDKit8USDValueV5Vec2hV1ys7Float16Vvg
 + _$s6USDKit8USDValueV5Vec2hV1ys7Float16VvpMV
 + _$s6USDKit8USDValueV5Vec2hV1ys7Float16Vvs
@@ -2291,7 +2238,7 @@ Symbols:
 + _$s6USDKit8USDValueV5Vec2hVwst
 + _$s6USDKit8USDValueV5Vec2hVyAEs7Float16V_AGtcfC
 + _$s6USDKit8USDValueV5Vec2hVys7Float16VSiciM
-+ _$s6USDKit8USDValueV5Vec2hVys7Float16VSiciM.resume.0
++ _$s6USDKit8USDValueV5Vec2hVys7Float16VSiciM.resume
 + _$s6USDKit8USDValueV5Vec2hVys7Float16VSicig
 + _$s6USDKit8USDValueV5Vec2hVys7Float16VSicipMV
 + _$s6USDKit8USDValueV5Vec2hVys7Float16VSicis
@@ -2310,12 +2257,12 @@ Symbols:
 + _$s6USDKit8USDValueV5Vec2iV15_arrayValueTypeAA7USDPrimV9AttributeV0eF0VvgZ
 + _$s6USDKit8USDValueV5Vec2iV15_arrayValueTypeAA7USDPrimV9AttributeV0eF0VvpZMV
 + _$s6USDKit8USDValueV5Vec2iV1xs5Int32VvM
-+ _$s6USDKit8USDValueV5Vec2iV1xs5Int32VvM.resume.0
++ _$s6USDKit8USDValueV5Vec2iV1xs5Int32VvM.resume
 + _$s6USDKit8USDValueV5Vec2iV1xs5Int32Vvg
 + _$s6USDKit8USDValueV5Vec2iV1xs5Int32VvpMV
 + _$s6USDKit8USDValueV5Vec2iV1xs5Int32Vvs
 + _$s6USDKit8USDValueV5Vec2iV1ys5Int32VvM
-+ _$s6USDKit8USDValueV5Vec2iV1ys5Int32VvM.resume.0
++ _$s6USDKit8USDValueV5Vec2iV1ys5Int32VvM.resume
 + _$s6USDKit8USDValueV5Vec2iV1ys5Int32Vvg
 + _$s6USDKit8USDValueV5Vec2iV1ys5Int32VvpMV
 + _$s6USDKit8USDValueV5Vec2iV1ys5Int32Vvs
@@ -2407,7 +2354,7 @@ Symbols:
 + _$s6USDKit8USDValueV5Vec2iVyAEs5Int32V_AGtcfC
 + _$s6USDKit8USDValueV5Vec2iVyAEs5SIMD2Vys5Int32VGcfC
 + _$s6USDKit8USDValueV5Vec2iVys5Int32VSiciM
-+ _$s6USDKit8USDValueV5Vec2iVys5Int32VSiciM.resume.0
++ _$s6USDKit8USDValueV5Vec2iVys5Int32VSiciM.resume
 + _$s6USDKit8USDValueV5Vec2iVys5Int32VSicig
 + _$s6USDKit8USDValueV5Vec2iVys5Int32VSicipMV
 + _$s6USDKit8USDValueV5Vec2iVys5Int32VSicis
@@ -2427,17 +2374,17 @@ Symbols:
 + _$s6USDKit8USDValueV5Vec3dV15_arrayValueTypeAA7USDPrimV9AttributeV0eF0VvgZTm
 + _$s6USDKit8USDValueV5Vec3dV15_arrayValueTypeAA7USDPrimV9AttributeV0eF0VvpZMV
 + _$s6USDKit8USDValueV5Vec3dV1xSdvM
-+ _$s6USDKit8USDValueV5Vec3dV1xSdvM.resume.0
++ _$s6USDKit8USDValueV5Vec3dV1xSdvM.resume
 + _$s6USDKit8USDValueV5Vec3dV1xSdvg
 + _$s6USDKit8USDValueV5Vec3dV1xSdvpMV
 + _$s6USDKit8USDValueV5Vec3dV1xSdvs
 + _$s6USDKit8USDValueV5Vec3dV1ySdvM
-+ _$s6USDKit8USDValueV5Vec3dV1ySdvM.resume.0
++ _$s6USDKit8USDValueV5Vec3dV1ySdvM.resume
 + _$s6USDKit8USDValueV5Vec3dV1ySdvg
 + _$s6USDKit8USDValueV5Vec3dV1ySdvpMV
 + _$s6USDKit8USDValueV5Vec3dV1ySdvs
 + _$s6USDKit8USDValueV5Vec3dV1zSdvM
-+ _$s6USDKit8USDValueV5Vec3dV1zSdvM.resume.0
++ _$s6USDKit8USDValueV5Vec3dV1zSdvM.resume
 + _$s6USDKit8USDValueV5Vec3dV1zSdvg
 + _$s6USDKit8USDValueV5Vec3dV1zSdvpMV
 + _$s6USDKit8USDValueV5Vec3dV1zSdvs
@@ -2478,7 +2425,7 @@ Symbols:
 + _$s6USDKit8USDValueV5Vec3dVs23CustomStringConvertibleAAsAFP11descriptionSSvgTW
 + _$s6USDKit8USDValueV5Vec3dVyAEs5SIMD3VySdGcfC
 + _$s6USDKit8USDValueV5Vec3dVySdSiciM
-+ _$s6USDKit8USDValueV5Vec3dVySdSiciM.resume.0
++ _$s6USDKit8USDValueV5Vec3dVySdSiciM.resume
 + _$s6USDKit8USDValueV5Vec3dVySdSicig
 + _$s6USDKit8USDValueV5Vec3dVySdSicipMV
 + _$s6USDKit8USDValueV5Vec3dVySdSicis
@@ -2499,17 +2446,17 @@ Symbols:
 + _$s6USDKit8USDValueV5Vec3fV15_arrayValueTypeAA7USDPrimV9AttributeV0eF0VvgZ
 + _$s6USDKit8USDValueV5Vec3fV15_arrayValueTypeAA7USDPrimV9AttributeV0eF0VvpZMV
 + _$s6USDKit8USDValueV5Vec3fV1xSfvM
-+ _$s6USDKit8USDValueV5Vec3fV1xSfvM.resume.0
++ _$s6USDKit8USDValueV5Vec3fV1xSfvM.resume
 + _$s6USDKit8USDValueV5Vec3fV1xSfvg
 + _$s6USDKit8USDValueV5Vec3fV1xSfvpMV
 + _$s6USDKit8USDValueV5Vec3fV1xSfvs
 + _$s6USDKit8USDValueV5Vec3fV1ySfvM
-+ _$s6USDKit8USDValueV5Vec3fV1ySfvM.resume.0
++ _$s6USDKit8USDValueV5Vec3fV1ySfvM.resume
 + _$s6USDKit8USDValueV5Vec3fV1ySfvg
 + _$s6USDKit8USDValueV5Vec3fV1ySfvpMV
 + _$s6USDKit8USDValueV5Vec3fV1ySfvs
 + _$s6USDKit8USDValueV5Vec3fV1zSfvM
-+ _$s6USDKit8USDValueV5Vec3fV1zSfvM.resume.0
++ _$s6USDKit8USDValueV5Vec3fV1zSfvM.resume
 + _$s6USDKit8USDValueV5Vec3fV1zSfvg
 + _$s6USDKit8USDValueV5Vec3fV1zSfvpMV
 + _$s6USDKit8USDValueV5Vec3fV1zSfvs
@@ -2604,7 +2551,7 @@ Symbols:
 + _$s6USDKit8USDValueV5Vec3fVyAESf_S2ftcfC
 + _$s6USDKit8USDValueV5Vec3fVyAEs5SIMD3VySfGcfC
 + _$s6USDKit8USDValueV5Vec3fVySfSiciM
-+ _$s6USDKit8USDValueV5Vec3fVySfSiciM.resume.0
++ _$s6USDKit8USDValueV5Vec3fVySfSiciM.resume
 + _$s6USDKit8USDValueV5Vec3fVySfSicig
 + _$s6USDKit8USDValueV5Vec3fVySfSicipMV
 + _$s6USDKit8USDValueV5Vec3fVySfSicis
@@ -2623,17 +2570,17 @@ Symbols:
 + _$s6USDKit8USDValueV5Vec3hV15_arrayValueTypeAA7USDPrimV9AttributeV0eF0VvgZ
 + _$s6USDKit8USDValueV5Vec3hV15_arrayValueTypeAA7USDPrimV9AttributeV0eF0VvpZMV
 + _$s6USDKit8USDValueV5Vec3hV1xs7Float16VvM
-+ _$s6USDKit8USDValueV5Vec3hV1xs7Float16VvM.resume.0
++ _$s6USDKit8USDValueV5Vec3hV1xs7Float16VvM.resume
 + _$s6USDKit8USDValueV5Vec3hV1xs7Float16Vvg
 + _$s6USDKit8USDValueV5Vec3hV1xs7Float16VvpMV
 + _$s6USDKit8USDValueV5Vec3hV1xs7Float16Vvs
 + _$s6USDKit8USDValueV5Vec3hV1ys7Float16VvM
-+ _$s6USDKit8USDValueV5Vec3hV1ys7Float16VvM.resume.0
++ _$s6USDKit8USDValueV5Vec3hV1ys7Float16VvM.resume
 + _$s6USDKit8USDValueV5Vec3hV1ys7Float16Vvg
 + _$s6USDKit8USDValueV5Vec3hV1ys7Float16VvpMV
 + _$s6USDKit8USDValueV5Vec3hV1ys7Float16Vvs
 + _$s6USDKit8USDValueV5Vec3hV1zs7Float16VvM
-+ _$s6USDKit8USDValueV5Vec3hV1zs7Float16VvM.resume.0
++ _$s6USDKit8USDValueV5Vec3hV1zs7Float16VvM.resume
 + _$s6USDKit8USDValueV5Vec3hV1zs7Float16Vvg
 + _$s6USDKit8USDValueV5Vec3hV1zs7Float16VvpMV
 + _$s6USDKit8USDValueV5Vec3hV1zs7Float16Vvs
@@ -2723,7 +2670,7 @@ Symbols:
 + _$s6USDKit8USDValueV5Vec3hVwst
 + _$s6USDKit8USDValueV5Vec3hVyAEs7Float16V_A2GtcfC
 + _$s6USDKit8USDValueV5Vec3hVys7Float16VSiciM
-+ _$s6USDKit8USDValueV5Vec3hVys7Float16VSiciM.resume.0
++ _$s6USDKit8USDValueV5Vec3hVys7Float16VSiciM.resume
 + _$s6USDKit8USDValueV5Vec3hVys7Float16VSicig
 + _$s6USDKit8USDValueV5Vec3hVys7Float16VSicipMV
 + _$s6USDKit8USDValueV5Vec3hVys7Float16VSicis
@@ -2742,17 +2689,17 @@ Symbols:
 + _$s6USDKit8USDValueV5Vec3iV15_arrayValueTypeAA7USDPrimV9AttributeV0eF0VvgZ
 + _$s6USDKit8USDValueV5Vec3iV15_arrayValueTypeAA7USDPrimV9AttributeV0eF0VvpZMV
 + _$s6USDKit8USDValueV5Vec3iV1xs5Int32VvM
-+ _$s6USDKit8USDValueV5Vec3iV1xs5Int32VvM.resume.0
++ _$s6USDKit8USDValueV5Vec3iV1xs5Int32VvM.resume
 + _$s6USDKit8USDValueV5Vec3iV1xs5Int32Vvg
 + _$s6USDKit8USDValueV5Vec3iV1xs5Int32VvpMV
 + _$s6USDKit8USDValueV5Vec3iV1xs5Int32Vvs
 + _$s6USDKit8USDValueV5Vec3iV1ys5Int32VvM
-+ _$s6USDKit8USDValueV5Vec3iV1ys5Int32VvM.resume.0
++ _$s6USDKit8USDValueV5Vec3iV1ys5Int32VvM.resume
 + _$s6USDKit8USDValueV5Vec3iV1ys5Int32Vvg
 + _$s6USDKit8USDValueV5Vec3iV1ys5Int32VvpMV
 + _$s6USDKit8USDValueV5Vec3iV1ys5Int32Vvs
 + _$s6USDKit8USDValueV5Vec3iV1zs5Int32VvM
-+ _$s6USDKit8USDValueV5Vec3iV1zs5Int32VvM.resume.0
++ _$s6USDKit8USDValueV5Vec3iV1zs5Int32VvM.resume
 + _$s6USDKit8USDValueV5Vec3iV1zs5Int32Vvg
 + _$s6USDKit8USDValueV5Vec3iV1zs5Int32VvpMV
 + _$s6USDKit8USDValueV5Vec3iV1zs5Int32Vvs
@@ -2844,7 +2791,7 @@ Symbols:
 + _$s6USDKit8USDValueV5Vec3iVyAEs5Int32V_A2GtcfC
 + _$s6USDKit8USDValueV5Vec3iVyAEs5SIMD3Vys5Int32VGcfC
 + _$s6USDKit8USDValueV5Vec3iVys5Int32VSiciM
-+ _$s6USDKit8USDValueV5Vec3iVys5Int32VSiciM.resume.0
++ _$s6USDKit8USDValueV5Vec3iVys5Int32VSiciM.resume
 + _$s6USDKit8USDValueV5Vec3iVys5Int32VSicig
 + _$s6USDKit8USDValueV5Vec3iVys5Int32VSicipMV
 + _$s6USDKit8USDValueV5Vec3iVys5Int32VSicis
@@ -2865,22 +2812,22 @@ Symbols:
 + _$s6USDKit8USDValueV5Vec4dV15_arrayValueTypeAA7USDPrimV9AttributeV0eF0VvgZ
 + _$s6USDKit8USDValueV5Vec4dV15_arrayValueTypeAA7USDPrimV9AttributeV0eF0VvpZMV
 + _$s6USDKit8USDValueV5Vec4dV1wSdvM
-+ _$s6USDKit8USDValueV5Vec4dV1wSdvM.resume.0
++ _$s6USDKit8USDValueV5Vec4dV1wSdvM.resume
 + _$s6USDKit8USDValueV5Vec4dV1wSdvg
 + _$s6USDKit8USDValueV5Vec4dV1wSdvpMV
 + _$s6USDKit8USDValueV5Vec4dV1wSdvs
 + _$s6USDKit8USDValueV5Vec4dV1xSdvM
-+ _$s6USDKit8USDValueV5Vec4dV1xSdvM.resume.0
++ _$s6USDKit8USDValueV5Vec4dV1xSdvM.resume
 + _$s6USDKit8USDValueV5Vec4dV1xSdvg
 + _$s6USDKit8USDValueV5Vec4dV1xSdvpMV
 + _$s6USDKit8USDValueV5Vec4dV1xSdvs
 + _$s6USDKit8USDValueV5Vec4dV1ySdvM
-+ _$s6USDKit8USDValueV5Vec4dV1ySdvM.resume.0
++ _$s6USDKit8USDValueV5Vec4dV1ySdvM.resume
 + _$s6USDKit8USDValueV5Vec4dV1ySdvg
 + _$s6USDKit8USDValueV5Vec4dV1ySdvpMV
 + _$s6USDKit8USDValueV5Vec4dV1ySdvs
 + _$s6USDKit8USDValueV5Vec4dV1zSdvM
-+ _$s6USDKit8USDValueV5Vec4dV1zSdvM.resume.0
++ _$s6USDKit8USDValueV5Vec4dV1zSdvM.resume
 + _$s6USDKit8USDValueV5Vec4dV1zSdvg
 + _$s6USDKit8USDValueV5Vec4dV1zSdvpMV
 + _$s6USDKit8USDValueV5Vec4dV1zSdvs
@@ -2975,7 +2922,7 @@ Symbols:
 + _$s6USDKit8USDValueV5Vec4dVyAESd_S3dtcfC
 + _$s6USDKit8USDValueV5Vec4dVyAEs5SIMD4VySdGcfC
 + _$s6USDKit8USDValueV5Vec4dVySdSiciM
-+ _$s6USDKit8USDValueV5Vec4dVySdSiciM.resume.0
++ _$s6USDKit8USDValueV5Vec4dVySdSiciM.resume
 + _$s6USDKit8USDValueV5Vec4dVySdSicig
 + _$s6USDKit8USDValueV5Vec4dVySdSicipMV
 + _$s6USDKit8USDValueV5Vec4dVySdSicis
@@ -2996,22 +2943,22 @@ Symbols:
 + _$s6USDKit8USDValueV5Vec4fV15_arrayValueTypeAA7USDPrimV9AttributeV0eF0VvgZ
 + _$s6USDKit8USDValueV5Vec4fV15_arrayValueTypeAA7USDPrimV9AttributeV0eF0VvpZMV
 + _$s6USDKit8USDValueV5Vec4fV1wSfvM
-+ _$s6USDKit8USDValueV5Vec4fV1wSfvM.resume.0
++ _$s6USDKit8USDValueV5Vec4fV1wSfvM.resume
 + _$s6USDKit8USDValueV5Vec4fV1wSfvg
 + _$s6USDKit8USDValueV5Vec4fV1wSfvpMV
 + _$s6USDKit8USDValueV5Vec4fV1wSfvs
 + _$s6USDKit8USDValueV5Vec4fV1xSfvM
-+ _$s6USDKit8USDValueV5Vec4fV1xSfvM.resume.0
++ _$s6USDKit8USDValueV5Vec4fV1xSfvM.resume
 + _$s6USDKit8USDValueV5Vec4fV1xSfvg
 + _$s6USDKit8USDValueV5Vec4fV1xSfvpMV
 + _$s6USDKit8USDValueV5Vec4fV1xSfvs
 + _$s6USDKit8USDValueV5Vec4fV1ySfvM
-+ _$s6USDKit8USDValueV5Vec4fV1ySfvM.resume.0
++ _$s6USDKit8USDValueV5Vec4fV1ySfvM.resume
 + _$s6USDKit8USDValueV5Vec4fV1ySfvg
 + _$s6USDKit8USDValueV5Vec4fV1ySfvpMV
 + _$s6USDKit8USDValueV5Vec4fV1ySfvs
 + _$s6USDKit8USDValueV5Vec4fV1zSfvM
-+ _$s6USDKit8USDValueV5Vec4fV1zSfvM.resume.0
++ _$s6USDKit8USDValueV5Vec4fV1zSfvM.resume
 + _$s6USDKit8USDValueV5Vec4fV1zSfvg
 + _$s6USDKit8USDValueV5Vec4fV1zSfvpMV
 + _$s6USDKit8USDValueV5Vec4fV1zSfvs
@@ -3106,7 +3053,7 @@ Symbols:
 + _$s6USDKit8USDValueV5Vec4fVyAESf_S3ftcfC
 + _$s6USDKit8USDValueV5Vec4fVyAEs5SIMD4VySfGcfC
 + _$s6USDKit8USDValueV5Vec4fVySfSiciM
-+ _$s6USDKit8USDValueV5Vec4fVySfSiciM.resume.0
++ _$s6USDKit8USDValueV5Vec4fVySfSiciM.resume
 + _$s6USDKit8USDValueV5Vec4fVySfSicig
 + _$s6USDKit8USDValueV5Vec4fVySfSicipMV
 + _$s6USDKit8USDValueV5Vec4fVySfSicis
@@ -3125,22 +3072,22 @@ Symbols:
 + _$s6USDKit8USDValueV5Vec4hV15_arrayValueTypeAA7USDPrimV9AttributeV0eF0VvgZ
 + _$s6USDKit8USDValueV5Vec4hV15_arrayValueTypeAA7USDPrimV9AttributeV0eF0VvpZMV
 + _$s6USDKit8USDValueV5Vec4hV1ws7Float16VvM
-+ _$s6USDKit8USDValueV5Vec4hV1ws7Float16VvM.resume.0
++ _$s6USDKit8USDValueV5Vec4hV1ws7Float16VvM.resume
 + _$s6USDKit8USDValueV5Vec4hV1ws7Float16Vvg
 + _$s6USDKit8USDValueV5Vec4hV1ws7Float16VvpMV
 + _$s6USDKit8USDValueV5Vec4hV1ws7Float16Vvs
 + _$s6USDKit8USDValueV5Vec4hV1xs7Float16VvM
-+ _$s6USDKit8USDValueV5Vec4hV1xs7Float16VvM.resume.0
++ _$s6USDKit8USDValueV5Vec4hV1xs7Float16VvM.resume
 + _$s6USDKit8USDValueV5Vec4hV1xs7Float16Vvg
 + _$s6USDKit8USDValueV5Vec4hV1xs7Float16VvpMV
 + _$s6USDKit8USDValueV5Vec4hV1xs7Float16Vvs
 + _$s6USDKit8USDValueV5Vec4hV1ys7Float16VvM
-+ _$s6USDKit8USDValueV5Vec4hV1ys7Float16VvM.resume.0
++ _$s6USDKit8USDValueV5Vec4hV1ys7Float16VvM.resume
 + _$s6USDKit8USDValueV5Vec4hV1ys7Float16Vvg
 + _$s6USDKit8USDValueV5Vec4hV1ys7Float16VvpMV
 + _$s6USDKit8USDValueV5Vec4hV1ys7Float16Vvs
 + _$s6USDKit8USDValueV5Vec4hV1zs7Float16VvM
-+ _$s6USDKit8USDValueV5Vec4hV1zs7Float16VvM.resume.0
++ _$s6USDKit8USDValueV5Vec4hV1zs7Float16VvM.resume
 + _$s6USDKit8USDValueV5Vec4hV1zs7Float16Vvg
 + _$s6USDKit8USDValueV5Vec4hV1zs7Float16VvpMV
 + _$s6USDKit8USDValueV5Vec4hV1zs7Float16Vvs
@@ -3230,7 +3177,7 @@ Symbols:
 + _$s6USDKit8USDValueV5Vec4hVwst
 + _$s6USDKit8USDValueV5Vec4hVyAEs7Float16V_A3GtcfC
 + _$s6USDKit8USDValueV5Vec4hVys7Float16VSiciM
-+ _$s6USDKit8USDValueV5Vec4hVys7Float16VSiciM.resume.0
++ _$s6USDKit8USDValueV5Vec4hVys7Float16VSiciM.resume
 + _$s6USDKit8USDValueV5Vec4hVys7Float16VSicig
 + _$s6USDKit8USDValueV5Vec4hVys7Float16VSicipMV
 + _$s6USDKit8USDValueV5Vec4hVys7Float16VSicis
@@ -3249,22 +3196,22 @@ Symbols:
 + _$s6USDKit8USDValueV5Vec4iV15_arrayValueTypeAA7USDPrimV9AttributeV0eF0VvgZ
 + _$s6USDKit8USDValueV5Vec4iV15_arrayValueTypeAA7USDPrimV9AttributeV0eF0VvpZMV
 + _$s6USDKit8USDValueV5Vec4iV1ws5Int32VvM
-+ _$s6USDKit8USDValueV5Vec4iV1ws5Int32VvM.resume.0
++ _$s6USDKit8USDValueV5Vec4iV1ws5Int32VvM.resume
 + _$s6USDKit8USDValueV5Vec4iV1ws5Int32Vvg
 + _$s6USDKit8USDValueV5Vec4iV1ws5Int32VvpMV
 + _$s6USDKit8USDValueV5Vec4iV1ws5Int32Vvs
 + _$s6USDKit8USDValueV5Vec4iV1xs5Int32VvM
-+ _$s6USDKit8USDValueV5Vec4iV1xs5Int32VvM.resume.0
++ _$s6USDKit8USDValueV5Vec4iV1xs5Int32VvM.resume
 + _$s6USDKit8USDValueV5Vec4iV1xs5Int32Vvg
 + _$s6USDKit8USDValueV5Vec4iV1xs5Int32VvpMV
 + _$s6USDKit8USDValueV5Vec4iV1xs5Int32Vvs
 + _$s6USDKit8USDValueV5Vec4iV1ys5Int32VvM
-+ _$s6USDKit8USDValueV5Vec4iV1ys5Int32VvM.resume.0
++ _$s6USDKit8USDValueV5Vec4iV1ys5Int32VvM.resume
 + _$s6USDKit8USDValueV5Vec4iV1ys5Int32Vvg
 + _$s6USDKit8USDValueV5Vec4iV1ys5Int32VvpMV
 + _$s6USDKit8USDValueV5Vec4iV1ys5Int32Vvs
 + _$s6USDKit8USDValueV5Vec4iV1zs5Int32VvM
-+ _$s6USDKit8USDValueV5Vec4iV1zs5Int32VvM.resume.0
++ _$s6USDKit8USDValueV5Vec4iV1zs5Int32VvM.resume
 + _$s6USDKit8USDValueV5Vec4iV1zs5Int32Vvg
 + _$s6USDKit8USDValueV5Vec4iV1zs5Int32VvpMV
 + _$s6USDKit8USDValueV5Vec4iV1zs5Int32Vvs
@@ -3356,7 +3303,7 @@ Symbols:
 + _$s6USDKit8USDValueV5Vec4iVyAEs5Int32V_A3GtcfC
 + _$s6USDKit8USDValueV5Vec4iVyAEs5SIMD4Vys5Int32VGcfC
 + _$s6USDKit8USDValueV5Vec4iVys5Int32VSiciM
-+ _$s6USDKit8USDValueV5Vec4iVys5Int32VSiciM.resume.0
++ _$s6USDKit8USDValueV5Vec4iVys5Int32VSiciM.resume
 + _$s6USDKit8USDValueV5Vec4iVys5Int32VSicig
 + _$s6USDKit8USDValueV5Vec4iVys5Int32VSicipMV
 + _$s6USDKit8USDValueV5Vec4iVys5Int32VSicis
@@ -3394,7 +3341,7 @@ Symbols:
 + _$s6USDKit8USDValueV8Matrix2dV4_setACyF
 + _$s6USDKit8USDValueV8Matrix2dV4hash4intoys6HasherVz_tF
 + _$s6USDKit8USDValueV8Matrix2dV6columns11InlineArrayVy$1_SdGSi_tciM
-+ _$s6USDKit8USDValueV8Matrix2dV6columns11InlineArrayVy$1_SdGSi_tciM.resume.0
++ _$s6USDKit8USDValueV8Matrix2dV6columns11InlineArrayVy$1_SdGSi_tciM.resume
 + _$s6USDKit8USDValueV8Matrix2dV6columns11InlineArrayVy$1_SdGSi_tcig
 + _$s6USDKit8USDValueV8Matrix2dV6columns11InlineArrayVy$1_SdGSi_tcipMV
 + _$s6USDKit8USDValueV8Matrix2dV6columns11InlineArrayVy$1_SdGSi_tcis
@@ -3463,7 +3410,7 @@ Symbols:
 + _$s6USDKit8USDValueV8Matrix2dVwst
 + _$s6USDKit8USDValueV8Matrix2dVyAESd_S3dtcfC
 + _$s6USDKit8USDValueV8Matrix2dVys11InlineArrayVy$1_SdGSiciM
-+ _$s6USDKit8USDValueV8Matrix2dVys11InlineArrayVy$1_SdGSiciM.resume.0
++ _$s6USDKit8USDValueV8Matrix2dVys11InlineArrayVy$1_SdGSiciM.resume
 + _$s6USDKit8USDValueV8Matrix2dVys11InlineArrayVy$1_SdGSicig
 + _$s6USDKit8USDValueV8Matrix2dVys11InlineArrayVy$1_SdGSicipMV
 + _$s6USDKit8USDValueV8Matrix2dVys11InlineArrayVy$1_SdGSicis
@@ -3479,7 +3426,7 @@ Symbols:
 + _$s6USDKit8USDValueV8Matrix2fV4_setACyF
 + _$s6USDKit8USDValueV8Matrix2fV4hash4intoys6HasherVz_tF
 + _$s6USDKit8USDValueV8Matrix2fV6columns11InlineArrayVy$1_SfGSi_tciM
-+ _$s6USDKit8USDValueV8Matrix2fV6columns11InlineArrayVy$1_SfGSi_tciM.resume.0
++ _$s6USDKit8USDValueV8Matrix2fV6columns11InlineArrayVy$1_SfGSi_tciM.resume
 + _$s6USDKit8USDValueV8Matrix2fV6columns11InlineArrayVy$1_SfGSi_tcig
 + _$s6USDKit8USDValueV8Matrix2fV6columns11InlineArrayVy$1_SfGSi_tcipMV
 + _$s6USDKit8USDValueV8Matrix2fV6columns11InlineArrayVy$1_SfGSi_tcis
@@ -3527,7 +3474,7 @@ Symbols:
 + _$s6USDKit8USDValueV8Matrix2fVwst
 + _$s6USDKit8USDValueV8Matrix2fVyAESf_S3ftcfC
 + _$s6USDKit8USDValueV8Matrix2fVys11InlineArrayVy$1_SfGSiciM
-+ _$s6USDKit8USDValueV8Matrix2fVys11InlineArrayVy$1_SfGSiciM.resume.0
++ _$s6USDKit8USDValueV8Matrix2fVys11InlineArrayVy$1_SfGSiciM.resume
 + _$s6USDKit8USDValueV8Matrix2fVys11InlineArrayVy$1_SfGSicig
 + _$s6USDKit8USDValueV8Matrix2fVys11InlineArrayVy$1_SfGSicipMV
 + _$s6USDKit8USDValueV8Matrix2fVys11InlineArrayVy$1_SfGSicis
@@ -3565,7 +3512,7 @@ Symbols:
 + _$s6USDKit8USDValueV8Matrix3dV4_setACyF
 + _$s6USDKit8USDValueV8Matrix3dV4hash4intoys6HasherVz_tF
 + _$s6USDKit8USDValueV8Matrix3dV6columns11InlineArrayVy$2_SdGSi_tciM
-+ _$s6USDKit8USDValueV8Matrix3dV6columns11InlineArrayVy$2_SdGSi_tciM.resume.0
++ _$s6USDKit8USDValueV8Matrix3dV6columns11InlineArrayVy$2_SdGSi_tciM.resume
 + _$s6USDKit8USDValueV8Matrix3dV6columns11InlineArrayVy$2_SdGSi_tcig
 + _$s6USDKit8USDValueV8Matrix3dV6columns11InlineArrayVy$2_SdGSi_tcipMV
 + _$s6USDKit8USDValueV8Matrix3dV6columns11InlineArrayVy$2_SdGSi_tcis
@@ -3637,7 +3584,7 @@ Symbols:
 + _$s6USDKit8USDValueV8Matrix3dVyAESd_S8dtcfC
 + _$s6USDKit8USDValueV8Matrix3dVyAESo14simd_double3x3acfC
 + _$s6USDKit8USDValueV8Matrix3dVys11InlineArrayVy$2_SdGSiciM
-+ _$s6USDKit8USDValueV8Matrix3dVys11InlineArrayVy$2_SdGSiciM.resume.0
++ _$s6USDKit8USDValueV8Matrix3dVys11InlineArrayVy$2_SdGSiciM.resume
 + _$s6USDKit8USDValueV8Matrix3dVys11InlineArrayVy$2_SdGSicig
 + _$s6USDKit8USDValueV8Matrix3dVys11InlineArrayVy$2_SdGSicipMV
 + _$s6USDKit8USDValueV8Matrix3dVys11InlineArrayVy$2_SdGSicis
@@ -3653,7 +3600,7 @@ Symbols:
 + _$s6USDKit8USDValueV8Matrix3fV4_setACyF
 + _$s6USDKit8USDValueV8Matrix3fV4hash4intoys6HasherVz_tF
 + _$s6USDKit8USDValueV8Matrix3fV6columns11InlineArrayVy$2_SfGSi_tciM
-+ _$s6USDKit8USDValueV8Matrix3fV6columns11InlineArrayVy$2_SfGSi_tciM.resume.0
++ _$s6USDKit8USDValueV8Matrix3fV6columns11InlineArrayVy$2_SfGSi_tciM.resume
 + _$s6USDKit8USDValueV8Matrix3fV6columns11InlineArrayVy$2_SfGSi_tcig
 + _$s6USDKit8USDValueV8Matrix3fV6columns11InlineArrayVy$2_SfGSi_tcipMV
 + _$s6USDKit8USDValueV8Matrix3fV6columns11InlineArrayVy$2_SfGSi_tcis
@@ -3704,7 +3651,7 @@ Symbols:
 + _$s6USDKit8USDValueV8Matrix3fVyAESf_S8ftcfC
 + _$s6USDKit8USDValueV8Matrix3fVyAESo13simd_float3x3acfC
 + _$s6USDKit8USDValueV8Matrix3fVys11InlineArrayVy$2_SfGSiciM
-+ _$s6USDKit8USDValueV8Matrix3fVys11InlineArrayVy$2_SfGSiciM.resume.0
++ _$s6USDKit8USDValueV8Matrix3fVys11InlineArrayVy$2_SfGSiciM.resume
 + _$s6USDKit8USDValueV8Matrix3fVys11InlineArrayVy$2_SfGSicig
 + _$s6USDKit8USDValueV8Matrix3fVys11InlineArrayVy$2_SfGSicipMV
 + _$s6USDKit8USDValueV8Matrix3fVys11InlineArrayVy$2_SfGSicis
@@ -3745,7 +3692,7 @@ Symbols:
 + _$s6USDKit8USDValueV8Matrix4dV4_setACyF
 + _$s6USDKit8USDValueV8Matrix4dV4hash4intoys6HasherVz_tF
 + _$s6USDKit8USDValueV8Matrix4dV6columns11InlineArrayVy$3_SdGSi_tciM
-+ _$s6USDKit8USDValueV8Matrix4dV6columns11InlineArrayVy$3_SdGSi_tciM.resume.0
++ _$s6USDKit8USDValueV8Matrix4dV6columns11InlineArrayVy$3_SdGSi_tciM.resume
 + _$s6USDKit8USDValueV8Matrix4dV6columns11InlineArrayVy$3_SdGSi_tcig
 + _$s6USDKit8USDValueV8Matrix4dV6columns11InlineArrayVy$3_SdGSi_tcipMV
 + _$s6USDKit8USDValueV8Matrix4dV6columns11InlineArrayVy$3_SdGSi_tcis
@@ -3821,7 +3768,7 @@ Symbols:
 + _$s6USDKit8USDValueV8Matrix4dVyAESo23SPProjectiveTransform3DacfC
 + _$s6USDKit8USDValueV8Matrix4dVyAESo28SPProjectiveTransform3DFloatacfC
 + _$s6USDKit8USDValueV8Matrix4dVys11InlineArrayVy$3_SdGSiciM
-+ _$s6USDKit8USDValueV8Matrix4dVys11InlineArrayVy$3_SdGSiciM.resume.0
++ _$s6USDKit8USDValueV8Matrix4dVys11InlineArrayVy$3_SdGSiciM.resume
 + _$s6USDKit8USDValueV8Matrix4dVys11InlineArrayVy$3_SdGSicig
 + _$s6USDKit8USDValueV8Matrix4dVys11InlineArrayVy$3_SdGSicipMV
 + _$s6USDKit8USDValueV8Matrix4dVys11InlineArrayVy$3_SdGSicis
@@ -3839,7 +3786,7 @@ Symbols:
 + _$s6USDKit8USDValueV8Matrix4fV4_setACyF
 + _$s6USDKit8USDValueV8Matrix4fV4hash4intoys6HasherVz_tF
 + _$s6USDKit8USDValueV8Matrix4fV6columns11InlineArrayVy$3_SfGSi_tciM
-+ _$s6USDKit8USDValueV8Matrix4fV6columns11InlineArrayVy$3_SfGSi_tciM.resume.0
++ _$s6USDKit8USDValueV8Matrix4fV6columns11InlineArrayVy$3_SfGSi_tciM.resume
 + _$s6USDKit8USDValueV8Matrix4fV6columns11InlineArrayVy$3_SfGSi_tcig
 + _$s6USDKit8USDValueV8Matrix4fV6columns11InlineArrayVy$3_SfGSi_tcipMV
 + _$s6USDKit8USDValueV8Matrix4fV6columns11InlineArrayVy$3_SfGSi_tcis
@@ -3888,7 +3835,7 @@ Symbols:
 + _$s6USDKit8USDValueV8Matrix4fVyAESf_S15ftcfC
 + _$s6USDKit8USDValueV8Matrix4fVyAESo28SPProjectiveTransform3DFloatacfC
 + _$s6USDKit8USDValueV8Matrix4fVys11InlineArrayVy$3_SfGSiciM
-+ _$s6USDKit8USDValueV8Matrix4fVys11InlineArrayVy$3_SfGSiciM.resume.0
++ _$s6USDKit8USDValueV8Matrix4fVys11InlineArrayVy$3_SfGSiciM.resume
 + _$s6USDKit8USDValueV8Matrix4fVys11InlineArrayVy$3_SfGSicig
 + _$s6USDKit8USDValueV8Matrix4fVys11InlineArrayVy$3_SfGSicipMV
 + _$s6USDKit8USDValueV8Matrix4fVys11InlineArrayVy$3_SfGSicis
@@ -7927,21 +7874,7 @@ Symbols:
 - _symbolic _____ So019pxrInternal__aapl__A10Reserved__O0063TfRefPtrpxrInternal__aapl__pxrReserved__SdfZipBuffer_GECAvxuaBeV
 - _type_layout_string So019pxrInternal__aapl__A10Reserved__O14SdfLayerOffsetV
 CStrings:
-+ "/AppleInternal/Library/BuildRoots/4~CRsiugCd_KAFpI29s8LOEjszGbf1OqhztHfdUQM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/base/tf/notice.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRsiugCd_KAFpI29s8LOEjszGbf1OqhztHfdUQM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/base/tf/refPtr.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRsiugCd_KAFpI29s8LOEjszGbf1OqhztHfdUQM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/base/tf/weakPtrFacade.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRsiugCd_KAFpI29s8LOEjszGbf1OqhztHfdUQM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/base/vt/array.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRsiugCd_KAFpI29s8LOEjszGbf1OqhztHfdUQM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/base/vt/dictionary.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRsiugCd_KAFpI29s8LOEjszGbf1OqhztHfdUQM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/sdf/childrenProxy.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRsiugCd_KAFpI29s8LOEjszGbf1OqhztHfdUQM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/sdf/declareHandles.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRsiugCd_KAFpI29s8LOEjszGbf1OqhztHfdUQM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/sdf/listEditorProxy.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRsiugCd_KAFpI29s8LOEjszGbf1OqhztHfdUQM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/sdf/listProxy.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRsiugCd_KAFpI29s8LOEjszGbf1OqhztHfdUQM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/sdf/mapEditProxy.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRsiugCd_KAFpI29s8LOEjszGbf1OqhztHfdUQM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/usd/object.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRsiugCd_KAFpI29s8LOEjszGbf1OqhztHfdUQM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/usd/primData.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRsiugCd_KAFpI29s8LOEjszGbf1OqhztHfdUQM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/usd/primRange.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRsiugCd_KAFpI29s8LOEjszGbf1OqhztHfdUQM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/usd/stage.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRsiugCd_KAFpI29s8LOEjszGbf1OqhztHfdUQM/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/usdGeom/xformOp.h"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/usdGeom/xformOp.h"
 + "> does not have an array value type"
 + "> does not support attribute access"
 + "> does not support layer field access"
@@ -8066,20 +7999,5 @@ CStrings:
 + "void pxrInternal__aapl__pxrReserved__::VtArray<pxrInternal__aapl__pxrReserved__::SdfPermission>::emplace_back(Args &&...) [ELEM = pxrInternal__aapl__pxrReserved__::SdfPermission, Args = <const pxrInternal__aapl__pxrReserved__::SdfPermission &>]"
 + "void pxrInternal__aapl__pxrReserved__::VtArray<pxrInternal__aapl__pxrReserved__::SdfSpecifier>::emplace_back(Args &&...) [ELEM = pxrInternal__aapl__pxrReserved__::SdfSpecifier, Args = <const pxrInternal__aapl__pxrReserved__::SdfSpecifier &>]"
 + "void pxrInternal__aapl__pxrReserved__::VtArray<pxrInternal__aapl__pxrReserved__::SdfVariability>::emplace_back(Args &&...) [ELEM = pxrInternal__aapl__pxrReserved__::SdfVariability, Args = <const pxrInternal__aapl__pxrReserved__::SdfVariability &>]"
-- "/AppleInternal/Library/BuildRoots/4~CQKRugBzoh1klds-Vc9pzW2s2YOVFOUbaEgLHco/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/base/tf/notice.h"
-- "/AppleInternal/Library/BuildRoots/4~CQKRugBzoh1klds-Vc9pzW2s2YOVFOUbaEgLHco/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/base/tf/refPtr.h"
-- "/AppleInternal/Library/BuildRoots/4~CQKRugBzoh1klds-Vc9pzW2s2YOVFOUbaEgLHco/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/base/tf/weakPtrFacade.h"
-- "/AppleInternal/Library/BuildRoots/4~CQKRugBzoh1klds-Vc9pzW2s2YOVFOUbaEgLHco/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/base/vt/array.h"
-- "/AppleInternal/Library/BuildRoots/4~CQKRugBzoh1klds-Vc9pzW2s2YOVFOUbaEgLHco/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/base/vt/dictionary.h"
-- "/AppleInternal/Library/BuildRoots/4~CQKRugBzoh1klds-Vc9pzW2s2YOVFOUbaEgLHco/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/sdf/childrenProxy.h"
-- "/AppleInternal/Library/BuildRoots/4~CQKRugBzoh1klds-Vc9pzW2s2YOVFOUbaEgLHco/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/sdf/declareHandles.h"
-- "/AppleInternal/Library/BuildRoots/4~CQKRugBzoh1klds-Vc9pzW2s2YOVFOUbaEgLHco/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/sdf/listEditorProxy.h"
-- "/AppleInternal/Library/BuildRoots/4~CQKRugBzoh1klds-Vc9pzW2s2YOVFOUbaEgLHco/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/sdf/listProxy.h"
-- "/AppleInternal/Library/BuildRoots/4~CQKRugBzoh1klds-Vc9pzW2s2YOVFOUbaEgLHco/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/sdf/mapEditProxy.h"
-- "/AppleInternal/Library/BuildRoots/4~CQKRugBzoh1klds-Vc9pzW2s2YOVFOUbaEgLHco/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/usd/object.h"
-- "/AppleInternal/Library/BuildRoots/4~CQKRugBzoh1klds-Vc9pzW2s2YOVFOUbaEgLHco/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/usd/primData.h"
-- "/AppleInternal/Library/BuildRoots/4~CQKRugBzoh1klds-Vc9pzW2s2YOVFOUbaEgLHco/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/usd/primRange.h"
-- "/AppleInternal/Library/BuildRoots/4~CQKRugBzoh1klds-Vc9pzW2s2YOVFOUbaEgLHco/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/usd/stage.h"
 - "T *pxrInternal__aapl__pxrReserved__::TfRefPtr<pxrInternal__aapl__pxrReserved__::SdfZipBuffer>::operator->() const [U = pxrInternal__aapl__pxrReserved__::SdfZipBuffer]"
-
 ```

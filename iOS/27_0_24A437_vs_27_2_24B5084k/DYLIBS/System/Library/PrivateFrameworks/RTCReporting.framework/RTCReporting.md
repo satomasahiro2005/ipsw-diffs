@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/RTCReporting.framework/RTCReporting`
 
-```diff
+### Section Size Changes
 
- 190.11.0.0.0
--  __TEXT.__text: 0x20f14
-+  __TEXT.__text: 0x20f1c
-   __TEXT.__objc_methlist: 0x4fc
-   __TEXT.__cstring: 0x6c7
-   __TEXT.__const: 0x10ea
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x22734` | `0x2273c` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_1a7e18c4c -> sub_1a8d2ec4c : 896 -> 904
+~ sub_19ff74d68 -> sub_19ffa8d68 : 908 -> 916
 ```

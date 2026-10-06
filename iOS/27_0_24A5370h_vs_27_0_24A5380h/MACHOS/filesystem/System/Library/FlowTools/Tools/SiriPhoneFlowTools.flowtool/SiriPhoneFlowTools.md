@@ -2,103 +2,66 @@
 
 > `/System/Library/FlowTools/Tools/SiriPhoneFlowTools.flowtool/SiriPhoneFlowTools`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa3dc4` | `0xa5344` | **`+0x1580`** |
+| `__DATA_CONST.__const` | `0x5a50` | `0x5e50` | **`+0x400`** |
+| `__TEXT.__const` | `0x88c8` | `0x8a58` | **`+0x190`** |
+| `__TEXT.__swift5_typeref` | `0x22d6` | `0x23fc` | **`+0x126`** |
+| `__DATA.__bss` | `0xac48` | `0xad68` | **`+0x120`** |
+| `__TEXT.__swift5_capture` | `0x760` | `0x840` | **`+0xe0`** |
+| `__DATA.__objc_const` | `0x1ae0` | `0x1a08` | **`-0xd8`** |
+| `__TEXT.__oslogstring` | `0x516e` | `0x522e` | **`+0xc0`** |
+| `__TEXT.__swift5_reflstr` | `0x1d7b` | `0x1e1b` | **`+0xa0`** |
+| `__TEXT.__swift5_fieldmd` | `0x1ca0` | `0x1d04` | **`+0x64`** |
+| `__DATA_CONST.__got` | `0xa78` | `0xa18` | **`-0x60`** |
+| `__TEXT.__unwind_info` | `0x31e8` | `0x3248` | **`+0x60`** |
+| `__DATA.__data` | `0x3570` | `0x3518` | **`-0x58`** |
+| `__TEXT.__constg_swiftt` | `0x1c24` | `0x1c70` | **`+0x4c`** |
+| `__TEXT.__cstring` | `0x1c76` | `0x1cb6` | **`+0x40`** |
+| `__TEXT.__objc_classname` | `0x7c2` | `0x782` | **`-0x40`** |
+| `__DATA_CONST.__auth_ptr` | `0xb40` | `0xb70` | **`+0x30`** |
+| `__TEXT.__swift5_assocty` | `0x830` | `0x860` | **`+0x30`** |
+| `__TEXT.__auth_stubs` | `0x2650` | `0x2670` | **`+0x20`** |
+| `__TEXT.__eh_frame` | `0x5f1c` | `0x5f3c` | **`+0x20`** |
+| `__TEXT.__objc_stubs` | `0x1240` | `0x1260` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0x1330` | `0x1340` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x5dc` | `0x5e8` | **`+0xc`** |
+| `__TEXT.__swift5_types` | `0x250` | `0x25c` | **`+0xc`** |
+| `__TEXT.__objc_methtype` | `0x189` | `0x17f` | **`-0xa`** |
+| `__DATA.__objc_selrefs` | `0x540` | `0x548` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0xe8` | `0xe0` | **`-0x8`** |
+| `__TEXT.__swift_as_entry` | `0x2e0` | `0x2e8` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x6c` | `0x70` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x33c` | `0x340` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__objc_methname`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift_as_cont`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xa3dc4
--  __TEXT.__auth_stubs: 0x2650
--  __TEXT.__objc_stubs: 0x1240
-+  __TEXT.__text: 0xa5344
-+  __TEXT.__auth_stubs: 0x2670
-+  __TEXT.__objc_stubs: 0x1260
-   __TEXT.__objc_methlist: 0x154
--  __TEXT.__const: 0x88c8
--  __TEXT.__cstring: 0x1c76
--  __TEXT.__swift5_typeref: 0x22d6
--  __TEXT.__oslogstring: 0x516e
--  __TEXT.__swift5_capture: 0x760
--  __TEXT.__constg_swiftt: 0x1c24
--  __TEXT.__swift5_fieldmd: 0x1ca0
--  __TEXT.__swift5_reflstr: 0x1d7b
-+  __TEXT.__const: 0x8a58
-+  __TEXT.__cstring: 0x1cb6
-+  __TEXT.__swift5_typeref: 0x23fc
-+  __TEXT.__oslogstring: 0x522e
-+  __TEXT.__swift5_capture: 0x840
-+  __TEXT.__constg_swiftt: 0x1c70
-+  __TEXT.__swift5_fieldmd: 0x1d04
-+  __TEXT.__swift5_reflstr: 0x1e1b
-   __TEXT.__swift5_builtin: 0x8c
--  __TEXT.__swift5_assocty: 0x830
--  __TEXT.__swift5_proto: 0x5dc
--  __TEXT.__swift5_types: 0x250
--  __TEXT.__objc_classname: 0x7c2
-+  __TEXT.__swift5_assocty: 0x860
-+  __TEXT.__swift5_proto: 0x5e8
-+  __TEXT.__swift5_types: 0x25c
-+  __TEXT.__objc_classname: 0x782
-   __TEXT.__objc_methname: 0x1147
--  __TEXT.__objc_methtype: 0x189
--  __TEXT.__swift5_protos: 0x6c
--  __TEXT.__swift_as_entry: 0x2e0
--  __TEXT.__swift_as_ret: 0x33c
-+  __TEXT.__objc_methtype: 0x17f
-+  __TEXT.__swift5_protos: 0x70
-+  __TEXT.__swift_as_entry: 0x2e8
-+  __TEXT.__swift_as_ret: 0x340
-   __TEXT.__swift_as_cont: 0x48c
-   __TEXT.__swift5_mpenum: 0x84
--  __TEXT.__unwind_info: 0x31e8
--  __TEXT.__eh_frame: 0x5f1c
--  __DATA_CONST.__const: 0x5a50
-+  __TEXT.__unwind_info: 0x3248
-+  __TEXT.__eh_frame: 0x5f3c
-+  __DATA_CONST.__const: 0x5e50
-   __DATA_CONST.__cfstring: 0xc0
--  __DATA_CONST.__objc_classlist: 0xe8
-+  __DATA_CONST.__objc_classlist: 0xe0
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x28
--  __DATA_CONST.__auth_got: 0x1330
--  __DATA_CONST.__got: 0xa78
--  __DATA_CONST.__auth_ptr: 0xb40
--  __DATA.__objc_const: 0x1ae0
--  __DATA.__objc_selrefs: 0x540
-+  __DATA_CONST.__auth_got: 0x1340
-+  __DATA_CONST.__got: 0xa18
-+  __DATA_CONST.__auth_ptr: 0xb70
-+  __DATA.__objc_const: 0x1a08
-+  __DATA.__objc_selrefs: 0x548
-   __DATA.__objc_data: 0x48
--  __DATA.__data: 0x3570
--  __DATA.__bss: 0xac48
-+  __DATA.__data: 0x3518
-+  __DATA.__bss: 0xad68
-   __DATA.__common: 0x338
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/Contacts.framework/Contacts
+-3600.38.6.0.0
++3600.38.13.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5011
--  Symbols:   36232
--  CStrings:  796
+-  Symbols:   11097
+-  CStrings:  790
 +  Functions: 5070
-+  Symbols:   36658
-+  CStrings:  800
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__objc_methname : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__common : content changed
++  Symbols:   11221
++  CStrings:  794
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/SiriPhone/install/Symbols/BuiltProducts/libSiriPhoneFlowToolsImplementation.a(AppNameProvider.o)
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/SiriPhone/install/Symbols/BuiltProducts/libSiriPhoneFlowToolsImplementation.a(FaceTimeAccountSetupProvider.o)
@@ -453,5 +416,4 @@ CStrings:
 + "localizedName"
 - "_TtC18SiriPhoneFlowTools28CallStateNotificationManager"
 - "notificationTaskTimeout"
-
 ```

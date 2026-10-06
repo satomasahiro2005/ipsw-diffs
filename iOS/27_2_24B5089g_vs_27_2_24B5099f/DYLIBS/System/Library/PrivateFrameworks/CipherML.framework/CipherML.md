@@ -2,55 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/CipherML.framework/CipherML`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x200bfc` | `0x1ff70c` | **`-0x14f0`** |
+| `__TEXT.__eh_frame` | `0x13e0c` | `0x13d6c` | **`-0xa0`** |
+| `__TEXT.__unwind_info` | `0x8230` | `0x8218` | **`-0x18`** |
+| `__DATA_DIRTY.__data` | `0x7b88` | `0x7b98` | **`+0x10`** |
+| `__TEXT.__const` | `0x13d80` | `0x13d90` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1a20` | `0x1a28` | **`+0x8`** |
+| `__DATA.__data` | `0x29c8` | `0x29c0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -383.40.14.0.1
--  __TEXT.__text: 0x1ed4c4
 +383.40.16.0.0
-+  __TEXT.__text: 0x1ebff4
-   __TEXT.__objc_methlist: 0x145c
--  __TEXT.__const: 0x13d80
-+  __TEXT.__const: 0x13d90
-   __TEXT.__cstring: 0x3776
-   __TEXT.__oslogstring: 0x35db
-   __TEXT.__gcc_except_tab: 0x53c
 
-   __TEXT.__swift_as_cont: 0xcf8
-   __TEXT.__swift5_mpenum: 0x50
-   __TEXT.__swift5_protos: 0x28
--  __TEXT.__unwind_info: 0x9f00
--  __TEXT.__eh_frame: 0x13e14
-+  __TEXT.__unwind_info: 0x9ee8
-+  __TEXT.__eh_frame: 0x13d74
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __AUTH_CONST.__const: 0x6bc0
-   __AUTH_CONST.__cfstring: 0xaa0
-   __AUTH_CONST.__objc_const: 0x3e90
--  __AUTH_CONST.__auth_got: 0x1a20
-+  __AUTH_CONST.__auth_got: 0x1a28
-   __AUTH.__data: 0x1a8
-   __DATA.__objc_ivar: 0xdc
--  __DATA.__data: 0x29c8
-+  __DATA.__data: 0x29c0
-   __DATA.__common: 0x50
-   __DATA_DIRTY.__objc_data: 0xc38
--  __DATA_DIRTY.__data: 0x7b88
-+  __DATA_DIRTY.__data: 0x7b98
-   __DATA_DIRTY.__bss: 0x5d08
-   __DATA_DIRTY.__common: 0x1d8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10508
 +  Functions: 10505
-   Symbols:   22397
-   CStrings:  585
- 
 Symbols:
 + _$s10Foundation4DateV2leoiySbAC_ACtFZ
 + _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVySSG_Tg5

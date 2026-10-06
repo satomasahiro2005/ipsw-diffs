@@ -2,64 +2,32 @@
 
 > `/usr/lib/libnfstorage.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7cec` | `0x8390` | **`+0x6a4`** |
+| `__AUTH.__objc_data` | `0x230` | `0xf0` | **`-0x140`** |
+| `__DATA_DIRTY.__objc_data` | `0x1e0` | `0x320` | **`+0x140`** |
+| `__TEXT.__cstring` | `0xd4d` | `0xdfe` | **`+0xb1`** |
+| `__DATA_CONST.__const` | `0x208` | `0x230` | **`+0x28`** |
+| `__AUTH_CONST.__objc_intobj` | `0x198` | `0x1b0` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x268` | `0x278` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4b0` | `0x4b8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x7cec
--  __TEXT.__objc_methlist: 0x268
-+  __TEXT.__text: 0x8390
-+  __TEXT.__objc_methlist: 0x278
-   __TEXT.__const: 0x70
--  __TEXT.__cstring: 0xd4d
-+  __TEXT.__cstring: 0xdfe
-   __TEXT.__oslogstring: 0x546
-   __TEXT.__unwind_info: 0x108
-   __TEXT.__objc_stubs: 0x0
+-370.37.0.0.0
++370.38.2.0.0
 
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x208
-+  __DATA_CONST.__const: 0x230
-   __DATA_CONST.__objc_classlist: 0x68
-   __DATA_CONST.__objc_protolist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4b0
-+  __DATA_CONST.__objc_selrefs: 0x4b8
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__cfstring: 0x560
-   __AUTH_CONST.__objc_const: 0xbc8
--  __AUTH_CONST.__objc_intobj: 0x198
-+  __AUTH_CONST.__objc_intobj: 0x1b0
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x230
-+  __AUTH.__objc_data: 0xf0
-   __DATA.__objc_ivar: 0xc
-   __DATA.__data: 0x60
--  __DATA_DIRTY.__objc_data: 0x1e0
-+  __DATA_DIRTY.__objc_data: 0x320
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libnfshared.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 60
 +  Functions: 62
-   Symbols:   105
--  CStrings:  151
-+  CStrings:  153
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __DATA.__data : content changed
+
+-  CStrings:  109
++  CStrings:  111
 CStrings:
 + "-[NFStorageControllerDeveloperPresentment fetchReportsWithBundleID:teamID:error:]"
 + "-[NFStorageControllerDeveloperPresentment fetchReportsWithBundleID:teamID:error:]_block_invoke"
-
 ```

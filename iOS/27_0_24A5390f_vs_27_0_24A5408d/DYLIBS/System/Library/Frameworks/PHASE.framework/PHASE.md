@@ -2,20 +2,20 @@
 
 > `/System/Library/Frameworks/PHASE.framework/PHASE`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__realtime` | `0x17198` | `0x17138` | **`-0x60`** |
+| `__TEXT.__const` | `0x47b2c` | `0x47b1c` | **`-0x10`** |
+| `__TEXT.__text` | `0x252a58` | `0x252a50` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -399.0.0.0.0
--  __TEXT.__text: 0x252a58
--  __TEXT.__realtime: 0x17198
 +400.0.0.0.0
-+  __TEXT.__text: 0x252a50
-+  __TEXT.__realtime: 0x17138
-   __TEXT.__objc_methlist: 0x5084
--  __TEXT.__const: 0x47b2c
-+  __TEXT.__const: 0x47b1c
-   __TEXT.__dlopen_cstrs: 0x5a
-   __TEXT.__gcc_except_tab: 0x268b8
-   __TEXT.__oslogstring: 0x21da3
 Functions:
 ~ __ZN5Phase10Controller19ConvolutionRenderer13SetParametersEPKNS0_18RendererParametersE : 4836 -> 4828
 ~ __ZN5Phase10AudioGraph14ConvolverSliceILi1EE7ProcessEi : 1956 -> 1948

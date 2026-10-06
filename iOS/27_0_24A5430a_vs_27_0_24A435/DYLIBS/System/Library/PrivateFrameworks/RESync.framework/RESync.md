@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/RESync.framework/RESync`
 
-```diff
+### Section Size Changes
 
- 453.2.1.0.0
--  __TEXT.__text: 0x78390
-+  __TEXT.__text: 0x78450
-   __TEXT.__objc_methlist: 0x2d4
-   __TEXT.__const: 0x1fe8
-   __TEXT.__cstring: 0x6dee
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x78390` | `0x78450` | **`+0xc0`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN2re11TypeBuilder8commitToENS_6TypeIDE : 7800 -> 7816
 ~ __ZNK2re9DataArrayINS_8internal13TypeInfoIndexEE3getENS_15DataArrayHandleIS2_EE : 304 -> 308

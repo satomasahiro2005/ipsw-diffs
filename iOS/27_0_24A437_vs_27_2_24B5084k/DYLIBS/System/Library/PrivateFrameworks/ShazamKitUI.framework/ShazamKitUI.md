@@ -2,94 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/ShazamKitUI.framework/ShazamKitUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14ebc4` | `0x14f768` | **`+0xba4`** |
+| `__TEXT.__swift5_typeref` | `0xfd34` | `0xfe64` | **`+0x130`** |
+| `__AUTH.__data` | `0x25d8` | `0x2670` | **`+0x98`** |
+| `__AUTH_CONST.__objc_const` | `0x2278` | `0x2308` | **`+0x90`** |
+| `__TEXT.__const` | `0xf8f4` | `0xf964` | **`+0x70`** |
+| `__TEXT.__eh_frame` | `0x2a04` | `0x29bc` | **`-0x48`** |
+| `__TEXT.__constg_swiftt` | `0x6438` | `0x646c` | **`+0x34`** |
+| `__TEXT.__oslogstring` | `0x41d` | `0x3fd` | **`-0x20`** |
+| `__TEXT.__unwind_info` | `0x4238` | `0x4218` | **`-0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x2578` | `0x2590` | **`+0x18`** |
+| `__DATA.__data` | `0x6e40` | `0x6e58` | **`+0x18`** |
+| `__TEXT.__swift5_fieldmd` | `0x3b44` | `0x3b50` | **`+0xc`** |
+| `__TEXT.__swift_as_cont` | `0x19c` | `0x190` | **`-0xc`** |
+| `__DATA_CONST.__got` | `0x1310` | `0x1318` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x108` | `0x110` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x444` | `0x448` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0xe4` | `0xe0` | **`-0x4`** |
+| `__TEXT.__swift_as_ret` | `0xb0` | `0xac` | **`-0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__swift5_reflstr`
+
+### Other Changes
 
 ```diff
 
 -427.0.48.0.0
--  __TEXT.__text: 0x1418c8
 +427.2.4.0.0
-+  __TEXT.__text: 0x142458
-   __TEXT.__objc_methlist: 0xe60
--  __TEXT.__const: 0xf8f4
-+  __TEXT.__const: 0xf964
-   __TEXT.__cstring: 0x3949
--  __TEXT.__constg_swiftt: 0x6438
--  __TEXT.__swift5_typeref: 0xfd34
-+  __TEXT.__constg_swiftt: 0x646c
-+  __TEXT.__swift5_typeref: 0xfe64
-   __TEXT.__swift5_builtin: 0x12c
-   __TEXT.__swift5_reflstr: 0x34a6
--  __TEXT.__swift5_fieldmd: 0x3b44
-+  __TEXT.__swift5_fieldmd: 0x3b50
-   __TEXT.__swift5_assocty: 0x13b0
-   __TEXT.__swift5_capture: 0x1620
-   __TEXT.__swift5_proto: 0x594
--  __TEXT.__swift5_types: 0x444
--  __TEXT.__swift_as_entry: 0xe4
--  __TEXT.__swift_as_ret: 0xb0
--  __TEXT.__swift_as_cont: 0x19c
--  __TEXT.__oslogstring: 0x41d
-+  __TEXT.__swift5_types: 0x448
-+  __TEXT.__swift_as_entry: 0xe0
-+  __TEXT.__swift_as_ret: 0xac
-+  __TEXT.__swift_as_cont: 0x190
-+  __TEXT.__oslogstring: 0x3fd
-   __TEXT.__swift5_protos: 0x5c
-   __TEXT.__swift5_mpenum: 0x24
--  __TEXT.__unwind_info: 0x5128
--  __TEXT.__eh_frame: 0x2a04
-+  __TEXT.__unwind_info: 0x5118
-+  __TEXT.__eh_frame: 0x29bc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x1c8
--  __DATA_CONST.__objc_classlist: 0x108
-+  __DATA_CONST.__objc_classlist: 0x110
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__objc_superrefs: 0x50
-   __DATA_CONST.__objc_arraydata: 0x230
--  __DATA_CONST.__got: 0x1310
-+  __DATA_CONST.__got: 0x1318
-   __AUTH_CONST.__const: 0x8228
-   __AUTH_CONST.__cfstring: 0x2c0
--  __AUTH_CONST.__objc_const: 0x2278
-+  __AUTH_CONST.__objc_const: 0x2308
-   __AUTH_CONST.__objc_doubleobj: 0x190
-   __AUTH_CONST.__objc_arrayobj: 0x210
-   __AUTH_CONST.__objc_floatobj: 0x190
-   __AUTH_CONST.__objc_intobj: 0x30
--  __AUTH_CONST.__auth_got: 0x2578
-+  __AUTH_CONST.__auth_got: 0x2590
-   __AUTH.__objc_data: 0xc70
--  __AUTH.__data: 0x25d8
-+  __AUTH.__data: 0x2670
-   __DATA.__objc_ivar: 0xa0
--  __DATA.__data: 0x6e40
-+  __DATA.__data: 0x6e58
-   __DATA.__common: 0x1d0
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6169
--  Symbols:   3449
+-  Symbols:   3120
 -  CStrings:  434
 +  Functions: 6168
-+  Symbols:   3453
++  Symbols:   3124
 +  CStrings:  433
- 
 Symbols:
 + __DATA__TtC11ShazamKitUIP33_4022EA66B9D85EEDBA1E9DA6BF526CC219ResourceBundleClass
 + __METACLASS_DATA__TtC11ShazamKitUIP33_4022EA66B9D85EEDBA1E9DA6BF526CC219ResourceBundleClass

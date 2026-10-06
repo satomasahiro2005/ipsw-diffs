@@ -2,16 +2,17 @@
 
 > `/System/Library/Frameworks/CoreAudioKit.framework/CoreAudioKit`
 
-```diff
+### Section Size Changes
 
- 296.0.0.0.0
--  __TEXT.__text: 0xf6834
-+  __TEXT.__text: 0xf6818
-   __TEXT.__objc_methlist: 0x3d90
-   __TEXT.__const: 0x4e4a
-   __TEXT.__gcc_except_tab: 0x14bc
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf6834` | `0xf6818` | **`-0x1c`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_247bb2980 -> sub_247545980 : 1672 -> 1664
-~ sub_247bb3008 -> sub_247546000 : 1532 -> 1520
-~ sub_247bb9f70 -> sub_24754cf5c : 1444 -> 1436
+~ sub_247a76980 -> sub_247409980 : 1672 -> 1664
+~ sub_247a77008 -> sub_24740a000 : 1532 -> 1520
+~ sub_247a7df70 -> sub_247410f5c : 1444 -> 1436
 ```

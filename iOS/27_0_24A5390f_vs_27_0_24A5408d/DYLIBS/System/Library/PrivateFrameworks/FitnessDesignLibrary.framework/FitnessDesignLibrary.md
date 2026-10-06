@@ -2,86 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/FitnessDesignLibrary.framework/FitnessDesignLibrary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4648` | `0x12d88` | **`+0xe740`** |
+| `__TEXT.__const` | `0x528` | `0x1638` | **`+0x1110`** |
+| `__DATA.__bss` | `0x700` | `0x1780` | **`+0x1080`** |
+| `__AUTH.__objc_data` | `—` | `0x9f8` | **`+0x9f8`** |
+| `__AUTH_CONST.__objc_const` | `0x48` | `0x910` | **`+0x8c8`** |
+| `__AUTH_CONST.__const` | `0x480` | `0xcd8` | **`+0x858`** |
+| `__TEXT.__constg_swiftt` | `0x32c` | `0x9e0` | **`+0x6b4`** |
+| `__TEXT.__swift5_typeref` | `0x1ad` | `0x68c` | **`+0x4df`** |
+| `__TEXT.__swift5_fieldmd` | `0x168` | `0x5f8` | **`+0x490`** |
+| `__TEXT.__swift5_reflstr` | `0x7b` | `0x48a` | **`+0x40f`** |
+| `__DATA.__data` | `0xc0` | `0x4c8` | **`+0x408`** |
+| `__TEXT.__unwind_info` | `0x1b8` | `0x5b0` | **`+0x3f8`** |
+| `__AUTH_CONST.__auth_got` | `0x298` | `0x678` | **`+0x3e0`** |
+| `__TEXT.__cstring` | `0xc` | `0x3ca` | **`+0x3be`** |
+| `__DATA_CONST.__objc_selrefs` | `0x40` | `0x3c0` | **`+0x380`** |
+| `__TEXT.__objc_methlist` | `—` | `0x264` | **`+0x264`** |
+| `__AUTH.__data` | `—` | `0x1b8` | **`+0x1b8`** |
+| `__TEXT.__eh_frame` | `0x188` | `0x2c8` | **`+0x140`** |
+| `__TEXT.__swift5_capture` | `0x70` | `0x134` | **`+0xc4`** |
+| `__DATA_CONST.__const` | `0xa8` | `0x158` | **`+0xb0`** |
+| `__TEXT.__swift5_proto` | `0x38` | `0xbc` | **`+0x84`** |
+| `__TEXT.__swift5_builtin` | `0x3c` | `0xa0` | **`+0x64`** |
+| `__TEXT.__swift5_types` | `0x1c` | `0x80` | **`+0x64`** |
+| `__TEXT.__swift5_assocty` | `0x18` | `0x78` | **`+0x60`** |
+| `__DATA_CONST.__objc_classlist` | `—` | `0x58` | **`+0x58`** |
+| `__TEXT.__swift5_mpenum` | `—` | `0x10` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `0x8` | `0xc` | **`+0x4`** |
+| `__TEXT.__objc_classname` | `—` | `0x0` | **`+0x0`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.5.0.0
--  __TEXT.__text: 0x4648
--  __TEXT.__const: 0x528
--  __TEXT.__swift5_typeref: 0x1ad
--  __TEXT.__swift5_fieldmd: 0x168
--  __TEXT.__constg_swiftt: 0x32c
--  __TEXT.__swift5_builtin: 0x3c
--  __TEXT.__swift5_reflstr: 0x7b
--  __TEXT.__swift5_protos: 0x8
--  __TEXT.__swift5_types: 0x1c
--  __TEXT.__swift5_proto: 0x38
--  __TEXT.__cstring: 0xc
--  __TEXT.__swift5_assocty: 0x18
--  __TEXT.__swift5_capture: 0x70
--  __TEXT.__unwind_info: 0x1b8
--  __TEXT.__eh_frame: 0x188
 +2027.0.7.0.0
-+  __TEXT.__text: 0x12d88
-+  __TEXT.__objc_methlist: 0x264
-+  __TEXT.__const: 0x1638
-+  __TEXT.__constg_swiftt: 0x9e0
-+  __TEXT.__swift5_typeref: 0x68c
-+  __TEXT.__swift5_fieldmd: 0x5f8
-+  __TEXT.__swift5_builtin: 0xa0
-+  __TEXT.__swift5_reflstr: 0x48a
-+  __TEXT.__swift5_assocty: 0x78
-+  __TEXT.__swift5_proto: 0xbc
-+  __TEXT.__swift5_types: 0x80
-+  __TEXT.__swift5_protos: 0xc
-+  __TEXT.__swift5_capture: 0x134
-+  __TEXT.__swift5_mpenum: 0x10
-+  __TEXT.__cstring: 0x3ca
-+  __TEXT.__unwind_info: 0x5b0
-+  __TEXT.__eh_frame: 0x2c8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-+  __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xa8
-+  __DATA_CONST.__const: 0x158
-+  __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x40
-+  __DATA_CONST.__objc_selrefs: 0x3c0
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x480
--  __AUTH_CONST.__objc_const: 0x48
--  __AUTH_CONST.__auth_got: 0x298
--  __DATA.__data: 0xc0
--  __DATA.__bss: 0x700
-+  __AUTH_CONST.__const: 0xcd8
-+  __AUTH_CONST.__objc_const: 0x910
-+  __AUTH_CONST.__auth_got: 0x678
-+  __AUTH.__objc_data: 0x9f8
-+  __AUTH.__data: 0x1b8
-+  __DATA.__data: 0x4c8
-+  __DATA.__bss: 0x1780
-   __DATA_DIRTY.__data: 0x128
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-+  - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-+  - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftCore.dylib
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
+
++  - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+
 -  Functions: 134
--  Symbols:   154
+-  Symbols:   146
 -  CStrings:  2
 +  Functions: 529
-+  Symbols:   530
++  Symbols:   416
 +  CStrings:  21
- 
 Symbols:
 + _CGRectGetHeight
 + _CGRectGetWidth
@@ -215,112 +185,6 @@ Symbols:
 + _get_enum_tag_for_layout_string 20FitnessDesignLibrary18SessionSummaryItemO
 + _get_enum_tag_for_layout_string 20FitnessDesignLibrary28SessionSummarySectionContentO
 + _objc_allocWithZone
-+ _objc_msgSend$CGColor
-+ _objc_msgSend$_hasSplitViewControllerContextSidebarColumn
-+ _objc_msgSend$activateConstraints:
-+ _objc_msgSend$addAction:forControlEvents:
-+ _objc_msgSend$addArrangedSubview:
-+ _objc_msgSend$addInteraction:
-+ _objc_msgSend$addLayoutGuide:
-+ _objc_msgSend$addSublayer:
-+ _objc_msgSend$addSubview:
-+ _objc_msgSend$arrangedSubviews
-+ _objc_msgSend$backgroundDecorationItemWithElementKind:
-+ _objc_msgSend$blackColor
-+ _objc_msgSend$bottomAnchor
-+ _objc_msgSend$bounds
-+ _objc_msgSend$buttonWithType:
-+ _objc_msgSend$centerYAnchor
-+ _objc_msgSend$clearColor
-+ _objc_msgSend$collectionViewLayout
-+ _objc_msgSend$colorWithAlphaComponent:
-+ _objc_msgSend$constraintEqualToAnchor:
-+ _objc_msgSend$constraintEqualToAnchor:constant:
-+ _objc_msgSend$constraintEqualToAnchor:multiplier:
-+ _objc_msgSend$constraintEqualToConstant:
-+ _objc_msgSend$constraintGreaterThanOrEqualToAnchor:
-+ _objc_msgSend$constraintGreaterThanOrEqualToAnchor:constant:
-+ _objc_msgSend$contentView
-+ _objc_msgSend$directionalLayoutMargins
-+ _objc_msgSend$effectWithStyle:
-+ _objc_msgSend$effectiveContentSize
-+ _objc_msgSend$estimatedDimension:
-+ _objc_msgSend$fixedSpacing:
-+ _objc_msgSend$fontDescriptorWithDesign:
-+ _objc_msgSend$fontDescriptorWithSymbolicTraits:
-+ _objc_msgSend$fontWithDescriptor:size:
-+ _objc_msgSend$heightAnchor
-+ _objc_msgSend$horizontalGroupWithLayoutSize:repeatingSubitem:count:
-+ _objc_msgSend$horizontalGroupWithLayoutSize:subitems:
-+ _objc_msgSend$horizontalSizeClass
-+ _objc_msgSend$identifier
-+ _objc_msgSend$init
-+ _objc_msgSend$initWithFrame:
-+ _objc_msgSend$initWithFrame:collectionViewLayout:
-+ _objc_msgSend$initWithSectionProvider:configuration:
-+ _objc_msgSend$initWithStyle:
-+ _objc_msgSend$invalidateLayout
-+ _objc_msgSend$itemWithLayoutSize:
-+ _objc_msgSend$labelColor
-+ _objc_msgSend$layer
-+ _objc_msgSend$layoutFrame
-+ _objc_msgSend$layoutSize
-+ _objc_msgSend$leadingAnchor
-+ _objc_msgSend$preferredFontDescriptorWithTextStyle:compatibleWithTraitCollection:
-+ _objc_msgSend$preferredFontForTextStyle:
-+ _objc_msgSend$registerClass:forDecorationViewOfKind:
-+ _objc_msgSend$removeActionForIdentifier:forControlEvents:
-+ _objc_msgSend$removeArrangedSubview:
-+ _objc_msgSend$safeAreaInsets
-+ _objc_msgSend$secondaryLabelColor
-+ _objc_msgSend$secondarySystemBackgroundColor
-+ _objc_msgSend$setActive:
-+ _objc_msgSend$setAdjustsFontForContentSizeCategory:
-+ _objc_msgSend$setAlignment:
-+ _objc_msgSend$setAttributedText:
-+ _objc_msgSend$setAxis:
-+ _objc_msgSend$setBackgroundColor:
-+ _objc_msgSend$setClipsToBounds:
-+ _objc_msgSend$setCollectionViewLayout:
-+ _objc_msgSend$setColors:
-+ _objc_msgSend$setContentCompressionResistancePriority:forAxis:
-+ _objc_msgSend$setContentHuggingPriority:forAxis:
-+ _objc_msgSend$setContentInsets:
-+ _objc_msgSend$setContentMode:
-+ _objc_msgSend$setCornerRadius:
-+ _objc_msgSend$setDecorationItems:
-+ _objc_msgSend$setDistribution:
-+ _objc_msgSend$setEffect:
-+ _objc_msgSend$setEnabled:
-+ _objc_msgSend$setEndPoint:
-+ _objc_msgSend$setFont:
-+ _objc_msgSend$setFrame:
-+ _objc_msgSend$setHidden:
-+ _objc_msgSend$setImage:
-+ _objc_msgSend$setInterGroupSpacing:
-+ _objc_msgSend$setInterItemSpacing:
-+ _objc_msgSend$setInterSectionSpacing:
-+ _objc_msgSend$setLocations:
-+ _objc_msgSend$setNeedsUpdateConfiguration
-+ _objc_msgSend$setNeedsUpdateConstraints
-+ _objc_msgSend$setNumberOfLines:
-+ _objc_msgSend$setPriority:
-+ _objc_msgSend$setScrollDirection:
-+ _objc_msgSend$setSpacing:
-+ _objc_msgSend$setStartPoint:
-+ _objc_msgSend$setText:
-+ _objc_msgSend$setTextColor:
-+ _objc_msgSend$setTintColor:
-+ _objc_msgSend$setTranslatesAutoresizingMaskIntoConstraints:
-+ _objc_msgSend$superview
-+ _objc_msgSend$tintColor
-+ _objc_msgSend$topAnchor
-+ _objc_msgSend$trailingAnchor
-+ _objc_msgSend$traitCollection
-+ _objc_msgSend$uniformAcrossSiblingsWithEstimate:
-+ _objc_msgSend$verticalGroupWithLayoutSize:subitems:
-+ _objc_msgSend$verticalSizeClass
-+ _objc_msgSend$widthAnchor
 + _objc_msgSendSuper2
 + _objc_release
 + _objc_release_x1

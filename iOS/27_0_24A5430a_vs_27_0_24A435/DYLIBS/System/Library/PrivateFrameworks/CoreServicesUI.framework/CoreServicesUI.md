@@ -2,18 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/CoreServicesUI.framework/CoreServicesUI`
 
-```diff
+### Section Size Changes
 
- 469.0.0.0.0
--  __TEXT.__text: 0x1ea7c
-+  __TEXT.__text: 0x1ea90
-   __TEXT.__objc_methlist: 0x63c
-   __TEXT.__cstring: 0x634
-   __TEXT.__const: 0x13d0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ea7c` | `0x1ea90` | **`+0x14`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_25d5b85e4 -> sub_25e2b15e4 : 380 -> 392
-~ sub_25d5bf998 -> sub_25e2b89a4 : 560 -> 564
-~ sub_25d5bfbc8 -> sub_25e2b8bd8 : 364 -> 368
-~ sub_25d5c2864 -> sub_25e2bb878 : 1956 -> 1960
-~ sub_25d5c3008 -> sub_25e2bc020 : 2380 -> 2376
+~ sub_25d4875e4 -> sub_25e1955e4 : 380 -> 392
+~ sub_25d48e998 -> sub_25e19c9a4 : 560 -> 564
+~ sub_25d48ebc8 -> sub_25e19cbd8 : 364 -> 368
+~ sub_25d491864 -> sub_25e19f878 : 1956 -> 1960
+~ sub_25d492008 -> sub_25e1a0020 : 2380 -> 2376
 ```

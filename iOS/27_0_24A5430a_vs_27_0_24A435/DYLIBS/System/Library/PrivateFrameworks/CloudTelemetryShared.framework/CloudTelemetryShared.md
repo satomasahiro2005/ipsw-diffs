@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CloudTelemetryShared.framework/CloudTelemetryShared`
 
-```diff
+### Section Size Changes
 
- 2722.0.0.0.0
--  __TEXT.__text: 0x343e8
-+  __TEXT.__text: 0x34498
-   __TEXT.__objc_methlist: 0x14c
-   __TEXT.__const: 0x37f0
-   __TEXT.__swift5_typeref: 0xd7a
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x343e8` | `0x34498` | **`+0xb0`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1bf249448 -> sub_1bf6ff448 : 1564 -> 1572
 ~ sub_1bf249c58 -> sub_1bf6ffc60 : 1056 -> 1072

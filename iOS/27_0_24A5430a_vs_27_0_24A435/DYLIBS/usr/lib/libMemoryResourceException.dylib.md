@@ -2,14 +2,15 @@
 
 > `/usr/lib/libMemoryResourceException.dylib`
 
-```diff
+### Section Size Changes
 
- 365.0.0.0.0
--  __TEXT.__text: 0x1ad98
-+  __TEXT.__text: 0x1adfc
-   __TEXT.__objc_methlist: 0x167c
-   __TEXT.__const: 0x1a8
-   __TEXT.__cstring: 0x1b16
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ad98` | `0x1adfc` | **`+0x64`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ ___33-[FPUserProcess _gatherImageData]_block_invoke_2 : 1548 -> 1556
 ~ -[FPUserProcess _enumerateDispositionChunksWithStartAddr:pagesToQuery:block:] : 392 -> 400

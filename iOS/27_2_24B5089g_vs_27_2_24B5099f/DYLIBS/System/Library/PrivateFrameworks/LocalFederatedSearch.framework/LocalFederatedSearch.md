@@ -2,34 +2,24 @@
 
 > `/System/Library/PrivateFrameworks/LocalFederatedSearch.framework/LocalFederatedSearch`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd0b98` | `0xd0c28` | **`+0x90`** |
+| `__TEXT.__unwind_info` | `0x2fe8` | `0x2ff0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3605.25.3.1.1
--  __TEXT.__text: 0xc7cb8
 +3605.31.1.0.0
-+  __TEXT.__text: 0xc7d48
-   __TEXT.__objc_methlist: 0x2c
-   __TEXT.__const: 0x4c90
-   __TEXT.__cstring: 0x4e83
 
-   __TEXT.__swift_as_ret: 0x3bc
-   __TEXT.__swift_as_cont: 0x564
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x3618
-+  __TEXT.__unwind_info: 0x3620
-   __TEXT.__eh_frame: 0x6bf0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 5723
+-  Functions: 5724
 -  Symbols:   8766
-+  Functions: 5725
++  Functions: 5726
 +  Symbols:   8768
-   CStrings:  582
- 
 Symbols:
 + _$sSdySdSgxcSyRzlufcSbSpySdGXEfU_SbSPys4Int8VGXEfU_
 + _$sSdySdSgxcSyRzlufcSbSpySdGXEfU_SbSPys4Int8VGXEfU_TA

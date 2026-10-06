@@ -2,60 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/NameRecognition.framework/NameRecognition`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__swift5_typeref` | `0x5af1` | `0x5bb7` | **`+0xc6`** |
+| `__TEXT.__text` | `0x7ebec` | `0x7eca8` | **`+0xbc`** |
+| `__AUTH_CONST.__auth_got` | `0x16f0` | `0x1730` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0x2af8` | `0x2b20` | **`+0x28`** |
+| `__TEXT.__const` | `0x4bc8` | `0x4bd8` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x90c` | `0x91c` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x10a5` | `0x1095` | **`-0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0xe6c` | `0xe60` | **`-0xc`** |
+| `__TEXT.__eh_frame` | `0x397c` | `0x3984` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x1d98` | `0x1d90` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3245.7.1.0.0
--  __TEXT.__text: 0x79728
 +3245.8.2.0.0
-+  __TEXT.__text: 0x7976c
-   __TEXT.__objc_methlist: 0x2c4
--  __TEXT.__const: 0x4bc8
-+  __TEXT.__const: 0x4bd8
-   __TEXT.__constg_swiftt: 0x1548
--  __TEXT.__swift5_typeref: 0x5af1
--  __TEXT.__swift5_reflstr: 0x10a5
--  __TEXT.__swift5_fieldmd: 0xe6c
-+  __TEXT.__swift5_typeref: 0x5bb7
-+  __TEXT.__swift5_reflstr: 0x1095
-+  __TEXT.__swift5_fieldmd: 0xe60
-   __TEXT.__cstring: 0x1fdb
-   __TEXT.__oslogstring: 0xc4f
-   __TEXT.__swift5_builtin: 0x3c
 
-   __TEXT.__swift_as_entry: 0x110
-   __TEXT.__swift_as_ret: 0x154
-   __TEXT.__swift_as_cont: 0x2d0
--  __TEXT.__swift5_capture: 0x90c
-+  __TEXT.__swift5_capture: 0x91c
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__unwind_info: 0x22f0
--  __TEXT.__eh_frame: 0x3984
-+  __TEXT.__eh_frame: 0x398c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0x5e0
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__got: 0xa80
--  __AUTH_CONST.__const: 0x2af8
-+  __AUTH_CONST.__const: 0x2b20
-   __AUTH_CONST.__objc_const: 0x1330
--  __AUTH_CONST.__auth_got: 0x16f0
-+  __AUTH_CONST.__auth_got: 0x1730
-   __AUTH.__objc_data: 0x7f8
-   __AUTH.__data: 0x14a8
-   __DATA.__data: 0x1c00
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2382
--  Symbols:   1243
+-  Symbols:   1089
 +  Functions: 2386
-+  Symbols:   1244
-   CStrings:  256
- 
++  Symbols:   1090
 Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA5GroupVyACyAA4ViewPAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyACyAA6HStackVyAA05TupleD0VyAA6VStackVyAOyAA4TextV_ASQPGG_AA6SpacerVAgAE11buttonStyleyQrqd__AA015PrimitiveButtonS0Rd__lFQOyAA0U0VyACyACyAA5ImageVAA011_ForegroundS9Modifier2VyAA5ColorVA5_GGAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGG_AA05PlainuS0VQo_QPGGAA14_PaddingLayoutVG_Qo_AA0J18AttachmentModifierVGGAA19_BackgroundModifierVyAA8StaticIfVyAA8SolariumVAA06_ShapeF0VyAA7CapsuleVA5_GA36_yAA16RoundedRectangleVA5_GGGGAA25_AppearanceActionModifierVGA47_GAaFHPA48_AaFHPA45_AaFHPA28_AaFHPA27_AaFHPqd__AaFHD2_A24_HO_A26_AA0F8ModifierHPyHCHC_HC_A44_AAA50_HPyHCHC_A47_AAA50_HPyHCHC_A47_AAA50_HPyHCHC
 + _symbolic _____yAAyAAy_____yAAy_____yAAy_____y_____y_____yADy______AFQPGG___________y_____yAAyAAy__________y_____AMGG_____y_____SgGGG______Qo_QPGG_____G_Qo______GG_____y_____y__________y_____AMGA7_y_____AMGGGG_____GA15_G 7SwiftUI15ModifiedContentV AA5GroupV AA4ViewPAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQO AA6HStackV AA05TupleD0V AA6VStackV AA4TextV AA6SpacerV AgAE11buttonStyleyQrqd__AA015PrimitiveButtonS0Rd__lFQO AA0U0V AA5ImageV AA011_ForegroundS9Modifier2V AA5ColorV AA30_EnvironmentKeyWritingModifierV AA4FontV AA05PlainuS0V AA14_PaddingLayoutV AA0J18AttachmentModifierV AA19_BackgroundModifierV AA8StaticIfV AA8SolariumV AA06_ShapeF0V AA7CapsuleV AA16RoundedRectangleV AA25_AppearanceActionModifierV

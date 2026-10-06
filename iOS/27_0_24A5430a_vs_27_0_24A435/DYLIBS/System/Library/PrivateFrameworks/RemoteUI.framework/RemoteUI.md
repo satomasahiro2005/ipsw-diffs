@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/RemoteUI.framework/RemoteUI`
 
-```diff
+### Section Size Changes
 
- 639.1.1.0.0
--  __TEXT.__text: 0x14e380
-+  __TEXT.__text: 0x14e3c8
-   __TEXT.__objc_methlist: 0x8f54
-   __TEXT.__const: 0xfb74
-   __TEXT.__cstring: 0x56ed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14e380` | `0x14e3c8` | **`+0x48`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_220bc75b8 -> sub_2213615b8 : 680 -> 684
 ~ sub_220bc8a54 -> sub_221362a58 : 564 -> 568

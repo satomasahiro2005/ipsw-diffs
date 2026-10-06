@@ -2,92 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/GameControllerSettings.framework/GameControllerSettings`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3d4a4` | `0x3d9e8` | **`+0x544`** |
+| `__TEXT.__swift5_reflstr` | `0x7f6` | `0x826` | **`+0x30`** |
+| `__AUTH_CONST.__cfstring` | `0x14e0` | `0x1500` | **`+0x20`** |
+| `__AUTH_CONST.__objc_const` | `0x4598` | `0x45b8` | **`+0x20`** |
+| `__TEXT.__cstring` | `0xde2` | `0xe02` | **`+0x20`** |
+| `__DATA.__data` | `0x908` | `0x8f8` | **`-0x10`** |
+| `__DATA_CONST.__const` | `0x528` | `0x538` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0xfe0` | `0xff0` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x758` | `0x764` | **`+0xc`** |
+| `__AUTH.__data` | `0x2d0` | `0x2d8` | **`+0x8`** |
+| `__AUTH_CONST.__auth_got` | `0x5f0` | `0x5e8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x3d4a4
-+  __TEXT.__text: 0x3d9e8
-   __TEXT.__objc_methlist: 0x1744
-   __TEXT.__const: 0x2ce0
--  __TEXT.__cstring: 0xde2
-+  __TEXT.__cstring: 0xe02
-   __TEXT.__oslogstring: 0x16d
-   __TEXT.__swift5_typeref: 0xcd4
--  __TEXT.__swift5_reflstr: 0x7f6
-+  __TEXT.__swift5_reflstr: 0x826
-   __TEXT.__swift5_assocty: 0x300
-   __TEXT.__constg_swiftt: 0x6c0
-   __TEXT.__swift5_builtin: 0x154
--  __TEXT.__swift5_fieldmd: 0x758
-+  __TEXT.__swift5_fieldmd: 0x764
-   __TEXT.__swift5_proto: 0x1c4
-   __TEXT.__swift5_types: 0xb0
-   __TEXT.__swift5_capture: 0x34
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift5_mpenum: 0xb0
--  __TEXT.__unwind_info: 0xfe0
-+  __TEXT.__unwind_info: 0xff0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x528
-+  __DATA_CONST.__const: 0x538
-   __DATA_CONST.__objc_classlist: 0x98
-   __DATA_CONST.__objc_catlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x90
+-14.0.17.0.0
++14.0.19.0.0
 
-   __DATA_CONST.__objc_superrefs: 0x90
-   __DATA_CONST.__got: 0x1d0
-   __AUTH_CONST.__const: 0x1090
--  __AUTH_CONST.__cfstring: 0x14e0
--  __AUTH_CONST.__objc_const: 0x4598
--  __AUTH_CONST.__auth_got: 0x5f0
-+  __AUTH_CONST.__cfstring: 0x1500
-+  __AUTH_CONST.__objc_const: 0x45b8
-+  __AUTH_CONST.__auth_got: 0x5e8
-   __AUTH.__objc_data: 0x2d0
--  __AUTH.__data: 0x2d0
-+  __AUTH.__data: 0x2d8
-   __DATA.__objc_ivar: 0x184
--  __DATA.__data: 0x908
-+  __DATA.__data: 0x8f8
-   __DATA.__bss: 0x3b50
-   __DATA.__common: 0x28
-   __DATA_DIRTY.__objc_data: 0x2d0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1488
--  Symbols:   4903
--  CStrings:  356
+-  Symbols:   3255
+-  CStrings:  189
 +  Functions: 1496
-+  Symbols:   4919
-+  CStrings:  358
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   3266
++  CStrings:  190
 Symbols:
 + _$s22GameControllerSettings21GCSSettingsSwiftStoreC35systemButtonLongPressActionModifiedSbvM
 + _$s22GameControllerSettings21GCSSettingsSwiftStoreC35systemButtonLongPressActionModifiedSbvM.resume
@@ -112,5 +55,4 @@ Symbols:
 - _swift_retain_x28
 CStrings:
 + "homeButtonLongPressAction_modified"
-
 ```

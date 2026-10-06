@@ -2,32 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/CameraEffectsKit.framework/CameraEffectsKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x100868` | `0x1008fc` | **`+0x94`** |
+| `__TEXT.__oslogstring` | `0x81e0` | `0x81fd` | **`+0x1d`** |
+
+### Other Changes
+
 ```diff
 
 -6312.0.5.0.0
--  __TEXT.__text: 0x100868
 +6312.0.6.0.0
-+  __TEXT.__text: 0x1008fc
-   __TEXT.__objc_methlist: 0x12054
-   __TEXT.__const: 0x19c0
-   __TEXT.__gcc_except_tab: 0x265c
-   __TEXT.__cstring: 0x6955
--  __TEXT.__oslogstring: 0x81e0
-+  __TEXT.__oslogstring: 0x81fd
-   __TEXT.__unwind_info: 0x4550
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 7130
--  Symbols:   16623
+-  Symbols:   12092
 -  CStrings:  1755
 +  Functions: 7131
-+  Symbols:   16621
++  Symbols:   12090
 +  CStrings:  1756
- 
 Symbols:
 - ___109-[JFXVideoCameraController JFX_configureCaptureSesstionForPosition:applyFFCZoom:configureLockedCamera:error:]_block_invoke_3
 - ___109-[JFXVideoCameraController JFX_configureCaptureSesstionForPosition:applyFFCZoom:configureLockedCamera:error:]_block_invoke_4

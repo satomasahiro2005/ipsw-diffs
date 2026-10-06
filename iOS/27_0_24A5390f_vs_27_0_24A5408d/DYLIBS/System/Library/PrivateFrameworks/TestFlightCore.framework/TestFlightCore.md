@@ -2,83 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/TestFlightCore.framework/TestFlightCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x50bb4` | `0x518b8` | **`+0xd04`** |
+| `__TEXT.__swift5_typeref` | `0x86a6` | `0x872c` | **`+0x86`** |
+| `__DATA.__bss` | `0x10a0` | `0x1040` | **`-0x60`** |
+| `__DATA_CONST.__objc_selrefs` | `0x20b8` | `0x2118` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x12b0` | `0x1308` | **`+0x58`** |
+| `__AUTH_CONST.__objc_const` | `0x7c88` | `0x7cc8` | **`+0x40`** |
+| `__TEXT.__const` | `0x1fd4` | `0x1f94` | **`-0x40`** |
+| `__TEXT.__swift5_capture` | `0x280` | `0x2b8` | **`+0x38`** |
+| `__TEXT.__swift5_reflstr` | `0x545` | `0x575` | **`+0x30`** |
+| `__TEXT.__constg_swiftt` | `0xd8c` | `0xd60` | **`-0x2c`** |
+| `__AUTH_CONST.__auth_got` | `0x1000` | `0x1028` | **`+0x28`** |
+| `__DATA.__data` | `0x18a8` | `0x1888` | **`-0x20`** |
+| `__TEXT.__objc_methlist` | `0x2d34` | `0x2d54` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x9c8` | `0x9e0` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x1c8` | `0x1b0` | **`-0x18`** |
+| `__AUTH.__data` | `0x4c8` | `0x4d8` | **`+0x10`** |
+| `__AUTH_CONST.__const` | `0xff8` | `0x1008` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x570` | `0x560` | **`-0x10`** |
+| `__TEXT.__swift5_proto` | `0x64` | `0x60` | **`-0x4`** |
+| `__TEXT.__swift5_types` | `0x70` | `0x6c` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -4.5.12.0.0
--  __TEXT.__text: 0x50bb4
--  __TEXT.__objc_methlist: 0x2d34
--  __TEXT.__const: 0x1fd4
 +4.5.14.0.0
-+  __TEXT.__text: 0x518b8
-+  __TEXT.__objc_methlist: 0x2d54
-+  __TEXT.__const: 0x1f94
-   __TEXT.__cstring: 0x21ea
-   __TEXT.__oslogstring: 0x1b45
-   __TEXT.__gcc_except_tab: 0x130
--  __TEXT.__swift5_typeref: 0x86a6
--  __TEXT.__constg_swiftt: 0xd8c
--  __TEXT.__swift5_reflstr: 0x545
--  __TEXT.__swift5_fieldmd: 0x570
--  __TEXT.__swift5_types: 0x70
--  __TEXT.__swift5_capture: 0x280
--  __TEXT.__swift5_assocty: 0x1c8
--  __TEXT.__swift5_proto: 0x64
-+  __TEXT.__swift5_typeref: 0x872c
-+  __TEXT.__swift5_capture: 0x2b8
-+  __TEXT.__constg_swiftt: 0xd60
-+  __TEXT.__swift5_reflstr: 0x575
-+  __TEXT.__swift5_fieldmd: 0x560
-+  __TEXT.__swift5_types: 0x6c
-+  __TEXT.__swift5_assocty: 0x1b0
-+  __TEXT.__swift5_proto: 0x60
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0x12b0
-+  __TEXT.__unwind_info: 0x1308
-   __TEXT.__eh_frame: 0x168
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_protolist: 0xd8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x20b8
-+  __DATA_CONST.__objc_selrefs: 0x2118
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x130
-   __DATA_CONST.__objc_arraydata: 0x18
--  __DATA_CONST.__got: 0x9c8
--  __AUTH_CONST.__const: 0xff8
-+  __DATA_CONST.__got: 0x9e0
-+  __AUTH_CONST.__const: 0x1008
-   __AUTH_CONST.__cfstring: 0x18a0
--  __AUTH_CONST.__objc_const: 0x7c88
-+  __AUTH_CONST.__objc_const: 0x7cc8
-   __AUTH_CONST.__objc_intobj: 0x18
-   __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__auth_got: 0x1000
-+  __AUTH_CONST.__auth_got: 0x1028
-   __AUTH.__objc_data: 0x1150
--  __AUTH.__data: 0x4c8
-+  __AUTH.__data: 0x4d8
-   __DATA.__objc_ivar: 0x2a4
--  __DATA.__data: 0x18a8
--  __DATA.__bss: 0x10a0
-+  __DATA.__data: 0x1888
-+  __DATA.__bss: 0x1040
-   __DATA.__common: 0xc8
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1814
--  Symbols:   3200
+-  Symbols:   2394
 +  Functions: 1842
-+  Symbols:   3213
-   CStrings:  334
- 
++  Symbols:   2396
 Symbols:
 + _UIInterfaceOrientationIsLandscape
 + ___swift__destructor
@@ -89,17 +48,6 @@ Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyAA4ViewPAAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQOyAA15NavigationStackVyAA0I4PathVAA012_ConditionalD0VyAOyAeAE7toolbar7contentQrqd__yXE_tAA07ToolbarD0Rd__lFQOyAeAE0M4RoleyQrAA0oP0VFQOyAeAE0M16TitleDisplayModeyQrAA0oqrS0VFQOyAA6VStackVy14TestFlightCore06WhatTouE12AllPlatformsVG_Qo__Qo__AA0O4ItemVyytAA4TextVGQo_AeAEAP8removingQrAA0O15DefaultItemKindVSg_tFQOyA4__Qo_GA4_GG_A_0xyuE5ModelCQo_AA24_BackgroundStyleModifierVyAA5ColorVGGAA23_GeometryActionModifierVySo6CGSizeVA31_SQ0W8GraphicsyHCg_GGAaDHPA27_AaDHPqd0__AaDHD3_A21_HO_A26_AA0E8ModifierHPyHCHC_A33_AAA35_HPyHCHC
 + _get_witness_table 7SwiftUI4ViewRzAaBR_AaBR0_r1_lAA15ModifiedContentVyADyADyADyAA6ZStackVyAA05TupleE0VyADyADyAaBPAAE16scrollIndicators_4axesQrAA25ScrollIndicatorVisibilityV_AA4AxisO3SetVtFQOyAA0kC0Vyq0_G_Qo_AA06_InsetC8ModifierVyADyAA5ColorVAA12_FrameLayoutVGGGA1_G_ADyADyAA6VStackVyAHyADyADyADyAA14LinearGradientVA_GAA017_AllowsHitTestingQ0VGAA08_OverlayQ0VyADyxA13_yAA14GeometryReaderVyADyAyA018_PreferenceWritingQ0Vy14TestFlightCore15TopBarHeightKey33_838260A8F8A6CACF2EC2A714036E177DLLVGGGGGGG_AA6SpacerVQPGGAA024_SafeAreaRegionsIgnoringT0VGAA013_TraitWritingQ0VyAA18TransitionTraitKeyVGGSgADyADyA5_yAHyA30__ADyA11_A13_yADyq_A13_yA15_yADyAYA17_yA18_18BottomBarHeightKeyA20_LLVGGGGGGGQPGGA34_GA40_GSgQPGGAA017_PreferenceActionQ0VyA21_GGA60_yA44_GGAA010_AnimationQ0VySbGGA67_GAaBHPA68_AaBHPA64_AaBHPA62_AaBHPA58_AaBHPyHC_A61_AA0cQ0HPyHCHC_A63_AAA70_HPyHCHC_A67_AAA70_HPyHCHC_A67_AAA70_HPyHCHC
 + _get_witness_table 7SwiftUI6VStackVyAA12TupleContentVyAA4TextV_AA08ModifiedE0Vy14TestFlightCore16CornerRadiusViewVyAIyAA0M0PAAE14textFieldStyleyQrqd__AA0foP0Rd__lFQOyAA0fO0VyAGG_AA05PlainfoP0VQo_AA32_EnvironmentKeyTransformModifierVySbGGGAA14_PaddingLayoutVGQPGGAaMHPyHC
-+ _objc_msgSend$animateAlongsideTransition:completion:
-+ _objc_msgSend$effectiveGeometry
-+ _objc_msgSend$interfaceOrientation
-+ _objc_msgSend$parentViewController
-+ _objc_msgSend$screen
-+ _objc_msgSend$setAccessibilityLabel:
-+ _objc_msgSend$setPreferredContentSize:
-+ _objc_msgSend$setPrefersPageSizing:
-+ _objc_msgSend$sheetPresentationController
-+ _objc_msgSend$window
-+ _objc_msgSend$windowScene
 + _swift_makeBoxUnique
 + _swift_unknownObjectWeakDestroy
 + _swift_unknownObjectWeakInit

@@ -2,122 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/PhotosUIFoundation.framework/PhotosUIFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf298c` | `0xf5080` | **`+0x26f4`** |
+| `__TEXT.__const` | `0x6d80` | `0x70d0` | **`+0x350`** |
+| `__DATA.__bss` | `0x6750` | `0x6a50` | **`+0x300`** |
+| `__AUTH_CONST.__const` | `0x5c90` | `0x5f68` | **`+0x2d8`** |
+| `__AUTH.__objc_data` | `0x4c10` | `0x49e0` | **`-0x230`** |
+| `__DATA_DIRTY.__objc_data` | `0x460` | `0x690` | **`+0x230`** |
+| `__DATA.__data` | `0x4658` | `0x4800` | **`+0x1a8`** |
+| `__AUTH_CONST.__objc_const` | `0x1efb8` | `0x1f0c8` | **`+0x110`** |
+| `__TEXT.__oslogstring` | `0x1936` | `0x1a3a` | **`+0x104`** |
+| `__TEXT.__swift5_reflstr` | `0x16f7` | `0x17c7` | **`+0xd0`** |
+| `__TEXT.__constg_swiftt` | `0x387c` | `0x3948` | **`+0xcc`** |
+| `__TEXT.__unwind_info` | `0x5610` | `0x56d8` | **`+0xc8`** |
+| `__TEXT.__swift5_typeref` | `0x2c74` | `0x2d34` | **`+0xc0`** |
+| `__TEXT.__swift5_fieldmd` | `0x1a98` | `0x1b50` | **`+0xb8`** |
+| `__TEXT.__objc_methlist` | `0xfb64` | `0xfbe4` | **`+0x80`** |
+| `__TEXT.__swift5_assocty` | `0x958` | `0x9b8` | **`+0x60`** |
+| `__TEXT.__swift5_capture` | `0xd28` | `0xd84` | **`+0x5c`** |
+| `__DATA_CONST.__const` | `0x3ee8` | `0x3f40` | **`+0x58`** |
+| `__TEXT.__cstring` | `0xb9d6` | `0xba26` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0xe70` | `0xe90` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x77b0` | `0x77d0` | **`+0x20`** |
+| `__TEXT.__swift5_proto` | `0x394` | `0x3ac` | **`+0x18`** |
+| `__AUTH.__data` | `0x1b80` | `0x1b70` | **`-0x10`** |
+| `__TEXT.__swift5_types` | `0x250` | `0x260` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1930` | `0x1938` | **`+0x8`** |
+| `__DATA_DIRTY.__data` | `0x8` | `—` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xf298c
--  __TEXT.__objc_methlist: 0xfb64
--  __TEXT.__const: 0x6d80
--  __TEXT.__swift5_typeref: 0x2c74
--  __TEXT.__constg_swiftt: 0x387c
-+  __TEXT.__text: 0xf5080
-+  __TEXT.__objc_methlist: 0xfbe4
-+  __TEXT.__const: 0x70d0
-+  __TEXT.__swift5_typeref: 0x2d34
-+  __TEXT.__constg_swiftt: 0x3948
-   __TEXT.__swift5_builtin: 0x208
--  __TEXT.__swift5_reflstr: 0x16f7
--  __TEXT.__swift5_fieldmd: 0x1a98
--  __TEXT.__swift5_assocty: 0x958
--  __TEXT.__swift5_proto: 0x394
--  __TEXT.__swift5_types: 0x250
--  __TEXT.__cstring: 0xb9d6
--  __TEXT.__swift5_capture: 0xd28
-+  __TEXT.__swift5_reflstr: 0x17c7
-+  __TEXT.__swift5_fieldmd: 0x1b50
-+  __TEXT.__swift5_assocty: 0x9b8
-+  __TEXT.__swift5_proto: 0x3ac
-+  __TEXT.__swift5_types: 0x260
-+  __TEXT.__cstring: 0xba26
-+  __TEXT.__swift5_capture: 0xd84
-   __TEXT.__swift5_protos: 0x98
--  __TEXT.__oslogstring: 0x1936
-+  __TEXT.__oslogstring: 0x1a3a
-   __TEXT.__swift_as_entry: 0x74
-   __TEXT.__swift_as_ret: 0x50
-   __TEXT.__swift_as_cont: 0x94
-   __TEXT.__swift5_mpenum: 0x10
-   __TEXT.__gcc_except_tab: 0xce4
-   __TEXT.__ustring: 0x124
--  __TEXT.__unwind_info: 0x5610
-+  __TEXT.__unwind_info: 0x56d8
-   __TEXT.__eh_frame: 0x1ce8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3ee8
-+  __DATA_CONST.__const: 0x3f40
-   __DATA_CONST.__objc_classlist: 0x788
-   __DATA_CONST.__objc_catlist: 0xe8
-   __DATA_CONST.__objc_protolist: 0x348
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x77b0
-+  __DATA_CONST.__objc_selrefs: 0x77d0
-   __DATA_CONST.__objc_protorefs: 0xc0
-   __DATA_CONST.__objc_superrefs: 0x518
-   __DATA_CONST.__objc_arraydata: 0x300
--  __DATA_CONST.__got: 0xe70
--  __AUTH_CONST.__const: 0x5c90
-+  __DATA_CONST.__got: 0xe90
-+  __AUTH_CONST.__const: 0x5f68
-   __AUTH_CONST.__cfstring: 0x7dc0
--  __AUTH_CONST.__objc_const: 0x1efb8
-+  __AUTH_CONST.__objc_const: 0x1f0c8
-   __AUTH_CONST.__objc_intobj: 0x150
-   __AUTH_CONST.__objc_doubleobj: 0x1e0
-   __AUTH_CONST.__objc_arrayobj: 0x120
-   __AUTH_CONST.__objc_dictobj: 0x168
--  __AUTH_CONST.__auth_got: 0x1930
--  __AUTH.__objc_data: 0x4c10
--  __AUTH.__data: 0x1b80
-+  __AUTH_CONST.__auth_got: 0x1938
-+  __AUTH.__objc_data: 0x49e0
-+  __AUTH.__data: 0x1b70
-   __DATA.__objc_ivar: 0x10e0
--  __DATA.__data: 0x4658
--  __DATA.__bss: 0x6750
-+  __DATA.__data: 0x4800
-+  __DATA.__bss: 0x6a50
-   __DATA.__common: 0x10
--  __DATA_DIRTY.__objc_data: 0x460
--  __DATA_DIRTY.__data: 0x8
-+  __DATA_DIRTY.__objc_data: 0x690
-   __DATA_DIRTY.__bss: 0x48
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CoreData.framework/CoreData
+-910.21.101.0.0
++910.27.103.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9427
--  Symbols:   19980
--  CStrings:  2563
+-  Symbols:   11079
+-  CStrings:  1579
 +  Functions: 9511
-+  Symbols:   20039
-+  CStrings:  2566
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __DATA.__objc_ivar : content changed
++  Symbols:   11102
++  CStrings:  1582
 Symbols:
 + -[PXScrollViewController scrollViewSafeAreaInsetsDidChange]
 + -[PXScrollViewControllerExtendedTraitCollection scrollViewControllerSafeAreaInsetsDidChange:]
@@ -210,9 +138,6 @@ Symbols:
 + _associated conformance 18PhotosUIFoundation36PXSectionedItemIndexPathStoreChangedVs10SetAlgebraAAs25ExpressibleByArrayLiteral
 + _associated conformance 18PhotosUIFoundation36PXSectionedItemIndexPathStoreChangedVs9OptionSetAASY
 + _associated conformance 18PhotosUIFoundation36PXSectionedItemIndexPathStoreChangedVs9OptionSetAAs0J7Algebra
-+ _objc_msgSend$scrollViewControllerSafeAreaInsetsDidChange:
-+ _objc_msgSend$scrollViewSafeAreaInsetsDidChange
-+ _objc_msgSend$scrollViewSafeAreaInsetsDidChange:
 + _symbolic SDy_____xG So17PXSimpleIndexPathV
 + _symbolic So28PXSectionedDataSourceManagerC
 + _symbolic _____ 18PhotosUIFoundation29PXSectionedItemIndexPathStoreC
@@ -319,5 +244,4 @@ CStrings:
 + "PXSectionedItemIndexPathStore: data source changed from %ld to %ld without change details — dropping %ld entries"
 + "PXSectionedItemIndexPathStore: data source changed from %ld to %ld without incremental change details — dropping %ld entries"
 + "PhotosUIFoundation.PXSectionedItemIndexPathStore"
-
 ```

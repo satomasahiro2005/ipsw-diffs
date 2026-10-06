@@ -2,39 +2,30 @@
 
 > `/usr/lib/libfire9.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2fe12c` | `0x301c60` | **`+0x3b34`** |
+| `__TEXT.__cstring` | `0x1b666` | `0x1bd8d` | **`+0x727`** |
+| `__TEXT.__const` | `0x9ef78` | `0x9f698` | **`+0x720`** |
+| `__TEXT.__oslogstring` | `0x19248` | `0x1938e` | **`+0x146`** |
+| `__DATA_CONST.__const` | `0xa9e0` | `0xaa00` | **`+0x20`** |
+| `__AUTH_CONST.__const` | `0xf730` | `0xf728` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2fe12c
--  __TEXT.__const: 0x9ef78
--  __TEXT.__cstring: 0x1b666
--  __TEXT.__oslogstring: 0x19248
-+  __TEXT.__text: 0x301c60
-+  __TEXT.__const: 0x9f698
-+  __TEXT.__cstring: 0x1bd8d
-+  __TEXT.__oslogstring: 0x1938e
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0xa9e0
-+  __DATA_CONST.__const: 0xaa00
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xf730
-+  __AUTH_CONST.__const: 0xf728
-   __AUTH_CONST.__weak_auth_got: 0x20
-   __AUTH_CONST.__auth_got: 0x228
-   __DATA.__data: 0x148
+-24.0.0.0.0
++28.0.0.0.0
 
-   __DATA.__bss: 0x26d8
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 7591
--  Symbols:   16923
--  CStrings:  5143
+-  Symbols:   8823
+-  CStrings:  5125
 +  Functions: 7594
-+  Symbols:   16939
-+  CStrings:  5203
- 
-Sections:
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA.__data : content changed
++  Symbols:   8826
++  CStrings:  5184
 Symbols:
 + __ZN13FireDeviceLog13LoggingBuffer14appendInternalEPKcm
 + __ZN13FireDeviceLog13LoggingBuffer8writeLogEPKcm
@@ -173,5 +164,4 @@ CStrings:
 - "esw_gll_patch_generator.py:://depot/client/core/rel/Olympic/OSX_20.28.658483.v9.0/proprietary/deliverables/esw5_dev:LOX_B0@$Change: 667311 $"
 - "esw_gll_patch_generator.py:://depot/client/core/rel/Olympic/OSX_20.28.658483.v9.0/proprietary/deliverables/esw5_dev:LOX_FE@$Change: 667311 $"
 - "fmh,StartRequest,request,%p,%d,size,%zu"
-
 ```

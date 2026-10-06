@@ -2,121 +2,73 @@
 
 > `/private/var/staged_system_apps/Podcasts.app/Frameworks/ShelfKitCollectionViews.framework/ShelfKitCollectionViews`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x327a94` | `0x32dd0c` | **`+0x6278`** |
+| `__TEXT.__swift5_typeref` | `0x2ca40` | `0x2e288` | **`+0x1848`** |
+| `__TEXT.__const` | `0x20d08` | `0x21468` | **`+0x760`** |
+| `__DATA.__bss` | `0x1d2b8` | `0x1d9b8` | **`+0x700`** |
+| `__TEXT.__eh_frame` | `0x37a4` | `0x3a2c` | **`+0x288`** |
+| `__DATA.__objc_const` | `0x112f8` | `0x110f0` | **`-0x208`** |
+| `__DATA.__data` | `0x16858` | `0x169f8` | **`+0x1a0`** |
+| `__TEXT.__cstring` | `0x695f` | `0x6a8f` | **`+0x130`** |
+| `__TEXT.__objc_methname` | `0xeeff` | `0xefff` | **`+0x100`** |
+| `__TEXT.__swift5_assocty` | `0x1d00` | `0x1dc0` | **`+0xc0`** |
+| `__TEXT.__auth_stubs` | `0xdb20` | `0xda70` | **`-0xb0`** |
+| `__TEXT.__objc_stubs` | `0x7600` | `0x76a0` | **`+0xa0`** |
+| `__TEXT.__objc_classname` | `0x3e01` | `0x3d71` | **`-0x90`** |
+| `__TEXT.__unwind_info` | `0x8f50` | `0x8fd8` | **`+0x88`** |
+| `__DATA_CONST.__got` | `0x3110` | `0x3180` | **`+0x70`** |
+| `__TEXT.__oslogstring` | `0x1693` | `0x1623` | **`-0x70`** |
+| `__DATA_CONST.__auth_got` | `0x6d98` | `0x6d40` | **`-0x58`** |
+| `__DATA_CONST.__const` | `0x13000` | `0x13050` | **`+0x50`** |
+| `__DATA.__objc_data` | `0xe980` | `0xe938` | **`-0x48`** |
+| `__TEXT.__swift5_fieldmd` | `0x9560` | `0x95a4` | **`+0x44`** |
+| `__TEXT.__constg_swiftt` | `0xb3c8` | `0xb404` | **`+0x3c`** |
+| `__DATA.__objc_selrefs` | `0x2a38` | `0x2a68` | **`+0x30`** |
+| `__DATA_CONST.__auth_ptr` | `0x3320` | `0x3350` | **`+0x30`** |
+| `__TEXT.__swift5_reflstr` | `0xad98` | `0xad68` | **`-0x30`** |
+| `__TEXT.__swift5_capture` | `0x546c` | `0x5444` | **`-0x28`** |
+| `__TEXT.__swift5_proto` | `0xffc` | `0x1024` | **`+0x28`** |
+| `__DATA.__common` | `0x19f0` | `0x1a10` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x490c` | `0x492c` | **`+0x20`** |
+| `__TEXT.__swift5_builtin` | `0x424` | `0x438` | **`+0x14`** |
+| `__TEXT.__objc_methtype` | `0x287f` | `0x288f` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x25c` | `0x26c` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0xcc` | `0xdc` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x938` | `0x944` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x720` | `0x718` | **`-0x8`** |
+| `__TEXT.__swift5_mpenum` | `0xa0` | `0xa8` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0xfc` | `0x104` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0xd0` | `0xcc` | **`-0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_stublist`
 - `__DATA_CONST.__cfstring`
 - `__DATA_CONST.__objc_catlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA.__objc_stublist`
+- `__TEXT.__init_offsets`
+
+### Other Changes
 
 ```diff
 
 -4027.100.75.0.0
--  __TEXT.__text: 0x327a94
--  __TEXT.__auth_stubs: 0xdb20
--  __TEXT.__objc_stubs: 0x7600
 +4027.100.80.0.0
-+  __TEXT.__text: 0x32dd0c
-+  __TEXT.__auth_stubs: 0xda70
-+  __TEXT.__objc_stubs: 0x76a0
-   __TEXT.__init_offsets: 0x4
--  __TEXT.__objc_methlist: 0x490c
--  __TEXT.__const: 0x20d08
--  __TEXT.__cstring: 0x695f
--  __TEXT.__objc_classname: 0x3e01
--  __TEXT.__objc_methtype: 0x287f
--  __TEXT.__constg_swiftt: 0xb3c8
--  __TEXT.__swift5_typeref: 0x2ca40
--  __TEXT.__swift5_builtin: 0x424
--  __TEXT.__swift5_reflstr: 0xad98
--  __TEXT.__swift5_fieldmd: 0x9560
--  __TEXT.__swift5_assocty: 0x1d00
--  __TEXT.__swift5_capture: 0x546c
--  __TEXT.__swift5_proto: 0xffc
--  __TEXT.__swift5_types: 0x938
--  __TEXT.__objc_methname: 0xeeff
--  __TEXT.__swift_as_entry: 0xcc
--  __TEXT.__swift_as_ret: 0xfc
--  __TEXT.__swift_as_cont: 0x25c
--  __TEXT.__oslogstring: 0x1693
--  __TEXT.__swift5_protos: 0xd0
--  __TEXT.__swift5_mpenum: 0xa0
--  __TEXT.__unwind_info: 0x8f50
--  __TEXT.__eh_frame: 0x37a4
--  __DATA_CONST.__const: 0x13000
-+  __TEXT.__objc_methlist: 0x492c
-+  __TEXT.__const: 0x21468
-+  __TEXT.__cstring: 0x6a8f
-+  __TEXT.__objc_classname: 0x3d71
-+  __TEXT.__objc_methtype: 0x288f
-+  __TEXT.__swift5_typeref: 0x2e288
-+  __TEXT.__constg_swiftt: 0xb404
-+  __TEXT.__swift5_reflstr: 0xad68
-+  __TEXT.__swift5_assocty: 0x1dc0
-+  __TEXT.__swift5_fieldmd: 0x95a4
-+  __TEXT.__swift5_builtin: 0x438
-+  __TEXT.__swift5_proto: 0x1024
-+  __TEXT.__swift5_types: 0x944
-+  __TEXT.__objc_methname: 0xefff
-+  __TEXT.__swift_as_entry: 0xdc
-+  __TEXT.__swift_as_ret: 0x104
-+  __TEXT.__swift_as_cont: 0x26c
-+  __TEXT.__swift5_capture: 0x5444
-+  __TEXT.__oslogstring: 0x1623
-+  __TEXT.__swift5_protos: 0xcc
-+  __TEXT.__swift5_mpenum: 0xa8
-+  __TEXT.__unwind_info: 0x8fd8
-+  __TEXT.__eh_frame: 0x3a2c
-+  __DATA_CONST.__const: 0x13050
-   __DATA_CONST.__cfstring: 0x40
--  __DATA_CONST.__objc_classlist: 0x720
-+  __DATA_CONST.__objc_classlist: 0x718
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x1c8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0xe8
--  __DATA_CONST.__auth_got: 0x6d98
--  __DATA_CONST.__got: 0x3110
--  __DATA_CONST.__auth_ptr: 0x3320
--  __DATA.__objc_const: 0x112f8
--  __DATA.__objc_selrefs: 0x2a38
--  __DATA.__objc_data: 0xe980
--  __DATA.__data: 0x16858
-+  __DATA_CONST.__auth_got: 0x6d40
-+  __DATA_CONST.__got: 0x3180
-+  __DATA_CONST.__auth_ptr: 0x3350
-+  __DATA.__objc_const: 0x110f0
-+  __DATA.__objc_selrefs: 0x2a68
-+  __DATA.__objc_data: 0xe938
-+  __DATA.__data: 0x169f8
-   __DATA.__objc_stublist: 0x10
--  __DATA.__bss: 0x1d2b8
--  __DATA.__common: 0x19f0
-+  __DATA.__bss: 0x1d9b8
-+  __DATA.__common: 0x1a10
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AVKit.framework/AVKit
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/Combine.framework/Combine
+
 +  - /System/Library/Frameworks/Contacts.framework/Contacts
 +  - /System/Library/Frameworks/ContactsUI.framework/ContactsUI
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - @rpath/PodcastsTranscripts.framework/PodcastsTranscripts
-   - @rpath/PodcastsWidgetKit.framework/PodcastsWidgetKit
-   - @rpath/ShelfKit.framework/ShelfKit
 -  Functions: 14143
 -  Symbols:   7730
 -  CStrings:  3394
 +  Functions: 14219
 +  Symbols:   7787
 +  CStrings:  3398
- 
 Symbols:
 + _OBJC_CLASS_$_CNAvatarImageRenderer
 + _OBJC_CLASS_$_CNAvatarImageRendererSettings

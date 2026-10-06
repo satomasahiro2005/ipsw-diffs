@@ -2,69 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/CoreGPSTest.framework/CoreGPSTest.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x64e94` | `0x66ca0` | **`+0x1e0c`** |
+| `__DATA.__common` | `0x9d588` | `0x9ee28` | **`+0x18a0`** |
+| `__TEXT.__oslogstring` | `0xa7c0` | `0xaa72` | **`+0x2b2`** |
+| `__TEXT.__const` | `0x62e0` | `0x64c0` | **`+0x1e0`** |
+| `__TEXT.__gcc_except_tab` | `0x37f8` | `0x3988` | **`+0x190`** |
+| `__AUTH_CONST.__const` | `0x5118` | `0x5260` | **`+0x148`** |
+| `__TEXT.__unwind_info` | `0x2758` | `0x27f8` | **`+0xa0`** |
+| `__AUTH_CONST.__auth_got` | `0xbb0` | `0xbb8` | **`+0x8`** |
+| `__TEXT.__cstring` | `0x528a` | `0x5283` | **`-0x7`** |
+
+### Other Changes
+
 ```diff
 
 -365.0.9.0.0
--  __TEXT.__text: 0x64e94
 +365.0.9.0.1
-+  __TEXT.__text: 0x66ca0
-   __TEXT.__init_offsets: 0xc
-   __TEXT.__objc_methlist: 0x164
--  __TEXT.__const: 0x62e0
--  __TEXT.__gcc_except_tab: 0x37f8
--  __TEXT.__oslogstring: 0xa7c0
-+  __TEXT.__const: 0x64c0
-+  __TEXT.__gcc_except_tab: 0x3988
-+  __TEXT.__oslogstring: 0xaa72
-   __TEXT.__constg_swiftt: 0x408
-   __TEXT.__swift5_typeref: 0x18a
-   __TEXT.__swift5_reflstr: 0x8f
-   __TEXT.__swift5_fieldmd: 0x16c
-   __TEXT.__swift5_capture: 0x120
--  __TEXT.__cstring: 0x528a
-+  __TEXT.__cstring: 0x5283
-   __TEXT.__swift5_proto: 0xc
-   __TEXT.__swift5_types: 0x30
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__unwind_info: 0x2758
-+  __TEXT.__unwind_info: 0x27f8
-   __TEXT.__eh_frame: 0x640
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0x298
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__got: 0x228
--  __AUTH_CONST.__const: 0x5118
-+  __AUTH_CONST.__const: 0x5260
-   __AUTH_CONST.__cfstring: 0x13c0
-   __AUTH_CONST.__objc_const: 0x958
-   __AUTH_CONST.__weak_auth_got: 0x20
-   __AUTH_CONST.__objc_intobj: 0x108
-   __AUTH_CONST.__objc_doubleobj: 0x20
--  __AUTH_CONST.__auth_got: 0xbb0
-+  __AUTH_CONST.__auth_got: 0xbb8
-   __AUTH.__objc_data: 0x170
-   __AUTH.__data: 0x748
-   __DATA.__objc_ivar: 0x8
-   __DATA.__data: 0xd0
--  __DATA.__common: 0x9d588
-+  __DATA.__common: 0x9ee28
-   __DATA.__bss: 0x250
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 2655
--  Symbols:   4333
--  CStrings:  1358
+-  Symbols:   4271
+-  CStrings:  1360
 +  Functions: 2684
-+  Symbols:   4382
-+  CStrings:  1368
- 
++  Symbols:   4320
++  CStrings:  1370
 Symbols:
 + GCC_except_table101
 + GCC_except_table124
@@ -212,6 +176,9 @@ CStrings:
 + "#gdm,handleReset,device,%{public}p"
 + "#gdm,stop,alreadyInFlight,ignore"
 + "#version,CoreGPS-365.0.9.0.1,machContSec,%{public}.3f,BuildTime,{Aug  5 2026,21:57:45}"
++ "21:57:42"
++ "22:00:31"
++ "Aug  5 2026"
 + "GnssClientManager,handleInterrupt,restarting,%{public}llu,ms"
 + "GnssClientManager,ingressRequest,full,type,%{public}d"
 + "GnssClientManager,ingressRequest,restarting,nak,type,%{public}d"
@@ -224,6 +191,9 @@ CStrings:
 + "glonass,invalid vector size,return zeros"
 - "#gdm,handleReset,notBuilt,skip"
 - "#version,CoreGPS-365.0.9,machContSec,%{public}.3f,BuildTime,{Jul 14 2026,21:29:22}"
+- "21:29:17"
+- "21:32:57"
 - "GnssClientManager,gpsdDisconnected,sendingExit"
+- "Jul 14 2026"
 - "glonassExternalCalMeters,%{public}.2f"
 ```

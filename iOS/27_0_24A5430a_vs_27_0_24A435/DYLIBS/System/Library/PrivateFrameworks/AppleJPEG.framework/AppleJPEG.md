@@ -2,19 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/AppleJPEG.framework/AppleJPEG`
 
-```diff
+### Section Size Changes
 
- 246.0.0.0.0
--  __TEXT.__text: 0x3ab30
-+  __TEXT.__text: 0x3ac04
-   __TEXT.__const: 0x5ca0
-   __TEXT.__cstring: 0x5099
-   __TEXT.__oslogstring: 0x19b
--  __TEXT.__unwind_info: 0x890
-+  __TEXT.__unwind_info: 0x898
-   __TEXT.__eh_frame: 0x48
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x108
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3ab30` | `0x3ac04` | **`+0xd4`** |
+| `__TEXT.__unwind_info` | `0x890` | `0x898` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _aj_read_dqt : 396 -> 400
 ~ _aj_init_huffman : 520 -> 532

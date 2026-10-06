@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/NaturalLanguage.framework/NaturalLanguage`
 
-```diff
+### Section Size Changes
 
- 185.0.0.0.0
--  __TEXT.__text: 0x55fb8
-+  __TEXT.__text: 0x55ff8
-   __TEXT.__objc_methlist: 0x373c
-   __TEXT.__const: 0x4c4
-   __TEXT.__cstring: 0x3ae4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x55fb8` | `0x55ff8` | **`+0x40`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__16vectorIdNS_9allocatorIdEEE6resizeEm : 284 -> 288
 ~ __ZN8ME_Model11perform_SGDEv : 1788 -> 1792

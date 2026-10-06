@@ -2,86 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/SpeechRecognitionCore.framework/SpeechRecognitionCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1b5d0` | `0x1bbc8` | **`+0x5f8`** |
+| `__TEXT.__cstring` | `0x1a01` | `0x1ace` | **`+0xcd`** |
+| `__AUTH_CONST.__cfstring` | `0x37c0` | `0x3880` | **`+0xc0`** |
+| `__TEXT.__oslogstring` | `0x1054` | `0x10a2` | **`+0x4e`** |
+| `__AUTH_CONST.__objc_const` | `0x1f58` | `0x1f88` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0xe14` | `0xe3c` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x5f0` | `0x610` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa48` | `0xa60` | **`+0x18`** |
+| `__TEXT.__const` | `0x132` | `0x14a` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0xb18` | `0xb30` | **`+0x18`** |
+| `__DATA.__bss` | `0x160` | `0x170` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x188` | `0x18c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1b5d0
--  __TEXT.__objc_methlist: 0xe14
--  __TEXT.__cstring: 0x1a01
-+  __TEXT.__text: 0x1bbc8
-+  __TEXT.__objc_methlist: 0xe3c
-+  __TEXT.__cstring: 0x1ace
-   __TEXT.__gcc_except_tab: 0xf90
--  __TEXT.__const: 0x132
-+  __TEXT.__const: 0x14a
-   __TEXT.__ustring: 0x41a
--  __TEXT.__oslogstring: 0x1054
-+  __TEXT.__oslogstring: 0x10a2
-   __TEXT.__swift5_typeref: 0x28
-   __TEXT.__swift5_fieldmd: 0x10
--  __TEXT.__unwind_info: 0xb18
-+  __TEXT.__unwind_info: 0xb30
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-37.0.0.0.0
++38.0.0.0.0
 
-   __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0xa48
-+  __DATA_CONST.__objc_selrefs: 0xa60
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x70
-   __DATA_CONST.__objc_arraydata: 0xf40
-   __DATA_CONST.__got: 0x218
--  __AUTH_CONST.__const: 0x5f0
--  __AUTH_CONST.__cfstring: 0x37c0
--  __AUTH_CONST.__objc_const: 0x1f58
-+  __AUTH_CONST.__const: 0x610
-+  __AUTH_CONST.__cfstring: 0x3880
-+  __AUTH_CONST.__objc_const: 0x1f88
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_arrayobj: 0x150
-   __AUTH_CONST.__objc_dictobj: 0x1e0
-
-   __AUTH_CONST.__auth_got: 0x7f0
-   __AUTH.__objc_data: 0x5a0
-   __AUTH.__data: 0x180
--  __DATA.__objc_ivar: 0x188
-+  __DATA.__objc_ivar: 0x18c
-   __DATA.__data: 0x4a8
--  __DATA.__bss: 0x160
-+  __DATA.__bss: 0x170
-   __DATA.__common: 0x30
-   - /System/Library/Frameworks/CoreAudio.framework/CoreAudio
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 641
--  Symbols:   2216
--  CStrings:  979
+-  Symbols:   1461
+-  CStrings:  665
 +  Functions: 650
-+  Symbols:   2241
-+  CStrings:  991
- 
-Sections:
-~ __TEXT.__swift5_fieldmd : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
++  Symbols:   1472
++  CStrings:  671
 Symbols:
 + -[SRDCommandMatcher _coverageForRecognizedText:matchedObjects:]
 + -[SRDCommandMatcher _tokenCountInString:]
@@ -95,12 +45,7 @@ Symbols:
 + _SRDShouldRelaxForKoreanNumberSlot.sNumberSlotIdentifiers
 + _SRDShouldRelaxForKoreanNumberSlot.sNumberSlotIdentifiersOnce
 + ___SRDShouldRelaxForKoreanNumberSlot_block_invoke
-+ _objc_msgSend$_coverageForRecognizedText:matchedObjects:
-+ _objc_msgSend$_tokenCountInString:
-+ _objc_msgSend$coverage
-+ _objc_msgSend$initWithCommand:transcriptionResult:matched:score:numberOfAdlibs:numberOfCachePlaceholders:asrRank:coverage:parameters:matchedObjects:displayString:closeMatchType:
 - -[SRDMatchResult initWithCommand:transcriptionResult:matched:score:numberOfAdlibs:numberOfCachePlaceholders:asrRank:parameters:matchedObjects:displayString:closeMatchType:]
-- _objc_msgSend$initWithCommand:transcriptionResult:matched:score:numberOfAdlibs:numberOfCachePlaceholders:asrRank:parameters:matchedObjects:displayString:closeMatchType:
 CStrings:
 + "  [%lu] Compiled exact match regex: '%{sensitive}@' -> '%{sensitive}@'"
 + "  [%lu] Compiled placeholder regex: '%{sensitive}@' -> '%{sensitive}@', metadata: %{public}@"
@@ -156,5 +101,4 @@ CStrings:
 - "[%{public}@] Segment: trying '%{public}@'='%{public}@'"
 - "[%{public}@] Segment: trying multi-match branch for '%{public}@'='%{public}@'"
 - "[%{public}@] Trying regex for string %lu: '%{public}@'"
-
 ```

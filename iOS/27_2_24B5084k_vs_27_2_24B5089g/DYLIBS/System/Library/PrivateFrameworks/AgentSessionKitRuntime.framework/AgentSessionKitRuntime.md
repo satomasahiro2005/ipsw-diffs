@@ -2,88 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/AgentSessionKitRuntime.framework/AgentSessionKitRuntime`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x1e010` | `0x1bf90` | **`-0x2080`** |
+| `__DATA_DIRTY.__bss` | `0x3900` | `0x5980` | **`+0x2080`** |
+| `__DATA_DIRTY.__data` | `0x3a68` | `0x4de8` | **`+0x1380`** |
+| `__AUTH.__data` | `0x8f28` | `0x81d0` | **`-0xd58`** |
+| `__DATA.__data` | `0x57f8` | `0x5210` | **`-0x5e8`** |
+| `__AUTH_CONST.__const` | `0x9748` | `0x9270` | **`-0x4d8`** |
+| `__AUTH.__objc_data` | `0x2d30` | `0x29c0` | **`-0x370`** |
+| `__DATA_DIRTY.__objc_data` | `0x5d0` | `0x940` | **`+0x370`** |
+| `__TEXT.__swift5_capture` | `0x28f8` | `0x26d0` | **`-0x228`** |
+| `__TEXT.__text` | `0x2c868c` | `0x2c8474` | **`-0x218`** |
+| `__TEXT.__eh_frame` | `0x181e8` | `0x180a8` | **`-0x140`** |
+| `__DATA.__common` | `0x2f8` | `0x1e0` | **`-0x118`** |
+| `__DATA_DIRTY.__common` | `0x100` | `0x218` | **`+0x118`** |
+| `__TEXT.__oslogstring` | `0x96c3` | `0x95e3` | **`-0xe0`** |
+| `__TEXT.__swift5_typeref` | `0xa157` | `0xa215` | **`+0xbe`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7e8` | `0x820` | **`+0x38`** |
+| `__TEXT.__cstring` | `0x21fe` | `0x221e` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x2580` | `0x2598` | **`+0x18`** |
+| `__TEXT.__swift_as_cont` | `0x84c` | `0x834` | **`-0x18`** |
+| `__TEXT.__unwind_info` | `0xd8a0` | `0xd8b8` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x15c0` | `0x15d0` | **`+0x10`** |
+| `__TEXT.__swift_as_ret` | `0x34c` | `0x340` | **`-0xc`** |
+| `__TEXT.__swift_as_entry` | `0x348` | `0x344` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -297.6.0.5.0
--  __TEXT.__text: 0x2b0830
 +297.8.0.2.0
-+  __TEXT.__text: 0x2b0620
-   __TEXT.__objc_methlist: 0x738
-   __TEXT.__const: 0x2ab2c
--  __TEXT.__cstring: 0x21fe
--  __TEXT.__swift5_typeref: 0xa157
--  __TEXT.__swift5_capture: 0x28f8
--  __TEXT.__oslogstring: 0x96c3
-+  __TEXT.__cstring: 0x221e
-+  __TEXT.__swift5_typeref: 0xa215
-+  __TEXT.__swift5_capture: 0x26d0
-+  __TEXT.__oslogstring: 0x95e3
-   __TEXT.__constg_swiftt: 0x58b8
-   __TEXT.__swift5_reflstr: 0x9e1a
-   __TEXT.__swift5_fieldmd: 0x7be4
 
-   __TEXT.__swift5_assocty: 0x1e10
-   __TEXT.__swift5_proto: 0xf40
-   __TEXT.__swift5_types: 0x684
--  __TEXT.__swift_as_entry: 0x348
--  __TEXT.__swift_as_ret: 0x34c
--  __TEXT.__swift_as_cont: 0x84c
-+  __TEXT.__swift_as_entry: 0x344
-+  __TEXT.__swift_as_ret: 0x340
-+  __TEXT.__swift_as_cont: 0x834
-   __TEXT.__swift5_protos: 0x30
-   __TEXT.__swift5_types2: 0x10
--  __TEXT.__unwind_info: 0x120b0
--  __TEXT.__eh_frame: 0x181e8
-+  __TEXT.__unwind_info: 0x120c0
-+  __TEXT.__eh_frame: 0x180a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x568
-   __DATA_CONST.__objc_protolist: 0x58
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7e8
-+  __DATA_CONST.__objc_selrefs: 0x820
-   __DATA_CONST.__objc_protorefs: 0x38
--  __DATA_CONST.__got: 0x15c0
--  __AUTH_CONST.__const: 0x9748
-+  __DATA_CONST.__got: 0x15d0
-+  __AUTH_CONST.__const: 0x9270
-   __AUTH_CONST.__objc_const: 0x11908
--  __AUTH_CONST.__auth_got: 0x2580
--  __AUTH.__objc_data: 0x2d30
--  __AUTH.__data: 0x8f28
--  __DATA.__data: 0x57f8
--  __DATA.__common: 0x2f8
--  __DATA_DIRTY.__objc_data: 0x5d0
--  __DATA_DIRTY.__data: 0x3a68
--  __DATA_DIRTY.__bss: 0x3900
--  __DATA_DIRTY.__common: 0x100
-+  __AUTH_CONST.__auth_got: 0x2598
-+  __AUTH.__objc_data: 0x29c0
-+  __AUTH.__data: 0x81d0
-+  __DATA.__data: 0x5210
-+  __DATA.__common: 0x1e0
-+  __DATA_DIRTY.__objc_data: 0x940
-+  __DATA_DIRTY.__data: 0x4de8
-+  __DATA_DIRTY.__bss: 0x5980
-+  __DATA_DIRTY.__common: 0x218
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 21614
 -  Symbols:   308
 -  CStrings:  785
 +  Functions: 21613
 +  Symbols:   311
 +  CStrings:  783
- 
 Symbols:
 + _OBJC_CLASS_$_CCSiriTranscriptTurnInfo
 + _OBJC_CLASS_$_CKFetchDatabaseChangesOperation

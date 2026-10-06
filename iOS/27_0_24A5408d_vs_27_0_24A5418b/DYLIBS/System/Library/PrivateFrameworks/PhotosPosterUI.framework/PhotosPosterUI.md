@@ -2,78 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/PhotosPosterUI.framework/PhotosPosterUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc5718` | `0xc5adc` | **`+0x3c4`** |
+| `__AUTH_CONST.__objc_const` | `0x11978` | `0x119a8` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7340` | `0x7370` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0xa5f4` | `0xa624` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0x32a0` | `0x32c0` | **`+0x20`** |
+| `__TEXT.__oslogstring` | `0x49d3` | `0x49ee` | **`+0x1b`** |
+| `__TEXT.__unwind_info` | `0x3160` | `0x3178` | **`+0x18`** |
+| `__DATA.__bss` | `0x1de0` | `0x1df0` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0xa84` | `0xa88` | **`+0x4`** |
+| `__TEXT.__gcc_except_tab` | `0x1994` | `0x1998` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -912.0.111.0.0
--  __TEXT.__text: 0xc5718
--  __TEXT.__objc_methlist: 0xa5f4
 +912.0.232.0.0
-+  __TEXT.__text: 0xc5adc
-+  __TEXT.__objc_methlist: 0xa624
-   __TEXT.__dlopen_cstrs: 0x64
-   __TEXT.__const: 0x2ef0
-   __TEXT.__constg_swiftt: 0x177c
 
-   __TEXT.__swift5_types: 0xb8
-   __TEXT.__cstring: 0x6df5
-   __TEXT.__swift5_capture: 0x8cc
--  __TEXT.__oslogstring: 0x49d3
-+  __TEXT.__oslogstring: 0x49ee
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x10
--  __TEXT.__gcc_except_tab: 0x1994
-+  __TEXT.__gcc_except_tab: 0x1998
-   __TEXT.__ustring: 0xdc
--  __TEXT.__unwind_info: 0x3160
-+  __TEXT.__unwind_info: 0x3178
-   __TEXT.__eh_frame: 0x4dc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x268
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7340
-+  __DATA_CONST.__objc_selrefs: 0x7370
-   __DATA_CONST.__objc_protorefs: 0x88
-   __DATA_CONST.__objc_superrefs: 0x268
-   __DATA_CONST.__objc_arraydata: 0x60
-   __DATA_CONST.__got: 0x11f8
--  __AUTH_CONST.__const: 0x32a0
-+  __AUTH_CONST.__const: 0x32c0
-   __AUTH_CONST.__cfstring: 0x5020
--  __AUTH_CONST.__objc_const: 0x11978
-+  __AUTH_CONST.__objc_const: 0x119a8
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__objc_doubleobj: 0x60
-   __AUTH_CONST.__objc_intobj: 0xf0
-   __AUTH_CONST.__auth_got: 0x1b08
-   __AUTH.__objc_data: 0x3088
-   __AUTH.__data: 0x9b0
--  __DATA.__objc_ivar: 0xa84
-+  __DATA.__objc_ivar: 0xa88
-   __DATA.__data: 0x2c68
--  __DATA.__bss: 0x1de0
-+  __DATA.__bss: 0x1df0
-   __DATA.__common: 0x1a0
-   __DATA_DIRTY.__objc_data: 0xa0
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5298
--  Symbols:   10147
+-  Symbols:   7113
 -  CStrings:  1242
 +  Functions: 5304
-+  Symbols:   10161
++  Symbols:   7121
 +  CStrings:  1243
- 
 Symbols:
 + -[PUWallpaperPosterController _deviceConfigurationForCurrentDisplay]
 + -[PUWallpaperPosterController forcedPosterUpgradeReason]
@@ -159,13 +119,6 @@ Symbols:
 + _PUFiltersForBacklightLuminanceUpdates
 + _PUPosterShouldNormalizeBlurEdges.onceToken
 + ___PUPosterShouldNormalizeBlurEdges_block_invoke
-+ _objc_msgSend$_deviceConfigurationForCurrentDisplay
-+ _objc_msgSend$_effectiveDeviceOrientation
-+ _objc_msgSend$deviceConfigurationForDisplayContext:
-+ _objc_msgSend$ensureLayoutsForAllDisplayContexts:preservesLayout:completion:
-+ _objc_msgSend$forcedPosterUpgradeReason
-+ _objc_msgSend$isAnyFrameUsingHeadroom
-+ _objc_msgSend$setForcedPosterUpgradeReason:
 - GCC_except_table1018
 - GCC_except_table1055
 - GCC_except_table1060
@@ -242,7 +195,6 @@ Symbols:
 - GCC_except_table3358
 - GCC_except_table3361
 - GCC_except_table3375
-- _objc_msgSend$ensureLayoutsForAllDisplayContexts:completion:
 CStrings:
 + "Forcing depth off for stand-in layout on display %{public}@"
 + "Layout configuration mismatch detected, updating layout for display %{public}@"

@@ -2,111 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/CameraUI.framework/CameraUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3f12a4` | `0x3fbf5c` | **`+0xacb8`** |
+| `__TEXT.__const` | `0x23674` | `0x24614` | **`+0xfa0`** |
+| `__TEXT.__swift5_typeref` | `0x29c30` | `0x2a832` | **`+0xc02`** |
+| `__DATA.__bss` | `0xfe58` | `0x10998` | **`+0xb40`** |
+| `__AUTH_CONST.__const` | `0xf8a0` | `0x10160` | **`+0x8c0`** |
+| `__TEXT.__swift5_reflstr` | `0x66fa` | `0x6b9a` | **`+0x4a0`** |
+| `__TEXT.__swift5_fieldmd` | `0x60b4` | `0x6524` | **`+0x470`** |
+| `__DATA.__data` | `0xb3e0` | `0xb7c0` | **`+0x3e0`** |
+| `__TEXT.__constg_swiftt` | `0x6f8c` | `0x72a4` | **`+0x318`** |
+| `__TEXT.__unwind_info` | `0xf6d8` | `0xf978` | **`+0x2a0`** |
+| `__AUTH_CONST.__objc_const` | `0x4c958` | `0x4cbb8` | **`+0x260`** |
+| `__TEXT.__eh_frame` | `0x3824` | `0x39ec` | **`+0x1c8`** |
+| `__TEXT.__cstring` | `0x271fa` | `0x273ba` | **`+0x1c0`** |
+| `__AUTH.__data` | `0x17d0` | `0x1930` | **`+0x160`** |
+| `__TEXT.__objc_methlist` | `0x2c328` | `0x2c488` | **`+0x160`** |
+| `__TEXT.__oslogstring` | `0x18144` | `0x182a4` | **`+0x160`** |
+| `__TEXT.__swift5_capture` | `0x2748` | `0x2864` | **`+0x11c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x195a8` | `0x196b8` | **`+0x110`** |
+| `__TEXT.__swift5_assocty` | `0x1928` | `0x1a18` | **`+0xf0`** |
+| `__DATA_DIRTY.__data` | `0x4ad8` | `0x4a08` | **`-0xd0`** |
+| `__TEXT.__swift5_proto` | `0xb70` | `0xbc4` | **`+0x54`** |
+| `__DATA_CONST.__got` | `0x4660` | `0x46b0` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x3900` | `0x3940` | **`+0x40`** |
+| `__TEXT.__swift5_types` | `0x678` | `0x6b4` | **`+0x3c`** |
+| `__DATA.__objc_ivar` | `0x3a74` | `0x3aa0` | **`+0x2c`** |
+| `__AUTH_CONST.__cfstring` | `0x15be0` | `0x15c00` | **`+0x20`** |
+| `__TEXT.__swift5_builtin` | `0x4b0` | `0x4c4` | **`+0x14`** |
+| `__TEXT.__swift_as_cont` | `0x19c` | `0x1b0` | **`+0x14`** |
+| `__DATA_DIRTY.__objc_data` | `0x7970` | `0x7980` | **`+0x10`** |
+| `__TEXT.__swift_as_ret` | `0x110` | `0x118` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x118` | `0x11c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -4174.0.0.0.0
--  __TEXT.__text: 0x3f12a4
 +4177.22.3.0.0
-+  __TEXT.__text: 0x3fbf5c
-   __TEXT.__lazy_helpers: 0xad4
--  __TEXT.__objc_methlist: 0x2c328
--  __TEXT.__const: 0x23674
-+  __TEXT.__objc_methlist: 0x2c488
-+  __TEXT.__const: 0x24614
-   __TEXT.__gcc_except_tab: 0x2d44
--  __TEXT.__cstring: 0x271fa
--  __TEXT.__oslogstring: 0x18144
-+  __TEXT.__cstring: 0x273ba
-+  __TEXT.__oslogstring: 0x182a4
-   __TEXT.__dlopen_cstrs: 0x3b9
-   __TEXT.__ustring: 0x4
--  __TEXT.__swift5_typeref: 0x29c30
--  __TEXT.__constg_swiftt: 0x6f8c
--  __TEXT.__swift5_fieldmd: 0x60b4
--  __TEXT.__swift5_builtin: 0x4b0
--  __TEXT.__swift5_reflstr: 0x66fa
--  __TEXT.__swift5_assocty: 0x1928
-+  __TEXT.__constg_swiftt: 0x72a4
-+  __TEXT.__swift5_typeref: 0x2a832
-+  __TEXT.__swift5_reflstr: 0x6b9a
-+  __TEXT.__swift5_fieldmd: 0x6524
-+  __TEXT.__swift5_builtin: 0x4c4
-+  __TEXT.__swift5_assocty: 0x1a18
-+  __TEXT.__swift5_proto: 0xbc4
-+  __TEXT.__swift5_types: 0x6b4
-+  __TEXT.__swift5_capture: 0x2864
-+  __TEXT.__swift_as_entry: 0x11c
-+  __TEXT.__swift_as_ret: 0x118
-+  __TEXT.__swift_as_cont: 0x1b0
-   __TEXT.__swift5_protos: 0x48
--  __TEXT.__swift5_proto: 0xb70
--  __TEXT.__swift5_types: 0x678
--  __TEXT.__swift5_capture: 0x2748
--  __TEXT.__swift_as_entry: 0x118
--  __TEXT.__swift_as_ret: 0x110
--  __TEXT.__swift_as_cont: 0x19c
-   __TEXT.__swift5_mpenum: 0x28
--  __TEXT.__unwind_info: 0xf6d8
--  __TEXT.__eh_frame: 0x3824
-+  __TEXT.__unwind_info: 0xf978
-+  __TEXT.__eh_frame: 0x39ec
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x90
-   __DATA_CONST.__objc_protolist: 0x798
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x195a8
-+  __DATA_CONST.__objc_selrefs: 0x196b8
-   __DATA_CONST.__objc_protorefs: 0xf0
-   __DATA_CONST.__objc_superrefs: 0xcc8
-   __DATA_CONST.__objc_arraydata: 0xfe0
--  __DATA_CONST.__got: 0x4660
--  __AUTH_CONST.__const: 0xf8a0
--  __AUTH_CONST.__cfstring: 0x15be0
--  __AUTH_CONST.__objc_const: 0x4c958
-+  __DATA_CONST.__got: 0x46b0
-+  __AUTH_CONST.__const: 0x10160
-+  __AUTH_CONST.__cfstring: 0x15c00
-+  __AUTH_CONST.__objc_const: 0x4cbb8
-   __AUTH_CONST.__lazy_load_got: 0x108
-   __AUTH_CONST.__objc_intobj: 0x14b8
-   __AUTH_CONST.__objc_doubleobj: 0x4c0
--  __AUTH_CONST.__objc_arrayobj: 0xc48
-   __AUTH_CONST.__objc_dictobj: 0x280
-+  __AUTH_CONST.__objc_arrayobj: 0xc48
-   __AUTH_CONST.__objc_floatobj: 0x30
--  __AUTH_CONST.__auth_got: 0x3900
-+  __AUTH_CONST.__auth_got: 0x3940
-   __AUTH.__objc_data: 0x4b70
--  __AUTH.__data: 0x17d0
--  __DATA.__objc_ivar: 0x3a74
--  __DATA.__data: 0xb3e0
--  __DATA.__bss: 0xfe58
-+  __AUTH.__data: 0x1930
-+  __DATA.__objc_ivar: 0x3aa0
-+  __DATA.__data: 0xb7c0
-+  __DATA.__bss: 0x10998
-   __DATA.__common: 0x1c0
--  __DATA_DIRTY.__objc_data: 0x7970
--  __DATA_DIRTY.__data: 0x4ad8
-+  __DATA_DIRTY.__objc_data: 0x7980
-+  __DATA_DIRTY.__data: 0x4a08
-   __DATA_DIRTY.__bss: 0x6d28
-   __DATA_DIRTY.__common: 0x180
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 25947
--  Symbols:   41116
+-  Symbols:   29785
 -  CStrings:  5375
 +  Functions: 26231
-+  Symbols:   41299
++  Symbols:   29940
 +  CStrings:  5395
- 
 Symbols:
 + -[CAMAnalyticsPreferencesEvent _populatePinnedControlGroupAnalyticsWithPreferences:capabilities:]
 + -[CAMCaptureCapabilities trueVideoPercentCompleteFixEnabled]
@@ -230,45 +174,6 @@ Symbols:
 + _keypath_set.260Tm
 + _keypath_set.447Tm
 + _keypath_set.66Tm
-+ _objc_msgSend$_activeIdleTimerDelay
-+ _objc_msgSend$_batchGroupIdentifierForRequest:
-+ _objc_msgSend$_captureAccessibilityBinsWithCommandBuffer:
-+ _objc_msgSend$_createChromeConfiguratorWithGraphConfiguration:visualIntelligenceSourceApp:
-+ _objc_msgSend$_didHideVisualIntelligenceCaptureForSnapshot
-+ _objc_msgSend$_discardVisualIntelligenceCaptureForPasscodeLock
-+ _objc_msgSend$_hasViewportAspectRatioChange
-+ _objc_msgSend$_hideVisualIntelligenceCaptureForSnapshotIfNeeded
-+ _objc_msgSend$_passThroughTextureForPixelBuffer:outCVTexture:
-+ _objc_msgSend$_populatePinnedControlGroupAnalyticsWithPreferences:capabilities:
-+ _objc_msgSend$_setHasViewportAspectRatioChange:
-+ _objc_msgSend$_shouldDiscardVisualIntelligenceCaptureForPasscodeLockRefreshingLockState:
-+ _objc_msgSend$_showVisualIntelligenceCaptureAfterSnapshotIfNeeded
-+ _objc_msgSend$_updateAllowedOrientationsForGraphConfiguration:isShowingCameraRoll:
-+ _objc_msgSend$allowedOrientations
-+ _objc_msgSend$batchGroupIdentifier
-+ _objc_msgSend$copyFromBuffer:sourceOffset:toBuffer:destinationOffset:size:
-+ _objc_msgSend$floatAnimatablePropertyWithView:initialValue:cancelableFrameCallback:
-+ _objc_msgSend$initWithBytes:length:
-+ _objc_msgSend$initWithCaptureController:captureConfiguration:conflictingControlConfiguration:locationController:motionController:timelapseController:keepAliveController:remoteShutterController:powerController:cameraRollController:librarySelectionController:callStatusMonitor:storageController:usingEmulationMode:initialLayoutStyle:options:visualIntelligenceSourceApp:
-+ _objc_msgSend$initWithEventHandler:captureGraphConfiguration:visualIntelligenceSourceApp:
-+ _objc_msgSend$initWithRequest:creationDate:captureTimestamp:localDestinationURL:job:loggingIdentifier:batchGroupIdentifier:completionHandler:
-+ _objc_msgSend$isAnimatingForKey:
-+ _objc_msgSend$isDeferredStartSupported
-+ _objc_msgSend$isIntelligenceMode
-+ _objc_msgSend$performDeferredRemotePersistenceWithCompletionHandler:
-+ _objc_msgSend$rectAnimatablePropertyWithView:initialValue:cancelableFrameCallback:
-+ _objc_msgSend$setAllowedOrientations:
-+ _objc_msgSend$setDeferredStartEnabled:
-+ _objc_msgSend$setIntelligenceMode:
-+ _objc_msgSend$setPendingVisualIntelligenceSourceApp:
-+ _objc_msgSend$setVisualIntelligenceContentHiddenForSnapshot:
-+ _objc_msgSend$setVisualIntelligenceSourceApp:
-+ _objc_msgSend$set_didHideVisualIntelligenceCaptureForSnapshot:
-+ _objc_msgSend$sourceApplication
-+ _objc_msgSend$supportedCaptureModesForCapabilities:emulatingImagePicker:
-+ _objc_msgSend$trueVideoPercentCompleteFixEnabled
-+ _objc_msgSend$vector2DAnimatablePropertyWithView:initialValue:cancelableFrameCallback:
-+ _objc_msgSend$visualIntelligenceSourceApp
 + _symbolic SS4name______Sg13paletteColors_____12rotationTypet 8CameraUI13PaletteColorsV AA30ControlOrientationRotationTypeO
 + _symbolic SS4name______Sg13paletteColorst 8CameraUI13PaletteColorsV
 + _symbolic SS4text_t
@@ -554,17 +459,6 @@ Symbols:
 - _keypath_set.253Tm
 - _keypath_set.437Tm
 - _keypath_set.62Tm
-- _objc_msgSend$_createChromeConfiguratorWithGraphConfiguration:
-- _objc_msgSend$floatAnimatablePropertyWithInitialValue:cancelableFrameCallback:
-- _objc_msgSend$forceLandscapeOrientation
-- _objc_msgSend$initWithCaptureController:captureConfiguration:conflictingControlConfiguration:locationController:motionController:timelapseController:keepAliveController:remoteShutterController:powerController:cameraRollController:librarySelectionController:callStatusMonitor:storageController:usingEmulationMode:initialLayoutStyle:options:
-- _objc_msgSend$initWithEventHandler:captureGraphConfiguration:
-- _objc_msgSend$initWithRequest:creationDate:captureTimestamp:localDestinationURL:job:loggingIdentifier:completionHandler:
-- _objc_msgSend$performDeferredRemotePersistenceWithShouldBatchSaveAssets:completionHandler:
-- _objc_msgSend$rectAnimatablePropertyWithInitialValue:cancelableFrameCallback:
-- _objc_msgSend$setExposureValueClosestTo:
-- _objc_msgSend$setForceLandscapeOrientation:
-- _objc_msgSend$vector2DAnimatablePropertyWithInitialValue:cancelableFrameCallback:
 - _symbolic SDySi_____G 12CoreGraphics7CGFloatV
 - _symbolic SS4name_t
 - _symbolic Si__________yAByABy_____y_____y_____yABy_____y_____yAByAByAByABy__________G_____G_____G_____G_AByAByAByAByAByAByABy_____yABy__________ySiSgGG_Qo_APy_____GG_____ySSGGAKG_____GAPySbGGA0_G_____GAByAByAByAoYGAKGA0_GSg_____QPGG_____y_____GGG______Qo__AOQo______G_____GA0_GIegynr_ 8CameraUI16ChromeMenuOptionV 05SwiftB015ModifiedContentV AD4ViewPADE023accessibilityShowsLargeH6VieweryQrqd__yXEAdGRd__lFQO AhDE11buttonStyleyQrqd__AD015PrimitiveButtonO0Rd__lFQO AD0Q0V AD6HStackV AD05TupleH0V AD5ImageV AD12_FrameLayoutV AD08_PaddingV0V AA022DynamicRangeForegroundO8ModifierV AD14_OpacityEffectV AhDE17hyphenationFactoryQr12CoreGraphics7CGFloatVFQO AD4TextV AD30_EnvironmentKeyWritingModifierV AD0H10TransitionV AD18_AnimationModifierV AD31AccessibilityAttachmentModifierV AD010_FixedSizeV0V AD6SpacerV AD01_H13ShapeModifierV AD9RectangleV AD05PlainqO0V AD21_GridCellSizeModifierV AD22_GridAlignmentModifierV

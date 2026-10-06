@@ -2,33 +2,28 @@
 
 > `/Applications/DiagnosticsService.app/PlugIns/Diagnostic-9006.appex/Diagnostic-9006`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0xc0` | `0xc8` | **`+0x8`** |
+| `__TEXT.__const` | `0x78` | `0x80` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__auth_stubs: 0x2c0
-   __TEXT.__objc_stubs: 0x11c0
-   __TEXT.__objc_methlist: 0x8d0
--  __TEXT.__const: 0x78
-+  __TEXT.__const: 0x80
-   __TEXT.__objc_classname: 0xc8
-   __TEXT.__objc_methname: 0x1fbb
-   __TEXT.__objc_methtype: 0xb01
-
-   __DATA_CONST.__objc_superrefs: 0x10
-   __DATA_CONST.__objc_intobj: 0x48
-   __DATA_CONST.__auth_got: 0x170
--  __DATA_CONST.__got: 0xc0
-+  __DATA_CONST.__got: 0xc8
-   __DATA.__objc_const: 0xba0
-   __DATA.__objc_selrefs: 0x828
-   __DATA.__objc_ivar: 0x6c
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__data : content changed
-
+-1307.0.16.0.0
++1307.0.26.502.1
 ```

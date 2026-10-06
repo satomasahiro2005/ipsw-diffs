@@ -2,45 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/ScreenReaderOutput.framework/ScreenReaderOutput`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9dc3c` | `0x9dcb8` | **`+0x7c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4850` | `0x4858` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x9200` | `0x9208` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x2908` | `0x2900` | **`-0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x1950` | `0x194c` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -467.3.0.0.0
--  __TEXT.__text: 0x99848
--  __TEXT.__objc_methlist: 0x9200
 +467.3.1.0.0
-+  __TEXT.__text: 0x998ac
-+  __TEXT.__objc_methlist: 0x9208
-   __TEXT.__const: 0x183c
-   __TEXT.__cstring: 0x5c0c
-   __TEXT.__swift5_typeref: 0xeec
 
-   __TEXT.__swift_as_ret: 0x5c
-   __TEXT.__swift_as_cont: 0x9c
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__gcc_except_tab: 0x1950
-+  __TEXT.__gcc_except_tab: 0x194c
-   __TEXT.__ustring: 0x9e
-   __TEXT.__unwind_info: 0x3418
-   __TEXT.__eh_frame: 0xa30
-
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x140
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4850
-+  __DATA_CONST.__objc_selrefs: 0x4858
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_superrefs: 0x210
-   __DATA_CONST.__objc_arraydata: 0x380
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4010
--  Symbols:   7840
+-  Symbols:   5812
 +  Functions: 4011
-+  Symbols:   7842
-   CStrings:  1081
- 
++  Symbols:   5813
 Symbols:
 + -[SCROBrailleDisplay _cancelPendingCellWrites]
 + GCC_except_table1021
@@ -114,7 +96,6 @@ Symbols:
 + GCC_except_table847
 + GCC_except_table888
 + GCC_except_table890
-+ _objc_msgSend$_cancelPendingCellWrites
 - GCC_except_table1020
 - GCC_except_table1084
 - GCC_except_table1086
@@ -188,6 +169,6 @@ Symbols:
 - GCC_except_table889
 Functions:
 ~ -[SCROBrailleDisplay invalidate] : 336 -> 324
-~ -[SCROBrailleDisplay _unloadNotification:] : 20 -> 60
+~ -[SCROBrailleDisplay _unloadNotification:] : 20 -> 72
 + -[SCROBrailleDisplay _cancelPendingCellWrites]
 ```

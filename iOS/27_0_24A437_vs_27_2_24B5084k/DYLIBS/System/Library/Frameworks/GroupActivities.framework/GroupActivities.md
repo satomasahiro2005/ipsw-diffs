@@ -2,89 +2,43 @@
 
 > `/System/Library/Frameworks/GroupActivities.framework/GroupActivities`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1cfd64` | `0x1ceee8` | **`-0xe7c`** |
+| `__AUTH_CONST.__objc_const` | `0x4ad0` | `0x49f0` | **`-0xe0`** |
+| `__TEXT.__eh_frame` | `0xd214` | `0xd144` | **`-0xd0`** |
+| `__AUTH_CONST.__const` | `0xd258` | `0xd1a0` | **`-0xb8`** |
+| `__DATA.__data` | `0x4530` | `0x44b0` | **`-0x80`** |
+| `__TEXT.__constg_swiftt` | `0x5a98` | `0x5a18` | **`-0x80`** |
+| `__TEXT.__objc_methlist` | `0x698` | `0x618` | **`-0x80`** |
+| `__TEXT.__unwind_info` | `0x6f50` | `0x6ee0` | **`-0x70`** |
+| `__TEXT.__const` | `0x1179c` | `0x1176c` | **`-0x30`** |
+| `__DATA_CONST.__const` | `0x1130` | `0x1108` | **`-0x28`** |
+| `__TEXT.__swift5_fieldmd` | `0x4488` | `0x4460` | **`-0x28`** |
+| `__TEXT.__cstring` | `0x29f7` | `0x29d7` | **`-0x20`** |
+| `__TEXT.__oslogstring` | `0x7cb8` | `0x7cd8` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7d8` | `0x7c0` | **`-0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x2098` | `0x20a8` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0x49e8` | `0x49f8` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x3b26` | `0x3b16` | **`-0x10`** |
+| `__TEXT.__swift5_typeref` | `0x68a5` | `0x68ad` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x550` | `0x54c` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -303.100.1.0.0
--  __TEXT.__text: 0x1bab84
--  __TEXT.__objc_methlist: 0x698
--  __TEXT.__const: 0x1179c
--  __TEXT.__cstring: 0x29f7
--  __TEXT.__oslogstring: 0x7cb8
--  __TEXT.__swift5_typeref: 0x68a5
 +309.200.41.0.0
-+  __TEXT.__text: 0x1b9d74
-+  __TEXT.__objc_methlist: 0x618
-+  __TEXT.__const: 0x1176c
-+  __TEXT.__cstring: 0x29d7
-+  __TEXT.__oslogstring: 0x7cd8
-+  __TEXT.__swift5_typeref: 0x68ad
-   __TEXT.__swift5_capture: 0x27d8
--  __TEXT.__swift5_fieldmd: 0x4488
--  __TEXT.__constg_swiftt: 0x5a98
--  __TEXT.__swift5_reflstr: 0x3b26
-+  __TEXT.__swift5_fieldmd: 0x4460
-+  __TEXT.__constg_swiftt: 0x5a18
-+  __TEXT.__swift5_reflstr: 0x3b16
-   __TEXT.__swift5_builtin: 0x244
-   __TEXT.__swift5_assocty: 0x8e8
-   __TEXT.__swift5_protos: 0xb4
-   __TEXT.__swift5_proto: 0xb54
--  __TEXT.__swift5_types: 0x550
-+  __TEXT.__swift5_types: 0x54c
-   __TEXT.__swift_as_entry: 0x3ec
-   __TEXT.__swift_as_ret: 0x440
-   __TEXT.__swift_as_cont: 0x81c
-   __TEXT.__swift5_mpenum: 0x5c
--  __TEXT.__unwind_info: 0x8590
--  __TEXT.__eh_frame: 0xd224
-+  __TEXT.__unwind_info: 0x8520
-+  __TEXT.__eh_frame: 0xd154
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1130
-+  __DATA_CONST.__const: 0x1108
-   __DATA_CONST.__objc_classlist: 0x180
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_catlist2: 0x10
-   __DATA_CONST.__objc_protolist: 0x90
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7d8
-+  __DATA_CONST.__objc_selrefs: 0x7c0
-   __DATA_CONST.__objc_protorefs: 0x50
-   __DATA_CONST.__got: 0xc78
--  __AUTH_CONST.__const: 0xd258
-+  __AUTH_CONST.__const: 0xd1a0
-   __AUTH_CONST.__cfstring: 0x80
--  __AUTH_CONST.__objc_const: 0x4ad0
--  __AUTH_CONST.__auth_got: 0x2098
-+  __AUTH_CONST.__objc_const: 0x49f0
-+  __AUTH_CONST.__auth_got: 0x20a8
-   __AUTH.__objc_data: 0x168
-   __AUTH.__data: 0x6c8
--  __DATA.__data: 0x4530
-+  __DATA.__data: 0x44b0
-   __DATA.__objc_stublist: 0x10
-   __DATA.__common: 0x380
-   __DATA_DIRTY.__objc_data: 0xeb8
--  __DATA_DIRTY.__data: 0x49e8
-+  __DATA_DIRTY.__data: 0x49f8
-   __DATA_DIRTY.__common: 0x310
-   __DATA_DIRTY.__bss: 0x1880
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9806
--  Symbols:   22524
+-  Symbols:   22329
 -  CStrings:  784
 +  Functions: 9776
-+  Symbols:   22482
++  Symbols:   22287
 +  CStrings:  783
- 
 Symbols:
 + _$s14CopresenceCore10XPCWrapperC13dynamicMemberqd__s7KeyPathCyxqd__G_tcluig
 + _$s14CopresenceCore10XPCWrapperC6FormatO4jsonyAEyx_GAGmSeRzSERzlFWC
@@ -134,7 +88,6 @@ Symbols:
 + _$s15GroupActivities21TeleportToSeatRequestVACSEAAWlTm
 + _$s15GroupActivities22SystemCoordinatorStateC011ParticipantE0C14xpcWrappedSeat33_F9655F4C51447F3C29D73B552484838DLL14CopresenceCore10XPCWrapperCyAE0I0VGSgvpWvd
 + _$s15GroupActivities30SystemCoordinatorConfigurationC7wrapped33_E687053184EB28B6472960559EE3ADA1LL14CopresenceCore10XPCWrapperCyAC7WrappedVGSgvpWvd
-+ _objc_msgSend$isCurrentUser
 + _symbolic _____y_____G 14CopresenceCore10XPCWrapperC 15GroupActivities22SystemCoordinatorStateC011ParticipantH0C4SeatV
 + _symbolic _____y_____G 14CopresenceCore10XPCWrapperC 15GroupActivities30SystemCoordinatorConfigurationC7WrappedV
 + _symbolic _____y_____GSg 14CopresenceCore10XPCWrapperC 15GroupActivities22SystemCoordinatorStateC011ParticipantH0C4SeatV
@@ -232,7 +185,6 @@ Symbols:
 - __INSTANCE_METHODS__TtC15GroupActivities10XPCWrapper
 - __IVARS__TtC15GroupActivities10XPCWrapper
 - __PROTOCOLS__TtC15GroupActivities10XPCWrapper
-- _objc_msgSend$zoneHierarchiesEnabled
 - _symbolic _____ 15GroupActivities10XPCWrapperC
 - _symbolic _____y_____G 15GroupActivities10XPCWrapperC AA22SystemCoordinatorStateC011ParticipantF0C4SeatV
 - _symbolic _____y_____G 15GroupActivities10XPCWrapperC AA30SystemCoordinatorConfigurationC7WrappedV

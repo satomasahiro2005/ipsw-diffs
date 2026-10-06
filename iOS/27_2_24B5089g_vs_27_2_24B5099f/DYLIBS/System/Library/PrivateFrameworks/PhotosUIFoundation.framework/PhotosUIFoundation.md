@@ -2,76 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/PhotosUIFoundation.framework/PhotosUIFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0xb976` | `0xb922` | **`-0x54`** |
+| `__AUTH_CONST.__objc_const` | `0x1f170` | `0x1f1b8` | **`+0x48`** |
+| `__AUTH_CONST.__cfstring` | `0x7d00` | `0x7cc0` | **`-0x40`** |
+| `__TEXT.__const` | `0x71f0` | `0x7230` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0x6160` | `0x6140` | **`-0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x1960` | `0x1978` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0xfc84` | `0xfc9c` | **`+0x18`** |
+| `__DATA.__bss` | `0x6bd0` | `0x6bc0` | **`-0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7860` | `0x7850` | **`-0x10`** |
+| `__TEXT.__text` | `0xf64b4` | `0xf64a8` | **`-0xc`** |
+| `__DATA_CONST.__const` | `0x3f30` | `0x3f28` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x5748` | `0x5740` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -916.45.110.0.0
 +916.51.202.0.0
-   __TEXT.__text: 0xedc4c
--  __TEXT.__objc_methlist: 0xfc84
--  __TEXT.__const: 0x71f0
-+  __TEXT.__objc_methlist: 0xfc9c
-+  __TEXT.__const: 0x7230
-   __TEXT.__swift5_typeref: 0x2e14
-   __TEXT.__constg_swiftt: 0x3a90
-   __TEXT.__swift5_builtin: 0x208
 
-   __TEXT.__swift5_assocty: 0x9d0
-   __TEXT.__swift5_proto: 0x3b8
-   __TEXT.__swift5_types: 0x268
--  __TEXT.__cstring: 0xb976
-+  __TEXT.__cstring: 0xb922
-   __TEXT.__swift5_capture: 0xe28
-   __TEXT.__swift5_protos: 0x98
-   __TEXT.__oslogstring: 0x1a3a
-
-   __TEXT.__swift5_mpenum: 0x10
-   __TEXT.__gcc_except_tab: 0xce4
-   __TEXT.__ustring: 0x124
--  __TEXT.__unwind_info: 0x6ae0
-+  __TEXT.__unwind_info: 0x6ad8
-   __TEXT.__eh_frame: 0x1cb0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3f30
-+  __DATA_CONST.__const: 0x3f28
-   __DATA_CONST.__objc_classlist: 0x788
-   __DATA_CONST.__objc_catlist: 0xe8
-   __DATA_CONST.__objc_protolist: 0x348
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7860
-+  __DATA_CONST.__objc_selrefs: 0x7850
-   __DATA_CONST.__objc_protorefs: 0xc0
-   __DATA_CONST.__objc_superrefs: 0x518
-   __DATA_CONST.__objc_arraydata: 0x300
-   __DATA_CONST.__got: 0xea0
--  __AUTH_CONST.__const: 0x6160
--  __AUTH_CONST.__cfstring: 0x7d00
--  __AUTH_CONST.__objc_const: 0x1f170
-+  __AUTH_CONST.__const: 0x6140
-+  __AUTH_CONST.__cfstring: 0x7cc0
-+  __AUTH_CONST.__objc_const: 0x1f1b8
-   __AUTH_CONST.__objc_intobj: 0x150
-   __AUTH_CONST.__objc_doubleobj: 0x1e0
-   __AUTH_CONST.__objc_arrayobj: 0x120
-   __AUTH_CONST.__objc_dictobj: 0x168
--  __AUTH_CONST.__auth_got: 0x1960
-+  __AUTH_CONST.__auth_got: 0x1978
-   __AUTH.__objc_data: 0x4858
-   __AUTH.__data: 0x1b50
-   __DATA.__objc_ivar: 0x10e8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9599
 +  Functions: 9597
-   Symbols:   11127
+
 -  CStrings:  1576
 +  CStrings:  1575
- 
 Symbols:
 + -[PXBaseDisplayCollection px_allowsScopedSearch]
 + -[UIScrollView(PhotosUICore) px_setTopEdgePocketHidden:]

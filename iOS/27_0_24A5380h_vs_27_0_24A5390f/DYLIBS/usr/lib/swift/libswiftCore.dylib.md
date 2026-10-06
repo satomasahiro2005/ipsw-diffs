@@ -2,89 +2,34 @@
 
 > `/usr/lib/swift/libswiftCore.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_nlclslist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__lazy_load_got`
-- `__AUTH.__objc_data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4b8b30` | `0x4b3880` | **`-0x52b0`** |
+| `__AUTH_CONST.__const` | `0x168e8` | `0x16468` | **`-0x480`** |
+| `__DATA_DIRTY.__bss` | `0x17570` | `0x179e0` | **`+0x470`** |
+| `__DATA.__bss` | `0xf438` | `0xeff8` | **`-0x440`** |
+| `__TEXT.__unwind_info` | `0xbe70` | `0xbca0` | **`-0x1d0`** |
+| `__DATA_DIRTY.__data` | `0x3308` | `0x33f8` | **`+0xf0`** |
+| `__AUTH.__data` | `0xe718` | `0xe658` | **`-0xc0`** |
+| `__TEXT.__cstring` | `0x12d75` | `0x12dc5` | **`+0x50`** |
+| `__DATA.__data` | `0xbc4` | `0xba4` | **`-0x20`** |
+| `__TEXT.__const` | `0xbb5cb` | `0xbb5eb` | **`+0x20`** |
+
+### Other Changes
 
 ```diff
 
 -6.4.0.25.5
--  __TEXT.__text: 0x4b8b30
 +6.4.0.27.101
-+  __TEXT.__text: 0x4b3880
-   __TEXT.__lazy_helpers: 0x348
-   __TEXT.__init_offsets: 0x18
-   __TEXT.__objc_methlist: 0x1e1c
--  __TEXT.__cstring: 0x12d75
--  __TEXT.__const: 0xbb5cb
-+  __TEXT.__cstring: 0x12dc5
-+  __TEXT.__const: 0xbb5eb
-   __TEXT.__oslogstring: 0xb7
-   __TEXT.__gcc_except_tab: 0xd8
-   __TEXT.__lldbsummaries: 0x46
 
-   __TEXT.__swift5_proto: 0x154c
-   __TEXT.__swift5_types: 0x948
-   __TEXT.__swift5_types2: 0x28
--  __TEXT.__unwind_info: 0xbe70
-+  __TEXT.__unwind_info: 0xbca0
-   __TEXT.__eh_frame: 0x8798
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_protorefs: 0x58
-   __DATA_CONST.__objc_superrefs: 0x40
-   __DATA_CONST.__got: 0x58
--  __AUTH_CONST.__const: 0x168e8
-+  __AUTH_CONST.__const: 0x16468
-   __AUTH_CONST.__objc_const: 0x4b30
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__lazy_load_got: 0x48
-   __AUTH_CONST.__auth_got: 0x698
-   __AUTH.__objc_data: 0x1c8
--  __AUTH.__data: 0xe718
-+  __AUTH.__data: 0xe658
-   __DATA.__objc_ivar: 0x38
-   __DATA.__crash_info: 0x40
--  __DATA.__data: 0xbc4
--  __DATA.__bss: 0xf438
-+  __DATA.__data: 0xba4
-+  __DATA.__bss: 0xeff8
-   __DATA.__common: 0xb0
-   __DATA_DIRTY.__objc_data: 0xe08
--  __DATA_DIRTY.__data: 0x3308
--  __DATA_DIRTY.__bss: 0x17570
-+  __DATA_DIRTY.__data: 0x33f8
-+  __DATA_DIRTY.__bss: 0x179e0
-   __DATA_DIRTY.__common: 0x58
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libswiftPrespecialized.dylib
 -  Functions: 23460
--  Symbols:   40306
+-  Symbols:   40274
 -  CStrings:  2767
 +  Functions: 23212
-+  Symbols:   40176
++  Symbols:   40144
 +  CStrings:  2769
- 
 Symbols:
 + __ZL27checkGenericPackRequirementRKN5swift34TargetGenericRequirementDescriptorINS_9InProcessEEERN7__swift9__runtime4llvm15SmallVectorImplIPKvEENS7_12function_refIFSA_jjEEENSD_IFPKNS_18TargetWitnessTableIS1_EEPKNS_14TargetMetadataIS1_EEjEEERNS8_INS_21InvertibleProtocolSetEEEPNS_27ConformanceExecutionContextE
 + __ZL28checkGenericValueRequirementRKN5swift34TargetGenericRequirementDescriptorINS_9InProcessEEERN7__swift9__runtime4llvm15SmallVectorImplIPKvEENS7_12function_refIFSA_jjEEENSD_IFPKNS_18TargetWitnessTableIS1_EEPKNS_14TargetMetadataIS1_EEjEEERNS8_INS_21InvertibleProtocolSetEEE

@@ -2,48 +2,37 @@
 
 > `/usr/libexec/xpcproxy`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9948` | `0x9a90` | **`+0x148`** |
+| `__TEXT.__oslogstring` | `0x1712` | `0x15ef` | **`-0x123`** |
+| `__TEXT.__cstring` | `0x19d2` | `0x1a58` | **`+0x86`** |
+| `__TEXT.__auth_stubs` | `0xb10` | `0xb30` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0x588` | `0x598` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__os_assumes_log`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
 - `__TEXT.__const`
 - `__TEXT.__dof_launchd`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__got`
-- `__DATA.__os_assumes_log`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -3298.0.21.0.0
--  __TEXT.__text: 0x9948
--  __TEXT.__auth_stubs: 0xb10
 +3298.0.26.502.1
-+  __TEXT.__text: 0x9a90
-+  __TEXT.__auth_stubs: 0xb30
-   __TEXT.__lazy_helpers: 0x150
-   __TEXT.__const: 0x190
-   __TEXT.__xpcproxy: 0x1
--  __TEXT.__oslogstring: 0x1712
--  __TEXT.__cstring: 0x19d2
-+  __TEXT.__oslogstring: 0x15ef
-+  __TEXT.__cstring: 0x1a58
-   __TEXT.__dof_launchd: 0x2e5
-   __TEXT.__unwind_info: 0x178
-   __DATA_CONST.__const: 0x248
--  __DATA_CONST.__auth_got: 0x588
-+  __DATA_CONST.__auth_got: 0x598
-   __DATA_CONST.__got: 0x88
-   __DATA.__lazy_load_got: 0x20
-   __DATA.__os_assumes_log: 0x8
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 92
 -  Symbols:   200
 -  CStrings:  298
 +  Symbols:   202
 +  CStrings:  302
- 
 Symbols:
 + _fcntl
 + _posix_spawn_file_actions_adddup2

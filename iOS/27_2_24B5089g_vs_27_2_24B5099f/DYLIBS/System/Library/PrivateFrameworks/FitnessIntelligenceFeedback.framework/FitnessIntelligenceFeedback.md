@@ -2,47 +2,28 @@
 
 > `/System/Library/PrivateFrameworks/FitnessIntelligenceFeedback.framework/FitnessIntelligenceFeedback`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2e498` | `0x2ebb4` | **`+0x71c`** |
+| `__TEXT.__swift5_typeref` | `0x2f65` | `0x2f9d` | **`+0x38`** |
+| `__TEXT.__cstring` | `0xadc` | `0xafc` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xbb0` | `0xbc8` | **`+0x18`** |
+| `__TEXT.__const` | `0x1e54` | `0x1e64` | **`+0x10`** |
+| `__DATA.__data` | `0x8c0` | `0x8c8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2027.1.26.0.0
--  __TEXT.__text: 0x2c42c
 +2027.1.34.0.0
-+  __TEXT.__text: 0x2cb20
-   __TEXT.__objc_methlist: 0x20
--  __TEXT.__const: 0x1e54
-+  __TEXT.__const: 0x1e64
-   __TEXT.__gcc_except_tab: 0x4c
--  __TEXT.__cstring: 0xadc
-+  __TEXT.__cstring: 0xafc
-   __TEXT.__dlopen_cstrs: 0x62
-   __TEXT.__constg_swiftt: 0x50c
--  __TEXT.__swift5_typeref: 0x2f65
-+  __TEXT.__swift5_typeref: 0x2f9d
-   __TEXT.__swift5_reflstr: 0x70c
-   __TEXT.__swift5_fieldmd: 0x7d0
-   __TEXT.__swift5_builtin: 0x3c
 
-   __AUTH_CONST.__const: 0x1691
-   __AUTH_CONST.__cfstring: 0x60
-   __AUTH_CONST.__objc_const: 0x90
--  __AUTH_CONST.__auth_got: 0xbb0
-+  __AUTH_CONST.__auth_got: 0xbc8
-   __AUTH.__objc_data: 0x50
-   __AUTH.__data: 0x210
--  __DATA.__data: 0x8c0
-+  __DATA.__data: 0x8c8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 697
 -  Symbols:   483
 -  CStrings:  105
 +  Symbols:   484
 +  CStrings:  106
- 
 Symbols:
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAcAE23scrollDismissesKeyboardyQrAA06ScrolliJ4ModeVFQOyAcAE9listStyleyQrqd__AA04ListN0Rd__lFQOyAA0O0Vys5NeverOAA05TupleG0VyAcAE0M16SectionSeparator_5edgesQrAA10VisibilityO_AA12VerticalEdgeO3SetVtFQOyAA0R0VyAA05EmptyC0VAA4TextVA1_G_Qo__AcAEAR_ASQrAU_AYtFQOyA_yA1_AcAE06pickerN0yQrqd__AA06PickerN0Rd__lFQOyAA6PickerVyA1_19FitnessIntelligence17InferenceFeedbackV9SentimentOSgAA7ForEachVySayA14_GSSAcAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyA3__A14_Qo_GG_AA015SegmentedPickerN0VQo_A1_G_Qo_AcAEAR_ASQrAU_AYtFQOyA_yA1_AcAE09textFieldN0yQrqd__AA0z5FieldN0Rd__lFQOyAcAE7focusedyQrAA10FocusStateV7BindingVySb_GFQOyAcAE9lineLimit_13reservesSpaceQrSi_SbtFQOyAA0Z5FieldVyA3_G_Qo__Qo__AA013RoundedBorderz5FieldN0VQo_A1_G_Qo_AcAEAR_ASQrAU_AYtFQOyA_yA1_AA6ToggleVyA3_GA1_G_Qo_AcAEAR_ASQrAU_AYtFQOyA_yA1_AA6HStackVyAQyAA6SpacerV_AA012_ConditionalG0VyA59_yAA08ModifiedG0VyA61_yAcAE06buttonN0yQrqd__AA015PrimitiveButtonN0Rd__lFQOyAA6ButtonVyA61_yA61_yAA5LabelVyA59_yA3_A3_GA59_yAA5ImageVA70_GGAA011_ForegroundN8ModifierVyAA5ColorVGGAA16_FlexFrameLayoutVGG_AA023BorderedProminentButtonN0VQo_AA30_EnvironmentKeyWritingModifierVyAA11ControlSizeOGGAA32_EnvironmentKeyTransformModifierVySbGGAA08ProgressC0VyA1_A1_GGA59_yA61_yA61_yA3_A87_yAA0Z9AlignmentOGGA87_ySiSgGGA3_GGA57_QPGGA1_G_Qo_A_yAcAEA62_yQrqd__AAA63_Rd__lFQOyA65_yA55_yAQyA3__A70_A57_QPGGG_AA011PlainButtonN0VQo_AQyAA6VStackVyAQyA3__A3_QPGG_A122_A122_A122_A59_yA122_A122_GA123_A123_A123_A122_A122_A122_A122_QPGA1_GQPGG_AA05PlainoN0VQo__Qo__AA0F9ItemGroupVyA59_yA98_A65_yA70_GGGQo_HO
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAcAE23scrollDismissesKeyboardyQrAA06ScrolliJ4ModeVFQOyAcAE9listStyleyQrqd__AA04ListN0Rd__lFQOyAA0O0Vys5NeverOAA05TupleG0VyAcAE0M16SectionSeparator_5edgesQrAA10VisibilityO_AA12VerticalEdgeO3SetVtFQOyAA0R0VyAA05EmptyC0VAA4TextVA1_G_Qo__AcAEAR_ASQrAU_AYtFQOyA_yA1_AcAE06pickerN0yQrqd__AA06PickerN0Rd__lFQOyAA6PickerVyA1_19FitnessIntelligence23LegacyInferenceFeedbackV9SentimentOSgAA7ForEachVySayA14_GSSAcAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyA3__A14_Qo_GG_AA015SegmentedPickerN0VQo_A1_G_Qo_AcAEAR_ASQrAU_AYtFQOyA_yA1_AcAE09textFieldN0yQrqd__AA0z5FieldN0Rd__lFQOyAcAE7focusedyQrAA10FocusStateV7BindingVySb_GFQOyAcAE9lineLimit_13reservesSpaceQrSi_SbtFQOyAA0Z5FieldVyA3_G_Qo__Qo__AA013RoundedBorderz5FieldN0VQo_A1_G_Qo_AcAEAR_ASQrAU_AYtFQOyA_yA1_AA6ToggleVyA3_GA1_G_Qo_AcAEAR_ASQrAU_AYtFQOyA_yA1_AA6HStackVyAQyAA6SpacerV_AA012_ConditionalG0VyA59_yAA08ModifiedG0VyA61_yAcAE06buttonN0yQrqd__AA015PrimitiveButtonN0Rd__lFQOyAA6ButtonVyA61_yA61_yAA5LabelVyA59_yA3_A3_GA59_yAA5ImageVA70_GGAA011_ForegroundN8ModifierVyAA5ColorVGGAA16_FlexFrameLayoutVGG_AA023BorderedProminentButtonN0VQo_AA30_EnvironmentKeyWritingModifierVyAA11ControlSizeOGGAA32_EnvironmentKeyTransformModifierVySbGGAA08ProgressC0VyA1_A1_GGA59_yA61_yA61_yA3_A87_yAA0Z9AlignmentOGGA87_ySiSgGGA3_GGA57_QPGGA1_G_Qo_A_yAcAEA62_yQrqd__AAA63_Rd__lFQOyA65_yA55_yAQyA3__A70_A57_QPGGG_AA011PlainButtonN0VQo_AQyAA6VStackVyAQyA3__A3_QPGG_A122_A122_A122_A59_yA122_A122_GA123_A123_A123_A122_A122_A122_A122_QPGA1_GQPGG_AA05PlainoN0VQo__Qo__AA0F9ItemGroupVyA59_yA98_A65_yA70_GGGQo_HO
@@ -78,8 +59,8 @@ Symbols:
 - _symbolic _____y_____y_____y_____y__________y_____y_____y__________AEG_Qo_______yADyAE_____y_____yAE_____Sg_____ySayAJGSS_____yAF_AJQo_GG______Qo_AEG_Qo______yADyAE_____y_____y_____y_____yAFG_Qo__Qo_______Qo_AEG_Qo______yADyAE_____yAFGAEG_Qo______yADyAE_____yACy___________yA7_y_____yA8_y_____y_____yA8_yA8_y_____yA7_yA2FGA7_y_____A12_GG_____y_____GG_____GG______Qo______y_____GG_____ySbGG_____yA2EGGA7_yA8_yA8_yAFA24_y_____GGA24_ySiSgGGAFGGA6_QPGGAEG_Qo_ADy_____yA9_yA5_yACyAF_A12_A6_QPGGG______Qo_ACy_____yACyAF_AFQPGG_A53_A53_A53_A7_yA53_A53_GA54_A54_A54_A53_A53_A53_QPGAEGQPGG______Qo__Qo_______yA7_yA32_A9_yA12_GGGQo_ 7SwiftUI4ViewPAAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQO AcAE23scrollDismissesKeyboardyQrAA06ScrolliJ4ModeVFQO AcAE9listStyleyQrqd__AA04ListN0Rd__lFQO AA0O0V s5NeverO AA05TupleG0V AcAE0M16SectionSeparator_5edgesQrAA10VisibilityO_AA12VerticalEdgeO3SetVtFQO AA0R0V AA05EmptyC0V AA4TextV AcAEAR_ASQrAU_AYtFQO AcAE06pickerN0yQrqd__AA06PickerN0Rd__lFQO AA6PickerV 19FitnessIntelligence23LegacyInferenceFeedbackV9SentimentO AA7ForEachV AcAE3tag_15includeOptionalQrqd___SbtSHRd__lFQO AA015SegmentedPickerN0V AcAEAR_ASQrAU_AYtFQO AcAE09textFieldN0yQrqd__AA0z5FieldN0Rd__lFQO AcAE7focusedyQrAA10FocusStateV7BindingVySb_GFQO AcAE9lineLimit_13reservesSpaceQrSi_SbtFQO AA0Z5FieldV AA013RoundedBorderz5FieldN0V AcAEAR_ASQrAU_AYtFQO AA6ToggleV AcAEAR_ASQrAU_AYtFQO AA6HStackV AA6SpacerV AA012_ConditionalG0V AA08ModifiedG0V AcAE06buttonN0yQrqd__AA015PrimitiveButtonN0Rd__lFQO AA6ButtonV AA5LabelV AA5ImageV AA011_ForegroundN8ModifierV AA5ColorV AA16_FlexFrameLayoutV AA023BorderedProminentButtonN0V AA30_EnvironmentKeyWritingModifierV AA11ControlSizeO AA32_EnvironmentKeyTransformModifierV AA08ProgressC0V AA0Z9AlignmentO AcAEA43_yQrqd__AAA44_Rd__lFQO AA011PlainButtonN0V AA6VStackV AA05PlainoN0V AA0F9ItemGroupV
 - _symbolic _____y_____y_____y_____y_____y________________QPGGG______Qo_ADy_____yADyAE_AEQPGG_A3O_____yA2OGA3q3OQPG_____G 7SwiftUI7SectionV AA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonF0Rd__lFQO AA0H0V AA6HStackV AA12TupleContentV AA4TextV AA5ImageV AA6SpacerV AA05PlainhF0V AA6VStackV AA012_ConditionalK0V AA05EmptyD0V
 Functions:
-~ sub_264773b1c -> sub_263a42b1c : 6092 -> 6956
-~ sub_264784270 -> sub_263a535d0 : 5688 -> 6604
+~ sub_2674ee7fc -> sub_2668207fc : 6252 -> 7136
+~ sub_2674ffcb8 -> sub_26683202c : 5788 -> 6724
 CStrings:
 + "Siri Announce Result"
 ```

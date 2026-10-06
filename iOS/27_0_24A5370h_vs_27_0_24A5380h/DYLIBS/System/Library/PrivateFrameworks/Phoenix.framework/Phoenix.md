@@ -2,44 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/Phoenix.framework/Phoenix`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x236a8` | `0x22b94` | **`-0xb14`** |
+| `__DATA_CONST.__got` | `0x2f8` | `0x2e8` | **`-0x10`** |
+| `__TEXT.__const` | `0xbc` | `0xb0` | **`-0xc`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x236a8
-+  __TEXT.__text: 0x22b94
-   __TEXT.__objc_methlist: 0x1d5c
--  __TEXT.__const: 0xbc
-+  __TEXT.__const: 0xb0
-   __TEXT.__dlopen_cstrs: 0x4b
-   __TEXT.__gcc_except_tab: 0x150
-   __TEXT.__cstring: 0x249f
-
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0xf0
-   __DATA_CONST.__objc_arraydata: 0x40
--  __DATA_CONST.__got: 0x2f8
-+  __DATA_CONST.__got: 0x2e8
-   __AUTH_CONST.__const: 0x180
-   __AUTH_CONST.__cfstring: 0x18e0
-   __AUTH_CONST.__objc_const: 0x3a70
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
+-3232.3.0.0.0
++3234.5.0.0.0
 Functions:
 ~ -[AXPhoenixEventMonitor init] : 240 -> 236
 ~ -[AXPhoenixEventMonitor dealloc] : 88 -> 84
@@ -225,5 +201,4 @@ Functions:
 ~ _MachAbsoluteTimeToTimeIntervalSinceBoot.79 : 124 -> 116
 ~ _MachAbsoluteTimeToTimeIntervalSinceBoot.625 : 124 -> 116
 ~ _MachAbsoluteTimeToTimeIntervalSinceBoot.1051 : 124 -> 116
-
 ```

@@ -2,86 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/CoreUtilsUI.framework/CoreUtilsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9c70` | `0x2151c` | **`+0x178ac`** |
+| `__TEXT.__const` | `0x802` | `0x1360` | **`+0xb5e`** |
+| `__TEXT.__swift5_typeref` | `0x453` | `0xe41` | **`+0x9ee`** |
+| `__AUTH_CONST.__const` | `0x6e0` | `0x1088` | **`+0x9a8`** |
+| `__AUTH_CONST.__auth_got` | `0x760` | `0xd30` | **`+0x5d0`** |
+| `__DATA.__data` | `0x298` | `0x850` | **`+0x5b8`** |
+| `__DATA.__bss` | `0x810` | `0xce8` | **`+0x4d8`** |
+| `__TEXT.__swift5_fieldmd` | `0x228` | `0x6d4` | **`+0x4ac`** |
+| `__TEXT.__constg_swiftt` | `0x478` | `0x8dc` | **`+0x464`** |
+| `__TEXT.__unwind_info` | `0x330` | `0x768` | **`+0x438`** |
+| `__TEXT.__swift5_reflstr` | `0x121` | `0x4ee` | **`+0x3cd`** |
+| `__AUTH.__data` | `0x240` | `0x5c8` | **`+0x388`** |
+| `__TEXT.__cstring` | `0x35a` | `0x52f` | **`+0x1d5`** |
+| `__AUTH_CONST.__objc_const` | `0x140` | `0x298` | **`+0x158`** |
+| `__TEXT.__swift5_capture` | `0xa0` | `0x164` | **`+0xc4`** |
+| `__TEXT.__oslogstring` | `0x14c` | `0x1ec` | **`+0xa0`** |
+| `__TEXT.__eh_frame` | `0x2f8` | `0x374` | **`+0x7c`** |
+| `__TEXT.__swift5_assocty` | `0xb0` | `0x128` | **`+0x78`** |
+| `__TEXT.__swift5_types` | `0x40` | `0x80` | **`+0x40`** |
+| `__TEXT.__swift5_proto` | `0x40` | `0x64` | **`+0x24`** |
+| `__DATA_CONST.__objc_selrefs` | `0x118` | `0x130` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x64` | `0x78` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x10` | `0x18` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x8` | `0x10` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `—` | `0x4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -900.58.0.0.0
--  __TEXT.__text: 0x96b0
 +910.21.0.0.0
-+  __TEXT.__text: 0x20414
-   __TEXT.__objc_methlist: 0x20
--  __TEXT.__const: 0x802
--  __TEXT.__swift5_typeref: 0x453
--  __TEXT.__swift5_reflstr: 0x121
--  __TEXT.__swift5_assocty: 0xb0
--  __TEXT.__constg_swiftt: 0x478
--  __TEXT.__swift5_fieldmd: 0x228
--  __TEXT.__swift5_builtin: 0x64
--  __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__oslogstring: 0x14c
--  __TEXT.__cstring: 0x35a
--  __TEXT.__swift5_capture: 0xa0
--  __TEXT.__swift5_proto: 0x40
--  __TEXT.__swift5_types: 0x40
-+  __TEXT.__const: 0x1360
-+  __TEXT.__swift5_typeref: 0xe41
-+  __TEXT.__swift5_capture: 0x164
-+  __TEXT.__constg_swiftt: 0x8dc
-+  __TEXT.__swift5_reflstr: 0x4ee
-+  __TEXT.__swift5_assocty: 0x128
-+  __TEXT.__swift5_fieldmd: 0x6d4
-+  __TEXT.__swift5_builtin: 0x78
-+  __TEXT.__oslogstring: 0x1ec
-+  __TEXT.__cstring: 0x52f
-+  __TEXT.__swift5_proto: 0x64
-+  __TEXT.__swift5_types: 0x80
-+  __TEXT.__swift5_mpenum: 0x10
-+  __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift_as_entry: 0xc
-   __TEXT.__swift_as_ret: 0x8
-   __TEXT.__swift_as_cont: 0x10
--  __TEXT.__unwind_info: 0x400
--  __TEXT.__eh_frame: 0x310
-+  __TEXT.__unwind_info: 0x948
-+  __TEXT.__eh_frame: 0x38c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xb0
--  __DATA_CONST.__objc_classlist: 0x10
-+  __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x118
-+  __DATA_CONST.__objc_selrefs: 0x130
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x6e0
--  __AUTH_CONST.__objc_const: 0x140
--  __AUTH_CONST.__auth_got: 0x760
-+  __AUTH_CONST.__const: 0x1088
-+  __AUTH_CONST.__objc_const: 0x298
-+  __AUTH_CONST.__auth_got: 0xd30
-   __AUTH.__objc_data: 0xd0
--  __AUTH.__data: 0x240
--  __DATA.__data: 0x298
-+  __AUTH.__data: 0x5c8
-+  __DATA.__data: 0x850
-   __DATA_DIRTY.__data: 0x20
 +  - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreImage.framework/CoreImage
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 274
--  Symbols:   348
+-  Symbols:   315
 -  CStrings:  27
 +  Functions: 732
-+  Symbols:   547
++  Symbols:   511
 +  CStrings:  49
- 
 Symbols:
 + _CGColorSpaceCreateDeviceRGB
 + _CGColorSpaceCreateWithName
@@ -144,9 +108,6 @@ Symbols:
 + _initializeAvailabilityCheck
 + _kCGColorSpaceLinearSRGB
 + _malloc
-+ _objc_msgSend$defaultCenter
-+ _objc_msgSend$isLowPowerModeEnabled
-+ _objc_msgSend$processInfo
 + _rewind
 + _sscanf
 + _swift_arrayDestroy

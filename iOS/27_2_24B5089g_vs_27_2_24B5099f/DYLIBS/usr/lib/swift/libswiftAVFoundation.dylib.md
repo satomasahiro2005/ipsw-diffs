@@ -2,71 +2,38 @@
 
 > `/usr/lib/swift/libswiftAVFoundation.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3f9a8` | `0x3ed2c` | **`-0xc7c`** |
+| `__AUTH_CONST.__const` | `0x2e38` | `0x2cd0` | **`-0x168`** |
+| `__TEXT.__const` | `0x39a4` | `0x3844` | **`-0x160`** |
+| `__TEXT.__cstring` | `0xa5d` | `0x92d` | **`-0x130`** |
+| `__TEXT.__swift5_capture` | `0x3fc` | `0x334` | **`-0xc8`** |
+| `__DATA.__bss` | `0x2c68` | `0x2c28` | **`-0x40`** |
+| `__TEXT.__unwind_info` | `0x1340` | `0x1300` | **`-0x40`** |
+| `__TEXT.__eh_frame` | `0x24f8` | `0x2520` | **`+0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0x980` | `0x998` | **`+0x18`** |
+| `__TEXT.__swift5_typeref` | `0x18d2` | `0x18ba` | **`-0x18`** |
+| `__TEXT.__swift_as_cont` | `0x188` | `0x174` | **`-0x14`** |
+| `__DATA.__data` | `0xe58` | `0xe68` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x128` | `0x12c` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x124` | `0x128` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2475.8.1.0.0
--  __TEXT.__text: 0x3c8ec
 +2475.12.1.0.0
-+  __TEXT.__text: 0x3bd70
-   __TEXT.__objc_methlist: 0x27c
--  __TEXT.__const: 0x39a4
--  __TEXT.__swift5_typeref: 0x18d2
-+  __TEXT.__const: 0x3844
-+  __TEXT.__swift5_typeref: 0x18ba
-   __TEXT.__swift5_reflstr: 0xab5
-   __TEXT.__swift5_assocty: 0x488
-   __TEXT.__constg_swiftt: 0x16b4
 
-   __TEXT.__swift5_builtin: 0x258
-   __TEXT.__swift5_proto: 0x17c
-   __TEXT.__swift5_types: 0x17c
--  __TEXT.__swift5_capture: 0x3fc
--  __TEXT.__cstring: 0xa5d
-+  __TEXT.__swift5_capture: 0x334
-+  __TEXT.__cstring: 0x92d
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__swift_as_entry: 0x128
--  __TEXT.__swift_as_ret: 0x124
--  __TEXT.__swift_as_cont: 0x188
-+  __TEXT.__swift_as_entry: 0x12c
-+  __TEXT.__swift_as_ret: 0x128
-+  __TEXT.__swift_as_cont: 0x174
-   __TEXT.__swift5_mpenum: 0x30
--  __TEXT.__unwind_info: 0x1858
--  __TEXT.__eh_frame: 0x2500
-+  __TEXT.__unwind_info: 0x1818
-+  __TEXT.__eh_frame: 0x2528
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x980
-+  __DATA_CONST.__objc_selrefs: 0x998
-   __DATA_CONST.__objc_protorefs: 0x40
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2e38
-+  __AUTH_CONST.__const: 0x2cd0
-   __AUTH_CONST.__objc_const: 0x2368
-   __AUTH_CONST.__auth_got: 0x9c0
--  __DATA.__data: 0xe58
-+  __DATA.__data: 0xe68
-   __DATA.__common: 0x9
-   __DATA_DIRTY.__objc_data: 0x50
-   __DATA_DIRTY.__data: 0x1650
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1802
 -  Symbols:   4466
 -  CStrings:  64
 +  Functions: 1780
 +  Symbols:   4458
 +  CStrings:  58
- 
 Symbols:
 + _$s12AVFoundation26untilReadyForMoreMediaData2onySo18AVAssetWriterInputC_tYaF
 + _$s12AVFoundation26untilReadyForMoreMediaData2onySo18AVAssetWriterInputC_tYaFTQ0_

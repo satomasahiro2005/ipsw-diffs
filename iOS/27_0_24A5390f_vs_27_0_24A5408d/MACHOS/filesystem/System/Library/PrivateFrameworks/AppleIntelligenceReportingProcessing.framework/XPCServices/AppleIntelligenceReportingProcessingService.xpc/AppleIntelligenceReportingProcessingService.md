@@ -2,98 +2,61 @@
 
 > `/System/Library/PrivateFrameworks/AppleIntelligenceReportingProcessing.framework/XPCServices/AppleIntelligenceReportingProcessingService.xpc/AppleIntelligenceReportingProcessingService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_entry`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__oslogstring`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_mpenum`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe6114` | `0xeb7fc` | **`+0x56e8`** |
+| `__DATA.__data` | `0x3ae0` | `0x3c68` | **`+0x188`** |
+| `__DATA_CONST.__const` | `0x8d98` | `0x8ef0` | **`+0x158`** |
+| `__TEXT.__swift5_reflstr` | `0x2c9d` | `0x2d6d` | **`+0xd0`** |
+| `__TEXT.__swift5_fieldmd` | `0x3010` | `0x30cc` | **`+0xbc`** |
+| `__TEXT.__swift5_typeref` | `0x2668` | `0x2720` | **`+0xb8`** |
+| `__TEXT.__auth_stubs` | `0x2e20` | `0x2ed0` | **`+0xb0`** |
+| `__TEXT.__constg_swiftt` | `0x1ff4` | `0x2098` | **`+0xa4`** |
+| `__TEXT.__const` | `0x6346` | `0x63e6` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x2f38` | `0x2fd8` | **`+0xa0`** |
+| `__TEXT.__objc_methname` | `0x1c85` | `0x1d15` | **`+0x90`** |
+| `__TEXT.__objc_stubs` | `0x1980` | `0x1a00` | **`+0x80`** |
+| `__TEXT.__cstring` | `0x4d73` | `0x4de3` | **`+0x70`** |
+| `__DATA.__objc_const` | `0x1850` | `0x18b0` | **`+0x60`** |
+| `__DATA_CONST.__auth_got` | `0x1718` | `0x1770` | **`+0x58`** |
+| `__TEXT.__eh_frame` | `0x57f0` | `0x5830` | **`+0x40`** |
+| `__DATA_CONST.__auth_ptr` | `0xc20` | `0xc50` | **`+0x30`** |
+| `__TEXT.__swift5_capture` | `0x21f0` | `0x2220` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0xaf0` | `0xb18` | **`+0x28`** |
+| `__DATA.__objc_selrefs` | `0x660` | `0x680` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x1d0` | `0x1d8` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0xf8` | `0xfc` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x148` | `0x144` | **`-0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
 - `__DATA_CONST.__cfstring`
 - `__DATA_CONST.__objc_classlist`
-- `__DATA.__objc_data`
+- `__TEXT.__oslogstring`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift_as_cont`
+
+### Other Changes
 
 ```diff
 
 -220.0.0.0.0
--  __TEXT.__text: 0xe6114
--  __TEXT.__auth_stubs: 0x2e20
--  __TEXT.__objc_stubs: 0x1980
--  __TEXT.__const: 0x6346
--  __TEXT.__swift5_typeref: 0x2668
--  __TEXT.__cstring: 0x4d73
 +232.0.1.0.0
-+  __TEXT.__text: 0xeb7fc
-+  __TEXT.__auth_stubs: 0x2ed0
-+  __TEXT.__objc_stubs: 0x1a00
-+  __TEXT.__const: 0x63e6
-+  __TEXT.__swift5_typeref: 0x2720
-+  __TEXT.__cstring: 0x4de3
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__constg_swiftt: 0x1ff4
-+  __TEXT.__constg_swiftt: 0x2098
-   __TEXT.__swift5_builtin: 0x28
--  __TEXT.__swift5_types: 0x1d0
-+  __TEXT.__swift5_types: 0x1d8
-   __TEXT.__oslogstring: 0x4c1e
--  __TEXT.__swift5_reflstr: 0x2c9d
-+  __TEXT.__swift5_reflstr: 0x2d6d
-   __TEXT.__swift5_assocty: 0x1b0
--  __TEXT.__swift5_fieldmd: 0x3010
--  __TEXT.__objc_methname: 0x1c85
-+  __TEXT.__swift5_fieldmd: 0x30cc
-+  __TEXT.__objc_methname: 0x1d15
-   __TEXT.__objc_methtype: 0x2e
-   __TEXT.__objc_classname: 0x5d8
-   __TEXT.__swift5_protos: 0x48
-   __TEXT.__swift5_proto: 0x3e0
--  __TEXT.__swift_as_entry: 0xf8
--  __TEXT.__swift_as_ret: 0x148
-+  __TEXT.__swift_as_entry: 0xfc
-+  __TEXT.__swift_as_ret: 0x144
-   __TEXT.__swift_as_cont: 0x214
--  __TEXT.__swift5_capture: 0x21f0
-+  __TEXT.__swift5_capture: 0x2220
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x2f38
--  __TEXT.__eh_frame: 0x57f0
--  __DATA_CONST.__const: 0x8d98
-+  __TEXT.__unwind_info: 0x2fd8
-+  __TEXT.__eh_frame: 0x5830
-+  __DATA_CONST.__const: 0x8ef0
-   __DATA_CONST.__cfstring: 0x7e0
-   __DATA_CONST.__objc_classlist: 0x98
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x1718
--  __DATA_CONST.__got: 0xaf0
--  __DATA_CONST.__auth_ptr: 0xc20
--  __DATA.__objc_const: 0x1850
--  __DATA.__objc_selrefs: 0x660
-+  __DATA_CONST.__auth_got: 0x1770
-+  __DATA_CONST.__got: 0xb18
-+  __DATA_CONST.__auth_ptr: 0xc50
-+  __DATA.__objc_const: 0x18b0
-+  __DATA.__objc_selrefs: 0x680
-   __DATA.__objc_data: 0xf0
--  __DATA.__data: 0x3ae0
-+  __DATA.__data: 0x3c68
-   __DATA.__common: 0x1c0
-   __DATA.__bss: 0x7410
-   - /AppleInternal/Library/Frameworks/TapToRadarKit.framework/TapToRadarKit
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6340
 -  Symbols:   10877
 -  CStrings:  1128
 +  Functions: 6486
 +  Symbols:   11043
 +  CStrings:  1135
- 
 Symbols:
 + $s43AppleIntelligenceReportingProcessingService17AssetBringUpStateC21psusMetadataEndEventsSayAA21SUControllerErrorInfoVGvM.resume
 + $s43AppleIntelligenceReportingProcessingService18AssetDeliveryStateC014atomicInstanceH0SDy0B15PlatformLibrary0abc6MobileF3LogV0mf6AtomicJ0VAC11AccumulatorCy_AA0mF13EventSnapshotVGGvM.resume

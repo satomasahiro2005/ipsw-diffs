@@ -2,60 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/AirPlayReceiver.framework/AirPlayReceiver`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17be4c` | `0x17c374` | **`+0x528`** |
+| `__TEXT.__cstring` | `0x33175` | `0x33200` | **`+0x8b`** |
+| `__AUTH_CONST.__cfstring` | `0xba60` | `0xbac0` | **`+0x60`** |
+| `__TEXT.__const` | `0x275db` | `0x2762b` | **`+0x50`** |
+| `__AUTH_CONST.__const` | `0x9400` | `0x9420` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x1690` | `0x16a8` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x1e30` | `0x1e40` | **`+0x10`** |
+| `__DATA.__bss` | `0x5e8` | `0x5f8` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x988` | `0x998` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0xbe0` | `0xbf0` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x834` | `0x838` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -980.77.1.2.0
--  __TEXT.__text: 0x178b70
 +1005.7.1.0.0
-+  __TEXT.__text: 0x17908c
-   __TEXT.__objc_methlist: 0xaec
--  __TEXT.__const: 0x275db
-+  __TEXT.__const: 0x2762b
-   __TEXT.__dlopen_cstrs: 0xad
--  __TEXT.__gcc_except_tab: 0x834
--  __TEXT.__cstring: 0x33175
-+  __TEXT.__gcc_except_tab: 0x838
-+  __TEXT.__cstring: 0x33200
-   __TEXT.__oslogstring: 0x2eb
--  __TEXT.__unwind_info: 0x1c70
-+  __TEXT.__unwind_info: 0x1c80
-   __TEXT.__eh_frame: 0x128
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xbe0
-+  __DATA_CONST.__objc_selrefs: 0xbf0
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x48
-   __DATA_CONST.__objc_arraydata: 0x10
--  __DATA_CONST.__got: 0x988
--  __AUTH_CONST.__const: 0x9400
--  __AUTH_CONST.__cfstring: 0xba60
-+  __DATA_CONST.__got: 0x998
-+  __AUTH_CONST.__const: 0x9420
-+  __AUTH_CONST.__cfstring: 0xbac0
-   __AUTH_CONST.__objc_const: 0x1550
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_intobj: 0x18
--  __AUTH_CONST.__auth_got: 0x1e30
-+  __AUTH_CONST.__auth_got: 0x1e40
-   __AUTH.__objc_data: 0x280
-   __DATA.__objc_ivar: 0x174
-   __DATA.__data: 0x17cb0
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1703
--  Symbols:   3913
+-  Symbols:   3579
 -  CStrings:  5194
 +  Functions: 1706
-+  Symbols:   3924
++  Symbols:   3588
 +  CStrings:  5200
- 
 Symbols:
 + GCC_except_table1005
 + GCC_except_table1118
@@ -89,8 +64,6 @@ Symbols:
 + _kAPReceiverAudioSessionOption_AudioQoS
 + _kAPReceiverAudioSessionOption_RTCPQoS
 + _kAPTransportConnectionOption_QualityOfService
-+ _objc_msgSend$defaultManager
-+ _objc_msgSend$fileExistsAtPath:
 + _sysInfo_updateAdvertiserInfo
 - GCC_except_table1001
 - GCC_except_table1114

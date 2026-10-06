@@ -2,56 +2,30 @@
 
 > `/System/Library/VideoCodecs/ave.videoencoder`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__gcc_except_tab`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_selrefs`
-- `__AUTH_CONST.__weak_auth_got`
-- `__DATA.__data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x16afb8` | `0x16fc0c` | **`+0x4c54`** |
+| `__TEXT.__cstring` | `0x4b2bf` | `0x4c3fc` | **`+0x113d`** |
+| `__AUTH_CONST.__const` | `0x56d0` | `0x57d0` | **`+0x100`** |
+| `__AUTH_CONST.__cfstring` | `0x2f40` | `0x3020` | **`+0xe0`** |
+| `__TEXT.__const` | `0x2535c` | `0x252b4` | **`-0xa8`** |
+| `__TEXT.__unwind_info` | `0xa40` | `0xa48` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -913.8.0.0.0
--  __TEXT.__text: 0x16afb8
 +913.29.1.0.0
-+  __TEXT.__text: 0x16fc0c
-   __TEXT.__init_offsets: 0xc
--  __TEXT.__const: 0x2535c
-+  __TEXT.__const: 0x252b4
-   __TEXT.__gcc_except_tab: 0x6e4
--  __TEXT.__cstring: 0x4b2bf
--  __TEXT.__unwind_info: 0xa40
-+  __TEXT.__cstring: 0x4c3fc
-+  __TEXT.__unwind_info: 0xa48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
 
-   __DATA_CONST.__weak_got: 0x8
-   __DATA_CONST.__objc_selrefs: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x56d0
--  __AUTH_CONST.__cfstring: 0x2f40
-+  __AUTH_CONST.__const: 0x57d0
-+  __AUTH_CONST.__cfstring: 0x3020
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__auth_got: 0x760
-   __DATA.__data: 0x80
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1518
--  Symbols:   2320
+-  Symbols:   2319
 -  CStrings:  6252
 +  Functions: 1527
-+  Symbols:   2329
++  Symbols:   2328
 +  CStrings:  6331
- 
 Symbols:
 + __Z24AVE_DevCap_FindSwFeature12_E_AVE_DevID
 + __Z33AVE_Prop_HEVC_GetHEVCAuxiliaryIDsPvS_PK13__CFAllocatorPK10__CFStringS_

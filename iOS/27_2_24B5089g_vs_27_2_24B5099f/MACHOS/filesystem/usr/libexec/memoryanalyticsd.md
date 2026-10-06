@@ -2,96 +2,61 @@
 
 > `/usr/libexec/memoryanalyticsd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1954c` | `0x1bf10` | **`+0x29c4`** |
+| `__DATA.__objc_const` | `0x17d8` | `0x2210` | **`+0xa38`** |
+| `__TEXT.__objc_methname` | `0x2b69` | `0x3415` | **`+0x8ac`** |
+| `__TEXT.__objc_stubs` | `0x29e0` | `0x3120` | **`+0x740`** |
+| `__TEXT.__objc_methlist` | `0xc7c` | `0x10d4` | **`+0x458`** |
+| `__TEXT.__oslogstring` | `0x3662` | `0x3976` | **`+0x314`** |
+| `__TEXT.__cstring` | `0x348e` | `0x3731` | **`+0x2a3`** |
+| `__DATA.__objc_selrefs` | `0xb48` | `0xdc8` | **`+0x280`** |
+| `__DATA.__objc_data` | `0x500` | `0x730` | **`+0x230`** |
+| `__TEXT.__objc_methtype` | `0x3e8` | `0x610` | **`+0x228`** |
+| `__DATA_CONST.__cfstring` | `0x35e0` | `0x37c0` | **`+0x1e0`** |
+| `__DATA_CONST.__const` | `0xad8` | `0xc78` | **`+0x1a0`** |
+| `__TEXT.__unwind_info` | `0x588` | `0x6d8` | **`+0x150`** |
+| `__DATA.__data` | `0x448` | `0x568` | **`+0x120`** |
+| `__TEXT.__gcc_except_tab` | `0x1f4` | `0x2e4` | **`+0xf0`** |
+| `__TEXT.__objc_classname` | `0x135` | `0x213` | **`+0xde`** |
+| `__TEXT.__auth_stubs` | `0xa70` | `0xb40` | **`+0xd0`** |
+| `__DATA.__objc_ivar` | `0x134` | `0x1a0` | **`+0x6c`** |
+| `__DATA_CONST.__auth_got` | `0x548` | `0x5b0` | **`+0x68`** |
+| `__DATA_CONST.__objc_classlist` | `0x80` | `0xb8` | **`+0x38`** |
+| `__DATA_CONST.__objc_superrefs` | `0x70` | `0xa8` | **`+0x38`** |
+| `__DATA.__bss` | `0x210` | `0x238` | **`+0x28`** |
+| `__DATA_CONST.__objc_protolist` | `—` | `0x18` | **`+0x18`** |
+| `__TEXT.__const` | `0x208` | `0x220` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x228` | `0x238` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__objc_arraydata`
 - `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_intobj`
+
+### Other Changes
 
 ```diff
 
 -103.0.0.0.0
--  __TEXT.__text: 0x19054
--  __TEXT.__auth_stubs: 0xa70
--  __TEXT.__objc_stubs: 0x29e0
--  __TEXT.__objc_methlist: 0xc7c
--  __TEXT.__const: 0x208
--  __TEXT.__objc_methname: 0x2b69
--  __TEXT.__oslogstring: 0x3662
--  __TEXT.__objc_classname: 0x135
--  __TEXT.__objc_methtype: 0x3e8
--  __TEXT.__cstring: 0x348e
--  __TEXT.__gcc_except_tab: 0x1f4
--  __TEXT.__unwind_info: 0x720
--  __DATA_CONST.__const: 0xad8
--  __DATA_CONST.__cfstring: 0x35e0
--  __DATA_CONST.__objc_classlist: 0x80
 +105.0.0.0.0
-+  __TEXT.__text: 0x1b8d4
-+  __TEXT.__auth_stubs: 0xb40
-+  __TEXT.__objc_stubs: 0x3120
-+  __TEXT.__objc_methlist: 0x10d4
-+  __TEXT.__const: 0x220
-+  __TEXT.__gcc_except_tab: 0x2e4
-+  __TEXT.__cstring: 0x3731
-+  __TEXT.__objc_methname: 0x3415
-+  __TEXT.__oslogstring: 0x3976
-+  __TEXT.__objc_classname: 0x213
-+  __TEXT.__objc_methtype: 0x610
-+  __TEXT.__unwind_info: 0x8c0
-+  __DATA_CONST.__const: 0xc78
-+  __DATA_CONST.__cfstring: 0x37c0
-+  __DATA_CONST.__objc_classlist: 0xb8
-+  __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_superrefs: 0x70
-+  __DATA_CONST.__objc_superrefs: 0xa8
-   __DATA_CONST.__objc_arraydata: 0x3d0
-   __DATA_CONST.__objc_arrayobj: 0x60
-   __DATA_CONST.__objc_intobj: 0x858
-   __DATA_CONST.__objc_doubleobj: 0x1a0
-   __DATA_CONST.__objc_dictobj: 0x28
--  __DATA_CONST.__auth_got: 0x548
--  __DATA_CONST.__got: 0x228
-+  __DATA_CONST.__auth_got: 0x5b0
-+  __DATA_CONST.__got: 0x238
-   __DATA_CONST.__auth_ptr: 0x8
--  __DATA.__objc_const: 0x17d8
--  __DATA.__objc_selrefs: 0xb48
--  __DATA.__objc_ivar: 0x134
--  __DATA.__objc_data: 0x500
--  __DATA.__data: 0x448
-+  __DATA.__objc_const: 0x2210
-+  __DATA.__objc_selrefs: 0xdc8
-+  __DATA.__objc_ivar: 0x1a0
-+  __DATA.__objc_data: 0x730
-+  __DATA.__data: 0x568
-   __DATA.__common: 0x29
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/PrivateFrameworks/DiagnosticRequest.framework/DiagnosticRequest
-   - /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
-   - /System/Library/PrivateFrameworks/MemoryDiagnostics.framework/MemoryDiagnostics
 +  - /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
-   - /System/Library/PrivateFrameworks/OSAnalytics.framework/OSAnalytics
-   - /System/Library/PrivateFrameworks/PowerLog.framework/PowerLog
-   - /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices
-   - /System/Library/PrivateFrameworks/Symbolication.framework/Symbolication
+
 +  - /System/Library/PrivateFrameworks/Trial.framework/Trial
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
+
 -  Functions: 538
 -  Symbols:   246
 -  CStrings:  1438
 +  Functions: 632
 +  Symbols:   261
 +  CStrings:  1629
- 
 Symbols:
 + _MKBDeviceUnlockedSinceBoot
 + _OBJC_CLASS_$_RBSProcessMonitor

@@ -2,109 +2,67 @@
 
 > `/usr/libexec/momentsd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x261de0` | `0x2625c0` | **`+0x7e0`** |
+| `__TEXT.__oslogstring` | `0x3336b` | `0x336eb` | **`+0x380`** |
+| `__DATA_CONST.__got` | `0xbc0` | `0xe40` | **`+0x280`** |
+| `__TEXT.__cstring` | `0x27a5e` | `0x2798e` | **`-0xd0`** |
+| `__TEXT.__objc_stubs` | `0x1e9a0` | `0x1e960` | **`-0x40`** |
+| `__TEXT.__unwind_info` | `0x5588` | `0x5548` | **`-0x40`** |
+| `__TEXT.__objc_methname` | `0x39b68` | `0x39b38` | **`-0x30`** |
+| `__TEXT.__objc_methtype` | `0x36a4` | `0x368e` | **`-0x16`** |
+| `__DATA.__objc_selrefs` | `0x9988` | `0x9978` | **`-0x10`** |
+| `__TEXT.__const` | `0x1470` | `0x1480` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x8304` | `0x82f4` | **`-0x10`** |
+| `__DATA.__data` | `0x19c8` | `0x19c0` | **`-0x8`** |
+| `__DATA_CONST.__const` | `0xc150` | `0xc148` | **`-0x8`** |
+| `__TEXT.__objc_methlist` | `0x11e8c` | `0x11e84` | **`-0x8`** |
+| `__TEXT.__swift5_reflstr` | `0x149` | `0x14a` | **`+0x1`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_ivar`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_classname`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x261de0
-+  __TEXT.__text: 0x2625c0
-   __TEXT.__auth_stubs: 0x1d00
--  __TEXT.__objc_stubs: 0x1e9a0
--  __TEXT.__objc_methlist: 0x11e8c
--  __TEXT.__cstring: 0x27a5e
-+  __TEXT.__objc_stubs: 0x1e960
-+  __TEXT.__objc_methlist: 0x11e84
-+  __TEXT.__cstring: 0x2798e
-   __TEXT.__objc_classname: 0x1e55
--  __TEXT.__objc_methtype: 0x36a4
--  __TEXT.__objc_methname: 0x39b68
--  __TEXT.__oslogstring: 0x3336b
--  __TEXT.__const: 0x1470
--  __TEXT.__gcc_except_tab: 0x8304
-+  __TEXT.__objc_methtype: 0x368e
-+  __TEXT.__objc_methname: 0x39b38
-+  __TEXT.__oslogstring: 0x336eb
-+  __TEXT.__const: 0x1480
-+  __TEXT.__gcc_except_tab: 0x82f4
-   __TEXT.__ustring: 0x4
-   __TEXT.__dlopen_cstrs: 0x51
-   __TEXT.__constg_swiftt: 0x628
-   __TEXT.__swift5_typeref: 0x4b0
--  __TEXT.__swift5_reflstr: 0x149
-   __TEXT.__swift5_fieldmd: 0x248
-   __TEXT.__swift5_types: 0x40
-   __TEXT.__swift5_capture: 0x37c
-   __TEXT.__swift_as_entry: 0x4c
-   __TEXT.__swift_as_ret: 0x54
-   __TEXT.__swift_as_cont: 0x70
-+  __TEXT.__swift5_reflstr: 0x14a
-   __TEXT.__swift5_proto: 0xc
--  __TEXT.__unwind_info: 0x5588
-+  __TEXT.__unwind_info: 0x5548
-   __TEXT.__eh_frame: 0xb28
--  __DATA_CONST.__const: 0xc150
-+  __DATA_CONST.__const: 0xc148
-   __DATA_CONST.__cfstring: 0x26840
-   __DATA_CONST.__objc_classlist: 0x810
-   __DATA_CONST.__objc_catlist: 0x70
+-412.0.0.0.0
++415.0.0.0.0
 
-   __DATA_CONST.__objc_dictobj: 0x140
-   __DATA_CONST.__objc_floatobj: 0x260
-   __DATA_CONST.__auth_got: 0xe98
--  __DATA_CONST.__got: 0xbc0
-+  __DATA_CONST.__got: 0xe40
-   __DATA_CONST.__auth_ptr: 0x178
-   __DATA.__objc_const: 0x1e710
--  __DATA.__objc_selrefs: 0x9988
-+  __DATA.__objc_selrefs: 0x9978
-   __DATA.__objc_ivar: 0x17f4
-   __DATA.__objc_data: 0x58e0
--  __DATA.__data: 0x19c8
-+  __DATA.__data: 0x19c0
-   __DATA.__bss: 0x3d0
-   __DATA.__common: 0x374
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-
-   - /System/Library/PrivateFrameworks/PowerLog.framework/PowerLog
-   - /System/Library/PrivateFrameworks/ProactiveSupport.framework/ProactiveSupport
-   - /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices
 -  - /System/Library/PrivateFrameworks/ScreenTimeCore.framework/ScreenTimeCore
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /System/Library/PrivateFrameworks/ToolKit.framework/ToolKit
-   - /System/Library/PrivateFrameworks/Trial.framework/Trial
 
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 8959
--  Symbols:   63598
--  CStrings:  21648
-+  Symbols:   63579
-+  CStrings:  21649
- 
-Sections:
-~ __TEXT.__objc_classname : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_ivar : content changed
-~ __DATA.__objc_data : content changed
+-  Symbols:   20149
+-  CStrings:  15944
++  Symbols:   20142
++  CStrings:  15945
 Symbols:
 + +[MOSummarizationUtilities bundlesWithNonPlaceResourcesFromWorkoutResources:photoResources:mediaResources:emotionResources:]
 + +[MOSummarizationUtilities getPhotoMediaEmotionResourcesForOutingSummaryBundleWithPhotoResources:mediaResources:emotionResources:shouldUpLevelPhoto:]
@@ -163,5 +121,4 @@ CStrings:
 - "getResourcesForOutingSummaryBundleWithWorkoutResources:photoResources:mediaResources:emotionResources:shouldUpLevelPhoto:"
 - "screenTimeState"
 - "screenTimeStateWithCompletionHandler:"
-
 ```

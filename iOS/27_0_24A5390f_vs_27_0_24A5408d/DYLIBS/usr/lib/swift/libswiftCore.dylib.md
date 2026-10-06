@@ -2,72 +2,37 @@
 
 > `/usr/lib/swift/libswiftCore.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4b3880` | `0x4aff2c` | **`-0x3954`** |
+| `__DATA.__bss` | `0xeff8` | `0xf178` | **`+0x180`** |
+| `__AUTH.__data` | `0xe658` | `0xe760` | **`+0x108`** |
+| `__TEXT.__swift5_assocty` | `0x5318` | `0x53c8` | **`+0xb0`** |
+| `__TEXT.__eh_frame` | `0x8798` | `0x8840` | **`+0xa8`** |
+| `__TEXT.__const` | `0xbb5eb` | `0xbb66b` | **`+0x80`** |
+| `__TEXT.__swift5_typeref` | `0x59e7` | `0x5a5b` | **`+0x74`** |
+| `__TEXT.__cstring` | `0x12dc5` | `0x12e25` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0xbca0` | `0xbd00` | **`+0x60`** |
+| `__TEXT.__swift5_reflstr` | `0x1511` | `0x1551` | **`+0x40`** |
+| `__TEXT.__constg_swiftt` | `0x9310` | `0x9340` | **`+0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0x4b9c` | `0x4bc0` | **`+0x24`** |
+| `__TEXT.__swift5_proto` | `0x154c` | `0x1558` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
 -6.4.0.27.101
--  __TEXT.__text: 0x4b3880
 +6.4.0.31.4
-+  __TEXT.__text: 0x4aff2c
-   __TEXT.__lazy_helpers: 0x348
-   __TEXT.__init_offsets: 0x18
-   __TEXT.__objc_methlist: 0x1e1c
--  __TEXT.__cstring: 0x12dc5
--  __TEXT.__const: 0xbb5eb
-+  __TEXT.__cstring: 0x12e25
-+  __TEXT.__const: 0xbb66b
-   __TEXT.__oslogstring: 0xb7
-   __TEXT.__gcc_except_tab: 0xd8
-   __TEXT.__lldbsummaries: 0x46
--  __TEXT.__swift5_typeref: 0x59e7
-+  __TEXT.__swift5_typeref: 0x5a5b
-   __TEXT.__swift5_capture: 0x3e8
--  __TEXT.__swift5_reflstr: 0x1511
--  __TEXT.__swift5_assocty: 0x5318
--  __TEXT.__constg_swiftt: 0x9310
--  __TEXT.__swift5_fieldmd: 0x4b9c
-+  __TEXT.__swift5_reflstr: 0x1551
-+  __TEXT.__swift5_assocty: 0x53c8
-+  __TEXT.__constg_swiftt: 0x9340
-+  __TEXT.__swift5_fieldmd: 0x4bc0
-   __TEXT.__swift5_builtin: 0xbcc
-   __TEXT.__swift5_mpenum: 0x8c
-   __TEXT.__swift5_protos: 0x1ac
--  __TEXT.__swift5_proto: 0x154c
-+  __TEXT.__swift5_proto: 0x1558
-   __TEXT.__swift5_types: 0x948
-   __TEXT.__swift5_types2: 0x28
--  __TEXT.__unwind_info: 0xbca0
--  __TEXT.__eh_frame: 0x8798
-+  __TEXT.__unwind_info: 0xbd00
-+  __TEXT.__eh_frame: 0x8840
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __AUTH_CONST.__lazy_load_got: 0x48
-   __AUTH_CONST.__auth_got: 0x698
-   __AUTH.__objc_data: 0x1c8
--  __AUTH.__data: 0xe658
-+  __AUTH.__data: 0xe760
-   __DATA.__objc_ivar: 0x38
-   __DATA.__crash_info: 0x40
-   __DATA.__data: 0xba4
--  __DATA.__bss: 0xeff8
-+  __DATA.__bss: 0xf178
-   __DATA.__common: 0xb0
-   __DATA_DIRTY.__objc_data: 0xe08
-   __DATA_DIRTY.__data: 0x33f8
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libswiftPrespecialized.dylib
 -  Functions: 23212
--  Symbols:   40176
+-  Symbols:   40144
 -  CStrings:  2769
 +  Functions: 23237
-+  Symbols:   40227
++  Symbols:   40195
 +  CStrings:  2772
- 
 Symbols:
 + _$s17BorrowingIterators8IterablePTl
 + _$s7Elements8IterablePTl

@@ -2,7 +2,7 @@
 
 > `/usr/libexec/visioncompaniond`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
-- `__TEXT.__eh_frame`
 - `__DATA.__objc_selrefs`
+- `__TEXT.__eh_frame`

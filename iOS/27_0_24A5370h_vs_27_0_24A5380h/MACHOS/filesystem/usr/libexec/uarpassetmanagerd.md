@@ -2,74 +2,52 @@
 
 > `/usr/libexec/uarpassetmanagerd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2a6e4` | `0x2e098` | **`+0x39b4`** |
+| `__DATA_CONST.__const` | `0x27d0` | `0x2c40` | **`+0x470`** |
+| `__DATA_CONST.__cfstring` | `0x2bc0` | `0x2f40` | **`+0x380`** |
+| `__TEXT.__cstring` | `0x2c7e` | `0x2fe3` | **`+0x365`** |
+| `__DATA.__objc_const` | `0x2d48` | `0x3090` | **`+0x348`** |
+| `__TEXT.__objc_methname` | `0x2c59` | `0x2f37` | **`+0x2de`** |
+| `__TEXT.__objc_methlist` | `0x12bc` | `0x1494` | **`+0x1d8`** |
+| `__TEXT.__oslogstring` | `0x1826` | `0x1989` | **`+0x163`** |
+| `__TEXT.__objc_stubs` | `0x26e0` | `0x2840` | **`+0x160`** |
+| `__DATA.__objc_data` | `0x500` | `0x5f0` | **`+0xf0`** |
+| `__DATA.__objc_selrefs` | `0xbb0` | `0xc18` | **`+0x68`** |
+| `__TEXT.__objc_classname` | `0x2e4` | `0x341` | **`+0x5d`** |
+| `__TEXT.__objc_methtype` | `0x837` | `0x894` | **`+0x5d`** |
+| `__TEXT.__unwind_info` | `0x3a0` | `0x3e0` | **`+0x40`** |
+| `__DATA.__objc_ivar` | `0x17c` | `0x19c` | **`+0x20`** |
+| `__TEXT.__auth_stubs` | `0x4b0` | `0x4d0` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x80` | `0x98` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x78` | `0x90` | **`+0x18`** |
+| `__DATA_CONST.__auth_got` | `0x268` | `0x278` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x198` | `0x1a8` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2a6e4
--  __TEXT.__auth_stubs: 0x4b0
--  __TEXT.__objc_stubs: 0x26e0
--  __TEXT.__objc_methlist: 0x12bc
--  __TEXT.__cstring: 0x2c7e
--  __TEXT.__oslogstring: 0x1826
--  __TEXT.__objc_methname: 0x2c59
--  __TEXT.__objc_classname: 0x2e4
--  __TEXT.__objc_methtype: 0x837
-+  __TEXT.__text: 0x2e098
-+  __TEXT.__auth_stubs: 0x4d0
-+  __TEXT.__objc_stubs: 0x2840
-+  __TEXT.__objc_methlist: 0x1494
-+  __TEXT.__cstring: 0x2fe3
-+  __TEXT.__oslogstring: 0x1989
-+  __TEXT.__objc_methname: 0x2f37
-+  __TEXT.__objc_classname: 0x341
-+  __TEXT.__objc_methtype: 0x894
-   __TEXT.__gcc_except_tab: 0x11c
--  __TEXT.__unwind_info: 0x3a0
--  __DATA_CONST.__const: 0x27d0
--  __DATA_CONST.__cfstring: 0x2bc0
--  __DATA_CONST.__objc_classlist: 0x80
-+  __TEXT.__unwind_info: 0x3e0
-+  __DATA_CONST.__const: 0x2c40
-+  __DATA_CONST.__cfstring: 0x2f40
-+  __DATA_CONST.__objc_classlist: 0x98
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x28
--  __DATA_CONST.__objc_superrefs: 0x78
-+  __DATA_CONST.__objc_superrefs: 0x90
-   __DATA_CONST.__objc_intobj: 0x18
--  __DATA_CONST.__auth_got: 0x268
--  __DATA_CONST.__got: 0x198
--  __DATA.__objc_const: 0x2d48
--  __DATA.__objc_selrefs: 0xbb0
--  __DATA.__objc_ivar: 0x17c
--  __DATA.__objc_data: 0x500
-+  __DATA_CONST.__auth_got: 0x278
-+  __DATA_CONST.__got: 0x1a8
-+  __DATA.__objc_const: 0x3090
-+  __DATA.__objc_selrefs: 0xc18
-+  __DATA.__objc_ivar: 0x19c
-+  __DATA.__objc_data: 0x5f0
-   __DATA.__data: 0x480
-   __DATA.__bss: 0x40
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+-1587.0.3.0.3
++1587.0.21.0.0
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 458
--  Symbols:   5730
--  CStrings:  1554
+-  Symbols:   1600
+-  CStrings:  1169
 +  Functions: 501
-+  Symbols:   6294
-+  CStrings:  1652
- 
-Sections:
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA.__data : content changed
++  Symbols:   1712
++  CStrings:  1235
 Symbols:
 + +[UARPAssetCacheRecordiCloud supportsSecureCoding]
 + +[UARPAssetSubscriptioniCloud supportsSecureCoding]
@@ -298,5 +276,4 @@ CStrings:
 - "getAssetURLForPersonality:reply:"
 - "usePallas"
 - "v32@0:8@\"UARPEndpointPersonality\"16@?<v@?@\"NSURL\">24"
-
 ```

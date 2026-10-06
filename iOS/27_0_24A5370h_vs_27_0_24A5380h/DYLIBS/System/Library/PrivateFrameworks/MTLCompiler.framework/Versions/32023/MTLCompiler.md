@@ -2,27 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/MTLCompiler.framework/Versions/32023/MTLCompiler`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbac80` | `0xbab1c` | **`-0x164`** |
+| `__TEXT.__unwind_info` | `0x30b0` | `0x30b8` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x9bcc` | `0x9bc8` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xbac80
--  __TEXT.__gcc_except_tab: 0x9bcc
-+  __TEXT.__text: 0xbab1c
-+  __TEXT.__gcc_except_tab: 0x9bc8
-   __TEXT.__const: 0x10e8
-   __TEXT.__cstring: 0x85bd
-   __TEXT.__oslogstring: 0x4e7
--  __TEXT.__unwind_info: 0x30b0
-+  __TEXT.__unwind_info: 0x30b8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
-Sections:
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA.__data : content changed
+-381.0.0.0.0
++382.4.0.0.0
 Functions:
 ~ __ZN4llvm12DenseMapBaseINS_8DenseMapIPKNS_8MetadataENS_13TrackingMDRefENS_12DenseMapInfoIS4_vEENS_6detail12DenseMapPairIS4_S5_EEEES4_S5_S7_SA_E10destroyAllEv : 100 -> 84
 ~ __ZN4llvm12DenseMapBaseINS_8DenseMapINS_18ValueMapCallbackVHIPKNS_5ValueENS_14WeakTrackingVHENS_14ValueMapConfigIS5_NS_3sys10SmartMutexILb0EEEEEEES6_NS_12DenseMapInfoISC_vEENS_6detail12DenseMapPairISC_S6_EEEESC_S6_SE_SH_E9initEmptyEv : 236 -> 212
@@ -71,5 +64,4 @@ Functions:
 ~ __ZL30serializePostVertexDumpOutputsRKNSt3__16vectorI20PostVertexDumpOutputNS_9allocatorIS1_EEEEU13block_pointerFvjEU13block_pointerFvRKN4llvm9StringRefEE : 532 -> 516
 ~ __ZNKSt3__111__copy_implclB9fqe220106IPK19MTLStructMemberInfoS4_PS2_Li0EEENS_4pairIT_T1_EES7_T0_S8_ : 256 -> 236
 ~ __ZNKSt3__111__copy_implclB9fqe220106IPK15MTLArgumentDataS4_PS2_Li0EEENS_4pairIT_T1_EES7_T0_S8_ : 336 -> 316
-
 ```

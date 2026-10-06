@@ -2,50 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/VisualUnderstanding.framework/Plugins.bundle/Plugins`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc644` | `0xc728` | **`+0xe4`** |
+| `__TEXT.__eh_frame` | `0x318` | `0x348` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x1e0` | `0x1e8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__const`
 - `__TEXT.__const`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
 - `__TEXT.__swift5_typeref`
-- `__DATA_CONST.__const`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
 
-```diff
+### Other Changes
 
- 80.1.0.0.0
--  __TEXT.__text: 0xc28c
-+  __TEXT.__text: 0xc36c
-   __TEXT.__auth_stubs: 0xa80
-   __TEXT.__objc_stubs: 0x380
-   __TEXT.__objc_methlist: 0x154
-
-   __TEXT.__swift5_proto: 0x8
-   __TEXT.__swift5_types: 0x8
-   __TEXT.__swift5_capture: 0x90
--  __TEXT.__unwind_info: 0x238
--  __TEXT.__eh_frame: 0x318
-+  __TEXT.__unwind_info: 0x240
-+  __TEXT.__eh_frame: 0x348
-   __DATA_CONST.__const: 0x310
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x50
+```text
 Functions:
-~ sub_7a38 : 8 -> 964
-~ sub_7a40 -> sub_7dfc : 964 -> 4764
-~ sub_7e04 -> sub_9098 : 4764 -> 116
-~ sub_90a0 -> sub_910c : 116 -> 144
-~ sub_9114 -> sub_919c : 144 -> 8
-~ sub_91a4 : 8 -> 76
-~ sub_91ac -> sub_91f0 : 76 -> 148
-~ sub_91f8 -> sub_9284 : 148 -> 80
-~ sub_928c -> sub_92d4 : 80 -> 36
-~ sub_92dc -> sub_92f8 : 36 -> 496
-~ sub_9300 -> sub_94e8 : 496 -> 456
-~ sub_94f0 -> sub_96b0 : 480 -> 536
-~ sub_96d0 -> sub_98c8 : 536 -> 328
-~ sub_98e8 -> sub_9a10 : 328 -> 256
+~ sub_7c58 : 8 -> 964
+~ sub_7c60 -> sub_801c : 964 -> 4824
+~ sub_8024 -> sub_92f4 : 4824 -> 116
+~ sub_92fc -> sub_9368 : 116 -> 176
+~ sub_9370 -> sub_9418 : 176 -> 8
+~ sub_9420 : 8 -> 76
+~ sub_9428 -> sub_946c : 76 -> 168
+~ sub_9474 -> sub_9514 : 168 -> 80
+~ sub_951c -> sub_9564 : 80 -> 36
+~ sub_956c -> sub_9588 : 36 -> 500
+~ sub_9590 -> sub_977c : 500 -> 460
+~ sub_9784 -> sub_9948 : 484 -> 540
+~ sub_9968 -> sub_9b64 : 540 -> 336
+~ sub_9b84 -> sub_9cb4 : 336 -> 260
 ```

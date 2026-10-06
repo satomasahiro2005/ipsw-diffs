@@ -2,43 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/Marrs.framework/Marrs`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x84428
-+  __TEXT.__text: 0x83efc
-   __TEXT.__init_offsets: 0x44
-   __TEXT.__objc_methlist: 0x63c
-   __TEXT.__const: 0xfec
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x84428` | `0x83efc` | **`-0x52c`** |
+| `__TEXT.__gcc_except_tab` | `0x75cc` | `0x75d0` | **`+0x4`** |
 
-   __TEXT.__swift5_assocty: 0x30
-   __TEXT.__swift5_proto: 0x18
-   __TEXT.__swift5_types: 0x18
--  __TEXT.__gcc_except_tab: 0x75cc
-+  __TEXT.__gcc_except_tab: 0x75d0
-   __TEXT.__unwind_info: 0x1ac8
-   __TEXT.__eh_frame: 0x80
-   __TEXT.__objc_stubs: 0x0
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
+### Other Changes
+
+```text
 Functions:
 ~ -[MRRMultimodalMentionDetector initWithAssets:forLocale:status:] : 7384 -> 7396
 ~ __ZN5boost9algorithm13trim_right_ifINSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEENS0_6detail14is_classifiedFEEEvRT_T0_ : 320 -> 312
@@ -80,5 +53,4 @@ Functions:
 ~ __ZNSt3__16vectorIN5marrs2qr13orchestration12QRHypothesisENS_9allocatorIS4_EEE16__init_with_sizeB9fqe220106IPS4_S9_EEvT_T0_m : 348 -> 336
 ~ __ZNK28RuleBasedRepetitionPredictor7PredictERKNSt3__16vectorINS0_12basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEENS5_IS7_EEEESB_RKNS1_INS1_IjNS5_IjEEEENS5_ISD_EEEESH_jRKNS0_13unordered_mapIjNSI_IjfNS0_4hashIjEENS0_8equal_toIjEENS5_INS0_4pairIKjfEEEEEESK_SM_NS5_INSN_ISO_SR_EEEEEER25RepetitionPredictorResult : 3380 -> 3388
 ~ __Z15alignmentMatrixIjEvRKNSt3__16vectorINS1_IT_NS0_9allocatorIS2_EEEENS3_IS5_EEEES9_RKNS1_INS1_IbNS3_IbEEEENS3_ISB_EEEERKNS0_13unordered_mapIS2_NSG_IS2_fNS0_4hashIS2_EENS0_8equal_toIS2_EENS3_INS0_4pairIKS2_fEEEEEESI_SK_NS3_INSL_ISM_SP_EEEEEES2_bRNS1_INS1_IfNS3_IfEEEENS3_ISW_EEEERNS1_INS1_INSL_IjjEENS3_IS10_EEEENS3_IS12_EEEE : 8644 -> 8576
-
 ```

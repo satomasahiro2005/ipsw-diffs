@@ -2,44 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/XGBoostFramework.framework/XGBoostFramework`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17fd68` | `0x17fde4` | **`+0x7c`** |
+| `__TEXT.__gcc_except_tab` | `0x1b5c4` | `0x1b5d4` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3600.20.1.0.0
--  __TEXT.__text: 0x17fd68 sha256:30a8bb1f888efc53c369ebf1edbe4b0d3610f349b5c6ad9ebcb484b036838d2b
 +3600.22.1.0.0
-+  __TEXT.__text: 0x17fde4 sha256:6f6d59ed0e063cc5db07d468b1995195dda3ada53fb1548a17dc6a65e5a3f97f
-   __TEXT.__init_offsets: 0x84 sha256:5e3316baf6c62651bd5112f87fed5d5d0ff6cf960276102740ffa8eb74e19d85
-   __TEXT.__const: 0x8e80 sha256:349338bc05cac19a6febd346d2c1d86ab025bf241bf02c071a2939e7180d7b62
--  __TEXT.__gcc_except_tab: 0x1b5c4 sha256:36fcb80601161f36f9bddec97f9e058e57cc3bfdfba68b212714f17a98e66895
--  __TEXT.__cstring: 0x11dbd sha256:9dd659518796194f3f5f5d5c91b4e21e1e767014ecaa00a12b6ec7f3b8f3021a
--  __TEXT.__unwind_info: 0x7418 sha256:6b9f9e97bf3ec198d14ad30460130aaf3004afb064737e750c74bbebd1fb0916
-+  __TEXT.__gcc_except_tab: 0x1b5d4 sha256:0c3109eb610883e2ae44e422630031819fad12c4a5562a2b9ae77c1a5ac4d300
-+  __TEXT.__cstring: 0x11dbd sha256:4c5eb3cf671fd68a645976da87ec99717a728264f171323e54b25306df3b31af
-+  __TEXT.__unwind_info: 0x7418 sha256:a02c1d5caa668bfa1cb3e4a135a9f62d62b243894cfacfa9ad613abb0b0a9e9a
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__weak_got: 0x98 sha256:bb63e92513dd620ce55c647fda35d869003ced833dcd18ee94944fddc2d12eb6
--  __DATA_CONST.__got: 0x160 sha256:e8281c48c953e25a063162232ab00d315cc991805d101ba9b30cd29b177a37de
--  __AUTH_CONST.__const: 0xaab8 sha256:d400b85e3da5e053f05377470ee9ec928adbc52dabc9b54db03ddc0ff4b6ba64
--  __AUTH_CONST.__weak_auth_got: 0x360 sha256:17dc8116b67fee8f514669aa3913d736557981455439f82cfde2c698bea5d0a4
-+  __DATA_CONST.__weak_got: 0x98 sha256:361716233753fe8716a3e6dc03ebb7325e8afba0e6e4b02154e7720cec8ccf90
-+  __DATA_CONST.__got: 0x160 sha256:679ec0e1eab4046444be0ecce32843dbd1521d0fd7bcc1dc32a2930e7c68840e
-+  __AUTH_CONST.__const: 0xaab8 sha256:9aca8a3108efc5444fd4f208a68cb3189fa1af6256b172aea04826d83fef78d9
-+  __AUTH_CONST.__weak_auth_got: 0x360 sha256:85f4f57c0568188d7f952ffa21753f791e12611cf1ddf4c59654262fd1330180
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__thread_vars: 0x198 sha256:ae0d208e8918dd51d66407fb687644da923d2643144c2c6055217d0f6ee71700
-+  __AUTH.__thread_vars: 0x198 sha256:e004f9c593905a07fe2bdb0c8c23990f0c01d0dd6717718851ce3b33ec6b4ba6
-   __AUTH.__thread_data: 0xc sha256:31190090408f837aa1dc44bf75404af354a0e5d5c965f1d407a97dd627554da5
-   __AUTH.__thread_bss: 0xb88 sha256:7df491c5f0816aef0995196ae8751c2ab26c50a6104f2e05bd243876187d68b3
-   __DATA.__data: 0x38 sha256:d4817aa5497628e7c77e6b606107042bbba3130888c5f47a375e6179be789fbb
-
-   __DATA_DIRTY.__common: 0x2e8 sha256:1b66520d471367f736d50c070a2e2bba8ad88ac58743394a764b888e9cb6f6be
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
--  UUID: C98B69C6-58F5-38B1-AF52-E2A6DB49A40D
-+  UUID: C78C6DC5-55B8-30C2-A6C1-931D883E12CC
-   Functions: 5249
-   Symbols:   14108
-   CStrings:  1809
 Symbols:
 + __ZNKSt3__111__copy_implclB9fqe220106IPN7xgboost6common9WQSummaryIffE5EntryES7_NS3_6detail12SpanIteratorINS3_4SpanIS6_Lm18446744073709551615EEELb0EEELi0EEENS_4pairIT_T1_EESE_T0_SF_
 + __ZNKSt3__111__copy_implclB9fqe220106IPNS_4pairINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES8_EESA_SA_Li0EEENS2_IT_T1_EESB_T0_SC_
@@ -1927,5 +1902,4 @@ Symbols:
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeIi6pollfdEENS_22__unordered_map_hasherIiNS_4pairIKiS2_EENS_4hashIiEENS_8equal_toIiEEEENS_21__unordered_map_equalIiS7_SB_S9_EENS_9allocatorIS7_EEE16__emplace_uniqueB9fqe220100IJRKNS_21piecewise_construct_tENS_5tupleIJRS6_EEENSM_IJEEEEEENS5_INS_15__hash_iteratorIPNS_11__hash_nodeIS3_PvEEEEbEEDpOT_ENKUlSN_SL_OSO_OSP_E_clESN_SL_S10_S11_
 - __ZZNSt3__112__hash_tableIjNS_4hashIjEENS_8equal_toIjEENS_9allocatorIjEEE16__emplace_uniqueB9fqe220100IJRKjEEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIjPvEEEEbEEDpOT_ENKUlSA_SA_E_clESA_SA_
 - __ZZNSt3__16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES7_EENS_19__map_value_compareIS7_NS_4pairIKS7_S7_EENS_4lessIS7_EEEENS5_ISC_EEE21__insert_range_uniqueB9fqe220100INS_11__wrap_iterIPNSA_IS7_S7_EEEESM_EEvT_T0_ENKUlRSB_RSK_E_clESP_SQ_
-
 ```

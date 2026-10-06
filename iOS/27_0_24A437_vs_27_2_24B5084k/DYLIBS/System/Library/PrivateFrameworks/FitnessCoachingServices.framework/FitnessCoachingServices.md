@@ -2,129 +2,66 @@
 
 > `/System/Library/PrivateFrameworks/FitnessCoachingServices.framework/FitnessCoachingServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xba4c4` | `0xcde4c` | **`+0x13988`** |
+| `__AUTH_CONST.__const` | `0x4ec8` | `0x69d0` | **`+0x1b08`** |
+| `__TEXT.__eh_frame` | `0xb278` | `0xcab0` | **`+0x1838`** |
+| `__TEXT.__unwind_info` | `0x3330` | `0x3e38` | **`+0xb08`** |
+| `__TEXT.__const` | `0x5efc` | `0x681c` | **`+0x920`** |
+| `__TEXT.__swift5_capture` | `0xf0c` | `0x1664` | **`+0x758`** |
+| `__AUTH_CONST.__objc_const` | `0x5ba8` | `0x6018` | **`+0x470`** |
+| `__TEXT.__cstring` | `0x39b1` | `0x3d51` | **`+0x3a0`** |
+| `__TEXT.__swift_as_cont` | `0xb58` | `0xea0` | **`+0x348`** |
+| `__AUTH.__data` | `0x28` | `0x300` | **`+0x2d8`** |
+| `__TEXT.__constg_swiftt` | `0x254c` | `0x2794` | **`+0x248`** |
+| `__TEXT.__swift5_reflstr` | `0x23c8` | `0x25d8` | **`+0x210`** |
+| `__TEXT.__swift5_fieldmd` | `0x2094` | `0x2258` | **`+0x1c4`** |
+| `__TEXT.__swift5_typeref` | `0x2443` | `0x25eb` | **`+0x1a8`** |
+| `__TEXT.__swift_as_entry` | `0x430` | `0x544` | **`+0x114`** |
+| `__TEXT.__swift_as_ret` | `0x5ac` | `0x6c0` | **`+0x114`** |
+| `__AUTH_CONST.__auth_got` | `0x12f0` | `0x13e8` | **`+0xf8`** |
+| `__TEXT.__oslogstring` | `0x34d4` | `0x35c4` | **`+0xf0`** |
+| `__DATA_DIRTY.__data` | `0x29b0` | `0x2900` | **`-0xb0`** |
+| `__DATA.__bss` | `0x2200` | `0x2280` | **`+0x80`** |
+| `__DATA_CONST.__got` | `0xa58` | `0xac8` | **`+0x70`** |
+| `__AUTH.__objc_data` | `0x1f0` | `0x240` | **`+0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x2e8` | `0x298` | **`-0x50`** |
+| `__TEXT.__objc_methlist` | `0x544` | `0x594` | **`+0x50`** |
+| `__DATA.__data` | `0x7d8` | `0x820` | **`+0x48`** |
+| `__DATA_CONST.__objc_selrefs` | `0x9a0` | `0x9e8` | **`+0x48`** |
+| `__DATA_CONST.__const` | `0x328` | `0x350` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0xd60` | `0xd80` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x140` | `0x158` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0x25c` | `0x270` | **`+0x14`** |
+| `__TEXT.__swift5_protos` | `0x138` | `0x148` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x1dc` | `0x1ec` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0xc` | `0x10` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.13.0.0
--  __TEXT.__text: 0xadb38
--  __TEXT.__objc_methlist: 0x544
--  __TEXT.__const: 0x5efc
 +2027.1.14.0.0
-+  __TEXT.__text: 0xbfc8c
-+  __TEXT.__objc_methlist: 0x594
-+  __TEXT.__const: 0x681c
-   __TEXT.__gcc_except_tab: 0xfc
--  __TEXT.__cstring: 0x39b1
--  __TEXT.__oslogstring: 0x34d4
--  __TEXT.__constg_swiftt: 0x254c
--  __TEXT.__swift5_typeref: 0x2443
-+  __TEXT.__cstring: 0x3d51
-+  __TEXT.__oslogstring: 0x35c4
-+  __TEXT.__constg_swiftt: 0x2794
-+  __TEXT.__swift5_typeref: 0x25eb
-   __TEXT.__swift5_builtin: 0x8c
--  __TEXT.__swift5_reflstr: 0x23c8
--  __TEXT.__swift5_fieldmd: 0x2094
-+  __TEXT.__swift5_reflstr: 0x25d8
-+  __TEXT.__swift5_fieldmd: 0x2258
-   __TEXT.__swift5_assocty: 0xa8
--  __TEXT.__swift5_proto: 0x25c
--  __TEXT.__swift5_types: 0x1dc
--  __TEXT.__swift5_capture: 0xf0c
--  __TEXT.__swift5_protos: 0x138
--  __TEXT.__swift_as_entry: 0x430
--  __TEXT.__swift_as_ret: 0x5ac
--  __TEXT.__swift_as_cont: 0xb58
-+  __TEXT.__swift5_proto: 0x270
-+  __TEXT.__swift5_types: 0x1ec
-+  __TEXT.__swift5_capture: 0x1664
-+  __TEXT.__swift5_protos: 0x148
-+  __TEXT.__swift_as_entry: 0x544
-+  __TEXT.__swift_as_ret: 0x6c0
-+  __TEXT.__swift_as_cont: 0xea0
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x35a8
--  __TEXT.__eh_frame: 0xb290
-+  __TEXT.__unwind_info: 0x40c8
-+  __TEXT.__eh_frame: 0xcac8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x328
--  __DATA_CONST.__objc_classlist: 0x140
-+  __DATA_CONST.__const: 0x350
-+  __DATA_CONST.__objc_classlist: 0x158
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0xc0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x9a0
-+  __DATA_CONST.__objc_selrefs: 0x9e8
-   __DATA_CONST.__objc_protorefs: 0x60
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__objc_arraydata: 0x770
--  __DATA_CONST.__got: 0xa58
--  __AUTH_CONST.__const: 0x4ec8
--  __AUTH_CONST.__cfstring: 0xd60
--  __AUTH_CONST.__objc_const: 0x5ba8
-+  __DATA_CONST.__got: 0xac8
-+  __AUTH_CONST.__const: 0x69d0
-+  __AUTH_CONST.__cfstring: 0xd80
-+  __AUTH_CONST.__objc_const: 0x6018
-   __AUTH_CONST.__objc_arrayobj: 0xa8
--  __AUTH_CONST.__auth_got: 0x12f0
--  __AUTH.__objc_data: 0x1f0
--  __AUTH.__data: 0x28
--  __DATA.__objc_ivar: 0xc
--  __DATA.__data: 0x7d8
-+  __AUTH_CONST.__auth_got: 0x13e8
-+  __AUTH.__objc_data: 0x240
-+  __AUTH.__data: 0x300
-+  __DATA.__objc_ivar: 0x10
-+  __DATA.__data: 0x820
-   __DATA.__common: 0x30
--  __DATA_DIRTY.__objc_data: 0x2e8
--  __DATA_DIRTY.__data: 0x29b0
-+  __DATA_DIRTY.__objc_data: 0x298
-+  __DATA_DIRTY.__data: 0x2900
-   __DATA_DIRTY.__bss: 0x200
-   __DATA_DIRTY.__common: 0x60
-   - /System/Library/Frameworks/Contacts.framework/Contacts
 
-   - /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
-   - /System/Library/PrivateFrameworks/NanoPreferencesSync.framework/NanoPreferencesSync
-   - /System/Library/PrivateFrameworks/NanoRegistry.framework/NanoRegistry
 +  - /System/Library/PrivateFrameworks/SeymourAssetCore.framework/SeymourAssetCore
-   - /System/Library/PrivateFrameworks/SeymourClient.framework/SeymourClient
-   - /System/Library/PrivateFrameworks/SeymourClientFoundation.framework/SeymourClientFoundation
-   - /System/Library/PrivateFrameworks/SeymourCore.framework/SeymourCore
 
-   - /usr/lib/swift/libswiftCoreLocation.dylib
-   - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
 +  - /usr/lib/swift/libswiftGLKit.dylib
-   - /usr/lib/swift/libswiftIntents.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
+
 +  - /usr/lib/swift/libswiftMetalKit.dylib
 +  - /usr/lib/swift/libswiftModelIO.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
-+  - /usr/lib/swift/libswiftSceneKit.dylib
-   - /usr/lib/swift/libswiftSpatial.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /usr/lib/swift/libswiftSceneKit.dylib
+
 -  Functions: 2764
--  Symbols:   1561
+-  Symbols:   1302
 -  CStrings:  512
 +  Functions: 3201
-+  Symbols:   1620
++  Symbols:   1353
 +  CStrings:  523
- 
 Symbols:
 + -[FCSFitnessCoachingAchievementEvaluator .cxx_destruct]
 + -[FCSFitnessCoachingAchievementEvaluator _firstAchievementFromAchievements:passingMilestoneTest:completion:]
@@ -208,14 +145,6 @@ Symbols:
 + __swift_FORCE_LOAD_$_swiftModelIO_$_FitnessCoachingServices
 + __swift_FORCE_LOAD_$_swiftSceneKit
 + __swift_FORCE_LOAD_$_swiftSceneKit_$_FitnessCoachingServices
-+ _objc_msgSend$percentageOfTypicalDayBriskMinutesEarnedComparedToNow
-+ _objc_msgSend$percentageOfTypicalDayMoveComparedToNow
-+ _objc_msgSend$percentageOfTypicalDayStandHoursComparedToNow
-+ _objc_msgSend$progressLocalizationKeyPrefixForAchievement:progressMilestone:
-+ _objc_msgSend$todayLocalizationKeyForAchievement:experienceType:
-+ _objc_msgSend$todayLocalizationKeyPrefixForAchievement:
-+ _objc_msgSend$unsignedIntegerValue
-+ _objc_msgSend$yesterdayLocalizationKeyPrefixForAchievement:
 + _objc_retainAutoreleaseReturnValue
 + _objc_retain_x10
 + _symbolic $s23FitnessCoachingServices0aB18RuleEngineProtocolP

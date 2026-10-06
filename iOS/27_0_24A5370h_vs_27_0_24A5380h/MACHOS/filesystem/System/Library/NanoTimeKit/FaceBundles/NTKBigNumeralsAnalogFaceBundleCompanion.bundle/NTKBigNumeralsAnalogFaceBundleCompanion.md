@@ -2,15 +2,16 @@
 
 > `/System/Library/NanoTimeKit/FaceBundles/NTKBigNumeralsAnalogFaceBundleCompanion.bundle/NTKBigNumeralsAnalogFaceBundleCompanion`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x160` | `0x168` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_arrayobj: 0xa8
-   __DATA_CONST.__objc_doubleobj: 0x120
-   __DATA_CONST.__auth_got: 0x1b8
--  __DATA_CONST.__got: 0x160
-+  __DATA_CONST.__got: 0x168
-   __DATA.__objc_const: 0x850
-   __DATA.__objc_selrefs: 0x800
-   __DATA.__objc_ivar: 0x24
-
+-2483.493.1.0.0
++2483.503.0.0.0
 ```

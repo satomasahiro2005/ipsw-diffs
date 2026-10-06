@@ -2,14 +2,15 @@
 
 > `/usr/lib/libquic.dylib`
 
-```diff
+### Section Size Changes
 
- 6681.2.2.0.0
--  __TEXT.__text: 0xd01cc
-+  __TEXT.__text: 0xd0200
-   __TEXT.__objc_methlist: 0x244
-   __TEXT.__const: 0x3b5
-   __TEXT.__cstring: 0x8823
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd01cc` | `0xd0200` | **`+0x34`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _quic_tp_get : 648 -> 656
 ~ _quic_frame_alloc_ack_block : 1444 -> 1448

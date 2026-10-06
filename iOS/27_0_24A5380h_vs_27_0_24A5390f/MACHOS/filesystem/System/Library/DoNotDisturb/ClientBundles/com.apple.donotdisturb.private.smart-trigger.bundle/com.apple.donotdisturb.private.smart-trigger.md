@@ -2,15 +2,14 @@
 
 > `/System/Library/DoNotDisturb/ClientBundles/com.apple.donotdisturb.private.smart-trigger.bundle/com.apple.donotdisturb.private.smart-trigger`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -506.0.0.0.0
 +508.0.0.0.0
-   __TEXT.__text: 0x0
-   __TEXT.__const: 0x60
-   - /usr/lib/libSystem.B.dylib
 ```

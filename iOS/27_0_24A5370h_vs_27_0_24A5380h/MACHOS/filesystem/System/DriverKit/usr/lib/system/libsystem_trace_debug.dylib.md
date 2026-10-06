@@ -2,19 +2,25 @@
 
 > `/System/DriverKit/usr/lib/system/libsystem_trace_debug.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa92c` | `0xa374` | **`-0x5b8`** |
+| `__TEXT.__const` | `0x60` | `0x58` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__AUTH_CONST.__const`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xa92c
--  __TEXT.__const: 0x60
-+  __TEXT.__text: 0xa374
-+  __TEXT.__const: 0x58
-   __TEXT.__cstring: 0x407
-   __TEXT.__unwind_info: 0x140
-   __TEXT.__auth_stubs: 0x220
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__const : content changed
+-1958.0.0.0.1
++1965.0.0.0.0
 Functions:
 ~ _os_trace_blob_add_slow : 360 -> 344
 ~ _os_trace_blob_addns : 2424 -> 2360
@@ -60,5 +66,4 @@ Functions:
 ~ __os_log_fmt_decode_cmd_mismatch : 1152 -> 1100
 ~ __os_log_fmt_decode_bad_range : 156 -> 144
 ~ __os_log_fmt_decode_masked_unknown : 220 -> 216
-
 ```

@@ -2,79 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/NanoPassKit.framework/NanoPassKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1eb730` | `0x1eca98` | **`+0x1368`** |
+| `__TEXT.__oslogstring` | `0x22b59` | `0x22f76` | **`+0x41d`** |
+| `__TEXT.__cstring` | `0x12d24` | `0x12fb4` | **`+0x290`** |
+| `__AUTH_CONST.__objc_const` | `0x37168` | `0x37290` | **`+0x128`** |
+| `__TEXT.__objc_methlist` | `0x20098` | `0x20140` | **`+0xa8`** |
+| `__DATA_CONST.__const` | `0x4020` | `0x40c0` | **`+0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8f78` | `0x8fd8` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0x8ac0` | `0x8b10` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x74e8` | `0x7528` | **`+0x40`** |
+| `__AUTH_CONST.__objc_intobj` | `0xa8` | `0x78` | **`-0x30`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x60` | `0x48` | **`-0x18`** |
+| `__TEXT.__gcc_except_tab` | `0x3850` | `0x3864` | **`+0x14`** |
+| `__DATA_CONST.__objc_arraydata` | `0x28` | `0x18` | **`-0x10`** |
+| `__TEXT.__const` | `0x300` | `0x310` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x16d0` | `0x16dc` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0xf88` | `0xf90` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0xf28` | `0xf30` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1354.0.0.0.0
--  __TEXT.__text: 0x1e35b8
--  __TEXT.__objc_methlist: 0x20098
--  __TEXT.__cstring: 0x12d24
--  __TEXT.__const: 0x300
--  __TEXT.__gcc_except_tab: 0x3850
--  __TEXT.__oslogstring: 0x22b59
 +1355.1.0.0.0
-+  __TEXT.__text: 0x1e48f0
-+  __TEXT.__objc_methlist: 0x20140
-+  __TEXT.__cstring: 0x12fb4
-+  __TEXT.__const: 0x310
-+  __TEXT.__gcc_except_tab: 0x3864
-+  __TEXT.__oslogstring: 0x22f76
-   __TEXT.__dlopen_cstrs: 0x1ba
-   __TEXT.__ustring: 0x168
-   __TEXT.__constg_swiftt: 0x28
 
-   __TEXT.__swift5_reflstr: 0x17
-   __TEXT.__swift5_fieldmd: 0x28
-   __TEXT.__swift5_types: 0x4
--  __TEXT.__unwind_info: 0x8b78
-+  __TEXT.__unwind_info: 0x8bb8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4020
--  __DATA_CONST.__objc_classlist: 0xf88
-+  __DATA_CONST.__const: 0x40c0
-+  __DATA_CONST.__objc_classlist: 0xf90
-   __DATA_CONST.__objc_catlist: 0xf8
-   __DATA_CONST.__objc_protolist: 0x168
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8f78
-+  __DATA_CONST.__objc_selrefs: 0x8fd8
-   __DATA_CONST.__objc_protorefs: 0x50
--  __DATA_CONST.__objc_superrefs: 0xf28
--  __DATA_CONST.__objc_arraydata: 0x28
-+  __DATA_CONST.__objc_superrefs: 0xf30
-+  __DATA_CONST.__objc_arraydata: 0x18
-   __DATA_CONST.__got: 0x1620
-   __AUTH_CONST.__const: 0x720
-   __AUTH_CONST.__cfstring: 0xaa00
--  __AUTH_CONST.__objc_const: 0x37168
--  __AUTH_CONST.__objc_arrayobj: 0x60
--  __AUTH_CONST.__objc_intobj: 0xa8
-+  __AUTH_CONST.__objc_const: 0x37290
-+  __AUTH_CONST.__objc_arrayobj: 0x48
-+  __AUTH_CONST.__objc_intobj: 0x78
-   __AUTH_CONST.__objc_doubleobj: 0x70
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x8ac0
--  __DATA.__objc_ivar: 0x16d0
-+  __AUTH.__objc_data: 0x8b10
-+  __DATA.__objc_ivar: 0x16dc
-   __DATA.__data: 0x1120
-   __DATA_DIRTY.__objc_data: 0x1090
-   __DATA_DIRTY.__bss: 0xa8
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11948
 -  Symbols:   18695
 -  CStrings:  3763
 +  Functions: 11964
 +  Symbols:   18728
 +  CStrings:  3781
- 
 Symbols:
 + +[NPKPassSyncState(SyncVersion) minRemoteDevicePassSyncStateVersionSupportForDevice:]
 + +[NPKPassSyncState(SyncVersion) setMinRemoteDevicePassSyncStateVersionSupport:forDevice:]

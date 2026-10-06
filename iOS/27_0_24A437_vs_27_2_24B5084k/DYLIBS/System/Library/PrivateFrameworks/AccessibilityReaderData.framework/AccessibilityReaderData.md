@@ -2,69 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/AccessibilityReaderData.framework/AccessibilityReaderData`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17f550` | `0x17ffe8` | **`+0xa98`** |
+| `__AUTH_CONST.__const` | `0x88b8` | `0x8a00` | **`+0x148`** |
+| `__TEXT.__swift5_capture` | `0x17a4` | `0x1814` | **`+0x70`** |
+| `__TEXT.__oslogstring` | `0x421f` | `0x426f` | **`+0x50`** |
+| `__TEXT.__swift5_typeref` | `0x69fa` | `0x6a26` | **`+0x2c`** |
+| `__DATA.__data` | `0x2608` | `0x2628` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x39f8` | `0x3a18` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x1b60` | `0x1b78` | **`+0x18`** |
+| `__TEXT.__const` | `0xcec8` | `0xced8` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x2bdb` | `0x2beb` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x2b18` | `0x2b24` | **`+0xc`** |
+| `__AUTH.__data` | `0x3660` | `0x3668` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0xea0` | `0xea8` | **`+0x8`** |
+| `__TEXT.__constg_swiftt` | `0x3338` | `0x3340` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x4338` | `0x4330` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3240.9.0.0.0
--  __TEXT.__text: 0x174c98
 +3245.7.1.0.0
-+  __TEXT.__text: 0x175718
-   __TEXT.__objc_methlist: 0x43c
--  __TEXT.__const: 0xcec8
--  __TEXT.__swift5_typeref: 0x69fa
--  __TEXT.__swift5_fieldmd: 0x2b18
--  __TEXT.__constg_swiftt: 0x3338
-+  __TEXT.__const: 0xced8
-+  __TEXT.__swift5_typeref: 0x6a26
-+  __TEXT.__swift5_fieldmd: 0x2b24
-+  __TEXT.__constg_swiftt: 0x3340
-   __TEXT.__swift5_builtin: 0x168
--  __TEXT.__swift5_reflstr: 0x2bdb
-+  __TEXT.__swift5_reflstr: 0x2beb
-   __TEXT.__swift5_assocty: 0x918
-   __TEXT.__swift5_protos: 0x14
-   __TEXT.__swift5_proto: 0x574
-   __TEXT.__swift5_types: 0x298
--  __TEXT.__cstring: 0x39f8
--  __TEXT.__swift5_capture: 0x17a4
--  __TEXT.__oslogstring: 0x421f
-+  __TEXT.__cstring: 0x3a18
-+  __TEXT.__swift5_capture: 0x1814
-+  __TEXT.__oslogstring: 0x426f
-   __TEXT.__swift_as_entry: 0x134
-   __TEXT.__swift_as_ret: 0x1a8
-   __TEXT.__swift_as_cont: 0x4b0
 
-   __DATA_CONST.__objc_selrefs: 0xba8
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x10
--  __DATA_CONST.__got: 0xea0
--  __AUTH_CONST.__const: 0x88b8
-+  __DATA_CONST.__got: 0xea8
-+  __AUTH_CONST.__const: 0x8a00
-   __AUTH_CONST.__cfstring: 0x60
-   __AUTH_CONST.__objc_const: 0x3428
--  __AUTH_CONST.__auth_got: 0x1b60
-+  __AUTH_CONST.__auth_got: 0x1b78
-   __AUTH.__objc_data: 0xe98
--  __AUTH.__data: 0x3660
-+  __AUTH.__data: 0x3668
-   __DATA.__objc_ivar: 0x20
--  __DATA.__data: 0x2608
-+  __DATA.__data: 0x2628
-   __DATA.__common: 0x1e8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6812
--  Symbols:   2051
+-  Symbols:   1709
 -  CStrings:  590
 +  Functions: 6828
-+  Symbols:   2052
++  Symbols:   1710
 +  CStrings:  592
- 
 Symbols:
 + ___swift_closure_destructor.143Tm
 + ___swift_closure_destructor.225Tm

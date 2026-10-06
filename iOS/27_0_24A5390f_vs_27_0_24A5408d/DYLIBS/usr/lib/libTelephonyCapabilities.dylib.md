@@ -2,15 +2,18 @@
 
 > `/usr/lib/libTelephonyCapabilities.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x53f64` | `0x53f38` | **`-0x2c`** |
+
+### Other Changes
+
 ```diff
 
 -6565.0.0.0.0
--  __TEXT.__text: 0x53f64
 +6567.0.0.0.0
-+  __TEXT.__text: 0x53f38
-   __TEXT.__init_offsets: 0x5c
-   __TEXT.__const: 0x3ed4
-   __TEXT.__gcc_except_tab: 0x8ac0
 Symbols:
 + __ZN12capabilities2ct32supportsOperatorPRIPushForVendorE20TelephonyRadioVendor
 + __ZN12capabilities2ctL24sSupportsOperatorPRIPushE20TelephonyRadioVendor

@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_20 : 20 -> 12

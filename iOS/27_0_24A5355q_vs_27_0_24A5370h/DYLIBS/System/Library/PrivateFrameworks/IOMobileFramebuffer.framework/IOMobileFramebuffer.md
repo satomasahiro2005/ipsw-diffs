@@ -2,45 +2,24 @@
 
 > `/System/Library/PrivateFrameworks/IOMobileFramebuffer.framework/IOMobileFramebuffer`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3b830` | `0x3b860` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x900` | `0x928` | **`+0x28`** |
+
+### Other Changes
+
 ```diff
 
 -700.50.66.0.0
--  __TEXT.__text: 0x3b830 sha256:bfc8ff645d1187a33d58e6a70258bbbdd167758d25fe3f0d20a377f304c1050b
--  __TEXT.__gcc_except_tab: 0x238 sha256:b352ef8eb774ad086a27ff6ed90c3e5f4e020035bf53baf855ee5d7a8f495f46
 +700.50.72.0.0
-+  __TEXT.__text: 0x3b860 sha256:a5266b336f4c2f992ea8d1440cf033fb9343107f0dce7e15724c0955f8af1c53
-+  __TEXT.__gcc_except_tab: 0x238 sha256:243be8f90a0425d7736696028d8cf24cfceffcf69a0b5eb5d369f6dda3fb3617
-   __TEXT.__const: 0x1b04 sha256:a9ae7835aab2bf66e2126d9517abd03934d1722e55395e7643c3729549ddbd52
-   __TEXT.__cstring: 0x968d sha256:29d86cc0dd09e9151f77504d50135c240a9afa60aab09b5cfec73cd4a1d7df4b
--  __TEXT.__unwind_info: 0x900 sha256:0f7a07f3350837a52fd2d6739db29b723bb317c138df95987e5cee00e71692bc
-+  __TEXT.__unwind_info: 0x928 sha256:3371d05144c58418d353e8e006a10f2e7b143ced1b398fd1a5e7d78c23494dae
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0xb8 sha256:baf3734805c7fab8a70da7b23ca44e1aa5626daad9bc60817461aa77e8e476c9
--  __DATA_CONST.__weak_got: 0x10 sha256:60bd051d0bd79e2b1e0afaff0147604b2b7b08044f30c50137fb41a2153e3e56
-+  __DATA_CONST.__const: 0xb8 sha256:8268af922abfbfa565f367260f7683ff942d279ba5be7d07bc353e3491f8424f
-+  __DATA_CONST.__weak_got: 0x10 sha256:2f1a2d0c36c6731ffe079944d2ca7640d62c107666c3f90af849bf1bf605632c
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x140 sha256:a24def36dbc95cc574279ba5ee9549c4251eee02d3c1c6ab97f0919c638d05ba
--  __AUTH_CONST.__cfstring: 0xae0 sha256:dc42385255b2f7b0f796174f4a7d6e380aaae071e92e27ed6a017826e1746e9c
--  __AUTH_CONST.__weak_auth_got: 0x20 sha256:af2c2f442dcb397cb426a1cb88086cda44636e9ea139d7479b095b904871aa93
-+  __AUTH_CONST.__const: 0x140 sha256:7429d6b0d7d95076ea5780b0ba289b4f6fb1568284fdd4dae9a73f6a041378de
-+  __AUTH_CONST.__cfstring: 0xae0 sha256:c429fbce330dc083e7210d295dd05d060e3e3637b93bc1698f740934ebce3c70
-+  __AUTH_CONST.__weak_auth_got: 0x20 sha256:a8fe881c9138a191ef7fa9e96d3cbbb21c15e23797290eff45f7ca0718da2fda
-   __AUTH_CONST.__auth_got: 0x430 sha256:482500ac4ba894ac24dbc1e3e06f5455e570378d55808949294af424208dff4c
-   __DATA.__data: 0x44 sha256:253adc3ccd77c6853c29999846d3ab8e53204797b1d5bfb54490bd428e024bea
-   __DATA.__bss: 0x90 sha256:81c611f35bff79491538b2f7cf201c7597a661a5c549633541c62bdc8af1613f
 
-   - /System/Library/Frameworks/IOSurface.framework/IOSurface
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
--  UUID: 6CF393BD-00CC-344B-BD7A-C42DAC8341B4
 -  Functions: 925
--  Symbols:   2010
-+  UUID: A765292E-C53D-38CD-AE28-3D305A4244CC
+-  Symbols:   1097
 +  Functions: 918
-+  Symbols:   1996
-   CStrings:  1037
- 
++  Symbols:   1090
 Symbols:
 + __ZNSt12length_errorC1B9fqe220106EPKc
 + __ZNSt12out_of_rangeC1B9fqe220106EPKc
@@ -261,5 +240,4 @@ Symbols:
 - __ZNSt3__19allocatorIiE17allocate_at_leastB9fqe220100Em
 - __ZNSt3__19allocatorIjE17allocate_at_leastB9fqe220100Em
 - __ZSt28__throw_bad_array_new_lengthB9fqe220100v
-
 ```

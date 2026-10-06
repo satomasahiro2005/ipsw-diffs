@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/HealthMedicationsUI.framework/HealthMedicationsUI`
 
-```diff
+### Section Size Changes
 
- 7027.0.72.2.7
--  __TEXT.__text: 0x2d52f4
-+  __TEXT.__text: 0x2d531c
-   __TEXT.__objc_methlist: 0x20ac
-   __TEXT.__const: 0x148c4
-   __TEXT.__cstring: 0x813c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2d52f4` | `0x2d531c` | **`+0x28`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_22ea4fafc -> sub_22f2f4afc : 1316 -> 1308
 ~ sub_22ea50d34 -> sub_22f2f5d2c : 828 -> 840

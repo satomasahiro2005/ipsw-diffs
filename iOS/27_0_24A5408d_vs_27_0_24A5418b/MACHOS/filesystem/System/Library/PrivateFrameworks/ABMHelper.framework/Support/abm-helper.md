@@ -2,49 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/ABMHelper.framework/Support/abm-helper`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa00` | `0x8e4` | **`-0x11c`** |
+| `__DATA.__data` | `0x54` | `0x4` | **`-0x50`** |
+| `__TEXT.__auth_stubs` | `0x240` | `0x1f0` | **`-0x50`** |
+| `__DATA_CONST.__auth_got` | `0x128` | `0x100` | **`-0x28`** |
+| `__TEXT.__unwind_info` | `0x98` | `0x78` | **`-0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x50` | `0x34` | **`-0x1c`** |
+| `__DATA.__bss` | `0x9` | `0x1` | **`-0x8`** |
+| `__TEXT.__init_offsets` | `0x4` | `—` | **`-0x4`** |
+
+### Same-size Content Changes
 
 - `__DATA_CONST.__const`
 - `__DATA_CONST.__got`
 
+### Other Changes
+
 ```diff
 
- 1585.0.0.0.0
--  __TEXT.__text: 0xa00
--  __TEXT.__auth_stubs: 0x240
--  __TEXT.__init_offsets: 0x4
--  __TEXT.__gcc_except_tab: 0x50
-+  __TEXT.__text: 0x8e4
-+  __TEXT.__auth_stubs: 0x1f0
-   __TEXT.__const: 0x10
-+  __TEXT.__gcc_except_tab: 0x34
-   __TEXT.__cstring: 0x40
-   __TEXT.__oslogstring: 0xf1
--  __TEXT.__unwind_info: 0x98
-+  __TEXT.__unwind_info: 0x78
-   __DATA_CONST.__const: 0xa0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x128
-+  __DATA_CONST.__auth_got: 0x100
-   __DATA_CONST.__got: 0x20
-   __DATA_CONST.__auth_ptr: 0x8
--  __DATA.__data: 0x54
--  __DATA.__bss: 0x9
-+  __DATA.__data: 0x4
-+  __DATA.__bss: 0x1
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMotion.framework/CoreMotion
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 12
 -  Symbols:   161
 +  Functions: 9
 +  Symbols:   144
-   CStrings:  12
- 
 Symbols:
 - _CFBooleanGetTypeID
 - _CFGetTypeID

@@ -2,102 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/SeymourClient.framework/SeymourClient`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e5fdc` | `0x1e9a4c` | **`+0x3a70`** |
+| `__DATA.__bss` | `0xa7b0` | `0xb030` | **`+0x880`** |
+| `__TEXT.__const` | `0xf56c` | `0xfaec` | **`+0x580`** |
+| `__TEXT.__eh_frame` | `0x1a318` | `0x1a7e8` | **`+0x4d0`** |
+| `__AUTH_CONST.__const` | `0x192b8` | `0x19708` | **`+0x450`** |
+| `__TEXT.__unwind_info` | `0x8f78` | `0x8b48` | **`-0x430`** |
+| `__TEXT.__oslogstring` | `0x19dd` | `0x1c5d` | **`+0x280`** |
+| `__TEXT.__swift5_typeref` | `0x6152` | `0x6290` | **`+0x13e`** |
+| `__TEXT.__swift5_reflstr` | `0x1b8f` | `0x1c9f` | **`+0x110`** |
+| `__DATA.__data` | `0x30a8` | `0x31b0` | **`+0x108`** |
+| `__TEXT.__swift5_fieldmd` | `0x2de0` | `0x2ee4` | **`+0x104`** |
+| `__DATA_DIRTY.__data` | `0x45e8` | `0x4518` | **`-0xd0`** |
+| `__TEXT.__constg_swiftt` | `0x4618` | `0x46e0` | **`+0xc8`** |
+| `__AUTH.__data` | `0x1910` | `0x19d0` | **`+0xc0`** |
+| `__AUTH_CONST.__objc_const` | `0x3440` | `0x33a8` | **`-0x98`** |
+| `__DATA_CONST.__got` | `0x29e8` | `0x2a70` | **`+0x88`** |
+| `__TEXT.__swift5_assocty` | `0x168` | `0x1e0` | **`+0x78`** |
+| `__AUTH_CONST.__auth_got` | `0x2a80` | `0x2ac8` | **`+0x48`** |
+| `__TEXT.__swift5_proto` | `0xa38` | `0xa7c` | **`+0x44`** |
+| `__TEXT.__cstring` | `0x759d` | `0x756d` | **`-0x30`** |
+| `__TEXT.__swift_as_cont` | `0x2308` | `0x2338` | **`+0x30`** |
+| `__TEXT.__swift5_builtin` | `0x64` | `0x78` | **`+0x14`** |
+| `__TEXT.__swift5_types` | `0x488` | `0x49c` | **`+0x14`** |
+| `__TEXT.__swift_as_ret` | `0xaf8` | `0xb0c` | **`+0x14`** |
+| `__TEXT.__swift5_capture` | `0x9814` | `0x9804` | **`-0x10`** |
+| `__TEXT.__swift5_mpenum` | `—` | `0x10` | **`+0x10`** |
+| `__AUTH.__objc_data` | `0x240` | `0x248` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x1a8` | `0x1a0` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5b0` | `0x5b8` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0xc24` | `0xc2c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.146.1.4
--  __TEXT.__text: 0x1c89d0
 +2027.1.50.0.1
-+  __TEXT.__text: 0x1cc1ec
-   __TEXT.__objc_methlist: 0x3f4
--  __TEXT.__const: 0xf56c
--  __TEXT.__cstring: 0x759d
--  __TEXT.__swift5_typeref: 0x6152
--  __TEXT.__swift5_fieldmd: 0x2de0
--  __TEXT.__constg_swiftt: 0x4618
--  __TEXT.__swift5_reflstr: 0x1b8f
--  __TEXT.__swift5_builtin: 0x64
-+  __TEXT.__const: 0xfaec
-+  __TEXT.__cstring: 0x756d
-+  __TEXT.__oslogstring: 0x1c5d
-+  __TEXT.__constg_swiftt: 0x46e0
-+  __TEXT.__swift5_typeref: 0x6290
-+  __TEXT.__swift5_builtin: 0x78
-+  __TEXT.__swift5_reflstr: 0x1c9f
-+  __TEXT.__swift5_fieldmd: 0x2ee4
-+  __TEXT.__swift5_types: 0x49c
-   __TEXT.__swift5_protos: 0x124
--  __TEXT.__swift5_proto: 0xa38
--  __TEXT.__swift5_types: 0x488
--  __TEXT.__oslogstring: 0x19dd
--  __TEXT.__swift5_capture: 0x9814
--  __TEXT.__swift_as_entry: 0xc24
--  __TEXT.__swift_as_ret: 0xaf8
--  __TEXT.__swift_as_cont: 0x2308
--  __TEXT.__swift5_assocty: 0x168
--  __TEXT.__unwind_info: 0xa118
--  __TEXT.__eh_frame: 0x1a328
-+  __TEXT.__swift5_proto: 0xa7c
-+  __TEXT.__swift5_capture: 0x9804
-+  __TEXT.__swift_as_entry: 0xc2c
-+  __TEXT.__swift_as_ret: 0xb0c
-+  __TEXT.__swift_as_cont: 0x2338
-+  __TEXT.__swift5_assocty: 0x1e0
-+  __TEXT.__swift5_mpenum: 0x10
-+  __TEXT.__unwind_info: 0xa2a0
-+  __TEXT.__eh_frame: 0x1a800
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x120
--  __DATA_CONST.__objc_classlist: 0x1a8
-+  __DATA_CONST.__objc_classlist: 0x1a0
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5b0
-+  __DATA_CONST.__objc_selrefs: 0x5b8
-   __DATA_CONST.__objc_protorefs: 0x30
--  __DATA_CONST.__got: 0x29e8
--  __AUTH_CONST.__const: 0x192b8
-+  __DATA_CONST.__got: 0x2a70
-+  __AUTH_CONST.__const: 0x19708
-   __AUTH_CONST.__cfstring: 0x80
--  __AUTH_CONST.__objc_const: 0x3440
--  __AUTH_CONST.__auth_got: 0x2a80
--  __AUTH.__objc_data: 0x240
--  __AUTH.__data: 0x1910
--  __DATA.__data: 0x30a8
-+  __AUTH_CONST.__objc_const: 0x33a8
-+  __AUTH_CONST.__auth_got: 0x2ac8
-+  __AUTH.__objc_data: 0x248
-+  __AUTH.__data: 0x19d0
-+  __DATA.__data: 0x31b0
-   __DATA_DIRTY.__objc_data: 0x2a0
--  __DATA_DIRTY.__data: 0x45e8
-+  __DATA_DIRTY.__data: 0x4518
-   __DATA_DIRTY.__common: 0x30
-   __DATA_DIRTY.__bss: 0x500
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
-   - /System/Library/PrivateFrameworks/MessageDispatch.framework/MessageDispatch
-   - /System/Library/PrivateFrameworks/MessageDispatchCore.framework/MessageDispatchCore
 +  - /System/Library/PrivateFrameworks/SeymourAssetCore.framework/SeymourAssetCore
-   - /System/Library/PrivateFrameworks/SeymourClientFoundation.framework/SeymourClientFoundation
-   - /System/Library/PrivateFrameworks/SeymourCore.framework/SeymourCore
-   - /System/Library/PrivateFrameworks/SeymourCoreFoundation.framework/SeymourCoreFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10531
--  Symbols:   2572
+-  Symbols:   2447
 -  CStrings:  738
 +  Functions: 10647
-+  Symbols:   2602
++  Symbols:   2476
 +  CStrings:  746
- 
 Symbols:
 + _OBJC_CLASS_$_NSCompoundPredicate
 + ___swift_closure_destructor.140Tm
@@ -121,9 +75,6 @@ Symbols:
 + _associated conformance 13SeymourClient36RemoteParticipantReachabilityUpdatedV0A14CoreFoundation29TransportProtobufSerializableAA015MessageDispatchG00mK0
 + _associated conformance 13SeymourClient36RemoteParticipantReachabilityUpdatedV0A14CoreFoundation29TransportProtobufSerializableAA0J4TypeAdEP_013InternalSwiftJ07Message
 + _associated conformance 13SeymourClient36RemoteParticipantReachabilityUpdatedV0A14CoreFoundation29TransportProtobufSerializableAA0J4TypeAdEP_SQ
-+ _objc_msgSend$andPredicateWithSubpredicates:
-+ _objc_msgSend$latestAnchor
-+ _objc_msgSend$notPredicateWithSubpredicate:
 + _objc_retain_x28
 + _symbolic $s13SeymourClient30SessionKeyedUpdatableAttributeP
 + _symbolic 9UpdateKey_____Qz 13SeymourClient30SessionKeyedUpdatableAttributeP
@@ -196,8 +147,6 @@ Symbols:
 - ___swift_closure_destructor.83Tm
 - ___swift_closure_destructor.9Tm
 - _associated conformance 13SeymourClient25HealthWorkoutSessionErrorOSHAASQ
-- _objc_msgSend$environment
-- _objc_msgSend$processInfo
 - _os_unfair_lock_assert_owner
 - _symbolic $s13SeymourClient35SessionCumulativeUpdatableAttributeP
 - _symbolic ScCySo13HKQueryAnchorC______pG s5ErrorP

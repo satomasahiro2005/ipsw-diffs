@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MediaML.framework/MediaML`
 
-```diff
+### Section Size Changes
 
- 124.1.0.0.0
--  __TEXT.__text: 0x56fc8
-+  __TEXT.__text: 0x5710c
-   __TEXT.__const: 0x10a0
-   __TEXT.__swift5_typeref: 0x59c
-   __TEXT.__swift5_capture: 0x1080
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x56fc8` | `0x5710c` | **`+0x144`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s7MediaML9WifiModelCACyYacfCTQ0_ : 264 -> 268
 ~ _$s7MediaML9WifiModelCACyYacfcTY1_ : 864 -> 868

@@ -2,86 +2,43 @@
 
 > `/System/Library/Frameworks/QuartzCore.framework/QuartzCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3f61f0` | `0x3fa604` | **`+0x4414`** |
+| `__TEXT.__oslogstring` | `0x12f69` | `0x13226` | **`+0x2bd`** |
+| `__TEXT.__cstring` | `0x29c3a` | `0x29ea8` | **`+0x26e`** |
+| `__AUTH_CONST.__objc_const` | `0xec08` | `0xee20` | **`+0x218`** |
+| `__TEXT.__const` | `0x19c10` | `0x19aa0` | **`-0x170`** |
+| `__AUTH_CONST.__cfstring` | `0x18e20` | `0x18f00` | **`+0xe0`** |
+| `__TEXT.__objc_methlist` | `0xbb04` | `0xbbd4` | **`+0xd0`** |
+| `__DATA_DIRTY.__bss` | `0x6a30` | `0x69c0` | **`-0x70`** |
+| `__DATA_CONST.__const` | `0x11070` | `0x110d0` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0x1400` | `0x1450` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x9448` | `0x9498` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5cd8` | `0x5d10` | **`+0x38`** |
+| `__AUTH_CONST.__const` | `0x18560` | `0x18590` | **`+0x30`** |
+| `__TEXT.__gcc_except_tab` | `0x9f84` | `0x9fac` | **`+0x28`** |
+| `__DATA.__objc_ivar` | `0x738` | `0x754` | **`+0x1c`** |
+| `__DATA.__bss` | `0x46e0` | `0x46f0` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0xdc8` | `0xdd0` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x460` | `0x468` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x4e0` | `0x4e8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1223.0.8.2.0
--  __TEXT.__text: 0x3f61f0
--  __TEXT.__objc_methlist: 0xbb04
--  __TEXT.__const: 0x19c10
 +1223.0.14.0.0
-+  __TEXT.__text: 0x3fa604
-+  __TEXT.__objc_methlist: 0xbbd4
-+  __TEXT.__const: 0x19aa0
-   __TEXT.__dlopen_cstrs: 0xe0
--  __TEXT.__cstring: 0x29c3a
--  __TEXT.__gcc_except_tab: 0x9f84
--  __TEXT.__oslogstring: 0x12f69
--  __TEXT.__unwind_info: 0x9448
-+  __TEXT.__cstring: 0x29ea8
-+  __TEXT.__gcc_except_tab: 0x9fac
-+  __TEXT.__oslogstring: 0x13226
-+  __TEXT.__unwind_info: 0x9498
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x11070
--  __DATA_CONST.__objc_classlist: 0x460
-+  __DATA_CONST.__const: 0x110d0
-+  __DATA_CONST.__objc_classlist: 0x468
-   __DATA_CONST.__objc_catlist: 0x60
-   __DATA_CONST.__objc_protolist: 0xd8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5cd8
-+  __DATA_CONST.__objc_selrefs: 0x5d10
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__objc_superrefs: 0x4e0
-+  __DATA_CONST.__objc_superrefs: 0x4e8
-   __DATA_CONST.__objc_arraydata: 0x3ee0
--  __DATA_CONST.__got: 0xdc8
--  __AUTH_CONST.__const: 0x18560
--  __AUTH_CONST.__cfstring: 0x18e20
--  __AUTH_CONST.__objc_const: 0xec08
-+  __DATA_CONST.__got: 0xdd0
-+  __AUTH_CONST.__const: 0x18590
-+  __AUTH_CONST.__cfstring: 0x18f00
-+  __AUTH_CONST.__objc_const: 0xee20
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_floatobj: 0x20
-   __AUTH_CONST.__objc_doubleobj: 0x150
 
-   __AUTH_CONST.__objc_dictobj: 0x348
-   __AUTH_CONST.__objc_arrayobj: 0x30
-   __AUTH_CONST.__auth_got: 0x2b78
--  __AUTH.__objc_data: 0x1400
-+  __AUTH.__objc_data: 0x1450
-   __AUTH.__data: 0x60
--  __DATA.__objc_ivar: 0x738
-+  __DATA.__objc_ivar: 0x754
-   __DATA.__data: 0x1450
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x46e0
-+  __DATA.__bss: 0x46f0
-   __DATA.__common: 0x10
-   __DATA_DIRTY.__objc_data: 0x17c0
-   __DATA_DIRTY.__data: 0x620
--  __DATA_DIRTY.__bss: 0x6a30
-+  __DATA_DIRTY.__bss: 0x69c0
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libxml2.2.dylib
 -  Functions: 12754
--  Symbols:   21746
+-  Symbols:   19857
 -  CStrings:  8594
 +  Functions: 12782
-+  Symbols:   21794
++  Symbols:   19901
 +  CStrings:  8626
- 
 Symbols:
 + +[CADisplayLink(CAOverrideCreation) _displayLinkWithDisplay:target:selector:skipsOverrides:]
 + -[CADisplayFrameRateAssertion _ensureValid]
@@ -592,11 +549,6 @@ Symbols:
 + __ZZN2CA2CG12_GLOBAL__N_120RadialGradientDrawer4drawEvENK3$_0clEdPKfdS5_bb
 + __ZZZ20get_setters_for_typeIN2CA6Render9LayerHostEERKDavEUb_ENUlP11CALayerHostPKS2_PKNS1_5LayerERKNSt3__112basic_stringIcNSD_11char_traitsIcEENSD_9allocatorIcEEEER25ReverseSerializationStateE12_8__invokeES7_S9_SC_SL_SN_
 + ___CADeviceSupportsImmediateRenderLatencyRecovery_block_invoke
-+ _objc_msgSend$_copyAllFrameRateAssertionInfo
-+ _objc_msgSend$_displayLinkWithDisplay:target:selector:skipsOverrides:
-+ _objc_msgSend$_initWithDisplayId:maximumFrameRate:identifier:
-+ _objc_msgSend$hostedContextGravity
-+ _objc_msgSend$setHostedContextGravity:
 - GCC_except_table10010
 - GCC_except_table10012
 - GCC_except_table10156
@@ -1062,7 +1014,6 @@ Symbols:
 - __ZZN2CA7Display7Display6updateEvE19is_springboard_once
 - ____ZN2CA7Display7Display6updateEv_block_invoke
 - _getprogname
-- _objc_msgSend$resizesHostedContext
 CStrings:
 + "\t\t %g Hz from %s[%d] since %.0f seconds ago\n"
 + "\tframeRateAssertions:\n%s"

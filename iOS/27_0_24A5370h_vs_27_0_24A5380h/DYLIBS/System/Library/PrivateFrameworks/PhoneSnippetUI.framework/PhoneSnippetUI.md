@@ -2,87 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/PhoneSnippetUI.framework/PhoneSnippetUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9e554` | `0x9fb78` | **`+0x1624`** |
+| `__AUTH_CONST.__const` | `0x4308` | `0x43a8` | **`+0xa0`** |
+| `__TEXT.__swift5_typeref` | `0x8de6` | `0x8e52` | **`+0x6c`** |
+| `__TEXT.__const` | `0x8bf8` | `0x8c48` | **`+0x50`** |
+| `__AUTH.__data` | `0x1e38` | `0x1e70` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0x2920` | `0x2958` | **`+0x38`** |
+| `__DATA.__data` | `0x2a40` | `0x2a70` | **`+0x30`** |
+| `__TEXT.__constg_swiftt` | `0x203c` | `0x206c` | **`+0x30`** |
+| `__AUTH_CONST.__objc_const` | `0x448` | `0x468` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x960` | `0x980` | **`+0x20`** |
+| `__TEXT.__oslogstring` | `0x1b25` | `0x1b45` | **`+0x20`** |
+| `__TEXT.__swift5_capture` | `0x76c` | `0x78c` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x1ad4` | `0x1af4` | **`+0x20`** |
+| `__DATA.__bss` | `0xcfe0` | `0xcff0` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x8e8` | `0x8f8` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x2134` | `0x2140` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x9e554
--  __TEXT.__const: 0x8bf8
--  __TEXT.__swift5_typeref: 0x8de6
--  __TEXT.__swift5_capture: 0x76c
--  __TEXT.__swift5_reflstr: 0x1ad4
-+  __TEXT.__text: 0x9fb78
-+  __TEXT.__const: 0x8c48
-+  __TEXT.__swift5_typeref: 0x8e52
-+  __TEXT.__swift5_capture: 0x78c
-+  __TEXT.__swift5_reflstr: 0x1af4
-   __TEXT.__swift5_assocty: 0x5b8
--  __TEXT.__constg_swiftt: 0x203c
--  __TEXT.__swift5_fieldmd: 0x2134
-+  __TEXT.__constg_swiftt: 0x206c
-+  __TEXT.__swift5_fieldmd: 0x2140
-   __TEXT.__swift5_builtin: 0x28
--  __TEXT.__oslogstring: 0x1b25
-+  __TEXT.__oslogstring: 0x1b45
-   __TEXT.__swift5_proto: 0x680
-   __TEXT.__swift5_types: 0x218
-   __TEXT.__cstring: 0x1352
+-3600.38.6.0.0
++3600.38.13.0.0
 
-   __TEXT.__swift_as_entry: 0x8
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0x24
--  __TEXT.__unwind_info: 0x2920
-+  __TEXT.__unwind_info: 0x2958
-   __TEXT.__eh_frame: 0x13a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x960
-+  __DATA_CONST.__const: 0x980
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xf8
--  __DATA_CONST.__got: 0x8e8
--  __AUTH_CONST.__const: 0x4308
--  __AUTH_CONST.__objc_const: 0x448
-+  __DATA_CONST.__got: 0x8f8
-+  __AUTH_CONST.__const: 0x43a8
-+  __AUTH_CONST.__objc_const: 0x468
-   __AUTH_CONST.__auth_got: 0x13d0
-   __AUTH.__objc_data: 0x50
--  __AUTH.__data: 0x1e38
--  __DATA.__data: 0x2a40
--  __DATA.__bss: 0xcfe0
-+  __AUTH.__data: 0x1e70
-+  __DATA.__data: 0x2a70
-+  __DATA.__bss: 0xcff0
-   __DATA.__common: 0x190
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3932
--  Symbols:   13905
+-  Symbols:   10489
 +  Functions: 3964
-+  Symbols:   13983
-   CStrings:  267
- 
-Sections:
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH.__objc_data : content changed
++  Symbols:   10538
 Symbols:
 + _$s14PhoneSnippetUI27EmergencyCountdownViewModelC21waitingForCallToStartSbvM
 + _$s14PhoneSnippetUI27EmergencyCountdownViewModelC21waitingForCallToStartSbvM.resume
@@ -144,5 +95,4 @@ Symbols:
 CStrings:
 + "#EmergencyCountdownView counter reached 0 -- executing confirm action after going waiting for call to start"
 - "#EmergencyCountdownView counter reached 0 -- executing confirm action"
-
 ```

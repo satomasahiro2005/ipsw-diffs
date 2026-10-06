@@ -2,5 +2,14 @@
 
 > `/System/Library/PrivateFrameworks/CoreUI.framework/DesignLibrary-iOS.bundle/DesignLibrary-iOS`
 
-Sections:
-~ __TEXT.__const : content changed
+### Same-size Content Changes
+
+- `__TEXT.__const`
+
+### Other Changes
+
+```diff
+
+-1006.0.0.0.0
++1007.0.0.0.0
+```

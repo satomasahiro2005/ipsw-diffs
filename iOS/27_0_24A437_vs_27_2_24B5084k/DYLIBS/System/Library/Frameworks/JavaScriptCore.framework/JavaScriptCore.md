@@ -2,82 +2,41 @@
 
 > `/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x23d2fc8` | `0x2368d54` | **`-0x6a274`** |
+| `__TEXT.__const` | `0xa2664` | `0xa0fe4` | **`-0x1680`** |
+| `__TEXT.__cstring` | `0x1260fe` | `0x1275d8` | **`+0x14da`** |
+| `__TEXT.__jsc_int` | `0x691b8` | `0x6a5b8` | **`+0x1400`** |
+| `__TEXT.__unwind_info` | `0x1fd98` | `0x201f8` | **`+0x460`** |
+| `__DATA_DIRTY.__data` | `0x14220` | `0x13ed8` | **`-0x348`** |
+| `__DATA_DIRTY.__bss` | `0xf398` | `0xf650` | **`+0x2b8`** |
+| `__DATA.__bss` | `0x1400` | `0x1320` | **`-0xe0`** |
+| `__DATA_CONST.__const` | `0x31e50` | `0x31f00` | **`+0xb0`** |
+| `__AUTH_CONST.__const` | `0x3dad8` | `0x3db70` | **`+0x98`** |
+| `__DATA_CONST.__jsc_ops` | `0x38f0` | `0x3970` | **`+0x80`** |
+| `__TEXT.__gcc_except_tab` | `0x296c` | `0x2918` | **`-0x54`** |
+| `__DATA.__data` | `0x10598` | `0x10570` | **`-0x28`** |
+| `__DATA.__common` | `0x2d49` | `0x2d60` | **`+0x17`** |
+| `__DATA_DIRTY.__common` | `0x485160` | `0x485150` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1818` | `0x1810` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x280` | `0x288` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -625.1.29.10.29
--  __TEXT.__text: 0x2356690
--  __TEXT.__jsc_int: 0x691b8
 +625.2.4.1.0
-+  __TEXT.__text: 0x22ecc94
-+  __TEXT.__jsc_int: 0x6a5b8
-   __TEXT.__objc_methlist: 0xb9c
--  __TEXT.__const: 0xa2664
-+  __TEXT.__const: 0xa0fe4
-   __TEXT.__dlsym_cstr: 0x34
--  __TEXT.__cstring: 0x1260fe
-+  __TEXT.__cstring: 0x1275d8
-   __TEXT.__oslogstring: 0xa0f
--  __TEXT.__gcc_except_tab: 0x296c
-+  __TEXT.__gcc_except_tab: 0x2918
-   __TEXT.__ustring: 0x10
--  __TEXT.__unwind_info: 0x20428
-+  __TEXT.__unwind_info: 0x208a8
-   __TEXT.__eh_frame: 0x50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x31e50
-+  __DATA_CONST.__const: 0x31f00
-   __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x9f0
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x40
--  __DATA_CONST.__jsc_ops: 0x38f0
--  __DATA_CONST.__got: 0x280
--  __AUTH_CONST.__const: 0x3dad8
-+  __DATA_CONST.__jsc_ops: 0x3970
-+  __DATA_CONST.__got: 0x288
-+  __AUTH_CONST.__const: 0x3db70
-   __AUTH_CONST.__cfstring: 0x10a0
-   __AUTH_CONST.__objc_const: 0xdf8
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__auth_got: 0x1818
-+  __AUTH_CONST.__auth_got: 0x1810
-   __AUTH.__objc_data: 0xf0
-   __AUTH.__data: 0x288
-   __DATA.__objc_ivar: 0x80
-   __DATA.__crash_info: 0x148
--  __DATA.__data: 0x10598
--  __DATA.__common: 0x2d49
-+  __DATA.__data: 0x10570
-+  __DATA.__common: 0x2d60
-   __DATA_DIRTY.__objc_ivar: 0x8
-   __DATA_DIRTY.__objc_data: 0x280
--  __DATA_DIRTY.__data: 0x14220
-+  __DATA_DIRTY.__data: 0x13ed8
-   __DATA_DIRTY.__wtf_config: 0x4000
--  __DATA_DIRTY.__common: 0x485160
--  __DATA_DIRTY.__bss: 0xf398
-+  __DATA_DIRTY.__common: 0x485150
-+  __DATA_DIRTY.__bss: 0xf650
-   - /System/Library/Frameworks/BrowserEngineCore.framework/BrowserEngineCore
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 39720
--  Symbols:   48008
+-  Symbols:   47798
 -  CStrings:  25802
 +  Functions: 40106
-+  Symbols:   48367
++  Symbols:   48157
 +  CStrings:  25828
- 
 Symbols:
 + GCC_except_table115
 + GCC_except_table129

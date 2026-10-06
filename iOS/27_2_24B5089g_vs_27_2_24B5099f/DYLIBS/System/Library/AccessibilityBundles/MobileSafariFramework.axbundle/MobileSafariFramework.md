@@ -2,62 +2,38 @@
 
 > `/System/Library/AccessibilityBundles/MobileSafariFramework.axbundle/MobileSafariFramework`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcc28` | `0xdb18` | **`+0xef0`** |
+| `__AUTH_CONST.__objc_const` | `0x3f90` | `0x41b0` | **`+0x220`** |
+| `__AUTH_CONST.__cfstring` | `0x3920` | `0x3b00` | **`+0x1e0`** |
+| `__DATA_CONST.__got` | `0x0` | `0x188` | **`+0x188`** |
+| `__TEXT.__cstring` | `0x2cff` | `0x2e4a` | **`+0x14b`** |
+| `__TEXT.__objc_methlist` | `0x1634` | `0x175c` | **`+0x128`** |
+| `__AUTH.__objc_data` | `0xa0` | `0x190` | **`+0xf0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x770` | `0x828` | **`+0xb8`** |
+| `__TEXT.__unwind_info` | `0x560` | `0x5c8` | **`+0x68`** |
+| `__TEXT.__gcc_except_tab` | `0x348` | `0x374` | **`+0x2c`** |
+| `__DATA_CONST.__const` | `0x360` | `0x388` | **`+0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x388` | `0x3a0` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x110` | `0x120` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `—` | `0x8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3050.3.1.0.0
--  __TEXT.__text: 0xc6dc
--  __TEXT.__objc_methlist: 0x1634
 +3050.3.5.0.0
-+  __TEXT.__text: 0xd548
-+  __TEXT.__objc_methlist: 0x175c
-   __TEXT.__const: 0x78
--  __TEXT.__gcc_except_tab: 0x348
--  __TEXT.__cstring: 0x2cff
-+  __TEXT.__gcc_except_tab: 0x374
-+  __TEXT.__cstring: 0x2e4a
-   __TEXT.__oslogstring: 0x1d5
--  __TEXT.__unwind_info: 0x600
-+  __TEXT.__unwind_info: 0x678
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x360
--  __DATA_CONST.__objc_classlist: 0x388
-+  __DATA_CONST.__const: 0x388
-+  __DATA_CONST.__objc_classlist: 0x3a0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x770
--  __DATA_CONST.__objc_superrefs: 0x110
--  __DATA_CONST.__got: 0x0
-+  __DATA_CONST.__objc_selrefs: 0x828
-+  __DATA_CONST.__objc_superrefs: 0x120
-+  __DATA_CONST.__got: 0x188
-   __AUTH_CONST.__const: 0x160
--  __AUTH_CONST.__cfstring: 0x3920
--  __AUTH_CONST.__objc_const: 0x3f90
-+  __AUTH_CONST.__cfstring: 0x3b00
-+  __AUTH_CONST.__objc_const: 0x41b0
-   __AUTH_CONST.__objc_intobj: 0x18
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0xa0
-+  __AUTH.__objc_data: 0x190
-+  __DATA.__objc_ivar: 0x8
-   __DATA.__data: 0x8
-   __DATA_DIRTY.__objc_data: 0x22b0
-   __DATA_DIRTY.__bss: 0x8
 
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 433
 -  Symbols:   1165
 -  CStrings:  532
 +  Functions: 458
 +  Symbols:   1223
 +  CStrings:  547
- 
 Symbols:
 + +[SFMagicExtensionBannerAccessibility _accessibilityPerformValidations:]
 + +[SFMagicExtensionBannerAccessibility(SafeCategory) safeCategoryBaseClass]

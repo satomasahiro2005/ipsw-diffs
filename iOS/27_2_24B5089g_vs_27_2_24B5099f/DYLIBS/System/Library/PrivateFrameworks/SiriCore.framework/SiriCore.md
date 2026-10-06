@@ -2,14 +2,9 @@
 
 > `/System/Library/PrivateFrameworks/SiriCore.framework/SiriCore`
 
-```diff
+### Section Size Changes
 
-   __DATA.__objc_ivar: 0x63c
-   __DATA.__data: 0x660
-   __DATA_DIRTY.__objc_data: 0xc80
--  __DATA_DIRTY.__bss: 0x50
-+  __DATA_DIRTY.__bss: 0x58
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x58` | `0x50` | **`-0x8`** |
+| `__DATA_DIRTY.__bss` | `0x50` | `0x58` | **`+0x8`** |

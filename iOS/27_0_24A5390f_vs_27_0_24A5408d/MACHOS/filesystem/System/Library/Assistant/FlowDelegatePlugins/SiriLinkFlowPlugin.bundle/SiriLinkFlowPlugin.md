@@ -2,53 +2,43 @@
 
 > `/System/Library/Assistant/FlowDelegatePlugins/SiriLinkFlowPlugin.bundle/SiriLinkFlowPlugin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x217228` | `0x217248` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0xa480` | `0xa478` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
 - `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -3600.8.7.0.0
--  __TEXT.__text: 0x217228
 +3600.8.9.0.0
-+  __TEXT.__text: 0x217248
-   __TEXT.__auth_stubs: 0x5540
-   __TEXT.__objc_stubs: 0x5340
-   __TEXT.__objc_methlist: 0xedc
 
-   __TEXT.__swift_as_cont: 0x1738
-   __TEXT.__swift5_protos: 0x90
-   __TEXT.__swift5_mpenum: 0x148
--  __TEXT.__unwind_info: 0xa480
-+  __TEXT.__unwind_info: 0xa478
-   __TEXT.__eh_frame: 0x1a074
-   __DATA_CONST.__const: 0x136b8
-   __DATA_CONST.__cfstring: 0x600
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 13538
 -  Symbols:   29846
 +  Functions: 13537
 +  Symbols:   29844
-   CStrings:  2865
- 
 Symbols:
 + _$s18SiriLinkFlowPlugin26VoiceShortcutClientWrapperC03geteF4Name14voiceCommandId0kf2ByM0SSSgSS_So07VCVoiceF0CSSYaKXEtYaFZ04$s18abc8Plugin26efgh20C03geteF4Name14voicel6Id0kf2n13M0SSSgSS_So07O55F0CSSYaKXEtYaFZfA0_AISSYaKYCcSo0ofG0Ccfu_AISSYaKYCcfu0_So0ofG0CTf1nEn_n
 + _$s18SiriLinkFlowPlugin26VoiceShortcutClientWrapperC03geteF4Name14voiceCommandId0kf2ByM0SSSgSS_So07VCVoiceF0CSSYaKXEtYaFZ04$s18abc8Plugin26efgh20C03geteF4Name14voicel6Id0kf2n13M0SSSgSS_So07O55F0CSSYaKXEtYaFZfA0_AISSYaKYCcSo0ofG0Ccfu_AISSYaKYCcfu0_So0ofG0CTf1nEn_nTQ1_

@@ -2,79 +2,39 @@
 
 > `/System/Library/Frameworks/QuartzCore.framework/QuartzCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3faa60` | `0x40277c` | **`+0x7d1c`** |
+| `__TEXT.__oslogstring` | `0x132a1` | `0x1360f` | **`+0x36e`** |
+| `__AUTH_CONST.__const` | `0x185c0` | `0x18740` | **`+0x180`** |
+| `__TEXT.__cstring` | `0x29aff` | `0x29c79` | **`+0x17a`** |
+| `__TEXT.__gcc_except_tab` | `0x9fa4` | `0xa118` | **`+0x174`** |
+| `__DATA.__bss` | `0x4680` | `0x4790` | **`+0x110`** |
+| `__TEXT.__unwind_info` | `0x9498` | `0x9540` | **`+0xa8`** |
+| `__DATA_CONST.__const` | `0x10c50` | `0x10cc0` | **`+0x70`** |
+| `__TEXT.__const` | `0x19ba0` | `0x19c00` | **`+0x60`** |
+| `__TEXT.__objc_methlist` | `0xbbdc` | `0xbc34` | **`+0x58`** |
+| `__AUTH_CONST.__cfstring` | `0x18b80` | `0x18bc0` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5d18` | `0x5d50` | **`+0x38`** |
+| `__AUTH_CONST.__objc_const` | `0xee38` | `0xee68` | **`+0x30`** |
+| `__DATA_DIRTY.__bss` | `0x69a0` | `0x69d0` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x2b78` | `0x2b88` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -1223.0.18.0.0
--  __TEXT.__text: 0x3eff84
--  __TEXT.__objc_methlist: 0xbbdc
--  __TEXT.__const: 0x19ba0
 +1223.10.10.0.0
-+  __TEXT.__text: 0x3f7a58
-+  __TEXT.__objc_methlist: 0xbc34
-+  __TEXT.__const: 0x19c00
-   __TEXT.__dlopen_cstrs: 0xe0
--  __TEXT.__cstring: 0x29aff
--  __TEXT.__gcc_except_tab: 0x9fa4
--  __TEXT.__oslogstring: 0x132a1
--  __TEXT.__unwind_info: 0xb658
-+  __TEXT.__cstring: 0x29c79
-+  __TEXT.__gcc_except_tab: 0xa118
-+  __TEXT.__oslogstring: 0x1360f
-+  __TEXT.__unwind_info: 0xb748
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x10c50
-+  __DATA_CONST.__const: 0x10cc0
-   __DATA_CONST.__objc_classlist: 0x468
-   __DATA_CONST.__objc_catlist: 0x60
-   __DATA_CONST.__objc_protolist: 0xd8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5d18
-+  __DATA_CONST.__objc_selrefs: 0x5d50
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x4e8
-   __DATA_CONST.__objc_arraydata: 0x3d00
-   __DATA_CONST.__got: 0xdd0
--  __AUTH_CONST.__const: 0x185c0
--  __AUTH_CONST.__cfstring: 0x18b80
--  __AUTH_CONST.__objc_const: 0xee38
-+  __AUTH_CONST.__const: 0x18740
-+  __AUTH_CONST.__cfstring: 0x18bc0
-+  __AUTH_CONST.__objc_const: 0xee68
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_floatobj: 0x20
-   __AUTH_CONST.__objc_doubleobj: 0x150
-   __AUTH_CONST.__objc_intobj: 0x49b0
-   __AUTH_CONST.__objc_dictobj: 0x348
-   __AUTH_CONST.__objc_arrayobj: 0x30
--  __AUTH_CONST.__auth_got: 0x2b78
-+  __AUTH_CONST.__auth_got: 0x2b88
-   __AUTH.__objc_data: 0x1450
-   __AUTH.__data: 0x60
-   __DATA.__objc_ivar: 0x754
 
-   __DATA.__common: 0x10
-   __DATA_DIRTY.__objc_data: 0x17c0
-   __DATA_DIRTY.__data: 0x620
--  __DATA_DIRTY.__bss: 0x69a0
-+  __DATA_DIRTY.__bss: 0x69d0
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libxml2.2.dylib
 -  Functions: 12783
--  Symbols:   21797
+-  Symbols:   19904
 -  CStrings:  8601
 +  Functions: 12838
-+  Symbols:   21867
++  Symbols:   19973
 +  CStrings:  8629
- 
 Symbols:
 + +[CATransaction(CATransactionPrivate) batchAsynchronously]
 + -[CAContext resizeAnchorContentLayerContextId]
@@ -699,8 +659,6 @@ Symbols:
 + __ZZZ20get_setters_for_typeIN2CA6Render8SDFLayerEERKDavEUb_ENUlP10CASDFLayerPKS2_PKNS1_5LayerERKNSt3__112basic_stringIcNSD_11char_traitsIcEENSD_9allocatorIcEEEER25ReverseSerializationStateE4_8__invokeES7_S9_SC_SL_SN_
 + ___CADeviceUseDisplayInfoShmem_block_invoke
 + _kCAFilterInputZeroFillEdges
-+ _objc_msgSend$experimentalCulling
-+ _objc_msgSend$initWithDisplayId:heartbeatRate:minimumFrameDuration:supportsVRR:compatQuantaMode:serverCompatQuantaMode:
 + _os_sync_wait_on_address
 + _os_sync_wake_by_address_all
 - -[CAFrameRateRangeGroup initWithHeartbeatRate:minimumFrameDuration:supportsVRR:compatQuantaMode:serverCompatQuantaMode:]
@@ -1259,7 +1217,6 @@ Symbols:
 - __ZN2CA7Context3refEv
 - __ZNSt3__114__split_bufferI22CAFrameIntervalRequestRNS_9allocatorIS1_EEE12emplace_backIJRKS1_EEEvDpOT_
 - __ZNSt3__16vectorI22CAFrameIntervalRequestNS_9allocatorIS1_EEE26__swap_out_circular_bufferERNS_14__split_bufferIS1_RS3_EEPS1_
-- _objc_msgSend$initWithHeartbeatRate:minimumFrameDuration:supportsVRR:compatQuantaMode:serverCompatQuantaMode:
 CStrings:
 + " (exceeds maximum surface size)"
 + " triggered by process-state(pid=%d)"

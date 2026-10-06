@@ -2,26 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/JetAsset.framework/JetAsset`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__data` | `0x928` | `—` | **`-0x928`** |
+| `__DATA_DIRTY.__data` | `0x1350` | `0x1bf8` | **`+0x8a8`** |
+| `__DATA.__bss` | `0xb680` | `0xbd80` | **`+0x700`** |
+| `__DATA_DIRTY.__bss` | `0x4680` | `0x3f80` | **`-0x700`** |
+| `__DATA.__data` | `0xee8` | `0xf68` | **`+0x80`** |
+
+### Other Changes
+
 ```diff
 
 -10.1.8.0.0
 +10.1.9.0.0
-   __TEXT.__text: 0x552b8
-   __TEXT.__const: 0x8de8
-   __TEXT.__swift5_typeref: 0x1a3a
-
-   __AUTH_CONST.__const: 0x44e8
-   __AUTH_CONST.__objc_const: 0x548
-   __AUTH_CONST.__auth_got: 0xae8
--  __AUTH.__data: 0x928
--  __DATA.__data: 0xee8
-+  __DATA.__data: 0xf68
-   __DATA_DIRTY.__objc_data: 0xa0
--  __DATA_DIRTY.__data: 0x1350
--  __DATA_DIRTY.__bss: 0x4680
-+  __DATA_DIRTY.__data: 0x1bf8
-+  __DATA_DIRTY.__bss: 0x3f80
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/JetFoundation.framework/JetFoundation
-   - /System/Library/PrivateFrameworks/JetPack.framework/JetPack
 ```

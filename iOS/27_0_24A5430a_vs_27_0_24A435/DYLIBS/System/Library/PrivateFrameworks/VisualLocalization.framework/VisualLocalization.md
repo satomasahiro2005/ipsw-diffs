@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/VisualLocalization.framework/VisualLocalization`
 
-```diff
+### Section Size Changes
 
- 102.30.4.30.1
--  __TEXT.__text: 0x85c98
-+  __TEXT.__text: 0x85e00
-   __TEXT.__objc_methlist: 0x16dc
-   __TEXT.__dlopen_cstrs: 0xe1
-   __TEXT.__cstring: 0x4f79
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x85c98` | `0x85e00` | **`+0x168`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_226c211b4 -> sub_2274671b4 : 584 -> 588
 ~ sub_226c21ee4 -> sub_227467ee8 : 3384 -> 3388

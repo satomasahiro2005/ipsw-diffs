@@ -2,9 +2,7 @@
 
 > `/System/Library/DriverExtensions/com.apple.DriverKit-AppleEthernetE1000.dext/com.apple.DriverKit-AppleEthernetE1000`
 
-### Sections with Same Size but Changed Content
-
-- `__DATA.__bss`
+### Other Changes
 
 ```diff
 Symbols:

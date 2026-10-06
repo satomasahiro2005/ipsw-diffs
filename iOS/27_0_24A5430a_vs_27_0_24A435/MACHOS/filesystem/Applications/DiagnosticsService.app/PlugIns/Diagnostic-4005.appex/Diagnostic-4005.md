@@ -2,73 +2,47 @@
 
 > `/Applications/DiagnosticsService.app/PlugIns/Diagnostic-4005.appex/Diagnostic-4005`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c80` | `0x1fa4` | **`+0x324`** |
+| `__TEXT.__objc_stubs` | `0x640` | `0x740` | **`+0x100`** |
+| `__TEXT.__objc_methname` | `0x7b9` | `0x888` | **`+0xcf`** |
+| `__DATA_CONST.__cfstring` | `0x120` | `0x1c0` | **`+0xa0`** |
+| `__DATA.__objc_const` | `0x540` | `0x5a8` | **`+0x68`** |
+| `__TEXT.__objc_methlist` | `0x324` | `0x36c` | **`+0x48`** |
+| `__TEXT.__auth_stubs` | `0x440` | `0x480` | **`+0x40`** |
+| `__TEXT.__oslogstring` | `0x17a` | `0x1b9` | **`+0x3f`** |
+| `__DATA.__objc_selrefs` | `0x280` | `0x2b8` | **`+0x38`** |
+| `__TEXT.__cstring` | `0xb4` | `0xe3` | **`+0x2f`** |
+| `__TEXT.__objc_methtype` | `0x239` | `0x266` | **`+0x2d`** |
+| `__DATA_CONST.__auth_got` | `0x230` | `0x250` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0xe8` | `0x100` | **`+0x18`** |
+| `__DATA_CONST.__const` | `0x90` | `0xa0` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x20` | `0x28` | **`+0x8`** |
+| `__TEXT.__const` | `0x18` | `0x20` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
- 1374.2.2.0.0
--  __TEXT.__text: 0x1c80
--  __TEXT.__auth_stubs: 0x440
--  __TEXT.__objc_stubs: 0x640
--  __TEXT.__objc_methlist: 0x324
--  __TEXT.__const: 0x18
-+  __TEXT.__text: 0x1fa4
-+  __TEXT.__auth_stubs: 0x480
-+  __TEXT.__objc_stubs: 0x740
-+  __TEXT.__objc_methlist: 0x36c
-+  __TEXT.__const: 0x20
-   __TEXT.__gcc_except_tab: 0x80
--  __TEXT.__cstring: 0xb4
--  __TEXT.__objc_methname: 0x7b9
--  __TEXT.__oslogstring: 0x17a
-+  __TEXT.__cstring: 0xe3
-+  __TEXT.__objc_methname: 0x888
-+  __TEXT.__oslogstring: 0x1b9
-   __TEXT.__objc_classname: 0x88
--  __TEXT.__objc_methtype: 0x239
--  __TEXT.__unwind_info: 0xe8
--  __DATA_CONST.__const: 0x90
--  __DATA_CONST.__cfstring: 0x120
-+  __TEXT.__objc_methtype: 0x266
-+  __TEXT.__unwind_info: 0x100
-+  __DATA_CONST.__const: 0xa0
-+  __DATA_CONST.__cfstring: 0x1c0
-   __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__objc_intobj: 0x168
--  __DATA_CONST.__auth_got: 0x230
-+  __DATA_CONST.__auth_got: 0x250
-   __DATA_CONST.__got: 0x70
--  __DATA.__objc_const: 0x540
--  __DATA.__objc_selrefs: 0x280
--  __DATA.__objc_ivar: 0x20
-+  __DATA.__objc_const: 0x5a8
-+  __DATA.__objc_selrefs: 0x2b8
-+  __DATA.__objc_ivar: 0x28
-   __DATA.__objc_data: 0xf0
-   __DATA.__data: 0x120
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /System/Library/PrivateFrameworks/DiagnosticsSupport.framework/DiagnosticsSupport
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 53
 -  Symbols:   101
 -  CStrings:  165
 +  Functions: 60
 +  Symbols:   107
 +  CStrings:  183
- 
 Symbols:
 + _kAccelIdentifierPrimary
 + _kAccelIdentifierSecondary

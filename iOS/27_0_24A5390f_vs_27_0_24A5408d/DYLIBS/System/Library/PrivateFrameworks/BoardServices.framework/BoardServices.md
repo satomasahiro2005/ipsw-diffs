@@ -2,15 +2,12 @@
 
 > `/System/Library/PrivateFrameworks/BoardServices.framework/BoardServices`
 
+### Other Changes
+
 ```diff
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   Functions: 1923
--  Symbols:   3208
-+  Symbols:   3210
-   CStrings:  1007
- 
+-  Symbols:   2858
++  Symbols:   2860
 Symbols:
 + GCC_except_table52
 + GCC_except_table61

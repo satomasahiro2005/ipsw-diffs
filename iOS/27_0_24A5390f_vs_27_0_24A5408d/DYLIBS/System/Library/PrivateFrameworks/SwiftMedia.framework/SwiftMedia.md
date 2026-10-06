@@ -2,89 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/SwiftMedia.framework/SwiftMedia`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4b718` | `0x59c70` | **`+0xe558`** |
+| `__TEXT.__oslogstring` | `—` | `0x1356` | **`+0x1356`** |
+| `__TEXT.__cstring` | `0x1cf3` | `0xd54` | **`-0xf9f`** |
+| `__AUTH.__data` | `0x2d0` | `0x678` | **`+0x3a8`** |
+| `__DATA.__bss` | `0x1640` | `0x1840` | **`+0x200`** |
+| `__AUTH_CONST.__objc_const` | `0xb90` | `0xd08` | **`+0x178`** |
+| `__TEXT.__const` | `0x2b00` | `0x2c70` | **`+0x170`** |
+| `__DATA.__data` | `0x730` | `0x878` | **`+0x148`** |
+| `__AUTH_CONST.__const` | `0x20d0` | `0x1fd8` | **`-0xf8`** |
+| `__TEXT.__unwind_info` | `0x12d0` | `0x13b8` | **`+0xe8`** |
+| `__TEXT.__constg_swiftt` | `0xe84` | `0xf5c` | **`+0xd8`** |
+| `__AUTH_CONST.__auth_got` | `0x970` | `0xa28` | **`+0xb8`** |
+| `__TEXT.__swift5_reflstr` | `0xd7f` | `0xe1f` | **`+0xa0`** |
+| `__TEXT.__swift5_fieldmd` | `0xa18` | `0xaac` | **`+0x94`** |
+| `__TEXT.__eh_frame` | `0x3074` | `0x300c` | **`-0x68`** |
+| `__TEXT.__swift5_assocty` | `0x228` | `0x1c8` | **`-0x60`** |
+| `__TEXT.__swift5_builtin` | `0x8c` | `0x3c` | **`-0x50`** |
+| `__TEXT.__swift5_typeref` | `0x1232` | `0x11ec` | **`-0x46`** |
+| `__DATA_DIRTY.__data` | `0xbb0` | `0xbd8` | **`+0x28`** |
+| `__DATA.__common` | `0x8` | `0x18` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0xd4` | `0xe4` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x570` | `0x568` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x38` | `0x40` | **`+0x8`** |
+| `__DATA_DIRTY.__common` | `0x20` | `0x18` | **`-0x8`** |
+| `__TEXT.__swift5_capture` | `0x8dc` | `0x8e4` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0xd4` | `0xdc` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -60.67.1.0.0
--  __TEXT.__text: 0x4b718
--  __TEXT.__const: 0x2b00
--  __TEXT.__cstring: 0x1cf3
--  __TEXT.__swift5_typeref: 0x1232
--  __TEXT.__constg_swiftt: 0xe84
--  __TEXT.__swift5_reflstr: 0xd7f
--  __TEXT.__swift5_fieldmd: 0xa18
--  __TEXT.__swift5_builtin: 0x8c
 +60.73.1.1.0
-+  __TEXT.__text: 0x59c70
-+  __TEXT.__const: 0x2c70
-+  __TEXT.__cstring: 0xd54
-+  __TEXT.__swift5_typeref: 0x11ec
-+  __TEXT.__constg_swiftt: 0xf5c
-+  __TEXT.__swift5_reflstr: 0xe1f
-+  __TEXT.__swift5_fieldmd: 0xaac
-+  __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__swift5_assocty: 0x228
--  __TEXT.__swift5_proto: 0xd4
--  __TEXT.__swift5_types: 0xd4
--  __TEXT.__swift5_capture: 0x8dc
-+  __TEXT.__swift5_proto: 0xe4
-+  __TEXT.__swift5_types: 0xdc
-+  __TEXT.__swift5_capture: 0x8e4
-+  __TEXT.__oslogstring: 0x1356
-   __TEXT.__swift_as_entry: 0x100
-   __TEXT.__swift_as_ret: 0x134
-   __TEXT.__swift_as_cont: 0x110
-+  __TEXT.__swift5_assocty: 0x1c8
-   __TEXT.__swift5_protos: 0x1c
--  __TEXT.__unwind_info: 0x12d0
--  __TEXT.__eh_frame: 0x3074
-+  __TEXT.__unwind_info: 0x13b8
-+  __TEXT.__eh_frame: 0x300c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x230
--  __DATA_CONST.__objc_classlist: 0x38
-+  __DATA_CONST.__objc_classlist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x80
--  __DATA_CONST.__got: 0x570
--  __AUTH_CONST.__const: 0x20d0
--  __AUTH_CONST.__objc_const: 0xb90
--  __AUTH_CONST.__auth_got: 0x970
--  __AUTH.__data: 0x2d0
--  __DATA.__data: 0x730
--  __DATA.__bss: 0x1640
--  __DATA.__common: 0x8
-+  __DATA_CONST.__got: 0x568
-+  __AUTH_CONST.__const: 0x1fd8
-+  __AUTH_CONST.__objc_const: 0xd08
-+  __AUTH_CONST.__auth_got: 0xa28
-+  __AUTH.__data: 0x678
-+  __DATA.__data: 0x878
-+  __DATA.__bss: 0x1840
-+  __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0x190
--  __DATA_DIRTY.__data: 0xbb0
--  __DATA_DIRTY.__common: 0x20
-+  __DATA_DIRTY.__data: 0xbd8
-+  __DATA_DIRTY.__common: 0x18
-   __DATA_DIRTY.__bss: 0x400
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1592
--  Symbols:   675
+-  Symbols:   659
 -  CStrings:  131
 +  Functions: 1660
-+  Symbols:   682
++  Symbols:   666
 +  CStrings:  135
- 
 Symbols:
 + __DATA__TtC10SwiftMedia24LoggingIdentifierCounter
 + __IVARS__TtC10SwiftMedia24LoggingIdentifierCounter

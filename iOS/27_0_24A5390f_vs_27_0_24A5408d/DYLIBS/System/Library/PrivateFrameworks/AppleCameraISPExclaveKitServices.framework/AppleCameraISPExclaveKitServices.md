@@ -2,39 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/AppleCameraISPExclaveKitServices.framework/AppleCameraISPExclaveKitServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__data` | `0x1185d0` | `0x118bd0` | **`+0x600`** |
+| `__TEXT.__text` | `0x30c0c` | `0x30e68` | **`+0x25c`** |
+| `__TEXT.__oslogstring` | `0x431e` | `0x434e` | **`+0x30`** |
+| `__TEXT.__const` | `0x2ea` | `0x2fa` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -20.57.3.0.0
--  __TEXT.__text: 0x30c0c
--  __TEXT.__const: 0x2ea
 +20.62.0.0.0
-+  __TEXT.__text: 0x30e68
-+  __TEXT.__const: 0x2fa
-   __TEXT.__gcc_except_tab: 0x8c8
--  __TEXT.__oslogstring: 0x431e
-+  __TEXT.__oslogstring: 0x434e
-   __TEXT.__cstring: 0x8876
-   __TEXT.__swift5_typeref: 0x2e
-   __TEXT.__constg_swiftt: 0x48
 
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__auth_got: 0x588
-   __AUTH.__data: 0x98
--  __DATA.__data: 0x1185d0
-+  __DATA.__data: 0x118bd0
-   __DATA.__common: 0x98
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 1175
 +  Functions: 1176
-   Symbols:   772
+
 -  CStrings:  802
 +  CStrings:  803
- 
 Functions:
 ~ __ZN28ISPExclaveKitFileDumpService14_copyoutBufferEP21FileServiceBufferInfo : 832 -> 840
 ~ __Z31_ispExclaveKitCommandAlgoEnablej : 416 -> 408

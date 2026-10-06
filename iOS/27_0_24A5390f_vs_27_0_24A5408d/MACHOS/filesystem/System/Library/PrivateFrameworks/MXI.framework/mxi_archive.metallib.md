@@ -2,20 +2,14 @@
 
 > `/System/Library/PrivateFrameworks/MXI.framework/mxi_archive.metallib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__reflection`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__compute` | `0x5e760` | `0x5e9b0` | **`+0x250`** |
+| `__TEXT.__metallib` | `0x1b5d40` | `0x1b5e50` | **`+0x110`** |
+
+### Same-size Content Changes
+
 - `__TEXT.__descriptor`
-
-```diff
-
-   __TEXT.__reflection: 0x8d50
--  __TEXT.__compute: 0x5fb10
-+  __TEXT.__compute: 0x5fd70
-   __TEXT.__descriptor: 0x820
--  __TEXT.__metallib: 0x1b5d40
-+  __TEXT.__metallib: 0x1b5e50
-   Functions: 0
-   Symbols:   0
-   CStrings:  0
-```
+- `__TEXT.__reflection`

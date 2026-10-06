@@ -2,52 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/MobileAccessoryUpdater.framework/XPCServices/Accessory Updater Service.xpc/Accessory Updater Service`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x77ec0` | `0x77fbc` | **`+0xfc`** |
+| `__DATA_CONST.__got` | `0x3b8` | `0x3e0` | **`+0x28`** |
+| `__TEXT.__auth_stubs` | `0x1890` | `0x1870` | **`-0x20`** |
+| `__DATA_CONST.__auth_got` | `0xc58` | `0xc48` | **`-0x10`** |
+| `__TEXT.__cstring` | `0x178bb` | `0x178bf` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_imageinfo`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x77ec0
--  __TEXT.__auth_stubs: 0x1890
-+  __TEXT.__text: 0x77fbc
-+  __TEXT.__auth_stubs: 0x1870
-   __TEXT.__objc_stubs: 0x2d00
-   __TEXT.__objc_methlist: 0x2e94
-   __TEXT.__const: 0x5d50
-   __TEXT.__gcc_except_tab: 0x1d4
--  __TEXT.__cstring: 0x178bb
-+  __TEXT.__cstring: 0x178bf
-   __TEXT.__objc_methname: 0x3682
-   __TEXT.__objc_classname: 0xaf0
-   __TEXT.__objc_methtype: 0xd01
+-3695.0.0.0.0
++3696.0.3.0.1
 
-   __DATA_CONST.__objc_arraydata: 0x10
-   __DATA_CONST.__objc_dictobj: 0x28
-   __DATA_CONST.__objc_intobj: 0x78
--  __DATA_CONST.__auth_got: 0xc58
--  __DATA_CONST.__got: 0x3b8
-+  __DATA_CONST.__auth_got: 0xc48
-+  __DATA_CONST.__got: 0x3e0
-   __DATA_CONST.__auth_ptr: 0x38
-   __DATA.__objc_const: 0x54a8
-   __DATA.__objc_selrefs: 0xf70
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
-   Functions: 2744
 -  Symbols:   1876
 +  Symbols:   1874
-   CStrings:  7016
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_imageinfo : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
 Symbols:
 - _CFDataDeleteBytes
 - _objc_release_x9
@@ -80,5 +67,4 @@ Functions:
 CStrings:
 + "libauthinstall_device-1155.0.3"
 - "libauthinstall_device-1155"
-
 ```

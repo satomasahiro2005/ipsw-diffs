@@ -2,82 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/CoreTransparency.framework/CoreTransparency`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3f128` | `0x4655c` | **`+0x7434`** |
+| `__AUTH_CONST.__const` | `0x3638` | `0x3a30` | **`+0x3f8`** |
+| `__DATA.__bss` | `0x7380` | `0x7080` | **`-0x300`** |
+| `__DATA_DIRTY.__bss` | `0x100` | `0x400` | **`+0x300`** |
+| `__TEXT.__eh_frame` | `0x1df0` | `0x20d4` | **`+0x2e4`** |
+| `__TEXT.__cstring` | `0x9be` | `0xc8e` | **`+0x2d0`** |
+| `__TEXT.__swift5_capture` | `—` | `0x150` | **`+0x150`** |
+| `__TEXT.__unwind_info` | `0x16b0` | `0x17c0` | **`+0x110`** |
+| `__AUTH_CONST.__auth_got` | `0x880` | `0x958` | **`+0xd8`** |
+| `__DATA_DIRTY.__data` | `0x8` | `0xb0` | **`+0xa8`** |
+| `__TEXT.__swift5_typeref` | `0x17ca` | `0x1862` | **`+0x98`** |
+| `__AUTH.__data` | `0x990` | `0xa10` | **`+0x80`** |
+| `__TEXT.__const` | `0x70e4` | `0x7164` | **`+0x80`** |
+| `__TEXT.__swift5_fieldmd` | `0x1b64` | `0x1bd8` | **`+0x74`** |
+| `__DATA.__data` | `0x9f0` | `0x9a0` | **`-0x50`** |
+| `__TEXT.__constg_swiftt` | `0x1ae8` | `0x1b34` | **`+0x4c`** |
+| `__TEXT.__swift5_reflstr` | `0x202d` | `0x2064` | **`+0x37`** |
+| `__DATA_CONST.__const` | `0x30` | `0x40` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x15c` | `0x164` | **`+0x8`** |
+| `__TEXT.__oslogstring` | `—` | `0x3` | **`+0x3`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x3f128
--  __TEXT.__const: 0x70e4
--  __TEXT.__cstring: 0x9be
--  __TEXT.__swift5_typeref: 0x17ca
--  __TEXT.__swift5_reflstr: 0x202d
-+  __TEXT.__text: 0x4655c
-+  __TEXT.__const: 0x7164
-+  __TEXT.__cstring: 0xc8e
-+  __TEXT.__swift5_typeref: 0x1862
-+  __TEXT.__swift5_reflstr: 0x2064
-   __TEXT.__swift5_assocty: 0x568
--  __TEXT.__constg_swiftt: 0x1ae8
--  __TEXT.__swift5_fieldmd: 0x1b64
-+  __TEXT.__constg_swiftt: 0x1b34
-+  __TEXT.__swift5_fieldmd: 0x1bd8
-   __TEXT.__swift5_proto: 0x414
--  __TEXT.__swift5_types: 0x15c
-+  __TEXT.__swift5_types: 0x164
-   __TEXT.__swift5_protos: 0x9c
-+  __TEXT.__oslogstring: 0x3
-   __TEXT.__swift5_builtin: 0xc8
-   __TEXT.__swift5_mpenum: 0x60
-+  __TEXT.__swift5_capture: 0x150
-   __TEXT.__swift5_types2: 0xc
--  __TEXT.__unwind_info: 0x16b0
--  __TEXT.__eh_frame: 0x1df0
-+  __TEXT.__unwind_info: 0x17c0
-+  __TEXT.__eh_frame: 0x20d4
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x30
-+  __DATA_CONST.__const: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x3638
--  __AUTH_CONST.__auth_got: 0x880
--  __AUTH.__data: 0x990
--  __DATA.__data: 0x9f0
--  __DATA.__bss: 0x7380
-+  __AUTH_CONST.__const: 0x3a30
-+  __AUTH_CONST.__auth_got: 0x958
-+  __AUTH.__data: 0xa10
-+  __DATA.__data: 0x9a0
-+  __DATA.__bss: 0x7080
-   __DATA.__common: 0x3c0
--  __DATA_DIRTY.__data: 0x8
--  __DATA_DIRTY.__bss: 0x100
-+  __DATA_DIRTY.__data: 0xb0
-+  __DATA_DIRTY.__bss: 0x400
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+-1766.0.13.0.0
++1766.0.27.0.0
 
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
 +  - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
+
 -  Functions: 2754
--  Symbols:   1628
+-  Symbols:   692
 -  CStrings:  76
 +  - /usr/lib/swift/libswiftos.dylib
 +  Functions: 2837
-+  Symbols:   1692
++  Symbols:   726
 +  CStrings:  93
- 
-Sections:
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_types2 : content changed
 Symbols:
 + ___swift_closure_destructor
 + ___swift_destroy_boxed_opaque_existential_0
@@ -137,5 +102,4 @@ CStrings:
 + "verifyMapProofs: mismatched PAT heads "
 + "verifyMapProofs: no PAT entry found in any map proof ["
 + "verifyMapProofs: proof["
-
 ```

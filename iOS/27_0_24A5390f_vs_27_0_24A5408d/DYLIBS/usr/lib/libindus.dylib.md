@@ -2,23 +2,21 @@
 
 > `/usr/lib/libindus.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x150314` | `0x1505c0` | **`+0x2ac`** |
+| `__TEXT.__cstring` | `0x294e4` | `0x2957f` | **`+0x9b`** |
+| `__TEXT.__const` | `0x5520` | `0x5540` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x1f00` | `0x1f08` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -217.0.0.0.0
--  __TEXT.__text: 0x150314
--  __TEXT.__const: 0x5520
 +219.0.0.0.0
-+  __TEXT.__text: 0x1505c0
-+  __TEXT.__const: 0x5540
-   __TEXT.__gcc_except_tab: 0x492c
--  __TEXT.__cstring: 0x294e4
-+  __TEXT.__cstring: 0x2957f
-   __TEXT.__oslogstring: 0xb
--  __TEXT.__unwind_info: 0x1f00
-+  __TEXT.__unwind_info: 0x1f08
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x3d8
-   __DATA_CONST.__weak_got: 0x8
 Functions:
 ~ __Z13ds_NK_SummaryP9s_GN_Ptrs : 47392 -> 47260
 ~ __Z28GAL_Eph_Reed_Solomon_DecoderP14s_GAL_I_BinEphPttPb : 7708 -> 7704
@@ -43,6 +41,7 @@ CStrings:
 + "%10u %s%c %s: IOCreatePlugInInterfaceForService retry %d/%d\n"
 + "%10u %s%c %s: IOServiceGetMatchingService - failed after %d retries\n"
 + "%10u %s%c %s: IOServiceGetMatchingService retry %d/%d\n"
++ "Aug  3 2026"
 + "Disabled!  "
 + "Pre_Positioning:  Clearing Sleep_Sub_us_Time, time_diff %g --> %d us"
 + "v2.215.1.2026-07-16"
@@ -54,6 +53,7 @@ CStrings:
 - " (Disabled!)      "
 - "%10u %s%c %s: IOCreatePlugInInterfaceForService ,%s\n"
 - "(Disabled!)  "
+- "Jul  9 2026"
 - "Pre_Positioning:  Clearing Sleep_Sub_us_Time, time_diff %d --> %d us"
 - "v2.214.0.2026-06-03"
 ```

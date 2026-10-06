@@ -2,22 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/InputToolKitUI.framework/InputToolKitUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21550` | `0x21574` | **`+0x24`** |
+
+### Other Changes
+
 ```diff
 
- 41.3.0.0.0
--  __TEXT.__text: 0x21550
-+  __TEXT.__text: 0x21574
-   __TEXT.__objc_methlist: 0xee4
-   __TEXT.__const: 0x402
-   __TEXT.__cstring: 0xaea
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 699
--  Symbols:   1623
-+  Symbols:   1622
-   CStrings:  93
- 
+-  Symbols:   1294
++  Symbols:   1293
 Symbols:
 - _objc_retain_x10
 Functions:

@@ -2,41 +2,31 @@
 
 > `com.apple.driver.AppleH16ANEInterface`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x149aa4` | `0x14e24c` | **`+0x47a8`** |
+| `__TEXT.__os_log` | `0x3ace0` | `0x3b223` | **`+0x543`** |
+| `__TEXT.__cstring` | `0x1158a` | `0x11971` | **`+0x3e7`** |
+| `__DATA_CONST.__kalloc_var` | `0x8890` | `0x8b10` | **`+0x280`** |
+| `__DATA_CONST.__kalloc_type` | `0x6c80` | `0x6dc0` | **`+0x140`** |
+| `__DATA_CONST.__const` | `0xf990` | `0xfa20` | **`+0x90`** |
+| `__TEXT.__const` | `0x1020` | `0x1000` | **`-0x20`** |
+| `__TEXT_EXEC.__auth_stubs` | `0x1270` | `0x1280` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x938` | `0x940` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -10.16.2.0.0
--  __TEXT.__const: 0x1020
--  __TEXT.__cstring: 0x1158a
--  __TEXT.__os_log: 0x3ace0
--  __TEXT_EXEC.__text: 0x149aa4
--  __TEXT_EXEC.__auth_stubs: 0x1270
-+10.19.2.0.0
-+  __TEXT.__const: 0x1000
-+  __TEXT.__cstring: 0x11971
-+  __TEXT.__os_log: 0x3b223
-+  __TEXT_EXEC.__text: 0x14e24c
-+  __TEXT_EXEC.__auth_stubs: 0x1280
-   __DATA.__data: 0x482c
-   __DATA.__common: 0x7b8
-   __DATA.__bss: 0x818
-   __DATA_CONST.__mod_init_func: 0x2f0
-   __DATA_CONST.__mod_term_func: 0x128
--  __DATA_CONST.__const: 0xf990
--  __DATA_CONST.__kalloc_type: 0x6c80
--  __DATA_CONST.__kalloc_var: 0x8890
--  __DATA_CONST.__auth_got: 0x938
-+  __DATA_CONST.__const: 0xfa20
-+  __DATA_CONST.__kalloc_type: 0x6dc0
-+  __DATA_CONST.__kalloc_var: 0x8b10
-+  __DATA_CONST.__auth_got: 0x940
-   __DATA_CONST.__got: 0x140
-   __DATA_CONST.__auth_ptr: 0x8
 -  Functions: 4921
++10.19.2.0.0
 +  Functions: 4952
-   Symbols:   0
+
 -  CStrings:  5203
 +  CStrings:  5252
- 
 CStrings:
 + "%s: %s: Allowing inference to run. isBackGround:%d isSuspended:%d\n"
 + "%s: %s: Core %u, powerReadiness %u, raw %d, weight %u, preference %d\n"

@@ -2,42 +2,34 @@
 
 > `/System/Library/SubFrameworks/ARKitUI.framework/ARKitUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2b9b4` | `0x2bdcc` | **`+0x418`** |
+| `__TEXT.__oslogstring` | `0x192e` | `0x1b1f` | **`+0x1f1`** |
+| `__TEXT.__cstring` | `0xdcf` | `0xdf2` | **`+0x23`** |
+| `__TEXT.__const` | `0x948` | `0x958` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -781.0.7.0.0
--  __TEXT.__text: 0x2ad94
 +781.40.3.0.0
-+  __TEXT.__text: 0x2b1ac
-   __TEXT.__objc_methlist: 0x2988
--  __TEXT.__const: 0x948
--  __TEXT.__oslogstring: 0x192e
--  __TEXT.__cstring: 0xdcf
-+  __TEXT.__const: 0x958
-+  __TEXT.__oslogstring: 0x1b1f
-+  __TEXT.__cstring: 0xdf2
-   __TEXT.__gcc_except_tab: 0xcd8
--  __TEXT.__unwind_info: 0xdd0
-+  __TEXT.__unwind_info: 0xdc8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 987
--  Symbols:   3060
+-  Symbols:   2153
 -  CStrings:  235
-+  Symbols:   3061
++  Symbols:   2154
 +  CStrings:  241
- 
 Symbols:
 + _NSStringFromCGSize
 Functions:
-~ -[ARSCNCompositor setCurrentSize:] : 224 -> 220
+~ -[ARSCNCompositor setCurrentSize:] : 236 -> 232
 ~ -[ARSCNCompositor orientedVerticesWithResolution:] : 360 -> 344
-~ -[ARSCNView _assignViewLayerToSessionOnMainThread] : 152 -> 380
+~ -[ARSCNView _assignViewLayerToSessionOnMainThread] : 164 -> 380
 ~ -[ARSCNView _viewRotationAngleDidChange:] : 276 -> 416
-~ -[ARSCNView session:didChangeViewRotationAngle:] : 420 -> 296
+~ -[ARSCNView session:didChangeViewRotationAngle:] : 420 -> 308
 ~ -[ARSCNView _applyPreviewRotationFromAngle:hasOldAngle:toAngle:] : 588 -> 892
 ~ -[ARSCNView _publishOrientationSwapAtAngle:fromAngle:] : 1360 -> 1640
 ~ -[ARSCNView didMoveToWindow] : 336 -> 576

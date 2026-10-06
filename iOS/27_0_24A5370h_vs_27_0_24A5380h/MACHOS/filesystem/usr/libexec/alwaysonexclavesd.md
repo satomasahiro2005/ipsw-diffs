@@ -2,17 +2,21 @@
 
 > `/usr/libexec/alwaysonexclavesd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x5a` | `0x52` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_typeref`
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__text: 0x164
-   __TEXT.__auth_stubs: 0x80
--  __TEXT.__const: 0x5a
-+  __TEXT.__const: 0x52
-   __TEXT.__cstring: 0xa8
-   __TEXT.__swift5_typeref: 0x8
-   __TEXT.__swift5_entry: 0x8
-Sections:
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_entry : content changed
-
+-66.0.0.0.1
++66.0.2.0.0
 ```

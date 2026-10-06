@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/HomeKitMetrics.framework/HomeKitMetrics`
 
-```diff
+### Section Size Changes
 
- 1493.1.5.1.1
--  __TEXT.__text: 0x851d4
-+  __TEXT.__text: 0x85268
-   __TEXT.__objc_methlist: 0x1c2c
-   __TEXT.__dlopen_cstrs: 0x58
-   __TEXT.__const: 0x4d50
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x851d4` | `0x85268` | **`+0x94`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_22fc4d480 -> sub_2314d5480 : 656 -> 664
 ~ sub_22fc4f750 -> sub_2314d7758 : 1636 -> 1640

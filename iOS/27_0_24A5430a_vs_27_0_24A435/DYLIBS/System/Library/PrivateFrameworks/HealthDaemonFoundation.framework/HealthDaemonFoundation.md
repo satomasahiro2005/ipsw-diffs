@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/HealthDaemonFoundation.framework/HealthDaemonFoundation`
 
-```diff
+### Section Size Changes
 
- 7027.0.72.2.7
--  __TEXT.__text: 0x73c1c
-+  __TEXT.__text: 0x73c84
-   __TEXT.__objc_methlist: 0x3d8c
-   __TEXT.__const: 0x2322
-   __TEXT.__cstring: 0x49ba
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x73c1c` | `0x73c84` | **`+0x68`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__16vectorINS_9sub_matchIPKcEENS_9allocatorIS4_EEE6assignEmRKS4_ : 340 -> 336
 ~ __ZNSt3__16vectorINS_4pairImPKcEENS_9allocatorIS4_EEE6resizeEm : 284 -> 288

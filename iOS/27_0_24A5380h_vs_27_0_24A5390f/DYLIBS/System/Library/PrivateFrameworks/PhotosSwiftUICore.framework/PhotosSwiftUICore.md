@@ -2,118 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/PhotosSwiftUICore.framework/PhotosSwiftUICore`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2858a4` | `0x285d4c` | **`+0x4a8`** |
+| `__TEXT.__swift5_typeref` | `0x2cee4` | `0x2cf74` | **`+0x90`** |
+| `__TEXT.__swift5_reflstr` | `0xa8be` | `0xa90e` | **`+0x50`** |
+| `__TEXT.__const` | `0x2a424` | `0x2a464` | **`+0x40`** |
+| `__TEXT.__eh_frame` | `0x5280` | `0x52b8` | **`+0x38`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1ec8` | `0x1ef8` | **`+0x30`** |
+| `__DATA_DIRTY.__objc_data` | `0x3918` | `0x3940` | **`+0x28`** |
+| `__TEXT.__swift5_fieldmd` | `0xaa9c` | `0xaac0` | **`+0x24`** |
+| `__AUTH_CONST.__objc_const` | `0x9a68` | `0x9a88` | **`+0x20`** |
+| `__DATA_DIRTY.__data` | `0x11a50` | `0x11a70` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x1a90` | `0x1aa8` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x2414` | `0x242c` | **`+0x18`** |
+| `__AUTH_CONST.__const` | `0x15ac0` | `0x15ad0` | **`+0x10`** |
+| `__DATA.__bss` | `0x9d38` | `0x9d48` | **`+0x10`** |
+| `__TEXT.__constg_swiftt` | `0x1548c` | `0x15494` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0xbc48` | `0xbc50` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -910.27.103.0.0
--  __TEXT.__text: 0x2858a4
--  __TEXT.__objc_methlist: 0x2414
--  __TEXT.__swift5_typeref: 0x2cee4
--  __TEXT.__const: 0x2a424
--  __TEXT.__constg_swiftt: 0x1548c
--  __TEXT.__swift5_reflstr: 0xa8be
 +910.33.102.0.0
-+  __TEXT.__text: 0x285d4c
-+  __TEXT.__objc_methlist: 0x242c
-+  __TEXT.__swift5_typeref: 0x2cf74
-+  __TEXT.__const: 0x2a464
-+  __TEXT.__constg_swiftt: 0x15494
-+  __TEXT.__swift5_reflstr: 0xa90e
-   __TEXT.__swift5_assocty: 0x30e0
--  __TEXT.__swift5_fieldmd: 0xaa9c
-+  __TEXT.__swift5_fieldmd: 0xaac0
-   __TEXT.__swift5_builtin: 0x3ac
-   __TEXT.__cstring: 0x2a51
-   __TEXT.__swift5_proto: 0x1104
 
-   __TEXT.__swift5_mpenum: 0x120
-   __TEXT.__swift_as_ret: 0x48
-   __TEXT.__swift_as_cont: 0x98
--  __TEXT.__unwind_info: 0xbc48
--  __TEXT.__eh_frame: 0x5280
-+  __TEXT.__unwind_info: 0xbc50
-+  __TEXT.__eh_frame: 0x52b8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x1b0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1ec8
-+  __DATA_CONST.__objc_selrefs: 0x1ef8
-   __DATA_CONST.__objc_protorefs: 0xd8
--  __DATA_CONST.__got: 0x1a90
--  __AUTH_CONST.__const: 0x15ac0
-+  __DATA_CONST.__got: 0x1aa8
-+  __AUTH_CONST.__const: 0x15ad0
-   __AUTH_CONST.__cfstring: 0x20
--  __AUTH_CONST.__objc_const: 0x9a68
-+  __AUTH_CONST.__objc_const: 0x9a88
-   __AUTH_CONST.__auth_got: 0x36a0
-   __AUTH.__objc_data: 0x798
-   __AUTH.__data: 0x1b48
-   __DATA.__data: 0x7258
--  __DATA.__bss: 0x9d38
-+  __DATA.__bss: 0x9d48
-   __DATA.__common: 0x20
--  __DATA_DIRTY.__objc_data: 0x3918
--  __DATA_DIRTY.__data: 0x11a50
-+  __DATA_DIRTY.__objc_data: 0x3940
-+  __DATA_DIRTY.__data: 0x11a70
-   __DATA_DIRTY.__bss: 0x18cb0
-   __DATA_DIRTY.__common: 0x178
-   - /System/Library/Frameworks/AVKit.framework/AVKit
-
-   - /System/Library/Frameworks/CoreVideo.framework/CoreVideo
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/Metal.framework/Metal
 +  - /System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders
-   - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
-   - /System/Library/Frameworks/SensitiveContentAnalysis.framework/SensitiveContentAnalysis
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 21891
--  Symbols:   6795
+-  Symbols:   6299
 +  Functions: 21899
-+  Symbols:   6803
-   CStrings:  383
- 
++  Symbols:   6302
 Symbols:
 + _OBJC_CLASS_$_MPSImageBilinearScale
 + _OBJC_CLASS_$_MPSImageGaussianBlur
 + ___swift_memcpy68_8
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA5GroupVyAA012_ConditionalD0VyACyAA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonI0Rd__lFQOyAA0K0VyAA6HStackVyAA05TupleD0VyAGyACyAA5ImageVAA011_ForegroundI9Modifier2VyAA5ColorVAWGGASGSg_ACyAA4TextVAA30_EnvironmentKeyWritingModifierVy12CoreGraphics7CGFloatVGGSgACyAsA023AccessibilityAttachmentV0VGSgQPGGG_AA05PlainkI0VQo_06PhotosA6UICore027PhotosTransparentHitTestinggV033_2DE17126571F9699563A0D94A0754DF1LLVGA15_GGA11_GAaHHPA26_AaHHPA25_AaHHPA24_AaHHPqd0__AaHHD3_A19_HO_A23_AA0gV0HPyHCHC_A15_AaHHPyHCHC_HC_A11_AAA28_HPyHCHC
 + _kCIInputRadiusKey
-+ _objc_msgSend$encodeToCommandBuffer:sourceTexture:destinationTexture:
-+ _objc_msgSend$initWithDevice:
-+ _objc_msgSend$initWithDevice:sigma:
-+ _objc_msgSend$pixelFormat
-+ _objc_msgSend$setEdgeMode:
 + _symbolic _____ 17PhotosSwiftUICore24GenerativeEditEffectViewC20SemanticMaskCacheKey33_787A8EAEF3EEAF22100EE4D2528F6E02LLV
 + _symbolic _____3key______6resulttSg 17PhotosSwiftUICore24GenerativeEditEffectViewC20SemanticMaskCacheKey33_787A8EAEF3EEAF22100EE4D2528F6E02LLV So10CGImageRefa
 + _symbolic _____y___________y_____y_____y__________y_____AHGGAFGSg_AEy__________y_____GGSgAEyAF_____GSgQPGG 7SwiftUI13_VariadicViewO4TreeV AA13_HStackLayoutV AA12TupleContentV AA012_ConditionalI0V AA08ModifiedI0V AA5ImageV AA25_ForegroundStyleModifier2V AA5ColorV AA4TextV AA30_EnvironmentKeyWritingModifierV 12CoreGraphics7CGFloatV AA023AccessibilityAttachmentU0V

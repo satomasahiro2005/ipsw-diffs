@@ -2,73 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/DiagnosticExtensions.framework/PlugIns/IMDiagnosticExtension.appex/IMDiagnosticExtension`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e78` | `0xa98` | **`-0x13e0`** |
+| `__TEXT.__objc_stubs` | `0x740` | `0x380` | **`-0x3c0`** |
+| `__TEXT.__objc_methname` | `0x67e` | `0x2f0` | **`-0x38e`** |
+| `__TEXT.__auth_stubs` | `0x480` | `0x230` | **`-0x250`** |
+| `__TEXT.__cstring` | `0x28f` | `0xdd` | **`-0x1b2`** |
+| `__DATA_CONST.__const` | `0x218` | `0x90` | **`-0x188`** |
+| `__DATA_CONST.__auth_got` | `0x250` | `0x120` | **`-0x130`** |
+| `__DATA_CONST.__cfstring` | `0x1e0` | `0xc0` | **`-0x120`** |
+| `__TEXT.__objc_methlist` | `0x16c` | `0x64` | **`-0x108`** |
+| `__DATA.__objc_selrefs` | `0x1e0` | `0x100` | **`-0xe0`** |
+| `__DATA.__objc_const` | `0x238` | `0x160` | **`-0xd8`** |
+| `__TEXT.__objc_methtype` | `0xc6` | `0x2d` | **`-0x99`** |
+| `__TEXT.__unwind_info` | `0x120` | `0x90` | **`-0x90`** |
+| `__DATA.__objc_data` | `0x110` | `0xa0` | **`-0x70`** |
+| `__DATA_CONST.__got` | `0xd0` | `0x70` | **`-0x60`** |
+| `__DATA.__data` | `0x30` | `—` | **`-0x30`** |
+| `__TEXT.__objc_classname` | `0x48` | `0x2d` | **`-0x1b`** |
+| `__TEXT.__oslogstring` | `0x132` | `0x14c` | **`+0x1a`** |
+| `__TEXT.__gcc_except_tab` | `0x18` | `—` | **`-0x18`** |
+| `__DATA.__objc_ivar` | `0x10` | `0x4` | **`-0xc`** |
+| `__TEXT.__swift5_typeref` | `0xc` | `—` | **`-0xc`** |
+| `__DATA.__bss` | `0x8` | `—` | **`-0x8`** |
+| `__DATA_CONST.__auth_ptr` | `0x8` | `—` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x18` | `0x10` | **`-0x8`** |
+| `__TEXT.__const` | `0x6a` | `0x70` | **`+0x6`** |
+
+### Same-size Content Changes
 
 - `__DATA_CONST.__objc_imageinfo`
 - `__DATA_CONST.__objc_superrefs`
 
+### Other Changes
+
 ```diff
 
 -1486.100.5.2.1
--  __TEXT.__text: 0x1e78
--  __TEXT.__auth_stubs: 0x480
--  __TEXT.__objc_stubs: 0x740
--  __TEXT.__objc_methlist: 0x16c
--  __TEXT.__const: 0x6a
--  __TEXT.__gcc_except_tab: 0x18
--  __TEXT.__objc_methname: 0x67e
--  __TEXT.__cstring: 0x28f
--  __TEXT.__oslogstring: 0x132
--  __TEXT.__objc_classname: 0x48
--  __TEXT.__objc_methtype: 0xc6
--  __TEXT.__swift5_typeref: 0xc
--  __TEXT.__unwind_info: 0x120
--  __DATA_CONST.__const: 0x218
--  __DATA_CONST.__cfstring: 0x1e0
--  __DATA_CONST.__objc_classlist: 0x18
 +1487.100.6.2.2
-+  __TEXT.__text: 0xa98
-+  __TEXT.__auth_stubs: 0x230
-+  __TEXT.__objc_stubs: 0x380
-+  __TEXT.__objc_methlist: 0x64
-+  __TEXT.__const: 0x70
-+  __TEXT.__cstring: 0xdd
-+  __TEXT.__objc_methname: 0x2f0
-+  __TEXT.__oslogstring: 0x14c
-+  __TEXT.__objc_classname: 0x2d
-+  __TEXT.__objc_methtype: 0x2d
-+  __TEXT.__unwind_info: 0x90
-+  __DATA_CONST.__const: 0x90
-+  __DATA_CONST.__cfstring: 0xc0
-+  __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__auth_got: 0x250
--  __DATA_CONST.__got: 0xd0
--  __DATA_CONST.__auth_ptr: 0x8
--  __DATA.__objc_const: 0x238
--  __DATA.__objc_selrefs: 0x1e0
--  __DATA.__objc_ivar: 0x10
--  __DATA.__objc_data: 0x110
--  __DATA.__data: 0x30
--  __DATA.__bss: 0x8
-+  __DATA_CONST.__auth_got: 0x120
-+  __DATA_CONST.__got: 0x70
-+  __DATA.__objc_const: 0x160
-+  __DATA.__objc_selrefs: 0x100
-+  __DATA.__objc_ivar: 0x4
-+  __DATA.__objc_data: 0xa0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+
 -  - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/PrivateFrameworks/DiagnosticExtensions.framework/DiagnosticExtensions
-   - /System/Library/PrivateFrameworks/IMCore.framework/IMCore
-   - /System/Library/PrivateFrameworks/IMDPersistence.framework/IMDPersistence
-   - /System/Library/PrivateFrameworks/IMFoundation.framework/IMFoundation
-   - /System/Library/PrivateFrameworks/IMSharedUtilities.framework/IMSharedUtilities
+
 +  - /System/Library/PrivateFrameworks/LoggingSupport.framework/LoggingSupport
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
+
 -  - /usr/lib/swift/libswiftAVFoundation.dylib
 -  - /usr/lib/swift/libswiftAccelerate.dylib
 -  - /usr/lib/swift/libswiftAppleArchive.dylib
@@ -101,7 +80,6 @@
 +  Functions: 19
 +  Symbols:   60
 +  CStrings:  58
- 
 Symbols:
 + _OBJC_CLASS_$_IMDIndexingDiagnosticPopulator
 + _OBJC_CLASS_$_IMDPersistentTaskDiagnosticPopulator

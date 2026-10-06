@@ -2,109 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/CompanionSetupKit.framework/CompanionSetupKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3f2b18` | `0x4039e0` | **`+0x10ec8`** |
+| `__DATA_CONST.__got` | `0x0` | `0x12e0` | **`+0x12e0`** |
+| `__TEXT.__eh_frame` | `0x34300` | `0x35230` | **`+0xf30`** |
+| `__DATA.__bss` | `0x44df0` | `0x45200` | **`+0x410`** |
+| `__TEXT.__const` | `0x2cbe0` | `0x2ce90` | **`+0x2b0`** |
+| `__TEXT.__oslogstring` | `0x8505` | `0x8775` | **`+0x270`** |
+| `__AUTH_CONST.__const` | `0x18608` | `0x18828` | **`+0x220`** |
+| `__TEXT.__unwind_info` | `0x12808` | `0x12640` | **`-0x1c8`** |
+| `__TEXT.__swift_as_cont` | `0x34bc` | `0x35e4` | **`+0x128`** |
+| `__TEXT.__swift5_fieldmd` | `0x8f50` | `0x9034` | **`+0xe4`** |
+| `__TEXT.__cstring` | `0xb6dd` | `0xb7ad` | **`+0xd0`** |
+| `__TEXT.__swift5_capture` | `0x3634` | `0x36e4` | **`+0xb0`** |
+| `__TEXT.__swift5_reflstr` | `0x7a4e` | `0x7ade` | **`+0x90`** |
+| `__TEXT.__swift_as_ret` | `0x14c0` | `0x153c` | **`+0x7c`** |
+| `__TEXT.__swift5_typeref` | `0x972c` | `0x97a0` | **`+0x74`** |
+| `__TEXT.__constg_swiftt` | `0x68a8` | `0x690c` | **`+0x64`** |
+| `__DATA.__data` | `0x8990` | `0x89e8` | **`+0x58`** |
+| `__TEXT.__swift_as_entry` | `0x1044` | `0x1068` | **`+0x24`** |
+| `__AUTH.__data` | `0x5450` | `0x5470` | **`+0x20`** |
+| `__AUTH_CONST.__objc_const` | `0x7018` | `0x7038` | **`+0x20`** |
+| `__TEXT.__swift5_proto` | `0x2268` | `0x2288` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x11b8` | `0x11c8` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0xa78` | `0xa84` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x3f2b18
-+  __TEXT.__text: 0x4039e0
-   __TEXT.__objc_methlist: 0x108c
--  __TEXT.__const: 0x2cbe0
--  __TEXT.__swift5_typeref: 0x972c
--  __TEXT.__constg_swiftt: 0x68a8
--  __TEXT.__swift5_reflstr: 0x7a4e
--  __TEXT.__swift5_fieldmd: 0x8f50
-+  __TEXT.__const: 0x2ce90
-+  __TEXT.__swift5_typeref: 0x97a0
-+  __TEXT.__constg_swiftt: 0x690c
-+  __TEXT.__swift5_reflstr: 0x7ade
-+  __TEXT.__swift5_fieldmd: 0x9034
-   __TEXT.__swift5_builtin: 0x294
-   __TEXT.__swift5_assocty: 0x14e0
--  __TEXT.__swift5_proto: 0x2268
--  __TEXT.__swift5_types: 0xa78
--  __TEXT.__cstring: 0xb6dd
--  __TEXT.__swift5_capture: 0x3634
--  __TEXT.__oslogstring: 0x8505
-+  __TEXT.__swift5_proto: 0x2288
-+  __TEXT.__swift5_types: 0xa84
-+  __TEXT.__cstring: 0xb7ad
-+  __TEXT.__swift5_capture: 0x36e4
-+  __TEXT.__oslogstring: 0x8775
-   __TEXT.__swift5_protos: 0x30
--  __TEXT.__swift_as_entry: 0x1044
--  __TEXT.__swift_as_cont: 0x34bc
-+  __TEXT.__swift_as_entry: 0x1068
-+  __TEXT.__swift_as_cont: 0x35e4
-   __TEXT.__swift5_mpenum: 0xd0
--  __TEXT.__swift_as_ret: 0x14c0
-+  __TEXT.__swift_as_ret: 0x153c
-   __TEXT.__gcc_except_tab: 0x14c
--  __TEXT.__unwind_info: 0x12808
--  __TEXT.__eh_frame: 0x34300
-+  __TEXT.__unwind_info: 0x12640
-+  __TEXT.__eh_frame: 0x35230
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x11b8
-+  __DATA_CONST.__const: 0x11c8
-   __DATA_CONST.__objc_classlist: 0x270
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x118
+-524.0.16.0.0
++524.0.26.0.0
 
-   __DATA_CONST.__objc_protorefs: 0x80
-   __DATA_CONST.__objc_superrefs: 0x38
-   __DATA_CONST.__objc_arraydata: 0x28
--  __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x18608
-+  __DATA_CONST.__got: 0x12e0
-+  __AUTH_CONST.__const: 0x18828
-   __AUTH_CONST.__cfstring: 0x220
--  __AUTH_CONST.__objc_const: 0x7018
-+  __AUTH_CONST.__objc_const: 0x7038
-   __AUTH_CONST.__objc_intobj: 0x48
-   __AUTH_CONST.__objc_arrayobj: 0x78
-   __AUTH_CONST.__auth_got: 0x2510
-   __AUTH.__objc_data: 0x1c90
--  __AUTH.__data: 0x5450
-+  __AUTH.__data: 0x5470
-   __DATA.__objc_ivar: 0x48
--  __DATA.__data: 0x8990
--  __DATA.__bss: 0x44df0
-+  __DATA.__data: 0x89e8
-+  __DATA.__bss: 0x45200
-   __DATA.__common: 0x3c8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 17750
--  Symbols:   7710
--  CStrings:  2306
+-  Symbols:   4900
+-  CStrings:  2284
 +  Functions: 17924
-+  Symbols:   7746
-+  CStrings:  2327
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH.__objc_data : content changed
++  Symbols:   4914
++  CStrings:  2305
 Symbols:
 + ___swift_closure_destructor.272Tm
 + ___swift_closure_destructor.364Tm
@@ -192,5 +130,4 @@ CStrings:
 - "pre-companion flow ended, companion setup started"
 - "resume setup"
 - "userKeepAppleTVInSync"
-
 ```

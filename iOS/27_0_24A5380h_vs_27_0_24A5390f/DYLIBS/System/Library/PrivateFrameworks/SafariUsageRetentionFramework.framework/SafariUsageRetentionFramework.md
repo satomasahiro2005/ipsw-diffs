@@ -2,90 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/SafariUsageRetentionFramework.framework/SafariUsageRetentionFramework`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_assocty`
-- `__DATA_CONST.__objc_selrefs`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd48c` | `0x11cc0` | **`+0x4834`** |
+| `__AUTH_CONST.__const` | `0x2e49` | `0x2909` | **`-0x540`** |
+| `__TEXT.__cstring` | `0x5be` | `0x27e` | **`-0x340`** |
+| `__TEXT.__const` | `0x964` | `0xc44` | **`+0x2e0`** |
+| `__AUTH.__data` | `0x108` | `0x338` | **`+0x230`** |
+| `__TEXT.__eh_frame` | `0x8d8` | `0xb08` | **`+0x230`** |
+| `__TEXT.__swift5_fieldmd` | `0x240` | `0x3f8` | **`+0x1b8`** |
+| `__TEXT.__constg_swiftt` | `0x240` | `0x3c0` | **`+0x180`** |
+| `__TEXT.__swift5_typeref` | `0x325` | `0x44b` | **`+0x126`** |
+| `__TEXT.__swift5_reflstr` | `0x142` | `0x252` | **`+0x110`** |
+| `__TEXT.__unwind_info` | `0x3c8` | `0x4d0` | **`+0x108`** |
+| `__DATA.__data` | `0x290` | `0x340` | **`+0xb0`** |
+| `__TEXT.__oslogstring` | `0x1d2` | `0x272` | **`+0xa0`** |
+| `__AUTH_CONST.__auth_got` | `0x560` | `0x5e8` | **`+0x88`** |
+| `__DATA.__bss` | `0x980` | `0xa00` | **`+0x80`** |
+| `__TEXT.__swift_as_cont` | `0x7c` | `0xa0` | **`+0x24`** |
+| `__TEXT.__swift5_types` | `0x34` | `0x54` | **`+0x20`** |
+| `__TEXT.__swift_as_ret` | `0x20` | `0x34` | **`+0x14`** |
+| `__TEXT.__swift5_proto` | `0x60` | `0x70` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `0x14` | `0x20` | **`+0xc`** |
+| `__TEXT.__swift_as_entry` | `0x1c` | `0x28` | **`+0xc`** |
+
+### Other Changes
 
 ```diff
 
 -6.0.3.0.0
--  __TEXT.__text: 0xd48c
--  __TEXT.__const: 0x964
--  __TEXT.__swift5_typeref: 0x325
--  __TEXT.__swift5_fieldmd: 0x240
--  __TEXT.__constg_swiftt: 0x240
--  __TEXT.__oslogstring: 0x1d2
--  __TEXT.__cstring: 0x5be
--  __TEXT.__swift5_reflstr: 0x142
--  __TEXT.__swift5_protos: 0x14
--  __TEXT.__swift5_proto: 0x60
--  __TEXT.__swift5_types: 0x34
--  __TEXT.__swift_as_entry: 0x1c
--  __TEXT.__swift_as_ret: 0x20
--  __TEXT.__swift_as_cont: 0x7c
 +6.0.6.0.0
-+  __TEXT.__text: 0x11cc0
-+  __TEXT.__const: 0xc44
-+  __TEXT.__constg_swiftt: 0x3c0
-+  __TEXT.__swift5_typeref: 0x44b
-+  __TEXT.__swift5_reflstr: 0x252
-+  __TEXT.__swift5_fieldmd: 0x3f8
-+  __TEXT.__oslogstring: 0x272
-+  __TEXT.__cstring: 0x27e
-+  __TEXT.__swift5_types: 0x54
-+  __TEXT.__swift_as_entry: 0x28
-+  __TEXT.__swift_as_ret: 0x34
-+  __TEXT.__swift_as_cont: 0xa0
-+  __TEXT.__swift5_protos: 0x20
-+  __TEXT.__swift5_proto: 0x70
-   __TEXT.__swift5_assocty: 0x48
--  __TEXT.__unwind_info: 0x3c8
--  __TEXT.__eh_frame: 0x8d8
-+  __TEXT.__unwind_info: 0x4d0
-+  __TEXT.__eh_frame: 0xb08
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x30
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2e49
--  __AUTH_CONST.__auth_got: 0x560
--  __AUTH.__data: 0x108
--  __DATA.__data: 0x290
--  __DATA.__bss: 0x980
-+  __AUTH_CONST.__const: 0x2909
-+  __AUTH_CONST.__auth_got: 0x5e8
-+  __AUTH.__data: 0x338
-+  __DATA.__data: 0x340
-+  __DATA.__bss: 0xa00
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /System/Library/PrivateFrameworks/LighthouseBackground.framework/LighthouseBackground
-   - /System/Library/PrivateFrameworks/UnilogCommonLibrary.framework/UnilogCommonLibrary
-   - /System/Library/PrivateFrameworks/UnilogInstrumentation.framework/UnilogInstrumentation
 +  - /System/Library/PrivateFrameworks/UnilogPlatformLibrary.framework/UnilogPlatformLibrary
-   - /System/Library/PrivateFrameworks/UnilogSafariSearchLibrary.framework/UnilogSafariSearchLibrary
+
 +  - /System/Library/PrivateFrameworks/UnilogTelemetry.framework/UnilogTelemetry
 +  - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 233
--  Symbols:   190
+-  Symbols:   184
 -  CStrings:  61
 +  Functions: 298
-+  Symbols:   218
++  Symbols:   212
 +  CStrings:  38
- 
 Symbols:
 + _MGCopyAnswer
 + ___swift_memcpy320_8

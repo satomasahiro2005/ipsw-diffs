@@ -2,17 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/AppleMipcRouter.framework/AppleMipcRouter`
 
-```diff
+### Section Size Changes
 
- 1585.0.0.0.0
--  __TEXT.__text: 0x4b5b8
-+  __TEXT.__text: 0x4b600
-   __TEXT.__const: 0x4a08
--  __TEXT.__gcc_except_tab: 0x4afc
-+  __TEXT.__gcc_except_tab: 0x4af8
-   __TEXT.__cstring: 0xdc0
-   __TEXT.__oslogstring: 0x206f
-   __TEXT.__unwind_info: 0x17b0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4b5b8` | `0x4b600` | **`+0x48`** |
+| `__TEXT.__gcc_except_tab` | `0x4afc` | `0x4af8` | **`-0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN3abb6router7GatewayD2Ev : 1252 -> 1256
 ~ __ZN3abb6router7Gateway22updateFlowControl_syncEmNSt3__18optionalIKNS0_7MessageEEE : 1280 -> 1264

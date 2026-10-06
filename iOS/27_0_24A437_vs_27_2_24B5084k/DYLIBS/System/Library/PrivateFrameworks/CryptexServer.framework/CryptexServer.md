@@ -2,71 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/CryptexServer.framework/CryptexServer`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x57234` | `0x5980c` | **`+0x25d8`** |
+| `__TEXT.__oslogstring` | `0x15ca` | `0x162a` | **`+0x60`** |
+| `__TEXT.__cstring` | `0xca5` | `0xcf5` | **`+0x50`** |
+| `__TEXT.__eh_frame` | `0x3d20` | `0x3d68` | **`+0x48`** |
+| `__DATA.__data` | `0x688` | `0x6c8` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x1138` | `0x1170` | **`+0x38`** |
+| `__TEXT.__swift5_typeref` | `0x7c6` | `0x7f0` | **`+0x2a`** |
+| `__DATA.__common` | `0x20` | `0x40` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x14a8` | `0x14c8` | **`+0x20`** |
+| `__TEXT.__constg_swiftt` | `0x848` | `0x860` | **`+0x18`** |
+| `__DATA.__bss` | `0xc30` | `0xc40` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0x548` | `0x558` | **`+0x10`** |
+| `__TEXT.__const` | `0x1190` | `0x11a0` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x284` | `0x294` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x49c` | `0x4a8` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
 -761.2.1.0.0
--  __TEXT.__text: 0x5345c
 +761.40.23.0.0
-+  __TEXT.__text: 0x5593c
-   __TEXT.__objc_methlist: 0x104
--  __TEXT.__const: 0x1190
--  __TEXT.__cstring: 0xca5
--  __TEXT.__swift5_typeref: 0x7c6
--  __TEXT.__oslogstring: 0x15ca
--  __TEXT.__swift5_reflstr: 0x284
-+  __TEXT.__const: 0x11a0
-+  __TEXT.__cstring: 0xcf5
-+  __TEXT.__swift5_typeref: 0x7f0
-+  __TEXT.__oslogstring: 0x162a
-+  __TEXT.__swift5_reflstr: 0x294
-   __TEXT.__swift5_assocty: 0xd8
--  __TEXT.__constg_swiftt: 0x848
--  __TEXT.__swift5_fieldmd: 0x49c
-+  __TEXT.__constg_swiftt: 0x860
-+  __TEXT.__swift5_fieldmd: 0x4a8
-   __TEXT.__swift5_capture: 0x1ec
-   __TEXT.__swift5_proto: 0x6c
-   __TEXT.__swift5_types: 0x64
 
-   __TEXT.__swift_as_cont: 0x2f4
-   __TEXT.__swift5_protos: 0xc
-   __TEXT.__swift5_builtin: 0x50
--  __TEXT.__unwind_info: 0x1738
--  __TEXT.__eh_frame: 0x3d20
-+  __TEXT.__unwind_info: 0x1788
-+  __TEXT.__eh_frame: 0x3d68
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0xb50
-   __AUTH_CONST.__objc_const: 0x7a0
--  __AUTH_CONST.__auth_got: 0x1138
-+  __AUTH_CONST.__auth_got: 0x1170
-   __AUTH.__objc_data: 0x50
-   __AUTH.__data: 0x5e8
--  __DATA.__data: 0x688
--  __DATA.__common: 0x20
-+  __DATA.__data: 0x6c8
-+  __DATA.__common: 0x40
-   __DATA_DIRTY.__objc_data: 0xf0
--  __DATA_DIRTY.__data: 0x548
-+  __DATA_DIRTY.__data: 0x558
-   __DATA_DIRTY.__common: 0xb8
-   __DATA_DIRTY.__bss: 0x120
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 1040
--  Symbols:   2928
+-  Symbols:   2914
 -  CStrings:  236
 +  Functions: 1053
-+  Symbols:   2974
++  Symbols:   2960
 +  CStrings:  241
- 
 Symbols:
 + _$s10CryptexKit6PkgEnvV4SpecV8validate8reservedyShy6System8FilePathV9ComponentVG_tAA0C5ErrorVYKF
 + _$s13CryptexServer12PkgInventoryC04kEnvC3Dir6System8FilePathV9ComponentVvau

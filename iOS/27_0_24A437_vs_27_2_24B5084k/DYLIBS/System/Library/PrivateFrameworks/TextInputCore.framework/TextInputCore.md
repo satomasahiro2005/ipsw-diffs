@@ -2,85 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/TextInputCore.framework/TextInputCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x222810` | `0x21f0d0` | **`-0x3740`** |
+| `__AUTH_CONST.__objc_const` | `0x1a680` | `0x19c88` | **`-0x9f8`** |
+| `__TEXT.__objc_methlist` | `0x10af0` | `0x10618` | **`-0x4d8`** |
+| `__DATA_DIRTY.__objc_data` | `0x32f0` | `0x2fd0` | **`-0x320`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa088` | `0x9eb0` | **`-0x1d8`** |
+| `__TEXT.__oslogstring` | `0x4479` | `0x42db` | **`-0x19e`** |
+| `__TEXT.__cstring` | `0x1ca14` | `0x1c8d8` | **`-0x13c`** |
+| `__TEXT.__unwind_info` | `0x6600` | `0x64f8` | **`-0x108`** |
+| `__AUTH_CONST.__cfstring` | `0x13e80` | `0x13dc0` | **`-0xc0`** |
+| `__DATA_CONST.__const` | `0x4f30` | `0x4ea8` | **`-0x88`** |
+| `__DATA_CONST.__objc_classlist` | `0x858` | `0x808` | **`-0x50`** |
+| `__DATA_CONST.__objc_superrefs` | `0x728` | `0x6d8` | **`-0x50`** |
+| `__DATA.__objc_ivar` | `0x12c8` | `0x1288` | **`-0x40`** |
+| `__AUTH_CONST.__objc_intobj` | `0x6c0` | `0x690` | **`-0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x1af0` | `0x1ac8` | **`-0x28`** |
+| `__DATA_CONST.__got` | `0x18b8` | `0x1890` | **`-0x28`** |
+| `__DATA_DIRTY.__bss` | `0xc50` | `0xc28` | **`-0x28`** |
+| `__AUTH_CONST.__const` | `0x8870` | `0x8878` | **`+0x8`** |
+| `__DATA.__bss` | `0x1ee0` | `0x1ee8` | **`+0x8`** |
+| `__TEXT.__ustring` | `0x7d8` | `0x7e0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3567.0.0.0.0
--  __TEXT.__text: 0x21a12c
 +3568.1.4.0.0
-+  __TEXT.__text: 0x216bb8
-   __TEXT.__init_offsets: 0xc0
--  __TEXT.__objc_methlist: 0x10af0
-+  __TEXT.__objc_methlist: 0x10618
-   __TEXT.__dlopen_cstrs: 0x781
-   __TEXT.__const: 0x2e40
--  __TEXT.__cstring: 0x1ca14
--  __TEXT.__oslogstring: 0x4479
--  __TEXT.__ustring: 0x7d8
--  __TEXT.__unwind_info: 0x7e08
-+  __TEXT.__cstring: 0x1c8d8
-+  __TEXT.__oslogstring: 0x42db
-+  __TEXT.__ustring: 0x7e0
-+  __TEXT.__unwind_info: 0x7cc8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4f30
--  __DATA_CONST.__objc_classlist: 0x858
-+  __DATA_CONST.__const: 0x4ea8
-+  __DATA_CONST.__objc_classlist: 0x808
-   __DATA_CONST.__objc_catlist: 0x60
-   __DATA_CONST.__objc_protolist: 0x190
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa088
--  __DATA_CONST.__objc_superrefs: 0x728
-+  __DATA_CONST.__objc_selrefs: 0x9eb0
-+  __DATA_CONST.__objc_superrefs: 0x6d8
-   __DATA_CONST.__objc_arraydata: 0x10a8
--  __DATA_CONST.__got: 0x18b8
--  __AUTH_CONST.__const: 0x8870
--  __AUTH_CONST.__cfstring: 0x13e80
--  __AUTH_CONST.__objc_const: 0x1a680
-+  __DATA_CONST.__got: 0x1890
-+  __AUTH_CONST.__const: 0x8878
-+  __AUTH_CONST.__cfstring: 0x13dc0
-+  __AUTH_CONST.__objc_const: 0x19c88
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__objc_arrayobj: 0x3c0
--  __AUTH_CONST.__objc_intobj: 0x6c0
-+  __AUTH_CONST.__objc_intobj: 0x690
-   __AUTH_CONST.__objc_dictobj: 0x118
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x1af0
-+  __AUTH_CONST.__auth_got: 0x1ac8
-   __AUTH.__objc_data: 0x2080
-   __AUTH.__data: 0x18
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x20
--  __DATA.__objc_ivar: 0x12c8
-+  __DATA.__objc_ivar: 0x1288
-   __DATA.__data: 0x22a8
-   __DATA.__common: 0x408
--  __DATA_DIRTY.__objc_data: 0x32f0
-+  __DATA_DIRTY.__objc_data: 0x2fd0
-   __DATA_DIRTY.__data: 0xb0
--  __DATA_DIRTY.__bss: 0xc50
-+  __DATA_DIRTY.__bss: 0xc28
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libmecabra.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 10539
--  Symbols:   21821
+-  Symbols:   17431
 -  CStrings:  4086
 +  Functions: 10446
-+  Symbols:   21580
++  Symbols:   17248
 +  CStrings:  4061
- 
 Symbols:
 + +[TIChineseExtras stringContainsOffensiveCharacter:]
 + +[TILaunchServicesLookup enumerateInstalledApplicationsWithPreferredLocalizations:block:]
@@ -140,22 +99,6 @@ Symbols:
 + _getLSApplicationRecordClass
 + _getLSApplicationRecordClass.softClass
 + _malloc_zone_pressure_relief
-+ _objc_msgSend$_resetForTesting
-+ _objc_msgSend$applyContactDeltaChanges:
-+ _objc_msgSend$currentLoadedInputModes
-+ _objc_msgSend$enumerateInstalledApplicationsWithPreferredLocalizations:block:
-+ _objc_msgSend$enumeratorWithOptions:
-+ _objc_msgSend$infoDictionary
-+ _objc_msgSend$leftDocumentContextForCandidates
-+ _objc_msgSend$localizedNameForBundleIdentifier:preferredLocalizations:
-+ _objc_msgSend$localizedNameWithPreferredLocalizations:
-+ _objc_msgSend$nextObject
-+ _objc_msgSend$objectForKey:ofClass:
-+ _objc_msgSend$rebuildAddressBookTokensFromSnapshot:
-+ _objc_msgSend$releaseAllInputManagersAndLanguageModelResources
-+ _objc_msgSend$setStringContext:
-+ _objc_msgSend$stringContext
-+ _objc_msgSend$stringContextIsEmpty
 + _stringContainsOffensiveCharacter:.offensiveCharacterSet
 + _stringContainsOffensiveCharacter:.onceToken
 - +[HCBurstTrie burstTrieFromFile:]
@@ -401,80 +344,6 @@ Symbols:
 - _getLSApplicationProxyClass.softClass
 - _getLSApplicationWorkspaceClass.softClass
 - _log2
-- _objc_msgSend$_createUnderlyingBurstTrie
-- _objc_msgSend$_normalizedWordEntryStringForWordEntry:
-- _objc_msgSend$_prepareCharacterCoderMatchingSession
-- _objc_msgSend$_prepareWordCoderMatchingSession
-- _objc_msgSend$appNames
-- _objc_msgSend$applicationProxyForIdentifier:
-- _objc_msgSend$applicationType
-- _objc_msgSend$burstTrieFromFile:
-- _objc_msgSend$bytes
-- _objc_msgSend$cache
-- _objc_msgSend$cacheNames:
-- _objc_msgSend$characterCoder
-- _objc_msgSend$characterCoderForLocale:
-- _objc_msgSend$characterExplodedRecords
-- _objc_msgSend$cleanedWord
-- _objc_msgSend$codeAtIndex:
-- _objc_msgSend$codeForKey:
-- _objc_msgSend$codedWord
-- _objc_msgSend$codedWordAsString
-- _objc_msgSend$coder
-- _objc_msgSend$coderFromBurstTrieFile:indexTableFile:
-- _objc_msgSend$coderMatchingName:locale:
-- _objc_msgSend$coderVersion
-- _objc_msgSend$contextString:forRightContext:
-- _objc_msgSend$dataWithBytesNoCopy:length:freeWhenDone:
-- _objc_msgSend$dataWithContentsOfFile:options:error:
-- _objc_msgSend$deletionRangesWithElementsToKeep:
-- _objc_msgSend$enumerateAppNames:
-- _objc_msgSend$enumerateBundlesOfType:block:
-- _objc_msgSend$enumerateInstalledApplicationNames:
-- _objc_msgSend$enumerateNgramsFromSession:n:usingBlock:
-- _objc_msgSend$fileHandleForWritingAtPath:
-- _objc_msgSend$fileHeader
-- _objc_msgSend$huffmanCodes
-- _objc_msgSend$huffmanCodesMemoryMappedData
-- _objc_msgSend$indexTable
-- _objc_msgSend$indexTableFromFile:
-- _objc_msgSend$initWithBurstTrie:indexTable:
-- _objc_msgSend$initWithHuffmanCodesMemoryMappedData:
-- _objc_msgSend$initWithKey:
-- _objc_msgSend$initWithTypingSession:aligned:n:
-- _objc_msgSend$initWithTypingSession:aligned:n:shouldDonateNgramSampleRandomly:
-- _objc_msgSend$initWithWordString:
-- _objc_msgSend$initWithWordString:wordEntryAligned:
-- _objc_msgSend$isFeatureEnabledForInternalBuilds
-- _objc_msgSend$isFromStaticLexicon
-- _objc_msgSend$isStandaloneString
-- _objc_msgSend$lastCacheUpdate
-- _objc_msgSend$lookupAppNames
-- _objc_msgSend$n
-- _objc_msgSend$objectForInfoDictionaryKey:ofClass:
-- _objc_msgSend$payloadForKey:
-- _objc_msgSend$randomRecords
-- _objc_msgSend$randomRecordsLimitedByCount:
-- _objc_msgSend$record:metadata:
-- _objc_msgSend$setCache:
-- _objc_msgSend$setCoder:
-- _objc_msgSend$setLastCacheUpdate:
-- _objc_msgSend$setN:
-- _objc_msgSend$setShouldDonateNgramSampleRandomly:
-- _objc_msgSend$setWordEntryAligned:
-- _objc_msgSend$setWordString:
-- _objc_msgSend$shouldDonateNgramSampleRandomly
-- _objc_msgSend$stringCodeForKey:
-- _objc_msgSend$toDPWordRecord
-- _objc_msgSend$tryCache
-- _objc_msgSend$unsignedLongLongValue
-- _objc_msgSend$versionUUID
-- _objc_msgSend$word:atPosition:coder:
-- _objc_msgSend$wordCoder
-- _objc_msgSend$wordCoderForLocale:
-- _objc_msgSend$wordEntryAligned
-- _objc_msgSend$wordString
-- _objc_msgSend$writeData:error:
 CStrings:
 + "%s  kbd is %zu bytes over the inactive limit, hard-resetting all language models (including advanced ones)"
 + "%s  kbd is still %zu bytes over the inactive limit, releasing all cached input managers and language model resources"

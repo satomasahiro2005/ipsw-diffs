@@ -1,0 +1,9 @@
+## binaryArchive.g17p
+
+> `/System/Library/PrivateFrameworks/CameraColorProcessing.framework/binaryArchive.g17p`
+
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__compute` | `0x1b810` | `0x1b800` | **`-0x10`** |

@@ -2,76 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/AttentionAwareness.framework/AttentionAwareness`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x36e64` | `0x374e0` | **`+0x67c`** |
+| `__AUTH_CONST.__objc_const` | `0x5128` | `0x5270` | **`+0x148`** |
+| `__TEXT.__cstring` | `0x40bb` | `0x4186` | **`+0xcb`** |
+| `__DATA.__data` | `0xa80` | `0xae0` | **`+0x60`** |
+| `__TEXT.__objc_methlist` | `0x27c4` | `0x281c` | **`+0x58`** |
+| `__AUTH.__objc_data` | `—` | `0x50` | **`+0x50`** |
+| `__TEXT.__oslogstring` | `0x57ef` | `0x5832` | **`+0x43`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1420` | `0x1450` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0xe20` | `0xe48` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x1d80` | `0x1da0` | **`+0x20`** |
+| `__AUTH_CONST.__const` | `0x428` | `0x448` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x864` | `0x884` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0xd30` | `0xd48` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x538` | `0x54c` | **`+0x14`** |
+| `__DATA_CONST.__got` | `0x218` | `0x228` | **`+0x10`** |
+| `__DATA.__bss` | `0x88` | `0x90` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x120` | `0x128` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0xe0` | `0xe8` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x108` | `0x110` | **`+0x8`** |
+| `__DATA_DIRTY.__bss` | `0x130` | `0x138` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 265.0.3.0.0
--  __TEXT.__text: 0x36e64
--  __TEXT.__objc_methlist: 0x27c4
-+  __TEXT.__text: 0x374e0
-+  __TEXT.__objc_methlist: 0x281c
-   __TEXT.__const: 0x200
--  __TEXT.__gcc_except_tab: 0x864
--  __TEXT.__oslogstring: 0x57ef
--  __TEXT.__cstring: 0x40bb
--  __TEXT.__unwind_info: 0xd30
-+  __TEXT.__gcc_except_tab: 0x884
-+  __TEXT.__oslogstring: 0x5832
-+  __TEXT.__cstring: 0x4186
-+  __TEXT.__unwind_info: 0xd48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xe20
--  __DATA_CONST.__objc_classlist: 0x120
-+  __DATA_CONST.__const: 0xe48
-+  __DATA_CONST.__objc_classlist: 0x128
-   __DATA_CONST.__objc_catlist: 0x8
--  __DATA_CONST.__objc_protolist: 0xe0
-+  __DATA_CONST.__objc_protolist: 0xe8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1420
-+  __DATA_CONST.__objc_selrefs: 0x1450
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__objc_superrefs: 0x108
-+  __DATA_CONST.__objc_superrefs: 0x110
-   __DATA_CONST.__objc_arraydata: 0x40
--  __DATA_CONST.__got: 0x218
--  __AUTH_CONST.__const: 0x428
--  __AUTH_CONST.__cfstring: 0x1d80
--  __AUTH_CONST.__objc_const: 0x5128
-+  __DATA_CONST.__got: 0x228
-+  __AUTH_CONST.__const: 0x448
-+  __AUTH_CONST.__cfstring: 0x1da0
-+  __AUTH_CONST.__objc_const: 0x5270
-   __AUTH_CONST.__weak_auth_got: 0x8
-   __AUTH_CONST.__objc_intobj: 0xd8
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__objc_ivar: 0x538
--  __DATA.__data: 0xa80
-+  __AUTH.__objc_data: 0x50
-+  __DATA.__objc_ivar: 0x54c
-+  __DATA.__data: 0xae0
-   __DATA_DIRTY.__objc_data: 0xb40
-   __DATA_DIRTY.__data: 0x8
--  __DATA_DIRTY.__bss: 0x130
-+  __DATA_DIRTY.__bss: 0x138
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMotion.framework/CoreMotion
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 966
--  Symbols:   2642
+-  Symbols:   2105
 -  CStrings:  849
 +  Functions: 973
-+  Symbols:   2677
++  Symbols:   2134
 +  CStrings:  857
- 
 Symbols:
 + -[AWAttentionAwareService CormorantStateChanging:]
 + -[CormorantStateObserver .cxx_destruct]
@@ -135,12 +100,6 @@ Symbols:
 + ___doesPlatformSupportCormorant_block_invoke
 + _doesPlatformSupportCormorant.answer
 + _doesPlatformSupportCormorant.onceToken
-+ _objc_msgSend$CormorantStateChanging:
-+ _objc_msgSend$angleDegrees
-+ _objc_msgSend$isAngleValid
-+ _objc_msgSend$isAvailable
-+ _objc_msgSend$startAngleUpdatesToQueue:handler:
-+ _objc_msgSend$stopAngleUpdates
 + _objc_opt_new
 - GCC_except_table184
 - GCC_except_table203

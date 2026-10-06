@@ -2,84 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/BulletinBoard.framework/BulletinBoard`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x786f0` | `0x7dfc4` | **`+0x58d4`** |
+| `__AUTH_CONST.__cfstring` | `0x6be0` | `0x79e0` | **`+0xe00`** |
+| `__TEXT.__cstring` | `0x6426` | `0x6d92` | **`+0x96c`** |
+| `__AUTH_CONST.__objc_const` | `0x107b8` | `0x10cc8` | **`+0x510`** |
+| `__TEXT.__oslogstring` | `0x65f7` | `0x68a6` | **`+0x2af`** |
+| `__TEXT.__objc_methlist` | `0x862c` | `0x87dc` | **`+0x1b0`** |
+| `__DATA_CONST.__const` | `0x2038` | `0x21a0` | **`+0x168`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3fc0` | `0x40f0` | **`+0x130`** |
+| `__DATA_CONST.__got` | `0x5b8` | `0x648` | **`+0x90`** |
+| `__TEXT.__unwind_info` | `0x20b0` | `0x2128` | **`+0x78`** |
+| `__AUTH_CONST.__const` | `0xae0` | `0xb40` | **`+0x60`** |
+| `__DATA.__data` | `0xe00` | `0xe60` | **`+0x60`** |
+| `__AUTH.__objc_data` | `—` | `0x50` | **`+0x50`** |
+| `__TEXT.__const` | `0x188` | `0x1c0` | **`+0x38`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x18` | `0x48` | **`+0x30`** |
+| `__AUTH_CONST.__objc_intobj` | `0xd8` | `0x108` | **`+0x30`** |
+| `__DATA.__bss` | `0x88` | `0xa8` | **`+0x20`** |
+| `__DATA_CONST.__objc_arraydata` | `0x170` | `0x190` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x8c4` | `0x8d4` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x278` | `0x280` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x128` | `0x130` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -955.0.0.0.0
--  __TEXT.__text: 0x75df0
--  __TEXT.__objc_methlist: 0x862c
--  __TEXT.__const: 0x188
--  __TEXT.__cstring: 0x6426
 +955.2.1.0.0
-+  __TEXT.__text: 0x7b600
-+  __TEXT.__objc_methlist: 0x87dc
-+  __TEXT.__const: 0x1c0
-+  __TEXT.__cstring: 0x6d92
-   __TEXT.__gcc_except_tab: 0x9b8
--  __TEXT.__oslogstring: 0x65f7
-+  __TEXT.__oslogstring: 0x68a6
-   __TEXT.__dlopen_cstrs: 0x19c
--  __TEXT.__unwind_info: 0x2b80
-+  __TEXT.__unwind_info: 0x2c38
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2038
--  __DATA_CONST.__objc_classlist: 0x278
-+  __DATA_CONST.__const: 0x21a0
-+  __DATA_CONST.__objc_classlist: 0x280
-   __DATA_CONST.__objc_catlist: 0x28
--  __DATA_CONST.__objc_protolist: 0x128
-+  __DATA_CONST.__objc_protolist: 0x130
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3fc0
-+  __DATA_CONST.__objc_selrefs: 0x40f0
-   __DATA_CONST.__objc_protorefs: 0x68
-   __DATA_CONST.__objc_superrefs: 0x210
--  __DATA_CONST.__objc_arraydata: 0x170
--  __DATA_CONST.__got: 0x5b8
--  __AUTH_CONST.__const: 0xae0
--  __AUTH_CONST.__cfstring: 0x6be0
--  __AUTH_CONST.__objc_const: 0x107b8
--  __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__objc_intobj: 0xd8
-+  __DATA_CONST.__objc_arraydata: 0x190
-+  __DATA_CONST.__got: 0x648
-+  __AUTH_CONST.__const: 0xb40
-+  __AUTH_CONST.__cfstring: 0x79e0
-+  __AUTH_CONST.__objc_const: 0x10cc8
-+  __AUTH_CONST.__objc_arrayobj: 0x48
-+  __AUTH_CONST.__objc_intobj: 0x108
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__objc_ivar: 0x8c4
--  __DATA.__data: 0xe00
-+  __AUTH.__objc_data: 0x50
-+  __DATA.__objc_ivar: 0x8d4
-+  __DATA.__data: 0xe60
-   __DATA_DIRTY.__objc_data: 0x18b0
-   __DATA_DIRTY.__data: 0x14
-   __DATA_DIRTY.__bss: 0x1a8
 
-   - /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard
-   - /System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams
-   - /System/Library/PrivateFrameworks/Categories.framework/Categories
 +  - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/CrashReporterSupport.framework/CrashReporterSupport
-   - /System/Library/PrivateFrameworks/DoNotDisturb.framework/DoNotDisturb
-   - /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 3365
--  Symbols:   6847
+-  Symbols:   5172
 -  CStrings:  1431
 +  Functions: 3415
-+  Symbols:   6973
++  Symbols:   5261
 +  CStrings:  1545
- 
 Symbols:
 + +[BBSettingsAnalytics _appRowDimensionKeys]
 + +[BBSettingsAnalytics _appRowPayloadForSection:archetype:isDeliveredQuietly:]
@@ -191,43 +154,6 @@ Symbols:
 + __inferredSettingSourceForCurrentConnection.userFacingClients
 + __shouldSendSnapshotAtDate:lastSentDate:.calendar
 + __shouldSendSnapshotAtDate:lastSentDate:.calendarOnce
-+ _objc_msgSend$_appRowDimensionKeys
-+ _objc_msgSend$_appRowPayloadForSection:archetype:isDeliveredQuietly:
-+ _objc_msgSend$_applyUserSettingsFromSectionInfo:
-+ _objc_msgSend$_categoryCountsWithSilenced:categoryIndexBySectionID:
-+ _objc_msgSend$_copySectionSettingsFromSectionID:toSectionID:
-+ _objc_msgSend$_deviceSnapshotPayloadWithSectionInfo:rawSectionInfo:bulletinCountsBySectionID:globalSettings:
-+ _objc_msgSend$_explicitChoiceCountsWithRawSectionInfo:
-+ _objc_msgSend$_groupedAppRows:minimumAppsPerCell:
-+ _objc_msgSend$_inferredSettingSourceForCurrentConnection
-+ _objc_msgSend$_queue_sendSettingsAnalyticsIfNeeded
-+ _objc_msgSend$_sendSnapshotWithBasePayload:silencedBySectionID:appRowSectionIDs:appRowPayloads:topicRowSectionIDs:topicRowPayloads:deviceEventUsed:defaults:
-+ _objc_msgSend$_setSectionInfo:forSectionID:source:
-+ _objc_msgSend$_setSectionInfoNoteSettingsChanged:forSectionID:source:
-+ _objc_msgSend$_shouldSendSnapshotAtDate:lastSentDate:
-+ _objc_msgSend$_topicRowPayloadForTopic:parentAllowsNotifications:
-+ _objc_msgSend$_userSettingsCopyForSectionID:
-+ _objc_msgSend$_volumeBucketForCount:
-+ _objc_msgSend$bundleRecordWithBundleIdentifier:allowPlaceholder:error:
-+ _objc_msgSend$calendarWithIdentifier:
-+ _objc_msgSend$categoriesForBundleIDs:completionHandler:
-+ _objc_msgSend$copySectionSettingsFromSectionID:toSectionID:withHandler:
-+ _objc_msgSend$hasEverBeenUserChanged
-+ _objc_msgSend$hasPrefix:
-+ _objc_msgSend$isCollectingAnySettingsEvent
-+ _objc_msgSend$isDate:inSameDayAsDate:
-+ _objc_msgSend$isDeliveredQuietly
-+ _objc_msgSend$lastAnalyticsSnapshotDate
-+ _objc_msgSend$lastSettingChangeDate
-+ _objc_msgSend$lastSettingSource
-+ _objc_msgSend$sendDeviceSnapshotIfNeededWithSectionInfo:rawSectionInfo:bulletinCountsBySectionID:globalSettings:defaults:
-+ _objc_msgSend$setHasEverBeenUserChanged:
-+ _objc_msgSend$setLastAnalyticsSnapshotDate:
-+ _objc_msgSend$setLastSettingChangeDate:
-+ _objc_msgSend$setLastSettingSource:
-+ _objc_msgSend$setSectionInfo:forSectionID:source:withHandler:
-+ _objc_msgSend$shouldSendDeviceSnapshotWithDefaults:
-+ _objc_msgSend$timeZoneForSecondsFromGMT:
 - GCC_except_table106
 - GCC_except_table115
 - GCC_except_table124

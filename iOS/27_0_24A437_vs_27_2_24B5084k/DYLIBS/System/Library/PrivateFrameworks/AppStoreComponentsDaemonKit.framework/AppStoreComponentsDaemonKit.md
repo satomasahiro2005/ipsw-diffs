@@ -2,105 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/AppStoreComponentsDaemonKit.framework/AppStoreComponentsDaemonKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x11a250` | `0x11fa30` | **`+0x57e0`** |
+| `__DATA.__bss` | `0x5620` | `0x6420` | **`+0xe00`** |
+| `__TEXT.__const` | `0x7190` | `0x7a48` | **`+0x8b8`** |
+| `__TEXT.__eh_frame` | `0x821c` | `0x878c` | **`+0x570`** |
+| `__TEXT.__swift5_typeref` | `0x359b` | `0x3874` | **`+0x2d9`** |
+| `__TEXT.__unwind_info` | `0x3ab8` | `0x3cd0` | **`+0x218`** |
+| `__AUTH_CONST.__const` | `0x6248` | `0x6450` | **`+0x208`** |
+| `__AUTH_CONST.__auth_got` | `0x1e90` | `0x2070` | **`+0x1e0`** |
+| `__DATA.__data` | `0x1ae0` | `0x1c70` | **`+0x190`** |
+| `__TEXT.__cstring` | `0x71ac` | `0x7324` | **`+0x178`** |
+| `__TEXT.__swift5_reflstr` | `0x1260` | `0x1357` | **`+0xf7`** |
+| `__TEXT.__swift5_assocty` | `0x708` | `0x7e8` | **`+0xe0`** |
+| `__TEXT.__swift5_fieldmd` | `0x1794` | `0x186c` | **`+0xd8`** |
+| `__TEXT.__constg_swiftt` | `0x1b98` | `0x1c68` | **`+0xd0`** |
+| `__DATA_CONST.__got` | `0xd30` | `0xdb0` | **`+0x80`** |
+| `__TEXT.__swift5_proto` | `0x44c` | `0x4bc` | **`+0x70`** |
+| `__TEXT.__swift5_capture` | `0x1ac4` | `0x1b30` | **`+0x6c`** |
+| `__TEXT.__swift_as_entry` | `0x1f8` | `0x234` | **`+0x3c`** |
+| `__TEXT.__swift_as_ret` | `0x29c` | `0x2d8` | **`+0x3c`** |
+| `__TEXT.__swift_as_cont` | `0x584` | `0x5bc` | **`+0x38`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1fb0` | `0x1fe0` | **`+0x30`** |
+| `__DATA.__common` | `0x60` | `0x78` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0x240` | `0x254` | **`+0x14`** |
+| `__AUTH_CONST.__objc_const` | `0xaa78` | `0xaa88` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x4b10` | `0x4b20` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -27.0.46.2.1
--  __TEXT.__text: 0x10d720
--  __TEXT.__objc_methlist: 0x4b10
--  __TEXT.__const: 0x7190
--  __TEXT.__cstring: 0x71ac
 +27.1.7.0.0
-+  __TEXT.__text: 0x112a04
-+  __TEXT.__objc_methlist: 0x4b20
-+  __TEXT.__const: 0x7a48
-+  __TEXT.__cstring: 0x7324
-   __TEXT.__oslogstring: 0x1e57
-   __TEXT.__gcc_except_tab: 0x58
-   __TEXT.__dlopen_cstrs: 0x8e
--  __TEXT.__constg_swiftt: 0x1b98
--  __TEXT.__swift5_typeref: 0x359b
-+  __TEXT.__constg_swiftt: 0x1c68
-+  __TEXT.__swift5_typeref: 0x3874
-   __TEXT.__swift5_builtin: 0x1f4
--  __TEXT.__swift5_reflstr: 0x1260
--  __TEXT.__swift5_fieldmd: 0x1794
--  __TEXT.__swift5_assocty: 0x708
--  __TEXT.__swift5_proto: 0x44c
--  __TEXT.__swift5_types: 0x240
--  __TEXT.__swift5_capture: 0x1ac4
--  __TEXT.__swift_as_entry: 0x1f8
--  __TEXT.__swift_as_ret: 0x29c
--  __TEXT.__swift_as_cont: 0x584
-+  __TEXT.__swift5_reflstr: 0x1357
-+  __TEXT.__swift5_fieldmd: 0x186c
-+  __TEXT.__swift5_assocty: 0x7e8
-+  __TEXT.__swift5_proto: 0x4bc
-+  __TEXT.__swift5_types: 0x254
-+  __TEXT.__swift5_capture: 0x1b30
-+  __TEXT.__swift_as_entry: 0x234
-+  __TEXT.__swift_as_ret: 0x2d8
-+  __TEXT.__swift_as_cont: 0x5bc
-   __TEXT.__swift5_mpenum: 0x24
-   __TEXT.__swift5_protos: 0x48
--  __TEXT.__unwind_info: 0x4730
--  __TEXT.__eh_frame: 0x821c
-+  __TEXT.__unwind_info: 0x4938
-+  __TEXT.__eh_frame: 0x878c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x1e0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1fb0
-+  __DATA_CONST.__objc_selrefs: 0x1fe0
-   __DATA_CONST.__objc_protorefs: 0x158
-   __DATA_CONST.__objc_superrefs: 0x200
--  __DATA_CONST.__got: 0xd30
--  __AUTH_CONST.__const: 0x6248
-+  __DATA_CONST.__got: 0xdb0
-+  __AUTH_CONST.__const: 0x6450
-   __AUTH_CONST.__cfstring: 0x38c0
--  __AUTH_CONST.__objc_const: 0xaa78
--  __AUTH_CONST.__auth_got: 0x1e90
-+  __AUTH_CONST.__objc_const: 0xaa88
-+  __AUTH_CONST.__auth_got: 0x2070
-   __AUTH.__objc_data: 0xcb8
-   __AUTH.__data: 0x3b0
-   __DATA.__objc_ivar: 0x3e4
--  __DATA.__data: 0x1ae0
--  __DATA.__common: 0x60
-+  __DATA.__data: 0x1c70
-+  __DATA.__common: 0x78
-   __DATA_DIRTY.__objc_data: 0x1e18
-   __DATA_DIRTY.__data: 0x2510
-   __DATA_DIRTY.__bss: 0x1680
-
-   - /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
-   - /System/Library/PrivateFrameworks/InstalledContentLibrary.framework/InstalledContentLibrary
-   - /System/Library/PrivateFrameworks/JetEngine.framework/JetEngine
 -  - /System/Library/PrivateFrameworks/NanoRegistry.framework/NanoRegistry
 +  - /System/Library/PrivateFrameworks/MarketplaceIntents.framework/MarketplaceIntents
 +  - /System/Library/PrivateFrameworks/PairedDeviceRegistry.framework/PairedDeviceRegistry
-   - /System/Library/PrivateFrameworks/SignpostSupport.framework/SignpostSupport
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-+  - /System/Library/PrivateFrameworks/_MarketplaceIntents_AppIntents.framework/_MarketplaceIntents_AppIntents
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libbsm.0.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/PrivateFrameworks/_MarketplaceIntents_AppIntents.framework/_MarketplaceIntents_AppIntents
+
 -  Functions: 4664
--  Symbols:   4762
+-  Symbols:   4060
 -  CStrings:  1069
 +  Functions: 4797
-+  Symbols:   4841
++  Symbols:   4133
 +  CStrings:  1076
- 
 Symbols:
 + +[ASCMobileGestalt activePairedDevicePairingID]
 + _OBJC_CLASS_$_PDRRegistry
@@ -142,14 +92,6 @@ Symbols:
 + _associated conformance 27AppStoreComponentsDaemonKit24InstallApplicationIntentV0A7Intents0aH0AaD09_SupportsA12Dependencies
 + _associated conformance 27AppStoreComponentsDaemonKit24InstallApplicationIntentV0A7Intents0aH0AaD24PersistentlyIdentifiable
 + _get_witness_table 10AppIntents21IntentResultContainerVys5NeverOA3EGAA0cD0HPyHC
-+ _objc_msgSend$active
-+ _objc_msgSend$activePairedDevicePairingID
-+ _objc_msgSend$devices
-+ _objc_msgSend$final
-+ _objc_msgSend$getActivePairedDeviceIncludingAltAccount
-+ _objc_msgSend$installApp:onDeviceWithPairingID:withCompletionHandler:
-+ _objc_msgSend$paired
-+ _objc_msgSend$valueForProperty:
 + _swift_dynamicCastClass
 + _swift_getOpaqueTypeConformance2
 + _symbolic $s10AppIntents0A6EntityP
@@ -189,8 +131,6 @@ Symbols:
 + _type_layout_string 27AppStoreComponentsDaemonKit24InstallApplicationIntentV
 - _NRDevicePropertySystemVersion
 - _OBJC_CLASS_$_NRPairedDeviceRegistry
-- _objc_msgSend$getActivePairedDevice
-- _objc_msgSend$installApp:onPairedDevice:withCompletionHandler:
 - _symbolic So8NRDeviceC
 - _symbolic So8NRDeviceCSgyYbc
 CStrings:

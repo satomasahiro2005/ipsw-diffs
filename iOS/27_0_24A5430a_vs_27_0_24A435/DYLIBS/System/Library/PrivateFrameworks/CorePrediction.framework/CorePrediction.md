@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CorePrediction.framework/CorePrediction`
 
-```diff
+### Section Size Changes
 
- 117.0.0.0.0
--  __TEXT.__text: 0x49670
-+  __TEXT.__text: 0x496c0
-   __TEXT.__objc_methlist: 0x844
-   __TEXT.__gcc_except_tab: 0x3400
-   __TEXT.__cstring: 0x4c5b
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x49670` | `0x496c0` | **`+0x50`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN13CPMLOnlineSvm9ReprocessEv : 772 -> 776
 ~ __ZNSt3__16vectorIdNS_9allocatorIdEEE6resizeEm : 284 -> 288

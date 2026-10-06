@@ -2,117 +2,62 @@
 
 > `/System/Library/PrivateFrameworks/EmailDaemon.framework/EmailDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x29199c` | `0x297cf0` | **`+0x6354`** |
+| `__TEXT.__gcc_except_tab` | `0x4a5ec` | `0x4aec4` | **`+0x8d8`** |
+| `__TEXT.__cstring` | `0x28fca` | `0x2976a` | **`+0x7a0`** |
+| `__AUTH_CONST.__const` | `0x784b` | `0x7c03` | **`+0x3b8`** |
+| `__TEXT.__unwind_info` | `0x11220` | `0x114d8` | **`+0x2b8`** |
+| `__AUTH_CONST.__objc_const` | `0x22648` | `0x228d0` | **`+0x288`** |
+| `__AUTH_CONST.__cfstring` | `0xfce0` | `0xff60` | **`+0x280`** |
+| `__TEXT.__oslogstring` | `0x1b3bf` | `0x1b614` | **`+0x255`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb130` | `0xb380` | **`+0x250`** |
+| `__TEXT.__objc_methlist` | `0x133f4` | `0x13634` | **`+0x240`** |
+| `__DATA.__bss` | `0x67c0` | `0x6990` | **`+0x1d0`** |
+| `__TEXT.__const` | `0x524c` | `0x53cc` | **`+0x180`** |
+| `__AUTH.__objc_data` | `0xb98` | `0xcd8` | **`+0x140`** |
+| `__DATA_CONST.__const` | `0x94e0` | `0x95d0` | **`+0xf0`** |
+| `__TEXT.__swift5_reflstr` | `0x10df` | `0x114f` | **`+0x70`** |
+| `__DATA_CONST.__got` | `0x1e70` | `0x1ed0` | **`+0x60`** |
+| `__DATA_DIRTY.__data` | `0x1b00` | `0x1aa0` | **`-0x60`** |
+| `__TEXT.__dlopen_cstrs` | `0x3bc` | `0x415` | **`+0x59`** |
+| `__DATA.__data` | `0x39c0` | `0x3a10` | **`+0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x5c78` | `0x5c28` | **`-0x50`** |
+| `__TEXT.__swift5_capture` | `0x830` | `0x880` | **`+0x50`** |
+| `__TEXT.__swift5_fieldmd` | `0x1664` | `0x16b0` | **`+0x4c`** |
+| `__TEXT.__constg_swiftt` | `0x10ec` | `0x1128` | **`+0x3c`** |
+| `__TEXT.__eh_frame` | `0x16b8` | `0x16f0` | **`+0x38`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x270` | `0x2a0` | **`+0x30`** |
+| `__TEXT.__swift5_builtin` | `0x104` | `0x12c` | **`+0x28`** |
+| `__TEXT.__swift5_typeref` | `0x182f` | `0x1856` | **`+0x27`** |
+| `__DATA_CONST.__objc_arraydata` | `0x6b8` | `0x6d8` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x9e0` | `0x9f8` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x5d8` | `0x5f0` | **`+0x18`** |
+| `__DATA_DIRTY.__bss` | `0x1b80` | `0x1b98` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x248` | `0x260` | **`+0x18`** |
+| `__TEXT.__swift5_mpenum` | `0x10` | `0x28` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x147c` | `0x1490` | **`+0x14`** |
+| `__TEXT.__swift5_proto` | `0x39c` | `0x3a8` | **`+0xc`** |
+| `__AUTH.__data` | `0x388` | `0x390` | **`+0x8`** |
+| `__AUTH_CONST.__auth_got` | `0x1818` | `0x1820` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x1d8` | `0x1e0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3901.100.1.2.14
--  __TEXT.__text: 0x286398
--  __TEXT.__objc_methlist: 0x133f4
--  __TEXT.__const: 0x524c
--  __TEXT.__gcc_except_tab: 0x4a5ec
--  __TEXT.__cstring: 0x28fca
--  __TEXT.__oslogstring: 0x1b3bf
--  __TEXT.__dlopen_cstrs: 0x3bc
 +3901.200.34.0.0
-+  __TEXT.__text: 0x28c56c
-+  __TEXT.__objc_methlist: 0x13634
-+  __TEXT.__const: 0x53cc
-+  __TEXT.__gcc_except_tab: 0x4aec4
-+  __TEXT.__cstring: 0x2976a
-+  __TEXT.__oslogstring: 0x1b614
-+  __TEXT.__dlopen_cstrs: 0x415
-   __TEXT.__ustring: 0x26
--  __TEXT.__constg_swiftt: 0x10ec
--  __TEXT.__swift5_typeref: 0x182f
--  __TEXT.__swift5_builtin: 0x104
--  __TEXT.__swift5_reflstr: 0x10df
--  __TEXT.__swift5_fieldmd: 0x1664
--  __TEXT.__swift5_assocty: 0x248
--  __TEXT.__swift5_proto: 0x39c
--  __TEXT.__swift5_types: 0x1d8
--  __TEXT.__swift5_capture: 0x830
-+  __TEXT.__swift5_typeref: 0x1856
-+  __TEXT.__constg_swiftt: 0x1128
-+  __TEXT.__swift5_builtin: 0x12c
-+  __TEXT.__swift5_reflstr: 0x114f
-+  __TEXT.__swift5_fieldmd: 0x16b0
-+  __TEXT.__swift5_assocty: 0x260
-+  __TEXT.__swift5_proto: 0x3a8
-+  __TEXT.__swift5_types: 0x1e0
-+  __TEXT.__swift5_capture: 0x880
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift_as_entry: 0x40
-   __TEXT.__swift_as_ret: 0x48
-   __TEXT.__swift_as_cont: 0x60
--  __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x124d8
--  __TEXT.__eh_frame: 0x16c0
-+  __TEXT.__swift5_mpenum: 0x28
-+  __TEXT.__unwind_info: 0x127e8
-+  __TEXT.__eh_frame: 0x16f8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x94e0
--  __DATA_CONST.__objc_classlist: 0x9e0
-+  __DATA_CONST.__const: 0x95d0
-+  __DATA_CONST.__objc_classlist: 0x9f8
-   __DATA_CONST.__objc_catlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x430
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb130
-+  __DATA_CONST.__objc_selrefs: 0xb380
-   __DATA_CONST.__objc_protorefs: 0x128
--  __DATA_CONST.__objc_superrefs: 0x5d8
--  __DATA_CONST.__objc_arraydata: 0x6b8
--  __DATA_CONST.__got: 0x1e70
--  __AUTH_CONST.__const: 0x784b
--  __AUTH_CONST.__cfstring: 0xfce0
--  __AUTH_CONST.__objc_const: 0x22648
-+  __DATA_CONST.__objc_superrefs: 0x5f0
-+  __DATA_CONST.__objc_arraydata: 0x6d8
-+  __DATA_CONST.__got: 0x1ed0
-+  __AUTH_CONST.__const: 0x7c03
-+  __AUTH_CONST.__cfstring: 0xff60
-+  __AUTH_CONST.__objc_const: 0x228d0
-   __AUTH_CONST.__objc_intobj: 0xa38
--  __AUTH_CONST.__objc_arrayobj: 0x270
-+  __AUTH_CONST.__objc_arrayobj: 0x2a0
-   __AUTH_CONST.__objc_dictobj: 0xa0
-   __AUTH_CONST.__objc_doubleobj: 0x40
--  __AUTH_CONST.__auth_got: 0x1818
--  __AUTH.__objc_data: 0xb98
--  __AUTH.__data: 0x388
--  __DATA.__objc_ivar: 0x147c
--  __DATA.__data: 0x39c0
-+  __AUTH_CONST.__auth_got: 0x1820
-+  __AUTH.__objc_data: 0xcd8
-+  __AUTH.__data: 0x390
-+  __DATA.__objc_ivar: 0x1490
-+  __DATA.__data: 0x3a10
-   __DATA.__crash_info: 0x148
-   __DATA.__common: 0x8
--  __DATA_DIRTY.__objc_data: 0x5c78
--  __DATA_DIRTY.__data: 0x1b00
--  __DATA_DIRTY.__bss: 0x1b80
-+  __DATA_DIRTY.__objc_data: 0x5c28
-+  __DATA_DIRTY.__data: 0x1aa0
-+  __DATA_DIRTY.__bss: 0x1b98
-   __DATA_DIRTY.__common: 0x90
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11571
--  Symbols:   20005
+-  Symbols:   15172
 -  CStrings:  5480
 +  Functions: 11686
-+  Symbols:   20211
++  Symbols:   15306
 +  CStrings:  5539
- 
 Symbols:
 + +[EDAccountAuthentication log]
 + +[EDAccountDeletionDiagnostics _descriptionForAccount:]
@@ -274,86 +219,6 @@ Symbols:
 + _getUNNotificationRequestClass.softClass
 + _getUNTimeIntervalNotificationTriggerClass.softClass
 + _getUNUserNotificationCenterClass.softClass
-+ _objc_msgSend$_descriptionForAccount:
-+ _objc_msgSend$_hostnamesHaveSameTopLevelDomain:deliveryAccount:
-+ _objc_msgSend$_init
-+ _objc_msgSend$_isEnabled
-+ _objc_msgSend$_lastWords:inString:
-+ _objc_msgSend$_listIDString:
-+ _objc_msgSend$_mailboxURLSubpredicatesForPredicate:mailboxPersistence:
-+ _objc_msgSend$_normalizedAddress:
-+ _objc_msgSend$_notificationContentForAccountDescription:deletionTime:
-+ _objc_msgSend$_persistentKeyForHeaders:
-+ _objc_msgSend$_requestIdentifierForAccount:
-+ _objc_msgSend$_senderString:
-+ _objc_msgSend$_shouldAutoUpdateDeliveryAccount:forChangedReceivingAccount:
-+ _objc_msgSend$_updateDeliveryAccountCredentialIfNecessaryForAccountWithAccount:
-+ _objc_msgSend$_updateDeliveryAccountCredentialIfNecessaryForReceivingAccount:
-+ _objc_msgSend$accountFactory
-+ _objc_msgSend$accountWithSystemAccount:
-+ _objc_msgSend$addNotificationRequest:withCompletionHandler:
-+ _objc_msgSend$authenticationStateForAuthenticationResult:forMessage:fromSender:trustingServer:
-+ _objc_msgSend$batchDidEnd:items:error:
-+ _objc_msgSend$canAuthenticateWithCurrentCredentials
-+ _objc_msgSend$commandForMessage:mailToOnly:dkimVerified:
-+ _objc_msgSend$componentsWithURL:
-+ _objc_msgSend$controlCharacterSet
-+ _objc_msgSend$didRequestRedonationForItems:
-+ _objc_msgSend$didUpdateMessagesAndRecordDonations:trigger:
-+ _objc_msgSend$dkimSignatureHeaders
-+ _objc_msgSend$enumerateSubstringsInRange:options:usingBlock:
-+ _objc_msgSend$firstSenderAddress
-+ _objc_msgSend$futureWithBlock:
-+ _objc_msgSend$hasPasswordCredential
-+ _objc_msgSend$idnaEncodedAddressForAddress:
-+ _objc_msgSend$illegalCharacterSet
-+ _objc_msgSend$initWithBundleIdentifier:
-+ _objc_msgSend$initWithHeaders:
-+ _objc_msgSend$initWithMutableDictionary:
-+ _objc_msgSend$initWithPassword:
-+ _objc_msgSend$invertedSet
-+ _objc_msgSend$listID
-+ _objc_msgSend$listUnsubscribeCommands
-+ _objc_msgSend$listUnsubscribePostContent
-+ _objc_msgSend$localTimeZone
-+ _objc_msgSend$mailtoUnsubscribeCommandWithListID:address:sender:senderForUnsubscribeMessage:subject:body:accountObjectID:headerUnsubscribeTypes:
-+ _objc_msgSend$markMessagesNeedingDownloadToReindex:
-+ _objc_msgSend$notificationCenter
-+ _objc_msgSend$oneClickUnsubscribeCommandWithListID:sender:senderForUnsubscribeMessage:URL:postContent:headerUnsubscribeTypes:
-+ _objc_msgSend$password
-+ _objc_msgSend$radarURLWithBuilder:
-+ _objc_msgSend$rangeOfCharacterFromSet:
-+ _objc_msgSend$receivingAccountFromMessage:
-+ _objc_msgSend$recordMessagesNeedToBeDonated:indexingType:trigger:
-+ _objc_msgSend$regularExpressionWithPattern:options:error:
-+ _objc_msgSend$requestWithIdentifier:content:trigger:destinations:
-+ _objc_msgSend$resolvedPolicyForIMAPHost:
-+ _objc_msgSend$reverseObjectEnumerator
-+ _objc_msgSend$savePersistentAccount
-+ _objc_msgSend$searchableMessageForBaseMessage:htmlContent:hasCompleteData:isEncrypted:includeEncryptedBody:
-+ _objc_msgSend$sender
-+ _objc_msgSend$senderForUnsubscribeMessage
-+ _objc_msgSend$setAppendSysdiagnoseHowTo:
-+ _objc_msgSend$setBody:
-+ _objc_msgSend$setClassification:
-+ _objc_msgSend$setComponent:
-+ _objc_msgSend$setCredential:
-+ _objc_msgSend$setDefaultActionURL:
-+ _objc_msgSend$setKeywords:
-+ _objc_msgSend$setRadarDescription:
-+ _objc_msgSend$setReproducibility:
-+ _objc_msgSend$sharedDictionaryWithIdentifier:
-+ _objc_msgSend$shouldIgnoreMessageWithHeaders:
-+ _objc_msgSend$signedHeaderFields
-+ _objc_msgSend$stringByReplacingMatchesInString:options:range:withTemplate:
-+ _objc_msgSend$stringFromDate:timeZone:formatOptions:
-+ _objc_msgSend$test_drain
-+ _objc_msgSend$thinOldEvents
-+ _objc_msgSend$toRecipients
-+ _objc_msgSend$triggerWithTimeInterval:repeats:
-+ _objc_msgSend$verificationContextForMessageData:error:
-+ _objc_msgSend$verifyMessageWithContext:options:error:
-+ _objc_msgSend$whitespaceAndNewlineCharacterSet
 + _sharedInstance.sharedInstance
 + _symbolic Say_____G 17IndexingAnalytics9ItemEventO13UpdateTriggerO
 + _symbolic _____ 17IndexingAnalytics9ItemEventO13UpdateTriggerO
@@ -388,14 +253,6 @@ Symbols:
 - ___76-[EDInteractionEventLogLegacyPersistentBitsProvider _findExistingSaltError:]_block_invoke
 - ___block_descriptor_80_ea8_32s40s48s56s64r_e41_B16?0"EDPersistenceDatabaseConnection"8ls32l8r64l8s40l8s48l8s56l8
 - ___swift_memcpy2_1
-- _objc_msgSend$_oldSalt
-- _objc_msgSend$batchDidEnd:error:
-- _objc_msgSend$defaultPolicy
-- _objc_msgSend$defaultPolicyForIMAPHost:
-- _objc_msgSend$didDonateItems:
-- _objc_msgSend$didFailToDonateItems:
-- _objc_msgSend$didUpdateMessagesAndRecordDonations:
-- _objc_msgSend$recordMessagesNeedToBeDonated:indexingType:
 CStrings:
 + " NOT IN\n       ( "
 + "$1$2"

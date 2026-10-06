@@ -2,35 +2,26 @@
 
 > `/usr/lib/libNFC_HAL.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17edc` | `0x196b8` | **`+0x17dc`** |
+| `__TEXT.__cstring` | `0x2dc6` | `0x3029` | **`+0x263`** |
+| `__TEXT.__oslogstring` | `0x24fc` | `0x2644` | **`+0x148`** |
+| `__DATA_CONST.__const` | `0x268` | `0x280` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x248` | `0x258` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
- 370.42.1.0.0
--  __TEXT.__text: 0x17edc
-+  __TEXT.__text: 0x196b8
-   __TEXT.__const: 0xf0
--  __TEXT.__cstring: 0x2dc6
--  __TEXT.__oslogstring: 0x24fc
--  __TEXT.__unwind_info: 0x248
-+  __TEXT.__cstring: 0x3029
-+  __TEXT.__oslogstring: 0x2644
-+  __TEXT.__unwind_info: 0x258
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x268
-+  __DATA_CONST.__const: 0x280
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x100
-   __AUTH_CONST.__cfstring: 0x360
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libnfshared.dylib
 -  Functions: 178
 -  Symbols:   273
 -  CStrings:  644
 +  Functions: 190
 +  Symbols:   283
 +  CStrings:  676
- 
 Symbols:
 + _NFHardwareGPIOGetBootStopState
 + _NFHardwareGPIORegisterBootStopInterruptCallback

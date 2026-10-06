@@ -2,116 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/PasswordManagerUI.framework/PasswordManagerUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x53f60c` | `0x54e758` | **`+0xf14c`** |
+| `__DATA_DIRTY.__data` | `0x2fd8` | `0xb288` | **`+0x82b0`** |
+| `__AUTH.__data` | `0xbb08` | `0x5d58` | **`-0x5db0`** |
+| `__DATA_DIRTY.__objc_data` | `0xed0` | `0x39c0` | **`+0x2af0`** |
+| `__AUTH.__objc_data` | `0x3358` | `0x870` | **`-0x2ae8`** |
+| `__TEXT.__swift5_typeref` | `0x72d44` | `0x7556a` | **`+0x2826`** |
+| `__DATA.__data` | `0x12f20` | `0x110b8` | **`-0x1e68`** |
+| `__DATA_DIRTY.__bss` | `—` | `0xb30` | **`+0xb30`** |
+| `__DATA.__bss` | `0x1fbb8` | `0x1f390` | **`-0x828`** |
+| `__TEXT.__cstring` | `0x1178d` | `0x11f7d` | **`+0x7f0`** |
+| `__TEXT.__const` | `0x360a4` | `0x367b4` | **`+0x710`** |
+| `__AUTH_CONST.__const` | `0x198a8` | `0x19bc8` | **`+0x320`** |
+| `__TEXT.__eh_frame` | `0x11dc4` | `0x11fd0` | **`+0x20c`** |
+| `__TEXT.__constg_swiftt` | `0xcf18` | `0xd100` | **`+0x1e8`** |
+| `__DATA.__common` | `0x2f0` | `0x118` | **`-0x1d8`** |
+| `__DATA_DIRTY.__common` | `—` | `0x1d8` | **`+0x1d8`** |
+| `__TEXT.__unwind_info` | `0xe590` | `0xe768` | **`+0x1d8`** |
+| `__TEXT.__swift5_reflstr` | `0xd7cb` | `0xd95b` | **`+0x190`** |
+| `__TEXT.__swift5_fieldmd` | `0xa3b0` | `0xa4e0` | **`+0x130`** |
+| `__TEXT.__swift5_capture` | `0x64f4` | `0x6600` | **`+0x10c`** |
+| `__AUTH_CONST.__objc_const` | `0xb280` | `0xb370` | **`+0xf0`** |
+| `__TEXT.__oslogstring` | `0x36c9` | `0x3679` | **`-0x50`** |
+| `__TEXT.__swift5_assocty` | `0x28b8` | `0x2900` | **`+0x48`** |
+| `__TEXT.__objc_methlist` | `0x2804` | `0x283c` | **`+0x38`** |
+| `__AUTH_CONST.__auth_got` | `0x41d8` | `0x41f8` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x2d28` | `0x2d48` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3238` | `0x3258` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0xc78` | `0xc94` | **`+0x1c`** |
+| `__TEXT.__swift5_proto` | `0xe44` | `0xe58` | **`+0x14`** |
+| `__DATA_CONST.__const` | `0xa80` | `0xa90` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0xa24` | `0xa34` | **`+0x10`** |
+| `__TEXT.__swift_as_ret` | `0x5ac` | `0x5bc` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x544` | `0x550` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x53f60c
--  __TEXT.__objc_methlist: 0x2804
--  __TEXT.__cstring: 0x1178d
--  __TEXT.__const: 0x360a4
-+  __TEXT.__text: 0x54e758
-+  __TEXT.__objc_methlist: 0x283c
-+  __TEXT.__cstring: 0x11f7d
-+  __TEXT.__const: 0x367b4
-   __TEXT.__gcc_except_tab: 0x4c
-   __TEXT.__dlopen_cstrs: 0x9a
--  __TEXT.__oslogstring: 0x36c9
-+  __TEXT.__oslogstring: 0x3679
-   __TEXT.__ustring: 0x76
--  __TEXT.__constg_swiftt: 0xcf18
--  __TEXT.__swift5_typeref: 0x72d44
-+  __TEXT.__constg_swiftt: 0xd100
-+  __TEXT.__swift5_typeref: 0x7556a
-   __TEXT.__swift5_builtin: 0x35c
--  __TEXT.__swift5_reflstr: 0xd7cb
--  __TEXT.__swift5_fieldmd: 0xa3b0
--  __TEXT.__swift5_assocty: 0x28b8
--  __TEXT.__swift5_capture: 0x64f4
--  __TEXT.__swift5_proto: 0xe44
--  __TEXT.__swift5_types: 0xa24
--  __TEXT.__swift_as_entry: 0x544
--  __TEXT.__swift_as_ret: 0x5ac
--  __TEXT.__swift_as_cont: 0xc78
-+  __TEXT.__swift5_reflstr: 0xd95b
-+  __TEXT.__swift5_fieldmd: 0xa4e0
-+  __TEXT.__swift5_assocty: 0x2900
-+  __TEXT.__swift5_capture: 0x6600
-+  __TEXT.__swift5_proto: 0xe58
-+  __TEXT.__swift5_types: 0xa34
-+  __TEXT.__swift_as_entry: 0x550
-+  __TEXT.__swift_as_ret: 0x5bc
-+  __TEXT.__swift_as_cont: 0xc94
-   __TEXT.__swift5_mpenum: 0xd4
-   __TEXT.__swift5_protos: 0x6c
--  __TEXT.__unwind_info: 0xe590
--  __TEXT.__eh_frame: 0x11dc4
-+  __TEXT.__unwind_info: 0xe768
-+  __TEXT.__eh_frame: 0x11fd0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xa80
-+  __DATA_CONST.__const: 0xa90
-   __DATA_CONST.__objc_classlist: 0x418
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x270
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3238
-+  __DATA_CONST.__objc_selrefs: 0x3258
-   __DATA_CONST.__objc_protorefs: 0x130
-   __DATA_CONST.__objc_superrefs: 0x30
--  __DATA_CONST.__got: 0x2d28
--  __AUTH_CONST.__const: 0x198a8
-+  __DATA_CONST.__got: 0x2d48
-+  __AUTH_CONST.__const: 0x19bc8
-   __AUTH_CONST.__cfstring: 0x420
--  __AUTH_CONST.__objc_const: 0xb280
--  __AUTH_CONST.__auth_got: 0x41d8
--  __AUTH.__objc_data: 0x3358
--  __AUTH.__data: 0xbb08
-+  __AUTH_CONST.__objc_const: 0xb370
-+  __AUTH_CONST.__auth_got: 0x41f8
-+  __AUTH.__objc_data: 0x870
-+  __AUTH.__data: 0x5d58
-   __DATA.__objc_ivar: 0x80
--  __DATA.__data: 0x12f20
--  __DATA.__bss: 0x1fbb8
--  __DATA.__common: 0x2f0
--  __DATA_DIRTY.__objc_data: 0xed0
--  __DATA_DIRTY.__data: 0x2fd8
-+  __DATA.__data: 0x110b8
-+  __DATA.__bss: 0x1f390
-+  __DATA.__common: 0x118
-+  __DATA_DIRTY.__objc_data: 0x39c0
-+  __DATA_DIRTY.__data: 0xb288
-+  __DATA_DIRTY.__bss: 0xb30
-+  __DATA_DIRTY.__common: 0x1d8
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices
+-7625.1.20.10.3
++7625.1.22.10.3
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 22555
--  Symbols:   14692
--  CStrings:  1576
+-  Symbols:   8664
+-  CStrings:  1544
 +  Functions: 22753
-+  Symbols:   14791
-+  CStrings:  1591
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __DATA.__objc_ivar : content changed
++  Symbols:   8733
++  CStrings:  1559
 Symbols:
 + -[PMAuthorizationViewController requestPaneViewController:deliverCredentialToClient:error:]
 + -[PMAuthorizationViewController requestPaneViewControllerDismiss:]
@@ -144,11 +85,6 @@ Symbols:
 + _keypath_set.17Tm
 + _keypath_set.37Tm
 + _keypath_set.399Tm
-+ _objc_msgSend$authorizationViewController:deliverCredentialToClient:error:
-+ _objc_msgSend$authorizationViewControllerDismiss:
-+ _objc_msgSend$requestPaneViewController:deliverCredentialToClient:error:
-+ _objc_msgSend$requestPaneViewControllerDismiss:
-+ _objc_msgSend$setUsesElementActionClassifier:
 + _symbolic SDySS_____G 17PasswordManagerUI36PMAutomaticSecurityUpgradesViewModelC17ResultSectionTypeO
 + _symbolic Say_____G 17PasswordManagerUI36PMAutomaticSecurityUpgradesViewModelC13ResultSectionV
 + _symbolic _____ 17PasswordManagerUI011PMAutomaticA19ChangeAlertModifierV
@@ -303,7 +239,6 @@ Symbols:
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOy015PasswordManagerB009PMPlatterC0VyAA6VStackVyAA12TupleContentVyANyAPyAA08ModifiedN0VyARyARyAA012_ConditionalN0VyATyATyAcAE19allowsGaugeResizingyQrSbFQOyARyAcAE10gaugeStyleyQrqd__AA0rU0Rd__lFQOyAA0R0VyAA05EmptyC0VA_A_A_G_AA025AccessoryCircularCapacityrU0VQo_AA30_EnvironmentKeyWritingModifierVyAA08AnyShapeU0VSgGG_Qo_AcAEAUyQrSbFQOyAcAE08progresscU0yQrqd__AA08ProgresscU0Rd__lFQOyAA08ProgressC0VyA_A_G_AA0x8ProgresscU0VQo__Qo_GATyAA5ImageVA23_GGA24_GAA12_FrameLayoutVGAA011_ForegroundU8ModifierVyAA5ColorVGGAA14_PaddingLayoutVG_ARyAA4TextVA37_GA40_SgA41_SgQPGG_AA5GroupVyATyATyATyARyAcAE23matchedTransitionSource2id2inQrqd___AA9NamespaceV2IDVtSHRd__lFQOyAcAE06buttonU0yQrqd__AA015PrimitiveButtonU0Rd__lFQOyAcAE12buttonSizingyQrAA12ButtonSizingVFQOyAA6ButtonVyA40_G_Qo__AA023BorderedProminentButtonU0VQo__SSQo_AA31AccessibilityAttachmentModifierVGAcAEA55_yQrqd__AAA56_Rd__lFQOyA63__AA014BorderedButtonU0VQo_GSgA74_GATyANyAPyA74__A75_QPGGA_GGGQPGGG_Qo_HO
 - _keypath_set.388Tm
 - _keypath_set.71Tm
-- _objc_msgSend$isAutomaticPasswordChangeDomainIncludedInDenylist:
 - _swift_runtimeSupportsNoncopyableTypes
 - _symbolic ___________yAByAByABy_____y_____y_____yADyABy_____y_____AGG_____y_____GGSg______QPGG_ANSgQPGG_____GAIy_____GG_____GAYGADyAByABy__________ySbGGAYGSg______yABy_____y_____yANG______Qo______y_____GGA14_GQPGSgt 17PasswordManagerUI13PMAccountIconV 05SwiftC015ModifiedContentV AD6VStackV AD05TupleH0V AD6HStackV AD12ProgressViewV AD05EmptyM0V AD30_EnvironmentKeyWritingModifierV AD11ControlSizeO AD4TextV AD16_FlexFrameLayoutV AD0U9AlignmentO AD08_PaddingX0V AA08PMChangeA13OnWebsiteLinkV AD01_op9TransformR0V AD012_ConditionalH0V AD0M0PADE11buttonStyleyQrqd__AD20PrimitiveButtonStyleRd__lFQO AD6ButtonV AD16PlainButtonStyleV AD01_h5ShapeR0V AD7CapsuleV
 - _symbolic _____yAAyAAyAAyAAy_____y_____yAAyAAyAAyAAyAAyAAy_____y_____ySS_____yACy_____y__________y_____GAEG_ADyAE_____SgSgSgAEGQPGSg______yADyAE_____ySay_____GSS_____yAAy_____y_____y__________GG_____G_ACyAAy_____y_____y__________GG_____y_____SgGG______yA10_A10_GQPGQo_SgGAEG_Qo_QPGG_Qo______G_____G_____GA6_y_____GG_____GA31_G______yA11_yA34_y_____yytAAyA0_yA2_G_____ySbGGG______y_____GtGA34_yA35_yytA11_yA36_A36_GG_A35_yyt_____GA41_yACyAAyAAyA5_A38_G_____G______A42_ACyA52__A45_QPGSgQPGGtGG_A11_yA34_y______A35_yytAAyAAy_____yATyA5_G_SSQo______G_____ySbGGGtG_____y______Qo_GSgA34_yA59__A35_yyt_____yA5__SSQo_GtGSgtGQo__SSACyACy_____Sg_A5_SgQPGSg_A11_yA0_yA11_yA4_A4_GGA85_GSgADyAEA5_AEGSgQPGQo_A6_y_____y_____GSgGG_____y_____GGA6_y_____SgGGA50_G_____y_____y_______________GSgGG 7SwiftUI15ModifiedContentV AA4ViewPAAE11contextMenu16forSelectionType4menu13primaryActionQrqd__m_qd_0_Shyqd__GcyAJcSgtSHRd__AaDRd_0_r0_lFQO AeAE7toolbar7contentQrqd__yXE_tAA07ToolbarD0Rd__lFQO AeAE06scrollD10BackgroundyQrAA10VisibilityOFQO AA4ListV AA05TupleD0V AA7SectionV AA05EmptyE0V 015PasswordManagerB009PMPlatterE0V AZ0zE4TextV AZ33PMAutomaticSecurityUpgradePlatterV AeAE04listV9Separator_5edgesQrAQ_AA12VerticalEdgeO3SetVtFQO AA7ForEachV AZ24PMSecurityRecommendationV AeAE12swipeActions4edge15allowsFullSwipeAMQrAA14HorizontalEdgeO_Sbqd__yXEtAaDRd__lFQO AA5GroupV AA14NavigationLinkV AZ35PMSecurityRecommendationsAccountRowV s5NeverO AA16_FlexFrameLayoutV AA6ButtonV AA5LabelV AA4TextV AA5ImageV AA30_EnvironmentKeyWritingModifierV AA5ColorV AA012_ConditionalD0V AZ09PMContentT10SearchableV AZ16PMSearchTextSync33_7162D7BD199978AA78EC10092AA54552LLV AZ17PMOnDeleteCommandV 12CoreGraphics7CGFloatV AA011_AppearanceM8ModifierV AA0upD0V AA0P4ItemV AA32_EnvironmentKeyTransformModifierV AA0P9ItemGroupV AA0P11SearchProxyV AZ20PMPlatformRoleButtonV AZ31PMItemsDeleteConfirmationDialogV AA6SpacerV AA0P6SpacerV AeAE4helpyQrqd__SyRd__lFQO AA31AccessibilityAttachmentModifierV AA18_AnimationModifierV AA0pD7BuilderV10buildBlockyQrxAaNRzlFZQO AZ013PMAppSeamlessP15ItemPlaceholderV AeAE23matchedTransitionSource2id2inQrqd___AA9NamespaceV2IDVtSHRd__lFQO AZ08PMChangeX13OnWebsiteLinkV AA7BindingV AA8EditModeO AA21_TraitWritingModifierV AA0tV15SpacingTraitKeyV AA0tV7SpacingV AA16_OverlayModifierV AA0d11UnavailableE0V AA017SearchUnavailableD0VA32_V A108_11DescriptionV A108_7ActionsV
@@ -418,5 +353,4 @@ CStrings:
 - "Failed to update failed task in store: %@"
 - "On Automatic Password Change Denylist"
 - "Passwords (settings pane name)"
-
 ```

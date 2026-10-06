@@ -2,110 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/HearingUtilities.framework/HearingUtilities`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xadc2c` | `0xb6570` | **`+0x8944`** |
+| `__TEXT.__oslogstring` | `0xcaf3` | `0xeee3` | **`+0x23f0`** |
+| `__AUTH_CONST.__objc_const` | `0xb720` | `0xbdb0` | **`+0x690`** |
+| `__TEXT.__objc_methlist` | `0x8c04` | `0x919c` | **`+0x598`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5228` | `0x54f8` | **`+0x2d0`** |
+| `__TEXT.__cstring` | `0x5dad` | `0x6046` | **`+0x299`** |
+| `__TEXT.__unwind_info` | `0x29f8` | `0x2c38` | **`+0x240`** |
+| `__DATA_CONST.__const` | `0x35a0` | `0x36e8` | **`+0x148`** |
+| `__TEXT.__gcc_except_tab` | `0x2740` | `0x2858` | **`+0x118`** |
+| `__AUTH.__objc_data` | `0x1280` | `0x1320` | **`+0xa0`** |
+| `__AUTH_CONST.__cfstring` | `0x5c60` | `0x5d00` | **`+0xa0`** |
+| `__AUTH_CONST.__const` | `0x1578` | `0x1618` | **`+0xa0`** |
+| `__DATA.__objc_ivar` | `0x990` | `0x9ec` | **`+0x5c`** |
+| `__DATA_CONST.__got` | `0x738` | `0x760` | **`+0x28`** |
+| `__AUTH_CONST.__objc_intobj` | `0xa38` | `0xa50` | **`+0x18`** |
+| `__DATA.__bss` | `0x840` | `0x850` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x208` | `0x218` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x190` | `0x1a0` | **`+0x10`** |
+| `__TEXT.__const` | `0x7d4` | `0x7e4` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -527.0.0.0.0
--  __TEXT.__text: 0xadc2c sha256:bc61cf6a86e88bb405cf0e68f0e10fc209f541a0e6f397c0de0deb4dd173765f
--  __TEXT.__objc_methlist: 0x8c04 sha256:5330f18c33a904328abb30160f5ad8c27edc8ee6a2cbe4ad2312dfab4d1c4bbb
--  __TEXT.__const: 0x7d4 sha256:6f79bedb1ac927c438b98f9cc4bcadb4cbda606f33810b1bfddfe0bddb4550ec
 +530.0.0.0.0
-+  __TEXT.__text: 0xb6570 sha256:6480b525f291c5a1d7a88f283ba5e165701c0a84eba9b57ddaa95973b63c0f4e
-+  __TEXT.__objc_methlist: 0x919c sha256:261e71c74565f99e44c807c92d20f54512a7e265e84f356511c10598be3ee0ed
-+  __TEXT.__const: 0x7e4 sha256:cc782a0a1ed5d291a9dc2fb8449d41cd425ed0dd903824e2d336c97f959ef441
-   __TEXT.__dlopen_cstrs: 0x85c sha256:dfcf1b3c0ba8cde0f2c988b2fd148eeecfaef2e0836620ec21a2f91af5bb0dfe
--  __TEXT.__cstring: 0x5dad sha256:af72fa49bcd3b710be86cdd87ae6ced95eba62c8c583c8ed31e403ff986196e2
--  __TEXT.__swift5_typeref: 0x2a5 sha256:ef80d05f9fa8b6ef94114f13fabb06fdc9e8d61505232983ebdae3bf58024922
-+  __TEXT.__cstring: 0x6046 sha256:05ae4134fcc5a03dd2dee27978f7e167761cddee29a8625c2bb508de268ca9ac
-+  __TEXT.__swift5_typeref: 0x2a5 sha256:48b349f1e95f6f4b158d30f8bd0811a980842f2a4546888c5236cd3657ce466f
-   __TEXT.__swift5_capture: 0x1d8 sha256:93c2f4bedb86ee0d7ec318631a974f79a324aa57ed6164a07bced19d0f43651b
--  __TEXT.__constg_swiftt: 0x1a0 sha256:584fc09b3f967cbc97b84729bfe4bfd2916a9902bc6ca1af1bd10ff3bbb53c36
-+  __TEXT.__constg_swiftt: 0x1a0 sha256:e9afe68935cafd9dd051eac14283e7966d1c56bf4fef507e5da87930675ffca9
-   __TEXT.__swift5_reflstr: 0x104 sha256:45c084682a7232189ac3596b218030f98d97ace6d3037ced22278707eac18143
--  __TEXT.__swift5_fieldmd: 0x10c sha256:35c4761c173fe083450ab3f2ee67df536d4cedbe5fa21b12d6287b302008c6c8
--  __TEXT.__swift5_builtin: 0x14 sha256:5c6f0b8fc94d80e6b8f84151448ac1cb6379a9d10e92288e25856d14f301e9a6
--  __TEXT.__swift5_assocty: 0x30 sha256:0eb95e677f2b57786cd66828120b8b61d59f92b7a79d8579336524716acc4f4f
--  __TEXT.__swift5_proto: 0x14 sha256:8005b132f1e75258c446c3ce853778ac26124a2fb75f170508fee5df4a079c74
--  __TEXT.__swift5_types: 0x1c sha256:9fa7223dc02f932a08b74735c0c151114b2bacfb8864d69ee26561144377182b
--  __TEXT.__oslogstring: 0xcaf3 sha256:10dfc5c81b25bfbb50bacb5df8dd07a35d56915ed98548b94c811ff4f8a85227
--  __TEXT.__gcc_except_tab: 0x2740 sha256:ceacb76379cdf36e4410998c7fbde70521ce6f7bdb03a4a398abe2b39d5dcd06
--  __TEXT.__unwind_info: 0x29f8 sha256:b91b69609006dfcf95dc9983fd7afd18aa9de2310a1adc8ccf5bc772705eb76d
--  __TEXT.__eh_frame: 0x70 sha256:6024e8d45d0283204b7a484e7e80abf738ec05b0f07e70c806ae515b7247de3b
-+  __TEXT.__swift5_fieldmd: 0x10c sha256:06afb86fcc969f5a211750d8e11b78584103b33e776830c938a9edc7c5e7df18
-+  __TEXT.__swift5_builtin: 0x14 sha256:75fedecb8da837a58c99c4a91b7788869c29ebbada65abf9545d2a30357eea45
-+  __TEXT.__swift5_assocty: 0x30 sha256:33cb307082d69f02f8595739766ee15e8ab2d8906a6dd6df9146ebeb37100387
-+  __TEXT.__swift5_proto: 0x14 sha256:e35f6d4dcf73a4022b4335da132eac7cdb3ccd299308493880c88254a543d435
-+  __TEXT.__swift5_types: 0x1c sha256:362ea0fc20e28f37bac91b0bc5b588b87e2c18421d439b87f7227facf4f82b78
-+  __TEXT.__oslogstring: 0xeee3 sha256:ebadcd7b552b7cef8b64502d2bbda0214232d98d3eda986db97fe69963dd6cd4
-+  __TEXT.__gcc_except_tab: 0x2858 sha256:64c4d529703a76384e48b3882e759b61460354914aa61da9e8aba68e5adf3d9c
-+  __TEXT.__unwind_info: 0x2c38 sha256:298bc503cf428959d28a7d35c9c1f760445cb6146d4c0e5fa5d08043d36ab74f
-+  __TEXT.__eh_frame: 0x70 sha256:268c5b4cb955edc77de4f468894042dc6bff5d634d858d0a1cbc5dadf8151987
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x35a0 sha256:501f411d25b08cd8f17a05ed3a344f319958c0822c4780b6eeeb20e0c6896465
--  __DATA_CONST.__objc_classlist: 0x208 sha256:4a00f907be584b41612cb39873b89febf911519af69d76974e6ffa1db3140abe
--  __DATA_CONST.__objc_catlist: 0x30 sha256:5086673c082ea50223e15b0e05445386507415049a6ed934764b1752cd797ed3
--  __DATA_CONST.__objc_protolist: 0x120 sha256:f23691058c949cec0d903e5b8005d37e52d7e692d17b116f000db8187430fbe8
-+  __DATA_CONST.__const: 0x36e8 sha256:7b65526acb1e03eb5c2ff5d27f55f77ca4876865cde40a4c7a70845d34edcae9
-+  __DATA_CONST.__objc_classlist: 0x218 sha256:8d514cf276559098146bcdd494952ad16933231e8c1faebc736f0a4cea91b45d
-+  __DATA_CONST.__objc_catlist: 0x30 sha256:5fd1a0f56cd2dc5edbd9e8a402c6bba960481fda342ec453eacb092bb3016a76
-+  __DATA_CONST.__objc_protolist: 0x120 sha256:1861186b900096202207723173ff499fb3e28ffc3e173252cdb2e47725aec779
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0x5228 sha256:49eb2bf6d7cc226285956477ba8035f7e28aa1da7d26a4556ad1804200d66dfa
--  __DATA_CONST.__objc_protorefs: 0x18 sha256:4ff11b90f15d6ff74802dfc147605de3da9c7b1913332de39ee87c297bd710e4
--  __DATA_CONST.__objc_superrefs: 0x190 sha256:14e4325444ba2f1a904eb2a32873b276771e9bc4683f746f1518a0c3ade2f2f0
--  __DATA_CONST.__objc_arraydata: 0x3f0 sha256:8fbe4c948d943fb12bc5d825ef18e02a90130225330567d4209ad8b14ac57ad2
--  __DATA_CONST.__got: 0x738 sha256:26afa2068bd10067ed62df8572427b6be33ee912277dd2e1f717483f160820b2
--  __AUTH_CONST.__const: 0x1578 sha256:da9dcb6615d5450f11381db6be3a2e84e4b51be7b0300f28d1a9d347f3b75d96
--  __AUTH_CONST.__cfstring: 0x5c60 sha256:3deec90869472f1f067f8a2d2f5c8d47a43bd97e85651aec111986a4e9058803
--  __AUTH_CONST.__objc_const: 0xb720 sha256:217155236025209255d06858eb1c4e72a09bbeda5b6bcd64255f87aeee74ea83
--  __AUTH_CONST.__objc_intobj: 0xa38 sha256:5c8e858b858ff5bdbdc45c883a1e75bf4c69a84b3bc3ad67a842939c783f2138
--  __AUTH_CONST.__objc_dictobj: 0x410 sha256:0f7ed433cb98e0ea2ea4dc5da23e546b3a663ef20714ae654b9987496d4d70dd
--  __AUTH_CONST.__objc_arrayobj: 0x1e0 sha256:b2639c1484954afa4a5691f1cabad5f34cd843fd166d2cd6a4ba9f3d76ccedad
--  __AUTH_CONST.__objc_doubleobj: 0x1870 sha256:e315569051aff955cac97f894e8169c41088f627b4f882bfdfa26582c34e2dd5
-+  __DATA_CONST.__objc_selrefs: 0x54f8 sha256:b6025ce6fe6d592bdd3c7c735cf93c142456f11476778bfb68bcf067709b3f29
-+  __DATA_CONST.__objc_protorefs: 0x18 sha256:e2134489942a326b67f80bb5747d83092b59151309a014822576efaa2f6f42b5
-+  __DATA_CONST.__objc_superrefs: 0x1a0 sha256:fb74109d4d893d6d4a5f4863c09269c6945d02039264676f847b34e92a902ce8
-+  __DATA_CONST.__objc_arraydata: 0x3f0 sha256:56fe23dd535bd8966b4156148d9c9a6ad5a0237efb5319089d858c43cd1bcc87
-+  __DATA_CONST.__got: 0x760 sha256:43b7172f471d64d04845d96f6785aa3f820028762e48d1555fd44b7a4659ffe7
-+  __AUTH_CONST.__const: 0x1618 sha256:36964f3d577f2bad2cc63279767abc12cd59e91f1bb67930bd3ee0ecfe9a2092
-+  __AUTH_CONST.__cfstring: 0x5d00 sha256:a0600d7a6c2d439acb1408fd63b6981bc554ad59f7b874a78a021757b2798c24
-+  __AUTH_CONST.__objc_const: 0xbdb0 sha256:be320229c4c9869499b7c15f33773974bb9f51fe7b434edcca5f10e3727e225d
-+  __AUTH_CONST.__objc_intobj: 0xa50 sha256:55760f438099720ac2f961bf289cfd9a438d5338e3c82062e4174a5b48991c23
-+  __AUTH_CONST.__objc_dictobj: 0x410 sha256:a0ee93c63c0d2506e05bbf5794b76b4def533a5edc812433e2c6e8d326097ad6
-+  __AUTH_CONST.__objc_arrayobj: 0x1e0 sha256:89c71123937f111842946e4b7154e90a21de0ec922a12dc960ec1b0cac6b42f4
-+  __AUTH_CONST.__objc_doubleobj: 0x1870 sha256:1b2abe0258fa08adf7c5735ad75fbd28fa4e53df86f40cdd9bac0c0e292c813b
-   __AUTH_CONST.__auth_got: 0xbb0 sha256:cda258b2a722a9336224ca9bb3997f0761213a8dac68d24b5fed88d80f18e2a3
--  __AUTH.__objc_data: 0x1280 sha256:710963be63032edd235e26a84d73597e1e9c090352b9f9a271ae2dc3062bf65b
--  __AUTH.__data: 0xc8 sha256:c4a93b0ed01d105203360a02fede3f1614e03c60c3eb73ce0ff8ed39466929ea
--  __DATA.__objc_ivar: 0x990 sha256:e9d718a02edb0d0da5a3938a2b797a21c9cb6625b0708982007d701364284a6b
--  __DATA.__data: 0x1020 sha256:29866dcdd77cc2822af33e51a259b6a7f3936e32302f63e3577f24e46b174f3e
--  __DATA.__bss: 0x840 sha256:80b67b115f8e28f3b67fddcd4cd1daac24a054603d1dd0cb13793a299a5dadfc
--  __DATA_DIRTY.__objc_data: 0x460 sha256:1e792b12957f9ca6acd174e3b99c1ddf5942d539a77c2a71bf87b7b7309f616f
-+  __AUTH.__objc_data: 0x1320 sha256:039594713a8c0b5cfee0b35b7f098c9c44e7e15b2df51c939c5fe6daa0ff5b28
-+  __AUTH.__data: 0xc8 sha256:0e65e5d1a0cf31023a082cf5c266dd9bfaed0fa7591a566918ad12b9eff44296
-+  __DATA.__objc_ivar: 0x9ec sha256:0b19db4e6d44d727429d978c804a01117ad31e88ec12f42596114986cae296b3
-+  __DATA.__data: 0x1020 sha256:73a667ba2f29a390576e3e339d4849fee5d8c4af75ce9b7e340afd7e722e7cdf
-+  __DATA.__bss: 0x850 sha256:8378cf66af72b7b288185379a7bb28c562587780d9491a94b3b6d8df5a77d3dd
-+  __DATA_DIRTY.__objc_data: 0x460 sha256:0a918267f93a663c6a4ad75729f396434523b1488ca87e289fddd83b344c1da8
-   __DATA_DIRTY.__bss: 0xa8 sha256:e3c2af35d1dfc500e16f826a071cc311bf55003a3de77de7ea3376c6b6fa2857
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: 4E50ED8C-7D8C-39A6-9C50-3BBE8B2D0BA0
 -  Functions: 3933
--  Symbols:   12343
--  CStrings:  2633
-+  UUID: DD425DC2-D1BA-3B8F-8AC5-73AF68E3511B
+-  Symbols:   6181
+-  CStrings:  1894
 +  Functions: 4064
-+  Symbols:   12743
-+  CStrings:  2804
- 
++  Symbols:   6360
++  CStrings:  2060
 Symbols:
 + -[AXHearingAidDevice isMFiDeviceProtocol]
 + -[AXHearingAidDevice leftMicrophoneInputGain]
@@ -407,7 +340,6 @@ Symbols:
 + GCC_except_table951
 + GCC_except_table983
 + _AXLEAudioServiceUUIDString
-+ _AudioDataAnalysisLibraryCore.frameworkLibrary.7619
 + _CBConnectPeripheralOptionDetectAndLaunchLEAudioServices
 + _OBJC_CLASS_$_AXHearingAidLEAudioDevice
 + _OBJC_CLASS_$_CBLEAudioPeripheralInputGainDiscoveredEvent
@@ -437,12 +369,6 @@ Symbols:
 + _OBJC_IVAR_$_HUAudioInputData._value
 + _OBJC_METACLASS_$_AXHearingAidLEAudioDevice
 + _OBJC_METACLASS_$_HUAudioInputData
-+ _PersonalAudioLibraryCore.frameworkLibrary.2704
-+ _PersonalAudioLibraryCore.frameworkLibrary.4413
-+ _PersonalAudioLibraryCore.frameworkLibrary.5883
-+ _RTTUtilitiesLibraryCore.frameworkLibrary.4421
-+ _RTTUtilitiesLibraryCore.frameworkLibrary.5866
-+ _UserNotificationsLibraryCore.frameworkLibrary.5618
 + __OBJC_$_INSTANCE_METHODS_AXHearingAidLEAudioDevice
 + __OBJC_$_INSTANCE_METHODS_HUAudioInputData
 + __OBJC_$_INSTANCE_VARIABLES_AXHearingAidLEAudioDevice
@@ -453,97 +379,22 @@ Symbols:
 + __OBJC_CLASS_RO_$_HUAudioInputData
 + __OBJC_METACLASS_RO_$_AXHearingAidLEAudioDevice
 + __OBJC_METACLASS_RO_$_HUAudioInputData
-+ ___112-[HUNoiseController checkToSurfaceAnalyticsNotificationForSPL:withDuration:date:andBuffer:forTime:andThreshold:]_block_invoke.513
-+ ___112-[HUNoiseController checkToSurfaceAnalyticsNotificationForSPL:withDuration:date:andBuffer:forTime:andThreshold:]_block_invoke.517
-+ ___112-[HUNoiseController checkToSurfaceAnalyticsNotificationForSPL:withDuration:date:andBuffer:forTime:andThreshold:]_block_invoke.525
-+ ___112-[HUNoiseController checkToSurfaceAnalyticsNotificationForSPL:withDuration:date:andBuffer:forTime:andThreshold:]_block_invoke.534
-+ ___25-[HUNoiseController init]_block_invoke.392
-+ ___28-[HUHearingAidSettings init]_block_invoke.85
-+ ___36-[AXHearingAidDeviceController init]_block_invoke.18
-+ ___37-[HUNoiseController restartADAMTimer]_block_invoke.469
 + ___38-[HANanoSettings pairedWatchDidChange]_block_invoke
-+ ___40-[AXHearingAidDevice subscribeOnChanges]_block_invoke.168
-+ ___44-[AXHearingAidDevice loadRequiredProperties]_block_invoke.176
-+ ___44-[AXHearingAidDeviceController stopScanning]_block_invoke.32
-+ ___46-[AXHearingAidDevice updateInputTagsAndReset:]_block_invoke.249
 + ___48-[AXHearingAidLEAudioDevice leftVolumeInputGain]_block_invoke
 + ___49-[AXHearingAidLEAudioDevice rightVolumeInputGain]_block_invoke
-+ ___49-[AXRemoteHearingAidDevice setValue:forProperty:]_block_invoke.75
-+ ___49-[AXRemoteHearingAidDevice setValue:forProperty:]_block_invoke.79
-+ ___49-[AXRemoteHearingAidDevice setValue:forProperty:]_block_invoke_2.76
-+ ___49-[AXRemoteHearingAidDevice setValue:forProperty:]_block_invoke_3.77
-+ ___49-[AXRemoteHearingAidDevice setValue:forProperty:]_block_invoke_4.78
-+ ___51-[HUNoiseController subscribeToSharedNotifications]_block_invoke.569
-+ ___52-[AXHearingAidDeviceController connectToPeripheral:]_block_invoke.40
 + ___52-[AXHearingAidLEAudioDevice discoveringServiceUUIDs]_block_invoke
 + ___52-[AXHearingAidLEAudioDevice leftMicrophoneInputGain]_block_invoke
 + ___52-[AXHearingAidLEAudioDevice setLeftVolumeInputGain:]_block_invoke
 + ___53-[AXHearingAidLEAudioDevice rightMicrophoneInputGain]_block_invoke
 + ___53-[AXHearingAidLEAudioDevice setRightVolumeInputGain:]_block_invoke
-+ ___54-[HULiveListenController stopListeningWithCompletion:]_block_invoke.54
 + ___55-[AXHearingAidLEAudioDevice sessionDidUpdateLocations:]_block_invoke
-+ ___55-[HULiveListenController startListeningWithCompletion:]_block_invoke.39
-+ ___56-[AXHearingAidDeviceController cancelPendingConnections]_block_invoke.41
 + ___56-[AXHearingAidLEAudioDevice setLeftMicrophoneInputGain:]_block_invoke
-+ ___57-[AXHearingAidDevice peripheral:didUpdateCharacteristic:]_block_invoke.311
-+ ___57-[AXHearingAidDevice peripheral:didUpdateCharacteristic:]_block_invoke.317
-+ ___57-[AXHearingAidDevice peripheral:didUpdateCharacteristic:]_block_invoke.319
-+ ___57-[AXHearingAidDevice peripheral:didUpdateCharacteristic:]_block_invoke_2.320
 + ___57-[AXHearingAidLEAudioDevice setRightMicrophoneInputGain:]_block_invoke
-+ ___58-[AXHearingAidDeviceController pairedHearingAidsDidChange]_block_invoke.114
 + ___61-[AXHearingAidDeviceController setupCentralManagerForLEAudio]_block_invoke
 + ___62-[AXHearingAidLEAudioDevice delayWriteProperty:forPeripheral:]_block_invoke
-+ ___62-[AXHearingAidLEAudioDevice delayWriteProperty:forPeripheral:]_block_invoke.107
-+ ___62-[AXHearingAidLEAudioDevice delayWriteProperty:forPeripheral:]_block_invoke.108
-+ ___62-[AXHearingAidLEAudioDevice delayWriteProperty:forPeripheral:]_block_invoke.111
-+ ___62-[AXHearingAidLEAudioDevice delayWriteProperty:forPeripheral:]_block_invoke.112
-+ ___62-[AXHearingAidLEAudioDevice delayWriteProperty:forPeripheral:]_block_invoke.98
 + ___63-[AXHearingAidDeviceController isLEAudioServiceInServiceUUIDs:]_block_invoke
-+ ___67-[AXHearingAidDevice loadProperties:forPeripheral:withRetryPeriod:]_block_invoke.174
 + ___69-[AXHearingAidLEAudioDevice setupUpdatesHandlerForLEAudioPeripheral:]_block_invoke
-+ ___69-[HUNearbyHearingAidController scIDSServiceDevice:didReceiveMessage:]_block_invoke.159
 + ___73-[AXHearingAidDeviceController processConnectedIdentifiers:andLocations:]_block_invoke
-+ ___90-[HUNoiseController checkToSurfaceNotificationForSPL:withDuration:date:andBuffer:forTime:]_block_invoke.496
-+ ___90-[HUNoiseController checkToSurfaceNotificationForSPL:withDuration:date:andBuffer:forTime:]_block_invoke.501
-+ ___AudioDataAnalysisLibraryCore_block_invoke.7620
-+ ___Block_byref_object_copy_.1235
-+ ___Block_byref_object_copy_.2135
-+ ___Block_byref_object_copy_.2981
-+ ___Block_byref_object_copy_.3693
-+ ___Block_byref_object_copy_.4122
-+ ___Block_byref_object_copy_.4477
-+ ___Block_byref_object_copy_.468
-+ ___Block_byref_object_copy_.4956
-+ ___Block_byref_object_copy_.6263
-+ ___Block_byref_object_copy_.6522
-+ ___Block_byref_object_copy_.7361
-+ ___Block_byref_object_copy_.7523
-+ ___Block_byref_object_copy_.804
-+ ___Block_byref_object_copy_.8561
-+ ___Block_byref_object_copy_.8766
-+ ___Block_byref_object_copy_.922
-+ ___Block_byref_object_dispose_.1236
-+ ___Block_byref_object_dispose_.2136
-+ ___Block_byref_object_dispose_.2982
-+ ___Block_byref_object_dispose_.3694
-+ ___Block_byref_object_dispose_.4123
-+ ___Block_byref_object_dispose_.4478
-+ ___Block_byref_object_dispose_.469
-+ ___Block_byref_object_dispose_.4957
-+ ___Block_byref_object_dispose_.6264
-+ ___Block_byref_object_dispose_.6523
-+ ___Block_byref_object_dispose_.7362
-+ ___Block_byref_object_dispose_.7524
-+ ___Block_byref_object_dispose_.805
-+ ___Block_byref_object_dispose_.8562
-+ ___Block_byref_object_dispose_.8767
-+ ___Block_byref_object_dispose_.923
-+ ___PersonalAudioLibraryCore_block_invoke.2705
-+ ___PersonalAudioLibraryCore_block_invoke.4414
-+ ___PersonalAudioLibraryCore_block_invoke.5884
-+ ___RTTUtilitiesLibraryCore_block_invoke.4422
-+ ___RTTUtilitiesLibraryCore_block_invoke.5867
-+ ___UserNotificationsLibraryCore_block_invoke.5619
 + ___block_descriptor_40_e8_32s_e33_v32?0"NSUUID"8"NSNumber"16^B24ls32l8
 + ___block_descriptor_40_e8_32s_e43_v32?0"NSString"8"HUAudioInputData"16^B24ls32l8
 + ___block_descriptor_48_e8_32s40r_e23_v32?0"CBUUID"8Q16^B24ls32l8r40l8
@@ -554,214 +405,6 @@ Symbols:
 + ___block_descriptor_49_e8_32s40s_e25_v32?0"NSNumber"816^B24ls32l8s40l8
 + ___block_descriptor_64_e8_32s40s48s56r_e23_v32?0"CBUUID"8Q16^B24ls32l8s40l8r56l8s48l8
 + ___block_descriptor_80_e8_32s40s48s56s64s72s_e26_v32?0"CBService"8Q16^B24ls32l8s40l8s48l8s56l8s64l8s72l8
-+ ___block_literal_global.100
-+ ___block_literal_global.1015
-+ ___block_literal_global.110.4510
-+ ___block_literal_global.114
-+ ___block_literal_global.116
-+ ___block_literal_global.13.2534
-+ ___block_literal_global.1340
-+ ___block_literal_global.158
-+ ___block_literal_global.1604
-+ ___block_literal_global.179
-+ ___block_literal_global.1874
-+ ___block_literal_global.1884
-+ ___block_literal_global.196
-+ ___block_literal_global.199
-+ ___block_literal_global.2147
-+ ___block_literal_global.242
-+ ___block_literal_global.245
-+ ___block_literal_global.2493
-+ ___block_literal_global.251
-+ ___block_literal_global.2532
-+ ___block_literal_global.256
-+ ___block_literal_global.3067
-+ ___block_literal_global.3339
-+ ___block_literal_global.3436
-+ ___block_literal_global.35
-+ ___block_literal_global.3511
-+ ___block_literal_global.372
-+ ___block_literal_global.3745
-+ ___block_literal_global.377
-+ ___block_literal_global.3802
-+ ___block_literal_global.39.3319
-+ ___block_literal_global.40.3721
-+ ___block_literal_global.404
-+ ___block_literal_global.411
-+ ___block_literal_global.4295
-+ ___block_literal_global.4485
-+ ___block_literal_global.46.3714
-+ ___block_literal_global.46.5634
-+ ___block_literal_global.468
-+ ___block_literal_global.48
-+ ___block_literal_global.494
-+ ___block_literal_global.4954
-+ ___block_literal_global.50
-+ ___block_literal_global.519
-+ ___block_literal_global.527
-+ ___block_literal_global.536
-+ ___block_literal_global.545
-+ ___block_literal_global.5454
-+ ___block_literal_global.549
-+ ___block_literal_global.5676
-+ ___block_literal_global.5719
-+ ___block_literal_global.575
-+ ___block_literal_global.585
-+ ___block_literal_global.59
-+ ___block_literal_global.6024
-+ ___block_literal_global.6272
-+ ___block_literal_global.6333
-+ ___block_literal_global.645
-+ ___block_literal_global.6564
-+ ___block_literal_global.69
-+ ___block_literal_global.7128
-+ ___block_literal_global.72
-+ ___block_literal_global.7370
-+ ___block_literal_global.76.5428
-+ ___block_literal_global.7633
-+ ___block_literal_global.8266
-+ ___block_literal_global.8372
-+ ___block_literal_global.84
-+ ___block_literal_global.842
-+ ___block_literal_global.8602
-+ ___block_literal_global.97
-+ ___block_literal_global.98
-+ ___block_literal_global.98.4114
-+ ___getADAMAudioDataReceiverClass_block_invoke.7617
-+ ___getPASettingsClass_block_invoke.4411
-+ ___getPASettingsClass_block_invoke.5882
-+ ___getRTTSettingsClass_block_invoke.4420
-+ ___getRTTSettingsClass_block_invoke.5935
-+ ___getUNMutableNotificationContentClass_block_invoke.5617
-+ ___getUNNotificationRequestClass_block_invoke.5629
-+ ___getUNUserNotificationCenterClass_block_invoke.5638
-+ __hearingTestStarted.7426
-+ _audit_stringAudioDataAnalysis.7621
-+ _audit_stringPersonalAudio.2707
-+ _audit_stringPersonalAudio.4418
-+ _audit_stringPersonalAudio.5885
-+ _audit_stringRTTUtilities.4425
-+ _audit_stringRTTUtilities.5869
-+ _audit_stringUserNotifications.5650
-+ _discoveringServiceUUIDs.discoveringServiceUUIDs.899
-+ _discoveringServiceUUIDs.onceToken.898
-+ _getADAMAudioDataReceiverClass.softClass.7616
-+ _getPASettingsClass.5880
-+ _getPASettingsClass.softClass.4410
-+ _getPASettingsClass.softClass.5881
-+ _getRTTSettingsClass.4409
-+ _getRTTSettingsClass.5932
-+ _getRTTSettingsClass.softClass.4419
-+ _getRTTSettingsClass.softClass.5934
-+ _getUNMutableNotificationContentClass.softClass.5616
-+ _getUNNotificationRequestClass.softClass.5628
-+ _getUNUserNotificationCenterClass.softClass.5637
-+ _objc_msgSend$activePreset
-+ _objc_msgSend$addPeripheral:toDevice:
-+ _objc_msgSend$audioInputType
-+ _objc_msgSend$audioSessionIdentifier
-+ _objc_msgSend$connectedIdentifiers
-+ _objc_msgSend$earForPeripheral:
-+ _objc_msgSend$error
-+ _objc_msgSend$eventType
-+ _objc_msgSend$gainSettingMax
-+ _objc_msgSend$gainSettingMin
-+ _objc_msgSend$gainSettingUnit
-+ _objc_msgSend$hearingAidForLEAudioPeripheral:
-+ _objc_msgSend$includedServiceDescription
-+ _objc_msgSend$initWithHearingAidDevice:
-+ _objc_msgSend$initWithType:unit:min:max:
-+ _objc_msgSend$isAvailable
-+ _objc_msgSend$isLEAudioEnabled
-+ _objc_msgSend$isLeftEventHandlerSet
-+ _objc_msgSend$isMFiDeviceProtocol
-+ _objc_msgSend$isRightEventHandlerSet
-+ _objc_msgSend$isWritable
-+ _objc_msgSend$leftMicrophoneInputData
-+ _objc_msgSend$leftMicrophoneInputGain
-+ _objc_msgSend$leftVolumeInputData
-+ _objc_msgSend$leftVolumeInputGain
-+ _objc_msgSend$locations
-+ _objc_msgSend$max
-+ _objc_msgSend$min
-+ _objc_msgSend$presetIndex
-+ _objc_msgSend$presetName
-+ _objc_msgSend$presetResults
-+ _objc_msgSend$processBTActivePresetUpdate:forEar:
-+ _objc_msgSend$processBTMicrophoneInputDiscovered:forEar:
-+ _objc_msgSend$processBTMicrophoneInputGainUpdate:forInputDescription:forEar:
-+ _objc_msgSend$processBTMicrophoneInputMuteUpdate:forInputDescription:forEar:
-+ _objc_msgSend$processBTMicrophoneInputStatusUpdate:forInputDescription:forEar:
-+ _objc_msgSend$processBTPresetsUpdate:activePreset:forEar:
-+ _objc_msgSend$processBTVolumeInputDiscovered:forEar:
-+ _objc_msgSend$processBTVolumeInputGainUpdate:forInputDescription:forEar:
-+ _objc_msgSend$processBTVolumeInputMuteUpdate:forInputDescription:forEar:
-+ _objc_msgSend$processBTVolumeInputStatusUpdate:forInputDescription:forEar:
-+ _objc_msgSend$processBTVolumeUpdate:forEar:
-+ _objc_msgSend$processConnectedIdentifiers:andLocations:
-+ _objc_msgSend$processLEA3Event:forPeripheral:
-+ _objc_msgSend$processName
-+ _objc_msgSend$rawValue
-+ _objc_msgSend$rightMicrophoneInputData
-+ _objc_msgSend$rightMicrophoneInputGain
-+ _objc_msgSend$rightVolumeInputData
-+ _objc_msgSend$rightVolumeInputGain
-+ _objc_msgSend$sessionDidUpdateLocations:
-+ _objc_msgSend$sessionDidUpdateValue:forProperty:
-+ _objc_msgSend$sessionInfo
-+ _objc_msgSend$sessionState
-+ _objc_msgSend$setActivePreset:OptionalPresetIndex:withResponse:
-+ _objc_msgSend$setDomainAccessor:
-+ _objc_msgSend$setIsLeftEventHandlerSet:
-+ _objc_msgSend$setIsRightEventHandlerSet:
-+ _objc_msgSend$setLeAudioEventHandler:
-+ _objc_msgSend$setLeftMicrophoneInputGain:
-+ _objc_msgSend$setLeftVolumeInputGain:
-+ _objc_msgSend$setRawValue:
-+ _objc_msgSend$setRightMicrophoneInputGain:
-+ _objc_msgSend$setRightVolumeInputGain:
-+ _objc_msgSend$setUpdateHandler:
-+ _objc_msgSend$setValue:
-+ _objc_msgSend$setVolume:withResponse:
-+ _objc_msgSend$setupBasicPropertiesLoaded
-+ _objc_msgSend$setupCentralManagerForLEAudio
-+ _objc_msgSend$setupLoadingProperties
-+ _objc_msgSend$setupUpdatesHandlerForLEAudioPeripheral:
-+ _objc_msgSend$unit
-+ _objc_msgSend$updatedValue
-+ _objc_msgSend$writeMicrophoneAudioInput:forAudioInputType:withInputDescription:withOptionalGain:withResponse:
-+ _objc_msgSend$writeVolumeAudioInput:forAudioInputType:withInputDescription:withOptionalGain:withResponse:
-+ _preferenceKeyForSelector:.SelectorMap.2174
-+ _preferenceKeyForSelector:.onceToken.2173
-+ _sharedController.Controller.1605
-+ _sharedController.Controller.7129
-+ _sharedController.Controller.7634
-+ _sharedController.onceToken.1603
-+ _sharedController.onceToken.4294
-+ _sharedController.onceToken.7127
-+ _sharedController.onceToken.7632
-+ _sharedInstance.NearbyController.3068
-+ _sharedInstance.Settings.1875
-+ _sharedInstance.Settings.2148
-+ _sharedInstance.Settings.3746
-+ _sharedInstance.Settings.408
-+ _sharedInstance.Settings.5455
-+ _sharedInstance.Settings.8267
-+ _sharedInstance.Settings.8603
-+ _sharedInstance.onceToken.1339
-+ _sharedInstance.onceToken.1873
-+ _sharedInstance.onceToken.2146
-+ _sharedInstance.onceToken.3066
-+ _sharedInstance.onceToken.3510
-+ _sharedInstance.onceToken.3744
-+ _sharedInstance.onceToken.3801
-+ _sharedInstance.onceToken.409
-+ _sharedInstance.onceToken.5453
-+ _sharedInstance.onceToken.574
-+ _sharedInstance.onceToken.6563
-+ _sharedInstance.onceToken.8265
-+ _sharedInstance.onceToken.841
-+ _sharedInstance.onceToken.8601
 - GCC_except_table1023
 - GCC_except_table1028
 - GCC_except_table1032
@@ -945,209 +588,9 @@ Symbols:
 - GCC_except_table975
 - GCC_except_table982
 - GCC_except_table984
-- _AudioDataAnalysisLibraryCore.frameworkLibrary.7260
-- _PersonalAudioLibraryCore.frameworkLibrary.2400
-- _PersonalAudioLibraryCore.frameworkLibrary.4071
-- _PersonalAudioLibraryCore.frameworkLibrary.5511
-- _RTTUtilitiesLibraryCore.frameworkLibrary.4079
-- _RTTUtilitiesLibraryCore.frameworkLibrary.5493
-- _UserNotificationsLibraryCore.frameworkLibrary.5246
-- ___112-[HUNoiseController checkToSurfaceAnalyticsNotificationForSPL:withDuration:date:andBuffer:forTime:andThreshold:]_block_invoke.507
-- ___112-[HUNoiseController checkToSurfaceAnalyticsNotificationForSPL:withDuration:date:andBuffer:forTime:andThreshold:]_block_invoke.511
-- ___112-[HUNoiseController checkToSurfaceAnalyticsNotificationForSPL:withDuration:date:andBuffer:forTime:andThreshold:]_block_invoke.519
-- ___112-[HUNoiseController checkToSurfaceAnalyticsNotificationForSPL:withDuration:date:andBuffer:forTime:andThreshold:]_block_invoke.528
-- ___25-[HUNoiseController init]_block_invoke.386
-- ___28-[HUHearingAidSettings init]_block_invoke.88
 - ___36-[AXHearingAidDeviceController init]_block_invoke_2
-- ___37-[HUNoiseController restartADAMTimer]_block_invoke.463
-- ___40-[AXHearingAidDevice subscribeOnChanges]_block_invoke.162
-- ___44-[AXHearingAidDevice loadRequiredProperties]_block_invoke.173
-- ___44-[AXHearingAidDeviceController stopScanning]_block_invoke.27
-- ___46-[AXHearingAidDevice updateInputTagsAndReset:]_block_invoke.246
-- ___49-[AXRemoteHearingAidDevice setValue:forProperty:]_block_invoke.74
-- ___49-[AXRemoteHearingAidDevice setValue:forProperty:]_block_invoke.78
-- ___49-[AXRemoteHearingAidDevice setValue:forProperty:]_block_invoke_2.75
-- ___49-[AXRemoteHearingAidDevice setValue:forProperty:]_block_invoke_3.76
-- ___49-[AXRemoteHearingAidDevice setValue:forProperty:]_block_invoke_4.77
-- ___51-[HUNoiseController subscribeToSharedNotifications]_block_invoke.563
-- ___52-[AXHearingAidDeviceController connectToPeripheral:]_block_invoke.35
-- ___56-[AXHearingAidDeviceController cancelPendingConnections]_block_invoke.36
-- ___57-[AXHearingAidDevice peripheral:didUpdateCharacteristic:]_block_invoke.308
-- ___57-[AXHearingAidDevice peripheral:didUpdateCharacteristic:]_block_invoke.314
-- ___57-[AXHearingAidDevice peripheral:didUpdateCharacteristic:]_block_invoke.316
-- ___57-[AXHearingAidDevice peripheral:didUpdateCharacteristic:]_block_invoke_2.317
-- ___58-[AXHearingAidDeviceController pairedHearingAidsDidChange]_block_invoke.111
-- ___67-[AXHearingAidDevice loadProperties:forPeripheral:withRetryPeriod:]_block_invoke.171
-- ___69-[HUNearbyHearingAidController scIDSServiceDevice:didReceiveMessage:]_block_invoke.157
-- ___90-[HUNoiseController checkToSurfaceNotificationForSPL:withDuration:date:andBuffer:forTime:]_block_invoke.490
-- ___90-[HUNoiseController checkToSurfaceNotificationForSPL:withDuration:date:andBuffer:forTime:]_block_invoke.495
-- ___AudioDataAnalysisLibraryCore_block_invoke.7261
-- ___Block_byref_object_copy_.1838
-- ___Block_byref_object_copy_.2675
-- ___Block_byref_object_copy_.297
-- ___Block_byref_object_copy_.3379
-- ___Block_byref_object_copy_.3810
-- ___Block_byref_object_copy_.4135
-- ___Block_byref_object_copy_.4593
-- ___Block_byref_object_copy_.574
-- ___Block_byref_object_copy_.5887
-- ___Block_byref_object_copy_.6145
-- ___Block_byref_object_copy_.680
-- ___Block_byref_object_copy_.7007
-- ___Block_byref_object_copy_.7167
-- ___Block_byref_object_copy_.8196
-- ___Block_byref_object_copy_.8399
-- ___Block_byref_object_copy_.974
-- ___Block_byref_object_dispose_.1839
-- ___Block_byref_object_dispose_.2676
-- ___Block_byref_object_dispose_.298
-- ___Block_byref_object_dispose_.3380
-- ___Block_byref_object_dispose_.3811
-- ___Block_byref_object_dispose_.4136
-- ___Block_byref_object_dispose_.4594
-- ___Block_byref_object_dispose_.575
-- ___Block_byref_object_dispose_.5888
-- ___Block_byref_object_dispose_.6146
-- ___Block_byref_object_dispose_.681
-- ___Block_byref_object_dispose_.7008
-- ___Block_byref_object_dispose_.7168
-- ___Block_byref_object_dispose_.8197
-- ___Block_byref_object_dispose_.8400
-- ___Block_byref_object_dispose_.975
-- ___PersonalAudioLibraryCore_block_invoke.2401
-- ___PersonalAudioLibraryCore_block_invoke.4072
-- ___PersonalAudioLibraryCore_block_invoke.5512
-- ___RTTUtilitiesLibraryCore_block_invoke.4080
-- ___RTTUtilitiesLibraryCore_block_invoke.5494
-- ___UserNotificationsLibraryCore_block_invoke.5247
 - ___block_descriptor_56_e8_32s40s48r_e23_v32?0"CBUUID"8Q16^B24ls32l8r48l8s40l8
 - ___block_descriptor_72_e8_32s40s48s56s64s_e26_v32?0"CBService"8Q16^B24ls32l8s40l8s48l8s56l8s64l8
-- ___block_literal_global.101
-- ___block_literal_global.1077
-- ___block_literal_global.112
-- ___block_literal_global.113
-- ___block_literal_global.13.2234
-- ___block_literal_global.1339
-- ___block_literal_global.1579
-- ___block_literal_global.1589
-- ___block_literal_global.161
-- ___block_literal_global.1851
-- ___block_literal_global.190
-- ___block_literal_global.193
-- ___block_literal_global.2195
-- ___block_literal_global.2232
-- ___block_literal_global.239
-- ___block_literal_global.248.5473
-- ___block_literal_global.253
-- ___block_literal_global.2761
-- ___block_literal_global.30.3926
-- ___block_literal_global.3028
-- ___block_literal_global.3124
-- ___block_literal_global.3200
-- ___block_literal_global.3431
-- ___block_literal_global.3486
-- ___block_literal_global.353
-- ___block_literal_global.366
-- ___block_literal_global.371
-- ___block_literal_global.39.3008
-- ___block_literal_global.3952
-- ___block_literal_global.40.3407
-- ___block_literal_global.401
-- ___block_literal_global.410
-- ___block_literal_global.413
-- ___block_literal_global.4143
-- ___block_literal_global.43
-- ___block_literal_global.45
-- ___block_literal_global.4591
-- ___block_literal_global.46.3400
-- ___block_literal_global.46.5262
-- ___block_literal_global.462
-- ___block_literal_global.488
-- ___block_literal_global.5083
-- ___block_literal_global.513
-- ___block_literal_global.521
-- ___block_literal_global.530
-- ___block_literal_global.5304
-- ___block_literal_global.5343
-- ___block_literal_global.539
-- ___block_literal_global.543
-- ___block_literal_global.5650
-- ___block_literal_global.57
-- ___block_literal_global.579
-- ___block_literal_global.5896
-- ___block_literal_global.5956
-- ___block_literal_global.612
-- ___block_literal_global.6187
-- ___block_literal_global.6761
-- ___block_literal_global.68
-- ___block_literal_global.7016
-- ___block_literal_global.71
-- ___block_literal_global.7274
-- ___block_literal_global.76.5054
-- ___block_literal_global.761
-- ___block_literal_global.7903
-- ___block_literal_global.80
-- ___block_literal_global.8008
-- ___block_literal_global.8236
-- ___block_literal_global.95
-- ___getADAMAudioDataReceiverClass_block_invoke.7258
-- ___getPASettingsClass_block_invoke.4069
-- ___getPASettingsClass_block_invoke.5510
-- ___getRTTSettingsClass_block_invoke.4078
-- ___getRTTSettingsClass_block_invoke.5562
-- ___getUNMutableNotificationContentClass_block_invoke.5245
-- ___getUNNotificationRequestClass_block_invoke.5257
-- ___getUNUserNotificationCenterClass_block_invoke.5266
-- __hearingTestStarted.7072
-- _audit_stringAudioDataAnalysis.7262
-- _audit_stringPersonalAudio.2402
-- _audit_stringPersonalAudio.4076
-- _audit_stringPersonalAudio.5513
-- _audit_stringRTTUtilities.4083
-- _audit_stringRTTUtilities.5496
-- _audit_stringUserNotifications.5278
-- _getADAMAudioDataReceiverClass.softClass.7257
-- _getPASettingsClass.5508
-- _getPASettingsClass.softClass.4068
-- _getPASettingsClass.softClass.5509
-- _getRTTSettingsClass.4067
-- _getRTTSettingsClass.5559
-- _getRTTSettingsClass.softClass.4077
-- _getRTTSettingsClass.softClass.5561
-- _getUNMutableNotificationContentClass.softClass.5244
-- _getUNNotificationRequestClass.softClass.5256
-- _getUNUserNotificationCenterClass.softClass.5265
-- _preferenceKeyForSelector:.SelectorMap.1879
-- _preferenceKeyForSelector:.onceToken.1878
-- _sharedController.Controller.1340
-- _sharedController.Controller.6762
-- _sharedController.Controller.7275
-- _sharedController.onceToken.1338
-- _sharedController.onceToken.3951
-- _sharedController.onceToken.6760
-- _sharedController.onceToken.7273
-- _sharedInstance.NearbyController.2762
-- _sharedInstance.Settings.1580
-- _sharedInstance.Settings.1852
-- _sharedInstance.Settings.3432
-- _sharedInstance.Settings.410
-- _sharedInstance.Settings.5084
-- _sharedInstance.Settings.7904
-- _sharedInstance.Settings.8237
-- _sharedInstance.onceToken.1076
-- _sharedInstance.onceToken.1578
-- _sharedInstance.onceToken.1850
-- _sharedInstance.onceToken.2760
-- _sharedInstance.onceToken.3199
-- _sharedInstance.onceToken.3430
-- _sharedInstance.onceToken.3485
-- _sharedInstance.onceToken.352
-- _sharedInstance.onceToken.411
-- _sharedInstance.onceToken.5082
-- _sharedInstance.onceToken.611
-- _sharedInstance.onceToken.6186
-- _sharedInstance.onceToken.7902
-- _sharedInstance.onceToken.8235
 CStrings:
 + "1854"
 + "AudioInputData: Can't init, received invalid range: min %ld, max: %ld"
@@ -1331,5 +774,4 @@ CStrings:
 - "\xd12\x89($dB\""
 - "\xf0Q"
 - "\xf0\x8b)Q"
-
 ```

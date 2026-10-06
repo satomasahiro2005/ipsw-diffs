@@ -2,91 +2,40 @@
 
 > `/System/Library/Frameworks/Photos.framework/Photos`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2e682c` | `0x2e70f8` | **`+0x8cc`** |
+| `__AUTH.__objc_data` | `0x7f28` | `0x7898` | **`-0x690`** |
+| `__DATA_DIRTY.__objc_data` | `0x1a60` | `0x20f0` | **`+0x690`** |
+| `__TEXT.__oslogstring` | `0x24df7` | `0x24fd7` | **`+0x1e0`** |
+| `__TEXT.__cstring` | `0x33883` | `0x339d8` | **`+0x155`** |
+| `__AUTH_CONST.__cfstring` | `0x2da80` | `0x2dac0` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x9118` | `0x9140` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x4778` | `0x4798` | **`+0x20`** |
+| `__DATA_DIRTY.__bss` | `0x100` | `0x120` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x27154` | `0x2716c` | **`+0x18`** |
+| `__AUTH_CONST.__objc_const` | `0x42c60` | `0x42c50` | **`-0x10`** |
+| `__DATA.__bss` | `0x1a88` | `0x1a78` | **`-0x10`** |
+| `__DATA.__data` | `0x2c18` | `0x2c08` | **`-0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x14a30` | `0x14a40` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x980c` | `0x981c` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x9868` | `0x9878` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -916.40.110.0.0
--  __TEXT.__text: 0x2d73c0
--  __TEXT.__objc_methlist: 0x27154
 +916.45.110.0.0
-+  __TEXT.__text: 0x2d7c80
-+  __TEXT.__objc_methlist: 0x2716c
-   __TEXT.__const: 0x17f0
-   __TEXT.__dlopen_cstrs: 0x280
-   __TEXT.__constg_swiftt: 0x67c
 
-   __TEXT.__swift5_proto: 0x4c
-   __TEXT.__swift5_types: 0x44
-   __TEXT.__swift5_capture: 0x198
--  __TEXT.__cstring: 0x33883
-+  __TEXT.__cstring: 0x339d8
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0x18
--  __TEXT.__oslogstring: 0x24df7
-+  __TEXT.__oslogstring: 0x24fd7
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__gcc_except_tab: 0x980c
-+  __TEXT.__gcc_except_tab: 0x981c
-   __TEXT.__ustring: 0x1e
--  __TEXT.__unwind_info: 0xbac8
-+  __TEXT.__unwind_info: 0xbad8
-   __TEXT.__eh_frame: 0x4d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9118
-+  __DATA_CONST.__const: 0x9140
-   __DATA_CONST.__objc_classlist: 0xf58
-   __DATA_CONST.__objc_catlist: 0x70
-   __DATA_CONST.__objc_protolist: 0x300
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x14a30
-+  __DATA_CONST.__objc_selrefs: 0x14a40
-   __DATA_CONST.__objc_protorefs: 0x40
-   __DATA_CONST.__objc_superrefs: 0xc70
-   __DATA_CONST.__objc_arraydata: 0x940
-   __DATA_CONST.__got: 0x2a98
--  __AUTH_CONST.__const: 0x4778
--  __AUTH_CONST.__cfstring: 0x2da80
--  __AUTH_CONST.__objc_const: 0x42c60
-+  __AUTH_CONST.__const: 0x4798
-+  __AUTH_CONST.__cfstring: 0x2dac0
-+  __AUTH_CONST.__objc_const: 0x42c50
-   __AUTH_CONST.__objc_intobj: 0x24f0
-   __AUTH_CONST.__objc_arrayobj: 0x7b0
-   __AUTH_CONST.__objc_doubleobj: 0x140
-   __AUTH_CONST.__objc_dictobj: 0xf0
-   __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__auth_got: 0x1920
--  __AUTH.__objc_data: 0x7f28
-+  __AUTH.__objc_data: 0x7898
-   __AUTH.__data: 0x3c0
-   __DATA.__objc_ivar: 0x3664
--  __DATA.__data: 0x2c18
-+  __DATA.__data: 0x2c08
-   __DATA.__crash_info: 0x148
-   __DATA.__common: 0x55
--  __DATA_DIRTY.__objc_data: 0x1a60
-+  __DATA_DIRTY.__objc_data: 0x20f0
-   __DATA_DIRTY.__data: 0x148
--  __DATA_DIRTY.__bss: 0x100
-+  __DATA_DIRTY.__bss: 0x120
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15078
--  Symbols:   34378
+-  Symbols:   26178
 -  CStrings:  8987
 +  Functions: 15083
-+  Symbols:   34383
++  Symbols:   26182
 +  CStrings:  8996
- 
 Symbols:
 + +[PHAssetCreationRequest _originalResourceTypeFromAdjustedResourceType:sourceAssetIsLoopingVideo:sourceAssetIsVideo:flattenLivePhoto:]
 + -[PHAssetCreationRequestPlaceholderSupport _retrieveSharedStreamResourcesForSourceAsset:photoLibrary:]
@@ -454,10 +403,6 @@ Symbols:
 + ___block_descriptor_56_e8_32s40s48s_e20_v20?0i8"NSError"12ls32l8s40l8s48l8
 + ___block_descriptor_81_e8_32s40s48r56r64r72r_e5_v8?0lr48l8s32l8s40l8r56l8r64l8r72l8
 + ___block_descriptor_96_e8_32s40s48s56s64s72s80r88r_e24_v16?0"PLPhotoLibrary"8ls32l8r80l8s40l8r88l8s48l8s56l8s64l8s72l8
-+ _objc_msgSend$_originalResourceTypeFromAdjustedResourceType:sourceAssetIsLoopingVideo:sourceAssetIsVideo:flattenLivePhoto:
-+ _objc_msgSend$_retrieveSharedStreamResourcesForSourceAsset:photoLibrary:
-+ _objc_msgSend$_updateManagedAssetAfterResourceDownload:preservePlaceholderForRetry:
-+ _objc_msgSend$fetchLexemeIDs
 - +[PHAssetCreationRequest _originalResourceTypeFromAdjustedResourceType:sourceAssetIsLoopingVideo:sourceAssetIsVideo:]
 - -[PHAssetCreationRequestPlaceholderSupport _updateManagedAssetAfterResourceDownload:]
 - -[PHFindQueryContext fetchedLexemeIDs]
@@ -820,9 +765,6 @@ Symbols:
 - ___85-[PHAssetCreationRequestPlaceholderSupport _updateManagedAssetAfterResourceDownload:]_block_invoke
 - ___block_descriptor_104_e8_32s40s48s56s64s72s80s88r96r_e5_v8?0ls32l8s40l8r88l8s48l8r96l8s56l8s64l8s72l8s80l8
 - ___block_descriptor_48_e8_32s40s_e20_v20?0i8"NSError"12ls32l8s40l8
-- _objc_msgSend$_originalResourceTypeFromAdjustedResourceType:sourceAssetIsLoopingVideo:sourceAssetIsVideo:
-- _objc_msgSend$_updateManagedAssetAfterResourceDownload:
-- _objc_msgSend$fetchedLexemeIDs
 CStrings:
 + "-[PHAssetCreationRequestPlaceholderSupport _retrieveSharedStreamResourcesForSourceAsset:photoLibrary:]_block_invoke"
 + "-[PHShareAssetChangeRequestHelper addAssetsToCPLShare:creationOptionsPerAsset:withMomentSharePreview:withBatchCommentText:outKeyAssetIdentifier:outContainsEPPAssets:outCreatedSharePostPlaceholder:skipSharePost:]"

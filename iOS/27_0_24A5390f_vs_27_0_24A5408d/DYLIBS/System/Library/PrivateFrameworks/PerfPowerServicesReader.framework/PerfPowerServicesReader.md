@@ -2,46 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/PerfPowerServicesReader.framework/PerfPowerServicesReader`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14ae04` | `0x14b03c` | **`+0x238`** |
+| `__TEXT.__gcc_except_tab` | `0x4a8c` | `0x4adc` | **`+0x50`** |
+| `__TEXT.__oslogstring` | `0xd5f` | `0xda1` | **`+0x42`** |
+| `__AUTH_CONST.__cfstring` | `0xf0a0` | `0xf0c0` | **`+0x20`** |
+| `__TEXT.__cstring` | `0xd106` | `0xd0f4` | **`-0x12`** |
+| `__TEXT.__const` | `0x5fe2` | `0x5fd2` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x49b8` | `0x49b0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3486.0.81.502.4
--  __TEXT.__text: 0x14ae04
 +3486.2.4.0.0
-+  __TEXT.__text: 0x14b03c
-   __TEXT.__init_offsets: 0xdc
-   __TEXT.__objc_methlist: 0x12d94
--  __TEXT.__const: 0x5fe2
--  __TEXT.__cstring: 0xd106
--  __TEXT.__gcc_except_tab: 0x4a8c
--  __TEXT.__oslogstring: 0xd5f
--  __TEXT.__unwind_info: 0x49b8
-+  __TEXT.__const: 0x5fd2
-+  __TEXT.__cstring: 0xd0f4
-+  __TEXT.__gcc_except_tab: 0x4adc
-+  __TEXT.__oslogstring: 0xda1
-+  __TEXT.__unwind_info: 0x49b0
-   __TEXT.__eh_frame: 0x98
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_arraydata: 0x110
-   __DATA_CONST.__got: 0x720
-   __AUTH_CONST.__const: 0x3090
--  __AUTH_CONST.__cfstring: 0xf0a0
-+  __AUTH_CONST.__cfstring: 0xf0c0
-   __AUTH_CONST.__objc_const: 0x16c28
-   __AUTH_CONST.__weak_auth_got: 0xb0
-   __AUTH_CONST.__objc_intobj: 0x1e0
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 7904
 +  Functions: 7905
-   Symbols:   12938
+
 -  CStrings:  2142
 +  CStrings:  2144
- 
 Functions:
 ~ ___60-[PPSSQLiteTimeSeriesIngester parseDataForRequest:outError:]_block_invoke : 900 -> 1120
 - ___87-[PPSSQLiteTimeSeriesIngester _convertSQLiteDataFromQuery:withMetricDefinitions:error:]_block_invoke.46

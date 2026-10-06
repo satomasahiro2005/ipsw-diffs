@@ -2,62 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/PasswordManagerUI.framework/PasswordManagerUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x56596c` | `0x565928` | **`-0x44`** |
+| `__DATA.__data` | `0x11468` | `0x11498` | **`+0x30`** |
+| `__TEXT.__eh_frame` | `0x12b10` | `0x12af8` | **`-0x18`** |
+| `__TEXT.__const` | `0x37834` | `0x37844` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0x775ae` | `0x7759e` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x2dd0` | `0x2dc8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -7625.2.5.10.1
--  __TEXT.__text: 0x530f68
 +7625.2.7.1.0
-+  __TEXT.__text: 0x530f24
-   __TEXT.__objc_methlist: 0x288c
-   __TEXT.__cstring: 0x1256d
--  __TEXT.__const: 0x37834
-+  __TEXT.__const: 0x37844
-   __TEXT.__gcc_except_tab: 0x4c
-   __TEXT.__dlopen_cstrs: 0x9a
-   __TEXT.__oslogstring: 0x3709
-   __TEXT.__ustring: 0x76
-   __TEXT.__constg_swiftt: 0xd578
--  __TEXT.__swift5_typeref: 0x775ae
-+  __TEXT.__swift5_typeref: 0x7759e
-   __TEXT.__swift5_builtin: 0x370
-   __TEXT.__swift5_reflstr: 0xddab
-   __TEXT.__swift5_fieldmd: 0xa870
 
-   __TEXT.__swift5_mpenum: 0xd4
-   __TEXT.__swift5_protos: 0x70
-   __TEXT.__unwind_info: 0x12b48
--  __TEXT.__eh_frame: 0x12b10
-+  __TEXT.__eh_frame: 0x12af8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0x32f0
-   __DATA_CONST.__objc_protorefs: 0x130
-   __DATA_CONST.__objc_superrefs: 0x30
--  __DATA_CONST.__got: 0x2dd0
-+  __DATA_CONST.__got: 0x2dc8
-   __AUTH_CONST.__const: 0x1a848
-   __AUTH_CONST.__cfstring: 0x440
-   __AUTH_CONST.__objc_const: 0xb560
-
-   __AUTH.__objc_data: 0x9f0
-   __AUTH.__data: 0x5ec8
-   __DATA.__objc_ivar: 0x80
--  __DATA.__data: 0x11468
-+  __DATA.__data: 0x11498
-   __DATA.__common: 0x118
-   __DATA_DIRTY.__objc_data: 0x3980
-   __DATA_DIRTY.__data: 0xb208
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 23165
 +  Functions: 23166
-   Symbols:   8869
-   CStrings:  1600
- 
 Symbols:
 + _get_witness_table qd0__7SwiftUI4ViewHD4_AaBPAAE5sheet4item9onDismiss7contentQrAA7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lFQOyAcAE0F20ContinueUserActivity_7performQrSS_ySo06NSUserM0CctFQOyAcAE0F6Change2of7initial_Qrqd___SbyyctSQRd__lFQOyAcAEAdefGQrAK_ALqd_0_qd__ctsAMRd__AaBRd_0_r0_lFQOyAA15ModifiedContentVyAcAEArsT_Qrqd___SbyyctSQRd__lFQOyAVyAVyAcAEArsT_Qrqd___SbyyctSQRd__lFQOyAcAEAD11isPresentedAfGQrAIySbG_ALqd__yctAaBRd__lFQOyAcAEAdefGQrAK_ALqd_0_qd__ctsAMRd__AaBRd_0_r0_lFQOyAcAEAdefGQrAK_ALqd_0_qd__ctsAMRd__AaBRd_0_r0_lFQOyAcAE17focusedSceneValueyQrs15WritableKeyPathCyAA13FocusedValuesVAJG_AJtlFQOyAcAE23alternateRepresentation3forAGQrAA32AlternateRepresentationPlacementV_qd__yXEtAaBRd__lFQOyAcAEArsT_Qrqd___SbyyctSQRd__lFQOyAVyAcAE015navigationSplitC5StyleyQrqd__AA015NavigationSplitC5StyleRd__lFQOyAVyAVyAA015NavigationSplitC0VyAcAE7toolbar8removingQrAA22ToolbarDefaultItemKindVSg_tFQOyAcAEAYyQrA2__AJtlFQOyAcAE015navigationSplitC11ColumnWidth3min5ideal3maxQr12CoreGraphics7CGFloatVSg_A22_A23_tFQOy015PasswordManagerB015PMAppSourceListV_Qo__A24_24PMAppRootNavigationModelCQo__Qo_AVyAcAEA16_A17_A18_A19_QrA23__A22_A23_tFQOyAA5GroupVyAA012_ConditionalT0VyA35_yA35_yAA0t11UnavailableC0VyAA4TextVAA05EmptyC0VA41_GAA6IDViewVyA24_17PMAppAccountsListV10Foundation4UUIDVGGA35_yA24_22PMGroupInvitationsListVA24_028PMAppRecentlyDeletedAccountsC0VGGA35_yA35_yA24_32PMAppSecurityRecommendationsListVA24_23PMVerificationCodesListVGA24_10PMWiFiListVGGG_Qo_AA31AccessibilityAttachmentModifierVGA33_yA35_yA35_yAVyAA5ColorVAA30_SafeAreaRegionsIgnoringLayoutVGA24_025PMMultipleAccountsDetailsC0VGA24_029PMMultipleWiFiNetworksDetailsC0VGGGA24_12PMSearchable33_BE720C7A8B2BD2303B51F85E9EBC6E2DLLVGA24_16PMSearchTextSync33_7162D7BD199978AA78EC10092AA54552LLVG_AA024AutomaticNavigationSplitC5StyleVQo_AA25_AppearanceActionModifierVG_A24_20PMAppSourceListModelC6SourceOSgQo__AA15NavigationStackVySayA29_14NavigationPathOGAcAE21navigationDestinationA4_11destinationQrqd__m_qd_0_qd__ctSHRd__AaBRd_0_r0_lFQOyA30__A108_A35_yAcAE9listStyleyQrqd__AA9ListStyleRd__lFQOyA71__AA14PlainListStyleVQo_A83_GQo_GQo__A29_Qo__A24_20PMIdentifiableObjectVyA24_17PMAddAccountModelCGAcAE20navigationTransitionyQrqd__AA20NavigationTransitionRd__lFQOyAVyA24_012PMAddAccountC0VA70_G_AA24ZoomNavigationTransitionVQo_Qo__A24_17PMNewGroupContextOA24_14PMNewGroupFlowVQo__A24_023PMGeneratedPasswordsLogC0VQo__AA0L18InterfaceSizeClassOSgQo_AA30_EnvironmentKeyWritingModifierVyA24_017PMOpenURLInSafariC16ControllerActionVGGA24_08PMSafariC8Modifier33_C9F8336D6B0CB00111FD20B43502F4A7LLVG_22AuthenticationServices24ASExportedCredentialDataVSgQo_A24_027PMConfirmationDialogOrAlertC8ModifierVyAA05TupleT0VyAA6ButtonVyA39_G_A169_QPGA39_ytGG_A24_35PMCredentialExchangeDataImportModelCAVyA24_08PMImportC0VAA16_FlexFrameLayoutVGQo__SayA24_9PMAccountVGSgQo__Qo__A174_A176_Qo_HO
 + _symbolic _____yAAy_____y_____y_____y_____y______Qo_______Qo__Qo_AAy_____y_____y_____yAIyAIy_____y__________ALG_____y__________GGAIy__________GGAIyAIy__________G_____GGG_Qo______GAHyAIyAIyAAy__________G_____G_____GGG_____G_____G 7SwiftUI15ModifiedContentV AA19NavigationSplitViewV AA0G0PAAE7toolbar8removingQrAA22ToolbarDefaultItemKindVSg_tFQO AgAE17focusedSceneValueyQrs15WritableKeyPathCyAA13FocusedValuesVqd__SgG_ARtlFQO AgAE010navigationfG11ColumnWidth3min5ideal3maxQr12CoreGraphics7CGFloatVSg_AZA_tFQO 015PasswordManagerB015PMAppSourceListV A0_09PMAppRootE5ModelC AgAEAtuvWQrA__AZA_tFQO AA5GroupV AA012_ConditionalD0V AA0d11UnavailableG0V AA4TextV AA05EmptyG0V AA6IDViewV A0_17PMAppAccountsListV 10Foundation4UUIDV A0_22PMGroupInvitationsListV A0_028PMAppRecentlyDeletedAccountsG0V A0_32PMAppSecurityRecommendationsListV A0_23PMVerificationCodesListV A0_10PMWiFiListV AA31AccessibilityAttachmentModifierV AA5ColorV AA30_SafeAreaRegionsIgnoringLayoutV A0_025PMMultipleAccountsDetailsG0V A0_029PMMultipleWiFiNetworksDetailsG0V A0_12PMSearchable33_BE720C7A8B2BD2303B51F85E9EBC6E2DLLV A0_16PMSearchTextSync33_7162D7BD199978AA78EC10092AA54552LLV

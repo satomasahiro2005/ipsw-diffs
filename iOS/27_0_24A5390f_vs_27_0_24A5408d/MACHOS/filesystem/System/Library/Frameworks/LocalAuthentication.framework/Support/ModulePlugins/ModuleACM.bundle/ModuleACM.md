@@ -2,26 +2,29 @@
 
 > `/System/Library/Frameworks/LocalAuthentication.framework/Support/ModulePlugins/ModuleACM.bundle/ModuleACM`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x20d88` | `0x20dc8` | **`+0x40`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__const`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -2319.0.46.0.0
--  __TEXT.__text: 0x20d88
 +2319.0.63.0.0
-+  __TEXT.__text: 0x20dc8
-   __TEXT.__auth_stubs: 0x770
-   __TEXT.__objc_stubs: 0x26c0
-   __TEXT.__objc_methlist: 0x4ac
 Functions:
 ~ sub_233c : 28 -> 16
 ~ sub_299c -> sub_2990 : 20 -> 12

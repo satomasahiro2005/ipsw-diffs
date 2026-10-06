@@ -1,4 +1,4 @@
-## filesystem — Removed (834)
+## filesystem — Removed (733)
 
 - `/Applications/Feedback Assistant iOS.app/Base.lproj/Main.storyboardc/UITableViewController-gzY-zK-igk.nib`
 - `/Applications/Feedback Assistant iOS.app/Base.lproj/Main.storyboardc/gzY-zK-igk-view-3de-15-yXF.nib`
@@ -382,18 +382,18 @@
 - `/System/Library/Assistant/FlowDelegatePlugins/WellnessFlowPlugin.bundle/Templates/dialog/wellnessLogging.catfamily/genericDatatype_Dialog.cat/vi_VN_u_sd_vnct.cat.bin`
 - `/System/Library/Carrier Bundles/iPhone/MTS_ca.bundle/Info.plist`
 - `/System/Library/Carrier Bundles/iPhone/MTS_ca.bundle/carrier.plist`
-- `/System/Library/Carrier Bundles/iPhone/MTS_ca.bundle/overrides_V53_V54_V57.plist`
+- `/System/Library/Carrier Bundles/iPhone/MTS_ca.bundle/overrides_D93_D94_D47_D48.plist`
 - `/System/Library/Carrier Bundles/iPhone/MTS_ca.bundle/profile.mobileconfig`
 - `/System/Library/Carrier Bundles/iPhone/MTS_ca.bundle/signatures/common.plist`
-- `/System/Library/Carrier Bundles/iPhone/MTS_ca.bundle/signatures/overrides_V53_V54_V57.plist`
+- `/System/Library/Carrier Bundles/iPhone/MTS_ca.bundle/signatures/overrides_D93_D94_D47_D48.plist`
 - `/System/Library/Carrier Bundles/iPhone/MTS_ca.bundle/supported_devices.plist`
 - `/System/Library/Carrier Bundles/iPhone/Mirs_il.bundle/profile.mobileconfig`
 - `/System/Library/Carrier Bundles/iPhone/Telus_PCMobile_ca.bundle/Info.plist`
 - `/System/Library/Carrier Bundles/iPhone/Telus_PCMobile_ca.bundle/carrier.plist`
-- `/System/Library/Carrier Bundles/iPhone/Telus_PCMobile_ca.bundle/overrides_V53_V54_V57.der.pri`
-- `/System/Library/Carrier Bundles/iPhone/Telus_PCMobile_ca.bundle/overrides_V53_V54_V57.plist`
+- `/System/Library/Carrier Bundles/iPhone/Telus_PCMobile_ca.bundle/overrides_D93_D94_D47_D48.der.pri`
+- `/System/Library/Carrier Bundles/iPhone/Telus_PCMobile_ca.bundle/overrides_D93_D94_D47_D48.plist`
 - `/System/Library/Carrier Bundles/iPhone/Telus_PCMobile_ca.bundle/signatures/common.plist`
-- `/System/Library/Carrier Bundles/iPhone/Telus_PCMobile_ca.bundle/signatures/overrides_V53_V54_V57.plist`
+- `/System/Library/Carrier Bundles/iPhone/Telus_PCMobile_ca.bundle/signatures/overrides_D93_D94_D47_D48.plist`
 - `/System/Library/Carrier Bundles/iPhone/Telus_PCMobile_ca.bundle/supported_devices.plist`
 - `/System/Library/ExtensionKit/Extensions/AskPermissionAskToResponseExtension.appex/Entitlements.plist`
 - `/System/Library/ExtensionKit/Extensions/InferenceExtension.appex/com.apple.lighthouse.ResponseCategoryInference.daily.plist`
@@ -404,111 +404,10 @@
 - `/System/Library/Frameworks/SystemConfiguration.framework/deprecated-get-network-info`
 - `/System/Library/Frameworks/Vision.framework/anodv3_drop3.espresso.weights`
 - `/System/Library/Frameworks/_GroupActivities_UIKit.framework/_GroupActivities_UIKit.loctable`
-- `/System/Library/ImagingNetworks/anst_refiner256x192-v2.D23_V57_V53_V54.espresso.hwx`
-- `/System/Library/ImagingNetworks/anst_refiner256x192-v2.D23_V57_V53_V54.espresso.net`
-- `/System/Library/ImagingNetworks/anst_refiner256x192-v2.D23_V57_V53_V54.espresso.precompilation_info`
-- `/System/Library/ImagingNetworks/anst_refiner256x192-v2.D23_V57_V53_V54.espresso.shape`
-- `/System/Library/ImagingNetworks/anst_refiner256x256-v2.D23_V57_V53_V54_V159.espresso.hwx`
-- `/System/Library/ImagingNetworks/anst_refiner256x256-v2.D23_V57_V53_V54_V159.espresso.net`
-- `/System/Library/ImagingNetworks/anst_refiner256x256-v2.D23_V57_V53_V54_V159.espresso.precompilation_info`
-- `/System/Library/ImagingNetworks/anst_refiner256x256-v2.D23_V57_V53_V54_V159.espresso.shape`
-- `/System/Library/ImagingNetworks/deep_fusion-v2.D23_V57_V53_V54_V159.espresso.hwx`
-- `/System/Library/ImagingNetworks/deep_fusion-v2.D23_V57_V53_V54_V159.espresso.net`
-- `/System/Library/ImagingNetworks/deep_fusion-v2.D23_V57_V53_V54_V159.espresso.precompilation_info`
-- `/System/Library/ImagingNetworks/deep_fusion-v2.D23_V57_V53_V54_V159.espresso.shape`
-- `/System/Library/ImagingNetworks/deep_transfer-v3.D23_V57_V53_V54_V159.espresso.hwx`
-- `/System/Library/ImagingNetworks/deep_transfer-v3.D23_V57_V53_V54_V159.espresso.net`
-- `/System/Library/ImagingNetworks/deep_transfer-v3.D23_V57_V53_V54_V159.espresso.precompilation_info`
-- `/System/Library/ImagingNetworks/deep_transfer-v3.D23_V57_V53_V54_V159.espresso.shape`
-- `/System/Library/ImagingNetworks/deep_transfer_stereo_photo-v2.V57_V53_V54.espresso.hwx`
-- `/System/Library/ImagingNetworks/deep_transfer_stereo_photo-v2.V57_V53_V54.espresso.net`
-- `/System/Library/ImagingNetworks/deep_transfer_stereo_photo-v2.V57_V53_V54.espresso.precompilation_info`
-- `/System/Library/ImagingNetworks/deep_transfer_stereo_photo-v2.V57_V53_V54.espresso.shape`
-- `/System/Library/ImagingNetworks/deep_transfer_zoom-v2.D23_V57_V53_V54_V159.espresso.hwx`
-- `/System/Library/ImagingNetworks/deep_transfer_zoom-v2.D23_V57_V53_V54_V159.espresso.net`
-- `/System/Library/ImagingNetworks/deep_transfer_zoom-v2.D23_V57_V53_V54_V159.espresso.precompilation_info`
-- `/System/Library/ImagingNetworks/deep_transfer_zoom-v2.D23_V57_V53_V54_V159.espresso.shape`
-- `/System/Library/ImagingNetworks/deep_zoom-lite-v2.D23_V57_V53_V54_V159.espresso.hwx`
-- `/System/Library/ImagingNetworks/deep_zoom-lite-v2.D23_V57_V53_V54_V159.espresso.net`
-- `/System/Library/ImagingNetworks/deep_zoom-lite-v2.D23_V57_V53_V54_V159.espresso.precompilation_info`
-- `/System/Library/ImagingNetworks/deep_zoom-lite-v2.D23_V57_V53_V54_V159.espresso.shape`
-- `/System/Library/ImagingNetworks/deep_zoom-v2.D23_V57_V53_V54_V159.espresso.hwx`
-- `/System/Library/ImagingNetworks/deep_zoom-v2.D23_V57_V53_V54_V159.espresso.net`
-- `/System/Library/ImagingNetworks/deep_zoom-v2.D23_V57_V53_V54_V159.espresso.precompilation_info`
-- `/System/Library/ImagingNetworks/deep_zoom-v2.D23_V57_V53_V54_V159.espresso.shape`
-- `/System/Library/ImagingNetworks/learnedfusion_demosaic_quadra-v1.1.D23_V57_V53_V54_V159.E5.espresso.bundle/H18.bundle/H18.e5`
-- `/System/Library/ImagingNetworks/learnedfusion_demosaic_quadra-v1.1.D23_V57_V53_V54_V159.E5.espresso.bundle/H18.bundle/main/main_ane/model.hwx`
-- `/System/Library/ImagingNetworks/learnedfusion_fusion-v1.1.D23_V57_V53_V54_V159.E5.espresso.bundle/H18.bundle/H18.e5`
-- `/System/Library/ImagingNetworks/learnedfusion_fusion-v1.1.D23_V57_V53_V54_V159.E5.espresso.bundle/H18.bundle/main/main_ane/model.hwx`
-- `/System/Library/ImagingNetworks/learnedhrnr-BCHW-quadra-v1.5o.D23_V57_V53_V54_V159.E5.espresso.bundle/H18.bundle/H18.e5`
-- `/System/Library/ImagingNetworks/learnedhrnr-BCHW-quadra-v1.5o.D23_V57_V53_V54_V159.E5.espresso.bundle/H18.bundle/main/main_ane/model.hwx`
-- `/System/Library/ImagingNetworks/learnedhrnr-BCHW-v1.3o.D23_V57_V53_V54_V159.E5.espresso.bundle/H18.bundle/H18.e5`
-- `/System/Library/ImagingNetworks/learnedhrnr-BCHW-v1.3o.D23_V57_V53_V54_V159.E5.espresso.bundle/H18.bundle/main/main_ane/model.hwx`
-- `/System/Library/ImagingNetworks/learnedmatting-f16-v4.D23_V57_V53_V54.E5.espresso.bundle/H18.bundle/H18.e5`
-- `/System/Library/ImagingNetworks/learnedmatting-f16-v4.D23_V57_V53_V54.E5.espresso.bundle/H18.bundle/main/segment_0__ane/net.hwx`
-- `/System/Library/ImagingNetworks/learnedmatting-f16-v4.D23_V57_V53_V54.espresso.hwx`
-- `/System/Library/ImagingNetworks/learnedmatting-f16-v4.D23_V57_V53_V54.espresso.net`
-- `/System/Library/ImagingNetworks/learnedmatting-f16-v4.D23_V57_V53_V54.espresso.precompilation_info`
-- `/System/Library/ImagingNetworks/learnedmatting-f16-v4.D23_V57_V53_V54.espresso.shape`
-- `/System/Library/ImagingNetworks/learnedmatting-v5.D23_V57_V53_V54.E5.espresso.bundle/H18.bundle/H18.e5`
-- `/System/Library/ImagingNetworks/learnedmatting-v5.D23_V57_V53_V54.E5.espresso.bundle/H18.bundle/main/main_ane/model.hwx`
-- `/System/Library/ImagingNetworks/learnednoisereduction-quadra-v1.D23_V57_V53_V54_V159.espresso.hwx`
-- `/System/Library/ImagingNetworks/learnednoisereduction-quadra-v1.D23_V57_V53_V54_V159.espresso.net`
-- `/System/Library/ImagingNetworks/learnednoisereduction-quadra-v1.D23_V57_V53_V54_V159.espresso.precompilation_info`
-- `/System/Library/ImagingNetworks/learnednoisereduction-quadra-v1.D23_V57_V53_V54_V159.espresso.shape`
-- `/System/Library/ImagingNetworks/learnednoisereduction_bayer_v4.D23_V57_V53_V54.E5.espresso.bundle/H18.bundle/H18.e5`
-- `/System/Library/ImagingNetworks/learnednoisereduction_bayer_v4.D23_V57_V53_V54.E5.espresso.bundle/H18.bundle/main/main_ane/model.hwx`
-- `/System/Library/ImagingNetworks/learnednoisereduction_quadra_v3.D23_V57_V53_V54_V159.E5.espresso.bundle/H18.bundle/H18.e5`
-- `/System/Library/ImagingNetworks/learnednoisereduction_quadra_v3.D23_V57_V53_V54_V159.E5.espresso.bundle/H18.bundle/main/main_ane/model.hwx`
-- `/System/Library/ImagingNetworks/mrflownet-v2.D23_V57_V53_V54_V159.espresso.hwx`
-- `/System/Library/ImagingNetworks/mrflownet-v2.D23_V57_V53_V54_V159.espresso.net`
-- `/System/Library/ImagingNetworks/mrflownet-v2.D23_V57_V53_V54_V159.espresso.shape`
-- `/System/Library/ImagingNetworks/nightmode_dnr_bayer_argyle_tripod_max_v1.1.D23_V57_V53_V54_V159.espresso.hwx`
-- `/System/Library/ImagingNetworks/nightmode_dnr_bayer_argyle_tripod_max_v1.1.D23_V57_V53_V54_V159.espresso.net`
-- `/System/Library/ImagingNetworks/nightmode_dnr_bayer_argyle_tripod_max_v1.1.D23_V57_V53_V54_V159.espresso.precompilation_info`
-- `/System/Library/ImagingNetworks/nightmode_dnr_bayer_argyle_tripod_max_v1.1.D23_V57_V53_V54_V159.espresso.shape`
-- `/System/Library/ImagingNetworks/nightmode_dnr_bayer_barrington_v1.2.D23_V57_V53_V54_V159.espresso.hwx`
-- `/System/Library/ImagingNetworks/nightmode_dnr_bayer_barrington_v1.2.D23_V57_V53_V54_V159.espresso.net`
-- `/System/Library/ImagingNetworks/nightmode_dnr_bayer_barrington_v1.2.D23_V57_V53_V54_V159.espresso.precompilation_info`
-- `/System/Library/ImagingNetworks/nightmode_dnr_bayer_barrington_v1.2.D23_V57_V53_V54_V159.espresso.shape`
-- `/System/Library/ImagingNetworks/nightmode_dnr_bayer_v1.1.D23_V57_V53_V54_V159.espresso.hwx`
-- `/System/Library/ImagingNetworks/nightmode_dnr_bayer_v1.1.D23_V57_V53_V54_V159.espresso.net`
-- `/System/Library/ImagingNetworks/nightmode_dnr_bayer_v1.1.D23_V57_V53_V54_V159.espresso.precompilation_info`
-- `/System/Library/ImagingNetworks/nightmode_dnr_bayer_v1.1.D23_V57_V53_V54_V159.espresso.shape`
-- `/System/Library/ImagingNetworks/nightmode_dnr_quadra_v1.2.D23_V57_V53_V54_V159.espresso.hwx`
-- `/System/Library/ImagingNetworks/nightmode_dnr_quadra_v1.2.D23_V57_V53_V54_V159.espresso.net`
-- `/System/Library/ImagingNetworks/nightmode_dnr_quadra_v1.2.D23_V57_V53_V54_V159.espresso.precompilation_info`
-- `/System/Library/ImagingNetworks/nightmode_dnr_quadra_v1.2.D23_V57_V53_V54_V159.espresso.shape`
-- `/System/Library/ImagingNetworks/nightmode_fusion_bayer_argyle_tripod_max_v1.1.D23_V57_V53_V54_V159.espresso.hwx`
-- `/System/Library/ImagingNetworks/nightmode_fusion_bayer_argyle_tripod_max_v1.1.D23_V57_V53_V54_V159.espresso.net`
-- `/System/Library/ImagingNetworks/nightmode_fusion_bayer_argyle_tripod_max_v1.1.D23_V57_V53_V54_V159.espresso.precompilation_info`
-- `/System/Library/ImagingNetworks/nightmode_fusion_bayer_argyle_tripod_max_v1.1.D23_V57_V53_V54_V159.espresso.shape`
-- `/System/Library/ImagingNetworks/nightmode_fusion_bayer_barrington_v1.2.D23_V57_V53_V54_V159.espresso.hwx`
-- `/System/Library/ImagingNetworks/nightmode_fusion_bayer_barrington_v1.2.D23_V57_V53_V54_V159.espresso.net`
-- `/System/Library/ImagingNetworks/nightmode_fusion_bayer_barrington_v1.2.D23_V57_V53_V54_V159.espresso.precompilation_info`
-- `/System/Library/ImagingNetworks/nightmode_fusion_bayer_barrington_v1.2.D23_V57_V53_V54_V159.espresso.shape`
-- `/System/Library/ImagingNetworks/nightmode_fusion_bayer_v1.1.D23_V57_V53_V54_V159.espresso.hwx`
-- `/System/Library/ImagingNetworks/nightmode_fusion_bayer_v1.1.D23_V57_V53_V54_V159.espresso.net`
-- `/System/Library/ImagingNetworks/nightmode_fusion_bayer_v1.1.D23_V57_V53_V54_V159.espresso.precompilation_info`
-- `/System/Library/ImagingNetworks/nightmode_fusion_bayer_v1.1.D23_V57_V53_V54_V159.espresso.shape`
-- `/System/Library/ImagingNetworks/nightmode_fusion_quadra_v1.2.D23_V57_V53_V54_V159.espresso.hwx`
-- `/System/Library/ImagingNetworks/nightmode_fusion_quadra_v1.2.D23_V57_V53_V54_V159.espresso.net`
-- `/System/Library/ImagingNetworks/nightmode_fusion_quadra_v1.2.D23_V57_V53_V54_V159.espresso.precompilation_info`
-- `/System/Library/ImagingNetworks/nightmode_fusion_quadra_v1.2.D23_V57_V53_V54_V159.espresso.shape`
-- `/System/Library/ImagingNetworks/raw_deep_fusion-v1.D23_V57_V53_V54_V159.E5.espresso.bundle/H18.bundle/H18.e5`
-- `/System/Library/ImagingNetworks/raw_deep_fusion-v1.D23_V57_V53_V54_V159.E5.espresso.bundle/H18.bundle/main/segment_0__ane/net.hwx`
-- `/System/Library/ImagingNetworks/raw_deep_fusion_ac-v1.D23_V57_V53_V54_V159.E5.espresso.bundle/H18.bundle/H18.e5`
-- `/System/Library/ImagingNetworks/raw_deep_fusion_ac-v1.D23_V57_V53_V54_V159.E5.espresso.bundle/H18.bundle/main/segment_0__ane/net.hwx`
-- `/System/Library/ImagingNetworks/raw_deep_fusion_lowlight-v1.D23_V57_V53_V54_V159.E5.espresso.bundle/H18.bundle/H18.e5`
-- `/System/Library/ImagingNetworks/raw_deep_fusion_lowlight-v1.D23_V57_V53_V54_V159.E5.espresso.bundle/H18.bundle/main/segment_0__ane/net.hwx`
-- `/System/Library/ImagingNetworks/raw_deep_fusion_opt2-v2.D23_V57_V53_V54_V159.E5.espresso.bundle/H18.bundle/H18.e5`
-- `/System/Library/ImagingNetworks/raw_deep_fusion_opt2-v2.D23_V57_V53_V54_V159.E5.espresso.bundle/H18.bundle/main/segment_0__ane/net.hwx`
-- `/System/Library/ImagingNetworks/smudgenet-v1.D23_V57_V53_V54_V159.E5.espresso.bundle/H18.bundle/H18.e5`
-- `/System/Library/ImagingNetworks/smudgenet-v1.D23_V57_V53_V54_V159.E5.espresso.bundle/H18.bundle/main/main_ane/model.hwx`
-- `/System/Library/ImagingNetworks/video_deghosting-v1.D23_V57_V53_V54_V159.espresso.hwx`
-- `/System/Library/ImagingNetworks/video_deghosting-v1.D23_V57_V53_V54_V159.espresso.net`
-- `/System/Library/ImagingNetworks/video_deghosting-v1.D23_V57_V53_V54_V159.espresso.precompilation_info`
-- `/System/Library/ImagingNetworks/video_deghosting-v1.D23_V57_V53_V54_V159.espresso.shape`
+- `/System/Library/ImagingNetworks/learnedmatting-f16-v2.D47_D48_D93_D94_V59_J817_J818_J820_J821.espresso.hwx`
+- `/System/Library/ImagingNetworks/learnedmatting-f16-v2.D47_D48_D93_D94_V59_J817_J818_J820_J821.espresso.net`
+- `/System/Library/ImagingNetworks/learnedmatting-f16-v2.D47_D48_D93_D94_V59_J817_J818_J820_J821.espresso.precompilation_info`
+- `/System/Library/ImagingNetworks/learnedmatting-f16-v2.D47_D48_D93_D94_V59_J817_J818_J820_J821.espresso.shape`
 - `/System/Library/NanoTimeKit/FaceBundles/NTKZeusFaceBundleCompanion.bundle/Zeus-SS2026.color.plist`
 - `/System/Library/NanoTimeKit/FaceBundles/NTKZeusFaceBundleCompanion.bundle/ZeusBellona-SS2026.color.plist`
 - `/System/Library/PreferenceBundles/ICSSettingsBundle.bundle/ICSCallAnnouncementSettings-AZDENE_FEATURES.loctable`
@@ -516,12 +415,12 @@
 - `/System/Library/PreferenceManifests/FocusSettingsSearch.bundle/Info.plist`
 - `/System/Library/PreferenceManifests/FocusSettingsSearch.bundle/SettingsSearchManifest-com.apple.focussettings.loctable`
 - `/System/Library/PreferenceManifests/FocusSettingsSearch.bundle/SettingsSearchManifest-com.apple.focussettings.plist`
-- `/System/Library/PrivateFrameworks/ANSTKit.framework/Models/anst_v5d0.mlmodelc/model.bundle/H18.bundle/H18.e5`
-- `/System/Library/PrivateFrameworks/ANSTKit.framework/Models/anst_v5d0.mlmodelc/model.bundle/H18.bundle/ane_compile/multiprocedure/model.hwx`
-- `/System/Library/PrivateFrameworks/ANSTKit.framework/Models/anst_v5d2.mlmodelc/model.bundle/H18.bundle/H18.e5`
-- `/System/Library/PrivateFrameworks/ANSTKit.framework/Models/anst_v5d2.mlmodelc/model.bundle/H18.bundle/regular/regular_ane/model.hwx`
-- `/System/Library/PrivateFrameworks/ANSTKit.framework/Models/anst_v5d3.mlmodelc/model.bundle/H18.bundle/H18.e5`
-- `/System/Library/PrivateFrameworks/ANSTKit.framework/Models/anst_v5d3.mlmodelc/model.bundle/H18.bundle/regular/regular_ane/model.hwx`
+- `/System/Library/PrivateFrameworks/ANSTKit.framework/Models/anst_v5d0.mlmodelc/model.bundle/H17.bundle/H17.e5`
+- `/System/Library/PrivateFrameworks/ANSTKit.framework/Models/anst_v5d0.mlmodelc/model.bundle/H17.bundle/ane_compile/multiprocedure/model.hwx`
+- `/System/Library/PrivateFrameworks/ANSTKit.framework/Models/anst_v5d2.mlmodelc/model.bundle/H17.bundle/H17.e5`
+- `/System/Library/PrivateFrameworks/ANSTKit.framework/Models/anst_v5d2.mlmodelc/model.bundle/H17.bundle/regular/regular_ane/model.hwx`
+- `/System/Library/PrivateFrameworks/ANSTKit.framework/Models/anst_v5d3.mlmodelc/model.bundle/H17.bundle/H17.e5`
+- `/System/Library/PrivateFrameworks/ANSTKit.framework/Models/anst_v5d3.mlmodelc/model.bundle/H17.bundle/regular/regular_ane/model.hwx`
 - `/System/Library/PrivateFrameworks/AppleMediaServicesUIKitInternal.framework/amsuikit-account-hub.jetpack`
 - `/System/Library/PrivateFrameworks/ApplePushService.framework/FakeAPNSServerTests.xctest/FakeAPNSServerTests`
 - `/System/Library/PrivateFrameworks/ApplePushService.framework/FakeAPNSServerTests.xctest/Info.plist`
@@ -535,26 +434,26 @@
 - `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/SystemSearch/v7.0.0/text_md7_6bit_ctx_512_77.mlmodelc/analytics/coremldata.bin`
 - `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/SystemSearch/v7.0.0/text_md7_6bit_ctx_512_77.mlmodelc/coremldata.bin`
 - `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/SystemSearch/v7.0.0/text_md7_6bit_ctx_512_77.mlmodelc/metadata.json`
-- `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/SystemSearch/v7.0.0/text_md7_6bit_ctx_512_77.mlmodelc/model.specialization.bundle/H18.bundle/H18.e5`
-- `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/SystemSearch/v7.0.0/text_md7_6bit_ctx_512_77.mlmodelc/model.specialization.bundle/H18.bundle/ane_compile/multiprocedure/model.hwx`
-- `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/SystemSearch/v7.0.0/text_md7_6bit_ctx_512_77.mlmodelc/model.specialization.bundle/H18.bundle/main_ctx_512/main_ctx_512_bnns/bnns_program.bnnsir`
-- `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/SystemSearch/v7.0.0/text_md7_6bit_ctx_512_77.mlmodelc/model.specialization.bundle/H18.bundle/main_ctx_77/main_ctx_77_bnns/bnns_program.bnnsir`
+- `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/SystemSearch/v7.0.0/text_md7_6bit_ctx_512_77.mlmodelc/model.specialization.bundle/H17.bundle/H17.e5`
+- `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/SystemSearch/v7.0.0/text_md7_6bit_ctx_512_77.mlmodelc/model.specialization.bundle/H17.bundle/ane_compile/multiprocedure/model.hwx`
+- `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/SystemSearch/v7.0.0/text_md7_6bit_ctx_512_77.mlmodelc/model.specialization.bundle/H17.bundle/main_ctx_512/main_ctx_512_bnns/bnns_program.bnnsir`
+- `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/SystemSearch/v7.0.0/text_md7_6bit_ctx_512_77.mlmodelc/model.specialization.bundle/H17.bundle/main_ctx_77/main_ctx_77_bnns/bnns_program.bnnsir`
 - `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/SystemSearch/v7.0.0/token_md7_6bit.mlmodelc/analytics/coremldata.bin`
 - `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/SystemSearch/v7.0.0/token_md7_6bit.mlmodelc/coremldata.bin`
 - `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/SystemSearch/v7.0.0/token_md7_6bit.mlmodelc/metadata.json`
-- `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/SystemSearch/v7.0.0/token_md7_6bit.mlmodelc/model.specialization.bundle/H18.bundle/H18.e5`
-- `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/SystemSearch/v7.0.0/token_md7_6bit.mlmodelc/model.specialization.bundle/H18.bundle/main_c5dc6880/main_bnns/bnns_program.bnnsir`
+- `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/SystemSearch/v7.0.0/token_md7_6bit.mlmodelc/model.specialization.bundle/H17.bundle/H17.e5`
+- `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/SystemSearch/v7.0.0/token_md7_6bit.mlmodelc/model.specialization.bundle/H17.bundle/main_c5dc6880/main_bnns/bnns_program.bnnsir`
 - `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/image_captioning/ImageCaptioningMD7_iyz2icc7y5-1200/ImageCaptioning-mica_v7.0.0_iyz2icc7y5-1200.reverse_vocab.json`
 - `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/image_captioning/ImageCaptioningMD7_iyz2icc7y5-1200/ImageCaptioning-mica_v7.0.0_iyz2icc7y5-1200_bridge_kmeans-8bit-cgs8.mlmodelc/analytics/coremldata.bin`
 - `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/image_captioning/ImageCaptioningMD7_iyz2icc7y5-1200/ImageCaptioning-mica_v7.0.0_iyz2icc7y5-1200_bridge_kmeans-8bit-cgs8.mlmodelc/coremldata.bin`
 - `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/image_captioning/ImageCaptioningMD7_iyz2icc7y5-1200/ImageCaptioning-mica_v7.0.0_iyz2icc7y5-1200_bridge_kmeans-8bit-cgs8.mlmodelc/metadata.json`
-- `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/image_captioning/ImageCaptioningMD7_iyz2icc7y5-1200/ImageCaptioning-mica_v7.0.0_iyz2icc7y5-1200_bridge_kmeans-8bit-cgs8.mlmodelc/model.specialization.bundle/H18.bundle/H18.e5`
-- `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/image_captioning/ImageCaptioningMD7_iyz2icc7y5-1200/ImageCaptioning-mica_v7.0.0_iyz2icc7y5-1200_bridge_kmeans-8bit-cgs8.mlmodelc/model.specialization.bundle/H18.bundle/main/main_ane/model.hwx`
+- `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/image_captioning/ImageCaptioningMD7_iyz2icc7y5-1200/ImageCaptioning-mica_v7.0.0_iyz2icc7y5-1200_bridge_kmeans-8bit-cgs8.mlmodelc/model.specialization.bundle/H17.bundle/H17.e5`
+- `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/image_captioning/ImageCaptioningMD7_iyz2icc7y5-1200/ImageCaptioning-mica_v7.0.0_iyz2icc7y5-1200_bridge_kmeans-8bit-cgs8.mlmodelc/model.specialization.bundle/H17.bundle/main/main_ane/model.hwx`
 - `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/image_captioning/ImageCaptioningMD7_iyz2icc7y5-1200/ImageCaptioning-mica_v7.0.0_iyz2icc7y5-1200_decoder_kmeans-6bit-cgs8.mlmodelc/analytics/coremldata.bin`
 - `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/image_captioning/ImageCaptioningMD7_iyz2icc7y5-1200/ImageCaptioning-mica_v7.0.0_iyz2icc7y5-1200_decoder_kmeans-6bit-cgs8.mlmodelc/coremldata.bin`
 - `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/image_captioning/ImageCaptioningMD7_iyz2icc7y5-1200/ImageCaptioning-mica_v7.0.0_iyz2icc7y5-1200_decoder_kmeans-6bit-cgs8.mlmodelc/metadata.json`
-- `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/image_captioning/ImageCaptioningMD7_iyz2icc7y5-1200/ImageCaptioning-mica_v7.0.0_iyz2icc7y5-1200_decoder_kmeans-6bit-cgs8.mlmodelc/model.specialization.bundle/H18.bundle/H18.e5`
-- `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/image_captioning/ImageCaptioningMD7_iyz2icc7y5-1200/ImageCaptioning-mica_v7.0.0_iyz2icc7y5-1200_decoder_kmeans-6bit-cgs8.mlmodelc/model.specialization.bundle/H18.bundle/main/main_ane/model.hwx`
+- `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/image_captioning/ImageCaptioningMD7_iyz2icc7y5-1200/ImageCaptioning-mica_v7.0.0_iyz2icc7y5-1200_decoder_kmeans-6bit-cgs8.mlmodelc/model.specialization.bundle/H17.bundle/H17.e5`
+- `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/image_captioning/ImageCaptioningMD7_iyz2icc7y5-1200/ImageCaptioning-mica_v7.0.0_iyz2icc7y5-1200_decoder_kmeans-6bit-cgs8.mlmodelc/model.specialization.bundle/H17.bundle/main/main_ane/model.hwx`
 - `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/image_captioning/ImageCaptioningMD7_iyz2icc7y5-1200/ImageCaptioning.config.json`
 - `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/image_captioning/ImageCaptioningMD7_iyz2icc7y5-1200/ImageCaptioning_GP_PeopleDetection.config.json`
 - `/System/Library/PrivateFrameworks/CoreSceneUnderstanding.framework/image_captioning/ImageCaptioningMD7_iyz2icc7y5-1200/ImageCaptioning_Safe.config.json`
@@ -609,8 +508,8 @@
 - `/System/Library/PrivateFrameworks/HybridDatabaseToolUtils.framework/convert_csv_to_bin_dataset.py`
 - `/System/Library/PrivateFrameworks/HybridDatabaseToolUtils.framework/convert_old_binary_dataset.py`
 - `/System/Library/PrivateFrameworks/HybridDatabaseToolUtils.framework/convert_vector_dataset_datatype.py`
-- `/System/Library/PrivateFrameworks/LearnedFeatures.framework/CV3D_LearnedFeatures_ATUHardNetGlobalFeat_EndToEnd_Model/p32_64u_u8_3_7_0_6aa24xpnhm_b1024_gf_i_128f_u8_3_7_0_a3p73mmcsz_b1/model.bundle/H18.bundle/H18.e5`
-- `/System/Library/PrivateFrameworks/LearnedFeatures.framework/CV3D_LearnedFeatures_ATUHardNetGlobalFeat_EndToEnd_Model/p32_64u_u8_3_7_0_6aa24xpnhm_b1024_gf_i_128f_u8_3_7_0_a3p73mmcsz_b1/model.bundle/H18.bundle/main/segment_0__ane/net.hwx`
+- `/System/Library/PrivateFrameworks/LearnedFeatures.framework/CV3D_LearnedFeatures_ATUHardNetGlobalFeat_EndToEnd_Model/p32_64u_u8_3_7_0_6aa24xpnhm_b1024_gf_i_128f_u8_3_7_0_a3p73mmcsz_b1/model.bundle/H17.bundle/H17.e5`
+- `/System/Library/PrivateFrameworks/LearnedFeatures.framework/CV3D_LearnedFeatures_ATUHardNetGlobalFeat_EndToEnd_Model/p32_64u_u8_3_7_0_6aa24xpnhm_b1024_gf_i_128f_u8_3_7_0_a3p73mmcsz_b1/model.bundle/H17.bundle/main/segment_0__ane/net.hwx`
 - `/System/Library/PrivateFrameworks/NanoTimeKit.framework/FaceColors-SS2026.color.plist`
 - `/System/Library/PrivateFrameworks/NanoTimeKit.framework/FaceColors-SS2026.loctable`
 - `/System/Library/PrivateFrameworks/NewsUserEvents.framework/Info.plist`
@@ -620,8 +519,8 @@
 - `/System/Library/PrivateFrameworks/TextComposer.framework/Metadata.generativefunctions/Ftcprft06LDyVuXKKe2en5HeZX4.`
 - `/System/Library/PrivateFrameworks/TextComposer.framework/Metadata.generativefunctions/Te3x--5O6-33yeydOnw_1UkHkTQ.`
 - `/System/Library/PrivateFrameworks/TextComposer.framework/Metadata.generativefunctions/er2_8RwnBMfNUH1qSx7zArxSDC4.`
-- `/System/Library/PrivateFrameworks/TextRecognition.framework/cr_tr_model_arabic_v3.mlmodelc.bundle/model.H18.espresso.hwx`
-- `/System/Library/PrivateFrameworks/TextRecognition.framework/cr_tr_model_arabic_v3.mlmodelc.bundle/model.H18.espresso.precompilation_info`
+- `/System/Library/PrivateFrameworks/TextRecognition.framework/cr_tr_model_arabic_v3.mlmodelc.bundle/model.H17.espresso.hwx`
+- `/System/Library/PrivateFrameworks/TextRecognition.framework/cr_tr_model_arabic_v3.mlmodelc.bundle/model.H17.espresso.precompilation_info`
 - `/System/Library/PrivateFrameworks/VFXAssets.framework/com.apple.vfx.siribloom-default.vfx/info.json`
 - `/System/Library/PrivateFrameworks/VFXAssets.framework/com.apple.vfx.siribloom-default.vfx/scene.vfxbin`
 - `/System/Library/PrivateFrameworks/VFXAssets.framework/com.apple.vfx.siribloom-default.vfx/world.plist`
@@ -813,8 +712,8 @@
 - `/private/var/staged_system_apps/VoiceMemos.app/zh_CN.lproj/nlu.appintents/57d0ed2c03beef92fb282b0a246cdc62.version`
 - `/private/var/staged_system_apps/VoiceMemos.app/zh_HK.lproj/nlu.appintents/78636db0255e6d838ef7a65c8b1fc3b2.version`
 - `/private/var/staged_system_apps/VoiceMemos.app/zh_TW.lproj/nlu.appintents/110d145b56cd912660c5e40d6ed36bc3.version`
-- `/usr/share/firmware/bluetooth/BCM4399C2_24.1.232.1331_PCIE_Nepenthes_CLPC_OS_STATS_20260520.bin`
-- `/usr/share/firmware/bluetooth/BCM4399C2_24.1.232.1332_PCIE_Nepenthes_CLPC_OS_USI_20260520.bin`
+- `/usr/share/firmware/bluetooth/BCM4399C2_24.1.232.1329_PCIE_Cephalotus_CLPC_OS_STATS_20260520.bin`
+- `/usr/share/firmware/bluetooth/BCM4399C2_24.1.232.1330_PCIE_Cephalotus_CLPC_OS_USI_20260520.bin`
 - `/usr/share/kpep/a10.plist`
 - `/usr/share/kpep/a11.plist`
 - `/usr/share/kpep/a12.plist`

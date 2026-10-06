@@ -2,18 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/SiriOntologyProtobuf.framework/SiriOntologyProtobuf`
 
-```diff
+### Section Size Changes
 
- 3605.4.1.0.0
--  __TEXT.__text: 0xccfe4
-+  __TEXT.__text: 0xccfc0
-   __TEXT.__const: 0x97a4
-   __TEXT.__swift5_typeref: 0x1412
-   __TEXT.__constg_swiftt: 0x282c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcf204` | `0xcf1e0` | **`-0x24`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2abd0d89c -> sub_2ab9e389c : 660 -> 648
-~ sub_2abd0de8c -> sub_2ab9e3e80 : 264 -> 276
-~ sub_2abd269a8 -> sub_2ab9fc9a8 : 660 -> 648
-~ sub_2abd26c8c -> sub_2ab9fcc80 : 660 -> 648
-~ sub_2abd26f70 -> sub_2ab9fcf58 : 660 -> 648
+~ sub_2af5bdb70 -> sub_2af303b70 : 664 -> 652
+~ sub_2af5be174 -> sub_2af304168 : 264 -> 276
+~ sub_2af5d6fcc -> sub_2af31cfcc : 664 -> 652
+~ sub_2af5d72b4 -> sub_2af31d2a8 : 664 -> 652
+~ sub_2af5d759c -> sub_2af31d584 : 664 -> 652
 ```

@@ -2,30 +2,25 @@
 
 > `/System/Library/Frameworks/CoreTelephony.framework/Support/libSystemDetermination.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x707d4` | `0x6fef8` | **`-0x8dc`** |
+| `__TEXT.__oslogstring` | `0xa272` | `0x9dfe` | **`-0x474`** |
+| `__TEXT.__gcc_except_tab` | `0x5a38` | `0x5a2c` | **`-0xc`** |
+
+### Other Changes
+
 ```diff
 
 -13487.3.0.0.0
--  __TEXT.__text: 0x707d4
 +13487.6.0.0.0
-+  __TEXT.__text: 0x6fef8
-   __TEXT.__const: 0x3f09
--  __TEXT.__gcc_except_tab: 0x5a38
-+  __TEXT.__gcc_except_tab: 0x5a2c
-   __TEXT.__cstring: 0x36e0
--  __TEXT.__oslogstring: 0xa272
-+  __TEXT.__oslogstring: 0x9dfe
-   __TEXT.__unwind_info: 0x2458
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0xdf8
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 1804
 -  Symbols:   2973
 -  CStrings:  1475
 +  Symbols:   2970
 +  CStrings:  1453
- 
 Symbols:
 - _TelephonyUtilIsOversteerEnabled
 - __Z8asString18RegistrationStatus

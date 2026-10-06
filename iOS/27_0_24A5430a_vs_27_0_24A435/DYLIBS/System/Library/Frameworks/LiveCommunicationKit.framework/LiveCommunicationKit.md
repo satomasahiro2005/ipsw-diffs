@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/LiveCommunicationKit.framework/LiveCommunicationKit`
 
-```diff
+### Section Size Changes
 
- 153.100.1.2.29
--  __TEXT.__text: 0x3e464
-+  __TEXT.__text: 0x3e468
-   __TEXT.__objc_methlist: 0x418
-   __TEXT.__const: 0x5420
-   __TEXT.__constg_swiftt: 0x1608
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3e464` | `0x3e468` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2493b6a98 -> sub_249d9ba98 : 404 -> 408
+~ sub_249263a98 -> sub_249c4fa98 : 404 -> 408
 ```

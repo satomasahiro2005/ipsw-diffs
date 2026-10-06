@@ -2,36 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/PhotoLibraryServicesCore.framework/PhotoLibraryServicesCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcb61c` | `0xcb768` | **`+0x14c`** |
+| `__TEXT.__oslogstring` | `0xb0f7` | `0xb154` | **`+0x5d`** |
+| `__TEXT.__unwind_info` | `0x3478` | `0x3488` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.233.0.0
--  __TEXT.__text: 0xcb61c
 +912.0.234.0.0
-+  __TEXT.__text: 0xcb768
-   __TEXT.__objc_methlist: 0x833c
-   __TEXT.__const: 0x2324
-   __TEXT.__dlopen_cstrs: 0x19c
-   __TEXT.__gcc_except_tab: 0x5710
-   __TEXT.__cstring: 0x15f4c
--  __TEXT.__oslogstring: 0xb0f7
-+  __TEXT.__oslogstring: 0xb154
-   __TEXT.__ustring: 0x4
--  __TEXT.__unwind_info: 0x3478
-+  __TEXT.__unwind_info: 0x3488
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libperfcheck.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 3967
--  Symbols:   9430
+-  Symbols:   7891
 -  CStrings:  3670
 +  Functions: 3968
-+  Symbols:   9432
++  Symbols:   7892
 +  CStrings:  3671
- 
 Symbols:
 + GCC_except_table1053
 + GCC_except_table1117
@@ -257,7 +248,6 @@ Symbols:
 + GCC_except_table3932
 + GCC_except_table3937
 + _PLCreateDirectoryIfNeededAndGetSandboxExtensionToken
-+ _objc_msgSend$descriptionWithPath:
 - GCC_except_table1052
 - GCC_except_table1116
 - GCC_except_table1118

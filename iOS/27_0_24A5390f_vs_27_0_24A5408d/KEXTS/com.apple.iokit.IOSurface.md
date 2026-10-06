@@ -2,36 +2,28 @@
 
 > `com.apple.iokit.IOSurface`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x332bc` | `0x33968` | **`+0x6ac`** |
+| `__TEXT.__os_log` | `0x3501` | `0x3779` | **`+0x278`** |
+| `__TEXT.__cstring` | `0x3355` | `0x33b7` | **`+0x62`** |
+| `__TEXT_EXEC.__auth_stubs` | `0x900` | `0x940` | **`+0x40`** |
+| `__DATA_CONST.__auth_got` | `0x480` | `0x4a0` | **`+0x20`** |
+| `__TEXT.__const` | `0x40` | `0x60` | **`+0x20`** |
+
+### Other Changes
+
 ```diff
 
 -402.5.0.0.0
--  __TEXT.__cstring: 0x3355
--  __TEXT.__os_log: 0x3501
--  __TEXT.__const: 0x40
--  __TEXT_EXEC.__text: 0x332bc
--  __TEXT_EXEC.__auth_stubs: 0x900
-+402.8.0.0.0
-+  __TEXT.__cstring: 0x33b7
-+  __TEXT.__os_log: 0x3779
-+  __TEXT.__const: 0x60
-+  __TEXT_EXEC.__text: 0x33968
-+  __TEXT_EXEC.__auth_stubs: 0x940
-   __DATA.__data: 0x178
-   __DATA.__common: 0x460
-   __DATA.__bss: 0x38
-
-   __DATA_CONST.__const: 0x46f8
-   __DATA_CONST.__kalloc_type: 0xd00
-   __DATA_CONST.__kalloc_var: 0xaa0
--  __DATA_CONST.__auth_got: 0x480
-+  __DATA_CONST.__auth_got: 0x4a0
-   __DATA_CONST.__got: 0xd0
 -  Functions: 1324
++402.8.0.0.0
 +  Functions: 1330
-   Symbols:   0
+
 -  CStrings:  638
 +  CStrings:  649
- 
 CStrings:
 + "%s"
 + "%s%u"

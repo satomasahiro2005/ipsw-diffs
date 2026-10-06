@@ -2,121 +2,69 @@
 
 > `/System/Library/PreferenceBundles/SiriSettings.bundle/SiriSettings`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methtype`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe4e8` | `0xf2d4` | **`+0xdec`** |
+| `__TEXT.__cstring` | `0x38f` | `0x52f` | **`+0x1a0`** |
+| `__TEXT.__objc_stubs` | `0x580` | `0x6e0` | **`+0x160`** |
+| `__DATA.__objc_const` | `0x4d0` | `0x5f0` | **`+0x120`** |
+| `__DATA.__data` | `0x548` | `0x650` | **`+0x108`** |
+| `__DATA_CONST.__cfstring` | `0x60` | `0x140` | **`+0xe0`** |
+| `__TEXT.__objc_methname` | `0x685` | `0x745` | **`+0xc0`** |
+| `__TEXT.__auth_stubs` | `0xc40` | `0xcf0` | **`+0xb0`** |
+| `__TEXT.__constg_swiftt` | `0x31c` | `0x3b8` | **`+0x9c`** |
+| `__DATA.__bss` | `0x810` | `0x8a0` | **`+0x90`** |
+| `__TEXT.__const` | `0x7c8` | `0x858` | **`+0x90`** |
+| `__DATA_CONST.__const` | `0x7a0` | `0x810` | **`+0x70`** |
+| `__TEXT.__dlopen_cstrs` | `—` | `0x64` | **`+0x64`** |
+| `__DATA_CONST.__auth_got` | `0x628` | `0x688` | **`+0x60`** |
+| `__DATA_CONST.__auth_ptr` | `0x218` | `0x278` | **`+0x60`** |
+| `__DATA.__objc_selrefs` | `0x208` | `0x260` | **`+0x58`** |
+| `__TEXT.__unwind_info` | `0x430` | `0x488` | **`+0x58`** |
+| `__DATA.__objc_data` | `0x50` | `0xa0` | **`+0x50`** |
+| `__TEXT.__objc_classname` | `0xec` | `0x13c` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x148` | `0x160` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x15c` | `0x174` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x20` | `0x30` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `—` | `0x10` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x178` | `0x188` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0x2a3` | `0x2a9` | **`+0x6`** |
+| `__TEXT.__swift5_proto` | `0x40` | `0x44` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0x34` | `0x38` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methtype`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -3600.62.27.1.1
--  __TEXT.__text: 0xe4e8
--  __TEXT.__auth_stubs: 0xc40
--  __TEXT.__objc_stubs: 0x580
--  __TEXT.__objc_methlist: 0x15c
--  __TEXT.__const: 0x7c8
--  __TEXT.__objc_methname: 0x685
--  __TEXT.__objc_classname: 0xec
 +3600.62.36.1.1
-+  __TEXT.__text: 0xf2d4
-+  __TEXT.__auth_stubs: 0xcf0
-+  __TEXT.__objc_stubs: 0x6e0
-+  __TEXT.__objc_methlist: 0x174
-+  __TEXT.__const: 0x858
-+  __TEXT.__gcc_except_tab: 0x10
-+  __TEXT.__objc_classname: 0x13c
-   __TEXT.__objc_methtype: 0x199
--  __TEXT.__cstring: 0x38f
--  __TEXT.__swift5_typeref: 0x2a3
-+  __TEXT.__cstring: 0x52f
-+  __TEXT.__dlopen_cstrs: 0x64
-+  __TEXT.__objc_methname: 0x745
-+  __TEXT.__swift5_typeref: 0x2a9
-   __TEXT.__swift5_capture: 0xa4
--  __TEXT.__constg_swiftt: 0x31c
-+  __TEXT.__constg_swiftt: 0x3b8
-   __TEXT.__swift5_reflstr: 0x166
--  __TEXT.__swift5_fieldmd: 0x178
-+  __TEXT.__swift5_fieldmd: 0x188
-   __TEXT.__swift5_builtin: 0x14
--  __TEXT.__swift5_proto: 0x40
--  __TEXT.__swift5_types: 0x34
-+  __TEXT.__swift5_proto: 0x44
-+  __TEXT.__swift5_types: 0x38
-   __TEXT.__swift_as_entry: 0x2c
-   __TEXT.__swift_as_ret: 0x28
-   __TEXT.__swift_as_cont: 0x2c
-   __TEXT.__oslogstring: 0x172
-   __TEXT.__swift5_assocty: 0x30
--  __TEXT.__unwind_info: 0x430
-+  __TEXT.__unwind_info: 0x488
-   __TEXT.__eh_frame: 0x5f8
--  __DATA_CONST.__const: 0x7a0
--  __DATA_CONST.__cfstring: 0x60
--  __DATA_CONST.__objc_classlist: 0x20
-+  __DATA_CONST.__const: 0x810
-+  __DATA_CONST.__cfstring: 0x140
-+  __DATA_CONST.__objc_classlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__auth_got: 0x628
--  __DATA_CONST.__got: 0x148
--  __DATA_CONST.__auth_ptr: 0x218
--  __DATA.__objc_const: 0x4d0
--  __DATA.__objc_selrefs: 0x208
-+  __DATA_CONST.__auth_got: 0x688
-+  __DATA_CONST.__got: 0x160
-+  __DATA_CONST.__auth_ptr: 0x278
-+  __DATA.__objc_const: 0x5f0
-+  __DATA.__objc_selrefs: 0x260
-   __DATA.__objc_ivar: 0x4
--  __DATA.__objc_data: 0x50
--  __DATA.__data: 0x548
--  __DATA.__bss: 0x810
-+  __DATA.__objc_data: 0xa0
-+  __DATA.__data: 0x650
-+  __DATA.__bss: 0x8a0
-   __DATA.__common: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
 
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/PrivateFrameworks/AAAFoundationSwift.framework/AAAFoundationSwift
-   - /System/Library/PrivateFrameworks/AppConduit.framework/AppConduit
 +  - /System/Library/PrivateFrameworks/AppProtection.framework/AppProtection
-   - /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
-   - /System/Library/PrivateFrameworks/BulletinBoard.framework/BulletinBoard
-   - /System/Library/PrivateFrameworks/CoreSuggestions.framework/CoreSuggestions
 
-   - /System/Library/PrivateFrameworks/Preferences.framework/Preferences
-   - /System/Library/PrivateFrameworks/Settings.framework/Settings
-   - /System/Library/PrivateFrameworks/SiriSetup.framework/SiriSetup
 +  - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /System/Library/PrivateFrameworks/TCC.framework/TCC
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 348
 -  Symbols:   1127
 -  CStrings:  143
 +  Functions: 381
 +  Symbols:   1242
 +  CStrings:  170
- 
 Symbols:
 + +[SRSHiddenSuggestionsManager clearHiddenSpotlightSuggestions]
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/SiriSetup/install/TempContent/Objects/SiriSetup.build/SiriSettings.build/Objects-normal/arm64e/SRSHiddenSuggestionsManager.o

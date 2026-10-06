@@ -2,106 +2,54 @@
 
 > `/System/Library/Frameworks/PhotosUI.framework/PhotosUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x45040` | `0x46b90` | **`+0x1b50`** |
+| `__AUTH_CONST.__objc_const` | `0x7008` | `0x7368` | **`+0x360`** |
+| `__TEXT.__oslogstring` | `0x120c` | `0x1449` | **`+0x23d`** |
+| `__AUTH.__objc_data` | `0x1fc8` | `0x2110` | **`+0x148`** |
+| `__TEXT.__objc_methlist` | `0x3ed4` | `0x401c` | **`+0x148`** |
+| `__DATA.__data` | `0x1c48` | `0x1d68` | **`+0x120`** |
+| `__AUTH_CONST.__auth_got` | `0xac0` | `0xb98` | **`+0xd8`** |
+| `__AUTH.__data` | `0x738` | `0x808` | **`+0xd0`** |
+| `__AUTH_CONST.__const` | `0x2298` | `0x2358` | **`+0xc0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2198` | `0x2248` | **`+0xb0`** |
+| `__AUTH_CONST.__cfstring` | `0x2240` | `0x22e0` | **`+0xa0`** |
+| `__TEXT.__constg_swiftt` | `0xd8c` | `0xe04` | **`+0x78`** |
+| `__TEXT.__swift5_capture` | `0x528` | `0x5a0` | **`+0x78`** |
+| `__TEXT.__swift5_fieldmd` | `0xc58` | `0xcc0` | **`+0x68`** |
+| `__TEXT.__unwind_info` | `0x1a08` | `0x1a58` | **`+0x50`** |
+| `__TEXT.__swift5_typeref` | `0xcd0` | `0xd1a` | **`+0x4a`** |
+| `__TEXT.__const` | `0x3088` | `0x30c8` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x4d24` | `0x4d63` | **`+0x3f`** |
+| `__TEXT.__eh_frame` | `0x884` | `0x8b4` | **`+0x30`** |
+| `__DATA.__objc_ivar` | `0x31c` | `0x33c` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x668` | `0x688` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0xbc1` | `0xbe1` | **`+0x20`** |
+| `__DATA_CONST.__objc_protolist` | `0x238` | `0x250` | **`+0x18`** |
+| `__DATA.__bss` | `0x3220` | `0x3230` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x228` | `0x238` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x100` | `0x108` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0xf8` | `0x100` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x120` | `0x128` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -916.45.110.0.0
--  __TEXT.__text: 0x42c1c
--  __TEXT.__objc_methlist: 0x3ed4
--  __TEXT.__const: 0x3088
--  __TEXT.__constg_swiftt: 0xd8c
--  __TEXT.__swift5_typeref: 0xcd0
--  __TEXT.__swift5_reflstr: 0xbc1
--  __TEXT.__swift5_fieldmd: 0xc58
 +916.51.202.0.0
-+  __TEXT.__text: 0x4460c
-+  __TEXT.__objc_methlist: 0x401c
-+  __TEXT.__const: 0x30c8
-+  __TEXT.__constg_swiftt: 0xe04
-+  __TEXT.__swift5_typeref: 0xd1a
-+  __TEXT.__swift5_reflstr: 0xbe1
-+  __TEXT.__swift5_fieldmd: 0xcc0
-   __TEXT.__swift5_builtin: 0x168
-   __TEXT.__swift5_assocty: 0x348
--  __TEXT.__cstring: 0x4d24
--  __TEXT.__oslogstring: 0x120c
--  __TEXT.__swift5_capture: 0x528
-+  __TEXT.__cstring: 0x4d63
-+  __TEXT.__oslogstring: 0x1449
-+  __TEXT.__swift5_capture: 0x5a0
-   __TEXT.__swift5_proto: 0x1a0
--  __TEXT.__swift5_types: 0x120
-+  __TEXT.__swift5_types: 0x128
-   __TEXT.__swift_as_entry: 0x34
-   __TEXT.__swift_as_cont: 0x3c
-   __TEXT.__swift5_protos: 0xc
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__gcc_except_tab: 0x290
--  __TEXT.__unwind_info: 0x2160
--  __TEXT.__eh_frame: 0x884
-+  __TEXT.__unwind_info: 0x21e8
-+  __TEXT.__eh_frame: 0x8b4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xd70
--  __DATA_CONST.__objc_classlist: 0x228
-+  __DATA_CONST.__objc_classlist: 0x238
-   __DATA_CONST.__objc_catlist: 0x18
--  __DATA_CONST.__objc_protolist: 0x238
-+  __DATA_CONST.__objc_protolist: 0x250
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2198
--  __DATA_CONST.__objc_protorefs: 0x100
--  __DATA_CONST.__objc_superrefs: 0xf8
-+  __DATA_CONST.__objc_selrefs: 0x2248
-+  __DATA_CONST.__objc_protorefs: 0x108
-+  __DATA_CONST.__objc_superrefs: 0x100
-   __DATA_CONST.__objc_arraydata: 0x20
--  __DATA_CONST.__got: 0x668
--  __AUTH_CONST.__const: 0x2298
--  __AUTH_CONST.__cfstring: 0x2240
--  __AUTH_CONST.__objc_const: 0x7008
-+  __DATA_CONST.__got: 0x688
-+  __AUTH_CONST.__const: 0x2358
-+  __AUTH_CONST.__cfstring: 0x22e0
-+  __AUTH_CONST.__objc_const: 0x7368
-   __AUTH_CONST.__objc_intobj: 0x60
-   __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__auth_got: 0xac0
--  __AUTH.__objc_data: 0x1fc8
--  __AUTH.__data: 0x738
--  __DATA.__objc_ivar: 0x31c
--  __DATA.__data: 0x1c48
-+  __AUTH_CONST.__auth_got: 0xb98
-+  __AUTH.__objc_data: 0x2110
-+  __AUTH.__data: 0x808
-+  __DATA.__objc_ivar: 0x33c
-+  __DATA.__data: 0x1d68
-   __DATA.__common: 0x241
-   __DATA_DIRTY.__objc_data: 0x1e0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 +  - /System/Library/Frameworks/IOSurface.framework/IOSurface
-   - /System/Library/Frameworks/ImageIO.framework/ImageIO
-   - /System/Library/Frameworks/Photos.framework/Photos
-   - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3045
 -  Symbols:   2955
 -  CStrings:  560
 +  Functions: 3096
 +  Symbols:   3042
 +  CStrings:  574
- 
 Symbols:
 + +[PVSAdjustedImageSurface supportsBSXPCSecureCoding]
 + -[PVSAdjustedImageSurface .cxx_destruct]

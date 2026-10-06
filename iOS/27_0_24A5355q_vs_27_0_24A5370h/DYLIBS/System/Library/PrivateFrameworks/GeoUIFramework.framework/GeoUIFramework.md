@@ -2,88 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/GeoUIFramework.framework/GeoUIFramework`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x5500` | `0x4680` | **`-0xe80`** |
+| `__TEXT.__text` | `0x1f0d0` | `0x1f8d4` | **`+0x804`** |
+| `__TEXT.__const` | `0x3560` | `0x2ef0` | **`-0x670`** |
+| `__TEXT.__cstring` | `0x601` | `0x771` | **`+0x170`** |
+| `__TEXT.__swift5_typeref` | `0xfdd` | `0xe8b` | **`-0x152`** |
+| `__DATA.__data` | `0xae0` | `0x9b8` | **`-0x128`** |
+| `__TEXT.__constg_swiftt` | `0x9a4` | `0x8a0` | **`-0x104`** |
+| `__TEXT.__swift5_assocty` | `0x168` | `0x258` | **`+0xf0`** |
+| `__TEXT.__swift5_fieldmd` | `0x984` | `0x8e4` | **`-0xa0`** |
+| `__AUTH_CONST.__const` | `0x1860` | `0x18d8` | **`+0x78`** |
+| `__TEXT.__swift5_proto` | `0x2a8` | `0x234` | **`-0x74`** |
+| `__TEXT.__eh_frame` | `0x6d0` | `0x720` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x790` | `0x7d8` | **`+0x48`** |
+| `__TEXT.__swift5_reflstr` | `0x403` | `0x423` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0xd0` | `0xb4` | **`-0x1c`** |
+| `__TEXT.__swift5_capture` | `0x184` | `0x194` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0xa40` | `0xa38` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.30.13.0.0
--  __TEXT.__text: 0x1f0d0 sha256:8eff06e81de6a009641d136b1b445c07ffcf7a1de61c9d85afa0dee42d2fb31e
--  __TEXT.__const: 0x3560 sha256:adec421b694e16e42b2da378c7fed33e63cf7be4be659276625c7ca815b0d8c7
--  __TEXT.__swift5_typeref: 0xfdd sha256:f843919b76af5f0f6ba5e96830d843239f2966f2d54b657b91253bde438cf895
--  __TEXT.__swift5_capture: 0x184 sha256:a05ff2840a7b611930e6056287168bf8994e2c49ae815d4953376b6a24a93bb9
--  __TEXT.__cstring: 0x601 sha256:8e5f00ef4f15e09d1f41080ba4154c0a36bdd244e47e784d3b80575f6b377b63
--  __TEXT.__swift5_reflstr: 0x403 sha256:8932090ed82362df7ba04846e8c38356c7c9ce021330d01723843e66267d868c
--  __TEXT.__swift5_assocty: 0x168 sha256:1c894f0cbf053a7e63c917f15255dd1049171c4f2ff9758dbdf2321790cdc33b
--  __TEXT.__constg_swiftt: 0x9a4 sha256:be033efaf83cadfa188eac34526fd0787ed397651e204424ca7d9b55defbed20
--  __TEXT.__swift5_fieldmd: 0x984 sha256:66bb219181500639240883ad820b36b4161f3100c1b29885a1c748ef4eedd88b
--  __TEXT.__swift5_builtin: 0x3c sha256:211b095e414fa3dea01e5331fd36ca9ec19c049dbbd9f009c1400276417f5e6d
 +3600.36.4.0.0
-+  __TEXT.__text: 0x1f8d4 sha256:713611ea9cfee5ef0ff263ebf57313119ca0d8bb8eb7baa6bf1dd1cbb4d85227
-+  __TEXT.__const: 0x2ef0 sha256:e1afd9828dd3f80b34e68806170ab5a90ddb741b0b9e4773f6c6169d2422703c
-+  __TEXT.__swift5_typeref: 0xe8b sha256:174e09e1e66068276f5970f0d970ee7d4034b2dab07c48ac92299f14ed55bf4b
-+  __TEXT.__swift5_capture: 0x194 sha256:56c2e10ced5d7eaba02f6bf7590bac539d340d7893b1c0a070625d91f2637bfc
-+  __TEXT.__cstring: 0x771 sha256:eb7e479fe0a95aeb4f355a7447d77094ace18a5d52d60cf4a52c4ec5efad9e45
-+  __TEXT.__swift5_reflstr: 0x423 sha256:09674b2a1551b5a4915b239126877da71580c977bfd1788571961b5804f797ca
-+  __TEXT.__swift5_assocty: 0x258 sha256:f561dc2ceb56d83361044f6e1c620a0a381943a6fab97d225ed1eb99078688d7
-+  __TEXT.__constg_swiftt: 0x8a0 sha256:34efbc8c29ccda694e6567b90262d657965f19710416154675aa38378732fb2d
-+  __TEXT.__swift5_fieldmd: 0x8e4 sha256:c15bd7d1e13e202da43cfba4f6f1a7b938a29696dc7991aa70f1734b026ce139
-+  __TEXT.__swift5_builtin: 0x3c sha256:adecd8783e90af5cf1af999d939e88af36202c1537ae1aed187bd9d8cfb84cc0
-   __TEXT.__oslogstring: 0xd5 sha256:872aee5b999c7c69c41fcb590d5001785a970f385497d05518a7adf116d93dfa
--  __TEXT.__swift5_proto: 0x2a8 sha256:f2fc579f4aadb1e3cdb3d8bea366c182e3500b13ab657cebce12b190b396d1e9
--  __TEXT.__swift5_types: 0xd0 sha256:64e6d21079cfb3c23cec286cb3b8dd48583dad5cee6e86ad0610ac6a619ff6f3
--  __TEXT.__swift5_mpenum: 0x10 sha256:76b6dee90c957a88353e1357e5fdb231b288c71c85758109bdce909db1959e46
--  __TEXT.__unwind_info: 0xa40 sha256:7bd70f76a0b8e7dfca8985ef5dfbda2b1e134f6fdaec325aff342c12bc5db6f0
--  __TEXT.__eh_frame: 0x6d0 sha256:f224960928978552aadad9ae7eec147aac5f21ff3721cafb2e49a11a469d1e9e
-+  __TEXT.__swift5_proto: 0x234 sha256:51e6ae826a91a10a0816480628a9d6c75a48deb8cabe9e2a97fa522418f08d42
-+  __TEXT.__swift5_types: 0xb4 sha256:2d740d5a76c4a1c35a31476556bbcd93c0f90a9933817d6269109457bdb1691d
-+  __TEXT.__swift5_mpenum: 0x10 sha256:485a40e6780257f314a13677a48beb328a91265c3d5d1832a4aac50d9fbd5530
-+  __TEXT.__unwind_info: 0xa38 sha256:dfb244fe8967efae670738342004e24f55241037a484a42d8bc8969a65ca5522
-+  __TEXT.__eh_frame: 0x720 sha256:5b0b7e019e25d86d61a48f63ac7bd86e15eb854a132f0b9d7a0857d863ddb49f
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __DATA_CONST.__const: 0xd0 sha256:46f531b7ea0428fbf2c3ca2b60e8dc33d6bbfa000e0fd1b489c5e39140a47006
--  __DATA_CONST.__objc_classlist: 0x8 sha256:5c3cb32a2680ba5f49e52905bfc414b042b306dbb28c1aba7a19d1441cb81480
-+  __DATA_CONST.__objc_classlist: 0x8 sha256:668339e783b73af53c0836e4e45290c397055e76f4ef2aa44b1c81a45ba7d343
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0x90 sha256:204af30112312799e0fb7ac8f3ba708ad41f18fa8136396625d6f5077787acf8
-+  __DATA_CONST.__objc_selrefs: 0x90 sha256:e89f64ee3665c72be35f939b2cca025d3bd6c4c1f6b6438a1a63b0f070856603
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1860 sha256:426a554bacf43d3f9dc7822e9b19aab9290f20ea76d1c09caef625266edcc857
--  __AUTH_CONST.__objc_const: 0x90 sha256:040e9781d8a54b7d75790c24437cbe792e76d0a73424ee4689b9bf9b5b2766c2
--  __AUTH_CONST.__auth_got: 0x790 sha256:3fcb1e1041f63f752bdebe8f875700003bd95e3fc507c2143555443c145c9769
--  __AUTH.__data: 0x460 sha256:d6bc2075d9ee48cc6a5b73d172ec5618c000611cd37ae6b6c59e0daec53aface
--  __DATA.__data: 0xae0 sha256:75d021dad37cc4b5af7b28b16bb7b23b5974a0bdf75aa584c52a73c8e292b9b8
--  __DATA.__bss: 0x5500 sha256:e91afd353eb141000b0533869fef100a4d2f6102eb8f75d638a17289d5288558
-+  __AUTH_CONST.__const: 0x18d8 sha256:2a1e21a1c85d7e0f1780e8e988199cf68cf5ac0edaff6079a8402cc330bdb9d5
-+  __AUTH_CONST.__objc_const: 0x90 sha256:ffb6ac3f0646a7eeefb67f0e1d67929adc982ef441c200b5173ed923b6c10a4a
-+  __AUTH_CONST.__auth_got: 0x7d8 sha256:e991c0a37471f8f9fe6763f2427c9b16725ba1401c9b8be930840c14a5feb9a9
-+  __AUTH.__data: 0x460 sha256:2457e1557d65404ae2e1ce6d07a08cfa1286c352a9c0fb75975807adbe0007cb
-+  __DATA.__data: 0x9b8 sha256:f3551a0e22b2419de950c0494634af8056cef97bc28f4e7baf17528e5b328f20
-+  __DATA.__bss: 0x4680 sha256:a0360b87d0a46c918c0b4d6219bc9824c804590988557900bdb0e8b52c1d6cb9
-   __DATA.__common: 0x60 sha256:2ea9ab9198d1638007400cd2c3bef1cc745b864b76011a0e1bc52180ac6452d4
--  __DATA_DIRTY.__data: 0x98 sha256:a7246f8ad3a5fe3db547895748fa90f05088b2a3c981fbf258d6750d4635af93
-+  __DATA_DIRTY.__data: 0x98 sha256:2fe56d685da1da652e898e3bd051f2533c157c47de4ba1861be2f83724a3a856
-   __DATA_DIRTY.__bss: 0x80 sha256:38723a2e5e8a17aa7950dc008209944e898f69a7bd10a23c839d341e935fd5ca
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/DeveloperToolsSupport.framework/DeveloperToolsSupport
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-+  - /System/Library/Frameworks/GeoToolbox.framework/GeoToolbox
-   - /System/Library/Frameworks/MapKit.framework/MapKit
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-   - /System/Library/Frameworks/UIKit.framework/UIKit
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: 31F2C020-9D2F-37AE-948F-4ABD4F018BF7
++  - /System/Library/Frameworks/GeoToolbox.framework/GeoToolbox
+
 -  Functions: 997
--  Symbols:   4227
+-  Symbols:   3194
 -  CStrings:  34
-+  UUID: C125D1BD-99D6-3725-A040-8DFCB50B8FE9
 +  Functions: 988
-+  Symbols:   3821
++  Symbols:   2928
 +  CStrings:  60
- 
 Symbols:
 + _$s10GeoToolbox15PlaceDescriptorV0C14RepresentationO10coordinateyAESo22CLLocationCoordinate2DVcAEmFWC
 + _$s10GeoToolbox15PlaceDescriptorV0C14RepresentationOMa
@@ -177,12 +132,12 @@ Symbols:
 + _$s14GeoUIFramework0A10DataModelsO022PlaceDisambiguationMapC5ModelV10placeStyle9SnippetUI0eJ0OvpMV
 + _$s14GeoUIFramework0A10DataModelsO022PlaceDisambiguationMapC5ModelV16placeDescriptors7ordered17showsUserLocation11searchQueryAESay0A7Toolbox0E10DescriptorVG_SbSgSbSStcfC
 + _$s14GeoUIFramework0A10DataModelsO022PlaceDisambiguationMapC5ModelV16placeDescriptorsSay0A7Toolbox0E10DescriptorVGvM
-+ _$s14GeoUIFramework0A10DataModelsO022PlaceDisambiguationMapC5ModelV16placeDescriptorsSay0A7Toolbox0E10DescriptorVGvM.resume.0
++ _$s14GeoUIFramework0A10DataModelsO022PlaceDisambiguationMapC5ModelV16placeDescriptorsSay0A7Toolbox0E10DescriptorVGvM.resume
 + _$s14GeoUIFramework0A10DataModelsO022PlaceDisambiguationMapC5ModelV16placeDescriptorsSay0A7Toolbox0E10DescriptorVGvg
 + _$s14GeoUIFramework0A10DataModelsO022PlaceDisambiguationMapC5ModelV16placeDescriptorsSay0A7Toolbox0E10DescriptorVGvpMV
 + _$s14GeoUIFramework0A10DataModelsO022PlaceDisambiguationMapC5ModelV16placeDescriptorsSay0A7Toolbox0E10DescriptorVGvs
 + _$s14GeoUIFramework0A10DataModelsO022PlaceDisambiguationMapC5ModelV7orderedSbSgvM
-+ _$s14GeoUIFramework0A10DataModelsO022PlaceDisambiguationMapC5ModelV7orderedSbSgvM.resume.0
++ _$s14GeoUIFramework0A10DataModelsO022PlaceDisambiguationMapC5ModelV7orderedSbSgvM.resume
 + _$s14GeoUIFramework0A10DataModelsO022PlaceDisambiguationMapC5ModelV7orderedSbSgvg
 + _$s14GeoUIFramework0A10DataModelsO022PlaceDisambiguationMapC5ModelV7orderedSbSgvpMV
 + _$s14GeoUIFramework0A10DataModelsO022PlaceDisambiguationMapC5ModelV7orderedSbSgvs
@@ -310,7 +265,6 @@ Symbols:
 + _$s14GeoUIFramework26PlaceDisambiguationMapViewV4bodyQrvg7SwiftUI19_ConditionalContentVy07SnippetI00eF0VAJGSgyXEfU_
 + _$s14GeoUIFramework26PlaceDisambiguationMapViewV4bodyQrvgyycfU0_
 + _$s14GeoUIFramework26PlaceDisambiguationMapViewV4bodyQrvgyycfU0_TA
-+ _$s14GeoUIFramework26PlaceDisambiguationMapViewV4bodyQrvgyycfU0_TA.8
 + _$s14GeoUIFramework26PlaceDisambiguationMapViewV4bodyQrvgyycfU0_TATm
 + _$s7SwiftUI19_ConditionalContentV7StorageOMn
 + _$s7SwiftUI19_ConditionalContentV7StorageOy07SnippetB07MapViewVAH_GMR
@@ -377,7 +331,7 @@ Symbols:
 + _associated conformance 14GeoUIFramework0A10DataModelsO7CaseKey33_882E58619A019CD438BB91EBFDDE66DALLOSHAASQ
 + _associated conformance 14GeoUIFramework0A10DataModelsO7CaseKey33_882E58619A019CD438BB91EBFDDE66DALLOs06CodingF0AAs23CustomStringConvertible
 + _associated conformance 14GeoUIFramework0A10DataModelsO7CaseKey33_882E58619A019CD438BB91EBFDDE66DALLOs06CodingF0AAs28CustomDebugStringConvertible
-+ _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE12onTapGesture5count7performQrSi_yyctFQOyAA5GroupVyAA19_ConditionalContentVy07SnippetB003MapC0VAMGSgG_Qo_HO.4
++ _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE12onTapGesture5count7performQrSi_yyctFQOyAA5GroupVyAA19_ConditionalContentVy07SnippetB003MapC0VAMGSgG_Qo_HO
 + _symbolic Say_____G 10GeoToolbox15PlaceDescriptorV
 + _symbolic SbSg
 + _symbolic _____ 14GeoUIFramework04$s14A127UIFramework0034PlaceDisambiguationViewswift_oeBCkfMX68_0_33_56A0B181EC72A55C86D7DFA6B226409CLl7PreviewfMf_15PreviewRegistryfMu_V
@@ -935,7 +889,7 @@ Symbols:
 - _associated conformance 14GeoUIFramework0A10DataModelsO43PlaceDisambiguationThirdPartyItemCodingKeys33_882E58619A019CD438BB91EBFDDE66DALLOSHAASQ
 - _associated conformance 14GeoUIFramework0A10DataModelsO43PlaceDisambiguationThirdPartyItemCodingKeys33_882E58619A019CD438BB91EBFDDE66DALLOs0J3KeyAAs23CustomStringConvertible
 - _associated conformance 14GeoUIFramework0A10DataModelsO43PlaceDisambiguationThirdPartyItemCodingKeys33_882E58619A019CD438BB91EBFDDE66DALLOs0J3KeyAAs28CustomDebugStringConvertible
-- _get_witness_table 7SwiftUI4ViewPAAE12onTapGesture5count7performQrSi_yyctFQOy07SnippetB003MapC0V_Qo_SgAaBHpqd__AaBHD2_AJHO_HC.3
+- _get_witness_table 7SwiftUI4ViewPAAE12onTapGesture5count7performQrSi_yyctFQOy07SnippetB003MapC0V_Qo_SgAaBHpqd__AaBHD2_AJHO_HC
 - _swift_unknownObjectRelease
 - _symbolic _____ 14GeoUIFramework04$s14A127UIFramework0034PlaceDisambiguationViewswift_oeBCkfMX30_0_33_56A0B181EC72A55C86D7DFA6B226409CLl7PreviewfMf_15PreviewRegistryfMu_V
 - _symbolic _____ 14GeoUIFramework0A10DataModelsO033PlaceDisambiguationThirdPartyItemC5ModelV11DisplayTypeO0K17AddressCodingKeys33_882E58619A019CD438BB91EBFDDE66DALLO
@@ -999,5 +953,4 @@ CStrings:
 + "text"
 + "whereAmI"
 - "Invalid number of keys found, expected one."
-
 ```

@@ -2,49 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/32023/Libraries/libGPUCompilerImplLazy.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x118d3f4` | `0x117e478` | **`-0xef7c`** |
+| `__AUTH_CONST.__const` | `0xf4b88` | `0xf4a20` | **`-0x168`** |
+| `__TEXT.__const` | `0xd5ea0` | `0xd5fd0` | **`+0x130`** |
+| `__TEXT.__unwind_info` | `0x18a30` | `0x18b60` | **`+0x130`** |
+| `__AUTH.__data` | `0x4b70` | `0x4b40` | **`-0x30`** |
+| `__TEXT.__cstring` | `0x13a4f5` | `0x13a4c7` | **`-0x2e`** |
+| `__DATA_CONST.__const` | `0x192f48` | `0x192f30` | **`-0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x35a0` | `0x35a8` | **`+0x8`** |
+| `__DATA.__data` | `0x16f0` | `0x16e8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -32023.921.0.0.0
--  __TEXT.__text: 0x118d3f4
 +32023.921.4.0.0
-+  __TEXT.__text: 0x117e478
-   __TEXT.__init_offsets: 0x14
--  __TEXT.__const: 0xd5ea0
--  __TEXT.__cstring: 0x13a4f5
--  __TEXT.__unwind_info: 0x18a30
-+  __TEXT.__const: 0xd5fd0
-+  __TEXT.__cstring: 0x13a4c7
-+  __TEXT.__unwind_info: 0x18b60
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x192f48
-+  __DATA_CONST.__const: 0x192f30
-   __DATA_CONST.__weak_got: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xf4b88
-+  __AUTH_CONST.__const: 0xf4a20
-   __AUTH_CONST.__weak_auth_got: 0xb8
--  __AUTH_CONST.__auth_got: 0x35a0
--  __AUTH.__data: 0x4b70
-+  __AUTH_CONST.__auth_got: 0x35a8
-+  __AUTH.__data: 0x4b40
-   __AUTH.__thread_vars: 0x18
-   __AUTH.__thread_bss: 0x8
--  __DATA.__data: 0x16f0
-+  __DATA.__data: 0x16e8
-   __DATA.__bss: 0x58
-   __DATA.__common: 0x20
-   __DATA_DIRTY.__data: 0x1130
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libarchive.2.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 37816
 -  Symbols:   1841
 -  CStrings:  56847
 +  Functions: 37894
 +  Symbols:   1842
 +  CStrings:  56845
- 
 Symbols:
 + __ZNK4llvm8Argument16hasStructRetAttrEv
 CStrings:

@@ -2,103 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/CAFUI.framework/CAFUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xda6d0` | `0xde090` | **`+0x39c0`** |
+| `__AUTH_CONST.__objc_const` | `0xa180` | `0xb450` | **`+0x12d0`** |
+| `__TEXT.__swift5_typeref` | `0xb83a` | `0xc1f0` | **`+0x9b6`** |
+| `__AUTH_CONST.__const` | `0x50d8` | `0x5a08` | **`+0x930`** |
+| `__TEXT.__const` | `0x6424` | `0x6a14` | **`+0x5f0`** |
+| `__DATA.__data` | `0x3c50` | `0x4158` | **`+0x508`** |
+| `__DATA.__bss` | `0x2d50` | `0x2fe0` | **`+0x290`** |
+| `__TEXT.__oslogstring` | `0xf49` | `0xd59` | **`-0x1f0`** |
+| `__TEXT.__objc_methlist` | `0x25f0` | `0x27a8` | **`+0x1b8`** |
+| `__TEXT.__swift5_fieldmd` | `0x1ce8` | `0x1e5c` | **`+0x174`** |
+| `__TEXT.__eh_frame` | `0xb20` | `0xc70` | **`+0x150`** |
+| `__TEXT.__unwind_info` | `0x26e8` | `0x2810` | **`+0x128`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1e68` | `0x1f68` | **`+0x100`** |
+| `__TEXT.__swift5_capture` | `0x18a8` | `0x199c` | **`+0xf4`** |
+| `__TEXT.__constg_swiftt` | `0x3a24` | `0x3ad0` | **`+0xac`** |
+| `__AUTH_CONST.__auth_got` | `0x1f10` | `0x1fa8` | **`+0x98`** |
+| `__AUTH.__objc_data` | `0x3a00` | `0x3a90` | **`+0x90`** |
+| `__AUTH.__data` | `0x2b68` | `0x2ae0` | **`-0x88`** |
+| `__DATA_CONST.__got` | `0x1118` | `0x11a0` | **`+0x88`** |
+| `__TEXT.__swift5_reflstr` | `0x1dec` | `0x1e6e` | **`+0x82`** |
+| `__DATA_CONST.__const` | `0x4e8` | `0x528` | **`+0x40`** |
+| `__DATA_CONST.__objc_protolist` | `0x1d8` | `0x218` | **`+0x40`** |
+| `__TEXT.__swift5_types` | `0x1ec` | `0x21c` | **`+0x30`** |
+| `__TEXT.__swift5_builtin` | `0xb4` | `0xdc` | **`+0x28`** |
+| `__DATA_CONST.__objc_protorefs` | `0xe8` | `0x108` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x37aa` | `0x37c4` | **`+0x1a`** |
+| `__DATA_CONST.__objc_classlist` | `0x228` | `0x240` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x4a0` | `0x4b8` | **`+0x18`** |
+| `__TEXT.__swift5_mpenum` | `0x18` | `0x2c` | **`+0x14`** |
+| `__TEXT.__swift5_proto` | `0x1cc` | `0x1e0` | **`+0x14`** |
+| `__DATA.__common` | `0x51` | `0x49` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xda6d0
--  __TEXT.__objc_methlist: 0x25f0
--  __TEXT.__const: 0x6424
--  __TEXT.__cstring: 0x37aa
--  __TEXT.__oslogstring: 0xf49
-+  __TEXT.__text: 0xde090
-+  __TEXT.__objc_methlist: 0x27a8
-+  __TEXT.__const: 0x6a14
-+  __TEXT.__cstring: 0x37c4
-+  __TEXT.__oslogstring: 0xd59
-   __TEXT.__ustring: 0x5e
--  __TEXT.__swift5_typeref: 0xb83a
--  __TEXT.__swift5_capture: 0x18a8
--  __TEXT.__swift5_reflstr: 0x1dec
--  __TEXT.__swift5_assocty: 0x4a0
--  __TEXT.__constg_swiftt: 0x3a24
--  __TEXT.__swift5_fieldmd: 0x1ce8
--  __TEXT.__swift5_builtin: 0xb4
--  __TEXT.__swift5_proto: 0x1cc
--  __TEXT.__swift5_types: 0x1ec
-+  __TEXT.__swift5_typeref: 0xc1f0
-+  __TEXT.__swift5_capture: 0x199c
-+  __TEXT.__swift5_reflstr: 0x1e6e
-+  __TEXT.__swift5_assocty: 0x4b8
-+  __TEXT.__constg_swiftt: 0x3ad0
-+  __TEXT.__swift5_fieldmd: 0x1e5c
-+  __TEXT.__swift5_builtin: 0xdc
-+  __TEXT.__swift5_proto: 0x1e0
-+  __TEXT.__swift5_types: 0x21c
-   __TEXT.__swift5_protos: 0x44
--  __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__unwind_info: 0x26e8
--  __TEXT.__eh_frame: 0xb20
-+  __TEXT.__swift5_mpenum: 0x2c
-+  __TEXT.__unwind_info: 0x2810
-+  __TEXT.__eh_frame: 0xc70
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4e8
--  __DATA_CONST.__objc_classlist: 0x228
-+  __DATA_CONST.__const: 0x528
-+  __DATA_CONST.__objc_classlist: 0x240
-   __DATA_CONST.__objc_catlist: 0x8
--  __DATA_CONST.__objc_protolist: 0x1d8
-+  __DATA_CONST.__objc_protolist: 0x218
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1e68
--  __DATA_CONST.__objc_protorefs: 0xe8
-+  __DATA_CONST.__objc_selrefs: 0x1f68
-+  __DATA_CONST.__objc_protorefs: 0x108
-   __DATA_CONST.__objc_superrefs: 0x18
--  __DATA_CONST.__got: 0x1118
--  __AUTH_CONST.__const: 0x50d8
-+  __DATA_CONST.__got: 0x11a0
-+  __AUTH_CONST.__const: 0x5a08
-   __AUTH_CONST.__cfstring: 0x420
--  __AUTH_CONST.__objc_const: 0xa180
--  __AUTH_CONST.__auth_got: 0x1f10
--  __AUTH.__objc_data: 0x3a00
--  __AUTH.__data: 0x2b68
-+  __AUTH_CONST.__objc_const: 0xb450
-+  __AUTH_CONST.__auth_got: 0x1fa8
-+  __AUTH.__objc_data: 0x3a90
-+  __AUTH.__data: 0x2ae0
-   __DATA.__objc_ivar: 0x24
--  __DATA.__data: 0x3c50
--  __DATA.__bss: 0x2d50
--  __DATA.__common: 0x51
-+  __DATA.__data: 0x4158
-+  __DATA.__bss: 0x2fe0
-+  __DATA.__common: 0x49
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-+  - /System/Library/Frameworks/CarPlay.framework/CarPlay
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+-534.3.0.0.0
++537.3.0.0.0
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/Frameworks/CarPlay.framework/CarPlay
+
 -  Functions: 4343
--  Symbols:   16698
--  CStrings:  442
+-  Symbols:   11731
+-  CStrings:  396
 +  Functions: 4516
-+  Symbols:   17472
-+  CStrings:  429
- 
-Sections:
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
++  Symbols:   12302
++  CStrings:  383
 Symbols:
 + +[CAFUIDevicePickerButtonFactory uiButtonForGridButton:layout:]
 + _$s10CAFCombine16CAFCarObservableC13$tripComputer7Combine9PublishedV9PublisherVySo07CAFTripE0CSg_GvgTj
@@ -1087,50 +1041,6 @@ Symbols:
 + _get_enum_tag_for_layout_string 5CAFUI15CAFTripCardKindO
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA6ZStackVyAA05TupleD0VyAA5ColorV_AA012_ConditionalD0VyACyAiA24_BackgroundStyleModifierVyAA8MaterialVGGAIGSgAA06ButtonJ13ConfigurationV5LabelVQPGGAA018_PreferenceWritingK0Vy5CAFUI18CAFUIPickerRowViewV0M10PressedKey33_6C310284675F01A5150C81823CEE98B5LLVGGAA0U0HPAyAA8_HPyHC_A6_AA0uK0HPyHCHC
 + _get_witness_table 7SwiftUI16ScrollViewReaderVyAA15ModifiedContentVyAA012SubscriptionD0Vy7Combine12AnyPublisherVyyts5NeverOGAGyAmA0D0PAAE29navigationBarTitleDisplayModeyQrAA010NavigationN4ItemV0opQ0OFQOyAoAE0mO0yQrqd__SyRd__lFQOyAoAE06scrollG10BackgroundyQrAA10VisibilityOFQOyAEyAoAE9listStyleyQrqd__AA04ListX0Rd__lFQOyAA0Y0VyAlA7SectionVyAA05EmptyD0VAA7ForEachVySaySi6offset_5CAFUI06PickerS0V7elementtG10Foundation4UUIDVAoAE0W12RowSeparator_5edgesQrAX_AA12VerticalEdgeO3SetVtFQOyAEyAA012_ConditionalG0VyAEyA23_yAEyA8_014CAFUIPickerRowD0VAA11_ClipEffectVyAA22UnevenRoundedRectangleVGGA25_GA30_GA32_GAA21_TraitWritingModifierVyAA0Y17RowInsetsTraitKeyVGG_Qo_GAA4TextVSgGG_AA05PlainyX0VQo_AA30_EnvironmentKeyWritingModifierVy12CoreGraphics7CGFloatVGG_Qo__SSQo__Qo_GGAA25_AppearanceActionModifierVGGAaNHPyHC
-+ _objc_msgSend$accessoryViewAtEdge:
-+ _objc_msgSend$addLayoutGuide:
-+ _objc_msgSend$averageSpeedInvalid
-+ _objc_msgSend$bringSubviewToFront:
-+ _objc_msgSend$buttonWithGridButton:layout:templateDelegate:
-+ _objc_msgSend$combinedEfficiencyInvalid
-+ _objc_msgSend$configurationWithPointSize:weight:
-+ _objc_msgSend$constraintLessThanOrEqualToAnchor:constant:
-+ _objc_msgSend$currentCar
-+ _objc_msgSend$currentPage
-+ _objc_msgSend$distanceInvalid
-+ _objc_msgSend$drawAtPoint:
-+ _objc_msgSend$durationInvalid
-+ _objc_msgSend$edge
-+ _objc_msgSend$energyConsumption
-+ _objc_msgSend$energyEfficiencyInvalid
-+ _objc_msgSend$energyInvalid
-+ _objc_msgSend$fractionalHeightDimension:
-+ _objc_msgSend$fuelConsumption
-+ _objc_msgSend$fuelEfficiencyInvalid
-+ _objc_msgSend$horizontalGroupWithLayoutSize:subitem:count:
-+ _objc_msgSend$imageByApplyingSymbolConfiguration:
-+ _objc_msgSend$imageSize
-+ _objc_msgSend$imageWithTintColor:renderingMode:
-+ _objc_msgSend$initWithEffect:
-+ _objc_msgSend$initWithItems:loops:restrictEnteringSequence:
-+ _objc_msgSend$initWithSection:
-+ _objc_msgSend$initWithSection:configuration:
-+ _objc_msgSend$initWithSectionProvider:
-+ _objc_msgSend$initWithSectionProvider:configuration:
-+ _objc_msgSend$initWithSize:style:imageSize:
-+ _objc_msgSend$initWithTitleVariants:image:handler:
-+ _objc_msgSend$layout
-+ _objc_msgSend$odometer
-+ _objc_msgSend$overlay
-+ _objc_msgSend$preferredSize
-+ _objc_msgSend$registeredForAccessory:
-+ _objc_msgSend$setCollectionViewLayout:animated:
-+ _objc_msgSend$setOrthogonalScrollingBehavior:
-+ _objc_msgSend$setVisibleItemsInvalidationHandler:
-+ _objc_msgSend$superview
-+ _objc_msgSend$trips
-+ _objc_msgSend$uiButtonForGridButton:layout:
-+ _objc_msgSend$verticalGroupWithLayoutSize:subitem:count:
 + _swift_retain_x3
 + _symbolic SaySo14CPUIGridButtonCG
 + _symbolic SaySo7CAFTripCG
@@ -1754,29 +1664,6 @@ Symbols:
 - _associated conformance 5CAFUI31CAFUIDevicePickerViewControllerC11LayoutStyleOSHAASQ
 - _get_witness_table 7SwiftUI15ModifiedContentVyAA6ZStackVyAA05TupleD0VyAA012_ConditionalD0VyACyAA5ColorVAA24_BackgroundStyleModifierVyAA8MaterialVGGAKGSg_AA06ButtonJ13ConfigurationV5LabelVQPGGAA018_PreferenceWritingK0Vy5CAFUI18CAFUIPickerRowViewV0M10PressedKey33_6C310284675F01A5150C81823CEE98B5LLVGGAA0U0HPAyAA8_HPyHC_A6_AA0uK0HPyHCHC
 - _get_witness_table 7SwiftUI16ScrollViewReaderVyAA15ModifiedContentVyAA012SubscriptionD0Vy7Combine12AnyPublisherVyyts5NeverOGAGyAmA0D0PAAE29navigationBarTitleDisplayModeyQrAA010NavigationN4ItemV0opQ0OFQOyAoAE0mO0yQrqd__SyRd__lFQOyAoAE06scrollG10BackgroundyQrAA10VisibilityOFQOyAEyAoAE9listStyleyQrqd__AA04ListX0Rd__lFQOyAA0Y0VyAlA7SectionVyAA05EmptyD0VAA7ForEachVySaySi6offset_5CAFUI06PickerS0V7elementtG10Foundation4UUIDVAoAE0W12RowSeparator_5edgesQrAX_AA12VerticalEdgeO3SetVtFQOyAEyAA012_ConditionalG0VyAEyA23_yAEyA8_014CAFUIPickerRowD0VAA11_ClipEffectVyAA22UnevenRoundedRectangleVGGA25_GA30_GA32_GAA21_TraitWritingModifierVyAA0Y17RowInsetsTraitKeyVGG_Qo_GAA4TextVSgGG_AA012InsetGroupedyX0VQo_AA30_EnvironmentKeyWritingModifierVy12CoreGraphics7CGFloatVGG_Qo__SSQo__Qo_GGAA25_AppearanceActionModifierVGGAaNHPyHC
-- _objc_msgSend$backgroundView
-- _objc_msgSend$constraintLessThanOrEqualToConstant:
-- _objc_msgSend$contentOffset
-- _objc_msgSend$effectiveContentSize
-- _objc_msgSend$indexPathForCell:
-- _objc_msgSend$itemSize
-- _objc_msgSend$minimumInteritemSpacing
-- _objc_msgSend$safeAreaInsets
-- _objc_msgSend$setActive:
-- _objc_msgSend$setActivityIndicatorViewStyle:
-- _objc_msgSend$setAutomaticallyUpdatesBackgroundConfiguration:
-- _objc_msgSend$setBackgroundView:
-- _objc_msgSend$setItemSize:
-- _objc_msgSend$setMinimumInteritemSpacing:
-- _objc_msgSend$setNeedsFocusUpdate
-- _objc_msgSend$setPagingEnabled:
-- _objc_msgSend$setScrollDirection:
-- _objc_msgSend$setScrollEnabled:
-- _objc_msgSend$setSectionInsetReference:
-- _objc_msgSend$setShowsVerticalScrollIndicator:
-- _objc_msgSend$setTintAdjustmentMode:
-- _objc_msgSend$stopAnimating
-- _objc_msgSend$visibleCells
 - _swift_dynamicCastObjCClassUnconditional
 - _symbolic So18NSLayoutConstraintCSg
 - _symbolic So23UIActivityIndicatorViewCSg
@@ -1866,5 +1753,4 @@ CStrings:
 - "portrait"
 - "small"
 - "viewData is missing or section index is invalid."
-
 ```

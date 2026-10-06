@@ -2,57 +2,38 @@
 
 > `/System/Library/Frameworks/AudioToolbox.framework/libEmbeddedSystemAUs.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd15a8` | `0xd3cac` | **`+0x2704`** |
+| `__AUTH_CONST.__const` | `0x11140` | `0x114e8` | **`+0x3a8`** |
+| `__AUTH_CONST.__cfstring` | `0x3980` | `0x3be0` | **`+0x260`** |
+| `__TEXT.__cstring` | `0xa0c9` | `0xa313` | **`+0x24a`** |
+| `__TEXT.__gcc_except_tab` | `0x77d8` | `0x794c` | **`+0x174`** |
+| `__DATA_CONST.__const` | `0xe70` | `0xfd0` | **`+0x160`** |
+| `__TEXT.__unwind_info` | `0x4708` | `0x4860` | **`+0x158`** |
+| `__TEXT.__oslogstring` | `0xc167` | `0xc28c` | **`+0x125`** |
+| `__TEXT.__dlopen_cstrs` | `0x2c1` | `0x36d` | **`+0xac`** |
+| `__DATA.__bss` | `0x7b0` | `0x858` | **`+0xa8`** |
+| `__TEXT.__realtime` | `0x38ad0` | `0x38a84` | **`-0x4c`** |
+| `__DATA_DIRTY.__bss` | `0x160` | `0x128` | **`-0x38`** |
+| `__DATA.__data` | `0x9d0` | `0x9c8` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x1d0` | `0x1d8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1638.104.3.0.0
--  __TEXT.__text: 0xcf1cc
--  __TEXT.__realtime: 0x380d0
 +1638.208.0.0.0
-+  __TEXT.__text: 0xd1888
-+  __TEXT.__realtime: 0x38084
-   __TEXT.__const: 0xb344
--  __TEXT.__dlopen_cstrs: 0x2c1
--  __TEXT.__gcc_except_tab: 0x77d8
--  __TEXT.__cstring: 0xa0c9
--  __TEXT.__oslogstring: 0xc167
--  __TEXT.__unwind_info: 0x4da0
-+  __TEXT.__dlopen_cstrs: 0x36d
-+  __TEXT.__gcc_except_tab: 0x794c
-+  __TEXT.__cstring: 0xa313
-+  __TEXT.__oslogstring: 0xc28c
-+  __TEXT.__unwind_info: 0x4f00
-   __TEXT.__eh_frame: 0x108
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0xe70
-+  __DATA_CONST.__const: 0xfd0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__got: 0x1d0
--  __AUTH_CONST.__const: 0x11140
--  __AUTH_CONST.__cfstring: 0x3980
-+  __DATA_CONST.__got: 0x1d8
-+  __AUTH_CONST.__const: 0x114e8
-+  __AUTH_CONST.__cfstring: 0x3be0
-   __AUTH_CONST.__weak_auth_got: 0x40
-   __AUTH_CONST.__auth_got: 0x11d8
--  __DATA.__data: 0x9d0
-+  __DATA.__data: 0x9c8
-   __DATA_DIRTY.__data: 0x20
--  __DATA_DIRTY.__bss: 0x160
-+  __DATA_DIRTY.__bss: 0x128
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
 
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 3971
 -  Symbols:   6159
 -  CStrings:  1962
 +  Functions: 4083
 +  Symbols:   6299
 +  CStrings:  1992
- 
 Symbols:
 + GCC_except_table2051
 + GCC_except_table2052

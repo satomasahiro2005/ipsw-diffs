@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/FindMyCrypto.framework/FindMyCrypto`
 
-```diff
+### Section Size Changes
 
- 106.30.6.14.10
--  __TEXT.__text: 0x41748
-+  __TEXT.__text: 0x417a8
-   __TEXT.__swift5_typeref: 0xf04
-   __TEXT.__const: 0x87c8
-   __TEXT.__cstring: 0x4b1
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x41748` | `0x417a8` | **`+0x60`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_26212ed7c -> sub_262e36d7c : 25276 -> 25372
+~ sub_262010d7c -> sub_262d12d7c : 25276 -> 25372
 ```

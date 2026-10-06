@@ -2,46 +2,34 @@
 
 > `/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparseBLAS.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x49e40` | `0xb7180` | **`+0x6d340`** |
+| `__TEXT.__gcc_except_tab` | `0x20b0` | `0x5528` | **`+0x3478`** |
+| `__AUTH_CONST.__const` | `0x1b80` | `0x3768` | **`+0x1be8`** |
+| `__TEXT.__unwind_info` | `0x1810` | `0x3008` | **`+0x17f8`** |
+| `__TEXT.__const` | `0xa70` | `0x1104` | **`+0x694`** |
+| `__DATA_CONST.__const` | `0x5c0` | `0xac0` | **`+0x500`** |
+| `__TEXT.__cstring` | `0x208` | `0x43` | **`-0x1c5`** |
+| `__TEXT.__oslogstring` | `0x53` | `—` | **`-0x53`** |
+| `__DATA_DIRTY.__bss` | `0x48` | `0x10` | **`-0x38`** |
+| `__AUTH_CONST.__auth_got` | `0x268` | `0x260` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x49e40
--  __TEXT.__gcc_except_tab: 0x20b0
--  __TEXT.__const: 0xa70
--  __TEXT.__cstring: 0x208
--  __TEXT.__oslogstring: 0x53
--  __TEXT.__unwind_info: 0x1810
-+  __TEXT.__text: 0xb7180
-+  __TEXT.__gcc_except_tab: 0x5528
-+  __TEXT.__const: 0x1104
-+  __TEXT.__cstring: 0x43
-+  __TEXT.__unwind_info: 0x3008
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x5c0
-+  __DATA_CONST.__const: 0xac0
-   __DATA_CONST.__weak_got: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1b80
-+  __AUTH_CONST.__const: 0x3768
-   __AUTH_CONST.__weak_auth_got: 0x38
--  __AUTH_CONST.__auth_got: 0x268
-+  __AUTH_CONST.__auth_got: 0x260
-   __AUTH.__data: 0x20
--  __DATA_DIRTY.__bss: 0x48
-+  __DATA_DIRTY.__bss: 0x10
-   - /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBLAS.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
+-194.0.0.0.0
++196.0.1.0.0
+
 -  Functions: 1378
--  Symbols:   3458
+-  Symbols:   1802
 -  CStrings:  26
 +  Functions: 2780
-+  Symbols:   7112
++  Symbols:   3610
 +  CStrings:  5
- 
-Sections:
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__data : content changed
 Symbols:
 + GCC_except_table111
 + GCC_except_table114
@@ -3099,5 +3087,4 @@ CStrings:
 - "hw.perflevel3.name"
 - "hw.perflevel3.physicalcpu_max"
 - "pthread_qos_max_parallelism() returned error in LAPACK call to initHardwareInfo()\n"
-
 ```

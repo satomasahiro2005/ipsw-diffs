@@ -2,92 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/FitnessUI.framework/FitnessUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa33c8` | `0xa3a00` | **`+0x638`** |
+| `__TEXT.__swift5_typeref` | `0x2824` | `0x2952` | **`+0x12e`** |
+| `__TEXT.__const` | `0x2af4` | `0x2bf4` | **`+0x100`** |
+| `__TEXT.__constg_swiftt` | `0xe54` | `0xf18` | **`+0xc4`** |
+| `__DATA.__bss` | `0x2fc8` | `0x3068` | **`+0xa0`** |
+| `__AUTH_CONST.__const` | `0x2070` | `0x20f0` | **`+0x80`** |
+| `__DATA.__data` | `0x1320` | `0x1388` | **`+0x68`** |
+| `__AUTH_CONST.__auth_got` | `0x1768` | `0x17c0` | **`+0x58`** |
+| `__TEXT.__unwind_info` | `0x2e08` | `0x2e28` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x888` | `0x8a4` | **`+0x1c`** |
+| `__DATA_CONST.__got` | `0xdc0` | `0xdd8` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x120` | `0x138` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0xa0` | `0xa4` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0xb0` | `0xb4` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__swift5_reflstr`
+
+### Other Changes
 
 ```diff
 
 -2027.0.61.0.0
--  __TEXT.__text: 0xa33c8
 +2027.0.68.0.0
-+  __TEXT.__text: 0xa3a00
-   __TEXT.__objc_methlist: 0x6c7c
--  __TEXT.__const: 0x2af4
-+  __TEXT.__const: 0x2bf4
-   __TEXT.__cstring: 0x618d
-   __TEXT.__oslogstring: 0x198c
-   __TEXT.__gcc_except_tab: 0x380
-   __TEXT.__dlopen_cstrs: 0x140
-   __TEXT.__ustring: 0xe
--  __TEXT.__swift5_typeref: 0x2824
--  __TEXT.__constg_swiftt: 0xe54
--  __TEXT.__swift5_fieldmd: 0x888
--  __TEXT.__swift5_types: 0xb0
-+  __TEXT.__swift5_typeref: 0x2952
-+  __TEXT.__constg_swiftt: 0xf18
-+  __TEXT.__swift5_fieldmd: 0x8a4
-+  __TEXT.__swift5_types: 0xb4
-   __TEXT.__swift5_capture: 0x464
-   __TEXT.__swift5_reflstr: 0x8d4
-   __TEXT.__swift5_protos: 0xc
--  __TEXT.__swift5_proto: 0xa0
-+  __TEXT.__swift5_proto: 0xa4
-   __TEXT.__swift_as_entry: 0x58
-   __TEXT.__swift_as_ret: 0x30
-   __TEXT.__swift_as_cont: 0x50
--  __TEXT.__swift5_assocty: 0x120
-+  __TEXT.__swift5_assocty: 0x138
-   __TEXT.__swift5_builtin: 0x8c
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x2e08
-+  __TEXT.__unwind_info: 0x2e28
-   __TEXT.__eh_frame: 0xaa8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x208
-   __DATA_CONST.__objc_arraydata: 0x198
--  __DATA_CONST.__got: 0xdc0
--  __AUTH_CONST.__const: 0x2070
-+  __DATA_CONST.__got: 0xdd8
-+  __AUTH_CONST.__const: 0x20f0
-   __AUTH_CONST.__cfstring: 0x3c40
-   __AUTH_CONST.__objc_const: 0xf3b8
-   __AUTH_CONST.__objc_arrayobj: 0x150
-   __AUTH_CONST.__objc_intobj: 0x540
-   __AUTH_CONST.__objc_doubleobj: 0x120
--  __AUTH_CONST.__auth_got: 0x1768
-+  __AUTH_CONST.__auth_got: 0x17c0
-   __AUTH.__objc_data: 0x1ff0
-   __AUTH.__data: 0xe00
-   __DATA.__objc_ivar: 0x808
--  __DATA.__data: 0x1320
--  __DATA.__bss: 0x2fc8
-+  __DATA.__data: 0x1388
-+  __DATA.__bss: 0x3068
-   __DATA.__common: 0x4418
-   __DATA_DIRTY.__objc_data: 0x500
-   __DATA_DIRTY.__data: 0x98
-
-   - /System/Library/PrivateFrameworks/DepthCore.framework/DepthCore
-   - /System/Library/PrivateFrameworks/Fitness.framework/Fitness
-   - /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
 +  - /System/Library/PrivateFrameworks/HealthArchivableViews.framework/HealthArchivableViews
-   - /System/Library/PrivateFrameworks/MobileIcons.framework/MobileIcons
-   - /System/Library/PrivateFrameworks/NanoPreferencesSync.framework/NanoPreferencesSync
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5893
--  Symbols:   6969
+-  Symbols:   5142
 +  Functions: 5910
-+  Symbols:   6984
-   CStrings:  1043
- 
++  Symbols:   5157
 Symbols:
 + _associated conformance 9FitnessUI18RollingNumericText33_B3B93365F7D8ABCABB65E36A812FA763LLV05SwiftB012ViewModifierAA4BodyAeFP_AE0O0
 + _get_witness_table 7SwiftUI19_ConditionalContentVyAA08ModifiedD0VyAEyAA014_ViewModifier_D0Vy07FitnessB018RollingNumericText33_B3B93365F7D8ABCABB65E36A812FA763LLVGAA022_EnvironmentKeyWritingG0VyAA0D10TransitionVGGAA010_AnimationG0VySdGGALGAA0F0HPAvaXHPAraXHPAlaXHPyHC_AqA0fG0HPyHCHC_AuaYHPyHCHC_AlaXHPyHCHC

@@ -2,42 +2,33 @@
 
 > `/System/Library/Video/Plug-Ins/AppleMCTF.bundle/AppleMCTF`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__gcc_except_tab`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA.__objc_selrefs`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x85e20` | `0x86914` | **`+0xaf4`** |
+| `__TEXT.__cstring` | `0x2809a` | `0x2837c` | **`+0x2e2`** |
+| `__TEXT.__const` | `0x22ab8` | `0x22a08` | **`-0xb0`** |
+| `__TEXT.__unwind_info` | `0x668` | `0x670` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__init_offsets`
+
+### Other Changes
 
 ```diff
 
 -913.8.0.0.0
--  __TEXT.__text: 0x85e20
 +913.29.1.0.0
-+  __TEXT.__text: 0x86914
-   __TEXT.__auth_stubs: 0xd70
-   __TEXT.__objc_stubs: 0x20
-   __TEXT.__init_offsets: 0x4
--  __TEXT.__cstring: 0x2809a
--  __TEXT.__const: 0x22ab8
-+  __TEXT.__cstring: 0x2837c
-+  __TEXT.__const: 0x22a08
-   __TEXT.__gcc_except_tab: 0x628
-   __TEXT.__objc_methname: 0xb
--  __TEXT.__unwind_info: 0x668
-+  __TEXT.__unwind_info: 0x670
-   __DATA_CONST.__const: 0x53b0
-   __DATA_CONST.__cfstring: 0x940
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   - /usr/lib/libobjc.A.dylib
-   Functions: 668
-   Symbols:   341
 -  CStrings:  3412
 +  CStrings:  3427
- 
 Functions:
 ~ sub_3320 : 6584 -> 7052
 ~ sub_1ca00 -> sub_1cbd4 : 2780 -> 2772

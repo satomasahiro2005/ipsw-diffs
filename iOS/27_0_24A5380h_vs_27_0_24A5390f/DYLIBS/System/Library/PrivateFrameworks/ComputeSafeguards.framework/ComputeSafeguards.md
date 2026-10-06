@@ -2,89 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/ComputeSafeguards.framework/ComputeSafeguards`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x56c98` | `0x5aeec` | **`+0x4254`** |
+| `__AUTH_CONST.__objc_const` | `0x59b0` | `0x61b0` | **`+0x800`** |
+| `__TEXT.__objc_methlist` | `0x412c` | `0x4634` | **`+0x508`** |
+| `__TEXT.__oslogstring` | `0xeffa` | `0xf32a` | **`+0x330`** |
+| `__AUTH_CONST.__cfstring` | `0x5fe0` | `0x6300` | **`+0x320`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2710` | `0x2a20` | **`+0x310`** |
+| `__TEXT.__cstring` | `0x5e07` | `0x6075` | **`+0x26e`** |
+| `__DATA_CONST.__const` | `0xa70` | `0xb80` | **`+0x110`** |
+| `__AUTH.__objc_data` | `0x3c0` | `0x4b0` | **`+0xf0`** |
+| `__TEXT.__unwind_info` | `0xfa0` | `0x1088` | **`+0xe8`** |
+| `__DATA.__objc_ivar` | `0x4b4` | `0x530` | **`+0x7c`** |
+| `__TEXT.__gcc_except_tab` | `0x106c` | `0x10c4` | **`+0x58`** |
+| `__AUTH_CONST.__const` | `0x500` | `0x540` | **`+0x40`** |
+| `__DATA.__bss` | `0xa0` | `0xc0` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x4e0` | `0x4f8` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x310` | `0x328` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x148` | `0x160` | **`+0x18`** |
+| `__TEXT.__const` | `0x308` | `0x320` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0xc8` | `0xd8` | **`+0x10`** |
+| `__DATA_CONST.__objc_catlist` | `—` | `0x8` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -174.0.0.0.0
--  __TEXT.__text: 0x56c98
--  __TEXT.__objc_methlist: 0x412c
--  __TEXT.__const: 0x308
--  __TEXT.__cstring: 0x5e07
--  __TEXT.__oslogstring: 0xeffa
--  __TEXT.__gcc_except_tab: 0x106c
--  __TEXT.__unwind_info: 0xfa0
 +177.0.8.502.1
-+  __TEXT.__text: 0x5aeec
-+  __TEXT.__objc_methlist: 0x4634
-+  __TEXT.__const: 0x320
-+  __TEXT.__cstring: 0x6075
-+  __TEXT.__gcc_except_tab: 0x10c4
-+  __TEXT.__oslogstring: 0xf32a
-+  __TEXT.__unwind_info: 0x1088
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xa70
--  __DATA_CONST.__objc_classlist: 0x148
-+  __DATA_CONST.__const: 0xb80
-+  __DATA_CONST.__objc_classlist: 0x160
-+  __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x78
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2710
-+  __DATA_CONST.__objc_selrefs: 0x2a20
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__objc_superrefs: 0xc8
-+  __DATA_CONST.__objc_superrefs: 0xd8
-   __DATA_CONST.__objc_arraydata: 0x2200
--  __DATA_CONST.__got: 0x310
--  __AUTH_CONST.__const: 0x500
--  __AUTH_CONST.__cfstring: 0x5fe0
--  __AUTH_CONST.__objc_const: 0x59b0
-+  __DATA_CONST.__got: 0x328
-+  __AUTH_CONST.__const: 0x540
-+  __AUTH_CONST.__cfstring: 0x6300
-+  __AUTH_CONST.__objc_const: 0x61b0
-   __AUTH_CONST.__objc_intobj: 0x6c0
-   __AUTH_CONST.__objc_dictobj: 0x550
-   __AUTH_CONST.__objc_arrayobj: 0x150
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x4e0
--  __AUTH.__objc_data: 0x3c0
--  __DATA.__objc_ivar: 0x4b4
-+  __AUTH_CONST.__auth_got: 0x4f8
-+  __AUTH.__objc_data: 0x4b0
-+  __DATA.__objc_ivar: 0x530
-   __DATA.__data: 0x5b8
--  __DATA.__bss: 0xa0
-+  __DATA.__bss: 0xc0
-   __DATA.__common: 0x48
-   __DATA_DIRTY.__objc_data: 0x910
-   __DATA_DIRTY.__bss: 0x208
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libspindump.dylib
 -  Functions: 1951
--  Symbols:   3324
+-  Symbols:   2507
 -  CStrings:  1831
 +  Functions: 2065
-+  Symbols:   3586
++  Symbols:   2692
 +  CStrings:  1872
- 
 Symbols:
 + +[CSBoostMonitorConfig alwaysWatchProcessNames]
 + +[CSBoostObserver sharedObserver]
@@ -283,84 +238,6 @@ Symbols:
 + ___block_descriptor_60_e8_32s40w_e5_v8?0lw40l8s32l8
 + _alwaysWatchProcessNames.cached
 + _alwaysWatchProcessNames.once
-+ _objc_msgSend$_clearSysdiagnoseSuppressionForGeneration:
-+ _objc_msgSend$addMonitoredPid:name:
-+ _objc_msgSend$addRecentlyMitigatedWatchForPid:name:
-+ _objc_msgSend$addWatchedPid:name:reason:
-+ _objc_msgSend$allObservedPids
-+ _objc_msgSend$alwaysWatchProcessNames
-+ _objc_msgSend$bumpKind:
-+ _objc_msgSend$countersForPidLocked:name:
-+ _objc_msgSend$cs_numberForKey:
-+ _objc_msgSend$cs_stringForKey:
-+ _objc_msgSend$currentWindowBypassTicks
-+ _objc_msgSend$currentWindowImportanceOnlyTicks
-+ _objc_msgSend$currentWindowIsPartial
-+ _objc_msgSend$currentWindowPImpTicks
-+ _objc_msgSend$currentWindowPThrTicks
-+ _objc_msgSend$currentWindowStartTime
-+ _objc_msgSend$dictionaryWithContentsOfFile:
-+ _objc_msgSend$distantPast
-+ _objc_msgSend$enumerateKeysAndObjectsUsingBlock:
-+ _objc_msgSend$eventCountsAfterMitigation
-+ _objc_msgSend$eventCountsBeforeFirstMitigation
-+ _objc_msgSend$eventCountsDuringMitigation
-+ _objc_msgSend$finalizeAndRemoveMonitoredPid:issueType:
-+ _objc_msgSend$findPidForName:
-+ _objc_msgSend$firstMitigation
-+ _objc_msgSend$firstSeen
-+ _objc_msgSend$importanceOnlyTicks
-+ _objc_msgSend$isCurrentlyMitigated
-+ _objc_msgSend$isWatched
-+ _objc_msgSend$lastEvent
-+ _objc_msgSend$lastMitigation
-+ _objc_msgSend$loadConfigList
-+ _objc_msgSend$numberWithUnsignedInteger:
-+ _objc_msgSend$pid
-+ _objc_msgSend$pidExited:
-+ _objc_msgSend$pidIsObservedLocked:
-+ _objc_msgSend$pollAllObserved
-+ _objc_msgSend$pollOnePid:
-+ _objc_msgSend$pollTimer
-+ _objc_msgSend$promotionQosHistogram
-+ _objc_msgSend$qosFromBasepri:
-+ _objc_msgSend$recordCallerPid:
-+ _objc_msgSend$recordEventLocked:pid:callerPid:promQos:
-+ _objc_msgSend$recordPromotionQos:
-+ _objc_msgSend$removeWatchedPid:reason:
-+ _objc_msgSend$resetAllCounters
-+ _objc_msgSend$resetCountersForPid:
-+ _objc_msgSend$seedMitigatedPid:name:
-+ _objc_msgSend$setCurrentWindowBypassTicks:
-+ _objc_msgSend$setCurrentWindowImportanceOnlyTicks:
-+ _objc_msgSend$setCurrentWindowIsPartial:
-+ _objc_msgSend$setCurrentWindowPImpTicks:
-+ _objc_msgSend$setCurrentWindowPThrTicks:
-+ _objc_msgSend$setCurrentWindowStartTime:
-+ _objc_msgSend$setFirstMitigation:
-+ _objc_msgSend$setImportanceOnlyTicks:
-+ _objc_msgSend$setIsCurrentlyMitigated:
-+ _objc_msgSend$setIsWatched:
-+ _objc_msgSend$setLastEvent:
-+ _objc_msgSend$setLastMitigation:
-+ _objc_msgSend$setPid:
-+ _objc_msgSend$setPollTimer:
-+ _objc_msgSend$setWatchReasons:
-+ _objc_msgSend$sharedObserver
-+ _objc_msgSend$snapshot
-+ _objc_msgSend$snapshotForPid:
-+ _objc_msgSend$start
-+ _objc_msgSend$startPollTimer
-+ _objc_msgSend$stringValue
-+ _objc_msgSend$stringifyCountDict:
-+ _objc_msgSend$timeIntervalSinceReferenceDate
-+ _objc_msgSend$totalEventsAllPhases
-+ _objc_msgSend$uniqueCallers
-+ _objc_msgSend$unsignedIntValue
-+ _objc_msgSend$valueWithNonretainedObject:
-+ _objc_msgSend$walkThreadsForPid:
-+ _objc_msgSend$watchReasons
-+ _objc_msgSend$workQueue
 + _os_variant_has_internal_content
 + _proc_listallpids
 + _proc_name
@@ -385,7 +262,6 @@ Symbols:
 - GCC_except_table97
 - _CFBooleanGetValue
 - _MGCopyAnswer
-- _objc_msgSend$getPollPIDsCount
 CStrings:
 + "/Library/Preferences/com.apple.powerexceptions/boost-watch.plist"
 + "?"

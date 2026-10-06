@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/iCloudSubscriptionOptimizerDaemon.framework/iCloudSubscriptionOptimizerDaemon`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_22fecb1ac -> sub_23456a1ac : 352 -> 356

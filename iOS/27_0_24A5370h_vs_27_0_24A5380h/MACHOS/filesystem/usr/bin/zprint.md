@@ -2,17 +2,23 @@
 
 > `/usr/bin/zprint`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2744` | `0x2748` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2744
-+  __TEXT.__text: 0x2748
-   __TEXT.__auth_stubs: 0x240
-   __TEXT.__const: 0x38
-   __TEXT.__cstring: 0xfcd
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__unwind_info : content changed
+-1068.0.0.0.0
++1070.0.0.0.0
 Functions:
 ~ sub_100000828 : 3808 -> 3812
-
 ```

@@ -2,38 +2,23 @@
 
 > `/System/Library/Frameworks/USDKit.framework/USDKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2db668` | `0x2dbb40` | **`+0x4d8`** |
+| `__TEXT.__eh_frame` | `0xb3710` | `0xb3740` | **`+0x30`** |
+| `__TEXT.__gcc_except_tab` | `0x45a1c` | `0x45a34` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x44098` | `0x440a8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
- 106.40.4.0.1
--  __TEXT.__text: 0x2d4694
-+  __TEXT.__text: 0x2d4b6c
-   __TEXT.__const: 0x2d095
--  __TEXT.__gcc_except_tab: 0x45a1c
-+  __TEXT.__gcc_except_tab: 0x45a34
-   __TEXT.__cstring: 0x1746a
-   __TEXT.__swift5_typeref: 0x6344
-   __TEXT.__swift5_reflstr: 0x1887
-
-   __TEXT.__oslogstring: 0x5bb
-   __TEXT.__swift5_protos: 0xe0
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x45c88
--  __TEXT.__eh_frame: 0xb8b60
-+  __TEXT.__unwind_info: 0x45c98
-+  __TEXT.__eh_frame: 0xb8b88
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   - /usr/lib/usd/libusd_ms.dylib
--  Functions: 34519
+-  Functions: 34518
 -  Symbols:   64193
-+  Functions: 34522
++  Functions: 34521
 +  Symbols:   64204
-   CStrings:  930
- 
 Symbols:
 + GCC_except_table10069
 + GCC_except_table10078

@@ -2,44 +2,38 @@
 
 > `/usr/libexec/caraccessoryd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x787b0` | `0x787e8` | **`+0x38`** |
+| `__TEXT.__eh_frame` | `0xe90` | `0xeb8` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x1480` | `0x1488` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
 - `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -552.3.0.0.0
--  __TEXT.__text: 0x7569c
 +552.6.2.0.0
-+  __TEXT.__text: 0x756d4
-   __TEXT.__auth_stubs: 0x1ca0
-   __TEXT.__objc_stubs: 0x38e0
-   __TEXT.__objc_methlist: 0x1f84
-
-   __TEXT.__swift_as_entry: 0x48
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0xa4
--  __TEXT.__unwind_info: 0x1ad8
--  __TEXT.__eh_frame: 0xe98
-+  __TEXT.__unwind_info: 0x1ae0
-+  __TEXT.__eh_frame: 0xec0
-   __DATA_CONST.__const: 0x2ef0
-   __DATA_CONST.__cfstring: 0x420
-   __DATA_CONST.__objc_classlist: 0xe0
 Symbols:
 + _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVySdG_Tg5
 + _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVySo18CAFDeepLinkSettingC7setting_So24CAFProminenceInformationC10prominencetG_Tg5098$s13caraccessoryd17CAFDAppLinksAgentC010_updateAppC033_D2640CE36BC885AE244045554995650ELLyyFSbSo18fgh14C7setting_So24jK30C10prominencet_AgH_AjKttXEfU0_Tf1nnc_n

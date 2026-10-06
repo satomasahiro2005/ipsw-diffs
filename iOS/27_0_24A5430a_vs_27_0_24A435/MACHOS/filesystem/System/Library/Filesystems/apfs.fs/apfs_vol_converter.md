@@ -2,21 +2,22 @@
 
 > `/System/Library/Filesystems/apfs.fs/apfs_vol_converter`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5a7a8` | `0x5a91c` | **`+0x174`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 3288.2.1.0.0
--  __TEXT.__text: 0x5a7a8
-+  __TEXT.__text: 0x5a91c
-   __TEXT.__auth_stubs: 0xa10
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__const: 0x750
+```text
 Functions:
 ~ sub_10001cef0 : 636 -> 664
 ~ sub_10001d30c -> sub_10001d328 : 844 -> 868

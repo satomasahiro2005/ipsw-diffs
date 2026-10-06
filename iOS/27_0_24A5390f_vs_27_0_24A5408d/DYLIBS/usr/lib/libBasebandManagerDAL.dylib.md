@@ -2,25 +2,21 @@
 
 > `/usr/lib/libBasebandManagerDAL.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ed57c` | `0x1ed3ec` | **`-0x190`** |
+| `__TEXT.__gcc_except_tab` | `0x2abf8` | `0x2abd4` | **`-0x24`** |
+| `__TEXT.__oslogstring` | `0xaa9f` | `0xaa80` | **`-0x1f`** |
+| `__TEXT.__cstring` | `0x5ec6` | `0x5ed7` | **`+0x11`** |
+
+### Other Changes
+
 ```diff
 
 -1580.0.0.0.0
--  __TEXT.__text: 0x1ed57c
 +1585.0.0.0.0
-+  __TEXT.__text: 0x1ed3ec
-   __TEXT.__init_offsets: 0x14c
-   __TEXT.__objc_methlist: 0x3d4
-   __TEXT.__const: 0xedd8
-   __TEXT.__dlopen_cstrs: 0x52
--  __TEXT.__gcc_except_tab: 0x2abf8
--  __TEXT.__oslogstring: 0xaa9f
--  __TEXT.__cstring: 0x5ec6
-+  __TEXT.__gcc_except_tab: 0x2abd4
-+  __TEXT.__oslogstring: 0xaa80
-+  __TEXT.__cstring: 0x5ed7
-   __TEXT.__unwind_info: 0x8350
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 Functions:
 ~ __GLOBAL__sub_I_ResetInfo.cpp : 2588 -> 2676
 ~ __ZN9SARModule22initializeHelpers_syncEv : 7900 -> 7412

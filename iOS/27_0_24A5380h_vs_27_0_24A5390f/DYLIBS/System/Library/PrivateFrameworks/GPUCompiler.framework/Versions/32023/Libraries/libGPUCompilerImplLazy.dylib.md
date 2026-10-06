@@ -2,49 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/32023/Libraries/libGPUCompilerImplLazy.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__DATA_CONST.__weak_got`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH.__data`
-- `__AUTH.__thread_vars`
-- `__DATA.__data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1189e68` | `0x118d3f4` | **`+0x358c`** |
+| `__TEXT.__const` | `0xd57c0` | `0xd5ea0` | **`+0x6e0`** |
+| `__TEXT.__cstring` | `0x13a7f4` | `0x13a4f5` | **`-0x2ff`** |
+| `__DATA_CONST.__const` | `0x192ef8` | `0x192f48` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x18a48` | `0x18a30` | **`-0x18`** |
+| `__AUTH_CONST.__const` | `0xf4b78` | `0xf4b88` | **`+0x10`** |
+
+### Other Changes
 
 ```diff
 
 -32023.920.0.0.0
--  __TEXT.__text: 0x1189e68
 +32023.921.0.0.0
-+  __TEXT.__text: 0x118d3f4
-   __TEXT.__init_offsets: 0x14
--  __TEXT.__const: 0xd57c0
--  __TEXT.__cstring: 0x13a7f4
--  __TEXT.__unwind_info: 0x18a48
-+  __TEXT.__const: 0xd5ea0
-+  __TEXT.__cstring: 0x13a4f5
-+  __TEXT.__unwind_info: 0x18a30
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x192ef8
-+  __DATA_CONST.__const: 0x192f48
-   __DATA_CONST.__weak_got: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xf4b78
-+  __AUTH_CONST.__const: 0xf4b88
-   __AUTH_CONST.__weak_auth_got: 0xb8
-   __AUTH_CONST.__auth_got: 0x35a0
-   __AUTH.__data: 0x4b70
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libarchive.2.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 37806
 +  Functions: 37816
-   Symbols:   1841
+
 -  CStrings:  56861
 +  CStrings:  56847
- 
 CStrings:
 + " __metal_generic"
 + " version 32023.921"

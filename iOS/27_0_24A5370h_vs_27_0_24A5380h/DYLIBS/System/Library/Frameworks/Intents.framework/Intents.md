@@ -2,87 +2,35 @@
 
 > `/System/Library/Frameworks/Intents.framework/Intents`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x15ae0` | `0x17430` | **`+0x1950`** |
+| `__DATA_DIRTY.__objc_data` | `0x4100` | `0x27b0` | **`-0x1950`** |
+| `__TEXT.__text` | `0x45fbf8` | `0x45fddc` | **`+0x1e4`** |
+| `__TEXT.__oslogstring` | `0x600d` | `0x606c` | **`+0x5f`** |
+| `__TEXT.__unwind_info` | `0x11a40` | `0x11a88` | **`+0x48`** |
+| `__TEXT.__gcc_except_tab` | `0x2164` | `0x2190` | **`+0x2c`** |
+| `__AUTH_CONST.__auth_got` | `0x838` | `0x858` | **`+0x20`** |
+| `__AUTH_CONST.__cfstring` | `0x429a0` | `0x42980` | **`-0x20`** |
+| `__DATA_CONST.__got` | `0x28a8` | `0x28c8` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x479cd` | `0x479e1` | **`+0x14`** |
+| `__DATA_CONST.__objc_selrefs` | `0x154a8` | `0x154b8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x45fbf8
-+  __TEXT.__text: 0x45fddc
-   __TEXT.__objc_methlist: 0x78c54
-   __TEXT.__const: 0x1d28
-   __TEXT.__dlopen_cstrs: 0xce9
--  __TEXT.__gcc_except_tab: 0x2164
--  __TEXT.__cstring: 0x479cd
--  __TEXT.__oslogstring: 0x600d
-+  __TEXT.__gcc_except_tab: 0x2190
-+  __TEXT.__cstring: 0x479e1
-+  __TEXT.__oslogstring: 0x606c
-   __TEXT.__ustring: 0x512
--  __TEXT.__unwind_info: 0x11a40
-+  __TEXT.__unwind_info: 0x11a88
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-4016.0.42.4.0
++4016.0.43.5.0
 
-   __DATA_CONST.__objc_protolist: 0x1940
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x154a8
-+  __DATA_CONST.__objc_selrefs: 0x154b8
-   __DATA_CONST.__objc_protorefs: 0x90
-   __DATA_CONST.__objc_superrefs: 0x1398
-   __DATA_CONST.__objc_arraydata: 0xc7f8
--  __DATA_CONST.__got: 0x28a8
-+  __DATA_CONST.__got: 0x28c8
-   __AUTH_CONST.__const: 0x17a0
--  __AUTH_CONST.__cfstring: 0x429a0
-+  __AUTH_CONST.__cfstring: 0x42980
-   __AUTH_CONST.__objc_const: 0xb4da0
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x828
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__objc_arrayobj: 0x4da0
-   __AUTH_CONST.__objc_dictobj: 0x3b60
--  __AUTH_CONST.__auth_got: 0x838
--  __AUTH.__objc_data: 0x15ae0
-+  __AUTH_CONST.__auth_got: 0x858
-+  __AUTH.__objc_data: 0x17430
-   __DATA.__objc_ivar: 0x3d54
-   __DATA.__data: 0x12f98
-   __DATA.__bss: 0xd78
-   __DATA.__common: 0x8
--  __DATA_DIRTY.__objc_data: 0x4100
-+  __DATA_DIRTY.__objc_data: 0x27b0
-   __DATA_DIRTY.__bss: 0x170
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libmis.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 30704
--  Symbols:   87293
--  CStrings:  18189
+-  Symbols:   51835
+-  CStrings:  9685
 +  Functions: 30705
-+  Symbols:   87301
-+  CStrings:  18190
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __DATA.__data : content changed
++  Symbols:   51839
++  CStrings:  9687
 Symbols:
 + GCC_except_table10139
 + GCC_except_table10149
@@ -200,8 +148,6 @@ Symbols:
 + ___strlcpy_chk
 + _close
 + _fpathconf
-+ _objc_msgSend$_URLByInsertingResolveFlags:
-+ _objc_msgSend$_URLByRemovingResolveFlags
 + _open
 - GCC_except_table10138
 - GCC_except_table10148
@@ -323,5 +269,4 @@ CStrings:
 + "IntelligenceFlow"
 - "%s Security scope path check failed: realpath failed for %{public}s: %{public}s"
 - "/.nofollow"
-
 ```

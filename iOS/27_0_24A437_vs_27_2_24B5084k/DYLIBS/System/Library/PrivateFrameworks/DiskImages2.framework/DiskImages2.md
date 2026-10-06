@@ -2,60 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/DiskImages2.framework/DiskImages2`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1f2750` | `0x1f3acc` | **`+0x137c`** |
+| `__AUTH_CONST.__const` | `0x38750` | `0x38bf0` | **`+0x4a0`** |
+| `__TEXT.__const` | `0x172fa` | `0x173ba` | **`+0xc0`** |
+| `__TEXT.__gcc_except_tab` | `0x1b4d8` | `0x1b588` | **`+0xb0`** |
+| `__TEXT.__unwind_info` | `0xe540` | `0xe5e0` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x1138` | `0x1178` | **`+0x40`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -598.0.1.0.0
--  __TEXT.__text: 0x1e55c0
 +598.40.3.0.0
-+  __TEXT.__text: 0x1e685c
-   __TEXT.__objc_methlist: 0x3d0c
--  __TEXT.__const: 0x172fa
--  __TEXT.__gcc_except_tab: 0x1b4d8
-+  __TEXT.__const: 0x173ba
-+  __TEXT.__gcc_except_tab: 0x1b588
-   __TEXT.__cstring: 0x17538
-   __TEXT.__oslogstring: 0x1d7e
-   __TEXT.__ustring: 0x13c
 
-   __TEXT.__swift5_typeref: 0x58
-   __TEXT.__swift5_fieldmd: 0x10
-   __TEXT.__swift5_types: 0x4
--  __TEXT.__unwind_info: 0x107b0
-+  __TEXT.__unwind_info: 0x10870
-   __TEXT.__eh_frame: 0xf0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1138
-+  __DATA_CONST.__const: 0x1178
-   __DATA_CONST.__objc_classlist: 0x290
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x40
-
-   __DATA_CONST.__objc_superrefs: 0x200
-   __DATA_CONST.__objc_arraydata: 0xf0
-   __DATA_CONST.__got: 0x690
--  __AUTH_CONST.__const: 0x38750
-+  __AUTH_CONST.__const: 0x38bf0
-   __AUTH_CONST.__cfstring: 0x4ec0
-   __AUTH_CONST.__objc_const: 0x60a8
-   __AUTH_CONST.__weak_auth_got: 0x30
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/local/lib/libcurl.4.dylib
 -  Functions: 11861
--  Symbols:   19592
+-  Symbols:   18743
 +  Functions: 11895
-+  Symbols:   19645
-   CStrings:  2301
- 
++  Symbols:   18796
 Symbols:
 + GCC_except_table1848
 + GCC_except_table1849

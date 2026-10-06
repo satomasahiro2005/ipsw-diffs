@@ -2,123 +2,65 @@
 
 > `/System/Library/PrivateFrameworks/EntityService.framework/EntityService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xccc30` | `0xd0bcc` | **`+0x3f9c`** |
+| `__AUTH_CONST.__const` | `0x9420` | `0x9b88` | **`+0x768`** |
+| `__DATA.__bss` | `0xf80` | `0x1280` | **`+0x300`** |
+| `__TEXT.__const` | `0x3dd0` | `0x4050` | **`+0x280`** |
+| `__TEXT.__swift5_capture` | `0x3600` | `0x3830` | **`+0x230`** |
+| `__TEXT.__swift5_typeref` | `0x1c7e` | `0x1e56` | **`+0x1d8`** |
+| `__TEXT.__oslogstring` | `0x25a7` | `0x2427` | **`-0x180`** |
+| `__AUTH_CONST.__auth_got` | `0xfb8` | `0x10e0` | **`+0x128`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6d0` | `0x5d8` | **`-0xf8`** |
+| `__TEXT.__swift5_reflstr` | `0x7f1` | `0x8d6` | **`+0xe5`** |
+| `__TEXT.__eh_frame` | `0x63d0` | `0x62f8` | **`-0xd8`** |
+| `__TEXT.__swift5_fieldmd` | `0xac4` | `0xb88` | **`+0xc4`** |
+| `__DATA.__data` | `0x490` | `0x550` | **`+0xc0`** |
+| `__TEXT.__unwind_info` | `0x2460` | `0x23c0` | **`-0xa0`** |
+| `__TEXT.__constg_swiftt` | `0xeec` | `0xe64` | **`-0x88`** |
+| `__DATA_DIRTY.__data` | `0x16d0` | `0x1698` | **`-0x38`** |
+| `__DATA.__common` | `0x20` | `0x50` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0xa0` | `0xc8` | **`+0x28`** |
+| `__TEXT.__swift5_assocty` | `0x68` | `0x80` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0xdc` | `0xf4` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0xd4` | `0xe4` | **`+0x10`** |
+| `__TEXT.__swift_as_ret` | `0x318` | `0x308` | **`-0x10`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -3600.156.4.501.4
--  __TEXT.__text: 0xc1e28
--  __TEXT.__const: 0x3dd0
--  __TEXT.__constg_swiftt: 0xeec
--  __TEXT.__swift5_typeref: 0x1c7e
--  __TEXT.__swift5_reflstr: 0x7f1
--  __TEXT.__swift5_fieldmd: 0xac4
 +3605.14.3.501.4
-+  __TEXT.__text: 0xc5ab4
-+  __TEXT.__const: 0x4050
-+  __TEXT.__constg_swiftt: 0xe64
-+  __TEXT.__swift5_typeref: 0x1e56
-+  __TEXT.__swift5_reflstr: 0x8d6
-+  __TEXT.__swift5_fieldmd: 0xb88
-   __TEXT.__cstring: 0x22a4
--  __TEXT.__oslogstring: 0x25a7
-+  __TEXT.__oslogstring: 0x2427
-   __TEXT.__swift5_builtin: 0x28
--  __TEXT.__swift5_types: 0xd4
-+  __TEXT.__swift5_types: 0xe4
-   __TEXT.__swift5_protos: 0x3c
--  __TEXT.__swift5_proto: 0xdc
--  __TEXT.__swift5_capture: 0x3600
-+  __TEXT.__swift5_proto: 0xf4
-+  __TEXT.__swift5_capture: 0x3830
-   __TEXT.__swift_as_entry: 0x2a4
--  __TEXT.__swift_as_ret: 0x318
-+  __TEXT.__swift_as_ret: 0x308
-   __TEXT.__swift_as_cont: 0x4a8
--  __TEXT.__swift5_assocty: 0x68
-+  __TEXT.__swift5_assocty: 0x80
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x2960
--  __TEXT.__eh_frame: 0x63d8
-+  __TEXT.__unwind_info: 0x2860
-+  __TEXT.__eh_frame: 0x6300
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xa0
-+  __DATA_CONST.__const: 0xc8
-   __DATA_CONST.__objc_classlist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6d0
-+  __DATA_CONST.__objc_selrefs: 0x5d8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x9420
-+  __AUTH_CONST.__const: 0x9b88
-   __AUTH_CONST.__objc_const: 0xdb8
--  __AUTH_CONST.__auth_got: 0xfb8
-+  __AUTH_CONST.__auth_got: 0x10e0
-   __AUTH.__objc_data: 0x50
-   __AUTH.__data: 0x520
--  __DATA.__data: 0x490
--  __DATA.__common: 0x20
-+  __DATA.__data: 0x550
-+  __DATA.__common: 0x50
-   __DATA_DIRTY.__objc_data: 0xa0
--  __DATA_DIRTY.__data: 0x16d0
-+  __DATA_DIRTY.__data: 0x1698
-   __DATA_DIRTY.__bss: 0x800
-   __DATA_DIRTY.__common: 0x318
-   - /System/Library/Frameworks/Contacts.framework/Contacts
 
-   - /System/Library/Frameworks/CoreLocation.framework/CoreLocation
-   - /System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 +  - /System/Library/Frameworks/HomeKit.framework/HomeKit
-   - /System/Library/Frameworks/Intents.framework/Intents
+
 +  - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/Frameworks/_LocationEssentials.framework/_LocationEssentials
-   - /System/Library/PrivateFrameworks/HybridSearch.framework/HybridSearch
-   - /System/Library/PrivateFrameworks/HybridSearchAdapter.framework/HybridSearchAdapter
-   - /System/Library/PrivateFrameworks/IntelligenceFlowErrorTypes.framework/IntelligenceFlowErrorTypes
-   - /System/Library/PrivateFrameworks/IntelligenceFlowShared.framework/IntelligenceFlowShared
+
 -  - /System/Library/PrivateFrameworks/SiriAnalytics.framework/SiriAnalytics
-   - /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation
-   - /System/Library/PrivateFrameworks/ToolKit.framework/ToolKit
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
+
 +  - /usr/lib/swift/libswiftAVFoundation.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
+
 +  - /usr/lib/swift/libswiftCoreImage.dylib
-   - /usr/lib/swift/libswiftCoreLocation.dylib
+
 +  - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
-   - /usr/lib/swift/libswiftIntents.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
+
 +  - /usr/lib/swift/libswiftSpatial.dylib
 +  - /usr/lib/swift/libswiftSynchronization.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 5239
 -  Symbols:   351
 -  CStrings:  375
 +  Functions: 5263
 +  Symbols:   307
 +  CStrings:  378
- 
 Symbols:
 + _OBJC_CLASS_$_HMClientConnection
 + __swift_FORCE_LOAD_$_swiftAVFoundation

@@ -2,103 +2,50 @@
 
 > `/System/Library/Frameworks/Speech.framework/Speech`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x22dcc8` | `0x230470` | **`+0x27a8`** |
+| `__TEXT.__unwind_info` | `0x9ba8` | `0x9e38` | **`+0x290`** |
+| `__DATA.__bss` | `0xe010` | `0xe290` | **`+0x280`** |
+| `__TEXT.__const` | `0xfaa0` | `0xfc30` | **`+0x190`** |
+| `__TEXT.__eh_frame` | `0x14420` | `0x145a8` | **`+0x188`** |
+| `__AUTH_CONST.__const` | `0x11270` | `0x11328` | **`+0xb8`** |
+| `__TEXT.__oslogstring` | `0x50a2` | `0x4ff2` | **`-0xb0`** |
+| `__TEXT.__swift5_reflstr` | `0x523b` | `0x52eb` | **`+0xb0`** |
+| `__AUTH.__data` | `0xd00` | `0xda0` | **`+0xa0`** |
+| `__DATA.__data` | `0x3380` | `0x3410` | **`+0x90`** |
+| `__TEXT.__swift5_fieldmd` | `0x4264` | `0x42d8` | **`+0x74`** |
+| `__DATA_DIRTY.__data` | `0x61c8` | `0x6158` | **`-0x70`** |
+| `__TEXT.__swift5_typeref` | `0x6d52` | `0x6dc0` | **`+0x6e`** |
+| `__TEXT.__constg_swiftt` | `0x4b6c` | `0x4bd4` | **`+0x68`** |
+| `__AUTH_CONST.__objc_const` | `0xe6e8` | `0xe728` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x9a8f` | `0x9acf` | **`+0x40`** |
+| `__TEXT.__swift5_assocty` | `0xa88` | `0xab8` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x1c18` | `0x1c40` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0xf68` | `0xf80` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0x988` | `0x9a0` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x104` | `0x118` | **`+0x14`** |
+| `__DATA.__common` | `0x68` | `0x78` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x30c0` | `0x30d0` | **`+0x10`** |
+| `__DATA_DIRTY.__common` | `0x3d8` | `0x3c8` | **`-0x10`** |
+| `__TEXT.__swift_as_cont` | `0x1530` | `0x1540` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x501c` | `0x5024` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x3d4` | `0x3dc` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0xb3c` | `0xb44` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.74.1.0.0
--  __TEXT.__text: 0x22dcc8
--  __TEXT.__objc_methlist: 0x501c
--  __TEXT.__const: 0xfaa0
--  __TEXT.__swift5_typeref: 0x6d52
--  __TEXT.__constg_swiftt: 0x4b6c
--  __TEXT.__swift5_reflstr: 0x523b
--  __TEXT.__swift5_fieldmd: 0x4264
--  __TEXT.__swift5_builtin: 0x104
--  __TEXT.__swift5_assocty: 0xa88
--  __TEXT.__cstring: 0x9a8f
--  __TEXT.__swift5_proto: 0x988
--  __TEXT.__swift5_types: 0x3d4
--  __TEXT.__oslogstring: 0x50a2
 +3600.81.1.0.0
-+  __TEXT.__text: 0x230470
-+  __TEXT.__objc_methlist: 0x5024
-+  __TEXT.__const: 0xfc30
-+  __TEXT.__swift5_typeref: 0x6dc0
-+  __TEXT.__constg_swiftt: 0x4bd4
-+  __TEXT.__swift5_reflstr: 0x52eb
-+  __TEXT.__swift5_fieldmd: 0x42d8
-+  __TEXT.__swift5_builtin: 0x118
-+  __TEXT.__swift5_assocty: 0xab8
-+  __TEXT.__cstring: 0x9acf
-+  __TEXT.__swift5_proto: 0x9a0
-+  __TEXT.__swift5_types: 0x3dc
-+  __TEXT.__oslogstring: 0x4ff2
-   __TEXT.__swift5_capture: 0x41a4
-   __TEXT.__swift5_acfuncs: 0x5b4
-   __TEXT.__swift_as_entry: 0xadc
--  __TEXT.__swift_as_ret: 0xb3c
--  __TEXT.__swift_as_cont: 0x1530
-+  __TEXT.__swift_as_ret: 0xb44
-+  __TEXT.__swift_as_cont: 0x1540
-   __TEXT.__swift5_protos: 0x68
-   __TEXT.__swift5_mpenum: 0x10
-   __TEXT.__gcc_except_tab: 0x8d4
--  __TEXT.__unwind_info: 0x9ba8
--  __TEXT.__eh_frame: 0x14420
-+  __TEXT.__unwind_info: 0x9e38
-+  __TEXT.__eh_frame: 0x145a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x1a0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x30c0
-+  __DATA_CONST.__objc_selrefs: 0x30d0
-   __DATA_CONST.__objc_protorefs: 0xf8
-   __DATA_CONST.__objc_superrefs: 0x238
-   __DATA_CONST.__objc_arraydata: 0x118
--  __DATA_CONST.__got: 0xf68
--  __AUTH_CONST.__const: 0x11270
-+  __DATA_CONST.__got: 0xf80
-+  __AUTH_CONST.__const: 0x11328
-   __AUTH_CONST.__cfstring: 0x47e0
--  __AUTH_CONST.__objc_const: 0xe6e8
-+  __AUTH_CONST.__objc_const: 0xe728
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__objc_intobj: 0xf0
--  __AUTH_CONST.__auth_got: 0x1c18
-+  __AUTH_CONST.__auth_got: 0x1c40
-   __AUTH.__objc_data: 0x510
--  __AUTH.__data: 0xd00
-+  __AUTH.__data: 0xda0
-   __DATA.__objc_ivar: 0x628
--  __DATA.__data: 0x3380
--  __DATA.__common: 0x68
--  __DATA.__bss: 0xe010
-+  __DATA.__data: 0x3410
-+  __DATA.__common: 0x78
-+  __DATA.__bss: 0xe290
-   __DATA_DIRTY.__objc_data: 0x2610
--  __DATA_DIRTY.__data: 0x61c8
-+  __DATA_DIRTY.__data: 0x6158
-   __DATA_DIRTY.__bss: 0x2130
--  __DATA_DIRTY.__common: 0x3d8
-+  __DATA_DIRTY.__common: 0x3c8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15394
--  Symbols:   27399
+-  Symbols:   26233
 +  Functions: 15481
-+  Symbols:   27552
-   CStrings:  1469
- 
++  Symbols:   26385
 Symbols:
 + +[SFUtilities speechProfileSizeInBytesForLanguage:]
 + GCC_except_table1165
@@ -379,7 +326,6 @@ Symbols:
 + _associated conformance So18NSFileAttributeKeyaSHSCSQ
 + _associated conformance So18NSFileAttributeKeyas20_SwiftNewtypeWrapperSCSY
 + _associated conformance So18NSFileAttributeKeyas20_SwiftNewtypeWrapperSCs35_HasCustomAnyHashableRepresentation
-+ _objc_msgSend$setHasInvalidSpeechProfileEntities:
 + _symbolic $ss21_ObjectiveCBridgeableP
 + _symbolic _____ 6Speech14AssetInventoryC14ServiceManager33_6F5A7C5F4F6C8D379A24A06B9F46C0E5LLC
 + _symbolic _____ 6Speech14AssetInventoryC14ServiceManager33_6F5A7C5F4F6C8D379A24A06B9F46C0E5LLC15ConnectionStateV

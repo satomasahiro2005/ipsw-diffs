@@ -2,15 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/HealthCoaching.framework/HealthCoaching`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x23e98` | `0x23e9c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.45.2.4
--  __TEXT.__text: 0x22654
 +7027.1.54.2.3
-+  __TEXT.__text: 0x22658
-   __TEXT.__const: 0x2548
-   __TEXT.__constg_swiftt: 0x9a4
-   __TEXT.__swift5_typeref: 0x798
 Functions:
-~ sub_283e808e8 -> sub_28319a8e8 : 132 -> 136
+~ sub_286dc305c -> sub_28612705c : 132 -> 136
 ```

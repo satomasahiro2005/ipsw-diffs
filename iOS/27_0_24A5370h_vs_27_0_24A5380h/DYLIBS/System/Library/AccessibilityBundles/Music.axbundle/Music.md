@@ -2,65 +2,39 @@
 
 > `/System/Library/AccessibilityBundles/Music.axbundle/Music`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__objc_data` | `—` | `0x19f0` | **`+0x19f0`** |
+| `__AUTH.__objc_data` | `0x1bd0` | `0x280` | **`-0x1950`** |
+| `__TEXT.__text` | `0xbedc` | `0xc458` | **`+0x57c`** |
+| `__AUTH_CONST.__objc_const` | `0x3250` | `0x3370` | **`+0x120`** |
+| `__TEXT.__objc_methlist` | `0x1284` | `0x131c` | **`+0x98`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7c8` | `0x810` | **`+0x48`** |
+| `__AUTH_CONST.__cfstring` | `0x3620` | `0x3660` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x498` | `0x4c8` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0x2c0` | `0x2e0` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x2998` | `0x29b8` | **`+0x20`** |
+| `__DATA.__bss` | `0x28` | `0x18` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x1b0` | `0x1c0` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x2c8` | `0x2d8` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x128` | `0x138` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `—` | `0x10` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xbedc
--  __TEXT.__objc_methlist: 0x1284
-+  __TEXT.__text: 0xc458
-+  __TEXT.__objc_methlist: 0x131c
-   __TEXT.__const: 0x20
-   __TEXT.__gcc_except_tab: 0x174
--  __TEXT.__cstring: 0x2998
-+  __TEXT.__cstring: 0x29b8
-   __TEXT.__ustring: 0xa
--  __TEXT.__unwind_info: 0x498
-+  __TEXT.__unwind_info: 0x4c8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x3f0
--  __DATA_CONST.__objc_classlist: 0x2c8
-+  __DATA_CONST.__objc_classlist: 0x2d8
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7c8
--  __DATA_CONST.__objc_superrefs: 0x128
--  __DATA_CONST.__got: 0x1b0
--  __AUTH_CONST.__const: 0x2c0
--  __AUTH_CONST.__cfstring: 0x3620
--  __AUTH_CONST.__objc_const: 0x3250
-+  __DATA_CONST.__objc_selrefs: 0x810
-+  __DATA_CONST.__objc_superrefs: 0x138
-+  __DATA_CONST.__got: 0x1c0
-+  __AUTH_CONST.__const: 0x2e0
-+  __AUTH_CONST.__cfstring: 0x3660
-+  __AUTH_CONST.__objc_const: 0x3370
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x1bd0
--  __DATA.__bss: 0x28
-+  __AUTH.__objc_data: 0x280
-+  __DATA.__bss: 0x18
-+  __DATA_DIRTY.__objc_data: 0x19f0
-+  __DATA_DIRTY.__bss: 0x10
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+-3039.1.0.0.0
++3042.0.0.0.0
 
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 385
--  Symbols:   1609
--  CStrings:  914
+-  Symbols:   1011
+-  CStrings:  484
 +  Functions: 398
-+  Symbols:   1657
-+  CStrings:  917
- 
-Sections:
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_catlist : content changed
++  Symbols:   1039
++  CStrings:  485
 Symbols:
 + +[SingIndicatorViewAccessibility _accessibilityPerformValidations:]
 + +[SingIndicatorViewAccessibility(SafeCategory) safeCategoryBaseClass]
@@ -95,21 +69,11 @@ Symbols:
 + __OBJC_METACLASS_RO_$___SingIndicatorViewAccessibility_super
 + ___67-[NowPlayingTrackTitleStackViewAccessibility accessibilityActivate]_block_invoke
 + ___73-[NowPlayingTrackTitleStackViewAccessibility _axActionableSubtitleButton]_block_invoke
-+ _objc_msgSend$_axActionableSubtitleButton
-+ _objc_msgSend$allControlEvents
-+ _objc_msgSend$intrinsicContentSize
-+ _objc_msgSend$menu
-+ _objc_msgSend$performPrimaryAction
-+ _objc_msgSend$safeSwiftEnumAssociatedObject
-+ _objc_msgSend$showsMenuAsPrimaryAction
-+ _objc_msgSend$validateClass:hasProperty:withType:
 - GCC_except_table108
 - GCC_except_table139
 - GCC_except_table208
 - GCC_except_table216
 - GCC_except_table265
-- _objc_msgSend$reactionText
-- _objc_msgSend$setAccessibilityRespondsToUserInteraction:
 CStrings:
 + "MPModelPlaylistEntryReaction"
 + "Music.SingIndicatorView"
@@ -122,5 +86,4 @@ CStrings:
 - "MusicCoreUI.Reactions"
 - "accountButton"
 - "cardHeight"
-
 ```

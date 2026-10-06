@@ -2,46 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/CoreRecognition.framework/CoreRecognition`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5b7f0` | `0x5b654` | **`-0x19c`** |
+| `__DATA_CONST.__got` | `0x5d8` | `0x5e0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x5b7f0
-+  __TEXT.__text: 0x5b654
-   __TEXT.__objc_methlist: 0x2394
-   __TEXT.__const: 0x7bc
-   __TEXT.__cstring: 0x4b56
-
-   __DATA_CONST.__objc_selrefs: 0x2030
-   __DATA_CONST.__objc_superrefs: 0x58
-   __DATA_CONST.__objc_arraydata: 0x3dc0
--  __DATA_CONST.__got: 0x5d8
-+  __DATA_CONST.__got: 0x5e0
-   __AUTH_CONST.__const: 0x9b0
-   __AUTH_CONST.__cfstring: 0xfbe0
-   __AUTH_CONST.__objc_const: 0x3900
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+-446.9.0.0.0
++446.10.0.0.0
 Functions:
 ~ -[CRCameraReader viewDidLayoutSubviews] : 676 -> 712
 ~ __ZN3CNN9RecognizeEP6CorpusNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE : 4780 -> 4784
@@ -62,5 +35,4 @@ Functions:
 ~ __ZNSt3__111__introsortINS_17_ClassicAlgPolicyERZL33returnIndiciesOfSortedFloatVectorRKNS_6vectorIfNS_9allocatorIfEEEEE3$_0PiLb0EEEvT1_SB_T0_NS_15iterator_traitsISB_E15difference_typeEb : 4772 -> 4700
 ~ __ZNSt3__127__insertion_sort_incompleteB9foe220106INS_17_ClassicAlgPolicyERZL33returnIndiciesOfSortedFloatVectorRKNS_6vectorIfNS_9allocatorIfEEEEE3$_0PiEEbT1_SB_T0_ : 828 -> 804
 ~ __ZNSt3__19__reverseB9foe220106INS_17_ClassicAlgPolicyENS_11__wrap_iterIPNS_6vectorIfNS_9allocatorIfEEEEEES8_EEvT0_T1_ : 84 -> 88
-
 ```

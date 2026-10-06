@@ -2,67 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/SiriVideoUIFramework.framework/SiriVideoUIFramework`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1aec4` | `0x1bd34` | **`+0xe70`** |
+| `__TEXT.__swift5_typeref` | `0x106d` | `0x11e9` | **`+0x17c`** |
+| `__DATA.__bss` | `0x530` | `0x620` | **`+0xf0`** |
+| `__TEXT.__const` | `0xb80` | `0xc40` | **`+0xc0`** |
+| `__TEXT.__swift5_reflstr` | `0x184` | `0x1d4` | **`+0x50`** |
+| `__TEXT.__swift5_fieldmd` | `0x218` | `0x254` | **`+0x3c`** |
+| `__TEXT.__constg_swiftt` | `0x348` | `0x380` | **`+0x38`** |
+| `__TEXT.__eh_frame` | `0x298` | `0x260` | **`-0x38`** |
+| `__DATA.__data` | `0x728` | `0x750` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x498` | `0x4b8` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xa00` | `0xa18` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0xf0` | `0x108` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `—` | `0x14` | **`+0x14`** |
+| `__TEXT.__unwind_info` | `0x5a0` | `0x5b0` | **`+0x10`** |
+| `__AUTH.__data` | `0x540` | `0x548` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x28` | `0x30` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x2c` | `0x30` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3605.21.1.0.0
--  __TEXT.__text: 0x1989c
--  __TEXT.__const: 0xb80
 +3605.26.1.0.0
-+  __TEXT.__text: 0x1a664
-+  __TEXT.__const: 0xc40
-+  __TEXT.__constg_swiftt: 0x380
-+  __TEXT.__swift5_typeref: 0x11e9
-+  __TEXT.__swift5_builtin: 0x14
-+  __TEXT.__swift5_reflstr: 0x1d4
-+  __TEXT.__swift5_assocty: 0x108
-+  __TEXT.__swift5_proto: 0x30
-+  __TEXT.__swift5_types: 0x30
-   __TEXT.__cstring: 0x263
--  __TEXT.__swift5_typeref: 0x106d
-   __TEXT.__swift5_capture: 0x174
-   __TEXT.__oslogstring: 0x1cb
-   __TEXT.__swift_as_entry: 0x8
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0xc
--  __TEXT.__swift5_reflstr: 0x184
--  __TEXT.__swift5_assocty: 0xf0
--  __TEXT.__constg_swiftt: 0x348
--  __TEXT.__swift5_fieldmd: 0x218
--  __TEXT.__swift5_proto: 0x28
--  __TEXT.__swift5_types: 0x2c
--  __TEXT.__unwind_info: 0x688
--  __TEXT.__eh_frame: 0x298
-+  __TEXT.__swift5_fieldmd: 0x254
-+  __TEXT.__unwind_info: 0x6c0
-+  __TEXT.__eh_frame: 0x260
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x58
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x498
--  __AUTH_CONST.__auth_got: 0xa00
--  __AUTH.__data: 0x540
--  __DATA.__data: 0x728
-+  __AUTH_CONST.__const: 0x4b8
-+  __AUTH_CONST.__auth_got: 0xa18
-+  __AUTH.__data: 0x548
-+  __DATA.__data: 0x750
-   __DATA.__common: 0x20
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 477
 -  Symbols:   366
 +  Functions: 501
 +  Symbols:   376
-   CStrings:  26
- 
 Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA4ViewPAAE16privacySensitiveyQrSbFQOyAE07SnippetB0E21requestHostBackground_8accepted6deniedQrAG0jK0OSg_qd__xcqd_0_xctAaDRd__AaDRd_0_r0_lFQOyAeGE2if_9transformQrSb_qd__xXEtAaDRd__lFQOyAG019SummaryItemStandardE0V_AeGE15componentTapped12isNavigation7performQrSb_yyctFQOyAQ_Qo_Qo__A2VQo__Qo_AA31AccessibilityAttachmentModifierVGAaDHPqd__AaDHD2_AXHO_AzA0eZ0HPyHCHC
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE16privacySensitiveyQrSbFQOyAC07SnippetB0E2if_9transformQrSb_qd__xXEtAaBRd__lFQOyAE14ComponentStackVyAA12TupleContentVyAA03AnyC0VSg_AA7ForEachVySay012MediaIntentsF6Models05VideofR0O16ResultsListModelV3RowOGSSAA012_ConditionalL0VyAZy04SiriS11UIFramework0S8ResultV2VA_14PersonResultV2VGAA05EmptyC0VGGQPGG_AcEE21requestHostBackground_8accepted6deniedQrAE14HostBackgroundOSg_qd__xcqd_0_xctAaBRd__AaBRd_0_r0_lFQOyA10__A10_A10_Qo_Qo__Qo_HO

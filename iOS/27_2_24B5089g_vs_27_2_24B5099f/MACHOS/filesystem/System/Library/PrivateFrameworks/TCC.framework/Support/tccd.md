@@ -2,80 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/TCC.framework/Support/tccd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8fe24` | `0x9142c` | **`+0x1608`** |
+| `__TEXT.__objc_methname` | `0x138f5` | `0x13c02` | **`+0x30d`** |
+| `__TEXT.__oslogstring` | `0x11095` | `0x1135e` | **`+0x2c9`** |
+| `__TEXT.__cstring` | `0x1366f` | `0x13838` | **`+0x1c9`** |
+| `__TEXT.__objc_stubs` | `0xbb60` | `0xbd00` | **`+0x1a0`** |
+| `__TEXT.__gcc_except_tab` | `0x31fc` | `0x32f4` | **`+0xf8`** |
+| `__DATA.__objc_const` | `0xa758` | `0xa848` | **`+0xf0`** |
+| `__DATA_CONST.__cfstring` | `0x8e40` | `0x8f00` | **`+0xc0`** |
+| `__DATA_CONST.__const` | `0x2920` | `0x29b0` | **`+0x90`** |
+| `__TEXT.__objc_methlist` | `0x5754` | `0x57d4` | **`+0x80`** |
+| `__DATA.__objc_selrefs` | `0x3840` | `0x38b0` | **`+0x70`** |
+| `__TEXT.__unwind_info` | `0x1ad8` | `0x1b10` | **`+0x38`** |
+| `__DATA.__bss` | `0x441` | `0x459` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x770` | `0x784` | **`+0x14`** |
+| `__DATA.__data` | `0x738` | `0x740` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x4e0` | `0x4e8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA.__objc_data`
+
+### Other Changes
 
 ```diff
 
 -919.0.0.0.0
--  __TEXT.__text: 0x8e498
 +921.0.0.0.0
-+  __TEXT.__text: 0x8fa64
-   __TEXT.__auth_stubs: 0x1650
--  __TEXT.__objc_stubs: 0xbb60
--  __TEXT.__objc_methlist: 0x5754
--  __TEXT.__cstring: 0x1366f
-+  __TEXT.__objc_stubs: 0xbd00
-+  __TEXT.__objc_methlist: 0x57d4
-+  __TEXT.__cstring: 0x13838
-   __TEXT.__const: 0x6f8
--  __TEXT.__gcc_except_tab: 0x31fc
--  __TEXT.__objc_methname: 0x138f5
--  __TEXT.__oslogstring: 0x11095
-+  __TEXT.__gcc_except_tab: 0x32f4
-+  __TEXT.__objc_methname: 0x13c02
-+  __TEXT.__oslogstring: 0x1135e
-   __TEXT.__objc_classname: 0x6f2
-   __TEXT.__objc_methtype: 0x2383
-   __TEXT.__dlopen_cstrs: 0xd9
--  __TEXT.__unwind_info: 0x2580
--  __DATA_CONST.__const: 0x2920
--  __DATA_CONST.__cfstring: 0x8e40
-+  __TEXT.__unwind_info: 0x25e8
-+  __DATA_CONST.__const: 0x29b0
-+  __DATA_CONST.__cfstring: 0x8f00
-   __DATA_CONST.__objc_classlist: 0x1f8
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x88
 
-   __DATA_CONST.__objc_arrayobj: 0xf0
-   __DATA_CONST.__objc_dictobj: 0xf28
-   __DATA_CONST.__auth_got: 0xb38
--  __DATA_CONST.__got: 0x4e0
-+  __DATA_CONST.__got: 0x4e8
-   __DATA_CONST.__auth_ptr: 0x38
--  __DATA.__objc_const: 0xa758
--  __DATA.__objc_selrefs: 0x3840
--  __DATA.__objc_ivar: 0x770
-+  __DATA.__objc_const: 0xa848
-+  __DATA.__objc_selrefs: 0x38b0
-+  __DATA.__objc_ivar: 0x784
-   __DATA.__objc_data: 0x13b0
--  __DATA.__data: 0x738
-+  __DATA.__data: 0x740
-   __DATA.__common: 0x30
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+-  Functions: 3105
++  Functions: 3137
 
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
--  Functions: 3104
-+  Functions: 3136
-   Symbols:   512
 -  CStrings:  6055
 +  CStrings:  6102
- 
 CStrings:
 + "%s: %{public}@ does not support reminder prompts, ignoring report-use"
 + "%s: HealthKit framework not available, no source name for %{public}@"

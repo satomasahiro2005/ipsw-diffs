@@ -2,15 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/ScreenTimeSwift.framework/ScreenTimeSwift`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x940a0` | `0x940e4` | **`+0x44`** |
+
+### Other Changes
+
 ```diff
 
 -655.0.106.0.0
--  __TEXT.__text: 0x940a0
 +655.0.107.0.0
-+  __TEXT.__text: 0x940e4
-   __TEXT.__objc_methlist: 0x270
-   __TEXT.__const: 0x484c
-   __TEXT.__swift5_typeref: 0x1a64
 Functions:
 ~ sub_223144750 -> sub_223976750 : 7004 -> 7008
 ~ sub_223151ea4 -> sub_223983ea8 : 3676 -> 3696

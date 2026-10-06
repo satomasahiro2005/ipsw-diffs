@@ -2,14 +2,15 @@
 
 > `/usr/lib/libprotobuf.dylib`
 
-```diff
+### Section Size Changes
 
- 7019.0.0.0.0
--  __TEXT.__text: 0x53f8c
-+  __TEXT.__text: 0x53fa0
-   __TEXT.__init_offsets: 0x8
-   __TEXT.__gcc_except_tab: 0x3e28
-   __TEXT.__cstring: 0x37d3
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x53f8c` | `0x53fa0` | **`+0x14`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__16vectorIPKcNS_9allocatorIS2_EEE6resizeEm : 284 -> 288
 ~ __ZNSt3__16vectorIPNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS7_EEE6resizeEm : 284 -> 288

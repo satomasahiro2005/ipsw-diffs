@@ -2,17 +2,18 @@
 
 > `com.apple.driver.AppleThunderboltUSBType2UpAdapter`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0xac68` | `0xac50` | **`-0x18`** |
+
+### Other Changes
+
 ```diff
 
 -138.0.1.0.0
 +138.40.3.0.0
-   __TEXT.__cstring: 0x206b
-   __TEXT.__os_log: 0x1d9b
--  __TEXT_EXEC.__text: 0xa26c
-+  __TEXT_EXEC.__text: 0xa254
-   __TEXT_EXEC.__auth_stubs: 0x1b0
-   __DATA.__data: 0x1e8
-   __DATA.__common: 0x38
 Functions:
-~ __ZN33AppleThunderboltUSBType2UpAdapter16activateInternalEP28IOThunderboltDispatchContext : 6360 -> 6336
+~ __ZN33AppleThunderboltUSBType2UpAdapter16activateInternalEP28IOThunderboltDispatchContext : 6980 -> 6956
 ```

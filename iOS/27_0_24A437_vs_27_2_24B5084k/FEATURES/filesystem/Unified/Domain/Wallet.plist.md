@@ -4,9 +4,6 @@
 
 ```diff
 
- 		<key>DisplayName</key>
- 		<string>Identity Streamlined Presentment</string>
- 		<key>State</key>
 -		<string>dynamic</string>
 -	</dict>
 -	<key>TreeStar</key>
@@ -23,8 +20,5 @@
 -		<key>State</key>
 -		<string>dynamic</string>
 +		<string>enabledUnconditionally</string>
- 	</dict>
- </dict>
- </plist>
 
 ```

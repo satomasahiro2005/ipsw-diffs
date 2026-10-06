@@ -2,14 +2,15 @@
 
 > `/usr/lib/swift/libswiftCoreAudio.dylib`
 
-```diff
+### Section Size Changes
 
- 482.102.0.0.0
--  __TEXT.__text: 0x4e10
-+  __TEXT.__text: 0x4e18
-   __TEXT.__const: 0xc96
-   __TEXT.__swift5_typeref: 0x2d3
-   __TEXT.__swift5_reflstr: 0x18b
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4e10` | `0x4e18` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s9CoreAudio013UnsafeMutableB17BufferListPointerVySo0bE0VSiciM : 60 -> 68
 ```

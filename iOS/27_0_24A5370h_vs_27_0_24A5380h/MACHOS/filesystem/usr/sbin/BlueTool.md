@@ -2,21 +2,28 @@
 
 > `/usr/sbin/BlueTool`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4ddb4` | `0x4dde8` | **`+0x34`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__cstring`
+- `__TEXT.__init_offsets`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x4ddb4
-+  __TEXT.__text: 0x4dde8
-   __TEXT.__auth_stubs: 0xc10
-   __TEXT.__objc_stubs: 0x2e0
-   __TEXT.__init_offsets: 0x59c
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__data : content changed
+-2700.30.0.0.0
++2700.32.0.0.0
 Functions:
 ~ sub_100010784 : 1808 -> 1848
 ~ sub_100011d34 -> sub_100011d5c : 2000 -> 1992
@@ -129,5 +136,4 @@ CStrings:
 - "cffd84c4b1559285e5b098b2ad9059dd4c446bb39c16135a90199c4e45d5946a"
 - "d549088006e8a4c61146a442dc7a2b6545d66e7b8b4db6f1fe9f59a026c51153"
 - "d7077083d46277de61443c1557a798de4b461ef92b8b9df41392832fa3221715"
-
 ```

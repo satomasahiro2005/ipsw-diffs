@@ -2,72 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/PhoneSnippetUI.framework/PhoneSnippetUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa9160` | `0xa9ee8` | **`+0xd88`** |
+| `__TEXT.__const` | `0xa3c8` | `0xa468` | **`+0xa0`** |
+| `__AUTH.__data` | `0x2120` | `0x21a8` | **`+0x88`** |
+| `__DATA.__bss` | `0xe5e0` | `0xe660` | **`+0x80`** |
+| `__TEXT.__swift5_typeref` | `0xa218` | `0xa278` | **`+0x60`** |
+| `__AUTH_CONST.__const` | `0x4950` | `0x49a0` | **`+0x50`** |
+| `__TEXT.__constg_swiftt` | `0x2444` | `0x2494` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x2b30` | `0x2b80` | **`+0x50`** |
+| `__TEXT.__swift5_reflstr` | `0x1dc4` | `0x1e04` | **`+0x40`** |
+| `__TEXT.__swift5_fieldmd` | `0x2574` | `0x25a8` | **`+0x34`** |
+| `__DATA.__data` | `0x2f20` | `0x2f50` | **`+0x30`** |
+| `__TEXT.__swift5_capture` | `0x774` | `0x794` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x13c0` | `0x13d8` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x8f0` | `0x8d8` | **`-0x18`** |
+| `__TEXT.__swift5_assocty` | `0x648` | `0x660` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0x72c` | `0x730` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0x274` | `0x278` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3605.17.1.1.1
--  __TEXT.__text: 0xa340c
--  __TEXT.__const: 0xa3c8
--  __TEXT.__swift5_typeref: 0xa218
--  __TEXT.__swift5_capture: 0x774
--  __TEXT.__swift5_reflstr: 0x1dc4
--  __TEXT.__swift5_assocty: 0x648
--  __TEXT.__constg_swiftt: 0x2444
--  __TEXT.__swift5_fieldmd: 0x2574
 +3605.20.1.0.0
-+  __TEXT.__text: 0xa40cc
-+  __TEXT.__const: 0xa468
-+  __TEXT.__swift5_typeref: 0xa278
-+  __TEXT.__swift5_capture: 0x794
-+  __TEXT.__swift5_reflstr: 0x1e04
-+  __TEXT.__swift5_assocty: 0x660
-+  __TEXT.__constg_swiftt: 0x2494
-+  __TEXT.__swift5_fieldmd: 0x25a8
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__oslogstring: 0x1bb5
--  __TEXT.__swift5_proto: 0x72c
--  __TEXT.__swift5_types: 0x274
-+  __TEXT.__swift5_proto: 0x730
-+  __TEXT.__swift5_types: 0x278
-   __TEXT.__cstring: 0x14f2
-   __TEXT.__swift5_protos: 0x18
-   __TEXT.__swift5_mpenum: 0x14
-   __TEXT.__swift_as_entry: 0x4
-   __TEXT.__swift_as_ret: 0x8
-   __TEXT.__swift_as_cont: 0x14
--  __TEXT.__unwind_info: 0x38c8
-+  __TEXT.__unwind_info: 0x3928
-   __TEXT.__eh_frame: 0x1670
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x100
--  __DATA_CONST.__got: 0x8f0
--  __AUTH_CONST.__const: 0x4950
-+  __DATA_CONST.__got: 0x8d8
-+  __AUTH_CONST.__const: 0x49a0
-   __AUTH_CONST.__objc_const: 0x468
--  __AUTH_CONST.__auth_got: 0x13c0
-+  __AUTH_CONST.__auth_got: 0x13d8
-   __AUTH.__objc_data: 0x50
--  __AUTH.__data: 0x2120
--  __DATA.__data: 0x2f20
-+  __AUTH.__data: 0x21a8
-+  __DATA.__data: 0x2f50
-   __DATA.__common: 0x1a8
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4368
--  Symbols:   11657
+-  Symbols:   11625
 +  Functions: 4392
-+  Symbols:   11704
-   CStrings:  283
- 
++  Symbols:   11672
 Symbols:
 + _$s14PhoneSnippetUI04$s14aB130UI0045ContactAndHandleDisambiguationViewswift_yGGBpfMX155_0_33_0D37288EA0E1E59BB13FD2C519CBAA7ALl7PreviewfMf_15PreviewRegistryfMu_V04makeX021DeveloperToolsSupport0X0VyKFZ
 + _$s14PhoneSnippetUI04$s14aB130UI0045ContactAndHandleDisambiguationViewswift_yGGBpfMX155_0_33_0D37288EA0E1E59BB13FD2C519CBAA7ALl7PreviewfMf_15PreviewRegistryfMu_V04makeX021DeveloperToolsSupport0X0VyKFZ05SwiftC04View_pyScMYccfU_

@@ -2,17 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/AppSSO.framework/Support/AppSSODaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0xf0` | `0xf8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__const`
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__objc_superrefs: 0x30
-   __DATA_CONST.__auth_got: 0x270
--  __DATA_CONST.__got: 0xf0
-+  __DATA_CONST.__got: 0xf8
-   __DATA.__objc_const: 0x1258
-   __DATA.__objc_selrefs: 0x688
-   __DATA.__objc_ivar: 0x48
-Sections:
-~ __TEXT.__const : content changed
-
+-643.0.12.0.0
++643.0.21.0.0
 ```

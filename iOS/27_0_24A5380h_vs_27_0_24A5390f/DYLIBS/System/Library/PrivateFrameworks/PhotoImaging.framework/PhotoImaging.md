@@ -2,131 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/PhotoImaging.framework/PhotoImaging`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_floatobj`
-- `__AUTH.__objc_data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x27a448` | `0x27b740` | **`+0x12f8`** |
+| `__TEXT.__oslogstring` | `0x6bf0` | `0x6d75` | **`+0x185`** |
+| `__AUTH_CONST.__objc_const` | `0x282a0` | `0x28370` | **`+0xd0`** |
+| `__DATA_CONST.__const` | `0x4030` | `0x40d0` | **`+0xa0`** |
+| `__TEXT.__objc_methlist` | `0x16410` | `0x164a0` | **`+0x90`** |
+| `__AUTH_CONST.__cfstring` | `0x26c40` | `0x26cc0` | **`+0x80`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb4c0` | `0xb528` | **`+0x68`** |
+| `__AUTH_CONST.__const` | `0x5470` | `0x54b0` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x46c53` | `0x46c85` | **`+0x32`** |
+| `__TEXT.__unwind_info` | `0x5828` | `0x5858` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x1530` | `0x1558` | **`+0x28`** |
+| `__AUTH_CONST.__objc_dictobj` | `0x5ac8` | `0x5af0` | **`+0x28`** |
+| `__DATA.__objc_ivar` | `0x1560` | `0x1570` | **`+0x10`** |
+| `__DATA_CONST.__objc_arraydata` | `0x9330` | `0x9340` | **`+0x10`** |
+| `__TEXT.__const` | `0x8a8c` | `0x8a9c` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x2598` | `0x25a0` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -910.27.103.0.0
--  __TEXT.__text: 0x27a448
 +910.33.102.0.0
-+  __TEXT.__text: 0x27b740
-   __TEXT.__delay_helper: 0x1f4
--  __TEXT.__objc_methlist: 0x16410
--  __TEXT.__const: 0x8a8c
-+  __TEXT.__objc_methlist: 0x164a0
-+  __TEXT.__const: 0x8a9c
-   __TEXT.__dlopen_cstrs: 0x2a2
-   __TEXT.__swift5_typeref: 0x2e9
--  __TEXT.__cstring: 0x46c53
-+  __TEXT.__cstring: 0x46c85
-   __TEXT.__constg_swiftt: 0x210
-   __TEXT.__swift5_reflstr: 0x35f
-   __TEXT.__swift5_fieldmd: 0x3b8
-   __TEXT.__swift5_builtin: 0x64
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_assocty: 0x48
--  __TEXT.__oslogstring: 0x6bf0
-+  __TEXT.__oslogstring: 0x6d75
-   __TEXT.__swift5_proto: 0x7c
-   __TEXT.__swift5_types: 0x34
-   __TEXT.__swift_as_entry: 0x14
 
-   __TEXT.__swift_as_cont: 0x28
-   __TEXT.__swift5_capture: 0xf0
-   __TEXT.__gcc_except_tab: 0x4a64
--  __TEXT.__unwind_info: 0x5828
-+  __TEXT.__unwind_info: 0x5858
-   __TEXT.__eh_frame: 0x9f0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4030
-+  __DATA_CONST.__const: 0x40d0
-   __DATA_CONST.__objc_classlist: 0x10d8
-   __DATA_CONST.__objc_catlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x190
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb4c0
-+  __DATA_CONST.__objc_selrefs: 0xb528
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x700
--  __DATA_CONST.__objc_arraydata: 0x9330
--  __DATA_CONST.__got: 0x2598
--  __AUTH_CONST.__const: 0x5470
--  __AUTH_CONST.__cfstring: 0x26c40
--  __AUTH_CONST.__objc_const: 0x282a0
-+  __DATA_CONST.__objc_arraydata: 0x9340
-+  __DATA_CONST.__got: 0x25a0
-+  __AUTH_CONST.__const: 0x54b0
-+  __AUTH_CONST.__cfstring: 0x26cc0
-+  __AUTH_CONST.__objc_const: 0x28370
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x1488
--  __AUTH_CONST.__objc_dictobj: 0x5ac8
-+  __AUTH_CONST.__objc_dictobj: 0x5af0
-   __AUTH_CONST.__objc_doubleobj: 0xe10
-   __AUTH_CONST.__objc_arrayobj: 0x558
-   __AUTH_CONST.__objc_floatobj: 0xd0
--  __AUTH_CONST.__auth_got: 0x1530
-+  __AUTH_CONST.__auth_got: 0x1558
-   __AUTH.__objc_data: 0x288
--  __DATA.__objc_ivar: 0x1560
-+  __DATA.__objc_ivar: 0x1570
-   __DATA.__data: 0x16fc
-   __DATA.__bss: 0x1600
-   __DATA_DIRTY.__objc_data: 0xa7a0
-
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreImage.framework/CoreImage
 -  - /System/Library/Frameworks/CoreML.framework/CoreML
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-   - /System/Library/Frameworks/CoreText.framework/CoreText
-   - /System/Library/Frameworks/CoreVideo.framework/CoreVideo
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9113
--  Symbols:   20531
+-  Symbols:   15761
 -  CStrings:  7081
 +  Functions: 9130
-+  Symbols:   20568
++  Symbols:   15786
 +  CStrings:  7086
- 
 Symbols:
 + +[PICinematicVideoUtilities cinematicDisparityResourcesReadyForAsset:]
 + +[PIPipelineFilters cinematicVideoHighQuality]
@@ -341,19 +252,6 @@ Symbols:
 + ___block_descriptor_40_e8_32s_e31_B16?0"NUVideoCorruptionInfo"8ls32l8
 + ___block_descriptor_56_e8_32s40s48s_e44_"NUChannelPortRef"16?0"NUChannelPortRef"8ls32l8s40l8s48l8
 + ___block_descriptor_80_e8_32s40s48s56s64s72s_e72_"NUChannelPortRef"32?0"<NUMutablePipeline>"8"NUChannelPortRef"16^24ls32l8s40l8s48l8s56l8s64l8s72l8
-+ _objc_msgSend$_buildPipeline:primary:adjustment:cinematography:highQuality:useRefinedCinematography:error:
-+ _objc_msgSend$_buildRenderNodePipelineForClass:baseSettings:error:
-+ _objc_msgSend$gainMapMedia
-+ _objc_msgSend$insufficientlyCoveredFrameCount
-+ _objc_msgSend$isOneShot
-+ _objc_msgSend$layoutProxyScalePolicy
-+ _objc_msgSend$sensitiveContentEvaluated
-+ _objc_msgSend$setGainMapMedia:
-+ _objc_msgSend$setSavedLayoutUsesHeadroom:
-+ _objc_msgSend$setSensitiveContentEvaluated:
-+ _objc_msgSend$totalMainFrameCount
-+ _objc_msgSend$trackMediaCharacteristic
-+ _objc_msgSend$useProvidedInputsOnly
 - +[PIPipelineFilters cinematicVideoExportMode]
 - -[PICinematicVideo_v2 _buildPipeline:primary:adjustment:cinematography:highQuality:error:]
 - GCC_except_table1098
@@ -542,7 +440,6 @@ Symbols:
 - GCC_except_table853
 - GCC_except_table857
 - ___45+[PIPipelineFilters cinematicVideoExportMode]_block_invoke
-- _objc_msgSend$_buildPipeline:primary:adjustment:cinematography:highQuality:error:
 CStrings:
 + "+[PICinematicVideoUtilities cinematicDisparityResourcesReadyForAsset:]"
 + "../portraitBypass:>output"

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/PoirotBlocks.framework/PoirotBlocks`
 
-```diff
+### Section Size Changes
 
- 3600.35.1.0.0
--  __TEXT.__text: 0xb2864
-+  __TEXT.__text: 0xb284c
-   __TEXT.__objc_methlist: 0x224
-   __TEXT.__const: 0xb3e0
-   __TEXT.__cstring: 0x1e5b
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb2864` | `0xb284c` | **`-0x18`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_2233fa2c0 -> sub_223c2a2c0 : 644 -> 648
 ~ sub_223401bcc -> sub_223c31bd0 : 892 -> 896

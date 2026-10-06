@@ -2,88 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/HealthReportUI.framework/HealthReportUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x352a90` | `0x362c84` | **`+0x101f4`** |
+| `__TEXT.__cstring` | `0x12e22` | `0x13310` | **`+0x4ee`** |
+| `__AUTH_CONST.__const` | `0xa6a0` | `0xab28` | **`+0x488`** |
+| `__DATA.__data` | `0xb298` | `0xb698` | **`+0x400`** |
+| `__TEXT.__swift5_typeref` | `0x761a` | `0x7884` | **`+0x26a`** |
+| `__TEXT.__const` | `0xf604` | `0xf854` | **`+0x250`** |
+| `__AUTH_CONST.__auth_got` | `0x58c0` | `0x5b00` | **`+0x240`** |
+| `__TEXT.__unwind_info` | `0x8808` | `0x8a38` | **`+0x230`** |
+| `__TEXT.__swift5_reflstr` | `0x5231` | `0x53f1` | **`+0x1c0`** |
+| `__TEXT.__swift5_fieldmd` | `0x504c` | `0x51f8` | **`+0x1ac`** |
+| `__DATA_CONST.__got` | `0x3248` | `0x33c8` | **`+0x180`** |
+| `__TEXT.__swift5_capture` | `0x22c0` | `0x2440` | **`+0x180`** |
+| `__DATA.__bss` | `0xcff0` | `0xd140` | **`+0x150`** |
+| `__AUTH.__data` | `0x63c0` | `0x6500` | **`+0x140`** |
+| `__TEXT.__eh_frame` | `0x90e4` | `0x91e4` | **`+0x100`** |
+| `__TEXT.__constg_swiftt` | `0x5238` | `0x52dc` | **`+0xa4`** |
+| `__DATA.__common` | `0x358` | `0x3d8` | **`+0x80`** |
+| `__AUTH_CONST.__objc_const` | `0x3da8` | `0x3e08` | **`+0x60`** |
+| `__TEXT.__oslogstring` | `0x151e` | `0x156e` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa78` | `0xa60` | **`-0x18`** |
+| `__TEXT.__swift5_assocty` | `0x1360` | `0x1378` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0x56c` | `0x580` | **`+0x14`** |
+| `__TEXT.__swift5_proto` | `0x634` | `0x63c` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x570` | `0x578` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x2a8` | `0x2ac` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x2e0` | `0x2e4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.45.2.4
--  __TEXT.__text: 0x336bdc
 +7027.1.54.2.3
-+  __TEXT.__text: 0x346360
-   __TEXT.__objc_methlist: 0x63c
--  __TEXT.__const: 0xf604
--  __TEXT.__cstring: 0x12e22
--  __TEXT.__constg_swiftt: 0x5238
--  __TEXT.__swift5_typeref: 0x761a
--  __TEXT.__swift5_reflstr: 0x5231
--  __TEXT.__swift5_fieldmd: 0x504c
-+  __TEXT.__const: 0xf854
-+  __TEXT.__cstring: 0x13310
-+  __TEXT.__constg_swiftt: 0x52dc
-+  __TEXT.__swift5_typeref: 0x7884
-+  __TEXT.__swift5_reflstr: 0x53f1
-+  __TEXT.__swift5_fieldmd: 0x51f8
-   __TEXT.__swift5_builtin: 0x190
--  __TEXT.__swift5_assocty: 0x1360
--  __TEXT.__swift5_proto: 0x634
--  __TEXT.__swift5_types: 0x56c
--  __TEXT.__swift5_capture: 0x22c0
--  __TEXT.__swift_as_entry: 0x2a8
--  __TEXT.__swift_as_ret: 0x2e0
--  __TEXT.__swift_as_cont: 0x570
--  __TEXT.__oslogstring: 0x151e
-+  __TEXT.__swift5_assocty: 0x1378
-+  __TEXT.__swift5_proto: 0x63c
-+  __TEXT.__swift5_types: 0x580
-+  __TEXT.__swift5_capture: 0x2440
-+  __TEXT.__swift_as_entry: 0x2ac
-+  __TEXT.__swift_as_ret: 0x2e4
-+  __TEXT.__swift_as_cont: 0x578
-+  __TEXT.__oslogstring: 0x156e
-   __TEXT.__swift5_mpenum: 0x48
-   __TEXT.__swift5_protos: 0x14
--  __TEXT.__unwind_info: 0xb360
--  __TEXT.__eh_frame: 0x90f4
-+  __TEXT.__unwind_info: 0xb610
-+  __TEXT.__eh_frame: 0x91f4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x1a0
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa78
-+  __DATA_CONST.__objc_selrefs: 0xa60
-   __DATA_CONST.__objc_protorefs: 0x38
--  __DATA_CONST.__got: 0x3248
--  __AUTH_CONST.__const: 0xa6a0
--  __AUTH_CONST.__objc_const: 0x3da8
--  __AUTH_CONST.__auth_got: 0x58c0
-+  __DATA_CONST.__got: 0x33c8
-+  __AUTH_CONST.__const: 0xab28
-+  __AUTH_CONST.__objc_const: 0x3e08
-+  __AUTH_CONST.__auth_got: 0x5b00
-   __AUTH.__objc_data: 0x1450
--  __AUTH.__data: 0x63c0
--  __DATA.__data: 0xb298
-+  __AUTH.__data: 0x6500
-+  __DATA.__data: 0xb698
-   __DATA.__objc_stublist: 0x8
--  __DATA.__common: 0x358
-+  __DATA.__common: 0x3d8
-   __DATA_DIRTY.__objc_data: 0x50
-   __DATA_DIRTY.__data: 0x208
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12436
 -  Symbols:   2241
 -  CStrings:  1179
 +  Functions: 12683
 +  Symbols:   2254
 +  CStrings:  1192
- 
 Symbols:
 + _HKFormattedFeetAndInches
 + ___swift_closure_destructor.106Tm

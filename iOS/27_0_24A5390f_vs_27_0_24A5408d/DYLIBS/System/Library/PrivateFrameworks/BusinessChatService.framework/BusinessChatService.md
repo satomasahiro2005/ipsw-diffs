@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/BusinessChatService.framework/BusinessChatService`
 
+### Other Changes
+
 ```text
 Functions:
 ~ +[BCSHashService SHA256HashForInputString:] -> +[NSData bcs_dataWithHexString:] : 204 -> 532

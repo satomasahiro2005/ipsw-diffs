@@ -2,100 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/SummarizationKit.framework/SummarizationKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x16fcd0` | `0x1732f8` | **`+0x3628`** |
+| `__TEXT.__unwind_info` | `0x4968` | `0x4d78` | **`+0x410`** |
+| `__DATA_DIRTY.__bss` | `0x5480` | `0x5880` | **`+0x400`** |
+| `__TEXT.__oslogstring` | `0x5015` | `0x5365` | **`+0x350`** |
+| `__DATA.__bss` | `0x38f0` | `0x35f0` | **`-0x300`** |
+| `__DATA_DIRTY.__data` | `0x4b20` | `0x4d90` | **`+0x270`** |
+| `__TEXT.__cstring` | `0x59ba` | `0x5bfa` | **`+0x240`** |
+| `__DATA.__data` | `0xc90` | `0xa58` | **`-0x238`** |
+| `__TEXT.__const` | `0xa6a8` | `0xa7d0` | **`+0x128`** |
+| `__TEXT.__swift5_reflstr` | `0x3488` | `0x3518` | **`+0x90`** |
+| `__AUTH.__data` | `0x5a8` | `0x630` | **`+0x88`** |
+| `__TEXT.__swift_as_cont` | `0x974` | `0x8f0` | **`-0x84`** |
+| `__TEXT.__swift5_typeref` | `0x242c` | `0x2488` | **`+0x5c`** |
+| `__TEXT.__eh_frame` | `0xc658` | `0xc600` | **`-0x58`** |
+| `__TEXT.__swift5_fieldmd` | `0x25fc` | `0x2654` | **`+0x58`** |
+| `__AUTH_CONST.__auth_got` | `0x1f98` | `0x1fe8` | **`+0x50`** |
+| `__AUTH_CONST.__const` | `0x5a70` | `0x5ac0` | **`+0x50`** |
+| `__TEXT.__constg_swiftt` | `0x1fcc` | `0x1ff4` | **`+0x28`** |
+| `__TEXT.__swift5_capture` | `0x15d0` | `0x15f8` | **`+0x28`** |
+| `__AUTH_CONST.__objc_const` | `0x2098` | `0x20b8` | **`+0x20`** |
+| `__DATA_DIRTY.__common` | `0x3a8` | `0x3c8` | **`+0x20`** |
+| `__DATA.__common` | `0x68` | `0x49` | **`-0x1f`** |
+| `__DATA_CONST.__got` | `0xbb8` | `0xba8` | **`-0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1a8` | `0x1b8` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x520` | `0x528` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x214` | `0x218` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x16fcd0
--  __TEXT.__const: 0xa6a8
--  __TEXT.__constg_swiftt: 0x1fcc
--  __TEXT.__swift5_typeref: 0x242c
-+  __TEXT.__text: 0x1732f8
-+  __TEXT.__const: 0xa7d0
-+  __TEXT.__constg_swiftt: 0x1ff4
-+  __TEXT.__swift5_typeref: 0x2488
-   __TEXT.__swift5_builtin: 0x8c
--  __TEXT.__swift5_reflstr: 0x3488
--  __TEXT.__swift5_fieldmd: 0x25fc
-+  __TEXT.__swift5_reflstr: 0x3518
-+  __TEXT.__swift5_fieldmd: 0x2654
-   __TEXT.__swift5_assocty: 0x3b0
--  __TEXT.__swift5_proto: 0x520
--  __TEXT.__swift5_types: 0x214
-+  __TEXT.__swift5_proto: 0x528
-+  __TEXT.__swift5_types: 0x218
-   __TEXT.__swift5_protos: 0x54
-   __TEXT.__swift_as_entry: 0x3b8
-   __TEXT.__swift_as_ret: 0x4c0
--  __TEXT.__swift_as_cont: 0x974
--  __TEXT.__oslogstring: 0x5015
--  __TEXT.__cstring: 0x59ba
--  __TEXT.__swift5_capture: 0x15d0
-+  __TEXT.__swift_as_cont: 0x8f0
-+  __TEXT.__oslogstring: 0x5365
-+  __TEXT.__cstring: 0x5bfa
-+  __TEXT.__swift5_capture: 0x15f8
-   __TEXT.__swift5_mpenum: 0x1c
--  __TEXT.__unwind_info: 0x4968
--  __TEXT.__eh_frame: 0xc658
-+  __TEXT.__unwind_info: 0x4d78
-+  __TEXT.__eh_frame: 0xc600
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-15.0.0.0.0
++18.0.0.0.0
 
-   __DATA_CONST.__const: 0x2b0
-   __DATA_CONST.__objc_classlist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1a8
--  __DATA_CONST.__got: 0xbb8
--  __AUTH_CONST.__const: 0x5a70
--  __AUTH_CONST.__objc_const: 0x2098
--  __AUTH_CONST.__auth_got: 0x1f98
-+  __DATA_CONST.__objc_selrefs: 0x1b8
-+  __DATA_CONST.__got: 0xba8
-+  __AUTH_CONST.__const: 0x5ac0
-+  __AUTH_CONST.__objc_const: 0x20b8
-+  __AUTH_CONST.__auth_got: 0x1fe8
-   __AUTH.__objc_data: 0x50
--  __AUTH.__data: 0x5a8
--  __DATA.__data: 0xc90
--  __DATA.__bss: 0x38f0
--  __DATA.__common: 0x68
-+  __AUTH.__data: 0x630
-+  __DATA.__data: 0xa58
-+  __DATA.__bss: 0x35f0
-+  __DATA.__common: 0x49
-   __DATA_DIRTY.__objc_data: 0x398
--  __DATA_DIRTY.__data: 0x4b20
--  __DATA_DIRTY.__bss: 0x5480
--  __DATA_DIRTY.__common: 0x3a8
-+  __DATA_DIRTY.__data: 0x4d90
-+  __DATA_DIRTY.__bss: 0x5880
-+  __DATA_DIRTY.__common: 0x3c8
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6450
--  Symbols:   2126
--  CStrings:  563
+-  Symbols:   1242
+-  CStrings:  561
 +  Functions: 6460
-+  Symbols:   2139
-+  CStrings:  581
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   1251
++  CStrings:  578
 Symbols:
 + ___swift_closure_destructor.195Tm
 + ___swift_closure_destructor.203Tm
@@ -107,8 +57,6 @@ Symbols:
 + ___swift_mutable_project_boxed_opaque_existential_1
 + ___unnamed_67
 + _associated conformance 16SummarizationKit19ModelBundleOverrideVSHAASQ
-+ _objc_msgSend$dataWithJSONObject:options:error:
-+ _objc_msgSend$dictionaryForKey:
 + _os_variant_has_internal_content
 + _swift_projectBox
 + _swift_unexpectedError
@@ -156,5 +104,4 @@ CStrings:
 - "SummarizationKit/PriorityModelSession.swift"
 - "SummarizationKit/SummarizationSession.swift"
 - "serverTextSummarizer_V2"
-
 ```

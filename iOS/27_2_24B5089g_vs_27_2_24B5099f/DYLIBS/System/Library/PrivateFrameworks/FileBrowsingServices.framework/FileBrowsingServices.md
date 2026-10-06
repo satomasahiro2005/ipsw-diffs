@@ -2,81 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/FileBrowsingServices.framework/FileBrowsingServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10d84` | `0x1adf0` | **`+0xa06c`** |
+| `__DATA.__bss` | `0x3480` | `0x4300` | **`+0xe80`** |
+| `__TEXT.__const` | `0x204c` | `0x2994` | **`+0x948`** |
+| `__TEXT.__eh_frame` | `0x950` | `0xf90` | **`+0x640`** |
+| `__AUTH_CONST.__const` | `0x1020` | `0x1488` | **`+0x468`** |
+| `__TEXT.__swift5_typeref` | `0x6d1` | `0x961` | **`+0x290`** |
+| `__TEXT.__unwind_info` | `0x690` | `0x920` | **`+0x290`** |
+| `__DATA.__data` | `0x4e8` | `0x688` | **`+0x1a0`** |
+| `__TEXT.__oslogstring` | `—` | `0x19f` | **`+0x19f`** |
+| `__AUTH_CONST.__auth_got` | `0x3a8` | `0x508` | **`+0x160`** |
+| `__TEXT.__constg_swiftt` | `0x61c` | `0x73c` | **`+0x120`** |
+| `__TEXT.__swift5_fieldmd` | `0x5d8` | `0x6ec` | **`+0x114`** |
+| `__DATA_CONST.__objc_selrefs` | `0x90` | `0x118` | **`+0x88`** |
+| `__TEXT.__swift5_reflstr` | `0x295` | `0x319` | **`+0x84`** |
+| `__TEXT.__swift5_proto` | `0x1c0` | `0x234` | **`+0x74`** |
+| `__TEXT.__cstring` | `0xf1` | `0x161` | **`+0x70`** |
+| `__TEXT.__swift_as_ret` | `0x48` | `0x94` | **`+0x4c`** |
+| `__TEXT.__swift_as_entry` | `0x54` | `0x9c` | **`+0x48`** |
+| `__AUTH.__data` | `0x270` | `0x2b0` | **`+0x40`** |
+| `__TEXT.__swift5_capture` | `0x10` | `0x3c` | **`+0x2c`** |
+| `__TEXT.__swift5_builtin` | `0x14` | `0x3c` | **`+0x28`** |
+| `__AUTH_CONST.__objc_const` | `0x3a8` | `0x3c8` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x1c` | `0x38` | **`+0x1c`** |
+| `__DATA.__common` | `—` | `0x18` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0x98` | `0xb0` | **`+0x18`** |
+| `__TEXT.__swift5_mpenum` | `0x8` | `0x18` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -1857.1.4.0.0
--  __TEXT.__text: 0x100bc
--  __TEXT.__const: 0x204c
--  __TEXT.__constg_swiftt: 0x61c
--  __TEXT.__swift5_typeref: 0x6d1
--  __TEXT.__swift5_fieldmd: 0x5d8
--  __TEXT.__swift5_types: 0x98
--  __TEXT.__cstring: 0xf1
--  __TEXT.__swift5_reflstr: 0x295
--  __TEXT.__swift5_proto: 0x1c0
 +1857.1.7.0.0
-+  __TEXT.__text: 0x1989c
-+  __TEXT.__const: 0x2994
-+  __TEXT.__constg_swiftt: 0x73c
-+  __TEXT.__swift5_typeref: 0x961
-+  __TEXT.__swift5_fieldmd: 0x6ec
-+  __TEXT.__swift5_types: 0xb0
-+  __TEXT.__cstring: 0x161
-+  __TEXT.__swift5_builtin: 0x3c
-+  __TEXT.__swift5_mpenum: 0x18
-+  __TEXT.__swift5_reflstr: 0x319
-+  __TEXT.__swift5_proto: 0x234
-   __TEXT.__swift5_protos: 0xc
--  __TEXT.__swift_as_entry: 0x54
--  __TEXT.__swift_as_ret: 0x48
--  __TEXT.__swift_as_cont: 0x1c
--  __TEXT.__swift5_capture: 0x10
--  __TEXT.__swift5_builtin: 0x14
--  __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x800
--  __TEXT.__eh_frame: 0x950
-+  __TEXT.__swift_as_entry: 0x9c
-+  __TEXT.__swift_as_ret: 0x94
-+  __TEXT.__swift_as_cont: 0x38
-+  __TEXT.__swift5_capture: 0x3c
-+  __TEXT.__oslogstring: 0x19f
-+  __TEXT.__unwind_info: 0xb30
-+  __TEXT.__eh_frame: 0xf90
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__const: 0x40
-   __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x90
-+  __DATA_CONST.__objc_selrefs: 0x118
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1020
--  __AUTH_CONST.__objc_const: 0x3a8
--  __AUTH_CONST.__auth_got: 0x3a8
--  __AUTH.__data: 0x270
--  __DATA.__data: 0x4e8
-+  __AUTH_CONST.__const: 0x1488
-+  __AUTH_CONST.__objc_const: 0x3c8
-+  __AUTH_CONST.__auth_got: 0x508
-+  __AUTH.__data: 0x2b0
-+  __DATA.__data: 0x688
-+  __DATA.__common: 0x18
-   - /System/Library/Frameworks/FileProvider.framework/FileProvider
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/DesktopServicesPriv.framework/DesktopServicesPriv
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 594
 -  Symbols:   310
 -  CStrings:  7
 +  Functions: 792
 +  Symbols:   405
 +  CStrings:  17
- 
 Symbols:
 + _OBJC_CLASS_$_FIProviderDomain
 + _OBJC_CLASS_$_FPItemID

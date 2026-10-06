@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/ServicesAnalyticsKit.framework/ServicesAnalyticsKit`
 
-```diff
+### Section Size Changes
 
- 3.0.59.0.0
--  __TEXT.__text: 0x11a4c
-+  __TEXT.__text: 0x11a44
-   __TEXT.__const: 0xb90
-   __TEXT.__swift5_typeref: 0x4ec
-   __TEXT.__constg_swiftt: 0x294
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x11a4c` | `0x11a44` | **`-0x8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2a2a34078 -> sub_2a37ea078 : 780 -> 784
-~ sub_2a2a3c334 -> sub_2a37f2338 : 888 -> 876
+~ sub_2a292a078 -> sub_2a36dc078 : 780 -> 784
+~ sub_2a2932334 -> sub_2a36e4338 : 888 -> 876
 ```

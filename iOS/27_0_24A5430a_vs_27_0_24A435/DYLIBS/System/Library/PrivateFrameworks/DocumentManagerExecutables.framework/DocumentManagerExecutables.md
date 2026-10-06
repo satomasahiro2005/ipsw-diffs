@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/DocumentManagerExecutables.framework/DocumentManagerExecutables`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7c34d4` | `0x7c3674` | **`+0x1a0`** |
+| `__AUTH_CONST.__auth_got` | `0x45a0` | `0x4598` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 401.0.0.0.0
--  __TEXT.__text: 0x7c34d4
-+  __TEXT.__text: 0x7c3674
-   __TEXT.__objc_methlist: 0x11094
-   __TEXT.__const: 0x29ee4
-   __TEXT.__gcc_except_tab: 0x8b4
-
-   __AUTH_CONST.__objc_intobj: 0x2b8
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_arrayobj: 0x60
--  __AUTH_CONST.__auth_got: 0x45a0
-+  __AUTH_CONST.__auth_got: 0x4598
-   __AUTH.__objc_data: 0x12198
-   __AUTH.__data: 0x9b20
-   __DATA.__objc_ivar: 0x408
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 45309
--  Symbols:   83879
-+  Symbols:   83878
-   CStrings:  4726
- 
+-  Symbols:   80192
++  Symbols:   80191
 Symbols:
 - _objc_retain_x12
 Functions:

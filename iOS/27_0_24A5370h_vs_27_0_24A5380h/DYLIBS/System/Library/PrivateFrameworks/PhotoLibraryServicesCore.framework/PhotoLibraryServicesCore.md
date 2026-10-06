@@ -2,91 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/PhotoLibraryServicesCore.framework/PhotoLibraryServicesCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xca10c` | `0xcaf98` | **`+0xe8c`** |
+| `__TEXT.__cstring` | `0x15b77` | `0x15d0f` | **`+0x198`** |
+| `__AUTH_CONST.__cfstring` | `0x11d80` | `0x11e80` | **`+0x100`** |
+| `__AUTH_CONST.__objc_const` | `0xa900` | `0xaa00` | **`+0x100`** |
+| `__TEXT.__objc_methlist` | `0x8264` | `0x8304` | **`+0xa0`** |
+| `__TEXT.__oslogstring` | `0xb142` | `0xb0b9` | **`-0x89`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4c18` | `0x4c80` | **`+0x68`** |
+| `__AUTH.__objc_data` | `0x320` | `0x370` | **`+0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x2530` | `0x24e0` | **`-0x50`** |
+| `__TEXT.__unwind_info` | `0x3430` | `0x3468` | **`+0x38`** |
+| `__DATA_CONST.__const` | `0x3c20` | `0x3c50` | **`+0x30`** |
+| `__AUTH_CONST.__objc_intobj` | `0x900` | `0x918` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x660` | `0x678` | **`+0x18`** |
+| `__DATA.__bss` | `0xdc0` | `0xdb0` | **`-0x10`** |
+| `__DATA_DIRTY.__bss` | `0x3f8` | `0x408` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x570c` | `0x56fc` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xe40` | `0xe48` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0xa50` | `0xa48` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xca10c
--  __TEXT.__objc_methlist: 0x8264
-+  __TEXT.__text: 0xcaf98
-+  __TEXT.__objc_methlist: 0x8304
-   __TEXT.__const: 0x2324
-   __TEXT.__dlopen_cstrs: 0x19c
--  __TEXT.__gcc_except_tab: 0x570c
--  __TEXT.__cstring: 0x15b77
--  __TEXT.__oslogstring: 0xb142
-+  __TEXT.__gcc_except_tab: 0x56fc
-+  __TEXT.__cstring: 0x15d0f
-+  __TEXT.__oslogstring: 0xb0b9
-   __TEXT.__ustring: 0x4
--  __TEXT.__unwind_info: 0x3430
-+  __TEXT.__unwind_info: 0x3468
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3c20
-+  __DATA_CONST.__const: 0x3c50
-   __DATA_CONST.__objc_classlist: 0x408
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x160
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4c18
-+  __DATA_CONST.__objc_selrefs: 0x4c80
-   __DATA_CONST.__objc_protorefs: 0xc8
-   __DATA_CONST.__objc_superrefs: 0x268
-   __DATA_CONST.__objc_arraydata: 0x420
--  __DATA_CONST.__got: 0xa50
-+  __DATA_CONST.__got: 0xa48
-   __AUTH_CONST.__const: 0x35e8
--  __AUTH_CONST.__cfstring: 0x11d80
--  __AUTH_CONST.__objc_const: 0xa900
--  __AUTH_CONST.__objc_intobj: 0x900
-+  __AUTH_CONST.__cfstring: 0x11e80
-+  __AUTH_CONST.__objc_const: 0xaa00
-+  __AUTH_CONST.__objc_intobj: 0x918
-   __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_arrayobj: 0x288
--  __AUTH_CONST.__auth_got: 0xe40
--  __AUTH.__objc_data: 0x320
--  __DATA.__objc_ivar: 0x660
-+  __AUTH_CONST.__auth_got: 0xe48
-+  __AUTH.__objc_data: 0x370
-+  __DATA.__objc_ivar: 0x678
-   __DATA.__data: 0x10e0
--  __DATA.__bss: 0xdc0
--  __DATA_DIRTY.__objc_data: 0x2530
-+  __DATA.__bss: 0xdb0
-+  __DATA_DIRTY.__objc_data: 0x24e0
-   __DATA_DIRTY.__data: 0x8
--  __DATA_DIRTY.__bss: 0x3f8
-+  __DATA_DIRTY.__bss: 0x408
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+-910.21.101.0.0
++910.27.103.0.0
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libperfcheck.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 3945
--  Symbols:   13373
--  CStrings:  5935
+-  Symbols:   7859
+-  CStrings:  3648
 +  Functions: 3961
-+  Symbols:   13428
-+  CStrings:  5951
- 
-Sections:
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __DATA.__data : content changed
++  Symbols:   7887
++  CStrings:  3656
 Symbols:
 + +[PLPhotoLibraryPathManagerCore photolibrarydPrivateGroupContainerName]
 + +[PLPhotoLibraryPathManagerCore systemLibraryPathDefaultsKey]
@@ -378,18 +329,6 @@ Symbols:
 + _PhotoLibraryServicesEntitlementAllowRestrictedResourcesRead
 + ___50-[PLAppPrivateData _writeThroughGeneration:error:]_block_invoke
 + ___block_descriptor_64_e8_32s40r48r_e5_v8?0ls32l8r40l8r48l8
-+ _objc_msgSend$UUIDStringsForKey:
-+ _objc_msgSend$_writeThroughGeneration:error:
-+ _objc_msgSend$dictionaryWithContentsOfURL:
-+ _objc_msgSend$dirtyGeneration
-+ _objc_msgSend$initWithAssetUuid:bundleScope:uti:resourceVersion:resourceType:recipeID:storageAccessTier:originalFilename:customSuffix:
-+ _objc_msgSend$initWithBytesNoCopy:length:freeWhenDone:
-+ _objc_msgSend$ioQueue
-+ _objc_msgSend$restrictedResourcesAccessAuthorized
-+ _objc_msgSend$setDirtyGeneration:
-+ _objc_msgSend$setWrittenGeneration:
-+ _objc_msgSend$storageAccessTier
-+ _objc_msgSend$writtenGeneration
 - +[PLPhotoLibraryPathManagerCore _constructLegacySystemPhotoLibraryURLFromUnresolvableBookmark:]
 - +[PLPhotoLibraryPathManagerCore _legacySystemLibraryBookmarkData]
 - +[PLPhotoLibraryPathManagerCore _legacySystemLibraryPath]
@@ -652,9 +591,6 @@ Symbols:
 - _OBJC_IVAR_$_PLPrimitiveAssetsdClient._sandboxExtensions
 - _PLURLForResourceProperties
 - ___block_descriptor_64_e8_32s40r48r_e5_v8?0lr40l8s32l8r48l8
-- _objc_msgSend$_constructLegacySystemPhotoLibraryURLFromUnresolvableBookmark:
-- _objc_msgSend$_legacySystemLibraryBookmarkData
-- _objc_msgSend$resourceValuesForKeys:fromBookmarkData:
 CStrings:
 + "4"
 + "Error removing old SPL group plist: %@"
@@ -678,5 +614,4 @@ CStrings:
 - "Legacy system photo library URL exists but it is not resolvable. Returning bogus URL: %@"
 - "NSString *_pathForResourceProperties(const char *, const char *, PLResourceType, PLResourceVersion, PLResourceRecipeID, BOOL, const char *, const char *, const char *, const char *, const char *, const char *, const char *)"
 - "No NSURLPathKey available from unresolvable bookmark"
-
 ```

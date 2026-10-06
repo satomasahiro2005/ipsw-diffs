@@ -2,47 +2,39 @@
 
 > `/private/var/staged_system_apps/Podcasts.app/Frameworks/PodcastsWidgetKit.framework/PodcastsWidgetKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x62f50` | `0x63140` | **`+0x1f0`** |
+| `__DATA_CONST.__got` | `0x988` | `0x990` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x62f50
-+  __TEXT.__text: 0x63140
-   __TEXT.__auth_stubs: 0x2c60
-   __TEXT.__objc_stubs: 0x540
-   __TEXT.__objc_methlist: 0x194
+-4027.100.70.0.0
++4027.100.75.0.0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__auth_got: 0x1638
--  __DATA_CONST.__got: 0x988
-+  __DATA_CONST.__got: 0x990
-   __DATA_CONST.__auth_ptr: 0xe70
-   __DATA.__objc_const: 0x158
-   __DATA.__objc_selrefs: 0x248
-
-   - @rpath/PodcastsAppEntities.framework/PodcastsAppEntities
-   - @rpath/PodcastsPlayback.framework/PodcastsPlayback
-   Functions: 1687
--  Symbols:   1067
-+  Symbols:   1068
-   CStrings:  170
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__data : content changed
-~ __DATA.__bss : content changed
-~ __DATA.__common : content changed
+-  Symbols:   1015
++  Symbols:   1016
 Symbols:
 + ___stack_chk_fail
 + ___stack_chk_guard
@@ -55,5 +47,4 @@ Functions:
 ~ sub_579ac -> sub_57a24 : 344 -> 324
 ~ sub_57e18 -> sub_57e7c : 300 -> 380
 ~ sub_5e878 -> sub_5e92c : 8740 -> 9056
-
 ```

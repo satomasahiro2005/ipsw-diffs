@@ -2,109 +2,59 @@
 
 > `/System/Library/SubFrameworks/RealityCoreRenderer.framework/RealityCoreRenderer`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xedf90` | `0xc61ac` | **`-0x27de4`** |
+| `__AUTH.__data` | `0x36f8` | `0x358` | **`-0x33a0`** |
+| `__TEXT.__const` | `0xafc4` | `0x86c4` | **`-0x2900`** |
+| `__AUTH_CONST.__const` | `0x2f9d0` | `0x2d100` | **`-0x28d0`** |
+| `__DATA_DIRTY.__data` | `—` | `0x2578` | **`+0x2578`** |
+| `__TEXT.__eh_frame` | `0x6da8` | `0x4a28` | **`-0x2380`** |
+| `__DATA.__bss` | `0x5a80` | `0x4680` | **`-0x1400`** |
+| `__TEXT.__constg_swiftt` | `0x4094` | `0x2fdc` | **`-0x10b8`** |
+| `__TEXT.__unwind_info` | `0x3158` | `0x2188` | **`-0xfd0`** |
+| `__AUTH_CONST.__objc_const` | `0x5e98` | `0x4f10` | **`-0xf88`** |
+| `__TEXT.__swift5_fieldmd` | `0x4610` | `0x38c0` | **`-0xd50`** |
+| `__DATA_CONST.__const` | `0xfc8` | `0x7b8` | **`-0x810`** |
+| `__TEXT.__swift5_reflstr` | `0x36fc` | `0x311c` | **`-0x5e0`** |
+| `__TEXT.__swift5_typeref` | `0x22f6` | `0x1d22` | **`-0x5d4`** |
+| `__AUTH.__objc_data` | `0x410` | `—` | **`-0x410`** |
+| `__DATA_DIRTY.__objc_data` | `—` | `0x410` | **`+0x410`** |
+| `__DATA.__data` | `0x19d8` | `0x15f0` | **`-0x3e8`** |
+| `__TEXT.__swift5_types` | `0x598` | `0x43c` | **`-0x15c`** |
+| `__DATA_CONST.__got` | `0x570` | `0x448` | **`-0x128`** |
+| `__TEXT.__swift5_assocty` | `0x558` | `0x450` | **`-0x108`** |
+| `__TEXT.__swift_as_entry` | `0x234` | `0x164` | **`-0xd0`** |
+| `__TEXT.__swift_as_ret` | `0x2a0` | `0x1d0` | **`-0xd0`** |
+| `__TEXT.__cstring` | `0x1e82` | `0x1dc2` | **`-0xc0`** |
+| `__TEXT.__swift5_proto` | `0x330` | `0x270` | **`-0xc0`** |
+| `__DATA_CONST.__objc_classlist` | `0x240` | `0x1a8` | **`-0x98`** |
+| `__AUTH_CONST.__auth_got` | `0xfa8` | `0xf18` | **`-0x90`** |
+| `__DATA.__common` | `0xa0` | `0x40` | **`-0x60`** |
+| `__DATA_DIRTY.__common` | `—` | `0x60` | **`+0x60`** |
+| `__TEXT.__swift_as_cont` | `0x2614` | `0x25b4` | **`-0x60`** |
+| `__TEXT.__swift5_capture` | `0x618` | `0x5d0` | **`-0x48`** |
+| `__TEXT.__swift5_builtin` | `0x424` | `0x410` | **`-0x14`** |
+| `__TEXT.__swift5_protos` | `0x40` | `0x2c` | **`-0x14`** |
+| `__TEXT.__swift5_types2` | `0x34` | `0x24` | **`-0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1230` | `0x1238` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `0xf8` | `0xf0` | **`-0x8`** |
+
+### Other Changes
 
 ```diff
 
 -24.0.3.0.0
--  __TEXT.__text: 0xedf90
 +24.0.4.0.0
-+  __TEXT.__text: 0xc61ac
-   __TEXT.__objc_methlist: 0x1a04
--  __TEXT.__const: 0xafc4
--  __TEXT.__constg_swiftt: 0x4094
--  __TEXT.__swift5_typeref: 0x22f6
--  __TEXT.__swift5_reflstr: 0x36fc
--  __TEXT.__swift5_fieldmd: 0x4610
--  __TEXT.__swift5_builtin: 0x424
--  __TEXT.__swift5_assocty: 0x558
--  __TEXT.__swift5_proto: 0x330
--  __TEXT.__swift5_types: 0x598
--  __TEXT.__swift5_mpenum: 0xf8
--  __TEXT.__swift5_protos: 0x40
--  __TEXT.__cstring: 0x1e82
--  __TEXT.__swift5_capture: 0x618
--  __TEXT.__swift_as_entry: 0x234
--  __TEXT.__swift_as_ret: 0x2a0
--  __TEXT.__swift_as_cont: 0x2614
--  __TEXT.__swift5_types2: 0x34
-+  __TEXT.__const: 0x86c4
-+  __TEXT.__constg_swiftt: 0x2fdc
-+  __TEXT.__swift5_typeref: 0x1d22
-+  __TEXT.__swift5_reflstr: 0x311c
-+  __TEXT.__swift5_fieldmd: 0x38c0
-+  __TEXT.__swift5_builtin: 0x410
-+  __TEXT.__swift5_assocty: 0x450
-+  __TEXT.__swift5_proto: 0x270
-+  __TEXT.__swift5_types: 0x43c
-+  __TEXT.__swift5_mpenum: 0xf0
-+  __TEXT.__swift5_protos: 0x2c
-+  __TEXT.__cstring: 0x1dc2
-+  __TEXT.__swift5_capture: 0x5d0
-+  __TEXT.__swift_as_entry: 0x164
-+  __TEXT.__swift_as_ret: 0x1d0
-+  __TEXT.__swift_as_cont: 0x25b4
-+  __TEXT.__swift5_types2: 0x24
-   __TEXT.__oslogstring: 0x3
--  __TEXT.__unwind_info: 0x3158
--  __TEXT.__eh_frame: 0x6da8
-+  __TEXT.__unwind_info: 0x2188
-+  __TEXT.__eh_frame: 0x4a28
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xfc8
--  __DATA_CONST.__objc_classlist: 0x240
-+  __DATA_CONST.__const: 0x7b8
-+  __DATA_CONST.__objc_classlist: 0x1a8
-   __DATA_CONST.__objc_protolist: 0x120
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1230
-+  __DATA_CONST.__objc_selrefs: 0x1238
-   __DATA_CONST.__objc_protorefs: 0x90
-   __DATA_CONST.__objc_superrefs: 0x18
--  __DATA_CONST.__got: 0x570
--  __AUTH_CONST.__const: 0x2f9d0
--  __AUTH_CONST.__objc_const: 0x5e98
--  __AUTH_CONST.__auth_got: 0xfa8
--  __AUTH.__objc_data: 0x410
--  __AUTH.__data: 0x36f8
-+  __DATA_CONST.__got: 0x448
-+  __AUTH_CONST.__const: 0x2d100
-+  __AUTH_CONST.__objc_const: 0x4f10
-+  __AUTH_CONST.__auth_got: 0xf18
-+  __AUTH.__data: 0x358
-   __DATA.__objc_ivar: 0xc
--  __DATA.__data: 0x19d8
--  __DATA.__bss: 0x5a80
--  __DATA.__common: 0xa0
-+  __DATA.__data: 0x15f0
-+  __DATA.__bss: 0x4680
-+  __DATA.__common: 0x40
-+  __DATA_DIRTY.__objc_data: 0x410
-+  __DATA_DIRTY.__data: 0x2578
-+  __DATA_DIRTY.__common: 0x60
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7113
--  Symbols:   14426
+-  Symbols:   14270
 -  CStrings:  186
 +  Functions: 5443
-+  Symbols:   11044
++  Symbols:   10888
 +  CStrings:  182
- 
 Symbols:
 + _$s14CoreMaterial3D12PollableTaskVySo22MTLRenderPipelineState_p_So0eF10ReflectionCSgts5Error_pGMR
 + _$s14CoreMaterial3D12PollableTaskVySo22MTLRenderPipelineState_p_So0eF10ReflectionCSgts5Error_pGMd
@@ -161,7 +111,6 @@ Symbols:
 + ___swift_closure_destructor.70Tm
 + ___swift_memcpy49_8
 + ___swift_memcpy72_8
-+ _objc_msgSend$setSupportRayTracing:
 + _symbolic _____y_____G s23_ContiguousArrayStorageC 14CoreMaterial3D16StitchedMaterialC25RenderPipelineDescriptionV
 + _symbolic _____y______p_So27MTLRenderPipelineReflectionCSgt______pG 14CoreMaterial3D12PollableTaskV So22MTLRenderPipelineStateP s5ErrorP
 - _$s11ShaderGraph07_Proto_A8DataTypeO012postLightingA0yA2CmFWC
@@ -3411,7 +3360,6 @@ Symbols:
 - _associated conformance 19RealityCoreRenderer54_Proto_LowLevelRenderContextStandaloneConfiguration_v1V20ResidencySetBehaviorOSHAASQ
 - _get_enum_tag_for_layout_string 19RealityCoreRenderer42_Proto_LowLevelMaterialParameterMapping_v1V6BufferO
 - _keypath_get.29Tm
-- _objc_msgSend$arrayLength
 - _objc_retain_x27
 - _swift_getErrorValue
 - _swift_getTupleTypeMetadata2

@@ -2,80 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/ManagedDevice.framework/ManagedDevice`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2a1ac` | `0x2e2e8` | **`+0x413c`** |
+| `__AUTH_CONST.__objc_const` | `0xb9a0` | `0xc670` | **`+0xcd0`** |
+| `__TEXT.__objc_methlist` | `0x5434` | `0x5824` | **`+0x3f0`** |
+| `__AUTH_CONST.__cfstring` | `0x65c0` | `0x68c0` | **`+0x300`** |
+| `__TEXT.__cstring` | `0x4920` | `0x4bb3` | **`+0x293`** |
+| `__TEXT.__oslogstring` | `0x712` | `0x99c` | **`+0x28a`** |
+| `__DATA_CONST.__const` | `0xc98` | `0xe98` | **`+0x200`** |
+| `__DATA_CONST.__objc_selrefs` | `0x16d0` | `0x18c0` | **`+0x1f0`** |
+| `__TEXT.__unwind_info` | `0xa68` | `0xba8` | **`+0x140`** |
+| `__AUTH.__objc_data` | `0x2120` | `0x2210` | **`+0xf0`** |
+| `__TEXT.__gcc_except_tab` | `0x1a8` | `0x270` | **`+0xc8`** |
+| `__DATA.__data` | `0x2a0` | `0x360` | **`+0xc0`** |
+| `__AUTH_CONST.__const` | `0x2a0` | `0x320` | **`+0x80`** |
+| `__DATA.__objc_ivar` | `0x750` | `0x7b8` | **`+0x68`** |
+| `__DATA_DIRTY.__objc_data` | `0x640` | `0x690` | **`+0x50`** |
+| `__DATA_CONST.__objc_classlist` | `0x3f0` | `0x410` | **`+0x20`** |
+| `__DATA_CONST.__objc_superrefs` | `0x338` | `0x358` | **`+0x20`** |
+| `__DATA_DIRTY.__bss` | `0x30` | `0x50` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x280` | `0x298` | **`+0x18`** |
+| `__DATA.__bss` | `0x108` | `0x118` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x38` | `0x48` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x8` | `0x18` | **`+0x10`** |
+| `__TEXT.__const` | `0x80` | `0x88` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -29.0.0.0.0
--  __TEXT.__text: 0x298e8
--  __TEXT.__objc_methlist: 0x5434
--  __TEXT.__const: 0x80
--  __TEXT.__cstring: 0x4920
 +31.0.0.0.0
-+  __TEXT.__text: 0x2d820
-+  __TEXT.__objc_methlist: 0x5824
-+  __TEXT.__const: 0x88
-+  __TEXT.__cstring: 0x4bb3
-   __TEXT.__ustring: 0x9d8
--  __TEXT.__oslogstring: 0x712
--  __TEXT.__gcc_except_tab: 0x1a8
--  __TEXT.__unwind_info: 0xc80
-+  __TEXT.__oslogstring: 0x99c
-+  __TEXT.__gcc_except_tab: 0x270
-+  __TEXT.__unwind_info: 0xe38
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xc98
--  __DATA_CONST.__objc_classlist: 0x3f0
-+  __DATA_CONST.__const: 0xe98
-+  __DATA_CONST.__objc_classlist: 0x410
-   __DATA_CONST.__objc_catlist: 0x10
--  __DATA_CONST.__objc_protolist: 0x38
-+  __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x16d0
--  __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x338
-+  __DATA_CONST.__objc_selrefs: 0x18c0
-+  __DATA_CONST.__objc_protorefs: 0x18
-+  __DATA_CONST.__objc_superrefs: 0x358
-   __DATA_CONST.__objc_arraydata: 0x4d0
--  __DATA_CONST.__got: 0x280
--  __AUTH_CONST.__const: 0x2a0
--  __AUTH_CONST.__cfstring: 0x65c0
--  __AUTH_CONST.__objc_const: 0xb9a0
-+  __DATA_CONST.__got: 0x298
-+  __AUTH_CONST.__const: 0x320
-+  __AUTH_CONST.__cfstring: 0x68c0
-+  __AUTH_CONST.__objc_const: 0xc670
-   __AUTH_CONST.__objc_intobj: 0xf90
-   __AUTH_CONST.__objc_arrayobj: 0x618
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x2120
--  __DATA.__objc_ivar: 0x750
--  __DATA.__data: 0x2a0
--  __DATA_DIRTY.__objc_data: 0x640
--  __DATA_DIRTY.__bss: 0x30
-+  __AUTH.__objc_data: 0x2210
-+  __DATA.__objc_ivar: 0x7b8
-+  __DATA.__data: 0x360
-+  __DATA_DIRTY.__objc_data: 0x690
-+  __DATA_DIRTY.__bss: 0x50
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
 
-   - /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1704
 -  Symbols:   3547
 -  CStrings:  875
 +  Functions: 1834
 +  Symbols:   3748
 +  CStrings:  915
- 
 Symbols:
 + +[MDFManagedAppEvent supportsSecureCoding]
 + +[MDFManagedAppMonitor sharedMonitor]

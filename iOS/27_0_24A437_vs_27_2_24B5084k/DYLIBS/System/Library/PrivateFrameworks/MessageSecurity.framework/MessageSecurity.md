@@ -2,16 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/MessageSecurity.framework/MessageSecurity`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4c438` | `0x4c4dc` | **`+0xa4`** |
+
+### Other Changes
+
 ```diff
 
 -341.0.17.0.0
--  __TEXT.__text: 0x4b414
 +341.40.7.0.0
-+  __TEXT.__text: 0x4b4b8
-   __TEXT.__objc_methlist: 0x2434
-   __TEXT.__const: 0x14a4
-   __TEXT.__gcc_except_tab: 0x78c
 Functions:
-~ sub_225778f64 -> sub_2279d5f64 : 13152 -> 13308
-~ sub_225781fd4 -> sub_2279df070 : 844 -> 852
+~ sub_2279b0bc8 -> sub_22a100bc8 : 13228 -> 13384
+~ sub_2279b9dbc -> sub_22a109e58 : 844 -> 852
 ```

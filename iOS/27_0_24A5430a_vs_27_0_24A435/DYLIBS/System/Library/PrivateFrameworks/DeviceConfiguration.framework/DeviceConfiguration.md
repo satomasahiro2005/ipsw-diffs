@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/DeviceConfiguration.framework/DeviceConfiguration`
 
-```diff
+### Section Size Changes
 
- 29.2.6.0.0
--  __TEXT.__text: 0xcaadc
-+  __TEXT.__text: 0xcab40
-   __TEXT.__objc_methlist: 0x67c
-   __TEXT.__const: 0xb568
-   __TEXT.__cstring: 0x17f8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcaadc` | `0xcab40` | **`+0x64`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1cd196a74 -> sub_1cd6aea74 : 720 -> 724
 ~ sub_1cd198474 -> sub_1cd6b0478 : 4740 -> 4744

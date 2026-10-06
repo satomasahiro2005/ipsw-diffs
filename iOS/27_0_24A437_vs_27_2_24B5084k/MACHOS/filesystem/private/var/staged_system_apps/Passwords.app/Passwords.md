@@ -2,96 +2,59 @@
 
 > `/private/var/staged_system_apps/Passwords.app/Passwords`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__objc_classname`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x75c0` | `0x6414` | **`-0x11ac`** |
+| `__TEXT.__auth_stubs` | `0xad0` | `0xba0` | **`+0xd0`** |
+| `__DATA.__data` | `0x5a8` | `0x508` | **`-0xa0`** |
+| `__DATA_CONST.__auth_got` | `0x570` | `0x5d8` | **`+0x68`** |
+| `__DATA_CONST.__const` | `0x378` | `0x3d0` | **`+0x58`** |
+| `__TEXT.__objc_methname` | `0x576` | `0x5c6` | **`+0x50`** |
+| `__DATA.__objc_const` | `0x2e0` | `0x320` | **`+0x40`** |
+| `__TEXT.__swift5_reflstr` | `0x133` | `0x163` | **`+0x30`** |
+| `__DATA.__objc_data` | `0x110` | `0x130` | **`+0x20`** |
+| `__TEXT.__swift5_capture` | `0xc8` | `0xa8` | **`-0x20`** |
+| `__TEXT.__unwind_info` | `0x280` | `0x260` | **`-0x20`** |
+| `__TEXT.__const` | `0x494` | `0x4a4` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0x484` | `0x478` | **`-0xc`** |
+| `__DATA_CONST.__auth_ptr` | `0x258` | `0x250` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x220` | `0x218` | **`-0x8`** |
+| `__TEXT.__eh_frame` | `0x2b0` | `0x2b8` | **`+0x8`** |
+| `__TEXT.__constg_swiftt` | `0x2d4` | `0x2d8` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_selrefs`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA.__objc_selrefs`
+- `__TEXT.__objc_classname`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -625.1.29.10.29
--  __TEXT.__text: 0x6ed0
--  __TEXT.__auth_stubs: 0xad0
 +625.2.4.1.0
-+  __TEXT.__text: 0x5ea4
-+  __TEXT.__auth_stubs: 0xba0
-   __TEXT.__objc_stubs: 0x1c0
-   __TEXT.__objc_methlist: 0x1a0
--  __TEXT.__const: 0x494
-+  __TEXT.__const: 0x4a4
-   __TEXT.__cstring: 0xa1
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__objc_classname: 0xa8
--  __TEXT.__objc_methname: 0x576
-+  __TEXT.__objc_methname: 0x5c6
-   __TEXT.__objc_methtype: 0x1a7
--  __TEXT.__constg_swiftt: 0x2d4
--  __TEXT.__swift5_typeref: 0x484
--  __TEXT.__swift5_reflstr: 0x133
-+  __TEXT.__constg_swiftt: 0x2d8
-+  __TEXT.__swift5_typeref: 0x478
-+  __TEXT.__swift5_reflstr: 0x163
-   __TEXT.__swift5_fieldmd: 0x108
-   __TEXT.__swift5_assocty: 0x78
--  __TEXT.__swift5_capture: 0xc8
-+  __TEXT.__swift5_capture: 0xa8
-   __TEXT.__oslogstring: 0x85
-   __TEXT.__swift5_proto: 0x14
-   __TEXT.__swift5_types: 0x18
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0x14
-   __TEXT.__swift_as_cont: 0x14
--  __TEXT.__unwind_info: 0x308
--  __TEXT.__eh_frame: 0x2b0
--  __DATA_CONST.__const: 0x378
-+  __TEXT.__unwind_info: 0x2d8
-+  __TEXT.__eh_frame: 0x2b8
-+  __DATA_CONST.__const: 0x3d0
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__auth_got: 0x570
--  __DATA_CONST.__got: 0x220
--  __DATA_CONST.__auth_ptr: 0x258
--  __DATA.__objc_const: 0x2e0
-+  __DATA_CONST.__auth_got: 0x5d8
-+  __DATA_CONST.__got: 0x218
-+  __DATA_CONST.__auth_ptr: 0x250
-+  __DATA.__objc_const: 0x320
-   __DATA.__objc_selrefs: 0x150
--  __DATA.__objc_data: 0x110
--  __DATA.__data: 0x5a8
-+  __DATA.__objc_data: 0x130
-+  __DATA.__data: 0x508
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/SafariServices.framework/SafariServices
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 171
 -  Symbols:   345
 -  CStrings:  83
 +  Functions: 158
 +  Symbols:   357
 +  CStrings:  85
- 
 Symbols:
 + _$s17PasswordManagerUI011PMAutomaticA24ChangeCompletionReporterV10SafariCore012WBSAutomaticaeF9ReportingAAMc
 + _$s17PasswordManagerUI011PMAutomaticA24ChangeCompletionReporterVACycfC

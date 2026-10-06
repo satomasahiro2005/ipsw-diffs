@@ -2,26 +2,22 @@
 
 > `com.apple.iokit.IOAccessoryManager`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0xe4e84` | `0xe4f58` | **`+0xd4`** |
+| `__TEXT.__os_log` | `0x121cf` | `0x121fe` | **`+0x2f`** |
+
+### Other Changes
+
 ```diff
 
 -1068.0.0.0.0
 +1068.0.0.0.2
-   __TEXT.__const: 0x2b8
-   __TEXT.__cstring: 0x11078
--  __TEXT.__os_log: 0x121cf
--  __TEXT_EXEC.__text: 0xe4e84
-+  __TEXT.__os_log: 0x121fe
-+  __TEXT_EXEC.__text: 0xe4f58
-   __TEXT_EXEC.__auth_stubs: 0xbb0
-   __DATA.__data: 0x7e8
-   __DATA.__common: 0x16b8
 
-   __DATA_CONST.__auth_ptr: 0x20
-   Functions: 5013
-   Symbols:   0
 -  CStrings:  2962
 +  CStrings:  2963
- 
 Functions:
 ~ __ZN17IOPortFeatureLDCM32_handleMitigationsForLiquidStateEb : 1616 -> 1828
 CStrings:

@@ -2,88 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/MetadataUtilities.framework/MetadataUtilities`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5c34c` | `0x5d7b4` | **`+0x1468`** |
+| `__AUTH.__objc_data` | `0x190` | `0x2d0` | **`+0x140`** |
+| `__DATA_DIRTY.__objc_data` | `0x1e0` | `0xa0` | **`-0x140`** |
+| `__TEXT.__cstring` | `0x71df` | `0x722b` | **`+0x4c`** |
+| `__TEXT.__unwind_info` | `0xc78` | `0xcb0` | **`+0x38`** |
+| `__AUTH_CONST.__auth_got` | `0xd60` | `0xd88` | **`+0x28`** |
+| `__TEXT.__oslogstring` | `0x1a18` | `0x1a3a` | **`+0x22`** |
+| `__TEXT.__const` | `0x3d56` | `0x3d72` | **`+0x1c`** |
+| `__DATA.__bss` | `0x2d8` | `0x2e8` | **`+0x10`** |
+| `__DATA.__common` | `0x850` | `0x860` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x348` | `0x338` | **`-0x10`** |
+| `__DATA_DIRTY.__common` | `0xf0` | `0xe0` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x158` | `0x160` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x5c34c
-+  __TEXT.__text: 0x5d7b4
-   __TEXT.__objc_methlist: 0x494
--  __TEXT.__const: 0x3d56
--  __TEXT.__cstring: 0x71df
--  __TEXT.__oslogstring: 0x1a18
-+  __TEXT.__const: 0x3d72
-+  __TEXT.__cstring: 0x722b
-+  __TEXT.__oslogstring: 0x1a3a
-   __TEXT.__ustring: 0x9a
-   __TEXT.__gcc_except_tab: 0x18
-   __TEXT.__dlopen_cstrs: 0x54
--  __TEXT.__unwind_info: 0xc78
-+  __TEXT.__unwind_info: 0xcb0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-2448.100.0.0.0
++2451.1.101.0.0
 
-   __DATA_CONST.__objc_selrefs: 0x400
-   __DATA_CONST.__objc_superrefs: 0x58
-   __DATA_CONST.__objc_arraydata: 0x370
--  __DATA_CONST.__got: 0x158
-+  __DATA_CONST.__got: 0x160
-   __AUTH_CONST.__const: 0x8f8
-   __AUTH_CONST.__cfstring: 0x4c80
-   __AUTH_CONST.__objc_const: 0x1178
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_dictobj: 0xf0
-   __AUTH_CONST.__objc_intobj: 0x18
--  __AUTH_CONST.__auth_got: 0xd60
--  __AUTH.__objc_data: 0x190
-+  __AUTH_CONST.__auth_got: 0xd88
-+  __AUTH.__objc_data: 0x2d0
-   __AUTH.__data: 0x30
-   __AUTH.__thread_vars: 0x18
-   __AUTH.__thread_bss: 0x28
-   __DATA.__objc_ivar: 0x148
-   __DATA.__data: 0x2157c
--  __DATA.__bss: 0x2d8
--  __DATA.__common: 0x850
--  __DATA_DIRTY.__objc_data: 0x1e0
-+  __DATA.__bss: 0x2e8
-+  __DATA.__common: 0x860
-+  __DATA_DIRTY.__objc_data: 0xa0
-   __DATA_DIRTY.__data: 0x1b8
--  __DATA_DIRTY.__common: 0xf0
--  __DATA_DIRTY.__bss: 0x348
-+  __DATA_DIRTY.__common: 0xe0
-+  __DATA_DIRTY.__bss: 0x338
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/CoreNLP.framework/CoreNLP
-
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 1417
--  Symbols:   3706
--  CStrings:  1878
+-  Symbols:   1891
+-  CStrings:  1267
 +  Functions: 1446
-+  Symbols:   3740
-+  CStrings:  1883
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   1922
++  CStrings:  1272
 Symbols:
 + __db_rwlock_init
 + __db_write_lock
@@ -122,5 +71,4 @@ CStrings:
 + "lock->writer != pthread_self()"
 + "sdb2_rwlock.c"
 + "waiter->threadid"
-
 ```

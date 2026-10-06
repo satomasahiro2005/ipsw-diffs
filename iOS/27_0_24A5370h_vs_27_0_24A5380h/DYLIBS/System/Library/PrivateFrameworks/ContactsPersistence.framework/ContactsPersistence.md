@@ -2,91 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/ContactsPersistence.framework/ContactsPersistence`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4c368` | `0x4a9bc` | **`-0x19ac`** |
+| `__TEXT.__objc_methlist` | `0x5474` | `0x522c` | **`-0x248`** |
+| `__AUTH_CONST.__const` | `0x1320` | `0x11a0` | **`-0x180`** |
+| `__TEXT.__oslogstring` | `0x341a` | `0x32ca` | **`-0x150`** |
+| `__AUTH_CONST.__cfstring` | `0x4160` | `0x4020` | **`-0x140`** |
+| `__TEXT.__cstring` | `0x318f` | `0x306f` | **`-0x120`** |
+| `__TEXT.__unwind_info` | `0x16a0` | `0x15e8` | **`-0xb8`** |
+| `__DATA.__bss` | `0x11e0` | `0x1130` | **`-0xb0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3260` | `0x31f0` | **`-0x70`** |
+| `__DATA_CONST.__const` | `0x1c50` | `0x1c08` | **`-0x48`** |
+| `__DATA_CONST.__got` | `0x820` | `0x828` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x218` | `0x210` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x4c368
--  __TEXT.__objc_methlist: 0x5474
-+  __TEXT.__text: 0x4a9bc
-+  __TEXT.__objc_methlist: 0x522c
-   __TEXT.__const: 0xca8
--  __TEXT.__cstring: 0x318f
--  __TEXT.__oslogstring: 0x341a
-+  __TEXT.__cstring: 0x306f
-+  __TEXT.__oslogstring: 0x32ca
-   __TEXT.__gcc_except_tab: 0x634
-   __TEXT.__constg_swiftt: 0x86c
-   __TEXT.__swift5_typeref: 0x537
+-3835.100.6.0.0
++3837.100.1.0.0
 
-   __TEXT.__swift5_types: 0x54
-   __TEXT.__swift5_protos: 0xc
-   __TEXT.__swift5_capture: 0x60
--  __TEXT.__unwind_info: 0x16a0
-+  __TEXT.__unwind_info: 0x15e8
-   __TEXT.__eh_frame: 0x148
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1c50
-+  __DATA_CONST.__const: 0x1c08
-   __DATA_CONST.__objc_classlist: 0x4d0
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x100
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3260
-+  __DATA_CONST.__objc_selrefs: 0x31f0
-   __DATA_CONST.__objc_protorefs: 0x50
--  __DATA_CONST.__objc_superrefs: 0x218
-+  __DATA_CONST.__objc_superrefs: 0x210
-   __DATA_CONST.__objc_arraydata: 0x88
--  __DATA_CONST.__got: 0x820
--  __AUTH_CONST.__const: 0x1320
--  __AUTH_CONST.__cfstring: 0x4160
-+  __DATA_CONST.__got: 0x828
-+  __AUTH_CONST.__const: 0x11a0
-+  __AUTH_CONST.__cfstring: 0x4020
-   __AUTH_CONST.__objc_const: 0xb4b8
-   __AUTH_CONST.__objc_arrayobj: 0x60
-   __AUTH_CONST.__objc_intobj: 0xa8
-
-   __AUTH.__data: 0x5a0
-   __DATA.__objc_ivar: 0x408
-   __DATA.__data: 0xe58
--  __DATA.__bss: 0x11e0
-+  __DATA.__bss: 0x1130
-   __DATA.__common: 0x48
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 2341
--  Symbols:   8046
--  CStrings:  1383
+-  Symbols:   4235
+-  CStrings:  861
 +  Functions: 2265
-+  Symbols:   7828
-+  CStrings:  1355
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
++  Symbols:   4164
++  CStrings:  843
 Symbols:
 + +[CNCDContact os_log]
 + _ABCDCompareByOrderingIndexWithPrimaryFirst_block_invoke_6.cn_once_object_10
@@ -171,20 +116,6 @@ Symbols:
 - _limitedStringPropertyKeys.cn_once_object_2
 - _limitedStringPropertyKeys.cn_once_token_0
 - _limitedStringPropertyKeys.cn_once_token_2
-- _objc_msgSend$_cn_partition:
-- _objc_msgSend$isDeleted
-- _objc_msgSend$isLimitedLabeledValue
-- _objc_msgSend$limitLabeledValues:forKey:
-- _objc_msgSend$limitString:forKey:
-- _objc_msgSend$limitStringValue:forKey:
-- _objc_msgSend$limitedClassName
-- _objc_msgSend$limitedLabelValuePropertyKeys
-- _objc_msgSend$limitedPropertyName
-- _objc_msgSend$limitedStringPropertyKeys
-- _objc_msgSend$rangeOfComposedCharacterSequencesForRange:
-- _objc_msgSend$setAssociatedServiceName:
-- _objc_msgSend$setService:
-- _objc_msgSend$substringWithRange:
 - _preferredNameSortDescriptors.cn_once_object_0
 - _preferredNameSortDescriptors.cn_once_token_0
 - _preferredPhotoSortDescriptors.cn_once_object_1
@@ -208,5 +139,4 @@ CStrings:
 - "In some %{public}@, limited the %{public}@ string length"
 - "In some %{public}@, limited the number of %{public}@ labeled values"
 - "v16@?0@\"ABCDOwnedObject\"8"
-
 ```

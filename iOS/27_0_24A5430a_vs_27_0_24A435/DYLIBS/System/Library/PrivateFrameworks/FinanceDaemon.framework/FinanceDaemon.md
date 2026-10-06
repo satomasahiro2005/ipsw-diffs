@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/FinanceDaemon.framework/FinanceDaemon`
 
-```diff
+### Section Size Changes
 
- 376.0.1.0.0
--  __TEXT.__text: 0x48c25c
-+  __TEXT.__text: 0x48c3ac
-   __TEXT.__objc_methlist: 0x7d0
-   __TEXT.__const: 0x17cf2
-   __TEXT.__cstring: 0xcc55
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x48c25c` | `0x48c3ac` | **`+0x150`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_22c951384 -> sub_22d1ef384 : 1788 -> 1792
 ~ sub_22c9c5220 -> sub_22d263224 : 5164 -> 5160

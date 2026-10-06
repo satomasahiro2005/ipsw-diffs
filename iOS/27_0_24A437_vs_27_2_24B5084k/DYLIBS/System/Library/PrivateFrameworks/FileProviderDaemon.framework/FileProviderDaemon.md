@@ -2,101 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/FileProviderDaemon.framework/FileProviderDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa7d478` | `0xa82b54` | **`+0x56dc`** |
+| `__TEXT.__cstring` | `0x4d705` | `0x4dd45` | **`+0x640`** |
+| `__AUTH_CONST.__const` | `0x4c190` | `0x4c3f8` | **`+0x268`** |
+| `__AUTH_CONST.__cfstring` | `0x7340` | `0x7540` | **`+0x200`** |
+| `__AUTH_CONST.__objc_const` | `0x27cb8` | `0x27dd8` | **`+0x120`** |
+| `__TEXT.__const` | `0x2e370` | `0x2e480` | **`+0x110`** |
+| `__TEXT.__gcc_except_tab` | `0xd618` | `0xd70c` | **`+0xf4`** |
+| `__TEXT.__swift5_capture` | `0x1a848` | `0x1a918` | **`+0xd0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6200` | `0x62c0` | **`+0xc0`** |
+| `__TEXT.__swift5_typeref` | `0x14bae` | `0x14c6e` | **`+0xc0`** |
+| `__TEXT.__ustring` | `0x176e` | `0x181a` | **`+0xac`** |
+| `__TEXT.__objc_methlist` | `0x98a4` | `0x9914` | **`+0x70`** |
+| `__TEXT.__unwind_info` | `0x16568` | `0x165d8` | **`+0x70`** |
+| `__TEXT.__eh_frame` | `0x2d248` | `0x2d2b0` | **`+0x68`** |
+| `__DATA_CONST.__const` | `0x46f8` | `0x4740` | **`+0x48`** |
+| `__TEXT.__swift5_reflstr` | `0xf8bd` | `0xf8fd` | **`+0x40`** |
+| `__DATA_DIRTY.__data` | `0x10e00` | `0x10e30` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x1920` | `0x1940` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0xbb4` | `0xbcc` | **`+0x18`** |
+| `__TEXT.__swift5_fieldmd` | `0xd1a4` | `0xd1bc` | **`+0x18`** |
+| `__AUTH.__data` | `0x2898` | `0x28a8` | **`+0x10`** |
+| `__DATA_DIRTY.__objc_data` | `0x33b0` | `0x33c0` | **`+0x10`** |
+| `__TEXT.__constg_swiftt` | `0x14720` | `0x14710` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -4838.0.125.0.0
--  __TEXT.__text: 0xa3fc5c
--  __TEXT.__objc_methlist: 0x98a4
--  __TEXT.__const: 0x2e370
--  __TEXT.__cstring: 0x4d705
 +4838.40.53.502.1
-+  __TEXT.__text: 0xa45214
-+  __TEXT.__objc_methlist: 0x9914
-+  __TEXT.__const: 0x2e480
-+  __TEXT.__cstring: 0x4dd45
-   __TEXT.__oslogstring: 0x207f2
--  __TEXT.__gcc_except_tab: 0xd618
--  __TEXT.__ustring: 0x176e
-+  __TEXT.__gcc_except_tab: 0xd70c
-+  __TEXT.__ustring: 0x181a
-   __TEXT.__dlopen_cstrs: 0xc3
--  __TEXT.__constg_swiftt: 0x14720
--  __TEXT.__swift5_typeref: 0x14bae
-+  __TEXT.__constg_swiftt: 0x14710
-+  __TEXT.__swift5_typeref: 0x14c6e
-   __TEXT.__swift5_builtin: 0x8e8
--  __TEXT.__swift5_reflstr: 0xf8bd
--  __TEXT.__swift5_fieldmd: 0xd1a4
-+  __TEXT.__swift5_reflstr: 0xf8fd
-+  __TEXT.__swift5_fieldmd: 0xd1bc
-   __TEXT.__swift5_mpenum: 0x144
-   __TEXT.__swift5_assocty: 0x29f0
--  __TEXT.__swift5_capture: 0x1a848
-+  __TEXT.__swift5_capture: 0x1a918
-   __TEXT.__swift5_proto: 0x1cbc
-   __TEXT.__swift5_types: 0xc54
-   __TEXT.__swift5_types2: 0x8
 
-   __TEXT.__swift_as_ret: 0x188
-   __TEXT.__swift_as_cont: 0x36c
-   __TEXT.__swift5_protos: 0xbc
--  __TEXT.__unwind_info: 0x1b790
--  __TEXT.__eh_frame: 0x2d260
-+  __TEXT.__unwind_info: 0x1b810
-+  __TEXT.__eh_frame: 0x2d2c8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x46f8
-+  __DATA_CONST.__const: 0x4740
-   __DATA_CONST.__objc_classlist: 0x5a0
-   __DATA_CONST.__objc_catlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x2e8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6200
-+  __DATA_CONST.__objc_selrefs: 0x62c0
-   __DATA_CONST.__objc_protorefs: 0x150
-   __DATA_CONST.__objc_superrefs: 0x298
-   __DATA_CONST.__objc_arraydata: 0x118
--  __DATA_CONST.__got: 0x1920
--  __AUTH_CONST.__const: 0x4c190
--  __AUTH_CONST.__cfstring: 0x7340
--  __AUTH_CONST.__objc_const: 0x27cb8
-+  __DATA_CONST.__got: 0x1940
-+  __AUTH_CONST.__const: 0x4c3f8
-+  __AUTH_CONST.__cfstring: 0x7540
-+  __AUTH_CONST.__objc_const: 0x27dd8
-   __AUTH_CONST.__objc_arrayobj: 0xf0
-   __AUTH_CONST.__objc_intobj: 0x138
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__auth_got: 0x3158
-   __AUTH.__objc_data: 0x1b58
--  __AUTH.__data: 0x2898
--  __DATA.__objc_ivar: 0xbb4
-+  __AUTH.__data: 0x28a8
-+  __DATA.__objc_ivar: 0xbcc
-   __DATA.__data: 0x80a0
-   __DATA.__common: 0x21b
--  __DATA_DIRTY.__objc_data: 0x33b0
--  __DATA_DIRTY.__data: 0x10e00
-+  __DATA_DIRTY.__objc_data: 0x33c0
-+  __DATA_DIRTY.__data: 0x10e30
-   __DATA_DIRTY.__bss: 0xfe98
-   __DATA_DIRTY.__common: 0x8f0
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 31526
--  Symbols:   15295
+-  Symbols:   12573
 -  CStrings:  8142
 +  Functions: 31574
-+  Symbols:   15345
++  Symbols:   12599
 +  CStrings:  8181
- 
 Symbols:
 + -[FPDConfigurationStore hardConcurrentBackgroundDownloadLimit]
 + -[FPDConfigurationStore hardConcurrentBackgroundUploadLimit]
@@ -157,30 +103,6 @@ Symbols:
 + ___swift_closure_destructor.98Tm
 + ___unnamed_114
 + ___unnamed_115
-+ _objc_msgSend$allKnownItems
-+ _objc_msgSend$allKnownItemsIsPartial
-+ _objc_msgSend$backgroundDownloadPipelineDepth
-+ _objc_msgSend$backgroundUploadPipelineDepth
-+ _objc_msgSend$donatedItems
-+ _objc_msgSend$donationProgress
-+ _objc_msgSend$dumpStaleSpotlightDomainsToDumper:providerFilter:
-+ _objc_msgSend$failureReason
-+ _objc_msgSend$fetchDonationProgressForBundles:completionHandler:
-+ _objc_msgSend$hardConcurrentBackgroundDownloadLimit
-+ _objc_msgSend$hardConcurrentBackgroundUploadLimit
-+ _objc_msgSend$indexName
-+ _objc_msgSend$itemsNeedingDonation
-+ _objc_msgSend$itemsNeedingDonationForRedonationRequests
-+ _objc_msgSend$partiallyDonatedItems
-+ _objc_msgSend$setBackgroundDownloadPipelineDepth:
-+ _objc_msgSend$setBackgroundUploadPipelineDepth:
-+ _objc_msgSend$softConcurrentBackgroundDownloadLimit
-+ _objc_msgSend$softConcurrentBackgroundUploadLimit
-+ _objc_msgSend$spotlightIndexName
-+ _objc_msgSend$startStringForFgColor:bgColor:attr:
-+ _objc_msgSend$status
-+ _objc_msgSend$stringForReset
-+ _objc_msgSend$underlyingError
 + _symbolic SaySo29CSDonationProgressQueryResultCGSg
 + _symbolic SaySo29CSDonationProgressQueryResultCGSgz_Xx
 + _symbolic _____XjSgSb______pSgIegnyg_ 18FileProviderDaemon26_DatabaseReadWriteAccessor_pRi0_s_XPXg s5ErrorP

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AdaptiveMesh.framework/AdaptiveMesh`
 
-```diff
+### Section Size Changes
 
- 14.0.0.0.0
--  __TEXT.__text: 0x33e5c
-+  __TEXT.__text: 0x33e9c
-   __TEXT.__lazy_helpers: 0x1a4
-   __TEXT.__objc_methlist: 0x14
-   __TEXT.__const: 0x10e0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x33e5c` | `0x33e9c` | **`+0x40`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__16vectorIDv4_fNS_9allocatorIS1_EEE6resizeEm : 284 -> 288
 ~ __ZNSt3__16vectorImNS_9allocatorImEEE6resizeEm : 284 -> 288

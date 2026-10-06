@@ -2,72 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/VFXAssets.framework/VFXAssets`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6974` | `0x3cb8` | **`-0x2cbc`** |
+| `__TEXT.__cstring` | `0x1184` | `0x6d4` | **`-0xab0`** |
+| `__DATA.__bss` | `0x7b0` | `—` | **`-0x7b0`** |
+| `__AUTH_CONST.__cfstring` | `0x1e0` | `—` | **`-0x1e0`** |
+| `__AUTH_CONST.__objc_const` | `0x240` | `0x80` | **`-0x1c0`** |
+| `__AUTH.__data` | `0x310` | `0x1a0` | **`-0x170`** |
+| `__DATA_CONST.__objc_selrefs` | `0x138` | `0x28` | **`-0x110`** |
+| `__DATA_CONST.__const` | `0x148` | `0xa0` | **`-0xa8`** |
+| `__AUTH.__objc_data` | `0x1a0` | `0x100` | **`-0xa0`** |
+| `__TEXT.__objc_methlist` | `0x98` | `—` | **`-0x98`** |
+| `__AUTH_CONST.__auth_got` | `0x290` | `0x200` | **`-0x90`** |
+| `__TEXT.__unwind_info` | `0x190` | `0x108` | **`-0x88`** |
+| `__DATA_CONST.__got` | `0x80` | `0x0` | **`-0x80`** |
+| `__AUTH_CONST.__const` | `0x60` | `—` | **`-0x60`** |
+| `__DATA_CONST.__vfx_script_tby` | `0x60` | `—` | **`-0x60`** |
+| `__TEXT.__const` | `0x182` | `0x142` | **`-0x40`** |
+| `__DATA_CONST.__objc_classlist` | `0x10` | `—` | **`-0x10`** |
+| `__DATA.__objc_ivar` | `0xc` | `—` | **`-0xc`** |
+| `__DATA_CONST.__objc_superrefs` | `0x8` | `—` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x6974
--  __TEXT.__objc_methlist: 0x98
--  __TEXT.__const: 0x182
--  __TEXT.__cstring: 0x1184
-+  __TEXT.__text: 0x3cb8
-+  __TEXT.__const: 0x142
-+  __TEXT.__cstring: 0x6d4
-   __TEXT.__constg_swiftt: 0x4c
-   __TEXT.__swift5_typeref: 0x2a
-   __TEXT.__swift5_fieldmd: 0x10
-   __TEXT.__swift5_types: 0x4
--  __TEXT.__unwind_info: 0x190
-+  __TEXT.__unwind_info: 0x108
-   __TEXT.__eh_frame: 0x78
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x148
--  __DATA_CONST.__objc_classlist: 0x10
-+  __DATA_CONST.__const: 0xa0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x138
--  __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__vfx_script_tby: 0x60
--  __DATA_CONST.__got: 0x80
--  __AUTH_CONST.__const: 0x60
--  __AUTH_CONST.__cfstring: 0x1e0
--  __AUTH_CONST.__objc_const: 0x240
--  __AUTH_CONST.__auth_got: 0x290
--  __AUTH.__objc_data: 0x1a0
--  __AUTH.__data: 0x310
--  __DATA.__objc_ivar: 0xc
-+  __DATA_CONST.__objc_selrefs: 0x28
-+  __DATA_CONST.__got: 0x0
-+  __AUTH_CONST.__objc_const: 0x80
-+  __AUTH_CONST.__auth_got: 0x200
-+  __AUTH.__objc_data: 0x100
-+  __AUTH.__data: 0x1a0
-   __DATA.__data: 0x58
-   __DATA.__objc_stublist: 0x8
--  __DATA.__bss: 0x7b0
-   __DATA.__common: 0x10
+-44.0.0.0.0
 -  - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/PrivateFrameworks/VFX.framework/VFX
++45.0.0.0.0
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 88
--  Symbols:   573
--  CStrings:  158
+-  Symbols:   290
+-  CStrings:  144
 +  Functions: 49
-+  Symbols:   154
++  Symbols:   129
 +  CStrings:  23
- 
-Sections:
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA.__objc_stublist : content changed
 Symbols:
 - +[FXSiriBloomLoader loadSiriBloomWorldWithStyle:options:]
 - +[FXSiriBloomView siriBloomViewWithStyle:options:]
@@ -220,32 +192,6 @@ Symbols:
 - _objc_alloc
 - _objc_claimAutoreleasedReturnValue
 - _objc_lookUpClass
-- _objc_msgSend$addSubview:
-- _objc_msgSend$asset
-- _objc_msgSend$assets
-- _objc_msgSend$childNodeWithAssetName:
-- _objc_msgSend$clearColor
-- _objc_msgSend$fileURLWithPath:
-- _objc_msgSend$floatValue
-- _objc_msgSend$initWithFrame:options:
-- _objc_msgSend$initWithSiriBloomViewWithStyle:options:
-- _objc_msgSend$isEqualToString:
-- _objc_msgSend$loadSiriBloomWorldWithStyle:options:
-- _objc_msgSend$numberWithFloat:
-- _objc_msgSend$pathForResource:ofType:
-- _objc_msgSend$prepareForRenderer:progressHandler:
-- _objc_msgSend$rootNode
-- _objc_msgSend$setAntialiasingMode:
-- _objc_msgSend$setAutoresizingMask:
-- _objc_msgSend$setBackgroundColor:
-- _objc_msgSend$setFrame:
-- _objc_msgSend$setStateNamed:
-- _objc_msgSend$setValue:forKey:
-- _objc_msgSend$setWorld:
-- _objc_msgSend$set_superSamplingFactor:
-- _objc_msgSend$stateName
-- _objc_msgSend$valueForKey:
-- _objc_msgSend$worldWithURL:options:error:
 - _objc_opt_class
 - _objc_release
 - _objc_release_x19
@@ -378,5 +324,4 @@ CStrings:
 - "vfx"
 - "worldCoordinates"
 - "worldNormal"
-
 ```

@@ -2,78 +2,23 @@
 
 > `/System/Library/Frameworks/CoreML.framework/CoreML`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_floatobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x704550` | `0x7045f0` | **`+0xa0`** |
+| `__TEXT.__gcc_except_tab` | `0x3aad0` | `0x3aac0` | **`-0x10`** |
+| `__TEXT.__cstring` | `0x2e290` | `0x2e28c` | **`-0x4`** |
+
+### Other Changes
 
 ```diff
 
 -3600.22.1.0.0
--  __TEXT.__text: 0x704550
 +3600.25.2.0.0
-+  __TEXT.__text: 0x7045f0
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__objc_methlist: 0x10198
-   __TEXT.__const: 0x51483
-   __TEXT.__dlopen_cstrs: 0x21e
--  __TEXT.__cstring: 0x2e290
-+  __TEXT.__cstring: 0x2e28c
-   __TEXT.__constg_swiftt: 0x1ec8
-   __TEXT.__swift5_typeref: 0x21f0
-   __TEXT.__swift5_builtin: 0x1e0
 
-   __TEXT.__swift5_capture: 0xf88
-   __TEXT.__swift_as_ret: 0x110
-   __TEXT.__oslogstring: 0xb288
--  __TEXT.__gcc_except_tab: 0x3aad0
-+  __TEXT.__gcc_except_tab: 0x3aac0
-   __TEXT.__ustring: 0x204
-   __TEXT.__unwind_info: 0x10470
-   __TEXT.__eh_frame: 0x54d4
-
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 16997
-   Symbols:   27243
 -  CStrings:  4769
 +  CStrings:  4768
- 
 Functions:
 ~ -[MLModelConfiguration copyWithZone:] : 776 -> 768
 ~ ___101-[MLE5ProgramLibrary createOperationForFunctionName:forceRespecialization:hasRangeShapeInputs:error:]_block_invoke : 2844 -> 2820

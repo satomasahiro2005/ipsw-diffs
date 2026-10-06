@@ -2,51 +2,26 @@
 
 > `/usr/lib/libVinylNonUpdater.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__weak_got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__weak_auth_got`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x59e2c` | `0x59f10` | **`+0xe4`** |
+| `__TEXT.__const` | `0x73cc` | `0x7424` | **`+0x58`** |
+| `__DATA.__data` | `0xc70` | `0xc98` | **`+0x28`** |
+| `__TEXT.__cstring` | `0xc9ea` | `0xca08` | **`+0x1e`** |
+| `__TEXT.__unwind_info` | `0x1f78` | `0x1f80` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
- 178.0.0.0.0
--  __TEXT.__text: 0x59e2c
-+  __TEXT.__text: 0x59f10
-   __TEXT.__init_offsets: 0x54
--  __TEXT.__const: 0x73cc
-+  __TEXT.__const: 0x7424
-   __TEXT.__gcc_except_tab: 0x4e94
--  __TEXT.__cstring: 0xc9ea
-+  __TEXT.__cstring: 0xca08
-   __TEXT.__oslogstring: 0x7c
--  __TEXT.__unwind_info: 0x1f78
-+  __TEXT.__unwind_info: 0x1f80
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x1e90
-   __DATA_CONST.__weak_got: 0x10
-
-   __AUTH_CONST.__cfstring: 0xcc0
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__auth_got: 0xe88
--  __DATA.__data: 0xc70
-+  __DATA.__data: 0xc98
-   __DATA.__bss: 0x4d8
-   __DATA.__common: 0x48
-   __DATA_DIRTY.__data: 0x28
-
-   - /usr/lib/libTelephonyCapabilities.dylib
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 1698
 -  Symbols:   3137
 -  CStrings:  1554
 +  Functions: 1701
 +  Symbols:   3148
 +  CStrings:  1555
- 
 Symbols:
 + ___der_key_last_mesa_auth
 + ___der_key_last_mesa_unlock

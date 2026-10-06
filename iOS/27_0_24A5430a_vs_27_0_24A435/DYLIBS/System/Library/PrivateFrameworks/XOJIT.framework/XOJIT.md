@@ -2,42 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/XOJIT.framework/XOJIT`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__orc_runtime` | `0x7b03b0` | `0xb89ca8` | **`+0x3d98f8`** |
+| `__TEXT.__text` | `0x256438` | `0x256dbc` | **`+0x984`** |
+| `__TEXT.__cstring` | `0x7bb02` | `0x7bb6c` | **`+0x6a`** |
+| `__DATA_CONST.__const` | `0x1ed20` | `0x1ed50` | **`+0x30`** |
+| `__TEXT.__const` | `0x1e7ac` | `0x1e7bc` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
- 84.0.0.0.0
--  __TEXT.__text: 0x256438
-+  __TEXT.__text: 0x256dbc
-   __TEXT.__init_offsets: 0x11c
--  __TEXT.__const: 0x1e7ac
-+  __TEXT.__const: 0x1e7bc
-   __TEXT.__oslogstring: 0x1cd
-   __TEXT.__swift5_typeref: 0x28a
--  __TEXT.__cstring: 0x7bb02
-+  __TEXT.__cstring: 0x7bb6c
-   __TEXT.__swift5_capture: 0x34
-   __TEXT.__swift5_reflstr: 0x252
-   __TEXT.__swift5_assocty: 0x28
-
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1ed20
-+  __DATA_CONST.__const: 0x1ed50
-   __DATA_CONST.__objc_classlist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x18
--  __DATA_CONST.__orc_runtime: 0x7b03b0
-+  __DATA_CONST.__orc_runtime: 0xb89ca8
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x8da8
-   __AUTH_CONST.__objc_const: 0x770
-
-   - /usr/lib/swift/libswiftos.dylib
-   Functions: 8524
-   Symbols:   10291
 -  CStrings:  19855
 +  CStrings:  19860
- 
 Functions:
 ~ __ZN5xojit18ReplacementManager18addWithReplacementERN4llvm3orc8JITDylibENSt3__110unique_ptrINS1_12MemoryBufferENS5_14default_deleteIS7_EEEE : 2020 -> 2040
 ~ __ZNK4llvm6detail12DenseSetImplIPNS_7jitlink5BlockENS_8DenseMapIS4_NS0_13DenseSetEmptyENS_12DenseMapInfoIS4_vEENS0_12DenseSetPairIS4_EEEES8_E5beginEv : 76 -> 72

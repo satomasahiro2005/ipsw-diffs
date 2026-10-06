@@ -2,24 +2,18 @@
 
 > `/System/Library/Frameworks/AudioToolbox.framework/libEmbeddedSystemAUs.dylib`
 
-```diff
+### Section Size Changes
 
- 1638.104.3.0.0
--  __TEXT.__text: 0xd1554
--  __TEXT.__realtime: 0x38a84
-+  __TEXT.__text: 0xd15a8
-+  __TEXT.__realtime: 0x38ad0
-   __TEXT.__const: 0xb344
-   __TEXT.__dlopen_cstrs: 0x2c1
--  __TEXT.__gcc_except_tab: 0x77d0
-+  __TEXT.__gcc_except_tab: 0x77d8
-   __TEXT.__cstring: 0xa0c9
-   __TEXT.__oslogstring: 0xc167
--  __TEXT.__unwind_info: 0x4700
-+  __TEXT.__unwind_info: 0x4708
-   __TEXT.__eh_frame: 0x108
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0xe70
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd1554` | `0xd15a8` | **`+0x54`** |
+| `__TEXT.__realtime` | `0x38a84` | `0x38ad0` | **`+0x4c`** |
+| `__TEXT.__gcc_except_tab` | `0x77d0` | `0x77d8` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x4700` | `0x4708` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN19AUMultiChannelMixer9MixerCore8SumInputEjP31AUMultiChannelMixerInputElementRK24CAStreamBasicDescriptionNS3_15CommonPCMFormatEP15AudioBufferListjffjb : 1712 -> 1716
 ~ __ZN7MixLoopI10MCF32toF32E9MonoUnityINS1_6AssignEEEvjPKfjPfj : 76 -> 84

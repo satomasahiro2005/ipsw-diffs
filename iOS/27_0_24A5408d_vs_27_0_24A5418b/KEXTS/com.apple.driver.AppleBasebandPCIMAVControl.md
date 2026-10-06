@@ -2,40 +2,30 @@
 
 > `com.apple.driver.AppleBasebandPCIMAVControl`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x52280` | `0x274b0` | **`-0x2add0`** |
+| `__TEXT.__cstring` | `0x75a6` | `0x1c48` | **`-0x595e`** |
+| `__DATA_CONST.__const` | `0x7dc0` | `0x7c38` | **`-0x188`** |
+| `__TEXT_EXEC.__auth_stubs` | `0x570` | `0x4f0` | **`-0x80`** |
+| `__DATA_CONST.__auth_got` | `0x2b8` | `0x278` | **`-0x40`** |
+| `__DATA_CONST.__kalloc_type` | `0xa80` | `0xa40` | **`-0x40`** |
+| `__DATA.__common` | `0x100` | `0xd8` | **`-0x28`** |
+| `__DATA_CONST.__got` | `0xb8` | `0xa8` | **`-0x10`** |
+| `__DATA_CONST.__mod_init_func` | `0xb68` | `0xb60` | **`-0x8`** |
+| `__DATA_CONST.__mod_term_func` | `0x38` | `0x30` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 960.0.0.0.0
-   __TEXT.__const: 0x2477
--  __TEXT.__cstring: 0x75a6
--  __TEXT_EXEC.__text: 0x52280
--  __TEXT_EXEC.__auth_stubs: 0x570
-+  __TEXT.__cstring: 0x1c48
-+  __TEXT_EXEC.__text: 0x274b0
-+  __TEXT_EXEC.__auth_stubs: 0x4f0
-   __DATA.__data: 0x140
--  __DATA.__common: 0x100
-+  __DATA.__common: 0xd8
-   __DATA.__bss: 0x17b0
--  __DATA_CONST.__mod_init_func: 0xb68
--  __DATA_CONST.__mod_term_func: 0x38
--  __DATA_CONST.__const: 0x7dc0
-+  __DATA_CONST.__mod_init_func: 0xb60
-+  __DATA_CONST.__mod_term_func: 0x30
-+  __DATA_CONST.__const: 0x7c38
-   __DATA_CONST.__weak_got: 0x530
-   __DATA_CONST.__kalloc_var: 0x5a0
--  __DATA_CONST.__kalloc_type: 0xa80
--  __DATA_CONST.__auth_got: 0x2b8
--  __DATA_CONST.__got: 0xb8
 -  Functions: 1100
-+  __DATA_CONST.__kalloc_type: 0xa40
-+  __DATA_CONST.__auth_got: 0x278
-+  __DATA_CONST.__got: 0xa8
 +  Functions: 1079
-   Symbols:   0
+
 -  CStrings:  794
 +  CStrings:  239
- 
 CStrings:
 + "121111121222121212111111111111111111111122122122221111111112222"
 - "\" _treToIOTbl[%d] == %p %s:%u\\n\" @%s:%d"

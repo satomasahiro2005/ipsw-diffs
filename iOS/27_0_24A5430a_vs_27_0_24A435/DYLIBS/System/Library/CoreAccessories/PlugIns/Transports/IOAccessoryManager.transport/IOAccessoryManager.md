@@ -2,68 +2,35 @@
 
 > `/System/Library/CoreAccessories/PlugIns/Transports/IOAccessoryManager.transport/IOAccessoryManager`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5d73c` | `0x611dc` | **`+0x3aa0`** |
+| `__TEXT.__oslogstring` | `0xbcbc` | `0xc94a` | **`+0xc8e`** |
+| `__TEXT.__cstring` | `0x5ffa` | `0x64f3` | **`+0x4f9`** |
+| `__AUTH_CONST.__cfstring` | `0x45c0` | `0x4760` | **`+0x1a0`** |
+| `__TEXT.__objc_methlist` | `0x2f94` | `0x30bc` | **`+0x128`** |
+| `__AUTH_CONST.__objc_const` | `0x4d10` | `0x4e30` | **`+0x120`** |
+| `__DATA_CONST.__const` | `0xf08` | `0x1020` | **`+0x118`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1f10` | `0x1ff8` | **`+0xe8`** |
+| `__TEXT.__unwind_info` | `0xec8` | `0xf18` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x8f4` | `0x938` | **`+0x44`** |
+| `__DATA.__objc_ivar` | `0x46c` | `0x484` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x4a8` | `0x4b8` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xb00` | `0xb08` | **`+0x8`** |
+| `__TEXT.__const` | `0x368` | `0x360` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 1216.2.2.0.0
--  __TEXT.__text: 0x5d73c
--  __TEXT.__objc_methlist: 0x2f94
--  __TEXT.__const: 0x368
--  __TEXT.__cstring: 0x5ffa
--  __TEXT.__oslogstring: 0xbcbc
--  __TEXT.__gcc_except_tab: 0x8f4
-+  __TEXT.__text: 0x611dc
-+  __TEXT.__objc_methlist: 0x30bc
-+  __TEXT.__const: 0x360
-+  __TEXT.__cstring: 0x64f3
-+  __TEXT.__oslogstring: 0xc94a
-+  __TEXT.__gcc_except_tab: 0x938
-   __TEXT.__ustring: 0x146
--  __TEXT.__unwind_info: 0xec8
-+  __TEXT.__unwind_info: 0xf18
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xf08
-+  __DATA_CONST.__const: 0x1020
-   __DATA_CONST.__objc_classlist: 0xb8
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x78
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1f10
-+  __DATA_CONST.__objc_selrefs: 0x1ff8
-   __DATA_CONST.__objc_superrefs: 0xa8
-   __DATA_CONST.__objc_arraydata: 0x158
--  __DATA_CONST.__got: 0x4a8
-+  __DATA_CONST.__got: 0x4b8
-   __AUTH_CONST.__const: 0x4a0
--  __AUTH_CONST.__cfstring: 0x45c0
--  __AUTH_CONST.__objc_const: 0x4d10
-+  __AUTH_CONST.__cfstring: 0x4760
-+  __AUTH_CONST.__objc_const: 0x4e30
-   __AUTH_CONST.__objc_arrayobj: 0xa8
-   __AUTH_CONST.__objc_intobj: 0xc0
-   __AUTH_CONST.__objc_dictobj: 0x78
--  __AUTH_CONST.__auth_got: 0xb00
-+  __AUTH_CONST.__auth_got: 0xb08
-   __AUTH.__objc_data: 0x1e0
--  __DATA.__objc_ivar: 0x46c
-+  __DATA.__objc_ivar: 0x484
-   __DATA.__data: 0x5e5
-   __DATA_DIRTY.__objc_data: 0x550
-   __DATA_DIRTY.__data: 0x88
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libsysdiagnose.dylib
 -  Functions: 1950
--  Symbols:   3615
+-  Symbols:   2846
 -  CStrings:  1710
 +  Functions: 1992
-+  Symbols:   3698
++  Symbols:   2897
 +  CStrings:  1773
- 
 Symbols:
 + -[ACCTransportIOAccessoryAuthCP _handleBusyComponentAuth]
 + -[ACCTransportIOAccessoryManager _clearOOBPairingEarlyInfo]
@@ -121,38 +88,6 @@ Symbols:
 + _kCFACCUserDefaultsKey_BLEPairingIgnoreZeroEarlyInfo
 + _kCFACCUserDefaultsKey_PlatformIDOverride
 + _kCFACCUserDefaultsKey_TestCreateBLEPairingOnInductive
-+ _objc_msgSend$_blePairingTransportTypeForConnectionType:
-+ _objc_msgSend$_clearOOBPairingEarlyInfo
-+ _objc_msgSend$_createBLEPairingEndpointForManager:publish:
-+ _objc_msgSend$_handleBusyComponentAuth
-+ _objc_msgSend$_handleInductiveOOBPairingTransmitData:forEndpointUUID:manager:
-+ _objc_msgSend$_handleOOBPairingEarlyInfo:
-+ _objc_msgSend$_invalidateAllAccessoryInfoFields
-+ _objc_msgSend$_managerForInductiveOOBPairingEndpointUUID:
-+ _objc_msgSend$_processOOBPairingAccessoryInfoDataProperty
-+ _objc_msgSend$_processOOBPairingEarlyInfo
-+ _objc_msgSend$_processOOBPairingEarlyInfoChange
-+ _objc_msgSend$_processOOBPairingProperty:label:existingData:messageID:completion:
-+ _objc_msgSend$anyObject
-+ _objc_msgSend$authenticateRCAMWithChallenge:completionHandler:updateRegistry:componentIndex:
-+ _objc_msgSend$bIsShuttingDown
-+ _objc_msgSend$deferredAuthChallenge
-+ _objc_msgSend$endpointForConnectionWithUUID:forProtocol:
-+ _objc_msgSend$handleOOBPairingEarlyInfoNotification:
-+ _objc_msgSend$initWithBytes:length:
-+ _objc_msgSend$isTransientPortLevelAccIDDetachForConnectionType:inductiveDeviceType:oobPairingEarlyInfoEndpoint:
-+ _objc_msgSend$oobPairingAccessoryData
-+ _objc_msgSend$oobPairingAccessoryInfo
-+ _objc_msgSend$oobPairingEarlyInfo
-+ _objc_msgSend$oobPairingEarlyInfoBDADDR
-+ _objc_msgSend$oobPairingEarlyInfoEndpointUUID
-+ _objc_msgSend$oobPairingEarlyInfoSessionState
-+ _objc_msgSend$setOobPairingAccessoryData:
-+ _objc_msgSend$setOobPairingAccessoryInfo:
-+ _objc_msgSend$setOobPairingEarlyInfo:
-+ _objc_msgSend$setOobPairingEarlyInfoBDADDR:
-+ _objc_msgSend$setOobPairingEarlyInfoEndpointUUID:
-+ _objc_msgSend$setOobPairingEarlyInfoSessionState:
 - GCC_except_table104
 - GCC_except_table108
 - GCC_except_table39

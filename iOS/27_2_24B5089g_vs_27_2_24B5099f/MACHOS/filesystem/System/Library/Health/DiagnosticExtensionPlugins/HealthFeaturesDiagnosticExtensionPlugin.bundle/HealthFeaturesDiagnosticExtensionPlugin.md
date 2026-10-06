@@ -2,22 +2,32 @@
 
 > `/System/Library/Health/DiagnosticExtensionPlugins/HealthFeaturesDiagnosticExtensionPlugin.bundle/HealthFeaturesDiagnosticExtensionPlugin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4550` | `0x4554` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
 - `__TEXT.__constg_swiftt`
-- `__TEXT.__unwind_info`
 - `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -7027.1.45.2.4
--  __TEXT.__text: 0x4368
 +7027.1.54.2.3
-+  __TEXT.__text: 0x436c
-   __TEXT.__auth_stubs: 0x6b0
-   __TEXT.__objc_stubs: 0x480
-   __TEXT.__objc_methlist: 0x94
 Functions:
-~ sub_40cc : 108 -> 112
+~ sub_427c : 108 -> 112
 ```

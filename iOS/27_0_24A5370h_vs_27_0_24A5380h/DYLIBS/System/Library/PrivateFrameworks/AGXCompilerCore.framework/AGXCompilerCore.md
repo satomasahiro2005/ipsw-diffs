@@ -2,60 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/AGXCompilerCore.framework/AGXCompilerCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2653e8` | `0x268ae8` | **`+0x3700`** |
+| `__AUTH_CONST.__const` | `0x762b8` | `0x77988` | **`+0x16d0`** |
+| `__TEXT.__cstring` | `0x1c226` | `0x1c4c2` | **`+0x29c`** |
+| `__TEXT.__oslogstring` | `0x5b9` | `0x5fc` | **`+0x43`** |
+| `__TEXT.__const` | `0x3a3d8` | `0x3a408` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x7b70` | `0x7b98` | **`+0x28`** |
+| `__AUTH_CONST.__auth_got` | `0x1390` | `0x13a0` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x4748` | `0x4758` | **`+0x10`** |
+| `__AUTH_CONST.__weak_auth_got` | `0xe0` | `0xe8` | **`+0x8`** |
+| `__DATA.__bss` | `0x4538` | `0x4540` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2653e8
--  __TEXT.__const: 0x3a3d8
--  __TEXT.__cstring: 0x1c226
--  __TEXT.__oslogstring: 0x5b9
--  __TEXT.__unwind_info: 0x4748
-+  __TEXT.__text: 0x268ae8
-+  __TEXT.__const: 0x3a408
-+  __TEXT.__cstring: 0x1c4c2
-+  __TEXT.__oslogstring: 0x5fc
-+  __TEXT.__unwind_info: 0x4758
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0x7b70
-+  __DATA_CONST.__const: 0x7b98
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
-   __DATA_CONST.__objc_selrefs: 0x40
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x762b8
-+  __AUTH_CONST.__const: 0x77988
-   __AUTH_CONST.__cfstring: 0xa0
--  __AUTH_CONST.__weak_auth_got: 0xe0
--  __AUTH_CONST.__auth_got: 0x1390
-+  __AUTH_CONST.__weak_auth_got: 0xe8
-+  __AUTH_CONST.__auth_got: 0x13a0
-   __AUTH.__data: 0x50
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x30
-   __DATA.__data: 0x80
--  __DATA.__bss: 0x4538
-+  __DATA.__bss: 0x4540
-   __DATA_DIRTY.__bss: 0xc00
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+-360.27.3.1.0
++360.31.1.0.0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 8160
--  Symbols:   21413
--  CStrings:  4655
+-  Symbols:   11041
+-  CStrings:  4649
 +  Functions: 8169
-+  Symbols:   21432
-+  CStrings:  4674
- 
-Sections:
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__thread_vars : content changed
++  Symbols:   11053
++  CStrings:  4668
 Symbols:
 + __ZL41wrapper_sampler_address_modes_global_name
 + __ZN14AGCLLVMBuilder22getSamplerAddressModeSEPN4llvm5ValueE
@@ -423,5 +397,4 @@ CStrings:
 - "sparse_tier1_done"
 - "sparse_tier1_merge"
 - "sparse_tier1_valid"
-
 ```

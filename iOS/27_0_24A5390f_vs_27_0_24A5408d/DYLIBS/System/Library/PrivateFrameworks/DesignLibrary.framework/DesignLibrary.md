@@ -2,107 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/DesignLibrary.framework/DesignLibrary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e409c` | `0x1f4f80` | **`+0x10ee4`** |
+| `__AUTH_CONST.__const` | `0x143c8` | `0x160c8` | **`+0x1d00`** |
+| `__TEXT.__cstring` | `0x1c61` | `0x26e1` | **`+0xa80`** |
+| `__TEXT.__const` | `0x24b04` | `0x25444` | **`+0x940`** |
+| `__DATA.__bss` | `0x2f240` | `0x2fa60` | **`+0x820`** |
+| `__TEXT.__swift5_reflstr` | `0x7a40` | `0x7ec7` | **`+0x487`** |
+| `__TEXT.__swift5_fieldmd` | `0xa424` | `0xa8a0` | **`+0x47c`** |
+| `__TEXT.__swift5_capture` | `0xb54` | `0xe48` | **`+0x2f4`** |
+| `__TEXT.__unwind_info` | `0x5e40` | `0x60f0` | **`+0x2b0`** |
+| `__AUTH_CONST.__objc_const` | `0x2f18` | `0x31a0` | **`+0x288`** |
+| `__AUTH.__data` | `0x52d0` | `0x54d0` | **`+0x200`** |
+| `__TEXT.__constg_swiftt` | `0xacd8` | `0xaeb8` | **`+0x1e0`** |
+| `__TEXT.__swift5_typeref` | `0x12b2e` | `0x12c3a` | **`+0x10c`** |
+| `__AUTH.__objc_data` | `0x490` | `0x588` | **`+0xf8`** |
+| `__DATA.__data` | `0x8b50` | `0x8c38` | **`+0xe8`** |
+| `__TEXT.__eh_frame` | `0x1378` | `0x1458` | **`+0xe0`** |
+| `__AUTH_CONST.__auth_got` | `0x2760` | `0x2818` | **`+0xb8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xd00` | `0xd70` | **`+0x70`** |
+| `__DATA_CONST.__got` | `0x1068` | `0x10d0` | **`+0x68`** |
+| `__DATA_DIRTY.__common` | `0x1548` | `0x1588` | **`+0x40`** |
+| `__TEXT.__swift5_proto` | `0x1934` | `0x1974` | **`+0x40`** |
+| `__TEXT.__swift5_types` | `0xc48` | `0xc80` | **`+0x38`** |
+| `__TEXT.__objc_methlist` | `0x11b8` | `0x11e8` | **`+0x30`** |
+| `__DATA.__common` | `0x588` | `0x5b0` | **`+0x28`** |
+| `__TEXT.__swift5_assocty` | `0x3e88` | `0x3e60` | **`-0x28`** |
+| `__TEXT.__oslogstring` | `0x9a6` | `0x9c6` | **`+0x20`** |
+| `__AUTH.__thread_vars` | `0x30` | `0x48` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x244` | `0x258` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0xc0` | `0xd0` | **`+0x10`** |
+| `__TEXT.__swift5_mpenum` | `0x94` | `0x9c` | **`+0x8`** |
+| `__AUTH.__thread_bss` | `0x4` | `0x8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -8.0.79.1.101
--  __TEXT.__text: 0x1e409c
--  __TEXT.__objc_methlist: 0x11b8
--  __TEXT.__const: 0x24b04
--  __TEXT.__cstring: 0x1c61
--  __TEXT.__swift5_typeref: 0x12b2e
--  __TEXT.__swift5_capture: 0xb54
--  __TEXT.__constg_swiftt: 0xacd8
--  __TEXT.__swift5_reflstr: 0x7a40
--  __TEXT.__swift5_fieldmd: 0xa424
--  __TEXT.__swift5_builtin: 0x244
--  __TEXT.__swift5_assocty: 0x3e88
 +8.0.84.1.102
-+  __TEXT.__text: 0x1f4f80
-+  __TEXT.__objc_methlist: 0x11e8
-+  __TEXT.__const: 0x25444
-+  __TEXT.__cstring: 0x26e1
-+  __TEXT.__swift5_typeref: 0x12c3a
-+  __TEXT.__swift5_capture: 0xe48
-+  __TEXT.__constg_swiftt: 0xaeb8
-+  __TEXT.__swift5_reflstr: 0x7ec7
-+  __TEXT.__swift5_fieldmd: 0xa8a0
-+  __TEXT.__swift5_builtin: 0x258
-+  __TEXT.__swift5_assocty: 0x3e60
-   __TEXT.__swift5_protos: 0x58
--  __TEXT.__swift5_proto: 0x1934
--  __TEXT.__swift5_types: 0xc48
--  __TEXT.__swift5_mpenum: 0x94
--  __TEXT.__oslogstring: 0x9a6
-+  __TEXT.__swift5_proto: 0x1974
-+  __TEXT.__swift5_types: 0xc80
-+  __TEXT.__swift5_mpenum: 0x9c
-+  __TEXT.__oslogstring: 0x9c6
-   __TEXT.__swift_as_entry: 0x1c
-   __TEXT.__swift_as_ret: 0x1c
-   __TEXT.__swift_as_cont: 0x44
-   __TEXT.__swift5_types2: 0xc
--  __TEXT.__unwind_info: 0x5e40
--  __TEXT.__eh_frame: 0x1378
-+  __TEXT.__unwind_info: 0x60f0
-+  __TEXT.__eh_frame: 0x1458
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x2d8
--  __DATA_CONST.__objc_classlist: 0xc0
-+  __DATA_CONST.__objc_classlist: 0xd0
-   __DATA_CONST.__objc_protolist: 0x160
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xd00
-+  __DATA_CONST.__objc_selrefs: 0xd70
-   __DATA_CONST.__objc_protorefs: 0xc0
-   __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__got: 0x1068
--  __AUTH_CONST.__const: 0x143c8
-+  __DATA_CONST.__got: 0x10d0
-+  __AUTH_CONST.__const: 0x160c8
-   __AUTH_CONST.__cfstring: 0x900
--  __AUTH_CONST.__objc_const: 0x2f18
--  __AUTH_CONST.__auth_got: 0x2760
--  __AUTH.__objc_data: 0x490
--  __AUTH.__data: 0x52d0
--  __AUTH.__thread_vars: 0x30
-+  __AUTH_CONST.__objc_const: 0x31a0
-+  __AUTH_CONST.__auth_got: 0x2818
-+  __AUTH.__objc_data: 0x588
-+  __AUTH.__data: 0x54d0
-+  __AUTH.__thread_vars: 0x48
-   __AUTH.__thread_data: 0x1
--  __AUTH.__thread_bss: 0x4
-+  __AUTH.__thread_bss: 0x8
-   __DATA.__objc_ivar: 0x4
--  __DATA.__data: 0x8b50
--  __DATA.__bss: 0x2f240
--  __DATA.__common: 0x588
-+  __DATA.__data: 0x8c38
-+  __DATA.__bss: 0x2fa60
-+  __DATA.__common: 0x5b0
-   __DATA_DIRTY.__objc_data: 0x160
-   __DATA_DIRTY.__data: 0x21c8
-   __DATA_DIRTY.__bss: 0x3aa0
--  __DATA_DIRTY.__common: 0x1548
-+  __DATA_DIRTY.__common: 0x1588
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreText.framework/CoreText
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10623
--  Symbols:   4923
+-  Symbols:   4752
 -  CStrings:  264
 +  Functions: 11040
-+  Symbols:   5021
++  Symbols:   4837
 +  CStrings:  348
- 
 Symbols:
 + _MGGetProductType
 + _NSDefaultRunLoopMode
@@ -179,19 +127,6 @@ Symbols:
 + _notify_cancel
 + _notify_get_state
 + _notify_register_dispatch
-+ _objc_msgSend$cancel
-+ _objc_msgSend$currentRunLoop
-+ _objc_msgSend$currentThread
-+ _objc_msgSend$displayLinkWithTarget:selector:
-+ _objc_msgSend$initWithBlock:
-+ _objc_msgSend$isCancelled
-+ _objc_msgSend$nextDrawable
-+ _objc_msgSend$runMode:beforeDate:
-+ _objc_msgSend$setPreferredFrameLatency:
-+ _objc_msgSend$setQualityOfService:
-+ _objc_msgSend$setType:
-+ _objc_msgSend$start
-+ _objc_msgSend$targetTimestamp
 + _swift_unknownObjectWeakAssign
 + _symbolic Say_____G 13DesignLibrary21GlassMaterialProviderV13ParameterItem021_3A6E0004B9F4F41BCBD3H10C83D564DF4LLV
 + _symbolic Say_____G 13DesignLibrary21GlassMaterialProviderV15ParameterValuesV5Entry021_3A6E0004B9F4F41BCBD3I10C83D564DF4LLV

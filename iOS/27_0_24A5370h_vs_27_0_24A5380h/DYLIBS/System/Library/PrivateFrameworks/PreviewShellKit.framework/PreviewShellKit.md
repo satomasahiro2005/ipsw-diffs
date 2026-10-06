@@ -2,93 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/PreviewShellKit.framework/PreviewShellKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xeecc0` | `0xf7908` | **`+0x8c48`** |
+| `__TEXT.__eh_frame` | `0x843c` | `0x8f54` | **`+0xb18`** |
+| `__TEXT.__unwind_info` | `0x3b98` | `0x3d90` | **`+0x1f8`** |
+| `__TEXT.__cstring` | `0x47f4` | `0x46d4` | **`-0x120`** |
+| `__TEXT.__const` | `0xb3a4` | `0xb484` | **`+0xe0`** |
+| `__AUTH_CONST.__const` | `0x6f18` | `0x6e78` | **`-0xa0`** |
+| `__TEXT.__swift_as_cont` | `0x5d8` | `0x678` | **`+0xa0`** |
+| `__AUTH.__data` | `0x2350` | `0x23e0` | **`+0x90`** |
+| `__TEXT.__swift_as_ret` | `0x2a4` | `0x2f8` | **`+0x54`** |
+| `__TEXT.__swift5_typeref` | `0x5012` | `0x5062` | **`+0x50`** |
+| `__TEXT.__swift5_fieldmd` | `0x22dc` | `0x2310` | **`+0x34`** |
+| `__DATA.__data` | `0x3660` | `0x3690` | **`+0x30`** |
+| `__TEXT.__swift_as_entry` | `0x278` | `0x2a8` | **`+0x30`** |
+| `__TEXT.__constg_swiftt` | `0x2f40` | `0x2f68` | **`+0x28`** |
+| `__TEXT.__swift5_capture` | `0x18f4` | `0x18cc` | **`-0x28`** |
+| `__AUTH_CONST.__objc_const` | `0x31f0` | `0x31d0` | **`-0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x1859` | `0x1879` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x2060` | `0x2078` | **`+0x18`** |
+| `__TEXT.__oslogstring` | `0x2c37` | `0x2c47` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x30c` | `0x310` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xeecc0
-+  __TEXT.__text: 0xf7908
-   __TEXT.__objc_methlist: 0x6b4
--  __TEXT.__const: 0xb3a4
--  __TEXT.__cstring: 0x47f4
--  __TEXT.__swift5_typeref: 0x5012
--  __TEXT.__swift5_reflstr: 0x1859
-+  __TEXT.__const: 0xb484
-+  __TEXT.__cstring: 0x46d4
-+  __TEXT.__swift5_typeref: 0x5062
-+  __TEXT.__swift5_reflstr: 0x1879
-   __TEXT.__swift5_assocty: 0x3c8
--  __TEXT.__constg_swiftt: 0x2f40
--  __TEXT.__swift5_fieldmd: 0x22dc
-+  __TEXT.__constg_swiftt: 0x2f68
-+  __TEXT.__swift5_fieldmd: 0x2310
-   __TEXT.__swift5_builtin: 0xb4
--  __TEXT.__swift5_capture: 0x18f4
-+  __TEXT.__swift5_capture: 0x18cc
-   __TEXT.__swift5_proto: 0x570
--  __TEXT.__swift5_types: 0x30c
--  __TEXT.__oslogstring: 0x2c37
--  __TEXT.__swift_as_entry: 0x278
--  __TEXT.__swift_as_ret: 0x2a4
--  __TEXT.__swift_as_cont: 0x5d8
-+  __TEXT.__swift5_types: 0x310
-+  __TEXT.__oslogstring: 0x2c47
-+  __TEXT.__swift_as_entry: 0x2a8
-+  __TEXT.__swift_as_ret: 0x2f8
-+  __TEXT.__swift_as_cont: 0x678
-   __TEXT.__swift5_mpenum: 0x5c
-   __TEXT.__swift5_protos: 0x9c
--  __TEXT.__unwind_info: 0x3b98
--  __TEXT.__eh_frame: 0x843c
-+  __TEXT.__unwind_info: 0x3d90
-+  __TEXT.__eh_frame: 0x8f54
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-24.0.35.0.0
++24.0.37.0.0
 
-   __DATA_CONST.__objc_protorefs: 0x58
-   __DATA_CONST.__objc_superrefs: 0x20
-   __DATA_CONST.__got: 0xc80
--  __AUTH_CONST.__const: 0x6f18
--  __AUTH_CONST.__objc_const: 0x31f0
--  __AUTH_CONST.__auth_got: 0x2060
-+  __AUTH_CONST.__const: 0x6e78
-+  __AUTH_CONST.__objc_const: 0x31d0
-+  __AUTH_CONST.__auth_got: 0x2078
-   __AUTH.__objc_data: 0x8f0
--  __AUTH.__data: 0x2350
-+  __AUTH.__data: 0x23e0
-   __DATA.__objc_ivar: 0x10
--  __DATA.__data: 0x3660
-+  __DATA.__data: 0x3690
-   __DATA.__objc_stublist: 0x18
-   __DATA.__bss: 0xa610
-   __DATA.__common: 0x58
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4559
 +  Functions: 4618
-   Symbols:   2817
+
 -  CStrings:  493
 +  CStrings:  484
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__objc_stublist : content changed
 Symbols:
 + _symbolic SDy_____ScCy___________pGG 18PreviewsServicesUI15SceneUpdateSeedV AA0dE6TimingO s5ErrorP
 + _symbolic SDyxSayScCy______p______pGGG 15PreviewShellKit0A6CanvasP s5ErrorP
@@ -136,5 +86,4 @@ CStrings:
 - "init(providerBox:scene:didUpdate:)"
 - "performHandshake(for:with:)"
 - "resolveHandshake(_:with:)"
-
 ```

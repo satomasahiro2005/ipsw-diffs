@@ -2,33 +2,25 @@
 
 > `com.apple.driver.AppleDisplayCrossbar`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x3d3bc` | `0x3d704` | **`+0x348`** |
+| `__TEXT.__cstring` | `0x4cc7` | `0x4de0` | **`+0x119`** |
+| `__DATA_CONST.__const` | `0x10bb8` | `0x10bc8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -417.0.3.0.0
-+417.0.4.0.0
-   __TEXT.__const: 0x1a4
--  __TEXT.__cstring: 0x4cc7
-+  __TEXT.__cstring: 0x4de0
-   __TEXT.__os_log: 0x689b
--  __TEXT_EXEC.__text: 0x3d3bc
-+  __TEXT_EXEC.__text: 0x3d704
-   __TEXT_EXEC.__auth_stubs: 0x630
-   __DATA.__data: 0xc4
-   __DATA.__common: 0x4e8
-   __DATA_CONST.__mod_init_func: 0xf0
-   __DATA_CONST.__mod_term_func: 0xf0
--  __DATA_CONST.__const: 0x10bb8
-+  __DATA_CONST.__const: 0x10bc8
-   __DATA_CONST.__kalloc_type: 0x7c0
-   __DATA_CONST.__kalloc_var: 0xa0
-   __DATA_CONST.__auth_got: 0x318
-   __DATA_CONST.__got: 0xf8
 -  Functions: 2159
++417.0.4.0.0
 +  Functions: 2160
-   Symbols:   0
+
 -  CStrings:  814
 +  CStrings:  821
- 
 CStrings:
 + "auto connect must be disabled for seamless update\n"
 + "disconnect ufp(%d,%d) from dfp(%d,%d)\n"

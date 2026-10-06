@@ -2,35 +2,25 @@
 
 > `/usr/lib/libfire9.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__const`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__DATA.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x301c60` | `0x301f94` | **`+0x334`** |
+| `__TEXT.__const` | `0x9f698` | `0x9f6e8` | **`+0x50`** |
+| `__TEXT.__cstring` | `0x1bd8d` | `0x1bd44` | **`-0x49`** |
+
+### Other Changes
 
 ```diff
 
 -28.0.0.0.0
--  __TEXT.__text: 0x301c60
--  __TEXT.__const: 0x9f698
--  __TEXT.__cstring: 0x1bd8d
 +30.0.0.0.0
-+  __TEXT.__text: 0x301f94
-+  __TEXT.__const: 0x9f6e8
-+  __TEXT.__cstring: 0x1bd44
-   __TEXT.__oslogstring: 0x1938e
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0xaa00
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   Functions: 7594
 -  Symbols:   8826
 -  CStrings:  5184
 +  Symbols:   8823
 +  CStrings:  5180
- 
 Symbols:
 + __ZN7BlueFin10GlDineCtrl23ChipData_GRABSNQ_669867EPvs
 + __ZN7BlueFin11GlDbgEngine23ChipData_GRABSNQ_669867EPvs

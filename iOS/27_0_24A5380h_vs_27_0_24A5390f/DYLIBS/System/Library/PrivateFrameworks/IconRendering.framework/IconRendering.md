@@ -2,115 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/IconRendering.framework/IconRendering`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8b798` | `0x8d9f8` | **`+0x2260`** |
+| `__TEXT.__swift5_reflstr` | `0x1f66` | `0x20d6` | **`+0x170`** |
+| `__TEXT.__cstring` | `0x1415` | `0x1535` | **`+0x120`** |
+| `__TEXT.__swift5_fieldmd` | `0x3064` | `0x314c` | **`+0xe8`** |
+| `__TEXT.__eh_frame` | `0x26f8` | `0x27b0` | **`+0xb8`** |
+| `__DATA_DIRTY.__bss` | `0x2680` | `0x2600` | **`-0x80`** |
+| `__AUTH_CONST.__const` | `0x6758` | `0x66e0` | **`-0x78`** |
+| `__TEXT.__constg_swiftt` | `0x1ecc` | `0x1e8c` | **`-0x40`** |
+| `__TEXT.__const` | `0xaae8` | `0xaac8` | **`-0x20`** |
+| `__TEXT.__swift5_capture` | `0x350` | `0x334` | **`-0x1c`** |
+| `__TEXT.__swift5_typeref` | `0x21ae` | `0x219c` | **`-0x12`** |
+| `__AUTH_CONST.__auth_got` | `0xea0` | `0xe98` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x438` | `0x440` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1dc8` | `0x1dd0` | **`+0x8`** |
+| `__DATA_DIRTY.__common` | `0x110` | `0x108` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x23a0` | `0x2398` | **`-0x8`** |
+| `__TEXT.__swift5_proto` | `0x8b4` | `0x8b0` | **`-0x4`** |
+| `__TEXT.__swift5_types` | `0x32c` | `0x328` | **`-0x4`** |
+
+### Other Changes
 
 ```diff
 
 -115.0.0.0.0
--  __TEXT.__text: 0x8b798
 +116.0.0.0.0
-+  __TEXT.__text: 0x8d9f8
-   __TEXT.__objc_methlist: 0x2948
--  __TEXT.__const: 0xaae8
--  __TEXT.__swift5_typeref: 0x21ae
--  __TEXT.__constg_swiftt: 0x1ecc
-+  __TEXT.__const: 0xaac8
-+  __TEXT.__swift5_typeref: 0x219c
-+  __TEXT.__constg_swiftt: 0x1e8c
-   __TEXT.__swift5_builtin: 0x244
--  __TEXT.__swift5_reflstr: 0x1f66
--  __TEXT.__swift5_fieldmd: 0x3064
-+  __TEXT.__swift5_reflstr: 0x20d6
-+  __TEXT.__swift5_fieldmd: 0x314c
-   __TEXT.__swift5_assocty: 0x360
--  __TEXT.__cstring: 0x1415
-+  __TEXT.__cstring: 0x1535
-   __TEXT.__oslogstring: 0xbac
--  __TEXT.__swift5_capture: 0x350
--  __TEXT.__swift5_proto: 0x8b4
--  __TEXT.__swift5_types: 0x32c
-+  __TEXT.__swift5_capture: 0x334
-+  __TEXT.__swift5_proto: 0x8b0
-+  __TEXT.__swift5_types: 0x328
-   __TEXT.__swift5_protos: 0x18
-   __TEXT.__swift_as_entry: 0x4c
-   __TEXT.__swift_as_ret: 0x40
-   __TEXT.__swift_as_cont: 0x7c
-   __TEXT.__swift5_mpenum: 0x120
--  __TEXT.__unwind_info: 0x23a0
--  __TEXT.__eh_frame: 0x26f8
-+  __TEXT.__unwind_info: 0x2398
-+  __TEXT.__eh_frame: 0x27b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0xd0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1dc8
-+  __DATA_CONST.__objc_selrefs: 0x1dd0
-   __DATA_CONST.__objc_protorefs: 0x68
--  __DATA_CONST.__got: 0x438
--  __AUTH_CONST.__const: 0x6758
-+  __DATA_CONST.__got: 0x440
-+  __AUTH_CONST.__const: 0x66e0
-   __AUTH_CONST.__objc_const: 0x4598
--  __AUTH_CONST.__auth_got: 0xea0
-+  __AUTH_CONST.__auth_got: 0xe98
-   __AUTH.__objc_data: 0x480
-   __AUTH.__data: 0x20
-   __DATA.__data: 0x1b88
-
-   __DATA.__common: 0x121
-   __DATA_DIRTY.__objc_data: 0x640
-   __DATA_DIRTY.__data: 0x1490
--  __DATA_DIRTY.__bss: 0x2680
--  __DATA_DIRTY.__common: 0x110
-+  __DATA_DIRTY.__bss: 0x2600
-+  __DATA_DIRTY.__common: 0x108
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreImage.framework/CoreImage
-
-   - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
-   - /System/Library/PrivateFrameworks/CoreSVG.framework/CoreSVG
-   - /System/Library/PrivateFrameworks/CoreUI.framework/CoreUI
 -  - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/RenderBox.framework/RenderBox
-   - /System/Library/PrivateFrameworks/TextureIO.framework/TextureIO
-   - /usr/lib/libMobileGestalt.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3914
--  Symbols:   1804
+-  Symbols:   1557
 -  CStrings:  206
 +  Functions: 3955
-+  Symbols:   1802
++  Symbols:   1554
 +  CStrings:  213
- 
 Symbols:
 + _RBImageRendererSynchronousRendering
 + ___swift_memcpy129_8
@@ -130,7 +59,6 @@ Symbols:
 + _associated conformance 13IconRendering22ICRRenderingParametersV8OutlinesV6SizingO28PixelRoundedPointsCodingKeys33_98A1FB5E3DCF01EF6F78F94953B55A3BLLOs0J3KeyAAs23CustomStringConvertible
 + _associated conformance 13IconRendering22ICRRenderingParametersV8OutlinesV6SizingO28PixelRoundedPointsCodingKeys33_98A1FB5E3DCF01EF6F78F94953B55A3BLLOs0J3KeyAAs28CustomDebugStringConvertible
 + _associated conformance 13IconRendering22ICRRenderingParametersV8OutlinesV6SizingOSHAASQ
-+ _objc_msgSend$addColorMultiplyFilterWithColor:
 + _symbolic _____ 13IconRendering22ICRRenderingParametersV8OutlinesV6SizingO
 + _symbolic _____ 13IconRendering22ICRRenderingParametersV8OutlinesV6SizingO10CodingKeys33_98A1FB5E3DCF01EF6F78F94953B55A3BLLO
 + _symbolic _____ 13IconRendering22ICRRenderingParametersV8OutlinesV6SizingO16PixelsCodingKeys33_98A1FB5E3DCF01EF6F78F94953B55A3BLLO

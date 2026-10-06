@@ -2,62 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/SpotlightIndex.framework/SpotlightIndex`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4f6934` | `0x4f6a6c` | **`+0x138`** |
+| `__TEXT.__cstring` | `0x36144` | `0x36123` | **`-0x21`** |
+| `__AUTH_CONST.__const` | `0xa290` | `0xa2b0` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0xa400` | `0xa420` | **`+0x20`** |
+| `__DATA_DIRTY.__bss` | `0x3a948` | `0x3a968` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x6a30` | `0x6a40` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -2459.102.0.0.0
--  __TEXT.__text: 0x4f6934
 +2459.105.0.0.0
-+  __TEXT.__text: 0x4f6a6c
-   __TEXT.__objc_methlist: 0xb04
-   __TEXT.__const: 0xb203
--  __TEXT.__cstring: 0x36144
-+  __TEXT.__cstring: 0x36123
-   __TEXT.__gcc_except_tab: 0x3828
-   __TEXT.__oslogstring: 0x27558
-   __TEXT.__ustring: 0x13f6
-   __TEXT.__dlopen_cstrs: 0x150
-   __TEXT.__dof_mds: 0x29b
--  __TEXT.__unwind_info: 0x6a30
-+  __TEXT.__unwind_info: 0x6a40
-   __TEXT.__eh_frame: 0x220
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xa400
-+  __DATA_CONST.__const: 0xa420
-   __DATA_CONST.__objc_classlist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xc48
-   __DATA_CONST.__objc_superrefs: 0x70
-   __DATA_CONST.__objc_arraydata: 0x280
-   __DATA_CONST.__got: 0x418
--  __AUTH_CONST.__const: 0xa290
-+  __AUTH_CONST.__const: 0xa2b0
-   __AUTH_CONST.__cfstring: 0xf140
-   __AUTH_CONST.__objc_const: 0x1508
-   __AUTH_CONST.__weak_auth_got: 0x28
 
-   __DATA.__bss: 0x3660
-   __DATA_DIRTY.__objc_data: 0x3c0
-   __DATA_DIRTY.__data: 0x590
--  __DATA_DIRTY.__bss: 0x3a948
-+  __DATA_DIRTY.__bss: 0x3a968
-   __DATA_DIRTY.__common: 0x2402c
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 8483
--  Symbols:   12039
+-  Symbols:   11704
 -  CStrings:  10420
 +  Functions: 8484
-+  Symbols:   12045
++  Symbols:   11710
 +  CStrings:  10419
- 
 Symbols:
 + GCC_except_table6721
 + GCC_except_table6825

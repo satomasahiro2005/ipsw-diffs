@@ -2,113 +2,62 @@
 
 > `/System/Library/PrivateFrameworks/HealthUI.framework/HealthUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x56ed4c` | `0x55b8e0` | **`-0x1346c`** |
+| `__DATA.__data` | `0xbf28` | `0xb308` | **`-0xc20`** |
+| `__DATA.__bss` | `0xbea0` | `0xc810` | **`+0x970`** |
+| `__TEXT.__cstring` | `0x25b24` | `0x26284` | **`+0x760`** |
+| `__TEXT.__eh_frame` | `0x5e9c` | `0x635c` | **`+0x4c0`** |
+| `__AUTH_CONST.__cfstring` | `0x1f580` | `0x1fa20` | **`+0x4a0`** |
+| `__AUTH_CONST.__auth_got` | `0x52f8` | `0x4f50` | **`-0x3a8`** |
+| `__AUTH_CONST.__objc_const` | `0x681a0` | `0x67e48` | **`-0x358`** |
+| `__TEXT.__swift5_capture` | `0x1fb8` | `0x2310` | **`+0x358`** |
+| `__TEXT.__constg_swiftt` | `0x738c` | `0x70cc` | **`-0x2c0`** |
+| `__TEXT.__swift5_typeref` | `0x5b16` | `0x588a` | **`-0x28c`** |
+| `__TEXT.__unwind_info` | `0x124a8` | `0x12230` | **`-0x278`** |
+| `__DATA_CONST.__got` | `0x5088` | `0x4e40` | **`-0x248`** |
+| `__TEXT.__objc_methlist` | `0x3c168` | `0x3bf58` | **`-0x210`** |
+| `__AUTH.__objc_data` | `0x19550` | `0x19678` | **`+0x128`** |
+| `__TEXT.__const` | `0xe6d4` | `0xe7e4` | **`+0x110`** |
+| `__TEXT.__swift5_reflstr` | `0x4646` | `0x4536` | **`-0x110`** |
+| `__AUTH.__data` | `0x3c98` | `0x3bf0` | **`-0xa8`** |
+| `__AUTH_CONST.__const` | `0xd380` | `0xd320` | **`-0x60`** |
+| `__TEXT.__swift5_fieldmd` | `0x4928` | `0x48cc` | **`-0x5c`** |
+| `__TEXT.__swift_as_cont` | `0x2b4` | `0x310` | **`+0x5c`** |
+| `__TEXT.__swift5_proto` | `0x624` | `0x668` | **`+0x44`** |
+| `__TEXT.__oslogstring` | `0x7dba` | `0x7dfa` | **`+0x40`** |
+| `__TEXT.__swift_as_ret` | `0x158` | `0x190` | **`+0x38`** |
+| `__DATA.__common` | `0x350` | `0x320` | **`-0x30`** |
+| `__TEXT.__swift5_assocty` | `0xd60` | `0xd90` | **`+0x30`** |
+| `__TEXT.__swift_as_entry` | `0x164` | `0x194` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x18d88` | `0x18db0` | **`+0x28`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x350` | `0x330` | **`-0x20`** |
+| `__DATA_CONST.__const` | `0x7c60` | `0x7c80` | **`+0x20`** |
+| `__TEXT.__swift5_builtin` | `0x334` | `0x348` | **`+0x14`** |
+| `__TEXT.__gcc_except_tab` | `0x23e8` | `0x23f8` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x40e4` | `0x40ec` | **`+0x8`** |
+| `__DATA_CONST.__objc_catlist` | `0x2c0` | `0x2b8` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x2278` | `0x2280` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x18b0` | `0x18a8` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0x5d8` | `0x5e0` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x88` | `0x84` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.45.2.4
--  __TEXT.__text: 0x5496e0
--  __TEXT.__objc_methlist: 0x3c168
--  __TEXT.__cstring: 0x25b24
--  __TEXT.__const: 0xe6d4
--  __TEXT.__gcc_except_tab: 0x23e8
--  __TEXT.__oslogstring: 0x7dba
 +7027.1.54.2.3
-+  __TEXT.__text: 0x5363bc
-+  __TEXT.__objc_methlist: 0x3bf58
-+  __TEXT.__cstring: 0x26284
-+  __TEXT.__const: 0xe7e4
-+  __TEXT.__gcc_except_tab: 0x23f8
-+  __TEXT.__oslogstring: 0x7dfa
-   __TEXT.__ustring: 0x56
-   __TEXT.__dlopen_cstrs: 0x367
--  __TEXT.__constg_swiftt: 0x738c
--  __TEXT.__swift5_typeref: 0x5b16
--  __TEXT.__swift5_reflstr: 0x4646
--  __TEXT.__swift5_fieldmd: 0x4928
--  __TEXT.__swift5_builtin: 0x334
-+  __TEXT.__constg_swiftt: 0x70cc
-+  __TEXT.__swift5_typeref: 0x588a
-+  __TEXT.__swift5_reflstr: 0x4536
-+  __TEXT.__swift5_fieldmd: 0x48cc
-+  __TEXT.__swift5_builtin: 0x348
-+  __TEXT.__swift5_assocty: 0xd90
-+  __TEXT.__swift5_proto: 0x668
-+  __TEXT.__swift5_types: 0x5e0
-+  __TEXT.__swift5_capture: 0x2310
-+  __TEXT.__swift5_protos: 0x84
-+  __TEXT.__swift_as_entry: 0x194
-+  __TEXT.__swift_as_ret: 0x190
-+  __TEXT.__swift_as_cont: 0x310
-   __TEXT.__swift5_mpenum: 0x40
--  __TEXT.__swift5_assocty: 0xd60
--  __TEXT.__swift5_proto: 0x624
--  __TEXT.__swift5_types: 0x5d8
--  __TEXT.__swift5_capture: 0x1fb8
--  __TEXT.__swift5_protos: 0x88
--  __TEXT.__swift_as_entry: 0x164
--  __TEXT.__swift_as_ret: 0x158
--  __TEXT.__swift_as_cont: 0x2b4
--  __TEXT.__unwind_info: 0x16fa8
--  __TEXT.__eh_frame: 0x5eb4
-+  __TEXT.__unwind_info: 0x16d80
-+  __TEXT.__eh_frame: 0x6374
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7c60
--  __DATA_CONST.__objc_classlist: 0x2278
--  __DATA_CONST.__objc_catlist: 0x2c0
-+  __DATA_CONST.__const: 0x7c80
-+  __DATA_CONST.__objc_classlist: 0x2280
-+  __DATA_CONST.__objc_catlist: 0x2b8
-   __DATA_CONST.__objc_protolist: 0x6e8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x18d88
-+  __DATA_CONST.__objc_selrefs: 0x18db0
-   __DATA_CONST.__objc_protorefs: 0x198
--  __DATA_CONST.__objc_superrefs: 0x18b0
-+  __DATA_CONST.__objc_superrefs: 0x18a8
-   __DATA_CONST.__objc_arraydata: 0x21f0
--  __DATA_CONST.__got: 0x5088
--  __AUTH_CONST.__const: 0xd380
--  __AUTH_CONST.__cfstring: 0x1f580
--  __AUTH_CONST.__objc_const: 0x681a0
-+  __DATA_CONST.__got: 0x4e40
-+  __AUTH_CONST.__const: 0xd320
-+  __AUTH_CONST.__cfstring: 0x1fa20
-+  __AUTH_CONST.__objc_const: 0x67e48
-   __AUTH_CONST.__objc_intobj: 0x2be0
--  __AUTH_CONST.__objc_doubleobj: 0x350
-+  __AUTH_CONST.__objc_doubleobj: 0x330
-   __AUTH_CONST.__objc_arrayobj: 0xfc0
-   __AUTH_CONST.__objc_dictobj: 0xc8
--  __AUTH_CONST.__auth_got: 0x52f8
--  __AUTH.__objc_data: 0x19550
--  __AUTH.__data: 0x3c98
--  __DATA.__objc_ivar: 0x40e4
--  __DATA.__data: 0xbf28
--  __DATA.__common: 0x350
-+  __AUTH_CONST.__auth_got: 0x4f50
-+  __AUTH.__objc_data: 0x19678
-+  __AUTH.__data: 0x3bf0
-+  __DATA.__objc_ivar: 0x40ec
-+  __DATA.__data: 0xb308
-+  __DATA.__common: 0x320
-   __DATA_DIRTY.__objc_data: 0x1680
-   __DATA_DIRTY.__bss: 0x58
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 30852
 -  Symbols:   36653
 -  CStrings:  5597
 +  Functions: 30607
 +  Symbols:   36649
 +  CStrings:  5633
- 
 Symbols:
 + +[HKPersonHeightFormatter usesImperialUnitsForLocale:]
 + -[HKAngleDisplayTypeValueFormatter attributedStringFromValue:displayType:unit:unitController:valueFont:unitFont:formatForChart:unitFormatString:]

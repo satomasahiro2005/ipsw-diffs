@@ -2,101 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/ScreenTimeSettingsServices.framework/ScreenTimeSettingsServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x16061c` | `0x16f120` | **`+0xeb04`** |
+| `__DATA.__bss` | `0x1f6b0` | `0x213b0` | **`+0x1d00`** |
+| `__TEXT.__const` | `0x1adcc` | `0x1bc5c` | **`+0xe90`** |
+| `__AUTH_CONST.__const` | `0x10320` | `0x10c50` | **`+0x930`** |
+| `__TEXT.__eh_frame` | `0x990c` | `0x9f88` | **`+0x67c`** |
+| `__TEXT.__cstring` | `0x4c0f` | `0x503f` | **`+0x430`** |
+| `__TEXT.__oslogstring` | `0x1f90` | `0x2310` | **`+0x380`** |
+| `__TEXT.__unwind_info` | `0x5b70` | `0x5ea8` | **`+0x338`** |
+| `__TEXT.__swift5_typeref` | `0x551e` | `0x5848` | **`+0x32a`** |
+| `__DATA.__data` | `0x2a08` | `0x2c88` | **`+0x280`** |
+| `__TEXT.__swift5_fieldmd` | `0x6684` | `0x6904` | **`+0x280`** |
+| `__TEXT.__constg_swiftt` | `0x4200` | `0x4440` | **`+0x240`** |
+| `__TEXT.__swift5_reflstr` | `0x4dd3` | `0x4f43` | **`+0x170`** |
+| `__AUTH_CONST.__auth_got` | `0x1000` | `0x1130` | **`+0x130`** |
+| `__AUTH.__data` | `0x870` | `0x988` | **`+0x118`** |
+| `__TEXT.__swift5_proto` | `0x1950` | `0x1a3c` | **`+0xec`** |
+| `__TEXT.__swift5_capture` | `0x774` | `0x838` | **`+0xc4`** |
+| `__TEXT.__swift5_assocty` | `0x910` | `0x960` | **`+0x50`** |
+| `__TEXT.__swift5_types` | `0x6a0` | `0x6dc` | **`+0x3c`** |
+| `__DATA_DIRTY.__data` | `0x3678` | `0x36b0` | **`+0x38`** |
+| `__TEXT.__swift_as_cont` | `0x2b8` | `0x2dc` | **`+0x24`** |
+| `__TEXT.__swift_as_entry` | `0x144` | `0x15c` | **`+0x18`** |
+| `__TEXT.__swift_as_ret` | `0x168` | `0x180` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x550` | `0x560` | **`+0x10`** |
+| `__DATA.__common` | `0xb0` | `0xb8` | **`+0x8`** |
+| `__DATA_CONST.__const` | `0x1a8` | `0x1b0` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x84` | `0x88` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -97.0.104.0.0
--  __TEXT.__text: 0x156004
 +97.1.6.1.0
-+  __TEXT.__text: 0x164238
-   __TEXT.__objc_methlist: 0x458
--  __TEXT.__const: 0x1adcc
--  __TEXT.__swift5_typeref: 0x551e
--  __TEXT.__swift5_reflstr: 0x4dd3
--  __TEXT.__swift5_assocty: 0x910
--  __TEXT.__constg_swiftt: 0x4200
--  __TEXT.__swift5_fieldmd: 0x6684
-+  __TEXT.__const: 0x1bc5c
-+  __TEXT.__swift5_typeref: 0x5848
-+  __TEXT.__swift5_reflstr: 0x4f43
-+  __TEXT.__swift5_assocty: 0x960
-+  __TEXT.__constg_swiftt: 0x4440
-+  __TEXT.__swift5_fieldmd: 0x6904
-   __TEXT.__swift5_builtin: 0xa0
--  __TEXT.__cstring: 0x4c0f
--  __TEXT.__swift5_proto: 0x1950
--  __TEXT.__swift5_types: 0x6a0
--  __TEXT.__oslogstring: 0x1f90
--  __TEXT.__swift5_capture: 0x774
--  __TEXT.__swift5_protos: 0x84
--  __TEXT.__swift_as_entry: 0x144
--  __TEXT.__swift_as_ret: 0x168
--  __TEXT.__swift_as_cont: 0x2b8
-+  __TEXT.__cstring: 0x503f
-+  __TEXT.__swift5_proto: 0x1a3c
-+  __TEXT.__swift5_types: 0x6dc
-+  __TEXT.__oslogstring: 0x2310
-+  __TEXT.__swift5_capture: 0x838
-+  __TEXT.__swift5_protos: 0x88
-+  __TEXT.__swift_as_entry: 0x15c
-+  __TEXT.__swift_as_ret: 0x180
-+  __TEXT.__swift_as_cont: 0x2dc
-   __TEXT.__swift5_mpenum: 0x44
--  __TEXT.__unwind_info: 0x7780
--  __TEXT.__eh_frame: 0x9914
-+  __TEXT.__unwind_info: 0x7c00
-+  __TEXT.__eh_frame: 0x9f90
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1a8
-+  __DATA_CONST.__const: 0x1b0
-   __DATA_CONST.__objc_classlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x68
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x550
-+  __DATA_CONST.__objc_selrefs: 0x560
-   __DATA_CONST.__objc_protorefs: 0x40
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x10320
-+  __AUTH_CONST.__const: 0x10c50
-   __AUTH_CONST.__objc_const: 0xfa8
--  __AUTH_CONST.__auth_got: 0x1000
-+  __AUTH_CONST.__auth_got: 0x1130
-   __AUTH.__objc_data: 0x198
--  __AUTH.__data: 0x870
--  __DATA.__data: 0x2a08
-+  __AUTH.__data: 0x988
-+  __DATA.__data: 0x2c88
-   __DATA.__objc_stublist: 0x10
--  __DATA.__common: 0xb0
-+  __DATA.__common: 0xb8
-   __DATA_DIRTY.__objc_data: 0x98
--  __DATA_DIRTY.__data: 0x3678
-+  __DATA_DIRTY.__data: 0x36b0
-   __DATA_DIRTY.__bss: 0x12200
-   __DATA_DIRTY.__common: 0x70
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/FamilyCircle.framework/FamilyCircle
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
 +  - /System/Library/PrivateFrameworks/OSEligibility.framework/OSEligibility
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9169
--  Symbols:   2648
+-  Symbols:   2515
 -  CStrings:  598
 +  Functions: 9500
-+  Symbols:   2725
++  Symbols:   2590
 +  CStrings:  633
- 
 Symbols:
 + ___swift_allocate_boxed_opaque_existential_1Tm
 + ___swift_closure_destructor.257Tm
@@ -136,9 +88,6 @@ Symbols:
 + _associated conformance 26ScreenTimeSettingsServices0abC0C19XPCServerParametersO12ResetRequestV10CodingKeys33_6675DE2B2EFDFD50DDB1BB4454AACFD6LLOs0I3KeyAAs28CustomDebugStringConvertible
 + _associated conformance 26ScreenTimeSettingsServices10RegulatoryO8ExternalO22AgeVerificationFetcherV10ParseErrorOSHAASQ
 + _keypath_set.199Tm
-+ _objc_msgSend$dictionaryForKey:
-+ _objc_msgSend$resetSettingsWithParameters:error:
-+ _objc_msgSend$supportedWebBrowserBundleIdentifiersForDeviceFamily:
 + _swift_cvw_initEnumMetadataSingleCaseWithLayoutString
 + _swift_getTupleTypeLayout2
 + _symbolic $s10Foundation11FormatStyleP
@@ -200,7 +149,6 @@ Symbols:
 - ___swift_memcpy9_1
 - _associated conformance 26ScreenTimeSettingsServices22AgeVerificationFetcherV10ParseErrorOSHAASQ
 - _keypath_set.155Tm
-- _objc_msgSend$resetSettingsForUser:observerIdentifier:error:
 - _symbolic $s26ScreenTimeSettingsServices22OSEligibilityProvidingP
 - _symbolic $s26ScreenTimeSettingsServices23AgeVerificationFetchingP
 - _symbolic _____ 26ScreenTimeSettingsServices19AgeVerificationInfoV

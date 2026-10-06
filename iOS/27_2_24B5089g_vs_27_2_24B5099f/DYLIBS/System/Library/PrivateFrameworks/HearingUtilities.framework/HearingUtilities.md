@@ -2,76 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/HearingUtilities.framework/HearingUtilities`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbadb0` | `0xbb80c` | **`+0xa5c`** |
+| `__TEXT.__oslogstring` | `0x10145` | `0x102b9` | **`+0x174`** |
+| `__DATA.__bss` | `0x7e0` | `0x828` | **`+0x48`** |
+| `__DATA_CONST.__const` | `0x37e8` | `0x3830` | **`+0x48`** |
+| `__TEXT.__gcc_except_tab` | `0x2934` | `0x297c` | **`+0x48`** |
+| `__DATA_DIRTY.__bss` | `0x110` | `0xd0` | **`-0x40`** |
+| `__TEXT.__cstring` | `0x60da` | `0x6104` | **`+0x2a`** |
+| `__AUTH_CONST.__const` | `0x1638` | `0x1658` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x2cf0` | `0x2d10` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x56f8` | `0x5708` | **`+0x10`** |
+| `__TEXT.__const` | `0x7e4` | `0x7f4` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x9474` | `0x9484` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x778` | `0x780` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -543.2.1.0.0
--  __TEXT.__text: 0xb7e0c
--  __TEXT.__objc_methlist: 0x9474
--  __TEXT.__const: 0x7e4
 +543.2.3.0.0
-+  __TEXT.__text: 0xb8868
-+  __TEXT.__objc_methlist: 0x9484
-+  __TEXT.__const: 0x7f4
-   __TEXT.__dlopen_cstrs: 0x85c
--  __TEXT.__cstring: 0x60da
-+  __TEXT.__cstring: 0x6104
-   __TEXT.__swift5_typeref: 0x2a5
-   __TEXT.__swift5_capture: 0x1d8
-   __TEXT.__constg_swiftt: 0x1a0
 
-   __TEXT.__swift5_assocty: 0x30
-   __TEXT.__swift5_proto: 0x14
-   __TEXT.__swift5_types: 0x1c
--  __TEXT.__oslogstring: 0x10145
--  __TEXT.__gcc_except_tab: 0x2934
--  __TEXT.__unwind_info: 0x36a0
-+  __TEXT.__oslogstring: 0x102b9
-+  __TEXT.__gcc_except_tab: 0x297c
-+  __TEXT.__unwind_info: 0x36c0
-   __TEXT.__eh_frame: 0x70
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x37e8
-+  __DATA_CONST.__const: 0x3830
-   __DATA_CONST.__objc_classlist: 0x218
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x120
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x56f8
-+  __DATA_CONST.__objc_selrefs: 0x5708
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x1a0
-   __DATA_CONST.__objc_arraydata: 0x3f0
--  __DATA_CONST.__got: 0x778
--  __AUTH_CONST.__const: 0x1638
-+  __DATA_CONST.__got: 0x780
-+  __AUTH_CONST.__const: 0x1658
-   __AUTH_CONST.__cfstring: 0x5d80
-   __AUTH_CONST.__objc_const: 0xc0d8
-   __AUTH_CONST.__objc_intobj: 0xa68
-
-   __DATA.__data: 0xf80
-   __DATA_DIRTY.__objc_data: 0x5a8
-   __DATA_DIRTY.__data: 0xc8
--  __DATA_DIRTY.__bss: 0x110
-+  __DATA_DIRTY.__bss: 0xd0
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AVRouting.framework/AVRouting
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4145
 -  Symbols:   6459
 -  CStrings:  2125
 +  Functions: 4149
 +  Symbols:   6466
 +  CStrings:  2131
- 
 Symbols:
 + -[HUNoiseController exposureDatumsFromSamples:]
 + GCC_except_table3136

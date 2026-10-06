@@ -2,150 +2,73 @@
 
 > `/System/Library/PrivateFrameworks/DashBoard.framework/DashBoard`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x305670` | `0x314480` | **`+0xee10`** |
+| `__AUTH_CONST.__objc_const` | `0x52f68` | `0x541d8` | **`+0x1270`** |
+| `__TEXT.__oslogstring` | `0x190ac` | `0x1a03c` | **`+0xf90`** |
+| `__AUTH_CONST.__const` | `0xcc98` | `0xd6b0` | **`+0xa18`** |
+| `__AUTH.__objc_data` | `0xeb00` | `0xf380` | **`+0x880`** |
+| `__TEXT.__const` | `0xd864` | `0xe0e4` | **`+0x880`** |
+| `__TEXT.__cstring` | `0xdbe7` | `0xe3d7` | **`+0x7f0`** |
+| `__TEXT.__eh_frame` | `0x4734` | `0x4cec` | **`+0x5b8`** |
+| `__TEXT.__swift5_typeref` | `0xbbb8` | `0xc0ae` | **`+0x4f6`** |
+| `__TEXT.__unwind_info` | `0x9950` | `0x9e30` | **`+0x4e0`** |
+| `__TEXT.__constg_swiftt` | `0x7284` | `0x76dc` | **`+0x458`** |
+| `__TEXT.__objc_methlist` | `0x17a2c` | `0x17e84` | **`+0x458`** |
+| `__TEXT.__swift5_capture` | `0x304c` | `0x339c` | **`+0x350`** |
+| `__TEXT.__swift5_reflstr` | `0x5527` | `0x5877` | **`+0x350`** |
+| `__AUTH_CONST.__cfstring` | `0x8740` | `0x8a80` | **`+0x340`** |
+| `__AUTH_CONST.__auth_got` | `0x3720` | `0x3a00` | **`+0x2e0`** |
+| `__DATA_CONST.__objc_selrefs` | `0xd0f8` | `0xd3d0` | **`+0x2d8`** |
+| `__TEXT.__swift5_fieldmd` | `0x4490` | `0x4750` | **`+0x2c0`** |
+| `__DATA.__bss` | `0x9698` | `0x9938` | **`+0x2a0`** |
+| `__AUTH.__data` | `0x3728` | `0x3950` | **`+0x228`** |
+| `__DATA.__data` | `0xa5b0` | `0xa748` | **`+0x198`** |
+| `__DATA_CONST.__const` | `0x38f0` | `0x39d0` | **`+0xe0`** |
+| `__TEXT.__gcc_except_tab` | `0x1a9c` | `0x1b04` | **`+0x68`** |
+| `__TEXT.__swift5_types` | `0x65c` | `0x6b0` | **`+0x54`** |
+| `__DATA_CONST.__objc_classlist` | `0xb48` | `0xb90` | **`+0x48`** |
+| `__TEXT.__swift_as_cont` | `0x200` | `0x244` | **`+0x44`** |
+| `__DATA_CONST.__got` | `0x2f00` | `0x2ec0` | **`-0x40`** |
+| `__TEXT.__swift5_builtin` | `0x384` | `0x3c0` | **`+0x3c`** |
+| `__DATA.__objc_ivar` | `0x12a8` | `0x12e0` | **`+0x38`** |
+| `__TEXT.__swift_as_entry` | `0x134` | `0x16c` | **`+0x38`** |
+| `__DATA_CONST.__objc_protorefs` | `0x538` | `0x508` | **`-0x30`** |
+| `__TEXT.__swift_as_ret` | `0x118` | `0x148` | **`+0x30`** |
+| `__TEXT.__ustring` | `—` | `0x2e` | **`+0x2e`** |
+| `__DATA_CONST.__objc_protolist` | `0xb18` | `0xaf0` | **`-0x28`** |
+| `__AUTH_CONST.__objc_intobj` | `0x348` | `0x360` | **`+0x18`** |
+| `__DATA.__common` | `0x3b8` | `0x3d0` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x988` | `0x9a0` | **`+0x18`** |
+| `__DATA_CONST.__objc_catlist` | `0xd0` | `0xe0` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x4b0` | `0x4b8` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x4d4` | `0x4dc` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -581.7.2.0.0
--  __TEXT.__text: 0x2f1704
--  __TEXT.__objc_methlist: 0x17a2c
--  __TEXT.__const: 0xd864
--  __TEXT.__cstring: 0xdbe7
--  __TEXT.__gcc_except_tab: 0x1a9c
--  __TEXT.__oslogstring: 0x190ac
--  __TEXT.__swift5_typeref: 0xbbb8
--  __TEXT.__constg_swiftt: 0x7284
--  __TEXT.__swift5_reflstr: 0x5527
--  __TEXT.__swift5_fieldmd: 0x4490
--  __TEXT.__swift5_capture: 0x304c
--  __TEXT.__swift5_types: 0x65c
--  __TEXT.__swift5_assocty: 0x988
--  __TEXT.__swift5_proto: 0x4d4
 +591.2.0.0.0
-+  __TEXT.__text: 0x30001c
-+  __TEXT.__objc_methlist: 0x17e84
-+  __TEXT.__const: 0xe0e4
-+  __TEXT.__cstring: 0xe3d7
-+  __TEXT.__oslogstring: 0x1a03c
-+  __TEXT.__gcc_except_tab: 0x1b04
-+  __TEXT.__ustring: 0x2e
-+  __TEXT.__swift5_typeref: 0xc0ae
-+  __TEXT.__swift5_capture: 0x339c
-+  __TEXT.__constg_swiftt: 0x76dc
-+  __TEXT.__swift5_reflstr: 0x5877
-+  __TEXT.__swift5_fieldmd: 0x4750
-+  __TEXT.__swift5_builtin: 0x3c0
-+  __TEXT.__swift5_proto: 0x4dc
-+  __TEXT.__swift5_types: 0x6b0
-+  __TEXT.__swift5_assocty: 0x9a0
-   __TEXT.__swift5_protos: 0x50
--  __TEXT.__swift5_builtin: 0x384
--  __TEXT.__swift_as_entry: 0x134
--  __TEXT.__swift_as_ret: 0x118
--  __TEXT.__swift_as_cont: 0x200
-+  __TEXT.__swift_as_entry: 0x16c
-+  __TEXT.__swift_as_ret: 0x148
-+  __TEXT.__swift_as_cont: 0x244
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0xc408
--  __TEXT.__eh_frame: 0x4744
-+  __TEXT.__unwind_info: 0xca48
-+  __TEXT.__eh_frame: 0x4cfc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x38f0
--  __DATA_CONST.__objc_classlist: 0xb48
--  __DATA_CONST.__objc_catlist: 0xd0
--  __DATA_CONST.__objc_protolist: 0xb18
-+  __DATA_CONST.__const: 0x39d0
-+  __DATA_CONST.__objc_classlist: 0xb90
-+  __DATA_CONST.__objc_catlist: 0xe0
-+  __DATA_CONST.__objc_protolist: 0xaf0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xd0f8
--  __DATA_CONST.__objc_protorefs: 0x538
--  __DATA_CONST.__objc_superrefs: 0x4b0
-+  __DATA_CONST.__objc_selrefs: 0xd3d0
-+  __DATA_CONST.__objc_protorefs: 0x508
-+  __DATA_CONST.__objc_superrefs: 0x4b8
-   __DATA_CONST.__objc_arraydata: 0x178
--  __DATA_CONST.__got: 0x2f00
--  __AUTH_CONST.__const: 0xcc98
--  __AUTH_CONST.__cfstring: 0x8740
--  __AUTH_CONST.__objc_const: 0x52f68
--  __AUTH_CONST.__objc_intobj: 0x348
-+  __DATA_CONST.__got: 0x2ec0
-+  __AUTH_CONST.__const: 0xd6b0
-+  __AUTH_CONST.__cfstring: 0x8a80
-+  __AUTH_CONST.__objc_const: 0x541d8
-+  __AUTH_CONST.__objc_intobj: 0x360
-   __AUTH_CONST.__objc_arrayobj: 0x1c8
-   __AUTH_CONST.__objc_doubleobj: 0xc0
-   __AUTH_CONST.__objc_dictobj: 0x78
--  __AUTH_CONST.__auth_got: 0x3720
--  __AUTH.__objc_data: 0xeb00
--  __AUTH.__data: 0x3728
--  __DATA.__objc_ivar: 0x12a8
--  __DATA.__data: 0xa5b0
--  __DATA.__common: 0x3b8
-+  __AUTH_CONST.__auth_got: 0x3a00
-+  __AUTH.__objc_data: 0xf380
-+  __AUTH.__data: 0x3950
-+  __DATA.__objc_ivar: 0x12e0
-+  __DATA.__data: 0xa748
-+  __DATA.__common: 0x3d0
-   __DATA_DIRTY.__objc_data: 0xba0
-   __DATA_DIRTY.__data: 0x1f8
-   __DATA_DIRTY.__bss: 0x180
-   __DATA_DIRTY.__common: 0x10
 +  - /System/Library/Frameworks/AVRouting.framework/AVRouting
-   - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/Combine.framework/Combine
 
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight
 +  - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
-   - /System/Library/Frameworks/DeveloperToolsSupport.framework/DeveloperToolsSupport
-   - /System/Library/Frameworks/EventKit.framework/EventKit
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /System/Library/PrivateFrameworks/CarAccessoryFramework.framework/CarAccessoryFramework
-   - /System/Library/PrivateFrameworks/CarAssetUtils.framework/CarAssetUtils
-   - /System/Library/PrivateFrameworks/CarKit.framework/CarKit
 +  - /System/Library/PrivateFrameworks/CarPlayAsset.framework/CarPlayAsset
-   - /System/Library/PrivateFrameworks/CarPlayAssetUI.framework/CarPlayAssetUI
-   - /System/Library/PrivateFrameworks/CarPlayServices.framework/CarPlayServices
-   - /System/Library/PrivateFrameworks/CarPlaySupport.framework/CarPlaySupport
 
-   - /System/Library/PrivateFrameworks/HangTracer.framework/HangTracer
-   - /System/Library/PrivateFrameworks/IconFoundation.framework/IconFoundation
-   - /System/Library/PrivateFrameworks/IconServices.framework/IconServices
 +  - /System/Library/PrivateFrameworks/InstallCoordination.framework/InstallCoordination
-   - /System/Library/PrivateFrameworks/MaterialKit.framework/MaterialKit
-   - /System/Library/PrivateFrameworks/MediaCoreUI.framework/MediaCoreUI
-   - /System/Library/PrivateFrameworks/MediaRemote.framework/MediaRemote
 
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftObservation.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
 +  - /usr/lib/swift/libswiftRegexBuilder.dylib
-   - /usr/lib/swift/libswiftSpatial.dylib
-   - /usr/lib/swift/libswiftSynchronization.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15598
--  Symbols:   19522
+-  Symbols:   14481
 -  CStrings:  3688
 +  Functions: 16047
-+  Symbols:   19839
++  Symbols:   14709
 +  CStrings:  3788
- 
 Symbols:
 + +[DBAppLinkMetadataStore _rootDictionaryAtURL:]
 + +[DBAppLinkMetadataStore _snapshotFromRoot:]
@@ -471,145 +394,6 @@ Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA6VStackVyAA05TupleD0VyACyACy9DashBoard25DBNavigationMapWidgetViewVAA16_FlexFrameLayoutVGAA21_TraitWritingModifierVyAA010TransitionP3KeyVGGSg_ACyACyAH012DBNowPlayingkL0VALGARGSgACyACyAH07DBSmartK5ViewcVAA01_nO0VGARGSgQPGGAA08_PaddingO0VGAA010_AnimationR0VySbGGA12_GAA0L0HPA13_AAA15_HPA9_AAA15_HPA6_AAA15_HPyHC_A8_AA0lR0HPyHCHC_A12_AAA16_HPyHCHC_A12_AAA16_HPyHCHC
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyACyACyACyACyACyACy012CarPlayAssetB016NotificationViewVAA30_EnvironmentKeyWritingModifierVyAD19ActionConfigurationVGGAKGAHyAD06BannerO0VGGAHyAD06NoticeO0VGGAPGATGAHyAD05FancyhO0VGGAA16_FixedSizeLayoutVGAA0I0HPA_AAA3_HPAwAA3_HPAvAA3_HPAuAA3_HPAqAA3_HPAmAA3_HPAlAA3_HPAfAA3_HPyHC_AkA0iM0HPyHCHC_AkAA4_HPyHCHC_ApAA4_HPyHCHC_AtAA4_HPyHCHC_ApAA4_HPyHCHC_AtAA4_HPyHCHC_AzAA4_HPyHCHC_A1_AAA4_HPyHCHC
 + _kDBJustAboveUIKitMinHitAlpha
-+ _objc_msgSend$_assetIdentifier
-+ _objc_msgSend$_cachedPunchThroughIdentifierForZone:
-+ _objc_msgSend$_createAppLinksManager
-+ _objc_msgSend$_defaultBottomBannerLayoutInfo
-+ _objc_msgSend$_deferLaunchForAppReplacementIfNeeded:
-+ _objc_msgSend$_handlePendingAppReplacementForLaunchInfo:source:
-+ _objc_msgSend$_hideBanner
-+ _objc_msgSend$_iconForTargetApplication
-+ _objc_msgSend$_postAction:dismiss:
-+ _objc_msgSend$_presentAppReplacementAlertForApplication:
-+ _objc_msgSend$_presentAutomakerPunchthroughIfNeededForApplication:
-+ _objc_msgSend$_presentPresentable:isActionBanner:
-+ _objc_msgSend$_presentPunchthroughWithIdentifier:isUserDismissible:isHostingCriticalInputStream:
-+ _objc_msgSend$_presentableDidDisappear:
-+ _objc_msgSend$_primeFromCurrentSnapshot
-+ _objc_msgSend$_punchThroughURLForIdentifier:userDismissibleOverride:
-+ _objc_msgSend$_rebuildContentIdentifierIndex
-+ _objc_msgSend$_reloadIconImages:reason:
-+ _objc_msgSend$_removeTransparentLockOutWindowAnimated:
-+ _objc_msgSend$_rootDictionaryAtURL:
-+ _objc_msgSend$_sessionIdentifier
-+ _objc_msgSend$_setDockInterfaceStyleForPunchThrough:
-+ _objc_msgSend$_setupClimateScenesIfNeeded
-+ _objc_msgSend$_showAutoDismissingStatusBannerWithMessage:detail:
-+ _objc_msgSend$_showBanner
-+ _objc_msgSend$_showDraftCreatedBannerWithCount:dictationIssue:
-+ _objc_msgSend$_showErrorBanner
-+ _objc_msgSend$_showFetchingBanner
-+ _objc_msgSend$_snapshotFromRoot:
-+ _objc_msgSend$_storeDirectory
-+ _objc_msgSend$_storeURLForVehicleID:
-+ _objc_msgSend$_updateIconPlaceholderIcon
-+ _objc_msgSend$_updateRequestContentForPresentedPT:zoneIdentifier:isUserDismissible:
-+ _objc_msgSend$_updateWallpaperTransform
-+ _objc_msgSend$_vehicleID
-+ _objc_msgSend$_writeQueue
-+ _objc_msgSend$_writeSnapshot:assetIdentifier:toURL:
-+ _objc_msgSend$activePunchThroughURLByZone
-+ _objc_msgSend$airPlayVideoPlayerMonitor
-+ _objc_msgSend$airPlayVideoPlayerMonitorDidChange
-+ _objc_msgSend$airPlayVideoPlayerTransitionForLockOutViewController:
-+ _objc_msgSend$appLinkIcons
-+ _objc_msgSend$appLinkIdentifierForContentIdentifier:
-+ _objc_msgSend$appLinkIdentifiersByContentIdentifier
-+ _objc_msgSend$appLinkLibraryIdentity
-+ _objc_msgSend$appReplacementChecked
-+ _objc_msgSend$assetDidChangeAppearance:forDisplayID:
-+ _objc_msgSend$bundleID
-+ _objc_msgSend$cachedAppLinks
-+ _objc_msgSend$cachedSnapshot
-+ _objc_msgSend$checkAppLinkActivationForContentIdentifier:
-+ _objc_msgSend$connectingSessionIsRightHandDrive
-+ _objc_msgSend$constraintGreaterThanOrEqualToAnchor:
-+ _objc_msgSend$constraintLessThanOrEqualToAnchor:
-+ _objc_msgSend$convertRectFromVehicle:toView:
-+ _objc_msgSend$convertRectToVehicle:fromView:
-+ _objc_msgSend$crsui_frameRateLimitProvider
-+ _objc_msgSend$crsui_mapStyleProvider
-+ _objc_msgSend$crsui_proxiedApplicationBundleIdentifier
-+ _objc_msgSend$crsui_setProxiedApplicationBundleIdentifier:
-+ _objc_msgSend$db_appLinkISIconForAppLink:
-+ _objc_msgSend$db_contentIdentifier
-+ _objc_msgSend$db_iconDependsOnAssets
-+ _objc_msgSend$declaresSupersededApplications
-+ _objc_msgSend$defaultImageLoadingBehavior
-+ _objc_msgSend$deviceType
-+ _objc_msgSend$dictionaryWithContentsOfURL:error:
-+ _objc_msgSend$dismissLocalPresentable:reason:
-+ _objc_msgSend$dockInterfaceStyle
-+ _objc_msgSend$fileSystemRepresentation
-+ _objc_msgSend$finishForInterruption
-+ _objc_msgSend$focusMovementManager
-+ _objc_msgSend$getAppReplacementSource:forAppIdentity:options:error:
-+ _objc_msgSend$handleDDPChangeWithAppearance:screenID:
-+ _objc_msgSend$hasAccessory:
-+ _objc_msgSend$hasDock
-+ _objc_msgSend$imageOrientation
-+ _objc_msgSend$initWithAppLinks:
-+ _objc_msgSend$initWithBannerPresenter:
-+ _objc_msgSend$initWithCGImage:scale:orientation:
-+ _objc_msgSend$initWithColor:name:
-+ _objc_msgSend$initWithEnvironmentConfiguration:nowPlayingManager:
-+ _objc_msgSend$initWithIdentifier:title:contentURLAction:symbolNameAndColor:
-+ _objc_msgSend$initWithLSApplicationIdentity:
-+ _objc_msgSend$initWithMode:environmentConfiguration:transition:
-+ _objc_msgSend$initWithRequesterIdentifier:requestIdentifier:message:detail:dismissHandler:
-+ _objc_msgSend$initWithRequesterIdentifier:requestIdentifier:title:dictateHandler:doneHandler:cancelHandler:
-+ _objc_msgSend$initWithSupportsDynamicAppearance:supportsDashboardPlatterMaterials:iconLabelsRequireBackground:hideRoundedCorners:black:imageContentMode:transform:
-+ _objc_msgSend$initWithThemeAssetDocument:displayID:isRightHandDrive:
-+ _objc_msgSend$initWithThemeAssetDocument:isRightHandDrive:
-+ _objc_msgSend$isApplyingCachedSnapshot
-+ _objc_msgSend$isDescendantOfView:
-+ _objc_msgSend$isIcon
-+ _objc_msgSend$isIconForIdentifier:
-+ _objc_msgSend$isWritableFileAtPath:
-+ _objc_msgSend$itemType
-+ _objc_msgSend$lastAppLinkLibraryIdentity
-+ _objc_msgSend$lastKnownAppLinkLibraryIdentity
-+ _objc_msgSend$metadataStore
-+ _objc_msgSend$notificationOverlayBackgroundView
-+ _objc_msgSend$nowPlayingLaunchURLString
-+ _objc_msgSend$nowPlayingManager
-+ _objc_msgSend$nowPlayingManager:didUpdateSnapshot:
-+ _objc_msgSend$numberWithUnsignedChar:
-+ _objc_msgSend$operatingSystemVersionString
-+ _objc_msgSend$outputDevices
-+ _objc_msgSend$presentLocalPresentable:
-+ _objc_msgSend$processInfo
-+ _objc_msgSend$punchThroughIdentifierForURLComponents:
-+ _objc_msgSend$punchThroughManager:requestedContentWithURL:
-+ _objc_msgSend$punchThroughManager:requestedDismissalOfIdentifier:
-+ _objc_msgSend$reloadIconImageForReason:
-+ _objc_msgSend$removeImageForKey:
-+ _objc_msgSend$resyncNowPlayingState
-+ _objc_msgSend$saveCachedSnapshot:
-+ _objc_msgSend$setAppReplacementChecked:
-+ _objc_msgSend$setConnectingSessionIsRightHandDrive:
-+ _objc_msgSend$setDisappearHandler:
-+ _objc_msgSend$setDockInterfaceStyle:
-+ _objc_msgSend$setElasticContentStretchAmount:
-+ _objc_msgSend$setImageLoadingBehavior:
-+ _objc_msgSend$setInterfaceOrientationMode:
-+ _objc_msgSend$setIsApplyingCachedSnapshot:
-+ _objc_msgSend$setLastAppLinkLibraryIdentity:
-+ _objc_msgSend$setNotificationOverlayBackgroundView:
-+ _objc_msgSend$setNotificationOverlayBackgroundViewHidden:
-+ _objc_msgSend$setScheme:
-+ _objc_msgSend$setSourceState:
-+ _objc_msgSend$sharedSystemRemoteDisplayContext
-+ _objc_msgSend$sourceForApplication:completion:
-+ _objc_msgSend$sourceState
-+ _objc_msgSend$stringByAppendingPathExtension:
-+ _objc_msgSend$systemPinkColor
-+ _objc_msgSend$tapToRadarBannerController
-+ _objc_msgSend$transition
-+ _objc_msgSend$trimKeepingIdentifiers:
-+ _objc_msgSend$userDismissibleOverrideForURLComponents:
-+ _objc_msgSend$wantsOverlay
-+ _objc_msgSend$writeToURL:options:error:
 + _swift_getObjCClassFromObject
 + _symbolic SDySSSDy_____y_____SSGAAy_____SSGGG 12CarPlayAsset11TaggedValueV 0abC2UI24WidgetStackIdentifierTagO AD0giJ0O
 + _symbolic SDySS_____GSg______21carouselConfiguration_____16clippingBehaviort 12CarPlayAsset3CPAO10EdgeInsetsV AA21CarouselConfigurationV AA4ZoneV16ClippingBehaviorV
@@ -1044,56 +828,6 @@ Symbols:
 - _associated conformance 9DashBoard16DBAppearanceModeOSHAASQ
 - _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonG0Rd__lFQOyAA0I0VyACyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA14_PaddingLayoutVGG_AA05GlassiG0VQo_AMyAA0I11BorderShapeVGGAA06_FrameQ0VGATGAaDHPA4_AaDHPA1_AaDHPqd0__AaDHD3_AYHO_A0_AA0eN0HPyHCHC_A3_AAA6_HPyHCHC_AtAA6_HPyHCHC
 - _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA6VStackVyAA05TupleD0VyACyACy9DashBoard25DBNavigationMapWidgetViewVAA16_FlexFrameLayoutVGAA21_TraitWritingModifierVyAA010TransitionP3KeyVGGSg_ACyAH012DBNowPlayingkL0VALGSgACyACyAH07DBSmartK5ViewcVAA01_nO0VGARGSgQPGGAA08_PaddingO0VGAA010_AnimationR0VySbGGA11_GAA0L0HPA12_AAA14_HPA8_AAA14_HPA5_AAA14_HPyHC_A7_AA0lR0HPyHCHC_A11_AAA15_HPyHCHC_A11_AAA15_HPyHCHC
-- _objc_msgSend$_adjustedHeadingForHorizontalClimateOverlay:
-- _objc_msgSend$_adjustedHeadingForVerticalClimateOverlay:direction:
-- _objc_msgSend$_animateClearLockoutWindow
-- _objc_msgSend$_automakerPunchthroughRequiredForApplication:
-- _objc_msgSend$_directionWithHorizontalClimateOverlayWithHeading:isClimateDockSceneHidden:isClimateScene:isDockScene:action:
-- _objc_msgSend$_directionWithVerticalClimateOverlayWithHeading:isClimateDockSceneHidden:isClimateScene:isDockScene:action:
-- _objc_msgSend$_dropDockFocusAssertionForAction:
-- _objc_msgSend$_handleAutomakerPunchthroughForApplication:
-- _objc_msgSend$_initWithScene:application:proxyApplication:environment:
-- _objc_msgSend$_isDockScene:
-- _objc_msgSend$_legacyHandleFocusMovementAction:fromScene:
-- _objc_msgSend$_presentPunchthroughWithIdentifier:
-- _objc_msgSend$_presentPunchthroughWithIdentifier:isUserDismissible:isHostingCriticalInputStream:wantsCloseButton:isPersistent:
-- _objc_msgSend$_punchThroughIdentifierForURL:
-- _objc_msgSend$_punchThroughURLForIdentifier:
-- _objc_msgSend$_takeDockFocusAssertionForAction:
-- _objc_msgSend$_takeDockFocusAssertionForAction:heading:
-- _objc_msgSend$_updateRequestContentForPresentedPT:zoneIdentifier:
-- _objc_msgSend$acquirePrimaryFocus
-- _objc_msgSend$activePunchThroughByZone
-- _objc_msgSend$appLinkManager:didChangeAppLinks:
-- _objc_msgSend$assetDidChangeAppearanceMode:forDisplayID:
-- _objc_msgSend$connect
-- _objc_msgSend$convertRect:fromView:toScreen:
-- _objc_msgSend$convertRect:toView:fromScreen:
-- _objc_msgSend$feedbackSupported
-- _objc_msgSend$handleDDPChangeAppearance:screenID:
-- _objc_msgSend$hasTemporaryContentChanged
-- _objc_msgSend$initWithScene:application:environment:
-- _objc_msgSend$initWithSupportsDynamicAppearance:supportsDashboardPlatterMaterials:iconLabelsRequireBackground:hideRoundedCorners:black:imageContentMode:
-- _objc_msgSend$initWithThemeAssetDocument:displayID:
-- _objc_msgSend$initWithThemeAssetDocument:vehicle:
-- _objc_msgSend$isMovementAllowedForHeading:direction:isRTL:isLeftHandDrive:statusBarEdge:supportsClimateOverlayFocus:
-- _objc_msgSend$isOEMToiOSHeadingToStatusBar:isLeftHandDrive:statusBarEdge:
-- _objc_msgSend$modernFocusMovementManager
-- _objc_msgSend$pendingPunchThroughByZone
-- _objc_msgSend$proxiedApplicationBundleIdentifier
-- _objc_msgSend$reloadIconImage
-- _objc_msgSend$requestContentPunchThroughManager:punchThroughDismissed:
-- _objc_msgSend$requestContentPunchThroughManager:punchThroughRequested:
-- _objc_msgSend$sceneMapInterfaceStyle
-- _objc_msgSend$sceneMapInterfaceStyleForApplication:proxyApplication:
-- _objc_msgSend$setAppLinkEntries:
-- _objc_msgSend$setProxiedApplicationBundleIdentifier:
-- _objc_msgSend$setSnapshot:
-- _objc_msgSend$setTakeScreen:
-- _objc_msgSend$setTemporaryContentURL:
-- _objc_msgSend$string
-- _objc_msgSend$supportsAmbientLightSync
-- _objc_msgSend$suppressionTimerByZone
 - _swift_dynamicCastObjCProtocolConditional
 - _symbolic SDySSSDy_____y_____SSGAAy_____SSGGG 14CarPlayAssetUI11TaggedValueV AA24WidgetStackIdentifierTagO AA0giJ0O
 - _symbolic SDySS_____G 14CarPlayAssetUI6LayoutV7PreviewV

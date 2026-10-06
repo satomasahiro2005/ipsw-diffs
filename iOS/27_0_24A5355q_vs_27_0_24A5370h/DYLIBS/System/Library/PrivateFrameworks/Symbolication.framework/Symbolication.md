@@ -2,112 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/Symbolication.framework/Symbolication`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb7578` | `0xbb7a8` | **`+0x4230`** |
+| `__AUTH_CONST.__cfstring` | `0xe1c0` | `0xdae0` | **`-0x6e0`** |
+| `__TEXT.__cstring` | `0x10b8d` | `0x11268` | **`+0x6db`** |
+| `__AUTH_CONST.__objc_const` | `0xc5e0` | `0xcb60` | **`+0x580`** |
+| `__TEXT.__gcc_except_tab` | `0x53ac` | `0x586c` | **`+0x4c0`** |
+| `__DATA_CONST.__const` | `0x3b48` | `0x3e98` | **`+0x350`** |
+| `__TEXT.__unwind_info` | `0x2bc0` | `0x2d98` | **`+0x1d8`** |
+| `__TEXT.__objc_methlist` | `0x68e0` | `0x69d8` | **`+0xf8`** |
+| `__AUTH_CONST.__const` | `0x1238` | `0x12f8` | **`+0xc0`** |
+| `__DATA.__objc_ivar` | `0xd04` | `0xd98` | **`+0x94`** |
+| `__TEXT.__oslogstring` | `0x190c` | `0x199c` | **`+0x90`** |
+| `__DATA.__data` | `0xd90` | `0xd18` | **`-0x78`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3970` | `0x39e8` | **`+0x78`** |
+| `__AUTH.__objc_data` | `0x5b8` | `0x608` | **`+0x50`** |
+| `__DATA.__bss` | `0x5c8` | `0x610` | **`+0x48`** |
+| `__DATA_CONST.__objc_arraydata` | `0x8b0` | `0x8f8` | **`+0x48`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0xf0` | `0x120` | **`+0x30`** |
+| `__TEXT.__const` | `0x2f6` | `0x316` | **`+0x20`** |
+| `__DATA.__common` | `0xf9` | `0x108` | **`+0xf`** |
+| `__AUTH_CONST.__auth_got` | `0x10e0` | `0x10d8` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x2f8` | `0x300` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x210` | `0x218` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -64578.81.1.0.0
--  __TEXT.__text: 0xb7578 sha256:562a8ad0ce746b56e4115116578d8c9827765b997a100d3c440499605991b952
--  __TEXT.__objc_methlist: 0x68e0 sha256:fc45586117a9ac35c9d04be3447041791ca57108618465941587b38f62b5f6f6
--  __TEXT.__const: 0x2f6 sha256:74cb5461ae80948a31ea8dc0c77365298412e2245e1e07d582c9c2e3178d840e
--  __TEXT.__gcc_except_tab: 0x53ac sha256:bd23894f2ec0782be9d8e2375efbbbf0d26222589ffd196bd0b5fcd382d62d34
--  __TEXT.__cstring: 0x10b8d sha256:6abf083c8d2acda6b13d71ba3782819d284231a5747707f91cb3f962d3e04b6f
--  __TEXT.__oslogstring: 0x190c sha256:43d8f5a78356ff9443900fad70b9d0d100331bec5980769cfc42689f61cba281
 +64578.89.1.0.0
-+  __TEXT.__text: 0xbb7a8 sha256:1a3f4cf6bffdcf130e17406c99041b8a2a439db9336df509d041b13ab5c40546
-+  __TEXT.__objc_methlist: 0x69d8 sha256:71b0718ea4456e0871d25c4a968015a5af45b6df3bbacbe16a6658b2994263ed
-+  __TEXT.__const: 0x316 sha256:0d33e44b12f2960bc2e660c2e42deec380ee497ff29c4aa1978d116970b90f32
-+  __TEXT.__gcc_except_tab: 0x586c sha256:70c2bcd24132284e11597ca08a1181189587307b674387940907efb05bbda653
-+  __TEXT.__cstring: 0x11268 sha256:26657ce15bbc7fdd91b573e695cca9e831f853610ccd216fabab77b5fdf1a075
-+  __TEXT.__oslogstring: 0x199c sha256:9661fd3cd1ccd10c19ddc9116934aa1f5091acc8cacff02acdbd63ca437dcc30
-   __TEXT.__ustring: 0x24 sha256:0cf56086550f8bea05a4f242cde5fa929c2cef439e2c895f307e54e1080c33d9
--  __TEXT.__swift5_typeref: 0x402 sha256:5af5060d8fedeec18c3c026ada3876d79ebab6e5631f1a725da9b0923446b414
-+  __TEXT.__swift5_typeref: 0x402 sha256:bba7a9bcfb13da88dd36f6e62b85b6e663eec671d9d0d38a64b0f51902a52fab
-   __TEXT.__swift5_capture: 0x120 sha256:f75344be44823c475d2b2a53e6cbf53f340c0721f33aee10c0603a49dd8be79f
--  __TEXT.__constg_swiftt: 0xc8 sha256:f59e786976d84fa6ebfffa4e5de75da17a34c8691da68b348f28adeb7ead1781
-+  __TEXT.__constg_swiftt: 0xc8 sha256:1c6a482bd0a26cb01c30fcc04a453677202368b75d2eee1e0d6a9f6b2ce2ab73
-   __TEXT.__swift5_builtin: 0x50 sha256:deec17f933184d6bb3d08c29b8ee3725f3c513ffbe7cf183da52e5a4852a0317
-   __TEXT.__swift5_reflstr: 0x311 sha256:eac48cf2803f767da22708c0487a7d748d1466b52850fd9374ee72c235993f3b
-   __TEXT.__swift5_fieldmd: 0x2a8 sha256:daeeee5b29b19eea9a5052633ba211ad3ded065d311ded6ba83a9caa45bffc1d
-   __TEXT.__swift5_types: 0x14 sha256:83c57e6c29d1d7dec13768ecac8ad6635ae476da0382cc50d37428dadd98ce01
--  __TEXT.__unwind_info: 0x2bc0 sha256:d3e8dd0140994d91169460356707bbcd16364d6eb33be0f2ce86e5404bdc9015
-+  __TEXT.__unwind_info: 0x2d98 sha256:ee6c0cc26d63918062a16a6c9e0a7f3782661e62410c12d6d68bd4e1c27b7d03
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3b48 sha256:1528802aa53d29fcbfd8266ad0f282a52f46d284b6eed047797853b98edaeb2a
--  __DATA_CONST.__objc_classlist: 0x2f8 sha256:2ee04e8905fc0beafee6b9b15b12dcd3b54b930ccf290c58fe51464018b336da
--  __DATA_CONST.__objc_catlist: 0x8 sha256:b85dfcc3a14561fc153607489c6bd110c1f4c6aa45ed5037e16717e12f367d6b
--  __DATA_CONST.__objc_protolist: 0x30 sha256:b7abbe19e93e65b09f322c203f1ce51d33bf9e8ff3f812ce7ba3c13fc7b7d0c2
-+  __DATA_CONST.__const: 0x3e98 sha256:9c4b60ed30da661590ce0cedcfdc293b2a63bd5dcd3dfc0d65bb04ae8bf6a2d0
-+  __DATA_CONST.__objc_classlist: 0x300 sha256:c3bd6e9b114166cd7d6112ca26ba2d46ce6fa17b30b26daa24aaba4fdd02e1e3
-+  __DATA_CONST.__objc_catlist: 0x8 sha256:47500431b3ce4323aafb2d45c7b344ba06b694c85b1069b79f447639e7693058
-+  __DATA_CONST.__objc_protolist: 0x30 sha256:b59e7a7369edf8901990c4e3359cb1622dcea811a6660d4373dc484c90b931b4
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__weak_got: 0x10 sha256:db089a9946ee2f440f1454b6bd081bc906524b106b3b9bd5745c567d00425fed
--  __DATA_CONST.__objc_selrefs: 0x3970 sha256:712e3409737c755b0ce92f82eb00883d7d3a14b760ebc93d87c3ed6ad1d2eae3
--  __DATA_CONST.__objc_superrefs: 0x210 sha256:1b024596152d18752c3753355a96d3f3b66197566dd684916670d6864a7af6e8
--  __DATA_CONST.__objc_arraydata: 0x8b0 sha256:10d5ecd95bf26f2bb16d9664eefc3d03578ad2d91da13e02960464caf7cb537d
--  __DATA_CONST.__got: 0x498 sha256:0dd193cfcab47bdaa0b37c584508bdd91123350cfa85a0e8ae19c6c797a706fd
--  __AUTH_CONST.__const: 0x1238 sha256:fe090f51a30ba1cb5b27986cbc0d1b0a39f6000bec643fd82f0fea709118ccee
--  __AUTH_CONST.__cfstring: 0xe1c0 sha256:1b5eb677011c7affadb003692e8af975258b025b6cf7984d9cce2c03db2c896d
--  __AUTH_CONST.__objc_const: 0xc5e0 sha256:b478fef0ffc78fc7de43dd77a528ea09f568da04849fcded2f76eed56904d344
--  __AUTH_CONST.__weak_auth_got: 0x10 sha256:9a2b91fa56b146795e83ca4f39da0bd07c39c24068e9aa0ceaa7f212fc574d7c
--  __AUTH_CONST.__objc_arrayobj: 0xf0 sha256:4ae92de0e7ca684c085a8ea2bb91ae86a1a173a5febd9a9157c8120c66f5af1d
--  __AUTH_CONST.__objc_dictobj: 0x28 sha256:7893773b87a8a02c1d83a3f90f614502d401dfdea7c805fb1b33f040f3e4f06b
--  __AUTH_CONST.__objc_intobj: 0x48 sha256:121569020c7adb7f6c7c9cf40f1fcf7dad4c25daf2fa64673be5887aef96d2eb
--  __AUTH_CONST.__auth_got: 0x10e0 sha256:7dabd08dcacc92f1b1a5c53b96d5b976c2f622a799ae98d2ef94c9dc239b396e
--  __AUTH.__objc_data: 0x5b8 sha256:fd6564f43ae9fcb080e8f52c2905cec9d8248667ca04e1717534b828127145e2
--  __AUTH.__data: 0x28 sha256:92e98a839057ecf70eb39ad367608ac42538a9beb21cb83108b024f361b37fc2
--  __AUTH.__thread_vars: 0x30 sha256:7b757bcbf5c2cd95b3084203ed79491e83dab1ade77a02243465d8369195382e
-+  __DATA_CONST.__weak_got: 0x10 sha256:c9b00cf8e5fdc159d5e0657836ccec0cbd1eddc62a50f4b3c9f634c56153dbb7
-+  __DATA_CONST.__objc_selrefs: 0x39e8 sha256:226995bbfa0c8d906cd6c02f8ec832e9f2d39c31cae401546b23cb849a413ac2
-+  __DATA_CONST.__objc_superrefs: 0x218 sha256:55928573809862e96a3a2da85c730530dca29cdc67ca0e752cb794364dfbd3d1
-+  __DATA_CONST.__objc_arraydata: 0x8f8 sha256:5e895634b9855cf41067b9ea8b95c18a5421ea8852f0274d5df2de785fa2c4aa
-+  __DATA_CONST.__got: 0x498 sha256:ce6d741eb739bac8882b5a914c4a91ef041d0c63d4a83ffb0f467f183f743409
-+  __AUTH_CONST.__const: 0x12f8 sha256:b6843ab5359b8a4dfa8d3ea3a2d15f23e7223ce9d079959dd6b68c7b493cff81
-+  __AUTH_CONST.__cfstring: 0xdae0 sha256:f520fa332e5fda3c5f6d064de5656e8f3d41d82bafc6babed5d49cafbebbb794
-+  __AUTH_CONST.__objc_const: 0xcb60 sha256:10bae4436150487db10c6fb51a7defd889eb7447d688fa13328ff80826e64115
-+  __AUTH_CONST.__weak_auth_got: 0x10 sha256:60bcdb5a8e6edd1ce77d43ea5c309fe844aaf21fdaf99507c4da8cc71174a8fc
-+  __AUTH_CONST.__objc_arrayobj: 0x120 sha256:a2c7d52485ef20f612f9337f4816fcce9408011670dd30b661648cdb8c52c43d
-+  __AUTH_CONST.__objc_dictobj: 0x28 sha256:d5b5264eb41ddfc47a6d6a51eb1ed647146f2e3fbb8f1f58cec968a8167086b4
-+  __AUTH_CONST.__objc_intobj: 0x48 sha256:4065b29acfc8b831ec443fab2ff09f16a778336d0a181fb3a96b2f77f197d806
-+  __AUTH_CONST.__auth_got: 0x10d8 sha256:a6386647b562036146e421a3e644a321e2329c882db21df91055c166cadcb42a
-+  __AUTH.__objc_data: 0x608 sha256:57b672ebd481d127653ec7d53e5ec623e628e9a7f2b08b13eece1f297bd23ee1
-+  __AUTH.__data: 0x28 sha256:9e61d46a67a7c5456b407b37e61bf038273ba123f09fec2b9478c3a990aeeaee
-+  __AUTH.__thread_vars: 0x30 sha256:7d6f4425604d95b55fd182e20ecb1e0832355183d59ef0c7b46576c597001c79
-   __AUTH.__thread_bss: 0x8 sha256:af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc
--  __DATA.__objc_ivar: 0xd04 sha256:899fbd9d84dfc81aa0d73dce8e93fa5140c34dcb1e6f5e48531387269a4bfeb5
--  __DATA.__data: 0xd90 sha256:e34160af66c364bea1b46bc7a5f70b06916492239b737ef73f0eff659c239b2b
--  __DATA.__bss: 0x5c8 sha256:8ee724d497565f18f1f5e526f9634479ba2886cdbeb942faf194b1f73686e8dc
--  __DATA.__common: 0xf9 sha256:9fb3871386d4d5abf3149a8fce19470ba4385fdc156f5da4642ba86489f1414e
--  __DATA_DIRTY.__objc_data: 0x1838 sha256:093eafe708832b68a3e7c76329a9f3a66c1c5c243128a8853944e49708dd8b48
--  __DATA_DIRTY.__data: 0x28 sha256:28c18daacf43ba0ec83c8a8a9204678a041174abca04110d92f0ae4544130639
-+  __DATA.__objc_ivar: 0xd98 sha256:c83c70e725609d77f1aa3ec4ab58c9d9177cc85dec4c9a8786a1f9ce30397068
-+  __DATA.__data: 0xd18 sha256:42833d9d1781d9611807958c894a01f87f3e5ec03d4d56b796101593363ee904
-+  __DATA.__bss: 0x610 sha256:07cb830e7cb76dc7d43b0fc8bc389e8225057335ffe80dda35b8c38e4b24f2c1
-+  __DATA.__common: 0x108 sha256:44b8aa4d28701168922acf61435ea4bb442f97b0b14ad7a2510ed68874ee2a72
-+  __DATA_DIRTY.__objc_data: 0x1838 sha256:aeb23d639adaed4bafb20bbf8faec74273b6d11547f6517e5887c933f32158c1
-+  __DATA_DIRTY.__data: 0x28 sha256:307396949663484a49aa62fb2011576d5a4d1f911d4f74c9128c864e723a7f84
-   __DATA_DIRTY.__crash_info: 0x148 sha256:6da6349e97370e8d430272961ce52dff296ff7c22208bd465045a16f557b12e4
-   __DATA_DIRTY.__bss: 0xc8 sha256:6d9c54dee5660c46886f32d80e57e9dd0ffa57ee0cd2a762b036d9c8e0c3a33a
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
--  UUID: 1A8C591A-BEAA-3D2D-AFF5-C94F07DBDDE0
 -  Functions: 3289
--  Symbols:   11163
--  CStrings:  4747
-+  UUID: 1ABEBD45-6C81-3804-B9FE-120EA0102EF4
+-  Symbols:   6003
+-  CStrings:  2868
 +  Functions: 3372
-+  Symbols:   11421
-+  CStrings:  4725
- 
++  Symbols:   6127
++  CStrings:  2898
 Symbols:
 + +[VMUScanOverlay isClassWithSpecificNameRequiringRefinement:]
-+ +[VMUScanOverlay isClassWithSpecificNameRequiringRefinement:].cold.1
 + -[VMUAutoreleasePoolsAnalyzer getAutoreleaseContentPageChainFromHottestToColdest:]
 + -[VMUCallTreeNode compareNodeNamesWithoutSizeAndCount:]
 + -[VMUClassInfo _determineIfCollectionClassStorage]
@@ -116,15 +52,12 @@ Symbols:
 + -[VMULeakDetector doNormalLeakDetectionWithExtraOptions:error:]
 + -[VMULeakDetector printLeakTreeWithExtraOptions:]
 + -[VMUObjectIdentifier labelForNSIndirectTaggedPointerString:length:remoteAddress:]
-+ -[VMUObjectIdentifier labelForNSIndirectTaggedPointerString:length:remoteAddress:].cold.1
 + -[VMUProcessObjectGraph threadCount]
 + -[VMUProcessObjectGraphRefiner .cxx_construct]
 + -[VMUProcessObjectGraphRefiner .cxx_destruct]
 + -[VMUProcessObjectGraphRefiner _findInterestingClassInfos]
 + -[VMUProcessObjectGraphRefiner assessReferencePriority]
-+ -[VMUProcessObjectGraphRefiner assessReferencePriority].cold.1
 + -[VMUProcessObjectGraphRefiner createLeakedNodesMap]
-+ -[VMUProcessObjectGraphRefiner createLeakedNodesMap].cold.1
 + -[VMUProcessObjectGraphRefiner createRegexToMatchNonObjectsTypedByNamedIvarsOfOtherClasses]
 + -[VMUProcessObjectGraphRefiner dealloc]
 + -[VMUProcessObjectGraphRefiner descriptionForReferencePriority:]
@@ -137,7 +70,6 @@ Symbols:
 + -[VMUProcessObjectGraphRefiner initializeSourceAddressToReferencePriorityMap]
 + -[VMUProcessObjectGraphRefiner isBadReferenceFromSwiftMetadata:]
 + -[VMUProcessObjectGraphRefiner isBadReferenceToCollectionClassStorage:]
-+ -[VMUProcessObjectGraphRefiner isBadReferenceToCollectionClassStorage:].cold.1
 + -[VMUProcessObjectGraphRefiner isBadReferenceToNonObjectTypedByIvar:]
 + -[VMUProcessObjectGraphRefiner isImpossibleReference:]
 + -[VMUProcessObjectGraphRefiner isReferenceFromLeakToNonleak:]
@@ -223,7 +155,6 @@ Symbols:
 + _OUTLINED_FUNCTION_21
 + _OUTLINED_FUNCTION_22
 + _VMUGetSetOfNSSliceNames
-+ _VMUGetSetOfNSSliceNames.cold.1
 + _VMUGetSetOfNSSliceNames.onceToken
 + _VMUGetSetOfNSSliceNames.sliceNames
 + _VMUHottestAutoreleasePoolPageOfMainThread
@@ -233,18 +164,15 @@ Symbols:
 + _VMUMappedFileLabel
 + _VMUNumberOfReferencePriorities
 + _VMUReferencePriorityUnspecified
-+ _VMURegionTypeDescriptionForTagShareProtAndPager.cold.1
 + _VMUSharedMemoryLabel
 + _VMUUnusedSharedLibTextLabel
 + _VMUVMRegionTagLabel
-+ _VMUVMRegionTagLabel.cold.1
 + _VMUVMRegionTagLabel.onceToken
 + __OBJC_$_INSTANCE_METHODS_VMUProcessObjectGraphRefiner
 + __OBJC_$_INSTANCE_VARIABLES_VMUProcessObjectGraphRefiner
 + __OBJC_CLASS_RO_$_VMUProcessObjectGraphRefiner
 + __OBJC_METACLASS_RO_$_VMUProcessObjectGraphRefiner
 + __VMUEnsureVMRegionLabelsInitialized
-+ __VMUEnsureVMRegionLabelsInitialized.cold.1
 + __VMUEnsureVMRegionLabelsInitialized.onceToken
 + __ZL29referencePriorityDescriptions
 + __ZNKSt3__113__string_hashIcNS_9allocatorIcEEEclB9fqe220106ERKNS_12basic_stringIcNS_11char_traitsIcEES2_EE
@@ -320,19 +248,13 @@ Symbols:
 + __ZZNSt3__16vectorIZ72-[VMUProcessObjectGraphRefiner removeImpossibleAndLowPriorityReferences]E14CachedEdgeInfoNS_9allocatorIS1_EEE12emplace_backIJS1_EEERS1_DpOT_ENKUlvE0_clEv
 + ___34-[VMUScanOverlay initWithScanner:]_block_invoke_35
 + ___36-[VMUProcessObjectGraph threadCount]_block_invoke
-+ ___46-[VMUReferenceTreeAnalyzer buildReferenceTree]_block_invoke.22
-+ ___46-[VMUReferenceTreeAnalyzer buildReferenceTree]_block_invoke_2.28
-+ ___47-[VMUVMRegionIdentifier initWithGraph:options:]_block_invoke.142
 + ___49-[VMULeakDetector printLeakTreeWithExtraOptions:]_block_invoke
 + ___49-[VMUProcessObjectGraphRefiner findNodesInCycles]_block_invoke
 + ___52-[VMUProcessObjectGraphRefiner createLeakedNodesMap]_block_invoke
 + ___55-[VMUProcessObjectGraphRefiner foreachDestinationNode:]_block_invoke
-+ ___56-[VMUTaskMemoryScanner processSnapshotGraphWithOptions:]_block_invoke.302
-+ ___56-[VMUTaskMemoryScanner processSnapshotGraphWithOptions:]_block_invoke.335
 + ___58-[VMUProcessObjectGraphRefiner _findInterestingClassInfos]_block_invoke
 + ___58-[VMUProcessObjectGraphRefiner removeImpossibleReferences]_block_invoke
 + ___58-[VMUProcessObjectGraphRefiner removeImpossibleReferences]_block_invoke_2
-+ ___58-[VMUProcessObjectGraphRefiner removeImpossibleReferences]_block_invoke_2.cold.1
 + ___61+[VMUScanOverlay isClassWithSpecificNameRequiringRefinement:]_block_invoke
 + ___62-[VMUTaskMemoryScanner _identifyAdditionalSwiftMetadataBlocks]_block_invoke
 + ___62-[VMUTaskMemoryScanner _identifyAdditionalSwiftMetadataBlocks]_block_invoke_2
@@ -342,9 +264,6 @@ Symbols:
 + ___72-[VMUProcessObjectGraphRefiner removeImpossibleAndLowPriorityReferences]_block_invoke
 + ___72-[VMUProcessObjectGraphRefiner removeImpossibleAndLowPriorityReferences]_block_invoke_2
 + ___72-[VMUProcessObjectGraphRefiner removeImpossibleAndLowPriorityReferences]_block_invoke_3
-+ ___77-[VMUClassInfo instanceSpecificInfoForObject:ofSize:withScanner:memoryCache:]_block_invoke.148
-+ ___77-[VMUClassInfo instanceSpecificInfoForObject:ofSize:withScanner:memoryCache:]_block_invoke_2.149
-+ ___77-[VMUClassInfo instanceSpecificInfoForObject:ofSize:withScanner:memoryCache:]_block_invoke_3.151
 + ___77-[VMUProcessObjectGraphRefiner initializeSourceAddressToReferencePriorityMap]_block_invoke
 + ___82-[VMUAutoreleasePoolsAnalyzer getAutoreleaseContentPageChainFromHottestToColdest:]_block_invoke
 + ___82-[VMUAutoreleasePoolsAnalyzer getAutoreleaseContentPageChainFromHottestToColdest:]_block_invoke_2
@@ -370,78 +289,10 @@ Symbols:
 + ___block_descriptor_56_ea8_32s40r48r_e5_v8?0ls32l8r40l8r48l8
 + ___block_descriptor_64_e8_32s_e10_v16?0r^v8ls32l8
 + ___block_descriptor_64_ea8_32s40r48r56r_e18_v28?0I8I12I16^B20lr40l8r48l8r56l8s32l8
-+ ___block_literal_global.106
-+ ___block_literal_global.124
-+ ___block_literal_global.130
-+ ___block_literal_global.139
-+ ___block_literal_global.145
-+ ___block_literal_global.17
-+ ___block_literal_global.232
-+ ___block_literal_global.281
-+ ___block_literal_global.301
-+ ___block_literal_global.367
-+ ___block_literal_global.371
-+ ___block_literal_global.392
-+ ___block_literal_global.417
-+ ___block_literal_global.427
-+ ___block_literal_global.475
-+ ___block_literal_global.489
-+ ___block_literal_global.502
-+ ___block_literal_global.523
-+ ___block_literal_global.525
-+ ___block_literal_global.534
-+ ___block_literal_global.539
-+ ___block_literal_global.544
-+ ___block_literal_global.549
-+ ___block_literal_global.560
-+ ___block_literal_global.568
-+ ___block_literal_global.576
-+ ___block_literal_global.584
-+ ___block_literal_global.592
-+ ___block_literal_global.603
-+ ___block_literal_global.608
-+ ___block_literal_global.610
-+ ___block_literal_global.624
-+ ___block_literal_global.632
-+ ___block_literal_global.646
-+ ___block_literal_global.654
-+ ___block_literal_global.662
-+ ___block_literal_global.670
-+ ___block_literal_global.684
-+ ___block_literal_global.692
-+ ___block_literal_global.709
-+ ___block_literal_global.714
-+ ___block_literal_global.719
-+ ___block_literal_global.727
-+ ___block_literal_global.768
-+ ___block_literal_global.818
-+ ___block_literal_global.884
-+ ___block_literal_global.923
-+ ___block_literal_global.939
-+ ___block_literal_global.941
-+ ___block_literal_global.943
-+ ___block_literal_global.945
-+ ___block_literal_global.958
-+ __variantForNSSlice.cold.1
 + _isClassWithSpecificNameRequiringRefinement:.classesNeedingRefinementSet
 + _isClassWithSpecificNameRequiringRefinement:.onceToken
 + _labelForNSIndirectTaggedPointerString:length:remoteAddress:.fastUTF8StringContentsIsAvailable
 + _labelForNSIndirectTaggedPointerString:length:remoteAddress:.onceToken
-+ _objc_msgSend$_determineIfCollectionClassStorage
-+ _objc_msgSend$_fastUTF8StringContents:utf8Length:
-+ _objc_msgSend$_identifyAdditionalSwiftMetadataBlocks
-+ _objc_msgSend$doNormalLeakDetectionWithExtraOptions:error:
-+ _objc_msgSend$getAutoreleaseContentPageChainFromHottestToColdest:
-+ _objc_msgSend$isClassWithSpecificNameRequiringRefinement:
-+ _objc_msgSend$isOSAllocOnce
-+ _objc_msgSend$isSQLite
-+ _objc_msgSend$isStorageForSwiftOrCPlusPlusCollectionClassInfo
-+ _objc_msgSend$isTCMalloc
-+ _objc_msgSend$labelForNSIndirectTaggedPointerString:length:remoteAddress:
-+ _objc_msgSend$matchesInString:options:range:
-+ _objc_msgSend$numberOfRanges
-+ _objc_msgSend$printLeakTreeWithExtraOptions:
-+ _objc_msgSend$printReferencePriorityCounts
 - -[VMUAutoreleasePoolsAnalyzer autoreleasePoolChain]
 - -[VMUAutoreleasePoolsAnalyzer findHottestEmptyAutoreleasePoolPage:]
 - -[VMUAutoreleasePoolsAnalyzer reattachAutoreleasePoolsChainFromHottestToColdest:]
@@ -559,73 +410,14 @@ Symbols:
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeIyyEENS_22__unordered_map_hasherIyNS_4pairIKyyEENS_4hashIyEENS_8equal_toIyEEEENS_21__unordered_map_equalIyS6_SA_S8_EENS_9allocatorIS6_EEE16__emplace_uniqueB9fqe220100IJRySI_EEENS4_INS_15__hash_iteratorIPNS_11__hash_nodeIS2_PvEEEEbEEDpOT_ENKUlRS5_SI_SI_E_clEST_SI_SI_
 - __ZZNSt3__112__hash_tableIyNS_4hashIyEENS_8equal_toIyEENS_9allocatorIyEEE16__emplace_uniqueB9fqe220100IJRyEEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIyPvEEEEbEEDpOT_ENKUlRKyS9_E_clESM_S9_
 - ___32-[VMULeakDetector printLeakTree]_block_invoke
-- ___46-[VMUReferenceTreeAnalyzer buildReferenceTree]_block_invoke.25
-- ___46-[VMUReferenceTreeAnalyzer buildReferenceTree]_block_invoke_2.31
-- ___47-[VMUVMRegionIdentifier initWithGraph:options:]_block_invoke.153
 - ___50-[VMULeakDetector doNormalLeakDetectionWithError:]_block_invoke
-- ___56-[VMUTaskMemoryScanner processSnapshotGraphWithOptions:]_block_invoke.303
-- ___56-[VMUTaskMemoryScanner processSnapshotGraphWithOptions:]_block_invoke.336
 - ___62-[VMUAutoreleasePoolsAnalyzer populateAutoreleasePoolsDetails]_block_invoke_5
 - ___62-[VMUAutoreleasePoolsAnalyzer populateAutoreleasePoolsDetails]_block_invoke_6
 - ___67-[VMUAutoreleasePoolsAnalyzer findHottestEmptyAutoreleasePoolPage:]_block_invoke
-- ___77-[VMUClassInfo instanceSpecificInfoForObject:ofSize:withScanner:memoryCache:]_block_invoke.127
-- ___77-[VMUClassInfo instanceSpecificInfoForObject:ofSize:withScanner:memoryCache:]_block_invoke_2.128
-- ___77-[VMUClassInfo instanceSpecificInfoForObject:ofSize:withScanner:memoryCache:]_block_invoke_3.130
 - ___81-[VMUAutoreleasePoolsAnalyzer reattachAutoreleasePoolsChainFromHottestToColdest:]_block_invoke
 - ___block_descriptor_56_e8_32s40r_e39_v68?0I8I12I16{?=^{?}{?=QIQ}^{?}}20^B60ls32l8r40l8
 - ___block_descriptor_68_e8_32s_e25_v16?0?<v?Ii?<v?^v>>8ls32l8
 - ___block_descriptor_76_e8_32s_e10_v16?0r^v8ls32l8
-- ___block_literal_global.105
-- ___block_literal_global.119
-- ___block_literal_global.129
-- ___block_literal_global.156
-- ___block_literal_global.185
-- ___block_literal_global.243
-- ___block_literal_global.282
-- ___block_literal_global.348
-- ___block_literal_global.352
-- ___block_literal_global.373
-- ___block_literal_global.398
-- ___block_literal_global.408
-- ___block_literal_global.456
-- ___block_literal_global.463
-- ___block_literal_global.476
-- ___block_literal_global.488
-- ___block_literal_global.508
-- ___block_literal_global.511
-- ___block_literal_global.516
-- ___block_literal_global.521
-- ___block_literal_global.530
-- ___block_literal_global.532
-- ___block_literal_global.540
-- ___block_literal_global.548
-- ___block_literal_global.564
-- ___block_literal_global.575
-- ___block_literal_global.580
-- ___block_literal_global.582
-- ___block_literal_global.596
-- ___block_literal_global.604
-- ___block_literal_global.618
-- ___block_literal_global.626
-- ___block_literal_global.634
-- ___block_literal_global.642
-- ___block_literal_global.656
-- ___block_literal_global.664
-- ___block_literal_global.681
-- ___block_literal_global.686
-- ___block_literal_global.691
-- ___block_literal_global.699
-- ___block_literal_global.740
-- ___block_literal_global.804
-- ___block_literal_global.843
-- ___block_literal_global.859
-- ___block_literal_global.861
-- ___block_literal_global.863
-- ___block_literal_global.865
-- ___block_literal_global.878
-- _objc_msgSend$findHottestEmptyAutoreleasePoolPage:
-- _objc_msgSend$printLeakTree
-- _objc_msgSend$reattachAutoreleasePoolsChainFromHottestToColdest:
 - _objc_retain_x13
 CStrings:
 + " Guard"
@@ -864,5 +656,4 @@ CStrings:
 - "shared pmap"
 - "swiftMetadataHeapBlocks"
 - "unshared pmap"
-
 ```

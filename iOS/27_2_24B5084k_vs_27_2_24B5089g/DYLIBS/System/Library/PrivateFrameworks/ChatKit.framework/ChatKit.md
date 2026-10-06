@@ -2,121 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/ChatKit.framework/ChatKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc3699c` | `0xc3b17c` | **`+0x47e0`** |
+| `__DATA.__bss` | `0x44f40` | `0x45300` | **`+0x3c0`** |
+| `__DATA_DIRTY.__objc_data` | `0x65a8` | `0x68a8` | **`+0x300`** |
+| `__TEXT.__const` | `0x41854` | `0x41af4` | **`+0x2a0`** |
+| `__TEXT.__cstring` | `0x3f9e7` | `0x3fbf7` | **`+0x210`** |
+| `__TEXT.__oslogstring` | `0x55d67` | `0x55f57` | **`+0x1f0`** |
+| `__AUTH_CONST.__const` | `0x3f948` | `0x3faf8` | **`+0x1b0`** |
+| `__AUTH.__objc_data` | `0x2cb78` | `0x2c9f8` | **`-0x180`** |
+| `__AUTH_CONST.__objc_const` | `0x9e0e0` | `0x9e248` | **`+0x168`** |
+| `__TEXT.__swift5_fieldmd` | `0x10fc8` | `0x11104` | **`+0x13c`** |
+| `__TEXT.__unwind_info` | `0x31ed0` | `0x31ff8` | **`+0x128`** |
+| `__TEXT.__eh_frame` | `0x12e98` | `0x12f98` | **`+0x100`** |
+| `__TEXT.__swift5_typeref` | `0x4945a` | `0x49556` | **`+0xfc`** |
+| `__TEXT.__objc_methlist` | `0x73664` | `0x73754` | **`+0xf0`** |
+| `__DATA.__data` | `0x226d0` | `0x22790` | **`+0xc0`** |
+| `__TEXT.__constg_swiftt` | `0x1e040` | `0x1e0e8` | **`+0xa8`** |
+| `__DATA_DIRTY.__data` | `0x608` | `0x6a8` | **`+0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x37820` | `0x378a0` | **`+0x80`** |
+| `__TEXT.__swift5_reflstr` | `0x12fd3` | `0x13053` | **`+0x80`** |
+| `__AUTH_CONST.__auth_got` | `0x6bd8` | `0x6c28` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x208f4` | `0x20934` | **`+0x40`** |
+| `__AUTH.__data` | `0x15ca0` | `0x15c70` | **`-0x30`** |
+| `__DATA.__common` | `0x1630` | `0x1600` | **`-0x30`** |
+| `__AUTH_CONST.__cfstring` | `0x244c0` | `0x244e0` | **`+0x20`** |
+| `__DATA_DIRTY.__common` | `0x48` | `0x68` | **`+0x20`** |
+| `__TEXT.__swift5_proto` | `0x1d14` | `0x1d30` | **`+0x1c`** |
+| `__DATA_CONST.__objc_classlist` | `0x3028` | `0x3038` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x14a4` | `0x14b4` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x4a18` | `0x4a20` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x7d48` | `0x7d50` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1491.200.63.2.1
--  __TEXT.__text: 0xbe47e0
 +1491.200.73.0.0
-+  __TEXT.__text: 0xbe8e78
-   __TEXT.__delay_stubs: 0x1c0
-   __TEXT.__delay_helper: 0x3050
--  __TEXT.__objc_methlist: 0x73664
--  __TEXT.__const: 0x41854
--  __TEXT.__gcc_except_tab: 0x208f4
--  __TEXT.__cstring: 0x3f9e7
--  __TEXT.__oslogstring: 0x55d67
-+  __TEXT.__objc_methlist: 0x73754
-+  __TEXT.__const: 0x41af4
-+  __TEXT.__gcc_except_tab: 0x20934
-+  __TEXT.__cstring: 0x3fbf7
-+  __TEXT.__oslogstring: 0x55f57
-   __TEXT.__dlopen_cstrs: 0xa9e
-   __TEXT.__ustring: 0x20a
--  __TEXT.__constg_swiftt: 0x1e040
--  __TEXT.__swift5_typeref: 0x4945a
-+  __TEXT.__constg_swiftt: 0x1e0e8
-+  __TEXT.__swift5_typeref: 0x49556
-   __TEXT.__swift5_builtin: 0x9b0
--  __TEXT.__swift5_reflstr: 0x12fd3
--  __TEXT.__swift5_fieldmd: 0x10fc8
-+  __TEXT.__swift5_reflstr: 0x13053
-+  __TEXT.__swift5_fieldmd: 0x11104
-   __TEXT.__swift5_assocty: 0x4aa0
--  __TEXT.__swift5_proto: 0x1d14
--  __TEXT.__swift5_types: 0x14a4
-+  __TEXT.__swift5_proto: 0x1d30
-+  __TEXT.__swift5_types: 0x14b4
-   __TEXT.__swift5_capture: 0x9434
-   __TEXT.__swift_as_entry: 0x64c
-   __TEXT.__swift_as_ret: 0x5dc
-   __TEXT.__swift_as_cont: 0xe50
-   __TEXT.__swift5_protos: 0xe0
-   __TEXT.__swift5_mpenum: 0x140
--  __TEXT.__unwind_info: 0x3d588
--  __TEXT.__eh_frame: 0x12ea8
-+  __TEXT.__unwind_info: 0x3d6f8
-+  __TEXT.__eh_frame: 0x12fa8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xf420
--  __DATA_CONST.__objc_classlist: 0x3028
-+  __DATA_CONST.__objc_classlist: 0x3038
-   __DATA_CONST.__objc_catlist: 0x568
-   __DATA_CONST.__objc_protolist: 0x1408
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x37820
-+  __DATA_CONST.__objc_selrefs: 0x378a0
-   __DATA_CONST.__objc_protorefs: 0x588
-   __DATA_CONST.__objc_superrefs: 0x19e8
-   __DATA_CONST.__objc_arraydata: 0xed0
--  __DATA_CONST.__got: 0x7d48
--  __AUTH_CONST.__const: 0x3f948
--  __AUTH_CONST.__cfstring: 0x244c0
--  __AUTH_CONST.__objc_const: 0x9e0e0
-+  __DATA_CONST.__got: 0x7d50
-+  __AUTH_CONST.__const: 0x3faf8
-+  __AUTH_CONST.__cfstring: 0x244e0
-+  __AUTH_CONST.__objc_const: 0x9e248
-   __AUTH_CONST.__objc_arrayobj: 0xde0
-   __AUTH_CONST.__objc_intobj: 0xf18
-   __AUTH_CONST.__objc_doubleobj: 0x870
-   __AUTH_CONST.__objc_floatobj: 0x180
-   __AUTH_CONST.__objc_dictobj: 0x1e0
--  __AUTH_CONST.__auth_got: 0x6bd8
--  __AUTH.__objc_data: 0x2cb78
--  __AUTH.__data: 0x15ca0
--  __DATA.__objc_ivar: 0x4a18
--  __DATA.__data: 0x226d0
-+  __AUTH_CONST.__auth_got: 0x6c28
-+  __AUTH.__objc_data: 0x2c9f8
-+  __AUTH.__data: 0x15c70
-+  __DATA.__objc_ivar: 0x4a20
-+  __DATA.__data: 0x22790
-   __DATA.__objc_stublist: 0x38
--  __DATA.__common: 0x1630
--  __DATA_DIRTY.__objc_data: 0x65a8
--  __DATA_DIRTY.__data: 0x608
-+  __DATA.__common: 0x1600
-+  __DATA_DIRTY.__objc_data: 0x68a8
-+  __DATA_DIRTY.__data: 0x6a8
-   __DATA_DIRTY.__bss: 0x520
--  __DATA_DIRTY.__common: 0x48
-+  __DATA_DIRTY.__common: 0x68
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AVKit.framework/AVKit
 
-   - /System/Library/PrivateFrameworks/SafetyMonitor.framework/SafetyMonitor
-   - /System/Library/PrivateFrameworks/ScreenTimeCore.framework/ScreenTimeCore
-   - /System/Library/PrivateFrameworks/ScreenTimeUI.framework/ScreenTimeUI
 +  - /System/Library/PrivateFrameworks/SearchIntrospectionKit.framework/SearchIntrospectionKit
-   - /System/Library/PrivateFrameworks/SensitiveContentAnalysisUI.framework/SensitiveContentAnalysisUI
-   - /System/Library/PrivateFrameworks/ShareSheet.framework/ShareSheet
-   - /System/Library/PrivateFrameworks/SiriActivation.framework/SiriActivation
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 75143
--  Symbols:   96781
+-  Symbols:   73854
 -  CStrings:  13285
-+  Functions: 75239
-+  Symbols:   96846
++  Functions: 75250
++  Symbols:   73903
 +  CStrings:  13304
- 
 Symbols:
 + +[CKAttachmentSearchResultCell renderedTitleForSearchText:attributeSet:]
 + +[CKConversationAvatarSearchResultCell renderedNameForConversation:searchText:]
@@ -155,24 +90,6 @@ Symbols:
 + _associated conformance 7ChatKit26MessagesSearchResultDetailV10CodingKeys33_744BCB8B029E6247F9DEB3642334AA47LLOSHAASQ
 + _associated conformance 7ChatKit26MessagesSearchResultDetailV10CodingKeys33_744BCB8B029E6247F9DEB3642334AA47LLOs0G3KeyAAs23CustomStringConvertible
 + _associated conformance 7ChatKit26MessagesSearchResultDetailV10CodingKeys33_744BCB8B029E6247F9DEB3642334AA47LLOs0G3KeyAAs28CustomDebugStringConvertible
-+ _objc_msgSend$_muteIndicatorColor
-+ _objc_msgSend$_preloadDraftsWithReason:
-+ _objc_msgSend$_reportSearchIntrospection
-+ _objc_msgSend$_showsMuteIndicator
-+ _objc_msgSend$chatControllerExtendedPushEnd:
-+ _objc_msgSend$childIsYoungAgeGroup
-+ _objc_msgSend$ckShouldUpdatepinnedConversationMutedIndicatorImage
-+ _objc_msgSend$hasRequestedDraftsPreload
-+ _objc_msgSend$initWithIdentifier:title:results:
-+ _objc_msgSend$pinnedConversationMutedIndicatorImage
-+ _objc_msgSend$renderedBodyForResult:searchText:
-+ _objc_msgSend$renderedNameForConversation:searchText:
-+ _objc_msgSend$renderedPlaceForResult:searchText:
-+ _objc_msgSend$renderedSummaryForResult:searchText:
-+ _objc_msgSend$renderedTitleForSearchText:attributeSet:
-+ _objc_msgSend$reportSections:forQuery:mode:
-+ _objc_msgSend$setHasRequestedDraftsPreload:
-+ _objc_msgSend$submitAndOpenTapToRadarWithNotificationIdentifier:notificationTitle:notificationBody:draftTitle:problemDescription:attachments:deviceClasses:classification:reproducibility:diagnosticExtensionIdentifiers:rateLimitInterval:rateLimitKeySuffix:maxPostsPerInterval:version:
 + _pinnedConversationMutedIndicatorImage.sBehavior
 + _pinnedConversationMutedIndicatorImage.sContentSizeCategory_pinnedConversationMutedIndicatorImage
 + _pinnedConversationMutedIndicatorImage.sCustomTextFontName_pinnedConversationMutedIndicatorImage
@@ -203,8 +120,6 @@ Symbols:
 - __OBJC_$_CLASS_METHODS_CKConversationSearchResultEmbeddedCell
 - ___72-[CKConversationListCollectionViewController viewDidAppearDeferredSetup]_block_invoke_5
 - ___72-[CKConversationListCollectionViewController viewDidAppearDeferredSetup]_block_invoke_6
-- _objc_msgSend$_annotatedResultStringForResult:searchText:
-- _objc_msgSend$chatControllerExtendedPushEnd
 CStrings:
 + "ChatKit.CKSearchIntrospectionSection"
 + "Clearing group photo. [%s]"

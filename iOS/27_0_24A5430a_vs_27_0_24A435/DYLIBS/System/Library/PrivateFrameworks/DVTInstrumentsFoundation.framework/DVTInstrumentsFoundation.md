@@ -2,26 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/DVTInstrumentsFoundation.framework/DVTInstrumentsFoundation`
 
-```diff
+### Section Size Changes
 
- 64578.160.1.0.0
--  __TEXT.__text: 0xe439c
-+  __TEXT.__text: 0xe43dc
-   __TEXT.__objc_methlist: 0x8464
-   __TEXT.__const: 0x4012
-   __TEXT.__cstring: 0xf1bc
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe439c` | `0xe43dc` | **`+0x40`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_25e2a3db4 -> sub_25ef9ddb4 : 540 -> 544
-~ sub_25e2b3530 -> sub_25efad534 : 400 -> 404
-~ sub_25e2d2248 -> sub_25efcc250 : 516 -> 532
-~ sub_25e2e0444 -> sub_25efda45c : 492 -> 508
-~ sub_25e2ff000 -> sub_25eff9028 : 276 -> 280
-~ sub_25e308ae4 -> sub_25f002b10 : 384 -> 380
-~ sub_25e312ff0 -> sub_25f00d018 : 576 -> 592
-~ sub_25e3380fc -> sub_25f032134 : 2496 -> 2492
-~ sub_25e34c824 -> sub_25f046858 : 448 -> 452
-~ sub_25e34e8ac -> sub_25f0488e4 : 3008 -> 3012
-~ sub_25e34fa30 -> sub_25f049a6c : 2016 -> 2020
-~ sub_25e353d94 -> sub_25f04ddd4 : 2496 -> 2492
-~ sub_25e35b2d4 -> sub_25f055310 : 352 -> 356
+~ sub_25e172db4 -> sub_25ee81db4 : 540 -> 544
+~ sub_25e182530 -> sub_25ee91534 : 400 -> 404
+~ sub_25e1a1248 -> sub_25eeb0250 : 516 -> 532
+~ sub_25e1af444 -> sub_25eebe45c : 492 -> 508
+~ sub_25e1ce000 -> sub_25eedd028 : 276 -> 280
+~ sub_25e1d7ae4 -> sub_25eee6b10 : 384 -> 380
+~ sub_25e1e1ff0 -> sub_25eef1018 : 576 -> 592
+~ sub_25e2070fc -> sub_25ef16134 : 2496 -> 2492
+~ sub_25e21b824 -> sub_25ef2a858 : 448 -> 452
+~ sub_25e21d8ac -> sub_25ef2c8e4 : 3008 -> 3012
+~ sub_25e21ea30 -> sub_25ef2da6c : 2016 -> 2020
+~ sub_25e222d94 -> sub_25ef31dd4 : 2496 -> 2492
+~ sub_25e22a2d4 -> sub_25ef39310 : 352 -> 356
 ```

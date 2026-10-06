@@ -2,73 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/VisionCore.framework/VisionCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x41488` | `0x40720` | **`-0xd68`** |
+| `__TEXT.__cstring` | `0x58ee` | `0x4e0c` | **`-0xae2`** |
+| `__AUTH_CONST.__cfstring` | `0x47e0` | `0x4740` | **`-0xa0`** |
+| `__DATA.__bss` | `0x3a0` | `0x360` | **`-0x40`** |
+| `__TEXT.__gcc_except_tab` | `0x405c` | `0x409c` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0xc48` | `0xc30` | **`-0x18`** |
+| `__DATA_CONST.__const` | `0x9c8` | `0x9b0` | **`-0x18`** |
+| `__TEXT.__unwind_info` | `0x1730` | `0x1718` | **`-0x18`** |
+
+### Other Changes
+
 ```diff
 
 -10.0.39.0.0
--  __TEXT.__text: 0x41488
 +10.0.45.0.0
-+  __TEXT.__text: 0x40720
-   __TEXT.__objc_methlist: 0x326c
-   __TEXT.__const: 0x560
-   __TEXT.__dlopen_cstrs: 0x228
--  __TEXT.__cstring: 0x58ee
-+  __TEXT.__cstring: 0x4e0c
-   __TEXT.__swift5_typeref: 0xc0
-   __TEXT.__constg_swiftt: 0x1d0
-   __TEXT.__swift5_reflstr: 0x84
 
-   __TEXT.__swift5_proto: 0x14
-   __TEXT.__swift5_types: 0x28
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__gcc_except_tab: 0x405c
-+  __TEXT.__gcc_except_tab: 0x409c
-   __TEXT.__oslogstring: 0x1d5
--  __TEXT.__unwind_info: 0x1730
-+  __TEXT.__unwind_info: 0x1718
-   __TEXT.__eh_frame: 0x80
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9c8
-+  __DATA_CONST.__const: 0x9b0
-   __DATA_CONST.__objc_classlist: 0x298
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x50
-
-   __DATA_CONST.__objc_arraydata: 0x158
-   __DATA_CONST.__got: 0x5f8
-   __AUTH_CONST.__const: 0x640
--  __AUTH_CONST.__cfstring: 0x47e0
-+  __AUTH_CONST.__cfstring: 0x4740
-   __AUTH_CONST.__objc_const: 0x6978
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x4e0
-   __AUTH_CONST.__objc_arrayobj: 0xa8
-   __AUTH_CONST.__objc_dictobj: 0x78
--  __AUTH_CONST.__auth_got: 0xc48
-+  __AUTH_CONST.__auth_got: 0xc30
-   __AUTH.__objc_data: 0x1e0
-   __AUTH.__data: 0x118
-   __DATA.__objc_ivar: 0x41c
-   __DATA.__data: 0x420
--  __DATA.__bss: 0x3a0
-+  __DATA.__bss: 0x360
-   __DATA_DIRTY.__objc_data: 0x1810
-   __DATA_DIRTY.__data: 0x8
-   __DATA_DIRTY.__bss: 0xb8
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1300
--  Symbols:   3855
+-  Symbols:   3178
 -  CStrings:  714
 +  Functions: 1298
-+  Symbols:   3845
++  Symbols:   3168
 +  CStrings:  654
- 
 Symbols:
 + -[VisionCoreImageBuffer _baseCVPixelBufferForOptions:error:]
 + GCC_except_table1001
@@ -188,12 +147,6 @@ Symbols:
 + GCC_except_table991
 + GCC_except_table995
 + _OBJC_CLASS_$_CIRenderDestination
-+ _objc_msgSend$_baseCVPixelBufferForOptions:error:
-+ _objc_msgSend$initWithPixelBuffer:
-+ _objc_msgSend$setColorSpace:
-+ _objc_msgSend$startTaskToRender:fromRect:toDestination:atPoint:error:
-+ _objc_msgSend$startTaskToRender:toDestination:error:
-+ _objc_msgSend$waitUntilCompletedAndReturnError:
 - -[VisionCoreImageBuffer _baseCVPixelBufferForOprions:error:]
 - GCC_except_table1003
 - GCC_except_table1006
@@ -320,12 +273,6 @@ Symbols:
 - _VisionCoreImageBufferOption_IntermediateImagesDestinationFolderPathname
 - _VisionCoreImageBufferOption_RequestName
 - __ZZ56-[VisionCoreImageBuffer _dumpIntermediateImage:options:]E32ourDumpedIntermediateImageNumber
-- _objc_msgSend$_baseCVPixelBufferForOprions:error:
-- _objc_msgSend$createDirectoryAtPath:withIntermediateDirectories:attributes:error:
-- _objc_msgSend$defaultManager
-- _objc_msgSend$render:toCVPixelBuffer:
-- _objc_msgSend$render:toCVPixelBuffer:bounds:colorSpace:
-- _objc_msgSend$stringByAppendingPathComponent:
 - _snprintf
 - _syslog
 CStrings:

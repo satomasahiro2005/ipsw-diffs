@@ -2,108 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/PassKitCore.framework/PassKitCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x912ac4` | `0x915b94` | **`+0x30d0`** |
+| `__TEXT.__cstring` | `0x7334a` | `0x73c5e` | **`+0x914`** |
+| `__AUTH_CONST.__cfstring` | `0x79a20` | `0x7a140` | **`+0x720`** |
+| `__TEXT.__oslogstring` | `0x3c1bd` | `0x3c80d` | **`+0x650`** |
+| `__AUTH_CONST.__objc_const` | `0xd0310` | `0xd0590` | **`+0x280`** |
+| `__TEXT.__objc_methlist` | `0x72700` | `0x72968` | **`+0x268`** |
+| `__DATA_CONST.__const` | `0x23550` | `0x23700` | **`+0x1b0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x25218` | `0x25328` | **`+0x110`** |
+| `__TEXT.__eh_frame` | `0x8a30` | `0x8988` | **`-0xa8`** |
+| `__TEXT.__unwind_info` | `0x1fdb8` | `0x1fe20` | **`+0x68`** |
+| `__TEXT.__const` | `0x2d710` | `0x2d6b0` | **`-0x60`** |
+| `__AUTH.__objc_data` | `0x22598` | `0x225e8` | **`+0x50`** |
+| `__AUTH_CONST.__const` | `0x269a8` | `0x269e8` | **`+0x40`** |
+| `__DATA.__objc_ivar` | `0x7314` | `0x7328` | **`+0x14`** |
+| `__AUTH_CONST.__auth_got` | `0x2fe8` | `0x2fd8` | **`-0x10`** |
+| `__DATA.__data` | `0xa290` | `0xa280` | **`-0x10`** |
+| `__DATA_DIRTY.__bss` | `0x1318` | `0x1328` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x662d` | `0x661d` | **`-0x10`** |
+| `__TEXT.__swift5_typeref` | `0x8c78` | `0x8c68` | **`-0x10`** |
+| `__DATA_DIRTY.__objc_ivar` | `0x1f40` | `0x1f4c` | **`+0xc`** |
+| `__DATA_CONST.__got` | `0x53b8` | `0x53b0` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x3e40` | `0x3e48` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x3150` | `0x3158` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x3c0` | `0x3b8` | **`-0x8`** |
+| `__TEXT.__swift_as_ret` | `0x1c8` | `0x1c4` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1695.1.4.0.0
--  __TEXT.__text: 0x8e6f6c
--  __TEXT.__objc_methlist: 0x72700
--  __TEXT.__const: 0x2d700
--  __TEXT.__swift5_typeref: 0x8c78
--  __TEXT.__cstring: 0x7334a
 +1696.2.5.0.0
-+  __TEXT.__text: 0x8e93e0
-+  __TEXT.__objc_methlist: 0x72968
-+  __TEXT.__const: 0x2d6a0
-+  __TEXT.__swift5_typeref: 0x8c68
-+  __TEXT.__cstring: 0x73c5e
-   __TEXT.__constg_swiftt: 0x7554
--  __TEXT.__swift5_reflstr: 0x662d
-+  __TEXT.__swift5_reflstr: 0x661d
-   __TEXT.__swift5_fieldmd: 0x7da0
-   __TEXT.__swift5_builtin: 0x53c
-   __TEXT.__swift5_assocty: 0xe28
-   __TEXT.__swift5_proto: 0x13e8
-   __TEXT.__swift5_types: 0x7f4
-   __TEXT.__swift5_capture: 0x512c
--  __TEXT.__oslogstring: 0x3c1bd
-+  __TEXT.__oslogstring: 0x3c80d
-   __TEXT.__swift_as_entry: 0x1a0
--  __TEXT.__swift_as_ret: 0x1c8
--  __TEXT.__swift_as_cont: 0x3c0
--  __TEXT.__swift5_protos: 0x68
-+  __TEXT.__swift_as_ret: 0x1c4
-+  __TEXT.__swift_as_cont: 0x3b8
-   __TEXT.__swift5_mpenum: 0x140
-+  __TEXT.__swift5_protos: 0x68
-   __TEXT.__swift5_types2: 0x4
-   __TEXT.__gcc_except_tab: 0x6ae8
-   __TEXT.__ustring: 0x1e6c
--  __TEXT.__unwind_info: 0x27078
--  __TEXT.__eh_frame: 0x8a30
-+  __TEXT.__unwind_info: 0x27120
-+  __TEXT.__eh_frame: 0x8988
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x23550
--  __DATA_CONST.__objc_classlist: 0x3e40
-+  __DATA_CONST.__const: 0x23700
-+  __DATA_CONST.__objc_classlist: 0x3e48
-   __DATA_CONST.__objc_catlist: 0x110
-   __DATA_CONST.__objc_protolist: 0x5d0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x25218
-+  __DATA_CONST.__objc_selrefs: 0x25328
-   __DATA_CONST.__objc_protorefs: 0x260
--  __DATA_CONST.__objc_superrefs: 0x3150
-+  __DATA_CONST.__objc_superrefs: 0x3158
-   __DATA_CONST.__objc_arraydata: 0x2810
--  __DATA_CONST.__got: 0x53b8
--  __AUTH_CONST.__const: 0x26968
--  __AUTH_CONST.__cfstring: 0x79a20
--  __AUTH_CONST.__objc_const: 0xd0310
-+  __DATA_CONST.__got: 0x53b0
-+  __AUTH_CONST.__const: 0x269a8
-+  __AUTH_CONST.__cfstring: 0x7a140
-+  __AUTH_CONST.__objc_const: 0xd0590
-   __AUTH_CONST.__objc_arrayobj: 0xd20
-   __AUTH_CONST.__objc_intobj: 0x11d0
-   __AUTH_CONST.__objc_dictobj: 0x15b8
-   __AUTH_CONST.__objc_doubleobj: 0x2b0
--  __AUTH_CONST.__auth_got: 0x2fe8
--  __AUTH.__objc_data: 0x22598
-+  __AUTH_CONST.__auth_got: 0x2fd8
-+  __AUTH.__objc_data: 0x225e8
-   __AUTH.__data: 0x5818
-   __AUTH.__thread_vars: 0x18
-   __AUTH.__thread_bss: 0x8
--  __DATA.__objc_ivar: 0x7314
--  __DATA.__data: 0xa290
-+  __DATA.__objc_ivar: 0x7328
-+  __DATA.__data: 0xa280
-   __DATA.__common: 0xc49
--  __DATA_DIRTY.__objc_ivar: 0x1f40
-+  __DATA_DIRTY.__objc_ivar: 0x1f4c
-   __DATA_DIRTY.__objc_data: 0x5eb0
-   __DATA_DIRTY.__data: 0x180
--  __DATA_DIRTY.__bss: 0x1318
-+  __DATA_DIRTY.__bss: 0x1328
-   __DATA_DIRTY.__common: 0x30
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 55741
--  Symbols:   91386
+-  Symbols:   79022
 -  CStrings:  21682
 +  Functions: 55789
-+  Symbols:   91510
++  Symbols:   79126
 +  CStrings:  21767
- 
 Symbols:
 + +[PKAnalyticsReporter(AppleCash) billSplitContextWithReceiptRequestType:receiptLength:]
 + +[PKAnalyticsReporter(AppleCash) messagesContextWithIsGroup:groupSize:]
@@ -306,33 +247,6 @@ Symbols:
 + ___PKPaymentNetworkPrioritiesByNormalizedName_block_invoke
 + ___block_descriptor_72_e8_32s40s48s56s64s_e17_v16?0"NSArray"8ls32l8s40l8s48l8s56l8s64l8
 + _marketString
-+ _objc_msgSend$_adoptProvisioningResolvedFieldsFromConfiguration:
-+ _objc_msgSend$_adoptSessionOnlyFieldsFromConfiguration:
-+ _objc_msgSend$_handlePeerPaymentAccountChanged
-+ _objc_msgSend$_insertEcomConfirmationRecordForTransaction:passUniqueID:
-+ _objc_msgSend$_resumePeerPaymentUpdates
-+ _objc_msgSend$analyticsBillSplitContext
-+ _objc_msgSend$automaticallyPresentedPassForPasses:webDomain:applicationIdentifier:
-+ _objc_msgSend$billSplitContextWithSplitType:receiptLength:
-+ _objc_msgSend$bucketValueForGroupSize:
-+ _objc_msgSend$cacheApplePayButtonTapWithIdentifier:tapDate:
-+ _objc_msgSend$deleteCredential:reason:completion:
-+ _objc_msgSend$deleteCredential:reason:completionHandler:
-+ _objc_msgSend$deleteCredentials:reason:completion:
-+ _objc_msgSend$deleteCredentialsForIdentifiers:reason:completion:
-+ _objc_msgSend$deleteCredentialsForReaderIdentifiers:reason:completion:
-+ _objc_msgSend$deleteKey:reason:completionHandler:
-+ _objc_msgSend$deleteKeyMaterialForSubCredentialId:reason:
-+ _objc_msgSend$didProcessEvent:
-+ _objc_msgSend$didSuccessfulPaymentWithTransaction:passUniqueID:
-+ _objc_msgSend$registerDeviceThroughTargetDeviceWithReason:completion:
-+ _objc_msgSend$remoteDeviceModel
-+ _objc_msgSend$revokeCredentialsWithIdentifiers:reason:completion:
-+ _objc_msgSend$revokeCredentialsWithReaderIdentifiers:reason:completion:
-+ _objc_msgSend$setAnalyticsBillSplitContext:
-+ _objc_msgSend$setPaymentTotalSummaryItemType:
-+ _objc_msgSend$supportsAutomatedPairing
-+ _objc_msgSend$supportsEcomConfirm
 - -[PKPassLibrary automaticallyPresentedPassForPasses:applicationIdentifier:]
 - -[PKPaymentAuthorizationStateMachine _handlePeerPaymentAccountChangedNotification:]
 - -[PKPaymentAuthorizationStateMachine hasPendingPeerPaymentUpdate]
@@ -429,13 +343,6 @@ Symbols:
 - ___70-[PKPaymentService revokeCredentialsWithReaderIdentifiers:completion:]_block_invoke
 - ___83-[PKPaymentAuthorizationStateMachine _handlePeerPaymentAccountChangedNotification:]_block_invoke
 - ___block_descriptor_64_e8_32s40s48s56s_e17_v16?0"NSArray"8ls32l8s40l8s48l8s56l8
-- _objc_msgSend$automaticallyPresentedPassForPasses:applicationIdentifier:
-- _objc_msgSend$deleteCredential:completionHandler:
-- _objc_msgSend$deleteCredentialsForIdentifiers:completion:
-- _objc_msgSend$deleteKey:completionHandler:
-- _objc_msgSend$didSuccessfulPayment
-- _objc_msgSend$revokeCredentialsWithIdentifiers:completion:
-- _objc_msgSend$revokeCredentialsWithReaderIdentifiers:completion:
 - _symbolic _____Sg 18AppIntentsServices0bC0O14InterfaceIdiomO
 CStrings:
 + "%@/%@ [%@]"

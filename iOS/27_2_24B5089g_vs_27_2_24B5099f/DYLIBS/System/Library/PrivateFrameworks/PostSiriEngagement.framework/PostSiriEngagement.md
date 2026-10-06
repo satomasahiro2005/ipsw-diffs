@@ -2,56 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/PostSiriEngagement.framework/PostSiriEngagement`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x99ed4` | `0x99e78` | **`-0x5c`** |
+| `__TEXT.__eh_frame` | `0x1b98` | `0x1bb8` | **`+0x20`** |
+| `__DATA.__data` | `0x848` | `0x838` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xec0` | `0xec8` | **`+0x8`** |
+| `__DATA.__common` | `0x48` | `0x40` | **`-0x8`** |
+| `__DATA_DIRTY.__common` | `0x68` | `0x70` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x16d8` | `0x16e0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3605.15.1.0.0
--  __TEXT.__text: 0x96cc4
 +3605.17.1.0.0
-+  __TEXT.__text: 0x96c68
-   __TEXT.__objc_methlist: 0x1ec
-   __TEXT.__const: 0x4338
-   __TEXT.__cstring: 0x2ae3
 
-   __TEXT.__swift_as_entry: 0x4
-   __TEXT.__swift_as_ret: 0x4
-   __TEXT.__swift_as_cont: 0xc
--  __TEXT.__unwind_info: 0x1ce0
--  __TEXT.__eh_frame: 0x1ba0
-+  __TEXT.__unwind_info: 0x1cf0
-+  __TEXT.__eh_frame: 0x1bc0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __AUTH_CONST.__cfstring: 0x80
-   __AUTH_CONST.__objc_const: 0x24a8
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0xec0
-+  __AUTH_CONST.__auth_got: 0xec8
-   __AUTH.__objc_data: 0xf0
-   __AUTH.__data: 0x13f0
--  __DATA.__data: 0x848
--  __DATA.__common: 0x48
-+  __DATA.__data: 0x838
-+  __DATA.__common: 0x40
-   __DATA_DIRTY.__objc_data: 0x230
-   __DATA_DIRTY.__data: 0x2048
-   __DATA_DIRTY.__bss: 0x510
--  __DATA_DIRTY.__common: 0x68
-+  __DATA_DIRTY.__common: 0x70
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/Intents.framework/Intents
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2851
 -  Symbols:   6781
 +  Functions: 2854
 +  Symbols:   6785
-   CStrings:  357
- 
 Symbols:
 + _$s10Foundation4DateV2geoiySbAC_ACtFZ
 + _$s10Foundation4DateV2leoiySbAC_ACtFZ

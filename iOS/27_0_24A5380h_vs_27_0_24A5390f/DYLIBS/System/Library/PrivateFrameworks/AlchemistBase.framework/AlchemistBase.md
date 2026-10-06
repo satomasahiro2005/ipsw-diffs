@@ -2,98 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/AlchemistBase.framework/AlchemistBase`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x3280` | `0x2980` | **`-0x900`** |
+| `__DATA_DIRTY.__bss` | `—` | `0x900` | **`+0x900`** |
+| `__TEXT.__text` | `0x2d62c` | `0x2de14` | **`+0x7e8`** |
+| `__DATA_DIRTY.__data` | `0xa30` | `0xd80` | **`+0x350`** |
+| `__TEXT.__oslogstring` | `0xc89` | `0xec1` | **`+0x238`** |
+| `__AUTH.__data` | `0x1b0` | `—` | **`-0x1b0`** |
+| `__DATA.__data` | `0x850` | `0x6f0` | **`-0x160`** |
+| `__AUTH.__objc_data` | `0x50` | `—` | **`-0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x50` | `0xa0` | **`+0x50`** |
+| `__DATA.__common` | `0x48` | `0x28` | **`-0x20`** |
+| `__DATA_DIRTY.__common` | `0x68` | `0x88` | **`+0x20`** |
+| `__TEXT.__cstring` | `0xc10` | `0xc30` | **`+0x20`** |
+| `__TEXT.__eh_frame` | `0x13e0` | `0x13f0` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x978` | `0x980` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -32.0.2.0.0
--  __TEXT.__text: 0x2d62c
 +32.0.3.0.0
-+  __TEXT.__text: 0x2de14
-   __TEXT.__objc_methlist: 0xa94
-   __TEXT.__const: 0x2678
-   __TEXT.__swift5_typeref: 0x898
--  __TEXT.__cstring: 0xc10
-+  __TEXT.__cstring: 0xc30
-   __TEXT.__constg_swiftt: 0xbe0
-   __TEXT.__swift5_reflstr: 0x992
-   __TEXT.__swift5_fieldmd: 0xb74
-   __TEXT.__swift5_builtin: 0xf0
-   __TEXT.__swift5_assocty: 0x168
--  __TEXT.__oslogstring: 0xc89
-+  __TEXT.__oslogstring: 0xec1
-   __TEXT.__swift5_proto: 0x19c
-   __TEXT.__swift5_types: 0xec
-   __TEXT.__swift5_capture: 0x50
-   __TEXT.__swift5_protos: 0xc
-   __TEXT.__swift5_mpenum: 0x18
-   __TEXT.__unwind_info: 0x888
--  __TEXT.__eh_frame: 0x13e0
-+  __TEXT.__eh_frame: 0x13f0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x1a68
-   __AUTH_CONST.__objc_const: 0x5268
--  __AUTH_CONST.__auth_got: 0x978
--  __AUTH.__objc_data: 0x50
--  __AUTH.__data: 0x1b0
--  __DATA.__data: 0x850
--  __DATA.__bss: 0x3280
--  __DATA.__common: 0x48
--  __DATA_DIRTY.__objc_data: 0x50
--  __DATA_DIRTY.__data: 0xa30
--  __DATA_DIRTY.__common: 0x68
-+  __AUTH_CONST.__auth_got: 0x980
-+  __DATA.__data: 0x6f0
-+  __DATA.__bss: 0x2980
-+  __DATA.__common: 0x28
-+  __DATA_DIRTY.__objc_data: 0xa0
-+  __DATA_DIRTY.__data: 0xd80
-+  __DATA_DIRTY.__bss: 0x900
-+  __DATA_DIRTY.__common: 0x88
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 800
--  Symbols:   682
+-  Symbols:   598
 -  CStrings:  146
-+  Symbols:   683
++  Symbols:   599
 +  CStrings:  153
- 
 Symbols:
 + _swift_retain_x26
 Functions:
-~ sub_25096765c -> sub_251b185c4 : 1300 -> 2008
-~ sub_250967b70 -> sub_251b18d9c : 508 -> 812
-~ sub_250967d6c -> sub_251b190c8 : 1300 -> 2008
-~ sub_250968280 -> sub_251b198a0 : 508 -> 812
+~ sub_25083465c -> sub_2519c85c4 : 1300 -> 2008
+~ sub_250834b70 -> sub_2519c8d9c : 508 -> 812
+~ sub_250834d6c -> sub_2519c90c8 : 1300 -> 2008
+~ sub_250835280 -> sub_2519c98a0 : 508 -> 812
 CStrings:
 + "%{public}@ already contains linearized colorspace."
 + "%{public}@ cannot be linearized, set to linearSRGB."

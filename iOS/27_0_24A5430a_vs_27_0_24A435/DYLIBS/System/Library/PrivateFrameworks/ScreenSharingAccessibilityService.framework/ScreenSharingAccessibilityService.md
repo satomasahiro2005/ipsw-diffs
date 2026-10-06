@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/ScreenSharingAccessibilityService.framework/ScreenSharingAccessibilityService`
 
-```diff
+### Section Size Changes
 
- 114.56.0.0.0
--  __TEXT.__text: 0x7b50
-+  __TEXT.__text: 0x7b6c
-   __TEXT.__objc_methlist: 0x1ec
-   __TEXT.__const: 0x808
-   __TEXT.__swift5_typeref: 0x269
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7b50` | `0x7b6c` | **`+0x1c`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2a0f6fae8 -> sub_2a1d22ae8 : 1096 -> 1112
-~ sub_2a0f75fe4 -> sub_2a1d28ff4 : 596 -> 608
+~ sub_2a0e65ae8 -> sub_29ffa9ae8 : 1096 -> 1112
+~ sub_2a0e6bfe4 -> sub_29ffafff4 : 596 -> 608
 ```

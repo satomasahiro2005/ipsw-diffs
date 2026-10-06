@@ -2,76 +2,48 @@
 
 > `/System/Library/FlowTools/SnippetService/ResponsePlugins/SiriKitSnippetProviderPlugin.bundle/SiriKitSnippetProviderPlugin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5580` | `0x5600` | **`+0x80`** |
+| `__TEXT.__auth_stubs` | `0x650` | `0x670` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0x330` | `0x340` | **`+0x10`** |
+| `__DATA.__data` | `0x148` | `0x150` | **`+0x8`** |
+| `__DATA_CONST.__auth_ptr` | `0x110` | `0x118` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0xe0` | `0xe8` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0xe3` | `0xeb` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -3600.8.4.0.0
--  __TEXT.__text: 0x5580
--  __TEXT.__auth_stubs: 0x650
 +3600.8.7.0.0
-+  __TEXT.__text: 0x5600
-+  __TEXT.__auth_stubs: 0x670
-   __TEXT.__objc_stubs: 0xe0
-   __TEXT.__const: 0x4c8
-   __TEXT.__cstring: 0xea
-   __TEXT.__oslogstring: 0x40f
-   __TEXT.__constg_swiftt: 0x10c
--  __TEXT.__swift5_typeref: 0xe3
-+  __TEXT.__swift5_typeref: 0xeb
-   __TEXT.__swift5_fieldmd: 0xbc
-   __TEXT.__swift5_types: 0x20
-   __TEXT.__objc_classname: 0x41
 
-   __DATA_CONST.__const: 0x398
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x330
--  __DATA_CONST.__got: 0xe0
--  __DATA_CONST.__auth_ptr: 0x110
-+  __DATA_CONST.__auth_got: 0x340
-+  __DATA_CONST.__got: 0xe8
-+  __DATA_CONST.__auth_ptr: 0x118
-   __DATA.__objc_const: 0x90
-   __DATA.__objc_selrefs: 0x38
--  __DATA.__data: 0x148
-+  __DATA.__data: 0x150
-   __DATA.__common: 0x60
-   __DATA.__bss: 0x280
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /System/Library/PrivateFrameworks/IntelligenceFlow.framework/IntelligenceFlow
-   - /System/Library/PrivateFrameworks/IntelligenceFlowShared.framework/IntelligenceFlowShared
-   - /System/Library/PrivateFrameworks/SiriKitFlow.framework/SiriKitFlow
 +  - /System/Library/PrivateFrameworks/SiriUtilities.framework/SiriUtilities
-   - /System/Library/PrivateFrameworks/ToolKit.framework/ToolKit
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 191
 -  Symbols:   597
 +  Functions: 192
 +  Symbols:   605
-   CStrings:  32
- 
 Symbols:
 + _$s11SiriKitFlow24OutputGenerationManifestV11deviceIdiom0A9Utilities06DeviceH0OSgvs
 + _$s13SiriUtilities11DeviceIdiomO3caryA2CmFWC

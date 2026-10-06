@@ -2,153 +2,87 @@
 
 > `/System/Library/PrivateFrameworks/CallIntelligence.framework/CallIntelligence`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_catlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe2944` | `0x77af4` | **`-0x6ae50`** |
+| `__TEXT.__eh_frame` | `0x80d0` | `0x3a94` | **`-0x463c`** |
+| `__TEXT.__const` | `0xe6d0` | `0xaa78` | **`-0x3c58`** |
+| `__AUTH_CONST.__objc_const` | `0x82f0` | `0x4c18` | **`-0x36d8`** |
+| `__DATA.__bss` | `0x13550` | `0x10380` | **`-0x31d0`** |
+| `__AUTH_CONST.__const` | `0x7eb0` | `0x5198` | **`-0x2d18`** |
+| `__TEXT.__oslogstring` | `0x38f3` | `0xd80` | **`-0x2b73`** |
+| `__DATA_DIRTY.__data` | `0x34e0` | `0x16e0` | **`-0x1e00`** |
+| `__TEXT.__cstring` | `0x2691` | `0xb11` | **`-0x1b80`** |
+| `__TEXT.__unwind_info` | `0x39e0` | `0x22e0` | **`-0x1700`** |
+| `__TEXT.__swift5_typeref` | `0x3ae3` | `0x2426` | **`-0x16bd`** |
+| `__TEXT.__constg_swiftt` | `0x2f8c` | `0x1a2c` | **`-0x1560`** |
+| `__TEXT.__swift5_reflstr` | `0x2c18` | `0x1787` | **`-0x1491`** |
+| `__TEXT.__swift5_fieldmd` | `0x35d0` | `0x22e8` | **`-0x12e8`** |
+| `__DATA.__data` | `0x22b0` | `0x1758` | **`-0xb58`** |
+| `__DATA_CONST.__got` | `0xa60` | `0x0` | **`-0xa60`** |
+| `__AUTH_CONST.__auth_got` | `0x13b8` | `0xbc0` | **`-0x7f8`** |
+| `__TEXT.__swift5_capture` | `0xb94` | `0x4cc` | **`-0x6c8`** |
+| `__DATA_DIRTY.__objc_data` | `0x580` | `0x170` | **`-0x410`** |
+| `__DATA_CONST.__objc_selrefs` | `0xeb0` | `0xad8` | **`-0x3d8`** |
+| `__AUTH.__data` | `0x6b0` | `0x380` | **`-0x330`** |
+| `__TEXT.__objc_methlist` | `0xef0` | `0xbd4` | **`-0x31c`** |
+| `__TEXT.__swift_as_cont` | `0x4c4` | `0x1b4` | **`-0x310`** |
+| `__TEXT.__swift_as_entry` | `0x2a8` | `0xdc` | **`-0x1cc`** |
+| `__TEXT.__swift_as_ret` | `0x288` | `0xbc` | **`-0x1cc`** |
+| `__TEXT.__swift5_proto` | `0xb7c` | `0x9c0` | **`-0x1bc`** |
+| `__TEXT.__swift5_types` | `0x404` | `0x2b8` | **`-0x14c`** |
+| `__DATA_DIRTY.__common` | `0x188` | `0x80` | **`-0x108`** |
+| `__DATA_CONST.__objc_classlist` | `0x128` | `0x48` | **`-0xe0`** |
+| `__TEXT.__swift5_assocty` | `0x5d0` | `0x510` | **`-0xc0`** |
+| `__TEXT.__swift5_builtin` | `0x118` | `0x64` | **`-0xb4`** |
+| `__DATA_DIRTY.__bss` | `0x3000` | `0x2f80` | **`-0x80`** |
+| `__AUTH.__objc_data` | `0x90` | `0x48` | **`-0x48`** |
+| `__DATA.__common` | `0x68` | `0x28` | **`-0x40`** |
+| `__DATA_CONST.__objc_protolist` | `0x70` | `0x30` | **`-0x40`** |
+| `__TEXT.__swift5_protos` | `0x4c` | `0x20` | **`-0x2c`** |
+| `__DATA_CONST.__objc_protorefs` | `0x38` | `0x18` | **`-0x20`** |
+| `__TEXT.__swift5_mpenum` | `0x38` | `0x20` | **`-0x18`** |
+
+### Other Changes
 
 ```diff
 
 -145.100.7.2.1
--  __TEXT.__text: 0xe2944
--  __TEXT.__objc_methlist: 0xef0
--  __TEXT.__const: 0xe6d0
--  __TEXT.__constg_swiftt: 0x2f8c
--  __TEXT.__swift5_typeref: 0x3ae3
--  __TEXT.__swift5_builtin: 0x118
--  __TEXT.__swift5_reflstr: 0x2c18
--  __TEXT.__swift5_fieldmd: 0x35d0
--  __TEXT.__swift5_assocty: 0x5d0
--  __TEXT.__swift5_proto: 0xb7c
--  __TEXT.__swift5_types: 0x404
--  __TEXT.__cstring: 0x2691
--  __TEXT.__swift_as_entry: 0x2a8
--  __TEXT.__swift_as_ret: 0x288
--  __TEXT.__swift_as_cont: 0x4c4
--  __TEXT.__swift5_mpenum: 0x38
--  __TEXT.__oslogstring: 0x38f3
--  __TEXT.__swift5_capture: 0xb94
--  __TEXT.__swift5_protos: 0x4c
--  __TEXT.__unwind_info: 0x39e0
--  __TEXT.__eh_frame: 0x80d0
 +147.100.5.2.1
-+  __TEXT.__text: 0x77af4
-+  __TEXT.__objc_methlist: 0xbd4
-+  __TEXT.__const: 0xaa78
-+  __TEXT.__constg_swiftt: 0x1a2c
-+  __TEXT.__swift5_typeref: 0x2426
-+  __TEXT.__swift5_builtin: 0x64
-+  __TEXT.__swift5_reflstr: 0x1787
-+  __TEXT.__swift5_fieldmd: 0x22e8
-+  __TEXT.__swift5_types: 0x2b8
-+  __TEXT.__cstring: 0xb11
-+  __TEXT.__swift5_assocty: 0x510
-+  __TEXT.__swift5_proto: 0x9c0
-+  __TEXT.__swift_as_entry: 0xdc
-+  __TEXT.__swift_as_ret: 0xbc
-+  __TEXT.__swift_as_cont: 0x1b4
-+  __TEXT.__swift5_mpenum: 0x20
-+  __TEXT.__oslogstring: 0xd80
-+  __TEXT.__swift5_capture: 0x4cc
-+  __TEXT.__swift5_protos: 0x20
-+  __TEXT.__unwind_info: 0x22e0
-+  __TEXT.__eh_frame: 0x3a94
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x120
--  __DATA_CONST.__objc_classlist: 0x128
-+  __DATA_CONST.__objc_classlist: 0x48
-   __DATA_CONST.__objc_catlist: 0x8
--  __DATA_CONST.__objc_protolist: 0x70
-+  __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xeb0
--  __DATA_CONST.__objc_protorefs: 0x38
--  __DATA_CONST.__got: 0xa60
--  __AUTH_CONST.__const: 0x7eb0
--  __AUTH_CONST.__objc_const: 0x82f0
--  __AUTH_CONST.__auth_got: 0x13b8
--  __AUTH.__objc_data: 0x90
--  __AUTH.__data: 0x6b0
--  __DATA.__data: 0x22b0
--  __DATA.__bss: 0x13550
--  __DATA.__common: 0x68
--  __DATA_DIRTY.__objc_data: 0x580
--  __DATA_DIRTY.__data: 0x34e0
--  __DATA_DIRTY.__bss: 0x3000
--  __DATA_DIRTY.__common: 0x188
-+  __DATA_CONST.__objc_selrefs: 0xad8
-+  __DATA_CONST.__objc_protorefs: 0x18
-+  __DATA_CONST.__got: 0x0
-+  __AUTH_CONST.__const: 0x5198
-+  __AUTH_CONST.__objc_const: 0x4c18
-+  __AUTH_CONST.__auth_got: 0xbc0
-+  __AUTH.__objc_data: 0x48
-+  __AUTH.__data: 0x380
-+  __DATA.__data: 0x1758
-+  __DATA.__bss: 0x10380
-+  __DATA.__common: 0x28
-+  __DATA_DIRTY.__objc_data: 0x170
-+  __DATA_DIRTY.__data: 0x16e0
-+  __DATA_DIRTY.__bss: 0x2f80
-+  __DATA_DIRTY.__common: 0x80
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+
 -  - /System/Library/Frameworks/CoreML.framework/CoreML
-   - /System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight
-   - /System/Library/Frameworks/FinanceKit.framework/FinanceKit
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+
 -  - /System/Library/Frameworks/FoundationModels.framework/FoundationModels
-   - /System/Library/Frameworks/NaturalLanguage.framework/NaturalLanguage
-   - /System/Library/Frameworks/Speech.framework/Speech
+
 -  - /System/Library/Frameworks/SwiftData.framework/SwiftData
-   - /System/Library/Frameworks/UIKit.framework/UIKit
+
 -  - /System/Library/Frameworks/UserNotifications.framework/UserNotifications
 -  - /System/Library/PrivateFrameworks/AVConference.framework/AVConference
 -  - /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
-   - /System/Library/PrivateFrameworks/BiomeLibrary.framework/BiomeLibrary
-   - /System/Library/PrivateFrameworks/CallsUtilities.framework/CallsUtilities
-   - /System/Library/PrivateFrameworks/CallsXPC.framework/CallsXPC
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/CorePhoneNumbers.framework/CorePhoneNumbers
-   - /System/Library/PrivateFrameworks/FTServices.framework/FTServices
+
 -  - /System/Library/PrivateFrameworks/FaceTimeMessageStore.framework/FaceTimeMessageStore
 -  - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
-   - /System/Library/PrivateFrameworks/IMSharedUtilities.framework/IMSharedUtilities
+
 -  - /System/Library/PrivateFrameworks/MediaExperience.framework/MediaExperience
 -  - /System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog
 -  - /System/Library/PrivateFrameworks/PowerLog.framework/PowerLog
 -  - /System/Library/PrivateFrameworks/SiriTTSService.framework/SiriTTSService
-   - /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities
+
 -  - /System/Library/PrivateFrameworks/TextUnderstanding.framework/TextUnderstanding
 -  - /System/Library/PrivateFrameworks/Trial.framework/Trial
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
 
-   - /usr/lib/swift/libswiftNaturalLanguage.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
 -  - /usr/lib/swift/libswiftObservation.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
--  - /usr/lib/swift/libswiftRegexBuilder.dylib
-   - /usr/lib/swift/libswiftSpatial.dylib
-   - /usr/lib/swift/libswiftSynchronization.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+-  - /usr/lib/swift/libswiftRegexBuilder.dylib
+
 -  Functions: 4502
--  Symbols:   2228
+-  Symbols:   2015
 -  CStrings:  483
 +  Functions: 3024
-+  Symbols:   1494
++  Symbols:   1389
 +  CStrings:  150
- 
 Symbols:
 + ___swift_memcpy34_8
 + _associated conformance 16CallIntelligence0A11ContextCardV4ItemO4KindOSHAASQ
@@ -419,114 +353,6 @@ Symbols:
 - _get_enum_tag_for_layout_string 16CallIntelligence16HoldAssistServerC5StateO
 - _get_witness_table 9SwiftData15PersistentModelRzl16CallIntelligence06StoredE16WaitTimeMetadataCAaBHPyHC
 - _memset
-- _objc_msgSend$URLForResource:withExtension:
-- _objc_msgSend$_loadWithError:
-- _objc_msgSend$_performSmartHoldingRequest:completion:
-- _objc_msgSend$addAnnouncementAsset:
-- _objc_msgSend$addNotificationRequest:withCompletionHandler:
-- _objc_msgSend$addObserverForName:object:queue:usingBlock:
-- _objc_msgSend$analysisResult
-- _objc_msgSend$authorizationStatus
-- _objc_msgSend$bundleForClass:
-- _objc_msgSend$callSubType
-- _objc_msgSend$callWithUniqueProxyIdentifier:
-- _objc_msgSend$client
-- _objc_msgSend$configureCaptions:
-- _objc_msgSend$createDirectoryAtURL:withIntermediateDirectories:attributes:error:
-- _objc_msgSend$defaultCenter
-- _objc_msgSend$defaultManager
-- _objc_msgSend$deploymentId
-- _objc_msgSend$disconnectedReason
-- _objc_msgSend$displayName
-- _objc_msgSend$dominantLocale
-- _objc_msgSend$dominantLocaleConfidence
-- _objc_msgSend$downlinkStreamToken
-- _objc_msgSend$enableCaptions:
-- _objc_msgSend$enableMediaAnalyzer:
-- _objc_msgSend$experimentIdentifiersWithNamespaceName:
-- _objc_msgSend$factorPackId
-- _objc_msgSend$featureNames
-- _objc_msgSend$featureValueForName:
-- _objc_msgSend$featureValueWithString:
-- _objc_msgSend$fetchAssetWithConfig:clientIdentifier:progress:completion:
-- _objc_msgSend$fetchCurrentCalls
-- _objc_msgSend$fileExistsAtPath:
-- _objc_msgSend$fileExistsAtPath:isDirectory:
-- _objc_msgSend$fileHandleForWritingToURL:error:
-- _objc_msgSend$fileValue
-- _objc_msgSend$getNotificationSettingsWithCompletionHandler:
-- _objc_msgSend$handle
-- _objc_msgSend$holdAssistQfaDynamicTipsThresholdEnabled
-- _objc_msgSend$holdAssistQfaLocaleExpansionEnabled
-- _objc_msgSend$holdAssistQfaMusicUIEnabled
-- _objc_msgSend$initWithBundleIdentifier:
-- _objc_msgSend$initWithCallUUID:session:
-- _objc_msgSend$initWithConfiguration:delegate:delegateQueue:
-- _objc_msgSend$initWithDelegate:delegateQueue:analysisType:streamToken:
-- _objc_msgSend$initWithDelegate:streamToken:
-- _objc_msgSend$initWithLanguage:assetType:
-- _objc_msgSend$initWithUUID:state:events:requiresUserAttentionReason:hostedOnCurrentDevice:
-- _objc_msgSend$isEndpointOnCurrentDevice
-- _objc_msgSend$isFaceTimeProvider
-- _objc_msgSend$isHostedOnCurrentDevice
-- _objc_msgSend$isLowPowerModeEnabled
-- _objc_msgSend$isTelephonyProvider
-- _objc_msgSend$isUsingBaseband
-- _objc_msgSend$isoCountryCode
-- _objc_msgSend$languageCode
-- _objc_msgSend$levelForFactor:withNamespaceName:
-- _objc_msgSend$mainQueue
-- _objc_msgSend$messageAudioToken
-- _objc_msgSend$modelWithContentsOfURL:error:
-- _objc_msgSend$moveItemAtURL:toURL:error:
-- _objc_msgSend$name
-- _objc_msgSend$outputVoice
-- _objc_msgSend$path
-- _objc_msgSend$pathForResource:ofType:
-- _objc_msgSend$pathToAssetWithConfig:clientIdentifier:completion:
-- _objc_msgSend$processInfo
-- _objc_msgSend$provider
-- _objc_msgSend$rampId
-- _objc_msgSend$refresh
-- _objc_msgSend$remoteParticipantHandles
-- _objc_msgSend$removeItemAtURL:error:
-- _objc_msgSend$removeObserver:
-- _objc_msgSend$removeObserver:name:object:
-- _objc_msgSend$requestEmbeddingAssetsWithCompletionHandler:
-- _objc_msgSend$requestWithIdentifier:content:trigger:
-- _objc_msgSend$rolloutId
-- _objc_msgSend$rolloutIdentifiersWithNamespaceName:
-- _objc_msgSend$setAttribute:forKey:error:
-- _objc_msgSend$setBody:
-- _objc_msgSend$setDateStyle:
-- _objc_msgSend$setFormatForNewLinesEnabled:
-- _objc_msgSend$setInterruptionLevel:
-- _objc_msgSend$setIsMessageCaptioningEnabled:
-- _objc_msgSend$setLanguageDetectorEnabled:
-- _objc_msgSend$setLanguageDetectorReportingFrequency:
-- _objc_msgSend$setLocale:
-- _objc_msgSend$setSource:
-- _objc_msgSend$setTaskHint:
-- _objc_msgSend$setTimeStyle:
-- _objc_msgSend$setTitle:
-- _objc_msgSend$setUsage:
-- _objc_msgSend$setValue:forKey:
-- _objc_msgSend$sharedInstance
-- _objc_msgSend$sharedPreferences
-- _objc_msgSend$smartHoldingSession
-- _objc_msgSend$state
-- _objc_msgSend$status
-- _objc_msgSend$stop
-- _objc_msgSend$stringFromDate:
-- _objc_msgSend$temporaryDirectory
-- _objc_msgSend$text
-- _objc_msgSend$tokens
-- _objc_msgSend$tu_defaults
-- _objc_msgSend$uniqueProxyIdentifierUUID
-- _objc_msgSend$unload
-- _objc_msgSend$utteranceComplete
-- _objc_msgSend$value
-- _objc_msgSend$waitOnHoldLoggingEnabled
 - _objc_release_x9
 - _objc_retain
 - _objc_retain_x2

@@ -2,67 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/CoreRealityIO.framework/CoreRealityIO`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2c622c` | `0x2c5aa4` | **`-0x788`** |
+| `__TEXT.__const` | `0x214b0` | `0x213f0` | **`-0xc0`** |
+| `__TEXT.__oslogstring` | `0x3d82` | `0x3e27` | **`+0xa5`** |
+| `__AUTH_CONST.__const` | `0x1b918` | `0x1b898` | **`-0x80`** |
+| `__TEXT.__gcc_except_tab` | `0x360a4` | `0x36024` | **`-0x80`** |
+| `__TEXT.__unwind_info` | `0x10938` | `0x108f8` | **`-0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x34a0` | `0x3498` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -235.0.0.0.0
--  __TEXT.__text: 0x2c622c sha256:a7d5330ed7aaf2b39348ac2a7bf20f6e27797d00d234fdbe1bc01712b9bae532
--  __TEXT.__const: 0x214b0 sha256:481cafd8bcc50711e6d3db3a176fbe760bbfb508f7915b6634d2f789cc7c9bf6
--  __TEXT.__gcc_except_tab: 0x360a4 sha256:97cd2d6dcc7fb51e3d2ad9a5b28a19acd00f11fef01df575051b47acf741392a
--  __TEXT.__cstring: 0x114b6 sha256:98ca266432fc66593938e926317dffd354ad7d024e535451a47e30e4cb66c976
--  __TEXT.__oslogstring: 0x3d82 sha256:ce4eee3231ebe5f715a7d4cc74ed6fcb973d0114bb114632ca6f498c1b73ae8a
--  __TEXT.__unwind_info: 0x10938 sha256:68248ee42cd44db881b255cdaa79a947e222b388a445a2c2a4a954ae50d77103
 +235.0.2.0.0
-+  __TEXT.__text: 0x2c5aa4 sha256:7cfa5d40e4302f62a86f652b13ca35624ccbe9b7d6f45fb126261b142cabc58f
-+  __TEXT.__const: 0x213f0 sha256:5ffd0e69266ee5685c885632e1ae6049348ee978643fe6d9a1e5b7686778d574
-+  __TEXT.__gcc_except_tab: 0x36024 sha256:4d502f8cc2e20d24a4aec1e859d362a1a3f6cf021aae5a898ba48e581a40f9e9
-+  __TEXT.__cstring: 0x114b6 sha256:dbb5ff908c20c6ac85fa8795c03640e5139b73b387d7074dc47a2984bad35ac4
-+  __TEXT.__oslogstring: 0x3e27 sha256:212287423091953b832533973d8d427008f51d2ec7e33e7dee8bd7263fc20776
-+  __TEXT.__unwind_info: 0x108f8 sha256:976d74e7bda26e8d0f320f0983915fe499aebf638d35860470df8efa7a1ccd26
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0x390 sha256:dd002e7e8cd8a33717d32a1de450282566d7f04f1cc9bca4b519f9dfe4555d64
-+  __DATA_CONST.__const: 0x390 sha256:a221a9b9ca1be56377145aafdb7dbe826faee42e94b1bb7559d25789c02f2ff5
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x30 sha256:f2bd205373e1c72d11b275954a35ce06842516c798a24c1f416dced59ace99c1
--  __DATA_CONST.__objc_selrefs: 0x3f8 sha256:f75bf196dfeca3ec33875882f29084cc516b8bd96b9b28343fef8920b4f52fa3
--  __DATA_CONST.__got: 0x530 sha256:569992d8ac889747280b260668634a7df0d63d6143c121d533f801284a1a700d
--  __AUTH_CONST.__const: 0x1b918 sha256:c5d9232eccf1c4bd4f35150e37b920804e47a0853814cadd7b247bdade819e39
--  __AUTH_CONST.__cfstring: 0xfa0 sha256:28dcc61ce6552bb6f16b9fd9e7901b1c6c02fa4327d83bb92ed2d798732f4f4a
--  __AUTH_CONST.__weak_auth_got: 0x440 sha256:bed30f7717cbbacb7821be0ee5cf6c0fae35c6b7b3cadd1630aaf1dd9d9449bc
--  __AUTH_CONST.__auth_got: 0x34a0 sha256:0c4d901eebaaf19b90c5ac08dee40850a490b898be715324f5eac227e8d08393
--  __AUTH.__tf_func: 0x30 sha256:8e3f29dea2a6d2265fd932ab9900f32c319f08c9163deabb0838935ba4d018c2
--  __AUTH.__data: 0x8 sha256:28dcc45d8de934dd7dff64ec4ad76a65e89528e23f82b1e75da1fafca5e68926
--  __AUTH.__thread_vars: 0x48 sha256:cba4eeee5097d717c2b6c9207cd45511daf6673d11f58d132341d1a143540d22
-+  __DATA_CONST.__weak_got: 0x30 sha256:ca3bfcb890e915e3ce7dbd5b53d8574c61ba9db4c3bd42a81cd40c1a07e78bac
-+  __DATA_CONST.__objc_selrefs: 0x3f8 sha256:2000c4a3485874030052af773ec5fa1ba3bb089770aa20d265f5939e395d18af
-+  __DATA_CONST.__got: 0x530 sha256:ae3555b0f031c0c52a855c11569c12bb14754ca084b50d5482f085089f9dbd3e
-+  __AUTH_CONST.__const: 0x1b898 sha256:7df4d1fb33d0cf5ed473ee6aabd064ab572453983854d158822d1fa67cd5a8b0
-+  __AUTH_CONST.__cfstring: 0xfa0 sha256:a4c33ae330509e9164b3e6808870e9acce2690d8c7d70c1feff7a7198790ee06
-+  __AUTH_CONST.__weak_auth_got: 0x440 sha256:f9771d12e9c1f36dd7e5a1923fefc517463bc98fa7d53c1d111d1c7fa8c75091
-+  __AUTH_CONST.__auth_got: 0x3498 sha256:059676fef577eb67fe4784573d53dc6ce3f835509a3fbc424e321e25f8b53aad
-+  __AUTH.__tf_func: 0x30 sha256:b75200884e0c40c4815262545233839ca75569959b7c7c34362467f6766fd2bc
-+  __AUTH.__data: 0x8 sha256:58664883a0548cfa86bf36deba919f04003695e2c029dfd5f4f264ede635c421
-+  __AUTH.__thread_vars: 0x48 sha256:4c72fa86a870fdc7ed13dd8aceea413a3ce46cede9c4e95ebf5a67ebbdca651a
-   __AUTH.__thread_bss: 0x50 sha256:5b6fb58e61fa475939767d68a446f97f1bff02c0e5935a3ea8bb51e6515783d8
--  __DATA.__data: 0x4a8 sha256:6dbb3baf653b17ef5339344e1edc614c4774632e84198a026225956ab5c359bd
-+  __DATA.__data: 0x4a8 sha256:7ef05a1ea9f8b04532cd07550a66e31f7d90237d28f0cbbbe82b066dfd451f30
-   __DATA.__common: 0x1360 sha256:f1da493bc6c428a87add77fe3fc6bed56727c782acbb51370e2d9e07191af9dd
-   __DATA.__bss: 0x12b0 sha256:fab9fca39808518f0df9b4306b025d836185ce2958d5f1e2aacca6ac8335cd05
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/usd/libusd_ms.dylib
--  UUID: 5D2DB1B2-9D32-3EF1-AC90-AE1735C771AA
 -  Functions: 13389
--  Symbols:   38200
--  CStrings:  2294
-+  UUID: 01521709-B3D2-35F7-B9C5-DEF0F1F6D56F
+-  Symbols:   21065
+-  CStrings:  2168
 +  Functions: 13379
-+  Symbols:   38168
-+  CStrings:  2295
- 
++  Symbols:   21050
++  CStrings:  2169
 Symbols:
 + GCC_except_table243
 + GCC_except_table269
@@ -3446,34 +3410,5 @@ Symbols:
 - __ZZNSt3__16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPKcEENS_19__map_value_compareIS7_NS_4pairIKS7_S9_EENS_4lessIS7_EEEENS5_ISE_EEE21__insert_range_uniqueB9fqe220100IPKSE_SM_EEvT_T0_ENKUlRSD_RSL_E_clESP_SQ_
 - __ZZZN9realityio28SpatialAudioFileAssetBuilder3runEPNS_6InputsEENK3$_0clEvENUlvE_D1Ev
 CStrings:
-+ "/AppleInternal/Library/BuildRoots/4~CRoOugAEdxpBTwXfQnQedBMTnP25vOO4RsrzKx8/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/base/tf/notice.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRoOugAEdxpBTwXfQnQedBMTnP25vOO4RsrzKx8/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/base/tf/refPtr.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRoOugAEdxpBTwXfQnQedBMTnP25vOO4RsrzKx8/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/base/tf/weakPtrFacade.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRoOugAEdxpBTwXfQnQedBMTnP25vOO4RsrzKx8/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/base/vt/array.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRoOugAEdxpBTwXfQnQedBMTnP25vOO4RsrzKx8/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/base/vt/dictionary.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRoOugAEdxpBTwXfQnQedBMTnP25vOO4RsrzKx8/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/sdf/declareHandles.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRoOugAEdxpBTwXfQnQedBMTnP25vOO4RsrzKx8/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/sdf/listEditorProxy.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRoOugAEdxpBTwXfQnQedBMTnP25vOO4RsrzKx8/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/sdf/listProxy.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRoOugAEdxpBTwXfQnQedBMTnP25vOO4RsrzKx8/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/sdf/mapEditProxy.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRoOugAEdxpBTwXfQnQedBMTnP25vOO4RsrzKx8/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/usd/object.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRoOugAEdxpBTwXfQnQedBMTnP25vOO4RsrzKx8/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/usd/primData.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRoOugAEdxpBTwXfQnQedBMTnP25vOO4RsrzKx8/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/usd/primRange.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRoOugAEdxpBTwXfQnQedBMTnP25vOO4RsrzKx8/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/usd/stage.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRoOugAEdxpBTwXfQnQedBMTnP25vOO4RsrzKx8/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/usdGeom/xformOp.h"
 + "EntitySkeletalAnimationBuilder dropping skeletal animation frame at time %f in %s because its translations/rotations/scales arrays are shorter than the joint count."
-- "/AppleInternal/Library/BuildRoots/4~CQHRugB5-S66CO4Jk2iwx0BUCgnBMGYXgnQLXmQ/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/base/tf/notice.h"
-- "/AppleInternal/Library/BuildRoots/4~CQHRugB5-S66CO4Jk2iwx0BUCgnBMGYXgnQLXmQ/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/base/tf/refPtr.h"
-- "/AppleInternal/Library/BuildRoots/4~CQHRugB5-S66CO4Jk2iwx0BUCgnBMGYXgnQLXmQ/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/base/tf/weakPtrFacade.h"
-- "/AppleInternal/Library/BuildRoots/4~CQHRugB5-S66CO4Jk2iwx0BUCgnBMGYXgnQLXmQ/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/base/vt/array.h"
-- "/AppleInternal/Library/BuildRoots/4~CQHRugB5-S66CO4Jk2iwx0BUCgnBMGYXgnQLXmQ/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/base/vt/dictionary.h"
-- "/AppleInternal/Library/BuildRoots/4~CQHRugB5-S66CO4Jk2iwx0BUCgnBMGYXgnQLXmQ/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/sdf/declareHandles.h"
-- "/AppleInternal/Library/BuildRoots/4~CQHRugB5-S66CO4Jk2iwx0BUCgnBMGYXgnQLXmQ/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/sdf/listEditorProxy.h"
-- "/AppleInternal/Library/BuildRoots/4~CQHRugB5-S66CO4Jk2iwx0BUCgnBMGYXgnQLXmQ/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/sdf/listProxy.h"
-- "/AppleInternal/Library/BuildRoots/4~CQHRugB5-S66CO4Jk2iwx0BUCgnBMGYXgnQLXmQ/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/sdf/mapEditProxy.h"
-- "/AppleInternal/Library/BuildRoots/4~CQHRugB5-S66CO4Jk2iwx0BUCgnBMGYXgnQLXmQ/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/usd/object.h"
-- "/AppleInternal/Library/BuildRoots/4~CQHRugB5-S66CO4Jk2iwx0BUCgnBMGYXgnQLXmQ/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/usd/primData.h"
-- "/AppleInternal/Library/BuildRoots/4~CQHRugB5-S66CO4Jk2iwx0BUCgnBMGYXgnQLXmQ/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/usd/primRange.h"
-- "/AppleInternal/Library/BuildRoots/4~CQHRugB5-S66CO4Jk2iwx0BUCgnBMGYXgnQLXmQ/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/usd/stage.h"
-- "/AppleInternal/Library/BuildRoots/4~CQHRugB5-S66CO4Jk2iwx0BUCgnBMGYXgnQLXmQ/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/usdGeom/xformOp.h"
-
 ```

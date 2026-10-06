@@ -2,49 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/XOJIT.framework/XOJIT`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x255d08` | `0x256438` | **`+0x730`** |
+| `__TEXT.__cstring` | `0x7ba5b` | `0x7bb02` | **`+0xa7`** |
+| `__TEXT.__oslogstring` | `0x16e` | `0x1cd` | **`+0x5f`** |
+| `__AUTH_CONST.__auth_got` | `0x948` | `0x968` | **`+0x20`** |
+| `__TEXT.__const` | `0x1e79c` | `0x1e7ac` | **`+0x10`** |
+| `__DATA_CONST.__orc_runtime` | `0x7b03b8` | `0x7b03b0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -83.0.0.0.0
--  __TEXT.__text: 0x255d08
 +84.0.0.0.0
-+  __TEXT.__text: 0x256438
-   __TEXT.__init_offsets: 0x11c
--  __TEXT.__const: 0x1e79c
--  __TEXT.__oslogstring: 0x16e
-+  __TEXT.__const: 0x1e7ac
-+  __TEXT.__oslogstring: 0x1cd
-   __TEXT.__swift5_typeref: 0x28a
--  __TEXT.__cstring: 0x7ba5b
-+  __TEXT.__cstring: 0x7bb02
-   __TEXT.__swift5_capture: 0x34
-   __TEXT.__swift5_reflstr: 0x252
-   __TEXT.__swift5_assocty: 0x28
 
-   __DATA_CONST.__objc_classlist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x18
--  __DATA_CONST.__orc_runtime: 0x7b03b8
-+  __DATA_CONST.__orc_runtime: 0x7b03b0
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x8da8
-   __AUTH_CONST.__objc_const: 0x770
-   __AUTH_CONST.__weak_auth_got: 0x48
--  __AUTH_CONST.__auth_got: 0x948
-+  __AUTH_CONST.__auth_got: 0x968
-   __AUTH.__objc_data: 0x50
-   __AUTH.__data: 0xa68
-   __DATA.__data: 0xb18
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 8523
--  Symbols:   10287
+-  Symbols:   10284
 -  CStrings:  19850
 +  Functions: 8524
-+  Symbols:   10291
++  Symbols:   10288
 +  CStrings:  19855
- 
 Symbols:
 + __ZN4llvm3sys2fs14setPermissionsERKNS_5TwineENS1_5permsE
 + _chmod

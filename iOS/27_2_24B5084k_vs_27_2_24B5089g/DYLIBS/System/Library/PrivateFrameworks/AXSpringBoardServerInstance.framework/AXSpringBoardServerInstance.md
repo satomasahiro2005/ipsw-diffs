@@ -2,89 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/AXSpringBoardServerInstance.framework/AXSpringBoardServerInstance`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3ee34` | `0x3f8c4` | **`+0xa90`** |
+| `__DATA_DIRTY.__objc_data` | `0xeb0` | `0x1090` | **`+0x1e0`** |
+| `__TEXT.__oslogstring` | `0x19da` | `0x1bb7` | **`+0x1dd`** |
+| `__AUTH.__objc_data` | `0x520` | `0x3e0` | **`-0x140`** |
+| `__TEXT.__cstring` | `0x6799` | `0x68d1` | **`+0x138`** |
+| `__AUTH_CONST.__objc_const` | `0x3a30` | `0x3b50` | **`+0x120`** |
+| `__AUTH_CONST.__cfstring` | `0x6be0` | `0x6ce0` | **`+0x100`** |
+| `__TEXT.__objc_methlist` | `0x3414` | `0x347c` | **`+0x68`** |
+| `__TEXT.__gcc_except_tab` | `0xba0` | `0xbe4` | **`+0x44`** |
+| `__DATA_CONST.__objc_selrefs` | `0x29b0` | `0x29e8` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0x1268` | `0x12a0` | **`+0x38`** |
+| `__DATA_CONST.__const` | `0x10f8` | `0x1120` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0xca0` | `0xcc0` | **`+0x20`** |
+| `__DATA.__bss` | `0x838` | `0x818` | **`-0x20`** |
+| `__DATA_DIRTY.__bss` | `0xd8` | `0xf8` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x200` | `0x210` | **`+0x10`** |
+| `__TEXT.__const` | `0x5b0` | `0x5c0` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x100` | `0x108` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3245.7.1.0.0
--  __TEXT.__text: 0x3d604
--  __TEXT.__objc_methlist: 0x3414
--  __TEXT.__const: 0x5b0
 +3245.8.2.0.0
-+  __TEXT.__text: 0x3e07c
-+  __TEXT.__objc_methlist: 0x347c
-+  __TEXT.__const: 0x5c0
-   __TEXT.__dlopen_cstrs: 0x3ae
-   __TEXT.__swift5_typeref: 0x188
-   __TEXT.__constg_swiftt: 0x1e8
 
-   __TEXT.__swift5_reflstr: 0x34
-   __TEXT.__swift5_assocty: 0x18
-   __TEXT.__swift5_capture: 0x98
--  __TEXT.__cstring: 0x6799
--  __TEXT.__oslogstring: 0x19da
-+  __TEXT.__cstring: 0x68d1
-+  __TEXT.__oslogstring: 0x1bb7
-   __TEXT.__swift5_proto: 0x34
-   __TEXT.__swift5_types: 0x20
-   __TEXT.__swift_as_entry: 0x24
-   __TEXT.__swift_as_ret: 0x24
-   __TEXT.__swift_as_cont: 0x20
--  __TEXT.__gcc_except_tab: 0xba0
--  __TEXT.__unwind_info: 0x1710
-+  __TEXT.__gcc_except_tab: 0xbe4
-+  __TEXT.__unwind_info: 0x1750
-   __TEXT.__eh_frame: 0x320
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x10f8
--  __DATA_CONST.__objc_classlist: 0x200
-+  __DATA_CONST.__const: 0x1120
-+  __DATA_CONST.__objc_classlist: 0x210
-   __DATA_CONST.__objc_protolist: 0x78
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x29b0
--  __DATA_CONST.__objc_superrefs: 0x100
-+  __DATA_CONST.__objc_selrefs: 0x29e8
-+  __DATA_CONST.__objc_superrefs: 0x108
-   __DATA_CONST.__objc_arraydata: 0x120
-   __DATA_CONST.__got: 0x870
--  __AUTH_CONST.__const: 0xca0
--  __AUTH_CONST.__cfstring: 0x6be0
--  __AUTH_CONST.__objc_const: 0x3a30
-+  __AUTH_CONST.__const: 0xcc0
-+  __AUTH_CONST.__cfstring: 0x6ce0
-+  __AUTH_CONST.__objc_const: 0x3b50
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_intobj: 0x528
-   __AUTH_CONST.__objc_arrayobj: 0x60
-   __AUTH_CONST.__objc_dictobj: 0x190
-   __AUTH_CONST.__auth_got: 0xbe0
--  __AUTH.__objc_data: 0x520
-+  __AUTH.__objc_data: 0x3e0
-   __AUTH.__data: 0x250
-   __DATA.__objc_ivar: 0x10c
-   __DATA.__data: 0x688
-   __DATA.__common: 0x10
--  __DATA_DIRTY.__objc_data: 0xeb0
--  __DATA_DIRTY.__bss: 0xd8
-+  __DATA_DIRTY.__objc_data: 0x1090
-+  __DATA_DIRTY.__bss: 0xf8
-   - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1381
--  Symbols:   3724
+-  Symbols:   2715
 -  CStrings:  1128
 +  Functions: 1393
-+  Symbols:   3757
++  Symbols:   2742
 +  CStrings:  1141
- 
 Symbols:
 + +[AXSB_SBSiriHardwareButtonEventsOnlyButtonInteractionSafeCategory _accessibilityPerformValidations:]
 + +[AXSB_SBSiriHardwareButtonEventsOnlyButtonInteractionSafeCategory(SafeCategory) safeCategoryBaseClass]
@@ -175,13 +128,6 @@ Symbols:
 + ___67+[AXSpringBoardServerHelper _axAssistantIslandIsPresentingActivity]_block_invoke
 + ___75-[AXSpringBoardServerHelper _accessibilityDismissBannersBlockingCoverSheet]_block_invoke
 + ___block_descriptor_64_e8_32s40bs48w_e5_v8?0lw48l8s32l8s40l8
-+ _objc_msgSend$_accessibilityDismissBannersBlockingCoverSheet
-+ _objc_msgSend$_accessibilityShowCoverSheetDismissingBlockingBanners:retriesLeft:completion:
-+ _objc_msgSend$_axAssistantIslandIsPresentingActivity
-+ _objc_msgSend$_fetchStageControllerForWindowScene:states:
-+ _objc_msgSend$dismissAllBannersInWindowScene:animated:reason:
-+ _objc_msgSend$initWithImageCaptionsIsEnabled:setImageCaptionsIsEnabled:imageCaptionsPreferenceWasSetByUser:shouldDownloadAsset:
-+ _objc_msgSend$voiceOverImageCaptionsModeWasSetByUser
 - GCC_except_table1046
 - GCC_except_table1051
 - GCC_except_table1055
@@ -244,7 +190,6 @@ Symbols:
 - GCC_except_table968
 - GCC_except_table973
 - GCC_except_table975
-- _objc_msgSend$initWithImageCaptionsIsEnabled:setImageCaptionsIsEnabled:shouldDownloadAsset:
 CStrings:
 + "A banner is still blocking the CoverSheet capability after %g seconds; asking for CoverSheet anyway"
 + "AXSBServer: diminishJindo collapsed %@ of %@ System Aperture elements (%@ total)"

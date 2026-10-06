@@ -2,111 +2,51 @@
 
 > `/System/Library/Frameworks/FinanceKitUI.framework/FinanceKitUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x37f5c4` | `0x38751c` | **`+0x7f58`** |
+| `__TEXT.__swift5_typeref` | `0x39048` | `0x394a2` | **`+0x45a`** |
+| `__TEXT.__const` | `0x24284` | `0x24494` | **`+0x210`** |
+| `__AUTH.__data` | `0xde48` | `0xe008` | **`+0x1c0`** |
+| `__TEXT.__cstring` | `0xb0f4` | `0xb284` | **`+0x190`** |
+| `__TEXT.__unwind_info` | `0x9e28` | `0x9f90` | **`+0x168`** |
+| `__DATA.__data` | `0xd928` | `0xda58` | **`+0x130`** |
+| `__DATA_DIRTY.__bss` | `0xd00` | `0xe00` | **`+0x100`** |
+| `__TEXT.__constg_swiftt` | `0xb7f8` | `0xb8b4` | **`+0xbc`** |
+| `__TEXT.__swift5_capture` | `0x2d8c` | `0x2e14` | **`+0x88`** |
+| `__TEXT.__swift5_fieldmd` | `0x8ca0` | `0x8d04` | **`+0x64`** |
+| `__AUTH.__objc_data` | `0x3848` | `0x37f8` | **`-0x50`** |
+| `__DATA_DIRTY.__objc_data` | `—` | `0x50` | **`+0x50`** |
+| `__TEXT.__eh_frame` | `0xc9b8` | `0xca08` | **`+0x50`** |
+| `__TEXT.__swift5_reflstr` | `0x8157` | `0x81a7` | **`+0x50`** |
+| `__DATA.__bss` | `0x19d08` | `0x19cd8` | **`-0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x5028` | `0x5048` | **`+0x20`** |
+| `__AUTH_CONST.__const` | `0xea00` | `0xea18` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x2808` | `0x2820` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x2888` | `0x2898` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1a20` | `0x1a28` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x1808` | `0x1810` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0xd00` | `0xd04` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0xab0` | `0xab4` | **`+0x4`** |
+| `__TEXT.__swift_as_cont` | `0x810` | `0x80c` | **`-0x4`** |
+| `__TEXT.__swift_as_entry` | `0x424` | `0x428` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x3e8` | `0x3ec` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x37f5c4
--  __TEXT.__objc_methlist: 0x1808
--  __TEXT.__const: 0x24284
--  __TEXT.__cstring: 0xb0f4
--  __TEXT.__swift5_typeref: 0x39048
--  __TEXT.__swift5_capture: 0x2d8c
--  __TEXT.__constg_swiftt: 0xb7f8
--  __TEXT.__swift5_reflstr: 0x8157
--  __TEXT.__swift5_assocty: 0x2808
--  __TEXT.__swift5_fieldmd: 0x8ca0
-+  __TEXT.__text: 0x38751c
-+  __TEXT.__objc_methlist: 0x1810
-+  __TEXT.__const: 0x24494
-+  __TEXT.__cstring: 0xb284
-+  __TEXT.__swift5_typeref: 0x394a2
-+  __TEXT.__swift5_capture: 0x2e14
-+  __TEXT.__constg_swiftt: 0xb8b4
-+  __TEXT.__swift5_reflstr: 0x81a7
-+  __TEXT.__swift5_assocty: 0x2820
-+  __TEXT.__swift5_fieldmd: 0x8d04
-   __TEXT.__swift5_builtin: 0x294
--  __TEXT.__swift5_proto: 0xd00
--  __TEXT.__swift5_types: 0xab0
--  __TEXT.__swift_as_entry: 0x424
--  __TEXT.__swift_as_ret: 0x3e8
--  __TEXT.__swift_as_cont: 0x810
-+  __TEXT.__swift5_proto: 0xd04
-+  __TEXT.__swift5_types: 0xab4
-+  __TEXT.__swift_as_entry: 0x428
-+  __TEXT.__swift_as_ret: 0x3ec
-+  __TEXT.__swift_as_cont: 0x80c
-   __TEXT.__oslogstring: 0x3f5c
-   __TEXT.__swift5_mpenum: 0x70
-   __TEXT.__swift5_protos: 0x50
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0x9e28
--  __TEXT.__eh_frame: 0xc9b8
-+  __TEXT.__unwind_info: 0x9f90
-+  __TEXT.__eh_frame: 0xca08
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-362.0.0.0.0
++365.0.0.0.0
 
-   __DATA_CONST.__objc_catlist2: 0x38
-   __DATA_CONST.__objc_protolist: 0x1a0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1a20
-+  __DATA_CONST.__objc_selrefs: 0x1a28
-   __DATA_CONST.__objc_protorefs: 0xe8
-   __DATA_CONST.__objc_superrefs: 0x50
--  __DATA_CONST.__got: 0x2888
--  __AUTH_CONST.__const: 0xea00
-+  __DATA_CONST.__got: 0x2898
-+  __AUTH_CONST.__const: 0xea18
-   __AUTH_CONST.__cfstring: 0xa0
-   __AUTH_CONST.__objc_const: 0x6af8
--  __AUTH_CONST.__auth_got: 0x5028
--  __AUTH.__objc_data: 0x3848
--  __AUTH.__data: 0xde48
-+  __AUTH_CONST.__auth_got: 0x5048
-+  __AUTH.__objc_data: 0x37f8
-+  __AUTH.__data: 0xe008
-   __DATA.__objc_ivar: 0x88
--  __DATA.__data: 0xd928
-+  __DATA.__data: 0xda58
-   __DATA.__objc_stublist: 0x40
--  __DATA.__bss: 0x19d08
-+  __DATA.__bss: 0x19cd8
-   __DATA.__common: 0x3d8
-+  __DATA_DIRTY.__objc_data: 0x50
-   __DATA_DIRTY.__data: 0xcb8
--  __DATA_DIRTY.__bss: 0xd00
-+  __DATA_DIRTY.__bss: 0xe00
-   __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 14590
--  Symbols:   9714
--  CStrings:  1288
+-  Symbols:   6875
+-  CStrings:  1284
 +  Functions: 14772
-+  Symbols:   9731
-+  CStrings:  1296
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__oslogstring : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_types2 : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist2 : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __DATA.__objc_stublist : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   6868
++  CStrings:  1292
 Symbols:
 + ___swift_closure_destructor.104Tm
 + ___swift_closure_destructor.29Tm
@@ -128,7 +68,6 @@ Symbols:
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAcAE29navigationBarTitleDisplayModeyQrAA010NavigationI4ItemV0jkL0OFQOyAA08ModifiedG0VyAA4ListVys5NeverOAA05TupleG0VyAMyAcAE16headerProminenceyQrAA0T0OFQOyAA7SectionVyAMy010FinanceKitB018OrderDetailsHeaderVAA16_OverlayModifierVyAA14GeometryReaderVyAcAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAMyAA5ColorVAA25_AppearanceActionModifierVG_So6CGRectVA13_SQ12CoreGraphicsyHCg0_Qo_GGGAA05EmptyC0VA20_G_Qo_AA21_TraitWritingModifierVyAA0P21RowBackgroundTraitKeyVGG_AA7ForEachVySayAY0xY6ReturnV0C5ModelVGSSAXyA20_A32_A20_GGAA012_ConditionalG0VyAY0xY14NoFulfillmentsVA30_ySayAY0xY11FulfillmentVA33_VGSSA43_GGAY0xY4InfoVAY0xy10ReturnInfoU0VSgAXyAY0xyuZ0VAMyAY0x9LinkedAppC0VA24_yAA0P17RowInsetsTraitKeyVGGA20_GSgAY0xy13RelatedEmailsU0VSgAcAE04listU12CornerRadiusyQrA14_7CGFloatVSgFQOyAXyA20_AMyAMyAY15LegalDisclaimerVA59_GA27_GA20_G_Qo_AMyAMyAMyAMyAMyAA4TextVAA30_EnvironmentKeyWritingModifierVyAA13TextAlignmentOGGAA24_ForegroundStyleModifierVyAA22HierarchicalShapeStyleVGGA79_yAA4FontVSgGGAA16_FlexFrameLayoutVGA27_GSgQPGGAY0xY19RefreshableModifierVG_Qo__AA0fN0VyytAMyAA6VStackVyAA6HStackVyAMyAMyAMyAMyAY13MerchantImageVAY0X18ImageStyleModifier33_F868C378042D4589E0950EEEC8FCDC41LLVGAA14_OpacityEffectVGAA13_OffsetEffectVGAA18_AnimationModifierVyAY0Z14IconVisibilityVGGGGA17_GGQo_HO
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAcAE29navigationBarTitleDisplayModeyQrAA010NavigationI4ItemV0jkL0OFQOyAA4ListVys5NeverOAA05TupleG0VyAA08ModifiedG0VyASyAA7SectionVyAA05EmptyC0V010FinanceKitB028InternalDataCollectionBannerVAWGAA21_TraitWritingModifierVyAA0O17RowInsetsTraitKeyVGGA1_yAA0O21RowBackgroundTraitKeyVGGSg_ASyASyAcAE16headerProminenceyQrAA10ProminenceOFQOyAUyASyASyAX027ExtractedOrderDetailsHeaderC0VAA16_OverlayModifierVyAA14GeometryReaderVyAcAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyASyAA5ColorVAA25_AppearanceActionModifierVG_So6CGRectVA29_SQ12CoreGraphicsyHCg0_Qo_GGGAA30_EnvironmentKeyWritingModifierVyAA4TextV4CaseOSgGGA2WG_Qo_A4_GA8_GAA012_ConditionalG0VyAA7ForEachVySayAX40ExtractedOrderDetailsShippingFulfillmentV0C5ModelVGSiAUyAWA53_AWGGASyAUyAwX35ExtractedOrderDetailsNoFulfillmentsVAWGA4_GGAX025ExtractedOrderDetailsLinenS0VSgAX25ExtractedOrderDetailsInfoVAUyAwX019OrderDetailsContactS0VAWGSgAX025OrderDetailsRelatedEmailsS0VSgQPGG_Qo__AA0fN0VyytASyAA6VStackVyAA6HStackVyASyASyASyASyAX26ExtractedOrderMerchantIconVAX23OrderImageStyleModifier33_F868C378042D4589E0950EEEC8FCDC41LLVGAA14_OpacityEffectVGAA13_OffsetEffectVGAA18_AnimationModifierVyAX20HeaderIconVisibilityVGGGGA33_GGQo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE29navigationBarTitleDisplayModeyQrAA010NavigationE4ItemV0fgH0OFQOyAA15ModifiedContentVyAcAE7toolbar7contentQrqd__yXE_tAA07ToolbarL0Rd__lFQOyAA4ListVys5NeverOAA05TupleL0Vy010FinanceKitB028ReturnDetailsContentsSectionV_AJyAJyAA0X0VyAA05EmptyC0VAJyAcAE13listRowInsetsyQrAA4EdgeO3SetV_12CoreGraphics7CGFloatVSgtFQOyAT05OrdervX6HeaderV_Qo_AA21_TraitWritingModifierVyAA0P21RowBackgroundTraitKeyVGGAZGA12_yAA0pX15SpacingTraitKeyVGGAA30_EnvironmentKeyWritingModifierVyAA0pX7SpacingVSgGGSgAJyAJyAXyAzSyAcAE11contextMenu9menuItemsQrqd__yXE_tAaBRd__lFQOyAT05OrderV9StatusRowV_AA6ButtonVyAA5LabelVyAA4TextVAA5ImageVGGQo_Sg_A45_QPGAZGA20_GA27_GSgAJyAJyAXyAzSyA35_yAA6HStackVyASyA39__AA6SpacerVA41_QPGGG_A35_yA39_GSgQPGAZGA20_GA27_GSgAJyAJyAXyAZA58_AZGA20_GA27_GSgAJyAJyAXyA9_AJyAT014OrderLinkedAppC0VA12_yAA0P17RowInsetsTraitKeyVGGAZGA20_GA27_GSgAcAE0zX12CornerRadiusyQrA7_FQOyAXyAzJyAJyAT15LegalDisclaimerVA73_GA15_GAZG_Qo_QPGG_AA0oJ0VyytAT0uV13MerchantImageVGQo_AT05OrderV19RefreshableModifierVG_Qo_HO
-+ _objc_msgSend$initWithPaymentPass:institution:flowOrigin:
 + _symbolic _____ 12FinanceKitUI27OrderDetailsPoweredByFooterV
 + _symbolic _____Sg 12FinanceKitUI27OrderDetailsPoweredByFooterV
 + _symbolic _____Sg______Sg_____y___________y_____y__________GGQo_Sg_____Sgt 12FinanceKitUI27OrderDetailsShippingAddressV AA0D10NumberViewV 05SwiftC00I0PAFE11contextMenu9menuItemsQrqd__yXE_tAfGRd__lFQO AA0dE9StatusRowV AF6ButtonV AF5LabelV AF4TextV AF5ImageV AA0d5TotalI033_2E6B7F1C676F4CE2364FBE017A6262A6LLV
@@ -345,5 +284,4 @@ CStrings:
 + "ORDER_DETAILS_TRACKING_NUMBER_TITLE"
 + "ORDER_DETAILS_TRACKING_NUMBER_TITLE_WITH_CARRIER"
 + "PreviewResources"
-
 ```

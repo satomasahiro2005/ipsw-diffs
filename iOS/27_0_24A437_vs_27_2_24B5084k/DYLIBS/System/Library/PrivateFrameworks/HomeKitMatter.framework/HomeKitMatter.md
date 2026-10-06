@@ -2,74 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/HomeKitMatter.framework/HomeKitMatter`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1813cc` | `0x184130` | **`+0x2d64`** |
+| `__TEXT.__oslogstring` | `0x4f542` | `0x502d8` | **`+0xd96`** |
+| `__AUTH_CONST.__objc_const` | `0x10238` | `0x10330` | **`+0xf8`** |
+| `__TEXT.__cstring` | `0x6ed0` | `0x6fc3` | **`+0xf3`** |
+| `__TEXT.__objc_methlist` | `0xad0c` | `0xadfc` | **`+0xf0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7098` | `0x7158` | **`+0xc0`** |
+| `__AUTH_CONST.__cfstring` | `0x6d20` | `0x6dc0` | **`+0xa0`** |
+| `__TEXT.__gcc_except_tab` | `0x302c` | `0x30a8` | **`+0x7c`** |
+| `__DATA_CONST.__const` | `0x48f0` | `0x4940` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x3160` | `0x3198` | **`+0x38`** |
+| `__DATA.__bss` | `0x478` | `0x498` | **`+0x20`** |
+| `__DATA_DIRTY.__bss` | `0xc0` | `0xa0` | **`-0x20`** |
+| `__DATA.__objc_ivar` | `0xb64` | `0xb78` | **`+0x14`** |
+| `__TEXT.__const` | `0x298` | `0x2a8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -1493.1.5.1.1
--  __TEXT.__text: 0x17d6bc
--  __TEXT.__objc_methlist: 0xad0c
--  __TEXT.__const: 0x298
 +1514.0.0.0.1
-+  __TEXT.__text: 0x1803f0
-+  __TEXT.__objc_methlist: 0xadfc
-+  __TEXT.__const: 0x2a8
-   __TEXT.__dlopen_cstrs: 0x58
--  __TEXT.__gcc_except_tab: 0x302c
--  __TEXT.__cstring: 0x6ed0
--  __TEXT.__oslogstring: 0x4f542
-+  __TEXT.__gcc_except_tab: 0x30a8
-+  __TEXT.__cstring: 0x6fc3
-+  __TEXT.__oslogstring: 0x502d8
-   __TEXT.__ustring: 0x68
--  __TEXT.__unwind_info: 0x3c88
-+  __TEXT.__unwind_info: 0x3ce0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x48f0
-+  __DATA_CONST.__const: 0x4940
-   __DATA_CONST.__objc_classlist: 0x458
-   __DATA_CONST.__objc_catlist: 0x50
-   __DATA_CONST.__objc_protolist: 0x138
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7098
-+  __DATA_CONST.__objc_selrefs: 0x7158
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x310
-   __DATA_CONST.__objc_arraydata: 0x240
-   __DATA_CONST.__got: 0x9f8
-   __AUTH_CONST.__const: 0x1140
--  __AUTH_CONST.__cfstring: 0x6d20
--  __AUTH_CONST.__objc_const: 0x10238
-+  __AUTH_CONST.__cfstring: 0x6dc0
-+  __AUTH_CONST.__objc_const: 0x10330
-   __AUTH_CONST.__objc_intobj: 0x1740
-   __AUTH_CONST.__objc_arrayobj: 0x168
-   __AUTH_CONST.__objc_doubleobj: 0x60
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0x1e50
--  __DATA.__objc_ivar: 0xb64
-+  __DATA.__objc_ivar: 0xb78
-   __DATA.__data: 0xea0
-   __DATA_DIRTY.__objc_data: 0xd20
--  __DATA_DIRTY.__bss: 0xc0
-+  __DATA_DIRTY.__bss: 0xa0
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /System/Library/PrivateFrameworks/UARPKit.framework/UARPKit
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 4477
--  Symbols:   10307
+-  Symbols:   7338
 -  CStrings:  5772
 +  Functions: 4506
-+  Symbols:   10370
++  Symbols:   7378
 +  CStrings:  5817
- 
 Symbols:
 + +[HMMTRProtocolMap mapTargetAirPurifierState:]
 + -[HMMTRAccessoryServer _deviceStorageDataSourceForCurrentNode]
@@ -244,34 +208,6 @@ Symbols:
 + _logCategory._hmf_once_v493
 + _logCategory._hmf_once_v51
 + _logCategory._hmf_once_v787
-+ _objc_msgSend$_deviceStorageDataSourceForCurrentNode
-+ _objc_msgSend$_endPairingMode
-+ _objc_msgSend$_enqueueResumeFinalizeAttempt
-+ _objc_msgSend$_invalidateFinalizeRetry
-+ _objc_msgSend$_persistThreadWEDInfoToStorage
-+ _objc_msgSend$_readCharacteristicValueFromCacheAfterConfirmingBridgedAccessoryReachabilityWithCharacteristic:responseHandler:
-+ _objc_msgSend$_resumeFinalizePairing
-+ _objc_msgSend$_scheduleFinalizeRetry
-+ _objc_msgSend$_targetPositionDictionary:fallingBackToCurrentPositionLift:params:
-+ _objc_msgSend$accessoryNeedsFinalizeResumeForNodeID:fabricUUID:
-+ _objc_msgSend$accessoryNetworkCommissioningStateIsReadyForNodeID:fabricUUID:
-+ _objc_msgSend$accessoryServerBrowser:getThreadNetworkCredentialsForFabricUUID:requireFullNetworkAttributes:withCompletion:
-+ _objc_msgSend$allowsDeferredMatterCommissioningOnThisControllerDevice
-+ _objc_msgSend$eMACAddressOfPairingAccessory
-+ _objc_msgSend$fetchPreferredThreadCredentialsUsingFabricUUID:systemCommissionerFabric:withCompletion:
-+ _objc_msgSend$finalizeRetryAttempt
-+ _objc_msgSend$finalizeRetryTimer
-+ _objc_msgSend$mapTargetAirPurifierState:
-+ _objc_msgSend$markHomeMatterFabricCommissioningDoneWithCompletion:
-+ _objc_msgSend$pendingReenumerationCompletionHandlers
-+ _objc_msgSend$pendingServiceReenumeration
-+ _objc_msgSend$removeNode:withPrivilege:fromExistingAclEntries:
-+ _objc_msgSend$resumeFinalizeForCommissionedAccessoryWithOnboardingURL:
-+ _objc_msgSend$setEMACAddressOfPairingAccessory:
-+ _objc_msgSend$setFinalizeRetryAttempt:
-+ _objc_msgSend$setFinalizeRetryTimer:
-+ _objc_msgSend$setPendingServiceReenumeration:
-+ _objc_msgSend$shouldBypassOtaTimeWindowFirstTimePairing:
 - +[HMMTRProtocolMap mapTargetAirPuriferState:]
 - -[HMMTRAccessoryServer _readCharacteristicValueFromCacheAfterConfirmingBridgedAccessroyReachabilityWithCharacteristic:responseHandler:]
 - -[HMMTRAccessoryServer removeNode:withPrivilge:fromExistingAclEntries:]
@@ -405,11 +341,6 @@ Symbols:
 - _logCategory._hmf_once_v346
 - _logCategory._hmf_once_v492
 - _logCategory._hmf_once_v750
-- _objc_msgSend$_readCharacteristicValueFromCacheAfterConfirmingBridgedAccessroyReachabilityWithCharacteristic:responseHandler:
-- _objc_msgSend$accessoryIsUserConfigurationReadyForNodeID:fabricUUID:
-- _objc_msgSend$isRequiresOptionalMatterAttributeForCharacteristic:
-- _objc_msgSend$mapTargetAirPuriferState:
-- _objc_msgSend$removeNode:withPrivilge:fromExistingAclEntries:
 CStrings:
 + "<unknown>"
 + "Accessory for nodeID %@ is not network-commissioning-ready; skipping"

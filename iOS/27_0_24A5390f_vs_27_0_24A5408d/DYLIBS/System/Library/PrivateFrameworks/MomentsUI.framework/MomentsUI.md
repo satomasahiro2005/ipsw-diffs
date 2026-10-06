@@ -2,87 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/MomentsUI.framework/MomentsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5191e4` | `0x519990` | **`+0x7ac`** |
+| `__AUTH_CONST.__const` | `0x19230` | `0x19298` | **`+0x68`** |
+| `__TEXT.__oslogstring` | `0x13b98` | `0x13be8` | **`+0x50`** |
+| `__AUTH.__objc_data` | `0x138f0` | `0x138b8` | **`-0x38`** |
+| `__TEXT.__constg_swiftt` | `0xe2fc` | `0xe2c4` | **`-0x38`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2d70` | `0x2da0` | **`+0x30`** |
+| `__TEXT.__swift5_capture` | `0x4a48` | `0x4a70` | **`+0x28`** |
+| `__AUTH_CONST.__objc_const` | `0x10d68` | `0x10d48` | **`-0x20`** |
+| `__TEXT.__cstring` | `0xe626` | `0xe646` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x2638` | `0x2648` | **`+0x10`** |
+| `__DATA.__data` | `0x67a0` | `0x67b0` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x3a10` | `0x3a00` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x1790` | `0x17a0` | **`+0x10`** |
+| `__TEXT.__const` | `0x1f7e4` | `0x1f7f4` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x9052` | `0x9042` | **`-0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x909c` | `0x9090` | **`-0xc`** |
+| `__TEXT.__swift5_typeref` | `0x8e98` | `0x8e8e` | **`-0xa`** |
+| `__DATA.__common` | `0x1120` | `0x1118` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x108b8` | `0x108c0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -416.0.0.0.0
--  __TEXT.__text: 0x5191e4
 +417.0.0.0.0
-+  __TEXT.__text: 0x519990
-   __TEXT.__objc_methlist: 0x4364
--  __TEXT.__cstring: 0xe626
--  __TEXT.__const: 0x1f7e4
--  __TEXT.__swift5_typeref: 0x8e98
--  __TEXT.__swift5_reflstr: 0x9052
-+  __TEXT.__cstring: 0xe646
-+  __TEXT.__const: 0x1f7f4
-+  __TEXT.__swift5_typeref: 0x8e8e
-+  __TEXT.__swift5_reflstr: 0x9042
-   __TEXT.__swift5_assocty: 0x1180
--  __TEXT.__constg_swiftt: 0xe2fc
--  __TEXT.__swift5_fieldmd: 0x909c
-+  __TEXT.__constg_swiftt: 0xe2c4
-+  __TEXT.__swift5_fieldmd: 0x9090
-   __TEXT.__swift5_builtin: 0x370
-   __TEXT.__swift5_proto: 0x119c
-   __TEXT.__swift5_types: 0x920
--  __TEXT.__oslogstring: 0x13b98
-+  __TEXT.__oslogstring: 0x13be8
-   __TEXT.__swift_as_entry: 0xc10
-   __TEXT.__swift_as_ret: 0xd40
-   __TEXT.__swift_as_cont: 0x1a00
-   __TEXT.__swift5_protos: 0xb4
--  __TEXT.__swift5_capture: 0x4a48
-+  __TEXT.__swift5_capture: 0x4a70
-   __TEXT.__swift5_mpenum: 0x40
--  __TEXT.__unwind_info: 0x108b8
-+  __TEXT.__unwind_info: 0x108c0
-   __TEXT.__eh_frame: 0x1e300
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3a10
-+  __DATA_CONST.__const: 0x3a00
-   __DATA_CONST.__objc_classlist: 0x7e8
-   __DATA_CONST.__objc_protolist: 0x1a8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2d70
-+  __DATA_CONST.__objc_selrefs: 0x2da0
-   __DATA_CONST.__objc_protorefs: 0xe8
-   __DATA_CONST.__objc_superrefs: 0x18
--  __DATA_CONST.__got: 0x1790
--  __AUTH_CONST.__const: 0x19230
-+  __DATA_CONST.__got: 0x17a0
-+  __AUTH_CONST.__const: 0x19298
-   __AUTH_CONST.__cfstring: 0x1c0
--  __AUTH_CONST.__objc_const: 0x10d68
--  __AUTH_CONST.__auth_got: 0x2638
--  __AUTH.__objc_data: 0x138f0
-+  __AUTH_CONST.__objc_const: 0x10d48
-+  __AUTH_CONST.__auth_got: 0x2648
-+  __AUTH.__objc_data: 0x138b8
-   __AUTH.__data: 0x69c8
-   __DATA.__objc_ivar: 0x24
--  __DATA.__data: 0x67a0
-+  __DATA.__data: 0x67b0
-   __DATA.__bss: 0x1b5a0
--  __DATA.__common: 0x1120
-+  __DATA.__common: 0x1118
-   __DATA_DIRTY.__objc_data: 0xe70
-   __DATA_DIRTY.__data: 0x4d38
-   __DATA_DIRTY.__bss: 0x4e00
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 24160
--  Symbols:   49767
+-  Symbols:   48759
 -  CStrings:  2617
 +  Functions: 24168
-+  Symbols:   49780
++  Symbols:   48766
 +  CStrings:  2619
- 
 Symbols:
 + _$s9MomentsUI13MapsUtilitiesV18subPinTileCropRect03forF2At12parentRegion06targetM011minFractionSo6CGRectVSo22CLLocationCoordinate2DV_So012MKCoordinateM0aANSdtFZ
 + _$s9MomentsUI13MapsUtilitiesV18subPinTileCropRect03forF2At12parentRegion06targetM011minFractionSo6CGRectVSo22CLLocationCoordinate2DV_So012MKCoordinateM0aANSdtFZTf4nnnnd_nTf4nnxn_n
@@ -127,12 +83,6 @@ Symbols:
 + _CGRectIntegral
 + _OBJC_CLASS_$_UIGraphicsImageRendererFormat
 + _OBJC_CLASS_$_UIImageAsset
-+ _objc_msgSend$drawAtPoint:
-+ _objc_msgSend$initWithSize:format:
-+ _objc_msgSend$preferredFormat
-+ _objc_msgSend$scale
-+ _objc_msgSend$setOpaque:
-+ _objc_msgSend$setScale:
 - _$s9MomentsUI12MapViewModelP17imageRenderRegionSo012MKCoordinateH0aSgvgTj
 - _$s9MomentsUI12MapViewModelP17imageRenderRegionSo012MKCoordinateH0aSgvgTq
 - _$s9MomentsUI18ClientMapViewModelC06parentdeF0ACSgvg

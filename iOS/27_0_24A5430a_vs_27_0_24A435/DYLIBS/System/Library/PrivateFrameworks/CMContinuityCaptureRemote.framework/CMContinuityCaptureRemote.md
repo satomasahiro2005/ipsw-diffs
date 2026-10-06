@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CMContinuityCaptureRemote.framework/CMContinuityCaptureRemote`
 
-```diff
+### Section Size Changes
 
- 764.22.13.0.0
--  __TEXT.__text: 0xae1e8
-+  __TEXT.__text: 0xae1ec
-   __TEXT.__objc_methlist: 0x5fb4
-   __TEXT.__const: 0x13d0
-   __TEXT.__cstring: 0xa7d5
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xae1e8` | `0xae1ec` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_25636ff98 -> sub_256f08f98 : 680 -> 684
+~ sub_256239f98 -> sub_256dd1f98 : 680 -> 684
 ```

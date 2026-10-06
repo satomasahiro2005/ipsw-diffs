@@ -2,20 +2,21 @@
 
 > `/usr/libexec/dbtelemetryd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x61b0` | `0x61a4` | **`-0xc`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__const`
+- `__TEXT.__eh_frame`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 6.0.0.0.0
--  __TEXT.__text: 0x61b0
-+  __TEXT.__text: 0x61a4
-   __TEXT.__auth_stubs: 0xa10
-   __TEXT.__objc_stubs: 0x2e0
-   __TEXT.__const: 0x2f2
+```text
 Functions:
 ~ sub_100003ba0 : 3596 -> 3584
 ```

@@ -2,59 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/32023/Libraries/libGPUCompilerImplLazy.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x13a0f8` | `0x13a7f4` | **`+0x6fc`** |
+| `__TEXT.__const` | `0xd5920` | `0xd57c0` | **`-0x160`** |
+| `__DATA_CONST.__const` | `0x192db8` | `0x192ef8` | **`+0x140`** |
+| `__AUTH_CONST.__const` | `0xf4b00` | `0xf4b78` | **`+0x78`** |
+| `__TEXT.__text` | `0x1189e2c` | `0x1189e68` | **`+0x3c`** |
+| `__AUTH.__data` | `0x4b40` | `0x4b70` | **`+0x30`** |
+| `__DATA.__data` | `0x16e0` | `0x16f0` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x35a8` | `0x35a0` | **`-0x8`** |
+| `__DATA.__common` | `0x28` | `0x20` | **`-0x8`** |
+| `__DATA_DIRTY.__common` | `0x250` | `0x258` | **`+0x8`** |
+| `__DATA_DIRTY.__data` | `0x1128` | `0x1130` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1189e2c
-+  __TEXT.__text: 0x1189e68
-   __TEXT.__init_offsets: 0x14
--  __TEXT.__const: 0xd5920
--  __TEXT.__cstring: 0x13a0f8
-+  __TEXT.__const: 0xd57c0
-+  __TEXT.__cstring: 0x13a7f4
-   __TEXT.__unwind_info: 0x18a48
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x192db8
-+  __DATA_CONST.__const: 0x192ef8
-   __DATA_CONST.__weak_got: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xf4b00
-+  __AUTH_CONST.__const: 0xf4b78
-   __AUTH_CONST.__weak_auth_got: 0xb8
--  __AUTH_CONST.__auth_got: 0x35a8
--  __AUTH.__data: 0x4b40
-+  __AUTH_CONST.__auth_got: 0x35a0
-+  __AUTH.__data: 0x4b70
-   __AUTH.__thread_vars: 0x18
-   __AUTH.__thread_bss: 0x8
--  __DATA.__data: 0x16e0
-+  __DATA.__data: 0x16f0
-   __DATA.__bss: 0x58
--  __DATA.__common: 0x28
--  __DATA_DIRTY.__data: 0x1128
-+  __DATA.__common: 0x20
-+  __DATA_DIRTY.__data: 0x1130
-   __DATA_DIRTY.__bss: 0x15a8
--  __DATA_DIRTY.__common: 0x250
-+  __DATA_DIRTY.__common: 0x258
-   - /System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/32023/Libraries/libGPUCompilerImpl.dylib
-   - /System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/32023/Libraries/libLLVM.dylib
-   - /System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/32023/Libraries/libllvm-flatbuffers.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libarchive.2.dylib
-   - /usr/lib/libc++.1.dylib
+-32023.917.2.0.0
++32023.920.0.0.0
+
 -  Functions: 37809
 -  Symbols:   1842
 -  CStrings:  56821
 +  Functions: 37806
 +  Symbols:   1841
 +  CStrings:  56861
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__thread_vars : content changed
 Symbols:
 - __ZNK4llvm10DataLayout13getIntPtrTypeERNS_11LLVMContextEj
 CStrings:
@@ -756,5 +732,4 @@ CStrings:
 - "viBK*_19"
 - "zBS"
 - "zBs"
-
 ```

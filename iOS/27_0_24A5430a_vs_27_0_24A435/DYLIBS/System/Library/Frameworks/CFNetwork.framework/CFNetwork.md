@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/CFNetwork.framework/CFNetwork`
 
-```diff
+### Section Size Changes
 
- 3896.100.1.2.1
--  __TEXT.__text: 0x2565e4
-+  __TEXT.__text: 0x2567f0
-   __TEXT.__lazy_helpers: 0x2808
-   __TEXT.__objc_methlist: 0x9c8c
-   __TEXT.__const: 0xc9c2c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2565e4` | `0x2567f0` | **`+0x20c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __findExactString : 312 -> 316
 ~ __findCanonicalString : 788 -> 792

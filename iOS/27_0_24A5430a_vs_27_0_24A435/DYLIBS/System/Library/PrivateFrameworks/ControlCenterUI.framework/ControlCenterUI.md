@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ControlCenterUI.framework/ControlCenterUI`
 
-```diff
+### Section Size Changes
 
- 704.0.2.0.0
--  __TEXT.__text: 0xbb3e0
-+  __TEXT.__text: 0xbb4ac
-   __TEXT.__objc_methlist: 0xb538
-   __TEXT.__const: 0x2c3a
-   __TEXT.__cstring: 0x4824
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbb3e0` | `0xbb4ac` | **`+0xcc`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[CCUIHeaderPocketView yOriginForCompactControlForFrame:] : 924 -> 1012
 ~ sub_223ded7c4 -> sub_22461d81c : 740 -> 744

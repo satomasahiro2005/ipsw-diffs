@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ExposureNotificationDaemon.framework/ExposureNotificationDaemon`
 
-```diff
+### Section Size Changes
 
- 2700.51.1.3.0
--  __TEXT.__text: 0x8f858
-+  __TEXT.__text: 0x8f84c
-   __TEXT.__objc_methlist: 0x57d4
-   __TEXT.__const: 0x3a0
-   __TEXT.__cstring: 0x1fcc8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8f858` | `0x8f84c` | **`-0xc`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _OUTLINED_FUNCTION_13 : 12 -> 20
 ~ _OUTLINED_FUNCTION_15 : 20 -> 12

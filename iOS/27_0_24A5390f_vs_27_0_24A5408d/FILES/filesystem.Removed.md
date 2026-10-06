@@ -1,4 +1,4 @@
-## filesystem — Removed (5664)
+## filesystem — Removed (5658)
 
 - `/Applications/CompanionSetup.app/Home.caar`
 - `/Applications/CompanionSetup.app/Room.caar`
@@ -213,11 +213,11 @@
 - `/System/Library/Frameworks/MetalFX.framework/emit_tbbrnet_nchw_nq_constants.dat`
 - `/System/Library/Frameworks/MetalFX.framework/emit_tbbrnet_nchw_q_constants.dat`
 - `/System/Library/Frameworks/MetalFX.framework/emit_tbbrnet_nhwc_nq_constants.dat`
-- `/System/Library/Frameworks/Vision.framework/ageEstimation_v1md3_fp16.bundle/H18.bundle/H18.e5`
-- `/System/Library/Frameworks/Vision.framework/ageEstimation_v1md3_fp16.bundle/H18.bundle/main/main_ane/model.hwx`
+- `/System/Library/Frameworks/Vision.framework/ageEstimation_v1md3_fp16.bundle/H17.bundle/H17.e5`
+- `/System/Library/Frameworks/Vision.framework/ageEstimation_v1md3_fp16.bundle/H17.bundle/main/main_ane/model.hwx`
 - `/System/Library/Frameworks/Vision.framework/ageEstimation_v1md3_fp16.bundle/ageEstimation_v1md3_fp16.mil`
-- `/System/Library/Frameworks/Vision.framework/faceliveness_ageverification_fp16.bundle/H18.bundle/H18.e5`
-- `/System/Library/Frameworks/Vision.framework/faceliveness_ageverification_fp16.bundle/H18.bundle/main/main_ane/model.hwx`
+- `/System/Library/Frameworks/Vision.framework/faceliveness_ageverification_fp16.bundle/H17.bundle/H17.e5`
+- `/System/Library/Frameworks/Vision.framework/faceliveness_ageverification_fp16.bundle/H17.bundle/main/main_ane/model.hwx`
 - `/System/Library/Frameworks/Vision.framework/faceliveness_ageverification_fp16.bundle/faceliveness_ageverification_fp16.mil`
 - `/System/Library/Frameworks/_FoundationModels_SwiftUI.framework/Info.plist`
 - `/System/Library/Frameworks/_FoundationModels_SwiftUI.framework/_CodeSignature/CodeResources`
@@ -861,9 +861,6 @@
 - `/System/Library/PrivateFrameworks/AppleCIOFusion.framework/_CodeSignature/CodeResources`
 - `/System/Library/PrivateFrameworks/AppleCIOFusionConfig.framework/Info.plist`
 - `/System/Library/PrivateFrameworks/AppleCIOFusionConfig.framework/_CodeSignature/CodeResources`
-- `/System/Library/PrivateFrameworks/AppleDepth.framework/MLModels/Mona/Compiled-H18-d23-v159-v53-v54-v57/build_config.plist`
-- `/System/Library/PrivateFrameworks/AppleDepth.framework/MLModels/Mona/Compiled-H18-d23-v159-v53-v54-v57/model.bundle/H18.bundle/H18.e5`
-- `/System/Library/PrivateFrameworks/AppleDepth.framework/MLModels/Mona/Compiled-H18-d23-v159-v53-v54-v57/model.bundle/H18.bundle/main_height576_width768/main_ane/model.hwx`
 - `/System/Library/PrivateFrameworks/AppleDepth.framework/MLModels/Mona/model.json`
 - `/System/Library/PrivateFrameworks/CarPlayUIServices.framework/WallpaperDarkBlue-Dark.heic`
 - `/System/Library/PrivateFrameworks/CarPlayUIServices.framework/WallpaperDarkBlue-Light.heic`
@@ -892,9 +889,6 @@
 - `/System/Library/PrivateFrameworks/EmbeddingCore.framework/nemo_5m_md3_2026-04_qformer.mlmodelc/metadata.json`
 - `/System/Library/PrivateFrameworks/EmbeddingCore.framework/nemo_5m_md3_2026-04_qformer.mlmodelc/model.mil`
 - `/System/Library/PrivateFrameworks/EmbeddingCore.framework/nemo_5m_md3_2026-04_qformer.mlmodelc/weights/weight.bin`
-- `/System/Library/PrivateFrameworks/FindMyBeaconingSupport.framework/Info.plist`
-- `/System/Library/PrivateFrameworks/FindMyBeaconingSupport.framework/Localizable.loctable`
-- `/System/Library/PrivateFrameworks/FindMyBeaconingSupport.framework/_CodeSignature/CodeResources`
 - `/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/32023/Libraries/lib/clang/32023/include/metal/prebuilt_implicit_modules/10P3BHDJ8Q128/monolithic_metal.pcm`
 - `/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/32023/Libraries/lib/clang/32023/include/metal/prebuilt_implicit_modules/1C4JFJTB57O5C/monolithic_metal.pcm`
 - `/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/32023/Libraries/lib/clang/32023/include/metal/prebuilt_implicit_modules/1FSXBBTWJSBF7/monolithic_metal.pcm`

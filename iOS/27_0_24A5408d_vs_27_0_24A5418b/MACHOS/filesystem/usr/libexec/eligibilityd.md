@@ -2,20 +2,23 @@
 
 > `/usr/libexec/eligibilityd`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
+- `__DATA_CONST.__objc_arraydata`
 - `__TEXT.__const`
 - `__TEXT.__cstring`
-- `__DATA_CONST.__objc_arraydata`
+
+### Other Changes
 
 ```diff
 
 -446.2.1.0.0
 +446.2.3.0.0
-   __TEXT.__text: 0x43a14
-   __TEXT.__auth_stubs: 0x1a60
-   __TEXT.__objc_stubs: 0x2a40
 CStrings:
++ "23:22:02"
 + "446.2.3"
++ "Aug 12 2026"
+- "00:03:56"
 - "446.2.1"
+- "Aug  4 2026"
 ```

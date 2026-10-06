@@ -2,83 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/PhotoImaging.framework/PhotoImaging`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x29bdd0` | `0x29d108` | **`+0x1338`** |
+| `__TEXT.__cstring` | `0x4a6de` | `0x4aabd` | **`+0x3df`** |
+| `__AUTH_CONST.__cfstring` | `0x29bc0` | `0x29ea0` | **`+0x2e0`** |
+| `__DATA_CONST.__objc_arraydata` | `0x9718` | `0x9518` | **`-0x200`** |
+| `__AUTH_CONST.__objc_const` | `0x29ad0` | `0x29c40` | **`+0x170`** |
+| `__AUTH_CONST.__objc_dictobj` | `0x5c58` | `0x5b90` | **`-0xc8`** |
+| `__TEXT.__objc_methlist` | `0x173c8` | `0x17340` | **`-0x88`** |
+| `__DATA_CONST.__objc_selrefs` | `0xbca0` | `0xbd10` | **`+0x70`** |
+| `__TEXT.__oslogstring` | `0x7d58` | `0x7db1` | **`+0x59`** |
+| `__DATA_CONST.__const` | `0x44d0` | `0x4490` | **`-0x40`** |
+| `__TEXT.__unwind_info` | `0x5c58` | `0x5c30` | **`-0x28`** |
+| `__AUTH_CONST.__const` | `0x5648` | `0x5628` | **`-0x20`** |
+| `__DATA_CONST.__got` | `0x2830` | `0x2810` | **`-0x20`** |
+| `__DATA_CONST.__objc_catlist` | `0x48` | `0x50` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.235.0.0
--  __TEXT.__text: 0x292768
 +916.40.110.0.0
-+  __TEXT.__text: 0x293d64
-   __TEXT.__delay_helper: 0x1f4
--  __TEXT.__objc_methlist: 0x173c8
-+  __TEXT.__objc_methlist: 0x17340
-   __TEXT.__const: 0x8d04
-   __TEXT.__dlopen_cstrs: 0x2a2
-   __TEXT.__swift5_typeref: 0x2d8
--  __TEXT.__cstring: 0x4a6de
-+  __TEXT.__cstring: 0x4aabd
-   __TEXT.__constg_swiftt: 0x230
-   __TEXT.__swift5_reflstr: 0x35f
-   __TEXT.__swift5_fieldmd: 0x3d4
-   __TEXT.__swift5_builtin: 0x78
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_assocty: 0x90
--  __TEXT.__oslogstring: 0x7d58
-+  __TEXT.__oslogstring: 0x7db1
-   __TEXT.__swift5_proto: 0xa0
-   __TEXT.__swift5_types: 0x38
-   __TEXT.__swift_as_entry: 0x14
 
-   __TEXT.__swift_as_cont: 0x28
-   __TEXT.__swift5_capture: 0x50
-   __TEXT.__gcc_except_tab: 0x4ee0
--  __TEXT.__unwind_info: 0x6ed8
-+  __TEXT.__unwind_info: 0x6e98
-   __TEXT.__eh_frame: 0xa60
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x44d0
-+  __DATA_CONST.__const: 0x4490
-   __DATA_CONST.__objc_classlist: 0x11a0
--  __DATA_CONST.__objc_catlist: 0x48
-+  __DATA_CONST.__objc_catlist: 0x50
-   __DATA_CONST.__objc_protolist: 0x1a0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0xbca0
-+  __DATA_CONST.__objc_selrefs: 0xbd10
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x750
--  __DATA_CONST.__objc_arraydata: 0x9718
--  __DATA_CONST.__got: 0x2830
--  __AUTH_CONST.__const: 0x5648
--  __AUTH_CONST.__cfstring: 0x29bc0
--  __AUTH_CONST.__objc_const: 0x29ad0
-+  __DATA_CONST.__objc_arraydata: 0x9518
-+  __DATA_CONST.__got: 0x2810
-+  __AUTH_CONST.__const: 0x5628
-+  __AUTH_CONST.__cfstring: 0x29ea0
-+  __AUTH_CONST.__objc_const: 0x29c40
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x1668
--  __AUTH_CONST.__objc_dictobj: 0x5c58
-+  __AUTH_CONST.__objc_dictobj: 0x5b90
-   __AUTH_CONST.__objc_doubleobj: 0xe10
-   __AUTH_CONST.__objc_arrayobj: 0x6c0
-   __AUTH_CONST.__objc_floatobj: 0xd0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9495
--  Symbols:   21410
+-  Symbols:   16415
 -  CStrings:  7578
 +  Functions: 9484
-+  Symbols:   21401
++  Symbols:   16394
 +  CStrings:  7602
- 
 Symbols:
 + +[NUAssetCapability(PhotoImaging) audioMix]
 + +[NUAssetCapability(PhotoImaging) cinematicVideoV1]
@@ -337,29 +292,6 @@ Symbols:
 + ___block_descriptor_57_e8_32s40s48s_e44_"NUChannelPortRef"16?0"NUChannelPortRef"8ls32l8s40l8s48l8
 + ___block_descriptor_64_e8_32s40s48s56s_e37_"NUChannelPortSpec"16?0"NSString"8ls32l8s40l8s48l8s56l8
 + ___block_descriptor_64_e8_32s40s48s56s_e44_"NUChannelPortRef"16?0"NUChannelPortRef"8ls32l8s40l8s48l8s56l8
-+ _objc_msgSend$HDR
-+ _objc_msgSend$_baseLayoutForDisplayContext:ofItem:spatialPhotoEnabled:settlingEffectEnabled:
-+ _objc_msgSend$_buildPostGeometryPipeline:media:error:
-+ _objc_msgSend$_instancesForGenerativeEditOperation:context:
-+ _objc_msgSend$_nonInstancedOperationsFromComposition:context:
-+ _objc_msgSend$_tightImageSpaceBoundsForGenerativeEditOperation:composition:context:error:
-+ _objc_msgSend$buildFiltersGroupPipeline:temporality:outputMediaFormat:error:
-+ _objc_msgSend$buildFiltersPipeline:format:temporality:connections:error:
-+ _objc_msgSend$canApplySideroom
-+ _objc_msgSend$cinematicVideoV1
-+ _objc_msgSend$cinematicVideoV2
-+ _objc_msgSend$generativeSeed
-+ _objc_msgSend$hdrGainMap
-+ _objc_msgSend$photographicStyle
-+ _objc_msgSend$photographicStyleV1
-+ _objc_msgSend$photographicStyleV2
-+ _objc_msgSend$pipelineName
-+ _objc_msgSend$portraitV1
-+ _objc_msgSend$portraitV2
-+ _objc_msgSend$rawDecode
-+ _objc_msgSend$requestID
-+ _objc_msgSend$setRequestID:
-+ _objc_msgSend$start
 - +[PIADMCleanup identifier]
 - +[PIADMOutfill identifier]
 - +[PIAudioMix_v1 identifier]
@@ -638,17 +570,6 @@ Symbols:
 - ___block_descriptor_48_e8_32s_e33_B24?0"<NUMutablePipeline>"8^16ls32l8
 - ___block_descriptor_49_e8_32s40s_e44_"NUChannelPortRef"16?0"NUChannelPortRef"8ls32l8s40l8
 - ___block_descriptor_56_e8_32s40s48s_e44_"NUChannelPortRef"16?0"NUChannelPortRef"8ls32l8s40l8s48l8
-- _objc_msgSend$_baseLayoutForDisplayContext:ofItem:spatialPhotoEnabled:
-- _objc_msgSend$_instancesForGenerativeEditOperation:
-- _objc_msgSend$_nonInstancedOperationsFromComposition:
-- _objc_msgSend$_tightImageSpaceBoundsForGenerativeEditOperation:composition:error:
-- _objc_msgSend$buildFiltersGroupPipeline:temporality:error:
-- _objc_msgSend$buildFiltersPipeline:temporality:connections:error:
-- _objc_msgSend$defaultNamespace
-- _objc_msgSend$gainMapLearnPipeline
-- _objc_msgSend$pipelineIdentifier
-- _objc_msgSend$renderScaleForInput:geometry:outputScale:
-- _objc_msgSend$toneMapPipeline
 CStrings:
 + "+[PIObjectRemoval _instancesForGenerativeEditOperation:context:]_block_invoke"
 + "-[PIPipelineModule pipelineName]"

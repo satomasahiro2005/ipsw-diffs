@@ -2,85 +2,36 @@
 
 > `com.apple.kernel`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__copyio_vectors`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__kalloc_var`
-- `__DATA_CONST.__exclaves_bt`
-- `__DATA_CONST.__kern_brk_desc`
-- `__DATA_CONST.__mod_init_func`
-- `__DATA_CONST.__auth_ptr`
-- `__LASTDATA_CONST.__mod_init_func`
-- `__KLDDATA.__const`
-- `__KLDDATA.__mod_init_func`
-- `__KLDDATA.__mod_term_func`
-- `__BOOTDATA.__static_if`
-- `__BOOTDATA.__static_ifinit`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x8e3be4` | `0x8e6ed8` | **`+0x32f4`** |
+| `__TEXT.__const` | `0x36af0` | `0x36e70` | **`+0x380`** |
+| `__BOOTDATA.__init_entry_set` | `0x13b30` | `0x13d58` | **`+0x228`** |
+| `__TEXT.__os_log` | `0x418ba` | `0x41aa8` | **`+0x1ee`** |
+| `__DATA_CONST.__const` | `0xb6d78` | `0xb6f60` | **`+0x1e8`** |
+| `__TEXT.__cstring` | `0x8d638` | `0x8d789` | **`+0x151`** |
+| `__DATA_CONST.__assert` | `0xdfc` | `0xf14` | **`+0x118`** |
+| `__BOOTDATA.__init` | `0x17760` | `0x17818` | **`+0xb8`** |
+| `__DATA.__data` | `0x181a9` | `0x18229` | **`+0x80`** |
+| `__DATA_CONST.__kalloc_type` | `0x15380` | `0x15300` | **`-0x80`** |
+| `__DATA.__bss` | `0xa4f80` | `0xa4fe0` | **`+0x60`** |
+| `__DATA.__lock_grp` | `0x5d80` | `0x5dd8` | **`+0x58`** |
+| `__TEXT.__copyio_vectors` | `0xf0` | `0x140` | **`+0x50`** |
+| `__DATA.__common` | `0x68e48` | `0x68e88` | **`+0x40`** |
+
+### Other Changes
 
 ```diff
 
 -13432.0.50.502.2
--  __TEXT.__const: 0x36d30
+-  Functions: 21870
 +13432.0.94.502.2
-+  __TEXT.__const: 0x370b0
-   __TEXT.__copyio_vectors: 0x2c0
--  __TEXT.__cstring: 0x8f388
--  __TEXT.__os_log: 0x418ba
-+  __TEXT.__cstring: 0x8f4f0
-+  __TEXT.__os_log: 0x41aa8
-   __TEXT.__eh_frame: 0x7e0
-   __DATA_CONST.__hib_const: 0x120
--  __DATA_CONST.__const: 0x120450
--  __DATA_CONST.__kalloc_type: 0x15380
--  __DATA_CONST.__assert: 0x1284
-+  __DATA_CONST.__const: 0x120640
-+  __DATA_CONST.__kalloc_type: 0x15300
-+  __DATA_CONST.__assert: 0x139c
-   __DATA_CONST.__kalloc_var: 0x7e90
-   __DATA_CONST.__exclaves_bt: 0xc0
-   __DATA_CONST.__kern_brk_desc: 0x78
++  Functions: 21880
 
-   __DATA_CONST.__auth_ptr: 0x8
-   __DATA_SPTM.__const: 0x4c000
-   __TEXT_EXEC.__exc: 0x1000
--  __TEXT_EXEC.__text: 0x9060ac
-+  __TEXT_EXEC.__text: 0x909650
-   __TEXT_EXEC.__hib_text: 0x10d8
-   __TEXT_BOOT_EXEC.__bootcode: 0x69a0
-   __KLD.__text: 0x173c
-
-   __KLDDATA.__mod_init_func: 0x8
-   __KLDDATA.__mod_term_func: 0x8
-   __KLDDATA.__bss: 0x1
--  __DATA.__data: 0x181e9
--  __DATA.__lock_grp: 0x5d28
-+  __DATA.__data: 0x18269
-+  __DATA.__lock_grp: 0x5d80
-   __DATA.__percpu: 0x78b0
--  __DATA.__common: 0x7b808
--  __DATA.__bss: 0xa5290
-+  __DATA.__common: 0x7b848
-+  __DATA.__bss: 0xa52f0
-   __BOOTDATA.__data: 0x18000
-   __BOOTDATA.__static_if: 0x1000
--  __BOOTDATA.__init_entry_set: 0x145f8
--  __BOOTDATA.__init: 0x17800
-+  __BOOTDATA.__init_entry_set: 0x14820
-+  __BOOTDATA.__init: 0x178b8
-   __BOOTDATA.__static_ifinit: 0x20
-   __PRELINK_TEXT.__text: 0x0
-   __PRELINK_INFO.__info: 0x0
-
-   __PLK_LLVM_COV.__llvm_covmap: 0x0
-   __PLK_LINKEDIT.__data: 0x0
-   __LINKINFO.__symbolsets: 0x48cf3
--  Functions: 21972
-+  Functions: 21981
-   Symbols:   0
--  CStrings:  21291
-+  CStrings:  21312
- 
+-  CStrings:  21072
++  CStrings:  21092
 CStrings:
 + "%s: %s %s DHCP dp_flags 0x%x -> 0x%x"
 + "%s: %s: dir %s action %s reqid 0x%x sa_handle 0x%llx handle 0x%llx\n"
@@ -115,7 +66,6 @@ CStrings:
 + "rt_setif"
 + "socket_lookup_contended"
 + "stale RACK segment [%u, %u) flags 0x%x below snd_una %u"
-+ "tag_storage_compressed"
 + "tcp_rack_output"
 + "throttle_be"
 - "%s: %s %s DHCP dp_flags 0x%x"

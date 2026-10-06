@@ -2,97 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/WiFiSettingsKit.framework/WiFiSettingsKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x216040` | `0x218e6c` | **`+0x2e2c`** |
+| `__TEXT.__cstring` | `0x18e25` | `0x193f5` | **`+0x5d0`** |
+| `__TEXT.__const` | `0x13643` | `0x13913` | **`+0x2d0`** |
+| `__TEXT.__swift5_typeref` | `0x1a548` | `0x1a7aa` | **`+0x262`** |
+| `__TEXT.__swift5_fieldmd` | `0x4950` | `0x4b18` | **`+0x1c8`** |
+| `__AUTH_CONST.__const` | `0xf128` | `0xf2e8` | **`+0x1c0`** |
+| `__TEXT.__swift5_reflstr` | `0x5672` | `0x5822` | **`+0x1b0`** |
+| `__DATA.__bss` | `0xbc38` | `0xbda8` | **`+0x170`** |
+| `__TEXT.__constg_swiftt` | `0x76d8` | `0x7828` | **`+0x150`** |
+| `__TEXT.__eh_frame` | `0xb6d0` | `0xb800` | **`+0x130`** |
+| `__AUTH_CONST.__objc_const` | `0x9328` | `0x9448` | **`+0x120`** |
+| `__TEXT.__unwind_info` | `0x68c8` | `0x69b8` | **`+0xf0`** |
+| `__DATA_DIRTY.__data` | `0x49d0` | `0x4aa0` | **`+0xd0`** |
+| `__AUTH.__data` | `0x3d90` | `0x3cf0` | **`-0xa0`** |
+| `__DATA.__data` | `0x4ad0` | `0x4b20` | **`+0x50`** |
+| `__DATA.__common` | `0x1568` | `0x1590` | **`+0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0x15d8` | `0x15f0` | **`+0x18`** |
+| `__TEXT.__swift_as_cont` | `0xa24` | `0xa38` | **`+0x14`** |
+| `__AUTH_CONST.__auth_got` | `0x2178` | `0x2168` | **`-0x10`** |
+| `__TEXT.__swift5_proto` | `0x720` | `0x72c` | **`+0xc`** |
+| `__TEXT.__swift5_types` | `0x428` | `0x434` | **`+0xc`** |
+| `__TEXT.__swift_as_entry` | `0x3c0` | `0x3cc` | **`+0xc`** |
+| `__TEXT.__swift5_capture` | `0x4268` | `0x4260` | **`-0x8`** |
+| `__TEXT.__swift_as_ret` | `0x264` | `0x268` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1205.70.0.0.0
--  __TEXT.__text: 0x216040
 +1205.81.4.2.0
-+  __TEXT.__text: 0x218e6c
-   __TEXT.__objc_methlist: 0x1894
--  __TEXT.__const: 0x13643
--  __TEXT.__cstring: 0x18e25
-+  __TEXT.__const: 0x13913
-+  __TEXT.__cstring: 0x193f5
-   __TEXT.__oslogstring: 0x653
-   __TEXT.__gcc_except_tab: 0x30
-   __TEXT.__dlopen_cstrs: 0x62
--  __TEXT.__constg_swiftt: 0x76d8
--  __TEXT.__swift5_typeref: 0x1a548
--  __TEXT.__swift5_fieldmd: 0x4950
-+  __TEXT.__constg_swiftt: 0x7828
-+  __TEXT.__swift5_typeref: 0x1a7aa
-+  __TEXT.__swift5_fieldmd: 0x4b18
-   __TEXT.__swift5_builtin: 0x17c
--  __TEXT.__swift5_reflstr: 0x5672
-+  __TEXT.__swift5_reflstr: 0x5822
-   __TEXT.__swift5_assocty: 0xf88
-   __TEXT.__swift5_protos: 0xb8
--  __TEXT.__swift5_proto: 0x720
--  __TEXT.__swift5_types: 0x428
--  __TEXT.__swift5_capture: 0x4268
--  __TEXT.__swift_as_entry: 0x3c0
--  __TEXT.__swift_as_cont: 0xa24
--  __TEXT.__swift_as_ret: 0x264
-+  __TEXT.__swift5_proto: 0x72c
-+  __TEXT.__swift5_types: 0x434
-+  __TEXT.__swift5_capture: 0x4260
-+  __TEXT.__swift_as_entry: 0x3cc
-+  __TEXT.__swift_as_cont: 0xa38
-+  __TEXT.__swift_as_ret: 0x268
-   __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__unwind_info: 0x68c8
--  __TEXT.__eh_frame: 0xb6d0
-+  __TEXT.__unwind_info: 0x69b8
-+  __TEXT.__eh_frame: 0xb800
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0xe8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x15d8
-+  __DATA_CONST.__objc_selrefs: 0x15f0
-   __DATA_CONST.__objc_protorefs: 0x80
-   __DATA_CONST.__objc_superrefs: 0x48
-   __DATA_CONST.__objc_arraydata: 0x30
-   __DATA_CONST.__got: 0xf38
--  __AUTH_CONST.__const: 0xf128
-+  __AUTH_CONST.__const: 0xf2e8
-   __AUTH_CONST.__cfstring: 0x540
--  __AUTH_CONST.__objc_const: 0x9328
-+  __AUTH_CONST.__objc_const: 0x9448
-   __AUTH_CONST.__objc_intobj: 0x78
-   __AUTH_CONST.__objc_arrayobj: 0x60
--  __AUTH_CONST.__auth_got: 0x2178
-+  __AUTH_CONST.__auth_got: 0x2168
-   __AUTH.__objc_data: 0x1d70
--  __AUTH.__data: 0x3d90
-+  __AUTH.__data: 0x3cf0
-   __DATA.__objc_ivar: 0x68
--  __DATA.__data: 0x4ad0
--  __DATA.__bss: 0xbc38
--  __DATA.__common: 0x1568
-+  __DATA.__data: 0x4b20
-+  __DATA.__bss: 0xbda8
-+  __DATA.__common: 0x1590
-   __DATA_DIRTY.__objc_data: 0x660
--  __DATA_DIRTY.__data: 0x49d0
-+  __DATA_DIRTY.__data: 0x4aa0
-   __DATA_DIRTY.__bss: 0x21c0
-   __DATA_DIRTY.__common: 0x2a8
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9742
--  Symbols:   4232
+-  Symbols:   3741
 -  CStrings:  2212
 +  Functions: 9791
-+  Symbols:   4251
++  Symbols:   3757
 +  CStrings:  2229
- 
 Symbols:
 + ___swift_closure_destructor.197Tm
 + ___swift_closure_destructor.199Tm
@@ -108,9 +59,6 @@ Symbols:
 + _get_witness_table 7SwiftUI7SectionVyAA9EmptyViewVAA12TupleContentVyAA08ModifiedG0VyAA0E0PAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA6ToggleVyAA6VStackVyAGyAA4TextV_ATSgQPGGG_SbQo_AA25_AppearanceActionModifierVG_AIyAA6ButtonVyATGAA011_BackgroundR0Vy15WiFiSettingsKit16WFAlertPresenterVGGQPGAA012_ConditionalG0VyA2TGGAaJHPAeaJHPyHC_A11_AaJHPA0_AaJHPqd0__AaJHD3_AYHO_A_AA0eR0HPyHCHC_A10_AaJHPA3_AaJHPyHC_A9_AAA16_HPyHCHCHX_HCA14_AaJHPAtaJHPyHC_AtaJHPyHCHCHC
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE15fullScreenCover11isPresented9onDismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAA15ModifiedContentVyAcAE5sheetAefGQrAJ_AKqd__yctAaBRd__lFQOyAMyAcAE0I6Change2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAMyAMyAcAE011interactiveJ8DisabledyQrSbFQOyAcAEAnefGQrAJ_AKqd__yctAaBRd__lFQOyAcAEAnefGQrAJ_AKqd__yctAaBRd__lFQOyAcAEARyQrSbFQOyAcAEAnefGQrAJ_AKqd__yctAaBRd__lFQOyAcAEAopQ_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAMyAA012SubscriptionC0Vy7Combine19CurrentValueSubjectCy15WiFiSettingsKit8AppStateOs5NeverOGAcAE29navigationBarBackButtonHiddenyQrSbFQOyAA06ScrollC6ReaderVyAcAE7toolbarAGQrqd__yXE_tAA07ToolbarN0Rd__lFQOyATySo20NSNotificationCenterC10FoundationE9PublisherVATyA11_AcAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQOyAcAEA12_yQrA13_Rld__CA14_A15_Rd__lFQOyAMyAMyAA5GroupVyAC8SettingsE22settingsListAppearanceQryFQOyAcAE9formStyleyQrqd__AA9FormStyleRd__lFQOyAA4FormVyAA010FormFooterN0VyAA012_ConditionalN0VyAX25KnownNetworksSectionTableVAA05TupleN0VyAA6IDViewVyAX0w14NetworkPlacardC0VSSG_AX012NetworksListC0VQPGGSgAA05EmptyC0VGG_AA16GroupedFormStyleVQo__Qo_GAA30_EnvironmentKeyWritingModifierVyAIyAA8EditModeOGSgGGAA16_OverlayModifierVyAX04LockC0VSgGG_AX17UserSettingsModelCQo__AX0W12NetworkModelCQo_GG_A31_yAA11ToolbarItemVyytAA6ButtonVyAA18DefaultButtonLabelVGGSg_A75_yytA27_yAMyAMyA80_AA32_EnvironmentKeyTransformModifierVySbGGA52_yAA5ColorVSgGGA77_yAA4TextVGGSgGQPGQo_G_Qo_GAA19_BackgroundModifierVyAX16WFAlertPresenterVGG_AX9EditStateOQo__AX19PasswordPromptSheetVSgQo__Qo__AX19WAPIEnterpriseSheetVSgQo__AX17OtherNetworkSheetVQo__Qo_AA25_AppearanceActionModifierVGA126_G_AA10ScenePhaseOQo_A107_G_A27_yAX016TrustCertificateC0VA0_GQo_A107_G_A27_yAMyAX08WACSetupC0VAA30_SafeAreaRegionsIgnoringLayoutVGAMyA88_A126_GGQo_HO
 + _keypath_set.103Tm
-+ _objc_msgSend$cellularNetworkInfo
-+ _objc_msgSend$knownNetworkProfileMatchingNetworkProfile:
-+ _objc_msgSend$roamingConsortiumList
 + _symbolic _____ 15WiFiSettingsKit0aB14SecurityChangeO
 + _symbolic _____ 15WiFiSettingsKit14ScannedNetworkV16DisplaySignatureV
 + _symbolic _____ 15WiFiSettingsKit21NetworksListViewModelC19PendingNetworkLists33_088DD47D6AE60EF4F4959D5903D2766ELLV

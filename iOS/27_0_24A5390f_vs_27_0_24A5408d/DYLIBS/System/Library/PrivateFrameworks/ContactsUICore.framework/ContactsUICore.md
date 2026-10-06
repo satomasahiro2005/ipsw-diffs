@@ -2,109 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/ContactsUICore.framework/ContactsUICore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3c81c8` | `0x3e5c1c` | **`+0x1da54`** |
+| `__TEXT.__const` | `0x30214` | `0x31734` | **`+0x1520`** |
+| `__TEXT.__swift5_typeref` | `0x2bc6a` | `0x2d012` | **`+0x13a8`** |
+| `__AUTH_CONST.__const` | `0x19ac0` | `0x1a330` | **`+0x870`** |
+| `__DATA.__bss` | `0x25430` | `0x25b48` | **`+0x718`** |
+| `__TEXT.__swift5_reflstr` | `0x8bf9` | `0x9269` | **`+0x670`** |
+| `__TEXT.__eh_frame` | `0xdc30` | `0xe23c` | **`+0x60c`** |
+| `__AUTH_CONST.__objc_const` | `0x1c400` | `0x1c9e0` | **`+0x5e0`** |
+| `__TEXT.__unwind_info` | `0xddc8` | `0xe360` | **`+0x598`** |
+| `__TEXT.__constg_swiftt` | `0xc924` | `0xce84` | **`+0x560`** |
+| `__DATA.__data` | `0xf818` | `0xfd28` | **`+0x510`** |
+| `__TEXT.__swift5_fieldmd` | `0x96e4` | `0x9b90` | **`+0x4ac`** |
+| `__AUTH.__data` | `0x8a18` | `0x8e78` | **`+0x460`** |
+| `__AUTH.__objc_data` | `0x6410` | `0x67d0` | **`+0x3c0`** |
+| `__TEXT.__swift5_capture` | `0x3530` | `0x3858` | **`+0x328`** |
+| `__TEXT.__swift5_assocty` | `0x2858` | `0x2918` | **`+0xc0`** |
+| `__TEXT.__objc_methlist` | `0xae04` | `0xaeb4` | **`+0xb0`** |
+| `__DATA_CONST.__got` | `0x2dc8` | `0x2e48` | **`+0x80`** |
+| `__TEXT.__oslogstring` | `0x869d` | `0x871d` | **`+0x80`** |
+| `__AUTH_CONST.__auth_got` | `0x3fe8` | `0x4058` | **`+0x70`** |
+| `__TEXT.__cstring` | `0xbcc6` | `0xbd26` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x3c78` | `0x3cc8` | **`+0x50`** |
+| `__TEXT.__swift5_types` | `0xb54` | `0xb8c` | **`+0x38`** |
+| `__TEXT.__swift_as_cont` | `0x9cc` | `0xa00` | **`+0x34`** |
+| `__DATA.__common` | `0x1500` | `0x1530` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x68e0` | `0x6910` | **`+0x30`** |
+| `__TEXT.__swift5_proto` | `0x152c` | `0x1558` | **`+0x2c`** |
+| `__DATA_CONST.__objc_classlist` | `0xb68` | `0xb88` | **`+0x20`** |
+| `__TEXT.__swift_as_entry` | `0x500` | `0x514` | **`+0x14`** |
+| `__DATA_DIRTY.__data` | `0x3328` | `0x3338` | **`+0x10`** |
+| `__TEXT.__swift_as_ret` | `0x4a4` | `0x4a8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3716.100.3.0.0
--  __TEXT.__text: 0x3c81c8
--  __TEXT.__objc_methlist: 0xae04
--  __TEXT.__const: 0x30214
--  __TEXT.__oslogstring: 0x869d
--  __TEXT.__cstring: 0xbcc6
 +3720.100.1.0.0
-+  __TEXT.__text: 0x3e5c1c
-+  __TEXT.__objc_methlist: 0xaeb4
-+  __TEXT.__const: 0x31734
-+  __TEXT.__oslogstring: 0x871d
-+  __TEXT.__cstring: 0xbd26
-   __TEXT.__gcc_except_tab: 0xe0c
-   __TEXT.__dlopen_cstrs: 0xd94
--  __TEXT.__constg_swiftt: 0xc924
--  __TEXT.__swift5_typeref: 0x2bc6a
--  __TEXT.__swift5_fieldmd: 0x96e4
--  __TEXT.__swift5_reflstr: 0x8bf9
-+  __TEXT.__constg_swiftt: 0xce84
-+  __TEXT.__swift5_typeref: 0x2d012
-+  __TEXT.__swift5_fieldmd: 0x9b90
-+  __TEXT.__swift5_reflstr: 0x9269
-   __TEXT.__swift5_builtin: 0x280
--  __TEXT.__swift5_assocty: 0x2858
-+  __TEXT.__swift5_assocty: 0x2918
-   __TEXT.__swift5_protos: 0xe0
--  __TEXT.__swift5_proto: 0x152c
--  __TEXT.__swift5_types: 0xb54
--  __TEXT.__swift_as_entry: 0x500
--  __TEXT.__swift_as_ret: 0x4a4
--  __TEXT.__swift_as_cont: 0x9cc
--  __TEXT.__swift5_capture: 0x3530
-+  __TEXT.__swift5_proto: 0x1558
-+  __TEXT.__swift5_types: 0xb8c
-+  __TEXT.__swift_as_entry: 0x514
-+  __TEXT.__swift_as_ret: 0x4a8
-+  __TEXT.__swift_as_cont: 0xa00
-+  __TEXT.__swift5_capture: 0x3858
-   __TEXT.__swift5_mpenum: 0x150
--  __TEXT.__unwind_info: 0xddc8
--  __TEXT.__eh_frame: 0xdc30
-+  __TEXT.__unwind_info: 0xe360
-+  __TEXT.__eh_frame: 0xe23c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3c78
--  __DATA_CONST.__objc_classlist: 0xb68
-+  __DATA_CONST.__const: 0x3cc8
-+  __DATA_CONST.__objc_classlist: 0xb88
-   __DATA_CONST.__objc_catlist: 0x78
-   __DATA_CONST.__objc_protolist: 0x420
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x68e0
-+  __DATA_CONST.__objc_selrefs: 0x6910
-   __DATA_CONST.__objc_protorefs: 0x150
-   __DATA_CONST.__objc_superrefs: 0x4d0
-   __DATA_CONST.__objc_arraydata: 0xc8
--  __DATA_CONST.__got: 0x2dc8
--  __AUTH_CONST.__const: 0x19ac0
-+  __DATA_CONST.__got: 0x2e48
-+  __AUTH_CONST.__const: 0x1a330
-   __AUTH_CONST.__cfstring: 0x2c40
--  __AUTH_CONST.__objc_const: 0x1c400
-+  __AUTH_CONST.__objc_const: 0x1c9e0
-   __AUTH_CONST.__objc_intobj: 0x360
-   __AUTH_CONST.__objc_arrayobj: 0xa8
-   __AUTH_CONST.__objc_doubleobj: 0x50
--  __AUTH_CONST.__auth_got: 0x3fe8
--  __AUTH.__objc_data: 0x6410
--  __AUTH.__data: 0x8a18
-+  __AUTH_CONST.__auth_got: 0x4058
-+  __AUTH.__objc_data: 0x67d0
-+  __AUTH.__data: 0x8e78
-   __DATA.__objc_ivar: 0x754
--  __DATA.__data: 0xf818
-+  __DATA.__data: 0xfd28
-   __DATA.__objc_stublist: 0x18
--  __DATA.__bss: 0x25430
--  __DATA.__common: 0x1500
-+  __DATA.__bss: 0x25b48
-+  __DATA.__common: 0x1530
-   __DATA_DIRTY.__objc_data: 0x30f8
--  __DATA_DIRTY.__data: 0x3328
-+  __DATA_DIRTY.__data: 0x3338
-   __DATA_DIRTY.__bss: 0x3608
-   __DATA_DIRTY.__common: 0x1e8
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 20776
--  Symbols:   16338
+-  Symbols:   13705
 -  CStrings:  2098
 +  Functions: 21388
-+  Symbols:   16488
++  Symbols:   13849
 +  CStrings:  2101
- 
 Symbols:
 + +[CNUIUserActionListDataSource defaultActionItemForSelectedItem:actionTypeToUpdate:]
 + _OBJC_CLASS_$_UIBackgroundExtensionView
@@ -198,13 +144,6 @@ Symbols:
 + _keypath_set.73Tm
 + _keypath_set.92Tm
 + _log
-+ _objc_msgSend$animateAlongsideTransition:completion:
-+ _objc_msgSend$createContactFromRelationWithName:completion:
-+ _objc_msgSend$defaultActionItemForSelectedItem:actionTypeToUpdate:
-+ _objc_msgSend$safeAreaInsets
-+ _objc_msgSend$setAutomaticallyPlacesContentView:
-+ _objc_msgSend$setContentView:
-+ _objc_msgSend$setPhotoPosterSeedColorHasColor:red:green:blue:alpha:
 + _swift_release_x6
 + _symbolic SDy_____SiG 14ContactsUICore25ContactCardRelatedNameKeyV
 + _symbolic SDy_____So9CNContactCSgG 14ContactsUICore25ContactCardRelatedNameKeyV
@@ -520,7 +459,6 @@ Symbols:
 - _keypath_set.128Tm
 - _keypath_set.22Tm
 - _keypath_set.88Tm
-- _objc_msgSend$sharedPhotoDisplayPreference
 - _swift_release_x5
 - _symbolic Ig_
 - _symbolic Say_____G So31CNSharedProfileUpdateActionTypeV

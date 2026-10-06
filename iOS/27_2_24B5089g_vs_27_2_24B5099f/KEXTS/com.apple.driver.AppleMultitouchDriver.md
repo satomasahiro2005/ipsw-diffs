@@ -2,43 +2,34 @@
 
 > `com.apple.driver.AppleMultitouchDriver`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x1d240` | `0x1d350` | **`+0x110`** |
+| `__TEXT.__os_log` | `0x3a70` | `0x3acf` | **`+0x5f`** |
+| `__TEXT_EXEC.__auth_stubs` | `0x6a0` | `0x680` | **`-0x20`** |
+| `__DATA_CONST.__auth_got` | `0x350` | `0x340` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x128` | `0x130` | **`+0x8`** |
+| `__TEXT.__cstring` | `0x22d5` | `0x22d4` | **`-0x1`** |
+
+### Other Changes
+
 ```diff
 
 -10100.44.0.0.0
 +10110.3.0.0.0
-   __TEXT.__const: 0x1a8
--  __TEXT.__cstring: 0x22d5
--  __TEXT.__os_log: 0x3a70
--  __TEXT_EXEC.__text: 0x1bfb0
--  __TEXT_EXEC.__auth_stubs: 0x6a0
-+  __TEXT.__cstring: 0x22d4
-+  __TEXT.__os_log: 0x3acf
-+  __TEXT_EXEC.__text: 0x1c0b4
-+  __TEXT_EXEC.__auth_stubs: 0x680
-   __DATA.__data: 0xca
-   __DATA.__common: 0x270
-   __DATA_CONST.__mod_init_func: 0x58
 
-   __DATA_CONST.__const: 0x43d8
-   __DATA_CONST.__kalloc_var: 0x280
-   __DATA_CONST.__kalloc_type: 0x8c0
--  __DATA_CONST.__auth_got: 0x350
--  __DATA_CONST.__got: 0x128
-+  __DATA_CONST.__auth_got: 0x340
-+  __DATA_CONST.__got: 0x130
-   Functions: 546
-   Symbols:   0
 -  CStrings:  542
 +  CStrings:  543
- 
 Functions:
-~ sub_fffffe000934fda0 -> sub_fffffe00092f5a80 : 192 -> 232
-~ sub_fffffe000934fe60 -> sub_fffffe00092f5b68 : 192 -> 232
-~ sub_fffffe000934ffd0 -> sub_fffffe00092f5d00 : 120 -> 44
-~ sub_fffffe000935005c -> sub_fffffe00092f5d40 : 104 -> 8
-~ __ZN31AppleMultitouchDeviceUserClient11injectFrameEi : 320 -> 404
+~ sub_fffffff009309e28 -> sub_fffffff00928edb8 : 204 -> 244
+~ sub_fffffff009309ef4 -> sub_fffffff00928eeac : 204 -> 244
+~ sub_fffffff00930a07c -> sub_fffffff00928f05c : 120 -> 56
+~ sub_fffffff00930a108 -> sub_fffffff00928f0a8 : 104 -> 8
+~ __ZN31AppleMultitouchDeviceUserClient11injectFrameEi : 372 -> 456
 ~ __ZN31AppleMultitouchDeviceUserClient12initWithTaskEP4taskPvjP12OSDictionary : 704 -> 740
-~ sub_fffffe0009351c18 -> sub_fffffe00092f7914 : 220 -> 240
+~ sub_fffffff00930bfcc -> sub_fffffff009290f84 : 232 -> 252
 ~ __ZN31AppleMultitouchDeviceUserClient19clientMemoryForTypeEjPjPP18IOMemoryDescriptor : 448 -> 660
 CStrings:
 + "12111112122212121111111111111222222222111111122"

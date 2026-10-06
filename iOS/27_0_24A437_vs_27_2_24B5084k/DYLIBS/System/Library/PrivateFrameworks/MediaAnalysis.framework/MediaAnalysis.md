@@ -2,98 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/MediaAnalysis.framework/MediaAnalysis`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x46ac70` | `0x4cbd98` | **`+0x61128`** |
+| `__TEXT.__cstring` | `0x1fda3` | `0x2cac1` | **`+0xcd1e`** |
+| `__TEXT.__gcc_except_tab` | `0x647d0` | `0x67b94` | **`+0x33c4`** |
+| `__TEXT.__oslogstring` | `0x30bab` | `0x329bb` | **`+0x1e10`** |
+| `__AUTH_CONST.__cfstring` | `0x1d500` | `0x1ea20` | **`+0x1520`** |
+| `__AUTH_CONST.__const` | `0x63a8` | `0x75c8` | **`+0x1220`** |
+| `__TEXT.__unwind_info` | `0x133c0` | `0x14060` | **`+0xca0`** |
+| `__DATA.__bss` | `0x30d9` | `0x34f9` | **`+0x420`** |
+| `__DATA_DIRTY.__bss` | `0x758` | `0x938` | **`+0x1e0`** |
+| `__TEXT.__delay_helper` | `0xa4` | `0x284` | **`+0x1e0`** |
+| `__AUTH_CONST.__objc_const` | `0x41a30` | `0x41ba0` | **`+0x170`** |
+| `__DATA_CONST.__const` | `0x7b50` | `0x7c80` | **`+0x130`** |
+| `__DATA.__data` | `0x1efc` | `0x2010` | **`+0x114`** |
+| `__TEXT.__objc_methlist` | `0x22b90` | `0x22c98` | **`+0x108`** |
+| `__DATA_CONST.__objc_selrefs` | `0xf050` | `0xf128` | **`+0xd8`** |
+| `__DATA.__objc_ivar` | `0x3690` | `0x36ac` | **`+0x1c`** |
+| `__AUTH_CONST.__auth_got` | `0x2568` | `0x2580` | **`+0x18`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0xcf0` | `0xd08` | **`+0x18`** |
+| `__AUTH_CONST.__objc_intobj` | `0x38b8` | `0x38d0` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x2548` | `0x2550` | **`+0x8`** |
+| `__DATA_CONST.__objc_arraydata` | `0x12c0` | `0x12c8` | **`+0x8`** |
+| `__DATA_DIRTY.__data` | `0x2b0` | `0x2b8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -435.79.1.5.0
--  __TEXT.__text: 0x45e350
 +460.7.1.0.0
-+  __TEXT.__text: 0x4bf358
-   __TEXT.__delay_stubs: 0xc0
--  __TEXT.__delay_helper: 0xa4
--  __TEXT.__objc_methlist: 0x22b90
-+  __TEXT.__delay_helper: 0x284
-+  __TEXT.__objc_methlist: 0x22c98
-   __TEXT.__const: 0x16608
--  __TEXT.__gcc_except_tab: 0x647d0
--  __TEXT.__cstring: 0x1fda3
--  __TEXT.__oslogstring: 0x30bab
-+  __TEXT.__gcc_except_tab: 0x67b94
-+  __TEXT.__cstring: 0x2cac1
-+  __TEXT.__oslogstring: 0x329bb
-   __TEXT.__dlopen_cstrs: 0x4b8
-   __TEXT.__ustring: 0x40
-   __TEXT.__swift5_typeref: 0x9dc
 
-   __TEXT.__swift_as_ret: 0x90
-   __TEXT.__swift_as_cont: 0xd8
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x14c18
-+  __TEXT.__unwind_info: 0x187d8
-   __TEXT.__eh_frame: 0x1a30
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7b50
-+  __DATA_CONST.__const: 0x7c80
-   __DATA_CONST.__objc_classlist: 0x15b8
-   __DATA_CONST.__objc_catlist: 0x1c8
-   __DATA_CONST.__objc_protolist: 0x140
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0xf050
-+  __DATA_CONST.__objc_selrefs: 0xf128
-   __DATA_CONST.__objc_protorefs: 0x60
-   __DATA_CONST.__objc_superrefs: 0xfa0
--  __DATA_CONST.__objc_arraydata: 0x12c0
--  __DATA_CONST.__got: 0x2548
--  __AUTH_CONST.__const: 0x63a8
--  __AUTH_CONST.__cfstring: 0x1d500
--  __AUTH_CONST.__objc_const: 0x41a30
-+  __DATA_CONST.__objc_arraydata: 0x12c8
-+  __DATA_CONST.__got: 0x2550
-+  __AUTH_CONST.__const: 0x75c8
-+  __AUTH_CONST.__cfstring: 0x1ea20
-+  __AUTH_CONST.__objc_const: 0x41ba0
-   __AUTH_CONST.__weak_auth_got: 0x80
-   __AUTH_CONST.__objc_floatobj: 0x2f0
--  __AUTH_CONST.__objc_arrayobj: 0xcf0
-+  __AUTH_CONST.__objc_arrayobj: 0xd08
-   __AUTH_CONST.__objc_doubleobj: 0x490
--  __AUTH_CONST.__objc_intobj: 0x38b8
-+  __AUTH_CONST.__objc_intobj: 0x38d0
-   __AUTH_CONST.__objc_dictobj: 0xc8
--  __AUTH_CONST.__auth_got: 0x2568
-+  __AUTH_CONST.__auth_got: 0x2580
-   __AUTH.__objc_data: 0x2f0
-   __AUTH.__data: 0x118
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x10
--  __DATA.__objc_ivar: 0x3690
--  __DATA.__data: 0x1efc
-+  __DATA.__objc_ivar: 0x36ac
-+  __DATA.__data: 0x2010
-   __DATA.__common: 0x3c1
-   __DATA_DIRTY.__objc_data: 0xdc28
--  __DATA_DIRTY.__data: 0x2b0
--  __DATA_DIRTY.__bss: 0x758
-+  __DATA_DIRTY.__data: 0x2b8
-+  __DATA_DIRTY.__bss: 0x938
-   __DATA_DIRTY.__common: 0x30
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 16454
--  Symbols:   34332
+-  Symbols:   28100
 -  CStrings:  8326
 +  Functions: 20149
-+  Symbols:   34844
++  Symbols:   28572
 +  CStrings:  8970
- 
 Symbols:
 + -[MADHKSVClip generativeMetrics]
 + -[MADHKSVClip setGenerativeMetrics:]
@@ -650,54 +598,6 @@ Symbols:
 + _mach_host_self
 + _mad_includeEntityNet.include
 + _mad_includeEntityNet.once
-+ _objc_msgSend$_enableCoreDataMultithreadedAsserts
-+ _objc_msgSend$_runResidentMaintenanceWithResults:error:
-+ _objc_msgSend$computeOffsets
-+ _objc_msgSend$existingObjectWithID:error:
-+ _objc_msgSend$finishDate
-+ _objc_msgSend$generativeMetrics
-+ _objc_msgSend$getTokenIDsAndOffsetMappingForText:
-+ _objc_msgSend$goreFrameCountThreshold
-+ _objc_msgSend$initWithPHAsset:withPausedAnalysis:forAnalysisTypes:downloadedResourceURL:
-+ _objc_msgSend$initWithTokenIDs:tokenOffsets:error:
-+ _objc_msgSend$offsetMapping
-+ _objc_msgSend$pccProcessingDurationMilliseconds
-+ _objc_msgSend$pccVideoCaptionDurationMilliseconds
-+ _objc_msgSend$pccVideoDecodeDurationMilliseconds
-+ _objc_msgSend$pccVideoEmbeddingDurationMilliseconds
-+ _objc_msgSend$pccVideoGatingDurationMilliseconds
-+ _objc_msgSend$processIdentifier
-+ _objc_msgSend$processInput:resource:computeOffsets:tokenIDs:tokenOffsets:error:
-+ _objc_msgSend$requestFragmentCount
-+ _objc_msgSend$requestFragmentSize
-+ _objc_msgSend$requestGenerativeProcessingWithClipID:previousAnalysis:fragmentTimeRange:embeddingOnly:clientPrompt:clientLocale:reply:
-+ _objc_msgSend$requestGenerativeProcessingWithVideoFragments:previousAnalysis:captionFrameCount:embeddingOnly:clientPrompt:clientLocale:faceMetadata:captionOverride:decodeTargetMaxResolution:reply:
-+ _objc_msgSend$requestOverallPayloadSize
-+ _objc_msgSend$resultCaptionCount
-+ _objc_msgSend$resultEmbeddingCount
-+ _objc_msgSend$resultOverallPayloadSize
-+ _objc_msgSend$setFinishDate:
-+ _objc_msgSend$setGenerativeMetrics:
-+ _objc_msgSend$setPccProcessingDurationMilliseconds:
-+ _objc_msgSend$setPccVideoCaptionDurationMilliseconds:
-+ _objc_msgSend$setPccVideoDecodeDurationMilliseconds:
-+ _objc_msgSend$setPccVideoEmbeddingDurationMilliseconds:
-+ _objc_msgSend$setPccVideoGatingDurationMilliseconds:
-+ _objc_msgSend$setRequestFragmentCount:
-+ _objc_msgSend$setRequestFragmentSize:
-+ _objc_msgSend$setRequestOverallPayloadSize:
-+ _objc_msgSend$setResultCaptionCount:
-+ _objc_msgSend$setResultEmbeddingCount:
-+ _objc_msgSend$setResultOverallPayloadSize:
-+ _objc_msgSend$setStartDate:
-+ _objc_msgSend$startDate
-+ _objc_msgSend$submitDatabaseRestoreFastPassProcessing:reply:
-+ _objc_msgSend$submitPhotosFaceFastPassProcessing:withPhotoLibraryURL:andReply:
-+ _objc_msgSend$submitPhotosSceneFastPassProcessing:withPhotoLibraryURL:andReply:
-+ _objc_msgSend$submitPhotosTUFastPassProcessing:withPhotoLibraryURL:andReply:
-+ _objc_msgSend$tokenIDsForText:offsets:
-+ _objc_msgSend$tokenSegments
-+ _objc_msgSend$violentFrameCountThreshold
 + _proc_pid_rusage
 + _usePHAssetScene.once
 + _usePHAssetScene.use
@@ -789,14 +689,6 @@ Symbols:
 - ___block_descriptor_64_ea8_32s40s48s56bs_e5_v8?0ls56l8s32l8s40l8s48l8
 - ___block_descriptor_72_ea8_32s40s48r56r64r_e34_v24?0"NSDictionary"8"NSError"16ls32l8s40l8r48l8r56l8r64l8
 - ___block_descriptor_93_ea8_32s40s48s56s64s72s80bs_e5_v8?0ls32l8s80l8s40l8s48l8s56l8s64l8s72l8
-- _objc_msgSend$calculateRGBHistogramForPixelBuffer:normalizedBoundingBox:error:
-- _objc_msgSend$configureProcessTimeIntervalFrom:
-- _objc_msgSend$initWithTokenIDs:error:
-- _objc_msgSend$processInput:resource:tokenIDs:error:
-- _objc_msgSend$requestGenerativeProcessingWithClipID:previousAnalysis:fragmentSequenceRange:embeddingOnly:clientPrompt:clientLocale:completionHandler:
-- _objc_msgSend$requestGenerativeProcessingWithClipID:previousAnalysis:fragmentSequenceRange:embeddingOnly:clientPrompt:completionHandler:
-- _objc_msgSend$requestGenerativeProcessingWithVideoFragments:previousAnalysis:captionFrameCount:embeddingOnly:clientPrompt:clientLocale:faceMetadata:reply:
-- _objc_msgSend$reserveBudget:
 CStrings:
 + " -> candidate face %@"
 + " -> face %@ and face %@"

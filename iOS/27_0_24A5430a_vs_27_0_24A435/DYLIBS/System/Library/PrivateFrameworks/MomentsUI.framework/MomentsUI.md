@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MomentsUI.framework/MomentsUI`
 
-```diff
+### Section Size Changes
 
- 417.0.0.0.0
--  __TEXT.__text: 0x519990
-+  __TEXT.__text: 0x519a50
-   __TEXT.__objc_methlist: 0x4364
-   __TEXT.__cstring: 0xe646
-   __TEXT.__const: 0x1f7f4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x519990` | `0x519a50` | **`+0xc0`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s9MomentsUI10CloudSubDBPAAE13deleteDBFiles5dbURL9classNamey10Foundation0I0V_s12StaticStringVtFZ : 8320 -> 8324
 ~ _$s9MomentsUI18CloudSyncAssetDataC13_fillInBlanks2id6sha2564size06inlineF07fileURL0N3Ext10assetClass010blobFolderO016allowLazyLoading6dryRuns5Int64V_10Foundation0F0VASSgSSSgtSS_AtPSgAtQ0O0VSgAuA07DBAssetF0C0eR0OAYS2btFZTf4nnnnnnnnnnd_n : 8132 -> 8136

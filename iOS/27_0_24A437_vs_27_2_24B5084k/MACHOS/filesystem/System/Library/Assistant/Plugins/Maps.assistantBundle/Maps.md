@@ -2,69 +2,44 @@
 
 > `/System/Library/Assistant/Plugins/Maps.assistantBundle/Maps`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__DATA_CONST.__objc_arrayobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__const` | `0x180d0` | `0x18a28` | **`+0x958`** |
+| `__DATA_CONST.__cfstring` | `0x8420` | `0x87c0` | **`+0x3a0`** |
+| `__TEXT.__cstring` | `0x9efc` | `0xa28f` | **`+0x393`** |
+| `__TEXT.__text` | `0x14524` | `0x14684` | **`+0x160`** |
+| `__DATA_CONST.__objc_arraydata` | `0x98` | `0xc8` | **`+0x30`** |
+| `__DATA_CONST.__objc_intobj` | `0x828` | `0x7f8` | **`-0x30`** |
+| `__DATA_CONST.__objc_dictobj` | `—` | `0x28` | **`+0x28`** |
+| `__DATA_CONST.__objc_doubleobj` | `0x3b0` | `0x3c0` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x540` | `0x548` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
 - `__DATA_CONST.__auth_got`
 - `__DATA_CONST.__got`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__DATA_CONST.__objc_arrayobj`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
 -2972.30.6.12.58
--  __TEXT.__text: 0x13dd4
 +2972.31.6.17.21
-+  __TEXT.__text: 0x13f34
-   __TEXT.__auth_stubs: 0x5e0
-   __TEXT.__objc_stubs: 0x3aa0
-   __TEXT.__objc_methlist: 0x12fc
-   __TEXT.__const: 0xf0
--  __TEXT.__cstring: 0x9efc
-+  __TEXT.__cstring: 0xa28f
-   __TEXT.__objc_classname: 0x53b
-   __TEXT.__objc_methname: 0x391a
-   __TEXT.__objc_methtype: 0x848
-   __TEXT.__gcc_except_tab: 0x13c
-   __TEXT.__oslogstring: 0x1178
--  __TEXT.__unwind_info: 0x678
--  __DATA_CONST.__const: 0x180d0
--  __DATA_CONST.__cfstring: 0x8420
-+  __TEXT.__unwind_info: 0x680
-+  __DATA_CONST.__const: 0x18a28
-+  __DATA_CONST.__cfstring: 0x87c0
-   __DATA_CONST.__objc_classlist: 0xf0
-   __DATA_CONST.__objc_catlist: 0xd0
-   __DATA_CONST.__objc_protolist: 0x98
 
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__objc_superrefs: 0x68
-   __DATA_CONST.__objc_floatobj: 0x40
--  __DATA_CONST.__objc_doubleobj: 0x3b0
--  __DATA_CONST.__objc_intobj: 0x828
--  __DATA_CONST.__objc_arraydata: 0x98
-+  __DATA_CONST.__objc_doubleobj: 0x3c0
-+  __DATA_CONST.__objc_intobj: 0x7f8
-+  __DATA_CONST.__objc_arraydata: 0xc8
-   __DATA_CONST.__objc_arrayobj: 0xf0
-+  __DATA_CONST.__objc_dictobj: 0x28
-   __DATA_CONST.__auth_got: 0x300
-   __DATA_CONST.__got: 0x478
-   __DATA.__objc_const: 0x2cd8
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1338
 -  Symbols:   1295
 -  CStrings:  1975
 +  Functions: 1361
 +  Symbols:   1319
 +  CStrings:  2004
- 
 Symbols:
 + _MapsConfig_ChromeContextCoordinationStuckQueueRecoveryTimeout
 + _MapsConfig_DisplayedVisitedPlacesMinimumDisplayDuration

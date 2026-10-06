@@ -2,25 +2,15 @@
 
 > `/usr/lib/swift/libswift_DarwinFoundation2.dylib`
 
-### Sections with Same Size but Changed Content
-
-- `__TEXT.__const`
+### Other Changes
 
 ```diff
 
 -428.0.1.0.0
 +428.0.4.0.0
-   __TEXT.__text: 0x698
-   __TEXT.__const: 0x64
-   __TEXT.__unwind_info: 0x78
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   Functions: 19
 -  Symbols:   40
 +  Symbols:   16
-   CStrings:  0
- 
 Symbols:
 - _$s6Darwin5stdinSpySo7__sFILEVGvM
 - _$s6Darwin5stdinSpySo7__sFILEVGvM.resume

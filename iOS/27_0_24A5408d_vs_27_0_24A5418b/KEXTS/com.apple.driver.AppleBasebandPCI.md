@@ -2,45 +2,35 @@
 
 > `com.apple.driver.AppleBasebandPCI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x878d0` | `0x44ad0` | **`-0x42e00`** |
+| `__TEXT.__cstring` | `0xd869` | `0x495c` | **`-0x8f0d`** |
+| `__DATA_CONST.__const` | `0xfeb8` | `0xf108` | **`-0xdb0`** |
+| `__DATA_CONST.__kalloc_type` | `0x1d80` | `0x1980` | **`-0x400`** |
+| `__DATA.__bss` | `0x3070` | `0x2e78` | **`-0x1f8`** |
+| `__TEXT_EXEC.__auth_stubs` | `0xc50` | `0xac0` | **`-0x190`** |
+| `__DATA_CONST.__kalloc_var` | `0x690` | `0x550` | **`-0x140`** |
+| `__DATA_CONST.__auth_got` | `0x628` | `0x560` | **`-0xc8`** |
+| `__TEXT.__const` | `0x5237` | `0x5177` | **`-0xc0`** |
+| `__DATA.__data` | `0x3f8` | `0x33c` | **`-0xbc`** |
+| `__DATA.__common` | `0x5a8` | `0x500` | **`-0xa8`** |
+| `__DATA_CONST.__mod_init_func` | `0x13b0` | `0x1350` | **`-0x60`** |
+| `__DATA_CONST.__mod_term_func` | `0xe8` | `0xc8` | **`-0x20`** |
+| `__DATA_CONST.__weak_got` | `0xa80` | `0xa68` | **`-0x18`** |
+| `__DATA_CONST.__got` | `0x180` | `0x178` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 960.0.0.0.0
--  __TEXT.__cstring: 0xd869
--  __TEXT.__const: 0x5237
--  __TEXT_EXEC.__text: 0x878d0
--  __TEXT_EXEC.__auth_stubs: 0xc50
--  __DATA.__data: 0x3f8
--  __DATA.__common: 0x5a8
--  __DATA.__bss: 0x3070
--  __DATA_CONST.__mod_init_func: 0x13b0
--  __DATA_CONST.__mod_term_func: 0xe8
--  __DATA_CONST.__const: 0xfeb8
--  __DATA_CONST.__weak_got: 0xa80
--  __DATA_CONST.__kalloc_type: 0x1d80
--  __DATA_CONST.__kalloc_var: 0x690
--  __DATA_CONST.__auth_got: 0x628
--  __DATA_CONST.__got: 0x180
 -  Functions: 2408
-+  __TEXT.__cstring: 0x495c
-+  __TEXT.__const: 0x5177
-+  __TEXT_EXEC.__text: 0x44ad0
-+  __TEXT_EXEC.__auth_stubs: 0xac0
-+  __DATA.__data: 0x33c
-+  __DATA.__common: 0x500
-+  __DATA.__bss: 0x2e78
-+  __DATA_CONST.__mod_init_func: 0x1350
-+  __DATA_CONST.__mod_term_func: 0xc8
-+  __DATA_CONST.__const: 0xf108
-+  __DATA_CONST.__weak_got: 0xa68
-+  __DATA_CONST.__kalloc_type: 0x1980
-+  __DATA_CONST.__kalloc_var: 0x550
-+  __DATA_CONST.__auth_got: 0x560
-+  __DATA_CONST.__got: 0x178
 +  Functions: 2233
-   Symbols:   0
+
 -  CStrings:  1513
 +  CStrings:  556
- 
 CStrings:
 + "12111112122212121111111211121111211111111111112112112112111121121111121"
 + "121111121222121211111112111211112111111111111121121121121111211211111212"

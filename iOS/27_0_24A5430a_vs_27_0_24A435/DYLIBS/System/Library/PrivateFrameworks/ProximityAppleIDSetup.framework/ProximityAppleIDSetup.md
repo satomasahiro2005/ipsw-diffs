@@ -2,44 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/ProximityAppleIDSetup.framework/ProximityAppleIDSetup`
 
-```diff
+### Section Size Changes
 
- 90.0.0.0.0
--  __TEXT.__text: 0x133850
-+  __TEXT.__text: 0x1338d8
-   __TEXT.__objc_methlist: 0x93c
-   __TEXT.__const: 0x13220
-   __TEXT.__oslogstring: 0x6901
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x133850` | `0x1338d8` | **`+0x88`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_29ab423d8 -> sub_29b8cf3d8 : 824 -> 828
-~ sub_29ab45388 -> sub_29b8d238c : 944 -> 952
-~ sub_29ab45738 -> sub_29b8d2744 : 984 -> 992
-~ sub_29ab45b10 -> sub_29b8d2b24 : 972 -> 980
-~ sub_29ab45edc -> sub_29b8d2ef8 : 1036 -> 1044
-~ sub_29ab462e8 -> sub_29b8d330c : 956 -> 964
-~ sub_29ab466a4 -> sub_29b8d36d0 : 956 -> 964
-~ sub_29ab46a60 -> sub_29b8d3a94 : 952 -> 960
-~ sub_29ab46e18 -> sub_29b8d3e54 : 980 -> 988
-~ sub_29ab7754c -> sub_29b904590 : 680 -> 684
-~ sub_29ab777f4 -> sub_29b90483c : 692 -> 696
-~ sub_29ab78370 -> sub_29b9053bc : 688 -> 692
-~ sub_29ab78a70 -> sub_29b905ac0 : 336 -> 340
-~ sub_29aba6a0c -> sub_29b933a60 : 2032 -> 2040
-~ sub_29aba92d0 -> sub_29b93632c : 1160 -> 1164
-~ sub_29aba9758 -> sub_29b9367b8 : 880 -> 884
-~ sub_29aba9ac8 -> sub_29b936b2c : 872 -> 876
-~ sub_29aba9e30 -> sub_29b936e98 : 1136 -> 1140
-~ sub_29abdd0e8 -> sub_29b96a154 : 620 -> 624
-~ sub_29abdd59c -> sub_29b96a60c : 636 -> 640
-~ sub_29abddd20 -> sub_29b96ad94 : 616 -> 620
-~ sub_29abf66e0 -> sub_29b983758 : 1540 -> 1536
-~ sub_29abf6ce4 -> sub_29b983d58 : 376 -> 372
-~ sub_29ac11dc4 -> sub_29b99ee34 : 620 -> 624
-~ sub_29ac12030 -> sub_29b99f0a4 : 600 -> 604
-~ sub_29ac12288 -> sub_29b99f300 : 612 -> 616
-~ sub_29ac124ec -> sub_29b99f568 : 604 -> 608
-~ sub_29ac29410 -> sub_29b9b6490 : 1140 -> 1132
-~ sub_29ac3f7f8 -> sub_29b9cc870 : 356 -> 360
-~ sub_29ac3fb08 -> sub_29b9ccb84 : 344 -> 348
-~ sub_29ac56520 -> sub_29b9e35a0 : 556 -> 564
+~ sub_29aa273d8 -> sub_29b7b23d8 : 824 -> 828
+~ sub_29aa2a388 -> sub_29b7b538c : 944 -> 952
+~ sub_29aa2a738 -> sub_29b7b5744 : 984 -> 992
+~ sub_29aa2ab10 -> sub_29b7b5b24 : 972 -> 980
+~ sub_29aa2aedc -> sub_29b7b5ef8 : 1036 -> 1044
+~ sub_29aa2b2e8 -> sub_29b7b630c : 956 -> 964
+~ sub_29aa2b6a4 -> sub_29b7b66d0 : 956 -> 964
+~ sub_29aa2ba60 -> sub_29b7b6a94 : 952 -> 960
+~ sub_29aa2be18 -> sub_29b7b6e54 : 980 -> 988
+~ sub_29aa5c54c -> sub_29b7e7590 : 680 -> 684
+~ sub_29aa5c7f4 -> sub_29b7e783c : 692 -> 696
+~ sub_29aa5d370 -> sub_29b7e83bc : 688 -> 692
+~ sub_29aa5da70 -> sub_29b7e8ac0 : 336 -> 340
+~ sub_29aa8ba0c -> sub_29b816a60 : 2032 -> 2040
+~ sub_29aa8e2d0 -> sub_29b81932c : 1160 -> 1164
+~ sub_29aa8e758 -> sub_29b8197b8 : 880 -> 884
+~ sub_29aa8eac8 -> sub_29b819b2c : 872 -> 876
+~ sub_29aa8ee30 -> sub_29b819e98 : 1136 -> 1140
+~ sub_29aac20e8 -> sub_29b84d154 : 620 -> 624
+~ sub_29aac259c -> sub_29b84d60c : 636 -> 640
+~ sub_29aac2d20 -> sub_29b84dd94 : 616 -> 620
+~ sub_29aadb6e0 -> sub_29b866758 : 1540 -> 1536
+~ sub_29aadbce4 -> sub_29b866d58 : 376 -> 372
+~ sub_29aaf6dc4 -> sub_29b881e34 : 620 -> 624
+~ sub_29aaf7030 -> sub_29b8820a4 : 600 -> 604
+~ sub_29aaf7288 -> sub_29b882300 : 612 -> 616
+~ sub_29aaf74ec -> sub_29b882568 : 604 -> 608
+~ sub_29ab0e410 -> sub_29b899490 : 1140 -> 1132
+~ sub_29ab247f8 -> sub_29b8af870 : 356 -> 360
+~ sub_29ab24b08 -> sub_29b8afb84 : 344 -> 348
+~ sub_29ab3b520 -> sub_29b8c65a0 : 556 -> 564
 ```

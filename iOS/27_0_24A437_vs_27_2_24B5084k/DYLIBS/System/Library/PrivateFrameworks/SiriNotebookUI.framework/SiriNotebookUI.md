@@ -2,69 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/SiriNotebookUI.framework/SiriNotebookUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5b748` | `0x5c59c` | **`+0xe54`** |
+| `__TEXT.__swift5_typeref` | `0x917c` | `0x92cc` | **`+0x150`** |
+| `__TEXT.__const` | `0x5d94` | `0x5ca4` | **`-0xf0`** |
+| `__DATA.__common` | `0x60` | `0xe0` | **`+0x80`** |
+| `__DATA.__data` | `0x26d0` | `0x2730` | **`+0x60`** |
+| `__TEXT.__eh_frame` | `0x598` | `0x5f0` | **`+0x58`** |
+| `__TEXT.__unwind_info` | `0x1558` | `0x15a0` | **`+0x48`** |
+| `__DATA.__bss` | `0x3eb0` | `0x3e70` | **`-0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x16e0` | `0x1710` | **`+0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0xf04` | `0xf28` | **`+0x24`** |
+| `__TEXT.__swift5_reflstr` | `0x9d5` | `0x9f5` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0xba0` | `0xbb8` | **`+0x18`** |
+| `__AUTH.__data` | `0x1918` | `0x1928` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3600.28.20.0.0
--  __TEXT.__text: 0x5789c
--  __TEXT.__const: 0x5d94
 +3605.11.1.0.0
-+  __TEXT.__text: 0x58664
-+  __TEXT.__const: 0x5ca4
-   __TEXT.__constg_swiftt: 0x17d0
--  __TEXT.__swift5_typeref: 0x917c
-+  __TEXT.__swift5_typeref: 0x92cc
-   __TEXT.__swift5_builtin: 0x14
--  __TEXT.__swift5_reflstr: 0x9d5
-+  __TEXT.__swift5_reflstr: 0x9f5
-   __TEXT.__swift5_assocty: 0x708
-   __TEXT.__swift5_proto: 0x1f4
-   __TEXT.__swift5_types: 0x170
--  __TEXT.__swift5_fieldmd: 0xf04
-+  __TEXT.__swift5_fieldmd: 0xf28
-   __TEXT.__cstring: 0x394
-   __TEXT.__oslogstring: 0x4c0
-   __TEXT.__swift5_capture: 0x6f0
 
-   __TEXT.__swift_as_cont: 0x18
-   __TEXT.__swift_as_ret: 0x8
-   __TEXT.__swift5_protos: 0xc
--  __TEXT.__unwind_info: 0x1d30
--  __TEXT.__eh_frame: 0x598
-+  __TEXT.__unwind_info: 0x1d68
-+  __TEXT.__eh_frame: 0x5f0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x158
--  __DATA_CONST.__got: 0xba0
-+  __DATA_CONST.__got: 0xbb8
-   __AUTH_CONST.__const: 0x2148
-   __AUTH_CONST.__objc_const: 0x2d0
--  __AUTH_CONST.__auth_got: 0x16e0
-+  __AUTH_CONST.__auth_got: 0x1710
-   __AUTH.__objc_data: 0x50
--  __AUTH.__data: 0x1918
--  __DATA.__data: 0x26d0
--  __DATA.__common: 0x60
-+  __AUTH.__data: 0x1928
-+  __DATA.__data: 0x2730
-+  __DATA.__common: 0xe0
-   __DATA_DIRTY.__data: 0x98
-   __DATA_DIRTY.__bss: 0x80
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2536
--  Symbols:   1287
+-  Symbols:   1244
 +  Functions: 2548
-+  Symbols:   1289
-   CStrings:  44
- 
++  Symbols:   1246
 Symbols:
 + ___swift_memcpy24_8
 + _get_witness_table 7SwiftUI19_ConditionalContentVyAA4ViewP07SnippetB0E26lastComponentBottomSpacingyQrAF0h5StackiJ0OFQOyAA08ModifiedD0VyAKyAKyAKyAF0hK0VyAA05TupleD0VyAKyAKyAKyAeFE10separators_10isOverrideQr0F3Kit14SeparatorStyleO_SbtFQOy012SiriNotebookB0022ReminderPrimaryHeadingE0V_Qo_AA01_D13ShapeModifierVyAA9RectangleVGGAU020RemindersAppPunchoutZ0VGAA14_PaddingLayoutVG_AA7ForEachVySay0tU00F0O0V0VG10Foundation4UUIDVAU0vE0VGQPGGAA022_EnvironmentKeyWritingZ0VySbGGA26_yAA03AnyyS0VSgGGA7_GAU023RemindersHostBackgroundZ033_23C8059FBE9CFE13B83B38C231FDFEC7LLVG_Qo_A38_GAaDHPqd__AaDHD2_A39_HO_A38_AaDHPA34_AaDHPA33_AaDHPA28_AaDHPA24_AaDHPyHC_A27_AA0eZ0HPyHCHC_A32_AAA41_HPyHCHC_A7_AAA41_HPyHCHC_A37_AAA41_HPyHCHCHC

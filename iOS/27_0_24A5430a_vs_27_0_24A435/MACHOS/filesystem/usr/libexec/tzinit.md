@@ -2,21 +2,22 @@
 
 > `/usr/libexec/tzinit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__unwind_info`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x102dc` | `0x102ec` | **`+0x10`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__const`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__init_offsets`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 90.0.0.0.0
--  __TEXT.__text: 0x102dc
-+  __TEXT.__text: 0x102ec
-   __TEXT.__auth_stubs: 0x520
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__const: 0x726
+```text
 Functions:
 ~ sub_100007078 : 340 -> 336
 ~ sub_1000074b8 -> sub_1000074b4 : 284 -> 288

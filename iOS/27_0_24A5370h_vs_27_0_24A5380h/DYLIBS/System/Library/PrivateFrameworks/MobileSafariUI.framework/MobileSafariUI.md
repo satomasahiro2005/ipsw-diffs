@@ -2,139 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/MobileSafariUI.framework/MobileSafariUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2d2fac` | `0x2d7dc4` | **`+0x4e18`** |
+| `__TEXT.__gcc_except_tab` | `0x1ed88` | `0x1f1c0` | **`+0x438`** |
+| `__AUTH.__objc_data` | `0x32f0` | `0x30f0` | **`-0x200`** |
+| `__DATA_DIRTY.__objc_data` | `0x4440` | `0x4640` | **`+0x200`** |
+| `__AUTH_CONST.__objc_const` | `0x32a68` | `0x32c58` | **`+0x1f0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x182b0` | `0x18498` | **`+0x1e8`** |
+| `__DATA.__bss` | `0x3280` | `0x30c0` | **`-0x1c0`** |
+| `__DATA_DIRTY.__bss` | `0x9d0` | `0xb90` | **`+0x1c0`** |
+| `__AUTH_CONST.__const` | `0x7f48` | `0x80f8` | **`+0x1b0`** |
+| `__TEXT.__objc_methlist` | `0x248e4` | `0x24a5c` | **`+0x178`** |
+| `__DATA_DIRTY.__data` | `0x11c8` | `0x12c0` | **`+0xf8`** |
+| `__TEXT.__unwind_info` | `0xfa60` | `0xfb48` | **`+0xe8`** |
+| `__DATA.__data` | `0x9968` | `0x9898` | **`-0xd0`** |
+| `__DATA_CONST.__got` | `0x35a8` | `0x3678` | **`+0xd0`** |
+| `__AUTH_CONST.__cfstring` | `0xdc80` | `0xdd40` | **`+0xc0`** |
+| `__TEXT.__cstring` | `0x10614` | `0x106a4` | **`+0x90`** |
+| `__TEXT.__swift5_capture` | `0x2238` | `0x22a8` | **`+0x70`** |
+| `__TEXT.__swift5_typeref` | `0x5d7b` | `0x5dd9` | **`+0x5e`** |
+| `__AUTH.__data` | `0xda8` | `0xd50` | **`-0x58`** |
+| `__TEXT.__dlopen_cstrs` | `0x83a` | `0x7e6` | **`-0x54`** |
+| `__DATA_CONST.__const` | `0x97a8` | `0x97f8` | **`+0x50`** |
+| `__TEXT.__const` | `0x4370` | `0x43b0` | **`+0x40`** |
+| `__TEXT.__oslogstring` | `0xab1f` | `0xab4f` | **`+0x30`** |
+| `__TEXT.__constg_swiftt` | `0x1c9c` | `0x1c84` | **`-0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x2b90` | `0x2ba0` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x2094` | `0x20a4` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0xd6c` | `0xd78` | **`+0xc`** |
+| `__TEXT.__eh_frame` | `0x23a4` | `0x239c` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__swift5_reflstr`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2d2fac
--  __TEXT.__objc_methlist: 0x248e4
--  __TEXT.__const: 0x4370
--  __TEXT.__gcc_except_tab: 0x1ed88
--  __TEXT.__cstring: 0x10614
--  __TEXT.__dlopen_cstrs: 0x83a
--  __TEXT.__oslogstring: 0xab1f
-+  __TEXT.__text: 0x2d7dc4
-+  __TEXT.__objc_methlist: 0x24a5c
-+  __TEXT.__const: 0x43b0
-+  __TEXT.__gcc_except_tab: 0x1f1c0
-+  __TEXT.__cstring: 0x106a4
-+  __TEXT.__dlopen_cstrs: 0x7e6
-+  __TEXT.__oslogstring: 0xab4f
-   __TEXT.__ustring: 0x11da
--  __TEXT.__swift5_typeref: 0x5d7b
--  __TEXT.__constg_swiftt: 0x1c9c
-+  __TEXT.__swift5_typeref: 0x5dd9
-+  __TEXT.__constg_swiftt: 0x1c84
-   __TEXT.__swift5_builtin: 0x1b8
-   __TEXT.__swift5_reflstr: 0xf60
--  __TEXT.__swift5_fieldmd: 0xd6c
-+  __TEXT.__swift5_fieldmd: 0xd78
-   __TEXT.__swift5_assocty: 0x4c8
-   __TEXT.__swift5_proto: 0x1b0
-   __TEXT.__swift5_types: 0x130
--  __TEXT.__swift5_capture: 0x2238
-+  __TEXT.__swift5_capture: 0x22a8
-   __TEXT.__swift_as_entry: 0xb0
-   __TEXT.__swift_as_ret: 0xd8
-   __TEXT.__swift_as_cont: 0x160
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_protos: 0xc
--  __TEXT.__unwind_info: 0xfa60
--  __TEXT.__eh_frame: 0x23a4
-+  __TEXT.__unwind_info: 0xfb48
-+  __TEXT.__eh_frame: 0x239c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x97a8
-+  __DATA_CONST.__const: 0x97f8
-   __DATA_CONST.__objc_classlist: 0x9e8
-   __DATA_CONST.__objc_catlist: 0xb0
-   __DATA_CONST.__objc_protolist: 0xbd0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x182b0
-+  __DATA_CONST.__objc_selrefs: 0x18498
-   __DATA_CONST.__objc_protorefs: 0x1d8
-   __DATA_CONST.__objc_superrefs: 0x688
-   __DATA_CONST.__objc_arraydata: 0x368
--  __DATA_CONST.__got: 0x35a8
--  __AUTH_CONST.__const: 0x7f48
--  __AUTH_CONST.__cfstring: 0xdc80
--  __AUTH_CONST.__objc_const: 0x32a68
-+  __DATA_CONST.__got: 0x3678
-+  __AUTH_CONST.__const: 0x80f8
-+  __AUTH_CONST.__cfstring: 0xdd40
-+  __AUTH_CONST.__objc_const: 0x32c58
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x4c8
-   __AUTH_CONST.__objc_dictobj: 0xc8
-   __AUTH_CONST.__objc_arrayobj: 0x2b8
-   __AUTH_CONST.__objc_doubleobj: 0x80
--  __AUTH_CONST.__auth_got: 0x2b90
--  __AUTH.__objc_data: 0x32f0
--  __AUTH.__data: 0xda8
--  __DATA.__objc_ivar: 0x2094
--  __DATA.__data: 0x9968
-+  __AUTH_CONST.__auth_got: 0x2ba0
-+  __AUTH.__objc_data: 0x30f0
-+  __AUTH.__data: 0xd50
-+  __DATA.__objc_ivar: 0x20a4
-+  __DATA.__data: 0x9898
-   __DATA.__objc_stublist: 0x10
--  __DATA.__bss: 0x3280
-+  __DATA.__bss: 0x30c0
-   __DATA.__common: 0xa1
--  __DATA_DIRTY.__objc_data: 0x4440
--  __DATA_DIRTY.__data: 0x11c8
--  __DATA_DIRTY.__bss: 0x9d0
-+  __DATA_DIRTY.__objc_data: 0x4640
-+  __DATA_DIRTY.__data: 0x12c0
-+  __DATA_DIRTY.__bss: 0xb90
-   __DATA_DIRTY.__common: 0x48
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/BrowserKit.framework/BrowserKit
+-625.1.20.10.3
++625.1.22.10.3
 
-   - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
-   - /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset
-   - /System/Library/PrivateFrameworks/MobileSafari.framework/MobileSafari
 +  - /System/Library/PrivateFrameworks/PassKitCore.framework/PassKitCore
-   - /System/Library/PrivateFrameworks/PasswordManagerUI.framework/PasswordManagerUI
-   - /System/Library/PrivateFrameworks/SafariCore.framework/SafariCore
-   - /System/Library/PrivateFrameworks/SafariFoundation.framework/SafariFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15772
--  Symbols:   47984
--  CStrings:  4948
+-  Symbols:   22736
+-  CStrings:  3238
 +  Functions: 15847
-+  Symbols:   48159
-+  CStrings:  4961
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_reflstr : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __DATA.__objc_stublist : content changed
++  Symbols:   22791
++  CStrings:  3245
 Symbols:
 + +[WBSParsecDSession sendLaunchFeedbackWithEvent:isPrivate:usesLoweredSearchBar:isStartPageVisible:]
 + -[Application activeWindowIsShowingStartPage]
@@ -331,72 +250,6 @@ Symbols:
 + ___swift_closure_destructor.33Tm
 + _countLeafBookmarksOutsideReadingList
 + _keypath_get_selector_searchBarShouldResignFirstResponderHandler
-+ _objc_msgSend$_buildResultsForSectionIdentifier:bundleIdentifier:
-+ _objc_msgSend$_emitEnabledSectionsForSessionQueryID:
-+ _objc_msgSend$_emitStartPageFeedbackOnAppear
-+ _objc_msgSend$_openNewEmptyTabWithURLFieldFocused:privateBrowsingState:showingRecentSearches:
-+ _objc_msgSend$_performBookmarkClusteringUsageReport
-+ _objc_msgSend$_performBookmarksUsageReport
-+ _objc_msgSend$_saveBackfilledFeatureText:fetchError:forBookmarkWithID:
-+ _objc_msgSend$_setSearchSuggestion:ranges:
-+ _objc_msgSend$_suppressFavoritesUnfocusForLibrarySearch
-+ _objc_msgSend$aa_altDSID
-+ _objc_msgSend$activeWindowIsShowingStartPage
-+ _objc_msgSend$bookmarksSearchBarShouldResignFirstResponderHandler
-+ _objc_msgSend$cachedFilterIDsByItemID
-+ _objc_msgSend$deferLoadOfURL:loadResolvedURL:
-+ _objc_msgSend$didClickBookmarkTopic
-+ _objc_msgSend$didDetectSchemeNavigation:
-+ _objc_msgSend$didDisplayStartPageSections:forQueryID:
-+ _objc_msgSend$didFinishLoad
-+ _objc_msgSend$didSelectFeedbackAction:
-+ _objc_msgSend$donateAppForeground
-+ _objc_msgSend$donateSearchEngagement
-+ _objc_msgSend$fallbackURLForProvisionalNavigationFailure
-+ _objc_msgSend$fallbackURLForResponse:
-+ _objc_msgSend$featureTextFetchError
-+ _objc_msgSend$filterIDForTabWithUUID:
-+ _objc_msgSend$firstVisibleFormMatchingPredicate:completionHandler:
-+ _objc_msgSend$highlightedRanges
-+ _objc_msgSend$importHistoryAgeLimitCutoff
-+ _objc_msgSend$initWithURL:completion:
-+ _objc_msgSend$invalidateCollectionViewLayout
-+ _objc_msgSend$isClusteringEnabled
-+ _objc_msgSend$isRecentSearchesInStartPageEnabled
-+ _objc_msgSend$isRunningAutomaticPasswordChangeSubtest
-+ _objc_msgSend$leftEdgeEffect
-+ _objc_msgSend$listWithID:skipOffset:includeHidden:
-+ _objc_msgSend$notifyStartPageDidAppear
-+ _objc_msgSend$numberOfCurrentTopics
-+ _objc_msgSend$recentSearchWasEngagedOnStartPage:
-+ _objc_msgSend$reportBookmarkClusteringUsageWithNumberOfBookmarkTopics:bookmarkClusteringEnabled:
-+ _objc_msgSend$reportBookmarksUsageWithNumberOfBookmarks:numberOfReadingListItems:
-+ _objc_msgSend$reportResumeBrowsingContextMenuAction:source:
-+ _objc_msgSend$reportResumeBrowsingExpandedTopicWithSource:openedTab:
-+ _objc_msgSend$reportResumeBrowsingOpenedTopicWithSource:
-+ _objc_msgSend$rightEdgeEffect
-+ _objc_msgSend$scheduleNotifyMeWhenActiveAutomationsReport
-+ _objc_msgSend$scheduleResumeBrowsingDailyReportWithClusterManager:profileIdentifiersProvider:
-+ _objc_msgSend$searchBarShouldResignFirstResponderHandler
-+ _objc_msgSend$searchViewAppearedBecauseOfEvent:forQueryID:usesLoweredSearchBar:isStartPageVisible:
-+ _objc_msgSend$searchViewAppearedBecauseOfEvent:isSafariReaderAvailable:forQueryID:usesLoweredSearchBar:isStartPageVisible:
-+ _objc_msgSend$sendNewTabFeedback:isStartPageVisible:
-+ _objc_msgSend$setBookmarksSearchBarShouldResignFirstResponderHandler:
-+ _objc_msgSend$setCachedFilterIDsByItemID:
-+ _objc_msgSend$setFeatureTextFetchError:
-+ _objc_msgSend$setFeedbackDispatcher:
-+ _objc_msgSend$setIsHostedAsPopover:
-+ _objc_msgSend$setSearchBarShouldResignFirstResponderHandler:
-+ _objc_msgSend$setSearchSuggestion:withHighlightedRanges:
-+ _objc_msgSend$setShouldApplyBlendMode:
-+ _objc_msgSend$shouldPerformDownload
-+ _objc_msgSend$startPageControllerForViewController:
-+ _objc_msgSend$startPageDidAppearWithSessionQueryID:
-+ _objc_msgSend$tabsArrangedByTitle
-+ _objc_msgSend$tabsArrangedByWebsite
-+ _objc_msgSend$updateStartPageSessionQueryID:
-+ _objc_msgSend$userDidEngageWithStartPageResult:method:queryID:
-+ _objc_msgSend$viewControllerIfLoaded
 + _swift_deallocPartialClassInstance
 + _symbolic SS______t 10Foundation4UUIDV
 + _symbolic So32StartPageSegmentedViewControllerCSgXw
@@ -548,13 +401,6 @@ Symbols:
 - ___swift_closure_destructor.158Tm
 - ___swift_closure_destructor.24Tm
 - ___swift_closure_destructor.36Tm
-- _objc_msgSend$_saveBackfilledFeatureText:forBookmarkWithID:
-- _objc_msgSend$canAutoFillNewPasswordOnPageWithCompletionHandler:
-- _objc_msgSend$safari_isCaseAndDiacriticInsensitiveEqualToString:
-- _objc_msgSend$searchViewAppearedBecauseOfEvent:forQueryID:usesLoweredSearchBar:
-- _objc_msgSend$searchViewAppearedBecauseOfEvent:isSafariReaderAvailable:forQueryID:usesLoweredSearchBar:
-- _objc_msgSend$sendNewTabFeedback:
-- _objc_msgSend$shouldMoveSuggestionFromSearchProvider:toTopOfSectionForUserTypedQuery:
 - _swift_willThrowTypedImpl
 CStrings:
 + "%lld"
@@ -576,5 +422,4 @@ CStrings:
 - "softlink:r:path:/System/Library/PrivateFrameworks/PassKitCore.framework/PassKitCore"
 - "v52@?0B8@\"NSString\"12@\"NSString\"20@\"NSString\"28@\"NSString\"36@\"NSData\"44"
 - "\xf0\xf0\xf0Q"
-
 ```

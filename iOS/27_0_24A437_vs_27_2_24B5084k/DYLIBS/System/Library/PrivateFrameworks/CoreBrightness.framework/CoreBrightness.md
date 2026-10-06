@@ -2,88 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/CoreBrightness.framework/CoreBrightness`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17b78c` | `0x17d0dc` | **`+0x1950`** |
+| `__AUTH_CONST.__objc_const` | `0x38c38` | `0x392c0` | **`+0x688`** |
+| `__TEXT.__objc_methlist` | `0xdc6c` | `0xde50` | **`+0x1e4`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5c80` | `0x5d70` | **`+0xf0`** |
+| `__AUTH.__objc_data` | `0x2c90` | `0x2d30` | **`+0xa0`** |
+| `__AUTH_CONST.__cfstring` | `0xed00` | `0xed80` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x58f0` | `0x5960` | **`+0x70`** |
+| `__DATA_CONST.__const` | `0x31b8` | `0x3220` | **`+0x68`** |
+| `__DATA.__data` | `0x35160` | `0x351c0` | **`+0x60`** |
+| `__TEXT.__oslogstring` | `0x1ad8d` | `0x1aded` | **`+0x60`** |
+| `__TEXT.__cstring` | `0xd2f5` | `0xd335` | **`+0x40`** |
+| `__DATA.__objc_ivar` | `0x1860` | `0x1888` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x3fa0` | `0x3fc0` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x28d4` | `0x28e8` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x790` | `0x7a0` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x398` | `0x3a0` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x638` | `0x640` | **`+0x8`** |
+| `__TEXT.__const` | `0x1b6b8` | `0x1b6c0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2300.2.9.0.0
--  __TEXT.__text: 0x177ad4
--  __TEXT.__objc_methlist: 0xdc6c
--  __TEXT.__cstring: 0xd2f5
--  __TEXT.__oslogstring: 0x1ad8d
--  __TEXT.__const: 0x1b6b8
--  __TEXT.__gcc_except_tab: 0x28d4
 +2300.40.37.0.0
-+  __TEXT.__text: 0x1793bc
-+  __TEXT.__objc_methlist: 0xde50
-+  __TEXT.__cstring: 0xd335
-+  __TEXT.__const: 0x1b6c0
-+  __TEXT.__oslogstring: 0x1aded
-+  __TEXT.__gcc_except_tab: 0x28e8
-   __TEXT.__dlopen_cstrs: 0x218
-   __TEXT.__swift5_typeref: 0xf3b
-   __TEXT.__constg_swiftt: 0xd64
 
-   __TEXT.__swift5_capture: 0x3d0
-   __TEXT.__swift5_mpenum: 0x28
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__unwind_info: 0x79e0
-+  __TEXT.__unwind_info: 0x7a78
-   __TEXT.__eh_frame: 0xb98
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x31b8
--  __DATA_CONST.__objc_classlist: 0x790
-+  __DATA_CONST.__const: 0x3220
-+  __DATA_CONST.__objc_classlist: 0x7a0
-   __DATA_CONST.__objc_catlist: 0x18
--  __DATA_CONST.__objc_protolist: 0x398
-+  __DATA_CONST.__objc_protolist: 0x3a0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x5c80
-+  __DATA_CONST.__objc_selrefs: 0x5d70
-   __DATA_CONST.__objc_protorefs: 0x158
--  __DATA_CONST.__objc_superrefs: 0x638
-+  __DATA_CONST.__objc_superrefs: 0x640
-   __DATA_CONST.__objc_arraydata: 0xcf8
-   __DATA_CONST.__got: 0x7e8
--  __AUTH_CONST.__const: 0x3fa0
--  __AUTH_CONST.__cfstring: 0xed00
--  __AUTH_CONST.__objc_const: 0x38c38
-+  __AUTH_CONST.__const: 0x3fc0
-+  __AUTH_CONST.__cfstring: 0xed80
-+  __AUTH_CONST.__objc_const: 0x392c0
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_doubleobj: 0x80
-   __AUTH_CONST.__objc_intobj: 0xd98
-   __AUTH_CONST.__objc_arrayobj: 0x420
--  __AUTH_CONST.__objc_dictobj: 0x550
-   __AUTH_CONST.__objc_floatobj: 0x1b0
-+  __AUTH_CONST.__objc_dictobj: 0x550
-   __AUTH_CONST.__auth_got: 0x13b0
--  __AUTH.__objc_data: 0x2c90
-+  __AUTH.__objc_data: 0x2d30
-   __AUTH.__data: 0x788
--  __DATA.__objc_ivar: 0x1860
--  __DATA.__data: 0x35160
-+  __DATA.__objc_ivar: 0x1888
-+  __DATA.__data: 0x351c0
-   __DATA.__common: 0x10
-   __DATA_DIRTY.__objc_data: 0x2238
-   __DATA_DIRTY.__data: 0x4e8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9043
--  Symbols:   13159
+-  Symbols:   10659
 -  CStrings:  4865
 +  Functions: 9094
-+  Symbols:   13256
++  Symbols:   10737
 +  CStrings:  4871
- 
 Symbols:
 + +[CBDisplayBrightnessClient copyNSNumberForKey:client:handle:andError:]
 + +[CBRampProfileSpring defaultSpringProfile]
@@ -168,28 +122,6 @@ Symbols:
 + _kCBSPIBrightnessCommitUpdateNitsInitial
 + _load_mapping_table_from_defaults
 + _mapping_table_is_valid
-+ _objc_msgSend$CEModulePropertyHandler:key:
-+ _objc_msgSend$_cacheNormalizer
-+ _objc_msgSend$_springValAtT:
-+ _objc_msgSend$arrayForKey:
-+ _objc_msgSend$brightnessCommitUpdate:
-+ _objc_msgSend$closeHostConnections
-+ _objc_msgSend$connectToHost
-+ _objc_msgSend$copyCachedInferenceForEvent:
-+ _objc_msgSend$copyNSNumberForKey:client:handle:andError:
-+ _objc_msgSend$initWithBrightnessControl:displayUUID:builtIn:delegate:andQueue:
-+ _objc_msgSend$insertNewRampOrigin:target:length:frequency:startRamp:identifier:profile:
-+ _objc_msgSend$invalidateInferenceCache
-+ _objc_msgSend$isAngleValid
-+ _objc_msgSend$isAvailable
-+ _objc_msgSend$normalizedOutputForProgress:
-+ _objc_msgSend$resetUserAdjustmentState
-+ _objc_msgSend$sendBrightnessTransactionRequestForDisplayUUID:builtIn:
-+ _objc_msgSend$sendBrightnessTransactionRequestOnQueueForDisplayUUID:builtIn:
-+ _objc_msgSend$sendHeadroomRequestOnQueue:forDisplayUUID:builtIn:
-+ _objc_msgSend$setColorAdaptationActive:
-+ _objc_msgSend$setPropertyOnQueue:forKey:
-+ _objc_msgSend$shouldRunInferenceAtTime:
 + _save_mapping_table_to_defaults
 - -[CBColorModuleShared CEOverridePropertyHandler:key:]
 - -[CBRingLight getStatusInfo]
@@ -197,9 +129,6 @@ Symbols:
 - _OBJC_IVAR_$_CBRingLight._overridenByUser
 - ___18-[BLControl start]_block_invoke_7
 - ___83-[VMDisplayModule initWithBrightnessControl:displayUUID:builtIn:delegate:andQueue:]_block_invoke_2
-- _objc_msgSend$CEOverridePropertyHandler:key:
-- _objc_msgSend$getStatusInfo
-- _objc_msgSend$requestBrightnessTransactionForDisplayUUID:builtIn:
 CStrings:
 + "Adding module for display with ID = %d uuid:%@ builtIn:%d"
 + "Angle=%f"

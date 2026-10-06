@@ -2,28 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/Bom.framework/Bom`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5a6b8` | `0x5b4ac` | **`+0xdf4`** |
+| `__TEXT.__cstring` | `0x129f6` | `0x129d0` | **`-0x26`** |
+
+### Other Changes
+
 ```diff
 
 -277.0.0.0.0
--  __TEXT.__text: 0x5a6b8
--  __TEXT.__cstring: 0x129f6
 +279.1.0.0.0
-+  __TEXT.__text: 0x5b4ac
-+  __TEXT.__cstring: 0x129d0
-   __TEXT.__const: 0x1728
-   __TEXT.__oslogstring: 0x103e
-   __TEXT.__unwind_info: 0xad8
 
-   - /usr/lib/libarchive.2.dylib
-   - /usr/lib/libbz2.1.0.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 1095
 -  Symbols:   1556
 -  CStrings:  2391
 +  Functions: 1100
 +  Symbols:   1561
 +  CStrings:  2390
- 
 Symbols:
 + _BOM_calloc_typed
 + _BOM_malloc_typed
@@ -196,5 +194,7 @@ Functions:
 ~ _BOMCopierSandbox_boxup : 444 -> 468
 ~ _BOMCopierSandbox_opendir : 460 -> 476
 CStrings:
++ "Aug  3 2026"
 - "Could not create empty hardlink path\n"
+- "Jul  8 2026"
 ```

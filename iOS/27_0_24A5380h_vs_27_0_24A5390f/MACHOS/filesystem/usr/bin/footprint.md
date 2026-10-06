@@ -2,89 +2,56 @@
 
 > `/usr/bin/footprint`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_superrefs`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1fae0` | `0x21314` | **`+0x1834`** |
+| `__TEXT.__cstring` | `0x2d73` | `0x303f` | **`+0x2cc`** |
+| `__DATA_CONST.__cfstring` | `0x1100` | `0x12e0` | **`+0x1e0`** |
+| `__TEXT.__objc_stubs` | `0x23e0` | `0x2560` | **`+0x180`** |
+| `__DATA.__objc_const` | `0x30b0` | `0x3200` | **`+0x150`** |
+| `__TEXT.__objc_methname` | `0x24d3` | `0x25d4` | **`+0x101`** |
+| `__TEXT.__objc_methlist` | `0x124c` | `0x131c` | **`+0xd0`** |
+| `__TEXT.__auth_stubs` | `0xc40` | `0xce0` | **`+0xa0`** |
+| `__DATA.__objc_data` | `0x780` | `0x7d0` | **`+0x50`** |
+| `__DATA.__objc_selrefs` | `0xa28` | `0xa78` | **`+0x50`** |
+| `__DATA_CONST.__auth_got` | `0x630` | `0x680` | **`+0x50`** |
+| `__DATA_CONST.__const` | `0x708` | `0x748` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x4a0` | `0x4d0` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x248` | `0x268` | **`+0x20`** |
+| `__TEXT.__objc_methtype` | `0x7f9` | `0x80c` | **`+0x13`** |
+| `__DATA.__bss` | `0x48b8` | `0x48c8` | **`+0x10`** |
+| `__TEXT.__objc_classname` | `0x1db` | `0x1ea` | **`+0xf`** |
+| `__DATA.__objc_ivar` | `0x2b8` | `0x2c4` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0xc0` | `0xc8` | **`+0x8`** |
+| `__TEXT.__const` | `0x230` | `0x238` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x444` | `0x43c` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__objc_arraydata`
 - `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
 - `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__data`
-- `__DATA.__common`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_superrefs`
+
+### Other Changes
 
 ```diff
 
 -360.0.0.0.0
--  __TEXT.__text: 0x1fae0
--  __TEXT.__auth_stubs: 0xc40
--  __TEXT.__objc_stubs: 0x23e0
--  __TEXT.__objc_methlist: 0x124c
--  __TEXT.__const: 0x230
--  __TEXT.__cstring: 0x2d73
--  __TEXT.__objc_methname: 0x24d3
--  __TEXT.__objc_classname: 0x1db
--  __TEXT.__objc_methtype: 0x7f9
--  __TEXT.__gcc_except_tab: 0x444
 +364.0.0.0.0
-+  __TEXT.__text: 0x21314
-+  __TEXT.__auth_stubs: 0xce0
-+  __TEXT.__objc_stubs: 0x2560
-+  __TEXT.__objc_methlist: 0x131c
-+  __TEXT.__const: 0x238
-+  __TEXT.__cstring: 0x303f
-+  __TEXT.__objc_classname: 0x1ea
-+  __TEXT.__objc_methtype: 0x80c
-+  __TEXT.__gcc_except_tab: 0x43c
-+  __TEXT.__objc_methname: 0x25d4
-   __TEXT.__ustring: 0xd0
-   __TEXT.__oslogstring: 0x21
--  __TEXT.__unwind_info: 0x4a0
--  __DATA_CONST.__const: 0x708
--  __DATA_CONST.__cfstring: 0x1100
--  __DATA_CONST.__objc_classlist: 0xc0
-+  __TEXT.__unwind_info: 0x4d0
-+  __DATA_CONST.__const: 0x748
-+  __DATA_CONST.__cfstring: 0x12e0
-+  __DATA_CONST.__objc_classlist: 0xc8
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   __DATA_CONST.__objc_arraydata: 0x28
-   __DATA_CONST.__objc_arrayobj: 0x30
-   __DATA_CONST.__objc_intobj: 0x18
--  __DATA_CONST.__auth_got: 0x630
--  __DATA_CONST.__got: 0x248
-+  __DATA_CONST.__auth_got: 0x680
-+  __DATA_CONST.__got: 0x268
-   __DATA_CONST.__auth_ptr: 0x8
--  __DATA.__objc_const: 0x30b0
--  __DATA.__objc_selrefs: 0xa28
--  __DATA.__objc_ivar: 0x2b8
--  __DATA.__objc_data: 0x780
-+  __DATA.__objc_const: 0x3200
-+  __DATA.__objc_selrefs: 0xa78
-+  __DATA.__objc_ivar: 0x2c4
-+  __DATA.__objc_data: 0x7d0
-   __DATA.__data: 0x250
--  __DATA.__bss: 0x48b8
-+  __DATA.__bss: 0x48c8
-   __DATA.__common: 0x40
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libutil.dylib
 -  Functions: 434
 -  Symbols:   1498
 -  CStrings:  1069
 +  Functions: 453
 +  Symbols:   1556
 +  CStrings:  1102
- 
 Symbols:
 + +[FPBootCarveout _loadBootStolenInfoLocked]
 + +[FPBootCarveout bootStolenSize]

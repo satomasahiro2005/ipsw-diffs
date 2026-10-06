@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/BookFoundation.framework/BookFoundation`
 
-```diff
+### Section Size Changes
 
- 2310.0.0.0.0
--  __TEXT.__text: 0x68934
-+  __TEXT.__text: 0x68978
-   __TEXT.__objc_methlist: 0x7b4
-   __TEXT.__const: 0x5048
-   __TEXT.__cstring: 0xe80
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x68934` | `0x68978` | **`+0x44`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_20c9bcd48 -> sub_20d057d48 : 1044 -> 1048
 ~ sub_20c9bd15c -> sub_20d058160 : 1340 -> 1344

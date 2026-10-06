@@ -2,29 +2,24 @@
 
 > `com.apple.driver.AppleSPURose`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x17814` | `0x179ec` | **`+0x1d8`** |
+| `__TEXT.__cstring` | `0x23b0` | `0x23e8` | **`+0x38`** |
+
+### Other Changes
+
 ```diff
 
 -1087.0.3.0.0
-+1087.0.5.0.0
-   __TEXT.__const: 0x30
--  __TEXT.__cstring: 0x23b0
-+  __TEXT.__cstring: 0x23e8
-   __TEXT.__os_log: 0x1d58
--  __TEXT_EXEC.__text: 0x17814
-+  __TEXT_EXEC.__text: 0x179ec
-   __TEXT_EXEC.__auth_stubs: 0x500
-   __DATA.__data: 0x248
-   __DATA.__common: 0x268
-
-   __DATA_CONST.__kalloc_type: 0x3c0
-   __DATA_CONST.__auth_got: 0x280
-   __DATA_CONST.__got: 0xd0
 -  Functions: 668
++1087.0.5.0.0
 +  Functions: 670
-   Symbols:   0
+
 -  CStrings:  374
 +  CStrings:  378
- 
 CStrings:
 + "121111121222121212222222222222222211111111212121221221221221221221221221221221221221221221221221221222211"
 + "12111112122212121222222222222222221111111121212122122122122122122122122122122122122122122122122122122221111211222222221111212121"

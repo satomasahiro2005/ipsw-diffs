@@ -2,23 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/MapsUI.framework/MapsUI`
 
-```diff
+### Section Size Changes
 
- 286.30.6.12.13
--  __TEXT.__text: 0x1a8fa4
-+  __TEXT.__text: 0x1a8ff4
-   __TEXT.__delay_stubs: 0x1c0
-   __TEXT.__delay_helper: 0xdc
-   __TEXT.__objc_methlist: 0x1598c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a8fa4` | `0x1a8ff4` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x6710` | `0x6718` | **`+0x8`** |
 
-   __TEXT.__swift5_protos: 0x4c
-   __TEXT.__gcc_except_tab: 0x2218
-   __TEXT.__ustring: 0x9c
--  __TEXT.__unwind_info: 0x6710
-+  __TEXT.__unwind_info: 0x6718
-   __TEXT.__eh_frame: 0x112c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+### Other Changes
+
+```text
 Functions:
 ~ sub_1c7c9d1d8 -> sub_1ca07f1d8 : 356 -> 360
 ~ sub_1c7ca6020 -> sub_1ca088024 : 236 -> 240

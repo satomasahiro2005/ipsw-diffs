@@ -2,92 +2,58 @@
 
 > `/System/Library/FlowTools/SnippetService/ResponsePlugins/SiriGeoSnippetProviderPlugin.bundle/SiriGeoSnippetProviderPlugin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x57524` | `0x5c614` | **`+0x50f0`** |
+| `__TEXT.__cstring` | `0xb18` | `0xdf8` | **`+0x2e0`** |
+| `__DATA_CONST.__const` | `0x2118` | `0x2350` | **`+0x238`** |
+| `__DATA.__bss` | `0x4100` | `0x4300` | **`+0x200`** |
+| `__TEXT.__const` | `0x30a8` | `0x3254` | **`+0x1ac`** |
+| `__TEXT.__auth_stubs` | `0x1dd0` | `0x1ee0` | **`+0x110`** |
+| `__TEXT.__unwind_info` | `0xc68` | `0xd30` | **`+0xc8`** |
+| `__TEXT.__swift5_fieldmd` | `0xc7c` | `0xd2c` | **`+0xb0`** |
+| `__DATA_CONST.__auth_got` | `0xef0` | `0xf78` | **`+0x88`** |
+| `__TEXT.__swift5_reflstr` | `0xaff` | `0xb7f` | **`+0x80`** |
+| `__DATA.__data` | `0x1040` | `0x10b0` | **`+0x70`** |
+| `__TEXT.__swift5_typeref` | `0xdfe` | `0xe68` | **`+0x6a`** |
+| `__TEXT.__eh_frame` | `0xaf0` | `0xb58` | **`+0x68`** |
+| `__TEXT.__oslogstring` | `0x15b0` | `0x1610` | **`+0x60`** |
+| `__TEXT.__constg_swiftt` | `0x87c` | `0x8b4` | **`+0x38`** |
+| `__TEXT.__swift5_assocty` | `0x150` | `0x180` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x6e0` | `0x708` | **`+0x28`** |
+| `__DATA_CONST.__auth_ptr` | `0x630` | `0x648` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0x23c` | `0x24c` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0xe0` | `0xe8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__objc_classlist`
 - `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_protos`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
+
+### Other Changes
 
 ```diff
 
 -3605.13.1.0.0
--  __TEXT.__text: 0x54e9c
--  __TEXT.__auth_stubs: 0x1dd0
 +3605.14.1.0.0
-+  __TEXT.__text: 0x59d78
-+  __TEXT.__auth_stubs: 0x1ee0
-   __TEXT.__objc_stubs: 0x10e0
--  __TEXT.__const: 0x30a8
--  __TEXT.__swift5_typeref: 0xdfe
--  __TEXT.__oslogstring: 0x15b0
--  __TEXT.__cstring: 0xb18
--  __TEXT.__constg_swiftt: 0x87c
-+  __TEXT.__const: 0x3254
-+  __TEXT.__swift5_typeref: 0xe68
-+  __TEXT.__oslogstring: 0x1610
-+  __TEXT.__cstring: 0xdf8
-+  __TEXT.__constg_swiftt: 0x8b4
-   __TEXT.__objc_classname: 0x2d1
--  __TEXT.__swift5_fieldmd: 0xc7c
-+  __TEXT.__swift5_fieldmd: 0xd2c
-   __TEXT.__swift5_builtin: 0x64
--  __TEXT.__swift5_reflstr: 0xaff
--  __TEXT.__swift5_assocty: 0x150
--  __TEXT.__swift5_proto: 0x23c
--  __TEXT.__swift5_types: 0xe0
-+  __TEXT.__swift5_reflstr: 0xb7f
-+  __TEXT.__swift5_assocty: 0x180
-+  __TEXT.__swift5_proto: 0x24c
-+  __TEXT.__swift5_types: 0xe8
-   __TEXT.__swift_as_entry: 0x84
-   __TEXT.__swift_as_ret: 0x68
-   __TEXT.__swift_as_cont: 0x80
 
-   __TEXT.__objc_methtype: 0x30
-   __TEXT.__swift5_capture: 0x60
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0x1128
--  __TEXT.__eh_frame: 0xaf8
--  __DATA_CONST.__const: 0x2118
-+  __TEXT.__unwind_info: 0x1220
-+  __TEXT.__eh_frame: 0xb68
-+  __DATA_CONST.__const: 0x2350
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_classrefs: 0x10
--  __DATA_CONST.__auth_got: 0xef0
--  __DATA_CONST.__got: 0x6e0
--  __DATA_CONST.__auth_ptr: 0x630
-+  __DATA_CONST.__auth_got: 0xf78
-+  __DATA_CONST.__got: 0x708
-+  __DATA_CONST.__auth_ptr: 0x648
-   __DATA.__objc_const: 0x590
-   __DATA.__objc_selrefs: 0x438
-   __DATA.__objc_data: 0x1f8
--  __DATA.__data: 0x1040
-+  __DATA.__data: 0x10b0
-   __DATA.__common: 0xe0
-   - /System/Library/Frameworks/CoreLocation.framework/CoreLocation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1386
 -  Symbols:   4504
 -  CStrings:  319
 +  Functions: 1442
 +  Symbols:   4661
 +  CStrings:  342
- 
 Symbols:
 + $s28SiriGeoSnippetProviderPlugin15PlaceAttributesV12placeSupportAA0fcI0OvM.resume
 + $s28SiriGeoSnippetProviderPlugin15PlaceAttributesV13detourSecondsSdSgvM.resume

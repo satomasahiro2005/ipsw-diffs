@@ -2,67 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/DesignLibrary.framework/DesignLibrary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__bss` | `0x3aa0` | `0x4230` | **`+0x790`** |
+| `__DATA.__bss` | `0x316f0` | `0x30f70` | **`-0x780`** |
+| `__TEXT.__text` | `0x200a98` | `0x20100c` | **`+0x574`** |
+| `__TEXT.__swift5_typeref` | `0x137ae` | `0x1389e` | **`+0xf0`** |
+| `__TEXT.__cstring` | `0x28b1` | `0x2911` | **`+0x60`** |
+| `__DATA_DIRTY.__common` | `0x1588` | `0x15c8` | **`+0x40`** |
+| `__DATA.__data` | `0x9198` | `0x91c8` | **`+0x30`** |
+| `__DATA.__common` | `0x718` | `0x6f8` | **`-0x20`** |
+| `__TEXT.__const` | `0x26864` | `0x26884` | **`+0x20`** |
+| `__AUTH.__data` | `0x5670` | `0x5658` | **`-0x18`** |
+| `__DATA_DIRTY.__data` | `0x21d8` | `0x21c8` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -8.1.6.0.0
--  __TEXT.__text: 0x1f4f18
 +8.1.7.0.0
-+  __TEXT.__text: 0x1f548c
-   __TEXT.__objc_methlist: 0x1200
--  __TEXT.__const: 0x26864
--  __TEXT.__cstring: 0x28b1
-+  __TEXT.__const: 0x26884
-+  __TEXT.__cstring: 0x2911
-   __TEXT.__constg_swiftt: 0xb248
--  __TEXT.__swift5_typeref: 0x137ae
-+  __TEXT.__swift5_typeref: 0x1389e
-   __TEXT.__swift5_builtin: 0x258
-   __TEXT.__swift5_reflstr: 0x8127
-   __TEXT.__swift5_fieldmd: 0xac64
 
-   __TEXT.__swift_as_ret: 0x1c
-   __TEXT.__swift_as_cont: 0x44
-   __TEXT.__swift5_types2: 0xc
--  __TEXT.__unwind_info: 0x7ef0
-+  __TEXT.__unwind_info: 0x7f00
-   __TEXT.__eh_frame: 0x1470
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __AUTH_CONST.__objc_const: 0x30a0
-   __AUTH_CONST.__auth_got: 0x27e8
-   __AUTH.__objc_data: 0x588
--  __AUTH.__data: 0x5670
-+  __AUTH.__data: 0x5658
-   __AUTH.__thread_vars: 0x48
-   __AUTH.__thread_data: 0x1
-   __AUTH.__thread_bss: 0x8
-   __DATA.__objc_ivar: 0x4
--  __DATA.__data: 0x9198
--  __DATA.__common: 0x718
-+  __DATA.__data: 0x91c8
-+  __DATA.__common: 0x6f8
-   __DATA_DIRTY.__objc_data: 0x160
--  __DATA_DIRTY.__data: 0x21d8
--  __DATA_DIRTY.__bss: 0x3aa0
--  __DATA_DIRTY.__common: 0x1588
-+  __DATA_DIRTY.__data: 0x21c8
-+  __DATA_DIRTY.__bss: 0x4230
-+  __DATA_DIRTY.__common: 0x15c8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreText.framework/CoreText
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11285
--  Symbols:   5130
+-  Symbols:   4944
 -  CStrings:  362
 +  Functions: 11289
-+  Symbols:   5132
++  Symbols:   4946
 +  CStrings:  364
- 
 Symbols:
 + _get_witness_table 7SwiftUI19_ConditionalContentVyAA4ViewPAAE15flexInteraction13configuration9viewFrame9isEnabled6actionQrAA04FlexG0O13ConfigurationV_So6CGRectVSgSbyAA013PlatformGlassG5StateVcSgtFQOyAA08ModifiedD0VyAVyAVyAVyACyAeAE14materialEffect_2inQrAA8MaterialV_AA9_ShapeSetVtFQOyAA5ColorV_Qo_AVyAA5ImageVAA08_OpacityV0VGGAA01_J6LayoutVGAA01_dY12KindModifierVyAA7CapsuleVGGAA16_OverlayModifierVyACyAVyAVyAVyAVyA5_A11_GAA06_ScaleV0VGAA24_ForegroundStyleModifierVyAA08_OpacityY5StyleVyAA010_BlendModeY5StyleVyA2_GGGGAA30_EnvironmentKeyWritingModifierVyAZSgGGAVyAVyAVyAVyA5_AA18_AspectRatioLayoutVGA33_GAA18_AnimationModifierVySbGGA38_GGGGA20_yAVyAVyAA01_yE0VyA16_A32_GA46_GAA25_AllowsHitTestingModifierVGGG_Qo_13DesignLibrary26LegacyWindowControlElement33_AFB22D2A2396B7FB0B9201E7694C3DD1LLVGAaDHPqd__AaDHD2_A61_HO_A65_AaDHPyHCHC
 + _get_witness_table 7SwiftUI6ZStackVyAA15ModifiedContentVyAEyAA4ViewPAAE14materialEffect_2inQrAA8MaterialV_AA9_ShapeSetVtFQOyAEyAEyAEyAA5ColorVAA12_FrameLayoutVGAA01_eK12KindModifierVyAA7CapsuleVGGAA08_OverlayQ0VyAA06StrokekF0VyAV6_InsetVAA08_OpacityK5StyleVyAA010_BlendModekW0Vy13DesignLibrary017WindowControlFillkW033_AFB22D2A2396B7FB0B9201E7694C3DD1LLVGGAA05EmptyF0VGGG_Qo_AZyAEyAEyAEyAA5ImageVAA012_AspectRatioO0VGAA011_ForegroundwQ0VyA4_yA7_023WindowControlForegroundW0A9_LLVGGGAA022_EnvironmentKeyWritingQ0VyAKSgGGGGAA01_skQ0VyA4_yAA0kW0PAAE3mix_2byQrqd___SdtAAA40_Rd__lFQOyA41_AAEA42__A43_Qrqd___SdtAAA40_Rd__lFQOyA41_AAEA42__A43_Qrqd___SdtAAA40_Rd__lFQOyAO_AOQo__AOQo__AOQo_GAVGGGAaFHPyHC

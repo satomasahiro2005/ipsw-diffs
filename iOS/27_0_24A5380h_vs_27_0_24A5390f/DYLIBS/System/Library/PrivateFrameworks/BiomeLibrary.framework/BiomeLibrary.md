@@ -2,90 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/BiomeLibrary.framework/BiomeLibrary`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x748b3c` | `0x753ffc` | **`+0xb4c0`** |
+| `__AUTH_CONST.__objc_const` | `0xa1d40` | `0xa2900` | **`+0xbc0`** |
+| `__TEXT.__cstring` | `0x4e0ec` | `0x4e720` | **`+0x634`** |
+| `__AUTH_CONST.__cfstring` | `0x4acc0` | `0x4b060` | **`+0x3a0`** |
+| `__TEXT.__objc_methlist` | `0x4fd44` | `0x500dc` | **`+0x398`** |
+| `__DATA_CONST.__objc_selrefs` | `0x12748` | `0x12948` | **`+0x200`** |
+| `__DATA_CONST.__const` | `0x1e9b8` | `0x1eb28` | **`+0x170`** |
+| `__DATA_CONST.__objc_arraydata` | `0xb0a8` | `0xb218` | **`+0x170`** |
+| `__DATA.__objc_ivar` | `0x80f4` | `0x81f4` | **`+0x100`** |
+| `__TEXT.__unwind_info` | `0xf768` | `0xf778` | **`+0x10`** |
+
+### Other Changes
 
 ```diff
 
 -426.0.0.0.0
--  __TEXT.__text: 0x748b3c
--  __TEXT.__objc_methlist: 0x4fd44
 +435.0.0.0.0
-+  __TEXT.__text: 0x753ffc
-+  __TEXT.__objc_methlist: 0x500dc
-   __TEXT.__const: 0x47b8
-   __TEXT.__swift5_typeref: 0x17e
-   __TEXT.__swift5_capture: 0x30
--  __TEXT.__cstring: 0x4e0ec
-+  __TEXT.__cstring: 0x4e720
-   __TEXT.__constg_swiftt: 0x5b8
-   __TEXT.__swift5_fieldmd: 0x210
-   __TEXT.__swift5_types: 0x84
-   __TEXT.__oslogstring: 0x47
--  __TEXT.__unwind_info: 0xf768
-+  __TEXT.__unwind_info: 0xf778
-   __TEXT.__eh_frame: 0x40
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1e9b8
-+  __DATA_CONST.__const: 0x1eb28
-   __DATA_CONST.__objc_classlist: 0x22f8
-   __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x12748
-+  __DATA_CONST.__objc_selrefs: 0x12948
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x1b28
--  __DATA_CONST.__objc_arraydata: 0xb0a8
-+  __DATA_CONST.__objc_arraydata: 0xb218
-   __DATA_CONST.__got: 0x1bf8
-   __AUTH_CONST.__const: 0x9ad8
--  __AUTH_CONST.__cfstring: 0x4acc0
--  __AUTH_CONST.__objc_const: 0xa1d40
-+  __AUTH_CONST.__cfstring: 0x4b060
-+  __AUTH_CONST.__objc_const: 0xa2900
-   __AUTH_CONST.__objc_arrayobj: 0x6660
-   __AUTH_CONST.__objc_intobj: 0x300
-   __AUTH_CONST.__auth_got: 0x3a0
-   __AUTH.__objc_data: 0xb080
-   __AUTH.__data: 0x118
--  __DATA.__objc_ivar: 0x80f4
-+  __DATA.__objc_ivar: 0x81f4
-   __DATA.__data: 0x328
-   __DATA.__bss: 0x18
-   __DATA_DIRTY.__objc_data: 0xb990
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 28554
--  Symbols:   60308
+-  Symbols:   52727
 -  CStrings:  9707
 +  Functions: 28633
-+  Symbols:   60540
++  Symbols:   52914
 +  CStrings:  9737
- 
 Symbols:
 + +[BMSiriUnifiedSiriTurn columns]
 + +[BMSiriUnifiedSiriTurn eventWithData:dataVersion:]
@@ -384,79 +328,6 @@ Symbols:
 + __OBJC_CLASS_PROTOCOLS_$_BMSiriUnifiedSiriTurn
 + __OBJC_CLASS_RO_$_BMSiriUnifiedSiriTurn
 + __OBJC_METACLASS_RO_$_BMSiriUnifiedSiriTurn
-+ _objc_msgSend$UnifiedSiriTurn
-+ _objc_msgSend$assetIdentifier
-+ _objc_msgSend$assistantId
-+ _objc_msgSend$clockStartTime
-+ _objc_msgSend$configurationForUnifiedSiriTurn
-+ _objc_msgSend$dataSharingOptInState
-+ _objc_msgSend$dictationUsedLocale
-+ _objc_msgSend$didResumeSiriApp
-+ _objc_msgSend$didUseOnScreenAwareness
-+ _objc_msgSend$didUseWKASummarization
-+ _objc_msgSend$experimentInfos
-+ _objc_msgSend$genAiRequestOutcome
-+ _objc_msgSend$hasDidResumeSiriApp
-+ _objc_msgSend$hasDidUseOnScreenAwareness
-+ _objc_msgSend$hasDidUseWKASummarization
-+ _objc_msgSend$hasIsCarPlay
-+ _objc_msgSend$hasIsContextualFollowUp
-+ _objc_msgSend$hasIsExplicitGenAiRequest
-+ _objc_msgSend$hasIsGenAIAttempted
-+ _objc_msgSend$hasIsLlmSiriEnabled
-+ _objc_msgSend$hasIsTurnTaken
-+ _objc_msgSend$hasNumberOfAssetsBusinessCard
-+ _objc_msgSend$hasNumberOfAssetsDriverLicense
-+ _objc_msgSend$hasNumberOfAssetsEmployeeCard
-+ _objc_msgSend$hasNumberOfAssetsFailedGatingHeuristic
-+ _objc_msgSend$hasNumberOfAssetsFailedGatingModel
-+ _objc_msgSend$hasNumberOfAssetsGreenCard
-+ _objc_msgSend$hasNumberOfAssetsInsuranceCard
-+ _objc_msgSend$hasNumberOfAssetsMedicalCard
-+ _objc_msgSend$hasNumberOfAssetsMembershipCard
-+ _objc_msgSend$hasNumberOfAssetsNationalID
-+ _objc_msgSend$hasNumberOfAssetsPassport
-+ _objc_msgSend$hasNumberOfAssetsSocialSecurityNumber
-+ _objc_msgSend$hasNumberOfAssetsStateID
-+ _objc_msgSend$hasNumberOfAssetsStudentCard
-+ _objc_msgSend$hasNumberOfAssetsTransitCard
-+ _objc_msgSend$hasNumberOfAssetsUnknown
-+ _objc_msgSend$initWithImageIdentifier:promptIdentifer:engaged:numViews:timeViewed:saved:shared:copied:inserted:duplicated:captionAdded:usedAsWallpaper:reportAConcern:deleted:assetIdentifier:
-+ _objc_msgSend$initWithNumberOfAssetsAnalyzed:numberOfAssetsFailedGatingHeuristic:numberOfAssetsFailedGatingModel:numberOfAssetsPassGateWithoutResults:numberOfAssetsPassGateWithResults:numberOfAssetsUnknown:numberOfAssetsPassport:numberOfAssetsDriverLicense:numberOfAssetsBusinessCard:numberOfAssetsGreenCard:numberOfAssetsSocialSecurityNumber:numberOfAssetsMedicalCard:numberOfAssetsInsuranceCard:numberOfAssetsMembershipCard:numberOfAssetsTransitCard:numberOfAssetsStateID:numberOfAssetsStudentCard:numberOfAssetsEmployeeCard:numberOfAssetsNationalID:
-+ _objc_msgSend$initWithPromptIdentifier:imageIdentifier:promptAfterRewrite:promptAfterAssembly:imageForPersonalization:featureModel:generatedImage:secondImageForPersonalization:thirdImageForPersonalization:assetIdentifier:
-+ _objc_msgSend$initWithTimestamp:prompt:tokenLength:identifier:topic:usage:userInterfaceLanguage:userSetRegionFormat:personalization:result:feature:style:hair:facialHair:accessories:additionalDescription:sessionIdentifier:isLastPrompt:promptIdentifier:collectionIdentifier:aspectRatio:resolution:numPeople:promptAction:parentPromptIdentifier:directManipulation:featureModel:generationSource:pregeneration:assetIdentifier:
-+ _objc_msgSend$initWithTurnId:invocationTime:clockStartTime:deviceType:systemBuild:programCode:dataSharingOptInState:siriInputLocale:deviceAggregationId:userAggregationId:userAggregationIdRotationDate:userAggregationIdExpirationDate:invocationSource:productId:requestType:productArea:siriResponse:dictationUsedLocale:asrLocation:nlLocation:mhAudioVendorId:mhAudioProductId:thirdPartyGenAIAgent:genAiRequestOutcome:experimentInfos:isLlmSiriEnabled:isGenAIAttempted:isTurnTaken:isCarPlay:isExplicitGenAiRequest:userUtterance:responseText:assistantId:executionCategory:didUseWKASummarization:didUseOnScreenAwareness:isContextualFollowUp:didResumeSiriApp:orchestrationMode:
-+ _objc_msgSend$invocationTime
-+ _objc_msgSend$isCarPlay
-+ _objc_msgSend$isContextualFollowUp
-+ _objc_msgSend$isExplicitGenAiRequest
-+ _objc_msgSend$isGenAIAttempted
-+ _objc_msgSend$isLlmSiriEnabled
-+ _objc_msgSend$isTurnTaken
-+ _objc_msgSend$mhAudioProductId
-+ _objc_msgSend$mhAudioVendorId
-+ _objc_msgSend$numberOfAssetsBusinessCard
-+ _objc_msgSend$numberOfAssetsDriverLicense
-+ _objc_msgSend$numberOfAssetsEmployeeCard
-+ _objc_msgSend$numberOfAssetsFailedGatingHeuristic
-+ _objc_msgSend$numberOfAssetsFailedGatingModel
-+ _objc_msgSend$numberOfAssetsGreenCard
-+ _objc_msgSend$numberOfAssetsInsuranceCard
-+ _objc_msgSend$numberOfAssetsMedicalCard
-+ _objc_msgSend$numberOfAssetsMembershipCard
-+ _objc_msgSend$numberOfAssetsNationalID
-+ _objc_msgSend$numberOfAssetsPassport
-+ _objc_msgSend$numberOfAssetsSocialSecurityNumber
-+ _objc_msgSend$numberOfAssetsStateID
-+ _objc_msgSend$numberOfAssetsStudentCard
-+ _objc_msgSend$numberOfAssetsTransitCard
-+ _objc_msgSend$numberOfAssetsUnknown
-+ _objc_msgSend$responseText
-+ _objc_msgSend$siriResponse
-+ _objc_msgSend$storeConfigurationForUnifiedSiriTurn
-+ _objc_msgSend$syncPolicyForUnifiedSiriTurn
-+ _objc_msgSend$thirdPartyGenAIAgent
-+ _objc_msgSend$userUtterance
 - +[BMMediaAnalysisProcessingSession columns]
 - +[BMMediaAnalysisProcessingSession eventWithData:dataVersion:]
 - +[BMMediaAnalysisProcessingSession latestDataVersion]
@@ -567,34 +438,6 @@ Symbols:
 - __OBJC_CLASS_PROTOCOLS_$_BMMediaAnalysisProcessingSession
 - __OBJC_CLASS_RO_$_BMMediaAnalysisProcessingSession
 - __OBJC_METACLASS_RO_$_BMMediaAnalysisProcessingSession
-- _objc_msgSend$ProcessingSession
-- _objc_msgSend$configurationForProcessingSession
-- _objc_msgSend$hasNumberOfAssetsDownloadThrottled
-- _objc_msgSend$hasNumberOfAssetsGated
-- _objc_msgSend$hasNumberOfAssetsGatedByHeuristic
-- _objc_msgSend$hasNumberOfAssetsHardFailure
-- _objc_msgSend$hasNumberOfAssetsNoResource
-- _objc_msgSend$hasNumberOfAssetsSoftFailure
-- _objc_msgSend$hasTimeAnalyzingFullInSeconds
-- _objc_msgSend$hasTimeAnalyzingGatingInSeconds
-- _objc_msgSend$hasTimeDownloadingInSeconds
-- _objc_msgSend$initWithImageIdentifier:promptIdentifer:engaged:numViews:timeViewed:saved:shared:copied:inserted:duplicated:captionAdded:usedAsWallpaper:reportAConcern:deleted:
-- _objc_msgSend$initWithNumberOfAssetsAnalyzed:numberOfAssetsGated:numberOfAssetsGatedByHeuristic:numberOfAssetsPassGateWithResults:numberOfAssetsPassGateWithoutResults:numberOfAssetsNoResource:numberOfAssetsDownloadThrottled:numberOfAssetsSoftFailure:numberOfAssetsHardFailure:timeDownloadingInSeconds:timeAnalyzingGatingInSeconds:timeAnalyzingFullInSeconds:
-- _objc_msgSend$initWithPromptIdentifier:imageIdentifier:promptAfterRewrite:promptAfterAssembly:imageForPersonalization:featureModel:generatedImage:secondImageForPersonalization:thirdImageForPersonalization:
-- _objc_msgSend$initWithSubcategory:numberOfAssetsAnalyzed:numberOfAssetsPassGateWithResults:
-- _objc_msgSend$initWithTimestamp:prompt:tokenLength:identifier:topic:usage:userInterfaceLanguage:userSetRegionFormat:personalization:result:feature:style:hair:facialHair:accessories:additionalDescription:sessionIdentifier:isLastPrompt:promptIdentifier:collectionIdentifier:aspectRatio:resolution:numPeople:promptAction:parentPromptIdentifier:directManipulation:featureModel:generationSource:pregeneration:
-- _objc_msgSend$numberOfAssetsDownloadThrottled
-- _objc_msgSend$numberOfAssetsGated
-- _objc_msgSend$numberOfAssetsGatedByHeuristic
-- _objc_msgSend$numberOfAssetsHardFailure
-- _objc_msgSend$numberOfAssetsNoResource
-- _objc_msgSend$numberOfAssetsSoftFailure
-- _objc_msgSend$storeConfigurationForProcessingSession
-- _objc_msgSend$subcategory
-- _objc_msgSend$syncPolicyForProcessingSession
-- _objc_msgSend$timeAnalyzingFullInSeconds
-- _objc_msgSend$timeAnalyzingGatingInSeconds
-- _objc_msgSend$timeDownloadingInSeconds
 CStrings:
 + "$\x8c"
 + "BMGeneratedImageImageGeneration with promptIdentifier: %@, imageIdentifier: %@, promptAfterRewrite: %@, promptAfterAssembly: %@, imageForPersonalization: %@, featureModel: %@, generatedImage: %@, secondImageForPersonalization: %@, thirdImageForPersonalization: %@, assetIdentifier: %@"

@@ -2,78 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/_OnDeviceStorage_JetEngine.framework/_OnDeviceStorage_JetEngine`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2f52c` | `0x2e8d4` | **`-0xc58`** |
+| `__TEXT.__oslogstring` | `0xe7` | `0x333` | **`+0x24c`** |
+| `__AUTH_CONST.__const` | `0x2028` | `0x2140` | **`+0x118`** |
+| `__TEXT.__eh_frame` | `0x1c08` | `0x1c50` | **`+0x48`** |
+| `__TEXT.__swift5_capture` | `0xbb0` | `0xbf8` | **`+0x48`** |
+| `__AUTH_CONST.__auth_got` | `0xa40` | `0xa08` | **`-0x38`** |
+| `__DATA.__common` | `0x90` | `0x60` | **`-0x30`** |
+| `__TEXT.__const` | `0x1018` | `0x1048` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0xa88` | `0xab0` | **`+0x28`** |
+| `__DATA.__bss` | `0x6a0` | `0x690` | **`-0x10`** |
+| `__TEXT.__swift5_typeref` | `0xe5b` | `0xe6b` | **`+0x10`** |
+| `__DATA.__data` | `0x700` | `0x6f8` | **`-0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -3.0.59.0.0
--  __TEXT.__text: 0x2ce1c
 +3.1.10.0.0
-+  __TEXT.__text: 0x2c3b8
-   __TEXT.__objc_methlist: 0x2e8
--  __TEXT.__const: 0x1018
-+  __TEXT.__const: 0x1048
-   __TEXT.__cstring: 0xc6a
--  __TEXT.__swift5_typeref: 0xe5b
--  __TEXT.__swift5_fieldmd: 0x358
-   __TEXT.__constg_swiftt: 0x57c
--  __TEXT.__swift5_reflstr: 0x165
--  __TEXT.__swift5_capture: 0xbb0
-+  __TEXT.__swift5_typeref: 0xe6b
-   __TEXT.__swift5_builtin: 0x3c
-+  __TEXT.__swift5_reflstr: 0x165
-+  __TEXT.__swift5_fieldmd: 0x358
-   __TEXT.__swift5_proto: 0x50
-   __TEXT.__swift5_types: 0x50
-+  __TEXT.__swift5_capture: 0xbf8
-   __TEXT.__swift_as_entry: 0xac
-   __TEXT.__swift_as_ret: 0xac
-   __TEXT.__swift_as_cont: 0x11c
-+  __TEXT.__oslogstring: 0x333
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__oslogstring: 0xe7
-   __TEXT.__swift5_mpenum: 0x10
-   __TEXT.__swift5_assocty: 0x30
--  __TEXT.__unwind_info: 0xc50
--  __TEXT.__eh_frame: 0x1c08
-+  __TEXT.__unwind_info: 0xc60
-+  __TEXT.__eh_frame: 0x1c50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2028
-+  __AUTH_CONST.__const: 0x2140
-   __AUTH_CONST.__cfstring: 0x80
-   __AUTH_CONST.__objc_const: 0x9b0
--  __AUTH_CONST.__auth_got: 0xa40
-+  __AUTH_CONST.__auth_got: 0xa08
-   __AUTH.__objc_data: 0x308
-   __AUTH.__data: 0x400
-   __DATA.__objc_ivar: 0x8
--  __DATA.__data: 0x700
--  __DATA.__common: 0x90
-+  __DATA.__data: 0x6f8
-+  __DATA.__common: 0x60
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 820
--  Symbols:   600
+-  Symbols:   545
 -  CStrings:  79
 +  Functions: 836
-+  Symbols:   603
++  Symbols:   548
 +  CStrings:  89
- 
 Symbols:
 + ___swift_closure_destructor.17Tm
 + ___swift_closure_destructor.25Tm

@@ -2,140 +2,71 @@
 
 > `/System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x19bdcc` | `0x1b7280` | **`+0x1b4b4`** |
+| `__DATA.__bss` | `0x7610` | `0x85d0` | **`+0xfc0`** |
+| `__TEXT.__oslogstring` | `0x13c27` | `0x14857` | **`+0xc30`** |
+| `__TEXT.__const` | `0x40c8` | `0x4acc` | **`+0xa04`** |
+| `__TEXT.__eh_frame` | `0x2078` | `0x2a78` | **`+0xa00`** |
+| `__AUTH_CONST.__objc_const` | `0x2ac80` | `0x2b598` | **`+0x918`** |
+| `__AUTH_CONST.__const` | `0x46f8` | `0x4dd8` | **`+0x6e0`** |
+| `__TEXT.__objc_methlist` | `0x1b458` | `0x1ba28` | **`+0x5d0`** |
+| `__TEXT.__cstring` | `0x13fc6` | `0x14546` | **`+0x580`** |
+| `__TEXT.__unwind_info` | `0x6cc8` | `0x7238` | **`+0x570`** |
+| `__TEXT.__swift5_typeref` | `0x103d` | `0x13a1` | **`+0x364`** |
+| `__AUTH.__objc_data` | `0x2f38` | `0x3228` | **`+0x2f0`** |
+| `__TEXT.__swift5_fieldmd` | `0x1068` | `0x1354` | **`+0x2ec`** |
+| `__AUTH_CONST.__cfstring` | `0x124c0` | `0x127a0` | **`+0x2e0`** |
+| `__DATA.__data` | `0x3c98` | `0x3f10` | **`+0x278`** |
+| `__TEXT.__swift5_reflstr` | `0xa29` | `0xc89` | **`+0x260`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb690` | `0xb890` | **`+0x200`** |
+| `__TEXT.__constg_swiftt` | `0xcc0` | `0xeb0` | **`+0x1f0`** |
+| `__AUTH.__data` | `0xc30` | `0xde8` | **`+0x1b8`** |
+| `__AUTH_CONST.__auth_got` | `0x1508` | `0x1690` | **`+0x188`** |
+| `__DATA_CONST.__const` | `0x37b0` | `0x3898` | **`+0xe8`** |
+| `__TEXT.__swift5_capture` | `0x1d0` | `0x2b8` | **`+0xe8`** |
+| `__DATA_CONST.__objc_arraydata` | `0x9e8` | `0xac0` | **`+0xd8`** |
+| `__DATA_CONST.__got` | `0xff0` | `0x10b0` | **`+0xc0`** |
+| `__TEXT.__swift5_proto` | `0x364` | `0x3e0` | **`+0x7c`** |
+| `__TEXT.__gcc_except_tab` | `0x17c8` | `0x183c` | **`+0x74`** |
+| `__TEXT.__dlopen_cstrs` | `0x845` | `0x8a5` | **`+0x60`** |
+| `__TEXT.__swift_as_cont` | `0x13c` | `0x194` | **`+0x58`** |
+| `__DATA.__objc_ivar` | `0x18f4` | `0x1940` | **`+0x4c`** |
+| `__TEXT.__swift5_assocty` | `0xa8` | `0xf0` | **`+0x48`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x2b8` | `0x2e8` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0x878` | `0x8a8` | **`+0x30`** |
+| `__TEXT.__swift5_types` | `0x124` | `0x150` | **`+0x2c`** |
+| `__DATA.__common` | `0x88` | `0xb0` | **`+0x28`** |
+| `__TEXT.__swift_as_entry` | `0x94` | `0xb4` | **`+0x20`** |
+| `__TEXT.__swift_as_ret` | `0xac` | `0xcc` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x558` | `0x570` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0xb4` | `0xc8` | **`+0x14`** |
+| `__DATA_CONST.__objc_superrefs` | `0x6d8` | `0x6e8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -1620.100.1.2.24
--  __TEXT.__text: 0x192380
--  __TEXT.__objc_methlist: 0x1b458
--  __TEXT.__cstring: 0x13fc6
--  __TEXT.__const: 0x40c8
--  __TEXT.__oslogstring: 0x13c27
--  __TEXT.__gcc_except_tab: 0x17c8
 +1626.200.53.0.0
-+  __TEXT.__text: 0x1ac9e4
-+  __TEXT.__objc_methlist: 0x1ba28
-+  __TEXT.__cstring: 0x14546
-+  __TEXT.__const: 0x4acc
-+  __TEXT.__oslogstring: 0x14857
-+  __TEXT.__gcc_except_tab: 0x183c
-   __TEXT.__ustring: 0xde
--  __TEXT.__dlopen_cstrs: 0x845
--  __TEXT.__constg_swiftt: 0xcc0
--  __TEXT.__swift5_typeref: 0x103d
--  __TEXT.__swift5_builtin: 0xb4
--  __TEXT.__swift5_reflstr: 0xa29
--  __TEXT.__swift5_fieldmd: 0x1068
--  __TEXT.__swift5_assocty: 0xa8
--  __TEXT.__swift5_proto: 0x364
--  __TEXT.__swift5_types: 0x124
--  __TEXT.__swift5_capture: 0x1d0
--  __TEXT.__swift_as_entry: 0x94
--  __TEXT.__swift_as_ret: 0xac
--  __TEXT.__swift_as_cont: 0x13c
-+  __TEXT.__dlopen_cstrs: 0x8a5
-+  __TEXT.__constg_swiftt: 0xeb0
-+  __TEXT.__swift5_typeref: 0x13a1
-+  __TEXT.__swift5_builtin: 0xc8
-+  __TEXT.__swift5_reflstr: 0xc89
-+  __TEXT.__swift5_fieldmd: 0x1354
-+  __TEXT.__swift5_assocty: 0xf0
-+  __TEXT.__swift5_proto: 0x3e0
-+  __TEXT.__swift5_types: 0x150
-+  __TEXT.__swift5_capture: 0x2b8
-+  __TEXT.__swift_as_entry: 0xb4
-+  __TEXT.__swift_as_ret: 0xcc
-+  __TEXT.__swift_as_cont: 0x194
-   __TEXT.__swift5_protos: 0x14
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x8f50
--  __TEXT.__eh_frame: 0x2078
-+  __TEXT.__unwind_info: 0x9628
-+  __TEXT.__eh_frame: 0x2a78
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x37b0
--  __DATA_CONST.__objc_classlist: 0x878
-+  __DATA_CONST.__const: 0x3898
-+  __DATA_CONST.__objc_classlist: 0x8a8
-   __DATA_CONST.__objc_catlist: 0xc0
-   __DATA_CONST.__objc_protolist: 0x410
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb690
-+  __DATA_CONST.__objc_selrefs: 0xb890
-   __DATA_CONST.__objc_protorefs: 0x110
--  __DATA_CONST.__objc_superrefs: 0x6d8
--  __DATA_CONST.__objc_arraydata: 0x9e8
--  __DATA_CONST.__got: 0xff0
--  __AUTH_CONST.__const: 0x46f8
--  __AUTH_CONST.__cfstring: 0x124c0
--  __AUTH_CONST.__objc_const: 0x2ac80
--  __AUTH_CONST.__objc_intobj: 0x558
-+  __DATA_CONST.__objc_superrefs: 0x6e8
-+  __DATA_CONST.__objc_arraydata: 0xac0
-+  __DATA_CONST.__got: 0x10b0
-+  __AUTH_CONST.__const: 0x4dd8
-+  __AUTH_CONST.__cfstring: 0x127a0
-+  __AUTH_CONST.__objc_const: 0x2b598
-+  __AUTH_CONST.__objc_intobj: 0x570
-   __AUTH_CONST.__objc_doubleobj: 0x40
--  __AUTH_CONST.__objc_arrayobj: 0x2b8
--  __AUTH_CONST.__auth_got: 0x1508
--  __AUTH.__objc_data: 0x2f38
--  __AUTH.__data: 0xc30
--  __DATA.__objc_ivar: 0x18f4
--  __DATA.__data: 0x3c98
--  __DATA.__common: 0x88
-+  __AUTH_CONST.__objc_arrayobj: 0x2e8
-+  __AUTH_CONST.__auth_got: 0x1690
-+  __AUTH.__objc_data: 0x3228
-+  __AUTH.__data: 0xde8
-+  __DATA.__objc_ivar: 0x1940
-+  __DATA.__data: 0x3f10
-+  __DATA.__common: 0xb0
-   __DATA_DIRTY.__objc_data: 0x26f0
-   __DATA_DIRTY.__data: 0x58
-   __DATA_DIRTY.__bss: 0x1e8
 
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight
-   - /System/Library/Frameworks/CoreTelephony.framework/CoreTelephony
 +  - /System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-   - /System/Library/Frameworks/IdentityLookup.framework/IdentityLookup
+
 +  - /System/Library/Frameworks/ImageIO.framework/ImageIO
-   - /System/Library/Frameworks/Security.framework/Security
-   - /System/Library/PrivateFrameworks/AddressBookLegacy.framework/AddressBookLegacy
-   - /System/Library/PrivateFrameworks/AppSupport.framework/AppSupport
 
-   - /System/Library/PrivateFrameworks/IDSFoundation.framework/IDSFoundation
-   - /System/Library/PrivateFrameworks/IMFoundation.framework/IMFoundation
-   - /System/Library/PrivateFrameworks/IMTransferServices.framework/IMTransferServices
 +  - /System/Library/PrivateFrameworks/IconServices.framework/IconServices
-   - /System/Library/PrivateFrameworks/IncomingCallFilter.framework/IncomingCallFilter
-   - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
-   - /System/Library/PrivateFrameworks/NeighborhoodActivityConduit.framework/NeighborhoodActivityConduit
 
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
 +  - /usr/lib/swift/libswiftSynchronization.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 11497
--  Symbols:   20350
+-  Symbols:   15965
 -  CStrings:  4577
 +  Functions: 11970
-+  Symbols:   20684
++  Symbols:   16237
 +  CStrings:  4668
- 
 Symbols:
 + +[TUSnapNameAndPhotoInfo supportsSecureCoding]
 + +[TUVRSProviderInstalledApplication supportsSecureCoding]
@@ -390,73 +321,6 @@ Symbols:
 + _dispatch_queue_get_label
 + _getIMMeCardSharingStateControllerClass.softClass
 + _kUTTypePNG
-+ _objc_msgSend$CGImage
-+ _objc_msgSend$_handleRemoteControlStatusChanged:
-+ _objc_msgSend$_isSharedNameAndPhotoPermitted
-+ _objc_msgSend$_subscribeToRemoteControlStatusIfNeeded:
-+ _objc_msgSend$accessibilityReqUUID
-+ _objc_msgSend$applicationBundleIdentifier
-+ _objc_msgSend$callCenter:remoteControlStatusChanged:
-+ _objc_msgSend$cleanupInterpreterRequestsFor:
-+ _objc_msgSend$conversation:participant:didUpdateNickname:reason:
-+ _objc_msgSend$conversationManager:conversation:participant:didUpdateNickname:reason:
-+ _objc_msgSend$dates
-+ _objc_msgSend$day
-+ _objc_msgSend$deletionLayer
-+ _objc_msgSend$discoverWithCompletionHandler:
-+ _objc_msgSend$dualCaptureGroupEnabled
-+ _objc_msgSend$hasSubscribedToRemoteControlStatus
-+ _objc_msgSend$holdAssistQfaLocaleExpansionItPtEnabled
-+ _objc_msgSend$iconImageData
-+ _objc_msgSend$inCallServiceScheme
-+ _objc_msgSend$initWithBundleIdentifier:
-+ _objc_msgSend$initWithBundleIdentifier:localizedName:supportsLiveCommunication:iconImageData:
-+ _objc_msgSend$initWithImageData:nickname:
-+ _objc_msgSend$initWithPseudonym:publicKey:groupUUID:originatorHandle:creationDate:deletionDate:expirationDate:invitedMemberHandles:locallyCreated:linkName:linkLifetimeScope:deleteReason:deletionLayer:accessibilityReqUUID:
-+ _objc_msgSend$initWithSize:scale:
-+ _objc_msgSend$inputDeviceWithUniqueID:
-+ _objc_msgSend$interpreterRequestWithID:didUpdateToState:
-+ _objc_msgSend$invitingInterpreterFlowEnabled
-+ _objc_msgSend$isAccessibilityInterpreter
-+ _objc_msgSend$isEqualToInstalledApplication:
-+ _objc_msgSend$isGroupDualCaptureAvailable
-+ _objc_msgSend$launchAppForInterpreterRequestForConversationUUID:bundleID:requestID:completionHandler:
-+ _objc_msgSend$linkAssociation
-+ _objc_msgSend$lvmNextGenASRExpansionEnabled
-+ _objc_msgSend$month
-+ _objc_msgSend$nicknamesEnabledForCalls
-+ _objc_msgSend$nonGregorianBirthday
-+ _objc_msgSend$prepareImageForDescriptor:
-+ _objc_msgSend$preventP2PWithNonContactEnabled
-+ _objc_msgSend$rawRemoteControlStatus
-+ _objc_msgSend$remoteControlStatusChanged:
-+ _objc_msgSend$remoteControlStatusChangedHandler
-+ _objc_msgSend$removeConversationLinkDescriptorsWithPredicate:deleteReason:deletionLayer:reply:
-+ _objc_msgSend$setGroupDualCaptureAvailable:
-+ _objc_msgSend$setHasSubscribedToRemoteControlStatus:
-+ _objc_msgSend$setIsAccessibilityInterpreter:
-+ _objc_msgSend$setLinkAssociation:
-+ _objc_msgSend$setLocalMemberNickname:forConversationUUID:reason:
-+ _objc_msgSend$setPrimaryCameraUID:secondaryCameraUID:secondaryAspectRatio:completionHandler:
-+ _objc_msgSend$setPrimaryCameraUID:secondaryCameraUID:useSquareAspectRatio:completionHandler:
-+ _objc_msgSend$setRemoteControlStatusChangedHandler:
-+ _objc_msgSend$setWantsRemoteControlStatus:
-+ _objc_msgSend$setWantsRemoteControlStatusUpdates:
-+ _objc_msgSend$shouldRestrictAddresses:forBundleIdentifier:completion:
-+ _objc_msgSend$shouldRestrictAddressesAsynchronously:forBundleIdentifier:reply:
-+ _objc_msgSend$shouldShowCarrierAttributionForSubscriptionContext:
-+ _objc_msgSend$startAlignmentTimeOutForNearbyMembers:forConversation:
-+ _objc_msgSend$startAlignmentTimeOutForNearbyMembers:forConversationUUID:
-+ _objc_msgSend$startAlignmentTimeOutForNearbySessionForConversation:
-+ _objc_msgSend$startAlignmentTimeOutForNearbySessionForConversationUUID:
-+ _objc_msgSend$startInterpreterRequestWithBundleID:conversationUUID:requestID:completionHandler:
-+ _objc_msgSend$stopInterpreterRequestForConversationUUID:bundleID:requestID:completionHandler:
-+ _objc_msgSend$subscribeToRemoteControlStatus
-+ _objc_msgSend$subscribeToRemoteControlStatusWithReply:
-+ _objc_msgSend$supportsLiveCommunication
-+ _objc_msgSend$wantsRemoteControlStatus
-+ _objc_msgSend$wantsRemoteControlStatusUpdates
-+ _objc_msgSend$wrappedObject
 + _os_signpost_id_generate
 + _sharedManager.sharedInstance
 + _swift_isaMask
@@ -563,11 +427,6 @@ Symbols:
 - ___swift_get_extra_inhabitant_index.85Tm
 - ___swift_store_extra_inhabitant_index.68Tm
 - ___swift_store_extra_inhabitant_index.86Tm
-- _objc_msgSend$conversation:participant:didUpdateNickname:
-- _objc_msgSend$conversationManager:conversation:participant:didUpdateNickname:
-- _objc_msgSend$initWithPseudonym:publicKey:groupUUID:originatorHandle:creationDate:deletionDate:expirationDate:invitedMemberHandles:locallyCreated:linkName:linkLifetimeScope:deleteReason:
-- _objc_msgSend$removeConversationLinkDescriptorsWithPredicate:deleteReason:reply:
-- _objc_msgSend$setLocalMemberNickname:forConversationUUID:
 - _type_layout_string So11CMTimeFlagsV
 CStrings:
 + " conversationUUID="

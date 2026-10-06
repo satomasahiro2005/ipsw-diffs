@@ -2,64 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/32023/Libraries/libLLVM.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x20376c0` | `0x202d264` | **`-0xa45c`** |
+| `__DATA_DIRTY.__bss` | `0x43f90` | `0x46b60` | **`+0x2bd0`** |
+| `__DATA.__bss` | `0x63f8` | `0x3e20` | **`-0x25d8`** |
+| `__TEXT.__unwind_info` | `0x2c878` | `0x2d400` | **`+0xb88`** |
+| `__TEXT.__cstring` | `0x118e82` | `0x11940a` | **`+0x588`** |
+| `__AUTH_CONST.__const` | `0x66588` | `0x66660` | **`+0xd8`** |
+| `__TEXT.__const` | `0x4191150` | `0x4191200` | **`+0xb0`** |
+| `__DATA.__common` | `0x7c7` | `0x7b7` | **`-0x10`** |
+| `__DATA_DIRTY.__common` | `0xc0eb` | `0xc0f3` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x20376c0
-+  __TEXT.__text: 0x202d264
-   __TEXT.__init_offsets: 0x68c
--  __TEXT.__const: 0x4191150
--  __TEXT.__cstring: 0x118e82
-+  __TEXT.__const: 0x4191200
-+  __TEXT.__cstring: 0x11940a
-   __TEXT.__oslogstring: 0x181
--  __TEXT.__unwind_info: 0x2c878
-+  __TEXT.__unwind_info: 0x2d400
-   __TEXT.__eh_frame: 0x3800
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x273418
-   __DATA_CONST.__weak_got: 0x598
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x66588
-+  __AUTH_CONST.__const: 0x66660
-   __AUTH_CONST.__cfstring: 0x20
-   __AUTH_CONST.__weak_auth_got: 0xce0
-   __AUTH_CONST.__auth_got: 0x990
+-32023.917.2.0.0
++32023.920.0.0.0
 
-   __AUTH.__thread_vars: 0x48
-   __AUTH.__thread_bss: 0xe75
-   __DATA.__data: 0x24a0
--  __DATA.__bss: 0x63f8
--  __DATA.__common: 0x7c7
-+  __DATA.__bss: 0x3e20
-+  __DATA.__common: 0x7b7
-   __DATA_DIRTY.__data: 0x1208
--  __DATA_DIRTY.__bss: 0x43f90
--  __DATA_DIRTY.__common: 0xc0eb
-+  __DATA_DIRTY.__bss: 0x46b60
-+  __DATA_DIRTY.__common: 0xc0f3
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/32023/Libraries/libllvm-flatbuffers.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libbz2.1.0.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 72687
 -  Symbols:   21890
--  CStrings:  43487
+-  CStrings:  43486
 +  Functions: 72762
 +  Symbols:   21893
-+  CStrings:  43512
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
++  CStrings:  43511
 Symbols:
 + __ZN4llvm25runInferAddressSpacesPassERNS_8FunctionERNS_9AAResultsERNS_15AssumptionCacheEPKNS_13DominatorTreeERNS_9MemorySSAEPKNS_19TargetTransformInfoEj
 + __ZN4llvm26isSafeToCastConstAddrSpaceEPKNS_8ConstantEjj
@@ -104,5 +73,4 @@ CStrings:
 - "Set the max specialization-inference iterations to perform"
 - "llvm-mc (based on LLVM 32023.917.2)"
 - "specialize-addrspaces-max-iter"
-
 ```

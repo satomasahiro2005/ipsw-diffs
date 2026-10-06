@@ -2,32 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/WPDaemon.framework/WPDaemon`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x4b73` | `0x4b84` | **`+0x11`** |
+| `__TEXT.__text` | `0x5fd64` | `0x5fd54` | **`-0x10`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__oslogstring`
+
+### Other Changes
 
 ```diff
 
 -2701.3.0.0.0
--  __TEXT.__text: 0x5ee0c
 +2701.7.0.0.0
-+  __TEXT.__text: 0x5edfc
-   __TEXT.__objc_methlist: 0x4654
--  __TEXT.__cstring: 0x4b73
-+  __TEXT.__cstring: 0x4b84
-   __TEXT.__const: 0x290
-   __TEXT.__oslogstring: 0xafe0
-   __TEXT.__gcc_except_tab: 0x12cc
 
-   - /usr/lib/libobjc.A.dylib
-   Functions: 3636
-   Symbols:   3011
 -  CStrings:  1576
 +  CStrings:  1577
- 
 Functions:
-~ -[WPScanRequest convertUseCaseToString:] : 3648 -> 3628
-~ sub_2b90fb410 -> sub_2b7e4d3fc : 64 -> 68
+~ -[WPScanRequest convertUseCaseToString:] : 3660 -> 3640
+~ sub_2bccde4f4 -> sub_2bcafc4e0 : 64 -> 68
 CStrings:
 + "MusicHandoffScan"
 + "WPDaemon iOS 27.2 (24B5098u) (WirelessProximity-2701.7) (Release) built on 2026-09-27 23:14:45"

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ThreatNotification.framework/ThreatNotification`
 
-```diff
+### Section Size Changes
 
- 46.0.1.0.0
--  __TEXT.__text: 0x1774
-+  __TEXT.__text: 0x1778
-   __TEXT.__objc_methlist: 0xc8
-   __TEXT.__const: 0xa2
-   __TEXT.__cstring: 0x36
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1774` | `0x1778` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2aff95cb4 -> sub_2b1366cb4 : 680 -> 684
+~ sub_2b0452cb4 -> sub_2b124fcb4 : 680 -> 684
 ```

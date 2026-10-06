@@ -2,99 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/BrailleFoundation.framework/BrailleFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__eh_frame` | `0x2fe0` | `0x2dd8` | **`-0x208`** |
+| `__DATA.__bss` | `0x15c80` | `0x15a90` | **`-0x1f0`** |
+| `__TEXT.__const` | `0xc960` | `0xc7f0` | **`-0x170`** |
+| `__AUTH_CONST.__cfstring` | `0x700` | `0x740` | **`+0x40`** |
+| `__TEXT.__text` | `0x682d0` | `0x6830c` | **`+0x3c`** |
+| `__TEXT.__unwind_info` | `0x2088` | `0x2050` | **`-0x38`** |
+| `__AUTH_CONST.__const` | `0x5a60` | `0x5a30` | **`-0x30`** |
+| `__AUTH_CONST.__objc_const` | `0xe40` | `0xe70` | **`+0x30`** |
+| `__TEXT.__swift5_typeref` | `0x27ab` | `0x277b` | **`-0x30`** |
+| `__DATA.__data` | `0x21e0` | `0x21b8` | **`-0x28`** |
+| `__TEXT.__swift5_fieldmd` | `0x2a14` | `0x29ec` | **`-0x28`** |
+| `__TEXT.__swift5_reflstr` | `0x16cd` | `0x16ad` | **`-0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xc60` | `0xc78` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2e8` | `0x300` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x3d4` | `0x3ec` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x104` | `0x118` | **`+0x14`** |
+| `__TEXT.__swift5_capture` | `0x284` | `0x298` | **`+0x14`** |
+| `__TEXT.__swift5_proto` | `0xaf4` | `0xae4` | **`-0x10`** |
+| `__AUTH.__data` | `0x870` | `0x878` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x3d0` | `0x3c8` | **`-0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x78` | `0x80` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0xdc` | `0xe4` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x110` | `0x118` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x13c` | `0x144` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x64` | `0x68` | **`+0x4`** |
+| `__TEXT.__constg_swiftt` | `0x1fb0` | `0x1fb4` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x682d0
--  __TEXT.__objc_methlist: 0x3d4
--  __TEXT.__const: 0xc960
--  __TEXT.__swift5_typeref: 0x27ab
-+  __TEXT.__text: 0x6830c
-+  __TEXT.__objc_methlist: 0x3ec
-+  __TEXT.__const: 0xc7f0
-+  __TEXT.__swift5_typeref: 0x277b
-   __TEXT.__cstring: 0xdb6
--  __TEXT.__swift5_reflstr: 0x16cd
-+  __TEXT.__swift5_reflstr: 0x16ad
-   __TEXT.__swift5_assocty: 0x1a0
--  __TEXT.__constg_swiftt: 0x1fb0
--  __TEXT.__swift5_fieldmd: 0x2a14
--  __TEXT.__swift5_builtin: 0x104
--  __TEXT.__swift5_mpenum: 0x78
-+  __TEXT.__constg_swiftt: 0x1fb4
-+  __TEXT.__swift5_fieldmd: 0x29ec
-+  __TEXT.__swift5_builtin: 0x118
-+  __TEXT.__swift5_mpenum: 0x80
-   __TEXT.__swift5_protos: 0x28
--  __TEXT.__swift5_proto: 0xaf4
-+  __TEXT.__swift5_proto: 0xae4
-   __TEXT.__swift5_types: 0x304
--  __TEXT.__swift_as_entry: 0x110
--  __TEXT.__swift_as_ret: 0x13c
-+  __TEXT.__swift_as_entry: 0x118
-+  __TEXT.__swift_as_ret: 0x144
-   __TEXT.__oslogstring: 0x3
--  __TEXT.__swift_as_cont: 0xdc
--  __TEXT.__swift5_capture: 0x284
--  __TEXT.__unwind_info: 0x2088
--  __TEXT.__eh_frame: 0x2fe0
-+  __TEXT.__swift_as_cont: 0xe4
-+  __TEXT.__swift5_capture: 0x298
-+  __TEXT.__unwind_info: 0x2050
-+  __TEXT.__eh_frame: 0x2dd8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-458.0.0.0.0
++460.0.0.0.0
 
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2e8
-+  __DATA_CONST.__objc_selrefs: 0x300
-   __DATA_CONST.__objc_superrefs: 0x10
--  __DATA_CONST.__got: 0x3d0
--  __AUTH_CONST.__const: 0x5a60
--  __AUTH_CONST.__cfstring: 0x700
--  __AUTH_CONST.__objc_const: 0xe40
--  __AUTH_CONST.__auth_got: 0xc60
-+  __DATA_CONST.__got: 0x3c8
-+  __AUTH_CONST.__const: 0x5a30
-+  __AUTH_CONST.__cfstring: 0x740
-+  __AUTH_CONST.__objc_const: 0xe70
-+  __AUTH_CONST.__auth_got: 0xc78
-   __AUTH.__objc_data: 0x140
--  __AUTH.__data: 0x870
--  __DATA.__objc_ivar: 0x64
--  __DATA.__data: 0x21e0
--  __DATA.__bss: 0x15c80
-+  __AUTH.__data: 0x878
-+  __DATA.__objc_ivar: 0x68
-+  __DATA.__data: 0x21b8
-+  __DATA.__bss: 0x15a90
-   __DATA.__common: 0x18
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3061
--  Symbols:   14506
--  CStrings:  181
+-  Symbols:   10489
+-  CStrings:  126
 +  Functions: 3076
-+  Symbols:   14503
-+  CStrings:  184
- 
-Sections:
-~ __TEXT.__cstring : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_types : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH.__objc_data : content changed
++  Symbols:   10487
++  CStrings:  127
 Symbols:
 + -[BRLElement imageValue]
 + -[BRLElement setImageValue:]
@@ -245,8 +200,6 @@ Symbols:
 + _OBJC_IVAR_$_BRLElement._imageValue
 + ___swift_memcpy67_8
 + _keypath_get.112Tm
-+ _objc_msgSend$imageValue
-+ _objc_msgSend$numberWithInt:
 + _swift_release_x25
 + _symbolic ScSy_____G So28AXVoiceOverBraille2DTextModeV
 + _symbolic _____ So28AXVoiceOverBraille2DTextModeV
@@ -412,5 +365,4 @@ CStrings:
 + "_imageValue"
 + "has imageValue = %@"
 - "updateSealedChamber"
-
 ```

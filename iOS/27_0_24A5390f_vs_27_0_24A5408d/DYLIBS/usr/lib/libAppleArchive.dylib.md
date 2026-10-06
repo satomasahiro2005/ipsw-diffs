@@ -2,34 +2,22 @@
 
 > `/usr/lib/libAppleArchive.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x83430` | `0x83724` | **`+0x2f4`** |
+| `__TEXT.__cstring` | `0x133db` | `0x13496` | **`+0xbb`** |
+| `__AUTH_CONST.__auth_got` | `0x790` | `0x798` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 469.0.0.0.0
--  __TEXT.__text: 0x83430
--  __TEXT.__cstring: 0x133db
-+  __TEXT.__text: 0x83724
-+  __TEXT.__cstring: 0x13496
-   __TEXT.__const: 0x920
-   __TEXT.__oslogstring: 0x31
-   __TEXT.__unwind_info: 0xd78
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x80
-   __AUTH_CONST.__cfstring: 0x40
--  __AUTH_CONST.__auth_got: 0x790
-+  __AUTH_CONST.__auth_got: 0x798
-   __DATA_DIRTY.__data: 0x10
-   __DATA_DIRTY.__bss: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/liblzma.5.dylib
-   Functions: 1072
 -  Symbols:   1310
 -  CStrings:  2905
 +  Symbols:   1311
 +  CStrings:  2911
- 
 Symbols:
 + _linkat
 Functions:

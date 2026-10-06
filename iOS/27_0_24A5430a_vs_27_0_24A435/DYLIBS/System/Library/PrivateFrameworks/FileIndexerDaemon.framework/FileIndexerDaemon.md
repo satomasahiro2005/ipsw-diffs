@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/FileIndexerDaemon.framework/FileIndexerDaemon`
 
-```diff
+### Section Size Changes
 
- 4838.0.125.0.0
--  __TEXT.__text: 0x6df80
-+  __TEXT.__text: 0x6df8c
-   __TEXT.__objc_methlist: 0x488
-   __TEXT.__const: 0x3574
-   __TEXT.__constg_swiftt: 0x1300
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6df80` | `0x6df8c` | **`+0xc`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_22c8dde98 -> sub_22d17be98 : 2468 -> 2448
 ~ sub_22c900cf8 -> sub_22d19ece4 : 256 -> 264

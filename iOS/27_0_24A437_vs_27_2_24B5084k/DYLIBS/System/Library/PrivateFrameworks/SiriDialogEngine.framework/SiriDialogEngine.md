@@ -2,65 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/SiriDialogEngine.framework/SiriDialogEngine`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6e5f0` | `0x6ec4c` | **`+0x65c`** |
+| `__TEXT.__eh_frame` | `0x3070` | `0x3138` | **`+0xc8`** |
+| `__TEXT.__cstring` | `0x272c` | `0x278c` | **`+0x60`** |
+| `__TEXT.__swift5_typeref` | `0x1082` | `0x10a4` | **`+0x22`** |
+| `__TEXT.__const` | `0x5f88` | `0x5fa8` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x2860` | `0x2880` | **`+0x20`** |
+| `__TEXT.__swift5_capture` | `0xd84` | `0xd9c` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0xd88` | `0xd98` | **`+0x10`** |
+| `__DATA.__data` | `0xb70` | `0xb78` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3520.12.1.0.0
--  __TEXT.__text: 0x6ae78
 +3605.4.1.0.0
-+  __TEXT.__text: 0x6b4d4
-   __TEXT.__objc_methlist: 0x9c
--  __TEXT.__const: 0x5f88
-+  __TEXT.__const: 0x5fa8
-   __TEXT.__constg_swiftt: 0x3dcc
--  __TEXT.__swift5_typeref: 0x1082
-+  __TEXT.__swift5_typeref: 0x10a4
-   __TEXT.__swift5_reflstr: 0xd9d
-   __TEXT.__swift5_fieldmd: 0x1f24
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_assocty: 0x300
--  __TEXT.__cstring: 0x272c
-+  __TEXT.__cstring: 0x278c
-   __TEXT.__swift5_proto: 0x4a0
-   __TEXT.__swift5_types: 0x220
--  __TEXT.__swift5_capture: 0xd84
-+  __TEXT.__swift5_capture: 0xd9c
-   __TEXT.__oslogstring: 0x1c0
-   __TEXT.__swift_as_entry: 0x48
-   __TEXT.__swift_as_ret: 0x48
-   __TEXT.__swift_as_cont: 0xb4
-   __TEXT.__swift5_protos: 0xc
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x34a8
--  __TEXT.__eh_frame: 0x3070
-+  __TEXT.__unwind_info: 0x34e0
-+  __TEXT.__eh_frame: 0x3138
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __AUTH_CONST.__const: 0xb1e8
-   __AUTH_CONST.__cfstring: 0xc0
-   __AUTH_CONST.__objc_const: 0x4ed0
--  __AUTH_CONST.__auth_got: 0xd88
-+  __AUTH_CONST.__auth_got: 0xd98
-   __AUTH.__objc_data: 0xe0
-   __AUTH.__data: 0x3048
--  __DATA.__data: 0xb70
-+  __DATA.__data: 0xb78
-   __DATA.__common: 0x10
-   __DATA_DIRTY.__objc_data: 0x370
-   __DATA_DIRTY.__data: 0x3848
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5440
--  Symbols:   1231
+-  Symbols:   1110
 -  CStrings:  313
 +  Functions: 5448
-+  Symbols:   1235
++  Symbols:   1114
 +  CStrings:  314
- 
 Symbols:
 + _objc_retain_x27
 + _symbolic So8NSObjectCSg

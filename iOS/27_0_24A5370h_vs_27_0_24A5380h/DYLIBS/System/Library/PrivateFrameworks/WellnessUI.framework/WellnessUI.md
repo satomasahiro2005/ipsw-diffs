@@ -2,74 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/WellnessUI.framework/WellnessUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5e59c` | `0x62e20` | **`+0x4884`** |
+| `__TEXT.__swift5_typeref` | `0x24c6` | `0x2818` | **`+0x352`** |
+| `__TEXT.__const` | `0x5834` | `0x59c4` | **`+0x190`** |
+| `__TEXT.__swift5_fieldmd` | `0x1bc0` | `0x1d08` | **`+0x148`** |
+| `__TEXT.__swift5_reflstr` | `0x1237` | `0x1357` | **`+0x120`** |
+| `__TEXT.__unwind_info` | `0x15d0` | `0x1698` | **`+0xc8`** |
+| `__AUTH_CONST.__const` | `0x1fb8` | `0x2048` | **`+0x90`** |
+| `__AUTH.__data` | `0x1460` | `0x14e0` | **`+0x80`** |
+| `__DATA.__bss` | `0x8010` | `0x8090` | **`+0x80`** |
+| `__DATA.__data` | `0x1070` | `0x10d0` | **`+0x60`** |
+| `__TEXT.__constg_swiftt` | `0xf04` | `0xf54` | **`+0x50`** |
+| `__TEXT.__swift5_capture` | `0x5f0` | `0x610` | **`+0x20`** |
+| `__TEXT.__swift5_assocty` | `0x230` | `0x248` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x968` | `0x978` | **`+0x10`** |
+| `__DATA.__common` | `0xc0` | `0xc8` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb0` | `0xa8` | **`-0x8`** |
+| `__TEXT.__swift5_proto` | `0x3fc` | `0x400` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0x138` | `0x13c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x5e59c
--  __TEXT.__const: 0x5834
--  __TEXT.__swift5_typeref: 0x24c6
--  __TEXT.__swift5_capture: 0x5f0
--  __TEXT.__swift5_reflstr: 0x1237
--  __TEXT.__swift5_assocty: 0x230
--  __TEXT.__constg_swiftt: 0xf04
--  __TEXT.__swift5_fieldmd: 0x1bc0
-+  __TEXT.__text: 0x62e20
-+  __TEXT.__const: 0x59c4
-+  __TEXT.__swift5_typeref: 0x2818
-+  __TEXT.__swift5_capture: 0x610
-+  __TEXT.__swift5_reflstr: 0x1357
-+  __TEXT.__swift5_assocty: 0x248
-+  __TEXT.__constg_swiftt: 0xf54
-+  __TEXT.__swift5_fieldmd: 0x1d08
-   __TEXT.__oslogstring: 0x85
-   __TEXT.__cstring: 0xc92
--  __TEXT.__swift5_proto: 0x3fc
--  __TEXT.__swift5_types: 0x138
--  __TEXT.__unwind_info: 0x15d0
-+  __TEXT.__swift5_proto: 0x400
-+  __TEXT.__swift5_types: 0x13c
-+  __TEXT.__unwind_info: 0x1698
-   __TEXT.__eh_frame: 0xa40
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+-3600.12.4.1.1
++3600.12.12.0.0
 
-   __DATA_CONST.__const: 0xd0
-   __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb0
-+  __DATA_CONST.__objc_selrefs: 0xa8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1fb8
-+  __AUTH_CONST.__const: 0x2048
-   __AUTH_CONST.__objc_const: 0x1b0
--  __AUTH_CONST.__auth_got: 0x968
--  __AUTH.__data: 0x1460
--  __DATA.__data: 0x1070
--  __DATA.__bss: 0x8010
--  __DATA.__common: 0xc0
-+  __AUTH_CONST.__auth_got: 0x978
-+  __AUTH.__data: 0x14e0
-+  __DATA.__data: 0x10d0
-+  __DATA.__bss: 0x8090
-+  __DATA.__common: 0xc8
-   __DATA_DIRTY.__data: 0x98
-   __DATA_DIRTY.__bss: 0x80
-   - /System/Library/Frameworks/DeveloperToolsSupport.framework/DeveloperToolsSupport
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2035
--  Symbols:   7282
+-  Symbols:   5416
 +  Functions: 2097
-+  Symbols:   7439
-   CStrings:  87
- 
-Sections:
-~ __TEXT.__cstring : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   5531
 Symbols:
 + _$s10WellnessUI15WatchRingsModelV10CodingKeys33_6B278D95640E583F76DFFAB296B8A9EBLLO11stringValueSSvg
 + _$s10WellnessUI15WatchRingsModelV10standLabelSSSgvM
@@ -286,7 +252,6 @@ Symbols:
 - __METACLASS_DATA__TtCFE10WellnessUIV7SwiftUI5ImagecFT8fileNameSS_S1_L_5Dummy
 - ___swift_memcpy89_8
 - _get_witness_table 9SnippetUI0A4BodyVy05SwiftB015ModifiedContentVyAFyAD6CircleVAD30_EnvironmentKeyWritingModifierVyAD5ColorVSgGGAD12_FrameLayoutVGGAD4ViewHPyHC
-- _objc_msgSend$imageNamed:inBundle:withConfiguration:
 - _symbolic _____ 7SwiftUI5ImageV
 - _symbolic _____ 7SwiftUI5ImageV08WellnessB0E8fileNameACSS_tcfc5DummyL_C
 - _symbolic _____Sg 7SwiftUI5ColorV
@@ -295,5 +260,4 @@ Symbols:
 - _symbolic _____y__________y_____SgGG 7SwiftUI15ModifiedContentV AA6CircleV AA30_EnvironmentKeyWritingModifierV AA5ColorV
 - _symbolic _____y_____yABy__________y_____SgGG_____GG 9SnippetUI0A4BodyV 05SwiftB015ModifiedContentV AD6CircleV AD30_EnvironmentKeyWritingModifierV AD5ColorV AD12_FrameLayoutV
 - _type_layout_string 10WellnessUI17WatchRingsSnippetV
-
 ```

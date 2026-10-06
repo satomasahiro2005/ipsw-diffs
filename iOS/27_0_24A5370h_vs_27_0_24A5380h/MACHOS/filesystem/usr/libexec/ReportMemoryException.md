@@ -2,7 +2,16 @@
 
 > `/usr/libexec/ReportMemoryException`
 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
+### Same-size Content Changes
+
+- `__DATA_CONST.__const`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
+```diff
+
+-358.0.0.0.0
++360.0.0.0.0
+```

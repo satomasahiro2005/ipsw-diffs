@@ -2,27 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/CVNLP.framework/CVNLP`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcb888` | `0xcba24` | **`+0x19c`** |
+| `__TEXT.__gcc_except_tab` | `0xdeb8` | `0xdec0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 130.0.0.0.0
--  __TEXT.__text: 0xcb888
-+  __TEXT.__text: 0xcba24
-   __TEXT.__objc_methlist: 0x19c4
-   __TEXT.__const: 0x1e38
-   __TEXT.__cstring: 0x6dda
--  __TEXT.__gcc_except_tab: 0xdeb8
-+  __TEXT.__gcc_except_tab: 0xdec0
-   __TEXT.__oslogstring: 0x7f8
-   __TEXT.__dlopen_cstrs: 0x86
-   __TEXT.__unwind_info: 0x41c0
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libperfcheck.dylib
-   Functions: 2684
 -  Symbols:   621
 +  Symbols:   620
-   CStrings:  813
- 
 Symbols:
 - _objc_release_x10
 Functions:

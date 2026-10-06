@@ -2,24 +2,25 @@
 
 > `/System/Library/PreferenceBundles/MobileCalSettings.bundle/MobileCalSettings`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x100cc` | `0x100d4` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__const`
 - `__TEXT.__const`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
 - `__TEXT.__swift5_typeref`
 - `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
 
-```diff
+### Other Changes
 
- 29917.0.102.0.0
--  __TEXT.__text: 0x100cc
-+  __TEXT.__text: 0x100d4
-   __TEXT.__auth_stubs: 0xa00
-   __TEXT.__objc_stubs: 0x2b60
-   __TEXT.__objc_methlist: 0x1134
+```text
 Functions:
 ~ sub_1080c : 724 -> 728
 ~ sub_11784 -> sub_11788 : 364 -> 368

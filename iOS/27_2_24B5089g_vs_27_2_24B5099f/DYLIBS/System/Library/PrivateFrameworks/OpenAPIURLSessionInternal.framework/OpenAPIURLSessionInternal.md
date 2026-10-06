@@ -2,17 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/OpenAPIURLSessionInternal.framework/OpenAPIURLSessionInternal`
 
-```diff
+### Section Size Changes
 
- 1.1.0.2.0
--  __TEXT.__text: 0x21454
-+  __TEXT.__text: 0x21410
-   __TEXT.__objc_methlist: 0x2ac
-   __TEXT.__const: 0x1200
-   __TEXT.__swift5_typeref: 0x9ce
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x22c68` | `0x22bf4` | **`-0x74`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_299a39b98 -> sub_299681b98 : 212 -> 192
-~ sub_299a39c6c -> sub_299681c58 : 288 -> 276
-~ sub_299a39d8c -> sub_299681d6c : 276 -> 264
-~ sub_299a39fb0 -> sub_299681f84 : 232 -> 208
+~ sub_29ce23648 -> sub_29caeb648 : 224 -> 192
+~ sub_29ce23728 -> sub_29caeb708 : 300 -> 276
+~ sub_29ce23854 -> sub_29caeb81c : 288 -> 264
+~ sub_29ce23a84 -> sub_29caeba34 : 244 -> 208
 ```

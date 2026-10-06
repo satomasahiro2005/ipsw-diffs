@@ -2,38 +2,34 @@
 
 > `/System/Library/Extensions/lifs.kext/lifs`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x20244` | `0x20390` | **`+0x14c`** |
+| `__TEXT.__os_log` | `0x1eba` | `0x1f16` | **`+0x5c`** |
+| `__TEXT.__cstring` | `0x29e6` | `0x29fa` | **`+0x14`** |
+
+### Same-size Content Changes
 
 - `__DATA.__data`
-- `__DATA_CONST.__mod_init_func`
-- `__DATA_CONST.__mod_term_func`
 - `__DATA_CONST.__const`
 - `__DATA_CONST.__kalloc_type`
 - `__DATA_CONST.__kalloc_var`
+- `__DATA_CONST.__mod_init_func`
+- `__DATA_CONST.__mod_term_func`
+
+### Other Changes
 
 ```diff
 
 -974.0.7.0.0
--  __TEXT.__os_log: 0x1eba
--  __TEXT.__cstring: 0x29e6
 +974.0.11.0.0
-+  __TEXT.__os_log: 0x1f16
-+  __TEXT.__cstring: 0x29fa
-   __TEXT.__const: 0x338
--  __TEXT_EXEC.__text: 0x20244
-+  __TEXT_EXEC.__text: 0x20390
-   __TEXT_EXEC.__auth_stubs: 0xfb0
-   __DATA.__data: 0x578
-   __DATA.__common: 0x138
 
-   __DATA_CONST.__got: 0x80
-   __DATA_CONST.__auth_ptr: 0x8
-   Functions: 460
 -  Symbols:   1243
 -  CStrings:  517
 +  Symbols:   1244
 +  CStrings:  519
- 
 Symbols:
 + add_sillyrename_entry.kalloc_type_view_2093
 + add_sillyrename_entry.kalloc_type_view_2116

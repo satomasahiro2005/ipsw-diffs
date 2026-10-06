@@ -2,18 +2,19 @@
 
 > `/usr/lib/system/libsystem_containermanager.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x300a4` | `0x300b8` | **`+0x14`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
 
-```diff
+### Other Changes
 
- 833.0.8.0.1
--  __TEXT.__text: 0x300a4
-+  __TEXT.__text: 0x300b8
-   __TEXT.__const: 0x434
-   __TEXT.__cstring: 0x3c49
-   __TEXT.__oslogstring: 0x59cf
+```diff
 Functions:
 ~ _container_perfect_hash_index_of : 1532 -> 1536
 ~ _container_string_rom_create : 2728 -> 2740

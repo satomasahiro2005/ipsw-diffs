@@ -2,45 +2,26 @@
 
 > `com.apple.driver.AppleSEPManager`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA.__data`
-- `__DATA_CONST.__mod_init_func`
-- `__DATA_CONST.__mod_term_func`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__kalloc_type`
-- `__DATA_CONST.__kalloc_var`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x41f24` | `0x42e78` | **`+0xf54`** |
+| `__TEXT.__cstring` | `0x11527` | `0x1178f` | **`+0x268`** |
+| `__TEXT_EXEC.__auth_stubs` | `0xb00` | `0xb20` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0x580` | `0x590` | **`+0x10`** |
+
+### Other Changes
 
 ```diff
 
 -928.0.0.0.0
--  __TEXT.__cstring: 0x11527
-+928.0.2.0.0
-+  __TEXT.__cstring: 0x1178f
-   __TEXT.__const: 0xded8
--  __TEXT_EXEC.__text: 0x41f24
--  __TEXT_EXEC.__auth_stubs: 0xb00
-+  __TEXT_EXEC.__text: 0x42e78
-+  __TEXT_EXEC.__auth_stubs: 0xb20
-   __DATA.__data: 0x168
-   __DATA.__common: 0xc48
-   __DATA.__bss: 0x4e
-
-   __DATA_CONST.__const: 0x9fc0
-   __DATA_CONST.__kalloc_type: 0xe00
-   __DATA_CONST.__kalloc_var: 0x50
--  __DATA_CONST.__auth_got: 0x580
-+  __DATA_CONST.__auth_got: 0x590
-   __DATA_CONST.__got: 0x140
-   __DATA_CONST.__auth_ptr: 0x38
 -  Functions: 2519
++928.0.2.0.0
 +  Functions: 2544
-   Symbols:   0
+
 -  CStrings:  1473
 +  CStrings:  1493
- 
 CStrings:
 + "%s: SEP CoreAnalytics: Failed to send CA event %d\n"
 + "/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/AppleSEPManager/AppleSEPCommon.h"

@@ -2,27 +2,23 @@
 
 > `/System/Library/PrivateFrameworks/UserFS.framework/PlugIns/livefiles_hfs.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3d360` | `0x3d480` | **`+0x120`** |
+| `__TEXT.__cstring` | `0x26fb` | `0x270a` | **`+0xf`** |
+| `__TEXT.__oslogstring` | `0x5ecc` | `0x5ed7` | **`+0xb`** |
+
+### Other Changes
+
 ```diff
 
 -750.0.0.0.0
--  __TEXT.__text: 0x3d360
 +751.0.0.0.0
-+  __TEXT.__text: 0x3d480
-   __TEXT.__const: 0x4e60
--  __TEXT.__oslogstring: 0x5ecc
--  __TEXT.__cstring: 0x26fb
-+  __TEXT.__oslogstring: 0x5ed7
-+  __TEXT.__cstring: 0x270a
-   __TEXT.__unwind_info: 0x6d8
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__weak_got: 0x8
 
-   - /usr/lib/libSystem.B.dylib
-   Functions: 677
-   Symbols:   646
 -  CStrings:  747
 +  CStrings:  751
- 
 Functions:
 ~ _replay_journal : 6220 -> 6368
 ~ _HeadTruncateFile : 1300 -> 1440

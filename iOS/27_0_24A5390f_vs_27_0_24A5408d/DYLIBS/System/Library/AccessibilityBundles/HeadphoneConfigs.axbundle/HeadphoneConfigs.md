@@ -2,65 +2,39 @@
 
 > `/System/Library/AccessibilityBundles/HeadphoneConfigs.axbundle/HeadphoneConfigs`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x25fc` | `0x2c58` | **`+0x65c`** |
+| `__AUTH_CONST.__cfstring` | `0x7e0` | `0x9e0` | **`+0x200`** |
+| `__TEXT.__cstring` | `0x558` | `0x734` | **`+0x1dc`** |
+| `__AUTH_CONST.__objc_const` | `0x9a0` | `0xac0` | **`+0x120`** |
+| `__TEXT.__oslogstring` | `—` | `0xe1` | **`+0xe1`** |
+| `__AUTH.__objc_data` | `—` | `0xa0` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x150` | `0x1d0` | **`+0x80`** |
+| `__TEXT.__objc_methlist` | `0x7bc` | `0x80c` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5b8` | `0x600` | **`+0x48`** |
+| `__DATA_CONST.__got` | `0x98` | `0xd8` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x120` | `0x138` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x48` | `0x58` | **`+0x10`** |
+| `__TEXT.__const` | `0x10` | `0x20` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x20` | `0x28` | **`+0x8`** |
+| `__DATA.__bss` | `0x10` | `0x11` | **`+0x1`** |
+
+### Other Changes
+
 ```diff
 
 -3045.0.0.0.0
--  __TEXT.__text: 0x25fc
--  __TEXT.__objc_methlist: 0x7bc
--  __TEXT.__const: 0x10
 +3048.0.0.0.0
-+  __TEXT.__text: 0x2c58
-+  __TEXT.__objc_methlist: 0x80c
-+  __TEXT.__const: 0x20
-   __TEXT.__gcc_except_tab: 0x12c
--  __TEXT.__cstring: 0x558
--  __TEXT.__unwind_info: 0x120
-+  __TEXT.__cstring: 0x734
-+  __TEXT.__oslogstring: 0xe1
-+  __TEXT.__unwind_info: 0x138
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x150
--  __DATA_CONST.__objc_classlist: 0x48
-+  __DATA_CONST.__const: 0x1d0
-+  __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5b8
-+  __DATA_CONST.__objc_selrefs: 0x600
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x20
--  __DATA_CONST.__got: 0x98
-+  __DATA_CONST.__objc_superrefs: 0x28
-+  __DATA_CONST.__got: 0xd8
-   __AUTH_CONST.__const: 0x60
--  __AUTH_CONST.__cfstring: 0x7e0
--  __AUTH_CONST.__objc_const: 0x9a0
-+  __AUTH_CONST.__cfstring: 0x9e0
-+  __AUTH_CONST.__objc_const: 0xac0
-   __AUTH_CONST.__objc_intobj: 0x18
-   __AUTH_CONST.__auth_got: 0x0
-+  __AUTH.__objc_data: 0xa0
-   __DATA.__data: 0xc0
--  __DATA.__bss: 0x10
-+  __DATA.__bss: 0x11
-   __DATA_DIRTY.__objc_data: 0x2d0
-   __DATA_DIRTY.__bss: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 52
--  Symbols:   240
+-  Symbols:   191
 -  CStrings:  81
 +  Functions: 60
-+  Symbols:   283
++  Symbols:   227
 +  CStrings:  100
- 
 Symbols:
 + +[HPSSpatialProfileSingeStepEnrollmentControllerAccessibility _accessibilityPerformValidations:]
 + +[HPSSpatialProfileSingeStepEnrollmentControllerAccessibility(SafeCategory) safeCategoryBaseClass]
@@ -94,13 +68,6 @@ Symbols:
 + _dispatch_async
 + _kAXLastAnnouncementKey
 + _objc_getAssociatedObject
-+ _objc_msgSend$boolValue
-+ _objc_msgSend$currentLocale
-+ _objc_msgSend$dictionaryWithObjects:forKeys:count:
-+ _objc_msgSend$initWithString:attributes:
-+ _objc_msgSend$isEqualToString:
-+ _objc_msgSend$objectForKey:
-+ _objc_msgSend$safeIntegerForKey:
 + _objc_retain_x19
 + _objc_retain_x20
 + _objc_setAssociatedObject

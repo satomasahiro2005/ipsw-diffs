@@ -4,9 +4,6 @@
 
 ```diff
 
- 		<key>DevelopmentPhase</key>
- 		<string>FeatureComplete</string>
- 	</dict>
 +	<key>PDPExtensions</key>
 +	<dict>
 +		<key>DevelopmentPhase</key>
@@ -17,8 +14,5 @@
 +		<key>DevelopmentPhase</key>
 +		<string>FeatureComplete</string>
 +	</dict>
- 	<key>SilentBurnInMiniBuddy</key>
- 	<dict>
- 		<key>DevelopmentPhase</key>
 
 ```

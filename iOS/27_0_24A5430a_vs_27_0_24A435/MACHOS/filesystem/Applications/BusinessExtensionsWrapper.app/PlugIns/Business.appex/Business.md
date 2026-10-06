@@ -2,30 +2,31 @@
 
 > `/Applications/BusinessExtensionsWrapper.app/PlugIns/Business.appex/Business`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9eaf8` | `0x9ec54` | **`+0x15c`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__const`
 - `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 30123.30.6.2.1
--  __TEXT.__text: 0x9eaf8
-+  __TEXT.__text: 0x9ec54
-   __TEXT.__auth_stubs: 0x1f30
-   __TEXT.__objc_stubs: 0x46e0
-   __TEXT.__objc_methlist: 0x1e48
+```text
 Functions:
 ~ sub_1000066b4 : 856 -> 868
 ~ sub_1000099e4 -> sub_1000099f0 : 3048 -> 3072

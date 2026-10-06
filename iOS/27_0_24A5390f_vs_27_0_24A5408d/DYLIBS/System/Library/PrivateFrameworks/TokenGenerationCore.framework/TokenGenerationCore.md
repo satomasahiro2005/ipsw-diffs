@@ -2,78 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/TokenGenerationCore.framework/TokenGenerationCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2dd948` | `0x2dee6c` | **`+0x1524`** |
+| `__TEXT.__unwind_info` | `0xbb98` | `0xbf40` | **`+0x3a8`** |
+| `__AUTH_CONST.__const` | `0x20168` | `0x20280` | **`+0x118`** |
+| `__TEXT.__cstring` | `0x9d11` | `0x9ca1` | **`-0x70`** |
+| `__TEXT.__const` | `0x36b40` | `0x36b80` | **`+0x40`** |
+| `__TEXT.__swift5_fieldmd` | `0xaec4` | `0xaf04` | **`+0x40`** |
+| `__TEXT.__constg_swiftt` | `0x79a4` | `0x79d8` | **`+0x34`** |
+| `__TEXT.__swift5_reflstr` | `0x570c` | `0x573c` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x2b10` | `0x2af0` | **`-0x20`** |
+| `__DATA_DIRTY.__data` | `0x8d20` | `0x8d28` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0x9a6c` | `0x9a72` | **`+0x6`** |
+| `__TEXT.__swift5_types` | `0xd60` | `0xd64` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -301.1.0.5.0
--  __TEXT.__text: 0x2dd948
 +301.6.0.5.101
-+  __TEXT.__text: 0x2dee6c
-   __TEXT.__objc_methlist: 0xd4
--  __TEXT.__const: 0x36b40
-+  __TEXT.__const: 0x36b80
-   __TEXT.__gcc_except_tab: 0x41bc
--  __TEXT.__cstring: 0x9d11
-+  __TEXT.__cstring: 0x9ca1
-   __TEXT.__oslogstring: 0x2345
--  __TEXT.__swift5_typeref: 0x9a6c
--  __TEXT.__swift5_fieldmd: 0xaec4
--  __TEXT.__constg_swiftt: 0x79a4
-+  __TEXT.__swift5_typeref: 0x9a72
-+  __TEXT.__swift5_fieldmd: 0xaf04
-+  __TEXT.__constg_swiftt: 0x79d8
-   __TEXT.__swift5_builtin: 0x258
--  __TEXT.__swift5_reflstr: 0x570c
-+  __TEXT.__swift5_reflstr: 0x573c
-   __TEXT.__swift5_assocty: 0x968
-   __TEXT.__swift5_mpenum: 0x13c
-   __TEXT.__swift5_protos: 0x74
-   __TEXT.__swift5_proto: 0x2e68
--  __TEXT.__swift5_types: 0xd60
-+  __TEXT.__swift5_types: 0xd64
-   __TEXT.__swift_as_entry: 0x7c
-   __TEXT.__swift5_capture: 0x74c
-   __TEXT.__swift_as_cont: 0xa8
-   __TEXT.__swift_as_ret: 0x48
-   __TEXT.__swift5_types2: 0x8
--  __TEXT.__unwind_info: 0xbb98
-+  __TEXT.__unwind_info: 0xbf40
-   __TEXT.__eh_frame: 0xede4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0x1e8
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__got: 0x1370
--  __AUTH_CONST.__const: 0x20168
-+  __AUTH_CONST.__const: 0x20280
-   __AUTH_CONST.__cfstring: 0xa0
-   __AUTH_CONST.__objc_const: 0x11f0
-   __AUTH_CONST.__weak_auth_got: 0x48
--  __AUTH_CONST.__auth_got: 0x2b10
-+  __AUTH_CONST.__auth_got: 0x2af0
-   __AUTH.__data: 0x1f48
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x10
-
-   __DATA.__bss: 0x3fe89
-   __DATA.__common: 0x31d
-   __DATA_DIRTY.__objc_data: 0xa0
--  __DATA_DIRTY.__data: 0x8d20
-+  __DATA_DIRTY.__data: 0x8d28
-   __DATA_DIRTY.__bss: 0x17090
-   __DATA_DIRTY.__common: 0xb0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 16300
--  Symbols:   46152
+-  Symbols:   46094
 -  CStrings:  1131
 +  Functions: 16340
-+  Symbols:   46207
++  Symbols:   46149
 +  CStrings:  1129
- 
 Symbols:
 + _$s15TokenGeneration21CompletePromptRequestV13containsImageSbvg
 + _$s15TokenGeneration21CompletePromptRequestV13containsImageSbvpMV

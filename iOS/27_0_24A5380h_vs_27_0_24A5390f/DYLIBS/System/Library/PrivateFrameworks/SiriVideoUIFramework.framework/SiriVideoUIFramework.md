@@ -2,63 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/SiriVideoUIFramework.framework/SiriVideoUIFramework`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_proto`
-- `__DATA_CONST.__objc_selrefs`
-- `__AUTH_CONST.__const`
-- `__AUTH.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x13538` | `0x13b98` | **`+0x660`** |
+| `__TEXT.__swift5_typeref` | `0xb86` | `0xbfa` | **`+0x74`** |
+| `__TEXT.__const` | `0x996` | `0x9e6` | **`+0x50`** |
+| `__TEXT.__eh_frame` | `—` | `0x38` | **`+0x38`** |
+| `__DATA.__data` | `0x5a0` | `0x5c0` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x448` | `0x460` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x758` | `0x760` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -3600.28.2.0.0
--  __TEXT.__text: 0x13538
--  __TEXT.__const: 0x996
 +3600.28.6.0.0
-+  __TEXT.__text: 0x13b98
-+  __TEXT.__const: 0x9e6
-   __TEXT.__cstring: 0xe5
--  __TEXT.__swift5_typeref: 0xb86
-+  __TEXT.__swift5_typeref: 0xbfa
-   __TEXT.__swift5_capture: 0x160
-   __TEXT.__swift5_reflstr: 0x164
-   __TEXT.__swift5_assocty: 0xd8
 
-   __TEXT.__swift5_proto: 0x24
-   __TEXT.__swift5_types: 0x28
-   __TEXT.__oslogstring: 0xf5
--  __TEXT.__unwind_info: 0x448
-+  __TEXT.__unwind_info: 0x460
-+  __TEXT.__eh_frame: 0x38
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0x58
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x390
--  __AUTH_CONST.__auth_got: 0x758
-+  __AUTH_CONST.__auth_got: 0x760
-   __AUTH.__data: 0x4b8
--  __DATA.__data: 0x5a0
-+  __DATA.__data: 0x5c0
-   __DATA.__common: 0x20
-   __DATA.__bss: 0x4a0
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 356
--  Symbols:   310
+-  Symbols:   299
 +  Functions: 362
-+  Symbols:   316
-   CStrings:  10
- 
++  Symbols:   305
 Symbols:
 + _OUTLINED_FUNCTION_10
 + _OUTLINED_FUNCTION_9

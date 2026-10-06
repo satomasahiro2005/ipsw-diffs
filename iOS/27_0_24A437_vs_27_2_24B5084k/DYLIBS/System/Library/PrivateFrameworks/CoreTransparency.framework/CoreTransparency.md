@@ -2,58 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/CoreTransparency.framework/CoreTransparency`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4ebcc` | `0x4f7c4` | **`+0xbf8`** |
+| `__TEXT.__cstring` | `0xede` | `0xfde` | **`+0x100`** |
+| `__TEXT.__eh_frame` | `0x2434` | `0x23ec` | **`-0x48`** |
+| `__TEXT.__const` | `0x7c04` | `0x7c34` | **`+0x30`** |
+| `__TEXT.__swift5_reflstr` | `0x29c4` | `0x29e4` | **`+0x20`** |
+| `__TEXT.__swift5_typeref` | `0x1a3a` | `0x1a5a` | **`+0x20`** |
+| `__TEXT.__swift5_builtin` | `0xdc` | `0xf0` | **`+0x14`** |
+| `__TEXT.__swift5_fieldmd` | `0x1f28` | `0x1f34` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x990` | `0x988` | **`-0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x68` | `0x70` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x1928` | `0x1920` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1766.0.60.0.0
--  __TEXT.__text: 0x4cde0
--  __TEXT.__const: 0x7c04
--  __TEXT.__cstring: 0xede
--  __TEXT.__swift5_typeref: 0x1a3a
--  __TEXT.__swift5_reflstr: 0x29c4
 +1766.40.47.0.0
-+  __TEXT.__text: 0x4d9dc
-+  __TEXT.__const: 0x7c34
-+  __TEXT.__cstring: 0xfde
-+  __TEXT.__swift5_typeref: 0x1a5a
-+  __TEXT.__swift5_reflstr: 0x29e4
-   __TEXT.__swift5_assocty: 0x5a8
-   __TEXT.__constg_swiftt: 0x1c60
--  __TEXT.__swift5_fieldmd: 0x1f28
-+  __TEXT.__swift5_fieldmd: 0x1f34
-   __TEXT.__swift5_proto: 0x438
-   __TEXT.__swift5_types: 0x16c
-   __TEXT.__swift5_protos: 0x9c
-   __TEXT.__oslogstring: 0x3
--  __TEXT.__swift5_builtin: 0xdc
--  __TEXT.__swift5_mpenum: 0x68
-+  __TEXT.__swift5_builtin: 0xf0
-+  __TEXT.__swift5_mpenum: 0x70
-   __TEXT.__swift5_capture: 0x2a0
-   __TEXT.__swift5_types2: 0xc
--  __TEXT.__unwind_info: 0x1cb0
--  __TEXT.__eh_frame: 0x243c
-+  __TEXT.__unwind_info: 0x1ca0
-+  __TEXT.__eh_frame: 0x23f4
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x3ef8
--  __AUTH_CONST.__auth_got: 0x990
-+  __AUTH_CONST.__auth_got: 0x988
-   __AUTH.__data: 0xac8
-   __DATA.__data: 0x9f0
-   __DATA.__common: 0x3c0
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 3052
 +  Functions: 3051
-   Symbols:   760
+
 -  CStrings:  105
 +  CStrings:  109
- 
 Symbols:
 + _symbolic _____22remainingMergeWindowMs_t s6UInt64V
 - _objc_release_x28

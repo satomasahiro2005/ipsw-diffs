@@ -2,14 +2,15 @@
 
 > `/usr/lib/libindus.dylib`
 
-```diff
+### Section Size Changes
 
- 219.0.0.0.0
--  __TEXT.__text: 0x1505c0
-+  __TEXT.__text: 0x15078c
-   __TEXT.__const: 0x5540
-   __TEXT.__gcc_except_tab: 0x492c
-   __TEXT.__cstring: 0x2957f
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1505c0` | `0x15078c` | **`+0x1cc`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __Z5umeasPdjdPKdS_S_S_d : 1172 -> 1160
 ~ __Z11SV_Gen_MeasP16s_SV_Gen_Meas_SDP16s_SV_Gen_Meas_WDP17s_GNSS_Debug_DataP13s_DB_Nav_SolnP13s_DB_Raw_MeasP15s_DB_Sys_StatusP18s_DB_Acq_Aid_TableP16s_DB_SV_Nav_MessP14s_DB_Time_SyncP15s_DB_Track_MeasP15s_DB_Chan_Reset : 9544 -> 9560

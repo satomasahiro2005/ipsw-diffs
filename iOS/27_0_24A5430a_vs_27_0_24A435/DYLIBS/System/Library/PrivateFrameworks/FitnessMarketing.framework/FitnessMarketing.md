@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/FitnessMarketing.framework/FitnessMarketing`
 
-```diff
+### Section Size Changes
 
- 2027.0.146.1.4
--  __TEXT.__text: 0x78bf8
-+  __TEXT.__text: 0x78c34
-   __TEXT.__objc_methlist: 0x4d4
-   __TEXT.__const: 0xa2b4
-   __TEXT.__swift5_typeref: 0x9ee2
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x78bf8` | `0x78c34` | **`+0x3c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_212c86d10 -> sub_21345ad10 : 372 -> 376
 ~ sub_212c94920 -> sub_213468924 : 500 -> 512

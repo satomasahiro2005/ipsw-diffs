@@ -2,92 +2,42 @@
 
 > `/System/Library/Frameworks/MessageUI.framework/MessageUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14f7f0` | `0x15031c` | **`+0xb2c`** |
+| `__TEXT.__oslogstring` | `0x5e0e` | `0x5ffe` | **`+0x1f0`** |
+| `__TEXT.__gcc_except_tab` | `0x25208` | `0x253a0` | **`+0x198`** |
+| `__TEXT.__cstring` | `0xa0e6` | `0xa1d6` | **`+0xf0`** |
+| `__AUTH_CONST.__cfstring` | `0x8e60` | `0x8f00` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x4978` | `0x4a18` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0xa5c8` | `0xa620` | **`+0x58`** |
+| `__AUTH_CONST.__objc_const` | `0x1a810` | `0x1a860` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0xc278` | `0xc2c8` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x12aac` | `0x12af4` | **`+0x48`** |
+| `__TEXT.__swift5_fieldmd` | `0x4f8` | `0x4ec` | **`-0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x18f8` | `0x1900` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x1ee8` | `0x1ef0` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x1148` | `0x114c` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__swift5_reflstr`
+
+### Other Changes
 
 ```diff
 
 -3897.100.8.2.5
--  __TEXT.__text: 0x14f7f0
 +3901.100.1.2.7
-+  __TEXT.__text: 0x15031c
-   __TEXT.__delay_helper: 0x114
--  __TEXT.__objc_methlist: 0x12aac
--  __TEXT.__cstring: 0xa0e6
--  __TEXT.__gcc_except_tab: 0x25208
-+  __TEXT.__objc_methlist: 0x12af4
-+  __TEXT.__cstring: 0xa1d6
-+  __TEXT.__gcc_except_tab: 0x253a0
-   __TEXT.__const: 0x1ff4
-   __TEXT.__ustring: 0x4dc
--  __TEXT.__oslogstring: 0x5e0e
-+  __TEXT.__oslogstring: 0x5ffe
-   __TEXT.__dlopen_cstrs: 0x4bf
-   __TEXT.__swift5_typeref: 0x1894
-   __TEXT.__swift5_reflstr: 0x5a8
-   __TEXT.__swift5_assocty: 0x1b0
-   __TEXT.__constg_swiftt: 0x738
--  __TEXT.__swift5_fieldmd: 0x4f8
-+  __TEXT.__swift5_fieldmd: 0x4ec
-   __TEXT.__swift5_proto: 0xac
-   __TEXT.__swift5_types: 0x84
-   __TEXT.__swift5_capture: 0x3f8
 
-   __TEXT.__swift_as_entry: 0x28
-   __TEXT.__swift_as_ret: 0x2c
-   __TEXT.__swift_as_cont: 0x50
--  __TEXT.__unwind_info: 0xa5c8
-+  __TEXT.__unwind_info: 0xa620
-   __TEXT.__eh_frame: 0x5e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4978
-+  __DATA_CONST.__const: 0x4a18
-   __DATA_CONST.__objc_classlist: 0x628
-   __DATA_CONST.__objc_catlist: 0x108
-   __DATA_CONST.__objc_protolist: 0x418
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xc278
-+  __DATA_CONST.__objc_selrefs: 0xc2c8
-   __DATA_CONST.__objc_protorefs: 0x68
-   __DATA_CONST.__objc_superrefs: 0x4b0
-   __DATA_CONST.__objc_arraydata: 0x648
--  __DATA_CONST.__got: 0x1ee8
-+  __DATA_CONST.__got: 0x1ef0
-   __AUTH_CONST.__const: 0x1c90
--  __AUTH_CONST.__cfstring: 0x8e60
--  __AUTH_CONST.__objc_const: 0x1a810
-+  __AUTH_CONST.__cfstring: 0x8f00
-+  __AUTH_CONST.__objc_const: 0x1a860
-   __AUTH_CONST.__objc_floatobj: 0x20
-   __AUTH_CONST.__objc_intobj: 0x1b0
-   __AUTH_CONST.__objc_arrayobj: 0x78
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_dictobj: 0x5a0
--  __AUTH_CONST.__auth_got: 0x18f8
-+  __AUTH_CONST.__auth_got: 0x1900
-   __AUTH.__objc_data: 0x3588
-   __AUTH.__data: 0x360
--  __DATA.__objc_ivar: 0x1148
-+  __DATA.__objc_ivar: 0x114c
-   __DATA.__data: 0x3818
-   __DATA.__bss: 0x1d60
-   __DATA.__common: 0x2f8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6870
--  Symbols:   16218
+-  Symbols:   11652
 -  CStrings:  2051
 +  Functions: 6882
-+  Symbols:   16244
++  Symbols:   11672
 +  CStrings:  2060
- 
 Symbols:
 + -[MFMailComposeController _recordSmartReplyCandidateAccepted]
 + -[MFMailComposeController _shouldPresentComposeAccessoryAsPopover]
@@ -179,15 +129,6 @@ Symbols:
 + ___block_descriptor_48_ea8_32s40bs_e17_v16?0"NSArray"8ls32l8s40l8
 + ___block_descriptor_56_ea8_32s40bs48r_e18_v16?0"NSNumber"8lr48l8s32l8s40l8
 + ___block_descriptor_80_ea8_32s40s48s56bs64r72w_e5_v8?0lw72l8s32l8s40l8s48l8s56l8r64l8
-+ _objc_msgSend$_pocketInsets
-+ _objc_msgSend$_setPocketInsets:
-+ _objc_msgSend$_setStandardFontFamily:
-+ _objc_msgSend$_shouldPresentComposeAccessoryAsPopover
-+ _objc_msgSend$isKeyWindow
-+ _objc_msgSend$mf_supportsPopoverPresentationWithoutIdiomCheck
-+ _objc_msgSend$preserveNodesInWebView:completionHandler:
-+ _objc_msgSend$setPreferredAction:
-+ _objc_msgSend$viewIfLoaded
 - GCC_except_table368
 - GCC_except_table380
 - GCC_except_table385
@@ -258,9 +199,6 @@ Symbols:
 - _OBJC_CLASS_$_MSWritingToolsSignaturePreservation
 - _UIFontWeightRegular
 - ___block_descriptor_56_ea8_32s40s48r_e5_v8?0lr48l8s32l8s40l8
-- _objc_msgSend$preserveSignatureNodeInWebView:completionHandler:
-- _objc_msgSend$result
-- _objc_msgSend$systemFontOfSize:weight:
 CStrings:
 + "<%{public}@: %p> Composition was cancelled or dismissed while identifying compose warnings; abandoning send."
 + "PERSONALIZE_SMART_REPLIES_ALERT_MESSAGE"

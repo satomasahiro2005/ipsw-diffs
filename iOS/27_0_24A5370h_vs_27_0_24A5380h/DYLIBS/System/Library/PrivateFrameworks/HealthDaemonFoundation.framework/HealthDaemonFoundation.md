@@ -2,119 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/HealthDaemonFoundation.framework/HealthDaemonFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x71840` | `0x73bb8` | **`+0x2378`** |
+| `__TEXT.__oslogstring` | `0x34c6` | `0x3696` | **`+0x1d0`** |
+| `__TEXT.__eh_frame` | `0x1330` | `0x14c8` | **`+0x198`** |
+| `__TEXT.__const` | `0x21f2` | `0x2302` | **`+0x110`** |
+| `__AUTH_CONST.__objc_const` | `0x8600` | `0x86f0` | **`+0xf0`** |
+| `__TEXT.__constg_swiftt` | `0xac8` | `0xbb0` | **`+0xe8`** |
+| `__DATA_DIRTY.__data` | `0x9a0` | `0xa80` | **`+0xe0`** |
+| `__TEXT.__swift5_reflstr` | `0x7cb` | `0x87b` | **`+0xb0`** |
+| `__TEXT.__swift5_typeref` | `0xb66` | `0xc12` | **`+0xac`** |
+| `__TEXT.__unwind_info` | `0x2898` | `0x2928` | **`+0x90`** |
+| `__AUTH.__objc_data` | `0x9e8` | `0xa60` | **`+0x78`** |
+| `__AUTH_CONST.__const` | `0x27a8` | `0x2820` | **`+0x78`** |
+| `__TEXT.__swift5_fieldmd` | `0x8c0` | `0x938` | **`+0x78`** |
+| `__DATA.__bss` | `0x1eb0` | `0x1f10` | **`+0x60`** |
+| `__DATA_DIRTY.__objc_data` | `0x1688` | `0x16d8` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x10e8` | `0x1120` | **`+0x38`** |
+| `__TEXT.__objc_methlist` | `0x3d54` | `0x3d8c` | **`+0x38`** |
+| `__AUTH.__data` | `0x108` | `0x138` | **`+0x30`** |
+| `__DATA.__data` | `0xc78` | `0xc50` | **`-0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x4080` | `0x4060` | **`-0x20`** |
+| `__DATA_DIRTY.__bss` | `0xb0` | `0xd0` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x304c` | `0x3034` | **`-0x18`** |
+| `__DATA_CONST.__got` | `0x6e8` | `0x6d8` | **`-0x10`** |
+| `__TEXT.__cstring` | `0x49aa` | `0x49ba` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0xac` | `0xb8` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x2e8` | `0x2f0` | **`+0x8`** |
+| `__TEXT.__swift5_capture` | `0x490` | `0x494` | **`+0x4`** |
+| `__TEXT.__swift5_proto` | `0x104` | `0x108` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x71840
--  __TEXT.__objc_methlist: 0x3d54
--  __TEXT.__const: 0x21f2
--  __TEXT.__cstring: 0x49aa
--  __TEXT.__oslogstring: 0x34c6
--  __TEXT.__gcc_except_tab: 0x304c
--  __TEXT.__swift5_typeref: 0xb66
--  __TEXT.__swift5_reflstr: 0x7cb
-+  __TEXT.__text: 0x73bb8
-+  __TEXT.__objc_methlist: 0x3d8c
-+  __TEXT.__const: 0x2302
-+  __TEXT.__cstring: 0x49ba
-+  __TEXT.__oslogstring: 0x3696
-+  __TEXT.__gcc_except_tab: 0x3034
-+  __TEXT.__swift5_typeref: 0xc12
-+  __TEXT.__swift5_reflstr: 0x87b
-   __TEXT.__swift5_assocty: 0xc0
--  __TEXT.__constg_swiftt: 0xac8
-+  __TEXT.__constg_swiftt: 0xbb0
-   __TEXT.__swift5_builtin: 0xa0
--  __TEXT.__swift5_fieldmd: 0x8c0
--  __TEXT.__swift5_proto: 0x104
--  __TEXT.__swift5_types: 0xac
--  __TEXT.__swift5_capture: 0x490
-+  __TEXT.__swift5_fieldmd: 0x938
-+  __TEXT.__swift5_proto: 0x108
-+  __TEXT.__swift5_types: 0xb8
-+  __TEXT.__swift5_capture: 0x494
-   __TEXT.__swift5_protos: 0x2c
-   __TEXT.__swift5_types2: 0xc
-   __TEXT.__swift5_mpenum: 0x1c
--  __TEXT.__unwind_info: 0x2898
--  __TEXT.__eh_frame: 0x1330
-+  __TEXT.__unwind_info: 0x2928
-+  __TEXT.__eh_frame: 0x14c8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x11c0
--  __DATA_CONST.__objc_classlist: 0x2e8
-+  __DATA_CONST.__objc_classlist: 0x2f0
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0xf0
-   __DATA_CONST.__objc_imageinfo: 0x8
+-7027.0.60.2.2
++7027.0.64.0.0
 
-   __DATA_CONST.__objc_protorefs: 0x70
-   __DATA_CONST.__objc_superrefs: 0x1e0
-   __DATA_CONST.__objc_arraydata: 0x18
--  __DATA_CONST.__got: 0x6e8
--  __AUTH_CONST.__const: 0x27a8
--  __AUTH_CONST.__cfstring: 0x4080
--  __AUTH_CONST.__objc_const: 0x8600
-+  __DATA_CONST.__got: 0x6d8
-+  __AUTH_CONST.__const: 0x2820
-+  __AUTH_CONST.__cfstring: 0x4060
-+  __AUTH_CONST.__objc_const: 0x86f0
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x78
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__auth_got: 0x10e8
--  __AUTH.__objc_data: 0x9e8
--  __AUTH.__data: 0x108
-+  __AUTH_CONST.__auth_got: 0x1120
-+  __AUTH.__objc_data: 0xa60
-+  __AUTH.__data: 0x138
-   __DATA.__objc_ivar: 0x56c
--  __DATA.__data: 0xc78
--  __DATA.__bss: 0x1eb0
--  __DATA_DIRTY.__objc_data: 0x1688
--  __DATA_DIRTY.__data: 0x9a0
--  __DATA_DIRTY.__bss: 0xb0
-+  __DATA.__data: 0xc50
-+  __DATA.__bss: 0x1f10
-+  __DATA_DIRTY.__objc_data: 0x16d8
-+  __DATA_DIRTY.__data: 0xa80
-+  __DATA_DIRTY.__bss: 0xd0
-   __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 3052
--  Symbols:   7207
--  CStrings:  1414
+-  Symbols:   3947
+-  CStrings:  896
 +  Functions: 3086
-+  Symbols:   7235
-+  CStrings:  1418
- 
-Sections:
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_types2 : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
++  Symbols:   3969
++  CStrings:  901
 Symbols:
 + _OBJC_CLASS_$__TtC22HealthDaemonFoundation28BufferedJournalKeyValueStore
 + _OBJC_METACLASS_$__TtC22HealthDaemonFoundation28BufferedJournalKeyValueStore
@@ -126,7 +59,6 @@ Symbols:
 + ___swift_assign_boxed_opaque_existential_0
 + ___unnamed_8
 + _flat unique So22HDJournalKeyValueStore_p
-+ _objc_msgSend$unitTesting_setEnumeratedBytesThreshold:
 + _objc_retain_x9
 + _swift_cvw_instantiateLayoutString
 + _swift_unknownObjectWeakAssign
@@ -171,5 +103,4 @@ CStrings:
 - "Journal enumeration failed: %{public}s"
 - "Unknown operation with identifier: %{public}s"
 - "self.handle == nil || self.handle.isClosed"
-
 ```

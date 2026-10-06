@@ -2,108 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/PhotosUIPrivate.framework/PhotosUIPrivate`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5ab1a8` | `0x5acd60` | **`+0x1bb8`** |
+| `__TEXT.__eh_frame` | `0x9c10` | `0x9568` | **`-0x6a8`** |
+| `__TEXT.__cstring` | `0x34b0a` | `0x35057` | **`+0x54d`** |
+| `__TEXT.__const` | `0x1a9e8` | `0x1ae88` | **`+0x4a0`** |
+| `__AUTH_CONST.__const` | `0x19648` | `0x19ab8` | **`+0x470`** |
+| `__TEXT.__swift5_typeref` | `0x17262` | `0x1747a` | **`+0x218`** |
+| `__DATA.__bss` | `0x1a020` | `0x1a1e0` | **`+0x1c0`** |
+| `__DATA.__data` | `0x14648` | `0x14748` | **`+0x100`** |
+| `__AUTH_CONST.__objc_const` | `0x83ee8` | `0x83fe0` | **`+0xf8`** |
+| `__AUTH.__objc_data` | `0x190d0` | `0x18ff0` | **`-0xe0`** |
+| `__DATA_DIRTY.__objc_data` | `0x2238` | `0x2318` | **`+0xe0`** |
+| `__TEXT.__unwind_info` | `0x18df8` | `0x18d30` | **`-0xc8`** |
+| `__TEXT.__swift5_capture` | `0x57c8` | `0x5888` | **`+0xc0`** |
+| `__TEXT.__constg_swiftt` | `0xb0a4` | `0xb144` | **`+0xa0`** |
+| `__TEXT.__swift5_fieldmd` | `0x73f8` | `0x747c` | **`+0x84`** |
+| `__TEXT.__objc_methlist` | `0x4f6bc` | `0x4f73c` | **`+0x80`** |
+| `__DATA_DIRTY.__data` | `0x250` | `0x2c0` | **`+0x70`** |
+| `__TEXT.__swift5_reflstr` | `0x8a07` | `0x8a57` | **`+0x50`** |
+| `__TEXT.__swift_as_cont` | `0x820` | `0x7d0` | **`-0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x8934` | `0x8978` | **`+0x44`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2a188` | `0x2a1c8` | **`+0x40`** |
+| `__TEXT.__swift_as_ret` | `0x3b8` | `0x390` | **`-0x28`** |
+| `__AUTH.__data` | `0x5218` | `0x51f8` | **`-0x20`** |
+| `__DATA.__common` | `0x360` | `0x350` | **`-0x10`** |
+| `__DATA.__objc_ivar` | `0x5b5c` | `0x5b6c` | **`+0x10`** |
+| `__DATA_CONST.__objc_arraydata` | `0x14f8` | `0x1508` | **`+0x10`** |
+| `__DATA_DIRTY.__common` | `—` | `0x10` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x300` | `0x310` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0xd00` | `0xd0c` | **`+0xc`** |
+| `__TEXT.__oslogstring` | `0x15466` | `0x1545d` | **`-0x9`** |
+| `__DATA_CONST.__got` | `0x58b0` | `0x58a8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -916.40.110.0.0
--  __TEXT.__text: 0x58134c
--  __TEXT.__objc_methlist: 0x4f6bc
--  __TEXT.__const: 0x1a9e8
 +916.45.110.0.0
-+  __TEXT.__text: 0x5830dc
-+  __TEXT.__objc_methlist: 0x4f73c
-+  __TEXT.__const: 0x1ae88
-   __TEXT.__dlopen_cstrs: 0x69b
--  __TEXT.__swift5_typeref: 0x17262
--  __TEXT.__constg_swiftt: 0xb0a4
-+  __TEXT.__swift5_typeref: 0x1747a
-+  __TEXT.__constg_swiftt: 0xb144
-   __TEXT.__swift5_builtin: 0x744
--  __TEXT.__swift5_reflstr: 0x8a07
--  __TEXT.__swift5_fieldmd: 0x73f8
-+  __TEXT.__swift5_reflstr: 0x8a57
-+  __TEXT.__swift5_fieldmd: 0x747c
-   __TEXT.__swift5_assocty: 0x1930
--  __TEXT.__cstring: 0x34b0a
--  __TEXT.__swift5_capture: 0x57c8
--  __TEXT.__swift5_proto: 0xd00
-+  __TEXT.__cstring: 0x35057
-+  __TEXT.__swift5_capture: 0x5888
-+  __TEXT.__swift5_proto: 0xd0c
-   __TEXT.__swift5_types: 0x794
-   __TEXT.__swift5_protos: 0xa8
--  __TEXT.__swift_as_entry: 0x300
--  __TEXT.__swift_as_ret: 0x3b8
--  __TEXT.__swift_as_cont: 0x820
--  __TEXT.__oslogstring: 0x15466
-+  __TEXT.__swift_as_entry: 0x310
-+  __TEXT.__swift_as_ret: 0x390
-+  __TEXT.__swift_as_cont: 0x7d0
-+  __TEXT.__oslogstring: 0x1545d
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__gcc_except_tab: 0x8934
-+  __TEXT.__gcc_except_tab: 0x8978
-   __TEXT.__ustring: 0x146
--  __TEXT.__unwind_info: 0x1e458
--  __TEXT.__eh_frame: 0x9c30
-+  __TEXT.__unwind_info: 0x1e3a8
-+  __TEXT.__eh_frame: 0x9568
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist2: 0x10
-   __DATA_CONST.__objc_protolist: 0x1420
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2a188
-+  __DATA_CONST.__objc_selrefs: 0x2a1c8
-   __DATA_CONST.__objc_protorefs: 0x508
-   __DATA_CONST.__objc_superrefs: 0x10a8
-   __DATA_CONST.__vfx_script_tbl: 0x10
--  __DATA_CONST.__objc_arraydata: 0x14f8
--  __DATA_CONST.__got: 0x58b0
--  __AUTH_CONST.__const: 0x19648
-+  __DATA_CONST.__objc_arraydata: 0x1508
-+  __DATA_CONST.__got: 0x58a8
-+  __AUTH_CONST.__const: 0x19ab8
-   __AUTH_CONST.__cfstring: 0x25e00
--  __AUTH_CONST.__objc_const: 0x83ee8
-+  __AUTH_CONST.__objc_const: 0x83fe0
-   __AUTH_CONST.__objc_arrayobj: 0xde0
-   __AUTH_CONST.__objc_intobj: 0x1560
-   __AUTH_CONST.__objc_dictobj: 0x398
-   __AUTH_CONST.__objc_doubleobj: 0x210
-   __AUTH_CONST.__auth_got: 0x5670
--  __AUTH.__objc_data: 0x190d0
--  __AUTH.__data: 0x5218
--  __DATA.__objc_ivar: 0x5b5c
--  __DATA.__data: 0x14648
-+  __AUTH.__objc_data: 0x18ff0
-+  __AUTH.__data: 0x51f8
-+  __DATA.__objc_ivar: 0x5b6c
-+  __DATA.__data: 0x14748
-   __DATA.__objc_stublist: 0x28
--  __DATA.__common: 0x360
--  __DATA_DIRTY.__objc_data: 0x2238
--  __DATA_DIRTY.__data: 0x250
-+  __DATA.__common: 0x350
-+  __DATA_DIRTY.__objc_data: 0x2318
-+  __DATA_DIRTY.__data: 0x2c0
-   __DATA_DIRTY.__bss: 0x10
-+  __DATA_DIRTY.__common: 0x10
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AVKit.framework/AVKit
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 42607
--  Symbols:   67241
+-  Symbols:   48829
 -  CStrings:  7989
-+  Functions: 42638
-+  Symbols:   67295
++  Functions: 42642
++  Symbols:   48877
 +  CStrings:  8012
- 
 Symbols:
 + -[PUCleanupToolController safeAreaLayoutGuide]
 + -[PUImportViewController presentViewController:animated:completion:]
@@ -531,13 +478,6 @@ Symbols:
 + _get_witness_table 10AppIntents22IntentParameterSummaryVy15PhotosUIPrivate06MarkupC0VGAA0dE0HPyHC
 + _get_witness_table 10AppIntents22IntentParameterSummaryVy15PhotosUIPrivate07CleanupC0VGAA0dE0HPyHC
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAcAEAdeF_Qrqd___SbyyctSQRd__lFQOyAcAEAdeF_Qrqd___SbyyctSQRd__lFQOyAA5GroupVyAA19_ConditionalContentVyAA7SectionVyAA4TextVAcAE11pickerStyleyQrqd__AA06PickerN0Rd__lFQOyAcAE12labelsHiddenQryFQOyAA0O0VyAN15PhotosUIPrivate18CustomDurationType33_242D7D8008C7D3C577649B60D54B7408LLOAA7ForEachVySayAWGAwNGG_Qo__AA06InlineoN0VQo_ANGALyAnT05Storyu6SliderkC0VAA05EmptyC0VGGG_AWQo__SdQo__SbQo_HO
-+ _objc_msgSend$_finishPlaybackEndTeardownForGeneration:
-+ _objc_msgSend$performBackgroundEditRequestWithAssets:adjustments:completionHandler:
-+ _objc_msgSend$performEditRequestWithAdjustments:completionHandler:
-+ _objc_msgSend$playbackGeneration
-+ _objc_msgSend$presentedByImportViewController
-+ _objc_msgSend$setPlaybackGeneration:
-+ _objc_msgSend$setPresentedByImportViewController:
 + _symbolic _____ 15PhotosUIPrivate30StoryDurationSliderSectionViewV
 + _symbolic _____ 15PhotosUIPrivate30StoryDurationSliderSectionViewV0D7Element33_242D7D8008C7D3C577649B60D54B7408LLO
 + _symbolic _____y_____G 10AppIntents16EntityCollectionV 12PhotosUICore05AssetC0V
@@ -989,7 +929,6 @@ Symbols:
 - _associated conformance 15PhotosUIPrivate30StoryDurationSliderSectionView33_242D7D8008C7D3C577649B60D54B7408LLV0D7ElementOSHAASQ
 - _associated conformance 15PhotosUIPrivate30StoryDurationSliderSectionView33_242D7D8008C7D3C577649B60D54B7408LLV7SwiftUI0G0AA4BodyAeFP_AeF
 - _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAcAEAdeF_Qrqd___SbyyctSQRd__lFQOyAcAEAdeF_Qrqd___SbyyctSQRd__lFQOyAA5GroupVyAA19_ConditionalContentVyAA7SectionVyAA4TextVAcAE11pickerStyleyQrqd__AA06PickerN0Rd__lFQOyAcAE12labelsHiddenQryFQOyAA0O0VyAN15PhotosUIPrivate18CustomDurationType33_242D7D8008C7D3C577649B60D54B7408LLOAA7ForEachVySayAWGAwNGG_Qo__AA06InlineoN0VQo_ANGALyAnT05Storyu6SliderkC0AVLLVAA05EmptyC0VGGG_AWQo__SdQo__SbQo_HO
-- _objc_msgSend$performEditRequestWithAssets:adjustments:completionHandler:
 - _symbolic _____ 15PhotosUIPrivate30StoryDurationSliderSectionView33_242D7D8008C7D3C577649B60D54B7408LLV
 - _symbolic _____ 15PhotosUIPrivate30StoryDurationSliderSectionView33_242D7D8008C7D3C577649B60D54B7408LLV0D7ElementO
 - _symbolic _____ySay_____GG 10AppIntents15IntentParameterC 12PhotosUICore11AssetEntityV

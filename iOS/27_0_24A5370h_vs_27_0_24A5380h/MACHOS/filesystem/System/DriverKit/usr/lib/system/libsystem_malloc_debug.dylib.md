@@ -2,34 +2,33 @@
 
 > `/System/DriverKit/usr/lib/system/libsystem_malloc_debug.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf03fc` | `0xf0860` | **`+0x464`** |
+| `__TEXT.__cstring` | `0x3073d` | `0x30b45` | **`+0x408`** |
+| `__TEXT.__unwind_info` | `0x8f0` | `0x8e8` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__AUTH.__data`
+- `__AUTH.__v_zone`
+- `__AUTH_CONST.__const`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__dof_magmalloc`
+- `__TEXT.__eh_frame`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xf03fc
-+  __TEXT.__text: 0xf0860
-   __TEXT.__const: 0x69f
--  __TEXT.__cstring: 0x3073d
-+  __TEXT.__cstring: 0x30b45
-   __TEXT.__dof_magmalloc: 0x8c7
--  __TEXT.__unwind_info: 0x8f0
-+  __TEXT.__unwind_info: 0x8e8
-   __TEXT.__eh_frame: 0x48
-   __TEXT.__auth_stubs: 0x790
-   __DATA_CONST.__const: 0x908
+-886.0.2.0.0
++886.0.4.0.0
 
-   - /System/DriverKit/usr/lib/system/libsystem_pthread.dylib
-   Functions: 1215
-   Symbols:   1519
 -  CStrings:  1620
 +  CStrings:  1629
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__dof_magmalloc : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__v_zone : content changed
 Functions:
 ~ __xzm_reclaim_sync_and_resize : 204 -> 216
 ~ __xzm_segment_group_segment_is_valid : 3328 -> 3380
@@ -779,5 +778,4 @@ CStrings:
 - "BUG IN LIBMALLOC: malloc assertion \"xzone_count <= UINT8_MAX\" failed (/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/libmalloc_driverkit/src/xzone_malloc/xzone_malloc.c:8803)"
 - "BUG IN LIBMALLOC: malloc assertion \"zone\" failed (/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/libmalloc_driverkit/src/xzone_malloc/xzone_introspect.c:958)"
 - "BUG IN LIBMALLOC: malloc assertion \"zone->xzz_slot_count == _xzm_get_limit_allocation_index(zone->xzz_max_slot_config)\" failed (/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/libmalloc_driverkit/src/xzone_malloc/xzone_malloc.c:8381)"
-
 ```

@@ -2,80 +2,39 @@
 
 > `/usr/lib/usd/libusd_ms.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x275608c` | `0x27576d4` | **`+0x1648`** |
+| `__TEXT.__cstring` | `0x2b1e9c` | `0x2b244c` | **`+0x5b0`** |
+| `__TEXT.__oslogstring` | `0x1efba` | `0x1f402` | **`+0x448`** |
+| `__AUTH_CONST.__const` | `0x1307e0` | `0x130770` | **`-0x70`** |
+| `__TEXT.__unwind_info` | `0x112b20` | `0x112b80` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0x25d488` | `0x25d4e4` | **`+0x5c`** |
+| `__TEXT.__eh_frame` | `0x3cb38` | `0x3caf8` | **`-0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x1b48` | `0x1b28` | **`-0x20`** |
+| `__AUTH_CONST.__weak_auth_got` | `0xb228` | `0xb248` | **`+0x20`** |
+| `__DATA.__data` | `0x550f8` | `0x55118` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0xd988` | `0xd9a8` | **`+0x20`** |
+| `__TEXT.__const` | `0x62cd80` | `0x62cda0` | **`+0x20`** |
+| `__AUTH.__tf_func` | `0x39a8` | `0x39c0` | **`+0x18`** |
+| `__DATA.__bss` | `0x26e4f0` | `0x26e500` | **`+0x10`** |
+| `__DATA.__common` | `0x5ff8` | `0x6000` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -24.1.31.0.0
--  __TEXT.__text: 0x26c297c
--  __TEXT.__gcc_except_tab: 0x25d488
--  __TEXT.__const: 0x62cd80
--  __TEXT.__cstring: 0x2b1e9c
--  __TEXT.__oslogstring: 0x1efba
 +24.1.32.0.0
-+  __TEXT.__text: 0x26c3fe0
-+  __TEXT.__gcc_except_tab: 0x25d4e4
-+  __TEXT.__const: 0x62cda0
-+  __TEXT.__cstring: 0x2b244c
-+  __TEXT.__oslogstring: 0x1f402
-   __TEXT.__swift5_typeref: 0x5f12
-   __TEXT.__constg_swiftt: 0x7980
-   __TEXT.__swift5_reflstr: 0x4af9
 
-   __TEXT.__swift5_protos: 0xb0
-   __TEXT.__swift5_types2: 0x1c
-   __TEXT.__swift5_capture: 0x18c
--  __TEXT.__unwind_info: 0x12d538
--  __TEXT.__eh_frame: 0x424e8
-+  __TEXT.__unwind_info: 0x12d590
-+  __TEXT.__eh_frame: 0x424a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xd988
-+  __DATA_CONST.__const: 0xd9a8
-   __DATA_CONST.__objc_classlist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x1ef0
-   __DATA_CONST.__objc_selrefs: 0x888
-   __DATA_CONST.__objc_arraydata: 0x10
-   __DATA_CONST.__got: 0x8d8
--  __AUTH_CONST.__const: 0x1307e0
-+  __AUTH_CONST.__const: 0x130770
-   __AUTH_CONST.__cfstring: 0x540
-   __AUTH_CONST.__objc_const: 0x670
--  __AUTH_CONST.__weak_auth_got: 0xb228
-+  __AUTH_CONST.__weak_auth_got: 0xb248
-   __AUTH_CONST.__objc_intobj: 0x210
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x1b48
-+  __AUTH_CONST.__auth_got: 0x1b28
-   __AUTH.__data: 0x5f48
-   __AUTH.__mtlx_registry: 0x2c0
-   __AUTH.pxrctor: 0x40
--  __AUTH.__tf_func: 0x39a8
-+  __AUTH.__tf_func: 0x39c0
-   __AUTH.__thread_vars: 0x2d0
-   __AUTH.__thread_data: 0x4
-   __AUTH.__thread_bss: 0x44150
--  __DATA.__data: 0x550f8
--  __DATA.__common: 0x5ff8
-+  __DATA.__data: 0x55118
-+  __DATA.__common: 0x6000
-   __DATA_DIRTY.__mtlx_registry: 0x0
-   __DATA_DIRTY.__tf_func: 0x0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_errno.dylib
-   - /usr/lib/swift/libswiftos.dylib
--  Functions: 201011
+-  Functions: 201004
 -  Symbols:   54423
 -  CStrings:  31349
-+  Functions: 201016
++  Functions: 201009
 +  Symbols:   54424
 +  CStrings:  31375
- 
 Symbols:
 + __Z57__retain__ZN32pxrInternal__aapl__pxrReserved__9SdfBufferEPN32pxrInternal__aapl__pxrReserved__9SdfBufferE
 + __Z58__release__ZN32pxrInternal__aapl__pxrReserved__9SdfBufferEPN32pxrInternal__aapl__pxrReserved__9SdfBufferE
@@ -106,6 +65,7 @@ CStrings:
 + "Ptex face %d tile (%d x %d) does not fit in the texture page (%d x %d); skipping to avoid an out-of-bounds write."
 + "Ptex face resolution log2 (%d x %d) exceeds the maximum packable size (%d); rejecting face by treating it as 1x1."
 + "SDF_TEXT_FILE_FORMAT_MAX_NESTING_DEPTH"
++ "Sep 13 2026"
 + "Unable to open private inspection stage for variant enumeration; skipping cross-layer GeomSubset check for non-default variants."
 + "Value nesting too deep (exceeds maximum depth of %zu). Increase SDF_TEXT_FILE_FORMAT_MAX_NESTING_DEPTH if this input is trusted."
 + "[SdfZipFile] asset (size=%zu) is not readable via the no-mmap fallback path"
@@ -131,6 +91,7 @@ CStrings:
 - "01:18:52)"
 - "Could not allocate asset buffer"
 - "Could not read asset into buffer"
+- "Sep  1 2026"
 - "[diag] _processTexture skipped: res="
 - "std::pair<int, bool> pxrInternal__aapl__pxrReserved__::_CountTriangles(const SdfPath &, const VtIntArray &, const VtIntArray &)"
 ```

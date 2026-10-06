@@ -2,123 +2,72 @@
 
 > `/System/Library/DataClassMigrators/BuddyMigrator.migrator/BuddyMigrator`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__swift5_protos`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x27edc` | `0x2b034` | **`+0x3158`** |
+| `__DATA.__objc_const` | `0x3748` | `0x3ac0` | **`+0x378`** |
+| `__TEXT.__objc_methname` | `0x4985` | `0x4cf3` | **`+0x36e`** |
+| `__TEXT.__const` | `0xce8` | `0xf38` | **`+0x250`** |
+| `__DATA_CONST.__const` | `0x1068` | `0x12a0` | **`+0x238`** |
+| `__DATA.__objc_data` | `0x1738` | `0x1958` | **`+0x220`** |
+| `__TEXT.__eh_frame` | `0xdfc` | `0x1014` | **`+0x218`** |
+| `__TEXT.__oslogstring` | `0x2c11` | `0x2df1` | **`+0x1e0`** |
+| `__TEXT.__objc_methlist` | `0x1a70` | `0x1c30` | **`+0x1c0`** |
+| `__DATA.__bss` | `0x650` | `0x7d0` | **`+0x180`** |
+| `__TEXT.__objc_stubs` | `0x2f80` | `0x30e0` | **`+0x160`** |
+| `__DATA.__data` | `0x1018` | `0x1170` | **`+0x158`** |
+| `__TEXT.__constg_swiftt` | `0x998` | `0xab4` | **`+0x11c`** |
+| `__TEXT.__unwind_info` | `0xbc8` | `0xcc0` | **`+0xf8`** |
+| `__TEXT.__swift5_capture` | `0x3cc` | `0x4b4` | **`+0xe8`** |
+| `__TEXT.__auth_stubs` | `0x10a0` | `0x1180` | **`+0xe0`** |
+| `__TEXT.__cstring` | `0xfc5` | `0x10a2` | **`+0xdd`** |
+| `__TEXT.__swift5_typeref` | `0xac0` | `0xb9c` | **`+0xdc`** |
+| `__TEXT.__objc_classname` | `0xcea` | `0xd9a` | **`+0xb0`** |
+| `__TEXT.__objc_methtype` | `0xcd4` | `0xd75` | **`+0xa1`** |
+| `__DATA.__objc_selrefs` | `0x1078` | `0x1118` | **`+0xa0`** |
+| `__TEXT.__swift5_reflstr` | `0x486` | `0x4f7` | **`+0x71`** |
+| `__DATA_CONST.__auth_got` | `0x860` | `0x8d0` | **`+0x70`** |
+| `__TEXT.__swift5_fieldmd` | `0x578` | `0x5e4` | **`+0x6c`** |
+| `__DATA_CONST.__auth_ptr` | `0x180` | `0x1b0` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x480` | `0x4a8` | **`+0x28`** |
+| `__TEXT.__swift_as_cont` | `0x88` | `0xa8` | **`+0x20`** |
+| `__DATA_CONST.__objc_protolist` | `0x128` | `0x140` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x60` | `0x78` | **`+0x18`** |
+| `__TEXT.__swift_as_entry` | `0x84` | `0x9c` | **`+0x18`** |
+| `__TEXT.__swift_as_ret` | `0x88` | `0xa0` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x50` | `0x64` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x148` | `0x158` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0xb0` | `0xc0` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x38` | `0x44` | **`+0xc`** |
+| `__TEXT.__swift5_types` | `0x78` | `0x84` | **`+0xc`** |
+| `__DATA.__objc_ivar` | `0x110` | `0x114` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__cfstring`
 - `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_superrefs`
 - `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__swift5_protos`
+
+### Other Changes
 
 ```diff
 
 -5409.0.0.0.0
--  __TEXT.__text: 0x27edc
--  __TEXT.__auth_stubs: 0x10a0
--  __TEXT.__objc_stubs: 0x2f80
--  __TEXT.__objc_methlist: 0x1a70
--  __TEXT.__const: 0xce8
 +5411.0.0.0.0
-+  __TEXT.__text: 0x2b034
-+  __TEXT.__auth_stubs: 0x1180
-+  __TEXT.__objc_stubs: 0x30e0
-+  __TEXT.__objc_methlist: 0x1c30
-+  __TEXT.__const: 0xf38
-   __TEXT.__gcc_except_tab: 0x2b8
--  __TEXT.__objc_methname: 0x4985
--  __TEXT.__cstring: 0xfc5
--  __TEXT.__oslogstring: 0x2c11
--  __TEXT.__objc_classname: 0xcea
--  __TEXT.__objc_methtype: 0xcd4
-+  __TEXT.__objc_methname: 0x4cf3
-+  __TEXT.__cstring: 0x10a2
-+  __TEXT.__oslogstring: 0x2df1
-+  __TEXT.__objc_classname: 0xd9a
-+  __TEXT.__objc_methtype: 0xd75
-   __TEXT.__dlopen_cstrs: 0x2ac
--  __TEXT.__constg_swiftt: 0x998
--  __TEXT.__swift5_typeref: 0xac0
--  __TEXT.__swift5_reflstr: 0x486
--  __TEXT.__swift5_fieldmd: 0x578
--  __TEXT.__swift5_builtin: 0x50
--  __TEXT.__swift5_assocty: 0x60
--  __TEXT.__swift5_capture: 0x3cc
--  __TEXT.__swift5_proto: 0x38
--  __TEXT.__swift5_types: 0x78
-+  __TEXT.__constg_swiftt: 0xab4
-+  __TEXT.__swift5_typeref: 0xb9c
-+  __TEXT.__swift5_builtin: 0x64
-+  __TEXT.__swift5_reflstr: 0x4f7
-+  __TEXT.__swift5_assocty: 0x78
-+  __TEXT.__swift5_proto: 0x44
-+  __TEXT.__swift5_types: 0x84
-+  __TEXT.__swift5_fieldmd: 0x5e4
-+  __TEXT.__swift5_capture: 0x4b4
-   __TEXT.__swift5_protos: 0xc
--  __TEXT.__swift_as_entry: 0x84
--  __TEXT.__swift_as_ret: 0x88
--  __TEXT.__swift_as_cont: 0x88
--  __TEXT.__unwind_info: 0xbc8
--  __TEXT.__eh_frame: 0xdfc
--  __DATA_CONST.__const: 0x1068
-+  __TEXT.__swift_as_entry: 0x9c
-+  __TEXT.__swift_as_ret: 0xa0
-+  __TEXT.__swift_as_cont: 0xa8
-+  __TEXT.__unwind_info: 0xcc0
-+  __TEXT.__eh_frame: 0x1014
-+  __DATA_CONST.__const: 0x12a0
-   __DATA_CONST.__cfstring: 0xae0
--  __DATA_CONST.__objc_classlist: 0x148
-+  __DATA_CONST.__objc_classlist: 0x158
-   __DATA_CONST.__objc_catlist: 0x8
--  __DATA_CONST.__objc_protolist: 0x128
-+  __DATA_CONST.__objc_protolist: 0x140
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_protorefs: 0xb0
-+  __DATA_CONST.__objc_protorefs: 0xc0
-   __DATA_CONST.__objc_superrefs: 0x40
-   __DATA_CONST.__objc_intobj: 0x18
--  __DATA_CONST.__auth_got: 0x860
--  __DATA_CONST.__got: 0x480
--  __DATA_CONST.__auth_ptr: 0x180
--  __DATA.__objc_const: 0x3748
--  __DATA.__objc_selrefs: 0x1078
--  __DATA.__objc_ivar: 0x110
--  __DATA.__objc_data: 0x1738
--  __DATA.__data: 0x1018
--  __DATA.__bss: 0x650
-+  __DATA_CONST.__auth_got: 0x8d0
-+  __DATA_CONST.__got: 0x4a8
-+  __DATA_CONST.__auth_ptr: 0x1b0
-+  __DATA.__objc_const: 0x3ac0
-+  __DATA.__objc_selrefs: 0x1118
-+  __DATA.__objc_ivar: 0x114
-+  __DATA.__objc_data: 0x1958
-+  __DATA.__data: 0x1170
-+  __DATA.__bss: 0x7d0
-   __DATA.__common: 0x30
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/AppManagedFeatures.framework/AppManagedFeatures
 
-   - /System/Library/PrivateFrameworks/DMCEnrollmentLibrary.framework/DMCEnrollmentLibrary
-   - /System/Library/PrivateFrameworks/DataMigration.framework/DataMigration
-   - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
 +  - /System/Library/PrivateFrameworks/LockdownMode.framework/LockdownMode
-   - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
-   - /System/Library/PrivateFrameworks/MobileActivation.framework/MobileActivation
-   - /System/Library/PrivateFrameworks/MobileInstallation.framework/MobileInstallation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 906
 -  Symbols:   416
 -  CStrings:  1239
 +  Functions: 989
 +  Symbols:   421
 +  CStrings:  1289
- 
 Symbols:
 + _OBJC_CLASS_$__TtC13BuddyMigrator37BuddyCameraControlHardwareEligibility
 + _OBJC_METACLASS_$__TtC13BuddyMigrator37BuddyCameraControlHardwareEligibility

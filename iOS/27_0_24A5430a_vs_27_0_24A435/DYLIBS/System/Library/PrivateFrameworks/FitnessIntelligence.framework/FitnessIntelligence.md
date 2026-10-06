@@ -2,96 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/FitnessIntelligence.framework/FitnessIntelligence`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3dec2c` | `0x3e6384` | **`+0x7758`** |
+| `__TEXT.__cstring` | `0x3c422` | `0x3cf22` | **`+0xb00`** |
+| `__DATA.__bss` | `0x4cf10` | `0x4d710` | **`+0x800`** |
+| `__TEXT.__const` | `0x36f50` | `0x37670` | **`+0x720`** |
+| `__TEXT.__eh_frame` | `0x2088c` | `0x20c7c` | **`+0x3f0`** |
+| `__TEXT.__unwind_info` | `0x10568` | `0x10758` | **`+0x1f0`** |
+| `__AUTH.__data` | `0xa108` | `0xa2f0` | **`+0x1e8`** |
+| `__TEXT.__swift5_fieldmd` | `0xb518` | `0xb63c` | **`+0x124`** |
+| `__DATA.__data` | `0x93b0` | `0x94c0` | **`+0x110`** |
+| `__TEXT.__swift5_reflstr` | `0xb4be` | `0xb5ce` | **`+0x110`** |
+| `__AUTH_CONST.__const` | `0x1a288` | `0x1a380` | **`+0xf8`** |
+| `__TEXT.__swift5_typeref` | `0xb627` | `0xb6e7` | **`+0xc0`** |
+| `__TEXT.__constg_swiftt` | `0x940c` | `0x94c0` | **`+0xb4`** |
+| `__TEXT.__swift5_proto` | `0x2f30` | `0x2f74` | **`+0x44`** |
+| `__DATA_CONST.__const` | `0x1528` | `0x1568` | **`+0x40`** |
+| `__TEXT.__oslogstring` | `0x1768` | `0x17a8` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x1578` | `0x15b0` | **`+0x38`** |
+| `__AUTH_CONST.__objc_const` | `0x1720` | `0x1740` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x8f8` | `0x918` | **`+0x20`** |
+| `__TEXT.__swift5_capture` | `0xf10` | `0xf30` | **`+0x20`** |
+| `__TEXT.__swift5_assocty` | `0x3498` | `0x34b0` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0xd04` | `0xd14` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x520` | `0x528` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x3a0` | `0x3a4` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x30c` | `0x310` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
- 2027.0.77.1.3
--  __TEXT.__text: 0x3dec2c
-+  __TEXT.__text: 0x3e6384
-   __TEXT.__objc_methlist: 0x2f4
--  __TEXT.__const: 0x36f50
--  __TEXT.__cstring: 0x3c422
--  __TEXT.__swift5_typeref: 0xb627
--  __TEXT.__swift5_reflstr: 0xb4be
--  __TEXT.__swift5_assocty: 0x3498
--  __TEXT.__constg_swiftt: 0x940c
--  __TEXT.__swift5_fieldmd: 0xb518
-+  __TEXT.__const: 0x37670
-+  __TEXT.__cstring: 0x3cf22
-+  __TEXT.__swift5_typeref: 0xb6e7
-+  __TEXT.__swift5_reflstr: 0xb5ce
-+  __TEXT.__swift5_assocty: 0x34b0
-+  __TEXT.__constg_swiftt: 0x94c0
-+  __TEXT.__swift5_fieldmd: 0xb63c
-   __TEXT.__swift5_builtin: 0x168
--  __TEXT.__swift5_proto: 0x2f30
--  __TEXT.__swift5_types: 0xd04
--  __TEXT.__oslogstring: 0x1768
--  __TEXT.__swift5_capture: 0xf10
--  __TEXT.__swift_as_entry: 0x3a0
--  __TEXT.__swift_as_ret: 0x30c
-+  __TEXT.__swift5_proto: 0x2f74
-+  __TEXT.__swift5_types: 0xd14
-+  __TEXT.__oslogstring: 0x17a8
-+  __TEXT.__swift5_capture: 0xf30
-+  __TEXT.__swift_as_entry: 0x3a4
-+  __TEXT.__swift_as_ret: 0x310
-   __TEXT.__swift_as_cont: 0x758
-   __TEXT.__swift5_protos: 0xe0
-   __TEXT.__swift5_mpenum: 0x40
--  __TEXT.__unwind_info: 0x10568
--  __TEXT.__eh_frame: 0x2088c
-+  __TEXT.__unwind_info: 0x10758
-+  __TEXT.__eh_frame: 0x20c7c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1528
-+  __DATA_CONST.__const: 0x1568
-   __DATA_CONST.__objc_classlist: 0xa8
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x520
-+  __DATA_CONST.__objc_selrefs: 0x528
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__objc_superrefs: 0x10
--  __DATA_CONST.__got: 0x8f8
--  __AUTH_CONST.__const: 0x1a288
--  __AUTH_CONST.__objc_const: 0x1720
--  __AUTH_CONST.__auth_got: 0x1578
-+  __DATA_CONST.__got: 0x918
-+  __AUTH_CONST.__const: 0x1a380
-+  __AUTH_CONST.__objc_const: 0x1740
-+  __AUTH_CONST.__auth_got: 0x15b0
-   __AUTH.__objc_data: 0x510
--  __AUTH.__data: 0xa108
-+  __AUTH.__data: 0xa2f0
-   __DATA.__objc_ivar: 0x8
--  __DATA.__data: 0x93b0
-+  __DATA.__data: 0x94c0
-   __DATA.__common: 0x168
-   __DATA_DIRTY.__objc_data: 0x210
-   __DATA_DIRTY.__data: 0x7940
-
-   - /System/Library/Frameworks/WeatherKit.framework/WeatherKit
-   - /System/Library/Frameworks/WorkoutKit.framework/WorkoutKit
-   - /System/Library/Frameworks/_LocationEssentials.framework/_LocationEssentials
 +  - /System/Library/PrivateFrameworks/AppliedSensingFitness.framework/AppliedSensingFitness
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/Fitness.framework/Fitness
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 23074
--  Symbols:   5100
+-  Symbols:   4963
 -  CStrings:  1166
 +  Functions: 23238
-+  Symbols:   5125
++  Symbols:   4987
 +  CStrings:  1178
- 
 Symbols:
 + _FIIsTinkerVegaOrFitnessJunior
 + ___swift_get_extra_inhabitant_index.188Tm
@@ -114,7 +66,6 @@ Symbols:
 + _associated conformance 19FitnessIntelligence22ReadinessFactGeneratorV15QueryIdentifierOSHAASQ
 + _associated conformance 19FitnessIntelligence22ReadinessFactGeneratorVAA012WorkoutVoicedE0AA0D4TypeAaDP_AA16PromptFormatable
 + _associated conformance 19FitnessIntelligence22ReadinessFactGeneratorVAA012WorkoutVoicedE0AA15QueryIdentifierAaDP_AA0a7ContexthI0
-+ _objc_msgSend$boolForKey:
 + _symbolic Say_____G 19FitnessIntelligence13ReadinessFactV14TemplateStringO
 + _symbolic _____ 19FitnessIntelligence06Apple_a1_B17_ReadinessContextV
 + _symbolic _____ 19FitnessIntelligence13ReadinessFactV

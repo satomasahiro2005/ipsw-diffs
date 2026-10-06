@@ -2,121 +2,62 @@
 
 > `/System/Library/PrivateFrameworks/PassKitCore.framework/PassKitCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x900e28` | `0x9119bc` | **`+0x10b94`** |
+| `__AUTH_CONST.__cfstring` | `0x78de0` | `0x79a20` | **`+0xc40`** |
+| `__TEXT.__cstring` | `0x727d7` | `0x732ea` | **`+0xb13`** |
+| `__AUTH_CONST.__objc_const` | `0xcf8d8` | `0xd0310` | **`+0xa38`** |
+| `__AUTH_CONST.__const` | `0x26268` | `0x269a8` | **`+0x740`** |
+| `__TEXT.__oslogstring` | `0x3bb29` | `0x3c12d` | **`+0x604`** |
+| `__TEXT.__const` | `0x2d1a0` | `0x2d6f0` | **`+0x550`** |
+| `__TEXT.__objc_methlist` | `0x72340` | `0x72700` | **`+0x3c0`** |
+| `__AUTH.__data` | `0x5528` | `0x5818` | **`+0x2f0`** |
+| `__DATA.__bss` | `0x26468` | `0x26758` | **`+0x2f0`** |
+| `__DATA_CONST.__const` | `0x23260` | `0x23550` | **`+0x2f0`** |
+| `__TEXT.__unwind_info` | `0x1fb00` | `0x1fda0` | **`+0x2a0`** |
+| `__TEXT.__swift5_capture` | `0x4eec` | `0x512c` | **`+0x240`** |
+| `__TEXT.__swift5_fieldmd` | `0x7b60` | `0x7da0` | **`+0x240`** |
+| `__DATA_CONST.__objc_selrefs` | `0x24ff8` | `0x25218` | **`+0x220`** |
+| `__TEXT.__swift5_reflstr` | `0x644d` | `0x662d` | **`+0x1e0`** |
+| `__TEXT.__swift5_typeref` | `0x8ac8` | `0x8c78` | **`+0x1b0`** |
+| `__TEXT.__constg_swiftt` | `0x73c0` | `0x7554` | **`+0x194`** |
+| `__DATA.__data` | `0xa170` | `0xa280` | **`+0x110`** |
+| `__AUTH.__objc_data` | `0x22498` | `0x22598` | **`+0x100`** |
+| `__TEXT.__gcc_except_tab` | `0x6a08` | `0x6ae8` | **`+0xe0`** |
+| `__DATA.__objc_ivar` | `0x72b0` | `0x7314` | **`+0x64`** |
+| `__TEXT.__swift5_builtin` | `0x4ec` | `0x53c` | **`+0x50`** |
+| `__TEXT.__swift5_assocty` | `0xde0` | `0xe28` | **`+0x48`** |
+| `__DATA_CONST.__got` | `0x5380` | `0x53b8` | **`+0x38`** |
+| `__TEXT.__eh_frame` | `0x8968` | `0x89a0` | **`+0x38`** |
+| `__AUTH_CONST.__auth_got` | `0x2fb8` | `0x2fe8` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0x3e10` | `0x3e40` | **`+0x30`** |
+| `__TEXT.__swift5_types` | `0x7cc` | `0x7f4` | **`+0x28`** |
+| `__TEXT.__swift5_proto` | `0x13cc` | `0x13e8` | **`+0x1c`** |
+| `__AUTH_CONST.__objc_intobj` | `0x11b8` | `0x11d0` | **`+0x18`** |
+| `__TEXT.__swift5_mpenum` | `0x128` | `0x140` | **`+0x18`** |
+| `__DATA.__common` | `0xc49` | `0xc59` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x3140` | `0x3150` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x1308` | `0x1318` | **`+0x10`** |
+| `__DATA_DIRTY.__objc_ivar` | `0x1f30` | `0x1f40` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x5c8` | `0x5d0` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x6c` | `0x68` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1689.3.0.0.0
--  __TEXT.__text: 0x900e28
--  __TEXT.__objc_methlist: 0x72340
--  __TEXT.__const: 0x2d1a0
--  __TEXT.__swift5_typeref: 0x8ac8
--  __TEXT.__cstring: 0x727d7
--  __TEXT.__constg_swiftt: 0x73c0
--  __TEXT.__swift5_reflstr: 0x644d
--  __TEXT.__swift5_fieldmd: 0x7b60
--  __TEXT.__swift5_builtin: 0x4ec
--  __TEXT.__swift5_assocty: 0xde0
--  __TEXT.__swift5_proto: 0x13cc
--  __TEXT.__swift5_types: 0x7cc
--  __TEXT.__swift5_capture: 0x4eec
--  __TEXT.__oslogstring: 0x3bb29
 +1695.1.2.0.0
-+  __TEXT.__text: 0x9119bc
-+  __TEXT.__objc_methlist: 0x72700
-+  __TEXT.__const: 0x2d6f0
-+  __TEXT.__swift5_typeref: 0x8c78
-+  __TEXT.__cstring: 0x732ea
-+  __TEXT.__constg_swiftt: 0x7554
-+  __TEXT.__swift5_reflstr: 0x662d
-+  __TEXT.__swift5_fieldmd: 0x7da0
-+  __TEXT.__swift5_builtin: 0x53c
-+  __TEXT.__swift5_assocty: 0xe28
-+  __TEXT.__swift5_proto: 0x13e8
-+  __TEXT.__swift5_types: 0x7f4
-+  __TEXT.__swift5_capture: 0x512c
-+  __TEXT.__oslogstring: 0x3c12d
-   __TEXT.__swift_as_entry: 0x1a0
-   __TEXT.__swift_as_ret: 0x1c4
-   __TEXT.__swift_as_cont: 0x3b8
--  __TEXT.__swift5_protos: 0x6c
--  __TEXT.__swift5_mpenum: 0x128
-+  __TEXT.__swift5_protos: 0x68
-+  __TEXT.__swift5_mpenum: 0x140
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__gcc_except_tab: 0x6a08
-+  __TEXT.__gcc_except_tab: 0x6ae8
-   __TEXT.__ustring: 0x1e6c
--  __TEXT.__unwind_info: 0x1fb00
--  __TEXT.__eh_frame: 0x8968
-+  __TEXT.__unwind_info: 0x1fda0
-+  __TEXT.__eh_frame: 0x89a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x23260
--  __DATA_CONST.__objc_classlist: 0x3e10
-+  __DATA_CONST.__const: 0x23550
-+  __DATA_CONST.__objc_classlist: 0x3e40
-   __DATA_CONST.__objc_catlist: 0x110
--  __DATA_CONST.__objc_protolist: 0x5c8
-+  __DATA_CONST.__objc_protolist: 0x5d0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x24ff8
-+  __DATA_CONST.__objc_selrefs: 0x25218
-   __DATA_CONST.__objc_protorefs: 0x260
--  __DATA_CONST.__objc_superrefs: 0x3140
-+  __DATA_CONST.__objc_superrefs: 0x3150
-   __DATA_CONST.__objc_arraydata: 0x2810
--  __DATA_CONST.__got: 0x5380
--  __AUTH_CONST.__const: 0x26268
--  __AUTH_CONST.__cfstring: 0x78de0
--  __AUTH_CONST.__objc_const: 0xcf8d8
-+  __DATA_CONST.__got: 0x53b8
-+  __AUTH_CONST.__const: 0x269a8
-+  __AUTH_CONST.__cfstring: 0x79a20
-+  __AUTH_CONST.__objc_const: 0xd0310
-   __AUTH_CONST.__objc_arrayobj: 0xd20
--  __AUTH_CONST.__objc_intobj: 0x11b8
-+  __AUTH_CONST.__objc_intobj: 0x11d0
-   __AUTH_CONST.__objc_dictobj: 0x15b8
-   __AUTH_CONST.__objc_doubleobj: 0x2b0
--  __AUTH_CONST.__auth_got: 0x2fb8
--  __AUTH.__objc_data: 0x22498
--  __AUTH.__data: 0x5528
-+  __AUTH_CONST.__auth_got: 0x2fe8
-+  __AUTH.__objc_data: 0x22598
-+  __AUTH.__data: 0x5818
-   __AUTH.__thread_vars: 0x18
-   __AUTH.__thread_bss: 0x8
--  __DATA.__objc_ivar: 0x72b0
--  __DATA.__data: 0xa170
--  __DATA.__bss: 0x26468
--  __DATA.__common: 0xc49
--  __DATA_DIRTY.__objc_ivar: 0x1f30
-+  __DATA.__objc_ivar: 0x7314
-+  __DATA.__data: 0xa280
-+  __DATA.__bss: 0x26758
-+  __DATA.__common: 0xc59
-+  __DATA_DIRTY.__objc_ivar: 0x1f40
-   __DATA_DIRTY.__objc_data: 0x5eb0
-   __DATA_DIRTY.__data: 0x180
--  __DATA_DIRTY.__bss: 0x1308
-+  __DATA_DIRTY.__bss: 0x1318
-   __DATA_DIRTY.__common: 0x30
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 55447
--  Symbols:   91059
+-  Symbols:   78741
 -  CStrings:  21542
 +  Functions: 55738
-+  Symbols:   91386
++  Symbols:   79022
 +  CStrings:  21676
- 
 Symbols:
 + +[PKAnalyticsReporter clearCurrentContactlessInterfaceSource]
 + +[PKAnalyticsReporter getCurrentContactlessInterfaceSource:]
@@ -490,72 +431,6 @@ Symbols:
 + _get_enum_tag_for_layout_string 11PassKitCore23OnboardingConfigurationV7FeatureV8IconTypeO
 + _get_enum_tag_for_layout_string 11PassKitCore35ProvisioningStepSourceAuthorizationC0F10AuthResultO
 + _get_enum_tag_for_layout_string 11PassKitCore44ProvisioningExistingCardAuthorizationSessionC9AuthStateO
-+ _objc_msgSend$_cachedAssetWithQueryResults:comparator:
-+ _objc_msgSend$_injectAdditionalApprovedValuesIntoEvent:state:
-+ _objc_msgSend$_invalidDataStateParamWithError:errorStatus:
-+ _objc_msgSend$_outstandingLocalWatchShares
-+ _objc_msgSend$_passUnavailableDescriptionForAction:completion:
-+ _objc_msgSend$_recomputeFooterSourceDerivedFields
-+ _objc_msgSend$_recomputePresentationLayerFields
-+ _objc_msgSend$_requestDescriptionForAction:completion:
-+ _objc_msgSend$_requestDescriptionForPassState:action:completion:
-+ _objc_msgSend$_retrieveAssetWithQuery:isDiscretionary:comparator:timeout:catalogExpirationDays:completion:
-+ _objc_msgSend$additionalAnalyticsTransactionAuthorizationValues
-+ _objc_msgSend$additionalApprovedKeys
-+ _objc_msgSend$automatedPairingEligibility
-+ _objc_msgSend$builderVersion
-+ _objc_msgSend$comparatorForBestInstalledAsset
-+ _objc_msgSend$comparatorForMostUpToDateAsset
-+ _objc_msgSend$compressedDataUsingAlgorithm:error:
-+ _objc_msgSend$consumeRedemptionToken
-+ _objc_msgSend$createInviteForShare:forCredential:authorization:deviceTransfer:completion:
-+ _objc_msgSend$createSharingInvitationsForKeyIdentifier:friendIdentifier:auth:deviceTransfer:ourBindingAttestation:config:completionHandler:
-+ _objc_msgSend$createVerificationRequestRecordForUniqueID:
-+ _objc_msgSend$currentRegionSupportsApplePay
-+ _objc_msgSend$decompressedDataUsingAlgorithm:error:
-+ _objc_msgSend$designerVersion
-+ _objc_msgSend$detailDescriptionWithEnvironment:matchingProduct:
-+ _objc_msgSend$dictionaryOfFormattedMultipleAmountTotalsByRealCurrency
-+ _objc_msgSend$displayStatus
-+ _objc_msgSend$displayableStringForDate:fromField:showYear:
-+ _objc_msgSend$displayableStringWithPassState:inContext:
-+ _objc_msgSend$errorForEligibilityResponse:isWatch:
-+ _objc_msgSend$errorWithTitleKey:messageKey:severity:recoveryTitleKey:recoveryURL:
-+ _objc_msgSend$fetchStateOfRelevancyPresentmentOfType:forPassWithUniqueIdentifier:replyHandler:
-+ _objc_msgSend$handleForPredicate:error:
-+ _objc_msgSend$handleInteractionWithRelevancyPresentmentOfType:forPassWithUniqueIdentifier:completionHandler:
-+ _objc_msgSend$hasReceiptData
-+ _objc_msgSend$hasRedemptionToken
-+ _objc_msgSend$initWithGroupsBySessionIdentifier:destinationDeviceType:destinationDeviceName:selectedCredentialCount:analyticsArchivedParentToken:
-+ _objc_msgSend$initWithPassUniqueID:
-+ _objc_msgSend$isForWatch
-+ _objc_msgSend$isImportableClassicApplePayTransaction
-+ _objc_msgSend$isOperatingSystemAtLeastVersion:
-+ _objc_msgSend$isPrecursorReprovisionCredential
-+ _objc_msgSend$isRunning
-+ _objc_msgSend$overrideStateOfRelevancyPresentmentOfType:forPassWithUniqueIdentifier:toState:completionHandler:
-+ _objc_msgSend$precursorPassStateForPassTypeIdentifier:passSerialNumber:completion:
-+ _objc_msgSend$predicateMatchingBundleIdentifier:
-+ _objc_msgSend$provisioningProximityVerificationEnabledForRegion:
-+ _objc_msgSend$receiptDataCompressed
-+ _objc_msgSend$remoteNetworkRequestHostDeviceModel
-+ _objc_msgSend$removeVerificationRequestRecordForPass:
-+ _objc_msgSend$revokeOutstandingLocalWatchSharesWithCompletion:
-+ _objc_msgSend$setAdditionalApprovedKeys:
-+ _objc_msgSend$setBuilderVersion:
-+ _objc_msgSend$setCompletedDeviceUserAgent:
-+ _objc_msgSend$setDesignerVersion:
-+ _objc_msgSend$setDisableSearchInSpotlight:
-+ _objc_msgSend$setPrecursorPassState:forPassTypeIdentifier:passSerialNumber:completion:
-+ _objc_msgSend$setReceiptDataCompressed:
-+ _objc_msgSend$setRedemptionToken:
-+ _objc_msgSend$setRemoteNetworkRequestHostDeviceModel:
-+ _objc_msgSend$shouldShowYearForFooterFields
-+ _objc_msgSend$startOfDayForDate:
-+ _objc_msgSend$successfulAuthenticationMethod
-+ _objc_msgSend$updateVerificationRequestRecordForPass:usingTransform:
-+ _objc_msgSend$updateVerificationRequestRecordForUniqueID:usingTransform:
-+ _objc_msgSend$valueTypeForeignReference
 + _symbolic SDySSSo19PKPaymentCredentialCG
 + _symbolic SS4text______3urlt 10Foundation3URLV
 + _symbolic SS4text______3urltSg 10Foundation3URLV
@@ -730,26 +605,6 @@ Symbols:
 - ___unnamed_41
 - _get_enum_tag_for_layout_string 11PassKitCore22MultimodalReceiptErrorO
 - _lockCollections
-- _objc_msgSend$_cachedAssetWithQueryResults:sortDescriptors:
-- _objc_msgSend$_displayableStringForDate:fromField:
-- _objc_msgSend$_purgeAssets:
-- _objc_msgSend$_recomputeEffectiveSubtitles
-- _objc_msgSend$_retrieveAssetWithQuery:maxCompatibleVersion:isDiscretionary:sortDescriptors:timeout:catalogExpirationDays:completion:
-- _objc_msgSend$addVerificationRequestRecord:forUniqueID:
-- _objc_msgSend$automatedPairingConsented
-- _objc_msgSend$createInviteForShare:forCredential:authorization:completion:
-- _objc_msgSend$createSharingInvitationsForKeyIdentifier:friendIdentifier:auth:ourBindingAttestation:config:completionHandler:
-- _objc_msgSend$filteredPaymentSetupProductModel:mobileCarrierRegion:deviceRegion:cardOnFiles:
-- _objc_msgSend$initWithGroupsBySessionIdentifier:destinationDeviceType:destinationDeviceName:selectedCredentialCount:
-- _objc_msgSend$noteInteractionWithPresentmentOfType:containingPassUniqueIdentifier:completion:
-- _objc_msgSend$overrideStateOfRelevancyPresentmentOfType:containingPassUniqueIdentifier:newState:completion:
-- _objc_msgSend$provisioningProximityVerificationInSetupAssistantEnabledForRegion:
-- _objc_msgSend$removeVerificationRequestRecord:
-- _objc_msgSend$requestStateOfRelevancyPresentmentOfType:containingPassUniqueIdentifier:completion:
-- _objc_msgSend$sortDescriptorsForLatestContentVersion
-- _objc_msgSend$sortDescriptorsForMarkets
-- _objc_msgSend$updateVerificationRecord:
-- _objc_msgSend$verificationRequestRecordForPass:
 - _symbolic $s11PassKitCore65ProvisioningExistingCardAuthorizationPreflightCoordinatorDelegateP
 - _symbolic SS8received_SS9supportedt
 - _symbolic _____7manager_Say_____G7devicest 11PassKitCore63ProvisioningExistingCardAuthorizationDestinationProviderManagerC AC14EligibleDeviceV

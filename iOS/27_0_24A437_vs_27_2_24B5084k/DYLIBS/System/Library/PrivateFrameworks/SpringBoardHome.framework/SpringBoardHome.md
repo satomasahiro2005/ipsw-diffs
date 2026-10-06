@@ -2,102 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/SpringBoardHome.framework/SpringBoardHome`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x38cfd4` | `0x393358` | **`+0x6384`** |
+| `__AUTH_CONST.__const` | `0x7528` | `0x7940` | **`+0x418`** |
+| `__AUTH_CONST.__objc_const` | `0x58dc8` | `0x59100` | **`+0x338`** |
+| `__TEXT.__eh_frame` | `0xc48` | `0xeb0` | **`+0x268`** |
+| `__TEXT.__oslogstring` | `0xf320` | `0xf560` | **`+0x240`** |
+| `__TEXT.__objc_methlist` | `0x3ebf4` | `0x3edbc` | **`+0x1c8`** |
+| `__AUTH.__objc_data` | `0xb7e0` | `0xb990` | **`+0x1b0`** |
+| `__TEXT.__unwind_info` | `0xf890` | `0xfa40` | **`+0x1b0`** |
+| `__TEXT.__cstring` | `0x18b23` | `0x18c93` | **`+0x170`** |
+| `__TEXT.__swift5_reflstr` | `0xb2a` | `0xc9a` | **`+0x170`** |
+| `__DATA.__data` | `0x9628` | `0x9790` | **`+0x168`** |
+| `__TEXT.__swift5_capture` | `0x1598` | `0x16f8` | **`+0x160`** |
+| `__TEXT.__swift5_typeref` | `0x657e` | `0x6664` | **`+0xe6`** |
+| `__TEXT.__swift5_fieldmd` | `0xc08` | `0xcd4` | **`+0xcc`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1cb70` | `0x1cc18` | **`+0xa8`** |
+| `__TEXT.__constg_swiftt` | `0x126c` | `0x12e8` | **`+0x7c`** |
+| `__AUTH_CONST.__cfstring` | `0x16ea0` | `0x16f00` | **`+0x60`** |
+| `__AUTH.__data` | `0xc58` | `0xcb0` | **`+0x58`** |
+| `__TEXT.__const` | `0x8004` | `0x7fd4` | **`-0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x1d88` | `0x1da8` | **`+0x20`** |
+| `__DATA_CONST.__objc_protolist` | `0xba8` | `0xbc0` | **`+0x18`** |
+| `__DATA.__bss` | `0x3828` | `0x3838` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x3db4` | `0x3dc4` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x9ec8` | `0x9ed8` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x1310` | `0x1320` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x198` | `0x1a8` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x10` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0xfc` | `0x108` | **`+0xc`** |
+| `__TEXT.__swift_as_cont` | `—` | `0xc` | **`+0xc`** |
+| `__DATA.__common` | `0x70` | `0x78` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x435c` | `0x4364` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `—` | `0x8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -226.0.7.0.0
--  __TEXT.__text: 0x375718
--  __TEXT.__objc_methlist: 0x3ebf4
--  __TEXT.__const: 0x8004
--  __TEXT.__cstring: 0x18b23
--  __TEXT.__gcc_except_tab: 0x435c
--  __TEXT.__oslogstring: 0xf320
 +226.2.5.0.0
-+  __TEXT.__text: 0x37b7d4
-+  __TEXT.__objc_methlist: 0x3edbc
-+  __TEXT.__const: 0x7fd4
-+  __TEXT.__cstring: 0x18c93
-+  __TEXT.__gcc_except_tab: 0x4364
-+  __TEXT.__oslogstring: 0xf560
-   __TEXT.__dlopen_cstrs: 0xb84
-   __TEXT.__ustring: 0x476
--  __TEXT.__swift5_typeref: 0x657e
--  __TEXT.__constg_swiftt: 0x126c
--  __TEXT.__swift5_reflstr: 0xb2a
--  __TEXT.__swift5_fieldmd: 0xc08
-+  __TEXT.__constg_swiftt: 0x12e8
-+  __TEXT.__swift5_typeref: 0x6664
-   __TEXT.__swift5_builtin: 0x1cc
-+  __TEXT.__swift5_reflstr: 0xc9a
-+  __TEXT.__swift5_fieldmd: 0xcd4
-   __TEXT.__swift5_assocty: 0x510
-   __TEXT.__swift5_proto: 0x160
--  __TEXT.__swift5_types: 0xfc
--  __TEXT.__swift5_capture: 0x1598
--  __TEXT.__unwind_info: 0x12f68
--  __TEXT.__eh_frame: 0xc48
-+  __TEXT.__swift5_types: 0x108
-+  __TEXT.__swift5_capture: 0x16f8
-+  __TEXT.__swift_as_entry: 0x10
-+  __TEXT.__swift_as_ret: 0x8
-+  __TEXT.__swift_as_cont: 0xc
-+  __TEXT.__unwind_info: 0x13168
-+  __TEXT.__eh_frame: 0xeb0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9ec8
--  __DATA_CONST.__objc_classlist: 0x1310
-+  __DATA_CONST.__const: 0x9ed8
-+  __DATA_CONST.__objc_classlist: 0x1320
-   __DATA_CONST.__objc_catlist: 0x120
--  __DATA_CONST.__objc_protolist: 0xba8
-+  __DATA_CONST.__objc_protolist: 0xbc0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1cb70
--  __DATA_CONST.__objc_protorefs: 0x198
-+  __DATA_CONST.__objc_selrefs: 0x1cc18
-+  __DATA_CONST.__objc_protorefs: 0x1a8
-   __DATA_CONST.__objc_superrefs: 0xe90
-   __DATA_CONST.__objc_arraydata: 0x6e0
-   __DATA_CONST.__got: 0x2478
--  __AUTH_CONST.__const: 0x7528
--  __AUTH_CONST.__cfstring: 0x16ea0
--  __AUTH_CONST.__objc_const: 0x58dc8
-+  __AUTH_CONST.__const: 0x7940
-+  __AUTH_CONST.__cfstring: 0x16f00
-+  __AUTH_CONST.__objc_const: 0x59100
-   __AUTH_CONST.__objc_intobj: 0x648
-   __AUTH_CONST.__objc_doubleobj: 0xf0
-   __AUTH_CONST.__objc_arrayobj: 0x258
-   __AUTH_CONST.__objc_dictobj: 0x140
--  __AUTH_CONST.__auth_got: 0x1d88
--  __AUTH.__objc_data: 0xb7e0
--  __AUTH.__data: 0xc58
--  __DATA.__objc_ivar: 0x3db4
--  __DATA.__data: 0x9628
--  __DATA.__common: 0x70
-+  __AUTH_CONST.__auth_got: 0x1da8
-+  __AUTH.__objc_data: 0xb990
-+  __AUTH.__data: 0xcb0
-+  __DATA.__objc_ivar: 0x3dc4
-+  __DATA.__data: 0x9790
-+  __DATA.__common: 0x78
-   __DATA_DIRTY.__objc_data: 0x1590
-   __DATA_DIRTY.__data: 0x60
-   __DATA_DIRTY.__bss: 0x18
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 24689
--  Symbols:   45911
+-  Symbols:   33637
 -  CStrings:  4579
 +  Functions: 24832
-+  Symbols:   45997
++  Symbols:   33708
 +  CStrings:  4590
- 
 Symbols:
 + +[SBFolderView _pageIndexForOffset:minimumPage:maximumPage:pageCount:pageWidth:pageSpacing:displayScale:userInterfaceLayoutDirection:behavior:fractionOfDistanceThroughPage:]
 + +[SBFolderView _pageOffsetForOffset:behavior:pageWidth:pageSpacing:displayScale:pageCount:userInterfaceLayoutDirection:fractionOfDistanceThroughPage:]
@@ -222,28 +176,6 @@ Symbols:
 + ___swift_async_ret_functlets
 + ___swift_memcpy40_8
 + _flat unique So28APSubjectMonitorSubscription_p
-+ _objc_msgSend$_displayScale
-+ _objc_msgSend$_lastOffsetOfPageStartingAtOffset:width:
-+ _objc_msgSend$_lastRealPageIndex
-+ _objc_msgSend$_pageIndexForOffset:minimumPage:maximumPage:pageCount:pageWidth:pageSpacing:displayScale:userInterfaceLayoutDirection:behavior:fractionOfDistanceThroughPage:
-+ _objc_msgSend$_pageOffsetForOffset:behavior:pageWidth:pageSpacing:displayScale:pageCount:userInterfaceLayoutDirection:fractionOfDistanceThroughPage:
-+ _objc_msgSend$_paletteMenuWithElements:identifier:
-+ _objc_msgSend$_shouldExcludeIconsObscuredBySearchForOptions:
-+ _objc_msgSend$_tableView:previewForContextMenuConfiguration:highlighted:
-+ _objc_msgSend$_updateMiniGridTreatmentsForContainedIcon:
-+ _objc_msgSend$backdropCaptureScaleForTraitCollection:
-+ _objc_msgSend$beginDeferringMemoryBudgetEnforcement
-+ _objc_msgSend$delayedImageUpdateDueToDisabledUpdates
-+ _objc_msgSend$endDeferringMemoryBudgetEnforcement
-+ _objc_msgSend$hierarchyRootNode
-+ _objc_msgSend$iconListView:fullRectForCellAtIconCoordinate:proposedRect:
-+ _objc_msgSend$iconManager:failedToOpenFolder:
-+ _objc_msgSend$pageStateTransitionSnapshotForScrollOffset:pageWidth:pageSpacing:displayScale:pages:pageCount:userInterfaceLayoutDirection:currentPageState:currentPageOffset:scrollingDirection:
-+ _objc_msgSend$paletteShortcutSectionElementsForIconView:
-+ _objc_msgSend$rowsUsedForLayout
-+ _objc_msgSend$sbh_stringByClampingToLength:
-+ _objc_msgSend$setDelayedImageUpdateDueToDisabledUpdates:
-+ _objc_msgSend$shouldAvoidPlacingIconOnFirstPage:
 + _swift_task_alloc
 + _swift_task_create
 + _swift_task_dealloc
@@ -338,13 +270,6 @@ Symbols:
 - ___block_descriptor_72_e8_32s40s48s56r_e30_B16?0"<SBIconViewQuerying>"8lr56l8s32l8s40l8s48l8
 - ___block_descriptor_72_e8_32s40s48w56w_e18_v16?0"NSString"8lw48l8w56l8s32l8s40l8
 - ___block_descriptor_80_e8_32s40s_e30_B16?0"_SBFolderPageElement"8ls32l8s40l8
-- _objc_msgSend$_pageIndexForOffset:minimumPage:maximumPage:pageCount:pageWidth:pageSpacing:userInterfaceLayoutDirection:behavior:fractionOfDistanceThroughPage:
-- _objc_msgSend$_pageOffsetForOffset:behavior:pageWidth:pageSpacing:pageCount:userInterfaceLayoutDirection:fractionOfDistanceThroughPage:
-- _objc_msgSend$_tableView:previewForContextMenuConfiguration:
-- _objc_msgSend$avoidsFirstListForAddedIcons
-- _objc_msgSend$bestGridCellIndexForInsertingIcon:belowIconAtGridCellIndex:gridCellInfo:
-- _objc_msgSend$numberOfUsedGridCellsInColumn:
-- _objc_msgSend$pageStateTransitionSnapshotForScrollOffset:pageWidth:pageSpacing:pages:pageCount:userInterfaceLayoutDirection:currentPageState:currentPageOffset:scrollingDirection:
 CStrings:
 + "%@: showing %@ but calculated %@"
 + "Built %lu folder page elements (%lu reused) for folder icon: %@"

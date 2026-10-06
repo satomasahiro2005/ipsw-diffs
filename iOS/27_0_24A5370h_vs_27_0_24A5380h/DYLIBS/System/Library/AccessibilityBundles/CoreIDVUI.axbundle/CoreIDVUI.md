@@ -2,58 +2,36 @@
 
 > `/System/Library/AccessibilityBundles/CoreIDVUI.axbundle/CoreIDVUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x678` | `0x2ac` | **`-0x3cc`** |
+| `__AUTH_CONST.__objc_const` | `0x510` | `0x2d0` | **`-0x240`** |
+| `__DATA_DIRTY.__objc_data` | `0x2d0` | `0x190` | **`-0x140`** |
+| `__AUTH_CONST.__cfstring` | `0x220` | `0x140` | **`-0xe0`** |
+| `__TEXT.__cstring` | `0x1f6` | `0x119` | **`-0xdd`** |
+| `__TEXT.__objc_methlist` | `0x154` | `0xa4` | **`-0xb0`** |
+| `__DATA_CONST.__objc_selrefs` | `0xe0` | `0x80` | **`-0x60`** |
+| `__DATA_CONST.__got` | `0x68` | `0x28` | **`-0x40`** |
+| `__DATA_CONST.__objc_classlist` | `0x48` | `0x28` | **`-0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x18` | `—` | **`-0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x18` | `0x8` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x90` | `0x80` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x678
--  __TEXT.__objc_methlist: 0x154
--  __TEXT.__cstring: 0x1f6
--  __TEXT.__unwind_info: 0x90
-+  __TEXT.__text: 0x2ac
-+  __TEXT.__objc_methlist: 0xa4
-+  __TEXT.__cstring: 0x119
-+  __TEXT.__unwind_info: 0x80
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x40
--  __DATA_CONST.__objc_classlist: 0x48
-+  __DATA_CONST.__objc_classlist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xe0
--  __DATA_CONST.__objc_superrefs: 0x18
--  __DATA_CONST.__got: 0x68
-+  __DATA_CONST.__objc_selrefs: 0x80
-+  __DATA_CONST.__objc_superrefs: 0x8
-+  __DATA_CONST.__got: 0x28
-   __AUTH_CONST.__const: 0x60
--  __AUTH_CONST.__cfstring: 0x220
--  __AUTH_CONST.__objc_const: 0x510
--  __AUTH_CONST.__objc_intobj: 0x18
-+  __AUTH_CONST.__cfstring: 0x140
-+  __AUTH_CONST.__objc_const: 0x2d0
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__bss: 0x8
--  __DATA_DIRTY.__objc_data: 0x2d0
-+  __DATA_DIRTY.__objc_data: 0x190
-   __DATA_DIRTY.__bss: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+-3039.1.0.0.0
++3042.0.0.0.0
 
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 24
--  Symbols:   157
--  CStrings:  37
+-  Symbols:   113
+-  CStrings:  21
 +  Functions: 13
-+  Symbols:   91
-+  CStrings:  21
- 
-Sections:
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__const : content changed
++  Symbols:   68
++  CStrings:  12
 Symbols:
 - +[IDScanConfirmationViewControllerAccessibility _accessibilityPerformValidations:]
 - +[IDScanConfirmationViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
@@ -97,16 +75,6 @@ Symbols:
 - ___stack_chk_fail
 - ___stack_chk_guard
 - _objc_alloc
-- _objc_msgSend$_accessibilityLoadAccessibilityInformation
-- _objc_msgSend$_accessibilitySetUserDefinedMediaAnalysisOptions:
-- _objc_msgSend$accessibilityLabel
-- _objc_msgSend$dictionaryWithObjects:forKeys:count:
-- _objc_msgSend$initWithString:attributes:
-- _objc_msgSend$safeUIViewForKey:
-- _objc_msgSend$setAccessibilityLabel:
-- _objc_msgSend$setAccessibilityTraits:
-- _objc_msgSend$setIsAccessibilityElement:
-- _objc_msgSend$validateClass:hasInstanceMethod:withFullSignature:
 - _objc_release_x20
 - _objc_release_x21
 - _objc_retain_x2
@@ -120,5 +88,4 @@ CStrings:
 - "id.card.scanned.photo"
 - "imageView"
 - "titleLabel"
-
 ```

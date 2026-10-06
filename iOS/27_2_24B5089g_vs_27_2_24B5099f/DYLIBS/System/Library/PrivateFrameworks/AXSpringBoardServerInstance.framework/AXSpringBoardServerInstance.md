@@ -2,70 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/AXSpringBoardServerInstance.framework/AXSpringBoardServerInstance`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3f8c4` | `0x3fed4` | **`+0x610`** |
+| `__TEXT.__oslogstring` | `0x1bb7` | `0x1cae` | **`+0xf7`** |
+| `__AUTH_CONST.__cfstring` | `0x6ce0` | `0x6d40` | **`+0x60`** |
+| `__TEXT.__cstring` | `0x68d1` | `0x692b` | **`+0x5a`** |
+| `__TEXT.__objc_methlist` | `0x347c` | `0x34bc` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x29e8` | `0x2a20` | **`+0x38`** |
+| `__AUTH_CONST.__auth_got` | `0xbe0` | `0xbf0` | **`+0x10`** |
+| `__AUTH_CONST.__objc_const` | `0x3b50` | `0x3b60` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x12a0` | `0x12b0` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3245.8.2.0.0
--  __TEXT.__text: 0x3e07c
--  __TEXT.__objc_methlist: 0x347c
 +3245.8.4.2.0
-+  __TEXT.__text: 0x3e680
-+  __TEXT.__objc_methlist: 0x34bc
-   __TEXT.__const: 0x5c0
-   __TEXT.__dlopen_cstrs: 0x3ae
-   __TEXT.__swift5_typeref: 0x188
 
-   __TEXT.__swift5_reflstr: 0x34
-   __TEXT.__swift5_assocty: 0x18
-   __TEXT.__swift5_capture: 0x98
--  __TEXT.__cstring: 0x68d1
--  __TEXT.__oslogstring: 0x1bb7
-+  __TEXT.__cstring: 0x692b
-+  __TEXT.__oslogstring: 0x1cae
-   __TEXT.__swift5_proto: 0x34
-   __TEXT.__swift5_types: 0x20
-   __TEXT.__swift_as_entry: 0x24
-   __TEXT.__swift_as_ret: 0x24
-   __TEXT.__swift_as_cont: 0x20
-   __TEXT.__gcc_except_tab: 0xbe4
--  __TEXT.__unwind_info: 0x1750
-+  __TEXT.__unwind_info: 0x1768
-   __TEXT.__eh_frame: 0x320
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x210
-   __DATA_CONST.__objc_protolist: 0x78
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x29e8
-+  __DATA_CONST.__objc_selrefs: 0x2a20
-   __DATA_CONST.__objc_superrefs: 0x108
-   __DATA_CONST.__objc_arraydata: 0x120
-   __DATA_CONST.__got: 0x870
-   __AUTH_CONST.__const: 0xcc0
--  __AUTH_CONST.__cfstring: 0x6ce0
--  __AUTH_CONST.__objc_const: 0x3b50
-+  __AUTH_CONST.__cfstring: 0x6d40
-+  __AUTH_CONST.__objc_const: 0x3b60
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_intobj: 0x528
-   __AUTH_CONST.__objc_arrayobj: 0x60
-   __AUTH_CONST.__objc_dictobj: 0x190
--  __AUTH_CONST.__auth_got: 0xbe0
-+  __AUTH_CONST.__auth_got: 0xbf0
-   __AUTH.__objc_data: 0x3e0
-   __AUTH.__data: 0x250
-   __DATA.__objc_ivar: 0x10c
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1393
 -  Symbols:   2742
 -  CStrings:  1141
 +  Functions: 1398
 +  Symbols:   2748
 +  CStrings:  1148
- 
 Symbols:
 + -[AXSpringBoardServerHelper switchNativeFocusedApplicationToProcessIdentifier:sceneIdentifier:]
 + -[AXSpringBoardServerHelper toggleLiveRecognitionWithServerInstance:]

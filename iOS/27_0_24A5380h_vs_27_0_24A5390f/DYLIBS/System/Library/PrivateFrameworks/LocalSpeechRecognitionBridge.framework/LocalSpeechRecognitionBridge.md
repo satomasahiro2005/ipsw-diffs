@@ -2,78 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/LocalSpeechRecognitionBridge.framework/LocalSpeechRecognitionBridge`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_dictobj`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1d314` | `0x1db4c` | **`+0x838`** |
+| `__AUTH_CONST.__objc_const` | `0x3cc0` | `0x3e68` | **`+0x1a8`** |
+| `__TEXT.__cstring` | `0x4981` | `0x4acc` | **`+0x14b`** |
+| `__TEXT.__objc_methlist` | `0x24ac` | `0x256c` | **`+0xc0`** |
+| `__TEXT.__oslogstring` | `0x2c72` | `0x2d14` | **`+0xa2`** |
+| `__AUTH_CONST.__cfstring` | `0x1a20` | `0x1ac0` | **`+0xa0`** |
+| `__AUTH.__objc_data` | `0x5a0` | `0x5f0` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x6e8` | `0x720` | **`+0x38`** |
+| `__TEXT.__gcc_except_tab` | `0x208` | `0x230` | **`+0x28`** |
+| `__DATA.__objc_ivar` | `0x2c0` | `0x2d0` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1308` | `0x1318` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x1e8` | `0x1f0` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0xe0` | `0xe8` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0xc8` | `0xd0` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -3600.70.20.1.1
--  __TEXT.__text: 0x1d314
--  __TEXT.__objc_methlist: 0x24ac
 +3600.70.32.0.0
-+  __TEXT.__text: 0x1db4c
-+  __TEXT.__objc_methlist: 0x256c
-   __TEXT.__dlopen_cstrs: 0xb0
-   __TEXT.__const: 0xb0
--  __TEXT.__gcc_except_tab: 0x208
--  __TEXT.__cstring: 0x4981
--  __TEXT.__oslogstring: 0x2c72
--  __TEXT.__unwind_info: 0x6e8
-+  __TEXT.__gcc_except_tab: 0x230
-+  __TEXT.__cstring: 0x4acc
-+  __TEXT.__oslogstring: 0x2d14
-+  __TEXT.__unwind_info: 0x720
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x858
--  __DATA_CONST.__objc_classlist: 0xe0
-+  __DATA_CONST.__objc_classlist: 0xe8
-   __DATA_CONST.__objc_protolist: 0xb8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1308
-+  __DATA_CONST.__objc_selrefs: 0x1318
-   __DATA_CONST.__objc_protorefs: 0x58
--  __DATA_CONST.__objc_superrefs: 0xc8
-+  __DATA_CONST.__objc_superrefs: 0xd0
-   __DATA_CONST.__objc_arraydata: 0x20
--  __DATA_CONST.__got: 0x1e8
-+  __DATA_CONST.__got: 0x1f0
-   __AUTH_CONST.__const: 0xc0
--  __AUTH_CONST.__cfstring: 0x1a20
--  __AUTH_CONST.__objc_const: 0x3cc0
-+  __AUTH_CONST.__cfstring: 0x1ac0
-+  __AUTH_CONST.__objc_const: 0x3e68
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x5a0
--  __DATA.__objc_ivar: 0x2c0
-+  __AUTH.__objc_data: 0x5f0
-+  __DATA.__objc_ivar: 0x2d0
-   __DATA.__data: 0x8b0
-   __DATA_DIRTY.__objc_data: 0x320
-   __DATA_DIRTY.__bss: 0x58
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 734
--  Symbols:   1843
+-  Symbols:   1471
 -  CStrings:  603
 +  Functions: 749
-+  Symbols:   1876
++  Symbols:   1501
 +  CStrings:  611
- 
 Symbols:
 + +[LBLocalSpeechRecognizerRuntimeFinalizedContext supportsSecureCoding]
 + -[LBLocalSpeechRecognizerClient runtimeFinalizedwithContext:]
@@ -116,9 +76,6 @@ Symbols:
 + __OBJC_METACLASS_RO_$_LBLocalSpeechRecognizerRuntimeFinalizedContext
 + ___39-[LBAudioStreamProvider _stopStreaming]_block_invoke
 + ___61-[LBLocalSpeechRecognizerClient runtimeFinalizedwithContext:]_block_invoke
-+ _objc_msgSend$didStopStreamingWithError:
-+ _objc_msgSend$runtimeFinalizedwithContext:
-+ _objc_msgSend$stopStreamingWithCompletion:
 - GCC_except_table167
 - GCC_except_table320
 - GCC_except_table443

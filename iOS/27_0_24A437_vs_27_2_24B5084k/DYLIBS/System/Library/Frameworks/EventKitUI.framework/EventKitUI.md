@@ -2,86 +2,39 @@
 
 > `/System/Library/Frameworks/EventKitUI.framework/EventKitUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1f9bc0` | `0x1fb8f0` | **`+0x1d30`** |
+| `__AUTH_CONST.__cfstring` | `0xb4c0` | `0xb000` | **`-0x4c0`** |
+| `__TEXT.__cstring` | `0xd1a4` | `0xce74` | **`-0x330`** |
+| `__AUTH_CONST.__objc_const` | `0x31868` | `0x319e8` | **`+0x180`** |
+| `__DATA_CONST.__got` | `0x1c18` | `0x1d78` | **`+0x160`** |
+| `__TEXT.__objc_methlist` | `0x2039c` | `0x204bc` | **`+0x120`** |
+| `__DATA_CONST.__objc_selrefs` | `0xfbf8` | `0xfcc8` | **`+0xd0`** |
+| `__DATA_CONST.__const` | `0x4898` | `0x4910` | **`+0x78`** |
+| `__TEXT.__unwind_info` | `0x7e00` | `0x7e60` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0x3f78` | `0x3fb0` | **`+0x38`** |
+| `__DATA.__objc_ivar` | `0x2598` | `0x25c0` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x2f98` | `0x2fb8` | **`+0x20`** |
+| `__AUTH.__data` | `0x1048` | `0x1058` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x17a8` | `0x17b0` | **`+0x8`** |
+| `__TEXT.__constg_swiftt` | `0x1c8c` | `0x1c94` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1572.0.100.0.0
--  __TEXT.__text: 0x1ec2c0
--  __TEXT.__objc_methlist: 0x2039c
 +1573.1.6.0.0
-+  __TEXT.__text: 0x1edf3c
-+  __TEXT.__objc_methlist: 0x204bc
-   __TEXT.__const: 0x2e94
--  __TEXT.__cstring: 0xd1a4
--  __TEXT.__gcc_except_tab: 0x3f78
-+  __TEXT.__cstring: 0xce74
-+  __TEXT.__gcc_except_tab: 0x3fb0
-   __TEXT.__oslogstring: 0x7b37
-   __TEXT.__ustring: 0x862
-   __TEXT.__dlopen_cstrs: 0x36b
-   __TEXT.__swift5_typeref: 0x160c
-   __TEXT.__swift5_capture: 0x7b8
--  __TEXT.__constg_swiftt: 0x1c8c
-+  __TEXT.__constg_swiftt: 0x1c94
-   __TEXT.__swift5_reflstr: 0x170d
-   __TEXT.__swift5_assocty: 0x278
-   __TEXT.__swift5_fieldmd: 0xdcc
 
-   __TEXT.__swift_as_entry: 0x48
-   __TEXT.__swift_as_ret: 0x3c
-   __TEXT.__swift_as_cont: 0xac
--  __TEXT.__unwind_info: 0x9868
-+  __TEXT.__unwind_info: 0x98e8
-   __TEXT.__eh_frame: 0xbec
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4898
-+  __DATA_CONST.__const: 0x4910
-   __DATA_CONST.__objc_classlist: 0xc90
-   __DATA_CONST.__objc_catlist: 0x80
-   __DATA_CONST.__objc_protolist: 0x660
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xfbf8
-+  __DATA_CONST.__objc_selrefs: 0xfcc8
-   __DATA_CONST.__objc_protorefs: 0xe0
-   __DATA_CONST.__objc_superrefs: 0x8c8
-   __DATA_CONST.__objc_arraydata: 0x1c0
--  __DATA_CONST.__got: 0x1c18
--  __AUTH_CONST.__const: 0x2f98
--  __AUTH_CONST.__cfstring: 0xb4c0
--  __AUTH_CONST.__objc_const: 0x31868
-+  __DATA_CONST.__got: 0x1d78
-+  __AUTH_CONST.__const: 0x2fb8
-+  __AUTH_CONST.__cfstring: 0xb000
-+  __AUTH_CONST.__objc_const: 0x319e8
-   __AUTH_CONST.__objc_arrayobj: 0x1f8
-   __AUTH_CONST.__objc_intobj: 0x570
-   __AUTH_CONST.__objc_doubleobj: 0x70
-   __AUTH_CONST.__objc_dictobj: 0xc8
-   __AUTH_CONST.__objc_floatobj: 0x10
--  __AUTH_CONST.__auth_got: 0x17a8
-+  __AUTH_CONST.__auth_got: 0x17b0
-   __AUTH.__objc_data: 0x7da0
--  __AUTH.__data: 0x1048
--  __DATA.__objc_ivar: 0x2598
-+  __AUTH.__data: 0x1058
-+  __DATA.__objc_ivar: 0x25c0
-   __DATA.__data: 0x51c8
-   __DATA.__common: 0x238
-   __DATA_DIRTY.__objc_data: 0x1400
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12400
--  Symbols:   25113
+-  Symbols:   18525
 -  CStrings:  2364
 +  Functions: 12428
-+  Symbols:   25223
++  Symbols:   18611
 +  CStrings:  2327
- 
 Symbols:
 + +[EKReminderTitleDetailCell _circleSymbolFontForTraitCollection:]
 + +[EKUIContextMenuActions filterSuggestedActions:forEvents:]
@@ -173,38 +126,10 @@ Symbols:
 + ___block_descriptor_48_e8_32w40w_e36_"NSDictionary"16?0"NSDictionary"8lw32l8w40l8
 + ___block_descriptor_56_e8_32w_e18_v16?0"UIButton"8lw32l8
 + ___block_descriptor_64_e8_32s40w_e5_v8?0lw40l8s32l8
-+ _objc_msgSend$_adjustLineAxesForLargeText:
-+ _objc_msgSend$_applyArrangementForLargeText:
-+ _objc_msgSend$_arrangementConstraintsForLargeText:
-+ _objc_msgSend$_circleSymbolFontForTraitCollection:
-+ _objc_msgSend$_dateFieldConstraintsForLargeText:
-+ _objc_msgSend$_foregroundColorForAction:selected:
-+ _objc_msgSend$_mergeTimeFieldsForLargeText:
-+ _objc_msgSend$_preferredFontForTextStyle:design:variant:weight:maximumContentSizeCategory:compatibleWithTraitCollection:
-+ _objc_msgSend$_timeIntervalTextForStrikethrough:calendar:
-+ _objc_msgSend$_titleFontTransformerForButton:
-+ _objc_msgSend$activeAppearance
-+ _objc_msgSend$children
-+ _objc_msgSend$eventInviteesViewControllerContentSizeDidChange:
-+ _objc_msgSend$filterSuggestedActions:forEvents:
-+ _objc_msgSend$horizontalContentOverhang
-+ _objc_msgSend$menuByReplacingChildren:
-+ _objc_msgSend$monthContentBounds
-+ _objc_msgSend$needsInactiveAppearance
-+ _objc_msgSend$newEventActionWithHandler:
-+ _objc_msgSend$newReminderActionWithHandler:
-+ _objc_msgSend$removeObserver:forKeyPath:context:
-+ _objc_msgSend$setForceCanBeDirectlyManagedToNo:
-+ _objc_msgSend$setKeepRedundantDesignator:
-+ _objc_msgSend$setKeepZeroMinutes:
-+ _objc_msgSend$timeIntervalAttributedTextWithStartDate:endDate:calendar:font:textProviderUtils:
-+ _objc_msgSend$viewIfLoaded
 - GCC_except_table61
 - GCC_except_table63
 - GCC_except_table85
 - ___block_descriptor_64_e8_32s40w_e18_v16?0"UIButton"8lw40l8s32l8
-- _objc_msgSend$confirmSuggestedEvent:
-- _objc_msgSend$flattenedImageWithColor:
 CStrings:
 + "B24@?0@\"UIMenuElement\"8@\"NSDictionary\"16"
 + "contentSize"

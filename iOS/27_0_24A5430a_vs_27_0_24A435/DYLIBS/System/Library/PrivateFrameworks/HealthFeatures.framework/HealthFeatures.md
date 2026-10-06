@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/HealthFeatures.framework/HealthFeatures`
 
-```diff
+### Section Size Changes
 
- 7027.0.72.2.7
--  __TEXT.__text: 0xf028
-+  __TEXT.__text: 0xf02c
-   __TEXT.__objc_methlist: 0x2ac
-   __TEXT.__const: 0x1224
-   __TEXT.__swift5_typeref: 0x3e2
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf028` | `0xf02c` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_267fc7ed0 -> sub_2831c5ed0 : 1264 -> 1268
+~ sub_282382ed0 -> sub_283094ed0 : 1264 -> 1268
 ```

@@ -2,15 +2,14 @@
 
 > `/System/Library/PrivateFrameworks/DocumentManagerUICore.framework/PlugIns/com.apple.DocumentManager.Service.appex/com.apple.DocumentManager.Service`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -401.1.5.0.0
 +403.1.8.0.0
-   __TEXT.__text: 0x4c
-   __TEXT.__auth_stubs: 0x30
-   __TEXT.__objc_stubs: 0xc0
 ```

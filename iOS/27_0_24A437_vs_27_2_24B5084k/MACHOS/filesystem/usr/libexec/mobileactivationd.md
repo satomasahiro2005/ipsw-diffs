@@ -2,57 +2,35 @@
 
 > `/usr/libexec/mobileactivationd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arrayobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__cfstring` | `0xd4e0` | `0xd500` | **`+0x20`** |
+| `__TEXT.__cstring` | `0xeeb1` | `0xeec2` | **`+0x11`** |
+| `__DATA_CONST.__objc_arraydata` | `0x600` | `0x608` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -1145.0.1.0.1
 +1145.40.4.0.0
-   __TEXT.__text: 0x34acc8
-   __TEXT.__auth_stubs: 0x1240
-   __TEXT.__objc_stubs: 0x3240
-   __TEXT.__objc_methlist: 0x112c
-   __TEXT.__const: 0x60b63
--  __TEXT.__cstring: 0xeeb1
-+  __TEXT.__cstring: 0xeec2
-   __TEXT.__objc_methname: 0x4044
-   __TEXT.__oslogstring: 0xf47
-   __TEXT.__objc_classname: 0x1a4
 
-   __TEXT.__unwind_info: 0x17a0
-   __TEXT.__eh_frame: 0xa0
-   __DATA_CONST.__const: 0x1c4f8
--  __DATA_CONST.__cfstring: 0xd4e0
-+  __DATA_CONST.__cfstring: 0xd500
-   __DATA_CONST.__objc_classlist: 0x50
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x48
-
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x40
-   __DATA_CONST.__objc_intobj: 0x330
--  __DATA_CONST.__objc_arraydata: 0x600
-+  __DATA_CONST.__objc_arraydata: 0x608
-   __DATA_CONST.__objc_arrayobj: 0xa8
-   __DATA_CONST.__auth_got: 0x930
-   __DATA_CONST.__got: 0x4b0
-
-   - /usr/lib/libobjc.A.dylib
-   Functions: 1660
-   Symbols:   4048
 -  CStrings:  3067
 +  CStrings:  3068
- 
 Symbols:
 + /AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/local/lib/amd/libDER.a(DER_Decode.o)
 + /AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/local/lib/libCoreTrust.a(AppleAnchors.o)

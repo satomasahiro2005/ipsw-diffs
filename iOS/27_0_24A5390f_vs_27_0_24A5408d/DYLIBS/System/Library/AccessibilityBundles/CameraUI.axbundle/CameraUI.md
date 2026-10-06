@@ -2,64 +2,36 @@
 
 > `/System/Library/AccessibilityBundles/CameraUI.axbundle/CameraUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x18528` | `0x18c40` | **`+0x718`** |
+| `__AUTH_CONST.__objc_const` | `0x5310` | `0x5430` | **`+0x120`** |
+| `__AUTH_CONST.__cfstring` | `0x45a0` | `0x46a0` | **`+0x100`** |
+| `__TEXT.__cstring` | `0x3474` | `0x3542` | **`+0xce`** |
+| `__AUTH.__objc_data` | `0x320` | `0x3c0` | **`+0xa0`** |
+| `__TEXT.__objc_methlist` | `0x26a4` | `0x2744` | **`+0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1530` | `0x1598` | **`+0x68`** |
+| `__TEXT.__unwind_info` | `0x900` | `0x928` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0x2c0` | `0x2d8` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x3c0` | `0x3d0` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x378` | `0x384` | **`+0xc`** |
+| `__DATA_CONST.__objc_superrefs` | `0x158` | `0x160` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3045.0.0.0.0
--  __TEXT.__text: 0x18528
--  __TEXT.__objc_methlist: 0x26a4
 +3048.0.0.0.0
-+  __TEXT.__text: 0x18c40
-+  __TEXT.__objc_methlist: 0x2744
-   __TEXT.__const: 0x160
--  __TEXT.__gcc_except_tab: 0x378
--  __TEXT.__cstring: 0x3474
-+  __TEXT.__gcc_except_tab: 0x384
-+  __TEXT.__cstring: 0x3542
-   __TEXT.__oslogstring: 0x381
--  __TEXT.__unwind_info: 0x900
-+  __TEXT.__unwind_info: 0x928
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xa98
--  __DATA_CONST.__objc_classlist: 0x3c0
-+  __DATA_CONST.__objc_classlist: 0x3d0
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1530
--  __DATA_CONST.__objc_superrefs: 0x158
-+  __DATA_CONST.__objc_selrefs: 0x1598
-+  __DATA_CONST.__objc_superrefs: 0x160
-   __DATA_CONST.__objc_arraydata: 0x48
--  __DATA_CONST.__got: 0x2c0
-+  __DATA_CONST.__got: 0x2d8
-   __AUTH_CONST.__const: 0x580
--  __AUTH_CONST.__cfstring: 0x45a0
--  __AUTH_CONST.__objc_const: 0x5310
-+  __AUTH_CONST.__cfstring: 0x46a0
-+  __AUTH_CONST.__objc_const: 0x5430
-   __AUTH_CONST.__objc_intobj: 0xc0
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x320
-+  __AUTH.__objc_data: 0x3c0
-   __DATA.__objc_ivar: 0x11c
-   __DATA.__data: 0xc0
-   __DATA.__bss: 0x41
 
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 822
--  Symbols:   2400
+-  Symbols:   1837
 -  CStrings:  616
 +  Functions: 836
-+  Symbols:   2438
++  Symbols:   1865
 +  CStrings:  624
- 
 Symbols:
 + +[CAMSmartStylePreviewViewAccessibility _accessibilityPerformValidations:]
 + +[CAMSmartStylePreviewViewAccessibility(SafeCategory) safeCategoryBaseClass]
@@ -109,16 +81,6 @@ Symbols:
 + __OBJC_METACLASS_RO_$___CAMSmartStylePreviewViewAccessibility_super
 + ___141-[AXCameraVisionEngine _sceneDescriptionAnnouncementForVisionFeatures:previousAnnouncementLocation:locationForAnnouncement:announcementType:]_block_invoke_2
 + ___50-[AXCameraVisionEngine _resetAccessiblityElements]_block_invoke
-+ _objc_msgSend$_axIsZoomLockedForTimelapseRecording
-+ _objc_msgSend$_axZoomControlsHidden
-+ _objc_msgSend$_performOnMainQueueWithBlock:
-+ _objc_msgSend$indexOfObjectIdenticalTo:
-+ _objc_msgSend$initWithDoubleValue:unit:
-+ _objc_msgSend$millimeters
-+ _objc_msgSend$numberFromString:
-+ _objc_msgSend$setUnitOptions:
-+ _objc_msgSend$setUnitStyle:
-+ _objc_msgSend$stringFromMeasurement:
 - -[CAMPanoramaViewAccessibility _accessibilityHitTest:withEvent:]
 - GCC_except_table331
 - GCC_except_table360

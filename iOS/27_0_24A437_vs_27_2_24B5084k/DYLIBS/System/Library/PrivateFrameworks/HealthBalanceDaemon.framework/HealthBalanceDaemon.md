@@ -2,114 +2,65 @@
 
 > `/System/Library/PrivateFrameworks/HealthBalanceDaemon.framework/HealthBalanceDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe509c` | `0x118fd8` | **`+0x33f3c`** |
+| `__AUTH_CONST.__const` | `0x3d10` | `0x4f70` | **`+0x1260`** |
+| `__TEXT.__const` | `0x5080` | `0x62c0` | **`+0x1240`** |
+| `__DATA.__bss` | `0x2c40` | `0x3c50` | **`+0x1010`** |
+| `__TEXT.__oslogstring` | `0x34b3` | `0x4213` | **`+0xd60`** |
+| `__TEXT.__eh_frame` | `0x1bd0` | `0x27e0` | **`+0xc10`** |
+| `__TEXT.__swift5_reflstr` | `0x2cb4` | `0x3781` | **`+0xacd`** |
+| `__AUTH.__data` | `0x7d8` | `0x1230` | **`+0xa58`** |
+| `__TEXT.__swift5_fieldmd` | `0x25e8` | `0x2e54` | **`+0x86c`** |
+| `__DATA.__data` | `0x1c68` | `0x24b8` | **`+0x850`** |
+| `__TEXT.__constg_swiftt` | `0x2b68` | `0x32c0` | **`+0x758`** |
+| `__TEXT.__unwind_info` | `0x1c60` | `0x2350` | **`+0x6f0`** |
+| `__TEXT.__swift5_typeref` | `0x21a8` | `0x2808` | **`+0x660`** |
+| `__DATA_DIRTY.__data` | `0x40a8` | `0x3a80` | **`-0x628`** |
+| `__AUTH_CONST.__auth_got` | `0x2038` | `0x2530` | **`+0x4f8`** |
+| `__AUTH_CONST.__objc_const` | `0x30a0` | `0x3468` | **`+0x3c8`** |
+| `__TEXT.__swift5_capture` | `0x490` | `0x858` | **`+0x3c8`** |
+| `__AUTH.__objc_data` | `0x410` | `0x7b0` | **`+0x3a0`** |
+| `__TEXT.__cstring` | `0x18b3` | `0x1bc3` | **`+0x310`** |
+| `__DATA_DIRTY.__bss` | `0xe80` | `0xb80` | **`-0x300`** |
+| `__DATA_DIRTY.__objc_data` | `0x9d8` | `0x8e8` | **`-0xf0`** |
+| `__TEXT.__objc_methlist` | `0xbd4` | `0xcc4` | **`+0xf0`** |
+| `__TEXT.__swift5_types` | `0x284` | `0x324` | **`+0xa0`** |
+| `__TEXT.__swift5_assocty` | `0x338` | `0x3d0` | **`+0x98`** |
+| `__TEXT.__swift5_proto` | `0x2a0` | `0x328` | **`+0x88`** |
+| `__DATA.__common` | `0x10` | `0x40` | **`+0x30`** |
+| `__DATA_CONST.__objc_protolist` | `0x220` | `0x1f0` | **`-0x30`** |
+| `__DATA_DIRTY.__common` | `0x128` | `0xf8` | **`-0x30`** |
+| `__DATA_CONST.__objc_protorefs` | `0x118` | `0x100` | **`-0x18`** |
+| `__TEXT.__swift5_builtin` | `0xf0` | `0x104` | **`+0x14`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x14` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x110` | `0x120` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `0xbc` | `0xcc` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x10` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x1c0` | `0x1c8` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xc78` | `0xc80` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `—` | `0x4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.0.72.2.7
--  __TEXT.__text: 0xddfec
--  __TEXT.__objc_methlist: 0xbd4
--  __TEXT.__const: 0x5080
--  __TEXT.__swift5_typeref: 0x21a8
--  __TEXT.__swift5_fieldmd: 0x25e8
--  __TEXT.__constg_swiftt: 0x2b68
--  __TEXT.__swift5_builtin: 0xf0
--  __TEXT.__swift5_reflstr: 0x2cb4
--  __TEXT.__swift5_assocty: 0x338
--  __TEXT.__swift5_protos: 0xbc
--  __TEXT.__swift5_proto: 0x2a0
--  __TEXT.__swift5_types: 0x284
--  __TEXT.__cstring: 0x18b3
--  __TEXT.__oslogstring: 0x34b3
--  __TEXT.__swift5_capture: 0x490
 +7027.1.36.2.7
-+  __TEXT.__text: 0x110150
-+  __TEXT.__objc_methlist: 0xcc4
-+  __TEXT.__const: 0x62c0
-+  __TEXT.__swift5_typeref: 0x2808
-+  __TEXT.__swift5_fieldmd: 0x2e54
-+  __TEXT.__constg_swiftt: 0x32c0
-+  __TEXT.__swift5_builtin: 0x104
-+  __TEXT.__swift5_reflstr: 0x3781
-+  __TEXT.__swift5_assocty: 0x3d0
-+  __TEXT.__swift5_protos: 0xcc
-+  __TEXT.__swift5_proto: 0x328
-+  __TEXT.__swift5_types: 0x324
-+  __TEXT.__oslogstring: 0x4213
-+  __TEXT.__cstring: 0x1bc3
-+  __TEXT.__swift5_capture: 0x858
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x2598
--  __TEXT.__eh_frame: 0x1be0
-+  __TEXT.__swift_as_entry: 0x14
-+  __TEXT.__swift_as_cont: 0x10
-+  __TEXT.__swift_as_ret: 0x4
-+  __TEXT.__unwind_info: 0x2ee8
-+  __TEXT.__eh_frame: 0x27e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1c0
--  __DATA_CONST.__objc_classlist: 0x110
--  __DATA_CONST.__objc_protolist: 0x220
-+  __DATA_CONST.__const: 0x1c8
-+  __DATA_CONST.__objc_classlist: 0x120
-+  __DATA_CONST.__objc_protolist: 0x1f0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xc78
--  __DATA_CONST.__objc_protorefs: 0x118
-+  __DATA_CONST.__objc_selrefs: 0xc80
-+  __DATA_CONST.__objc_protorefs: 0x100
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x3d10
-+  __AUTH_CONST.__const: 0x4f70
-   __AUTH_CONST.__cfstring: 0x40
--  __AUTH_CONST.__objc_const: 0x30a0
--  __AUTH_CONST.__auth_got: 0x2038
--  __AUTH.__objc_data: 0x410
--  __AUTH.__data: 0x7d8
--  __DATA.__data: 0x1c68
--  __DATA.__common: 0x10
--  __DATA_DIRTY.__objc_data: 0x9d8
--  __DATA_DIRTY.__data: 0x40a8
--  __DATA_DIRTY.__bss: 0xe80
--  __DATA_DIRTY.__common: 0x128
-+  __AUTH_CONST.__objc_const: 0x3468
-+  __AUTH_CONST.__auth_got: 0x2530
-+  __AUTH.__objc_data: 0x7b0
-+  __AUTH.__data: 0x1230
-+  __DATA.__data: 0x24b8
-+  __DATA.__common: 0x40
-+  __DATA_DIRTY.__objc_data: 0x8e8
-+  __DATA_DIRTY.__data: 0x3a80
-+  __DATA_DIRTY.__bss: 0xb80
-+  __DATA_DIRTY.__common: 0xf8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/HealthKit.framework/HealthKit
 
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
 +  - /usr/lib/swift/libswiftCoreImage.dylib
-   - /usr/lib/swift/libswiftCoreLocation.dylib
-   - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
 
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 +  - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 2779
--  Symbols:   1679
+-  Symbols:   1366
 -  CStrings:  346
 +  Functions: 3416
-+  Symbols:   1846
++  Symbols:   1528
 +  CStrings:  408
- 
 Symbols:
 + _HDSampleEntityPredicateForDataTypes
 + _HDSampleEntityPredicateForEndDate
@@ -208,41 +159,6 @@ Symbols:
 + _associated conformance So11HKErrorCodeV10Foundation06_ErrorB8ProtocolSCSQ
 + _flat unique ST_px7ElementSTRts_XP
 + _get_witness_table 19HealthBalanceDaemon31ReadinessInputsRequestEvaluatorC0A10TopicsCore0fG0HPyHC
-+ _objc_msgSend$_endDate
-+ _objc_msgSend$changesByTypeWithTransaction:sinceAnchor:error:
-+ _objc_msgSend$client_deliverSleepingSampleDaySummaries:clearPending:finalBatchAnchor:queryUUID:
-+ _objc_msgSend$compoundFilterWithFilter:otherFilter:
-+ _objc_msgSend$contextForAccessibilityAssertion:
-+ _objc_msgSend$doubleValue
-+ _objc_msgSend$duration
-+ _objc_msgSend$endDateFilterWithOperatorType:date:dataTypes:
-+ _objc_msgSend$entityEnumeratorWithProfile:
-+ _objc_msgSend$fetchWorkoutEffortRelationshipsWithAnchor:handler:
-+ _objc_msgSend$getDeliveredNotificationsWithCompletionHandler:
-+ _objc_msgSend$identifier
-+ _objc_msgSend$initWithAuthorizedTypes:includeChangeDetails:changeDetailsQueryStrategy:anchorStrategyChangeCountLimit:
-+ _objc_msgSend$initWithFeatureAvailabilityProviding:healthDataSource:
-+ _objc_msgSend$initWithIdentifier:options:
-+ _objc_msgSend$initWithInteger:
-+ _objc_msgSend$initWithProfile:filter:options:
-+ _objc_msgSend$initWithProfile:quantityType:configuration:queryPrefetchWindow:currentDate:
-+ _objc_msgSend$invalidate
-+ _objc_msgSend$longLongValue
-+ _objc_msgSend$maxSourceOrderAnchorForObjectType:transaction:error:
-+ _objc_msgSend$objectsAssociatedWithObjectPID:subObjectReference:dataTypes:associationType:behavior:limit:sortDescending:profile:error:
-+ _objc_msgSend$predicateWithProperty:likeValue:
-+ _objc_msgSend$protectedDatabase
-+ _objc_msgSend$quantityType
-+ _objc_msgSend$relativeValueForSampleValue:startTime:endTime:sourceID:error:
-+ _objc_msgSend$request
-+ _objc_msgSend$reset
-+ _objc_msgSend$sampleTypeChangeWithSampleType:dateInterval:hasUnfrozenSeries:
-+ _objc_msgSend$setInterruptionLevel:
-+ _objc_msgSend$setSound:
-+ _objc_msgSend$sourcesWithPredicate:includeDeleted:profile:error:
-+ _objc_msgSend$startDateFilterWithOperatorType:date:dataTypes:
-+ _objc_msgSend$takeAccessibilityAssertionWithOwnerIdentifier:timeout:error:
-+ _objc_msgSend$transactionWithName:
 + _swift_dynamicCastObjCProtocolConditional
 + _swift_getExtendedExistentialTypeMetadata
 + _swift_retain_x10
@@ -481,36 +397,6 @@ Symbols:
 - _flat unique So24OS_dispatch_source_timer_p
 - _flat unique St_px7ElementStRts_XP
 - _get_enum_tag_for_layout_string 19HealthBalanceDaemon43SleepingWristTemperatureAggregateEnumeratorC5ErrorO
-- _objc_msgSend$_activitySummaryIndex
-- _objc_msgSend$_insertStatistics:
-- _objc_msgSend$anchorDate
-- _objc_msgSend$anySampleOfType:profile:encodingOptions:predicate:error:
-- _objc_msgSend$calendar
-- _objc_msgSend$category
-- _objc_msgSend$client_deliverSleepingSampleDaySummaries:clearPending:isFinalBatch:queryUUID:
-- _objc_msgSend$creationInterval
-- _objc_msgSend$initForProfile:quantityType:predicate:restrictedSourceEntities:configuration:currentDate:
-- _objc_msgSend$initWithAnchorDate:intervalComponents:
-- _objc_msgSend$initWithAnchorDate:statisticsInterval:
-- _objc_msgSend$initWithIdentifier:healthStore:options:
-- _objc_msgSend$initWithProfile:cachingIdentifier:sourceEntity:queryDescriptor:cachedClass:queryInterval:anchorDate:intervalComponents:timeIntervalToBucketIndex:
-- _objc_msgSend$initWithProfile:cachingSession:gregorianCalendar:morningIndexRange:ascending:options:debugIdentifier:
-- _objc_msgSend$initWithTimeIntervalSinceReferenceDate:
-- _objc_msgSend$intervalComponents
-- _objc_msgSend$localDeviceSourceWithError:
-- _objc_msgSend$morningIndex
-- _objc_msgSend$mostRecentSampleWithType:profile:encodingOptions:predicate:anchor:error:
-- _objc_msgSend$primarySleepPeriod
-- _objc_msgSend$segments
-- _objc_msgSend$setInvalidationQueryDescriptors:
-- _objc_msgSend$setStatisticsHandler:
-- _objc_msgSend$sleepAnalysisQueryDescriptorForDateInterval:options:
-- _objc_msgSend$sleepDuration
-- _objc_msgSend$sleepQuery2
-- _objc_msgSend$sleepTypesQueryDescriptorsForDateInterval:options:
-- _objc_msgSend$statisticsForDate:
-- _objc_msgSend$summaryFilteredToPrimaryPeriod
-- _objc_msgSend$supportsCachedSleepDaySummaryQueries
 - _swift_cvw_enumFn_getEnumTag
 - _swift_weakDestroy
 - _swift_weakInit

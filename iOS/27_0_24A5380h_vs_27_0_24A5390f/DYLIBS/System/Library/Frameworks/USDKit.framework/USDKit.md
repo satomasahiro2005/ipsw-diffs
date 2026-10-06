@@ -2,75 +2,32 @@
 
 > `/System/Library/Frameworks/USDKit.framework/USDKit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_selrefs`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH.__tf_func`
-- `__AUTH.__data`
-- `__DATA.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2dafe0` | `0x2dc7b4` | **`+0x17d4`** |
+| `__TEXT.__eh_frame` | `0xb36a0` | `0xb3890` | **`+0x1f0`** |
+| `__TEXT.__gcc_except_tab` | `0x45a5c` | `0x45bc4` | **`+0x168`** |
+| `__TEXT.__cstring` | `0x172ea` | `0x1744a` | **`+0x160`** |
+| `__TEXT.__unwind_info` | `0x44440` | `0x444e8` | **`+0xa8`** |
+| `__AUTH_CONST.__const` | `0x23af0` | `0x23b90` | **`+0xa0`** |
+| `__TEXT.__swift5_capture` | `0x22c` | `0x25c` | **`+0x30`** |
+| `__TEXT.__const` | `0x2cfb5` | `0x2cfa5` | **`-0x10`** |
+
+### Other Changes
 
 ```diff
 
 -106.0.5.0.1
--  __TEXT.__text: 0x2dafe0
--  __TEXT.__const: 0x2cfb5
--  __TEXT.__gcc_except_tab: 0x45a5c
--  __TEXT.__cstring: 0x172ea
 +106.0.7.0.0
-+  __TEXT.__text: 0x2dc7b4
-+  __TEXT.__const: 0x2cfa5
-+  __TEXT.__gcc_except_tab: 0x45bc4
-+  __TEXT.__cstring: 0x1744a
-   __TEXT.__swift5_typeref: 0x6336
-   __TEXT.__swift5_reflstr: 0x1877
-   __TEXT.__swift5_assocty: 0x5878
 
-   __TEXT.__swift5_proto: 0x1d44
-   __TEXT.__swift5_types: 0xa24
-   __TEXT.__swift5_types2: 0x8
--  __TEXT.__swift5_capture: 0x22c
-+  __TEXT.__swift5_capture: 0x25c
-   __TEXT.__oslogstring: 0x5bb
-   __TEXT.__swift5_protos: 0xe0
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x44440
--  __TEXT.__eh_frame: 0xb36a0
-+  __TEXT.__unwind_info: 0x444e8
-+  __TEXT.__eh_frame: 0xb3890
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__weak_got: 0x260
-   __DATA_CONST.__objc_selrefs: 0x78
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x23af0
-+  __AUTH_CONST.__const: 0x23b90
-   __AUTH_CONST.__cfstring: 0x80
-   __AUTH_CONST.__objc_const: 0x1908
-   __AUTH_CONST.__weak_auth_got: 0xd38
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   - /usr/lib/usd/libusd_ms.dylib
 -  Functions: 34518
--  Symbols:   64162
+-  Symbols:   64147
 -  CStrings:  921
 +  Functions: 34536
-+  Symbols:   64174
++  Symbols:   64159
 +  CStrings:  929
- 
 Symbols:
 + _$s6USDKit038SdfLayerStateDelegateProxy_MarkCurrentD7AsDirty05layerdeF0yyXl_tF
 + _$s6USDKit7USDPrimV9AttributeV5clearSbyF

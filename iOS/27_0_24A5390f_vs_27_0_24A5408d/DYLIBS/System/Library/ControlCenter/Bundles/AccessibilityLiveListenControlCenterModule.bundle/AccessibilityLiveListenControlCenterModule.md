@@ -2,40 +2,26 @@
 
 > `/System/Library/ControlCenter/Bundles/AccessibilityLiveListenControlCenterModule.bundle/AccessibilityLiveListenControlCenterModule`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10f8` | `0x1474` | **`+0x37c`** |
+| `__TEXT.__oslogstring` | `0x75` | `0x2cc` | **`+0x257`** |
+| `__TEXT.__const` | `0x10` | `0x30` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x360` | `0x368` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3237.1.0.0.0
--  __TEXT.__text: 0x10f8
 +3240.3.0.0.0
-+  __TEXT.__text: 0x1474
-   __TEXT.__objc_methlist: 0x3ac
--  __TEXT.__const: 0x10
-+  __TEXT.__const: 0x30
-   __TEXT.__gcc_except_tab: 0x8c
-   __TEXT.__cstring: 0x6f
--  __TEXT.__oslogstring: 0x75
-+  __TEXT.__oslogstring: 0x2cc
-   __TEXT.__unwind_info: 0xf8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x360
-+  __DATA_CONST.__objc_selrefs: 0x368
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__objc_arraydata: 0x8
-   __DATA_CONST.__got: 0x88
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 38
 -  Symbols:   58
 -  CStrings:  11
 +  Symbols:   60
 +  CStrings:  15
- 
 Symbols:
 + _AXAIWhiteGloveLoggingEnabled
 + _objc_release_x24

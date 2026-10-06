@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CoreLocationReplay.framework/CoreLocationReplay`
 
-```diff
+### Section Size Changes
 
- 3185.0.6.0.3
--  __TEXT.__text: 0x18a70
-+  __TEXT.__text: 0x18a74
-   __TEXT.__objc_methlist: 0x17c
-   __TEXT.__const: 0x3d30
-   __TEXT.__gcc_except_tab: 0x598
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x18a70` | `0x18a74` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_25b8f5a2c -> sub_25c5e0a2c : 284 -> 288
+~ sub_25b7c4a2c -> sub_25c4c4a2c : 284 -> 288
 ```

@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/AccessorySetupKit.framework/AccessorySetupKit`
 
-```diff
+### Section Size Changes
 
- 2700.34.0.0.0
--  __TEXT.__text: 0x24954
-+  __TEXT.__text: 0x24958
-   __TEXT.__objc_methlist: 0x2168
-   __TEXT.__const: 0x658
-   __TEXT.__gcc_except_tab: 0x4e4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x24954` | `0x24958` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _OUTLINED_FUNCTION_0 : 20 -> 16
 ~ _OUTLINED_FUNCTION_1 : 16 -> 20

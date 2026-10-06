@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/ChronoKit.framework/ChronoKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x18fd64` | `0x18fdcc` | **`+0x68`** |
+| `__AUTH_CONST.__auth_got` | `0x1f30` | `0x1f28` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 749.0.2.0.0
--  __TEXT.__text: 0x18fd64
-+  __TEXT.__text: 0x18fdcc
-   __TEXT.__objc_methlist: 0x6c8
-   __TEXT.__const: 0xe3b8
-   __TEXT.__cstring: 0x4913
-
-   __AUTH_CONST.__const: 0x8550
-   __AUTH_CONST.__cfstring: 0x120
-   __AUTH_CONST.__objc_const: 0x8e20
--  __AUTH_CONST.__auth_got: 0x1f30
-+  __AUTH_CONST.__auth_got: 0x1f28
-   __AUTH.__objc_data: 0x280
-   __AUTH.__data: 0xa48
-   __DATA.__objc_ivar: 0x4
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 7889
--  Symbols:   2590
-+  Symbols:   2589
-   CStrings:  876
- 
+-  Symbols:   2384
++  Symbols:   2383
 Symbols:
 - _objc_retain_x12
 Functions:

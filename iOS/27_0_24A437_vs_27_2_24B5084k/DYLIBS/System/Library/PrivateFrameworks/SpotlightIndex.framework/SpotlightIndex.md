@@ -2,101 +2,59 @@
 
 > `/System/Library/PrivateFrameworks/SpotlightIndex.framework/SpotlightIndex`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4f9190` | `0x483c40` | **`-0x75550`** |
+| `__DATA_DIRTY.__bss` | `0x3a968` | `0x9c78` | **`-0x30cf0`** |
+| `__TEXT.__oslogstring` | `0x278f0` | `0x1dda1` | **`-0x9b4f`** |
+| `__TEXT.__cstring` | `0x3614e` | `0x2f2f2` | **`-0x6e5c`** |
+| `__AUTH_CONST.__cfstring` | `0xf140` | `0x8300` | **`-0x6e40`** |
+| `__TEXT.__gcc_except_tab` | `0x3828` | `0x29c` | **`-0x358c`** |
+| `__DATA_CONST.__const` | `0xa450` | `0x8a58` | **`-0x19f8`** |
+| `__TEXT.__ustring` | `0x13f6` | `0x2aa` | **`-0x114c`** |
+| `__AUTH_CONST.__objc_const` | `0x1508` | `0x5e8` | **`-0xf20`** |
+| `__TEXT.__unwind_info` | `0x6a60` | `0x5b50` | **`-0xf10`** |
+| `__AUTH_CONST.__const` | `0xa2b0` | `0x93f0` | **`-0xec0`** |
+| `__TEXT.__const` | `0xb203` | `0xa56a` | **`-0xc99`** |
+| `__DATA.__bss` | `0x3670` | `0x4040` | **`+0x9d0`** |
+| `__TEXT.__objc_methlist` | `0xb04` | `0x404` | **`-0x700`** |
+| `__DATA_CONST.__objc_selrefs` | `0xc48` | `0x670` | **`-0x5d8`** |
+| `__DATA_DIRTY.__objc_data` | `0x3c0` | `0xa0` | **`-0x320`** |
+| `__DATA_CONST.__objc_arraydata` | `0x280` | `0x98` | **`-0x1e8`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x1b0` | `—` | **`-0x1b0`** |
+| `__TEXT.__dlopen_cstrs` | `0x150` | `—` | **`-0x150`** |
+| `__AUTH_CONST.__objc_intobj` | `0x120` | `0x18` | **`-0x108`** |
+| `__AUTH.__objc_data` | `0x190` | `0xa0` | **`-0xf0`** |
+| `__DATA_CONST.__got` | `0x418` | `0x350` | **`-0xc8`** |
+| `__DATA_DIRTY.__data` | `0x590` | `0x4d8` | **`-0xb8`** |
+| `__DATA.__objc_ivar` | `0x100` | `0x60` | **`-0xa0`** |
+| `__AUTH_CONST.__auth_got` | `0x1fc0` | `0x1f30` | **`-0x90`** |
+| `__DATA_CONST.__objc_classlist` | `0x88` | `0x20` | **`-0x68`** |
+| `__DATA_CONST.__objc_superrefs` | `0x70` | `0x18` | **`-0x58`** |
+| `__AUTH_CONST.__objc_dictobj` | `0x78` | `0x28` | **`-0x50`** |
+| `__DATA.__data` | `0xe58` | `0xe98` | **`+0x40`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x30` | `0x18` | **`-0x18`** |
+| `__AUTH_CONST.__objc_floatobj` | `0x10` | `—` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -2459.105.0.0.0
--  __TEXT.__text: 0x4f1588
--  __TEXT.__objc_methlist: 0xb04
--  __TEXT.__const: 0xb203
--  __TEXT.__cstring: 0x3614e
--  __TEXT.__gcc_except_tab: 0x3828
--  __TEXT.__oslogstring: 0x278f0
--  __TEXT.__ustring: 0x13f6
--  __TEXT.__dlopen_cstrs: 0x150
 +2465.1.2.0.0
-+  __TEXT.__text: 0x47c720
-+  __TEXT.__objc_methlist: 0x404
-+  __TEXT.__const: 0xa56a
-+  __TEXT.__cstring: 0x2f2f2
-+  __TEXT.__gcc_except_tab: 0x29c
-+  __TEXT.__oslogstring: 0x1dda1
-+  __TEXT.__ustring: 0x2aa
-   __TEXT.__dof_mds: 0x29b
--  __TEXT.__unwind_info: 0x82f8
-+  __TEXT.__unwind_info: 0x7190
-   __TEXT.__eh_frame: 0x220
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xa450
--  __DATA_CONST.__objc_classlist: 0x88
-+  __DATA_CONST.__const: 0x8a58
-+  __DATA_CONST.__objc_classlist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xc48
--  __DATA_CONST.__objc_superrefs: 0x70
--  __DATA_CONST.__objc_arraydata: 0x280
--  __DATA_CONST.__got: 0x418
--  __AUTH_CONST.__const: 0xa2b0
--  __AUTH_CONST.__cfstring: 0xf140
--  __AUTH_CONST.__objc_const: 0x1508
-+  __DATA_CONST.__objc_selrefs: 0x670
-+  __DATA_CONST.__objc_superrefs: 0x18
-+  __DATA_CONST.__objc_arraydata: 0x98
-+  __DATA_CONST.__got: 0x350
-+  __AUTH_CONST.__const: 0x93f0
-+  __AUTH_CONST.__cfstring: 0x8300
-+  __AUTH_CONST.__objc_const: 0x5e8
-   __AUTH_CONST.__weak_auth_got: 0x28
--  __AUTH_CONST.__objc_floatobj: 0x10
--  __AUTH_CONST.__objc_intobj: 0x120
--  __AUTH_CONST.__objc_dictobj: 0x78
--  __AUTH_CONST.__objc_arrayobj: 0x30
--  __AUTH_CONST.__objc_doubleobj: 0x1b0
--  __AUTH_CONST.__auth_got: 0x1fc0
--  __AUTH.__objc_data: 0x190
-+  __AUTH_CONST.__objc_intobj: 0x18
-+  __AUTH_CONST.__objc_dictobj: 0x28
-+  __AUTH_CONST.__objc_arrayobj: 0x18
-+  __AUTH_CONST.__auth_got: 0x1f30
-+  __AUTH.__objc_data: 0xa0
-   __AUTH.__data: 0x18d8
--  __DATA.__objc_ivar: 0x100
--  __DATA.__data: 0xe58
--  __DATA_DIRTY.__objc_data: 0x3c0
--  __DATA_DIRTY.__data: 0x590
--  __DATA_DIRTY.__bss: 0x3a968
-+  __DATA.__objc_ivar: 0x60
-+  __DATA.__data: 0xe98
-+  __DATA_DIRTY.__objc_data: 0xa0
-+  __DATA_DIRTY.__data: 0x4d8
-+  __DATA_DIRTY.__bss: 0x9c78
-   __DATA_DIRTY.__common: 0x2402c
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/PrivateFrameworks/DiagnosticRequest.framework/DiagnosticRequest
-   - /System/Library/PrivateFrameworks/LoggingSupport.framework/LoggingSupport
-   - /System/Library/PrivateFrameworks/MetadataUtilities.framework/MetadataUtilities
 +  - /System/Library/PrivateFrameworks/PommesRankingCore.framework/PommesRankingCore
-   - /System/Library/PrivateFrameworks/PowerLog.framework/PowerLog
--  - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /System/Library/PrivateFrameworks/SpotlightLinguistics.framework/SpotlightLinguistics
-   - /System/Library/PrivateFrameworks/SymptomDiagnosticReporter.framework/SymptomDiagnosticReporter
-   - /usr/lib/libMobileGestalt.dylib
 
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
+-  - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
+
 -  Functions: 8494
--  Symbols:   12060
+-  Symbols:   11725
 -  CStrings:  10439
 +  Functions: 7750
-+  Symbols:   10449
++  Symbols:   10261
 +  CStrings:  8055
- 
 Symbols:
 + GCC_except_table222
 + GCC_except_table229
@@ -1639,153 +1597,6 @@ Symbols:
 - _loadOptionalSearchTermsFromSRA.onceToken
 - _m
 - _objc_exception_throw
-- _objc_msgSend$_buildKeywordInfoForLanguageCode:
-- _objc_msgSend$addChild:
-- _objc_msgSend$addObjectsFromArray:
-- _objc_msgSend$allKeys
-- _objc_msgSend$allValues
-- _objc_msgSend$argumentDirectionForKeyword:
-- _objc_msgSend$array
-- _objc_msgSend$arrayWithArray:
-- _objc_msgSend$arrayWithCapacity:
-- _objc_msgSend$arrayWithObject:
-- _objc_msgSend$astHasFieldNodes:
-- _objc_msgSend$buildASTFromQuery:queryUnderstanding:
-- _objc_msgSend$buildTokenToFilterAndU2LabelsMapping
-- _objc_msgSend$bytes
-- _objc_msgSend$caseInsensitiveCompare:
-- _objc_msgSend$characterAtIndex:
-- _objc_msgSend$characterIsMember:
-- _objc_msgSend$characterSetWithCharactersInString:
-- _objc_msgSend$children
-- _objc_msgSend$compare:options:
-- _objc_msgSend$component:fromDate:
-- _objc_msgSend$componentsSeparatedByCharactersInSet:
-- _objc_msgSend$confidence
-- _objc_msgSend$containsString:
-- _objc_msgSend$createDirectoryAtPath:withIntermediateDirectories:attributes:error:
-- _objc_msgSend$currentCalendar
-- _objc_msgSend$currentHandler
-- _objc_msgSend$dataWithJSONObject:options:error:
-- _objc_msgSend$dictionary
-- _objc_msgSend$dictionaryWithObjectsAndKeys:
-- _objc_msgSend$direction
-- _objc_msgSend$enumerateAttribute:inRange:options:usingBlock:
-- _objc_msgSend$enumerateAttributesInRange:options:usingBlock:
-- _objc_msgSend$enumerateObjectsUsingBlock:
-- _objc_msgSend$exceptionWithName:reason:userInfo:
-- _objc_msgSend$expression
-- _objc_msgSend$extractQUFiltersAndLabelsFromQueryUnderstanding:
-- _objc_msgSend$extractSourceTokenFromRange:originalQuery:
-- _objc_msgSend$fieldType
-- _objc_msgSend$fieldTypeForKeyword:
-- _objc_msgSend$fieldTypeString
-- _objc_msgSend$filterString
-- _objc_msgSend$formUnionWithCharacterSet:
-- _objc_msgSend$getFilterSourceTokenForIndex:
-- _objc_msgSend$handleFailureInFunction:file:lineNumber:description:
-- _objc_msgSend$hasFieldKeywordPrefix:
-- _objc_msgSend$hasNonEmailQPFilters
-- _objc_msgSend$hasSuffix:
-- _objc_msgSend$infoWithFieldType:
-- _objc_msgSend$infoWithFieldType:direction:
-- _objc_msgSend$initSynonymsForLanguageCode:
-- _objc_msgSend$initWithContentsOfFile:options:error:
-- _objc_msgSend$initWithFieldType:
-- _objc_msgSend$initWithFieldType:direction:
-- _objc_msgSend$initWithFieldType:originalKeyword:expression:sourceToken:isLastToken:isIgnored:
-- _objc_msgSend$initWithFilterString:sourceToken:isLastToken:
-- _objc_msgSend$initWithLanguageCode:
-- _objc_msgSend$initWithLanguageCode:context:logHeader:
-- _objc_msgSend$initWithLocale:
-- _objc_msgSend$initWithNodeType:children:sourceToken:isLastToken:
-- _objc_msgSend$initWithValue:sourceToken:isLastToken:isNegated:isIgnored:
-- _objc_msgSend$isIgnored
-- _objc_msgSend$isIgnoredToken:
-- _objc_msgSend$isLastToken
-- _objc_msgSend$isNegated
-- _objc_msgSend$isNegatedToken:
-- _objc_msgSend$isQuotedToken:
-- _objc_msgSend$isSpaceDelimited
-- _objc_msgSend$itemWithNode:visited:
-- _objc_msgSend$keywordInfo
-- _objc_msgSend$languageCode
-- _objc_msgSend$languageProfile
-- _objc_msgSend$lastObject
-- _objc_msgSend$loadOptionalKeywordsDictionaryFromAssetPlistType:
-- _objc_msgSend$localizedLowercaseString
-- _objc_msgSend$newlineCharacterSet
-- _objc_msgSend$node
-- _objc_msgSend$node:containsFilter:
-- _objc_msgSend$nodeType
-- _objc_msgSend$numberFromString:
-- _objc_msgSend$numberWithFloat:
-- _objc_msgSend$numberWithUnsignedChar:
-- _objc_msgSend$numberWithUnsignedInteger:
-- _objc_msgSend$originalKeyword
-- _objc_msgSend$originalQuery
-- _objc_msgSend$originalToken
-- _objc_msgSend$parseExpressionAtIndex:consumedTokens:
-- _objc_msgSend$parseFieldExpressionAtIndex:consumedTokens:
-- _objc_msgSend$parseIgnoredTermAtIndex:consumedTokens:
-- _objc_msgSend$parseMultiTokenQuotedValueStartingWithValue:atIndex:consumedTokens:
-- _objc_msgSend$parseNegatedTermAtIndex:consumedTokens:
-- _objc_msgSend$parseQuotedExpressionAtIndex:consumedTokens:
-- _objc_msgSend$parseSentKeywordAtIndex:consumedTokens:
-- _objc_msgSend$parseTokensIntoAST
-- _objc_msgSend$postProcessAstForMailToken:
-- _objc_msgSend$precomposedStringWithCanonicalMapping
-- _objc_msgSend$qpParsesDesc
-- _objc_msgSend$rangeOfCharacterFromSet:
-- _objc_msgSend$rangeOfComposedCharacterSequenceAtIndex:
-- _objc_msgSend$rangeOfString:options:
-- _objc_msgSend$rangeValue
-- _objc_msgSend$removeAllObjects
-- _objc_msgSend$removeLastObject
-- _objc_msgSend$replaceCharactersInRange:withString:
-- _objc_msgSend$reverseObjectEnumerator
-- _objc_msgSend$set
-- _objc_msgSend$setAlwaysShowsDecimalSeparator:
-- _objc_msgSend$setChildren:
-- _objc_msgSend$setIsIgnored:
-- _objc_msgSend$setLocale:
-- _objc_msgSend$setMailTokenIgnoredInAst:
-- _objc_msgSend$setMinimumFractionDigits:
-- _objc_msgSend$setNode:
-- _objc_msgSend$setNumberStyle:
-- _objc_msgSend$setObject:atIndexedSubscript:
-- _objc_msgSend$setOriginalQuery:
-- _objc_msgSend$setUsesGroupingSeparator:
-- _objc_msgSend$setVisited:
-- _objc_msgSend$setWithArray:
-- _objc_msgSend$setWithObjects:
-- _objc_msgSend$sourceToken
-- _objc_msgSend$standardUserDefaults
-- _objc_msgSend$string
-- _objc_msgSend$stringByAppendingString:
-- _objc_msgSend$stringByDeletingLastPathComponent
-- _objc_msgSend$stringByReplacingCharactersInRange:withString:
-- _objc_msgSend$stringByTrimmingCharactersInSet:
-- _objc_msgSend$stringFromNumber:
-- _objc_msgSend$stripNegationFromToken:
-- _objc_msgSend$strongToStrongObjectsMapTable
-- _objc_msgSend$subarrayWithRange:
-- _objc_msgSend$substringFromIndex:
-- _objc_msgSend$substringWithRange:
-- _objc_msgSend$synonymsForTerm:
-- _objc_msgSend$timeIntervalSinceReferenceDate
-- _objc_msgSend$toDictionary
-- _objc_msgSend$tokenizeQuery:
-- _objc_msgSend$unionSet:
-- _objc_msgSend$value
-- _objc_msgSend$valueWithPointer:
-- _objc_msgSend$valueWithRange:
-- _objc_msgSend$variation
-- _objc_msgSend$variations
-- _objc_msgSend$visited
-- _objc_msgSend$whitespaceAndNewlineCharacterSet
-- _objc_msgSend$whitespaceCharacterSet
-- _objc_msgSend$writeToFile:options:error:
 - _objc_retain
 - _objc_retain_x19
 - _objc_retain_x20

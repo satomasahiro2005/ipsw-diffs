@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/ThreatNotificationUI.framework/ThreatNotificationUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2b394` | `0x2b3c8` | **`+0x34`** |
+| `__AUTH_CONST.__auth_got` | `0xd50` | `0xd48` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 46.0.1.0.0
--  __TEXT.__text: 0x2b394
-+  __TEXT.__text: 0x2b3c8
-   __TEXT.__objc_methlist: 0x328
-   __TEXT.__const: 0x1e56
-   __TEXT.__constg_swiftt: 0xc4c
-
-   __DATA_CONST.__got: 0x3f8
-   __AUTH_CONST.__const: 0x1488
-   __AUTH_CONST.__objc_const: 0xc18
--  __AUTH_CONST.__auth_got: 0xd50
-+  __AUTH_CONST.__auth_got: 0xd48
-   __AUTH.__objc_data: 0x4d8
-   __AUTH.__data: 0x880
-   __DATA.__data: 0x958
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 1069
--  Symbols:   3269
-+  Symbols:   3268
-   CStrings:  103
- 
+-  Symbols:   3174
++  Symbols:   3173
 Symbols:
 - _swift_retain_x28
 Functions:

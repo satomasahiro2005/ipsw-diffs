@@ -2,52 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/UIAccessibility.framework/UIAccessibility`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6d2c4` | `0x6d3c8` | **`+0x104`** |
+| `__AUTH.__objc_data` | `0xe60` | `0xe10` | **`-0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x4b0` | `0x500` | **`+0x50`** |
+| `__DATA.__bss` | `0x4d0` | `0x4c8` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5760` | `0x5768` | **`+0x8`** |
+| `__DATA_DIRTY.__bss` | `0x238` | `0x240` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x6c24` | `0x6c2c` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x1b48` | `0x1b50` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3245.7.1.0.0
--  __TEXT.__text: 0x6afdc
--  __TEXT.__objc_methlist: 0x6c24
 +3245.8.2.0.0
-+  __TEXT.__text: 0x6b0d4
-+  __TEXT.__objc_methlist: 0x6c2c
-   __TEXT.__const: 0x278
-   __TEXT.__dlopen_cstrs: 0x266
-   __TEXT.__gcc_except_tab: 0xda0
 
-   __DATA_CONST.__objc_catlist: 0xa8
-   __DATA_CONST.__objc_protolist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5760
-+  __DATA_CONST.__objc_selrefs: 0x5768
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__objc_superrefs: 0x110
-   __DATA_CONST.__objc_arraydata: 0x128
-
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0xe60
-+  __AUTH.__objc_data: 0xe10
-   __DATA.__objc_ivar: 0x184
-   __DATA.__data: 0x748
-   __DATA.__common: 0x18
--  __DATA_DIRTY.__objc_data: 0x4b0
--  __DATA_DIRTY.__bss: 0x238
-+  __DATA_DIRTY.__objc_data: 0x500
-+  __DATA_DIRTY.__bss: 0x240
-   __DATA_DIRTY.__common: 0x264
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2626
--  Symbols:   6758
+-  Symbols:   4591
 +  Functions: 2627
-+  Symbols:   6761
-   CStrings:  1188
- 
++  Symbols:   4593
 Symbols:
 + -[UIWindowScene(UIAccessibilityElementTraversal) _accessibilityChildrenByAddingMultitaskingElements:]
 + GCC_except_table1014
@@ -114,7 +92,6 @@ Symbols:
 + GCC_except_table949
 + GCC_except_table983
 + _AXUIKeyboardVisibleInputScreenFrame
-+ _objc_msgSend$_accessibilityChildrenByAddingMultitaskingElements:
 - GCC_except_table1013
 - GCC_except_table1024
 - GCC_except_table1059
@@ -180,7 +157,7 @@ Symbols:
 - GCC_except_table982
 Functions:
 ~ -[NSObject(UIAccessibilityElementTraversal) _accessibilityEnumerateSiblingsWithParent:options:usingBlock:] : 2888 -> 2928
-~ -[UIWindowScene(UIAccessibilityElementTraversal) _accessibilityViewChildrenWithOptions:] : 860 -> 764
+~ -[UIWindowScene(UIAccessibilityElementTraversal) _accessibilityViewChildrenWithOptions:] : 872 -> 776
 + -[UIWindowScene(UIAccessibilityElementTraversal) _accessibilityChildrenByAddingMultitaskingElements:]
 ~ -[NSObject(AXPrivCategory) _accessibilityKeyboardFrame] : 56 -> 116
 ```

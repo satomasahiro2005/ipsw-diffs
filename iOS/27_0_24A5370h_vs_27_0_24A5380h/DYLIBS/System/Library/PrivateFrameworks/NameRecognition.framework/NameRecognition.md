@@ -2,37 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/NameRecognition.framework/NameRecognition`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7de20` | `0x7de5c` | **`+0x3c`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x7de20
-+  __TEXT.__text: 0x7de5c
-   __TEXT.__objc_methlist: 0x2c4
-   __TEXT.__const: 0x4a78
-   __TEXT.__constg_swiftt: 0x1464
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
+-3232.3.0.0.0
++3234.5.0.0.0
 Functions:
-~ sub_28c66d220 -> sub_291384220 : 744 -> 824
-~ sub_28c675da0 -> sub_29138cdf0 : 344 -> 324
-
+~ sub_28c535220 -> sub_291278220 : 744 -> 824
+~ sub_28c53dda0 -> sub_291280df0 : 344 -> 324
 ```

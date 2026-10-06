@@ -2,134 +2,63 @@
 
 > `/System/Library/PrivateFrameworks/DashBoard.framework/DashBoard`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2ed9dc` | `0x2f6d78` | **`+0x939c`** |
+| `__DATA_DIRTY.__objc_data` | `0x640` | `0xba0` | **`+0x560`** |
+| `__AUTH.__objc_data` | `0xee80` | `0xea80` | **`-0x400`** |
+| `__AUTH_CONST.__objc_const` | `0x52850` | `0x52bf0` | **`+0x3a0`** |
+| `__AUTH_CONST.__const` | `0xc460` | `0xc730` | **`+0x2d0`** |
+| `__TEXT.__const` | `0xce04` | `0xd014` | **`+0x210`** |
+| `__TEXT.__swift5_typeref` | `0xb6f0` | `0xb8f6` | **`+0x206`** |
+| `__DATA_DIRTY.__data` | `—` | `0x1f8` | **`+0x1f8`** |
+| `__DATA.__bss` | `0x8998` | `0x8b48` | **`+0x1b0`** |
+| `__TEXT.__objc_methlist` | `0x177bc` | `0x1792c` | **`+0x170`** |
+| `__TEXT.__cstring` | `0xd8f7` | `0xda57` | **`+0x160`** |
+| `__DATA.__data` | `0xa300` | `0xa450` | **`+0x150`** |
+| `__TEXT.__oslogstring` | `0x176fc` | `0x1782c` | **`+0x130`** |
+| `__TEXT.__constg_swiftt` | `0x6f60` | `0x7074` | **`+0x114`** |
+| `__AUTH.__data` | `0x37f8` | `0x3708` | **`-0xf0`** |
+| `__AUTH_CONST.__auth_got` | `0x35b0` | `0x36a0` | **`+0xf0`** |
+| `__TEXT.__swift5_fieldmd` | `0x42f4` | `0x43d4` | **`+0xe0`** |
+| `__DATA_CONST.__objc_selrefs` | `0xcf40` | `0xcff8` | **`+0xb8`** |
+| `__TEXT.__unwind_info` | `0x9728` | `0x97b8` | **`+0x90`** |
+| `__TEXT.__eh_frame` | `0x4718` | `0x469c` | **`-0x7c`** |
+| `__DATA_CONST.__got` | `0x2d38` | `0x2d98` | **`+0x60`** |
+| `__TEXT.__swift5_reflstr` | `0x53e7` | `0x5437` | **`+0x50`** |
+| `__TEXT.__swift5_capture` | `0x2f68` | `0x2f1c` | **`-0x4c`** |
+| `__AUTH_CONST.__cfstring` | `0x86a0` | `0x86e0` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x37e8` | `0x3828` | **`+0x40`** |
+| `__DATA_DIRTY.__bss` | `0x148` | `0x180` | **`+0x38`** |
+| `__TEXT.__swift5_assocty` | `0x948` | `0x910` | **`-0x38`** |
+| `__TEXT.__swift_as_cont` | `0x224` | `0x1fc` | **`-0x28`** |
+| `__TEXT.__swift_as_entry` | `0x150` | `0x138` | **`-0x18`** |
+| `__TEXT.__swift5_types` | `0x634` | `0x648` | **`+0x14`** |
+| `__TEXT.__swift_as_ret` | `0x130` | `0x11c` | **`-0x14`** |
+| `__DATA_CONST.__objc_protolist` | `0xb08` | `0xb18` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x424` | `0x430` | **`+0xc`** |
+| `__DATA.__objc_ivar` | `0x129c` | `0x12a4` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0xb40` | `0xb48` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x530` | `0x538` | **`+0x8`** |
+| `__DATA_DIRTY.__common` | `0x8` | `0x10` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2ed9dc
--  __TEXT.__objc_methlist: 0x177bc
--  __TEXT.__const: 0xce04
--  __TEXT.__cstring: 0xd8f7
-+  __TEXT.__text: 0x2f6d78
-+  __TEXT.__objc_methlist: 0x1792c
-+  __TEXT.__const: 0xd014
-+  __TEXT.__cstring: 0xda57
-   __TEXT.__gcc_except_tab: 0x1a2c
--  __TEXT.__oslogstring: 0x176fc
--  __TEXT.__swift5_typeref: 0xb6f0
--  __TEXT.__constg_swiftt: 0x6f60
--  __TEXT.__swift5_reflstr: 0x53e7
--  __TEXT.__swift5_fieldmd: 0x42f4
--  __TEXT.__swift5_capture: 0x2f68
--  __TEXT.__swift5_types: 0x634
--  __TEXT.__swift5_assocty: 0x948
--  __TEXT.__swift5_proto: 0x424
-+  __TEXT.__oslogstring: 0x1782c
-+  __TEXT.__swift5_typeref: 0xb8f6
-+  __TEXT.__constg_swiftt: 0x7074
-+  __TEXT.__swift5_reflstr: 0x5437
-+  __TEXT.__swift5_fieldmd: 0x43d4
-+  __TEXT.__swift5_capture: 0x2f1c
-+  __TEXT.__swift5_types: 0x648
-+  __TEXT.__swift5_assocty: 0x910
-+  __TEXT.__swift5_proto: 0x430
-   __TEXT.__swift5_protos: 0x44
-   __TEXT.__swift5_builtin: 0x348
--  __TEXT.__swift_as_entry: 0x150
--  __TEXT.__swift_as_ret: 0x130
--  __TEXT.__swift_as_cont: 0x224
-+  __TEXT.__swift_as_entry: 0x138
-+  __TEXT.__swift_as_ret: 0x11c
-+  __TEXT.__swift_as_cont: 0x1fc
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x9728
--  __TEXT.__eh_frame: 0x4718
-+  __TEXT.__unwind_info: 0x97b8
-+  __TEXT.__eh_frame: 0x469c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x37e8
--  __DATA_CONST.__objc_classlist: 0xb40
-+  __DATA_CONST.__const: 0x3828
-+  __DATA_CONST.__objc_classlist: 0xb48
-   __DATA_CONST.__objc_catlist: 0xd0
--  __DATA_CONST.__objc_protolist: 0xb08
-+  __DATA_CONST.__objc_protolist: 0xb18
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xcf40
--  __DATA_CONST.__objc_protorefs: 0x530
-+  __DATA_CONST.__objc_selrefs: 0xcff8
-+  __DATA_CONST.__objc_protorefs: 0x538
-   __DATA_CONST.__objc_superrefs: 0x4b0
-   __DATA_CONST.__objc_arraydata: 0x178
--  __DATA_CONST.__got: 0x2d38
--  __AUTH_CONST.__const: 0xc460
--  __AUTH_CONST.__cfstring: 0x86a0
--  __AUTH_CONST.__objc_const: 0x52850
-+  __DATA_CONST.__got: 0x2d98
-+  __AUTH_CONST.__const: 0xc730
-+  __AUTH_CONST.__cfstring: 0x86e0
-+  __AUTH_CONST.__objc_const: 0x52bf0
-   __AUTH_CONST.__objc_intobj: 0x348
-   __AUTH_CONST.__objc_arrayobj: 0x1c8
-   __AUTH_CONST.__objc_doubleobj: 0xc0
-   __AUTH_CONST.__objc_dictobj: 0x78
--  __AUTH_CONST.__auth_got: 0x35b0
--  __AUTH.__objc_data: 0xee80
--  __AUTH.__data: 0x37f8
--  __DATA.__objc_ivar: 0x129c
--  __DATA.__data: 0xa300
--  __DATA.__bss: 0x8998
-+  __AUTH_CONST.__auth_got: 0x36a0
-+  __AUTH.__objc_data: 0xea80
-+  __AUTH.__data: 0x3708
-+  __DATA.__objc_ivar: 0x12a4
-+  __DATA.__data: 0xa450
-+  __DATA.__bss: 0x8b48
-   __DATA.__common: 0x390
--  __DATA_DIRTY.__objc_data: 0x640
--  __DATA_DIRTY.__bss: 0x148
--  __DATA_DIRTY.__common: 0x8
-+  __DATA_DIRTY.__objc_data: 0xba0
-+  __DATA_DIRTY.__data: 0x1f8
-+  __DATA_DIRTY.__bss: 0x180
-+  __DATA_DIRTY.__common: 0x10
-   - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/Combine.framework/Combine
+-574.2.0.0.0
++577.2.0.0.0
 
-   - /usr/lib/swift/libswiftAVFoundation.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
-   - /usr/lib/swift/libswiftCallKit.dylib
 -  - /usr/lib/swift/libswiftCarPlay.dylib
-   - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15314
--  Symbols:   30158
--  CStrings:  4670
+-  Symbols:   14349
+-  CStrings:  3591
 +  Functions: 15396
-+  Symbols:   30237
-+  CStrings:  4685
- 
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __DATA.__common : content changed
++  Symbols:   14407
++  CStrings:  3604
 Symbols:
 + -[DBDashboard environmentConfiguration:appearanceStyleDidChange:fence:]
 + -[DBDashboard widgetsPageContentOffsetX]
@@ -183,25 +112,6 @@ Symbols:
 + ___swift_closure_destructor.70Tm
 + _associated conformance 9DashBoard35DBInstrumentClusterSceneCoordinatorC03AppE3Key33_AA18878D27B62631944FB3DCC9C55247LLVSHAASQ
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA6VStackVyAA05TupleD0VyACyACy9DashBoard25DBNavigationMapWidgetViewVAA16_FlexFrameLayoutVGAA21_TraitWritingModifierVyAA010TransitionP3KeyVGGSg_ACyAH012DBNowPlayingkL0VALGSgACyACyAH07DBSmartK5ViewcVAA01_nO0VGARGSgQPGGAA08_PaddingO0VGAA010_AnimationR0VySbGGA11_GAA0L0HPA12_AAA14_HPA8_AAA14_HPA5_AAA14_HPyHC_A7_AA0lR0HPyHCHC_A11_AAA15_HPyHCHC_A11_AAA15_HPyHCHC
-+ _objc_msgSend$_applyCalmModePartAlphas
-+ _objc_msgSend$_updateAppearanceWithUserInterfaceStyle:fence:
-+ _objc_msgSend$_updateIconStyleConfigurationForHostedScene
-+ _objc_msgSend$applyCalmModeAlpha
-+ _objc_msgSend$buttonActionStatusItems
-+ _objc_msgSend$cafASCTree
-+ _objc_msgSend$environmentConfiguration:appearanceStyleDidChange:fence:
-+ _objc_msgSend$initForCarPlayShellWithNightModeProvider:
-+ _objc_msgSend$initWithContextDelegate:configuration:
-+ _objc_msgSend$initWithIsRightHandDrive:isRTL:
-+ _objc_msgSend$nightModeByDisplayID
-+ _objc_msgSend$setAlpha:forPartWithIdentifier:
-+ _objc_msgSend$setCalmModeActive:
-+ _objc_msgSend$setLegibilityWeight:
-+ _objc_msgSend$setPreferredContentSizeCategory:
-+ _objc_msgSend$setSceneVariant:
-+ _objc_msgSend$updateBackgroundVisibility
-+ _objc_msgSend$updateWithDescriptor:completion:
-+ _objc_msgSend$widgetsPageContentOffsetX
 + _swift_task_getMainExecutor
 + _swift_task_isCurrentExecutor
 + _symbolic SDy_____So7FBSceneCG 9DashBoard35DBInstrumentClusterSceneCoordinatorC03AppE3Key33_AA18878D27B62631944FB3DCC9C55247LLV
@@ -323,14 +233,6 @@ Symbols:
 - _associated conformance 9DashBoard18DBInCallWidgetViewV7SwiftUI29UIViewControllerRepresentableAaD0F0
 - _get_type_metadata 15Synchronization5MutexVyytG noncopyable
 - _get_witness_table 7SwiftUI15ModifiedContentVyACyACyACyAA6VStackVyAA05TupleD0VyACyACy9DashBoard25DBNavigationMapWidgetViewVAA16_FlexFrameLayoutVGAA21_TraitWritingModifierVyAA010TransitionP3KeyVGGSg_ACyAA5GroupVyAA012_ConditionalD0VyAH08DBInCallkL0VAH012DBNowPlayingkL0VGSgGALGACyACyAH07DBSmartK5ViewcVAA01_nO0VGARGSgQPGGAA08_PaddingO0VGAA010_AnimationR0VySbGGA19_GA19_GAA0L0HPA21_AAA23_HPA20_AAA23_HPA16_AAA23_HPA13_AAA23_HPyHC_A15_AA0lR0HPyHCHC_A19_AAA24_HPyHCHC_A19_AAA24_HPyHCHC_A19_AAA24_HPyHCHC
-- _objc_msgSend$_updateAppearanceWithUserInterfaceStyle:
-- _objc_msgSend$activateLiveActivityWithDescriptor:completion:
-- _objc_msgSend$childViewControllers
-- _objc_msgSend$environmentConfiguration:appearanceStyleDidChange:
-- _objc_msgSend$hideBackgroundIfNeeded
-- _objc_msgSend$initForCarPlayShell
-- _objc_msgSend$initWithContextDelegate:
-- _objc_msgSend$showLiveActivityWithDescriptor:
 - _swift_retain_x10
 - _swift_runtimeSupportsNoncopyableTypes
 - _symbolic SDySS_____G 18ActivityUIServices0A25CarPlayHostViewControllerC
@@ -434,5 +336,4 @@ CStrings:
 - "Start appearance transition: %{public}s"
 - "Transitioning Appearance: %{bool,public}d"
 - "Unable to activate live activity. descriptor: "
-
 ```

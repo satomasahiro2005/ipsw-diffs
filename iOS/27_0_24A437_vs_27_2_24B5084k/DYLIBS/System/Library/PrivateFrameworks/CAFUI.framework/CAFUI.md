@@ -2,113 +2,62 @@
 
 > `/System/Library/PrivateFrameworks/CAFUI.framework/CAFUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe40a4` | `0xfa66c` | **`+0x165c8`** |
+| `__TEXT.__swift5_typeref` | `0xc372` | `0xfa7c` | **`+0x370a`** |
+| `__TEXT.__const` | `0x6b84` | `0x7dd4` | **`+0x1250`** |
+| `__AUTH_CONST.__const` | `0x5d08` | `0x6ad0` | **`+0xdc8`** |
+| `__DATA.__bss` | `0x2ff0` | `0x3af0` | **`+0xb00`** |
+| `__DATA.__data` | `0x42a8` | `0x4b08` | **`+0x860`** |
+| `__TEXT.__eh_frame` | `0xd28` | `0x1578` | **`+0x850`** |
+| `__TEXT.__unwind_info` | `0x28f0` | `0x2e60` | **`+0x570`** |
+| `__TEXT.__swift5_fieldmd` | `0x1e8c` | `0x22e0` | **`+0x454`** |
+| `__TEXT.__constg_swiftt` | `0x3b40` | `0x3f8c` | **`+0x44c`** |
+| `__TEXT.__swift5_reflstr` | `0x1ede` | `0x22d1` | **`+0x3f3`** |
+| `__TEXT.__swift5_capture` | `0x1a14` | `0x1d88` | **`+0x374`** |
+| `__AUTH.__data` | `0x2b20` | `0x2e20` | **`+0x300`** |
+| `__AUTH_CONST.__objc_const` | `0xb7d0` | `0xba38` | **`+0x268`** |
+| `__AUTH_CONST.__auth_got` | `0x2018` | `0x2260` | **`+0x248`** |
+| `__TEXT.__cstring` | `0x3904` | `0x3af4` | **`+0x1f0`** |
+| `__TEXT.__oslogstring` | `0xd59` | `0xf39` | **`+0x1e0`** |
+| `__DATA_CONST.__got` | `0x11c0` | `0x1390` | **`+0x1d0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1f88` | `0x2080` | **`+0xf8`** |
+| `__TEXT.__swift5_assocty` | `0x4b8` | `0x5a8` | **`+0xf0`** |
+| `__AUTH_CONST.__cfstring` | `0x420` | `0x4e0` | **`+0xc0`** |
+| `__TEXT.__objc_methlist` | `0x27e0` | `0x2890` | **`+0xb0`** |
+| `__AUTH.__objc_data` | `0x3ae8` | `0x3b80` | **`+0x98`** |
+| `__TEXT.__swift5_proto` | `0x1f0` | `0x268` | **`+0x78`** |
+| `__DATA_CONST.__const` | `0x548` | `0x5a8` | **`+0x60`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x40` | **`+0x40`** |
+| `__TEXT.__swift5_types` | `0x21c` | `0x254` | **`+0x38`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x28` | **`+0x28`** |
+| `__TEXT.__swift_as_ret` | `—` | `0x20` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x240` | `0x258` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x24` | `0x38` | **`+0x14`** |
+| `__TEXT.__swift5_builtin` | `0xdc` | `0xf0` | **`+0x14`** |
+| `__TEXT.__swift5_protos` | `0x44` | `0x58` | **`+0x14`** |
+| `__DATA_CONST.__objc_superrefs` | `0x18` | `0x20` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -542.7.0.0.0
--  __TEXT.__text: 0xdeb04
--  __TEXT.__objc_methlist: 0x27e0
--  __TEXT.__const: 0x6b84
--  __TEXT.__cstring: 0x3904
--  __TEXT.__oslogstring: 0xd59
 +552.3.0.0.0
-+  __TEXT.__text: 0xf4348
-+  __TEXT.__objc_methlist: 0x2890
-+  __TEXT.__const: 0x7dd4
-+  __TEXT.__cstring: 0x3af4
-+  __TEXT.__oslogstring: 0xf39
-   __TEXT.__ustring: 0x5e
--  __TEXT.__swift5_typeref: 0xc372
--  __TEXT.__swift5_capture: 0x1a14
--  __TEXT.__swift5_reflstr: 0x1ede
--  __TEXT.__swift5_assocty: 0x4b8
--  __TEXT.__constg_swiftt: 0x3b40
--  __TEXT.__swift5_fieldmd: 0x1e8c
--  __TEXT.__swift5_builtin: 0xdc
--  __TEXT.__swift5_proto: 0x1f0
--  __TEXT.__swift5_types: 0x21c
--  __TEXT.__swift5_protos: 0x44
-+  __TEXT.__swift5_typeref: 0xfa7c
-+  __TEXT.__swift5_capture: 0x1d88
-+  __TEXT.__swift5_reflstr: 0x22d1
-+  __TEXT.__swift5_assocty: 0x5a8
-+  __TEXT.__constg_swiftt: 0x3f8c
-+  __TEXT.__swift5_fieldmd: 0x22e0
-+  __TEXT.__swift5_builtin: 0xf0
-+  __TEXT.__swift5_proto: 0x268
-+  __TEXT.__swift5_types: 0x254
-+  __TEXT.__swift5_protos: 0x58
-+  __TEXT.__swift_as_entry: 0x28
-+  __TEXT.__swift_as_ret: 0x20
-+  __TEXT.__swift_as_cont: 0x40
-   __TEXT.__swift5_mpenum: 0x2c
--  __TEXT.__unwind_info: 0x3418
--  __TEXT.__eh_frame: 0xd28
-+  __TEXT.__unwind_info: 0x3a88
-+  __TEXT.__eh_frame: 0x1578
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x548
--  __DATA_CONST.__objc_classlist: 0x240
-+  __DATA_CONST.__const: 0x5a8
-+  __DATA_CONST.__objc_classlist: 0x258
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x238
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1f88
-+  __DATA_CONST.__objc_selrefs: 0x2080
-   __DATA_CONST.__objc_protorefs: 0x118
--  __DATA_CONST.__objc_superrefs: 0x18
--  __DATA_CONST.__got: 0x11c0
--  __AUTH_CONST.__const: 0x5d08
--  __AUTH_CONST.__cfstring: 0x420
--  __AUTH_CONST.__objc_const: 0xb7d0
--  __AUTH_CONST.__auth_got: 0x2018
--  __AUTH.__objc_data: 0x3ae8
--  __AUTH.__data: 0x2b20
--  __DATA.__objc_ivar: 0x24
--  __DATA.__data: 0x42a8
-+  __DATA_CONST.__objc_superrefs: 0x20
-+  __DATA_CONST.__got: 0x1390
-+  __AUTH_CONST.__const: 0x6ad0
-+  __AUTH_CONST.__cfstring: 0x4e0
-+  __AUTH_CONST.__objc_const: 0xba38
-+  __AUTH_CONST.__auth_got: 0x2260
-+  __AUTH.__objc_data: 0x3b80
-+  __AUTH.__data: 0x2e20
-+  __DATA.__objc_ivar: 0x38
-+  __DATA.__data: 0x4b08
-   __DATA.__common: 0x49
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CarPlay.framework/CarPlay
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+
 +  - /System/Library/Frameworks/CoreImage.framework/CoreImage
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
 
-   - /System/Library/PrivateFrameworks/CarAccessoryFramework.framework/CarAccessoryFramework
-   - /System/Library/PrivateFrameworks/CarAssetUtils.framework/CarAssetUtils
-   - /System/Library/PrivateFrameworks/CarKit.framework/CarKit
 +  - /System/Library/PrivateFrameworks/CarPlayAsset.framework/CarPlayAsset
-   - /System/Library/PrivateFrameworks/CarPlayAssetUI.framework/CarPlayAssetUI
-   - /System/Library/PrivateFrameworks/CarPlayUI.framework/CarPlayUI
-   - /System/Library/PrivateFrameworks/CarPlayUIServices.framework/CarPlayUIServices
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4637
--  Symbols:   13184
+-  Symbols:   12526
 -  CStrings:  390
 +  Functions: 5151
-+  Symbols:   14642
++  Symbols:   13950
 +  CStrings:  411
- 
 Symbols:
 + +[CAFUIExternalSymbolCatalogStore shared]
 + -[CAFUIExternalSymbolCatalogStore .cxx_destruct]
@@ -2024,46 +1973,6 @@ Symbols:
 + _kCIInputImageKey
 + _keypath_get.156Tm
 + _keypath_set.5Tm
-+ _objc_msgSend$URLForResource:withExtension:
-+ _objc_msgSend$UTF8String
-+ _objc_msgSend$_lock_firstLogForSymbol:
-+ _objc_msgSend$_lock_resolveBundle
-+ _objc_msgSend$balanceDisabled
-+ _objc_msgSend$balanceHidden
-+ _objc_msgSend$bundle
-+ _objc_msgSend$bundleWithURL:
-+ _objc_msgSend$constraintEqualToAnchor:multiplier:constant:
-+ _objc_msgSend$containsObject:
-+ _objc_msgSend$ensureRegistered
-+ _objc_msgSend$extent
-+ _objc_msgSend$fadeDisabled
-+ _objc_msgSend$fadeHidden
-+ _objc_msgSend$filterWithName:
-+ _objc_msgSend$imageIdentifier
-+ _objc_msgSend$initWithCGImage:
-+ _objc_msgSend$initWithCGRect:
-+ _objc_msgSend$initWithOptions:
-+ _objc_msgSend$initWithX:Y:Z:W:
-+ _objc_msgSend$isEqual:
-+ _objc_msgSend$logNotFoundForSymbol:
-+ _objc_msgSend$logSource:forSymbol:
-+ _objc_msgSend$numberOfSections
-+ _objc_msgSend$outputImage
-+ _objc_msgSend$path
-+ _objc_msgSend$presetEntryList
-+ _objc_msgSend$presetEntrys
-+ _objc_msgSend$removeFromParentViewController
-+ _objc_msgSend$render:toBitmap:rowBytes:bounds:format:colorSpace:
-+ _objc_msgSend$selectedPresetEntryIndex
-+ _objc_msgSend$setNeedsFocusUpdate
-+ _objc_msgSend$setSelectedPresetEntryIndex:
-+ _objc_msgSend$setURL:
-+ _objc_msgSend$setValue:forKey:
-+ _objc_msgSend$shared
-+ _objc_msgSend$updateFocusIfNeeded
-+ _objc_msgSend$valueDisabled
-+ _objc_msgSend$valueHidden
-+ _objc_msgSend$willMoveToParentViewController:
 + _objc_retainAutorelease
 + _os_unfair_lock_lock
 + _os_unfair_lock_unlock
@@ -3070,12 +2979,6 @@ Symbols:
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE20buttonRepeatBehavioryQrAA06ButtoneF0VFQOyAcAE0D5StyleyQrqd__AA09PrimitivegH0Rd__lFQOyAA0G0VyAA15ModifiedContentVyAA5ImageV5CAFUI022FocusableAudioSettingsG033_4DC0A03647B19D6E6C689B0A29D8F124LLVGG_AA05PlaingH0VQo__Qo_HO
 - _keypath_get.144Tm
 - _keypath_set.2Tm
-- _objc_msgSend$addLineToPoint:
-- _objc_msgSend$bezierPathWithArcCenter:radius:startAngle:endAngle:clockwise:
-- _objc_msgSend$insertSubview:belowSubview:
-- _objc_msgSend$moveToPoint:
-- _objc_msgSend$presetLabel
-- _objc_msgSend$systemGray4Color
 - _objc_retain_x10
 - _swift_retain_x3
 - _symbolic Si__________y_____y_____yAByACyABy__________y_____GGADGAGGAIG_____y_____GG_Qo_Iegynr_ 5CAFUI10PickerItemV 7SwiftUI4ViewPADE16listRowSeparator_5edgesQrAD10VisibilityO_AD12VerticalEdgeO3SetVtFQO AD15ModifiedContentV AD012_ConditionalP0V AA011CAFUIPickerhF0V AD11_ClipEffectV AD22UnevenRoundedRectangleV AD21_TraitWritingModifierV AD04Listh6InsetsX3KeyV

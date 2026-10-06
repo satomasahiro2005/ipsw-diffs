@@ -2,100 +2,60 @@
 
 > `/System/ExclaveKit/System/Library/PrivateFrameworks/TokenGenerationInference.framework/TokenGenerationInference`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_mpenum`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x97a30` | `0x9a12c` | **`+0x26fc`** |
+| `__DATA_CONST.__const` | `0x5df8` | `0x6020` | **`+0x228`** |
+| `__TEXT.__swift5_capture` | `0xc08` | `0xcd0` | **`+0xc8`** |
+| `__TEXT.__oslogstring` | `0x1edf` | `0x1f8f` | **`+0xb0`** |
+| `__DATA.__data` | `0x41f0` | `0x4228` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0x23a0` | `0x23d8` | **`+0x38`** |
+| `__TEXT.__eh_frame` | `0x5578` | `0x55a8` | **`+0x30`** |
+| `__TEXT.__swift5_reflstr` | `0x1e3e` | `0x1e6e` | **`+0x30`** |
+| `__TEXT.__constg_swiftt` | `0x2570` | `0x2598` | **`+0x28`** |
+| `__DATA.__objc_const` | `0x34d8` | `0x34f8` | **`+0x20`** |
+| `__TEXT.__objc_methname` | `0x1bb8` | `0x1bd8` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x1fcc` | `0x1fe4` | **`+0x18`** |
+| `__TEXT.__const` | `0x3b10` | `0x3b20` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__cfstring`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
 - `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_selrefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_data`
-- `__DATA.__common`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -297.0.6.0.0
--  __TEXT.__text: 0x97a30
 +301.1.0.5.0
-+  __TEXT.__text: 0x9a12c
-   __TEXT.__auth_stubs: 0x2220
-   __TEXT.__objc_stubs: 0x5e0
-   __TEXT.__objc_methlist: 0x2f4
--  __TEXT.__const: 0x3b10
-+  __TEXT.__const: 0x3b20
-   __TEXT.__cstring: 0x1ac6
-   __TEXT.__gcc_except_tab: 0xd80
--  __TEXT.__objc_methname: 0x1bb8
--  __TEXT.__oslogstring: 0x1edf
-+  __TEXT.__objc_methname: 0x1bd8
-+  __TEXT.__oslogstring: 0x1f8f
-   __TEXT.__objc_classname: 0xb54
-   __TEXT.__objc_methtype: 0x102f
-   __TEXT.__swift5_typeref: 0x19a4
--  __TEXT.__swift5_reflstr: 0x1e3e
-+  __TEXT.__swift5_reflstr: 0x1e6e
-   __TEXT.__swift5_assocty: 0x138
--  __TEXT.__constg_swiftt: 0x2570
--  __TEXT.__swift5_fieldmd: 0x1fcc
-+  __TEXT.__constg_swiftt: 0x2598
-+  __TEXT.__swift5_fieldmd: 0x1fe4
-   __TEXT.__swift5_proto: 0x350
-   __TEXT.__swift5_types: 0x230
-   __TEXT.__swift5_protos: 0x80
--  __TEXT.__swift5_capture: 0xc08
-+  __TEXT.__swift5_capture: 0xcd0
-   __TEXT.__swift_as_entry: 0x11c
-   __TEXT.__swift_as_ret: 0x134
-   __TEXT.__swift_as_cont: 0x25c
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__unwind_info: 0x23a0
--  __TEXT.__eh_frame: 0x5578
--  __DATA_CONST.__const: 0x5df8
-+  __TEXT.__unwind_info: 0x23d8
-+  __TEXT.__eh_frame: 0x55a8
-+  __DATA_CONST.__const: 0x6020
-   __DATA_CONST.__cfstring: 0x260
-   __DATA_CONST.__objc_classlist: 0x180
-   __DATA_CONST.__objc_protolist: 0x18
 
-   __DATA_CONST.__auth_got: 0x1128
-   __DATA_CONST.__got: 0x410
-   __DATA_CONST.__auth_ptr: 0x648
--  __DATA.__objc_const: 0x34d8
-+  __DATA.__objc_const: 0x34f8
-   __DATA.__objc_ivar: 0x4c
-   __DATA.__objc_data: 0x4d0
--  __DATA.__data: 0x41f0
-+  __DATA.__data: 0x4228
-   __DATA.__bss: 0x308
-   __DATA.__common: 0x1c0
-   - /System/ExclaveKit/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /System/ExclaveKit/usr/lib/swift/libswift_Builtin_float.dylib
-   - /System/ExclaveKit/usr/lib/swift/libswift_Concurrency.dylib
-   - /System/ExclaveKit/usr/lib/swift/libswiftos.dylib
 -  Functions: 2519
 -  Symbols:   6947
 -  CStrings:  608
 +  Functions: 2557
 +  Symbols:   6988
 +  CStrings:  611
- 
 Symbols:
 + GCC_except_table61
 + _$s24TokenGenerationInference08OnDeviceC15AssetRepositoryC25costOnlyLoadedIdentifiers33_65818D6FA4B5F545C6B162D7CBE031AELLShySSGvpWvd

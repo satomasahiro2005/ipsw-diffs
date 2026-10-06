@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/ProximityReaderDaemon.framework/ProximityReaderDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ffaa0` | `0x1ffb44` | **`+0xa4`** |
+| `__AUTH_CONST.__auth_got` | `0x3268` | `0x3260` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 150.35.0.0.0
--  __TEXT.__text: 0x1ffaa0
-+  __TEXT.__text: 0x1ffb44
-   __TEXT.__objc_methlist: 0xdf8
-   __TEXT.__const: 0xe014
-   __TEXT.__swift5_typeref: 0x3e0e
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0xe010
-   __AUTH_CONST.__objc_const: 0x7b28
--  __AUTH_CONST.__auth_got: 0x3268
-+  __AUTH_CONST.__auth_got: 0x3260
-   __AUTH.__objc_data: 0x12b8
-   __AUTH.__data: 0x5e60
-   __DATA.__data: 0x21e8
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 6900
--  Symbols:   2836
-+  Symbols:   2835
-   CStrings:  1610
- 
+-  Symbols:   2494
++  Symbols:   2493
 Symbols:
 - _swift_retain_x9
 Functions:

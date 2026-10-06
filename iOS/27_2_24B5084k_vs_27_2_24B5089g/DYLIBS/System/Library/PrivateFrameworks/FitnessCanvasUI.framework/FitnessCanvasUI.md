@@ -2,68 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/FitnessCanvasUI.framework/FitnessCanvasUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a4254` | `0x1a599c` | **`+0x1748`** |
+| `__DATA.__bss` | `0x19800` | `0x19680` | **`-0x180`** |
+| `__DATA_DIRTY.__bss` | `0xbf30` | `0xc0b0` | **`+0x180`** |
+| `__DATA_DIRTY.__data` | `0x4360` | `0x4448` | **`+0xe8`** |
+| `__TEXT.__swift5_typeref` | `0xe5bc` | `0xe692` | **`+0xd6`** |
+| `__DATA.__data` | `0x3eb8` | `0x3e38` | **`-0x80`** |
+| `__AUTH.__data` | `0xa70` | `0xa40` | **`-0x30`** |
+| `__TEXT.__cstring` | `0xf17` | `0xee7` | **`-0x30`** |
+| `__TEXT.__unwind_info` | `0x4548` | `0x4568` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x18e8` | `0x1900` | **`+0x18`** |
+| `__TEXT.__swift5_fieldmd` | `0x4c2c` | `0x4c44` | **`+0x18`** |
+| `__TEXT.__swift5_reflstr` | `0x34b2` | `0x34a2` | **`-0x10`** |
+| `__DATA.__common` | `—` | `0x8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2027.1.50.0.1
--  __TEXT.__text: 0x1966a4
 +2027.1.54.0.0
-+  __TEXT.__text: 0x197e14
-   __TEXT.__const: 0x16548
-   __TEXT.__constg_swiftt: 0x7de0
--  __TEXT.__swift5_typeref: 0xe5bc
-+  __TEXT.__swift5_typeref: 0xe692
-   __TEXT.__swift5_builtin: 0x78
--  __TEXT.__swift5_reflstr: 0x34b2
--  __TEXT.__swift5_fieldmd: 0x4c2c
-+  __TEXT.__swift5_reflstr: 0x34a2
-+  __TEXT.__swift5_fieldmd: 0x4c44
-   __TEXT.__swift5_assocty: 0x9f8
-   __TEXT.__swift5_proto: 0x12a4
-   __TEXT.__swift5_types: 0x58c
-   __TEXT.__swift5_capture: 0x4a44
--  __TEXT.__cstring: 0xf17
-+  __TEXT.__cstring: 0xee7
-   __TEXT.__swift5_protos: 0x60
-   __TEXT.__oslogstring: 0x347
-   __TEXT.__swift_as_entry: 0xec
-   __TEXT.__swift_as_ret: 0xc4
-   __TEXT.__swift_as_cont: 0x120
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x57e0
-+  __TEXT.__unwind_info: 0x57e8
-   __TEXT.__eh_frame: 0x4eac
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__got: 0xb00
-   __AUTH_CONST.__const: 0xb270
-   __AUTH_CONST.__objc_const: 0x598
--  __AUTH_CONST.__auth_got: 0x18e8
-+  __AUTH_CONST.__auth_got: 0x1900
-   __AUTH.__objc_data: 0x50
--  __AUTH.__data: 0xa70
--  __DATA.__data: 0x3eb8
--  __DATA_DIRTY.__data: 0x4360
--  __DATA_DIRTY.__bss: 0xbf30
-+  __AUTH.__data: 0xa40
-+  __DATA.__data: 0x3e38
-+  __DATA.__common: 0x8
-+  __DATA_DIRTY.__data: 0x4448
-+  __DATA_DIRTY.__bss: 0xc0b0
-   __DATA_DIRTY.__common: 0x18
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6671
--  Symbols:   2642
+-  Symbols:   2633
 -  CStrings:  130
 +  Functions: 6677
-+  Symbols:   2643
++  Symbols:   2634
 +  CStrings:  129
- 
 Symbols:
 + _get_witness_table 15FitnessCanvasUI0B22ItemDescriptorProtocolRzAA0b9SizeClassF0Rd__05SwiftC04ViewRd_0_AdERd_1_AdERd_2_AdERd_3_AdERd_4_r_4_lAD19_ConditionalContentVyAD05EmptyJ0VAD08ModifiedL0VyAD5GroupVyAGyAGyAGyAGyAGyAdEPADE8redacted6reasonQrAD16RedactionReasonsV_tFQOyAA010ActionCardJ0Vyqd_0_qd_4_qd_4_G_Qo_AnDEAoPQrAR_tFQOyAA012ActivityCoinJ0V_Qo_GAGyAGyAGyAKyAA013HeaderArtworkJ033_650E4405B682FA1ACC2061467D61F1F1LLVyAKyqd_0_AD31AccessibilityAttachmentModifierVGGAD14_PaddingLayoutVGAD6ButtonVyAD4TextVGGAD6VStackVyAD05TupleL0VyAGyAKyA12_A3_GA19_GSg_AKyA12_AD16_FlexFrameLayoutVGSgQPGGGAnDEAoPQrAR_tFQOyAA014FullWidthStageJ0Vyqd_0_qd_4_qd_4_qd_3_qd__G_Qo_GGAGyAGyAnDEAoPQrAR_tFQOyAA04InfotuJ0Vyqd_4_G_Qo_AnDEAoPQrAR_tFQOyAA010LargeBrickJ0Vyqd_0_qd_1_qd_2_G_Qo_GAGyAnDEAoPQrAR_tFQOyAA05LargeuJ0Vyqd_0_G_Qo_AnDEAoPQrAR_tFQOyAA012DynamicBrickJ0Vyqd_0_G_Qo_GGGAGyAGyAGyAnDEAoPQrAR_tFQOyAA021MonogramVerticalStackJ0Vyqd_0_G_Qo_A51_GAGyAnDEAoPQrAR_tFQOyAA08StandarduJ0Vyqd_0_G_Qo_AnDEAoPQrAR_tFQOyAA023StandardHorizontalStackJ0Vyqd_0_qd_4_G_Qo_GGAGyAGyAnDEAoPQrAR_tFQOyAA021StandardVerticalStackJ0Vyqd_0_G_Qo_AA07SummaryuJ0Vyqd_0_GGAGyAnDEAoPQrAR_tFQOyAA04TalluJ0Vyqd_0_G_Qo_AnDEAoPQrAR_tFQOyAA013VerticalStackuJ0Vyqd_0_G_Qo_GGGGAGyqd_3_AnDEAoPQrAR_tFQOyAA09WideBrickJ0Vyqd_0_G_Qo_GGGA3_GGAdEHPAidEHPyHC_A97_AdEHPA96_AdEHPA95_AdEHPA89_AdEHPA54_AdEHPA34_AdEHPAzdEHPqd__AdEHD2_AVHO_qd__AdEHD2_AYHOHC_A33_AdEHPA28_AdEHPA14_AdEHPA8_AdEHPA5_AdEHPyHC_A7_AD0J8ModifierHPyHCHC_A13_AdEHPyHCHC_A27_AdEHPyHCHC_qd__AdEHD2_A32_HOHCHC_A53_AdEHPA43_AdEHPqd__AdEHD2_A38_HO_qd__AdEHD2_A42_HOHC_A52_AdEHPqd__AdEHD2_A47_HO_qd__AdEHD2_A51_HOHCHCHC_A88_AdEHPA69_AdEHPA59_AdEHPqd__AdEHD2_A58_HO_qd__AdEHD2_A51_HOHC_A68_AdEHPqd__AdEHD2_A63_HO_qd__AdEHD2_A67_HOHCHC_A87_AdEHPA77_AdEHPqd__AdEHD2_A73_HO_A76_AdEHPyHCHC_A86_AdEHPqd__AdEHD2_A81_HO_qd__AdEHD2_A85_HOHCHCHCHC_A94_AdEHPqd_3_AdEHD6__qd__AdEHD2_A93_HOHCHC_HC_A3_ADA99_HPyHCHCHC
 + _get_witness_table 22ActionButtonDescriptorQy12_Rsz7SwiftUI4ViewR_7ArtworkQy12_Rs0_AcDR1_AcDR2_AcDR3_11ContextMenuQy12_Rs4_AcDR5_14ItemIdentifierQy12_Rs6_7MetricsQy12_Rs7_013FitnessCanvasE00N22SectionDensityProtocolR8_AM0nolQ0R9_AM0n9SizeClassQ0R10_0fC0Qy12_Rs11_AM0njcQ0R12_r13_lAC06ScrollF6ReaderVyAC15ModifiedContentVyAcDPACE02onT11PhaseChangeyQryAC0tY0O_A_AC0tyzH0VtcFQOyAxCE0xt8GeometryZ03for2of6actionQrqd__m_qd__AC0T8GeometryVcyqd___qd__tctSQRd__lFQOyAxCE0xZ0A4_7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAxCEA8_A4_A9__Qrqd___Sbyqd___qd__tctSQRd__lFQOyAxCE20scrollTargetBehavioryQrqd__AC0T14TargetBehaviorRd__lFQOyAWyAWyAC0tF0VyAWyAC6HStackVyAC7ForEachVySaySi_q12_tG2IDQy12_AWyAWyAC012_ConditionalW0VyAX011_JetEngine_dE0E14impressionable_13configuration8position013definesParentH0Qr9JetEngine010ImpressionL0VSg_A28_21ImpressionsCalculatorC13ConfigurationVSiSgSbtFQOyAWyAxCE0X10TapGesture5count7performQrSi_yyctFQOyAWyAWyA22_yAC05EmptyF0VAWyAC5GroupVyA22_yA22_yA22_yA22_yA22_yAxCE8redacted6reasonQrAC16RedactionReasonsV_tFQOyAM0a4CardF0Vyq1_q_q_G_Qo_AxCEA44_A45_QrA47__tFQOyAM012ActivityCoinF0V_Qo_GA22_yA22_yA22_yAWyAM06HeadergF033_650E4405B682FA1ACC2061467D61F1F1LLVyAWyq1_AC31AccessibilityAttachmentModifierVGGAC14_PaddingLayoutVGAC0B0VyAC4TextVGGAC6VStackVyAC05TupleW0VyA22_yAWyA69_A60_GA76_GSg_AWyA69_AC16_FlexFrameLayoutVGSgQPGGGAxCEA44_A45_QrA47__tFQOyAM014FullWidthStageF0Vyq1_q_q_q5_q10_G_Qo_GGA22_yA22_yAxCEA44_A45_QrA47__tFQOyAM04Infoa4CardF0Vyq_G_Qo_AxCEA44_A45_QrA47__tFQOyAM010LargeBrickF0Vyq1_q2_q3_G_Qo_GA22_yAxCEA44_A45_QrA47__tFQOyAM09LargeCardF0Vyq1_G_Qo_AxCEA44_A45_QrA47__tFQOyAM012DynamicBrickF0Vyq1_G_Qo_GGGA22_yA22_yA22_yAxCEA44_A45_QrA47__tFQOyAM021MonogramVerticalStackF0Vyq1_G_Qo_A108_GA22_yAxCEA44_A45_QrA47__tFQOyAM012StandardCardF0Vyq1_G_Qo_AxCEA44_A45_QrA47__tFQOyAM023StandardHorizontalStackF0Vyq1_q_G_Qo_GGA22_yA22_yAxCEA44_A45_QrA47__tFQOyAM021StandardVerticalStackF0Vyq1_G_Qo_AM011SummaryCardF0Vyq1_GGA22_yAxCEA44_A45_QrA47__tFQOyAM08TallCardF0Vyq1_G_Qo_AxCEA44_A45_QrA47__tFQOyAM017VerticalStackCardF0Vyq1_G_Qo_GGGGA22_yq5_AxCEA44_A45_QrA47__tFQOyAM09WideBrickF0Vyq1_G_Qo_GGGA60_GGAC011_AppearanceA8ModifierVGA157_G_Qo_A60_G_Qo_A161_GAC18_AspectRatioLayoutVGAC12_FrameLayoutVGGGAC30_EnvironmentKeyWritingModifierVySo6CGSizeVGGGA176_GAC30_SafeAreaRegionsIgnoringLayoutVG_AC06PagingT14TargetBehaviorVQo__SiQo__AM0N6LayoutVyq8_q10_GQo__12CoreGraphics7CGFloatVQo__Qo_AC16_OverlayModifierVyAWy0m4CoreE0011PageControlF0VA64_GGGGAcDHPyHC

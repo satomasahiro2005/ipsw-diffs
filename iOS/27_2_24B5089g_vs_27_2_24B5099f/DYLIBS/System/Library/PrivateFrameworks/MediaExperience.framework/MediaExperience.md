@@ -2,76 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/MediaExperience.framework/MediaExperience`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2f3c38` | `0x259da8` | **`-0x99e90`** |
+| `__TEXT.__oslogstring` | `0x7b6a8` | `0x51d97` | **`-0x29911`** |
+| `__TEXT.__cstring` | `0x4f544` | `0x39659` | **`-0x15eeb`** |
+| `__AUTH.__objc_data` | `0x1db0` | `0x1810` | **`-0x5a0`** |
+| `__DATA_DIRTY.__objc_data` | `0x190` | `0x730` | **`+0x5a0`** |
+| `__AUTH_CONST.__cfstring` | `0x1c7e0` | `0x1c300` | **`-0x4e0`** |
+| `__TEXT.__unwind_info` | `0x6510` | `0x6048` | **`-0x4c8`** |
+| `__TEXT.__gcc_except_tab` | `0x5294` | `0x4ef8` | **`-0x39c`** |
+| `__DATA_CONST.__const` | `0x7490` | `0x7340` | **`-0x150`** |
+| `__DATA.__bss` | `0x12d8` | `0x1398` | **`+0xc0`** |
+| `__DATA_DIRTY.__bss` | `0xda0` | `0xce8` | **`-0xb8`** |
+| `__DATA.__common` | `0x680` | `0x5d0` | **`-0xb0`** |
+| `__DATA_DIRTY.__common` | `0x90` | `0x60` | **`-0x30`** |
+| `__TEXT.__const` | `0x1d10` | `0x1d20` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -385.7.1.0.0
--  __TEXT.__text: 0x2e95c8
 +385.10.1.0.0
-+  __TEXT.__text: 0x24fd98
-   __TEXT.__delay_helper: 0x304
-   __TEXT.__lazy_helpers: 0xfc
-   __TEXT.__objc_methlist: 0x8a80
--  __TEXT.__cstring: 0x4f544
--  __TEXT.__const: 0x1d10
--  __TEXT.__gcc_except_tab: 0x5294
--  __TEXT.__oslogstring: 0x7b6a8
-+  __TEXT.__cstring: 0x39659
-+  __TEXT.__const: 0x1d20
-+  __TEXT.__gcc_except_tab: 0x4ef8
-+  __TEXT.__oslogstring: 0x51d97
-   __TEXT.__dlopen_cstrs: 0x613
--  __TEXT.__unwind_info: 0x8aa0
-+  __TEXT.__unwind_info: 0x8138
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7490
-+  __DATA_CONST.__const: 0x7340
-   __DATA_CONST.__objc_classlist: 0x320
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x68
 
-   __DATA_CONST.__objc_arraydata: 0xf8
-   __DATA_CONST.__got: 0xd28
-   __AUTH_CONST.__const: 0x49c8
--  __AUTH_CONST.__cfstring: 0x1c7e0
-+  __AUTH_CONST.__cfstring: 0x1c300
-   __AUTH_CONST.__objc_const: 0xd2a8
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__lazy_load_got: 0x10
-
-   __AUTH_CONST.__objc_dictobj: 0x118
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x1db0
-+  __AUTH.__objc_data: 0x1810
-   __AUTH.__data: 0x630
-   __DATA.__objc_ivar: 0xcbc
-   __DATA.__data: 0x1450
--  __DATA.__common: 0x680
--  __DATA_DIRTY.__objc_data: 0x190
--  __DATA_DIRTY.__bss: 0xda0
--  __DATA_DIRTY.__common: 0x90
-+  __DATA.__common: 0x5d0
-+  __DATA_DIRTY.__objc_data: 0x730
-+  __DATA_DIRTY.__bss: 0xce8
-+  __DATA_DIRTY.__common: 0x60
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CoreAudio.framework/CoreAudio
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  Functions: 11686
+-  Functions: 11689
 -  Symbols:   13900
--  CStrings:  14388
-+  Functions: 10170
+-  CStrings:  14389
++  Functions: 10175
 +  Symbols:   13635
-+  CStrings:  10014
- 
++  CStrings:  10015
 Symbols:
 + GCC_except_table102
 + GCC_except_table112
@@ -496,8 +458,10 @@ CStrings:
 + "%s signalled err=%d at <>:%d"
 + "-MXSessionManagerDuckingUtilities- %s: [%p] '%{public}@' currentVolume = %.4f (%.2f dB); defaultDuckToLevelDB = %.4f, recomputedDuckToLevelDB = %.4f, setByClient = %{public}@; recomputedDuckVolume = %.4f"
 + "-MXSessionManagerDuckingUtilities- %s: [%p] '%{public}@' currentVolume = %.4f (%.2f dB); duckToLevelDB = %.4f; recomputedDuckVolume = %.4f"
++ "20:44:01"
 + "FigRoutingManagerContextUtilities_AddCurrentlyActivatingEndpoint_block_invoke_2"
 + "PowerManager_InitializeCPMSForAudio_block_invoke_3"
++ "Sep 27 2026"
 + "VideoPlaybackOverlayBannerPressed"
 - " -PVM- %s:  fig volume_trace == %s"
 - " Auth Info should be valid"
@@ -2935,6 +2899,7 @@ CStrings:
 - "-stark mode- %s: \n\t---------- Current Mode After Mode Change: ----------%@"
 - "-stark mode- %s: \n\t---------- Mode Change Requested: ---------- %@"
 - "0 for ShadowingAudioSessionID, must be non-zero"
+- "05:12:21"
 - "AN"
 - "AVAILABLE"
 - "AVSystemController.m"
@@ -3773,6 +3738,7 @@ CStrings:
 - "ScreenIsDarkDidChange"
 - "SendCommandCompletionCallback"
 - "SendDataCompletionCallback"
+- "Sep 12 2026"
 - "Server connection was lost"
 - "Session cannot do output mute"
 - "Session currently has an invalid category for isSharePlayMediaSession."

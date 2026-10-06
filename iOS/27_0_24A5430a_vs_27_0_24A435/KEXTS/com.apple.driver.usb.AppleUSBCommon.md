@@ -2,14 +2,8 @@
 
 > `com.apple.driver.usb.AppleUSBCommon`
 
-```diff
+### Section Size Changes
 
-   __TEXT.__cstring: 0x365
-   __TEXT.__const: 0x18
-   __TEXT.__os_log: 0xef
--  __TEXT_EXEC.__text: 0x5c64
-+  __TEXT_EXEC.__text: 0x5e04
-   __TEXT_EXEC.__auth_stubs: 0x3a0
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x110
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x5c64` | `0x5e04` | **`+0x1a0`** |

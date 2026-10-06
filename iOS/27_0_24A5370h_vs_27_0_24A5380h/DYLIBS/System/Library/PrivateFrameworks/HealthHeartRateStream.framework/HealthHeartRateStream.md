@@ -2,101 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/HealthHeartRateStream.framework/HealthHeartRateStream`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x37ba4` | `0x3c048` | **`+0x44a4`** |
+| `__TEXT.__eh_frame` | `0x15b0` | `0x1930` | **`+0x380`** |
+| `__AUTH_CONST.__objc_const` | `0x1550` | `0x1820` | **`+0x2d0`** |
+| `__AUTH.__data` | `0xea8` | `0x10a8` | **`+0x200`** |
+| `__TEXT.__const` | `0x1dd8` | `0x1fa8` | **`+0x1d0`** |
+| `__TEXT.__swift5_typeref` | `0x88e` | `0xa44` | **`+0x1b6`** |
+| `__AUTH_CONST.__const` | `0x1870` | `0x1a00` | **`+0x190`** |
+| `__TEXT.__unwind_info` | `0x10b8` | `0x11c8` | **`+0x110`** |
+| `__TEXT.__constg_swiftt` | `0xd64` | `0xe64` | **`+0x100`** |
+| `__TEXT.__oslogstring` | `0x1584` | `0x1674` | **`+0xf0`** |
+| `__TEXT.__swift5_fieldmd` | `0xa28` | `0xb08` | **`+0xe0`** |
+| `__TEXT.__swift5_capture` | `0x300` | `0x384` | **`+0x84`** |
+| `__AUTH_CONST.__auth_got` | `0x8b8` | `0x938` | **`+0x80`** |
+| `__DATA_CONST.__got` | `0x268` | `0x2b8` | **`+0x50`** |
+| `__TEXT.__swift5_reflstr` | `0xadf` | `0xb2f` | **`+0x50`** |
+| `__TEXT.__cstring` | `0x404` | `0x434` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0xa8` | `0xc0` | **`+0x18`** |
+| `__TEXT.__swift_as_cont` | `0x118` | `0x12c` | **`+0x14`** |
+| `__DATA.__data` | `0xaf0` | `0xae0` | **`-0x10`** |
+| `__TEXT.__swift5_types` | `0xb0` | `0xc0` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x290` | `0x298` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x294` | `0x29c` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0xa8` | `0xb0` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x9c` | `0xa4` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x10c` | `0x110` | **`+0x4`** |
+| `__TEXT.__swift5_protos` | `0x34` | `0x38` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x37ba4
--  __TEXT.__objc_methlist: 0x294
--  __TEXT.__const: 0x1dd8
--  __TEXT.__constg_swiftt: 0xd64
--  __TEXT.__swift5_typeref: 0x88e
-+  __TEXT.__text: 0x3c048
-+  __TEXT.__objc_methlist: 0x29c
-+  __TEXT.__const: 0x1fa8
-+  __TEXT.__constg_swiftt: 0xe64
-+  __TEXT.__swift5_typeref: 0xa44
-   __TEXT.__swift5_builtin: 0x3c
--  __TEXT.__swift5_reflstr: 0xadf
--  __TEXT.__swift5_fieldmd: 0xa28
-+  __TEXT.__swift5_reflstr: 0xb2f
-+  __TEXT.__swift5_fieldmd: 0xb08
-   __TEXT.__swift5_assocty: 0xc0
--  __TEXT.__swift5_proto: 0x10c
--  __TEXT.__swift5_types: 0xb0
--  __TEXT.__oslogstring: 0x1584
--  __TEXT.__cstring: 0x404
--  __TEXT.__swift5_capture: 0x300
--  __TEXT.__swift5_protos: 0x34
--  __TEXT.__swift_as_entry: 0xa8
--  __TEXT.__swift_as_ret: 0x9c
--  __TEXT.__swift_as_cont: 0x118
--  __TEXT.__unwind_info: 0x10b8
--  __TEXT.__eh_frame: 0x15b0
-+  __TEXT.__swift5_proto: 0x110
-+  __TEXT.__swift5_types: 0xc0
-+  __TEXT.__oslogstring: 0x1674
-+  __TEXT.__cstring: 0x434
-+  __TEXT.__swift5_capture: 0x384
-+  __TEXT.__swift5_protos: 0x38
-+  __TEXT.__swift_as_entry: 0xb0
-+  __TEXT.__swift_as_ret: 0xa4
-+  __TEXT.__swift_as_cont: 0x12c
-+  __TEXT.__unwind_info: 0x11c8
-+  __TEXT.__eh_frame: 0x1930
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x270
--  __DATA_CONST.__objc_classlist: 0xa8
-+  __DATA_CONST.__objc_classlist: 0xc0
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x290
-+  __DATA_CONST.__objc_selrefs: 0x298
-   __DATA_CONST.__objc_protorefs: 0x30
--  __DATA_CONST.__got: 0x268
--  __AUTH_CONST.__const: 0x1870
-+  __DATA_CONST.__got: 0x2b8
-+  __AUTH_CONST.__const: 0x1a00
-   __AUTH_CONST.__cfstring: 0xc0
--  __AUTH_CONST.__objc_const: 0x1550
--  __AUTH_CONST.__auth_got: 0x8b8
-+  __AUTH_CONST.__objc_const: 0x1820
-+  __AUTH_CONST.__auth_got: 0x938
-   __AUTH.__objc_data: 0x608
--  __AUTH.__data: 0xea8
--  __DATA.__data: 0xaf0
-+  __AUTH.__data: 0x10a8
-+  __DATA.__data: 0xae0
-   __DATA.__bss: 0x1780
-   __DATA.__common: 0x50
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/AudioAccessoryServices.framework/AudioAccessoryServices
-+  - /System/Library/PrivateFrameworks/HealthUtilities.framework/HealthUtilities
-   - /System/Library/PrivateFrameworks/HeartRateCoordinator.framework/HeartRateCoordinator
-   - /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf
-   - /System/Library/PrivateFrameworks/PairedDeviceRegistry.framework/PairedDeviceRegistry
+-7027.0.60.2.2
++7027.0.64.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/PrivateFrameworks/HealthUtilities.framework/HealthUtilities
+
 -  Functions: 1469
--  Symbols:   821
--  CStrings:  117
+-  Symbols:   540
+-  CStrings:  111
 +  Functions: 1544
-+  Symbols:   866
-+  CStrings:  121
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH.__objc_data : content changed
++  Symbols:   570
++  CStrings:  115
 Symbols:
 + _RPOptionStatusFlags
 + __DATA__TtC21HealthHeartRateStream21RapportRequestChannel
@@ -171,5 +122,4 @@ CStrings:
 - "Invalid request name "
 - "com.apple.Health"
 - "com.apple.healthdatastreamd.HeartRateStreaming"
-
 ```

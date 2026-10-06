@@ -2,44 +2,27 @@
 
 > `/usr/lib/system/libsystem_malloc.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x43320` | `0x4329c` | **`-0x84`** |
+| `__DATA.__bss` | `0x217c` | `0x210c` | **`-0x70`** |
+| `__DATA_DIRTY.__bss` | `0x50` | `0xc0` | **`+0x70`** |
+| `__DATA.__data` | `0xd0` | `0xb8` | **`-0x18`** |
+| `__DATA_DIRTY.__data` | `0x18` | `0x30` | **`+0x18`** |
+| `__DATA_DIRTY.__common` | `0x208` | `0x210` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x43320
-+  __TEXT.__text: 0x4329c
-   __TEXT.__const: 0x614
-   __TEXT.__cstring: 0xb5c5
-   __TEXT.__dof_magmalloc: 0x912
-
-   __AUTH_CONST.__auth_got: 0x3c0
-   __AUTH.__data: 0x128
-   __AUTH.__v_zone: 0x4000
--  __DATA.__data: 0xd0
-+  __DATA.__data: 0xb8
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x217c
-+  __DATA.__bss: 0x210c
-   __DATA.__common: 0x78
--  __DATA_DIRTY.__data: 0x18
--  __DATA_DIRTY.__common: 0x208
--  __DATA_DIRTY.__bss: 0x50
-+  __DATA_DIRTY.__data: 0x30
-+  __DATA_DIRTY.__bss: 0xc0
-+  __DATA_DIRTY.__common: 0x210
-   - /usr/lib/system/libcompiler_rt.dylib
-   - /usr/lib/system/libcorecrypto.dylib
-   - /usr/lib/system/libdyld.dylib
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__dof_magmalloc : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__auth_got : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__v_zone : content changed
+-886.0.2.0.0
++886.0.4.0.0
 Functions:
 ~ __xzm_xzone_malloc_small : 2384 -> 2300
 ~ __xzm_xzone_free_to_chunk : 148 -> 204
@@ -149,5 +132,4 @@ CStrings:
 - "BUG IN LIBMALLOC: malloc assertion \"success\" failed (/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/libmalloc/src/xzone_malloc/xzone_malloc.c:5328)"
 - "BUG IN LIBMALLOC: malloc assertion \"usable_space >= ptr_rg_size\" failed (/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/libmalloc/src/xzone_malloc/xzone_segment.c:1131)"
 - "BUG IN LIBMALLOC: malloc assertion \"zone\" failed (/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/libmalloc/src/xzone_malloc/xzone_introspect.c:958)"
-
 ```

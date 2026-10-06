@@ -2,89 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/SESUIService.framework/SESUIService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_protos`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_selrefs`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6dc1c` | `0x6cb40` | **`-0x10dc`** |
+| `__TEXT.__swift5_typeref` | `0xa63f` | `0xa3a1` | **`-0x29e`** |
+| `__TEXT.__eh_frame` | `0xe9c` | `0xd1c` | **`-0x180`** |
+| `__TEXT.__unwind_info` | `0xe80` | `0xe28` | **`-0x58`** |
+| `__AUTH_CONST.__auth_got` | `0x1338` | `0x1300` | **`-0x38`** |
+| `__DATA.__data` | `0x1af0` | `0x1ac0` | **`-0x30`** |
+| `__TEXT.__const` | `0x30d0` | `0x30a0` | **`-0x30`** |
+| `__AUTH_CONST.__const` | `0x16d8` | `0x16b0` | **`-0x28`** |
+| `__DATA_CONST.__got` | `0xa50` | `0xa28` | **`-0x28`** |
+| `__TEXT.__swift5_capture` | `0x728` | `0x714` | **`-0x14`** |
+| `__TEXT.__swift_as_cont` | `0x50` | `0x3c` | **`-0x14`** |
+| `__TEXT.__swift5_reflstr` | `0x769` | `0x759` | **`-0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x6f4` | `0x6e8` | **`-0xc`** |
+| `__AUTH.__data` | `0x6c8` | `0x6c0` | **`-0x8`** |
+| `__TEXT.__swift_as_entry` | `0x24` | `0x1c` | **`-0x8`** |
+| `__TEXT.__swift_as_ret` | `0x20` | `0x18` | **`-0x8`** |
+
+### Other Changes
 
 ```diff
 
 -70.35.1.0.0
--  __TEXT.__text: 0x6dc1c
 +70.37.0.0.0
-+  __TEXT.__text: 0x6cb40
-   __TEXT.__objc_methlist: 0x34
--  __TEXT.__const: 0x30d0
-+  __TEXT.__const: 0x30a0
-   __TEXT.__constg_swiftt: 0x784
--  __TEXT.__swift5_typeref: 0xa63f
-+  __TEXT.__swift5_typeref: 0xa3a1
-   __TEXT.__swift5_builtin: 0x28
--  __TEXT.__swift5_reflstr: 0x769
--  __TEXT.__swift5_fieldmd: 0x6f4
-+  __TEXT.__swift5_reflstr: 0x759
-+  __TEXT.__swift5_fieldmd: 0x6e8
-   __TEXT.__swift5_assocty: 0x228
--  __TEXT.__swift5_capture: 0x728
-+  __TEXT.__swift5_capture: 0x714
-   __TEXT.__cstring: 0xbe3
-   __TEXT.__swift5_proto: 0x70
-   __TEXT.__swift5_types: 0x6c
-   __TEXT.__oslogstring: 0x845
--  __TEXT.__swift_as_entry: 0x24
--  __TEXT.__swift_as_ret: 0x20
--  __TEXT.__swift_as_cont: 0x50
-+  __TEXT.__swift_as_entry: 0x1c
-+  __TEXT.__swift_as_ret: 0x18
-+  __TEXT.__swift_as_cont: 0x3c
-   __TEXT.__swift5_mpenum: 0x14
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0xe80
--  __TEXT.__eh_frame: 0xe9c
-+  __TEXT.__unwind_info: 0xe28
-+  __TEXT.__eh_frame: 0xd1c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xb8
--  __DATA_CONST.__got: 0xa50
--  __AUTH_CONST.__const: 0x16d8
-+  __DATA_CONST.__got: 0xa28
-+  __AUTH_CONST.__const: 0x16b0
-   __AUTH_CONST.__objc_const: 0x458
--  __AUTH_CONST.__auth_got: 0x1338
-+  __AUTH_CONST.__auth_got: 0x1300
-   __AUTH.__objc_data: 0x260
--  __AUTH.__data: 0x6c8
--  __DATA.__data: 0x1af0
-+  __AUTH.__data: 0x6c0
-+  __DATA.__data: 0x1ac0
-   __DATA.__bss: 0x11d8
-   __DATA.__common: 0x48
-   - /System/Library/Frameworks/Charts.framework/Charts
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1392
--  Symbols:   887
+-  Symbols:   866
 +  Functions: 1378
-+  Symbols:   883
-   CStrings:  123
- 
++  Symbols:   862
 Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA4ViewPAAE5sheet11isPresented9onDismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaDRd__lFQOyAeAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA6VStackVyAA05EmptyE0VG_Qo__AeAE19allowsSecureDrawingQryFQOyAeAE011interactiveJ8DisabledyQrSbFQOyACyAeAE7toolbarAIQrqd__yXE_tAA07ToolbarD0Rd__lFQOyAA15NavigationStackVyAA14NavigationPathVAeAE21navigationDestination3for11destinationQrqd__m_qd_0_qd__ctSHRd__AaDRd_0_r0_lFQOyACyAA5GroupVyAUyAA05TupleD0VyAA012_ConditionalD0VyACyACyACyACyAeAE4boldyQrSbFQOyACyACyA14_yA14_yA14_yAA4TextVA17_GA17_GA17_GAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGA22_yAA13TextAlignmentOGG_Qo_AA12_FrameLayoutVGAA14_PaddingLayoutVGA37_GA37_GACyACyACyAeAEA15_yQrSbFQOyA27__Qo_A34_GA37_GA37_GG_ACyA14_yACyACyACyACyA14_yA14_yA14_yA18_A18_GA17_GA17_GAA24_ForegroundStyleModifierVyAA22HierarchicalShapeStyleVGGA30_GA37_GA34_GACyACyACyA48_A30_GA37_GA34_GGAA31AccessibilityAttachmentModifierVGAeAEA0_AIQrqd__yXE_tAAA1_Rd__lFQOyAeAE9listStyleyQrqd__AA9ListStyleRd__lFQOyAeAE06scrollD10BackgroundyQrAA10VisibilityOFQOyAA4ListVys5NeverOA12_yACyACyAA7SectionVyAW12SESUIService016SEStorageSummaryE0VAWGAA21_TraitWritingModifierVyAA25ListRowBackgroundTraitKeyVGGA63_G_ACyACyA75_yA17_A12_yAA14NavigationLinkVyACyA76_015CleanupUsageRowE0VyAWGA63_GA73_G_A17_QPGAWGA84_GSgA63_GACyA75_yAWA76_013SEStorageListE0VAWGA84_GQPGG_Qo__AA21InsetGroupedListStyleVQo__A14_yA12_yAA0Z4ItemVyytAeAE10labelStyleyQrqd__AA10LabelStyleRd__lFQOyACyAA6ButtonVyAA5LabelVyA17_AA5ImageVGGAA32_EnvironmentKeyTransformModifierVySbGG_AA18IconOnlyLabelStyleVQo_G_A128_QPGA12_yA110_yytACyA114_yA17_GA123_GG_A132_QPGGQo_QPGGGA123_G_16SESUIServiceCore019SEStorageManagementE5ModelV15PrimaryCategoryVA10_yAeAE29navigationBarTitleDisplayModeyQrAA17NavigationBarItemV16TitleDisplayModeOFQOyA14_yA14_yA14_yA76_08PassbookE0VA76_016PassbookCategoryE0VGA14_yA76_020RecommendedForDeleteE0VA76_06ViennaE0VGGA14_yA14_yA76_09MuirfieldE0VA76_04ESimE0VGA14_yA76_017ViennaAppCategoryE0VAWGGG_Qo_GQo_G_AA0Z9ItemGroupVyA12_yAA6SpacerV_A114_yA118_GQPGGSgQo_A76_23DeleteConfirmationAlertVG_Qo__Qo_Qo_AA25_AppearanceActionModifierVGAaDHPqd0__AaDHD3_A189_HO_A191_AA0E8ModifierHPyHCHC
 + _symbolic _____y___________y_____y_____yAEyAEyAEy_____yAEyAEyADyADyADy_____AFGAFGAFG_____y_____SgGGAJy_____GG_Qo______G_____GAUGAUGAEyAEyAEy_____yAN_Qo_ASGAUGAUGG_AEyADyAEyAEyAEyAEyADyADyADyA2GGAFGAFG_____y_____GGAPGAUGASGAEyAEyAEyA4_APGAUGASGG_____G_____y_____y_____y_____y_____ACyAEyAEy_____y__________A21_G_____y_____GGA16_G_AEyAEyA20_yAfCy_____yAEy_____yA21_GA16_GA19_G_AFQPGA21_GA26_GSgA16_GAEyA20_yA21______A21_GA26_GQPGG_Qo_______Qo__ADyACy_____yyt_____yAEy_____y_____yAF_____GG_____ySbGG______Qo_G_A58_QPGACyA47_yytAEyA48_yAFGA54_GG_A62_QPGGQo_QPGG 7SwiftUI13_VariadicViewO4TreeV AA13_VStackLayoutV AA12TupleContentV AA012_ConditionalI0V AA08ModifiedI0V AA0D0PAAE4boldyQrSbFQO AA4TextV AA30_EnvironmentKeyWritingModifierV AA4FontV AA0M9AlignmentO AA06_FrameG0V AA08_PaddingG0V AoAEAPyQrSbFQO AA016_ForegroundStyleQ0V AA017HierarchicalShapeW0V AA023AccessibilityAttachmentQ0V AoAE7toolbar7contentQrqd__yXE_tAA07ToolbarI0Rd__lFQO AoAE04listW0yQrqd__AA04ListW0Rd__lFQO AoAE06scrollI10BackgroundyQrAA10VisibilityOFQO AA4ListV s5NeverO AA7SectionV AA05EmptyD0V 12SESUIService016SEStorageSummaryD0V AA06_TraitpQ0V AA022ListRowBackgroundTraitO0V AA14NavigationLinkV A23_015CleanupUsageRowD0V A23_013SEStorageListD0V AA016InsetGroupedListW0V AA11ToolbarItemV AoAE05labelW0yQrqd__AA05LabelW0Rd__lFQO AA6ButtonV AA5LabelV AA5ImageV AA01_no9TransformQ0V AA013IconOnlyLabelW0V

@@ -2,20 +2,21 @@
 
 > `/System/Library/HIDPlugins/ServiceFilters/EXBrightHIDPlugin.plugin/EXBrightHIDPlugin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x28a0` | `0x28a4` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__constg_swiftt`
-- `__TEXT.__unwind_info`
 - `__TEXT.__eh_frame`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 2300.2.9.0.0
--  __TEXT.__text: 0x28a0
-+  __TEXT.__text: 0x28a4
-   __TEXT.__auth_stubs: 0x590
-   __TEXT.__objc_stubs: 0x140
-   __TEXT.__objc_methlist: 0x28c
+```text
 Functions:
 ~ sub_28ec : 968 -> 972
 ```

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/RemindersAppIntents.framework/RemindersAppIntents`
 
-```diff
+### Section Size Changes
 
- 4046.11.0.0.0
--  __TEXT.__text: 0x27f554
-+  __TEXT.__text: 0x27f574
-   __TEXT.__objc_methlist: 0x26c
-   __TEXT.__const: 0x16074
-   __TEXT.__swift5_typeref: 0x833a
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x27f554` | `0x27f574` | **`+0x20`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_222df9b68 -> sub_22362bb68 : 680 -> 684
 ~ sub_222dff474 -> sub_223631478 : 652 -> 660

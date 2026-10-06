@@ -2,15 +2,14 @@
 
 > `/usr/libexec/spotlightknowledged.updater`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -2451.1.101.0.0
 +2454.100.0.0.0
-   __TEXT.__text: 0x64
-   __TEXT.__auth_stubs: 0x20
-   __TEXT.__const: 0x58
 ```

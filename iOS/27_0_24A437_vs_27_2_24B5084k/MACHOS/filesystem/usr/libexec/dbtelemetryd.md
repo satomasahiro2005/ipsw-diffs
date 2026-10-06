@@ -2,68 +2,46 @@
 
 > `/usr/libexec/dbtelemetryd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_entry`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x61a4` | `0x6834` | **`+0x690`** |
+| `__TEXT.__cstring` | `0x167` | `0x1d1` | **`+0x6a`** |
+| `__TEXT.__auth_stubs` | `0xa10` | `0xa30` | **`+0x20`** |
+| `__DATA.__data` | `0x200` | `0x210` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x510` | `0x520` | **`+0x10`** |
+| `__TEXT.__const` | `0x2f2` | `0x302` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__const`
 - `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_selrefs`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift5_types`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -6.0.0.0.0
--  __TEXT.__text: 0x5f04
--  __TEXT.__auth_stubs: 0xa10
 +7.0.0.0.0
-+  __TEXT.__text: 0x6594
-+  __TEXT.__auth_stubs: 0xa30
-   __TEXT.__objc_stubs: 0x2e0
--  __TEXT.__const: 0x2f2
-+  __TEXT.__const: 0x302
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__swift5_typeref: 0x1cc
-   __TEXT.__constg_swiftt: 0x84
-   __TEXT.__swift5_reflstr: 0x33
-   __TEXT.__swift5_fieldmd: 0x6c
--  __TEXT.__cstring: 0x167
-+  __TEXT.__cstring: 0x1d1
-   __TEXT.__objc_methtype: 0x38
-   __TEXT.__swift5_capture: 0x3c
-   __TEXT.__oslogstring: 0x1dd
 
-   __TEXT.__eh_frame: 0x130
-   __DATA_CONST.__const: 0x288
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x510
-+  __DATA_CONST.__auth_got: 0x520
-   __DATA_CONST.__got: 0x160
-   __DATA_CONST.__auth_ptr: 0x170
-   __DATA.__objc_selrefs: 0xb8
--  __DATA.__data: 0x200
-+  __DATA.__data: 0x210
-   __DATA.__common: 0x18
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_DarwinFoundation3.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 115
 -  Symbols:   263
 -  CStrings:  47
 +  Functions: 116
 +  Symbols:   265
 +  CStrings:  49
- 
 Symbols:
 + _objc_retain
 + _os_variant_has_internal_content

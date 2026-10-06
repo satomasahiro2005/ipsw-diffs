@@ -2,93 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/SiriMailUI.framework/SiriMailUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5c164` | `0x67e68` | **`+0xbd04`** |
+| `__TEXT.__eh_frame` | `0x11c8` | `0x1a84` | **`+0x8bc`** |
+| `__AUTH_CONST.__const` | `0x2218` | `0x2941` | **`+0x729`** |
+| `__TEXT.__swift5_typeref` | `0x906f` | `0x9691` | **`+0x622`** |
+| `__TEXT.__oslogstring` | `0xa1c` | `0xd2c` | **`+0x310`** |
+| `__TEXT.__cstring` | `0xa21` | `0xd06` | **`+0x2e5`** |
+| `__TEXT.__const` | `0x4738` | `0x4a10` | **`+0x2d8`** |
+| `__TEXT.__unwind_info` | `0x15e0` | `0x1898` | **`+0x2b8`** |
+| `__AUTH_CONST.__auth_got` | `0x1690` | `0x1878` | **`+0x1e8`** |
+| `__DATA.__data` | `0x1d20` | `0x1ed0` | **`+0x1b0`** |
+| `__TEXT.__swift5_capture` | `0x6e0` | `0x890` | **`+0x1b0`** |
+| `__TEXT.__constg_swiftt` | `0xf9c` | `0x1118` | **`+0x17c`** |
+| `__AUTH.__data` | `0x1060` | `0x11b8` | **`+0x158`** |
+| `__AUTH_CONST.__objc_const` | `0xc08` | `0xd48` | **`+0x140`** |
+| `__TEXT.__swift5_fieldmd` | `0x11dc` | `0x12c4` | **`+0xe8`** |
+| `__TEXT.__swift5_reflstr` | `0xeee` | `0xfba` | **`+0xcc`** |
+| `__DATA.__bss` | `0x4330` | `0x43e8` | **`+0xb8`** |
+| `__AUTH.__objc_data` | `0x450` | `0x4b8` | **`+0x68`** |
+| `__TEXT.__swift_as_cont` | `0x8c` | `0xe0` | **`+0x54`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6d8` | `0x720` | **`+0x48`** |
+| `__TEXT.__swift_as_ret` | `0x40` | `0x6c` | **`+0x2c`** |
+| `__DATA.__common` | `0xb8` | `0xe0` | **`+0x28`** |
+| `__TEXT.__swift_as_entry` | `0x1c` | `0x40` | **`+0x24`** |
+| `__TEXT.__objc_methlist` | `0x674` | `0x68c` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x358` | `0x370` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0xfc` | `0x108` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x30` | `0x38` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x200` | `0x208` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x4` | `0x8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3600.23.14.0.0
--  __TEXT.__text: 0x5c164
--  __TEXT.__objc_methlist: 0x674
--  __TEXT.__const: 0x4738
--  __TEXT.__oslogstring: 0xa1c
--  __TEXT.__swift5_typeref: 0x906f
--  __TEXT.__constg_swiftt: 0xf9c
--  __TEXT.__swift5_reflstr: 0xeee
--  __TEXT.__swift5_fieldmd: 0x11dc
 +3600.23.24.0.0
-+  __TEXT.__text: 0x67e68
-+  __TEXT.__objc_methlist: 0x68c
-+  __TEXT.__const: 0x4a10
-+  __TEXT.__oslogstring: 0xd2c
-+  __TEXT.__swift5_typeref: 0x9691
-+  __TEXT.__constg_swiftt: 0x1118
-+  __TEXT.__swift5_reflstr: 0xfba
-+  __TEXT.__swift5_fieldmd: 0x12c4
-   __TEXT.__swift5_builtin: 0x8c
--  __TEXT.__swift5_assocty: 0x358
--  __TEXT.__swift5_proto: 0x200
--  __TEXT.__swift5_types: 0xfc
--  __TEXT.__swift5_capture: 0x6e0
--  __TEXT.__cstring: 0xa21
--  __TEXT.__swift_as_entry: 0x1c
--  __TEXT.__swift_as_ret: 0x40
--  __TEXT.__swift_as_cont: 0x8c
--  __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0x15e0
--  __TEXT.__eh_frame: 0x11c8
-+  __TEXT.__swift5_assocty: 0x370
-+  __TEXT.__swift5_proto: 0x208
-+  __TEXT.__swift5_types: 0x108
-+  __TEXT.__swift5_capture: 0x890
-+  __TEXT.__cstring: 0xd06
-+  __TEXT.__swift_as_entry: 0x40
-+  __TEXT.__swift_as_ret: 0x6c
-+  __TEXT.__swift_as_cont: 0xe0
-+  __TEXT.__swift5_protos: 0x8
-+  __TEXT.__unwind_info: 0x1898
-+  __TEXT.__eh_frame: 0x1a84
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xd8
--  __DATA_CONST.__objc_classlist: 0x30
-+  __DATA_CONST.__objc_classlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6d8
-+  __DATA_CONST.__objc_selrefs: 0x720
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2218
--  __AUTH_CONST.__objc_const: 0xc08
--  __AUTH_CONST.__auth_got: 0x1690
--  __AUTH.__objc_data: 0x450
--  __AUTH.__data: 0x1060
--  __DATA.__data: 0x1d20
--  __DATA.__common: 0xb8
--  __DATA.__bss: 0x4330
-+  __AUTH_CONST.__const: 0x2941
-+  __AUTH_CONST.__objc_const: 0xd48
-+  __AUTH_CONST.__auth_got: 0x1878
-+  __AUTH.__objc_data: 0x4b8
-+  __AUTH.__data: 0x11b8
-+  __DATA.__data: 0x1ed0
-+  __DATA.__common: 0xe0
-+  __DATA.__bss: 0x43e8
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/Contacts.framework/Contacts
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2477
--  Symbols:   1292
+-  Symbols:   1171
 -  CStrings:  98
 +  Functions: 2745
-+  Symbols:   1379
++  Symbols:   1250
 +  CStrings:  156
- 
 Symbols:
 + _NSParagraphStyleAttributeName
 + _OBJC_CLASS_$_NSLock
@@ -118,14 +78,6 @@ Symbols:
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAC07SnippetB0E13setHostBorderyQrSo07VRXHostL0VFQOyAcJE07requestK10Background_8accepted6deniedQrAJ0kO0OSg_qd__xcqd_0_xctAaBRd__AaBRd_0_r0_lFQOyAA15ModifiedContentVyAUyAUyAcAE11buttonStyleyQrqd__AA015PrimitiveButtonU0Rd__lFQOyAA0W0VyAUyAA6HStackVyAA05TupleS0VyA_yA1_yAA012_ConditionalS0VyAUyAUyAUyAUyAUyAA5ImageVAA30_EnvironmentKeyWritingModifierVyA5_5ScaleOGGA7_yAA4FontVSgGGA7_yAA5ColorVSgGGA7_yAA19SymbolRenderingModeVSgGGAA12_FrameLayoutVGAUyAUyA16_A25_GA28_GG_AA03AnyC0VQPGGSg_AA6VStackVyA1_yA_yA1_yA_yA1_yA3_yA3_yA29_A29_GA31_G_AUyAUyAA5GroupVyA3_yAA4TextVA45_GGA7_ySiSgGGA15_GQPGG_AA6SpacerVAUyAUyAUyAUyAUyA45_AA21_TraitWritingModifierVyAA22LayoutPriorityTraitKeyVGGA49_GA15_GA20_GA60_GSgQPGG_A_yA1_yA3_yA31_SgA32_G_A51_A55_A26_SgA71_QPGGAUyAUyAUyAcAE0H5Limit_13reservesSpaceQrSi_SbtFQOyA45__Qo_A7_yAA13TextAlignmentOGGAA16_FlexFrameLayoutVGAA14_PaddingLayoutVGSgQPGGQPGGAA01_S13ShapeModifierVyAA9RectangleVGGG_AA05PlainwU0VQo_A85_GA85_GA85_G_A104_A104_Qo__Qo__Qo_HO
 + _initializeAvailabilityCheck
 + _malloc
-+ _objc_msgSend$boundingRectWithSize:options:context:
-+ _objc_msgSend$code
-+ _objc_msgSend$domain
-+ _objc_msgSend$lock
-+ _objc_msgSend$setLineHeightMultiple:
-+ _objc_msgSend$setNeedsLayout
-+ _objc_msgSend$systemFontOfSize:
-+ _objc_msgSend$unlock
 + _rewind
 + _sscanf
 + _swift_cvw_initEnumMetadataSinglePayloadWithLayoutString

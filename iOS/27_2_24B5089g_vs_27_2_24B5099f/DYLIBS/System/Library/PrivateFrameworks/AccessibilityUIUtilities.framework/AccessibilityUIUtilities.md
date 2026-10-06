@@ -2,78 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/AccessibilityUIUtilities.framework/AccessibilityUIUtilities`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6204c` | `0x621a4` | **`+0x158`** |
+| `__TEXT.__oslogstring` | `0x1155` | `0x11dc` | **`+0x87`** |
+| `__AUTH_CONST.__cfstring` | `0x6a60` | `0x6aa0` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x5cf1` | `0x5d2f` | **`+0x3e`** |
+| `__DATA_CONST.__const` | `0xde8` | `0xe18` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0xa38` | `0xa58` | **`+0x20`** |
+| `__DATA.__bss` | `0xa60` | `0xa70` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x51d8` | `0x51e8` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x6584` | `0x6594` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x11f8` | `0x1200` | **`+0x8`** |
+| `__TEXT.__const` | `0xd38` | `0xd40` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x1980` | `0x1988` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3245.8.2.0.0
--  __TEXT.__text: 0x5f690
--  __TEXT.__objc_methlist: 0x6584
--  __TEXT.__const: 0xd38
 +3245.8.4.2.0
-+  __TEXT.__text: 0x5f7e8
-+  __TEXT.__objc_methlist: 0x6594
-+  __TEXT.__const: 0xd40
-   __TEXT.__dlopen_cstrs: 0x450
-   __TEXT.__constg_swiftt: 0x848
-   __TEXT.__swift5_typeref: 0xabb
 
-   __TEXT.__swift5_proto: 0x40
-   __TEXT.__swift5_types: 0x48
-   __TEXT.__swift5_capture: 0x15c
--  __TEXT.__cstring: 0x5cf1
-+  __TEXT.__cstring: 0x5d2f
-   __TEXT.__swift5_assocty: 0xf8
-   __TEXT.__swift_as_entry: 0x30
-   __TEXT.__swift_as_cont: 0x48
--  __TEXT.__oslogstring: 0x1155
-+  __TEXT.__oslogstring: 0x11dc
-   __TEXT.__swift_as_ret: 0x18
-   __TEXT.__gcc_except_tab: 0x838
-   __TEXT.__ustring: 0x4
--  __TEXT.__unwind_info: 0x1f30
-+  __TEXT.__unwind_info: 0x1f38
-   __TEXT.__eh_frame: 0x43c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xde8
-+  __DATA_CONST.__const: 0xe18
-   __DATA_CONST.__objc_classlist: 0x398
-   __DATA_CONST.__objc_catlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x140
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x51d8
-+  __DATA_CONST.__objc_selrefs: 0x51e8
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x270
-   __DATA_CONST.__objc_arraydata: 0x80
-   __DATA_CONST.__got: 0x11a0
--  __AUTH_CONST.__const: 0xa38
--  __AUTH_CONST.__cfstring: 0x6a60
-+  __AUTH_CONST.__const: 0xa58
-+  __AUTH_CONST.__cfstring: 0x6aa0
-   __AUTH_CONST.__objc_const: 0xa2e8
-   __AUTH_CONST.__objc_intobj: 0x228
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_dictobj: 0x50
--  __AUTH_CONST.__auth_got: 0x11f8
-+  __AUTH_CONST.__auth_got: 0x1200
-   __AUTH.__objc_data: 0x22b0
-   __AUTH.__data: 0x508
-   __DATA.__objc_ivar: 0x59c
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2418
 -  Symbols:   4671
 -  CStrings:  1077
 +  Functions: 2420
 +  Symbols:   4679
 +  CStrings:  1081
- 
 Symbols:
 + -[AXCameraSceneDescriber _describeCameraSceneWithOptions:featureDescriptionOptions:handler:remainingAttempts:]
 + -[AXCameraSceneDescriber visionResultHandler:withFeatureDescriptionOptions:options:result:error:remainingAttempts:]

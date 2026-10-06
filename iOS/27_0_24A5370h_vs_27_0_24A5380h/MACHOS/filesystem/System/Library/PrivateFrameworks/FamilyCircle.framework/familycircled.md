@@ -2,114 +2,70 @@
 
 > `/System/Library/PrivateFrameworks/FamilyCircle.framework/familycircled`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbccb4` | `0xba4a8` | **`-0x280c`** |
+| `__TEXT.__oslogstring` | `0x67cd` | `0x65ed` | **`-0x1e0`** |
+| `__TEXT.__eh_frame` | `0x8c24` | `0x8ae4` | **`-0x140`** |
+| `__DATA.__data` | `0x2b18` | `0x29e8` | **`-0x130`** |
+| `__TEXT.__objc_methname` | `0x7d6b` | `0x7c3b` | **`-0x130`** |
+| `__TEXT.__objc_stubs` | `0x5c60` | `0x5b60` | **`-0x100`** |
+| `__DATA.__objc_const` | `0x8aa0` | `0x89a8` | **`-0xf8`** |
+| `__TEXT.__constg_swiftt` | `0x19a8` | `0x18e4` | **`-0xc4`** |
+| `__TEXT.__swift5_typeref` | `0x1bdb` | `0x1b23` | **`-0xb8`** |
+| `__TEXT.__const` | `0x43d4` | `0x4324` | **`-0xb0`** |
+| `__DATA_CONST.__const` | `0x55e8` | `0x5568` | **`-0x80`** |
+| `__TEXT.__swift5_fieldmd` | `0x100c` | `0xfc8` | **`-0x44`** |
+| `__DATA.__objc_selrefs` | `0x1c20` | `0x1be0` | **`-0x40`** |
+| `__TEXT.__objc_classname` | `0xd8d` | `0xd4d` | **`-0x40`** |
+| `__TEXT.__swift5_reflstr` | `0x1096` | `0x1056` | **`-0x40`** |
+| `__TEXT.__objc_methtype` | `0x22cc` | `0x229c` | **`-0x30`** |
+| `__TEXT.__unwind_info` | `0x36e8` | `0x36b8` | **`-0x30`** |
+| `__TEXT.__auth_stubs` | `0x2a00` | `0x2a20` | **`+0x20`** |
+| `__TEXT.__swift5_capture` | `0xfb0` | `0xf9c` | **`-0x14`** |
+| `__TEXT.__swift_as_cont` | `0x72c` | `0x718` | **`-0x14`** |
+| `__DATA_CONST.__auth_got` | `0x1510` | `0x1520` | **`+0x10`** |
+| `__DATA_CONST.__auth_ptr` | `0x830` | `0x820` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x9e0` | `0x9d8` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x280` | `0x278` | **`-0x8`** |
+| `__TEXT.__swift_as_entry` | `0x2d8` | `0x2d0` | **`-0x8`** |
+| `__TEXT.__swift_as_ret` | `0x410` | `0x408` | **`-0x8`** |
+| `__TEXT.__swift5_proto` | `0x228` | `0x224` | **`-0x4`** |
+| `__TEXT.__swift5_protos` | `0x28` | `0x24` | **`-0x4`** |
+| `__TEXT.__swift5_types` | `0x170` | `0x16c` | **`-0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__cstring`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_mpenum`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xbccb4
--  __TEXT.__auth_stubs: 0x2a00
--  __TEXT.__objc_stubs: 0x5c60
-+  __TEXT.__text: 0xba4a8
-+  __TEXT.__auth_stubs: 0x2a20
-+  __TEXT.__objc_stubs: 0x5b60
-   __TEXT.__objc_methlist: 0x27a4
--  __TEXT.__oslogstring: 0x67cd
-+  __TEXT.__oslogstring: 0x65ed
-   __TEXT.__cstring: 0x31d2
--  __TEXT.__objc_classname: 0xd8d
--  __TEXT.__const: 0x43d4
--  __TEXT.__objc_methname: 0x7d6b
--  __TEXT.__objc_methtype: 0x22cc
-+  __TEXT.__objc_classname: 0xd4d
-+  __TEXT.__const: 0x4324
-+  __TEXT.__objc_methname: 0x7c3b
-+  __TEXT.__objc_methtype: 0x229c
-   __TEXT.__gcc_except_tab: 0x1f8
-   __TEXT.__dlopen_cstrs: 0x14f
--  __TEXT.__swift5_typeref: 0x1bdb
--  __TEXT.__swift5_capture: 0xfb0
--  __TEXT.__constg_swiftt: 0x19a8
--  __TEXT.__swift5_reflstr: 0x1096
--  __TEXT.__swift5_fieldmd: 0x100c
-+  __TEXT.__swift5_typeref: 0x1b23
-+  __TEXT.__swift5_capture: 0xf9c
-+  __TEXT.__constg_swiftt: 0x18e4
-+  __TEXT.__swift5_reflstr: 0x1056
-+  __TEXT.__swift5_fieldmd: 0xfc8
-   __TEXT.__swift5_builtin: 0xb4
-   __TEXT.__swift5_assocty: 0x1f8
--  __TEXT.__swift5_proto: 0x228
--  __TEXT.__swift5_types: 0x170
--  __TEXT.__swift_as_entry: 0x2d8
--  __TEXT.__swift_as_ret: 0x410
--  __TEXT.__swift_as_cont: 0x72c
-+  __TEXT.__swift5_proto: 0x224
-+  __TEXT.__swift5_types: 0x16c
-+  __TEXT.__swift_as_entry: 0x2d0
-+  __TEXT.__swift_as_ret: 0x408
-+  __TEXT.__swift_as_cont: 0x718
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__swift5_protos: 0x28
--  __TEXT.__unwind_info: 0x36e8
--  __TEXT.__eh_frame: 0x8c24
--  __DATA_CONST.__const: 0x55e8
-+  __TEXT.__swift5_protos: 0x24
-+  __TEXT.__unwind_info: 0x36b8
-+  __TEXT.__eh_frame: 0x8ae4
-+  __DATA_CONST.__const: 0x5568
-   __DATA_CONST.__cfstring: 0x13a0
--  __DATA_CONST.__objc_classlist: 0x280
-+  __DATA_CONST.__objc_classlist: 0x278
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x120
-   __DATA_CONST.__objc_imageinfo: 0x8
+-282.0.0.0.0
++284.1.0.0.0
 
-   __DATA_CONST.__objc_arraydata: 0x40
-   __DATA_CONST.__objc_arrayobj: 0x30
-   __DATA_CONST.__objc_dictobj: 0x28
--  __DATA_CONST.__auth_got: 0x1510
--  __DATA_CONST.__got: 0x9e0
--  __DATA_CONST.__auth_ptr: 0x830
--  __DATA.__objc_const: 0x8aa0
--  __DATA.__objc_selrefs: 0x1c20
-+  __DATA_CONST.__auth_got: 0x1520
-+  __DATA_CONST.__got: 0x9d8
-+  __DATA_CONST.__auth_ptr: 0x820
-+  __DATA.__objc_const: 0x89a8
-+  __DATA.__objc_selrefs: 0x1be0
-   __DATA.__objc_ivar: 0x1b4
-   __DATA.__objc_data: 0x2800
--  __DATA.__data: 0x2b18
-+  __DATA.__data: 0x29e8
-   __DATA.__bss: 0x3ec0
-   __DATA.__common: 0x90
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3457
 -  Symbols:   1199
--  CStrings:  2569
+-  CStrings:  2380
 +  Functions: 3438
 +  Symbols:   1200
-+  CStrings:  2548
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__bss : content changed
-~ __DATA.__common : content changed
++  CStrings:  2359
 Symbols:
 + _$s12FamilyCircle26PersonalInformationServiceMp
 + _$s12FamilyCircle26PersonalInformationServiceP13ageOfMajoritySo8NSNumberCvgTj
@@ -160,5 +116,4 @@ CStrings:
 - "protoAccount"
 - "setDateFormat:"
 - "v32@?0@\"NSNumber\"8@\"NSNumber\"16@\"NSError\"24"
-
 ```

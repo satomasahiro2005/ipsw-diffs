@@ -2,6 +2,8 @@
 
 > `/System/Library/ExtensionKit/Extensions/SearchUploadWorker.appex/SearchUploadWorker`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_100003e6c : 20 -> 12

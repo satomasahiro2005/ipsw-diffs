@@ -2,65 +2,46 @@
 
 > `/usr/libexec/seld`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x273b8` | `0x271dc` | **`-0x1dc`** |
+| `__DATA_CONST.__cfstring` | `0x2420` | `0x22e0` | **`-0x140`** |
+| `__TEXT.__cstring` | `0x4551` | `0x444d` | **`-0x104`** |
+| `__TEXT.__objc_methname` | `0x3996` | `0x38b5` | **`-0xe1`** |
+| `__TEXT.__objc_stubs` | `0x33e0` | `0x33a0` | **`-0x40`** |
+| `__DATA.__objc_selrefs` | `0xf98` | `0xf68` | **`-0x30`** |
+| `__DATA_CONST.__got` | `0x238` | `0x258` | **`+0x20`** |
+| `__TEXT.__const` | `0x1b0` | `0x1b8` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x440` | `0x448` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x273b8
-+  __TEXT.__text: 0x271dc
-   __TEXT.__auth_stubs: 0x8c0
--  __TEXT.__objc_stubs: 0x33e0
-+  __TEXT.__objc_stubs: 0x33a0
-   __TEXT.__objc_methlist: 0xef4
--  __TEXT.__const: 0x1b0
--  __TEXT.__objc_methname: 0x3996
--  __TEXT.__cstring: 0x4551
-+  __TEXT.__const: 0x1b8
-+  __TEXT.__objc_methname: 0x38b5
-+  __TEXT.__cstring: 0x444d
-   __TEXT.__oslogstring: 0x4157
-   __TEXT.__objc_classname: 0x234
-   __TEXT.__objc_methtype: 0xced
--  __TEXT.__unwind_info: 0x440
-+  __TEXT.__unwind_info: 0x448
-   __DATA_CONST.__const: 0xa98
--  __DATA_CONST.__cfstring: 0x2420
-+  __DATA_CONST.__cfstring: 0x22e0
-   __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x68
-   __DATA_CONST.__objc_imageinfo: 0x8
+-370.37.0.0.0
++370.38.2.0.0
 
-   __DATA_CONST.__objc_dictobj: 0x168
-   __DATA_CONST.__objc_arrayobj: 0x18
-   __DATA_CONST.__auth_got: 0x468
--  __DATA_CONST.__got: 0x238
-+  __DATA_CONST.__got: 0x258
-   __DATA.__objc_const: 0x1ea0
--  __DATA.__objc_selrefs: 0xf98
-+  __DATA.__objc_selrefs: 0xf68
-   __DATA.__objc_ivar: 0x1dc
-   __DATA.__objc_data: 0x370
-   __DATA.__data: 0x4e0
-
-   - /usr/lib/libnfshared.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 367
 -  Symbols:   222
--  CStrings:  2059
+-  CStrings:  1735
 +  Symbols:   221
-+  CStrings:  2033
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
++  CStrings:  1719
 Symbols:
 - _OBJC_CLASS_$_NSAssertionHandler
 CStrings:
@@ -80,5 +61,4 @@ CStrings:
 - "redirectStateForIdentifier:"
 - "serverStateForIdentifier:"
 - "theIdentifier != nil"
-
 ```

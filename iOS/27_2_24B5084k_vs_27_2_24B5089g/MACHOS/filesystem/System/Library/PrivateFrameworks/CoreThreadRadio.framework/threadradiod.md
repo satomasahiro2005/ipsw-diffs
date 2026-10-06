@@ -2,10 +2,12 @@
 
 > `/System/Library/PrivateFrameworks/CoreThreadRadio.framework/threadradiod`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
 - `__TEXT.__eh_frame`
+
+### Other Changes
 
 ```diff
 Symbols:

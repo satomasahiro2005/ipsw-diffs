@@ -2,99 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/AppleMediaServicesUIPaymentSheets.framework/AppleMediaServicesUIPaymentSheets`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x29ee0` | `0x298a0` | **`-0x640`** |
+| `__DATA_DIRTY.__bss` | `0x1180` | `0x1530` | **`+0x3b0`** |
+| `__DATA_DIRTY.__data` | `0xf28` | `0x1298` | **`+0x370`** |
+| `__DATA.__data` | `0xac0` | `0x7f0` | **`-0x2d0`** |
+| `__DATA.__bss` | `0x14e8` | `0x1250` | **`-0x298`** |
+| `__AUTH_CONST.__const` | `0x2110` | `0x21f8` | **`+0xe8`** |
+| `__TEXT.__const` | `0x3164` | `0x3214` | **`+0xb0`** |
+| `__AUTH.__data` | `0x210` | `0x178` | **`-0x98`** |
+| `__TEXT.__swift5_typeref` | `0x556c` | `0x55e4` | **`+0x78`** |
+| `__TEXT.__swift5_fieldmd` | `0xbc4` | `0xbf8` | **`+0x34`** |
+| `__TEXT.__swift5_reflstr` | `0x8cf` | `0x8ef` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0xc28` | `0xc48` | **`+0x20`** |
+| `__TEXT.__constg_swiftt` | `0xf88` | `0xfa4` | **`+0x1c`** |
+| `__AUTH_CONST.__auth_got` | `0xd80` | `0xd98` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x3c0` | `0x3d8` | **`+0x18`** |
+| `__TEXT.__swift5_capture` | `0x3c0` | `0x3cc` | **`+0xc`** |
+| `__DATA.__common` | `0x20` | `0x18` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1a8` | `0x1a0` | **`-0x8`** |
+| `__DATA_DIRTY.__common` | `0x20` | `0x28` | **`+0x8`** |
+| `__TEXT.__eh_frame` | `0x74c` | `0x744` | **`-0x8`** |
+| `__TEXT.__swift5_proto` | `0x138` | `0x140` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0xf8` | `0xfc` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x29ee0
-+  __TEXT.__text: 0x298a0
-   __TEXT.__objc_methlist: 0x20
--  __TEXT.__const: 0x3164
--  __TEXT.__constg_swiftt: 0xf88
--  __TEXT.__swift5_typeref: 0x556c
-+  __TEXT.__const: 0x3214
-+  __TEXT.__constg_swiftt: 0xfa4
-+  __TEXT.__swift5_typeref: 0x55e4
-   __TEXT.__swift5_builtin: 0x64
--  __TEXT.__swift5_reflstr: 0x8cf
--  __TEXT.__swift5_fieldmd: 0xbc4
--  __TEXT.__swift5_assocty: 0x3c0
--  __TEXT.__swift5_proto: 0x138
--  __TEXT.__swift5_types: 0xf8
-+  __TEXT.__swift5_reflstr: 0x8ef
-+  __TEXT.__swift5_fieldmd: 0xbf8
-+  __TEXT.__swift5_assocty: 0x3d8
-+  __TEXT.__swift5_proto: 0x140
-+  __TEXT.__swift5_types: 0xfc
-   __TEXT.__cstring: 0x800
--  __TEXT.__swift5_capture: 0x3c0
-+  __TEXT.__swift5_capture: 0x3cc
-   __TEXT.__swift5_mpenum: 0x14
-   __TEXT.__oslogstring: 0x85
-   __TEXT.__swift_as_entry: 0x24
-   __TEXT.__swift_as_ret: 0x24
-   __TEXT.__swift_as_cont: 0x68
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__unwind_info: 0xc28
--  __TEXT.__eh_frame: 0x74c
-+  __TEXT.__unwind_info: 0xc48
-+  __TEXT.__eh_frame: 0x744
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-8.0.38.0.0
++8.0.43.0.0
 
-   __DATA_CONST.__const: 0x160
-   __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1a8
-+  __DATA_CONST.__objc_selrefs: 0x1a0
-   __DATA_CONST.__got: 0x6c0
--  __AUTH_CONST.__const: 0x2110
-+  __AUTH_CONST.__const: 0x21f8
-   __AUTH_CONST.__objc_const: 0x6f0
--  __AUTH_CONST.__auth_got: 0xd80
-+  __AUTH_CONST.__auth_got: 0xd98
-   __AUTH.__objc_data: 0x98
--  __AUTH.__data: 0x210
--  __DATA.__data: 0xac0
--  __DATA.__bss: 0x14e8
--  __DATA.__common: 0x20
-+  __AUTH.__data: 0x178
-+  __DATA.__data: 0x7f0
-+  __DATA.__bss: 0x1250
-+  __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0x230
--  __DATA_DIRTY.__data: 0xf28
--  __DATA_DIRTY.__bss: 0x1180
--  __DATA_DIRTY.__common: 0x20
-+  __DATA_DIRTY.__data: 0x1298
-+  __DATA_DIRTY.__bss: 0x1530
-+  __DATA_DIRTY.__common: 0x28
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1401
--  Symbols:   1487
+-  Symbols:   889
 +  Functions: 1425
-+  Symbols:   1522
-   CStrings:  56
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   895
 Symbols:
 + _OUTLINED_FUNCTION_41
 + ___swift_closure_destructor.53Tm
@@ -154,7 +99,6 @@ Symbols:
 - _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA6VStackVyAA05TupleD0VyACyACyACyAA012_ConditionalD0VyACyACyACyAIyAIyACyACyACyAA5ImageVAA18_AspectRatioLayoutVG33AppleMediaServicesUIPaymentSheets40IconAdornmentMerchandizedIAPViewModifierVGAA11_ClipEffectVyAA16RoundedRectangleVGGANGACyAnWGGAA010_FlexFrameK0VGAA06_FrameK0VGAA011_BackgroundU0VyACyACyACyACyAA4ViewPAAE05layerW0_15maxSampleOffset9isEnabledQrAA6ShaderV_So6CGSizeVSbtFQOyACyA5_AA017_CompositingGroupW0VG_Qo_AA08_OpacityW0VGAA06_ScaleW0VGAA07_OffsetW0VGAA017_AllowsHitTestingU0VGGGA5_GAA023AccessibilityAttachmentU0VGSgAA08_PaddingK0VGA41_G_AEyAGyA9_AAE15dynamicTypeSizeyQrqd__SXRd__AA15DynamicTypeSizeO5BoundRtd__lFQOyACyACyACyA9_AAE10fontWeightyQrAA4FontV6WeightVSgFQOyACyAO13HeroTitleView33_129A5719DE0FE6D88087C462C0B7DEDCLLVAA022_EnvironmentKeyWritingU0VyA51_SgGG_Qo_A59_yAA13TextAlignmentOGGA59_ySiSgGGA59_y12CoreGraphics7CGFloatVGG_s19PartialRangeThroughVyA46_GQo__A9_AAEA44_yQrqd__SXRd__A46_A48_RSlFQOyACyACyACyACyAO16HeroSubtitleViewA56_LLVAA016_ForegroundStyleU0VyAA22HierarchicalShapeStyleVGGA66_GA69_GA74_G_A78_Qo_SgA9_AAEA44_yQrqd__SXRd__A46_A48_RSlFQOyACyACyACyAA4TextVA66_GA69_GA74_G_A78_Qo_SgQPGGQPGGA41_GA41_GA1_GAAA8_HPA105_AAA8_HPA104_AAA8_HPA103_AAA8_HPyHC_A41_AA04ViewU0HPyHCHC_A41_AAA107_HPyHCHC_A1_AAA107_HPyHCHC
 - _get_witness_table 7SwiftUI19_ConditionalContentVyAA4ViewPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA6HStackVyAA4TextVG_Qo_AeAEAF2idAghiJ_Qrqd___AKScPSSSiyyYaYAcntSQRd__lFQOyAO_SSQo_GAaDHPqd__AaDHD2_AQHO_qd0__AaDHD3_ASHOHC
 - _get_witness_table 7SwiftUI6HStackVyAA12TupleContentVy33AppleMediaServicesUIPaymentSheets15LeadingItemViewVSg_AA08ModifiedE0VyAA6VStackVyAA7ForEachVySayAF08FlexListL0VG10Foundation4UUIDVAA012_ConditionalE0VyAA14NavigationLinkVyAEyAKyAA6SpacerVAA12_FrameLayoutVGSg_AKyAA09_VariadicM0O4TreeVy_AA11_LayoutRootVyAA9AnyLayoutVGAEyAKyAA0M0PAAE10fontWeightyQrAA4FontV6WeightVSgFQOyAKyAKyAKyAKyAKyAKyAKyAA4TextVAA30_EnvironmentKeyWritingModifierVyAA5ImageV5ScaleOGGAA31AccessibilityAttachmentModifierVGAA01_rZ6LayoutVGA24_yAA13TextAlignmentOGGA24_yA17_SgGGAA19_BackgroundModifierVyAA5ColorVGGA24_yA47_SgGG_Qo_AA16_FixedSizeLayoutVG_AWyA14_AAEA15_yQrA20_FQOyAKyA26_A42_G_Qo_AKyA26_AA18_AspectRatioLayoutVGGSgAKyAKyA57_A29_GAA24_ForegroundStyleModifierVyA47_GGSgSgQPGGAA16_OverlayModifierVyA63_GGA3_QPG0fghB0031AMSUIPaymentSheetExpandableInfoM0VGA77_GGGAA14_PaddingLayoutVGQPGGAAA13_HPyHC
-- _objc_msgSend$substringWithRange:
 - _objc_retain_x26
 - _symbolic _____Sg______y_____y_____ySay_____G__________y_____y_____yACy__________GSg_ACy_____y______y_____GAKyACy_____yACyACyACyACyACyACyACy__________y_____GG_____G_____GAUy_____GGAUy_____SgGG_____y_____GGAUyA9_SgGG_Qo______G_AIy_____yACy_____A6_G_Qo_ACyA18______GGSgACyACyA19_AWG_____yA9_GGSgSgQPGG_____yA24_GGAOQPG_____GA36_GGG_____Gt 33AppleMediaServicesUIPaymentSheets15LeadingItemViewV 7SwiftUI15ModifiedContentV AD6VStackV AD7ForEachV AA08FlexListG0V 10Foundation4UUIDV AD012_ConditionalL0V AD14NavigationLinkV AD05TupleL0V AD6SpacerV AD12_FrameLayoutV AD09_VariadicH0O4TreeV AD01_Z4RootV AD03AnyZ0V AD0H0PADE10fontWeightyQrAD4FontV6WeightVSgFQO AD4TextV AD30_EnvironmentKeyWritingModifierV AD5ImageV5ScaleO AD31AccessibilityAttachmentModifierV AD01_pyZ0V AD13TextAlignmentO A10_ AD19_BackgroundModifierV AD5ColorV AD010_FixedSizeZ0V A7_ADEA8_yQrA13_FQO A19_ AD012_AspectRatioZ0V AD24_ForegroundStyleModifierV AD16_OverlayModifierV 0abcJ0031AMSUIPaymentSheetExpandableInfoH0V AD08_PaddingZ0V
 - _symbolic _____yAAyAAyAAyAAyAAyAAy__________y_____GG_____G_____GACy_____GGACy_____SgGG_____y_____GGACyASSgGG 7SwiftUI15ModifiedContentV AA4TextV AA30_EnvironmentKeyWritingModifierV AA5ImageV5ScaleO AA023AccessibilityAttachmentI0V AA16_FlexFrameLayoutV AA0E9AlignmentO AA4FontV AA011_BackgroundI0V AA5ColorV
@@ -201,5 +145,4 @@ Symbols:
 - _symbolic _____y_____y_____y_____G_Qo______yAC_SSQo__G 7SwiftUI19_ConditionalContentV7StorageO AA4ViewPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQO AA6HStackV AA4TextV AgAEAH2idAijkL_Qrqd___AMScPSSSiyyYaYAcntSQRd__lFQO
 - _symbolic _____y_____y_____y_____y__________GSg_ADy_____y______y_____GACyADy_____yADyADyADyADyADyADyADy__________y_____GG_____G_____GANy_____GGANy_____SgGG_____y_____GGANyA2_SgGG_Qo______G_AAy_____yADy_____A_G_Qo_ADyA11______GGSgADyADyA12_APG_____yA2_GGSgSgQPGG_____yA17_GGAHQPG_____GA29_G 7SwiftUI19_ConditionalContentV AA14NavigationLinkV AA05TupleD0V AA08ModifiedD0V AA6SpacerV AA12_FrameLayoutV AA13_VariadicViewO4TreeV AA01_K4RootV AA03AnyK0V AA0M0PAAE10fontWeightyQrAA4FontV0R0VSgFQO AA4TextV AA30_EnvironmentKeyWritingModifierV AA5ImageV5ScaleO AA023AccessibilityAttachmentX0V AA05_FlexjK0V AA0T9AlignmentO AZ AA011_BackgroundX0V AA5ColorV AA010_FixedSizeK0V AwAEAXyQrA1_FQO A7_ AA012_AspectRatioK0V AA016_ForegroundStyleX0V AA08_OverlayX0V 018AppleMediaServicesB0031AMSUIPaymentSheetExpandableInfoM0V
 - _symbolic _____y_____y_____y_____y__________GSg_ADy_____y______y_____GACyADy_____yADyADyADyADyADyADyADy__________y_____GG_____G_____GANy_____GGANy_____SgGG_____y_____GGANyA2_SgGG_Qo______G______y_____yADy_____A_G_Qo_ADyA12______GGSgADyADyA13_APG_____yA2_GGSgSgQPGG_____yA18_GGAHQPG_____GA30__G 7SwiftUI19_ConditionalContentV7StorageO AA14NavigationLinkV AA05TupleD0V AA08ModifiedD0V AA6SpacerV AA12_FrameLayoutV AA13_VariadicViewO4TreeV AA01_L4RootV AA03AnyL0V AA0N0PAAE10fontWeightyQrAA4FontV0S0VSgFQO AA4TextV AA30_EnvironmentKeyWritingModifierV AA5ImageV5ScaleO AA023AccessibilityAttachmentY0V AA05_FlexkL0V AA0U9AlignmentO A0_ AA011_BackgroundY0V AA5ColorV AA010_FixedSizeL0V AC AyAEAZyQrA3_FQO A9_ AA012_AspectRatioL0V AA016_ForegroundStyleY0V AA08_OverlayY0V 018AppleMediaServicesB0031AMSUIPaymentSheetExpandableInfoN0V
-
 ```

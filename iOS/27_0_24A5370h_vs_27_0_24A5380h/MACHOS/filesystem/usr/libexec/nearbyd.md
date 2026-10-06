@@ -2,113 +2,68 @@
 
 > `/usr/libexec/nearbyd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x565168` | `0x54dce4` | **`-0x17484`** |
+| `__DATA.__bss` | `0x21430` | `0xe720` | **`-0x12d10`** |
+| `__TEXT.__const` | `0x3dbf48` | `0x3e6260` | **`+0xa318`** |
+| `__TEXT.__gcc_except_tab` | `0x54e28` | `0x54538` | **`-0x8f0`** |
+| `__TEXT.__oslogstring` | `0x61bee` | `0x62465` | **`+0x877`** |
+| `__TEXT.__objc_methname` | `0x227f5` | `0x22e85` | **`+0x690`** |
+| `__DATA.__objc_const` | `0x1acc8` | `0x1b148` | **`+0x480`** |
+| `__DATA_CONST.__cfstring` | `0x16de0` | `0x171c0` | **`+0x3e0`** |
+| `__TEXT.__objc_stubs` | `0x168c0` | `0x16b80` | **`+0x2c0`** |
+| `__TEXT.__cstring` | `0x38a5d` | `0x38cec` | **`+0x28f`** |
+| `__TEXT.__unwind_info` | `0x1ce78` | `0x1cbf8` | **`-0x280`** |
+| `__DATA.__data` | `0x3f5c` | `0x41ac` | **`+0x250`** |
+| `__DATA_CONST.__got` | `0xcd8` | `0xe50` | **`+0x178`** |
+| `__TEXT.__objc_methlist` | `0xf29c` | `0xf404` | **`+0x168`** |
+| `__TEXT.__objc_methtype` | `0x2209d` | `0x221fd` | **`+0x160`** |
+| `__DATA_CONST.__const` | `0x1f080` | `0x1f160` | **`+0xe0`** |
+| `__TEXT.__init_offsets` | `0x7dc` | `0x6fc` | **`-0xe0`** |
+| `__DATA.__objc_selrefs` | `0x6e50` | `0x6f28` | **`+0xd8`** |
+| `__DATA.__objc_ivar` | `0x191c` | `0x1994` | **`+0x78`** |
+| `__DATA.__objc_data` | `0x4928` | `0x4978` | **`+0x50`** |
+| `__TEXT.__objc_classname` | `0x203e` | `0x204e` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x628` | `0x630` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x528` | `0x530` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__auth_got`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x565168
-+  __TEXT.__text: 0x54dce4
-   __TEXT.__auth_stubs: 0x30d0
--  __TEXT.__objc_stubs: 0x168c0
--  __TEXT.__init_offsets: 0x7dc
--  __TEXT.__objc_methlist: 0xf29c
--  __TEXT.__gcc_except_tab: 0x54e28
--  __TEXT.__const: 0x3dbf48
--  __TEXT.__cstring: 0x38a5d
--  __TEXT.__objc_methname: 0x227f5
--  __TEXT.__oslogstring: 0x61bee
--  __TEXT.__objc_classname: 0x203e
--  __TEXT.__objc_methtype: 0x2209d
-+  __TEXT.__objc_stubs: 0x16b80
-+  __TEXT.__init_offsets: 0x6fc
-+  __TEXT.__objc_methlist: 0xf404
-+  __TEXT.__gcc_except_tab: 0x54538
-+  __TEXT.__const: 0x3e6260
-+  __TEXT.__cstring: 0x38cec
-+  __TEXT.__objc_methname: 0x22e85
-+  __TEXT.__oslogstring: 0x62465
-+  __TEXT.__objc_classname: 0x204e
-+  __TEXT.__objc_methtype: 0x221fd
-   __TEXT.__ustring: 0x60
-   __TEXT.__swift5_typeref: 0x7ec
-   __TEXT.__swift5_capture: 0x574
+-557.0.0.0.0
++560.0.0.0.0
 
-   __TEXT.__swift_as_entry: 0x60
-   __TEXT.__swift_as_ret: 0x2c
-   __TEXT.__swift_as_cont: 0x80
--  __TEXT.__unwind_info: 0x1ce78
-+  __TEXT.__unwind_info: 0x1cbf8
-   __TEXT.__eh_frame: 0x5a0
--  __DATA_CONST.__const: 0x1f080
--  __DATA_CONST.__cfstring: 0x16de0
--  __DATA_CONST.__objc_classlist: 0x628
-+  __DATA_CONST.__const: 0x1f160
-+  __DATA_CONST.__cfstring: 0x171c0
-+  __DATA_CONST.__objc_classlist: 0x630
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x318
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0xa8
--  __DATA_CONST.__objc_superrefs: 0x528
-+  __DATA_CONST.__objc_superrefs: 0x530
-   __DATA_CONST.__objc_arraydata: 0x470
-   __DATA_CONST.__objc_arrayobj: 0x210
-   __DATA_CONST.__objc_intobj: 0x978
-   __DATA_CONST.__objc_dictobj: 0xa0
-   __DATA_CONST.__auth_got: 0x1880
--  __DATA_CONST.__got: 0xcd8
-+  __DATA_CONST.__got: 0xe50
-   __DATA_CONST.__auth_ptr: 0x300
--  __DATA.__objc_const: 0x1acc8
--  __DATA.__objc_selrefs: 0x6e50
--  __DATA.__objc_ivar: 0x191c
--  __DATA.__objc_data: 0x4928
--  __DATA.__data: 0x3f5c
--  __DATA.__bss: 0x21430
-+  __DATA.__objc_const: 0x1b148
-+  __DATA.__objc_selrefs: 0x6f28
-+  __DATA.__objc_ivar: 0x1994
-+  __DATA.__objc_data: 0x4978
-+  __DATA.__data: 0x41ac
-+  __DATA.__bss: 0xe720
-   __DATA.__common: 0xe60
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /System/Library/Frameworks/ExternalAccessory.framework/ExternalAccessory
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
 +  - /System/Library/Frameworks/MapKit.framework/MapKit
-   - /System/Library/Frameworks/Network.framework/Network
-   - /System/Library/Frameworks/Security.framework/Security
-   - /System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 23376
 -  Symbols:   1284
--  CStrings:  22852
+-  CStrings:  19578
 +  Functions: 23361
 +  Symbols:   1307
-+  CStrings:  22998
- 
-Sections:
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
-~ __DATA_CONST.__auth_got : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__common : content changed
++  CStrings:  19693
 Symbols:
 + _MKPointOfInterestCategoryAirport
 + _MKPointOfInterestCategoryAquarium
@@ -297,5 +252,4 @@ CStrings:
 - "{optional<rose::fira::AccessoryConfigurationData>=\"\"(?=\"__null_state_\"c\"__val_\"{AccessoryConfigurationData=\"accessoryProtocolVersion\"{Version=\"major\"S\"minor\"S}\"v10\"{V10_Fields=\"preferredUpdateRate\"C}\"rfu\"[10C]\"uwbConfigDataLength\"C\"uwbConfigData\"{UWBConfigData=\"uwbInteropVersion\"{Version=\"major\"S\"minor\"S}\"v10\"{V10_Fields=\"manufacturerId\"I\"uwbChipsetModelId\"I\"uwbMiddlewareVersion\"I\"rangingRole\"C\"sourceAddress\"S}\"v11\"{V11_Fields=\"maxUwbClockDriftPpm\"S}\"v20\"{V20_Fields=\"rfu\"[4C]\"hoppingMode\"C\"numSlotsPerRound\"S\"slotDurationRSTU\"S\"rangingIntervalMs\"S}\"v21\"{V21_Fields=\"requestedMultiNodeMode\"C\"requestedRangingRoundUsage\"C}}})\"__engaged_\"B}"
 - "\x82"
 - "\xf0\xf0t"
-
 ```

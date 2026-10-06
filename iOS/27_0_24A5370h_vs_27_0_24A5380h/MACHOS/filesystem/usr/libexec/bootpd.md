@@ -2,19 +2,26 @@
 
 > `/usr/libexec/bootpd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10fa4` | `0x10f8c` | **`-0x18`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x10fa4
-+  __TEXT.__text: 0x10f8c
-   __TEXT.__auth_stubs: 0x970
-   __TEXT.__const: 0xe8
-   __TEXT.__cstring: 0x1ed1
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA.__data : content changed
+-553.0.0.0.0
++554.0.0.0.0
 Functions:
 ~ sub_1000037b0 : 724 -> 732
 ~ sub_100004c28 -> sub_100004c30 : 1524 -> 1508
@@ -29,5 +36,4 @@ Functions:
 ~ _SubnetListCreateWithArray : 1788 -> 1772
 ~ sub_10000fd28 -> sub_10000fd08 : 164 -> 168
 ~ sub_100010660 -> sub_100010644 : 652 -> 656
-
 ```

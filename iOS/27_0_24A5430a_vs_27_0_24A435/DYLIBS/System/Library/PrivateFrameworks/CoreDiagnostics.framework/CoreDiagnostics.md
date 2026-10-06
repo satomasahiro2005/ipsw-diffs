@@ -2,12 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/CoreDiagnostics.framework/CoreDiagnostics`
 
-```diff
+### Section Size Changes
 
- 82.0.0.0.0
--  __TEXT.__text: 0x72e10
-+  __TEXT.__text: 0x72f44
-   __TEXT.__objc_methlist: 0xa8c
-   __TEXT.__const: 0x5c28
-   __TEXT.__cstring: 0x68ca
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x72e10` | `0x72f44` | **`+0x134`** |

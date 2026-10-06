@@ -2,30 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/MediaCoreUI.framework/MediaCoreUI`
 
-```diff
+### Section Size Changes
 
- 4026.110.1.0.0
--  __TEXT.__text: 0x339730
--  __TEXT.__objc_methlist: 0x2ddc
-+  __TEXT.__text: 0x339844
-+  __TEXT.__objc_methlist: 0x2de4
-   __TEXT.__const: 0x31914
-   __TEXT.__swift5_typeref: 0x1cb16
-   __TEXT.__constg_swiftt: 0x167f4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x339730` | `0x339844` | **`+0x114`** |
+| `__AUTH_CONST.__objc_const` | `0xcc50` | `0xcc68` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2358` | `0x2360` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x2ddc` | `0x2de4` | **`+0x8`** |
 
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x200
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2358
-+  __DATA_CONST.__objc_selrefs: 0x2360
-   __DATA_CONST.__objc_protorefs: 0x100
-   __DATA_CONST.__got: 0x1f60
-   __AUTH_CONST.__const: 0x1faa8
--  __AUTH_CONST.__objc_const: 0xcc50
-+  __AUTH_CONST.__objc_const: 0xcc68
-   __AUTH_CONST.__auth_got: 0x3638
-   __AUTH.__objc_data: 0x3060
-   __AUTH.__data: 0x3c20
+### Other Changes
+
+```text
 Functions:
 ~ sub_1cd97fa28 -> sub_1cdf4ba28 : 956 -> 952
 ~ sub_1cd984004 -> sub_1cdf50000 : 1060 -> 1064

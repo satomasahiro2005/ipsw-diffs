@@ -2,100 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__const`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_nlcatlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xaf3d70` | `0xaf7f74` | **`+0x4204`** |
+| `__AUTH_CONST.__objc_const` | `0x283c68` | `0x285030` | **`+0x13c8`** |
+| `__TEXT.__oslogstring` | `0x6286e` | `0x6312a` | **`+0x8bc`** |
+| `__TEXT.__objc_methlist` | `0xbc5e8` | `0xbcab8` | **`+0x4d0`** |
+| `__TEXT.__cstring` | `0x83fbd` | `0x8435f` | **`+0x3a2`** |
+| `__AUTH_CONST.__cfstring` | `0x73a40` | `0x73ca0` | **`+0x260`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4df50` | `0x4e198` | **`+0x248`** |
+| `__AUTH.__objc_data` | `0xde80` | `0xe010` | **`+0x190`** |
+| `__TEXT.__unwind_info` | `0x2e090` | `0x2e170` | **`+0xe0`** |
+| `__DATA_CONST.__const` | `0x1d6a8` | `0x1d730` | **`+0x88`** |
+| `__DATA.__objc_ivar` | `0xfa5c` | `0xfaa4` | **`+0x48`** |
+| `__TEXT.__gcc_except_tab` | `0x1823c` | `0x181f4` | **`-0x48`** |
+| `__DATA.__bss` | `0xa00` | `0xa28` | **`+0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x5450` | `0x5478` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x10ad8` | `0x10af8` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x2ba8` | `0x2bc0` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x4030` | `0x4048` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0xa8c0` | `0xa8b8` | **`-0x8`** |
+
+### Other Changes
 
 ```diff
 
 -4626.103.0.0.0
--  __TEXT.__text: 0xaf3d70
 +4630.1.102.0.0
-+  __TEXT.__text: 0xaf7f74
-   __TEXT.__init_offsets: 0x4
--  __TEXT.__objc_methlist: 0xbc5e8
-+  __TEXT.__objc_methlist: 0xbcab8
-   __TEXT.__const: 0x112a0
--  __TEXT.__oslogstring: 0x6286e
--  __TEXT.__cstring: 0x83fbd
--  __TEXT.__gcc_except_tab: 0x1823c
-+  __TEXT.__oslogstring: 0x6312a
-+  __TEXT.__cstring: 0x8435f
-+  __TEXT.__gcc_except_tab: 0x181f4
-   __TEXT.__ustring: 0xd04
-   __TEXT.__dlopen_cstrs: 0x373
--  __TEXT.__unwind_info: 0x2e090
-+  __TEXT.__unwind_info: 0x2e170
-   __TEXT.__eh_frame: 0x48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1d6a8
--  __DATA_CONST.__objc_classlist: 0x5450
-+  __DATA_CONST.__const: 0x1d730
-+  __DATA_CONST.__objc_classlist: 0x5478
-   __DATA_CONST.__objc_catlist: 0x338
-   __DATA_CONST.__objc_nlcatlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x2a90
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4df50
-+  __DATA_CONST.__objc_selrefs: 0x4e198
-   __DATA_CONST.__objc_protorefs: 0xd0
--  __DATA_CONST.__objc_superrefs: 0x4030
-+  __DATA_CONST.__objc_superrefs: 0x4048
-   __DATA_CONST.__objc_arraydata: 0x18a0
--  __DATA_CONST.__got: 0xa8c0
--  __AUTH_CONST.__const: 0x10ad8
--  __AUTH_CONST.__cfstring: 0x73a40
--  __AUTH_CONST.__objc_const: 0x283c68
-+  __DATA_CONST.__got: 0xa8b8
-+  __AUTH_CONST.__const: 0x10af8
-+  __AUTH_CONST.__cfstring: 0x73ca0
-+  __AUTH_CONST.__objc_const: 0x285030
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x1758
-   __AUTH_CONST.__objc_doubleobj: 0x820
-   __AUTH_CONST.__objc_intobj: 0x2c88
-   __AUTH_CONST.__objc_dictobj: 0x2f8
--  __AUTH_CONST.__auth_got: 0x2ba8
--  __AUTH.__objc_data: 0xde80
--  __DATA.__objc_ivar: 0xfa5c
-+  __AUTH_CONST.__auth_got: 0x2bc0
-+  __AUTH.__objc_data: 0xe010
-+  __DATA.__objc_ivar: 0xfaa4
-   __DATA.__data: 0x20bc0
--  __DATA.__bss: 0xa00
-+  __DATA.__bss: 0xa28
-   __DATA.__common: 0xa40
-   __DATA_DIRTY.__objc_data: 0x26ca0
-   __DATA_DIRTY.__data: 0x140
 
-   - /usr/lib/libsp.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libutil.dylib
 -  Functions: 72987
--  Symbols:   151020
+-  Symbols:   118509
 -  CStrings:  23279
 +  Functions: 73090
-+  Symbols:   151251
++  Symbols:   118667
 +  CStrings:  23326
- 
 Symbols:
 + +[SBResourceConditionsAssistantIslandHostExtension hostComponents]
 + +[SBResourceConditionsSceneHostExtension hostComponents]
@@ -418,115 +360,6 @@ Symbols:
 + ___block_descriptor_80_e8_32s40s48bs_e5_v8?0ls32l8s40l8s48l8
 + ___block_descriptor_96_e8_32s40s48bs56r_e8_v16?0d8lr56l8s32l8s40l8s48l8
 + _kMIBUClientPersonalizationLanguageKey
-+ _objc_msgSend$_accessibilityLabelForRingerSilent:
-+ _objc_msgSend$_acquireTraitsParticipant
-+ _objc_msgSend$_armMatchPasscodeFallbackTimerIfNeeded
-+ _objc_msgSend$_createSceneAndRunPreflight
-+ _objc_msgSend$_detachedCustomResizedFrameForContainerViewDescription:resizedWithGestureDescription:initialContainerViewFrame:context:
-+ _objc_msgSend$_displayLabelForKey:
-+ _objc_msgSend$_drainPendingFallbackBannerRequestsIfPossible
-+ _objc_msgSend$_enqueueFallbackBannerForRequest:
-+ _objc_msgSend$_handleAnnounceTimeoutForLinwoodPreprocess
-+ _objc_msgSend$_handleMatchPasscodeFallbackForEvent:
-+ _objc_msgSend$_indicatorContentSide
-+ _objc_msgSend$_invalidateMatchPasscodeFallbackTimer
-+ _objc_msgSend$_invalidateMemoryLimitAssertionForUpcomingSettingsUpdate:
-+ _objc_msgSend$_isPointerOverMenuBarRegion
-+ _objc_msgSend$_isScenePendingRemovalFromWorkspace
-+ _objc_msgSend$_matchPasscodeFallbackFailureSettings
-+ _objc_msgSend$_matchPasscodeFallbackInterval
-+ _objc_msgSend$_matchPasscodeFallbackTimerFired
-+ _objc_msgSend$_menuBarProvidingAppExists
-+ _objc_msgSend$_overlayInterfaceOrientationConstraint
-+ _objc_msgSend$_postCarPlayBannerForRequest:
-+ _objc_msgSend$_preflightSupportedInterfaceOrientations
-+ _objc_msgSend$_presentSuccessBannerForRequest:
-+ _objc_msgSend$_recomputeMemoryPressure
-+ _objc_msgSend$_reconcileApplicationSceneAssertionForForegroundStateChange:upcomingSettingsUpdate:
-+ _objc_msgSend$_registerBannerPresentedForRequest:skipReasonForLogging:
-+ _objc_msgSend$_repinActivationTableHeight
-+ _objc_msgSend$_requestDismissalForCompanionScene:ofPresentation:invalidateCompanionScene:
-+ _objc_msgSend$_scheduleDismissPeekedMenuBarTimerIfNecessary
-+ _objc_msgSend$_setDisplayCornerRadiusIgnoringZoom:
-+ _objc_msgSend$_setIndicatorContentRendersAsSquare:
-+ _objc_msgSend$_setOverlayInterfaceOrientationConstraint:
-+ _objc_msgSend$_shouldHandleHardwareButtonsForDisplay:
-+ _objc_msgSend$_updateActiveState:
-+ _objc_msgSend$_updateActiveStateWithClientSettings:
-+ _objc_msgSend$_updateHardwareLongPressRegistration
-+ _objc_msgSend$_updateLabelFromStyleAttributesWithApplicationNameChange:
-+ _objc_msgSend$_updateMenuBarVisibilityWithRequestedVisibility:preserveMenuBarIfInteractionOngoing:
-+ _objc_msgSend$_updateOverlayInterfaceOrientationConstraint
-+ _objc_msgSend$_updateSceneMemoryPressure
-+ _objc_msgSend$_willRequestDismissalForCompanionScene:
-+ _objc_msgSend$activateForESIMSetupButton
-+ _objc_msgSend$activateForEsimSetupInBuddy
-+ _objc_msgSend$allowedPressTypes
-+ _objc_msgSend$ambientExtendedIdleTimer
-+ _objc_msgSend$animateToPresented:fadeAppMenu:completion:
-+ _objc_msgSend$batteryLevelMain
-+ _objc_msgSend$batteryStateMain
-+ _objc_msgSend$canShowMenuBar
-+ _objc_msgSend$colorDifferentiateMinimumContainerOutset
-+ _objc_msgSend$constrainsContainingSceneOrientation
-+ _objc_msgSend$detachedCustomResizeDragFactor
-+ _objc_msgSend$detachedCustomResizeRangeBeginTracking
-+ _objc_msgSend$detachedCustomResizeRangeEndTracking
-+ _objc_msgSend$detachedCustomResizeRubberbandingCompress
-+ _objc_msgSend$detachedCustomResizeRubberbandingStretch
-+ _objc_msgSend$detachedCustomResizeWidthCollapseFactor
-+ _objc_msgSend$dismissAnimated:fadeAppMenu:alongsideAnimations:completion:
-+ _objc_msgSend$displayCornerRadiusIgnoringZoom
-+ _objc_msgSend$firstCBDeviceToReportBatteryLevel
-+ _objc_msgSend$hasConnectedDevice
-+ _objc_msgSend$indexOfDevice:
-+ _objc_msgSend$indicatorContentRendersAsSquare
-+ _objc_msgSend$initWithBookendType:onlyShowLanguages:callbacks:
-+ _objc_msgSend$isLongClick
-+ _objc_msgSend$isSharingIdentitySupported
-+ _objc_msgSend$isTransitioningToEnvironmentWithoutStatusBar
-+ _objc_msgSend$latestPressWasLongClick
-+ _objc_msgSend$limitedSizeCompactIntraPadding
-+ _objc_msgSend$limitedSizeCompactIntraPaddingPerpendicular
-+ _objc_msgSend$memoryPressure
-+ _objc_msgSend$menuBarCanBeShownNow
-+ _objc_msgSend$minimumIndicatorSize
-+ _objc_msgSend$overlayViewProviderDidChangeSupportedInterfaceOrientations:
-+ _objc_msgSend$presentation:willRequestDismissalForCompanionScene:
-+ _objc_msgSend$presentedAlertItems
-+ _objc_msgSend$resourceConditionsCoordinator
-+ _objc_msgSend$resourceConditionsCoordinator:memoryPressureDidChange:
-+ _objc_msgSend$resourceConditionsHost
-+ _objc_msgSend$scene:didChangeAssistantIslandActiveStateTo:
-+ _objc_msgSend$scene:didChangeForegroundStateTo:
-+ _objc_msgSend$scene:didChangeParentSceneTo:
-+ _objc_msgSend$setActivateForEsimSetupInBuddy:
-+ _objc_msgSend$setBeginsOnHardwareLongPress:
-+ _objc_msgSend$setBluetoothStateChangedHandler:
-+ _objc_msgSend$setColorDifferentiateMinimumContainerOutset:
-+ _objc_msgSend$setCornerIndicatorEdgeInset:
-+ _objc_msgSend$setDetachedCustomResizeDragFactor:
-+ _objc_msgSend$setDetachedCustomResizeRangeBeginTracking:
-+ _objc_msgSend$setDetachedCustomResizeRangeEndTracking:
-+ _objc_msgSend$setDetachedCustomResizeRubberbandingCompress:
-+ _objc_msgSend$setDetachedCustomResizeRubberbandingStretch:
-+ _objc_msgSend$setDetachedCustomResizeWidthCollapseFactor:
-+ _objc_msgSend$setDisplayCornerRadiusIgnoringZoom:
-+ _objc_msgSend$setIndicatorContentRendersAsSquare:
-+ _objc_msgSend$setJiggleLock:
-+ _objc_msgSend$setLimitedSizeCompactIntraPadding:
-+ _objc_msgSend$setLimitedSizeCompactIntraPaddingPerpendicular:
-+ _objc_msgSend$setLongClick:
-+ _objc_msgSend$setMemoryPressure:
-+ _objc_msgSend$setMinimumIndicatorSize:
-+ _objc_msgSend$setShowPasscode:
-+ _objc_msgSend$setSwitcherSceneLiveContentOverlayDelegate:
-+ _objc_msgSend$setVibrate:
-+ _objc_msgSend$setWaitUntilButtonUp:
-+ _objc_msgSend$shouldMenuBarDismissToEnvironmentWithHiddenStatusBar
-+ _objc_msgSend$switcherContentControllerWantsToUpdateMenuBarVisibility:preserveMenuBarIfInteractionOngoing:
-+ _objc_msgSend$traitsParticipantForFullScreenSwitcherSceneLiveContentOverlay:
-+ _objc_msgSend$updateMenuBarVisibilityPreserveIfInteractionOngoing:
 + _sHardwareLongPressRegistrationsByOwner
 - -[SBAppResizingShieldWindow delegate]
 - -[SBAppResizingShieldWindow setDelegate:]
@@ -692,42 +525,6 @@ Symbols:
 - ___block_descriptor_328_e8_32r_e45_v16?0"<SBPIPPositionHyperregionComposing>"8lr32l8
 - ___block_descriptor_40_e8_32s_e36_v16?0"SBStatusBarStateAggregator"8ls32l8
 - ___block_descriptor_88_e8_32s40s48bs56bs_e5_v8?0ls32l8s40l8s48l8s56l8
-- _objc_msgSend$_acquireTraitsParticipantIfNeeded
-- _objc_msgSend$_applyCBDeviceLoss:
-- _objc_msgSend$_applyCBDeviceUpdate:
-- _objc_msgSend$_beginPresentInsetSuspensionWithCoordinator:
-- _objc_msgSend$_cbDeviceGlyphPropertiesDifferBetween:and:
-- _objc_msgSend$_endPresentInsetSuspension
-- _objc_msgSend$_indexOfCBDeviceWithIdentifier:
-- _objc_msgSend$_invalidateOrDeferPreferredMinimumTopInsetInteractive:
-- _objc_msgSend$_menuBarCouldBeShownNow
-- _objc_msgSend$_requestDismissalForCompanionScene:ofPresentation:
-- _objc_msgSend$_scheduleDismissPeekedMenuBarTimer
-- _objc_msgSend$_setObjectWithinCrudeProximity:
-- _objc_msgSend$_startCBDiscovery
-- _objc_msgSend$_updateLabelFromStyleAttributes
-- _objc_msgSend$_updateMenuBarVisibilityWithRequestedVisibility:
-- _objc_msgSend$animateToPresented:completion:
-- _objc_msgSend$applyAssertionEvenIfAppIsHostingTheKeyboard
-- _objc_msgSend$connected
-- _objc_msgSend$deviceForAudioRoute:
-- _objc_msgSend$dismissAnimated:alongsideAnimations:completion:
-- _objc_msgSend$finalAnimationDidCommitHandler
-- _objc_msgSend$firstBTDeviceToReportBatteryLevel
-- _objc_msgSend$indicatorContentMinimumScale
-- _objc_msgSend$initWithDelegate:queue:options:
-- _objc_msgSend$isConnectedToSystem
-- _objc_msgSend$pairedDevices
-- _objc_msgSend$resizingShieldWindowDidTapButton:
-- _objc_msgSend$retrieveConnectedPeripheralsWithServices:allowAll:
-- _objc_msgSend$setApplyAssertionEvenIfAppIsHostingTheKeyboard:
-- _objc_msgSend$setFinalAnimationDidCommitHandler:
-- _objc_msgSend$setIndicatorContentMinimumScale:
-- _objc_msgSend$setStatusBarActionDelegate:
-- _objc_msgSend$setWallpaperFloatingLayerAlpha:
-- _objc_msgSend$supportsBatteryLevel
-- _objc_msgSend$switcherContentControllerWantsToUpdateMenuBarVisibility:
-- _objc_msgSend$wallpaperFloatingLayerAlpha
 CStrings:
 + "!AM"
 + "#AnnounceNotification CarPlay Requesting to post presentable: %{public}@"

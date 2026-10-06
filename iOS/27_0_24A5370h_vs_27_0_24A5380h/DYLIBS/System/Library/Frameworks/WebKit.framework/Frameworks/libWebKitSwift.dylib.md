@@ -2,99 +2,48 @@
 
 > `/System/Library/Frameworks/WebKit.framework/Frameworks/libWebKitSwift.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x687f8` | `0x77784` | **`+0xef8c`** |
+| `__TEXT.__cstring` | `0x1ce4` | `0x2d94` | **`+0x10b0`** |
+| `__AUTH_CONST.__objc_const` | `0x40b0` | `0x44f0` | **`+0x440`** |
+| `__DATA.__bss` | `0x1768` | `0x1b48` | **`+0x3e0`** |
+| `__TEXT.__swift5_reflstr` | `0x4f6` | `0x8b6` | **`+0x3c0`** |
+| `__TEXT.__const` | `0x1f18` | `0x2238` | **`+0x320`** |
+| `__TEXT.__swift5_typeref` | `0x12e8` | `0x14e0` | **`+0x1f8`** |
+| `__TEXT.__swift5_fieldmd` | `0x760` | `0x924` | **`+0x1c4`** |
+| `__DATA.__data` | `0xf20` | `0x10d0` | **`+0x1b0`** |
+| `__AUTH_CONST.__auth_got` | `0x1798` | `0x1938` | **`+0x1a0`** |
+| `__AUTH_CONST.__const` | `0x2048` | `0x21b8` | **`+0x170`** |
+| `__TEXT.__objc_methlist` | `0x1ad0` | `0x1c28` | **`+0x158`** |
+| `__DATA_CONST.__objc_selrefs` | `0xed0` | `0x1020` | **`+0x150`** |
+| `__DATA_CONST.__got` | `0x9b0` | `0x8f8` | **`-0xb8`** |
+| `__TEXT.__constg_swiftt` | `0xc74` | `0xce8` | **`+0x74`** |
+| `__TEXT.__unwind_info` | `0x1708` | `0x1770` | **`+0x68`** |
+| `__AUTH.__data` | `0xfb0` | `0x1010` | **`+0x60`** |
+| `__TEXT.__swift5_proto` | `0xa4` | `0xc0` | **`+0x1c`** |
+| `__TEXT.__swift5_assocty` | `0x120` | `0x138` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0xc8` | `0xdc` | **`+0x14`** |
+| `__DATA.__common` | `0x58` | `0x68` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x88` | `0x98` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0xb8` | `0xc8` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x48` | `0x50` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x687f8
--  __TEXT.__objc_methlist: 0x1ad0
--  __TEXT.__const: 0x1f18
--  __TEXT.__swift5_typeref: 0x12e8
-+  __TEXT.__text: 0x77784
-+  __TEXT.__objc_methlist: 0x1c28
-+  __TEXT.__const: 0x2238
-+  __TEXT.__swift5_typeref: 0x14e0
-   __TEXT.__swift5_capture: 0x868
-   __TEXT.__swift_as_entry: 0x21c
-   __TEXT.__swift_as_ret: 0x26c
-   __TEXT.__swift_as_cont: 0x2cc
--  __TEXT.__swift5_reflstr: 0x4f6
--  __TEXT.__swift5_assocty: 0x120
--  __TEXT.__constg_swiftt: 0xc74
--  __TEXT.__swift5_fieldmd: 0x760
--  __TEXT.__swift5_proto: 0xa4
--  __TEXT.__swift5_types: 0xb8
-+  __TEXT.__swift5_reflstr: 0x8b6
-+  __TEXT.__swift5_assocty: 0x138
-+  __TEXT.__constg_swiftt: 0xce8
-+  __TEXT.__swift5_fieldmd: 0x924
-+  __TEXT.__swift5_proto: 0xc0
-+  __TEXT.__swift5_types: 0xc8
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__cstring: 0x1ce4
--  __TEXT.__swift5_builtin: 0xc8
-+  __TEXT.__cstring: 0x2d94
-+  __TEXT.__swift5_builtin: 0xdc
-   __TEXT.__oslogstring: 0x522
--  __TEXT.__unwind_info: 0x1708
-+  __TEXT.__unwind_info: 0x1770
-   __TEXT.__eh_frame: 0x3a60
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+-625.1.20.10.3
++625.1.22.10.3
 
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x1e8
-   __DATA_CONST.__objc_classlist: 0x188
--  __DATA_CONST.__objc_protolist: 0x88
-+  __DATA_CONST.__objc_protolist: 0x98
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xed0
--  __DATA_CONST.__objc_protorefs: 0x48
--  __DATA_CONST.__got: 0x9b0
--  __AUTH_CONST.__const: 0x2048
-+  __DATA_CONST.__objc_selrefs: 0x1020
-+  __DATA_CONST.__objc_protorefs: 0x50
-+  __DATA_CONST.__got: 0x8f8
-+  __AUTH_CONST.__const: 0x21b8
-   __AUTH_CONST.__cfstring: 0x20
--  __AUTH_CONST.__objc_const: 0x40b0
--  __AUTH_CONST.__auth_got: 0x1798
-+  __AUTH_CONST.__objc_const: 0x44f0
-+  __AUTH_CONST.__auth_got: 0x1938
-   __AUTH.__objc_data: 0x1468
--  __AUTH.__data: 0xfb0
--  __DATA.__data: 0xf20
-+  __AUTH.__data: 0x1010
-+  __DATA.__data: 0x10d0
-   __DATA.__objc_stublist: 0x8
--  __DATA.__bss: 0x1768
--  __DATA.__common: 0x58
-+  __DATA.__bss: 0x1b48
-+  __DATA.__common: 0x68
-   - /System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1699
--  Symbols:   1576
--  CStrings:  168
+-  Symbols:   1005
+-  CStrings:  167
 +  Functions: 1772
-+  Symbols:   1646
-+  CStrings:  180
- 
-Sections:
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__objc_stublist : content changed
++  Symbols:   1057
++  CStrings:  179
 Symbols:
 + _OBJC_CLASS_$_MTLResidencySetDescriptor
 + _OBJC_CLASS_$_MTLTileRenderPipelineDescriptor
@@ -114,26 +63,6 @@ Symbols:
 + _associated conformance So14MTLPixelFormatVSHSCSQ
 + _associated conformance So16WKBridgeReceiverC11WebKitSwiftE18DeferredMeshUpdateV0H4TypeOSHACSQ
 + _flat unique So22MTLRenderPipelineState_p
-+ _objc_msgSend$addAllocation:
-+ _objc_msgSend$colorAttachments
-+ _objc_msgSend$computeCommandEncoder
-+ _objc_msgSend$dispatchThreadsPerTile:
-+ _objc_msgSend$newFunctionWithName:
-+ _objc_msgSend$newLibraryWithSource:options:error:
-+ _objc_msgSend$newRenderPipelineStateWithTileDescriptor:options:reflection:error:
-+ _objc_msgSend$newResidencySetWithDescriptor:error:
-+ _objc_msgSend$objectAtIndexedSubscript:
-+ _objc_msgSend$removeAllAllocations
-+ _objc_msgSend$setInitialCapacity:
-+ _objc_msgSend$setPixelFormat:
-+ _objc_msgSend$setRasterSampleCount:
-+ _objc_msgSend$setRenderPipelineState:
-+ _objc_msgSend$setThreadgroupSizeMatchesTileSize:
-+ _objc_msgSend$setTileFunction:
-+ _objc_msgSend$standardDynamicRange
-+ _objc_msgSend$tileHeight
-+ _objc_msgSend$tileWidth
-+ _objc_msgSend$useResidencySet:
 + _objc_release_x1
 + _objc_retain_x10
 + _swift_isUniquelyReferenced_nonNull_bridgeObject
@@ -335,5 +264,4 @@ CStrings:
 - "toWKBridgeBuiltin - unknown _Proto_ShaderNodeGraph.Node.data type"
 - "toWKBridgeConstantContainer - unknown _Proto_ShaderNodeGraph.Node.data type"
 - "toWKBridgeNodeType - unknown _Proto_ShaderNodeGraph.Node.data type"
-
 ```

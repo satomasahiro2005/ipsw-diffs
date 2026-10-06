@@ -2,38 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/ODIE.framework/Frameworks/libODIECompiler.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc64de0` | `0xc65004` | **`+0x224`** |
+| `__TEXT.__cstring` | `0xab8e0` | `0xab996` | **`+0xb6`** |
+| `__DATA.__bss` | `0x4430` | `0x4440` | **`+0x10`** |
+| `__DATA.__data` | `0x42f0` | `0x42e0` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x2cf28` | `0x2cf20` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.83.2.11.1
--  __TEXT.__text: 0xc46d64
 +3605.5.4.0.0
-+  __TEXT.__text: 0xc46f50
-   __TEXT.__init_offsets: 0x30
-   __TEXT.__const: 0x2a1c
-   __TEXT.__oslogstring: 0x3b
--  __TEXT.__cstring: 0xab8e0
--  __TEXT.__unwind_info: 0x371f0
-+  __TEXT.__cstring: 0xab996
-+  __TEXT.__unwind_info: 0x371e0
-   __TEXT.__eh_frame: 0x128
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x27b8
 
-   __AUTH.__data: 0x6098
-   __AUTH.__thread_vars: 0x108
-   __AUTH.__thread_bss: 0x230
--  __DATA.__data: 0x42f0
-+  __DATA.__data: 0x42e0
-   __DATA.__common: 0x2660
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 74698
 -  Symbols:   83181
 -  CStrings:  11452
 +  Functions: 74696
 +  Symbols:   83177
 +  CStrings:  11455
- 
 Symbols:
 + __ZN4llvm6detail18UniqueFunctionBaseINS_13LogicalResultEJPN4mlir9OperationENS_8ArrayRefINS3_9AttributeEEERNS_15SmallVectorImplINS3_12OpFoldResultEEEEE15CallbacksHolderIZNS3_2OpINS3_4ODIE8Compiler4Exec6CallOpEJNS3_7OpTrait11ZeroRegionsENSK_15VariadicResultsENSK_14ZeroSuccessorsENSK_16VariadicOperandsENSK_24AttrSizedOperandSegmentsENSK_12OpInvariantsENS3_19BytecodeOpInterface5TraitENSI_23OutputIntentOpInterface5TraitENSI_32ConditionallyEscapingOpInterface5TraitENSI_14DPSOpInterface5TraitEEE13getFoldHookFnEvEUlS5_S8_SC_E_KS10_E9CallbacksE
 + __ZN4llvm6detail18UniqueFunctionBaseINS_13LogicalResultEJPN4mlir9OperationENS_8ArrayRefINS3_9AttributeEEERNS_15SmallVectorImplINS3_12OpFoldResultEEEEE8CallImplIKZNS3_2OpINS3_4ODIE8Compiler4Exec6CallOpEJNS3_7OpTrait11ZeroRegionsENSK_15VariadicResultsENSK_14ZeroSuccessorsENSK_16VariadicOperandsENSK_24AttrSizedOperandSegmentsENSK_12OpInvariantsENS3_19BytecodeOpInterface5TraitENSI_23OutputIntentOpInterface5TraitENSI_32ConditionallyEscapingOpInterface5TraitENSI_14DPSOpInterface5TraitEEE13getFoldHookFnEvEUlS5_S8_SC_E_EES2_PvS5_S8_SC_

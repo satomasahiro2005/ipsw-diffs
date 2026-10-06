@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/CloudSubscriptionFeatures.framework/CloudSubscriptionFeatures`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__auth_got` | `0x1130` | `0x1138` | **`+0x8`** |
+| `__TEXT.__text` | `0x11db78` | `0x11db80` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 301.24.0.31.0
--  __TEXT.__text: 0x11db78
-+  __TEXT.__text: 0x11db80
-   __TEXT.__objc_methlist: 0xea4
-   __TEXT.__const: 0xbbd4
-   __TEXT.__cstring: 0x4861
-
-   __AUTH_CONST.__const: 0x9800
-   __AUTH_CONST.__cfstring: 0x480
-   __AUTH_CONST.__objc_const: 0x35d0
--  __AUTH_CONST.__auth_got: 0x1130
-+  __AUTH_CONST.__auth_got: 0x1138
-   __AUTH.__objc_data: 0x3f0
-   __AUTH.__data: 0x7c0
-   __DATA.__objc_ivar: 0x38
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 5052
--  Symbols:   2058
-+  Symbols:   2059
-   CStrings:  971
- 
+-  Symbols:   1824
++  Symbols:   1825
 Symbols:
 + _swift_release_x11
 Functions:

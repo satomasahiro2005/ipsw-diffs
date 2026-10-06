@@ -2,128 +2,74 @@
 
 > `/usr/bin/fm`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_entry`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb5210` | `0xbe35c` | **`+0x914c`** |
+| `__TEXT.__cstring` | `0x534a` | `0x5ada` | **`+0x790`** |
+| `__DATA_CONST.__const` | `0x2e80` | `0x30b0` | **`+0x230`** |
+| `__TEXT.__swift5_reflstr` | `0xeb7` | `0x1046` | **`+0x18f`** |
+| `__TEXT.__auth_stubs` | `0x3060` | `0x3190` | **`+0x130`** |
+| `__TEXT.__swift5_fieldmd` | `0x1294` | `0x13bc` | **`+0x128`** |
+| `__TEXT.__swift5_typeref` | `0x11af` | `0x12a9` | **`+0xfa`** |
+| `__DATA.__objc_const` | `0xbf0` | `0xcd0` | **`+0xe0`** |
+| `__TEXT.__const` | `0x3fa4` | `0x405c` | **`+0xb8`** |
+| `__DATA.__data` | `0x2008` | `0x20b8` | **`+0xb0`** |
+| `__TEXT.__eh_frame` | `0x3df8` | `0x3ea0` | **`+0xa8`** |
+| `__TEXT.__objc_methname` | `0x77d` | `0x81d` | **`+0xa0`** |
+| `__DATA_CONST.__auth_got` | `0x1838` | `0x18d0` | **`+0x98`** |
+| `__TEXT.__unwind_info` | `0x1958` | `0x19b8` | **`+0x60`** |
+| `__TEXT.__constg_swiftt` | `0xcb8` | `0xd08` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x730` | `0x770` | **`+0x40`** |
+| `__TEXT.__swift5_capture` | `0x7f4` | `0x824` | **`+0x30`** |
+| `__DATA_CONST.__auth_ptr` | `0x7b0` | `0x7d8` | **`+0x28`** |
+| `__DATA.__common` | `0x278` | `0x290` | **`+0x18`** |
+| `__TEXT.__swift5_mpenum` | `0x34` | `0x28` | **`-0xc`** |
+| `__TEXT.__swift5_proto` | `0x2bc` | `0x2c8` | **`+0xc`** |
+| `__TEXT.__swift5_protos` | `0x8` | `0x10` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x19c` | `0x1a4` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0xdc` | `0xe0` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__bss`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+
+### Other Changes
 
 ```diff
 
 -2.0.59.0.0
--  __TEXT.__text: 0xb5210
--  __TEXT.__auth_stubs: 0x3060
 +2.0.63.0.0
-+  __TEXT.__text: 0xbe35c
-+  __TEXT.__auth_stubs: 0x3190
-   __TEXT.__objc_stubs: 0x260
-   __TEXT.__objc_methlist: 0x104
--  __TEXT.__const: 0x3fa4
--  __TEXT.__constg_swiftt: 0xcb8
--  __TEXT.__swift5_typeref: 0x11af
-+  __TEXT.__const: 0x405c
-+  __TEXT.__constg_swiftt: 0xd08
-+  __TEXT.__swift5_typeref: 0x12a9
-   __TEXT.__swift5_builtin: 0x8c
--  __TEXT.__swift5_reflstr: 0xeb7
--  __TEXT.__swift5_fieldmd: 0x1294
-+  __TEXT.__swift5_reflstr: 0x1046
-+  __TEXT.__swift5_fieldmd: 0x13bc
-   __TEXT.__swift5_assocty: 0x90
--  __TEXT.__swift5_proto: 0x2bc
-+  __TEXT.__swift5_proto: 0x2c8
-   __TEXT.__swift5_types: 0x164
--  __TEXT.__cstring: 0x534a
--  __TEXT.__swift_as_entry: 0xdc
--  __TEXT.__swift_as_ret: 0x19c
-+  __TEXT.__cstring: 0x5ada
-+  __TEXT.__swift_as_entry: 0xe0
-+  __TEXT.__swift_as_ret: 0x1a4
-   __TEXT.__swift_as_cont: 0x2b0
-   __TEXT.__objc_classname: 0x141
--  __TEXT.__objc_methname: 0x77d
-+  __TEXT.__objc_methname: 0x81d
-   __TEXT.__objc_methtype: 0xb4
--  __TEXT.__swift5_mpenum: 0x34
--  __TEXT.__swift5_capture: 0x7f4
--  __TEXT.__swift5_protos: 0x8
-+  __TEXT.__swift5_mpenum: 0x28
-+  __TEXT.__swift5_capture: 0x824
-+  __TEXT.__swift5_protos: 0x10
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__unwind_info: 0x1958
--  __TEXT.__eh_frame: 0x3df8
--  __DATA_CONST.__const: 0x2e80
-+  __TEXT.__unwind_info: 0x19b8
-+  __TEXT.__eh_frame: 0x3ea0
-+  __DATA_CONST.__const: 0x30b0
-   __DATA_CONST.__objc_classlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__auth_got: 0x1838
--  __DATA_CONST.__got: 0x730
--  __DATA_CONST.__auth_ptr: 0x7b0
--  __DATA.__objc_const: 0xbf0
-+  __DATA_CONST.__auth_got: 0x18d0
-+  __DATA_CONST.__got: 0x770
-+  __DATA_CONST.__auth_ptr: 0x7d8
-+  __DATA.__objc_const: 0xcd0
-   __DATA.__objc_selrefs: 0x138
-   __DATA.__objc_data: 0xa0
--  __DATA.__data: 0x2008
-+  __DATA.__data: 0x20b8
-   __DATA.__bss: 0x5180
--  __DATA.__common: 0x278
-+  __DATA.__common: 0x290
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/FoundationModels.framework/FoundationModels
-   - /System/Library/Frameworks/ImageIO.framework/ImageIO
-   - /System/Library/Frameworks/Network.framework/Network
+
 +  - /System/Library/Frameworks/_Vision_FoundationModels.framework/_Vision_FoundationModels
-   - /System/Library/PrivateFrameworks/ArgumentParserInternal.framework/ArgumentParserInternal
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libobjc.A.dylib
+
 +  - /usr/lib/swift/libswiftAVFoundation.dylib
 +  - /usr/lib/swift/libswiftAccelerate.dylib
 +  - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftCoreImage.dylib
-+  - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDarwin.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
-+  - /usr/lib/swift/libswiftMLCompute.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-+  - /usr/lib/swift/libswiftQuartzCore.dylib
-   - /usr/lib/swift/libswiftSynchronization.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /usr/lib/swift/libswiftCoreMIDI.dylib
+
++  - /usr/lib/swift/libswiftMLCompute.dylib
+
++  - /usr/lib/swift/libswiftQuartzCore.dylib
+
 -  Functions: 1775
 -  Symbols:   1169
 -  CStrings:  478
 +  Functions: 1819
 +  Symbols:   1203
 +  CStrings:  509
- 
 Symbols:
 + _$s16FoundationModels10AttachmentV5labelyACyxGSSF
 + _$s16FoundationModels10AttachmentVA2A05ImageC7ContentVRszlE8imageURL11orientationACyAEG0A00G0V_So26CGImagePropertyOrientationVSgtcfC

@@ -2,74 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/SiriCrossDeviceArbitration.framework/SiriCrossDeviceArbitration`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x50` | `0xaf0` | **`+0xaa0`** |
+| `__DATA_DIRTY.__objc_data` | `0xc80` | `0x1e0` | **`-0xaa0`** |
+| `__TEXT.__text` | `0x2f498` | `0x2f744` | **`+0x2ac`** |
+| `__TEXT.__oslogstring` | `0x545a` | `0x54d8` | **`+0x7e`** |
+| `__TEXT.__objc_methlist` | `0x30d4` | `0x30fc` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x2e80` | `0x2ea0` | **`+0x20`** |
+| `__AUTH_CONST.__objc_const` | `0x5318` | `0x5338` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x5db4` | `0x5dd1` | **`+0x1d`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1df0` | `0x1e08` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x4f8` | `0x4fc` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2f498
--  __TEXT.__objc_methlist: 0x30d4
-+  __TEXT.__text: 0x2f744
-+  __TEXT.__objc_methlist: 0x30fc
-   __TEXT.__const: 0x1a8
-   __TEXT.__dlopen_cstrs: 0x118
-   __TEXT.__gcc_except_tab: 0x3ac
--  __TEXT.__oslogstring: 0x545a
--  __TEXT.__cstring: 0x5db4
-+  __TEXT.__oslogstring: 0x54d8
-+  __TEXT.__cstring: 0x5dd1
-   __TEXT.__unwind_info: 0xd98
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+-3600.49.5.1.1
++3600.49.8.0.0
 
-   __DATA_CONST.__objc_classlist: 0x148
-   __DATA_CONST.__objc_protolist: 0x78
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1df0
-+  __DATA_CONST.__objc_selrefs: 0x1e08
-   __DATA_CONST.__objc_superrefs: 0x128
-   __DATA_CONST.__objc_arraydata: 0x60
-   __DATA_CONST.__got: 0x2e8
-   __AUTH_CONST.__const: 0x2c0
--  __AUTH_CONST.__cfstring: 0x2e80
--  __AUTH_CONST.__objc_const: 0x5318
-+  __AUTH_CONST.__cfstring: 0x2ea0
-+  __AUTH_CONST.__objc_const: 0x5338
-   __AUTH_CONST.__objc_intobj: 0x108
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__auth_got: 0x438
--  __AUTH.__objc_data: 0x50
--  __DATA.__objc_ivar: 0x4f8
-+  __AUTH.__objc_data: 0xaf0
-+  __DATA.__objc_ivar: 0x4fc
-   __DATA.__data: 0x5d0
-   __DATA.__bss: 0x1b0
--  __DATA_DIRTY.__objc_data: 0xc80
-+  __DATA_DIRTY.__objc_data: 0x1e0
-   __DATA_DIRTY.__bss: 0x8
-   __DATA_DIRTY.__common: 0x10
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1236
--  Symbols:   4273
--  CStrings:  1419
+-  Symbols:   2308
+-  CStrings:  1048
 +  Functions: 1240
-+  Symbols:   4285
-+  CStrings:  1423
- 
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __DATA.__data : content changed
++  Symbols:   2313
++  CStrings:  1051
 Symbols:
 + -[SCDAAssistantPreferences myriadForceInstrumentationEnabled]
 + -[SCDAPreferences forceInstrumentationEnabled]
@@ -95,9 +55,6 @@ Symbols:
 + GCC_except_table993
 + _OBJC_IVAR_$_SCDACoordinator._forceInstrumentationEnabled
 + ___61-[SCDAAssistantPreferences myriadForceInstrumentationEnabled]_block_invoke
-+ _objc_msgSend$forceInstrumentationEnabled
-+ _objc_msgSend$isAnOutgoing
-+ _objc_msgSend$myriadForceInstrumentationEnabled
 - GCC_except_table1010
 - GCC_except_table1031
 - GCC_except_table1095
@@ -136,5 +93,4 @@ CStrings:
 + "Myriad Force Instrumentation"
 - "%s #scda Not attempting / applying watch threshold boost because rebalance is enabled."
 - "%s BTLE in-ear trigger entering election with default goodness"
-
 ```

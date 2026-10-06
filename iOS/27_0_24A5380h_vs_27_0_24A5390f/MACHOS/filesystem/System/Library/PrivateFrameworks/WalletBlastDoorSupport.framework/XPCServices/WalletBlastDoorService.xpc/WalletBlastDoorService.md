@@ -2,73 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/WalletBlastDoorSupport.framework/XPCServices/WalletBlastDoorService.xpc/WalletBlastDoorService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_entry`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8290` | `0x178dc` | **`+0xf64c`** |
+| `__TEXT.__auth_stubs` | `0xb50` | `0x1b20` | **`+0xfd0`** |
+| `__DATA_CONST.__auth_got` | `0x5b0` | `0xd98` | **`+0x7e8`** |
+| `__TEXT.__eh_frame` | `0x190` | `0x770` | **`+0x5e0`** |
+| `__DATA_CONST.__got` | `0xd8` | `0x428` | **`+0x350`** |
+| `__TEXT.__oslogstring` | `—` | `0x32d` | **`+0x32d`** |
+| `__TEXT.__swift5_typeref` | `0x144` | `0x339` | **`+0x1f5`** |
+| `__TEXT.__cstring` | `0x48` | `0x22b` | **`+0x1e3`** |
+| `__DATA.__data` | `0x180` | `0x300` | **`+0x180`** |
+| `__TEXT.__const` | `0x242` | `0x3a0` | **`+0x15e`** |
+| `__TEXT.__unwind_info` | `0x160` | `0x298` | **`+0x138`** |
+| `__DATA_CONST.__auth_ptr` | `0xd0` | `0x200` | **`+0x130`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__const`
 - `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
 - `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_fieldmd`
 - `__TEXT.__swift5_proto`
 - `__TEXT.__swift5_types`
-- `__DATA_CONST.__const`
-- `__DATA.__objc_selrefs`
+
+### Other Changes
 
 ```diff
 
 -325.100.1.0.0
--  __TEXT.__text: 0x8290
--  __TEXT.__auth_stubs: 0xb50
 +327.100.2.0.0
-+  __TEXT.__text: 0x178dc
-+  __TEXT.__auth_stubs: 0x1b20
-   __TEXT.__objc_stubs: 0x40
--  __TEXT.__const: 0x242
--  __TEXT.__swift5_typeref: 0x144
-+  __TEXT.__const: 0x3a0
-+  __TEXT.__swift5_typeref: 0x339
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__constg_swiftt: 0x94
-   __TEXT.__swift5_fieldmd: 0xa0
-   __TEXT.__swift5_reflstr: 0x103
-   __TEXT.__swift5_assocty: 0x18
--  __TEXT.__cstring: 0x48
-+  __TEXT.__cstring: 0x22b
-   __TEXT.__swift5_proto: 0x8
-   __TEXT.__swift5_types: 0x10
-+  __TEXT.__oslogstring: 0x32d
-   __TEXT.__objc_methname: 0x25
--  __TEXT.__unwind_info: 0x160
--  __TEXT.__eh_frame: 0x190
-+  __TEXT.__unwind_info: 0x298
-+  __TEXT.__eh_frame: 0x770
-   __DATA_CONST.__const: 0x1a8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x5b0
--  __DATA_CONST.__got: 0xd8
--  __DATA_CONST.__auth_ptr: 0xd0
-+  __DATA_CONST.__auth_got: 0xd98
-+  __DATA_CONST.__got: 0x428
-+  __DATA_CONST.__auth_ptr: 0x200
-   __DATA.__objc_selrefs: 0x10
--  __DATA.__data: 0x180
-+  __DATA.__data: 0x300
-   __DATA.__common: 0x18
-   __DATA.__bss: 0x100
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 +  - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 75
 -  Symbols:   85
 -  CStrings:  4
 +  Functions: 135
 +  Symbols:   99
 +  CStrings:  28
- 
 Symbols:
 + __os_log_impl
 + _objc_release_x27

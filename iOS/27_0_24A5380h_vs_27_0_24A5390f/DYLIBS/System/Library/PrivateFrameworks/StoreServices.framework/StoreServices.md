@@ -2,45 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/StoreServices.framework/StoreServices`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__cstring`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2a1b78` | `0x2a204c` | **`+0x4d4`** |
+
+### Other Changes
 
 ```diff
 
 -1453.0.5.0.0
--  __TEXT.__text: 0x2a1b78
 +1453.0.6.0.0
-+  __TEXT.__text: 0x2a204c
-   __TEXT.__objc_methlist: 0x15578
-   __TEXT.__const: 0x12c10
-   __TEXT.__cstring: 0x14638
 Functions:
 ~ sub_1cf5f8010 -> sub_1d0e63010 : 504 -> 492
 ~ sub_1cf5f8208 -> sub_1d0e631fc : 740 -> 688

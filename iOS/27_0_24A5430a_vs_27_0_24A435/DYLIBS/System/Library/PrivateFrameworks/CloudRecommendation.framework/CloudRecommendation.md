@@ -2,19 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/CloudRecommendation.framework/CloudRecommendation`
 
-```diff
+### Section Size Changes
 
- 301.24.0.6.0
--  __TEXT.__text: 0x2ad14
-+  __TEXT.__text: 0x2ad24
-   __TEXT.__objc_methlist: 0x13f0
-   __TEXT.__const: 0xc30
-   __TEXT.__cstring: 0xf5f
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2ad14` | `0x2ad24` | **`+0x10`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_257bfd484 -> sub_258d0a484 : 484 -> 480
-~ sub_257bfd668 -> sub_258d0a664 : 608 -> 612
-~ sub_257c00dbc -> sub_258d0ddbc : 696 -> 700
-~ sub_257c118f4 -> sub_258d1e8f8 : 360 -> 364
-~ sub_257c11a70 -> sub_258d1ea78 : 356 -> 360
-~ sub_257c11bd4 -> sub_258d1ebe0 : 340 -> 344
+~ sub_257ac7484 -> sub_258bee484 : 484 -> 480
+~ sub_257ac7668 -> sub_258bee664 : 608 -> 612
+~ sub_257acadbc -> sub_258bf1dbc : 696 -> 700
+~ sub_257adb8f4 -> sub_258c028f8 : 360 -> 364
+~ sub_257adba70 -> sub_258c02a78 : 356 -> 360
+~ sub_257adbbd4 -> sub_258c02be0 : 340 -> 344
 ```

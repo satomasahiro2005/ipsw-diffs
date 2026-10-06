@@ -2,18 +2,21 @@
 
 > `/System/Library/AppRemovalServices/com.apple.podcasts.appremoval.xpc/com.apple.podcasts.appremoval`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x160` | `0x168` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__const`
+- `__TEXT.__gcc_except_tab`
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_superrefs: 0x28
-   __DATA_CONST.__objc_intobj: 0x60
-   __DATA_CONST.__auth_got: 0x2a8
--  __DATA_CONST.__got: 0x160
-+  __DATA_CONST.__got: 0x168
-   __DATA.__objc_const: 0xed8
-   __DATA.__objc_selrefs: 0x7b0
-   __DATA.__objc_ivar: 0x70
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__gcc_except_tab : content changed
-
+-4027.100.70.0.0
++4027.100.75.0.0
 ```

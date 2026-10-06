@@ -2,24 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/CoreKnowledge.framework/CoreKnowledge`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x72f90` | `0x73054` | **`+0xc4`** |
+
+### Other Changes
+
 ```diff
 
- 3600.13.3.0.0
--  __TEXT.__text: 0x72f90
-+  __TEXT.__text: 0x73054
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__objc_methlist: 0x2820
-   __TEXT.__const: 0x187e
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3516
--  Symbols:   2818
+-  Symbols:   2285
 +  Functions: 3523
-+  Symbols:   2821
-   CStrings:  721
- 
++  Symbols:   2288
 Symbols:
 + _OUTLINED_FUNCTION_141
 + _OUTLINED_FUNCTION_142

@@ -2,87 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/AVFCapture.framework/AVFCapture`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x19d57c` | `0x1468b0` | **`-0x56ccc`** |
+| `__TEXT.__oslogstring` | `0x279df` | `0xb215` | **`-0x1c7ca`** |
+| `__TEXT.__cstring` | `0x3ba99` | `0x2f649` | **`-0xc450`** |
+| `__AUTH_CONST.__cfstring` | `0x17660` | `0x16c80` | **`-0x9e0`** |
+| `__TEXT.__gcc_except_tab` | `0x3804` | `0x3170` | **`-0x694`** |
+| `__TEXT.__unwind_info` | `0x59a0` | `0x57a0` | **`-0x200`** |
+| `__DATA.__common` | `0x3d0` | `0x1e0` | **`-0x1f0`** |
+| `__DATA_DIRTY.__bss` | `0x3e8` | `0x4e8` | **`+0x100`** |
+| `__DATA.__bss` | `0xa20` | `0x930` | **`-0xf0`** |
+| `__DATA_CONST.__const` | `0x9560` | `0x9470` | **`-0xf0`** |
+| `__DATA_DIRTY.__common` | `0x230` | `0x160` | **`-0xd0`** |
+| `__TEXT.__objc_methlist` | `0x114b4` | `0x114fc` | **`+0x48`** |
+| `__DATA_CONST.__objc_selrefs` | `0x92c8` | `0x9288` | **`-0x40`** |
+| `__AUTH_CONST.__const` | `0xe70` | `0xe50` | **`-0x20`** |
+| `__AUTH_CONST.__objc_const` | `0x1cb28` | `0x1cb48` | **`+0x20`** |
+| `__TEXT.__const` | `0xf42` | `0xf22` | **`-0x20`** |
+| `__DATA_CONST.__got` | `0x2f78` | `0x2f90` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x1188` | `0x1178` | **`-0x10`** |
+| `__DATA.__data` | `0xe48` | `0xe50` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -764.40.5.0.0
--  __TEXT.__text: 0x198634
--  __TEXT.__objc_methlist: 0x114b4
--  __TEXT.__const: 0xf42
--  __TEXT.__gcc_except_tab: 0x3804
--  __TEXT.__cstring: 0x3ba99
--  __TEXT.__oslogstring: 0x279df
 +764.40.7.0.0
-+  __TEXT.__text: 0x141114
-+  __TEXT.__objc_methlist: 0x114fc
-+  __TEXT.__const: 0xf22
-+  __TEXT.__gcc_except_tab: 0x3170
-+  __TEXT.__cstring: 0x2f649
-+  __TEXT.__oslogstring: 0xb215
-   __TEXT.__dlopen_cstrs: 0x274
-   __TEXT.__ustring: 0x54
-   __TEXT.__swift5_typeref: 0xef
 
-   __TEXT.__swift5_reflstr: 0x24
-   __TEXT.__swift5_fieldmd: 0x50
-   __TEXT.__swift5_types: 0x8
--  __TEXT.__unwind_info: 0x6a58
-+  __TEXT.__unwind_info: 0x6888
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9560
-+  __DATA_CONST.__const: 0x9470
-   __DATA_CONST.__objc_classlist: 0x6c8
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0xb0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x92c8
-+  __DATA_CONST.__objc_selrefs: 0x9288
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x5f0
-   __DATA_CONST.__objc_arraydata: 0x4f8
--  __DATA_CONST.__got: 0x2f78
--  __AUTH_CONST.__const: 0xe70
--  __AUTH_CONST.__cfstring: 0x17660
--  __AUTH_CONST.__objc_const: 0x1cb28
-+  __DATA_CONST.__got: 0x2f90
-+  __AUTH_CONST.__const: 0xe50
-+  __AUTH_CONST.__cfstring: 0x16c80
-+  __AUTH_CONST.__objc_const: 0x1cb48
-   __AUTH_CONST.__objc_intobj: 0xb70
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x3f0
-   __AUTH_CONST.__objc_floatobj: 0x20
--  __AUTH_CONST.__auth_got: 0x1188
-+  __AUTH_CONST.__auth_got: 0x1178
-   __AUTH.__objc_data: 0xd18
-   __DATA.__objc_ivar: 0x1ed0
--  __DATA.__data: 0xe48
--  __DATA.__common: 0x3d0
-+  __DATA.__data: 0xe50
-+  __DATA.__common: 0x1e0
-   __DATA_DIRTY.__objc_data: 0x36d8
-   __DATA_DIRTY.__data: 0x198
--  __DATA_DIRTY.__common: 0x230
--  __DATA_DIRTY.__bss: 0x3e8
-+  __DATA_DIRTY.__bss: 0x4e8
-+  __DATA_DIRTY.__common: 0x160
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVRouting.framework/AVRouting
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8017
 -  Symbols:   14452
 -  CStrings:  6209
 +  Functions: 7857
 +  Symbols:   14479
 +  CStrings:  4230
- 
 Symbols:
 + +[AVCaptureResolvedPhotoSettings resolvedSettingsWithUniqueID:photoDimensions:rawPhotoDimensions:previewDimensions:embeddedThumbnailDimensions:rawEmbeddedThumbnailDimensions:livePhotoMovieEnabled:livePhotoMovieDimensions:livePhotoAssetIdentifier:portraitEffectsMatteDimensions:hairSegmentationMatteDimensions:skinSegmentationMatteDimensions:teethSegmentationMatteDimensions:glassesSegmentationMatteDimensions:spatialOverCapturePhotoDimensions:turboModeEnabled:flashEnabled:redEyeReductionEnabled:HDREnabled:adjustedPhotoFiltersEnabled:EV0PhotoDeliveryEnabled:stillImageStabilizationEnabled:virtualDeviceFusionEnabled:squareCropEnabled:deferredPhotoProxyDimensions:photoProcessingTimeRange:contentAwareDistortionCorrectionEnabled:spatialPhotoCaptureEnabled:photoManifest:digitalFlashUserInterfaceHints:digitalFlashUserInterfaceRGBEstimate:captureBeforeResolvingSettingsEnabled:secureSigningPhotoCapturePhotoEnabled:personalPhotographerDuplicateInfo:]
 + -[AVCaptureDevice moduleSealedState]

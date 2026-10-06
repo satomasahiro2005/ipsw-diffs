@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AudioPasscodeDSP.framework/AudioPasscodeDSP`
 
-```diff
+### Section Size Changes
 
- 68.0.0.0.0
--  __TEXT.__text: 0xdd24
-+  __TEXT.__text: 0xdd84
-   __TEXT.__objc_methlist: 0x5d4
-   __TEXT.__const: 0x4e30
-   __TEXT.__gcc_except_tab: 0x910
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xdd24` | `0xdd84` | **`+0x60`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__16vectorIjNS_9allocatorIjEEE6resizeEm : 284 -> 288
 ~ __ZN13ShapingFilter6filterEPKfPfj : 196 -> 204

@@ -2,100 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/AssistantIslandClient.framework/AssistantIslandClient`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x532dc` | `0x73828` | **`+0x2054c`** |
+| `__DATA.__bss` | `0xe028` | `0x167a8` | **`+0x8780`** |
+| `__TEXT.__const` | `0x85d4` | `0xc664` | **`+0x4090`** |
+| `__AUTH_CONST.__const` | `0x5228` | `0x6ce0` | **`+0x1ab8`** |
+| `__TEXT.__eh_frame` | `0x1d90` | `0x2f78` | **`+0x11e8`** |
+| `__TEXT.__unwind_info` | `0x26a0` | `0x33a0` | **`+0xd00`** |
+| `__DATA.__data` | `0x1ce8` | `0x2940` | **`+0xc58`** |
+| `__TEXT.__swift5_typeref` | `0x2488` | `0x3058` | **`+0xbd0`** |
+| `__TEXT.__constg_swiftt` | `0x25b8` | `0x3000` | **`+0xa48`** |
+| `__TEXT.__swift5_fieldmd` | `0x1900` | `0x21f4` | **`+0x8f4`** |
+| `__AUTH.__data` | `0x760` | `0xd30` | **`+0x5d0`** |
+| `__AUTH_CONST.__objc_const` | `0x2fa0` | `0x3518` | **`+0x578`** |
+| `__AUTH.__objc_data` | `0x1798` | `0x1cb8` | **`+0x520`** |
+| `__TEXT.__oslogstring` | `0x74e` | `0xbad` | **`+0x45f`** |
+| `__TEXT.__swift5_proto` | `0x778` | `0xbac` | **`+0x434`** |
+| `__TEXT.__swift5_reflstr` | `0xd18` | `0x1068` | **`+0x350`** |
+| `__TEXT.__objc_methlist` | `0x1a08` | `0x1d30` | **`+0x328`** |
+| `__TEXT.__cstring` | `0x10b6` | `0x1236` | **`+0x180`** |
+| `__TEXT.__swift5_types` | `0x300` | `0x404` | **`+0x104`** |
+| `__DATA_DIRTY.__bss` | `0xd80` | `0xc80` | **`-0x100`** |
+| `__TEXT.__swift5_capture` | `0x820` | `0x8dc` | **`+0xbc`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb18` | `0xbc0` | **`+0xa8`** |
+| `__DATA_DIRTY.__data` | `0x1210` | `0x11b0` | **`-0x60`** |
+| `__AUTH_CONST.__auth_got` | `0xd00` | `0xd50` | **`+0x50`** |
+| `__DATA_CONST.__const` | `0x3f0` | `0x440` | **`+0x50`** |
+| `__DATA_CONST.__objc_classlist` | `0x1d0` | `0x200` | **`+0x30`** |
+| `__DATA_DIRTY.__objc_data` | `0x1520` | `0x1548` | **`+0x28`** |
+| `__TEXT.__swift5_builtin` | `0xa0` | `0xb4` | **`+0x14`** |
+| `__TEXT.__swift5_mpenum` | `0x1c` | `0x2c` | **`+0x10`** |
+| `__DATA.__common` | `0x18` | `0x20` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x14` | `0x1c` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x14` | `0x18` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0x10` | `0x14` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0xc` | `0x10` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -73.0.24.109.0
--  __TEXT.__text: 0x501f4
--  __TEXT.__objc_methlist: 0x1a08
--  __TEXT.__const: 0x85d4
--  __TEXT.__constg_swiftt: 0x25b8
--  __TEXT.__swift5_typeref: 0x2488
--  __TEXT.__swift5_builtin: 0xa0
--  __TEXT.__swift5_reflstr: 0xd18
--  __TEXT.__swift5_fieldmd: 0x1900
 +3605.1.1.1.5
-+  __TEXT.__text: 0x6f270
-+  __TEXT.__objc_methlist: 0x1d30
-+  __TEXT.__swift5_typeref: 0x3058
-+  __TEXT.__swift5_fieldmd: 0x21f4
-+  __TEXT.__const: 0xc664
-+  __TEXT.__constg_swiftt: 0x3000
-+  __TEXT.__swift5_builtin: 0xb4
-+  __TEXT.__swift5_reflstr: 0x1068
-   __TEXT.__swift5_assocty: 0x248
--  __TEXT.__swift5_proto: 0x778
--  __TEXT.__swift5_types: 0x300
--  __TEXT.__swift5_protos: 0x14
--  __TEXT.__swift5_mpenum: 0x1c
--  __TEXT.__cstring: 0x10b6
--  __TEXT.__oslogstring: 0x74e
--  __TEXT.__swift5_capture: 0x820
--  __TEXT.__swift_as_entry: 0x10
--  __TEXT.__swift_as_ret: 0xc
--  __TEXT.__swift_as_cont: 0x14
--  __TEXT.__unwind_info: 0x3098
--  __TEXT.__eh_frame: 0x1d90
-+  __TEXT.__swift5_protos: 0x18
-+  __TEXT.__swift5_proto: 0xbac
-+  __TEXT.__swift5_types: 0x404
-+  __TEXT.__swift5_mpenum: 0x2c
-+  __TEXT.__cstring: 0x1236
-+  __TEXT.__oslogstring: 0xbad
-+  __TEXT.__swift5_capture: 0x8dc
-+  __TEXT.__swift_as_entry: 0x14
-+  __TEXT.__swift_as_ret: 0x10
-+  __TEXT.__swift_as_cont: 0x1c
-+  __TEXT.__unwind_info: 0x41b8
-+  __TEXT.__eh_frame: 0x2f78
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3f0
--  __DATA_CONST.__objc_classlist: 0x1d0
-+  __DATA_CONST.__const: 0x440
-+  __DATA_CONST.__objc_classlist: 0x200
-   __DATA_CONST.__objc_protolist: 0x170
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb18
-+  __DATA_CONST.__objc_selrefs: 0xbc0
-   __DATA_CONST.__objc_protorefs: 0xe0
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x5228
--  __AUTH_CONST.__objc_const: 0x2fa0
--  __AUTH_CONST.__auth_got: 0xd00
--  __AUTH.__objc_data: 0x1798
--  __AUTH.__data: 0x760
--  __DATA.__data: 0x1ce8
--  __DATA.__common: 0x18
--  __DATA_DIRTY.__objc_data: 0x1520
--  __DATA_DIRTY.__data: 0x1210
--  __DATA_DIRTY.__bss: 0xd80
-+  __AUTH_CONST.__const: 0x6ce0
-+  __AUTH_CONST.__objc_const: 0x3518
-+  __AUTH_CONST.__auth_got: 0xd50
-+  __AUTH.__objc_data: 0x1cb8
-+  __AUTH.__data: 0xd30
-+  __DATA.__data: 0x2940
-+  __DATA.__common: 0x20
-+  __DATA_DIRTY.__objc_data: 0x1548
-+  __DATA_DIRTY.__data: 0x11b0
-+  __DATA_DIRTY.__bss: 0xc80
-   __DATA_DIRTY.__common: 0x68
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4099
--  Symbols:   1933
+-  Symbols:   1715
 -  CStrings:  121
 +  Functions: 5459
-+  Symbols:   2357
++  Symbols:   2124
 +  CStrings:  157
- 
 Symbols:
 + _CGRectGetHeight
 + _OBJC_CLASS_$_AICSystemAuxiliaryAssistantSessionStatusBox
@@ -372,26 +330,6 @@ Symbols:
 + _keypath_get_selector_wrappedAudioMeters
 + _keypath_get_selector_wrappedRequestedContentMode
 + _keypath_get_selector_wrappedSystemPresentation
-+ _objc_msgSend$_layoutSizeThatFits:fixedAxes:
-+ _objc_msgSend$activityMaxContentHeight
-+ _objc_msgSend$addChildViewController:
-+ _objc_msgSend$didMoveToParentViewController:
-+ _objc_msgSend$latencyContentMaxWidth
-+ _objc_msgSend$parentViewController
-+ _objc_msgSend$setView:
-+ _objc_msgSend$setWrappedActiveChatDescription:
-+ _objc_msgSend$setWrappedAssistantSessionStatus:
-+ _objc_msgSend$setWrappedAssistantStatus:
-+ _objc_msgSend$setWrappedAudioMeters:
-+ _objc_msgSend$setWrappedRequestedContentMode:
-+ _objc_msgSend$setWrappedSystemPresentation:
-+ _objc_msgSend$specification
-+ _objc_msgSend$wrappedActiveChatDescription
-+ _objc_msgSend$wrappedAssistantSessionStatus
-+ _objc_msgSend$wrappedAssistantStatus
-+ _objc_msgSend$wrappedAudioMeters
-+ _objc_msgSend$wrappedRequestedContentMode
-+ _objc_msgSend$wrappedSystemPresentation
 + _objc_release_x1
 + _swift_cvw_initEnumMetadataSingleCaseWithLayoutString
 + _swift_cvw_initEnumMetadataSinglePayloadWithLayoutString
@@ -708,11 +646,6 @@ Symbols:
 - _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAA15ModifiedContentVyAHyAA01_c9Modifier_I0Vy21AssistantIslandClient015SystemAuxiliaryJ033_25C615777B9A76233926939D4931FFA6LLVGAA16_FixedSizeLayoutVGAA015_GeometryActionJ0VySo6CGSizeVAVSQ12CoreGraphicsyHCg_GG_AK0no5SceneM9ComponentCSgQo_HO
 - _keypath_get_selector_requestedContentMode
 - _keypath_get_selector_wrappedPresentationState
-- _objc_msgSend$conformsToExtension:
-- _objc_msgSend$requestedContentMode
-- _objc_msgSend$setRequestedContentMode:
-- _objc_msgSend$setWrappedPresentationState:
-- _objc_msgSend$wrappedPresentationState
 - _objc_release_x9
 - _swift_retain_x27
 - _symbolic $s15AssistantUICore25PlatformViewRepresentableP

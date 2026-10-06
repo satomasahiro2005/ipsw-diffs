@@ -2,53 +2,38 @@
 
 > `/System/Library/Video/Plug-Ins/AppleVideoEncoder.bundle/AppleVideoEncoder`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__DATA.__objc_selrefs`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x194460` | `0x1f014c` | **`+0x5bcec`** |
+| `__TEXT.__cstring` | `0x570c0` | `0x5b553` | **`+0x4493`** |
+| `__DATA_CONST.__const` | `0xb490` | `0xdd10` | **`+0x2880`** |
+| `__DATA_CONST.__cfstring` | `0x32c0` | `0x3640` | **`+0x380`** |
+| `__TEXT.__const` | `0x252e8` | `0x25468` | **`+0x180`** |
+| `__TEXT.__unwind_info` | `0x968` | `0xa00` | **`+0x98`** |
+| `__TEXT.__gcc_except_tab` | `0x6f4` | `0x730` | **`+0x3c`** |
+| `__DATA_CONST.__auth_ptr` | `0x30` | `0x38` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA.__objc_selrefs`
+- `__TEXT.__init_offsets`
+
+### Other Changes
 
 ```diff
 
 -913.43.1.0.0
--  __TEXT.__text: 0x194040
 +913.48.1.0.0
-+  __TEXT.__text: 0x1efcec
-   __TEXT.__auth_stubs: 0x1050
-   __TEXT.__objc_stubs: 0x20
-   __TEXT.__init_offsets: 0xc
--  __TEXT.__const: 0x252e8
--  __TEXT.__cstring: 0x570c0
--  __TEXT.__gcc_except_tab: 0x6f4
-+  __TEXT.__const: 0x25468
-+  __TEXT.__cstring: 0x5b553
-+  __TEXT.__gcc_except_tab: 0x730
-   __TEXT.__objc_methname: 0xb
--  __TEXT.__unwind_info: 0x1ae0
--  __DATA_CONST.__const: 0xb490
--  __DATA_CONST.__cfstring: 0x32c0
-+  __TEXT.__unwind_info: 0x2050
-+  __DATA_CONST.__const: 0xdd10
-+  __DATA_CONST.__cfstring: 0x3640
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__auth_got: 0x838
-   __DATA_CONST.__got: 0x6e8
--  __DATA_CONST.__auth_ptr: 0x30
-+  __DATA_CONST.__auth_ptr: 0x38
-   __DATA.__objc_selrefs: 0x8
-   __DATA.__data: 0x118
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1637
 -  Symbols:   494
--  CStrings:  7090
+-  CStrings:  7093
 +  Functions: 1980
 +  Symbols:   496
-+  CStrings:  7547
- 
++  CStrings:  7550
 Symbols:
 + _AVE_Plugin_AV1_CreateInstance
 + _AVE_Plugin_AV1_SetCallback
@@ -138,6 +123,9 @@ CStrings:
 + "(0) <= iMaxQP && iMaxQP <= (255)"
 + "(0) <= iMinQP && iMinQP <= (255)"
 + "(iNumOfFrames / 2) >= 0 && (iNumOfFrames / 2) <= (((16) > (15) ? (16) : (15)) + 1)"
++ "23:13:19"
++ "23:13:21"
++ "23:13:22"
 + "913.48.1"
 + "AV1_Main_2_0"
 + "AV1_Main_2_1"
@@ -500,6 +488,7 @@ CStrings:
 + "AVE_Session_AV1_StartTileSession"
 + "AVE_Session_AV1_Stop"
 + "Professional"
++ "Sep  4 2026"
 + "TileLayout"
 + "TileLayoutNumberOfColumns"
 + "TileLayoutNumberOfRows"
@@ -515,7 +504,11 @@ CStrings:
 + "tileCols >= 0"
 + "tileRows >= 0"
 - "(iNumOfFrames / 2) >= 0 && (iNumOfFrames / 2) <= (((16) > (16) ? (16) : (16)) + 1)"
+- "21:35:36"
+- "21:35:38"
+- "21:35:39"
 - "913.43.1"
+- "Aug 13 2026"
 - "num <= (((16) > (16) ? (16) : (16)) + 1)"
 - "pSnapshot->num_ref_frame <= ((16) > (16) ? (16) : (16))"
 ```

@@ -2,28 +2,22 @@
 
 > `/System/Library/VideoDecoders/AVD.videodecoder`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1697d0` | `0x169770` | **`-0x60`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1697d0
-+  __TEXT.__text: 0x169770
-   __TEXT.__objc_methlist: 0x1fc
-   __TEXT.__const: 0xc1d3
-   __TEXT.__oslogstring: 0x15fb9
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+-989.0.0.0.0
++989.1.0.0.0
 Functions:
 ~ __ZN10CPBManager13releaseOneCPBEjb : 720 -> 732
 ~ __ZN10CPBManager11allocOneCPBEjmRjPhPbPS1_ : 1732 -> 1784
@@ -55,5 +49,4 @@ CStrings:
 - "19:45:43"
 - "19:45:44"
 - "Jun 18 2026"
-
 ```

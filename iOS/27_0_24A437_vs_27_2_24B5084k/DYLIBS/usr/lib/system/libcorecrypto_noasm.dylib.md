@@ -2,39 +2,28 @@
 
 > `/usr/lib/system/libcorecrypto_noasm.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x86ab0` | `0x87068` | **`+0x5b8`** |
+| `__AUTH_CONST.__const` | `0x1a70` | `0x1b40` | **`+0xd0`** |
+| `__TEXT.__cstring` | `0x5940` | `0x5a03` | **`+0xc3`** |
+| `__TEXT.__const` | `0x20208` | `0x20248` | **`+0x40`** |
+
+### Other Changes
+
 ```diff
 
 -2109.0.22.0.0
--  __TEXT.__text: 0x861b0
--  __TEXT.__const: 0x20208
--  __TEXT.__cstring: 0x5940
 +2109.40.15.0.0
-+  __TEXT.__text: 0x86748
-+  __TEXT.__const: 0x20248
-+  __TEXT.__cstring: 0x5a03
-   __TEXT.__fips_hmacs: 0x20
-   __TEXT.__oslogstring: 0x60
-   __TEXT.__unwind_info: 0x23c8
 
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x2108
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1a70
-+  __AUTH_CONST.__const: 0x1b40
-   __AUTH_CONST.__auth_got: 0x118
-   __AUTH.__data: 0x148
-   __DATA.__data: 0x6860
-
-   - /usr/lib/system/libsystem_platform.dylib
-   - /usr/lib/system/libsystem_pthread.dylib
-   - /usr/lib/system/libsystem_trace.dylib
 -  Functions: 2485
 -  Symbols:   2778
 -  CStrings:  534
 +  Functions: 2490
 +  Symbols:   2785
 +  CStrings:  537
- 
 Symbols:
 + _ccmldsa44
 + _ccmldsa44_params

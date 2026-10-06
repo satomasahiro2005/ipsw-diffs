@@ -2,49 +2,20 @@
 
 > `/usr/lib/libauthinstall.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb92b4` | `0xb9248` | **`-0x6c`** |
+| `__DATA_CONST.__got` | `0x3e8` | `0x410` | **`+0x28`** |
+| `__TEXT.__cstring` | `0x1ff79` | `0x1ff7d` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xb92b4
-+  __TEXT.__text: 0xb9248
-   __TEXT.__objc_methlist: 0x2a64
--  __TEXT.__cstring: 0x1ff79
-+  __TEXT.__cstring: 0x1ff7d
-   __TEXT.__const: 0x6456
-   __TEXT.__gcc_except_tab: 0x4560
-   __TEXT.__dlopen_cstrs: 0x63
-
-   __DATA_CONST.__objc_selrefs: 0xd70
-   __DATA_CONST.__objc_superrefs: 0x1f8
-   __DATA_CONST.__objc_arraydata: 0x10
--  __DATA_CONST.__got: 0x3e8
-+  __DATA_CONST.__got: 0x410
-   __AUTH_CONST.__const: 0x1518
-   __AUTH_CONST.__cfstring: 0xfb40
-   __AUTH_CONST.__objc_const: 0x4fd8
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
+-1155.0.0.0.0
++1155.0.3.0.0
 Functions:
 ~ __AMAuthInstallUpdaterInitLocalSigning : 184 -> 188
 ~ __AMAuthInstallApFtabCopyFtabFromFile : 312 -> 188
@@ -72,5 +43,4 @@ CStrings:
 - "HelsinkiRestore-58.0.41"
 - "VinylRestore-178~1394"
 - "libauthinstall_device-1155"
-
 ```

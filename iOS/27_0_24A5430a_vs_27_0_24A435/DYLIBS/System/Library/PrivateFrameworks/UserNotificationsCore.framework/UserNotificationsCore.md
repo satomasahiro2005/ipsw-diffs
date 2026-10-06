@@ -2,12 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/UserNotificationsCore.framework/UserNotificationsCore`
 
-```diff
+### Section Size Changes
 
- 720.0.0.0.0
--  __TEXT.__text: 0x236170
-+  __TEXT.__text: 0x236154
-   __TEXT.__objc_methlist: 0x5f74
-   __TEXT.__const: 0x1365c
-   __TEXT.__cstring: 0x9191
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x236170` | `0x236154` | **`-0x1c`** |

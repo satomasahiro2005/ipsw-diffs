@@ -2,95 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/CosmeticAssessment.framework/CosmeticAssessment`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x100468` | `0x109d98` | **`+0x9930`** |
+| `__TEXT.__const` | `0xd7a4` | `0xe5d4` | **`+0xe30`** |
+| `__DATA.__bss` | `0xe660` | `0xf380` | **`+0xd20`** |
+| `__AUTH_CONST.__objc_const` | `0x53b8` | `0x58f8` | **`+0x540`** |
+| `__AUTH.__data` | `0x3ad0` | `0x3ea8` | **`+0x3d8`** |
+| `__TEXT.__swift5_fieldmd` | `0x3f9c` | `0x4368` | **`+0x3cc`** |
+| `__AUTH_CONST.__const` | `0x8479` | `0x8821` | **`+0x3a8`** |
+| `__TEXT.__swift5_reflstr` | `0x3f4b` | `0x42a8` | **`+0x35d`** |
+| `__TEXT.__unwind_info` | `0x3c98` | `0x3f88` | **`+0x2f0`** |
+| `__TEXT.__swift5_typeref` | `0x52aa` | `0x5554` | **`+0x2aa`** |
+| `__TEXT.__constg_swiftt` | `0x2f0c` | `0x3170` | **`+0x264`** |
+| `__DATA.__data` | `0x2d38` | `0x2f98` | **`+0x260`** |
+| `__TEXT.__swift5_capture` | `0x1a94` | `0x1ca0` | **`+0x20c`** |
+| `__TEXT.__eh_frame` | `0x8ad8` | `0x8c9c` | **`+0x1c4`** |
+| `__AUTH.__objc_data` | `0x1788` | `0x18f8` | **`+0x170`** |
+| `__TEXT.__oslogstring` | `0x2424` | `0x2571` | **`+0x14d`** |
+| `__TEXT.__cstring` | `0x3e03` | `0x3eff` | **`+0xfc`** |
+| `__DATA_CONST.__objc_selrefs` | `0x10d8` | `0x11c0` | **`+0xe8`** |
+| `__AUTH_CONST.__auth_got` | `0x1518` | `0x1598` | **`+0x80`** |
+| `__TEXT.__swift5_proto` | `0x808` | `0x888` | **`+0x80`** |
+| `__TEXT.__objc_methlist` | `0x9f4` | `0xa5c` | **`+0x68`** |
+| `__DATA_CONST.__got` | `0x918` | `0x978` | **`+0x60`** |
+| `__TEXT.__swift5_assocty` | `0x728` | `0x788` | **`+0x60`** |
+| `__DATA.__common` | `0x690` | `0x6e8` | **`+0x58`** |
+| `__TEXT.__swift5_types` | `0x3a0` | `0x3d0` | **`+0x30`** |
+| `__TEXT.__swift5_builtin` | `0x280` | `0x2a8` | **`+0x28`** |
+| `__TEXT.__swift_as_cont` | `0x620` | `0x644` | **`+0x24`** |
+| `__DATA_CONST.__objc_classlist` | `0x170` | `0x180` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `0x80` | `0x90` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x1c0` | `0x1d0` | **`+0x10`** |
+| `__TEXT.__swift_as_ret` | `0x22c` | `0x234` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -184.0.0.0.0
--  __TEXT.__text: 0xf6dc4
--  __TEXT.__objc_methlist: 0x9f4
--  __TEXT.__const: 0xd7a4
--  __TEXT.__constg_swiftt: 0x2f0c
--  __TEXT.__swift5_typeref: 0x52aa
--  __TEXT.__swift5_builtin: 0x280
--  __TEXT.__swift5_reflstr: 0x3f4b
--  __TEXT.__swift5_fieldmd: 0x3f9c
--  __TEXT.__swift5_assocty: 0x728
--  __TEXT.__swift5_proto: 0x808
--  __TEXT.__swift5_types: 0x3a0
--  __TEXT.__swift5_protos: 0x80
 +190.0.0.0.0
-+  __TEXT.__text: 0x1001e4
-+  __TEXT.__objc_methlist: 0xa5c
-+  __TEXT.__const: 0xe5d4
-+  __TEXT.__swift5_typeref: 0x5554
-+  __TEXT.__swift5_fieldmd: 0x4368
-+  __TEXT.__constg_swiftt: 0x3170
-+  __TEXT.__swift5_builtin: 0x2a8
-+  __TEXT.__swift5_reflstr: 0x42a8
-+  __TEXT.__swift5_assocty: 0x788
-+  __TEXT.__swift5_protos: 0x90
-+  __TEXT.__swift5_proto: 0x888
-+  __TEXT.__swift5_types: 0x3d0
-+  __TEXT.__swift_as_entry: 0x1d0
-+  __TEXT.__swift_as_ret: 0x234
-+  __TEXT.__swift_as_cont: 0x644
-   __TEXT.__swift5_mpenum: 0x54
--  __TEXT.__cstring: 0x3e03
--  __TEXT.__swift5_capture: 0x1a94
--  __TEXT.__swift_as_entry: 0x1c0
--  __TEXT.__swift_as_cont: 0x620
--  __TEXT.__swift_as_ret: 0x22c
--  __TEXT.__oslogstring: 0x2424
--  __TEXT.__unwind_info: 0x46e8
--  __TEXT.__eh_frame: 0x8b10
-+  __TEXT.__cstring: 0x3eff
-+  __TEXT.__swift5_capture: 0x1ca0
-+  __TEXT.__oslogstring: 0x2571
-+  __TEXT.__unwind_info: 0x4a68
-+  __TEXT.__eh_frame: 0x8cd4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xf8
--  __DATA_CONST.__objc_classlist: 0x170
-+  __DATA_CONST.__objc_classlist: 0x180
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0xa0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x10d8
-+  __DATA_CONST.__objc_selrefs: 0x11c0
-   __DATA_CONST.__objc_protorefs: 0x50
--  __DATA_CONST.__got: 0x918
--  __AUTH_CONST.__const: 0x8479
--  __AUTH_CONST.__objc_const: 0x53b8
--  __AUTH_CONST.__auth_got: 0x1518
--  __AUTH.__objc_data: 0x1788
--  __AUTH.__data: 0x3ad0
--  __DATA.__data: 0x2d38
--  __DATA.__common: 0x690
-+  __DATA_CONST.__got: 0x978
-+  __AUTH_CONST.__const: 0x8821
-+  __AUTH_CONST.__objc_const: 0x58f8
-+  __AUTH_CONST.__auth_got: 0x1598
-+  __AUTH.__objc_data: 0x18f8
-+  __AUTH.__data: 0x3ea8
-+  __DATA.__data: 0x2f98
-+  __DATA.__common: 0x6e8
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4703
--  Symbols:   2394
+-  Symbols:   1955
 -  CStrings:  596
 +  Functions: 4967
-+  Symbols:   2499
++  Symbols:   2033
 +  CStrings:  607
- 
 Symbols:
 + _CGRectGetMidX
 + _MobileGestalt_copy_productType_obj
@@ -131,38 +91,6 @@ Symbols:
 + _associated conformance 18CosmeticAssessment24SessionBootstrapResponseVSHAASQ
 + _keypath_get_selector_isReadyForDisplay
 + _keypath_get_selector_status
-+ _objc_msgSend$accessoryButton
-+ _objc_msgSend$addAccessoryButton:
-+ _objc_msgSend$alpha
-+ _objc_msgSend$disableLooping
-+ _objc_msgSend$error
-+ _objc_msgSend$hidesBusyIndicator
-+ _objc_msgSend$horizontalSizeClass
-+ _objc_msgSend$image
-+ _objc_msgSend$imageByApplyingCGOrientation:
-+ _objc_msgSend$imageByPreparingForDisplay
-+ _objc_msgSend$initWithURL:
-+ _objc_msgSend$isReadyForDisplay
-+ _objc_msgSend$loadViewIfNeeded
-+ _objc_msgSend$pause
-+ _objc_msgSend$playImmediatelyAtRate:
-+ _objc_msgSend$playerLooperWithPlayer:templateItem:
-+ _objc_msgSend$removeAllItems
-+ _objc_msgSend$setAccessibilityElementsHidden:
-+ _objc_msgSend$setAllowsExternalPlayback:
-+ _objc_msgSend$setBounds:
-+ _objc_msgSend$setCenter:
-+ _objc_msgSend$setDisplayInfoIcon:
-+ _objc_msgSend$setMuted:
-+ _objc_msgSend$setOverrideUserInterfaceStyle:
-+ _objc_msgSend$setPlayer:
-+ _objc_msgSend$setPosition:
-+ _objc_msgSend$setTitle:detailText:animated:completion:
-+ _objc_msgSend$showsBusyIndicator
-+ _objc_msgSend$status
-+ _objc_msgSend$systemImageNamed:
-+ _objc_msgSend$timeControlStatus
-+ _objc_msgSend$userInterfaceStyle
 + _objc_retain_x10
 + _swift_release_x10
 + _swift_retain_x9
@@ -216,11 +144,6 @@ Symbols:
 - ___swift_closure_destructor.15Tm
 - ___swift_closure_destructor.32Tm
 - ___swift_closure_destructor.60Tm
-- _objc_msgSend$_setOverrideUserInterfaceStyle:
-- _objc_msgSend$constraintEqualToAnchor:multiplier:constant:
-- _objc_msgSend$createCGImage:fromRect:
-- _objc_msgSend$subviews
-- _objc_msgSend$userInterfaceIdiom
 - _objc_retain_x11
 - _symbolic IeAgH_
 - _symbolic _____Ieghg_ 18CosmeticAssessment24DiagnosticsCameraSessionC11VideoOutputV

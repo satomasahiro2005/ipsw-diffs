@@ -2,121 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/LocalAuthenticationCoreUI.framework/LocalAuthenticationCoreUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__DATA.__objc_stublist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x998c4` | `0x9b3e0` | **`+0x1b1c`** |
+| `__AUTH_CONST.__const` | `0x3df0` | `0x40d0` | **`+0x2e0`** |
+| `__TEXT.__const` | `0x6a54` | `0x6c84` | **`+0x230`** |
+| `__DATA.__data` | `0x2018` | `0x2208` | **`+0x1f0`** |
+| `__TEXT.__swift5_typeref` | `0xfcb4` | `0xfe72` | **`+0x1be`** |
+| `__TEXT.__swift5_fieldmd` | `0x1204` | `0x13a8` | **`+0x1a4`** |
+| `__DATA_DIRTY.__data` | `0x24b0` | `0x2310` | **`-0x1a0`** |
+| `__TEXT.__swift5_reflstr` | `0xfa1` | `0x10e1` | **`+0x140`** |
+| `__TEXT.__constg_swiftt` | `0x2168` | `0x2270` | **`+0x108`** |
+| `__TEXT.__cstring` | `0x2e56` | `0x2f46` | **`+0xf0`** |
+| `__TEXT.__unwind_info` | `0x2768` | `0x27f8` | **`+0x90`** |
+| `__AUTH.__objc_data` | `0x5e8` | `0x658` | **`+0x70`** |
+| `__AUTH_CONST.__objc_const` | `0xc180` | `0xc1e8` | **`+0x68`** |
+| `__TEXT.__objc_methlist` | `0x2fcc` | `0x3024` | **`+0x58`** |
+| `__AUTH.__data` | `0xb8` | `0xe0` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0xd78` | `0xda0` | **`+0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1ce0` | `0x1d08` | **`+0x28`** |
+| `__TEXT.__eh_frame` | `0x1598` | `0x15c0` | **`+0x28`** |
+| `__AUTH_CONST.__auth_got` | `0x16a0` | `0x16c0` | **`+0x20`** |
+| `__DATA.__bss` | `0x20a0` | `0x20b0` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x9e0` | `0x9f0` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x2a8` | `0x2b0` | **`+0x8`** |
+| `__DATA_DIRTY.__objc_data` | `0x1f98` | `0x1fa0` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x190` | `0x198` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x170` | `0x178` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x38` | `0x3c` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -2319.0.33.0.1
--  __TEXT.__text: 0x998c4
--  __TEXT.__objc_methlist: 0x2fcc
--  __TEXT.__const: 0x6a54
--  __TEXT.__cstring: 0x2e56
 +2319.0.46.0.0
-+  __TEXT.__text: 0x9b3e0
-+  __TEXT.__objc_methlist: 0x3024
-+  __TEXT.__const: 0x6c84
-+  __TEXT.__cstring: 0x2f46
-   __TEXT.__oslogstring: 0xe8d
-   __TEXT.__gcc_except_tab: 0x14c
--  __TEXT.__swift5_typeref: 0xfcb4
--  __TEXT.__constg_swiftt: 0x2168
-+  __TEXT.__swift5_typeref: 0xfe72
-+  __TEXT.__constg_swiftt: 0x2270
-   __TEXT.__swift5_builtin: 0xdc
--  __TEXT.__swift5_reflstr: 0xfa1
--  __TEXT.__swift5_fieldmd: 0x1204
-+  __TEXT.__swift5_reflstr: 0x10e1
-+  __TEXT.__swift5_fieldmd: 0x13a8
-   __TEXT.__swift5_assocty: 0x450
--  __TEXT.__swift5_proto: 0x190
--  __TEXT.__swift5_types: 0x170
-+  __TEXT.__swift5_proto: 0x198
-+  __TEXT.__swift5_types: 0x178
-   __TEXT.__swift5_capture: 0xf60
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__swift5_protos: 0x38
-+  __TEXT.__swift5_protos: 0x3c
-   __TEXT.__swift_as_entry: 0x54
-   __TEXT.__swift_as_ret: 0x6c
-   __TEXT.__swift_as_cont: 0x114
--  __TEXT.__unwind_info: 0x2768
--  __TEXT.__eh_frame: 0x1598
-+  __TEXT.__unwind_info: 0x27f8
-+  __TEXT.__eh_frame: 0x15c0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9e0
--  __DATA_CONST.__objc_classlist: 0x2a8
-+  __DATA_CONST.__const: 0x9f0
-+  __DATA_CONST.__objc_classlist: 0x2b0
-   __DATA_CONST.__objc_protolist: 0x220
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1ce0
-+  __DATA_CONST.__objc_selrefs: 0x1d08
-   __DATA_CONST.__objc_protorefs: 0xe0
-   __DATA_CONST.__objc_superrefs: 0x138
-   __DATA_CONST.__objc_arraydata: 0x20
--  __DATA_CONST.__got: 0xd78
--  __AUTH_CONST.__const: 0x3df0
-+  __DATA_CONST.__got: 0xda0
-+  __AUTH_CONST.__const: 0x40d0
-   __AUTH_CONST.__cfstring: 0xe20
--  __AUTH_CONST.__objc_const: 0xc180
-+  __AUTH_CONST.__objc_const: 0xc1e8
-   __AUTH_CONST.__objc_intobj: 0xc0
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__auth_got: 0x16a0
--  __AUTH.__objc_data: 0x5e8
--  __AUTH.__data: 0xb8
-+  __AUTH_CONST.__auth_got: 0x16c0
-+  __AUTH.__objc_data: 0x658
-+  __AUTH.__data: 0xe0
-   __DATA.__objc_ivar: 0x210
--  __DATA.__data: 0x2018
-+  __DATA.__data: 0x2208
-   __DATA.__objc_stublist: 0x10
--  __DATA.__bss: 0x20a0
-+  __DATA.__bss: 0x20b0
-   __DATA.__common: 0x58
--  __DATA_DIRTY.__objc_data: 0x1f98
--  __DATA_DIRTY.__data: 0x24b0
-+  __DATA_DIRTY.__objc_data: 0x1fa0
-+  __DATA_DIRTY.__data: 0x2310
-   __DATA_DIRTY.__bss: 0xd90
-   __DATA_DIRTY.__common: 0x48
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4323
--  Symbols:   10729
+-  Symbols:   10061
 -  CStrings:  392
 +  Functions: 4471
-+  Symbols:   11008
++  Symbols:   10337
 +  CStrings:  396
- 
 Symbols:
 + _$s25LocalAuthenticationCoreUI16LocalizedStringsO28touchIdOrPasscodeToAllowThis4withS2SSg_tFZ
 + _$s25LocalAuthenticationCoreUI16LocalizedStringsO28touchIdOrPasscodeToAllowThis4withS2SSg_tFZTf4nd_n
@@ -506,10 +435,6 @@ Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyAA4ViewPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAeAEAfgH_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA012_ConditionalD0VyAeAE8redacted6reasonQrAA16RedactionReasonsV_tFQOyACyACyACyACyAA09_VariadicE0O4TreeVy_AA11_LayoutRootVyAA03AnyQ0VGAA05TupleD0VyAJyACyAA6VStackVyAA5GroupVyAYyAJyACyACyACyACyACyACyACyAeAE19defaultScrollAnchor_3forQrAA9UnitPointVSg_AA0xY4RoleVtFQOyAeAEA2__A3_QrA6__A8_tFQOyAJyAeAE24scrollEdgeEffectDisabledyQrSbFQOyAeAE21scrollIndicatorsFlash7triggerQrqd___tSQRd__lFQOyACyA_yAYyACyACy023LocalAuthenticationCoreB018LACUIIconWithBadgeVAA31AccessibilityAttachmentModifierVGAA08_PaddingQ0VGSg_ACyACyACyACyAeAE10fontWeightyQrAA4FontV6WeightVSgFQOyACyAA4TextVAA010_FlexFrameQ0VG_Qo_AA30_EnvironmentKeyWritingModifierVyA24_SgGGA35_yAA5ColorVSgGGA35_yAA13TextAlignmentOGGAA010_FixedSizeQ0VGACyACyACyACyA32_A37_GA42_GA46_GA49_GSgA55_ACyAA6SpacerVAA06_FrameQ0VGQPGGA12_07EmbedInxE8ModifierVG_SiQo__Qo_A66_G_Qo__Qo_AA16_OverlayModifierVyACyACyAA14LinearGradientVA59_GAA25_AllowsHitTestingModifierVGGGA31_GA31_GAA21_TraitWritingModifierVyAA0Q16PriorityTraitKeyVGGAA14_OpacityEffectVGA16_GA72_yACyACyA12_018LACUIPasscodeInputE0VA90_GA16_GGGA88_G_AYyAJyA57_ACyA57_A31_GGSg_ACyA94_A87_GSgACyACyACyACyACyACyA12_16LACUICapsuleTextVA37_GA46_GA35_ySiSgGGA35_y12CoreGraphics7CGFloatVGGA19_GA87_GSgA102_QPGSgQPGGGA19_GA123_G_AYyACyACyAeAE16privacySensitiveyQrSbFQOyACyACyA12_013LACUIPasscodeE6KeypadVA19_GA87_G_Qo_A49_GAA20_TransactionModifierVG_ACyA100_A87_GSgQPGSgQPGGA19_GA19_GA19_GA31_G_Qo_A146_G_SSSgQo__AA22UserInterfaceSizeClassOSgQo_AA25_AppearanceActionModifierVGAA19_BackgroundModifierVyAA14GeometryReaderVyAeAEAfgH_Qrqd___Sbyqd___qd__tctSQRd__lFQOyA40__A114_Qo_GGGAaDHPA157_AaDHPqd0__AaDHD3_A154_HO_A156_AA0E8ModifierHPyHCHC_A164_AAA166_HPyHCHC
 + _keypath_set.44Tm
 + _keypath_set.60Tm
-+ _objc_msgSend$featureFlagSwiftUIPasscodeEnabled
-+ _objc_msgSend$imageForPath:bundleIdentifier:
-+ _objc_msgSend$initWithIconConfiguration:badgeConfiguration:
-+ _objc_msgSend$viewControllers
 + _symbolic $s25LocalAuthenticationCoreUI36LACUIAuthenticationDialogViewMetricsP
 + _symbolic _____ 25LocalAuthenticationCoreUI41LACUIAuthenticationDialogViewSheetMetricsV
 + _symbolic _____ 25LocalAuthenticationCoreUI44LACUIAuthenticationDialogViewEmbeddedMetricsV
@@ -674,7 +599,6 @@ Symbols:
 - _get_witness_table 7SwiftUI15ModifiedContentVyACyAA4ViewPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAeAEAfgH_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA012_ConditionalD0VyAeAE8redacted6reasonQrAA16RedactionReasonsV_tFQOyACyACyACyACyAA09_VariadicE0O4TreeVy_AA11_LayoutRootVyAA03AnyQ0VGAA05TupleD0VyAJyACyAA6VStackVyAA5GroupVyAYyAJyACyACyACyACyACyACyACyAeAE19defaultScrollAnchor_3forQrAA9UnitPointVSg_AA0xY4RoleVtFQOyAeAEA2__A3_QrA6__A8_tFQOyAJyAeAE24scrollEdgeEffectDisabledyQrSbFQOyAeAE21scrollIndicatorsFlash7triggerQrqd___tSQRd__lFQOyACyA_yAYyACyACy023LocalAuthenticationCoreB018LACUIIconWithBadgeVAA31AccessibilityAttachmentModifierVGAA08_PaddingQ0VGSg_ACyACyACyACyAeAE10fontWeightyQrAA4FontV6WeightVSgFQOyACyAA4TextVAA010_FlexFrameQ0VG_Qo_AA30_EnvironmentKeyWritingModifierVyA24_SgGGA35_yAA5ColorVSgGGA35_yAA13TextAlignmentOGGAA010_FixedSizeQ0VGACyACyACyACyA32_A37_GA42_GA46_GA49_GSgA55_ACyAA6SpacerVAA06_FrameQ0VGQPGGA12_07EmbedInxE8ModifierVG_SiQo__Qo_A66_G_Qo__Qo_AA16_OverlayModifierVyACyAA14LinearGradientVA59_GGGA31_GA31_GAA21_TraitWritingModifierVyAA0Q16PriorityTraitKeyVGGAA14_OpacityEffectVGA16_GA72_yACyACyA12_018LACUIPasscodeInputE0VA87_GA16_GGGA85_G_AYyAJyA57_ACyA57_A31_GGSg_ACyA91_A84_GSgACyACyACyACyACyACyA12_16LACUICapsuleTextVA37_GA46_GA35_ySiSgGGA35_y12CoreGraphics7CGFloatVGGA19_GA84_GSgA99_QPGSgQPGGGA19_GA120_G_AYyACyACyAeAE16privacySensitiveyQrSbFQOyACyACyA12_013LACUIPasscodeE6KeypadVA19_GA84_G_Qo_A49_GAA20_TransactionModifierVG_ACyA97_A84_GSgQPGSgQPGGA19_GA19_GA19_GA31_G_Qo_A143_G_SSSgQo__AA22UserInterfaceSizeClassOSgQo_AA25_AppearanceActionModifierVGAA19_BackgroundModifierVyAA14GeometryReaderVyAeAEAfgH_Qrqd___Sbyqd___qd__tctSQRd__lFQOyA40__A111_Qo_GGGAaDHPA154_AaDHPqd0__AaDHD3_A151_HO_A153_AA0E8ModifierHPyHCHC_A161_AAA163_HPyHCHC
 - _keypath_set.40Tm
 - _keypath_set.56Tm
-- _objc_msgSend$setHidesBackButton:
 - _symbolic _____yAAyAAyAAyAAyAAyAAy_____y_____y_____y_____y_____yAAy_____y_____yAAyAAy__________G_____GSg_AAyAAyAAyAAy_____yAAy__________G_Qo______y_____SgGGAOy_____SgGGAOy_____GG_____GAAyAAyAAyAAyAmRGAVGAYGA_GSgA5_AAy__________GQPGG_____G_SiQo__Qo_A13_G_Qo__Qo______yAAy_____A7_GGGALGALG_____y_____GG_____GAFGA18_yAAyAAy_____A29_GAFGGG 7SwiftUI15ModifiedContentV AA4ViewPAAE19defaultScrollAnchor_3forQrAA9UnitPointVSg_AA0gH4RoleVtFQO AeAEAF_AGQrAJ_ALtFQO AA012_ConditionalD0V AeAE24scrollEdgeEffectDisabledyQrSbFQO AeAE0N15IndicatorsFlash7triggerQrqd___tSQRd__lFQO AA6VStackV AA05TupleD0V 023LocalAuthenticationCoreB018LACUIIconWithBadgeV AA31AccessibilityAttachmentModifierV AA14_PaddingLayoutV AeAE10fontWeightyQrAA4FontV6WeightVSgFQO AA4TextV AA16_FlexFrameLayoutV AA30_EnvironmentKeyWritingModifierV A3_ AA5ColorV AA13TextAlignmentO AA16_FixedSizeLayoutV AA6SpacerV AA12_FrameLayoutV AV07EmbedIngE8ModifierV AA16_OverlayModifierV AA14LinearGradientV AA21_TraitWritingModifierV AA22LayoutPriorityTraitKeyV AA08_OpacityP0V AV018LACUIPasscodeInputE0V
 - _symbolic _____yAAyAAyAAyAAyAAy_____y_____y_____y_____y_____yAAy_____y_____yAAyAAy__________G_____GSg_AAyAAyAAyAAy_____yAAy__________G_Qo______y_____SgGGAOy_____SgGGAOy_____GG_____GAAyAAyAAyAAyAmRGAVGAYGA_GSgA5_AAy__________GQPGG_____G_SiQo__Qo_A13_G_Qo__Qo______yAAy_____A7_GGGALGALG_____y_____GG_____GAFG 7SwiftUI15ModifiedContentV AA4ViewPAAE19defaultScrollAnchor_3forQrAA9UnitPointVSg_AA0gH4RoleVtFQO AeAEAF_AGQrAJ_ALtFQO AA012_ConditionalD0V AeAE24scrollEdgeEffectDisabledyQrSbFQO AeAE0N15IndicatorsFlash7triggerQrqd___tSQRd__lFQO AA6VStackV AA05TupleD0V 023LocalAuthenticationCoreB018LACUIIconWithBadgeV AA31AccessibilityAttachmentModifierV AA14_PaddingLayoutV AeAE10fontWeightyQrAA4FontV6WeightVSgFQO AA4TextV AA16_FlexFrameLayoutV AA30_EnvironmentKeyWritingModifierV A3_ AA5ColorV AA13TextAlignmentO AA16_FixedSizeLayoutV AA6SpacerV AA12_FrameLayoutV AV07EmbedIngE8ModifierV AA16_OverlayModifierV AA14LinearGradientV AA21_TraitWritingModifierV AA22LayoutPriorityTraitKeyV AA08_OpacityP0V
 - _symbolic _____yAAyAAyAAyAAy_____y_____y_____y_____y_____yAAy_____y_____yAAyAAy__________G_____GSg_AAyAAyAAyAAy_____yAAy__________G_Qo______y_____SgGGAOy_____SgGGAOy_____GG_____GAAyAAyAAyAAyAmRGAVGAYGA_GSgA5_AAy__________GQPGG_____G_SiQo__Qo_A13_G_Qo__Qo______yAAy_____A7_GGGALGALG_____y_____GG_____G 7SwiftUI15ModifiedContentV AA4ViewPAAE19defaultScrollAnchor_3forQrAA9UnitPointVSg_AA0gH4RoleVtFQO AeAEAF_AGQrAJ_ALtFQO AA012_ConditionalD0V AeAE24scrollEdgeEffectDisabledyQrSbFQO AeAE0N15IndicatorsFlash7triggerQrqd___tSQRd__lFQO AA6VStackV AA05TupleD0V 023LocalAuthenticationCoreB018LACUIIconWithBadgeV AA31AccessibilityAttachmentModifierV AA14_PaddingLayoutV AeAE10fontWeightyQrAA4FontV6WeightVSgFQO AA4TextV AA16_FlexFrameLayoutV AA30_EnvironmentKeyWritingModifierV A3_ AA5ColorV AA13TextAlignmentO AA16_FixedSizeLayoutV AA6SpacerV AA12_FrameLayoutV AV07EmbedIngE8ModifierV AA16_OverlayModifierV AA14LinearGradientV AA21_TraitWritingModifierV AA22LayoutPriorityTraitKeyV AA08_OpacityP0V

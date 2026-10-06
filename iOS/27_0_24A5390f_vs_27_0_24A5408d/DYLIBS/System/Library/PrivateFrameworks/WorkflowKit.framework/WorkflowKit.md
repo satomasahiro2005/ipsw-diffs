@@ -2,123 +2,68 @@
 
 > `/System/Library/PrivateFrameworks/WorkflowKit.framework/WorkflowKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8ecc08` | `0x8fabc0` | **`+0xdfb8`** |
+| `__TEXT.__oslogstring` | `0x22dd6` | `0x2395d` | **`+0xb87`** |
+| `__DATA.__common` | `0x2410` | `0x2cd0` | **`+0x8c0`** |
+| `__AUTH_CONST.__const` | `0x3fad0` | `0x401e0` | **`+0x710`** |
+| `__TEXT.__cstring` | `0x8ccbc` | `0x8d372` | **`+0x6b6`** |
+| `__TEXT.__eh_frame` | `0x22e80` | `0x233e0` | **`+0x560`** |
+| `__TEXT.__const` | `0x241f8` | `0x24478` | **`+0x280`** |
+| `__TEXT.__swift5_capture` | `0x5aec` | `0x5d44` | **`+0x258`** |
+| `__TEXT.__swift5_typeref` | `0xd12a` | `0xd2d2` | **`+0x1a8`** |
+| `__DATA.__bss` | `0x2e6d8` | `0x2e548` | **`-0x190`** |
+| `__TEXT.__swift5_reflstr` | `0x6078` | `0x6208` | **`+0x190`** |
+| `__TEXT.__objc_methlist` | `0x2e7c8` | `0x2e90c` | **`+0x144`** |
+| `__AUTH_CONST.__cfstring` | `0x2bc20` | `0x2bd40` | **`+0x120`** |
+| `__DATA.__data` | `0xd648` | `0xd768` | **`+0x120`** |
+| `__TEXT.__swift5_fieldmd` | `0x7714` | `0x7828` | **`+0x114`** |
+| `__DATA_CONST.__objc_selrefs` | `0x13758` | `0x13858` | **`+0x100`** |
+| `__AUTH.__objc_data` | `0x10cd8` | `0x10c20` | **`-0xb8`** |
+| `__TEXT.__constg_swiftt` | `0x9684` | `0x9724` | **`+0xa0`** |
+| `__DATA_CONST.__objc_arraydata` | `0x16e8` | `0x1650` | **`-0x98`** |
+| `__DATA_CONST.__const` | `0xf068` | `0xf0f8` | **`+0x90`** |
+| `__TEXT.__swift5_assocty` | `0x2308` | `0x2278` | **`-0x90`** |
+| `__AUTH_CONST.__objc_dictobj` | `0x500` | `0x4b0` | **`-0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x8f18` | `0x8ec8` | **`-0x50`** |
+| `__TEXT.__unwind_info` | `0x1bfa0` | `0x1bfe8` | **`+0x48`** |
+| `__AUTH_CONST.__objc_const` | `0x55250` | `0x55210` | **`-0x40`** |
+| `__DATA_DIRTY.__data` | `0xcd8` | `0xca8` | **`-0x30`** |
+| `__DATA_CONST.__got` | `0x5cd8` | `0x5cb0` | **`-0x28`** |
+| `__AUTH_CONST.__auth_got` | `0x5160` | `0x5180` | **`+0x20`** |
+| `__TEXT.__swift_as_entry` | `0xae0` | `0xb00` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x1454` | `0x1470` | **`+0x1c`** |
+| `__TEXT.__swift_as_ret` | `0xc3c` | `0xc58` | **`+0x1c`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x960` | `0x948` | **`-0x18`** |
+| `__DATA.__objc_ivar` | `0x2164` | `0x214c` | **`-0x18`** |
+| `__TEXT.__swift5_builtin` | `0x67c` | `0x668` | **`-0x14`** |
+| `__AUTH.__data` | `0x70b8` | `0x70c8` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x23f8` | `0x23e8` | **`-0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1370` | `0x1360` | **`-0x10`** |
+| `__DATA_CONST.__objc_catlist` | `0x3e8` | `0x3e0` | **`-0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x6c8` | `0x6d0` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x2a8` | `0x2a0` | **`-0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x4d04` | `0x4cfc` | **`-0x8`** |
+| `__TEXT.__swift5_proto` | `0x1a54` | `0x1a4c` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0xb1c` | `0xb24` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x138` | `0x13c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -5034.0.12.100.0
--  __TEXT.__text: 0x8ecc08
--  __TEXT.__objc_methlist: 0x2e7c8
--  __TEXT.__const: 0x241f8
 +5037.103.100.0.0
-+  __TEXT.__text: 0x8fabc0
-+  __TEXT.__objc_methlist: 0x2e90c
-+  __TEXT.__const: 0x24478
-   __TEXT.__dlopen_cstrs: 0x110b
--  __TEXT.__swift5_typeref: 0xd12a
--  __TEXT.__cstring: 0x8ccbc
--  __TEXT.__oslogstring: 0x22dd6
--  __TEXT.__constg_swiftt: 0x9684
--  __TEXT.__swift5_reflstr: 0x6078
--  __TEXT.__swift5_fieldmd: 0x7714
--  __TEXT.__swift5_builtin: 0x67c
--  __TEXT.__swift5_assocty: 0x2308
--  __TEXT.__swift5_proto: 0x1a54
--  __TEXT.__swift5_types: 0xb1c
--  __TEXT.__swift5_capture: 0x5aec
--  __TEXT.__swift_as_entry: 0xae0
--  __TEXT.__swift_as_ret: 0xc3c
--  __TEXT.__swift_as_cont: 0x1454
--  __TEXT.__swift5_protos: 0x138
-+  __TEXT.__swift5_typeref: 0xd2d2
-+  __TEXT.__cstring: 0x8d372
-+  __TEXT.__oslogstring: 0x2395d
-+  __TEXT.__constg_swiftt: 0x9724
-+  __TEXT.__swift5_reflstr: 0x6208
-+  __TEXT.__swift5_fieldmd: 0x7828
-+  __TEXT.__swift5_builtin: 0x668
-+  __TEXT.__swift5_assocty: 0x2278
-+  __TEXT.__swift5_proto: 0x1a4c
-+  __TEXT.__swift5_types: 0xb24
-+  __TEXT.__swift5_capture: 0x5d44
-+  __TEXT.__swift_as_entry: 0xb00
-+  __TEXT.__swift_as_ret: 0xc58
-+  __TEXT.__swift_as_cont: 0x1470
-+  __TEXT.__swift5_protos: 0x13c
-   __TEXT.__swift5_mpenum: 0xd4
--  __TEXT.__gcc_except_tab: 0x4d04
-+  __TEXT.__gcc_except_tab: 0x4cfc
-   __TEXT.__ustring: 0x3f0c
--  __TEXT.__unwind_info: 0x1bfa0
--  __TEXT.__eh_frame: 0x22e80
-+  __TEXT.__unwind_info: 0x1bfe8
-+  __TEXT.__eh_frame: 0x233e0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xf068
--  __DATA_CONST.__objc_classlist: 0x23f8
--  __DATA_CONST.__objc_catlist: 0x3e8
--  __DATA_CONST.__objc_protolist: 0x6c8
-+  __DATA_CONST.__const: 0xf0f8
-+  __DATA_CONST.__objc_classlist: 0x23e8
-+  __DATA_CONST.__objc_catlist: 0x3e0
-+  __DATA_CONST.__objc_protolist: 0x6d0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x13758
--  __DATA_CONST.__objc_protorefs: 0x2a8
--  __DATA_CONST.__objc_superrefs: 0x1370
--  __DATA_CONST.__objc_arraydata: 0x16e8
--  __DATA_CONST.__got: 0x5cd8
--  __AUTH_CONST.__const: 0x3fad0
--  __AUTH_CONST.__cfstring: 0x2bc20
--  __AUTH_CONST.__objc_const: 0x55250
--  __AUTH_CONST.__objc_dictobj: 0x500
-+  __DATA_CONST.__objc_selrefs: 0x13858
-+  __DATA_CONST.__objc_protorefs: 0x2a0
-+  __DATA_CONST.__objc_superrefs: 0x1360
-+  __DATA_CONST.__objc_arraydata: 0x1650
-+  __DATA_CONST.__got: 0x5cb0
-+  __AUTH_CONST.__const: 0x401e0
-+  __AUTH_CONST.__cfstring: 0x2bd40
-+  __AUTH_CONST.__objc_const: 0x55210
-+  __AUTH_CONST.__objc_dictobj: 0x4b0
-   __AUTH_CONST.__objc_intobj: 0xf90
--  __AUTH_CONST.__objc_arrayobj: 0x960
-+  __AUTH_CONST.__objc_arrayobj: 0x948
-   __AUTH_CONST.__objc_doubleobj: 0x20
--  __AUTH_CONST.__auth_got: 0x5160
--  __AUTH.__objc_data: 0x10cd8
--  __AUTH.__data: 0x70b8
--  __DATA.__objc_ivar: 0x2164
--  __DATA.__data: 0xd648
--  __DATA.__bss: 0x2e6d8
--  __DATA.__common: 0x2410
--  __DATA_DIRTY.__objc_data: 0x8f18
--  __DATA_DIRTY.__data: 0xcd8
-+  __AUTH_CONST.__auth_got: 0x5180
-+  __AUTH.__objc_data: 0x10c20
-+  __AUTH.__data: 0x70c8
-+  __DATA.__objc_ivar: 0x214c
-+  __DATA.__data: 0xd768
-+  __DATA.__bss: 0x2e548
-+  __DATA.__common: 0x2cd0
-+  __DATA_DIRTY.__objc_data: 0x8ec8
-+  __DATA_DIRTY.__data: 0xca8
-   __DATA_DIRTY.__bss: 0x1880
-   __DATA_DIRTY.__common: 0x10
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 43626
--  Symbols:   43057
+-  Symbols:   35118
 -  CStrings:  17923
 +  Functions: 43822
-+  Symbols:   43118
++  Symbols:   35155
 +  CStrings:  17994
- 
 Symbols:
 + +[NSUserDefaults(Workflow) setShouldHideCompositionPane:]
 + +[NSUserDefaults(Workflow) shouldHideCompositionPane]
@@ -600,55 +545,6 @@ Symbols:
 + _get_enum_tag_for_layout_string 11WorkflowKit12WFNewTriggerCSSIeggg_Sg
 + _get_enum_tag_for_layout_string 11WorkflowKit12WFNewTriggerCSo6WFIconCSgIeggo_Sg
 + _get_enum_tag_for_layout_string SDySSSo20WFPropertyListObject_pGABIeggo_Sg
-+ _objc_msgSend$_cleanUpOnQueueWithReason:
-+ _objc_msgSend$_handleConnectionInterruption
-+ _objc_msgSend$_handleConnectionInvalidation:
-+ _objc_msgSend$alarmsDidChange:
-+ _objc_msgSend$completedOneTimeActivitiesData
-+ _objc_msgSend$connectionWithDelegate:userIdentity:error:
-+ _objc_msgSend$contentCreationDate
-+ _objc_msgSend$dispatchDelegateBlock:
-+ _objc_msgSend$errorForInvalidVariable:reason:
-+ _objc_msgSend$errorForVariableMissingProducingTrigger:
-+ _objc_msgSend$initWithSymbolName:bundle:
-+ _objc_msgSend$initWithUniqueID:
-+ _objc_msgSend$isEnhancedSiriEnabled
-+ _objc_msgSend$isGenericShortcutInputVariableUsed
-+ _objc_msgSend$isSystemWritingToolsAvailable
-+ _objc_msgSend$linkActionWithParameterStates:usingConnectionPolicy:forUseCase:
-+ _objc_msgSend$linkActionWithSerializedParametersUsingConnectionPolicy:forUseCase:
-+ _objc_msgSend$linkValueFromParameterState:action:forUseCase:
-+ _objc_msgSend$makeConfiguredConnectionForHost:
-+ _objc_msgSend$maxCount
-+ _objc_msgSend$neverSyncedTriggersToAppendWithLocalWorkflow:remoteWorkflow:pendingInitialSyncTriggerUUIDs:
-+ _objc_msgSend$omittedAppBundleIdentifiers
-+ _objc_msgSend$parentAccount
-+ _objc_msgSend$pendingInitialSync
-+ _objc_msgSend$predicateForChangeAtKeyPath:
-+ _objc_msgSend$previousSunriseKey
-+ _objc_msgSend$previousSunsetKey
-+ _objc_msgSend$rateLimitKeySuffix
-+ _objc_msgSend$rateLimitMaxDelay
-+ _objc_msgSend$rateLimitMultiplier
-+ _objc_msgSend$refreshAvailabilityOfAllRequiredResources
-+ _objc_msgSend$restrictionType
-+ _objc_msgSend$runSpotlightQuery:sortingAndSlicingBeforeHydrationWithSortKey:random:ascending:instanceKey:
-+ _objc_msgSend$setAddToLibrary:
-+ _objc_msgSend$setCompletedOneTimeActivitiesData:
-+ _objc_msgSend$setInstanceIdentifier:
-+ _objc_msgSend$setMaximumValue:
-+ _objc_msgSend$setMinimumValue:
-+ _objc_msgSend$setOutputInFinishRunningWithResult:
-+ _objc_msgSend$setPendingInitialSync:
-+ _objc_msgSend$setSortValue:
-+ _objc_msgSend$sortValue
-+ _objc_msgSend$supportsCoercion
-+ _objc_msgSend$takeErrorHandler
-+ _objc_msgSend$valueForParameterData:withParameterState:forUseCase:
-+ _objc_msgSend$wf_collection:orderedByInstanceIdentifiers:
-+ _objc_msgSend$wf_completedOneTimeActivities
-+ _objc_msgSend$wf_shortcutsExternalTriggersDirectoryURL
-+ _objc_msgSend$wf_spotlightSortKeyForProperty:
 + _pow
 + _symbolic SDySS______pGABIeggo_ So20WFPropertyListObjectP
 + _symbolic SDySS______pGABIegnr_ So20WFPropertyListObjectP
@@ -1144,31 +1040,6 @@ Symbols:
 - _associated conformance So23WFArriveLocationTriggerC11WorkflowKitE10ArriveTimeOSHACSQ
 - _associated conformance So23WFArriveLocationTriggerC11WorkflowKitE10ArriveTimeOs12CaseIterableAC8AllCasessAFP_Sl
 - _flat unique So33WFSwiftStoredAppShortcutsProvider_p
-- _objc_msgSend$_queue_invalidateAll
-- _objc_msgSend$_queue_invalidateBundleIdentifiers:
-- _objc_msgSend$attachOrStartPendingFetchForBundleIdentifier:localeIdentifier:handler:
-- _objc_msgSend$cachedAppShortcutsForBundleIdentifier:localeIdentifier:
-- _objc_msgSend$cleanUpWithReason:
-- _objc_msgSend$completePendingFetchForBundleIdentifier:localeIdentifier:appShortcuts:error:
-- _objc_msgSend$connectionInterrupted
-- _objc_msgSend$connectionWithUserIdentity:error:
-- _objc_msgSend$fetchAppShortcutForBundleIdentifiers:localeIdentifier:error:
-- _objc_msgSend$fetchAppShortcutsForBundleIdentifier:localeIdentifier:completionHandler:
-- _objc_msgSend$generation
-- _objc_msgSend$handlers
-- _objc_msgSend$initWithAppShortcutsDenyListEnvironment:environment:cache:
-- _objc_msgSend$initWithAppShortcutsProvider:denyListEnvironment:organizationStyle:
-- _objc_msgSend$initWithGeneration:handler:
-- _objc_msgSend$invalidateAll
-- _objc_msgSend$invalidateBundleIdentifiers:
-- _objc_msgSend$linkActionWithParameterStates:usingConnectionPolicy:
-- _objc_msgSend$linkActionWithSerializedParametersUsingConnectionPolicy:
-- _objc_msgSend$linkValueFromParameterState:action:
-- _objc_msgSend$mappingModelFromBundles:forSourceModel:destinationModel:
-- _objc_msgSend$setSidecarTrigger:
-- _objc_msgSend$sharedCache
-- _objc_msgSend$sidecarTrigger
-- _objc_msgSend$valueForParameterData:withParameterState:
 - _sharedCache.onceToken
 - _sharedCache.sharedCache
 - _symbolic Say_____G 10ContentKit21WFGenerativeModelNameO

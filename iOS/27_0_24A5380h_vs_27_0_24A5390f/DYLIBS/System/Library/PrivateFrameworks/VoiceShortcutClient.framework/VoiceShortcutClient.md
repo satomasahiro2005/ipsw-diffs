@@ -2,116 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/VoiceShortcutClient.framework/VoiceShortcutClient`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__gcc_except_tab`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH.__objc_data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1549cc` | `0x154d38` | **`+0x36c`** |
+| `__AUTH_CONST.__cfstring` | `0x19a40` | `0x19ce0` | **`+0x2a0`** |
+| `__TEXT.__cstring` | `0x181ac` | `0x183e2` | **`+0x236`** |
+| `__DATA_CONST.__const` | `0x3750` | `0x37d8` | **`+0x88`** |
+| `__TEXT.__eh_frame` | `0x6578` | `0x64f8` | **`-0x80`** |
+| `__DATA.__data` | `0x4618` | `0x4648` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x60d0` | `0x6100` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0xcdec` | `0xce1c` | **`+0x30`** |
+| `__AUTH_CONST.__objc_const` | `0x1a6a8` | `0x1a688` | **`-0x20`** |
+| `__AUTH.__data` | `0x1a70` | `0x1a80` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x7190` | `0x71a0` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x1210` | `0x1218` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x1ec` | `0x1e4` | **`-0x8`** |
+| `__DATA.__objc_ivar` | `0xd14` | `0xd10` | **`-0x4`** |
+| `__TEXT.__swift_as_ret` | `0xf8` | `0xf4` | **`-0x4`** |
+| `__TEXT.__oslogstring` | `0x3f5d` | `0x3f5a` | **`-0x3`** |
+
+### Other Changes
 
 ```diff
 
 -5032.5.0.0.0
--  __TEXT.__text: 0x1549cc
--  __TEXT.__objc_methlist: 0xcdec
 +5034.0.12.100.0
-+  __TEXT.__text: 0x154d38
-+  __TEXT.__objc_methlist: 0xce1c
-   __TEXT.__const: 0x10300
-   __TEXT.__dlopen_cstrs: 0xdb4
--  __TEXT.__cstring: 0x181ac
-+  __TEXT.__cstring: 0x183e2
-   __TEXT.__swift5_typeref: 0x3af9
-   __TEXT.__swift5_reflstr: 0x16b4
-   __TEXT.__swift5_assocty: 0x4c8
 
-   __TEXT.__swift5_types: 0x464
-   __TEXT.__swift5_capture: 0x758
-   __TEXT.__swift5_protos: 0x50
--  __TEXT.__oslogstring: 0x3f5d
-+  __TEXT.__oslogstring: 0x3f5a
-   __TEXT.__swift_as_entry: 0x108
--  __TEXT.__swift_as_ret: 0xf8
--  __TEXT.__swift_as_cont: 0x1ec
-+  __TEXT.__swift_as_ret: 0xf4
-+  __TEXT.__swift_as_cont: 0x1e4
-   __TEXT.__swift5_mpenum: 0x84
-   __TEXT.__gcc_except_tab: 0x1908
-   __TEXT.__ustring: 0x168
--  __TEXT.__unwind_info: 0x7190
--  __TEXT.__eh_frame: 0x6578
-+  __TEXT.__unwind_info: 0x71a0
-+  __TEXT.__eh_frame: 0x64f8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3750
-+  __DATA_CONST.__const: 0x37d8
-   __DATA_CONST.__objc_classlist: 0x9a0
-   __DATA_CONST.__objc_catlist: 0xd8
-   __DATA_CONST.__objc_protolist: 0x178
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x60d0
-+  __DATA_CONST.__objc_selrefs: 0x6100
-   __DATA_CONST.__objc_protorefs: 0xa0
-   __DATA_CONST.__objc_superrefs: 0x7f0
-   __DATA_CONST.__objc_arraydata: 0x4740
--  __DATA_CONST.__got: 0x1210
-+  __DATA_CONST.__got: 0x1218
-   __AUTH_CONST.__const: 0xa568
--  __AUTH_CONST.__cfstring: 0x19a40
--  __AUTH_CONST.__objc_const: 0x1a6a8
-+  __AUTH_CONST.__cfstring: 0x19ce0
-+  __AUTH_CONST.__objc_const: 0x1a688
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x4d88
-   __AUTH_CONST.__objc_arrayobj: 0x180
-   __AUTH_CONST.__objc_dictobj: 0x280
-   __AUTH_CONST.__auth_got: 0x1e60
-   __AUTH.__objc_data: 0x36a0
--  __AUTH.__data: 0x1a70
--  __DATA.__objc_ivar: 0xd14
--  __DATA.__data: 0x4618
-+  __AUTH.__data: 0x1a80
-+  __DATA.__objc_ivar: 0xd10
-+  __DATA.__data: 0x4648
-   __DATA.__bss: 0x1b710
-   __DATA.__common: 0x90
-   __DATA_DIRTY.__objc_data: 0x2a78
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10845
--  Symbols:   14093
+-  Symbols:   11681
 -  CStrings:  4396
 +  Functions: 10850
-+  Symbols:   14122
++  Symbols:   11704
 +  CStrings:  4418
- 
 Symbols:
 + -[VCAccessSpecifier allowLinkContextualActionRunningForBundleIdentifier:intentIdentifier:]
 + -[WFExternalUIPresenter updateOpensIntent:completionHandler:]
@@ -246,15 +170,6 @@ Symbols:
 + _WFWorkflowRunSourceNotifyMeWhen
 + ___61-[WFExternalUIPresenter updateOpensIntent:completionHandler:]_block_invoke
 + ___66-[WFSageWorkflowRunnerClient updateOpensIntent:completionHandler:]_block_invoke
-+ _objc_msgSend$actionWithIdentifier:fromBundleIdentifier:
-+ _objc_msgSend$effectiveBundleIdentifiers
-+ _objc_msgSend$initWithBackgroundColorValue:glyphCharacter:
-+ _objc_msgSend$initWithBackgroundColorValue:glyphCharacter:symbolOverride:
-+ _objc_msgSend$initWithCalendarIdentifier:
-+ _objc_msgSend$initWithPaletteColor:glyphCharacter:
-+ _objc_msgSend$setCalendar:
-+ _objc_msgSend$updateOpensIntent:completionHandler:
-+ _objc_msgSend$workflowRunnerClient:updateOpensIntent:completionHandler:
 - -[VCAccessSpecifier allowLinkContextualActionRunningForBundleIdentifier:]
 - -[WFWorkflowIcon customImageData]
 - -[WFWorkflowIcon initWithBackgroundColorValue:glyphCharacter:customImageData:]
@@ -365,9 +280,6 @@ Symbols:
 - GCC_except_table4512
 - GCC_except_table868
 - _OBJC_IVAR_$_WFWorkflowIcon._customImageData
-- _objc_msgSend$initWithBackgroundColorValue:glyphCharacter:customImageData:
-- _objc_msgSend$initWithBackgroundColorValue:glyphCharacter:customImageData:symbolOverride:
-- _objc_msgSend$initWithPaletteColor:glyphCharacter:customImageData:
 CStrings:
 + "%s %{public}@ may not run an action for %{public}@"
 + "%s No LSBundleRecord for %{public}@ (%{public}@)"

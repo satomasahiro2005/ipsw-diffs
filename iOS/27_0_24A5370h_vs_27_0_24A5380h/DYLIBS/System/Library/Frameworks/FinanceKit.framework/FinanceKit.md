@@ -2,124 +2,59 @@
 
 > `/System/Library/Frameworks/FinanceKit.framework/FinanceKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7c3af4` | `0x7e593c` | **`+0x21e48`** |
+| `__DATA_DIRTY.__data` | `0x9a90` | `0xea90` | **`+0x5000`** |
+| `__DATA.__bss` | `0xd6cd0` | `0xdb6f0` | **`+0x4a20`** |
+| `__TEXT.__const` | `0x87338` | `0x8af08` | **`+0x3bd0`** |
+| `__AUTH.__data` | `0xc468` | `0x8a90` | **`-0x39d8`** |
+| `__DATA_DIRTY.__objc_data` | `0x40f8` | `0x7460` | **`+0x3368`** |
+| `__AUTH.__objc_data` | `0x6728` | `0x3470` | **`-0x32b8`** |
+| `__DATA_DIRTY.__bss` | `0xeb80` | `0x11690` | **`+0x2b10`** |
+| `__AUTH_CONST.__const` | `0x45600` | `0x46d30` | **`+0x1730`** |
+| `__TEXT.__swift5_fieldmd` | `0x1e2c8` | `0x1f098` | **`+0xdd0`** |
+| `__TEXT.__swift5_typeref` | `0x1abde` | `0x1b67e` | **`+0xaa0`** |
+| `__TEXT.__constg_swiftt` | `0x1826c` | `0x18ad8` | **`+0x86c`** |
+| `__DATA.__data` | `0x143a0` | `0x13c70` | **`-0x730`** |
+| `__TEXT.__unwind_info` | `0x235f0` | `0x23cf0` | **`+0x700`** |
+| `__TEXT.__swift5_reflstr` | `0x128c7` | `0x12fa7` | **`+0x6e0`** |
+| `__TEXT.__eh_frame` | `0x38690` | `0x38d58` | **`+0x6c8`** |
+| `__TEXT.__swift5_proto` | `0x7684` | `0x7a30` | **`+0x3ac`** |
+| `__TEXT.__cstring` | `0x1658e` | `0x1686e` | **`+0x2e0`** |
+| `__TEXT.__oslogstring` | `0x97f9` | `0x9999` | **`+0x1a0`** |
+| `__DATA.__common` | `0x260` | `0x110` | **`-0x150`** |
+| `__DATA_DIRTY.__common` | `0x48` | `0x198` | **`+0x150`** |
+| `__TEXT.__swift5_types` | `0x24b8` | `0x25ac` | **`+0xf4`** |
+| `__AUTH_CONST.__objc_const` | `0x17900` | `0x179e0` | **`+0xe0`** |
+| `__DATA_CONST.__const` | `0x6248` | `0x62e8` | **`+0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5308` | `0x53a8` | **`+0xa0`** |
+| `__TEXT.__swift5_assocty` | `0x33f0` | `0x3468` | **`+0x78`** |
+| `__TEXT.__objc_methlist` | `0x4c44` | `0x4c64` | **`+0x20`** |
+| `__TEXT.__swift5_capture` | `0x29c8` | `0x29b4` | **`-0x14`** |
+| `__TEXT.__swift_as_cont` | `0x1f30` | `0x1f1c` | **`-0x14`** |
+| `__TEXT.__swift_as_entry` | `0xbf4` | `0xc04` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0xb90` | `0xb98` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x230` | `0x234` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0xc80` | `0xc7c` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x7c3af4
--  __TEXT.__objc_methlist: 0x4c44
--  __TEXT.__const: 0x87338
--  __TEXT.__cstring: 0x1658e
--  __TEXT.__oslogstring: 0x97f9
-+  __TEXT.__text: 0x7e593c
-+  __TEXT.__objc_methlist: 0x4c64
-+  __TEXT.__const: 0x8af08
-+  __TEXT.__cstring: 0x1686e
-+  __TEXT.__oslogstring: 0x9999
-   __TEXT.__gcc_except_tab: 0x14
--  __TEXT.__swift5_typeref: 0x1abde
--  __TEXT.__constg_swiftt: 0x1826c
--  __TEXT.__swift5_reflstr: 0x128c7
--  __TEXT.__swift5_fieldmd: 0x1e2c8
-+  __TEXT.__swift5_typeref: 0x1b67e
-+  __TEXT.__constg_swiftt: 0x18ad8
-+  __TEXT.__swift5_reflstr: 0x12fa7
-+  __TEXT.__swift5_fieldmd: 0x1f098
-   __TEXT.__swift5_builtin: 0x5dc
--  __TEXT.__swift5_assocty: 0x33f0
--  __TEXT.__swift5_capture: 0x29c8
--  __TEXT.__swift5_proto: 0x7684
--  __TEXT.__swift5_types: 0x24b8
--  __TEXT.__swift_as_entry: 0xbf4
--  __TEXT.__swift_as_cont: 0x1f30
--  __TEXT.__swift_as_ret: 0xc80
--  __TEXT.__swift5_protos: 0x230
-+  __TEXT.__swift5_assocty: 0x3468
-+  __TEXT.__swift5_capture: 0x29b4
-+  __TEXT.__swift5_proto: 0x7a30
-+  __TEXT.__swift5_types: 0x25ac
-+  __TEXT.__swift_as_entry: 0xc04
-+  __TEXT.__swift_as_cont: 0x1f1c
-+  __TEXT.__swift_as_ret: 0xc7c
-+  __TEXT.__swift5_protos: 0x234
-   __TEXT.__swift5_mpenum: 0x234
--  __TEXT.__unwind_info: 0x235f0
--  __TEXT.__eh_frame: 0x38690
-+  __TEXT.__unwind_info: 0x23cf0
-+  __TEXT.__eh_frame: 0x38d58
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x6248
--  __DATA_CONST.__objc_classlist: 0xb90
-+  __DATA_CONST.__const: 0x62e8
-+  __DATA_CONST.__objc_classlist: 0xb98
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x130
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5308
-+  __DATA_CONST.__objc_selrefs: 0x53a8
-   __DATA_CONST.__objc_protorefs: 0xb8
-   __DATA_CONST.__objc_superrefs: 0x1e8
-   __DATA_CONST.__got: 0x1640
--  __AUTH_CONST.__const: 0x45600
-+  __AUTH_CONST.__const: 0x46d30
-   __AUTH_CONST.__cfstring: 0x500
--  __AUTH_CONST.__objc_const: 0x17900
-+  __AUTH_CONST.__objc_const: 0x179e0
-   __AUTH_CONST.__objc_intobj: 0x60
-   __AUTH_CONST.__auth_got: 0x2cd0
--  __AUTH.__objc_data: 0x6728
--  __AUTH.__data: 0xc468
-+  __AUTH.__objc_data: 0x3470
-+  __AUTH.__data: 0x8a90
-   __DATA.__objc_ivar: 0x510
--  __DATA.__data: 0x143a0
--  __DATA.__bss: 0xd6cd0
--  __DATA.__common: 0x260
--  __DATA_DIRTY.__objc_data: 0x40f8
--  __DATA_DIRTY.__data: 0x9a90
--  __DATA_DIRTY.__bss: 0xeb80
--  __DATA_DIRTY.__common: 0x48
-+  __DATA.__data: 0x13c70
-+  __DATA.__bss: 0xdb6f0
-+  __DATA.__common: 0x110
-+  __DATA_DIRTY.__objc_data: 0x7460
-+  __DATA_DIRTY.__data: 0xea90
-+  __DATA_DIRTY.__bss: 0x11690
-+  __DATA_DIRTY.__common: 0x198
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-   - /System/Library/Frameworks/Contacts.framework/Contacts
+-362.0.0.0.0
++365.0.0.0.0
 
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight
-   - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
 +  - /System/Library/Frameworks/DeviceCheck.framework/DeviceCheck
-   - /System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/FoundationModels.framework/FoundationModels
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 50110
--  Symbols:   21076
--  CStrings:  3072
+-  Symbols:   15009
+-  CStrings:  3031
 +  Functions: 51249
-+  Symbols:   21413
-+  CStrings:  3094
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
++  Symbols:   15305
++  CStrings:  3053
 Symbols:
 + _OBJC_CLASS_$_DCAppAttestService
 + _OBJC_CLASS_$__TtC10FinanceKit46ManagedExtractedOrderEmailToReceiptDetailsEdge
@@ -268,29 +203,6 @@ Symbols:
 + _keypath_get_selector_lastExtractionFailureReason
 + _keypath_get_selector_receiptDetailsObjects
 + _keypath_get_selector_rhsReceiptDetails
-+ _objc_msgSend$attestKey:clientDataHash:completionHandler:
-+ _objc_msgSend$attestationKeyID
-+ _objc_msgSend$attestationObject
-+ _objc_msgSend$attestationRef
-+ _objc_msgSend$exchangeTokenDigest
-+ _objc_msgSend$extractedOrderIdentifier
-+ _objc_msgSend$generateAssertion:clientDataHash:completionHandler:
-+ _objc_msgSend$generateKeyWithCompletionHandler:
-+ _objc_msgSend$hasCompletedReceiptDetailsEntityResolution
-+ _objc_msgSend$isSupported
-+ _objc_msgSend$lastExtractionFailureReason
-+ _objc_msgSend$receiptDetailsObjects
-+ _objc_msgSend$rhsReceiptDetails
-+ _objc_msgSend$setAttestationKeyID:
-+ _objc_msgSend$setAttestationObject:
-+ _objc_msgSend$setAttestationRef:
-+ _objc_msgSend$setExchangeTokenDigest:
-+ _objc_msgSend$setExtractedOrderIdentifier:
-+ _objc_msgSend$setHasCompletedReceiptDetailsEntityResolution:
-+ _objc_msgSend$setLastExtractionFailureReason:
-+ _objc_msgSend$setReceiptDetailsObjects:
-+ _objc_msgSend$setRhsReceiptDetails:
-+ _objc_msgSend$sharedService
 + _symbolic $s10FinanceKit12AppAttestingP
 + _symbolic SS23processedByModelVersion_SSSg23extractionFailureReasont
 + _symbolic Say_____G 10FinanceKit20OrderEmailExtractionV8ContentsV0C11ContentTypeO
@@ -503,10 +415,6 @@ Symbols:
 - _keypath_get_selector_rawOrderContentType
 - _keypath_get_selector_shippingInformationRawStatus
 - _keypath_get_selector_transactionIdentifiers
-- _objc_msgSend$createdByGenerationToken
-- _objc_msgSend$setCreatedByGenerationToken:
-- _objc_msgSend$setTransactionIdentifiers:
-- _objc_msgSend$transactionIdentifiers
 - _swift_runtimeSupportsNoncopyableTypes
 - _symbolic SS23processedByModelVersion_t
 - _symbolic Say_____G 10FinanceKit18RawBankConnectDataO13CustomBalanceV
@@ -565,5 +473,4 @@ CStrings:
 - "forceReadOrderEmailBiomeStream"
 - "principalBalance"
 - "upcomingTransactionObjects"
-
 ```

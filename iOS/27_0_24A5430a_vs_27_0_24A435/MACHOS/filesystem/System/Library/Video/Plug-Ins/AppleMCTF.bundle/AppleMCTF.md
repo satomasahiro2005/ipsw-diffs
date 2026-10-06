@@ -2,24 +2,25 @@
 
 > `/System/Library/Video/Plug-Ins/AppleMCTF.bundle/AppleMCTF`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__cstring`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA.__objc_selrefs`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x87bb0` | `0x87c38` | **`+0x88`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__cstring`
+- `__TEXT.__init_offsets`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
-
- 913.43.1.0.0
--  __TEXT.__text: 0x87bb0
-+  __TEXT.__text: 0x87c38
-   __TEXT.__auth_stubs: 0xd70
-   __TEXT.__objc_stubs: 0x20
-   __TEXT.__init_offsets: 0x4
 Functions:
 ~ sub_e314 : 6988 -> 7004
 ~ sub_3544c -> sub_3545c : 500 -> 536
@@ -35,4 +36,7 @@ Functions:
 ~ sub_8532c -> sub_8535c : 4068 -> 4108
 ~ sub_87244 -> sub_8729c : 1880 -> 1920
 ~ sub_8799c -> sub_87a1c : 304 -> 312
+CStrings:
++ "21:36:11"
+- "22:23:40"
 ```

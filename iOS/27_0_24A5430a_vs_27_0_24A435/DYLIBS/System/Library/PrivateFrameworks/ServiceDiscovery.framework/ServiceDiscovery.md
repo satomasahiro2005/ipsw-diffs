@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ServiceDiscovery.framework/ServiceDiscovery`
 
-```diff
+### Section Size Changes
 
- 751.100.2.0.0
--  __TEXT.__text: 0x1a1ffc
-+  __TEXT.__text: 0x1a2104
-   __TEXT.__objc_methlist: 0xd24
-   __TEXT.__const: 0xa94c
-   __TEXT.__cstring: 0x2a65
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a1ffc` | `0x1a2104` | **`+0x108`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_208415bc8 -> sub_207d4abc8 : 4392 -> 4380
 ~ sub_208416f2c -> sub_207d4bf20 : 1804 -> 1800

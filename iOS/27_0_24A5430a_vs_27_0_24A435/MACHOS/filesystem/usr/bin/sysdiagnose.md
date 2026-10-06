@@ -2,6 +2,8 @@
 
 > `/usr/bin/sysdiagnose`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_1000039ac : 36 -> 16

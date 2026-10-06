@@ -2,21 +2,22 @@
 
 > `/usr/libexec/hostapd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x29f10` | `0x29f20` | **`+0x10`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 425.2.0.0.0
--  __TEXT.__text: 0x29f10
-+  __TEXT.__text: 0x29f20
-   __TEXT.__auth_stubs: 0xc00
-   __TEXT.__const: 0xf6a
-   __TEXT.__cstring: 0xaf47
+```text
 Functions:
 ~ sub_100011f08 : 216 -> 220
 ~ sub_10001f0d4 -> sub_10001f0d8 : 416 -> 420

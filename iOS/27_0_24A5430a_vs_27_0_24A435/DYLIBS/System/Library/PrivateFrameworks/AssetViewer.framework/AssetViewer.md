@@ -2,54 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/AssetViewer.framework/AssetViewer`
 
-```diff
+### Section Size Changes
 
- 567.0.7.0.0
--  __TEXT.__text: 0x148eb8
--  __TEXT.__objc_methlist: 0x4e14
-+  __TEXT.__text: 0x148f38
-+  __TEXT.__objc_methlist: 0x4e2c
-   __TEXT.__cstring: 0x5348
-   __TEXT.__const: 0x7994
-   __TEXT.__gcc_except_tab: 0x358
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x148eb8` | `0x148f38` | **`+0x80`** |
+| `__AUTH_CONST.__objc_const` | `0xc0b8` | `0xc0d8` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x4e14` | `0x4e2c` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3698` | `0x36a8` | **`+0x10`** |
 
-   __DATA_CONST.__objc_catlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x1f0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3698
-+  __DATA_CONST.__objc_selrefs: 0x36a8
-   __DATA_CONST.__objc_protorefs: 0xc0
-   __DATA_CONST.__objc_superrefs: 0x178
-   __DATA_CONST.__objc_arraydata: 0x70
-   __DATA_CONST.__got: 0x1128
-   __AUTH_CONST.__const: 0x7b68
-   __AUTH_CONST.__cfstring: 0x2540
--  __AUTH_CONST.__objc_const: 0xc0b8
-+  __AUTH_CONST.__objc_const: 0xc0d8
-   __AUTH_CONST.__objc_dictobj: 0x118
-   __AUTH_CONST.__objc_intobj: 0x60
-   __AUTH_CONST.__objc_floatobj: 0x10
+### Other Changes
+
+```text
 Functions:
-~ sub_2549b8888 -> sub_25554a888 : 1420 -> 1428
-~ sub_2549c7e6c -> sub_255559e74 : 7476 -> 7492
-~ sub_2549d42e0 -> sub_2555662f8 : 980 -> 992
-~ sub_2549d70d0 -> sub_2555690f4 : 356 -> 360
-~ sub_2549d7234 -> sub_25556925c : 352 -> 356
-~ sub_2549d8408 -> sub_25556a434 : 356 -> 360
-~ sub_2549f1e70 -> sub_255583ea0 : 416 -> 420
-~ sub_2549f5b24 -> sub_255587b58 : 5148 -> 5160
-~ sub_254a022ac -> sub_2555942ec : 1592 -> 1600
-~ sub_254a249bc -> sub_2555b6a04 : 680 -> 684
-~ sub_254a24c64 -> sub_2555b6cb0 : 680 -> 684
-~ sub_254a24f0c -> sub_2555b6f5c : 668 -> 672
-~ sub_254a3a9f4 -> sub_2555cca48 : 2496 -> 2500
-~ sub_254a3c2e8 -> sub_2555ce340 : 228 -> 232
-~ sub_254a3c3cc -> sub_2555ce428 : 208 -> 212
-~ sub_254a3c49c -> sub_2555ce4fc : 208 -> 212
-~ sub_254a3c56c -> sub_2555ce5d0 : 352 -> 356
-~ sub_254a3ec5c -> sub_2555d0cc4 : 316 -> 320
-~ sub_254a47e5c -> sub_2555d9ec8 : 304 -> 308
-~ sub_254a74110 -> sub_255606180 : 168 -> 172
-~ sub_254a741d0 -> sub_255606244 : 260 -> 268
-~ sub_254a795ec -> sub_25560b668 : 852 -> 856
+~ sub_254882888 -> sub_255413888 : 1420 -> 1428
+~ sub_254891e6c -> sub_255422e74 : 7476 -> 7492
+~ sub_25489e2e0 -> sub_25542f2f8 : 980 -> 992
+~ sub_2548a10d0 -> sub_2554320f4 : 356 -> 360
+~ sub_2548a1234 -> sub_25543225c : 352 -> 356
+~ sub_2548a2408 -> sub_255433434 : 356 -> 360
+~ sub_2548bbe70 -> sub_25544cea0 : 416 -> 420
+~ sub_2548bfb24 -> sub_255450b58 : 5148 -> 5160
+~ sub_2548cc2ac -> sub_25545d2ec : 1592 -> 1600
+~ sub_2548ee9bc -> sub_25547fa04 : 680 -> 684
+~ sub_2548eec64 -> sub_25547fcb0 : 680 -> 684
+~ sub_2548eef0c -> sub_25547ff5c : 668 -> 672
+~ sub_2549049f4 -> sub_255495a48 : 2496 -> 2500
+~ sub_2549062e8 -> sub_255497340 : 228 -> 232
+~ sub_2549063cc -> sub_255497428 : 208 -> 212
+~ sub_25490649c -> sub_2554974fc : 208 -> 212
+~ sub_25490656c -> sub_2554975d0 : 352 -> 356
+~ sub_254908c5c -> sub_255499cc4 : 316 -> 320
+~ sub_254911e5c -> sub_2554a2ec8 : 304 -> 308
+~ sub_25493e110 -> sub_2554cf180 : 168 -> 172
+~ sub_25493e1d0 -> sub_2554cf244 : 260 -> 268
+~ sub_2549435ec -> sub_2554d4668 : 852 -> 856
 ```

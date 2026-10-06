@@ -2,75 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/SearchToShareCore.framework/SearchToShareCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7ce18` | `0x7d828` | **`+0xa10`** |
+| `__TEXT.__swift5_typeref` | `0x7398` | `0x7504` | **`+0x16c`** |
+| `__AUTH_CONST.__const` | `0x3d90` | `0x3db8` | **`+0x28`** |
+| `__DATA.__data` | `0x15d0` | `0x15f8` | **`+0x28`** |
+| `__TEXT.__swift5_reflstr` | `0x11ba` | `0x11dc` | **`+0x22`** |
+| `__TEXT.__const` | `0x4e24` | `0x4e44` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x13f0` | `0x1400` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x828` | `0x838` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0xae0` | `0xaf0` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x13a4` | `0x13b0` | **`+0xc`** |
+| `__DATA_CONST.__objc_selrefs` | `0xff0` | `0xff8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3400.1.6.37.0
--  __TEXT.__text: 0x78f78
 +3400.1.6.40.0
-+  __TEXT.__text: 0x79920
-   __TEXT.__objc_methlist: 0xe0c
--  __TEXT.__const: 0x4e24
-+  __TEXT.__const: 0x4e44
-   __TEXT.__cstring: 0x1776
-   __TEXT.__oslogstring: 0x2e5
-   __TEXT.__gcc_except_tab: 0xfc
--  __TEXT.__swift5_typeref: 0x7398
-+  __TEXT.__swift5_typeref: 0x7504
-   __TEXT.__constg_swiftt: 0x143c
--  __TEXT.__swift5_reflstr: 0x11ba
--  __TEXT.__swift5_fieldmd: 0x13a4
-+  __TEXT.__swift5_reflstr: 0x11dc
-+  __TEXT.__swift5_fieldmd: 0x13b0
-   __TEXT.__swift5_proto: 0x15c
-   __TEXT.__swift5_types: 0x178
-   __TEXT.__swift5_protos: 0x18
--  __TEXT.__swift5_capture: 0xae0
-+  __TEXT.__swift5_capture: 0xaf0
-   __TEXT.__swift_as_entry: 0xb4
-   __TEXT.__swift_as_ret: 0xb8
-   __TEXT.__swift_as_cont: 0x10c
-   __TEXT.__swift5_builtin: 0x64
-   __TEXT.__swift5_assocty: 0x400
--  __TEXT.__unwind_info: 0x2760
-+  __TEXT.__unwind_info: 0x2770
-   __TEXT.__eh_frame: 0x1da0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xff0
-+  __DATA_CONST.__objc_selrefs: 0xff8
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__objc_superrefs: 0x28
--  __DATA_CONST.__got: 0x828
--  __AUTH_CONST.__const: 0x3d90
-+  __DATA_CONST.__got: 0x838
-+  __AUTH_CONST.__const: 0x3db8
-   __AUTH_CONST.__cfstring: 0x3c0
-   __AUTH_CONST.__objc_const: 0x2d18
-   __AUTH_CONST.__objc_intobj: 0x18
--  __AUTH_CONST.__auth_got: 0x13f0
-+  __AUTH_CONST.__auth_got: 0x1400
-   __AUTH.__objc_data: 0xd38
-   __AUTH.__data: 0xd00
-   __DATA.__objc_ivar: 0x94
--  __DATA.__data: 0x15d0
-+  __DATA.__data: 0x15f8
-   __DATA.__common: 0x128
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2974
 -  Symbols:   1564
 +  Functions: 2980
 +  Symbols:   1567
-   CStrings:  183
- 
 Symbols:
 + ___swift_closure_destructor.26Tm
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA4ViewPAAE23scrollDismissesKeyboardyQrAA06ScrollgH4ModeVFQOyACyAA4ListVys5NeverOAA7ForEachVySay17SearchToShareCore12CategoryItemVGSSAeAE16listRowSeparator_5edgesQrAA10VisibilityO_AA12VerticalEdgeO3SetVtFQOyAA012_ConditionalD0VyACyAO0s5TitlevE0VAA21_TraitWritingModifierVyAA0kV18BackgroundTraitKeyVGGACyACyAeAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyAA6ButtonVyAO0svE0VG_AA16PlainButtonStyleVQo_A7_GAA31AccessibilityAttachmentModifierVGG_Qo_GGAO0sK13StyleModifier33_E6D367A8AFF6B5DFFEDFF91565030268LLVG_Qo_AA25_AppearanceActionModifierVGAaDHPqd__AaDHD2_A31_HO_A33_AA0E8ModifierHPyHCHC

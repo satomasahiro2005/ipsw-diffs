@@ -2,68 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/MediaIntentsSnippetModels.framework/MediaIntentsSnippetModels`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10334` | `0x316f0` | **`+0x213bc`** |
+| `__DATA.__bss` | `0x3000` | `0x6b00` | **`+0x3b00`** |
+| `__TEXT.__const` | `0x17c2` | `0x327a` | **`+0x1ab8`** |
+| `__AUTH_CONST.__const` | `0x990` | `0x1320` | **`+0x990`** |
+| `__DATA.__data` | `0x478` | `0xd38` | **`+0x8c0`** |
+| `__TEXT.__swift5_fieldmd` | `0x544` | `0xdc0` | **`+0x87c`** |
+| `__TEXT.__unwind_info` | `0x560` | `0xd48` | **`+0x7e8`** |
+| `__TEXT.__swift5_typeref` | `0x57b` | `0xc25` | **`+0x6aa`** |
+| `__AUTH.__data` | `—` | `0x5e0` | **`+0x5e0`** |
+| `__TEXT.__eh_frame` | `0x320` | `0x780` | **`+0x460`** |
+| `__TEXT.__constg_swiftt` | `0x320` | `0x714` | **`+0x3f4`** |
+| `__DATA_CONST.__const` | `0x1d8` | `0x5b8` | **`+0x3e0`** |
+| `__TEXT.__swift5_reflstr` | `0x32f` | `0x562` | **`+0x233`** |
+| `__TEXT.__swift5_proto` | `0x180` | `0x358` | **`+0x1d8`** |
+| `__TEXT.__swift5_types` | `0x58` | `0xc4` | **`+0x6c`** |
+| `__AUTH_CONST.__auth_got` | `0x200` | `0x248` | **`+0x48`** |
+| `__TEXT.__swift5_assocty` | `0x48` | `0x90` | **`+0x48`** |
+| `__TEXT.__cstring` | `0x108` | `0x141` | **`+0x39`** |
+| `__DATA_DIRTY.__data` | `0x3a8` | `0x3b0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.22.15.0.0
--  __TEXT.__text: 0xfc58
--  __TEXT.__const: 0x17c2
--  __TEXT.__cstring: 0x108
--  __TEXT.__swift5_typeref: 0x57b
--  __TEXT.__swift5_reflstr: 0x32f
--  __TEXT.__swift5_assocty: 0x48
--  __TEXT.__constg_swiftt: 0x320
--  __TEXT.__swift5_fieldmd: 0x544
 +3605.10.1.0.0
-+  __TEXT.__text: 0x2ff04
-+  __TEXT.__const: 0x327a
-+  __TEXT.__cstring: 0x141
-+  __TEXT.__swift5_typeref: 0xc25
-+  __TEXT.__swift5_reflstr: 0x562
-+  __TEXT.__swift5_assocty: 0x90
-+  __TEXT.__constg_swiftt: 0x714
-+  __TEXT.__swift5_fieldmd: 0xdc0
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__swift5_proto: 0x180
--  __TEXT.__swift5_types: 0x58
--  __TEXT.__unwind_info: 0x760
--  __TEXT.__eh_frame: 0x320
-+  __TEXT.__swift5_proto: 0x358
-+  __TEXT.__swift5_types: 0xc4
-+  __TEXT.__unwind_info: 0x1358
-+  __TEXT.__eh_frame: 0x780
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x1d8
-+  __DATA_CONST.__const: 0x5b8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x990
--  __AUTH_CONST.__auth_got: 0x200
--  __DATA.__data: 0x478
--  __DATA_DIRTY.__data: 0x3a8
-+  __AUTH_CONST.__const: 0x1320
-+  __AUTH_CONST.__auth_got: 0x248
-+  __AUTH.__data: 0x5e0
-+  __DATA.__data: 0xd38
-+  __DATA_DIRTY.__data: 0x3b0
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/SiriUtilities.framework/SiriUtilities
-   - /System/Library/PrivateFrameworks/SnippetKit.framework/SnippetKit
-+  - /System/Library/PrivateFrameworks/ToolKit.framework/ToolKit
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/PrivateFrameworks/ToolKit.framework/ToolKit
+
 -  Functions: 554
 -  Symbols:   215
 -  CStrings:  8
 +  Functions: 1392
 +  Symbols:   388
 +  CStrings:  10
- 
 Symbols:
 + _associated conformance 25MediaIntentsSnippetModels05VideocD0O0E10CastMemberV0C3Kit0C5ModelAASE
 + _associated conformance 25MediaIntentsSnippetModels05VideocD0O0E10CastMemberV0C3Kit0C5ModelAASe

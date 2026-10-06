@@ -2,106 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/CoreIDVUI.framework/CoreIDVUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__lazy_load_got`
-- `__DATA.__objc_stublist`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x27c5e8` | `0x280660` | **`+0x4078`** |
+| `__TEXT.__swift5_typeref` | `0x11304` | `0x10960` | **`-0x9a4`** |
+| `__TEXT.__const` | `0x13c14` | `0x144c4` | **`+0x8b0`** |
+| `__DATA.__bss` | `0xaff0` | `0xb150` | **`+0x160`** |
+| `__TEXT.__unwind_info` | `0x8860` | `0x88f0` | **`+0x90`** |
+| `__AUTH_CONST.__objc_const` | `0xd6e8` | `0xd768` | **`+0x80`** |
+| `__TEXT.__swift5_reflstr` | `0x77cc` | `0x784c` | **`+0x80`** |
+| `__DATA.__data` | `0x5974` | `0x59d4` | **`+0x60`** |
+| `__AUTH_CONST.__auth_got` | `0x45d8` | `0x4620` | **`+0x48`** |
+| `__TEXT.__swift5_fieldmd` | `0x61cc` | `0x6214` | **`+0x48`** |
+| `__DATA_CONST.__got` | `0x21d8` | `0x2218` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0xf068` | `0xf040` | **`-0x28`** |
+| `__AUTH.__data` | `0x9870` | `0x9890` | **`+0x20`** |
+| `__TEXT.__cstring` | `0xdcad` | `0xdccd` | **`+0x20`** |
+| `__AUTH.__objc_data` | `0x3eb0` | `0x3ec8` | **`+0x18`** |
+| `__TEXT.__swift5_capture` | `0x375c` | `0x374c` | **`-0x10`** |
+| `__TEXT.__swift_as_cont` | `0x1174` | `0x1178` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -9.36.0.0.0
--  __TEXT.__text: 0x27c5e8
 +9.38.0.0.0
-+  __TEXT.__text: 0x280660
-   __TEXT.__lazy_helpers: 0xa8
-   __TEXT.__objc_methlist: 0x18f4
--  __TEXT.__const: 0x13c14
--  __TEXT.__cstring: 0xdcad
--  __TEXT.__swift5_typeref: 0x11304
-+  __TEXT.__const: 0x144c4
-+  __TEXT.__cstring: 0xdccd
-+  __TEXT.__swift5_typeref: 0x10960
-   __TEXT.__constg_swiftt: 0x7e18
-   __TEXT.__swift5_builtin: 0x1b8
--  __TEXT.__swift5_reflstr: 0x77cc
--  __TEXT.__swift5_fieldmd: 0x61cc
-+  __TEXT.__swift5_reflstr: 0x784c
-+  __TEXT.__swift5_fieldmd: 0x6214
-   __TEXT.__swift5_assocty: 0xe10
-   __TEXT.__swift5_proto: 0x5d0
-   __TEXT.__swift5_types: 0x520
--  __TEXT.__swift5_capture: 0x375c
-+  __TEXT.__swift5_capture: 0x374c
-   __TEXT.__oslogstring: 0xfe82
-   __TEXT.__swift5_protos: 0x70
-   __TEXT.__swift_as_entry: 0x730
-   __TEXT.__swift_as_ret: 0x694
--  __TEXT.__swift_as_cont: 0x1174
-+  __TEXT.__swift_as_cont: 0x1178
-   __TEXT.__swift5_mpenum: 0x24
--  __TEXT.__unwind_info: 0x8860
-+  __TEXT.__unwind_info: 0x88f0
-   __TEXT.__eh_frame: 0x13d4c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0x1b40
-   __DATA_CONST.__objc_protorefs: 0xe0
-   __DATA_CONST.__objc_superrefs: 0x40
--  __DATA_CONST.__got: 0x21d8
--  __AUTH_CONST.__const: 0xf068
-+  __DATA_CONST.__got: 0x2218
-+  __AUTH_CONST.__const: 0xf040
-   __AUTH_CONST.__cfstring: 0x240
--  __AUTH_CONST.__objc_const: 0xd6e8
-+  __AUTH_CONST.__objc_const: 0xd768
-   __AUTH_CONST.__lazy_load_got: 0x10
--  __AUTH_CONST.__auth_got: 0x45d8
--  __AUTH.__objc_data: 0x3eb0
--  __AUTH.__data: 0x9870
-+  __AUTH_CONST.__auth_got: 0x4620
-+  __AUTH.__objc_data: 0x3ec8
-+  __AUTH.__data: 0x9890
-   __DATA.__objc_ivar: 0x6c
--  __DATA.__data: 0x5974
-+  __DATA.__data: 0x59d4
-   __DATA.__objc_stublist: 0x60
--  __DATA.__bss: 0xaff0
-+  __DATA.__bss: 0xb150
-   __DATA.__common: 0x4b8
-   __DATA_DIRTY.__objc_data: 0x2f0
-   __DATA_DIRTY.__data: 0x60
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10152
--  Symbols:   4387
+-  Symbols:   3677
 -  CStrings:  1887
 +  Functions: 10288
-+  Symbols:   4389
++  Symbols:   3679
 +  CStrings:  1888
- 
 Symbols:
 + _UIAccessibilityScreenChangedNotification
 + ___swift_closure_destructor.58Tm

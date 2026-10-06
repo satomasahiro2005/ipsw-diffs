@@ -2,30 +2,30 @@
 
 > `/System/Library/Filesystems/apfs.fs/apfs_iosd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x339a4` | `0x33cf0` | **`+0x34c`** |
+| `__TEXT.__cstring` | `0x6684` | `0x679d` | **`+0x119`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x339a4
-+  __TEXT.__text: 0x33cf0
-   __TEXT.__auth_stubs: 0xa90
-   __TEXT.__const: 0x350
--  __TEXT.__cstring: 0x6684
-+  __TEXT.__cstring: 0x679d
-   __TEXT.__oslogstring: 0x13e0
-   __TEXT.__unwind_info: 0x650
-   __DATA_CONST.__const: 0x708
+-3283.0.0.0.0
++3283.0.9.502.1
 
-   - /usr/lib/libutil.dylib
-   Functions: 562
-   Symbols:   197
--  CStrings:  884
-+  CStrings:  889
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA.__data : content changed
+-  CStrings:  746
++  CStrings:  751
 Functions:
 ~ sub_100006124 : 324 -> 332
 ~ sub_1000159f8 -> sub_100015a00 : 1208 -> 1364
@@ -53,5 +53,4 @@ CStrings:
 - "%s:%d: %s failed to allocate block from internal pool: %d\n"
 - "%s:%d: %s failed to create bitmap object %lld: %d\n"
 - "%s:%d: %s failed to free internal pool block %lld: %d\n"
-
 ```

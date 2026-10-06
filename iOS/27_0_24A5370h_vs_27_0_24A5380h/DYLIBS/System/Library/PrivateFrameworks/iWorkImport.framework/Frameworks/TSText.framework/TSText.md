@@ -2,129 +2,71 @@
 
 > `/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/TSText.framework/TSText`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x24bf9c` | `0x24ab44` | **`-0x1458`** |
+| `__DATA_CONST.__got` | `0xb98` | `0xb88` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1c08` | `0x1c00` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0xf160` | `0xf168` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x24bf9c
-+  __TEXT.__text: 0x24ab44
-   __TEXT.__init_offsets: 0xc
-   __TEXT.__objc_methlist: 0x10900
-   __TEXT.__gcc_except_tab: 0x2b274
-
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_proto: 0x38
-   __TEXT.__swift5_types: 0x38
--  __TEXT.__unwind_info: 0xf160
-+  __TEXT.__unwind_info: 0xf168
-   __TEXT.__eh_frame: 0xf0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_protorefs: 0xd8
-   __DATA_CONST.__objc_superrefs: 0x520
-   __DATA_CONST.__objc_arraydata: 0x1060
--  __DATA_CONST.__got: 0xb98
-+  __DATA_CONST.__got: 0xb88
-   __AUTH_CONST.__const: 0xc440
-   __AUTH_CONST.__cfstring: 0x7dc0
-   __AUTH_CONST.__objc_const: 0x15128
-
-   __AUTH_CONST.__objc_doubleobj: 0x110
-   __AUTH_CONST.__objc_floatobj: 0xa0
-   __AUTH_CONST.__objc_dictobj: 0x50
--  __AUTH_CONST.__auth_got: 0x1c08
-+  __AUTH_CONST.__auth_got: 0x1c00
-   __AUTH.__objc_data: 0x3be8
-   __AUTH.__data: 0x80
-   __DATA.__objc_ivar: 0xa9c
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 13871
 -  Symbols:   7877
 +  Symbols:   7876
-   CStrings:  4063
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
 Symbols:
 - _swift_willThrowTypedImpl
 Functions:
-~ sub_2b8f2040c -> sub_2b9acb40c : 84 -> 92
-~ sub_2b8f42310 -> sub_2b9aed318 : 1328 -> 1320
-~ sub_2b8f42840 -> sub_2b9aed840 : 1256 -> 1232
-~ sub_2b8f4c3ec -> sub_2b9af73d4 : 3008 -> 3076
-~ sub_2b8f4cfac -> sub_2b9af7fd8 : 1232 -> 1240
-~ sub_2b8f50544 -> sub_2b9afb578 : 396 -> 404
-~ sub_2b8f5160c -> sub_2b9afc648 : 824 -> 832
-~ sub_2b8f53e34 -> sub_2b9afee78 : 160 -> 156
-~ sub_2b8f5545c -> sub_2b9b0049c : 272 -> 256
-~ sub_2b8f5556c -> sub_2b9b0059c : 292 -> 272
-~ sub_2b8f5581c -> sub_2b9b00838 : 416 -> 408
-~ sub_2b8f559bc -> sub_2b9b009d0 : 1304 -> 1280
-~ sub_2b8f56554 -> sub_2b9b01550 : 152 -> 136
-~ sub_2b8f5695c -> sub_2b9b01948 : 68 -> 56
-~ sub_2b8f74674 -> sub_2b9b1f654 : 160 -> 156
-~ sub_2b8f752d8 -> sub_2b9b202b4 : 452 -> 440
-~ sub_2b8fa839c -> sub_2b9b5336c : 8136 -> 8156
-~ sub_2b8fac890 -> sub_2b9b57874 : 10840 -> 10852
-~ sub_2b8fafc38 -> sub_2b9b5ac28 : 1240 -> 1232
-~ sub_2b8fb8084 -> sub_2b9b6306c : 160 -> 156
-~ sub_2b8fbd1a4 -> sub_2b9b68188 : 180 -> 176
-~ sub_2b8fbd558 -> sub_2b9b68538 : 1136 -> 1124
-~ sub_2b8fd0d54 -> sub_2b9b7bd28 : 340 -> 348
-~ sub_2b8fe5c74 -> sub_2b9b90c50 : 136 -> 124
-~ sub_2b8fe5cfc -> sub_2b9b90ccc : 92 -> 96
-~ sub_2b8fe6e20 -> sub_2b9b91df4 : 160 -> 156
-~ sub_2b8fe706c -> sub_2b9b9203c : 160 -> 156
-~ sub_2b90193bc -> sub_2b9bc4388 : 168 -> 152
-~ sub_2b901962c -> sub_2b9bc45e8 : 288 -> 256
-~ sub_2b901974c -> sub_2b9bc46e8 : 288 -> 256
-~ sub_2b901a070 -> sub_2b9bc4fec : 624 -> 612
-~ sub_2b9024320 -> sub_2b9bcf290 : 476 -> 468
-~ sub_2b9029dbc -> sub_2b9bd4d24 : 152 -> 136
-~ sub_2b902a794 -> sub_2b9bd56ec : 160 -> 156
-~ sub_2b902a998 -> sub_2b9bd58ec : 160 -> 156
+~ sub_2b8f2040c -> sub_2b998d40c : 84 -> 92
+~ sub_2b8f42310 -> sub_2b99af318 : 1328 -> 1320
+~ sub_2b8f42840 -> sub_2b99af840 : 1256 -> 1232
+~ sub_2b8f4c3ec -> sub_2b99b93d4 : 3008 -> 3076
+~ sub_2b8f4cfac -> sub_2b99b9fd8 : 1232 -> 1240
+~ sub_2b8f50544 -> sub_2b99bd578 : 396 -> 404
+~ sub_2b8f5160c -> sub_2b99be648 : 824 -> 832
+~ sub_2b8f53e34 -> sub_2b99c0e78 : 160 -> 156
+~ sub_2b8f5545c -> sub_2b99c249c : 272 -> 256
+~ sub_2b8f5556c -> sub_2b99c259c : 292 -> 272
+~ sub_2b8f5581c -> sub_2b99c2838 : 416 -> 408
+~ sub_2b8f559bc -> sub_2b99c29d0 : 1304 -> 1280
+~ sub_2b8f56554 -> sub_2b99c3550 : 152 -> 136
+~ sub_2b8f5695c -> sub_2b99c3948 : 68 -> 56
+~ sub_2b8f74674 -> sub_2b99e1654 : 160 -> 156
+~ sub_2b8f752d8 -> sub_2b99e22b4 : 452 -> 440
+~ sub_2b8fa839c -> sub_2b9a1536c : 8136 -> 8156
+~ sub_2b8fac890 -> sub_2b9a19874 : 10840 -> 10852
+~ sub_2b8fafc38 -> sub_2b9a1cc28 : 1240 -> 1232
+~ sub_2b8fb8084 -> sub_2b9a2506c : 160 -> 156
+~ sub_2b8fbd1a4 -> sub_2b9a2a188 : 180 -> 176
+~ sub_2b8fbd558 -> sub_2b9a2a538 : 1136 -> 1124
+~ sub_2b8fd0d54 -> sub_2b9a3dd28 : 340 -> 348
+~ sub_2b8fe5c74 -> sub_2b9a52c50 : 136 -> 124
+~ sub_2b8fe5cfc -> sub_2b9a52ccc : 92 -> 96
+~ sub_2b8fe6e20 -> sub_2b9a53df4 : 160 -> 156
+~ sub_2b8fe706c -> sub_2b9a5403c : 160 -> 156
+~ sub_2b90193bc -> sub_2b9a86388 : 168 -> 152
+~ sub_2b901962c -> sub_2b9a865e8 : 288 -> 256
+~ sub_2b901974c -> sub_2b9a866e8 : 288 -> 256
+~ sub_2b901a070 -> sub_2b9a86fec : 624 -> 612
+~ sub_2b9024320 -> sub_2b9a91290 : 476 -> 468
+~ sub_2b9029dbc -> sub_2b9a96d24 : 152 -> 136
+~ sub_2b902a794 -> sub_2b9a976ec : 160 -> 156
+~ sub_2b902a998 -> sub_2b9a978ec : 160 -> 156
 ~ __ZNK4TSWP16SelectionArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 1400 -> 1336
 ~ __ZNK4TSWP36ObjectAttributeTable_ObjectAttribute18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 400 -> 384
 ~ __ZNK4TSWP20ObjectAttributeTable18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 296 -> 288
 ~ __ZNK4TSWP36StringAttributeTable_StringAttribute18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 288 -> 280
-~ sub_2b903a610 -> sub_2b9be5500 : 304 -> 292
+~ sub_2b903a610 -> sub_2b9aa7500 : 304 -> 292
 ~ __ZNK4TSWP20StringAttributeTable18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 296 -> 288
 ~ __ZNK4TSWP40ParaDataAttributeTable_ParaDataAttribute18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 540 -> 516
 ~ __ZNK4TSWP22ParaDataAttributeTable18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 296 -> 288
 ~ __ZNK4TSWP56OverlappingFieldAttributeTable_OverlappingFieldAttribute18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 408 -> 392
 ~ __ZNK4TSWP30OverlappingFieldAttributeTable18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 296 -> 288
 ~ __ZNK4TSWP14StorageArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 4124 -> 3932
-~ sub_2b904028c -> sub_2b9beb070 : 304 -> 292
+~ sub_2b904028c -> sub_2b9aad070 : 304 -> 292
 ~ __ZNK4TSWP16HighlightArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 296 -> 288
 ~ __ZNK4TSWP23PencilAnnotationArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 296 -> 288
 ~ __ZNK4TSWP18FontFeatureArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 384 -> 368
@@ -243,7 +185,7 @@ Functions:
 ~ __ZNK7TSWPSOS34ShapeStylePropertyChangeSetArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 1532 -> 1476
 ~ __ZNK7TSWPSOS37TOCEntryStylePropertyChangeSetArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 684 -> 660
 ~ __ZNK7TSWPSOS16StyleDiffArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 728 -> 696
-~ sub_2b90cd67c -> sub_2b9c77828 : 552 -> 536
+~ sub_2b90cd67c -> sub_2b9b39828 : 552 -> 536
 ~ __ZN18TSWPAttributeArray27nonUndoableDeleteAttributesEmmP22TSWPStorageActionState : 1156 -> 1148
 ~ __ZN27TSWPParagraphAttributeArray26insertAttributesForMarkersE8_NSRangemmP11TSWPMarkersP22TSWPStorageActionStateR29TSWPAttributeArrayDataContext : 1880 -> 1836
 ~ __ZNK4TSWP19DummyCommandArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 228 -> 220
@@ -293,8 +235,7 @@ Functions:
 ~ __ZNK4TSWP34EquationInfoGeometryCommandArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 244 -> 236
 ~ __ZNK4TSWP44CharacterStyleChangePropertyCommand_GArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 792 -> 768
 ~ __ZNK4TSWP44ParagraphStyleChangePropertyCommand_GArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 740 -> 716
-~ sub_2b911d1fc -> sub_2b9cc6dd0 : 152 -> 136
-~ sub_2b9136120 -> sub_2b9cdfce4 : 520 -> 500
-~ sub_2b913803c -> sub_2b9ce1bec : 188 -> 180
-
+~ sub_2b911d1fc -> sub_2b9b88dd0 : 152 -> 136
+~ sub_2b9136120 -> sub_2b9ba1ce4 : 520 -> 500
+~ sub_2b913803c -> sub_2b9ba3bec : 188 -> 180
 ```

@@ -2,80 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/CoreAccessories.framework/Support/accessoryd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x19ffb0` | `0x1a1614` | **`+0x1664`** |
+| `__TEXT.__oslogstring` | `0x3919e` | `0x3956b` | **`+0x3cd`** |
+| `__TEXT.__cstring` | `0xe624` | `0xe838` | **`+0x214`** |
+| `__DATA_CONST.__const` | `0xa318` | `0xa448` | **`+0x130`** |
+| `__DATA_CONST.__cfstring` | `0x73e0` | `0x74e0` | **`+0x100`** |
+| `__TEXT.__objc_methname` | `0xff03` | `0xff4a` | **`+0x47`** |
+| `__DATA.__objc_const` | `0xb080` | `0xb0b0` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x4848` | `0x4870` | **`+0x28`** |
+| `__DATA.__bss` | `0x1628` | `0x1648` | **`+0x20`** |
+| `__TEXT.__objc_stubs` | `0x9600` | `0x9620` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0xef8` | `0xf10` | **`+0x18`** |
+| `__TEXT.__const` | `0x2110` | `0x2120` | **`+0x10`** |
+| `__TEXT.__objc_methtype` | `0x324c` | `0x3259` | **`+0xd`** |
+| `__DATA.__objc_selrefs` | `0x33d0` | `0x33d8` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x6ed4` | `0x6edc` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x7a0` | `0x7a4` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -1219.40.7.0.0
--  __TEXT.__text: 0x19bfa4
 +1219.40.10.502.1
-+  __TEXT.__text: 0x19d5c8
-   __TEXT.__auth_stubs: 0x1890
--  __TEXT.__objc_stubs: 0x9600
--  __TEXT.__objc_methlist: 0x6ed4
--  __TEXT.__const: 0x2110
-+  __TEXT.__objc_stubs: 0x9620
-+  __TEXT.__objc_methlist: 0x6edc
-+  __TEXT.__const: 0x2120
-   __TEXT.__gcc_except_tab: 0x2110
-   __TEXT.__objc_classname: 0xfd3
--  __TEXT.__objc_methname: 0xff03
--  __TEXT.__objc_methtype: 0x324c
--  __TEXT.__cstring: 0xe624
--  __TEXT.__oslogstring: 0x3919e
-+  __TEXT.__objc_methname: 0xff4a
-+  __TEXT.__objc_methtype: 0x3259
-+  __TEXT.__cstring: 0xe838
-+  __TEXT.__oslogstring: 0x3956b
-   __TEXT.__ustring: 0x232
--  __TEXT.__unwind_info: 0x68e0
--  __DATA_CONST.__const: 0xa318
--  __DATA_CONST.__cfstring: 0x73e0
-+  __TEXT.__unwind_info: 0x6920
-+  __DATA_CONST.__const: 0xa448
-+  __DATA_CONST.__cfstring: 0x74e0
-   __DATA_CONST.__objc_classlist: 0x318
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x178
 
-   __DATA_CONST.__objc_arrayobj: 0xd8
-   __DATA_CONST.__objc_intobj: 0x108
-   __DATA_CONST.__auth_got: 0xc58
--  __DATA_CONST.__got: 0xef8
-+  __DATA_CONST.__got: 0xf10
-   __DATA_CONST.__auth_ptr: 0x98
--  __DATA.__objc_const: 0xb080
--  __DATA.__objc_selrefs: 0x33d0
--  __DATA.__objc_ivar: 0x7a0
-+  __DATA.__objc_const: 0xb0b0
-+  __DATA.__objc_selrefs: 0x33d8
-+  __DATA.__objc_ivar: 0x7a4
-   __DATA.__objc_data: 0x1ef0
-   __DATA.__data: 0x1940
-   __DATA.__common: 0x28
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libsysdiagnose.dylib
--  Functions: 8667
+-  Functions: 8713
 -  Symbols:   11709
 -  CStrings:  8727
-+  Functions: 8688
++  Functions: 8734
 +  Symbols:   11731
 +  CStrings:  8756
- 
 Symbols:
 + -[ACCExternalAccessory EAPPIDVersionUID]
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/CoreAccessories/install/Symbols/BuiltProducts/libAccessoryCore.a(ccm-decrypt-436d1ea6c3a19c17f6f0983b010948ba.o)

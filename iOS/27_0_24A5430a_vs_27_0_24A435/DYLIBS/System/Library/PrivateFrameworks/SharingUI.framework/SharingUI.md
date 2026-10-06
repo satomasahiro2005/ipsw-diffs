@@ -2,48 +2,21 @@
 
 > `/System/Library/PrivateFrameworks/SharingUI.framework/SharingUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xab498` | `0xab674` | **`+0x1dc`** |
+| `__AUTH_CONST.__cfstring` | `0x1ce0` | `0x1d00` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x38e8` | `0x38f8` | **`+0x10`** |
+| `__TEXT.__cstring` | `0x4098` | `0x40a8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
- 2131.10.1.2.11
--  __TEXT.__text: 0xab498
-+  __TEXT.__text: 0xab674
-   __TEXT.__objc_methlist: 0x441c
-   __TEXT.__const: 0x1e24
-   __TEXT.__gcc_except_tab: 0x100c
--  __TEXT.__cstring: 0x4098
-+  __TEXT.__cstring: 0x40a8
-   __TEXT.__oslogstring: 0x28cf
-   __TEXT.__dlopen_cstrs: 0xb1
-   __TEXT.__swift5_typeref: 0xb1a
-
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x148
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x38e8
-+  __DATA_CONST.__objc_selrefs: 0x38f8
-   __DATA_CONST.__objc_protorefs: 0x78
-   __DATA_CONST.__objc_classrefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x158
-   __DATA_CONST.__objc_arraydata: 0xe0
-   __DATA_CONST.__got: 0xaf8
-   __AUTH_CONST.__const: 0x4c10
--  __AUTH_CONST.__cfstring: 0x1ce0
-+  __AUTH_CONST.__cfstring: 0x1d00
-   __AUTH_CONST.__objc_const: 0xa528
-   __AUTH_CONST.__objc_arrayobj: 0x90
-   __AUTH_CONST.__objc_dictobj: 0x28
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 3250
--  Symbols:   5028
 -  CStrings:  754
-+  Symbols:   5030
 +  CStrings:  755
- 
-Symbols:
-+ _objc_msgSend$b868e
-+ _objc_msgSend$b868m
 Functions:
 ~ -[SFShareAudioHoldButtonViewController viewWillAppear:] : 1776 -> 1880
 ~ sub_1c7f4f5cc -> sub_1c7ee5634 : 2996 -> 3004

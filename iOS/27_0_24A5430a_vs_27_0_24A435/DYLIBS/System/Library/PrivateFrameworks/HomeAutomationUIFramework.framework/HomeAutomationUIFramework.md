@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/HomeAutomationUIFramework.framework/HomeAutomationUIFramework`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_28 : 24 -> 12

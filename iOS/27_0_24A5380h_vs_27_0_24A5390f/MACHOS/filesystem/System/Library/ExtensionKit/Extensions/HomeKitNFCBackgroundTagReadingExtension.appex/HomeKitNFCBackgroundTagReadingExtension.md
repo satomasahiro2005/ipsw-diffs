@@ -2,86 +2,56 @@
 
 > `/System/Library/ExtensionKit/Extensions/HomeKitNFCBackgroundTagReadingExtension.appex/HomeKitNFCBackgroundTagReadingExtension`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_entry`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4490` | `0x3684` | **`-0xe0c`** |
+| `__TEXT.__auth_stubs` | `0x7a0` | `0x5d0` | **`-0x1d0`** |
+| `__TEXT.__objc_stubs` | `0x280` | `0x140` | **`-0x140`** |
+| `__DATA_CONST.__auth_got` | `0x3d8` | `0x2f0` | **`-0xe8`** |
+| `__TEXT.__oslogstring` | `0x1e1` | `0x111` | **`-0xd0`** |
+| `__TEXT.__objc_methname` | `0x39b` | `0x2dc` | **`-0xbf`** |
+| `__DATA_CONST.__const` | `0x1a8` | `0x130` | **`-0x78`** |
+| `__DATA.__data` | `0x180` | `0x110` | **`-0x70`** |
+| `__DATA.__objc_selrefs` | `0x1c8` | `0x178` | **`-0x50`** |
+| `__TEXT.__objc_methtype` | `0x167` | `0x11f` | **`-0x48`** |
+| `__TEXT.__swift5_typeref` | `0xdb` | `0x9b` | **`-0x40`** |
+| `__DATA_CONST.__got` | `0x90` | `0x58` | **`-0x38`** |
+| `__DATA.__objc_const` | `0x268` | `0x248` | **`-0x20`** |
+| `__TEXT.__objc_methlist` | `0x22c` | `0x214` | **`-0x18`** |
+| `__TEXT.__objc_classname` | `0x2b` | `0x16` | **`-0x15`** |
+| `__DATA_CONST.__objc_protolist` | `0x30` | `0x20` | **`-0x10`** |
+| `__TEXT.__const` | `0x11a` | `0x10a` | **`-0x10`** |
+| `__TEXT.__swift5_capture` | `0x10` | `—` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x118` | `0x108` | **`-0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x18` | `0x10` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__auth_ptr`
 - `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_assocty`
 - `__TEXT.__cstring`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_fieldmd`
 - `__TEXT.__swift5_proto`
 - `__TEXT.__swift5_types`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__auth_ptr`
+
+### Other Changes
 
 ```diff
 
 -1484.2.0.0.0
--  __TEXT.__text: 0x4490
--  __TEXT.__auth_stubs: 0x7a0
--  __TEXT.__objc_stubs: 0x280
--  __TEXT.__objc_methlist: 0x22c
--  __TEXT.__const: 0x11a
 +1490.2.0.1.1
-+  __TEXT.__text: 0x3684
-+  __TEXT.__auth_stubs: 0x5d0
-+  __TEXT.__objc_stubs: 0x140
-+  __TEXT.__objc_methlist: 0x214
-+  __TEXT.__const: 0x10a
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__constg_swiftt: 0x28
--  __TEXT.__swift5_typeref: 0xdb
-+  __TEXT.__swift5_typeref: 0x9b
-   __TEXT.__swift5_fieldmd: 0x10
-   __TEXT.__swift5_reflstr: 0xe
-   __TEXT.__swift5_assocty: 0x18
--  __TEXT.__objc_methtype: 0x167
--  __TEXT.__oslogstring: 0x1e1
--  __TEXT.__swift5_capture: 0x10
-+  __TEXT.__oslogstring: 0x111
-   __TEXT.__cstring: 0x98
-   __TEXT.__swift5_proto: 0x8
-   __TEXT.__swift5_types: 0x4
--  __TEXT.__objc_classname: 0x2b
--  __TEXT.__objc_methname: 0x39b
--  __TEXT.__unwind_info: 0x118
-+  __TEXT.__objc_classname: 0x16
-+  __TEXT.__objc_methname: 0x2dc
-+  __TEXT.__objc_methtype: 0x11f
-+  __TEXT.__unwind_info: 0x108
-   __TEXT.__eh_frame: 0x80
--  __DATA_CONST.__const: 0x1a8
--  __DATA_CONST.__objc_protolist: 0x30
-+  __DATA_CONST.__const: 0x130
-+  __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__auth_got: 0x3d8
--  __DATA_CONST.__got: 0x90
-+  __DATA_CONST.__objc_protorefs: 0x10
-+  __DATA_CONST.__auth_got: 0x2f0
-+  __DATA_CONST.__got: 0x58
-   __DATA_CONST.__auth_ptr: 0x78
--  __DATA.__objc_const: 0x268
--  __DATA.__objc_selrefs: 0x1c8
--  __DATA.__data: 0x180
-+  __DATA.__objc_const: 0x248
-+  __DATA.__objc_selrefs: 0x178
-+  __DATA.__data: 0x110
-   __DATA.__bss: 0x130
-   - /System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation
-   - /System/Library/Frameworks/ExtensionKit.framework/ExtensionKit
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 56
 -  Symbols:   97
 -  CStrings:  103
 +  Functions: 45
 +  Symbols:   73
 +  CStrings:  85
- 
 Symbols:
 + _objc_release_x27
 - _HMDNFCTagXPCMachServiceName

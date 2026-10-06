@@ -2,24 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/MLModelAsset.framework/MLModelAsset`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1bee8` | `0x1bedc` | **`-0xc`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1bee8
-+  __TEXT.__text: 0x1bedc
-   __TEXT.__const: 0xab2
-   __TEXT.__cstring: 0x18f
-   __TEXT.__swift5_typeref: 0x28c
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH.__data : content changed
+-3600.73.1.0.0
++3600.75.3.0.0
 Functions:
-~ sub_28764a084 -> sub_2879ff084 : 1032 -> 1020
-
+~ sub_2874fb084 -> sub_287fbe084 : 1032 -> 1020
 ```

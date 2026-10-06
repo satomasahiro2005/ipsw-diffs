@@ -2,106 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/AVFCapture.framework/AVFCapture`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_floatobj`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x35969` | `0x37a39` | **`+0x20d0`** |
+| `__TEXT.__text` | `0x17f94c` | `0x180924` | **`+0xfd8`** |
+| `__AUTH_CONST.__objc_const` | `0x1a298` | `0x1a670` | **`+0x3d8`** |
+| `__TEXT.__objc_methlist` | `0xfdec` | `0xffe4` | **`+0x1f8`** |
+| `__TEXT.__oslogstring` | `0x24dbd` | `0x24f93` | **`+0x1d6`** |
+| `__AUTH_CONST.__cfstring` | `0x15d20` | `0x15ee0` | **`+0x1c0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8740` | `0x8850` | **`+0x110`** |
+| `__DATA.__objc_ivar` | `0x1c20` | `0x1c74` | **`+0x54`** |
+| `__AUTH.__objc_data` | `0x2320` | `0x2370` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x30c0` | `0x3078` | **`-0x48`** |
+| `__DATA_CONST.__got` | `0x2b18` | `0x2b50` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0x5390` | `0x53c8` | **`+0x38`** |
+| `__AUTH_CONST.__auth_got` | `0x10f8` | `0x1120` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0xdf0` | `0xe10` | **`+0x20`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x318` | `0x330` | **`+0x18`** |
+| `__DATA.__bss` | `0x9e0` | `0x9f0` | **`+0x10`** |
+| `__TEXT.__const` | `0xf02` | `0xef2` | **`-0x10`** |
+| `__DATA_CONST.__objc_arraydata` | `0x450` | `0x458` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x630` | `0x638` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x560` | `0x568` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -758.0.0.122.2
--  __TEXT.__text: 0x17f94c
--  __TEXT.__objc_methlist: 0xfdec
--  __TEXT.__const: 0xf02
--  __TEXT.__gcc_except_tab: 0x30c0
--  __TEXT.__cstring: 0x35969
--  __TEXT.__oslogstring: 0x24dbd
 +761.0.0.0.3
-+  __TEXT.__text: 0x180924
-+  __TEXT.__objc_methlist: 0xffe4
-+  __TEXT.__const: 0xef2
-+  __TEXT.__gcc_except_tab: 0x3078
-+  __TEXT.__cstring: 0x37a39
-+  __TEXT.__oslogstring: 0x24f93
-   __TEXT.__dlopen_cstrs: 0x274
-   __TEXT.__ustring: 0x54
-   __TEXT.__swift5_typeref: 0xef
 
-   __TEXT.__swift5_reflstr: 0x24
-   __TEXT.__swift5_fieldmd: 0x50
-   __TEXT.__swift5_types: 0x8
--  __TEXT.__unwind_info: 0x5390
-+  __TEXT.__unwind_info: 0x53c8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x88f0
--  __DATA_CONST.__objc_classlist: 0x630
-+  __DATA_CONST.__objc_classlist: 0x638
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0xb0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8740
-+  __DATA_CONST.__objc_selrefs: 0x8850
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x560
--  __DATA_CONST.__objc_arraydata: 0x450
--  __DATA_CONST.__got: 0x2b18
--  __AUTH_CONST.__const: 0xdf0
--  __AUTH_CONST.__cfstring: 0x15d20
--  __AUTH_CONST.__objc_const: 0x1a298
-+  __DATA_CONST.__objc_superrefs: 0x568
-+  __DATA_CONST.__objc_arraydata: 0x458
-+  __DATA_CONST.__got: 0x2b50
-+  __AUTH_CONST.__const: 0xe10
-+  __AUTH_CONST.__cfstring: 0x15ee0
-+  __AUTH_CONST.__objc_const: 0x1a670
-   __AUTH_CONST.__objc_intobj: 0xa80
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__objc_arrayobj: 0x318
-+  __AUTH_CONST.__objc_arrayobj: 0x330
-   __AUTH_CONST.__objc_floatobj: 0x10
--  __AUTH_CONST.__auth_got: 0x10f8
--  __AUTH.__objc_data: 0x2320
-+  __AUTH_CONST.__auth_got: 0x1120
-+  __AUTH.__objc_data: 0x2370
-   __AUTH.__data: 0x28
--  __DATA.__objc_ivar: 0x1c20
-+  __DATA.__objc_ivar: 0x1c74
-   __DATA.__data: 0xdc0
-   __DATA.__common: 0x3a0
--  __DATA.__bss: 0x9e0
-+  __DATA.__bss: 0x9f0
-   __DATA_DIRTY.__objc_data: 0x1ae0
-   __DATA_DIRTY.__data: 0x170
-   __DATA_DIRTY.__common: 0x230
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7457
--  Symbols:   16878
+-  Symbols:   13376
 -  CStrings:  5751
 +  Functions: 7512
-+  Symbols:   16995
++  Symbols:   13462
 +  CStrings:  5776
- 
 Symbols:
 + -[AVCaptureFigVideoDevice _applyDynamicAspectRatioResetForActiveFormatChange]
 + -[AVCaptureFigVideoDevice _dynamicAspectRatioNeedsResetForActiveFormatChange]
@@ -220,48 +158,6 @@ Symbols:
 + _kFigCaptureStreamMetadata_EyesOpenConfidence
 + _kFigCaptureStreamMetadata_FaceMaskConfidenceLevel
 + _kFigVirtualCaptureCardProperty_InitialCapacityOverhead
-+ _objc_msgSend$_applyDynamicAspectRatioResetForActiveFormatChange
-+ _objc_msgSend$_dynamicAspectRatioNeedsResetForActiveFormatChange
-+ _objc_msgSend$_easeAndDrawWithDrawable:commandBuffer:easeAlpha:
-+ _objc_msgSend$_ensureSplineTextureForWidth:
-+ _objc_msgSend$_finishHandlingDidStopRecordingNotificationForWrapper:withPayload:demoof:addMetadata:errorCode:
-+ _objc_msgSend$_handleTimerFired
-+ _objc_msgSend$_pauseDisplayLink
-+ _objc_msgSend$_resumeDisplayLink
-+ _objc_msgSend$_setWhiteBalanceWithMode:whiteBalanceGains:requestID:featuresEnabled:
-+ _objc_msgSend$_setupDisplayLink
-+ _objc_msgSend$_teardownDisplayLink
-+ _objc_msgSend$blitCommandEncoder
-+ _objc_msgSend$copyFromBuffer:sourceOffset:sourceBytesPerRow:sourceBytesPerImage:sourceSize:toTexture:destinationSlice:destinationLevel:destinationOrigin:
-+ _objc_msgSend$drawPrimitives:vertexStart:vertexCount:instanceCount:
-+ _objc_msgSend$eyeWearConfidence
-+ _objc_msgSend$eyesClosedConfidence
-+ _objc_msgSend$eyesOccludedConfidence
-+ _objc_msgSend$eyesOpenConfidence
-+ _objc_msgSend$fillBuffer:range:value:
-+ _objc_msgSend$hasEyeWearConfidence
-+ _objc_msgSend$hasEyesClosedConfidence
-+ _objc_msgSend$hasEyesOccludedConfidence
-+ _objc_msgSend$hasEyesOpenConfidence
-+ _objc_msgSend$hasMaskConfidence
-+ _objc_msgSend$maskConfidence
-+ _objc_msgSend$processedPhotoAspectRatio
-+ _objc_msgSend$processedPhotoZoomWithoutUpscalingAspectRatio
-+ _objc_msgSend$setEyeWearConfidence:
-+ _objc_msgSend$setEyesClosedConfidence:
-+ _objc_msgSend$setEyesOccludedConfidence:
-+ _objc_msgSend$setEyesOpenConfidence:
-+ _objc_msgSend$setFragmentBytes:length:atIndex:
-+ _objc_msgSend$setHasEyeWearConfidence:
-+ _objc_msgSend$setHasEyesClosedConfidence:
-+ _objc_msgSend$setHasEyesOccludedConfidence:
-+ _objc_msgSend$setHasEyesOpenConfidence:
-+ _objc_msgSend$setHasMaskConfidence:
-+ _objc_msgSend$setMaskConfidence:
-+ _objc_msgSend$setOutputAspectRatioOverride:
-+ _objc_msgSend$setPreferredFrameRateRange:
-+ _objc_msgSend$setProcessedPhotoAspectRatio:
-+ _objc_msgSend$setProcessedPhotoZoomWithoutUpscalingAspectRatio:
 + _sinf
 - -[AVCaptureFigVideoDevice _setWhiteBalanceWithMode:whiteBalanceGains:requestID:]
 - -[AVCaptureVideoHistogramAnalyticsLayer _computeHistogramFromTexture:]
@@ -295,17 +191,6 @@ Symbols:
 - ___block_descriptor_48_e8_32o40o_e8_v12?0I8ls32l8s40l8
 - ___block_descriptor_72_e8_32o40o48o56r_e5_v8?0lr56l8s32l8s40l8s48l8
 - _dynamicHistogramUpdateInterval
-- _objc_msgSend$_computeHistogramFromTexture:
-- _objc_msgSend$_renderFrameToUpdate:sourceTexture:
-- _objc_msgSend$_renderInterpolatedHistogram
-- _objc_msgSend$_renderInterpolatedHistogramToDrawable:
-- _objc_msgSend$_renderInterpolatedHistogramWithBackPressureToDrawable:
-- _objc_msgSend$_setWhiteBalanceWithMode:whiteBalanceGains:requestID:
-- _objc_msgSend$_startDisplayLink
-- _objc_msgSend$_stopDisplayLink
-- _objc_msgSend$replaceRegion:mipmapLevel:withBytes:bytesPerRow:
-- _objc_msgSend$targetPresentationTimestamp
-- _objc_msgSend$thermalState
 CStrings:
 + "\n#include <metal_stdlib>\nusing namespace metal;\n\n#define HISTOGRAM_BIN_COUNT 256\n#define HISTOGRAM_CHANNEL_COUNT 4\n#define RED_CHANNEL_OFFSET 0\n#define GREEN_CHANNEL_OFFSET (HISTOGRAM_BIN_COUNT)\n#define BLUE_CHANNEL_OFFSET (HISTOGRAM_BIN_COUNT * 2)\n#define LUMA_CHANNEL_OFFSET (HISTOGRAM_BIN_COUNT * 3)\n#define SQUARE_ROOT_OF_THREE 1.73205080757\n\nenum HistogramMode {\n    Luminance       = 0,\n    CompositeRGB    = 1,\n    RGBParade       = 2\n};\n\nenum GradientInterpolation {\n    Linear = 0,\n    Logarithmic = 1,\n    Exponential = 2,\n    Sigmoid = 3\n};\n\nstruct ChannelAppearance {\n    float4 lineColor;\n    float  lineThickness;     // pixels\n    float4 fillColorStart;\n    float4 fillColorEnd;\n    float  gradientCos;       // precomputed cos of fill gradient angle\n    float  gradientSin;       // precomputed sin of fill gradient angle\n};\n\nstruct VSOut {\n    float4 position [[position]];\n    float4 color;\n    float2 uv [[user(locn0)]];\n};\n\ninline float applyGradientInterpolation(float interpolationValue, uint interpolationType)\n{\n    interpolationValue = clamp(interpolationValue, 0.0, 1.0);\n    switch (interpolationType) {\n        case Sigmoid:      return smoothstep(0.0, 1.0, interpolationValue);\n        case Exponential:  return (exp(interpolationValue) - 1.0) / (M_E_F - 1.0);\n        case Logarithmic:  return log(1.0 + interpolationValue * (M_E_F - 1.0)) / M_E_F;\n        default:           return interpolationValue;\n    }\n}\n\n// Coalesce same-bin increments within a SIMD-group into a single threadgroup atomic\ninline void coalescedLocalAdd(threadgroup atomic_uint* hist, uint index)\n{\n    for (;;) {\n        uint firstIndex = simd_broadcast_first(index);\n        bool match = (index == firstIndex);\n        uint count = simd_sum((uint)(match ? 1u : 0u));\n        if (simd_is_first()) {\n            atomic_fetch_add_explicit(&hist[firstIndex], count, memory_order_relaxed);\n        }\n        if (match) break;\n    }\n}\n\nkernel void computeHistogram(texture2d<float,access::read> sourceTexture [[texture(0)]],\n                             device atomic_uint *histogramBuffer [[buffer(0)]],\n                             constant uint &subsample [[buffer(1)]],\n                             uint2 gridId   [[thread_position_in_grid]],\n                             uint2 gridSize [[threads_per_grid]],\n                             uint  tid      [[thread_index_in_threadgroup]],\n                             uint2 tptg     [[threads_per_threadgroup]]) {\n    // Per-threadgroup histogram in on-chip memory. Per-pixel atomics hit this instead of the global buffer, so contention is confined to one threadgroup; we then merge once to global\n    threadgroup atomic_uint localHist[HISTOGRAM_BIN_COUNT * HISTOGRAM_CHANNEL_COUNT];\n\n    uint threadsPerGroup = tptg.x * tptg.y;\n    uint binTotal = uint(HISTOGRAM_BIN_COUNT * HISTOGRAM_CHANNEL_COUNT);\n\n    // Clear local bins cooperatively (all threads participate, regardless of image bounds)\n    for (uint i = tid; i < binTotal; i += threadsPerGroup) {\n        atomic_store_explicit(&localHist[i], 0u, memory_order_relaxed);\n    }\n    threadgroup_barrier(mem_flags::mem_threadgroup);\n\n    // Grid-stride over the image: each thread bins many pixels into the threadgroup-local histogram\n    uint sub = max(subsample, 1u);\n    uint imgWidth  = sourceTexture.get_width();\n    uint imgHeight = sourceTexture.get_height();\n    for (uint y = gridId.y * sub; y < imgHeight; y += gridSize.y * sub) {\n        for (uint x = gridId.x * sub; x < imgWidth; x += gridSize.x * sub) {\n            float3 color = clamp(sourceTexture.read(uint2(x, y)).rgb, 0.0, 1.0); // exact texel fetch (no filtering)\n    float luminance = 1.0 - (length(float3(1.0) - color.rgb) / SQUARE_ROOT_OF_THREE); // Evaluate against perceptual luma\n\n    uint redBin=uint(color.r*255.0), greenBin=uint(color.g*255.0), blueBin=uint(color.b*255.0), luminanceBin=uint(luminance*255.0);\n    \n            coalescedLocalAdd(localHist, RED_CHANNEL_OFFSET+redBin);\n            coalescedLocalAdd(localHist, GREEN_CHANNEL_OFFSET+greenBin);\n            coalescedLocalAdd(localHist, BLUE_CHANNEL_OFFSET+blueBin);\n            coalescedLocalAdd(localHist, LUMA_CHANNEL_OFFSET+luminanceBin);\n        }\n    }\n    threadgroup_barrier(mem_flags::mem_threadgroup);\n\n    // Merge the local histogram into global memory: one global atomic per non-empty bin.\n    for (uint i = tid; i < binTotal; i += threadsPerGroup) {\n        uint localCount = atomic_load_explicit(&localHist[i], memory_order_relaxed);\n        if (localCount > 0u) {\n            atomic_fetch_add_explicit(&histogramBuffer[i], localCount, memory_order_relaxed);\n        }\n    }\n}\n\nkernel void normalizeHistogramToTexture(device const uint* histogramBuffer [[buffer(0)]],\n                                        device float4* smoothedMaxBuffer [[buffer(1)]],\n                                        constant float &maxEaseAlpha [[buffer(2)]],\n                                        texture2d<float, access::write> outputTexture [[texture(0)]],\n                                        uint gridId [[thread_position_in_grid]],\n                                        uint tid [[thread_index_in_threadgroup]]) {\n    // One threadgroup of HISTOGRAM_BIN_COUNT threads; each owns one bin (RGBA counts).\n    threadgroup uint4 tgCounts[HISTOGRAM_BIN_COUNT];\n\n    uint4 counts = uint4( histogramBuffer[RED_CHANNEL_OFFSET   + gridId],\n                          histogramBuffer[GREEN_CHANNEL_OFFSET + gridId],\n                          histogramBuffer[BLUE_CHANNEL_OFFSET  + gridId],\n                          histogramBuffer[LUMA_CHANNEL_OFFSET  + gridId] );\n    tgCounts[tid] = counts;\n    threadgroup_barrier(mem_flags::mem_threadgroup);\n\n    // Parallel max reduction over all bins (replaces each thread re-scanning all 256).\n    for (uint stride = HISTOGRAM_BIN_COUNT / 2; stride > 0; stride >>= 1) {\n        if (tid < stride) {\n            tgCounts[tid] = max(tgCounts[tid], tgCounts[tid + stride]);\n        }\n        threadgroup_barrier(mem_flags::mem_threadgroup);\n    }\n\n    // Ease the per-channel normalization scale across ingests so a flickering or transient peak doesn't rescale the whole curve\n    threadgroup float4 tgSmoothedMax;\n    if (tid == 0) {\n        float4 instantMax = float4(max(tgCounts[0], uint4(1)));\n        float4 prevMax = smoothedMaxBuffer[0];\n        float4 smoothed = (prevMax.x <= 0.0) ? instantMax : mix(prevMax, instantMax, maxEaseAlpha);\n        smoothed = max(smoothed, float4(1.0)); // guard divide-by-zero\n        smoothedMaxBuffer[0] = smoothed;\n        tgSmoothedMax = smoothed;\n    }\n    threadgroup_barrier(mem_flags::mem_threadgroup);\n\n    float4 normalized = float4(counts) / tgSmoothedMax;\n    outputTexture.write(normalized, uint2(gridId, 0));\n}\n\n// Ease the displayed histogram toward the latest target, then Gaussian-smooth the eased curve, in a single pass\nkernel void easeAndSmoothHistogram(texture2d<float, access::read>       targetTexture    [[texture(0)]],\n                                   texture2d<float, access::read_write> displayedTexture [[texture(1)]],\n                                   texture2d<float, access::write>      smoothedTexture  [[texture(2)]],\n                                   constant float &k          [[buffer(0)]],\n                                   constant float &smoothness [[buffer(1)]],\n                                        uint gridId [[thread_position_in_grid]]) {\n    threadgroup float4 eased[HISTOGRAM_BIN_COUNT];\n\n    // Ease this bin toward the target\n    if (gridId < HISTOGRAM_BIN_COUNT) {\n        float4 target = targetTexture.read(uint2(gridId, 0));\n        float4 displayed = displayedTexture.read(uint2(gridId, 0));\n        float4 easedValue = mix(displayed, target, k);\n        displayedTexture.write(easedValue, uint2(gridId, 0));\n        eased[gridId] = easedValue;\n    }\n    threadgroup_barrier(mem_flags::mem_threadgroup);\n    if (gridId >= HISTOGRAM_BIN_COUNT) return;\n    \n    // Gaussian-smooth the eased curve, reading neighbors from on-chip memory\n    const float radius = 1.5 * (0.1 + 0.9 * smoothness); // Range: 0.15 to 1.5 (matches sampleHistSmooth)\n    const int radiusInt = int(ceil(radius));\n    const int maxBin = HISTOGRAM_BIN_COUNT - 1;\n    const int binIndex = int(gridId);\n    float4 histValue = 0.0; float weightSum = 0.0;\n    for (int offset = -radiusInt; offset <= radiusInt; ++offset) {\n        int sampledBin = binIndex + offset;\n        if (sampledBin >= 0 && sampledBin <= maxBin) {\n            float distance = abs(float(offset));\n            if (distance <= radius) {\n                float halfDistance = distance * 0.5;\n                float weight = exp(-0.5 * halfDistance * halfDistance);\n                histValue += eased[sampledBin] * weight;\n                weightSum += weight;\n    }\n}\n    }\n    smoothedTexture.write(histValue / max(weightSum, 1e-6), uint2(gridId, 0));\n}\n\ninline float channelHeight(uint channelIndex, float4 values)\n{\n    return (channelIndex==0)?values.r : (channelIndex==1)?values.g : (channelIndex==2)?values.b : values.a;\n}\n\n// Uniform Catmull-Rom interpolation through four control points (per channel).\ninline float4 catmullRom(float4 p0, float4 p1, float4 p2, float4 p3, float t)\n{\n    float t2 = t * t;\n    float t3 = t2 * t;\n    return 0.5 * ( (2.0 * p1) +\n                   (-p0 + p2) * t +\n                   (2.0 * p0 - 5.0 * p1 + 4.0 * p2 - p3) * t2 +\n                   (-p0 + 3.0 * p1 - 3.0 * p2 + p3) * t3 );\n}\n\n// Tessellate the precomputed smoothed 256-bin curve into a dense Catmull-Rom curve texture\nkernel void tessellateHistogramSpline(texture2d<float, access::read>   smoothedTexture [[texture(0)]],\n                                      texture2d<float, access::write>  splineTexture   [[texture(1)]],\n                                      uint gridId [[thread_position_in_grid]]) {\n    uint outWidth = splineTexture.get_width();\n    if (gridId >= outWidth) return;\n\n    // Map this output texel onto continuous control-point space [0, N-1].\n    float srcPos = float(gridId) / float(outWidth - 1) * float(HISTOGRAM_BIN_COUNT - 1);\n    int i1 = int(floor(srcPos));\n    float t = srcPos - float(i1);\n\n    // Four control points around the segment (clamped at the ends).\n    int i0 = max(i1 - 1, 0);\n    int i2 = min(i1 + 1, HISTOGRAM_BIN_COUNT - 1);\n    int i3 = min(i1 + 2, HISTOGRAM_BIN_COUNT - 1);\n\n    float4 p0 = smoothedTexture.read(uint2(i0, 0));\n    float4 p1 = smoothedTexture.read(uint2(i1, 0));\n    float4 p2 = smoothedTexture.read(uint2(i2, 0));\n    float4 p3 = smoothedTexture.read(uint2(i3, 0));\n\n    float4 interpolated = catmullRom(p0, p1, p2, p3, t);\n    interpolated = clamp(interpolated, 0.0, 1.0); // guard against spline overshoot\n    splineTexture.write(interpolated, uint2(gridId, 0));\n}\n\ninline float normalizedDeviceCoordinateXFromBin(uint binIndex, uint count, uint channelIndex, uint histogramMode)\n{\n    if (histogramMode == RGBParade) {\n        // Add small gaps between channels in parade mode\n        const float gapWidth = 0.025; // Small gap between channels (1.25% of total width per gap)\n        const float totalGapWidth = gapWidth * 2.0; // Two gaps (between channels)\n        const float availableWidth = 2.0 - totalGapWidth;\n        const float channelWidth = availableWidth / 3.0;\n        \n        float channelOffset = -1.0 + (float(channelIndex) * (channelWidth + gapWidth));\n        return channelOffset + (channelWidth * float(binIndex) / float(count - 1));\n    }\n    return -1.0 + (2.0 * float(binIndex) / float(count - 1));\n}\n\ninline float normalizedDeviceCoordinateYFromHeight(float height)\n{\n    return -1.0 + height * 1.8; // bottom anchored\n}\n\nvertex VSOut histogramVertex_Fill(uint vertexId [[vertex_id]],\n                                  uint instanceId [[instance_id]],\n                                  texture2d<float, access::sample> histogram [[texture(0)]],\n                                  texture2d<float, access::sample> splineHistogram [[texture(1)]],\n                                  constant float2 &drawableSize           [[buffer(0)]],\n                                  constant uint &histogramMode            [[buffer(1)]],\n                                  constant uint &channelIndex             [[buffer(2)]],\n                                  constant ChannelAppearance &appearance  [[buffer(3)]],\n                                  constant float &displayScale            [[buffer(4)]],\n                                  constant uint &numberOfBars             [[buffer(5)]])\n{\n    VSOut output;\n    \n    // Check if we should render bars (numberOfBars > 1) or solid curve\n    if (numberOfBars > 1) {\n        // Calculate bars per channel based on histogram mode\n        uint barsPerChannel;\n        if (histogramMode == RGBParade) {\n            // In parade modes, divide total bars among 3 channels\n            barsPerChannel = numberOfBars / 3;\n        } else {\n            // In other modes, use all bars for the single display\n            barsPerChannel = numberOfBars;\n        }\n        \n        // Render histogram as bars - configurable number of bars per channel\n        const uint numBars = barsPerChannel;\n        const uint binsPerBar = HISTOGRAM_BIN_COUNT / numBars;\n        \n        // Calculate which bar and which vertex within that bar\n        uint barIndex = instanceId;       // one instance per bar\n        uint vertexInBar = vertexId;\n        \n        // If we exceed the number of bars, return degenerate vertex\n        if (barIndex >= numBars) {\n            output.position = float4(0.0, 0.0, 0.0, 1.0);\n            output.uv = float2(0.0, 0.0);\n            output.color = float4(0.0, 0.0, 0.0, 0.0);\n            return output;\n        }\n        \n        // Sample histogram data for this bar - average across multiple bins\n        float totalValue = 0.0;\n        uint startBin = barIndex * binsPerBar;\n        uint endBin = min(startBin + binsPerBar, uint(HISTOGRAM_BIN_COUNT));\n        \n        for (uint binIndex = startBin; binIndex < endBin; binIndex++) {\n            float4 histogramValues = histogram.read(uint2(binIndex, 0));\n            totalValue += channelHeight(channelIndex, histogramValues);\n        }\n        float averageHeight = totalValue / float(endBin - startBin);\n        \n        // Calculate bar layout based on histogram mode\n        float channelWidth, channelOffset;\n        \n        if (histogramMode == RGBParade) {\n            // Add small gaps between channels in parade mode (matching normalizedDeviceCoordinateXFromBin)\n            const float gapWidth = 0.025; // Small gap between channels (1.25% of total width per gap)\n            const float totalGapWidth = gapWidth * 2.0; // Two gaps\n            const float availableWidth = 2.0 - totalGapWidth;\n            channelWidth = availableWidth / 3.0;\n            channelOffset = -1.0 + (float(channelIndex) * (channelWidth + gapWidth));\n        } else {\n            channelWidth = 2.0;  // Full width\n            channelOffset = -1.0; // Starting position\n        }\n        \n        // Calculate bar dimensions with spacing\n        const float spacingRatio = 0.3; // 30% spacing between bars (3x the original 10%)\n        const float barWidth = (channelWidth * (1.0 - spacingRatio)) / float(numBars);\n        const float barSpacing = (channelWidth * spacingRatio) / float(numBars + 1);\n        \n        // Calculate bar position\n        float barCenterX = channelOffset + barSpacing + (barWidth * 0.5) + (float(barIndex) * (barWidth + barSpacing));\n        \n        // Calculate bar height based on histogram data (bottom-anchored)\n        float baseY = -0.9;  // Bottom baseline\n        float maxHeight = 1.7; // Maximum bar height in NDC\n        float barTop = baseY + (averageHeight * maxHeight);\n        \n        // Triangle strip vertices for each bar: 0: bottom-left, 1: bottom-right, 2: top-left, 3: top-right\n        float2 positions[4] = {\n            float2(barCenterX - barWidth * 0.5, baseY),    // bottom-left\n            float2(barCenterX + barWidth * 0.5, baseY),    // bottom-right\n            float2(barCenterX - barWidth * 0.5, barTop),   // top-left\n            float2(barCenterX + barWidth * 0.5, barTop)    // top-right\n        };\n        \n        // UV coordinates for gradient application\n        float2 uvs[4] = {\n            float2(0.0, 0.0), // bottom-left\n            float2(1.0, 0.0), // bottom-right\n            float2(0.0, 1.0), // top-left\n            float2(1.0, 1.0)  // top-right\n        };\n        \n        output.position = float4(positions[vertexInBar], 0.0, 1.0);\n        output.uv = uvs[vertexInBar];\n        \n        // Apply gradient based on appearance settings\n        float gradientT;\n        float positionFactor = float(barIndex) / float(numBars - 1);\n        float heightFactor = (vertexInBar >= 2) ? averageHeight : 0.0; // Top vertices use height\n        \n        // Calculate gradient direction from angle\n        float cosAngle = appearance.gradientCos;\n        float sinAngle = appearance.gradientSin;\n        \n        // Interpolate based on angle: 0° (horizontal) = pure positionFactor, 90° (vertical) = pure heightFactor\n        gradientT = cosAngle * positionFactor + sinAngle * (1.0 - heightFactor);\n        gradientT = clamp(gradientT, 0.0, 1.0);\n        \n        // Determine interpolation type based on dominant direction\n        uint interpolationType = (abs(cosAngle) > abs(sinAngle)) ? Linear : Sigmoid;\n        \n        gradientT = applyGradientInterpolation(gradientT, interpolationType);\n        output.color = mix(appearance.fillColorStart, appearance.fillColorEnd, gradientT);\n        return output;\n    }\n    \n    // Smooth Catmull-Rom curve sampled from the pre-tessellated high-res spline texture\n    uint splineWidth = splineHistogram.get_width();\n    uint sampleIndex = vertexId >> 1;\n    uint vertexSide = vertexId & 1u;\n\n    float4 splineValues = splineHistogram.read(uint2(min(sampleIndex, splineWidth - 1), 0));\n    float  heightValue  = channelHeight(channelIndex, splineValues);\n\n    float  ndcXPosition   = normalizedDeviceCoordinateXFromBin(sampleIndex, splineWidth, channelIndex, histogramMode);\n    float  yCurvePosition = normalizedDeviceCoordinateYFromHeight(heightValue);\n    float  yBasePosition  = normalizedDeviceCoordinateYFromHeight(0.0);\n\n    output.position = float4(ndcXPosition, (vertexSide==0)? yBasePosition : yCurvePosition, 0, 1);\n    output.uv = float2(0.5, 0.5); // Default UV for non-bar rendering\n\n    float positionFactor = float(sampleIndex) / float(splineWidth - 1);\n    float heightFactor = (vertexSide == 0) ? 0.0 : heightValue;\n\n    // Calculate gradient direction from angle\n    float cosAngle = appearance.gradientCos;\n    float sinAngle = appearance.gradientSin;\n    \n    // Interpolate based on angle: 0° (horizontal) = pure positionFactor, 90° (vertical) = pure heightFactor\n    float gradientT = cosAngle * positionFactor + sinAngle * (1.0 - heightFactor);\n    gradientT = clamp(gradientT, 0.0, 1.0);\n    \n    // Determine interpolation type based on dominant direction\n    uint interpolationType = (abs(cosAngle) > abs(sinAngle)) ? Linear : Sigmoid;\n    \n    gradientT = applyGradientInterpolation(gradientT, interpolationType);\n    output.color = mix(appearance.fillColorStart, appearance.fillColorEnd, gradientT);\n    return output;\n}\n\nvertex VSOut histogramVertex_Line(uint vertexId [[vertex_id]],\n                                  uint instanceId [[instance_id]],\n                                  texture2d<float, access::sample> histogram [[texture(0)]],\n                                  texture2d<float, access::sample> splineHistogram [[texture(1)]],\n                                  constant float2 &drawableSize           [[buffer(0)]],\n                                  constant uint &histogramMode            [[buffer(1)]],\n                                  constant uint &channelIndex             [[buffer(2)]],\n                                  constant ChannelAppearance &appearance  [[buffer(3)]],\n                                  constant float &displayScale            [[buffer(4)]],\n                                  constant uint &numberOfBars             [[buffer(5)]])\n{\n    VSOut output;\n\n    // Check if we should render bars (numberOfBars > 1) or solid curve\n    if (numberOfBars > 1) {\n        // Calculate bars per channel based on histogram mode\n        uint barsPerChannel;\n        if (histogramMode == RGBParade) {\n            // In parade modes, divide total bars among 3 channels\n            barsPerChannel = numberOfBars / 3;\n        } else {\n            // In other modes, use all bars for the single display\n            barsPerChannel = numberOfBars;\n        }\n        \n        // For bar mode, render outlines around each bar\n        const uint numBars = barsPerChannel;\n        const uint binsPerBar = HISTOGRAM_BIN_COUNT / numBars;\n        \n        // Each bar outline uses 8 vertices (4 vertices * 2 for line strip)\n        uint barIndex = instanceId;\n        uint vertexInBarOutline = vertexId;\n        \n        // If we exceed the number of bars, return degenerate vertex\n        if (barIndex >= numBars) {\n            output.position = float4(0.0, 0.0, 0.0, 1.0);\n            output.uv = float2(0.0, 0.0);\n            output.color = float4(0.0, 0.0, 0.0, 0.0); // Transparent\n            return output;\n        }\n        \n        // Sample histogram data for this bar - average across multiple bins\n        float totalValue = 0.0;\n        uint startBin = barIndex * binsPerBar;\n        uint endBin = min(startBin + binsPerBar, uint(HISTOGRAM_BIN_COUNT));\n        \n        for (uint binIndex = startBin; binIndex < endBin; binIndex++) {\n            float4 histogramValues = histogram.read(uint2(binIndex, 0));\n            totalValue += channelHeight(channelIndex, histogramValues);\n        }\n        float averageHeight = totalValue / float(endBin - startBin);\n        \n        // Calculate bar layout based on histogram mode\n        float channelWidth, channelOffset;\n        \n        if (histogramMode == RGBParade) {\n            // Add small gaps between channels in parade mode (matching normalizedDeviceCoordinateXFromBin)\n            const float gapWidth = 0.025; // Small gap between channels (1.25% of total width per gap)\n            const float totalGapWidth = gapWidth * 2.0; // Two gaps\n            const float availableWidth = 2.0 - totalGapWidth;\n            channelWidth = availableWidth / 3.0;\n            channelOffset = -1.0 + (float(channelIndex) * (channelWidth + gapWidth));\n        } else {\n            channelWidth = 2.0;  // Full width\n            channelOffset = -1.0; // Starting position\n        }\n        \n        // Calculate bar dimensions with spacing\n        const float spacingRatio = 0.3; // 30% spacing between bars (3x the original 10%)\n        const float barWidth = (channelWidth * (1.0 - spacingRatio)) / float(numBars);\n        const float barSpacing = (channelWidth * spacingRatio) / float(numBars + 1);\n        \n        // Calculate bar position\n        float barCenterX = channelOffset + barSpacing + (barWidth * 0.5) + (float(barIndex) * (barWidth + barSpacing));\n        \n        // Calculate bar height based on histogram data (bottom-anchored)\n        float baseY = -0.9;  // Bottom baseline\n        float maxHeight = 1.7; // Maximum bar height in NDC\n        float barTop = baseY + (averageHeight * maxHeight);\n        \n        // Define bar corners\n        float leftX = barCenterX - (barWidth * 0.5);\n        float rightX = barCenterX + (barWidth * 0.5);\n        \n        // Generate outline vertices\n        float2 outlinePositions[8] = {\n            float2(leftX, baseY),          // 0: bottom-left\n            float2(rightX, baseY),         // 1: bottom-right\n            float2(rightX, barTop),        // 2: top-right\n            float2(leftX, barTop),         // 3: top-left\n            float2(leftX, baseY),          // 4: back to bottom-left (close rectangle)\n            float2(leftX, baseY),          // 5: degenerate vertex\n            float2(leftX, baseY),          // 6: degenerate vertex\n            float2(leftX, baseY)           // 7: degenerate vertex\n        };\n        \n        output.position = float4(outlinePositions[vertexInBarOutline], 0.0, 1.0);\n        output.uv = float2(0.5, 0.5);\n        output.color = appearance.lineColor;\n        return output;\n    }\n    \n    // Smooth Catmull-Rom curve perimeter sampled from the high-res spline texture (no bottom edge) Total vertices: left edge + curve + right edge (no bottom edge)\n    uint splineWidth = splineHistogram.get_width();\n    uint totalVertices = splineWidth * 2 + 4; // curve + left/right edges only\n    uint sampleIndex;\n    float lineThicknessSide;\n    float currentXPosition, currentYPosition;\n    \n    float2 pixelsToNdc = float2(2.0 / max(drawableSize.x, 1.0), 2.0 / max(drawableSize.y, 1.0));\n\n    if (vertexId < 2) {\n        // First 2 vertices: left edge from bottom to curve start (with inset)\n        sampleIndex = 0;\n        float4 splineValues = splineHistogram.read(uint2(0, 0));\n        float heightValue = channelHeight(channelIndex, splineValues);\n        \n        // Apply 1-pixel inset to X position\n        float baseXPosition = normalizedDeviceCoordinateXFromBin(0, splineWidth, channelIndex, histogramMode);\n        float insetNDC = (1.0 * displayScale) * pixelsToNdc.x; // 1 pixel inset\n        currentXPosition = baseXPosition + insetNDC;\n        \n        lineThicknessSide = (vertexId & 1u) ? 1.0 : -1.0;\n        currentYPosition = (vertexId == 0) ? normalizedDeviceCoordinateYFromHeight(0.0)         // bottom\n                                           : normalizedDeviceCoordinateYFromHeight(heightValue); // curve start\n    } else if (vertexId >= totalVertices - 2) {\n        // Last 2 vertices: right edge from curve end to bottom (with inset)\n        sampleIndex = splineWidth - 1;\n        float4 splineValues = splineHistogram.read(uint2(splineWidth - 1, 0));\n        float heightValue = channelHeight(channelIndex, splineValues);\n        \n        // Apply 1-pixel inset to X position\n        float baseXPosition = normalizedDeviceCoordinateXFromBin(splineWidth - 1, splineWidth, channelIndex, histogramMode);\n        float insetNDC = (1.0 * displayScale) * pixelsToNdc.x; // 1 pixel inset\n        currentXPosition = baseXPosition - insetNDC;\n        \n        uint edgeVertexId = vertexId - (totalVertices - 2);\n        lineThicknessSide = (edgeVertexId & 1u) ? 1.0 : -1.0;\n        currentYPosition = (edgeVertexId == 0) ? normalizedDeviceCoordinateYFromHeight(heightValue) // curve end\n                                               : normalizedDeviceCoordinateYFromHeight(0.0);        // bottom\n        } else {\n        // Middle vertices: trace the smooth spline curve\n        uint adjustedVertexId = vertexId - 2;\n        sampleIndex = adjustedVertexId >> 1;\n        lineThicknessSide = (adjustedVertexId & 1u) ? 1.0 : -1.0;\n        \n        float4 splineValues = splineHistogram.read(uint2(min(sampleIndex, splineWidth - 1), 0));\n        float currentYValue = channelHeight(channelIndex, splineValues);\n        currentXPosition = normalizedDeviceCoordinateXFromBin(sampleIndex, splineWidth, channelIndex, histogramMode);\n        currentYPosition = normalizedDeviceCoordinateYFromHeight(currentYValue);\n    }\n\n    // Calculate normal for line thickness\n    float2 tangent, normal;\n    \n    if (vertexId < 2 || vertexId >= totalVertices - 2) {\n        // For edge vertices, use horizontal normal for vertical lines\n        tangent = float2(0.0, 1.0);\n        normal = (vertexId < 2) ? float2(1.0, 0.0)    // Left edge normal points right\n                                : float2(-1.0, 0.0);  // Right edge normal points left\n        } else {\n        // Curve vertices: finite-difference the dense spline for the tangent\n        int previousIndex = max(int(sampleIndex) - 1, 0);\n        int nextIndex = min(int(sampleIndex) + 1, int(splineWidth) - 1);\n\n        float4 previousValues = splineHistogram.read(uint2(previousIndex, 0));\n        float4 nextValues = splineHistogram.read(uint2(nextIndex, 0));\n        float previousYValue = channelHeight(channelIndex, previousValues);\n        float nextYValue = channelHeight(channelIndex, nextValues);\n\n        float previousXPosition = normalizedDeviceCoordinateXFromBin((uint)previousIndex, splineWidth, channelIndex, histogramMode);\n        float nextXPosition = normalizedDeviceCoordinateXFromBin((uint)nextIndex, splineWidth, channelIndex, histogramMode);\n        float previousYPosition = normalizedDeviceCoordinateYFromHeight(previousYValue);\n        float nextYPosition = normalizedDeviceCoordinateYFromHeight(nextYValue);\n        \n        tangent = normalize(float2(nextXPosition - previousXPosition, nextYPosition - previousYPosition) + float2(1e-6, 0.0));\n        normal = normalize(float2(-tangent.y, tangent.x));\n    }\n\n    float scaledThickness = appearance.lineThickness * displayScale;\n    float halfThickness = 0.5 * max(scaledThickness, 1.0);\n    float2 thicknessOffset = normal * halfThickness * pixelsToNdc;\n\n    output.position = float4(currentXPosition + lineThicknessSide * thicknessOffset.x,\n                           currentYPosition + lineThicknessSide * thicknessOffset.y, 0, 1);\n    output.uv = float2(2.0, lineThicknessSide); // uv.x > 1 means AA. lineThicknessSide = ±1.0\n    output.color = appearance.lineColor;\n    return output;\n}\n\nfragment float4 histogramFragment(VSOut in [[stage_in]],\n                                  constant ChannelAppearance &appearance [[buffer(3)]])\n{\n    float isFill = 1.0 - step(0.0, in.uv.x);\n    float gradientT = clamp(1.0 - in.uv.y / 0.75, 0.0, 1.0);\n    float4 fillColor = mix(appearance.fillColorStart, appearance.fillColorEnd, gradientT);\n    float4 color = mix(in.color, fillColor, isFill);\n\n    if (color.a <= 0.001) {\n        discard_fragment();\n    }\n\n    float isAA = step(1.5, in.uv.x);\n    float d = abs(in.uv.y);\n    float aa = 1.0 - smoothstep(0.5, 1.0, d);\n    color.a *= mix(1.0, aa, isAA);\n    color.rgb *= mix(color.a, 1.0, isAA);\n\n    return color;\n}\n"
 + " processed-photo-AR:%.3f"

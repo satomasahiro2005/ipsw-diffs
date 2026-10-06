@@ -2,99 +2,55 @@
 
 > `/System/Library/PreferenceBundles/SiriSettings.bundle/SiriSettings`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xff98` | `0x10758` | **`+0x7c0`** |
+| `__TEXT.__swift5_typeref` | `0x29b` | `0x37b` | **`+0xe0`** |
+| `__TEXT.__auth_stubs` | `0xd50` | `0xdd0` | **`+0x80`** |
+| `__TEXT.__const` | `0x7f8` | `0x852` | **`+0x5a`** |
+| `__DATA.__data` | `0x6a0` | `0x6f8` | **`+0x58`** |
+| `__DATA_CONST.__auth_got` | `0x6b8` | `0x6f8` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x160` | `0x198` | **`+0x38`** |
+| `__DATA_CONST.__auth_ptr` | `0x2b0` | `0x2e0` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x7c0` | `0x7f0` | **`+0x30`** |
+| `__TEXT.__eh_frame` | `0x5f8` | `0x5d0` | **`-0x28`** |
+| `__TEXT.__swift5_reflstr` | `0xe6` | `0x107` | **`+0x21`** |
+| `__TEXT.__swift5_capture` | `0xa4` | `0x94` | **`-0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x124` | `0x130` | **`+0xc`** |
+| `__TEXT.__unwind_info` | `0x490` | `0x488` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__objc_classlist`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
 - `__TEXT.__swift5_builtin`
 - `__TEXT.__swift5_proto`
 - `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
+
+### Other Changes
 
 ```diff
 
 -3605.24.1.1.2
--  __TEXT.__text: 0xf61c
--  __TEXT.__auth_stubs: 0xd50
 +3605.26.3.0.0
-+  __TEXT.__text: 0xfd98
-+  __TEXT.__auth_stubs: 0xdd0
-   __TEXT.__objc_stubs: 0x780
-   __TEXT.__objc_methlist: 0x194
--  __TEXT.__const: 0x7f8
-+  __TEXT.__const: 0x852
-   __TEXT.__gcc_except_tab: 0x38
-   __TEXT.__objc_classname: 0x14c
-   __TEXT.__objc_methtype: 0x199
-   __TEXT.__cstring: 0x59f
-   __TEXT.__dlopen_cstrs: 0xae
-   __TEXT.__objc_methname: 0x795
--  __TEXT.__swift5_typeref: 0x29b
--  __TEXT.__swift5_capture: 0xa4
-+  __TEXT.__swift5_typeref: 0x37b
-+  __TEXT.__swift5_capture: 0x94
-   __TEXT.__constg_swiftt: 0x3d4
--  __TEXT.__swift5_reflstr: 0xe6
--  __TEXT.__swift5_fieldmd: 0x124
-+  __TEXT.__swift5_reflstr: 0x107
-+  __TEXT.__swift5_fieldmd: 0x130
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_proto: 0x38
-   __TEXT.__swift5_types: 0x34
 
-   __TEXT.__oslogstring: 0x1b2
-   __TEXT.__swift5_assocty: 0x30
-   __TEXT.__unwind_info: 0x5d8
--  __TEXT.__eh_frame: 0x5f8
--  __DATA_CONST.__const: 0x7c0
-+  __TEXT.__eh_frame: 0x5d0
-+  __DATA_CONST.__const: 0x7f0
-   __DATA_CONST.__cfstring: 0x1e0
-   __DATA_CONST.__objc_classlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__auth_got: 0x6b8
--  __DATA_CONST.__got: 0x160
--  __DATA_CONST.__auth_ptr: 0x2b0
-+  __DATA_CONST.__auth_got: 0x6f8
-+  __DATA_CONST.__got: 0x198
-+  __DATA_CONST.__auth_ptr: 0x2e0
-   __DATA.__objc_const: 0x6a0
-   __DATA.__objc_selrefs: 0x288
-   __DATA.__objc_ivar: 0x4
-   __DATA.__objc_data: 0xf0
--  __DATA.__data: 0x6a0
-+  __DATA.__data: 0x6f8
-   __DATA.__common: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/Intents.framework/Intents
 +  - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/PrivateFrameworks/AAAFoundationSwift.framework/AAAFoundationSwift
-   - /System/Library/PrivateFrameworks/AppConduit.framework/AppConduit
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 370
 -  Symbols:   1262
 +  Functions: 376
 +  Symbols:   1314
-   CStrings:  181
- 
 Symbols:
 + _$s12SiriSettings09AppAccessB8ProviderCAC0A5Setup0cdB9ProvidingAAWlTm
 + _$s12SiriSettings09AssistantB10ExperienceV4bodyQrvg7SwiftUI19_ConditionalContentVy0A5Setup0aB4ViewPAHE04siriB9ModifiersQryFQOyAH014RestrictAccessK0V_Qo_AE05EmptyK0VGycfU1_

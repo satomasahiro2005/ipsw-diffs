@@ -2,76 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/CoreAccessories.framework/Support/accessoryd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__gcc_except_tab`
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x19cc00` | `0x19fdb0` | **`+0x31b0`** |
+| `__TEXT.__oslogstring` | `0x3809a` | `0x390eb` | **`+0x1051`** |
+| `__TEXT.__cstring` | `0xe323` | `0xe5f5` | **`+0x2d2`** |
+| `__DATA_CONST.__const` | `0xa230` | `0xa2d8` | **`+0xa8`** |
+| `__DATA_CONST.__cfstring` | `0x7340` | `0x73c0` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x47e0` | `0x4830` | **`+0x50`** |
+| `__TEXT.__objc_methtype` | `0x321c` | `0x324c` | **`+0x30`** |
+| `__TEXT.__objc_methname` | `0xfeab` | `0xfed6` | **`+0x2b`** |
+| `__DATA_CONST.__got` | `0xed8` | `0xef8` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x6e8c` | `0x6eac` | **`+0x20`** |
+| `__DATA.__objc_const` | `0xb078` | `0xb080` | **`+0x8`** |
+| `__DATA.__objc_selrefs` | `0x33b8` | `0x33c0` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__gcc_except_tab`
+
+### Other Changes
 
 ```diff
 
- 1216.2.2.0.0
--  __TEXT.__text: 0x19cc00
-+  __TEXT.__text: 0x19fdb0
-   __TEXT.__auth_stubs: 0x1890
-   __TEXT.__objc_stubs: 0x95c0
--  __TEXT.__objc_methlist: 0x6e8c
-+  __TEXT.__objc_methlist: 0x6eac
-   __TEXT.__const: 0x2110
-   __TEXT.__gcc_except_tab: 0x2110
-   __TEXT.__objc_classname: 0xfd3
--  __TEXT.__objc_methname: 0xfeab
--  __TEXT.__objc_methtype: 0x321c
--  __TEXT.__cstring: 0xe323
--  __TEXT.__oslogstring: 0x3809a
-+  __TEXT.__objc_methname: 0xfed6
-+  __TEXT.__objc_methtype: 0x324c
-+  __TEXT.__cstring: 0xe5f5
-+  __TEXT.__oslogstring: 0x390eb
-   __TEXT.__ustring: 0x232
--  __TEXT.__unwind_info: 0x47e0
--  __DATA_CONST.__const: 0xa230
--  __DATA_CONST.__cfstring: 0x7340
-+  __TEXT.__unwind_info: 0x4830
-+  __DATA_CONST.__const: 0xa2d8
-+  __DATA_CONST.__cfstring: 0x73c0
-   __DATA_CONST.__objc_classlist: 0x318
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x178
-
-   __DATA_CONST.__objc_arrayobj: 0xd8
-   __DATA_CONST.__objc_intobj: 0x108
-   __DATA_CONST.__auth_got: 0xc58
--  __DATA_CONST.__got: 0xed8
-+  __DATA_CONST.__got: 0xef8
-   __DATA_CONST.__auth_ptr: 0x98
--  __DATA.__objc_const: 0xb078
--  __DATA.__objc_selrefs: 0x33b8
-+  __DATA.__objc_const: 0xb080
-+  __DATA.__objc_selrefs: 0x33c0
-   __DATA.__objc_ivar: 0x7a0
-   __DATA.__objc_data: 0x1ef0
-   __DATA.__data: 0x1940
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libsysdiagnose.dylib
 -  Functions: 8661
 -  Symbols:   11669
 -  CStrings:  8652
 +  Functions: 8706
 +  Symbols:   11697
 +  CStrings:  8722
- 
 Symbols:
 + -[ACCTransportPluginManager endpointForConnectionWithUUID:forProtocol:]
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/CoreAccessories/install/Symbols/BuiltProducts/libAccessoryCore.a(ccm-decrypt-019ae603d8dc1916f3f174dbee15c627.o)

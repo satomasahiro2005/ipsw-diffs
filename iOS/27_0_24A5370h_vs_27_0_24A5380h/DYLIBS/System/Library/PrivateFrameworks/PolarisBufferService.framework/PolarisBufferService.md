@@ -2,38 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/PolarisBufferService.framework/PolarisBufferService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5d1e4` | `0x5d3f4` | **`+0x210`** |
+| `__TEXT.__oslogstring` | `0xa8b2` | `0xa99e` | **`+0xec`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x5d1e4
-+  __TEXT.__text: 0x5d3f4
-   __TEXT.__const: 0x171c
-   __TEXT.__gcc_except_tab: 0x2d70
-   __TEXT.__cstring: 0x7a49
--  __TEXT.__oslogstring: 0xa8b2
-+  __TEXT.__oslogstring: 0xa99e
-   __TEXT.__unwind_info: 0x1d98
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+-256.0.2.500.1
++256.0.3.0.0
 
-   - /usr/lib/libobjc.A.dylib
-   Functions: 1993
-   Symbols:   5500
--  CStrings:  1567
-+  CStrings:  1570
- 
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
+-  CStrings:  1540
++  CStrings:  1543
 Symbols:
 + __Z24handle_allocate_resourceP19resfact_alloc_msg_tjP17PSResourceFactoryPK16ps_caller_info_t
 + __ZN17PSResourceFactory18handle_client_diedEP25resfact_client_died_msg_tPK16ps_caller_info_t
@@ -59,5 +47,4 @@ CStrings:
 + "Jun 27 2026"
 - "21:58:35"
 - "Jun 16 2026"
-
 ```

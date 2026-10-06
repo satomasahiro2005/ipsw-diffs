@@ -2,77 +2,40 @@
 
 > `/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x276490` | `0x272dc0` | **`-0x36d0`** |
+| `__AUTH_CONST.__const` | `0x11a30` | `0x115a8` | **`-0x488`** |
+| `__AUTH.__objc_data` | `0x6e0` | `0x280` | **`-0x460`** |
+| `__DATA_DIRTY.__objc_data` | `0x140` | `0x5a0` | **`+0x460`** |
+| `__TEXT.__cstring` | `0x2576e` | `0x25373` | **`-0x3fb`** |
+| `__AUTH_CONST.__cfstring` | `0x6060` | `0x5c80` | **`-0x3e0`** |
+| `__TEXT.__realtime` | `0x29ba4` | `0x29884` | **`-0x320`** |
+| `__DATA_CONST.__const` | `0x3540` | `0x32e8` | **`-0x258`** |
+| `__TEXT.__unwind_info` | `0xcbf8` | `0xca80` | **`-0x178`** |
+| `__DATA.__bss` | `0x2460` | `0x2340` | **`-0x120`** |
+| `__TEXT.__oslogstring` | `0x398a1` | `0x397ac` | **`-0xf5`** |
+| `__TEXT.__dlopen_cstrs` | `0x8a5` | `0x7f9` | **`-0xac`** |
+| `__AUTH_CONST.__auth_got` | `0x1bd8` | `0x1c30` | **`+0x58`** |
+| `__TEXT.__gcc_except_tab` | `0x2328c` | `0x23234` | **`-0x58`** |
+| `__DATA_DIRTY.__bss` | `0x398` | `0x3a8` | **`+0x10`** |
+| `__TEXT.__const` | `0x494c` | `0x493c` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -1638.209.1.0.0
--  __TEXT.__text: 0x270868
--  __TEXT.__realtime: 0x29810
 +1638.211.0.0.0
-+  __TEXT.__text: 0x26d208
-+  __TEXT.__realtime: 0x29514
-   __TEXT.__delay_stubs: 0x100
-   __TEXT.__delay_helper: 0x148
-   __TEXT.__objc_methlist: 0x205c
--  __TEXT.__const: 0x494c
--  __TEXT.__dlopen_cstrs: 0x8a5
--  __TEXT.__gcc_except_tab: 0x2328c
--  __TEXT.__cstring: 0x2576e
--  __TEXT.__oslogstring: 0x398a1
--  __TEXT.__unwind_info: 0xd7a8
-+  __TEXT.__const: 0x493c
-+  __TEXT.__dlopen_cstrs: 0x7f9
-+  __TEXT.__gcc_except_tab: 0x23234
-+  __TEXT.__cstring: 0x25373
-+  __TEXT.__oslogstring: 0x397ac
-+  __TEXT.__unwind_info: 0xd610
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3540
-+  __DATA_CONST.__const: 0x32e8
-   __DATA_CONST.__objc_classlist: 0xd0
-   __DATA_CONST.__objc_protolist: 0x98
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   __DATA_CONST.__objc_superrefs: 0xb8
-   __DATA_CONST.__objc_arraydata: 0x3a8
-   __DATA_CONST.__got: 0xdf0
--  __AUTH_CONST.__const: 0x11a30
--  __AUTH_CONST.__cfstring: 0x6060
-+  __AUTH_CONST.__const: 0x115a8
-+  __AUTH_CONST.__cfstring: 0x5c80
-   __AUTH_CONST.__objc_const: 0x30f0
-   __AUTH_CONST.__weak_auth_got: 0x38
-   __AUTH_CONST.__objc_intobj: 0x5e8
-   __AUTH_CONST.__objc_arrayobj: 0x510
--  __AUTH_CONST.__auth_got: 0x1bd8
--  __AUTH.__objc_data: 0x6e0
-+  __AUTH_CONST.__auth_got: 0x1c30
-+  __AUTH.__objc_data: 0x280
-   __AUTH.__data: 0x28
-   __DATA.__objc_ivar: 0x204
-   __DATA.__data: 0x88c
--  __DATA_DIRTY.__objc_data: 0x140
-+  __DATA_DIRTY.__objc_data: 0x5a0
-   __DATA_DIRTY.__data: 0x4c
--  __DATA_DIRTY.__bss: 0x398
-+  __DATA_DIRTY.__bss: 0x3a8
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreAudio.framework/CoreAudio
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 10060
 -  Symbols:   16472
 -  CStrings:  7576
 +  Functions: 9934
 +  Symbols:   16314
 +  CStrings:  7529
- 
 Symbols:
 + GCC_except_table1000
 + GCC_except_table10001

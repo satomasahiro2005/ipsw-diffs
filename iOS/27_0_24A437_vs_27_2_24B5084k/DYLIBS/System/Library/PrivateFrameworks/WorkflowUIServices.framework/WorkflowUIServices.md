@@ -2,95 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/WorkflowUIServices.framework/WorkflowUIServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x109c24` | `0x10b1c8` | **`+0x15a4`** |
+| `__AUTH_CONST.__const` | `0x96c8` | `0x9ee8` | **`+0x820`** |
+| `__TEXT.__cstring` | `0x3ce7` | `0x4248` | **`+0x561`** |
+| `__TEXT.__swift5_capture` | `0x12c0` | `0x1600` | **`+0x340`** |
+| `__TEXT.__objc_methlist` | `0x5ee4` | `0x5f3c` | **`+0x58`** |
+| `__TEXT.__unwind_info` | `0x4650` | `0x4690` | **`+0x40`** |
+| `__AUTH_CONST.__objc_const` | `0xc930` | `0xc968` | **`+0x38`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4390` | `0x43c8` | **`+0x38`** |
+| `__TEXT.__swift5_typeref` | `0x74ea` | `0x751a` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x1490` | `0x1470` | **`-0x20`** |
+| `__TEXT.__const` | `0xa650` | `0xa630` | **`-0x20`** |
+| `__DATA.__data` | `0x4c40` | `0x4c30` | **`-0x10`** |
+| `__DATA.__common` | `0xc8` | `0xd0` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x1598` | `0x15a0` | **`+0x8`** |
+| `__TEXT.__eh_frame` | `0x3f48` | `0x3f50` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x640` | `0x644` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -5037.109.0.0.0
--  __TEXT.__text: 0x100038
--  __TEXT.__objc_methlist: 0x5ee4
--  __TEXT.__const: 0xa650
 +5110.0.8.0.0
-+  __TEXT.__text: 0x101570
-+  __TEXT.__objc_methlist: 0x5f3c
-+  __TEXT.__const: 0xa630
-   __TEXT.__dlopen_cstrs: 0x23d
--  __TEXT.__swift5_typeref: 0x74ea
-+  __TEXT.__swift5_typeref: 0x751a
-   __TEXT.__swift5_reflstr: 0x1c11
-   __TEXT.__swift5_assocty: 0x788
-   __TEXT.__constg_swiftt: 0x3b40
-   __TEXT.__swift5_fieldmd: 0x26ac
-   __TEXT.__swift5_builtin: 0x258
--  __TEXT.__cstring: 0x3ce7
--  __TEXT.__swift5_capture: 0x12c0
-+  __TEXT.__cstring: 0x4248
-+  __TEXT.__swift5_capture: 0x1600
-   __TEXT.__swift5_proto: 0x578
-   __TEXT.__swift5_types: 0x324
-   __TEXT.__swift5_mpenum: 0x84
 
-   __TEXT.__oslogstring: 0x1ad2
-   __TEXT.__gcc_except_tab: 0x434
-   __TEXT.__ustring: 0x4
--  __TEXT.__unwind_info: 0x5680
--  __TEXT.__eh_frame: 0x3f58
-+  __TEXT.__unwind_info: 0x56b0
-+  __TEXT.__eh_frame: 0x3f60
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1490
-+  __DATA_CONST.__const: 0x1470
-   __DATA_CONST.__objc_classlist: 0x398
-   __DATA_CONST.__objc_catlist: 0x60
-   __DATA_CONST.__objc_protolist: 0x1f8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4390
-+  __DATA_CONST.__objc_selrefs: 0x43c8
-   __DATA_CONST.__objc_protorefs: 0xa0
-   __DATA_CONST.__objc_superrefs: 0x220
-   __DATA_CONST.__objc_arraydata: 0x18
--  __DATA_CONST.__got: 0x1598
--  __AUTH_CONST.__const: 0x96c8
-+  __DATA_CONST.__got: 0x15a0
-+  __AUTH_CONST.__const: 0x9ee8
-   __AUTH_CONST.__cfstring: 0x1980
--  __AUTH_CONST.__objc_const: 0xc930
-+  __AUTH_CONST.__objc_const: 0xc968
-   __AUTH_CONST.__objc_doubleobj: 0xb0
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__auth_got: 0x2110
-   __AUTH.__objc_data: 0x3460
-   __AUTH.__data: 0x2a10
--  __DATA.__objc_ivar: 0x640
--  __DATA.__data: 0x4c40
--  __DATA.__common: 0xc8
-+  __DATA.__objc_ivar: 0x644
-+  __DATA.__data: 0x4c30
-+  __DATA.__common: 0xd0
-   __DATA_DIRTY.__objc_data: 0x1e0
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-
-   - /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard
-   - /System/Library/PrivateFrameworks/ChronoServices.framework/ChronoServices
-   - /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
 +  - /System/Library/PrivateFrameworks/IconFoundation.framework/IconFoundation
-   - /System/Library/PrivateFrameworks/IconServices.framework/IconServices
-   - /System/Library/PrivateFrameworks/LinkMetadata.framework/LinkMetadata
-   - /System/Library/PrivateFrameworks/LinkServices.framework/LinkServices
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8130
--  Symbols:   7340
+-  Symbols:   5650
 -  CStrings:  632
 +  Functions: 8212
-+  Symbols:   7370
++  Symbols:   5672
 +  CStrings:  652
- 
 Symbols:
 + +[WFApplicationIconProvider applicationIconImageForBundleIdentifier:size:scale:tintColor:isClear:]
 + +[WFApplicationIconProvider applicationIconImageForCalendarDate:size:scale:tintColor:isClear:]
@@ -128,16 +75,6 @@ Symbols:
 + _OUTLINED_FUNCTION_217
 + ___swift_closure_destructor.104Tm
 + _get_witness_table 7SwiftUI19_ConditionalContentVyAA08ModifiedD0VyAEyACyAEyAEyAEyAEyAEyAEyAEyAEyAEyAA5ImageVAA18_AspectRatioLayoutVGAA06_FrameI0VGAA34_InsettableBackgroundShapeModifierVyAA0L5StyleVAA9RectangleVGGAA012_EnvironmentloN0VyAA03AnymO0VGGAA11_ClipEffectVyAA0rM0VGGAA01_dm4KindN0VyA3_GGAA014_ColorMultiplyT0VGAA08_OverlayN0VyAEy18WorkflowUIServices17BlendedBorderViewVAA05_MaskT0VyAEyAA07RoundedP0VAA08_PaddingI0VGGGSgGGAA013_TraitWritingN0VyAA18TransitionTraitKeyVGGAEyAEyA21_AA01_q10KeyWritingN0VyAA0V0VSgGGALGGA23_GALGAEyA46_ALGGAA4ViewHPA46_AAA49_HPA45_AAA49_HPA44_AAA49_HPA35_AAA49_HPA29_AAA49_HPA12_AAA49_HPA9_AAA49_HPA5_AAA49_HPA_AAA49_HPAuAA49_HPAmAA49_HPAjAA49_HPAgAA49_HPyHC_AiA04ViewN0HPyHCHC_AlAA50_HPyHCHC_AtAA50_HPyHCHC_AzAA50_HPyHCHC_A4_AAA50_HPyHCHC_A8_AAA50_HPyHCHC_A11_AAA50_HPyHCHC_A28_AAA50_HPyHCHC_A34_AAA50_HPyHCHC_A43_AAA49_HPA42_AAA49_HPA21_AAA49_HPyHC_A41_AAA50_HPyHCHC_AlAA50_HPyHCHCHC_A23_AAA50_HPyHCHC_AlAA50_HPyHCHC_A47_AAA49_HPA46_AAA49_HPA45_AAA49_HPA44_AAA49_HPA35_AAA49_HPA29_AAA49_HPA12_AAA49_HPA9_AAA49_HPA5_AAA49_HPA_AAA49_HPAuAA49_HPAmAA49_HPAjAA49_HPAgAA49_HPyHC_AiAA50_HPyHCHC_AlAA50_HPyHCHC_AtAA50_HPyHCHC_AzAA50_HPyHCHC_A4_AAA50_HPyHCHC_A8_AAA50_HPyHCHC_A11_AAA50_HPyHCHC_A28_AAA50_HPyHCHC_A34_AAA50_HPyHCHC_A43_AAA49_HPA42_AAA49_HPA21_AAA49_HPyHC_A41_AAA50_HPyHCHC_AlAA50_HPyHCHCHC_A23_AAA50_HPyHCHC_AlAA50_HPyHCHC_AlAA50_HPyHCHCHC
-+ _objc_msgSend$applicationIconImageForBundleIdentifier:size:scale:tintColor:isClear:
-+ _objc_msgSend$applicationIconImageForCalendarDate:size:scale:tintColor:isClear:
-+ _objc_msgSend$fillsEntireWidget
-+ _objc_msgSend$glassAdjustedChicletColor:
-+ _objc_msgSend$isClear
-+ _objc_msgSend$setAllowsNumberPadPopover:
-+ _objc_msgSend$setAppearance:
-+ _objc_msgSend$setAppearanceVariant:
-+ _objc_msgSend$setDataSource:
-+ _objc_msgSend$updateAppIconForHomeScreenStyle
 + _symbolic ______Sb11addsPaddingt So6CGSizeV
 + _symbolic _____yAAyAAyAAyAAyAAyAAyAAyAAy__________G_____G_____y__________GG_____y_____GG_____y_____GG_____yAQGG_____G_____yAAy__________yAAy__________GGGSgGG_____y_____GG 7SwiftUI15ModifiedContentV AA5ImageV AA18_AspectRatioLayoutV AA06_FrameH0V AA34_InsettableBackgroundShapeModifierV AA0K5StyleV AA9RectangleV AA012_EnvironmentknM0V AA03AnylN0V AA11_ClipEffectV AA0qL0V AA01_dl4KindM0V AA014_ColorMultiplyS0V AA08_OverlayM0V 18WorkflowUIServices17BlendedBorderViewV AA05_MaskS0V AA07RoundedO0V AA08_PaddingH0V AA013_TraitWritingM0V AA18TransitionTraitKeyV
 + _symbolic _____yAAyAAyAAyAAyAAyAAyAAy__________G_____G_____y__________GG_____y_____GG_____y_____GG_____yAQGG_____G_____yAAy__________yAAy__________GGGSgGG 7SwiftUI15ModifiedContentV AA5ImageV AA18_AspectRatioLayoutV AA06_FrameH0V AA34_InsettableBackgroundShapeModifierV AA0K5StyleV AA9RectangleV AA012_EnvironmentknM0V AA03AnylN0V AA11_ClipEffectV AA0qL0V AA01_dl4KindM0V AA014_ColorMultiplyS0V AA08_OverlayM0V 18WorkflowUIServices17BlendedBorderViewV AA05_MaskS0V AA07RoundedO0V AA08_PaddingH0V
@@ -164,8 +101,6 @@ Symbols:
 - ___block_descriptor_40_e17_d16?0"UIColor"8l
 - ___swift_closure_destructor.89Tm
 - _get_witness_table 7SwiftUI19_ConditionalContentVyAA08ModifiedD0VyAEyACyAEyAEyAEyAEyAEyAEyAEyAEyAEyAA5ImageVAA18_AspectRatioLayoutVGAA06_FrameI0VGAA34_InsettableBackgroundShapeModifierVyAA0L5StyleVAA9RectangleVGGAA012_EnvironmentloN0VyAA03AnymO0VGGAA11_ClipEffectVyAA0rM0VGGAA01_dm4KindN0VyA3_GGAA014_ColorMultiplyT0VGAA08_OverlayN0VyAEy18WorkflowUIServices17BlendedBorderViewVAA05_MaskT0VyAEyAA07RoundedP0VAA08_PaddingI0VGGGGGAA013_TraitWritingN0VyAA18TransitionTraitKeyVGGAEyAEyA21_AA01_q10KeyWritingN0VyAA0V0VSgGGALGGA23_GALGAEyA45_ALGGAA4ViewHPA45_AAA48_HPA44_AAA48_HPA43_AAA48_HPA34_AAA48_HPA28_AAA48_HPA12_AAA48_HPA9_AAA48_HPA5_AAA48_HPA_AAA48_HPAuAA48_HPAmAA48_HPAjAA48_HPAgAA48_HPyHC_AiA04ViewN0HPyHCHC_AlAA49_HPyHCHC_AtAA49_HPyHCHC_AzAA49_HPyHCHC_A4_AAA49_HPyHCHC_A8_AAA49_HPyHCHC_A11_AAA49_HPyHCHC_A27_AAA49_HPyHCHC_A33_AAA49_HPyHCHC_A42_AAA48_HPA41_AAA48_HPA21_AAA48_HPyHC_A40_AAA49_HPyHCHC_AlAA49_HPyHCHCHC_A23_AAA49_HPyHCHC_AlAA49_HPyHCHC_A46_AAA48_HPA45_AAA48_HPA44_AAA48_HPA43_AAA48_HPA34_AAA48_HPA28_AAA48_HPA12_AAA48_HPA9_AAA48_HPA5_AAA48_HPA_AAA48_HPAuAA48_HPAmAA48_HPAjAA48_HPAgAA48_HPyHC_AiAA49_HPyHCHC_AlAA49_HPyHCHC_AtAA49_HPyHCHC_AzAA49_HPyHCHC_A4_AAA49_HPyHCHC_A8_AAA49_HPyHCHC_A11_AAA49_HPyHCHC_A27_AAA49_HPyHCHC_A33_AAA49_HPyHCHC_A42_AAA48_HPA41_AAA48_HPA21_AAA48_HPyHC_A40_AAA49_HPyHCHC_AlAA49_HPyHCHCHC_A23_AAA49_HPyHCHC_AlAA49_HPyHCHC_AlAA49_HPyHCHCHC
-- _objc_msgSend$applicationIconImageForBundleIdentifier:size:
-- _objc_msgSend$applicationIconImageForCalendarDate:size:
 - _symbolic _____yAAyAAyAAyAAyAAyAAyAAyAAy__________G_____G_____y__________GG_____y_____GG_____y_____GG_____yAQGG_____G_____yAAy__________yAAy__________GGGGG_____y_____GG 7SwiftUI15ModifiedContentV AA5ImageV AA18_AspectRatioLayoutV AA06_FrameH0V AA34_InsettableBackgroundShapeModifierV AA0K5StyleV AA9RectangleV AA012_EnvironmentknM0V AA03AnylN0V AA11_ClipEffectV AA0qL0V AA01_dl4KindM0V AA014_ColorMultiplyS0V AA08_OverlayM0V 18WorkflowUIServices17BlendedBorderViewV AA05_MaskS0V AA07RoundedO0V AA08_PaddingH0V AA013_TraitWritingM0V AA18TransitionTraitKeyV
 - _symbolic _____yAAyAAyAAyAAyAAyAAyAAy__________G_____G_____y__________GG_____y_____GG_____y_____GG_____yAQGG_____G_____yAAy__________yAAy__________GGGGG 7SwiftUI15ModifiedContentV AA5ImageV AA18_AspectRatioLayoutV AA06_FrameH0V AA34_InsettableBackgroundShapeModifierV AA0K5StyleV AA9RectangleV AA012_EnvironmentknM0V AA03AnylN0V AA11_ClipEffectV AA0qL0V AA01_dl4KindM0V AA014_ColorMultiplyS0V AA08_OverlayM0V 18WorkflowUIServices17BlendedBorderViewV AA05_MaskS0V AA07RoundedO0V AA08_PaddingH0V
 - _symbolic _____yAAyAAy_____yAAyAAyAAyAAyAAyAAyAAyAAyAAy__________G_____G_____y__________GG_____y_____GG_____y_____GG_____yARGG_____G_____yAAy__________yAAy__________GGGGG_____y_____GGAAyAAyA1______y_____SgGGAFGGA2_GAFGAFG 7SwiftUI15ModifiedContentV AA012_ConditionalD0V AA5ImageV AA18_AspectRatioLayoutV AA06_FrameI0V AA34_InsettableBackgroundShapeModifierV AA0L5StyleV AA9RectangleV AA012_EnvironmentloN0V AA03AnymO0V AA11_ClipEffectV AA0rM0V AA01_dm4KindN0V AA014_ColorMultiplyT0V AA08_OverlayN0V 18WorkflowUIServices17BlendedBorderViewV AA05_MaskT0V AA07RoundedP0V AA08_PaddingI0V AA013_TraitWritingN0V AA18TransitionTraitKeyV AA01_q10KeyWritingN0V AA0V0V

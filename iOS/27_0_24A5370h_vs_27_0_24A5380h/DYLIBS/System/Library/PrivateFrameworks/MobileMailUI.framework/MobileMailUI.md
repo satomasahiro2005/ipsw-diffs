@@ -2,106 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/MobileMailUI.framework/MobileMailUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4de70` | `0x4e440` | **`+0x5d0`** |
+| `__TEXT.__oslogstring` | `0x2277` | `0x2397` | **`+0x120`** |
+| `__TEXT.__gcc_except_tab` | `0x977c` | `0x983c` | **`+0xc0`** |
+| `__AUTH_CONST.__objc_const` | `0x7cf0` | `0x7d48` | **`+0x58`** |
+| `__DATA.__data` | `0x1110` | `0x1158` | **`+0x48`** |
+| `__TEXT.__objc_methlist` | `0x5134` | `0x517c` | **`+0x48`** |
+| `__TEXT.__unwind_info` | `0x29e0` | `0x2a08` | **`+0x28`** |
+| `__DATA.__bss` | `0x60` | `0x48` | **`-0x18`** |
+| `__DATA_DIRTY.__bss` | `0x1a0` | `0x1b8` | **`+0x18`** |
+| `__DATA_DIRTY.__data` | `0x68` | `0x80` | **`+0x18`** |
+| `__TEXT.__const` | `0x8524` | `0x8534` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0xb40` | `0xb48` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x158` | `0x160` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4198` | `0x41a0` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x4b8` | `0x4bc` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x4de70
--  __TEXT.__objc_methlist: 0x5134
--  __TEXT.__gcc_except_tab: 0x977c
-+  __TEXT.__text: 0x4e440
-+  __TEXT.__objc_methlist: 0x517c
-+  __TEXT.__gcc_except_tab: 0x983c
-   __TEXT.__cstring: 0x349c
-   __TEXT.__ustring: 0x318
--  __TEXT.__const: 0x8524
--  __TEXT.__oslogstring: 0x2277
-+  __TEXT.__const: 0x8534
-+  __TEXT.__oslogstring: 0x2397
-   __TEXT.__dlopen_cstrs: 0x97
-   __TEXT.__swift5_typeref: 0x2a2
-   __TEXT.__swift5_capture: 0x128
+-3893.100.7.0.0
++3895.100.17.2.1
 
-   __TEXT.__swift_as_entry: 0x14
-   __TEXT.__swift_as_ret: 0x18
-   __TEXT.__swift_as_cont: 0x28
--  __TEXT.__unwind_info: 0x29e0
-+  __TEXT.__unwind_info: 0x2a08
-   __TEXT.__eh_frame: 0x1b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__const: 0x1378
-   __DATA_CONST.__objc_classlist: 0x1f0
-   __DATA_CONST.__objc_catlist: 0x30
--  __DATA_CONST.__objc_protolist: 0x158
-+  __DATA_CONST.__objc_protolist: 0x160
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4198
-+  __DATA_CONST.__objc_selrefs: 0x41a0
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__objc_superrefs: 0x140
-   __DATA_CONST.__objc_arraydata: 0xe8
--  __DATA_CONST.__got: 0xb40
-+  __DATA_CONST.__got: 0xb48
-   __AUTH_CONST.__const: 0x730
-   __AUTH_CONST.__cfstring: 0x31a0
--  __AUTH_CONST.__objc_const: 0x7cf0
-+  __AUTH_CONST.__objc_const: 0x7d48
-   __AUTH_CONST.__objc_intobj: 0xf0
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__objc_doubleobj: 0x20
-
-   __AUTH_CONST.__auth_got: 0x898
-   __AUTH.__objc_data: 0x9c0
-   __AUTH.__data: 0xe8
--  __DATA.__objc_ivar: 0x4b8
--  __DATA.__data: 0x1110
--  __DATA.__bss: 0x60
-+  __DATA.__objc_ivar: 0x4bc
-+  __DATA.__data: 0x1158
-+  __DATA.__bss: 0x48
-   __DATA.__common: 0x78
-   __DATA_DIRTY.__objc_data: 0xb38
--  __DATA_DIRTY.__data: 0x68
--  __DATA_DIRTY.__bss: 0x1a0
-+  __DATA_DIRTY.__data: 0x80
-+  __DATA_DIRTY.__bss: 0x1b8
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/ContactsUI.framework/ContactsUI
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1732
--  Symbols:   7154
--  CStrings:  1067
+-  Symbols:   3523
+-  CStrings:  678
 +  Functions: 1737
-+  Symbols:   7174
-+  CStrings:  1071
- 
-Sections:
-~ __TEXT.__cstring : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   3536
++  CStrings:  682
 Symbols:
 + -[MFMessageContentView webViewLoadingController:willIssueLoadForURL:]
 + -[MFWebViewLoadingController clearContent]
@@ -151,8 +88,6 @@ Symbols:
 + __OBJC_LABEL_PROTOCOL_$_MFWebViewLoadingControllerDelegate
 + __OBJC_PROTOCOL_$_MFWebViewLoadingControllerDelegate
 + ___64-[MFMessageContentView _webViewWebProcessDidBecomeUnresponsive:]_block_invoke
-+ _objc_msgSend$clearContent
-+ _objc_msgSend$webViewLoadingController:willIssueLoadForURL:
 - GCC_except_table121
 - GCC_except_table127
 - GCC_except_table136
@@ -188,7 +123,6 @@ Symbols:
 - GCC_except_table355
 - GCC_except_table362
 - GCC_except_table363
-- _objc_msgSend$_killWebContentProcess
 Functions:
 ~ -[MFMessageContentView _commonInit] : 2916 -> 2928
 ~ -[MFMessageContentView setContentRequest:] : 1764 -> 1800
@@ -219,5 +153,4 @@ CStrings:
 - "<%{public}@: %p>: %{public}@ %@ (pid: %d)"
 - "<%{public}@: %p>: Sending request to load webview with content representation: %{public}@"
 - "<%{public}@: %p>: rendering progress did first paint, removing loading indicator"
-
 ```

@@ -2,26 +2,25 @@
 
 > `com.apple.driver.usb.AppleUSBHostDeviceSupport`
 
-```diff
+### Section Size Changes
 
- 1617.0.12.0.0
-   __TEXT.__cstring: 0xc8
-   __TEXT.__os_log: 0x63
--  __TEXT_EXEC.__text: 0x830
-+  __TEXT_EXEC.__text: 0x85c
-   __TEXT_EXEC.__auth_stubs: 0xd0
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x38
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x830` | `0x85c` | **`+0x2c`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_fffffe000a67bda0 -> sub_fffffe000a75e9b0 : 72 -> 76
-~ sub_fffffe000a67bdf0 -> sub_fffffe000a75ea04 : 52 -> 56
-~ sub_fffffe000a67be24 -> sub_fffffe000a75ea3c : 52 -> 56
-~ sub_fffffe000a67be68 -> sub_fffffe000a75ea84 : 68 -> 72
-~ sub_fffffe000a67bed4 -> sub_fffffe000a75eaf4 : 72 -> 76
-~ sub_fffffe000a67bf1c -> sub_fffffe000a75eb40 : 104 -> 108
-~ sub_fffffe000a67bf98 -> sub_fffffe000a75ebc0 : 88 -> 92
-~ sub_fffffe000a67bff0 -> sub_fffffe000a75ec1c : 88 -> 92
-~ sub_fffffe000a67c048 -> sub_fffffe000a75ec78 : 124 -> 128
+~ sub_fffffff00a682320 -> sub_fffffff00a761370 : 72 -> 76
+~ sub_fffffff00a682370 -> sub_fffffff00a7613c4 : 52 -> 56
+~ sub_fffffff00a6823a4 -> sub_fffffff00a7613fc : 52 -> 56
+~ sub_fffffff00a6823e8 -> sub_fffffff00a761444 : 68 -> 72
+~ sub_fffffff00a682454 -> sub_fffffff00a7614b4 : 72 -> 76
+~ sub_fffffff00a68249c -> sub_fffffff00a761500 : 104 -> 108
+~ sub_fffffff00a682518 -> sub_fffffff00a761580 : 88 -> 92
+~ sub_fffffff00a682570 -> sub_fffffff00a7615dc : 88 -> 92
+~ sub_fffffff00a6825c8 -> sub_fffffff00a761638 : 124 -> 128
 ~ __ZN25AppleUSBHostDeviceSupport5probeEP9IOServicePi : 1056 -> 1060
-~ sub_fffffe000a67c4ec -> sub_fffffe000a75f124 : 80 -> 84
+~ sub_fffffff00a682a6c -> sub_fffffff00a761ae4 : 80 -> 84
 ```

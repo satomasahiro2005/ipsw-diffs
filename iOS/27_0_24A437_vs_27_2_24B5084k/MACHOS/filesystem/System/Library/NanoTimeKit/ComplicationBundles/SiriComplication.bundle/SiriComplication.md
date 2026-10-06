@@ -2,81 +2,52 @@
 
 > `/System/Library/NanoTimeKit/ComplicationBundles/SiriComplication.bundle/SiriComplication`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_types`
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3c60` | `0x3fa8` | **`+0x348`** |
+| `__TEXT.__eh_frame` | `0x38` | `0x100` | **`+0xc8`** |
+| `__TEXT.__objc_stubs` | `0x240` | `0x280` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x330` | `0x358` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x188` | `0x1b0` | **`+0x28`** |
+| `__TEXT.__swift5_capture` | `0xc0` | `0xe4` | **`+0x24`** |
+| `__TEXT.__const` | `0xd4` | `0xf4` | **`+0x20`** |
+| `__TEXT.__swift5_typeref` | `0x148` | `0x164` | **`+0x1c`** |
+| `__TEXT.__objc_methname` | `0x37e` | `0x397` | **`+0x19`** |
+| `__DATA.__data` | `0x170` | `0x158` | **`-0x18`** |
+| `__DATA.__objc_selrefs` | `0xf8` | `0x108` | **`+0x10`** |
+| `__DATA_CONST.__auth_ptr` | `0x30` | `0x28` | **`-0x8`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__objc_methtype` | `0x9d` | `0x97` | **`-0x6`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x4` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `—` | `0x4` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_const`
 - `__DATA.__objc_data`
+- `__DATA_CONST.__objc_classlist`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_types`
+
+### Other Changes
 
 ```diff
 
 -73.0.24.109.0
--  __TEXT.__text: 0x3a20
 +3605.1.1.1.5
-+  __TEXT.__text: 0x3cb8
-   __TEXT.__auth_stubs: 0x770
--  __TEXT.__objc_stubs: 0x240
-+  __TEXT.__objc_stubs: 0x280
-   __TEXT.__objc_methlist: 0xc4
--  __TEXT.__const: 0xd4
-+  __TEXT.__const: 0xf4
-   __TEXT.__objc_classname: 0x70
--  __TEXT.__objc_methname: 0x37e
--  __TEXT.__objc_methtype: 0x9d
-+  __TEXT.__objc_methname: 0x397
-+  __TEXT.__objc_methtype: 0x97
-   __TEXT.__constg_swiftt: 0xb4
--  __TEXT.__swift5_typeref: 0x148
-+  __TEXT.__swift5_typeref: 0x164
-   __TEXT.__swift5_reflstr: 0x14
-   __TEXT.__swift5_fieldmd: 0x2c
-   __TEXT.__oslogstring: 0x332
-   __TEXT.__cstring: 0xab
--  __TEXT.__swift5_capture: 0xc0
-+  __TEXT.__swift5_capture: 0xe4
-   __TEXT.__swift5_types: 0x8
--  __TEXT.__unwind_info: 0x1c0
--  __TEXT.__eh_frame: 0x38
--  __DATA_CONST.__const: 0x330
-+  __TEXT.__swift_as_entry: 0x8
-+  __TEXT.__swift_as_ret: 0x4
-+  __TEXT.__swift_as_cont: 0x4
-+  __TEXT.__unwind_info: 0x1e0
-+  __TEXT.__eh_frame: 0x100
-+  __DATA_CONST.__const: 0x358
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__auth_got: 0x3c0
-   __DATA_CONST.__got: 0x88
--  __DATA_CONST.__auth_ptr: 0x30
-+  __DATA_CONST.__auth_ptr: 0x28
-   __DATA.__objc_const: 0x158
--  __DATA.__objc_selrefs: 0xf8
-+  __DATA.__objc_selrefs: 0x108
-   __DATA.__objc_data: 0xe8
--  __DATA.__data: 0x170
-+  __DATA.__data: 0x158
-   - /System/Library/Frameworks/ClockKit.framework/ClockKit
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/swift/libswiftWatchKit.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 +  - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 122
 -  Symbols:   408
 -  CStrings:  64
 +  Functions: 128
 +  Symbols:   420
 +  CStrings:  65
- 
 Symbols:
 + _$s10Foundation4DateVSgWOhTm
 + _$s16SiriComplication0aB10DataSourceC12becomeActiveyyFy16GenerativeModels0gH12AvailabilityV0I0OYbcfU_yyYaScMYccfU_

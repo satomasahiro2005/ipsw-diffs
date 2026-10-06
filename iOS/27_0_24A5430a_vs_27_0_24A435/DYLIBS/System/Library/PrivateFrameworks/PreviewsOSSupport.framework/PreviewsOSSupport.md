@@ -2,21 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/PreviewsOSSupport.framework/PreviewsOSSupport`
 
-```diff
+### Section Size Changes
 
- 24.0.45.1.0
--  __TEXT.__text: 0x2ca1c
-+  __TEXT.__text: 0x2ca38
-   __TEXT.__objc_methlist: 0x500
-   __TEXT.__const: 0x3038
-   __TEXT.__cstring: 0x14e0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2ca1c` | `0x2ca38` | **`+0x1c`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_297f75064 -> sub_2997c9064 : 588 -> 584
-~ sub_297f7dd94 -> sub_2997d1d90 : 512 -> 516
-~ sub_297f7e270 -> sub_2997d2270 : 500 -> 504
-~ sub_297f7fb40 -> sub_2997d3b44 : 740 -> 748
-~ sub_297f80768 -> sub_2997d4774 : 712 -> 716
-~ sub_297f812ec -> sub_2997d52fc : 372 -> 376
-~ sub_297f815c0 -> sub_2997d55d4 : 648 -> 652
-~ sub_297f81a6c -> sub_2997d5a84 : 392 -> 396
+~ sub_297f4b064 -> sub_2996ac064 : 588 -> 584
+~ sub_297f53d94 -> sub_2996b4d90 : 512 -> 516
+~ sub_297f54270 -> sub_2996b5270 : 500 -> 504
+~ sub_297f55b40 -> sub_2996b6b44 : 740 -> 748
+~ sub_297f56768 -> sub_2996b7774 : 712 -> 716
+~ sub_297f572ec -> sub_2996b82fc : 372 -> 376
+~ sub_297f575c0 -> sub_2996b85d4 : 648 -> 652
+~ sub_297f57a6c -> sub_2996b8a84 : 392 -> 396
 ```

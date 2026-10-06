@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CommandAndControlUI.framework/CommandAndControlUI`
 
-```diff
+### Section Size Changes
 
- 188.1.0.0.0
--  __TEXT.__text: 0xdc2c
-+  __TEXT.__text: 0xdc30
-   __TEXT.__objc_methlist: 0x1cc
-   __TEXT.__const: 0xc20
-   __TEXT.__cstring: 0x4b2
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xdc2c` | `0xdc30` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_257e1d668 -> sub_258f2a668 : 864 -> 868
+~ sub_257ce7668 -> sub_258e0e668 : 864 -> 868
 ```

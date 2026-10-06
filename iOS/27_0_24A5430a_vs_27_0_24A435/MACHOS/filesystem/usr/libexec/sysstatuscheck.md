@@ -2,20 +2,21 @@
 
 > `/usr/libexec/sysstatuscheck`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd22c` | `0xd23c` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__const`
 - `__TEXT.__gcc_except_tab`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
 
-```diff
+### Other Changes
 
- 233.0.5.0.0
--  __TEXT.__text: 0xd22c
-+  __TEXT.__text: 0xd23c
-   __TEXT.__auth_stubs: 0x520
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__gcc_except_tab: 0x61c
+```text
 Functions:
 ~ sub_100002a00 : 340 -> 336
 ~ sub_100002f4c -> sub_100002f48 : 1308 -> 1312

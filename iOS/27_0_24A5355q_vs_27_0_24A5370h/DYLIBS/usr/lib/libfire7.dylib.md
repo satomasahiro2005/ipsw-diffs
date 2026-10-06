@@ -2,51 +2,28 @@
 
 > `/usr/lib/libfire7.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x282c9c` | `0x283c78` | **`+0xfdc`** |
+| `__TEXT.__unwind_info` | `0x5760` | `0x5728` | **`-0x38`** |
+| `__AUTH_CONST.__auth_got` | `0x280` | `0x278` | **`-0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x54ec` | `0x54f0` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
 -135.0.2.0.0
--  __TEXT.__text: 0x282c9c sha256:de7083f48efa73abb754ea387e89e1b5b3443f243b6fca525b986f67232085cd
--  __TEXT.__init_offsets: 0x10 sha256:040415a980c46387fea2a22bd2dad53ccf7fbcf29bc19559d78589396f5a91d2
--  __TEXT.__const: 0x2cd1c sha256:68ce8744a76023bdece6e7a69213b8a972b56dc35fc3eb307f1c92cc15e5a4f7
--  __TEXT.__cstring: 0x3fe95 sha256:1d62606d6b902437c7e95d59b13f49852cda891d629fd4f3d20529510215ea09
--  __TEXT.__gcc_except_tab: 0x54ec sha256:b37cd3bb7f09ae94c701d8c495f2771d32f8551325110bdb551e6054953d1ae6
--  __TEXT.__unwind_info: 0x5760 sha256:78128743d9934b5e87c917cf2771eb3966239fae30bbcc5bc805794e24e2257d
 +135.0.3.0.0
-+  __TEXT.__text: 0x283c78 sha256:9f40b8617ecf7f5cdf9c5d112b7c8b46211bac4291035a60e93a0398b41d4a21
-+  __TEXT.__init_offsets: 0x10 sha256:fcafbcf5c72149067ba589cd1d16571104772b2927778f48da0a2c2ebb7a53f9
-+  __TEXT.__const: 0x2cd1c sha256:54522a2b2fdca55d439bafa77c2dc6213920a303b9fbcbff4bece2066a55225f
-+  __TEXT.__cstring: 0x3fe95 sha256:ea800d981c58b08a46fcade0f56c7591773559628e810c74e022dc9c476b2f75
-+  __TEXT.__gcc_except_tab: 0x54f0 sha256:c511c0dc9888affaea30181fca80ac4b5ab0de0cdcad84a06212d0519cbe117d
-+  __TEXT.__unwind_info: 0x5728 sha256:35090404fe36e48db8edc8adb3e62fe34824c8ee1a3c4ff141d9e25291e12463
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x84a0 sha256:cc9f7ca8b0a0b21dcc43690ad3bee806c0eae2850e0338d7dca20381d5efe4c8
--  __DATA_CONST.__weak_got: 0x8 sha256:baed7a8f4fe06577baf9413d1425189458482e4f64d55b4f5cc304378385a036
-+  __DATA_CONST.__const: 0x84a0 sha256:ad1a081f028d41b3caa20fae69a30c065f4ac1e513b733e06ac775a5ab143c25
-+  __DATA_CONST.__weak_got: 0x8 sha256:0187a61bf3fae6fc3b3aa794eddabd32ea418a3c89d235dd3a82b6bd02e4fd49
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x11398 sha256:3715120b91e4a77e91335badbfeca615ea982a0f3231af7b199c7e64b1219ec6
--  __AUTH_CONST.__weak_auth_got: 0x20 sha256:5cca76ae8ace9b7acc47a69e7c11ba1290a4b81ea841f1af45121785f7717804
--  __AUTH_CONST.__auth_got: 0x280 sha256:9e132485d5107211de325a45e7917cbe3e4b5b9cde3e4ee91d7d2102317759ee
--  __DATA.__data: 0x178 sha256:da5fc9fa23e40c5340383ca699029ec7a82edff3853aa9cf0c80be0117c0fce7
-+  __AUTH_CONST.__const: 0x11398 sha256:bae3c49f3315b18066634453a0c5a9fd3844fd75246059da59cf147bd1bd2d2d
-+  __AUTH_CONST.__weak_auth_got: 0x20 sha256:4888e9167aef10573f48f65ff0faa7b4e7aeb571ae8d97879db80ae35dc90826
-+  __AUTH_CONST.__auth_got: 0x278 sha256:a8fe888f287d6d55df301aca05239c44f27e29d1ea4023657a641984de969026
-+  __DATA.__data: 0x178 sha256:9c88de5a58934d0034f869a752c24c2ecbec02f8c34bdd07341181509133f1fe
-   __DATA.__common: 0x28 sha256:2c34ce1df23b838c5abf2a7f6437cca3d3067ed509ff25f11df6b11b582b51eb
-   __DATA.__bss: 0x2 sha256:96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7
--  __DATA_DIRTY.__data: 0x368 sha256:9f77bccb098d2c00788918c30fda08153f3feb51c02cb448f5c9e6a395398b01
-+  __DATA_DIRTY.__data: 0x368 sha256:c0e96d92847cf33b86f12510fe6d051ec5438e1ddb3371ec50ef0fd561f4e141
-   __DATA_DIRTY.__common: 0x9d8 sha256:1c71ec6b184ef378eafadf86f731339eca87693678f565d78b071e0bcbebaae7
-   __DATA_DIRTY.__bss: 0x9c sha256:59bf9091f4cbbd2a8796bfe086a501c57226c42739dcf8ad323e7493ad51e38f
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
--  UUID: 765B1D18-1A19-31FE-98A8-932B6B3DCB61
-+  UUID: 3F7D81B5-46C3-3113-8FCA-949FED78F48D
-   Functions: 7336
--  Symbols:   18791
-+  Symbols:   18790
-   CStrings:  6185
- 
+
+-  Symbols:   9847
++  Symbols:   9840
 Symbols:
 + GCC_except_table119
 + GCC_except_table121
@@ -364,5 +341,4 @@ CStrings:
 + "Jun 12 2026, 22:35:31"
 - "FIRE@135.0.2 GLL@653695"
 - "May 22 2026, 05:13:49"
-
 ```

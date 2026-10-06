@@ -2,71 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/GeoUIFramework.framework/GeoUIFramework`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2c7ec` | `0x2def4` | **`+0x1708`** |
+| `__TEXT.__swift5_typeref` | `0x31ef` | `0x3b73` | **`+0x984`** |
+| `__TEXT.__const` | `0x3ff0` | `0x4150` | **`+0x160`** |
+| `__TEXT.__constg_swiftt` | `0xbc8` | `0xcfc` | **`+0x134`** |
+| `__DATA.__data` | `0x1070` | `0x1148` | **`+0xd8`** |
+| `__DATA.__bss` | `0x58e8` | `0x5970` | **`+0x88`** |
+| `__AUTH_CONST.__const` | `0x20a0` | `0x2118` | **`+0x78`** |
+| `__AUTH_CONST.__auth_got` | `0xaf8` | `0xb58` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0xd20` | `0xd58` | **`+0x38`** |
+| `__TEXT.__swift5_fieldmd` | `0xb78` | `0xb98` | **`+0x20`** |
+| `__TEXT.__swift5_assocty` | `0x348` | `0x360` | **`+0x18`** |
+| `__TEXT.__swift5_capture` | `0x21c` | `0x20c` | **`-0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x108` | `0x110` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0xf0` | `0xf8` | **`+0x8`** |
+| `__TEXT.__swift5_reflstr` | `0x57d` | `0x578` | **`-0x5`** |
+| `__TEXT.__swift5_proto` | `0x2c4` | `0x2c8` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -3605.13.1.0.0
--  __TEXT.__text: 0x2afa0
--  __TEXT.__const: 0x3ff0
--  __TEXT.__swift5_typeref: 0x31ef
--  __TEXT.__swift5_capture: 0x21c
 +3605.14.1.0.0
-+  __TEXT.__text: 0x2c660
-+  __TEXT.__const: 0x4150
-+  __TEXT.__swift5_typeref: 0x3b73
-+  __TEXT.__swift5_capture: 0x20c
-   __TEXT.__cstring: 0x941
--  __TEXT.__swift5_reflstr: 0x57d
--  __TEXT.__swift5_assocty: 0x348
--  __TEXT.__constg_swiftt: 0xbc8
--  __TEXT.__swift5_fieldmd: 0xb78
-+  __TEXT.__swift5_reflstr: 0x578
-+  __TEXT.__swift5_assocty: 0x360
-+  __TEXT.__constg_swiftt: 0xcfc
-+  __TEXT.__swift5_fieldmd: 0xb98
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__oslogstring: 0xf1
--  __TEXT.__swift5_proto: 0x2c4
--  __TEXT.__swift5_types: 0xf0
-+  __TEXT.__swift5_proto: 0x2c8
-+  __TEXT.__swift5_types: 0xf8
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x1120
-+  __TEXT.__unwind_info: 0x1180
-   __TEXT.__eh_frame: 0x8a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__const: 0xd0
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x108
-+  __DATA_CONST.__objc_selrefs: 0x110
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x20a0
-+  __AUTH_CONST.__const: 0x2118
-   __AUTH_CONST.__objc_const: 0x90
--  __AUTH_CONST.__auth_got: 0xaf8
-+  __AUTH_CONST.__auth_got: 0xb58
-   __AUTH.__data: 0x580
--  __DATA.__data: 0x1070
-+  __DATA.__data: 0x1148
-   __DATA.__common: 0x60
-   __DATA_DIRTY.__data: 0x98
-   __DATA_DIRTY.__bss: 0x80
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1327
 -  Symbols:   4133
 +  Functions: 1377
 +  Symbols:   4322
-   CStrings:  76
- 
 Symbols:
 + _$s14GeoUIFramework12WhereAmIViewV14SharePillStyle33_DC67C5BFAE856F3FA9D804014CDBF3D0LLV7SwiftUI06ButtonH0AA4BodyAgHP_AG4ViewPWT
 + _$s14GeoUIFramework12WhereAmIViewV14SharePillStyle33_DC67C5BFAE856F3FA9D804014CDBF3D0LLV7SwiftUI06ButtonH0AAMA

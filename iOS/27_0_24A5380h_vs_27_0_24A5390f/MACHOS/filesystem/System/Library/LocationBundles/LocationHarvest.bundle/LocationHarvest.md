@@ -2,15 +2,14 @@
 
 > `/System/Library/LocationBundles/LocationHarvest.bundle/LocationHarvest`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -3176.0.0.0.0
 +3183.0.0.0.0
-   __TEXT.__text: 0x0
-   __TEXT.__const: 0x40
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 ```

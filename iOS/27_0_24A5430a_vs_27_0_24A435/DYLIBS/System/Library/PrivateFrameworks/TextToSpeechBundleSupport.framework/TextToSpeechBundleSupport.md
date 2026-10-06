@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/TextToSpeechBundleSupport.framework/TextToSpeechBundleSupport`
 
-```diff
+### Section Size Changes
 
- 723.3.0.0.0
--  __TEXT.__text: 0x1ced0
-+  __TEXT.__text: 0x1ced8
-   __TEXT.__objc_methlist: 0x2e4
-   __TEXT.__const: 0xd10
-   __TEXT.__dlopen_cstrs: 0x6a
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ced0` | `0x1ced8` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2ae6d1d30 -> sub_2af4c9d30 : 2364 -> 2372
+~ sub_2ae5bdd30 -> sub_2af3b3d30 : 2364 -> 2372
 ```

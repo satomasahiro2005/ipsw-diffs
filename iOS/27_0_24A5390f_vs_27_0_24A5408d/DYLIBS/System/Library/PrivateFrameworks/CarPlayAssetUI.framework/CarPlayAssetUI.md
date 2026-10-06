@@ -2,87 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/CarPlayAssetUI.framework/CarPlayAssetUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3b8f6c` | `0x3bb71c` | **`+0x27b0`** |
+| `__DATA.__bss` | `0x86530` | `0x86eb0` | **`+0x980`** |
+| `__TEXT.__const` | `0x7ce84` | `0x7cac4` | **`-0x3c0`** |
+| `__AUTH_CONST.__const` | `0x2ada8` | `0x2b010` | **`+0x268`** |
+| `__TEXT.__swift5_fieldmd` | `0xff24` | `0x10018` | **`+0xf4`** |
+| `__TEXT.__swift5_mpenum` | `0x860` | `0x948` | **`+0xe8`** |
+| `__TEXT.__constg_swiftt` | `0xcc1c` | `0xcccc` | **`+0xb0`** |
+| `__TEXT.__swift5_reflstr` | `0xa2df` | `0xa38f` | **`+0xb0`** |
+| `__TEXT.__unwind_info` | `0x10230` | `0x102e0` | **`+0xb0`** |
+| `__TEXT.__swift5_typeref` | `0x1a8bc` | `0x1a960` | **`+0xa4`** |
+| `__DATA.__data` | `0x13808` | `0x13898` | **`+0x90`** |
+| `__TEXT.__cstring` | `0x73d7` | `0x7437` | **`+0x60`** |
+| `__TEXT.__eh_frame` | `0x101a8` | `0x10148` | **`-0x60`** |
+| `__DATA_CONST.__const` | `0x1448` | `0x1498` | **`+0x50`** |
+| `__TEXT.__swift5_proto` | `0x44e0` | `0x452c` | **`+0x4c`** |
+| `__TEXT.__oslogstring` | `0x17bf` | `0x17ff` | **`+0x40`** |
+| `__TEXT.__swift5_capture` | `0x2994` | `0x2964` | **`-0x30`** |
+| `__AUTH.__data` | `0x4dc0` | `0x4de0` | **`+0x20`** |
+| `__AUTH_CONST.__objc_const` | `0x3318` | `0x3330` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x438` | `0x44c` | **`+0x14`** |
+| `__TEXT.__swift5_types` | `0x11d4` | `0x11e4` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x12d0` | `0x12d8` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x1504` | `0x150c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -496.0.0.0.0
--  __TEXT.__text: 0x3b8f6c
--  __TEXT.__objc_methlist: 0x1504
--  __TEXT.__const: 0x7ce84
--  __TEXT.__cstring: 0x73d7
--  __TEXT.__swift5_typeref: 0x1a8bc
--  __TEXT.__constg_swiftt: 0xcc1c
--  __TEXT.__swift5_reflstr: 0xa2df
--  __TEXT.__swift5_fieldmd: 0xff24
--  __TEXT.__swift5_builtin: 0x438
 +499.1.0.0.0
-+  __TEXT.__text: 0x3bb71c
-+  __TEXT.__objc_methlist: 0x150c
-+  __TEXT.__const: 0x7cac4
-+  __TEXT.__cstring: 0x7437
-+  __TEXT.__swift5_typeref: 0x1a960
-+  __TEXT.__constg_swiftt: 0xcccc
-+  __TEXT.__swift5_reflstr: 0xa38f
-+  __TEXT.__swift5_fieldmd: 0x10018
-+  __TEXT.__swift5_builtin: 0x44c
-   __TEXT.__swift5_assocty: 0x2500
--  __TEXT.__swift5_proto: 0x44e0
--  __TEXT.__swift5_types: 0x11d4
--  __TEXT.__swift5_capture: 0x2994
--  __TEXT.__swift5_mpenum: 0x860
-+  __TEXT.__swift5_proto: 0x452c
-+  __TEXT.__swift5_types: 0x11e4
-+  __TEXT.__swift5_capture: 0x2964
-+  __TEXT.__swift5_mpenum: 0x948
-   __TEXT.__swift5_protos: 0x78
-   __TEXT.__swift_as_entry: 0x70
-   __TEXT.__swift_as_ret: 0x54
-   __TEXT.__swift_as_cont: 0x118
--  __TEXT.__oslogstring: 0x17bf
--  __TEXT.__unwind_info: 0x10230
--  __TEXT.__eh_frame: 0x101a8
-+  __TEXT.__oslogstring: 0x17ff
-+  __TEXT.__unwind_info: 0x102e0
-+  __TEXT.__eh_frame: 0x10148
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1448
-+  __DATA_CONST.__const: 0x1498
-   __DATA_CONST.__objc_classlist: 0xf8
-   __DATA_CONST.__objc_protolist: 0x1c0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x12d0
-+  __DATA_CONST.__objc_selrefs: 0x12d8
-   __DATA_CONST.__objc_protorefs: 0xe0
-   __DATA_CONST.__got: 0x11d0
--  __AUTH_CONST.__const: 0x2ada8
--  __AUTH_CONST.__objc_const: 0x3318
-+  __AUTH_CONST.__const: 0x2b010
-+  __AUTH_CONST.__objc_const: 0x3330
-   __AUTH_CONST.__auth_got: 0x27d0
-   __AUTH.__objc_data: 0xb20
--  __AUTH.__data: 0x4dc0
--  __DATA.__data: 0x13808
--  __DATA.__bss: 0x86530
-+  __AUTH.__data: 0x4de0
-+  __DATA.__data: 0x13898
-+  __DATA.__bss: 0x86eb0
-   __DATA.__common: 0x480
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 26584
--  Symbols:   72241
+-  Symbols:   71968
 -  CStrings:  1079
 +  Functions: 26680
-+  Symbols:   72466
++  Symbols:   72193
 +  CStrings:  1081
- 
 Symbols:
 + _$s14CarPlayAssetUI0C8ManifestV8displays_ACSayAA7DisplayVG_SbAA0C11DestinationVXEtKcfC04$s14abc97UI18ArcPackageExporterC14updateDisplays33_E5779D25C22947D0F40809128C706D03LL03newI003oldI0ySayAA7g18VG_AJSgtKFSbAA0C11H5VcfU_AA0klM0C0H0OTf1nnEn_n
 + _$s14CarPlayAssetUI10InstrumentV10WidgetInfoO16stableIdentifierSSvg

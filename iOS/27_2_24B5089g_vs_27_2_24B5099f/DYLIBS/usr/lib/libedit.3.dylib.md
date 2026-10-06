@@ -2,18 +2,10 @@
 
 > `/usr/lib/libedit.3.dylib`
 
-```diff
+### Section Size Changes
 
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x3b0
-   __AUTH_CONST.__auth_got: 0x398
--  __AUTH.__data: 0x10
--  __DATA.__data: 0x7d
-+  __DATA.__data: 0x65
-   __DATA.__common: 0x30b0
--  __DATA_DIRTY.__data: 0x8
-+  __DATA_DIRTY.__data: 0x30
-   __DATA_DIRTY.__bss: 0x8
-   __DATA_DIRTY.__common: 0x24
-   - /usr/lib/libSystem.B.dylib
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__data` | `0x8` | `0x30` | **`+0x28`** |
+| `__DATA.__data` | `0x7d` | `0x65` | **`-0x18`** |
+| `__AUTH.__data` | `0x10` | `—` | **`-0x10`** |

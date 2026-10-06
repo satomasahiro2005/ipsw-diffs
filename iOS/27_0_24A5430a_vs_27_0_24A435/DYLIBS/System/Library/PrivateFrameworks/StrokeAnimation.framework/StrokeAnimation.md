@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/StrokeAnimation.framework/StrokeAnimation`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_20 : 12 -> 20

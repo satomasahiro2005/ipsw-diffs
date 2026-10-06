@@ -2,64 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/AppPredictionToolsInternal.framework/AppPredictionToolsInternal`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2a28` | `0x4720` | **`+0x1cf8`** |
+| `__DATA.__bss` | `0x700` | `0xb00` | **`+0x400`** |
+| `__TEXT.__const` | `0x560` | `0x780` | **`+0x220`** |
+| `__AUTH_CONST.__const` | `0x290` | `0x320` | **`+0x90`** |
+| `__TEXT.__unwind_info` | `0x1f8` | `0x288` | **`+0x90`** |
+| `__AUTH.__data` | `—` | `0x88` | **`+0x88`** |
+| `__AUTH_CONST.__auth_got` | `0x288` | `0x310` | **`+0x88`** |
+| `__DATA.__data` | `0xf0` | `0x170` | **`+0x80`** |
+| `__TEXT.__eh_frame` | `0x1b0` | `0x230` | **`+0x80`** |
+| `__TEXT.__swift5_fieldmd` | `0xb0` | `0x130` | **`+0x80`** |
+| `__TEXT.__swift5_typeref` | `0x157` | `0x1b5` | **`+0x5e`** |
+| `__TEXT.__constg_swiftt` | `0xc8` | `0x114` | **`+0x4c`** |
+| `__TEXT.__cstring` | `0xc2` | `0x102` | **`+0x40`** |
+| `__TEXT.__swift5_reflstr` | `0x56` | `0x7c` | **`+0x26`** |
+| `__TEXT.__swift5_proto` | `0x3c` | `0x5c` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x14` | `0x1c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -671.0.2.0.1
--  __TEXT.__text: 0x2858
--  __TEXT.__const: 0x560
--  __TEXT.__cstring: 0xc2
--  __TEXT.__swift5_typeref: 0x157
--  __TEXT.__constg_swiftt: 0xc8
--  __TEXT.__swift5_reflstr: 0x56
--  __TEXT.__swift5_fieldmd: 0xb0
--  __TEXT.__swift5_proto: 0x3c
--  __TEXT.__swift5_types: 0x14
 +674.0.1.0.0
-+  __TEXT.__text: 0x4434
-+  __TEXT.__const: 0x780
-+  __TEXT.__cstring: 0x102
-+  __TEXT.__swift5_typeref: 0x1b5
-+  __TEXT.__constg_swiftt: 0x114
-+  __TEXT.__swift5_reflstr: 0x7c
-+  __TEXT.__swift5_fieldmd: 0x130
-+  __TEXT.__swift5_proto: 0x5c
-+  __TEXT.__swift5_types: 0x1c
-   __TEXT.__swift5_assocty: 0x58
-   __TEXT.__swift_as_entry: 0xc
-   __TEXT.__swift_as_ret: 0x8
-   __TEXT.__swift_as_cont: 0x4
--  __TEXT.__unwind_info: 0x230
--  __TEXT.__eh_frame: 0x1b0
-+  __TEXT.__unwind_info: 0x308
-+  __TEXT.__eh_frame: 0x230
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x20
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x290
--  __AUTH_CONST.__auth_got: 0x288
--  __DATA.__data: 0xf0
-+  __AUTH_CONST.__const: 0x320
-+  __AUTH_CONST.__auth_got: 0x310
-+  __AUTH.__data: 0x88
-+  __DATA.__data: 0x170
-   __DATA_DIRTY.__bss: 0x80
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 143
--  Symbols:   139
+-  Symbols:   135
 -  CStrings:  5
 +  Functions: 198
-+  Symbols:   157
++  Symbols:   153
 +  CStrings:  6
- 
 Symbols:
 + _associated conformance 26AppPredictionToolsInternal26RelevanceTestConfigurationV10CodingKeys33_1AFEE059EC046888034D1F7DBCE19B2ALLOSHAASQ
 + _associated conformance 26AppPredictionToolsInternal26RelevanceTestConfigurationV10CodingKeys33_1AFEE059EC046888034D1F7DBCE19B2ALLOs0H3KeyAAs23CustomStringConvertible

@@ -2,97 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/AppIntentsServices.framework/AppIntentsServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2d833c` | `0x2d6244` | **`-0x20f8`** |
+| `__DATA.__bss` | `0x2a380` | `0x2aeb0` | **`+0xb30`** |
+| `__TEXT.__const` | `0x27610` | `0x27d30` | **`+0x720`** |
+| `__AUTH_CONST.__const` | `0x1f1e8` | `0x1f600` | **`+0x418`** |
+| `__TEXT.__eh_frame` | `0x28888` | `0x28c04` | **`+0x37c`** |
+| `__TEXT.__unwind_info` | `0xf0c8` | `0xf378` | **`+0x2b0`** |
+| `__TEXT.__swift5_reflstr` | `0x4c2c` | `0x4dbc` | **`+0x190`** |
+| `__TEXT.__swift5_typeref` | `0x8d69` | `0x8ec9` | **`+0x160`** |
+| `__TEXT.__swift5_fieldmd` | `0x7550` | `0x7690` | **`+0x140`** |
+| `__AUTH.__data` | `0x5a88` | `0x5bc0` | **`+0x138`** |
+| `__TEXT.__cstring` | `0x574a` | `0x582a` | **`+0xe0`** |
+| `__DATA.__data` | `0x6418` | `0x64e8` | **`+0xd0`** |
+| `__TEXT.__constg_swiftt` | `0x7824` | `0x78e4` | **`+0xc0`** |
+| `__TEXT.__oslogstring` | `0x3d89` | `0x3e49` | **`+0xc0`** |
+| `__DATA_DIRTY.__bss` | `0xf00` | `0xe80` | **`-0x80`** |
+| `__TEXT.__swift5_capture` | `0x83c4` | `0x8438` | **`+0x74`** |
+| `__DATA_DIRTY.__data` | `0x4a10` | `0x49a0` | **`-0x70`** |
+| `__TEXT.__swift5_proto` | `0x190c` | `0x1960` | **`+0x54`** |
+| `__DATA_CONST.__got` | `0xe48` | `0xe98` | **`+0x50`** |
+| `__TEXT.__swift5_assocty` | `0xd48` | `0xd90` | **`+0x48`** |
+| `__DATA.__common` | `0x1c28` | `0x1c68` | **`+0x40`** |
+| `__AUTH_CONST.__objc_const` | `0x3e48` | `0x3e68` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x1ac0` | `0x1ad8` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0x88c` | `0x8a4` | **`+0x18`** |
+| `__TEXT.__swift5_acfuncs` | `0x5dc` | `0x5c8` | **`-0x14`** |
+| `__TEXT.__swift5_builtin` | `0x460` | `0x474` | **`+0x14`** |
+| `__TEXT.__swift5_mpenum` | `0x168` | `0x178` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0xccc` | `0xcdc` | **`+0x10`** |
+| `__TEXT.__swift_as_ret` | `0xe14` | `0xe24` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x1930` | `0x193c` | **`+0xc`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb70` | `0xb68` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -41.1.9.0.0
--  __TEXT.__text: 0x2b4148
 +41.1.10.0.0
-+  __TEXT.__text: 0x2b1ac8
-   __TEXT.__objc_methlist: 0x5a4
--  __TEXT.__cstring: 0x574a
--  __TEXT.__const: 0x27610
--  __TEXT.__swift5_typeref: 0x8d69
--  __TEXT.__constg_swiftt: 0x7824
--  __TEXT.__swift5_reflstr: 0x4c2c
--  __TEXT.__swift5_fieldmd: 0x7550
--  __TEXT.__swift5_builtin: 0x460
--  __TEXT.__swift5_assocty: 0xd48
--  __TEXT.__swift5_proto: 0x190c
--  __TEXT.__swift5_types: 0x88c
--  __TEXT.__oslogstring: 0x3d89
-+  __TEXT.__cstring: 0x582a
-+  __TEXT.__const: 0x27d30
-+  __TEXT.__swift5_typeref: 0x8ec9
-+  __TEXT.__constg_swiftt: 0x78e4
-+  __TEXT.__swift5_reflstr: 0x4dbc
-+  __TEXT.__swift5_fieldmd: 0x7690
-+  __TEXT.__swift5_builtin: 0x474
-+  __TEXT.__swift5_assocty: 0xd90
-+  __TEXT.__swift5_proto: 0x1960
-+  __TEXT.__swift5_types: 0x8a4
-+  __TEXT.__oslogstring: 0x3e49
-   __TEXT.__swift5_protos: 0x15c
--  __TEXT.__swift5_capture: 0x83c4
--  __TEXT.__swift_as_entry: 0xccc
--  __TEXT.__swift_as_ret: 0xe14
--  __TEXT.__swift_as_cont: 0x1930
-+  __TEXT.__swift_as_entry: 0xcdc
-+  __TEXT.__swift_as_ret: 0xe24
-+  __TEXT.__swift_as_cont: 0x193c
-+  __TEXT.__swift5_capture: 0x8438
-   __TEXT.__swift5_types2: 0xc
--  __TEXT.__swift5_acfuncs: 0x5dc
--  __TEXT.__swift5_mpenum: 0x168
--  __TEXT.__unwind_info: 0x11358
--  __TEXT.__eh_frame: 0x28888
-+  __TEXT.__swift5_mpenum: 0x178
-+  __TEXT.__swift5_acfuncs: 0x5c8
-+  __TEXT.__unwind_info: 0x11220
-+  __TEXT.__eh_frame: 0x28c04
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x178
-   __DATA_CONST.__objc_protolist: 0x78
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb70
-+  __DATA_CONST.__objc_selrefs: 0xb68
-   __DATA_CONST.__objc_protorefs: 0x40
--  __DATA_CONST.__got: 0xe48
--  __AUTH_CONST.__const: 0x1f1e8
--  __AUTH_CONST.__objc_const: 0x3e48
--  __AUTH_CONST.__auth_got: 0x1ac0
-+  __DATA_CONST.__got: 0xe98
-+  __AUTH_CONST.__const: 0x1f600
-+  __AUTH_CONST.__objc_const: 0x3e68
-+  __AUTH_CONST.__auth_got: 0x1ad8
-   __AUTH.__objc_data: 0x90
--  __AUTH.__data: 0x5a88
--  __DATA.__data: 0x6418
--  __DATA.__common: 0x1c28
-+  __AUTH.__data: 0x5bc0
-+  __DATA.__data: 0x64e8
-+  __DATA.__common: 0x1c68
-   __DATA_DIRTY.__objc_data: 0x8e0
--  __DATA_DIRTY.__data: 0x4a10
--  __DATA_DIRTY.__bss: 0xf00
-+  __DATA_DIRTY.__data: 0x49a0
-+  __DATA_DIRTY.__bss: 0xe80
-   __DATA_DIRTY.__common: 0x340
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 21149
--  Symbols:   4833
+-  Functions: 21145
+-  Symbols:   4520
 -  CStrings:  867
-+  Functions: 21357
-+  Symbols:   4620
++  Functions: 21352
++  Symbols:   4308
 +  CStrings:  875
- 
 Symbols:
 + _LNConnectionErrorDomain
 + _LNConnectionLSRestrictionReasonUserInfoKey
@@ -168,9 +126,6 @@ Symbols:
 + _associated conformance 18AppIntentsServices0aB21Protobuf_HostMessagesV05FetchA19DescriptionResponseV7SuccessV11RestrictionVSHAASQ
 + _associated conformance 18AppIntentsServices16RemoteDispatcherC19InitializationErrorOSHAASQ
 + _associated conformance So19LSRestrictionReasonVSHSCSQ
-+ _objc_msgSend$checkRestrictionsForBundleIdentifier:error:
-+ _objc_msgSend$setProcessInstanceIdentifier:
-+ _objc_msgSend$userInfo
 + _symbolic Say_____G 18AppIntentsServices0aB21Protobuf_HostMessagesV05FetchA19DescriptionResponseV7SuccessV11RestrictionV4KindO
 + _symbolic ScCy__________G 18AppIntentsServices0A11DescriptionV16RestrictionStateV s5NeverO
 + _symbolic ScCy___________pG 18AppIntentsServices0A11DescriptionV16RestrictionStateV s5ErrorP
@@ -510,10 +465,6 @@ Symbols:
 - ___swift_store_extra_inhabitant_index.867Tm
 - ___swift_store_extra_inhabitant_index.903Tm
 - _associated conformance 18AppIntentsServices16RemoteDispatcherC19InitializationError025_9E7BB63E21FD497EF1B4BFF3M6FDD463LLOSHAASQ
-- _objc_msgSend$policyWithActionMetadata:
-- _objc_msgSend$policyWithActionMetadata:signals:
-- _objc_msgSend$policyWithEntityMetadata:
-- _objc_msgSend$policyWithEntityQueryMetadata:
 - _symbolic ScCy___________pG 18AppIntentsServices16RemoteDispatcherC0D11QueryResult025_9E7BB63E21FD497EF1B4BFF3M6FDD463LLV s5ErrorP
 - _symbolic _____ 18AppIntentsServices16RemoteDispatcherC07PerformA21IntentDelegateWrapper025_9E7BB63E21FD497EF1B4BFF3O6FDD463LLC
 - _symbolic _____ 18AppIntentsServices16RemoteDispatcherC0D11QueryResult025_9E7BB63E21FD497EF1B4BFF3M6FDD463LLV

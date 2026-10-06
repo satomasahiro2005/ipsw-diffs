@@ -2,6 +2,6 @@
 
 > `/System/Library/PrivateFrameworks/AXAssetLoader.framework/Support/axassetsd`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__eh_frame`

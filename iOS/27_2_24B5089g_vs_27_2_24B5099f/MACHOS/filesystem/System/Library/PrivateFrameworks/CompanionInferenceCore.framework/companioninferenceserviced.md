@@ -2,6 +2,6 @@
 
 > `/System/Library/PrivateFrameworks/CompanionInferenceCore.framework/companioninferenceserviced`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__DATA.__objc_selrefs`

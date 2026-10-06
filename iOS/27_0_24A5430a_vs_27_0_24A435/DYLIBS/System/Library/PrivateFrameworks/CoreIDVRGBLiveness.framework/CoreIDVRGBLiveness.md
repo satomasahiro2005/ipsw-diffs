@@ -2,86 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/CoreIDVRGBLiveness.framework/CoreIDVRGBLiveness`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6f04c` | `0x76f7c` | **`+0x7f30`** |
+| `__TEXT.__swift5_typeref` | `0x94be` | `0x9e94` | **`+0x9d6`** |
+| `__TEXT.__const` | `0x4374` | `0x4904` | **`+0x590`** |
+| `__AUTH_CONST.__objc_const` | `0x2028` | `0x25b0` | **`+0x588`** |
+| `__DATA.__bss` | `0x2f60` | `0x3360` | **`+0x400`** |
+| `__AUTH_CONST.__const` | `0x2778` | `0x2b60` | **`+0x3e8`** |
+| `__AUTH.__objc_data` | `0x828` | `0xbd0` | **`+0x3a8`** |
+| `__TEXT.__swift5_reflstr` | `0x2501` | `0x2851` | **`+0x350`** |
+| `__TEXT.__swift5_fieldmd` | `0x1bb0` | `0x1e84` | **`+0x2d4`** |
+| `__DATA.__data` | `0x1a00` | `0x1c50` | **`+0x250`** |
+| `__TEXT.__constg_swiftt` | `0x1984` | `0x1b54` | **`+0x1d0`** |
+| `__TEXT.__unwind_info` | `0x1528` | `0x16f8` | **`+0x1d0`** |
+| `__TEXT.__eh_frame` | `0x2164` | `0x22bc` | **`+0x158`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa40` | `0xb88` | **`+0x148`** |
+| `__AUTH.__data` | `0x1830` | `0x1970` | **`+0x140`** |
+| `__TEXT.__objc_methlist` | `0x40c` | `0x544` | **`+0x138`** |
+| `__AUTH_CONST.__auth_got` | `0x1098` | `0x11c8` | **`+0x130`** |
+| `__TEXT.__cstring` | `0x3e11` | `0x3f01` | **`+0xf0`** |
+| `__TEXT.__swift5_assocty` | `0x300` | `0x368` | **`+0x68`** |
+| `__TEXT.__swift5_types` | `0x118` | `0x144` | **`+0x2c`** |
+| `__DATA.__common` | `0xa0` | `0xc8` | **`+0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x80` | `0xa8` | **`+0x28`** |
+| `__TEXT.__swift5_proto` | `0x180` | `0x1a0` | **`+0x20`** |
+| `__TEXT.__swift5_capture` | `0x714` | `0x728` | **`+0x14`** |
+| `__DATA_CONST.__const` | `0x250` | `0x260` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
- 9.42.0.0.0
--  __TEXT.__text: 0x6f04c
--  __TEXT.__objc_methlist: 0x40c
--  __TEXT.__const: 0x4374
--  __TEXT.__swift5_typeref: 0x94be
--  __TEXT.__swift5_fieldmd: 0x1bb0
--  __TEXT.__constg_swiftt: 0x1984
--  __TEXT.__swift5_reflstr: 0x2501
-+  __TEXT.__text: 0x76f7c
-+  __TEXT.__objc_methlist: 0x544
-+  __TEXT.__const: 0x4904
-+  __TEXT.__swift5_typeref: 0x9e94
-+  __TEXT.__swift5_fieldmd: 0x1e84
-+  __TEXT.__constg_swiftt: 0x1b54
-+  __TEXT.__swift5_reflstr: 0x2851
-   __TEXT.__swift5_builtin: 0x140
--  __TEXT.__swift5_assocty: 0x300
--  __TEXT.__cstring: 0x3e11
-+  __TEXT.__swift5_assocty: 0x368
-+  __TEXT.__cstring: 0x3f01
-   __TEXT.__oslogstring: 0x239e
--  __TEXT.__swift5_capture: 0x714
-+  __TEXT.__swift5_capture: 0x728
-   __TEXT.__swift5_protos: 0x1c
--  __TEXT.__swift5_proto: 0x180
--  __TEXT.__swift5_types: 0x118
-+  __TEXT.__swift5_proto: 0x1a0
-+  __TEXT.__swift5_types: 0x144
-   __TEXT.__swift_as_entry: 0x80
-   __TEXT.__swift_as_ret: 0xa0
-   __TEXT.__swift_as_cont: 0x16c
--  __TEXT.__unwind_info: 0x1528
--  __TEXT.__eh_frame: 0x2164
-+  __TEXT.__unwind_info: 0x16f8
-+  __TEXT.__eh_frame: 0x22bc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x250
--  __DATA_CONST.__objc_classlist: 0x80
-+  __DATA_CONST.__const: 0x260
-+  __DATA_CONST.__objc_classlist: 0xa8
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa40
-+  __DATA_CONST.__objc_selrefs: 0xb88
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2778
--  __AUTH_CONST.__objc_const: 0x2028
--  __AUTH_CONST.__auth_got: 0x1098
--  __AUTH.__objc_data: 0x828
--  __AUTH.__data: 0x1830
--  __DATA.__data: 0x1a00
--  __DATA.__common: 0xa0
-+  __AUTH_CONST.__const: 0x2b60
-+  __AUTH_CONST.__objc_const: 0x25b0
-+  __AUTH_CONST.__auth_got: 0x11c8
-+  __AUTH.__objc_data: 0xbd0
-+  __AUTH.__data: 0x1970
-+  __DATA.__data: 0x1c50
-+  __DATA.__common: 0xc8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2113
--  Symbols:   1297
+-  Symbols:   1016
 -  CStrings:  426
 +  Functions: 2264
-+  Symbols:   1436
++  Symbols:   1117
 +  CStrings:  433
- 
 Symbols:
 + _CATransform3DMakeRotation
 + _CGColorCreateGenericGray
@@ -140,44 +100,6 @@ Symbols:
 + _kCAFillModeBoth
 + _kCAFillModeForwards
 + _kCAFilterGaussianBlur
-+ _objc_msgSend$activationState
-+ _objc_msgSend$addSubview:
-+ _objc_msgSend$connectedScenes
-+ _objc_msgSend$effectiveGeometry
-+ _objc_msgSend$initWithControlPoints::::
-+ _objc_msgSend$initWithType:
-+ _objc_msgSend$insertSublayer:atIndex:
-+ _objc_msgSend$interfaceOrientation
-+ _objc_msgSend$resolvedColorWithTraitCollection:
-+ _objc_msgSend$screen
-+ _objc_msgSend$setBeginTime:
-+ _objc_msgSend$setCornerCurve:
-+ _objc_msgSend$setDamping:
-+ _objc_msgSend$setDisableActions:
-+ _objc_msgSend$setFillMode:
-+ _objc_msgSend$setFilters:
-+ _objc_msgSend$setInitialVelocity:
-+ _objc_msgSend$setMask:
-+ _objc_msgSend$setMaskedCorners:
-+ _objc_msgSend$setMasksToBounds:
-+ _objc_msgSend$setMass:
-+ _objc_msgSend$setPosition:
-+ _objc_msgSend$setSpeed:
-+ _objc_msgSend$setStiffness:
-+ _objc_msgSend$setStrokeEnd:
-+ _objc_msgSend$setTimeOffset:
-+ _objc_msgSend$setTransform:
-+ _objc_msgSend$setValue:forKey:
-+ _objc_msgSend$settlingDuration
-+ _objc_msgSend$sharedApplication
-+ _objc_msgSend$systemBackgroundColor
-+ _objc_msgSend$systemGray3Color
-+ _objc_msgSend$systemGray4Color
-+ _objc_msgSend$systemGray6Color
-+ _objc_msgSend$tertiaryLabelColor
-+ _objc_msgSend$traitCollection
-+ _objc_msgSend$traitCollectionWithUserInterfaceStyle:
-+ _objc_msgSend$windowScene
 + _swift_coroFrameAlloc
 + _swift_dynamicCastClassUnconditional
 + _symbolic $ss12CaseIterableP

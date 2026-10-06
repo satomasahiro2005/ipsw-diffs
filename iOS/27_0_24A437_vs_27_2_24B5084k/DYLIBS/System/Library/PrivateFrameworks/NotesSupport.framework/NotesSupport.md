@@ -2,94 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/NotesSupport.framework/NotesSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x585dc` | `0x584fc` | **`-0xe0`** |
+| `__TEXT.__oslogstring` | `0x4496` | `0x4526` | **`+0x90`** |
+| `__AUTH_CONST.__const` | `0x16a0` | `0x1620` | **`-0x80`** |
+| `__AUTH_CONST.__cfstring` | `0x4640` | `0x45e0` | **`-0x60`** |
+| `__TEXT.__cstring` | `0x4749` | `0x4709` | **`-0x40`** |
+| `__DATA_DIRTY.__bss` | `0x741` | `0x709` | **`-0x38`** |
+| `__TEXT.__objc_methlist` | `0x4460` | `0x4480` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x13a8` | `0x1390` | **`-0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3258` | `0x3270` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x1d48` | `0x1d30` | **`-0x18`** |
+| `__DATA.__data` | `0x6f4` | `0x704` | **`+0x10`** |
+| `__TEXT.__const` | `0xb5c` | `0xb6c` | **`+0x10`** |
+| `__TEXT.__eh_frame` | `0x7a0` | `0x7b0` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0xec` | `0xde` | **`-0xe`** |
+| `__TEXT.__swift_as_cont` | `0x2c` | `0x30` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3001.2.2.0.0
--  __TEXT.__text: 0x55ae8
 +3001.40.8.100.1
-+  __TEXT.__text: 0x55a30
-   __TEXT.__delay_helper: 0x2cc
--  __TEXT.__objc_methlist: 0x4460
--  __TEXT.__const: 0xb5c
--  __TEXT.__cstring: 0x4749
-+  __TEXT.__objc_methlist: 0x4480
-+  __TEXT.__const: 0xb6c
-+  __TEXT.__cstring: 0x4709
-   __TEXT.__gcc_except_tab: 0xef0
--  __TEXT.__oslogstring: 0x4496
-+  __TEXT.__oslogstring: 0x4526
-   __TEXT.__ustring: 0x18
-   __TEXT.__dlopen_cstrs: 0x5a
-   __TEXT.__swift5_typeref: 0x2bb
--  __TEXT.__constg_swiftt: 0x228
--  __TEXT.__swift5_reflstr: 0xec
--  __TEXT.__swift5_fieldmd: 0x1c0
--  __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_capture: 0x210
--  __TEXT.__swift5_proto: 0x34
-+  __TEXT.__constg_swiftt: 0x228
-+  __TEXT.__swift5_builtin: 0x3c
-+  __TEXT.__swift5_reflstr: 0xde
-+  __TEXT.__swift5_fieldmd: 0x1c0
-   __TEXT.__swift5_types: 0x2c
-+  __TEXT.__swift5_proto: 0x34
-   __TEXT.__swift_as_entry: 0x30
-   __TEXT.__swift_as_ret: 0x30
--  __TEXT.__swift_as_cont: 0x2c
--  __TEXT.__unwind_info: 0x25e8
--  __TEXT.__eh_frame: 0x7a0
-+  __TEXT.__swift_as_cont: 0x30
-+  __TEXT.__unwind_info: 0x25c0
-+  __TEXT.__eh_frame: 0x7b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x13a8
-+  __DATA_CONST.__const: 0x1390
-   __DATA_CONST.__objc_classlist: 0x1f8
-   __DATA_CONST.__objc_catlist: 0x128
-   __DATA_CONST.__objc_protolist: 0x78
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3258
-+  __DATA_CONST.__objc_selrefs: 0x3270
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__objc_superrefs: 0x100
-   __DATA_CONST.__objc_arraydata: 0x1a8
-   __DATA_CONST.__got: 0x898
--  __AUTH_CONST.__const: 0x16a0
--  __AUTH_CONST.__cfstring: 0x4640
-+  __AUTH_CONST.__const: 0x1620
-+  __AUTH_CONST.__cfstring: 0x45e0
-   __AUTH_CONST.__objc_const: 0x6028
-   __AUTH_CONST.__objc_arrayobj: 0x150
-   __AUTH_CONST.__objc_intobj: 0x1b0
 
-   __AUTH.__objc_data: 0x170
-   __AUTH.__data: 0xa0
-   __DATA.__objc_ivar: 0x230
--  __DATA.__data: 0x6f4
-+  __DATA.__data: 0x704
-   __DATA_DIRTY.__objc_data: 0x1270
-   __DATA_DIRTY.__data: 0x418
--  __DATA_DIRTY.__bss: 0x741
-+  __DATA_DIRTY.__bss: 0x709
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2578
--  Symbols:   4939
+-  Symbols:   3789
 -  CStrings:  1080
 +  Functions: 2565
-+  Symbols:   4920
++  Symbols:   3768
 +  CStrings:  1068
- 
 Symbols:
 + -[ICCDCSIReindexer fullyStagedSinceLastReindex]
 + -[NSString(IC) ic_rangeIsCaretAtLineStart:]
@@ -100,8 +45,6 @@ Symbols:
 + _kICAddSummaryToNoteIncludesTitleAndDate
 + _kICEnableAddSummaryToNoteMenuItem
 + _kICSummarizationStructureMode
-+ _objc_msgSend$userPersonaNickName
-+ _objc_msgSend$userPersonaType
 + _swift_release_x9
 - GCC_except_table62
 - _ICInternalSettingsIsAppleAccountBrandingEnabled

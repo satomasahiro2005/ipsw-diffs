@@ -2,65 +2,34 @@
 
 > `/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNDArray.framework/MPSNDArray`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x12d188` | `0x10d2bc` | **`-0x1fecc`** |
+| `__TEXT.__const` | `0x8ac30` | `0x928b0` | **`+0x7c80`** |
+| `__TEXT.__gcc_except_tab` | `0x4794` | `0x4bac` | **`+0x418`** |
+| `__TEXT.__cstring` | `0x121d6` | `0x1231c` | **`+0x146`** |
+| `__TEXT.__unwind_info` | `0x1a88` | `0x1b28` | **`+0xa0`** |
+| `__TEXT.__oslogstring` | `0x13` | `0x27` | **`+0x14`** |
+| `__DATA.__bss` | `0x648` | `0x638` | **`-0x10`** |
+| `__DATA_DIRTY.__bss` | `0x78` | `0x88` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x5a8` | `0x5b0` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x17c0` | `0x17c8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -130.0.15.0.0
--  __TEXT.__text: 0x12d188
 +130.0.19.0.0
-+  __TEXT.__text: 0x10d2bc
-   __TEXT.__objc_methlist: 0x7274
--  __TEXT.__const: 0x8ac30
--  __TEXT.__gcc_except_tab: 0x4794
--  __TEXT.__cstring: 0x121d6
--  __TEXT.__oslogstring: 0x13
--  __TEXT.__unwind_info: 0x1a88
-+  __TEXT.__const: 0x928b0
-+  __TEXT.__gcc_except_tab: 0x4bac
-+  __TEXT.__cstring: 0x1231c
-+  __TEXT.__oslogstring: 0x27
-+  __TEXT.__unwind_info: 0x1b28
-   __TEXT.__eh_frame: 0xb8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x880
-   __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x17c0
-+  __DATA_CONST.__objc_selrefs: 0x17c8
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x858
-   __DATA_CONST.__got: 0x350
-
-   __AUTH_CONST.__cfstring: 0x9260
-   __AUTH_CONST.__objc_const: 0xf7d0
-   __AUTH_CONST.__weak_auth_got: 0x28
--  __AUTH_CONST.__auth_got: 0x5a8
-+  __AUTH_CONST.__auth_got: 0x5b0
-   __AUTH.__objc_data: 0x50
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x20
-   __DATA.__objc_ivar: 0x7a4
-   __DATA.__data: 0x9c4
--  __DATA.__bss: 0x648
-+  __DATA.__bss: 0x638
-   __DATA_DIRTY.__objc_data: 0x54b0
--  __DATA_DIRTY.__bss: 0x78
-+  __DATA_DIRTY.__bss: 0x88
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOSurface.framework/IOSurface
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2450
--  Symbols:   5511
+-  Symbols:   5061
 -  CStrings:  1669
 +  Functions: 2453
-+  Symbols:   5518
++  Symbols:   5067
 +  CStrings:  1688
- 
 Symbols:
 + -[MPSNDArrayAffineInt4Dequantize workloadStatisticsForSourceArrays:destArrays:kernel:kernelDAGObject:sourceState:encoder:]
 + -[MPSNDArrayConvolution2D workloadStatisticsForSourceArrays:destArrays:kernel:kernelDAGObject:sourceState:encoder:]
@@ -116,8 +85,6 @@ Symbols:
 + __ZN19MPSSignpostMetadata3addIyEERS_PKcT_
 + __ZN29MPSWorkloadStatsEventSignpostC2ERK19MPSSignpostMetadata
 + _matmulA18STable
-+ _objc_msgSend$globalTraceObjectID
-+ _objc_msgSend$workloadStatisticsForSourceArrays:destArrays:kernel:kernelDAGObject:sourceState:encoder:
 - -[MPSNDArrayAffineInt4Dequantize workloadStatisticsForSourceArrays:destArrays:kernel:kernelDAGObject:sourceState:]
 - -[MPSNDArrayConvolution2D workloadStatisticsForSourceArrays:destArrays:kernel:kernelDAGObject:sourceState:]
 - -[MPSNDArrayConvolution2DGradientWithInput workloadStatisticsForSourceArrays:destArrays:kernel:kernelDAGObject:sourceState:]
@@ -166,7 +133,6 @@ Symbols:
 - __ZL44MPSNDArrayQuantizedConvolutionLogCommandLineP24MPSNDArrayMultiaryKernelR28NDArrayConvolutionEncodeDataPK23NDArrayMultiaryCallInfoNSt3__112basic_stringIcNS6_11char_traitsIcEENS6_9allocatorIcEEEEb
 - __ZN28MPSKernelEncodeEventSignpostC2ERK19MPSSignpostMetadata
 - __ZZL28EncodeMatrixMultiplyQ4IntoQ8PKvPU35objcproto24MTLComputeCommandEncoder11objc_objectPU27objcproto16MTLCommandBuffer11objc_objectPK23NDArrayMultiaryCallInfoE9predicate
-- _objc_msgSend$workloadStatisticsForSourceArrays:destArrays:kernel:kernelDAGObject:sourceState:
 CStrings:
 + "AffineInt4Dequantize"
 + "EncoderID"

@@ -2,19 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/UserFS.framework/PlugIns/livefiles_ntfs.dylib`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x41f84
-+  __TEXT.__text: 0x41f64
-   __TEXT.__const: 0xdd0
-   __TEXT.__cstring: 0x13963
-   __TEXT.__oslogstring: 0x108c
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x41f84` | `0x41f64` | **`-0x20`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _ntfs_read_compressed : 3580 -> 3576
 ~ _ntfs_rl_find_vcn_nolock : 124 -> 108
@@ -29,5 +25,4 @@ Functions:
 ~ _ntfs_mst_fixup_post_read : 164 -> 160
 ~ _vfs_fsadd : 1700 -> 1732
 ~ _ntfs_inode_reclaim : 1032 -> 1040
-
 ```

@@ -2,19 +2,22 @@
 
 > `/System/Library/PreferenceBundles/TransferOrResetSettings.bundle/TransferOrResetSettings`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x3d8` | `0x3e0` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__swift5_typeref`
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_arraydata: 0x10
-   __DATA_CONST.__objc_arrayobj: 0x30
-   __DATA_CONST.__auth_got: 0x540
--  __DATA_CONST.__got: 0x3d8
-+  __DATA_CONST.__got: 0x3e0
-   __DATA_CONST.__auth_ptr: 0x90
-   __DATA.__objc_const: 0xb08
-   __DATA.__objc_selrefs: 0x988
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-
+-1259.0.0.0.0
++2027.0.2.0.0
 ```

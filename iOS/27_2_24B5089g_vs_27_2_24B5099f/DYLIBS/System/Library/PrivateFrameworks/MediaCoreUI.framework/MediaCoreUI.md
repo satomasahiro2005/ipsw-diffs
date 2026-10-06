@@ -2,89 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/MediaCoreUI.framework/MediaCoreUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x394648` | `0x39942c` | **`+0x4de4`** |
+| `__TEXT.__swift5_typeref` | `0x21ee2` | `0x224b2` | **`+0x5d0`** |
+| `__TEXT.__const` | `0x36464` | `0x36814` | **`+0x3b0`** |
+| `__DATA.__data` | `0xdcb8` | `0xdfb0` | **`+0x2f8`** |
+| `__DATA.__bss` | `0x11e50` | `0x12100` | **`+0x2b0`** |
+| `__TEXT.__constg_swiftt` | `0x17dcc` | `0x18050` | **`+0x284`** |
+| `__AUTH_CONST.__const` | `0x22638` | `0x228b8` | **`+0x280`** |
+| `__DATA_DIRTY.__data` | `0xdb30` | `0xd960` | **`-0x1d0`** |
+| `__TEXT.__cstring` | `0x5c42` | `0x5d72` | **`+0x130`** |
+| `__TEXT.__swift5_reflstr` | `0xafc7` | `0xb0b7` | **`+0xf0`** |
+| `__TEXT.__unwind_info` | `0xbdc8` | `0xbe98` | **`+0xd0`** |
+| `__TEXT.__swift5_fieldmd` | `0xd2d4` | `0xd390` | **`+0xbc`** |
+| `__AUTH_CONST.__objc_const` | `0xd0f0` | `0xd170` | **`+0x80`** |
+| `__DATA_DIRTY.__bss` | `0x123b0` | `0x12330` | **`-0x80`** |
+| `__TEXT.__swift5_assocty` | `0x3ae0` | `0x3b58` | **`+0x78`** |
+| `__TEXT.__swift5_capture` | `0x45fc` | `0x4670` | **`+0x74`** |
+| `__AUTH_CONST.__auth_got` | `0x3970` | `0x39e0` | **`+0x70`** |
+| `__DATA_DIRTY.__objc_data` | `0x2358` | `0x23a0` | **`+0x48`** |
+| `__DATA_CONST.__got` | `0x20e8` | `0x2118` | **`+0x30`** |
+| `__DATA.__common` | `0x9a0` | `0x980` | **`-0x20`** |
+| `__AUTH.__data` | `0x4850` | `0x4868` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0x10c0` | `0x10d4` | **`+0x14`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2430` | `0x2420` | **`-0x10`** |
+| `__TEXT.__eh_frame` | `0x8b6c` | `0x8b5c` | **`-0x10`** |
+| `__TEXT.__swift5_proto` | `0x11a0` | `0x11b0` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -4026.200.19.0.0
--  __TEXT.__text: 0x37646c
 +4026.200.22.0.0
-+  __TEXT.__text: 0x37af34
-   __TEXT.__objc_methlist: 0x2ea4
--  __TEXT.__const: 0x36464
--  __TEXT.__swift5_typeref: 0x21ee2
--  __TEXT.__constg_swiftt: 0x17dcc
-+  __TEXT.__const: 0x36814
-+  __TEXT.__constg_swiftt: 0x18050
-+  __TEXT.__swift5_typeref: 0x224b2
-+  __TEXT.__swift5_reflstr: 0xb0b7
-+  __TEXT.__swift5_fieldmd: 0xd390
-   __TEXT.__swift5_builtin: 0x618
--  __TEXT.__swift5_reflstr: 0xafc7
--  __TEXT.__swift5_fieldmd: 0xd2d4
--  __TEXT.__swift5_assocty: 0x3ae0
--  __TEXT.__swift5_proto: 0x11a0
--  __TEXT.__swift5_types: 0x10c0
--  __TEXT.__swift5_capture: 0x45fc
--  __TEXT.__cstring: 0x5c42
-+  __TEXT.__swift5_assocty: 0x3b58
-+  __TEXT.__swift5_proto: 0x11b0
-+  __TEXT.__swift5_types: 0x10d4
-+  __TEXT.__swift5_capture: 0x4670
-+  __TEXT.__cstring: 0x5d72
-   __TEXT.__oslogstring: 0x6822
-   __TEXT.__swift_as_entry: 0x248
-   __TEXT.__swift_as_ret: 0x1c4
-   __TEXT.__swift_as_cont: 0x5b0
-   __TEXT.__swift5_protos: 0x68
-   __TEXT.__swift5_mpenum: 0x1a8
--  __TEXT.__unwind_info: 0xebc0
--  __TEXT.__eh_frame: 0x8b9c
-+  __TEXT.__unwind_info: 0xecc0
-+  __TEXT.__eh_frame: 0x8b8c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x210
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2430
-+  __DATA_CONST.__objc_selrefs: 0x2420
-   __DATA_CONST.__objc_protorefs: 0x108
--  __DATA_CONST.__got: 0x20e8
--  __AUTH_CONST.__const: 0x22638
--  __AUTH_CONST.__objc_const: 0xd0f0
--  __AUTH_CONST.__auth_got: 0x3970
-+  __DATA_CONST.__got: 0x2118
-+  __AUTH_CONST.__const: 0x228b8
-+  __AUTH_CONST.__objc_const: 0xd170
-+  __AUTH_CONST.__auth_got: 0x39e0
-   __AUTH.__objc_data: 0x31f0
--  __AUTH.__data: 0x4850
--  __DATA.__data: 0xdcb8
--  __DATA.__common: 0x9a0
--  __DATA_DIRTY.__objc_data: 0x2358
--  __DATA_DIRTY.__data: 0xdb30
--  __DATA_DIRTY.__bss: 0x123b0
-+  __AUTH.__data: 0x4868
-+  __DATA.__data: 0xdfb0
-+  __DATA.__common: 0x980
-+  __DATA_DIRTY.__objc_data: 0x23a0
-+  __DATA_DIRTY.__data: 0xd960
-+  __DATA_DIRTY.__bss: 0x12330
-   __DATA_DIRTY.__common: 0x5a0
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 18665
 -  Symbols:   7623
 -  CStrings:  919
 +  Functions: 18743
 +  Symbols:   7671
 +  CStrings:  924
- 
 Symbols:
 + ___swift_closure_destructor.106Tm
 + ___swift_closure_destructor.7Tm

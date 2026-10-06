@@ -2,119 +2,71 @@
 
 > `/usr/libexec/proximitycontrold`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x261cfc` | `0x26bfa4` | **`+0xa2a8`** |
+| `__TEXT.__eh_frame` | `0x66cc` | `0x70a4` | **`+0x9d8`** |
+| `__TEXT.__const` | `0x211d8` | `0x21758` | **`+0x580`** |
+| `__DATA.__bss` | `0x2b370` | `0x2b850` | **`+0x4e0`** |
+| `__TEXT.__unwind_info` | `0x6bb8` | `0x6df8` | **`+0x240`** |
+| `__TEXT.__auth_stubs` | `0x3580` | `0x3740` | **`+0x1c0`** |
+| `__TEXT.__cstring` | `0x7d99` | `0x7f51` | **`+0x1b8`** |
+| `__DATA_CONST.__const` | `0x154b0` | `0x155f0` | **`+0x140`** |
+| `__TEXT.__oslogstring` | `0x7d4e` | `0x7e8e` | **`+0x140`** |
+| `__TEXT.__swift5_reflstr` | `0x99a3` | `0x9ab3` | **`+0x110`** |
+| `__DATA.__objc_const` | `0x18930` | `0x18a20` | **`+0xf0`** |
+| `__DATA_CONST.__auth_got` | `0x1ac8` | `0x1ba8` | **`+0xe0`** |
+| `__DATA.__data` | `0x17a88` | `0x17b38` | **`+0xb0`** |
+| `__TEXT.__swift5_capture` | `0x3494` | `0x3528` | **`+0x94`** |
+| `__TEXT.__objc_stubs` | `0x4280` | `0x4200` | **`-0x80`** |
+| `__TEXT.__swift5_fieldmd` | `0x9318` | `0x9394` | **`+0x7c`** |
+| `__DATA_CONST.__auth_ptr` | `0x1a58` | `0x19e8` | **`-0x70`** |
+| `__TEXT.__swift_as_cont` | `0x1cc` | `0x238` | **`+0x6c`** |
+| `__DATA_CONST.__got` | `0xea8` | `0xf10` | **`+0x68`** |
+| `__TEXT.__swift_as_ret` | `0xe4` | `0x134` | **`+0x50`** |
+| `__TEXT.__swift5_typeref` | `0xf1e4` | `0xf19a` | **`-0x4a`** |
+| `__TEXT.__swift5_assocty` | `0xe70` | `0xeb8` | **`+0x48`** |
+| `__TEXT.__swift_as_entry` | `0xf4` | `0x13c` | **`+0x48`** |
+| `__DATA.__objc_data` | `0x38f0` | `0x3930` | **`+0x40`** |
+| `__DATA.__objc_selrefs` | `0x1dd0` | `0x1da0` | **`-0x30`** |
+| `__TEXT.__objc_methname` | `0xdf59` | `0xdf89` | **`+0x30`** |
+| `__TEXT.__swift5_proto` | `0x1790` | `0x17b4` | **`+0x24`** |
+| `__TEXT.__constg_swiftt` | `0xd6f4` | `0xd710` | **`+0x1c`** |
+| `__TEXT.__objc_methlist` | `0x29c0` | `0x29a8` | **`-0x18`** |
+| `__DATA.__common` | `0x888` | `0x878` | **`-0x10`** |
+| `__TEXT.__objc_classname` | `0x2427` | `0x2437` | **`+0x10`** |
+| `__TEXT.__objc_methtype` | `0x36fb` | `0x370b` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x8b4` | `0x8b8` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_protos`
+
+### Other Changes
 
 ```diff
 
 -376.1.2.0.0
--  __TEXT.__text: 0x24f64c
--  __TEXT.__auth_stubs: 0x3580
--  __TEXT.__objc_stubs: 0x4280
--  __TEXT.__objc_methlist: 0x29c0
--  __TEXT.__const: 0x211d8
--  __TEXT.__objc_methname: 0xdf59
--  __TEXT.__objc_classname: 0x2427
--  __TEXT.__cstring: 0x7d99
--  __TEXT.__objc_methtype: 0x36fb
--  __TEXT.__swift5_typeref: 0xf1e4
--  __TEXT.__constg_swiftt: 0xd6f4
--  __TEXT.__swift5_reflstr: 0x99a3
--  __TEXT.__swift5_fieldmd: 0x9318
 +376.10.28.0.0
-+  __TEXT.__text: 0x258f10
-+  __TEXT.__auth_stubs: 0x3740
-+  __TEXT.__objc_stubs: 0x4200
-+  __TEXT.__objc_methlist: 0x29a8
-+  __TEXT.__const: 0x21758
-+  __TEXT.__objc_methname: 0xdf89
-+  __TEXT.__objc_classname: 0x2437
-+  __TEXT.__cstring: 0x7f51
-+  __TEXT.__objc_methtype: 0x370b
-+  __TEXT.__swift5_typeref: 0xf19a
-+  __TEXT.__constg_swiftt: 0xd710
-+  __TEXT.__swift5_reflstr: 0x9ab3
-+  __TEXT.__swift5_fieldmd: 0x9394
-   __TEXT.__swift5_builtin: 0x58c
--  __TEXT.__swift5_assocty: 0xe70
--  __TEXT.__swift5_capture: 0x3494
--  __TEXT.__oslogstring: 0x7d4e
--  __TEXT.__swift5_proto: 0x1790
--  __TEXT.__swift5_types: 0x8b4
--  __TEXT.__swift_as_entry: 0xf4
--  __TEXT.__swift_as_ret: 0xe4
--  __TEXT.__swift_as_cont: 0x1cc
-+  __TEXT.__swift5_assocty: 0xeb8
-+  __TEXT.__swift5_capture: 0x3528
-+  __TEXT.__oslogstring: 0x7e8e
-+  __TEXT.__swift5_proto: 0x17b4
-+  __TEXT.__swift5_types: 0x8b8
-+  __TEXT.__swift_as_entry: 0x13c
-+  __TEXT.__swift_as_ret: 0x134
-+  __TEXT.__swift_as_cont: 0x238
-   __TEXT.__swift5_protos: 0x144
-   __TEXT.__swift5_mpenum: 0x124
--  __TEXT.__unwind_info: 0x8840
--  __TEXT.__eh_frame: 0x66ec
--  __DATA_CONST.__const: 0x154b0
-+  __TEXT.__unwind_info: 0x8b10
-+  __TEXT.__eh_frame: 0x70c4
-+  __DATA_CONST.__const: 0x155f0
-   __DATA_CONST.__cfstring: 0x420
-   __DATA_CONST.__objc_classlist: 0x478
-   __DATA_CONST.__objc_catlist: 0x28
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x180
-   __DATA_CONST.__objc_superrefs: 0x10
--  __DATA_CONST.__auth_got: 0x1ac8
--  __DATA_CONST.__got: 0xea8
--  __DATA_CONST.__auth_ptr: 0x1a58
--  __DATA.__objc_const: 0x18930
--  __DATA.__objc_selrefs: 0x1dd0
-+  __DATA_CONST.__auth_got: 0x1ba8
-+  __DATA_CONST.__got: 0xf10
-+  __DATA_CONST.__auth_ptr: 0x19e8
-+  __DATA.__objc_const: 0x18a20
-+  __DATA.__objc_selrefs: 0x1da0
-   __DATA.__objc_ivar: 0x54
--  __DATA.__objc_data: 0x38f0
--  __DATA.__data: 0x17a88
--  __DATA.__common: 0x888
-+  __DATA.__objc_data: 0x3930
-+  __DATA.__data: 0x17b38
-+  __DATA.__common: 0x878
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
 -  - /usr/lib/swift/libswiftCallKit.dylib
-   - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10290
 -  Symbols:   1633
 -  CStrings:  4175
 +  Functions: 10425
 +  Symbols:   1654
 +  CStrings:  4191
- 
 Symbols:
 + _$s16ProximityControl17PCHandoffSettingsV14handoffEnabledACSb_tcfC
 + _$s16ProximityControl17PCHandoffSettingsV22changeNotificationNameSSvgZ

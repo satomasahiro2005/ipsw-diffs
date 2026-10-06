@@ -2,19 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/JetFoundation.framework/JetFoundation`
 
-```diff
+### Section Size Changes
 
- 10.0.47.0.0
--  __TEXT.__text: 0xa498
-+  __TEXT.__text: 0xa4ac
-   __TEXT.__const: 0xbf8
-   __TEXT.__swift5_typeref: 0x35c
-   __TEXT.__swift5_fieldmd: 0x1e8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa498` | `0xa4ac` | **`+0x14`** |
+
+### Other Changes
+
+```diff
 Symbols:
 + _objc_retain_x20
 - _swift_retain_x9
 Functions:
-~ sub_2875feb50 -> sub_28878cb50 : 716 -> 728
-~ sub_2875ff8c0 -> sub_28878d8cc : 380 -> 384
-~ sub_2875ffe70 -> sub_28878de80 : 936 -> 940
+~ sub_2874efb50 -> sub_288659b50 : 716 -> 728
+~ sub_2874f08c0 -> sub_28865a8cc : 380 -> 384
+~ sub_2874f0e70 -> sub_28865ae80 : 936 -> 940
 ```

@@ -2,122 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/ODIE.framework/Frameworks/libODIECompiler.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf04780` | `0xca4ae4` | **`-0x25fc9c`** |
+| `__TEXT.__cstring` | `0xc3690` | `0xb1773` | **`-0x11f1d`** |
+| `__AUTH_CONST.__const` | `0x69648` | `0x5e0d0` | **`-0xb578`** |
+| `__TEXT.__unwind_info` | `0x36660` | `0x2c948` | **`-0x9d18`** |
+| `__DATA.__data` | `0x5578` | `0x42a8` | **`-0x12d0`** |
+| `__AUTH.__data` | `0x7168` | `0x60b8` | **`-0x10b0`** |
+| `__DATA_CONST.__const` | `0x36f8` | `0x28a0` | **`-0xe58`** |
+| `__TEXT.__const` | `0x37e0` | `0x2a58` | **`-0xd88`** |
+| `__DATA.__bss` | `0x6208` | `0x5840` | **`-0x9c8`** |
+| `__DATA.__common` | `0x2c90` | `0x2688` | **`-0x608`** |
+| `__AUTH_CONST.__auth_got` | `0x780` | `0x710` | **`-0x70`** |
+| `__AUTH.__thread_bss` | `0x268` | `0x230` | **`-0x38`** |
+| `__AUTH.__thread_vars` | `0x138` | `0x108` | **`-0x30`** |
+
+### Other Changes
+
 ```diff
 
 -3600.67.4.0.0
--  __TEXT.__text: 0xf04780 sha256:aaa56a2a5d68941a2350a8201737567f1d57ec91ac16c09518de580fa104454c
--  __TEXT.__init_offsets: 0x30 sha256:2070b48ab19ca710440af2671473feecf376da71016d2147049531c779959477
--  __TEXT.__const: 0x37e0 sha256:67cb9fb209822fa62d0ae47f8cc3cc9e4c2f1eca751ab1be8100a7133db2886e
 +3600.73.1.0.0
-+  __TEXT.__text: 0xca4ae4 sha256:ed8558481664c9475bcf855c0a6c59e530b657e5f30c71629a2a602951044b79
-+  __TEXT.__init_offsets: 0x30 sha256:218f5e6f3180aa6b4ad40c2ae78c42313951b7df533ea35d3fdaa3c87510d20f
-+  __TEXT.__const: 0x2a58 sha256:8279f2456d9e301adc4a85f3fae1fbc865c1c82c14d8a9422b0ef154ccc51736
-   __TEXT.__oslogstring: 0x3b sha256:c55ff40b86cab20dd7795c821362a26b59da7595a0b2a37a5678c3d6036447e9
--  __TEXT.__cstring: 0xc3690 sha256:afb50387f0e9f020038101405a8451de8dcaf95d312a2ad02e7b0f7d194de108
--  __TEXT.__unwind_info: 0x36660 sha256:03df4cc6e590d193bfe2afab058d73933b691b3f6a666863075efb1a1aa5612e
--  __TEXT.__eh_frame: 0x128 sha256:92fbc7148086332bc151fd27b8b4da4fa134c8bd53cff671389c5f7a6880b9d5
-+  __TEXT.__cstring: 0xb1773 sha256:bcaa41d21eb09752e701b97db0f55c4c21d3631703db3d08267f087ba541378b
-+  __TEXT.__unwind_info: 0x2c948 sha256:5e823e2cd9f2c1fbc5aa754357ec225571a75188d6e2a240ab6c03824a7c5141
-+  __TEXT.__eh_frame: 0x128 sha256:9e3d70173c44977d3431abccdb16bc086bc717a38beeb268f10015c015b4d3a8
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x36f8 sha256:64695344e6e4dbaf36d832e616a551665dd355dd0f22f9fdac0740510ef4e011
-+  __DATA_CONST.__const: 0x28a0 sha256:a861e9487bf12ec97b8ae12f09d00d4906832aba811879a4c13beed47529d3be
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x69648 sha256:b1226659a62ee441d24a6927c80f655510af1df460b26f4cac2acd03fb671ae1
--  __AUTH_CONST.__weak_auth_got: 0x48 sha256:2571479856971505a8d80dcb6d9fa39ff7fcd267144b07ce64c54c9a79f1f089
--  __AUTH_CONST.__auth_got: 0x780 sha256:155e437b946ac82ae591ff382b8d19efda9397b2282672dbabd91ec31ce8a651
--  __AUTH.__data: 0x7168 sha256:42b7b90351b52aa95c38ec952b759e837f9a03b35cad56e32eb56ba8f8218475
--  __AUTH.__thread_vars: 0x138 sha256:a242bc56319358af0d3ee8de94bfca24ff455c92d1f6afa9432abd54d753c7d3
--  __AUTH.__thread_bss: 0x268 sha256:f9d54bbe3ccaf08564c2928c55218a3f696989a05dffc8edf057773751aae153
--  __DATA.__data: 0x5578 sha256:7ed8a847e2ef699cd2fc05cf52a878f4a508676a509d851ec0beea286404cd0b
--  __DATA.__bss: 0x6208 sha256:eeb93314b053584b14e51f692524e25aae4c7889d9bfde3d0b348cbc867adba9
--  __DATA.__common: 0x2c90 sha256:f246c1c08fc8c90bbb1503ba30a40110626be5cf87fc15544a3f00a61259ff7d
-+  __AUTH_CONST.__const: 0x5e0d0 sha256:224e314824cda8bbcf3c87bfdeb248bdbcb57902b09cb4f3e31d24987c2216c1
-+  __AUTH_CONST.__weak_auth_got: 0x48 sha256:7444ed4ec3823f7668c918794e7c02773b8f5d601273a38af2eab1b54f94adfc
-+  __AUTH_CONST.__auth_got: 0x710 sha256:285d27b52114b97387abdce62bf55e9e613a68e56e5c5727e4c056d76f211d6b
-+  __AUTH.__data: 0x60b8 sha256:bcea58d4cc3ef25b27db8cea8273f7a663dcf28d6a503de98abaa4098731bef9
-+  __AUTH.__thread_vars: 0x108 sha256:d83bb1e0caab462c9be4b48e0885e663ef8e43b7272d4ef819319f3c6f70175d
-+  __AUTH.__thread_bss: 0x230 sha256:738c079dff6c9b77a0891ac42db1cabcab933a672b14aed8ecfcf94c0e77bb40
-+  __DATA.__data: 0x42a8 sha256:d1bb9f43cf318a15faa410cc4fcf971cbf38574f69f02e706ea861fd816c001e
-+  __DATA.__bss: 0x5840 sha256:c58d430e8ca6032fb46a35447f23ee894fe6551dbdb02564005dfce3a5a73af4
-+  __DATA.__common: 0x2688 sha256:495693c8c23230c8913ab03b7ec61395f500a44563614536984e3dc6279e45ae
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
--  UUID: A1D29138-3AAB-3EBC-BEEE-1924FCF19403
+
 -  Functions: 90686
--  Symbols:   194577
+-  Symbols:   100531
 -  CStrings:  13229
-+  UUID: AE5536B9-8932-3A71-9159-4D8C280ACE95
 +  Functions: 74661
-+  Symbols:   160786
++  Symbols:   83160
 +  CStrings:  12168
- 
 Symbols:
-+ _.str.240
-+ _.str.245
-+ _.str.282
-+ _.str.288
-+ _.str.315
-+ _.str.317
-+ _.str.321
-+ _.str.323
-+ _.str.334
-+ _.str.356
-+ _.str.379
-+ _.str.380
-+ _.str.384
-+ _.str.393
-+ _.str.411
-+ _.str.424
-+ _.str.428
-+ _.str.429
-+ _.str.430
-+ _.str.437
-+ _.str.451
-+ _.str.495
-+ _.str.500
-+ _.str.501
-+ _.str.502
-+ _.str.516
-+ _.str.517
-+ _.str.518
-+ _.str.525
-+ _.str.540
-+ _.str.550
-+ _.str.555
-+ _.str.569
-+ _.str.573
-+ _.str.574
-+ _.str.575
-+ _.str.604
-+ _.str.609
-+ _.str.611
-+ _.str.613
-+ _.str.614
-+ _.str.618
-+ _.str.621
-+ _.str.622
-+ _.str.625
-+ _.str.632
-+ _.str.633
-+ _.str.634
-+ _.str.635
-+ _.str.636
-+ _.str.637
-+ _.str.649
-+ _.str.650
-+ _.str.651
-+ _.str.652
-+ _.str.653
-+ _.str.666
-+ _.str.693
-+ _.str.695
-+ _.str.710
-+ _.str.712
-+ _.str.713
-+ _.str.714
-+ _.str.823
-+ __MergedGlobals.2463
 + __ZGVZN4mlir6detail14TypeIDResolverINS_4udml20LifecycleOpInterfaceEvE13resolveTypeIDEvE2id
 + __ZL24maybeReshapeQuantOperandN4mlir5ValueEN4llvm8ArrayRefIxEERNS_20ImplicitLocOpBuilderE
 + __ZL9odixDim32x
@@ -1969,93 +1885,6 @@ Symbols:
 + __ZZNSt3__16vectorINS_10unique_ptrIN4mlir14RewritePatternENS_14default_deleteIS3_EEEENS_9allocatorIS6_EEE12emplace_backIJNS1_INS2_4ODIE8Compiler12_GLOBAL__N_117DelegateOpPatternENS4_ISE_EEEEEEERS6_DpOT_ENKUlvE0_clEv
 + __ZZNSt3__16vectorINS_10unique_ptrIN4mlir14RewritePatternENS_14default_deleteIS3_EEEENS_9allocatorIS6_EEE12emplace_backIJNS1_INS2_4ODIE8Compiler12_GLOBAL__N_123StripUnknownExternalOpsIJNS2_6coreai7GraphOpEEEENS4_ISH_EEEEEEERS6_DpOT_ENKUlvE0_clEv
 + __ZZNSt3__16vectorINS_10unique_ptrIN4mlir14RewritePatternENS_14default_deleteIS3_EEEENS_9allocatorIS6_EEE12emplace_backIJNS1_INS2_4ODIE8Compiler12_GLOBAL__N_124GenericConversionPatternIJNS2_6coreai10ConstantOpENSF_8OutputOpENSF_8InvokeOpENSF_15IsolatedGroupOpENSF_7YieldOpENSF_6CastOpENSF_13CreateTokenOpENSF_11JoinTokenOpENSF_12ReadHandleOpENSF_13WriteHandleOpEEEENS4_ISQ_EEEEEEERS6_DpOT_ENKUlvE0_clEv
-- _.str.1052
-- _.str.182
-- _.str.199
-- _.str.227
-- _.str.256
-- _.str.258
-- _.str.284
-- _.str.286
-- _.str.292
-- _.str.299
-- _.str.309
-- _.str.312
-- _.str.314
-- _.str.318
-- _.str.320
-- _.str.322
-- _.str.324
-- _.str.326
-- _.str.330
-- _.str.332
-- _.str.341
-- _.str.348
-- _.str.382
-- _.str.407
-- _.str.421
-- _.str.434
-- _.str.447
-- _.str.448
-- _.str.457
-- _.str.459
-- _.str.461
-- _.str.489
-- _.str.497
-- _.str.498
-- _.str.499
-- _.str.511
-- _.str.513
-- _.str.515
-- _.str.522
-- _.str.526
-- _.str.527
-- _.str.533
-- _.str.535
-- _.str.537
-- _.str.541
-- _.str.542
-- _.str.546
-- _.str.559
-- _.str.562
-- _.str.566
-- _.str.570
-- _.str.572
-- _.str.578
-- _.str.582
-- _.str.583
-- _.str.594
-- _.str.597
-- _.str.605
-- _.str.615
-- _.str.616
-- _.str.617
-- _.str.619
-- _.str.620
-- _.str.624
-- _.str.627
-- _.str.628
-- _.str.631
-- _.str.638
-- _.str.639
-- _.str.641
-- _.str.642
-- _.str.643
-- _.str.658
-- _.str.659
-- _.str.660
-- _.str.661
-- _.str.665
-- _.str.696
-- _.str.699
-- _.str.700
-- _.str.702
-- _.str.708
-- _.str.709
-- _.str.784
-- _.str.786
-- _.str.819
-- __MergedGlobals.2473
 - __ZGVZN4mlir17thread_safe_nullsEvE6stream
 - __ZGVZN4mlir17thread_safe_nullsEvE6stream$tlv$init
 - __ZGVZN4mlir6detail14TypeIDResolverINS_15TilingInterfaceEvE13resolveTypeIDEvE2id
@@ -21266,126 +21095,6 @@ Symbols:
 - ___const._ZN4mlir6tensor13ExpandShapeOp27getODSOperandIndexAndLengthEj.isVariadic
 - _atan2
 - _atan2f
-- _constinit
-- _constinit.102
-- _constinit.107
-- _constinit.111
-- _constinit.113
-- _constinit.115
-- _constinit.117
-- _constinit.120
-- _constinit.122
-- _constinit.126
-- _constinit.127
-- _constinit.131
-- _constinit.132
-- _constinit.142
-- _constinit.143
-- _constinit.146
-- _constinit.147
-- _constinit.151
-- _constinit.152
-- _constinit.154
-- _constinit.155
-- _constinit.157
-- _constinit.158
-- _constinit.159
-- _constinit.160
-- _constinit.163
-- _constinit.164
-- _constinit.165
-- _constinit.166
-- _constinit.170
-- _constinit.171
-- _constinit.173
-- _constinit.174
-- _constinit.177
-- _constinit.178
-- _constinit.180
-- _constinit.181
-- _constinit.182
-- _constinit.183
-- _constinit.187
-- _constinit.188
-- _constinit.190
-- _constinit.191
-- _constinit.194
-- _constinit.198
-- _constinit.202
-- _constinit.203
-- _constinit.207
-- _constinit.208
-- _constinit.212
-- _constinit.213
-- _constinit.217
-- _constinit.218
-- _constinit.220
-- _constinit.221
-- _constinit.225
-- _constinit.226
-- _constinit.227
-- _constinit.228
-- _constinit.232
-- _constinit.233
-- _constinit.237
-- _constinit.238
-- _constinit.240
-- _constinit.241
-- _constinit.243
-- _constinit.244
-- _constinit.246
-- _constinit.247
-- _constinit.248
-- _constinit.249
-- _constinit.250
-- _constinit.251
-- _constinit.252
-- _constinit.253
-- _constinit.254
-- _constinit.255
-- _constinit.256
-- _constinit.258
-- _constinit.260
-- _constinit.261
-- _constinit.262
-- _constinit.263
-- _constinit.264
-- _constinit.265
-- _constinit.266
-- _constinit.270
-- _constinit.271
-- _constinit.272
-- _constinit.273
-- _constinit.274
-- _constinit.275
-- _constinit.281
-- _constinit.578
-- _constinit.66
-- _constinit.67
-- _constinit.68
-- _constinit.69
-- _constinit.70
-- _constinit.71
-- _constinit.72
-- _constinit.73
-- _constinit.74
-- _constinit.75
-- _constinit.76
-- _constinit.77
-- _constinit.78
-- _constinit.79
-- _constinit.80
-- _constinit.81
-- _constinit.82
-- _constinit.83
-- _constinit.84
-- _constinit.85
-- _constinit.86
-- _constinit.87
-- _constinit.92
-- _constinit.93
-- _constinit.97
-- _constinit.98
 - _erfcf
 - _exp2
 - _exp2f
@@ -22796,5 +22505,4 @@ CStrings:
 - "use-rank-reducing-slices"
 - "vector_width"
 - "with kind '"
-
 ```

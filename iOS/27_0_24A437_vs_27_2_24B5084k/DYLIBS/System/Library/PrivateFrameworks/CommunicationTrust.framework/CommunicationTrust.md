@@ -2,111 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/CommunicationTrust.framework/CommunicationTrust`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc050c` | `0xb0cdc` | **`-0xf830`** |
+| `__DATA_DIRTY.__bss` | `0x2b00` | `0x1180` | **`-0x1980`** |
+| `__DATA.__bss` | `0x37e8` | `0x4e28` | **`+0x1640`** |
+| `__DATA_DIRTY.__data` | `0x1b28` | `0xf48` | **`-0xbe0`** |
+| `__DATA_CONST.__got` | `0x5e0` | `0x0` | **`-0x5e0`** |
+| `__TEXT.__eh_frame` | `0x2fd0` | `0x2b28` | **`-0x4a8`** |
+| `__AUTH_CONST.__const` | `0x9188` | `0x8cf0` | **`-0x498`** |
+| `__AUTH_CONST.__objc_const` | `0x1b00` | `0x1718` | **`-0x3e8`** |
+| `__TEXT.__constg_swiftt` | `0x137c` | `0x1014` | **`-0x368`** |
+| `__TEXT.__const` | `0x54b0` | `0x5180` | **`-0x330`** |
+| `__TEXT.__unwind_info` | `0x2958` | `0x26a0` | **`-0x2b8`** |
+| `__AUTH_CONST.__auth_got` | `0xed8` | `0xc98` | **`-0x240`** |
+| `__TEXT.__swift5_typeref` | `0x1f1f` | `0x1d1f` | **`-0x200`** |
+| `__TEXT.__swift5_capture` | `0x308c` | `0x2e9c` | **`-0x1f0`** |
+| `__TEXT.__swift5_reflstr` | `0x8a0` | `0x6d0` | **`-0x1d0`** |
+| `__DATA.__data` | `0xc80` | `0xe10` | **`+0x190`** |
+| `__DATA_DIRTY.__objc_data` | `0x1b8` | `0x78` | **`-0x140`** |
+| `__AUTH.__data` | `—` | `0x108` | **`+0x108`** |
+| `__TEXT.__swift5_fieldmd` | `0xc30` | `0xb5c` | **`-0xd4`** |
+| `__TEXT.__cstring` | `0x1513` | `0x1463` | **`-0xb0`** |
+| `__TEXT.__swift_as_cont` | `0x118` | `0x1a4` | **`+0x8c`** |
+| `__TEXT.__swift5_assocty` | `0x398` | `0x348` | **`-0x50`** |
+| `__TEXT.__swift_as_entry` | `0xc4` | `0x100` | **`+0x3c`** |
+| `__TEXT.__swift_as_ret` | `0x98` | `0xd0` | **`+0x38`** |
+| `__DATA_CONST.__objc_classlist` | `0x80` | `0x60` | **`-0x20`** |
+| `__TEXT.__oslogstring` | `0x126f` | `0x125f` | **`-0x10`** |
+| `__TEXT.__swift5_protos` | `0x34` | `0x40` | **`+0xc`** |
+| `__DATA_DIRTY.__common` | `0x80` | `0x78` | **`-0x8`** |
+| `__TEXT.__swift5_proto` | `0x344` | `0x33c` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0x144` | `0x148` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -153.100.1.2.29
--  __TEXT.__text: 0xbd2bc
 +156.200.70.2.2
-+  __TEXT.__text: 0xad6a8
-   __TEXT.__objc_methlist: 0x174
--  __TEXT.__swift5_typeref: 0x1f1f
--  __TEXT.__const: 0x54b0
--  __TEXT.__swift5_capture: 0x308c
--  __TEXT.__oslogstring: 0x126f
--  __TEXT.__swift5_fieldmd: 0xc30
--  __TEXT.__constg_swiftt: 0x137c
--  __TEXT.__swift5_reflstr: 0x8a0
-+  __TEXT.__swift5_typeref: 0x1d1f
-+  __TEXT.__const: 0x5180
-+  __TEXT.__swift5_capture: 0x2e9c
-+  __TEXT.__oslogstring: 0x125f
-+  __TEXT.__swift5_fieldmd: 0xb5c
-+  __TEXT.__constg_swiftt: 0x1014
-+  __TEXT.__swift5_reflstr: 0x6d0
-   __TEXT.__swift5_builtin: 0x8c
--  __TEXT.__swift5_assocty: 0x398
--  __TEXT.__cstring: 0x1513
--  __TEXT.__swift5_protos: 0x34
--  __TEXT.__swift5_proto: 0x344
--  __TEXT.__swift5_types: 0x144
--  __TEXT.__swift_as_entry: 0xc4
--  __TEXT.__swift_as_ret: 0x98
--  __TEXT.__swift_as_cont: 0x118
-+  __TEXT.__swift5_assocty: 0x348
-+  __TEXT.__cstring: 0x1463
-+  __TEXT.__swift5_protos: 0x40
-+  __TEXT.__swift5_proto: 0x33c
-+  __TEXT.__swift5_types: 0x148
-+  __TEXT.__swift_as_entry: 0x100
-+  __TEXT.__swift_as_ret: 0xd0
-+  __TEXT.__swift_as_cont: 0x1a4
-   __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__unwind_info: 0x47a0
--  __TEXT.__eh_frame: 0x2fd0
-+  __TEXT.__unwind_info: 0x41a0
-+  __TEXT.__eh_frame: 0x2b28
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x110
--  __DATA_CONST.__objc_classlist: 0x80
-+  __DATA_CONST.__objc_classlist: 0x60
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x298
-   __DATA_CONST.__objc_protorefs: 0x28
--  __DATA_CONST.__got: 0x5e0
--  __AUTH_CONST.__const: 0x9188
--  __AUTH_CONST.__objc_const: 0x1b00
--  __AUTH_CONST.__auth_got: 0xed8
-+  __DATA_CONST.__got: 0x0
-+  __AUTH_CONST.__const: 0x8cf0
-+  __AUTH_CONST.__objc_const: 0x1718
-+  __AUTH_CONST.__auth_got: 0xc98
-   __AUTH.__objc_data: 0x48
--  __DATA.__data: 0xc80
-+  __AUTH.__data: 0x108
-+  __DATA.__data: 0xe10
-   __DATA.__common: 0x168
--  __DATA_DIRTY.__objc_data: 0x1b8
--  __DATA_DIRTY.__data: 0x1b28
--  __DATA_DIRTY.__bss: 0x2b00
--  __DATA_DIRTY.__common: 0x80
-+  __DATA_DIRTY.__objc_data: 0x78
-+  __DATA_DIRTY.__data: 0xf48
-+  __DATA_DIRTY.__bss: 0x1180
-+  __DATA_DIRTY.__common: 0x78
-   - /System/Library/Frameworks/CallKit.framework/CallKit
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/LiveCommunicationKit.framework/LiveCommunicationKit
-   - /System/Library/Frameworks/SensitiveContentAnalysis.framework/SensitiveContentAnalysis
+
 -  - /System/Library/Frameworks/SwiftData.framework/SwiftData
-   - /System/Library/PrivateFrameworks/AppSupport.framework/AppSupport
-   - /System/Library/PrivateFrameworks/ArgumentParserInternal.framework/ArgumentParserInternal
-   - /System/Library/PrivateFrameworks/CallHistory.framework/CallHistory
 
-   - /usr/lib/swift/libswiftMetal.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
 -  - /usr/lib/swift/libswiftObservation.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
-   - /usr/lib/swift/libswiftRegexBuilder.dylib
-   - /usr/lib/swift/libswiftSynchronization.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4556
--  Symbols:   992
+-  Symbols:   935
 -  CStrings:  270
 +  Functions: 4171
-+  Symbols:   920
++  Symbols:   863
 +  CStrings:  262
- 
 Symbols:
 + _associated conformance 18CommunicationTrust18ClientMessageTypesO19DeprecatedBlocklistO12FetchHandlesV10CodingKeys33_E5A9371D726CED4BF35299FDCEC5B728LLOs0J3KeyAAs23CustomStringConvertible
 + _associated conformance 18CommunicationTrust18ClientMessageTypesO19DeprecatedBlocklistO12FetchHandlesV10CodingKeys33_E5A9371D726CED4BF35299FDCEC5B728LLOs0J3KeyAAs28CustomDebugStringConvertible

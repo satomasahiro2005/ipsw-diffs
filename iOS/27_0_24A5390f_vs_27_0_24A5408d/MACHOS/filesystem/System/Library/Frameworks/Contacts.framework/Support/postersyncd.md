@@ -2,6 +2,6 @@
 
 > `/System/Library/Frameworks/Contacts.framework/Support/postersyncd`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__eh_frame`

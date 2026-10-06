@@ -2,80 +2,53 @@
 
 > `/System/ExclaveKit/System/Library/PrivateFrameworks/TokenGenerationInferenceExclaveComponent.framework/TokenGenerationInferenceExclaveComponent`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15ae4` | `0x157f8` | **`-0x2ec`** |
+| `__DATA.__objc_const` | `0x3c0` | `0x478` | **`+0xb8`** |
+| `__DATA.__data` | `0x8c8` | `0x968` | **`+0xa0`** |
+| `__TEXT.__objc_classname` | `0x14e` | `0x1be` | **`+0x70`** |
+| `__TEXT.__cstring` | `0x672` | `0x612` | **`-0x60`** |
+| `__DATA_CONST.__const` | `0x14c8` | `0x1470` | **`-0x58`** |
+| `__TEXT.__const` | `0x1810` | `0x1850` | **`+0x40`** |
+| `__TEXT.__constg_swiftt` | `0x7a0` | `0x7dc` | **`+0x3c`** |
+| `__TEXT.__swift5_fieldmd` | `0xa10` | `0xa2c` | **`+0x1c`** |
+| `__TEXT.__auth_stubs` | `0x8b0` | `0x8c0` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x83c` | `0x84c` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x460` | `0x468` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x20` | `0x28` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x788` | `0x790` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0x50d` | `0x513` | **`+0x6`** |
+| `__TEXT.__swift5_types` | `0xc0` | `0xc4` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__TIGHTBEAM`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__got`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methname`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x15ae4
--  __TEXT.__auth_stubs: 0x8b0
--  __TEXT.__const: 0x1810
--  __TEXT.__cstring: 0x672
--  __TEXT.__objc_classname: 0x14e
-+  __TEXT.__text: 0x157f8
-+  __TEXT.__auth_stubs: 0x8c0
-+  __TEXT.__const: 0x1850
-+  __TEXT.__cstring: 0x612
-+  __TEXT.__objc_classname: 0x1be
-   __TEXT.__objc_methname: 0xe9
-   __TEXT.__objc_methtype: 0x1
--  __TEXT.__constg_swiftt: 0x7a0
--  __TEXT.__swift5_typeref: 0x50d
--  __TEXT.__swift5_reflstr: 0x83c
--  __TEXT.__swift5_fieldmd: 0xa10
-+  __TEXT.__constg_swiftt: 0x7dc
-+  __TEXT.__swift5_typeref: 0x513
-+  __TEXT.__swift5_reflstr: 0x84c
-+  __TEXT.__swift5_fieldmd: 0xa2c
-   __TEXT.__oslogstring: 0xff
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_proto: 0x184
--  __TEXT.__swift5_types: 0xc0
-+  __TEXT.__swift5_types: 0xc4
-   __TEXT.__swift_as_entry: 0x1c
-   __TEXT.__swift_as_ret: 0x18
-   __TEXT.__swift_as_cont: 0x34
-   __TEXT.__gcc_except_tab: 0xd0
-   __TEXT.__swift5_assocty: 0x120
-   __TEXT.__swift5_protos: 0x18
--  __TEXT.__unwind_info: 0x788
-+  __TEXT.__unwind_info: 0x790
-   __TEXT.__eh_frame: 0x20f8
--  __DATA_CONST.__const: 0x14c8
--  __DATA_CONST.__objc_classlist: 0x20
-+  __DATA_CONST.__const: 0x1470
-+  __DATA_CONST.__objc_classlist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x460
-+  __DATA_CONST.__auth_got: 0x468
-   __DATA_CONST.__got: 0x160
-   __DATA_CONST.__auth_ptr: 0x158
--  __DATA.__objc_const: 0x3c0
--  __DATA.__data: 0x8c8
-+  __DATA.__objc_const: 0x478
-+  __DATA.__data: 0x968
-   __DATA.__TIGHTBEAM: 0x10
-   __DATA.__common: 0x18
-   __DATA.__bss: 0x1f00
+-294.0.7.0.0
++297.0.6.0.0
 
-   - /System/ExclaveKit/usr/lib/swift/libswift_Concurrency.dylib
-   - /System/ExclaveKit/usr/lib/swift/libswiftos.dylib
-   Functions: 522
--  Symbols:   4162
+-  Symbols:   1550
 -  CStrings:  43
-+  Symbols:   4183
++  Symbols:   1561
 +  CStrings:  44
- 
-Sections:
-~ __TEXT.__objc_methname : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__TIGHTBEAM : content changed
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInferenceExclaveComponent.build/Objects-normal/arm64e/TokenGenerationInferenceExclaveComponent-4eb9fbc8a672ada793db0f0ec076c7e5.o
 + GCC_except_table304
@@ -108,5 +81,4 @@ CStrings:
 + "_TtC40TokenGenerationInferenceExclaveComponent54TokenGenerationInferenceExclaveComponentHandlerContext"
 + "handler"
 - "invalid handler object, does not conform to TokenGenerationInferenceExclaveComponentMethods"
-
 ```

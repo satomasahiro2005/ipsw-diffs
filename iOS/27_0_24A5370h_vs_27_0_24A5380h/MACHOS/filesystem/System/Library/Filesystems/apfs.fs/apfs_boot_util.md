@@ -2,17 +2,23 @@
 
 > `/System/Library/Filesystems/apfs.fs/apfs_boot_util`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x38f4` | `0x38e4` | **`-0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__cfstring`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x38f4
-+  __TEXT.__text: 0x38e4
-   __TEXT.__auth_stubs: 0x5e0
-   __TEXT.__cstring: 0x1843
-   __TEXT.__const: 0x20
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__cfstring : content changed
+-3283.0.0.0.0
++3283.0.9.502.1
 Functions:
 ~ sub_100000994 : 296 -> 280
-
 ```

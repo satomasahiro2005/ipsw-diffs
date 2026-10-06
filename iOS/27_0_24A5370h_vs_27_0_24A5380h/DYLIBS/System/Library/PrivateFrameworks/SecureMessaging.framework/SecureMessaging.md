@@ -2,81 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/SecureMessaging.framework/SecureMessaging`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3be8b0` | `0x3bf784` | **`+0xed4`** |
+| `__TEXT.__const` | `0x52be0` | `0x532f0` | **`+0x710`** |
+| `__TEXT.__oslogstring` | `0x13379` | `0x13469` | **`+0xf0`** |
+| `__TEXT.__eh_frame` | `0x32310` | `0x32268` | **`-0xa8`** |
+| `__AUTH_CONST.__const` | `0x1add0` | `0x1ae60` | **`+0x90`** |
+| `__TEXT.__swift5_fieldmd` | `0xad94` | `0xadc8` | **`+0x34`** |
+| `__TEXT.__swift5_reflstr` | `0x6746` | `0x6766` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x10c50` | `0x10c30` | **`-0x20`** |
+| `__TEXT.__constg_swiftt` | `0xbb38` | `0xbb54` | **`+0x1c`** |
+| `__TEXT.__swift5_builtin` | `0xf0` | `0x104` | **`+0x14`** |
+| `__TEXT.__swift5_mpenum` | `0x18c` | `0x19c` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0x8e78` | `0x8e7e` | **`+0x6`** |
+| `__TEXT.__swift5_types` | `0xacc` | `0xad0` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0xfe8` | `0xfe4` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x3be8b0
-+  __TEXT.__text: 0x3bf784
-   __TEXT.__objc_methlist: 0x2e0
--  __TEXT.__const: 0x52be0
--  __TEXT.__swift5_typeref: 0x8e78
-+  __TEXT.__const: 0x532f0
-+  __TEXT.__swift5_typeref: 0x8e7e
-   __TEXT.__cstring: 0x350b
--  __TEXT.__constg_swiftt: 0xbb38
--  __TEXT.__swift5_reflstr: 0x6746
--  __TEXT.__swift5_fieldmd: 0xad94
--  __TEXT.__swift5_types: 0xacc
--  __TEXT.__swift_as_entry: 0xfe8
-+  __TEXT.__constg_swiftt: 0xbb54
-+  __TEXT.__swift5_reflstr: 0x6766
-+  __TEXT.__swift5_fieldmd: 0xadc8
-+  __TEXT.__swift5_types: 0xad0
-+  __TEXT.__swift_as_entry: 0xfe4
-   __TEXT.__swift_as_ret: 0x13f0
-   __TEXT.__swift_as_cont: 0x22b8
-   __TEXT.__swift5_protos: 0xfc
-   __TEXT.__swift5_proto: 0x2ac4
-   __TEXT.__swift5_capture: 0x2fb4
--  __TEXT.__oslogstring: 0x13379
-+  __TEXT.__oslogstring: 0x13469
-   __TEXT.__swift5_assocty: 0x1190
--  __TEXT.__swift5_builtin: 0xf0
--  __TEXT.__swift5_mpenum: 0x18c
--  __TEXT.__unwind_info: 0x10c50
--  __TEXT.__eh_frame: 0x32310
-+  __TEXT.__swift5_builtin: 0x104
-+  __TEXT.__swift5_mpenum: 0x19c
-+  __TEXT.__unwind_info: 0x10c30
-+  __TEXT.__eh_frame: 0x32268
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-51.100.1.0.0
++53.100.1.0.0
 
-   __DATA_CONST.__objc_selrefs: 0x230
-   __DATA_CONST.__objc_protorefs: 0x40
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1add0
-+  __AUTH_CONST.__const: 0x1ae60
-   __AUTH_CONST.__objc_const: 0x5008
-   __AUTH_CONST.__auth_got: 0x1498
-   __AUTH.__objc_data: 0x870
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 18330
--  Symbols:   69610
+-  Symbols:   47858
 -  CStrings:  1212
 +  Functions: 18338
-+  Symbols:   69632
++  Symbols:   47877
 +  CStrings:  1214
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
 Symbols:
 + _$s15SecureMessaging3MLSO11EventSenderC30fetchEnhancedGroupRecoveryInfo5groupAC0ghI11FetchResultOSgAC0H0V_tYaF
 + _$s15SecureMessaging3MLSO11EventSenderC30fetchEnhancedGroupRecoveryInfo5groupAC0ghI11FetchResultOSgAC0H0V_tYaFAJyYaYbKcfU_
@@ -190,5 +147,4 @@ CStrings:
 + "EnhancedSelfHealOperation got regular success — falling back to SelfHeal with cached info { identifier: %s }"
 + "EventSender returning enhanced group info { group: %s, fetchIdentifier: %s, result: %s }"
 - "EventSender returning enhanced group info { group: %s, fetchIdentifier: %s, enhancedInfo: %s }"
-
 ```

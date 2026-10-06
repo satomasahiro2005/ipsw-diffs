@@ -2,64 +2,32 @@
 
 > `/System/Library/Frameworks/CoreMIDI.framework/CoreMIDI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `—` | `0x348` | **`+0x348`** |
+| `__DATA_DIRTY.__objc_data` | `0x6e0` | `0x398` | **`-0x348`** |
+| `__TEXT.__text` | `0xa5110` | `0xa5248` | **`+0x138`** |
+| `__TEXT.__oslogstring` | `0x2d4b` | `0x2cbc` | **`-0x8f`** |
+| `__AUTH.__data` | `—` | `0x68` | **`+0x68`** |
+| `__DATA_DIRTY.__data` | `0x68` | `—` | **`-0x68`** |
+| `__TEXT.__gcc_except_tab` | `0xdf94` | `0xdfd4` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x4068` | `0x4060` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xa5110
-+  __TEXT.__text: 0xa5248
-   __TEXT.__realtime: 0x183c
-   __TEXT.__objc_methlist: 0x15c0
-   __TEXT.__const: 0xa48
-   __TEXT.__dlopen_cstrs: 0x4e
--  __TEXT.__gcc_except_tab: 0xdf94
-+  __TEXT.__gcc_except_tab: 0xdfd4
-   __TEXT.__cstring: 0x4576
--  __TEXT.__oslogstring: 0x2d4b
--  __TEXT.__unwind_info: 0x4068
-+  __TEXT.__oslogstring: 0x2cbc
-+  __TEXT.__unwind_info: 0x4060
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-329.0.0.0.0
++330.0.0.0.0
 
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__objc_intobj: 0x60
-   __AUTH_CONST.__auth_got: 0xea8
-+  __AUTH.__objc_data: 0x348
-+  __AUTH.__data: 0x68
-   __DATA.__objc_ivar: 0x20c
-   __DATA.__data: 0x1e0
-   __DATA.__bss: 0x11f0
-   __DATA.__common: 0x190
--  __DATA_DIRTY.__objc_data: 0x6e0
--  __DATA_DIRTY.__data: 0x68
-+  __DATA_DIRTY.__objc_data: 0x398
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2684
+-  Symbols:   5092
+-  CStrings:  1011
 +  Functions: 2683
-   Symbols:   7996
--  CStrings:  1224
-+  CStrings:  1222
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __DATA.__data : content changed
++  Symbols:   5090
++  CStrings:  1009
 Symbols:
 + GCC_except_table1640
 + GCC_except_table1642
@@ -217,9 +185,6 @@ Symbols:
 + GCC_except_table2745
 + GCC_except_table2751
 + GCC_except_table2754
-+ _objc_msgSend$firstChannel
-+ _objc_msgSend$groupOffset
-+ _objc_msgSend$totalChannelCount
 - GCC_except_table1618
 - GCC_except_table1641
 - GCC_except_table1643
@@ -381,5 +346,4 @@ Symbols:
 CStrings:
 - "%25s:%-5d ERROR: Failed to send profile inquiry message to function block.."
 - "%25s:%-5d ERROR: Failed to send profile inquiry message to group.."
-
 ```

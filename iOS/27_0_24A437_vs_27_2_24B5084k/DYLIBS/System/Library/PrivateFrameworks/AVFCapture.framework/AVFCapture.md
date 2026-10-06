@@ -2,91 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/AVFCapture.framework/AVFCapture`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1454a8` | `0x19d57c` | **`+0x580d4`** |
+| `__TEXT.__oslogstring` | `0xa75e` | `0x279df` | **`+0x1d281`** |
+| `__TEXT.__cstring` | `0x2f009` | `0x3ba99` | **`+0xca90`** |
+| `__AUTH_CONST.__cfstring` | `0x16be0` | `0x17660` | **`+0xa80`** |
+| `__TEXT.__gcc_except_tab` | `0x314c` | `0x3804` | **`+0x6b8`** |
+| `__TEXT.__unwind_info` | `0x5768` | `0x59a0` | **`+0x238`** |
+| `__DATA.__common` | `0x1c0` | `0x3d0` | **`+0x210`** |
+| `__DATA.__bss` | `0x900` | `0xa40` | **`+0x140`** |
+| `__DATA_DIRTY.__bss` | `0x4e8` | `0x3d8` | **`-0x110`** |
+| `__DATA_CONST.__const` | `0x9458` | `0x9560` | **`+0x108`** |
+| `__DATA_CONST.__objc_selrefs` | `0x91d8` | `0x92c8` | **`+0xf0`** |
+| `__TEXT.__objc_methlist` | `0x113cc` | `0x114b4` | **`+0xe8`** |
+| `__DATA_DIRTY.__common` | `0x160` | `0x230` | **`+0xd0`** |
+| `__AUTH_CONST.__const` | `0xe10` | `0xe70` | **`+0x60`** |
+| `__AUTH_CONST.__objc_const` | `0x1cac8` | `0x1cb28` | **`+0x60`** |
+| `__DATA_CONST.__objc_arraydata` | `0x4a8` | `0x4f8` | **`+0x50`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x3a8` | `0x3f0` | **`+0x48`** |
+| `__TEXT.__const` | `0xf02` | `0xf42` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x2fa0` | `0x2f78` | **`-0x28`** |
+| `__AUTH_CONST.__auth_got` | `0x1170` | `0x1188` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x1ec8` | `0x1ed0` | **`+0x8`** |
+| `__DATA_DIRTY.__data` | `0x178` | `0x170` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -764.22.13.0.0
--  __TEXT.__text: 0x13fd8c
--  __TEXT.__objc_methlist: 0x113cc
--  __TEXT.__const: 0xf02
--  __TEXT.__gcc_except_tab: 0x314c
--  __TEXT.__cstring: 0x2f009
--  __TEXT.__oslogstring: 0xa75e
 +764.40.4.122.1
-+  __TEXT.__text: 0x198634
-+  __TEXT.__objc_methlist: 0x114b4
-+  __TEXT.__const: 0xf42
-+  __TEXT.__gcc_except_tab: 0x3804
-+  __TEXT.__cstring: 0x3ba99
-+  __TEXT.__oslogstring: 0x279df
-   __TEXT.__dlopen_cstrs: 0x274
-   __TEXT.__ustring: 0x54
-   __TEXT.__swift5_typeref: 0xef
 
-   __TEXT.__swift5_reflstr: 0x24
-   __TEXT.__swift5_fieldmd: 0x50
-   __TEXT.__swift5_types: 0x8
--  __TEXT.__unwind_info: 0x6828
-+  __TEXT.__unwind_info: 0x6a58
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9458
-+  __DATA_CONST.__const: 0x9560
-   __DATA_CONST.__objc_classlist: 0x6c8
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0xb0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x91d8
-+  __DATA_CONST.__objc_selrefs: 0x92c8
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x5f0
--  __DATA_CONST.__objc_arraydata: 0x4a8
--  __DATA_CONST.__got: 0x2fa0
--  __AUTH_CONST.__const: 0xe10
--  __AUTH_CONST.__cfstring: 0x16be0
--  __AUTH_CONST.__objc_const: 0x1cac8
-+  __DATA_CONST.__objc_arraydata: 0x4f8
-+  __DATA_CONST.__got: 0x2f78
-+  __AUTH_CONST.__const: 0xe70
-+  __AUTH_CONST.__cfstring: 0x17660
-+  __AUTH_CONST.__objc_const: 0x1cb28
-   __AUTH_CONST.__objc_intobj: 0xb70
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__objc_arrayobj: 0x3a8
-+  __AUTH_CONST.__objc_arrayobj: 0x3f0
-   __AUTH_CONST.__objc_floatobj: 0x20
--  __AUTH_CONST.__auth_got: 0x1170
-+  __AUTH_CONST.__auth_got: 0x1188
-   __AUTH.__objc_data: 0x2910
-   __AUTH.__data: 0x28
--  __DATA.__objc_ivar: 0x1ec8
-+  __DATA.__objc_ivar: 0x1ed0
-   __DATA.__data: 0xe48
--  __DATA.__common: 0x1c0
-+  __DATA.__common: 0x3d0
-   __DATA_DIRTY.__objc_data: 0x1ae0
--  __DATA_DIRTY.__data: 0x178
--  __DATA_DIRTY.__bss: 0x4e8
--  __DATA_DIRTY.__common: 0x160
-+  __DATA_DIRTY.__data: 0x170
-+  __DATA_DIRTY.__common: 0x230
-+  __DATA_DIRTY.__bss: 0x3d8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVRouting.framework/AVRouting
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7817
--  Symbols:   18208
+-  Symbols:   14430
 -  CStrings:  4187
 +  Functions: 8017
-+  Symbols:   18267
++  Symbols:   14452
 +  CStrings:  6209
- 
 Symbols:
 + +[AVCaptureProprietaryDefaultsSingleton migrateDefaultsFromAppBundleID:newAppBundleID:]
 + -[AVCaptureConnection _additionalContentRotationDegreesForV68ThirdPartyCompatibility]
@@ -326,47 +281,6 @@ Symbols:
 + _gAVSemanticSegmentationMatteTrace
 + _gAVSmartStyleSettingsTrace
 + _kFigCaptureStreamMetadata_LookingAtCameraConfidenceLevel
-+ _objc_msgSend$_additionalContentRotationDegreesForV68ThirdPartyCompatibility
-+ _objc_msgSend$_initWithDevice:previewLayer:suppliesVideoRotationAngleForHorizonLevelPreviewWithoutPreviewLayer:
-+ _objc_msgSend$_initWithDeviceWithoutPreviewLayer:
-+ _objc_msgSend$_metadataConstantValueToName:
-+ _objc_msgSend$_setUpAndUpdateV68ThirdPartyCompatibilityRotationAsynchronouslyIfNeededForDevice:
-+ _objc_msgSend$_setUpV68ThirdPartyCompatibilityRotationCoordinatorForDevice:
-+ _objc_msgSend$_setV68ThirdPartyCompatibilityVideoRotationAngle:
-+ _objc_msgSend$_supportsV68ThirdPartyCompatibilityRotation
-+ _objc_msgSend$_tearDownV68ThirdPartyCompatibilityRotationCoordinatorIfUnusedForDeviceUniqueID:
-+ _objc_msgSend$_updateConstituentDeviceSwitchingBehaviorForSourceDevice:
-+ _objc_msgSend$_updateV68ThirdPartyCompatibilityRotationForAllConnections
-+ _objc_msgSend$_v68ThirdPartyCompatibilityRotationIsNeededForDeviceUniqueID:
-+ _objc_msgSend$_v68ThirdPartyCompatibilityRotationMode
-+ _objc_msgSend$_v68ThirdPartyCompatibilityVideoRotationAngle
-+ _objc_msgSend$cinematicAudioSettings
-+ _objc_msgSend$dotString
-+ _objc_msgSend$fileSystemRepresentation
-+ _objc_msgSend$hasLookingAtCameraConfidence
-+ _objc_msgSend$lookingAtCameraConfidence
-+ _objc_msgSend$metadataObjectsDelegate
-+ _objc_msgSend$migrateDefaultsFromAppBundleID:newAppBundleID:
-+ _objc_msgSend$nonretainedObjectValue
-+ _objc_msgSend$now
-+ _objc_msgSend$objectEnumerator
-+ _objc_msgSend$previewHeight
-+ _objc_msgSend$previewWidth
-+ _objc_msgSend$rawThumbnailHeight
-+ _objc_msgSend$rawThumbnailWidth
-+ _objc_msgSend$sampleBufferDelegate
-+ _objc_msgSend$setAdditionalContentRotationDegrees:
-+ _objc_msgSend$setDateFormat:
-+ _objc_msgSend$setHasLookingAtCameraConfidence:
-+ _objc_msgSend$setLookingAtCameraConfidence:
-+ _objc_msgSend$setVideoRotationAngle:
-+ _objc_msgSend$spiDebugDescription
-+ _objc_msgSend$stringFromDate:
-+ _objc_msgSend$thumbnailContentsDelegate
-+ _objc_msgSend$thumbnailHeight
-+ _objc_msgSend$thumbnailWidth
-+ _objc_msgSend$videoRotationAngleForHorizonLevelPreview
-+ _objc_msgSend$writeToFile:atomically:encoding:error:
 + _objc_release_x27
 + _vpl_pointToString
 + _vpl_rectValueToString
@@ -590,10 +504,6 @@ Symbols:
 - ___block_descriptor_65_e8_32o40o48r_e5_v8?0lr48l8s32l8s40l8
 - ___block_descriptor_74_e8_32o40r_e5_v8?0lr40l8s32l8
 - ___block_descriptor_80_e8_32o40o48o56r64r72r_e5_v8?0lr56l8s32l8r64l8s40l8s48l8r72l8
-- _objc_msgSend$_updateBravoCameraSelectionBehaviorForSourceDevice:
-- _objc_msgSend$ringLightAutoColorEnabled
-- _objc_msgSend$ringLightRecommendedColor
-- _objc_msgSend$setRingLightAutoColorEnabled:
 - _objc_release_x1
 CStrings:
 + "\t%@ -> %@ [label=\"%@\\nenabled: %s\\nactive: %s\\norientation: %d\\nmirrored: %d\",color=%s];\n"

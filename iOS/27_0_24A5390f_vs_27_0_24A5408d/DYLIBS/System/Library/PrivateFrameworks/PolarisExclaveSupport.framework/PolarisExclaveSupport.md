@@ -2,69 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/PolarisExclaveSupport.framework/PolarisExclaveSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd384c` | `0xbd5cc` | **`-0x16280`** |
+| `__AUTH_CONST.__const` | `0x5a20` | `0x2f78` | **`-0x2aa8`** |
+| `__TEXT.__swift5_capture` | `0x118c` | `0x7c` | **`-0x1110`** |
+| `__TEXT.__cstring` | `0x414e` | `0x3cae` | **`-0x4a0`** |
+| `__TEXT.__oslogstring` | `0x338` | `0x205` | **`-0x133`** |
+| `__TEXT.__swift5_typeref` | `0x2486` | `0x240a` | **`-0x7c`** |
+| `__TEXT.__eh_frame` | `0x3e18` | `0x3dd8` | **`-0x40`** |
+| `__AUTH_CONST.__objc_const` | `0x36e0` | `0x3700` | **`+0x20`** |
+| `__TEXT.__const` | `0x6040` | `0x6060` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x2251` | `0x2231` | **`-0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x1068` | `0x1078` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x27a4` | `0x27b0` | **`+0xc`** |
+| `__DATA.__data` | `0xec8` | `0xec0` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x1de0` | `0x1dd8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -256.0.3.0.0
--  __TEXT.__text: 0xd384c
--  __TEXT.__const: 0x6040
 +256.0.5.0.0
-+  __TEXT.__text: 0xbd5cc
-+  __TEXT.__const: 0x6060
-   __TEXT.__constg_swiftt: 0x2584
--  __TEXT.__swift5_typeref: 0x2486
--  __TEXT.__swift5_reflstr: 0x2251
--  __TEXT.__swift5_fieldmd: 0x27a4
-+  __TEXT.__swift5_typeref: 0x240a
-+  __TEXT.__swift5_reflstr: 0x2231
-+  __TEXT.__swift5_fieldmd: 0x27b0
-   __TEXT.__swift5_builtin: 0xa0
--  __TEXT.__oslogstring: 0x338
-+  __TEXT.__oslogstring: 0x205
-   __TEXT.__swift5_proto: 0x40c
-   __TEXT.__swift5_types: 0x27c
--  __TEXT.__cstring: 0x414e
-+  __TEXT.__cstring: 0x3cae
-   __TEXT.__swift5_protos: 0x74
-   __TEXT.__swift5_assocty: 0x108
-   __TEXT.__swift5_mpenum: 0x44
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__swift5_capture: 0x118c
--  __TEXT.__unwind_info: 0x1de0
--  __TEXT.__eh_frame: 0x3e18
-+  __TEXT.__swift5_capture: 0x7c
-+  __TEXT.__unwind_info: 0x1dd8
-+  __TEXT.__eh_frame: 0x3dd8
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x1a8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x5a20
--  __AUTH_CONST.__objc_const: 0x36e0
--  __AUTH_CONST.__auth_got: 0x1068
-+  __AUTH_CONST.__const: 0x2f78
-+  __AUTH_CONST.__objc_const: 0x3700
-+  __AUTH_CONST.__auth_got: 0x1078
-   __AUTH.__objc_data: 0x98
-   __AUTH.__data: 0xd98
--  __DATA.__data: 0xec8
-+  __DATA.__data: 0xec0
-   __DATA.__bss: 0x74a0
-   __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0x3c0
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 2961
 -  Symbols:   7656
 -  CStrings:  420
 +  Functions: 2686
 +  Symbols:   7573
 +  CStrings:  386
- 
 Symbols:
 + _$s14PolarisRuntime15ThreadSafeQueueC11removeFirstxSgyF
 + _$s14PolarisRuntime15ThreadSafeQueueC13lockedForEachyyySi_xtXEF

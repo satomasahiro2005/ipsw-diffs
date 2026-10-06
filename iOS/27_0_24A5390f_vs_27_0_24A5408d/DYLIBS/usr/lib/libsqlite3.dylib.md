@@ -2,27 +2,23 @@
 
 > `/usr/lib/libsqlite3.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x19fd10` | `0x19fee0` | **`+0x1d0`** |
+| `__TEXT.__oslogstring` | `0x7c0` | `0x835` | **`+0x75`** |
+| `__TEXT.__cstring` | `0xcf1b` | `0xcf66` | **`+0x4b`** |
+
+### Other Changes
+
 ```diff
 
 -405.0.0.0.0
--  __TEXT.__text: 0x19fd10
 +406.0.0.0.0
-+  __TEXT.__text: 0x19fee0
-   __TEXT.__const: 0x876c
--  __TEXT.__cstring: 0xcf1b
--  __TEXT.__oslogstring: 0x7c0
-+  __TEXT.__cstring: 0xcf66
-+  __TEXT.__oslogstring: 0x835
-   __TEXT.__unwind_info: 0x1e28
-   __TEXT.__eh_frame: 0x48
-   __TEXT.__auth_stubs: 0x0
 
-   - /usr/lib/libSystem.B.dylib
-   Functions: 2535
-   Symbols:   607
 -  CStrings:  2397
 +  CStrings:  2402
- 
 Functions:
 ~ sub_19ea6ef98 -> sub_19e20ff98 : 44392 -> 44396
 ~ sub_19ea8d4d8 -> sub_19e22e4dc : 9376 -> 9372

@@ -2,94 +2,43 @@
 
 > `/System/Library/Frameworks/USDKit.framework/USDKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2d56ec` | `0x2dafe0` | **`+0x58f4`** |
+| `__TEXT.__eh_frame` | `0xb1228` | `0xb36a0` | **`+0x2478`** |
+| `__TEXT.__unwind_info` | `0x42508` | `0x44440` | **`+0x1f38`** |
+| `__TEXT.__gcc_except_tab` | `0x44dd8` | `0x45a5c` | **`+0xc84`** |
+| `__AUTH_CONST.__const` | `0x23518` | `0x23af0` | **`+0x5d8`** |
+| `__DATA.__bss` | `0x270b0` | `0x274b0` | **`+0x400`** |
+| `__TEXT.__const` | `0x2cbf0` | `0x2cfb5` | **`+0x3c5`** |
+| `__TEXT.__cstring` | `0x170ea` | `0x172ea` | **`+0x200`** |
+| `__TEXT.__swift5_fieldmd` | `0x45dc` | `0x47a4` | **`+0x1c8`** |
+| `__TEXT.__constg_swiftt` | `0x7ad8` | `0x7be0` | **`+0x108`** |
+| `__TEXT.__swift5_reflstr` | `0x1777` | `0x1877` | **`+0x100`** |
+| `__DATA_CONST.__const` | `0x27e0` | `0x28d8` | **`+0xf8`** |
+| `__TEXT.__swift5_typeref` | `0x6298` | `0x6336` | **`+0x9e`** |
+| `__AUTH_CONST.__auth_got` | `0x44d0` | `0x4520` | **`+0x50`** |
+| `__DATA.__data` | `0x4258` | `0x42a0` | **`+0x48`** |
+| `__TEXT.__swift5_assocty` | `0x58a8` | `0x5878` | **`-0x30`** |
+| `__TEXT.__swift5_types` | `0xa00` | `0xa24` | **`+0x24`** |
+| `__TEXT.__swift5_proto` | `0x1d24` | `0x1d44` | **`+0x20`** |
+| `__TEXT.__swift5_builtin` | `0x1310` | `0x1324` | **`+0x14`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2d56ec
--  __TEXT.__const: 0x2cbf0
--  __TEXT.__gcc_except_tab: 0x44dd8
--  __TEXT.__cstring: 0x170ea
--  __TEXT.__swift5_typeref: 0x6298
--  __TEXT.__swift5_reflstr: 0x1777
--  __TEXT.__swift5_assocty: 0x58a8
--  __TEXT.__constg_swiftt: 0x7ad8
--  __TEXT.__swift5_fieldmd: 0x45dc
--  __TEXT.__swift5_builtin: 0x1310
--  __TEXT.__swift5_proto: 0x1d24
--  __TEXT.__swift5_types: 0xa00
-+  __TEXT.__text: 0x2dafe0
-+  __TEXT.__const: 0x2cfb5
-+  __TEXT.__gcc_except_tab: 0x45a5c
-+  __TEXT.__cstring: 0x172ea
-+  __TEXT.__swift5_typeref: 0x6336
-+  __TEXT.__swift5_reflstr: 0x1877
-+  __TEXT.__swift5_assocty: 0x5878
-+  __TEXT.__constg_swiftt: 0x7be0
-+  __TEXT.__swift5_fieldmd: 0x47a4
-+  __TEXT.__swift5_builtin: 0x1324
-+  __TEXT.__swift5_proto: 0x1d44
-+  __TEXT.__swift5_types: 0xa24
-   __TEXT.__swift5_types2: 0x8
-   __TEXT.__swift5_capture: 0x22c
-   __TEXT.__oslogstring: 0x5bb
-   __TEXT.__swift5_protos: 0xe0
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x42508
--  __TEXT.__eh_frame: 0xb1228
-+  __TEXT.__unwind_info: 0x44440
-+  __TEXT.__eh_frame: 0xb36a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x27e0
-+  __DATA_CONST.__const: 0x28d8
-   __DATA_CONST.__objc_classlist: 0x110
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x260
-   __DATA_CONST.__objc_selrefs: 0x78
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x23518
-+  __AUTH_CONST.__const: 0x23af0
-   __AUTH_CONST.__cfstring: 0x80
-   __AUTH_CONST.__objc_const: 0x1908
-   __AUTH_CONST.__weak_auth_got: 0xd38
--  __AUTH_CONST.__auth_got: 0x44d0
-+  __AUTH_CONST.__auth_got: 0x4520
-   __AUTH.__tf_func: 0x30
-   __AUTH.__data: 0x7560
--  __DATA.__data: 0x4258
--  __DATA.__bss: 0x270b0
-+  __DATA.__data: 0x42a0
-+  __DATA.__bss: 0x274b0
-   __DATA.__common: 0x79
-   __DATA_DIRTY.__tf_func: 0x0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+-106.0.3.0.1
++106.0.5.0.1
 
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   - /usr/lib/usd/libusd_ms.dylib
 -  Functions: 34252
--  Symbols:   100519
--  CStrings:  903
+-  Symbols:   63673
+-  CStrings:  895
 +  Functions: 34518
-+  Symbols:   101370
-+  CStrings:  929
- 
-Sections:
-~ __TEXT.__swift5_types2 : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__oslogstring : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__tf_func : content changed
-~ __AUTH.__data : content changed
++  Symbols:   64147
++  CStrings:  921
 Symbols:
 + GCC_except_table1001
 + GCC_except_table1003
@@ -1072,5 +1021,4 @@ CStrings:
 - "Cannot set a value on the inverse xformOp '%s'. Please set value on the paired non-inverse xformOp instead."
 - "Set"
 - "bool pxrInternal__aapl__pxrReserved__::UsdGeomXformOp::Set(const T &, UsdTimeCode) const [T = pxrInternal__aapl__pxrReserved__::GfMatrix4d]"
-
 ```

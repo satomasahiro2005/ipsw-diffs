@@ -2,50 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/CoreThreadRadio.framework/threadradiod`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x41c89c` | `0x41cb24` | **`+0x288`** |
+| `__TEXT.__const` | `0x8614` | `0x8664` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x2a394` | `0x2a39c` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
 - `__TEXT.__init_offsets`
 - `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
 - `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
 - `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
- 442.0.0.0.0
--  __TEXT.__text: 0x41c89c
-+  __TEXT.__text: 0x41cb24
-   __TEXT.__auth_stubs: 0x12bd0
-   __TEXT.__objc_stubs: 0xa100
-   __TEXT.__init_offsets: 0xb4
-   __TEXT.__objc_methlist: 0x6aa4
--  __TEXT.__gcc_except_tab: 0x2a394
--  __TEXT.__const: 0x8614
-+  __TEXT.__gcc_except_tab: 0x2a39c
-+  __TEXT.__const: 0x8664
-   __TEXT.__oslogstring: 0x28004
-   __TEXT.__cstring: 0x37256
-   __TEXT.__objc_classname: 0x6eb
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 18294
 +  Functions: 18296
-   Symbols:   24095
-   CStrings:  13489
- 
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(heap-907cf6985676bcfa85796b69de7a3ca2.o)
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/CoreThreadRadio/install/Symbols/BuiltProducts/libopenthread-ftd.a(heap-e09d5eb68d8170f36b42857da0a1dc1e.o)

@@ -2,53 +2,32 @@
 
 > `/System/Library/AccessibilityBundles/UIKit.axbundle/UIKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15e288` | `0x15fd54` | **`+0x1acc`** |
+| `__TEXT.__objc_methlist` | `0xfd2c` | `0xfdd4` | **`+0xa8`** |
+| `__TEXT.__oslogstring` | `0x2814` | `0x2869` | **`+0x55`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5e18` | `0x5e48` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x4380` | `0x43a0` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x35f0` | `0x3608` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0xfd8` | `0xfe0` | **`+0x8`** |
+| `__TEXT.__cstring` | `0x19578` | `0x19574` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3050.3.1.0.0
--  __TEXT.__text: 0x15b9cc
--  __TEXT.__objc_methlist: 0xfd2c
 +3050.3.5.0.0
-+  __TEXT.__text: 0x15d450
-+  __TEXT.__objc_methlist: 0xfdd4
-   __TEXT.__dlopen_cstrs: 0xb8
-   __TEXT.__const: 0x1c8
--  __TEXT.__gcc_except_tab: 0x35f0
--  __TEXT.__cstring: 0x19578
--  __TEXT.__oslogstring: 0x2814
-+  __TEXT.__gcc_except_tab: 0x3608
-+  __TEXT.__cstring: 0x19574
-+  __TEXT.__oslogstring: 0x2869
-   __TEXT.__ustring: 0x78
--  __TEXT.__unwind_info: 0x6338
-+  __TEXT.__unwind_info: 0x6388
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5e18
-+  __DATA_CONST.__objc_selrefs: 0x5e48
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_superrefs: 0xab0
-   __DATA_CONST.__objc_arraydata: 0x160
--  __DATA_CONST.__got: 0xfd8
-+  __DATA_CONST.__got: 0xfe0
-   __AUTH_CONST.__const: 0x17e0
-   __AUTH_CONST.__cfstring: 0x1e1c0
-   __AUTH_CONST.__objc_const: 0x20bc0
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 6032
 -  Symbols:   11987
 -  CStrings:  4224
 +  Functions: 6053
 +  Symbols:   12009
 +  CStrings:  4225
- 
 Symbols:
 + -[UIAccessibilityElementMockView accessibilitySupportsTextSelection]
 + -[UICollectionViewAccessibility _accessibilityViewChildrenWithOptions:]

@@ -2,17 +2,20 @@
 
 > `/System/Library/Frameworks/ShazamKit.framework/shazamd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x858` | `0x910` | **`+0xb8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__swift5_typeref`
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_superrefs: 0x378
-   __DATA_CONST.__objc_intobj: 0xa8
-   __DATA_CONST.__auth_got: 0x498
--  __DATA_CONST.__got: 0x858
-+  __DATA_CONST.__got: 0x910
-   __DATA_CONST.__auth_ptr: 0x8
-   __DATA.__objc_const: 0xccf0
-   __DATA.__objc_selrefs: 0x3b20
-Sections:
-~ __TEXT.__swift5_typeref : content changed
-
+-427.0.36.0.0
++427.0.40.0.0
 ```

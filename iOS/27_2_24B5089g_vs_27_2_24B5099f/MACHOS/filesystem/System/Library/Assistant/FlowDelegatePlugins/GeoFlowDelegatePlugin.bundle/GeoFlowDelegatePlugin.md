@@ -2,54 +2,43 @@
 
 > `/System/Library/Assistant/FlowDelegatePlugins/GeoFlowDelegatePlugin.bundle/GeoFlowDelegatePlugin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb4530` | `0xb45dc` | **`+0xac`** |
+| `__TEXT.__eh_frame` | `0x5a3c` | `0x5a94` | **`+0x58`** |
+| `__TEXT.__unwind_info` | `0x2b20` | `0x2b30` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__const`
 - `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_reflstr`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
 - `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_reflstr`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -3605.13.1.0.0
--  __TEXT.__text: 0xacca0
 +3605.14.1.0.0
-+  __TEXT.__text: 0xacd4c
-   __TEXT.__auth_stubs: 0x35b0
-   __TEXT.__objc_stubs: 0xae0
-   __TEXT.__objc_methlist: 0x348
 
-   __TEXT.__swift_as_ret: 0x3fc
-   __TEXT.__swift_as_cont: 0x3c8
-   __TEXT.__swift5_protos: 0x20
--  __TEXT.__unwind_info: 0x36b0
--  __TEXT.__eh_frame: 0x5a44
-+  __TEXT.__unwind_info: 0x36b8
-+  __TEXT.__eh_frame: 0x5a9c
-   __DATA_CONST.__const: 0x59a8
-   __DATA_CONST.__objc_classlist: 0x170
-   __DATA_CONST.__objc_protolist: 0xa8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3530
 -  Symbols:   10785
 +  Functions: 3531
 +  Symbols:   10786
-   CStrings:  886
- 
 Symbols:
 + _$sSdySdSgxcSyRzlufcSbSpySdGXEfU_SbSPys4Int8VGXEfU_TA
 + _$ss11_StringGutsV16_slowWithCStringyxxSPys4Int8VGq_YKXEq_YKs5ErrorR_r0_lFAFq_xRi_zRi0_zRi__Ri0__r0_lysAG_pxIsgyrzr_ABxsAG_psAG_pRs_r0_lIetMggrzo_Tpq5Sb_Tg507$sSPys4f5VGxs5G34_pIgyrzo_ACxsAD_pIegyrzr_lTRSb_TG5AFSbsAG_pIgyrzo_Tf1cn_n

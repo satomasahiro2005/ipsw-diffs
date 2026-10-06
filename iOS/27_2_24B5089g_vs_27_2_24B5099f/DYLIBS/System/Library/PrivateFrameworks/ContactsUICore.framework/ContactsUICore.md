@@ -2,79 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/ContactsUICore.framework/ContactsUICore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3f8f14` | `0x3f9f28` | **`+0x1014`** |
+| `__TEXT.__eh_frame` | `0xe8e8` | `0xe74c` | **`-0x19c`** |
+| `__DATA.__bss` | `0x26a68` | `0x26bf8` | **`+0x190`** |
+| `__AUTH_CONST.__const` | `0x1b048` | `0x1b150` | **`+0x108`** |
+| `__TEXT.__const` | `0x336a4` | `0x33774` | **`+0xd0`** |
+| `__TEXT.__constg_swiftt` | `0xd40c` | `0xd4d0` | **`+0xc4`** |
+| `__TEXT.__swift5_reflstr` | `0x96c3` | `0x9753` | **`+0x90`** |
+| `__TEXT.__swift5_fieldmd` | `0xa0e0` | `0xa114` | **`+0x34`** |
+| `__DATA.__common` | `0x1548` | `0x1530` | **`-0x18`** |
+| `__TEXT.__swift5_assocty` | `0x2a20` | `0x2a38` | **`+0x18`** |
+| `__TEXT.__swift5_capture` | `0x38ec` | `0x3904` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0xe828` | `0xe840` | **`+0x18`** |
+| `__TEXT.__swift5_typeref` | `0x2e7f6` | `0x2e806` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x15d8` | `0x15e4` | **`+0xc`** |
+| `__TEXT.__swift5_types` | `0xbf0` | `0xbf4` | **`+0x4`** |
+| `__TEXT.__swift_as_cont` | `0xa4c` | `0xa48` | **`-0x4`** |
+| `__TEXT.__swift_as_entry` | `0x540` | `0x53c` | **`-0x4`** |
+| `__TEXT.__swift_as_ret` | `0x4d8` | `0x4d4` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3723.200.51.0.0
--  __TEXT.__text: 0x3da9c4
 +3723.200.81.0.0
-+  __TEXT.__text: 0x3db9e8
-   __TEXT.__objc_methlist: 0xaf04
--  __TEXT.__const: 0x336a4
-+  __TEXT.__const: 0x33774
-   __TEXT.__oslogstring: 0x889d
-   __TEXT.__cstring: 0xbe36
-   __TEXT.__gcc_except_tab: 0xd80
-   __TEXT.__dlopen_cstrs: 0xd94
--  __TEXT.__constg_swiftt: 0xd40c
--  __TEXT.__swift5_typeref: 0x2e7f6
--  __TEXT.__swift5_fieldmd: 0xa0e0
--  __TEXT.__swift5_reflstr: 0x96c3
-+  __TEXT.__constg_swiftt: 0xd4d0
-+  __TEXT.__swift5_typeref: 0x2e806
-+  __TEXT.__swift5_fieldmd: 0xa114
-+  __TEXT.__swift5_reflstr: 0x9753
-   __TEXT.__swift5_builtin: 0x294
--  __TEXT.__swift5_assocty: 0x2a20
-+  __TEXT.__swift5_assocty: 0x2a38
-   __TEXT.__swift5_protos: 0xe0
--  __TEXT.__swift5_proto: 0x15d8
--  __TEXT.__swift5_types: 0xbf0
--  __TEXT.__swift_as_entry: 0x540
--  __TEXT.__swift_as_ret: 0x4d8
--  __TEXT.__swift_as_cont: 0xa4c
--  __TEXT.__swift5_capture: 0x38ec
-+  __TEXT.__swift5_proto: 0x15e4
-+  __TEXT.__swift5_types: 0xbf4
-+  __TEXT.__swift_as_entry: 0x53c
-+  __TEXT.__swift_as_ret: 0x4d4
-+  __TEXT.__swift_as_cont: 0xa48
-+  __TEXT.__swift5_capture: 0x3904
-   __TEXT.__swift5_mpenum: 0x144
--  __TEXT.__unwind_info: 0x127f8
--  __TEXT.__eh_frame: 0xe918
-+  __TEXT.__unwind_info: 0x12818
-+  __TEXT.__eh_frame: 0xe77c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_superrefs: 0x4d0
-   __DATA_CONST.__objc_arraydata: 0xc8
-   __DATA_CONST.__got: 0x2ed8
--  __AUTH_CONST.__const: 0x1b048
-+  __AUTH_CONST.__const: 0x1b150
-   __AUTH_CONST.__cfstring: 0x2c60
-   __AUTH_CONST.__objc_const: 0x1cc90
-   __AUTH_CONST.__objc_intobj: 0x360
-
-   __DATA.__objc_ivar: 0x754
-   __DATA.__data: 0x10218
-   __DATA.__objc_stublist: 0x18
--  __DATA.__common: 0x1548
-+  __DATA.__common: 0x1530
-   __DATA_DIRTY.__objc_data: 0x56e0
-   __DATA_DIRTY.__data: 0x66c8
-   __DATA_DIRTY.__bss: 0x3678
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 21803
 -  Symbols:   14056
 +  Functions: 21831
 +  Symbols:   14060
-   CStrings:  2111
- 
 Symbols:
 + _associated conformance 14ContactsUICore17PosterUserInfoKeyOSHAASQ
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA4ViewPAAE22containerRelativeFrame_9alignment_QrAA4AxisO3SetV_AA9AlignmentV12CoreGraphics7CGFloatVAP_AItctFQOyAA01_e9Modifier_D0Vy14ContactsUICore011ContactCardd7MarginsP033_4A6411CBF706E433117F8DB2B63FE97FLLVG_Qo_AA05_FlexH6LayoutVGAaDHPqd__AaDHD2_AXHO_AzA0eP0HPyHCHC

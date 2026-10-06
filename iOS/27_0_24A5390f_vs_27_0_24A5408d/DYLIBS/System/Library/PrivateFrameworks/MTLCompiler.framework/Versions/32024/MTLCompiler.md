@@ -2,44 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/MTLCompiler.framework/Versions/32024/MTLCompiler`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb7430` | `0xb7a58` | **`+0x628`** |
+| `__TEXT.__gcc_except_tab` | `0xa51c` | `0xa548` | **`+0x2c`** |
+| `__TEXT.__unwind_info` | `0x2f38` | `0x2f58` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x10e8` | `0x10f8` | **`+0x10`** |
+| `__TEXT.__const` | `0x1278` | `0x1288` | **`+0x10`** |
+| `__TEXT.__cstring` | `0x96db` | `0x96e7` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
 -382.5.0.0.0
--  __TEXT.__text: 0xb7430
--  __TEXT.__gcc_except_tab: 0xa51c
--  __TEXT.__const: 0x1278
--  __TEXT.__cstring: 0x96db
 +382.5.3.0.0
-+  __TEXT.__text: 0xb7a58
-+  __TEXT.__gcc_except_tab: 0xa548
-+  __TEXT.__const: 0x1288
-+  __TEXT.__cstring: 0x96e7
-   __TEXT.__oslogstring: 0x4e7
--  __TEXT.__unwind_info: 0x2f38
-+  __TEXT.__unwind_info: 0x2f58
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
 
-   __AUTH_CONST.__const: 0x16b0
-   __AUTH_CONST.__cfstring: 0x220
-   __AUTH_CONST.__weak_auth_got: 0x50
--  __AUTH_CONST.__auth_got: 0x10e8
-+  __AUTH_CONST.__auth_got: 0x10f8
-   __DATA.__data: 0x474
-   __DATA.__common: 0x26
-   __DATA.__bss: 0xa28
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2137
--  Symbols:   3459
+-  Symbols:   3429
 -  CStrings:  1638
 +  Functions: 2144
-+  Symbols:   3468
++  Symbols:   3438
 +  CStrings:  1639
- 
 Symbols:
 + __ZN4llvm10AllocaInst25getDeferredStaticSizeCallEv
 + __ZN4llvm11Instruction10moveBeforeEPS0_

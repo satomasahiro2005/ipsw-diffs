@@ -2,72 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/TVRemoteCore.framework/TVRemoteCore`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x48918` | `0x48ec0` | **`+0x5a8`** |
+| `__TEXT.__objc_methlist` | `0x6530` | `0x6840` | **`+0x310`** |
+| `__AUTH_CONST.__objc_const` | `0x9fe0` | `0xa208` | **`+0x228`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3108` | `0x3310` | **`+0x208`** |
+| `__TEXT.__oslogstring` | `0x6bd5` | `0x6db4` | **`+0x1df`** |
+| `__DATA.__data` | `0xa34` | `0xa94` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x1660` | `0x16b8` | **`+0x58`** |
+| `__TEXT.__lazy_helpers` | `0x580` | `0x5d4` | **`+0x54`** |
+| `__AUTH_CONST.__cfstring` | `0x4a80` | `0x4ac0` | **`+0x40`** |
+| `__TEXT.__gcc_except_tab` | `0xb28` | `0xb60` | **`+0x38`** |
+| `__TEXT.__cstring` | `0x3738` | `0x3752` | **`+0x1a`** |
+| `__TEXT.__unwind_info` | `0x1220` | `0x1238` | **`+0x18`** |
+| `__AUTH_CONST.__lazy_load_got` | `0x80` | `0x88` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0xd8` | `0xe0` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x69c` | `0x6a0` | **`+0x4`** |
+| `__TEXT.__const` | `0x250` | `0x252` | **`+0x2`** |
+
+### Same-size Content Changes
 
 - `__DATA_CONST.__objc_imageinfo`
+
+### Other Changes
 
 ```diff
 
 -627.10.47.0.0
--  __TEXT.__text: 0x4737c
--  __TEXT.__lazy_helpers: 0x580
--  __TEXT.__objc_methlist: 0x6530
--  __TEXT.__const: 0x250
--  __TEXT.__oslogstring: 0x6bd5
--  __TEXT.__cstring: 0x3738
--  __TEXT.__gcc_except_tab: 0xb28
--  __TEXT.__unwind_info: 0x1878
 +627.10.51.0.0
-+  __TEXT.__text: 0x47918
-+  __TEXT.__lazy_helpers: 0x5d4
-+  __TEXT.__objc_methlist: 0x6840
-+  __TEXT.__const: 0x252
-+  __TEXT.__oslogstring: 0x6db4
-+  __TEXT.__cstring: 0x3752
-+  __TEXT.__gcc_except_tab: 0xb60
-+  __TEXT.__unwind_info: 0x1890
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1660
-+  __DATA_CONST.__const: 0x16b8
-   __DATA_CONST.__objc_classlist: 0x290
-   __DATA_CONST.__objc_catlist: 0x10
--  __DATA_CONST.__objc_protolist: 0xd8
-+  __DATA_CONST.__objc_protolist: 0xe0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3108
-+  __DATA_CONST.__objc_selrefs: 0x3310
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x210
-   __DATA_CONST.__objc_arraydata: 0x110
-   __DATA_CONST.__got: 0x470
-   __AUTH_CONST.__const: 0x480
--  __AUTH_CONST.__cfstring: 0x4a80
--  __AUTH_CONST.__objc_const: 0x9fe0
--  __AUTH_CONST.__lazy_load_got: 0x80
-+  __AUTH_CONST.__cfstring: 0x4ac0
-+  __AUTH_CONST.__objc_const: 0xa208
-+  __AUTH_CONST.__lazy_load_got: 0x88
-   __AUTH_CONST.__objc_intobj: 0x288
-   __AUTH_CONST.__objc_arrayobj: 0x60
-   __AUTH_CONST.__objc_doubleobj: 0x60
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0x1860
--  __DATA.__objc_ivar: 0x69c
--  __DATA.__data: 0xa34
-+  __DATA.__objc_ivar: 0x6a0
-+  __DATA.__data: 0xa94
-   __DATA_DIRTY.__objc_data: 0x140
-   __DATA_DIRTY.__bss: 0x170
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2144
 -  Symbols:   3714
 -  CStrings:  1300
@@ -79,7 +45,6 @@
 +  Functions: 2150
 +  Symbols:   3741
 +  CStrings:  1309
- 
 Symbols:
 + -[TVRCHMHomeObserver _isAtHome]
 + -[TVRCHMHomeObserver homeDidUpdateHomeLocationStatus:]

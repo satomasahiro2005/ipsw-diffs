@@ -2,87 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/LabKitDaemon.framework/LabKitDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x57e90` | `0x5b01c` | **`+0x318c`** |
+| `__TEXT.__oslogstring` | `0x16e8` | `0x1888` | **`+0x1a0`** |
+| `__DATA.__data` | `0xac0` | `0xba8` | **`+0xe8`** |
+| `__TEXT.__eh_frame` | `0x2720` | `0x27e8` | **`+0xc8`** |
+| `__AUTH_CONST.__objc_const` | `0xf28` | `0xfb0` | **`+0x88`** |
+| `__TEXT.__swift5_reflstr` | `0x4b4` | `0x514` | **`+0x60`** |
+| `__TEXT.__swift5_typeref` | `0x752` | `0x7aa` | **`+0x58`** |
+| `__TEXT.__cstring` | `0x1e86` | `0x1ed6` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x1090` | `0x10d0` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0x2f80` | `0x2fa8` | **`+0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0x938` | `0x960` | **`+0x28`** |
+| `__TEXT.__swift5_fieldmd` | `0x558` | `0x57c` | **`+0x24`** |
+| `__TEXT.__objc_methlist` | `0xb0c` | `0xb2c` | **`+0x20`** |
+| `__AUTH.__objc_data` | `0x540` | `0x558` | **`+0x18`** |
+| `__TEXT.__swift5_capture` | `0xa94` | `0xaac` | **`+0x18`** |
+| `__AUTH.__data` | `0x258` | `0x268` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xd88` | `0xd98` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x400` | `0x410` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0xf0` | `0x100` | **`+0x10`** |
+| `__TEXT.__const` | `0x1074` | `0x1084` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x1f0` | `0x1fc` | **`+0xc`** |
+| `__DATA_CONST.__objc_protorefs` | `0x80` | `0x88` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0xb0` | `0xb4` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x7c` | `0x80` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.36.2.7
--  __TEXT.__text: 0x54f64
--  __TEXT.__objc_methlist: 0xb0c
--  __TEXT.__const: 0x1074
 +7027.1.45.2.4
-+  __TEXT.__text: 0x57f2c
-+  __TEXT.__objc_methlist: 0xb2c
-+  __TEXT.__const: 0x1084
-   __TEXT.__constg_swiftt: 0x4f8
--  __TEXT.__swift5_typeref: 0x752
--  __TEXT.__swift5_reflstr: 0x4b4
--  __TEXT.__swift5_fieldmd: 0x558
-+  __TEXT.__swift5_typeref: 0x7aa
-+  __TEXT.__swift5_reflstr: 0x514
-+  __TEXT.__swift5_fieldmd: 0x57c
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_assocty: 0xf0
-   __TEXT.__swift5_proto: 0x90
-   __TEXT.__swift5_types: 0x58
--  __TEXT.__cstring: 0x1e86
--  __TEXT.__oslogstring: 0x16e8
--  __TEXT.__swift5_capture: 0xa94
--  __TEXT.__swift_as_entry: 0xb0
--  __TEXT.__swift_as_ret: 0x7c
--  __TEXT.__swift_as_cont: 0x1f0
-+  __TEXT.__cstring: 0x1ed6
-+  __TEXT.__oslogstring: 0x1888
-+  __TEXT.__swift5_capture: 0xaac
-+  __TEXT.__swift_as_entry: 0xb4
-+  __TEXT.__swift_as_ret: 0x80
-+  __TEXT.__swift_as_cont: 0x1fc
-   __TEXT.__swift5_protos: 0xc
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x1370
--  __TEXT.__eh_frame: 0x2720
-+  __TEXT.__unwind_info: 0x1418
-+  __TEXT.__eh_frame: 0x27e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xb8
-   __DATA_CONST.__objc_classlist: 0x80
--  __DATA_CONST.__objc_protolist: 0xf0
-+  __DATA_CONST.__objc_protolist: 0x100
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x938
--  __DATA_CONST.__objc_protorefs: 0x80
--  __DATA_CONST.__got: 0x400
--  __AUTH_CONST.__const: 0x2f80
--  __AUTH_CONST.__objc_const: 0xf28
--  __AUTH_CONST.__auth_got: 0xd88
--  __AUTH.__objc_data: 0x540
--  __AUTH.__data: 0x258
--  __DATA.__data: 0xac0
-+  __DATA_CONST.__objc_selrefs: 0x960
-+  __DATA_CONST.__objc_protorefs: 0x88
-+  __DATA_CONST.__got: 0x410
-+  __AUTH_CONST.__const: 0x2fa8
-+  __AUTH_CONST.__objc_const: 0xfb0
-+  __AUTH_CONST.__auth_got: 0xd98
-+  __AUTH.__objc_data: 0x558
-+  __AUTH.__data: 0x268
-+  __DATA.__data: 0xba8
-   __DATA.__common: 0x20
-   __DATA_DIRTY.__objc_data: 0x398
-   __DATA_DIRTY.__data: 0x1a0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1287
--  Symbols:   797
+-  Symbols:   612
 -  CStrings:  210
 +  Functions: 1320
-+  Symbols:   813
++  Symbols:   624
 +  CStrings:  219
- 
 Symbols:
 + _HKStringFromProfileType
 + _OBJC_CLASS_$_HDPrimaryProfile
@@ -94,10 +55,6 @@ Symbols:
 + __OBJC_CLASS_PROTOCOLS_$__TtC12LabKitDaemon23LabNotificationsManager(LabKitDaemon|LabKitDaemon1|LabKitDaemon2|LabKitDaemon3)
 + __OBJC_LABEL_PROTOCOL_$_HDProtectedDataOperationDelegate
 + __OBJC_PROTOCOL_$_HDProtectedDataOperationDelegate
-+ _objc_msgSend$debugIdentifier
-+ _objc_msgSend$initWithProfile:debugIdentifier:delegate:
-+ _objc_msgSend$profileType
-+ _objc_msgSend$requestWorkWithPriority:error:
 + _symbolic Iegh_
 + _symbolic IeyBh_
 + _symbolic SDy_____y_____SSGSiG 15HealthUtilities15TypedIdentifierV 0A14RecordServices15LaboratoryOrderV

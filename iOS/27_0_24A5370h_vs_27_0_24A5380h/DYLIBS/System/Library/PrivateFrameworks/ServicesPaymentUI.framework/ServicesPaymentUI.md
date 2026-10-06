@@ -2,99 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/ServicesPaymentUI.framework/ServicesPaymentUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8bb20` | `0xa4504` | **`+0x189e4`** |
+| `__DATA_DIRTY.__objc_data` | `—` | `0x1150` | **`+0x1150`** |
+| `__AUTH.__objc_data` | `0x1928` | `0x7e8` | **`-0x1140`** |
+| `__DATA.__bss` | `0x9ce0` | `0xa460` | **`+0x780`** |
+| `__DATA_DIRTY.__data` | `—` | `0x5e0` | **`+0x5e0`** |
+| `__TEXT.__const` | `0x70a8` | `0x7588` | **`+0x4e0`** |
+| `__TEXT.__oslogstring` | `0x2430` | `0x2760` | **`+0x330`** |
+| `__AUTH_CONST.__const` | `0x43b0` | `0x46c8` | **`+0x318`** |
+| `__TEXT.__eh_frame` | `0x3508` | `0x37d8` | **`+0x2d0`** |
+| `__DATA.__data` | `0x21f8` | `0x1f30` | **`-0x2c8`** |
+| `__TEXT.__cstring` | `0x1305` | `0x1595` | **`+0x290`** |
+| `__TEXT.__swift5_fieldmd` | `0x1e18` | `0x1f1c` | **`+0x104`** |
+| `__DATA_DIRTY.__bss` | `—` | `0x100` | **`+0x100`** |
+| `__TEXT.__swift5_typeref` | `0x35ac` | `0x3682` | **`+0xd6`** |
+| `__TEXT.__constg_swiftt` | `0x2264` | `0x2318` | **`+0xb4`** |
+| `__TEXT.__swift5_reflstr` | `0x1a20` | `0x1ad0` | **`+0xb0`** |
+| `__AUTH.__data` | `0x1580` | `0x14e8` | **`-0x98`** |
+| `__TEXT.__swift5_capture` | `0xb9c` | `0xc18` | **`+0x7c`** |
+| `__AUTH_CONST.__auth_got` | `0x1700` | `0x1770` | **`+0x70`** |
+| `__DATA_DIRTY.__common` | `—` | `0x70` | **`+0x70`** |
+| `__DATA.__common` | `0xf0` | `0x81` | **`-0x6f`** |
+| `__TEXT.__unwind_info` | `0x1fa0` | `0x1fe8` | **`+0x48`** |
+| `__TEXT.__swift5_proto` | `0x4f0` | `0x534` | **`+0x44`** |
+| `__TEXT.__swift5_assocty` | `0x680` | `0x6b8` | **`+0x38`** |
+| `__AUTH_CONST.__objc_const` | `0x3ab0` | `0x3ae0` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x9ec` | `0xa1c` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x9d8` | `0x9f0` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0xc60` | `0xc78` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0x1e8` | `0x1fc` | **`+0x14`** |
+| `__TEXT.__swift_as_cont` | `0x1dc` | `0x1ec` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x88` | `0x8c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x8bb20
--  __TEXT.__objc_methlist: 0x9ec
--  __TEXT.__const: 0x70a8
--  __TEXT.__swift5_typeref: 0x35ac
--  __TEXT.__swift5_fieldmd: 0x1e18
--  __TEXT.__constg_swiftt: 0x2264
-+  __TEXT.__text: 0xa4504
-+  __TEXT.__objc_methlist: 0xa1c
-+  __TEXT.__const: 0x7588
-+  __TEXT.__swift5_typeref: 0x3682
-+  __TEXT.__swift5_fieldmd: 0x1f1c
-+  __TEXT.__constg_swiftt: 0x2318
-   __TEXT.__swift5_builtin: 0x8c
--  __TEXT.__swift5_reflstr: 0x1a20
--  __TEXT.__swift5_assocty: 0x680
--  __TEXT.__swift5_proto: 0x4f0
--  __TEXT.__swift5_types: 0x1e8
--  __TEXT.__cstring: 0x1305
--  __TEXT.__swift5_capture: 0xb9c
--  __TEXT.__swift_as_entry: 0x88
--  __TEXT.__swift_as_cont: 0x1dc
-+  __TEXT.__swift5_reflstr: 0x1ad0
-+  __TEXT.__swift5_assocty: 0x6b8
-+  __TEXT.__swift5_proto: 0x534
-+  __TEXT.__swift5_types: 0x1fc
-+  __TEXT.__cstring: 0x1595
-+  __TEXT.__swift5_capture: 0xc18
-+  __TEXT.__swift_as_entry: 0x8c
-+  __TEXT.__swift_as_cont: 0x1ec
-   __TEXT.__swift_as_ret: 0xa0
--  __TEXT.__oslogstring: 0x2430
-+  __TEXT.__oslogstring: 0x2760
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__unwind_info: 0x1fa0
--  __TEXT.__eh_frame: 0x3508
-+  __TEXT.__unwind_info: 0x1fe8
-+  __TEXT.__eh_frame: 0x37d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-1.0.17.0.0
++1.0.22.0.0
 
-   __DATA_CONST.__objc_classlist: 0xb0
-   __DATA_CONST.__objc_protolist: 0xf8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xc60
-+  __DATA_CONST.__objc_selrefs: 0xc78
-   __DATA_CONST.__objc_protorefs: 0x98
--  __DATA_CONST.__got: 0x9d8
--  __AUTH_CONST.__const: 0x43b0
--  __AUTH_CONST.__objc_const: 0x3ab0
--  __AUTH_CONST.__auth_got: 0x1700
--  __AUTH.__objc_data: 0x1928
--  __AUTH.__data: 0x1580
--  __DATA.__data: 0x21f8
--  __DATA.__bss: 0x9ce0
--  __DATA.__common: 0xf0
-+  __DATA_CONST.__got: 0x9f0
-+  __AUTH_CONST.__const: 0x46c8
-+  __AUTH_CONST.__objc_const: 0x3ae0
-+  __AUTH_CONST.__auth_got: 0x1770
-+  __AUTH.__objc_data: 0x7e8
-+  __AUTH.__data: 0x14e8
-+  __DATA.__data: 0x1f30
-+  __DATA.__bss: 0xa460
-+  __DATA.__common: 0x81
-+  __DATA_DIRTY.__objc_data: 0x1150
-+  __DATA_DIRTY.__data: 0x5e0
-+  __DATA_DIRTY.__common: 0x70
-+  __DATA_DIRTY.__bss: 0x100
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2682
--  Symbols:   11978
+-  Symbols:   8102
 -  CStrings:  305
 +  Functions: 2774
-+  Symbols:   12350
++  Symbols:   8346
 +  CStrings:  335
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
 Symbols:
 + _$s10Foundation11JSONEncoderC6encodeyAA4DataVxKSERzlFTj
 + _$s10Foundation11JSONEncoderCACycfc
@@ -394,7 +350,6 @@ Symbols:
 + _associated conformance 17ServicesPaymentUI33SecureThreeDomainCompletionActionV6StatusOSHAASQ
 + _associated conformance 17ServicesPaymentUI47SecureThreeDomainCompletionActionImplementationV9JetEngine0hI0AA0H0AdEP_AD0H5Model
 + _get_witness_table 7SwiftUI15NavigationStackVyAA0C4PathVAA4ViewPAAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAA08ModifiedJ0VyALy015ServicesPaymentB0013AppleIDSignInF0VAA16_FlexFrameLayoutVGAA24_BackgroundStyleModifierVyAA5ColorVGG_AA0I4ItemVyytAA6ButtonVyAA5ImageVGGQo_GAaFHPyHC
-+ _objc_msgSend$localizedConfirmationTitle
 + _swift_getExistentialTypeMetadata
 + _swift_unexpectedError
 + _symbolic _____ 17ServicesPaymentUI33SecureThreeDomainCompletionActionV
@@ -518,5 +473,4 @@ CStrings:
 - "AES-GCM encryption failed to produce combined output"
 - "Authenticate to complete your purchase"
 - "raw export only supported for symmetric keys"
-
 ```

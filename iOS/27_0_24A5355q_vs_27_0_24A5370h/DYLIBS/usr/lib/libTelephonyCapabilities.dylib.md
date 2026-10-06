@@ -2,48 +2,23 @@
 
 > `/usr/lib/libTelephonyCapabilities.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x53944` | `0x53694` | **`-0x2b0`** |
+| `__TEXT.__const` | `0x3e94` | `0x3ec4` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x3d30` | `0x3d28` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -6554.0.0.0.0
--  __TEXT.__text: 0x53944 sha256:f92eb59830ecfe2df0d254265a9e274301427ccde84357d3797ce84e01402ae4
 +6559.0.0.0.0
-+  __TEXT.__text: 0x53694 sha256:3915c9c1a54ab79373dddcb534e0faaea134b3dc5691c83368985f607ecd458a
-   __TEXT.__init_offsets: 0x5c sha256:7aac0118a3144e792bd9cfd4219098df58285cb4ec9eedba26913d81bba8d01c
--  __TEXT.__const: 0x3e94 sha256:52d895dce96a31d37d2ed30574525b7425e5090b7cf85259b3c286a3e8ea6143
--  __TEXT.__gcc_except_tab: 0x89b0 sha256:8f717cca958399d5375f5f6d50496ebf1ea9207d9e9a7816ebe9a2b550f5cc42
--  __TEXT.__cstring: 0x49e6 sha256:b09571842cda4078f1cd54e71232077404948d63be390f40fd12420d4dcdceb8
-+  __TEXT.__const: 0x3ec4 sha256:2a27a9bc3b6baa6cb9337f7cf8ca47b801885f6244bc9163ee83bcf7b5939d51
-+  __TEXT.__gcc_except_tab: 0x89b0 sha256:d5a4eca4d5fcd38475aa6eabe111ae94218de7726c07f80174f315739e576b8c
-+  __TEXT.__cstring: 0x49e6 sha256:48e7860507e4cb54eab59f79aadc0b2d7f9bcce55a4415baf008bf9d0730f630
-   __TEXT.__oslogstring: 0x4c1 sha256:35473858eb3ca8bc6117463bbb9fbd7a090cf0ef89d274d95603d8efb3ab59b1
--  __TEXT.__unwind_info: 0x3d30 sha256:9fd5363fd6c9b58d1e5bb0cf86194dae8558aff838326195b6f3aeb6614d94f7
-+  __TEXT.__unwind_info: 0x3d28 sha256:81117e5f786dfbbfe7094a4defed06914c0392e8266b7d4573e67740da17da7a
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x11b8 sha256:43c55babbd94d9bb80440ec7bc9a488f3da8f1d0c1eac82185f3528fdeda726c
--  __DATA_CONST.__weak_got: 0x8 sha256:baed7a8f4fe06577baf9413d1425189458482e4f64d55b4f5cc304378385a036
-+  __DATA_CONST.__const: 0x11b8 sha256:cab12327f8303c14ae21ec93f835c33335f3f387236b16e84a5b6ec030b5a9cc
-+  __DATA_CONST.__weak_got: 0x8 sha256:0187a61bf3fae6fc3b3aa794eddabd32ea418a3c89d235dd3a82b6bd02e4fd49
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x178 sha256:9fb2b83a641fcf70c8725224420a3de629913238d0cabf203674a27f8bc47a7c
--  __AUTH_CONST.__cfstring: 0x40 sha256:6f5b7a306dc825e739437e144fb0c18b5433f0fee16587b252d3b5e607aca14a
--  __AUTH_CONST.__weak_auth_got: 0x20 sha256:52c9b9f7054537bcbd1b0015a017ad87fc2d84bd7ab268479e6b5286366dc849
-+  __AUTH_CONST.__const: 0x178 sha256:b94591f507ac5f4dfb1941b6655ac7c66e4f0571ff44dd2f6210b5edfc60a4dc
-+  __AUTH_CONST.__cfstring: 0x40 sha256:154b0e95b908288baea04a7bf8cfd4fc7567de3578c3c8cb3bf30dc1b4da8888
-+  __AUTH_CONST.__weak_auth_got: 0x20 sha256:9a19875ee94a4545924efc5e43b8a7cc9a6e9ae6f74f8f241796dbaf9c719f6b
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__bss: 0x4 sha256:df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119
-   __DATA.__common: 0x180 sha256:a1a4f5721c1c4610af7f71078f3a68c330536d679803b0e0507ee8dc10c5dfca
 
-   - /usr/lib/libTelephonyBasebandDynamic.dylib
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
--  UUID: B96EEEF8-DE56-3E6D-A7FC-06150DE6FD69
 -  Functions: 1871
-+  UUID: E6D5252B-39B4-31D5-ACBA-8FE0E652A964
 +  Functions: 1870
-   Symbols:   4315
-   CStrings:  713
- 
 Symbols:
 + GCC_except_table289
 + __ZN12capabilities2ct40supportsCellNetworkSearchGeoMCCForVendorE20TelephonyRadioVendor
@@ -117,5 +92,4 @@ Symbols:
 - __ZNSt3__19allocatorINS_12basic_stringIcNS_11char_traitsIcEENS0_IcEEEEE17allocate_at_leastB9nqe220100Em
 - __ZNSt3__19allocatorIfE17allocate_at_leastB9nqe220100Em
 - __ZSt28__throw_bad_array_new_lengthB9nqe220100v
-
 ```

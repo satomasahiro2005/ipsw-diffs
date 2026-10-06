@@ -2,44 +2,30 @@
 
 > `/System/Library/AccessibilityBundles/AuthenticationServices.axbundle/AuthenticationServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x54c` | `0x59c` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x104` | `0x110` | **`+0xc`** |
+| `__DATA_CONST.__objc_selrefs` | `0xc8` | `0xd0` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x90` | `0x98` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3048.0.0.0.0
--  __TEXT.__text: 0x504
--  __TEXT.__objc_methlist: 0x104
 +3050.3.0.0.0
-+  __TEXT.__text: 0x548
-+  __TEXT.__objc_methlist: 0x110
-   __TEXT.__cstring: 0x1a9
--  __TEXT.__unwind_info: 0x98
-+  __TEXT.__unwind_info: 0xa0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__const: 0x40
-   __DATA_CONST.__objc_classlist: 0x38
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xc8
-+  __DATA_CONST.__objc_selrefs: 0xd0
-   __DATA_CONST.__objc_superrefs: 0x10
-   __DATA_CONST.__got: 0x30
-   __AUTH_CONST.__const: 0x60
-
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 19
--  Symbols:   107
+-  Symbols:   89
 +  Functions: 20
-+  Symbols:   109
-   CStrings:  17
- 
++  Symbols:   90
 Symbols:
 + -[ASCredentialRequestPaneViewControllerAccessibility _accessibilitySheetView]
-+ _objc_msgSend$_accessibilitySheetView
 Functions:
 ~ -[ASCredentialRequestPaneViewControllerAccessibility viewDidAppear:] : 76 -> 120
-~ -[ASCredentialRequestPaneViewControllerAccessibility _accessibilityConfigureModalSheet] : 164 -> 56
+~ -[ASCredentialRequestPaneViewControllerAccessibility _accessibilityConfigureModalSheet] : 176 -> 68
 + -[ASCredentialRequestPaneViewControllerAccessibility _accessibilitySheetView]
 ```

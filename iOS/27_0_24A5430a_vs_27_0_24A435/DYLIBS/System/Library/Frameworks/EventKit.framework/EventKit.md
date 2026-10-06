@@ -2,31 +2,19 @@
 
 > `/System/Library/Frameworks/EventKit.framework/EventKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a3040` | `0x1a30bc` | **`+0x7c`** |
+| `__AUTH_CONST.__auth_got` | `0x1430` | `0x1428` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 1976.0.100.0.0
--  __TEXT.__text: 0x1a3040
-+  __TEXT.__text: 0x1a30bc
-   __TEXT.__objc_methlist: 0x15ac4
-   __TEXT.__cstring: 0xbe6f
-   __TEXT.__const: 0x4820
-
-   __AUTH_CONST.__objc_arrayobj: 0x1f8
-   __AUTH_CONST.__objc_dictobj: 0x1b8
-   __AUTH_CONST.__objc_doubleobj: 0x100
--  __AUTH_CONST.__auth_got: 0x1430
-+  __AUTH_CONST.__auth_got: 0x1428
-   __AUTH.__objc_data: 0x34d0
-   __AUTH.__data: 0xf08
-   __DATA.__objc_ivar: 0xd7c
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 10688
--  Symbols:   17574
-+  Symbols:   17573
-   CStrings:  2669
- 
+-  Symbols:   13256
++  Symbols:   13255
 Symbols:
 - _objc_retain_x10
 Functions:

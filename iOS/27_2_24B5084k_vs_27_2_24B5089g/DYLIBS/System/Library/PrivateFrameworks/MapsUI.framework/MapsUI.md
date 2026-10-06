@@ -2,87 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/MapsUI.framework/MapsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ab4fc` | `0x1abca4` | **`+0x7a8`** |
+| `__AUTH_CONST.__objc_const` | `0x2bf48` | `0x2c000` | **`+0xb8`** |
+| `__TEXT.__gcc_except_tab` | `0x2248` | `0x22f8` | **`+0xb0`** |
+| `__TEXT.__objc_methlist` | `0x15a04` | `0x15a84` | **`+0x80`** |
+| `__DATA_CONST.__const` | `0x3df8` | `0x3d88` | **`-0x70`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa5d8` | `0xa638` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x6798` | `0x67d0` | **`+0x38`** |
+| `__AUTH_CONST.__cfstring` | `0x15a40` | `0x15a20` | **`-0x20`** |
+| `__AUTH_CONST.__const` | `0x6d78` | `0x6d58` | **`-0x20`** |
+| `__TEXT.__cstring` | `0x125e0` | `0x125c5` | **`-0x1b`** |
+| `__DATA.__objc_ivar` | `0x16b8` | `0x16cc` | **`+0x14`** |
+| `__TEXT.__oslogstring` | `0x46e7` | `0x46f9` | **`+0x12`** |
+| `__TEXT.__const` | `0x8218` | `0x8228` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -286.31.6.17.9
--  __TEXT.__text: 0x1a2268
 +286.34.9.3.1
-+  __TEXT.__text: 0x1a2a04
-   __TEXT.__delay_stubs: 0x1c0
-   __TEXT.__delay_helper: 0xdc
--  __TEXT.__objc_methlist: 0x15a04
--  __TEXT.__const: 0x8218
-+  __TEXT.__objc_methlist: 0x15a84
-+  __TEXT.__const: 0x8228
-   __TEXT.__swift5_typeref: 0x3022
-   __TEXT.__swift5_capture: 0x798
--  __TEXT.__cstring: 0x125e0
-+  __TEXT.__cstring: 0x125c5
-   __TEXT.__swift5_fieldmd: 0x36b0
-   __TEXT.__constg_swiftt: 0x3f5c
-   __TEXT.__swift5_reflstr: 0x30b7
-   __TEXT.__swift5_types: 0x4cc
-   __TEXT.__swift5_builtin: 0x398
-   __TEXT.__swift5_mpenum: 0xc0
--  __TEXT.__oslogstring: 0x46e7
-+  __TEXT.__oslogstring: 0x46f9
-   __TEXT.__swift5_proto: 0x468
-   __TEXT.__swift5_assocty: 0x438
-   __TEXT.__swift5_protos: 0x58
-   __TEXT.__swift_as_entry: 0x34
-   __TEXT.__swift_as_cont: 0x70
-   __TEXT.__swift_as_ret: 0x2c
--  __TEXT.__gcc_except_tab: 0x2248
-+  __TEXT.__gcc_except_tab: 0x22f8
-   __TEXT.__ustring: 0x9c
--  __TEXT.__unwind_info: 0x7f58
-+  __TEXT.__unwind_info: 0x7f80
-   __TEXT.__eh_frame: 0x11ec
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3df8
-+  __DATA_CONST.__const: 0x3d88
-   __DATA_CONST.__objc_classlist: 0xda0
-   __DATA_CONST.__objc_catlist: 0x110
-   __DATA_CONST.__objc_protolist: 0x738
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa5d8
-+  __DATA_CONST.__objc_selrefs: 0xa638
-   __DATA_CONST.__objc_protorefs: 0x1e0
-   __DATA_CONST.__objc_superrefs: 0x750
-   __DATA_CONST.__objc_arraydata: 0x178
-   __DATA_CONST.__got: 0x1578
--  __AUTH_CONST.__const: 0x6d78
--  __AUTH_CONST.__cfstring: 0x15a40
--  __AUTH_CONST.__objc_const: 0x2bf48
-+  __AUTH_CONST.__const: 0x6d58
-+  __AUTH_CONST.__cfstring: 0x15a20
-+  __AUTH_CONST.__objc_const: 0x2c000
-   __AUTH_CONST.__objc_intobj: 0x828
-   __AUTH_CONST.__objc_doubleobj: 0x100
-   __AUTH_CONST.__objc_arrayobj: 0x180
 
-   __AUTH_CONST.__auth_got: 0x14d8
-   __AUTH.__objc_data: 0xbe08
-   __AUTH.__data: 0x21d0
--  __DATA.__objc_ivar: 0x16b8
-+  __DATA.__objc_ivar: 0x16cc
-   __DATA.__data: 0x5950
-   __DATA.__common: 0xa8
-   __DATA_DIRTY.__objc_data: 0x6e0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10284
--  Symbols:   18029
+-  Symbols:   13730
 +  Functions: 10294
-+  Symbols:   18055
-   CStrings:  3472
- 
++  Symbols:   13744
 Symbols:
 + -[MUActionRowItemView _glyphImage]
 + -[MUActionRowItemView _titleFont]
@@ -295,21 +243,6 @@ Symbols:
 + _OBJC_IVAR_$_MUGroupedActionsRowViewConfiguration._usesCompactCapsuleLayout
 + _kMUPlaceActionRowBottomSpacing
 + _kMUPlaceActionRowTopSpacing
-+ _objc_msgSend$_contentLayoutForItemView:isVertical:
-+ _objc_msgSend$_glyphImage
-+ _objc_msgSend$_titleFont
-+ _objc_msgSend$_updateAccessoryBoundingWithMinimumSideLength:
-+ _objc_msgSend$_updateGlyphContentMode
-+ _objc_msgSend$_updateGlyphSymbolConfiguration
-+ _objc_msgSend$_usesCapsuleContentPresentation
-+ _objc_msgSend$constraintGreaterThanOrEqualToConstant:
-+ _objc_msgSend$constraintLessThanOrEqualToConstant:
-+ _objc_msgSend$isProminent
-+ _objc_msgSend$preferredFontForTextStyle:compatibleWithTraitCollection:
-+ _objc_msgSend$setContentLayout:
-+ _objc_msgSend$setUsesCompactCapsuleLayout:
-+ _objc_msgSend$traitCollectionWithPreferredContentSizeCategory:
-+ _objc_msgSend$usesCompactCapsuleLayout
 - -[MUActionRowItemView fullWidthMode]
 - -[MUActionRowItemView setFullWidthMode:]
 - -[MUPlaceEnrichmentSectionController didTapShowcase]
@@ -507,9 +440,6 @@ Symbols:
 - _MapsUIConfig_VendFullURLToShortcutsWorkflowForSharing_Metadata_block_invoke_42
 - _OBJC_IVAR_$_MUActionRowItemView._fullWidthMode
 - ___block_descriptor_72_e8_32s40s48s56bs64w_e29_v24?0"NSArray"8"NSError"16ls32l8s56l8s40l8w64l8s48l8
-- _objc_msgSend$captureShowcaseSuppressionEventWithBusinessId:localSearchProviderID:showcaseId:adamId:suppressionReason:
-- _objc_msgSend$didTapShowcase
-- _objc_msgSend$setFullWidthMode:
 CStrings:
 + "We have no non-ui extensions, falling back to the App Store app"
 + "\xc1"

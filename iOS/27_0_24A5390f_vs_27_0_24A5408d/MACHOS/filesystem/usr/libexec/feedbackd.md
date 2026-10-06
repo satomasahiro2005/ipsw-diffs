@@ -2,97 +2,60 @@
 
 > `/usr/libexec/feedbackd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_entry`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x77854` | `0x78a0c` | **`+0x11b8`** |
+| `__TEXT.__auth_stubs` | `0x1ed0` | `0x1f80` | **`+0xb0`** |
+| `__TEXT.__eh_frame` | `0x43f0` | `0x4478` | **`+0x88`** |
+| `__DATA_CONST.__auth_got` | `0xf70` | `0xfc8` | **`+0x58`** |
+| `__TEXT.__cstring` | `0x2c45` | `0x2c85` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x15b0` | `0x15e8` | **`+0x38`** |
+| `__TEXT.__swift5_typeref` | `0xd10` | `0xd44` | **`+0x34`** |
+| `__TEXT.__const` | `0x1dd8` | `0x1e08` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x1de0` | `0x1e08` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0x7b0` | `0x7d0` | **`+0x20`** |
+| `__TEXT.__oslogstring` | `0x278f` | `0x279f` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x724` | `0x734` | **`+0x10`** |
+| `__DATA_CONST.__auth_ptr` | `0x3f0` | `0x3f8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -232.0.0.0.0
--  __TEXT.__text: 0x77854
--  __TEXT.__auth_stubs: 0x1ed0
 +235.0.0.0.0
-+  __TEXT.__text: 0x78a0c
-+  __TEXT.__auth_stubs: 0x1f80
-   __TEXT.__objc_stubs: 0x1340
-   __TEXT.__objc_methlist: 0x558
--  __TEXT.__const: 0x1dd8
--  __TEXT.__swift5_typeref: 0xd10
--  __TEXT.__oslogstring: 0x278f
--  __TEXT.__cstring: 0x2c45
-+  __TEXT.__const: 0x1e08
-+  __TEXT.__swift5_typeref: 0xd44
-+  __TEXT.__oslogstring: 0x279f
-+  __TEXT.__cstring: 0x2c85
-   __TEXT.__constg_swiftt: 0xbec
-   __TEXT.__swift5_fieldmd: 0x780
-   __TEXT.__swift5_builtin: 0x64
 
-   __TEXT.__objc_classname: 0x46c
-   __TEXT.__objc_methname: 0x192d
-   __TEXT.__objc_methtype: 0x852
--  __TEXT.__swift5_capture: 0x724
-+  __TEXT.__swift5_capture: 0x734
-   __TEXT.__swift_as_entry: 0x108
-   __TEXT.__swift_as_cont: 0x450
-   __TEXT.__swift_as_ret: 0x140
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__unwind_info: 0x15b0
--  __TEXT.__eh_frame: 0x43f0
--  __DATA_CONST.__const: 0x1de0
-+  __TEXT.__unwind_info: 0x15e8
-+  __TEXT.__eh_frame: 0x4478
-+  __DATA_CONST.__const: 0x1e08
-   __DATA_CONST.__objc_classlist: 0x78
-   __DATA_CONST.__objc_protolist: 0x98
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x60
--  __DATA_CONST.__auth_got: 0xf70
--  __DATA_CONST.__got: 0x7b0
--  __DATA_CONST.__auth_ptr: 0x3f0
-+  __DATA_CONST.__auth_got: 0xfc8
-+  __DATA_CONST.__got: 0x7d0
-+  __DATA_CONST.__auth_ptr: 0x3f8
-   __DATA.__objc_const: 0x1c28
-   __DATA.__objc_selrefs: 0x670
-   __DATA.__objc_data: 0x880
-
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/FeedbackService.framework/FeedbackService
-   - /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
 +  - /System/Library/PrivateFrameworks/IntelligencePlatformQuery.framework/IntelligencePlatformQuery
-   - /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1436
 -  Symbols:   854
 -  CStrings:  749
 +  Functions: 1451
 +  Symbols:   870
 +  CStrings:  755
- 
 Symbols:
 + _$s25IntelligencePlatformQuery12ResultColumnV12currentValueSSSgyF
 + _$s25IntelligencePlatformQuery12ResultColumnV12currentValueSiyF

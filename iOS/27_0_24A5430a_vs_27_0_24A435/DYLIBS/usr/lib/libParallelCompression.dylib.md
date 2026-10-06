@@ -2,14 +2,15 @@
 
 > `/usr/lib/libParallelCompression.dylib`
 
-```diff
+### Section Size Changes
 
- 469.0.0.0.0
--  __TEXT.__text: 0x55eb8
-+  __TEXT.__text: 0x55f68
-   __TEXT.__cstring: 0xf581
-   __TEXT.__const: 0x830
-   __TEXT.__oslogstring: 0x31
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x55eb8` | `0x55f68` | **`+0xb0`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _resizeStream : 976 -> 980
 ~ _BXDiffWithCache : 3880 -> 3916

@@ -2,23 +2,15 @@
 
 > `/usr/lib/libAmber.dylib`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x29350
-+  __TEXT.__text: 0x292f0
-   __TEXT.__const: 0xbf0
-   __TEXT.__gcc_except_tab: 0x2b9c
-   __TEXT.__cstring: 0x5cfc
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x29350` | `0x292f0` | **`-0x60`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN5amber12murMurHash64ENS_15ConstMemoryViewE : 260 -> 276
 ~ ____ZN5amber26DiskImageIORingsSubscriber7executeEv_block_invoke : 1528 -> 1512
@@ -29,5 +21,4 @@ Functions:
 ~ __ZNSt3__134__uninitialized_allocator_relocateB9fqe220106INS_9allocatorIN5amber15ObjectStorePathEEEPS3_EEvRT_T0_S8_S8_ : 180 -> 176
 ~ __ZN5amber10XPCSession17xpcSetStringArrayEPvPKcRKNSt3__16vectorINS4_12basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEENS9_ISB_EEEE : 284 -> 264
 ~ __ZNSt3__134__uninitialized_allocator_relocateB9fqe220106INS_9allocatorIN5amber15ObjectStorePathEEEPS3_EEvRT_T0_S8_S8_.cold.1 : 96 -> 80
-
 ```

@@ -2,22 +2,25 @@
 
 > `/System/Library/PrivateFrameworks/VoiceServices.framework/Support/voiced`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0xed2dc
-+  __TEXT.__text: 0xecfc4
-   __TEXT.__auth_stubs: 0x1510
-   __TEXT.__objc_stubs: 0x740
-   __TEXT.__objc_methlist: 0x3a8
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xed2dc` | `0xecfc4` | **`-0x318`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_100015a4c : 560 -> 552
 ~ sub_100024030 -> sub_100024028 : 704 -> 668
@@ -118,5 +121,4 @@ Functions:
 ~ sub_1000e6074 -> sub_1000e5e24 : 7828 -> 7668
 ~ sub_1000e8aa4 -> sub_1000e87b4 : 3072 -> 3044
 ~ sub_1000eb374 -> sub_1000eb068 : 428 -> 416
-
 ```

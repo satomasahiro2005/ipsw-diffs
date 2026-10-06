@@ -2,40 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/Message.framework/XPCServices/SearchIndexer.xpc/SearchIndexer`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__const`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x487674` | `0x4879f0` | **`+0x37c`** |
+| `__TEXT.__unwind_info` | `0xd5a0` | `0xd5c0` | **`+0x20`** |
+| `__TEXT.__eh_frame` | `0x11e60` | `0x11e70` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__const`
 - `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_typeref`
 
-```diff
+### Other Changes
 
- 3901.100.1.2.14
--  __TEXT.__text: 0x487674
-+  __TEXT.__text: 0x4879f0
-   __TEXT.__auth_stubs: 0x4430
-   __TEXT.__objc_stubs: 0x1d00
-   __TEXT.__objc_methlist: 0x3b4
-
-   __TEXT.__objc_classname: 0xc6a
-   __TEXT.__objc_methname: 0x2979
-   __TEXT.__objc_methtype: 0x681
--  __TEXT.__unwind_info: 0xd5a0
--  __TEXT.__eh_frame: 0x11e60
-+  __TEXT.__unwind_info: 0xd5c0
-+  __TEXT.__eh_frame: 0x11e70
-   __DATA_CONST.__const: 0x3eb50
-   __DATA_CONST.__objc_classlist: 0x178
-   __DATA_CONST.__objc_catlist: 0x8
+```text
 Functions:
 ~ __Z19ApplyCompressedProbPKciiP19DetectEncodingState : 216 -> 224
 ~ __Z11DumpSummaryP19DetectEncodingStateii : 240 -> 248

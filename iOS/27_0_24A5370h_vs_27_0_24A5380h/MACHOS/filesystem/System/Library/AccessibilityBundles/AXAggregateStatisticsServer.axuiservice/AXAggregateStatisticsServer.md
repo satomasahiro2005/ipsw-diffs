@@ -2,75 +2,50 @@
 
 > `/System/Library/AccessibilityBundles/AXAggregateStatisticsServer.axuiservice/AXAggregateStatisticsServer`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfed0` | `0x119d0` | **`+0x1b00`** |
+| `__DATA_CONST.__cfstring` | `0x3140` | `0x3560` | **`+0x420`** |
+| `__TEXT.__objc_stubs` | `0x1a00` | `0x1d80` | **`+0x380`** |
+| `__TEXT.__objc_methname` | `0x183b` | `0x1b5a` | **`+0x31f`** |
+| `__TEXT.__cstring` | `0x3532` | `0x3844` | **`+0x312`** |
+| `__DATA.__objc_selrefs` | `0x7a0` | `0x880` | **`+0xe0`** |
+| `__TEXT.__gcc_except_tab` | `0x1cc` | `0x25c` | **`+0x90`** |
+| `__DATA.__bss` | `0xa0` | `0xd8` | **`+0x38`** |
+| `__DATA_CONST.__const` | `0x1430` | `0x1468` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0x308` | `0x328` | **`+0x20`** |
+| `__DATA_CONST.__objc_intobj` | `—` | `0x18` | **`+0x18`** |
+| `__TEXT.__auth_stubs` | `0x8d0` | `0x8e0` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x478` | `0x480` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x374` | `0x37c` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_superrefs`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xfed0
--  __TEXT.__auth_stubs: 0x8d0
--  __TEXT.__objc_stubs: 0x1a00
--  __TEXT.__objc_methlist: 0x374
-+  __TEXT.__text: 0x119d0
-+  __TEXT.__auth_stubs: 0x8e0
-+  __TEXT.__objc_stubs: 0x1d80
-+  __TEXT.__objc_methlist: 0x37c
-   __TEXT.__dlopen_cstrs: 0x268
-   __TEXT.__const: 0x40
--  __TEXT.__gcc_except_tab: 0x1cc
--  __TEXT.__cstring: 0x3532
-+  __TEXT.__gcc_except_tab: 0x25c
-+  __TEXT.__cstring: 0x3844
-   __TEXT.__oslogstring: 0x1a6
-   __TEXT.__objc_classname: 0x47
--  __TEXT.__objc_methname: 0x183b
-+  __TEXT.__objc_methname: 0x1b5a
-   __TEXT.__objc_methtype: 0x30f
--  __TEXT.__unwind_info: 0x308
--  __DATA_CONST.__const: 0x1430
--  __DATA_CONST.__cfstring: 0x3140
-+  __TEXT.__unwind_info: 0x328
-+  __DATA_CONST.__const: 0x1468
-+  __DATA_CONST.__cfstring: 0x3560
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__objc_arraydata: 0x18
-   __DATA_CONST.__objc_arrayobj: 0x18
--  __DATA_CONST.__auth_got: 0x478
-+  __DATA_CONST.__objc_intobj: 0x18
-+  __DATA_CONST.__auth_got: 0x480
-   __DATA_CONST.__got: 0x1b0
-   __DATA.__objc_const: 0x358
--  __DATA.__objc_selrefs: 0x7a0
-+  __DATA.__objc_selrefs: 0x880
-   __DATA.__objc_ivar: 0x8
-   __DATA.__objc_data: 0xa0
-   __DATA.__data: 0xc0
--  __DATA.__bss: 0xa0
-+  __DATA.__bss: 0xd8
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+-3232.3.0.0.0
++3234.5.0.0.0
 
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 242
 -  Symbols:   220
--  CStrings:  1112
+-  CStrings:  709
 +  Functions: 255
 +  Symbols:   222
-+  CStrings:  1214
- 
-Sections:
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
++  CStrings:  778
 Symbols:
 + _OBJC_CLASS_$_NSConstantIntegerNumber
 + _objc_retain_x23
@@ -146,5 +121,4 @@ CStrings:
 + "voiceOverTouchBrailleGesturesAutoActivateOnTextFields"
 + "voiceOverTouchBrailleGesturesInputTableIdentifier"
 - "com.apple.accessibility.voiceover-braille.enabled"
-
 ```

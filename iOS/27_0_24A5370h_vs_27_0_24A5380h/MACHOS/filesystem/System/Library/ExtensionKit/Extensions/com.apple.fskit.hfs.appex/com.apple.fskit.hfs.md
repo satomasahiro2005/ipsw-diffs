@@ -2,16 +2,22 @@
 
 > `/System/Library/ExtensionKit/Extensions/com.apple.fskit.hfs.appex/com.apple.fskit.hfs`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x16ec` | `0x1704` | **`+0x18`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x16ec
-+  __TEXT.__text: 0x1704
-   __TEXT.__auth_stubs: 0x2b0
-   __TEXT.__objc_stubs: 0x140
-   __TEXT.__objc_methlist: 0x184
-Sections:
-~ __TEXT.__unwind_info : content changed
+-748.0.0.0.0
++749.0.0.0.0
 Functions:
 ~ sub_10000206c : 296 -> 320
-
 ```

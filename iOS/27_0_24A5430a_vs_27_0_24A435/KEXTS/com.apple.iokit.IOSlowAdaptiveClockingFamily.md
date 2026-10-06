@@ -2,14 +2,8 @@
 
 > `com.apple.iokit.IOSlowAdaptiveClockingFamily`
 
-```diff
+### Section Size Changes
 
- 33.0.0.0.0
-   __TEXT.__cstring: 0x3a0
-   __TEXT.__os_log: 0x2c8
--  __TEXT_EXEC.__text: 0x2e74
-+  __TEXT_EXEC.__text: 0x2f18
-   __TEXT_EXEC.__auth_stubs: 0x1b0
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x60
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x2e74` | `0x2f18` | **`+0xa4`** |

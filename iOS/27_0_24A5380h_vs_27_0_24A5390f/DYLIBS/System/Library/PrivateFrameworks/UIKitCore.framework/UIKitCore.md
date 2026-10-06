@@ -2,153 +2,65 @@
 
 > `/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_floatobj`
-- `__DATA.__objc_stublist`
-- `__DATA.__uikit_ipl`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ba0258` | `0x1ba1b98` | **`+0x1940`** |
+| `__DATA_DIRTY.__objc_data` | `0x2ece0` | `0x2e498` | **`-0x848`** |
+| `__DATA_DIRTY.__data` | `0xc70a` | `0xc09a` | **`-0x670`** |
+| `__TEXT.__objc_methlist` | `0x19df20` | `0x19e4c0` | **`+0x5a0`** |
+| `__DATA.__bss` | `0x3cb80` | `0x3d050` | **`+0x4d0`** |
+| `__AUTH.__objc_data` | `0x551e0` | `0x55668` | **`+0x488`** |
+| `__AUTH_CONST.__objc_const` | `0x277158` | `0x277558` | **`+0x400`** |
+| `__TEXT.__constg_swiftt` | `0x1d060` | `0x1ccb8` | **`-0x3a8`** |
+| `__TEXT.__swift5_reflstr` | `0x16aee` | `0x167be` | **`-0x330`** |
+| `__TEXT.__swift5_fieldmd` | `0x16a1c` | `0x16704` | **`-0x318`** |
+| `__DATA_CONST.__objc_selrefs` | `0x95210` | `0x95508` | **`+0x2f8`** |
+| `__TEXT.__oslogstring` | `0x5395e` | `0x53bd7` | **`+0x279`** |
+| `__DATA_DIRTY.__bss` | `0x16700` | `0x164b0` | **`-0x250`** |
+| `__AUTH_CONST.__cfstring` | `0xb2e60` | `0xb3080` | **`+0x220`** |
+| `__TEXT.__const` | `0x4bcc8` | `0x4be78` | **`+0x1b0`** |
+| `__TEXT.__cstring` | `0x10048e` | `0x10062a` | **`+0x19c`** |
+| `__AUTH_CONST.__const` | `0x5a9a0` | `0x5a858` | **`-0x148`** |
+| `__TEXT.__swift5_typeref` | `0x18a86` | `0x18966` | **`-0x120`** |
+| `__AUTH.__data` | `0x9cc0` | `0x9dd0` | **`+0x110`** |
+| `__AUTH_CONST.__auth_got` | `0x86b8` | `0x8620` | **`-0x98`** |
+| `__TEXT.__swift5_assocty` | `0x4c40` | `0x4cd0` | **`+0x90`** |
+| `__TEXT.__eh_frame` | `0xb580` | `0xb608` | **`+0x88`** |
+| `__TEXT.__gcc_except_tab` | `0x267b4` | `0x26830` | **`+0x7c`** |
+| `__TEXT.__swift5_capture` | `0xa218` | `0xa290` | **`+0x78`** |
+| `__DATA.__data` | `0x32230` | `0x322a0` | **`+0x70`** |
+| `__DATA_DIRTY.__common` | `0x7d0` | `0x770` | **`-0x60`** |
+| `__TEXT.__dlopen_cstrs` | `0x50af` | `0x5106` | **`+0x57`** |
+| `__DATA.__objc_ivar` | `0x11c0c` | `0x11c50` | **`+0x44`** |
+| `__DATA.__common` | `0x2d80` | `0x2dc0` | **`+0x40`** |
+| `__TEXT.__swift5_builtin` | `0x12d4` | `0x1310` | **`+0x3c`** |
+| `__DATA_CONST.__const` | `0x3e9e8` | `0x3ea18` | **`+0x30`** |
+| `__DATA_DIRTY.__uikit_ip` | `0x1170` | `0x1198` | **`+0x28`** |
+| `__TEXT.__swift5_proto` | `0x2490` | `0x24ac` | **`+0x1c`** |
+| `__DATA_CONST.__objc_classlist` | `0xb2f8` | `0xb2e0` | **`-0x18`** |
+| `__TEXT.__swift5_types` | `0x1b88` | `0x1b70` | **`-0x18`** |
+| `__DATA_CONST.__got` | `0x8f30` | `0x8f40` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x717a0` | `0x717b0` | **`+0x10`** |
+| `__DATA.__uikit_ip` | `0x998` | `0x990` | **`-0x8`** |
+| `__DATA_DIRTY.__objc_ivar` | `0x8848` | `0x8840` | **`-0x8`** |
+| `__TEXT.__swift5_protos` | `0x234` | `0x238` | **`+0x4`** |
+| `__TEXT.__swift5_types2` | `0x8` | `0x4` | **`-0x4`** |
+
+### Other Changes
 
 ```diff
 
 -9127.0.75.1.101
--  __TEXT.__text: 0x1ba0258
 +9127.0.79.1.102
-+  __TEXT.__text: 0x1ba1b98
-   __TEXT.__delay_helper: 0x1bc
-   __TEXT.__init_offsets: 0x4
--  __TEXT.__objc_methlist: 0x19df20
--  __TEXT.__const: 0x4bcc8
--  __TEXT.__dlopen_cstrs: 0x50af
--  __TEXT.__swift5_typeref: 0x18a86
--  __TEXT.__swift5_capture: 0xa218
--  __TEXT.__swift5_fieldmd: 0x16a1c
--  __TEXT.__constg_swiftt: 0x1d060
--  __TEXT.__swift5_reflstr: 0x16aee
--  __TEXT.__swift5_builtin: 0x12d4
--  __TEXT.__swift5_assocty: 0x4c40
--  __TEXT.__swift5_protos: 0x234
--  __TEXT.__swift5_proto: 0x2490
--  __TEXT.__swift5_types: 0x1b88
--  __TEXT.__cstring: 0x10048e
--  __TEXT.__oslogstring: 0x5395e
-+  __TEXT.__objc_methlist: 0x19e4c0
-+  __TEXT.__const: 0x4be78
-+  __TEXT.__dlopen_cstrs: 0x5106
-+  __TEXT.__swift5_typeref: 0x18966
-+  __TEXT.__swift5_capture: 0xa290
-+  __TEXT.__swift5_fieldmd: 0x16704
-+  __TEXT.__constg_swiftt: 0x1ccb8
-+  __TEXT.__swift5_reflstr: 0x167be
-+  __TEXT.__swift5_builtin: 0x1310
-+  __TEXT.__swift5_assocty: 0x4cd0
-+  __TEXT.__swift5_protos: 0x238
-+  __TEXT.__swift5_proto: 0x24ac
-+  __TEXT.__swift5_types: 0x1b70
-+  __TEXT.__cstring: 0x10062a
-+  __TEXT.__oslogstring: 0x53bd7
-   __TEXT.__swift_as_entry: 0x2ac
-   __TEXT.__swift_as_ret: 0x228
-   __TEXT.__swift_as_cont: 0x4f8
-   __TEXT.__swift5_mpenum: 0x238
--  __TEXT.__swift5_types2: 0x8
--  __TEXT.__gcc_except_tab: 0x267b4
-+  __TEXT.__swift5_types2: 0x4
-+  __TEXT.__gcc_except_tab: 0x26830
-   __TEXT.__ustring: 0x2a80
--  __TEXT.__unwind_info: 0x717a0
--  __TEXT.__eh_frame: 0xb580
-+  __TEXT.__unwind_info: 0x717b0
-+  __TEXT.__eh_frame: 0xb608
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3e9e8
--  __DATA_CONST.__objc_classlist: 0xb2f8
-+  __DATA_CONST.__const: 0x3ea18
-+  __DATA_CONST.__objc_classlist: 0xb2e0
-   __DATA_CONST.__objc_catlist: 0x368
-   __DATA_CONST.__objc_protolist: 0x3530
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x95210
-+  __DATA_CONST.__objc_selrefs: 0x95508
-   __DATA_CONST.__objc_protorefs: 0xdb0
-   __DATA_CONST.__objc_superrefs: 0x74d0
-   __DATA_CONST.__objc_arraydata: 0x41c8
--  __DATA_CONST.__got: 0x8f30
--  __AUTH_CONST.__const: 0x5a9a0
--  __AUTH_CONST.__cfstring: 0xb2e60
--  __AUTH_CONST.__objc_const: 0x277158
-+  __DATA_CONST.__got: 0x8f40
-+  __AUTH_CONST.__const: 0x5a858
-+  __AUTH_CONST.__cfstring: 0xb3080
-+  __AUTH_CONST.__objc_const: 0x277558
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_arrayobj: 0x2df0
-   __AUTH_CONST.__objc_doubleobj: 0xfb0
-   __AUTH_CONST.__objc_intobj: 0x4f68
-   __AUTH_CONST.__objc_dictobj: 0x6b8
-   __AUTH_CONST.__objc_floatobj: 0x30
--  __AUTH_CONST.__auth_got: 0x86b8
--  __AUTH.__objc_data: 0x551e0
--  __AUTH.__data: 0x9cc0
--  __DATA.__objc_ivar: 0x11c0c
--  __DATA.__data: 0x32230
--  __DATA.__uikit_ip: 0x998
-+  __AUTH_CONST.__auth_got: 0x8620
-+  __AUTH.__objc_data: 0x55668
-+  __AUTH.__data: 0x9dd0
-+  __DATA.__objc_ivar: 0x11c50
-+  __DATA.__data: 0x322a0
-+  __DATA.__uikit_ip: 0x990
-   __DATA.__objc_stublist: 0x20
-   __DATA.__uikit_ipl: 0x30
--  __DATA.__bss: 0x3cb80
--  __DATA.__common: 0x2d80
--  __DATA_DIRTY.__objc_ivar: 0x8848
--  __DATA_DIRTY.__objc_data: 0x2ece0
--  __DATA_DIRTY.__uikit_ip: 0x1170
--  __DATA_DIRTY.__data: 0xc70a
--  __DATA_DIRTY.__bss: 0x16700
--  __DATA_DIRTY.__common: 0x7d0
-+  __DATA.__bss: 0x3d050
-+  __DATA.__common: 0x2dc0
-+  __DATA_DIRTY.__objc_ivar: 0x8840
-+  __DATA_DIRTY.__objc_data: 0x2e498
-+  __DATA_DIRTY.__uikit_ip: 0x1198
-+  __DATA_DIRTY.__data: 0xc09a
-+  __DATA_DIRTY.__bss: 0x164b0
-+  __DATA_DIRTY.__common: 0x770
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 180229
--  Symbols:   291037
+-  Symbols:   228030
 -  CStrings:  33560
 +  Functions: 180355
-+  Symbols:   291182
++  Symbols:   228119
 +  CStrings:  33570
- 
 Symbols:
 + +[UIRecentsInputViewController labelStringsForCanManageList:]
 + +[UIRecentsInputViewController preferredContentWidthForStrings:font:layoutMargins:]
@@ -445,99 +357,6 @@ Symbols:
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAA15ModifiedContentVyAA01_c9Modifier_I0Vy5UIKit024SearchToolbarTransactionJ033_EF7B24EF605E8165C2F35E541A1D1901LLVGAA06_ValuenJ0VyAN0lX0VGG_SayAK0M5ModelC4ItemVGQo_HO
 + _loadPredictionConfigValue
 + _loadPredictionConfigValue.__s_category
-+ _objc_msgSend$_allPockets
-+ _objc_msgSend$_applyDictationTypingAttributes:
-+ _objc_msgSend$_currentDockItems
-+ _objc_msgSend$_edgeVisibility
-+ _objc_msgSend$_frameInView:
-+ _objc_msgSend$_hasOrientationDependentSafeAreaCornerInsets
-+ _objc_msgSend$_hasOrientationDependentSafeAreaEdgeInsets
-+ _objc_msgSend$_invalidateForSublayerTransformChange
-+ _objc_msgSend$_isAnimatingChanges
-+ _objc_msgSend$_navigationBarSearchAllowsToolbarIntegration:
-+ _objc_msgSend$_performAutomaticPresentationFromTextField:immediate:deferIfDismissing:
-+ _objc_msgSend$_performDidBeginEditingForSearchBar:deferIfDismissing:
-+ _objc_msgSend$_performWithSimultaneousPresentationTransitionsEnabled:
-+ _objc_msgSend$_playSoundFromPool:withVolume:pan:
-+ _objc_msgSend$_preferredIntrinsicRowHeight
-+ _objc_msgSend$_searchBarPlacementAllowsToolbarIntegrationForNavigationBar:
-+ _objc_msgSend$_searchBarTextDidBeginEditing:deferIfDismissing:
-+ _objc_msgSend$_searchFieldBeginEditingDeferIfDismissing:
-+ _objc_msgSend$_setShouldRecalculateBarHeight:
-+ _objc_msgSend$_setWantsIntrinsicContentSizeLoopDetection:
-+ _objc_msgSend$_sheetPresentationBarDetentValue
-+ _objc_msgSend$_shouldRecalculateBarHeight
-+ _objc_msgSend$_sizeOfContentViewControllerChangedAnimatingAlongsideTransition:
-+ _objc_msgSend$_systemPrefersReducedResourceUsage
-+ _objc_msgSend$_uikb_setCanPerformPasteFromResponder:
-+ _objc_msgSend$_updateBadgeValueForSidebarBarButtonItem:
-+ _objc_msgSend$_updateBarMinimizationForBarDetentProgress:isDragging:
-+ _objc_msgSend$_updateSceneSafeAreasForOrientationChangeIfNeeded
-+ _objc_msgSend$_updateTabBarPositionTrait
-+ _objc_msgSend$_wtTextPreviewForTargetedPreview:
-+ _objc_msgSend$additionalContainerInsetsForHostedElementsExcludingAdjacentBars:
-+ _objc_msgSend$allowsCascadedLayout
-+ _objc_msgSend$attachmentItems
-+ _objc_msgSend$backgroundMaterialSpring
-+ _objc_msgSend$borrowedView
-+ _objc_msgSend$containsOrientationDependentResolver
-+ _objc_msgSend$containsWritingToolsButton
-+ _objc_msgSend$contentFadeInSpring
-+ _objc_msgSend$contextWithFocusedTraits:unfocusedTraits:
-+ _objc_msgSend$grammarCheckingType
-+ _objc_msgSend$hasOrientationDependentSafeAreaCornerInsets
-+ _objc_msgSend$hasOrientationDependentSafeAreaEdgeInsets
-+ _objc_msgSend$indicatorBadge
-+ _objc_msgSend$initWithFontName:maxFontSize:minFontSize:textColor:yCoordinate:baselineOffset:
-+ _objc_msgSend$initWithHandle:overrideView:
-+ _objc_msgSend$inputTraitsInOnlyLine
-+ _objc_msgSend$isEffectivelyEmpty
-+ _objc_msgSend$isMatchingRadii
-+ _objc_msgSend$labelStringsForCanManageList:
-+ _objc_msgSend$layoutTraits
-+ _objc_msgSend$maximumImageWidth
-+ _objc_msgSend$overrideView
-+ _objc_msgSend$planeCount
-+ _objc_msgSend$planeMaximumColumnCount
-+ _objc_msgSend$planes
-+ _objc_msgSend$preferKeyboardInput
-+ _objc_msgSend$preferredContentWidthForStrings:font:layoutMargins:
-+ _objc_msgSend$preferredContentWidthwithManageListEnabled:
-+ _objc_msgSend$primaryRectEdgeForPlaneLevel:
-+ _objc_msgSend$reachableKeyboardDefinedWidth
-+ _objc_msgSend$recomputeAggregateResourceUsageSystemPreference
-+ _objc_msgSend$refreshAutocorrectionList
-+ _objc_msgSend$resourceUsageSystemPreference
-+ _objc_msgSend$sceneHasActiveInput
-+ _objc_msgSend$scopeFadeDelay
-+ _objc_msgSend$secureLabelImageLayer
-+ _objc_msgSend$secureRecentInputForIdentifier:context:
-+ _objc_msgSend$setAllowsCascadedLayout:
-+ _objc_msgSend$setCanInsertGenmoji:
-+ _objc_msgSend$setGrammarCheckingType:
-+ _objc_msgSend$setHeaderInliningBehavior:
-+ _objc_msgSend$setInputTraitsInOnlyLine:
-+ _objc_msgSend$setIsMatchingRadii:
-+ _objc_msgSend$setLayoutTraits:
-+ _objc_msgSend$setMaximumImageWidth:
-+ _objc_msgSend$setNeedsExternalRepresentationUpdate
-+ _objc_msgSend$setResourceUsageSystemPreference:
-+ _objc_msgSend$setSubmenuTitleAdditionalInsets:
-+ _objc_msgSend$setSupportsGenmojiCreation:
-+ _objc_msgSend$setWidthMatchingButton:
-+ _objc_msgSend$set_animatingChanges:
-+ _objc_msgSend$set_systemPrefersReducedResourceUsage:
-+ _objc_msgSend$submenuTitleAdditionalInsets
-+ _objc_msgSend$systemPrefersReducedResourceUsage
-+ _objc_msgSend$teardownGlowCorners
-+ _objc_msgSend$transitionSpring
-+ _objc_msgSend$updateContainsWritingToolsItem:
-+ _objc_msgSend$updateHostResourceUsagePreference:forSceneIdentifier:
-+ _objc_msgSend$updatePocket:contentRect:shouldAnimateVisibility:
-+ _objc_msgSend$updateScrollAwayForBarDetentProgress:isDragging:
-+ _objc_msgSend$updateWithContentRect:shouldAnimateVisibility:
-+ _objc_msgSend$wantsAccessoryFrame
-+ _objc_msgSend$widthMatchingButton
 + _symbolic $s5UIKit34_UITabBarExpansionPlatterContainerC8DelegateP
 + _symbolic Ieg_Sgz_Xx
 + _symbolic SDy__________G 5UIKit24NavigationBarContentViewC07VisibleD0V7PlatterV2IDV AA0bcG12Container_v1C6update2to8animator08minimizeD11TransitionsySayAGG_AA0bc10TransitionI0C8AnimatorCSgSbtF11MitosisInfoL_V0gS0V
@@ -803,43 +622,6 @@ Symbols:
 - _get_witness_table 7SwiftUI15ModifiedContentVyACyAA4ViewPAAE19_glassEffectOverlay9alignment9isEnabled_QrAA9AlignmentV_Sbqd__yXEtAaDRd__lFQOyAeAE01_fG6ZIndexyQrSdFQOyAeAE0F15DebugIdentifieryQrSSFQOyAeAEAKyQrSdFQOyAeAE0fG5Union2id9namespaceQrqd__Sg_AA9NamespaceV2IDVtSHRd__lFQOyAeAE0fgT0_2inQrAP_ATtSHRd__s8SendableRd__lFQOyAeAE01_fG0_AVQrAA6_GlassV_qd__tAA5ShapeRd__lFQOyACyACyAA6VStackVyACyACyAA6IDViewVy5UIKit33NavigationBarPlatterRepresentable33_D21F6862B6368C9E67877AE45A908036LLVSOGAA08_OpacityG0VGAA05_BlurG0VGGAA12_FrameLayoutVGAA14_PaddingLayoutVG_AA03AnyX0VQo__A4_18PlatterItemWrapperA6_LLVASOQo__A26_07PlatterT0OQo__Qo__Qo__Qo__ACyA4_012ToolbarBadgeE033_84BEBFF3C7C9B9D9FB2FA771D72A0ED1LLVA10_GSgQo_A4_34FloatingBarFramePreferenceModifier33_035608AF71C09E391F08A32076C66BC1LLVGAA21_TraitWritingModifierVyAA12_LayoutTraitVyA4_18PlatterLayoutValueA6_LLVGGGAaDHPA44_AaDHPqd0__AaDHD3_A40_HO_A43_AA0E8ModifierHPyHCHC_A52_AAA54_HPyHCHC
 - _get_witness_table 7SwiftUI7ForEachVys18EnumeratedSequenceVySay5UIKit12ToolbarModelC10PlacedItemVGGAJ17UniquePlacementIDVAA19_ConditionalContentVyAA08ModifiedP0VyARyARyAA6SpacerVAA16_FlexFrameLayoutVGAA21_TraitWritingModifierVyAA01_uV0VyAF03BarU10ElementKeyVGGGAA015_EnvironmentKeywX0VyAA4AxisOSgGGARyARyARyARyARyARyAA13_VariadicViewO4TreeVy_AA01_U4RootVyAF0hk17PaddingAdjustmentU033_CB802663395CF7995045D228EF1335E6LLVGARyAA4ViewPAAE19_glassEffectOverlay9alignment9isEnabled_QrAA9AlignmentV_Sbqd__yXEtAAA22_Rd__lFQOyA15_y_A17_yAF012OverlayChildU0A19_LLVGA23_AAE12visualEffectyQrqd__AA17EmptyVisualEffectV_AA13GeometryProxyVtYbcAA12VisualEffectRd__lFQOyA23_AAE22_glassEffectTransition_A26_QrAA22_GlassEffectTransitionV_SbtFQOyA23_AAE20glassDebugIdentifieryQrSSFQOyA23_AAE18_glassEffectZIndexyQrSdFQOyA23_AAE16glassEffectUnion2id9namespaceQrqd__Sg_AA9NamespaceV0N0VtSHRd__lFQOyA23_AAE011glassEffectN0_2inQrA46__A50_tSHRd__s8SendableRd__lFQOyA23_AAE12_glassEffect_A52_QrAA6_GlassV_qd__tAA5ShapeRd__lFQOyARyARyA15_y_A17_yAF0hk10MinMaxSizeU033_0EB3D317F8C8F07D3E5251F6B1C8223BLLVGAA6HStackVyAA6IDViewVyARyAH0K4ViewVAYyAA010TransitionV3KeyVGGSOGGGAA8StaticIfVyAF02IsH19DebugOverlayEnabled33_015D270E8678C18A5BE55ECF17695743LLVAF0H11DebugBorderA78_LLVAA05EmptyX0VGGAF0h10ScrollAwayX0A19_LLVG_AA8AnyShapeVQo__So011UIBarButtonK0CAFE0l8SemanticN0VQo__AH0j5GroupN0VQo__Qo__Qo__Qo__AAA37_PAAE6offsetyQrSo6CGSizeVFQOyA34__Qo_Qo_G_ARyAF0H9BadgeView33_84BEBFF3C7C9B9D9FB2FA771D72A0ED1LLVAA14_OpacityEffectVGSgQo_AF08Floatingyt10PreferenceX033_035608AF71C09E391F08A32076C66BC1LLVGGAA39_AligningSafeAreaRegionsIgnoringLayout2VGAA011_PreferencewX0VyAF0H30AccessibilityHUDItemPreference33_0065DB4BAA36163F154DE6E1AB537F5ELLVGGA3_GA10_GAYyAA06ZIndexV3KeyVGGAF0h17PocketEnvironmentX0A19_LLVGGGAAA22_HPA142_AAA22_HPA11_AAA22_HPA4_AAA22_HPAwAA22_HPAtAA22_HPyHC_AvA04ViewX0HPyHCHC_A3_AAA144_HPyHCHC_A10_AAA144_HPyHCHC_A141_AAA22_HPA138_AAA22_HPA134_AAA22_HPA133_AAA22_HPA132_AAA22_HPA125_AAA22_HPA122_AAA22_HPA21_AA22_VariadicView_ViewRootHPyHC_A121_AAA22_HPqd0__AAA22_HD3_A117_HO_A120_AAA144_HPyHCHCHC_A124_AAA144_HPyHCHC_A131_AAA144_HPyHCHC_A3_AAA144_HPyHCHC_A10_AAA144_HPyHCHC_A137_AAA144_HPyHCHC_A140_AAA144_HPyHCHCHC_HC
 - _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAA15ModifiedContentVyAA01_c9Modifier_I0Vy5UIKit024SearchToolbarTransactionJ033_EF7B24EF605E8165C2F35E541A1D1901LLVGAA06_ValuenJ0VyAN0lX0VGG_SbQo_HO
-- _objc_msgSend$_effectiveHorizontalVelocity
-- _objc_msgSend$_effectiveVerticalVelocity
-- _objc_msgSend$_frameInView:cache:
-- _objc_msgSend$_hasScrollPocketContainerModel
-- _objc_msgSend$_navigationBarSearchAllowsToolbarIntegration:allowToolbarItems:
-- _objc_msgSend$_performAutomaticPresentationFromTextField:immediate:
-- _objc_msgSend$_playSystemSound:behavior:withVolume:pan:
-- _objc_msgSend$_resourceConditions
-- _objc_msgSend$_searchBarPlacementAllowsToolbarIntegrationWithAllowToolbarItems:
-- _objc_msgSend$_searchBarTextDidBeginEditing:
-- _objc_msgSend$_searchFieldBeginEditing
-- _objc_msgSend$_visualInsets
-- _objc_msgSend$additionalContainerInsetsForHostedElements
-- _objc_msgSend$canOpenURL:
-- _objc_msgSend$dictionaryForKey:
-- _objc_msgSend$getValueForCoordinateSpace:
-- _objc_msgSend$initWithHandle:
-- _objc_msgSend$maximumPlaneColumnCount
-- _objc_msgSend$memoryPressure
-- _objc_msgSend$normal
-- _objc_msgSend$primaryRectEdge
-- _objc_msgSend$putValue:forCoordinateSpace:
-- _objc_msgSend$recomputeAggregateMemoryCondition
-- _objc_msgSend$resourceConditions
-- _objc_msgSend$serious
-- _objc_msgSend$setLumaSubrect:
-- _objc_msgSend$setMemoryPressure:
-- _objc_msgSend$setOverrideBackgroundColor:
-- _objc_msgSend$setTracksLumaWhileHidden:
-- _objc_msgSend$setUsesSquareIntrinsicSize:
-- _objc_msgSend$tracksLuma
-- _objc_msgSend$transferPlacementStateToInputWindowController:
-- _objc_msgSend$updateHostMemoryPressure:forSceneIdentifier:
-- _objc_msgSend$updateKernelMemoryPressure:
-- _objc_msgSend$updatePocket:contentRect:velocity:isTracking:shouldAnimateVisibility:
-- _objc_msgSend$updateWithContentRect:velocity:isTracking:shouldAnimateVisibility:
-- _objc_msgSend$usesSquareIntrinsicSize
 - _swift_unknownObjectWeakTakeAssign
 - _swift_unknownObjectWeakTakeInit
 - _symbolic SDy__________G 5UIKit24NavigationBarContentViewC07VisibleD0V7PlatterV2IDV AA0bcG12Container_v1C6update2to18scrollAwayProgress8animator08minimizeD11TransitionsySayAGG_SdAA0bc10TransitionI0C8AnimatorCSgSbtF11MitosisInfoL_V0gV0V

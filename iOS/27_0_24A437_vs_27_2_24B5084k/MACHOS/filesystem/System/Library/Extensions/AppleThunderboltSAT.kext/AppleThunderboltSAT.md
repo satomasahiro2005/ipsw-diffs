@@ -2,47 +2,41 @@
 
 > `/System/Library/Extensions/AppleThunderboltSAT.kext/AppleThunderboltSAT`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x24530` | `0x26ed4` | **`+0x29a4`** |
+| `__DATA_CONST.__const` | `0x4c18` | `0x59f8` | **`+0xde0`** |
+| `__TEXT.__cstring` | `0x10dcf` | `0x11736` | **`+0x967`** |
+| `__TEXT.__os_log` | `—` | `0x277` | **`+0x277`** |
+| `__TEXT_EXEC.__auth_stubs` | `0x570` | `0x670` | **`+0x100`** |
+| `__DATA_CONST.__kalloc_type` | `0x400` | `0x4c0` | **`+0xc0`** |
+| `__DATA_CONST.__auth_got` | `0x2b8` | `0x338` | **`+0x80`** |
+| `__DATA.__common` | `0x589` | `0x601` | **`+0x78`** |
+| `__TEXT.__const` | `0x50` | `0xc0` | **`+0x70`** |
+| `__DATA.__bss` | `0x3c` | `0x70` | **`+0x34`** |
+| `__DATA_CONST.__got` | `0xe8` | `0x110` | **`+0x28`** |
+| `__DATA_CONST.__mod_init_func` | `0x78` | `0x90` | **`+0x18`** |
+| `__DATA_CONST.__mod_term_func` | `0x78` | `0x90` | **`+0x18`** |
+
+### Same-size Content Changes
 
 - `__DATA.__data`
 - `__DATA_CONST.__kalloc_var`
 
+### Other Changes
+
 ```diff
 
 -113.0.0.0.0
--  __TEXT.__cstring: 0x10dcf
--  __TEXT.__const: 0x50
--  __TEXT_EXEC.__text: 0x23b00
--  __TEXT_EXEC.__auth_stubs: 0x570
-+120.0.0.502.1
-+  __TEXT.__cstring: 0x11736
-+  __TEXT.__os_log: 0x277
-+  __TEXT.__const: 0xc0
-+  __TEXT_EXEC.__text: 0x26390
-+  __TEXT_EXEC.__auth_stubs: 0x670
-   __DATA.__data: 0x7f0
--  __DATA.__common: 0x589
--  __DATA_CONST.__mod_init_func: 0x78
--  __DATA_CONST.__mod_term_func: 0x78
--  __DATA_CONST.__const: 0x4c18
--  __DATA_CONST.__kalloc_type: 0x400
-+  __DATA.__common: 0x601
-+  __DATA_CONST.__mod_init_func: 0x90
-+  __DATA_CONST.__mod_term_func: 0x90
-+  __DATA_CONST.__const: 0x59f8
-+  __DATA_CONST.__kalloc_type: 0x4c0
-   __DATA_CONST.__kalloc_var: 0x2d0
--  __DATA_CONST.__auth_got: 0x2b8
--  __DATA_CONST.__got: 0xe8
 -  Functions: 557
 -  Symbols:   1117
--  CStrings:  1025
-+  __DATA_CONST.__auth_got: 0x338
-+  __DATA_CONST.__got: 0x110
+-  CStrings:  1026
++120.0.0.502.1
 +  Functions: 641
 +  Symbols:   1268
-+  CStrings:  1065
- 
++  CStrings:  1066
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/AppleThunderboltSAT/install/TempContent/Objects/AppleThunderboltSAT.build/AppleThunderboltSAT.build/Objects-normal/arm64e/AIATimeSyncHandler.o
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/AppleThunderboltSAT/install/TempContent/Objects/AppleThunderboltSAT.build/AppleThunderboltSAT.build/Objects-normal/arm64e/AppleThunderboltSATTimeSyncPort.o
@@ -212,6 +206,7 @@ CStrings:
 + "12111112122212121111111221"
 + "121111121222121211111122222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222"
 + "1212"
++ "20:44:28"
 + "?"
 + "AIATimeSyncHandler"
 + "AIATimeSyncInit - AML handler role=%s failed: 0x%x"
@@ -233,6 +228,7 @@ CStrings:
 + "SATClientDataQueue<%p>::%s discarding a stale abort request\n"
 + "SATClientDataQueue<%p>::initParams - ERROR: IOLockAlloc failed\n"
 + "SATClientDataQueue<%p>::wait_for_data returns without data (aborted by STOP_WAIT), sleep_counter: %llu\n"
++ "Sep  9 2026"
 + "This bounded_ptr is pointing to memory outside of what can be represented by a native pointer."
 + "a0-ccpu0"
 + "a1-ccpu0"
@@ -252,4 +248,6 @@ CStrings:
 - "1.0.101"
 - "113"
 - "1211111212221212111111122"
+- "21:31:19"
+- "Aug 13 2026"
 ```

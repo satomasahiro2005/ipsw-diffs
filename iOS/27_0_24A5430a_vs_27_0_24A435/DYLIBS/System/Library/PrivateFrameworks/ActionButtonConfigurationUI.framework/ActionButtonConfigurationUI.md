@@ -2,17 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/ActionButtonConfigurationUI.framework/ActionButtonConfigurationUI`
 
-```diff
+### Section Size Changes
 
- 68.101.0.0.0
--  __TEXT.__text: 0x3c694
-+  __TEXT.__text: 0x3c67c
-   __TEXT.__objc_methlist: 0x6ac
-   __TEXT.__const: 0x2534
-   __TEXT.__constg_swiftt: 0xd7c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3c694` | `0x3c67c` | **`-0x18`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_250680c60 -> sub_2510cfc60 : 860 -> 844
-~ sub_2506a15ec -> sub_2510f05dc : 880 -> 864
-~ sub_2506aa5d8 -> sub_2510f95b8 : 360 -> 364
-~ sub_2506aa8b4 -> sub_2510f9898 : 340 -> 344
+~ sub_25055cc60 -> sub_250f98c60 : 860 -> 844
+~ sub_25057d5ec -> sub_250fb95dc : 880 -> 864
+~ sub_2505865d8 -> sub_250fc25b8 : 360 -> 364
+~ sub_2505868b4 -> sub_250fc2898 : 340 -> 344
 ```

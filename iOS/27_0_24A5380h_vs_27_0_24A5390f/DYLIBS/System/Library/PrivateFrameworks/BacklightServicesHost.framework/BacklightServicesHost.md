@@ -2,92 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/BacklightServicesHost.framework/BacklightServicesHost`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__gcc_except_tab`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_floatobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x11d0` | `—` | **`-0x11d0`** |
+| `__DATA_DIRTY.__objc_data` | `0x2c60` | `0x3e30` | **`+0x11d0`** |
+| `__TEXT.__text` | `0x9a7b0` | `0x9b29c` | **`+0xaec`** |
+| `__TEXT.__oslogstring` | `0x1289d` | `0x129e6` | **`+0x149`** |
+| `__TEXT.__cstring` | `0x7cfb` | `0x7e30` | **`+0x135`** |
+| `__DATA_CONST.__const` | `0x2cc8` | `0x2d90` | **`+0xc8`** |
+| `__AUTH_CONST.__objc_const` | `0x19048` | `0x190f8` | **`+0xb0`** |
+| `__TEXT.__objc_methlist` | `0x9c74` | `0x9d1c` | **`+0xa8`** |
+| `__DATA.__data` | `0x2400` | `0x2460` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x2818` | `0x2860` | **`+0x48`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3bf0` | `0x3c28` | **`+0x38`** |
+| `__DATA.__bss` | `0xf0` | `0xe0` | **`-0x10`** |
+| `__DATA_DIRTY.__bss` | `0x110` | `0x120` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x300` | `0x308` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x12dc` | `0x12e0` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -6.0.36.0.0
--  __TEXT.__text: 0x9a7b0
--  __TEXT.__objc_methlist: 0x9c74
 +6.0.38.0.0
-+  __TEXT.__text: 0x9b29c
-+  __TEXT.__objc_methlist: 0x9d1c
-   __TEXT.__const: 0x4a0
-   __TEXT.__gcc_except_tab: 0xf18
--  __TEXT.__cstring: 0x7cfb
--  __TEXT.__oslogstring: 0x1289d
-+  __TEXT.__cstring: 0x7e30
-+  __TEXT.__oslogstring: 0x129e6
-   __TEXT.__ustring: 0x570
--  __TEXT.__unwind_info: 0x2818
-+  __TEXT.__unwind_info: 0x2860
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2cc8
-+  __DATA_CONST.__const: 0x2d90
-   __DATA_CONST.__objc_classlist: 0x638
-   __DATA_CONST.__objc_catlist: 0x38
--  __DATA_CONST.__objc_protolist: 0x300
-+  __DATA_CONST.__objc_protolist: 0x308
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3bf0
-+  __DATA_CONST.__objc_selrefs: 0x3c28
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x518
-   __DATA_CONST.__objc_arraydata: 0x78
-   __DATA_CONST.__got: 0x820
-   __AUTH_CONST.__const: 0xd00
-   __AUTH_CONST.__cfstring: 0x7c80
--  __AUTH_CONST.__objc_const: 0x19048
-+  __AUTH_CONST.__objc_const: 0x190f8
-   __AUTH_CONST.__objc_intobj: 0xc0
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x11d0
--  __DATA.__objc_ivar: 0x12dc
--  __DATA.__data: 0x2400
--  __DATA.__bss: 0xf0
--  __DATA_DIRTY.__objc_data: 0x2c60
--  __DATA_DIRTY.__bss: 0x110
-+  __DATA.__objc_ivar: 0x12e0
-+  __DATA.__data: 0x2460
-+  __DATA.__bss: 0xe0
-+  __DATA_DIRTY.__objc_data: 0x3e30
-+  __DATA_DIRTY.__bss: 0x120
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMotion.framework/CoreMotion
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libtailspin.dylib
 -  Functions: 4204
--  Symbols:   9050
+-  Symbols:   7407
 -  CStrings:  1982
 +  Functions: 4227
-+  Symbols:   9089
++  Symbols:   7439
 +  CStrings:  1989
- 
 Symbols:
 + -[BLSHAggregateBacklightHost internalTelemetryDelegate]
 + -[BLSHAggregateBacklightHost setInternalTelemetryDelegate:]
@@ -154,18 +101,6 @@ Symbols:
 + ___block_descriptor_65_e8_32s40s48s56s_e46_v16?0"<BLSHBacklightHostTelemetryDelegate>"8ls32l8s40l8s48l8s56l8
 + ___block_descriptor_72_e8_32s40s48s56s_e46_v16?0"<BLSHBacklightHostTelemetryDelegate>"8ls32l8s40l8s48l8s56l8
 + ___block_descriptor_81_e8_32s40s48s56s_e46_v16?0"<BLSHBacklightHostTelemetryDelegate>"8ls32l8s40l8s48l8s56l8
-+ _objc_msgSend$bls_supportsLowPowerRendering
-+ _objc_msgSend$clientSupportsLowPowerRendering
-+ _objc_msgSend$didUnblankForEvents:
-+ _objc_msgSend$hostEnvironment:hostDidSetLowPowerRenderingRequested:
-+ _objc_msgSend$inactiveEnvironmentSession:willUpdateToPresentation:
-+ _objc_msgSend$internalTelemetryDelegate
-+ _objc_msgSend$isLowPowerRenderingRequested
-+ _objc_msgSend$isUpdatedToBacklightState:lowPowerRendering:
-+ _objc_msgSend$setInternalTelemetryDelegate:
-+ _objc_msgSend$setLowPowerRenderingRequested:
-+ _objc_msgSend$updateToDateSpecifier:lowPowerRendering:sceneContentsUpdated:
-+ _objc_msgSend$wantsLowPowerRendering
 + _objc_release_x3
 - -[BLSHAlwaysOnPresentationEngine _lock_updateLowPowerRenderingFromPresentation:]
 - -[BLSHAlwaysOnPresentationEngine hostEnvironment:hostDidSetLowPowerRendering:]
@@ -201,11 +136,6 @@ Symbols:
 - ___108-[BLSHBacklightFBSceneHostEnvironment updateToDateSpecifier:sceneContentsUpdated:lowPowerRenderingDisabled:]_block_invoke
 - ___53-[BLSHBaseSceneHostEnvironment setLowPowerRendering:]_block_invoke
 - ___60-[BLSHBacklightFBSceneHostEnvironment setLowPowerRendering:]_block_invoke
-- _objc_msgSend$didUnblankForEvent:
-- _objc_msgSend$hostEnvironment:hostDidSetLowPowerRendering:
-- _objc_msgSend$isLowPowerRenderingDisabled
-- _objc_msgSend$isUpdatedToBacklightState:lowPowerRenderingDisabled:
-- _objc_msgSend$setTelemetryDelegate:
 CStrings:
 + "%p class %@ does not respond to selector setLowPowerRenderingRequested:, cannot acquire assertion with BLSLowPowerRenderingAttribute : %@"
 + "%p class %@ does not respond to selector setLowPowerRenderingRequested:, cannot deactivate assertion with BLSLowPowerRenderingAttribute : %@"

@@ -2,121 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/AppletTranslationFramework.framework/AppletTranslationFramework`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__swift5_protos`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_doubleobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd3518` | `0xd87b4` | **`+0x529c`** |
+| `__AUTH.__objc_data` | `0x1bd0` | `0x2a8` | **`-0x1928`** |
+| `__DATA_DIRTY.__objc_data` | `—` | `0x1918` | **`+0x1918`** |
+| `__DATA_DIRTY.__data` | `—` | `0x610` | **`+0x610`** |
+| `__DATA.__bss` | `0x26c8` | `0x21a8` | **`-0x520`** |
+| `__AUTH.__data` | `0x440` | `0x28` | **`-0x418`** |
+| `__TEXT.__oslogstring` | `0x777c` | `0x798c` | **`+0x210`** |
+| `__DATA.__data` | `0x9c8` | `0x820` | **`-0x1a8`** |
+| `__TEXT.__const` | `0x4bf8` | `0x4ab8` | **`-0x140`** |
+| `__AUTH_CONST.__const` | `0x34c1` | `0x35e9` | **`+0x128`** |
+| `__DATA_DIRTY.__bss` | `—` | `0x120` | **`+0x120`** |
+| `__TEXT.__eh_frame` | `0x1de8` | `0x1e70` | **`+0x88`** |
+| `__TEXT.__swift5_reflstr` | `0xc49` | `0xcc9` | **`+0x80`** |
+| `__TEXT.__constg_swiftt` | `0xb44` | `0xba8` | **`+0x64`** |
+| `__AUTH_CONST.__auth_got` | `0xce8` | `0xc88` | **`-0x60`** |
+| `__TEXT.__swift5_fieldmd` | `0xdd8` | `0xe38` | **`+0x60`** |
+| `__DATA_DIRTY.__common` | `—` | `0x58` | **`+0x58`** |
+| `__TEXT.__swift5_capture` | `0x128` | `0x178` | **`+0x50`** |
+| `__DATA.__common` | `0x78` | `0x38` | **`-0x40`** |
+| `__TEXT.__swift5_assocty` | `0x180` | `0x150` | **`-0x30`** |
+| `__AUTH_CONST.__objc_const` | `0x42e8` | `0x42c0` | **`-0x28`** |
+| `__TEXT.__cstring` | `0x94b5` | `0x94d5` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x3028` | `0x3010` | **`-0x18`** |
+| `__TEXT.__swift5_builtin` | `0xdc` | `0xc8` | **`-0x14`** |
+| `__DATA_CONST.__got` | `0x520` | `0x510` | **`-0x10`** |
+| `__TEXT.__swift5_proto` | `0x13c` | `0x12c` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x1be0` | `0x1bd0` | **`-0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1710` | `0x1708` | **`-0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x6c` | `0x64` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0xe0` | `0xe8` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0xbdf` | `0xbdb` | **`-0x4`** |
+
+### Other Changes
 
 ```diff
 
 -70.31.0.0.0
--  __TEXT.__text: 0xd3518
--  __TEXT.__objc_methlist: 0x3028
--  __TEXT.__const: 0x4bf8
--  __TEXT.__cstring: 0x94b5
--  __TEXT.__oslogstring: 0x777c
 +70.32.0.0.0
-+  __TEXT.__text: 0xd87b4
-+  __TEXT.__objc_methlist: 0x3010
-+  __TEXT.__const: 0x4ab8
-+  __TEXT.__cstring: 0x94d5
-+  __TEXT.__oslogstring: 0x798c
-   __TEXT.__gcc_except_tab: 0x1dd8
--  __TEXT.__constg_swiftt: 0xb44
--  __TEXT.__swift5_typeref: 0xbdf
--  __TEXT.__swift5_fieldmd: 0xdd8
--  __TEXT.__swift5_builtin: 0xdc
--  __TEXT.__swift5_reflstr: 0xc49
--  __TEXT.__swift5_assocty: 0x180
--  __TEXT.__swift5_capture: 0x128
--  __TEXT.__swift5_proto: 0x13c
--  __TEXT.__swift5_types: 0xe0
--  __TEXT.__swift5_mpenum: 0x6c
-+  __TEXT.__constg_swiftt: 0xba8
-+  __TEXT.__swift5_typeref: 0xbdb
-+  __TEXT.__swift5_fieldmd: 0xe38
-+  __TEXT.__swift5_builtin: 0xc8
-+  __TEXT.__swift5_reflstr: 0xcc9
-+  __TEXT.__swift5_assocty: 0x150
-+  __TEXT.__swift5_capture: 0x178
-+  __TEXT.__swift5_proto: 0x12c
-+  __TEXT.__swift5_types: 0xe8
-+  __TEXT.__swift5_mpenum: 0x64
-   __TEXT.__ustring: 0xa
-   __TEXT.__swift5_protos: 0xc
--  __TEXT.__unwind_info: 0x1be0
--  __TEXT.__eh_frame: 0x1de8
-+  __TEXT.__unwind_info: 0x1bd0
-+  __TEXT.__eh_frame: 0x1e70
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1710
-+  __DATA_CONST.__objc_selrefs: 0x1708
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x70
-   __DATA_CONST.__objc_arraydata: 0x2ba8
--  __DATA_CONST.__got: 0x520
--  __AUTH_CONST.__const: 0x34c1
-+  __DATA_CONST.__got: 0x510
-+  __AUTH_CONST.__const: 0x35e9
-   __AUTH_CONST.__cfstring: 0xac80
--  __AUTH_CONST.__objc_const: 0x42e8
-+  __AUTH_CONST.__objc_const: 0x42c0
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x1020
-   __AUTH_CONST.__objc_arrayobj: 0x450
-   __AUTH_CONST.__objc_dictobj: 0xf28
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0xce8
--  __AUTH.__objc_data: 0x1bd0
--  __AUTH.__data: 0x440
-+  __AUTH_CONST.__auth_got: 0xc88
-+  __AUTH.__objc_data: 0x2a8
-+  __AUTH.__data: 0x28
-   __DATA.__objc_ivar: 0x198
--  __DATA.__data: 0x9c8
--  __DATA.__bss: 0x26c8
--  __DATA.__common: 0x78
-+  __DATA.__data: 0x820
-+  __DATA.__bss: 0x21a8
-+  __DATA.__common: 0x38
-+  __DATA_DIRTY.__objc_data: 0x1918
-+  __DATA_DIRTY.__data: 0x610
-+  __DATA_DIRTY.__bss: 0x120
-+  __DATA_DIRTY.__common: 0x58
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 2319
--  Symbols:   3618
+-  Symbols:   2944
 -  CStrings:  2167
 +  Functions: 2329
-+  Symbols:   3619
++  Symbols:   2942
 +  CStrings:  2175
- 
 Symbols:
 + _OBJC_CLASS_$_NSFileManager
 + _OBJC_CLASS_$__TtC26AppletTranslationFramework33ATLSecureElementFirmwareValidator
@@ -129,10 +63,6 @@ Symbols:
 + ___swift_memcpy4_1
 + _associated conformance 26AppletTranslationFramework16MeasurementsFile33_8529D451F4F3BB6E3F03C038B4F96812LLV11DecodeErrorOSHAASQ
 + _associated conformance 26AppletTranslationFramework8Manifest33_8529D451F4F3BB6E3F03C038B4F96812LLV11DecodeErrorOSHAASQ
-+ _objc_msgSend$contentsAtPath:
-+ _objc_msgSend$defaultManager
-+ _objc_msgSend$initWithUnsignedInteger:
-+ _objc_msgSend$validateSEFWMeasurements:seManifest:
 + _symbolic Say_____G 26AppletTranslationFramework16MeasurementsFile33_8529D451F4F3BB6E3F03C038B4F96812LLV5EntryV
 + _symbolic Say_____G 26AppletTranslationFramework20EncodableMeasurement33_8529D451F4F3BB6E3F03C038B4F96812LLV
 + _symbolic _____ 26AppletTranslationFramework13LyonConstantsO15TransactionCodeO
@@ -168,7 +98,6 @@ Symbols:
 - _associated conformance 26AppletTranslationFramework36ATLSecureElementFirmwareMeasurementsV5EntryV10CodingKeysOs0I3KeyAAs23CustomStringConvertible
 - _associated conformance 26AppletTranslationFramework36ATLSecureElementFirmwareMeasurementsV5EntryV10CodingKeysOs0I3KeyAAs28CustomDebugStringConvertible
 - _get_enum_tag_for_layout_string 26AppletTranslationFramework32ATLSecureElementFirmwareMetadataC5ErrorO
-- _objc_msgSend$initWithBool:
 - _swift_isaMask
 - _symbolic Say_____G 26AppletTranslationFramework36ATLSecureElementFirmwareMeasurementsV5EntryV
 - _symbolic _____ 26AppletTranslationFramework32ATLSecureElementFirmwareMetadataC

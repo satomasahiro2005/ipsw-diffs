@@ -2,89 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/HealthEvaluationsUI.framework/HealthEvaluationsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x463108` | `0x4789b8` | **`+0x158b0`** |
+| `__TEXT.__const` | `0x234c4` | `0x23c74` | **`+0x7b0`** |
+| `__DATA.__bss` | `0x22ca8` | `0x233f8` | **`+0x750`** |
+| `__TEXT.__cstring` | `0xc06f` | `0xb9af` | **`-0x6c0`** |
+| `__TEXT.__eh_frame` | `0x133ac` | `0x139f0` | **`+0x644`** |
+| `__TEXT.__swift5_typeref` | `0x108d0` | `0x10e70` | **`+0x5a0`** |
+| `__TEXT.__oslogstring` | `0x7b82` | `0x7fb2` | **`+0x430`** |
+| `__TEXT.__unwind_info` | `0xf078` | `0xf478` | **`+0x400`** |
+| `__DATA.__data` | `0xf2f0` | `0xf5e8` | **`+0x2f8`** |
+| `__TEXT.__swift5_reflstr` | `0xb1b7` | `0xb427` | **`+0x270`** |
+| `__TEXT.__swift5_fieldmd` | `0x9ee4` | `0xa0cc` | **`+0x1e8`** |
+| `__AUTH_CONST.__const` | `0x17aa0` | `0x17c80` | **`+0x1e0`** |
+| `__AUTH.__data` | `0xad58` | `0xaf18` | **`+0x1c0`** |
+| `__TEXT.__constg_swiftt` | `0xbff8` | `0xc0e0` | **`+0xe8`** |
+| `__AUTH_CONST.__objc_const` | `0x5058` | `0x5138` | **`+0xe0`** |
+| `__AUTH_CONST.__auth_got` | `0x3508` | `0x35d0` | **`+0xc8`** |
+| `__DATA_CONST.__got` | `0x30a8` | `0x3150` | **`+0xa8`** |
+| `__TEXT.__swift5_assocty` | `0x2e38` | `0x2eb8` | **`+0x80`** |
+| `__TEXT.__swift5_capture` | `0x3714` | `0x3788` | **`+0x74`** |
+| `__TEXT.__swift_as_cont` | `0xeb4` | `0xf20` | **`+0x6c`** |
+| `__TEXT.__swift5_proto` | `0x12c0` | `0x12f8` | **`+0x38`** |
+| `__TEXT.__swift_as_ret` | `0x67c` | `0x6b0` | **`+0x34`** |
+| `__TEXT.__swift_as_entry` | `0x6a4` | `0x6d4` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x518` | `0x538` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x9fc` | `0xa10` | **`+0x14`** |
+| `__TEXT.__swift5_mpenum` | `0x38` | `0x48` | **`+0x10`** |
+| `__DATA.__common` | `0x3a0` | `0x3a8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.36.2.7
--  __TEXT.__text: 0x43d6e0
 +7027.1.45.2.4
-+  __TEXT.__text: 0x452548
-   __TEXT.__objc_methlist: 0x194
--  __TEXT.__const: 0x234c4
--  __TEXT.__constg_swiftt: 0xbff8
--  __TEXT.__swift5_typeref: 0x108d0
-+  __TEXT.__const: 0x23c74
-+  __TEXT.__constg_swiftt: 0xc0e0
-+  __TEXT.__swift5_typeref: 0x10e70
-   __TEXT.__swift5_builtin: 0x190
--  __TEXT.__swift5_reflstr: 0xb1b7
--  __TEXT.__swift5_fieldmd: 0x9ee4
--  __TEXT.__swift5_assocty: 0x2e38
--  __TEXT.__swift5_proto: 0x12c0
--  __TEXT.__swift5_types: 0x9fc
--  __TEXT.__cstring: 0xc06f
--  __TEXT.__swift5_capture: 0x3714
--  __TEXT.__oslogstring: 0x7b82
-+  __TEXT.__swift5_reflstr: 0xb427
-+  __TEXT.__swift5_fieldmd: 0xa0cc
-+  __TEXT.__swift5_assocty: 0x2eb8
-+  __TEXT.__swift5_proto: 0x12f8
-+  __TEXT.__swift5_types: 0xa10
-+  __TEXT.__cstring: 0xb9af
-+  __TEXT.__swift5_capture: 0x3788
-+  __TEXT.__oslogstring: 0x7fb2
-   __TEXT.__swift5_protos: 0x104
--  __TEXT.__swift_as_entry: 0x6a4
--  __TEXT.__swift_as_ret: 0x67c
--  __TEXT.__swift_as_cont: 0xeb4
--  __TEXT.__swift5_mpenum: 0x38
--  __TEXT.__unwind_info: 0x12a20
--  __TEXT.__eh_frame: 0x13424
-+  __TEXT.__swift_as_entry: 0x6d4
-+  __TEXT.__swift_as_ret: 0x6b0
-+  __TEXT.__swift_as_cont: 0xf20
-+  __TEXT.__swift5_mpenum: 0x48
-+  __TEXT.__unwind_info: 0x12f68
-+  __TEXT.__eh_frame: 0x13a68
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x1d8
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x518
-+  __DATA_CONST.__objc_selrefs: 0x538
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__got: 0x30a8
--  __AUTH_CONST.__const: 0x17aa0
-+  __DATA_CONST.__got: 0x3150
-+  __AUTH_CONST.__const: 0x17c80
-   __AUTH_CONST.__cfstring: 0x20
--  __AUTH_CONST.__objc_const: 0x5058
--  __AUTH_CONST.__auth_got: 0x3508
-+  __AUTH_CONST.__objc_const: 0x5138
-+  __AUTH_CONST.__auth_got: 0x35d0
-   __AUTH.__objc_data: 0xc20
--  __AUTH.__data: 0xad58
--  __DATA.__data: 0xf2f0
--  __DATA.__common: 0x3a0
-+  __AUTH.__data: 0xaf18
-+  __DATA.__data: 0xf5e8
-+  __DATA.__common: 0x3a8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 20911
--  Symbols:   3768
+-  Symbols:   3633
 -  CStrings:  1666
 +  Functions: 21215
-+  Symbols:   3810
++  Symbols:   3671
 +  CStrings:  1669
- 
 Symbols:
 + _AVAudioEngineConfigurationChangeNotification
 + _OBJC_CLASS_$_AVAudioSessionPortDescription
@@ -125,10 +87,6 @@ Symbols:
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAEAdefgH_QrAI_ScPSSSiyyYaYAcntFQOyAcAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVyANyAcAE5sheet11isPresented0I7Dismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAcAE7toolbarARQrqd__yXE_tAA07ToolbarN0Rd__lFQOyANyAA6ZStackVyAA05TupleN0Vy017HealthEvaluationsB0013TutorialVideonC0V_ANyA1_23IntroduceExerciseLayoutVAA21_TraitWritingModifierVyAA18TransitionTraitKeyVGGSgQPGGAA18_AnimationModifierVySbGG_AA0V4ItemVyytANyANyAA4TextVAA14_OpacityEffectVGA17_GGQo__AcAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQOyAcAEA29_yQrA30_Rld__CA31_A32_Rd__lFQOyA1_20ExerciseOptionsSheetV_A1_25MovementEvaluationSessionCQo__A1_0Y9DataModelCQo_Qo_A1_33EvaluationInProgressSheetModifierVGA1_29PauseDeferringAdvanceModifierVG_SbQo__Qo__Qo_HO
 + _keypath_get.84Tm
 + _keypath_set.85Tm
-+ _objc_msgSend$currentRoute
-+ _objc_msgSend$outputNumberOfChannels
-+ _objc_msgSend$outputs
-+ _objc_msgSend$portType
 + _symbolic SDy__________G 19HealthEvaluationsUI28InterstitialAnnouncementTypeO AA17ShuffledIndexDeckV
 + _symbolic SS11systemImage_SSSg5titleSS4text_____Sg4linkt 19HealthEvaluationsUI21EvaluationInfoContentV3RowO4LinkV
 + _symbolic SS_Sb9isCircledt

@@ -2,25 +2,23 @@
 
 > `/System/Library/PrivateFrameworks/CAFCombine.framework/CAFCombine`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1392cc` | `0x139280` | **`-0x4c`** |
+
+### Other Changes
+
 ```diff
 
 -552.3.0.0.0
--  __TEXT.__text: 0x12d11c
 +552.6.2.0.0
-+  __TEXT.__text: 0x12d0d8
-   __TEXT.__objc_methlist: 0x7aac
-   __TEXT.__const: 0x1bf74
-   __TEXT.__swift5_typeref: 0xa960
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 17318
 -  Symbols:   34371
 +  Functions: 17322
 +  Symbols:   34373
-   CStrings:  600
- 
 Symbols:
 + _$s10CAFCombine16CAFCarObservableC17automakerOverlaysSaySo012CAFAutomakerE0CGvW
 + _$s10CAFCombine16CAFCarObservableC17automakerOverlaysSaySo012CAFAutomakerE0CGvg

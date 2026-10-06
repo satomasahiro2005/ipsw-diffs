@@ -2,119 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/CascadeEngine.framework/CascadeEngine`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x61a38` | `0x639f4` | **`+0x1fbc`** |
+| `__TEXT.__oslogstring` | `0x6539` | `0x6a29` | **`+0x4f0`** |
+| `__AUTH_CONST.__objc_const` | `0x4cf0` | `0x50d8` | **`+0x3e8`** |
+| `__DATA_DIRTY.__objc_data` | `0x820` | `0xb00` | **`+0x2e0`** |
+| `__AUTH.__objc_data` | `0x918` | `0x648` | **`-0x2d0`** |
+| `__DATA_DIRTY.__data` | `0x2c8` | `0x508` | **`+0x240`** |
+| `__TEXT.__cstring` | `0x2894` | `0x2a84` | **`+0x1f0`** |
+| `__AUTH.__data` | `0x1c8` | `0x50` | **`-0x178`** |
+| `__DATA_CONST.__const` | `0xde8` | `0xf00` | **`+0x118`** |
+| `__TEXT.__objc_methlist` | `0x1ddc` | `0x1e8c` | **`+0xb0`** |
+| `__TEXT.__gcc_except_tab` | `0x61c` | `0x6bc` | **`+0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1958` | `0x19f0` | **`+0x98`** |
+| `__AUTH_CONST.__const` | `0x26a0` | `0x2718` | **`+0x78`** |
+| `__TEXT.__unwind_info` | `0x14e0` | `0x1558` | **`+0x78`** |
+| `__DATA.__data` | `0xe38` | `0xdf8` | **`-0x40`** |
+| `__TEXT.__swift5_capture` | `0xd9c` | `0xdd8` | **`+0x3c`** |
+| `__DATA_CONST.__got` | `0x638` | `0x670` | **`+0x38`** |
+| `__AUTH_CONST.__cfstring` | `0x1960` | `0x1980` | **`+0x20`** |
+| `__TEXT.__const` | `0x1228` | `0x1248` | **`+0x20`** |
+| `__DATA.__bss` | `0xb50` | `0xb40` | **`-0x10`** |
+| `__DATA_DIRTY.__bss` | `0x410` | `0x420` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x2ac` | `0x2b8` | **`+0xc`** |
+| `__TEXT.__swift5_fieldmd` | `0x368` | `0x374` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0xed0` | `0xed8` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x118` | `0x120` | **`+0x8`** |
+| `__TEXT.__constg_swiftt` | `0x5b8` | `0x5c0` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0xdbe` | `0xdc6` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0xc8` | `0xd0` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x8c` | `0x94` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x88` | `0x90` | **`+0x8`** |
+| `__TEXT.__swift5_reflstr` | `0x317` | `0x31e` | **`+0x7`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x61a38
--  __TEXT.__objc_methlist: 0x1ddc
--  __TEXT.__const: 0x1228
--  __TEXT.__gcc_except_tab: 0x61c
--  __TEXT.__cstring: 0x2894
--  __TEXT.__oslogstring: 0x6539
-+  __TEXT.__text: 0x639f4
-+  __TEXT.__objc_methlist: 0x1e8c
-+  __TEXT.__const: 0x1248
-+  __TEXT.__gcc_except_tab: 0x6bc
-+  __TEXT.__cstring: 0x2a84
-+  __TEXT.__oslogstring: 0x6a29
-   __TEXT.__ustring: 0x7c
-   __TEXT.__dlopen_cstrs: 0x47
--  __TEXT.__swift5_typeref: 0xdbe
--  __TEXT.__swift5_reflstr: 0x317
-+  __TEXT.__swift5_typeref: 0xdc6
-+  __TEXT.__swift5_reflstr: 0x31e
-   __TEXT.__swift5_assocty: 0xf0
--  __TEXT.__constg_swiftt: 0x5b8
--  __TEXT.__swift5_fieldmd: 0x368
-+  __TEXT.__constg_swiftt: 0x5c0
-+  __TEXT.__swift5_fieldmd: 0x374
-   __TEXT.__swift5_builtin: 0xa0
--  __TEXT.__swift5_capture: 0xd9c
-+  __TEXT.__swift5_capture: 0xdd8
-   __TEXT.__swift5_proto: 0x78
-   __TEXT.__swift5_types: 0x58
--  __TEXT.__swift_as_entry: 0x8c
--  __TEXT.__swift_as_ret: 0x88
--  __TEXT.__swift_as_cont: 0xc8
--  __TEXT.__unwind_info: 0x14e0
-+  __TEXT.__swift_as_entry: 0x94
-+  __TEXT.__swift_as_ret: 0x90
-+  __TEXT.__swift_as_cont: 0xd0
-+  __TEXT.__unwind_info: 0x1558
-   __TEXT.__eh_frame: 0x1748
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xde8
-+  __DATA_CONST.__const: 0xf00
-   __DATA_CONST.__objc_classlist: 0x128
-   __DATA_CONST.__objc_catlist: 0x10
--  __DATA_CONST.__objc_protolist: 0x118
-+  __DATA_CONST.__objc_protolist: 0x120
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1958
-+  __DATA_CONST.__objc_selrefs: 0x19f0
-   __DATA_CONST.__objc_protorefs: 0x60
-   __DATA_CONST.__objc_superrefs: 0xe0
-   __DATA_CONST.__objc_arraydata: 0x50
--  __DATA_CONST.__got: 0x638
--  __AUTH_CONST.__const: 0x26a0
--  __AUTH_CONST.__cfstring: 0x1960
--  __AUTH_CONST.__objc_const: 0x4cf0
-+  __DATA_CONST.__got: 0x670
-+  __AUTH_CONST.__const: 0x2718
-+  __AUTH_CONST.__cfstring: 0x1980
-+  __AUTH_CONST.__objc_const: 0x50d8
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x60
-   __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__auth_got: 0xed0
--  __AUTH.__objc_data: 0x918
--  __AUTH.__data: 0x1c8
--  __DATA.__objc_ivar: 0x2ac
--  __DATA.__data: 0xe38
--  __DATA.__bss: 0xb50
--  __DATA_DIRTY.__objc_data: 0x820
--  __DATA_DIRTY.__data: 0x2c8
--  __DATA_DIRTY.__bss: 0x410
-+  __AUTH_CONST.__auth_got: 0xed8
-+  __AUTH.__objc_data: 0x648
-+  __AUTH.__data: 0x50
-+  __DATA.__objc_ivar: 0x2b8
-+  __DATA.__data: 0xdf8
-+  __DATA.__bss: 0xb40
-+  __DATA_DIRTY.__objc_data: 0xb00
-+  __DATA_DIRTY.__data: 0x508
-+  __DATA_DIRTY.__bss: 0x420
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+-239.0.2.0.0
++243.0.0.0.0
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 2235
--  Symbols:   5011
--  CStrings:  1003
+-  Symbols:   2020
+-  CStrings:  801
 +  Functions: 2263
-+  Symbols:   5099
-+  CStrings:  1026
- 
-Sections:
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
++  Symbols:   2054
++  CStrings:  823
 Symbols:
 + -[CCDifferentialSetUpdater _updateCacheContentForPredicate:cacheContentData:isEvict:outIsDuplicate:outDidEvictRow:error:]
 + -[CCDifferentialSetUpdater cacheEvictionResult]
@@ -156,23 +92,6 @@ Symbols:
 + ___block_descriptor_80_e8_32r40r48r56r64r72r_e5_v8?0lr32l8r40l8r48l8r56l8r64l8r72l8
 + ___block_descriptor_88_e8_32s40s48s56r64r72r_e5_B8?0ls32l8r56l8r64l8r72l8s40l8s48l8
 + ___swift_closure_destructor.369Tm
-+ _objc_msgSend$_evictCacheContentWithStorageReductionPercentageTarget:candidateBatchProvider:reply:
-+ _objc_msgSend$_updateCacheContentForPredicate:cacheContentData:isEvict:outIsDuplicate:outDidEvictRow:error:
-+ _objc_msgSend$accessAssertion
-+ _objc_msgSend$cacheEvictionResult
-+ _objc_msgSend$evictBatchOfKeyPrefixedIdentifiers:outRowsEvicted:error:
-+ _objc_msgSend$evictCacheContentWithStorageReductionPercentageTarget:reply:
-+ _objc_msgSend$finalizeEvictionInPlaceWithError:
-+ _objc_msgSend$initWithInitialStorageFootprintBytes:finalStorageFootprintBytes:
-+ _objc_msgSend$nonEmptyContentRowCount:
-+ _objc_msgSend$predicateWithKeyPrefixedIdentifier:error:
-+ _objc_msgSend$provideEvictionCandidateBatch:
-+ _objc_msgSend$reclaimableFreelistBytes:
-+ _objc_msgSend$remoteObjectInterface
-+ _objc_msgSend$runEvictionSessionWithPercentage:candidateBatchProvider:error:
-+ _objc_msgSend$sourceItemIdentifierHash
-+ _objc_msgSend$storageFootprintForSet:accessAssertion:error:
-+ _objc_msgSend$vacuumAndTruncateWAL:
 + _symbolic _____Sg 13CascadeEngine014CCCloudKitSyncB0C
 + _symbolic ytSg
 + _symbolic ytSgIeAgHr_
@@ -212,5 +131,4 @@ CStrings:
 + "v20@?0C8@\"NSError\"12"
 - "%@: Item is already evicted for sourceItemIdentifier: %@"
 - "%@: invalid sourceItemIdentifer: %@"
-
 ```

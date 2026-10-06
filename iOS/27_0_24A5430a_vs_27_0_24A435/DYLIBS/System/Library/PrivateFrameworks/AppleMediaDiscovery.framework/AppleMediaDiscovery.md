@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AppleMediaDiscovery.framework/AppleMediaDiscovery`
 
-```diff
+### Section Size Changes
 
- 1.5.6.0.0
--  __TEXT.__text: 0xf3b94
-+  __TEXT.__text: 0xf3cb0
-   __TEXT.__objc_methlist: 0x3b60
-   __TEXT.__const: 0xba8
-   __TEXT.__cstring: 0xac68
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf3b94` | `0xf3cb0` | **`+0x11c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_208e25e30 -> sub_2094bfe30 : 1680 -> 1684
 ~ sub_208e264c0 -> sub_2094c04c4 : 252 -> 256

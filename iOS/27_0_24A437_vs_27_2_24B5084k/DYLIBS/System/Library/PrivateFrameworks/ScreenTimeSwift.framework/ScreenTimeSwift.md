@@ -2,97 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/ScreenTimeSwift.framework/ScreenTimeSwift`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x5bb0` | `0x7030` | **`+0x1480`** |
+| `__TEXT.__text` | `0x940e4` | `0x9322c` | **`-0xeb8`** |
+| `__TEXT.__oslogstring` | `0x27ef` | `0x203f` | **`-0x7b0`** |
+| `__TEXT.__const` | `0x484c` | `0x4ecc` | **`+0x680`** |
+| `__TEXT.__eh_frame` | `0x36a0` | `0x3190` | **`-0x510`** |
+| `__TEXT.__cstring` | `0xee7` | `0xcf7` | **`-0x1f0`** |
+| `__DATA.__data` | `0x10f8` | `0x12c8` | **`+0x1d0`** |
+| `__TEXT.__swift5_fieldmd` | `0x1474` | `0x15f4` | **`+0x180`** |
+| `__AUTH_CONST.__const` | `0x2ef8` | `0x2e18` | **`-0xe0`** |
+| `__TEXT.__swift5_typeref` | `0x1a64` | `0x1b44` | **`+0xe0`** |
+| `__TEXT.__swift5_reflstr` | `0x1e2b` | `0x1eeb` | **`+0xc0`** |
+| `__AUTH.__data` | `0x258` | `0x2f0` | **`+0x98`** |
+| `__TEXT.__swift5_proto` | `0x334` | `0x3c0` | **`+0x8c`** |
+| `__DATA_DIRTY.__bss` | `0x280` | `0x200` | **`-0x80`** |
+| `__AUTH_CONST.__auth_got` | `0x1498` | `0x14f0` | **`+0x58`** |
+| `__TEXT.__swift5_capture` | `0x3c4` | `0x384` | **`-0x40`** |
+| `__TEXT.__unwind_info` | `0x19e8` | `0x1a20` | **`+0x38`** |
+| `__TEXT.__swift_as_cont` | `0x1b8` | `0x190` | **`-0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0xe08` | `0xde8` | **`-0x20`** |
+| `__DATA_DIRTY.__data` | `0x1498` | `0x1478` | **`-0x20`** |
+| `__TEXT.__swift_as_entry` | `0xf0` | `0xd0` | **`-0x20`** |
+| `__TEXT.__swift_as_ret` | `0x104` | `0xe4` | **`-0x20`** |
+| `__TEXT.__swift5_assocty` | `0x1e0` | `0x1f8` | **`+0x18`** |
+| `__TEXT.__constg_swiftt` | `0x1200` | `0x11f4` | **`-0xc`** |
+| `__TEXT.__swift5_types` | `0x140` | `0x14c` | **`+0xc`** |
+| `__TEXT.__swift5_protos` | `0x38` | `0x30` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -655.0.107.0.0
--  __TEXT.__text: 0x8f58c
 +655.1.6.1.0
-+  __TEXT.__text: 0x8ea28
-   __TEXT.__objc_methlist: 0x270
--  __TEXT.__const: 0x484c
--  __TEXT.__swift5_typeref: 0x1a64
--  __TEXT.__swift5_capture: 0x3c4
--  __TEXT.__cstring: 0xee7
--  __TEXT.__oslogstring: 0x27ef
--  __TEXT.__swift5_reflstr: 0x1e2b
--  __TEXT.__swift5_assocty: 0x1e0
--  __TEXT.__swift5_fieldmd: 0x1474
--  __TEXT.__constg_swiftt: 0x1200
-+  __TEXT.__const: 0x4ecc
-+  __TEXT.__swift5_typeref: 0x1b44
-+  __TEXT.__swift5_capture: 0x384
-+  __TEXT.__oslogstring: 0x203f
-+  __TEXT.__cstring: 0xcf7
-+  __TEXT.__swift5_reflstr: 0x1eeb
-+  __TEXT.__swift5_assocty: 0x1f8
-+  __TEXT.__swift5_fieldmd: 0x15f4
-+  __TEXT.__constg_swiftt: 0x11f4
-   __TEXT.__swift5_builtin: 0xa0
--  __TEXT.__swift5_protos: 0x38
--  __TEXT.__swift5_proto: 0x334
--  __TEXT.__swift5_types: 0x140
--  __TEXT.__swift_as_entry: 0xf0
--  __TEXT.__swift_as_ret: 0x104
--  __TEXT.__swift_as_cont: 0x1b8
--  __TEXT.__unwind_info: 0x20d8
--  __TEXT.__eh_frame: 0x36a8
-+  __TEXT.__swift5_protos: 0x30
-+  __TEXT.__swift5_proto: 0x3c0
-+  __TEXT.__swift5_types: 0x14c
-+  __TEXT.__swift_as_entry: 0xd0
-+  __TEXT.__swift_as_ret: 0xe4
-+  __TEXT.__swift_as_cont: 0x190
-+  __TEXT.__unwind_info: 0x2120
-+  __TEXT.__eh_frame: 0x3198
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xe08
-+  __DATA_CONST.__objc_selrefs: 0xde8
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2ef8
-+  __AUTH_CONST.__const: 0x2e18
-   __AUTH_CONST.__objc_const: 0x1110
--  __AUTH_CONST.__auth_got: 0x1498
-+  __AUTH_CONST.__auth_got: 0x14f0
-   __AUTH.__objc_data: 0x50
--  __AUTH.__data: 0x258
--  __DATA.__data: 0x10f8
-+  __AUTH.__data: 0x2f0
-+  __DATA.__data: 0x12c8
-   __DATA.__common: 0x68
-   __DATA_DIRTY.__objc_data: 0xf0
--  __DATA_DIRTY.__data: 0x1498
--  __DATA_DIRTY.__bss: 0x280
-+  __DATA_DIRTY.__data: 0x1478
-+  __DATA_DIRTY.__bss: 0x200
-   __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /System/Library/PrivateFrameworks/FamilyCircle.framework/FamilyCircle
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/ManagedSettingsObjC.framework/ManagedSettingsObjC
 -  - /System/Library/PrivateFrameworks/OSEligibility.framework/OSEligibility
-   - /System/Library/PrivateFrameworks/ScreenTimeCore.framework/ScreenTimeCore
-   - /System/Library/PrivateFrameworks/ScreenTimeSettingsServices.framework/ScreenTimeSettingsServices
-   - /usr/lib/libSystem.B.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2338
--  Symbols:   1342
+-  Symbols:   923
 -  CStrings:  235
 +  Functions: 2413
-+  Symbols:   1361
++  Symbols:   946
 +  CStrings:  203
- 
 Symbols:
 + ___swift_closure_destructor.22Tm
 + ___swift_memcpy24_8
@@ -116,8 +71,6 @@ Symbols:
 + _associated conformance 15ScreenTimeSwift26MigrationEligibilityReportV6MemberV10CodingKeys33_7820703087F02DE70801C12181A1542ELLOs0H3KeyAAs28CustomDebugStringConvertible
 + _associated conformance 15ScreenTimeSwift26MigrationEligibilityReportV6MemberVSHAASQ
 + _associated conformance 15ScreenTimeSwift26MigrationEligibilityReportV6ReasonOSHAASQ
-+ _objc_msgSend$migrationEligibilityWithForceRefresh:completionHandler:
-+ _objc_msgSend$setTracksDataLinkingAcrossCompanies:
 + _objc_retain_x10
 + _symbolic SDySSShySo17NSManagedObjectIDCGG
 + _symbolic SDySo17NSManagedObjectIDCSDy__________GG 10Foundation6LocaleV7WeekdayO 26ScreenTimeSettingsServices0deF0C0E10AllowancesV8ScheduleV9AllowanceO
@@ -162,12 +115,6 @@ Symbols:
 - ___swift_memcpy49_8
 - _associated conformance 15ScreenTimeSwift10RegulatoryO28STOSEligibilityProviderErrorOSHAASQ
 - _associated conformance 15ScreenTimeSwift28STAgeVerificationInfoFetcherV5ErrorOSHAASQ
-- _objc_msgSend$boolForKey:
-- _objc_msgSend$dictionaryForKey:
-- _objc_msgSend$familyDevicesForAltDSID:forceRefresh:ineligibleOnly:completionHandler:
-- _objc_msgSend$getAgeVerificationInfoForDSID:completion:
-- _objc_msgSend$isFamilyMemberEligibleForMigrationUIWithAltDSID:forceRefresh:completionHandler:
-- _objc_msgSend$stringForKey:
 - _os_variant_has_internal_content
 - _swift_getDynamicType
 - _symbolic $s15ScreenTimeSwift24STOSEligibilityProvidingP

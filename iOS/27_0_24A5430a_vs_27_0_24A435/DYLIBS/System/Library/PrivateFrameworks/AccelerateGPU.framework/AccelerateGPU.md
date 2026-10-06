@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AccelerateGPU.framework/AccelerateGPU`
 
-```diff
+### Section Size Changes
 
- 35.0.0.0.0
--  __TEXT.__text: 0x4100
-+  __TEXT.__text: 0x40ec
-   __TEXT.__gcc_except_tab: 0x840
-   __TEXT.__const: 0x58
-   __TEXT.__cstring: 0x82f
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4100` | `0x40ec` | **`-0x14`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _gpuImageSeparableConvolution_ARGB8888 : 1696 -> 1676
 ```

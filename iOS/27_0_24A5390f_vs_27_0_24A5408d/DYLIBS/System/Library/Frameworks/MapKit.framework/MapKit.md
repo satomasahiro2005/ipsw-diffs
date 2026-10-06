@@ -2,87 +2,37 @@
 
 > `/System/Library/Frameworks/MapKit.framework/MapKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x28fa34` | `0x28ff04` | **`+0x4d0`** |
+| `__AUTH_CONST.__objc_const` | `0x45d08` | `0x45e08` | **`+0x100`** |
+| `__AUTH.__objc_data` | `0x87c0` | `0x8810` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x26b54` | `0x26b94` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x14af0` | `0x14b20` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x17aeb` | `0x17b16` | **`+0x2b`** |
+| `__DATA_CONST.__const` | `0x7c60` | `0x7c88` | **`+0x28`** |
+| `__TEXT.__oslogstring` | `0x7dc0` | `0x7ddf` | **`+0x1f`** |
+| `__TEXT.__unwind_info` | `0xa7d0` | `0xa7e8` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x3228` | `0x3230` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x2490` | `0x2498` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x11e8` | `0x11f0` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0xd98` | `0xda0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2552.30.6.12.5
--  __TEXT.__text: 0x28fa34
--  __TEXT.__objc_methlist: 0x26b54
 +2552.30.6.12.9
-+  __TEXT.__text: 0x28ff04
-+  __TEXT.__objc_methlist: 0x26b94
-   __TEXT.__const: 0x6910
-   __TEXT.__dlopen_cstrs: 0xbc
--  __TEXT.__cstring: 0x17aeb
-+  __TEXT.__cstring: 0x17b16
-   __TEXT.__swift5_typeref: 0x15f4
-   __TEXT.__swift5_reflstr: 0x1460
-   __TEXT.__swift5_assocty: 0x1e8
 
-   __TEXT.__swift5_protos: 0x70
-   __TEXT.__swift5_proto: 0x208
-   __TEXT.__swift5_types: 0x2d0
--  __TEXT.__oslogstring: 0x7dc0
-+  __TEXT.__oslogstring: 0x7ddf
-   __TEXT.__swift5_capture: 0x3a4
-   __TEXT.__swift_as_entry: 0x13c
-   __TEXT.__swift_as_ret: 0x134
-   __TEXT.__swift_as_cont: 0x1cc
-   __TEXT.__gcc_except_tab: 0x61bc
-   __TEXT.__ustring: 0x19c
--  __TEXT.__unwind_info: 0xa7d0
-+  __TEXT.__unwind_info: 0xa7e8
-   __TEXT.__eh_frame: 0x241c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7c60
--  __DATA_CONST.__objc_classlist: 0x11e8
-+  __DATA_CONST.__const: 0x7c88
-+  __DATA_CONST.__objc_classlist: 0x11f0
-   __DATA_CONST.__objc_catlist: 0x1f8
-   __DATA_CONST.__objc_protolist: 0x660
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x14af0
-+  __DATA_CONST.__objc_selrefs: 0x14b20
-   __DATA_CONST.__objc_protorefs: 0xe8
--  __DATA_CONST.__objc_superrefs: 0xd98
-+  __DATA_CONST.__objc_superrefs: 0xda0
-   __DATA_CONST.__objc_arraydata: 0x6b0
--  __DATA_CONST.__got: 0x2490
-+  __DATA_CONST.__got: 0x2498
-   __AUTH_CONST.__const: 0x6878
-   __AUTH_CONST.__cfstring: 0x1bb80
--  __AUTH_CONST.__objc_const: 0x45d08
-+  __AUTH_CONST.__objc_const: 0x45e08
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_doubleobj: 0x220
-   __AUTH_CONST.__objc_intobj: 0xf18
-
-   __AUTH_CONST.__objc_arrayobj: 0x480
-   __AUTH_CONST.__objc_floatobj: 0x70
-   __AUTH_CONST.__auth_got: 0x2088
--  __AUTH.__objc_data: 0x87c0
-+  __AUTH.__objc_data: 0x8810
-   __AUTH.__data: 0x2d48
--  __DATA.__objc_ivar: 0x3228
-+  __DATA.__objc_ivar: 0x3230
-   __DATA.__data: 0x5600
-   __DATA.__bss: 0x4718
-   __DATA.__common: 0x70
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15053
--  Symbols:   33518
+-  Symbols:   25294
 -  CStrings:  4602
 +  Functions: 15059
-+  Symbols:   33541
++  Symbols:   25311
 +  CStrings:  4603
- 
 Symbols:
 + -[MKLocationManager _rescheduleWaitForAccurateLocationsTimerIfNeeded]
 + -[_MKAccurateLocationWaiter .cxx_destruct]
@@ -410,12 +360,6 @@ Symbols:
 + __OBJC_METACLASS_RO_$__MKAccurateLocationWaiter
 + ___57-[MKLocationManager _waitForAccurateLocationsTimerFired:]_block_invoke
 + ___block_descriptor_56_e8_32s40s_e42_v32?0"_MKAccurateLocationWaiter"8Q16^B24ls32l8s40l8
-+ _objc_msgSend$_rescheduleWaitForAccurateLocationsTimerIfNeeded
-+ _objc_msgSend$addIndex:
-+ _objc_msgSend$deadline
-+ _objc_msgSend$indexSet
-+ _objc_msgSend$initWithDeadline:handler:
-+ _objc_msgSend$removeObjectsAtIndexes:
 - GCC_except_table10410
 - GCC_except_table10475
 - GCC_except_table10478

@@ -2,87 +2,48 @@
 
 > `/System/Library/VideoProcessors/NRFV4.bundle/NRFV4`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x25b84c` | `0x27c54c` | **`+0x20d00`** |
+| `__AUTH_CONST.__objc_const` | `0x3b9c0` | `0x40208` | **`+0x4848`** |
+| `__TEXT.__cstring` | `0x3461a` | `0x36baa` | **`+0x2590`** |
+| `__TEXT.__objc_methlist` | `0x13110` | `0x14718` | **`+0x1608`** |
+| `__AUTH_CONST.__cfstring` | `0x146e0` | `0x15cc0` | **`+0x15e0`** |
+| `__TEXT.__oslogstring` | `0x209f4` | `0x21e64` | **`+0x1470`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6f88` | `0x77f0` | **`+0x868`** |
+| `__AUTH.__objc_data` | `0xa50` | `0x1220` | **`+0x7d0`** |
+| `__DATA.__objc_ivar` | `0x3f8c` | `0x4420` | **`+0x494`** |
+| `__TEXT.__unwind_info` | `0x5130` | `0x54d8` | **`+0x3a8`** |
+| `__TEXT.__gcc_except_tab` | `0x1680` | `0x1850` | **`+0x1d0`** |
+| `__DATA_DIRTY.__objc_data` | `0x83e0` | `0x8570` | **`+0x190`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0xc30` | `0xd68` | **`+0x138`** |
+| `__DATA_CONST.__objc_classlist` | `0xe38` | `0xf28` | **`+0xf0`** |
+| `__DATA_CONST.__objc_superrefs` | `0xb08` | `0xbe8` | **`+0xe0`** |
+| `__DATA_CONST.__objc_arraydata` | `0xf08` | `0xfe0` | **`+0xd8`** |
+| `__AUTH_CONST.__objc_floatobj` | `0x90` | `0x140` | **`+0xb0`** |
+| `__DATA_CONST.__got` | `0xf08` | `0xf90` | **`+0x88`** |
+| `__TEXT.__const` | `0x1031e0` | `0x103260` | **`+0x80`** |
+| `__DATA.__data` | `0xc68` | `0xcc8` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x1490` | `0x14d8` | **`+0x48`** |
+| `__AUTH_CONST.__const` | `0x9a0` | `0x9c0` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x868` | `0x880` | **`+0x18`** |
+| `__AUTH_CONST.__objc_intobj` | `0xa20` | `0xa38` | **`+0x18`** |
+| `__DATA_CONST.__objc_catlist` | `0x18` | `0x30` | **`+0x18`** |
+| `__DATA_CONST.__objc_protolist` | `0x108` | `0x110` | **`+0x8`** |
+| `__DATA.__common` | `0x40` | `0x44` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
- 764.22.13.0.0
--  __TEXT.__text: 0x25b84c
--  __TEXT.__objc_methlist: 0x13110
--  __TEXT.__const: 0x1031e0
--  __TEXT.__cstring: 0x3461a
--  __TEXT.__gcc_except_tab: 0x1680
--  __TEXT.__oslogstring: 0x209f4
-+  __TEXT.__text: 0x27c54c
-+  __TEXT.__objc_methlist: 0x14718
-+  __TEXT.__const: 0x103260
-+  __TEXT.__cstring: 0x36baa
-+  __TEXT.__oslogstring: 0x21e64
-+  __TEXT.__gcc_except_tab: 0x1850
-   __TEXT.__dlopen_cstrs: 0x10c
--  __TEXT.__unwind_info: 0x5130
-+  __TEXT.__unwind_info: 0x54d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1490
--  __DATA_CONST.__objc_classlist: 0xe38
--  __DATA_CONST.__objc_catlist: 0x18
--  __DATA_CONST.__objc_protolist: 0x108
-+  __DATA_CONST.__const: 0x14d8
-+  __DATA_CONST.__objc_classlist: 0xf28
-+  __DATA_CONST.__objc_catlist: 0x30
-+  __DATA_CONST.__objc_protolist: 0x110
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6f88
-+  __DATA_CONST.__objc_selrefs: 0x77f0
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0xb08
--  __DATA_CONST.__objc_arraydata: 0xf08
--  __DATA_CONST.__got: 0xf08
--  __AUTH_CONST.__const: 0x9a0
--  __AUTH_CONST.__cfstring: 0x146e0
--  __AUTH_CONST.__objc_const: 0x3b9c0
-+  __DATA_CONST.__objc_superrefs: 0xbe8
-+  __DATA_CONST.__objc_arraydata: 0xfe0
-+  __DATA_CONST.__got: 0xf90
-+  __AUTH_CONST.__const: 0x9c0
-+  __AUTH_CONST.__cfstring: 0x15cc0
-+  __AUTH_CONST.__objc_const: 0x40208
-+  __AUTH_CONST.__objc_floatobj: 0x140
-   __AUTH_CONST.__objc_doubleobj: 0xa0
--  __AUTH_CONST.__objc_arrayobj: 0xc30
--  __AUTH_CONST.__objc_intobj: 0xa20
--  __AUTH_CONST.__objc_floatobj: 0x90
-+  __AUTH_CONST.__objc_arrayobj: 0xd68
-+  __AUTH_CONST.__objc_intobj: 0xa38
-   __AUTH_CONST.__objc_dictobj: 0x500
--  __AUTH_CONST.__auth_got: 0x868
--  __AUTH.__objc_data: 0xa50
--  __DATA.__objc_ivar: 0x3f8c
--  __DATA.__data: 0xc68
--  __DATA.__common: 0x40
--  __DATA_DIRTY.__objc_data: 0x83e0
-+  __AUTH_CONST.__auth_got: 0x880
-+  __AUTH.__objc_data: 0x1220
-+  __DATA.__objc_ivar: 0x4420
-+  __DATA.__data: 0xcc8
-+  __DATA.__common: 0x44
-+  __DATA_DIRTY.__objc_data: 0x8570
-   __DATA_DIRTY.__bss: 0x178
-   __DATA_DIRTY.__common: 0xf8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 14435
--  Symbols:   17850
+-  Symbols:   14758
 -  CStrings:  8544
 +  Functions: 15236
-+  Symbols:   19070
++  Symbols:   15748
 +  CStrings:  8999
- 
 Symbols:
 + +[FlareSourceDetector prewarmShaders:tuningParameters:]
 + +[FlareSourceDetectorInputFrame inputFrameAdaptingFrame:]
@@ -1082,241 +1043,6 @@ Symbols:
 + _kNRF_LFType_LF48
 + _kNRF_UDNet
 + _objc_copyStruct
-+ _objc_msgSend$_autoEnableDNRBypassIfNeeded
-+ _objc_msgSend$_initRawNightModeDenoiseInference:isBarrington:isReno:isArgyleTripodMax:
-+ _objc_msgSend$_initRawNightModeFusionInference:isBarrington:isReno:requiresDarkCurrentNoiseModel:
-+ _objc_msgSend$_isReno:
-+ _objc_msgSend$_setupCalculatedProperties
-+ _objc_msgSend$addEntries:
-+ _objc_msgSend$addbackParams
-+ _objc_msgSend$allObjects
-+ _objc_msgSend$apertureRatio
-+ _objc_msgSend$applyCorrection
-+ _objc_msgSend$applyCorrectionMap:toRawFrame:config:error:
-+ _objc_msgSend$captureGravityVector
-+ _objc_msgSend$captureTimeStamp
-+ _objc_msgSend$clearLUT
-+ _objc_msgSend$clipNetworkInputs
-+ _objc_msgSend$cmi_simdFloat3ValueForKey:defaultValue:found:
-+ _objc_msgSend$cmi_simdInt2ValueForXKey:yKey:defaultValue:found:
-+ _objc_msgSend$completionHandler
-+ _objc_msgSend$computeAdaptiveFusionTuningPlist:fromInputPlist:quadraBinningFactor:
-+ _objc_msgSend$computeYUVNoiseMapWithNoiseLumaTex:noiseChromaTex:
-+ _objc_msgSend$correctionEnabled
-+ _objc_msgSend$correctionFeatures
-+ _objc_msgSend$correctionLUT
-+ _objc_msgSend$corrections
-+ _objc_msgSend$createCorrection
-+ _objc_msgSend$createCorrectionMapForLevel:filteredLCBsForLevel:correctionLUT:previousLevel:config:error:
-+ _objc_msgSend$createMetalBuffer:length:
-+ _objc_msgSend$createMetalTexture:pixelFormat:width:height:
-+ _objc_msgSend$createRadiusLookUpTextureAndConfig:
-+ _objc_msgSend$databaseUpdateEnabled
-+ _objc_msgSend$defocusRadius
-+ _objc_msgSend$defocusRadiusForIRCF
-+ _objc_msgSend$defocusRadiusForLens
-+ _objc_msgSend$deleteEntries:
-+ _objc_msgSend$demosaicBayer
-+ _objc_msgSend$demosaicBayerToLuma:config:error:
-+ _objc_msgSend$demosaicBayerToLumaAndDownsample2x:config:error:
-+ _objc_msgSend$demosaicBayerYRGB
-+ _objc_msgSend$demosaicDownsampleBayer
-+ _objc_msgSend$demosaicDownsampleBayerYRGB
-+ _objc_msgSend$demosaicDownsampleQuadra
-+ _objc_msgSend$demosaicDownsampleQuadraYRGB
-+ _objc_msgSend$demosaicQuadra
-+ _objc_msgSend$demosaicQuadraToLumaAndDownsample2x:config:error:
-+ _objc_msgSend$demosaicQuadraToLumaAndDownsample4x:config:error:
-+ _objc_msgSend$demosaicQuadraYRGB
-+ _objc_msgSend$detectionCount
-+ _objc_msgSend$detectionCountHistogram
-+ _objc_msgSend$detectionEnabled
-+ _objc_msgSend$dimensionsForPyramidLevel:
-+ _objc_msgSend$downsampleRGBInPlaceIfNeeded:outputBuffer:
-+ _objc_msgSend$downsampleRGBTexture:toRGBTexture:
-+ _objc_msgSend$downsampleTexture:levelIndex:config:error:
-+ _objc_msgSend$downsampleYRGB
-+ _objc_msgSend$entries
-+ _objc_msgSend$entriesByKey
-+ _objc_msgSend$extractionEnabled
-+ _objc_msgSend$filteredLCBsBuf
-+ _objc_msgSend$firstPyramidLevel
-+ _objc_msgSend$focusLensPosition
-+ _objc_msgSend$gainValue
-+ _objc_msgSend$generateKeyForPosition:radius:pyramidLevel:lastDetectionGravityVector:lastDetectionTimeStamp:
-+ _objc_msgSend$generateNewKeyFromConflictingKey:
-+ _objc_msgSend$getCorrectionConfig:
-+ _objc_msgSend$getDetectionExtractionConfig:forPyramidLevel:
-+ _objc_msgSend$getDetectionResultSync:
-+ _objc_msgSend$getLCBConfigForInputFrame:bounds:awb:
-+ _objc_msgSend$getLCBConfigForInputFrame:bounds:correctionEnabled:awb:
-+ _objc_msgSend$getLCBEnabledForInputFrame:processingOptions:lcbEnabled:
-+ _objc_msgSend$getPerFrameFilteringConfig:
-+ _objc_msgSend$getPyramidConfig:
-+ _objc_msgSend$getTileCountForWidth:height:
-+ _objc_msgSend$hrGainDownRatio
-+ _objc_msgSend$initForSensorID:moduleSerial:
-+ _objc_msgSend$initWithDetectedLCB:
-+ _objc_msgSend$initWithDetectionOnPyramidLevel:positionInPyramid:pyramidRadius:config:
-+ _objc_msgSend$initWithFilteredLCBsBuf:correctionLUT:
-+ _objc_msgSend$initWithKey:position:radius:defocusRadius:particleDistance:apertureRatio:focusLensPosition:oisShift:opticalCenter:detectionCount:relativeToLens:lastDetectionGravityVector:lastDetectionTimeStamp:shouldCorrect:correctionFeatures:config:
-+ _objc_msgSend$initWithMetalContext:isQuadra:
-+ _objc_msgSend$initWithMetalContext:isQuadra:isBarrington:isReno:requiresDarkCurrentNoiseModel:
-+ _objc_msgSend$initWithNumberOfDetections:numberOfCorrectionsOnIRCF:numberOfCorrectionsOnLens:corrections:detectionCountHistogram:
-+ _objc_msgSend$initWithNumberOfNewPositiveDetections:numberOfMatchedPositiveDetections:numberOfPositiveExtractions:numberOfNegativeExtractions:numberOfCorrectionsOnIRCF:numberOfCorrectionsOnLens:corrections:detectionCountHistogram:
-+ _objc_msgSend$initWithTileWidth:tileHeight:
-+ _objc_msgSend$initWithTuningParameters:frameMetadata:cameraInfo:inputOffsetWithinSensorInBayerPixels:inputDimensionsInBayerPixels:cfaLayout:firstPixel:enableDetection:enableCorrection:awb:
-+ _objc_msgSend$inputChromaTexture
-+ _objc_msgSend$inputDimensionsInBayerPixels
-+ _objc_msgSend$inputLSCMetadata
-+ _objc_msgSend$inputLSCTexture
-+ _objc_msgSend$inputLumaTexture
-+ _objc_msgSend$inputMetadata
-+ _objc_msgSend$inputNoiseMapTexture
-+ _objc_msgSend$inputNoiseScalingFactor
-+ _objc_msgSend$inputOffsetInBayerPixels
-+ _objc_msgSend$inputPyramidEnabled
-+ _objc_msgSend$insideFrame
-+ _objc_msgSend$key
-+ _objc_msgSend$lastDetectionGravityVector
-+ _objc_msgSend$lastDetectionTimeStamp
-+ _objc_msgSend$lastPyramidLevel
-+ _objc_msgSend$lcbDetector
-+ _objc_msgSend$lcbExtractor
-+ _objc_msgSend$localMaximaFinder
-+ _objc_msgSend$lowPassNPyramidLevels
-+ _objc_msgSend$lscMetadata
-+ _objc_msgSend$lscTexture
-+ _objc_msgSend$lumaConversionCoefficients
-+ _objc_msgSend$maxCorrectionFeaturesUpdateAmount
-+ _objc_msgSend$maxDetectionCount
-+ _objc_msgSend$maxRadiusUpdateDecrement
-+ _objc_msgSend$maxRadiusUpdateIncrement
-+ _objc_msgSend$maximumDetectionScoreForNoLCB
-+ _objc_msgSend$maximumNumberOfCorrectionsPerLevel
-+ _objc_msgSend$maximumNumberOfDetectionsPerLevel
-+ _objc_msgSend$maximumNumberOfExtractionsPerLevel
-+ _objc_msgSend$metalContext
-+ _objc_msgSend$minCorrectionFeaturesLearningRate
-+ _objc_msgSend$minimumConfidence
-+ _objc_msgSend$minimumDetectionCountForCorrection
-+ _objc_msgSend$minimumDetectionScoreForLCB
-+ _objc_msgSend$minimumGravityVectorChange
-+ _objc_msgSend$minimumTimeDelta
-+ _objc_msgSend$moduleSerial
-+ _objc_msgSend$nLCBsCorrectedOnIRCF
-+ _objc_msgSend$nLCBsCorrectedOnLens
-+ _objc_msgSend$nLCBsDetected
-+ _objc_msgSend$nPyramidLevels
-+ _objc_msgSend$networkType
-+ _objc_msgSend$noiseMapScalingBody
-+ _objc_msgSend$noiseMapScalingSkin
-+ _objc_msgSend$noiseMapScalingSky
-+ _objc_msgSend$noiseModel
-+ _objc_msgSend$notifyLCBDatabaseUpdated:forPortType:
-+ _objc_msgSend$numberOfCorrectionsOnIRCF
-+ _objc_msgSend$numberOfCorrectionsOnLens
-+ _objc_msgSend$numberOfNewPositiveDetections
-+ _objc_msgSend$numberOfPositiveExtractions
-+ _objc_msgSend$oisShift
-+ _objc_msgSend$oisShiftScalingFactorForIRCF
-+ _objc_msgSend$oisShiftScalingFactorForLens
-+ _objc_msgSend$opacityScaling
-+ _objc_msgSend$opticalCenterForIRCF
-+ _objc_msgSend$opticalCenterForLens
-+ _objc_msgSend$outputCleanRGBTexture
-+ _objc_msgSend$outputRGBTexture
-+ _objc_msgSend$overlapsDetection:
-+ _objc_msgSend$particleDistance
-+ _objc_msgSend$particleDistanceForIRCF
-+ _objc_msgSend$particleDistanceForLens
-+ _objc_msgSend$perFrameFilterExtractedLCBs
-+ _objc_msgSend$perFrameFilteringEnabled
-+ _objc_msgSend$perFrameFilteringWithTemporalLCBs:extractionResults:levelIndex:config:error:
-+ _objc_msgSend$position
-+ _objc_msgSend$positionUpdateRate
-+ _objc_msgSend$prepareForNetworkType:isQuadra:
-+ _objc_msgSend$prewarmWithMetalContext:
-+ _objc_msgSend$pyramidLevel
-+ _objc_msgSend$pyramidPosition
-+ _objc_msgSend$pyramidRadius
-+ _objc_msgSend$radius
-+ _objc_msgSend$radiusLearningRate
-+ _objc_msgSend$readAdaptiveFusionPostProcessingTuningsPlist:quadraBinningFactor:
-+ _objc_msgSend$relativeToLens
-+ _objc_msgSend$relativeToLensRadiusThreshold
-+ _objc_msgSend$replaceObjectAtIndex:withObject:
-+ _objc_msgSend$reverseObjectEnumerator
-+ _objc_msgSend$runDemosaicWithInputRawTex:outputRGBTexture:outputGain:frame:completion:
-+ _objc_msgSend$runDetectorOnTexture:levelIndex:loresTexture:loresLevelIndex:config:lscMetadata:error:
-+ _objc_msgSend$runExtractorForEntries:inputTexture:levelIndex:loresTexture:loresLevelIndex:config:lscMetadata:error:
-+ _objc_msgSend$runLocalMaximaFinderOnDetectorResult:levelIndex:config:error:
-+ _objc_msgSend$runOnInputYRGBTexture:inputPyramidLevel:targetSushiTexture:config:lscMetadata:lcbDatabase:didUpdateDatabase:error:
-+ _objc_msgSend$runOnSushiRawFrame:config:lscMetadata:lcbDatabase:didUpdateDatabase:error:
-+ _objc_msgSend$runWithInputMetadata:udNetPlist:gainValue:inputRGBTexture:inputLSCTexture:inputLSCMetadata:outputLumaTexture:outputChromaTexture:
-+ _objc_msgSend$runWithInputMetadata:udNetPlist:inputLumaTexture:inputChromaTexture:inputLSCTexture:inputLSCMetadata:outputLumaTexture:outputChromaTexture:
-+ _objc_msgSend$runWithInputMetadata:udNetPlist:inputRGBTexture:inputNoiseMapTexture:inputLSCTexture:inputLSCMetadata:outputRGBTexture:outputCleanRGBTexture:skipNoiseAddback:
-+ _objc_msgSend$runWithTileCount:
-+ _objc_msgSend$setAddbackParams:
-+ _objc_msgSend$setClipNetworkInputs:
-+ _objc_msgSend$setCompletionHandler:
-+ _objc_msgSend$setGainValue:
-+ _objc_msgSend$setHairMaskTexture:
-+ _objc_msgSend$setHrGainDownRatio:
-+ _objc_msgSend$setInputChromaTexture:
-+ _objc_msgSend$setInputLSCMetadata:
-+ _objc_msgSend$setInputLSCTexture:
-+ _objc_msgSend$setInputLumaTexture:
-+ _objc_msgSend$setInputMetadata:
-+ _objc_msgSend$setInputNoiseMapTexture:
-+ _objc_msgSend$setInputNoiseScalingFactor:
-+ _objc_msgSend$setInputType:
-+ _objc_msgSend$setLscGainMapTexture:
-+ _objc_msgSend$setLscMetadata:
-+ _objc_msgSend$setLscParams:
-+ _objc_msgSend$setLscTexture:
-+ _objc_msgSend$setNetworkType:
-+ _objc_msgSend$setNoiseMapScalingBody:
-+ _objc_msgSend$setNoiseMapScalingSkin:
-+ _objc_msgSend$setNoiseMapScalingSky:
-+ _objc_msgSend$setNoiseModel:
-+ _objc_msgSend$setOutputCleanRGBTexture:
-+ _objc_msgSend$setPersonMaskTexture:
-+ _objc_msgSend$setSkinMaskTexture:
-+ _objc_msgSend$setSkipAWBInversion:
-+ _objc_msgSend$setSkipLSCInversion:
-+ _objc_msgSend$setSkipNoiseAddback:
-+ _objc_msgSend$setSkyMaskTexture:
-+ _objc_msgSend$setTileOverlapX:
-+ _objc_msgSend$setTileOverlapY:
-+ _objc_msgSend$setTuningPlist:
-+ _objc_msgSend$setUdNetPList:
-+ _objc_msgSend$setUdNetPlist:
-+ _objc_msgSend$setUpdatedLCBDatabase:
-+ _objc_msgSend$setUseFullStrength:
-+ _objc_msgSend$setupUDNet:isQuadra:
-+ _objc_msgSend$setupWithNetworkType:isQuadra:
-+ _objc_msgSend$shouldCorrect
-+ _objc_msgSend$skipAWBInversion
-+ _objc_msgSend$skipInferenceEnabled
-+ _objc_msgSend$skipLSCInversion
-+ _objc_msgSend$skipNoiseAddback
-+ _objc_msgSend$skipPyrLevel0
-+ _objc_msgSend$startDetectionOnEv0:
-+ _objc_msgSend$temporalFilteringUpdateDatabase:detectionResultsForLevels:extractionSetForLevels:extractionResultsForLevels:config:didUpdateDatabase:error:
-+ _objc_msgSend$transformedEntriesOnPyramidLevel:
-+ _objc_msgSend$transformedEntriesOnPyramidLevelWithConfig:
-+ _objc_msgSend$transformedToConfig:
-+ _objc_msgSend$udNetPlist
-+ _objc_msgSend$updateEntries:
-+ _objc_msgSend$updateParametersFromMetadata:cameraInfoByPortType:lscGainMapParameters:tuningParameters:firstPix:isQuadra:requiresDarkCurrentNoiseModel:aeTargetGain:textureDimensions:skipAWBInversion:skipLSCInversion:clipNetworkInputs:
-+ _objc_msgSend$updateParametersFromMetadata:cameraInfoByPortType:tuningParameters:lscGainMapParameters:firstPix:aeTargetGain:isQuadra:textureDimensions:skipAWBInversion:skipLSCInversion:clipNetworkInputs:
-+ _objc_msgSend$updatedLCBDatabase
-+ _objc_msgSend$useFullColor
-+ _objc_msgSend$useFullStrength
-+ _objc_msgSend$withDetectionCountDecremented
-+ _objc_msgSend$withDetectionCountIncrementedAndUpdatedFeatures:updatedRadius:
-+ _objc_msgSend$withUpdatedPosition:
 + _objc_setProperty_nonatomic_copy
 - -[RawNightModeDenoiseInferenceCMITIPSharedParameters updateParametersFromMetadata:cameraInfoByPortType:tuningParameters:lscGainMapParameters:firstPix:aeTargetGain:isQuadra:textureDimensions:]
 - -[RawNightModeFusionInference initWithMetalContext:isQuadra:isBarrington:requiresDarkCurrentNoiseModel:]
@@ -1327,11 +1053,6 @@ Symbols:
 - __OBJC_$_INSTANCE_METHODS_H13FastBayerProcConfig(HRD|SSC|RNF|FlareDetection|GOC|HR|HOCLBin|Huemap|AdaptiveImbalanceCorrection)
 - __OBJC_$_INSTANCE_METHODS_SoftISPCalibrationConfig
 - _kFigCaptureStreamMetadata_AD
-- _objc_msgSend$_initRawNightModeDenoiseInference:isBarrington:isArgyleTripodMax:
-- _objc_msgSend$_initRawNightModeFusionInference:isBarrington:requiresDarkCurrentNoiseModel:
-- _objc_msgSend$initWithMetalContext:isQuadra:isBarrington:requiresDarkCurrentNoiseModel:
-- _objc_msgSend$updateParametersFromMetadata:cameraInfoByPortType:lscGainMapParameters:tuningParameters:firstPix:isQuadra:requiresDarkCurrentNoiseModel:aeTargetGain:textureDimensions:
-- _objc_msgSend$updateParametersFromMetadata:cameraInfoByPortType:tuningParameters:lscGainMapParameters:firstPix:aeTargetGain:isQuadra:textureDimensions:
 CStrings:
 + "! noiseModel.invalid"
 + "%@(nLCBsDetected=%d, nLCBsCorrectedOnIRCF=%d, nLCBsCorrectedOnLens=%d)"

@@ -2,11 +2,13 @@
 
 > `/Applications/AMSEngagementViewService.app/AMSEngagementViewService`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
+- `__DATA.__data`
 - `__TEXT.__constg_swiftt`
 - `__TEXT.__unwind_info`
-- `__DATA.__data`
+
+### Other Changes
 
 ```text
 Functions:

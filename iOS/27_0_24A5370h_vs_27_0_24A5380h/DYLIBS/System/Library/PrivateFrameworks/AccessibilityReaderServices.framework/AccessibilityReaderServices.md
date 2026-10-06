@@ -2,79 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/AccessibilityReaderServices.framework/AccessibilityReaderServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7b58` | `0xaff8` | **`+0x34a0`** |
+| `__DATA.__bss` | `0xa80` | `0x1800` | **`+0xd80`** |
+| `__AUTH_CONST.__const` | `0xad0` | `0x1628` | **`+0xb58`** |
+| `__TEXT.__const` | `0x7b0` | `0x1110` | **`+0x960`** |
+| `__TEXT.__swift5_fieldmd` | `0x238` | `0x6ac` | **`+0x474`** |
+| `__TEXT.__swift5_reflstr` | `0x221` | `0x551` | **`+0x330`** |
+| `__TEXT.__cstring` | `0x32c` | `0x5cc` | **`+0x2a0`** |
+| `__TEXT.__constg_swiftt` | `0x260` | `0x404` | **`+0x1a4`** |
+| `__TEXT.__unwind_info` | `0x2a0` | `0x3e0` | **`+0x140`** |
+| `__TEXT.__oslogstring` | `0x4e9` | `0x3e9` | **`-0x100`** |
+| `__TEXT.__swift5_assocty` | `0x78` | `0x150` | **`+0xd8`** |
+| `__TEXT.__swift5_typeref` | `0x23c` | `0x2d6` | **`+0x9a`** |
+| `__TEXT.__swift5_capture` | `0xf0` | `0x80` | **`-0x70`** |
+| `__TEXT.__swift5_proto` | `0x58` | `0xc4` | **`+0x6c`** |
+| `__DATA.__data` | `0x1a8` | `0x1e8` | **`+0x40`** |
+| `__TEXT.__swift5_types` | `0x2c` | `0x68` | **`+0x3c`** |
+| `__AUTH_CONST.__auth_got` | `0x428` | `0x3f8` | **`-0x30`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x7b58
-+  __TEXT.__text: 0xaff8
-   __TEXT.__objc_methlist: 0x214
--  __TEXT.__const: 0x7b0
--  __TEXT.__cstring: 0x32c
--  __TEXT.__swift5_typeref: 0x23c
--  __TEXT.__swift5_capture: 0xf0
--  __TEXT.__oslogstring: 0x4e9
--  __TEXT.__swift5_reflstr: 0x221
--  __TEXT.__swift5_assocty: 0x78
--  __TEXT.__constg_swiftt: 0x260
--  __TEXT.__swift5_fieldmd: 0x238
--  __TEXT.__swift5_proto: 0x58
--  __TEXT.__swift5_types: 0x2c
-+  __TEXT.__const: 0x1110
-+  __TEXT.__cstring: 0x5cc
-+  __TEXT.__swift5_typeref: 0x2d6
-+  __TEXT.__swift5_reflstr: 0x551
-+  __TEXT.__swift5_assocty: 0x150
-+  __TEXT.__constg_swiftt: 0x404
-+  __TEXT.__swift5_fieldmd: 0x6ac
-+  __TEXT.__swift5_capture: 0x80
-+  __TEXT.__oslogstring: 0x3e9
-+  __TEXT.__swift5_proto: 0xc4
-+  __TEXT.__swift5_types: 0x68
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__unwind_info: 0x2a0
-+  __TEXT.__unwind_info: 0x3e0
-   __TEXT.__eh_frame: 0x310
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+-3232.3.0.0.0
++3234.5.0.0.0
 
-   __DATA_CONST.__objc_selrefs: 0x148
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xad0
-+  __AUTH_CONST.__const: 0x1628
-   __AUTH_CONST.__objc_const: 0x290
--  __AUTH_CONST.__auth_got: 0x428
-+  __AUTH_CONST.__auth_got: 0x3f8
-   __AUTH.__objc_data: 0x198
--  __DATA.__data: 0x1a8
--  __DATA.__bss: 0xa80
-+  __DATA.__data: 0x1e8
-+  __DATA.__bss: 0x1800
-   __DATA_DIRTY.__objc_data: 0x70
-   __DATA_DIRTY.__data: 0x68
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 240
--  Symbols:   317
+-  Symbols:   235
 -  CStrings:  53
 +  Functions: 494
-+  Symbols:   324
++  Symbols:   264
 +  CStrings:  90
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
 Symbols:
 + ___swift_memcpy48_8
 + ___swift_memcpy56_8
@@ -169,5 +131,4 @@ CStrings:
 - "Sending analytic: 'com.apple.accessibility.reader.content.cleanup'. %{sensitive}s"
 - "Sending analytic: 'com.apple.accessibility.reader.runtime.fetch.content'. %{sensitive}s"
 - "Sending analytic: 'com.apple.accessibility.reader.summarization'. %{sensitive}s"
-
 ```

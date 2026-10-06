@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AltruisticBodyPoseKit.framework/AltruisticBodyPoseKit`
 
-```diff
+### Section Size Changes
 
- 29.0.1.0.0
--  __TEXT.__text: 0x476f0
-+  __TEXT.__text: 0x47710
-   __TEXT.__objc_methlist: 0x2d4c
-   __TEXT.__const: 0xddc
-   __TEXT.__oslogstring: 0x436d
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x476f0` | `0x47710` | **`+0x20`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[ABPKRetargeting _retargetSkeleton:] : 1188 -> 1192
 ~ __ZN4abpk33getJointPositionsAndMaximasLegacyEPKDF16_S1_RKNSt3__15arrayImLm3EEES6_bjRNS3_INS2_6vectorINS_4peakENS2_9allocatorIS8_EEEELm17EEERSB_ : 1064 -> 1068

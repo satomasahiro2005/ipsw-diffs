@@ -2,21 +2,21 @@
 
 > `/usr/libexec/PerfPowerServicesExtended`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x60` | `0x58` | **`-0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+
+### Other Changes
 
 ```diff
 
 -3486.0.81.502.4
 +3486.2.4.0.0
-   __TEXT.__text: 0x760
-   __TEXT.__auth_stubs: 0x140
-   __TEXT.__objc_stubs: 0x2c0
--  __TEXT.__const: 0x60
-+  __TEXT.__const: 0x58
-   __TEXT.__cstring: 0x241
-   __TEXT.__oslogstring: 0x3
-   __TEXT.__objc_methname: 0x17a
 ```

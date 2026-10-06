@@ -2,78 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/CoreSpeechFoundation.framework/CoreSpeechFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcd774` | `0xcd8fc` | **`+0x188`** |
+| `__TEXT.__oslogstring` | `0x11bfb` | `0x11c58` | **`+0x5d`** |
+| `__TEXT.__cstring` | `0x16adf` | `0x16b38` | **`+0x59`** |
+| `__AUTH_CONST.__cfstring` | `0x9a40` | `0x9a60` | **`+0x20`** |
+| `__AUTH_CONST.__objc_const` | `0x14ff8` | `0x15018` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x28c0` | `0x28c8` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7588` | `0x7590` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0xdb10` | `0xdb18` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x3e80` | `0x3e88` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0xdac` | `0xdb0` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3605.23.1.0.0
--  __TEXT.__text: 0xc9a48
--  __TEXT.__objc_methlist: 0xdb10
 +3605.25.1.0.0
-+  __TEXT.__text: 0xc9bc4
-+  __TEXT.__objc_methlist: 0xdb18
-   __TEXT.__const: 0xfe8
-   __TEXT.__dlopen_cstrs: 0x24a
-   __TEXT.__constg_swiftt: 0x2cc
-   __TEXT.__swift5_typeref: 0x1dc
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_types: 0x30
--  __TEXT.__cstring: 0x16adf
-+  __TEXT.__cstring: 0x16b38
-   __TEXT.__swift5_reflstr: 0x278
-   __TEXT.__swift5_assocty: 0x78
-   __TEXT.__swift5_fieldmd: 0x250
-   __TEXT.__swift5_proto: 0x74
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__gcc_except_tab: 0x3d24
--  __TEXT.__oslogstring: 0x11bfb
-+  __TEXT.__oslogstring: 0x11c58
-   __TEXT.__unwind_info: 0x4ac8
-   __TEXT.__eh_frame: 0x270
-   __TEXT.__objc_stubs: 0x0
 
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x28c0
-+  __DATA_CONST.__const: 0x28c8
-   __DATA_CONST.__objc_classlist: 0x750
-   __DATA_CONST.__objc_catlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x228
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x18
--  __DATA_CONST.__objc_selrefs: 0x7588
-+  __DATA_CONST.__objc_selrefs: 0x7590
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__objc_superrefs: 0x570
-   __DATA_CONST.__objc_arraydata: 0x1c8
-   __DATA_CONST.__got: 0x1040
-   __AUTH_CONST.__const: 0x1b40
--  __AUTH_CONST.__cfstring: 0x9a40
--  __AUTH_CONST.__objc_const: 0x14ff8
-+  __AUTH_CONST.__cfstring: 0x9a60
-+  __AUTH_CONST.__objc_const: 0x15018
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_dictobj: 0x1e0
-   __AUTH_CONST.__objc_intobj: 0x4b0
-
-   __AUTH_CONST.__objc_floatobj: 0x1a0
-   __AUTH_CONST.__auth_got: 0xfc0
-   __AUTH.__objc_data: 0x218
--  __DATA.__objc_ivar: 0xdac
-+  __DATA.__objc_ivar: 0xdb0
-   __DATA.__data: 0x1a60
-   __DATA_DIRTY.__objc_data: 0x47c0
-   __DATA_DIRTY.__data: 0x2e8
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5275
--  Symbols:   12281
+-  Symbols:   9899
 -  CStrings:  3790
 +  Functions: 5276
-+  Symbols:   12284
++  Symbols:   9902
 +  CStrings:  3793
- 
 Symbols:
 + -[CSAudioConsumingStateMonitor backdateSessionStartBySeconds:]
 + GCC_except_table3670

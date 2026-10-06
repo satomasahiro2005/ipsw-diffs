@@ -2,100 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/SiriAppIntentsRuntime.framework/SiriAppIntentsRuntime`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7c728` | `0x815b4` | **`+0x4e8c`** |
+| `__AUTH_CONST.__const` | `0x4378` | `0x4648` | **`+0x2d0`** |
+| `__TEXT.__oslogstring` | `0x32dd` | `0x348d` | **`+0x1b0`** |
+| `__TEXT.__eh_frame` | `0x4670` | `0x4818` | **`+0x1a8`** |
+| `__TEXT.__swift5_capture` | `0x1758` | `0x1880` | **`+0x128`** |
+| `__TEXT.__unwind_info` | `0x1a10` | `0x1ac0` | **`+0xb0`** |
+| `__TEXT.__swift5_typeref` | `0x12f3` | `0x1385` | **`+0x92`** |
+| `__TEXT.__cstring` | `0x1431` | `0x14b1` | **`+0x80`** |
+| `__TEXT.__const` | `0x2798` | `0x2808` | **`+0x70`** |
+| `__AUTH_CONST.__auth_got` | `0x1888` | `0x18e8` | **`+0x60`** |
+| `__DATA.__data` | `0x7e8` | `0x828` | **`+0x40`** |
+| `__TEXT.__swift_as_cont` | `0x2cc` | `0x2ec` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x3e8` | `0x404` | **`+0x1c`** |
+| `__DATA_DIRTY.__objc_data` | `0x9c0` | `0x9d8` | **`+0x18`** |
+| `__TEXT.__swift_as_entry` | `0x1c0` | `0x1cc` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `0x170` | `0x17c` | **`+0xc`** |
+| `__AUTH_CONST.__objc_const` | `0xcc8` | `0xcd0` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x438` | `0x440` | **`+0x8`** |
+| `__TEXT.__constg_swiftt` | `0xc9c` | `0xca4` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -3600.82.15.0.0
--  __TEXT.__text: 0x7c728
--  __TEXT.__objc_methlist: 0x3e8
--  __TEXT.__const: 0x2798
--  __TEXT.__cstring: 0x1431
--  __TEXT.__constg_swiftt: 0xc9c
--  __TEXT.__swift5_typeref: 0x12f3
 +3600.82.20.0.0
-+  __TEXT.__text: 0x815b4
-+  __TEXT.__objc_methlist: 0x404
-+  __TEXT.__const: 0x2808
-+  __TEXT.__cstring: 0x14b1
-+  __TEXT.__constg_swiftt: 0xca4
-+  __TEXT.__swift5_typeref: 0x1385
-   __TEXT.__swift5_reflstr: 0xcf6
-   __TEXT.__swift5_fieldmd: 0x940
--  __TEXT.__oslogstring: 0x32dd
-+  __TEXT.__oslogstring: 0x348d
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_types: 0xb4
--  __TEXT.__swift_as_entry: 0x1c0
--  __TEXT.__swift_as_ret: 0x170
--  __TEXT.__swift_as_cont: 0x2cc
-+  __TEXT.__swift_as_entry: 0x1cc
-+  __TEXT.__swift_as_ret: 0x17c
-+  __TEXT.__swift_as_cont: 0x2ec
-   __TEXT.__swift5_proto: 0x104
--  __TEXT.__swift5_capture: 0x1758
-+  __TEXT.__swift5_capture: 0x1880
-   __TEXT.__swift5_assocty: 0x98
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x1a10
--  __TEXT.__eh_frame: 0x4670
-+  __TEXT.__unwind_info: 0x1ac0
-+  __TEXT.__eh_frame: 0x4818
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x70
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x438
-+  __DATA_CONST.__objc_selrefs: 0x440
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x4378
--  __AUTH_CONST.__objc_const: 0xcc8
--  __AUTH_CONST.__auth_got: 0x1888
-+  __AUTH_CONST.__const: 0x4648
-+  __AUTH_CONST.__objc_const: 0xcd0
-+  __AUTH_CONST.__auth_got: 0x18e8
-   __AUTH.__objc_data: 0xa0
-   __AUTH.__data: 0x570
--  __DATA.__data: 0x7e8
-+  __DATA.__data: 0x828
-   __DATA.__bss: 0x1400
-   __DATA.__common: 0x88
--  __DATA_DIRTY.__objc_data: 0x9c0
-+  __DATA_DIRTY.__objc_data: 0x9d8
-   __DATA_DIRTY.__data: 0xd28
-   __DATA_DIRTY.__bss: 0xb80
-   __DATA_DIRTY.__common: 0x110
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2792
 -  Symbols:   214
 -  CStrings:  330
 +  Functions: 2905
 +  Symbols:   216
 +  CStrings:  337
- 
 Symbols:
 + _swift_projectBox
 + _swift_release_x1

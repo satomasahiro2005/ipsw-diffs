@@ -2,28 +2,29 @@
 
 > `/System/Library/UserEventPlugins/com.apple.tailspin.plugin/com.apple.tailspin`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__oslogstring` | `0xfe` | `0x11c` | **`+0x1e`** |
+| `__TEXT.__text` | `0x620` | `0x628` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__const`
+- `__DATA.__objc_selrefs`
+- `__TEXT.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x620
-+  __TEXT.__text: 0x628
-   __TEXT.__auth_stubs: 0x230
-   __TEXT.__objc_stubs: 0xa0
-   __TEXT.__const: 0x58
-   __TEXT.__cstring: 0x8c
--  __TEXT.__oslogstring: 0xfe
-+  __TEXT.__oslogstring: 0x11c
-   __TEXT.__objc_methname: 0x5a
-   __TEXT.__unwind_info: 0x78
-   __DATA.__const: 0x48
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA.__const : content changed
-~ __DATA.__objc_selrefs : content changed
+-264.0.0.0.0
++267.0.0.0.0
 Functions:
 ~ _init_tailspin : 1160 -> 1168
 CStrings:
 + "%{public}s reset on-disk tailspin configuration. Apple-Internal: %{bool}d, Is Photos: %{bool}d, Is tailspind 300MB: %{bool}d"
 - "%{public}s reset on-disk tailspin configuration. Apple-Internal: %{bool}d, Is Photos: %{bool}d"
-
 ```

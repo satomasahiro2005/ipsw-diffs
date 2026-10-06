@@ -2,10 +2,12 @@
 
 > `/usr/libexec/seputil`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
-- `__TEXT.__unwind_info`
 - `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```text
 Functions:

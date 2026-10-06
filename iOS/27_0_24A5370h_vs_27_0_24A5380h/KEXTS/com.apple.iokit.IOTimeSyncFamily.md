@@ -2,38 +2,25 @@
 
 > `com.apple.iokit.IOTimeSyncFamily`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__os_log` | `0x8af5` | `0x8cdf` | **`+0x1ea`** |
+| `__TEXT_EXEC.__text` | `0x312f8` | `0x314d8` | **`+0x1e0`** |
+| `__TEXT.__cstring` | `0x3eaa` | `0x3ee0` | **`+0x36`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__cstring: 0x3eaa
--  __TEXT.__os_log: 0x8af5
-+  __TEXT.__cstring: 0x3ee0
-+  __TEXT.__os_log: 0x8cdf
-   __TEXT.__const: 0x1e8
--  __TEXT_EXEC.__text: 0x312f8
-+  __TEXT_EXEC.__text: 0x314d8
-   __TEXT_EXEC.__auth_stubs: 0x810
-   __DATA.__data: 0xd0
-   __DATA.__common: 0x688
-
-   __DATA_CONST.__auth_got: 0x408
-   __DATA_CONST.__got: 0xc0
-   __DATA_CONST.__auth_ptr: 0x8
+-1501.1.0.0.0
 -  Functions: 1486
++1501.4.0.0.0
 +  Functions: 1488
-   Symbols:   0
--  CStrings:  724
-+  CStrings:  733
- 
-Sections:
-~ __DATA.__data : content changed
-~ __DATA_CONST.__mod_init_func : content changed
-~ __DATA_CONST.__mod_term_func : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__kalloc_type : content changed
-~ __DATA_CONST.__kalloc_var : content changed
-~ __DATA_CONST.__auth_got : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA_CONST.__auth_ptr : content changed
+
+-  CStrings:  721
++  CStrings:  730
 CStrings:
 + "12111112122212121111111111111111111111211"
 + "1211111212221212111111111111111122111111"
@@ -54,5 +41,4 @@ CStrings:
 - "Not entitled\n"
 - "entitlement"
 - "entitlement == kOSBooleanTrue"
-
 ```

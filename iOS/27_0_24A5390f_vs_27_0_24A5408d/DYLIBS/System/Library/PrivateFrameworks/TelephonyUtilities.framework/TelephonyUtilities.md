@@ -2,81 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x19b298` | `0x19bd3c` | **`+0xaa4`** |
+| `__TEXT.__oslogstring` | `0x13897` | `0x13c27` | **`+0x390`** |
+| `__AUTH_CONST.__objc_const` | `0x2aa48` | `0x2ac80` | **`+0x238`** |
+| `__TEXT.__objc_methlist` | `0x1b300` | `0x1b458` | **`+0x158`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb5e0` | `0xb690` | **`+0xb0`** |
+| `__DATA.__data` | `0x3c38` | `0x3c98` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x6c80` | `0x6cc8` | **`+0x48`** |
+| `__TEXT.__gcc_except_tab` | `0x1788` | `0x17c8` | **`+0x40`** |
+| `__AUTH_CONST.__objc_intobj` | `0x540` | `0x558` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x18dc` | `0x18f4` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x1500` | `0x1508` | **`+0x8`** |
+| `__DATA_CONST.__objc_catlist` | `0xb8` | `0xc0` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x408` | `0x410` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -1616.100.2.2.1
--  __TEXT.__text: 0x19b298
--  __TEXT.__objc_methlist: 0x1b300
 +1620.100.1.2.3
-+  __TEXT.__text: 0x19bd3c
-+  __TEXT.__objc_methlist: 0x1b458
-   __TEXT.__cstring: 0x13f76
-   __TEXT.__const: 0x40c8
--  __TEXT.__oslogstring: 0x13897
--  __TEXT.__gcc_except_tab: 0x1788
-+  __TEXT.__oslogstring: 0x13c27
-+  __TEXT.__gcc_except_tab: 0x17c8
-   __TEXT.__ustring: 0xde
-   __TEXT.__dlopen_cstrs: 0x845
-   __TEXT.__constg_swiftt: 0xcc0
 
-   __TEXT.__swift_as_cont: 0x13c
-   __TEXT.__swift5_protos: 0x14
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x6c80
-+  __TEXT.__unwind_info: 0x6cc8
-   __TEXT.__eh_frame: 0x2078
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x37b0
-   __DATA_CONST.__objc_classlist: 0x878
--  __DATA_CONST.__objc_catlist: 0xb8
--  __DATA_CONST.__objc_protolist: 0x408
-+  __DATA_CONST.__objc_catlist: 0xc0
-+  __DATA_CONST.__objc_protolist: 0x410
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb5e0
-+  __DATA_CONST.__objc_selrefs: 0xb690
-   __DATA_CONST.__objc_protorefs: 0x110
-   __DATA_CONST.__objc_superrefs: 0x6d8
-   __DATA_CONST.__objc_arraydata: 0x9e8
-   __DATA_CONST.__got: 0xff0
-   __AUTH_CONST.__const: 0x46f8
-   __AUTH_CONST.__cfstring: 0x124c0
--  __AUTH_CONST.__objc_const: 0x2aa48
--  __AUTH_CONST.__objc_intobj: 0x540
-+  __AUTH_CONST.__objc_const: 0x2ac80
-+  __AUTH_CONST.__objc_intobj: 0x558
-   __AUTH_CONST.__objc_doubleobj: 0x40
-   __AUTH_CONST.__objc_arrayobj: 0x2b8
--  __AUTH_CONST.__auth_got: 0x1500
-+  __AUTH_CONST.__auth_got: 0x1508
-   __AUTH.__objc_data: 0x2f38
-   __AUTH.__data: 0xc30
--  __DATA.__objc_ivar: 0x18dc
--  __DATA.__data: 0x3c38
-+  __DATA.__objc_ivar: 0x18f4
-+  __DATA.__data: 0x3c98
-   __DATA.__bss: 0x7610
-   __DATA.__common: 0x88
-   __DATA_DIRTY.__objc_data: 0x26f0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11471
--  Symbols:   20287
+-  Symbols:   15920
 -  CStrings:  4563
 +  Functions: 11497
-+  Symbols:   20350
++  Symbols:   15965
 +  CStrings:  4571
- 
 Symbols:
 + +[TUCallCapabilities canEnableThumperCalling]
 + +[TUCallHistoryController callHistoryControllerWithCoalescingStrategy:options:shouldUpdateMetadataCache:recentsDataSource:]
@@ -133,29 +93,6 @@ Symbols:
 + ___52-[TUCallHistoryController requestRecentCallsRefresh]_block_invoke
 + ___62-[TUCallCenter registerClientSupportsExtendedSuspensionState:]_block_invoke
 + _clock_gettime_nsec_np
-+ _objc_msgSend$_shouldTearDownXPCConnectionForConnectionRequestWithNotifyStatus:daemonLaunchTime:
-+ _objc_msgSend$callHistoryControllerWithCoalescingStrategy:options:shouldUpdateMetadataCache:recentsDataSource:
-+ _objc_msgSend$canEnableThumperCalling
-+ _objc_msgSend$clientSupportsExtendedSuspensionState
-+ _objc_msgSend$eligibleToEnable
-+ _objc_msgSend$initWithCoalescingStrategy:options:dataSource:recentsDataSource:shouldUpdateMetadataCache:
-+ _objc_msgSend$isPerformingRecentCallsRefresh
-+ _objc_msgSend$lastOutgoingXPCMessageTime
-+ _objc_msgSend$performRecentCallsRefresh
-+ _objc_msgSend$pickLocalRouteWithUniqueIdentifier:shouldWaitUntilAvailable:routeSelectionProvenance:
-+ _objc_msgSend$pickPairedHostDeviceRouteWithUniqueIdentifier:shouldWaitUntilAvailable:routeSelectionProvenance:
-+ _objc_msgSend$pickRoute:routeSelectionProvenance:
-+ _objc_msgSend$pickRouteWhenAvailableWithUniqueIdentifier:routeSelectionProvenance:
-+ _objc_msgSend$pickRouteWithUniqueIdentifier:routeSelectionProvenance:
-+ _objc_msgSend$pickRouteWithUniqueIdentifier:shouldWaitUntilAvailable:routeSelectionProvenance:forRouteController:
-+ _objc_msgSend$recentCallsRefreshRequestedDuringFetch
-+ _objc_msgSend$recentsDataSource
-+ _objc_msgSend$requestRecentCallsRefresh
-+ _objc_msgSend$setClientSupportsExtendedSuspensionState:
-+ _objc_msgSend$setIsPerformingRecentCallsRefresh:
-+ _objc_msgSend$setRecentCallsRefreshRequestedDuringFetch:
-+ _objc_msgSend$setRecentsDataSource:
-+ _objc_msgSend$stampLastOutgoingXPCMessageTime
 - -[TUCallHistoryController initWithCoalescingStrategy:options:dataSource:shouldUpdateMetadataCache:]
 - -[TUCallServicesInterface pickRouteWithUniqueIdentifier:shouldWaitUntilAvailable:forRouteController:]
 - GCC_except_table149
@@ -166,11 +103,6 @@ Symbols:
 - GCC_except_table41
 - GCC_except_table65
 - GCC_except_table70
-- _objc_msgSend$initWithCoalescingStrategy:options:dataSource:shouldUpdateMetadataCache:
-- _objc_msgSend$pickLocalRouteWithUniqueIdentifier:shouldWaitUntilAvailable:
-- _objc_msgSend$pickPairedHostDeviceRouteWithUniqueIdentifier:shouldWaitUntilAvailable:
-- _objc_msgSend$pickRouteWithUniqueIdentifier:
-- _objc_msgSend$pickRouteWithUniqueIdentifier:shouldWaitUntilAvailable:forRouteController:
 CStrings:
 + "Asked to pick route with unique identifier: %@ (routeSelectionProvenance: %ld)"
 + "Asked to pick route: %@ (routeSelectionProvenance: %ld)"

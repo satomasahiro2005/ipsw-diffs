@@ -2,112 +2,55 @@
 
 > `/System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x175384` | `0x17c894` | **`+0x7510`** |
+| `__AUTH_CONST.__objc_const` | `0x1f2f8` | `0x1f780` | **`+0x488`** |
+| `__TEXT.__oslogstring` | `0xb7a9` | `0xbb7e` | **`+0x3d5`** |
+| `__TEXT.__gcc_except_tab` | `0x9134` | `0x9480` | **`+0x34c`** |
+| `__TEXT.__cstring` | `0x2b95f` | `0x2bc05` | **`+0x2a6`** |
+| `__AUTH_CONST.__cfstring` | `0x2dc00` | `0x2de60` | **`+0x260`** |
+| `__TEXT.__objc_methlist` | `0x14220` | `0x14400` | **`+0x1e0`** |
+| `__TEXT.__unwind_info` | `0x5d80` | `0x5f40` | **`+0x1c0`** |
+| `__TEXT.__ustring` | `0x2040` | `0x218e` | **`+0x14e`** |
+| `__DATA_CONST.__const` | `0x6460` | `0x65a8` | **`+0x148`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa3a8` | `0xa4b0` | **`+0x108`** |
+| `__AUTH_CONST.__auth_got` | `0x1058` | `0x1148` | **`+0xf0`** |
+| `__AUTH.__objc_data` | `0x5af0` | `0x5b90` | **`+0xa0`** |
+| `__TEXT.__dlopen_cstrs` | `0x49b` | `0x526` | **`+0x8b`** |
+| `__AUTH_CONST.__const` | `0x2370` | `0x23f0` | **`+0x80`** |
+| `__DATA.__bss` | `0x1930` | `0x1990` | **`+0x60`** |
+| `__DATA.__data` | `0x1bf8` | `0x1c58` | **`+0x60`** |
+| `__AUTH.__thread_vars` | `—` | `0x48` | **`+0x48`** |
+| `__DATA.__objc_ivar` | `0x13b8` | `0x13f8` | **`+0x40`** |
+| `__DATA_CONST.__objc_arraydata` | `0x11258` | `0x11290` | **`+0x38`** |
+| `__AUTH.__thread_bss` | `—` | `0x18` | **`+0x18`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x3ac8` | `0x3ae0` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0xe38` | `0xe50` | **`+0x18`** |
+| `__AUTH_CONST.__objc_floatobj` | `0x10` | `0x20` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0xa80` | `0xa90` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x710` | `0x720` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0xa7f8` | `0xa808` | **`+0x10`** |
+| `__TEXT.__const` | `0xee8` | `0xef8` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0xa0` | `0xa8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2454.100.0.0.0
--  __TEXT.__text: 0x175384
--  __TEXT.__objc_methlist: 0x14220
--  __TEXT.__const: 0xee8
--  __TEXT.__gcc_except_tab: 0x9134
--  __TEXT.__cstring: 0x2b95f
--  __TEXT.__oslogstring: 0xb7a9
--  __TEXT.__ustring: 0x2040
--  __TEXT.__dlopen_cstrs: 0x49b
 +2459.102.0.0.0
-+  __TEXT.__text: 0x17c894
-+  __TEXT.__objc_methlist: 0x14400
-+  __TEXT.__const: 0xef8
-+  __TEXT.__gcc_except_tab: 0x9480
-+  __TEXT.__cstring: 0x2bc05
-+  __TEXT.__oslogstring: 0xbb7e
-+  __TEXT.__ustring: 0x218e
-+  __TEXT.__dlopen_cstrs: 0x526
-   __TEXT.__constg_swiftt: 0x1bc
-   __TEXT.__swift5_typeref: 0x2ba
-   __TEXT.__swift5_reflstr: 0x8e
 
-   __TEXT.__swift_as_cont: 0xc
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x5d80
-+  __TEXT.__unwind_info: 0x5f40
-   __TEXT.__eh_frame: 0x210
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x6460
--  __DATA_CONST.__objc_classlist: 0xa80
-+  __DATA_CONST.__const: 0x65a8
-+  __DATA_CONST.__objc_classlist: 0xa90
-   __DATA_CONST.__objc_catlist: 0x60
--  __DATA_CONST.__objc_protolist: 0xa0
-+  __DATA_CONST.__objc_protolist: 0xa8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa3a8
-+  __DATA_CONST.__objc_selrefs: 0xa4b0
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__objc_superrefs: 0x710
--  __DATA_CONST.__objc_arraydata: 0x11258
--  __DATA_CONST.__got: 0xe38
--  __AUTH_CONST.__const: 0x2370
--  __AUTH_CONST.__cfstring: 0x2dc00
--  __AUTH_CONST.__objc_const: 0x1f2f8
-+  __DATA_CONST.__objc_superrefs: 0x720
-+  __DATA_CONST.__objc_arraydata: 0x11290
-+  __DATA_CONST.__got: 0xe50
-+  __AUTH_CONST.__const: 0x23f0
-+  __AUTH_CONST.__cfstring: 0x2de60
-+  __AUTH_CONST.__objc_const: 0x1f780
-   __AUTH_CONST.__weak_auth_got: 0x10
--  __AUTH_CONST.__objc_arrayobj: 0x3ac8
-+  __AUTH_CONST.__objc_arrayobj: 0x3ae0
-   __AUTH_CONST.__objc_dictobj: 0xaf78
-   __AUTH_CONST.__objc_intobj: 0xe58
-   __AUTH_CONST.__objc_doubleobj: 0x180
--  __AUTH_CONST.__objc_floatobj: 0x10
--  __AUTH_CONST.__auth_got: 0x1058
--  __AUTH.__objc_data: 0x5af0
-+  __AUTH_CONST.__objc_floatobj: 0x20
-+  __AUTH_CONST.__auth_got: 0x1148
-+  __AUTH.__objc_data: 0x5b90
-   __AUTH.__data: 0x3a0
--  __DATA.__objc_ivar: 0x13b8
--  __DATA.__data: 0x1bf8
--  __DATA.__bss: 0x1930
-+  __AUTH.__thread_vars: 0x48
-+  __AUTH.__thread_bss: 0x18
-+  __DATA.__objc_ivar: 0x13f8
-+  __DATA.__data: 0x1c58
-+  __DATA.__bss: 0x1990
-   __DATA_DIRTY.__objc_data: 0xe10
-   __DATA_DIRTY.__data: 0x20
--  __DATA_DIRTY.__bss: 0xa7f8
-+  __DATA_DIRTY.__bss: 0xa808
-   __DATA_DIRTY.__common: 0x18
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-
-   - /System/Library/PrivateFrameworks/CSExattrCrypto.framework/CSExattrCrypto
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/MetadataUtilities.framework/MetadataUtilities
 +  - /System/Library/PrivateFrameworks/PommesRankingCore.framework/PommesRankingCore
-   - /System/Library/PrivateFrameworks/PowerLog.framework/PowerLog
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /System/Library/PrivateFrameworks/SpotlightEmbeddingCore.framework/SpotlightEmbeddingCore
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 8752
--  Symbols:   17393
+-  Symbols:   14310
 -  CStrings:  8018
 +  Functions: 8858
-+  Symbols:   17615
++  Symbols:   14501
 +  CStrings:  8066
- 
 Symbols:
 + +[CSTestSearchableIndex cs_indexConnectionClassForTesting]
 + -[CSPommesQueryCandidateEvaluator _releaseContextCFRefs:]
@@ -354,38 +297,6 @@ Symbols:
 + _match_and_score_candidates
 + _merge_candidates
 + _objc_moveWeak
-+ _objc_msgSend$_forceDispatchAllLocked:
-+ _objc_msgSend$_processWorkItemsUpToRequestIDLocked:qosFloor:
-+ _objc_msgSend$_releaseContextCFRefs:
-+ _objc_msgSend$authorizationStatusForEntityType:
-+ _objc_msgSend$cs_enqueueDrainSentinelWithToken:retryCount:
-+ _objc_msgSend$cs_requiresInitializationForConnection:
-+ _objc_msgSend$cs_sendDrainResponseWithToken:outcome:queueDepth:
-+ _objc_msgSend$deliverInjectedCandidatesAtStart
-+ _objc_msgSend$dimension
-+ _objc_msgSend$drainBundleIDs
-+ _objc_msgSend$drainToken
-+ _objc_msgSend$drainWithQoSFloor:
-+ _objc_msgSend$enqueueStartTimeCandidateInjection
-+ _objc_msgSend$evalResultForCandidate:
-+ _objc_msgSend$evaluate:item:pass:
-+ _objc_msgSend$format
-+ _objc_msgSend$initWithRankingConfig:queryContext:queryStartTime:
-+ _objc_msgSend$isHome
-+ _objc_msgSend$matchesCandidate:
-+ _objc_msgSend$originalToken
-+ _objc_msgSend$pendingWorkItemCount
-+ _objc_msgSend$performDrainWithToken:
-+ _objc_msgSend$pommesRankingConfiguration
-+ _objc_msgSend$predicateWithBlock:
-+ _objc_msgSend$queryStartTime
-+ _objc_msgSend$resolveCandidateEvaluatorIfNeeded
-+ _objc_msgSend$scoreCandidate:
-+ _objc_msgSend$setDrainBundleIDs:
-+ _objc_msgSend$setSearchableIndex:
-+ _objc_msgSend$tokenRewrites
-+ _objc_msgSend$variations
-+ _objc_msgSend$vectors
 + _pommes_attribute_getter
 + _pommes_resolve_friendly_field_name
 + _populate_pr_context
@@ -456,7 +367,6 @@ Symbols:
 - __ZZNSt3__16vectorIN12_GLOBAL__N_18WorkItemENS_9allocatorIS2_EEE12emplace_backIJjU8__strongU13block_pointerFvvEEEEvDpOT_ENKUlvE0_clEv
 - ___block_descriptor_48_e8_32s40s_e17_v16?0"NSArray"8ls32l8s40l8
 - ___block_descriptor_56_e8_32s40bs_e17_v16?0"NSError"8ls40l8s32l8
-- _objc_msgSend$sortedArrayUsingDescriptors:
 CStrings:
 + " → "
 + "%@\x1f%@"

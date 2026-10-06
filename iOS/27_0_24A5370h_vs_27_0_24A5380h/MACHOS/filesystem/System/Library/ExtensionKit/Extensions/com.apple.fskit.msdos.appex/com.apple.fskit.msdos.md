@@ -2,62 +2,46 @@
 
 > `/System/Library/ExtensionKit/Extensions/com.apple.fskit.msdos.appex/com.apple.fskit.msdos`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1570c` | `0x15810` | **`+0x104`** |
+| `__TEXT.__oslogstring` | `0xe6a` | `0xf6d` | **`+0x103`** |
+| `__TEXT.__gcc_except_tab` | `0x470` | `0x464` | **`-0xc`** |
+| `__DATA_CONST.__got` | `0xd8` | `0xe0` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1570c
-+  __TEXT.__text: 0x15810
-   __TEXT.__auth_stubs: 0x7f0
-   __TEXT.__objc_stubs: 0x1f80
-   __TEXT.__objc_methlist: 0xd04
-   __TEXT.__const: 0x4e26
-   __TEXT.__cstring: 0x286d
--  __TEXT.__oslogstring: 0xe6a
-+  __TEXT.__oslogstring: 0xf6d
-   __TEXT.__objc_classname: 0x154
-   __TEXT.__objc_methname: 0x229e
-   __TEXT.__objc_methtype: 0xad9
--  __TEXT.__gcc_except_tab: 0x470
-+  __TEXT.__gcc_except_tab: 0x464
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__constg_swiftt: 0x28
-   __TEXT.__swift5_typeref: 0x80
+-845.0.0.0.0
++845.0.2.0.0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x50
-   __DATA_CONST.__auth_got: 0x408
--  __DATA_CONST.__got: 0xd8
-+  __DATA_CONST.__got: 0xe0
-   __DATA_CONST.__auth_ptr: 0x68
-   __DATA.__objc_const: 0x16d0
-   __DATA.__objc_selrefs: 0xac0
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 451
 +  Functions: 457
-   Symbols:   323
--  CStrings:  1055
-+  CStrings:  1060
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_entry : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__data : content changed
+
+-  CStrings:  1016
++  CStrings:  1021
 CStrings:
 + "%s: FAT offset overflows (resSectors=%u, bytesPerSector=%u)"
 + "%s: FAT size overflows (fatSectors=%u, bytesPerSector=%u)"
 + "%s: First cluster offset overflows"
 + "%s: Root directory block overflows (FATs=%u, fatSectors=%u, reservedSectors=%u)"
 + "%s: Zero bytes-per-sector"
-
 ```

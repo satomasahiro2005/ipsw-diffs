@@ -2,68 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/AVConference.framework/AVConference`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__data` | `0x420` | `0x6570` | **`+0x6150`** |
+| `__DATA.__data` | `0x7c68` | `0x1c10` | **`-0x6058`** |
+| `__TEXT.__text` | `0x7e2570` | `0x7e3170` | **`+0xc00`** |
+| `__DATA.__bss` | `0x920` | `0xf18` | **`+0x5f8`** |
+| `__DATA_DIRTY.__bss` | `0xab0` | `0x4c0` | **`-0x5f0`** |
+| `__TEXT.__oslogstring` | `0x1435e0` | `0x143a07` | **`+0x427`** |
+| `__AUTH.__data` | `0xf8` | `—` | **`-0xf8`** |
+| `__AUTH_CONST.__objc_const` | `0x6d1d8` | `0x6d248` | **`+0x70`** |
+| `__AUTH_CONST.__cfstring` | `0x29e00` | `0x29e40` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x9f784` | `0x9f79e` | **`+0x1a`** |
+| `__TEXT.__objc_methlist` | `0x3ac38` | `0x3ac50` | **`+0x18`** |
+| `__TEXT.__gcc_except_tab` | `0x2dc8` | `0x2ddc` | **`+0x14`** |
+| `__TEXT.__unwind_info` | `0x125e0` | `0x125f0` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x7748` | `0x7754` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
 -2260.11.1.0.0
--  __TEXT.__text: 0x7d6d8c
--  __TEXT.__objc_methlist: 0x3ac38
 +2260.14.1.0.0
-+  __TEXT.__text: 0x7d7974
-+  __TEXT.__objc_methlist: 0x3ac50
-   __TEXT.__const: 0xc680
--  __TEXT.__cstring: 0x9f784
--  __TEXT.__oslogstring: 0x1435e0
--  __TEXT.__gcc_except_tab: 0x2dc8
-+  __TEXT.__cstring: 0x9f79e
-+  __TEXT.__oslogstring: 0x143a07
-+  __TEXT.__gcc_except_tab: 0x2ddc
-   __TEXT.__ustring: 0x2d4
-   __TEXT.__dlopen_cstrs: 0x56
--  __TEXT.__unwind_info: 0x1b6f0
-+  __TEXT.__unwind_info: 0x1b708
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_arraydata: 0x27d8
-   __DATA_CONST.__got: 0x1dd8
-   __AUTH_CONST.__const: 0x4588
--  __AUTH_CONST.__cfstring: 0x29e00
--  __AUTH_CONST.__objc_const: 0x6d1d8
-+  __AUTH_CONST.__cfstring: 0x29e40
-+  __AUTH_CONST.__objc_const: 0x6d248
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x52f8
-   __AUTH_CONST.__objc_arrayobj: 0x1d88
-
-   __AUTH_CONST.__objc_floatobj: 0x30
-   __AUTH_CONST.__objc_dictobj: 0x2d0
-   __AUTH_CONST.__auth_got: 0x2c68
--  __AUTH.__data: 0xf8
--  __DATA.__objc_ivar: 0x7748
--  __DATA.__data: 0x7c68
-+  __DATA.__objc_ivar: 0x7754
-+  __DATA.__data: 0x1c10
-   __DATA.__common: 0x55
-   __DATA_DIRTY.__objc_data: 0xcee0
--  __DATA_DIRTY.__data: 0x420
--  __DATA_DIRTY.__bss: 0xab0
-+  __DATA_DIRTY.__data: 0x6570
-+  __DATA_DIRTY.__bss: 0x4c0
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-
-   - /usr/lib/libspindump.dylib
-   - /usr/lib/libtailspin.dylib
-   - /usr/lib/libz.1.dylib
--  Functions: 35503
+-  Functions: 35504
 -  Symbols:   42030
 -  CStrings:  34121
-+  Functions: 35510
++  Functions: 35511
 +  Symbols:   42036
 +  CStrings:  34132
- 
 Symbols:
 + -[VCVideoStreamSendGroupConfig enableSyncGroupReferenceTimestamp]
 + -[VCVideoStreamSendGroupConfig setEnableSyncGroupReferenceTimestamp:]

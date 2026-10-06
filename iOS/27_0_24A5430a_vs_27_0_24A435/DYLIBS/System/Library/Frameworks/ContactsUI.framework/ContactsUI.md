@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/ContactsUI.framework/ContactsUI`
 
-```diff
+### Section Size Changes
 
- 1461.100.1.0.0
--  __TEXT.__text: 0x3853b4
-+  __TEXT.__text: 0x3853e4
-   __TEXT.__objc_methlist: 0x39594
-   __TEXT.__dlopen_cstrs: 0x183b
-   __TEXT.__const: 0xc470
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3853b4` | `0x3853e4` | **`+0x30`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_19fae6ef4 -> sub_19fbc6ef4 : 732 -> 728
 ~ sub_19fae9578 -> sub_19fbc9574 : 1132 -> 1120

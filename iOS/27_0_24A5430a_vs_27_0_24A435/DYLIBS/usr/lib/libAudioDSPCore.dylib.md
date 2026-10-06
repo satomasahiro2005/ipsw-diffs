@@ -2,21 +2,17 @@
 
 > `/usr/lib/libAudioDSPCore.dylib`
 
-```diff
+### Section Size Changes
 
- 881.117.20.0.0
--  __TEXT.__text: 0x51b64
--  __TEXT.__realtime: 0xde50
-+  __TEXT.__text: 0x51ba8
-+  __TEXT.__realtime: 0xdebc
-   __TEXT.__objc_methlist: 0x14
-   __TEXT.__const: 0x14048
-   __TEXT.__dlopen_cstrs: 0x5a
--  __TEXT.__gcc_except_tab: 0x5c48
-+  __TEXT.__gcc_except_tab: 0x5c50
-   __TEXT.__cstring: 0x276e
-   __TEXT.__oslogstring: 0x34b5
-   __TEXT.__unwind_info: 0x1dd0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__realtime` | `0xde50` | `0xdebc` | **`+0x6c`** |
+| `__TEXT.__text` | `0x51b64` | `0x51ba8` | **`+0x44`** |
+| `__TEXT.__gcc_except_tab` | `0x5c48` | `0x5c50` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN2IR16FFTSubFilterDataIfE9setFilterEPKfjfP17MultiRadixRealFFTNS_31FFTFilterOptimizationParametersE : 1040 -> 1044
 ~ __ZN2IR18FFTFilterTranspose14Implementation10initializeEjjjbjjbbb : 1724 -> 1728

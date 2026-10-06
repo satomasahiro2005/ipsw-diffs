@@ -2,137 +2,79 @@
 
 > `/System/Library/PrivateFrameworks/IDS.framework/identityservicesd.app/identityservicesd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__dlopen_cstrs`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_acfuncs`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xac9158` | `0xad13d4` | **`+0x827c`** |
+| `__TEXT.__oslogstring` | `0x8906d` | `0x8a081` | **`+0x1014`** |
+| `__DATA_CONST.__cfstring` | `0x366e0` | `0x37460` | **`+0xd80`** |
+| `__TEXT.__cstring` | `0x59e2e` | `0x5aa0e` | **`+0xbe0`** |
+| `__TEXT.__objc_methname` | `0x7be45` | `0x7c7b5` | **`+0x970`** |
+| `__DATA_CONST.__objc_intobj` | `0x1ad0` | `0x2358` | **`+0x888`** |
+| `__TEXT.__ustring` | `0x5ac` | `0xca0` | **`+0x6f4`** |
+| `__TEXT.__objc_stubs` | `0x4a380` | `0x4a900` | **`+0x580`** |
+| `__TEXT.__gcc_except_tab` | `0x243f8` | `0x2494c` | **`+0x554`** |
+| `__DATA.__objc_const` | `0x525f8` | `0x52968` | **`+0x370`** |
+| `__DATA_CONST.__objc_arraydata` | `0x5c8` | `0x888` | **`+0x2c0`** |
+| `__TEXT.__objc_methlist` | `0x2c53c` | `0x2c7c4` | **`+0x288`** |
+| `__DATA.__objc_selrefs` | `0x16e88` | `0x17078` | **`+0x1f0`** |
+| `__TEXT.__unwind_info` | `0x17110` | `0x17228` | **`+0x118`** |
+| `__DATA_CONST.__const` | `0x30f00` | `0x30ff0` | **`+0xf0`** |
+| `__TEXT.__swift5_reflstr` | `0x9175` | `0x91f9` | **`+0x84`** |
+| `__TEXT.__objc_methtype` | `0x143f9` | `0x14469` | **`+0x70`** |
+| `__DATA.__objc_data` | `0xf810` | `0xf878` | **`+0x68`** |
+| `__DATA.__data` | `0x16820` | `0x16870` | **`+0x50`** |
+| `__DATA.__objc_ivar` | `0x3510` | `0x3550` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x4618` | `0x4658` | **`+0x40`** |
+| `__TEXT.__auth_stubs` | `0x7770` | `0x77b0` | **`+0x40`** |
+| `__DATA_CONST.__objc_dictobj` | `0xa0` | `0xc8` | **`+0x28`** |
+| `__TEXT.__swift5_fieldmd` | `0x9a58` | `0x9a7c` | **`+0x24`** |
+| `__DATA.__bss` | `0x24ea0` | `0x24ec0` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0x3bc8` | `0x3be8` | **`+0x20`** |
+| `__DATA.__common` | `0xdf0` | `0xdd8` | **`-0x18`** |
+| `__DATA_CONST.__objc_arrayobj` | `0x348` | `0x360` | **`+0x18`** |
+| `__TEXT.__constg_swiftt` | `0x7fcc` | `0x7fe4` | **`+0x18`** |
+| `__TEXT.__objc_classname` | `0x8980` | `0x8997` | **`+0x17`** |
+| `__DATA_CONST.__objc_catlist` | `0x48` | `0x50` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x14c0` | `0x14c8` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0xbf8` | `0xc00` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0xa1f6` | `0xa1f2` | **`-0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_doubleobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_doubleobj`
-- `__DATA_CONST.__auth_ptr`
+- `__TEXT.__const`
+- `__TEXT.__dlopen_cstrs`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_acfuncs`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -2000.100.2.2.1
--  __TEXT.__text: 0xac9158
--  __TEXT.__auth_stubs: 0x7770
--  __TEXT.__objc_stubs: 0x4a380
--  __TEXT.__objc_methlist: 0x2c53c
 +2003.100.1.0.0
-+  __TEXT.__text: 0xad13d4
-+  __TEXT.__auth_stubs: 0x77b0
-+  __TEXT.__objc_stubs: 0x4a900
-+  __TEXT.__objc_methlist: 0x2c7c4
-   __TEXT.__const: 0x6e930
--  __TEXT.__gcc_except_tab: 0x243f8
--  __TEXT.__objc_methname: 0x7be45
--  __TEXT.__cstring: 0x59e2e
--  __TEXT.__oslogstring: 0x8906d
--  __TEXT.__objc_classname: 0x8980
--  __TEXT.__objc_methtype: 0x143f9
--  __TEXT.__ustring: 0x5ac
-+  __TEXT.__gcc_except_tab: 0x2494c
-+  __TEXT.__objc_classname: 0x8997
-+  __TEXT.__objc_methname: 0x7c7b5
-+  __TEXT.__objc_methtype: 0x14469
-+  __TEXT.__cstring: 0x5aa0e
-+  __TEXT.__oslogstring: 0x8a081
-+  __TEXT.__ustring: 0xca0
-   __TEXT.__dlopen_cstrs: 0xea
--  __TEXT.__swift5_typeref: 0xa1f6
--  __TEXT.__swift5_capture: 0x2198
--  __TEXT.__constg_swiftt: 0x7fcc
--  __TEXT.__swift5_reflstr: 0x9175
--  __TEXT.__swift5_fieldmd: 0x9a58
-+  __TEXT.__swift5_typeref: 0xa1f2
-+  __TEXT.__swift5_reflstr: 0x91f9
-   __TEXT.__swift5_assocty: 0x1a90
--  __TEXT.__swift5_protos: 0xa4
-+  __TEXT.__constg_swiftt: 0x7fe4
-+  __TEXT.__swift5_fieldmd: 0x9a7c
-   __TEXT.__swift5_proto: 0x1010
-   __TEXT.__swift5_types: 0x94c
-+  __TEXT.__swift5_capture: 0x2198
-+  __TEXT.__swift5_builtin: 0x230
-+  __TEXT.__swift5_mpenum: 0x80
-+  __TEXT.__swift5_protos: 0xa4
-   __TEXT.__swift_as_entry: 0x2e8
-   __TEXT.__swift_as_ret: 0x30c
-   __TEXT.__swift_as_cont: 0x4dc
-   __TEXT.__swift5_acfuncs: 0xc8
--  __TEXT.__swift5_builtin: 0x230
--  __TEXT.__swift5_mpenum: 0x80
--  __TEXT.__unwind_info: 0x17110
-+  __TEXT.__unwind_info: 0x17228
-   __TEXT.__eh_frame: 0x129e4
--  __DATA_CONST.__const: 0x30f00
--  __DATA_CONST.__cfstring: 0x366e0
--  __DATA_CONST.__objc_classlist: 0x14c0
--  __DATA_CONST.__objc_catlist: 0x48
-+  __DATA_CONST.__const: 0x30ff0
-+  __DATA_CONST.__cfstring: 0x37460
-+  __DATA_CONST.__objc_classlist: 0x14c8
-+  __DATA_CONST.__objc_catlist: 0x50
-   __DATA_CONST.__objc_protolist: 0x838
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x1a0
--  __DATA_CONST.__objc_superrefs: 0xbf8
--  __DATA_CONST.__objc_intobj: 0x1ad0
--  __DATA_CONST.__objc_arraydata: 0x5c8
--  __DATA_CONST.__objc_arrayobj: 0x348
--  __DATA_CONST.__objc_dictobj: 0xa0
-+  __DATA_CONST.__objc_superrefs: 0xc00
-+  __DATA_CONST.__objc_arraydata: 0x888
-+  __DATA_CONST.__objc_arrayobj: 0x360
-+  __DATA_CONST.__objc_intobj: 0x2358
-+  __DATA_CONST.__objc_dictobj: 0xc8
-   __DATA_CONST.__objc_doubleobj: 0x10
--  __DATA_CONST.__auth_got: 0x3bc8
--  __DATA_CONST.__got: 0x4618
-+  __DATA_CONST.__auth_got: 0x3be8
-+  __DATA_CONST.__got: 0x4658
-   __DATA_CONST.__auth_ptr: 0xf00
--  __DATA.__objc_const: 0x525f8
--  __DATA.__objc_selrefs: 0x16e88
--  __DATA.__objc_ivar: 0x3510
--  __DATA.__objc_data: 0xf810
--  __DATA.__data: 0x16820
-+  __DATA.__objc_const: 0x52968
-+  __DATA.__objc_selrefs: 0x17078
-+  __DATA.__objc_ivar: 0x3550
-+  __DATA.__objc_data: 0xf878
-+  __DATA.__data: 0x16870
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x24ea0
--  __DATA.__common: 0xdf0
-+  __DATA.__bss: 0x24ec0
-+  __DATA.__common: 0xdd8
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 32383
 -  Symbols:   2951
--  CStrings:  33047
+-  CStrings:  33048
 +  Functions: 32460
 +  Symbols:   2962
-+  CStrings:  33251
- 
++  CStrings:  33252
 Symbols:
 + _IDSMessageContextLocalTraceIdentifierKey
 + _IDSMessageTraceIDKey
@@ -151,6 +93,7 @@ CStrings:
 + "%s: %{bool}d"
 + "%s: Local delivery complete for materialID=%s, gc=%u"
 + "-[IDSDAccount(Registration) _unregisterAccount:]"
++ "09:44:29"
 + "<eja-redacted>"
 + "@\"IDSEnhancedJunkAnalysisController\""
 + "@\"IDSSOSLogger\""
@@ -160,6 +103,7 @@ CStrings:
 + "Adding vetted alias to aliases dictionary: %@ {service: %@, uniqueID: %@, addToCurrentHandlesIfNeeded: %{BOOL}d, forceAdd: %{BOOL}d, status: %ld}"
 + "Apple detected a message from a sender who may be trying to harm your iPhone or compromise your privacy. The most important step you can take to protect yourself and others from similar attacks is to share the message with Apple.\n\nSender: %@"
 + "Are you sure you don't want to share the message with Apple?"
++ "Aug  4 2026"
 + "Cached decision %@ for sender %@"
 + "Captured pending guid %@ (sender=%@, topic=%@, hasPlaintext=%@)"
 + "Deferring sentinel repair until account is authenticated {status: %d, account: %@}"
@@ -395,6 +339,7 @@ CStrings:
 - " => Auto adding vetted emails: %@ to URI set"
 - "%s: Local delivery complete for materialID=%s"
 - "-[IDSDAccount(Registration) _unregisterAccount]"
+- "22:11:10"
 - "Adding sentinel alias to existing account for repair {uniqueIdentifier: %@, account: %@}"
 - "Adding vetted alias to aliases dictionary: %@"
 - "Finished acks for GUID %@ success: %@ error: %@"
@@ -410,6 +355,7 @@ CStrings:
 - "GUID %{public}s finished token filtering"
 - "IDSGroupEncryptionControllerGroup[group=%s].receiveLocalMKM: SUCCESS - material %s for participant %s delivered to session"
 - "INCOMING-APS_DELIVERY:%@ SERVICE:%@"
+- "Jul 14 2026"
 - "Not re-selecting user-disabled alias on vetted refresh {alias: %@, reason: %ld}"
 - "OUTGOING-LOCAL_SEND:%@ SERVICE:%@"
 - "OUTGOING-PUSH_FULLY_SENT:%@ SERVICE:%@"

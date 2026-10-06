@@ -2,120 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/ProximityReaderDaemon.framework/ProximityReaderDaemon`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1f3e3c` | `0x1fee3c` | **`+0xb000`** |
+| `__DATA.__bss` | `0x11e30` | `0x12640` | **`+0x810`** |
+| `__TEXT.__eh_frame` | `0xe398` | `0xe920` | **`+0x588`** |
+| `__AUTH_CONST.__const` | `0xdad8` | `0xe058` | **`+0x580`** |
+| `__AUTH.__data` | `0x6358` | `0x5e40` | **`-0x518`** |
+| `__TEXT.__const` | `0xdbc4` | `0xdf54` | **`+0x390`** |
+| `__TEXT.__oslogstring` | `0xb8fb` | `0xbc7b` | **`+0x380`** |
+| `__TEXT.__constg_swiftt` | `0x55ec` | `0x530c` | **`-0x2e0`** |
+| `__AUTH_CONST.__objc_const` | `0x7d40` | `0x7ac0` | **`-0x280`** |
+| `__TEXT.__unwind_info` | `0x62a8` | `0x6490` | **`+0x1e8`** |
+| `__TEXT.__swift5_typeref` | `0x3bce` | `0x3db4` | **`+0x1e6`** |
+| `__TEXT.__swift5_capture` | `0x317c` | `0x3348` | **`+0x1cc`** |
+| `__TEXT.__swift5_reflstr` | `0x4c23` | `0x4d23` | **`+0x100`** |
+| `__TEXT.__swift5_assocty` | `0x538` | `0x628` | **`+0xf0`** |
+| `__DATA.__data` | `0x2118` | `0x21b8` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0x79e4` | `0x7a84` | **`+0xa0`** |
+| `__TEXT.__swift5_fieldmd` | `0x55fc` | `0x5684` | **`+0x88`** |
+| `__TEXT.__swift_as_cont` | `0xaf8` | `0xb6c` | **`+0x74`** |
+| `__AUTH_CONST.__auth_got` | `0x31f0` | `0x3248` | **`+0x58`** |
+| `__TEXT.__swift_as_ret` | `0x5b0` | `0x600` | **`+0x50`** |
+| `__DATA.__common` | `0x4e0` | `0x528` | **`+0x48`** |
+| `__TEXT.__swift_as_entry` | `0x558` | `0x590` | **`+0x38`** |
+| `__DATA_CONST.__objc_classlist` | `0x318` | `0x2e8` | **`-0x30`** |
+| `__DATA_DIRTY.__objc_data` | `0x5f8` | `0x628` | **`+0x30`** |
+| `__DATA_DIRTY.__bss` | `0x310` | `0x2e8` | **`-0x28`** |
+| `__TEXT.__swift5_proto` | `0x900` | `0x928` | **`+0x28`** |
+| `__TEXT.__objc_methlist` | `0xdf8` | `0xdd8` | **`-0x20`** |
+| `__DATA_DIRTY.__data` | `0x6e8` | `0x6f8` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x57c` | `0x56c` | **`-0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0xd98` | `0xda0` | **`+0x8`** |
+| `__DATA_DIRTY.__common` | `0x130` | `0x128` | **`-0x8`** |
+| `__TEXT.__swift5_protos` | `0x38` | `0x34` | **`-0x4`** |
+
+### Other Changes
 
 ```diff
 
 -150.30.1.0.0
--  __TEXT.__text: 0x1f3e3c
--  __TEXT.__objc_methlist: 0xdf8
--  __TEXT.__const: 0xdbc4
--  __TEXT.__swift5_typeref: 0x3bce
--  __TEXT.__oslogstring: 0xb8fb
--  __TEXT.__cstring: 0x79e4
--  __TEXT.__swift5_reflstr: 0x4c23
--  __TEXT.__swift5_assocty: 0x538
--  __TEXT.__constg_swiftt: 0x55ec
--  __TEXT.__swift5_fieldmd: 0x55fc
--  __TEXT.__swift5_proto: 0x900
--  __TEXT.__swift5_types: 0x57c
--  __TEXT.__swift5_capture: 0x317c
--  __TEXT.__swift_as_entry: 0x558
--  __TEXT.__swift_as_ret: 0x5b0
--  __TEXT.__swift_as_cont: 0xaf8
 +150.32.0.0.0
-+  __TEXT.__text: 0x1fee3c
-+  __TEXT.__objc_methlist: 0xdd8
-+  __TEXT.__const: 0xdf54
-+  __TEXT.__swift5_typeref: 0x3db4
-+  __TEXT.__oslogstring: 0xbc7b
-+  __TEXT.__cstring: 0x7a84
-+  __TEXT.__swift5_reflstr: 0x4d23
-+  __TEXT.__swift5_assocty: 0x628
-+  __TEXT.__constg_swiftt: 0x530c
-+  __TEXT.__swift5_fieldmd: 0x5684
-+  __TEXT.__swift5_proto: 0x928
-+  __TEXT.__swift5_types: 0x56c
-+  __TEXT.__swift5_capture: 0x3348
-+  __TEXT.__swift_as_entry: 0x590
-+  __TEXT.__swift_as_ret: 0x600
-+  __TEXT.__swift_as_cont: 0xb6c
-   __TEXT.__swift5_builtin: 0x190
-   __TEXT.__swift5_mpenum: 0x38
--  __TEXT.__swift5_protos: 0x38
--  __TEXT.__unwind_info: 0x62a8
--  __TEXT.__eh_frame: 0xe398
-+  __TEXT.__swift5_protos: 0x34
-+  __TEXT.__unwind_info: 0x6490
-+  __TEXT.__eh_frame: 0xe920
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x320
--  __DATA_CONST.__objc_classlist: 0x318
-+  __DATA_CONST.__objc_classlist: 0x2e8
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x1a0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xd98
-+  __DATA_CONST.__objc_selrefs: 0xda0
-   __DATA_CONST.__objc_protorefs: 0x118
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xdad8
--  __AUTH_CONST.__objc_const: 0x7d40
--  __AUTH_CONST.__auth_got: 0x31f0
-+  __AUTH_CONST.__const: 0xe058
-+  __AUTH_CONST.__objc_const: 0x7ac0
-+  __AUTH_CONST.__auth_got: 0x3248
-   __AUTH.__objc_data: 0x12b8
--  __AUTH.__data: 0x6358
--  __DATA.__data: 0x2118
--  __DATA.__common: 0x4e0
--  __DATA.__bss: 0x11e30
--  __DATA_DIRTY.__objc_data: 0x5f8
--  __DATA_DIRTY.__data: 0x6e8
--  __DATA_DIRTY.__common: 0x130
--  __DATA_DIRTY.__bss: 0x310
-+  __AUTH.__data: 0x5e40
-+  __DATA.__data: 0x21b8
-+  __DATA.__common: 0x528
-+  __DATA.__bss: 0x12640
-+  __DATA_DIRTY.__objc_data: 0x628
-+  __DATA_DIRTY.__data: 0x6f8
-+  __DATA_DIRTY.__common: 0x128
-+  __DATA_DIRTY.__bss: 0x2e8
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
-   - /System/Library/Frameworks/CoreData.framework/CoreData
 
-   - /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices
-   - /System/Library/PrivateFrameworks/SoftPosReader.framework/SoftPosReader
-   - /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices
 +  - /System/Library/PrivateFrameworks/WiFiPeerToPeer.framework/WiFiPeerToPeer
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6774
--  Symbols:   2821
+-  Symbols:   2481
 -  CStrings:  1602
 +  Functions: 6881
-+  Symbols:   2836
++  Symbols:   2495
 +  CStrings:  1618
- 
 Symbols:
 + _WiFiP2PErrorDomain
 + __DATA__TtC21ProximityReaderDaemon24EngagementPairingFlusher
@@ -135,8 +73,6 @@ Symbols:
 + _associated conformance 21ProximityReaderDaemon14TOSEnvironmentOs12CaseIterableAA8AllCasessADP_Sl
 + _associated conformance 21ProximityReaderDaemon14WCSEnvironmentOSHAASQ
 + _associated conformance 21ProximityReaderDaemon14WCSEnvironmentOs12CaseIterableAA8AllCasessADP_Sl
-+ _objc_msgSend$domain
-+ _objc_msgSend$setPower:error:
 + _swift_getTupleTypeLayout2
 + _symbolic SS10passphrase______5tokent 10Foundation4UUIDV
 + _symbolic SS10passphrase______5tokentSg 10Foundation4UUIDV
@@ -191,7 +127,6 @@ Symbols:
 - ___swift_memcpy4_1
 - _associated conformance 21ProximityReaderDaemon21EnvironmentDefinitionOSHAASQ
 - _associated conformance 21ProximityReaderDaemon21EnvironmentDefinitionOs12CaseIterableAA8AllCasessADP_Sl
-- _objc_msgSend$reconnectToPublisher
 - _swift_release_x11
 - _symbolic $s21ProximityReaderDaemon18EnvironmentContextP
 - _symbolic SS9brandName_SS7pinCodetSg

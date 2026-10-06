@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MLModelCache.framework/MLModelCache`
 
-```diff
+### Section Size Changes
 
- 3600.83.2.11.1
--  __TEXT.__text: 0x708c
-+  __TEXT.__text: 0x7090
-   __TEXT.__const: 0x470
-   __TEXT.__cstring: 0x405
-   __TEXT.__swift5_typeref: 0x110
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x708c` | `0x7090` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_28d1b008c -> sub_28defc08c : 288 -> 292
+~ sub_28d08408c -> sub_28ddc908c : 288 -> 292
 ```

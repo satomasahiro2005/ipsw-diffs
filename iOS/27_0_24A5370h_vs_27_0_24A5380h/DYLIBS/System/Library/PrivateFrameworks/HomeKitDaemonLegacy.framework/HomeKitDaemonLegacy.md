@@ -2,126 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/HomeKitDaemonLegacy.framework/HomeKitDaemonLegacy`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc239e0` | `0xc25554` | **`+0x1b74`** |
+| `__TEXT.__oslogstring` | `0x1e82a2` | `0x1e8de9` | **`+0xb47`** |
+| `__DATA_CONST.__got` | `0x6740` | `0x6eb0` | **`+0x770`** |
+| `__AUTH_CONST.__objc_const` | `0xd61c0` | `0xd5f28` | **`-0x298`** |
+| `__TEXT.__gcc_except_tab` | `0x23f78` | `0x23e4c` | **`-0x12c`** |
+| `__AUTH.__objc_data` | `0x12078` | `0x11f88` | **`-0xf0`** |
+| `__DATA.__data` | `0x11500` | `0x11498` | **`-0x68`** |
+| `__TEXT.__cstring` | `0x55538` | `0x5559b` | **`+0x63`** |
+| `__DATA_CONST.__const` | `0x156f8` | `0x15750` | **`+0x58`** |
+| `__DATA_CONST.__objc_selrefs` | `0x30680` | `0x306d0` | **`+0x50`** |
+| `__TEXT.__const` | `0x4694` | `0x464c` | **`-0x48`** |
+| `__TEXT.__unwind_info` | `0x1fc10` | `0x1fc50` | **`+0x40`** |
+| `__TEXT.__swift5_reflstr` | `0x1efa` | `0x1ec4` | **`-0x36`** |
+| `__TEXT.__swift5_typeref` | `0x259e` | `0x256c` | **`-0x32`** |
+| `__DATA_DIRTY.__data` | `0x940` | `0x910` | **`-0x30`** |
+| `__TEXT.__objc_methlist` | `0x75e44` | `0x75e74` | **`+0x30`** |
+| `__AUTH_CONST.__cfstring` | `0x4f060` | `0x4f080` | **`+0x20`** |
+| `__AUTH_CONST.__const` | `0xeec0` | `0xeee0` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x35a8` | `0x3590` | **`-0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x2bb0` | `0x2b98` | **`-0x18`** |
+| `__DATA.__objc_ivar` | `0x82cc` | `0x82b8` | **`-0x14`** |
+| `__TEXT.__eh_frame` | `0x1840` | `0x1830` | **`-0x10`** |
+| `__TEXT.__constg_swiftt` | `0x2508` | `0x24fc` | **`-0xc`** |
+| `__AUTH.__data` | `0x1558` | `0x1560` | **`+0x8`** |
+| `__AUTH_CONST.__auth_got` | `0x2678` | `0x2670` | **`-0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x16d8` | `0x16d0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xc239e0
--  __TEXT.__objc_methlist: 0x75e44
-+  __TEXT.__text: 0xc25554
-+  __TEXT.__objc_methlist: 0x75e74
-   __TEXT.__dlopen_cstrs: 0x130
--  __TEXT.__const: 0x4694
--  __TEXT.__cstring: 0x55538
--  __TEXT.__swift5_typeref: 0x259e
--  __TEXT.__constg_swiftt: 0x2508
--  __TEXT.__swift5_reflstr: 0x1efa
-+  __TEXT.__const: 0x464c
-+  __TEXT.__cstring: 0x5559b
-+  __TEXT.__swift5_typeref: 0x256c
-+  __TEXT.__constg_swiftt: 0x24fc
-+  __TEXT.__swift5_reflstr: 0x1ec4
-   __TEXT.__swift5_fieldmd: 0x18c8
-   __TEXT.__swift5_builtin: 0x118
-   __TEXT.__swift5_assocty: 0x168
--  __TEXT.__oslogstring: 0x1e82a2
-+  __TEXT.__oslogstring: 0x1e8de9
-   __TEXT.__swift5_proto: 0x170
-   __TEXT.__swift5_types: 0x19c
-   __TEXT.__swift5_capture: 0x8b0
+-1479.0.0.1.0
++1484.2.0.0.0
 
-   __TEXT.__swift_as_entry: 0xbc
-   __TEXT.__swift_as_cont: 0xe4
-   __TEXT.__swift_as_ret: 0x7c
--  __TEXT.__gcc_except_tab: 0x23f78
--  __TEXT.__unwind_info: 0x1fc10
--  __TEXT.__eh_frame: 0x1840
-+  __TEXT.__gcc_except_tab: 0x23e4c
-+  __TEXT.__unwind_info: 0x1fc50
-+  __TEXT.__eh_frame: 0x1830
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x156f8
--  __DATA_CONST.__objc_classlist: 0x35a8
-+  __DATA_CONST.__const: 0x15750
-+  __DATA_CONST.__objc_classlist: 0x3590
-   __DATA_CONST.__objc_catlist: 0x280
--  __DATA_CONST.__objc_protolist: 0x16d8
-+  __DATA_CONST.__objc_protolist: 0x16d0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x30680
-+  __DATA_CONST.__objc_selrefs: 0x306d0
-   __DATA_CONST.__objc_protorefs: 0x310
--  __DATA_CONST.__objc_superrefs: 0x2bb0
-+  __DATA_CONST.__objc_superrefs: 0x2b98
-   __DATA_CONST.__objc_arraydata: 0x28e0
--  __DATA_CONST.__got: 0x6740
--  __AUTH_CONST.__const: 0xeec0
--  __AUTH_CONST.__cfstring: 0x4f060
--  __AUTH_CONST.__objc_const: 0xd61c0
-+  __DATA_CONST.__got: 0x6eb0
-+  __AUTH_CONST.__const: 0xeee0
-+  __AUTH_CONST.__cfstring: 0x4f080
-+  __AUTH_CONST.__objc_const: 0xd5f28
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x8b8
-   __AUTH_CONST.__objc_intobj: 0x30c0
-   __AUTH_CONST.__objc_doubleobj: 0x170
-   __AUTH_CONST.__objc_dictobj: 0x1860
-   __AUTH_CONST.__objc_floatobj: 0x10
--  __AUTH_CONST.__auth_got: 0x2678
--  __AUTH.__objc_data: 0x12078
--  __AUTH.__data: 0x1558
--  __DATA.__objc_ivar: 0x82cc
--  __DATA.__data: 0x11500
-+  __AUTH_CONST.__auth_got: 0x2670
-+  __AUTH.__objc_data: 0x11f88
-+  __AUTH.__data: 0x1560
-+  __DATA.__objc_ivar: 0x82b8
-+  __DATA.__data: 0x11498
-   __DATA.__bss: 0x49a0
-   __DATA.__common: 0x48
-   __DATA_DIRTY.__objc_data: 0x10f18
--  __DATA_DIRTY.__data: 0x940
-+  __DATA_DIRTY.__data: 0x910
-   __DATA_DIRTY.__bss: 0xe50
-   __DATA_DIRTY.__common: 0x88
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 44168
--  Symbols:   144639
--  CStrings:  53239
+-  Symbols:   76372
+-  CStrings:  42932
 +  Functions: 44169
-+  Symbols:   144586
-+  CStrings:  53271
- 
-Sections:
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   76307
++  CStrings:  42963
 Symbols:
 + +[HMDAuthServer isMFiInvalidParameterError:]
 + +[HMDBulletinBoardNotification _deriveMessageTargetUUIDForService:]
@@ -2245,65 +2169,6 @@ Symbols:
 + _logCategory._hmf_once_v159
 + _logCategory._hmf_once_v241
 + _logCategory._hmf_once_v770
-+ _objc_msgSend$_attemptProductDataReevaluationForTransaction:
-+ _objc_msgSend$_completeNFCMFiTokenContext:withToken:error:
-+ _objc_msgSend$_deriveMessageTargetUUIDForService:
-+ _objc_msgSend$_finalizeSession
-+ _objc_msgSend$_handleReachabilityAddRemoveEvent:
-+ _objc_msgSend$_isNFCMFiTokenValidationFailure:
-+ _objc_msgSend$_loadMessageDispatcher:homeData:localDataDecryptionFailed:uncommittedTransactions:reloadData:
-+ _objc_msgSend$_mapMFiTokenErrorToHMError:
-+ _objc_msgSend$_markUnpairedAccessoryNotCertifiedForServer:
-+ _objc_msgSend$_pairingIdentityForConfiguration:
-+ _objc_msgSend$_processNFCTagInfos:
-+ _objc_msgSend$_promptUncertifiedForNFCMFiTokenServer:originalError:completion:
-+ _objc_msgSend$_retrieveMetadataOnController:homeHasResident:allowNonThreadCapableController:completion:
-+ _objc_msgSend$accessoryReportedNotCertified
-+ _objc_msgSend$armsCompleted
-+ _objc_msgSend$cleanStaleSnapshotDirectoriesUsingCurrentAccessories:fileManager:
-+ _objc_msgSend$configuredRetryCount
-+ _objc_msgSend$configuredRetryTimeInterval
-+ _objc_msgSend$consumeToken
-+ _objc_msgSend$contactGivenName
-+ _objc_msgSend$createAuthServerWithDelegate:retryCount:retryTimeInterval:
-+ _objc_msgSend$didFinalize
-+ _objc_msgSend$electRemoteGatewayForHomesAfterReachabilityChanges
-+ _objc_msgSend$firstNameForDisplay
-+ _objc_msgSend$fragmentHandler:didEndRecordingWithError:
-+ _objc_msgSend$fragmentHandler:didFinalizeWithError:
-+ _objc_msgSend$givenName
-+ _objc_msgSend$globalDestination
-+ _objc_msgSend$hh1EOLMinimumControllerHomeKitVersion
-+ _objc_msgSend$initWithDelegate:retryCount:retryTimeInterval:
-+ _objc_msgSend$initWithDevice:identifier:accountRegistry:featuresDataSource:
-+ _objc_msgSend$initWithModel:accountRegistry:featuresDataSource:
-+ _objc_msgSend$initWithName:homeManager:messageDispatcher:serverTokenAvailable:homeDataHasBeenDecrypted:homeManagerServerTokenAvailable:localDataDecryptionFailed:isKeychainSyncEnabled:totalHomes:currentAccount:
-+ _objc_msgSend$initWithPairingServer:deviceSetupServer:systemCommissionerPairingManager:authorizationServer:
-+ _objc_msgSend$initWithProxyService:
-+ _objc_msgSend$initWithSetupURLString:tagIdentifier:technology:ndefData:mfiToken:mfiTokenUUID:
-+ _objc_msgSend$initWithTarget:allowedMessages:appleAccountManager:keyStore:
-+ _objc_msgSend$isMFiInvalidParameterError:
-+ _objc_msgSend$isParallelValidateAndRoll
-+ _objc_msgSend$localizedCaseInsensitiveContainsString:
-+ _objc_msgSend$locationHandler
-+ _objc_msgSend$makeAccessorySetupManagerWithHomeManager:
-+ _objc_msgSend$makeCloudManagerDataSourceWithHomeManager:
-+ _objc_msgSend$makeHH1IDSInvitationManagerWithHomeManager:
-+ _objc_msgSend$makeMTSXPCServerWithAccessoryBrowser:accessorySetupManager:
-+ _objc_msgSend$nfcPPIDAuthServer
-+ _objc_msgSend$pendingProximityAssetInfo
-+ _objc_msgSend$placeholderDeviceControllerWithIdentifier:accountRegistry:
-+ _objc_msgSend$retrieveMetadata:homeHasResident:allowNonThreadCapableController:completion:
-+ _objc_msgSend$setAccessoryReportedNotCertified:
-+ _objc_msgSend$setArmsCompleted:
-+ _objc_msgSend$setDidFinalize:
-+ _objc_msgSend$setHh1EOLMinimumControllerHomeKitVersion:
-+ _objc_msgSend$setParallelValidateAndRoll:
-+ _objc_msgSend$setPendingProximityAssetInfo:
-+ _objc_msgSend$setPendingProximityAssetSessionKey:
-+ _objc_msgSend$startBusyImageResponseTimer:timeInterval:requestParams:queue:
-+ _objc_msgSend$takeSnapshotWithSessionUUID:characteristicEventUUID:isNotificationSnapshot:completion:
-+ _objc_msgSend$tapTimeActivateAuthServer
 + _symbolic _____ 19HomeKitDaemonLegacy11TokenBucketV12AvailabilityO
 + _symbolic _____ 19HomeKitDaemonLegacy21HMDTokenBucketStorage33_430E5180524A161C5CF6C2F0752E6D4FLLC
 + _symbolic _____y______G 19HomeKitDaemonLegacy11TokenBucketV12AvailabilityO s15ContinuousClockV
@@ -4492,45 +4357,6 @@ Symbols:
 - _logCategory._hmf_once_v112
 - _logCategory._hmf_once_v240
 - _logCategory._hmf_once_v740
-- _objc_msgSend$_handleReachabiltiyAddRemoveEvent:
-- _objc_msgSend$_initDiagnosticCounters
-- _objc_msgSend$_loadMessageDispatcher:accessoryBrowser:homeData:localDataDecryptionFailed:accountRegistry:uncommittedTransactions:reloadData:
-- _objc_msgSend$_retrieveMetadataOnController:homeHasResident:completion:
-- _objc_msgSend$_updateUserPushCachedForUser:device:
-- _objc_msgSend$_userPushCachedGetDeviceForUser:
-- _objc_msgSend$accessoryDiagnosticCounters
-- _objc_msgSend$accessoryDiagnosticEvents
-- _objc_msgSend$cleanStaleSnapshotDirectoriesUsingCurrentAccessories:
-- _objc_msgSend$clearMediaSystemHints:
-- _objc_msgSend$collectDiagnosticsForAccessory:
-- _objc_msgSend$collectMetric
-- _objc_msgSend$deltaCounters
-- _objc_msgSend$deviceControllerForDevice:
-- _objc_msgSend$diagnosticsMetric
-- _objc_msgSend$fragmentHandler:didEndWithError:
-- _objc_msgSend$hh1EOLMininumControllerHomeKitVersion
-- _objc_msgSend$initWithAccessory:diagnostics:
-- _objc_msgSend$initWithDevice:identifier:featuresDataSource:
-- _objc_msgSend$initWithModel:featuresDataSource:
-- _objc_msgSend$initWithName:homeManager:messageDispatcher:serverTokenAvailable:homeDataHasBeenDecrypted:homeManagerServerTokenAvailable:localDataDecryptionFailed:totalHomes:currentAccount:
-- _objc_msgSend$initWithPairingServer:deviceSetupServer:networkCredentialServer:authorizationServer:
-- _objc_msgSend$initWithTarget:allowedMessages:appleAccountManager:systemKeychainStore:
-- _objc_msgSend$metric
-- _objc_msgSend$placeholderDeviceControllerWithIdentifier:
-- _objc_msgSend$previousDiagnosticMetrics
-- _objc_msgSend$readPastDiagnosticEventsFromAccessory:fromEventNumber:
-- _objc_msgSend$resetAccessoryDiagnosticCounters
-- _objc_msgSend$resetThreadNetworkDiagnosticsCountForAccessory:
-- _objc_msgSend$resetWiFiNetworkDiagnosticsCountForAccessory:
-- _objc_msgSend$routableGlobalDestination
-- _objc_msgSend$routableGlobalHandles
-- _objc_msgSend$setHh1EOLMininumControllerHomeKitVersion:
-- _objc_msgSend$setPreviousDiagnosticMetrics:
-- _objc_msgSend$startBusyImageResponseTimer:timeInterval:endpoint:requestParams:queue:
-- _objc_msgSend$submitMetric:
-- _objc_msgSend$take
-- _objc_msgSend$takeSnapshot:
-- _objc_msgSend$userPushCacheMap
 - _swift_runtimeSupportsNoncopyableTypes
 - _swift_willThrowTypedImpl
 - _symbolic So14HMDTokenBucketC
@@ -4708,5 +4534,4 @@ CStrings:
 - "undefined"
 - "\xe1\xd1"
 - "\xf1"
-
 ```

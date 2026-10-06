@@ -2,55 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/CoreCDPInternal.framework/CoreCDPInternal`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8dbdc` | `0x8dda4` | **`+0x1c8`** |
+| `__TEXT.__cstring` | `0xe055` | `0xe0c5` | **`+0x70`** |
+| `__AUTH_CONST.__cfstring` | `0x94c0` | `0x9520` | **`+0x60`** |
+| `__TEXT.__oslogstring` | `0x14a5e` | `0x14a9e` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x10b8` | `0x10f0` | **`+0x38`** |
+| `__TEXT.__gcc_except_tab` | `0xb94` | `0xb68` | **`-0x2c`** |
+| `__TEXT.__unwind_info` | `0x1df8` | `0x1e10` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
 -445.0.0.0.0
--  __TEXT.__text: 0x8dbdc
 +447.0.0.0.0
-+  __TEXT.__text: 0x8dda4
-   __TEXT.__objc_methlist: 0x568c
-   __TEXT.__const: 0x888
--  __TEXT.__oslogstring: 0x14a5e
--  __TEXT.__cstring: 0xe055
--  __TEXT.__gcc_except_tab: 0xb94
-+  __TEXT.__oslogstring: 0x14a9e
-+  __TEXT.__cstring: 0xe0c5
-+  __TEXT.__gcc_except_tab: 0xb68
-   __TEXT.__dlopen_cstrs: 0xb0
-   __TEXT.__swift5_typeref: 0x3b7
-   __TEXT.__swift5_fieldmd: 0x80
 
-   __TEXT.__swift_as_entry: 0x60
-   __TEXT.__swift_as_ret: 0x58
-   __TEXT.__swift_as_cont: 0x68
--  __TEXT.__unwind_info: 0x1df8
-+  __TEXT.__unwind_info: 0x1e10
-   __TEXT.__eh_frame: 0x8f0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_protorefs: 0x50
-   __DATA_CONST.__objc_superrefs: 0x160
-   __DATA_CONST.__objc_arraydata: 0x220
--  __DATA_CONST.__got: 0x10b8
-+  __DATA_CONST.__got: 0x10f0
-   __AUTH_CONST.__const: 0xad0
--  __AUTH_CONST.__cfstring: 0x94c0
-+  __AUTH_CONST.__cfstring: 0x9520
-   __AUTH_CONST.__objc_const: 0x100b0
-   __AUTH_CONST.__objc_intobj: 0x180
-   __AUTH_CONST.__objc_arrayobj: 0xc0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3158
--  Symbols:   5791
+-  Symbols:   4146
 -  CStrings:  2806
 +  Functions: 3159
-+  Symbols:   5798
++  Symbols:   4153
 +  CStrings:  2809
- 
 Symbols:
 + _kAAAnalyticsEventRCOwnerCustodianCountMatch
 + _kAAAnalyticsEventRCOwnerEscapeOfferTapped

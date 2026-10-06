@@ -2,108 +2,60 @@
 
 > `/System/Library/PrivateFrameworks/CarPlayAssetUI.framework/CarPlayAssetUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x391018` | `0x39fc54` | **`+0xec3c`** |
+| `__TEXT.__const` | `0x767e4` | `0x78244` | **`+0x1a60`** |
+| `__DATA.__bss` | `0x80c60` | `0x81db0` | **`+0x1150`** |
+| `__AUTH_CONST.__const` | `0x295e0` | `0x29ae8` | **`+0x508`** |
+| `__TEXT.__eh_frame` | `0xf82c` | `0xfbb8` | **`+0x38c`** |
+| `__TEXT.__unwind_info` | `0xf7e8` | `0xfad8` | **`+0x2f0`** |
+| `__TEXT.__swift5_typeref` | `0x193c2` | `0x19680` | **`+0x2be`** |
+| `__DATA.__data` | `0x12d48` | `0x12f60` | **`+0x218`** |
+| `__TEXT.__constg_swiftt` | `0xc324` | `0xc4c4` | **`+0x1a0`** |
+| `__TEXT.__swift5_reflstr` | `0x9cef` | `0x9e6f` | **`+0x180`** |
+| `__TEXT.__swift5_fieldmd` | `0xf5f8` | `0xf764` | **`+0x16c`** |
+| `__TEXT.__oslogstring` | `0x167f` | `0x17df` | **`+0x160`** |
+| `__AUTH.__data` | `0x4b60` | `0x4c50` | **`+0xf0`** |
+| `__TEXT.__cstring` | `0x71d7` | `0x72b7` | **`+0xe0`** |
+| `__AUTH_CONST.__objc_const` | `0x32d8` | `0x3368` | **`+0x90`** |
+| `__TEXT.__swift5_proto` | `0x420c` | `0x4294` | **`+0x88`** |
+| `__TEXT.__swift5_capture` | `0x2898` | `0x2908` | **`+0x70`** |
+| `__AUTH.__objc_data` | `0xb20` | `0xb70` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x2770` | `0x27b8` | **`+0x48`** |
+| `__DATA_CONST.__got` | `0x1190` | `0x11c8` | **`+0x38`** |
+| `__DATA_CONST.__const` | `0x13f8` | `0x13c8` | **`-0x30`** |
+| `__TEXT.__swift5_types` | `0x1108` | `0x1130` | **`+0x28`** |
+| `__TEXT.__swift5_assocty` | `0x2410` | `0x2428` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x424` | `0x438` | **`+0x14`** |
+| `__TEXT.__swift5_mpenum` | `0x838` | `0x84c` | **`+0x14`** |
+| `__TEXT.__swift_as_cont` | `0x104` | `0x118` | **`+0x14`** |
+| `__DATA.__common` | `0x480` | `0x470` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0xf8` | `0x100` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x6c` | `0x70` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x50` | `0x54` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -487.1.0.0.0
--  __TEXT.__text: 0x391018 sha256:179c2f7f68a61dc8bd53ee73183b371fc3dab08204850cdd51992e55d057a31b
--  __TEXT.__objc_methlist: 0x1504 sha256:74e6b8bf7fcd56430ea1f0bd162738e532a25de0d685439cf1bd42d3f7ced65e
--  __TEXT.__const: 0x767e4 sha256:99a79a370f1eb67fd61a320e27f177be077d906ae68d04499d587c470da35c38
--  __TEXT.__cstring: 0x71d7 sha256:a4e7c211cae05e2a740a876fb20c981a70138d7c3815f0dd121c730104673d23
--  __TEXT.__swift5_typeref: 0x193c2 sha256:cd215f9839cacfb5e94bdcf770fda34fc0362af69591a0710b4f0f6b13cb9833
--  __TEXT.__swift5_reflstr: 0x9cef sha256:1d5c702200a8c671030479b76f43e372a9bffa7934265801080ae7d88867e162
--  __TEXT.__swift5_assocty: 0x2410 sha256:5ea9271ec5d6bd1f67e54b57625fff63641a1ce3ef55165db07568d5df597707
--  __TEXT.__constg_swiftt: 0xc324 sha256:2855bf51585adc526f90d8096c7464947113b2ccade99be62ccf3833cc4e00ef
--  __TEXT.__swift5_fieldmd: 0xf5f8 sha256:aa301d988bad12ef42b5aaabb86d550dedd9b41b24f649c5acbe59d87575c050
--  __TEXT.__swift5_builtin: 0x424 sha256:b4dacd3b5127a9bc66cf05811b979032c12310e6b7d5196fe16d96fe9c83be1d
--  __TEXT.__swift5_proto: 0x420c sha256:ce955293c8923b9098df8f6be6f81a82d198b4f3dadfe10d87efc233f8758451
--  __TEXT.__swift5_types: 0x1108 sha256:4aa73ec0ca2196fc02739ca6a47c6b8d0c3c15e7381ba0ef0eb632ee31d0bc86
--  __TEXT.__swift5_capture: 0x2898 sha256:801f08cdb6f4913b81ce7d278aacb1dc189c211f6842ea6f53fe92d4113239b3
--  __TEXT.__oslogstring: 0x167f sha256:a9577daa8bdde755f4dc37e7430ec0e308d56c326204bf5c45b9c8bdcc52c651
--  __TEXT.__swift_as_entry: 0x6c sha256:323097a71652024cf52f225dc67d6be89cb85083c1a87155568441323825bfb8
--  __TEXT.__swift_as_ret: 0x50 sha256:0da14bc0bc0c0ada7d41c89ed01b57117f1ee4acd03100471f376befa55986d6
--  __TEXT.__swift_as_cont: 0x104 sha256:15087bd2995a49203ff3fc63beabd9fc0598b51203ec8e23237226f602472819
--  __TEXT.__swift5_mpenum: 0x838 sha256:decfc3b4c69d85e6ed588f3e7335db30b79e15954ca904edcd14b3eef17bd248
--  __TEXT.__swift5_protos: 0x70 sha256:1ca9382b0f25d1d8f37941b03cd65f9c95f3756ef768e196c96eb2022aed574e
--  __TEXT.__unwind_info: 0xf7e8 sha256:fc6601503f773e953737776dc4d55000373ec7d7477ffc2ef2ba5f9a2c9a3d7a
--  __TEXT.__eh_frame: 0xf82c sha256:f4d8444fa19ffb273f8ac95ac63707490e4422176109cf3e8333c4e2075bbbe4
 +490.4.0.0.0
-+  __TEXT.__text: 0x39fc54 sha256:0fc36bb7db5e5630c9f93ef7b42bb0f3fc4d4af14c650c8cbf0f2ab54de607a5
-+  __TEXT.__objc_methlist: 0x1504 sha256:69746a3f964a656e0a1af942f229eacb58dcaca3480e14355978a99aad1eb7a2
-+  __TEXT.__const: 0x78244 sha256:c2ad6794c1d188e40137619043b8b50ff13b1f0f9d2fd714498364a6b099689a
-+  __TEXT.__cstring: 0x72b7 sha256:afccbe4f656c032aa8afe634ea9c2677fe6f87f20fffce05566979fc4ea90945
-+  __TEXT.__swift5_typeref: 0x19680 sha256:6f6400eb6b42c3def349bc89440904a85c38113a1379d212553ead4b793f5873
-+  __TEXT.__swift5_reflstr: 0x9e6f sha256:42f8d2f6c0089bae3b2b0c9f25f3083bb70368b8cef034ac7162ac7c69ffa882
-+  __TEXT.__swift5_assocty: 0x2428 sha256:e361f5f559f3626764df94bc87cf1cdc32e5e5f50ce753513875c208d7d14b19
-+  __TEXT.__constg_swiftt: 0xc4c4 sha256:ecce1b53675c515fce23d052738edce381f204df19a8124d25c27afafa9e4ff0
-+  __TEXT.__swift5_fieldmd: 0xf764 sha256:0c510595fe644a5411fb1e6f6f353f27f3f42f141fd31afe7ac02e38463115a3
-+  __TEXT.__swift5_builtin: 0x438 sha256:273734dfc5de8f16eb3bf9f4cd7d8823fc27032e65f36d76ed9fb89127cbd0b7
-+  __TEXT.__swift5_proto: 0x4294 sha256:46a01637c1818d3e2d552d972ae71913984337d34a5d7117c0f937ddf85275e8
-+  __TEXT.__swift5_types: 0x1130 sha256:4b8cbcda5a12c4e55ee3bebf30cc3669fbd33ab9ef5d9266ccb12b68be4a3494
-+  __TEXT.__swift5_capture: 0x2908 sha256:d84e749f0809fcd5b42b029bc8a81d1f155e296a38c3efd9789dda08d605606f
-+  __TEXT.__swift5_mpenum: 0x84c sha256:3c88f8f92dd34e451b41a635aa363b324219fd05adf035cf94f7bd8d8d09fa25
-+  __TEXT.__oslogstring: 0x17df sha256:66dd2e390c2bc1b1188248cb9f1d9a19cc0bbf47eaa6f394528ce8b7bda1f110
-+  __TEXT.__swift5_protos: 0x70 sha256:fd37e904ce2a6f5cacc5baed2caa4c75ed84563efa71fdb3ec3de1f2e25e7552
-+  __TEXT.__swift_as_entry: 0x70 sha256:5ce98777c3b93cb91dd60d3dfe41fa99ca340465b6f320661a9ebc9f5390fed3
-+  __TEXT.__swift_as_ret: 0x54 sha256:bcd0cd7423bec588f3d9226132cea5b08ae34be913cb15a7b374bb4ac9db94dd
-+  __TEXT.__swift_as_cont: 0x118 sha256:67bd38c1ba1535240c713c3fdbacc165571953ff383e796fdc8f6e31d49fd1d4
-+  __TEXT.__unwind_info: 0xfad8 sha256:b924a330c92f7701ba29d6939cf4aea90f8579b15ba654227b9b541e466e9231
-+  __TEXT.__eh_frame: 0xfbb8 sha256:1593ac499130512ec29c2564f98d93b3b52394417ebd933b574b6964a7ebe8e1
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x13f8 sha256:caa5f7a5137124b5c9f65bfcdcb4af722afcb57227f52abc4ca5abc98f69a4b3
--  __DATA_CONST.__objc_classlist: 0xf8 sha256:593a679c809d1644d450f55b908a5925cb851d3952c94e4957e20daef2b5b04a
--  __DATA_CONST.__objc_protolist: 0x1c0 sha256:0b4ee1d46fbf24ca067ac332b2139d0ffc5f666d66fdd590d0982f8398f469e7
-+  __DATA_CONST.__const: 0x13c8 sha256:411699addbc7b73f6d9a0382903ce2e0d53644e5cff92ef640f4abd720e86105
-+  __DATA_CONST.__objc_classlist: 0x100 sha256:ed83ebf43543fdf87d0a5cee1c93c258348af7c0530c31f8eeaf48cb11b06906
-+  __DATA_CONST.__objc_protolist: 0x1c0 sha256:46eed18cad7a5e7ef4d958cf1bd2331f2af1cecb65deca7e7f97373ea23c560d
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0x12e8 sha256:369f7c49392cd67d3a96d23026f0571655987e0686fd544f25abd295fc0ff9da
--  __DATA_CONST.__objc_protorefs: 0xe0 sha256:5d96f224df32e37dd59a6808078a19b27d10f22f81c5335335f46ed4d4798607
--  __DATA_CONST.__got: 0x1190 sha256:7da8cc47dac7b7568c6dd82781b86b61fcc5f43b5c7e5e1da9500080becc52d8
--  __AUTH_CONST.__const: 0x295e0 sha256:5cc699ef0299ed7fd780d5baf759b1fbd6b1df7ee9cdca6e51a56ffeba6b9df9
--  __AUTH_CONST.__objc_const: 0x32d8 sha256:b1b330fdb3f78896f8d174feae52ee451c16d8b7effb9830c569619fc5639be3
--  __AUTH_CONST.__auth_got: 0x2770 sha256:808d6f0ae9a4244881b9a3cd3c4574cf5967c63495a72430d0927bf71ffb4744
--  __AUTH.__objc_data: 0xb20 sha256:22cf332f8a2733c5ed56f2420a041e0caaa8ba2b57f5b7c3578a5d9e0f342870
--  __AUTH.__data: 0x4b60 sha256:a925c06c52d0fd45c1d281e58c57836c5228cac603266a82682df2449753f3c8
--  __DATA.__data: 0x12d48 sha256:d207bdc1878729a589f7558955a3c7877bdf801f8888a51a34a0b7ac2abeca43
--  __DATA.__bss: 0x80c60 sha256:284511b81bced7dfafee0d37579a8cbb7c7a5a6556639f44086865bf421a0651
--  __DATA.__common: 0x480 sha256:4cf9816ed1062189ff0c8d427fba5e912cc68fc9af76cf7f08fd255977de3b33
-+  __DATA_CONST.__objc_selrefs: 0x12e8 sha256:48db40351470bd523c2ec3709d79a4b699c9ed4a4d94e985798d250ee9ae01c3
-+  __DATA_CONST.__objc_protorefs: 0xe0 sha256:f3e537071e7635fe15f70ce6f9e3cd1044aa53a65bce652e16ee7132e16a674f
-+  __DATA_CONST.__got: 0x11c8 sha256:0048781758cba452f3ff498fcafbd87b0a086cadc2e1ff0ec6a24d93e13b5c69
-+  __AUTH_CONST.__const: 0x29ae8 sha256:184c418c5bfea8fa9557c877f3a92dfcac4c5406e8693c6e30f2cde786769ef4
-+  __AUTH_CONST.__objc_const: 0x3368 sha256:7c3ce0e416c2e3531c4f8ee9d649a06b0c92284c778390de7cc2123225a2e252
-+  __AUTH_CONST.__auth_got: 0x27b8 sha256:da6717855b6ffc5183c801eca4bd2a54ae98ab65a486f03242ad69df6869a7ec
-+  __AUTH.__objc_data: 0xb70 sha256:474eb6214c30de517c7ed406d2746984ea438001eacfeb545dd5fb7242d51cca
-+  __AUTH.__data: 0x4c50 sha256:fbe6eb9d1eddac790646c633eec5722084aac075dfde2c76b1d123f6d86a757d
-+  __DATA.__data: 0x12f60 sha256:ac111a51645a727f33a23928cc6a4cd0c9a68e2bb829d1ab1e70b23fdb0d82c4
-+  __DATA.__bss: 0x81db0 sha256:af72e80f6012615e14018e4e147b3a69f9fb527165b896d3534124d2784b408c
-+  __DATA.__common: 0x470 sha256:5f44843643c39747e4270a8a9324e5bf95f72ad9685b54ab9694f2704a381543
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: DD546385-AFE6-3F6D-9428-5166F501BE11
 -  Functions: 25612
--  Symbols:   95118
+-  Symbols:   69250
 -  CStrings:  1061
-+  UUID: 88E83147-D6A6-324D-B04C-B7FCACDFF505
 +  Functions: 25772
-+  Symbols:   95790
++  Symbols:   69737
 +  CStrings:  1070
- 
 Symbols:
 + _$s14CarPlayAssetUI0C0_pWOcTm
 + _$s14CarPlayAssetUI0C9Container_pSgWOhTm
 + _$s14CarPlayAssetUI10ArcPackageV10identifier17iOSContentVersion7version17minimumSDKVersion9buildType12vehicleTypes9partnerID8displays21driveModeDisplayNames0tU15LinkedByDefault0tU30DynamicAssignmentConfiguration024overrideMinCompatibilityI0ACSS_SSSuSSAC05BuildN0OSayAA07VehicleN0OGSSSayAA0V0VGSDyAA11TaggedValueVyAA05DriveU3TagOSSGSSGSbAA05DriveU30DynamicAssignmentConfigurationVSgSiSgtcfC
 + _$s14CarPlayAssetUI10ArcPackageV39driveModeDynamicAssignmentConfigurationAA05DrivehijK0VSgvM
-+ _$s14CarPlayAssetUI10ArcPackageV39driveModeDynamicAssignmentConfigurationAA05DrivehijK0VSgvM.resume.0
++ _$s14CarPlayAssetUI10ArcPackageV39driveModeDynamicAssignmentConfigurationAA05DrivehijK0VSgvM.resume
 + _$s14CarPlayAssetUI10ArcPackageV39driveModeDynamicAssignmentConfigurationAA05DrivehijK0VSgvg
 + _$s14CarPlayAssetUI10ArcPackageV39driveModeDynamicAssignmentConfigurationAA05DrivehijK0VSgvpMV
 + _$s14CarPlayAssetUI10ArcPackageV39driveModeDynamicAssignmentConfigurationAA05DrivehijK0VSgvs
@@ -129,7 +81,7 @@ Symbols:
 + _$s14CarPlayAssetUI14DocumentWriterC5write_03oldE0yAA03ArcE0V_AGSgtYaKFTY15_
 + _$s14CarPlayAssetUI14SystemUILayoutV18primaryContentArea09secondaryhI016hasDualStatusBar04dualmN17SecondaryMaterial0K19PhysicalControlBars0k3TopmN028structuredPersistentElements0K12ExtendedDock12cornerRadius15backgroundColor03topmN6Insets014priorityAppsInZ0019keepsPriorityAppsInZ0015showsAppLinksInZ0A2C0hI0V_ASSgSbSuSgS2bAA0wX0VSgSb12CoreGraphics7CGFloatVAA22DynamicAppearanceValueVy05SwiftD05ColorVGSgA2_10EdgeInsetsVSgSayAA10InstrumentV13AppWidgetInfoVGSgS2btcfC
 + _$s14CarPlayAssetUI14SystemUILayoutV19showsAppLinksInDockSbvM
-+ _$s14CarPlayAssetUI14SystemUILayoutV19showsAppLinksInDockSbvM.resume.0
++ _$s14CarPlayAssetUI14SystemUILayoutV19showsAppLinksInDockSbvM.resume
 + _$s14CarPlayAssetUI14SystemUILayoutV19showsAppLinksInDockSbvg
 + _$s14CarPlayAssetUI14SystemUILayoutV19showsAppLinksInDockSbvpMV
 + _$s14CarPlayAssetUI14SystemUILayoutV19showsAppLinksInDockSbvs
@@ -157,7 +109,7 @@ Symbols:
 + _$s14CarPlayAssetUI18AppearanceOverrideC11Observation10ObservableAAMc
 + _$s14CarPlayAssetUI18AppearanceOverrideC11Observation10ObservableAAMcMK
 + _$s14CarPlayAssetUI18AppearanceOverrideC11colorScheme05SwiftD005ColorH0OSgvM
-+ _$s14CarPlayAssetUI18AppearanceOverrideC11colorScheme05SwiftD005ColorH0OSgvM.resume.0
++ _$s14CarPlayAssetUI18AppearanceOverrideC11colorScheme05SwiftD005ColorH0OSgvM.resume
 + _$s14CarPlayAssetUI18AppearanceOverrideC11colorScheme05SwiftD005ColorH0OSgvg
 + _$s14CarPlayAssetUI18AppearanceOverrideC11colorScheme05SwiftD005ColorH0OSgvi
 + _$s14CarPlayAssetUI18AppearanceOverrideC11colorScheme05SwiftD005ColorH0OSgvpACTK
@@ -349,7 +301,7 @@ Symbols:
 + _$s14CarPlayAssetUI27overridesOriginalsCodingKeySSvau
 + _$s14CarPlayAssetUI27overridesOriginalsCodingKeySSvp
 + _$s14CarPlayAssetUI35DriveModeDynamicLayoutConfigurationV05fixedh3ForE5ModesSayShyAA11TaggedValueVyAA0eF3TagOSSGGGvM
-+ _$s14CarPlayAssetUI35DriveModeDynamicLayoutConfigurationV05fixedh3ForE5ModesSayShyAA11TaggedValueVyAA0eF3TagOSSGGGvM.resume.0
++ _$s14CarPlayAssetUI35DriveModeDynamicLayoutConfigurationV05fixedh3ForE5ModesSayShyAA11TaggedValueVyAA0eF3TagOSSGGGvM.resume
 + _$s14CarPlayAssetUI35DriveModeDynamicLayoutConfigurationV05fixedh3ForE5ModesSayShyAA11TaggedValueVyAA0eF3TagOSSGGGvg
 + _$s14CarPlayAssetUI35DriveModeDynamicLayoutConfigurationV05fixedh3ForE5ModesSayShyAA11TaggedValueVyAA0eF3TagOSSGGGvpMV
 + _$s14CarPlayAssetUI35DriveModeDynamicLayoutConfigurationV05fixedh3ForE5ModesSayShyAA11TaggedValueVyAA0eF3TagOSSGGGvs
@@ -423,7 +375,7 @@ Symbols:
 + _$s14CarPlayAssetUI35DriveModeDynamicLayoutConfigurationVwst
 + _$s14CarPlayAssetUI35DriveModeDynamicLayoutConfigurationVwstTm
 + _$s14CarPlayAssetUI37DigiBandGradientProgressConfigurationV03minH5AlphaSfSgvM
-+ _$s14CarPlayAssetUI37DigiBandGradientProgressConfigurationV03minH5AlphaSfSgvM.resume.0
++ _$s14CarPlayAssetUI37DigiBandGradientProgressConfigurationV03minH5AlphaSfSgvM.resume
 + _$s14CarPlayAssetUI37DigiBandGradientProgressConfigurationV03minH5AlphaSfSgvg
 + _$s14CarPlayAssetUI37DigiBandGradientProgressConfigurationV03minH5AlphaSfSgvpMV
 + _$s14CarPlayAssetUI37DigiBandGradientProgressConfigurationV03minH5AlphaSfSgvs
@@ -431,7 +383,7 @@ Symbols:
 + _$s14CarPlayAssetUI37DigiBandGradientProgressConfigurationV10CodingKeys33_533AE48F41F67ECFFB15BD5957C1E5D7LLOwetTm
 + _$s14CarPlayAssetUI37DigiBandGradientProgressConfigurationV10CodingKeys33_533AE48F41F67ECFFB15BD5957C1E5D7LLOwstTm
 + _$s14CarPlayAssetUI37DigiBandGradientProgressConfigurationV15fixedStopOffsetSfSgvM
-+ _$s14CarPlayAssetUI37DigiBandGradientProgressConfigurationV15fixedStopOffsetSfSgvM.resume.0
++ _$s14CarPlayAssetUI37DigiBandGradientProgressConfigurationV15fixedStopOffsetSfSgvM.resume
 + _$s14CarPlayAssetUI37DigiBandGradientProgressConfigurationV15fixedStopOffsetSfSgvg
 + _$s14CarPlayAssetUI37DigiBandGradientProgressConfigurationV15fixedStopOffsetSfSgvpMV
 + _$s14CarPlayAssetUI37DigiBandGradientProgressConfigurationV15fixedStopOffsetSfSgvs
@@ -525,10 +477,6 @@ Symbols:
 + _$s14CarPlayAssetUI8ColorSetV2id14appearanceType6color16color26color36color46color56color66color76color819activeCruiseControl11speedAssist08inactivesT08lowState08criticalY07redline25homologatedSecondaryLabel16regenActiveTrack011representedE6Scheme9sortIndex06accentE09prominent018backgroundOverrideE0AcA11TaggedValueVyACSSG_AA010AppearanceI0OAC0e5ShadeI0OA5_A5_A5_A5_A5_A5_A5_A5_A5_A5_A5_A5_A5_A5_A5_SgAA5ThemeO7PaletteV011RepresentedE6SchemeOSiAA22DynamicAppearanceValueVy05SwiftD00E0VGSgSbA17_SgtcfC
 + _$s14CarPlayAssetUI8WrapViewV04makeF0xycvpSo6UIViewCRbzlACyxGTKTm
 + _$s14CarPlayAssetUI8WrapViewV6updateyyx_05SwiftD026UIViewRepresentableContextVyACyxGGtcvpSo0I0CRbzlAHTKTm
-+ _$s14CarPlayAssetUI9ComponentVIegn_ACytIegnr_TRTA.132
-+ _$s14CarPlayAssetUI9ComponentVytIegnr_ACIegn_TRTA.128
-+ _$s14CarPlayAssetUI9DeckModelC15activeComponentAA0H0VSgvsyyXEfU_TA.107
-+ _$s14CarPlayAssetUI9DeckModelC16needsStateUpdate33_B86D1D9AB748BF6B3CDAEE8B861A877BLLSbvsyyXEfU_TA.108
 + _$s14CarPlayAssetUI9JSONValueO2eeoiySbAC_ACtFZ
 + _$s14CarPlayAssetUI9JSONValueO2eeoiySbAC_ACtFZTf4nnd_n
 + _$s14CarPlayAssetUI9JSONValueO4boolyACSbcACmFWC
@@ -580,7 +528,7 @@ Symbols:
 + _$s14CarPlayAssetUI9JSONValueOwup
 + _$s14CarPlayAssetUI9OverridesV6assetsSayAA0C0_pGvgAA7DisplayV_TB5Tm
 + _$s14CarPlayAssetUI9OverridesV9originalsSDySSAA9JSONValueOGvM
-+ _$s14CarPlayAssetUI9OverridesV9originalsSDySSAA9JSONValueOGvM.resume.0
++ _$s14CarPlayAssetUI9OverridesV9originalsSDySSAA9JSONValueOGvM.resume
 + _$s14CarPlayAssetUI9OverridesV9originalsSDySSAA9JSONValueOGvg
 + _$s14CarPlayAssetUI9OverridesV9originalsSDySSAA9JSONValueOGvpMV
 + _$s14CarPlayAssetUI9OverridesV9originalsSDySSAA9JSONValueOGvs
@@ -632,7 +580,6 @@ Symbols:
 + _$s7SwiftUI8BindableVy012CarPlayAssetB018AppearanceOverrideCGML
 + _$s7SwiftUI8BindableVy012CarPlayAssetB018AppearanceOverrideCGMR
 + _$s7SwiftUI8BindableVy012CarPlayAssetB018AppearanceOverrideCGMd
-+ _$sIeg_ytIegr_TRTA.148
 + _$sSD17dictionaryLiteralSDyxq_Gx_q_td_tcfC14CarPlayAssetUI11TaggedValueVyAC12DriveModeTagOSSG_AEyAC6LayoutVSSGTt0g5Tf4g_n
 + _$sSD17dictionaryLiteralSDyxq_Gx_q_td_tcfCSS_14CarPlayAssetUI9JSONValueOTt0g5Tf4g_n
 + _$sSD17dictionaryLiteralSDyxq_Gx_q_td_tcfCSo29UIFontDescriptorAttributeNamea_ypTt0g5Tf4g_nTm
@@ -759,22 +706,11 @@ Symbols:
 + _$ss5Int64VMn
 + _$ss5SliceVy14CarPlayAssetUI18WidgetStackRowInfoVGWOc
 + _$ss5SliceVy14CarPlayAssetUI18WidgetStackRowInfoVGWOh
-+ _$sytIegr_Ieg_TRTA.144
 + _OBJC_CLASS_$_NSNull
 + __DATA__TtC14CarPlayAssetUI18AppearanceOverride
 + __IVARS__TtC14CarPlayAssetUI18AppearanceOverride
 + __METACLASS_DATA__TtC14CarPlayAssetUI18AppearanceOverride
-+ ___swift__destructor.12
-+ ___swift__destructor.8
 + ___swift_assign_boxed_opaque_existential_0
-+ ___swift_closure_destructor.119
-+ ___swift_closure_destructor.130
-+ ___swift_closure_destructor.135
-+ ___swift_closure_destructor.138
-+ ___swift_closure_destructor.142
-+ ___swift_closure_destructor.146
-+ ___swift_closure_destructor.67
-+ ___swift_closure_destructor.76
 + ___swift_closure_destructor.76Tm
 + ___swift_memcpy184_8
 + ___swift_memcpy296_8
@@ -809,12 +745,8 @@ Symbols:
 + _get_enum_tag_for_layout_string 14CarPlayAssetUI9OverridesVyAA4ZoneVGSg
 + _get_enum_tag_for_layout_string 14CarPlayAssetUI9OverridesVyAA7DisplayVGSg
 + _get_enum_tag_for_layout_string 14CarPlayAssetUI9OverridesVyAA9ComponentVGSg
-+ _get_witness_table 14CarPlayAssetUI17ResolvablePaddingRzl05SwiftD019_ConditionalContentVyAC08ModifiedI0VyAC014_ViewModifier_I0VyAA011DirectionalfL033_7B51074619E88F9A5374CB07EC116614LLVyxGGAC01_F6LayoutVGANGAC0K0HPAqcSHPAncSHPyHC_ApC0kL0HPyHCHC_AncSHPyHCHC.95
-+ _get_witness_table 7SwiftUI4ViewRz012CarPlayAssetB017ResolvablePaddingRd__r__lAA15ModifiedContentVyxAC011DirectionalH8Modifier33_7B51074619E88F9A5374CB07EC116614LLVyqd__GGAaBHPxAaBHD1__AjA0cL0HPyHCHC.48
-+ _get_witness_table 7SwiftUI4ViewRzSQRd__r__lAA15ModifiedContentVyx012CarPlayAssetB015TaskConditionalVyqd__GGAaBHPxAaBHD1__AhA0C8ModifierHPyHCHC.47
-+ _get_witness_table 7SwiftUI8AnyShapeVAA0D0HPyHC.22
-+ _get_witness_table SQRzl7SwiftUI19_ConditionalContentVyAA08ModifiedD0VyAA014_ViewModifier_D0Vy012CarPlayAssetB004TaskC0VyxGGAKGAA0F0PAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAL_xQo_GAaNHPAmaNHPAlaNHPyHC_AkA0fG0HPyHCHC_qd0__AaNHD3_ASHOHC.46
-+ _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVy012CarPlayAssetB009LayerHostC0VAA25_AllowsHitTestingModifierVG_AA11ColorSchemeOSgQo__APQo_HO.16
++ _get_witness_table 14CarPlayAssetUI17ResolvablePaddingRzl05SwiftD019_ConditionalContentVyAC08ModifiedI0VyAC014_ViewModifier_I0VyAA011DirectionalfL033_7B51074619E88F9A5374CB07EC116614LLVyxGGAC01_F6LayoutVGANGAC0K0HPAqcSHPAncSHPyHC_ApC0kL0HPyHCHC_AncSHPyHCHC
++ _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVy012CarPlayAssetB009LayerHostC0VAA25_AllowsHitTestingModifierVG_AA11ColorSchemeOSgQo__APQo_HO
 + _symbolic SDySS_____G 14CarPlayAssetUI9JSONValueO
 + _symbolic SDy_____y_____SSGAAy_____SSGG 14CarPlayAssetUI11TaggedValueV AA12DriveModeTagO AA6LayoutV
 + _symbolic SaySayxGG
@@ -889,14 +821,14 @@ Symbols:
 - _$s14CarPlayAssetUI13CarouselModelCyAA9ComponentVG_AA4ZoneV0H4TypeOtWOc
 - _$s14CarPlayAssetUI14DocumentWriterC5write_03oldE0yAA03ArcE0V_AGSgtYaKFTY11_
 - _$s14CarPlayAssetUI14SystemUILayoutV11ContentAreaV11_isResolvedSbSgvM
-- _$s14CarPlayAssetUI14SystemUILayoutV11ContentAreaV11_isResolvedSbSgvM.resume.0
+- _$s14CarPlayAssetUI14SystemUILayoutV11ContentAreaV11_isResolvedSbSgvM.resume
 - _$s14CarPlayAssetUI14SystemUILayoutV11ContentAreaV11_isResolvedSbSgvg
 - _$s14CarPlayAssetUI14SystemUILayoutV11ContentAreaV11_isResolvedSbSgvpMV
 - _$s14CarPlayAssetUI14SystemUILayoutV11ContentAreaV11_isResolvedSbSgvs
 - _$s14CarPlayAssetUI14SystemUILayoutV11ContentAreaV12$_isResolvedAA10SkipEncodeVySbSgGvg
 - _$s14CarPlayAssetUI14SystemUILayoutV11ContentAreaV12$_isResolvedAA10SkipEncodeVySbSgGvpMV
 - _$s14CarPlayAssetUI14SystemUILayoutV11ContentAreaVAA11OverridableA2aFP11_isResolvedSbSgvMTW
-- _$s14CarPlayAssetUI14SystemUILayoutV11ContentAreaVAA11OverridableA2aFP11_isResolvedSbSgvMTW.resume.0
+- _$s14CarPlayAssetUI14SystemUILayoutV11ContentAreaVAA11OverridableA2aFP11_isResolvedSbSgvMTW.resume
 - _$s14CarPlayAssetUI14SystemUILayoutV11ContentAreaVAA11OverridableA2aFP11_isResolvedSbSgvgTW
 - _$s14CarPlayAssetUI14SystemUILayoutV11ContentAreaVAA11OverridableA2aFP11_isResolvedSbSgvsTW
 - _$s14CarPlayAssetUI14SystemUILayoutV11ContentAreaVmMR
@@ -907,14 +839,14 @@ Symbols:
 - _$s14CarPlayAssetUI16DecodableDefaultVyAA4TrueOGACyxGSeAAWlTm
 - _$s14CarPlayAssetUI16OverrideResolverO14applyOverrides33_428593F488E53256AA7500FF96122815LL_2to11environmentySDySSypG_AHz05SwiftD017EnvironmentValuesVtKFZTf4nnnd_n
 - _$s14CarPlayAssetUI17PersistentElementV11_isResolvedSbSgvM
-- _$s14CarPlayAssetUI17PersistentElementV11_isResolvedSbSgvM.resume.0
+- _$s14CarPlayAssetUI17PersistentElementV11_isResolvedSbSgvM.resume
 - _$s14CarPlayAssetUI17PersistentElementV11_isResolvedSbSgvg
 - _$s14CarPlayAssetUI17PersistentElementV11_isResolvedSbSgvpMV
 - _$s14CarPlayAssetUI17PersistentElementV11_isResolvedSbSgvs
 - _$s14CarPlayAssetUI17PersistentElementV12$_isResolvedAA10SkipEncodeVySbSgGvg
 - _$s14CarPlayAssetUI17PersistentElementV12$_isResolvedAA10SkipEncodeVySbSgGvpMV
 - _$s14CarPlayAssetUI17PersistentElementVAA11OverridableA2aDP11_isResolvedSbSgvMTW
-- _$s14CarPlayAssetUI17PersistentElementVAA11OverridableA2aDP11_isResolvedSbSgvMTW.resume.0
+- _$s14CarPlayAssetUI17PersistentElementVAA11OverridableA2aDP11_isResolvedSbSgvMTW.resume
 - _$s14CarPlayAssetUI17PersistentElementVAA11OverridableA2aDP11_isResolvedSbSgvgTW
 - _$s14CarPlayAssetUI17PersistentElementVAA11OverridableA2aDP11_isResolvedSbSgvsTW
 - _$s14CarPlayAssetUI17PersistentElementVSgMR
@@ -932,14 +864,14 @@ Symbols:
 - _$s14CarPlayAssetUI22AppearanceTrackingViewV6targetA2C6TargetO_tcfC
 - _$s14CarPlayAssetUI28ClusterTransitionCoordinatorC09ComponentF0VWOb
 - _$s14CarPlayAssetUI29MeasurementLabelConfigurationV11_isResolvedSbSgvM
-- _$s14CarPlayAssetUI29MeasurementLabelConfigurationV11_isResolvedSbSgvM.resume.0
+- _$s14CarPlayAssetUI29MeasurementLabelConfigurationV11_isResolvedSbSgvM.resume
 - _$s14CarPlayAssetUI29MeasurementLabelConfigurationV11_isResolvedSbSgvg
 - _$s14CarPlayAssetUI29MeasurementLabelConfigurationV11_isResolvedSbSgvpMV
 - _$s14CarPlayAssetUI29MeasurementLabelConfigurationV11_isResolvedSbSgvs
 - _$s14CarPlayAssetUI29MeasurementLabelConfigurationV12$_isResolvedAA10SkipEncodeVySbSgGvg
 - _$s14CarPlayAssetUI29MeasurementLabelConfigurationV12$_isResolvedAA10SkipEncodeVySbSgGvpMV
 - _$s14CarPlayAssetUI29MeasurementLabelConfigurationVAA11OverridableA2aDP11_isResolvedSbSgvMTW
-- _$s14CarPlayAssetUI29MeasurementLabelConfigurationVAA11OverridableA2aDP11_isResolvedSbSgvMTW.resume.0
+- _$s14CarPlayAssetUI29MeasurementLabelConfigurationVAA11OverridableA2aDP11_isResolvedSbSgvMTW.resume
 - _$s14CarPlayAssetUI29MeasurementLabelConfigurationVAA11OverridableA2aDP11_isResolvedSbSgvgTW
 - _$s14CarPlayAssetUI29MeasurementLabelConfigurationVAA11OverridableA2aDP11_isResolvedSbSgvsTW
 - _$s14CarPlayAssetUI29MeasurementLabelConfigurationVmMR
@@ -948,59 +880,59 @@ Symbols:
 - _$s14CarPlayAssetUI4Rule_pWOcTm
 - _$s14CarPlayAssetUI4Rule_p_AaB_ptWOhTm
 - _$s14CarPlayAssetUI4SlotV11_isResolvedSbSgvM
-- _$s14CarPlayAssetUI4SlotV11_isResolvedSbSgvM.resume.0
+- _$s14CarPlayAssetUI4SlotV11_isResolvedSbSgvM.resume
 - _$s14CarPlayAssetUI4SlotV11_isResolvedSbSgvg
 - _$s14CarPlayAssetUI4SlotV11_isResolvedSbSgvpMV
 - _$s14CarPlayAssetUI4SlotV11_isResolvedSbSgvs
 - _$s14CarPlayAssetUI4SlotV12$_isResolvedAA10SkipEncodeVySbSgGvg
 - _$s14CarPlayAssetUI4SlotV12$_isResolvedAA10SkipEncodeVySbSgGvpMV
 - _$s14CarPlayAssetUI4SlotVAA11OverridableA2aDP11_isResolvedSbSgvMTW
-- _$s14CarPlayAssetUI4SlotVAA11OverridableA2aDP11_isResolvedSbSgvMTW.resume.0
+- _$s14CarPlayAssetUI4SlotVAA11OverridableA2aDP11_isResolvedSbSgvMTW.resume
 - _$s14CarPlayAssetUI4SlotVAA11OverridableA2aDP11_isResolvedSbSgvgTW
 - _$s14CarPlayAssetUI4SlotVAA11OverridableA2aDP11_isResolvedSbSgvsTW
 - _$s14CarPlayAssetUI4SlotVmMR
 - _$s14CarPlayAssetUI4SlotVmMd
 - _$s14CarPlayAssetUI4ZoneV11_isResolvedSbSgvM
-- _$s14CarPlayAssetUI4ZoneV11_isResolvedSbSgvM.resume.0
+- _$s14CarPlayAssetUI4ZoneV11_isResolvedSbSgvM.resume
 - _$s14CarPlayAssetUI4ZoneV11_isResolvedSbSgvg
 - _$s14CarPlayAssetUI4ZoneV11_isResolvedSbSgvpMV
 - _$s14CarPlayAssetUI4ZoneV11_isResolvedSbSgvs
 - _$s14CarPlayAssetUI4ZoneV12$_isResolvedAA10SkipEncodeVySbSgGvg
 - _$s14CarPlayAssetUI4ZoneV12$_isResolvedAA10SkipEncodeVySbSgGvpMV
 - _$s14CarPlayAssetUI4ZoneVAA11OverridableA2aDP11_isResolvedSbSgvMTW
-- _$s14CarPlayAssetUI4ZoneVAA11OverridableA2aDP11_isResolvedSbSgvMTW.resume.0
+- _$s14CarPlayAssetUI4ZoneVAA11OverridableA2aDP11_isResolvedSbSgvMTW.resume
 - _$s14CarPlayAssetUI4ZoneVAA11OverridableA2aDP11_isResolvedSbSgvgTW
 - _$s14CarPlayAssetUI4ZoneVAA11OverridableA2aDP11_isResolvedSbSgvsTW
 - _$s14CarPlayAssetUI5ThemeO11LayoutStyleV16defaultPaletteIDAA11TaggedValueVyAA8ColorSetVSSGvM
-- _$s14CarPlayAssetUI5ThemeO11LayoutStyleV16defaultPaletteIDAA11TaggedValueVyAA8ColorSetVSSGvM.resume.0
+- _$s14CarPlayAssetUI5ThemeO11LayoutStyleV16defaultPaletteIDAA11TaggedValueVyAA8ColorSetVSSGvM.resume
 - _$s14CarPlayAssetUI5ThemeO11LayoutStyleV16defaultPaletteIDAA11TaggedValueVyAA8ColorSetVSSGvs
 - _$s14CarPlayAssetUI5ThemeO11LayoutStyleV18defaultWallpaperIDAA11TaggedValueVyAA0I0VSSGvM
-- _$s14CarPlayAssetUI5ThemeO11LayoutStyleV18defaultWallpaperIDAA11TaggedValueVyAA0I0VSSGvM.resume.0
+- _$s14CarPlayAssetUI5ThemeO11LayoutStyleV18defaultWallpaperIDAA11TaggedValueVyAA0I0VSSGvM.resume
 - _$s14CarPlayAssetUI5ThemeO11LayoutStyleV18defaultWallpaperIDAA11TaggedValueVyAA0I0VSSGvs
 - _$s14CarPlayAssetUI5ThemeO11LayoutStyleV2idAA11TaggedValueVyAESSGvM
-- _$s14CarPlayAssetUI5ThemeO11LayoutStyleV2idAA11TaggedValueVyAESSGvM.resume.0
+- _$s14CarPlayAssetUI5ThemeO11LayoutStyleV2idAA11TaggedValueVyAESSGvM.resume
 - _$s14CarPlayAssetUI5ThemeO11LayoutStyleV2idAA11TaggedValueVyAESSGvs
 - _$s14CarPlayAssetUI5ThemeO7PaletteV22RepresentedColorSchemeO_AGtWOhTm
 - _$s14CarPlayAssetUI6LayoutV11_isResolvedSbSgvM
-- _$s14CarPlayAssetUI6LayoutV11_isResolvedSbSgvM.resume.0
+- _$s14CarPlayAssetUI6LayoutV11_isResolvedSbSgvM.resume
 - _$s14CarPlayAssetUI6LayoutV11_isResolvedSbSgvg
 - _$s14CarPlayAssetUI6LayoutV11_isResolvedSbSgvpMV
 - _$s14CarPlayAssetUI6LayoutV11_isResolvedSbSgvs
 - _$s14CarPlayAssetUI6LayoutV12$_isResolvedAA10SkipEncodeVySbSgGvg
 - _$s14CarPlayAssetUI6LayoutV12$_isResolvedAA10SkipEncodeVySbSgGvpMV
 - _$s14CarPlayAssetUI6LayoutVAA11OverridableA2aDP11_isResolvedSbSgvMTW
-- _$s14CarPlayAssetUI6LayoutVAA11OverridableA2aDP11_isResolvedSbSgvMTW.resume.0
+- _$s14CarPlayAssetUI6LayoutVAA11OverridableA2aDP11_isResolvedSbSgvMTW.resume
 - _$s14CarPlayAssetUI6LayoutVAA11OverridableA2aDP11_isResolvedSbSgvgTW
 - _$s14CarPlayAssetUI6LayoutVAA11OverridableA2aDP11_isResolvedSbSgvsTW
 - _$s14CarPlayAssetUI7DisplayV11_isResolvedSbSgvM
-- _$s14CarPlayAssetUI7DisplayV11_isResolvedSbSgvM.resume.0
+- _$s14CarPlayAssetUI7DisplayV11_isResolvedSbSgvM.resume
 - _$s14CarPlayAssetUI7DisplayV11_isResolvedSbSgvg
 - _$s14CarPlayAssetUI7DisplayV11_isResolvedSbSgvpMV
 - _$s14CarPlayAssetUI7DisplayV11_isResolvedSbSgvs
 - _$s14CarPlayAssetUI7DisplayV12$_isResolvedAA10SkipEncodeVySbSgGvg
 - _$s14CarPlayAssetUI7DisplayV12$_isResolvedAA10SkipEncodeVySbSgGvpMV
 - _$s14CarPlayAssetUI7DisplayVAA11OverridableA2aDP11_isResolvedSbSgvMTW
-- _$s14CarPlayAssetUI7DisplayVAA11OverridableA2aDP11_isResolvedSbSgvMTW.resume.0
+- _$s14CarPlayAssetUI7DisplayVAA11OverridableA2aDP11_isResolvedSbSgvMTW.resume
 - _$s14CarPlayAssetUI7DisplayVAA11OverridableA2aDP11_isResolvedSbSgvgTW
 - _$s14CarPlayAssetUI7DisplayVAA11OverridableA2aDP11_isResolvedSbSgvsTW
 - _$s14CarPlayAssetUI7DisplayVmMR
@@ -1009,25 +941,20 @@ Symbols:
 - _$s14CarPlayAssetUI8ColorSetV2id14appearanceType6color16color26color36color46color56color66color76color819activeCruiseControl11speedAssist08inactivesT08lowState08criticalY07redline25homologatedSecondaryLabel011representedE6Scheme9sortIndex06accentE09prominent018backgroundOverrideE0AcA11TaggedValueVyACSSG_AA010AppearanceI0OAC0e5ShadeI0OA4_A4_A4_A4_A4_A4_A4_A4_A4_A4_A4_A4_A4_A4_AA5ThemeO7PaletteV011RepresentedE6SchemeOSiAA22DynamicAppearanceValueVy05SwiftD00E0VGSgSbA15_SgtcfC
 - _$s14CarPlayAssetUI9ComponentV10CodingKeys33_60C06FF7D9E15F13F69096B75C7D7111LLO11stringValueSSvg
 - _$s14CarPlayAssetUI9ComponentV11_isResolvedSbSgvM
-- _$s14CarPlayAssetUI9ComponentV11_isResolvedSbSgvM.resume.0
+- _$s14CarPlayAssetUI9ComponentV11_isResolvedSbSgvM.resume
 - _$s14CarPlayAssetUI9ComponentV11_isResolvedSbSgvg
 - _$s14CarPlayAssetUI9ComponentV11_isResolvedSbSgvpMV
 - _$s14CarPlayAssetUI9ComponentV11_isResolvedSbSgvs
 - _$s14CarPlayAssetUI9ComponentV12$_isResolvedAA10SkipEncodeVySbSgGvg
 - _$s14CarPlayAssetUI9ComponentV12$_isResolvedAA10SkipEncodeVySbSgGvpMV
 - _$s14CarPlayAssetUI9ComponentVAA11OverridableA2aDP11_isResolvedSbSgvMTW
-- _$s14CarPlayAssetUI9ComponentVAA11OverridableA2aDP11_isResolvedSbSgvMTW.resume.0
+- _$s14CarPlayAssetUI9ComponentVAA11OverridableA2aDP11_isResolvedSbSgvMTW.resume
 - _$s14CarPlayAssetUI9ComponentVAA11OverridableA2aDP11_isResolvedSbSgvgTW
 - _$s14CarPlayAssetUI9ComponentVAA11OverridableA2aDP11_isResolvedSbSgvsTW
-- _$s14CarPlayAssetUI9ComponentVIegn_ACytIegnr_TRTA.112
-- _$s14CarPlayAssetUI9ComponentVytIegnr_ACIegn_TRTA.108
-- _$s14CarPlayAssetUI9DeckModelC15activeComponentAA0H0VSgvsyyXEfU_TA.87
-- _$s14CarPlayAssetUI9DeckModelC16needsStateUpdate33_B86D1D9AB748BF6B3CDAEE8B861A877BLLSbvsyyXEfU_TA.88
 - _$s14CarPlayAssetUI9OverridesV6assetsSayAA0C0_pGvgAA4SlotV_TB5Tm
 - _$s2os6LoggerV14CarPlayAssetUIE7widgetsACvauTm
 - _$s7SwiftUI11ColorSchemeOACSQAAWl
 - _$s7SwiftUI11EnvironmentV7ContentOy012CarPlayAssetB015SlotViewBuilderVSg_GWOyTm
-- _$sIeg_ytIegr_TRTA.128
 - _$sSD11removeValue6forKeyq_Sgx_tFSS_ypTg5
 - _$sSD17dictionaryLiteralSDyxq_Gx_q_td_tcfCSo21NSAttributedStringKeya_ypTt0g5Tf4g_nTm
 - _$sSS10identifier_14CarPlayAssetUI23VisibilityConfigurationVSg010visibilityG0tMR
@@ -1092,16 +1019,7 @@ Symbols:
 - _$ss5SliceVy14CarPlayAssetUI18WidgetStackRowInfoVGWOcTm
 - _$ss5SliceVy14CarPlayAssetUI18WidgetStackRowInfoVGWOhTm
 - _$ss6HasherV7combineyyxSHRzlF14CarPlayAssetUI29MeasurementLabelConfigurationV_TB5
-- _$sytIegr_Ieg_TRTA.124
-- ___swift_closure_destructor.106
-- ___swift_closure_destructor.110
-- ___swift_closure_destructor.115
-- ___swift_closure_destructor.118
-- ___swift_closure_destructor.54
-- ___swift_closure_destructor.74
 - ___swift_closure_destructor.74Tm
-- ___swift_closure_destructor.77
-- ___swift_closure_destructor.80
 - ___swift_memcpy168_8
 - ___swift_memcpy280_8
 - ___swift_memcpy360_8
@@ -1114,12 +1032,8 @@ Symbols:
 - ___swift_memcpy730_8
 - ___swift_memcpy737_8
 - ___swift_memcpy976_8
-- _get_witness_table 14CarPlayAssetUI17ResolvablePaddingRzl05SwiftD015ModifiedContentVyAC014_ViewModifier_I0VyAA011DirectionalfK033_7B51074619E88F9A5374CB07EC116614LLVyxGGAC01_F6LayoutVGAC0J0HPAlcPHPyHC_AnC0jK0HPyHCHC.91
-- _get_witness_table 7SwiftUI4ViewRz012CarPlayAssetB017ResolvablePaddingRd__r__lAA15ModifiedContentVyxAC011DirectionalH8Modifier33_7B51074619E88F9A5374CB07EC116614LLVyqd__GGAaBHPxAaBHD1__AjA0cL0HPyHCHC.46
-- _get_witness_table 7SwiftUI4ViewRzSQRd__r__lAA15ModifiedContentVyx012CarPlayAssetB015TaskConditionalVyqd__GGAaBHPxAaBHD1__AhA0C8ModifierHPyHCHC.45
-- _get_witness_table 7SwiftUI8AnyShapeVAA0D0HPyHC.24
-- _get_witness_table SQRzl7SwiftUI19_ConditionalContentVyAA08ModifiedD0VyAA014_ViewModifier_D0Vy012CarPlayAssetB004TaskC0VyxGGAKGAA0F0PAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAL_xQo_GAaNHPAmaNHPAlaNHPyHC_AkA0fG0HPyHCHC_qd0__AaNHD3_ASHOHC.44
-- _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVy012CarPlayAssetB009LayerHostC0VAA25_AllowsHitTestingModifierVG_AA11ColorSchemeOQo_HO.7
+- _get_witness_table 14CarPlayAssetUI17ResolvablePaddingRzl05SwiftD015ModifiedContentVyAC014_ViewModifier_I0VyAA011DirectionalfK033_7B51074619E88F9A5374CB07EC116614LLVyxGGAC01_F6LayoutVGAC0J0HPAlcPHPyHC_AnC0jK0HPyHCHC
+- _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVy012CarPlayAssetB009LayerHostC0VAA25_AllowsHitTestingModifierVG_AA11ColorSchemeOQo_HO
 - _keypath_get.10Tm
 - _keypath_getTm
 - _swift_release_x10
@@ -1148,5 +1062,4 @@ CStrings:
 + "showsAppLinksInDock"
 - "Preventing carousel rotation. non-dismissible content is active.  %s"
 - "RequestContent - Either presenting or dismissing floating content."
-
 ```

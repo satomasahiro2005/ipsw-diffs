@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MobileAssetExclaveServices.framework/MobileAssetExclaveServices`
 
-```diff
+### Section Size Changes
 
- 2215.0.20.0.0
--  __TEXT.__text: 0xae8c
-+  __TEXT.__text: 0xae88
-   __TEXT.__objc_methlist: 0x1f4
-   __TEXT.__const: 0x5f8
-   __TEXT.__gcc_except_tab: 0x14
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xae8c` | `0xae88` | **`-0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_28fa6270c -> sub_29149d70c : 2700 -> 2696
+~ sub_28f93670c -> sub_29137170c : 2700 -> 2696
 ```

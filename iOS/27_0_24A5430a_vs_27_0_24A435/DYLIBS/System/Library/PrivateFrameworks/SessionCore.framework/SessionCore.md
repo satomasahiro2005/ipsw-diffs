@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SessionCore.framework/SessionCore`
 
-```diff
+### Section Size Changes
 
- 312.100.0.0.0
--  __TEXT.__text: 0x14d614
-+  __TEXT.__text: 0x14d664
-   __TEXT.__objc_methlist: 0xec4
-   __TEXT.__const: 0x5552
-   __TEXT.__swift5_typeref: 0x2dcf
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14d614` | `0x14d664` | **`+0x50`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_2385264a8 -> sub_238ddc4a8 : 1960 -> 1964
 ~ sub_238539b70 -> sub_238defb74 : 5924 -> 5928

@@ -2,111 +2,43 @@
 
 > `/System/Library/Frameworks/WidgetKit.framework/WidgetKit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__cstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x20efd4` | `0x210690` | **`+0x16bc`** |
+| `__TEXT.__swift5_typeref` | `0xc982` | `0xcb5a` | **`+0x1d8`** |
+| `__AUTH.__data` | `0x5cf0` | `0x5d78` | **`+0x88`** |
+| `__AUTH_CONST.__const` | `0x14440` | `0x143c0` | **`-0x80`** |
+| `__DATA.__data` | `0x62c8` | `0x6338` | **`+0x70`** |
+| `__AUTH_CONST.__auth_got` | `0x2980` | `0x29e0` | **`+0x60`** |
+| `__TEXT.__constg_swiftt` | `0xbfc0` | `0xc020` | **`+0x60`** |
+| `__TEXT.__const` | `0x21838` | `0x217e8` | **`-0x50`** |
+| `__TEXT.__oslogstring` | `0x32b6` | `0x3306` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x1840` | `0x1880` | **`+0x40`** |
+| `__DATA_DIRTY.__data` | `0x6060` | `0x6050` | **`-0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x73b0` | `0x73bc` | **`+0xc`** |
+| `__TEXT.__unwind_info` | `0x8da8` | `0x8db0` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__TEXT.__swift5_reflstr`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__objc_data`
-- `__DATA_DIRTY.__objc_data`
+
+### Other Changes
 
 ```diff
 
 -734.0.0.0.0
--  __TEXT.__text: 0x20efd4
 +740.0.0.0.0
-+  __TEXT.__text: 0x210690
-   __TEXT.__objc_methlist: 0xdc8
--  __TEXT.__const: 0x21838
-+  __TEXT.__const: 0x217e8
-   __TEXT.__cstring: 0x5096
--  __TEXT.__swift5_typeref: 0xc982
-+  __TEXT.__swift5_typeref: 0xcb5a
-   __TEXT.__swift5_reflstr: 0x5621
-   __TEXT.__swift5_assocty: 0x1b20
--  __TEXT.__constg_swiftt: 0xbfc0
--  __TEXT.__swift5_fieldmd: 0x73b0
-+  __TEXT.__constg_swiftt: 0xc020
-+  __TEXT.__swift5_fieldmd: 0x73bc
-   __TEXT.__swift5_builtin: 0x294
-   __TEXT.__swift5_proto: 0x15e0
-   __TEXT.__swift5_types: 0xa0c
-   __TEXT.__swift5_capture: 0x2d14
--  __TEXT.__oslogstring: 0x32b6
-+  __TEXT.__oslogstring: 0x3306
-   __TEXT.__swift5_mpenum: 0xa8
-   __TEXT.__swift_as_entry: 0x340
-   __TEXT.__swift_as_ret: 0x3dc
-   __TEXT.__swift_as_cont: 0x5e8
-   __TEXT.__swift5_protos: 0x10c
--  __TEXT.__unwind_info: 0x8da8
-+  __TEXT.__unwind_info: 0x8db0
-   __TEXT.__eh_frame: 0xe54c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xa30
-   __DATA_CONST.__objc_protorefs: 0x80
--  __DATA_CONST.__got: 0x1840
--  __AUTH_CONST.__const: 0x14440
-+  __DATA_CONST.__got: 0x1880
-+  __AUTH_CONST.__const: 0x143c0
-   __AUTH_CONST.__cfstring: 0xa0
-   __AUTH_CONST.__objc_const: 0x67d8
--  __AUTH_CONST.__auth_got: 0x2980
-+  __AUTH_CONST.__auth_got: 0x29e0
-   __AUTH.__objc_data: 0xce8
--  __AUTH.__data: 0x5cf0
--  __DATA.__data: 0x62c8
-+  __AUTH.__data: 0x5d78
-+  __DATA.__data: 0x6338
-   __DATA.__bss: 0x14ff0
-   __DATA.__common: 0x2a0
-   __DATA_DIRTY.__objc_data: 0xb80
--  __DATA_DIRTY.__data: 0x6060
-+  __DATA_DIRTY.__data: 0x6050
-   __DATA_DIRTY.__common: 0x5c0
-   __DATA_DIRTY.__bss: 0x15c80
-   - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
-
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/CoreText.framework/CoreText
 +  - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
-   - /System/Library/Frameworks/DeveloperToolsSupport.framework/DeveloperToolsSupport
-   - /System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation
-   - /System/Library/Frameworks/ExtensionKit.framework/ExtensionKit
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12504
--  Symbols:   4563
+-  Symbols:   4284
 -  CStrings:  747
 +  Functions: 12521
-+  Symbols:   4567
++  Symbols:   4288
 +  CStrings:  748
- 
 Symbols:
 + _get_witness_table 7SwiftUI19_ConditionalContentVyAA08ModifiedD0VyAEyAEyAEyAEyAEyAEyAEyAA4ViewPAAE8redacted6reasonQrAA16RedactionReasonsV_tFQOyAEyAEyAEyAEyAEyAEyAEyAEyAEyAEyAEyACyAEyAEyAA01_f9Modifier_D0Vy9WidgetKit023CommonServerEnvironmentK0VGAA01_p10KeyWritingK0VyAA14FontDefinition_pXpGGAN0l5IdiomK0VGAVGAN017GaugeTintVibrancyK0VGASySo9CHSWidgetCSgGGASyAA11ColorSchemeOGGASySbGGA11_GA11_GA11_GASyAA0Z14SchemeContrastOGGASyAA12DisplayGamutOGGASy12CoreGraphics7CGFloatVGGA11_G_Qo_ASyAA0D12SizeCategoryOGGASyAA16LegibilityWeightOSgGGASyAN0L12RenderSchemeVGGA11_GASySo0Y17DisplayPropertiesCGGASyAN08InternalL6FamilyOGGA11_GASyAN13LevelOfDetailVGGAVGAaFHPA57_AaFHPA53_AaFHPA52_AaFHPA48_AaFHPA44_AaFHPA43_AaFHPA39_AaFHPA34_AaFHPqd__AaFHD2_A30_HO_A33_AA0fK0HPyHCHC_A38_AAA59_HPyHCHC_A42_AAA59_HPyHCHC_A11_AAA59_HPyHCHC_A47_AAA59_HPyHCHC_A51_AAA59_HPyHCHC_A11_AAA59_HPyHCHC_A56_AAA59_HPyHCHC_AvaFHPAqaFHPyHC_AuAA59_HPyHCHCHC
 + _get_witness_table 7SwiftUI19_ConditionalContentVyACyAA9EmptyViewVAA06_ShapeF0VyAA017ContainerRelativeG0VAA5ColorVGGACyACyAA08ModifiedD0VyAlA016_ForegroundLayerF8ModifierVGALGASGGAA0F0HPAmaVHPAeaVHPyHC_AlaVHPyHCHC_AtaVHPAsaVHPAraVHPAlaVHPyHC_AqA0fN0HPyHCHC_AlaVHPyHCHC_AsaVHPAraVHPAlaVHPyHC_AqaWHPyHCHC_AlaVHPyHCHCHCHC

@@ -2,21 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/DeviceCheckInternal.framework/DeviceCheckInternal`
 
+### Other Changes
+
 ```diff
 
 -156.0.0.0.0
 +157.0.0.0.0
-   __TEXT.__text: 0x157ac
-   __TEXT.__objc_methlist: 0x6ec
-   __TEXT.__const: 0x10383
 
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 370
--  Symbols:   1325
-+  Symbols:   1326
-   CStrings:  166
- 
+-  Symbols:   1192
++  Symbols:   1193
 Symbols:
 + _OUTLINED_FUNCTION_18
 + _OUTLINED_FUNCTION_21

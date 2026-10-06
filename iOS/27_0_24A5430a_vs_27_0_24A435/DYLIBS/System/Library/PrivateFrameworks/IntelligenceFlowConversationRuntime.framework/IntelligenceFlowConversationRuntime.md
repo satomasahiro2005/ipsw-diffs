@@ -2,8 +2,10 @@
 
 > `/System/Library/PrivateFrameworks/IntelligenceFlowConversationRuntime.framework/IntelligenceFlowConversationRuntime`
 
+### Other Changes
+
 ```text
 Functions:
-~ sub_28726a308 -> sub_287fb5308 : 12 -> 20
-~ sub_28726a314 -> sub_287fb531c : 20 -> 12
+~ sub_28715b308 -> sub_287e84308 : 12 -> 20
+~ sub_28715b314 -> sub_287e8431c : 20 -> 12
 ```

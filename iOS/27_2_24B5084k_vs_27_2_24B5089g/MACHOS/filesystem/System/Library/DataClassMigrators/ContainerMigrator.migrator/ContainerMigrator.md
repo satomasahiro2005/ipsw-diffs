@@ -2,15 +2,14 @@
 
 > `/System/Library/DataClassMigrators/ContainerMigrator.migrator/ContainerMigrator`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -833.40.14.0.0
 +833.40.16.0.0
-   __TEXT.__text: 0x138
-   __TEXT.__auth_stubs: 0x10
-   __TEXT.__objc_methlist: 0x38
 ```

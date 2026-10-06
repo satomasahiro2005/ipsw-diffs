@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/BookDataStore.framework/BookDataStore`
 
-```diff
+### Section Size Changes
 
- 2310.0.0.0.0
--  __TEXT.__text: 0x11ea78
-+  __TEXT.__text: 0x11ead0
-   __TEXT.__objc_methlist: 0x7a34
-   __TEXT.__cstring: 0x58a2
-   __TEXT.__const: 0x56f8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x11ea78` | `0x11ead0` | **`+0x58`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_20caa65f4 -> sub_20d1415f4 : 388 -> 392
 ~ sub_20caa6778 -> sub_20d14177c : 352 -> 356

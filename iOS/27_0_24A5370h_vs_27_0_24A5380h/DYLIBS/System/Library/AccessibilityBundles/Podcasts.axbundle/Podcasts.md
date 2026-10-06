@@ -2,74 +2,41 @@
 
 > `/System/Library/AccessibilityBundles/Podcasts.axbundle/Podcasts`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa6f8` | `0x7f74` | **`-0x2784`** |
+| `__AUTH_CONST.__objc_const` | `0x4850` | `0x3998` | **`-0xeb8`** |
+| `__AUTH_CONST.__cfstring` | `0x3060` | `0x25a0` | **`-0xac0`** |
+| `__TEXT.__cstring` | `0x2599` | `0x1d94` | **`-0x805`** |
+| `__DATA_DIRTY.__objc_data` | `0x23f0` | `0x1c70` | **`-0x780`** |
+| `__TEXT.__objc_methlist` | `0x18dc` | `0x132c` | **`-0x5b0`** |
+| `__TEXT.__unwind_info` | `0x520` | `0x410` | **`-0x110`** |
+| `__DATA_CONST.__objc_selrefs` | `0x630` | `0x538` | **`-0xf8`** |
+| `__DATA_CONST.__objc_classlist` | `0x3e8` | `0x318` | **`-0xd0`** |
+| `__AUTH.__objc_data` | `0x320` | `0x280` | **`-0xa0`** |
+| `__DATA_CONST.__const` | `0x238` | `0x1e8` | **`-0x50`** |
+| `__DATA_CONST.__got` | `0x120` | `0xe8` | **`-0x38`** |
+| `__AUTH_CONST.__const` | `0xe0` | `0xc0` | **`-0x20`** |
+| `__DATA_CONST.__objc_superrefs` | `0x120` | `0x108` | **`-0x18`** |
+| `__TEXT.__gcc_except_tab` | `0x1c8` | `0x1b0` | **`-0x18`** |
+| `__DATA.__bss` | `0x11` | `0x1` | **`-0x10`** |
+| `__TEXT.__ustring` | `0x4` | `—` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xa6f8
--  __TEXT.__objc_methlist: 0x18dc
-+  __TEXT.__text: 0x7f74
-+  __TEXT.__objc_methlist: 0x132c
-   __TEXT.__const: 0x28
--  __TEXT.__gcc_except_tab: 0x1c8
--  __TEXT.__cstring: 0x2599
--  __TEXT.__ustring: 0x4
--  __TEXT.__unwind_info: 0x520
-+  __TEXT.__gcc_except_tab: 0x1b0
-+  __TEXT.__cstring: 0x1d94
-+  __TEXT.__unwind_info: 0x410
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x238
--  __DATA_CONST.__objc_classlist: 0x3e8
-+  __DATA_CONST.__const: 0x1e8
-+  __DATA_CONST.__objc_classlist: 0x318
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x630
-+  __DATA_CONST.__objc_selrefs: 0x538
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x120
--  __DATA_CONST.__got: 0x120
--  __AUTH_CONST.__const: 0xe0
--  __AUTH_CONST.__cfstring: 0x3060
--  __AUTH_CONST.__objc_const: 0x4850
-+  __DATA_CONST.__objc_superrefs: 0x108
-+  __DATA_CONST.__got: 0xe8
-+  __AUTH_CONST.__const: 0xc0
-+  __AUTH_CONST.__cfstring: 0x25a0
-+  __AUTH_CONST.__objc_const: 0x3998
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x320
-+  __AUTH.__objc_data: 0x280
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x2
--  __DATA.__bss: 0x11
--  __DATA_DIRTY.__objc_data: 0x23f0
-+  __DATA.__bss: 0x1
-+  __DATA_DIRTY.__objc_data: 0x1c70
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+-3039.1.0.0.0
++3042.0.0.0.0
 
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 417
--  Symbols:   1742
--  CStrings:  805
+-  Symbols:   1194
+-  CStrings:  420
 +  Functions: 314
-+  Symbols:   1363
-+  CStrings:  627
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA.__data : content changed
++  Symbols:   947
++  CStrings:  327
 Symbols:
 + +[DownloadButtonAccessibility _accessibilityPerformValidations:]
 + +[DownloadButtonAccessibility(SafeCategory) safeCategoryBaseClass]
@@ -96,7 +63,6 @@ Symbols:
 + __OBJC_CLASS_RO_$___DownloadButtonAccessibility_super
 + __OBJC_METACLASS_RO_$_DownloadButtonAccessibility
 + __OBJC_METACLASS_RO_$___DownloadButtonAccessibility_super
-+ _objc_msgSend$safeSwiftEnumCase
 - +[CircleListCellAccessibility _accessibilityPerformValidations:]
 - +[CircleListCellAccessibility(SafeCategory) safeCategoryBaseClass]
 - +[CircleListCellAccessibility(SafeCategory) safeCategoryTargetClassName]
@@ -369,33 +335,6 @@ Symbols:
 - __accessibilityisStatusStructValidated.validated
 - _dispatch_once
 - _kAXSpacerTrait
-- _objc_msgSend$_accessibilityCustomActionLabelForControlStatus:
-- _objc_msgSend$_accessibilityFindAncestor:startWithSelf:
-- _objc_msgSend$_accessibilityLabelForStatusType:
-- _objc_msgSend$_accessibilityLoadAccessibilityInformation
-- _objc_msgSend$_accessibilitySetCustomActionLabel:
-- _objc_msgSend$_accessibilityValueForStatusType:andDownloadProgress:
-- _objc_msgSend$_accessibilityisStatusStructValidated
-- _objc_msgSend$_axFavoriteHeaderButton
-- _objc_msgSend$_axSuggestLessButton
-- _objc_msgSend$_axSwitch
-- _objc_msgSend$accessibilityActivationPoint
-- _objc_msgSend$accessibilityFrame
-- _objc_msgSend$accessibilityTraits
-- _objc_msgSend$componentsJoinedByString:
-- _objc_msgSend$componentsSeparatedByString:
-- _objc_msgSend$episodeForDownloadAtIndex:
-- _objc_msgSend$indexPathForCell:
-- _objc_msgSend$row
-- _objc_msgSend$safeIvarForKey:
-- _objc_msgSend$safeSwiftBoolForKey:
-- _objc_msgSend$safeSwiftFloatForKey:
-- _objc_msgSend$safeSwiftIntForKey:
-- _objc_msgSend$setAccessibilityTraits:
-- _objc_msgSend$setAccessibilityValue:
-- _objc_msgSend$setNumberStyle:
-- _objc_msgSend$setSortPriority:
-- _objc_msgSend$subarrayWithRange:
 CStrings:
 + "DownloadButtonAccessibility"
 + "Optional<ProgressState>"
@@ -506,5 +445,4 @@ CStrings:
 - "waiting.download"
 - "{MusicLibraryAddKeepLocalControlStatus=qd}"
 - "·"
-
 ```

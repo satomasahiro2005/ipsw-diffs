@@ -2,52 +2,32 @@
 
 > `/usr/libexec/captiveagent`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x107a8` | `0x106ec` | **`-0xbc`** |
+| `__TEXT.__auth_stubs` | `0xb60` | `0xb50` | **`-0x10`** |
+| `__DATA_CONST.__auth_got` | `0x5c8` | `0x5c0` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x468` | `0x470` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
- 542.0.0.0.1
--  __TEXT.__text: 0x107a8
--  __TEXT.__auth_stubs: 0xb60
-+  __TEXT.__text: 0x106ec
-+  __TEXT.__auth_stubs: 0xb50
-   __TEXT.__objc_stubs: 0x1720
-   __TEXT.__objc_methlist: 0xcb8
-   __TEXT.__const: 0x146
-
-   __TEXT.__cstring: 0x7ce
-   __TEXT.__objc_classname: 0xc8
-   __TEXT.__objc_methtype: 0xa05
--  __TEXT.__unwind_info: 0x468
-+  __TEXT.__unwind_info: 0x470
-   __DATA_CONST.__const: 0x4b0
-   __DATA_CONST.__cfstring: 0x8c0
-   __DATA_CONST.__objc_classlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x30
--  __DATA_CONST.__auth_got: 0x5c8
-+  __DATA_CONST.__auth_got: 0x5c0
-   __DATA_CONST.__got: 0x1f8
-   __DATA.__objc_const: 0x1948
-   __DATA.__objc_selrefs: 0x880
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libxml2.2.dylib
-   Functions: 316
 -  Symbols:   255
 +  Symbols:   254
-   CStrings:  730
- 
 Symbols:
 - _objc_retainBlock
 Functions:

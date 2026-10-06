@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/LighthouseInference.framework/LighthouseInference`
 
-```diff
+### Section Size Changes
 
- 3600.52.1.0.0
--  __TEXT.__text: 0xd265c
-+  __TEXT.__text: 0xd26a4
-   __TEXT.__objc_methlist: 0x1ac
-   __TEXT.__const: 0x5944
-   __TEXT.__cstring: 0x50af
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd265c` | `0xd26a4` | **`+0x48`** |
+
+### Other Changes
+
+```diff
 Symbols:
 + _swift_release_x10
 - _swift_release_x9

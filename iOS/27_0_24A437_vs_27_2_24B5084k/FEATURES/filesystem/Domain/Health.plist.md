@@ -4,95 +4,43 @@
 
 ```diff
 
- 		<key>DevelopmentPhase</key>
- 		<string>FeatureComplete</string>
- 	</dict>
 +	<key>VO2MaxMigration</key>
 +	<dict>
 +		<key>DevelopmentPhase</key>
 +		<string>FeatureComplete</string>
 +	</dict>
- 	<key>VitalsEnhancements</key>
- 	<dict>
- 		<key>DevelopmentPhase</key>
- 		<string>FeatureComplete</string>
- 	</dict>
+
 +	<key>WasabiRealVideos</key>
 +	<dict>
 +		<key>DevelopmentPhase</key>
 +		<string>FeatureComplete</string>
 +	</dict>
- 	<key>WorkoutZones</key>
- 	<dict>
- 		<key>DevelopmentPhase</key>
 
- 		<key>DevelopmentPhase</key>
- 		<string>FeatureComplete</string>
- 	</dict>
 -	<key>lumberjack</key>
--	<dict>
--		<key>DevelopmentPhase</key>
--		<string>FeatureComplete</string>
--	</dict>
- 	<key>medicationsOnboarding</key>
- 	<dict>
- 		<key>DevelopmentPhase</key>
++	<key>medicationsOnboarding</key>
 
- 		<key>DevelopmentPhase</key>
- 		<string>FeatureComplete</string>
- 	</dict>
+-	<key>medicationsOnboarding</key>
++	<key>menopausal_state</key>
+
+-	<key>menopausal_state</key>
 +	<key>mulberry</key>
-+	<dict>
-+		<key>DevelopmentPhase</key>
-+		<string>FeatureComplete</string>
-+	</dict>
- 	<key>nanoMedicalIDSwift</key>
- 	<dict>
- 		<key>DevelopmentPhase</key>
- 		<string>FeatureComplete</string>
- 	</dict>
+
+-	<key>orchestrationMedications</key>
 +	<key>omakaseSummaryTestDiagnostics</key>
-+	<dict>
-+		<key>DevelopmentPhase</key>
-+		<string>FeatureComplete</string>
-+	</dict>
- 	<key>orchestrationMedications</key>
- 	<dict>
- 		<key>DevelopmentPhase</key>
- 		<string>FeatureComplete</string>
- 	</dict>
-+	<key>safetyOrchestrationMigration</key>
-+	<dict>
-+		<key>DevelopmentPhase</key>
-+		<string>FeatureComplete</string>
-+	</dict>
- 	<key>sleepAlarmCoordination</key>
- 	<dict>
- 		<key>DevelopmentPhase</key>
- 		<string>FeatureComplete</string>
- 	</dict>
+
+-	<key>sleepAlarmCoordination</key>
++	<key>orchestrationMedications</key>
+
 -	<key>sleepQuery2</key>
--	<dict>
--		<key>DevelopmentPhase</key>
--		<string>FeatureComplete</string>
--	</dict>
++	<key>safetyOrchestrationMigration</key>
+
 -	<key>sleepQuery2Adoption</key>
--	<dict>
--		<key>DevelopmentPhase</key>
--		<string>FeatureComplete</string>
--	</dict>
- 	<key>sleepScoreVersion4</key>
- 	<dict>
- 		<key>DevelopmentPhase</key>
- 		<string>FeatureComplete</string>
- 	</dict>
++	<key>sleepAlarmCoordination</key>
+
 +	<key>vitalsOrchestrationMigration</key>
 +	<dict>
 +		<key>DevelopmentPhase</key>
 +		<string>FeatureComplete</string>
 +	</dict>
- </dict>
- </plist>
- 
 
 ```

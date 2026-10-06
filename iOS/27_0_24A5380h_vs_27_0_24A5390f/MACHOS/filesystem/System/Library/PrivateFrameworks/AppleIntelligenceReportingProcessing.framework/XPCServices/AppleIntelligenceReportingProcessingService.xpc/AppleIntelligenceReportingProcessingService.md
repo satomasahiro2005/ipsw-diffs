@@ -2,97 +2,60 @@
 
 > `/System/Library/PrivateFrameworks/AppleIntelligenceReportingProcessing.framework/XPCServices/AppleIntelligenceReportingProcessingService.xpc/AppleIntelligenceReportingProcessingService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_entry`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_types`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe3bf0` | `0xe6114` | **`+0x2524`** |
+| `__TEXT.__cstring` | `0x4ab3` | `0x4d73` | **`+0x2c0`** |
+| `__TEXT.__swift5_fieldmd` | `0x2ec0` | `0x3010` | **`+0x150`** |
+| `__TEXT.__swift5_reflstr` | `0x2b5d` | `0x2c9d` | **`+0x140`** |
+| `__DATA.__data` | `0x3a28` | `0x3ae0` | **`+0xb8`** |
+| `__DATA.__objc_const` | `0x17d0` | `0x1850` | **`+0x80`** |
+| `__TEXT.__auth_stubs` | `0x2da0` | `0x2e20` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x2ec8` | `0x2f38` | **`+0x70`** |
+| `__TEXT.__constg_swiftt` | `0x1f94` | `0x1ff4` | **`+0x60`** |
+| `__TEXT.__objc_methname` | `0x1c25` | `0x1c85` | **`+0x60`** |
+| `__DATA_CONST.__auth_got` | `0x16d8` | `0x1718` | **`+0x40`** |
+| `__DATA.__common` | `0x198` | `0x1c0` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x8d70` | `0x8d98` | **`+0x28`** |
+| `__TEXT.__eh_frame` | `0x57d0` | `0x57f0` | **`+0x20`** |
+| `__TEXT.__swift5_typeref` | `0x2650` | `0x2668` | **`+0x18`** |
+| `__TEXT.__const` | `0x6336` | `0x6346` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_classlist`
 - `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_mpenum`
 - `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__bss`
+
+### Other Changes
 
 ```diff
 
 -212.0.0.0.0
--  __TEXT.__text: 0xe3bf0
--  __TEXT.__auth_stubs: 0x2da0
 +220.0.0.0.0
-+  __TEXT.__text: 0xe6114
-+  __TEXT.__auth_stubs: 0x2e20
-   __TEXT.__objc_stubs: 0x1980
--  __TEXT.__const: 0x6336
--  __TEXT.__swift5_typeref: 0x2650
--  __TEXT.__cstring: 0x4ab3
-+  __TEXT.__const: 0x6346
-+  __TEXT.__swift5_typeref: 0x2668
-+  __TEXT.__cstring: 0x4d73
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__constg_swiftt: 0x1f94
-+  __TEXT.__constg_swiftt: 0x1ff4
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_types: 0x1d0
-   __TEXT.__oslogstring: 0x4c1e
--  __TEXT.__swift5_reflstr: 0x2b5d
-+  __TEXT.__swift5_reflstr: 0x2c9d
-   __TEXT.__swift5_assocty: 0x1b0
--  __TEXT.__swift5_fieldmd: 0x2ec0
--  __TEXT.__objc_methname: 0x1c25
-+  __TEXT.__swift5_fieldmd: 0x3010
-+  __TEXT.__objc_methname: 0x1c85
-   __TEXT.__objc_methtype: 0x2e
-   __TEXT.__objc_classname: 0x5d8
-   __TEXT.__swift5_protos: 0x48
 
-   __TEXT.__swift_as_cont: 0x214
-   __TEXT.__swift5_capture: 0x21f0
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x2ec8
--  __TEXT.__eh_frame: 0x57d0
--  __DATA_CONST.__const: 0x8d70
-+  __TEXT.__unwind_info: 0x2f38
-+  __TEXT.__eh_frame: 0x57f0
-+  __DATA_CONST.__const: 0x8d98
-   __DATA_CONST.__cfstring: 0x7e0
-   __DATA_CONST.__objc_classlist: 0x98
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x16d8
-+  __DATA_CONST.__auth_got: 0x1718
-   __DATA_CONST.__got: 0xaf0
-   __DATA_CONST.__auth_ptr: 0xc20
--  __DATA.__objc_const: 0x17d0
-+  __DATA.__objc_const: 0x1850
-   __DATA.__objc_selrefs: 0x660
-   __DATA.__objc_data: 0xf0
--  __DATA.__data: 0x3a28
--  __DATA.__common: 0x198
-+  __DATA.__data: 0x3ae0
-+  __DATA.__common: 0x1c0
-   __DATA.__bss: 0x7410
-   - /AppleInternal/Library/Frameworks/TapToRadarKit.framework/TapToRadarKit
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6294
 -  Symbols:   10775
 -  CStrings:  1108
 +  Functions: 6340
 +  Symbols:   10877
 +  CStrings:  1128
- 
 Symbols:
 + $s43AppleIntelligenceReportingProcessingService22InferenceEventMetadataC15requestPrioritySSSgvM.resume
 + $s43AppleIntelligenceReportingProcessingService22InferenceEventMetadataC19underlyingErrorCodeSiSgvM.resume

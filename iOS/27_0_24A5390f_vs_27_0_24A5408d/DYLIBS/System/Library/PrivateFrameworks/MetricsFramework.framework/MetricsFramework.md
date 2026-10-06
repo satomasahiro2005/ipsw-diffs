@@ -2,77 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/MetricsFramework.framework/MetricsFramework`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10b068` | `0x10c834` | **`+0x17cc`** |
+| `__TEXT.__oslogstring` | `0x6a7c` | `0x6c2c` | **`+0x1b0`** |
+| `__TEXT.__cstring` | `0x80a0` | `0x8130` | **`+0x90`** |
+| `__AUTH_CONST.__const` | `0x85e8` | `0x8650` | **`+0x68`** |
+| `__TEXT.__unwind_info` | `0x3a90` | `0x3ad0` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0xfb8` | `0xfe8` | **`+0x30`** |
+| `__DATA.__data` | `0x20c8` | `0x20f0` | **`+0x28`** |
+| `__TEXT.__swift5_capture` | `0x50c` | `0x52c` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x4df8` | `0x4e10` | **`+0x18`** |
+| `__TEXT.__swift5_typeref` | `0x2ee2` | `0x2ef8` | **`+0x16`** |
+| `__TEXT.__const` | `0xd110` | `0xd120` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x5858` | `0x5868` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3600.49.12.1.1
--  __TEXT.__text: 0x10b068
 +3600.49.21.11.1
-+  __TEXT.__text: 0x10c834
-   __TEXT.__objc_methlist: 0x14
--  __TEXT.__const: 0xd110
--  __TEXT.__swift5_typeref: 0x2ee2
--  __TEXT.__swift5_capture: 0x50c
--  __TEXT.__oslogstring: 0x6a7c
--  __TEXT.__swift5_reflstr: 0x5858
-+  __TEXT.__const: 0xd120
-+  __TEXT.__swift5_typeref: 0x2ef8
-+  __TEXT.__swift5_capture: 0x52c
-+  __TEXT.__cstring: 0x8130
-+  __TEXT.__oslogstring: 0x6c2c
-+  __TEXT.__swift5_reflstr: 0x5868
-   __TEXT.__swift5_assocty: 0xdc0
-   __TEXT.__constg_swiftt: 0x5438
--  __TEXT.__swift5_fieldmd: 0x4df8
-+  __TEXT.__swift5_fieldmd: 0x4e10
-   __TEXT.__swift5_builtin: 0x244
--  __TEXT.__cstring: 0x80a0
-   __TEXT.__swift5_proto: 0x800
-   __TEXT.__swift5_types: 0x47c
-   __TEXT.__swift_as_entry: 0x444
-   __TEXT.__swift_as_ret: 0x3e8
-   __TEXT.__swift_as_cont: 0x674
-   __TEXT.__swift5_protos: 0x74
--  __TEXT.__unwind_info: 0x3a90
-+  __TEXT.__unwind_info: 0x3ad0
-   __TEXT.__eh_frame: 0x76d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xbb8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x85e8
-+  __AUTH_CONST.__const: 0x8650
-   __AUTH_CONST.__cfstring: 0x6440
-   __AUTH_CONST.__objc_const: 0x57a8
--  __AUTH_CONST.__auth_got: 0xfb8
-+  __AUTH_CONST.__auth_got: 0xfe8
-   __AUTH.__objc_data: 0xea8
-   __AUTH.__data: 0x4880
--  __DATA.__data: 0x20c8
-+  __DATA.__data: 0x20f0
-   __DATA.__common: 0x1b0
-   __DATA.__bss: 0xd000
-   __DATA_DIRTY.__objc_data: 0x900
-
-   - /System/Library/PrivateFrameworks/SiriMetricsBugReporter.framework/SiriMetricsBugReporter
-   - /System/Library/PrivateFrameworks/SpeakerRecognition.framework/SpeakerRecognition
-   - /System/Library/PrivateFrameworks/lighthouse_runtime.framework/lighthouse_runtime
 +  - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4870
--  Symbols:   2156
+-  Symbols:   1783
 -  CStrings:  1691
 +  Functions: 4889
-+  Symbols:   2161
++  Symbols:   1788
 +  CStrings:  1700
- 
 Symbols:
 + _MGGetStringAnswer
 + ___swift_memcpy216_8

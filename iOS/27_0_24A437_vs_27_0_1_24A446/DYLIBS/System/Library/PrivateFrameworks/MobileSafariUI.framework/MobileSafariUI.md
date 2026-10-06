@@ -2,69 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/MobileSafariUI.framework/MobileSafariUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2ee578` | `0x2ee354` | **`-0x224`** |
+| `__TEXT.__gcc_except_tab` | `0x1f4f4` | `0x1f478` | **`-0x7c`** |
+| `__DATA_CONST.__const` | `0x98c0` | `0x9910` | **`+0x50`** |
+| `__AUTH_CONST.__cfstring` | `0xdd20` | `0xdd60` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x10a84` | `0x10ab4` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x24d5c` | `0x24d7c` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x10298` | `0x10288` | **`-0x10`** |
+| `__AUTH_CONST.__objc_const` | `0x33458` | `0x33460` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x186f0` | `0x186f8` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__oslogstring`
+
+### Other Changes
 
 ```diff
 
 -625.1.29.10.29
--  __TEXT.__text: 0x2d7d68
--  __TEXT.__objc_methlist: 0x24d5c
 +625.1.29.10.33
-+  __TEXT.__text: 0x2d7b50
-+  __TEXT.__objc_methlist: 0x24d7c
-   __TEXT.__const: 0x4e50
--  __TEXT.__gcc_except_tab: 0x1f4f4
--  __TEXT.__cstring: 0x10a84
-+  __TEXT.__gcc_except_tab: 0x1f478
-+  __TEXT.__cstring: 0x10ab4
-   __TEXT.__dlopen_cstrs: 0x7e6
-   __TEXT.__oslogstring: 0xb21f
-   __TEXT.__ustring: 0x11da
 
-   __TEXT.__swift_as_cont: 0x2ac
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_protos: 0xc
--  __TEXT.__unwind_info: 0x12408
-+  __TEXT.__unwind_info: 0x12400
-   __TEXT.__eh_frame: 0x3834
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x98c0
-+  __DATA_CONST.__const: 0x9910
-   __DATA_CONST.__objc_classlist: 0xa20
-   __DATA_CONST.__objc_catlist: 0xb0
-   __DATA_CONST.__objc_protolist: 0xbe8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x186f0
-+  __DATA_CONST.__objc_selrefs: 0x186f8
-   __DATA_CONST.__objc_protorefs: 0x1f0
-   __DATA_CONST.__objc_superrefs: 0x690
-   __DATA_CONST.__objc_arraydata: 0x368
-   __DATA_CONST.__got: 0x37f8
-   __AUTH_CONST.__const: 0x88e0
--  __AUTH_CONST.__cfstring: 0xdd20
--  __AUTH_CONST.__objc_const: 0x33458
-+  __AUTH_CONST.__cfstring: 0xdd60
-+  __AUTH_CONST.__objc_const: 0x33460
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x4c8
-   __AUTH_CONST.__objc_dictobj: 0xc8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 16270
 -  Symbols:   23028
 -  CStrings:  3283
 +  Functions: 16271
 +  Symbols:   23029
 +  CStrings:  3285
- 
 Symbols:
 + -[BrowserController _beginSiriReaderConnection:title:text:identifier:readerContext:activeTabDocument:activationSource:invocationDescription:]
 + -[TabCollectionViewManager evaluatePostponedSnapshotInvalidations]

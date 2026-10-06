@@ -2,24 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x19bd3c` | `0x19bdcc` | **`+0x90`** |
+| `__TEXT.__cstring` | `0x13f76` | `0x13fc6` | **`+0x50`** |
+
+### Other Changes
+
 ```diff
 
- 1620.100.1.2.24
--  __TEXT.__text: 0x19bd3c
-+  __TEXT.__text: 0x19bdcc
-   __TEXT.__objc_methlist: 0x1b458
--  __TEXT.__cstring: 0x13f76
-+  __TEXT.__cstring: 0x13fc6
-   __TEXT.__const: 0x40c8
-   __TEXT.__oslogstring: 0x13c27
-   __TEXT.__gcc_except_tab: 0x17c8
-
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 11497
-   Symbols:   20350
 -  CStrings:  4571
 +  CStrings:  4577
- 
 Functions:
 ~ sub_19e77e39c -> sub_19e84239c : 184 -> 220
 ~ -[TUAudioRoute modelIdentifier] : 1284 -> 1356

@@ -2,43 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/GameControllerIO.framework/GameControllerIO`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__objc_const` | `0x1218` | `0x1240` | **`+0x28`** |
+| `__TEXT.__objc_methlist` | `0xb54` | `0xb64` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7c0` | `0x7c8` | **`+0x8`** |
+| `__TEXT.__text` | `0x5428` | `0x542c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -14.0.21.0.0
--  __TEXT.__text: 0x5428
--  __TEXT.__objc_methlist: 0xb54
 +14.0.24.0.0
-+  __TEXT.__text: 0x542c
-+  __TEXT.__objc_methlist: 0xb64
-   __TEXT.__const: 0x8d
-   __TEXT.__gcc_except_tab: 0x64
-   __TEXT.__cstring: 0x46d
 
-   __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_protolist: 0xb0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7c0
-+  __DATA_CONST.__objc_selrefs: 0x7c8
-   __DATA_CONST.__objc_protorefs: 0x80
-   __DATA_CONST.__objc_superrefs: 0x18
-   __DATA_CONST.__got: 0xd0
-   __AUTH_CONST.__const: 0x80
-   __AUTH_CONST.__cfstring: 0x740
--  __AUTH_CONST.__objc_const: 0x1218
-+  __AUTH_CONST.__objc_const: 0x1240
-   __AUTH_CONST.__objc_intobj: 0x48
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__objc_ivar: 0xf8
-
-   - /System/Library/PrivateFrameworks/HID.framework/HID
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 201
--  Symbols:   666
+-  Symbols:   527
 +  Functions: 202
-+  Symbols:   667
-   CStrings:  96
- 
++  Symbols:   528
 Symbols:
 + -[GCGamepadHIDServicePlugin endHaptics]
 Functions:

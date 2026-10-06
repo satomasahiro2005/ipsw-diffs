@@ -2,14 +2,15 @@
 
 > `/usr/lib/liblzma.5.dylib`
 
-```diff
+### Section Size Changes
 
- 21.0.0.0.0
--  __TEXT.__text: 0x17474
-+  __TEXT.__text: 0x1747c
-   __TEXT.__const: 0x64b0
-   __TEXT.__cstring: 0x310
-   __TEXT.__unwind_info: 0x480
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17474` | `0x1747c` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _lzma_raw_coder_init : 388 -> 396
 ~ _iter_set_info : 464 -> 468

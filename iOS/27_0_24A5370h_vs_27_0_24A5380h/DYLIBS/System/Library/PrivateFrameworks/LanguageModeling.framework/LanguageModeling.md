@@ -2,80 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/LanguageModeling.framework/LanguageModeling`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17d0b4` | `0x1735fc` | **`-0x9ab8`** |
+| `__TEXT.__cstring` | `0x11a7a` | `0xe12d` | **`-0x394d`** |
+| `__TEXT.__gcc_except_tab` | `0x14ee4` | `0x14d48` | **`-0x19c`** |
+| `__AUTH_CONST.__const` | `0xa5f8` | `0xa780` | **`+0x188`** |
+| `__TEXT.__unwind_info` | `0x7a20` | `0x78b0` | **`-0x170`** |
+| `__TEXT.__const` | `0xe580` | `0xe6e0` | **`+0x160`** |
+| `__AUTH.__data` | `0x1a0` | `0x1d8` | **`+0x38`** |
+| `__DATA.__bss` | `0x688` | `0x650` | **`-0x38`** |
+| `__DATA_DIRTY.__bss` | `0x440` | `0x478` | **`+0x38`** |
+| `__DATA_DIRTY.__data` | `0x1b8` | `0x180` | **`-0x38`** |
+| `__AUTH_CONST.__auth_got` | `0xee8` | `0xee0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x17d0b4
-+  __TEXT.__text: 0x1735fc
-   __TEXT.__objc_methlist: 0x14
--  __TEXT.__const: 0xe580
--  __TEXT.__cstring: 0x11a7a
--  __TEXT.__gcc_except_tab: 0x14ee4
-+  __TEXT.__const: 0xe6e0
-+  __TEXT.__cstring: 0xe12d
-+  __TEXT.__gcc_except_tab: 0x14d48
-   __TEXT.__dlopen_cstrs: 0x2cc
-   __TEXT.__oslogstring: 0x18ae
-   __TEXT.__ustring: 0x8ee
--  __TEXT.__unwind_info: 0x7a20
-+  __TEXT.__unwind_info: 0x78b0
-   __TEXT.__eh_frame: 0x48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+-445.0.0.0.0
++446.0.0.0.0
 
-   __DATA_CONST.__objc_selrefs: 0x80
-   __DATA_CONST.__objc_arraydata: 0x80
-   __DATA_CONST.__got: 0x2f8
--  __AUTH_CONST.__const: 0xa5f8
-+  __AUTH_CONST.__const: 0xa780
-   __AUTH_CONST.__cfstring: 0x3060
-   __AUTH_CONST.__objc_const: 0x90
-   __AUTH_CONST.__weak_auth_got: 0x50
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0xee8
--  __AUTH.__data: 0x1a0
-+  __AUTH_CONST.__auth_got: 0xee0
-+  __AUTH.__data: 0x1d8
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x10
-   __DATA.__data: 0x970
--  __DATA.__bss: 0x688
-+  __DATA.__bss: 0x650
-   __DATA.__common: 0x3c5
-   __DATA_DIRTY.__objc_data: 0x50
--  __DATA_DIRTY.__data: 0x1b8
--  __DATA_DIRTY.__bss: 0x440
-+  __DATA_DIRTY.__data: 0x180
-+  __DATA_DIRTY.__bss: 0x478
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/CoreEmoji.framework/CoreEmoji
-
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 5832
 -  Symbols:   1229
--  CStrings:  2594
+-  CStrings:  2216
 +  Functions: 5793
 +  Symbols:   1228
-+  CStrings:  2550
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  CStrings:  2172
 Symbols:
 - __ZNSt3__132__internal_log_hardening_failureEPKc
 CStrings:
@@ -125,5 +80,4 @@ CStrings:
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:3393: libc++ Hardening assertion !empty() failed: string::pop_back(): string is already empty\n"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string_view:343: libc++ Hardening assertion (__end - __begin) >= 0 failed: std::string_view::string_view(iterator, sentinel) received invalid range\n"
 - "SET TokenID = ? WHERE TokenID = ?"
-
 ```

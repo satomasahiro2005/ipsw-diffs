@@ -2,118 +2,59 @@
 
 > `/System/Library/PrivateFrameworks/SettingsHost.framework/SettingsHost`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7a2c0` | `0x93320` | **`+0x19060`** |
+| `__DATA.__bss` | `0x3bd0` | `0x6a50` | **`+0x2e80`** |
+| `__TEXT.__const` | `0x4fa8` | `0x6878` | **`+0x18d0`** |
+| `__AUTH_CONST.__const` | `0x4400` | `0x50e0` | **`+0xce0`** |
+| `__TEXT.__eh_frame` | `0x2148` | `0x2848` | **`+0x700`** |
+| `__TEXT.__swift5_fieldmd` | `0x1590` | `0x1bc4` | **`+0x634`** |
+| `__TEXT.__oslogstring` | `0x1f64` | `0x2564` | **`+0x600`** |
+| `__DATA.__data` | `0x738` | `0xcc0` | **`+0x588`** |
+| `__TEXT.__unwind_info` | `0x1690` | `0x1bd8` | **`+0x548`** |
+| `__TEXT.__constg_swiftt` | `0x13e0` | `0x18a0` | **`+0x4c0`** |
+| `__TEXT.__swift5_typeref` | `0x16d2` | `0x1b84` | **`+0x4b2`** |
+| `__TEXT.__swift5_reflstr` | `0x160e` | `0x189e` | **`+0x290`** |
+| `__AUTH_CONST.__auth_got` | `0xf48` | `0x1110` | **`+0x1c8`** |
+| `__DATA_DIRTY.__bss` | `0x2080` | `0x2200` | **`+0x180`** |
+| `__TEXT.__swift5_proto` | `0x318` | `0x498` | **`+0x180`** |
+| `__DATA_DIRTY.__data` | `0x1708` | `0x1880` | **`+0x178`** |
+| `__TEXT.__cstring` | `0x3b08` | `0x3c58` | **`+0x150`** |
+| `__AUTH_CONST.__objc_const` | `0xc08` | `0xcd8` | **`+0xd0`** |
+| `__TEXT.__swift5_capture` | `0x3ac` | `0x474` | **`+0xc8`** |
+| `__AUTH.__data` | `0x220` | `0x298` | **`+0x78`** |
+| `__TEXT.__swift5_types` | `0x158` | `0x1c0` | **`+0x68`** |
+| `__DATA_CONST.__objc_selrefs` | `0x378` | `0x3d0` | **`+0x58`** |
+| `__DATA_DIRTY.__objc_data` | `0xa0` | `0xf0` | **`+0x50`** |
+| `__TEXT.__swift5_assocty` | `0x3b0` | `0x3f8` | **`+0x48`** |
+| `__DATA_DIRTY.__common` | `0xb0` | `0xe0` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x148` | `0x168` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x154` | `0x174` | **`+0x20`** |
+| `__TEXT.__swift5_builtin` | `0xb4` | `0xc8` | **`+0x14`** |
+| `__DATA.__common` | `0x48` | `0x38` | **`-0x10`** |
+| `__TEXT.__swift_as_ret` | `0xa4` | `0xb4` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x30` | `0x38` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x30` | `0x38` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0xb0` | `0xb8` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -2027.0.2.0.0
--  __TEXT.__text: 0x7a2c0
 +2027.0.5.0.0
-+  __TEXT.__text: 0x93320
-   __TEXT.__objc_methlist: 0x13c
--  __TEXT.__const: 0x4fa8
--  __TEXT.__swift5_typeref: 0x16d2
--  __TEXT.__swift5_fieldmd: 0x1590
--  __TEXT.__constg_swiftt: 0x13e0
--  __TEXT.__swift5_builtin: 0xb4
--  __TEXT.__swift5_reflstr: 0x160e
--  __TEXT.__swift5_assocty: 0x3b0
--  __TEXT.__swift5_protos: 0x30
--  __TEXT.__swift5_proto: 0x318
--  __TEXT.__swift5_types: 0x158
-+  __TEXT.__const: 0x6878
-+  __TEXT.__swift5_typeref: 0x1b84
-+  __TEXT.__swift5_fieldmd: 0x1bc4
-+  __TEXT.__constg_swiftt: 0x18a0
-+  __TEXT.__swift5_builtin: 0xc8
-+  __TEXT.__swift5_reflstr: 0x189e
-+  __TEXT.__swift5_assocty: 0x3f8
-+  __TEXT.__swift5_protos: 0x38
-+  __TEXT.__swift5_proto: 0x498
-+  __TEXT.__swift5_types: 0x1c0
-   __TEXT.__swift5_mpenum: 0x68
--  __TEXT.__swift5_capture: 0x3ac
--  __TEXT.__oslogstring: 0x1f64
--  __TEXT.__swift_as_entry: 0xb0
--  __TEXT.__swift_as_ret: 0xa4
--  __TEXT.__swift_as_cont: 0x154
--  __TEXT.__cstring: 0x3b08
--  __TEXT.__unwind_info: 0x1690
--  __TEXT.__eh_frame: 0x2148
-+  __TEXT.__swift5_capture: 0x474
-+  __TEXT.__oslogstring: 0x2564
-+  __TEXT.__swift_as_entry: 0xb8
-+  __TEXT.__swift_as_ret: 0xb4
-+  __TEXT.__swift_as_cont: 0x174
-+  __TEXT.__cstring: 0x3c58
-+  __TEXT.__unwind_info: 0x1bd8
-+  __TEXT.__eh_frame: 0x2848
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x148
--  __DATA_CONST.__objc_classlist: 0x30
-+  __DATA_CONST.__const: 0x168
-+  __DATA_CONST.__objc_classlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x378
-+  __DATA_CONST.__objc_selrefs: 0x3d0
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x4400
--  __AUTH_CONST.__objc_const: 0xc08
--  __AUTH_CONST.__auth_got: 0xf48
-+  __AUTH_CONST.__const: 0x50e0
-+  __AUTH_CONST.__objc_const: 0xcd8
-+  __AUTH_CONST.__auth_got: 0x1110
-   __AUTH.__objc_data: 0x50
--  __AUTH.__data: 0x220
--  __DATA.__data: 0x738
--  __DATA.__bss: 0x3bd0
--  __DATA.__common: 0x48
--  __DATA_DIRTY.__objc_data: 0xa0
--  __DATA_DIRTY.__data: 0x1708
--  __DATA_DIRTY.__bss: 0x2080
--  __DATA_DIRTY.__common: 0xb0
-+  __AUTH.__data: 0x298
-+  __DATA.__data: 0xcc0
-+  __DATA.__bss: 0x6a50
-+  __DATA.__common: 0x38
-+  __DATA_DIRTY.__objc_data: 0xf0
-+  __DATA_DIRTY.__data: 0x1880
-+  __DATA_DIRTY.__bss: 0x2200
-+  __DATA_DIRTY.__common: 0xe0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /System/Library/PrivateFrameworks/LinkMetadata.framework/LinkMetadata
-   - /System/Library/PrivateFrameworks/LinkServices.framework/LinkServices
-   - /System/Library/PrivateFrameworks/Settings.framework/Settings
 +  - /System/Library/PrivateFrameworks/SettingsServices.framework/SettingsServices
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2036
--  Symbols:   923
+-  Symbols:   833
 -  CStrings:  562
 +  Functions: 2591
-+  Symbols:   1078
++  Symbols:   977
 +  CStrings:  590
- 
 Symbols:
 + _CFPreferencesCopyKeyList
 + _CFPreferencesCopyValue
@@ -175,17 +116,6 @@ Symbols:
 + _get_enum_tag_for_layout_string 12SettingsHost32SearchIndexingDiagnosticSnapshotV7OutcomeO
 + _kCFPreferencesAnyHost
 + _kCFPreferencesCurrentUser
-+ _objc_msgSend$beginIndexBatch
-+ _objc_msgSend$containerURLForSecurityApplicationGroupIdentifier:
-+ _objc_msgSend$contentsOfDirectoryAtURL:includingPropertiesForKeys:options:error:
-+ _objc_msgSend$copyItemAtURL:toURL:error:
-+ _objc_msgSend$createDirectoryAtURL:withIntermediateDirectories:attributes:error:
-+ _objc_msgSend$defaultManager
-+ _objc_msgSend$endIndexBatchWithExpectedClientState:newClientState:critical:completionHandler:
-+ _objc_msgSend$fetchLastClientStateWithCompletionHandler:
-+ _objc_msgSend$fileExistsAtPath:
-+ _objc_msgSend$removeItemAtURL:error:
-+ _objc_msgSend$removeObjectForKey:
 + _swift_getMetatypeMetadata
 + _symbolic $s12SettingsHost0aB16DiagnosticDomainP
 + _symbolic $s12SettingsHost9PrismaticP

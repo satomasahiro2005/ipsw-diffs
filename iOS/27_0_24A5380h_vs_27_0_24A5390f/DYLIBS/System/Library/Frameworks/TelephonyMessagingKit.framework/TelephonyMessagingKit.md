@@ -2,101 +2,48 @@
 
 > `/System/Library/Frameworks/TelephonyMessagingKit.framework/TelephonyMessagingKit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_protos`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_selrefs`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x145f14` | `0x1500b4` | **`+0xa1a0`** |
+| `__DATA.__bss` | `0x40e90` | `0x43e90` | **`+0x3000`** |
+| `__TEXT.__const` | `0x220e0` | `0x237f0` | **`+0x1710`** |
+| `__AUTH_CONST.__const` | `0xe838` | `0xf258` | **`+0xa20`** |
+| `__TEXT.__eh_frame` | `0xabd0` | `0xb0c8` | **`+0x4f8`** |
+| `__TEXT.__swift5_typeref` | `0x7ead` | `0x827d` | **`+0x3d0`** |
+| `__TEXT.__unwind_info` | `0x6758` | `0x6af0` | **`+0x398`** |
+| `__TEXT.__swift5_fieldmd` | `0x6c88` | `0x7004` | **`+0x37c`** |
+| `__DATA.__data` | `0x6360` | `0x66c8` | **`+0x368`** |
+| `__TEXT.__constg_swiftt` | `0x6384` | `0x669c` | **`+0x318`** |
+| `__DATA_DIRTY.__data` | `0x27e8` | `0x2a58` | **`+0x270`** |
+| `__TEXT.__swift5_proto` | `0x2254` | `0x23d4` | **`+0x180`** |
+| `__TEXT.__swift5_reflstr` | `0x31d7` | `0x32d7` | **`+0x100`** |
+| `__TEXT.__swift5_types` | `0x9d8` | `0xa30` | **`+0x58`** |
+| `__TEXT.__oslogstring` | `0x17b0` | `0x1800` | **`+0x50`** |
+| `__TEXT.__swift_as_cont` | `0x3d8` | `0x420` | **`+0x48`** |
+| `__TEXT.__swift5_capture` | `0xf18` | `0xf54` | **`+0x3c`** |
+| `__TEXT.__swift_as_entry` | `0x1c0` | `0x1d8` | **`+0x18`** |
+| `__TEXT.__swift_as_ret` | `0x1e4` | `0x1fc` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x8c` | `0xa0` | **`+0x14`** |
+| `__AUTH_CONST.__auth_got` | `0xde8` | `0xdf8` | **`+0x10`** |
+| `__TEXT.__swift5_mpenum` | `0x20` | `0x28` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -13478.3.1.3.0
--  __TEXT.__text: 0x145f14
--  __TEXT.__swift5_typeref: 0x7ead
--  __TEXT.__const: 0x220e0
--  __TEXT.__swift5_reflstr: 0x31d7
 +13482.1.0.0.0
-+  __TEXT.__text: 0x1500b4
-+  __TEXT.__swift5_typeref: 0x827d
-+  __TEXT.__const: 0x237f0
-+  __TEXT.__swift5_reflstr: 0x32d7
-   __TEXT.__swift5_assocty: 0xc78
--  __TEXT.__constg_swiftt: 0x6384
--  __TEXT.__swift5_fieldmd: 0x6c88
--  __TEXT.__swift5_builtin: 0x8c
--  __TEXT.__swift5_proto: 0x2254
--  __TEXT.__swift5_types: 0x9d8
-+  __TEXT.__constg_swiftt: 0x669c
-+  __TEXT.__swift5_fieldmd: 0x7004
-+  __TEXT.__swift5_builtin: 0xa0
-+  __TEXT.__swift5_proto: 0x23d4
-+  __TEXT.__swift5_types: 0xa30
-   __TEXT.__cstring: 0x1213
-   __TEXT.__swift5_protos: 0x5c
--  __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__swift5_capture: 0xf18
--  __TEXT.__oslogstring: 0x17b0
--  __TEXT.__swift_as_entry: 0x1c0
--  __TEXT.__swift_as_ret: 0x1e4
--  __TEXT.__swift_as_cont: 0x3d8
--  __TEXT.__unwind_info: 0x6758
--  __TEXT.__eh_frame: 0xabd0
-+  __TEXT.__swift5_mpenum: 0x28
-+  __TEXT.__swift5_capture: 0xf54
-+  __TEXT.__oslogstring: 0x1800
-+  __TEXT.__swift_as_entry: 0x1d8
-+  __TEXT.__swift_as_ret: 0x1fc
-+  __TEXT.__swift_as_cont: 0x420
-+  __TEXT.__unwind_info: 0x6af0
-+  __TEXT.__eh_frame: 0xb0c8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x58
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xe838
-+  __AUTH_CONST.__const: 0xf258
-   __AUTH_CONST.__objc_const: 0xf68
--  __AUTH_CONST.__auth_got: 0xde8
-+  __AUTH_CONST.__auth_got: 0xdf8
-   __AUTH.__objc_data: 0xa0
-   __AUTH.__data: 0x4270
--  __DATA.__data: 0x6360
--  __DATA.__bss: 0x40e90
-+  __DATA.__data: 0x66c8
-+  __DATA.__bss: 0x43e90
-   __DATA.__common: 0xc8
--  __DATA_DIRTY.__data: 0x27e8
-+  __DATA_DIRTY.__data: 0x2a58
-   __DATA_DIRTY.__bss: 0x3500
-   __DATA_DIRTY.__common: 0x38
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /System/Library/PrivateFrameworks/CTBlastDoorSupport.framework/CTBlastDoorSupport
-   - /System/Library/PrivateFrameworks/CTLazuliSupport.framework/CTLazuliSupport
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
 +  - /System/Library/PrivateFrameworks/CoreEmoji.framework/CoreEmoji
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libmis.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9188
--  Symbols:   3453
+-  Symbols:   3442
 -  CStrings:  262
 +  Functions: 9498
-+  Symbols:   3564
++  Symbols:   3553
 +  CStrings:  263
- 
 Symbols:
 + _CEMCreateStringByStrippingEmojiCharacters
 + ___swift_closure_destructor.216Tm

@@ -2,82 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/CoreIDVUI.framework/CoreIDVUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2886bc` | `0x28a140` | **`+0x1a84`** |
+| `__TEXT.__swift5_typeref` | `0x112b0` | `0x115f0` | **`+0x340`** |
+| `__TEXT.__eh_frame` | `0x13f1c` | `0x1405c` | **`+0x140`** |
+| `__TEXT.__const` | `0x147d4` | `0x14884` | **`+0xb0`** |
+| `__DATA.__data` | `0x5bf4` | `0x5c34` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x8a38` | `0x8a78` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0xf6d8` | `0xf708` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x46b0` | `0x46d0` | **`+0x20`** |
+| `__TEXT.__cstring` | `0xd88d` | `0xd8ad` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x7a7c` | `0x7a9c` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1bb0` | `0x1bc8` | **`+0x18`** |
+| `__TEXT.__swift5_fieldmd` | `0x6374` | `0x638c` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x2220` | `0x2228` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 9.42.0.0.0
--  __TEXT.__text: 0x2886bc
-+  __TEXT.__text: 0x28a140
-   __TEXT.__lazy_helpers: 0xa8
-   __TEXT.__objc_methlist: 0x1974
--  __TEXT.__const: 0x147d4
--  __TEXT.__cstring: 0xd88d
-+  __TEXT.__const: 0x14884
-+  __TEXT.__cstring: 0xd8ad
-   __TEXT.__constg_swiftt: 0x7fa4
--  __TEXT.__swift5_typeref: 0x112b0
-+  __TEXT.__swift5_typeref: 0x115f0
-   __TEXT.__swift5_builtin: 0x1e0
--  __TEXT.__swift5_reflstr: 0x7a7c
--  __TEXT.__swift5_fieldmd: 0x6374
-+  __TEXT.__swift5_reflstr: 0x7a9c
-+  __TEXT.__swift5_fieldmd: 0x638c
-   __TEXT.__swift5_assocty: 0xe58
-   __TEXT.__swift5_proto: 0x5e0
-   __TEXT.__swift5_types: 0x534
-
-   __TEXT.__swift_as_ret: 0x698
-   __TEXT.__swift_as_cont: 0x118c
-   __TEXT.__swift5_mpenum: 0x24
--  __TEXT.__unwind_info: 0x8a38
--  __TEXT.__eh_frame: 0x13f1c
-+  __TEXT.__unwind_info: 0x8a78
-+  __TEXT.__eh_frame: 0x1405c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x440
-   __DATA_CONST.__objc_protolist: 0x168
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1bb0
-+  __DATA_CONST.__objc_selrefs: 0x1bc8
-   __DATA_CONST.__objc_protorefs: 0xe0
-   __DATA_CONST.__objc_superrefs: 0x40
--  __DATA_CONST.__got: 0x2220
--  __AUTH_CONST.__const: 0xf6d8
-+  __DATA_CONST.__got: 0x2228
-+  __AUTH_CONST.__const: 0xf708
-   __AUTH_CONST.__cfstring: 0x260
-   __AUTH_CONST.__objc_const: 0xd880
-   __AUTH_CONST.__lazy_load_got: 0x10
--  __AUTH_CONST.__auth_got: 0x46b0
-+  __AUTH_CONST.__auth_got: 0x46d0
-   __AUTH.__objc_data: 0x4018
-   __AUTH.__data: 0x9a50
-   __DATA.__objc_ivar: 0x70
--  __DATA.__data: 0x5bf4
-+  __DATA.__data: 0x5c34
-   __DATA.__objc_stublist: 0x60
-   __DATA.__common: 0x4b8
-   __DATA_DIRTY.__objc_data: 0x2f0
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10438
--  Symbols:   4459
+-  Symbols:   3739
 -  CStrings:  1880
 +  Functions: 10453
-+  Symbols:   4470
++  Symbols:   3747
 +  CStrings:  1881
- 
 Symbols:
 + _OBJC_CLASS_$_UIScene
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE5sheet11isPresented9onDismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAA15ModifiedContentVyAMyAMy9CoreIDVUI020IdentityProofingBaseC0VyAMyAC0M14IDVRGBLivenessE19windowRelativeFrame13relativeWidth0V6HeightQr0M8Graphics7CGFloatVSg_AXtFQOyAA6ZStackVyAA05TupleL0VyAMyAMyAMyAMyAN017PassportAnimationC0VAA30_SafeAreaRegionsIgnoringLayoutVGAN28DisableScreenCaptureModifier33_D900324AE570B5D10D63D45E5DF092EDLLVGAA16_OverlayModifierVyAMyAMyAMyAMyAA6ButtonVyAMyAMyAcAE10fontWeightyQrAA4FontV6WeightVSgFQOyAMyAA5LabelVyAA4TextVAA5ImageVGAA30_EnvironmentKeyWritingModifierVyA16_SgGG_Qo_AA01_U6LayoutVGAA14_PaddingLayoutVGGAA34_InsettableBackgroundShapeModifierVyAA8MaterialVAA7CapsuleVGGAA14_OpacityEffectVGAA18_AnimationModifierVySdGGA37_GGGA49_G_AMyAMyAQ041V68OpenDeviceRotationInstructionAnimationC0VA49_GAA25_AllowsHitTestingModifierVGQPGG_Qo_A52_ySbGGAA05EmptyC0VAMyAMyAA6VStackVyA0_yAA08ProgressC0VyA71_A71_G_AMyAMyAMyAcAE15monospacedDigitQryFQOyAMyA23_A28_yAA13TextAlignmentOGG_Qo_A30_GAA24_ForegroundStyleModifierVyAA22HierarchicalShapeStyleVGGA52_ySSGGQPGGAA05_FlexU6LayoutVGA37_GSgGA28_yAN0opC11StyleFormatCGGAA25_AppearanceActionModifierVGA105_G_AMyAN016PassportNFCGuideC0VA105_GQo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA15ModifiedContentVyAKyAKyAA6ZStackVyAA05TupleJ0VyAKyAKy9CoreIDVUI017PassportAnimationC0VAA18_AspectRatioLayoutVGAA14_OpacityEffectVG_AKyAKy0M14IDVRGBLiveness032V68OpenDeviceRotationInstructionpC0VAWGAA25_AllowsHitTestingModifierVGQPGGAA010_FlexFrameS0VGAA01_P8ModifierVySbGGAA16_OverlayModifierVyAKyAKyAKyAA4TextVAA08_PaddingS0VGAA34_InsettableBackgroundShapeModifierVyAA8MaterialVAA7CapsuleVGGA18_GGG_Qo_HO
-+ _objc_msgSend$activationState
-+ _objc_msgSend$connectedScenes
-+ _objc_msgSend$screen
 + _symbolic _____yAAyAAyAAy__________G_____G_____yAAyAAyAAyAAy_____yAAyAAy_____yAAy_____y__________G_____y_____SgGG_Qo______G_____GG_____y__________GG_____G_____ySdGGAUGGGA1_G_AAyAAy_____A1_G_____Gt 7SwiftUI15ModifiedContentV 9CoreIDVUI21PassportAnimationViewV AA30_SafeAreaRegionsIgnoringLayoutV AD28DisableScreenCaptureModifier33_D900324AE570B5D10D63D45E5DF092EDLLV AA08_OverlayR0V AA6ButtonV AA0I0PAAE10fontWeightyQrAA4FontV6WeightVSgFQO AA5LabelV AA4TextV AA5ImageV AA022_EnvironmentKeyWritingR0V AT AA06_FrameN0V AA08_PaddingN0V AA026_InsettableBackgroundShapeR0V AA8MaterialV AA7CapsuleV AA14_OpacityEffectV AA01_hR0V 0E14IDVRGBLiveness032V68OpenDeviceRotationInstructionhI0V AA017_AllowsHitTestingR0V
 + _symbolic _____yAAyAAyAAy_____y_____yAAyAAy__________G_____G_AAyAAy_____AGG_____GQPGG_____G_____ySbGG_____yAAyAAyAAy__________G_____y__________GGAVGGG_____G 7SwiftUI15ModifiedContentV AA6ZStackV AA05TupleD0V 9CoreIDVUI21PassportAnimationViewV AA18_AspectRatioLayoutV AA14_OpacityEffectV 0G14IDVRGBLiveness032V68OpenDeviceRotationInstructionjK0V AA25_AllowsHitTestingModifierV AA010_FlexFrameN0V AA01_jZ0V AA08_OverlayZ0V AA4TextV AA08_PaddingN0V AA026_InsettableBackgroundShapeZ0V AA8MaterialV AA7CapsuleV AA14_TaskModifier2V
 + _symbolic _____yAAyAAy_____yAAy_____y_____y_____yAAyAAyAAyAAy__________G_____G_____yAAyAAyAAyAAy_____yAAyAAy_____yAAy_____y__________G_____y_____SgGG_Qo______G_____GG_____y__________GG_____G_____ySdGGAXGGGA4_G_AAyAAy_____A4_G_____GQPGG_Qo_A6_ySbGG_____AAyAAy_____yADy_____yA22_A22_G_AAyAAyAAy_____yAAyAmPy_____GG_Qo_ASG_____y_____GGA6_ySSGGQPGG_____GAXGSgGAPy_____GG_____GA47_G 7SwiftUI15ModifiedContentV 9CoreIDVUI24IdentityProofingBaseViewV AA0J0P0E14IDVRGBLivenessE19windowRelativeFrame13relativeWidth0O6HeightQr0E8Graphics7CGFloatVSg_APtFQO AA6ZStackV AA05TupleD0V AD017PassportAnimationJ0V AA30_SafeAreaRegionsIgnoringLayoutV AD28DisableScreenCaptureModifier33_D900324AE570B5D10D63D45E5DF092EDLLV AA16_OverlayModifierV AA6ButtonV AhAE10fontWeightyQrAA4FontV6WeightVSgFQO AA5LabelV AA4TextV AA5ImageV AA30_EnvironmentKeyWritingModifierV A6_ AA01_N6LayoutV AA14_PaddingLayoutV AA34_InsettableBackgroundShapeModifierV AA8MaterialV AA7CapsuleV AA14_OpacityEffectV AA01_W8ModifierV AI032V68OpenDeviceRotationInstructionwJ0V AA25_AllowsHitTestingModifierV AA05EmptyJ0V AA6VStackV AA08ProgressJ0V AhAE15monospacedDigitQryFQO AA13TextAlignmentO AA24_ForegroundStyleModifierV AA22HierarchicalShapeStyleV AA05_FlexN6LayoutV AD0ghJ11StyleFormatC AA25_AppearanceActionModifierV

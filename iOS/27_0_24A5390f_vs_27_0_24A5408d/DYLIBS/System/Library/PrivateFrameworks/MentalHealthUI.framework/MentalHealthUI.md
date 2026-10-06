@@ -2,88 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/MentalHealthUI.framework/MentalHealthUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1715d0` | `0x175a38` | **`+0x4468`** |
+| `__TEXT.__swift5_reflstr` | `0x38bc` | `0x39ac` | **`+0xf0`** |
+| `__AUTH_CONST.__const` | `0x7878` | `0x7958` | **`+0xe0`** |
+| `__TEXT.__swift5_fieldmd` | `0x37b8` | `0x3880` | **`+0xc8`** |
+| `__AUTH.__data` | `0x4070` | `0x4120` | **`+0xb0`** |
+| `__TEXT.__swift5_typeref` | `0x4b1e` | `0x4bc8` | **`+0xaa`** |
+| `__TEXT.__const` | `0x30314` | `0x303b4` | **`+0xa0`** |
+| `__AUTH_CONST.__objc_const` | `0x3d08` | `0x3da0` | **`+0x98`** |
+| `__DATA.__bss` | `0x8e68` | `0x8ee8` | **`+0x80`** |
+| `__TEXT.__constg_swiftt` | `0x3b94` | `0x3bf4` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x4428` | `0x4470` | **`+0x48`** |
+| `__TEXT.__swift5_capture` | `0x1220` | `0x1258` | **`+0x38`** |
+| `__TEXT.__cstring` | `0x4242` | `0x4272` | **`+0x30`** |
+| `__DATA.__data` | `0x62a0` | `0x6280` | **`-0x20`** |
+| `__AUTH.__objc_data` | `0x1460` | `0x1458` | **`-0x8`** |
+| `__AUTH_CONST.__auth_got` | `0x2428` | `0x2420` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x110` | `0x118` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x378` | `0x380` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x488` | `0x48c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.0.67.2.1
--  __TEXT.__text: 0x1715d0
 +7027.0.72.2.5
-+  __TEXT.__text: 0x175a38
-   __TEXT.__objc_methlist: 0x1600
--  __TEXT.__const: 0x30314
--  __TEXT.__cstring: 0x4242
--  __TEXT.__swift5_typeref: 0x4b1e
--  __TEXT.__swift5_capture: 0x1220
--  __TEXT.__constg_swiftt: 0x3b94
--  __TEXT.__swift5_reflstr: 0x38bc
--  __TEXT.__swift5_fieldmd: 0x37b8
-+  __TEXT.__const: 0x303b4
-+  __TEXT.__cstring: 0x4272
-+  __TEXT.__swift5_typeref: 0x4bc8
-+  __TEXT.__swift5_capture: 0x1258
-+  __TEXT.__constg_swiftt: 0x3bf4
-+  __TEXT.__swift5_reflstr: 0x39ac
-+  __TEXT.__swift5_fieldmd: 0x3880
-   __TEXT.__swift5_builtin: 0x118
-   __TEXT.__swift5_assocty: 0xce0
-   __TEXT.__oslogstring: 0x1005
--  __TEXT.__swift5_proto: 0x488
--  __TEXT.__swift5_types: 0x378
-+  __TEXT.__swift5_proto: 0x48c
-+  __TEXT.__swift5_types: 0x380
-   __TEXT.__swift_as_entry: 0x78
-   __TEXT.__swift_as_ret: 0x84
-   __TEXT.__swift_as_cont: 0x130
-   __TEXT.__swift5_protos: 0x18
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x4428
-+  __TEXT.__unwind_info: 0x4470
-   __TEXT.__eh_frame: 0x2358
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x7e0
--  __DATA_CONST.__objc_classlist: 0x110
-+  __DATA_CONST.__objc_classlist: 0x118
-   __DATA_CONST.__objc_catlist2: 0x8
-   __DATA_CONST.__objc_protolist: 0x160
-   __DATA_CONST.__objc_imageinfo: 0x8
-
-   __DATA_CONST.__objc_protorefs: 0xb0
-   __DATA_CONST.__objc_superrefs: 0x18
-   __DATA_CONST.__got: 0x1668
--  __AUTH_CONST.__const: 0x7878
-+  __AUTH_CONST.__const: 0x7958
-   __AUTH_CONST.__cfstring: 0x620
--  __AUTH_CONST.__objc_const: 0x3d08
--  __AUTH_CONST.__auth_got: 0x2428
--  __AUTH.__objc_data: 0x1460
--  __AUTH.__data: 0x4070
-+  __AUTH_CONST.__objc_const: 0x3da0
-+  __AUTH_CONST.__auth_got: 0x2420
-+  __AUTH.__objc_data: 0x1458
-+  __AUTH.__data: 0x4120
-   __DATA.__objc_ivar: 0x30
--  __DATA.__data: 0x62a0
-+  __DATA.__data: 0x6280
-   __DATA.__objc_stublist: 0x10
--  __DATA.__bss: 0x8e68
-+  __DATA.__bss: 0x8ee8
-   __DATA.__common: 0xe0
-   __DATA_DIRTY.__objc_data: 0x1d0
-   __DATA_DIRTY.__data: 0x758
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7048
--  Symbols:   2145
+-  Symbols:   1793
 -  CStrings:  523
 +  Functions: 7067
-+  Symbols:   2152
++  Symbols:   1800
 +  CStrings:  524
- 
 Symbols:
 + __DATA__TtC14MentalHealthUI17LayoutAxisTracker
 + __IVARS__TtC14MentalHealthUI17LayoutAxisTracker

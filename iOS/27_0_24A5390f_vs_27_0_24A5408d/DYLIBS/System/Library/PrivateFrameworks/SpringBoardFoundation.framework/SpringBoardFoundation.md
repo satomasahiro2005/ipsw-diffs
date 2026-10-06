@@ -2,39 +2,25 @@
 
 > `/System/Library/PrivateFrameworks/SpringBoardFoundation.framework/SpringBoardFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb9720` | `0xb979c` | **`+0x7c`** |
+| `__TEXT.__cstring` | `0xed74` | `0xedba` | **`+0x46`** |
+| `__AUTH_CONST.__cfstring` | `0xbf20` | `0xbf40` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x5a0` | `0x5b8` | **`+0x18`** |
+| `__AUTH_CONST.__objc_const` | `0x1a740` | `0x1a750` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -4630.1.102.0.0
--  __TEXT.__text: 0xb9720
 +4636.102.1.0.0
-+  __TEXT.__text: 0xb979c
-   __TEXT.__objc_methlist: 0x82fc
-   __TEXT.__const: 0x25e0
--  __TEXT.__cstring: 0xed74
-+  __TEXT.__cstring: 0xedba
-   __TEXT.__gcc_except_tab: 0x794
-   __TEXT.__dlopen_cstrs: 0x46a
-   __TEXT.__oslogstring: 0x313d
 
-   __DATA_CONST.__objc_arraydata: 0x5a0
-   __DATA_CONST.__got: 0xc58
-   __AUTH_CONST.__const: 0xc60
--  __AUTH_CONST.__cfstring: 0xbf20
--  __AUTH_CONST.__objc_const: 0x1a740
--  __AUTH_CONST.__objc_intobj: 0x5a0
-+  __AUTH_CONST.__cfstring: 0xbf40
-+  __AUTH_CONST.__objc_const: 0x1a750
-+  __AUTH_CONST.__objc_intobj: 0x5b8
-   __AUTH_CONST.__objc_arrayobj: 0x2a0
-   __AUTH_CONST.__objc_doubleobj: 0x510
-   __AUTH_CONST.__auth_got: 0xd70
-
-   - /usr/lib/libobjc.A.dylib
-   Functions: 3867
-   Symbols:   8839
 -  CStrings:  2543
 +  CStrings:  2545
- 
 Functions:
 ~ _OUTLINED_FUNCTION_10 : 16 -> 8
 ~ _OUTLINED_FUNCTION_9 : 12 -> 28

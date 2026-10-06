@@ -4,58 +4,30 @@
 
 ```diff
 
- 		<key>DevelopmentPhase</key>
- 		<string>FeatureComplete</string>
- 	</dict>
+-	<key>requestCancellationV2</key>
 +	<key>protectedSystemContainerEmbedded</key>
-+	<dict>
-+		<key>DevelopmentPhase</key>
-+		<string>FeatureComplete</string>
-+	</dict>
-+	<key>protectedSystemContainerMacOS</key>
-+	<dict>
-+		<key>DevelopmentPhase</key>
-+		<string>FeatureComplete</string>
-+	</dict>
- 	<key>requestCancellationV2</key>
- 	<dict>
- 		<key>DevelopmentPhase</key>
- 		<string>FeatureComplete</string>
- 	</dict>
-+	<key>requestExecutionLogCompression</key>
-+	<dict>
-+		<key>DevelopmentPhase</key>
-+		<string>FeatureComplete</string>
-+	</dict>
- 	<key>routingKey</key>
- 	<dict>
- 		<key>DevelopmentPhase</key>
 
- 		<key>DevelopmentPhase</key>
- 		<string>FeatureComplete</string>
- 	</dict>
+-	<key>routingKey</key>
++	<key>protectedSystemContainerMacOS</key>
+
+-	<key>secTaskBundleIDResolution</key>
++	<key>requestCancellationV2</key>
++	<dict>
++		<key>DevelopmentPhase</key>
++		<string>FeatureComplete</string>
++	</dict>
++	<key>requestExecutionLogCompression</key>
+
 -	<key>serverDrivenIssuerMapping</key>
--	<dict>
--		<key>DevelopmentPhase</key>
--		<string>FeatureComplete</string>
--	</dict>
++	<key>routingKey</key>
+
 -	<key>serverDrivenIssuerMappingPreProduction</key>
--	<dict>
--		<key>DevelopmentPhase</key>
--		<string>FeatureComplete</string>
--	</dict>
- 	<key>vaultConfiguration</key>
- 	<dict>
- 		<key>DevelopmentPhase</key>
- 		<string>FeatureComplete</string>
- 	</dict>
++	<key>secTaskBundleIDResolution</key>
+
 +	<key>waitlistTokens</key>
 +	<dict>
 +		<key>DevelopmentPhase</key>
 +		<string>FeatureComplete</string>
 +	</dict>
- </dict>
- </plist>
- 
 
 ```

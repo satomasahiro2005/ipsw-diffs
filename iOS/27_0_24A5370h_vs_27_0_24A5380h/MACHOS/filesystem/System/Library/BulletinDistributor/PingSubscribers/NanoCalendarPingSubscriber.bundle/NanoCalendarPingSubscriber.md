@@ -2,9 +2,16 @@
 
 > `/System/Library/BulletinDistributor/PingSubscribers/NanoCalendarPingSubscriber.bundle/NanoCalendarPingSubscriber`
 
+### Same-size Content Changes
+
+- `__TEXT.__oslogstring`
+
+### Other Changes
+
 ```diff
-Sections:
-~ __TEXT.__oslogstring : content changed
+
+-744.0.0.0.0
++745.0.0.0.0
 CStrings:
 + "==> alerts_ttl [Jun 24 2026 00:37:24]"
 + "==> always_on_display [Jun 24 2026 00:37:24]"
@@ -52,5 +59,4 @@ CStrings:
 - "==> user_data_change [Jun 13 2026 02:04:45]"
 - "==> user_interaction [Jun 13 2026 02:04:45]"
 - "==> utility [Jun 13 2026 02:04:45]"
-
 ```

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/FamilyCircle.framework/FamilyCircle`
 
-```diff
+### Section Size Changes
 
- 290.0.0.0.0
--  __TEXT.__text: 0xca2b0
-+  __TEXT.__text: 0xca368
-   __TEXT.__objc_methlist: 0x4184
-   __TEXT.__const: 0x88c8
-   __TEXT.__gcc_except_tab: 0x47c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xca2b0` | `0xca368` | **`+0xb8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1babb11f0 -> sub_1baf301f0 : 220 -> 224
 ~ sub_1babdc1b0 -> sub_1baf5b1b4 : 2640 -> 2652

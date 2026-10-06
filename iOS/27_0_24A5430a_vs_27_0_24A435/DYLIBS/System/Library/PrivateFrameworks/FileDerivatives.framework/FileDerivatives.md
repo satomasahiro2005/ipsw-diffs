@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/FileDerivatives.framework/FileDerivatives`
 
-```diff
+### Section Size Changes
 
- 62.0.0.0.0
--  __TEXT.__text: 0x1e320
-+  __TEXT.__text: 0x1e364
-   __TEXT.__objc_methlist: 0x648
-   __TEXT.__cstring: 0xb8b
-   __TEXT.__const: 0xd38
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e320` | `0x1e364` | **`+0x44`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_23fca5a34 -> sub_23ff8fa34 : 732 -> 736
 ~ sub_23fca5d10 -> sub_23ff8fd14 : 680 -> 684

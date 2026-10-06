@@ -2,137 +2,68 @@
 
 > `/System/Library/Frameworks/FinanceKitUI.framework/FinanceKitUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3877d4` | `0x3903dc` | **`+0x8c08`** |
+| `__DATA.__bss` | `0x19cd8` | `0x1b038` | **`+0x1360`** |
+| `__TEXT.__const` | `0x244d4` | `0x25194` | **`+0xcc0`** |
+| `__AUTH_CONST.__auth_got` | `0x5050` | `0x5808` | **`+0x7b8`** |
+| `__TEXT.__swift5_typeref` | `0x39612` | `0x39c02` | **`+0x5f0`** |
+| `__AUTH_CONST.__const` | `0xea20` | `0xefa0` | **`+0x580`** |
+| `__TEXT.__oslogstring` | `0x3f5c` | `0x3b9c` | **`-0x3c0`** |
+| `__TEXT.__cstring` | `0xb284` | `0xaf04` | **`-0x380`** |
+| `__DATA_CONST.__got` | `0x28a0` | `0x2b20` | **`+0x280`** |
+| `__DATA.__data` | `0xd968` | `0xdbd8` | **`+0x270`** |
+| `__AUTH.__objc_data` | `0x37f8` | `0x3680` | **`-0x178`** |
+| `__TEXT.__constg_swiftt` | `0xb8bc` | `0xba20` | **`+0x164`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1a28` | `0x18c8` | **`-0x160`** |
+| `__TEXT.__swift5_fieldmd` | `0x8d34` | `0x8e4c` | **`+0x118`** |
+| `__TEXT.__unwind_info` | `0x9f98` | `0xa090` | **`+0xf8`** |
+| `__AUTH_CONST.__objc_const` | `0x6af8` | `0x6a18` | **`-0xe0`** |
+| `__AUTH.__data` | `0xe018` | `0xe0c0` | **`+0xa8`** |
+| `__TEXT.__eh_frame` | `0xca30` | `0xcad0` | **`+0xa0`** |
+| `__TEXT.__objc_methlist` | `0x1810` | `0x1778` | **`-0x98`** |
+| `__TEXT.__swift5_proto` | `0xd04` | `0xd9c` | **`+0x98`** |
+| `__TEXT.__swift5_assocty` | `0x2820` | `0x27a0` | **`-0x80`** |
+| `__TEXT.__swift5_capture` | `0x2e14` | `0x2dd0` | **`-0x44`** |
+| `__TEXT.__swift5_reflstr` | `0x81b7` | `0x81e7` | **`+0x30`** |
+| `__TEXT.__swift5_mpenum` | `0x70` | `0x90` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0xab4` | `0xad4` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x80c` | `0x7ec` | **`-0x20`** |
+| `__TEXT.__swift_as_ret` | `0x3f0` | `0x3d4` | **`-0x1c`** |
+| `__TEXT.__swift5_builtin` | `0x294` | `0x280` | **`-0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x390` | `0x380` | **`-0x10`** |
+| `__TEXT.__swift_as_entry` | `0x42c` | `0x41c` | **`-0x10`** |
+| `__TEXT.__swift5_protos` | `0x50` | `0x4c` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -366.1.0.0.0
--  __TEXT.__text: 0x3877d4
--  __TEXT.__objc_methlist: 0x1810
--  __TEXT.__const: 0x244d4
--  __TEXT.__cstring: 0xb284
--  __TEXT.__swift5_typeref: 0x39612
--  __TEXT.__swift5_capture: 0x2e14
--  __TEXT.__constg_swiftt: 0xb8bc
--  __TEXT.__swift5_reflstr: 0x81b7
--  __TEXT.__swift5_assocty: 0x2820
--  __TEXT.__swift5_fieldmd: 0x8d34
--  __TEXT.__swift5_builtin: 0x294
--  __TEXT.__swift5_proto: 0xd04
--  __TEXT.__swift5_types: 0xab4
--  __TEXT.__swift_as_entry: 0x42c
--  __TEXT.__swift_as_ret: 0x3f0
--  __TEXT.__swift_as_cont: 0x80c
--  __TEXT.__oslogstring: 0x3f5c
--  __TEXT.__swift5_mpenum: 0x70
--  __TEXT.__swift5_protos: 0x50
 +376.0.1.0.0
-+  __TEXT.__text: 0x3903dc
-+  __TEXT.__objc_methlist: 0x1778
-+  __TEXT.__const: 0x25194
-+  __TEXT.__cstring: 0xaf04
-+  __TEXT.__swift5_typeref: 0x39c02
-+  __TEXT.__swift5_capture: 0x2dd0
-+  __TEXT.__constg_swiftt: 0xba20
-+  __TEXT.__swift5_reflstr: 0x81e7
-+  __TEXT.__swift5_assocty: 0x27a0
-+  __TEXT.__swift5_fieldmd: 0x8e4c
-+  __TEXT.__swift5_builtin: 0x280
-+  __TEXT.__swift5_proto: 0xd9c
-+  __TEXT.__swift5_types: 0xad4
-+  __TEXT.__swift_as_entry: 0x41c
-+  __TEXT.__swift_as_ret: 0x3d4
-+  __TEXT.__swift_as_cont: 0x7ec
-+  __TEXT.__oslogstring: 0x3b9c
-+  __TEXT.__swift5_mpenum: 0x90
-+  __TEXT.__swift5_protos: 0x4c
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0x9f98
--  __TEXT.__eh_frame: 0xca30
-+  __TEXT.__unwind_info: 0xa090
-+  __TEXT.__eh_frame: 0xcad0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x2b8
--  __DATA_CONST.__objc_classlist: 0x390
-+  __DATA_CONST.__objc_classlist: 0x380
-   __DATA_CONST.__objc_catlist2: 0x38
-   __DATA_CONST.__objc_protolist: 0x1a0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1a28
-+  __DATA_CONST.__objc_selrefs: 0x18c8
-   __DATA_CONST.__objc_protorefs: 0xe8
-   __DATA_CONST.__objc_superrefs: 0x50
--  __DATA_CONST.__got: 0x28a0
--  __AUTH_CONST.__const: 0xea20
-+  __DATA_CONST.__got: 0x2b20
-+  __AUTH_CONST.__const: 0xefa0
-   __AUTH_CONST.__cfstring: 0xa0
--  __AUTH_CONST.__objc_const: 0x6af8
--  __AUTH_CONST.__auth_got: 0x5050
--  __AUTH.__objc_data: 0x37f8
--  __AUTH.__data: 0xe018
-+  __AUTH_CONST.__objc_const: 0x6a18
-+  __AUTH_CONST.__auth_got: 0x5808
-+  __AUTH.__objc_data: 0x3680
-+  __AUTH.__data: 0xe0c0
-   __DATA.__objc_ivar: 0x88
--  __DATA.__data: 0xd968
-+  __DATA.__data: 0xdbd8
-   __DATA.__objc_stublist: 0x40
--  __DATA.__bss: 0x19cd8
-+  __DATA.__bss: 0x1b038
-   __DATA.__common: 0x3d8
-   __DATA_DIRTY.__objc_data: 0x50
-   __DATA_DIRTY.__data: 0xcb8
 
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreImage.framework/CoreImage
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
 -  - /System/Library/Frameworks/CoreText.framework/CoreText
-   - /System/Library/Frameworks/CoreTransferable.framework/CoreTransferable
-+  - /System/Library/Frameworks/CoreVideo.framework/CoreVideo
-   - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
-   - /System/Library/Frameworks/DataDetection.framework/DataDetection
-   - /System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation
-   - /System/Library/Frameworks/ExtensionKit.framework/ExtensionKit
-   - /System/Library/Frameworks/FinanceKit.framework/FinanceKit
-   - /System/Library/Frameworks/Foundation.framework/Foundation
--  - /System/Library/Frameworks/FoundationModels.framework/FoundationModels
-   - /System/Library/Frameworks/ImageIO.framework/ImageIO
-   - /System/Library/Frameworks/LinkPresentation.framework/LinkPresentation
-   - /System/Library/Frameworks/MapKit.framework/MapKit
 
-   - /System/Library/PrivateFrameworks/DataDetectorsCore.framework/DataDetectorsCore
-   - /System/Library/PrivateFrameworks/Email.framework/Email
-   - /System/Library/PrivateFrameworks/EmailCore.framework/EmailCore
++  - /System/Library/Frameworks/CoreVideo.framework/CoreVideo
+
+-  - /System/Library/Frameworks/FoundationModels.framework/FoundationModels
+
 +  - /System/Library/PrivateFrameworks/GenerativeFunctions.framework/GenerativeFunctions
 +  - /System/Library/PrivateFrameworks/GenerativeFunctionsFoundation.framework/GenerativeFunctionsFoundation
-   - /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
-   - /System/Library/PrivateFrameworks/IconFoundation.framework/IconFoundation
-   - /System/Library/PrivateFrameworks/IconServices.framework/IconServices
 
-   - /System/Library/PrivateFrameworks/PassKitUI.framework/PassKitUI
-   - /System/Library/PrivateFrameworks/PassKitUIFoundation.framework/PassKitUIFoundation
-   - /System/Library/PrivateFrameworks/Preferences.framework/Preferences
 +  - /System/Library/PrivateFrameworks/PromptKit.framework/PromptKit
 +  - /System/Library/PrivateFrameworks/TokenGeneration.framework/TokenGeneration
 +  - /System/Library/PrivateFrameworks/TokenGenerationCore.framework/TokenGenerationCore
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-   - /System/Library/PrivateFrameworks/WalletBlastDoorSupport.framework/WalletBlastDoorSupport
-   - /System/Library/PrivateFrameworks/icloudMCCKit.framework/icloudMCCKit
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 14779
--  Symbols:   7555
+-  Symbols:   6872
 -  CStrings:  1292
 +  Functions: 14921
-+  Symbols:   7586
++  Symbols:   6944
 +  CStrings:  1293
- 
 Symbols:
 + _CGBitmapContextCreate
 + _CGColorSpaceCreateDeviceRGB
@@ -222,8 +153,6 @@ Symbols:
 + _kCVPixelBufferCGBitmapContextCompatibilityKey
 + _kCVPixelBufferCGImageCompatibilityKey
 + _kCVPixelBufferIOSurfacePropertiesKey
-+ _objc_msgSend$secondarySystemFillColor
-+ _objc_msgSend$setAppearance:
 + _symbolic SS12modelVersion______6reasont 12FinanceKitUI40FoundInPhotoEventExtractionFailureReasonO
 + _symbolic SS3raw_t
 + _symbolic SS7keyPath_t
@@ -531,49 +460,6 @@ Symbols:
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE29navigationBarBackButtonHiddenyQrSbFQOyAA6VStackVyAA15ModifiedContentVyAcAE08safeAreaJ04edge9alignment7spacing7contentQrAA12VerticalEdgeO_AA19HorizontalAlignmentV12CoreGraphics7CGFloatVSgqd__yXEtAaBRd__lFQOyAA06ScrollC0VyANyALyAA05TupleP0VyANy010FinanceKitB018AppSelectionHeader33_D07BCFB690D4DD4B89EC7D9AAA382462LLVAA14_PaddingLayoutVG_ANyANyA4_15ApplicationListA6_LLVAA16_FlexFrameLayoutVGA9_GQPGGA9_GG_ANyANyANyAA20GlassEffectContainerVyA4_08ContinueL0A6_LLVGA9_GA9_GA9_GQo_AA05_SafeR21RegionsIgnoringLayoutVGG_Qo__Qo_HO
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE29navigationBarBackButtonHiddenyQrSbFQOyAA6VStackVyAA15ModifiedContentVyAcAE08safeAreaJ04edge9alignment7spacing7contentQrAA12VerticalEdgeO_AA19HorizontalAlignmentV12CoreGraphics7CGFloatVSgqd__yXEtAaBRd__lFQOyAA06ScrollC0VyANyALyAA05TupleP0VyANy010FinanceKitB022AccountSelectionHeader33_D07BCFB690D4DD4B89EC7D9AAA382462LLVAA14_PaddingLayoutVGSg_ANyANyA4_11AccountListA6_LLVAA16_FlexFrameLayoutVGA9_GQPGGA9_GG_ANyANyANyAA20GlassEffectContainerVyA4_08ContinueL0A6_LLVGA9_GA9_GA9_GQo_AA05_SafeR21RegionsIgnoringLayoutVGG_Qo__Qo_HO
 - _kCAPackageTypeArchive
-- _objc_msgSend$_setAttributedTitle:
-- _objc_msgSend$addButton:
-- _objc_msgSend$appendAttributedString:
-- _objc_msgSend$blackColor
-- _objc_msgSend$boldButton
-- _objc_msgSend$buttonTray
-- _objc_msgSend$fontDescriptor
-- _objc_msgSend$fontDescriptorByAddingAttributes:
-- _objc_msgSend$fontWithDescriptor:size:
-- _objc_msgSend$headerView
-- _objc_msgSend$initWithFrame:
-- _objc_msgSend$initWithShape:
-- _objc_msgSend$initWithString:attributes:
-- _objc_msgSend$initWithTitle:detailText:icon:contentLayout:
-- _objc_msgSend$isGeometryFlipped
-- _objc_msgSend$lightGrayColor
-- _objc_msgSend$linkButton
-- _objc_msgSend$mainScreen
-- _objc_msgSend$packageWithContentsOfURL:type:options:error:
-- _objc_msgSend$pointSize
-- _objc_msgSend$presentViewController:animated:completion:
-- _objc_msgSend$presentedViewController
-- _objc_msgSend$removeFromSuperview
-- _objc_msgSend$rootLayer
-- _objc_msgSend$rootViewController
-- _objc_msgSend$setAccessibilityIdentifier:
-- _objc_msgSend$setAccessibilityTraits:
-- _objc_msgSend$setAutoresizingMask:
-- _objc_msgSend$setBadgeText:
-- _objc_msgSend$setColor:
-- _objc_msgSend$setContentsScale:
-- _objc_msgSend$setEnabled:
-- _objc_msgSend$setGeometryFlipped:
-- _objc_msgSend$setMasksToBounds:
-- _objc_msgSend$setNeedsDisplayOnBoundsChange:
-- _objc_msgSend$setPlatterSize:
-- _objc_msgSend$setPosition:
-- _objc_msgSend$setPreferredAction:
-- _objc_msgSend$setScale:
-- _objc_msgSend$setStyle:
-- _objc_msgSend$setTitle:forState:
-- _objc_msgSend$traitCollection
-- _objc_msgSend$window
 - _symbolic $s12FinanceKitUI28SystemLanguageModelProvidingP
 - _symbolic SDy__________G So24UIFontDescriptorTraitKeya So0A6Weighta
 - _symbolic SS12modelVersion_t

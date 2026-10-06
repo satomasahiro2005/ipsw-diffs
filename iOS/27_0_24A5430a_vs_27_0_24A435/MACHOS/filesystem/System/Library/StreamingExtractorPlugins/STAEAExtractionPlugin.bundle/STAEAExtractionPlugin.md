@@ -2,6 +2,8 @@
 
 > `/System/Library/StreamingExtractorPlugins/STAEAExtractionPlugin.bundle/STAEAExtractionPlugin`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_3618 : 20 -> 12

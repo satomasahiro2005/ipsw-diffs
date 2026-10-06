@@ -2,36 +2,26 @@
 
 > `/usr/lib/libauthinstall.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb9a08` | `0xb9a54` | **`+0x4c`** |
+| `__DATA_CONST.__got` | `0x410` | `0x418` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -1155.0.5.0.0
--  __TEXT.__text: 0xb7864
 +1155.40.6.0.0
-+  __TEXT.__text: 0xb78b0
-   __TEXT.__objc_methlist: 0x2a64
-   __TEXT.__cstring: 0x1ff77
-   __TEXT.__const: 0x653c
 
-   __DATA_CONST.__objc_selrefs: 0xd70
-   __DATA_CONST.__objc_superrefs: 0x1f8
-   __DATA_CONST.__objc_arraydata: 0x10
--  __DATA_CONST.__got: 0x410
-+  __DATA_CONST.__got: 0x418
-   __AUTH_CONST.__const: 0x15c0
-   __AUTH_CONST.__cfstring: 0xfb40
-   __AUTH_CONST.__objc_const: 0x4fd8
-
-   - /usr/lib/updaters/libSavageRestoreInfo_iOS.dylib
-   - /usr/lib/updaters/libT200Updater.dylib
-   Functions: 3807
--  Symbols:   5314
-+  Symbols:   5315
-   CStrings:  4746
- 
+-  Symbols:   4986
++  Symbols:   4987
 Symbols:
 + _kAMSupportHttpOptionRequestHTTPAllowed
 Functions:

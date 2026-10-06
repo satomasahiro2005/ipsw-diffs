@@ -2,103 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/NeutrinoCore.framework/NeutrinoCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x314798` | `0x31de10` | **`+0x9678`** |
+| `__AUTH_CONST.__objc_const` | `0x36938` | `0x37770` | **`+0xe38`** |
+| `__TEXT.__cstring` | `0x3e181` | `0x3e92e` | **`+0x7ad`** |
+| `__TEXT.__objc_methlist` | `0x2083c` | `0x20f14` | **`+0x6d8`** |
+| `__DATA.__bss` | `0x1290` | `0xf90` | **`-0x300`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb488` | `0xb6b0` | **`+0x228`** |
+| `__AUTH.__objc_data` | `0xf0` | `0x2d0` | **`+0x1e0`** |
+| `__TEXT.__const` | `0x2918` | `0x2798` | **`-0x180`** |
+| `__TEXT.__oslogstring` | `0x5741` | `0x58ae` | **`+0x16d`** |
+| `__AUTH_CONST.__cfstring` | `0x1cf00` | `0x1d060` | **`+0x160`** |
+| `__TEXT.__gcc_except_tab` | `0x8004` | `0x8150` | **`+0x14c`** |
+| `__TEXT.__unwind_info` | `0x8538` | `0x8680` | **`+0x148`** |
+| `__AUTH_CONST.__const` | `0x4e80` | `0x4f50` | **`+0xd0`** |
+| `__DATA_CONST.__const` | `0x3fc0` | `0x4050` | **`+0x90`** |
+| `__DATA.__objc_ivar` | `0x19c8` | `0x1a50` | **`+0x88`** |
+| `__DATA_CONST.__got` | `0x2220` | `0x2270` | **`+0x50`** |
+| `__DATA_CONST.__objc_classlist` | `0x15c8` | `0x15f8` | **`+0x30`** |
+| `__DATA_CONST.__objc_protorefs` | `0x98` | `0x68` | **`-0x30`** |
+| `__TEXT.__eh_frame` | `0x448` | `0x478` | **`+0x30`** |
+| `__TEXT.__swift5_assocty` | `0xa8` | `0x78` | **`-0x30`** |
+| `__DATA_CONST.__objc_protolist` | `0x500` | `0x4d8` | **`-0x28`** |
+| `__DATA_CONST.__objc_superrefs` | `0xfe8` | `0x1010` | **`+0x28`** |
+| `__DATA.__data` | `0x3958` | `0x3938` | **`-0x20`** |
+| `__TEXT.__constg_swiftt` | `0x178` | `0x158` | **`-0x20`** |
+| `__TEXT.__swift5_capture` | `0x210` | `0x230` | **`+0x20`** |
+| `__TEXT.__swift5_typeref` | `0x3e7` | `0x3c9` | **`-0x1e`** |
+| `__TEXT.__swift5_fieldmd` | `0x178` | `0x15c` | **`-0x1c`** |
+| `__AUTH_CONST.__auth_got` | `0x10e0` | `0x10c8` | **`-0x18`** |
+| `__AUTH_CONST.__objc_intobj` | `0x8d0` | `0x8e8` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0x7c` | `0x64` | **`-0x18`** |
+| `__TEXT.__swift5_builtin` | `0xdc` | `0xc8` | **`-0x14`** |
+| `__TEXT.__swift5_types` | `0x2c` | `0x28` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.235.0.0
--  __TEXT.__text: 0x309f14
--  __TEXT.__objc_methlist: 0x2083c
--  __TEXT.__const: 0x2918
 +916.40.110.0.0
-+  __TEXT.__text: 0x313370
-+  __TEXT.__objc_methlist: 0x20f14
-+  __TEXT.__const: 0x2798
-   __TEXT.__dlopen_cstrs: 0x45
--  __TEXT.__swift5_typeref: 0x3e7
-+  __TEXT.__swift5_typeref: 0x3c9
-   __TEXT.__swift5_reflstr: 0x93
--  __TEXT.__swift5_assocty: 0xa8
--  __TEXT.__constg_swiftt: 0x178
--  __TEXT.__swift5_builtin: 0xdc
--  __TEXT.__swift5_fieldmd: 0x178
--  __TEXT.__swift5_proto: 0x7c
--  __TEXT.__swift5_types: 0x2c
--  __TEXT.__cstring: 0x3e181
--  __TEXT.__swift5_capture: 0x210
--  __TEXT.__gcc_except_tab: 0x8004
--  __TEXT.__oslogstring: 0x5741
-+  __TEXT.__swift5_assocty: 0x78
-+  __TEXT.__constg_swiftt: 0x158
-+  __TEXT.__swift5_builtin: 0xc8
-+  __TEXT.__swift5_fieldmd: 0x15c
-+  __TEXT.__swift5_proto: 0x64
-+  __TEXT.__swift5_types: 0x28
-+  __TEXT.__cstring: 0x3e92e
-+  __TEXT.__swift5_capture: 0x230
-+  __TEXT.__gcc_except_tab: 0x8150
-+  __TEXT.__oslogstring: 0x58ae
-   __TEXT.__ustring: 0x2e
--  __TEXT.__unwind_info: 0xa058
--  __TEXT.__eh_frame: 0x448
-+  __TEXT.__unwind_info: 0xa1d0
-+  __TEXT.__eh_frame: 0x478
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3fc0
--  __DATA_CONST.__objc_classlist: 0x15c8
-+  __DATA_CONST.__const: 0x4050
-+  __DATA_CONST.__objc_classlist: 0x15f8
-   __DATA_CONST.__objc_catlist: 0xa8
--  __DATA_CONST.__objc_protolist: 0x500
-+  __DATA_CONST.__objc_protolist: 0x4d8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb488
--  __DATA_CONST.__objc_protorefs: 0x98
--  __DATA_CONST.__objc_superrefs: 0xfe8
-+  __DATA_CONST.__objc_selrefs: 0xb6b0
-+  __DATA_CONST.__objc_protorefs: 0x68
-+  __DATA_CONST.__objc_superrefs: 0x1010
-   __DATA_CONST.__objc_arraydata: 0xae0
--  __DATA_CONST.__got: 0x2220
--  __AUTH_CONST.__const: 0x4e80
--  __AUTH_CONST.__cfstring: 0x1cf00
--  __AUTH_CONST.__objc_const: 0x36938
-+  __DATA_CONST.__got: 0x2270
-+  __AUTH_CONST.__const: 0x4f50
-+  __AUTH_CONST.__cfstring: 0x1d060
-+  __AUTH_CONST.__objc_const: 0x37770
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__objc_intobj: 0x8d0
-+  __AUTH_CONST.__objc_intobj: 0x8e8
-   __AUTH_CONST.__objc_dictobj: 0x348
-   __AUTH_CONST.__objc_doubleobj: 0x210
-   __AUTH_CONST.__objc_floatobj: 0x70
-   __AUTH_CONST.__objc_arrayobj: 0xf0
--  __AUTH_CONST.__auth_got: 0x10e0
--  __AUTH.__objc_data: 0xf0
--  __DATA.__objc_ivar: 0x19c8
--  __DATA.__data: 0x3958
-+  __AUTH_CONST.__auth_got: 0x10c8
-+  __AUTH.__objc_data: 0x2d0
-+  __DATA.__objc_ivar: 0x1a50
-+  __DATA.__data: 0x3938
-   __DATA.__crash_info: 0x148
-   __DATA_DIRTY.__objc_data: 0xd8e0
-   __DATA_DIRTY.__data: 0x8
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11773
--  Symbols:   25331
+-  Symbols:   20580
 -  CStrings:  7240
 +  Functions: 11910
-+  Symbols:   25634
++  Symbols:   20811
 +  CStrings:  7288
- 
 Symbols:
 + +[NUAssetCapability HDR]
 + +[NUAssetCapability audio]
@@ -838,82 +791,6 @@ Symbols:
 + ___block_descriptor_56_e8_32s40s48s_e20_v16?0"NUResponse"8ls32l8s40l8s48l8
 + _kCGImagePropertyColorModel
 + _kCGImagePropertyProfileName
-+ _objc_msgSend$HDR
-+ _objc_msgSend$_captureImageResponse:
-+ _objc_msgSend$_captureVideoResponse:
-+ _objc_msgSend$_clearInputPort:error:
-+ _objc_msgSend$_defaultGainMapExportOptions:
-+ _objc_msgSend$_evaluateCapability:
-+ _objc_msgSend$_renderContextWithName:
-+ _objc_msgSend$_requestedAuxiliaryOptions
-+ _objc_msgSend$alternateMediaForMedia:targetHeadroom:error:
-+ _objc_msgSend$applyImageOrientationAsMetadata
-+ _objc_msgSend$applyVideoOrientationAsMetadata
-+ _objc_msgSend$audio
-+ _objc_msgSend$audioMode
-+ _objc_msgSend$audioOutputSettings
-+ _objc_msgSend$auxErrors
-+ _objc_msgSend$auxiliaryImageOptions
-+ _objc_msgSend$clearData
-+ _objc_msgSend$containerMediaForMedia:
-+ _objc_msgSend$dataForCapability:
-+ _objc_msgSend$defaultPipelineNameFromTypeName:
-+ _objc_msgSend$evaluateForAsset:
-+ _objc_msgSend$evaluateOutputChannel:error:
-+ _objc_msgSend$forceGainMapGeneration
-+ _objc_msgSend$gainMapApplyPipeline
-+ _objc_msgSend$gainMapComputePipelineWithOptions:
-+ _objc_msgSend$gainMapExportOptions
-+ _objc_msgSend$gainMapMediaFromBaseMedia:alternateMedia:scale:flexRangeProperties:error:
-+ _objc_msgSend$hdrGainMap
-+ _objc_msgSend$hdrMediaFromBaseMedia:gainMap:targetHeadroom:error:
-+ _objc_msgSend$heic
-+ _objc_msgSend$imageColorSpace
-+ _objc_msgSend$imageFormat
-+ _objc_msgSend$initWithAsset:name:
-+ _objc_msgSend$initWithAsset:version:name:
-+ _objc_msgSend$initWithImageFormat:videoCodecType:
-+ _objc_msgSend$initWithLivePhotoExportRequest:
-+ _objc_msgSend$initWithMedia:destinationURL:
-+ _objc_msgSend$initWithMedia:exportFormat:
-+ _objc_msgSend$initWithName:opaque:
-+ _objc_msgSend$initWithRegion:scale:
-+ _objc_msgSend$initWithRenderNodeClass:baseSettings:name:
-+ _objc_msgSend$isContainer
-+ _objc_msgSend$livePhotoRequest
-+ _objc_msgSend$metadataItem
-+ _objc_msgSend$mixMedia:alternate:targetHeadroom:error:
-+ _objc_msgSend$nullDataWithOptionalFormat:
-+ _objc_msgSend$pairingIdentifier
-+ _objc_msgSend$pipelineIsOpaque
-+ _objc_msgSend$pipelineName
-+ _objc_msgSend$rawDecode
-+ _objc_msgSend$rawDecode_v6
-+ _objc_msgSend$rawDecode_v7
-+ _objc_msgSend$rawDecode_v8
-+ _objc_msgSend$rawDecode_v9
-+ _objc_msgSend$removeInputNamed:
-+ _objc_msgSend$removeOutputNamed:
-+ _objc_msgSend$setApplyImageOrientationAsMetadata:
-+ _objc_msgSend$setApplyVideoOrientationAsMetadata:
-+ _objc_msgSend$setAuxiliaryImageOptions:
-+ _objc_msgSend$setBypassOutputSettingsIfNoComposition:
-+ _objc_msgSend$setForceGainMapGeneration:
-+ _objc_msgSend$setGainMapExportOptions:
-+ _objc_msgSend$setIdentifier:
-+ _objc_msgSend$setImageColorSpace:
-+ _objc_msgSend$setMinimumRenderInterval:
-+ _objc_msgSend$setPairingIdentifier:
-+ _objc_msgSend$setTargetPixelFormat:
-+ _objc_msgSend$setVideoColorSpace:
-+ _objc_msgSend$setVideoComplementURL:
-+ _objc_msgSend$shouldShowContents
-+ _objc_msgSend$toneMapHDRMedia:targetHeadroom:error:
-+ _objc_msgSend$toneMapPipeline
-+ _objc_msgSend$videoCodecType
-+ _objc_msgSend$videoColorSpace
-+ _objc_msgSend$videoComplementURL
-+ _objc_msgSend$videoRequest
 - +[_NUPipeline defaultPipelineNameWithIdentifier:]
 - -[NUFixedRegionPolicy setScale:]
 - -[NUImageExportJob auxiliaryImageTypes]
@@ -1419,10 +1296,6 @@ Symbols:
 - _associated conformance So20NUMediaAttachmentKeyaSHSCSQ
 - _associated conformance So20NUMediaAttachmentKeyas20_SwiftNewtypeWrapperSCSY
 - _associated conformance So20NUMediaAttachmentKeyas20_SwiftNewtypeWrapperSCs35_HasCustomAnyHashableRepresentation
-- _objc_msgSend$defaultPipelineNameWithIdentifier:
-- _objc_msgSend$initWithAsset:identifier:
-- _objc_msgSend$initWithAsset:version:identifier:
-- _objc_msgSend$initWithRenderNodeClass:baseSettings:identifier:
 - _swift_dynamicCastObjCProtocolUnconditional
 - _symbolic _____ So20NUMediaAttachmentKeya
 CStrings:

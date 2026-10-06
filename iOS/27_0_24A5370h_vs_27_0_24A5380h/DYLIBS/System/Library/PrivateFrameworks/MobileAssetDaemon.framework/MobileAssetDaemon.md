@@ -2,99 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/MobileAssetDaemon.framework/MobileAssetDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x26284c` | `0x261884` | **`-0xfc8`** |
+| `__TEXT.__cstring` | `0x3f3f6` | `0x3f146` | **`-0x2b0`** |
+| `__DATA_CONST.__got` | `0x1070` | `0x1280` | **`+0x210`** |
+| `__AUTH_CONST.__cfstring` | `0x329a0` | `0x32820` | **`-0x180`** |
+| `__TEXT.__gcc_except_tab` | `0xdbf8` | `0xda84` | **`-0x174`** |
+| `__TEXT.__oslogstring` | `0x5e2fd` | `0x5e40d` | **`+0x110`** |
+| `__AUTH.__objc_data` | `0x940` | `0x878` | **`-0xc8`** |
+| `__DATA_DIRTY.__objc_data` | `0x2468` | `0x2530` | **`+0xc8`** |
+| `__AUTH_CONST.__objc_const` | `0x18e40` | `0x18ed0` | **`+0x90`** |
+| `__TEXT.__objc_methlist` | `0x12c84` | `0x12c04` | **`-0x80`** |
+| `__TEXT.__unwind_info` | `0x4888` | `0x4818` | **`-0x70`** |
+| `__DATA_CONST.__objc_selrefs` | `0xaf28` | `0xaec0` | **`-0x68`** |
+| `__DATA_DIRTY.__bss` | `0x560` | `0x5b0` | **`+0x50`** |
+| `__DATA.__bss` | `0x598` | `0x550` | **`-0x48`** |
+| `__DATA_DIRTY.__data` | `0x78` | `0xa8` | **`+0x30`** |
+| `__AUTH.__data` | `0xe8` | `0xc0` | **`-0x28`** |
+| `__DATA.__objc_ivar` | `0x1804` | `0x1810` | **`+0xc`** |
+| `__DATA.__data` | `0x1120` | `0x1118` | **`-0x8`** |
+| `__DATA_CONST.__objc_arraydata` | `0xeb8` | `0xec0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x26284c
--  __TEXT.__objc_methlist: 0x12c84
-+  __TEXT.__text: 0x261884
-+  __TEXT.__objc_methlist: 0x12c04
-   __TEXT.__const: 0x15aa
--  __TEXT.__cstring: 0x3f3f6
--  __TEXT.__oslogstring: 0x5e2fd
--  __TEXT.__gcc_except_tab: 0xdbf8
-+  __TEXT.__cstring: 0x3f146
-+  __TEXT.__oslogstring: 0x5e40d
-+  __TEXT.__gcc_except_tab: 0xda84
-   __TEXT.__dlopen_cstrs: 0x5a
-   __TEXT.__constg_swiftt: 0xf0
-   __TEXT.__swift5_typeref: 0x146
+-2215.0.4.0.0
++2215.0.13.0.0
 
-   __TEXT.__swift5_assocty: 0x48
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_proto: 0x24
--  __TEXT.__unwind_info: 0x4888
-+  __TEXT.__unwind_info: 0x4818
-   __TEXT.__eh_frame: 0x10c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0xb0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xaf28
-+  __DATA_CONST.__objc_selrefs: 0xaec0
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x358
--  __DATA_CONST.__objc_arraydata: 0xeb8
--  __DATA_CONST.__got: 0x1070
-+  __DATA_CONST.__objc_arraydata: 0xec0
-+  __DATA_CONST.__got: 0x1280
-   __AUTH_CONST.__const: 0x1040
--  __AUTH_CONST.__cfstring: 0x329a0
--  __AUTH_CONST.__objc_const: 0x18e40
-+  __AUTH_CONST.__cfstring: 0x32820
-+  __AUTH_CONST.__objc_const: 0x18ed0
-   __AUTH_CONST.__objc_arrayobj: 0x330
-   __AUTH_CONST.__objc_intobj: 0x13c8
-   __AUTH_CONST.__objc_dictobj: 0x2d0
-   __AUTH_CONST.__auth_got: 0x1210
--  __AUTH.__objc_data: 0x940
--  __AUTH.__data: 0xe8
--  __DATA.__objc_ivar: 0x1804
--  __DATA.__data: 0x1120
-+  __AUTH.__objc_data: 0x878
-+  __AUTH.__data: 0xc0
-+  __DATA.__objc_ivar: 0x1810
-+  __DATA.__data: 0x1118
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x598
--  __DATA_DIRTY.__objc_data: 0x2468
--  __DATA_DIRTY.__data: 0x78
--  __DATA_DIRTY.__bss: 0x560
-+  __DATA.__bss: 0x550
-+  __DATA_DIRTY.__objc_data: 0x2530
-+  __DATA_DIRTY.__data: 0xa8
-+  __DATA_DIRTY.__bss: 0x5b0
-   - /System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7278
--  Symbols:   24342
--  CStrings:  17448
+-  Symbols:   11420
+-  CStrings:  10965
 +  Functions: 7268
-+  Symbols:   24311
-+  CStrings:  17418
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
++  Symbols:   11412
++  CStrings:  10947
 Symbols:
 + +[MADAnalyticsBiomeEventPayload biomePayloadPSUSComplete:]
 + +[MADAutoAssetControlManager preferenceStagerInjectAvailableAlreadyDownloaded]
@@ -161,22 +105,6 @@ Symbols:
 + _OUTLINED_FUNCTION_73
 + _OUTLINED_FUNCTION_75
 + _kMobileAssetPreferencesAutoAssetStagerInjectAvailableAlreadyDownloaded
-+ _objc_msgSend$_checkAndEmitPSUSCompletionIfNeeded
-+ _objc_msgSend$_emitPSUSCompletionBiomeEvent
-+ _objc_msgSend$addToPrePersonalizedSelectors:addingAssetSelector:
-+ _objc_msgSend$assetPersonalizatonAttemptCompletePostEvent:withControlParam:justEncounteredError:
-+ _objc_msgSend$biomePayloadPSUSComplete:
-+ _objc_msgSend$dedupAssetSelectors:dedupingSelectors:
-+ _objc_msgSend$doesPersonalizationErrorIndicateServerUnreachable:
-+ _objc_msgSend$injectAvailableAlreadyDownloaded:
-+ _objc_msgSend$nextSetAtomicEntryToDownload
-+ _objc_msgSend$preferenceStagerInjectAvailableAlreadyDownloaded
-+ _objc_msgSend$psusCompletionEventEmitted
-+ _objc_msgSend$refreshOnFilesystemFromManagerPromotingIfStaged:promotingIfStaged:
-+ _objc_msgSend$setAtomicEntriesToDownload
-+ _objc_msgSend$setNextSetAtomicEntryToDownload:
-+ _objc_msgSend$setPsusCompletionEventEmitted:
-+ _objc_msgSend$setSetAtomicEntriesToDownload:
 - +[MADActivityManager transferOwnership:toOwner:reason:]
 - +[MADAutoAssetStager migrateMismatchedPersistedSetPromotionVersion:forEntryID:withMismatchedState:]
 - -[DownloadManager getBackoffParametersForError:base:max:]
@@ -250,25 +178,6 @@ Symbols:
 - _OUTLINED_FUNCTION_47
 - _OUTLINED_FUNCTION_72
 - _OUTLINED_FUNCTION_74
-- _objc_msgSend$action_AddToStagedDecideMoreAvailable:error:
-- _objc_msgSend$action_AlteredInvalAllAvailable:error:
-- _objc_msgSend$action_AlteredInvalAllAvailableCancelActiveJob:error:
-- _objc_msgSend$action_ClientAcceptEraseCancelActiveJob:error:
-- _objc_msgSend$action_ClientNewerReplyEmptyDetermine:error:
-- _objc_msgSend$action_DecideMoreAvailable:error:
-- _objc_msgSend$action_RemoveClient:error:
-- _objc_msgSend$action_ReplyNothingStagedEraseAll:error:
-- _objc_msgSend$action_SetLookupNoneContinue:error:
-- _objc_msgSend$action_SetTargetInvalAllAvailable:error:
-- _objc_msgSend$action_SetTargetInvalAllAvailableCancelActiveJob:error:
-- _objc_msgSend$assetPersonalizatonAttemptCompletePostEvent:withControlParam:
-- _objc_msgSend$assignOwner:
-- _objc_msgSend$getBackoffParametersForError:base:max:
-- _objc_msgSend$nameOfLayer:
-- _objc_msgSend$nextSetSpecifierToDownload
-- _objc_msgSend$recordFailedOperation:fromLayer:forAssetID:withSelector:failingWithError:forTargetOSVersion:forTargetBuildVersion:
-- _objc_msgSend$refreshOnFilesystemFromManagerPromotingIfStaged:
-- _objc_msgSend$setNextSetSpecifierToDownload:
 CStrings:
 + "%@:_setCalculateDownloadSpace"
 + "%@:newStagingInfoWithGroupsAvailableForStaging"
@@ -340,5 +249,4 @@ CStrings:
 - "{%@:newStagingInfoWithGroupsAvailableForStaging} failed to build attributes/expected-bytes | groupName:%@"
 - "{notifyLockerAsIndicatedByJob} [NOTIFY-LOCKER] client lock request without desire for eventInfo:%@"
 - "{notifyLockerAsIndicatedByJob} [NOTIFY-LOCKER] should never be called for set-job"
-
 ```

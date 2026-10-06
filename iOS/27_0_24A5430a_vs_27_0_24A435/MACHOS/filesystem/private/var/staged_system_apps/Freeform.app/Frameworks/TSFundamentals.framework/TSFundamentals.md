@@ -2,12 +2,14 @@
 
 > `/private/var/staged_system_apps/Freeform.app/Frameworks/TSFundamentals.framework/TSFundamentals`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
+- `__DATA_CONST.__const`
+- `__TEXT.__eh_frame`
 - `__TEXT.__objc_methlist`
 - `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
+
+### Other Changes
 
 ```text
 Functions:

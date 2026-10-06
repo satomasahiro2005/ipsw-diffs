@@ -2,47 +2,27 @@
 
 > `/System/Library/VideoEncoders/AppleProResHWEncoder.videoencoder`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x208d8` | `0x208b0` | **`-0x28`** |
+| `__TEXT.__unwind_info` | `0x438` | `0x448` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x308` | `0x310` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -600.24.1.0.0
--  __TEXT.__text: 0x208d8 sha256:b1c74ac574c2f8667fce9a90d654db5493f38c8b261c73213ac76d3e3dbaea68
 +600.38.0.0.0
-+  __TEXT.__text: 0x208b0 sha256:dcff8c1bb7a3b4b83a1ef631f83e7a043d8805c186ad67940fbbdc448548dff5
-   __TEXT.__const: 0x746f0 sha256:9a064c81dd6e94dd9d590a93b0e46b8e6482a1245abd8b15b16cd5bc7b6317aa
--  __TEXT.__gcc_except_tab: 0x308 sha256:1f55016bda6d52726d675471237edf77fb69c437eb67ab97427cc8cb644fcc82
-+  __TEXT.__gcc_except_tab: 0x310 sha256:1e48fec7bd93a4bb8f98a7d871bc5b9cbaf4778ce797c16ccbe045143555bcdd
-   __TEXT.__cstring: 0x1403 sha256:aad87f8a1cf3917517b7933280684a1991a117f80e2254e223aa4dc3ee153969
-   __TEXT.__oslogstring: 0x40f4 sha256:7d41288e2edd07e47c28c29fcdf9c14f3fd9309e2e1ec6d803702c6d093fc6e2
--  __TEXT.__unwind_info: 0x438 sha256:23eb521076693172e094061bbe67a09d7467a13de622c86c1221488204fed01c
-+  __TEXT.__unwind_info: 0x448 sha256:758a1f80c34251d7bd41a6c25bc383bdcb3736e2416cd24474f206b414cfb71e
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__weak_got: 0x8 sha256:baed7a8f4fe06577baf9413d1425189458482e4f64d55b4f5cc304378385a036
-+  __DATA_CONST.__weak_got: 0x8 sha256:0187a61bf3fae6fc3b3aa794eddabd32ea418a3c89d235dd3a82b6bd02e4fd49
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x188 sha256:b9778d7cd06e8db3ed4bcba998ccc99f9e21946bfc3b3442b9287c46a343c62e
--  __AUTH_CONST.__cfstring: 0x360 sha256:c4a1f7509ebbccaf323c407e1c47025ae349158e4ae1f41e91d92751ff560a77
--  __AUTH_CONST.__weak_auth_got: 0x40 sha256:9985de6479d2109ded7c3467f3d269b2f5c672bf5ba337730046ada6ec4a8704
-+  __AUTH_CONST.__const: 0x188 sha256:b6460d59e09c5346205ff8a1440879bd77453898ae3ad73fbe3103a29f591e9d
-+  __AUTH_CONST.__cfstring: 0x360 sha256:ccc9bb323e9a2d6f17acf61ca39663a8db9d01935bef406be276fae77551a5d0
-+  __AUTH_CONST.__weak_auth_got: 0x40 sha256:d5f23e8a199c354d0215a9e39cc6bab12d2eeaba628e0c5b1f39b4c97f7c1ff3
-   __AUTH_CONST.__auth_got: 0x598 sha256:50e54aab30bf9dd428b5bb49c12736ef5cfa318a66930fc837b29067f332fdbb
-   __DATA.__data: 0xb sha256:c38e04005892d8e9d616567903bb1e719e623e8ed7248a253ccaadefa39e87f2
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
 
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
--  UUID: 6EF5BF24-B7CD-3DBE-B839-936BC8EBBBC3
 -  Functions: 493
--  Symbols:   1425
-+  UUID: 2A0D3A26-9A89-3BA5-9216-30671DDC50D6
+-  Symbols:   602
 +  Functions: 494
-+  Symbols:   1427
-   CStrings:  430
- 
++  Symbols:   603
 Symbols:
 + __ZN23interchange_compression6header3getEjj
-+ __ZN23interchange_compression6header3getEjj.cold.1
 + __ZNSt12length_errorC1B9fqe220106EPKc
 + __ZNSt3__111__sift_downB9fqe220106INS_17_ClassicAlgPolicyELb0ERNS_6__lessIvvEENS_16reverse_iteratorINS_11__wrap_iterIPNS_4pairIttEEEEEEEEvT2_OT1_NS_15iterator_traitsISC_E15difference_typeESH_
 + __ZNSt3__111__sift_downB9fqe220106INS_17_ClassicAlgPolicyELb0ERNS_6__lessIvvEEPNS_4pairIttEEEEvT2_OT1_NS_15iterator_traitsIS8_E15difference_typeESD_
@@ -80,7 +60,6 @@ Symbols:
 + __ZNSt3__19__sift_upB9fqe220106INS_17_ClassicAlgPolicyERNS_6__lessIvvEENS_16reverse_iteratorINS_11__wrap_iterIPNS_4pairIttEEEEEEEEvT1_SC_OT0_NS_15iterator_traitsISC_E15difference_typeE
 + __ZNSt3__19__sift_upB9fqe220106INS_17_ClassicAlgPolicyERNS_6__lessIvvEEPNS_4pairIttEEEEvT1_S8_OT0_NS_15iterator_traitsIS8_E15difference_typeE
 + __ZSt28__throw_bad_array_new_lengthB9fqe220106v
-- __ZN23interchange_compression10compressor11pack_headerER8bit_packbRj.cold.2
 - __ZNSt12length_errorC1B9fqe220100EPKc
 - __ZNSt3__111__sift_downB9fqe220100INS_17_ClassicAlgPolicyELb0ERNS_6__lessIvvEENS_16reverse_iteratorINS_11__wrap_iterIPNS_4pairIttEEEEEEEEvT2_OT1_NS_15iterator_traitsISC_E15difference_typeESH_
 - __ZNSt3__111__sift_downB9fqe220100INS_17_ClassicAlgPolicyELb0ERNS_6__lessIvvEEPNS_4pairIttEEEEvT2_OT1_NS_15iterator_traitsIS8_E15difference_typeESD_
@@ -118,5 +97,4 @@ Symbols:
 - __ZNSt3__19__sift_upB9fqe220100INS_17_ClassicAlgPolicyERNS_6__lessIvvEENS_16reverse_iteratorINS_11__wrap_iterIPNS_4pairIttEEEEEEEEvT1_SC_OT0_NS_15iterator_traitsISC_E15difference_typeE
 - __ZNSt3__19__sift_upB9fqe220100INS_17_ClassicAlgPolicyERNS_6__lessIvvEEPNS_4pairIttEEEEvT1_S8_OT0_NS_15iterator_traitsIS8_E15difference_typeE
 - __ZSt28__throw_bad_array_new_lengthB9fqe220100v
-
 ```

@@ -2,77 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/NeighborhoodActivityConduit.framework/NeighborhoodActivityConduit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6d4bc` | `0x6df08` | **`+0xa4c`** |
+| `__DATA.__bss` | `0x18600` | `0x18900` | **`+0x300`** |
+| `__TEXT.__const` | `0xed28` | `0xeef8` | **`+0x1d0`** |
+| `__AUTH.__data` | `—` | `0x80` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x2d28` | `0x2da0` | **`+0x78`** |
+| `__DATA.__data` | `0x2e68` | `0x2ec0` | **`+0x58`** |
+| `__TEXT.__swift5_fieldmd` | `0x20b8` | `0x20f8` | **`+0x40`** |
+| `__TEXT.__eh_frame` | `0x3500` | `0x3538` | **`+0x38`** |
+| `__TEXT.__cstring` | `0x132d` | `0x135d` | **`+0x30`** |
+| `__TEXT.__constg_swiftt` | `0x180c` | `0x1834` | **`+0x28`** |
+| `__TEXT.__swift5_typeref` | `0x1a8f` | `0x1ab7` | **`+0x28`** |
+| `__TEXT.__swift5_proto` | `0xcc0` | `0xcd8` | **`+0x18`** |
+| `__DATA_CONST.__const` | `0x6c8` | `0x6d8` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0x3c78` | `0x3c88` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x8a8` | `0x8a0` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0x254` | `0x258` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__swift5_reflstr`
+
+### Other Changes
 
 ```diff
 
 -1626.200.65.0.0
--  __TEXT.__text: 0x6a6e8
--  __TEXT.__const: 0xed28
--  __TEXT.__swift5_typeref: 0x1a8f
--  __TEXT.__cstring: 0x132d
 +1626.200.84.0.0
-+  __TEXT.__text: 0x6b104
-+  __TEXT.__const: 0xeef8
-+  __TEXT.__swift5_typeref: 0x1ab7
-+  __TEXT.__cstring: 0x135d
-   __TEXT.__swift5_reflstr: 0x10e1
-   __TEXT.__swift5_assocty: 0x390
--  __TEXT.__constg_swiftt: 0x180c
--  __TEXT.__swift5_fieldmd: 0x20b8
--  __TEXT.__swift5_proto: 0xcc0
--  __TEXT.__swift5_types: 0x254
-+  __TEXT.__constg_swiftt: 0x1834
-+  __TEXT.__swift5_fieldmd: 0x20f8
-+  __TEXT.__swift5_proto: 0xcd8
-+  __TEXT.__swift5_types: 0x258
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift5_capture: 0x10c
-   __TEXT.__swift_as_entry: 0x2c
-   __TEXT.__swift_as_ret: 0x20
-   __TEXT.__swift_as_cont: 0x4c
-   __TEXT.__oslogstring: 0x162
--  __TEXT.__unwind_info: 0x3c58
--  __TEXT.__eh_frame: 0x3500
-+  __TEXT.__unwind_info: 0x3cd0
-+  __TEXT.__eh_frame: 0x3538
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x6c8
-+  __DATA_CONST.__const: 0x6d8
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x18
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x22d8
-   __AUTH_CONST.__objc_const: 0x2c8
--  __AUTH_CONST.__auth_got: 0x8a8
--  __DATA.__data: 0x2e68
-+  __AUTH_CONST.__auth_got: 0x8a0
-+  __AUTH.__data: 0x80
-+  __DATA.__data: 0x2ec0
-   __DATA_DIRTY.__objc_data: 0x50
--  __DATA_DIRTY.__data: 0x3c78
-+  __DATA_DIRTY.__data: 0x3c88
-   __DATA_DIRTY.__bss: 0x1200
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 5351
 -  Symbols:   12478
 -  CStrings:  130
 +  Functions: 5399
 +  Symbols:   12573
 +  CStrings:  131
- 
 Symbols:
 + _$s27NeighborhoodActivityConduit31NCProtoStartConversationRequestV12handleValuesSaySSGvM
 + _$s27NeighborhoodActivityConduit31NCProtoStartConversationRequestV12handleValuesSaySSGvM.resume

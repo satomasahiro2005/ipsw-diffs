@@ -2,59 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/PhotoLibraryServicesCore.framework/PhotoLibraryServicesCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcb768` | `0xcbe58` | **`+0x6f0`** |
+| `__AUTH_CONST.__cfstring` | `0x12020` | `0x122e0` | **`+0x2c0`** |
+| `__TEXT.__cstring` | `0x15f4c` | `0x161df` | **`+0x293`** |
+| `__TEXT.__oslogstring` | `0xb154` | `0xb26b` | **`+0x117`** |
+| `__TEXT.__const` | `0x2324` | `0x23cc` | **`+0xa8`** |
+| `__DATA_CONST.__const` | `0x3c40` | `0x3cb0` | **`+0x70`** |
+| `__AUTH_CONST.__const` | `0x35c8` | `0x35e8` | **`+0x20`** |
+| `__DATA.__bss` | `0xdb0` | `0xdc0` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x833c` | `0x834c` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4ca0` | `0x4ca8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.234.0.0
--  __TEXT.__text: 0xcb768
--  __TEXT.__objc_methlist: 0x833c
--  __TEXT.__const: 0x2324
 +912.0.235.0.0
-+  __TEXT.__text: 0xcbe58
-+  __TEXT.__objc_methlist: 0x834c
-+  __TEXT.__const: 0x23cc
-   __TEXT.__dlopen_cstrs: 0x19c
-   __TEXT.__gcc_except_tab: 0x5710
--  __TEXT.__cstring: 0x15f4c
--  __TEXT.__oslogstring: 0xb154
-+  __TEXT.__cstring: 0x161df
-+  __TEXT.__oslogstring: 0xb26b
-   __TEXT.__ustring: 0x4
-   __TEXT.__unwind_info: 0x3488
-   __TEXT.__objc_stubs: 0x0
 
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3c40
-+  __DATA_CONST.__const: 0x3cb0
-   __DATA_CONST.__objc_classlist: 0x408
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x160
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4ca0
-+  __DATA_CONST.__objc_selrefs: 0x4ca8
-   __DATA_CONST.__objc_protorefs: 0xc8
-   __DATA_CONST.__objc_superrefs: 0x268
-   __DATA_CONST.__objc_arraydata: 0x420
-   __DATA_CONST.__got: 0xa48
--  __AUTH_CONST.__const: 0x35c8
--  __AUTH_CONST.__cfstring: 0x12020
-+  __AUTH_CONST.__const: 0x35e8
-+  __AUTH_CONST.__cfstring: 0x122e0
-   __AUTH_CONST.__objc_const: 0xaa08
-   __AUTH_CONST.__objc_intobj: 0x918
-   __AUTH_CONST.__objc_floatobj: 0x10
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libperfcheck.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 3968
--  Symbols:   9432
+-  Symbols:   7892
 -  CStrings:  3671
 +  Functions: 3976
-+  Symbols:   9456
++  Symbols:   7916
 +  CStrings:  3697
- 
 Symbols:
 + +[PLValidatedSavedAssetType maskForProvenanceProcessingExclusions]
 + GCC_except_table1453

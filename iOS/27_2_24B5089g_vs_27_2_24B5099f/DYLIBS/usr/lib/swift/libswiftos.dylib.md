@@ -2,53 +2,30 @@
 
 > `/usr/lib/swift/libswiftos.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x16088` | `0x164b8` | **`+0x430`** |
+| `__TEXT.__eh_frame` | `0x328` | `0x298` | **`-0x90`** |
+| `__DATA.__bss` | `0x1f00` | `0x1e80` | **`-0x80`** |
+| `__DATA_DIRTY.__bss` | `—` | `0x80` | **`+0x80`** |
+| `__TEXT.__cstring` | `0xb16` | `0xb36` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x4e8` | `0x4d8` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x840` | `0x850` | **`+0x10`** |
+| `__DATA.__data` | `0x50c` | `0x514` | **`+0x8`** |
+| `__DATA_DIRTY.__data` | `0x200` | `0x1f8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 1090.40.3.0.0
--  __TEXT.__text: 0x15d98
-+  __TEXT.__text: 0x1618c
-   __TEXT.__const: 0x1990
--  __TEXT.__cstring: 0xb16
-+  __TEXT.__cstring: 0xb36
-   __TEXT.__constg_swiftt: 0x608
-   __TEXT.__swift5_typeref: 0x610
-   __TEXT.__swift5_builtin: 0x3c
-
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_proto: 0xf8
-   __TEXT.__swift5_capture: 0x280
--  __TEXT.__unwind_info: 0x980
--  __TEXT.__eh_frame: 0x328
-+  __TEXT.__unwind_info: 0x9a8
-+  __TEXT.__eh_frame: 0x298
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x1cb0
-   __AUTH_CONST.__objc_const: 0x128
--  __AUTH_CONST.__auth_got: 0x4e8
--  __DATA.__data: 0x50c
-+  __AUTH_CONST.__auth_got: 0x4d8
-+  __DATA.__data: 0x514
-   __DATA.__common: 0x1
--  __DATA_DIRTY.__data: 0x200
-+  __DATA_DIRTY.__data: 0x1f8
-+  __DATA_DIRTY.__bss: 0x80
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 941
 -  Symbols:   2260
 -  CStrings:  118
 +  Functions: 955
 +  Symbols:   2270
 +  CStrings:  119
- 
 Symbols:
 + _$s2os0A4_log_3dso0B04type_ys12StaticStringV_SVSgSo03OS_a1_B0CSo0a1_b1_D2_tas7CVarArg_pdtFySRys5UInt8VGXEfU_
 + _$s2os0A4_log_3dso0B04type_ys12StaticStringV_SVSgSo03OS_a1_B0CSo0a1_b1_D2_tas7CVarArg_pdtFySRys5UInt8VGXEfU_TA

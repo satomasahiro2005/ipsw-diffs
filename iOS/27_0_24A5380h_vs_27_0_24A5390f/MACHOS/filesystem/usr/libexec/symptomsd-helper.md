@@ -2,15 +2,14 @@
 
 > `/usr/libexec/symptomsd-helper`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -2385.0.0.0.0
 +2394.0.0.0.0
-   __TEXT.__text: 0x258
-   __TEXT.__auth_stubs: 0x170
-   __TEXT.__const: 0x48
 ```

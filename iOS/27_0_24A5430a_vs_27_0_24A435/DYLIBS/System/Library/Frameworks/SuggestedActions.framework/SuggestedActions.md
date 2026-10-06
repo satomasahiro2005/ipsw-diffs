@@ -2,18 +2,19 @@
 
 > `/System/Library/Frameworks/SuggestedActions.framework/SuggestedActions`
 
-```diff
+### Section Size Changes
 
- 20.0.0.0.0
--  __TEXT.__text: 0x540d0
-+  __TEXT.__text: 0x540b0
-   __TEXT.__objc_methlist: 0x718
-   __TEXT.__const: 0x43c8
-   __TEXT.__constg_swiftt: 0x1538
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x540d0` | `0x540b0` | **`-0x20`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _OUTLINED_FUNCTION_9 -> _OUTLINED_FUNCTION_5 : 12 -> 20
 ~ _OUTLINED_FUNCTION_7 : 20 -> 12
-~ sub_2c5cd28d8 -> sub_2c6bdd8d8 : 536 -> 524
+~ sub_2c5be28d8 -> sub_2c6b078d8 : 536 -> 524
 ~ _OUTLINED_FUNCTION_24 : 24 -> 20
 ~ _OUTLINED_FUNCTION_26 : 12 -> 24
 ~ _OUTLINED_FUNCTION_28 : 20 -> 12
@@ -26,10 +27,10 @@ Functions:
 ~ _OUTLINED_FUNCTION_32 : 28 -> 24
 ~ _OUTLINED_FUNCTION_34 : 24 -> 28
 ~ _OUTLINED_FUNCTION_37 : 16 -> 24
-~ sub_2c5d0bde8 -> sub_2c6c16ddc : 220 -> 224
-~ sub_2c5d0bec4 -> sub_2c6c16ebc : 268 -> 264
-~ sub_2c5d0c5d4 -> sub_2c6c175c8 : 192 -> 188
-~ sub_2c5d0c694 -> sub_2c6c17684 : 240 -> 236
+~ sub_2c5c1bde8 -> sub_2c6b40ddc : 220 -> 224
+~ sub_2c5c1bec4 -> sub_2c6b40ebc : 268 -> 264
+~ sub_2c5c1c5d4 -> sub_2c6b415c8 : 192 -> 188
+~ sub_2c5c1c694 -> sub_2c6b41684 : 240 -> 236
 ~ _OUTLINED_FUNCTION_11 : 20 -> 16
 ~ _OUTLINED_FUNCTION_12 : 28 -> 20
 ~ _OUTLINED_FUNCTION_13 : 16 -> 28
@@ -43,6 +44,6 @@ Functions:
 ~ _OUTLINED_FUNCTION_41 : 12 -> 24
 ~ _OUTLINED_FUNCTION_43 : 24 -> 12
 ~ _OUTLINED_FUNCTION_44 -> _OUTLINED_FUNCTION_45 : 12 -> 16
-~ sub_2c5d0d3f0 -> sub_2c6c183e0 : 264 -> 256
-~ sub_2c5d0d7dc -> sub_2c6c187c4 : 144 -> 136
+~ sub_2c5c1d3f0 -> sub_2c6b423e0 : 264 -> 256
+~ sub_2c5c1d7dc -> sub_2c6b427c4 : 144 -> 136
 ```

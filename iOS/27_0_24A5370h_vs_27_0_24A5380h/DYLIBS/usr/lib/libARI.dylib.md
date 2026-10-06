@@ -2,46 +2,31 @@
 
 > `/usr/lib/libARI.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x205c3c` | `0x2067d4` | **`+0xb98`** |
+| `__DATA_CONST.__const` | `0x464b0` | `0x46698` | **`+0x1e8`** |
+| `__AUTH_CONST.__const` | `0x2a260` | `0x2a3b0` | **`+0x150`** |
+| `__TEXT.__cstring` | `0x3e1e6` | `0x3e32b` | **`+0x145`** |
+| `__TEXT.__const` | `0x151e0` | `0x15290` | **`+0xb0`** |
+| `__TEXT.__gcc_except_tab` | `0x1aaa8` | `0x1ab20` | **`+0x78`** |
+| `__TEXT.__unwind_info` | `0xdb00` | `0xdb68` | **`+0x68`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x205c3c
-+  __TEXT.__text: 0x2067d4
-   __TEXT.__init_offsets: 0x8
--  __TEXT.__const: 0x151e0
--  __TEXT.__gcc_except_tab: 0x1aaa8
--  __TEXT.__cstring: 0x3e1e6
-+  __TEXT.__const: 0x15290
-+  __TEXT.__gcc_except_tab: 0x1ab20
-+  __TEXT.__cstring: 0x3e32b
-   __TEXT.__oslogstring: 0x4499
--  __TEXT.__unwind_info: 0xdb00
-+  __TEXT.__unwind_info: 0xdb68
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x464b0
-+  __DATA_CONST.__const: 0x46698
-   __DATA_CONST.__weak_got: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2a260
-+  __AUTH_CONST.__const: 0x2a3b0
-   __AUTH_CONST.__cfstring: 0x20
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__auth_got: 0x0
+-1635.0.0.0.0
++1636.0.0.0.0
 
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 17182
--  Symbols:   32763
--  CStrings:  9446
+-  Symbols:   24193
+-  CStrings:  9445
 +  Functions: 17218
-+  Symbols:   32827
-+  CStrings:  9459
- 
-Sections:
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__data : content changed
++  Symbols:   24239
++  CStrings:  9458
 Symbols:
 + GCC_except_table251
 + _ARI_IBICpsBBFeatureState_DEC_F
@@ -109,5 +94,4 @@ CStrings:
 + "feature_id_t3"
 + "feature_status_t2"
 + "feature_status_t3"
-
 ```

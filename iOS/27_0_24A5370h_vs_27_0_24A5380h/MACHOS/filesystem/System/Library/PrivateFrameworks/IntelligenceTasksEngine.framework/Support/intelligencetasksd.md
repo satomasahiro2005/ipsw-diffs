@@ -2,53 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/IntelligenceTasksEngine.framework/Support/intelligencetasksd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x170` | `0x2e8` | **`+0x178`** |
+| `__DATA.__bss` | `—` | `0x80` | **`+0x80`** |
+| `__TEXT.__const` | `0x52` | `0xb2` | **`+0x60`** |
+| `__TEXT.__auth_stubs` | `0xc0` | `0x100` | **`+0x40`** |
+| `__TEXT.__constg_swiftt` | `—` | `0x28` | **`+0x28`** |
+| `__DATA_CONST.__auth_got` | `0x60` | `0x80` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x38` | `0x58` | **`+0x20`** |
+| `__TEXT.__oslogstring` | `0x1f` | `0x3f` | **`+0x20`** |
+| `__DATA_CONST.__auth_ptr` | `0x8` | `0x18` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `—` | `0x10` | **`+0x10`** |
+| `__DATA.__data` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x60` | `0x68` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `—` | `0x6` | **`+0x6`** |
+| `__TEXT.__swift5_proto` | `—` | `0x4` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `—` | `0x4` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__swift5_entry`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x170
--  __TEXT.__auth_stubs: 0xc0
--  __TEXT.__const: 0x52
-+  __TEXT.__text: 0x2e8
-+  __TEXT.__auth_stubs: 0x100
-+  __TEXT.__const: 0xb2
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__cstring: 0x1d
--  __TEXT.__oslogstring: 0x1f
--  __TEXT.__unwind_info: 0x60
--  __DATA_CONST.__const: 0x38
-+  __TEXT.__oslogstring: 0x3f
-+  __TEXT.__constg_swiftt: 0x28
-+  __TEXT.__swift5_typeref: 0x6
-+  __TEXT.__swift5_fieldmd: 0x10
-+  __TEXT.__swift5_proto: 0x4
-+  __TEXT.__swift5_types: 0x4
-+  __TEXT.__unwind_info: 0x68
-+  __DATA_CONST.__const: 0x58
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x60
--  __DATA_CONST.__auth_ptr: 0x8
-+  __DATA_CONST.__auth_got: 0x80
-+  __DATA_CONST.__auth_ptr: 0x18
-+  __DATA.__data: 0x8
-+  __DATA.__bss: 0x80
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/BiomeFoundation.framework/BiomeFoundation
-+  - /System/Library/PrivateFrameworks/IntelligenceTasks.framework/IntelligenceTasks
-   - /System/Library/PrivateFrameworks/IntelligenceTasksEngine.framework/IntelligenceTasksEngine
-   - /usr/appleinternal/lib/liblinkguard.dylib
-   - /usr/lib/libSystem.B.dylib
+-239.0.2.0.0
++243.0.0.0.0
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
++  - /System/Library/PrivateFrameworks/IntelligenceTasks.framework/IntelligenceTasks
+
 -  Functions: 2
 -  Symbols:   22
 -  CStrings:  2
 +  Functions: 6
 +  Symbols:   29
 +  CStrings:  3
- 
-Sections:
-~ __TEXT.__swift5_entry : content changed
 Symbols:
 + _$s17IntelligenceTasks7LoggingO6Engine2os6LoggerVvgZ
 + _$s23IntelligenceTasksEngine010BackgroundB0O5startyyFZ
@@ -67,5 +59,4 @@ Symbols:
 - _objc_release_x22
 CStrings:
 + "intelligencetasksd started"
-
 ```

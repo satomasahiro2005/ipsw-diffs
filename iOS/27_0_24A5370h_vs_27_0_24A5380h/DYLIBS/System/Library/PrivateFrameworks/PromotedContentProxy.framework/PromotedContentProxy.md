@@ -2,77 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/PromotedContentProxy.framework/PromotedContentProxy`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x55dc` | `0x4a78` | **`-0xb64`** |
+| `__AUTH_CONST.__cfstring` | `0x560` | `0x220` | **`-0x340`** |
+| `__AUTH_CONST.__objc_const` | `0x1180` | `0xfd8` | **`-0x1a8`** |
+| `__TEXT.__cstring` | `0x3b8` | `0x227` | **`-0x191`** |
+| `__TEXT.__objc_methlist` | `0x9ec` | `0x8a4` | **`-0x148`** |
+| `__DATA_CONST.__objc_selrefs` | `0x908` | `0x7f0` | **`-0x118`** |
+| `__DATA_CONST.__const` | `0x198` | `0x140` | **`-0x58`** |
+| `__DATA_DIRTY.__objc_data` | `0x320` | `0x2d0` | **`-0x50`** |
+| `__TEXT.__unwind_info` | `0x1e0` | `0x1a0` | **`-0x40`** |
+| `__DATA_CONST.__objc_catlist` | `0x20` | `0x8` | **`-0x18`** |
+| `__DATA_CONST.__got` | `0x1a0` | `0x190` | **`-0x10`** |
+| `__TEXT.__const` | `0xf0` | `0xe2` | **`-0xe`** |
+| `__AUTH_CONST.__auth_got` | `0x1b8` | `0x1b0` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x50` | `0x48` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x55dc
--  __TEXT.__objc_methlist: 0x9ec
--  __TEXT.__const: 0xf0
--  __TEXT.__cstring: 0x3b8
-+  __TEXT.__text: 0x4a78
-+  __TEXT.__objc_methlist: 0x8a4
-+  __TEXT.__const: 0xe2
-+  __TEXT.__cstring: 0x227
-   __TEXT.__oslogstring: 0x532
-   __TEXT.__constg_swiftt: 0x48
-   __TEXT.__swift5_typeref: 0x33
+-557.1.21.0.0
++557.1.24.0.0
 
-   __TEXT.__swift5_proto: 0x4
-   __TEXT.__swift5_types: 0x4
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0x1e0
-+  __TEXT.__unwind_info: 0x1a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x198
--  __DATA_CONST.__objc_classlist: 0x50
--  __DATA_CONST.__objc_catlist: 0x20
-+  __DATA_CONST.__const: 0x140
-+  __DATA_CONST.__objc_classlist: 0x48
-+  __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x908
-+  __DATA_CONST.__objc_selrefs: 0x7f0
-   __DATA_CONST.__objc_superrefs: 0x30
--  __DATA_CONST.__got: 0x1a0
-+  __DATA_CONST.__got: 0x190
-   __AUTH_CONST.__const: 0x88
--  __AUTH_CONST.__cfstring: 0x560
--  __AUTH_CONST.__objc_const: 0x1180
-+  __AUTH_CONST.__cfstring: 0x220
-+  __AUTH_CONST.__objc_const: 0xfd8
-   __AUTH_CONST.__objc_intobj: 0x48
--  __AUTH_CONST.__auth_got: 0x1b8
-+  __AUTH_CONST.__auth_got: 0x1b0
-   __DATA.__objc_ivar: 0xa0
-   __DATA.__data: 0x180
--  __DATA_DIRTY.__objc_data: 0x320
-+  __DATA_DIRTY.__objc_data: 0x2d0
-   __DATA_DIRTY.__bss: 0x10
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 172
 -  Symbols:   134
--  CStrings:  112
+-  CStrings:  70
 +  Functions: 148
 +  Symbols:   129
-+  CStrings:  61
- 
-Sections:
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __DATA.__data : content changed
++  CStrings:  44
 Symbols:
 + _ErrorProxyAuthenticationRequired
 + _OBJC_CLASS_$_APProxyURLUtilities
@@ -92,7 +53,7 @@ Symbols:
 - ___kCFBooleanTrue
 - _objc_retain
 Functions:
-- sub_294c1b558
+- sub_294aee558
 CStrings:
 - ""
 - "##"
@@ -120,5 +81,4 @@ CStrings:
 - "qwapi.com"
 - "requestType"
 - "videoAdvertisingIdentifier"
-
 ```

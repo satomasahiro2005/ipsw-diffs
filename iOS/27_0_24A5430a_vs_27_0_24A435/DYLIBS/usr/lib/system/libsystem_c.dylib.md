@@ -2,19 +2,16 @@
 
 > `/usr/lib/system/libsystem_c.dylib`
 
-```diff
+### Section Size Changes
 
- 1786.0.3.0.0
--  __TEXT.__text: 0x7911c
-+  __TEXT.__text: 0x79228
-   __TEXT.__const: 0x27a0
-   __TEXT.__cstring: 0x3280
-   __TEXT.__oslogstring: 0x5c
--  __TEXT.__unwind_info: 0x1488
-+  __TEXT.__unwind_info: 0x1490
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x1910
-   __DATA_CONST.__weak_got: 0x8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7911c` | `0x79228` | **`+0x10c`** |
+| `__TEXT.__unwind_info` | `0x1488` | `0x1490` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ ___vfprintf : 12252 -> 12236
 ~ _uuid_parse : 376 -> 380

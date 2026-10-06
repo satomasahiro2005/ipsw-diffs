@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/ZeoliteLanguage.framework/ZeoliteLanguage`
 
-```diff
+### Section Size Changes
 
- 1.7.1.0.0
--  __TEXT.__text: 0x1704c
-+  __TEXT.__text: 0x17054
-   __TEXT.__objc_methlist: 0x13c
-   __TEXT.__const: 0x1190
-   __TEXT.__constg_swiftt: 0x29c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1704c` | `0x17054` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2b7f8b464 -> sub_2b7fae464 : 352 -> 356
-~ sub_2b7f90064 -> sub_2b7fb3068 : 968 -> 972
+~ sub_2b7f85464 -> sub_2b7fbc464 : 352 -> 356
+~ sub_2b7f8a064 -> sub_2b7fc1068 : 968 -> 972
 ```

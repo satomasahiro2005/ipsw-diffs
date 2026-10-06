@@ -2,103 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/ModelManagerServices.framework/ModelManagerServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1501dc` | `0x154cb0` | **`+0x4ad4`** |
+| `__DATA.__bss` | `0x1fd20` | `0x1ef20` | **`-0xe00`** |
+| `__DATA_DIRTY.__bss` | `0x12e80` | `0x13c80` | **`+0xe00`** |
+| `__DATA_DIRTY.__data` | `0x5998` | `0x5f40` | **`+0x5a8`** |
+| `__AUTH.__data` | `0x1b70` | `0x1760` | **`-0x410`** |
+| `__TEXT.__eh_frame` | `0x11660` | `0x11a08` | **`+0x3a8`** |
+| `__AUTH_CONST.__const` | `0xcad0` | `0xcd58` | **`+0x288`** |
+| `__DATA.__data` | `0x2cb8` | `0x2b38` | **`-0x180`** |
+| `__TEXT.__oslogstring` | `0x1adb` | `0x1c3b` | **`+0x160`** |
+| `__TEXT.__swift5_capture` | `0xe70` | `0xfd0` | **`+0x160`** |
+| `__TEXT.__unwind_info` | `0x7da0` | `0x7ea0` | **`+0x100`** |
+| `__TEXT.__const` | `0x1b130` | `0x1b1f8` | **`+0xc8`** |
+| `__AUTH_CONST.__auth_got` | `0x1008` | `0x1090` | **`+0x88`** |
+| `__TEXT.__swift5_typeref` | `0x5f64` | `0x5fb8` | **`+0x54`** |
+| `__TEXT.__swift5_fieldmd` | `0x5200` | `0x523c` | **`+0x3c`** |
+| `__DATA.__common` | `0x48` | `0x10` | **`-0x38`** |
+| `__DATA_DIRTY.__common` | `0x100` | `0x138` | **`+0x38`** |
+| `__TEXT.__swift5_reflstr` | `0x2aaf` | `0x2adf` | **`+0x30`** |
+| `__TEXT.__swift_as_entry` | `0x788` | `0x7b0` | **`+0x28`** |
+| `__TEXT.__swift_as_ret` | `0x81c` | `0x83c` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x4f8` | `0x510` | **`+0x18`** |
+| `__TEXT.__constg_swiftt` | `0x52a0` | `0x52b0` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1501dc
-+  __TEXT.__text: 0x154cb0
-   __TEXT.__objc_methlist: 0x14c
--  __TEXT.__const: 0x1b130
--  __TEXT.__swift5_typeref: 0x5f64
--  __TEXT.__constg_swiftt: 0x52a0
-+  __TEXT.__const: 0x1b1f8
-+  __TEXT.__swift5_typeref: 0x5fb8
-+  __TEXT.__constg_swiftt: 0x52b0
-   __TEXT.__swift5_builtin: 0x78
--  __TEXT.__swift5_reflstr: 0x2aaf
--  __TEXT.__swift5_fieldmd: 0x5200
-+  __TEXT.__swift5_reflstr: 0x2adf
-+  __TEXT.__swift5_fieldmd: 0x523c
-   __TEXT.__swift5_types: 0x6f8
-   __TEXT.__swift5_protos: 0x74
-   __TEXT.__swift5_proto: 0x19bc
--  __TEXT.__oslogstring: 0x1adb
-+  __TEXT.__oslogstring: 0x1c3b
-   __TEXT.__cstring: 0x279a
--  __TEXT.__swift5_capture: 0xe70
--  __TEXT.__swift_as_entry: 0x788
--  __TEXT.__swift_as_ret: 0x81c
-+  __TEXT.__swift5_capture: 0xfd0
-+  __TEXT.__swift_as_entry: 0x7b0
-+  __TEXT.__swift_as_ret: 0x83c
-   __TEXT.__swift_as_cont: 0xdc0
-   __TEXT.__swift5_assocty: 0xae0
-   __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__unwind_info: 0x7da0
--  __TEXT.__eh_frame: 0x11660
-+  __TEXT.__unwind_info: 0x7ea0
-+  __TEXT.__eh_frame: 0x11a08
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-698.0.0.502.1
++703.0.11.0.0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x160
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__got: 0x4f8
--  __AUTH_CONST.__const: 0xcad0
-+  __DATA_CONST.__got: 0x510
-+  __AUTH_CONST.__const: 0xcd58
-   __AUTH_CONST.__objc_const: 0x1de8
--  __AUTH_CONST.__auth_got: 0x1008
-+  __AUTH_CONST.__auth_got: 0x1090
-   __AUTH.__objc_data: 0x98
--  __AUTH.__data: 0x1b70
--  __DATA.__data: 0x2cb8
--  __DATA.__bss: 0x1fd20
--  __DATA.__common: 0x48
-+  __AUTH.__data: 0x1760
-+  __DATA.__data: 0x2b38
-+  __DATA.__bss: 0x1ef20
-+  __DATA.__common: 0x10
-   __DATA_DIRTY.__objc_data: 0x398
--  __DATA_DIRTY.__data: 0x5998
--  __DATA_DIRTY.__common: 0x100
--  __DATA_DIRTY.__bss: 0x12e80
-+  __DATA_DIRTY.__data: 0x5f40
-+  __DATA_DIRTY.__common: 0x138
-+  __DATA_DIRTY.__bss: 0x13c80
-   - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
-   - /System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11401
--  Symbols:   9583
--  CStrings:  407
+-  Symbols:   3147
+-  CStrings:  402
 +  Functions: 11482
-+  Symbols:   9725
-+  CStrings:  414
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   3155
++  CStrings:  409
 Symbols:
 + ___swift_closure_destructor.130Tm
 + ___swift_closure_destructor.134Tm
@@ -126,5 +73,4 @@ CStrings:
 + "Received task escalation for message %llu to priority %hhu."
 + "Task for message %llu escalated to priority %hhu, sending escalation message."
 + "Task for message %llu not found to escalate."
-
 ```

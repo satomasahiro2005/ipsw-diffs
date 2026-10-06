@@ -2,106 +2,65 @@
 
 > `/System/Library/Assistant/FlowDelegatePlugins/SiriLinkFlowPlugin.bundle/SiriLinkFlowPlugin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x217754` | `0x2196f4` | **`+0x1fa0`** |
+| `__DATA.__bss` | `0x1cd90` | `0x1cf90` | **`+0x200`** |
+| `__TEXT.__const` | `0x1796c` | `0x17aec` | **`+0x180`** |
+| `__TEXT.__eh_frame` | `0x1a12c` | `0x1a294` | **`+0x168`** |
+| `__DATA_CONST.__const` | `0x136b8` | `0x137e0` | **`+0x128`** |
+| `__TEXT.__objc_stubs` | `0x5340` | `0x5440` | **`+0x100`** |
+| `__TEXT.__unwind_info` | `0xa4a0` | `0xa558` | **`+0xb8`** |
+| `__TEXT.__objc_methname` | `0x52d5` | `0x5345` | **`+0x70`** |
+| `__TEXT.__swift5_fieldmd` | `0x7170` | `0x71d8` | **`+0x68`** |
+| `__TEXT.__swift5_reflstr` | `0x56f4` | `0x5744` | **`+0x50`** |
+| `__DATA.__objc_selrefs` | `0x1908` | `0x1948` | **`+0x40`** |
+| `__TEXT.__constg_swiftt` | `0x7010` | `0x7048` | **`+0x38`** |
+| `__TEXT.__cstring` | `0x5dfa` | `0x5e2a` | **`+0x30`** |
+| `__TEXT.__swift5_assocty` | `0x1068` | `0x1098` | **`+0x30`** |
+| `__TEXT.__swift5_typeref` | `0x5b6a` | `0x5b92` | **`+0x28`** |
+| `__TEXT.__auth_stubs` | `0x5550` | `0x5570` | **`+0x20`** |
+| `__DATA.__data` | `0xbd30` | `0xbd40` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x2ab0` | `0x2ac0` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0xf30` | `0xf40` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x794` | `0x79c` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x1738` | `0x1734` | **`-0x4`** |
+| `__TEXT.__swift_as_entry` | `0xd74` | `0xd70` | **`-0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_data`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -3605.6.1.0.0
--  __TEXT.__text: 0x1f5904
--  __TEXT.__auth_stubs: 0x5550
--  __TEXT.__objc_stubs: 0x5340
 +3605.8.1.0.0
-+  __TEXT.__text: 0x1f7864
-+  __TEXT.__auth_stubs: 0x5570
-+  __TEXT.__objc_stubs: 0x5440
-   __TEXT.__objc_methlist: 0xedc
--  __TEXT.__const: 0x1796c
--  __TEXT.__cstring: 0x5dfa
--  __TEXT.__objc_methname: 0x52d5
-+  __TEXT.__const: 0x17aec
-+  __TEXT.__cstring: 0x5e2a
-+  __TEXT.__objc_methname: 0x5345
-   __TEXT.__objc_classname: 0x21c9
-   __TEXT.__objc_methtype: 0xd0e
--  __TEXT.__swift5_typeref: 0x5b6a
-+  __TEXT.__swift5_typeref: 0x5b92
-   __TEXT.__oslogstring: 0xd8ba
-   __TEXT.__swift5_capture: 0x1058
--  __TEXT.__constg_swiftt: 0x7010
-+  __TEXT.__constg_swiftt: 0x7048
-   __TEXT.__swift5_builtin: 0x2a8
--  __TEXT.__swift5_reflstr: 0x56f4
--  __TEXT.__swift5_fieldmd: 0x7170
--  __TEXT.__swift5_assocty: 0x1068
--  __TEXT.__swift5_proto: 0xf30
--  __TEXT.__swift5_types: 0x794
--  __TEXT.__swift_as_entry: 0xd74
-+  __TEXT.__swift5_reflstr: 0x5744
-+  __TEXT.__swift5_fieldmd: 0x71d8
-+  __TEXT.__swift5_assocty: 0x1098
-+  __TEXT.__swift5_proto: 0xf40
-+  __TEXT.__swift5_types: 0x79c
-+  __TEXT.__swift_as_entry: 0xd70
-   __TEXT.__swift_as_ret: 0x11b4
--  __TEXT.__swift_as_cont: 0x1738
-+  __TEXT.__swift_as_cont: 0x1734
-   __TEXT.__swift5_protos: 0x90
-   __TEXT.__swift5_mpenum: 0x148
--  __TEXT.__unwind_info: 0xb598
--  __TEXT.__eh_frame: 0x1a144
--  __DATA_CONST.__const: 0x136b8
-+  __TEXT.__unwind_info: 0xb648
-+  __TEXT.__eh_frame: 0x1a2ac
-+  __DATA_CONST.__const: 0x137e0
-   __DATA_CONST.__cfstring: 0x600
-   __DATA_CONST.__objc_classlist: 0x360
-   __DATA_CONST.__objc_protolist: 0x140
 
-   __DATA_CONST.__objc_protorefs: 0xa0
-   __DATA_CONST.__objc_superrefs: 0x40
-   __DATA_CONST.__objc_intobj: 0x30
--  __DATA_CONST.__auth_got: 0x2ab0
-+  __DATA_CONST.__auth_got: 0x2ac0
-   __DATA_CONST.__got: 0x1888
-   __DATA_CONST.__auth_ptr: 0x1728
-   __DATA.__objc_const: 0xe6a8
--  __DATA.__objc_selrefs: 0x1908
-+  __DATA.__objc_selrefs: 0x1948
-   __DATA.__objc_ivar: 0x9c
-   __DATA.__objc_data: 0xff0
--  __DATA.__data: 0xbd30
-+  __DATA.__data: 0xbd40
-   __DATA.__common: 0x378
-   - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 13557
+-  Functions: 13558
 -  Symbols:   29845
 -  CStrings:  2866
-+  Functions: 13610
++  Functions: 13611
 +  Symbols:   29954
 +  CStrings:  2877
- 
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/SiriLinkFlow/install/TempContent/Objects/SiriLinkFlow.build/SiriLinkFlowPlugin.build/Objects-normal/arm64e/IntentParameterSummary.o
 + IntentParameterSummary.swift

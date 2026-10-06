@@ -2,66 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/SiriNaturalLanguageParsing.framework/SiriNaturalLanguageParsing`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14dec4` | `0x14e400` | **`+0x53c`** |
+| `__TEXT.__gcc_except_tab` | `0x13568` | `0x13650` | **`+0xe8`** |
+| `__TEXT.__const` | `0x8d68` | `0x8e2c` | **`+0xc4`** |
+| `__AUTH_CONST.__const` | `0x7218` | `0x72c8` | **`+0xb0`** |
+| `__TEXT.__unwind_info` | `0x6eb8` | `0x6f10` | **`+0x58`** |
+| `__AUTH_CONST.__auth_got` | `0x1450` | `0x1458` | **`+0x8`** |
+| `__TEXT.__cstring` | `0xb97f` | `0xb987` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__oslogstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x14dec4
-+  __TEXT.__text: 0x14e400
-   __TEXT.__init_offsets: 0x168
-   __TEXT.__objc_methlist: 0x95c
--  __TEXT.__const: 0x8d68
--  __TEXT.__cstring: 0xb97f
--  __TEXT.__gcc_except_tab: 0x13568
-+  __TEXT.__const: 0x8e2c
-+  __TEXT.__cstring: 0xb987
-+  __TEXT.__gcc_except_tab: 0x13650
-   __TEXT.__oslogstring: 0x97ba
-   __TEXT.__ustring: 0xd8
--  __TEXT.__unwind_info: 0x6eb8
-+  __TEXT.__unwind_info: 0x6f10
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-3600.7.4.0.0
++3600.7.8.0.0
 
-   __DATA_CONST.__objc_selrefs: 0x9e8
-   __DATA_CONST.__objc_superrefs: 0x88
-   __DATA_CONST.__got: 0x458
--  __AUTH_CONST.__const: 0x7218
-+  __AUTH_CONST.__const: 0x72c8
-   __AUTH_CONST.__cfstring: 0x1860
-   __AUTH_CONST.__objc_const: 0x1430
-   __AUTH_CONST.__weak_auth_got: 0x50
--  __AUTH_CONST.__auth_got: 0x1450
-+  __AUTH_CONST.__auth_got: 0x1458
-   __AUTH.__objc_data: 0x6e0
-   __AUTH.__data: 0x118
-   __AUTH.__thread_vars: 0x30
-
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libmorphun.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 4886
--  Symbols:   13838
+-  Symbols:   8921
 +  Functions: 4902
-+  Symbols:   13881
-   CStrings:  2251
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__oslogstring : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
++  Symbols:   8953
 Symbols:
 + GCC_except_table1000
 + GCC_except_table1001
@@ -1184,5 +1151,4 @@ Symbols:
 CStrings:
 + "Skipping '%s' during span reinsertion; parent already carried this edge."
 - "Skipping '%s' during span reinsertion; parent already carries this edge."
-
 ```

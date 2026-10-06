@@ -2,27 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/XGBoostFramework.framework/XGBoostFramework`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x17fde4
-+  __TEXT.__text: 0x17f980
-   __TEXT.__init_offsets: 0x84
-   __TEXT.__const: 0x8e80
--  __TEXT.__gcc_except_tab: 0x1b5d4
-+  __TEXT.__gcc_except_tab: 0x1b5c4
-   __TEXT.__cstring: 0x11dbd
--  __TEXT.__unwind_info: 0x7418
-+  __TEXT.__unwind_info: 0x7420
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__weak_got: 0x98
-   __DATA_CONST.__got: 0x160
-Sections:
-~ __TEXT.__cstring : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__thread_vars : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17fde4` | `0x17f980` | **`-0x464`** |
+| `__TEXT.__gcc_except_tab` | `0x1b5d4` | `0x1b5c4` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x7418` | `0x7420` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN4dmlc10ParseFloatIfLb1EEET_PKcPPc : 1112 -> 1124
 ~ __ZNSt3__116__insertion_sortB9fqe220106INS_17_ClassicAlgPolicyERZNK7xgboost8MetaInfo12LabelAbsSortEvEUlmmE_NS_11__wrap_iterIPmEEEEvT1_S9_T0_ : 204 -> 196
@@ -122,5 +112,4 @@ Functions:
 ~ __ZN5rabit6engine13AllreduceBase16TryAllreduceTreeEPvmmPFvPKvS2_iRKN3MPI8DatatypeEE : 2236 -> 2244
 ~ __ZN5rabit6engine13AllreduceBase12TryBroadcastEPvmi : 1420 -> 1468
 ~ __ZN4dmlc2io15SingleFileSplit9LoadChunkEv : 504 -> 508
-
 ```

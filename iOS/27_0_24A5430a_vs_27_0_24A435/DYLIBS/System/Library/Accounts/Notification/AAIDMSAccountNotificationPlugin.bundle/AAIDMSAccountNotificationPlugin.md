@@ -2,6 +2,8 @@
 
 > `/System/Library/Accounts/Notification/AAIDMSAccountNotificationPlugin.bundle/AAIDMSAccountNotificationPlugin`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_242529910 -> sub_242ea9910 : 12 -> 20

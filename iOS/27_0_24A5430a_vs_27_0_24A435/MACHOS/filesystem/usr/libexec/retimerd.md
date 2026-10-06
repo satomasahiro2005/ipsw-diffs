@@ -2,10 +2,12 @@
 
 > `/usr/libexec/retimerd`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__gcc_except_tab`
 - `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```text
 Functions:

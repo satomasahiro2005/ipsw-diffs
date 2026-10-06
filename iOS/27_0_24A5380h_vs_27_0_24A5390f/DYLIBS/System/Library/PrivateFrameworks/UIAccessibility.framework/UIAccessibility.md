@@ -2,73 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/UIAccessibility.framework/UIAccessibility`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH.__objc_data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6cd7c` | `0x6c9c8` | **`-0x3b4`** |
+| `__AUTH_CONST.__cfstring` | `0x64a0` | `0x64e0` | **`+0x40`** |
+| `__TEXT.__objc_methlist` | `0x6ba4` | `0x6bdc` | **`+0x38`** |
+| `__TEXT.__cstring` | `0x70da` | `0x7101` | **`+0x27`** |
+| `__AUTH_CONST.__objc_const` | `0x49f0` | `0x4a10` | **`+0x20`** |
+| `__TEXT.__oslogstring` | `0x2cc3` | `0x2ca9` | **`-0x1a`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5708` | `0x5720` | **`+0x18`** |
+
+### Other Changes
 
 ```diff
 
 -3234.5.0.0.0
--  __TEXT.__text: 0x6cd7c
--  __TEXT.__objc_methlist: 0x6ba4
 +3237.1.0.0.0
-+  __TEXT.__text: 0x6c9c8
-+  __TEXT.__objc_methlist: 0x6bdc
-   __TEXT.__const: 0x278
-   __TEXT.__dlopen_cstrs: 0x266
-   __TEXT.__gcc_except_tab: 0xd90
--  __TEXT.__cstring: 0x70da
--  __TEXT.__oslogstring: 0x2cc3
-+  __TEXT.__cstring: 0x7101
-+  __TEXT.__oslogstring: 0x2ca9
-   __TEXT.__ustring: 0x14
-   __TEXT.__unwind_info: 0x1b30
-   __TEXT.__objc_stubs: 0x0
 
-   __DATA_CONST.__objc_catlist: 0xa8
-   __DATA_CONST.__objc_protolist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5708
-+  __DATA_CONST.__objc_selrefs: 0x5720
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__objc_superrefs: 0x110
-   __DATA_CONST.__objc_arraydata: 0x128
-   __DATA_CONST.__got: 0xd50
-   __AUTH_CONST.__const: 0x1248
--  __AUTH_CONST.__cfstring: 0x64a0
--  __AUTH_CONST.__objc_const: 0x49f0
-+  __AUTH_CONST.__cfstring: 0x64e0
-+  __AUTH_CONST.__objc_const: 0x4a10
-   __AUTH_CONST.__objc_intobj: 0x4c8
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__objc_arrayobj: 0x48
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2612
--  Symbols:   6733
+-  Symbols:   4575
 +  Functions: 2616
-+  Symbols:   6739
-   CStrings:  1185
- 
++  Symbols:   4579
 Symbols:
 + -[NSObject(AXPrivCategory) _accessibilityLineForIndex:]
 + -[UITextAttachmentAccessibilityElement accessibilityImageDataSize]
@@ -127,8 +83,6 @@ Symbols:
 + GCC_except_table944
 + GCC_except_table978
 + __UIAXRetainedAttachmentElement
-+ _objc_msgSend$_accessibilityLineForIndex:
-+ _objc_msgSend$attachment
 - GCC_except_table1008
 - GCC_except_table1019
 - GCC_except_table1052

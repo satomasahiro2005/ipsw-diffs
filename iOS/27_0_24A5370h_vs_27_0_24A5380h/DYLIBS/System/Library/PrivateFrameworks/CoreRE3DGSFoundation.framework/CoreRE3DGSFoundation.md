@@ -2,36 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CoreRE3DGSFoundation.framework/CoreRE3DGSFoundation`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x8fd5c
-+  __TEXT.__text: 0x8f9d8
-   __TEXT.__objc_methlist: 0x146c
-   __TEXT.__const: 0x4f5d
-   __TEXT.__gcc_except_tab: 0xaba0
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8fd5c` | `0x8f9d8` | **`-0x384`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__135__uninitialized_allocator_copy_implB9fqe220106INS_9allocatorIN8nlohmann16json_abi_v3_11_310basic_jsonINS_3mapENS_6vectorENS_12basic_stringIcNS_11char_traitsIcEENS1_IcEEEEbxydS1_NS3_14adl_serializerENS6_IhNS1_IhEEEEvEEEEPSF_SH_SH_EET2_RT_T0_T1_SI_ : 152 -> 136
 ~ __ZNSt3__135__uninitialized_allocator_copy_implB9fqe220106INS_9allocatorIN8nlohmann16json_abi_v3_11_310basic_jsonINS_3mapENS_6vectorENS_12basic_stringIcNS_11char_traitsIcEENS1_IcEEEEbxydS1_NS3_14adl_serializerENS6_IhNS1_IhEEEEvEEEEPKNS6_IfNS1_IfEEEESK_PSF_EET2_RT_T0_T1_SM_ : 152 -> 136
@@ -64,5 +43,4 @@ Functions:
 ~ __ZNK4avir26CImageResizerFilterStepINLIffE10doUpsampleEPKfPf : 3188 -> 3000
 ~ __ZNK4avir26CImageResizerFilterStepINLIffE9doResize2EPKfPfiS3_S4_ : 960 -> 944
 ~ __ZNK4avir26CImageResizerFilterStepINLIffE11convertVtoHEPKfPfii : 280 -> 244
-
 ```

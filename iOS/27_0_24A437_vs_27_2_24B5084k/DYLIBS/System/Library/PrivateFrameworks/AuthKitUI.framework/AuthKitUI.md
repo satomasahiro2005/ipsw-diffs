@@ -2,143 +2,74 @@
 
 > `/System/Library/PrivateFrameworks/AuthKitUI.framework/AuthKitUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xde0ac` | `0xeba58` | **`+0xd9ac`** |
+| `__AUTH_CONST.__objc_const` | `0x18768` | `0x19aa8` | **`+0x1340`** |
+| `__TEXT.__const` | `0x1514` | `0x1e84` | **`+0x970`** |
+| `__DATA.__bss` | `0x1ca8` | `0x2528` | **`+0x880`** |
+| `__AUTH_CONST.__const` | `0x898` | `0x1040` | **`+0x7a8`** |
+| `__TEXT.__eh_frame` | `0xb18` | `0x11a0` | **`+0x688`** |
+| `__TEXT.__swift5_typeref` | `0xdc2` | `0x1212` | **`+0x450`** |
+| `__DATA.__data` | `0x2018` | `0x23e0` | **`+0x3c8`** |
+| `__TEXT.__oslogstring` | `0x5949` | `0x5d09` | **`+0x3c0`** |
+| `__TEXT.__unwind_info` | `0x1c98` | `0x2048` | **`+0x3b0`** |
+| `__TEXT.__constg_swiftt` | `0x3f4` | `0x6d4` | **`+0x2e0`** |
+| `__AUTH.__data` | `0x270` | `0x530` | **`+0x2c0`** |
+| `__TEXT.__objc_methlist` | `0x88c4` | `0x8ae4` | **`+0x220`** |
+| `__TEXT.__swift5_fieldmd` | `0x274` | `0x48c` | **`+0x218`** |
+| `__TEXT.__cstring` | `0x57ed` | `0x59ad` | **`+0x1c0`** |
+| `__TEXT.__swift5_capture` | `0xb4` | `0x228` | **`+0x174`** |
+| `__AUTH_CONST.__auth_got` | `0xdc0` | `0xf28` | **`+0x168`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6068` | `0x61c0` | **`+0x158`** |
+| `__AUTH.__objc_data` | `0x23d0` | `0x2508` | **`+0x138`** |
+| `__TEXT.__swift5_reflstr` | `0x1da` | `0x30a` | **`+0x130`** |
+| `__TEXT.__gcc_except_tab` | `0x1118` | `0x11f8` | **`+0xe0`** |
+| `__DATA_CONST.__got` | `0xec0` | `0xf90` | **`+0xd0`** |
+| `__DATA_CONST.__const` | `0x2fa8` | `0x3068` | **`+0xc0`** |
+| `__AUTH_CONST.__cfstring` | `0x5100` | `0x51a0` | **`+0xa0`** |
+| `__TEXT.__swift5_assocty` | `0x1c8` | `0x228` | **`+0x60`** |
+| `__TEXT.__swift5_proto` | `0xd4` | `0x130` | **`+0x5c`** |
+| `__DATA_CONST.__objc_protolist` | `0x240` | `0x298` | **`+0x58`** |
+| `__TEXT.__swift_as_cont` | `0x90` | `0xd4` | **`+0x44`** |
+| `__DATA_CONST.__objc_protorefs` | `0x30` | `0x68` | **`+0x38`** |
+| `__TEXT.__swift5_types` | `0x4c` | `0x7c` | **`+0x30`** |
+| `__TEXT.__swift_as_ret` | `0x40` | `0x6c` | **`+0x2c`** |
+| `__DATA_CONST.__objc_classlist` | `0x3e8` | `0x410` | **`+0x28`** |
+| `__TEXT.__swift_as_entry` | `0x3c` | `0x64` | **`+0x28`** |
+| `__DATA.__common` | `0x30` | `0x48` | **`+0x18`** |
+| `__TEXT.__swift5_protos` | `—` | `0x18` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x78` | `0x8c` | **`+0x14`** |
+| `__DATA_CONST.__objc_superrefs` | `0x2c0` | `0x2c8` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x770` | `0x774` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -559.0.0.0.0
--  __TEXT.__text: 0xdbfd0
--  __TEXT.__objc_methlist: 0x88c4
--  __TEXT.__const: 0x1514
--  __TEXT.__cstring: 0x57ed
--  __TEXT.__oslogstring: 0x5949
--  __TEXT.__gcc_except_tab: 0x1118
--  __TEXT.__ustring: 0x2c
 +560.125.4.1.0
-+  __TEXT.__text: 0xe8fd4
-+  __TEXT.__objc_methlist: 0x8ae4
-+  __TEXT.__const: 0x1e84
-+  __TEXT.__gcc_except_tab: 0x11f8
-+  __TEXT.__cstring: 0x59ad
-   __TEXT.__dlopen_cstrs: 0x179
--  __TEXT.__constg_swiftt: 0x3f4
--  __TEXT.__swift5_typeref: 0xdc2
--  __TEXT.__swift5_builtin: 0x78
--  __TEXT.__swift5_reflstr: 0x1da
--  __TEXT.__swift5_fieldmd: 0x274
--  __TEXT.__swift5_assocty: 0x1c8
--  __TEXT.__swift5_proto: 0xd4
--  __TEXT.__swift5_types: 0x4c
--  __TEXT.__swift5_capture: 0xb4
--  __TEXT.__swift_as_entry: 0x3c
--  __TEXT.__swift_as_ret: 0x40
--  __TEXT.__swift_as_cont: 0x90
--  __TEXT.__unwind_info: 0x3640
--  __TEXT.__eh_frame: 0xb18
-+  __TEXT.__oslogstring: 0x5d09
-+  __TEXT.__ustring: 0x2c
-+  __TEXT.__swift5_typeref: 0x1212
-+  __TEXT.__swift5_capture: 0x228
-+  __TEXT.__constg_swiftt: 0x6d4
-+  __TEXT.__swift5_fieldmd: 0x48c
-+  __TEXT.__swift5_reflstr: 0x30a
-+  __TEXT.__swift5_builtin: 0x8c
-+  __TEXT.__swift5_assocty: 0x228
-+  __TEXT.__swift5_protos: 0x18
-+  __TEXT.__swift5_proto: 0x130
-+  __TEXT.__swift5_types: 0x7c
-+  __TEXT.__swift_as_entry: 0x64
-+  __TEXT.__swift_as_ret: 0x6c
-+  __TEXT.__swift_as_cont: 0xd4
-+  __TEXT.__unwind_info: 0x3b08
-+  __TEXT.__eh_frame: 0x11a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2fa8
--  __DATA_CONST.__objc_classlist: 0x3e8
-+  __DATA_CONST.__const: 0x3068
-+  __DATA_CONST.__objc_classlist: 0x410
-   __DATA_CONST.__objc_catlist: 0x60
--  __DATA_CONST.__objc_protolist: 0x240
-+  __DATA_CONST.__objc_protolist: 0x298
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6068
--  __DATA_CONST.__objc_protorefs: 0x30
--  __DATA_CONST.__objc_superrefs: 0x2c0
-+  __DATA_CONST.__objc_selrefs: 0x61c0
-+  __DATA_CONST.__objc_protorefs: 0x68
-+  __DATA_CONST.__objc_superrefs: 0x2c8
-   __DATA_CONST.__objc_arraydata: 0x2b8
--  __DATA_CONST.__got: 0xec0
--  __AUTH_CONST.__const: 0x898
--  __AUTH_CONST.__cfstring: 0x5100
--  __AUTH_CONST.__objc_const: 0x18768
-+  __DATA_CONST.__got: 0xf90
-+  __AUTH_CONST.__const: 0x1040
-+  __AUTH_CONST.__cfstring: 0x51a0
-+  __AUTH_CONST.__objc_const: 0x19aa8
-   __AUTH_CONST.__objc_doubleobj: 0x40
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__objc_intobj: 0x2a0
-   __AUTH_CONST.__objc_arrayobj: 0x90
--  __AUTH_CONST.__auth_got: 0xdc0
--  __AUTH.__objc_data: 0x23d0
--  __AUTH.__data: 0x270
--  __DATA.__objc_ivar: 0x770
--  __DATA.__data: 0x2018
--  __DATA.__common: 0x30
-+  __AUTH_CONST.__auth_got: 0xf28
-+  __AUTH.__objc_data: 0x2508
-+  __AUTH.__data: 0x530
-+  __DATA.__objc_ivar: 0x774
-+  __DATA.__data: 0x23e0
-+  __DATA.__common: 0x48
-   __DATA_DIRTY.__objc_data: 0x410
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
+
 +  - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
 
-   - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
-   - /System/Library/PrivateFrameworks/MobileIcons.framework/MobileIcons
-   - /System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit
 +  - /System/Library/PrivateFrameworks/ProxCardKit.framework/ProxCardKit
-   - /System/Library/PrivateFrameworks/RemoteUI.framework/RemoteUI
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices
+
 +  - /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
+
 +  - /usr/lib/swift/libswiftAVFoundation.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
-   - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
 
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftCoreImage.dylib
-   - /usr/lib/swift/libswiftCoreLocation.dylib
 +  - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
-+  - /usr/lib/swift/libswiftIntents.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /usr/lib/swift/libswiftIntents.dylib
+
 -  Functions: 3374
--  Symbols:   8261
+-  Symbols:   5824
 -  CStrings:  1312
 +  Functions: 3743
-+  Symbols:   8482
++  Symbols:   6008
 +  CStrings:  1342
- 
 Symbols:
 + -[AKAppleIDServerUIContextController _additionalDataByAddingContinuationHeaders:]
 + -[AKApprovalFlowRemoteUICoordinator _setupServerHooksOnController:]
@@ -258,49 +189,6 @@ Symbols:
 + _flat unique So21RUIServerHookDelegate_p
 + _flat unique So23AKTransparencyInterface_p
 + _kAKPushCommandHeaderKey
-+ _objc_msgSend$_addBackButtonForController:inheritsPushBackButton:
-+ _objc_msgSend$_additionalDataByAddingContinuationHeaders:
-+ _objc_msgSend$_injectPDPPayloadWithContext:pdpBlob:transparencyString:objectModel:
-+ _objc_msgSend$_injectTransparencyString:objectModel:
-+ _objc_msgSend$_mergePayload:intoObjectModel:
-+ _objc_msgSend$_setupServerHooksOnController:
-+ _objc_msgSend$_shouldIncludeTransparencyDataForClientInfo:
-+ _objc_msgSend$callerContactRecencyWindowSecondsOverride
-+ _objc_msgSend$callsHostedOrAnEndpointElsewhere
-+ _objc_msgSend$collectMetadataOn:completion:
-+ _objc_msgSend$contactIdentifiers
-+ _objc_msgSend$continuationHeaders
-+ _objc_msgSend$creationDate
-+ _objc_msgSend$currentCalls
-+ _objc_msgSend$evaluatePolicy:localizedReason:reply:
-+ _objc_msgSend$fetchTransparencyDataFrom:requestedAltDSID:telemetryFlowID:completionHandler:
-+ _objc_msgSend$idmsData
-+ _objc_msgSend$initWithAccount:telemetryFlowID:
-+ _objc_msgSend$initWithAltDSID:telemetryFlowID:
-+ _objc_msgSend$initWithDomain:code:userInfo:
-+ _objc_msgSend$initWithQueue:
-+ _objc_msgSend$initWithRemoteUIController:hooks:
-+ _objc_msgSend$isFaceTimeProvider
-+ _objc_msgSend$isTelephonyProvider
-+ _objc_msgSend$isVideo
-+ _objc_msgSend$metadataForAltDSID:flowId:completion:
-+ _objc_msgSend$modificationDate
-+ _objc_msgSend$objectForInfoDictionaryKey:
-+ _objc_msgSend$predicateForContactsWithIdentifiers:
-+ _objc_msgSend$processObjectModel:isModal:completion:
-+ _objc_msgSend$provider
-+ _objc_msgSend$pushCommand
-+ _objc_msgSend$pushInfo
-+ _objc_msgSend$registerWithCompletionHandler:
-+ _objc_msgSend$screenSharingType
-+ _objc_msgSend$serverHookHandler
-+ _objc_msgSend$service
-+ _objc_msgSend$setProxiedAppName:
-+ _objc_msgSend$setProxiedAssociatedDomains:
-+ _objc_msgSend$setServerHooks:
-+ _objc_msgSend$shouldReturnContinuationHeaders
-+ _objc_msgSend$transparencyController
-+ _objc_msgSend$unifiedContactsMatchingPredicate:keysToFetch:error:
 + _objc_retain_x23
 + _objc_retain_x25
 + _objc_retain_x26
@@ -395,12 +283,6 @@ Symbols:
 - _OBJC_IVAR_$__AKRemoteViewService._newApprovalFlowViewController
 - ___83-[_AKRemoteViewService presentApprovalFlowWithContext:usingHost:completionHandler:]_block_invoke
 - ___block_descriptor_64_e8_32s40s48s56bs_e28_v24?0"NSData"8"NSError"16ls32l8s40l8s48l8s56l8
-- _objc_msgSend$_addBackButtonForController:
-- _objc_msgSend$_injectPDPPayloadWithContext:pdpBlob:objectModel:
-- _objc_msgSend$_onmainqueue_presentApprovalFlow:usingHost:completionHandler:
-- _objc_msgSend$initWithAccount:
-- _objc_msgSend$newApprovalFlowViewController
-- _objc_msgSend$setNewApprovalFlowViewController:
 CStrings:
 + "AKTransparencyMetadataHook attached metadata to the postback"
 + "AKTransparencyMetadataHook forwarding metadata request with no altDSID"

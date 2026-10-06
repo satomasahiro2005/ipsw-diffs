@@ -2,112 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/SpeechRecognitionCommandAndControl.framework/SpeechRecognitionCommandAndControl`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1206b4` | `0x1215cc` | **`+0xf18`** |
+| `__TEXT.__oslogstring` | `0x3f5a` | `0x40ca` | **`+0x170`** |
+| `__AUTH_CONST.__cfstring` | `0x9780` | `0x9860` | **`+0xe0`** |
+| `__DATA_CONST.__const` | `0x2290` | `0x22f8` | **`+0x68`** |
+| `__TEXT.__objc_methlist` | `0xbeac` | `0xbf14` | **`+0x68`** |
+| `__AUTH_CONST.__objc_const` | `0x11880` | `0x118e0` | **`+0x60`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7e20` | `0x7e78` | **`+0x58`** |
+| `__TEXT.__cstring` | `0x9577` | `0x95c7` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x4318` | `0x4358` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x1538` | `0x1558` | **`+0x20`** |
+| `__TEXT.__const` | `0x47b4` | `0x47d4` | **`+0x20`** |
+| `__DATA.__data` | `0x3258` | `0x3270` | **`+0x18`** |
+| `__AUTH.__objc_data` | `0x4778` | `0x4788` | **`+0x10`** |
+| `__TEXT.__constg_swiftt` | `0x20c0` | `0x20d0` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0xae8` | `0xaf8` | **`+0x10`** |
+| `__TEXT.__ustring` | `0x8a` | `0x96` | **`+0xc`** |
+| `__AUTH_CONST.__const` | `0x4f38` | `0x4f30` | **`-0x8`** |
+| `__DATA.__objc_ivar` | `0xaa0` | `0xaa8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1206b4
--  __TEXT.__objc_methlist: 0xbeac
--  __TEXT.__const: 0x47b4
--  __TEXT.__oslogstring: 0x3f5a
--  __TEXT.__cstring: 0x9577
-+  __TEXT.__text: 0x1215cc
-+  __TEXT.__objc_methlist: 0xbf14
-+  __TEXT.__const: 0x47d4
-+  __TEXT.__oslogstring: 0x40ca
-+  __TEXT.__cstring: 0x95c7
-   __TEXT.__gcc_except_tab: 0x2440
--  __TEXT.__ustring: 0x8a
-+  __TEXT.__ustring: 0x96
-   __TEXT.__dlopen_cstrs: 0x5e
--  __TEXT.__constg_swiftt: 0x20c0
-+  __TEXT.__constg_swiftt: 0x20d0
-   __TEXT.__swift5_typeref: 0x8eaa
-   __TEXT.__swift5_builtin: 0x104
-   __TEXT.__swift5_reflstr: 0xdb8
-   __TEXT.__swift5_fieldmd: 0x1014
-   __TEXT.__swift5_assocty: 0x458
--  __TEXT.__swift5_capture: 0xae8
-+  __TEXT.__swift5_capture: 0xaf8
-   __TEXT.__swift5_proto: 0x164
-   __TEXT.__swift5_types: 0x158
-   __TEXT.__swift_as_entry: 0x3c
-   __TEXT.__swift_as_ret: 0x4c
-   __TEXT.__swift_as_cont: 0x74
--  __TEXT.__unwind_info: 0x4318
-+  __TEXT.__unwind_info: 0x4358
-   __TEXT.__eh_frame: 0x1220
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2290
-+  __DATA_CONST.__const: 0x22f8
-   __DATA_CONST.__objc_classlist: 0x538
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x1d8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7e20
-+  __DATA_CONST.__objc_selrefs: 0x7e78
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__objc_superrefs: 0x2a8
-   __DATA_CONST.__objc_arraydata: 0x8a0
--  __DATA_CONST.__got: 0x1538
--  __AUTH_CONST.__const: 0x4f38
--  __AUTH_CONST.__cfstring: 0x9780
--  __AUTH_CONST.__objc_const: 0x11880
-+  __DATA_CONST.__got: 0x1558
-+  __AUTH_CONST.__const: 0x4f30
-+  __AUTH_CONST.__cfstring: 0x9860
-+  __AUTH_CONST.__objc_const: 0x118e0
-   __AUTH_CONST.__objc_intobj: 0x3c0
-   __AUTH_CONST.__objc_doubleobj: 0x70
-   __AUTH_CONST.__objc_arrayobj: 0x120
-   __AUTH_CONST.__objc_dictobj: 0xf0
-   __AUTH_CONST.__auth_got: 0x1f50
--  __AUTH.__objc_data: 0x4778
-+  __AUTH.__objc_data: 0x4788
-   __AUTH.__data: 0x1710
--  __DATA.__objc_ivar: 0xaa0
--  __DATA.__data: 0x3258
-+  __DATA.__objc_ivar: 0xaa8
-+  __DATA.__data: 0x3270
-   __DATA.__objc_stublist: 0x10
-   __DATA.__bss: 0x32f0
-   __DATA.__common: 0x2a8
+-182.0.0.0.0
++183.0.0.0.0
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7290
--  Symbols:   24788
--  CStrings:  3016
+-  Symbols:   14715
+-  CStrings:  1831
 +  Functions: 7313
-+  Symbols:   24856
-+  CStrings:  3033
- 
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__objc_stublist : content changed
++  Symbols:   14741
++  CStrings:  1843
 Symbols:
 + +[CACScreenshotGrabber copyFullscreenScreenshotSurface:]
 + -[CACBannerViewPresenter _avoidanceRegionDidChange:]
@@ -175,18 +105,6 @@ Symbols:
 + ___block_descriptor_36_e43_q24?0"SRDMatchResult"8"SRDMatchResult"16l
 + ___block_descriptor_40_e8_32bs_e24_v16?0"NSNotification"8ls32l8
 + _displayRecognizedMessageUsingAttributedString:isIntelligenceCommand:.gRecognizedAudioPlayerLock
-+ _objc_msgSend$addObserverForName:object:queue:usingBlock:
-+ _objc_msgSend$copyFullscreenScreenshotSurface:
-+ _objc_msgSend$coverage
-+ _objc_msgSend$hasVerticalAvoidanceRegion
-+ _objc_msgSend$initWithCommand:transcriptionResult:matched:score:numberOfAdlibs:numberOfCachePlaceholders:asrRank:coverage:parameters:matchedObjects:displayString:closeMatchType:
-+ _objc_msgSend$initWithCommands:closeResult:partialResult:
-+ _objc_msgSend$isOperatingSystemAtLeastVersion:
-+ _objc_msgSend$processInfo
-+ _objc_msgSend$setHasVerticalAvoidanceRegion:
-+ _objc_msgSend$siriGateOnActiveRequestEnabled
-+ _objc_msgSend$siriStateTransitionDebugStringFrom:to:useEmoji:
-+ _objc_msgSend$startObservingVCIEnabledSetting
 + _siriStateTransitionDebugStringFrom:to:useEmoji:.bits
 - +[CACScreenshotGrabber copyFullscreenScreenshotSurface]
 - -[CACSynchronousRemoteRequestResult initWithCommands:closeResult:]
@@ -229,9 +147,6 @@ Symbols:
 - ___88+[CACSpokenCommand displayRecognizedMessageUsingAttributedString:isIntelligenceCommand:]_block_invoke_5
 - ___CACLogSiriCoordination_block_invoke
 - ___block_descriptor_32_e43_q24?0"SRDMatchResult"8"SRDMatchResult"16l
-- _objc_msgSend$copyFullscreenScreenshotSurface
-- _objc_msgSend$initWithCommand:transcriptionResult:matched:score:numberOfAdlibs:numberOfCachePlaceholders:asrRank:parameters:matchedObjects:displayString:closeMatchType:
-- _objc_msgSend$initWithCommands:closeResult:
 CStrings:
 + "%@%s: %d->%d"
 + ", "
@@ -277,5 +192,4 @@ CStrings:
 - "[handleDictation] textVariants: %@"
 - "notifyObserver from=%llu to=%llu isActiveSession=%d isListening=%d -> siriIsListening=%d (was %d)"
 - "speechRecognitionTask:didFinishRecognition:, task ID: %@, result: %@"
-
 ```

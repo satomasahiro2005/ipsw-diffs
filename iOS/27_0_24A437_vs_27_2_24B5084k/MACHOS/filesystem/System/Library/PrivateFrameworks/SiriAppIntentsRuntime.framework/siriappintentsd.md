@@ -2,15 +2,14 @@
 
 > `/System/Library/PrivateFrameworks/SiriAppIntentsRuntime.framework/siriappintentsd`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -3600.82.29.0.0
 +3605.15.1.0.0
-   __TEXT.__text: 0x94
-   __TEXT.__auth_stubs: 0x30
-   __TEXT.__const: 0x52
 ```

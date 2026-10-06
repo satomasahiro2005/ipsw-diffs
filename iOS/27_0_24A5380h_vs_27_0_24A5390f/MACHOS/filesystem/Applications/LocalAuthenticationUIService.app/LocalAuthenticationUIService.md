@@ -2,89 +2,58 @@
 
 > `/Applications/LocalAuthenticationUIService.app/LocalAuthenticationUIService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6c160` | `0x6c8e0` | **`+0x780`** |
+| `__TEXT.__objc_methname` | `0x9565` | `0x9785` | **`+0x220`** |
+| `__TEXT.__objc_stubs` | `0x6d40` | `0x6ec0` | **`+0x180`** |
+| `__DATA.__objc_const` | `0xc080` | `0xc150` | **`+0xd0`** |
+| `__TEXT.__objc_methlist` | `0x3a30` | `0x3ad8` | **`+0xa8`** |
+| `__DATA.__objc_selrefs` | `0x24c0` | `0x2540` | **`+0x80`** |
+| `__DATA_CONST.__got` | `0xaf8` | `0xb10` | **`+0x18`** |
+| `__TEXT.__cstring` | `0x157e` | `0x158e` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x1c08` | `0x1c18` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x328` | `0x334` | **`+0xc`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__const`
 - `__DATA_CONST.__objc_catlist`
 - `__DATA_CONST.__objc_catlist2`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_data`
-- `__DATA.__data`
-- `__DATA.__bss`
-- `__DATA.__common`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -2319.0.33.0.1
--  __TEXT.__text: 0x6c160
 +2319.0.46.0.0
-+  __TEXT.__text: 0x6c8e0
-   __TEXT.__auth_stubs: 0x21b0
--  __TEXT.__objc_stubs: 0x6d40
--  __TEXT.__objc_methlist: 0x3a30
-+  __TEXT.__objc_stubs: 0x6ec0
-+  __TEXT.__objc_methlist: 0x3ad8
-   __TEXT.__const: 0x3444
-   __TEXT.__objc_classname: 0x125c
--  __TEXT.__objc_methname: 0x9565
-+  __TEXT.__objc_methname: 0x9785
-   __TEXT.__gcc_except_tab: 0x6e8
--  __TEXT.__cstring: 0x157e
-+  __TEXT.__cstring: 0x158e
-   __TEXT.__oslogstring: 0x1c8e
-   __TEXT.__objc_methtype: 0x2837
-   __TEXT.__swift5_typeref: 0x3346
 
-   __TEXT.__swift_as_ret: 0x8
-   __TEXT.__swift_as_cont: 0x20
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__unwind_info: 0x1c08
-+  __TEXT.__unwind_info: 0x1c18
-   __TEXT.__eh_frame: 0x5a0
-   __DATA_CONST.__const: 0x34a0
-   __DATA_CONST.__cfstring: 0xfe0
-
-   __DATA_CONST.__objc_superrefs: 0xa0
-   __DATA_CONST.__objc_intobj: 0x408
-   __DATA_CONST.__auth_got: 0x10e8
--  __DATA_CONST.__got: 0xaf8
-+  __DATA_CONST.__got: 0xb10
-   __DATA_CONST.__auth_ptr: 0x7e8
--  __DATA.__objc_const: 0xc080
--  __DATA.__objc_selrefs: 0x24c0
--  __DATA.__objc_ivar: 0x328
-+  __DATA.__objc_const: 0xc150
-+  __DATA.__objc_selrefs: 0x2540
-+  __DATA.__objc_ivar: 0x334
-   __DATA.__objc_data: 0x2498
-   __DATA.__data: 0x29f0
-   __DATA.__bss: 0x20b0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2646
 -  Symbols:   7846
 -  CStrings:  2343
 +  Functions: 2656
 +  Symbols:   7875
 +  CStrings:  2362
- 
 Symbols:
 + -[TouchIdAlertController .cxx_destruct]
 + -[TouchIdAlertController _headerContentViewControllerWithContentView:]

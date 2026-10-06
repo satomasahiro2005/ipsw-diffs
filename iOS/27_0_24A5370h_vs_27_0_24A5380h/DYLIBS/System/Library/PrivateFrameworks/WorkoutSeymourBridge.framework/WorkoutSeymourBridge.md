@@ -2,96 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/WorkoutSeymourBridge.framework/WorkoutSeymourBridge`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x666e8` | `0x61200` | **`-0x54e8`** |
+| `__AUTH_CONST.__auth_got` | `0x1370` | `0x1170` | **`-0x200`** |
+| `__AUTH_CONST.__objc_const` | `0x1360` | `0x11d8` | **`-0x188`** |
+| `__DATA.__data` | `0xee0` | `0xde0` | **`-0x100`** |
+| `__AUTH.__objc_data` | `0x8f0` | `0x808` | **`-0xe8`** |
+| `__TEXT.__eh_frame` | `0x1a30` | `0x1970` | **`-0xc0`** |
+| `__TEXT.__swift5_reflstr` | `0xda4` | `0xce4` | **`-0xc0`** |
+| `__TEXT.__unwind_info` | `0x11d8` | `0x1128` | **`-0xb0`** |
+| `__TEXT.__swift5_typeref` | `0xdc6` | `0xd1e` | **`-0xa8`** |
+| `__AUTH_CONST.__const` | `0x1a10` | `0x1970` | **`-0xa0`** |
+| `__TEXT.__const` | `0x1872` | `0x17f2` | **`-0x80`** |
+| `__TEXT.__objc_methlist` | `0x764` | `0x6ec` | **`-0x78`** |
+| `__TEXT.__swift5_capture` | `0x960` | `0x8f8` | **`-0x68`** |
+| `__TEXT.__swift5_fieldmd` | `0x9c0` | `0x95c` | **`-0x64`** |
+| `__TEXT.__constg_swiftt` | `0xd18` | `0xcc4` | **`-0x54`** |
+| `__DATA_CONST.__objc_selrefs` | `0x730` | `0x6e8` | **`-0x48`** |
+| `__TEXT.__cstring` | `0x2cd5` | `0x2c95` | **`-0x40`** |
+| `__AUTH.__data` | `0x440` | `0x410` | **`-0x30`** |
+| `__DATA_DIRTY.__objc_data` | `0x3c8` | `0x3a8` | **`-0x20`** |
+| `__DATA_CONST.__const` | `0x458` | `0x448` | **`-0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0xb0` | `0xa0` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x38` | `0x30` | **`-0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x58` | `0x50` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0x6c` | `0x68` | **`-0x4`** |
+| `__TEXT.__swift_as_cont` | `0xcc` | `0xc8` | **`-0x4`** |
+| `__TEXT.__swift_as_entry` | `0x70` | `0x6c` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x666e8
--  __TEXT.__objc_methlist: 0x764
--  __TEXT.__const: 0x1872
--  __TEXT.__swift5_typeref: 0xdc6
--  __TEXT.__constg_swiftt: 0xd18
--  __TEXT.__swift5_reflstr: 0xda4
--  __TEXT.__swift5_fieldmd: 0x9c0
-+  __TEXT.__text: 0x61200
-+  __TEXT.__objc_methlist: 0x6ec
-+  __TEXT.__const: 0x17f2
-+  __TEXT.__swift5_typeref: 0xd1e
-+  __TEXT.__constg_swiftt: 0xcc4
-+  __TEXT.__swift5_reflstr: 0xce4
-+  __TEXT.__swift5_fieldmd: 0x95c
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_assocty: 0x48
-   __TEXT.__swift5_proto: 0x7c
--  __TEXT.__swift5_types: 0x6c
--  __TEXT.__cstring: 0x2cd5
--  __TEXT.__swift5_capture: 0x960
-+  __TEXT.__swift5_types: 0x68
-+  __TEXT.__cstring: 0x2c95
-+  __TEXT.__swift5_capture: 0x8f8
-   __TEXT.__swift5_protos: 0x14
--  __TEXT.__swift_as_entry: 0x70
--  __TEXT.__swift_as_cont: 0xcc
-+  __TEXT.__swift_as_entry: 0x6c
-+  __TEXT.__swift_as_cont: 0xc8
-   __TEXT.__swift_as_ret: 0x24
-   __TEXT.__oslogstring: 0x65
--  __TEXT.__unwind_info: 0x11d8
--  __TEXT.__eh_frame: 0x1a30
-+  __TEXT.__unwind_info: 0x1128
-+  __TEXT.__eh_frame: 0x1970
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x458
--  __DATA_CONST.__objc_classlist: 0x38
--  __DATA_CONST.__objc_protolist: 0xb0
-+  __DATA_CONST.__const: 0x448
-+  __DATA_CONST.__objc_classlist: 0x30
-+  __DATA_CONST.__objc_protolist: 0xa0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x730
--  __DATA_CONST.__objc_protorefs: 0x58
-+  __DATA_CONST.__objc_selrefs: 0x6e8
-+  __DATA_CONST.__objc_protorefs: 0x50
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1a10
--  __AUTH_CONST.__objc_const: 0x1360
--  __AUTH_CONST.__auth_got: 0x1370
--  __AUTH.__objc_data: 0x8f0
--  __AUTH.__data: 0x440
--  __DATA.__data: 0xee0
-+  __AUTH_CONST.__const: 0x1970
-+  __AUTH_CONST.__objc_const: 0x11d8
-+  __AUTH_CONST.__auth_got: 0x1170
-+  __AUTH.__objc_data: 0x808
-+  __AUTH.__data: 0x410
-+  __DATA.__data: 0xde0
-   __DATA.__bss: 0xc80
-   __DATA.__common: 0x130
--  __DATA_DIRTY.__objc_data: 0x3c8
-+  __DATA_DIRTY.__objc_data: 0x3a8
-   __DATA_DIRTY.__data: 0x128
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
+-2027.0.125.0.0
++2027.0.132.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1711
--  Symbols:   5426
+-  Symbols:   3916
 -  CStrings:  179
 +  Functions: 1656
-+  Symbols:   5194
++  Symbols:   3736
 +  CStrings:  178
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __DATA_DIRTY.__data : content changed
 Symbols:
 + _$s20WorkoutSeymourBridge22MediaMomentCoordinatorC12mediaMoments0gE11ArtworkSize12narratorName12dependencies0G4TypeACSgShy0B4Core0dE0VG_So6CGSizeVSgSS0bO10Foundation12DependenciesCAQ12PortableEnumOyAJ07CatalogdN0OGtcfcy0B6Client0dE7StartedVYaYbcfU_TA.67TQ0_
 + _$s20WorkoutSeymourBridge22MediaMomentCoordinatorC12mediaMoments0gE11ArtworkSize12narratorName12dependencies0G4TypeACSgShy0B4Core0dE0VG_So6CGSizeVSgSS0bO10Foundation12DependenciesCAQ12PortableEnumOyAJ07CatalogdN0OGtcfcy0B6Client0dE7StartedVYaYbcfU_TA.67Tu
@@ -284,11 +238,6 @@ Symbols:
 - __PROTOCOLS__TtC20WorkoutSeymourBridge34SeymourIntervalWorkoutUpdateSender
 - ___swift_closure_destructor.134Tm
 - ___swift_closure_destructor.66Tm
-- _objc_msgSend$goalTypeIdentifier
-- _objc_msgSend$initWithGoalTypeIdentifier:value:
-- _objc_msgSend$isIndoor
-- _objc_msgSend$secondUnit
-- _objc_msgSend$value
 - _objc_retainAutoreleaseReturnValue
 - _swift_dynamicCastClass
 - _swift_retain_x8
@@ -310,5 +259,4 @@ Symbols:
 - _symbolic _____y_____G s23_ContiguousArrayStorageC 11SeymourCore27StructuredWorkoutDescriptorV5BlockV
 CStrings:
 - "WorkoutSeymourBridge.SeymourIntervalWorkoutUpdateSender"
-
 ```

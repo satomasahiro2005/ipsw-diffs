@@ -2,14 +2,15 @@
 
 > `/System/Library/VideoProcessors/IntelligentDistortionCorrectionV1.bundle/IntelligentDistortionCorrectionV1`
 
-```diff
+### Section Size Changes
 
- 764.22.13.0.0
--  __TEXT.__text: 0x1328c
-+  __TEXT.__text: 0x13288
-   __TEXT.__objc_methlist: 0xdc4
-   __TEXT.__const: 0x180
-   __TEXT.__cstring: 0x4883
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1328c` | `0x13288` | **`-0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2bd5b9c8c -> sub_2be420c8c : 516 -> 512
+~ sub_2bd4dec8c -> sub_2be334c8c : 516 -> 512
 ```

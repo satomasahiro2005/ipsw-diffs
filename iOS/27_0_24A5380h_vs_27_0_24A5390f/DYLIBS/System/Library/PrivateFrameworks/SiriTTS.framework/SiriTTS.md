@@ -2,77 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/SiriTTS.framework/SiriTTS`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_floatobj`
-- `__AUTH.__data`
-- `__DATA.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x82c7f4` | `0x82ebc4` | **`+0x23d0`** |
+| `__TEXT.__cstring` | `0x6e4d1` | `0x6e6c4` | **`+0x1f3`** |
+| `__TEXT.__gcc_except_tab` | `0x3bb34` | `0x3bcf4` | **`+0x1c0`** |
+| `__TEXT.__oslogstring` | `0x9e8e` | `0xa038` | **`+0x1aa`** |
+| `__TEXT.__const` | `0xe43cc` | `0xe4564` | **`+0x198`** |
+| `__AUTH_CONST.__const` | `0x351d0` | `0x35260` | **`+0x90`** |
+| `__AUTH_CONST.__auth_got` | `0x15b8` | `0x1638` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x18490` | `0x184e0` | **`+0x50`** |
+| `__DATA.__bss` | `0xe94` | `0xec4` | **`+0x30`** |
+| `__AUTH_CONST.__cfstring` | `0x200` | `0x1e0` | **`-0x20`** |
+
+### Other Changes
 
 ```diff
 
 -3600.74.1.1.1
--  __TEXT.__text: 0x82c7f4
 +3600.81.1.0.0
-+  __TEXT.__text: 0x82ebc4
-   __TEXT.__objc_methlist: 0x20
--  __TEXT.__const: 0xe43cc
--  __TEXT.__cstring: 0x6e4d1
--  __TEXT.__gcc_except_tab: 0x3bb34
--  __TEXT.__oslogstring: 0x9e8e
-+  __TEXT.__const: 0xe4564
-+  __TEXT.__cstring: 0x6e6c4
-+  __TEXT.__gcc_except_tab: 0x3bcf4
-+  __TEXT.__oslogstring: 0xa038
-   __TEXT.__ustring: 0x494
--  __TEXT.__unwind_info: 0x18490
-+  __TEXT.__unwind_info: 0x184e0
-   __TEXT.__eh_frame: 0x208
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0x90
-   __DATA_CONST.__objc_arraydata: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x351d0
--  __AUTH_CONST.__cfstring: 0x200
-+  __AUTH_CONST.__const: 0x35260
-+  __AUTH_CONST.__cfstring: 0x1e0
-   __AUTH_CONST.__objc_const: 0x40
-   __AUTH_CONST.__weak_auth_got: 0x38
-   __AUTH_CONST.__objc_intobj: 0x48
-   __AUTH_CONST.__objc_arrayobj: 0x30
-   __AUTH_CONST.__objc_floatobj: 0x10
--  __AUTH_CONST.__auth_got: 0x15b8
-+  __AUTH_CONST.__auth_got: 0x1638
-   __AUTH.__data: 0xe8
-   __DATA.__data: 0x310
--  __DATA.__bss: 0xe94
-+  __DATA.__bss: 0xec4
-   __DATA.__common: 0x21
-   __DATA_DIRTY.__bss: 0x20
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libxml2.2.dylib
 -  Functions: 22399
--  Symbols:   33840
+-  Symbols:   33823
 -  CStrings:  17021
 +  Functions: 22414
-+  Symbols:   33876
++  Symbols:   33859
 +  CStrings:  17033
- 
 Symbols:
 + GCC_except_table1008
 + GCC_except_table1013

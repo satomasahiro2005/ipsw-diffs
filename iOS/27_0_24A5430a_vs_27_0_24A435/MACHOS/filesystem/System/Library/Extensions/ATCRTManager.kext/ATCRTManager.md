@@ -2,23 +2,22 @@
 
 > `/System/Library/Extensions/ATCRTManager.kext/ATCRTManager`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x3ea0` | `0x3fa8` | **`+0x108`** |
+
+### Same-size Content Changes
 
 - `__DATA.__data`
+- `__DATA_CONST.__const`
 - `__DATA_CONST.__mod_init_func`
 - `__DATA_CONST.__mod_term_func`
-- `__DATA_CONST.__const`
 
-```diff
+### Other Changes
 
- 4.0.2.0.0
-   __TEXT.__cstring: 0x132a
-   __TEXT.__const: 0x14
--  __TEXT_EXEC.__text: 0x3ea0
-+  __TEXT_EXEC.__text: 0x3fa8
-   __TEXT_EXEC.__auth_stubs: 0x2f0
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x60
+```text
 Functions:
 ~ __ZN12ATCRTManager9MetaClassC1Ev : 72 -> 76
 ~ __ZN12ATCRTManagerC2EPK11OSMetaClass : 52 -> 56

@@ -2,14 +2,15 @@
 
 > `/usr/lib/libbz2.1.0.dylib`
 
-```diff
+### Section Size Changes
 
- 49.0.0.0.0
--  __TEXT.__text: 0xae40
-+  __TEXT.__text: 0xae44
-   __TEXT.__const: 0x4e0
-   __TEXT.__cstring: 0x94b
-   __TEXT.__unwind_info: 0x120
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xae40` | `0xae44` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2bfceef70 -> sub_2c160df70 : 14348 -> 14352
+~ sub_2bfc13f70 -> sub_2c1537f70 : 14348 -> 14352
 ```

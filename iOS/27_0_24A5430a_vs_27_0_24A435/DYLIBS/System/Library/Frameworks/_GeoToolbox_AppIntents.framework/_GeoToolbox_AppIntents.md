@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/_GeoToolbox_AppIntents.framework/_GeoToolbox_AppIntents`
 
-```diff
+### Section Size Changes
 
- 34.30.6.12.11
--  __TEXT.__text: 0x7314
-+  __TEXT.__text: 0x7318
-   __TEXT.__const: 0xefa
-   __TEXT.__swift5_typeref: 0x563
-   __TEXT.__cstring: 0x171
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7314` | `0x7318` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_24d692ce4 -> sub_24e096ce4 : 3692 -> 3696
+~ sub_24d53fce4 -> sub_24df4ace4 : 3692 -> 3696
 ```

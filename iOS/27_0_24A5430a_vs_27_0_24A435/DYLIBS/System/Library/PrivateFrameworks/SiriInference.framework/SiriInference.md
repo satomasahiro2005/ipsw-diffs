@@ -2,35 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/SiriInference.framework/SiriInference`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x30c128` | `0x30c1c8` | **`+0xa0`** |
+| `__TEXT.__eh_frame` | `0x1229c` | `0x12264` | **`-0x38`** |
+| `__TEXT.__unwind_info` | `0xadf0` | `0xade8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 3600.34.21.0.0
--  __TEXT.__text: 0x30c128
-+  __TEXT.__text: 0x30c1c8
-   __TEXT.__objc_methlist: 0x5d0
-   __TEXT.__const: 0x25c58
-   __TEXT.__swift5_typeref: 0x8bc2
-
-   __TEXT.__swift_as_cont: 0x17c
-   __TEXT.__swift5_capture: 0x5874
-   __TEXT.__swift5_mpenum: 0x80
--  __TEXT.__unwind_info: 0xadf0
--  __TEXT.__eh_frame: 0x1229c
-+  __TEXT.__unwind_info: 0xade8
-+  __TEXT.__eh_frame: 0x12264
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 19930
--  Symbols:   5877
+-  Symbols:   4961
 +  Functions: 19977
-+  Symbols:   5882
-   CStrings:  3182
- 
++  Symbols:   4966
 Symbols:
 + _OUTLINED_FUNCTION_241
 + _OUTLINED_FUNCTION_242

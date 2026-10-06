@@ -2,130 +2,63 @@
 
 > `/System/Library/Frameworks/HomeKit.framework/HomeKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3ce970` | `0x3e7a74` | **`+0x19104`** |
+| `__DATA.__bss` | `0x9708` | `0xc828` | **`+0x3120`** |
+| `__TEXT.__const` | `0x6818` | `0x82b8` | **`+0x1aa0`** |
+| `__TEXT.__cstring` | `0x2fb29` | `0x308a7` | **`+0xd7e`** |
+| `__AUTH_CONST.__const` | `0x64a8` | `0x70a8` | **`+0xc00`** |
+| `__TEXT.__oslogstring` | `0x57a7e` | `0x58641` | **`+0xbc3`** |
+| `__AUTH_CONST.__cfstring` | `0x2b9a0` | `0x2c3c0` | **`+0xa20`** |
+| `__TEXT.__eh_frame` | `0x7a10` | `0x8370` | **`+0x960`** |
+| `__AUTH_CONST.__objc_const` | `0x49690` | `0x49ed8` | **`+0x848`** |
+| `__TEXT.__unwind_info` | `0xcc90` | `0xd308` | **`+0x678`** |
+| `__TEXT.__swift5_fieldmd` | `0x1474` | `0x1a74` | **`+0x600`** |
+| `__TEXT.__objc_methlist` | `0x28c24` | `0x2919c` | **`+0x578`** |
+| `__TEXT.__swift5_typeref` | `0x1fe8` | `0x2538` | **`+0x550`** |
+| `__DATA.__data` | `0x52c0` | `0x57d0` | **`+0x510`** |
+| `__TEXT.__constg_swiftt` | `0x1c98` | `0x217c` | **`+0x4e4`** |
+| `__AUTH.__data` | `0x17d0` | `0x1c20` | **`+0x450`** |
+| `__TEXT.__swift5_reflstr` | `0x1195` | `0x15b5` | **`+0x420`** |
+| `__DATA_CONST.__objc_selrefs` | `0xe418` | `0xe6c8` | **`+0x2b0`** |
+| `__TEXT.__swift5_proto` | `0x4d0` | `0x670` | **`+0x1a0`** |
+| `__DATA_CONST.__const` | `0x8d40` | `0x8e90` | **`+0x150`** |
+| `__DATA_DIRTY.__data` | `0x78` | `0x138` | **`+0xc0`** |
+| `__AUTH_CONST.__auth_got` | `0x1a00` | `0x1ab0` | **`+0xb0`** |
+| `__TEXT.__swift5_types` | `0x1c4` | `0x248` | **`+0x84`** |
+| `__DATA.__objc_ivar` | `0x285c` | `0x28cc` | **`+0x70`** |
+| `__TEXT.__swift5_assocty` | `0x368` | `0x3d8` | **`+0x70`** |
+| `__DATA_CONST.__got` | `0x1e58` | `0x1eb0` | **`+0x58`** |
+| `__TEXT.__swift5_capture` | `0x9a4` | `0x970` | **`-0x34`** |
+| `__TEXT.__swift_as_entry` | `0x1e8` | `0x1fc` | **`+0x14`** |
+| `__TEXT.__swift_as_ret` | `0x22c` | `0x240` | **`+0x14`** |
+| `__DATA_DIRTY.__bss` | `0x1d8` | `0x1c8` | **`-0x10`** |
+| `__TEXT.__swift_as_cont` | `0x434` | `0x444` | **`+0x10`** |
+| `__DATA_DIRTY.__objc_data` | `0x3628` | `0x3630` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x691c` | `0x6920` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1493.1.5.1.1
--  __TEXT.__text: 0x3b9cdc
--  __TEXT.__objc_methlist: 0x28c24
--  __TEXT.__const: 0x6818
 +1514.0.0.0.1
-+  __TEXT.__text: 0x3d2354
-+  __TEXT.__objc_methlist: 0x2919c
-+  __TEXT.__const: 0x82b8
-   __TEXT.__dlopen_cstrs: 0x403
--  __TEXT.__swift5_typeref: 0x1fe8
--  __TEXT.__cstring: 0x2fb29
--  __TEXT.__constg_swiftt: 0x1c98
--  __TEXT.__swift5_reflstr: 0x1195
--  __TEXT.__swift5_fieldmd: 0x1474
-+  __TEXT.__swift5_typeref: 0x2538
-+  __TEXT.__cstring: 0x308a7
-+  __TEXT.__constg_swiftt: 0x217c
-+  __TEXT.__swift5_reflstr: 0x15b5
-+  __TEXT.__swift5_fieldmd: 0x1a74
-   __TEXT.__swift5_builtin: 0xa0
--  __TEXT.__swift5_assocty: 0x368
--  __TEXT.__swift5_capture: 0x9a4
-+  __TEXT.__swift5_assocty: 0x3d8
-+  __TEXT.__swift5_capture: 0x970
-   __TEXT.__swift5_protos: 0x38
--  __TEXT.__swift5_proto: 0x4d0
--  __TEXT.__swift5_types: 0x1c4
--  __TEXT.__swift_as_entry: 0x1e8
--  __TEXT.__swift_as_ret: 0x22c
--  __TEXT.__swift_as_cont: 0x434
--  __TEXT.__oslogstring: 0x57a7e
-+  __TEXT.__swift5_proto: 0x670
-+  __TEXT.__swift5_types: 0x248
-+  __TEXT.__swift_as_entry: 0x1fc
-+  __TEXT.__swift_as_ret: 0x240
-+  __TEXT.__swift_as_cont: 0x444
-+  __TEXT.__oslogstring: 0x58641
-   __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__gcc_except_tab: 0x691c
-+  __TEXT.__gcc_except_tab: 0x6920
-   __TEXT.__ustring: 0x50
--  __TEXT.__unwind_info: 0xf620
--  __TEXT.__eh_frame: 0x7a18
-+  __TEXT.__unwind_info: 0xfe50
-+  __TEXT.__eh_frame: 0x8378
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x8d40
-+  __DATA_CONST.__const: 0x8e90
-   __DATA_CONST.__objc_classlist: 0x1390
-   __DATA_CONST.__objc_catlist: 0x108
-   __DATA_CONST.__objc_protolist: 0x568
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xe418
-+  __DATA_CONST.__objc_selrefs: 0xe6c8
-   __DATA_CONST.__objc_protorefs: 0x110
-   __DATA_CONST.__objc_superrefs: 0xfe8
-   __DATA_CONST.__objc_arraydata: 0x1430
--  __DATA_CONST.__got: 0x1e58
--  __AUTH_CONST.__const: 0x64a8
--  __AUTH_CONST.__cfstring: 0x2b9a0
--  __AUTH_CONST.__objc_const: 0x49690
-+  __DATA_CONST.__got: 0x1eb0
-+  __AUTH_CONST.__const: 0x70a8
-+  __AUTH_CONST.__cfstring: 0x2c3c0
-+  __AUTH_CONST.__objc_const: 0x49ed8
-   __AUTH_CONST.__objc_intobj: 0x9a8
-   __AUTH_CONST.__objc_dictobj: 0x848
-   __AUTH_CONST.__objc_arrayobj: 0x5e8
-   __AUTH_CONST.__objc_doubleobj: 0x70
--  __AUTH_CONST.__auth_got: 0x1a00
-+  __AUTH_CONST.__auth_got: 0x1ab0
-   __AUTH.__objc_data: 0x9238
--  __AUTH.__data: 0x17d0
--  __DATA.__objc_ivar: 0x285c
--  __DATA.__data: 0x52c0
-+  __AUTH.__data: 0x1c20
-+  __DATA.__objc_ivar: 0x28cc
-+  __DATA.__data: 0x57d0
-   __DATA.__common: 0xa8
--  __DATA_DIRTY.__objc_data: 0x3628
--  __DATA_DIRTY.__data: 0x78
--  __DATA_DIRTY.__bss: 0x1d8
-+  __DATA_DIRTY.__objc_data: 0x3630
-+  __DATA_DIRTY.__data: 0x138
-+  __DATA_DIRTY.__bss: 0x1c8
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accounts.framework/Accounts
+
 +  - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreLocation.framework/CoreLocation
 
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /System/Library/PrivateFrameworks/StreamingZip.framework/StreamingZip
-   - /System/Library/PrivateFrameworks/TCC.framework/TCC
 +  - /System/Library/PrivateFrameworks/ToolKit.framework/ToolKit
-   - /System/Library/PrivateFrameworks/TouchRemote.framework/TouchRemote
-   - /System/Library/PrivateFrameworks/VectorSearch.framework/VectorSearch
-   - /usr/lib/libMobileGestalt.dylib
 
-   - /usr/lib/swift/libswiftCoreLocation.dylib
-   - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
 +  - /usr/lib/swift/libswiftIntents.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 17626
--  Symbols:   32714
+-  Symbols:   27428
 -  CStrings:  12500
 +  Functions: 18249
-+  Symbols:   33096
++  Symbols:   27761
 +  CStrings:  12657
- 
 Symbols:
 + +[HMAccessory(CameraInternal) _cameraProfilesForAccessoryProfiles:]
 + +[HMCoreAnalyticsMetricEventDispatcher logCategory]
@@ -987,82 +920,6 @@ Symbols:
 + _logCategory._hmf_once_v82
 + _logCategory._hmf_once_v90
 + _logCategory._hmf_once_v95
-+ _objc_msgSend$_accessoryUUIDsForClientDelegation:
-+ _objc_msgSend$_failClientDelegationRequestWithCode:completion:
-+ _objc_msgSend$_hlsPlaylistEncryptionMethodName
-+ _objc_msgSend$_playlistTargetDuration
-+ _objc_msgSend$_removeAccessory:regulatoryEraseRequired:completionHandler:
-+ _objc_msgSend$_sendClientDelegationMessageWithName:accessoryUUIDs:auditToken:completion:
-+ _objc_msgSend$accessory:didUpdateMatterNodeID:
-+ _objc_msgSend$accessoryDidUpdateSupportsRTAPATAudio:
-+ _objc_msgSend$accessoryDidUpdateSupportsRegulatoryErase:
-+ _objc_msgSend$alternativeEntitlements
-+ _objc_msgSend$cancelTimer:
-+ _objc_msgSend$clientHasMediaGroupsEnabled
-+ _objc_msgSend$colorCode
-+ _objc_msgSend$completeCompletions:documentation:
-+ _objc_msgSend$configureCaptionPlanObservation
-+ _objc_msgSend$configureWithMessageDispatcher:clientHasMediaGroupsEnabled:
-+ _objc_msgSend$defaultGroupName
-+ _objc_msgSend$didUpdateSupportedOptionsForMediaDestinationController:
-+ _objc_msgSend$documentationAsset:didTransitionToState:documentation:error:
-+ _objc_msgSend$documentationForState:
-+ _objc_msgSend$drainCompletionsForAsset:
-+ _objc_msgSend$encryptionScheme
-+ _objc_msgSend$failCompletions:error:
-+ _objc_msgSend$failCompletionsForAsset:error:
-+ _objc_msgSend$hasGroupName
-+ _objc_msgSend$hm_setXPCTimeoutDate:
-+ _objc_msgSend$homeManager:didRemoveCurrentAccessoryWithRegulatoryEraseRequired:
-+ _objc_msgSend$initWithControllerData:supportsHomeTheaterNaming:
-+ _objc_msgSend$initWithIdentifier:parentIdentifier:destinationIdentifier:supportedOptions:availableDestinationIdentifiers:rawGroupName:
-+ _objc_msgSend$initWithIdentifier:parentIdentifier:name:defaultName:audioDestinationIdentifier:audioDestinationType:
-+ _objc_msgSend$initWithSnapshotPath:urlParameters:privacyPolicyURL:uploadDestination:consentVersion:uploadType:captureDate:isCachedSnapshot:
-+ _objc_msgSend$invalidateCache
-+ _objc_msgSend$isCachedSnapshot
-+ _objc_msgSend$isClipComplete
-+ _objc_msgSend$isRegulatoryEraseRequiredForLastRemovedCurrentAccessory
-+ _objc_msgSend$maxDataSegmentDuration
-+ _objc_msgSend$mediaDestinationController:didUpdateGroupName:
-+ _objc_msgSend$metricContext
-+ _objc_msgSend$needsNotificationForState:
-+ _objc_msgSend$notifyDelegateUpdatedSupportsRTAPATAudioUsingContext:
-+ _objc_msgSend$notifyDestinationControllersWithDestinationControllerData:
-+ _objc_msgSend$notifyDidUpdateGroupName
-+ _objc_msgSend$notifyDidUpdateSupportedOptions
-+ _objc_msgSend$proxPairingCardLaunchSessionID
-+ _objc_msgSend$proxPairingMetricsSessionID
-+ _objc_msgSend$rawGroupName
-+ _objc_msgSend$resetMetricCountsIfNeeded
-+ _objc_msgSend$segmentsString
-+ _objc_msgSend$setAlternativeEntitlements:
-+ _objc_msgSend$setClientHasMediaGroupsEnabled:
-+ _objc_msgSend$setColorCode:
-+ _objc_msgSend$setDisableRealCameraContent:
-+ _objc_msgSend$setGroupName:
-+ _objc_msgSend$setInheritsTiming:
-+ _objc_msgSend$setMaxDataSegmentDuration:
-+ _objc_msgSend$setProxPairingCardLaunchSessionID:
-+ _objc_msgSend$setProxPairingMetricsSessionID:
-+ _objc_msgSend$setSupportsAudioDestinationMediaSystemVirtualHomePod:
-+ _objc_msgSend$setSupportsAudioDestinationVirtualHomeTheater:
-+ _objc_msgSend$setSupportsECDSAKey:
-+ _objc_msgSend$setSupportsHomeTheaterNaming:
-+ _objc_msgSend$setSupportsRegulatoryErase:
-+ _objc_msgSend$setSuppressDPS:
-+ _objc_msgSend$setThermostatPreset:
-+ _objc_msgSend$setUserConfigurationReady:
-+ _objc_msgSend$stageGroups:destinations:destinationControllersData:removedGroupIdentifiers:
-+ _objc_msgSend$stagedDestinationControllerData
-+ _objc_msgSend$startMetricWithMetricType:
-+ _objc_msgSend$stopMetricWithResult:
-+ _objc_msgSend$supportsAudioDestinationMediaSystemVirtualHomePod
-+ _objc_msgSend$supportsAudioDestinationVirtualHomeTheater
-+ _objc_msgSend$supportsECDSAKey
-+ _objc_msgSend$supportsHomeTheaterNaming
-+ _objc_msgSend$supportsRegulatoryErase
-+ _objc_msgSend$swiftEventForTriggerType:dictionary:home:
-+ _objc_msgSend$transferDeadline
 + _swift_getEnumCaseMultiPayload
 + _symbolic $s11ActivityKit0A10AttributesP
 + _symbolic SDySSSiG
@@ -1784,33 +1641,6 @@ Symbols:
 - _logCategory._hmf_once_v87
 - _logCategory._hmf_once_v89
 - _logCategory._hmf_once_v98
-- _objc_msgSend$_hlsPlaylistEncryptionMethodNameForScheme:
-- _objc_msgSend$_notifyCameraProfileVisibilityChangedForCharacteristic:value:previousValue:
-- _objc_msgSend$clearStagedDestinationControllerData
-- _objc_msgSend$clearStagedDestinationControllerDataForIdentifier:
-- _objc_msgSend$clearStagedDestinationForIdentifier:
-- _objc_msgSend$clearStagedDestinations
-- _objc_msgSend$clearStagedGroupForIdentifier:
-- _objc_msgSend$clearStagedGroups
-- _objc_msgSend$clearStagedRemovedGroupIdentifiers
-- _objc_msgSend$configureWithMessageDispatcher:
-- _objc_msgSend$didUpdateDocumentationAssetState:
-- _objc_msgSend$documentationIsCached
-- _objc_msgSend$hlsPlaylistString
-- _objc_msgSend$initWithControllerData:
-- _objc_msgSend$initWithIdentifier:parentIdentifier:destinationIdentifier:supportedOptions:availableDestinationIdentifiers:
-- _objc_msgSend$initWithIdentifier:parentIdentifier:name:audioDestinationIdentifier:audioDestinationType:
-- _objc_msgSend$initWithSnapshotPath:urlParameters:privacyPolicyURL:uploadDestination:consentVersion:uploadType:
-- _objc_msgSend$initWithVersion1LegacyPayloadData:value:length:payloadBytes:reserved:setupPayloadURL:outError:
-- _objc_msgSend$metricStartTime
-- _objc_msgSend$setMetricStartTime:
-- _objc_msgSend$setMetricType:
-- _objc_msgSend$stageDestinationControllersData:
-- _objc_msgSend$stageDestinations:
-- _objc_msgSend$stageGroups:
-- _objc_msgSend$stageRemovedGroupIdentifiers:
-- _objc_msgSend$stateNeedsNotification
-- _objc_msgSend$systemUptime
 - _symbolic So7NSErrorCSgIeyBy_
 - _symbolic ______pSgIegg_Sg s5ErrorP
 CStrings:

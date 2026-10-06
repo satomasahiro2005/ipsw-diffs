@@ -2,21 +2,21 @@
 
 > `/usr/libexec/powerexceptionsd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x50` | `0x48` | **`-0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+
+### Other Changes
 
 ```diff
 
 -177.0.8.502.1
 +177.0.16.0.0
-   __TEXT.__text: 0xd0
-   __TEXT.__auth_stubs: 0x80
-   __TEXT.__objc_stubs: 0x60
--  __TEXT.__const: 0x50
-+  __TEXT.__const: 0x48
-   __TEXT.__cstring: 0x1a
-   __TEXT.__objc_methname: 0x31
-   __TEXT.__unwind_info: 0x58
 ```

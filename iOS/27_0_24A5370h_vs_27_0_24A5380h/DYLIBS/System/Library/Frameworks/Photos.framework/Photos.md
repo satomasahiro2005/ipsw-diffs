@@ -2,112 +2,47 @@
 
 > `/System/Library/Frameworks/Photos.framework/Photos`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2d74e0` | `0x2d91e0` | **`+0x1d00`** |
+| `__TEXT.__oslogstring` | `0x230d7` | `0x2337c` | **`+0x2a5`** |
+| `__TEXT.__gcc_except_tab` | `0x93b8` | `0x95bc` | **`+0x204`** |
+| `__AUTH.__objc_data` | `0x7bb8` | `0x7d98` | **`+0x1e0`** |
+| `__DATA_DIRTY.__objc_data` | `0x1c40` | `0x1a60` | **`-0x1e0`** |
+| `__AUTH_CONST.__cfstring` | `0x2d500` | `0x2d600` | **`+0x100`** |
+| `__TEXT.__cstring` | `0x326ba` | `0x3279b` | **`+0xe1`** |
+| `__DATA.__bss` | `0x1af8` | `0x1a68` | **`-0x90`** |
+| `__DATA_CONST.__objc_selrefs` | `0x14570` | `0x14600` | **`+0x90`** |
+| `__DATA_DIRTY.__bss` | `0x90` | `0x120` | **`+0x90`** |
+| `__AUTH_CONST.__const` | `0x4768` | `0x46f8` | **`-0x70`** |
+| `__AUTH_CONST.__objc_const` | `0x42000` | `0x42070` | **`+0x70`** |
+| `__TEXT.__objc_methlist` | `0x26a5c` | `0x26ab4` | **`+0x58`** |
+| `__TEXT.__eh_frame` | `0x480` | `0x4a0` | **`+0x20`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x780` | `0x798` | **`+0x18`** |
+| `__AUTH_CONST.__objc_intobj` | `0x22e0` | `0x22f8` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x2978` | `0x2990` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x18a8` | `0x18b8` | **`+0x10`** |
+| `__AUTH_CONST.__objc_floatobj` | `—` | `0x10` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x35dc` | `0x35e8` | **`+0xc`** |
+| `__DATA_CONST.__objc_arraydata` | `0x8f8` | `0x900` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x9648` | `0x9640` | **`-0x8`** |
+| `__TEXT.__swift_as_cont` | `0x14` | `0x18` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2d74e0
--  __TEXT.__objc_methlist: 0x26a5c
-+  __TEXT.__text: 0x2d91e0
-+  __TEXT.__objc_methlist: 0x26ab4
-   __TEXT.__const: 0x1778
-   __TEXT.__dlopen_cstrs: 0x280
-   __TEXT.__constg_swiftt: 0x544
+-910.21.101.0.0
++910.27.103.0.0
 
-   __TEXT.__swift5_proto: 0x4c
-   __TEXT.__swift5_types: 0x34
-   __TEXT.__swift5_capture: 0x198
--  __TEXT.__cstring: 0x326ba
-+  __TEXT.__cstring: 0x3279b
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0x10
--  __TEXT.__swift_as_cont: 0x14
--  __TEXT.__oslogstring: 0x230d7
-+  __TEXT.__swift_as_cont: 0x18
-+  __TEXT.__oslogstring: 0x2337c
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__gcc_except_tab: 0x93b8
-+  __TEXT.__gcc_except_tab: 0x95bc
-   __TEXT.__ustring: 0x1e
--  __TEXT.__unwind_info: 0x9648
--  __TEXT.__eh_frame: 0x480
-+  __TEXT.__unwind_info: 0x9640
-+  __TEXT.__eh_frame: 0x4a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x68
-   __DATA_CONST.__objc_protolist: 0x2f8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x14570
-+  __DATA_CONST.__objc_selrefs: 0x14600
-   __DATA_CONST.__objc_protorefs: 0x40
-   __DATA_CONST.__objc_superrefs: 0xc50
--  __DATA_CONST.__objc_arraydata: 0x8f8
--  __DATA_CONST.__got: 0x2978
--  __AUTH_CONST.__const: 0x4768
--  __AUTH_CONST.__cfstring: 0x2d500
--  __AUTH_CONST.__objc_const: 0x42000
--  __AUTH_CONST.__objc_intobj: 0x22e0
--  __AUTH_CONST.__objc_arrayobj: 0x780
-+  __DATA_CONST.__objc_arraydata: 0x900
-+  __DATA_CONST.__got: 0x2990
-+  __AUTH_CONST.__const: 0x46f8
-+  __AUTH_CONST.__cfstring: 0x2d600
-+  __AUTH_CONST.__objc_const: 0x42070
-+  __AUTH_CONST.__objc_intobj: 0x22f8
-+  __AUTH_CONST.__objc_arrayobj: 0x798
-   __AUTH_CONST.__objc_doubleobj: 0x130
-   __AUTH_CONST.__objc_dictobj: 0xc8
--  __AUTH_CONST.__auth_got: 0x18a8
--  __AUTH.__objc_data: 0x7bb8
-+  __AUTH_CONST.__objc_floatobj: 0x10
-+  __AUTH_CONST.__auth_got: 0x18b8
-+  __AUTH.__objc_data: 0x7d98
-   __AUTH.__data: 0x180
--  __DATA.__objc_ivar: 0x35dc
-+  __DATA.__objc_ivar: 0x35e8
-   __DATA.__data: 0x2b68
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x1af8
-+  __DATA.__bss: 0x1a68
-   __DATA.__common: 0x55
--  __DATA_DIRTY.__objc_data: 0x1c40
-+  __DATA_DIRTY.__objc_data: 0x1a60
-   __DATA_DIRTY.__data: 0x148
--  __DATA_DIRTY.__bss: 0x90
-+  __DATA_DIRTY.__bss: 0x120
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 14849
--  Symbols:   49193
--  CStrings:  14722
+-  Symbols:   25851
+-  CStrings:  8842
 +  Functions: 14857
-+  Symbols:   49226
-+  CStrings:  14746
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   25866
++  CStrings:  8856
 Symbols:
 + +[PHFindQueryExecutor _findLexemesMatchingUUIDs:context:]
 + +[PHFindQueryExecutor _translateLEOLexemes:queryId:]
@@ -544,26 +479,6 @@ Symbols:
 + ___block_descriptor_56_e8_32s40bs_e5_v8?0ls32l8s40l8
 + ___block_descriptor_80_e8_32s40s48s56s64s72bs_e17_v16?0"NSError"8ls32l8s72l8s40l8s48l8s56l8s64l8
 + _kCGImageDestinationLossyCompressionQuality
-+ _objc_msgSend$_featureAvailabilityForFeature:readOptions:treatGraphFailureAsError:error:
-+ _objc_msgSend$_fetchAllNameComponentEntitiesForText:categories:searchStore:searchIntentToken:
-+ _objc_msgSend$_findLexemesMatchingUUIDs:context:
-+ _objc_msgSend$_translateLEOLexemes:queryId:
-+ _objc_msgSend$addIndexes:
-+ _objc_msgSend$fetchLexemeIDsForItemUUIDs:error:
-+ _objc_msgSend$iCloudLibraryClientNeedsToVerifyTerms
-+ _objc_msgSend$initWithEditSource:
-+ _objc_msgSend$initWithURL:type:useEmbeddedPreview:
-+ _objc_msgSend$libraryCreateOptionsForApplicationLibraryWithContainerIdentifier:
-+ _objc_msgSend$originalOrientation
-+ _objc_msgSend$renderImageWithTargetSize:contentMode:name:completion:
-+ _objc_msgSend$revertAssetContentToOriginalWithMode:
-+ _objc_msgSend$searchWithQueryTexts:photoLibraryURL:searchOptions:outEmbeddingDatas:error:
-+ _objc_msgSend$setAdjustmentRenderTypes:
-+ _objc_msgSend$setCompositionController:
-+ _objc_msgSend$setEmbeddingSearchMode:
-+ _objc_msgSend$setIsAsyncAdjustment:
-+ _objc_msgSend$setRenderedPreviewContentURL:
-+ _objc_msgSend$setUseCache:
 + _swift_release_x21
 + _testPhotosAccessAllowedResult
 - +[PHUtilityCollection _fetchIdentityDocumentsUsingLeoWithOptions:]
@@ -988,14 +903,6 @@ Symbols:
 - ___block_descriptor_64_e8_32bs48n11_8_8_s0_t8w8_e43_v24?0"PLFeatureAvailability"8"NSError"16l
 - ___block_descriptor_64_e8_32s40bs48n11_8_8_s0_t8w8_e20_v20?0B8"NSError"12l
 - ___block_descriptor_80_e8_32s40s48s56s64bs_e17_v16?0"NSError"8ls32l8s64l8s40l8s48l8s56l8
-- _objc_msgSend$_fetchIdentityDocumentsUsingLeoWithOptions:
-- _objc_msgSend$_validateSpotlightAvailabilityInFeatureAvailability:forFeature:completionHandler:
-- _objc_msgSend$availabilityFromInvalidatingSearchIndexInFeatureAvailability:
-- _objc_msgSend$executeQueryPredicate:withOptions:
-- _objc_msgSend$not
-- _objc_msgSend$operandWithCategories:
-- _objc_msgSend$uuidsForResultItemSubtype:
-- _objc_msgSend$validateSpotlightIndexForLibraryExistsWithCompletionHandler:
 CStrings:
 + "%@ VSK query: performing unified embedding search for semantic phrase: '%@'"
 + "%{public}@ Failed to fetch lexeme IDs for %tu uuids: %@"
@@ -1045,5 +952,4 @@ CStrings:
 - "assets CONTAINS %@"
 - "v16@?0@\"PLFeatureAvailability\"8"
 - "v24@?0@\"PLFeatureAvailability\"8@\"NSError\"16"
-
 ```

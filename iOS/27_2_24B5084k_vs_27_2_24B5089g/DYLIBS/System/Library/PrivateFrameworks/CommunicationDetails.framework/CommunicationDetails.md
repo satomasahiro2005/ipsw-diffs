@@ -2,40 +2,28 @@
 
 > `/System/Library/PrivateFrameworks/CommunicationDetails.framework/CommunicationDetails`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xaa770` | `0xaa9b0` | **`+0x240`** |
+| `__TEXT.__const` | `0x849c` | `0x84bc` | **`+0x20`** |
+| `__DATA.__bss` | `0x5888` | `0x5898` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x1740` | `0x1750` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x2ad8` | `0x2ae8` | **`+0x10`** |
+| `__TEXT.__constg_swiftt` | `0x4274` | `0x427c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1491.200.63.2.1
--  __TEXT.__text: 0xa648c
--  __TEXT.__objc_methlist: 0x1740
--  __TEXT.__const: 0x849c
--  __TEXT.__constg_swiftt: 0x4274
 +1491.200.73.0.0
-+  __TEXT.__text: 0xa66cc
-+  __TEXT.__objc_methlist: 0x1750
-+  __TEXT.__const: 0x84bc
-+  __TEXT.__constg_swiftt: 0x427c
-   __TEXT.__swift5_typeref: 0x62a0
-   __TEXT.__swift5_builtin: 0x1cc
-   __TEXT.__swift5_reflstr: 0x302b
 
-   __TEXT.__oslogstring: 0x1317
-   __TEXT.__swift5_protos: 0x34
-   __TEXT.__swift5_mpenum: 0x50
--  __TEXT.__unwind_info: 0x3438
-+  __TEXT.__unwind_info: 0x3440
-   __TEXT.__eh_frame: 0x260c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4256
--  Symbols:   10729
+-  Symbols:   10293
 +  Functions: 4260
-+  Symbols:   10732
-   CStrings:  241
- 
++  Symbols:   10296
 Symbols:
 + _$s20CommunicationDetails0B14ViewControllerC27viewSafeAreaInsetsDidChangeyyFTo
 + _$s20CommunicationDetails6HeaderV0C4ViewC29hostedSwiftUIViewContentScale33_F1AC800D850C3B92F39426260B4726E2LL2at12CoreGraphics7CGFloatVAK_tF

@@ -2,163 +2,62 @@
 
 > `/System/Library/PrivateFrameworks/FamilyCircleUI.framework/FamilyCircleUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x370eec` | `0x374960` | **`+0x3a74`** |
+| `__TEXT.__oslogstring` | `0xce44` | `0xd084` | **`+0x240`** |
+| `__TEXT.__cstring` | `0xeaf2` | `0xec52` | **`+0x160`** |
+| `__TEXT.__eh_frame` | `0x18f6c` | `0x19064` | **`+0xf8`** |
+| `__TEXT.__swift5_typeref` | `0x2dfd4` | `0x2e0cc` | **`+0xf8`** |
+| `__TEXT.__const` | `0x26174` | `0x26234` | **`+0xc0`** |
+| `__DATA.__data` | `0xbd70` | `0xbe10` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0xd658` | `0xd6e0` | **`+0x88`** |
+| `__AUTH.__data` | `0x9148` | `0x91c8` | **`+0x80`** |
+| `__DATA.__bss` | `0x199e8` | `0x19a68` | **`+0x80`** |
+| `__DATA_CONST.__got` | `0x23b0` | `0x23f0` | **`+0x40`** |
+| `__TEXT.__swift5_reflstr` | `0x8440` | `0x8480` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x33f0` | `0x3418` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x2130` | `0x2108` | **`-0x28`** |
+| `__TEXT.__swift5_fieldmd` | `0x8544` | `0x8568` | **`+0x24`** |
+| `__TEXT.__swift5_assocty` | `0x2570` | `0x2588` | **`+0x18`** |
+| `__TEXT.__swift5_capture` | `0x4bf8` | `0x4c0c` | **`+0x14`** |
+| `__AUTH_CONST.__const` | `0x1a700` | `0x1a710` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4748` | `0x4738` | **`-0x10`** |
+| `__TEXT.__objc_methlist` | `0x6434` | `0x6444` | **`+0x10`** |
+| `__TEXT.__constg_swiftt` | `0xcc54` | `0xcc60` | **`+0xc`** |
+| `__AUTH.__objc_data` | `0x6018` | `0x6020` | **`+0x8`** |
+| `__DATA.__common` | `0x370` | `0x378` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x1044` | `0x1048` | **`+0x4`** |
+| `__TEXT.__swift_as_cont` | `0x15a4` | `0x15a8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -279.3.1.2.0
--  __TEXT.__text: 0x370eec sha256:4c0a8eabe62fc403b90a500bdade6adf76fb5c08f50a737b31bf4c66eb4d6866
--  __TEXT.__objc_methlist: 0x6434 sha256:337b084a5a2084e353b50d23148cd09ebdeaf5b0e506582602e55320dea3cf2f
--  __TEXT.__const: 0x26174 sha256:7e95a51fad1a8534f23e97602cec3c5a2a0d886b9739c01926f4ba5d2460a4c2
--  __TEXT.__gcc_except_tab: 0x7a4 sha256:9e6276c730512212c95006a61028ff1396aea7d9ff723b47e1e5715333512a1f
--  __TEXT.__cstring: 0xeaf2 sha256:e90bd92bdffac2f09263a9fdd5f72d15a92490d36be3690b2fd0a5b118ac0cbe
--  __TEXT.__oslogstring: 0xce44 sha256:3d676d7990fad362ac0b49bd86aa48e282dd61b404d6eef4ef290eab24e84183
 +282.0.0.0.0
-+  __TEXT.__text: 0x374960 sha256:0f3f3610c5d502d8eb923442be70c599724429144a92fd674e61276be22b4b9e
-+  __TEXT.__objc_methlist: 0x6444 sha256:20a440f73a100dc1dc51c35fbaed9c8f321b86538d7f58d56a9f6752ff245436
-+  __TEXT.__const: 0x26234 sha256:2e4107d14469e2c10f9d7eaa99ad62a30f3cb6af6a445eeec939d6a960c3f19c
-+  __TEXT.__gcc_except_tab: 0x7a4 sha256:28fca58422b79c359e99d6937ec5cb3422735fda2116ea7d0f602419c716da7b
-+  __TEXT.__cstring: 0xec52 sha256:c30c2cf5d2a40f509a73c050bd3b34f4ed0c3383628c4ec03d10e8b615ff6c1f
-+  __TEXT.__oslogstring: 0xd084 sha256:e06b2bed4e8b1d33e3f44680d1ab393e243cd28c1a4b4d4cb62d1e5054066f5e
-   __TEXT.__dlopen_cstrs: 0x6fa sha256:a91917506b974f28fbb3476a5bd467422b1b6b8492779cf037940f096d8ff296
--  __TEXT.__constg_swiftt: 0xcc54 sha256:52a1c09af5b6c147927e43325ddb1a212fd4204a008d8c635680134e027a9e71
--  __TEXT.__swift5_typeref: 0x2dfd4 sha256:407cdf7f305606070f6b9a6e0147379e8ee5e1cd015b7fe266361152028803b0
--  __TEXT.__swift5_builtin: 0x208 sha256:da56ed99b05be258929b3d6e5c47cd6b2f537a9c906fc86c41bbd8a000d97c5c
--  __TEXT.__swift5_reflstr: 0x8440 sha256:1a15215e05a60b62445018f2f7acd4cb5fcd73d1d82c6584f0450145a6cd6a9b
--  __TEXT.__swift5_fieldmd: 0x8544 sha256:bbd383ddac7228c55fa21868bced5016879592a055782677de7dd9f77b9c4072
--  __TEXT.__swift5_assocty: 0x2570 sha256:07454df549b81de77bb4614b7822db91afc8fbf4e7ba8c5ab824ca9606e57238
--  __TEXT.__swift5_capture: 0x4bf8 sha256:5d5ebeb46788f594dd2e1fd8629b3f844b43d973ef06d5fd6b02cd859aef7b09
--  __TEXT.__swift5_proto: 0x1044 sha256:c9bb4ccdacba9d177f2e5ce259bb4b43ca23427fa9dac661f84afb9ccb0e86a5
--  __TEXT.__swift5_types: 0x914 sha256:408823f8d4f2378bf4a72f93f6ce6054d227ed0177ac30ad82515eacc5c0c121
--  __TEXT.__swift_as_entry: 0x8a4 sha256:d403141ec41bf77945fcc98b466e33b8574eaf2d879ffc94cf416b446c46b55a
--  __TEXT.__swift_as_ret: 0x954 sha256:acd422df12da8e3ed108b1f786cfd6bf076b4695b8e91d2e098296cc6fd74de8
--  __TEXT.__swift_as_cont: 0x15a4 sha256:3d63f88072976dba1e8736f1747ac07ea609aa53cd20def298313794492234af
--  __TEXT.__swift5_protos: 0x13c sha256:042621369bbdb541e9e39a49668cf4085cf85f25e893ac9a724d45795c5e3336
--  __TEXT.__swift5_mpenum: 0x1c sha256:34c4c1d68d422b55f14c84a19714beb8a298375c2749717b20a386285a09d2e7
--  __TEXT.__unwind_info: 0xd658 sha256:adff3cfa1c04c31e89f98812e1bd580f0a509a0e0c89f126e368c0e9c589ea5f
--  __TEXT.__eh_frame: 0x18f6c sha256:1eaea7d9bd5c27753c7af149d4f53c88a5f777930c89d66bfe82f11c31ecd11e
-+  __TEXT.__constg_swiftt: 0xcc60 sha256:9779885d752dc2a77e20c5ffd43479fc61a3d17b04a0bf3f9b7adb537a8c8d51
-+  __TEXT.__swift5_typeref: 0x2e0cc sha256:3cadfd7da34d9e620d0f63a26252cb1478d58dbbb686d12c1c83b6b1440c3b62
-+  __TEXT.__swift5_builtin: 0x208 sha256:335be5a3460570ff7fa23b6255366be1455aa9b900cfd6231c154295c890a84d
-+  __TEXT.__swift5_reflstr: 0x8480 sha256:cca6cbe5ac368833b61d1acdd98bddff59b6e2dff55db80a879d5ccf2ba60a13
-+  __TEXT.__swift5_fieldmd: 0x8568 sha256:18852c6a82eb8fcbceffa9795e8df51f6088cd1a428887d89ecea93c80ad81bc
-+  __TEXT.__swift5_assocty: 0x2588 sha256:7e044a75a399247632498425940858783492410a90de5118c6b2972ccea86980
-+  __TEXT.__swift5_capture: 0x4c0c sha256:b6cf62f17123d0272872e788c02c7e8fbd863f27a9d3d87f79964c72f8a8b326
-+  __TEXT.__swift5_proto: 0x1048 sha256:7d7a0dc3256c3ba29c40ec609a6194f8a505e30d0745f03fb9534e057c6a22d2
-+  __TEXT.__swift5_types: 0x914 sha256:f42ce7ef6023a86eea4461c85116253c57e9a18c7f4590f95cf73d295795d542
-+  __TEXT.__swift_as_entry: 0x8a4 sha256:1547ea567248554bac56d44260d572132471e9163dd41774498fa638ab8c8cd2
-+  __TEXT.__swift_as_ret: 0x954 sha256:2e045d6996996e512a225a3790720a9738e0b7d3067770ce33ac554335f1fcb5
-+  __TEXT.__swift_as_cont: 0x15a8 sha256:76997b44a9f4651c25d6dc73df550bbecf05453be67297d6720439818a6ca95c
-+  __TEXT.__swift5_protos: 0x13c sha256:618b92058be6ffa3dbff8767b800fec5719f6ac94a1e17998f3f7b32ef62bf33
-+  __TEXT.__swift5_mpenum: 0x1c sha256:e2fa3b7d84d436bd07aa71009fe7918a809a1fddbb386166eb87ba211d0822e2
-+  __TEXT.__unwind_info: 0xd6e0 sha256:84077d195a6f63a4551215470f192256b4d9cc3d9e17cc06df28924dd3f45831
-+  __TEXT.__eh_frame: 0x19064 sha256:806f2e04e0033dd782c9b9b1033f9022346ad85a912045fd4a95f133bc9e5195
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2130 sha256:1bac17bf379f4d65045a3bd131a8753c2bae93a7675fc6ace1f4cef8dc83051f
--  __DATA_CONST.__objc_classlist: 0x6d0 sha256:351648a9a9b9859d51b0be6fdc671379c1f6572947352a769ac06e41d721ab85
--  __DATA_CONST.__objc_catlist: 0x50 sha256:8741ea69df3fdd791594baf7c899ca6df38a692359b77bd3ae884f61cacfdb8f
--  __DATA_CONST.__objc_protolist: 0x358 sha256:9433f0f5859855081cacb614467e94dd40c27cbbc0a39cc31b715f370eadb400
-+  __DATA_CONST.__const: 0x2108 sha256:bcb6bc6f35912556ff7d14ec5741c35b08cbf32a815c0beb65fe650db655f558
-+  __DATA_CONST.__objc_classlist: 0x6d0 sha256:3e41e6d0d1290096264d7aeb964a50abf42c1efaad084f8b1d9392988de11774
-+  __DATA_CONST.__objc_catlist: 0x50 sha256:e418811ef00b5d4f648ba50513630fd3c7024cb7f37fdb091d4bb96dc56f9fe5
-+  __DATA_CONST.__objc_protolist: 0x358 sha256:5016efafbf7d9ec6f10b4bb6388c9037601d0e9d302aa1b29121027b56be694b
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0x4748 sha256:fb34a7575f52d2c0c68b75e5012750f7e027596078164c2b92a877632a2bd5b7
--  __DATA_CONST.__objc_protorefs: 0x150 sha256:a35fcfa1a1916bebce67ed08f219aa001f6b2108001e7cf33d7033acdb3efa0b
--  __DATA_CONST.__objc_superrefs: 0x1f0 sha256:92a8016cf0f0576311faae085351f1756daa2da00a0da294f4cb9dd28191de99
--  __DATA_CONST.__objc_arraydata: 0x30 sha256:db9d1dd94a929699d6f3660742ec80631258c9875da1d9fba4ca5ae96fb4c88a
--  __DATA_CONST.__got: 0x23b0 sha256:8ed1ccb96fabce49e9398f1b2f0e8a1aaf36d73d4221450d2325e1cae33c3ebe
--  __AUTH_CONST.__const: 0x1a700 sha256:7203aaca337cef6973934c817db6a9c8336fbccc8b2d55d5b61c00d726323a6e
--  __AUTH_CONST.__cfstring: 0x3120 sha256:45865615992f3de6d3896cea411b84e1fc7cee4b79ecb5634befcb7e06da9dad
--  __AUTH_CONST.__objc_const: 0x241e8 sha256:b8bb0c93459b4b74884e1c52e12c72e0320797ab7c35d740fff7a14490724085
--  __AUTH_CONST.__objc_dictobj: 0x50 sha256:1d233275cac9d9d334c561ccb3a1482a49872c1c13afdc49e28d16d6d30d1fea
--  __AUTH_CONST.__objc_intobj: 0x48 sha256:814c60e7786f30ac0006c007b691f31750f3a7bca3de45a858950259a4ad2e9f
--  __AUTH_CONST.__objc_doubleobj: 0x10 sha256:41ccfd372169e71f5dd50ffa65c6b224ddd4cd5c27b3a2653f4e7cfd8fe78f24
--  __AUTH_CONST.__auth_got: 0x33f0 sha256:3552b1da3d4f53963a65095ac8d2e138e60cb9e9a880517cdbc0797bb419cf0a
--  __AUTH.__objc_data: 0x6018 sha256:7402c2253631adaac832030cc70c162d3b25d4f3b9a024da8ef384525bfee4b3
--  __AUTH.__data: 0x9148 sha256:6d974e2e1e92faeeceb3a1ea449154fd4fd52701932969229f59958ca530fdd8
-+  __DATA_CONST.__objc_selrefs: 0x4738 sha256:ef4e0380bffb6e6f06c0f6766a2696d8e75068844ffaf88732115daaa39a9b32
-+  __DATA_CONST.__objc_protorefs: 0x150 sha256:00bfea6112d3767ac0ec8ed8b85dce3b2820d110d305182d4e45d82f8d9dd3d5
-+  __DATA_CONST.__objc_superrefs: 0x1f0 sha256:ea1263b8753c73475505824bd4582c1817ffefd40801ef9288f1dfbfe0e45a86
-+  __DATA_CONST.__objc_arraydata: 0x30 sha256:df9eb26577b7c69625f394d413203a7a0cd59c47d5eb057ad7421bc5680df8e1
-+  __DATA_CONST.__got: 0x23f0 sha256:f536f7239afbbf53efe32a4315849782269ebc1c30a2d185083bc0728723eb2c
-+  __AUTH_CONST.__const: 0x1a710 sha256:310408c064a1aff558090996c0f31a77a70b0db474b85782f87a5bcab0e2ec0f
-+  __AUTH_CONST.__cfstring: 0x3120 sha256:f55674746dea0edf7618906e0e31e0b28410a2e181822f9d2aaed7ad76a19ef8
-+  __AUTH_CONST.__objc_const: 0x241e8 sha256:dc71bc5211c7714d405b0de4cefc48e1b149630b031dd845cd6c5c7b5f59514e
-+  __AUTH_CONST.__objc_dictobj: 0x50 sha256:8f9f057e110b5272a41d4b4c1f16310dd759e51eca3238cc37ad75e74fca5446
-+  __AUTH_CONST.__objc_intobj: 0x48 sha256:230d5aec1d98c7c37ded3069655ca0c79bee6069145763ffa2e9c59cfa7e9d5a
-+  __AUTH_CONST.__objc_doubleobj: 0x10 sha256:541ce15734d57efd41406c2ee04c6ab74009c2cbe313cbf86a4c2f3aef5fd1d0
-+  __AUTH_CONST.__auth_got: 0x3418 sha256:d652a82f9af60ad7c3abccf875e9972242fe7132f80c06956766d979222d06b9
-+  __AUTH.__objc_data: 0x6020 sha256:a282097de213203c688314bb8fe79e0863e2ac6120c631df0c6b1adb8e5c7f7b
-+  __AUTH.__data: 0x91c8 sha256:d1a1d66543e0ed93afcf4b93897f443239c9280cb804b28b7e07e89e5d42dfc3
-   __DATA.__objc_ivar: 0x6d4 sha256:110541d20ae65a32c96e3fe7386afaa0008c34968de24e8e6274cadd3db86aad
--  __DATA.__data: 0xbd70 sha256:8d4723e7beb4a2f36670835b1655923e5a76b55706281063eae9f44fe759c18c
--  __DATA.__objc_stublist: 0x80 sha256:4f8442b2b6762f86d69219b16117d993c6a2baf6b8a637b15438a13f3ddb4f1b
--  __DATA.__bss: 0x199e8 sha256:8feebca69a1579677d6aba913aae97fb25f92d525e63207563c01e05c0384299
--  __DATA.__common: 0x370 sha256:b6f1ce7eb4b4d291ba1237e0599b5c6c615950466bbf768df9ba8270a545bfd4
--  __DATA_DIRTY.__objc_data: 0xc88 sha256:5c5b05e0e168ddc68c40f7f2e00e332bbdca2e8b2cb41a77816c733022003f16
--  __DATA_DIRTY.__data: 0x2d78 sha256:a3051a29238319b017441808f47b198605501d06d9b9a944684cdb0594fc8a06
-+  __DATA.__data: 0xbe10 sha256:053e0e83c58d4ecae929862f720163f8a7d420ee9bbd927c831da5cb522829c4
-+  __DATA.__objc_stublist: 0x80 sha256:8d7cba22f5623aea4251c4d6332e95bf3c2ad1cd4f2c36157041db0cae4ee09e
-+  __DATA.__bss: 0x19a68 sha256:3dddf25c7dd8e5e84a4e6c00f0c592d5f71c2a04679665a81300e67a727fc1a1
-+  __DATA.__common: 0x378 sha256:d8105177b7587634d18b8042f9e22b4de2cfd1e0828243bf7f4b5d6fb8c4a6c9
-+  __DATA_DIRTY.__objc_data: 0xc88 sha256:94a49fe66a249ff662e4fe1a11bb1b753389386dfe1db8718982743641dd148f
-+  __DATA_DIRTY.__data: 0x2d78 sha256:bc173b59383896b8ec72f3212b69b3908510abf77103625375dd39a3ec0c83e2
-   __DATA_DIRTY.__bss: 0x54e0 sha256:c48e62187729493b82b77ee06c8dd14f4b90f10f14547ddcac4577c143739ba7
-   __DATA_DIRTY.__common: 0xe0 sha256:83a938adcb70a8f07d88a4325def8ba15939d26d10b56d421d198f4254dd3e5a
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: E1DA5F94-CAA2-3022-91A2-EA74D3160DE7
 -  Functions: 17569
--  Symbols:   17716
--  CStrings:  2950
-+  UUID: 8E9C516B-9908-3D62-8F86-7515818E595B
+-  Symbols:   9521
+-  CStrings:  2557
 +  Functions: 17615
-+  Symbols:   17735
-+  CStrings:  2972
- 
++  Symbols:   9534
++  CStrings:  2579
 Symbols:
 + -[FASettingsSpecifierProvider _handleShowInviteActionURL:]
 + -[FASettingsSpecifierProvider _presentInvalidInviteAlert]
-+ ___53-[FAChecklistViewController _reviewPresetsWasTapped:]_block_invoke.833
-+ ___55-[FAChecklistViewController _setupIcloudPlusWasTapped:]_block_invoke.835
 + ___58-[FASettingsSpecifierProvider _handleShowInviteActionURL:]_block_invoke
-+ ___60-[FAProfilePictureStore _fetchProfileImages:withCompletion:]_block_invoke.111
-+ ___64-[FASettingsSpecifierProvider _loadFamilyDetailsWithCompletion:]_block_invoke.157
-+ ___64-[FASettingsSpecifierProvider _loadFamilyDetailsWithCompletion:]_block_invoke.159
 + ___65-[FASettingsSpecifierProvider _handleShowChildTransferActionURL:]_block_invoke
-+ ___66-[FASharedSubscriptionSpecifierProvider _loadSubscriptionServices]_block_invoke.165
-+ ___66-[FASharedSubscriptionSpecifierProvider _loadSubscriptionServices]_block_invoke.166
-+ ___67-[FAChecklistViewController emergencyContactFlow:didSelectContact:]_block_invoke.836
-+ ___68-[FASettingsSpecifierProvider _loadFamilyEligibilityWithCompletion:]_block_invoke.197
-+ ___68-[FASettingsSpecifierProvider _loadFamilyEligibilityWithCompletion:]_block_invoke.198
-+ ___88-[FAAppleCashPresentationHandler presentPeerPaymentControllerWithAttributes:completion:]_block_invoke.91
-+ ___88-[FAAppleCashPresentationHandler presentPeerPaymentControllerWithAttributes:completion:]_block_invoke.91.cold.1
-+ ___block_literal_global.125
-+ ___block_literal_global.839
-+ ___block_literal_global.93
-+ ___block_literal_global.95
-+ ___block_literal_global.97
 + _associated conformance 14FamilyCircleUI0A12DestinationsO27MemberScreenTimeDestinationV10CodingKeysOSHAASQ
 + _associated conformance 14FamilyCircleUI0A12DestinationsO27MemberScreenTimeDestinationV10CodingKeysOs0I3KeyAAs23CustomStringConvertible
 + _associated conformance 14FamilyCircleUI0A12DestinationsO27MemberScreenTimeDestinationV10CodingKeysOs0I3KeyAAs28CustomDebugStringConvertible
-+ _get_witness_table 14FamilyCircleUI26NavigationControllerReaderVy05SwiftC019_ConditionalContentVyAA27ChecklistNotSetupButtonCellVAHGGAD4ViewHPyHC.10
-+ _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQOyAA15ModifiedContentVyAIyAIyAIyAIy012FamilyCircleB00I10MemberCellVAJ24NavigationLinkAppearanceVGAA16_FlexFrameLayoutVGAA01_H13ShapeModifierVyAA9RectangleVGGAJ013CreateContactT0VGAA013_TraitWritingT0VyAA017ListRowBackgroundX3KeyVGG_AJ19FAFamilyImageLoaderCQo_HO.152
++ _get_witness_table 14FamilyCircleUI26NavigationControllerReaderVy05SwiftC019_ConditionalContentVyAA27ChecklistNotSetupButtonCellVAHGGAD4ViewHPyHC
++ _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQOyAA15ModifiedContentVyAIyAIyAIyAIy012FamilyCircleB00I10MemberCellVAJ24NavigationLinkAppearanceVGAA16_FlexFrameLayoutVGAA01_H13ShapeModifierVyAA9RectangleVGGAJ013CreateContactT0VGAA013_TraitWritingT0VyAA017ListRowBackgroundX3KeyVGG_AJ19FAFamilyImageLoaderCQo_HO
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQOyAA15ModifiedContentVyAIyAIyAIyAIy012FamilyCircleB00I10MemberCellVAJ24NavigationLinkAppearanceVGAA16_FlexFrameLayoutVGAA01_H13ShapeModifierVyAA9RectangleVGGAJ013CreateContactT0VGAA013_TraitWritingT0VyAA017ListRowBackgroundX3KeyVGG_AJ19FAFamilyImageLoaderCQo_HOTm
-+ _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQOyAA15ModifiedContentVyAIyAIyAIyAIy012FamilyCircleB00I10MemberCellVAJ24NavigationLinkAppearanceVGAA16_FlexFrameLayoutVGAA01_H13ShapeModifierVyAA9RectangleVGGAJ09SpotlightT0VGAA013_TraitWritingT0VyAA017ListRowBackgroundW3KeyVGG_AJ19FAFamilyImageLoaderCQo_HO.153
-+ _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAcAE21navigationDestination11isPresented11destinationQrAA7BindingVySbG_qd__yXEtAaBRd__lFQOyAA5GroupVyAA19_ConditionalContentVy012FamilyCircleB031ChecklistAlreadySetupButtonCellVASGG_AA08ModifiedP0VyAcAE0H5TitleyQrqd__SyRd__lFQOyAQ020RecoveryContactSetUpC17ControllerWrapperV_SSQo_AA24_BackgroundStyleModifierVyAA5ColorVGGQo__SbQo_HO.10
-+ _objc_msgSend$_handleShowInviteActionURL:
-+ _objc_msgSend$_presentInvalidInviteAlert
-+ _objc_msgSend$sendInviteOthersTransportTypeEventWithTransportType:flowType:
-+ _objc_msgSend$sendOtherContactInvitedEventWithInviteTransport:inviteCompletionStatus:flowType:
-+ _objc_msgSend$sendSuggestedContactInvitedEventWithInviteCompletionStatus:flowType:
-+ _objc_msgSend$sendTapInviteOnSuggestedContactEventWithFlowType:
-+ _objc_msgSend$sendTapInviteOthersEventWithFlowType:
++ _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQOyAA15ModifiedContentVyAIyAIyAIyAIy012FamilyCircleB00I10MemberCellVAJ24NavigationLinkAppearanceVGAA16_FlexFrameLayoutVGAA01_H13ShapeModifierVyAA9RectangleVGGAJ09SpotlightT0VGAA013_TraitWritingT0VyAA017ListRowBackgroundW3KeyVGG_AJ19FAFamilyImageLoaderCQo_HO
++ _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAcAE21navigationDestination11isPresented11destinationQrAA7BindingVySbG_qd__yXEtAaBRd__lFQOyAA5GroupVyAA19_ConditionalContentVy012FamilyCircleB031ChecklistAlreadySetupButtonCellVASGG_AA08ModifiedP0VyAcAE0H5TitleyQrqd__SyRd__lFQOyAQ020RecoveryContactSetUpC17ControllerWrapperV_SSQo_AA24_BackgroundStyleModifierVyAA5ColorVGGQo__SbQo_HO
 + _symbolic SS______t 28ScreenTimeSettingsServicesUI0abC7FeatureV
 + _symbolic _____ 14FamilyCircleUI0A12DestinationsO27MemberScreenTimeDestinationV10CodingKeysO
 + _symbolic _____ 28ScreenTimeSettingsServicesUI0abC7FeatureV
@@ -201,42 +100,16 @@ Symbols:
 + _symbolic _____y_____y_____y_____y_____ACGG______y_____y______SSQo______y_____GGQo__SbQo_ 7SwiftUI4ViewPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQO AcAE21navigationDestination11isPresented11destinationQrAA7BindingVySbG_qd__yXEtAaBRd__lFQO AA5GroupV AA19_ConditionalContentV 012FamilyCircleB031ChecklistAlreadySetupButtonCellV AA08ModifiedP0V AcAE0H5TitleyQrqd__SyRd__lFQO AQ020RecoveryContactSetUpC17ControllerWrapperV AA24_BackgroundStyleModifierV AA5ColorV
 + _symbolic _____y_____y_____y_____y_____yACyACy__________G_____GADyAgDyACyACyAG_____y_____GG_____GACyAM_____GGGG_____G_____AWG_Qo__AByAW_____AWGSgAByAW_____AWGSgAAyA__A_A_ACyACyAByAW_____AWG_____y_____GGA6_y_____GGSgQPGSgACyAByAwAy_____y_____y_____G_Qo_SgSg_ACy_____y_____AwCy__________GAWGAFG_____yAAyACyACy_____yA23_G_____ySbGGAFG______ACyACy_____yA2WG_____G_____y_____GGSgQPGGSgQPG_____yAAyA23__AAyA36__ACy_____A41_y_____GGQPGSgQPGGGAFGSgACy_____yACyA29_yAAyA24__A23_A36_ACy__________y_____GGSgQPGG_____G_____GAFGSgSgADyAwByA23_SgAAy_____y_____y_____yACyACy_____yADy_____yA29_yAAyA26__A50_yAAyA23__A23_QPGGQPGG_____GA80_yA29_yAAyA26__A50_yAAyADyA23_A23_G_A23_QPGGQPGG_____GGGAFG_____G_SSQo__Qo_______yytACyA23______GGQo__ADyACyACy_____AFG_____GSgA109_GSgSgACyACy_____AFGA108_GSgSgSgACy_____AFGSgQPGAWGGADyAAyAByAwAyAZ_A2ZQPGAWG_AByAwAyAZ_AZQPGAWGA129_A_QPGAAyA0_______SgQPGGAAyAByACyA23_AHGAAyADyACy_____yACyACy_____yA23_GA33_GA102_G_SbQo_AFGA23_GSg______ySaySo14FAFamilyMemberCGA146_AZGSgQPGADyADyA23_A51_GA23_GSgG______SgQPGSgSg_____SgADyAByAW_____A51_GA162_GSgAByA2WA51_GSgQPG 7SwiftUI12TupleContentV AA4ViewPAAE16headerProminenceyQrAA0G0OFQO AA7SectionV AA08ModifiedD0V AA012_ConditionalD0V 012FamilyCircleB00k12MemberHeaderE0V AA31AccessibilityAttachmentModifierV AA14_PaddingLayoutV AA01_d5ShapeQ0V AA9RectangleV AO09SpotlightQ0V AO013CreateContactQ0V AO06ScrollE11CoordinatesV AA05EmptyE0V AA03AnyE0V 010ScreenTimeB0019ScreenTimeMigrationH0V AO0km12DetailWidgethE0V AA013_TraitWritingQ0V AA21ListRowInsetsTraitKeyV AA25ListRowBackgroundTraitKeyV AE6TipKitE12tipImageSizeyQrSo6CGSizeVFQO A19_03TipE0V A19_6AnyTipV AO07FALabelE0V AA4TextV AO0K11SharingIconV AO0K13RowImageSizer33_BAA596CA1BCB8BAE122FF193687786FELLV AA6HStackV AA6ButtonV AA024_EnvironmentKeyTransformQ0V AA6SpacerV AA08ProgressE0V AA010_FixedSizeS0V AA022_EnvironmentKeyWritingQ0V AA11ControlSizeO AA6VStackV AO18FAInformativeLabelV AA13OpenURLActionV AA14NavigationLinkV AO0kM7DetailsV16GlobalStateLabelV AA016_ForegroundStyleQ0V AA012HierarchicalT5StyleV AA017_AppearanceActionQ0V s5NeverO AeAE7toolbar7contentQrqd__yXE_tAA07ToolbarD0Rd__lFQO AeAE29navigationBarTitleDisplayModeyQrAA17NavigationBarItemV16TitleDisplayModeOFQO AeAE15navigationTitleyQrqd__SyRd__lFQO AA5GroupV AO4LinkV AO0K12DestinationsO20AppleAccountPasswordV A86_0M14AccountDetailsV AO24NavigationLinkAppearanceV AA11ToolbarItemV AA14_OpacityEffectV AO0M23DetailsAppleCashWrapperV AO14HighlightOnTapA34_LLV AO0m15DetailAppleCardE0V AO0m20DetailsIsGuardianSubE0V AO0m17SubscriptionCellsE0V AeAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQO AO22ToggleWithConfirmationV AA7ForEachV AO023AddRemoteGuardianButtonE0V AO016SecondaryAccounthE0V AO06Deletem6ButtonE0V
 - -[FASettingsSpecifierProvider _handleShowInviteActionURL:isChildTransfer:]
-- ___53-[FAChecklistViewController _reviewPresetsWasTapped:]_block_invoke.812
-- ___55-[FAChecklistViewController _setupIcloudPlusWasTapped:]_block_invoke.814
-- ___60-[FAProfilePictureStore _fetchProfileImages:withCompletion:]_block_invoke.96
-- ___64-[FASettingsSpecifierProvider _loadFamilyDetailsWithCompletion:]_block_invoke.142
-- ___64-[FASettingsSpecifierProvider _loadFamilyDetailsWithCompletion:]_block_invoke.144
-- ___66-[FASharedSubscriptionSpecifierProvider _loadSubscriptionServices]_block_invoke.150
-- ___66-[FASharedSubscriptionSpecifierProvider _loadSubscriptionServices]_block_invoke.151
-- ___67-[FAChecklistViewController emergencyContactFlow:didSelectContact:]_block_invoke.815
-- ___68-[FASettingsSpecifierProvider _loadFamilyEligibilityWithCompletion:]_block_invoke.182
-- ___68-[FASettingsSpecifierProvider _loadFamilyEligibilityWithCompletion:]_block_invoke.183
 - ___74-[FASettingsSpecifierProvider _handleShowInviteActionURL:isChildTransfer:]_block_invoke
-- ___88-[FAAppleCashPresentationHandler presentPeerPaymentControllerWithAttributes:completion:]_block_invoke.76
-- ___88-[FAAppleCashPresentationHandler presentPeerPaymentControllerWithAttributes:completion:]_block_invoke.76.cold.1
 - ___block_descriptor_73_e8_32s40s48s56s64s_e8_v12?0B8ls32l8s40l8s48l8s56l8s64l8
-- ___block_literal_global.110
-- ___block_literal_global.80
-- ___block_literal_global.818
-- ___block_literal_global.82
-- ___block_literal_global.85
 - _associated conformance 14FamilyCircleUI0A12DestinationsO27MemberScreenTimeDestinationV10CodingKeys33_E005DF700F665167BDAA309FF010EBD4LLOSHAASQ
 - _associated conformance 14FamilyCircleUI0A12DestinationsO27MemberScreenTimeDestinationV10CodingKeys33_E005DF700F665167BDAA309FF010EBD4LLOs0I3KeyAAs23CustomStringConvertible
 - _associated conformance 14FamilyCircleUI0A12DestinationsO27MemberScreenTimeDestinationV10CodingKeys33_E005DF700F665167BDAA309FF010EBD4LLOs0I3KeyAAs28CustomDebugStringConvertible
-- _get_witness_table 14FamilyCircleUI26NavigationControllerReaderVyAA27ChecklistNotSetupButtonCellVG05SwiftC04ViewHPyHC.7
-- _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQOyAA15ModifiedContentVyAIyAIyAIy012FamilyCircleB00I10MemberCellVAA01_H13ShapeModifierVyAA9RectangleVGGAJ013CreateContactN0VGAA013_TraitWritingN0VyAA017ListRowBackgroundR3KeyVGGAJ24NavigationLinkAppearanceVG_AJ19FAFamilyImageLoaderCQo_HO.152
+- _get_witness_table 14FamilyCircleUI26NavigationControllerReaderVyAA27ChecklistNotSetupButtonCellVG05SwiftC04ViewHPyHC
+- _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQOyAA15ModifiedContentVyAIyAIyAIy012FamilyCircleB00I10MemberCellVAA01_H13ShapeModifierVyAA9RectangleVGGAJ013CreateContactN0VGAA013_TraitWritingN0VyAA017ListRowBackgroundR3KeyVGGAJ24NavigationLinkAppearanceVG_AJ19FAFamilyImageLoaderCQo_HO
 - _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQOyAA15ModifiedContentVyAIyAIyAIy012FamilyCircleB00I10MemberCellVAA01_H13ShapeModifierVyAA9RectangleVGGAJ013CreateContactN0VGAA013_TraitWritingN0VyAA017ListRowBackgroundR3KeyVGGAJ24NavigationLinkAppearanceVG_AJ19FAFamilyImageLoaderCQo_HOTm
-- _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQOyAA15ModifiedContentVyAIyAIyAIy012FamilyCircleB00I10MemberCellVAA01_H13ShapeModifierVyAA9RectangleVGGAJ09SpotlightN0VGAA013_TraitWritingN0VyAA017ListRowBackgroundQ3KeyVGGAJ24NavigationLinkAppearanceVG_AJ19FAFamilyImageLoaderCQo_HO.153
-- _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAcAE21navigationDestination11isPresented11destinationQrAA7BindingVySbG_qd__yXEtAaBRd__lFQOy012FamilyCircleB031ChecklistAlreadySetupButtonCellV_AA15ModifiedContentVyAcAE0H5TitleyQrqd__SyRd__lFQOyAM020RecoveryContactSetUpC17ControllerWrapperV_SSQo_AA24_BackgroundStyleModifierVyAA5ColorVGGQo__SbQo_HO.9
-- _objc_msgSend$_handleShowInviteActionURL:isChildTransfer:
-- _objc_msgSend$sendOtherContactInvitedEventWithInviteTransport:inviteCompletionStatus:
-- _objc_msgSend$sendSuggestedContactInvitedEventWithInviteCompletionStatus:
-- _objc_msgSend$sendTapInviteOnSuggestedContactEvent
-- _objc_msgSend$sendTapInviteOthersEvent
-- _objc_msgSend$setCode:
-- _objc_msgSend$setOrganizerEmail:
-- _objc_msgSend$setOrganizerFirstName:
-- _objc_msgSend$setOrganizerLastName:
+- _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQOyAA15ModifiedContentVyAIyAIyAIy012FamilyCircleB00I10MemberCellVAA01_H13ShapeModifierVyAA9RectangleVGGAJ09SpotlightN0VGAA013_TraitWritingN0VyAA017ListRowBackgroundQ3KeyVGGAJ24NavigationLinkAppearanceVG_AJ19FAFamilyImageLoaderCQo_HO
+- _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAcAE21navigationDestination11isPresented11destinationQrAA7BindingVySbG_qd__yXEtAaBRd__lFQOy012FamilyCircleB031ChecklistAlreadySetupButtonCellV_AA15ModifiedContentVyAcAE0H5TitleyQrqd__SyRd__lFQOyAM020RecoveryContactSetUpC17ControllerWrapperV_SSQo_AA24_BackgroundStyleModifierVyAA5ColorVGGQo__SbQo_HO
 - _symbolic _____ 14FamilyCircleUI0A12DestinationsO27MemberScreenTimeDestinationV10CodingKeys33_E005DF700F665167BDAA309FF010EBD4LLO
 - _symbolic _____yAAyAAyAAy__________y_____GG_____G_____y_____GG_____G 7SwiftUI15ModifiedContentV 012FamilyCircleB00E10MemberCellV AA01_D13ShapeModifierV AA9RectangleV AD013CreateContactJ0V AA013_TraitWritingJ0V AA017ListRowBackgroundN3KeyV AD24NavigationLinkAppearanceV
 - _symbolic _____yAAyAAyAAy__________y_____GG_____G_____y_____GG_____G 7SwiftUI15ModifiedContentV 012FamilyCircleB00E10MemberCellV AA01_D13ShapeModifierV AA9RectangleV AD09SpotlightJ0V AA013_TraitWritingJ0V AA017ListRowBackgroundM3KeyV AD24NavigationLinkAppearanceV
@@ -291,5 +164,4 @@ CStrings:
 + "featureIdentifier"
 + "memberAltDSID"
 - "Non-primary accounts cannot see family invites. How did you even get here?"
-
 ```

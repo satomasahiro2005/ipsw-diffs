@@ -2,107 +2,64 @@
 
 > `/usr/libexec/batteryintelligenced`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x42004` | `0x488d0` | **`+0x68cc`** |
+| `__TEXT.__oslogstring` | `0x7a54` | `0x8e23` | **`+0x13cf`** |
+| `__TEXT.__objc_methname` | `0x643c` | `0x70ca` | **`+0xc8e`** |
+| `__TEXT.__objc_stubs` | `0x4940` | `0x5460` | **`+0xb20`** |
+| `__DATA.__objc_const` | `0x7a50` | `0x84f0` | **`+0xaa0`** |
+| `__DATA_CONST.__cfstring` | `0x3b60` | `0x4380` | **`+0x820`** |
+| `__TEXT.__objc_methlist` | `0x317c` | `0x3854` | **`+0x6d8`** |
+| `__TEXT.__cstring` | `0x354b` | `0x3986` | **`+0x43b`** |
+| `__DATA.__objc_selrefs` | `0x17a8` | `0x1b00` | **`+0x358`** |
+| `__DATA.__objc_data` | `0x1400` | `0x1590` | **`+0x190`** |
+| `__DATA_CONST.__objc_arraydata` | `0xd70` | `0xef8` | **`+0x188`** |
+| `__TEXT.__unwind_info` | `0xc78` | `0xdb8` | **`+0x140`** |
+| `__TEXT.__objc_methtype` | `0x1537` | `0x1601` | **`+0xca`** |
+| `__TEXT.__objc_classname` | `0x855` | `0x8f6` | **`+0xa1`** |
+| `__DATA.__objc_ivar` | `0x338` | `0x3c8` | **`+0x90`** |
+| `__TEXT.__auth_stubs` | `0xa80` | `0xb10` | **`+0x90`** |
+| `__TEXT.__const` | `0x338` | `0x3a0` | **`+0x68`** |
+| `__DATA_CONST.__objc_doubleobj` | `0x70` | `0xd0` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0x340` | `0x38c` | **`+0x4c`** |
+| `__DATA_CONST.__auth_got` | `0x550` | `0x598` | **`+0x48`** |
+| `__DATA_CONST.__const` | `0xcf8` | `0xd40` | **`+0x48`** |
+| `__DATA_CONST.__objc_arrayobj` | `0x5a0` | `0x5e8` | **`+0x48`** |
+| `__DATA.__bss` | `0x248` | `0x270` | **`+0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x200` | `0x228` | **`+0x28`** |
+| `__DATA_CONST.__objc_dictobj` | `0x28` | `0x50` | **`+0x28`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1e0` | `0x208` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0x338` | `0x358` | **`+0x20`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -218.0.0.0.0
--  __TEXT.__text: 0x42004
--  __TEXT.__auth_stubs: 0xa80
--  __TEXT.__objc_stubs: 0x4940
--  __TEXT.__objc_methlist: 0x317c
--  __TEXT.__cstring: 0x354b
--  __TEXT.__objc_classname: 0x855
--  __TEXT.__objc_methname: 0x643c
--  __TEXT.__objc_methtype: 0x1537
--  __TEXT.__const: 0x338
--  __TEXT.__oslogstring: 0x7a54
--  __TEXT.__gcc_except_tab: 0x340
--  __TEXT.__unwind_info: 0xc78
--  __DATA_CONST.__const: 0xcf8
--  __DATA_CONST.__cfstring: 0x3b60
--  __DATA_CONST.__objc_classlist: 0x200
 +222.0.1.0.0
-+  __TEXT.__text: 0x488d0
-+  __TEXT.__auth_stubs: 0xb10
-+  __TEXT.__objc_stubs: 0x5460
-+  __TEXT.__objc_methlist: 0x3854
-+  __TEXT.__cstring: 0x3986
-+  __TEXT.__objc_classname: 0x8f6
-+  __TEXT.__objc_methname: 0x70ca
-+  __TEXT.__objc_methtype: 0x1601
-+  __TEXT.__const: 0x3a0
-+  __TEXT.__oslogstring: 0x8e23
-+  __TEXT.__gcc_except_tab: 0x38c
-+  __TEXT.__unwind_info: 0xdb8
-+  __DATA_CONST.__const: 0xd40
-+  __DATA_CONST.__cfstring: 0x4380
-+  __DATA_CONST.__objc_classlist: 0x228
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x28
--  __DATA_CONST.__objc_superrefs: 0x1e0
--  __DATA_CONST.__objc_arraydata: 0xd70
--  __DATA_CONST.__objc_arrayobj: 0x5a0
-+  __DATA_CONST.__objc_superrefs: 0x208
-+  __DATA_CONST.__objc_arraydata: 0xef8
-+  __DATA_CONST.__objc_arrayobj: 0x5e8
-   __DATA_CONST.__objc_intobj: 0xf00
--  __DATA_CONST.__objc_doubleobj: 0x70
--  __DATA_CONST.__objc_dictobj: 0x28
--  __DATA_CONST.__auth_got: 0x550
--  __DATA_CONST.__got: 0x338
-+  __DATA_CONST.__objc_doubleobj: 0xd0
-+  __DATA_CONST.__objc_dictobj: 0x50
-+  __DATA_CONST.__auth_got: 0x598
-+  __DATA_CONST.__got: 0x358
-   __DATA_CONST.__auth_ptr: 0x8
--  __DATA.__objc_const: 0x7a50
--  __DATA.__objc_selrefs: 0x17a8
--  __DATA.__objc_ivar: 0x338
--  __DATA.__objc_data: 0x1400
-+  __DATA.__objc_const: 0x84f0
-+  __DATA.__objc_selrefs: 0x1b00
-+  __DATA.__objc_ivar: 0x3c8
-+  __DATA.__objc_data: 0x1590
-   __DATA.__data: 0x528
--  __DATA.__bss: 0x248
-+  __DATA.__bss: 0x270
 +  - /AppleInternal/Library/Frameworks/PerformanceControlKitInternal.framework/PerformanceControlKitInternal
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreML.framework/CoreML
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-   - /System/Library/Frameworks/UserNotifications.framework/UserNotifications
+
 +  - /System/Library/PrivateFrameworks/AccelerateOpt.framework/AccelerateOpt
-   - /System/Library/PrivateFrameworks/BatteryAlgorithms.framework/BatteryAlgorithms
-   - /System/Library/PrivateFrameworks/BatteryIntelligence.framework/BatteryIntelligence
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
 
-   - /System/Library/PrivateFrameworks/IDSFoundation.framework/IDSFoundation
-   - /System/Library/PrivateFrameworks/MobileStoreDemoKit.framework/MobileStoreDemoKit
-   - /System/Library/PrivateFrameworks/PerfPowerServicesReader.framework/PerfPowerServicesReader
 +  - /System/Library/PrivateFrameworks/PerformanceControlKit.framework/PerformanceControlKit
-   - /System/Library/PrivateFrameworks/PowerLog.framework/PowerLog
-   - /System/Library/PrivateFrameworks/PowerUI.framework/PowerUI
-   - /System/Library/PrivateFrameworks/Trial.framework/Trial
 
-   - /usr/lib/libSMC.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1499
 -  Symbols:   272
 -  CStrings:  2440
 +  Functions: 1695
 +  Symbols:   283
 +  CStrings:  2773
- 
 Symbols:
 + _AddIpoptIntOption
 + _CFPreferencesCopyValue

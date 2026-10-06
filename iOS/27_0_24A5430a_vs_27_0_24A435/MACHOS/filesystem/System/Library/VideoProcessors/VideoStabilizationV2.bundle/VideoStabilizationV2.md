@@ -2,80 +2,51 @@
 
 > `/System/Library/VideoProcessors/VideoStabilizationV2.bundle/VideoStabilizationV2`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x35ea8` | `0x38778` | **`+0x28d0`** |
+| `__TEXT.__objc_stubs` | `0x3260` | `0x39c0` | **`+0x760`** |
+| `__TEXT.__objc_methname` | `0x5c79` | `0x639e` | **`+0x725`** |
+| `__TEXT.__cstring` | `0x4d9d` | `0x50e3` | **`+0x346`** |
+| `__DATA.__objc_const` | `0x4598` | `0x47a8` | **`+0x210`** |
+| `__DATA.__objc_selrefs` | `0x1000` | `0x11d8` | **`+0x1d8`** |
+| `__DATA_CONST.__got` | `0x8c0` | `0x9e0` | **`+0x120`** |
+| `__TEXT.__const` | `0x6d0` | `0x720` | **`+0x50`** |
+| `__DATA_CONST.__cfstring` | `0x960` | `0x9a0` | **`+0x40`** |
+| `__DATA.__objc_ivar` | `0x4bc` | `0x4f8` | **`+0x3c`** |
+| `__TEXT.__objc_methtype` | `0x191a` | `0x194b` | **`+0x31`** |
+| `__TEXT.__objc_methlist` | `0x1c44` | `0x1c74` | **`+0x30`** |
+| `__TEXT.__gcc_except_tab` | `0x324` | `0x34c` | **`+0x28`** |
+| `__DATA_CONST.__objc_intobj` | `0xa08` | `0xa20` | **`+0x18`** |
+| `__TEXT.__auth_stubs` | `0xce0` | `0xcf0` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x808` | `0x818` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x680` | `0x688` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
- 764.22.13.0.0
--  __TEXT.__text: 0x35ea8
--  __TEXT.__auth_stubs: 0xce0
--  __TEXT.__objc_stubs: 0x3260
--  __TEXT.__objc_methlist: 0x1c44
--  __TEXT.__const: 0x6d0
--  __TEXT.__objc_methname: 0x5c79
-+  __TEXT.__text: 0x38778
-+  __TEXT.__auth_stubs: 0xcf0
-+  __TEXT.__objc_stubs: 0x39c0
-+  __TEXT.__objc_methlist: 0x1c74
-+  __TEXT.__const: 0x720
-+  __TEXT.__objc_methname: 0x639e
-   __TEXT.__objc_classname: 0x1ee
--  __TEXT.__objc_methtype: 0x191a
--  __TEXT.__cstring: 0x4d9d
--  __TEXT.__gcc_except_tab: 0x324
--  __TEXT.__unwind_info: 0x808
-+  __TEXT.__objc_methtype: 0x194b
-+  __TEXT.__cstring: 0x50e3
-+  __TEXT.__gcc_except_tab: 0x34c
-+  __TEXT.__unwind_info: 0x818
-   __DATA_CONST.__const: 0x270
--  __DATA_CONST.__cfstring: 0x960
-+  __DATA_CONST.__cfstring: 0x9a0
-   __DATA_CONST.__objc_classlist: 0x88
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x78
--  __DATA_CONST.__objc_intobj: 0xa08
-+  __DATA_CONST.__objc_intobj: 0xa20
-   __DATA_CONST.__objc_arraydata: 0x3bf0
-   __DATA_CONST.__objc_dictobj: 0xc58
-   __DATA_CONST.__objc_arrayobj: 0x2580
--  __DATA_CONST.__auth_got: 0x680
--  __DATA_CONST.__got: 0x8c0
-+  __DATA_CONST.__auth_got: 0x688
-+  __DATA_CONST.__got: 0x9e0
-   __DATA_CONST.__auth_ptr: 0x8
--  __DATA.__objc_const: 0x4598
--  __DATA.__objc_selrefs: 0x1000
--  __DATA.__objc_ivar: 0x4bc
-+  __DATA.__objc_const: 0x47a8
-+  __DATA.__objc_selrefs: 0x11d8
-+  __DATA.__objc_ivar: 0x4f8
-   __DATA.__objc_data: 0x550
-   __DATA.__data: 0x300
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1298
 -  Symbols:   2106
 -  CStrings:  1705
 +  Functions: 1339
 +  Symbols:   2221
 +  CStrings:  1807
- 
 Symbols:
 + -[VISConfigurationV2 setTextureStyleRenderingEnabled:]
 + -[VISConfigurationV2 textureStyleRenderingEnabled]

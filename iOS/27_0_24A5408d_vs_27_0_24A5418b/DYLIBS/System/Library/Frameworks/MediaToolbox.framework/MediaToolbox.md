@@ -2,60 +2,31 @@
 
 > `/System/Library/Frameworks/MediaToolbox.framework/MediaToolbox`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc2c338` | `0xc2ca54` | **`+0x71c`** |
+| `__TEXT.__oslogstring` | `0x66b47` | `0x670f8` | **`+0x5b1`** |
+| `__DATA_CONST.__const` | `0x248b8` | `0x249a8` | **`+0xf0`** |
+| `__AUTH_CONST.__cfstring` | `0x503e0` | `0x504a0` | **`+0xc0`** |
+| `__TEXT.__cstring` | `0x714d7` | `0x71567` | **`+0x90`** |
+| `__TEXT.__const` | `0x29730` | `0x29720` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x14870` | `0x14878` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3350.75.2.0.0
--  __TEXT.__text: 0xc2c338
 +3350.77.1.6.0
-+  __TEXT.__text: 0xc2ca54
-   __TEXT.__lazy_helpers: 0x3618
-   __TEXT.__objc_methlist: 0x2b74
--  __TEXT.__const: 0x29730
--  __TEXT.__cstring: 0x714d7
--  __TEXT.__oslogstring: 0x66b47
-+  __TEXT.__const: 0x29720
-+  __TEXT.__cstring: 0x71567
-+  __TEXT.__oslogstring: 0x670f8
-   __TEXT.__gcc_except_tab: 0x15ec
-   __TEXT.__dlopen_cstrs: 0x32e
-   __TEXT.__ustring: 0x24e
 
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0x30
--  __TEXT.__unwind_info: 0x14870
-+  __TEXT.__unwind_info: 0x14878
-   __TEXT.__eh_frame: 0x478
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x248b8
-+  __DATA_CONST.__const: 0x249a8
-   __DATA_CONST.__objc_classlist: 0x228
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
-
-   __DATA_CONST.__objc_arraydata: 0x50
-   __DATA_CONST.__got: 0x4938
-   __AUTH_CONST.__const: 0x47d98
--  __AUTH_CONST.__cfstring: 0x503e0
-+  __AUTH_CONST.__cfstring: 0x504a0
-   __AUTH_CONST.__objc_const: 0x59c8
-   __AUTH_CONST.__weak_auth_got: 0x20
-   __AUTH_CONST.__lazy_load_got: 0x4e0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 43696
--  Symbols:   45191
+-  Symbols:   44300
 -  CStrings:  20939
 +  Functions: 43693
-+  Symbols:   45200
++  Symbols:   44309
 +  CStrings:  20947
- 
 Symbols:
 + _FigAlternateSelectionBossIsFilteringInfoStale
 + _FigAssetExportSessionSimulateMediaServicesWereReset

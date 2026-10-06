@@ -2,138 +2,78 @@
 
 > `/private/var/staged_system_apps/MobileMail.app/MobileMail`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5d6630` | `0x5e0bb4` | **`+0xa584`** |
+| `__TEXT.__cstring` | `0x18e74` | `0x195b4` | **`+0x740`** |
+| `__DATA_CONST.__const` | `0x24e20` | `0x252f8` | **`+0x4d8`** |
+| `__TEXT.__objc_methname` | `0x69187` | `0x69417` | **`+0x290`** |
+| `__TEXT.__const` | `0x14640` | `0x148a0` | **`+0x260`** |
+| `__TEXT.__swift5_typeref` | `0xbede` | `0xc0d6` | **`+0x1f8`** |
+| `__TEXT.__swift5_capture` | `0x8eac` | `0x909c` | **`+0x1f0`** |
+| `__TEXT.__objc_stubs` | `0x460a0` | `0x46240` | **`+0x1a0`** |
+| `__DATA.__objc_const` | `0x37d38` | `0x37e38` | **`+0x100`** |
+| `__TEXT.__auth_stubs` | `0x79f0` | `0x7ae0` | **`+0xf0`** |
+| `__DATA.__data` | `0xfde0` | `0xfec0` | **`+0xe0`** |
+| `__TEXT.__oslogstring` | `0x1a284` | `0x1a1a4` | **`-0xe0`** |
+| `__TEXT.__unwind_info` | `0x1a458` | `0x1a500` | **`+0xa8`** |
+| `__TEXT.__constg_swiftt` | `0x48a0` | `0x4944` | **`+0xa4`** |
+| `__DATA.__bss` | `0x15b28` | `0x15bc8` | **`+0xa0`** |
+| `__TEXT.__eh_frame` | `0x5624` | `0x56c4` | **`+0xa0`** |
+| `__TEXT.__gcc_except_tab` | `0x55c50` | `0x55cd8` | **`+0x88`** |
+| `__DATA.__objc_selrefs` | `0x15a10` | `0x15a88` | **`+0x78`** |
+| `__DATA_CONST.__auth_got` | `0x3d08` | `0x3d80` | **`+0x78`** |
+| `__DATA_CONST.__got` | `0x4068` | `0x40c0` | **`+0x58`** |
+| `__TEXT.__objc_methlist` | `0x26ee4` | `0x26f3c` | **`+0x58`** |
+| `__TEXT.__swift5_fieldmd` | `0x35b0` | `0x35f0` | **`+0x40`** |
+| `__TEXT.__swift_as_ret` | `0x5cc` | `0x608` | **`+0x3c`** |
+| `__TEXT.__swift_as_entry` | `0x574` | `0x5a4` | **`+0x30`** |
+| `__DATA_CONST.__auth_ptr` | `0x1f10` | `0x1f38` | **`+0x28`** |
+| `__DATA_CONST.__cfstring` | `0xe980` | `0xe9a0` | **`+0x20`** |
+| `__TEXT.__objc_methtype` | `0x12b35` | `0x12b55` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x3acf` | `0x3aef` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x1fc0` | `0x1fdc` | **`+0x1c`** |
+| `__TEXT.__swift_as_cont` | `0x988` | `0x9a4` | **`+0x1c`** |
+| `__TEXT.__swift5_assocty` | `0x17d8` | `0x17f0` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0x57c` | `0x588` | **`+0xc`** |
+| `__TEXT.__swift5_proto` | `0xb54` | `0xb58` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA.__objc_data`
-- `__DATA.__common`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_protos`
+
+### Other Changes
 
 ```diff
 
 -3895.100.17.2.1
--  __TEXT.__text: 0x5d6630
--  __TEXT.__auth_stubs: 0x79f0
--  __TEXT.__objc_stubs: 0x460a0
--  __TEXT.__objc_methlist: 0x26ee4
--  __TEXT.__const: 0x14640
--  __TEXT.__gcc_except_tab: 0x55c50
--  __TEXT.__objc_methname: 0x69187
--  __TEXT.__cstring: 0x18e74
 +3897.100.8.2.5
-+  __TEXT.__text: 0x5e0bb4
-+  __TEXT.__auth_stubs: 0x7ae0
-+  __TEXT.__objc_stubs: 0x46240
-+  __TEXT.__objc_methlist: 0x26f3c
-+  __TEXT.__const: 0x148a0
-+  __TEXT.__gcc_except_tab: 0x55cd8
-+  __TEXT.__objc_methname: 0x69417
-+  __TEXT.__cstring: 0x195b4
-   __TEXT.__objc_classname: 0x64fa
--  __TEXT.__objc_methtype: 0x12b35
--  __TEXT.__oslogstring: 0x1a284
-+  __TEXT.__objc_methtype: 0x12b55
-+  __TEXT.__oslogstring: 0x1a1a4
-   __TEXT.__ustring: 0xab2
-   __TEXT.__dlopen_cstrs: 0x2cc
--  __TEXT.__swift5_typeref: 0xbede
--  __TEXT.__swift5_capture: 0x8eac
--  __TEXT.__constg_swiftt: 0x48a0
--  __TEXT.__swift5_reflstr: 0x3acf
--  __TEXT.__swift5_assocty: 0x17d8
--  __TEXT.__swift5_fieldmd: 0x35b0
-+  __TEXT.__swift5_typeref: 0xc0d6
-+  __TEXT.__swift5_capture: 0x909c
-+  __TEXT.__constg_swiftt: 0x4944
-+  __TEXT.__swift5_reflstr: 0x3aef
-+  __TEXT.__swift5_assocty: 0x17f0
-+  __TEXT.__swift5_fieldmd: 0x35f0
-   __TEXT.__swift5_builtin: 0x3e8
-   __TEXT.__swift5_protos: 0x4c
--  __TEXT.__swift5_proto: 0xb54
--  __TEXT.__swift5_types: 0x57c
--  __TEXT.__swift_as_entry: 0x574
--  __TEXT.__swift_as_ret: 0x5cc
--  __TEXT.__swift_as_cont: 0x988
-+  __TEXT.__swift5_proto: 0xb58
-+  __TEXT.__swift5_types: 0x588
-+  __TEXT.__swift_as_entry: 0x5a4
-+  __TEXT.__swift_as_ret: 0x608
-+  __TEXT.__swift_as_cont: 0x9a4
-   __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__unwind_info: 0x1a458
--  __TEXT.__eh_frame: 0x5624
--  __DATA_CONST.__const: 0x24e20
--  __DATA_CONST.__cfstring: 0xe980
-+  __TEXT.__unwind_info: 0x1a500
-+  __TEXT.__eh_frame: 0x56c4
-+  __DATA_CONST.__const: 0x252f8
-+  __DATA_CONST.__cfstring: 0xe9a0
-   __DATA_CONST.__objc_classlist: 0xec0
-   __DATA_CONST.__objc_catlist: 0xf0
-   __DATA_CONST.__objc_protolist: 0xbf8
 
-   __DATA_CONST.__objc_arraydata: 0x500
-   __DATA_CONST.__objc_arrayobj: 0x198
-   __DATA_CONST.__objc_dictobj: 0xa0
--  __DATA_CONST.__auth_got: 0x3d08
--  __DATA_CONST.__got: 0x4068
--  __DATA_CONST.__auth_ptr: 0x1f10
--  __DATA.__objc_const: 0x37d38
--  __DATA.__objc_selrefs: 0x15a10
--  __DATA.__objc_ivar: 0x1fc0
-+  __DATA_CONST.__auth_got: 0x3d80
-+  __DATA_CONST.__got: 0x40c0
-+  __DATA_CONST.__auth_ptr: 0x1f38
-+  __DATA.__objc_const: 0x37e38
-+  __DATA.__objc_selrefs: 0x15a88
-+  __DATA.__objc_ivar: 0x1fdc
-   __DATA.__objc_data: 0xc5c8
--  __DATA.__data: 0xfde0
--  __DATA.__bss: 0x15b28
-+  __DATA.__data: 0xfec0
-+  __DATA.__bss: 0x15bc8
-   __DATA.__common: 0x968
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-
-   - /System/Library/PrivateFrameworks/EmailDaemon.framework/EmailDaemon
-   - /System/Library/PrivateFrameworks/EmailFoundation.framework/EmailFoundation
-   - /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
 -  - /System/Library/PrivateFrameworks/GenerativeSearch.framework/GenerativeSearch
 -  - /System/Library/PrivateFrameworks/GenerativeSearchAdapter.framework/GenerativeSearchAdapter
-   - /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
-   - /System/Library/PrivateFrameworks/HybridSearch.framework/HybridSearch
-   - /System/Library/PrivateFrameworks/HybridSearchAdapter.framework/HybridSearchAdapter
 
-   - /System/Library/PrivateFrameworks/iCloudMailAssistant.framework/iCloudMailAssistant
-   - /System/Library/PrivateFrameworks/iCloudQuota.framework/iCloudQuota
-   - /System/Library/PrivateFrameworks/iCloudQuotaUI.framework/iCloudQuotaUI
 -  - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libarchive.2.dylib
-   - /usr/lib/libicucore.A.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 25856
 -  Symbols:   4815
 -  CStrings:  22254
 +  Functions: 25974
 +  Symbols:   4844
 +  CStrings:  22281
- 
 Symbols:
 + _$s10AppIntents11EntityQueryP22displayRepresentations3forSDy0C0_2IDQZAA21DisplayRepresentationVGSayAHG_tYaKFTq
 + _$s10AppIntents11EntityQueryPAAE22displayRepresentations3forSDy0C0_2IDQZAA21DisplayRepresentationVGSayAHG_tYaKF

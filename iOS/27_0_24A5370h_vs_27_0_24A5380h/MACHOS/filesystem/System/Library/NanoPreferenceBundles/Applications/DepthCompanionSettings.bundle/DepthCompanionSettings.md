@@ -2,19 +2,25 @@
 
 > `/System/Library/NanoPreferenceBundles/Applications/DepthCompanionSettings.bundle/DepthCompanionSettings`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8364` | `0x8360` | **`-0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x8364
-+  __TEXT.__text: 0x8360
-   __TEXT.__auth_stubs: 0xba0
-   __TEXT.__objc_stubs: 0x880
-   __TEXT.__objc_methlist: 0x10c
-Sections:
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA.__data : content changed
+-2027.0.21.0.0
++2027.0.22.0.0
 Functions:
 ~ sub_66c0 : 432 -> 428
-
 ```

@@ -2,84 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/CallsAppUI.framework/CallsAppUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfc4cc` | `0xfce58` | **`+0x98c`** |
+| `__DATA.__bss` | `0x1e58` | `0x2758` | **`+0x900`** |
+| `__TEXT.__const` | `0x8794` | `0x8c14` | **`+0x480`** |
+| `__DATA.__data` | `0x2c38` | `0x2da8` | **`+0x170`** |
+| `__TEXT.__swift5_assocty` | `0x6b0` | `0x740` | **`+0x90`** |
+| `__AUTH_CONST.__const` | `0x56c0` | `0x5738` | **`+0x78`** |
+| `__DATA_DIRTY.__data` | `0x4610` | `0x45a0` | **`-0x70`** |
+| `__TEXT.__swift5_fieldmd` | `0x229c` | `0x2308` | **`+0x6c`** |
+| `__TEXT.__constg_swiftt` | `0x40c4` | `0x412c` | **`+0x68`** |
+| `__TEXT.__cstring` | `0x1bdb` | `0x1b7b` | **`-0x60`** |
+| `__AUTH_CONST.__auth_got` | `0x2af0` | `0x2b38` | **`+0x48`** |
+| `__TEXT.__swift5_proto` | `0x270` | `0x2b8` | **`+0x48`** |
+| `__TEXT.__unwind_info` | `0x35d8` | `0x3618` | **`+0x40`** |
+| `__TEXT.__swift5_builtin` | `0x118` | `0x154` | **`+0x3c`** |
+| `__DATA_CONST.__got` | `0x1338` | `0x1360` | **`+0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1628` | `0x1650` | **`+0x28`** |
+| `__TEXT.__swift5_typeref` | `0xeb4e` | `0xeb26` | **`-0x28`** |
+| `__TEXT.__swift5_reflstr` | `0x2acc` | `0x2adc` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x208` | `0x214` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
 -147.100.5.2.1
--  __TEXT.__text: 0xfc4cc
 +153.100.1.2.7
-+  __TEXT.__text: 0xfce58
-   __TEXT.__objc_methlist: 0x1360
--  __TEXT.__const: 0x8794
--  __TEXT.__constg_swiftt: 0x40c4
--  __TEXT.__swift5_typeref: 0xeb4e
--  __TEXT.__swift5_reflstr: 0x2acc
--  __TEXT.__swift5_fieldmd: 0x229c
--  __TEXT.__swift5_builtin: 0x118
--  __TEXT.__swift5_assocty: 0x6b0
--  __TEXT.__cstring: 0x1bdb
--  __TEXT.__swift5_proto: 0x270
--  __TEXT.__swift5_types: 0x208
-+  __TEXT.__const: 0x8c14
-+  __TEXT.__constg_swiftt: 0x412c
-+  __TEXT.__swift5_typeref: 0xeb26
-+  __TEXT.__swift5_reflstr: 0x2adc
-+  __TEXT.__swift5_fieldmd: 0x2308
-+  __TEXT.__swift5_builtin: 0x154
-+  __TEXT.__swift5_assocty: 0x740
-+  __TEXT.__cstring: 0x1b7b
-+  __TEXT.__swift5_proto: 0x2b8
-+  __TEXT.__swift5_types: 0x214
-   __TEXT.__swift5_capture: 0x1f28
-   __TEXT.__oslogstring: 0x1824
-   __TEXT.__swift5_protos: 0x54
 
-   __TEXT.__swift_as_ret: 0xf4
-   __TEXT.__swift_as_cont: 0x26c
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x35d8
-+  __TEXT.__unwind_info: 0x3618
-   __TEXT.__eh_frame: 0x3980
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x180
-   __DATA_CONST.__objc_protolist: 0x1c0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1628
-+  __DATA_CONST.__objc_selrefs: 0x1650
-   __DATA_CONST.__objc_protorefs: 0xe8
--  __DATA_CONST.__got: 0x1338
--  __AUTH_CONST.__const: 0x56c0
-+  __DATA_CONST.__got: 0x1360
-+  __AUTH_CONST.__const: 0x5738
-   __AUTH_CONST.__objc_const: 0x8090
--  __AUTH_CONST.__auth_got: 0x2af0
-+  __AUTH_CONST.__auth_got: 0x2b38
-   __AUTH.__objc_data: 0x1af0
-   __AUTH.__data: 0x16e8
--  __DATA.__data: 0x2c38
-+  __DATA.__data: 0x2da8
-   __DATA.__objc_stublist: 0x8
--  __DATA.__bss: 0x1e58
-+  __DATA.__bss: 0x2758
-   __DATA.__common: 0x178
-   __DATA_DIRTY.__objc_data: 0xf88
--  __DATA_DIRTY.__data: 0x4610
-+  __DATA_DIRTY.__data: 0x45a0
-   __DATA_DIRTY.__bss: 0x2c80
-   __DATA_DIRTY.__common: 0xf8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4957
--  Symbols:   2809
+-  Symbols:   2314
 -  CStrings:  289
 +  Functions: 4983
-+  Symbols:   2837
++  Symbols:   2337
 +  CStrings:  286
- 
 Symbols:
 + _UIFontDescriptorTraitsAttribute
 + _UIFontWeightMedium
@@ -95,11 +54,6 @@ Symbols:
 + _associated conformance So29UIFontDescriptorAttributeNameas20_SwiftNewtypeWrapperSCs35_HasCustomAnyHashableRepresentation
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBP014CommunicationsB0E011conditionalC8Modifier3for04viewF0QrSb_qd__xXEtAaBRd__lFQOyAA15ModifiedContentVyAcAE11buttonStyleyQrqd__AA015PrimitiveButtonL0Rd__lFQOyAA0N0VyAIyAIyAA5ImageVAA022_EnvironmentKeyWritingF0VyAA4FontVSgGGAQyAO5ScaleOGGG_08CallsAppB0013RecentsCirclenL0VQo_AA023AccessibilityAttachmentF0VG_AIyA6_A0_09Sensitivejn5BadgeF033_3F2A660B14868E1BA6BD24CC3F57C010LLVGQo_HO
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE11buttonStyleyQrqd__AA015PrimitiveButtonE0Rd__lFQOyAA0G0VyAA15ModifiedContentVyAIyAIyAA6CircleVAA30_EnvironmentKeyWritingModifierVyAA5ColorVSgGGAA12_FrameLayoutVGAA08_OverlayN0VyAIyAIyAA0fgE13ConfigurationV5LabelVAA011_ForegroundeN0VyAOGGAA13_OffsetEffectVGGGG_AA010BorderlessgE0VQo_HO
-+ _objc_msgSend$configurationWithFont:scale:
-+ _objc_msgSend$fontDescriptor
-+ _objc_msgSend$fontDescriptorByAddingAttributes:
-+ _objc_msgSend$fontWithDescriptor:size:
-+ _objc_msgSend$pointSize
 + _symbolic SDy__________G So24UIFontDescriptorTraitKeya So0A6Weighta
 + _symbolic So8NSNumberC
 + _symbolic _____ So12UIFontWeighta

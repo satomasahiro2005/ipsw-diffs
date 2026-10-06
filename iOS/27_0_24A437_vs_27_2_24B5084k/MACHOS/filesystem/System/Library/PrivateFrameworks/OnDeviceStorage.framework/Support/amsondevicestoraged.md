@@ -2,95 +2,59 @@
 
 > `/System/Library/PrivateFrameworks/OnDeviceStorage.framework/Support/amsondevicestoraged`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_entry`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcd44` | `0xd2fc` | **`+0x5b8`** |
+| `__TEXT.__oslogstring` | `—` | `0x150` | **`+0x150`** |
+| `__DATA.__objc_const` | `0x168` | `0xd8` | **`-0x90`** |
+| `__TEXT.__cstring` | `0xb1` | `0x51` | **`-0x60`** |
+| `__DATA.__objc_data` | `0x50` | `—` | **`-0x50`** |
+| `__DATA_CONST.__const` | `0x1b0` | `0x1e0` | **`+0x30`** |
+| `__TEXT.__auth_stubs` | `0x9c0` | `0x9f0` | **`+0x30`** |
+| `__TEXT.__objc_stubs` | `0x80` | `0x60` | **`-0x20`** |
+| `__TEXT.__unwind_info` | `0x470` | `0x490` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0x4e8` | `0x500` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x14` | `—` | **`-0x14`** |
+| `__TEXT.__const` | `0x438` | `0x428` | **`-0x10`** |
+| `__TEXT.__objc_classname` | `0x44` | `0x34` | **`-0x10`** |
+| `__DATA.__objc_selrefs` | `0x20` | `0x18` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x10` | `0x8` | **`-0x8`** |
+| `__TEXT.__objc_methtype` | `0x9` | `0x1` | **`-0x8`** |
+| `__TEXT.__objc_methname` | `0x55` | `0x4f` | **`-0x6`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__linkguard`
 - `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__eh_frame`
 - `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_fieldmd`
 - `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__linkguard`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -3.0.59.0.0
--  __TEXT.__text: 0xbbac
--  __TEXT.__auth_stubs: 0x9c0
--  __TEXT.__objc_stubs: 0x80
--  __TEXT.__objc_methlist: 0x14
--  __TEXT.__const: 0x438
--  __TEXT.__objc_classname: 0x44
--  __TEXT.__objc_methtype: 0x9
--  __TEXT.__swift5_typeref: 0x1e5
--  __TEXT.__cstring: 0xb1
 +3.1.10.0.0
-+  __TEXT.__text: 0xc17c
-+  __TEXT.__auth_stubs: 0x9f0
-+  __TEXT.__objc_stubs: 0x60
-+  __TEXT.__const: 0x428
-+  __TEXT.__oslogstring: 0x150
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__objc_methname: 0x55
-+  __TEXT.__swift5_typeref: 0x1e5
-+  __TEXT.__cstring: 0x51
-+  __TEXT.__objc_classname: 0x34
-+  __TEXT.__objc_methname: 0x4f
-+  __TEXT.__objc_methtype: 0x1
-   __TEXT.__constg_swiftt: 0xbc
-   __TEXT.__swift5_reflstr: 0x43
-   __TEXT.__swift5_fieldmd: 0x60
 
-   __TEXT.__swift_as_entry: 0x6c
-   __TEXT.__swift_as_ret: 0x84
-   __TEXT.__swift_as_cont: 0x11c
--  __TEXT.__unwind_info: 0x4b0
-+  __TEXT.__unwind_info: 0x4c8
-   __TEXT.__eh_frame: 0x10a8
--  __DATA_CONST.__const: 0x1b0
--  __DATA_CONST.__objc_classlist: 0x10
-+  __DATA_CONST.__const: 0x1e0
-+  __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__linkguard: 0x15
--  __DATA_CONST.__auth_got: 0x4e8
-+  __DATA_CONST.__auth_got: 0x500
-   __DATA_CONST.__got: 0x130
-   __DATA_CONST.__auth_ptr: 0x150
--  __DATA.__objc_const: 0x168
--  __DATA.__objc_selrefs: 0x20
--  __DATA.__objc_data: 0x50
-+  __DATA.__objc_const: 0xd8
-+  __DATA.__objc_selrefs: 0x18
-   __DATA.__data: 0x280
-   __DATA.__common: 0x18
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/appleinternal/lib/liblinkguard.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 +  - /usr/lib/libsqlite3.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
 -  Functions: 199
 -  Symbols:   253
 +  - /usr/lib/swift/libswiftos.dylib
 +  Functions: 204
 +  Symbols:   257
-   CStrings:  14
- 
 Symbols:
 + _$s18OnDeviceFoundation13loggableErrorySSs0E0_pF
 + _$s19OnDeviceStorageCore12PluckRequestV_12connectionId07profileH0AcA11Expressible_p_S2StcfC

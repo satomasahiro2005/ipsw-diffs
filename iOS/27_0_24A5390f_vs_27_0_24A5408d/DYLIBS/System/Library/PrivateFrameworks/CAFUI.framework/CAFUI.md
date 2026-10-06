@@ -2,93 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/CAFUI.framework/CAFUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xde4cc` | `0xe40b4` | **`+0x5be8`** |
+| `__AUTH_CONST.__objc_const` | `0xb450` | `0xb7d0` | **`+0x380`** |
+| `__AUTH_CONST.__const` | `0x5a08` | `0x5d08` | **`+0x300`** |
+| `__TEXT.__swift5_typeref` | `0xc1da` | `0xc372` | **`+0x198`** |
+| `__TEXT.__const` | `0x6a14` | `0x6b84` | **`+0x170`** |
+| `__DATA.__data` | `0x4148` | `0x42a8` | **`+0x160`** |
+| `__TEXT.__cstring` | `0x37d4` | `0x3904` | **`+0x130`** |
+| `__TEXT.__unwind_info` | `0x2818` | `0x28f0` | **`+0xd8`** |
+| `__TEXT.__eh_frame` | `0xc70` | `0xd28` | **`+0xb8`** |
+| `__TEXT.__swift5_reflstr` | `0x1e5e` | `0x1ede` | **`+0x80`** |
+| `__TEXT.__swift5_capture` | `0x199c` | `0x1a14` | **`+0x78`** |
+| `__AUTH_CONST.__auth_got` | `0x1fa8` | `0x2018` | **`+0x70`** |
+| `__TEXT.__constg_swiftt` | `0x3af8` | `0x3b40` | **`+0x48`** |
+| `__AUTH.__data` | `0x2ae0` | `0x2b20` | **`+0x40`** |
+| `__AUTH.__objc_data` | `0x3ab8` | `0x3ae8` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x1190` | `0x11c0` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x27b0` | `0x27e0` | **`+0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0x1e5c` | `0x1e8c` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x528` | `0x548` | **`+0x20`** |
+| `__DATA_CONST.__objc_protolist` | `0x218` | `0x238` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1f68` | `0x1f88` | **`+0x20`** |
+| `__DATA.__bss` | `0x2fe0` | `0x2ff0` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x108` | `0x118` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x1e0` | `0x1f0` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -540.1.0.0.0
--  __TEXT.__text: 0xde4cc
--  __TEXT.__objc_methlist: 0x27b0
--  __TEXT.__const: 0x6a14
--  __TEXT.__cstring: 0x37d4
 +542.7.0.0.0
-+  __TEXT.__text: 0xe40b4
-+  __TEXT.__objc_methlist: 0x27e0
-+  __TEXT.__const: 0x6b84
-+  __TEXT.__cstring: 0x3904
-   __TEXT.__oslogstring: 0xd59
-   __TEXT.__ustring: 0x5e
--  __TEXT.__swift5_typeref: 0xc1da
--  __TEXT.__swift5_capture: 0x199c
--  __TEXT.__swift5_reflstr: 0x1e5e
-+  __TEXT.__swift5_typeref: 0xc372
-+  __TEXT.__swift5_capture: 0x1a14
-+  __TEXT.__swift5_reflstr: 0x1ede
-   __TEXT.__swift5_assocty: 0x4b8
--  __TEXT.__constg_swiftt: 0x3af8
--  __TEXT.__swift5_fieldmd: 0x1e5c
-+  __TEXT.__constg_swiftt: 0x3b40
-+  __TEXT.__swift5_fieldmd: 0x1e8c
-   __TEXT.__swift5_builtin: 0xdc
--  __TEXT.__swift5_proto: 0x1e0
-+  __TEXT.__swift5_proto: 0x1f0
-   __TEXT.__swift5_types: 0x21c
-   __TEXT.__swift5_protos: 0x44
-   __TEXT.__swift5_mpenum: 0x2c
--  __TEXT.__unwind_info: 0x2818
--  __TEXT.__eh_frame: 0xc70
-+  __TEXT.__unwind_info: 0x28f0
-+  __TEXT.__eh_frame: 0xd28
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x528
-+  __DATA_CONST.__const: 0x548
-   __DATA_CONST.__objc_classlist: 0x240
-   __DATA_CONST.__objc_catlist: 0x8
--  __DATA_CONST.__objc_protolist: 0x218
-+  __DATA_CONST.__objc_protolist: 0x238
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1f68
--  __DATA_CONST.__objc_protorefs: 0x108
-+  __DATA_CONST.__objc_selrefs: 0x1f88
-+  __DATA_CONST.__objc_protorefs: 0x118
-   __DATA_CONST.__objc_superrefs: 0x18
--  __DATA_CONST.__got: 0x1190
--  __AUTH_CONST.__const: 0x5a08
-+  __DATA_CONST.__got: 0x11c0
-+  __AUTH_CONST.__const: 0x5d08
-   __AUTH_CONST.__cfstring: 0x420
--  __AUTH_CONST.__objc_const: 0xb450
--  __AUTH_CONST.__auth_got: 0x1fa8
--  __AUTH.__objc_data: 0x3ab8
--  __AUTH.__data: 0x2ae0
-+  __AUTH_CONST.__objc_const: 0xb7d0
-+  __AUTH_CONST.__auth_got: 0x2018
-+  __AUTH.__objc_data: 0x3ae8
-+  __AUTH.__data: 0x2b20
-   __DATA.__objc_ivar: 0x24
--  __DATA.__data: 0x4148
--  __DATA.__bss: 0x2fe0
-+  __DATA.__data: 0x42a8
-+  __DATA.__bss: 0x2ff0
-   __DATA.__common: 0x49
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CarPlay.framework/CarPlay
 
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 +  - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 4517
--  Symbols:   12953
+-  Symbols:   12297
 -  CStrings:  383
 +  Functions: 4637
-+  Symbols:   13184
++  Symbols:   12526
 +  CStrings:  390
- 
 Symbols:
 + _$s10CAFCombine29CAFEqualizerPresetsObservableC12$presetLabel7Combine12AnyPublisherVySSSgs5NeverOGvgTj
 + _$s10CAFCombine29CAFEqualizerPresetsObservableC19$selectedEntryIndex7Combine12AnyPublisherVys5UInt8Vs5NeverOGvgTj
@@ -360,12 +317,6 @@ Symbols:
 + _flat unique So25UITraitChangeRegistration_p
 + _get_witness_table 7SwiftUI16ScrollViewReaderVyAA15ModifiedContentVyAA012SubscriptionD0Vy7Combine12AnyPublisherVyyts5NeverOGAGyAmA0D0PAAE29navigationBarTitleDisplayModeyQrAA010NavigationN4ItemV0opQ0OFQOyAoAE0mO0yQrqd__SyRd__lFQOyAoAE06scrollG10BackgroundyQrAA10VisibilityOFQOyAEyAoAE9listStyleyQrqd__AA04ListX0Rd__lFQOyAA0Y0VyAlA7SectionVyAA05EmptyD0VAA7ForEachVySaySi6offset_5CAFUI06PickerS0V7elementtGSiAoAE0W12RowSeparator_5edgesQrAX_AA12VerticalEdgeO3SetVtFQOyAEyAA012_ConditionalG0VyAEyA20_yAEyA8_014CAFUIPickerRowD0VAA11_ClipEffectVyAA22UnevenRoundedRectangleVGGA22_GA27_GA29_GAA21_TraitWritingModifierVyAA0Y17RowInsetsTraitKeyVGG_Qo_GAA4TextVSgGG_AA05PlainyX0VQo_AA30_EnvironmentKeyWritingModifierVy12CoreGraphics7CGFloatVGG_Qo__SSQo__Qo_GGAA25_AppearanceActionModifierVGGAaNHPyHC
 + _keypath_set.2Tm
-+ _objc_msgSend$didMoveToParentViewController:
-+ _objc_msgSend$equalizerPresets
-+ _objc_msgSend$initWithTitle:style:target:action:
-+ _objc_msgSend$presetLabel
-+ _objc_msgSend$setHighlighted:
-+ _objc_msgSend$soundDistributionPresets
 + _swift_task_getMainExecutor
 + _swift_task_isCurrentExecutor
 + _symbolic So19CAFEqualizerPresetsCSg
@@ -443,10 +394,6 @@ Symbols:
 - _$sSo15UIBarButtonItemCSgMR
 - _$sSo15UIBarButtonItemCSgMd
 - _get_witness_table 7SwiftUI16ScrollViewReaderVyAA15ModifiedContentVyAA012SubscriptionD0Vy7Combine12AnyPublisherVyyts5NeverOGAGyAmA0D0PAAE29navigationBarTitleDisplayModeyQrAA010NavigationN4ItemV0opQ0OFQOyAoAE0mO0yQrqd__SyRd__lFQOyAoAE06scrollG10BackgroundyQrAA10VisibilityOFQOyAEyAoAE9listStyleyQrqd__AA04ListX0Rd__lFQOyAA0Y0VyAlA7SectionVyAA05EmptyD0VAA7ForEachVySaySi6offset_5CAFUI06PickerS0V7elementtG10Foundation4UUIDVAoAE0W12RowSeparator_5edgesQrAX_AA12VerticalEdgeO3SetVtFQOyAEyAA012_ConditionalG0VyAEyA23_yAEyA8_014CAFUIPickerRowD0VAA11_ClipEffectVyAA22UnevenRoundedRectangleVGGA25_GA30_GA32_GAA21_TraitWritingModifierVyAA0Y17RowInsetsTraitKeyVGG_Qo_GAA4TextVSgGG_AA05PlainyX0VQo_AA30_EnvironmentKeyWritingModifierVy12CoreGraphics7CGFloatVGG_Qo__SSQo__Qo_GGAA25_AppearanceActionModifierVGGAaNHPyHC
-- _objc_msgSend$setShadowColor:
-- _objc_msgSend$setShadowOffset:
-- _objc_msgSend$setShadowOpacity:
-- _objc_msgSend$setShadowRadius:
 - _symbolic _____ySaySi6offset______7elementtG__________y_____y_____yAGyAHyAGy__________y_____GGAIGALGANG_____y_____GG_Qo_G 7SwiftUI7ForEachV 5CAFUI10PickerItemV 10Foundation4UUIDV AA4ViewPAAE16listRowSeparator_5edgesQrAA10VisibilityO_AA12VerticalEdgeO3SetVtFQO AA15ModifiedContentV AA012_ConditionalT0V AD011CAFUIPickerlJ0V AA11_ClipEffectV AA22UnevenRoundedRectangleV AA21_TraitWritingModifierV AA04ListL14InsetsTraitKeyV
 - _symbolic _____y__________ySaySi6offset______7elementtG__________y_____y_____yAIyAJyAIy__________y_____GGAKGANGAPG_____y_____GG_Qo_G_____SgG 7SwiftUI7SectionV AA9EmptyViewV AA7ForEachV 5CAFUI10PickerItemV 10Foundation4UUIDV AA0E0PAAE16listRowSeparator_5edgesQrAA10VisibilityO_AA12VerticalEdgeO3SetVtFQO AA15ModifiedContentV AA012_ConditionalV0V AH011CAFUIPickernE0V AA11_ClipEffectV AA22UnevenRoundedRectangleV AA21_TraitWritingModifierV AA04ListN14InsetsTraitKeyV AA4TextV
 - _symbolic _____y__________y__________ySaySi6offset______7elementtG__________y_____y_____yAKyALyAKy__________y_____GGAMGAPGARG_____y_____GG_Qo_G_____SgGG 7SwiftUI4ListV s5NeverO AA7SectionV AA9EmptyViewV AA7ForEachV 5CAFUI10PickerItemV 10Foundation4UUIDV AA0G0PAAE16listRowSeparator_5edgesQrAA10VisibilityO_AA12VerticalEdgeO3SetVtFQO AA15ModifiedContentV AA012_ConditionalX0V AL011CAFUIPickerpG0V AA11_ClipEffectV AA22UnevenRoundedRectangleV AA21_TraitWritingModifierV AA0cP14InsetsTraitKeyV AA4TextV

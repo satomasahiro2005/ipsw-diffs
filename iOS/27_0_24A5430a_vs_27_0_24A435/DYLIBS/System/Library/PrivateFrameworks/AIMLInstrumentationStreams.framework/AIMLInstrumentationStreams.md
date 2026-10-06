@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AIMLInstrumentationStreams.framework/AIMLInstrumentationStreams`
 
-```diff
+### Section Size Changes
 
- 3600.7.1.0.0
--  __TEXT.__text: 0x2b77d4
-+  __TEXT.__text: 0x2b78e0
-   __TEXT.__objc_methlist: 0x9c8
-   __TEXT.__const: 0x37a28
-   __TEXT.__swift5_typeref: 0x7e4e
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2b77d4` | `0x2b78e0` | **`+0x10c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_200bca1f0 -> sub_2012711f0 : 2320 -> 2328
 ~ sub_200bd7e78 -> sub_20127ee80 : 4876 -> 4856

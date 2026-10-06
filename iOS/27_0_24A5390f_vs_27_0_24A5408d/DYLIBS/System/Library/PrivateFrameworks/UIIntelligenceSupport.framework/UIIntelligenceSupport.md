@@ -2,84 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/UIIntelligenceSupport.framework/UIIntelligenceSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1111b4` | `0x1164c0` | **`+0x530c`** |
+| `__DATA.__bss` | `0x1a970` | `0x1bdf0` | **`+0x1480`** |
+| `__TEXT.__const` | `0x185c6` | `0x19056` | **`+0xa90`** |
+| `__AUTH_CONST.__const` | `0xb578` | `0xbb50` | **`+0x5d8`** |
+| `__TEXT.__eh_frame` | `0x4b60` | `0x4f68` | **`+0x408`** |
+| `__TEXT.__unwind_info` | `0x48c0` | `0x4b48` | **`+0x288`** |
+| `__TEXT.__oslogstring` | `0xef3` | `0x1133` | **`+0x240`** |
+| `__TEXT.__swift5_fieldmd` | `0x45e0` | `0x47a0` | **`+0x1c0`** |
+| `__TEXT.__swift5_typeref` | `0x495e` | `0x4aee` | **`+0x190`** |
+| `__DATA.__data` | `0x26c0` | `0x2840` | **`+0x180`** |
+| `__TEXT.__constg_swiftt` | `0x3740` | `0x3898` | **`+0x158`** |
+| `__TEXT.__cstring` | `0x395f` | `0x3a1f` | **`+0xc0`** |
+| `__TEXT.__swift5_proto` | `0x1528` | `0x15cc` | **`+0xa4`** |
+| `__TEXT.__swift5_reflstr` | `0x2396` | `0x242b` | **`+0x95`** |
+| `__TEXT.__swift5_capture` | `0x288` | `0x2b0` | **`+0x28`** |
+| `__TEXT.__swift5_types` | `0x610` | `0x638` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x8b0` | `0x8c0` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x5c` | `0x6c` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x50` | `0x60` | **`+0x10`** |
+| `__TEXT.__swift_as_ret` | `0x38` | `0x40` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -9127.0.78.0.0
--  __TEXT.__text: 0x1111b4
 +9127.0.84.0.0
-+  __TEXT.__text: 0x1164c0
-   __TEXT.__objc_methlist: 0x1bc
--  __TEXT.__const: 0x185c6
--  __TEXT.__swift5_typeref: 0x495e
--  __TEXT.__swift5_reflstr: 0x2396
-+  __TEXT.__const: 0x19056
-+  __TEXT.__swift5_typeref: 0x4aee
-+  __TEXT.__swift5_reflstr: 0x242b
-   __TEXT.__swift5_assocty: 0x588
--  __TEXT.__constg_swiftt: 0x3740
--  __TEXT.__swift5_fieldmd: 0x45e0
-+  __TEXT.__constg_swiftt: 0x3898
-+  __TEXT.__swift5_fieldmd: 0x47a0
-   __TEXT.__swift5_builtin: 0x118
--  __TEXT.__swift5_proto: 0x1528
--  __TEXT.__swift5_types: 0x610
--  __TEXT.__cstring: 0x395f
--  __TEXT.__swift5_capture: 0x288
--  __TEXT.__swift_as_entry: 0x50
--  __TEXT.__swift_as_ret: 0x38
--  __TEXT.__swift_as_cont: 0x5c
--  __TEXT.__oslogstring: 0xef3
-+  __TEXT.__swift5_proto: 0x15cc
-+  __TEXT.__swift5_types: 0x638
-+  __TEXT.__cstring: 0x3a1f
-+  __TEXT.__swift5_capture: 0x2b0
-+  __TEXT.__swift_as_entry: 0x60
-+  __TEXT.__swift_as_ret: 0x40
-+  __TEXT.__swift_as_cont: 0x6c
-+  __TEXT.__oslogstring: 0x1133
-   __TEXT.__swift5_protos: 0x2c
-   __TEXT.__swift5_mpenum: 0x15c
--  __TEXT.__unwind_info: 0x48c0
--  __TEXT.__eh_frame: 0x4b60
-+  __TEXT.__unwind_info: 0x4b48
-+  __TEXT.__eh_frame: 0x4f68
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x8b0
-+  __DATA_CONST.__const: 0x8c0
-   __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x1c0
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xb578
-+  __AUTH_CONST.__const: 0xbb50
-   __AUTH_CONST.__objc_const: 0xdb8
-   __AUTH_CONST.__auth_got: 0x1240
-   __AUTH.__objc_data: 0x48
-   __AUTH.__data: 0x5e8
--  __DATA.__data: 0x26c0
--  __DATA.__bss: 0x1a970
-+  __DATA.__data: 0x2840
-+  __DATA.__bss: 0x1bdf0
-   __DATA_DIRTY.__objc_data: 0x1b8
-   __DATA_DIRTY.__data: 0x2d90
-   __DATA_DIRTY.__bss: 0xf580
 
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   - /usr/lib/swift/libswiftsys_time.dylib
 -  Functions: 6988
--  Symbols:   2367
+-  Symbols:   2335
 -  CStrings:  428
 +  Functions: 7151
-+  Symbols:   2414
++  Symbols:   2382
 +  CStrings:  440
- 
 Symbols:
 + _associated conformance 21UIIntelligenceSupport15XPCAgentMessageO20AvailableExportTypesV10CodingKeys33_E08D440F40FCBB4D34092AACB2EB5311LLOSHAASQ
 + _associated conformance 21UIIntelligenceSupport15XPCAgentMessageO20AvailableExportTypesV10CodingKeys33_E08D440F40FCBB4D34092AACB2EB5311LLOs0H3KeyAAs23CustomStringConvertible

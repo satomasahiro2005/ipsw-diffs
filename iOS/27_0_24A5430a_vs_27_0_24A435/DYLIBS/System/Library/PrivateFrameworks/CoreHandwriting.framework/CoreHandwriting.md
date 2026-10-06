@@ -2,23 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/CoreHandwriting.framework/CoreHandwriting`
 
-```diff
+### Section Size Changes
 
- 587.2.100.0.0
--  __TEXT.__text: 0x350d08
-+  __TEXT.__text: 0x3511e0
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__objc_methlist: 0xdf2c
-   __TEXT.__const: 0xd890
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x350d08` | `0x3511e0` | **`+0x4d8`** |
+| `__TEXT.__gcc_except_tab` | `0x51740` | `0x51744` | **`+0x4`** |
 
-   __TEXT.__swift5_types: 0x14
-   __TEXT.__cstring: 0x8941
-   __TEXT.__oslogstring: 0x1735a
--  __TEXT.__gcc_except_tab: 0x51740
-+  __TEXT.__gcc_except_tab: 0x51744
-   __TEXT.__ustring: 0x2786
-   __TEXT.__unwind_info: 0xbbb0
-   __TEXT.__objc_stubs: 0x0
+### Other Changes
+
+```text
 Functions:
 ~ sub_1c4421c84 -> sub_1c491ec84 : 2392 -> 2400
 ~ sub_1c4422620 -> sub_1c491f628 : 368 -> 372

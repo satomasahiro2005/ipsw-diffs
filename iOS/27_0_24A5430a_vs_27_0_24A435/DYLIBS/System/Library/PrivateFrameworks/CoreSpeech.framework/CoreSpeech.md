@@ -2,75 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/CoreSpeech.framework/CoreSpeech`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x149fb4` | `0x14d1ec` | **`+0x3238`** |
+| `__AUTH_CONST.__objc_const` | `0x20cb8` | `0x21458` | **`+0x7a0`** |
+| `__TEXT.__oslogstring` | `0x1fe04` | `0x20308` | **`+0x504`** |
+| `__TEXT.__cstring` | `0x289f4` | `0x28ec2` | **`+0x4ce`** |
+| `__TEXT.__objc_methlist` | `0x14cac` | `0x1508c` | **`+0x3e0`** |
+| `__AUTH.__objc_data` | `0x3b10` | `0x3ca0` | **`+0x190`** |
+| `__AUTH_CONST.__const` | `0x1e40` | `0x1f60` | **`+0x120`** |
+| `__DATA_CONST.__objc_selrefs` | `0xada8` | `0xaea8` | **`+0x100`** |
+| `__TEXT.__gcc_except_tab` | `0x3170` | `0x3230` | **`+0xc0`** |
+| `__TEXT.__unwind_info` | `0x4f70` | `0x5010` | **`+0xa0`** |
+| `__DATA.__objc_ivar` | `0x1944` | `0x1998` | **`+0x54`** |
+| `__AUTH_CONST.__cfstring` | `0x9680` | `0x96c0` | **`+0x40`** |
+| `__DATA_CONST.__objc_classlist` | `0x840` | `0x868` | **`+0x28`** |
+| `__DATA_CONST.__objc_superrefs` | `0x678` | `0x6a0` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0x1b28` | `0x1b40` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
- 3600.70.47.11.1
--  __TEXT.__text: 0x149fb4
-+  __TEXT.__text: 0x14d1ec
-   __TEXT.__lazy_helpers: 0x54
--  __TEXT.__objc_methlist: 0x14cac
-+  __TEXT.__objc_methlist: 0x1508c
-   __TEXT.__const: 0x42c
-   __TEXT.__dlopen_cstrs: 0x1e0
--  __TEXT.__gcc_except_tab: 0x3170
--  __TEXT.__cstring: 0x289f4
--  __TEXT.__oslogstring: 0x1fe04
--  __TEXT.__unwind_info: 0x4f70
-+  __TEXT.__gcc_except_tab: 0x3230
-+  __TEXT.__cstring: 0x28ec2
-+  __TEXT.__oslogstring: 0x20308
-+  __TEXT.__unwind_info: 0x5010
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x4258
--  __DATA_CONST.__objc_classlist: 0x840
-+  __DATA_CONST.__objc_classlist: 0x868
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x4e8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0xada8
-+  __DATA_CONST.__objc_selrefs: 0xaea8
-   __DATA_CONST.__objc_protorefs: 0xa0
--  __DATA_CONST.__objc_superrefs: 0x678
-+  __DATA_CONST.__objc_superrefs: 0x6a0
-   __DATA_CONST.__objc_arraydata: 0x3e8
--  __DATA_CONST.__got: 0x1b28
--  __AUTH_CONST.__const: 0x1e40
--  __AUTH_CONST.__cfstring: 0x9680
--  __AUTH_CONST.__objc_const: 0x20cb8
-+  __DATA_CONST.__got: 0x1b40
-+  __AUTH_CONST.__const: 0x1f60
-+  __AUTH_CONST.__cfstring: 0x96c0
-+  __AUTH_CONST.__objc_const: 0x21458
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__lazy_load_got: 0x8
-   __AUTH_CONST.__objc_intobj: 0x9a8
-
-   __AUTH_CONST.__objc_floatobj: 0x4f0
-   __AUTH_CONST.__objc_arrayobj: 0x108
-   __AUTH_CONST.__auth_got: 0xda8
--  __AUTH.__objc_data: 0x3b10
--  __DATA.__objc_ivar: 0x1944
-+  __AUTH.__objc_data: 0x3ca0
-+  __DATA.__objc_ivar: 0x1998
-   __DATA.__data: 0x3a74
-   __DATA.__common: 0x10
-   __DATA_DIRTY.__objc_data: 0x1770
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 8091
--  Symbols:   17809
+-  Symbols:   14098
 -  CStrings:  5580
 +  Functions: 8197
-+  Symbols:   17978
++  Symbols:   14246
 +  CStrings:  5613
- 
 Symbols:
 + -[CSAlwaysOnProcessorEnabledWatchExclave .cxx_destruct]
 + -[CSAlwaysOnProcessorEnabledWatchExclave _addConditons]
@@ -434,27 +395,6 @@ Symbols:
 + ___81-[CSVoiceTriggerAPModeSuspendPolicyWatch _addVoiceTriggerAPModeSuspendConditions]_block_invoke_2
 + ___86-[CSVoiceTriggerAPModeSuspendPolicyWatch _handleClientRecordStateDidChange:eventUUID:]_block_invoke
 + ___96-[CSVoiceTriggerActivationPolicyExclaveWatch CSVoiceTriggerXPCServiceProxy:bypassPhraseSpotter:]_block_invoke
-+ _objc_msgSend$_addConditons
-+ _objc_msgSend$_isExternalPhraseSpotterRunning:
-+ _objc_msgSend$_isHearstRoutedWithNoPhoneCall
-+ _objc_msgSend$_isInPhoneCallStateWithHeadset
-+ _objc_msgSend$_subscribeToMonitors
-+ _objc_msgSend$attSiriStateMonitor
-+ _objc_msgSend$audiostreamActivityMonitor
-+ _objc_msgSend$builtinSpeakerStateMonitor
-+ _objc_msgSend$bypassPhraseSpotter
-+ _objc_msgSend$commandControlStreamEventMonitor
-+ _objc_msgSend$forceAPModeNonExclaveWatch
-+ _objc_msgSend$isLowPowerModeEnabled
-+ _objc_msgSend$isSiriClientConsideredAsRecord
-+ _objc_msgSend$phraseSpotterEnabledMonitor
-+ _objc_msgSend$playbackVolumeStatusMonitor
-+ _objc_msgSend$setIsSiriClientConsideredAsRecord:
-+ _objc_msgSend$siriAssertionMonitor
-+ _objc_msgSend$siriClientBehaviorMonitor
-+ _objc_msgSend$sleepModeMonitor
-+ _objc_msgSend$wristState
-+ _objc_msgSend$wristStateMonitor
 - GCC_except_table1558
 - GCC_except_table1582
 - GCC_except_table1586

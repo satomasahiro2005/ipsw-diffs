@@ -2,94 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/AppStoreDaemon.framework/AppStoreDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x83b58` | `0x8a818` | **`+0x6cc0`** |
+| `__DATA.__bss` | `0x310` | `0x1f90` | **`+0x1c80`** |
+| `__TEXT.__const` | `0x3d8` | `0x12a8` | **`+0xed0`** |
+| `__AUTH_CONST.__const` | `0x8e0` | `0xf68` | **`+0x688`** |
+| `__TEXT.__swift5_typeref` | `0x61` | `0x338` | **`+0x2d7`** |
+| `__DATA.__data` | `0x18f8` | `0x1bc8` | **`+0x2d0`** |
+| `__TEXT.__unwind_info` | `0x27c8` | `0x2a20` | **`+0x258`** |
+| `__TEXT.__swift5_fieldmd` | `0x5c` | `0x278` | **`+0x21c`** |
+| `__AUTH_CONST.__auth_got` | `0x610` | `0x7e8` | **`+0x1d8`** |
+| `__AUTH_CONST.__cfstring` | `0x6e00` | `0x6ca0` | **`-0x160`** |
+| `__TEXT.__constg_swiftt` | `0x7c` | `0x1d4` | **`+0x158`** |
+| `__TEXT.__swift5_proto` | `0x18` | `0xfc` | **`+0xe4`** |
+| `__TEXT.__objc_methlist` | `0xb3cc` | `0xb494` | **`+0xc8`** |
+| `__TEXT.__eh_frame` | `—` | `0xa8` | **`+0xa8`** |
+| `__TEXT.__cstring` | `0x5960` | `0x58bf` | **`-0xa1`** |
+| `__AUTH_CONST.__objc_const` | `0x164d8` | `0x16560` | **`+0x88`** |
+| `__AUTH.__objc_data` | `0x1680` | `0x16f0` | **`+0x70`** |
+| `__TEXT.__swift5_reflstr` | `0x9b` | `0x10b` | **`+0x70`** |
+| `__DATA_CONST.__got` | `0x630` | `0x698` | **`+0x68`** |
+| `__DATA_CONST.__objc_selrefs` | `0x45d0` | `0x4638` | **`+0x68`** |
+| `__TEXT.__oslogstring` | `0x4d86` | `0x4d41` | **`-0x45`** |
+| `__TEXT.__swift5_types` | `0xc` | `0x3c` | **`+0x30`** |
+| `__AUTH.__data` | `—` | `0x28` | **`+0x28`** |
+| `__TEXT.__swift5_builtin` | `0x28` | `0x3c` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x600` | `0x608` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x8` | `0x10` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0xdfc` | `0xe00` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -13.0.43.0.0
--  __TEXT.__text: 0x83b58
--  __TEXT.__objc_methlist: 0xb3cc
--  __TEXT.__const: 0x3d8
 +13.0.52.2.1
-+  __TEXT.__text: 0x8a818
-+  __TEXT.__objc_methlist: 0xb494
-+  __TEXT.__const: 0x12a8
-   __TEXT.__dlopen_cstrs: 0x5b
--  __TEXT.__cstring: 0x5960
--  __TEXT.__constg_swiftt: 0x7c
--  __TEXT.__swift5_typeref: 0x61
--  __TEXT.__swift5_builtin: 0x28
--  __TEXT.__swift5_reflstr: 0x9b
-+  __TEXT.__constg_swiftt: 0x1d4
-+  __TEXT.__swift5_typeref: 0x338
-+  __TEXT.__swift5_builtin: 0x3c
-+  __TEXT.__swift5_reflstr: 0x10b
-   __TEXT.__swift5_assocty: 0x18
--  __TEXT.__swift5_proto: 0x18
--  __TEXT.__swift5_types: 0xc
--  __TEXT.__swift5_fieldmd: 0x5c
--  __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__oslogstring: 0x4d86
-+  __TEXT.__cstring: 0x58bf
-+  __TEXT.__swift5_mpenum: 0x10
-+  __TEXT.__swift5_fieldmd: 0x278
-+  __TEXT.__swift5_proto: 0xfc
-+  __TEXT.__swift5_types: 0x3c
-+  __TEXT.__oslogstring: 0x4d41
-   __TEXT.__gcc_except_tab: 0xb60
--  __TEXT.__unwind_info: 0x27c8
-+  __TEXT.__unwind_info: 0x2a20
-+  __TEXT.__eh_frame: 0xa8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x26d8
--  __DATA_CONST.__objc_classlist: 0x600
-+  __DATA_CONST.__objc_classlist: 0x608
-   __DATA_CONST.__objc_catlist: 0x50
-   __DATA_CONST.__objc_protolist: 0x210
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x45d0
-+  __DATA_CONST.__objc_selrefs: 0x4638
-   __DATA_CONST.__objc_protorefs: 0x158
-   __DATA_CONST.__objc_superrefs: 0x4a8
-   __DATA_CONST.__objc_arraydata: 0xc8
--  __DATA_CONST.__got: 0x630
--  __AUTH_CONST.__const: 0x8e0
--  __AUTH_CONST.__cfstring: 0x6e00
--  __AUTH_CONST.__objc_const: 0x164d8
-+  __DATA_CONST.__got: 0x698
-+  __AUTH_CONST.__const: 0xf68
-+  __AUTH_CONST.__cfstring: 0x6ca0
-+  __AUTH_CONST.__objc_const: 0x16560
-   __AUTH_CONST.__objc_intobj: 0xc0
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__auth_got: 0x610
--  __AUTH.__objc_data: 0x1680
--  __DATA.__objc_ivar: 0xdfc
--  __DATA.__data: 0x18f8
--  __DATA.__bss: 0x310
-+  __AUTH_CONST.__auth_got: 0x7e8
-+  __AUTH.__objc_data: 0x16f0
-+  __AUTH.__data: 0x28
-+  __DATA.__objc_ivar: 0xe00
-+  __DATA.__data: 0x1bc8
-+  __DATA.__bss: 0x1f90
-   __DATA_DIRTY.__objc_ivar: 0x18c
-   __DATA_DIRTY.__objc_data: 0x2580
-   __DATA_DIRTY.__data: 0x50
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 4487
--  Symbols:   8920
+-  Symbols:   7813
 -  CStrings:  1426
 +  Functions: 4702
-+  Symbols:   9045
++  Symbols:   7922
 +  CStrings:  1421
- 
 Symbols:
 + +[ASDAppQuery queryForAllAppClips]
 + +[ASDAppQuery queryForAllApps]
@@ -194,32 +151,6 @@ Symbols:
 + _malloc_size
 + _memcpy
 + _memmove
-+ _objc_msgSend$beginFactoryAppInstallsWithReplyHandler:
-+ _objc_msgSend$conditionsData:matchesApp:
-+ _objc_msgSend$conditionsDataByCombining:
-+ _objc_msgSend$conditionsDataForAppClip:
-+ _objc_msgSend$conditionsDataForBetaApp:
-+ _objc_msgSend$conditionsDataForBundleIDs:
-+ _objc_msgSend$conditionsDataForBundlePath:
-+ _objc_msgSend$conditionsDataForOcelotApp:
-+ _objc_msgSend$conditionsDataForSoftwarePlatform:
-+ _objc_msgSend$conditionsDataForStoreApp:
-+ _objc_msgSend$conditionsDataForStoreItemIDs:
-+ _objc_msgSend$conditionsDataForSystemApp:
-+ _objc_msgSend$conditionsDataMatchingAllApps
-+ _objc_msgSend$conditionsDataMatchingNoApps
-+ _objc_msgSend$descriptionForConditionsData:
-+ _objc_msgSend$executeQueryWithConditionsData:onDeviceWithPairingID:remoteDeviceID:withResultHandler:
-+ _objc_msgSend$executeQueryWithConditionsData:onPairedDevice:withReplyHandler:
-+ _objc_msgSend$executeQueryWithConditionsData:onRemoteDevice:withReplyHandler:
-+ _objc_msgSend$executeQueryWithConditionsData:withReplyHandler:
-+ _objc_msgSend$initWithBool:
-+ _objc_msgSend$initWithConditionsData:queryExecutor:serviceBroker:notificationCenter:
-+ _objc_msgSend$isAppClip
-+ _objc_msgSend$isBetaApp
-+ _objc_msgSend$isOcelot
-+ _objc_msgSend$isSystemApp
-+ _objc_msgSend$shared
 + _swift_allocError
 + _swift_allocObject
 + _swift_arrayInitWithCopy
@@ -332,16 +263,6 @@ Symbols:
 - ___64+[ASDInstallApps beginSINFLessAppInstallsWithCompletionHandler:]_block_invoke_3
 - ___79-[ASDAppQuery _executeQueryWithPredicate:onDeviceWithPairingID:withCompletion:]_block_invoke
 - ___ErrorWithUnderlyingErrorAndPredicate
-- _objc_msgSend$beginSINFLessAppInstallsWithReplyHandler:
-- _objc_msgSend$executeQueryWithPredicate:onDeviceWithPairingID:remoteDeviceID:withResultHandler:
-- _objc_msgSend$executeQueryWithPredicate:onPairedDevice:withReplyHandler:
-- _objc_msgSend$executeQueryWithPredicate:onRemoteDevice:withReplyHandler:
-- _objc_msgSend$executeQueryWithPredicate:withReplyHandler:
-- _objc_msgSend$initWithPredicate:
-- _objc_msgSend$initWithPredicate:onDeviceWithPairingID:
-- _objc_msgSend$initWithPredicate:queryExecutor:serviceBroker:notificationCenter:
-- _objc_msgSend$notPredicateWithSubpredicate:
-- _objc_msgSend$queryWithPredicate:onDeviceWithPairingID:
 CStrings:
 + " isDSIDlessThatUpdates: 1"
 + "<invalid conditions>"

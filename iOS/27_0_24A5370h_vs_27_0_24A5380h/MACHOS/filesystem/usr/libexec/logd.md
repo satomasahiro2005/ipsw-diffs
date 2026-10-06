@@ -2,7 +2,14 @@
 
 > `/usr/libexec/logd`
 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__cstring : content changed
-~ __DATA.__bss : content changed
+### Same-size Content Changes
+
+- `__TEXT.__const`
+
+### Other Changes
+
+```diff
+
+-1958.0.0.0.1
++1965.0.0.0.0
+```

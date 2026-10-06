@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/WidgetRenderer.framework/WidgetRenderer`
 
-```diff
+### Section Size Changes
 
- 749.0.2.0.0
--  __TEXT.__text: 0x18df5c
-+  __TEXT.__text: 0x18df58
-   __TEXT.__objc_methlist: 0x186c
-   __TEXT.__const: 0xcabc
-   __TEXT.__cstring: 0x2ac4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x18df5c` | `0x18df58` | **`-0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_203bc00d8 -> sub_2042420d8 : 10196 -> 10132
 ~ sub_203be1324 -> sub_2042632e4 : 904 -> 916

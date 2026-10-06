@@ -2,16 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/GRPCCoreInternal.framework/GRPCCoreInternal`
 
-```diff
+### Section Size Changes
 
- 2.1.2.201.0
--  __TEXT.__text: 0x78bd4
-+  __TEXT.__text: 0x78be4
-   __TEXT.__swift5_typeref: 0x1af6
-   __TEXT.__const: 0x6ed0
-   __TEXT.__swift5_capture: 0x8ac
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x800a0` | `0x800b0` | **`+0x10`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_264469bdc -> sub_267d64bdc : 520 -> 524
-~ sub_2644828e4 -> sub_267d7d8e8 : 116 -> 120
-~ sub_26449ea90 -> sub_267d99a98 : 240 -> 248
+~ sub_26717a3a4 -> sub_2830413a4 : 532 -> 536
+~ sub_267194d70 -> sub_28305bd74 : 128 -> 132
+~ sub_2671b28f8 -> sub_283079900 : 252 -> 260
 ```

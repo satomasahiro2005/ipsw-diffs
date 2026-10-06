@@ -2,14 +2,8 @@
 
 > `com.apple.driver.IOPHaptics`
 
-```diff
+### Section Size Changes
 
-   __TEXT.__const: 0x117
-   __TEXT.__cstring: 0x4b3
-   __TEXT.__os_log: 0x1f9
--  __TEXT_EXEC.__text: 0x25e0
-+  __TEXT_EXEC.__text: 0x26a8
-   __TEXT_EXEC.__auth_stubs: 0x170
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x60
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x25e0` | `0x26a8` | **`+0xc8`** |

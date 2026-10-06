@@ -2,26 +2,19 @@
 
 > `com.apple.driver.AppleS5L8940XI2C`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x2f90` | `0x2f9c` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__cstring: 0x832
-   __TEXT.__const: 0x18
-   __TEXT.__os_log: 0x96
--  __TEXT_EXEC.__text: 0x2f90
-+  __TEXT_EXEC.__text: 0x2f9c
-   __TEXT_EXEC.__auth_stubs: 0x220
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x38
-Sections:
-~ __DATA.__data : content changed
-~ __DATA_CONST.__mod_init_func : content changed
-~ __DATA_CONST.__mod_term_func : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__kalloc_type : content changed
-~ __DATA_CONST.__auth_got : content changed
-~ __DATA_CONST.__got : content changed
+-222.0.0.0.0
++224.0.0.0.0
 Functions:
-~ sub_fffffe000947d06c -> sub_fffffe000947aecc : 220 -> 228
+~ sub_fffffff00947c36c -> sub_fffffff00947a8ec : 220 -> 228
 ~ __ZN26AppleS5L8940XI2CController21_applySpdsTunableDataEv : 240 -> 244
-
 ```

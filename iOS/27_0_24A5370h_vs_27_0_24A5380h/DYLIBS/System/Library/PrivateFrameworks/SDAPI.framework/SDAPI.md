@@ -2,23 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/SDAPI.framework/SDAPI`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x309810
-+  __TEXT.__text: 0x308534
-   __TEXT.__const: 0x2e1eb
-   __TEXT.__cstring: 0x17afd
-   __TEXT.__gcc_except_tab: 0x22624
-Sections:
-~ __TEXT.__cstring : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x309810` | `0x308534` | **`-0x12dc`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
+```diff
 Functions:
 ~ __ZNK12TStringParam15getGrammarValueEmR7TBufferIwE : 628 -> 636
 ~ __ZN13TParamManager9initParamEPK11TFileObjectN6TParam5TTypeEbbRNSt3__13setIPKw16TWideCharCompareNS5_9allocatorIS8_EEEE : 19704 -> 19712
@@ -217,5 +213,4 @@ CStrings:
 + "Jun 23 2026"
 - "17:15:29"
 - "Jun  9 2026"
-
 ```

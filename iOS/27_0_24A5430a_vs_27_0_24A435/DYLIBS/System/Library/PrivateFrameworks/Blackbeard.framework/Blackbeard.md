@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/Blackbeard.framework/Blackbeard`
 
-```diff
+### Section Size Changes
 
- 2027.0.146.1.4
--  __TEXT.__text: 0x7c057c
-+  __TEXT.__text: 0x7c05ec
-   __TEXT.__objc_methlist: 0xde4
-   __TEXT.__const: 0x276f4
-   __TEXT.__cstring: 0x91cb
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7c057c` | `0x7c05ec` | **`+0x70`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_210bb2bac -> sub_211386bac : 2712 -> 2732
 ~ sub_210c4b654 -> sub_21141f668 : 628 -> 624

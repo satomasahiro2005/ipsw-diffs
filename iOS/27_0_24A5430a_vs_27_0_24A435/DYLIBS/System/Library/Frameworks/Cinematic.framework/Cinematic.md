@@ -2,111 +2,57 @@
 
 > `/System/Library/Frameworks/Cinematic.framework/Cinematic`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x142f4` | `0x20dac` | **`+0xcab8`** |
+| `__TEXT.__oslogstring` | `0x98f` | `0x1390` | **`+0xa01`** |
+| `__AUTH_CONST.__objc_const` | `0x1ee0` | `0x26f0` | **`+0x810`** |
+| `__TEXT.__gcc_except_tab` | `0x2c0` | `0x9a0` | **`+0x6e0`** |
+| `__TEXT.__eh_frame` | `0x448` | `0x910` | **`+0x4c8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb78` | `0xfd0` | **`+0x458`** |
+| `__DATA_CONST.__const` | `0x6e0` | `0xab0` | **`+0x3d0`** |
+| `__TEXT.__unwind_info` | `0x848` | `0xb98` | **`+0x350`** |
+| `__TEXT.__objc_methlist` | `0xeb4` | `0x1194` | **`+0x2e0`** |
+| `__TEXT.__cstring` | `0x369` | `0x5c1` | **`+0x258`** |
+| `__AUTH_CONST.__auth_got` | `0x4e0` | `0x6a8` | **`+0x1c8`** |
+| `__DATA_CONST.__got` | `0x2d0` | `0x470` | **`+0x1a0`** |
+| `__AUTH.__objc_data` | `0x5f0` | `0x780` | **`+0x190`** |
+| `__AUTH_CONST.__const` | `0x850` | `0x988` | **`+0x138`** |
+| `__TEXT.__const` | `0x9d8` | `0xb08` | **`+0x130`** |
+| `__AUTH.__data` | `0x840` | `0x918` | **`+0xd8`** |
+| `__TEXT.__constg_swiftt` | `0x5b0` | `0x644` | **`+0x94`** |
+| `__TEXT.__swift5_typeref` | `0x332` | `0x3c2` | **`+0x90`** |
+| `__DATA.__objc_ivar` | `0x98` | `0x10c` | **`+0x74`** |
+| `__AUTH_CONST.__cfstring` | `0x180` | `0x1e0` | **`+0x60`** |
+| `__AUTH_CONST.__objc_intobj` | `0xc0` | `0x120` | **`+0x60`** |
+| `__TEXT.__swift_as_cont` | `0x48` | `0x80` | **`+0x38`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x48` | `0x78` | **`+0x30`** |
+| `__DATA.__data` | `0x2c8` | `0x2f8` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0xe0` | `0x110` | **`+0x30`** |
+| `__TEXT.__swift5_capture` | `—` | `0x30` | **`+0x30`** |
+| `__DATA_CONST.__objc_superrefs` | `0x90` | `0xb0` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x338` | `0x354` | **`+0x1c`** |
+| `__TEXT.__swift_as_entry` | `0x2c` | `0x48` | **`+0x1c`** |
+| `__TEXT.__swift_as_ret` | `0x24` | `0x40` | **`+0x1c`** |
+| `__TEXT.__swift5_builtin` | `0xa0` | `0xb4` | **`+0x14`** |
+| `__DATA_CONST.__objc_arraydata` | `0x58` | `0x68` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x22d` | `0x23d` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x60` | `0x68` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 560.22.2.0.0
--  __TEXT.__text: 0x142f4
--  __TEXT.__objc_methlist: 0xeb4
--  __TEXT.__cstring: 0x369
--  __TEXT.__const: 0x9d8
--  __TEXT.__oslogstring: 0x98f
--  __TEXT.__gcc_except_tab: 0x2c0
--  __TEXT.__constg_swiftt: 0x5b0
--  __TEXT.__swift5_typeref: 0x332
--  __TEXT.__swift5_reflstr: 0x22d
--  __TEXT.__swift5_fieldmd: 0x338
--  __TEXT.__swift5_builtin: 0xa0
-+  __TEXT.__text: 0x20dac
-+  __TEXT.__objc_methlist: 0x1194
-+  __TEXT.__cstring: 0x5c1
-+  __TEXT.__const: 0xb08
-+  __TEXT.__oslogstring: 0x1390
-+  __TEXT.__gcc_except_tab: 0x9a0
-+  __TEXT.__constg_swiftt: 0x644
-+  __TEXT.__swift5_typeref: 0x3c2
-+  __TEXT.__swift5_reflstr: 0x23d
-+  __TEXT.__swift5_fieldmd: 0x354
-+  __TEXT.__swift5_builtin: 0xb4
-   __TEXT.__swift5_assocty: 0x60
-   __TEXT.__swift5_proto: 0x38
--  __TEXT.__swift5_types: 0x60
--  __TEXT.__swift_as_entry: 0x2c
--  __TEXT.__swift_as_ret: 0x24
--  __TEXT.__swift_as_cont: 0x48
-+  __TEXT.__swift5_types: 0x68
-+  __TEXT.__swift_as_entry: 0x48
-+  __TEXT.__swift_as_ret: 0x40
-+  __TEXT.__swift_as_cont: 0x80
-+  __TEXT.__swift5_capture: 0x30
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x848
--  __TEXT.__eh_frame: 0x448
-+  __TEXT.__unwind_info: 0xb98
-+  __TEXT.__eh_frame: 0x910
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x6e0
--  __DATA_CONST.__objc_classlist: 0xe0
-+  __DATA_CONST.__const: 0xab0
-+  __DATA_CONST.__objc_classlist: 0x110
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb78
-+  __DATA_CONST.__objc_selrefs: 0xfd0
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x90
--  __DATA_CONST.__objc_arraydata: 0x58
--  __DATA_CONST.__got: 0x2d0
--  __AUTH_CONST.__const: 0x850
--  __AUTH_CONST.__cfstring: 0x180
--  __AUTH_CONST.__objc_const: 0x1ee0
--  __AUTH_CONST.__objc_arrayobj: 0x48
-+  __DATA_CONST.__objc_superrefs: 0xb0
-+  __DATA_CONST.__objc_arraydata: 0x68
-+  __DATA_CONST.__got: 0x470
-+  __AUTH_CONST.__const: 0x988
-+  __AUTH_CONST.__cfstring: 0x1e0
-+  __AUTH_CONST.__objc_const: 0x26f0
-+  __AUTH_CONST.__objc_arrayobj: 0x78
-+  __AUTH_CONST.__objc_intobj: 0x120
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__objc_intobj: 0xc0
--  __AUTH_CONST.__auth_got: 0x4e0
--  __AUTH.__objc_data: 0x5f0
--  __AUTH.__data: 0x840
--  __DATA.__objc_ivar: 0x98
--  __DATA.__data: 0x2c8
-+  __AUTH_CONST.__auth_got: 0x6a8
-+  __AUTH.__objc_data: 0x780
-+  __AUTH.__data: 0x918
-+  __DATA.__objc_ivar: 0x10c
-+  __DATA.__data: 0x2f8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-   - /System/Library/Frameworks/CoreVideo.framework/CoreVideo
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 +  - /System/Library/Frameworks/VideoToolbox.framework/VideoToolbox
-   - /System/Library/PrivateFrameworks/CinematicUtil.framework/CinematicUtil
-   - /System/Library/PrivateFrameworks/Portrait.framework/Portrait
-   - /usr/lib/libMobileGestalt.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 755
--  Symbols:   1293
+-  Symbols:   978
 -  CStrings:  84
 +  Functions: 1020
-+  Symbols:   1696
++  Symbols:   1243
 +  CStrings:  161
- 
 Symbols:
 + +[CNAssetInfo _allRenderingConfigurationsForResourceVersions:]
 + +[CNAssetInfo _allResourceVersions]
@@ -353,145 +299,6 @@ Symbols:
 + _kVTProfileLevel_HEVC_Monochrome_AutoLevel
 + _objc_autoreleasePoolPop
 + _objc_autoreleasePoolPush
-+ _objc_msgSend$URLByAppendingPathComponent:
-+ _objc_msgSend$_allRenderingConfigurationsForResourceVersions:
-+ _objc_msgSend$_allResourceVersions
-+ _objc_msgSend$_downloadResourcesForMonocularDisparitySettings:timeout:completionHandler:
-+ _objc_msgSend$_getCNDisparityResourceStatusForAssetInfo:callback:
-+ _objc_msgSend$_loadWithAsset:changesDictionary:error:
-+ _objc_msgSend$_snapshot
-+ _objc_msgSend$addInput:
-+ _objc_msgSend$addMutableTrackWithMediaType:copySettingsFromTrack:options:
-+ _objc_msgSend$addObjectsFromArray:
-+ _objc_msgSend$addOutput:
-+ _objc_msgSend$addTrackAssociationToTrack:type:
-+ _objc_msgSend$appendPixelBuffer:withPresentationTime:
-+ _objc_msgSend$appendTimedMetadataGroup:
-+ _objc_msgSend$appendTimedRenderingMetadata:
-+ _objc_msgSend$appendTimedRenderingMetadata:cinematographyFrame:timeRange:
-+ _objc_msgSend$assetWithURL:
-+ _objc_msgSend$assetWriterInputPixelBufferAdaptorWithAssetWriterInput:sourcePixelBufferAttributes:
-+ _objc_msgSend$assetWriterInputWithMediaType:outputSettings:sourceFormatHint:
-+ _objc_msgSend$canAddInput:
-+ _objc_msgSend$cancel
-+ _objc_msgSend$checkCinematicCapabilityForAsset:completionHandler:
-+ _objc_msgSend$checkPreconditions
-+ _objc_msgSend$cinematicCapability
-+ _objc_msgSend$cinematicEverywhereAssetInfo
-+ _objc_msgSend$cinematographyFrame
-+ _objc_msgSend$copyNextSampleBuffer
-+ _objc_msgSend$createTemporaryMovURL
-+ _objc_msgSend$dataFromObject:options:error:
-+ _objc_msgSend$dataWithLength:
-+ _objc_msgSend$defaultManager
-+ _objc_msgSend$defaultResourceDownloadTimeout
-+ _objc_msgSend$destinationAssetURL
-+ _objc_msgSend$disparity
-+ _objc_msgSend$disparityForColorBuffer:timedRenderingMetadata:time:outputBuffer:
-+ _objc_msgSend$disparityPixelFormat
-+ _objc_msgSend$disparityPreview
-+ _objc_msgSend$disparitySize
-+ _objc_msgSend$downloadResourcesForVersions:timeout:completionHandler:
-+ _objc_msgSend$downloadResourcesWithTimeout:completionHandler:
-+ _objc_msgSend$endInputs
-+ _objc_msgSend$error
-+ _objc_msgSend$exportAsynchronouslyWithCompletionHandler:
-+ _objc_msgSend$fileExistsAtPath:
-+ _objc_msgSend$finishSynchronously
-+ _objc_msgSend$finishWritingWithCompletionHandler:
-+ _objc_msgSend$focusDistanceAtTime:disparityBuffer:
-+ _objc_msgSend$globallyUniqueString
-+ _objc_msgSend$initWithAsset:error:
-+ _objc_msgSend$initWithAsset:presetName:
-+ _objc_msgSend$initWithAssetWriterInput:
-+ _objc_msgSend$initWithDestinationAssetURL:
-+ _objc_msgSend$initWithDisparityProvider:assetInfo:
-+ _objc_msgSend$initWithInteger:
-+ _objc_msgSend$initWithItems:timeRange:
-+ _objc_msgSend$initWithLength:
-+ _objc_msgSend$initWithMediaType:outputSettings:
-+ _objc_msgSend$initWithMinorVersion:
-+ _objc_msgSend$initWithOutputURL:size:pixelFormat:transform:globalRenderingMetadata:globalCinematographyMetadata:colorFormatDescription:trackType:
-+ _objc_msgSend$initWithProgress:sourceAsset:configuration:
-+ _objc_msgSend$initWithQuality:globalMetadata:inputSize:temporalFilteringEnabled:
-+ _objc_msgSend$initWithScript:samplesAllDetections:
-+ _objc_msgSend$initWithSettings:downloadTimeout:initializationCallback:
-+ _objc_msgSend$initWithTrack:outputSettings:
-+ _objc_msgSend$initWithURL:fileType:error:
-+ _objc_msgSend$insertTimeRange:ofTrack:atTime:copySampleData:error:
-+ _objc_msgSend$isCancelled
-+ _objc_msgSend$isPreprocessed
-+ _objc_msgSend$isReadyForMoreMediaData
-+ _objc_msgSend$loadAssetInfoFromAsset:assetInfo:
-+ _objc_msgSend$loadGlobalRenderingMetadataFromAsset:globalCinematographyMetadata:
-+ _objc_msgSend$loadTracksWithMediaCharacteristic:completionHandler:
-+ _objc_msgSend$loadTracksWithMediaTypeIntoArray:mediaType:fromAsset:
-+ _objc_msgSend$loadWithAsset:changesDictionary:disparityProvider:completion:
-+ _objc_msgSend$loadWithAsset:changesDictionary:options:completion:
-+ _objc_msgSend$makeCombinedAssetWithMetadataMovURL:disparityMovURL:
-+ _objc_msgSend$markAsFinished
-+ _objc_msgSend$metadata
-+ _objc_msgSend$metadataItem
-+ _objc_msgSend$movieWithURL:options:error:
-+ _objc_msgSend$nextFrame
-+ _objc_msgSend$outputURL
-+ _objc_msgSend$path
-+ _objc_msgSend$pollPixelBuffersWithBlock:
-+ _objc_msgSend$preprocessAssetWithConfiguration:completionHandler:
-+ _objc_msgSend$preprocessAssetWithConfiguration:sourceAsset:completionHandler:
-+ _objc_msgSend$process
-+ _objc_msgSend$processInfo
-+ _objc_msgSend$processNextDisparityBuffer:
-+ _objc_msgSend$referenceSourceAssetTracks
-+ _objc_msgSend$removeItemAtURL:error:
-+ _objc_msgSend$renderingMetadata
-+ _objc_msgSend$requestMediaDataWhenReadyOnQueue:usingBlock:
-+ _objc_msgSend$resetState
-+ _objc_msgSend$resourceStatus
-+ _objc_msgSend$resourceStatusForSettings:
-+ _objc_msgSend$resourceStatusForVersions:
-+ _objc_msgSend$setAlwaysCopiesSampleData:
-+ _objc_msgSend$setCinematicCapability:
-+ _objc_msgSend$setCinematicEverywhereAssetInfo:
-+ _objc_msgSend$setCinematographyFrame:
-+ _objc_msgSend$setCompletedUnitCount:
-+ _objc_msgSend$setDisparityPrecompute:
-+ _objc_msgSend$setDisparityPreview:
-+ _objc_msgSend$setDuration:
-+ _objc_msgSend$setExpectsMediaDataInRealTime:
-+ _objc_msgSend$setKey:
-+ _objc_msgSend$setKeySpace:
-+ _objc_msgSend$setMetadata:
-+ _objc_msgSend$setMetadata:ofType:
-+ _objc_msgSend$setObject:forKeyedSubscript:
-+ _objc_msgSend$setOutputFileType:
-+ _objc_msgSend$setOutputURL:
-+ _objc_msgSend$setPreprocessed:
-+ _objc_msgSend$setReferenceSourceAssetTracks:
-+ _objc_msgSend$setRenderingMetadata:
-+ _objc_msgSend$setRenderingVersion:
-+ _objc_msgSend$setResourceStatus:
-+ _objc_msgSend$setSensorID:
-+ _objc_msgSend$setTime:
-+ _objc_msgSend$setTimeRange:
-+ _objc_msgSend$setTransform:
-+ _objc_msgSend$setValue:
-+ _objc_msgSend$setWithObjects:
-+ _objc_msgSend$sizeOfSerializedObjectWithOptions:
-+ _objc_msgSend$startReading
-+ _objc_msgSend$startSessionAtSourceTime:
-+ _objc_msgSend$startWriting
-+ _objc_msgSend$state
-+ _objc_msgSend$status
-+ _objc_msgSend$stringWithFormat:
-+ _objc_msgSend$temporaryDirectory
-+ _objc_msgSend$totalExpectedBytes
-+ _objc_msgSend$totalWrittenBytes
-+ _objc_msgSend$track
-+ _objc_msgSend$tracksWithMediaType:
-+ _objc_msgSend$updateWithSourceImage:frameAttributes:
-+ _objc_msgSend$writeMovieHeaderToURL:fileType:options:error:
-+ _objc_msgSend$writeToData:withOptions:
 + _objc_retainBlock
 + _objc_unsafeClaimAutoreleasedReturnValue
 + _os_unfair_lock_lock
@@ -522,7 +329,6 @@ Symbols:
 - _CMTimeMakeWithSeconds
 - ___block_descriptor_48_e8_32s40bs_e47_v24?0"PTGlobalRenderingMetadata"8"NSError"16ls32l8s40l8
 - ___block_descriptor_57_e8_32s40bs_e5_v8?0ls32l8s40l8
-- _objc_msgSend$loadWithAsset:changesDictionary:completion:
 CStrings:
 + "%@.mov"
 + "A"

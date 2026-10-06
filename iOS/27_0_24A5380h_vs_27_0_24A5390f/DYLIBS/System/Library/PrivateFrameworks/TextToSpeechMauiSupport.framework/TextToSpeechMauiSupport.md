@@ -2,43 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/TextToSpeechMauiSupport.framework/TextToSpeechMauiSupport`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x53d018` | `0x53d020` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__TEXT.__cstring`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA.__objc_stublist`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+
+### Other Changes
 
 ```diff
 
 -678.0.0.0.0
--  __TEXT.__text: 0x53d018
 +680.0.0.0.0
-+  __TEXT.__text: 0x53d020
-   __TEXT.__const: 0xdd0c8
-   __TEXT.__cstring: 0x4856e
-   __TEXT.__constg_swiftt: 0x888
 Functions:
 ~ __AbstractComponent_Con : 444 -> 452
 CStrings:

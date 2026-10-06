@@ -2,21 +2,22 @@
 
 > `/System/Library/Filesystems/apfs.fs/apfs_iosd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x33d38` | `0x33eac` | **`+0x174`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 3288.2.1.0.0
--  __TEXT.__text: 0x33d38
-+  __TEXT.__text: 0x33eac
-   __TEXT.__auth_stubs: 0xa90
-   __TEXT.__cstring: 0x67af
-   __TEXT.__const: 0x350
+```text
 Functions:
 ~ sub_100004940 : 2036 -> 2048
 ~ sub_1000098ac -> sub_1000098b8 : 636 -> 664

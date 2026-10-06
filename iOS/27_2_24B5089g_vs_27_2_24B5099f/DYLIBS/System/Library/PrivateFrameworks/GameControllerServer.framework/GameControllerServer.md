@@ -2,22 +2,14 @@
 
 > `/System/Library/PrivateFrameworks/GameControllerServer.framework/GameControllerServer`
 
-```diff
+### Section Size Changes
 
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x90
-   __AUTH_CONST.__auth_got: 0x518
--  __AUTH.__objc_data: 0x430
--  __AUTH.__data: 0x28
-+  __AUTH.__objc_data: 0x408
-   __DATA.__objc_ivar: 0x190
--  __DATA.__data: 0x3c0
--  __DATA_DIRTY.__objc_data: 0x50
-+  __DATA.__data: 0x350
-+  __DATA_DIRTY.__objc_data: 0x78
-+  __DATA_DIRTY.__data: 0xe0
-+  __DATA_DIRTY.__bss: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__data` | `—` | `0xe0` | **`+0xe0`** |
+| `__DATA.__data` | `0x3c0` | `0x350` | **`-0x70`** |
+| `__AUTH.__data` | `0x28` | `—` | **`-0x28`** |
+| `__AUTH.__objc_data` | `0x430` | `0x408` | **`-0x28`** |
+| `__DATA_DIRTY.__objc_data` | `0x50` | `0x78` | **`+0x28`** |
+| `__DATA.__bss` | `0x40` | `0x38` | **`-0x8`** |
+| `__DATA_DIRTY.__bss` | `—` | `0x8` | **`+0x8`** |

@@ -2,14 +2,8 @@
 
 > `com.apple.driver.AppleH16PhotonDetector`
 
-```diff
+### Section Size Changes
 
- 6.21.0.0.0
-   __TEXT.__cstring: 0x1ef
-   __TEXT.__os_log: 0x606
--  __TEXT_EXEC.__text: 0x2a94
-+  __TEXT_EXEC.__text: 0x2b48
-   __TEXT_EXEC.__auth_stubs: 0x200
-   __DATA.__data: 0xd8
-   __DATA.__common: 0x60
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x2a94` | `0x2b48` | **`+0xb4`** |

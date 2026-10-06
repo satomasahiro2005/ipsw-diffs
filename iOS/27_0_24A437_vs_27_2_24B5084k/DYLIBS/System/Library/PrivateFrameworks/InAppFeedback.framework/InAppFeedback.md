@@ -2,84 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/InAppFeedback.framework/InAppFeedback`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x460e0` | `0x50300` | **`+0xa220`** |
+| `__DATA.__bss` | `0x5a80` | `0x5f80` | **`+0x500`** |
+| `__TEXT.__eh_frame` | `0x20b8` | `0x2518` | **`+0x460`** |
+| `__TEXT.__const` | `0x39f8` | `0x3d28` | **`+0x330`** |
+| `__TEXT.__swift5_typeref` | `0xe35` | `0x1013` | **`+0x1de`** |
+| `__TEXT.__unwind_info` | `0x1368` | `0x14e8` | **`+0x180`** |
+| `__DATA.__data` | `0xdf0` | `0xee0` | **`+0xf0`** |
+| `__AUTH.__data` | `0xfe0` | `0x10c8` | **`+0xe8`** |
+| `__TEXT.__swift5_fieldmd` | `0xfc4` | `0x10a8` | **`+0xe4`** |
+| `__AUTH_CONST.__const` | `0x1f00` | `0x1fb8` | **`+0xb8`** |
+| `__TEXT.__swift5_reflstr` | `0x85d` | `0x8bd` | **`+0x60`** |
+| `__TEXT.__constg_swiftt` | `0xd68` | `0xdbc` | **`+0x54`** |
+| `__AUTH_CONST.__auth_got` | `0xb78` | `0xbc0` | **`+0x48`** |
+| `__TEXT.__swift5_proto` | `0x2e8` | `0x310` | **`+0x28`** |
+| `__AUTH_CONST.__objc_const` | `0xe08` | `0xde8` | **`-0x20`** |
+| `__TEXT.__cstring` | `0x452` | `0x472` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x218` | `0x230` | **`+0x18`** |
+| `__TEXT.__swift_as_cont` | `0x14c` | `0x134` | **`-0x18`** |
+| `__TEXT.__swift5_types` | `0x108` | `0x114` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `0x74` | `0x80` | **`+0xc`** |
+| `__TEXT.__swift5_capture` | `0x1ec` | `0x1f4` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x88` | `0x90` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1.4.17.0.0
--  __TEXT.__text: 0x43998
 +1.4.18.0.0
-+  __TEXT.__text: 0x4d5e4
-   __TEXT.__objc_methlist: 0x25c
--  __TEXT.__const: 0x39f8
--  __TEXT.__constg_swiftt: 0xd68
--  __TEXT.__swift5_typeref: 0xe35
--  __TEXT.__swift5_reflstr: 0x85d
--  __TEXT.__swift5_fieldmd: 0xfc4
--  __TEXT.__cstring: 0x452
-+  __TEXT.__const: 0x3d28
-+  __TEXT.__constg_swiftt: 0xdbc
-+  __TEXT.__swift5_typeref: 0x1013
-+  __TEXT.__swift5_reflstr: 0x8bd
-+  __TEXT.__swift5_fieldmd: 0x10a8
-+  __TEXT.__cstring: 0x472
-   __TEXT.__oslogstring: 0x376
--  __TEXT.__swift5_proto: 0x2e8
--  __TEXT.__swift5_types: 0x108
--  __TEXT.__swift_as_entry: 0x88
--  __TEXT.__swift_as_cont: 0x14c
-+  __TEXT.__swift5_proto: 0x310
-+  __TEXT.__swift5_types: 0x114
-+  __TEXT.__swift_as_entry: 0x90
-+  __TEXT.__swift_as_cont: 0x134
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__swift5_capture: 0x1ec
--  __TEXT.__swift_as_ret: 0x74
-+  __TEXT.__swift5_capture: 0x1f4
-+  __TEXT.__swift_as_ret: 0x80
-   __TEXT.__swift5_assocty: 0xe0
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x1778
--  __TEXT.__eh_frame: 0x20b8
-+  __TEXT.__unwind_info: 0x1948
-+  __TEXT.__eh_frame: 0x2520
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x78
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x218
-+  __DATA_CONST.__objc_selrefs: 0x230
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1f00
--  __AUTH_CONST.__objc_const: 0xe08
--  __AUTH_CONST.__auth_got: 0xb78
-+  __AUTH_CONST.__const: 0x1fb8
-+  __AUTH_CONST.__objc_const: 0xde8
-+  __AUTH_CONST.__auth_got: 0xbc0
-   __AUTH.__objc_data: 0x3b0
--  __AUTH.__data: 0xfe0
--  __DATA.__data: 0xdf0
-+  __AUTH.__data: 0x10c8
-+  __DATA.__data: 0xee0
-   __DATA.__common: 0x18
 +  - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1554
--  Symbols:   678
+-  Symbols:   652
 -  CStrings:  57
 +  Functions: 1653
-+  Symbols:   713
++  Symbols:   684
 +  CStrings:  58
- 
 Symbols:
 + _OBJC_CLASS_$_ACAccountStore
 + ___swift_closure_destructor.64Tm
@@ -91,9 +54,6 @@ Symbols:
 + _associated conformance 13InAppFeedback11SaltHistoryV10CodingKeys33_DDDBBA0DE5F505287650B1F9EB794FBFLLOs0F3KeyAAs23CustomStringConvertible
 + _associated conformance 13InAppFeedback11SaltHistoryV10CodingKeys33_DDDBBA0DE5F505287650B1F9EB794FBFLLOs0F3KeyAAs28CustomDebugStringConvertible
 + _associated conformance 13InAppFeedback11SaltHistoryVSHAASQ
-+ _objc_msgSend$ams_activeiTunesAccount
-+ _objc_msgSend$ams_sharedAccountStore
-+ _objc_msgSend$ams_storefront
 + _swift_release_x22
 + _swift_release_x26
 + _swift_release_x9

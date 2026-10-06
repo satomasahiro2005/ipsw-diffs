@@ -2,23 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/RealityCoreTextureImport.framework/RealityCoreTextureImport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4b770` | `0x4b95c` | **`+0x1ec`** |
+
+### Other Changes
+
 ```diff
 
- 24.0.5.0.1
--  __TEXT.__text: 0x4b770
-+  __TEXT.__text: 0x4b95c
-   __TEXT.__objc_methlist: 0x3ac
-   __TEXT.__const: 0xe108
-   __TEXT.__cstring: 0x352f
-
-   - /usr/lib/libate.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1364
 +  Functions: 1365
-   Symbols:   1866
-   CStrings:  528
- 
 Functions:
 ~ __ZN12_GLOBAL__N_114processKtxMipsEbRN2re7ContextERK23TextureFromImageOptionsRKNSt3__117basic_string_viewIcNS6_11char_traitsIcEEEERK13KTXHeaderDataRKNS6_8multimapIlmNS6_4lessImEENS6_9allocatorINS6_4pairIKlmEEEEEER11InputStreamRKN2NS9SharedPtrIN3MTL17TextureDescriptorEEEbPKNS6_8functionIFvvEEER15ImportedTextureNS6_4spanIPKNS0_17CancellationTokenELm18446744073709551615EEE : 1708 -> 1712
 ~ __ZN12_GLOBAL__N_125processKtxMipsWithBuilderERNS_23TextureBuilderInterfaceENSt3__14spanIPKN2re17CancellationTokenELm18446744073709551615EEERK13KTXHeaderDataR11InputStreamPKNS2_8functionIFvvEEE : 1208 -> 1252

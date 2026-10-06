@@ -2,59 +2,37 @@
 
 > `/System/Library/AccessibilityBundles/HealthExperienceUI.axbundle/HealthExperienceUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2b44` | `0x232c` | **`-0x818`** |
+| `__AUTH_CONST.__objc_const` | `0x2010` | `0x1cb0` | **`-0x360`** |
+| `__AUTH_CONST.__cfstring` | `0xbe0` | `0x920` | **`-0x2c0`** |
+| `__TEXT.__cstring` | `0xdbb` | `0xb4d` | **`-0x26e`** |
+| `__DATA_DIRTY.__objc_data` | `0x11d0` | `0xff0` | **`-0x1e0`** |
+| `__TEXT.__objc_methlist` | `0xa3c` | `0x94c` | **`-0xf0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1e8` | `0x1a8` | **`-0x40`** |
+| `__TEXT.__unwind_info` | `0x1e8` | `0x1a8` | **`-0x40`** |
+| `__DATA_CONST.__objc_classlist` | `0x1c8` | `0x198` | **`-0x30`** |
+| `__DATA_CONST.__const` | `0x108` | `0xe0` | **`-0x28`** |
+| `__DATA_CONST.__objc_superrefs` | `0x98` | `0x80` | **`-0x18`** |
+| `__TEXT.__gcc_except_tab` | `0x18` | `—` | **`-0x18`** |
+| `__TEXT.__const` | `0x18` | `0x10` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3050.3.0.0.0
--  __TEXT.__text: 0x2a0c
--  __TEXT.__objc_methlist: 0xa3c
--  __TEXT.__const: 0x18
--  __TEXT.__gcc_except_tab: 0x18
--  __TEXT.__cstring: 0xdbb
 +3050.3.1.0.0
-+  __TEXT.__text: 0x2230
-+  __TEXT.__objc_methlist: 0x94c
-+  __TEXT.__const: 0x10
-+  __TEXT.__cstring: 0xb4d
-   __TEXT.__oslogstring: 0x61
--  __TEXT.__unwind_info: 0x210
-+  __TEXT.__unwind_info: 0x1d0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x108
--  __DATA_CONST.__objc_classlist: 0x1c8
-+  __DATA_CONST.__const: 0xe0
-+  __DATA_CONST.__objc_classlist: 0x198
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1e8
--  __DATA_CONST.__objc_superrefs: 0x98
-+  __DATA_CONST.__objc_selrefs: 0x1a8
-+  __DATA_CONST.__objc_superrefs: 0x80
-   __DATA_CONST.__got: 0x88
-   __AUTH_CONST.__const: 0x180
--  __AUTH_CONST.__cfstring: 0xbe0
--  __AUTH_CONST.__objc_const: 0x2010
-+  __AUTH_CONST.__cfstring: 0x920
-+  __AUTH_CONST.__objc_const: 0x1cb0
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA_DIRTY.__objc_data: 0x11d0
-+  __DATA_DIRTY.__objc_data: 0xff0
-   __DATA_DIRTY.__bss: 0x8
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 182
--  Symbols:   591
+-  Symbols:   542
 -  CStrings:  113
 +  Functions: 165
-+  Symbols:   528
++  Symbols:   483
 +  CStrings:  86
- 
 Symbols:
 - +[WDAddDataManualEntryItemAccessibility _accessibilityPerformValidations:]
 - +[WDAddDataManualEntryItemAccessibility(SafeCategory) safeCategoryBaseClass]
@@ -110,10 +88,6 @@ Symbols:
 - ___UIAccessibilitySafeClass
 - ___block_descriptor_56_e8_32s40s48r_e5_v8?0lr48l8s32l8s40l8
 - ___objc_personality_v0
-- _objc_msgSend$_accessibilitySetRetainedValue:forKey:
-- _objc_msgSend$_accessibilityValueForKey:
-- _objc_msgSend$accessibilityNameForObjectType:
-- _objc_msgSend$validateClass:hasInstanceVariable:withType:
 - _objc_release_x8
 - _objc_retain_x20
 - _objc_retain_x21

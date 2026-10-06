@@ -2,17 +2,21 @@
 
 > `/usr/sbin/skywalkctl`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x1199c
-+  __TEXT.__text: 0x1196c
-   __TEXT.__auth_stubs: 0x690
-   __TEXT.__cstring: 0xc2fc
-   __TEXT.__const: 0x60
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1199c` | `0x1196c` | **`-0x30`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_100002140 : 628 -> 644
 ~ sub_100003ebc -> sub_100003ecc : 936 -> 928
@@ -26,5 +30,4 @@ Functions:
 ~ sub_1000101f4 -> sub_1000101f8 : 140 -> 108
 ~ sub_100010280 -> sub_100010264 : 164 -> 140
 ~ sub_100010658 -> sub_100010624 : 232 -> 236
-
 ```

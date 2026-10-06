@@ -2,58 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/SiriLiminal.framework/SiriLiminal`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5718c` | `0x56dd4` | **`-0x3b8`** |
+| `__AUTH.__objc_data` | `0x460` | `0x2d0` | **`-0x190`** |
+| `__DATA_DIRTY.__objc_data` | `0x410` | `0x5a0` | **`+0x190`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x5718c
-+  __TEXT.__text: 0x56dd4
-   __TEXT.__objc_methlist: 0x1310
-   __TEXT.__const: 0xdb0
-   __TEXT.__cstring: 0x58f9
-
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_doubleobj: 0x30
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x460
-+  __AUTH.__objc_data: 0x2d0
-   __AUTH.__data: 0xe0
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x10
-
-   __DATA.__data: 0x27c
-   __DATA.__bss: 0x49
-   __DATA.__common: 0x2fd
--  __DATA_DIRTY.__objc_data: 0x410
-+  __DATA_DIRTY.__objc_data: 0x5a0
-   __DATA_DIRTY.__data: 0x88
-   __DATA_DIRTY.__bss: 0x40
-   __DATA_DIRTY.__common: 0xd0
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
+-3600.70.8.0.0
++3600.70.20.1.1
 Functions:
 ~ __ZNSt3__15dequeIZNK5Darts15DoubleArrayImplIvvivE16predictiveSearchINS3_16result_pair_typeEEEmPKcPT_mmiE5StateNS_9allocatorISA_EEE19__add_back_capacityEv : 484 -> 472
 ~ __ZNKSt3__121__murmur2_or_cityhashImLm64EEclB9fqe220106EPKvm : 532 -> 520
@@ -84,5 +46,4 @@ Functions:
 ~ __ZN6google8protobuf8internal16WireFormatParserINS1_28UnknownFieldLiteParserHelperEEEPKcRT_S5_PNS1_12ParseContextE : 248 -> 252
 ~ __ZN6google8protobuf8internal11VarintParseIyEEPKcS4_PT_ : 124 -> 128
 ~ __ZN6google8protobuf8internal16ReadSizeFallbackEPKcj : 120 -> 124
-
 ```

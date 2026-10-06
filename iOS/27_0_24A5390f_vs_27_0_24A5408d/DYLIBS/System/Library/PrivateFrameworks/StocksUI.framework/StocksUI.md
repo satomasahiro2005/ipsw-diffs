@@ -2,108 +2,59 @@
 
 > `/System/Library/PrivateFrameworks/StocksUI.framework/StocksUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3ee608` | `0x3dbf14` | **`-0x126f4`** |
+| `__TEXT.__const` | `0x25c54` | `0x24db4` | **`-0xea0`** |
+| `__AUTH_CONST.__const` | `0x16710` | `0x15a88` | **`-0xc88`** |
+| `__TEXT.__cstring` | `0x131cc` | `0x126dc` | **`-0xaf0`** |
+| `__DATA_DIRTY.__bss` | `0x1c810` | `0x1bf90` | **`-0x880`** |
+| `__AUTH_CONST.__objc_const` | `0x22c28` | `0x22438` | **`-0x7f0`** |
+| `__DATA_DIRTY.__data` | `0x1d998` | `0x1d208` | **`-0x790`** |
+| `__TEXT.__swift5_fieldmd` | `0xdbb4` | `0xd5a8` | **`-0x60c`** |
+| `__TEXT.__constg_swiftt` | `0x100c4` | `0xfba0` | **`-0x524`** |
+| `__TEXT.__swift5_reflstr` | `0xe4f0` | `0xdfd0` | **`-0x520`** |
+| `__DATA.__bss` | `0x10a40` | `0x105c0` | **`-0x480`** |
+| `__TEXT.__oslogstring` | `0x1e8e` | `0x1b4e` | **`-0x340`** |
+| `__TEXT.__swift5_typeref` | `0xac2c` | `0xa93c` | **`-0x2f0`** |
+| `__TEXT.__unwind_info` | `0xaf80` | `0xac98` | **`-0x2e8`** |
+| `__DATA_DIRTY.__objc_data` | `0x4258` | `0x4098` | **`-0x1c0`** |
+| `__TEXT.__swift5_capture` | `0x4994` | `0x4864` | **`-0x130`** |
+| `__AUTH_CONST.__auth_got` | `0x7af0` | `0x7a00` | **`-0xf0`** |
+| `__DATA_DIRTY.__common` | `0x570` | `0x4d0` | **`-0xa0`** |
+| `__DATA_CONST.__got` | `0x4d90` | `0x4d00` | **`-0x90`** |
+| `__TEXT.__swift5_proto` | `0x1b04` | `0x1a84` | **`-0x80`** |
+| `__TEXT.__eh_frame` | `0x6ed4` | `0x6e58` | **`-0x7c`** |
+| `__TEXT.__swift5_types` | `0xfe8` | `0xf80` | **`-0x68`** |
+| `__DATA.__data` | `0x51e0` | `0x5190` | **`-0x50`** |
+| `__DATA_CONST.__objc_classlist` | `0x1000` | `0xfb8` | **`-0x48`** |
+| `__AUTH.__data` | `0x2f50` | `0x2f80` | **`+0x30`** |
+| `__AUTH.__objc_data` | `0x2d00` | `0x2ce0` | **`-0x20`** |
+| `__TEXT.__swift5_protos` | `0x44c` | `0x430` | **`-0x1c`** |
+| `__TEXT.__swift_as_cont` | `0x1f4` | `0x210` | **`+0x1c`** |
+| `__TEXT.__swift5_assocty` | `0x1958` | `0x1940` | **`-0x18`** |
+| `__TEXT.__swift5_builtin` | `0x294` | `0x280` | **`-0x14`** |
+| `__DATA_CONST.__objc_protolist` | `0x4a8` | `0x4b8` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3298` | `0x3288` | **`-0x10`** |
+| `__TEXT.__swift_as_ret` | `0x9c` | `0xa8` | **`+0xc`** |
+| `__DATA_CONST.__objc_protorefs` | `0x270` | `0x278` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x4dcc` | `0x4dc4` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2022.0.0.0.0
--  __TEXT.__text: 0x3ee608
--  __TEXT.__objc_methlist: 0x4dcc
--  __TEXT.__const: 0x25c54
--  __TEXT.__cstring: 0x131cc
 +2028.1.0.0.0
-+  __TEXT.__text: 0x3dbf14
-+  __TEXT.__objc_methlist: 0x4dc4
-+  __TEXT.__const: 0x24db4
-+  __TEXT.__cstring: 0x126dc
-   __TEXT.__gcc_except_tab: 0x80
--  __TEXT.__swift5_typeref: 0xac2c
--  __TEXT.__swift5_fieldmd: 0xdbb4
--  __TEXT.__constg_swiftt: 0x100c4
--  __TEXT.__swift5_reflstr: 0xe4f0
--  __TEXT.__swift5_builtin: 0x294
--  __TEXT.__swift5_assocty: 0x1958
--  __TEXT.__swift5_protos: 0x44c
--  __TEXT.__swift5_proto: 0x1b04
--  __TEXT.__swift5_types: 0xfe8
-+  __TEXT.__swift5_typeref: 0xa93c
-+  __TEXT.__swift5_fieldmd: 0xd5a8
-+  __TEXT.__constg_swiftt: 0xfba0
-+  __TEXT.__swift5_reflstr: 0xdfd0
-+  __TEXT.__swift5_builtin: 0x280
-+  __TEXT.__swift5_assocty: 0x1940
-+  __TEXT.__swift5_protos: 0x430
-+  __TEXT.__swift5_proto: 0x1a84
-+  __TEXT.__swift5_types: 0xf80
-   __TEXT.__swift_as_entry: 0xb0
--  __TEXT.__swift_as_ret: 0x9c
--  __TEXT.__swift_as_cont: 0x1f4
--  __TEXT.__swift5_capture: 0x4994
--  __TEXT.__oslogstring: 0x1e8e
-+  __TEXT.__swift_as_ret: 0xa8
-+  __TEXT.__swift_as_cont: 0x210
-+  __TEXT.__swift5_capture: 0x4864
-+  __TEXT.__oslogstring: 0x1b4e
-   __TEXT.__swift5_mpenum: 0x60
--  __TEXT.__unwind_info: 0xaf80
--  __TEXT.__eh_frame: 0x6ed4
-+  __TEXT.__unwind_info: 0xac98
-+  __TEXT.__eh_frame: 0x6e58
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x628
--  __DATA_CONST.__objc_classlist: 0x1000
-+  __DATA_CONST.__objc_classlist: 0xfb8
-   __DATA_CONST.__objc_catlist: 0x50
--  __DATA_CONST.__objc_protolist: 0x4a8
-+  __DATA_CONST.__objc_protolist: 0x4b8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3298
--  __DATA_CONST.__objc_protorefs: 0x270
--  __DATA_CONST.__got: 0x4d90
--  __AUTH_CONST.__const: 0x16710
-+  __DATA_CONST.__objc_selrefs: 0x3288
-+  __DATA_CONST.__objc_protorefs: 0x278
-+  __DATA_CONST.__got: 0x4d00
-+  __AUTH_CONST.__const: 0x15a88
-   __AUTH_CONST.__cfstring: 0x80
--  __AUTH_CONST.__objc_const: 0x22c28
--  __AUTH_CONST.__auth_got: 0x7af0
--  __AUTH.__objc_data: 0x2d00
--  __AUTH.__data: 0x2f50
--  __DATA.__data: 0x51e0
-+  __AUTH_CONST.__objc_const: 0x22438
-+  __AUTH_CONST.__auth_got: 0x7a00
-+  __AUTH.__objc_data: 0x2ce0
-+  __AUTH.__data: 0x2f80
-+  __DATA.__data: 0x5190
-   __DATA.__objc_stublist: 0x40
--  __DATA.__bss: 0x10a40
-+  __DATA.__bss: 0x105c0
-   __DATA.__common: 0x410
--  __DATA_DIRTY.__objc_data: 0x4258
--  __DATA_DIRTY.__data: 0x1d998
--  __DATA_DIRTY.__bss: 0x1c810
--  __DATA_DIRTY.__common: 0x570
-+  __DATA_DIRTY.__objc_data: 0x4098
-+  __DATA_DIRTY.__data: 0x1d208
-+  __DATA_DIRTY.__bss: 0x1bf90
-+  __DATA_DIRTY.__common: 0x4d0
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15790
--  Symbols:   7461
+-  Symbols:   6597
 -  CStrings:  1451
 +  Functions: 15471
-+  Symbols:   7344
++  Symbols:   6494
 +  CStrings:  1389
- 
 Symbols:
 + _OBJC_CLASS_$_OBBoldTrayButton
 + _OBJC_CLASS_$_OBWelcomeController
@@ -122,21 +73,6 @@ Symbols:
 + __OBJC_PROTOCOL_$_FCNewsAppConfigurationManager
 + _associated conformance 8StocksUI23StockListViewControllerC19ForYouCardHideState33_75D2A4EC193FBA350FDB9998158CA69FLLOSHAASQ
 + _flat unique So29FCNewsAppConfigurationManager_p
-+ _objc_msgSend$addBulletedListItemWithTitle:description:image:
-+ _objc_msgSend$addBulletedListItemWithTitle:description:image:tintColor:
-+ _objc_msgSend$addButton:
-+ _objc_msgSend$boldButton
-+ _objc_msgSend$buttonTray
-+ _objc_msgSend$feedNumberOfViewportsBetweenAds
-+ _objc_msgSend$headerView
-+ _objc_msgSend$iAdConfig
-+ _objc_msgSend$initWithTitle:detailText:appName:icon:
-+ _objc_msgSend$setDetailText:
-+ _objc_msgSend$setModalInPresentation:
-+ _objc_msgSend$setModalTransitionStyle:
-+ _objc_msgSend$setPrivacyLinkForBundles:
-+ _objc_msgSend$showButtonsAvailable
-+ _objc_msgSend$showButtonsBusy
 + _symbolic So16OBBoldTrayButtonC
 + _symbolic So19OBWelcomeControllerC
 + _symbolic _____ 8StocksUI0A17WelcomeController33_7A17F01A97B0608A1EDC1B12F6433AA5LLC
@@ -205,35 +141,6 @@ Symbols:
 - _associated conformance 8StocksUI19WelcomeViewAnimatorC5StateOSHAASQ
 - _associated conformance 8StocksUI19WelcomeViewKeyFrameOSHAASQ
 - _associated conformance 8StocksUI19WelcomeViewKeyFrameOSLAASQ
-- _objc_msgSend$boldSystemFontOfSize:
-- _objc_msgSend$defaultFontSize
-- _objc_msgSend$defaultMetrics
-- _objc_msgSend$effectWithStyle:
-- _objc_msgSend$fontDescriptor
-- _objc_msgSend$fontWithDescriptor:size:
-- _objc_msgSend$hyphenationFactor
-- _objc_msgSend$largeButton
-- _objc_msgSend$linkWithBundleIdentifier:
-- _objc_msgSend$removeAttribute:range:
-- _objc_msgSend$scaledFontForFont:maximumPointSize:
-- _objc_msgSend$scaledValueForValue:
-- _objc_msgSend$setContentMode:
-- _objc_msgSend$setDisplayCaptionText:
-- _objc_msgSend$setDisplayLargeIcon:
-- _objc_msgSend$setEditable:
-- _objc_msgSend$setEffect:
-- _objc_msgSend$setHyphenationFactor:
-- _objc_msgSend$setLineBreakStrategy:
-- _objc_msgSend$setLineFragmentPadding:
-- _objc_msgSend$setMaximumLineHeight:
-- _objc_msgSend$setMaximumNumberOfLines:
-- _objc_msgSend$setMinimumLineHeight:
-- _objc_msgSend$setSelectable:
-- _objc_msgSend$setTextContainerInset:
-- _objc_msgSend$setTransform:
-- _objc_msgSend$stopAnimation:
-- _objc_msgSend$systemFontSize
-- _objc_msgSend$textContainer
 - _objc_release_x2
 - _symbolic $s8StocksUI17WelcomeStylerTypeP
 - _symbolic $s8StocksUI21WelcomeViewStylerTypeP

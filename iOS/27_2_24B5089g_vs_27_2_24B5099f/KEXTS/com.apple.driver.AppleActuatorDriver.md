@@ -2,27 +2,23 @@
 
 > `com.apple.driver.AppleActuatorDriver`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__os_log` | `0x34e` | `0x51d` | **`+0x1cf`** |
+| `__TEXT_EXEC.__text` | `0x9e20` | `0x9f64` | **`+0x144`** |
+| `__TEXT.__cstring` | `0x11fc` | `0x11ca` | **`-0x32`** |
+
+### Other Changes
+
 ```diff
 
 -10100.44.0.0.0
 +10110.3.0.0.0
-   __TEXT.__const: 0x68
--  __TEXT.__cstring: 0x11fc
--  __TEXT.__os_log: 0x34e
--  __TEXT_EXEC.__text: 0x945c
-+  __TEXT.__cstring: 0x11ca
-+  __TEXT.__os_log: 0x51d
-+  __TEXT_EXEC.__text: 0x95a0
-   __TEXT_EXEC.__auth_stubs: 0x470
-   __DATA.__data: 0xc8
-   __DATA.__common: 0xf0
 
-   __DATA_CONST.__got: 0xa8
-   Functions: 214
-   Symbols:   0
 -  CStrings:  157
 +  CStrings:  160
- 
 Functions:
 ~ __ZN19AppleActuatorDevice26_deviceSetReportWithLookUpEP21AADDeviceReportStructh : 416 -> 740
 CStrings:

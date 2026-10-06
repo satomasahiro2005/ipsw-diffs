@@ -2,14 +2,15 @@
 
 > `/usr/lib/libBasebandCommandDriversARI.dylib`
 
-```diff
+### Section Size Changes
 
- 1585.0.0.0.0
--  __TEXT.__text: 0xbd678
-+  __TEXT.__text: 0xbd77c
-   __TEXT.__init_offsets: 0x8
-   __TEXT.__const: 0x84b0
-   __TEXT.__cstring: 0x352d
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbd678` | `0xbd77c` | **`+0x104`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__16vectorINS_9sub_matchIPKcEENS_9allocatorIS4_EEE6assignEmRKS4_ : 460 -> 476
 ~ __ZNSt3__16vectorINS_9sub_matchIPKcEENS_9allocatorIS4_EEE6resizeEmRKS4_ : 396 -> 420

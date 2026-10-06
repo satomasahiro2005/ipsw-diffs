@@ -2,53 +2,34 @@
 
 > `/System/Library/AccessibilityBundles/Photo Booth.axbundle/Photo Booth`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x13e4` | `0x1cbc` | **`+0x8d8`** |
+| `__AUTH_CONST.__cfstring` | `0x720` | `0x8e0` | **`+0x1c0`** |
+| `__TEXT.__cstring` | `0x6ce` | `0x7fe` | **`+0x130`** |
+| `__TEXT.__objc_methlist` | `0x1e4` | `0x248` | **`+0x64`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1c8` | `0x228` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x98` | `0xe8` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `—` | `0x44` | **`+0x44`** |
+| `__TEXT.__unwind_info` | `0xe0` | `0x120` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x70` | `0x78` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x18` | `0x20` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3045.0.0.0.0
--  __TEXT.__text: 0x13e4
--  __TEXT.__objc_methlist: 0x1e4
 +3048.0.0.0.0
-+  __TEXT.__text: 0x1cbc
-+  __TEXT.__objc_methlist: 0x248
-   __TEXT.__const: 0x8
--  __TEXT.__cstring: 0x6ce
--  __TEXT.__unwind_info: 0xe0
-+  __TEXT.__gcc_except_tab: 0x44
-+  __TEXT.__cstring: 0x7fe
-+  __TEXT.__unwind_info: 0x120
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x98
-+  __DATA_CONST.__const: 0xe8
-   __DATA_CONST.__objc_classlist: 0x48
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1c8
--  __DATA_CONST.__objc_superrefs: 0x18
--  __DATA_CONST.__got: 0x70
-+  __DATA_CONST.__objc_selrefs: 0x228
-+  __DATA_CONST.__objc_superrefs: 0x20
-+  __DATA_CONST.__got: 0x78
-   __AUTH_CONST.__const: 0x60
--  __AUTH_CONST.__cfstring: 0x720
-+  __AUTH_CONST.__cfstring: 0x8e0
-   __AUTH_CONST.__objc_const: 0x550
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__bss: 0x8
 
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 37
--  Symbols:   175
+-  Symbols:   139
 -  CStrings:  72
 +  Functions: 50
-+  Symbols:   213
++  Symbols:   167
 +  CStrings:  89
- 
 Symbols:
 + +[PBShelfTileAccessibility _accessibilityPerformValidations:]
 + -[PBControllerAccessibility _axInstallPhotoActionLabelBlocks]
@@ -78,18 +59,6 @@ Symbols:
 + _objc_destroyWeak
 + _objc_initWeak
 + _objc_loadWeakRetained
-+ _objc_msgSend$_axInstallPhotoActionLabelBlocks
-+ _objc_msgSend$_axIsPhotoSelected
-+ _objc_msgSend$_axLabelForPhotoActionWithFormatKey:
-+ _objc_msgSend$_axValueForFlipButton
-+ _objc_msgSend$_setAccessibilityLabelBlock:
-+ _objc_msgSend$_setAccessibilityValueBlock:
-+ _objc_msgSend$accessibilityLabel
-+ _objc_msgSend$lastObject
-+ _objc_msgSend$length
-+ _objc_msgSend$safeArrayForKey:
-+ _objc_msgSend$safeBoolForKey:
-- _objc_msgSend$boolValue
 CStrings:
 + "@\"NSString\"8@?0"
 + "NSMutableArray"

@@ -2,65 +2,32 @@
 
 > `/System/Library/Frameworks/PencilKit.framework/PencilKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x354df0` | `0x355ab8` | **`+0xcc8`** |
+| `__TEXT.__gcc_except_tab` | `0x253e0` | `0x254b8` | **`+0xd8`** |
+| `__TEXT.__objc_methlist` | `0x25fec` | `0x2606c` | **`+0x80`** |
+| `__AUTH_CONST.__cfstring` | `0xe720` | `0xe780` | **`+0x60`** |
+| `__TEXT.__cstring` | `0xf918` | `0xf962` | **`+0x4a`** |
+| `__DATA_CONST.__objc_selrefs` | `0x13560` | `0x135a8` | **`+0x48`** |
+| `__TEXT.__unwind_info` | `0x10748` | `0x10778` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x22b0` | `0x22c8` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
 -613.0.0.0.0
--  __TEXT.__text: 0x354df0
--  __TEXT.__objc_methlist: 0x25fec
 +616.0.0.0.0
-+  __TEXT.__text: 0x355ab8
-+  __TEXT.__objc_methlist: 0x2606c
-   __TEXT.__const: 0x8ee4
-   __TEXT.__dlopen_cstrs: 0x563
-   __TEXT.__constg_swiftt: 0x1f2c
 
-   __TEXT.__swift5_proto: 0x398
-   __TEXT.__swift5_types: 0x1dc
-   __TEXT.__swift5_capture: 0xa9c
--  __TEXT.__cstring: 0xf918
-+  __TEXT.__cstring: 0xf962
-   __TEXT.__oslogstring: 0xed2f
-   __TEXT.__swift_as_entry: 0xf0
-   __TEXT.__swift_as_cont: 0x218
-   __TEXT.__swift_as_ret: 0xac
-   __TEXT.__swift5_protos: 0xc
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__gcc_except_tab: 0x253e0
-+  __TEXT.__gcc_except_tab: 0x254b8
-   __TEXT.__ustring: 0x23a
--  __TEXT.__unwind_info: 0x10748
-+  __TEXT.__unwind_info: 0x10778
-   __TEXT.__eh_frame: 0x2ae8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_protolist: 0x7e8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x13560
-+  __DATA_CONST.__objc_selrefs: 0x135a8
-   __DATA_CONST.__objc_protorefs: 0x118
-   __DATA_CONST.__objc_superrefs: 0xda8
-   __DATA_CONST.__objc_arraydata: 0x920
--  __DATA_CONST.__got: 0x22b0
-+  __DATA_CONST.__got: 0x22c8
-   __AUTH_CONST.__const: 0x85d0
--  __AUTH_CONST.__cfstring: 0xe720
-+  __AUTH_CONST.__cfstring: 0xe780
-   __AUTH_CONST.__objc_const: 0x48dd8
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__objc_intobj: 0x918
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 18450
--  Symbols:   40858
+-  Symbols:   33084
 -  CStrings:  3592
 +  Functions: 18461
-+  Symbols:   40881
++  Symbols:   33098
 +  CStrings:  3595
- 
 Symbols:
 + -[PKDrawing(Slicing) sliceWithEraseStroke:honoringErasable:]
 + -[PKDrawingPaletteView _setUpdateLinkActive:]
@@ -108,17 +75,6 @@ Symbols:
 + ___60-[PKDrawing(Slicing) sliceWithEraseStroke:honoringErasable:]_block_invoke_2
 + _kCAMediaTimingFunctionDefault
 + _kCATransitionFade
-+ _objc_msgSend$_compactHorizontalEdgePosition
-+ _objc_msgSend$_compactToolsContainerMaximumWidth
-+ _objc_msgSend$_fixToHorizontalEdge:
-+ _objc_msgSend$_isErasable
-+ _objc_msgSend$_setUpdateLinkActive:
-+ _objc_msgSend$_updateConstraintsToFixToHorizontalEdge:
-+ _objc_msgSend$flush
-+ _objc_msgSend$isAnyStrokeInMathGroup:
-+ _objc_msgSend$onScreenRotationForDrawing:
-+ _objc_msgSend$presentationLayer
-+ _objc_msgSend$sliceWithEraseStroke:honoringErasable:
 - -[PKMetalRenderer copyFromAddMultiplyLayersUsingRenderEncoder:clearIfMissing:]
 - -[PKPaletteHostView _fixToBottomEdge]
 - -[PKPaletteHostView _updateConstraintsToFixToBottomEdge]
@@ -151,8 +107,6 @@ Symbols:
 - ___46-[_PKInkThicknessButton setSelected:animated:]_block_invoke
 - ___52-[_PKInkThicknessButton _animateToHighlightedState:]_block_invoke
 - ___52-[_PKInkThicknessButton _animateToHighlightedState:]_block_invoke_2
-- _objc_msgSend$_fixToBottomEdge
-- _objc_msgSend$_updateConstraintsToFixToBottomEdge
 CStrings:
 + "PaperKit.WritingToolsTextInputView"
 + "backgroundColorFade"

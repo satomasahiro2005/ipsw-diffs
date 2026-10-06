@@ -2,81 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/ControlCenterUIServices.framework/ControlCenterUIServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x718` | `0x360` | **`-0x3b8`** |
+| `__DATA_DIRTY.__objc_data` | `0x258` | `0x610` | **`+0x3b8`** |
+| `__TEXT.__text` | `0x19e5c` | `0x19ba4` | **`-0x2b8`** |
+| `__DATA_DIRTY.__data` | `0x1a0` | `0x450` | **`+0x2b0`** |
+| `__AUTH.__data` | `0x2a0` | `—` | **`-0x2a0`** |
+| `__TEXT.__cstring` | `0x2c34` | `0x2e54` | **`+0x220`** |
+| `__DATA.__bss` | `0xd88` | `0xc88` | **`-0x100`** |
+| `__DATA_DIRTY.__bss` | `0x10` | `0x110` | **`+0x100`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1118` | `0x10e0` | **`-0x38`** |
+| `__DATA.__data` | `0xd90` | `0xd70` | **`-0x20`** |
+| `__AUTH_CONST.__const` | `0xb00` | `0xb10` | **`+0x10`** |
+| `__TEXT.__const` | `0xe60` | `0xe50` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x290` | `0x288` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x19e5c
-+  __TEXT.__text: 0x19ba4
-   __TEXT.__objc_methlist: 0x1ae0
--  __TEXT.__const: 0xe60
--  __TEXT.__cstring: 0x2c34
-+  __TEXT.__const: 0xe50
-+  __TEXT.__cstring: 0x2e54
-   __TEXT.__swift5_typeref: 0x756
-   __TEXT.__swift5_reflstr: 0x41d
-   __TEXT.__swift5_assocty: 0x120
+-699.0.100.0.0
++701.101.0.0.0
 
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x180
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1118
-+  __DATA_CONST.__objc_selrefs: 0x10e0
-   __DATA_CONST.__objc_protorefs: 0xc0
--  __DATA_CONST.__got: 0x290
--  __AUTH_CONST.__const: 0xb00
-+  __DATA_CONST.__got: 0x288
-+  __AUTH_CONST.__const: 0xb10
-   __AUTH_CONST.__cfstring: 0x460
-   __AUTH_CONST.__objc_const: 0x2400
-   __AUTH_CONST.__auth_got: 0x698
--  __AUTH.__objc_data: 0x718
--  __AUTH.__data: 0x2a0
--  __DATA.__data: 0xd90
--  __DATA.__bss: 0xd88
-+  __AUTH.__objc_data: 0x360
-+  __DATA.__data: 0xd70
-+  __DATA.__bss: 0xc88
-   __DATA.__common: 0x18
--  __DATA_DIRTY.__objc_data: 0x258
--  __DATA_DIRTY.__data: 0x1a0
--  __DATA_DIRTY.__bss: 0x10
-+  __DATA_DIRTY.__objc_data: 0x610
-+  __DATA_DIRTY.__data: 0x450
-+  __DATA_DIRTY.__bss: 0x110
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 685
--  Symbols:   922
--  CStrings:  274
-+  Symbols:   914
-+  CStrings:  285
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
+-  Symbols:   624
+-  CStrings:  239
++  Symbols:   623
++  CStrings:  250
 Symbols:
 - _OBJC_CLASS_$_UIImage
-- _objc_msgSend$_systemImageNamed:
-- _objc_msgSend$systemBlueColor
-- _objc_msgSend$systemDarkPurpleColor
-- _objc_msgSend$systemGreenColor
-- _objc_msgSend$systemImageNamed:
-- _objc_msgSend$systemPurpleColor
-- _objc_msgSend$systemRedColor
 Functions:
 ~ sub_21f5817b4 -> sub_223d8c764 : 492 -> 516
 ~ sub_21f582bb8 -> sub_223d8db80 : 13032 -> 12284
@@ -104,5 +60,4 @@ CStrings:
 - "circle.grid.2x2.fill"
 - "hand.point.up.left.fill"
 - "speaker.wave.3.fill"
-
 ```

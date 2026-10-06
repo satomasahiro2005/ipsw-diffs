@@ -2,100 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcfa048` | `0xd5604c` | **`+0x5c004`** |
+| `__AUTH_CONST.__objc_const` | `0x16ece0` | `0x178d10` | **`+0xa030`** |
+| `__TEXT.__objc_methlist` | `0x10043c` | `0x1070fc` | **`+0x6cc0`** |
+| `__TEXT.__cstring` | `0x90908` | `0x9393d` | **`+0x3035`** |
+| `__AUTH_CONST.__cfstring` | `0x7c060` | `0x7eaa0` | **`+0x2a40`** |
+| `__AUTH.__objc_data` | `0x19ca8` | `0x1baa8` | **`+0x1e00`** |
+| `__DATA_CONST.__objc_selrefs` | `0x40828` | `0x41e28` | **`+0x1600`** |
+| `__TEXT.__unwind_info` | `0x31eb8` | `0x334b8` | **`+0x1600`** |
+| `__DATA_CONST.__const` | `0x3be48` | `0x3d020` | **`+0x11d8`** |
+| `__DATA.__bss` | `0x1e380` | `0x1f180` | **`+0xe00`** |
+| `__TEXT.__const` | `0x16af4` | `0x17570` | **`+0xa7c`** |
+| `__DATA.__objc_ivar` | `0x120ec` | `0x12864` | **`+0x778`** |
+| `__TEXT.__constg_swiftt` | `0x7a0c` | `0x7db4` | **`+0x3a8`** |
+| `__DATA_CONST.__got` | `0x6528` | `0x6828` | **`+0x300`** |
+| `__DATA_CONST.__objc_classlist` | `0x63f0` | `0x66f0` | **`+0x300`** |
+| `__DATA_CONST.__objc_superrefs` | `0x63a0` | `0x66a0` | **`+0x300`** |
+| `__AUTH_CONST.__const` | `0x24799` | `0x24549` | **`-0x250`** |
+| `__TEXT.__swift5_builtin` | `0x4718` | `0x4948` | **`+0x230`** |
+| `__DATA.__data` | `0x3318` | `0x3408` | **`+0xf0`** |
+| `__TEXT.__swift5_typeref` | `0x1dad` | `0x1e88` | **`+0xdb`** |
+| `__TEXT.__swift5_proto` | `0x12ec` | `0x1360` | **`+0x74`** |
+| `__TEXT.__swift5_types` | `0xe8c` | `0xefc` | **`+0x70`** |
+| `__TEXT.__swift5_fieldmd` | `0x44c` | `0x45c` | **`+0x10`** |
+| `__TEXT.__eh_frame` | `0x47f0` | `0x47f8` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x20` | `0x24` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3600.69.7.0.0
--  __TEXT.__text: 0xcfa048 sha256:e44b7c2314482c0f34c6281e12161fbfd296640da86d8fe56f6cdf9fe4f0ec9a
--  __TEXT.__objc_methlist: 0x10043c sha256:eb8d6b237a21f80f8c44185ea1bec8cfa396d0ee9c44382f3812e9033d3707e6
--  __TEXT.__const: 0x16af4 sha256:137717345fc390b2edb3a59f1291a017315d8dd27c7f3de493d5520ff2e62b30
--  __TEXT.__swift5_typeref: 0x1dad sha256:8881885a930462418db9e14c57340c5cc9418f9e35da8cba8621df600669fb56
--  __TEXT.__cstring: 0x90908 sha256:ebebfd53468c29e1c9a230e5ec46044d7131dfd1feca629001bf3ebd2af4edc3
--  __TEXT.__constg_swiftt: 0x7a0c sha256:55325cd250c699a3a7f5fea1ed038809299f955557ed5be823ba99799eca8c24
 +3600.77.1.0.0
-+  __TEXT.__text: 0xd5604c sha256:84a305b010109bd9b959d92839b9719bd4c7b28c1308639d04bfddcd8633c86c
-+  __TEXT.__objc_methlist: 0x1070fc sha256:a21e19b816621ec54d190a0727c25f5d5a6b69c4796e8988fa00af4ae51e6117
-+  __TEXT.__const: 0x17570 sha256:a762131aa4bf872c18e99eb7a715f1e4af83d5c13175d7e36722ff19293a8fbc
-+  __TEXT.__swift5_typeref: 0x1e88 sha256:cfd5743df4d1924332b5d1f79e14d41911eb34ec7ef9f387872386f7aad5e9ef
-+  __TEXT.__cstring: 0x9393d sha256:deea96e1b186c5af118760dc51a56ee87314d606784c7baff10fadb02e6f1959
-+  __TEXT.__constg_swiftt: 0x7db4 sha256:d97783ae0a12ece5008fac53d35b8d608e8b081326422196459851dc18c27ce6
-   __TEXT.__swift5_reflstr: 0x21d sha256:57d035ac9817dcda61081ef1400f33ed54c97b61fd754e1cae797bb92a469b0f
--  __TEXT.__swift5_fieldmd: 0x44c sha256:973639e7e20253f71e549a51a962c252f9520485e653fa2e6114731d69fdc338
--  __TEXT.__swift5_builtin: 0x4718 sha256:31b25e88675234a7bd9a1c876c1038f129dde75a4528abee8359561d16692bd2
--  __TEXT.__swift5_assocty: 0x150 sha256:b819203cac34a9108ca369efe92d090b96f31161b3d70c39e7793f17c03f4520
--  __TEXT.__swift5_proto: 0x12ec sha256:c396a443fa4a7c33cc7914e77fd2cb96084085d9e8886d376fab06db90ba17e9
--  __TEXT.__swift5_types: 0xe8c sha256:ea9048e5a7678a4744db678df95b457cc0b03966f9fc6c7ca91f54c0e1b45f5a
-+  __TEXT.__swift5_fieldmd: 0x45c sha256:45a7a666d2d05ff494cc169acd196771e3a364201890aeb207d40114298408d7
-+  __TEXT.__swift5_builtin: 0x4948 sha256:4f64ec72a63d137a827796206a36f602e09bef36da9690da798be7ba10795ffa
-+  __TEXT.__swift5_assocty: 0x150 sha256:a8499d7e91c6d41aa23adc5318ff87160360623f076878c68a00bca7cb6fb191
-+  __TEXT.__swift5_proto: 0x1360 sha256:62518b63e3b6510d43a74b8264ea2505c53091b0e6a0f087bf65581768876e80
-+  __TEXT.__swift5_types: 0xefc sha256:c4b4bb9b0d6a5907d98273349da64cdb98642ea3aca68af70bc2bb34c0c84268
-   __TEXT.__oslogstring: 0xc1 sha256:f2aa688a0cf7b88eb6a9004a7c71e13438a97df82dda456ad183afc2d0bcea0b
--  __TEXT.__swift5_protos: 0x20 sha256:c8839f777b5402cc5d37b294b9923e223b5ffc3995822585004992a610bd95ef
--  __TEXT.__unwind_info: 0x31eb8 sha256:a1978b6c873c8e9672bb70027101f0dab9394a541c82aff8f33a73aef6b7171c
--  __TEXT.__eh_frame: 0x47f0 sha256:a923fb0b909c004d4997a1b8017d4a76ff25aaa1e538f6cad5cab2a1c61e1ab9
-+  __TEXT.__swift5_protos: 0x24 sha256:dc436741493a6fd7b6c4794ec1dedc4135fe273b3a0b18bc3eef51df91e92e72
-+  __TEXT.__unwind_info: 0x334b8 sha256:45eb8c8e45968ad8c6c92f274ab6119964b3efd85b3c885ceb4e921b018a7261
-+  __TEXT.__eh_frame: 0x47f8 sha256:24fa66be744d523d863fae1ca4a2c74ffa7c8387e1364cfdf3b41ce41f13e8f0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3be48 sha256:bc08806fef7474cd116e9863533f399a0d729caccc31091d67dffeb5ceea06a3
--  __DATA_CONST.__objc_classlist: 0x63f0 sha256:87e655d62e30e44ea49ea4dc3e047a22811fd6b4c73a17cad22d9ebb350b68d4
--  __DATA_CONST.__objc_catlist: 0x10 sha256:1c1bb5e165cd6757fe72ecf6ffb501f0600b13333f05748ec11b0e6bb61e8266
--  __DATA_CONST.__objc_protolist: 0x30 sha256:852f15cbd7697cf44a7addbde78cbd2561ab27dfc18765e4471e8d098d108973
-+  __DATA_CONST.__const: 0x3d020 sha256:bf68e247c2fe6cdbe91a0ff41518c38afd3b820e9b19922b6f3840dff5384134
-+  __DATA_CONST.__objc_classlist: 0x66f0 sha256:523021baccd369dfff7b06cb06ea8cb524fa84c7262858842e6fb56a50910ba9
-+  __DATA_CONST.__objc_catlist: 0x10 sha256:95ec8a1b7e49d5d792dd5188e2b93d65d5812ee39579051c3b76bec1bd600da6
-+  __DATA_CONST.__objc_protolist: 0x30 sha256:535c87b80b807edea59688bcc7504a99ed2b7d9ebbc065f29b78672b71dde400
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0x40828 sha256:39035781e7d91d9832a7a761b4812d6a2290f9d0f933154fda7a0fb6a216f742
--  __DATA_CONST.__objc_protorefs: 0x10 sha256:ebca533e1e167ad4b1c46af32e915c11cf7177705e26f944afdf0391ab6ca4ba
--  __DATA_CONST.__objc_superrefs: 0x63a0 sha256:3cf742effd05bb3230521dc97d2f334a60bf812664ee80ece6282ddb1481e34b
--  __DATA_CONST.__got: 0x6528 sha256:569a2f6e0f8663b330fbf9340d9f6a6ff424afa1ced24939cf3956cb5552881e
--  __AUTH_CONST.__const: 0x24799 sha256:8278ba13a3fb35cf3a697c08017a02a0a7e78e91f6e43c97cf3a9040283b7fce
--  __AUTH_CONST.__cfstring: 0x7c060 sha256:2bcb904acb9ff69b4e461c70cf63db243086ce7ceb0a24d3c43aa40f2d9329a1
--  __AUTH_CONST.__objc_const: 0x16ece0 sha256:acff9faeda28a96d6fa779e66d4bf7b79c108ff9054a942c1fd83f7cccfc9d66
--  __AUTH_CONST.__objc_intobj: 0xc48 sha256:42ba7851db445a5b3c8625623f213f5e51e8cb4aafaf8b79b12c1b95ce774836
-+  __DATA_CONST.__objc_selrefs: 0x41e28 sha256:dfb58d3a634bbf3008d606fde6d07fe1e90166a9f68f5a08f66113cfc60b20c0
-+  __DATA_CONST.__objc_protorefs: 0x10 sha256:a113defeeb3683a3f98d58700fc1622cf1f8aea14a76947d35bb83aac2cd190b
-+  __DATA_CONST.__objc_superrefs: 0x66a0 sha256:20a64bb2442454239fcf12c4112e10da1a122ea01e9f8e75bd7b7cdf83fd881b
-+  __DATA_CONST.__got: 0x6828 sha256:5317cf96a2df3c4d38ec839ff987a90084cc33cb2a7cc402b5cc4ea9616ecf87
-+  __AUTH_CONST.__const: 0x24549 sha256:6ab60022945907c0908a6c4a89e0c6430741ca80430ab149437a117da616b0d2
-+  __AUTH_CONST.__cfstring: 0x7eaa0 sha256:7a1339b58eb335ce72e055ff6837334b79b4aa6e6623ab52fa86535f0d4d00e2
-+  __AUTH_CONST.__objc_const: 0x178d10 sha256:839f4a304879737a3a6af82f47bb4a0d8b9d65df42843c1be1a94409cd28a164
-+  __AUTH_CONST.__objc_intobj: 0xc48 sha256:b41587710f5648ccd1b8599312d4dfa785550d7de4cd47b3f33984d49e1dd3dc
-   __AUTH_CONST.__auth_got: 0x930 sha256:f81c4fa3aa1ad49efe00502d9d9a92330a660f1b0325d9184f23bf478e96e22e
--  __AUTH.__objc_data: 0x19ca8 sha256:33b10822de6bbd886c995dcb45f98313a260c63b7741611e15a301d2b73ed40b
--  __DATA.__objc_ivar: 0x120ec sha256:53239f7880d890282139c006e4fac1b0d66d9f56356fe0c3b53a7e941897f6ac
--  __DATA.__data: 0x3318 sha256:e52e86b8384bd0a5100745df800f1514088a0390bf1acc31053fc9d5f555bdad
--  __DATA.__bss: 0x1e380 sha256:a1908a689b3e68cd15817205fa44dcc01d6dde7f1c173fb344ac7748573a819a
-+  __AUTH.__objc_data: 0x1baa8 sha256:265f89bd81ffa93a17311ef2616617a8e3510b934eb0ac381704af124f1734a6
-+  __DATA.__objc_ivar: 0x12864 sha256:07b48da4510693c56e5a3b29bbd1a7af5bad9ffbfd42a9256d335b3b1a16874b
-+  __DATA.__data: 0x3408 sha256:bf3fbff7683bb0109304a5e203f21dfb00b50b9b7d986c53d303f8d4468ad498
-+  __DATA.__bss: 0x1f180 sha256:474be75110624b0d0fc31c76330ee5429f6220a06d1f9c38f18c4961b0cc05ac
-   __DATA.__common: 0x20 sha256:66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925
--  __DATA_DIRTY.__objc_data: 0x24d28 sha256:2680fa1eabbf2030b13421dd1ae62659c3f9c2f92e07bce4d81eef52548c1d8f
--  __DATA_DIRTY.__data: 0x3b8 sha256:c65b87222d42278315f1b3fdaeeef11941dc22de1d92a39b55084c0090e2b020
-+  __DATA_DIRTY.__objc_data: 0x24d28 sha256:48c9a84177eaa6a925bcb1cb0069cea208fdacd1a7b60e6c45c237dc6a7cc9af
-+  __DATA_DIRTY.__data: 0x3b8 sha256:c6a43a8e38f03e0b8bf2285ca95366cd32fd2e0fa8d68b10e7ce30403d98ee81
-   __DATA_DIRTY.__common: 0x38 sha256:d7bcdf878eacb6d3d03ec380a05252ef4d8498580aceda2e18e8925b50fa6e22
-   __DATA_DIRTY.__bss: 0x100 sha256:5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
--  UUID: 850F7F16-D53C-3FCB-9D47-DDB273974A67
 -  Functions: 90362
--  Symbols:   225792
--  CStrings:  32852
-+  UUID: 742E214A-5892-3091-B8C8-23FD77B6F491
+-  Symbols:   127008
+-  CStrings:  16977
 +  Functions: 92694
-+  Symbols:   231740
-+  CStrings:  33535
- 
++  Symbols:   130426
++  CStrings:  17322
 Symbols:
 + +[CPSchemaCPClientEvent(Component) joinability]
 + +[CPSchemaCPClientEvent(InnerEventContainer) getInnerTypeStringByTag:]
@@ -3486,292 +3435,6 @@ Symbols:
 + __OBJC_METACLASS_RO_$_STSchemaSTGeoServicesSubSearch
 + __OBJC_METACLASS_RO_$_STSchemaSTGeoServicesSubSearchResult
 + __OBJC_METACLASS_RO_$_STSchemaSTSpotlightIndexProcessingMetric
-+ _objc_msgSend$activeRuntimeSwitched
-+ _objc_msgSend$addAppNotifications:
-+ _objc_msgSend$addBackboneResponseLatenciesInMs:
-+ _objc_msgSend$addIndexProcessingMetrics:
-+ _objc_msgSend$addKgImages:
-+ _objc_msgSend$addPersonTypes:
-+ _objc_msgSend$addPolicies:
-+ _objc_msgSend$addSubSearchResults:
-+ _objc_msgSend$addSubSearches:
-+ _objc_msgSend$appNotifications
-+ _objc_msgSend$arbitrationReason
-+ _objc_msgSend$areIFPAssetsInstalled
-+ _objc_msgSend$assistantServiceLoadedTimestampInNs
-+ _objc_msgSend$assistantServiceSpawnTimestampInNs
-+ _objc_msgSend$backboneResponseLatenciesInMs
-+ _objc_msgSend$cellularLqm
-+ _objc_msgSend$cellularRat
-+ _objc_msgSend$classificationResult
-+ _objc_msgSend$classifierOutcome
-+ _objc_msgSend$clearAppNotifications
-+ _objc_msgSend$clearBackboneResponseLatenciesInMs
-+ _objc_msgSend$clearIndexProcessingMetrics
-+ _objc_msgSend$clearKgImages
-+ _objc_msgSend$clearPersonTypes
-+ _objc_msgSend$clearPolicies
-+ _objc_msgSend$clearSubSearchResults
-+ _objc_msgSend$clearSubSearches
-+ _objc_msgSend$conditionFailure
-+ _objc_msgSend$contactRecipients
-+ _objc_msgSend$contextPredictorFalseNegativeDetected
-+ _objc_msgSend$cpId
-+ _objc_msgSend$deleteOverriddenResponseTier1
-+ _objc_msgSend$deleteSectionName
-+ _objc_msgSend$deleteTriggeringToolName
-+ _objc_msgSend$determinationMethod
-+ _objc_msgSend$deviceRegionInfo
-+ _objc_msgSend$didFallBackToMinimalRendering
-+ _objc_msgSend$directResponseType
-+ _objc_msgSend$earlyExitReason
-+ _objc_msgSend$eligibilityCheckRuntime
-+ _objc_msgSend$eligibilityType
-+ _objc_msgSend$entityHydrationInfo
-+ _objc_msgSend$executionCategory
-+ _objc_msgSend$executorActionPoisoningClassifierSkipped
-+ _objc_msgSend$filterType
-+ _objc_msgSend$firstAppleFoundationModelOutputTokenReceived
-+ _objc_msgSend$functionCallCount
-+ _objc_msgSend$geoSubSearchId
-+ _objc_msgSend$goalCompletionInferenceGenerated
-+ _objc_msgSend$goalCompletionInferenceMetadata
-+ _objc_msgSend$goalCompletionScore
-+ _objc_msgSend$goalCompletionStatus
-+ _objc_msgSend$hasForcedBackgroundMode
-+ _objc_msgSend$hasInvalidSpeechProfileEntities
-+ _objc_msgSend$hasPriorityNotifications
-+ _objc_msgSend$hasSpecifiedMailAccount
-+ _objc_msgSend$hasToolKitDispatch
-+ _objc_msgSend$hasVendedSnippet
-+ _objc_msgSend$ifpExpertLoadActivationParametersInBillions
-+ _objc_msgSend$ifpExpertLoadCacheHitCount
-+ _objc_msgSend$ifpExpertLoadCacheMissCount
-+ _objc_msgSend$ifpExpertLoadLatencySeconds
-+ _objc_msgSend$ifpExpertSelectionInitialPromptLatencySeconds
-+ _objc_msgSend$imageSource
-+ _objc_msgSend$indexProcessingMetrics
-+ _objc_msgSend$interfaceType
-+ _objc_msgSend$ipiClassifierSkipped
-+ _objc_msgSend$isAnnounceRequest
-+ _objc_msgSend$isCatchMeUp
-+ _objc_msgSend$isContentHidden
-+ _objc_msgSend$isContextRequired
-+ _objc_msgSend$isDeviceIFPEligible
-+ _objc_msgSend$isEarlyExit
-+ _objc_msgSend$isForegrounded
-+ _objc_msgSend$isIntelligentConnectivityEnabled
-+ _objc_msgSend$isLocationAvailable
-+ _objc_msgSend$isLocationSharingReprompt
-+ _objc_msgSend$isNCBVQUpdate
-+ _objc_msgSend$isNewConversation
-+ _objc_msgSend$isOsdCanarySampled
-+ _objc_msgSend$isReadLatest
-+ _objc_msgSend$isSameAppAsLastAnnouncement
-+ _objc_msgSend$isSearchAlongRoute
-+ _objc_msgSend$isSiriAppRequest
-+ _objc_msgSend$isSiriKitFallback
-+ _objc_msgSend$isSpeechProfileRejected
-+ _objc_msgSend$isSpeechProfileUsed
-+ _objc_msgSend$kgImages
-+ _objc_msgSend$longAnnouncementCount
-+ _objc_msgSend$lqm
-+ _objc_msgSend$mailApplication
-+ _objc_msgSend$mailCreateOrUpdateDraftInvoked
-+ _objc_msgSend$mailSendDraftInvoked
-+ _objc_msgSend$minutesToFirstNewCapability
-+ _objc_msgSend$modelInferenceContext
-+ _objc_msgSend$nonContactRecipients
-+ _objc_msgSend$notificationCount
-+ _objc_msgSend$notificationSummaryCount
-+ _objc_msgSend$notificationsPrepareNotificationsInvoked
-+ _objc_msgSend$notificationsPrepareNotificationsResult
-+ _objc_msgSend$numActivatedNCBVQEntities
-+ _objc_msgSend$numAudioFiles
-+ _objc_msgSend$numEntitiesFallenBack
-+ _objc_msgSend$numEntitiesRenderedFully
-+ _objc_msgSend$numEntitiesRetrieved
-+ _objc_msgSend$originatingRuntime
-+ _objc_msgSend$osdDetectionReported
-+ _objc_msgSend$osdMinConsecutiveSpeechThresholdInMs
-+ _objc_msgSend$osdModelVersion
-+ _objc_msgSend$osdSilenceProbabilityThreshold
-+ _objc_msgSend$osdSpeechStartTimeInMs
-+ _objc_msgSend$overriddenResponseTier1
-+ _objc_msgSend$phoneCallHistoryRetrievalContext
-+ _objc_msgSend$phoneContactFavoriteHandlesRetrievalContext
-+ _objc_msgSend$phoneEmergencyContactsRetrievalContext
-+ _objc_msgSend$phoneFaceTimeLinkGenerationContext
-+ _objc_msgSend$phoneIDSLookupContext
-+ _objc_msgSend$phoneSanitizationContext
-+ _objc_msgSend$phoneSearchCallHistoryOrVoicemailInvoked
-+ _objc_msgSend$phoneStartCallInvoked
-+ _objc_msgSend$phyMode
-+ _objc_msgSend$policies
-+ _objc_msgSend$predictionContext
-+ _objc_msgSend$primaryNetworkInterface
-+ _objc_msgSend$processCompleteness
-+ _objc_msgSend$rat
-+ _objc_msgSend$recipients
-+ _objc_msgSend$recoveryReason
-+ _objc_msgSend$referenceAudioEndTimeInNs
-+ _objc_msgSend$retrainerType
-+ _objc_msgSend$rnfSwitches
-+ _objc_msgSend$runtime
-+ _objc_msgSend$samRequestAPI
-+ _objc_msgSend$serverBatchedRequestsCount
-+ _objc_msgSend$setActiveRuntimeSwitched:
-+ _objc_msgSend$setArbitrationReason:
-+ _objc_msgSend$setAreIFPAssetsInstalled:
-+ _objc_msgSend$setAssistantServiceLoadedTimestampInNs:
-+ _objc_msgSend$setAssistantServiceSpawnTimestampInNs:
-+ _objc_msgSend$setCellularLqm:
-+ _objc_msgSend$setCellularRat:
-+ _objc_msgSend$setClassificationResult:
-+ _objc_msgSend$setClassifierOutcome:
-+ _objc_msgSend$setConditionFailure:
-+ _objc_msgSend$setContactRecipients:
-+ _objc_msgSend$setContextPredictorFalseNegativeDetected:
-+ _objc_msgSend$setCpId:
-+ _objc_msgSend$setDeterminationMethod:
-+ _objc_msgSend$setDeviceRegionInfo:
-+ _objc_msgSend$setDidFallBackToMinimalRendering:
-+ _objc_msgSend$setDirectResponseType:
-+ _objc_msgSend$setEarlyExitReason:
-+ _objc_msgSend$setEligibilityCheckRuntime:
-+ _objc_msgSend$setEligibilityType:
-+ _objc_msgSend$setEntityHydrationInfo:
-+ _objc_msgSend$setExecutionCategory:
-+ _objc_msgSend$setExecutorActionPoisoningClassifierSkipped:
-+ _objc_msgSend$setFilterType:
-+ _objc_msgSend$setFirstAppleFoundationModelOutputTokenReceived:
-+ _objc_msgSend$setFunctionCallCount:
-+ _objc_msgSend$setGeoSubSearchId:
-+ _objc_msgSend$setGoalCompletionInferenceGenerated:
-+ _objc_msgSend$setGoalCompletionInferenceMetadata:
-+ _objc_msgSend$setGoalCompletionScore:
-+ _objc_msgSend$setGoalCompletionStatus:
-+ _objc_msgSend$setHasForcedBackgroundMode:
-+ _objc_msgSend$setHasInvalidSpeechProfileEntities:
-+ _objc_msgSend$setHasPriorityNotifications:
-+ _objc_msgSend$setHasSpecifiedMailAccount:
-+ _objc_msgSend$setHasToolKitDispatch:
-+ _objc_msgSend$setHasVendedSnippet:
-+ _objc_msgSend$setIfpExpertLoadActivationParametersInBillions:
-+ _objc_msgSend$setIfpExpertLoadCacheHitCount:
-+ _objc_msgSend$setIfpExpertLoadCacheMissCount:
-+ _objc_msgSend$setIfpExpertLoadLatencySeconds:
-+ _objc_msgSend$setIfpExpertSelectionInitialPromptLatencySeconds:
-+ _objc_msgSend$setImageSource:
-+ _objc_msgSend$setInterfaceType:
-+ _objc_msgSend$setIpiClassifierSkipped:
-+ _objc_msgSend$setIsAnnounceRequest:
-+ _objc_msgSend$setIsCatchMeUp:
-+ _objc_msgSend$setIsContentHidden:
-+ _objc_msgSend$setIsContextRequired:
-+ _objc_msgSend$setIsDeviceIFPEligible:
-+ _objc_msgSend$setIsEarlyExit:
-+ _objc_msgSend$setIsForegrounded:
-+ _objc_msgSend$setIsIntelligentConnectivityEnabled:
-+ _objc_msgSend$setIsLocationAvailable:
-+ _objc_msgSend$setIsLocationSharingReprompt:
-+ _objc_msgSend$setIsNCBVQUpdate:
-+ _objc_msgSend$setIsNewConversation:
-+ _objc_msgSend$setIsOsdCanarySampled:
-+ _objc_msgSend$setIsReadLatest:
-+ _objc_msgSend$setIsSameAppAsLastAnnouncement:
-+ _objc_msgSend$setIsSearchAlongRoute:
-+ _objc_msgSend$setIsSiriAppRequest:
-+ _objc_msgSend$setIsSiriKitFallback:
-+ _objc_msgSend$setIsSpeechProfileRejected:
-+ _objc_msgSend$setIsSpeechProfileUsed:
-+ _objc_msgSend$setLongAnnouncementCount:
-+ _objc_msgSend$setLqm:
-+ _objc_msgSend$setMailApplication:
-+ _objc_msgSend$setMailCreateOrUpdateDraftInvoked:
-+ _objc_msgSend$setMailSendDraftInvoked:
-+ _objc_msgSend$setMinutesToFirstNewCapability:
-+ _objc_msgSend$setModelInferenceContext:
-+ _objc_msgSend$setNonContactRecipients:
-+ _objc_msgSend$setNotificationCount:
-+ _objc_msgSend$setNotificationSummaryCount:
-+ _objc_msgSend$setNotificationsPrepareNotificationsInvoked:
-+ _objc_msgSend$setNotificationsPrepareNotificationsResult:
-+ _objc_msgSend$setNumActivatedNCBVQEntities:
-+ _objc_msgSend$setNumAudioFiles:
-+ _objc_msgSend$setNumEntitiesFallenBack:
-+ _objc_msgSend$setNumEntitiesRenderedFully:
-+ _objc_msgSend$setNumEntitiesRetrieved:
-+ _objc_msgSend$setOriginatingRuntime:
-+ _objc_msgSend$setOsdDetectionReported:
-+ _objc_msgSend$setOsdMinConsecutiveSpeechThresholdInMs:
-+ _objc_msgSend$setOsdModelVersion:
-+ _objc_msgSend$setOsdSilenceProbabilityThreshold:
-+ _objc_msgSend$setOsdSpeechStartTimeInMs:
-+ _objc_msgSend$setOverriddenResponseTier1:
-+ _objc_msgSend$setPhoneCallHistoryRetrievalContext:
-+ _objc_msgSend$setPhoneContactFavoriteHandlesRetrievalContext:
-+ _objc_msgSend$setPhoneEmergencyContactsRetrievalContext:
-+ _objc_msgSend$setPhoneFaceTimeLinkGenerationContext:
-+ _objc_msgSend$setPhoneIDSLookupContext:
-+ _objc_msgSend$setPhoneSanitizationContext:
-+ _objc_msgSend$setPhoneSearchCallHistoryOrVoicemailInvoked:
-+ _objc_msgSend$setPhoneStartCallInvoked:
-+ _objc_msgSend$setPhyMode:
-+ _objc_msgSend$setPredictionContext:
-+ _objc_msgSend$setPrimaryNetworkInterface:
-+ _objc_msgSend$setProcessCompleteness:
-+ _objc_msgSend$setRat:
-+ _objc_msgSend$setRecipients:
-+ _objc_msgSend$setRecoveryReason:
-+ _objc_msgSend$setReferenceAudioEndTimeInNs:
-+ _objc_msgSend$setRetrainerType:
-+ _objc_msgSend$setRnfSwitches:
-+ _objc_msgSend$setRuntime:
-+ _objc_msgSend$setSamRequestAPI:
-+ _objc_msgSend$setServerBatchedRequestsCount:
-+ _objc_msgSend$setSiriAppResumeCount:
-+ _objc_msgSend$setSkimmerInferenceContext:
-+ _objc_msgSend$setSkipReason:
-+ _objc_msgSend$setSpeakerIdEmbeddingGenerated:
-+ _objc_msgSend$setSpeakerSimilarityScore:
-+ _objc_msgSend$setSpeakerSimilarityThreshold:
-+ _objc_msgSend$setStGeoServicesSearchContext:
-+ _objc_msgSend$setTargetAudioEndTimeInNs:
-+ _objc_msgSend$setTargetAudioStartTimeInNs:
-+ _objc_msgSend$setTargetRuntime:
-+ _objc_msgSend$setTargetSpeakerSpeechEvaluated:
-+ _objc_msgSend$setThreadSummaryCount:
-+ _objc_msgSend$setToolKitDispatchCount:
-+ _objc_msgSend$setTotalResultCount:
-+ _objc_msgSend$setTriggeringToolName:
-+ _objc_msgSend$setUnreadableNotificationCount:
-+ _objc_msgSend$setUserResponseMode:
-+ _objc_msgSend$setWarmupContext:
-+ _objc_msgSend$setWifiRadioTech:
-+ _objc_msgSend$setWirelessStateReported:
-+ _objc_msgSend$siriAppResumeCount
-+ _objc_msgSend$skimmerInferenceContext
-+ _objc_msgSend$skipReason
-+ _objc_msgSend$speakerIdEmbeddingGenerated
-+ _objc_msgSend$speakerSimilarityScore
-+ _objc_msgSend$speakerSimilarityThreshold
-+ _objc_msgSend$stGeoServicesSearchContext
-+ _objc_msgSend$subSearchResults
-+ _objc_msgSend$subSearches
-+ _objc_msgSend$targetAudioEndTimeInNs
-+ _objc_msgSend$targetAudioStartTimeInNs
-+ _objc_msgSend$targetRuntime
-+ _objc_msgSend$targetSpeakerSpeechEvaluated
-+ _objc_msgSend$threadSummaryCount
-+ _objc_msgSend$toolKitDispatchCount
-+ _objc_msgSend$totalResultCount
-+ _objc_msgSend$triggeringToolName
-+ _objc_msgSend$unreadableNotificationCount
-+ _objc_msgSend$userResponseMode
-+ _objc_msgSend$warmupContext
-+ _objc_msgSend$wifiRadioTech
-+ _objc_msgSend$wirelessStateReported
 + _symbolic $s19SiriInstrumentation23QualifiedTypeIdentifierP
 + _symbolic _____ So013FTDMailSchemaA16UserResponseModeV
 + _symbolic _____ So018ExecutorSiriSchemaA32ActionPoisoningClassifierOutcomeV
@@ -4147,5 +3810,4 @@ CStrings:
 + "warmupContext"
 + "wifiRadioTech"
 + "wirelessStateReported"
-
 ```

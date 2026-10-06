@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SetupAssistantPane.framework/SetupAssistantPane`
 
-```diff
+### Section Size Changes
 
- 7.0.0.0.0
--  __TEXT.__text: 0x4d9c
-+  __TEXT.__text: 0x4da0
-   __TEXT.__objc_methlist: 0x32c
-   __TEXT.__const: 0x370
-   __TEXT.__cstring: 0x2b3
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4d9c` | `0x4da0` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2a2e650f8 -> sub_2a3c1a0f8 : 416 -> 420
+~ sub_2a2d5b0f8 -> sub_2a3b0c0f8 : 416 -> 420
 ```

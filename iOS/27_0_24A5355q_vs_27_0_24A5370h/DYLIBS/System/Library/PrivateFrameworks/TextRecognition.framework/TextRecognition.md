@@ -2,139 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/TextRecognition.framework/TextRecognition`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21b86c` | `0x2232b8` | **`+0x7a4c`** |
+| `__DATA.__bss` | `0x2ae0` | `0x3090` | **`+0x5b0`** |
+| `__TEXT.__const` | `0x71d0` | `0x7760` | **`+0x590`** |
+| `__AUTH_CONST.__const` | `0x6de0` | `0x7328` | **`+0x548`** |
+| `__TEXT.__objc_methlist` | `0x8f74` | `0x91fc` | **`+0x288`** |
+| `__TEXT.__unwind_info` | `0x8218` | `0x8478` | **`+0x260`** |
+| `__TEXT.__swift5_typeref` | `0x271c` | `0x28aa` | **`+0x18e`** |
+| `__TEXT.__swift5_fieldmd` | `0x1e88` | `0x200c` | **`+0x184`** |
+| `__AUTH_CONST.__objc_const` | `0x14b00` | `0x14c78` | **`+0x178`** |
+| `__DATA_CONST.__const` | `0x1fd88` | `0x1ff00` | **`+0x178`** |
+| `__DATA_CONST.__objc_selrefs` | `0x47c8` | `0x4920` | **`+0x158`** |
+| `__TEXT.__swift5_reflstr` | `0x1b40` | `0x1c50` | **`+0x110`** |
+| `__DATA.__data` | `0x14b0` | `0x1590` | **`+0xe0`** |
+| `__TEXT.__constg_swiftt` | `0x29a4` | `0x2a68` | **`+0xc4`** |
+| `__TEXT.__swift5_assocty` | `0x278` | `0x330` | **`+0xb8`** |
+| `__DATA_CONST.__got` | `0xe88` | `0xf20` | **`+0x98`** |
+| `__TEXT.__gcc_except_tab` | `0x1166c` | `0x11704` | **`+0x98`** |
+| `__AUTH.__objc_data` | `0xd00` | `0xd70` | **`+0x70`** |
+| `__TEXT.__cstring` | `0x20117` | `0x20178` | **`+0x61`** |
+| `__AUTH_CONST.__auth_got` | `0x2078` | `0x20c8` | **`+0x50`** |
+| `__TEXT.__eh_frame` | `0x9fb8` | `0x9ff8` | **`+0x40`** |
+| `__AUTH.__data` | `0x598` | `0x5c0` | **`+0x28`** |
+| `__TEXT.__swift5_proto` | `0x258` | `0x280` | **`+0x28`** |
+| `__TEXT.__swift5_types` | `0x2fc` | `0x320` | **`+0x24`** |
+| `__DATA_DIRTY.__bss` | `0x1a78` | `0x1a88` | **`+0x10`** |
+| `__DATA.__common` | `0x68` | `0x70` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x6d0` | `0x6d8` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0xc8` | `0xd0` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__ustring`
+
+### Other Changes
+
 ```diff
 
 -446.7.0.0.0
--  __TEXT.__text: 0x21b86c sha256:25a309db80906bccd6f84e5968503dc99075231a48a50134d4309a2f3fd4ad44
--  __TEXT.__objc_methlist: 0x8f74 sha256:9a6cecd8e03d9a91ade0b9d74caff75c30ec8e7b3690cf3d98993adad47b6269
--  __TEXT.__const: 0x71d0 sha256:445ea85926eac7f3cf4ac4aaed36b3bdead8982ef298a26159601a304e8c4dd7
 +446.9.0.0.0
-+  __TEXT.__text: 0x2232b8 sha256:40a6bb30b9ea3562784100dd938ba23eaffd02910d0e5e38774df3e8f62db0b5
-+  __TEXT.__objc_methlist: 0x91fc sha256:f9bf9abef775a11c105cef3eca73e4f7811c6311079b7b1a39babc72dc1ead4f
-+  __TEXT.__const: 0x7760 sha256:88716030eb59255f4f3b561bd8cdcc92cb9594c24a5d85162b34a204263792cd
-   __TEXT.__dlopen_cstrs: 0x58 sha256:fdbef320ffd749411db9261016037c4e669251ddedfaf9d56b888e4f1c7bbcd3
--  __TEXT.__swift5_typeref: 0x271c sha256:56c953fba8ab88953e0cb4dd240905bbb33273036ffc912a6f9e74dacb4ea0de
--  __TEXT.__oslogstring: 0x50f3 sha256:5ff021f2a370ff99bdb22fe755ca01a244429622387488dec3d70288df05a699
--  __TEXT.__swift5_capture: 0xbe4 sha256:e760cb73c6e53f235a67289c6aa04aae87bb2939610d4de3ff1f893ea2ee590b
--  __TEXT.__constg_swiftt: 0x29a4 sha256:7eb75fe04a149aff1f9f235a9836e7f23de9342acf822ddfe3c9d0ec95258b04
--  __TEXT.__swift5_reflstr: 0x1b40 sha256:a705339322a53dd2f496c7cdc26aeeb456540738674a75f3bd4ea1e6771c05f2
--  __TEXT.__swift5_fieldmd: 0x1e88 sha256:d37d7d92a549f820402ba00587198aabf660d150ac53f88c6ea8a61233e30d39
--  __TEXT.__swift5_proto: 0x258 sha256:7cccf6374f48de33e463a6120ddeb60631945e889a92962eb56336d10e324fbc
--  __TEXT.__swift5_types: 0x2fc sha256:b499614c05f5a180bd7223c95b014162c7be6ae5f7fad19c20fca27ae7780b80
--  __TEXT.__swift_as_entry: 0x2cc sha256:5cd87120f0dd3ec3b06f66e4fa918281b67a1deb38035a721d9c369e71a23d06
--  __TEXT.__swift_as_ret: 0x348 sha256:195623e7104c421f46b8dba7f4c34f20ba1accc16b6574846926101d2ddb483c
--  __TEXT.__swift_as_cont: 0x780 sha256:be4b49934ea3bf550976c8b40471b0e9a1bc305e06150776ae7b9d977b56ca15
--  __TEXT.__cstring: 0x20117 sha256:4a0cdda141d16e47828e6d1c2d0cf341cd3fd665b424d8689827830b4c7caecd
--  __TEXT.__swift5_assocty: 0x278 sha256:116fa1509fc70d25cb139ab9e3b8a60a18d9596fd96fb7b1c191eea66142a5b4
--  __TEXT.__swift5_builtin: 0x118 sha256:e0b4d1c0d32806f11349931cacde4269ab569c2004c24b4bc4f7687592b25186
--  __TEXT.__swift5_mpenum: 0x8 sha256:8a7ba95a5313baea518fd66c0d358f191c0cd6e2fccd7cbf654569f85826f7ac
--  __TEXT.__swift5_protos: 0x68 sha256:bf3ad84fa916888fef33327ed788b4a90c49b10d6145eba24c907814438e7d60
--  __TEXT.__gcc_except_tab: 0x1166c sha256:f3a8dbb6ac94e7c5236ebe6e6dce146f40c1640aaba16b77e599e49a98de96f6
--  __TEXT.__ustring: 0x99aa sha256:ee7fcae1147b55e04025a2c64ff4362b3d7f0f4cf78fa7ab07d52a7274a167e1
--  __TEXT.__unwind_info: 0x8218 sha256:63b71bf37c77ad58713b3cfa4d3adfde268d6749e47a6429d6cf26a954e7bea7
--  __TEXT.__eh_frame: 0x9fb8 sha256:14a6c558cecd408118b8a969f7cc6fc4fc1be2c00a32d3bcd1f73e107a2f634b
-+  __TEXT.__swift5_typeref: 0x28aa sha256:0835a7b228363bbd4bb8201b452f02b7e59fd73495991c66ddc81f21fc11e524
-+  __TEXT.__oslogstring: 0x50f3 sha256:b1eb91fbcc67a801bec99770247ffc8cfe28f08e3813e863c381141fbc129012
-+  __TEXT.__swift5_capture: 0xbe4 sha256:03cca27550c8c4cdf10627010b2145a7872dc1d3b103db8804abb8d0cda93c4a
-+  __TEXT.__constg_swiftt: 0x2a68 sha256:52a2675cae42b04a29cbf40144ec425a58ceba48908ee7b3a7c9cea9fe3df1ef
-+  __TEXT.__swift5_reflstr: 0x1c50 sha256:96c14c94804ca8f89e740c0f6de06ab5c8f34dbb0e42f460efed573512731a0d
-+  __TEXT.__swift5_fieldmd: 0x200c sha256:e5457249a73953e752b8e0d7ee92dd993e51f5bc758850eae9b56ffca037052a
-+  __TEXT.__swift5_proto: 0x280 sha256:a47529d0a0a8f6038477b2cc4eee15437e588c061869be534e5553e2ea233577
-+  __TEXT.__swift5_types: 0x320 sha256:64216a520a372f5ca27104ce1aa8611638b82b4ccec2e614f32e9e3eb2c3bb60
-+  __TEXT.__swift_as_entry: 0x2cc sha256:2b67d15111465f5b26f518b53fdfe0a45361794d2f59c8b911e690e59c6e6aea
-+  __TEXT.__swift_as_ret: 0x348 sha256:8dc2d76908f1ca4646eb175c7dd9fee0edf919a58e78d02d19b25ea9e19d5cf6
-+  __TEXT.__swift_as_cont: 0x780 sha256:65299149a304e2073247d1190999b5e6bb196524906043413582a82e9aa69b24
-+  __TEXT.__cstring: 0x20178 sha256:bfd032032b776cc93bfdd10a3bdafcddbbe380791a1add41cbdb623d519ba058
-+  __TEXT.__swift5_assocty: 0x330 sha256:c23f14357ebb59136e24f741e81f04a77f08c122f8cc60e88e3e638c3f9beec9
-+  __TEXT.__swift5_builtin: 0x118 sha256:402d902b6b8c7a7c565c70db5c03214291da21cc43c02080c268ef5b4e35ffb2
-+  __TEXT.__swift5_mpenum: 0x8 sha256:a1ced42d742aada6dc213752caf7aa37661ebda3439fa16abd8e5ea7de713eab
-+  __TEXT.__swift5_protos: 0x68 sha256:1bca49921066b621aa54f8b3f6ebe0f95bb7ad2b2ac3cb7a78dd429de2ca8842
-+  __TEXT.__gcc_except_tab: 0x11704 sha256:9a49f41495e73c2448a84809efc6dec394a046e0c45a32c97b43d651fe5406df
-+  __TEXT.__ustring: 0x99aa sha256:63d65fbdb184daef606734c41210e331eb06ffccd956dee4a011f33944c3e166
-+  __TEXT.__unwind_info: 0x8478 sha256:797b1ff64cc3389338f27ba39d271baebbb93451fa287b8e279fd677cd28de9e
-+  __TEXT.__eh_frame: 0x9ff8 sha256:bcaf57da33a8e6a45ce0c841e7cc79355386892a0fe06e53d050dc3303cba7ca
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1fd88 sha256:51d49a706db072dd688ddec702b286de7e59bd3b9acb345816809dff54fecdd1
--  __DATA_CONST.__objc_classlist: 0x6d0 sha256:a9504606d4c5b58aa8c42d460167cee9677e974dc289eea17d3cc361aa42a823
--  __DATA_CONST.__objc_catlist: 0x50 sha256:24cee2efc45155e2856fc2e30cb49bf5a49229b8a7116c549acb7b46b502aea1
--  __DATA_CONST.__objc_protolist: 0x1f0 sha256:c78252733777dabf5c1e20100a093a479f4b006eed05f112f5e254db5f8cad27
-+  __DATA_CONST.__const: 0x1ff00 sha256:a08d70f9b810f4a9a10a5a095ced21a816d381a7189e631129dabd8c8c5d90d0
-+  __DATA_CONST.__objc_classlist: 0x6d8 sha256:9ab03a54caa0e35aebfa65f6c854e4ea4d3e3a34c6afd721c403cb6d2896eeea
-+  __DATA_CONST.__objc_catlist: 0x50 sha256:6ffee13b58141b0b740b2e78ded5a550cedba10f4a5a1573325854b3b4cd82ce
-+  __DATA_CONST.__objc_protolist: 0x1f0 sha256:2e68da7c8f73aa19332b62bb4b75a4a66b01350e85fab41f8f6bbc9d3e9878d7
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__weak_got: 0x88 sha256:f2ef128311bfb4f1f84da905d9588eb48cb543149081bce909875606d17bb5bc
--  __DATA_CONST.__objc_selrefs: 0x47c8 sha256:ee6fc9e93b06cda6cbde8bf08d5ed1801345e9558a4e127409e64bf02c392cf9
--  __DATA_CONST.__objc_protorefs: 0xc8 sha256:7a543ed0187cfd7db28bf686844af976ed93cb7fd5e340ed3fd3a98e3926c50c
--  __DATA_CONST.__objc_superrefs: 0x348 sha256:bdf3674cd57366d4da93d738ac39745d61e4d2993c9da028032202ceac23cf5e
--  __DATA_CONST.__objc_arraydata: 0x163d8 sha256:523f56c8601bdba010d45df33353c7e44b198cd41711a6d235de22a67efd55c6
--  __DATA_CONST.__got: 0xe88 sha256:a1c47abf07ea67f24698935d63688aac5151f72864b6eda98ea9c13e66228eae
--  __AUTH_CONST.__const: 0x6de0 sha256:c41f48221d50161444588231bb7133cebedf39f30dbdf462bc2fd7f5a2bc0ec7
--  __AUTH_CONST.__cfstring: 0x24180 sha256:91aa6cd4e8632f9c09f7d26c42e4dbaf30bd1e0ed91cb53308888d3fb74ca93a
--  __AUTH_CONST.__objc_const: 0x14b00 sha256:09ceb5e0fedc0db69adb3aef8cf76293a9139a16656f74837510bf5c2e5da023
--  __AUTH_CONST.__weak_auth_got: 0x30 sha256:fb650afcef226f005d6ec94eb0bb33028b7ba7b68ce8cfe4491360fe2916b9f5
--  __AUTH_CONST.__objc_intobj: 0x678 sha256:5935bb9df5a3932603cdd1f85d7857ecc8c0b042106f78437a9058e1eedbe33f
--  __AUTH_CONST.__objc_arrayobj: 0x2aa8 sha256:944b43f28766f50a9c094559749a9578ef2b294320c7bd1ac32d43b36d434adb
--  __AUTH_CONST.__objc_dictobj: 0x5488 sha256:29a5a13d47461efa74a82419578dfdf23f23b1ca9b36ced73aef847afe54b147
--  __AUTH_CONST.__objc_doubleobj: 0xf00 sha256:98a28814c9896ed9d092d079240673ef70aa6fdcd5ad7e71bde4d03757e8fc65
--  __AUTH_CONST.__objc_floatobj: 0x10 sha256:2ef6e6651057ee4256d9e517e567747a8a27ebcbff8176fe3836928345fcdf88
--  __AUTH_CONST.__auth_got: 0x2078 sha256:a58cc74cb48135a098c0794ce80991b131047b1bd0a4d1921863dcb270378245
--  __AUTH.__objc_data: 0xd00 sha256:15b39855cb7ecf4ec6d2247f5e5c92c09c41d7bd5104287d92418111b8c6d7e7
--  __AUTH.__data: 0x598 sha256:6437a8902e41af9ee5c4c378d483b5c6af768bec959e36ba156136e6a4273ebf
--  __DATA.__objc_ivar: 0xa94 sha256:248658cc0c393717c1bdc50f6856b2f589c7bf0da4b2076ef13aa27402414276
--  __DATA.__data: 0x14b0 sha256:1ffa3d3bb7bcf7c83f2fa88345b1deb002b91646d1310d761b890e195a41d752
--  __DATA.__common: 0x68 sha256:8520cf6b58480db385914e761a4ca70634f9a27e650d105a935308b9ddcfb7de
--  __DATA.__bss: 0x2ae0 sha256:7d9c8bced65eac807b722d43beed5e1acf1da3b3ada15628a410f4c42aaea441
--  __DATA_DIRTY.__objc_ivar: 0xac sha256:1418d217da93e431d67db7505172e88c468ab255528d034933231ac2d01cc6ab
--  __DATA_DIRTY.__objc_data: 0x39f0 sha256:6602983ba2e0b111383808e71611d12a596a1ca5911996d948efd8440539b13e
--  __DATA_DIRTY.__data: 0x2bc8 sha256:e838383963dcaf6f24e348e4abbe529d0c13665ea8ae6170dd1f77100cddc86b
--  __DATA_DIRTY.__bss: 0x1a78 sha256:c8a86ea922ce3d13113039a9b4191dc330aa275a86a1819a1f77ce4154e748ca
-+  __DATA_CONST.__weak_got: 0x88 sha256:99b3aecc5902ec9531c6df4a6aa010759a8ae4a72772f8ead38d6b0d85325fd4
-+  __DATA_CONST.__objc_selrefs: 0x4920 sha256:85099819c89c2af3274521ac0fa098a73c047451e5b54adb632754beec5bde95
-+  __DATA_CONST.__objc_protorefs: 0xd0 sha256:63778311ee90bb80f110267079253e46ac59d662be946c3e3bfc8b3d7e87a588
-+  __DATA_CONST.__objc_superrefs: 0x348 sha256:3a56d4385544beff3e3dace78b9c9e3b29bb73907d00e795f48e15bbf43571a6
-+  __DATA_CONST.__objc_arraydata: 0x163d8 sha256:423f90af678cd20b0ab531e751da048e2d305c7b512cd2430c05a08936ed2bfa
-+  __DATA_CONST.__got: 0xf20 sha256:5673a721534fa69b6f837c28ae8124fb48b5e3c014478b5564f6f9c02b87d823
-+  __AUTH_CONST.__const: 0x7328 sha256:e2b5f6e5bcd3bfda3f2ab3d53f5b1a251e9648734f38d615c6b677b2d4b8adee
-+  __AUTH_CONST.__cfstring: 0x24180 sha256:aadd9a04a88f46a04e81bcd5e84dbdbc1a3106e0b5895833e2fcaade4267d555
-+  __AUTH_CONST.__objc_const: 0x14c78 sha256:dec431d91146c828f68b51f19ac5c09a77e9b82f98b5b3aa6dcf1be69f917ecb
-+  __AUTH_CONST.__weak_auth_got: 0x30 sha256:6aea13dc230d28b9ccdd9f016137ee25f6840c7b6ec8db116da1a924e2bcef7a
-+  __AUTH_CONST.__objc_intobj: 0x678 sha256:edc21a511b4818db490f8282fef0af8791c521ac8d67d529258b11018a4c794f
-+  __AUTH_CONST.__objc_arrayobj: 0x2aa8 sha256:89ab10b4c4543e5c93900f4d0425f7ef8f3978f0457c0c6a10427d933ba273bd
-+  __AUTH_CONST.__objc_dictobj: 0x5488 sha256:bea817b640f2cfc6b8da5574b37bec05de9bb45b5fe2422682bf571262982deb
-+  __AUTH_CONST.__objc_doubleobj: 0xf00 sha256:069cb3d4b011b50eb7261dbc97bc241aacafdaa060cd7ba76442e5d4ad78f2cf
-+  __AUTH_CONST.__objc_floatobj: 0x10 sha256:d22cbed5064b1b34857e5327b3e6a7e5ee1ca31f7154bcba8aa7974b52441d86
-+  __AUTH_CONST.__auth_got: 0x20c8 sha256:5ac13e7173392dee7a79e2acaf6c3d55c118afc4cb6cbed5c425ca80f13de76d
-+  __AUTH.__objc_data: 0xd70 sha256:dec7aac0599d2add028da8d8070064a3f18070d0bf53fca5eab88a482d89a3de
-+  __AUTH.__data: 0x5c0 sha256:f175f97d11677159184986f22cf725f42bb0b1f0cb94d2be428942f424d3e94a
-+  __DATA.__objc_ivar: 0xa94 sha256:a882ff56c69048dd8297e2640b8fe6df82af42783cb736482eee49a6b04996af
-+  __DATA.__data: 0x1590 sha256:0e00f15b927591be7bd3d722acc6e0ad70bb3f3076a4f0193194cea9d6e5355f
-+  __DATA.__common: 0x70 sha256:b01b84ca0abe665a59c0f389eaa7b5166110510d723472d8b1c5fc6f06861385
-+  __DATA.__bss: 0x3090 sha256:93dce86688a6454c91b4a24c4c57676320c8b8b67aee953d288486603950d0e7
-+  __DATA_DIRTY.__objc_ivar: 0xac sha256:f3bef29f77557f893eac8b1cb332c9631f56b4055aa9ba1a0626ee2ee9cee487
-+  __DATA_DIRTY.__objc_data: 0x39f0 sha256:3e750ceb35a7d13c7b66de5bf2a621c3e45f15ec87632b22ed21c7c20f37bd84
-+  __DATA_DIRTY.__data: 0x2bc8 sha256:ee35dd2a5432c3666f2c3c1638da557f3b1683f615aa14cd1ffa3bffd4877344
-+  __DATA_DIRTY.__bss: 0x1a88 sha256:04f30102940f974daa462466fc5aa08ecb36622da73eb8162834e768c984b61f
-   __DATA_DIRTY.__common: 0x128 sha256:250f52cb2d6f1966a29f6ac771fa1cd185b8f8531396c8a4026c0fe635617e0c
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: 3EDC8FFC-89D1-3B49-82E7-D45878F1423E
 -  Functions: 8396
--  Symbols:   23753
--  CStrings:  14846
-+  UUID: A000F325-1865-3DE9-9553-4BB0594430C5
+-  Symbols:   8748
+-  CStrings:  11340
 +  Functions: 8661
-+  Symbols:   23815
-+  CStrings:  14849
- 
++  Symbols:   8795
++  CStrings:  11343
 Symbols:
 + -[CRFeatureSequenceRecognitionInfo scale]
 + -[CRFeatureSequenceRecognitionInfo setBounds:]
@@ -756,12 +673,6 @@ Symbols:
 + ___block_descriptor_88_ea8_32r40r48r56r64r_e10_v16?0r^i8lr32l8r40l8r48l8r56l8r64l8
 + ___block_descriptor_88_ea8_32s40r48r56r64r72r_e10_v16?0r^i8ls32l8r40l8r48l8r56l8r64l8r72l8
 + ___block_descriptor_94_e10_v16?0r^i8l
-+ ___block_literal_global.328
-+ ___block_literal_global.330
-+ ___block_literal_global.335
-+ ___block_literal_global.337
-+ ___block_literal_global.339
-+ ___block_literal_global.352
 + ___swift_memcpy56_8
 + _associated conformance 15TextRecognition19ConnectedComponentsV11PixelBoundsVSHAASQ
 + _associated conformance 15TextRecognition19ConnectedComponentsV13ComponentViewVSKAA11SubSequenceSl_SK
@@ -777,48 +688,6 @@ Symbols:
 + _associated conformance 15TextRecognition19ConnectedComponentsV13ComponentViewVSlAAST
 + _associated conformance 15TextRecognition19ConnectedComponentsV13PixelPositionVSHAASQ
 + _associated conformance 15TextRecognition19MorphologicalKernelVSHAASQ
-+ _objc_msgSend$assignFrom:
-+ _objc_msgSend$boundsAtIndex:
-+ _objc_msgSend$componentCenterAtIndex:
-+ _objc_msgSend$componentCount
-+ _objc_msgSend$componentSizeAtIndex:
-+ _objc_msgSend$dilateLabel:kernelMask:kernelWidth:kernelHeight:
-+ _objc_msgSend$dilatedTowardScoreMap:threshold:kernelSizes:validLabels:
-+ _objc_msgSend$duplicate
-+ _objc_msgSend$enumerateMatchesInString:options:range:usingBlock:
-+ _objc_msgSend$erodeLabel:kernelMask:kernelWidth:kernelHeight:
-+ _objc_msgSend$estimatedLineCountForComponentAtIndex:sampleCount:
-+ _objc_msgSend$featureImageSize
-+ _objc_msgSend$floodFillFromScoreMap:width:height:threshold:
-+ _objc_msgSend$infoForRegion:scale:bounds:featureImageSize:rotatedROI:
-+ _objc_msgSend$initWithWidth:height:
-+ _objc_msgSend$labelAtIndex:
-+ _objc_msgSend$labelAtRow:column:
-+ _objc_msgSend$orientationAdjustment
-+ _objc_msgSend$orientationConfidence
-+ _objc_msgSend$orientationOutputResult
-+ _objc_msgSend$recognizedTextRegion
-+ _objc_msgSend$recomputeInBounds:forLabelCount:startingAtLabel:
-+ _objc_msgSend$refineUsing:
-+ _objc_msgSend$rotatedROI
-+ _objc_msgSend$scale
-+ _objc_msgSend$sequenceScriptCategory
-+ _objc_msgSend$setFeatureImageSize:
-+ _objc_msgSend$setLineRegion:
-+ _objc_msgSend$setOrientationAdjustment:
-+ _objc_msgSend$setOrientationConfidence:
-+ _objc_msgSend$setOrientationOutputResult:
-+ _objc_msgSend$setRecognizedTextRegion:
-+ _objc_msgSend$setRotatedROI:
-+ _objc_msgSend$setScale:
-+ _objc_msgSend$setSequenceScriptCategory:
-+ _objc_msgSend$setStorageMode:
-+ _objc_msgSend$setTransientDecodingResult:
-+ _objc_msgSend$setWithCapacity:
-+ _objc_msgSend$sizeForLabel:
-+ _objc_msgSend$totalLabeledPixels
-+ _objc_msgSend$transientDecodingResult
-+ _objc_msgSend$withLabelMatrix:
 + _symbolic $sSK
 + _symbolic $sSk
 + _symbolic $sSl
@@ -1472,113 +1341,27 @@ Symbols:
 - __ZNSt3__1rsB9foe220100IcNS_11char_traitsIcEENS_9allocatorIcEEEERNS_13basic_istreamIT_T0_EES9_RNS_12basic_stringIS6_S7_T1_EE
 - __ZSt28__throw_bad_array_new_lengthB9foe220100v
 - __ZSt28__throw_bad_array_new_lengthB9soe220100v
-- ___block_literal_global.327
-- ___block_literal_global.329
-- ___block_literal_global.334
-- ___block_literal_global.336
-- ___block_literal_global.338
-- ___block_literal_global.351
-- _objc_msgSend$matchesInString:options:range:
 - _objc_retain_x10
 CStrings:
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h:209: libc++ Hardening assertion __count == 0 || (__dist < 0) == (__count < 0) failed: __sentinel must precede __iter when __count < 0\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/nth_element.h:122: libc++ Hardening assertion __i != __last failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/nth_element.h:127: libc++ Hardening assertion __j != __first failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/nth_element.h:158: libc++ Hardening assertion __i != __last failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/nth_element.h:164: libc++ Hardening assertion __j != __first failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/pop_heap.h:40: libc++ Hardening assertion __len > 0 failed: The heap given to pop_heap must be non-empty\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:293: libc++ Hardening assertion __k != __leftmost failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:603: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:615: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:633: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:638: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:669: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:682: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:692: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:697: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__bit_reference:113: libc++ Hardening assertion __ctz + __clz < sizeof(_StorageType) * 8 failed: __fill_masked_range called with invalid range\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__hash_table:311: libc++ Hardening assertion __node_ != nullptr failed: Attempted to dereference a non-dereferenceable unordered container const_iterator\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__memory/construct_at.h:36: libc++ Hardening assertion __location != nullptr failed: null pointer given to construct_at\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__memory/construct_at.h:59: libc++ Hardening assertion __loc != nullptr failed: null pointer given to destroy_at\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__utility/is_pointer_in_range.h:38: libc++ Hardening assertion std::__is_valid_range(__begin, __end) failed: [__begin, __end) is not a valid range\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1161: libc++ Hardening assertion __position != end() failed: vector::erase(iterator) called with a non-dereferenceable iterator\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1171: libc++ Hardening assertion __first <= __last failed: vector::erase(first, last) called with invalid range\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:414: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:419: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:434: libc++ Hardening assertion !empty() failed: front() called on an empty vector\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:438: libc++ Hardening assertion !empty() failed: front() called on an empty vector\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:442: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:446: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:509: libc++ Hardening assertion !empty() failed: vector::pop_back called on an empty vector\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector_bool.h:297: libc++ Hardening assertion __n < size() failed: vector<bool>::operator[] index out of bounds\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector_bool.h:302: libc++ Hardening assertion __n < size() failed: vector<bool>::operator[] index out of bounds\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector_bool.h:317: libc++ Hardening assertion !empty() failed: vector<bool>::back() called on an empty vector\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/array:279: libc++ Hardening assertion __n < _Size failed: out-of-bounds access in std::array<T, N>\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/array:284: libc++ Hardening assertion __n < _Size failed: out-of-bounds access in std::array<T, N>\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/deque:1534: libc++ Hardening assertion __i < size() failed: deque::operator[] index out of bounds\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/deque:1542: libc++ Hardening assertion __i < size() failed: deque::operator[] index out of bounds\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/deque:1565: libc++ Hardening assertion !empty() failed: deque::front called on an empty deque\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/deque:1577: libc++ Hardening assertion !empty() failed: deque::back called on an empty deque\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/deque:2199: libc++ Hardening assertion !empty() failed: deque::pop_front called on an empty deque\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/deque:2213: libc++ Hardening assertion !empty() failed: deque::pop_back called on an empty deque\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/deque:2341: libc++ Hardening assertion __f != end() failed: deque::erase(iterator) called with a non-dereferenceable iterator\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/list:1394: libc++ Hardening assertion !empty() failed: list::pop_front() called with empty list\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/list:1403: libc++ Hardening assertion !empty() failed: list::pop_back() called on an empty list\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/list:830: libc++ Hardening assertion !empty() failed: list::front called on empty list\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/list:834: libc++ Hardening assertion !empty() failed: list::front called on empty list\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:1371: libc++ Hardening assertion __pos <= size() failed: string index out of bounds\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/valarray:826: libc++ Hardening assertion __i < size() failed: valarray::operator[] index out of bounds\n"
-+ "/AppleInternal/Library/BuildRoots/4~CR_qugBbdpjLEdtwTGMrLyP86SFCe_pw9IFfbFA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/valarray:831: libc++ Hardening assertion __i < size() failed: valarray::operator[] index out of bounds\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1161: libc++ Hardening assertion __position != end() failed: vector::erase(iterator) called with a non-dereferenceable iterator\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1171: libc++ Hardening assertion __first <= __last failed: vector::erase(first, last) called with invalid range\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:414: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:419: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:434: libc++ Hardening assertion !empty() failed: front() called on an empty vector\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:438: libc++ Hardening assertion !empty() failed: front() called on an empty vector\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:442: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:446: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:509: libc++ Hardening assertion !empty() failed: vector::pop_back called on an empty vector\n"
 + "TextRecognition_Private.CRConnectedComponents"
 + "v16@?0r^i8"
 + "v32@?0@\"NSTextCheckingResult\"8Q16^B24"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h:209: libc++ Hardening assertion __count == 0 || (__dist < 0) == (__count < 0) failed: __sentinel must precede __iter when __count < 0\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/nth_element.h:122: libc++ Hardening assertion __i != __last failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/nth_element.h:127: libc++ Hardening assertion __j != __first failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/nth_element.h:158: libc++ Hardening assertion __i != __last failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/nth_element.h:164: libc++ Hardening assertion __j != __first failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/pop_heap.h:40: libc++ Hardening assertion __len > 0 failed: The heap given to pop_heap must be non-empty\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:293: libc++ Hardening assertion __k != __leftmost failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:603: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:615: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:633: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:638: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:669: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:682: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:692: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:697: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__bit_reference:113: libc++ Hardening assertion __ctz + __clz < sizeof(_StorageType) * 8 failed: __fill_masked_range called with invalid range\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__hash_table:311: libc++ Hardening assertion __node_ != nullptr failed: Attempted to dereference a non-dereferenceable unordered container const_iterator\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__memory/construct_at.h:36: libc++ Hardening assertion __location != nullptr failed: null pointer given to construct_at\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__memory/construct_at.h:59: libc++ Hardening assertion __loc != nullptr failed: null pointer given to destroy_at\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__utility/is_pointer_in_range.h:38: libc++ Hardening assertion std::__is_valid_range(__begin, __end) failed: [__begin, __end) is not a valid range\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1146: libc++ Hardening assertion __position != end() failed: vector::erase(iterator) called with a non-dereferenceable iterator\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1156: libc++ Hardening assertion __first <= __last failed: vector::erase(first, last) called with invalid range\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:413: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:418: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:433: libc++ Hardening assertion !empty() failed: front() called on an empty vector\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:437: libc++ Hardening assertion !empty() failed: front() called on an empty vector\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:441: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:445: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:494: libc++ Hardening assertion !empty() failed: vector::pop_back called on an empty vector\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector_bool.h:297: libc++ Hardening assertion __n < size() failed: vector<bool>::operator[] index out of bounds\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector_bool.h:302: libc++ Hardening assertion __n < size() failed: vector<bool>::operator[] index out of bounds\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector_bool.h:317: libc++ Hardening assertion !empty() failed: vector<bool>::back() called on an empty vector\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/array:279: libc++ Hardening assertion __n < _Size failed: out-of-bounds access in std::array<T, N>\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/array:284: libc++ Hardening assertion __n < _Size failed: out-of-bounds access in std::array<T, N>\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/deque:1534: libc++ Hardening assertion __i < size() failed: deque::operator[] index out of bounds\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/deque:1542: libc++ Hardening assertion __i < size() failed: deque::operator[] index out of bounds\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/deque:1565: libc++ Hardening assertion !empty() failed: deque::front called on an empty deque\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/deque:1577: libc++ Hardening assertion !empty() failed: deque::back called on an empty deque\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/deque:2199: libc++ Hardening assertion !empty() failed: deque::pop_front called on an empty deque\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/deque:2213: libc++ Hardening assertion !empty() failed: deque::pop_back called on an empty deque\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/deque:2341: libc++ Hardening assertion __f != end() failed: deque::erase(iterator) called with a non-dereferenceable iterator\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/list:1394: libc++ Hardening assertion !empty() failed: list::pop_front() called with empty list\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/list:1403: libc++ Hardening assertion !empty() failed: list::pop_back() called on an empty list\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/list:830: libc++ Hardening assertion !empty() failed: list::front called on empty list\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/list:834: libc++ Hardening assertion !empty() failed: list::front called on empty list\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:1371: libc++ Hardening assertion __pos <= size() failed: string index out of bounds\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/valarray:826: libc++ Hardening assertion __i < size() failed: valarray::operator[] index out of bounds\n"
-- "/AppleInternal/Library/BuildRoots/4~CRClugBz-tSytSSxe1upERpTIbTQdHKqSwmHqvg/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/valarray:831: libc++ Hardening assertion __i < size() failed: valarray::operator[] index out of bounds\n"
-
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1146: libc++ Hardening assertion __position != end() failed: vector::erase(iterator) called with a non-dereferenceable iterator\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1156: libc++ Hardening assertion __first <= __last failed: vector::erase(first, last) called with invalid range\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:413: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:418: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:433: libc++ Hardening assertion !empty() failed: front() called on an empty vector\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:437: libc++ Hardening assertion !empty() failed: front() called on an empty vector\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:441: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:445: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:494: libc++ Hardening assertion !empty() failed: vector::pop_back called on an empty vector\n"
 ```

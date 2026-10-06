@@ -2,12 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/SiriMessagesFlowCommon.framework/SiriMessagesFlowCommon`
 
-```diff
+### Section Size Changes
 
- 3600.47.22.11.2
--  __TEXT.__text: 0x16a04
-+  __TEXT.__text: 0x16a08
-   __TEXT.__objc_methlist: 0x13c
-   __TEXT.__const: 0xc00
-   __TEXT.__swift5_typeref: 0x660
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x16a04` | `0x16a08` | **`+0x4`** |

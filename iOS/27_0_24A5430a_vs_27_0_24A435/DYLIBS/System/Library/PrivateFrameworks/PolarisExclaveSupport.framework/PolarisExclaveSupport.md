@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/PolarisExclaveSupport.framework/PolarisExclaveSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbd5cc` | `0xbd608` | **`+0x3c`** |
+| `__AUTH_CONST.__auth_got` | `0x1078` | `0x1070` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 256.0.5.0.0
--  __TEXT.__text: 0xbd5cc
-+  __TEXT.__text: 0xbd608
-   __TEXT.__const: 0x6060
-   __TEXT.__constg_swiftt: 0x2584
-   __TEXT.__swift5_typeref: 0x240a
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x2f78
-   __AUTH_CONST.__objc_const: 0x3700
--  __AUTH_CONST.__auth_got: 0x1078
-+  __AUTH_CONST.__auth_got: 0x1070
-   __AUTH.__objc_data: 0x98
-   __AUTH.__data: 0xd98
-   __DATA.__data: 0xec0
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   Functions: 2686
 -  Symbols:   7573
 +  Symbols:   7572
-   CStrings:  386
- 
 Symbols:
 - _swift_retain_x11
 Functions:

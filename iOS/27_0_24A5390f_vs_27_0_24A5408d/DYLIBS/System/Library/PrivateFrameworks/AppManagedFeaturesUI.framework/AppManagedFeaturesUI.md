@@ -2,59 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/AppManagedFeaturesUI.framework/AppManagedFeaturesUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x23450` | `0x23914` | **`+0x4c4`** |
+| `__TEXT.__cstring` | `0xbb1` | `0xc71` | **`+0xc0`** |
+| `__DATA.__common` | `0x8` | `0x28` | **`+0x20`** |
+| `__TEXT.__const` | `0x1238` | `0x1258` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xb28` | `0xb38` | **`+0x10`** |
+| `__DATA.__data` | `0x748` | `0x758` | **`+0x10`** |
+| `__AUTH.__objc_data` | `0x830` | `0x838` | **`+0x8`** |
+| `__TEXT.__constg_swiftt` | `0x838` | `0x840` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -46.0.7.0.0
--  __TEXT.__text: 0x23450
 +46.0.15.0.0
-+  __TEXT.__text: 0x23914
-   __TEXT.__objc_methlist: 0x35c
--  __TEXT.__const: 0x1238
--  __TEXT.__cstring: 0xbb1
-+  __TEXT.__const: 0x1258
-+  __TEXT.__cstring: 0xc71
-   __TEXT.__oslogstring: 0x8ee
--  __TEXT.__constg_swiftt: 0x838
-+  __TEXT.__constg_swiftt: 0x840
-   __TEXT.__swift5_typeref: 0x119e
-   __TEXT.__swift5_reflstr: 0x408
-   __TEXT.__swift5_fieldmd: 0x4f4
 
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0xf50
-   __AUTH_CONST.__objc_const: 0x8b8
--  __AUTH_CONST.__auth_got: 0xb28
--  __AUTH.__objc_data: 0x830
-+  __AUTH_CONST.__auth_got: 0xb38
-+  __AUTH.__objc_data: 0x838
-   __AUTH.__data: 0x558
--  __DATA.__data: 0x748
-+  __DATA.__data: 0x758
-   __DATA.__bss: 0xd40
--  __DATA.__common: 0x8
-+  __DATA.__common: 0x28
-   - /System/Library/Frameworks/AppManagedFeatures.framework/AppManagedFeatures
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit
-   - /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities
-   - /System/Library/PrivateFrameworks/_IconServices_SwiftUI.framework/_IconServices_SwiftUI
 +  - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 707
--  Symbols:   635
+-  Symbols:   527
 -  CStrings:  104
 +  Functions: 711
-+  Symbols:   637
++  Symbols:   529
 +  CStrings:  106
- 
 Symbols:
 + _MobileGestalt_get_current_device
 + _MobileGestalt_get_wapiCapability

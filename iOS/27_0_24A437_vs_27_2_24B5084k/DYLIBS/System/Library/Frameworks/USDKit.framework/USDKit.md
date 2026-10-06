@@ -2,27 +2,24 @@
 
 > `/System/Library/Frameworks/USDKit.framework/USDKit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2db650` | `0x2db668` | **`+0x18`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -106.0.10.0.1
--  __TEXT.__text: 0x2d467c
 +106.40.3.0.0
-+  __TEXT.__text: 0x2d4694
-   __TEXT.__const: 0x2d095
-   __TEXT.__gcc_except_tab: 0x45a1c
-   __TEXT.__cstring: 0x1746a
 
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/ImageIO.framework/ImageIO
-   - /System/Library/PrivateFrameworks/AdaptiveMesh.framework/AdaptiveMesh
 -  - /System/Library/PrivateFrameworks/USDObjCKit.framework/USDObjCKit
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 Functions:
 ~ _$s6USDKit8SdfLayerC14exportToBuffer7comment4args10Foundation4DataVSS_SDyS2SGtKF : 236 -> 244
 ~ _$s6USDKit10UsdZipFileV08dataFromD4Pathy10Foundation4DataVSgSSF : 668 -> 676

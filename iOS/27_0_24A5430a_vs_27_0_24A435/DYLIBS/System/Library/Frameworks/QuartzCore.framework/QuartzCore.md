@@ -2,68 +2,33 @@
 
 > `/System/Library/Frameworks/QuartzCore.framework/QuartzCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3fa5cc` | `0x3faa60` | **`+0x494`** |
+| `__TEXT.__const` | `0x19aa0` | `0x19ba0` | **`+0x100`** |
+| `__DATA.__bss` | `0x46f0` | `0x4680` | **`-0x70`** |
+| `__TEXT.__cstring` | `0x29ab4` | `0x29aff` | **`+0x4b`** |
+| `__AUTH_CONST.__cfstring` | `0x18b40` | `0x18b80` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0x18590` | `0x185c0` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x10c20` | `0x10c50` | **`+0x30`** |
+| `__DATA_DIRTY.__bss` | `0x69c0` | `0x69a0` | **`-0x20`** |
+| `__AUTH_CONST.__objc_const` | `0xee20` | `0xee38` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5d10` | `0x5d18` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x9fac` | `0x9fa4` | **`-0x8`** |
+| `__TEXT.__objc_methlist` | `0xbbd4` | `0xbbdc` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 1223.0.18.0.0
--  __TEXT.__text: 0x3fa5cc
--  __TEXT.__objc_methlist: 0xbbd4
--  __TEXT.__const: 0x19aa0
-+  __TEXT.__text: 0x3faa60
-+  __TEXT.__objc_methlist: 0xbbdc
-+  __TEXT.__const: 0x19ba0
-   __TEXT.__dlopen_cstrs: 0xe0
--  __TEXT.__cstring: 0x29ab4
--  __TEXT.__gcc_except_tab: 0x9fac
-+  __TEXT.__cstring: 0x29aff
-+  __TEXT.__gcc_except_tab: 0x9fa4
-   __TEXT.__oslogstring: 0x132a1
-   __TEXT.__unwind_info: 0x9498
-   __TEXT.__objc_stubs: 0x0
-
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x10c20
-+  __DATA_CONST.__const: 0x10c50
-   __DATA_CONST.__objc_classlist: 0x468
-   __DATA_CONST.__objc_catlist: 0x60
-   __DATA_CONST.__objc_protolist: 0xd8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5d10
-+  __DATA_CONST.__objc_selrefs: 0x5d18
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x4e8
-   __DATA_CONST.__objc_arraydata: 0x3d00
-   __DATA_CONST.__got: 0xdd0
--  __AUTH_CONST.__const: 0x18590
--  __AUTH_CONST.__cfstring: 0x18b40
--  __AUTH_CONST.__objc_const: 0xee20
-+  __AUTH_CONST.__const: 0x185c0
-+  __AUTH_CONST.__cfstring: 0x18b80
-+  __AUTH_CONST.__objc_const: 0xee38
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_floatobj: 0x20
-   __AUTH_CONST.__objc_doubleobj: 0x150
-
-   __DATA.__common: 0x10
-   __DATA_DIRTY.__objc_data: 0x17c0
-   __DATA_DIRTY.__data: 0x620
--  __DATA_DIRTY.__bss: 0x69c0
-+  __DATA_DIRTY.__bss: 0x69a0
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libxml2.2.dylib
 -  Functions: 12782
--  Symbols:   21794
+-  Symbols:   19901
 -  CStrings:  8597
 +  Functions: 12783
-+  Symbols:   21797
++  Symbols:   19904
 +  CStrings:  8601
- 
 Symbols:
 + GCC_except_table10007
 + GCC_except_table10009

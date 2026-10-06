@@ -2,37 +2,27 @@
 
 > `com.apple.driver.AppleProcessorTrace`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x33bcc` | `0x3c314` | **`+0x8748`** |
+| `__DATA_CONST.__const` | `0x9d90` | `0xb188` | **`+0x13f8`** |
+| `__TEXT.__cstring` | `0x548e` | `0x5981` | **`+0x4f3`** |
+| `__DATA_CONST.__kalloc_type` | `0x680` | `0x740` | **`+0xc0`** |
+| `__DATA.__common` | `0x6e8` | `0x760` | **`+0x78`** |
+| `__DATA_CONST.__mod_init_func` | `0xd0` | `0xe8` | **`+0x18`** |
+| `__DATA_CONST.__mod_term_func` | `0xd0` | `0xe8` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
- 130.0.0.0.0
-   __TEXT.__os_log: 0x19a2
-   __TEXT.__const: 0xa8
--  __TEXT.__cstring: 0x548e
--  __TEXT_EXEC.__text: 0x33bcc
-+  __TEXT.__cstring: 0x5981
-+  __TEXT_EXEC.__text: 0x3c314
-   __TEXT_EXEC.__auth_stubs: 0x760
-   __DATA.__data: 0xc4
--  __DATA.__common: 0x6e8
--  __DATA_CONST.__mod_init_func: 0xd0
--  __DATA_CONST.__mod_term_func: 0xd0
--  __DATA_CONST.__const: 0x9d90
-+  __DATA.__common: 0x760
-+  __DATA_CONST.__mod_init_func: 0xe8
-+  __DATA_CONST.__mod_term_func: 0xe8
-+  __DATA_CONST.__const: 0xb188
-   __DATA_CONST.__weak_auth_got: 0xb0
--  __DATA_CONST.__kalloc_type: 0x680
-+  __DATA_CONST.__kalloc_type: 0x740
-   __DATA_CONST.__kalloc_var: 0x1e0
-   __DATA_CONST.__auth_got: 0x300
-   __DATA_CONST.__got: 0xb0
 -  Functions: 1185
 +  Functions: 1314
-   Symbols:   0
+
 -  CStrings:  500
 +  CStrings:  519
- 
 CStrings:
 + "121111121222121211111112112211211211211211211211211211211211"
 + "AppleProcessorTraceT8152"

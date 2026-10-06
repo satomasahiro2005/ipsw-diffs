@@ -2,41 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/MediaConversionService.framework/MediaConversionService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1b4d4` | `0x1b520` | **`+0x4c`** |
+| `__TEXT.__objc_methlist` | `0x1c2c` | `0x1c3c` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x390` | `0x398` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x14a8` | `0x14b0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -910.33.102.0.0
--  __TEXT.__text: 0x1b4d4
--  __TEXT.__objc_methlist: 0x1c2c
 +912.0.111.0.0
-+  __TEXT.__text: 0x1b520
-+  __TEXT.__objc_methlist: 0x1c3c
-   __TEXT.__const: 0xc0
-   __TEXT.__gcc_except_tab: 0x58c
-   __TEXT.__cstring: 0x4c8c
 
-   __DATA_CONST.__objc_classlist: 0xb8
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x14a8
-+  __DATA_CONST.__objc_selrefs: 0x14b0
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x58
-   __DATA_CONST.__objc_arraydata: 0x4c8
--  __DATA_CONST.__got: 0x390
-+  __DATA_CONST.__got: 0x398
-   __AUTH_CONST.__const: 0x140
-   __AUTH_CONST.__cfstring: 0x2da0
-   __AUTH_CONST.__objc_const: 0x2a78
-
-   - /System/Library/PrivateFrameworks/PhotosFormats.framework/PhotosFormats
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 639
--  Symbols:   1894
+-  Symbols:   1360
 +  Functions: 640
-+  Symbols:   1897
-   CStrings:  553
- 
++  Symbols:   1362
 Symbols:
 + -[PHMediaFormatConversionImplementation_MediaConversionService _conversionErrorForStatus:underlyingError:]
 + GCC_except_table506
@@ -48,7 +33,6 @@ Symbols:
 + GCC_except_table614
 + ___NSDictionary0__struct
 + ___block_descriptor_64_e8_32s40s48bs56w_e37_v32?0q8"NSDictionary"16"NSError"24ls32l8w56l8s40l8s48l8
-+ _objc_msgSend$_conversionErrorForStatus:underlyingError:
 - GCC_except_table505
 - GCC_except_table507
 - GCC_except_table593

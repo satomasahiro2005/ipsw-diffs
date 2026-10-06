@@ -2,15 +2,14 @@
 
 > `/System/Library/PrivateFrameworks/DataDetectorsUI.framework/PlugIns/com.apple.DataDetectorsUI.ActionsExtension.appex/com.apple.DataDetectorsUI.ActionsExtension`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -613.0.0.0.0
 +614.0.0.0.0
-   __TEXT.__text: 0x2c18
-   __TEXT.__auth_stubs: 0x3e0
-   __TEXT.__objc_stubs: 0xea0
 ```

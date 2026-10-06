@@ -2,30 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/32023/Libraries/libLLVM.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x3978` | `0x35b8` | **`-0x3c0`** |
+| `__DATA_DIRTY.__bss` | `0x47030` | `0x473f0` | **`+0x3c0`** |
+| `__TEXT.__text` | `0x203182c` | `0x20318b0` | **`+0x84`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -32023.922.2.0.0
--  __TEXT.__text: 0x1ffddd8
 +32023.922.3.0.0
-+  __TEXT.__text: 0x1ffde5c
-   __TEXT.__init_offsets: 0x68c
-   __TEXT.__const: 0x41912a0
-   __TEXT.__cstring: 0x11962d
-
-   __DATA.__data: 0x24a0
-   __DATA.__common: 0x7b7
-   __DATA_DIRTY.__data: 0x1208
--  __DATA_DIRTY.__bss: 0x47030
-+  __DATA_DIRTY.__bss: 0x473f0
-   __DATA_DIRTY.__common: 0xc0f3
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/32023/Libraries/libllvm-flatbuffers.dylib
 Functions:
-~ sub_2190004fc : 896 -> 1028
+~ sub_21900e3c8 : 896 -> 1028
 CStrings:
 + "32023.922.3"
 + "Apple LLVM version 32023.922.3"

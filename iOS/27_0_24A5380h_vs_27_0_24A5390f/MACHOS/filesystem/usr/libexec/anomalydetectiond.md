@@ -2,84 +2,54 @@
 
 > `/usr/libexec/anomalydetectiond`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x36d0e4` | `0x36fcdc` | **`+0x2bf8`** |
+| `__DATA_CONST.__const` | `0x27530` | `0x28848` | **`+0x1318`** |
+| `__TEXT.__oslogstring` | `0x118e6` | `0x11b5f` | **`+0x279`** |
+| `__TEXT.__const` | `0xfaee` | `0xfcbe` | **`+0x1d0`** |
+| `__TEXT.__gcc_except_tab` | `0x10470` | `0x10560` | **`+0xf0`** |
+| `__TEXT.__unwind_info` | `0xc7a8` | `0xc840` | **`+0x98`** |
+| `__TEXT.__cstring` | `0x1c8dd` | `0x1c922` | **`+0x45`** |
+| `__DATA_CONST.__cfstring` | `0x6a40` | `0x6a60` | **`+0x20`** |
+| `__TEXT.__objc_methtype` | `0x5f66` | `0x5f74` | **`+0xe`** |
+| `__DATA.__bss` | `0x230` | `0x228` | **`-0x8`** |
+| `__DATA_CONST.__auth_ptr` | `0x48` | `0x50` | **`+0x8`** |
+| `__TEXT.__objc_methname` | `0xc218` | `0xc220` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
 -166.0.0.0.0
--  __TEXT.__text: 0x36d0e4
 +170.0.0.0.0
-+  __TEXT.__text: 0x36fcdc
-   __TEXT.__auth_stubs: 0x1840
-   __TEXT.__objc_stubs: 0x9480
-   __TEXT.__objc_methlist: 0x8d98
--  __TEXT.__gcc_except_tab: 0x10470
--  __TEXT.__const: 0xfaee
--  __TEXT.__cstring: 0x1c8dd
--  __TEXT.__oslogstring: 0x118e6
-+  __TEXT.__gcc_except_tab: 0x10560
-+  __TEXT.__const: 0xfcbe
-+  __TEXT.__cstring: 0x1c922
-+  __TEXT.__oslogstring: 0x11b5f
-   __TEXT.__objc_classname: 0x1070
--  __TEXT.__objc_methtype: 0x5f66
--  __TEXT.__objc_methname: 0xc218
-+  __TEXT.__objc_methtype: 0x5f74
-+  __TEXT.__objc_methname: 0xc220
-   __TEXT.__ustring: 0x10ae
--  __TEXT.__unwind_info: 0xc7a8
-+  __TEXT.__unwind_info: 0xc840
-   __TEXT.__eh_frame: 0x670
--  __DATA_CONST.__const: 0x27530
--  __DATA_CONST.__cfstring: 0x6a40
-+  __DATA_CONST.__const: 0x28848
-+  __DATA_CONST.__cfstring: 0x6a60
-   __DATA_CONST.__objc_classlist: 0x4c8
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x128
 
-   __DATA_CONST.__objc_doubleobj: 0x10
-   __DATA_CONST.__auth_got: 0xc38
-   __DATA_CONST.__got: 0x678
--  __DATA_CONST.__auth_ptr: 0x48
-+  __DATA_CONST.__auth_ptr: 0x50
-   __DATA.__objc_const: 0x10660
-   __DATA.__objc_selrefs: 0x3050
-   __DATA.__objc_ivar: 0x94c
-   __DATA.__objc_data: 0x2fd0
-   __DATA.__data: 0x2020
--  __DATA.__bss: 0x230
-+  __DATA.__bss: 0x228
-   __DATA.__common: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreLocation.framework/CoreLocation
-
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 17147
 +  Functions: 17220
-   Symbols:   608
+
 -  CStrings:  9341
 +  CStrings:  9354
- 
 CStrings:
 + "@154@0:8Q16C24f28f32C36S40c44c48c52c56c60Q64[3 ]72C80C84S88Q92 100 102 104C106C110*114B122C126f130f134C138B142S146C150"
 + "DebugAnomalyFMDeescSkipFailedLowSense"

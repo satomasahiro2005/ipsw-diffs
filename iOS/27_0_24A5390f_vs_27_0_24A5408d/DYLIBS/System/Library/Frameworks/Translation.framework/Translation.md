@@ -2,84 +2,42 @@
 
 > `/System/Library/Frameworks/Translation.framework/Translation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5c160` | `0x5cb08` | **`+0x9a8`** |
+| `__AUTH_CONST.__objc_const` | `0xbde0` | `0xc0f8` | **`+0x318`** |
+| `__TEXT.__oslogstring` | `0x5176` | `0x5306` | **`+0x190`** |
+| `__TEXT.__objc_methlist` | `0x5cb0` | `0x5e10` | **`+0x160`** |
+| `__AUTH_CONST.__cfstring` | `0x3c80` | `0x3d60` | **`+0xe0`** |
+| `__TEXT.__cstring` | `0x33b4` | `0x3414` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0xe8` | `0x138` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2850` | `0x2898` | **`+0x48`** |
+| `__AUTH_CONST.__const` | `0x1010` | `0x1050` | **`+0x40`** |
+| `__DATA.__objc_ivar` | `0x8b0` | `0x8e0` | **`+0x30`** |
+| `__DATA_CONST.__objc_arraydata` | `0x178` | `0x1a0` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x1c50` | `0x1c78` | **`+0x28`** |
+| `__DATA.__bss` | `0x1070` | `0x1090` | **`+0x20`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0xd8` | `0xf0` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x598` | `0x5a0` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x328` | `0x330` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x2a8` | `0x2b0` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0xb3c` | `0xb44` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -385.0.0.0.0
--  __TEXT.__text: 0x5c160
--  __TEXT.__objc_methlist: 0x5cb0
 +388.0.0.0.0
-+  __TEXT.__text: 0x5cb08
-+  __TEXT.__objc_methlist: 0x5e10
-   __TEXT.__const: 0xf68
--  __TEXT.__cstring: 0x33b4
--  __TEXT.__oslogstring: 0x5176
--  __TEXT.__gcc_except_tab: 0xb3c
-+  __TEXT.__cstring: 0x3414
-+  __TEXT.__oslogstring: 0x5306
-+  __TEXT.__gcc_except_tab: 0xb44
-   __TEXT.__ustring: 0x90
-   __TEXT.__swift5_typeref: 0x607
-   __TEXT.__constg_swiftt: 0x3e4
 
-   __TEXT.__swift_as_entry: 0x4c
-   __TEXT.__swift_as_ret: 0x50
-   __TEXT.__swift_as_cont: 0x84
--  __TEXT.__unwind_info: 0x1c50
-+  __TEXT.__unwind_info: 0x1c78
-   __TEXT.__eh_frame: 0x8e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x1ea0
--  __DATA_CONST.__objc_classlist: 0x328
-+  __DATA_CONST.__objc_classlist: 0x330
-   __DATA_CONST.__objc_catlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x98
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2850
-+  __DATA_CONST.__objc_selrefs: 0x2898
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__objc_superrefs: 0x2a8
--  __DATA_CONST.__objc_arraydata: 0x178
--  __DATA_CONST.__got: 0x598
--  __AUTH_CONST.__const: 0x1010
--  __AUTH_CONST.__cfstring: 0x3c80
--  __AUTH_CONST.__objc_const: 0xbde0
--  __AUTH_CONST.__objc_arrayobj: 0xd8
-+  __DATA_CONST.__objc_superrefs: 0x2b0
-+  __DATA_CONST.__objc_arraydata: 0x1a0
-+  __DATA_CONST.__got: 0x5a0
-+  __AUTH_CONST.__const: 0x1050
-+  __AUTH_CONST.__cfstring: 0x3d60
-+  __AUTH_CONST.__objc_const: 0xc0f8
-+  __AUTH_CONST.__objc_arrayobj: 0xf0
-   __AUTH_CONST.__objc_intobj: 0x90
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__auth_got: 0xa60
--  __AUTH.__objc_data: 0xe8
-+  __AUTH.__objc_data: 0x138
-   __AUTH.__data: 0x338
--  __DATA.__objc_ivar: 0x8b0
-+  __DATA.__objc_ivar: 0x8e0
-   __DATA.__data: 0xb70
--  __DATA.__bss: 0x1070
-+  __DATA.__bss: 0x1090
-   __DATA.__common: 0x30
-   __DATA_DIRTY.__objc_data: 0x1e28
-   __DATA_DIRTY.__data: 0x3a8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2861
--  Symbols:   5254
+-  Symbols:   4346
 -  CStrings:  931
 +  Functions: 2896
-+  Symbols:   5324
++  Symbols:   4408
 +  CStrings:  944
- 
 Symbols:
 + +[_LTLanguageVariantFilter _hiRequestedLanguageIdentifiers]
 + -[_LTCombinedTranslationResult engineInfo]
@@ -150,16 +108,6 @@ Symbols:
 + __OBJC_METACLASS_RO_$__LTTextSessionConfiguration
 + ____LTOSLogVariantFiltering_block_invoke
 + ____LTSupportedLocaleDefaultLIDLanguageMapping_block_invoke
-+ _objc_msgSend$_hiRequestedLanguageIdentifiers
-+ _objc_msgSend$_initWithConfiguration:
-+ _objc_msgSend$deviceRegionForFilter:
-+ _objc_msgSend$engineInfo
-+ _objc_msgSend$initWithLocalePair:sourceAttributedText:targetAttributedText:clientIdentifier:engineInfo:
-+ _objc_msgSend$initWithLocalePair:sourceText:targetText:clientIdentifier:engineInfo:
-+ _objc_msgSend$originatingProcessIdentifier
-+ _objc_msgSend$setOriginatingProcessIdentifier:
-+ _objc_msgSend$setSourceLocale:
-+ _objc_msgSend$setTargetLocale:
 - -[_LTTextResult initWithLocalePair:sourceAttributedText:targetAttributedText:clientIdentifier:]
 - -[_LTTextResult initWithLocalePair:sourceText:targetText:clientIdentifier:]
 - GCC_except_table129
@@ -167,8 +115,6 @@ Symbols:
 - GCC_except_table66
 - GCC_except_table70
 - GCC_except_table73
-- _objc_msgSend$initWithLocalePair:sourceAttributedText:targetAttributedText:clientIdentifier:
-- _objc_msgSend$initWithLocalePair:sourceText:targetText:clientIdentifier:
 CStrings:
 + "Debug setting to prevent language variant filtering enabled. Will show all supported variants in UI"
 + "Filtered %zu supported languages into %zu to display"

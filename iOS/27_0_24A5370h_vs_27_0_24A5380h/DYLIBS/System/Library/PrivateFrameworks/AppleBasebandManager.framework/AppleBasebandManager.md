@@ -2,25 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/AppleBasebandManager.framework/AppleBasebandManager`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x28a60` | `0x289bc` | **`-0xa4`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x28a60
-+  __TEXT.__text: 0x289bc
-   __TEXT.__init_offsets: 0x2c
-   __TEXT.__const: 0x1ae0
-   __TEXT.__gcc_except_tab: 0x438c
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA.__data : content changed
+-1570.0.0.0.0
++1576.0.0.0.0
 Functions:
 ~ __ZN5boost8signals26detail11auto_bufferINS_10shared_ptrIvEENS1_15store_n_objectsILj10EEENS1_19default_grow_policyENSt3__19allocatorIS4_EEE9push_backERKS4_ : 504 -> 496
 ~ ____ZN20AppleBasebandManager5State4initEv_block_invoke : 5808 -> 5676
@@ -31,5 +28,4 @@ CStrings:
 + "AppleBasebandServices_Manager-1576"
 - "AppleBasebandManager-AppleBasebandServices_Manager-1570"
 - "AppleBasebandServices_Manager-1570"
-
 ```

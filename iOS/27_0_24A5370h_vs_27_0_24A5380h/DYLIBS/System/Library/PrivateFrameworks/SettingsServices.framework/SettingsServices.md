@@ -2,13 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/SettingsServices.framework/SettingsServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x4a` | `0x52` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__text: 0x0
--  __TEXT.__const: 0x4a
-+  __TEXT.__const: 0x52
-   __DATA_CONST.__const: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
+-1.0.1.0.0
++2027.0.1.0.0
 ```

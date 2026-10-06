@@ -2,116 +2,61 @@
 
 > `/System/Library/PrivateFrameworks/SleepDaemon.framework/SleepDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x798ac` | `0x6e920` | **`-0xaf8c`** |
+| `__TEXT.__oslogstring` | `0xb075` | `0x9bfe` | **`-0x1477`** |
+| `__AUTH_CONST.__objc_const` | `0xf220` | `0xe4a0` | **`-0xd80`** |
+| `__TEXT.__objc_methlist` | `0x7ed4` | `0x77a4` | **`-0x730`** |
+| `__DATA_CONST.__const` | `0x20e8` | `0x1c58` | **`-0x490`** |
+| `__DATA_CONST.__objc_selrefs` | `0x38a0` | `0x3420` | **`-0x480`** |
+| `__AUTH_CONST.__cfstring` | `0x1aa0` | `0x16c0` | **`-0x3e0`** |
+| `__TEXT.__cstring` | `0x253c` | `0x217d` | **`-0x3bf`** |
+| `__TEXT.__unwind_info` | `0x2080` | `0x1e48` | **`-0x238`** |
+| `__DATA.__data` | `0x2560` | `0x2350` | **`-0x210`** |
+| `__TEXT.__gcc_except_tab` | `0xa34` | `0x844` | **`-0x1f0`** |
+| `__DATA_DIRTY.__objc_data` | `0x2b00` | `0x2920` | **`-0x1e0`** |
+| `__AUTH.__objc_data` | `0x8c0` | `0x770` | **`-0x150`** |
+| `__AUTH_CONST.__const` | `0x1048` | `0xf60` | **`-0xe8`** |
+| `__DATA_CONST.__got` | `0xba8` | `0xad0` | **`-0xd8`** |
+| `__TEXT.__const` | `0x3c0` | `0x328` | **`-0x98`** |
+| `__AUTH_CONST.__auth_got` | `0xc88` | `0xbf8` | **`-0x90`** |
+| `__DATA.__objc_ivar` | `0x514` | `0x4b8` | **`-0x5c`** |
+| `__DATA_CONST.__objc_classlist` | `0x4f0` | `0x4a8` | **`-0x48`** |
+| `__AUTH.__data` | `0x30` | `—` | **`-0x30`** |
+| `__DATA_CONST.__objc_superrefs` | `0x318` | `0x2e8` | **`-0x30`** |
+| `__TEXT.__constg_swiftt` | `0x130` | `0x104` | **`-0x2c`** |
+| `__DATA_CONST.__objc_protorefs` | `0x48` | `0x70` | **`+0x28`** |
+| `__DATA.__common` | `0x18` | `—` | **`-0x18`** |
+| `__DATA_CONST.__objc_catlist` | `0x48` | `0x30` | **`-0x18`** |
+| `__TEXT.__swift5_typeref` | `0x1d3` | `0x1c1` | **`-0x12`** |
+| `__TEXT.__swift5_capture` | `0x158` | `0x148` | **`-0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x14c` | `0x13c` | **`-0x10`** |
+| `__TEXT.__swift5_types` | `0x14` | `0x10` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.0.72.2.7
--  __TEXT.__text: 0x76584
--  __TEXT.__objc_methlist: 0x7ed4
--  __TEXT.__const: 0x3c0
--  __TEXT.__swift5_typeref: 0x1d3
--  __TEXT.__swift5_capture: 0x158
--  __TEXT.__oslogstring: 0xb075
--  __TEXT.__constg_swiftt: 0x130
--  __TEXT.__swift5_fieldmd: 0x14c
--  __TEXT.__swift5_builtin: 0x14
 +7027.1.36.2.7
-+  __TEXT.__text: 0x6b9c4
-+  __TEXT.__objc_methlist: 0x77a4
-+  __TEXT.__const: 0x328
-+  __TEXT.__oslogstring: 0x9bfe
-+  __TEXT.__cstring: 0x217d
-+  __TEXT.__constg_swiftt: 0x104
-+  __TEXT.__swift5_typeref: 0x1c1
-   __TEXT.__swift5_reflstr: 0x28b
--  __TEXT.__swift5_types: 0x14
--  __TEXT.__cstring: 0x253c
--  __TEXT.__gcc_except_tab: 0xa34
--  __TEXT.__unwind_info: 0x2978
-+  __TEXT.__swift5_fieldmd: 0x13c
-+  __TEXT.__swift5_builtin: 0x14
-+  __TEXT.__swift5_types: 0x10
-+  __TEXT.__swift5_capture: 0x148
-+  __TEXT.__gcc_except_tab: 0x844
-+  __TEXT.__unwind_info: 0x26c0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x20e8
--  __DATA_CONST.__objc_classlist: 0x4f0
--  __DATA_CONST.__objc_catlist: 0x48
-+  __DATA_CONST.__const: 0x1c58
-+  __DATA_CONST.__objc_classlist: 0x4a8
-+  __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x338
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x38a0
--  __DATA_CONST.__objc_protorefs: 0x48
--  __DATA_CONST.__objc_superrefs: 0x318
--  __DATA_CONST.__got: 0xba8
--  __AUTH_CONST.__const: 0x1048
--  __AUTH_CONST.__cfstring: 0x1aa0
--  __AUTH_CONST.__objc_const: 0xf220
-+  __DATA_CONST.__objc_selrefs: 0x3420
-+  __DATA_CONST.__objc_protorefs: 0x70
-+  __DATA_CONST.__objc_superrefs: 0x2e8
-+  __DATA_CONST.__got: 0xad0
-+  __AUTH_CONST.__const: 0xf60
-+  __AUTH_CONST.__cfstring: 0x16c0
-+  __AUTH_CONST.__objc_const: 0xe4a0
-   __AUTH_CONST.__objc_intobj: 0x60
--  __AUTH_CONST.__auth_got: 0xc88
--  __AUTH.__objc_data: 0x8c0
--  __AUTH.__data: 0x30
--  __DATA.__objc_ivar: 0x514
--  __DATA.__data: 0x2560
--  __DATA.__common: 0x18
-+  __AUTH_CONST.__auth_got: 0xbf8
-+  __AUTH.__objc_data: 0x770
-+  __DATA.__objc_ivar: 0x4b8
-+  __DATA.__data: 0x2350
-   __DATA_DIRTY.__objc_ivar: 0xb4
--  __DATA_DIRTY.__objc_data: 0x2b00
-+  __DATA_DIRTY.__objc_data: 0x2920
-   __DATA_DIRTY.__data: 0x2e8
-   __DATA_DIRTY.__common: 0x28
-   __DATA_DIRTY.__bss: 0xa0
 
-   - /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet
-   - /System/Library/PrivateFrameworks/CoreDuetContext.framework/CoreDuetContext
-   - /System/Library/PrivateFrameworks/DoNotDisturb.framework/DoNotDisturb
 -  - /System/Library/PrivateFrameworks/HealthAppServices.framework/HealthAppServices
-   - /System/Library/PrivateFrameworks/HealthPlatformFoundation.framework/HealthPlatformFoundation
-   - /System/Library/PrivateFrameworks/IDS.framework/IDS
-   - /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
 
-   - /System/Library/PrivateFrameworks/SleepHealth.framework/SleepHealth
-   - /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices
-   - /System/Library/PrivateFrameworks/ToneLibrary.framework/ToneLibrary
 +  - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftCore.dylib
 
-   - /usr/lib/swift/libswiftCoreLocation.dylib
-   - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
 -  - /usr/lib/swift/libswiftMetal.dylib
 -  - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
+
 -  - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2930
--  Symbols:   6991
+-  Symbols:   5435
 -  CStrings:  1191
 +  Functions: 2734
-+  Symbols:   6492
++  Symbols:   5078
 +  CStrings:  1045
- 
 Symbols:
 + +[HDSPHealthStoreProvider _initializedLocalDeviceHealthStore]
 + -[HDSPEnvironment initWithBehavior:sleepStorageProvider:sleepScheduleModelManagerProvider:sleepSchedulerProvider:sleepServerProvider:sleepCoordinatorProvider:sleepModeManagerProvider:goodMorningAlertManagerProvider:chargingReminderManagerProvider:wakeDetectionManagerProvider:actionManagerProvider:sleepAlarmManagerProvider:healthStoreProvider:contextStoreManagerProvider:biomeManagerProvider:migrationManagerProvider:notificationManagerProvider:notificationListenerProvider:sleepLockScreenManagerProvider:sleepWidgetManagerProvider:idsServiceManagerProvider:diagnosticsProvider:systemMonitorProvider:assertionManager:preferenceChangeListenerProvider:sensitiveUIMonitorProvider:analyticsManagerProvider:userDefaults:fileManager:currentDateProvider:defaultCallbackScheduler:mutexGenerator:]
@@ -154,12 +99,6 @@ Symbols:
 + __OBJC_PROTOCOL_$_NSMutableCopying
 + ___block_descriptor_40_e8_32w_e19_v16?0"NAPromise"8lw32l8
 + ___block_descriptor_64_e8_32s40s48bs_e23_v16?0"HKSPXPCClient"8ls32l8s48l8s40l8
-+ _objc_msgSend$_initializedLocalDeviceHealthStore
-+ _objc_msgSend$alarmManager
-+ _objc_msgSend$initWithBehavior:sleepStorageProvider:sleepScheduleModelManagerProvider:sleepSchedulerProvider:sleepServerProvider:sleepCoordinatorProvider:sleepModeManagerProvider:goodMorningAlertManagerProvider:chargingReminderManagerProvider:wakeDetectionManagerProvider:actionManagerProvider:sleepAlarmManagerProvider:healthStoreProvider:contextStoreManagerProvider:biomeManagerProvider:migrationManagerProvider:notificationManagerProvider:notificationListenerProvider:sleepLockScreenManagerProvider:sleepWidgetManagerProvider:idsServiceManagerProvider:diagnosticsProvider:systemMonitorProvider:assertionManager:preferenceChangeListenerProvider:sensitiveUIMonitorProvider:analyticsManagerProvider:userDefaults:fileManager:currentDateProvider:defaultCallbackScheduler:mutexGenerator:
-+ _objc_msgSend$initWithHealthStore:
-+ _objc_msgSend$setSleepScoreAlgorithmVersion:
-+ _objc_msgSend$setSourceBundleIdentifier:
 + _swift_dynamicCastObjCProtocolConditional
 - +[BMPublisherOptions(Sleep) hdsp_optionsForDateInterval:]
 - +[BMPublisherOptions(Sleep) hdsp_optionsForDateInterval:reversed:]
@@ -556,154 +495,6 @@ Symbols:
 - _objc_begin_catch
 - _objc_end_catch
 - _objc_exception_rethrow
-- _objc_msgSend$Device
-- _objc_msgSend$PluggedIn
-- _objc_msgSend$Power
-- _objc_msgSend$ScreenLocked
-- _objc_msgSend$_compareWithCoreDuetInBedDetectionForInterval:
-- _objc_msgSend$_computeSessionMetadataForInterval:
-- _objc_msgSend$_computeSleepSessionStartBeforeDate:
-- _objc_msgSend$_createSleepSessionWithEndDate:endReason:
-- _objc_msgSend$_endSleepSessionWithReason:
-- _objc_msgSend$_hasUnprocessedSessions
-- _objc_msgSend$_locked_savePendingSessions
-- _objc_msgSend$_logDetections:
-- _objc_msgSend$_recordSentUserNotificationRequest:
-- _objc_msgSend$_sleepScoreResultsContentWithUserInfo:
-- _objc_msgSend$_sleepTrackingManagerProviderForBehavior:
-- _objc_msgSend$_unprocessedSessions
-- _objc_msgSend$_waitForFirstUnlock
-- _objc_msgSend$activePairedWatchProductType
-- _objc_msgSend$analyticsStore
-- _objc_msgSend$appendBool:counterpart:
-- _objc_msgSend$appendObject:counterpart:
-- _objc_msgSend$appendUnsignedInteger:counterpart:
-- _objc_msgSend$appendUnsignedInteger:withName:
-- _objc_msgSend$archiveSession:
-- _objc_msgSend$archivedSleepSessionsSaved:
-- _objc_msgSend$array
-- _objc_msgSend$authorizationStatusForType:
-- _objc_msgSend$body
-- _objc_msgSend$builderWithObject:ofExpectedClass:
-- _objc_msgSend$cancelAllOperations
-- _objc_msgSend$categorySampleWithType:value:startDate:endDate:device:metadata:
-- _objc_msgSend$categoryTypeForIdentifier:
-- _objc_msgSend$combineAllFutures:
-- _objc_msgSend$compare:
-- _objc_msgSend$computeSleepIntervalsForInterval:
-- _objc_msgSend$confidence
-- _objc_msgSend$dateWithTimeIntervalSinceReferenceDate:
-- _objc_msgSend$decodeIntegerForKey:
-- _objc_msgSend$decodeObjectOfClasses:forKey:
-- _objc_msgSend$detectInBedBetweenBedtimeDate:wakupDate:error:
-- _objc_msgSend$detectInBedTimesDuringInterval:
-- _objc_msgSend$detectInBedTimesHelperDuringInterval:
-- _objc_msgSend$duration
-- _objc_msgSend$encodeInteger:forKey:
-- _objc_msgSend$encodedData
-- _objc_msgSend$endReason
-- _objc_msgSend$fileManager
-- _objc_msgSend$filterWithIsIncluded:
-- _objc_msgSend$findLastTimeDeviceLockChangedDuringInterval:isLocked:error:
-- _objc_msgSend$findLastTimeDeviceWasLockedDuringInterval:error:
-- _objc_msgSend$findLastTimeDeviceWasPluggedInDuringInterval:error:
-- _objc_msgSend$findLastTimeDeviceWasUnlockedDuringInterval:error:
-- _objc_msgSend$findLatestEndOfMovementDuringInterval:error:
-- _objc_msgSend$findMotionTerminusDuringInterval:latest:error:
-- _objc_msgSend$findTimesDeviceWasUnlockedDuringInterval:error:
-- _objc_msgSend$finishDecoding
-- _objc_msgSend$finishEncoding
-- _objc_msgSend$futureWithBlock:scheduler:
-- _objc_msgSend$futureWithError:
-- _objc_msgSend$hdsp_categorySampleForSleepSessionInterval:metadata:
-- _objc_msgSend$hdsp_optionsForDateInterval:
-- _objc_msgSend$hdsp_optionsForDateInterval:reversed:
-- _objc_msgSend$hdsp_persistSessions:
-- _objc_msgSend$hdsp_startSession
-- _objc_msgSend$hdsp_stopSession
-- _objc_msgSend$hdsp_wakeUpResultsSound
-- _objc_msgSend$hk_map:
-- _objc_msgSend$hkspDataForCacheFileWithName:
-- _objc_msgSend$hkspFileWithNameExistsInCache:
-- _objc_msgSend$hkspRemoveFileWithNameFromCache:error:
-- _objc_msgSend$hkspWriteData:toCacheFileWithName:error:
-- _objc_msgSend$hksp_analyticsUserDefaults
-- _objc_msgSend$hksp_dateNearestMatchingComponents:
-- _objc_msgSend$hksp_supportsSleepTracking
-- _objc_msgSend$hoursOfSleepForResult:
-- _objc_msgSend$inBedDetector
-- _objc_msgSend$inBedDetectorWithProvider:
-- _objc_msgSend$initForReadingFromData:error:
-- _objc_msgSend$initRequiringSecureCoding:
-- _objc_msgSend$initWithBehavior:sleepStorageProvider:sleepScheduleModelManagerProvider:sleepSchedulerProvider:sleepServerProvider:sleepCoordinatorProvider:sleepModeManagerProvider:sleepTrackingManagerProvider:goodMorningAlertManagerProvider:chargingReminderManagerProvider:wakeDetectionManagerProvider:actionManagerProvider:sleepAlarmManagerProvider:healthStoreProvider:contextStoreManagerProvider:biomeManagerProvider:migrationManagerProvider:notificationManagerProvider:notificationListenerProvider:sleepLockScreenManagerProvider:sleepWidgetManagerProvider:idsServiceManagerProvider:diagnosticsProvider:systemMonitorProvider:assertionManager:preferenceChangeListenerProvider:sensitiveUIMonitorProvider:analyticsManagerProvider:userDefaults:fileManager:currentDateProvider:defaultCallbackScheduler:mutexGenerator:
-- _objc_msgSend$initWithDateInterval:sleepIntervals:endReason:metadata:requiresFirstUnlock:
-- _objc_msgSend$initWithEnvironment:persistence:
-- _objc_msgSend$initWithEnvironment:sleepSessionManager:sleepTracker:
-- _objc_msgSend$initWithInterval:type:
-- _objc_msgSend$initWithProvider:
-- _objc_msgSend$initWithStartDate:endDate:maxEvents:lastN:reversed:
-- _objc_msgSend$initWithUserInfo:
-- _objc_msgSend$initWithWindDownEventData:watchProductType:weeksSinceOnboarded:
-- _objc_msgSend$interval
-- _objc_msgSend$isActivityAvailable
-- _objc_msgSend$isEqual
-- _objc_msgSend$isIntroduction
-- _objc_msgSend$isTimeInBedTrackingEnabled
-- _objc_msgSend$isWristDetectEnabled
-- _objc_msgSend$kickOffBackgroundGeneration
-- _objc_msgSend$localDevice
-- _objc_msgSend$lockedTimesDuringInterval:error:
-- _objc_msgSend$markAllActionsAsCollected
-- _objc_msgSend$maximumAllowedDuration
-- _objc_msgSend$metadata
-- _objc_msgSend$na_genericError
-- _objc_msgSend$notificationUserInfo
-- _objc_msgSend$objectEnumerator
-- _objc_msgSend$platformSpecificTrackerWithEnvironment:
-- _objc_msgSend$previousSessionFinished
-- _objc_msgSend$processedSessionForSession:
-- _objc_msgSend$pruneExpiredWindDownActionDataBefore:
-- _objc_msgSend$publisherWithUseCase:options:
-- _objc_msgSend$queryActivityStartingFromDate:toDate:toQueue:withHandler:
-- _objc_msgSend$reduceWithInitial:nextPartialResult:
-- _objc_msgSend$registerObserver:
-- _objc_msgSend$removeAllWindDownActionsBeforeMorningIndex:
-- _objc_msgSend$removeSessionDataFile
-- _objc_msgSend$requiresFirstUnlock
-- _objc_msgSend$reverseObjectEnumerator
-- _objc_msgSend$savePendingSessions
-- _objc_msgSend$saveSession:
-- _objc_msgSend$saveSleepTrackingSamples:completion:
-- _objc_msgSend$scheduler
-- _objc_msgSend$setInteractedWithWindDownLast24Hrs:
-- _objc_msgSend$setLastWakeUpResultsIntroductionNotificationVersionSent:
-- _objc_msgSend$setLastWakeUpResultsIntroductionNotificationVersionSentDate:
-- _objc_msgSend$setName:
-- _objc_msgSend$setWeeksSinceOnboardedWindDownActions:
-- _objc_msgSend$sinkWithCompletion:shouldContinue:
-- _objc_msgSend$sleepHealthStore
-- _objc_msgSend$sleepIntervals
-- _objc_msgSend$sleepSessionIntervalWithInterval:type:
-- _objc_msgSend$sleepSessionManager:didSaveArchivedSessions:
-- _objc_msgSend$sleepSessionManager:didSaveSession:
-- _objc_msgSend$sleepSessionManager:requestsProcessedSessionForSession:
-- _objc_msgSend$sleepSessionManagerDidFinishSession:
-- _objc_msgSend$sleepSessionSaved:
-- _objc_msgSend$sleepSessionWithDateInterval:sleepIntervals:endReason:metadata:requiresFirstUnlock:
-- _objc_msgSend$sleepTracker:didEndSession:reason:
-- _objc_msgSend$startSession
-- _objc_msgSend$startSleepTrackingSession
-- _objc_msgSend$stationary
-- _objc_msgSend$stopSession
-- _objc_msgSend$stopSleepTrackingSession
-- _objc_msgSend$timeIntervalSinceReferenceDate
-- _objc_msgSend$timestamp
-- _objc_msgSend$title
-- _objc_msgSend$uncollectedWindDownActions
-- _objc_msgSend$unregisterObserver:
-- _objc_msgSend$wasUsed
-- _objc_msgSend$windDownActionsAfterMorningIndex:
-- _objc_msgSend$wristDetectEnabledDidChange
 - _objc_terminate
 - _swift_isUniquelyReferenced_nonNull_bridgeObject
 - _symbolic _____ 11SleepDaemon26OrchestrationClientWrapperC

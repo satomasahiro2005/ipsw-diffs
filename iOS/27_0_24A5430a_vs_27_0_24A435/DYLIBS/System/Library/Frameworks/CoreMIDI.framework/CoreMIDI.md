@@ -2,20 +2,16 @@
 
 > `/System/Library/Frameworks/CoreMIDI.framework/CoreMIDI`
 
-```diff
+### Section Size Changes
 
- 333.0.0.0.0
--  __TEXT.__text: 0xa5440
-+  __TEXT.__text: 0xa5460
-   __TEXT.__realtime: 0x183c
-   __TEXT.__objc_methlist: 0x15c0
-   __TEXT.__const: 0xa48
-   __TEXT.__dlopen_cstrs: 0x4e
--  __TEXT.__gcc_except_tab: 0xdfd0
-+  __TEXT.__gcc_except_tab: 0xdfd4
-   __TEXT.__cstring: 0x4576
-   __TEXT.__oslogstring: 0x2cbc
-   __TEXT.__unwind_info: 0x4068
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa5440` | `0xa5460` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0xdfd0` | `0xdfd4` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN26MIDIDriverPlugin_DriverKit9StartMIDIEj : 5760 -> 5768
 ~ __ZNSt3__110__function6__funcIZN26MIDIDriverPlugin_DriverKitC1EO19MIDIDriverKitClientPK10__CFStringS7_EUljNS_4spanIKjLm18446744073709551615EEEE_FvjSA_EEclEOjOSA_ : 4868 -> 4864

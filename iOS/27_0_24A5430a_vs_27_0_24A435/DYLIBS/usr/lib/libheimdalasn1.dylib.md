@@ -2,6 +2,8 @@
 
 > `/usr/lib/libheimdalasn1.dylib`
 
+### Other Changes
+
 ```text
 Functions:
 ~ ___gen2_der_put_universal_string : 364 -> 356

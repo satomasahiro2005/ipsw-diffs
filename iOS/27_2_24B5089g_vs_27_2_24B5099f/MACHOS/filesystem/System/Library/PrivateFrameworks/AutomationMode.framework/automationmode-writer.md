@@ -2,101 +2,62 @@
 
 > `/System/Library/PrivateFrameworks/AutomationMode.framework/automationmode-writer`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_proto`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9bc0` | `0xb250` | **`+0x1690`** |
+| `__TEXT.__cstring` | `0x320` | `0x410` | **`+0xf0`** |
+| `__TEXT.__auth_stubs` | `0x950` | `0xa30` | **`+0xe0`** |
+| `__DATA_CONST.__auth_got` | `0x4b0` | `0x520` | **`+0x70`** |
+| `__TEXT.__swift5_typeref` | `0x126` | `0x194` | **`+0x6e`** |
+| `__TEXT.__objc_methname` | `0x6a1` | `0x6e1` | **`+0x40`** |
+| `__TEXT.__objc_stubs` | `0x300` | `0x340` | **`+0x40`** |
+| `__TEXT.__oslogstring` | `0xb60` | `0xba0` | **`+0x40`** |
+| `__DATA.__data` | `0x410` | `0x440` | **`+0x30`** |
+| `__TEXT.__const` | `0x1f2` | `0x220` | **`+0x2e`** |
+| `__TEXT.__eh_frame` | `0x40` | `0x68` | **`+0x28`** |
+| `__DATA.__objc_const` | `0x440` | `0x460` | **`+0x20`** |
+| `__DATA.__objc_data` | `0x220` | `0x240` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x120` | `0x140` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x135` | `0x153` | **`+0x1e`** |
+| `__TEXT.__constg_swiftt` | `0x1ac` | `0x1c4` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x1b8` | `0x1d0` | **`+0x18`** |
+| `__DATA.__objc_selrefs` | `0x1b8` | `0x1c8` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0xec` | `0xf8` | **`+0xc`** |
+| `__DATA.__common` | `0x50` | `0x58` | **`+0x8`** |
+| `__DATA_CONST.__auth_ptr` | `0x58` | `0x60` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_types`
+
+### Other Changes
 
 ```diff
 
 -34.0.0.0.0
--  __TEXT.__text: 0x9814
--  __TEXT.__auth_stubs: 0x950
--  __TEXT.__objc_stubs: 0x300
 +35.0.0.0.0
-+  __TEXT.__text: 0xae14
-+  __TEXT.__auth_stubs: 0xa30
-+  __TEXT.__objc_stubs: 0x340
-   __TEXT.__objc_methlist: 0x25c
--  __TEXT.__const: 0x1f2
-+  __TEXT.__const: 0x220
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__objc_classname: 0x12a
--  __TEXT.__objc_methname: 0x6a1
-+  __TEXT.__objc_methname: 0x6e1
-   __TEXT.__objc_methtype: 0x1d8
--  __TEXT.__constg_swiftt: 0x1ac
--  __TEXT.__swift5_typeref: 0x126
--  __TEXT.__swift5_reflstr: 0x135
--  __TEXT.__swift5_fieldmd: 0xec
-+  __TEXT.__constg_swiftt: 0x1c4
-+  __TEXT.__swift5_typeref: 0x194
-+  __TEXT.__swift5_reflstr: 0x153
-+  __TEXT.__swift5_fieldmd: 0xf8
-   __TEXT.__swift5_builtin: 0x14
--  __TEXT.__cstring: 0x320
--  __TEXT.__oslogstring: 0xb60
-+  __TEXT.__cstring: 0x410
-+  __TEXT.__oslogstring: 0xba0
-   __TEXT.__swift5_capture: 0x58
-   __TEXT.__swift5_types: 0x14
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift5_proto: 0x4
--  __TEXT.__unwind_info: 0x238
--  __TEXT.__eh_frame: 0x40
-+  __TEXT.__unwind_info: 0x258
-+  __TEXT.__eh_frame: 0x68
-   __DATA_CONST.__const: 0x218
-   __DATA_CONST.__cfstring: 0x20
-   __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__auth_got: 0x4b0
--  __DATA_CONST.__got: 0x120
--  __DATA_CONST.__auth_ptr: 0x58
--  __DATA.__objc_const: 0x440
--  __DATA.__objc_selrefs: 0x1b8
--  __DATA.__objc_data: 0x220
--  __DATA.__data: 0x410
--  __DATA.__common: 0x50
-+  __DATA_CONST.__auth_got: 0x520
-+  __DATA_CONST.__got: 0x140
-+  __DATA_CONST.__auth_ptr: 0x60
-+  __DATA.__objc_const: 0x460
-+  __DATA.__objc_selrefs: 0x1c8
-+  __DATA.__objc_data: 0x240
-+  __DATA.__data: 0x440
-+  __DATA.__common: 0x58
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication
-   - /System/Library/PrivateFrameworks/AutomationMode.framework/AutomationMode
-+  - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/CoreTime.framework/CoreTime
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
++  - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
+
 -  Functions: 117
 -  Symbols:   212
 -  CStrings:  165
 +  Functions: 122
 +  Symbols:   229
 +  CStrings:  174
- 
 Symbols:
 + _$s10Foundation3URLV22appendingPathComponentyACSSF
 + _$s10Foundation3URLV25deletingLastPathComponentACyF

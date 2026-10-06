@@ -2,86 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/DesktopServicesPriv.framework/DesktopServicesPriv`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a320c` | `0x1a6e80` | **`+0x3c74`** |
+| `__TEXT.__gcc_except_tab` | `0x28fc8` | `0x296a8` | **`+0x6e0`** |
+| `__TEXT.__oslogstring` | `0x8e8b` | `0x9080` | **`+0x1f5`** |
+| `__TEXT.__objc_methlist` | `0x49f4` | `0x4afc` | **`+0x108`** |
+| `__TEXT.__unwind_info` | `0xc8d8` | `0xc9a0` | **`+0xc8`** |
+| `__AUTH_CONST.__objc_const` | `0x72d8` | `0x7380` | **`+0xa8`** |
+| `__AUTH_CONST.__cfstring` | `0x3d40` | `0x3d80` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x6f2c` | `0x6f60` | **`+0x34`** |
+| `__AUTH.__thread_vars` | `—` | `0x30` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2910` | `0x2940` | **`+0x30`** |
+| `__AUTH.__objc_data` | `0x1d88` | `0x1db0` | **`+0x28`** |
+| `__DATA_DIRTY.__objc_data` | `0x28` | `0x50` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x9870` | `0x9850` | **`-0x20`** |
+| `__DATA_CONST.__const` | `0xfc0` | `0xfd8` | **`+0x18`** |
+| `__AUTH.__thread_bss` | `—` | `0x10` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1128` | `0x1130` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0xb50` | `0xb58` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x2f8` | `0x300` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1b0` | `0x1b8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1857.1.4.0.0
--  __TEXT.__text: 0x19e1a0
--  __TEXT.__objc_methlist: 0x49f4
--  __TEXT.__gcc_except_tab: 0x28fc8
 +1857.1.7.0.0
-+  __TEXT.__text: 0x1a1dd0
-+  __TEXT.__objc_methlist: 0x4afc
-+  __TEXT.__gcc_except_tab: 0x296a8
-+  __TEXT.__cstring: 0x6f60
-   __TEXT.__const: 0x90a7
--  __TEXT.__cstring: 0x6f2c
--  __TEXT.__oslogstring: 0x8e8b
-+  __TEXT.__oslogstring: 0x9080
-   __TEXT.__ustring: 0x24
--  __TEXT.__unwind_info: 0xd4b8
-+  __TEXT.__unwind_info: 0xd588
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xfc0
--  __DATA_CONST.__objc_classlist: 0x2f8
-+  __DATA_CONST.__const: 0xfd8
-+  __DATA_CONST.__objc_classlist: 0x300
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x90
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x2910
-+  __DATA_CONST.__objc_selrefs: 0x2940
-   __DATA_CONST.__objc_protorefs: 0x38
--  __DATA_CONST.__objc_superrefs: 0x1b0
-+  __DATA_CONST.__objc_superrefs: 0x1b8
-   __DATA_CONST.__objc_arraydata: 0x88
--  __DATA_CONST.__got: 0xb50
--  __AUTH_CONST.__const: 0x9870
--  __AUTH_CONST.__cfstring: 0x3d40
--  __AUTH_CONST.__objc_const: 0x72d8
-+  __DATA_CONST.__got: 0xb58
-+  __AUTH_CONST.__const: 0x9850
-+  __AUTH_CONST.__cfstring: 0x3d80
-+  __AUTH_CONST.__objc_const: 0x7380
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x138
-   __AUTH_CONST.__objc_arrayobj: 0x30
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x1128
--  __AUTH.__objc_data: 0x1d88
-+  __AUTH_CONST.__auth_got: 0x1130
-+  __AUTH.__objc_data: 0x1db0
-+  __AUTH.__thread_vars: 0x30
-+  __AUTH.__thread_bss: 0x10
-   __DATA.__objc_ivar: 0x40c
-   __DATA.__data: 0xcd0
-   __DATA.__common: 0x121
--  __DATA_DIRTY.__objc_data: 0x28
-+  __DATA_DIRTY.__objc_data: 0x50
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/FileProvider.framework/FileProvider
 
-   - /System/Library/PrivateFrameworks/IconServices.framework/IconServices
-   - /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices
-   - /System/Library/PrivateFrameworks/Sharing.framework/Sharing
 +  - /System/Library/PrivateFrameworks/TCC.framework/TCC
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
+
 -  Functions: 7924
 -  Symbols:   12804
 -  CStrings:  1926
 +  Functions: 7964
 +  Symbols:   12876
 +  CStrings:  1937
- 
 Symbols:
 + +[DSQuarantine settleQuarantine:atURL:error:]
 + -[FICustomNode keyNodesForMappingToPresentationNode]

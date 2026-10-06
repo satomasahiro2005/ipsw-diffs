@@ -2,57 +2,28 @@
 
 > `/System/Library/PrivateFrameworks/HID.framework/HID`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x134cc` | `0x13548` | **`+0x7c`** |
+| `__TEXT.__cstring` | `0x2203` | `0x226e` | **`+0x6b`** |
+| `__TEXT.__objc_methlist` | `0x248c` | `0x24ec` | **`+0x60`** |
+| `__DATA.__data` | `0x19e0` | `0x1a30` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1580` | `0x15c0` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x588` | `0x5a0` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x998` | `0x9a0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 2360.2.2.0.0
--  __TEXT.__text: 0x134cc
--  __TEXT.__objc_methlist: 0x248c
-+  __TEXT.__text: 0x13548
-+  __TEXT.__objc_methlist: 0x24ec
-   __TEXT.__const: 0x78
--  __TEXT.__cstring: 0x2203
-+  __TEXT.__cstring: 0x226e
-   __TEXT.__gcc_except_tab: 0x2e8
-   __TEXT.__oslogstring: 0x6cd
-   __TEXT.__dof_iohidfami: 0x28d
--  __TEXT.__unwind_info: 0x998
-+  __TEXT.__unwind_info: 0x9a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x588
-+  __DATA_CONST.__const: 0x5a0
-   __DATA_CONST.__objc_classlist: 0x80
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1580
-+  __DATA_CONST.__objc_selrefs: 0x15c0
-   __DATA_CONST.__objc_superrefs: 0x80
-   __DATA_CONST.__objc_arraydata: 0x50
-   __DATA_CONST.__got: 0x158
-
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__data: 0x10
-   __DATA.__objc_ivar: 0x1ac
--  __DATA.__data: 0x19e0
-+  __DATA.__data: 0x1a30
-   __DATA_DIRTY.__objc_data: 0x500
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 978
--  Symbols:   1786
+-  Symbols:   1586
 -  CStrings:  450
 +  Functions: 986
-+  Symbols:   1795
++  Symbols:   1595
 +  CStrings:  454
- 
 Symbols:
 + -[HIDEvent(HIDHingeAngleEventPrivate) hingeAngleAngleDegrees]
 + -[HIDEvent(HIDHingeAngleEventPrivate) hingeAngleMechanicalAngleDegrees]

@@ -2,88 +2,44 @@
 
 > `/System/Library/CoreServices/RawCamera.bundle/RawCamera`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x22c298` | `0x23302c` | **`+0x6d94`** |
+| `__TEXT.__gcc_except_tab` | `0x31a18` | `0x324b4` | **`+0xa9c`** |
+| `__TEXT.__oslogstring` | `0x2880` | `0x2d42` | **`+0x4c2`** |
+| `__TEXT.__cstring` | `0x12431` | `0x128f1` | **`+0x4c0`** |
+| `__AUTH_CONST.__objc_const` | `0x6de8` | `0x7058` | **`+0x270`** |
+| `__TEXT.__unwind_info` | `0xc6b0` | `0xc918` | **`+0x268`** |
+| `__AUTH_CONST.__cfstring` | `0x1ae60` | `0x1b0c0` | **`+0x260`** |
+| `__DATA_CONST.__const` | `0x2c30` | `0x2e38` | **`+0x208`** |
+| `__TEXT.__objc_methlist` | `0x2424` | `0x25ac` | **`+0x188`** |
+| `__DATA_CONST.__objc_selrefs` | `0x16e8` | `0x1830` | **`+0x148`** |
+| `__AUTH_CONST.__const` | `0x3c5a8` | `0x3c648` | **`+0xa0`** |
+| `__AUTH.__objc_data` | `0x12c0` | `0x1310` | **`+0x50`** |
+| `__DATA.__bss` | `0x72e0` | `0x7310` | **`+0x30`** |
+| `__DATA.__objc_ivar` | `0x5e8` | `0x614` | **`+0x2c`** |
+| `__DATA_CONST.__got` | `0xad8` | `0xae8` | **`+0x10`** |
+| `__DATA_CONST.__objc_arraydata` | `0x3b50` | `0x3b60` | **`+0x10`** |
+| `__TEXT.__const` | `0x18634` | `0x18644` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x12a0` | `0x12a8` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x240` | `0x248` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x130` | `0x138` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1821.22.1.0.0
--  __TEXT.__text: 0x224ed8
--  __TEXT.__objc_methlist: 0x2424
--  __TEXT.__const: 0x18634
--  __TEXT.__gcc_except_tab: 0x31a18
--  __TEXT.__oslogstring: 0x2880
--  __TEXT.__cstring: 0x12431
 +1821.40.4.0.0
-+  __TEXT.__text: 0x22ba80
-+  __TEXT.__objc_methlist: 0x25ac
-+  __TEXT.__const: 0x18644
-+  __TEXT.__gcc_except_tab: 0x324b4
-+  __TEXT.__oslogstring: 0x2d42
-+  __TEXT.__cstring: 0x128f1
-   __TEXT.__ustring: 0x4b6
-   __TEXT.__constg_swiftt: 0xa14
-   __TEXT.__swift5_typeref: 0x5bf
 
-   __TEXT.__swift5_types: 0xd8
-   __TEXT.__swift5_capture: 0x4c
-   __TEXT.__dof_RawCamera: 0x8f7
--  __TEXT.__unwind_info: 0xcf70
-+  __TEXT.__unwind_info: 0xd210
-   __TEXT.__eh_frame: 0x13b8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2c30
--  __DATA_CONST.__objc_classlist: 0x240
-+  __DATA_CONST.__const: 0x2e38
-+  __DATA_CONST.__objc_classlist: 0x248
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x16e8
--  __DATA_CONST.__objc_superrefs: 0x130
--  __DATA_CONST.__objc_arraydata: 0x3b50
--  __DATA_CONST.__got: 0xad8
--  __AUTH_CONST.__const: 0x3c5a8
--  __AUTH_CONST.__cfstring: 0x1ae60
--  __AUTH_CONST.__objc_const: 0x6de8
-+  __DATA_CONST.__objc_selrefs: 0x1830
-+  __DATA_CONST.__objc_superrefs: 0x138
-+  __DATA_CONST.__objc_arraydata: 0x3b60
-+  __DATA_CONST.__got: 0xae8
-+  __AUTH_CONST.__const: 0x3c648
-+  __AUTH_CONST.__cfstring: 0x1b0c0
-+  __AUTH_CONST.__objc_const: 0x7058
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__objc_arrayobj: 0x5e8
-   __AUTH_CONST.__objc_intobj: 0x3b58
-   __AUTH_CONST.__objc_doubleobj: 0x4e0
-   __AUTH_CONST.__objc_dictobj: 0x4d58
-   __AUTH_CONST.__objc_floatobj: 0xd0
--  __AUTH_CONST.__auth_got: 0x12a0
--  __AUTH.__objc_data: 0x12c0
-+  __AUTH_CONST.__auth_got: 0x12a8
-+  __AUTH.__objc_data: 0x1310
-   __AUTH.__data: 0x7a8
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x18
--  __DATA.__objc_ivar: 0x5e8
-+  __DATA.__objc_ivar: 0x614
-   __DATA.__data: 0x20e68
-   __DATA.__common: 0x4
-   __DATA_DIRTY.__objc_data: 0xf0
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 7752
+-  Functions: 7753
 -  Symbols:   984
 -  CStrings:  4228
-+  Functions: 7853
++  Functions: 7854
 +  Symbols:   987
 +  CStrings:  4294
- 
 Symbols:
 + _OBJC_CLASS_$_NSProgress
 + _RCModelDownloadStart

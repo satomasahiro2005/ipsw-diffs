@@ -2,43 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/TSApplication.framework/TSApplication`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x8108c
-+  __TEXT.__text: 0x80c1c
-   __TEXT.__init_offsets: 0xc
-   __TEXT.__objc_methlist: 0x5900
-   __TEXT.__const: 0x3e82
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8108c` | `0x80c1c` | **`-0x470`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
+```diff
 Functions:
 ~ __ZNK3TSA15DocumentArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 2052 -> 1972
-~ sub_2b7685358 -> sub_2b87cd308 : 304 -> 292
+~ sub_2b7540358 -> sub_2b868f308 : 304 -> 292
 ~ __ZNK3TSA27FunctionBrowserStateArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 756 -> 724
 ~ __ZNK3TSA19ThemePresetsArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 480 -> 464
 ~ __ZNK3TSA42ShortcutControllerArchive_ShortcutMapEntry18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 296 -> 288
@@ -51,7 +30,7 @@ Functions:
 ~ __ZNK3TSA44NeedsMediaCompatibilityUpgradeCommandArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 596 -> 588
 ~ __ZNK3TSA34ChangeDocumentLocaleCommandArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 656 -> 632
 ~ __ZNK3TSA44InducedVerifyObjectsWithServerCommandArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 760 -> 744
-~ sub_2b76904ec -> sub_2b87d83a0 : 304 -> 292
+~ sub_2b754b4ec -> sub_2b869a3a0 : 304 -> 292
 ~ __ZNK3TSA53InducedVerifyTransformHistoryWithServerCommandArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 504 -> 488
 ~ __ZNK3TSA36StyleUpdatePropertyMapCommandArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 244 -> 236
 ~ __ZNK3TSA30RemoteDataChangeCommandArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 656 -> 632
@@ -76,18 +55,17 @@ Functions:
 ~ __ZNK3TSA12Object3DInfo18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 996 -> 956
 ~ __ZNK3TSA26Object3DInfoCommandArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 1820 -> 1732
 ~ __ZNK3TSA34Object3DInfoSetValueCommandArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 876 -> 836
-~ sub_2b76ab94c -> sub_2b87f3584 : 940 -> 908
-~ sub_2b76ac73c -> sub_2b87f4354 : 504 -> 488
-~ sub_2b76b2258 -> sub_2b87f9e60 : 504 -> 488
-~ sub_2b76b2c94 -> sub_2b87fa88c : 504 -> 488
-~ sub_2b76b374c -> sub_2b87fb334 : 556 -> 540
-~ sub_2b76b4000 -> sub_2b87fbbd8 : 244 -> 236
-~ sub_2b76b45b4 -> sub_2b87fc184 : 244 -> 236
-~ sub_2b76b4d14 -> sub_2b87fc8dc : 504 -> 488
-~ sub_2b76b5640 -> sub_2b87fd1f8 : 504 -> 488
-~ sub_2b76b5e14 -> sub_2b87fd9bc : 548 -> 524
+~ sub_2b756694c -> sub_2b86b5584 : 940 -> 908
+~ sub_2b756773c -> sub_2b86b6354 : 504 -> 488
+~ sub_2b756d258 -> sub_2b86bbe60 : 504 -> 488
+~ sub_2b756dc94 -> sub_2b86bc88c : 504 -> 488
+~ sub_2b756e74c -> sub_2b86bd334 : 556 -> 540
+~ sub_2b756f000 -> sub_2b86bdbd8 : 244 -> 236
+~ sub_2b756f5b4 -> sub_2b86be184 : 244 -> 236
+~ sub_2b756fd14 -> sub_2b86be8dc : 504 -> 488
+~ sub_2b7570640 -> sub_2b86bf1f8 : 504 -> 488
+~ sub_2b7570e14 -> sub_2b86bf9bc : 548 -> 524
 CStrings:
 + "Jun 23 2026"
 - "Jun  9 2026"
-
 ```

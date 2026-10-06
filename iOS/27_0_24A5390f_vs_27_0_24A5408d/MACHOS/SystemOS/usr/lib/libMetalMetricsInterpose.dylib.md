@@ -2,71 +2,44 @@
 
 > `/usr/lib/libMetalMetricsInterpose.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__unwind_info`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1409c` | `0x14148` | **`+0xac`** |
+| `__DATA_CONST.__cfstring` | `0x1e0` | `0x260` | **`+0x80`** |
+| `__TEXT.__cstring` | `0x5bd` | `0x634` | **`+0x77`** |
+| `__TEXT.__auth_stubs` | `0x820` | `0x850` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0xba8` | `0xbc8` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0x420` | `0x438` | **`+0x18`** |
+| `__TEXT.__gcc_except_tab` | `0x12b8` | `0x12a8` | **`-0x10`** |
+| `__DATA.__bss` | `0xf0` | `0xf8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA.__thread_vars`
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_arraydata`
 - `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__thread_vars`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -5.0.22.0.0
--  __TEXT.__text: 0x1409c
--  __TEXT.__auth_stubs: 0x820
 +5.0.24.0.0
-+  __TEXT.__text: 0x14148
-+  __TEXT.__auth_stubs: 0x850
-   __TEXT.__objc_stubs: 0xec0
-   __TEXT.__objc_methlist: 0xf8
--  __TEXT.__gcc_except_tab: 0x12b8
-+  __TEXT.__gcc_except_tab: 0x12a8
-   __TEXT.__const: 0x4c8
--  __TEXT.__cstring: 0x5bd
-+  __TEXT.__cstring: 0x634
-   __TEXT.__objc_methname: 0xd58
-   __TEXT.__objc_classname: 0x1e
-   __TEXT.__objc_methtype: 0x3b7
-   __TEXT.__unwind_info: 0x8c0
--  __DATA_CONST.__const: 0xba8
--  __DATA_CONST.__cfstring: 0x1e0
-+  __DATA_CONST.__const: 0xbc8
-+  __DATA_CONST.__cfstring: 0x260
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__objc_arraydata: 0x8
-   __DATA_CONST.__objc_arrayobj: 0x18
--  __DATA_CONST.__auth_got: 0x420
-+  __DATA_CONST.__auth_got: 0x438
-   __DATA_CONST.__got: 0x110
-   __DATA.__objc_const: 0x220
-   __DATA.__objc_selrefs: 0x410
 
-   __DATA.__thread_vars: 0xa8
-   __DATA.__thread_bss: 0x7
-   __DATA.__common: 0x9
--  __DATA.__bss: 0xf0
-+  __DATA.__bss: 0xf8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreImage.framework/CoreImage
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 381
 -  Symbols:   970
 -  CStrings:  216
 +  Functions: 386
 +  Symbols:   978
 +  CStrings:  220
- 
 Symbols:
 + FPMTLMetricsCanUseIMPTrampolines
 + FPMTLMetricsIsExcluded

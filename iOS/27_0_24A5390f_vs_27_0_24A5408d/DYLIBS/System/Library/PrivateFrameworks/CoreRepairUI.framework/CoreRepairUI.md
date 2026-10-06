@@ -2,17 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/CoreRepairUI.framework/CoreRepairUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x19a48` | `0x19a20` | **`-0x28`** |
+
+### Other Changes
+
 ```diff
 
 -1307.0.46.0.0
--  __TEXT.__text: 0x19a48
 +1307.2.1.0.0
-+  __TEXT.__text: 0x19a20
-   __TEXT.__objc_methlist: 0x1414
-   __TEXT.__const: 0xb0
-   __TEXT.__cstring: 0x30ab
 Functions:
-~ sub_25db3bf64 -> sub_25d59df64 : 664 -> 640
-~ sub_25db3c1fc -> sub_25d59e1e4 : 252 -> 244
-~ sub_25db3d074 -> sub_25d59f054 : 252 -> 244
+~ sub_25d9f2f64 -> sub_25d4a5f64 : 664 -> 640
+~ sub_25d9f31fc -> sub_25d4a61e4 : 252 -> 244
+~ sub_25d9f4074 -> sub_25d4a7054 : 252 -> 244
 ```

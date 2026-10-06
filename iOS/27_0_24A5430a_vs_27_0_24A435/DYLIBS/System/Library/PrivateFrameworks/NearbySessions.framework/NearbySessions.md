@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/NearbySessions.framework/NearbySessions`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _$ss17_NativeDictionaryV20_copyOrMoveAndResize8capacity12moveElementsySi_SbtF10Foundation4UUIDV_14NearbySessions0M19GroupConnectionInfoCTg5 : 992 -> 984

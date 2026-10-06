@@ -2,97 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/UIIntelligenceSupport.framework/UIIntelligenceSupport`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10ee70` | `0x1111b4` | **`+0x2344`** |
+| `__DATA.__bss` | `0x19cf0` | `0x1a970` | **`+0xc80`** |
+| `__TEXT.__const` | `0x17f56` | `0x185c6` | **`+0x670`** |
+| `__AUTH_CONST.__const` | `0xb240` | `0xb578` | **`+0x338`** |
+| `__TEXT.__eh_frame` | `0x4890` | `0x4b60` | **`+0x2d0`** |
+| `__TEXT.__unwind_info` | `0x47a0` | `0x48c0` | **`+0x120`** |
+| `__DATA.__data` | `0x25c8` | `0x26c0` | **`+0xf8`** |
+| `__TEXT.__constg_swiftt` | `0x364c` | `0x3740` | **`+0xf4`** |
+| `__TEXT.__swift5_fieldmd` | `0x44ec` | `0x45e0` | **`+0xf4`** |
+| `__TEXT.__swift5_typeref` | `0x486a` | `0x495e` | **`+0xf4`** |
+| `__TEXT.__cstring` | `0x38ef` | `0x395f` | **`+0x70`** |
+| `__TEXT.__swift5_proto` | `0x14c4` | `0x1528` | **`+0x64`** |
+| `__TEXT.__oslogstring` | `0xe93` | `0xef3` | **`+0x60`** |
+| `__TEXT.__swift5_reflstr` | `0x2350` | `0x2396` | **`+0x46`** |
+| `__TEXT.__swift5_types` | `0x5f4` | `0x610` | **`+0x1c`** |
+| `__AUTH_CONST.__auth_got` | `0x1250` | `0x1240` | **`-0x10`** |
+| `__TEXT.__swift_as_cont` | `0x54` | `0x5c` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x48` | `0x50` | **`+0x8`** |
+| `__TEXT.__swift5_capture` | `0x284` | `0x288` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x34` | `0x38` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -9127.0.75.0.0
--  __TEXT.__text: 0x10ee70
 +9127.0.78.0.0
-+  __TEXT.__text: 0x1111b4
-   __TEXT.__objc_methlist: 0x1bc
--  __TEXT.__const: 0x17f56
--  __TEXT.__swift5_typeref: 0x486a
--  __TEXT.__swift5_reflstr: 0x2350
-+  __TEXT.__const: 0x185c6
-+  __TEXT.__swift5_typeref: 0x495e
-+  __TEXT.__swift5_reflstr: 0x2396
-   __TEXT.__swift5_assocty: 0x588
--  __TEXT.__constg_swiftt: 0x364c
--  __TEXT.__swift5_fieldmd: 0x44ec
-+  __TEXT.__constg_swiftt: 0x3740
-+  __TEXT.__swift5_fieldmd: 0x45e0
-   __TEXT.__swift5_builtin: 0x118
--  __TEXT.__swift5_proto: 0x14c4
--  __TEXT.__swift5_types: 0x5f4
--  __TEXT.__cstring: 0x38ef
--  __TEXT.__swift5_capture: 0x284
--  __TEXT.__swift_as_entry: 0x48
--  __TEXT.__swift_as_ret: 0x34
--  __TEXT.__swift_as_cont: 0x54
--  __TEXT.__oslogstring: 0xe93
-+  __TEXT.__swift5_proto: 0x1528
-+  __TEXT.__swift5_types: 0x610
-+  __TEXT.__cstring: 0x395f
-+  __TEXT.__swift5_capture: 0x288
-+  __TEXT.__swift_as_entry: 0x50
-+  __TEXT.__swift_as_ret: 0x38
-+  __TEXT.__swift_as_cont: 0x5c
-+  __TEXT.__oslogstring: 0xef3
-   __TEXT.__swift5_protos: 0x2c
-   __TEXT.__swift5_mpenum: 0x15c
--  __TEXT.__unwind_info: 0x47a0
--  __TEXT.__eh_frame: 0x4890
-+  __TEXT.__unwind_info: 0x48c0
-+  __TEXT.__eh_frame: 0x4b60
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0x1c0
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xb240
-+  __AUTH_CONST.__const: 0xb578
-   __AUTH_CONST.__objc_const: 0xdb8
--  __AUTH_CONST.__auth_got: 0x1250
-+  __AUTH_CONST.__auth_got: 0x1240
-   __AUTH.__objc_data: 0x48
-   __AUTH.__data: 0x5e8
--  __DATA.__data: 0x25c8
--  __DATA.__bss: 0x19cf0
-+  __DATA.__data: 0x26c0
-+  __DATA.__bss: 0x1a970
-   __DATA_DIRTY.__objc_data: 0x1b8
-   __DATA_DIRTY.__data: 0x2d90
-   __DATA_DIRTY.__bss: 0xf580
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   - /usr/lib/swift/libswiftsys_time.dylib
 -  Functions: 6904
--  Symbols:   2340
+-  Symbols:   2308
 -  CStrings:  424
 +  Functions: 6988
-+  Symbols:   2367
++  Symbols:   2335
 +  CStrings:  428
- 
 Symbols:
 + _associated conformance 21UIIntelligenceSupport15ExportSessionIDVSHAASQ
 + _associated conformance 21UIIntelligenceSupport15XPCAgentMessageO16EndExportSessionV10CodingKeys33_E08D440F40FCBB4D34092AACB2EB5311LLOSHAASQ

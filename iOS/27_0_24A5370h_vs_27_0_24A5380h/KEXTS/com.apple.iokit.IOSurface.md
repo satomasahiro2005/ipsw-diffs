@@ -2,16 +2,14 @@
 
 > `com.apple.iokit.IOSurface`
 
-Sections:
-~ __DATA.__data : content changed
-~ __DATA_CONST.__mod_init_func : content changed
-~ __DATA_CONST.__mod_term_func : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__kalloc_type : content changed
-~ __DATA_CONST.__kalloc_var : content changed
-~ __DATA_CONST.__auth_got : content changed
-~ __DATA_CONST.__got : content changed
+### Other Changes
+
+```diff
+
+-402.1.0.0.0
++402.3.0.0.0
 Functions:
 ~ __ZN20IOSurfaceSharedEvent19assignAgentMaskSlotEyPj : 548 -> 556
-~ sub_fffffe000a32c904 -> sub_fffffe000a32cfdc : 268 -> 256
-~ sub_fffffe000a33b2fc -> sub_fffffe000a33b9c8 : 344 -> 348
+~ sub_fffffff00a32a784 -> sub_fffffff00a32ae5c : 268 -> 256
+~ sub_fffffff00a33917c -> sub_fffffff00a339848 : 344 -> 348
+```

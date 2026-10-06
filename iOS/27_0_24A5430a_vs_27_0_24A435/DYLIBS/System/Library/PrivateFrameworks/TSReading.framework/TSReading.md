@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/TSReading.framework/TSReading`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x340a0c` | `0x340b48` | **`+0x13c`** |
+| `__TEXT.__unwind_info` | `0xf0e0` | `0xf0d8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 778.0.0.0.0
--  __TEXT.__text: 0x340a0c
-+  __TEXT.__text: 0x340b48
-   __TEXT.__objc_methlist: 0x34128
-   __TEXT.__const: 0x4778
-   __TEXT.__cstring: 0x48711
-   __TEXT.__gcc_except_tab: 0xcb08
-   __TEXT.__ustring: 0xf4
-   __TEXT.__oslogstring: 0x120
--  __TEXT.__unwind_info: 0xf0e0
-+  __TEXT.__unwind_info: 0xf0d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libxml2.2.dylib
 -  Functions: 20645
 +  Functions: 20644
-   Symbols:   41257
-   CStrings:  7226
- 
 Functions:
 ~ __ZNSt3__16vectorIN9EQKitPath11PathElementENS_9allocatorIS2_EEE6insertENS_11__wrap_iterIPKS2_EERS7_ : 488 -> 484
 ~ __ZNSt3__114__split_bufferIN9EQKitPath11PathElementERNS_9allocatorIS2_EEE12emplace_backIJRKS2_EEEvDpOT_ : 264 -> 268

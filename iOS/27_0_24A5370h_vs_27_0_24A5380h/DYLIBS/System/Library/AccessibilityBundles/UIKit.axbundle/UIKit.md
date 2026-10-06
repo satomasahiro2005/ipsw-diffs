@@ -2,88 +2,45 @@
 
 > `/System/Library/AccessibilityBundles/UIKit.axbundle/UIKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15a29c` | `0x158874` | **`-0x1a28`** |
+| `__DATA_DIRTY.__objc_data` | `0xed30` | `0x105e0` | **`+0x18b0`** |
+| `__AUTH.__objc_data` | `0x23a0` | `0xb40` | **`-0x1860`** |
+| `__TEXT.__gcc_except_tab` | `0x3480` | `0x35c4` | **`+0x144`** |
+| `__AUTH_CONST.__objc_const` | `0x205f0` | `0x20720` | **`+0x130`** |
+| `__TEXT.__objc_methlist` | `0xfab4` | `0xfb24` | **`+0x70`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5ce8` | `0x5d48` | **`+0x60`** |
+| `__AUTH_CONST.__cfstring` | `0x1dee0` | `0x1df20` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0x1780` | `0x17c0` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x192a5` | `0x192e0` | **`+0x3b`** |
+| `__DATA_DIRTY.__bss` | `0x1b8` | `0x1e9` | **`+0x31`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x48` | `0x18` | **`-0x30`** |
+| `__DATA_CONST.__objc_arraydata` | `0x190` | `0x160` | **`-0x30`** |
+| `__DATA_CONST.__const` | `0x1eb8` | `0x1ee0` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x4288` | `0x42a0` | **`+0x18`** |
+| `__TEXT.__const` | `0x1b0` | `0x1a0` | **`-0x10`** |
+| `__DATA.__objc_ivar` | `0x124` | `0x130` | **`+0xc`** |
+| `__DATA.__bss` | `0x408` | `0x400` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0xfc0` | `0xfc8` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x1b48` | `0x1b50` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0xa78` | `0xa80` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x15a29c
--  __TEXT.__objc_methlist: 0xfab4
-+  __TEXT.__text: 0x158874
-+  __TEXT.__objc_methlist: 0xfb24
-   __TEXT.__dlopen_cstrs: 0xb8
--  __TEXT.__const: 0x1b0
--  __TEXT.__gcc_except_tab: 0x3480
--  __TEXT.__cstring: 0x192a5
-+  __TEXT.__const: 0x1a0
-+  __TEXT.__gcc_except_tab: 0x35c4
-+  __TEXT.__cstring: 0x192e0
-   __TEXT.__oslogstring: 0x24cb
-   __TEXT.__ustring: 0x78
--  __TEXT.__unwind_info: 0x4288
-+  __TEXT.__unwind_info: 0x42a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1eb8
--  __DATA_CONST.__objc_classlist: 0x1b48
-+  __DATA_CONST.__const: 0x1ee0
-+  __DATA_CONST.__objc_classlist: 0x1b50
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5ce8
-+  __DATA_CONST.__objc_selrefs: 0x5d48
-   __DATA_CONST.__objc_protorefs: 0x48
--  __DATA_CONST.__objc_superrefs: 0xa78
--  __DATA_CONST.__objc_arraydata: 0x190
--  __DATA_CONST.__got: 0xfc0
--  __AUTH_CONST.__const: 0x1780
--  __AUTH_CONST.__cfstring: 0x1dee0
--  __AUTH_CONST.__objc_const: 0x205f0
-+  __DATA_CONST.__objc_superrefs: 0xa80
-+  __DATA_CONST.__objc_arraydata: 0x160
-+  __DATA_CONST.__got: 0xfc8
-+  __AUTH_CONST.__const: 0x17c0
-+  __AUTH_CONST.__cfstring: 0x1df20
-+  __AUTH_CONST.__objc_const: 0x20720
-   __AUTH_CONST.__objc_intobj: 0x210
-   __AUTH_CONST.__objc_dictobj: 0x140
--  __AUTH_CONST.__objc_arrayobj: 0x48
-+  __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x23a0
--  __DATA.__objc_ivar: 0x124
-+  __AUTH.__objc_data: 0xb40
-+  __DATA.__objc_ivar: 0x130
-   __DATA.__data: 0x698
--  __DATA.__bss: 0x408
--  __DATA_DIRTY.__objc_data: 0xed30
-+  __DATA.__bss: 0x400
-+  __DATA_DIRTY.__objc_data: 0x105e0
-   __DATA_DIRTY.__common: 0x8
--  __DATA_DIRTY.__bss: 0x1b8
-+  __DATA_DIRTY.__bss: 0x1e9
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreTelephony.framework/CoreTelephony
+-3039.1.0.0.0
++3042.0.0.0.0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 5951
--  Symbols:   20271
--  CStrings:  7996
+-  Symbols:   11837
+-  CStrings:  4195
 +  Functions: 5973
-+  Symbols:   20346
-+  CStrings:  8001
- 
-Sections:
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __DATA.__data : content changed
++  Symbols:   11870
++  CStrings:  4198
 Symbols:
 + -[UIKeyboardDockViewAccessibility _accessibilityHitTest:withEvent:]
 + -[UIStepperAccessibility _axDecrementButtonEnabled]
@@ -247,18 +204,6 @@ Symbols:
 + ___91-[_UITabBarVisualProvider_FloatingAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_5
 + ____AXBarButtonReferenceIcons_block_invoke
 + ___block_descriptor_40_e8_32s_e23_B16?0"UIWindowScene"8ls32l8
-+ _objc_msgSend$_sceneClientPid
-+ _objc_msgSend$_smartStackCardSubviews
-+ _objc_msgSend$initWithIdentifier:kitImageName:
-+ _objc_msgSend$maximumValue
-+ _objc_msgSend$minimumValue
-+ _objc_msgSend$pngRep
-+ _objc_msgSend$role
-+ _objc_msgSend$scale
-+ _objc_msgSend$session
-+ _objc_msgSend$size
-+ _objc_msgSend$value
-+ _objc_msgSend$wraps
 - GCC_except_table1487
 - GCC_except_table1507
 - GCC_except_table1509
@@ -394,5 +339,4 @@ CStrings:
 + "_titleContainerView"
 + "smart-stack-card"
 - "_pageContainerView"
-
 ```

@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/AirPlaySenderKit.framework/AirPlaySenderKit`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_0 : 12 -> 20

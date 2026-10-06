@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/IntelligenceSimulation.framework/IntelligenceSimulation`
 
-```diff
+### Section Size Changes
 
- 3600.22.17.0.0
--  __TEXT.__text: 0x104e8
-+  __TEXT.__text: 0x104ec
-   __TEXT.__const: 0x17f2
-   __TEXT.__swift5_typeref: 0x562
-   __TEXT.__swift5_fieldmd: 0x610
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x104e8` | `0x104ec` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_28733d2f0 -> sub_2884cb2f0 : 384 -> 388
+~ sub_28722e2f0 -> sub_287f572f0 : 384 -> 388
 ```

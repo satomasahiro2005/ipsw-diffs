@@ -2,64 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/WorkoutKitServices.framework/XPCServices/WorkoutKitXPCService.xpc/WorkoutKitXPCService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_entry`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x13698` | `0x135f0` | **`-0xa8`** |
+| `__TEXT.__objc_methname` | `0xb18` | `0xb06` | **`-0x12`** |
+| `__DATA_CONST.__got` | `0x2e0` | `0x2d8` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__const`
 - `__TEXT.__const`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_entry`
 - `__TEXT.__swift5_typeref`
 - `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -2027.0.137.0.0
--  __TEXT.__text: 0x13698
 +2027.0.152.1.1
-+  __TEXT.__text: 0x135f0
-   __TEXT.__auth_stubs: 0x1060
-   __TEXT.__objc_stubs: 0x5c0
-   __TEXT.__objc_methlist: 0x390
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__objc_classname: 0x103
--  __TEXT.__objc_methname: 0xb18
-+  __TEXT.__objc_methname: 0xb06
-   __TEXT.__objc_methtype: 0x45d
-   __TEXT.__const: 0x220
-   __TEXT.__constg_swiftt: 0xd0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__auth_got: 0x838
--  __DATA_CONST.__got: 0x2e0
-+  __DATA_CONST.__got: 0x2d8
-   __DATA_CONST.__auth_ptr: 0x120
-   __DATA.__objc_const: 0x368
-   __DATA.__objc_selrefs: 0x2e0
-
-   - /System/Library/PrivateFrameworks/Fitness.framework/Fitness
-   - /System/Library/PrivateFrameworks/FitnessMachineServices.framework/FitnessMachineServices
-   - /System/Library/PrivateFrameworks/IconServices.framework/IconServices
 -  - /System/Library/PrivateFrameworks/NanoRegistry.framework/NanoRegistry
 +  - /System/Library/PrivateFrameworks/PairedDeviceRegistry.framework/PairedDeviceRegistry
-   - /System/Library/PrivateFrameworks/SeymourCoreFoundation.framework/SeymourCoreFoundation
-   - /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices
-   - /System/Library/PrivateFrameworks/WorkoutCore.framework/WorkoutCore
 
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 325
 -  Symbols:   950
 +  Symbols:   949
-   CStrings:  199
- 
 Symbols:
 + _$s20WorkoutKitXPCServiceAAC014storeScheduledA12Compositions_14sourceBundleId10completionySay10Foundation4DataVG_SSySb_s5Error_pSgtYbctF049$s10ObjectiveC8ObjCBoolVSo7NSErrorCSgIeyBhyy_Sbs5M13_pSgIeghyg_TR0O1C0qR0VSo0T0CSgIeyBhyy_Tf1nnEn_n
 + _$s20WorkoutKitXPCServiceAAC015deleteScheduledA12Compositions17forSourceBundleId10completionySS_ySb_s5Error_pSgtYbctF049$s10ObjectiveC8ObjCBoolVSo7NSErrorCSgIeyBhyy_Sbs5L13_pSgIeghyg_TR0N1C0pQ0VSo0S0CSgIeyBhyy_Tf1nEn_n

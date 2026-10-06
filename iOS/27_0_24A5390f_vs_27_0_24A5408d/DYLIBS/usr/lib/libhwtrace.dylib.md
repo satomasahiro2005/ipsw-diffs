@@ -2,17 +2,16 @@
 
 > `/usr/lib/libhwtrace.dylib`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -328.0.9.0.0
 +328.2.1.0.0
-   __TEXT.__text: 0x27a5e8
-   __TEXT.__const: 0x175f50
-   __TEXT.__cstring: 0x16a53
 CStrings:
 + "libhwtrace @ tag libhwtrace-328.2.1"
 + "libhwtrace @ tag libhwtrace-328.2.1\n"

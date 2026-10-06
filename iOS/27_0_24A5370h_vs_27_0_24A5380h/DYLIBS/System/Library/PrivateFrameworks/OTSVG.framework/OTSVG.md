@@ -2,26 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/OTSVG.framework/OTSVG`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x367f0
-+  __TEXT.__text: 0x3671c
-   __TEXT.__objc_methlist: 0x320
-   __TEXT.__const: 0xb60
-   __TEXT.__cstring: 0xb94
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x367f0` | `0x3671c` | **`-0xd4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNKSt3__121__murmur2_or_cityhashImLm64EEclB9fqn220106EPKvm : 532 -> 520
 ~ __ZN3SVGL7enqueueERNSt3__16vectorINS0_7variantIJNS0_17reference_wrapperIKNS_14PatternElementEEENS3_IKNS_11MaskElementEEEEEENS0_9allocatorISA_EEEERNS0_13unordered_setISA_NS_20DependentElementHashENS_25DependentElementPredicateESC_EESJ_RKNS0_13unordered_mapISA_SD_SG_SH_NSB_INS0_4pairIKSA_SD_EEEEEESA_ : 612 -> 592
@@ -37,5 +26,4 @@ Functions:
 ~ __ZNSt3__116__variant_detail12__assignmentINS0_8__traitsIJNS_6vectorIN3SVG18DrawLinearGradientENS_9allocatorIS5_EEEENS3_INS4_18DrawRadialGradientENS6_IS9_EEEEEEEE12__assign_altB9fqn220106ILm1ESB_SB_EEvRNS0_5__altIXT_ET0_EEOT1_ : 268 -> 252
 ~ __ZN3SVGL8simplifyERKNS_11ClipToPaths12BaseClipNodeEP9CGContext : 2768 -> 2780
 ~ __ZN3SVG19consumeColorKeywordERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEm : 492 -> 504
-
 ```

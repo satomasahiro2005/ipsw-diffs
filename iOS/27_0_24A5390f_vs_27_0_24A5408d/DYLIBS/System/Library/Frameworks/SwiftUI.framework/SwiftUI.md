@@ -2,126 +2,64 @@
 
 > `/System/Library/Frameworks/SwiftUI.framework/SwiftUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x104d338` | `0x1048d7c` | **`-0x45bc`** |
+| `__TEXT.__const` | `0xc36bc` | `0xc1b0c` | **`-0x1bb0`** |
+| `__DATA.__bss` | `0xd89a0` | `0xd7120` | **`-0x1880`** |
+| `__DATA_DIRTY.__bss` | `0x2e990` | `0x2d690` | **`-0x1300`** |
+| `__AUTH_CONST.__const` | `0xa6c30` | `0xa5d00` | **`-0xf30`** |
+| `__TEXT.__constg_swiftt` | `0x7f3f8` | `0x7e4ec` | **`-0xf0c`** |
+| `__DATA_DIRTY.__data` | `0x19b80` | `0x193a0` | **`-0x7e0`** |
+| `__TEXT.__unwind_info` | `0x3bf60` | `0x3b9d0` | **`-0x590`** |
+| `__TEXT.__swift5_assocty` | `0x1a968` | `0x1a490` | **`-0x4d8`** |
+| `__TEXT.__eh_frame` | `0x16ce4` | `0x171a4` | **`+0x4c0`** |
+| `__TEXT.__swift5_typeref` | `0x44c3c` | `0x4481c` | **`-0x420`** |
+| `__TEXT.__cstring` | `0x175ab` | `0x1719b` | **`-0x410`** |
+| `__AUTH.__data` | `0x2c608` | `0x2c258` | **`-0x3b0`** |
+| `__TEXT.__swift5_fieldmd` | `0x3fde0` | `0x3faa8` | **`-0x338`** |
+| `__TEXT.__swift5_proto` | `0xa534` | `0xa3c4` | **`-0x170`** |
+| `__DATA.__data` | `0x4885c` | `0x489bc` | **`+0x160`** |
+| `__AUTH_CONST.__auth_got` | `0xa4e8` | `0xa390` | **`-0x158`** |
+| `__TEXT.__swift5_capture` | `0x10c40` | `0x10af0` | **`-0x150`** |
+| `__TEXT.__objc_methlist` | `0xa46c` | `0xa594` | **`+0x128`** |
+| `__DATA_CONST.__const` | `0x1db8` | `0x1d18` | **`-0xa0`** |
+| `__DATA_CONST.__got` | `0x6128` | `0x60a0` | **`-0x88`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6a78` | `0x6af8` | **`+0x80`** |
+| `__TEXT.__swift5_types` | `0x5ff4` | `0x5f78` | **`-0x7c`** |
+| `__AUTH_CONST.__objc_const` | `0x1fb38` | `0x1fb90` | **`+0x58`** |
+| `__TEXT.__swift5_builtin` | `0xe60` | `0xe9c` | **`+0x3c`** |
+| `__TEXT.__swift_as_cont` | `0x584` | `0x5b8` | **`+0x34`** |
+| `__DATA_DIRTY.__objc_data` | `0x3b88` | `0x3bb0` | **`+0x28`** |
+| `__DATA_CONST.__objc_protolist` | `0x8b0` | `0x8d0` | **`+0x20`** |
+| `__TEXT.__swift_as_ret` | `0x2dc` | `0x2f8` | **`+0x1c`** |
+| `__DATA.__common` | `0xcb8` | `0xcd0` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0xa98` | `0xa80` | **`-0x18`** |
+| `__TEXT.__swift_as_entry` | `0x31c` | `0x334` | **`+0x18`** |
+| `__DATA_CONST.__objc_protorefs` | `0x468` | `0x478` | **`+0x10`** |
+| `__TEXT.__swift5_mpenum` | `0x814` | `0x818` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__swift5_reflstr`
+
+### Other Changes
 
 ```diff
 
 -8.0.79.1.101
--  __TEXT.__text: 0x104d338
 +8.0.84.1.101
-+  __TEXT.__text: 0x1048d7c
-   __TEXT.__lazy_helpers: 0x54
--  __TEXT.__objc_methlist: 0xa46c
--  __TEXT.__cstring: 0x175ab
--  __TEXT.__const: 0xc36bc
--  __TEXT.__constg_swiftt: 0x7f3f8
-+  __TEXT.__objc_methlist: 0xa594
-+  __TEXT.__cstring: 0x1719b
-+  __TEXT.__const: 0xc1b0c
-+  __TEXT.__constg_swiftt: 0x7e4ec
-   __TEXT.__gcc_except_tab: 0x9c
-   __TEXT.__dlopen_cstrs: 0x1bc
--  __TEXT.__swift5_typeref: 0x44c3c
-+  __TEXT.__swift5_typeref: 0x4481c
-   __TEXT.__swift5_reflstr: 0x2a665
--  __TEXT.__swift5_fieldmd: 0x3fde0
--  __TEXT.__swift5_builtin: 0xe60
--  __TEXT.__swift5_assocty: 0x1a968
--  __TEXT.__swift5_proto: 0xa534
--  __TEXT.__swift5_types: 0x5ff4
-+  __TEXT.__swift5_fieldmd: 0x3faa8
-+  __TEXT.__swift5_builtin: 0xe9c
-+  __TEXT.__swift5_assocty: 0x1a490
-+  __TEXT.__swift5_proto: 0xa3c4
-+  __TEXT.__swift5_types: 0x5f78
-   __TEXT.__oslogstring: 0x3bcf
--  __TEXT.__swift5_capture: 0x10c40
-+  __TEXT.__swift5_capture: 0x10af0
-   __TEXT.__swift5_protos: 0x680
--  __TEXT.__swift_as_entry: 0x31c
--  __TEXT.__swift_as_ret: 0x2dc
--  __TEXT.__swift_as_cont: 0x584
--  __TEXT.__swift5_mpenum: 0x814
-+  __TEXT.__swift_as_entry: 0x334
-+  __TEXT.__swift_as_ret: 0x2f8
-+  __TEXT.__swift_as_cont: 0x5b8
-+  __TEXT.__swift5_mpenum: 0x818
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0x3bf60
--  __TEXT.__eh_frame: 0x16ce4
-+  __TEXT.__unwind_info: 0x3b9d0
-+  __TEXT.__eh_frame: 0x171a4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1db8
--  __DATA_CONST.__objc_classlist: 0xa98
-+  __DATA_CONST.__const: 0x1d18
-+  __DATA_CONST.__objc_classlist: 0xa80
-   __DATA_CONST.__objc_catlist: 0xd0
--  __DATA_CONST.__objc_protolist: 0x8b0
-+  __DATA_CONST.__objc_protolist: 0x8d0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6a78
--  __DATA_CONST.__objc_protorefs: 0x468
-+  __DATA_CONST.__objc_selrefs: 0x6af8
-+  __DATA_CONST.__objc_protorefs: 0x478
-   __DATA_CONST.__objc_superrefs: 0x50
-   __DATA_CONST.__objc_arraydata: 0x60
--  __DATA_CONST.__got: 0x6128
--  __AUTH_CONST.__const: 0xa6c30
-+  __DATA_CONST.__got: 0x60a0
-+  __AUTH_CONST.__const: 0xa5d00
-   __AUTH_CONST.__cfstring: 0x4c0
--  __AUTH_CONST.__objc_const: 0x1fb38
-+  __AUTH_CONST.__objc_const: 0x1fb90
-   __AUTH_CONST.__lazy_load_got: 0x8
-   __AUTH_CONST.__objc_dictobj: 0x50
--  __AUTH_CONST.__auth_got: 0xa4e8
-+  __AUTH_CONST.__auth_got: 0xa390
-   __AUTH.__objc_data: 0x97c8
--  __AUTH.__data: 0x2c608
-+  __AUTH.__data: 0x2c258
-   __DATA.__objc_ivar: 0x28
--  __DATA.__data: 0x4885c
-+  __DATA.__data: 0x489bc
-   __DATA.__objc_stublist: 0x70
--  __DATA.__bss: 0xd89a0
--  __DATA.__common: 0xcb8
--  __DATA_DIRTY.__objc_data: 0x3b88
--  __DATA_DIRTY.__data: 0x19b80
--  __DATA_DIRTY.__bss: 0x2e990
-+  __DATA.__bss: 0xd7120
-+  __DATA.__common: 0xcd0
-+  __DATA_DIRTY.__objc_data: 0x3bb0
-+  __DATA_DIRTY.__data: 0x193a0
-+  __DATA_DIRTY.__bss: 0x2d690
-   __DATA_DIRTY.__common: 0x928
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/ClockKit.framework/ClockKit
 
-   - /System/Library/PrivateFrameworks/TextAnimationSupport.framework/TextAnimationSupport
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-   - /System/Library/PrivateFrameworks/UIIntelligenceSupport.framework/UIIntelligenceSupport
 +  - /System/Library/PrivateFrameworks/UIKitServices.framework/UIKitServices
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libicucore.A.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 97133
--  Symbols:   244962
+-  Symbols:   242955
 -  CStrings:  2016
 +  Functions: 96531
-+  Symbols:   243455
++  Symbols:   241437
 +  CStrings:  2001
- 
 Symbols:
 + _$s10Foundation3URLV22appendingPathComponent_11isDirectoryACSS_SbtF
 + _$s14AttributeGraph0A0V4body5value5flags6updateACyxGSPyqd__G_SPyxGSgSo20AGAttributeTypeFlagsVySv_So0G0atcyXEtcAA01_A4BodyRd__lufcfA1_7SwiftUI14ToolbarStorageV_AQ0M14FilterModifier33_DA340D85023D4AE591699C123D2A23E1LLV0oM0VTg5
@@ -2268,20 +2206,6 @@ Symbols:
 + _get_witness_table qd__7SwiftUI7GestureHD2_AaBPAAE10dependencyyQrAA0C10DependencyOFQOyAA04_MapC0VyAA09ExclusiveC0VyAA019ContinuousScrollPanC033_BECA5A446C2D0490B4E9F47948FDF9CCLLVyAA10TouchEventVGAMyAA08IndirectjU0VGGAA0ijC0V5ValueVG_Qo_HO
 + _keypath_get.125Tm
 + _keypath_get.17Tm
-+ _objc_msgSend$_contextId
-+ _objc_msgSend$_isActive
-+ _objc_msgSend$_searchBarVisibilityWhenScrolling
-+ _objc_msgSend$_setActive:
-+ _objc_msgSend$_setHorizontalAlignment:
-+ _objc_msgSend$_setSearchBarVisibilityWhenScrolling:
-+ _objc_msgSend$copyItemAtURL:toURL:error:
-+ _objc_msgSend$isSecureTextEntry
-+ _objc_msgSend$mainQueue
-+ _objc_msgSend$moveItemAtURL:toURL:error:
-+ _objc_msgSend$objectForInfoDictionaryKey:
-+ _objc_msgSend$setTransfersHorizontalScrollingToParent:
-+ _objc_msgSend$setTransfersVerticalScrollingToParent:
-+ _objc_msgSend$systemPrefersReducedResourceUsage
 + _swift_task_deinitOnExecutor
 + _symbolic $s7SwiftUI35TextInputResponderCommandForwarding33_B5BBFA0CB2C8606BFE1A8A9B1471B7CFLLP
 + _symbolic 6Writer______8Snapshot_____QZ 7SwiftUI16WritableDocumentP AA0D6WriterP
@@ -5997,9 +5921,6 @@ Symbols:
 - _keypath_get.112Tm
 - _keypath_get.13Tm
 - _keypath_get.3Tm
-- _objc_msgSend$_resetHidesSearchBarWhenScrolling
-- _objc_msgSend$hidesSearchBarWhenScrolling
-- _objc_msgSend$setHidesSearchBarWhenScrolling:
 - _symbolic $s7SwiftUI18DerivedUnaryLayoutP
 - _symbolic $s7SwiftUI24SystemHoverEffectWrapperP
 - _symbolic $s7SwiftUI25InternalCustomHoverEffectP

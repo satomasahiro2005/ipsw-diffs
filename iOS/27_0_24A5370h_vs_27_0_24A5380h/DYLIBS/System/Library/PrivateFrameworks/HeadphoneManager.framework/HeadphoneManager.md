@@ -2,103 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/HeadphoneManager.framework/HeadphoneManager`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x13478c` | `0x137cd0` | **`+0x3544`** |
+| `__DATA.__bss` | `0x4a80` | `0x1f80` | **`-0x2b00`** |
+| `__DATA_DIRTY.__bss` | `0xc88` | `0x3648` | **`+0x29c0`** |
+| `__DATA_DIRTY.__data` | `0xfa0` | `0x19b0` | **`+0xa10`** |
+| `__AUTH_CONST.__const` | `0x9a88` | `0xa050` | **`+0x5c8`** |
+| `__DATA.__data` | `0xc38` | `0x758` | **`-0x4e0`** |
+| `__AUTH.__data` | `0xa18` | `0x5d8` | **`-0x440`** |
+| `__TEXT.__swift5_capture` | `0x35cc` | `0x3824` | **`+0x258`** |
+| `__TEXT.__const` | `0x6df6` | `0x6cb6` | **`-0x140`** |
+| `__TEXT.__oslogstring` | `0x19ac` | `0x1abc` | **`+0x110`** |
+| `__TEXT.__unwind_info` | `0x3678` | `0x3778` | **`+0x100`** |
+| `__TEXT.__swift5_reflstr` | `0x224f` | `0x21df` | **`-0x70`** |
+| `__AUTH.__objc_data` | `0x298` | `0x230` | **`-0x68`** |
+| `__DATA_DIRTY.__objc_data` | `0x1a08` | `0x1a70` | **`+0x68`** |
+| `__TEXT.__cstring` | `0x2d9d` | `0x2ded` | **`+0x50`** |
+| `__DATA.__common` | `0x38` | `0x8` | **`-0x30`** |
+| `__DATA_DIRTY.__common` | `0x88` | `0xb8` | **`+0x30`** |
+| `__TEXT.__constg_swiftt` | `0x31b4` | `0x3184` | **`-0x30`** |
+| `__TEXT.__eh_frame` | `0x9b0` | `0x9dc` | **`+0x2c`** |
+| `__AUTH_CONST.__auth_got` | `0x958` | `0x980` | **`+0x28`** |
+| `__TEXT.__swift5_fieldmd` | `0x12e4` | `0x12c0` | **`-0x24`** |
+| `__AUTH_CONST.__objc_const` | `0x3038` | `0x3018` | **`-0x20`** |
+| `__TEXT.__swift5_assocty` | `0x620` | `0x608` | **`-0x18`** |
+| `__TEXT.__swift5_builtin` | `0x3c0` | `0x3ac` | **`-0x14`** |
+| `__TEXT.__swift5_typeref` | `0x1228` | `0x1236` | **`+0xe`** |
+| `__DATA_CONST.__objc_selrefs` | `0xf58` | `0xf60` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x228` | `0x220` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0x180` | `0x178` | **`-0x8`** |
+| `__TEXT.__swift_as_cont` | `0x24` | `0x2c` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x28` | `0x30` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x24` | `0x2c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x13478c
-+  __TEXT.__text: 0x137cd0
-   __TEXT.__objc_methlist: 0xf54
--  __TEXT.__const: 0x6df6
--  __TEXT.__oslogstring: 0x19ac
--  __TEXT.__swift5_typeref: 0x1228
--  __TEXT.__swift5_capture: 0x35cc
--  __TEXT.__constg_swiftt: 0x31b4
--  __TEXT.__swift5_builtin: 0x3c0
--  __TEXT.__swift5_reflstr: 0x224f
--  __TEXT.__swift5_assocty: 0x620
--  __TEXT.__cstring: 0x2d9d
--  __TEXT.__swift5_proto: 0x228
--  __TEXT.__swift5_types: 0x180
--  __TEXT.__swift5_fieldmd: 0x12e4
-+  __TEXT.__const: 0x6cb6
-+  __TEXT.__oslogstring: 0x1abc
-+  __TEXT.__swift5_typeref: 0x1236
-+  __TEXT.__swift5_capture: 0x3824
-+  __TEXT.__constg_swiftt: 0x3184
-+  __TEXT.__swift5_builtin: 0x3ac
-+  __TEXT.__swift5_reflstr: 0x21df
-+  __TEXT.__swift5_assocty: 0x608
-+  __TEXT.__cstring: 0x2ded
-+  __TEXT.__swift5_proto: 0x220
-+  __TEXT.__swift5_types: 0x178
-+  __TEXT.__swift5_fieldmd: 0x12c0
-   __TEXT.__swift5_protos: 0x18
--  __TEXT.__swift_as_entry: 0x28
--  __TEXT.__swift_as_ret: 0x24
--  __TEXT.__swift_as_cont: 0x24
--  __TEXT.__unwind_info: 0x3678
--  __TEXT.__eh_frame: 0x9b0
-+  __TEXT.__swift_as_entry: 0x30
-+  __TEXT.__swift_as_ret: 0x2c
-+  __TEXT.__swift_as_cont: 0x2c
-+  __TEXT.__unwind_info: 0x3778
-+  __TEXT.__eh_frame: 0x9dc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-40.31.1.0.0
++40.33.1.0.0
 
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xf58
-+  __DATA_CONST.__objc_selrefs: 0xf60
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x9a88
--  __AUTH_CONST.__objc_const: 0x3038
--  __AUTH_CONST.__auth_got: 0x958
--  __AUTH.__objc_data: 0x298
--  __AUTH.__data: 0xa18
--  __DATA.__data: 0xc38
--  __DATA.__bss: 0x4a80
--  __DATA.__common: 0x38
--  __DATA_DIRTY.__objc_data: 0x1a08
--  __DATA_DIRTY.__data: 0xfa0
--  __DATA_DIRTY.__bss: 0xc88
--  __DATA_DIRTY.__common: 0x88
-+  __AUTH_CONST.__const: 0xa050
-+  __AUTH_CONST.__objc_const: 0x3018
-+  __AUTH_CONST.__auth_got: 0x980
-+  __AUTH.__objc_data: 0x230
-+  __AUTH.__data: 0x5d8
-+  __DATA.__data: 0x758
-+  __DATA.__bss: 0x1f80
-+  __DATA.__common: 0x8
-+  __DATA_DIRTY.__objc_data: 0x1a70
-+  __DATA_DIRTY.__data: 0x19b0
-+  __DATA_DIRTY.__bss: 0x3648
-+  __DATA_DIRTY.__common: 0xb8
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7822
--  Symbols:   18742
+-  Symbols:   10279
 -  CStrings:  473
 +  Functions: 7890
-+  Symbols:   18880
++  Symbols:   10264
 +  CStrings:  478
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
 Symbols:
 + _$s16HeadphoneManager13AADeviceModelV26acceptReplyPlayPauseConfig17autoANCCapability0J11ANCStrength20bluetoothAddressData16bobbleCapability0pI009caseSoundQ0018declineDismissSkipI0013earTipFitTestQ013frequencyBand17headGestureToggle24headGestureProxCardShown010hearingAidQ018hearingAidEnrolled010hearingAidI026hearingAidGainSwipeEnabled07hearingzQ0020hideOffListeningModeQ026audiogramEnrolledTimestamp23heartRateMonitorEnabled016hideEarDetectionQ010identifier13listeningMode14streamStateAoS16smartRoutingMode014sleepDetectionQ021sleepDetectionEnabled013cameraControlI023chargingReminderEnabled29optimizedBatteryChargingState23dynamicEndOfChargeState28temporaryManagedPairedStatus09healthKitO12WriteAllowed19preferenceEQGainLow19preferenceEQGainMid20preferenceEQGainHigh16preferenceEQModeACSo013AAHeadGestureI0V_So06AAAutoK0VSo06AAAutoL0V10Foundation0O0VSgSo09AAFeatureQ0VSo21AABobbleConfigurationVA24_A14_A24_So15AAFrequencyBandVSo12AAMultiStateVA30_So012AAHearingAidQ0VA30_So25AAHearingAidConfigurationVA30_So09AAHearingzQ0VA24_So6NSDateCA30_A24_SSSgSo15AAListeningModeVSo16AAStreamStateAoSVSo18AASmartRoutingModeVA24_A30_So021AARemoteCameraControlI0VA30_So32AAChargingFeatureEnablementStateVA49_A30_A30_s5UInt8VA51_A51_So18AAPreferenceEQModeVtcfC
 + _$s16HeadphoneManager13AADeviceModelV26acceptReplyPlayPauseConfig17autoANCCapability0J11ANCStrength20bluetoothAddressData16bobbleCapability0pI009caseSoundQ0018declineDismissSkipI0013earTipFitTestQ013frequencyBand17headGestureToggle24headGestureProxCardShown010hearingAidQ018hearingAidEnrolled010hearingAidI026hearingAidGainSwipeEnabled07hearingzQ0020hideOffListeningModeQ026audiogramEnrolledTimestamp23heartRateMonitorEnabled016hideEarDetectionQ010identifier13listeningMode14streamStateAoS16smartRoutingMode014sleepDetectionQ021sleepDetectionEnabled013cameraControlI023chargingReminderEnabled29optimizedBatteryChargingState23dynamicEndOfChargeState28temporaryManagedPairedStatus09healthKitO12WriteAllowed19preferenceEQGainLow19preferenceEQGainMid20preferenceEQGainHigh16preferenceEQModeACSo013AAHeadGestureI0V_So06AAAutoK0VSo06AAAutoL0V10Foundation0O0VSgSo09AAFeatureQ0VSo21AABobbleConfigurationVA24_A14_A24_So15AAFrequencyBandVSo12AAMultiStateVA30_So012AAHearingAidQ0VA30_So25AAHearingAidConfigurationVA30_So09AAHearingzQ0VA24_So6NSDateCA30_A24_SSSgSo15AAListeningModeVSo16AAStreamStateAoSVSo18AASmartRoutingModeVA24_A30_So021AARemoteCameraControlI0VA30_So32AAChargingFeatureEnablementStateVA49_A30_A30_s5UInt8VA51_A51_So18AAPreferenceEQModeVtcfcfA0_
@@ -196,7 +148,6 @@ Symbols:
 + _$sSo14AADeviceConfigCSo8NSObjectCs23CustomStringConvertible10FoundationWL
 + _$sSo14AADeviceConfigCSo8NSObjectCs23CustomStringConvertible10FoundationWl
 + ___swift_memcpy98_8
-+ _objc_msgSend$routed
 + _swift_release_x8
 + _swift_weakDestroy
 + _swift_weakInit
@@ -328,5 +279,4 @@ CStrings:
 + "AADevice updateGroupDeviceConfig ERROR :no identifier for: %s"
 + "AADevice updateGroupDeviceConfig Success: %s: %ld  Successfully updated group deviceConfig : %s"
 + "updateGroupDeviceConfig(config:updateValuesAction:)"
-
 ```

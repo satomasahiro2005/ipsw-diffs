@@ -2,25 +2,18 @@
 
 > `com.apple.driver.ApplePMP`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0xcfe0` | `0xcfe4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__const: 0x3c
-   __TEXT.__cstring: 0x1478
--  __TEXT_EXEC.__text: 0xcfe0
-+  __TEXT_EXEC.__text: 0xcfe4
-   __TEXT_EXEC.__auth_stubs: 0x450
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x178
-Sections:
-~ __DATA.__data : content changed
-~ __DATA_CONST.__mod_init_func : content changed
-~ __DATA_CONST.__mod_term_func : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__kalloc_type : content changed
-~ __DATA_CONST.__kalloc_var : content changed
-~ __DATA_CONST.__auth_got : content changed
-~ __DATA_CONST.__got : content changed
+-1661.0.1.0.0
++1661.0.7.0.0
 Functions:
 ~ __ZN8ApplePMP13_controlGatedEPjPm : 1336 -> 1340
-
 ```

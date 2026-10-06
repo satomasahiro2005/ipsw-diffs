@@ -2,41 +2,24 @@
 
 > `/System/Library/PrivateFrameworks/TextFormattingUI.framework/TextFormattingUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x65ed8` | `0x65eb8` | **`-0x20`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x65ed8
-+  __TEXT.__text: 0x65eb8
-   __TEXT.__objc_methlist: 0x42c
-   __TEXT.__const: 0x5398
-   __TEXT.__swift5_typeref: 0x85fc
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
+-9127.0.71.1.102
++9127.0.75.1.101
 Functions:
-~ sub_2a8a69120 -> sub_2ad399120 : 4484 -> 4480
-~ sub_2a8a74228 -> sub_2ad3a4224 : 800 -> 792
-~ sub_2a8a74548 -> sub_2ad3a453c : 656 -> 648
-~ sub_2a8a747d8 -> sub_2ad3a47c4 : 700 -> 692
-~ sub_2a8a77958 -> sub_2ad3a793c : 512 -> 516
-~ sub_2a8a8a0ec -> sub_2ad3ba0d4 : 432 -> 428
-~ sub_2a8a8a29c -> sub_2ad3ba280 : 432 -> 428
-
+~ sub_2a8923120 -> sub_2ad26c120 : 4484 -> 4480
+~ sub_2a892e228 -> sub_2ad277224 : 800 -> 792
+~ sub_2a892e548 -> sub_2ad27753c : 656 -> 648
+~ sub_2a892e7d8 -> sub_2ad2777c4 : 700 -> 692
+~ sub_2a8931958 -> sub_2ad27a93c : 512 -> 516
+~ sub_2a89440ec -> sub_2ad28d0d4 : 432 -> 428
+~ sub_2a894429c -> sub_2ad28d280 : 432 -> 428
 ```

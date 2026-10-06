@@ -2,37 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MLAssetIO.framework/MLAssetIO`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x60418
-+  __TEXT.__text: 0x60360
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__objc_methlist: 0x1184
-   __TEXT.__const: 0x7254
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x60418` | `0x60360` | **`-0xb8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __GLOBAL__I_000102 : 152 -> 160
 ~ -[MIOModelDescription initWithSpecification:isUpdatable:modelParameters:classLabelsPerFunction:error:] : 1248 -> 1216
@@ -108,5 +86,4 @@ Functions:
 ~ __ZNKSt3__121__murmur2_or_cityhashImLm64EEclB9fqe220106EPKvm : 532 -> 520
 ~ __ZN6google8protobuf3MapINSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEES8_E8InnerMap11DestroyTreeEPNS2_3mapINS2_17reference_wrapperIKS8_EEPvNS0_8internal18TransparentSupportIS8_E4lessENSG_12MapAllocatorINS2_4pairIKSE_SF_EEEEEE : 116 -> 112
 ~ __ZNSt3__125__throw_bad_function_callB9fqe220106Ev : 92 -> 76
-
 ```

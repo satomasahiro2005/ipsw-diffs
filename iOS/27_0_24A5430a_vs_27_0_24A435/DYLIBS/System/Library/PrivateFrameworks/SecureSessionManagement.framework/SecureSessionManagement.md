@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/SecureSessionManagement.framework/SecureSessionManagement`
 
-```diff
+### Section Size Changes
 
- 217.11.0.0.0
--  __TEXT.__text: 0x3783c
-+  __TEXT.__text: 0x37828
-   __TEXT.__const: 0x12c8
-   __TEXT.__cstring: 0x2bb
-   __TEXT.__constg_swiftt: 0x7ec
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3783c` | `0x37828` | **`-0x14`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2a24fec58 -> sub_2a32b1c58 : 884 -> 860
-~ sub_2a24fefcc -> sub_2a32b1fb4 : 624 -> 628
+~ sub_2a23f4c58 -> sub_2a31a3c58 : 884 -> 860
+~ sub_2a23f4fcc -> sub_2a31a3fb4 : 624 -> 628
 ```

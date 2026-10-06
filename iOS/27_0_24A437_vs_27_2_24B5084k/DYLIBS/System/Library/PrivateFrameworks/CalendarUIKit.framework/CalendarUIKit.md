@@ -2,119 +2,61 @@
 
 > `/System/Library/PrivateFrameworks/CalendarUIKit.framework/CalendarUIKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x471ee4` | `0x488e70` | **`+0x16f8c`** |
+| `__TEXT.__cstring` | `0x28779` | `0x13729` | **`-0x15050`** |
+| `__TEXT.__swift5_typeref` | `0x4a9c2` | `0x4c70c` | **`+0x1d4a`** |
+| `__DATA.__data` | `0xc5f0` | `0xd388` | **`+0xd98`** |
+| `__AUTH_CONST.__const` | `0x14bb0` | `0x15930` | **`+0xd80`** |
+| `__AUTH_CONST.__cfstring` | `0x8d00` | `0x9860` | **`+0xb60`** |
+| `__TEXT.__const` | `0x223e4` | `0x22c94` | **`+0x8b0`** |
+| `__TEXT.__constg_swiftt` | `0xab8c` | `0xb360` | **`+0x7d4`** |
+| `__TEXT.__unwind_info` | `0xc6c0` | `0xcc18` | **`+0x558`** |
+| `__TEXT.__swift5_fieldmd` | `0x8578` | `0x8a74` | **`+0x4fc`** |
+| `__TEXT.__swift5_reflstr` | `0x8579` | `0x8949` | **`+0x3d0`** |
+| `__AUTH_CONST.__objc_const` | `0x141a8` | `0x14568` | **`+0x3c0`** |
+| `__DATA_CONST.__const` | `0x2508` | `0x28a0` | **`+0x398`** |
+| `__AUTH.__data` | `0x3078` | `0x33d8` | **`+0x360`** |
+| `__DATA.__bss` | `0x1e9c0` | `0x1ed00` | **`+0x340`** |
+| `__AUTH.__objc_data` | `0x8b8` | `0xb80` | **`+0x2c8`** |
+| `__DATA_DIRTY.__data` | `0x7a50` | `0x7c78` | **`+0x228`** |
+| `__TEXT.__eh_frame` | `0xbf48` | `0xc10c` | **`+0x1c4`** |
+| `__TEXT.__objc_methlist` | `0xa808` | `0xa988` | **`+0x180`** |
+| `__TEXT.__oslogstring` | `0x4dd8` | `0x4ee8` | **`+0x110`** |
+| `__DATA.__common` | `0xba0` | `0xc80` | **`+0xe0`** |
+| `__TEXT.__swift5_capture` | `0x4a1c` | `0x494c` | **`-0xd0`** |
+| `__AUTH_CONST.__auth_got` | `0x36b8` | `0x3758` | **`+0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8508` | `0x8598` | **`+0x90`** |
+| `__DATA_DIRTY.__objc_data` | `0x4f40` | `0x4fc0` | **`+0x80`** |
+| `__TEXT.__swift5_types` | `0x708` | `0x784` | **`+0x7c`** |
+| `__TEXT.__swift5_assocty` | `0x1930` | `0x1968` | **`+0x38`** |
+| `__TEXT.__swift_as_cont` | `0x598` | `0x5c8` | **`+0x30`** |
+| `__TEXT.__swift5_builtin` | `0x3c0` | `0x3d4` | **`+0x14`** |
+| `__TEXT.__swift5_proto` | `0xf94` | `0xfa8` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x658` | `0x668` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x2578` | `0x2580` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x28` | `0x30` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x7bc` | `0x7c0` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0x298` | `0x294` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1327.0.103.0.0
--  __TEXT.__text: 0x452cf4
--  __TEXT.__objc_methlist: 0xa808
--  __TEXT.__const: 0x223e4
--  __TEXT.__cstring: 0x28779
--  __TEXT.__oslogstring: 0x4dd8
 +1327.1.6.0.0
-+  __TEXT.__text: 0x4697a8
-+  __TEXT.__objc_methlist: 0xa988
-+  __TEXT.__const: 0x22c94
-+  __TEXT.__cstring: 0x13729
-+  __TEXT.__oslogstring: 0x4ee8
-   __TEXT.__gcc_except_tab: 0xe74
-   __TEXT.__ustring: 0x204a
-   __TEXT.__dlopen_cstrs: 0x138
--  __TEXT.__constg_swiftt: 0xab8c
--  __TEXT.__swift5_typeref: 0x4a9c2
--  __TEXT.__swift5_builtin: 0x3c0
--  __TEXT.__swift5_reflstr: 0x8579
--  __TEXT.__swift5_fieldmd: 0x8578
--  __TEXT.__swift5_assocty: 0x1930
--  __TEXT.__swift5_proto: 0xf94
--  __TEXT.__swift5_types: 0x708
--  __TEXT.__swift5_capture: 0x4a1c
-+  __TEXT.__swift5_typeref: 0x4c70c
-+  __TEXT.__constg_swiftt: 0xb360
-+  __TEXT.__swift5_builtin: 0x3d4
-+  __TEXT.__swift5_reflstr: 0x8949
-+  __TEXT.__swift5_fieldmd: 0x8a74
-+  __TEXT.__swift5_assocty: 0x1968
-+  __TEXT.__swift5_proto: 0xfa8
-+  __TEXT.__swift5_types: 0x784
-+  __TEXT.__swift5_capture: 0x494c
-   __TEXT.__swift5_protos: 0x94
--  __TEXT.__swift_as_entry: 0x298
-+  __TEXT.__swift_as_entry: 0x294
-   __TEXT.__swift_as_ret: 0x230
--  __TEXT.__swift_as_cont: 0x598
--  __TEXT.__swift5_mpenum: 0x28
--  __TEXT.__unwind_info: 0x10210
--  __TEXT.__eh_frame: 0xbf50
-+  __TEXT.__swift_as_cont: 0x5c8
-+  __TEXT.__swift5_mpenum: 0x30
-+  __TEXT.__unwind_info: 0x10928
-+  __TEXT.__eh_frame: 0xc114
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2508
--  __DATA_CONST.__objc_classlist: 0x658
-+  __DATA_CONST.__const: 0x28a0
-+  __DATA_CONST.__objc_classlist: 0x668
-   __DATA_CONST.__objc_catlist: 0xd8
-   __DATA_CONST.__objc_protolist: 0x298
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8508
-+  __DATA_CONST.__objc_selrefs: 0x8598
-   __DATA_CONST.__objc_protorefs: 0x130
-   __DATA_CONST.__objc_superrefs: 0x298
-   __DATA_CONST.__objc_arraydata: 0x1d0
--  __DATA_CONST.__got: 0x2578
--  __AUTH_CONST.__const: 0x14bb0
--  __AUTH_CONST.__cfstring: 0x8d00
--  __AUTH_CONST.__objc_const: 0x141a8
-+  __DATA_CONST.__got: 0x2580
-+  __AUTH_CONST.__const: 0x15930
-+  __AUTH_CONST.__cfstring: 0x9860
-+  __AUTH_CONST.__objc_const: 0x14568
-   __AUTH_CONST.__objc_intobj: 0x450
-   __AUTH_CONST.__objc_arrayobj: 0xa8
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x36b8
--  __AUTH.__objc_data: 0x8b8
--  __AUTH.__data: 0x3078
--  __DATA.__objc_ivar: 0x7bc
--  __DATA.__data: 0xc5f0
--  __DATA.__common: 0xba0
--  __DATA_DIRTY.__objc_data: 0x4f40
--  __DATA_DIRTY.__data: 0x7a50
-+  __AUTH_CONST.__auth_got: 0x3758
-+  __AUTH.__objc_data: 0xb80
-+  __AUTH.__data: 0x33d8
-+  __DATA.__objc_ivar: 0x7c0
-+  __DATA.__data: 0xd388
-+  __DATA.__common: 0xc80
-+  __DATA_DIRTY.__objc_data: 0x4fc0
-+  __DATA_DIRTY.__data: 0x7c78
-   __DATA_DIRTY.__bss: 0x1130
-   __DATA_DIRTY.__common: 0x1c8
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-   - /System/Library/PrivateFrameworks/URLFormatting.framework/URLFormatting
-   - /System/Library/PrivateFrameworks/VisionKitCore.framework/VisionKitCore
 +  - /System/Library/PrivateFrameworks/_IconServices_SwiftUI.framework/_IconServices_SwiftUI
-   - /System/Library/PrivateFrameworks/iCalendar.framework/iCalendar
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 20237
--  Symbols:   14344
+-  Symbols:   11106
 -  CStrings:  2436
 +  Functions: 20993
-+  Symbols:   14551
++  Symbols:   11300
 +  CStrings:  2628
- 
 Symbols:
 + +[CUIKConferenceUtils _appIconBundleIdentifierForApplicationRecord:URL:isBroadcast:usesDefaultLaunchAppIcon:]
 + +[CUIKConferenceUtils _appIconDisplayDetailsForURL:isBroadcast:isEventURL:usesDefaultLaunchAppIcon:completionHandler:]
@@ -324,29 +266,6 @@ Symbols:
 + _keypath_set.281Tm
 + _keypath_set.35Tm
 + _keypath_set.789Tm
-+ _objc_msgSend$_appIconBundleIdentifierForApplicationRecord:URL:isBroadcast:usesDefaultLaunchAppIcon:
-+ _objc_msgSend$_appIconDisplayDetailsForURL:isBroadcast:isEventURL:usesDefaultLaunchAppIcon:completionHandler:
-+ _objc_msgSend$_imageForAppIconBundleIdentifier:URL:isBroadcast:scale:
-+ _objc_msgSend$activeAppearance
-+ _objc_msgSend$appIconBundleIdentifierForRoomType:
-+ _objc_msgSend$appIconDisplayDetailsForURL:isBroadcast:usesDefaultLaunchAppIcon:completionHandler:
-+ _objc_msgSend$appIconDisplayDetailsForURL:isEventURL:usesDefaultLaunchAppIcon:completionHandler:
-+ _objc_msgSend$attributedPlaceholder
-+ _objc_msgSend$colorWithDynamicProvider:
-+ _objc_msgSend$descender
-+ _objc_msgSend$eventSuggestionsFromPasteboardItemProvider:referenceDate:
-+ _objc_msgSend$imageDescriptorNamed:
-+ _objc_msgSend$initWithFileExtension:
-+ _objc_msgSend$invalidatePendingChangeNotifications
-+ _objc_msgSend$invitationResponseSaved
-+ _objc_msgSend$leading
-+ _objc_msgSend$magicComposeSPIAvailability
-+ _objc_msgSend$need24HourFormatForLocale:
-+ _objc_msgSend$parseWithTokens:as:date:previousParseTitle:options:completionHandler:
-+ _objc_msgSend$sendPrompt:configurationIdentifier:isSummaryPass:completionHandler:
-+ _objc_msgSend$setTypingAttributes:
-+ _objc_msgSend$timeIntervalAttributedTextWithStartDate:endDate:calendar:
-+ _objc_msgSend$typingAttributes
 + _symbolic SSSg_AA__________Sgt So16ActionButtonTypeV 10Foundation3URLV
 + _symbolic Say_____G 13DataDetection0A8DetectorO9MatchTypeV
 + _symbolic Sb11titleChange_t
@@ -1052,16 +971,6 @@ Symbols:
 - _keypath_set.251Tm
 - _keypath_set.31Tm
 - _keypath_set.764Tm
-- _objc_msgSend$_iconForResourceProxy:format:
-- _objc_msgSend$_imageForApplicationRecord:URL:isBroadcast:scale:usesDefaultLaunchAppIcon:
-- _objc_msgSend$cuik_systemGray5Color
-- _objc_msgSend$displayDetailsForURL:imageScale:completionHandler:
-- _objc_msgSend$documentProxyForName:type:MIMEType:
-- _objc_msgSend$imageForRoomType:scale:completionHandler:
-- _objc_msgSend$parseWithTokens:as:date:options:completionHandler:
-- _objc_msgSend$sendPrompt:systemPrompt:configurationIdentifier:useBundledSystemPrompt:isSummaryPass:completionHandler:
-- _objc_msgSend$setAnchorPoint:
-- _objc_msgSend$setMinimumDate:
 - _symbolic SaySo27EKVirtualConferenceRoomTypeCG
 - _symbolic SccySo7UIImageCSg_SSSg__________Sgt_____G So16ActionButtonTypeV 10Foundation3URLV s5NeverO
 - _symbolic SccySo7UIImageCSg_So27EKVirtualConferenceRoomTypeCSgt_____G s5NeverO

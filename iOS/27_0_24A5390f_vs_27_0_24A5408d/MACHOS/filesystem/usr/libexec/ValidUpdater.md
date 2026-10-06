@@ -2,15 +2,14 @@
 
 > `/usr/libexec/ValidUpdater`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__eh_frame`
+
+### Other Changes
 
 ```diff
 
 -134.0.18.0.0
 +134.0.21.0.0
-   __TEXT.__text: 0x6984
-   __TEXT.__auth_stubs: 0x900
-   __TEXT.__objc_stubs: 0x180
 ```

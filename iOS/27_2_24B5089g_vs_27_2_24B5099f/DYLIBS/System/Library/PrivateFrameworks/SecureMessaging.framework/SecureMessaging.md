@@ -2,50 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/SecureMessaging.framework/SecureMessaging`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x4fd20` | `0x4e220` | **`-0x1b00`** |
+| `__DATA_DIRTY.__bss` | `0x4d00` | `0x6800` | **`+0x1b00`** |
+| `__DATA.__data` | `0x93b8` | `0x91c8` | **`-0x1f0`** |
+| `__DATA_DIRTY.__data` | `0x3b38` | `0x3d28` | **`+0x1f0`** |
+| `__TEXT.__text` | `0x3d1aa0` | `0x3d1998` | **`-0x108`** |
+| `__TEXT.__eh_frame` | `0x32b08` | `0x32b88` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x108e0` | `0x108e8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 59.200.31.0.0
--  __TEXT.__text: 0x39ab88
-+  __TEXT.__text: 0x39aae4
-   __TEXT.__objc_methlist: 0x2e8
-   __TEXT.__const: 0x53c50
-   __TEXT.__swift5_typeref: 0x8fba
-
-   __TEXT.__swift5_assocty: 0x11c0
-   __TEXT.__swift5_builtin: 0x104
-   __TEXT.__swift5_mpenum: 0x19c
--  __TEXT.__unwind_info: 0x13420
--  __TEXT.__eh_frame: 0x32b18
-+  __TEXT.__unwind_info: 0x13438
-+  __TEXT.__eh_frame: 0x32b98
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __AUTH_CONST.__auth_got: 0x14d0
-   __AUTH.__objc_data: 0x500
-   __AUTH.__data: 0x5098
--  __DATA.__data: 0x93b8
-+  __DATA.__data: 0x91c8
-   __DATA.__common: 0x2a0
-   __DATA_DIRTY.__objc_data: 0x370
--  __DATA_DIRTY.__data: 0x3b38
--  __DATA_DIRTY.__bss: 0x4d00
-+  __DATA_DIRTY.__data: 0x3d28
-+  __DATA_DIRTY.__bss: 0x6800
-   __DATA_DIRTY.__common: 0x2a8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 18578
 -  Symbols:   48409
 +  Functions: 18582
 +  Symbols:   48414
-   CStrings:  1249
- 
 Symbols:
 + _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVy15SecureMessaging3MLSO12GroupVersionVG_Tg5
 + _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVy15SecureMessaging3MLSO17InMemoryPersisterC18IncomingEventEntryVG_Tg504$s15f16Messaging3MLSO17ijk76C10loadEvents16clientIdentifierAC06StoredH0VAC012UniqueClientJ0V_tYaKFSbAE18lmN10V_AMtXEfU_Tf1nnc_n

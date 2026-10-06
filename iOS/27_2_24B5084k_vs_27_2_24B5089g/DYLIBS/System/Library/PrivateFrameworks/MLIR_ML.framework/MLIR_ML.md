@@ -2,37 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/MLIR_ML.framework/MLIR_ML`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x395ebcc` | `0x39609e0` | **`+0x1e14`** |
+| `__TEXT.__cstring` | `0x17c406` | `0x17c762` | **`+0x35c`** |
+| `__TEXT.__unwind_info` | `0x9a178` | `0x9a1e0` | **`+0x68`** |
+| `__TEXT.__eh_frame` | `0x2ed0` | `0x2e9c` | **`-0x34`** |
+| `__TEXT.__gcc_except_tab` | `0x114750` | `0x11475c` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
 -7.1.2.0.0
--  __TEXT.__text: 0x3909dc8
 +7.1.3.0.0
-+  __TEXT.__text: 0x390bbe4
-   __TEXT.__init_offsets: 0x1bc
-   __TEXT.__objc_methlist: 0x1008
--  __TEXT.__gcc_except_tab: 0x114750
--  __TEXT.__cstring: 0x17c406
-+  __TEXT.__gcc_except_tab: 0x11475c
-+  __TEXT.__cstring: 0x17c762
-   __TEXT.__const: 0x15e1cb
--  __TEXT.__unwind_info: 0xc1830
--  __TEXT.__eh_frame: 0x2ef8
-+  __TEXT.__unwind_info: 0xc18b8
-+  __TEXT.__eh_frame: 0x2ec4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
--  Functions: 201947
--  Symbols:   237559
+-  Functions: 201946
+-  Symbols:   237370
 -  CStrings:  41869
-+  Functions: 201978
-+  Symbols:   237594
++  Functions: 201977
++  Symbols:   237405
 +  CStrings:  41877
- 
 Symbols:
 + __ZN4llvm6any_ofINS_6detail5zippyINS1_12zip_shortestEJNS_8ArrayRefIxEES5_EEEZN4mlir7mps_spi17LinearAttentionOp6verifyEvE3$_5EEbOT_T0_
 + __ZN4llvm6detail18UniqueFunctionBaseINS_13LogicalResultEJPN4mlir9OperationENS_8ArrayRefINS3_9AttributeEEERNS_15SmallVectorImplINS3_12OpFoldResultEEEEE15CallbacksHolderIZNS3_2OpINS3_3mps10IdentityOpEJNS3_7OpTrait11ZeroRegionsENSI_9OneResultENSI_14OneTypedResultINS3_4TypeEE4ImplENSI_14ZeroSuccessorsENSI_10OneOperandENSI_12OpInvariantsENS3_23MemoryEffectOpInterface5TraitENSI_25SameOperandsAndResultTypeENS3_30CompatibleReturnTypesInterface5TraitENS3_19DowngraderInterface5TraitENS3_20InferTypeOpInterface5TraitEEE13getFoldHookFnEvEUlS5_S8_SC_E_KS12_vE9CallbacksE

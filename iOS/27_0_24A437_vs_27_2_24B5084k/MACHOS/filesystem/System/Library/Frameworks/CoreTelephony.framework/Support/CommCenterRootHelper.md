@@ -2,52 +2,41 @@
 
 > `/System/Library/Frameworks/CoreTelephony.framework/Support/CommCenterRootHelper`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2f94` | `0x5058` | **`+0x20c4`** |
+| `__TEXT.__cstring` | `0x449` | `0x71c` | **`+0x2d3`** |
+| `__TEXT.__gcc_except_tab` | `0x39c` | `0x658` | **`+0x2bc`** |
+| `__TEXT.__auth_stubs` | `0x490` | `0x6b0` | **`+0x220`** |
+| `__DATA_CONST.__const` | `0x2b0` | `0x450` | **`+0x1a0`** |
+| `__TEXT.__oslogstring` | `0x1f9` | `0x34c` | **`+0x153`** |
+| `__DATA_CONST.__auth_got` | `0x250` | `0x360` | **`+0x110`** |
+| `__DATA_CONST.__cfstring` | `—` | `0xc0` | **`+0xc0`** |
+| `__TEXT.__unwind_info` | `0x218` | `0x2b0` | **`+0x98`** |
+| `__DATA.__data` | `—` | `0x10` | **`+0x10`** |
+| `__TEXT.__const` | `0x2b0` | `0x2c0` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0xa8` | `0xb0` | **`+0x8`** |
+| `__DATA.__bss` | `—` | `0x4` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__DATA_CONST.__auth_ptr`
+
+### Other Changes
 
 ```diff
 
 -13487.7.0.0.0
--  __TEXT.__text: 0x2f38
--  __TEXT.__auth_stubs: 0x490
--  __TEXT.__gcc_except_tab: 0x39c
--  __TEXT.__const: 0x2b0
--  __TEXT.__cstring: 0x449
--  __TEXT.__oslogstring: 0x1f9
--  __TEXT.__unwind_info: 0x268
--  __DATA_CONST.__const: 0x2b0
 +13494.0.0.0.0
-+  __TEXT.__text: 0x4ff0
-+  __TEXT.__auth_stubs: 0x6b0
-+  __TEXT.__gcc_except_tab: 0x658
-+  __TEXT.__const: 0x2c0
-+  __TEXT.__cstring: 0x71c
-+  __TEXT.__oslogstring: 0x34c
-+  __TEXT.__unwind_info: 0x318
-+  __DATA_CONST.__const: 0x450
-+  __DATA_CONST.__cfstring: 0xc0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x250
--  __DATA_CONST.__got: 0xa8
-+  __DATA_CONST.__auth_got: 0x360
-+  __DATA_CONST.__got: 0xb0
-   __DATA_CONST.__auth_ptr: 0x8
-+  __DATA.__data: 0x10
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreTelephony.framework/Support/libCommCenterBase.dylib
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 96
 -  Symbols:   103
 -  CStrings:  32
 +  Functions: 122
 +  Symbols:   139
 +  CStrings:  105
- 
 Symbols:
 + _CFArrayCreate
 + _CFBooleanGetTypeID

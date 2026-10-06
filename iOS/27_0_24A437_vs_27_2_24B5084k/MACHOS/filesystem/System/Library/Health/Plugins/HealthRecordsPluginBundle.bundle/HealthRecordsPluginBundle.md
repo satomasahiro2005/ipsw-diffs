@@ -2,68 +2,52 @@
 
 > `/System/Library/Health/Plugins/HealthRecordsPluginBundle.bundle/HealthRecordsPluginBundle`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4a0` | `0x77c` | **`+0x2dc`** |
+| `__TEXT.__objc_methname` | `0x3b4` | `0x4f3` | **`+0x13f`** |
+| `__TEXT.__objc_stubs` | `0x140` | `0x240` | **`+0x100`** |
+| `__DATA.__objc_const` | `0x310` | `0x3d8` | **`+0xc8`** |
+| `__TEXT.__auth_stubs` | `0xd0` | `0x160` | **`+0x90`** |
+| `__TEXT.__oslogstring` | `—` | `0x63` | **`+0x63`** |
+| `__DATA.__data` | `0x240` | `0x2a0` | **`+0x60`** |
+| `__DATA.__objc_selrefs` | `0x158` | `0x1a8` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0xe0` | `0x130` | **`+0x50`** |
+| `__DATA_CONST.__auth_got` | `0x70` | `0xb8` | **`+0x48`** |
+| `__TEXT.__objc_methlist` | `0x28c` | `0x2cc` | **`+0x40`** |
+| `__TEXT.__objc_classname` | `0x93` | `0xc6` | **`+0x33`** |
+| `__TEXT.__objc_methtype` | `0x1e2` | `0x212` | **`+0x30`** |
+| `__DATA_CONST.__cfstring` | `—` | `0x20` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x78` | `0x90` | **`+0x18`** |
+| `__TEXT.__cstring` | `—` | `0xf` | **`+0xf`** |
+| `__DATA_CONST.__objc_catlist` | `—` | `0x8` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x30` | `0x38` | **`+0x8`** |
+| `__TEXT.__const` | `—` | `0x8` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_data`
+- `__DATA_CONST.__objc_classlist`
+
+### Other Changes
 
 ```diff
 
 -7027.0.72.2.7
--  __TEXT.__text: 0x440
--  __TEXT.__auth_stubs: 0xd0
--  __TEXT.__objc_stubs: 0x140
--  __TEXT.__objc_methlist: 0x28c
--  __TEXT.__objc_classname: 0x93
--  __TEXT.__objc_methname: 0x3b4
--  __TEXT.__objc_methtype: 0x1e2
--  __TEXT.__unwind_info: 0x90
 +7027.1.36.2.7
-+  __TEXT.__text: 0x710
-+  __TEXT.__auth_stubs: 0x160
-+  __TEXT.__objc_stubs: 0x240
-+  __TEXT.__objc_methlist: 0x2cc
-+  __TEXT.__objc_classname: 0xc6
-+  __TEXT.__objc_methname: 0x4f3
-+  __TEXT.__objc_methtype: 0x212
-+  __TEXT.__const: 0x8
-+  __TEXT.__cstring: 0xf
-+  __TEXT.__oslogstring: 0x63
-+  __TEXT.__unwind_info: 0xa8
-+  __DATA_CONST.__cfstring: 0x20
-   __DATA_CONST.__objc_classlist: 0x8
--  __DATA_CONST.__objc_protolist: 0x30
-+  __DATA_CONST.__objc_catlist: 0x8
-+  __DATA_CONST.__objc_protolist: 0x38
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x70
--  __DATA_CONST.__got: 0xe0
--  __DATA.__objc_const: 0x310
--  __DATA.__objc_selrefs: 0x158
-+  __DATA_CONST.__auth_got: 0xb8
-+  __DATA_CONST.__got: 0x130
-+  __DATA.__objc_const: 0x3d8
-+  __DATA.__objc_selrefs: 0x1a8
-   __DATA.__objc_data: 0x50
--  __DATA.__data: 0x240
-+  __DATA.__data: 0x2a0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/HealthKit.framework/HealthKit
+
 +  - /System/Library/PrivateFrameworks/HealthAppServices.framework/HealthAppServices
-   - /System/Library/PrivateFrameworks/HealthDaemon.framework/HealthDaemon
+
 +  - /System/Library/PrivateFrameworks/HealthDaemonFoundation.framework/HealthDaemonFoundation
-   - /System/Library/PrivateFrameworks/HealthOntologyDaemon.framework/HealthOntologyDaemon
-   - /System/Library/PrivateFrameworks/HealthRecordsPlugin.framework/HealthRecordsPlugin
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
+
 -  Functions: 12
 -  Symbols:   48
 -  CStrings:  83
 +  Functions: 17
 +  Symbols:   68
 +  CStrings:  99
- 
 Symbols:
 + _HDClinicalAccountEntityPropertySignedClinicalDataIssuerROWID
 + _HDClinicalAccountEntityPropertyUserEnabled

@@ -2,118 +2,71 @@
 
 > `/usr/libexec/asd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_reflstr`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x96b27c` | `0x954bc4` | **`-0x166b8`** |
+| `__DATA_CONST.__const` | `0x29858` | `0x2a408` | **`+0xbb0`** |
+| `__TEXT.__objc_methname` | `0xa3e4` | `0xa7d4` | **`+0x3f0`** |
+| `__TEXT.__gcc_except_tab` | `0x3234` | `0x3518` | **`+0x2e4`** |
+| `__DATA.__objc_const` | `0x8340` | `0x85d8` | **`+0x298`** |
+| `__TEXT.__objc_stubs` | `0x75c0` | `0x77a0` | **`+0x1e0`** |
+| `__TEXT.__objc_methlist` | `0x35f4` | `0x376c` | **`+0x178`** |
+| `__TEXT.__const` | `0xb62c0` | `0xb6170` | **`-0x150`** |
+| `__DATA.__objc_selrefs` | `0x2290` | `0x2368` | **`+0xd8`** |
+| `__TEXT.__unwind_info` | `0x4868` | `0x4930` | **`+0xc8`** |
+| `__DATA.__objc_data` | `0x2fb0` | `0x3050` | **`+0xa0`** |
+| `__DATA_CONST.__cfstring` | `0x2180` | `0x2220` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0x3342` | `0x33e2` | **`+0xa0`** |
+| `__DATA_CONST.__objc_arraydata` | `0x208` | `0x270` | **`+0x68`** |
+| `__TEXT.__auth_stubs` | `0x3210` | `0x3270` | **`+0x60`** |
+| `__TEXT.__eh_frame` | `0x6e98` | `0x6ef0` | **`+0x58`** |
+| `__TEXT.__oslogstring` | `0x39a7` | `0x39f7` | **`+0x50`** |
+| `__TEXT.__objc_methtype` | `0x11c4b` | `0x11c0b` | **`-0x40`** |
+| `__DATA_CONST.__auth_got` | `0x1918` | `0x1948` | **`+0x30`** |
+| `__DATA_CONST.__objc_dictobj` | `0xa0` | `0xc8` | **`+0x28`** |
+| `__DATA.__objc_ivar` | `0x284` | `0x2a4` | **`+0x20`** |
+| `__TEXT.__objc_classname` | `0xd09` | `0xd29` | **`+0x20`** |
+| `__DATA_CONST.__objc_arrayobj` | `0x138` | `0x150` | **`+0x18`** |
+| `__TEXT.__swift5_typeref` | `0x2053` | `0x206b` | **`+0x18`** |
+| `__DATA.__common` | `0x22c` | `0x23c` | **`+0x10`** |
+| `__DATA.__data` | `0xedd0` | `0xedc0` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0xe70` | `0xe80` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x3d8` | `0x3e8` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1d0` | `0x1e0` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x2000` | `0x1ff4` | **`-0xc`** |
+| `__TEXT.__constg_swiftt` | `0x2120` | `0x2128` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_doubleobj`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_doubleobj`
-- `__DATA_CONST.__auth_ptr`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_reflstr`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
- 0.0.0.0.0
--  __TEXT.__text: 0x944964
--  __TEXT.__auth_stubs: 0x3210
--  __TEXT.__objc_stubs: 0x75c0
--  __TEXT.__objc_methlist: 0x35f4
--  __TEXT.__cstring: 0x3342
--  __TEXT.__objc_classname: 0xd09
--  __TEXT.__objc_methname: 0xa3e4
--  __TEXT.__const: 0xb62c0
--  __TEXT.__gcc_except_tab: 0x3230
--  __TEXT.__objc_methtype: 0x11c4b
-+  __TEXT.__text: 0x95051c
-+  __TEXT.__auth_stubs: 0x3270
-+  __TEXT.__objc_stubs: 0x77a0
-+  __TEXT.__objc_methlist: 0x376c
-+  __TEXT.__cstring: 0x33e2
-+  __TEXT.__objc_classname: 0xd29
-+  __TEXT.__objc_methname: 0xa7d4
-+  __TEXT.__const: 0xb6170
-+  __TEXT.__gcc_except_tab: 0x3510
-+  __TEXT.__objc_methtype: 0x11c0b
-   __TEXT.__ustring: 0x30
--  __TEXT.__swift5_typeref: 0x2053
--  __TEXT.__constg_swiftt: 0x2120
-+  __TEXT.__swift5_typeref: 0x206b
-+  __TEXT.__constg_swiftt: 0x2128
-   __TEXT.__swift5_reflstr: 0x189d
--  __TEXT.__swift5_fieldmd: 0x2000
-+  __TEXT.__swift5_fieldmd: 0x1ff4
-   __TEXT.__swift5_builtin: 0x78
-   __TEXT.__swift5_types: 0x24c
-   __TEXT.__swift5_assocty: 0x348
-
-   __TEXT.__swift_as_entry: 0x298
-   __TEXT.__swift_as_ret: 0x2e4
-   __TEXT.__swift_as_cont: 0x538
--  __TEXT.__unwind_info: 0x5388
--  __TEXT.__eh_frame: 0x6e88
--  __TEXT.__oslogstring: 0x39a7
--  __DATA_CONST.__const: 0x2a388
--  __DATA_CONST.__cfstring: 0x2180
--  __DATA_CONST.__objc_classlist: 0x3d8
-+  __TEXT.__unwind_info: 0x5498
-+  __TEXT.__eh_frame: 0x6ee0
-+  __TEXT.__oslogstring: 0x39f7
-+  __DATA_CONST.__const: 0x2adf8
-+  __DATA_CONST.__cfstring: 0x2220
-+  __DATA_CONST.__objc_classlist: 0x3e8
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0xd0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x50
--  __DATA_CONST.__objc_superrefs: 0x1d0
-+  __DATA_CONST.__objc_superrefs: 0x1e0
-   __DATA_CONST.__objc_intobj: 0x3a8
-+  __DATA_CONST.__objc_arraydata: 0x270
-+  __DATA_CONST.__objc_dictobj: 0xc8
-+  __DATA_CONST.__objc_arrayobj: 0x150
-   __DATA_CONST.__objc_doubleobj: 0x20
--  __DATA_CONST.__objc_arraydata: 0x208
--  __DATA_CONST.__objc_arrayobj: 0x138
--  __DATA_CONST.__objc_dictobj: 0xa0
--  __DATA_CONST.__auth_got: 0x1918
--  __DATA_CONST.__got: 0xe70
-+  __DATA_CONST.__auth_got: 0x1948
-+  __DATA_CONST.__got: 0xe80
-   __DATA_CONST.__auth_ptr: 0x700
--  __DATA.__objc_const: 0x8340
--  __DATA.__objc_selrefs: 0x2290
--  __DATA.__objc_ivar: 0x284
--  __DATA.__objc_data: 0x2fb0
--  __DATA.__data: 0xedc8
-+  __DATA.__objc_const: 0x85d8
-+  __DATA.__objc_selrefs: 0x2368
-+  __DATA.__objc_ivar: 0x2a4
-+  __DATA.__objc_data: 0x3050
-+  __DATA.__data: 0xedb0
-   __DATA.__common: 0x23c
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 6349
+-  Functions: 6379
 -  Symbols:   2064
 -  CStrings:  2731
-+  Functions: 6410
++  Functions: 6441
 +  Symbols:   2071
 +  CStrings:  2782
- 
 Symbols:
 + _$s12GRDBInternal18StatementArgumentsVyACSDySSAA24DatabaseValueConvertible_pSgGcfC
 + _$s12GRDBInternal18StatementArgumentsVyACxcSTRzAA24DatabaseValueConvertible7ElementRpzlufC

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/EmbeddingCore.framework/EmbeddingCore`
 
-```diff
+### Section Size Changes
 
- 435.79.1.5.0
--  __TEXT.__text: 0x69e50
-+  __TEXT.__text: 0x69eac
-   __TEXT.__objc_methlist: 0x1954
-   __TEXT.__const: 0x1160
-   __TEXT.__gcc_except_tab: 0x7184
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x69e50` | `0x69eac` | **`+0x5c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNK13sentencepiece10normalizer10Normalizer9NormalizeENSt3__117basic_string_viewIcNS2_11char_traitsIcEEEEPNS2_12basic_stringIcS5_NS2_9allocatorIcEEEEPNS2_6vectorImNS8_ImEEEE : 2256 -> 2260
 ~ __ZZNK13sentencepiece3bpe5Model12SampleEncodeENSt3__117basic_string_viewIcNS2_11char_traitsIcEEEEfENK3$_1clEii : 784 -> 792

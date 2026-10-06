@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ContactsAutocomplete.framework/ContactsAutocomplete`
 
-```diff
+### Section Size Changes
 
- 1384.200.11.0.0
--  __TEXT.__text: 0x56344
-+  __TEXT.__text: 0x5634c
-   __TEXT.__objc_methlist: 0x4544
-   __TEXT.__const: 0x44b0
-   __TEXT.__oslogstring: 0x36c7
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x59488` | `0x59490` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_25a99cf0c -> sub_25ac74f0c : 508 -> 516
+~ sub_25d4e98ec -> sub_25d7528ec : 508 -> 516
 ```

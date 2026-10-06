@@ -2,14 +2,15 @@
 
 > `/usr/lib/libDetachedCertificates.dylib`
 
-```diff
+### Section Size Changes
 
- 1171.40.7.0.0
--  __TEXT.__text: 0x7184
-+  __TEXT.__text: 0x7180
-   __TEXT.__objc_methlist: 0x244
-   __TEXT.__cstring: 0x8e4
-   __TEXT.__const: 0x6a
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7264` | `0x7268` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ _X509ExtensionParseBasicConstraints : 208 -> 204
+~ _X509ExtensionParseBasicConstraints : 208 -> 212
 ```

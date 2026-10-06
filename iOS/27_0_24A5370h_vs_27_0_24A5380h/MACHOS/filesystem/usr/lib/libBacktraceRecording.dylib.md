@@ -2,22 +2,28 @@
 
 > `/usr/lib/libBacktraceRecording.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x59a8` | `0x5998` | **`-0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__init_offsets`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x59a8
-+  __TEXT.__text: 0x5998
-   __TEXT.__auth_stubs: 0x3a0
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__const: 0x70
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA.__data : content changed
+-64578.53.1.0.0
++64578.53.2.0.0
 Functions:
 ~ _get_entry_from_free_list : 400 -> 368
 ~ _resetDyldInsertLibraries : 424 -> 428
 ~ _backtrace_contains_function : 428 -> 440
-
 ```

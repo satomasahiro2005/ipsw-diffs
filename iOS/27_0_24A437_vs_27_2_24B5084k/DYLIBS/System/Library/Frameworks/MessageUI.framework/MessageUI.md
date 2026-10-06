@@ -2,87 +2,43 @@
 
 > `/System/Library/Frameworks/MessageUI.framework/MessageUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x150358` | `0x151084` | **`+0xd2c`** |
+| `__TEXT.__oslogstring` | `0x5ffe` | `0x63de` | **`+0x3e0`** |
+| `__AUTH_CONST.__objc_const` | `0x1a860` | `0x1a690` | **`-0x1d0`** |
+| `__TEXT.__gcc_except_tab` | `0x253a0` | `0x254c8` | **`+0x128`** |
+| `__TEXT.__cstring` | `0xa1d6` | `0xa2f6` | **`+0x120`** |
+| `__AUTH.__objc_data` | `0x3588` | `0x34e8` | **`-0xa0`** |
+| `__TEXT.__objc_methlist` | `0x12af4` | `0x12a7c` | **`-0x78`** |
+| `__AUTH_CONST.__cfstring` | `0x8f00` | `0x8ec0` | **`-0x40`** |
+| `__AUTH_CONST.__const` | `0x1c90` | `0x1cd0` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0xa620` | `0xa5f8` | **`-0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0xc2c8` | `0xc2a8` | **`-0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x1900` | `0x18f0` | **`-0x10`** |
+| `__DATA.__bss` | `0x1d60` | `0x1d50` | **`-0x10`** |
+| `__DATA.__objc_ivar` | `0x114c` | `0x113c` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x628` | `0x618` | **`-0x10`** |
+| `__DATA.__data` | `0x3818` | `0x3820` | **`+0x8`** |
+| `__DATA_CONST.__const` | `0x4a18` | `0x4a10` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x1ef0` | `0x1ee8` | **`-0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x4b0` | `0x4a8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3901.100.1.2.14
--  __TEXT.__text: 0x1496dc
 +3901.200.34.0.0
-+  __TEXT.__text: 0x14a480
-   __TEXT.__delay_helper: 0x114
--  __TEXT.__objc_methlist: 0x12af4
--  __TEXT.__cstring: 0xa1d6
--  __TEXT.__gcc_except_tab: 0x253a0
-+  __TEXT.__objc_methlist: 0x12a7c
-+  __TEXT.__cstring: 0xa2f6
-+  __TEXT.__gcc_except_tab: 0x254c8
-   __TEXT.__const: 0x1ff4
-   __TEXT.__ustring: 0x4dc
--  __TEXT.__oslogstring: 0x5ffe
-+  __TEXT.__oslogstring: 0x63de
-   __TEXT.__dlopen_cstrs: 0x4bf
-   __TEXT.__swift5_typeref: 0x1894
-   __TEXT.__swift5_reflstr: 0x5a8
 
-   __TEXT.__swift_as_entry: 0x28
-   __TEXT.__swift_as_ret: 0x2c
-   __TEXT.__swift_as_cont: 0x50
--  __TEXT.__unwind_info: 0xb4f0
-+  __TEXT.__unwind_info: 0xb4c8
-   __TEXT.__eh_frame: 0x5e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4a18
--  __DATA_CONST.__objc_classlist: 0x628
-+  __DATA_CONST.__const: 0x4a10
-+  __DATA_CONST.__objc_classlist: 0x618
-   __DATA_CONST.__objc_catlist: 0x108
-   __DATA_CONST.__objc_protolist: 0x418
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xc2c8
-+  __DATA_CONST.__objc_selrefs: 0xc2a8
-   __DATA_CONST.__objc_protorefs: 0x68
--  __DATA_CONST.__objc_superrefs: 0x4b0
-+  __DATA_CONST.__objc_superrefs: 0x4a8
-   __DATA_CONST.__objc_arraydata: 0x648
--  __DATA_CONST.__got: 0x1ef0
--  __AUTH_CONST.__const: 0x1c90
--  __AUTH_CONST.__cfstring: 0x8f00
--  __AUTH_CONST.__objc_const: 0x1a860
-+  __DATA_CONST.__got: 0x1ee8
-+  __AUTH_CONST.__const: 0x1cd0
-+  __AUTH_CONST.__cfstring: 0x8ec0
-+  __AUTH_CONST.__objc_const: 0x1a690
-   __AUTH_CONST.__objc_floatobj: 0x20
-   __AUTH_CONST.__objc_intobj: 0x1b0
-   __AUTH_CONST.__objc_arrayobj: 0x78
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_dictobj: 0x5a0
--  __AUTH_CONST.__auth_got: 0x1900
--  __AUTH.__objc_data: 0x3588
-+  __AUTH_CONST.__auth_got: 0x18f0
-+  __AUTH.__objc_data: 0x34e8
-   __AUTH.__data: 0x360
--  __DATA.__objc_ivar: 0x114c
--  __DATA.__data: 0x3818
-+  __DATA.__objc_ivar: 0x113c
-+  __DATA.__data: 0x3820
-   __DATA.__common: 0x2f8
-   __DATA_DIRTY.__objc_data: 0xb90
-   __DATA_DIRTY.__data: 0x8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 6881
--  Symbols:   16244
+-  Functions: 6882
+-  Symbols:   11672
 -  CStrings:  2060
-+  Functions: 6872
-+  Symbols:   16205
++  Functions: 6873
++  Symbols:   11637
 +  CStrings:  2080
- 
 Symbols:
 + +[MFComposeTypeFactory _canReplyFromHMEForOriginalMessageHeaders:]
 + +[MFComposeTypeFactory _recipientAddressLooksLikeHMEAddress:]
@@ -123,15 +79,6 @@ Symbols:
 + ___ECEmailAddressConvertiblePublicDescriptions_block_invoke
 + ___block_descriptor_33_e31_B24?0"NSString"8"NSString"16l
 + ___block_descriptor_48_ea8_32s40s_e26_B16?0"UIViewController"8ls32l8s40l8
-+ _objc_msgSend$_canReplyFromHMEForOriginalMessageHeaders:
-+ _objc_msgSend$_recipientAddressLooksLikeHMEAddress:
-+ _objc_msgSend$_sanitizeIsReplyAll:sendingEmailAddress:replyAllCCMatcher:
-+ _objc_msgSend$_sanitizeRecipientsWithDelegate:
-+ _objc_msgSend$fullyOrPartiallyRedactedStringForString:
-+ _objc_msgSend$handlerForURLScheme:
-+ _objc_msgSend$isPrimaryAppleAccount
-+ _objc_msgSend$sanitize
-+ _objc_msgSend$sanitizeForReplyAllWithSendingEmailAddress:replyAllCCMatcher:
 - +[MFComposeTypeFactory _sanitizeRecipientsForComposeType:sendingAddress:delegate:]
 - +[MFDataDetectors _DDURLifierClass]
 - +[MFDataDetectors sharedDetectionController]
@@ -204,19 +151,6 @@ Symbols:
 - ___82+[MFComposeTypeFactory _sanitizeRecipientsForComposeType:sendingAddress:delegate:]_block_invoke
 - ___block_descriptor_40_ea8_32s_e14_"NSArray"8?0ls32l8
 - ___block_descriptor_48_ea8_32s40s_e26_v16?0"UIViewController"8ls32l8s40l8
-- _objc_msgSend$_DDURLifierClass
-- _objc_msgSend$_sanitizeRecipientsForComposeType:sendingAddress:delegate:
-- _objc_msgSend$fileSystemRepresentation
-- _objc_msgSend$previewClippingPath
-- _objc_msgSend$previewView
-- _objc_msgSend$sanitizeForComposeType:sendingEmailAddress:hideMyEmailAddressProvider:
-- _objc_msgSend$setImageView:
-- _objc_msgSend$sharedController
-- _objc_msgSend$sharedHandler
-- _objc_msgSend$urlIfyNode:
-- _objc_msgSend$urlIfyNode:phoneNumberTypes:
-- _objc_msgSend$urlMatchesForString:
-- _objc_msgSend$urlMatchesForString:includingTel:
 - _sharedDetectionController._DDDetectionControllerClass
 - _sharedDetectionController.inited
 CStrings:

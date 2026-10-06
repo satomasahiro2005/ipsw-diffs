@@ -2,39 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/CTBlastDoorSupport.framework/CTBlastDoorSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x699e0` | `0x69c30` | **`+0x250`** |
+| `__TEXT.__eh_frame` | `0x6568` | `0x6598` | **`+0x30`** |
+| `__TEXT.__gcc_except_tab` | `0x386c` | `0x3858` | **`-0x14`** |
+| `__TEXT.__unwind_info` | `0x3ac0` | `0x3ac8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -13496.3.0.0.0
--  __TEXT.__text: 0x673bc
 +13498.0.0.0.0
-+  __TEXT.__text: 0x6760c
-   __TEXT.__objc_methlist: 0x4ec
--  __TEXT.__gcc_except_tab: 0x386c
-+  __TEXT.__gcc_except_tab: 0x3858
-   __TEXT.__cstring: 0x35c
-   __TEXT.__const: 0x6614
-   __TEXT.__constg_swiftt: 0x1b28
 
-   __TEXT.__oslogstring: 0x14e
-   __TEXT.__swift5_protos: 0x50
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0x3f78
--  __TEXT.__eh_frame: 0x6978
-+  __TEXT.__unwind_info: 0x3f88
-+  __TEXT.__eh_frame: 0x69a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2877
 -  Symbols:   2549
 +  Functions: 2880
 +  Symbols:   2548
-   CStrings:  37
- 
 Symbols:
 + GCC_except_table1007
 + GCC_except_table1015

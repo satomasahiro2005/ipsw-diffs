@@ -2,28 +2,24 @@
 
 > `/System/Library/PrivateFrameworks/CalendarDatabase.framework/CalendarDatabase`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xdc19c` | `0xdc27c` | **`+0xe0`** |
+| `__TEXT.__gcc_except_tab` | `0x1870` | `0x18dc` | **`+0x6c`** |
+| `__TEXT.__unwind_info` | `0x2d10` | `0x2d20` | **`+0x10`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -1290.0.0.0.0
--  __TEXT.__text: 0xdc19c
 +1291.0.0.0.0
-+  __TEXT.__text: 0xdc27c
-   __TEXT.__objc_methlist: 0x1f0c
-   __TEXT.__cstring: 0x1fa88
-   __TEXT.__const: 0xaa4
--  __TEXT.__gcc_except_tab: 0x1870
-+  __TEXT.__gcc_except_tab: 0x18dc
-   __TEXT.__oslogstring: 0xcbe7
-   __TEXT.__dlopen_cstrs: 0x60
--  __TEXT.__unwind_info: 0x2d10
-+  __TEXT.__unwind_info: 0x2d20
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 Symbols:
 + GCC_except_table47
 + ___block_descriptor_108_e8_32s40s48s56s64s72s80r_e126_v36?0r^{?=*^?^?^?^?^?^?C^vi^{?}^v*^?^?i^{?}i^?}8i16B20?<v?^{CPSqliteStatement=^{CPSqliteConnection}^{sqlite3_stmt}dB}>24i32ls32l8s40l8s48l8s56l8s64l8s72l8r80l8

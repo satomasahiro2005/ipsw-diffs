@@ -2,56 +2,31 @@
 
 > `/System/Library/Frameworks/CoreImage.framework/CoreImage`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__runtimeheader` | `0xda3c` | `0x15aa4` | **`+0x8068`** |
+| `__TEXT.__text` | `0x34919c` | `0x349728` | **`+0x58c`** |
+| `__TEXT.__cstring` | `0x104941` | `0x1049a3` | **`+0x62`** |
+| `__DATA_CONST.__const` | `0x64b0` | `0x64d8` | **`+0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8e18` | `0x8e38` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x15978` | `0x15990` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0xaf0` | `0xaf8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1663.0.0.0.0
--  __TEXT.__text: 0x34919c
--  __TEXT.__objc_methlist: 0x15978
 +1667.0.0.0.0
-+  __TEXT.__text: 0x349728
-+  __TEXT.__objc_methlist: 0x15990
-   __TEXT.__const: 0xe198
-   __TEXT.__gcc_except_tab: 0xa868
--  __TEXT.__cstring: 0x104941
-+  __TEXT.__cstring: 0x1049a3
-   __TEXT.__oslogstring: 0xb283
-   __TEXT.__dlopen_cstrs: 0x3fd
--  __TEXT.__runtimeheader: 0xda3c
-+  __TEXT.__runtimeheader: 0x15aa4
-   __TEXT.__cikl2metal_pre: 0x54b
-   __TEXT.__grain: 0x105040
-   __TEXT.__unwind_info: 0xa8b0
 
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x64b0
-+  __DATA_CONST.__const: 0x64d8
-   __DATA_CONST.__objc_classlist: 0x1078
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8e18
-+  __DATA_CONST.__objc_selrefs: 0x8e38
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x360
-   __DATA_CONST.__objc_arraydata: 0x1488
--  __DATA_CONST.__got: 0xaf0
-+  __DATA_CONST.__got: 0xaf8
-   __AUTH_CONST.__const: 0xde40
-   __AUTH_CONST.__cfstring: 0x1dba0
-   __AUTH_CONST.__objc_const: 0x2b488
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 15161
--  Symbols:   28577
+-  Symbols:   26328
 -  CStrings:  8880
 +  Functions: 15165
-+  Symbols:   28584
++  Symbols:   26333
 +  CStrings:  8881
- 
 Symbols:
 + -[CIContext isUberShaderAvailable]
 + -[CIRAWFilter downloadResourcesWithTimeout:completionHandler:]
@@ -70,8 +45,6 @@ Symbols:
 + __ZNK2CI12MetalContext24is_uber_shader_availableEv
 + ___62-[CIRAWFilter downloadResourcesWithTimeout:completionHandler:]_block_invoke
 + ___block_descriptor_48_e8_32o40b_e5_v8?0ls32l8s40l8
-+ _objc_msgSend$progressWithTotalUnitCount:
-+ _objc_msgSend$setCompletedUnitCount:
 - GCC_except_table178
 - GCC_except_table200
 - GCC_except_table206

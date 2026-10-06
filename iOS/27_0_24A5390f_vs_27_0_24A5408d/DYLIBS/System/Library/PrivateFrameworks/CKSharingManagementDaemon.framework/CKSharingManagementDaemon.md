@@ -2,99 +2,59 @@
 
 > `/System/Library/PrivateFrameworks/CKSharingManagementDaemon.framework/CKSharingManagementDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8f174` | `0xcd224` | **`+0x3e0b0`** |
+| `__TEXT.__eh_frame` | `0x7ae4` | `0xaf10` | **`+0x342c`** |
+| `__DATA.__bss` | `0x8980` | `0xadb0` | **`+0x2430`** |
+| `__TEXT.__const` | `0x61f0` | `0x7f08` | **`+0x1d18`** |
+| `__TEXT.__oslogstring` | `0x2e51` | `0x4a01` | **`+0x1bb0`** |
+| `__AUTH_CONST.__const` | `0x35c0` | `0x4b00` | **`+0x1540`** |
+| `__TEXT.__unwind_info` | `0x2990` | `0x3db8` | **`+0x1428`** |
+| `__TEXT.__swift5_typeref` | `0x1dbe` | `0x270e` | **`+0x950`** |
+| `__AUTH_CONST.__objc_const` | `0xd38` | `0x1580` | **`+0x848`** |
+| `__TEXT.__swift5_fieldmd` | `0x17ec` | `0x1ee8` | **`+0x6fc`** |
+| `__TEXT.__constg_swiftt` | `0x1868` | `0x1eec` | **`+0x684`** |
+| `__TEXT.__cstring` | `0xb26` | `0x11a6` | **`+0x680`** |
+| `__TEXT.__swift5_reflstr` | `0x1265` | `0x1865` | **`+0x600`** |
+| `__AUTH.__data` | `0x1328` | `0x1918` | **`+0x5f0`** |
+| `__DATA.__data` | `0x1658` | `0x1c40` | **`+0x5e8`** |
+| `__TEXT.__swift5_capture` | `0x5c4` | `0x920` | **`+0x35c`** |
+| `__TEXT.__swift_as_cont` | `0x578` | `0x814` | **`+0x29c`** |
+| `__AUTH.__objc_data` | `0x238` | `0x4c8` | **`+0x290`** |
+| `__AUTH_CONST.__auth_got` | `0x10a0` | `0x1288` | **`+0x1e8`** |
+| `__TEXT.__swift_as_ret` | `0x2e4` | `0x448` | **`+0x164`** |
+| `__TEXT.__swift5_proto` | `0x4b0` | `0x5d8` | **`+0x128`** |
+| `__TEXT.__swift_as_entry` | `0x238` | `0x33c` | **`+0x104`** |
+| `__TEXT.__objc_methlist` | `0x364` | `0x464` | **`+0x100`** |
+| `__DATA_CONST.__got` | `0x6c8` | `0x7c0` | **`+0xf8`** |
+| `__TEXT.__swift5_types` | `0x1d0` | `0x270` | **`+0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x598` | `0x628` | **`+0x90`** |
+| `__TEXT.__swift5_assocty` | `0x300` | `0x390` | **`+0x90`** |
+| `__DATA_CONST.__objc_classlist` | `0x58` | `0x98` | **`+0x40`** |
+| `__TEXT.__swift5_builtin` | `0x3c` | `0x50` | **`+0x14`** |
+| `__DATA_CONST.__objc_protolist` | `0x60` | `0x70` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x30` | `0x40` | **`+0x10`** |
+| `__DATA.__common` | `0x30` | `0x38` | **`+0x8`** |
+| `__DATA_CONST.__objc_catlist` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x60` | `0x68` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -23.0.0.0.0
--  __TEXT.__text: 0x8f174
--  __TEXT.__objc_methlist: 0x364
--  __TEXT.__const: 0x61f0
--  __TEXT.__cstring: 0xb26
--  __TEXT.__swift5_typeref: 0x1dbe
--  __TEXT.__swift5_capture: 0x5c4
--  __TEXT.__constg_swiftt: 0x1868
--  __TEXT.__swift5_reflstr: 0x1265
--  __TEXT.__swift5_fieldmd: 0x17ec
--  __TEXT.__swift5_assocty: 0x300
--  __TEXT.__swift5_builtin: 0x3c
--  __TEXT.__swift5_proto: 0x4b0
--  __TEXT.__swift5_types: 0x1d0
--  __TEXT.__swift5_protos: 0x60
--  __TEXT.__swift_as_entry: 0x238
--  __TEXT.__swift_as_ret: 0x2e4
--  __TEXT.__swift_as_cont: 0x578
--  __TEXT.__oslogstring: 0x2e51
--  __TEXT.__unwind_info: 0x2990
--  __TEXT.__eh_frame: 0x7ae4
 +26.0.0.0.0
-+  __TEXT.__text: 0xcd224
-+  __TEXT.__objc_methlist: 0x464
-+  __TEXT.__const: 0x7f08
-+  __TEXT.__cstring: 0x11a6
-+  __TEXT.__swift5_typeref: 0x270e
-+  __TEXT.__swift5_capture: 0x920
-+  __TEXT.__constg_swiftt: 0x1eec
-+  __TEXT.__swift5_reflstr: 0x1865
-+  __TEXT.__swift5_fieldmd: 0x1ee8
-+  __TEXT.__swift5_assocty: 0x390
-+  __TEXT.__swift5_builtin: 0x50
-+  __TEXT.__swift5_proto: 0x5d8
-+  __TEXT.__swift5_types: 0x270
-+  __TEXT.__swift5_protos: 0x68
-+  __TEXT.__swift_as_entry: 0x33c
-+  __TEXT.__swift_as_ret: 0x448
-+  __TEXT.__swift_as_cont: 0x814
-+  __TEXT.__oslogstring: 0x4a01
-+  __TEXT.__swift5_mpenum: 0x8
-+  __TEXT.__unwind_info: 0x3db8
-+  __TEXT.__eh_frame: 0xaf10
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x150
--  __DATA_CONST.__objc_classlist: 0x58
--  __DATA_CONST.__objc_protolist: 0x60
-+  __DATA_CONST.__objc_classlist: 0x98
-+  __DATA_CONST.__objc_catlist: 0x8
-+  __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x598
--  __DATA_CONST.__objc_protorefs: 0x30
--  __DATA_CONST.__got: 0x6c8
--  __AUTH_CONST.__const: 0x35c0
--  __AUTH_CONST.__objc_const: 0xd38
--  __AUTH_CONST.__auth_got: 0x10a0
--  __AUTH.__objc_data: 0x238
--  __AUTH.__data: 0x1328
--  __DATA.__data: 0x1658
--  __DATA.__bss: 0x8980
--  __DATA.__common: 0x30
-+  __DATA_CONST.__objc_selrefs: 0x628
-+  __DATA_CONST.__objc_protorefs: 0x40
-+  __DATA_CONST.__got: 0x7c0
-+  __AUTH_CONST.__const: 0x4b00
-+  __AUTH_CONST.__objc_const: 0x1580
-+  __AUTH_CONST.__auth_got: 0x1288
-+  __AUTH.__objc_data: 0x4c8
-+  __AUTH.__data: 0x1918
-+  __DATA.__data: 0x1c40
-+  __DATA.__bss: 0xadb0
-+  __DATA.__common: 0x38
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 2654
--  Symbols:   1063
+-  Symbols:   942
 -  CStrings:  242
 +  Functions: 3657
-+  Symbols:   1346
++  Symbols:   1207
 +  CStrings:  381
- 
 Symbols:
 + _CKPartialErrorsByItemIDKey
 + _CKQueryOperationMaximumResults
@@ -202,24 +162,6 @@ Symbols:
 + _get_enum_tag_for_layout_string 10Foundation4DataV15_RepresentationO
 + _get_enum_tag_for_layout_string 25CKSharingManagementDaemon25LocalShareDescriptorErrorO
 + _objc_getAssociatedObject
-+ _objc_msgSend$aa_altDSID
-+ _objc_msgSend$accountType
-+ _objc_msgSend$accounts
-+ _objc_msgSend$addDelegate:queue:
-+ _objc_msgSend$addOperation:
-+ _objc_msgSend$addTypeErasedDelegate:queue:
-+ _objc_msgSend$allKeys
-+ _objc_msgSend$archivedDataWithRootObject:requiringSecureCoding:error:
-+ _objc_msgSend$cancel
-+ _objc_msgSend$expirationHandler
-+ _objc_msgSend$fetchAllRecordZonesOperation
-+ _objc_msgSend$initWithAccountType:
-+ _objc_msgSend$initWithDomain:code:userInfo:
-+ _objc_msgSend$initWithService:
-+ _objc_msgSend$initWithUserRecordID:
-+ _objc_msgSend$respondsToSelector:
-+ _objc_msgSend$sendMessage:toDestinations:priority:options:identifier:error:
-+ _objc_msgSend$setMarkAsParticipantNeedsNewInvitationToken:
 + _objc_setAssociatedObject
 + _objc_sync_enter
 + _objc_sync_exit

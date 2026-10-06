@@ -2,71 +2,45 @@
 
 > `/System/Library/VideoProcessors/SemanticStyleV1.bundle/SemanticStyleV1`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x1af1` | `0x1070` | **`-0xa81`** |
+| `__TEXT.__text` | `0xe704` | `0xdda8` | **`-0x95c`** |
+| `__TEXT.__oslogstring` | `0x215` | `0xd4` | **`-0x141`** |
+| `__DATA_CONST.__cfstring` | `0x580` | `0x520` | **`-0x60`** |
+| `__TEXT.__auth_stubs` | `0x530` | `0x500` | **`-0x30`** |
+| `__DATA.__common` | `0x20` | `—` | **`-0x20`** |
+| `__DATA_CONST.__auth_got` | `0x2a0` | `0x288` | **`-0x18`** |
+| `__TEXT.__unwind_info` | `0x2e0` | `0x2f8` | **`+0x18`** |
+| `__TEXT.__const` | `0xc90` | `0xc80` | **`-0x10`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
 -764.40.5.0.0
--  __TEXT.__text: 0xe470
--  __TEXT.__auth_stubs: 0x530
 +764.40.7.0.0
-+  __TEXT.__text: 0xdb20
-+  __TEXT.__auth_stubs: 0x500
-   __TEXT.__objc_stubs: 0x1140
-   __TEXT.__objc_methlist: 0xadc
--  __TEXT.__const: 0xc90
-+  __TEXT.__const: 0xc80
-   __TEXT.__objc_methname: 0x2a86
--  __TEXT.__cstring: 0x1af1
--  __TEXT.__oslogstring: 0x215
-+  __TEXT.__cstring: 0x1070
-+  __TEXT.__oslogstring: 0xd4
-   __TEXT.__objc_classname: 0x91
-   __TEXT.__objc_methtype: 0x95e
--  __TEXT.__unwind_info: 0x470
-+  __TEXT.__unwind_info: 0x468
-   __DATA_CONST.__const: 0xd8
--  __DATA_CONST.__cfstring: 0x580
-+  __DATA_CONST.__cfstring: 0x520
-   __DATA_CONST.__objc_classlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x28
-   __DATA_CONST.__objc_intobj: 0x18
--  __DATA_CONST.__auth_got: 0x2a0
-+  __DATA_CONST.__auth_got: 0x288
-   __DATA_CONST.__got: 0x98
-   __DATA_CONST.__auth_ptr: 0x8
-   __DATA.__objc_const: 0x1530
 
-   __DATA.__objc_ivar: 0x1bc
-   __DATA.__objc_data: 0x190
-   __DATA.__data: 0x120
--  __DATA.__common: 0x20
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-   - /System/Library/Frameworks/CoreVideo.framework/CoreVideo
-
-   - /System/Library/PrivateFrameworks/CMImaging.framework/CMImaging
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 337
 -  Symbols:   120
 -  CStrings:  737
 +  Functions: 322
 +  Symbols:   117
 +  CStrings:  662
- 
 Symbols:
 + _FigSignalErrorAtGM
 + _fig_log_get_emitter

@@ -2,126 +2,66 @@
 
 > `/System/Library/PrivateFrameworks/CampoUIInternal.framework/CampoUIInternal`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x476590` | `0x4a84d0` | **`+0x31f40`** |
+| `__TEXT.__swift5_typeref` | `0x320a8` | `0x34e7e` | **`+0x2dd6`** |
+| `__DATA.__bss` | `0x16900` | `0x182c0` | **`+0x19c0`** |
+| `__TEXT.__eh_frame` | `0x1fd78` | `0x21730` | **`+0x19b8`** |
+| `__TEXT.__const` | `0x26b50` | `0x28380` | **`+0x1830`** |
+| `__TEXT.__unwind_info` | `0x11bb0` | `0x12f38` | **`+0x1388`** |
+| `__DATA.__data` | `0x83f0` | `0x96f8` | **`+0x1308`** |
+| `__AUTH.__data` | `0x3ee8` | `0x4d70` | **`+0xe88`** |
+| `__TEXT.__oslogstring` | `0x119c5` | `0x1243e` | **`+0xa79`** |
+| `__DATA_DIRTY.__data` | `0x105c8` | `0xfb78` | **`-0xa50`** |
+| `__AUTH_CONST.__objc_const` | `0x11800` | `0x120d0` | **`+0x8d0`** |
+| `__TEXT.__constg_swiftt` | `0xb1ac` | `0xb8d4` | **`+0x728`** |
+| `__TEXT.__cstring` | `0x10f70` | `0x1166e` | **`+0x6fe`** |
+| `__DATA_DIRTY.__bss` | `0x83f0` | `0x8070` | **`-0x380`** |
+| `__AUTH_CONST.__auth_got` | `0x5ea0` | `0x61c0` | **`+0x320`** |
+| `__TEXT.__swift5_reflstr` | `0xbc0f` | `0xb8ff` | **`-0x310`** |
+| `__TEXT.__swift5_capture` | `0x83c4` | `0x86b0` | **`+0x2ec`** |
+| `__DATA_CONST.__got` | `0x3898` | `0x3b10` | **`+0x278`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5128` | `0x5328` | **`+0x200`** |
+| `__TEXT.__swift5_fieldmd` | `0xa614` | `0xa798` | **`+0x184`** |
+| `__TEXT.__swift5_assocty` | `0x1d00` | `0x1e70` | **`+0x170`** |
+| `__AUTH.__objc_data` | `0x1628` | `0x1770` | **`+0x148`** |
+| `__TEXT.__swift_as_cont` | `0x12a0` | `0x13dc` | **`+0x13c`** |
+| `__TEXT.__objc_methlist` | `0x7878` | `0x79a8` | **`+0x130`** |
+| `__AUTH_CONST.__cfstring` | `0x16e0` | `0x17c0` | **`+0xe0`** |
+| `__TEXT.__gcc_except_tab` | `0xdb0` | `0xe80` | **`+0xd0`** |
+| `__TEXT.__swift5_proto` | `0xff8` | `0x10b0` | **`+0xb8`** |
+| `__TEXT.__swift_as_entry` | `0xaac` | `0xb58` | **`+0xac`** |
+| `__AUTH_CONST.__const` | `0x1e388` | `0x1e420` | **`+0x98`** |
+| `__TEXT.__swift_as_ret` | `0xb30` | `0xbc4` | **`+0x94`** |
+| `__TEXT.__swift5_types` | `0xafc` | `0xb74` | **`+0x78`** |
+| `__DATA.__common` | `0x2e0` | `0x328` | **`+0x48`** |
+| `__DATA_CONST.__objc_classlist` | `0x638` | `0x678` | **`+0x40`** |
+| `__TEXT.__swift5_builtin` | `0x320` | `0x348` | **`+0x28`** |
+| `__TEXT.__swift5_mpenum` | `0xa4` | `0xb8` | **`+0x14`** |
+| `__DATA_CONST.__const` | `0x15e0` | `0x15f0` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x88` | `0x90` | **`+0x8`** |
+| `__DATA_DIRTY.__common` | `0x458` | `0x450` | **`-0x8`** |
+| `__DATA_DIRTY.__objc_data` | `0x2958` | `0x2960` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0xf4` | `0xfc` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -73.0.12.0.0
--  __TEXT.__text: 0x476590
 +73.0.24.102.0
-+  __TEXT.__text: 0x4a84d0
-   __TEXT.__delay_helper: 0x14c
--  __TEXT.__objc_methlist: 0x7878
--  __TEXT.__const: 0x26b50
-+  __TEXT.__objc_methlist: 0x79a8
-+  __TEXT.__const: 0x28380
-   __TEXT.__dlopen_cstrs: 0x13d
--  __TEXT.__constg_swiftt: 0xb1ac
--  __TEXT.__swift5_typeref: 0x320a8
--  __TEXT.__swift5_builtin: 0x320
--  __TEXT.__swift5_reflstr: 0xbc0f
--  __TEXT.__swift5_fieldmd: 0xa614
--  __TEXT.__swift5_assocty: 0x1d00
--  __TEXT.__swift5_proto: 0xff8
--  __TEXT.__swift5_types: 0xafc
--  __TEXT.__swift5_capture: 0x83c4
--  __TEXT.__cstring: 0x10f70
--  __TEXT.__swift_as_entry: 0xaac
--  __TEXT.__swift_as_ret: 0xb30
--  __TEXT.__swift_as_cont: 0x12a0
--  __TEXT.__swift5_protos: 0xf4
--  __TEXT.__oslogstring: 0x119c5
--  __TEXT.__swift5_mpenum: 0xa4
--  __TEXT.__gcc_except_tab: 0xdb0
--  __TEXT.__unwind_info: 0x11bb0
--  __TEXT.__eh_frame: 0x1fd78
-+  __TEXT.__constg_swiftt: 0xb8d4
-+  __TEXT.__swift5_typeref: 0x34e7e
-+  __TEXT.__swift5_builtin: 0x348
-+  __TEXT.__swift5_reflstr: 0xb8ff
-+  __TEXT.__swift5_fieldmd: 0xa798
-+  __TEXT.__swift5_assocty: 0x1e70
-+  __TEXT.__swift5_proto: 0x10b0
-+  __TEXT.__swift5_types: 0xb74
-+  __TEXT.__swift5_capture: 0x86b0
-+  __TEXT.__cstring: 0x1166e
-+  __TEXT.__swift_as_entry: 0xb58
-+  __TEXT.__swift_as_ret: 0xbc4
-+  __TEXT.__swift_as_cont: 0x13dc
-+  __TEXT.__swift5_protos: 0xfc
-+  __TEXT.__oslogstring: 0x1243e
-+  __TEXT.__swift5_mpenum: 0xb8
-+  __TEXT.__gcc_except_tab: 0xe80
-+  __TEXT.__unwind_info: 0x12f38
-+  __TEXT.__eh_frame: 0x21730
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x15e0
--  __DATA_CONST.__objc_classlist: 0x638
-+  __DATA_CONST.__const: 0x15f0
-+  __DATA_CONST.__objc_classlist: 0x678
-   __DATA_CONST.__objc_catlist: 0xa0
-   __DATA_CONST.__objc_protolist: 0x360
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5128
-+  __DATA_CONST.__objc_selrefs: 0x5328
-   __DATA_CONST.__objc_protorefs: 0x158
--  __DATA_CONST.__objc_superrefs: 0x88
--  __DATA_CONST.__got: 0x3898
--  __AUTH_CONST.__const: 0x1e388
--  __AUTH_CONST.__cfstring: 0x16e0
--  __AUTH_CONST.__objc_const: 0x11800
-+  __DATA_CONST.__objc_superrefs: 0x90
-+  __DATA_CONST.__got: 0x3b10
-+  __AUTH_CONST.__const: 0x1e420
-+  __AUTH_CONST.__cfstring: 0x17c0
-+  __AUTH_CONST.__objc_const: 0x120d0
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__objc_intobj: 0x18
--  __AUTH_CONST.__auth_got: 0x5ea0
--  __AUTH.__objc_data: 0x1628
--  __AUTH.__data: 0x3ee8
-+  __AUTH_CONST.__auth_got: 0x61c0
-+  __AUTH.__objc_data: 0x1770
-+  __AUTH.__data: 0x4d70
-   __DATA.__objc_ivar: 0x360
--  __DATA.__data: 0x83f0
--  __DATA.__bss: 0x16900
--  __DATA.__common: 0x2e0
--  __DATA_DIRTY.__objc_data: 0x2958
--  __DATA_DIRTY.__data: 0x105c8
--  __DATA_DIRTY.__common: 0x458
--  __DATA_DIRTY.__bss: 0x83f0
-+  __DATA.__data: 0x96f8
-+  __DATA.__bss: 0x182c0
-+  __DATA.__common: 0x328
-+  __DATA_DIRTY.__objc_data: 0x2960
-+  __DATA_DIRTY.__data: 0xfb78
-+  __DATA_DIRTY.__common: 0x450
-+  __DATA_DIRTY.__bss: 0x8070
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AVRouting.framework/AVRouting
 
-   - /System/Library/PrivateFrameworks/HybridSearchAdapter.framework/HybridSearchAdapter
-   - /System/Library/PrivateFrameworks/IconServices.framework/IconServices
-   - /System/Library/PrivateFrameworks/LinkMetadata.framework/LinkMetadata
 +  - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
-   - /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
-   - /System/Library/PrivateFrameworks/PhotosUICore.framework/PhotosUICore
-   - /System/Library/PrivateFrameworks/PhotosUIPrivate.framework/PhotosUIPrivate
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 26371
--  Symbols:   11706
+-  Symbols:   9698
 -  CStrings:  2660
 +  Functions: 27421
-+  Symbols:   12037
++  Symbols:   9976
 +  CStrings:  2706
- 
 Symbols:
 + -[CampoUISiriChatPresentationController _emitUURFShownForAceObject:dialogPhase:]
 + -[CampoUISiriChatPresentationController siriSessionSetReplayCaptureRequested:toPath:]
@@ -379,68 +319,6 @@ Symbols:
 + _kCAFillModeBoth
 + _kFDSImportOptionMaxTextLength
 + _keypath_get_selector_attachmentTextExtractionMaxBytes
-+ _objc_msgSend$_attachmentTextExtractionMaxBytes
-+ _objc_msgSend$_emitUURFShownForAceObject:dialogPhase:
-+ _objc_msgSend$_invocationEventForRequestOptions:localDataSource:presentationContext:invocationSource:userAttachmentTypes:
-+ _objc_msgSend$_processInstrumentationForFinalOptionsAndGenerateNewTurn:presentationContext:invocationSource:userAttachmentTypes:
-+ _objc_msgSend$_setUserAttachmentTypes:on:
-+ _objc_msgSend$_startRequestWithFinalOptions:explicitReferences:externalProviderID:invocationContext:presentationContext:userAttachmentTypes:completion:
-+ _objc_msgSend$activationState
-+ _objc_msgSend$addAnimation:forKey:
-+ _objc_msgSend$addObserverForName:object:queue:usingBlock:
-+ _objc_msgSend$addUserAttachmentTypes:
-+ _objc_msgSend$alpha
-+ _objc_msgSend$attachmentTextExtractionMaxBytes
-+ _objc_msgSend$cancelSpeakingPendingStateForTTSFragmentStream
-+ _objc_msgSend$containsString:
-+ _objc_msgSend$currentTraitCollection
-+ _objc_msgSend$displayScale
-+ _objc_msgSend$emitUUFRShownForPresentationType:dialogPhase:mode:viewRegion:
-+ _objc_msgSend$fromPreferences
-+ _objc_msgSend$hasPrefix:
-+ _objc_msgSend$initWithInteger:
-+ _objc_msgSend$isAvailable
-+ _objc_msgSend$isHidden
-+ _objc_msgSend$launchRestrictedAppBundleIDs
-+ _objc_msgSend$operationType
-+ _objc_msgSend$processAddViews:lockState:isInAmbient:sceneMode:
-+ _objc_msgSend$removeAnimationForKey:
-+ _objc_msgSend$screen
-+ _objc_msgSend$setAllowsHitTesting:
-+ _objc_msgSend$setAppliesRotation:
-+ _objc_msgSend$setAppliesScale:
-+ _objc_msgSend$setAppliesX:
-+ _objc_msgSend$setAppliesY:
-+ _objc_msgSend$setAttachmentTextExtractionMaxBytes:
-+ _objc_msgSend$setCommands:
-+ _objc_msgSend$setCorrespondingSessionID:
-+ _objc_msgSend$setDuration:
-+ _objc_msgSend$setFillMode:
-+ _objc_msgSend$setHidesSourceView:
-+ _objc_msgSend$setIsInitiatedByPresentedAssistantInterface:
-+ _objc_msgSend$setKeyPath:
-+ _objc_msgSend$setMatchesAlpha:
-+ _objc_msgSend$setMatchesPosition:
-+ _objc_msgSend$setMatchesTransform:
-+ _objc_msgSend$setReferenceIdentifier:
-+ _objc_msgSend$setRemovedOnCompletion:
-+ _objc_msgSend$setScale:
-+ _objc_msgSend$setSourceContextId:
-+ _objc_msgSend$setSourceLayerRenderId:
-+ _objc_msgSend$setSourcePoints:
-+ _objc_msgSend$setUsesNormalizedCoordinates:
-+ _objc_msgSend$setValue:forKey:
-+ _objc_msgSend$set_attachmentTextExtractionMaxBytes:
-+ _objc_msgSend$sharedConnection
-+ _objc_msgSend$shouldHideSnippet
-+ _objc_msgSend$siriSessionSetReplayCaptureRequested:toPath:
-+ _objc_msgSend$startDownloadingUbiquitousItemAtURL:error:
-+ _objc_msgSend$startReplayCaptureToPath:
-+ _objc_msgSend$startRequestWithOptions:explicitReferences:externalProviderID:invocationContext:presentationContext:userAttachmentTypes:completion:
-+ _objc_msgSend$stopReplayCapture
-+ _objc_msgSend$ttsManager
-+ _objc_msgSend$valueWithCGPoint:
-+ _objc_msgSend$windowLevel
 + _swift_conformsToProtocol2
 + _swift_dynamicCastObjCClassUnconditional
 + _symbolic $s15CampoUIInternal14PrewarmCapableP
@@ -1237,15 +1115,6 @@ Symbols:
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA15ModifiedContentVyAcAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAcAEAlmN_Qrqd___SbyyctSQRd__lFQOyAKyAKyAKyAKyAcAE12_glassEffect_2inQrAA6_GlassV_qd__tAA5ShapeRd__lFQOyAKyAKyAA6ZStackVyAA012_ConditionalJ0VyAKyAKyAcAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAKyAKyAKyAKyAKyAKyAKyAKyAKy15CampoUIInternal11PromptFieldVys5NeverOAKyAKyAKy15AssistantUICore18AssistantLogoImageVAA30_EnvironmentKeyWritingModifierVyAA19SymbolRenderingModeVSgGGAA01_u6SymbolP8ModifierVGAA14_PaddingLayoutVGA4_GA9_yA0_24PromptAccessoryAlignmentOGGA9_yAA10EdgeInsetsVGGA9_yA0_23PromptReturnKeyBehaviorOGGA9_yA0_17PromptFieldChromeOGGAA32_EnvironmentKeyTransformModifierVySbGGA0_34ContextMenuIncludesMontaraModifier33_809AC7724569A473A42F25EA222C5C93LLVGAA18_AnimationModifierVySbGGA0_11MeasureSize33_ADFBB73127928E96157777B39799F1EFLLVGAA21_TraitWritingModifierVyAA18TransitionTraitKeyVGG_Qo_AA0Y18AttachmentModifierVGA9_y12CoreGraphics7CGFloatVGGAA05TupleJ0VyAKyAKyAKyAKyA2_yA4_A4_A4_GA28_GAA16_FixedSizeLayoutVGA40_GAA08_OpacityP0VG_AUyA70_yAKyAKyAKyAKyAKyAKyAKyAKy011AgentCanvasB007LoadingC0VAA16_FlexFrameLayoutVGA19_GA19_GA78_GA55_yAA22LayoutPriorityTraitKeyVGGA48_GA74_GA52_G_AKyAKyAKyAKyAKyAKyAKyAKyAA6HStackVyA70_yAKyAKyAKyAA5ImageVAA015_DiscreteSymbolP8ModifierVySSGGAA24_ForegroundStyleModifierVyAA012HierarchicalS5StyleVGGA47_yA0_20AssistantPromptFieldV11DisplayModeA51_LLOGG_AA4TextVQPGGA84_GA19_GA19_GA78_GA91_GA48_GA74_GA52_GQPGGQPGGGA84_GAA05_ClipP0VyAA9RectangleVGG_AA16RoundedRectangleVQo_AA19_BackgroundModifierVyA70_yAA01_sC0VyA141_AA5ColorVGSg_AKyA149_AA010_BlendModeP0VGSgQPGGGA19_GAA16_OverlayModifierVyAA06StrokesC0VyA141_6_InsetVA107_AA05EmptyC0VGSgGGA114_G_A0_25AssistantPromptFieldModelC12ThinkingModeOQo__A0_20RequestThinkingStateVQo_AA26_PreferenceWritingModifierVyA0_37AssistantPromptFieldPreferredWidthKeyVGG_Qo_HO
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE9onOpenURL7performQry10Foundation0F0Vc_tFQOyAcAE21handlesExternalEvents10preferring8allowingQrShySSG_ALtFQOyAA15ModifiedContentVyAcAE0D23ConnectionOptionPayload_AEQrqd__m_y0R0Qyd__ct5UIKit07UIScenepQ10DefinitionRd__lFQOyAcAEAO_AEQrqd__m_yAQctArSRd__lFQOyAcAE0D6Change2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyANyANyAA6IDViewVyAC17AgentCanvasUICoreE25fullPageScreenshotServiceQryFQOyANyANyAcAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQOyAcAEA_yQrA0_Rld__CA1_A2_Rd__lFQOyAcAEA_yQrA0_Rld__CA1_A2_Rd__lFQOyANyANy15CampoUIInternal04MainoC0VAA30_EnvironmentKeyWritingModifierVySbGGA3_35ReceiveSceneRequestSettingsModifier33_D14CAB623BCFFC6446D9C8DE6447B7C9LLVG_A3_13ChatSelectionCQo__A3_12TabSelectionCQo__A3_20PromptSubmitSettingsCQo_A7_yAY21ElasticityCoordinatorCGGA3_34CampoSceneContextResolvingModifier33_32D67A0DC535E307983EB46D7572D4F8LLVG_Qo_SSSgGAA25_AppearanceActionModifierVGA35_G_A3_6ChatIDVSgQo__21AssistantIslandClient06CommontpqU0CQo__A42_015SystemAuxiliarypqU0CQo_AA16_OverlayModifierVyANyANyANyA3_014ReplayControlsC033_8736E24D03B8A53A15EF629A84856A20LLVAA12_FrameLayoutVGAA14_PaddingLayoutVGA58_GSgGG_Qo__Qo_HO
 - _get_witness_table qd__7SwiftUI5SceneHD2_AaBPAAE16safeAreaDisabledQryFQOyAA14UISceneAdaptorVy15CampoUIInternal20HostingContainerView33_A21458E0F3A9876E320AE7C49B389C51LLVG_Qo_HO
-- _objc_msgSend$_invocationEventForRequestOptions:localDataSource:presentationContext:invocationSource:
-- _objc_msgSend$_processInstrumentationForFinalOptionsAndGenerateNewTurn:presentationContext:invocationSource:
-- _objc_msgSend$_startRequestWithFinalOptions:explicitReferences:externalProviderID:invocationContext:presentationContext:completion:
-- _objc_msgSend$contextId
-- _objc_msgSend$invalidateIntrinsicContentSize
-- _objc_msgSend$isKeyWindow
-- _objc_msgSend$processAddViews:lockState:isInAmbient:
-- _objc_msgSend$setValue:
-- _objc_msgSend$startRequestWithOptions:explicitReferences:externalProviderID:invocationContext:presentationContext:completion:
 - _swift_release_x3
 - _symbolic 8TabValue_____Qy_ 7SwiftUI10TabContentP
 - _symbolic SDy___________pG 15CampoUIInternal6ChatIDV 14AgentCanvasKit0C7ServiceP

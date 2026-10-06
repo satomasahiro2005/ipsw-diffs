@@ -2,92 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/OmniSearchTypes.framework/OmniSearchTypes`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x11880` | `0xdd00` | **`-0x3b80`** |
+| `__DATA_DIRTY.__bss` | `0x4200` | `0x7d80` | **`+0x3b80`** |
+| `__TEXT.__text` | `0x876f0` | `0x87c08` | **`+0x518`** |
+| `__DATA_DIRTY.__data` | `0x2730` | `0x2be0` | **`+0x4b0`** |
+| `__DATA.__data` | `0x19a0` | `0x1518` | **`-0x488`** |
+| `__TEXT.__cstring` | `0x1fe6` | `0x2046` | **`+0x60`** |
+| `__TEXT.__swift5_typeref` | `0x1c38` | `0x1c8a` | **`+0x52`** |
+| `__TEXT.__swift5_fieldmd` | `0x54bc` | `0x5504` | **`+0x48`** |
+| `__AUTH_CONST.__const` | `0x63d0` | `0x6408` | **`+0x38`** |
+| `__TEXT.__eh_frame` | `0x2778` | `0x2740` | **`-0x38`** |
+| `__TEXT.__const` | `0xb318` | `0xb348` | **`+0x30`** |
+| `__TEXT.__swift5_reflstr` | `0x2581` | `0x25b1` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x28a0` | `0x28c8` | **`+0x28`** |
+| `__AUTH_CONST.__auth_got` | `0x978` | `0x988` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x876f0
-+  __TEXT.__text: 0x87c08
-   __TEXT.__objc_methlist: 0x38
--  __TEXT.__const: 0xb318
--  __TEXT.__swift5_typeref: 0x1c38
-+  __TEXT.__const: 0xb348
-+  __TEXT.__swift5_typeref: 0x1c8a
-   __TEXT.__constg_swiftt: 0x1c0c
--  __TEXT.__swift5_reflstr: 0x2581
--  __TEXT.__swift5_fieldmd: 0x54bc
-+  __TEXT.__swift5_reflstr: 0x25b1
-+  __TEXT.__swift5_fieldmd: 0x5504
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_types: 0x2ac
--  __TEXT.__cstring: 0x1fe6
-+  __TEXT.__cstring: 0x2046
-   __TEXT.__oslogstring: 0x18a
-   __TEXT.__swift5_capture: 0x24
-   __TEXT.__swift5_mpenum: 0x18
+-3600.56.11.0.0
++3600.56.20.0.0
 
-   __TEXT.__swift5_proto: 0xae8
-   __TEXT.__swift_as_entry: 0x4
-   __TEXT.__swift_as_cont: 0x4
--  __TEXT.__unwind_info: 0x28a0
--  __TEXT.__eh_frame: 0x2778
-+  __TEXT.__unwind_info: 0x28c8
-+  __TEXT.__eh_frame: 0x2740
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0xe8
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x63d0
-+  __AUTH_CONST.__const: 0x6408
-   __AUTH_CONST.__objc_const: 0x480
--  __AUTH_CONST.__auth_got: 0x978
-+  __AUTH_CONST.__auth_got: 0x988
-   __AUTH.__objc_data: 0x50
-   __AUTH.__data: 0x3e8
--  __DATA.__data: 0x19a0
-+  __DATA.__data: 0x1518
-   __DATA.__common: 0x70
--  __DATA.__bss: 0x11880
--  __DATA_DIRTY.__data: 0x2730
--  __DATA_DIRTY.__bss: 0x4200
-+  __DATA.__bss: 0xdd00
-+  __DATA_DIRTY.__data: 0x2be0
-+  __DATA_DIRTY.__bss: 0x7d80
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5336
--  Symbols:   17326
+-  Symbols:   11246
 -  CStrings:  364
 +  Functions: 5344
-+  Symbols:   17369
++  Symbols:   11272
 +  CStrings:  368
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
 Symbols:
 + _$s15OmniSearchTypes12FileDocumentV17securityScopedURLAA21CodableNSSecureCodingVySo010NSSecurityG10URLWrapperCGSgvM
 + _$s15OmniSearchTypes12FileDocumentV17securityScopedURLAA21CodableNSSecureCodingVySo010NSSecurityG10URLWrapperCGSgvM.resume
@@ -136,5 +82,4 @@ CStrings:
 + "containingFolder: "
 + "dateQualifier"
 + "securityScopedURL"
-
 ```

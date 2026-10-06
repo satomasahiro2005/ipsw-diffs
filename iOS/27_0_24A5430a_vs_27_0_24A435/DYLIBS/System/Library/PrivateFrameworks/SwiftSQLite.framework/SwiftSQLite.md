@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SwiftSQLite.framework/SwiftSQLite`
 
-```diff
+### Section Size Changes
 
- 106.30.6.14.10
--  __TEXT.__text: 0x3fc70
-+  __TEXT.__text: 0x3fc38
-   __TEXT.__swift5_typeref: 0xa3c
-   __TEXT.__const: 0x1a58
-   __TEXT.__constg_swiftt: 0x900
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3fc70` | `0x3fc38` | **`-0x38`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1c231a9d0 -> sub_1c27fd9d0 : 2704 -> 2712
 ~ sub_1c231d26c -> sub_1c2800274 : 492 -> 488

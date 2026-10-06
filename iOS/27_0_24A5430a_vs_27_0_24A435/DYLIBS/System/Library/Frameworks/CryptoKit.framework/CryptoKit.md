@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/CryptoKit.framework/CryptoKit`
 
-```diff
+### Section Size Changes
 
- 383.2.1.0.0
--  __TEXT.__text: 0x86b88
-+  __TEXT.__text: 0x86c0c
-   __TEXT.__const: 0x8138
-   __TEXT.__swift5_typeref: 0x1d56
-   __TEXT.__constg_swiftt: 0x2914
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x86b88` | `0x86c0c` | **`+0x84`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_19fd37b80 -> sub_19fe17b80 : 600 -> 604
 ~ sub_19fd38410 -> sub_19fe18414 : 1728 -> 1724

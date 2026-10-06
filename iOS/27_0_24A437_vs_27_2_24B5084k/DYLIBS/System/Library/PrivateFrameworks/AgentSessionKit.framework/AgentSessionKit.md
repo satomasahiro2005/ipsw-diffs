@@ -2,89 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/AgentSessionKit.framework/AgentSessionKit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8b4d8` | `0x8fd90` | **`+0x48b8`** |
+| `__AUTH_CONST.__const` | `0x7c20` | `0x8378` | **`+0x758`** |
+| `__TEXT.__swift5_capture` | `0x81c` | `0xafc` | **`+0x2e0`** |
+| `__TEXT.__eh_frame` | `0x5f88` | `0x6110` | **`+0x188`** |
+| `__TEXT.__const` | `0xbe6c` | `0xbf1c` | **`+0xb0`** |
+| `__TEXT.__unwind_info` | `0x3a38` | `0x3ae8` | **`+0xb0`** |
+| `__TEXT.__swift5_typeref` | `0x267e` | `0x2704` | **`+0x86`** |
+| `__TEXT.__oslogstring` | `0xacc` | `0xb2c` | **`+0x60`** |
+| `__TEXT.__swift_as_ret` | `0x1fc` | `0x240` | **`+0x44`** |
+| `__TEXT.__cstring` | `0x1f1a` | `0x1f5a` | **`+0x40`** |
+| `__TEXT.__swift_as_cont` | `0x48c` | `0x4c8` | **`+0x3c`** |
+| `__TEXT.__swift_as_entry` | `0x1d0` | `0x1fc` | **`+0x2c`** |
+| `__DATA_CONST.__const` | `0x138` | `0x158` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xb18` | `0xb30` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x358` | `0x370` | **`+0x18`** |
+| `__TEXT.__swift5_fieldmd` | `0x2d08` | `0x2d20` | **`+0x18`** |
+| `__DATA.__data` | `0x1460` | `0x1470` | **`+0x10`** |
+| `__TEXT.__constg_swiftt` | `0x1e78` | `0x1e88` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x3f8` | `0x408` | **`+0x10`** |
+| `__AUTH_CONST.__objc_const` | `0xa10` | `0xa18` | **`+0x8`** |
+| `__DATA_DIRTY.__data` | `0x20c0` | `0x20c8` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__swift5_reflstr`
+
+### Other Changes
 
 ```diff
 
 -291.6.0.5.102
--  __TEXT.__text: 0x841a0
--  __TEXT.__objc_methlist: 0x3f8
--  __TEXT.__swift5_typeref: 0x267e
--  __TEXT.__const: 0xbe6c
--  __TEXT.__constg_swiftt: 0x1e78
 +297.6.0.5.0
-+  __TEXT.__text: 0x880f8
-+  __TEXT.__objc_methlist: 0x408
-+  __TEXT.__swift5_typeref: 0x2704
-+  __TEXT.__const: 0xbf1c
-+  __TEXT.__constg_swiftt: 0x1e88
-   __TEXT.__swift5_reflstr: 0x1675
--  __TEXT.__swift5_fieldmd: 0x2d08
-+  __TEXT.__swift5_fieldmd: 0x2d20
-   __TEXT.__swift5_builtin: 0x8c
--  __TEXT.__cstring: 0x1f1a
-+  __TEXT.__cstring: 0x1f5a
-   __TEXT.__swift5_proto: 0xb34
-   __TEXT.__swift5_types: 0x328
--  __TEXT.__swift5_capture: 0x81c
-+  __TEXT.__swift5_capture: 0xafc
-   __TEXT.__swift5_assocty: 0x300
--  __TEXT.__oslogstring: 0xacc
-+  __TEXT.__oslogstring: 0xb2c
-   __TEXT.__swift5_mpenum: 0x24
--  __TEXT.__swift_as_entry: 0x1d0
--  __TEXT.__swift_as_ret: 0x1fc
--  __TEXT.__swift_as_cont: 0x48c
--  __TEXT.__unwind_info: 0x4560
--  __TEXT.__eh_frame: 0x5f98
-+  __TEXT.__swift_as_entry: 0x1fc
-+  __TEXT.__swift_as_ret: 0x240
-+  __TEXT.__swift_as_cont: 0x4c8
-+  __TEXT.__unwind_info: 0x4650
-+  __TEXT.__eh_frame: 0x6120
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x138
-+  __DATA_CONST.__const: 0x158
-   __DATA_CONST.__objc_classlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x358
-+  __DATA_CONST.__objc_selrefs: 0x370
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x7c20
--  __AUTH_CONST.__objc_const: 0xa10
--  __AUTH_CONST.__auth_got: 0xb18
-+  __AUTH_CONST.__const: 0x8378
-+  __AUTH_CONST.__objc_const: 0xa18
-+  __AUTH_CONST.__auth_got: 0xb30
-   __AUTH.__objc_data: 0x48
-   __AUTH.__data: 0x7a0
--  __DATA.__data: 0x1460
-+  __DATA.__data: 0x1470
-   __DATA_DIRTY.__objc_data: 0x98
--  __DATA_DIRTY.__data: 0x20c0
-+  __DATA_DIRTY.__data: 0x20c8
-   __DATA_DIRTY.__bss: 0x7480
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5923
 -  Symbols:   185
 -  CStrings:  275
 +  Functions: 6109
 +  Symbols:   189
 +  CStrings:  278
- 
 Symbols:
 + _NSCocoaErrorDomain
 + _swift_release_n

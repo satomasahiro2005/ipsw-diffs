@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SearchAssets.framework/SearchAssets`
 
-```diff
+### Section Size Changes
 
- 3600.56.26.11.2
--  __TEXT.__text: 0x2a9b8
-+  __TEXT.__text: 0x2a9c8
-   __TEXT.__objc_methlist: 0x360
-   __TEXT.__const: 0x2a8c
-   __TEXT.__cstring: 0x1501
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2a9b8` | `0x2a9c8` | **`+0x10`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _OUTLINED_FUNCTION_2 : 16 -> 60
 ~ _OUTLINED_FUNCTION_3 : 60 -> 24

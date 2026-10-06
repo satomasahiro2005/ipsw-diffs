@@ -2,118 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/JetEngine.framework/JetEngine`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4b32ec` | `0x4b76f4` | **`+0x4408`** |
+| `__DATA_DIRTY.__data` | `0x510` | `0x210` | **`-0x300`** |
+| `__TEXT.__eh_frame` | `0x25a54` | `0x25774` | **`-0x2e0`** |
+| `__DATA.__data` | `0xd848` | `0xdb08` | **`+0x2c0`** |
+| `__AUTH.__data` | `0x7a28` | `0x7c38` | **`+0x210`** |
+| `__AUTH_CONST.__objc_const` | `0x9f58` | `0xa088` | **`+0x130`** |
+| `__AUTH_CONST.__const` | `0x32500` | `0x32600` | **`+0x100`** |
+| `__DATA.__bss` | `0x35bb0` | `0x35cb0` | **`+0x100`** |
+| `__DATA_DIRTY.__bss` | `0x208` | `0x108` | **`-0x100`** |
+| `__TEXT.__cstring` | `0x129c6` | `0x12a86` | **`+0xc0`** |
+| `__TEXT.__swift5_fieldmd` | `0xc148` | `0xc1fc` | **`+0xb4`** |
+| `__TEXT.__constg_swiftt` | `0xd7e4` | `0xd880` | **`+0x9c`** |
+| `__TEXT.__const` | `0x9b688` | `0x9b718` | **`+0x90`** |
+| `__TEXT.__swift5_reflstr` | `0x7a0b` | `0x7a9b` | **`+0x90`** |
+| `__AUTH.__objc_data` | `0x2598` | `0x25e8` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x2ae8` | `0x2b18` | **`+0x30`** |
+| `__TEXT.__swift5_typeref` | `0xf026` | `0xf056` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x11838` | `0x11808` | **`-0x30`** |
+| `__TEXT.__swift_as_entry` | `0x9e4` | `0x9d0` | **`-0x14`** |
+| `__TEXT.__swift_as_ret` | `0xa80` | `0xa6c` | **`-0x14`** |
+| `__DATA_CONST.__got` | `0xe88` | `0xe98` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x874c` | `0x875c` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x1044` | `0x1050` | **`+0xc`** |
+| `__DATA.__common` | `0x840` | `0x848` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x498` | `0x4a0` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1900` | `0x1908` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x13e0` | `0x13d8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x4b32ec
-+  __TEXT.__text: 0x4b76f4
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__objc_methlist: 0x1dd4
--  __TEXT.__const: 0x9b688
-+  __TEXT.__const: 0x9b718
-   __TEXT.__gcc_except_tab: 0x15c
--  __TEXT.__cstring: 0x129c6
-+  __TEXT.__cstring: 0x12a86
-   __TEXT.__oslogstring: 0x77c
-   __TEXT.__dlopen_cstrs: 0x52
--  __TEXT.__swift5_typeref: 0xf026
--  __TEXT.__swift5_fieldmd: 0xc148
--  __TEXT.__constg_swiftt: 0xd7e4
-+  __TEXT.__swift5_typeref: 0xf056
-+  __TEXT.__swift5_fieldmd: 0xc1fc
-+  __TEXT.__constg_swiftt: 0xd880
-   __TEXT.__swift5_builtin: 0x460
--  __TEXT.__swift5_reflstr: 0x7a0b
-+  __TEXT.__swift5_reflstr: 0x7a9b
-   __TEXT.__swift5_assocty: 0x18d0
-   __TEXT.__swift5_protos: 0x2b4
-   __TEXT.__swift5_proto: 0x2130
--  __TEXT.__swift5_types: 0x1044
--  __TEXT.__swift5_capture: 0x874c
--  __TEXT.__swift_as_entry: 0x9e4
--  __TEXT.__swift_as_ret: 0xa80
--  __TEXT.__swift_as_cont: 0x13e0
-+  __TEXT.__swift5_types: 0x1050
-+  __TEXT.__swift5_capture: 0x875c
-+  __TEXT.__swift_as_entry: 0x9d0
-+  __TEXT.__swift_as_ret: 0xa6c
-+  __TEXT.__swift_as_cont: 0x13d8
-   __TEXT.__swift5_mpenum: 0x31c
--  __TEXT.__unwind_info: 0x11838
--  __TEXT.__eh_frame: 0x25a54
-+  __TEXT.__unwind_info: 0x11808
-+  __TEXT.__eh_frame: 0x25774
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xfa8
--  __DATA_CONST.__objc_classlist: 0x498
-+  __DATA_CONST.__objc_classlist: 0x4a0
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x1a0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1900
-+  __DATA_CONST.__objc_selrefs: 0x1908
-   __DATA_CONST.__objc_protorefs: 0x108
-   __DATA_CONST.__objc_superrefs: 0xb0
--  __DATA_CONST.__got: 0xe88
--  __AUTH_CONST.__const: 0x32500
-+  __DATA_CONST.__got: 0xe98
-+  __AUTH_CONST.__const: 0x32600
-   __AUTH_CONST.__cfstring: 0x1360
--  __AUTH_CONST.__objc_const: 0x9f58
-+  __AUTH_CONST.__objc_const: 0xa088
-   __AUTH_CONST.__objc_intobj: 0x30
--  __AUTH_CONST.__auth_got: 0x2ae8
--  __AUTH.__objc_data: 0x2598
--  __AUTH.__data: 0x7a28
-+  __AUTH_CONST.__auth_got: 0x2b18
-+  __AUTH.__objc_data: 0x25e8
-+  __AUTH.__data: 0x7c38
-   __DATA.__objc_ivar: 0xe0
--  __DATA.__data: 0xd848
--  __DATA.__bss: 0x35bb0
--  __DATA.__common: 0x840
-+  __DATA.__data: 0xdb08
-+  __DATA.__bss: 0x35cb0
-+  __DATA.__common: 0x848
-   __DATA_DIRTY.__objc_data: 0x50
--  __DATA_DIRTY.__data: 0x510
--  __DATA_DIRTY.__bss: 0x208
-+  __DATA_DIRTY.__data: 0x210
-+  __DATA_DIRTY.__bss: 0x108
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+-10.0.38.0.0
++10.0.42.0.0
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 22547
--  Symbols:   13484
--  CStrings:  2059
+-  Symbols:   7373
+-  CStrings:  1904
 +  Functions: 22573
-+  Symbols:   13520
-+  CStrings:  2063
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   7385
++  CStrings:  1908
 Symbols:
 + __DATA__TtC9JetEngine13ObservableBag
 + __IVARS__TtC9JetEngine13ObservableBag
@@ -126,7 +59,6 @@ Symbols:
 + ___swift_closure_destructor.285Tm
 + ___swift_closure_destructor.403Tm
 + ___swift_memcpy113_8
-+ _objc_msgSend$setProxyAppBundleID:
 + _symbolic SaySSSgG
 + _symbolic _____ 29AppleMediaServicesKitInternal10BagServiceV
 + _symbolic _____ 29AppleMediaServicesKitInternal10BagServiceV16ObservationTokenV
@@ -159,5 +91,4 @@ CStrings:
 + "com.apple.JetEngine.AssetSQLiteDatabase.teardown"
 - "$exceptionHandled"
 - "Tearing down asset database"
-
 ```

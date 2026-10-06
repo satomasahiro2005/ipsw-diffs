@@ -2,69 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/CoreSymbolication.framework/CoreSymbolication`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1358f0` | `0x134d30` | **`-0xbc0`** |
+| `__AUTH.__data` | `0x38` | `0x148` | **`+0x110`** |
+| `__DATA_DIRTY.__data` | `0x4d0` | `0x3c0` | **`-0x110`** |
+| `__TEXT.__cstring` | `0x7f84` | `0x8009` | **`+0x85`** |
+| `__TEXT.__oslogstring` | `0x1cca` | `0x1d4f` | **`+0x85`** |
+| `__TEXT.__unwind_info` | `0x5ff0` | `0x5fc0` | **`-0x30`** |
+| `__AUTH_CONST.__auth_got` | `0xc18` | `0xc20` | **`+0x8`** |
+| `__DATA.__bss` | `0x8b0` | `0x8a8` | **`-0x8`** |
+| `__DATA_DIRTY.__bss` | `0x1c0` | `0x1c8` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0xd6a0` | `0xd6a4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1358f0
-+  __TEXT.__text: 0x134d30
-   __TEXT.__objc_methlist: 0x4d4
-   __TEXT.__const: 0x8d18
--  __TEXT.__gcc_except_tab: 0xd6a0
--  __TEXT.__oslogstring: 0x1cca
--  __TEXT.__cstring: 0x7f84
--  __TEXT.__unwind_info: 0x5ff0
-+  __TEXT.__gcc_except_tab: 0xd6a4
-+  __TEXT.__oslogstring: 0x1d4f
-+  __TEXT.__cstring: 0x8009
-+  __TEXT.__unwind_info: 0x5fc0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-64578.75.1.0.0
++64578.77.1.0.0
 
-   __AUTH_CONST.__cfstring: 0x5a0
-   __AUTH_CONST.__objc_const: 0x620
-   __AUTH_CONST.__weak_auth_got: 0x30
--  __AUTH_CONST.__auth_got: 0xc18
--  __AUTH.__data: 0x38
-+  __AUTH_CONST.__auth_got: 0xc20
-+  __AUTH.__data: 0x148
-   __DATA.__objc_ivar: 0x68
-   __DATA.__data: 0xa8
--  __DATA.__bss: 0x8b0
-+  __DATA.__bss: 0x8a8
-   __DATA_DIRTY.__objc_data: 0xf0
--  __DATA_DIRTY.__data: 0x4d0
-+  __DATA_DIRTY.__data: 0x3c0
-   __DATA_DIRTY.__crash_info: 0x148
-   __DATA_DIRTY.__common: 0x18
--  __DATA_DIRTY.__bss: 0x1c0
-+  __DATA_DIRTY.__bss: 0x1c8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 4854
--  Symbols:   13755
--  CStrings:  1279
-+  Symbols:   13756
-+  CStrings:  1283
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+-  Symbols:   7222
+-  CStrings:  1153
++  Symbols:   7223
++  CStrings:  1155
 Symbols:
 + _strnstr
 Functions:
@@ -283,5 +246,4 @@ Functions:
 CStrings:
 + "[Invalid macho header] dylib load command name offset is invalid"
 + "[Invalid macho header] dylinker load command name offset is invalid"
-
 ```

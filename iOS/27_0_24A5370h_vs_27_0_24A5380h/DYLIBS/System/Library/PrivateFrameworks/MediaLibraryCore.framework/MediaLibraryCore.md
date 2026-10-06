@@ -2,48 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/MediaLibraryCore.framework/MediaLibraryCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3a35f0` | `0x3a7ad0` | **`+0x44e0`** |
+| `__TEXT.__gcc_except_tab` | `0x2a684` | `0x2a9e8` | **`+0x364`** |
+| `__TEXT.__unwind_info` | `0x8648` | `0x8680` | **`+0x38`** |
+| `__TEXT.__cstring` | `0x5aae` | `0x5add` | **`+0x2f`** |
+| `__DATA.__bss` | `0xc38` | `0xc58` | **`+0x20`** |
+| `__TEXT.__const` | `0xd282` | `0xd292` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x3a35f0
--  __TEXT.__const: 0xd282
--  __TEXT.__gcc_except_tab: 0x2a684
--  __TEXT.__cstring: 0x5aae
--  __TEXT.__unwind_info: 0x8648
-+  __TEXT.__text: 0x3a7ad0
-+  __TEXT.__const: 0xd292
-+  __TEXT.__gcc_except_tab: 0x2a9e8
-+  __TEXT.__cstring: 0x5add
-+  __TEXT.__unwind_info: 0x8680
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x140
-   __DATA_CONST.__weak_got: 0x120
+-4026.100.67.0.0
++4026.100.72.0.0
 
-   __AUTH_CONST.__cfstring: 0xea0
-   __AUTH_CONST.__weak_auth_got: 0xd8
-   __AUTH_CONST.__auth_got: 0x9b0
--  __DATA.__bss: 0xc38
-+  __DATA.__bss: 0xc58
-   __DATA_DIRTY.__bss: 0x1e48
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/PrivateFrameworks/DAAPKit.framework/DAAPKit
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 7179
--  Symbols:   17049
--  CStrings:  1264
+-  Symbols:   12863
+-  CStrings:  1148
 +  Functions: 7191
-+  Symbols:   17071
-+  CStrings:  1267
- 
-Sections:
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
++  Symbols:   12880
++  CStrings:  1151
 Symbols:
 + GCC_except_table4247
 + GCC_except_table4257
@@ -1320,5 +1302,4 @@ CStrings:
 + "cloudChannelName"
 + "cloud_channel_name"
 + "isFollowed"
-
 ```

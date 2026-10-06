@@ -2,99 +2,47 @@
 
 > `/System/Library/Frameworks/MediaToolbox.framework/MediaToolbox`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10482e4` | `0xc2c338` | **`-0x41bfac`** |
+| `__TEXT.__oslogstring` | `0x16d3f5` | `0x66b47` | **`-0x1068ae`** |
+| `__TEXT.__cstring` | `0x13fcc7` | `0x714d7` | **`-0xce7f0`** |
+| `__AUTH_CONST.__cfstring` | `0x537a0` | `0x503e0` | **`-0x33c0`** |
+| `__DATA.__common` | `0x32e8` | `0x20d8` | **`-0x1210`** |
+| `__TEXT.__unwind_info` | `0x15768` | `0x14870` | **`-0xef8`** |
+| `__TEXT.__gcc_except_tab` | `0x1e64` | `0x15ec` | **`-0x878`** |
+| `__DATA_DIRTY.__common` | `0x410` | `0x220` | **`-0x1f0`** |
+| `__TEXT.__const` | `0x29910` | `0x29730` | **`-0x1e0`** |
+| `__DATA.__bss` | `0x5378` | `0x5208` | **`-0x170`** |
+| `__DATA.__data` | `0x33e8` | `0x3288` | **`-0x160`** |
+| `__AUTH_CONST.__auth_got` | `0x5d10` | `0x5c88` | **`-0x88`** |
+| `__DATA_CONST.__const` | `0x24938` | `0x248b8` | **`-0x80`** |
+| `__AUTH_CONST.__const` | `0x47df8` | `0x47d98` | **`-0x60`** |
+| `__TEXT.__eh_frame` | `0x4b0` | `0x478` | **`-0x38`** |
+| `__DATA_CONST.__got` | `0x4968` | `0x4938` | **`-0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x24c0` | `0x2498` | **`-0x28`** |
+| `__DATA_DIRTY.__data` | `0x52c` | `0x50c` | **`-0x20`** |
+| `__TEXT.__lazy_helpers` | `0x3600` | `0x3618` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x2b84` | `0x2b74` | **`-0x10`** |
+| `__AUTH_CONST.__lazy_load_got` | `0x4d8` | `0x4e0` | **`+0x8`** |
+| `__DATA_DIRTY.__bss` | `0x1bb8` | `0x1bc0` | **`+0x8`** |
+| `__TEXT.__ustring` | `0x246` | `0x24e` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3350.71.2.11.1
--  __TEXT.__text: 0x10482e4
--  __TEXT.__lazy_helpers: 0x3600
--  __TEXT.__objc_methlist: 0x2b84
--  __TEXT.__const: 0x29910
--  __TEXT.__cstring: 0x13fcc7
--  __TEXT.__oslogstring: 0x16d3f5
--  __TEXT.__gcc_except_tab: 0x1e64
 +3350.75.2.0.0
-+  __TEXT.__text: 0xc2c338
-+  __TEXT.__lazy_helpers: 0x3618
-+  __TEXT.__objc_methlist: 0x2b74
-+  __TEXT.__const: 0x29730
-+  __TEXT.__cstring: 0x714d7
-+  __TEXT.__oslogstring: 0x66b47
-+  __TEXT.__gcc_except_tab: 0x15ec
-   __TEXT.__dlopen_cstrs: 0x32e
--  __TEXT.__ustring: 0x246
-+  __TEXT.__ustring: 0x24e
-   __TEXT.__swift5_typeref: 0x1d1
-   __TEXT.__swift5_reflstr: 0xa0
-   __TEXT.__swift5_assocty: 0xf0
 
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0x30
--  __TEXT.__unwind_info: 0x15768
--  __TEXT.__eh_frame: 0x4b0
-+  __TEXT.__unwind_info: 0x14870
-+  __TEXT.__eh_frame: 0x478
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x24938
-+  __DATA_CONST.__const: 0x248b8
-   __DATA_CONST.__objc_classlist: 0x228
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x24c0
-+  __DATA_CONST.__objc_selrefs: 0x2498
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x1f0
-   __DATA_CONST.__objc_arraydata: 0x50
--  __DATA_CONST.__got: 0x4968
--  __AUTH_CONST.__const: 0x47df8
--  __AUTH_CONST.__cfstring: 0x537a0
-+  __DATA_CONST.__got: 0x4938
-+  __AUTH_CONST.__const: 0x47d98
-+  __AUTH_CONST.__cfstring: 0x503e0
-   __AUTH_CONST.__objc_const: 0x59c8
-   __AUTH_CONST.__weak_auth_got: 0x20
--  __AUTH_CONST.__lazy_load_got: 0x4d8
-+  __AUTH_CONST.__lazy_load_got: 0x4e0
-   __AUTH_CONST.__objc_intobj: 0x78
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x5d10
-+  __AUTH_CONST.__auth_got: 0x5c88
-   __AUTH.__objc_data: 0x1040
-   __AUTH.__data: 0x940
-   __DATA.__objc_ivar: 0x3c0
--  __DATA.__data: 0x33e8
--  __DATA.__common: 0x32e8
--  __DATA.__bss: 0x5378
-+  __DATA.__data: 0x3288
-+  __DATA.__common: 0x20d8
-+  __DATA.__bss: 0x5208
-   __DATA_DIRTY.__objc_data: 0x550
--  __DATA_DIRTY.__data: 0x52c
--  __DATA_DIRTY.__bss: 0x1bb8
--  __DATA_DIRTY.__common: 0x410
-+  __DATA_DIRTY.__data: 0x50c
-+  __DATA_DIRTY.__bss: 0x1bc0
-+  __DATA_DIRTY.__common: 0x220
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 53207
--  Symbols:   46392
+-  Symbols:   45496
 -  CStrings:  57462
 +  Functions: 43696
-+  Symbols:   45191
++  Symbols:   44300
 +  CStrings:  20939
- 
 Symbols:
 + GCC_except_table137
 + GCC_except_table191
@@ -269,13 +217,6 @@ Symbols:
 + _kFigVideoQueueProperty_IsImageQueueConfiguredForDPB
 + _kFigVideoReceiverImageQueueOption_FigImageQueueCreationOptions
 + _nrp_createWithFigRenderPipeline
-+ _objc_msgSend$initWithConfiguration:
-+ _objc_msgSend$requiredAudioStreamBasicDescriptionForLocale:completionHandler:
-+ _objc_msgSend$setIsHeadless:
-+ _objc_msgSend$setOriginatingProcessIdentifier:
-+ _objc_msgSend$setPreferredStrategy:
-+ _objc_msgSend$setSourceLocale:
-+ _objc_msgSend$setTargetLocale:
 + _objc_retain_x28
 + _pcmToCaptionRP_fetchTranscriberRequiredAudioStreamBasicDescription.sCachedBestASBD
 + _pcmToCaptionRP_fetchTranscriberRequiredAudioStreamBasicDescription.sFetchMutex
@@ -1625,18 +1566,6 @@ Symbols:
 - _nero_ensureStarted
 - _nero_syncMessageHandler
 - _nero_tellOctaviaDisplayWasDetached
-- _objc_msgSend$_multipathAlternatePort
-- _objc_msgSend$_usesNWLoader
-- _objc_msgSend$countOfResponseBodyBytesReceived
-- _objc_msgSend$currentThread
-- _objc_msgSend$filepath
-- _objc_msgSend$initWithSourceLocale:targetLocale:preferredStrategy:isHeadless:
-- _objc_msgSend$response
-- _objc_msgSend$responseStartDate
-- _objc_msgSend$sendTelemetry
-- _objc_msgSend$setBackgroundColor:
-- _objc_msgSend$setBorderColor:
-- _objc_msgSend$setBorderWidth:
 - _oobtcontroller_isPreparingTrackItem
 - _pap_applyCachedPropertiesOnMediaControl.forceAirPlayVideoSeekToDateAsSeekToTime
 - _pap_applyCachedPropertiesOnMediaControl.initOnce

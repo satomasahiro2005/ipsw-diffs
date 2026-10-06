@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MapsDesign.framework/MapsDesign`
 
-```diff
+### Section Size Changes
 
- 82.30.6.12.19
--  __TEXT.__text: 0x26a8c4
-+  __TEXT.__text: 0x26a90c
-   __TEXT.__objc_methlist: 0x5cc
-   __TEXT.__const: 0x20c24
-   __TEXT.__constg_swiftt: 0x9828
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x26a8c4` | `0x26a90c` | **`+0x48`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_214719c8c -> sub_214ef7c8c : 2760 -> 2764
 ~ sub_2147c7e20 -> sub_214fa5e24 : 3076 -> 3080

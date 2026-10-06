@@ -2,51 +2,31 @@
 
 > `/System/Library/Frameworks/CoreTelephony.framework/Support/libSystemDetermination.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6eba4` | `0x6f278` | **`+0x6d4`** |
+| `__TEXT.__oslogstring` | `0x9b3e` | `0x9ced` | **`+0x1af`** |
+| `__AUTH_CONST.__cfstring` | `0x8c0` | `0x920` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0x58f0` | `0x5944` | **`+0x54`** |
+| `__AUTH_CONST.__const` | `0x4a08` | `0x4a50` | **`+0x48`** |
+| `__TEXT.__unwind_info` | `0x23d8` | `0x2408` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x3665` | `0x3691` | **`+0x2c`** |
+
+### Other Changes
+
 ```diff
 
 -13466.3.0.0.0
--  __TEXT.__text: 0x6eba4 sha256:846e0e3305829c9a0fe0c62046d34ffb264dba7a2536efc8544a7cbc684da554
--  __TEXT.__const: 0x3ef9 sha256:59bebcb2fdb87ee5833d2543d23382026067acd0ee8550fb5587d69e182484be
--  __TEXT.__gcc_except_tab: 0x58f0 sha256:dd239dc85c38e1c55929869a4f209067f58f9928e90c6f60aa25626c0daed62d
--  __TEXT.__cstring: 0x3665 sha256:e3294b193235a9adfe8c244e55f75069d667f8c50de16bcfbcd76c36a8509fd3
--  __TEXT.__oslogstring: 0x9b3e sha256:5df877a105700c0858f2cd2169febc94e0e9150d3072bd832c6ead78a9752057
--  __TEXT.__unwind_info: 0x23d8 sha256:515906ec7dcbd549fe1ab2182e62cfc23ed9d358bf7b634c2197dcecbe411734
 +13473.1.0.0.0
-+  __TEXT.__text: 0x6f278 sha256:5c2de9d9a75fd95850236ebbd4f4b08c2ef9aae041a3f952336e3e1c17415a55
-+  __TEXT.__const: 0x3ef9 sha256:328aa2083fd244146c4bbbf9aa162e1a0a547295d8e5e3843bb5831ca29bc164
-+  __TEXT.__gcc_except_tab: 0x5944 sha256:7a8b30b94979df3271bce29672b37afd8cff9d04384794c4c69f621241c547ca
-+  __TEXT.__cstring: 0x3691 sha256:3caf40fdb8aba613c2a2dba92600371fea513b26ce70c4afe97878e0f6d476b3
-+  __TEXT.__oslogstring: 0x9ced sha256:e9602bfac882f5abc9b692011e01a35446a39e546c85f090a577c223ee1a6de9
-+  __TEXT.__unwind_info: 0x2408 sha256:7ee8a2c6afcab6236d30dcb273296eefc727e1fa1d782451fd680fe53d7cff81
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0xdf8 sha256:45b0fc98716e25cf0c811aae723fd505840ae63ec47b6e2b98e011ce6a373dc6
-+  __DATA_CONST.__const: 0xdf8 sha256:3ecddd47b20411b6a6c627a054d9d82dbd57ca2515ba98b925a9148a44fc2660
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x10 sha256:9d0f1c6cfa9fdcdde7b47d1fd3afecdc841fb31cab76a674e51d063578a2d576
-+  __DATA_CONST.__weak_got: 0x10 sha256:60882d8126f276bf35b3c0fd76edbdf4b67bf6460045a5963160a5a8cf04d031
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x4a08 sha256:d8fae5ab1df664d911d1b4fb3fce04b1ac4378d02170e9d4f55cf971bcebcef4
--  __AUTH_CONST.__cfstring: 0x8c0 sha256:67727b23d37dc0db4e2c04828db1c76beead770741d76ebf6815ccaee0eee702
--  __AUTH_CONST.__weak_auth_got: 0x18 sha256:9301580f2a4c506b3a281d68e0e22bffb435cbb497ce8c36f9bdbf987996a481
-+  __AUTH_CONST.__const: 0x4a50 sha256:84cd61f22db7a312d1d6ec47bb14112c6029f3e245e2a17fe25c13dfeec2cb47
-+  __AUTH_CONST.__cfstring: 0x920 sha256:035a7d2a995b2263804797210327a0aadd2035cc0662b6a7877ce257673434da
-+  __AUTH_CONST.__weak_auth_got: 0x18 sha256:361f00ef8061eb698f44dea57878417102644c4e75e3ed9722e0fb276638a8b7
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA_DIRTY.__data: 0x8 sha256:7c9fa136d4413fa6173637e883b6998d32e1d675f88cddff9dcbcf331820f4b8
-   __DATA_DIRTY.__bss: 0x60 sha256:2ea9ab9198d1638007400cd2c3bef1cc745b864b76011a0e1bc52180ac6452d4
 
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  UUID: 37AFBC5F-F798-31E7-A8B9-6E6AD6D40518
 -  Functions: 1788
--  Symbols:   4192
--  CStrings:  1510
-+  UUID: 58BC6FD8-926B-3BEF-83F1-D84D3F34286E
+-  Symbols:   2948
+-  CStrings:  1440
 +  Functions: 1796
-+  Symbols:   4203
-+  CStrings:  1523
- 
++  Symbols:   2961
++  CStrings:  1450
 Symbols:
 + GCC_except_table105
 + GCC_except_table120
@@ -336,23 +316,6 @@ Symbols:
 + __ZSt28__throw_bad_array_new_lengthB9foe220106v
 + __ZThn48_N26SystemDeterminationManager32handleLazuliMessageReceived_syncERK13PersonalityIDb
 + __ZThn48_N26SystemDeterminationManager42handleLazuliRegistrationRefreshChange_syncERK13PersonalityIDj
-+ ____ZN2sd18RcsPcscfConnection7connectERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEbbtS9_15DataContextType_block_invoke.6
-+ ___block_descriptor_tmp.239
-+ ___block_descriptor_tmp.240
-+ ___block_descriptor_tmp.241
-+ ___block_descriptor_tmp.242
-+ ___block_descriptor_tmp.255
-+ ___block_descriptor_tmp.259
-+ ___block_descriptor_tmp.263
-+ ___block_descriptor_tmp.265
-+ ___block_descriptor_tmp.273
-+ ___block_descriptor_tmp.279
-+ ___block_descriptor_tmp.280
-+ ___block_descriptor_tmp.281
-+ ___block_descriptor_tmp.282
-+ ___block_descriptor_tmp.283
-+ ___block_descriptor_tmp.291
-+ ___block_descriptor_tmp.292
 + _objc_retain_x22
 - GCC_except_table119
 - GCC_except_table152
@@ -628,33 +591,13 @@ Symbols:
 - __ZNSt3__1ssB9foe220100IcNS_11char_traitsIcEENS_9allocatorIcEEEEDaRKNS_12basic_stringIT_T0_T1_EESC_
 - __ZSt28__throw_bad_array_new_lengthB9foe220100v
 - __ZThn48_N26SystemDeterminationManager32handleLazuliMessageReceived_syncERK13PersonalityID
-- ____ZN2sd18RcsPcscfConnection7connectERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEbbtS9_15DataContextType_block_invoke.5
-- ___block_descriptor_tmp.230
-- ___block_descriptor_tmp.231
-- ___block_descriptor_tmp.232
-- ___block_descriptor_tmp.234
-- ___block_descriptor_tmp.248
-- ___block_descriptor_tmp.249
-- ___block_descriptor_tmp.250
-- ___block_descriptor_tmp.252
-- ___block_descriptor_tmp.256
-- ___block_descriptor_tmp.260
-- ___block_descriptor_tmp.268
-- ___block_descriptor_tmp.269
-- ___block_descriptor_tmp.270
-- ___block_descriptor_tmp.278
-- ___block_descriptor_tmp.286
-- ___block_descriptor_tmp.287
 - _objc_release_x24
 - _objc_retain_x23
 CStrings:
-+ "/AppleInternal/Library/BuildRoots/4~CSIOugAUiIxUn-8O9IFql5vfjYnVx27k7epF74E/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:414: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
-+ "/AppleInternal/Library/BuildRoots/4~CSIOugAUiIxUn-8O9IFql5vfjYnVx27k7epF74E/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:419: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
-+ "/AppleInternal/Library/BuildRoots/4~CSIOugAUiIxUn-8O9IFql5vfjYnVx27k7epF74E/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:434: libc++ Hardening assertion !empty() failed: front() called on an empty vector\n"
-+ "/AppleInternal/Library/BuildRoots/4~CSIOugAUiIxUn-8O9IFql5vfjYnVx27k7epF74E/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:442: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
-+ "/AppleInternal/Library/BuildRoots/4~CSIOugAUiIxUn-8O9IFql5vfjYnVx27k7epF74E/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/optional:1121: libc++ Hardening assertion this->has_value() failed: optional operator-> called on a disengaged value\n"
-+ "/AppleInternal/Library/BuildRoots/4~CSIOugAUiIxUn-8O9IFql5vfjYnVx27k7epF74E/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:1497: libc++ Hardening assertion !empty() failed: string::front(): string is empty\n"
-+ "/AppleInternal/Library/BuildRoots/4~CSIOugAUiIxUn-8O9IFql5vfjYnVx27k7epF74E/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string_view:343: libc++ Hardening assertion (__end - __begin) >= 0 failed: std::string_view::string_view(iterator, sentinel) received invalid range\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:414: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:419: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:434: libc++ Hardening assertion !empty() failed: front() called on an empty vector\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:442: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
 + "AlwaysEnableVoNRForEmergency"
 + "IMS Registration Info: Transient: %{bool}d, Carrier-Based: %{bool}d, AuthType: %s, VendorID: %d"
 + "IMSDeregistrationOptimization"
@@ -675,13 +618,10 @@ CStrings:
 + "getTTYSupported: Null PersonalityShop"
 + "handleLazuliMessageReceived_sync (isImdn=%{bool}d)"
 + "handleUninitialized: Suppressing duplicate callback (already idle)"
-- "/AppleInternal/Library/BuildRoots/4~CRG3ugAdEmQU2ZSB6VWnhsuR5MzSZe8tQB1XVQA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:413: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
-- "/AppleInternal/Library/BuildRoots/4~CRG3ugAdEmQU2ZSB6VWnhsuR5MzSZe8tQB1XVQA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:418: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
-- "/AppleInternal/Library/BuildRoots/4~CRG3ugAdEmQU2ZSB6VWnhsuR5MzSZe8tQB1XVQA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:433: libc++ Hardening assertion !empty() failed: front() called on an empty vector\n"
-- "/AppleInternal/Library/BuildRoots/4~CRG3ugAdEmQU2ZSB6VWnhsuR5MzSZe8tQB1XVQA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:441: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
-- "/AppleInternal/Library/BuildRoots/4~CRG3ugAdEmQU2ZSB6VWnhsuR5MzSZe8tQB1XVQA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/optional:1121: libc++ Hardening assertion this->has_value() failed: optional operator-> called on a disengaged value\n"
-- "/AppleInternal/Library/BuildRoots/4~CRG3ugAdEmQU2ZSB6VWnhsuR5MzSZe8tQB1XVQA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:1497: libc++ Hardening assertion !empty() failed: string::front(): string is empty\n"
-- "/AppleInternal/Library/BuildRoots/4~CRG3ugAdEmQU2ZSB6VWnhsuR5MzSZe8tQB1XVQA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string_view:343: libc++ Hardening assertion (__end - __begin) >= 0 failed: std::string_view::string_view(iterator, sentinel) received invalid range\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:413: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:418: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:433: libc++ Hardening assertion !empty() failed: front() called on an empty vector\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:441: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
 - "EmergencyRTTSupported"
 - "IMS Registration Info: Transient: %{bool}d, Carrier-Based: %{bool}d, AuthType: %s"
 - "RTTSupported"
@@ -692,5 +632,4 @@ CStrings:
 - "getRTTSupported %{bool}d from IMSConfig"
 - "handleLazuliMessageReceived_sync"
 - "ttyIMSSupported"
-
 ```

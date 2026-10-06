@@ -2,23 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/SiriExpanseInternal.framework/SiriExpanseInternal`
 
-```diff
+### Section Size Changes
 
- 3505.1.1.0.0
--  __TEXT.__text: 0x466a8
-+  __TEXT.__text: 0x466cc
-   __TEXT.__objc_methlist: 0x38
-   __TEXT.__const: 0x5438
-   __TEXT.__constg_swiftt: 0x214c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__eh_frame` | `0x1da4` | `0x1dcc` | **`+0x28`** |
+| `__TEXT.__text` | `0x49204` | `0x49228` | **`+0x24`** |
+| `__TEXT.__unwind_info` | `0x1238` | `0x1240` | **`+0x8`** |
 
-   __TEXT.__swift5_capture: 0x16c
-   __TEXT.__swift5_mpenum: 0x60
-   __TEXT.__unwind_info: 0x15f0
--  __TEXT.__eh_frame: 0x1da4
-+  __TEXT.__eh_frame: 0x1dcc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+### Other Changes
+
+```text
 Functions:
 ~ _$s2os9serialize_2atyx_Spys5UInt8VGzts17FixedWidthIntegerRzlFySWXEfU_ : 32 -> 68
 ```

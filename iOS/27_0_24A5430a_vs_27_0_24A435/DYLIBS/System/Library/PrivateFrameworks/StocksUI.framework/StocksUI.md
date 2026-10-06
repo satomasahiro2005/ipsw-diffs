@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/StocksUI.framework/StocksUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3dbf14` | `0x3dbecc` | **`-0x48`** |
+| `__AUTH_CONST.__auth_got` | `0x7a00` | `0x79f8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 2028.1.0.0.0
--  __TEXT.__text: 0x3dbf14
-+  __TEXT.__text: 0x3dbecc
-   __TEXT.__objc_methlist: 0x4dc4
-   __TEXT.__const: 0x24db4
-   __TEXT.__cstring: 0x126dc
-
-   __AUTH_CONST.__const: 0x15a88
-   __AUTH_CONST.__cfstring: 0x80
-   __AUTH_CONST.__objc_const: 0x22438
--  __AUTH_CONST.__auth_got: 0x7a00
-+  __AUTH_CONST.__auth_got: 0x79f8
-   __AUTH.__objc_data: 0x2ce0
-   __AUTH.__data: 0x2f80
-   __DATA.__data: 0x5190
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 15471
--  Symbols:   7344
-+  Symbols:   7343
-   CStrings:  1389
- 
+-  Symbols:   6494
++  Symbols:   6493
 Symbols:
 - _objc_retain_x12
 Functions:

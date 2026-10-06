@@ -2,77 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/iCloudDriveCore.framework/iCloudDriveCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x829d8` | `0x845e9` | **`+0x1c11`** |
+| `__TEXT.__text` | `0x308aa0` | `0x30a0e8` | **`+0x1648`** |
+| `__TEXT.__oslogstring` | `0x3de76` | `0x3ee91` | **`+0x101b`** |
+| `__AUTH_CONST.__objc_const` | `0x41a50` | `0x42388` | **`+0x938`** |
+| `__AUTH_CONST.__cfstring` | `0x23640` | `0x23b00` | **`+0x4c0`** |
+| `__TEXT.__objc_methlist` | `0x1be50` | `0x1c21c` | **`+0x3cc`** |
+| `__TEXT.__gcc_except_tab` | `0x17800` | `0x17ad8` | **`+0x2d8`** |
+| `__DATA_CONST.__const` | `0x9ed0` | `0xa150` | **`+0x280`** |
+| `__DATA_CONST.__objc_selrefs` | `0xf170` | `0xf318` | **`+0x1a8`** |
+| `__TEXT.__unwind_info` | `0xa440` | `0xa588` | **`+0x148`** |
+| `__AUTH.__objc_data` | `0x2558` | `0x2698` | **`+0x140`** |
+| `__DATA.__data` | `0x29f0` | `0x2ab0` | **`+0xc0`** |
+| `__AUTH_CONST.__const` | `0x2cf8` | `0x2d28` | **`+0x30`** |
+| `__DATA.__objc_ivar` | `0x2030` | `0x2050` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0xab0` | `0xad0` | **`+0x20`** |
+| `__DATA.__bss` | `0x200` | `0x1f0` | **`-0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x2c0` | `0x2d0` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x17c0` | `0x17b8` | **`-0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x960` | `0x968` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -5168.0.55.0.0
--  __TEXT.__text: 0x30103c
--  __TEXT.__objc_methlist: 0x1be50
 +5168.40.149.0.1
-+  __TEXT.__text: 0x302560
-+  __TEXT.__objc_methlist: 0x1c21c
-   __TEXT.__const: 0x4f0
--  __TEXT.__cstring: 0x829d8
--  __TEXT.__oslogstring: 0x3de76
--  __TEXT.__gcc_except_tab: 0x17800
-+  __TEXT.__cstring: 0x845e9
-+  __TEXT.__oslogstring: 0x3ee91
-+  __TEXT.__gcc_except_tab: 0x17ad8
-   __TEXT.__ustring: 0x36
--  __TEXT.__unwind_info: 0xd3f8
-+  __TEXT.__unwind_info: 0xd568
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9ed0
--  __DATA_CONST.__objc_classlist: 0xab0
-+  __DATA_CONST.__const: 0xa150
-+  __DATA_CONST.__objc_classlist: 0xad0
-   __DATA_CONST.__objc_catlist: 0xd8
--  __DATA_CONST.__objc_protolist: 0x2c0
-+  __DATA_CONST.__objc_protolist: 0x2d0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xf170
-+  __DATA_CONST.__objc_selrefs: 0xf318
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__objc_superrefs: 0x960
-+  __DATA_CONST.__objc_superrefs: 0x968
-   __DATA_CONST.__objc_arraydata: 0xeb8
--  __DATA_CONST.__got: 0x17c0
--  __AUTH_CONST.__const: 0x2cf8
--  __AUTH_CONST.__cfstring: 0x23640
--  __AUTH_CONST.__objc_const: 0x41a50
-+  __DATA_CONST.__got: 0x17b8
-+  __AUTH_CONST.__const: 0x2d28
-+  __AUTH_CONST.__cfstring: 0x23b00
-+  __AUTH_CONST.__objc_const: 0x42388
-   __AUTH_CONST.__objc_intobj: 0xc18
-   __AUTH_CONST.__objc_arrayobj: 0x2b8
-   __AUTH_CONST.__objc_dictobj: 0xf0
-   __AUTH_CONST.__objc_doubleobj: 0x50
-   __AUTH_CONST.__auth_got: 0xda0
--  __AUTH.__objc_data: 0x2558
-+  __AUTH.__objc_data: 0x2698
-   __AUTH.__data: 0x18
--  __DATA.__objc_ivar: 0x2030
--  __DATA.__data: 0x29f0
-+  __DATA.__objc_ivar: 0x2050
-+  __DATA.__data: 0x2ab0
-   __DATA_DIRTY.__objc_data: 0x4588
-   __DATA_DIRTY.__data: 0xd0
-   __DATA_DIRTY.__bss: 0x428
 
-   - /usr/lib/libprequelite.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 14225
--  Symbols:   24561
+-  Symbols:   18270
 -  CStrings:  12153
 +  Functions: 14323
-+  Symbols:   24732
++  Symbols:   18399
 +  CStrings:  12261
- 
 Symbols:
 + +[BRCClientPrivilegesDescriptor isNonSandboxedForAuditToken:]
 + +[BRCItemID appLibraryForBrainItemIDString:zoneName:zoneAppRetriever:clientZone:]
@@ -376,75 +342,6 @@ Symbols:
 + ___block_descriptor_98_e8_32s40s48s56s64r72r_e23_B16?0"PQLConnection"8ls32l8r64l8s40l8s48l8s56l8r72l8
 + ___br_update_tables_40_000_cleanup_in_flight_cross_zone_moves_block_invoke
 + _br_update_tables_40_000
-+ _objc_msgSend$__getOrCreateServerZone:newlyCreatedDuringInitialSync:
-+ _objc_msgSend$_createItemBasedOnTemplate:fields:contents:options:request:additionalItemAttributes:progress:fromModifyRedirect:completionHandler:
-+ _objc_msgSend$_dispatchModify:
-+ _objc_msgSend$_dispatchReimportForFileObjectID:
-+ _objc_msgSend$_dropStrandedMigrationRowForFileObjectID:
-+ _objc_msgSend$_fetchedWithinPacerWindow
-+ _objc_msgSend$_fpHasNonUploadedFilesWithCompletion:
-+ _objc_msgSend$_getContainersNeedingUploadV1WithFPPendingData:reply:
-+ _objc_msgSend$_getContainersNeedingUploadV2WithFPPendingData:reply:
-+ _objc_msgSend$_iCloudDriveContainerSet
-+ _objc_msgSend$_injectionFromValues:
-+ _objc_msgSend$_insertUploadV2TombstoneForCrossZoneMove
-+ _objc_msgSend$_itemIDWithLibraryRowID:zoneAppRetriever:error:
-+ _objc_msgSend$_populateShareAttributionFromItem:
-+ _objc_msgSend$_processPhase2BatchOnWorkloop:task:
-+ _objc_msgSend$_registerDailyResolutionTask
-+ _objc_msgSend$_rescheduleSuspendedUV2CZMJobsMigratedIntoThisZone
-+ _objc_msgSend$_resolveQuotaCategoriesIfPossibleWithCompletion:
-+ _objc_msgSend$_runPhase2BatchWithTask:
-+ _objc_msgSend$_signalResolvedCategoriesForAvailableBytes:
-+ _objc_msgSend$appLibraryForBrainItemIDString:zoneName:zoneAppRetriever:clientZone:
-+ _objc_msgSend$appLibraryIDForCrossZoneMovedBrainItemIDString:
-+ _objc_msgSend$br_appHasNonUploadedFiles:completion:
-+ _objc_msgSend$cacheUV2MigrationStamp:
-+ _objc_msgSend$cancelAndDeleteOperationsForZoneReset:ownerName:completionHandler:
-+ _objc_msgSend$cancelAndWaitForAllOperationsWithCompletionHandler:
-+ _objc_msgSend$cancelOperationsForClientKey:completionHandler:
-+ _objc_msgSend$clearUV2MigrationStamp
-+ _objc_msgSend$clearUploadV2ModifyRedirectPending
-+ _objc_msgSend$columnName
-+ _objc_msgSend$creatorNameComponents
-+ _objc_msgSend$enumerateRangesUsingBlock:
-+ _objc_msgSend$getBirdBGSTActivitiesConfigsWithAccountFacade:uploadV2Enabled:
-+ _objc_msgSend$getOrCreateSharedZones:shareAcceptOp:newlyCreatedDuringInitialSync:
-+ _objc_msgSend$hasUV2MigrationRequestedRowsWithError:
-+ _objc_msgSend$indexSet
-+ _objc_msgSend$initWithFileObjectID:parentIdentifier:
-+ _objc_msgSend$initWithIndexSet:
-+ _objc_msgSend$initWithReserverItemIDString:reservedFileProviderIdentifier:parentZoneName:parentZoneOwner:parentIDString:symlinkTarget:parentShareState:shareRootItemIdentifierString:parentPCSChainState:parentSharePermissions:initialItem:resetItem:isInDocumentScope:trashPutBackPath:trashPutbackItemIDString:progress:clientKey:
-+ _objc_msgSend$initWithResetItem:forceParentShared:zoneName:zoneOwner:itemIDString:parentZoneName:parentZoneOwner:parentIDString:isInDocumentScope:trashPutBackPath:trashPutbackItemIDString:progress:clientKey:
-+ _objc_msgSend$initWithValues:
-+ _objc_msgSend$initWithZoneName:zoneOwner:itemIDString:serverChangeToken:progress:clientKey:
-+ _objc_msgSend$isCreatedByCurrentUser
-+ _objc_msgSend$isMigratingToUV2
-+ _objc_msgSend$isNonSandboxedForAuditToken:
-+ _objc_msgSend$isSharedFolderSubItem
-+ _objc_msgSend$itemUndergoingCZMToAnotherZone:si:clientZone:rank:scheduler:zone:session:
-+ _objc_msgSend$localItemBuilder
-+ _objc_msgSend$markUV2MigrationRequestedForRowIDs:retryAt:error:
-+ _objc_msgSend$markUploadV2ModifyRedirectPending
-+ _objc_msgSend$nextUV2MigrationBatchItemsAtTime:limit:itemBuilder:error:
-+ _objc_msgSend$parentIdentifier
-+ _objc_msgSend$quotaCategoryMUpperBound
-+ _objc_msgSend$quotaCategoryResolutionBGSystemTaskConfig
-+ _objc_msgSend$quotaCategorySUpperBound
-+ _objc_msgSend$quotaCategoryXSUpperBound
-+ _objc_msgSend$quotaHandler
-+ _objc_msgSend$quotaUV2FetchPacerDelay
-+ _objc_msgSend$quotaUV2Handler
-+ _objc_msgSend$setBackingStoreIdentity:
-+ _objc_msgSend$shouldBeBlockedInUploadV2
-+ _objc_msgSend$shouldBlockWithUploadV2Enabled:isIdleOrRejected:
-+ _objc_msgSend$stampUV2MigrationChildrenOfParent:error:
-+ _objc_msgSend$syncEngineMarkNeedsSyncingUp
-+ _objc_msgSend$uv2MigrationBoostPendingDeletions
-+ _objc_msgSend$uv2MigrationNeedsReimport
-+ _objc_msgSend$uv2MigrationPendingLiveItemCount:tombstoneItemCount:
-+ _objc_msgSend$uv2MigrationRequestThrottleInterval
-+ _objc_msgSend$uv2MigrationStamp
 - +[BRCClientPrivilegesDescriptor _isNonSandboxedForAuditToken:]
 - +[BRCPQLInjectionJobStates _getPQLInjectionFromJobStates:]
 - +[BRCServerChangesApplyUtil_Private itemUndergoingCZMToAnotherZone:si:clientZone:rank:scheduler:zone:]
@@ -618,33 +515,6 @@ Symbols:
 - ___block_descriptor_97_e8_32s40s48s56s64r72r_e23_B16?0"PQLConnection"8ls32l8r64l8s40l8s48l8s56l8r72l8
 - __migrationQueue.migrationQueue
 - __migrationQueue.onceToken
-- _objc_msgSend$_cancel
-- _objc_msgSend$_cancelAndRemoveProgressesMatchingPredicate:
-- _objc_msgSend$_cancelObsoleteSyncEngineRequests
-- _objc_msgSend$_createInflightSyncProgress
-- _objc_msgSend$_getPQLInjectionFromJobStates:
-- _objc_msgSend$_isNonSandboxedForAuditToken:
-- _objc_msgSend$_isSyncEngineIdleWithDBFacade:
-- _objc_msgSend$_itemIDWithLibraryRowID:zoneAppRetriever:
-- _objc_msgSend$_markUsageUploadV2SyncEngine:
-- _objc_msgSend$_migrationQueue
-- _objc_msgSend$_performSyncEngineMigrationCheckWithTask:
-- _objc_msgSend$_shouldBlockNotifForUploadV2WithDiffs:
-- _objc_msgSend$cancelProgressesExcludingClientKey:
-- _objc_msgSend$cancelProgressesForClientKey:
-- _objc_msgSend$clientDBExistsOnDisk
-- _objc_msgSend$createProgressForClientKey:
-- _objc_msgSend$flushWithCheckpoint:performOnSerialQueue:
-- _objc_msgSend$getBirdBGSTActivitiesConfigsWithAccountFacade:
-- _objc_msgSend$hasNonIdleItemsForSyncEngineMigration
-- _objc_msgSend$inflightSyncProgressRegistry
-- _objc_msgSend$initWithJobStates:
-- _objc_msgSend$initWithReserverItemIDString:reservedFileProviderIdentifier:parentZoneName:parentZoneOwner:parentIDString:primaryZoneNeedsCreation:appLibraryRootNeedsCreation:appLibraryIsConsolidated:symlinkTarget:parentShareState:shareRootItemIdentifierString:parentPCSChainState:parentSharePermissions:initialItem:resetItem:isInDocumentScope:trashPutBackPath:trashPutbackItemIDString:progress:
-- _objc_msgSend$initWithResetItem:forceParentShared:zoneName:zoneOwner:itemIDString:parentZoneNeedsCreation:appLibraryRootNeedsCreation:appLibraryIsConsolidated:parentZoneName:parentZoneOwner:parentIDString:isInDocumentScope:trashPutBackPath:trashPutbackItemIDString:progress:
-- _objc_msgSend$initWithZoneName:zoneOwner:itemIDString:serverChangeToken:progress:
-- _objc_msgSend$itemUndergoingCZMToAnotherZone:si:clientZone:rank:scheduler:zone:
-- _objc_msgSend$markUsageUploadV2SyncEngineForNewDatabaseIfNeeded
-- _objc_msgSend$unregisterProgress:forClientKey:
 CStrings:
 + " and rescheduling its apply from server truth"
 + " uv2-reimport"

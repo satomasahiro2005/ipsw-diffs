@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/WiFiPeerToPeer.framework/WiFiPeerToPeer`
 
-```diff
+### Section Size Changes
 
- 885.85.4.1.0
--  __TEXT.__text: 0x401dc
-+  __TEXT.__text: 0x401e4
-   __TEXT.__objc_methlist: 0x567c
-   __TEXT.__const: 0x280
-   __TEXT.__oslogstring: 0x1c68
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x401dc` | `0x401e4` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2b6d19810 -> sub_2b7b78810 : 436 -> 444
+~ sub_2b6c02810 -> sub_2b7a61810 : 436 -> 444
 ```

@@ -2,33 +2,24 @@
 
 > `com.apple.iokit.IOPCIFamily`
 
-```diff
+### Section Size Changes
 
-   __TEXT.__const: 0xf18
-   __TEXT.__cstring: 0x76ed
-   __TEXT.__os_log: 0x5085
--  __TEXT_EXEC.__text: 0x41a74
-+  __TEXT_EXEC.__text: 0x41a6c
-   __TEXT_EXEC.__auth_stubs: 0x950
-   __DATA.__data: 0xcc
-   __DATA.__common: 0x430
-Sections:
-~ __TEXT.__cstring : content changed
-~ __DATA.__data : content changed
-~ __DATA_CONST.__mod_init_func : content changed
-~ __DATA_CONST.__mod_term_func : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__kalloc_type : content changed
-~ __DATA_CONST.__kalloc_var : content changed
-~ __DATA_CONST.__auth_got : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA_CONST.__auth_ptr : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x41a74` | `0x41a6c` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
+```diff
 Functions:
-~ __ZN11IOPCIBridge9matchKeysEP11IOPCIDevicePKcjh : 508 -> 500
+~ __ZN15IOPCI2PCIBridge9MetaClassC2Ev : 508 -> 500
 CStrings:
 + "21:13:37"
 + "Jun 29 2026"
 - "19:34:25"
 - "Jun 18 2026"
-
 ```

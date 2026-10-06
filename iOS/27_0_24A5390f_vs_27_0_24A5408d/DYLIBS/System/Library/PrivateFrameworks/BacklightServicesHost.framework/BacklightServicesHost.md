@@ -2,77 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/BacklightServicesHost.framework/BacklightServicesHost`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9b29c` | `0x9c220` | **`+0xf84`** |
+| `__TEXT.__oslogstring` | `0x129e6` | `0x12edb` | **`+0x4f5`** |
+| `__AUTH_CONST.__objc_const` | `0x190f8` | `0x19498` | **`+0x3a0`** |
+| `__TEXT.__objc_methlist` | `0x9d1c` | `0x9de4` | **`+0xc8`** |
+| `__DATA.__data` | `0x2460` | `0x2520` | **`+0xc0`** |
+| `__AUTH.__objc_data` | `—` | `0xa0` | **`+0xa0`** |
+| `__AUTH_CONST.__cfstring` | `0x7c80` | `0x7d00` | **`+0x80`** |
+| `__TEXT.__cstring` | `0x7e30` | `0x7eaf` | **`+0x7f`** |
+| `__DATA_CONST.__const` | `0x2d90` | `0x2e08` | **`+0x78`** |
+| `__TEXT.__unwind_info` | `0x2860` | `0x28c0` | **`+0x60`** |
+| `__DATA_DIRTY.__objc_data` | `0x3e30` | `0x3de0` | **`-0x50`** |
+| `__AUTH_CONST.__const` | `0xd00` | `0xd40` | **`+0x40`** |
+| `__DATA.__objc_ivar` | `0x12e0` | `0x130c` | **`+0x2c`** |
+| `__DATA_CONST.__got` | `0x820` | `0x840` | **`+0x20`** |
+| `__TEXT.__const` | `0x4a0` | `0x488` | **`-0x18`** |
+| `__DATA_CONST.__objc_protolist` | `0x308` | `0x318` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x638` | `0x640` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0xf18` | `0xf10` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -6.0.38.0.0
--  __TEXT.__text: 0x9b29c
--  __TEXT.__objc_methlist: 0x9d1c
--  __TEXT.__const: 0x4a0
--  __TEXT.__gcc_except_tab: 0xf18
--  __TEXT.__cstring: 0x7e30
--  __TEXT.__oslogstring: 0x129e6
 +6.0.42.1.0
-+  __TEXT.__text: 0x9c220
-+  __TEXT.__objc_methlist: 0x9de4
-+  __TEXT.__const: 0x488
-+  __TEXT.__gcc_except_tab: 0xf10
-+  __TEXT.__cstring: 0x7eaf
-+  __TEXT.__oslogstring: 0x12edb
-   __TEXT.__ustring: 0x570
--  __TEXT.__unwind_info: 0x2860
-+  __TEXT.__unwind_info: 0x28c0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2d90
--  __DATA_CONST.__objc_classlist: 0x638
-+  __DATA_CONST.__const: 0x2e08
-+  __DATA_CONST.__objc_classlist: 0x640
-   __DATA_CONST.__objc_catlist: 0x38
--  __DATA_CONST.__objc_protolist: 0x308
-+  __DATA_CONST.__objc_protolist: 0x318
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x3c28
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x518
-   __DATA_CONST.__objc_arraydata: 0x78
--  __DATA_CONST.__got: 0x820
--  __AUTH_CONST.__const: 0xd00
--  __AUTH_CONST.__cfstring: 0x7c80
--  __AUTH_CONST.__objc_const: 0x190f8
-+  __DATA_CONST.__got: 0x840
-+  __AUTH_CONST.__const: 0xd40
-+  __AUTH_CONST.__cfstring: 0x7d00
-+  __AUTH_CONST.__objc_const: 0x19498
-   __AUTH_CONST.__objc_intobj: 0xc0
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__objc_ivar: 0x12e0
--  __DATA.__data: 0x2460
-+  __AUTH.__objc_data: 0xa0
-+  __DATA.__objc_ivar: 0x130c
-+  __DATA.__data: 0x2520
-   __DATA.__bss: 0xe0
--  __DATA_DIRTY.__objc_data: 0x3e30
-+  __DATA_DIRTY.__objc_data: 0x3de0
-   __DATA_DIRTY.__bss: 0x120
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMotion.framework/CoreMotion
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libtailspin.dylib
 -  Functions: 4227
--  Symbols:   9089
+-  Symbols:   7439
 -  CStrings:  1989
 +  Functions: 4234
-+  Symbols:   9145
++  Symbols:   7498
 +  CStrings:  2001
- 
 Symbols:
 + +[BLSHEnvironmentTransitionState createStateForEnvironment:delegate:displayFlipbookStateProvider:]
 + +[BLSHValidOnSystemSleepAttributeEntry activateForAttribute:fromAssertion:forService:attributeHandler:]
@@ -201,23 +166,6 @@ Symbols:
 + ___block_descriptor_88_e8_32s40s48s56bs64bs_e5_v8?0ls32l8s40l8s48l8s56l8s64l8
 + ___block_descriptor_96_e8_32s40s48s56s64s_e49_v24?0"<BLSHRenderedFlipbookFrame>"8"NSError"16ls32l8s40l8s48l8s56l8s64l8
 + ___kCFBooleanTrue
-+ _objc_msgSend$_donateBacklightStateChangeForState:startMachTime:endMachTime:changeEvent:
-+ _objc_msgSend$_lock_updateVisualState:
-+ _objc_msgSend$bsContinuousMachTimeNow
-+ _objc_msgSend$createStateForEnvironment:delegate:displayFlipbookStateProvider:
-+ _objc_msgSend$dateWithBSContinuousMachTime:
-+ _objc_msgSend$delegateLoggingName
-+ _objc_msgSend$flipbookUsesLowPowerRendering
-+ _objc_msgSend$initWithPresentation:backlightState:delegate:displayFlipbookStateProvider:inactiveBudgetPolicy:osTimerProvider:platformProvider:
-+ _objc_msgSend$initWithSequenceID:backlightState:triggerEvent:backlightRampBlock:forIdentifier:displayLoggingName:previousTarget:
-+ _objc_msgSend$minimumActiveInterval
-+ _objc_msgSend$newVisualStateWithFlipbookUsesLowPowerRendering:
-+ _objc_msgSend$settledBacklightState
-+ _objc_msgSend$targetBacklightDisplayMode
-+ _objc_msgSend$updateToExplicitVisualState:dateSpecifier:
-+ _objc_msgSend$updateToExplicitVisualState:specifier:
-+ _objc_msgSend$updateToPresentationDate:visualState:sceneContentsUpdated:
-+ _objc_msgSend$updateToVisualState:presentationDate:
 - +[BLSHEnvironmentTransitionState createStateForEnvironment:delegate:]
 - -[BLSHAggregateHostCachedState alwaysOnEnabled]
 - -[BLSHAggregateHostCachedState backlightState]
@@ -286,26 +234,6 @@ Symbols:
 - ___block_descriptor_72_e8_32s40s48s56r64r_e31_16?0"BLSHPresentationEntry"8ls32l8r56l8r64l8s40l8s48l8
 - ___block_descriptor_80_e8_32s40s48bs56bs_e5_v8?0ls32l8s40l8s48l8s56l8
 - ___block_descriptor_88_e8_32s40s48s56s_e49_v24?0"<BLSHRenderedFlipbookFrame>"8"NSError"16ls32l8s40l8s48l8s56l8
-- _objc_msgSend$alwaysOnEnabled
-- _objc_msgSend$appendString:
-- _objc_msgSend$changeEvent
-- _objc_msgSend$createStateForEnvironment:delegate:
-- _objc_msgSend$initWithBacklightHost:
-- _objc_msgSend$initWithBacklightState:displayMode:flipbookState:alwaysOnEnabled:
-- _objc_msgSend$initWithIsFlipbook:initialSpecifier:
-- _objc_msgSend$initWithPresentation:backlightState:delegate:inactiveBudgetPolicy:osTimerProvider:platformProvider:
-- _objc_msgSend$initWithSequenceID:backlightState:triggerEvent:backlightRampBlock:forIdentifier:previousTarget:
-- _objc_msgSend$isLowPowerRendering
-- _objc_msgSend$mapTableWithKeyOptions:valueOptions:
-- _objc_msgSend$presentationEngine:didChangeLowPowerRenderingDisabled:
-- _objc_msgSend$setAlwaysOnEnabled:
-- _objc_msgSend$setDateSpecifier:
-- _objc_msgSend$setFlipbookState:
-- _objc_msgSend$setTargetDisplayMode:
-- _objc_msgSend$setWillTransitionBacklightState:
-- _objc_msgSend$updateToDateSpecifier:lowPowerRendering:sceneContentsUpdated:
-- _objc_msgSend$updateToVisualState:presentationDateSpecifier:
-- _objc_msgSend$willTransitionBacklightState
 CStrings:
 + "%p (localHostUpdater) ESM update to visualState:%{public}@ dateSpecifier:%{public}@"
 + "%p:%{public}@ (localHostEnv) caller visualState:%{public}@ != clientEnvVisualState:%{public}@"

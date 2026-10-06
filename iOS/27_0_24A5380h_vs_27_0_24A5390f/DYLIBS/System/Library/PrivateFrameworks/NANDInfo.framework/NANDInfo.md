@@ -2,60 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/NANDInfo.framework/NANDInfo`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__objc_intobj` | `0x10398` | `0x11b50` | **`+0x17b8`** |
+| `__AUTH_CONST.__cfstring` | `0xeba0` | `0xfba0` | **`+0x1000`** |
+| `__DATA_CONST.__objc_arraydata` | `0xc698` | `0xd660` | **`+0xfc8`** |
+| `__TEXT.__cstring` | `0xbb17` | `0xc74c` | **`+0xc35`** |
+| `__TEXT.__text` | `0x1c6ac` | `0x1d298` | **`+0xbec`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x8460` | `0x9030` | **`+0xbd0`** |
+
+### Other Changes
 
 ```diff
 
 -847.0.0.0.0
--  __TEXT.__text: 0x1c6ac
 +849.0.5.0.0
-+  __TEXT.__text: 0x1d298
-   __TEXT.__objc_methlist: 0x344
-   __TEXT.__const: 0x150
--  __TEXT.__cstring: 0xbb17
-+  __TEXT.__cstring: 0xc74c
-   __TEXT.__oslogstring: 0x1171
-   __TEXT.__unwind_info: 0x288
-   __TEXT.__objc_stubs: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x388
-   __DATA_CONST.__objc_superrefs: 0x20
--  __DATA_CONST.__objc_arraydata: 0xc698
-+  __DATA_CONST.__objc_arraydata: 0xd660
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x40
--  __AUTH_CONST.__cfstring: 0xeba0
-+  __AUTH_CONST.__cfstring: 0xfba0
-   __AUTH_CONST.__objc_const: 0x6b8
--  __AUTH_CONST.__objc_intobj: 0x10398
--  __AUTH_CONST.__objc_arrayobj: 0x8460
-+  __AUTH_CONST.__objc_intobj: 0x11b50
-+  __AUTH_CONST.__objc_arrayobj: 0x9030
-   __AUTH_CONST.__objc_dictobj: 0x118
-   __AUTH_CONST.__auth_got: 0x3c0
-   __AUTH.__data: 0x3f0
-
-   - /usr/lib/libobjc.A.dylib
-   Functions: 272
-   Symbols:   556
 -  CStrings:  2255
 +  CStrings:  2383
- 
 Functions:
 ~ _buildFTLStatsArrayDictionary : 25876 -> 28492
 ~ _buildMSPStatsArrayDictionary : 7056 -> 7440

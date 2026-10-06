@@ -2,163 +2,79 @@
 
 > `/System/Library/PrivateFrameworks/VideosUI.framework/VideosUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1051264` | `0x11642e4` | **`+0x113080`** |
+| `__TEXT.__swift5_typeref` | `0x12d438` | `0x13f220` | **`+0x11de8`** |
+| `__TEXT.__eh_frame` | `0x26dec` | `0x30d98` | **`+0x9fac`** |
+| `__AUTH_CONST.__const` | `0x77e28` | `0x804b8` | **`+0x8690`** |
+| `__TEXT.__const` | `0x84c60` | `0x8d250` | **`+0x85f0`** |
+| `__DATA.__bss` | `0x25430` | `0x2b1e0` | **`+0x5db0`** |
+| `__TEXT.__oslogstring` | `0x4b1ad` | `0x5020d` | **`+0x5060`** |
+| `__TEXT.__unwind_info` | `0x31c48` | `0x362d8` | **`+0x4690`** |
+| `__DATA.__data` | `0x22168` | `0x25658` | **`+0x34f0`** |
+| `__TEXT.__constg_swiftt` | `0x3ce64` | `0x3fdac` | **`+0x2f48`** |
+| `__AUTH.__data` | `0x36728` | `0x39418` | **`+0x2cf0`** |
+| `__AUTH_CONST.__objc_const` | `0x88e20` | `0x8bb10` | **`+0x2cf0`** |
+| `__TEXT.__swift5_capture` | `0x17860` | `0x1a1cc` | **`+0x296c`** |
+| `__TEXT.__cstring` | `0x35a16` | `0x37d36` | **`+0x2320`** |
+| `__TEXT.__swift5_fieldmd` | `0x29ec4` | `0x2bf28` | **`+0x2064`** |
+| `__TEXT.__swift5_reflstr` | `0x37101` | `0x38f11` | **`+0x1e10`** |
+| `__AUTH.__objc_data` | `0x1cae8` | `0x1e4e8` | **`+0x1a00`** |
+| `__TEXT.__objc_methlist` | `0x33a2c` | `0x34684` | **`+0xc58`** |
+| `__TEXT.__swift_as_cont` | `0x1d08` | `0x26b4` | **`+0x9ac`** |
+| `__DATA_CONST.__objc_selrefs` | `0x18f48` | `0x196a8` | **`+0x760`** |
+| `__TEXT.__swift5_assocty` | `0x5e90` | `0x6460` | **`+0x5d0`** |
+| `__AUTH_CONST.__auth_got` | `0x6c68` | `0x7110` | **`+0x4a8`** |
+| `__TEXT.__swift_as_ret` | `0xce8` | `0x10d4` | **`+0x3ec`** |
+| `__AUTH_CONST.__cfstring` | `0x1b6e0` | `0x1bac0` | **`+0x3e0`** |
+| `__TEXT.__swift_as_entry` | `0xbf0` | `0xf88` | **`+0x398`** |
+| `__DATA_CONST.__got` | `0x5c48` | `0x5fd0` | **`+0x388`** |
+| `__TEXT.__gcc_except_tab` | `0x8bf8` | `0x8f34` | **`+0x33c`** |
+| `__TEXT.__swift5_proto` | `0x27b4` | `0x2a94` | **`+0x2e0`** |
+| `__TEXT.__swift5_types` | `0x2414` | `0x2668` | **`+0x254`** |
+| `__DATA_DIRTY.__objc_data` | `0x275b0` | `0x277c8` | **`+0x218`** |
+| `__DATA_CONST.__objc_classlist` | `0x30f0` | `0x3260` | **`+0x170`** |
+| `__DATA.__common` | `0x1b40` | `0x1c78` | **`+0x138`** |
+| `__DATA_CONST.__const` | `0x9058` | `0x9150` | **`+0xf8`** |
+| `__TEXT.__swift5_builtin` | `0x938` | `0xa28` | **`+0xf0`** |
+| `__DATA_DIRTY.__data` | `0x69b28` | `0x69a88` | **`-0xa0`** |
+| `__DATA_DIRTY.__bss` | `0x205d0` | `0x20550` | **`-0x80`** |
+| `__TEXT.__swift5_mpenum` | `0x138` | `0x190` | **`+0x58`** |
+| `__DATA.__objc_ivar` | `0x2e40` | `0x2e80` | **`+0x40`** |
+| `__DATA.__objc_stublist` | `0x28` | `0x40` | **`+0x18`** |
+| `__DATA_CONST.__objc_protorefs` | `0x660` | `0x670` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0xcb8` | `0xca8` | **`-0x10`** |
+| `__TEXT.__swift5_protos` | `0x2d0` | `0x2e0` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0xd28` | `0xd30` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1145.1.3.0.0
--  __TEXT.__text: 0xfdb9b0
--  __TEXT.__objc_methlist: 0x33a2c
--  __TEXT.__cstring: 0x35a16
--  __TEXT.__const: 0x84c60
--  __TEXT.__oslogstring: 0x4b1ad
--  __TEXT.__gcc_except_tab: 0x8bf8
 +1145.10.20.0.0
-+  __TEXT.__text: 0x10e12d0
-+  __TEXT.__objc_methlist: 0x34684
-+  __TEXT.__cstring: 0x37d36
-+  __TEXT.__const: 0x8d250
-+  __TEXT.__oslogstring: 0x5020d
-+  __TEXT.__gcc_except_tab: 0x8f34
-   __TEXT.__ustring: 0xd2
-   __TEXT.__dlopen_cstrs: 0x6d
--  __TEXT.__constg_swiftt: 0x3ce64
--  __TEXT.__swift5_typeref: 0x12d438
--  __TEXT.__swift5_reflstr: 0x37101
--  __TEXT.__swift5_fieldmd: 0x29ec4
--  __TEXT.__swift5_builtin: 0x938
--  __TEXT.__swift5_assocty: 0x5e90
--  __TEXT.__swift5_proto: 0x27b4
--  __TEXT.__swift5_types: 0x2414
--  __TEXT.__swift5_capture: 0x17860
--  __TEXT.__swift5_protos: 0x2d0
--  __TEXT.__swift5_mpenum: 0x138
--  __TEXT.__swift_as_entry: 0xbf0
--  __TEXT.__swift_as_ret: 0xce8
--  __TEXT.__swift_as_cont: 0x1d08
--  __TEXT.__unwind_info: 0x3e3c0
--  __TEXT.__eh_frame: 0x26ddc
-+  __TEXT.__constg_swiftt: 0x3fdac
-+  __TEXT.__swift5_typeref: 0x13f220
-+  __TEXT.__swift5_reflstr: 0x38f11
-+  __TEXT.__swift5_fieldmd: 0x2bf28
-+  __TEXT.__swift5_builtin: 0xa28
-+  __TEXT.__swift5_assocty: 0x6460
-+  __TEXT.__swift5_proto: 0x2a94
-+  __TEXT.__swift5_types: 0x2668
-+  __TEXT.__swift5_capture: 0x1a1cc
-+  __TEXT.__swift_as_entry: 0xf88
-+  __TEXT.__swift_as_ret: 0x10d4
-+  __TEXT.__swift_as_cont: 0x26b4
-+  __TEXT.__swift5_protos: 0x2e0
-+  __TEXT.__swift5_mpenum: 0x190
-+  __TEXT.__unwind_info: 0x437a8
-+  __TEXT.__eh_frame: 0x30dd8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9058
--  __DATA_CONST.__objc_classlist: 0x30f0
-+  __DATA_CONST.__const: 0x9150
-+  __DATA_CONST.__objc_classlist: 0x3260
-   __DATA_CONST.__objc_catlist: 0x148
--  __DATA_CONST.__objc_protolist: 0xd28
-+  __DATA_CONST.__objc_protolist: 0xd30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x18f48
--  __DATA_CONST.__objc_protorefs: 0x660
--  __DATA_CONST.__objc_superrefs: 0xcb8
-+  __DATA_CONST.__objc_selrefs: 0x196a8
-+  __DATA_CONST.__objc_protorefs: 0x670
-+  __DATA_CONST.__objc_superrefs: 0xca8
-   __DATA_CONST.__objc_arraydata: 0xd70
--  __DATA_CONST.__got: 0x5c48
--  __AUTH_CONST.__const: 0x77e28
--  __AUTH_CONST.__cfstring: 0x1b6e0
--  __AUTH_CONST.__objc_const: 0x88e20
-+  __DATA_CONST.__got: 0x5fd0
-+  __AUTH_CONST.__const: 0x804b8
-+  __AUTH_CONST.__cfstring: 0x1bac0
-+  __AUTH_CONST.__objc_const: 0x8bb10
-   __AUTH_CONST.__objc_intobj: 0x2268
-   __AUTH_CONST.__objc_arrayobj: 0x3c0
-   __AUTH_CONST.__objc_doubleobj: 0x220
-   __AUTH_CONST.__objc_dictobj: 0x578
--  __AUTH_CONST.__auth_got: 0x6c68
--  __AUTH.__objc_data: 0x1cae8
--  __AUTH.__data: 0x36728
--  __DATA.__objc_ivar: 0x2e40
--  __DATA.__data: 0x22170
--  __DATA.__objc_stublist: 0x28
--  __DATA.__common: 0x1b40
--  __DATA_DIRTY.__objc_data: 0x275b0
--  __DATA_DIRTY.__data: 0x69b28
--  __DATA_DIRTY.__bss: 0x205d0
-+  __AUTH_CONST.__auth_got: 0x7110
-+  __AUTH.__objc_data: 0x1e4e8
-+  __AUTH.__data: 0x39418
-+  __DATA.__objc_ivar: 0x2e80
-+  __DATA.__data: 0x25660
-+  __DATA.__objc_stublist: 0x40
-+  __DATA.__common: 0x1c78
-+  __DATA_DIRTY.__objc_data: 0x277c8
-+  __DATA_DIRTY.__data: 0x69a88
-+  __DATA_DIRTY.__bss: 0x20550
-   __DATA_DIRTY.__common: 0x1a78
-   - /System/Library/Frameworks/ARKit.framework/ARKit
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
 
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreHaptics.framework/CoreHaptics
 +  - /System/Library/Frameworks/CoreImage.framework/CoreImage
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/CoreText.framework/CoreText
+
 +  - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
-   - /System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation
-   - /System/Library/Frameworks/ExtensionKit.framework/ExtensionKit
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-   - /System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore
-   - /System/Library/Frameworks/LinkPresentation.framework/LinkPresentation
 +  - /System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication
-   - /System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
-   - /System/Library/Frameworks/MusicKit.framework/MusicKit
-   - /System/Library/Frameworks/Network.framework/Network
 
-   - /System/Library/Frameworks/TipKit.framework/TipKit
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/Frameworks/UserNotifications.framework/UserNotifications
 +  - /System/Library/Frameworks/Vision.framework/Vision
-   - /System/Library/Frameworks/WebKit.framework/WebKit
-   - /System/Library/Frameworks/_AVKit_SwiftUI.framework/_AVKit_SwiftUI
-   - /System/Library/Frameworks/_AppIntents_SwiftUI.framework/_AppIntents_SwiftUI
-   - /System/Library/Frameworks/_AppIntents_UIKit.framework/_AppIntents_UIKit
+
 +  - /System/Library/Frameworks/_MediaPlayer_AppIntents.framework/_MediaPlayer_AppIntents
-   - /System/Library/PrivateFrameworks/AirTraffic.framework/AirTraffic
-   - /System/Library/PrivateFrameworks/AppStoreComponents.framework/AppStoreComponents
-   - /System/Library/PrivateFrameworks/AppStoreDaemon.framework/AppStoreDaemon
 
-   - /System/Library/PrivateFrameworks/AsyncAlgorithmsInternal.framework/AsyncAlgorithmsInternal
-   - /System/Library/PrivateFrameworks/AttentionAwareness.framework/AttentionAwareness
-   - /System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore
 +  - /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit
-   - /System/Library/PrivateFrameworks/BiomeLibrary.framework/BiomeLibrary
-   - /System/Library/PrivateFrameworks/CacheDelete.framework/CacheDelete
-   - /System/Library/PrivateFrameworks/CarPlayServices.framework/CarPlayServices
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 84773
--  Symbols:   55801
+-  Functions: 84776
+-  Symbols:   46052
 -  CStrings:  12141
-+  Functions: 91015
-+  Symbols:   57546
++  Functions: 91020
++  Symbols:   47620
 +  CStrings:  12633
- 
 Symbols:
 + +[VUIAuthenticationManager mainAccountDSID]
 + +[VUIUniversalAssetController initialize]
@@ -966,194 +882,6 @@ Symbols:
 + _kCIContextPriorityRequestLow
 + _kCIInputBackgroundImageKey
 + _kCIInputImageKey
-+ _objc_msgSend$CIImage
-+ _objc_msgSend$_adamIDStringForNotifications
-+ _objc_msgSend$_adjustGenresLabelWidthIfNeeded:computationOnly:
-+ _objc_msgSend$_clearStyle
-+ _objc_msgSend$_currentPlayerViewSize
-+ _objc_msgSend$_didAccountMetadataChange:newAccount:
-+ _objc_msgSend$_downloadOwnerDSID
-+ _objc_msgSend$_getSPBulkChannelsWithCompletion:
-+ _objc_msgSend$_isLegacyDownload:
-+ _objc_msgSend$_isSignLanguageMenuInOverflow
-+ _objc_msgSend$_mainAccountDSID
-+ _objc_msgSend$_migrateOwnerProfilesForLegacyDownloads
-+ _objc_msgSend$_migratePerUserPlaybackDataForLegacyDownloads
-+ _objc_msgSend$_perUserPlaybackDataForActiveProfileCreatingIfNeeded:
-+ _objc_msgSend$_performAMSSponsorAuthWithCompletion:
-+ _objc_msgSend$_pinSignLanguageMenuElementOrder
-+ _objc_msgSend$_removeSignLanguageControlItemIfNeeded
-+ _objc_msgSend$_resolvedSidebandBookmarkTime:
-+ _objc_msgSend$_setSignLanguageOverflowMenuItems:
-+ _objc_msgSend$_shouldPlaceSignLanguageMenuInOverflowForSize:
-+ _objc_msgSend$_startListeningForChangesToLegacyDownloads:
-+ _objc_msgSend$_startSPBulkConsentFlowWithTitleKey:localizedTitleContainsAppsCount:completion:
-+ _objc_msgSend$_stopListeningForChangesToLegacyDownloads:
-+ _objc_msgSend$_updateMainAccountDSID
-+ _objc_msgSend$_updateSignLanguageControlItem
-+ _objc_msgSend$_updateSnapshotForBackgroundApplication:
-+ _objc_msgSend$_updateUserSettings:
-+ _objc_msgSend$accounts
-+ _objc_msgSend$activateIfNeeded
-+ _objc_msgSend$activeProfileBookmark
-+ _objc_msgSend$addAnimations:
-+ _objc_msgSend$addOwnerProfilesObject:
-+ _objc_msgSend$ageCategory
-+ _objc_msgSend$altDSID
-+ _objc_msgSend$alwaysShowProfileSelection
-+ _objc_msgSend$ams_fetchProfileLockStatusWithTimeout:returningStaleData:
-+ _objc_msgSend$ams_firstName
-+ _objc_msgSend$ams_sponsorAccount
-+ _objc_msgSend$authContextWithSponsor:simpleProfileContext:
-+ _objc_msgSend$authKitAccountWithAltDSID:error:
-+ _objc_msgSend$authenticateWithContext:completion:
-+ _objc_msgSend$avMediaSelectionOption
-+ _objc_msgSend$canCreateSimpleProfilesForAccount:
-+ _objc_msgSend$canEvaluatePolicy:error:
-+ _objc_msgSend$checkForProfileRestrictionChanges
-+ _objc_msgSend$checkShouldShowWithCompletion:
-+ _objc_msgSend$checking
-+ _objc_msgSend$clearStaleDataIfNeeded
-+ _objc_msgSend$createCGImage:fromRect:
-+ _objc_msgSend$currentlyShowing
-+ _objc_msgSend$deeplinkOptionsToShowAfterProfileScreen
-+ _objc_msgSend$deeplinkToShowAfterProfileScreen
-+ _objc_msgSend$dismissSplash
-+ _objc_msgSend$downloadStateForDSID:
-+ _objc_msgSend$editToken
-+ _objc_msgSend$evaluatePolicy:localizedReason:reply:
-+ _objc_msgSend$extendedLanguageCode
-+ _objc_msgSend$extent
-+ _objc_msgSend$fetchODJBadgingAppLevelSheet
-+ _objc_msgSend$fetchUpgradeURLForSponsor:forSimpleProfile:completion:
-+ _objc_msgSend$filterWithName:
-+ _objc_msgSend$finishedProfileScreenCheck:shouldProceed:errorString:
-+ _objc_msgSend$glyph
-+ _objc_msgSend$groupTitle
-+ _objc_msgSend$handleProfileScreenCheckCompletionOrContinueDeeplink
-+ _objc_msgSend$handleTap
-+ _objc_msgSend$hasDeeplinkToShowAfterProfileScreen
-+ _objc_msgSend$hasHandledActiveAccountChange
-+ _objc_msgSend$hasSignLanguage
-+ _objc_msgSend$imageByApplyingFilter:withInputParameters:
-+ _objc_msgSend$imageByApplyingTransform:
-+ _objc_msgSend$imageByCroppingToRect:
-+ _objc_msgSend$imageDescription
-+ _objc_msgSend$imageGroups
-+ _objc_msgSend$imageID
-+ _objc_msgSend$imageId
-+ _objc_msgSend$initWithAccount:presentingViewController:options:
-+ _objc_msgSend$initWithAdamID:videoManagedObject:isForStartingDownload:profileDSID:
-+ _objc_msgSend$initWithAltDSID:
-+ _objc_msgSend$initWithBounds:
-+ _objc_msgSend$initWithCGImage:
-+ _objc_msgSend$initWithCIImage:options:
-+ _objc_msgSend$initWithCVPixelBuffer:
-+ _objc_msgSend$initWithChannelID:accessStatus:displayName:externalID:
-+ _objc_msgSend$initWithControlPoint1:controlPoint2:
-+ _objc_msgSend$initWithMPMediaItem:videoManagedObject:isForStartingDownload:profileDSID:
-+ _objc_msgSend$initWithOptions:
-+ _objc_msgSend$initWithPlaybackContext:mpMediaItems:profileDSID:
-+ _objc_msgSend$initWithProfileName:sponsorAltDSID:imageID:ageCategory:
-+ _objc_msgSend$initWithSPBulkConsentUserAccepted:
-+ _objc_msgSend$isDefault
-+ _objc_msgSend$isFirstResponder
-+ _objc_msgSend$isLocalForActiveProfile
-+ _objc_msgSend$isPadOrPhoneWithLandscapeSupport
-+ _objc_msgSend$isPaginationTransitionInProgress
-+ _objc_msgSend$isQuoteHiddenByVideo
-+ _objc_msgSend$isSuccess
-+ _objc_msgSend$itemID
-+ _objc_msgSend$lastBackgroundDate
-+ _objc_msgSend$lastHandledActiveAccountAltDSID
-+ _objc_msgSend$lastReportedPlayerViewSize
-+ _objc_msgSend$leaveSessionPreservingPlayback
-+ _objc_msgSend$linkProfileWithDSID:
-+ _objc_msgSend$mainAccount
-+ _objc_msgSend$mainAccountDSID
-+ _objc_msgSend$menuAccessibilityIdentifier
-+ _objc_msgSend$menuFor:
-+ _objc_msgSend$menuTitle
-+ _objc_msgSend$nowPlayingInfo
-+ _objc_msgSend$outputImage
-+ _objc_msgSend$ownerProfiles
-+ _objc_msgSend$owningProfile
-+ _objc_msgSend$pendingDeeplinkIsFromSelf
-+ _objc_msgSend$performRequests:error:
-+ _objc_msgSend$pixelBuffer
-+ _objc_msgSend$playbackData
-+ _objc_msgSend$playbackDataForVideo:owningProfile:inContext:
-+ _objc_msgSend$playbackPositionWithCompletion:
-+ _objc_msgSend$populateExtensionDataStore
-+ _objc_msgSend$presentWithViewModel:isStartup:
-+ _objc_msgSend$presenterForPrivacySplashWithIdentifer:
-+ _objc_msgSend$previousMainAccountDSID
-+ _objc_msgSend$primitiveValueForKey:
-+ _objc_msgSend$processStoredODJBadgingRequestActions
-+ _objc_msgSend$profileForActiveDSIDInContext:
-+ _objc_msgSend$profileForDSID:creatingIfDoesNotExist:inContext:
-+ _objc_msgSend$profileImagesWithCompletion:
-+ _objc_msgSend$profileIsTheOnlyOwnerOrHasNoOwners:managedObject:
-+ _objc_msgSend$profileName
-+ _objc_msgSend$profileSplashscreenState
-+ _objc_msgSend$reloadOfflineUI
-+ _objc_msgSend$removeOwnerProfilesObject:
-+ _objc_msgSend$selectWithAccountAltDSID:sponsorAltDSID:authenticator:completion:
-+ _objc_msgSend$selectedVideoOption
-+ _objc_msgSend$sendRequestWithCanonicalID:action:confirmationShouldWaitCompletion:triggeredFromIntent:
-+ _objc_msgSend$setAgeCategory:
-+ _objc_msgSend$setAlwaysShowProfileSelection:
-+ _objc_msgSend$setAutocorrectionType:
-+ _objc_msgSend$setChecking:
-+ _objc_msgSend$setDeeplinkOptionsToShowAfterProfileScreen:
-+ _objc_msgSend$setDeeplinkToShowAfterProfileScreen:
-+ _objc_msgSend$setDelegateAuthEnabled:
-+ _objc_msgSend$setHasBeenMigratedToSimpleProfiles:
-+ _objc_msgSend$setHasDeeplinkToShowAfterProfileScreen:
-+ _objc_msgSend$setHasHandledActiveAccountChange:
-+ _objc_msgSend$setImageID:
-+ _objc_msgSend$setIsPaginationTransitionInProgress:
-+ _objc_msgSend$setIsQuoteHiddenByVideo:
-+ _objc_msgSend$setLastBackgroundDate:
-+ _objc_msgSend$setLastHandledActiveAccountAltDSID:
-+ _objc_msgSend$setLastReportedPlayerViewSize:
-+ _objc_msgSend$setNextEpisodeSettingValue:
-+ _objc_msgSend$setNowPlayingInfo:
-+ _objc_msgSend$setOnSplashCompletion:
-+ _objc_msgSend$setOwningProfile:
-+ _objc_msgSend$setPendingDeeplinkIsFromSelf:
-+ _objc_msgSend$setPreferredMenuElementOrder:
-+ _objc_msgSend$setPreviousMainAccountDSID:
-+ _objc_msgSend$setPrimitiveValue:forKey:
-+ _objc_msgSend$setProfileName:
-+ _objc_msgSend$setRecommendedItemsSettingValue:
-+ _objc_msgSend$setRevision:
-+ _objc_msgSend$setSelectedVideoOption:
-+ _objc_msgSend$setSettings:completion:
-+ _objc_msgSend$setSignLanguageControlItem:
-+ _objc_msgSend$setSignLanguageMenuSignature:
-+ _objc_msgSend$setTextContentType:
-+ _objc_msgSend$setTransportBarCustomMenuItems:
-+ _objc_msgSend$setViewModel:
-+ _objc_msgSend$setupSimpleProfilesObserversWithLibrary:
-+ _objc_msgSend$signLanguageControlItem
-+ _objc_msgSend$signLanguageMenuSignature
-+ _objc_msgSend$signatureFor:
-+ _objc_msgSend$simpleProfilesForAccount:
-+ _objc_msgSend$splashscreenBackgroundTimeout
-+ _objc_msgSend$sponsorAccount
-+ _objc_msgSend$sponsorAltDSID
-+ _objc_msgSend$storedODJBadgeRequestCount
-+ _objc_msgSend$switchToMainAccountWithCompletion:
-+ _objc_msgSend$topEdgeEffect
-+ _objc_msgSend$transportBarCustomMenuItems
-+ _objc_msgSend$tvp_signLanguageOptionMatchingLanguage:inOptions:
-+ _objc_msgSend$unlinkProfileWithDSID:
-+ _objc_msgSend$updateGridLayoutIfNeeded
-+ _objc_msgSend$videoOptions
-+ _objc_msgSend$viewModel
-+ _objc_msgSend$vui_isLocalForDSID:checkingSidebandLibrary:
-+ _objc_msgSend$vui_isLocalforActiveProfileCheckingSidebandLibrary:
 + _sPointerEqualAdamIDStrings
 + _swift_readAtKeyPath
 + _swift_setAtWritableKeyPath
@@ -2698,17 +2426,6 @@ Symbols:
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAA15ModifiedContentVyAIyAA6VStackVyAA05TupleK0VyAIyAA012_ConditionalK0VyAOyAOyAOy06VideosB0021VisibilityRestrictionC0VAOyAOyAP012StandardTextC033_9F6E14765133CE7217CD769C78AD854CLLVAP011DescriptionsC0ATLLVGAA05EmptyC0VGGAOyAOyAOyAOyAP010AsyncImageC0VAZGAP14CompositeImageVGAZGAP011SportsStatsC0VGGAOyAOyAP09TeamStatsC0VAP011PlayerStatsC0VGAOyAOyAOyAOyAP0S5BadgeVAP024SportsPortableScoreboardC0VGAOyAzA6SpacerVGGAOyAOyAP021LeagueStandingsLegendC0VAP010LeagueRankC0VGAOyAOyA27_AZGAA7DividerVGGGAZGGGAIyA39_AA0G18AttachmentModifierVGGAA16_FixedSizeLayoutVGSg_AOyAIyAOyAP013BaseballClockC0VAIyA49_A41_GGAA16_FlexFrameLayoutVGAIyAOyAP011SportsClockC0VAIyA56_A41_GGA53_GGQPGGAA12_FrameLayoutVGAA14_PaddingLayoutVG_Qo_HO
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAA15ModifiedContentVyAIyAA6VStackVyAA05TupleK0VyAIyAA012_ConditionalK0VyAOyAOyAOy06VideosB0021VisibilityRestrictionC0VAOyAOyAP012StandardTextC033_9F6E14765133CE7217CD769C78AD854CLLVAP011DescriptionsC0ATLLVGAA05EmptyC0VGGAOyAOyAOyAOyAP010AsyncImageC0VAZGAP14CompositeImageVGAZGAP011SportsStatsC0VGGAOyAOyAP09TeamStatsC0VAP011PlayerStatsC0VGAOyAOyAOyAOyAP0S5BadgeVAP024SportsPortableScoreboardC0VGAOyAzA6SpacerVGGAOyAOyAP021LeagueStandingsLegendC0VAP010LeagueRankC0VGAOyAOyA27_AZGAA7DividerVGGGAZGGGAIyA39_AA0G18AttachmentModifierVGGAA16_FixedSizeLayoutVGSg_AOyAIyAOyAP013BaseballClockC0VAIyA49_A41_GGAA16_FlexFrameLayoutVGAIyAOyAP011SportsClockC0VAIyA56_A41_GGA53_GGQPGGAA12_FrameLayoutVGAA14_PaddingLayoutVG_Qo_HOTm
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA15ModifiedContentVyAA6ZStackVyAA012_ConditionalJ0VyAKyAOyAOyAOy06VideosB0021VisibilityRestrictionC0VAOyAOyAP012StandardTextC033_9F6E14765133CE7217CD769C78AD854CLLVAP011DescriptionqC0ATLLVGAA05EmptyC0VGGAOyAOyAOyAOyAP010AsyncImageC0VAZGAP14CompositeImageVGAZGAP011SportsStatsC0VGGAOyAOyAP09TeamStatsC0VAP011PlayerStatsC0VGAOyAOyAOyAOyAP0Q5BadgeVAP024SportsPortableScoreboardC0VGAOyAzA6SpacerVGGAOyAOyAP021LeagueStandingsLegendC0VAP010LeagueRankC0VGAOyAOyA27_AZGAA7DividerVGGGAZGGGAA21_TraitWritingModifierVyAA18TransitionTraitKeyVGGAZGGAA18_AnimationModifierVySbGG_Qo_HO
-- _objc_msgSend$ARQLPreview
-- _objc_msgSend$GDPRProceed
-- _objc_msgSend$_addQuoteImageViewIfNeeded
-- _objc_msgSend$_adjustGenresLabelWidthIfNeeded:
-- _objc_msgSend$acceptGDPRAndSyncWithServersWithCompletion:
-- _objc_msgSend$backgroundTaskManager
-- _objc_msgSend$isPurchase
-- _objc_msgSend$reportTVAppWillPlayAttempt:
-- _objc_msgSend$sendRequestWithCanonicalID:action:confirmationShouldWaitCompletion:
-- _objc_msgSend$setBackgroundTaskManager:
-- _objc_msgSend$shouldNowPlayingWindowDismiss
 - _symbolic SDySiSDy_____Say_____GSaySo22AVPlayerViewControllerCG______S3b_____SgtcGGSg So028VUIMultiPlayerViewControllerB12DistributionV So6CGRectV So6CGSizeV 12CoreGraphics7CGFloatV
 - _symbolic SDy_____Say_____GSaySo22AVPlayerViewControllerCG______S3b_____SgtcG So028VUIMultiPlayerViewControllerB12DistributionV So6CGRectV So6CGSizeV 12CoreGraphics7CGFloatV
 - _symbolic SaySo22AVPlayerViewControllerCG_____S3b_____SgSay_____GIeggyyyyyo_ So6CGSizeV 12CoreGraphics7CGFloatV So6CGRectV

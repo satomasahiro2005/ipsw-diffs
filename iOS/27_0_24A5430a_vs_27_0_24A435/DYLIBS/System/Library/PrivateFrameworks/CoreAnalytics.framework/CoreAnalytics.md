@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2b504` | `0x2b514` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x780` | `0x788` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 569.0.5.0.0
--  __TEXT.__text: 0x2b504
-+  __TEXT.__text: 0x2b514
-   __TEXT.__objc_methlist: 0x25c
-   __TEXT.__gcc_except_tab: 0x3838
-   __TEXT.__const: 0x1c92
-
-   __AUTH_CONST.__cfstring: 0x1c0
-   __AUTH_CONST.__objc_const: 0x3a0
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__auth_got: 0x780
-+  __AUTH_CONST.__auth_got: 0x788
-   __AUTH.__objc_data: 0xa0
-   __DATA.__objc_ivar: 0x20
-   __DATA.__data: 0x100
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   Functions: 818
--  Symbols:   1355
-+  Symbols:   1356
-   CStrings:  461
- 
+-  Symbols:   1311
++  Symbols:   1312
 Symbols:
 + _swift_release_x27
 Functions:

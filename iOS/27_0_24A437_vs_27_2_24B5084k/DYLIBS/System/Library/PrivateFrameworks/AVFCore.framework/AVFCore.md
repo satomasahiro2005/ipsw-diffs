@@ -2,92 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/AVFCore.framework/AVFCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c9de0` | `0x21f668` | **`+0x55888`** |
+| `__TEXT.__oslogstring` | `0x50d1` | `0x20bd4` | **`+0x1bb03`** |
+| `__TEXT.__cstring` | `0x26f43` | `0x35993` | **`+0xea50`** |
+| `__TEXT.__gcc_except_tab` | `0xa024` | `0xb444` | **`+0x1420`** |
+| `__AUTH_CONST.__cfstring` | `0x1a720` | `0x1ab60` | **`+0x440`** |
+| `__TEXT.__unwind_info` | `0xa520` | `0xa7b8` | **`+0x298`** |
+| `__DATA.__common` | `0x1e0` | `0x450` | **`+0x270`** |
+| `__AUTH_CONST.__objc_const` | `0x329d8` | `0x32b88` | **`+0x1b0`** |
+| `__DATA_DIRTY.__common` | `0x1e0` | `0x2e0` | **`+0x100`** |
+| `__TEXT.__objc_methlist` | `0x1c144` | `0x1c244` | **`+0x100`** |
+| `__TEXT.__const` | `0x1e48` | `0x1f38` | **`+0xf0`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb5c0` | `0xb690` | **`+0xd0`** |
+| `__DATA_CONST.__const` | `0x5bb8` | `0x5c20` | **`+0x68`** |
+| `__AUTH.__objc_data` | `0x8e88` | `0x8ed8` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x2040` | `0x2078` | **`+0x38`** |
+| `__DATA.__bss` | `0x1410` | `0x13e0` | **`-0x30`** |
+| `__DATA_DIRTY.__bss` | `0x1e1` | `0x211` | **`+0x30`** |
+| `__DATA.__data` | `0x183c` | `0x185c` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x27e0` | `0x27f4` | **`+0x14`** |
+| `__DATA_CONST.__got` | `0x4850` | `0x4858` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x1238` | `0x1240` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0xd68` | `0xd70` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2450.77.1.1.0
--  __TEXT.__text: 0x1bcb30
 +2475.7.1.0.0
-+  __TEXT.__text: 0x212524
-   __TEXT.__delay_helper: 0x1bc
--  __TEXT.__objc_methlist: 0x1c144
--  __TEXT.__cstring: 0x26f43
--  __TEXT.__gcc_except_tab: 0xa024
--  __TEXT.__const: 0x1e48
--  __TEXT.__oslogstring: 0x50d1
-+  __TEXT.__objc_methlist: 0x1c244
-+  __TEXT.__cstring: 0x35993
-+  __TEXT.__const: 0x1f38
-+  __TEXT.__gcc_except_tab: 0xb444
-+  __TEXT.__oslogstring: 0x20bd4
-   __TEXT.__ustring: 0x18
-   __TEXT.__dlopen_cstrs: 0x56
-   __TEXT.__swift5_typeref: 0x40d
 
-   __TEXT.__swift5_proto: 0x6c
-   __TEXT.__swift5_types: 0x48
-   __TEXT.__swift5_capture: 0x60
--  __TEXT.__unwind_info: 0xc4a8
-+  __TEXT.__unwind_info: 0xc788
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x5bb8
--  __DATA_CONST.__objc_classlist: 0x1238
-+  __DATA_CONST.__const: 0x5c20
-+  __DATA_CONST.__objc_classlist: 0x1240
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x1e0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb5c0
-+  __DATA_CONST.__objc_selrefs: 0xb690
-   __DATA_CONST.__objc_protorefs: 0x60
--  __DATA_CONST.__objc_superrefs: 0xd68
-+  __DATA_CONST.__objc_superrefs: 0xd70
-   __DATA_CONST.__objc_arraydata: 0x310
--  __DATA_CONST.__got: 0x4850
-+  __DATA_CONST.__got: 0x4858
-   __AUTH_CONST.__const: 0x1258
--  __AUTH_CONST.__cfstring: 0x1a720
--  __AUTH_CONST.__objc_const: 0x329d8
-+  __AUTH_CONST.__cfstring: 0x1ab60
-+  __AUTH_CONST.__objc_const: 0x32b88
-   __AUTH_CONST.__objc_intobj: 0x288
-   __AUTH_CONST.__objc_arrayobj: 0x360
-   __AUTH_CONST.__objc_doubleobj: 0x30
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x2040
--  __AUTH.__objc_data: 0x8e88
-+  __AUTH_CONST.__auth_got: 0x2078
-+  __AUTH.__objc_data: 0x8ed8
-   __AUTH.__data: 0x1f0
--  __DATA.__objc_ivar: 0x27e0
--  __DATA.__data: 0x183c
-+  __DATA.__objc_ivar: 0x27f4
-+  __DATA.__data: 0x185c
-   __DATA.__crash_info: 0x148
--  __DATA.__common: 0x1e0
-+  __DATA.__common: 0x450
-   __DATA_DIRTY.__objc_data: 0x2828
--  __DATA_DIRTY.__common: 0x1e0
--  __DATA_DIRTY.__bss: 0x1e1
-+  __DATA_DIRTY.__common: 0x2e0
-+  __DATA_DIRTY.__bss: 0x211
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVRouting.framework/AVRouting
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12084
--  Symbols:   28390
+-  Symbols:   23940
 -  CStrings:  4306
 +  Functions: 12665
-+  Symbols:   28486
++  Symbols:   24018
 +  CStrings:  6527
- 
 Symbols:
 + -[AVActivityProgressClient unfailActivityForTaskID:]
 + -[AVAssetDownloadLiveActivity _subtitleForCompleted:failed:]
@@ -298,41 +252,6 @@ Symbols:
 + _gAVUtilitiesTrace
 + _gScheduledParameterRampTrace
 + _kFigVideoCompositorProperty_MaximumPendingVideoCompositionRequests
-+ _objc_msgSend$_compactDescription
-+ _objc_msgSend$_subtitleForCompleted:failed:
-+ _objc_msgSend$_unsafeClientStateForDownload:
-+ _objc_msgSend$activityFailed
-+ _objc_msgSend$byteProgress
-+ _objc_msgSend$colorSpace
-+ _objc_msgSend$download
-+ _objc_msgSend$externalContentProtectionStatus
-+ _objc_msgSend$failActivityForIdentifier:
-+ _objc_msgSend$failActivityForTaskID:
-+ _objc_msgSend$fractionCompleted
-+ _objc_msgSend$initWithDownload:
-+ _objc_msgSend$lastPublishedSubtitle
-+ _objc_msgSend$lastPublishedTitle
-+ _objc_msgSend$liveActivityAssetTitle
-+ _objc_msgSend$liveActivityBytesExpectedToWrite
-+ _objc_msgSend$liveActivityBytesWritten
-+ _objc_msgSend$liveActivityClientBundleIdentifier
-+ _objc_msgSend$liveActivityDownloadIdentifier
-+ _objc_msgSend$liveActivityRequestsCancellation
-+ _objc_msgSend$maximumPendingVideoCompositionRequests
-+ _objc_msgSend$pathWithComponents:
-+ _objc_msgSend$setActivityFailed:
-+ _objc_msgSend$setAssetTitle:
-+ _objc_msgSend$setBorderColor:
-+ _objc_msgSend$setBorderWidth:
-+ _objc_msgSend$setDownload:
-+ _objc_msgSend$setLastPublishedSubtitle:
-+ _objc_msgSend$setLastPublishedTitle:
-+ _objc_msgSend$setState:
-+ _objc_msgSend$state
-+ _objc_msgSend$subarrayWithRange:
-+ _objc_msgSend$unfailActivityForIdentifier:
-+ _objc_msgSend$unfailActivityForTaskID:
-+ _objc_msgSend$updateToBytesWritten:bytesExpectedToWrite:
 + _setBounds:.oldRect
 + _stringWithValidatedFormat
 + _stringWithValidatedFormatArg2
@@ -470,23 +389,6 @@ Symbols:
 - _fig_log_get_emitter
 - _kBlockedBundleIdentifiers
 - _kCFErrorDomainCFNetwork
-- _objc_msgSend$_createDownloadIDForSession:
-- _objc_msgSend$_doesTimeResideInPrimarySegment:atTime:timeMappingOut:
-- _objc_msgSend$_registerWithLiveActivityManager
-- _objc_msgSend$_stopUnderlyingDownload
-- _objc_msgSend$_subtitleForCompleted:failed:willRetry:
-- _objc_msgSend$_waitForConfig
-- _objc_msgSend$cancelFromLiveActivity
-- _objc_msgSend$clientBundleIdentifier
-- _objc_msgSend$downloadProgress
-- _objc_msgSend$errorMayBeRetriedByBackgroundSession:
-- _objc_msgSend$isDiscretionary
-- _objc_msgSend$isRetryAttempt
-- _objc_msgSend$notifyProgress:
-- _objc_msgSend$postActivityEvent:forIdentifier:
-- _objc_msgSend$registerDownload:
-- _objc_msgSend$unregisterDownload:terminalStatus:error:
-- _objc_msgSend$willRetryDownloadIDs
 - _sAVPlayerIAPDReadWriteQueue
 - _sParticipatesInSTS
 CStrings:

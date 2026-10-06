@@ -2,26 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/HealthExperienceUI.framework/HealthExperienceUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x617cac` | `0x617e60` | **`+0x1b4`** |
+| `__TEXT.__cstring` | `0x1b841` | `0x1b881` | **`+0x40`** |
+
+### Other Changes
+
 ```diff
 
- 7027.0.72.2.7
--  __TEXT.__text: 0x617cac
-+  __TEXT.__text: 0x617e60
-   __TEXT.__objc_methlist: 0x8a3c
-   __TEXT.__const: 0x32eb4
-   __TEXT.__gcc_except_tab: 0x1e0
--  __TEXT.__cstring: 0x1b841
-+  __TEXT.__cstring: 0x1b881
-   __TEXT.__oslogstring: 0xcbd4
-   __TEXT.__constg_swiftt: 0x2241c
-   __TEXT.__swift5_typeref: 0xffd8
-
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 35748
-   Symbols:   12066
 -  CStrings:  3279
 +  CStrings:  3280
- 
 Functions:
 ~ sub_1d8822aa4 -> sub_1d8fefaa4 : 432 -> 436
 ~ sub_1d882e3ac -> sub_1d8ffb3b0 : 1764 -> 1756

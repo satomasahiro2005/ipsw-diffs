@@ -2,64 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/GridZero.framework/GridZero`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x93a28` | `0x93adc` | **`+0xb4`** |
+| `__AUTH_CONST.__const` | `0x31b0` | `0x31d0` | **`+0x20`** |
+| `__DATA.__bss` | `0x23f8` | `0x2408` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x11a0` | `0x11a8` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7500` | `0x7508` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x2a08` | `0x2a10` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.232.0.0
--  __TEXT.__text: 0x93a28
 +912.0.233.0.0
-+  __TEXT.__text: 0x93adc
-   __TEXT.__objc_methlist: 0xcfc8
-   __TEXT.__const: 0x3078
-   __TEXT.__swift5_typeref: 0x18ae
 
-   __TEXT.__swift_as_cont: 0x18
-   __TEXT.__gcc_except_tab: 0x6ac
-   __TEXT.__ustring: 0x1c
--  __TEXT.__unwind_info: 0x2a08
-+  __TEXT.__unwind_info: 0x2a10
-   __TEXT.__eh_frame: 0x470
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x3a8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7500
-+  __DATA_CONST.__objc_selrefs: 0x7508
-   __DATA_CONST.__objc_protorefs: 0xb0
-   __DATA_CONST.__objc_superrefs: 0x1e0
-   __DATA_CONST.__objc_arraydata: 0x210
-   __DATA_CONST.__got: 0xb78
--  __AUTH_CONST.__const: 0x31b0
-+  __AUTH_CONST.__const: 0x31d0
-   __AUTH_CONST.__cfstring: 0x26e0
-   __AUTH_CONST.__objc_const: 0x18b20
-   __AUTH_CONST.__objc_intobj: 0x210
-   __AUTH_CONST.__objc_arrayobj: 0x138
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x11a0
-+  __AUTH_CONST.__auth_got: 0x11a8
-   __AUTH.__objc_data: 0x21d0
-   __AUTH.__data: 0xc70
-   __DATA.__objc_ivar: 0x14b8
-
-   - /System/Library/PrivateFrameworks/PhotosUIFoundation.framework/PhotosUIFoundation
-   - /System/Library/PrivateFrameworks/Tungsten.framework/Tungsten
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
 +  - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftCore.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5350
--  Symbols:   10426
+-  Symbols:   7641
 +  Functions: 5351
-+  Symbols:   10431
-   CStrings:  664
- 
++  Symbols:   7645
 Symbols:
 + GCC_except_table1496
 + GCC_except_table1516
@@ -93,7 +59,6 @@ Symbols:
 + _PXPhotosContentHardwareRequiresDisableMetalViewDisplayCompositing.onceToken
 + _PXPhotosContentHardwareRequiresDisableMetalViewDisplayCompositing.requiresDisableMetalViewDisplayCompositing
 + ___PXPhotosContentHardwareRequiresDisableMetalViewDisplayCompositing_block_invoke
-+ _objc_msgSend$setDisableMetalViewDisplayCompositing:
 - GCC_except_table1495
 - GCC_except_table1515
 - GCC_except_table1608

@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/Contacts.framework/Contacts`
 
-```diff
+### Section Size Changes
 
- 3844.100.1.0.0
--  __TEXT.__text: 0x2216ec
-+  __TEXT.__text: 0x2216f8
-   __TEXT.__objc_methlist: 0x1be70
-   __TEXT.__const: 0x4c60
-   __TEXT.__gcc_except_tab: 0x3c2c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2216ec` | `0x2216f8` | **`+0xc`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _OUTLINED_FUNCTION_47 -> _OUTLINED_FUNCTION_1 : 12 -> 28
 ~ _OUTLINED_FUNCTION_1 : 28 -> 16

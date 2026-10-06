@@ -2,142 +2,60 @@
 
 > `/System/Library/PrivateFrameworks/AppleAccountUI.framework/AppleAccountUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x36ace8` | `0x3815f8` | **`+0x16910`** |
+| `__AUTH_CONST.__const` | `0x13df0` | `0x14910` | **`+0xb20`** |
+| `__TEXT.__const` | `0x13524` | `0x13ec4` | **`+0x9a0`** |
+| `__TEXT.__swift5_typeref` | `0x1497c` | `0x150da` | **`+0x75e`** |
+| `__AUTH_CONST.__objc_const` | `0x439b8` | `0x44018` | **`+0x660`** |
+| `__DATA.__bss` | `0x10908` | `0x10458` | **`-0x4b0`** |
+| `__TEXT.__swift5_capture` | `0x5f28` | `0x635c` | **`+0x434`** |
+| `__AUTH.__data` | `0x4d78` | `0x5088` | **`+0x310`** |
+| `__TEXT.__oslogstring` | `0x11c9c` | `0x11f8c` | **`+0x2f0`** |
+| `__DATA.__data` | `0x7108` | `0x73e0` | **`+0x2d8`** |
+| `__TEXT.__unwind_info` | `0x79e0` | `0x7cb0` | **`+0x2d0`** |
+| `__TEXT.__constg_swiftt` | `0x7758` | `0x79f8` | **`+0x2a0`** |
+| `__TEXT.__cstring` | `0xb441` | `0xb691` | **`+0x250`** |
+| `__TEXT.__eh_frame` | `0x3090` | `0x325c` | **`+0x1cc`** |
+| `__TEXT.__swift5_fieldmd` | `0x3930` | `0x3afc` | **`+0x1cc`** |
+| `__TEXT.__swift5_reflstr` | `0x3e76` | `0x3fa6` | **`+0x130`** |
+| `__AUTH.__objc_data` | `0x8058` | `0x8108` | **`+0xb0`** |
+| `__TEXT.__swift5_assocty` | `0x11f8` | `0x12a8` | **`+0xb0`** |
+| `__TEXT.__objc_methlist` | `0xc29c` | `0xc33c` | **`+0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6eb0` | `0x6f10` | **`+0x60`** |
+| `__AUTH_CONST.__auth_got` | `0x2508` | `0x2560` | **`+0x58`** |
+| `__TEXT.__swift_as_cont` | `0x3e8` | `0x434` | **`+0x4c`** |
+| `__DATA_CONST.__got` | `0x1d88` | `0x1dc0` | **`+0x38`** |
+| `__TEXT.__swift_as_entry` | `0x2ac` | `0x2e0` | **`+0x34`** |
+| `__TEXT.__swift_as_ret` | `0x268` | `0x29c` | **`+0x34`** |
+| `__TEXT.__swift5_types` | `0x708` | `0x738` | **`+0x30`** |
+| `__TEXT.__swift5_proto` | `0x7e0` | `0x7b4` | **`-0x2c`** |
+| `__DATA_CONST.__objc_classlist` | `0x918` | `0x930` | **`+0x18`** |
+| `__TEXT.__gcc_except_tab` | `0x14c0` | `0x14d8` | **`+0x18`** |
+| `__DATA_CONST.__objc_protolist` | `0x3c8` | `0x3d8` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0xf8` | `0x100` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -579.0.0.0.0
--  __TEXT.__text: 0x36ace8 sha256:68303de0f8fffe2706c9e9bd5b25978327e530e1d1eb870428bff11d8c32efaa
--  __TEXT.__delay_stubs: 0x80 sha256:308fd56dec22384a1f502f2b9f7e2e03e37aec4be339a367de1a34221a2a1f2b
--  __TEXT.__delay_helper: 0x2d0 sha256:8fa7d492e2e56e5d376720107fcce9cad72fafbc4f0648967b28c6feedd84df1
--  __TEXT.__objc_methlist: 0xc29c sha256:2021656acb3324363a0b745e72eb685ad25bd8ab15bdd02de58df50f78507733
--  __TEXT.__cstring: 0xb441 sha256:7a6839b876795d2b31f24fd28c3ee18838a2a53e50f201b6efdf4d0ed9781551
--  __TEXT.__const: 0x13524 sha256:07c4e1f3fd731877f68f0af98be9aa21e6fcc04f24c8be035769873208196576
--  __TEXT.__gcc_except_tab: 0x14c0 sha256:92ec12113f66cacd08512b66b51aaeae687cce8412a5bc812ebd25c38dfaee09
--  __TEXT.__oslogstring: 0x11c9c sha256:e0646ef1fa5c0c836043ddef8a7266baa6ee1b1db5cf74b768f82e39d7e7ca65
--  __TEXT.__dlopen_cstrs: 0x582 sha256:bca289d75058594dcaae248f494b4e549234e227c05091c553a27a0b046de90e
 +581.1.0.0.0
-+  __TEXT.__text: 0x3815f8 sha256:5877a7c6fc9b171575793ec62ba55a98e448f91915273f9c95e84f82c0e1c352
-+  __TEXT.__delay_stubs: 0x80 sha256:9aab4236a7ff0161bab8260d62988d43e9f9c6f9df8a2c693a8ef3ad805ddc18
-+  __TEXT.__delay_helper: 0x2d0 sha256:b1973e3b5f1cdef8ddeb3c7382e37de8f9ee9a976461892ef6843da8610893f0
-+  __TEXT.__objc_methlist: 0xc33c sha256:cc96962b8fa092bcf434acdad606f376a508e1d6d6cb3399155b5b8a6871780f
-+  __TEXT.__cstring: 0xb691 sha256:6307d9600cae53e849e7188154db6963ac9c6bd0e621306e9ecf0f4642b4a716
-+  __TEXT.__const: 0x13ec4 sha256:25dd15e30ea6a186f8d56fe58ada8444c13333a369e6a5017b0deb2d53dbe6eb
-+  __TEXT.__gcc_except_tab: 0x14d8 sha256:a187d224405166f8b382c0c959d5431a147aff01349d12c27f6f2faa473f5656
-+  __TEXT.__oslogstring: 0x11f8c sha256:0c8bee2d54ed868b5376a7b874441d70f6bdfa2f207acc92998670141fd71d82
-+  __TEXT.__dlopen_cstrs: 0x582 sha256:f80929accd9968885870bd2d6db9790450c7cd2ac92a9eb8c946955d7d335450
-   __TEXT.__ustring: 0x4 sha256:709eddfc631541f3ecea46e733bbf3043279bddfb51fdfd7be60efbc2714537e
--  __TEXT.__swift5_typeref: 0x1497c sha256:e880f8bab83fabbf35e67d643bf63232b8204cb0d02d28b72c0b00d03fd07426
--  __TEXT.__constg_swiftt: 0x7758 sha256:3f891ec8b0f4003ed89b46c108c952411a51beed0cdf799f97d64251145a0fef
--  __TEXT.__swift5_fieldmd: 0x3930 sha256:9bd181d0fc1c1bdde311fd55b4c79ab08d114d1808d990f1b3dd588bce8032d9
--  __TEXT.__swift5_types: 0x708 sha256:cec41b68860046aa16d2740eb263b43ee45522aebd6bcc770066412c8f4f9975
--  __TEXT.__swift5_reflstr: 0x3e76 sha256:085a26eba1984f1b82e1fb6b908d2bbea1f6cdd2c57df8bc50f214c7f5bfad3a
--  __TEXT.__swift5_assocty: 0x11f8 sha256:9bed3c92ac0c3dbf7d23328d168049a436e057727d1fbc843c5e9f244dfb0c2d
--  __TEXT.__swift5_proto: 0x7e0 sha256:959a6329263de913963b89f71f667bf86fbc4392b57c712729e57429fc4a83b8
--  __TEXT.__swift5_capture: 0x5f28 sha256:4f4641d0ad69adc4bba974af3bde487b6d4ef0ff53368fc86f23eccd85940c7f
--  __TEXT.__swift_as_entry: 0x2ac sha256:8924f9873959600b76afe734ae5e169cae66ff7216ee0c2398018a522d2f8573
--  __TEXT.__swift_as_ret: 0x268 sha256:f44ce8cb75fb36f753a39f9fb4e3bd5cfe6add9b34d851d51527fa948d977c42
--  __TEXT.__swift_as_cont: 0x3e8 sha256:1840803d4188f26064741b9078cadd23776bb2e42f7c9ce566d58f163cfdd01e
--  __TEXT.__swift5_builtin: 0x26c sha256:101b1911ade329b8d2ebc360aabf7b418852a5e0aaa999647ce1c9d4cdf320dd
--  __TEXT.__swift5_protos: 0x58 sha256:5162da2479dcdb300f864578e7a5a762c08ed5eaa93ab8220f8dd037433de3ee
--  __TEXT.__swift5_mpenum: 0x18 sha256:087c8b03b642194ffefa246a3c9f0d7fa364acbb88bb42d5c593ebc963366d5c
--  __TEXT.__unwind_info: 0x79e0 sha256:4f52ba55c5b2ebb0f03793cd340078997b9b1fb62b084b633817726fca59d118
--  __TEXT.__eh_frame: 0x3090 sha256:4a6cfb64ca31c78e94d7c3edfd3686a7a3d47b7e56bf48a3006f528d69d13ca6
-+  __TEXT.__swift5_typeref: 0x150da sha256:02fd3753fb15a7342bc62799d8f9eeb322fbd54aa64fe81871d357ad48bd4b07
-+  __TEXT.__swift5_capture: 0x635c sha256:dee7455481c6b178591c2e4d64e2f01dafca36030a2e498a2442c87084ef71e7
-+  __TEXT.__swift5_reflstr: 0x3fa6 sha256:dd98d50e11106480e29316fa670a22c7ee4891bf74361180bb8623df7f3870e6
-+  __TEXT.__swift5_assocty: 0x12a8 sha256:450879707b7b9c308be1ae69b9ad79715abe30185a78286fca66c229294bf1a7
-+  __TEXT.__constg_swiftt: 0x79f8 sha256:f3f30308d79066cce5893b9e1a855a64828284de3b6fff2370498b6c8742dc8a
-+  __TEXT.__swift5_fieldmd: 0x3afc sha256:b193d9613cc7b7f4faa6a0736779268b87cddb9ffdeb505867de1565bb84625a
-+  __TEXT.__swift5_builtin: 0x26c sha256:1c66b167666df9b37df3cd18068e8b3947680626ead781c2d79c0632d2796402
-+  __TEXT.__swift5_proto: 0x7b4 sha256:7541333e8f780c3a05f7beb74a3d1cfde3ea5a1bf0ddf6f1851e4ffe0a79960d
-+  __TEXT.__swift5_types: 0x738 sha256:0dd0179baa74f35bf1225a1d19886a840bfcea5eee2270599241bae9be7f835d
-+  __TEXT.__swift_as_entry: 0x2e0 sha256:b24751cf8b1d4dc3105f9f69769df459a07f10cec3a8c5745edb442a2b6487a7
-+  __TEXT.__swift_as_ret: 0x29c sha256:dead66a7d41b7d279db59aa99e7e2a57141c75a00fdb5c66ee11d6f2e96e6c4e
-+  __TEXT.__swift_as_cont: 0x434 sha256:4ee06b43edb4972a5552b2f6f6d53990f3e27a7a309b433086b1d63349200f7c
-+  __TEXT.__swift5_protos: 0x58 sha256:f19ee39bb5d18cee97ee678ef962b8a85202bb6b900a99b2db178a0fd376c4d8
-+  __TEXT.__swift5_mpenum: 0x18 sha256:0a309f486f044bdc4dd10274480755bbf4fc771c4d8c53fe02618d6ef6c6c861
-+  __TEXT.__unwind_info: 0x7cb0 sha256:e75ce30ee43eeee23a4bd824de8845ac84563395292ecffa5208c232158f8ad8
-+  __TEXT.__eh_frame: 0x325c sha256:72d46828a8fdb5d643b0e7f7b7aa1f5c49722dbe52945545f1e56ababb00294e
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x35f8 sha256:2e56ef85649b989a4835d6e4f46d95ad610f1918913881c00fba83eea0e2bcb4
--  __DATA_CONST.__objc_classlist: 0x918 sha256:c91e809d8e51b9acc2b3df5dc608154bf49045e3f01ceb42d62b97c600859cd3
--  __DATA_CONST.__objc_catlist: 0x80 sha256:e4bf26f67eb73bdb96d52e01b355718ae2636b8475483d365c00b7686857ec70
--  __DATA_CONST.__objc_protolist: 0x3c8 sha256:0e9aeb3b084d12db0fc66f4d51b78b0c75270df7312d4501b23fe53b56cdfef8
-+  __DATA_CONST.__const: 0x35f8 sha256:31e9525b8750ab30fcd001abb4e61bd4d115ef3d992e00b82964c478b24e8318
-+  __DATA_CONST.__objc_classlist: 0x930 sha256:2856c3837c6b5d2e83bc9ba58996326cd1c0c04e3e38230d1394e0143d405c42
-+  __DATA_CONST.__objc_catlist: 0x80 sha256:f48150eb5a905ea0aeb163f96c8089051c4bafe21f60fcc9cb94f73a9dc09baf
-+  __DATA_CONST.__objc_protolist: 0x3d8 sha256:2e85ddd5539de2d1e9f650bbdd7c0af26bd0f7527deaef189e87d826fd20fe8a
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0x6eb0 sha256:1b2ce1d3079b500e1146e1b1b5806209a90878571309ebc69eb561438e099849
--  __DATA_CONST.__objc_protorefs: 0xf8 sha256:8bcb0f8e6fd529a0abb5fa708d1105525edc2bc835d82d9a2ef73a9062a24dd4
--  __DATA_CONST.__objc_superrefs: 0x498 sha256:59f3a8bc132b95ca2e7483946a1b51f82e031ce60f45df3f0d0bd7c9aa63afbe
--  __DATA_CONST.__objc_arraydata: 0xd0 sha256:d89b2244130faa5dd662635eadda5d430923685cbd6a0b9ed3ec9213e3783d00
--  __DATA_CONST.__got: 0x1d88 sha256:08799ca62033b20a8bd15b609e04fab86b7c16512dfb1ba15ecfb3ad4387b416
--  __AUTH_CONST.__const: 0x13df0 sha256:ad68c5b39f93b8e5d49441665b894efb6e124ffd8968f43cdbed87138cac5523
--  __AUTH_CONST.__cfstring: 0x5160 sha256:c61d612d6e4b59a680935c8115c8f92969bb170f14f816615d2761fe54dc884a
--  __AUTH_CONST.__objc_const: 0x439b8 sha256:d5d1162e8ab55999a5785bed72441839c66b62684b9030ca64e952bc59093f2a
--  __AUTH_CONST.__objc_arrayobj: 0xa8 sha256:05f0bd8c1c4ce5cedc19aa2645f5614f32a0b3e50973c15f1e6bc86a2894fe6c
--  __AUTH_CONST.__objc_intobj: 0xa8 sha256:222a569767b9a97ed0dfebebedd106b5d99b94f54547d12a1c0e49b16745f436
--  __AUTH_CONST.__objc_doubleobj: 0x20 sha256:5e98d981ebc4f297520fa9c3d3adc4f66e9a544c554c8e1a4c0118a8591635ed
--  __AUTH_CONST.__auth_got: 0x2508 sha256:2e45a620af0831acf209e501b7aefd795bddc4f663dc0e1ca452f2f7fbd69f6c
--  __AUTH.__objc_data: 0x8058 sha256:02dfd39b75bcad6ffa6dbc01757272ddab38f5e89b33b9acfb0ed01b2533b647
--  __AUTH.__data: 0x4d78 sha256:392472c6daf8c01cfa6ade5309f52412674dd89573e8ab3bd8c353643c13d308
--  __DATA.__objc_ivar: 0xcd8 sha256:47a1b0f593bca361f1fd7fbc836ac907e661c9d78ae41686b55c620eab4e367e
--  __DATA.__data: 0x7108 sha256:518e8239d3fda7b165dc9aef8badc87998663965857e99796b7331cde8c75047
--  __DATA.__bss: 0x10908 sha256:bbad2c50346cca78267fb6bf2a2facdf3df6a3011b18368c7007797aa1cf2230
--  __DATA.__common: 0x5e0 sha256:ab269d0b9b5cda16930d841dd907eafb43e07837e0d49450e3250e02babd0978
--  __DATA_DIRTY.__objc_data: 0x2d0 sha256:5b1288f9a8cb039b78d7d5c5841f656bea184069cc3b85b9a4e28c3c3406c789
-+  __DATA_CONST.__objc_selrefs: 0x6f10 sha256:bf94adb05c4605a79561887ef89e6eb8306f5a0f2d50e1f310d8d31e3c1b3ee9
-+  __DATA_CONST.__objc_protorefs: 0x100 sha256:9fd53c78225e85b4a4df4b3e427e70725931ebd35da9388712719b8cd9c59dd4
-+  __DATA_CONST.__objc_superrefs: 0x498 sha256:0c1eb3697fa85a746516bd2b659de5a6d370442f16d8f91fe5cacf5f559e1a6c
-+  __DATA_CONST.__objc_arraydata: 0xd0 sha256:76c9508f1444452f14c6ebd2c7d4d240067b7ee2d55ed9866aadeb79132a9b0b
-+  __DATA_CONST.__got: 0x1dc0 sha256:b8c81a64596062741e6ebd9577c99658b193a36114b3f8e99f8558a75299e284
-+  __AUTH_CONST.__const: 0x14910 sha256:945eeb45680ae2dfd7b23cad6b96db1922c7e215d358251e1121a8072fc7dec3
-+  __AUTH_CONST.__cfstring: 0x5160 sha256:3b9ccad653c6d1e0cc6a541c302ffd0171a81376e4a6e8a0f1333951bcdccfc7
-+  __AUTH_CONST.__objc_const: 0x44018 sha256:e60a83b3f44cf548a9c6fb6a8205178da22ee80e602b1c05f58f0109d1dc0031
-+  __AUTH_CONST.__objc_intobj: 0xa8 sha256:6a0b6d9abbbccceee693fc8585642c2b1b36591d2bb2f7674528d592029ed8a7
-+  __AUTH_CONST.__objc_doubleobj: 0x20 sha256:c77a35614b5e50be1618b911784ea898b747b46938b423356d16d82860072065
-+  __AUTH_CONST.__objc_arrayobj: 0xa8 sha256:79e4a1ff0e9385cf633874428f1f85ce93216875d278761761cda257691fea04
-+  __AUTH_CONST.__auth_got: 0x2560 sha256:1e2fde5fcaf27679ef1977ff5015bba60e2907adee812ecef5cf27d14716d371
-+  __AUTH.__objc_data: 0x8108 sha256:78bd01bd14c3c291c56191748a34436bf2141da026f97130cd3853d895b2e2d7
-+  __AUTH.__data: 0x5088 sha256:8c0f93adfad906585846cebb090cc77d9f869dc256df15de91ed36d9bd301b4d
-+  __DATA.__objc_ivar: 0xcd8 sha256:28a51edc5086541761733f5e7dcf600ca8e72981abc70c14d6e9285292f5239f
-+  __DATA.__data: 0x73e0 sha256:09a9a125d60fa4f77702e05c58cf7504b6f1169c3c6a4d83a7c1b6141904d6de
-+  __DATA.__bss: 0x10458 sha256:9aafe554b94c69eddb079de9b472c99866a9645e5d67535d7e2850a242bb9c1d
-+  __DATA.__common: 0x5e0 sha256:7dc3bb12dd0fc2b4472103e55071b040e1c419a42115b69b181085a9ad48f9d6
-+  __DATA_DIRTY.__objc_data: 0x2d0 sha256:26d6d3f9a07d9c9151d7fc9ea5ffba440863f4b5c347fbb9bb5b488c7cba745c
-   __DATA_DIRTY.__bss: 0x48 sha256:834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/Combine.framework/Combine
 
-   - /System/Library/PrivateFrameworks/AppleAccount.framework/AppleAccount
-   - /System/Library/PrivateFrameworks/AppleIDSSOAuthentication.framework/AppleIDSSOAuthentication
-   - /System/Library/PrivateFrameworks/AppleMediaServices.framework/AppleMediaServices
 +  - /System/Library/PrivateFrameworks/AppleMediaServicesUI.framework/AppleMediaServicesUI
-   - /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit
-   - /System/Library/PrivateFrameworks/AuthKitUI.framework/AuthKitUI
-   - /System/Library/PrivateFrameworks/ChatKit.framework/ChatKit
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: 3293CBD0-DDCF-38F9-BE3A-B5D2DF4EB3E5
 -  Functions: 16842
--  Symbols:   22958
--  CStrings:  3448
-+  UUID: 2A96B1B7-AC32-3594-B878-4B40CA776376
+-  Symbols:   10353
+-  CStrings:  2796
 +  Functions: 17227
-+  Symbols:   23223
-+  CStrings:  3474
- 
++  Symbols:   10456
++  CStrings:  2822
 Symbols:
 + +[AAUIFeatureFlags isDBRTwoEnabled]
-+ +[AAUIFeatureFlags isDBRTwoEnabled].cold.1
 + -[AAUIDTOHelper _makeOpNotAllowedAlertForAddCustodian:dismissHandler:]
-+ -[AAUIDTOHelper _makeOpNotAllowedAlertForAddCustodian:dismissHandler:].cold.1
 + -[AAUIDTOHelper makeCustodianAddOpNotAllowedAlertWithDismissHandler:]
 + -[AAUIMyCustodianActionHandler accountManager]
 + GCC_except_table39
@@ -161,184 +79,8 @@ Symbols:
 + __OBJC_$_PROTOCOL_REFS_AMSBagProtocol
 + __OBJC_LABEL_PROTOCOL_$_AMSBagProtocol
 + __OBJC_PROTOCOL_$_AMSBagProtocol
-+ ___100-[AAUICustodianSetupFlowController _beginAddRecoveryContactAfterSelectFlow:ifIsVerified:andNoError:]_block_invoke.145
-+ ___103-[AAUISignInFlowController _verifyLoginResponseForiCloudAccount:withSuccess:response:error:completion:]_block_invoke.155
-+ ___103-[AAUISignInFlowController _verifyLoginResponseForiCloudAccount:withSuccess:response:error:completion:]_block_invoke.155.cold.1
-+ ___103-[AAUISignInFlowController _verifyLoginResponseForiCloudAccount:withSuccess:response:error:completion:]_block_invoke.156
-+ ___103-[AAUISignInFlowController _verifyLoginResponseForiCloudAccount:withSuccess:response:error:completion:]_block_invoke_2.169
-+ ___106-[AAUICustodianRecoveryApprovalController _handleValidationResult:error:completion:codeEnteredCompletion:]_block_invoke.104
 + ___35+[AAUIFeatureFlags isDBRTwoEnabled]_block_invoke
-+ ___35+[AAUIFeatureFlags isDBRTwoEnabled]_block_invoke.cold.1
-+ ___50-[AAUIGenericTermsRemoteUI _setupActionForButtons]_block_invoke.147
-+ ___50-[AAUIGenericTermsRemoteUI _setupActionForButtons]_block_invoke.153
-+ ___50-[AAUIGenericTermsRemoteUI _setupActionForButtons]_block_invoke.153.cold.1
-+ ___50-[AAUIGenericTermsRemoteUI _setupActionForButtons]_block_invoke.153.cold.2
-+ ___50-[AAUIGenericTermsRemoteUI _setupActionForButtons]_block_invoke.157
-+ ___50-[AAUIGenericTermsRemoteUI _setupActionForButtons]_block_invoke.157.cold.1
-+ ___50-[AAUIGenericTermsRemoteUI _setupActionForButtons]_block_invoke.157.cold.2
-+ ___50-[AAUIMyCustodianActionHandler _doCustodianRemove]_block_invoke.108
-+ ___51-[AAUICustodianSetupFlowController _inviteContact:]_block_invoke.223
-+ ___51-[AAUICustodianSetupFlowController _inviteContact:]_block_invoke.223.cold.1
-+ ___51-[AAUICustodianSetupFlowController _inviteContact:]_block_invoke.223.cold.2
-+ ___51-[AAUICustodianSetupFlowController _inviteContact:]_block_invoke.223.cold.3
-+ ___51-[AAUICustodianSetupFlowController _inviteContact:]_block_invoke.228
-+ ___54-[AAUIAccountRecoveryViewController _showAddCustodian]_block_invoke.210
-+ ___54-[AAUIAccountRecoveryViewController _showAddCustodian]_block_invoke.210.cold.1
-+ ___54-[AAUIAccountRecoveryViewController _showAddCustodian]_block_invoke.211
-+ ___54-[AAUIAccountRecoveryViewController _showAddCustodian]_block_invoke.212
-+ ___54-[AAUIAccountRecoveryViewController _showAddCustodian]_block_invoke.212.cold.1
-+ ___54-[AAUIInviteMessageFlowController _sendDefaultMessage]_block_invoke.162
-+ ___55-[AAUICustodianSetupFlowController _dismissCFUIfNeeded]_block_invoke.237
-+ ___55-[AAUICustodianSetupFlowController _dismissCFUIfNeeded]_block_invoke.237.cold.1
-+ ___55-[AAUIInheritanceSetupFlowController _setupBeneficiary]_block_invoke.171
-+ ___55-[AAUIInheritanceSetupFlowController _setupBeneficiary]_block_invoke.172
-+ ___55-[AAUIInheritanceSetupFlowController _showPrintPreview]_block_invoke.147
-+ ___58-[AAUICustodianSetupFlowController _cancelCustodianInvite]_block_invoke.230
-+ ___58-[AAUIMyPendingBeneficiaryActionHandler _showPrintPreview]_block_invoke.115
-+ ___59-[AAUICustodianForActionHandler doPrimaryAction:specifier:]_block_invoke.101
-+ ___59-[AAUIGenericTermsRemoteUI _loadRequestPreferringPassword:]_block_invoke.160
-+ ___59-[AAUIGenericTermsRemoteUI _loadRequestPreferringPassword:]_block_invoke.160.cold.1
-+ ___59-[AAUIGenericTermsRemoteUI _loadRequestPreferringPassword:]_block_invoke.160.cold.2
-+ ___59-[AAUIGenericTermsRemoteUI _loadRequestPreferringPassword:]_block_invoke.163
-+ ___59-[AAUIGenericTermsRemoteUI _loadRequestPreferringPassword:]_block_invoke.165
-+ ___60-[AAUIAccountRecoveryViewController _fetchRecoveryKeyUpdate]_block_invoke.157
-+ ___62-[AAUIMyCustodianActionHandler doDestructiveAction:specifier:]_block_invoke.100
-+ ___62-[AAUIMyCustodianActionHandler doDestructiveAction:specifier:]_block_invoke.103
-+ ___62-[AAUIMyCustodianActionHandler doDestructiveAction:specifier:]_block_invoke.103.cold.1
-+ ___62-[AAUIMyCustodianActionHandler doDestructiveAction:specifier:]_block_invoke.99
-+ ___62-[AAUIMyCustodianActionHandler doDestructiveAction:specifier:]_block_invoke.99.cold.1
-+ ___62-[AAUISignInViewController _attemptAuthenticationWithContext:]_block_invoke.295
-+ ___63-[AAUIAccountRecoveryViewController _fetchAllCustodianContacts]_block_invoke.155
-+ ___63-[AAUICustodianForActionHandler doDestructiveAction:specifier:]_block_invoke.97
-+ ___64-[AAUICustodianSetupFlowController _beginAddRecoveryContactFlow]_block_invoke.143
-+ ___65-[AAUIMyBenefactorActionHandler _showAuthPromptInViewController:]_block_invoke.117
-+ ___66-[AAUIMyBeneficiaryActionHandler _showAuthPromptInViewController:]_block_invoke.118
-+ ___67-[AAUICustodianSetupFlowController _continueAddRecoveryContactFlow]_block_invoke.149
-+ ___69-[AAUIAccountRecoveryViewController _syncTrustedContactsFromCloudKit]_block_invoke.146
-+ ___70-[AAUIAccountRecoveryViewController showReviewCustodiansModalIfNeeded]_block_invoke.120
-+ ___70-[AAUICustodianSetupFlowController _beginAddRecoveryContactUpsellFlow]_block_invoke.150
-+ ___70-[AAUICustodianSetupFlowController _beginAddRecoveryContactUpsellFlow]_block_invoke.150.cold.1
-+ ___70-[AAUICustodianSetupFlowController _beginAddRecoveryContactUpsellFlow]_block_invoke.150.cold.2
-+ ___70-[AAUICustodianSetupFlowController _beginAddRecoveryContactUpsellFlow]_block_invoke.151
-+ ___70-[AAUICustodianSetupFlowController _beginAddRecoveryContactUpsellFlow]_block_invoke.151.cold.1
-+ ___70-[AAUICustodianSetupFlowController _beginAddRecoveryContactUpsellFlow]_block_invoke.151.cold.2
-+ ___70-[AAUICustodianSetupFlowController _beginAddRecoveryContactUpsellFlow]_block_invoke.152
-+ ___70-[AAUICustodianSetupFlowController _beginAddRecoveryContactUpsellFlow]_block_invoke.152.cold.1
-+ ___70-[AAUICustodianSetupFlowController _beginAddRecoveryContactUpsellFlow]_block_invoke.153
-+ ___70-[AAUICustodianSetupFlowController _beginAddRecoveryContactUpsellFlow]_block_invoke.153.cold.1
-+ ___70-[AAUICustodianSetupFlowController _beginAddRecoveryContactUpsellFlow]_block_invoke.154
-+ ___70-[AAUICustodianSetupFlowController _beginAddRecoveryContactUpsellFlow]_block_invoke.154.cold.1
-+ ___71-[AAUICloudSyncServicesController verifyAccountWithAppleID:completion:]_block_invoke.164
 + ___71-[AAUICustodianSetupFlowController _displayCustodianAddNotAllowedAlert]_block_invoke
-+ ___72-[AAUICDPCustodianHook custodianSetupFlowControllerDidFinish:withError:]_block_invoke.78
-+ ___72-[AAUICDPCustodianHook custodianSetupFlowControllerDidFinish:withError:]_block_invoke.78.cold.1
-+ ___72-[AAUICDPCustodianHook custodianSetupFlowControllerDidFinish:withError:]_block_invoke.78.cold.2
-+ ___74-[AAUIMyCustodianActionHandler _checkRecoveryContactAndRecoveryKeyStatus:]_block_invoke.116
-+ ___75-[AAUISignInFlowController signInWithIDMSAuthenticationResults:completion:]_block_invoke.139
-+ ___75-[AAUISignInFlowController signInWithIDMSAuthenticationResults:completion:]_block_invoke.144
-+ ___75-[AAUISignInFlowController signInWithIDMSAuthenticationResults:completion:]_block_invoke.145
-+ ___75-[AAUISignInFlowController signInWithIDMSAuthenticationResults:completion:]_block_invoke.146
-+ ___76-[AAUICustodianSetupFlowController _beginAddRecoveryContactAfterSelectFlow:]_block_invoke.146
-+ ___76-[AAUICustodianSetupFlowController _beginAddRecoveryContactAfterSelectFlow:]_block_invoke.146.cold.1
-+ ___76-[AAUICustodianSetupFlowController _beginAddRecoveryContactAfterSelectFlow:]_block_invoke.147
-+ ___76-[AAUICustodianSetupFlowController _beginAddRecoveryContactAfterSelectFlow:]_block_invoke.148
-+ ___76-[AAUICustodianSetupFlowController _beginAddRecoveryContactAfterSelectFlow:]_block_invoke.148.cold.1
-+ ___77-[AAUICustodianRecoveryApprovalController _createCancelActionWithCompletion:]_block_invoke.107
-+ ___77-[AAUICustodianRecoveryApprovalController _createEscapeActionWithCompletion:]_block_invoke.105
-+ ___78-[AAUIGenericTermsRemoteUI _cleanUpAndDismissWithSuccess:agreeURL:serverInfo:]_block_invoke.180
-+ ___78-[AAUIGenericTermsRemoteUI _cleanUpAndDismissWithSuccess:agreeURL:serverInfo:]_block_invoke.181
-+ ___78-[AAUIGenericTermsRemoteUI _cleanUpAndDismissWithSuccess:agreeURL:serverInfo:]_block_invoke.182
-+ ___79-[AAUICloudSyncServicesController completeEnablingCloudServicesWithCompletion:]_block_invoke.162
-+ ___79-[AAUISignInFlowController _presentValidationErrorAlert:forAccount:completion:]_block_invoke.214
-+ ___82-[AAUICustodianRecoveryApprovalController _createValidationHandlerWithCompletion:]_block_invoke.108
-+ ___82-[AAUICustodianRecoveryApprovalController _createValidationHandlerWithCompletion:]_block_invoke.113
-+ ___82-[AAUISignInFlowController _promptToEnableFindMyIfPossibleWithAccount:completion:]_block_invoke.182
-+ ___82-[AAUISignInFlowController _promptToEnableFindMyIfPossibleWithAccount:completion:]_block_invoke_2.187
-+ ___82-[AAUISignInFlowController _validateCDPStateForAccount:withCDPContext:completion:]_block_invoke.173
-+ ___82-[AAUISignInFlowController _validateCDPStateForAccount:withCDPContext:completion:]_block_invoke.174
-+ ___82-[AAUISignInFlowController _validateCDPStateForAccount:withCDPContext:completion:]_block_invoke.175
-+ ___83-[AAUICustodianRecoveryApprovalController _actionsForRecoveryCodeAlert:completion:]_block_invoke.141
-+ ___86-[AAUICustodianRecoveryApprovalController _promptForRecoveryCodeLegacyWithCompletion:]_block_invoke.135
-+ ___86-[AAUICustodianRecoveryApprovalController _promptForRecoveryCodeLegacyWithCompletion:]_block_invoke.135.cold.1
-+ ___86-[AAUICustodianRecoveryApprovalController _promptForRecoveryCodeLegacyWithCompletion:]_block_invoke.136
-+ ___86-[AAUICustodianRecoveryApprovalController _promptForRecoveryCodeLegacyWithCompletion:]_block_invoke.137
-+ ___86-[AAUICustodianRecoveryApprovalController _promptForRecoveryCodeLegacyWithCompletion:]_block_invoke.137.cold.1
-+ ___86-[AAUICustodianRecoveryApprovalController _promptForRecoveryCodeLegacyWithCompletion:]_block_invoke.137.cold.2
-+ ___86-[AAUICustodianRecoveryApprovalController _promptForRecoveryCodeLegacyWithCompletion:]_block_invoke.138
-+ ___86-[AAUICustodianRecoveryApprovalController _promptForRecoveryCodeLegacyWithCompletion:]_block_invoke.138.cold.1
-+ ___86-[AAUICustodianRecoveryApprovalController _promptForRecoveryCodeLegacyWithCompletion:]_block_invoke.139
-+ ___block_literal_global.112
-+ ___block_literal_global.117
-+ ___block_literal_global.144
-+ ___block_literal_global.173
-+ ___block_literal_global.177
-+ ___block_literal_global.191
-+ ___block_literal_global.244
-+ ___block_literal_global.249
-+ ___swift_closure_destructor.170
-+ ___swift_closure_destructor.178
-+ ___swift_closure_destructor.257
-+ ___swift_closure_destructor.265
-+ ___swift_closure_destructor.269
-+ ___swift_closure_destructor.273
-+ ___swift_closure_destructor.277
-+ ___swift_closure_destructor.285
-+ ___swift_closure_destructor.288
-+ ___swift_closure_destructor.292
-+ ___swift_closure_destructor.296
-+ ___swift_closure_destructor.299
-+ ___swift_closure_destructor.318
-+ ___swift_closure_destructor.325
-+ ___swift_closure_destructor.345
-+ ___swift_closure_destructor.348
-+ ___swift_closure_destructor.352
-+ ___swift_closure_destructor.356
-+ ___swift_closure_destructor.366
-+ ___swift_closure_destructor.370
-+ ___swift_closure_destructor.395
-+ ___swift_closure_destructor.398
-+ ___swift_closure_destructor.402
-+ ___swift_closure_destructor.406
-+ ___swift_closure_destructor.410
-+ ___swift_closure_destructor.414
-+ ___swift_closure_destructor.429
-+ ___swift_closure_destructor.444
-+ ___swift_closure_destructor.451
-+ ___swift_closure_destructor.454
-+ ___swift_closure_destructor.465
-+ ___swift_closure_destructor.469
-+ ___swift_closure_destructor.473
-+ ___swift_closure_destructor.490
-+ ___swift_closure_destructor.498
-+ ___swift_closure_destructor.518
-+ ___swift_closure_destructor.521
-+ ___swift_closure_destructor.525
-+ ___swift_closure_destructor.529
-+ ___swift_closure_destructor.533
-+ ___swift_closure_destructor.537
-+ ___swift_closure_destructor.540
-+ ___swift_closure_destructor.544
-+ ___swift_closure_destructor.548
-+ ___swift_closure_destructor.552
-+ ___swift_closure_destructor.556
-+ ___swift_closure_destructor.559
-+ ___swift_closure_destructor.574
-+ ___swift_closure_destructor.578
-+ ___swift_closure_destructor.582
-+ ___swift_closure_destructor.586
-+ ___swift_closure_destructor.590
-+ ___swift_closure_destructor.594
-+ ___swift_closure_destructor.597
-+ ___swift_closure_destructor.601
-+ ___swift_closure_destructor.605
-+ ___swift_closure_destructor.609
-+ ___swift_closure_destructor.613
-+ ___swift_closure_destructor.616
-+ ___swift_closure_destructor.620
-+ ___swift_closure_destructor.624
-+ ___swift_closure_destructor.628
-+ ___swift_closure_destructor.634
-+ ___swift_closure_destructor.637
 + ___swift_memcpy64_8
 + _associated conformance 14AppleAccountUI0aB18AgeVerificationRowV04LinkF5StyleV05SwiftC006ButtonH0AA4BodyAfGP_AF4View
 + _associated conformance 14AppleAccountUI0aB18AgeVerificationRowV05SwiftC04ViewAA4BodyAdEP_AdE
@@ -351,62 +93,14 @@ Symbols:
 + _associated conformance 14AppleAccountUI21RecoveryCodeEntryViewV0deF9Container33_24E3B2D6C26F24A8D0983C8C922DAF25LLV05SwiftC00G0AA4BodyAgHP_AgH
 + _associated conformance 14AppleAccountUI29AgeVerificationControllerViewV05SwiftC006UIViewF13RepresentableAaD0G0
 + _associated conformance 14AppleAccountUI29AgeVerificationControllerViewV05SwiftC00G0AA4BodyAdEP_AdE
-+ _block_copy_helper.16
-+ _block_copy_helper.25
-+ _block_copy_helper.280
-+ _block_copy_helper.313
-+ _block_copy_helper.320
-+ _block_copy_helper.327
-+ _block_copy_helper.331
-+ _block_copy_helper.341
-+ _block_copy_helper.388
-+ _block_copy_helper.431
-+ _block_copy_helper.5
-+ _block_descriptor.18
-+ _block_descriptor.27
-+ _block_descriptor.282
-+ _block_descriptor.315
-+ _block_descriptor.322
-+ _block_descriptor.329
-+ _block_descriptor.333
-+ _block_descriptor.343
-+ _block_descriptor.390
-+ _block_descriptor.433
-+ _block_descriptor.7
-+ _block_destroy_helper.17
-+ _block_destroy_helper.26
-+ _block_destroy_helper.281
-+ _block_destroy_helper.314
-+ _block_destroy_helper.321
-+ _block_destroy_helper.328
-+ _block_destroy_helper.332
-+ _block_destroy_helper.342
-+ _block_destroy_helper.389
-+ _block_destroy_helper.432
-+ _block_destroy_helper.6
-+ _get_underlying_type_ref 7SwiftUI4ViewPAAEAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOQr.11
-+ _get_underlying_type_ref 7SwiftUI4ViewPAAEAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOQr.13
-+ _get_underlying_witness 7SwiftUI4ViewPAAEAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOqd__AaBHC.12
-+ _get_underlying_witness 7SwiftUI4ViewPAAEAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOqd__AaBHC.14
-+ _get_witness_table 14AppleAccountUI14OnboardingViewVyAA07DefaultdE5ModelCG05SwiftC00E0HPyHC.21
-+ _get_witness_table 7SwiftUI15ModifiedContentVyACyAA4ViewPAAE11buttonStyleyQrqd__AA06ButtonG0Rd__lFQOyAA0H0VyAA6HStackVyAA05TupleD0VyAA4TextV_AA6SpacerVAOSgQPGGG_012AppleAccountB00mN18AgeVerificationRowV04LinkqG0VQo_AA25_AppearanceActionModifierVGA1_GAaDHPA2_AaDHPqd0__AaDHD3_A_HO_A1_AA0eU0HPyHCHC_A1_AAA4_HPyHCHC.14
-+ _get_witness_table 7SwiftUI15ModifiedContentVyACyAA6HStackVyAA05TupleD0VyAA24ButtonStyleConfigurationV5LabelV_AA6SpacerVACyAA4ViewPAAE10fontWeightyQrAA4FontV0N0VSgFQOyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAW5ScaleOGG_Qo_AA011_ForegroundhT0VyAA017HierarchicalShapeH0VGGQPGGAA14_PaddingLayoutVGAA01_dxT0VyAA9RectangleVGGAaNHPA13_AaNHPA10_AaNHPyHC_A12_AA0lT0HPyHCHC_A18_AAA20_HPyHCHC.15
-+ _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA16SubscriptionViewVySo20NSNotificationCenterC10FoundationE9PublisherVAA0F0PAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAA6ZStackVyAA012_ConditionalD0VyAlAE24interactionRepresentableyQrqd__AA014_UIInteractionR0Rd__lFQOyAlAE0K10TapGesture5count7performQrSi_yyctFQOyACyAA6VStackVyAA05TupleD0VyACyACyACyACyACyAA5ImageVAA18_AspectRatioLayoutVGAA24_ForegroundStyleModifierVyAA5ColorVGGAA31AccessibilityAttachmentModifierVG012AppleAccountB010AvatarSizeVGAA11_ClipEffectVyAA6CircleVGG_ACyACyAlAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyACyACyAA6ButtonVyAA4TextVGAA30_EnvironmentKeyWritingModifierVyAA11ControlSizeOGGAA24_BackgroundStyleModifierVyA9_GG_AA19BorderedButtonStyleVQo_A20_yAA16RoundedRectangleVGGAA14_PaddingLayoutVGSgAZyA0_yA30__A30_SgQPGGSgQPGGA13_G_Qo__A15_28SNaPEditorInteractionWrapperVQo_AlAE5sheet11isPresented0K7Dismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaKRd__lFQOyA60__ACyA15_27ContactVisualIdentityPickerVAA25_AppearanceActionModifierVGQo_GG_AH4DataVSgQo_GA75_GA50_GA40_GAaKHPA86_AaKHPA85_AaKHPA84_AaKHPyHC_A75_AA0F8ModifierHPyHCHC_A50_AAA88_HPyHCHC_A40_AAA88_HPyHCHC.28
-+ _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE26interactiveDismissDisabledyQrSbFQOyAcAE5sheet4item02onE07contentQrAA7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lFQOyAcAE5alert_11isPresented7actions7messageQrqd___AJySbGqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA15NavigationStackVyAA0W4PathV012AppleAccountB00W16ControllerReaderVyAcAE21navigationDestination3for11destinationQrqd__m_qd_0_qd__ctSHRd__AaBRd_0_r0_lFQOyA2_26LegacySetupFlowCoordinatorC04rootC04withQrSo22UINavigationControllerCSg_tFQOy_Qo__A2_15LegacySetupStepOA9_4viewA6_QrA17__tFQOy_Qo_Qo_GG_Qo__SSAA6ButtonVyAA4TextVGA27_Qo__A17_A19_Qo__Qo_HO.19
-+ _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA15ModifiedContentVyAcAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAC6TipKitE0kO9Dismissal7performQryAO0O0_pYbScMYccSg_tFQOyAcOE07popoverO0_11isPresented16attachmentAnchor9arrowEdge6actionQrAoR_pSg_AA7BindingVySbGSgAA017PopoverAttachmentW0OAA0Y0OSgyAO4TipsO6ActionVctFQOyAKyAKyAKyAA6ButtonVyAKyAA4TextVAA14_OpacityEffectVGGA16_GAA32_EnvironmentKeyTransformModifierVySbGGAA31AccessibilityAttachmentModifierVG_Qo__Qo__SbQo_AA25_AppearanceActionModifierVG_Qo_HO.106
-+ _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE5alert_11isPresented7actions7messageQrqd___AA7BindingVySbGqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAA15ModifiedContentVyAA6VStackVyAA05TupleT0VyAUyAcAE7focusedyQrAA10FocusStateVAQVySb_GFQOy012AppleAccountB0013CodeEntryPaneC0V_Qo_AA14_PaddingLayoutVG_AUyAUyAA6ButtonVyAA4TextVGAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA24_ForegroundStyleModifierVyAA14TintShapeStyleVGGAUyAUyAA08ProgressC0VyAA05EmptyC0VA31_GAA16_FlexFrameLayoutVGAA14_OpacityEffectVGQPGGAA32_EnvironmentKeyTransformModifierVySbGG_SSA14_A13_Qo__SbQo__Qo_HO.23
-+ _get_witness_table x7SwiftUI4ViewHD1_012AppleAccountB015LegacySetupStepO4view11coordinatorQrAC0fG15FlowCoordinatorC_tFQOy_Qo_HO.55
++ _get_witness_table 7SwiftUI15ModifiedContentVyACyAA4ViewPAAE11buttonStyleyQrqd__AA06ButtonG0Rd__lFQOyAA0H0VyAA6HStackVyAA05TupleD0VyAA4TextV_AA6SpacerVAOSgQPGGG_012AppleAccountB00mN18AgeVerificationRowV04LinkqG0VQo_AA25_AppearanceActionModifierVGA1_GAaDHPA2_AaDHPqd0__AaDHD3_A_HO_A1_AA0eU0HPyHCHC_A1_AAA4_HPyHCHC
++ _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA16SubscriptionViewVySo20NSNotificationCenterC10FoundationE9PublisherVAA0F0PAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAA6ZStackVyAA012_ConditionalD0VyAlAE24interactionRepresentableyQrqd__AA014_UIInteractionR0Rd__lFQOyAlAE0K10TapGesture5count7performQrSi_yyctFQOyACyAA6VStackVyAA05TupleD0VyACyACyACyACyACyAA5ImageVAA18_AspectRatioLayoutVGAA24_ForegroundStyleModifierVyAA5ColorVGGAA31AccessibilityAttachmentModifierVG012AppleAccountB010AvatarSizeVGAA11_ClipEffectVyAA6CircleVGG_ACyACyAlAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyACyACyAA6ButtonVyAA4TextVGAA30_EnvironmentKeyWritingModifierVyAA11ControlSizeOGGAA24_BackgroundStyleModifierVyA9_GG_AA19BorderedButtonStyleVQo_A20_yAA16RoundedRectangleVGGAA14_PaddingLayoutVGSgAZyA0_yA30__A30_SgQPGGSgQPGGA13_G_Qo__A15_28SNaPEditorInteractionWrapperVQo_AlAE5sheet11isPresented0K7Dismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaKRd__lFQOyA60__ACyA15_27ContactVisualIdentityPickerVAA25_AppearanceActionModifierVGQo_GG_AH4DataVSgQo_GA75_GA50_GA40_GAaKHPA86_AaKHPA85_AaKHPA84_AaKHPyHC_A75_AA0F8ModifierHPyHCHC_A50_AAA88_HPyHCHC_A40_AAA88_HPyHCHC
++ _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE26interactiveDismissDisabledyQrSbFQOyAcAE5sheet4item02onE07contentQrAA7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lFQOyAcAE5alert_11isPresented7actions7messageQrqd___AJySbGqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA15NavigationStackVyAA0W4PathV012AppleAccountB00W16ControllerReaderVyAcAE21navigationDestination3for11destinationQrqd__m_qd_0_qd__ctSHRd__AaBRd_0_r0_lFQOyA2_26LegacySetupFlowCoordinatorC04rootC04withQrSo22UINavigationControllerCSg_tFQOy_Qo__A2_15LegacySetupStepOA9_4viewA6_QrA17__tFQOy_Qo_Qo_GG_Qo__SSAA6ButtonVyAA4TextVGA27_Qo__A17_A19_Qo__Qo_HO
++ _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA15ModifiedContentVyAcAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAC6TipKitE0kO9Dismissal7performQryAO0O0_pYbScMYccSg_tFQOyAcOE07popoverO0_11isPresented16attachmentAnchor9arrowEdge6actionQrAoR_pSg_AA7BindingVySbGSgAA017PopoverAttachmentW0OAA0Y0OSgyAO4TipsO6ActionVctFQOyAKyAKyAKyAA6ButtonVyAKyAA4TextVAA14_OpacityEffectVGGA16_GAA32_EnvironmentKeyTransformModifierVySbGGAA31AccessibilityAttachmentModifierVG_Qo__Qo__SbQo_AA25_AppearanceActionModifierVG_Qo_HO
++ _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE5alert_11isPresented7actions7messageQrqd___AA7BindingVySbGqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAA15ModifiedContentVyAA6VStackVyAA05TupleT0VyAUyAcAE7focusedyQrAA10FocusStateVAQVySb_GFQOy012AppleAccountB0013CodeEntryPaneC0V_Qo_AA14_PaddingLayoutVG_AUyAUyAA6ButtonVyAA4TextVGAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA24_ForegroundStyleModifierVyAA14TintShapeStyleVGGAUyAUyAA08ProgressC0VyAA05EmptyC0VA31_GAA16_FlexFrameLayoutVGAA14_OpacityEffectVGQPGGAA32_EnvironmentKeyTransformModifierVySbGG_SSA14_A13_Qo__SbQo__Qo_HO
++ _get_witness_table x7SwiftUI4ViewHD1_012AppleAccountB015LegacySetupStepO4view11coordinatorQrAC0fG15FlowCoordinatorC_tFQOy_Qo_HO
 + _isDBRTwoEnabled.cachedValue
 + _isDBRTwoEnabled.onceToken
-+ _objc_msgSend$_makeOpNotAllowedAlertForAddCustodian:dismissHandler:
-+ _objc_msgSend$ams_fetchIsAgeVerifiedAdultWithTimeout:returningStaleData:
-+ _objc_msgSend$ams_iTunesAccountForAccount:
-+ _objc_msgSend$initWithAccount:bag:
-+ _objc_msgSend$isDBRTwoEnabled
-+ _objc_msgSend$loadController
-+ _objc_msgSend$makeCustodianAddOpNotAllowedAlertWithDismissHandler:
-+ _objc_msgSend$performSelector:
-+ _objc_msgSend$resultPromise
 + _swift_dynamicCastObjCProtocolConditional
 + _swift_projectBox
 + _swift_retain_x1
@@ -499,215 +193,13 @@ Symbols:
 + _type_layout_string 14AppleAccountUI29AgeVerificationControllerViewV
 - +[AAUIFeatureFlags isRCUpsellEnabled]
 - +[AAUIFeatureFlags isRecoveryContactSharePlayEnabled]
-- +[AAUIFeatureFlags isRecoveryContactSharePlayEnabled].cold.1
 - +[AAUIFeatureFlags isUpdatedRCFlowEnabled]
 - -[AAUICustodianSetupFlowController _displayRatchetGenericErrorAlert]
 - -[AAUIDTOHelper _makeOpNotAllowedAlertForAddCustodian:]
-- -[AAUIDTOHelper _makeOpNotAllowedAlertForAddCustodian:].cold.1
 - -[AAUIDTOHelper makeCustodianAddOpNotAllowedAlert]
-- ___100-[AAUICustodianSetupFlowController _beginAddRecoveryContactAfterSelectFlow:ifIsVerified:andNoError:]_block_invoke.130
-- ___103-[AAUISignInFlowController _verifyLoginResponseForiCloudAccount:withSuccess:response:error:completion:]_block_invoke.140
-- ___103-[AAUISignInFlowController _verifyLoginResponseForiCloudAccount:withSuccess:response:error:completion:]_block_invoke.140.cold.1
-- ___103-[AAUISignInFlowController _verifyLoginResponseForiCloudAccount:withSuccess:response:error:completion:]_block_invoke.141
-- ___103-[AAUISignInFlowController _verifyLoginResponseForiCloudAccount:withSuccess:response:error:completion:]_block_invoke_2.154
-- ___106-[AAUICustodianRecoveryApprovalController _handleValidationResult:error:completion:codeEnteredCompletion:]_block_invoke.89
-- ___50-[AAUIGenericTermsRemoteUI _setupActionForButtons]_block_invoke.132
-- ___50-[AAUIGenericTermsRemoteUI _setupActionForButtons]_block_invoke.138
-- ___50-[AAUIGenericTermsRemoteUI _setupActionForButtons]_block_invoke.138.cold.1
-- ___50-[AAUIGenericTermsRemoteUI _setupActionForButtons]_block_invoke.138.cold.2
-- ___50-[AAUIGenericTermsRemoteUI _setupActionForButtons]_block_invoke.142
-- ___50-[AAUIGenericTermsRemoteUI _setupActionForButtons]_block_invoke.142.cold.1
-- ___50-[AAUIGenericTermsRemoteUI _setupActionForButtons]_block_invoke.142.cold.2
-- ___50-[AAUIMyCustodianActionHandler _doCustodianRemove]_block_invoke.93
-- ___51-[AAUICustodianSetupFlowController _inviteContact:]_block_invoke.209
-- ___51-[AAUICustodianSetupFlowController _inviteContact:]_block_invoke.209.cold.1
-- ___51-[AAUICustodianSetupFlowController _inviteContact:]_block_invoke.209.cold.2
-- ___51-[AAUICustodianSetupFlowController _inviteContact:]_block_invoke.209.cold.3
-- ___51-[AAUICustodianSetupFlowController _inviteContact:]_block_invoke.214
-- ___54-[AAUIAccountRecoveryViewController _showAddCustodian]_block_invoke.195
-- ___54-[AAUIAccountRecoveryViewController _showAddCustodian]_block_invoke.195.cold.1
-- ___54-[AAUIAccountRecoveryViewController _showAddCustodian]_block_invoke.196
-- ___54-[AAUIAccountRecoveryViewController _showAddCustodian]_block_invoke.197
-- ___54-[AAUIAccountRecoveryViewController _showAddCustodian]_block_invoke.197.cold.1
-- ___54-[AAUIInviteMessageFlowController _sendDefaultMessage]_block_invoke.147
-- ___55-[AAUICustodianSetupFlowController _dismissCFUIfNeeded]_block_invoke.223
-- ___55-[AAUICustodianSetupFlowController _dismissCFUIfNeeded]_block_invoke.223.cold.1
-- ___55-[AAUIInheritanceSetupFlowController _setupBeneficiary]_block_invoke.156
-- ___55-[AAUIInheritanceSetupFlowController _setupBeneficiary]_block_invoke.157
-- ___55-[AAUIInheritanceSetupFlowController _showPrintPreview]_block_invoke.132
-- ___58-[AAUICustodianSetupFlowController _cancelCustodianInvite]_block_invoke.216
-- ___58-[AAUIMyPendingBeneficiaryActionHandler _showPrintPreview]_block_invoke.100
-- ___59-[AAUICustodianForActionHandler doPrimaryAction:specifier:]_block_invoke.86
-- ___59-[AAUIGenericTermsRemoteUI _loadRequestPreferringPassword:]_block_invoke.145
-- ___59-[AAUIGenericTermsRemoteUI _loadRequestPreferringPassword:]_block_invoke.145.cold.1
-- ___59-[AAUIGenericTermsRemoteUI _loadRequestPreferringPassword:]_block_invoke.145.cold.2
-- ___59-[AAUIGenericTermsRemoteUI _loadRequestPreferringPassword:]_block_invoke.148
-- ___59-[AAUIGenericTermsRemoteUI _loadRequestPreferringPassword:]_block_invoke.150
-- ___60-[AAUIAccountRecoveryViewController _fetchRecoveryKeyUpdate]_block_invoke.142
-- ___62-[AAUIMyCustodianActionHandler doDestructiveAction:specifier:]_block_invoke.84
-- ___62-[AAUIMyCustodianActionHandler doDestructiveAction:specifier:]_block_invoke.84.cold.1
-- ___62-[AAUIMyCustodianActionHandler doDestructiveAction:specifier:]_block_invoke.85
-- ___62-[AAUIMyCustodianActionHandler doDestructiveAction:specifier:]_block_invoke.88
-- ___62-[AAUIMyCustodianActionHandler doDestructiveAction:specifier:]_block_invoke.88.cold.1
-- ___62-[AAUISignInViewController _attemptAuthenticationWithContext:]_block_invoke.280
-- ___63-[AAUIAccountRecoveryViewController _fetchAllCustodianContacts]_block_invoke.140
-- ___63-[AAUICustodianForActionHandler doDestructiveAction:specifier:]_block_invoke.82
-- ___64-[AAUICustodianSetupFlowController _beginAddRecoveryContactFlow]_block_invoke.128
-- ___65-[AAUIMyBenefactorActionHandler _showAuthPromptInViewController:]_block_invoke.102
-- ___66-[AAUIMyBeneficiaryActionHandler _showAuthPromptInViewController:]_block_invoke.103
-- ___67-[AAUICustodianSetupFlowController _continueAddRecoveryContactFlow]_block_invoke.134
-- ___69-[AAUIAccountRecoveryViewController _syncTrustedContactsFromCloudKit]_block_invoke.131
-- ___70-[AAUIAccountRecoveryViewController showReviewCustodiansModalIfNeeded]_block_invoke.105
-- ___70-[AAUICustodianSetupFlowController _beginAddRecoveryContactUpsellFlow]_block_invoke.135
-- ___70-[AAUICustodianSetupFlowController _beginAddRecoveryContactUpsellFlow]_block_invoke.135.cold.1
-- ___70-[AAUICustodianSetupFlowController _beginAddRecoveryContactUpsellFlow]_block_invoke.135.cold.2
-- ___70-[AAUICustodianSetupFlowController _beginAddRecoveryContactUpsellFlow]_block_invoke.136
-- ___70-[AAUICustodianSetupFlowController _beginAddRecoveryContactUpsellFlow]_block_invoke.136.cold.1
-- ___70-[AAUICustodianSetupFlowController _beginAddRecoveryContactUpsellFlow]_block_invoke.136.cold.2
-- ___70-[AAUICustodianSetupFlowController _beginAddRecoveryContactUpsellFlow]_block_invoke.137
-- ___70-[AAUICustodianSetupFlowController _beginAddRecoveryContactUpsellFlow]_block_invoke.137.cold.1
-- ___70-[AAUICustodianSetupFlowController _beginAddRecoveryContactUpsellFlow]_block_invoke.138
-- ___70-[AAUICustodianSetupFlowController _beginAddRecoveryContactUpsellFlow]_block_invoke.138.cold.1
-- ___70-[AAUICustodianSetupFlowController _beginAddRecoveryContactUpsellFlow]_block_invoke.139
-- ___70-[AAUICustodianSetupFlowController _beginAddRecoveryContactUpsellFlow]_block_invoke.139.cold.1
-- ___71-[AAUICloudSyncServicesController verifyAccountWithAppleID:completion:]_block_invoke.149
-- ___72-[AAUICDPCustodianHook custodianSetupFlowControllerDidFinish:withError:]_block_invoke.79
-- ___72-[AAUICDPCustodianHook custodianSetupFlowControllerDidFinish:withError:]_block_invoke.79.cold.1
-- ___72-[AAUICDPCustodianHook custodianSetupFlowControllerDidFinish:withError:]_block_invoke.79.cold.2
-- ___74-[AAUIMyCustodianActionHandler _checkRecoveryContactAndRecoveryKeyStatus:]_block_invoke.101
-- ___75-[AAUISignInFlowController signInWithIDMSAuthenticationResults:completion:]_block_invoke.124
-- ___75-[AAUISignInFlowController signInWithIDMSAuthenticationResults:completion:]_block_invoke.129
-- ___75-[AAUISignInFlowController signInWithIDMSAuthenticationResults:completion:]_block_invoke.130
-- ___75-[AAUISignInFlowController signInWithIDMSAuthenticationResults:completion:]_block_invoke.131
-- ___76-[AAUICustodianSetupFlowController _beginAddRecoveryContactAfterSelectFlow:]_block_invoke.131
-- ___76-[AAUICustodianSetupFlowController _beginAddRecoveryContactAfterSelectFlow:]_block_invoke.131.cold.1
-- ___76-[AAUICustodianSetupFlowController _beginAddRecoveryContactAfterSelectFlow:]_block_invoke.132
-- ___76-[AAUICustodianSetupFlowController _beginAddRecoveryContactAfterSelectFlow:]_block_invoke.133
-- ___76-[AAUICustodianSetupFlowController _beginAddRecoveryContactAfterSelectFlow:]_block_invoke.133.cold.1
-- ___77-[AAUICustodianRecoveryApprovalController _createCancelActionWithCompletion:]_block_invoke.92
-- ___77-[AAUICustodianRecoveryApprovalController _createEscapeActionWithCompletion:]_block_invoke.90
-- ___78-[AAUIGenericTermsRemoteUI _cleanUpAndDismissWithSuccess:agreeURL:serverInfo:]_block_invoke.165
-- ___78-[AAUIGenericTermsRemoteUI _cleanUpAndDismissWithSuccess:agreeURL:serverInfo:]_block_invoke.166
-- ___78-[AAUIGenericTermsRemoteUI _cleanUpAndDismissWithSuccess:agreeURL:serverInfo:]_block_invoke.167
-- ___79-[AAUICloudSyncServicesController completeEnablingCloudServicesWithCompletion:]_block_invoke.147
-- ___79-[AAUISignInFlowController _presentValidationErrorAlert:forAccount:completion:]_block_invoke.199
-- ___82-[AAUICustodianRecoveryApprovalController _createValidationHandlerWithCompletion:]_block_invoke.93
-- ___82-[AAUICustodianRecoveryApprovalController _createValidationHandlerWithCompletion:]_block_invoke.98
-- ___82-[AAUISignInFlowController _promptToEnableFindMyIfPossibleWithAccount:completion:]_block_invoke.167
-- ___82-[AAUISignInFlowController _promptToEnableFindMyIfPossibleWithAccount:completion:]_block_invoke_2.172
-- ___82-[AAUISignInFlowController _validateCDPStateForAccount:withCDPContext:completion:]_block_invoke.158
-- ___82-[AAUISignInFlowController _validateCDPStateForAccount:withCDPContext:completion:]_block_invoke.159
-- ___82-[AAUISignInFlowController _validateCDPStateForAccount:withCDPContext:completion:]_block_invoke.160
-- ___83-[AAUICustodianRecoveryApprovalController _actionsForRecoveryCodeAlert:completion:]_block_invoke.126
-- ___86-[AAUICustodianRecoveryApprovalController _promptForRecoveryCodeLegacyWithCompletion:]_block_invoke.120
-- ___86-[AAUICustodianRecoveryApprovalController _promptForRecoveryCodeLegacyWithCompletion:]_block_invoke.120.cold.1
-- ___86-[AAUICustodianRecoveryApprovalController _promptForRecoveryCodeLegacyWithCompletion:]_block_invoke.121
-- ___86-[AAUICustodianRecoveryApprovalController _promptForRecoveryCodeLegacyWithCompletion:]_block_invoke.122
-- ___86-[AAUICustodianRecoveryApprovalController _promptForRecoveryCodeLegacyWithCompletion:]_block_invoke.122.cold.1
-- ___86-[AAUICustodianRecoveryApprovalController _promptForRecoveryCodeLegacyWithCompletion:]_block_invoke.122.cold.2
-- ___86-[AAUICustodianRecoveryApprovalController _promptForRecoveryCodeLegacyWithCompletion:]_block_invoke.123
-- ___86-[AAUICustodianRecoveryApprovalController _promptForRecoveryCodeLegacyWithCompletion:]_block_invoke.123.cold.1
-- ___86-[AAUICustodianRecoveryApprovalController _promptForRecoveryCodeLegacyWithCompletion:]_block_invoke.124
-- ___block_literal_global.129
-- ___block_literal_global.158
-- ___block_literal_global.162
-- ___block_literal_global.176
-- ___block_literal_global.229
-- ___block_literal_global.234
-- ___block_literal_global.97
-- ___swift_closure_destructor.264
-- ___swift_closure_destructor.268
-- ___swift_closure_destructor.272
-- ___swift_closure_destructor.281
-- ___swift_closure_destructor.287
-- ___swift_closure_destructor.315
-- ___swift_closure_destructor.321
-- ___swift_closure_destructor.324
-- ___swift_closure_destructor.328
-- ___swift_closure_destructor.332
-- ___swift_closure_destructor.342
-- ___swift_closure_destructor.346
-- ___swift_closure_destructor.350
-- ___swift_closure_destructor.354
-- ___swift_closure_destructor.382
-- ___swift_closure_destructor.386
-- ___swift_closure_destructor.390
-- ___swift_closure_destructor.405
-- ___swift_closure_destructor.420
-- ___swift_closure_destructor.427
-- ___swift_closure_destructor.430
-- ___swift_closure_destructor.433
-- ___swift_closure_destructor.437
-- ___swift_closure_destructor.441
-- ___swift_closure_destructor.445
-- ___swift_closure_destructor.449
-- ___swift_closure_destructor.453
-- ___swift_closure_destructor.466
-- ___swift_closure_destructor.470
-- ___swift_closure_destructor.474
-- ___swift_closure_destructor.489
-- ___swift_closure_destructor.497
-- ___swift_closure_destructor.516
-- ___swift_closure_destructor.520
-- ___swift_closure_destructor.524
-- ___swift_closure_destructor.528
-- ___swift_closure_destructor.532
-- ___swift_closure_destructor.535
-- ___swift_closure_destructor.538
-- ___swift_closure_destructor.542
-- ___swift_closure_destructor.546
-- ___swift_closure_destructor.550
-- ___swift_closure_destructor.554
-- ___swift_closure_destructor.558
-- ___swift_closure_destructor.573
-- ___swift_closure_destructor.577
-- ___swift_closure_destructor.581
-- ___swift_closure_destructor.585
-- ___swift_closure_destructor.589
-- ___swift_closure_destructor.592
-- ___swift_closure_destructor.596
-- ___swift_closure_destructor.600
-- ___swift_closure_destructor.604
-- _block_copy_helper.256
-- _block_copy_helper.283
-- _block_copy_helper.289
-- _block_copy_helper.296
-- _block_copy_helper.303
-- _block_copy_helper.317
-- _block_copy_helper.364
-- _block_copy_helper.407
-- _block_copy_helper.6
-- _block_descriptor.258
-- _block_descriptor.285
-- _block_descriptor.291
-- _block_descriptor.298
-- _block_descriptor.305
-- _block_descriptor.319
-- _block_descriptor.366
-- _block_descriptor.409
-- _block_descriptor.8
-- _block_destroy_helper.257
-- _block_destroy_helper.284
-- _block_destroy_helper.290
-- _block_destroy_helper.297
-- _block_destroy_helper.304
-- _block_destroy_helper.318
-- _block_destroy_helper.365
-- _block_destroy_helper.408
-- _block_destroy_helper.7
-- _get_underlying_type_ref 7SwiftUI4ViewPAAEAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOQr.12
-- _get_underlying_witness 7SwiftUI4ViewPAAEAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOqd__AaBHC.13
-- _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA16SubscriptionViewVySo20NSNotificationCenterC10FoundationE9PublisherVAA0F0PAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAA6ZStackVyAA012_ConditionalD0VyAL012AppleAccountB0E24sharedNameAndPhotoEditor11isPresentedQrAA7BindingVySbG_tFQOyAlAE0K10TapGesture5count7performQrSi_yyctFQOyACyAA6VStackVyAA05TupleD0VyACyACyACyACyACyAA5ImageVAA18_AspectRatioLayoutVGAA24_ForegroundStyleModifierVyAA5ColorVGGAA31AccessibilityAttachmentModifierVGAT10AvatarSizeVGAA11_ClipEffectVyAA6CircleVGG_ACyACyAlAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyACyACyAA6ButtonVyAA4TextVGAA30_EnvironmentKeyWritingModifierVyAA11ControlSizeOGGAA24_BackgroundStyleModifierVyA13_GG_AA19BorderedButtonStyleVQo_A23_yAA16RoundedRectangleVGGAA14_PaddingLayoutVGSgA2_yA4_yA33__A33_SgQPGGSgQPGGA17_G_Qo__Qo_AlAE5sheetAV0K7Dismiss7contentQrAY_yycSgqd__yctAaKRd__lFQOyA63__ACyAT27ContactVisualIdentityPickerVAA25_AppearanceActionModifierVGQo_GG_AH4DataVSgQo_GA72_GA53_GA43_GAaKHPA83_AaKHPA82_AaKHPA81_AaKHPyHC_A72_AA0F8ModifierHPyHCHC_A53_AAA85_HPyHCHC_A43_AAA85_HPyHCHC.28
-- _get_witness_table 7SwiftUI19_ConditionalContentVyACyACy012AppleAccountB014OnboardingViewVyAD016LegacySetupIntroH5ModelCGAFyAD0i15ContactSelectorhL0CGGACyAD07Trustedm6PickerH0VAFyAD0i9ShareDatahL0CGGGACyACyAFyAD0iq10KeyOptionshL0CGAFyAD0i13InviteMessagehL0CGGAFyAD0ij8CompletehL0CGGGAA0H0HPAtAA5_HPAmAA5_HPAiAA5_HPyHC_AlAA5_HPyHCHC_AsAA5_HPAoAA5_HPyHC_ArAA5_HPyHCHCHC_A3_AAA5_HPA_AAA5_HPAwAA5_HPyHC_AzAA5_HPyHCHC_A2_AAA5_HPyHCHCHC.54
-- _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE26interactiveDismissDisabledyQrSbFQOyAcAE5sheet4item02onE07contentQrAA7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lFQOyAcAE5alert_11isPresented7actions7messageQrqd___AJySbGqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA15NavigationStackVyAA0W4PathV012AppleAccountB00W16ControllerReaderVyAcAE21navigationDestination3for11destinationQrqd__m_qd_0_qd__ctSHRd__AaBRd_0_r0_lFQOyAA19_ConditionalContentVyA9_yA9_yA2_010OnboardingC0VyA2_016LegacySetupIntroC5ModelCGA11_yA2_021LegacyContactSelectorC5ModelCGGA9_yA2_020TrustedContactPickerC0VA11_yA2_015LegacyShareDataC5ModelCGGGA9_yA9_yA11_yA2_021LegacyShareKeyOptionsC5ModelCGA11_yA2_019LegacyInviteMessageC5ModelCGGA11_yA2_019LegacySetupCompleteC5ModelCGGG_A2_15LegacySetupStepOA37_Qo_GG_Qo__SSAA6ButtonVyAA4TextVGA47_Qo__A39_A37_Qo__Qo_HO.18
-- _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA15ModifiedContentVyAcAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAC6TipKitE0kO9Dismissal7performQryAO0O0_pYbScMYccSg_tFQOyAcOE07popoverO0_11isPresented16attachmentAnchor9arrowEdge6actionQrAoR_pSg_AA7BindingVySbGSgAA017PopoverAttachmentW0OAA0Y0OSgyAO4TipsO6ActionVctFQOyAKyAKyAA6ButtonVyAKyAA4TextVAA14_OpacityEffectVGGAA32_EnvironmentKeyTransformModifierVySbGGAA31AccessibilityAttachmentModifierVG_Qo__Qo__SbQo_AA25_AppearanceActionModifierVG_Qo_HO.106
-- _objc_msgSend$_makeOpNotAllowedAlertForAddCustodian:
-- _objc_msgSend$initWithLocalContact:custodianID:
-- _objc_msgSend$isRCUpsellEnabled
-- _objc_msgSend$isUpdatedRCFlowEnabled
-- _objc_msgSend$makeCustodianAddOpNotAllowedAlert
-- _objc_msgSend$setBaseBackgroundColor:
-- _objc_msgSend$setBaseForegroundColor:
+- _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA16SubscriptionViewVySo20NSNotificationCenterC10FoundationE9PublisherVAA0F0PAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAA6ZStackVyAA012_ConditionalD0VyAL012AppleAccountB0E24sharedNameAndPhotoEditor11isPresentedQrAA7BindingVySbG_tFQOyAlAE0K10TapGesture5count7performQrSi_yyctFQOyACyAA6VStackVyAA05TupleD0VyACyACyACyACyACyAA5ImageVAA18_AspectRatioLayoutVGAA24_ForegroundStyleModifierVyAA5ColorVGGAA31AccessibilityAttachmentModifierVGAT10AvatarSizeVGAA11_ClipEffectVyAA6CircleVGG_ACyACyAlAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyACyACyAA6ButtonVyAA4TextVGAA30_EnvironmentKeyWritingModifierVyAA11ControlSizeOGGAA24_BackgroundStyleModifierVyA13_GG_AA19BorderedButtonStyleVQo_A23_yAA16RoundedRectangleVGGAA14_PaddingLayoutVGSgA2_yA4_yA33__A33_SgQPGGSgQPGGA17_G_Qo__Qo_AlAE5sheetAV0K7Dismiss7contentQrAY_yycSgqd__yctAaKRd__lFQOyA63__ACyAT27ContactVisualIdentityPickerVAA25_AppearanceActionModifierVGQo_GG_AH4DataVSgQo_GA72_GA53_GA43_GAaKHPA83_AaKHPA82_AaKHPA81_AaKHPyHC_A72_AA0F8ModifierHPyHCHC_A53_AAA85_HPyHCHC_A43_AAA85_HPyHCHC
+- _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE26interactiveDismissDisabledyQrSbFQOyAcAE5sheet4item02onE07contentQrAA7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lFQOyAcAE5alert_11isPresented7actions7messageQrqd___AJySbGqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA15NavigationStackVyAA0W4PathV012AppleAccountB00W16ControllerReaderVyAcAE21navigationDestination3for11destinationQrqd__m_qd_0_qd__ctSHRd__AaBRd_0_r0_lFQOyAA19_ConditionalContentVyA9_yA9_yA2_010OnboardingC0VyA2_016LegacySetupIntroC5ModelCGA11_yA2_021LegacyContactSelectorC5ModelCGGA9_yA2_020TrustedContactPickerC0VA11_yA2_015LegacyShareDataC5ModelCGGGA9_yA9_yA11_yA2_021LegacyShareKeyOptionsC5ModelCGA11_yA2_019LegacyInviteMessageC5ModelCGGA11_yA2_019LegacySetupCompleteC5ModelCGGG_A2_15LegacySetupStepOA37_Qo_GG_Qo__SSAA6ButtonVyAA4TextVGA47_Qo__A39_A37_Qo__Qo_HO
+- _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA15ModifiedContentVyAcAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAC6TipKitE0kO9Dismissal7performQryAO0O0_pYbScMYccSg_tFQOyAcOE07popoverO0_11isPresented16attachmentAnchor9arrowEdge6actionQrAoR_pSg_AA7BindingVySbGSgAA017PopoverAttachmentW0OAA0Y0OSgyAO4TipsO6ActionVctFQOyAKyAKyAA6ButtonVyAKyAA4TextVAA14_OpacityEffectVGGAA32_EnvironmentKeyTransformModifierVySbGGAA31AccessibilityAttachmentModifierVG_Qo__Qo__SbQo_AA25_AppearanceActionModifierVG_Qo_HO
 - _symbolic SaySo18NSLayoutConstraintCG
 - _symbolic _____yAAyAAy_____y__________y_____y_____y_____y_____yAAy_____y_____yAAyAAyAAyAAyAAy__________G_____y_____GG_____G_____G_____y_____GG_AAyAAy_____yAAyAAy_____y_____G_____y_____GG_____yALGG______Qo_ASy_____GG_____GSgAFyAGyAX_AXSgQPGGSgQPGGAOG_Qo__Qo______yA20__AAy__________GQo_GG______SgQo_GA23_GA10_GA3_G 7SwiftUI15ModifiedContentV AA16SubscriptionViewV So20NSNotificationCenterC10FoundationE9PublisherV AA0F0PAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQO AA6ZStackV AA012_ConditionalD0V AL012AppleAccountB0E24sharedNameAndPhotoEditor11isPresentedQrAA7BindingVySbG_tFQO AlAE0K10TapGesture5count7performQrSi_yyctFQO AA6VStackV AA05TupleD0V AA5ImageV AA18_AspectRatioLayoutV AA24_ForegroundStyleModifierV AA5ColorV AA31AccessibilityAttachmentModifierV AT10AvatarSizeV AA11_ClipEffectV AA6CircleV AlAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQO AA6ButtonV AA4TextV AA30_EnvironmentKeyWritingModifierV AA11ControlSizeO AA24_BackgroundStyleModifierV AA19BorderedButtonStyleV AA16RoundedRectangleV AA14_PaddingLayoutV AlAE5sheetAV0K7Dismiss7contentQrAY_yycSgqd__yctAaKRd__lFQO AT27ContactVisualIdentityPickerV AA25_AppearanceActionModifierV AH4DataV
 - _symbolic _____yAAy_____yAAy__________GG_____ySbGG_____G 7SwiftUI15ModifiedContentV AA6ButtonV AA4TextV AA14_OpacityEffectV AA32_EnvironmentKeyTransformModifierV AA023AccessibilityAttachmentL0V
@@ -774,5 +266,4 @@ CStrings:
 - "RCUpsellMiniBuddy"
 - "RecoveryContactSharePlay"
 - "UpdatedRCFlow"
-
 ```

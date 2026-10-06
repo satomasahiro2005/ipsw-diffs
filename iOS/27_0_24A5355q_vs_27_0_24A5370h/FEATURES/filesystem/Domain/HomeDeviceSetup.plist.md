@@ -4,9 +4,6 @@
 
 ```diff
 
- 		<key>DevelopmentPhase</key>
- 		<string>FeatureComplete</string>
- 	</dict>
 -	<key>sysdrop</key>
 -	<dict>
 -		<key>DevelopmentPhase</key>
@@ -22,8 +19,5 @@
 -		<key>DevelopmentPhase</key>
 -		<string>FeatureComplete</string>
 -	</dict>
- 	<key>termsandconditionsv2</key>
- 	<dict>
- 		<key>DevelopmentPhase</key>
 
 ```

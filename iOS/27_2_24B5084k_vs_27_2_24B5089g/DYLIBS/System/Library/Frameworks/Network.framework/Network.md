@@ -2,61 +2,31 @@
 
 > `/System/Library/Frameworks/Network.framework/Network`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x146208c` | `0x14624dc` | **`+0x450`** |
+| `__TEXT.__cstring` | `0x745f0` | `0x74640` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x4545c` | `0x45474` | **`+0x18`** |
+| `__AUTH_CONST.__objc_const` | `0x2e268` | `0x2e278` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3b08` | `0x3b10` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x86f4` | `0x86fc` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x26218` | `0x26220` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -6681.40.80.0.0
--  __TEXT.__text: 0x1432b2c
 +6681.40.82.0.0
-+  __TEXT.__text: 0x1432f7c
-   __TEXT.__lazy_helpers: 0x13b0
-   __TEXT.__init_offsets: 0x5cc
--  __TEXT.__objc_methlist: 0x86f4
-+  __TEXT.__objc_methlist: 0x86fc
-   __TEXT.__const: 0x101770
--  __TEXT.__cstring: 0x745f0
-+  __TEXT.__cstring: 0x74640
-   __TEXT.__constg_swiftt: 0xf868
-   __TEXT.__swift5_typeref: 0xcefd
-   __TEXT.__swift5_reflstr: 0xe405
 
-   __TEXT.__swift_as_entry: 0xa40
-   __TEXT.__swift_as_ret: 0xa08
-   __TEXT.__swift_as_cont: 0x1704
--  __TEXT.__gcc_except_tab: 0x4545c
--  __TEXT.__unwind_info: 0x2d578
-+  __TEXT.__gcc_except_tab: 0x45474
-+  __TEXT.__unwind_info: 0x2d598
-   __TEXT.__eh_frame: 0x222e0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x5a8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3b08
-+  __DATA_CONST.__objc_selrefs: 0x3b10
-   __DATA_CONST.__objc_protorefs: 0x1b8
-   __DATA_CONST.__objc_superrefs: 0x6a8
-   __DATA_CONST.__objc_arraydata: 0x8
-   __DATA_CONST.__got: 0x1220
-   __AUTH_CONST.__const: 0x3d390
-   __AUTH_CONST.__cfstring: 0x9e80
--  __AUTH_CONST.__objc_const: 0x2e268
-+  __AUTH_CONST.__objc_const: 0x2e278
-   __AUTH_CONST.__weak_auth_got: 0x20
-   __AUTH_CONST.__lazy_load_got: 0x1d0
-   __AUTH_CONST.__objc_arrayobj: 0x18
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 45573
--  Symbols:   33079
+-  Symbols:   31681
 -  CStrings:  32155
 +  Functions: 45575
-+  Symbols:   33082
++  Symbols:   31684
 +  CStrings:  32157
- 
 Symbols:
 + -[NWURLSessionTaskTransactionMetrics _effectiveTrafficClass]
 + GCC_except_table10004

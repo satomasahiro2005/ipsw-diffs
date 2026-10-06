@@ -2,100 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/AppleIntelligenceReportingProcessing.framework/AppleIntelligenceReportingProcessing`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__objc_classlist`
-- `__AUTH_CONST.__cfstring`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xed8a8` | `0xfa92c` | **`+0xd084`** |
+| `__TEXT.__const` | `0x6b66` | `0x8068` | **`+0x1502`** |
+| `__TEXT.__oslogstring` | `0x4b1e` | `0x5141` | **`+0x623`** |
+| `__TEXT.__cstring` | `0x49d3` | `0x4e63` | **`+0x490`** |
+| `__TEXT.__unwind_info` | `0x31c8` | `0x35d8` | **`+0x410`** |
+| `__DATA.__bss` | `0x6410` | `0x6810` | **`+0x400`** |
+| `__DATA_CONST.__objc_selrefs` | `0x610` | `0x9c0` | **`+0x3b0`** |
+| `__AUTH_CONST.__auth_got` | `0x16e0` | `0x19e8` | **`+0x308`** |
+| `__AUTH_CONST.__const` | `0x8ec0` | `0x9150` | **`+0x290`** |
+| `__TEXT.__swift5_typeref` | `0x25d3` | `0x27e6` | **`+0x213`** |
+| `__TEXT.__swift5_fieldmd` | `0x2ea0` | `0x3074` | **`+0x1d4`** |
+| `__TEXT.__eh_frame` | `0x5a30` | `0x5bf0` | **`+0x1c0`** |
+| `__TEXT.__swift5_reflstr` | `0x2b5d` | `0x2d15` | **`+0x1b8`** |
+| `__DATA.__data` | `0xfd8` | `0x10a8` | **`+0xd0`** |
+| `__TEXT.__constg_swiftt` | `0x1f3c` | `0x1ffc` | **`+0xc0`** |
+| `__AUTH.__data` | `0xfb8` | `0x1040` | **`+0x88`** |
+| `__DATA_DIRTY.__data` | `0x1a18` | `0x1aa0` | **`+0x88`** |
+| `__AUTH_CONST.__objc_const` | `0x1740` | `0x17c0` | **`+0x80`** |
+| `__DATA_CONST.__const` | `0x6d8` | `0x758` | **`+0x80`** |
+| `__TEXT.__swift5_capture` | `0x22dc` | `0x233c` | **`+0x60`** |
+| `__DATA.__common` | `0x68` | `0xa0` | **`+0x38`** |
+| `__TEXT.__swift5_assocty` | `0x1b0` | `0x1c8` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0x3dc` | `0x3e8` | **`+0xc`** |
+| `__TEXT.__swift5_types` | `0x1c8` | `0x1d4` | **`+0xc`** |
+
+### Other Changes
 
 ```diff
 
 -212.0.0.0.0
--  __TEXT.__text: 0xed8a8
--  __TEXT.__const: 0x6b66
--  __TEXT.__swift5_typeref: 0x25d3
--  __TEXT.__cstring: 0x49d3
--  __TEXT.__oslogstring: 0x4b1e
--  __TEXT.__swift5_reflstr: 0x2b5d
--  __TEXT.__swift5_assocty: 0x1b0
--  __TEXT.__swift5_fieldmd: 0x2ea0
--  __TEXT.__constg_swiftt: 0x1f3c
 +220.0.0.0.0
-+  __TEXT.__text: 0xfa92c
-+  __TEXT.__const: 0x8068
-+  __TEXT.__swift5_typeref: 0x27e6
-+  __TEXT.__cstring: 0x4e63
-+  __TEXT.__oslogstring: 0x5141
-+  __TEXT.__swift5_reflstr: 0x2d15
-+  __TEXT.__swift5_assocty: 0x1c8
-+  __TEXT.__swift5_fieldmd: 0x3074
-+  __TEXT.__constg_swiftt: 0x1ffc
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_protos: 0x48
--  __TEXT.__swift5_proto: 0x3dc
--  __TEXT.__swift5_types: 0x1c8
-+  __TEXT.__swift5_proto: 0x3e8
-+  __TEXT.__swift5_types: 0x1d4
-   __TEXT.__swift_as_entry: 0xe8
-   __TEXT.__swift_as_ret: 0x138
-   __TEXT.__swift_as_cont: 0x208
--  __TEXT.__swift5_capture: 0x22dc
-+  __TEXT.__swift5_capture: 0x233c
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x31c8
--  __TEXT.__eh_frame: 0x5a30
-+  __TEXT.__unwind_info: 0x35d8
-+  __TEXT.__eh_frame: 0x5bf0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x6d8
-+  __DATA_CONST.__const: 0x758
-   __DATA_CONST.__objc_classlist: 0x90
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x610
-+  __DATA_CONST.__objc_selrefs: 0x9c0
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x8ec0
-+  __AUTH_CONST.__const: 0x9150
-   __AUTH_CONST.__cfstring: 0x7e0
--  __AUTH_CONST.__objc_const: 0x1740
--  __AUTH_CONST.__auth_got: 0x16e0
--  __AUTH.__data: 0xfb8
--  __DATA.__data: 0xfd8
--  __DATA.__bss: 0x6410
--  __DATA.__common: 0x68
-+  __AUTH_CONST.__objc_const: 0x17c0
-+  __AUTH_CONST.__auth_got: 0x19e8
-+  __AUTH.__data: 0x1040
-+  __DATA.__data: 0x10a8
-+  __DATA.__bss: 0x6810
-+  __DATA.__common: 0xa0
-   __DATA_DIRTY.__objc_data: 0xf0
--  __DATA_DIRTY.__data: 0x1a18
-+  __DATA_DIRTY.__data: 0x1aa0
-   __DATA_DIRTY.__common: 0x100
-   __DATA_DIRTY.__bss: 0x1000
-   - /System/Library/Frameworks/Combine.framework/Combine
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7075
--  Symbols:   10995
+-  Symbols:   10801
 -  CStrings:  814
 +  Functions: 7533
-+  Symbols:   11638
++  Symbols:   11326
 +  CStrings:  857
- 
 Symbols:
 + _$s10Foundation4UUIDV19SiriInstrumentationE7si_dataAA4DataVyF
 + _$s10Foundation4UUIDVACSHAAWlTm
@@ -612,124 +560,6 @@ Symbols:
 + _keypath_get_selector_timeToFirstTokenSeconds
 + _keypath_get_selector_timeToLastTokenSeconds
 + _keypath_get_selector_tokenRate
-+ _objc_msgSend$description
-+ _objc_msgSend$draftModelInferenceCallCount
-+ _objc_msgSend$draftModelTotalInferenceLatencySeconds
-+ _objc_msgSend$draftOutputTokenCount
-+ _objc_msgSend$draftSteps
-+ _objc_msgSend$extendLatencySeconds
-+ _objc_msgSend$firstTokenPreprocessingTimeMillis
-+ _objc_msgSend$fragmentKVCacheHitCount
-+ _objc_msgSend$fragmentKVCacheMissCount
-+ _objc_msgSend$ifpExpertLoadActivationParametersInBillions
-+ _objc_msgSend$ifpExpertLoadCacheHitCount
-+ _objc_msgSend$ifpExpertLoadCacheMissCount
-+ _objc_msgSend$ifpExpertLoadLatencySeconds
-+ _objc_msgSend$ifpExpertSelectionInitialPromptLatencySeconds
-+ _objc_msgSend$inferenceProvider
-+ _objc_msgSend$initWithBytesAsData:
-+ _objc_msgSend$inputTokenizationTimeMillis
-+ _objc_msgSend$inputTokensCount
-+ _objc_msgSend$isConnectionUsed
-+ _objc_msgSend$isKvCachePublished
-+ _objc_msgSend$isKvCacheReuseIsFromSameEnsemble
-+ _objc_msgSend$isKvCacheReused
-+ _objc_msgSend$kvCacheReuseEffectiveness
-+ _objc_msgSend$kvCacheReuseFetchLatencyMillis
-+ _objc_msgSend$kvCacheReuseFetchSizeBytes
-+ _objc_msgSend$kvCacheReuseNonStaticTokensCount
-+ _objc_msgSend$kvCacheReusePublishLatencyMillis
-+ _objc_msgSend$kvCacheReusePublishSizeBytes
-+ _objc_msgSend$modelVersion
-+ _objc_msgSend$outputTokensCount
-+ _objc_msgSend$prefixKVCacheTokensMatchCount
-+ _objc_msgSend$prefixTriePromptNumBytesReadFromFile
-+ _objc_msgSend$prefixTriePromptNumBytesRequestedFromFile
-+ _objc_msgSend$prefixTriePromptNumTokensReadFromFile
-+ _objc_msgSend$prefixTriePromptNumTokensRequestedFromFile
-+ _objc_msgSend$promptModulesKVCacheTokensMatchCount
-+ _objc_msgSend$requestCachedTokensCount
-+ _objc_msgSend$requestMissedTokensCount
-+ _objc_msgSend$setCloudOsVersion:
-+ _objc_msgSend$setCode:
-+ _objc_msgSend$setCompletionEstimateMs:
-+ _objc_msgSend$setCompletionEstimateRemainingMs:
-+ _objc_msgSend$setComponent:
-+ _objc_msgSend$setDomain:
-+ _objc_msgSend$setDraftModelInferenceCallCount:
-+ _objc_msgSend$setDraftModelTotalInferenceLatencySeconds:
-+ _objc_msgSend$setDraftOutputTokenCount:
-+ _objc_msgSend$setDraftSteps:
-+ _objc_msgSend$setElapsedTimeMs:
-+ _objc_msgSend$setErrors:
-+ _objc_msgSend$setEventMetadata:
-+ _objc_msgSend$setExtendLatencySeconds:
-+ _objc_msgSend$setFetchedAtTimeSinceWarmupMs:
-+ _objc_msgSend$setFirstTokenPreprocessingTimeMillis:
-+ _objc_msgSend$setFragmentKVCacheHitCount:
-+ _objc_msgSend$setFragmentKVCacheMissCount:
-+ _objc_msgSend$setGmsExtendedInferenceMetrics:
-+ _objc_msgSend$setGmsId:
-+ _objc_msgSend$setGmsNetworkConnectionEvaluated:
-+ _objc_msgSend$setIfpExpertLoadActivationParametersInBillions:
-+ _objc_msgSend$setIfpExpertLoadCacheHitCount:
-+ _objc_msgSend$setIfpExpertLoadCacheMissCount:
-+ _objc_msgSend$setIfpExpertLoadLatencySeconds:
-+ _objc_msgSend$setIfpExpertSelectionInitialPromptLatencySeconds:
-+ _objc_msgSend$setInferenceProvider:
-+ _objc_msgSend$setInputStreamStepIdentifier:
-+ _objc_msgSend$setInputTokenizationTimeMillis:
-+ _objc_msgSend$setInputTokensCount:
-+ _objc_msgSend$setIsConnected:
-+ _objc_msgSend$setIsConnectionUsed:
-+ _objc_msgSend$setIsKvCachePublished:
-+ _objc_msgSend$setIsKvCacheReuseIsFromSameEnsemble:
-+ _objc_msgSend$setIsKvCacheReused:
-+ _objc_msgSend$setIsMakingProgress:
-+ _objc_msgSend$setIsWebSearchUsed:
-+ _objc_msgSend$setKvCacheLocation:
-+ _objc_msgSend$setKvCacheReuseEffectiveness:
-+ _objc_msgSend$setKvCacheReuseFetchLatencyMillis:
-+ _objc_msgSend$setKvCacheReuseFetchSizeBytes:
-+ _objc_msgSend$setKvCacheReuseNonStaticTokensCount:
-+ _objc_msgSend$setKvCacheReusePublishLatencyMillis:
-+ _objc_msgSend$setKvCacheReusePublishSizeBytes:
-+ _objc_msgSend$setKvCacheStorageType:
-+ _objc_msgSend$setLatestNetworkConnectionProgressReport:
-+ _objc_msgSend$setModelVersion:
-+ _objc_msgSend$setOutputTokensCount:
-+ _objc_msgSend$setPrefixKVCacheTokensMatchCount:
-+ _objc_msgSend$setPrefixTriePromptNumBytesReadFromFile:
-+ _objc_msgSend$setPrefixTriePromptNumBytesRequestedFromFile:
-+ _objc_msgSend$setPrefixTriePromptNumTokensReadFromFile:
-+ _objc_msgSend$setPrefixTriePromptNumTokensRequestedFromFile:
-+ _objc_msgSend$setPromptModulesKVCacheTokensMatchCount:
-+ _objc_msgSend$setReportedAtTimeSinceWarmupMs:
-+ _objc_msgSend$setRequestCachedTokensCount:
-+ _objc_msgSend$setRequestMissedTokensCount:
-+ _objc_msgSend$setRttEstimateMs:
-+ _objc_msgSend$setSource:
-+ _objc_msgSend$setSpeculativeDecodingAcceptanceRate:
-+ _objc_msgSend$setStartedAtTimeSinceWarmupMs:
-+ _objc_msgSend$setTarget:
-+ _objc_msgSend$setTargetModelInferenceCallCount:
-+ _objc_msgSend$setTargetModelTotalInferenceLatencySeconds:
-+ _objc_msgSend$setTargetOutputTokenCount:
-+ _objc_msgSend$setTimeToFirstTokenSeconds:
-+ _objc_msgSend$setTimeToLastTokenSeconds:
-+ _objc_msgSend$setTokenRate:
-+ _objc_msgSend$setTotalInferenceTimeSeconds:
-+ _objc_msgSend$setUseCaseIdentifier:
-+ _objc_msgSend$setUserAccountType:
-+ _objc_msgSend$setUuid:
-+ _objc_msgSend$speculativeDecodingAcceptanceRate
-+ _objc_msgSend$targetModelInferenceCallCount
-+ _objc_msgSend$targetModelTotalInferenceLatencySeconds
-+ _objc_msgSend$targetOutputTokenCount
-+ _objc_msgSend$timeToFirstTokenSeconds
-+ _objc_msgSend$timeToLastTokenSeconds
-+ _objc_msgSend$tokenRate
-+ _objc_msgSend$totalInferenceTimeSeconds
 + _objc_retain_x9
 + _swift_getAtKeyPath
 + _swift_setAtReferenceWritableKeyPath

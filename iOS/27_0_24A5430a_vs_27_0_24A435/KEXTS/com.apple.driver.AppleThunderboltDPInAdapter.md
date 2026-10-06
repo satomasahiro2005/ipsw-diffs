@@ -2,13 +2,8 @@
 
 > `com.apple.driver.AppleThunderboltDPInAdapter`
 
-```diff
+### Section Size Changes
 
- 876.0.0.0.0
-   __TEXT.__cstring: 0x2253
--  __TEXT_EXEC.__text: 0x7d28
-+  __TEXT_EXEC.__text: 0x7e98
-   __TEXT_EXEC.__auth_stubs: 0x1f0
-   __DATA.__data: 0xc8
-   __DATA.__common: 0xd8
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x7d28` | `0x7e98` | **`+0x170`** |

@@ -2,119 +2,65 @@
 
 > `/System/Library/PrivateFrameworks/SiriAnalytics.framework/SiriAnalytics`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10c5bc` | `0x11111c` | **`+0x4b60`** |
+| `__DATA.__bss` | `0xc790` | `0xe280` | **`+0x1af0`** |
+| `__TEXT.__eh_frame` | `0xae5c` | `0xb6ac` | **`+0x850`** |
+| `__AUTH_CONST.__const` | `0x8f68` | `0x8a00` | **`-0x568`** |
+| `__TEXT.__constg_swiftt` | `0x3ec8` | `0x3998` | **`-0x530`** |
+| `__TEXT.__swift5_fieldmd` | `0x3124` | `0x2c14` | **`-0x510`** |
+| `__DATA_DIRTY.__data` | `0x2c28` | `0x28b8` | **`-0x370`** |
+| `__TEXT.__swift5_capture` | `0x17a4` | `0x1b04` | **`+0x360`** |
+| `__AUTH.__data` | `0x17d0` | `0x14b8` | **`-0x318`** |
+| `__TEXT.__unwind_info` | `0x5970` | `0x5c30` | **`+0x2c0`** |
+| `__TEXT.__swift5_reflstr` | `0x243d` | `0x21dd` | **`-0x260`** |
+| `__TEXT.__const` | `0xb870` | `0xb630` | **`-0x240`** |
+| `__AUTH.__objc_data` | `0xb88` | `0xd58` | **`+0x1d0`** |
+| `__DATA_DIRTY.__objc_data` | `0x2020` | `0x1e60` | **`-0x1c0`** |
+| `__DATA.__data` | `0x2b68` | `0x2cc8` | **`+0x160`** |
+| `__TEXT.__cstring` | `0x3f15` | `0x3e1d` | **`-0xf8`** |
+| `__TEXT.__oslogstring` | `0x3c30` | `0x3b9b` | **`-0x95`** |
+| `__TEXT.__swift_as_cont` | `0x780` | `0x814` | **`+0x94`** |
+| `__TEXT.__swift5_typeref` | `0x3960` | `0x38da` | **`-0x86`** |
+| `__DATA_DIRTY.__bss` | `0x338` | `0x2b8` | **`-0x80`** |
+| `__DATA_DIRTY.__common` | `0x1d8` | `0x160` | **`-0x78`** |
+| `__TEXT.__swift5_assocty` | `0x6a8` | `0x630` | **`-0x78`** |
+| `__AUTH_CONST.__auth_got` | `0x1700` | `0x1758` | **`+0x58`** |
+| `__TEXT.__swift5_types` | `0x474` | `0x41c` | **`-0x58`** |
+| `__TEXT.__swift_as_ret` | `0x404` | `0x448` | **`+0x44`** |
+| `__DATA_CONST.__const` | `0xfc0` | `0xff0` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x2210` | `0x21e0` | **`-0x30`** |
+| `__DATA_CONST.__got` | `0x850` | `0x878` | **`+0x28`** |
+| `__TEXT.__swift5_builtin` | `0x1b8` | `0x190` | **`-0x28`** |
+| `__TEXT.__swift_as_entry` | `0x39c` | `0x3c4` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0xec0` | `0xee0` | **`+0x20`** |
+| `__TEXT.__swift5_mpenum` | `0x7c` | `0x5c` | **`-0x20`** |
+| `__TEXT.__swift5_protos` | `0x5c` | `0x3c` | **`-0x20`** |
+| `__DATA.__common` | `0x2b8` | `0x2d0` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0x794` | `0x7a8` | **`+0x14`** |
+| `__AUTH_CONST.__objc_const` | `0x6ac8` | `0x6ac0` | **`-0x8`** |
+| `__DATA.__objc_ivar` | `0x1f8` | `0x200` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x368` | `0x370` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x14a8` | `0x14a0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.85.1.0.0
--  __TEXT.__text: 0xff380
--  __TEXT.__objc_methlist: 0x2210
--  __TEXT.__const: 0xb870
--  __TEXT.__constg_swiftt: 0x3ec8
--  __TEXT.__swift5_typeref: 0x3960
--  __TEXT.__swift5_reflstr: 0x243d
--  __TEXT.__swift5_fieldmd: 0x3124
--  __TEXT.__swift5_builtin: 0x1b8
--  __TEXT.__swift5_assocty: 0x6a8
--  __TEXT.__cstring: 0x3f15
--  __TEXT.__swift5_proto: 0x794
--  __TEXT.__swift5_types: 0x474
--  __TEXT.__swift_as_entry: 0x39c
--  __TEXT.__swift_as_ret: 0x404
--  __TEXT.__swift_as_cont: 0x780
--  __TEXT.__swift5_protos: 0x5c
--  __TEXT.__swift5_capture: 0x17a4
--  __TEXT.__oslogstring: 0x3c30
--  __TEXT.__swift5_mpenum: 0x7c
 +3605.27.1.1.1
-+  __TEXT.__text: 0x103054
-+  __TEXT.__objc_methlist: 0x21e0
-+  __TEXT.__const: 0xb630
-+  __TEXT.__constg_swiftt: 0x3998
-+  __TEXT.__swift5_typeref: 0x38da
-+  __TEXT.__swift5_reflstr: 0x21dd
-+  __TEXT.__swift5_fieldmd: 0x2c14
-+  __TEXT.__swift5_builtin: 0x190
-+  __TEXT.__swift5_assocty: 0x630
-+  __TEXT.__cstring: 0x3e1d
-+  __TEXT.__swift5_proto: 0x7a8
-+  __TEXT.__swift5_types: 0x41c
-+  __TEXT.__swift_as_entry: 0x3c4
-+  __TEXT.__swift_as_ret: 0x448
-+  __TEXT.__swift_as_cont: 0x814
-+  __TEXT.__swift5_protos: 0x3c
-+  __TEXT.__swift5_capture: 0x1b04
-+  __TEXT.__oslogstring: 0x3b9b
-+  __TEXT.__swift5_mpenum: 0x5c
-   __TEXT.__gcc_except_tab: 0x2d0
--  __TEXT.__unwind_info: 0x67a8
--  __TEXT.__eh_frame: 0xae5c
-+  __TEXT.__unwind_info: 0x6af8
-+  __TEXT.__eh_frame: 0xb6b4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xfc0
--  __DATA_CONST.__objc_classlist: 0x368
-+  __DATA_CONST.__const: 0xff0
-+  __DATA_CONST.__objc_classlist: 0x370
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0xe8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x14a8
-+  __DATA_CONST.__objc_selrefs: 0x14a0
-   __DATA_CONST.__objc_protorefs: 0x70
-   __DATA_CONST.__objc_superrefs: 0xd0
--  __DATA_CONST.__got: 0x850
--  __AUTH_CONST.__const: 0x8f68
--  __AUTH_CONST.__cfstring: 0xec0
--  __AUTH_CONST.__objc_const: 0x6ac8
--  __AUTH_CONST.__auth_got: 0x1700
--  __AUTH.__objc_data: 0xb88
--  __AUTH.__data: 0x17d0
--  __DATA.__objc_ivar: 0x1f8
--  __DATA.__data: 0x2b68
--  __DATA.__common: 0x2b8
--  __DATA_DIRTY.__objc_data: 0x2020
--  __DATA_DIRTY.__data: 0x2c28
--  __DATA_DIRTY.__bss: 0x338
--  __DATA_DIRTY.__common: 0x1d8
-+  __DATA_CONST.__got: 0x878
-+  __AUTH_CONST.__const: 0x8a00
-+  __AUTH_CONST.__cfstring: 0xee0
-+  __AUTH_CONST.__objc_const: 0x6ac0
-+  __AUTH_CONST.__auth_got: 0x1758
-+  __AUTH.__objc_data: 0xd58
-+  __AUTH.__data: 0x14b8
-+  __DATA.__objc_ivar: 0x200
-+  __DATA.__data: 0x2cc8
-+  __DATA.__common: 0x2d0
-+  __DATA_DIRTY.__objc_data: 0x1e60
-+  __DATA_DIRTY.__data: 0x28b8
-+  __DATA_DIRTY.__bss: 0x2b8
-+  __DATA_DIRTY.__common: 0x160
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  - /usr/lib/libsqlite3.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
 
-   - /usr/lib/swift/libswift_DarwinFoundation3.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7817
--  Symbols:   4080
+-  Symbols:   3505
 -  CStrings:  716
 +  Functions: 7942
-+  Symbols:   4038
++  Symbols:   3463
 +  CStrings:  692
- 
 Symbols:
 + -[AssistantSiriAnalyticsService handler:largeMessageReceivedWithPath:requestIdentifier:messageWrapper:cache:completion:]
 + -[SiriAnalyticsLargeMessageStorage enqueueLargeMessageObjectFromPath:messageWrapper:requestIdentifier:cache:completion:]
@@ -216,15 +162,6 @@ Symbols:
 + _get_enum_tag_for_layout_string 13SiriAnalytics12StreamHandleOyAA16StagingPoolEntryVG
 + _get_enum_tag_for_layout_string 13SiriAnalytics12StreamHandleOyxG
 + _get_enum_tag_for_layout_string 13SiriAnalytics24InstrumentationPublisherC8EmitWorkO
-+ _objc_msgSend$applyPoliciesWithCompletionHandler:
-+ _objc_msgSend$component
-+ _objc_msgSend$enqueueLargeMessageObjectFromPath:messageWrapper:requestIdentifier:cache:completion:
-+ _objc_msgSend$handler:largeMessageReceivedWithPath:requestIdentifier:messageWrapper:cache:completion:
-+ _objc_msgSend$initWithMessageStagingProvider:metastore:
-+ _objc_msgSend$initWithMetastore:telemetry:messageStaging:messageTopics:inputStorageMaintenance:
-+ _objc_msgSend$processWithUploadEvent:requestIdentifier:cache:completionHandler:
-+ _objc_msgSend$target
-+ _objc_msgSend$uuid
 + _symbolic $7_
 + _symbolic $s13SiriAnalytics26DeterministicUUIDComponentP
 + _symbolic $s8Dendrite12ProtoMessageP
@@ -410,15 +347,6 @@ Symbols:
 - _get_enum_tag_for_layout_string 13SiriAnalytics12SQLStatement_pSg
 - _get_enum_tag_for_layout_string 13SiriAnalytics12StreamHandleO
 - _get_enum_tag_for_layout_string 13SiriAnalytics9SQLSelectV7OrderByO
-- _objc_msgSend$bootstrapWithCompletion:
-- _objc_msgSend$checkpoint
-- _objc_msgSend$cleanupAbandonedClocksWithActiveClockIdentifier:completionHandler:
-- _objc_msgSend$enqueueLargeMessageObjectFromPath:messageWrapper:requestIdentifier:completion:
-- _objc_msgSend$handler:largeMessageReceivedWithPath:requestIdentifier:messageWrapper:completion:
-- _objc_msgSend$initWithMetastore:telemetry:messageStaging:messageTopics:
-- _objc_msgSend$initWithQueue:dbStorage:
-- _objc_msgSend$processWithUploadEvent:requestIdentifier:completionHandler:
-- _objc_msgSend$setInteractionId:
 - _sqlite3_bind_blob
 - _sqlite3_bind_double
 - _sqlite3_bind_int64

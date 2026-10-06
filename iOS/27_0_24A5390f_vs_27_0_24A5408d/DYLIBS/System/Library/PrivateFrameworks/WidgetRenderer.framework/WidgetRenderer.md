@@ -2,94 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/WidgetRenderer.framework/WidgetRenderer`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x188e10` | `0x18df58` | **`+0x5148`** |
+| `__TEXT.__swift5_typeref` | `0xa948` | `0xae3a` | **`+0x4f2`** |
+| `__TEXT.__const` | `0xc62c` | `0xcabc` | **`+0x490`** |
+| `__DATA.__bss` | `0x2938` | `0x2d88` | **`+0x450`** |
+| `__AUTH_CONST.__const` | `0x7d20` | `0x7fc0` | **`+0x2a0`** |
+| `__DATA.__data` | `0x2528` | `0x2760` | **`+0x238`** |
+| `__TEXT.__constg_swiftt` | `0x807c` | `0x8218` | **`+0x19c`** |
+| `__TEXT.__swift5_fieldmd` | `0x3e08` | `0x3f0c` | **`+0x104`** |
+| `__DATA_DIRTY.__data` | `0x9078` | `0x8f88` | **`-0xf0`** |
+| `__AUTH.__data` | `0x24d8` | `0x2568` | **`+0x90`** |
+| `__TEXT.__swift5_reflstr` | `0x554e` | `0x55de` | **`+0x90`** |
+| `__TEXT.__unwind_info` | `0x3e38` | `0x3ec0` | **`+0x88`** |
+| `__DATA_DIRTY.__objc_data` | `0x3fe8` | `0x4048` | **`+0x60`** |
+| `__TEXT.__oslogstring` | `0x6db8` | `0x6e08` | **`+0x50`** |
+| `__TEXT.__eh_frame` | `0x2024` | `0x1fdc` | **`-0x48`** |
+| `__AUTH_CONST.__objc_const` | `0xb740` | `0xb780` | **`+0x40`** |
+| `__TEXT.__swift5_capture` | `0x20b8` | `0x20f4` | **`+0x3c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x16a8` | `0x16d0` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x868` | `0x888` | **`+0x20`** |
+| `__TEXT.__swift5_proto` | `0x4e0` | `0x500` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x3288` | `0x32a0` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x9e0` | `0x9f8` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0x388` | `0x39c` | **`+0x14`** |
+| `__DATA_CONST.__got` | `0x1678` | `0x1680` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -740.0.0.0.0
--  __TEXT.__text: 0x188e10
 +749.0.1.0.0
-+  __TEXT.__text: 0x18df58
-   __TEXT.__objc_methlist: 0x186c
--  __TEXT.__const: 0xc62c
-+  __TEXT.__const: 0xcabc
-   __TEXT.__cstring: 0x2ac4
--  __TEXT.__constg_swiftt: 0x807c
--  __TEXT.__swift5_typeref: 0xa948
--  __TEXT.__swift5_reflstr: 0x554e
--  __TEXT.__swift5_fieldmd: 0x3e08
-+  __TEXT.__constg_swiftt: 0x8218
-+  __TEXT.__swift5_typeref: 0xae3a
-+  __TEXT.__swift5_reflstr: 0x55de
-+  __TEXT.__swift5_fieldmd: 0x3f0c
-   __TEXT.__swift5_builtin: 0x258
--  __TEXT.__swift5_assocty: 0x9e0
--  __TEXT.__oslogstring: 0x6db8
--  __TEXT.__swift5_capture: 0x20b8
--  __TEXT.__swift5_proto: 0x4e0
--  __TEXT.__swift5_types: 0x388
-+  __TEXT.__swift5_assocty: 0x9f8
-+  __TEXT.__oslogstring: 0x6e08
-+  __TEXT.__swift5_capture: 0x20f4
-+  __TEXT.__swift5_proto: 0x500
-+  __TEXT.__swift5_types: 0x39c
-   __TEXT.__swift5_protos: 0x70
-   __TEXT.__swift5_mpenum: 0x18
-   __TEXT.__swift_as_entry: 0x24
-   __TEXT.__swift_as_ret: 0x28
-   __TEXT.__swift_as_cont: 0x58
--  __TEXT.__unwind_info: 0x3e38
--  __TEXT.__eh_frame: 0x2024
-+  __TEXT.__unwind_info: 0x3ec0
-+  __TEXT.__eh_frame: 0x1fdc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x868
-+  __DATA_CONST.__const: 0x888
-   __DATA_CONST.__objc_classlist: 0x2f8
-   __DATA_CONST.__objc_protolist: 0x1b8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x16a8
-+  __DATA_CONST.__objc_selrefs: 0x16d0
-   __DATA_CONST.__objc_protorefs: 0xd0
-   __DATA_CONST.__objc_superrefs: 0x10
--  __DATA_CONST.__got: 0x1678
--  __AUTH_CONST.__const: 0x7d20
-+  __DATA_CONST.__got: 0x1680
-+  __AUTH_CONST.__const: 0x7fc0
-   __AUTH_CONST.__cfstring: 0x180
--  __AUTH_CONST.__objc_const: 0xb740
--  __AUTH_CONST.__auth_got: 0x3288
-+  __AUTH_CONST.__objc_const: 0xb780
-+  __AUTH_CONST.__auth_got: 0x32a0
-   __AUTH.__objc_data: 0x20a0
--  __AUTH.__data: 0x24d8
-+  __AUTH.__data: 0x2568
-   __DATA.__objc_ivar: 0x18
--  __DATA.__data: 0x2528
-+  __DATA.__data: 0x2760
-   __DATA.__objc_stublist: 0x8
--  __DATA.__bss: 0x2938
-+  __DATA.__bss: 0x2d88
-   __DATA.__common: 0x240
--  __DATA_DIRTY.__objc_data: 0x3fe8
--  __DATA_DIRTY.__data: 0x9078
-+  __DATA_DIRTY.__objc_data: 0x4048
-+  __DATA_DIRTY.__data: 0x8f88
-   __DATA_DIRTY.__bss: 0x6b90
-   __DATA_DIRTY.__common: 0x6d8
-   - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6760
--  Symbols:   3315
+-  Symbols:   2802
 +  Functions: 6844
-+  Symbols:   3344
-   CStrings:  706
- 
++  Symbols:   2826
 Symbols:
 + ___swift_closure_destructor.107Tm
 + ___swift_closure_destructor.157Tm
@@ -113,13 +65,6 @@ Symbols:
 + _keypath_set.204Tm
 + _keypath_set.226Tm
 + _keypath_set.228Tm
-+ _objc_msgSend$chs_isStandByWidgetRendererProcess
-+ _objc_msgSend$foregroundEvictionPriority
-+ _objc_msgSend$observeSecondHandFPSOverrideWithBlock:
-+ _objc_msgSend$reloadWidget:contentType:reason:
-+ _objc_msgSend$reloadWidgetIfFailed:contentType:reason:
-+ _objc_msgSend$secondHandFPSOverride
-+ _objc_msgSend$usesCompactDateSpacing
 + _symbolic Shy_____G 14WidgetRenderer33DeferredEnvironmentMismatchReload33_5934235F07B8DA3EF63E6679B078C2C4LLV
 + _symbolic _____ 14WidgetRenderer0A20RenderUpdateIntervalO
 + _symbolic _____ 14WidgetRenderer0aB7SessionC26_PendingCatastrophicReload33_BAD8019A9777A6079AB938D7C4EF6A58LLV
@@ -175,8 +120,6 @@ Symbols:
 - _keypath_set.194Tm
 - _keypath_set.216Tm
 - _keypath_set.218Tm
-- _objc_msgSend$reloadWidget:reason:
-- _objc_msgSend$reloadWidgetIfFailed:reason:
 - _symbolic ShySo26WRWidgetRendererSessionKeyCG
 - _symbolic _____Sg 19ComplicationDisplay0A13LabelProviderV
 - _symbolic _____Sg So14WRReloadReasonV

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/Settings.framework/Settings`
 
-```diff
+### Section Size Changes
 
- 2027.0.2.0.0
--  __TEXT.__text: 0x909a4
-+  __TEXT.__text: 0x909fc
-   __TEXT.__delay_helper: 0x1bc
-   __TEXT.__objc_methlist: 0xb08
-   __TEXT.__const: 0x6d50
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x909a4` | `0x909fc` | **`+0x58`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_220ad3f40 -> sub_22126df40 : 356 -> 360
 ~ sub_220ad40a4 -> sub_22126e0a8 : 340 -> 344

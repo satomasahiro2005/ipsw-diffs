@@ -2,98 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/MetricsFramework.framework/MetricsFramework`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10cc00` | `0x110084` | **`+0x3484`** |
+| `__TEXT.__cstring` | `0x8130` | `0x8750` | **`+0x620`** |
+| `__AUTH_CONST.__cfstring` | `0x6440` | `0x6900` | **`+0x4c0`** |
+| `__AUTH.__data` | `0x4880` | `0x4d30` | **`+0x4b0`** |
+| `__DATA.__bss` | `0xd000` | `0xcb80` | **`-0x480`** |
+| `__TEXT.__swift5_reflstr` | `0x5868` | `0x5c08` | **`+0x3a0`** |
+| `__AUTH_CONST.__objc_const` | `0x57a8` | `0x5a78` | **`+0x2d0`** |
+| `__TEXT.__constg_swiftt` | `0x5438` | `0x5640` | **`+0x208`** |
+| `__TEXT.__swift5_fieldmd` | `0x4e10` | `0x4f68` | **`+0x158`** |
+| `__TEXT.__const` | `0xd120` | `0xd240` | **`+0x120`** |
+| `__AUTH_CONST.__auth_got` | `0xfe8` | `0xed8` | **`-0x110`** |
+| `__TEXT.__eh_frame` | `0x76d8` | `0x75e0` | **`-0xf8`** |
+| `__AUTH.__objc_data` | `0xea8` | `0xf98` | **`+0xf0`** |
+| `__AUTH_CONST.__const` | `0x8650` | `0x8730` | **`+0xe0`** |
+| `__TEXT.__swift5_assocty` | `0xdc0` | `0xe70` | **`+0xb0`** |
+| `__TEXT.__oslogstring` | `0x6c2c` | `0x6bac` | **`-0x80`** |
+| `__TEXT.__swift5_typeref` | `0x2ef8` | `0x2e8a` | **`-0x6e`** |
+| `__DATA.__data` | `0x20f0` | `0x2098` | **`-0x58`** |
+| `__DATA_CONST.__objc_selrefs` | `0xbb8` | `0xc08` | **`+0x50`** |
+| `__TEXT.__swift_as_entry` | `0x444` | `0x470` | **`+0x2c`** |
+| `__DATA_CONST.__objc_classlist` | `0x350` | `0x378` | **`+0x28`** |
+| `__TEXT.__swift5_builtin` | `0x244` | `0x26c` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x3ad0` | `0x3af0` | **`+0x20`** |
+| `__TEXT.__swift5_proto` | `0x800` | `0x7e4` | **`-0x1c`** |
+| `__TEXT.__swift5_types` | `0x47c` | `0x498` | **`+0x1c`** |
+| `__TEXT.__swift_as_ret` | `0x3e8` | `0x404` | **`+0x1c`** |
+| `__TEXT.__swift_as_cont` | `0x674` | `0x68c` | **`+0x18`** |
+| `__TEXT.__swift5_capture` | `0x52c` | `0x53c` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x2768` | `0x2770` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.49.21.11.1
--  __TEXT.__text: 0x1023b0
 +3605.15.1.0.0
-+  __TEXT.__text: 0x1055b0
-   __TEXT.__objc_methlist: 0x14
--  __TEXT.__const: 0xd120
--  __TEXT.__swift5_typeref: 0x2ef8
--  __TEXT.__swift5_capture: 0x52c
--  __TEXT.__cstring: 0x8130
--  __TEXT.__oslogstring: 0x6c2c
--  __TEXT.__swift5_reflstr: 0x5868
--  __TEXT.__swift5_assocty: 0xdc0
--  __TEXT.__constg_swiftt: 0x5438
--  __TEXT.__swift5_fieldmd: 0x4e10
--  __TEXT.__swift5_builtin: 0x244
--  __TEXT.__swift5_proto: 0x800
--  __TEXT.__swift5_types: 0x47c
--  __TEXT.__swift_as_entry: 0x444
--  __TEXT.__swift_as_ret: 0x3e8
--  __TEXT.__swift_as_cont: 0x674
-+  __TEXT.__const: 0xd240
-+  __TEXT.__swift5_typeref: 0x2e8a
-+  __TEXT.__swift5_capture: 0x53c
-+  __TEXT.__cstring: 0x8750
-+  __TEXT.__oslogstring: 0x6bac
-+  __TEXT.__swift5_reflstr: 0x5c08
-+  __TEXT.__swift5_assocty: 0xe70
-+  __TEXT.__constg_swiftt: 0x5640
-+  __TEXT.__swift5_fieldmd: 0x4f68
-+  __TEXT.__swift5_builtin: 0x26c
-+  __TEXT.__swift5_proto: 0x7e4
-+  __TEXT.__swift5_types: 0x498
-+  __TEXT.__swift_as_entry: 0x470
-+  __TEXT.__swift_as_ret: 0x404
-+  __TEXT.__swift_as_cont: 0x68c
-   __TEXT.__swift5_protos: 0x74
--  __TEXT.__unwind_info: 0x44e0
--  __TEXT.__eh_frame: 0x76f8
-+  __TEXT.__unwind_info: 0x44e8
-+  __TEXT.__eh_frame: 0x7600
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2768
--  __DATA_CONST.__objc_classlist: 0x350
-+  __DATA_CONST.__const: 0x2770
-+  __DATA_CONST.__objc_classlist: 0x378
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xbb8
-+  __DATA_CONST.__objc_selrefs: 0xc08
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x8650
--  __AUTH_CONST.__cfstring: 0x6440
--  __AUTH_CONST.__objc_const: 0x57a8
--  __AUTH_CONST.__auth_got: 0xfe8
--  __AUTH.__objc_data: 0xea8
--  __AUTH.__data: 0x4880
--  __DATA.__data: 0x20f0
-+  __AUTH_CONST.__const: 0x8730
-+  __AUTH_CONST.__cfstring: 0x6900
-+  __AUTH_CONST.__objc_const: 0x5a78
-+  __AUTH_CONST.__auth_got: 0xed8
-+  __AUTH.__objc_data: 0xf98
-+  __AUTH.__data: 0x4d30
-+  __DATA.__data: 0x2098
-   __DATA.__common: 0x1b0
-   __DATA_DIRTY.__objc_data: 0x900
-   __DATA_DIRTY.__data: 0x33a0
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
 -  - /usr/lib/swift/libswiftAppleArchive.dylib
-   - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4889
--  Symbols:   2161
+-  Symbols:   1788
 -  CStrings:  1700
 +  Functions: 4915
-+  Symbols:   2178
++  Symbols:   1795
 +  CStrings:  1743
- 
 Symbols:
 + _OBJC_CLASS_$_ODDSiriSchemaODDAssistantSiriExtensionsCounts
 + _OBJC_CLASS_$_ODDSiriSchemaODDAssistantSiriExtensionsDigest
@@ -129,20 +86,6 @@ Symbols:
 + _associated conformance 16MetricsFramework32SiriExtensionsDigestTaskExecutorC7SubtaskOSHAASQ
 + _associated conformance 16MetricsFramework32SiriExtensionsDigestTaskExecutorCAA011ODDIMetricsfG4BaseAA7SubtaskAaDP_8RawValueSYSy
 + _associated conformance 16MetricsFramework32SiriExtensionsDigestTaskExecutorCAA011ODDIMetricsfG4BaseAA7SubtaskAaDP_SY
-+ _objc_msgSend$addAppPartyTypes:
-+ _objc_msgSend$addProviderName:
-+ _objc_msgSend$setAssistantSiriExtensionsDigestsReported:
-+ _objc_msgSend$setEventStreamResultType:
-+ _objc_msgSend$setHasSiriExtensionsEnabled:
-+ _objc_msgSend$setInputTokenBucketOdm:
-+ _objc_msgSend$setInputTokenBucketPcc:
-+ _objc_msgSend$setOutputTokenBucketOdm:
-+ _objc_msgSend$setOutputTokenBucketPcc:
-+ _objc_msgSend$setPromptType:
-+ _objc_msgSend$setTokenBucketScheme:
-+ _objc_msgSend$setTokenCounts:
-+ _objc_msgSend$setTotalTokenBucketOdm:
-+ _objc_msgSend$setTotalTokenBucketPcc:
 + _symbolic SDy_____Say_____GG 16MetricsFramework13EventMetadataV AA020SiriExtensionsDigestA0V
 + _symbolic Say_____G 16MetricsFramework020SiriExtensionsDigestA0V
 + _symbolic Say_____G So28ODDSiriSchemaODDAppPartyTypeV
@@ -191,10 +134,6 @@ Symbols:
 - _associated conformance 16MetricsFramework9ScoreItemV10CodingKeys33_D0F7A9FBB69195146951456F804E8A73LLOSHAASQ
 - _associated conformance 16MetricsFramework9ScoreItemV10CodingKeys33_D0F7A9FBB69195146951456F804E8A73LLOs0E3KeyAAs23CustomStringConvertible
 - _associated conformance 16MetricsFramework9ScoreItemV10CodingKeys33_D0F7A9FBB69195146951456F804E8A73LLOs0E3KeyAAs28CustomDebugStringConvertible
-- _objc_msgSend$ThirdPartyGenAiEngagementInference
-- _objc_msgSend$initWithEventTime:turnId:version:usecase:scores:metadata:
-- _objc_msgSend$initWithExplanation:isFollowup:
-- _objc_msgSend$initWithType:value:
 - _swift_getDynamicType
 - _symbolic SDySS_____G 12PoirotBlocks15AnyDatasetValueV
 - _symbolic SDySSypG

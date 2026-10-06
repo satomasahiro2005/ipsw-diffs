@@ -2,105 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/TokenGenerationCore.framework/TokenGenerationCore`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift5_types2`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_superrefs`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH.__data`
-- `__AUTH.__thread_vars`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2dc1c8` | `0x2dd948` | **`+0x1780`** |
+| `__AUTH_CONST.__const` | `0x1ffc0` | `0x20168` | **`+0x1a8`** |
+| `__TEXT.__eh_frame` | `0xed7c` | `0xede4` | **`+0x68`** |
+| `__AUTH_CONST.__auth_got` | `0x2ac0` | `0x2b10` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0xbb68` | `0xbb98` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x9cf1` | `0x9d11` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x56ec` | `0x570c` | **`+0x20`** |
+| `__DATA.__data` | `0x6500` | `0x6518` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x1360` | `0x1370` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0xaeb8` | `0xaec4` | **`+0xc`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1e0` | `0x1e8` | **`+0x8`** |
+| `__TEXT.__constg_swiftt` | `0x799c` | `0x79a4` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -297.0.6.0.0
--  __TEXT.__text: 0x2dc1c8
 +301.1.0.5.0
-+  __TEXT.__text: 0x2dd948
-   __TEXT.__objc_methlist: 0xd4
-   __TEXT.__const: 0x36b40
-   __TEXT.__gcc_except_tab: 0x41bc
--  __TEXT.__cstring: 0x9cf1
-+  __TEXT.__cstring: 0x9d11
-   __TEXT.__oslogstring: 0x2345
-   __TEXT.__swift5_typeref: 0x9a6c
--  __TEXT.__swift5_fieldmd: 0xaeb8
--  __TEXT.__constg_swiftt: 0x799c
-+  __TEXT.__swift5_fieldmd: 0xaec4
-+  __TEXT.__constg_swiftt: 0x79a4
-   __TEXT.__swift5_builtin: 0x258
--  __TEXT.__swift5_reflstr: 0x56ec
-+  __TEXT.__swift5_reflstr: 0x570c
-   __TEXT.__swift5_assocty: 0x968
-   __TEXT.__swift5_mpenum: 0x13c
-   __TEXT.__swift5_protos: 0x74
 
-   __TEXT.__swift_as_cont: 0xa8
-   __TEXT.__swift_as_ret: 0x48
-   __TEXT.__swift5_types2: 0x8
--  __TEXT.__unwind_info: 0xbb68
--  __TEXT.__eh_frame: 0xed7c
-+  __TEXT.__unwind_info: 0xbb98
-+  __TEXT.__eh_frame: 0xede4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x1e0
-+  __DATA_CONST.__objc_selrefs: 0x1e8
-   __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__got: 0x1360
--  __AUTH_CONST.__const: 0x1ffc0
-+  __DATA_CONST.__got: 0x1370
-+  __AUTH_CONST.__const: 0x20168
-   __AUTH_CONST.__cfstring: 0xa0
-   __AUTH_CONST.__objc_const: 0x11f0
-   __AUTH_CONST.__weak_auth_got: 0x48
--  __AUTH_CONST.__auth_got: 0x2ac0
-+  __AUTH_CONST.__auth_got: 0x2b10
-   __AUTH.__data: 0x1f48
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x10
-   __DATA.__objc_ivar: 0x8
--  __DATA.__data: 0x6500
-+  __DATA.__data: 0x6518
-   __DATA.__bss: 0x3fe89
-   __DATA.__common: 0x31d
-   __DATA_DIRTY.__objc_data: 0xa0
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 16283
--  Symbols:   46107
+-  Symbols:   46050
 -  CStrings:  1130
 +  Functions: 16300
-+  Symbols:   46152
++  Symbols:   46094
 +  CStrings:  1131
- 
 Symbols:
 + _$s19TokenGenerationCore012CiderControlA9SanitizerO05knownE6Tokens_WZTv_r
 + _$s19TokenGenerationCore012CiderControlA9SanitizerO07controlA5Regex33_527555F96BA3B3F09699C8943B6B451DLLSSvpZ
@@ -149,7 +80,6 @@ Symbols:
 + _$s9PromptKit0A7RequestV0A7VariantO04ChatA0V19mapStringComponentsyAGS2SKXEKF
 + _$s9PromptKit13ThoughtBudgetOACSQAAWlTm
 + _OBJC_CLASS_$_NSRegularExpression
-+ _objc_msgSend$escapedPatternForString:
 - _$s19TokenGenerationCore35TokenizedStaticPromptTemplatePrefixVwetTm
 - _$s19TokenGenerationCore35TokenizedStaticPromptTemplatePrefixVwstTm
 - _$s29GenerativeFunctionsFoundation10ToolChoiceV5ValueOAESQAAWl

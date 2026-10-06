@@ -2,107 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/BrailleFoundation.framework/BrailleFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x694f0` | `0x6cb64` | **`+0x3674`** |
+| `__DATA.__bss` | `0x15a90` | `0x16490` | **`+0xa00`** |
+| `__TEXT.__const` | `0xc890` | `0xcd80` | **`+0x4f0`** |
+| `__AUTH_CONST.__objc_const` | `0xea0` | `0x12f0` | **`+0x450`** |
+| `__AUTH_CONST.__const` | `0x5a68` | `0x5d48` | **`+0x2e0`** |
+| `__TEXT.__objc_methlist` | `0x404` | `0x624` | **`+0x220`** |
+| `__AUTH_CONST.__cfstring` | `0x780` | `0x960` | **`+0x1e0`** |
+| `__TEXT.__eh_frame` | `0x2e60` | `0x3030` | **`+0x1d0`** |
+| `__TEXT.__cstring` | `0xdd8` | `0xf83` | **`+0x1ab`** |
+| `__TEXT.__swift5_fieldmd` | `0x2a28` | `0x2bc8` | **`+0x1a0`** |
+| `__TEXT.__swift5_capture` | `0x2ac` | `0x3cc` | **`+0x120`** |
+| `__DATA.__data` | `0x2108` | `0x21f8` | **`+0xf0`** |
+| `__TEXT.__swift5_typeref` | `0x27cb` | `0x28bb` | **`+0xf0`** |
+| `__TEXT.__constg_swiftt` | `0x1fbc` | `0x20a4` | **`+0xe8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x310` | `0x3e8` | **`+0xd8`** |
+| `__TEXT.__unwind_info` | `0x2050` | `0x2108` | **`+0xb8`** |
+| `__AUTH.__objc_data` | `—` | `0xa0` | **`+0xa0`** |
+| `__TEXT.__swift5_reflstr` | `0x16ed` | `0x176d` | **`+0x80`** |
+| `__TEXT.__swift5_proto` | `0xae4` | `0xb3c` | **`+0x58`** |
+| `__TEXT.__swift_as_entry` | `0x120` | `0xd8` | **`-0x48`** |
+| `__TEXT.__swift_as_ret` | `0x14c` | `0x104` | **`-0x48`** |
+| `__DATA.__objc_ivar` | `0x6c` | `0xa4` | **`+0x38`** |
+| `__TEXT.__swift5_assocty` | `0x1a0` | `0x1d0` | **`+0x30`** |
+| `__TEXT.__swift5_builtin` | `0x118` | `0x140` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0x3e8` | `0x400` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0x304` | `0x31c` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0xcc0` | `0xcd0` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x40` | `0x50` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x10` | `0x20` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x118` | `0x120` | **`+0x8`** |
+| `__DATA_DIRTY.__data` | `0x920` | `0x928` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x28` | `0x2c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -465.0.0.0.0
--  __TEXT.__text: 0x649c0
--  __TEXT.__objc_methlist: 0x404
--  __TEXT.__const: 0xc890
--  __TEXT.__swift5_typeref: 0x27cb
--  __TEXT.__cstring: 0xdd8
--  __TEXT.__swift5_reflstr: 0x16ed
--  __TEXT.__swift5_assocty: 0x1a0
--  __TEXT.__constg_swiftt: 0x1fbc
--  __TEXT.__swift5_fieldmd: 0x2a28
--  __TEXT.__swift5_builtin: 0x118
 +467.3.0.0.0
-+  __TEXT.__text: 0x67ebc
-+  __TEXT.__objc_methlist: 0x624
-+  __TEXT.__const: 0xcd80
-+  __TEXT.__swift5_typeref: 0x28bb
-+  __TEXT.__cstring: 0xf83
-+  __TEXT.__swift5_reflstr: 0x176d
-+  __TEXT.__swift5_assocty: 0x1d0
-+  __TEXT.__constg_swiftt: 0x20a4
-+  __TEXT.__swift5_fieldmd: 0x2bc8
-+  __TEXT.__swift5_builtin: 0x140
-   __TEXT.__swift5_mpenum: 0x80
--  __TEXT.__swift5_protos: 0x28
--  __TEXT.__swift5_proto: 0xae4
--  __TEXT.__swift5_types: 0x304
--  __TEXT.__swift_as_entry: 0x120
--  __TEXT.__swift_as_ret: 0x14c
-+  __TEXT.__swift5_protos: 0x2c
-+  __TEXT.__swift5_proto: 0xb3c
-+  __TEXT.__swift5_types: 0x31c
-+  __TEXT.__swift_as_entry: 0xd8
-+  __TEXT.__swift_as_ret: 0x104
-   __TEXT.__oslogstring: 0x3
-   __TEXT.__swift_as_cont: 0xec
--  __TEXT.__swift5_capture: 0x2ac
--  __TEXT.__unwind_info: 0x2938
--  __TEXT.__eh_frame: 0x2e60
-+  __TEXT.__swift5_capture: 0x3cc
-+  __TEXT.__unwind_info: 0x2a30
-+  __TEXT.__eh_frame: 0x3030
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x118
--  __DATA_CONST.__objc_classlist: 0x40
-+  __DATA_CONST.__const: 0x120
-+  __DATA_CONST.__objc_classlist: 0x50
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x310
--  __DATA_CONST.__objc_superrefs: 0x10
--  __DATA_CONST.__got: 0x3e8
--  __AUTH_CONST.__const: 0x5a68
--  __AUTH_CONST.__cfstring: 0x780
--  __AUTH_CONST.__objc_const: 0xea0
--  __AUTH_CONST.__auth_got: 0xcc0
-+  __DATA_CONST.__objc_selrefs: 0x3e8
-+  __DATA_CONST.__objc_superrefs: 0x20
-+  __DATA_CONST.__got: 0x400
-+  __AUTH_CONST.__const: 0x5d48
-+  __AUTH_CONST.__cfstring: 0x960
-+  __AUTH_CONST.__objc_const: 0x12f0
-+  __AUTH_CONST.__auth_got: 0xcd0
-+  __AUTH.__objc_data: 0xa0
-   __AUTH.__data: 0x48
--  __DATA.__objc_ivar: 0x6c
--  __DATA.__data: 0x2108
-+  __DATA.__objc_ivar: 0xa4
-+  __DATA.__data: 0x21f8
-   __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0x140
--  __DATA_DIRTY.__data: 0x920
-+  __DATA_DIRTY.__data: 0x928
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/AXCoreUtilities.framework/AXCoreUtilities
 
-   - /usr/lib/swift/libswiftDispatch.dylib
-   - /usr/lib/swift/libswiftMLCompute.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
 +  - /usr/lib/swift/libswiftNaturalLanguage.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftObservation.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3099
--  Symbols:   10618
+-  Symbols:   10555
 -  CStrings:  129
 +  Functions: 3214
-+  Symbols:   10922
++  Symbols:   10844
 +  CStrings:  147
- 
 Symbols:
 + +[BRLTabularCell supportsSecureCoding]
 + +[BRLTabularLayout supportsSecureCoding]
@@ -453,21 +404,6 @@ Symbols:
 + _associated conformance 17BrailleFoundation0A13TabularLayoutV10CodingKeys33_ECF1EE6A9B5E55CA35ACD4FE6064A25ELLOs0E3KeyAAs28CustomDebugStringConvertible
 + _keypath_get.119Tm
 + _keypath_get.131Tm
-+ _objc_msgSend$cells
-+ _objc_msgSend$colSpan
-+ _objc_msgSend$columnCount
-+ _objc_msgSend$columnIndex
-+ _objc_msgSend$count
-+ _objc_msgSend$decodeInt64ForKey:
-+ _objc_msgSend$encodeInt64:forKey:
-+ _objc_msgSend$focusedCol
-+ _objc_msgSend$focusedRow
-+ _objc_msgSend$rowCount
-+ _objc_msgSend$rowIndex
-+ _objc_msgSend$rowSpan
-+ _objc_msgSend$scope
-+ _objc_msgSend$tabularLayout
-+ _objc_msgSend$zoomLevel
 + _symbolic $s17BrailleFoundation011SynchronousA10TranslatorP
 + _symbolic Say_____G 17BrailleFoundation0A11TabularCellV
 + _symbolic _____ 17BrailleFoundation0A11TabularCellV

@@ -2,17 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/SESUIService.framework/SESUIService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6bf14` | `0x6bf2c` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
 -71.8.0.0.0
--  __TEXT.__text: 0x67ecc
 +71.9.0.0.0
-+  __TEXT.__text: 0x67ee4
-   __TEXT.__objc_methlist: 0x34
-   __TEXT.__const: 0x30a0
-   __TEXT.__constg_swiftt: 0x784
 Functions:
-~ sub_29fa23638 -> sub_29f6e0638 : 196 -> 200
-~ sub_29fa237b0 -> sub_29f6e07b4 : 108 -> 112
-~ sub_29fa2396c -> sub_29f6e0974 : 316 -> 332
+~ sub_2a4d98978 -> sub_2a4aba978 : 216 -> 220
+~ sub_2a4d98b18 -> sub_2a4abab1c : 108 -> 112
+~ sub_2a4d98ce8 -> sub_2a4abacf0 : 336 -> 352
 ```

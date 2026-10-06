@@ -2,76 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/MapsUI.framework/MapsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1abca4` | `0x1ac32c` | **`+0x688`** |
+| `__AUTH_CONST.__cfstring` | `0x15a20` | `0x15aa0` | **`+0x80`** |
+| `__TEXT.__cstring` | `0x125c5` | `0x12634` | **`+0x6f`** |
+| `__DATA_CONST.__const` | `0x3d88` | `0x3dd8` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x22f8` | `0x2338` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x67d0` | `0x6800` | **`+0x30`** |
+| `__TEXT.__oslogstring` | `0x46f9` | `0x4723` | **`+0x2a`** |
+| `__TEXT.__eh_frame` | `0x11e4` | `0x120c` | **`+0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa638` | `0xa648` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x15a84` | `0x15a94` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -286.34.9.3.1
--  __TEXT.__text: 0x1a2a04
 +287.31.9.18.1
-+  __TEXT.__text: 0x1a3080
-   __TEXT.__delay_stubs: 0x1c0
-   __TEXT.__delay_helper: 0xdc
--  __TEXT.__objc_methlist: 0x15a84
-+  __TEXT.__objc_methlist: 0x15a94
-   __TEXT.__const: 0x8228
-   __TEXT.__swift5_typeref: 0x3022
-   __TEXT.__swift5_capture: 0x798
--  __TEXT.__cstring: 0x125c5
-+  __TEXT.__cstring: 0x12634
-   __TEXT.__swift5_fieldmd: 0x36b0
-   __TEXT.__constg_swiftt: 0x3f5c
-   __TEXT.__swift5_reflstr: 0x30b7
-   __TEXT.__swift5_types: 0x4cc
-   __TEXT.__swift5_builtin: 0x398
-   __TEXT.__swift5_mpenum: 0xc0
--  __TEXT.__oslogstring: 0x46f9
-+  __TEXT.__oslogstring: 0x4723
-   __TEXT.__swift5_proto: 0x468
-   __TEXT.__swift5_assocty: 0x438
-   __TEXT.__swift5_protos: 0x58
-   __TEXT.__swift_as_entry: 0x34
-   __TEXT.__swift_as_cont: 0x70
-   __TEXT.__swift_as_ret: 0x2c
--  __TEXT.__gcc_except_tab: 0x22f8
-+  __TEXT.__gcc_except_tab: 0x2338
-   __TEXT.__ustring: 0x9c
--  __TEXT.__unwind_info: 0x7f80
--  __TEXT.__eh_frame: 0x11ec
-+  __TEXT.__unwind_info: 0x7fb0
-+  __TEXT.__eh_frame: 0x1214
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3d88
-+  __DATA_CONST.__const: 0x3dd8
-   __DATA_CONST.__objc_classlist: 0xda0
-   __DATA_CONST.__objc_catlist: 0x110
-   __DATA_CONST.__objc_protolist: 0x738
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa638
-+  __DATA_CONST.__objc_selrefs: 0xa648
-   __DATA_CONST.__objc_protorefs: 0x1e0
-   __DATA_CONST.__objc_superrefs: 0x750
-   __DATA_CONST.__objc_arraydata: 0x178
-   __DATA_CONST.__got: 0x1578
-   __AUTH_CONST.__const: 0x6d58
--  __AUTH_CONST.__cfstring: 0x15a20
-+  __AUTH_CONST.__cfstring: 0x15aa0
-   __AUTH_CONST.__objc_const: 0x2c000
-   __AUTH_CONST.__objc_intobj: 0x828
-   __AUTH_CONST.__objc_doubleobj: 0x100
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10294
 -  Symbols:   13744
 -  CStrings:  3472
 +  Functions: 10300
 +  Symbols:   13753
 +  CStrings:  3478
- 
 Symbols:
 + -[MUPlaceEnrichmentSectionController fetchShowcaseIdsForReportAProblemWithCompletion:]
 + -[MUWebContentViewController callBridgeMethod:arguments:completion:]

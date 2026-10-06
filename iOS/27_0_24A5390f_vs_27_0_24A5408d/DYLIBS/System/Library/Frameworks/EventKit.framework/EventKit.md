@@ -2,94 +2,44 @@
 
 > `/System/Library/Frameworks/EventKit.framework/EventKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a1644` | `0x1a3040` | **`+0x19fc`** |
+| `__DATA_CONST.__const` | `0x47f8` | `0x48e0` | **`+0xe8`** |
+| `__AUTH_CONST.__objc_const` | `0x18548` | `0x18628` | **`+0xe0`** |
+| `__AUTH_CONST.__const` | `0x4470` | `0x4500` | **`+0x90`** |
+| `__TEXT.__cstring` | `0xbddf` | `0xbe6f` | **`+0x90`** |
+| `__TEXT.__eh_frame` | `0x25a8` | `0x2618` | **`+0x70`** |
+| `__DATA.__data` | `0x2830` | `0x2890` | **`+0x60`** |
+| `__TEXT.__oslogstring` | `0xef78` | `0xefd8` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0x3928` | `0x3978` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x15a74` | `0x15ac4` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x6730` | `0x6780` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x1a08` | `0x1a50` | **`+0x48`** |
+| `__TEXT.__swift5_typeref` | `0x1942` | `0x1988` | **`+0x46`** |
+| `__DATA_CONST.__objc_selrefs` | `0xae60` | `0xae98` | **`+0x38`** |
+| `__AUTH_CONST.__auth_got` | `0x1400` | `0x1430` | **`+0x30`** |
+| `__DATA.__objc_ivar` | `0xd64` | `0xd7c` | **`+0x18`** |
+| `__TEXT.__swift5_capture` | `0x264` | `0x278` | **`+0x14`** |
+| `__TEXT.__const` | `0x4810` | `0x4820` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x1a4` | `0x1a8` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0xe8` | `0xec` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1973.0.0.0.0
--  __TEXT.__text: 0x1a1644
--  __TEXT.__objc_methlist: 0x15a74
--  __TEXT.__cstring: 0xbddf
--  __TEXT.__const: 0x4810
--  __TEXT.__oslogstring: 0xef78
--  __TEXT.__gcc_except_tab: 0x3928
 +1976.0.0.0.0
-+  __TEXT.__text: 0x1a3040
-+  __TEXT.__objc_methlist: 0x15ac4
-+  __TEXT.__cstring: 0xbe6f
-+  __TEXT.__const: 0x4820
-+  __TEXT.__oslogstring: 0xefd8
-+  __TEXT.__gcc_except_tab: 0x3978
-   __TEXT.__dlopen_cstrs: 0x400
-   __TEXT.__ustring: 0x1a0
--  __TEXT.__swift5_typeref: 0x1942
-+  __TEXT.__swift5_typeref: 0x1988
-   __TEXT.__swift5_reflstr: 0x1261
-   __TEXT.__swift5_assocty: 0x210
-   __TEXT.__constg_swiftt: 0x1300
 
-   __TEXT.__swift5_proto: 0x22c
-   __TEXT.__swift5_types: 0x174
-   __TEXT.__swift5_protos: 0x1c
--  __TEXT.__swift5_capture: 0x264
-+  __TEXT.__swift5_capture: 0x278
-   __TEXT.__swift_as_entry: 0xd4
--  __TEXT.__swift_as_ret: 0xe8
--  __TEXT.__swift_as_cont: 0x1a4
-+  __TEXT.__swift_as_ret: 0xec
-+  __TEXT.__swift_as_cont: 0x1a8
-   __TEXT.__swift5_mpenum: 0x60
--  __TEXT.__unwind_info: 0x6730
--  __TEXT.__eh_frame: 0x25a8
-+  __TEXT.__unwind_info: 0x6780
-+  __TEXT.__eh_frame: 0x2618
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x47f8
-+  __DATA_CONST.__const: 0x48e0
-   __DATA_CONST.__objc_classlist: 0x7b0
-   __DATA_CONST.__objc_catlist: 0xa0
-   __DATA_CONST.__objc_protolist: 0x250
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xae60
-+  __DATA_CONST.__objc_selrefs: 0xae98
-   __DATA_CONST.__objc_protorefs: 0x70
-   __DATA_CONST.__objc_superrefs: 0x530
-   __DATA_CONST.__objc_arraydata: 0x5d8
--  __DATA_CONST.__got: 0x1a08
--  __AUTH_CONST.__const: 0x4470
-+  __DATA_CONST.__got: 0x1a50
-+  __AUTH_CONST.__const: 0x4500
-   __AUTH_CONST.__cfstring: 0x9ec0
--  __AUTH_CONST.__objc_const: 0x18548
-+  __AUTH_CONST.__objc_const: 0x18628
-   __AUTH_CONST.__objc_intobj: 0x6d8
-   __AUTH_CONST.__objc_arrayobj: 0x1f8
-   __AUTH_CONST.__objc_dictobj: 0x1b8
-   __AUTH_CONST.__objc_doubleobj: 0x100
--  __AUTH_CONST.__auth_got: 0x1400
-+  __AUTH_CONST.__auth_got: 0x1430
-   __AUTH.__objc_data: 0x34d0
-   __AUTH.__data: 0xf08
--  __DATA.__objc_ivar: 0xd64
--  __DATA.__data: 0x2830
-+  __DATA.__objc_ivar: 0xd7c
-+  __DATA.__data: 0x2890
-   __DATA.__bss: 0x4770
-   __DATA.__common: 0x68
-   __DATA_DIRTY.__objc_data: 0x1bd0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10666
--  Symbols:   17543
+-  Symbols:   13231
 -  CStrings:  2666
 +  Functions: 10688
-+  Symbols:   17574
++  Symbols:   13256
 +  CStrings:  2669
- 
 Symbols:
 + -[EKAutocompleter _filterBlockedResults:completion:]
 + -[EKLocationSearchModel _handleAvailabilityResults:addressToRoomMap:availabilityCache:notifyType:forOperation:]
@@ -142,17 +92,6 @@ Symbols:
 + ___block_descriptor_72_e8_32s40s48w56w_e5_v8?0lw48l8w56l8s32l8s40l8
 + ___block_descriptor_80_e8_32s40s48s56s64s72r_e5_v8?0ls32l8s40l8s48l8s56l8r72l8s64l8
 + ___block_descriptor_80_e8_32s40s48s56s64s_e5_v8?0ls32l8s40l8s48l8s56l8s64l8
-+ _objc_msgSend$_filterBlockedResults:completion:
-+ _objc_msgSend$_handleAvailabilityResults:addressToRoomMap:availabilityCache:notifyType:forOperation:
-+ _objc_msgSend$_requestAvailabilityForConferenceRooms:eventID:source:dateRange:addressToRoomMap:availabilityCache:operationQueue:operationDomain:notifyType:
-+ _objc_msgSend$_requestAvailabilityForRecentsConferenceRooms:
-+ _objc_msgSend$_setCachedMeltedObject:forKey:
-+ _objc_msgSend$_setCachedValue:forKey:
-+ _objc_msgSend$_updateAvailabilityForRecentsConferenceRooms
-+ _objc_msgSend$filterUnblockedResults:usingBlockList:emailForResult:phoneForResult:completionQueue:completion:
-+ _objc_msgSend$resolvedConferenceRoom
-+ _objc_msgSend$setResolvedConferenceRoom:
-+ _objc_msgSend$textRepresentation
 + _symbolic SDySS_____G 10Foundation20PersonNameComponentsV
 + _symbolic Say_____G 8Dispatch0A13WorkItemFlagsV
 + _symbolic Say_____G So17OS_dispatch_queueC8DispatchE10AttributesV
@@ -189,11 +128,6 @@ Symbols:
 - ___block_descriptor_48_e8_32s40s_e33_v32?0"EKConferenceRoom"8Q16^B24ls32l8s40l8
 - ___block_descriptor_56_e8_32s40w48w_e5_v8?0lw40l8w48l8s32l8
 - ___block_descriptor_80_e8_32s40s48s56s64s72r_e5_v8?0ls32l8s40l8s48l8s56l8s64l8r72l8
-- _objc_msgSend$_currentSplashScreenVersion
-- _objc_msgSend$_handleAvailabilityResults:forOperation:
-- _objc_msgSend$_sharedInit
-- _objc_msgSend$bypassSplashScreen
-- _objc_msgSend$setLastConfirmedSplashScreenVersion:
 CStrings:
 + "@\"NSString\"16@?0@\"CNAutocompleteResult\"8"
 + "Not issuing recents availability request because the source does not support it: [%@]"

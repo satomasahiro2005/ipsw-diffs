@@ -2,44 +2,37 @@
 
 > `/Applications/MobilePhone.app/MobilePhone`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1f910c` | `0x1f9144` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0x8578` | `0x8570` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_intobj`
 - `__TEXT.__const`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__swift5_typeref`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
-
- 3072.100.1.2.5
--  __TEXT.__text: 0x1f910c
-+  __TEXT.__text: 0x1f9144
-   __TEXT.__auth_stubs: 0x50f0
-   __TEXT.__objc_stubs: 0x1c000
-   __TEXT.__objc_methlist: 0x11240
-
-   __TEXT.__swift_as_entry: 0x3b0
-   __TEXT.__swift_as_ret: 0x3a0
-   __TEXT.__swift_as_cont: 0x798
--  __TEXT.__unwind_info: 0x8578
-+  __TEXT.__unwind_info: 0x8570
-   __TEXT.__eh_frame: 0x9d74
-   __DATA_CONST.__const: 0xba80
-   __DATA_CONST.__cfstring: 0x4f80
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/MobilePhone/install/TempContent/Objects/MobilePhone.build/MobilePhone.build/Objects-normal/arm64e/MPRTTTranscriptionMessage-b36b0f33b70fe0f1f5ded25f19c22412.o
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/MobilePhone/install/TempContent/Objects/MobilePhone.build/MobilePhone.build/Objects-normal/arm64e/MPRecentsTableViewController-629488be9847c7929e64c351f4e136cd.o

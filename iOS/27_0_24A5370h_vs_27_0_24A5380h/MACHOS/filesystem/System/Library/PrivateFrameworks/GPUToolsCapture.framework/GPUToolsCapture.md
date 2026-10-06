@@ -2,93 +2,60 @@
 
 > `/System/Library/PrivateFrameworks/GPUToolsCapture.framework/GPUToolsCapture`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x291f90` | `0x29665c` | **`+0x46cc`** |
+| `__TEXT.__cstring` | `0x30589` | `0x30821` | **`+0x298`** |
+| `__TEXT.__const` | `0x9f30` | `0xa020` | **`+0xf0`** |
+| `__TEXT.__objc_stubs` | `0x183e0` | `0x184c0` | **`+0xe0`** |
+| `__TEXT.__oslogstring` | `0x2382` | `0x2418` | **`+0x96`** |
+| `__DATA_CONST.__cfstring` | `0x4900` | `0x4980` | **`+0x80`** |
+| `__TEXT.__objc_methname` | `0x1b8ac` | `0x1b911` | **`+0x65`** |
+| `__DATA_CONST.__got` | `0x810` | `0x868` | **`+0x58`** |
+| `__TEXT.__unwind_info` | `0x4c20` | `0x4c68` | **`+0x48`** |
+| `__DATA.__objc_selrefs` | `0x7010` | `0x7040` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x2178` | `0x2198` | **`+0x20`** |
+| `__TEXT.__objc_methtype` | `0xafae` | `0xafc9` | **`+0x1b`** |
+| `__DATA.__bss` | `0x4688` | `0x4698` | **`+0x10`** |
+| `__TEXT.__auth_stubs` | `0x1930` | `0x1920` | **`-0x10`** |
+| `__TEXT.__objc_methlist` | `0x1358c` | `0x1359c` | **`+0x10`** |
+| `__DATA.__objc_const` | `0x1b4a8` | `0x1b4b0` | **`+0x8`** |
+| `__DATA_CONST.__auth_got` | `0xcb0` | `0xca8` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__AUTH_CONST.__interpose`
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA.__thread_vars`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__init_offsets`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x291f90
--  __TEXT.__auth_stubs: 0x1930
--  __TEXT.__objc_stubs: 0x183e0
-+  __TEXT.__text: 0x29665c
-+  __TEXT.__auth_stubs: 0x1920
-+  __TEXT.__objc_stubs: 0x184c0
-   __TEXT.__init_offsets: 0x4
--  __TEXT.__objc_methlist: 0x1358c
--  __TEXT.__const: 0x9f30
--  __TEXT.__cstring: 0x30589
--  __TEXT.__oslogstring: 0x2382
-+  __TEXT.__objc_methlist: 0x1359c
-+  __TEXT.__const: 0xa020
-+  __TEXT.__cstring: 0x30821
-+  __TEXT.__oslogstring: 0x2418
-   __TEXT.__gcc_except_tab: 0x1634
--  __TEXT.__objc_methname: 0x1b8ac
-+  __TEXT.__objc_methname: 0x1b911
-   __TEXT.__objc_classname: 0x15da
--  __TEXT.__objc_methtype: 0xafae
-+  __TEXT.__objc_methtype: 0xafc9
-   __TEXT.__ustring: 0x20a
--  __TEXT.__unwind_info: 0x4c20
--  __DATA_CONST.__const: 0x2178
--  __DATA_CONST.__cfstring: 0x4900
-+  __TEXT.__unwind_info: 0x4c68
-+  __DATA_CONST.__const: 0x2198
-+  __DATA_CONST.__cfstring: 0x4980
-   __DATA_CONST.__objc_classlist: 0x358
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x430
+-2027.0.31.0.0
++2027.0.33.0.0
 
-   __DATA_CONST.__objc_arraydata: 0x90
-   __DATA_CONST.__objc_dictobj: 0xa0
-   __DATA_CONST.__objc_arrayobj: 0x30
--  __DATA_CONST.__auth_got: 0xcb0
--  __DATA_CONST.__got: 0x810
-+  __DATA_CONST.__auth_got: 0xca8
-+  __DATA_CONST.__got: 0x868
-   __DATA_CONST.__auth_ptr: 0x48
-   __AUTH_CONST.__interpose: 0x50
--  __DATA.__objc_const: 0x1b4a8
--  __DATA.__objc_selrefs: 0x7010
-+  __DATA.__objc_const: 0x1b4b0
-+  __DATA.__objc_selrefs: 0x7040
-   __DATA.__objc_ivar: 0xba4
-   __DATA.__objc_data: 0x2170
-   __DATA.__data: 0x3530
-   __DATA.__thread_vars: 0x48
-   __DATA.__thread_bss: 0x101010
--  __DATA.__bss: 0x4688
-+  __DATA.__bss: 0x4698
-   __DATA.__common: 0x75
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 9799
--  Symbols:   37939
--  CStrings:  10184
+-  Symbols:   16216
+-  CStrings:  9407
 +  Functions: 9823
-+  Symbols:   37987
-+  CStrings:  10208
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __AUTH_CONST.__interpose : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
-~ __DATA.__thread_vars : content changed
-~ __DATA.__thread_bss : content changed
-~ __DATA.__common : content changed
++  Symbols:   16252
++  CStrings:  9425
 Symbols:
 + GCC_except_table2182
 + GCC_except_table2227
@@ -195,5 +162,4 @@ CStrings:
 - "/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/GPUToolsDevice/GPUTools/GTMTLCapture/trackers/GTResourceTracker.c:230"
 - "Multiplanar tensors"
 - "globallyUniqueString"
-
 ```

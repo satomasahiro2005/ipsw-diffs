@@ -2,107 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/SeymourMedia.framework/SeymourMedia`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14020c` | `0x1422a8` | **`+0x209c`** |
+| `__AUTH_CONST.__const` | `0xd350` | `0xd578` | **`+0x228`** |
+| `__TEXT.__const` | `0x9ef4` | `0xa074` | **`+0x180`** |
+| `__TEXT.__eh_frame` | `0x5934` | `0x5ab4` | **`+0x180`** |
+| `__TEXT.__swift5_typeref` | `0x4b7e` | `0x4c3c` | **`+0xbe`** |
+| `__TEXT.__unwind_info` | `0x3ec8` | `0x3f70` | **`+0xa8`** |
+| `__DATA.__bss` | `0x8c30` | `0x8cb0` | **`+0x80`** |
+| `__AUTH_CONST.__auth_got` | `0x28a0` | `0x28f8` | **`+0x58`** |
+| `__TEXT.__cstring` | `0x1bb0` | `0x1c00` | **`+0x50`** |
+| `__TEXT.__swift5_fieldmd` | `0x2f38` | `0x2f88` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x1660` | `0x16a8` | **`+0x48`** |
+| `__DATA.__data` | `0x2528` | `0x2568` | **`+0x40`** |
+| `__TEXT.__oslogstring` | `0x54c3` | `0x5503` | **`+0x40`** |
+| `__TEXT.__swift5_capture` | `0x3fbc` | `0x3ffc` | **`+0x40`** |
+| `__TEXT.__constg_swiftt` | `0x3ba0` | `0x3bd8` | **`+0x38`** |
+| `__TEXT.__swift5_mpenum` | `0x84` | `0xa0` | **`+0x1c`** |
+| `__TEXT.__swift_as_cont` | `0x530` | `0x548` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x294` | `0x2a8` | **`+0x14`** |
+| `__DATA_CONST.__objc_selrefs` | `0xfa8` | `0xfb8` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x28c0` | `0x28d0` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x144` | `0x150` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `0x148` | `0x154` | **`+0xc`** |
+| `__DATA.__common` | `0xf0` | `0xf8` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x384` | `0x38c` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x5b0` | `0x5b4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.134.0.0
--  __TEXT.__text: 0x14020c
 +2027.0.146.0.2
-+  __TEXT.__text: 0x1422a8
-   __TEXT.__objc_methlist: 0xdbc
--  __TEXT.__const: 0x9ef4
--  __TEXT.__cstring: 0x1bb0
--  __TEXT.__constg_swiftt: 0x3ba0
--  __TEXT.__swift5_typeref: 0x4b7e
--  __TEXT.__swift5_builtin: 0x294
--  __TEXT.__swift5_reflstr: 0x28c0
--  __TEXT.__swift5_fieldmd: 0x2f38
-+  __TEXT.__const: 0xa074
-+  __TEXT.__cstring: 0x1c00
-+  __TEXT.__constg_swiftt: 0x3bd8
-+  __TEXT.__swift5_typeref: 0x4c3c
-+  __TEXT.__swift5_builtin: 0x2a8
-+  __TEXT.__swift5_reflstr: 0x28d0
-+  __TEXT.__swift5_fieldmd: 0x2f88
-   __TEXT.__swift5_assocty: 0x270
--  __TEXT.__swift5_proto: 0x5b0
--  __TEXT.__swift5_types: 0x384
--  __TEXT.__swift5_capture: 0x3fbc
--  __TEXT.__oslogstring: 0x54c3
-+  __TEXT.__swift5_proto: 0x5b4
-+  __TEXT.__swift5_types: 0x38c
-+  __TEXT.__swift5_capture: 0x3ffc
-+  __TEXT.__oslogstring: 0x5503
-   __TEXT.__swift5_protos: 0xec
--  __TEXT.__swift_as_entry: 0x144
--  __TEXT.__swift_as_ret: 0x148
--  __TEXT.__swift_as_cont: 0x530
--  __TEXT.__swift5_mpenum: 0x84
--  __TEXT.__unwind_info: 0x3ec8
--  __TEXT.__eh_frame: 0x5934
-+  __TEXT.__swift_as_entry: 0x150
-+  __TEXT.__swift_as_ret: 0x154
-+  __TEXT.__swift_as_cont: 0x548
-+  __TEXT.__swift5_mpenum: 0xa0
-+  __TEXT.__unwind_info: 0x3f70
-+  __TEXT.__eh_frame: 0x5ab4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x128
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xfa8
-+  __DATA_CONST.__objc_selrefs: 0xfb8
-   __DATA_CONST.__objc_protorefs: 0x88
-   __DATA_CONST.__objc_superrefs: 0x10
--  __DATA_CONST.__got: 0x1660
--  __AUTH_CONST.__const: 0xd350
-+  __DATA_CONST.__got: 0x16a8
-+  __AUTH_CONST.__const: 0xd578
-   __AUTH_CONST.__cfstring: 0x20
-   __AUTH_CONST.__objc_const: 0x4de0
--  __AUTH_CONST.__auth_got: 0x28a0
-+  __AUTH_CONST.__auth_got: 0x28f8
-   __AUTH.__objc_data: 0xe60
-   __AUTH.__data: 0x1bc0
-   __DATA.__objc_ivar: 0x28
--  __DATA.__data: 0x2528
--  __DATA.__bss: 0x8c30
--  __DATA.__common: 0xf0
-+  __DATA.__data: 0x2568
-+  __DATA.__bss: 0x8cb0
-+  __DATA.__common: 0xf8
-   __DATA_DIRTY.__objc_data: 0x530
-   __DATA_DIRTY.__data: 0x26b8
-   __DATA_DIRTY.__bss: 0xb00
-
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/PrivateFrameworks/ActivityRingsUI.framework/ActivityRingsUI
-   - /System/Library/PrivateFrameworks/AppSupport.framework/AppSupport
 +  - /System/Library/PrivateFrameworks/AppleAccountUI.framework/AppleAccountUI
-   - /System/Library/PrivateFrameworks/AppleMediaServices.framework/AppleMediaServices
-   - /System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore
-   - /System/Library/PrivateFrameworks/CoreWiFi.framework/CoreWiFi
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6179
--  Symbols:   2767
+-  Symbols:   2396
 -  CStrings:  515
 +  Functions: 6226
-+  Symbols:   2784
++  Symbols:   2411
 +  CStrings:  518
- 
 Symbols:
 + _OBJC_CLASS_$_AAUIProfilePictureStore
 + ___swift_closure_destructor.184Tm
 + ___swift_closure_destructor.53Tm
 + ___swift_closure_destructor.57Tm
 + _get_enum_tag_for_layout_string 12SeymourMedia0B6PlayerC12SyncPlaybackO
-+ _objc_msgSend$profilePictureForAccountOwnerWithCompletion:
-+ _objc_msgSend$setPictureDiameter:
 + _swift_willThrowTypedImpl
 + _symbolic ScCy___________pG 10Foundation4DataV s5ErrorP
 + _symbolic So23AAUIProfilePictureStoreC

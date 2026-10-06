@@ -2,76 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/CarPlayUI.framework/CarPlayUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x12255c` | `0x1227f4` | **`+0x298`** |
+| `__TEXT.__swift5_typeref` | `0x1c68e` | `0x1c636` | **`-0x58`** |
+| `__TEXT.__objc_methlist` | `0x5bf8` | `0x5c10` | **`+0x18`** |
+| `__AUTH_CONST.__objc_const` | `0xee90` | `0xeea0` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3890` | `0x38a0` | **`+0x10`** |
+| `__TEXT.__const` | `0xe0d4` | `0xe0e4` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x3ef8` | `0x3f08` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1ca8` | `0x1cb0` | **`+0x8`** |
+| `__TEXT.__eh_frame` | `0xf18` | `0xf10` | **`-0x8`** |
+| `__DATA.__objc_ivar` | `0x5b0` | `0x5b4` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -552.3.0.0.0
--  __TEXT.__text: 0x11bc44
--  __TEXT.__objc_methlist: 0x5bf8
--  __TEXT.__const: 0xe0d4
 +552.6.2.0.0
-+  __TEXT.__text: 0x11bed0
-+  __TEXT.__objc_methlist: 0x5c10
-+  __TEXT.__const: 0xe0e4
-   __TEXT.__cstring: 0x1bed
-   __TEXT.__gcc_except_tab: 0x90
-   __TEXT.__ustring: 0x12
-   __TEXT.__oslogstring: 0x87d
--  __TEXT.__swift5_typeref: 0x1c68e
-+  __TEXT.__swift5_typeref: 0x1c636
-   __TEXT.__swift5_reflstr: 0x1f6b
-   __TEXT.__swift5_assocty: 0x11d0
-   __TEXT.__constg_swiftt: 0x59e8
 
-   __TEXT.__swift_as_entry: 0x28
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x2c
--  __TEXT.__unwind_info: 0x50e8
--  __TEXT.__eh_frame: 0xf20
-+  __TEXT.__unwind_info: 0x50f8
-+  __TEXT.__eh_frame: 0xf18
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0xe8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3890
-+  __DATA_CONST.__objc_selrefs: 0x38a0
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__objc_superrefs: 0x180
-   __DATA_CONST.__objc_arraydata: 0xd8
-   __DATA_CONST.__got: 0x13a8
-   __AUTH_CONST.__const: 0x75d0
-   __AUTH_CONST.__cfstring: 0x15e0
--  __AUTH_CONST.__objc_const: 0xee90
-+  __AUTH_CONST.__objc_const: 0xeea0
-   __AUTH_CONST.__objc_intobj: 0x270
-   __AUTH_CONST.__objc_arrayobj: 0x120
-   __AUTH_CONST.__objc_doubleobj: 0x80
--  __AUTH_CONST.__auth_got: 0x1ca8
-+  __AUTH_CONST.__auth_got: 0x1cb0
-   __AUTH.__objc_data: 0x3378
-   __AUTH.__data: 0x3220
--  __DATA.__objc_ivar: 0x5b0
-+  __DATA.__objc_ivar: 0x5b4
-   __DATA.__data: 0x6578
-   __DATA.__common: 0x228
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7160
 -  Symbols:   19157
 +  Functions: 7166
 +  Symbols:   19170
-   CStrings:  338
- 
 Symbols:
 + -[CPUIModernBarButtonItem setSourceImage:]
 + -[CPUIModernBarButtonItem sourceImage]

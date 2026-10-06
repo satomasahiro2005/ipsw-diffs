@@ -2,70 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x19d31c` | `0x19da60` | **`+0x744`** |
+| `__TEXT.__oslogstring` | `0xf322` | `0xf46b` | **`+0x149`** |
+| `__TEXT.__unwind_info` | `0x8038` | `0x8140` | **`+0x108`** |
+| `__TEXT.__cstring` | `0x3d180` | `0x3d217` | **`+0x97`** |
+| `__DATA_CONST.__const` | `0x8550` | `0x85e0` | **`+0x90`** |
+| `__TEXT.__gcc_except_tab` | `0x2108` | `0x2190` | **`+0x88`** |
+| `__AUTH_CONST.__cfstring` | `0x28300` | `0x28360` | **`+0x60`** |
+| `__AUTH_CONST.__objc_const` | `0x362e8` | `0x36338` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x1f004` | `0x1f044` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0xc0a0` | `0xc0c8` | **`+0x28`** |
+| `__DATA.__objc_ivar` | `0x2574` | `0x257c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.68.45.0.0
--  __TEXT.__text: 0x19d31c
--  __TEXT.__objc_methlist: 0x1f004
 +3600.68.61.11.1
-+  __TEXT.__text: 0x19da60
-+  __TEXT.__objc_methlist: 0x1f044
-   __TEXT.__const: 0x3d0
-   __TEXT.__dlopen_cstrs: 0x538
--  __TEXT.__gcc_except_tab: 0x2108
--  __TEXT.__cstring: 0x3d180
--  __TEXT.__oslogstring: 0xf322
-+  __TEXT.__gcc_except_tab: 0x2190
-+  __TEXT.__cstring: 0x3d217
-+  __TEXT.__oslogstring: 0xf46b
-   __TEXT.__ustring: 0x2ac
--  __TEXT.__unwind_info: 0x8038
-+  __TEXT.__unwind_info: 0x8140
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x8550
-+  __DATA_CONST.__const: 0x85e0
-   __DATA_CONST.__objc_classlist: 0xef8
-   __DATA_CONST.__objc_catlist: 0x2a8
-   __DATA_CONST.__objc_protolist: 0x5e8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xc0a0
-+  __DATA_CONST.__objc_selrefs: 0xc0c8
-   __DATA_CONST.__objc_protorefs: 0x170
-   __DATA_CONST.__objc_superrefs: 0xf10
-   __DATA_CONST.__objc_arraydata: 0x2330
-   __DATA_CONST.__got: 0x16d0
-   __AUTH_CONST.__const: 0x3ca0
--  __AUTH_CONST.__cfstring: 0x28300
--  __AUTH_CONST.__objc_const: 0x362e8
-+  __AUTH_CONST.__cfstring: 0x28360
-+  __AUTH_CONST.__objc_const: 0x36338
-   __AUTH_CONST.__objc_intobj: 0x2628
-   __AUTH_CONST.__objc_dictobj: 0xcf8
-   __AUTH_CONST.__objc_arrayobj: 0x5d0
 
-   __AUTH_CONST.__auth_got: 0xae8
-   __AUTH.__objc_data: 0x8610
-   __AUTH.__data: 0x248
--  __DATA.__objc_ivar: 0x2574
-+  __DATA.__objc_ivar: 0x257c
-   __DATA.__data: 0x4800
-   __DATA.__bss: 0x13a0
-   __DATA.__common: 0x18
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12094
--  Symbols:   26733
+-  Symbols:   22187
 -  CStrings:  8579
 +  Functions: 12106
-+  Symbols:   26756
++  Symbols:   22208
 +  CStrings:  8584
- 
 Symbols:
 + -[AFHearablesExperienceManager _dispatchToBackend:]
 + -[AFHearablesExperienceManager _flushPendingBackendOperationsWithAdapter:]
@@ -200,8 +165,6 @@ Symbols:
 + ___block_descriptor_40_e48_v16?0"<AFHearablesExperienceManagerProtocol>"8l
 + ___block_descriptor_48_e48_v16?0"<AFHearablesExperienceManagerProtocol>"8l
 + ___block_descriptor_48_e8_32s40bs_e48_v16?0"<AFHearablesExperienceManagerProtocol>"8ls40l8s32l8
-+ _objc_msgSend$_dispatchToBackend:
-+ _objc_msgSend$_flushPendingBackendOperationsWithAdapter:
 - GCC_except_table10126
 - GCC_except_table10166
 - GCC_except_table10197

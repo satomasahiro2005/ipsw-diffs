@@ -2,72 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/WebBookmarksSwift.framework/WebBookmarksSwift`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x491f0` | `0x493ac` | **`+0x1bc`** |
+| `__AUTH.__objc_data` | `—` | `0x48` | **`+0x48`** |
+| `__DATA_DIRTY.__objc_data` | `0x168` | `0x120` | **`-0x48`** |
+| `__TEXT.__eh_frame` | `0x3d48` | `0x3d68` | **`+0x20`** |
+| `__TEXT.__const` | `0x1dc8` | `0x1dd8` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x1288` | `0x1298` | **`+0x10`** |
+| `__AUTH_CONST.__const` | `0x1c01` | `0x1c08` | **`+0x7`** |
+| `__TEXT.__swift_as_cont` | `0x438` | `0x43c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x491f0
-+  __TEXT.__text: 0x493ac
-   __TEXT.__objc_methlist: 0x200
--  __TEXT.__const: 0x1dc8
-+  __TEXT.__const: 0x1dd8
-   __TEXT.__cstring: 0x420
-   __TEXT.__swift5_typeref: 0xf82
-   __TEXT.__swift5_reflstr: 0x5b0
+-7625.1.20.10.3
++7625.1.22.10.3
 
-   __TEXT.__oslogstring: 0x13fc
-   __TEXT.__swift5_capture: 0x7bc
-   __TEXT.__swift_as_ret: 0x198
--  __TEXT.__swift_as_cont: 0x438
--  __TEXT.__unwind_info: 0x1288
--  __TEXT.__eh_frame: 0x3d48
-+  __TEXT.__swift_as_cont: 0x43c
-+  __TEXT.__unwind_info: 0x1298
-+  __TEXT.__eh_frame: 0x3d68
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1c01
-+  __AUTH_CONST.__const: 0x1c08
-   __AUTH_CONST.__objc_const: 0x968
-   __AUTH_CONST.__auth_got: 0x998
-+  __AUTH.__objc_data: 0x48
-   __DATA.__objc_ivar: 0x8
-   __DATA.__data: 0xa58
-   __DATA.__bss: 0x1d00
--  __DATA_DIRTY.__objc_data: 0x168
-+  __DATA_DIRTY.__objc_data: 0x120
-   __DATA_DIRTY.__data: 0x478
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1233
--  Symbols:   4611
+-  Symbols:   3030
 +  Functions: 1234
-+  Symbols:   4613
-   CStrings:  99
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   3031
 Symbols:
 + _$s15GroupActivities0A7SessionC17WebBookmarksSwiftE4join2onySo17OS_dispatch_queueC_tYaKFAD28CKShareCollaborationActivityV_Tg5TY4_
 + _$s15GroupActivities0A7SessionC17WebBookmarksSwiftE4join2onySo17OS_dispatch_queueC_tYaKFAD34PersonalDeviceCoordinationActivityV_Tg5TY4_
@@ -90,5 +48,4 @@ Symbols:
 - _$sSh11subtractingyShyxGABF15GroupActivities11ParticipantV_Tg5
 - _$sSh11subtractingyShyxGABF17WebBookmarksSwift20ParticipantHandleMapC0E4KindO_Tg5
 - _$sSh11subtractingyShyxGqd__7ElementQyd__RszSTRd__lF15GroupActivities11ParticipantV_SayAGGTg5
-
 ```

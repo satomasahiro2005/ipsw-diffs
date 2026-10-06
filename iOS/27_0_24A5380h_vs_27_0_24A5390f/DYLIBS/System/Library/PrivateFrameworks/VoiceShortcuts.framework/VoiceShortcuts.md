@@ -2,113 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/VoiceShortcuts.framework/VoiceShortcuts`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x12b3e0` | `0x1321f0` | **`+0x6e10`** |
+| `__TEXT.__oslogstring` | `0xec76` | `0x10427` | **`+0x17b1`** |
+| `__AUTH_CONST.__const` | `0x8b40` | `0x96f8` | **`+0xbb8`** |
+| `__TEXT.__swift5_capture` | `0x263c` | `0x2aec` | **`+0x4b0`** |
+| `__TEXT.__cstring` | `0xfbc3` | `0xfd33` | **`+0x170`** |
+| `__TEXT.__const` | `0x6148` | `0x61b8` | **`+0x70`** |
+| `__TEXT.__eh_frame` | `0x7a90` | `0x7af8` | **`+0x68`** |
+| `__TEXT.__swift5_typeref` | `0x3095` | `0x30f5` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x4a68` | `0x4aa0` | **`+0x38`** |
+| `__AUTH_CONST.__auth_got` | `0x2040` | `0x2050` | **`+0x10`** |
+| `__DATA.__data` | `0x2620` | `0x2630` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x19a0` | `0x19b0` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0x25f8` | `0x25e8` | **`-0x10`** |
+| `__TEXT.__objc_methlist` | `0x585c` | `0x586c` | **`+0x10`** |
+
+### Other Changes
 
 ```diff
 
 -5032.5.0.0.0
--  __TEXT.__text: 0x12b3e0
--  __TEXT.__objc_methlist: 0x585c
--  __TEXT.__const: 0x6148
 +5034.0.12.100.0
-+  __TEXT.__text: 0x1321f0
-+  __TEXT.__objc_methlist: 0x586c
-+  __TEXT.__const: 0x61b8
-   __TEXT.__dlopen_cstrs: 0x235
--  __TEXT.__oslogstring: 0xec76
--  __TEXT.__swift5_typeref: 0x3095
-+  __TEXT.__oslogstring: 0x10427
-+  __TEXT.__swift5_typeref: 0x30f5
-   __TEXT.__swift5_fieldmd: 0x15b4
-   __TEXT.__constg_swiftt: 0x1f74
-   __TEXT.__swift5_reflstr: 0x1301
-   __TEXT.__swift5_builtin: 0x140
-   __TEXT.__swift5_assocty: 0x5b8
--  __TEXT.__swift5_capture: 0x263c
--  __TEXT.__cstring: 0xfbc3
-+  __TEXT.__swift5_capture: 0x2aec
-+  __TEXT.__cstring: 0xfd33
-   __TEXT.__swift5_proto: 0x3cc
-   __TEXT.__swift5_types: 0x1cc
-   __TEXT.__swift_as_entry: 0x2f8
 
-   __TEXT.__swift5_mpenum: 0x28
-   __TEXT.__gcc_except_tab: 0xbd0
-   __TEXT.__ustring: 0x44
--  __TEXT.__unwind_info: 0x4a68
--  __TEXT.__eh_frame: 0x7a90
-+  __TEXT.__unwind_info: 0x4aa0
-+  __TEXT.__eh_frame: 0x7af8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_protorefs: 0xb8
-   __DATA_CONST.__objc_superrefs: 0x188
-   __DATA_CONST.__objc_arraydata: 0x48
--  __DATA_CONST.__got: 0x19a0
--  __AUTH_CONST.__const: 0x8b40
-+  __DATA_CONST.__got: 0x19b0
-+  __AUTH_CONST.__const: 0x96f8
-   __AUTH_CONST.__cfstring: 0x4220
-   __AUTH_CONST.__objc_const: 0x9fa8
-   __AUTH_CONST.__objc_intobj: 0xc0
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x2040
-+  __AUTH_CONST.__auth_got: 0x2050
-   __AUTH.__objc_data: 0x7e0
-   __AUTH.__data: 0x1100
-   __DATA.__objc_ivar: 0x3c0
--  __DATA.__data: 0x2620
-+  __DATA.__data: 0x2630
-   __DATA.__bss: 0x3ec0
-   __DATA.__common: 0x10
-   __DATA_DIRTY.__objc_data: 0x1498
--  __DATA_DIRTY.__data: 0x25f8
-+  __DATA_DIRTY.__data: 0x25e8
-   __DATA_DIRTY.__crash_info: 0x148
-   __DATA_DIRTY.__bss: 0x2e60
-   __DATA_DIRTY.__common: 0x20
-
-   - /usr/lib/swift/libswift_DarwinFoundation3.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7365
--  Symbols:   7375
+-  Symbols:   5359
 -  CStrings:  2343
 +  Functions: 7526
-+  Symbols:   7388
++  Symbols:   5370
 +  CStrings:  2408
- 
 Symbols:
 + +[WFTriggerBootManager actions]
 + GCC_except_table1005
@@ -156,9 +81,6 @@ Symbols:
 + _OUTLINED_FUNCTION_222
 + _WFShortcutSourceNotifyMeWhen
 + _WFWorkflowRunSourceNotifyMeWhen
-+ _objc_msgSend$cancelActivitiesFromTriggerKey:
-+ _objc_msgSend$initWithBackgroundColorValue:glyphCharacter:
-+ _objc_msgSend$setEventQueueDelegate:
 + _symbolic Say_____G 11WorkflowKit36WFUnifiedAutomationTriggerDescriptorC
 + _symbolic SbIegd_
 + _symbolic So32LNFullyQualifiedActionIdentifierC
@@ -208,7 +130,6 @@ Symbols:
 - GCC_except_table1604
 - GCC_except_table1618
 - GCC_except_table978
-- _objc_msgSend$initWithBackgroundColorValue:glyphCharacter:customImageData:
 CStrings:
 + "%s Adding eventIDs: %{public}@"
 + "%s An automation is already running (%{public}@), so we can't run this newly-triggered one (%{public}@) (%{public}@)."

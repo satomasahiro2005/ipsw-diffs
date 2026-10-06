@@ -2,75 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/IntlPreferences.framework/IntlPreferences`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c144` | `0x1d488` | **`+0x1344`** |
+| `__TEXT.__oslogstring` | `0xfec` | `0x160c` | **`+0x620`** |
+| `__AUTH.__objc_data` | `0xa0` | `—` | **`-0xa0`** |
+| `__DATA_DIRTY.__objc_data` | `0x690` | `0x730` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0x12e5` | `0x1385` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x6c8` | `0x740` | **`+0x78`** |
+| `__AUTH_CONST.__cfstring` | `0x1a80` | `0x1ae0` | **`+0x60`** |
+| `__DATA_CONST.__objc_selrefs` | `0x10c8` | `0x1108` | **`+0x40`** |
+| `__TEXT.__objc_methlist` | `0x1204` | `0x122c` | **`+0x28`** |
+| `__TEXT.__const` | `0x200` | `0x220` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x234` | `0x21c` | **`-0x18`** |
+| `__TEXT.__unwind_info` | `0x618` | `0x630` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x320` | `0x330` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x610` | `0x618` | **`+0x8`** |
+| `__AUTH_CONST.__objc_const` | `0x1648` | `0x1650` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -498.0.0.0.0
--  __TEXT.__text: 0x1b5b8
--  __TEXT.__objc_methlist: 0x1204
--  __TEXT.__const: 0x200
--  __TEXT.__cstring: 0x12e5
--  __TEXT.__oslogstring: 0xfec
--  __TEXT.__gcc_except_tab: 0x234
 +500.1.1.0.0
-+  __TEXT.__text: 0x1c8f0
-+  __TEXT.__objc_methlist: 0x122c
-+  __TEXT.__const: 0x220
-+  __TEXT.__cstring: 0x1385
-+  __TEXT.__oslogstring: 0x160c
-+  __TEXT.__gcc_except_tab: 0x21c
-   __TEXT.__dlopen_cstrs: 0x20a
-   __TEXT.__ustring: 0x4
-   __TEXT.__swift5_typeref: 0x76
--  __TEXT.__unwind_info: 0x7a0
-+  __TEXT.__unwind_info: 0x7d0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x6c8
-+  __DATA_CONST.__const: 0x740
-   __DATA_CONST.__objc_classlist: 0xb8
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x10c8
-+  __DATA_CONST.__objc_selrefs: 0x1108
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x20
-   __DATA_CONST.__objc_arraydata: 0x300
--  __DATA_CONST.__got: 0x320
-+  __DATA_CONST.__got: 0x330
-   __AUTH_CONST.__const: 0x280
--  __AUTH_CONST.__cfstring: 0x1a80
--  __AUTH_CONST.__objc_const: 0x1648
-+  __AUTH_CONST.__cfstring: 0x1ae0
-+  __AUTH_CONST.__objc_const: 0x1650
-   __AUTH_CONST.__objc_intobj: 0xc0
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__objc_arrayobj: 0x180
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x610
--  __AUTH.__objc_data: 0xa0
-+  __AUTH_CONST.__auth_got: 0x618
-   __DATA.__objc_ivar: 0x60
-   __DATA.__data: 0x190
--  __DATA_DIRTY.__objc_data: 0x690
-+  __DATA_DIRTY.__objc_data: 0x730
-   __DATA_DIRTY.__bss: 0x30
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
 
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 474
 -  Symbols:   993
 -  CStrings:  338
 +  Functions: 487
 +  Symbols:   1006
 +  CStrings:  356
- 
 Symbols:
 + +[IntlUtility _forwardPreferredLanguagesToWatchAppForCompanionBundleID:languages:context:completion:]
 + +[IntlUtility _migratePreferredLanguageFromBundleID:sourceContainerPath:toBundleID:destinationContainerPath:carriedLanguages:error:]

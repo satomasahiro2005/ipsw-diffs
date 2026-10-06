@@ -2,111 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/SoftwareUpdateUIKit.framework/SoftwareUpdateUIKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x22fff4` | `0x23fe80` | **`+0xfe8c`** |
+| `__AUTH_CONST.__const` | `0x16b70` | `0x17660` | **`+0xaf0`** |
+| `__TEXT.__swift5_capture` | `0x7f6c` | `0x8414` | **`+0x4a8`** |
+| `__TEXT.__oslogstring` | `0x3eb0` | `0x4340` | **`+0x490`** |
+| `__TEXT.__swift5_typeref` | `0xc2e0` | `0xc674` | **`+0x394`** |
+| `__TEXT.__unwind_info` | `0x6b78` | `0x6e78` | **`+0x300`** |
+| `__TEXT.__eh_frame` | `0x25c0` | `0x2778` | **`+0x1b8`** |
+| `__TEXT.__const` | `0xf4b4` | `0xf614` | **`+0x160`** |
+| `__DATA.__data` | `0x44b0` | `0x4550` | **`+0xa0`** |
+| `__AUTH_CONST.__objc_const` | `0xe548` | `0xe5c8` | **`+0x80`** |
+| `__TEXT.__cstring` | `0x68aa` | `0x692a` | **`+0x80`** |
+| `__AUTH_CONST.__auth_got` | `0x1aa0` | `0x1b08` | **`+0x68`** |
+| `__DATA_CONST.__objc_selrefs` | `0xc08` | `0xc58` | **`+0x50`** |
+| `__TEXT.__swift5_reflstr` | `0x2420` | `0x2470` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0xc68` | `0xcb0` | **`+0x48`** |
+| `__TEXT.__constg_swiftt` | `0x4430` | `0x4474` | **`+0x44`** |
+| `__AUTH.__data` | `0x1de8` | `0x1e28` | **`+0x40`** |
+| `__AUTH_CONST.__cfstring` | `0x680` | `0x6c0` | **`+0x40`** |
+| `__TEXT.__swift5_fieldmd` | `0x1e94` | `0x1ed0` | **`+0x3c`** |
+| `__DATA_CONST.__const` | `0x4f8` | `0x520` | **`+0x28`** |
+| `__DATA.__bss` | `0x7578` | `0x7598` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x310` | `0x330` | **`+0x20`** |
+| `__AUTH.__objc_data` | `0x6a8` | `0x6c0` | **`+0x18`** |
+| `__TEXT.__swift_as_ret` | `0x1ac` | `0x1bc` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x14` | `0x18` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x22fff4
-+  __TEXT.__text: 0x23fe80
-   __TEXT.__objc_methlist: 0xa0c
-   __TEXT.__gcc_except_tab: 0x12c
--  __TEXT.__cstring: 0x68aa
--  __TEXT.__oslogstring: 0x3eb0
--  __TEXT.__swift5_typeref: 0xc2e0
--  __TEXT.__const: 0xf4b4
--  __TEXT.__swift5_capture: 0x7f6c
--  __TEXT.__constg_swiftt: 0x4430
--  __TEXT.__swift5_reflstr: 0x2420
--  __TEXT.__swift5_fieldmd: 0x1e94
-+  __TEXT.__cstring: 0x692a
-+  __TEXT.__oslogstring: 0x4340
-+  __TEXT.__swift5_typeref: 0xc674
-+  __TEXT.__const: 0xf614
-+  __TEXT.__swift5_capture: 0x8414
-+  __TEXT.__constg_swiftt: 0x4474
-+  __TEXT.__swift5_reflstr: 0x2470
-+  __TEXT.__swift5_fieldmd: 0x1ed0
-   __TEXT.__swift5_builtin: 0x244
-   __TEXT.__swift5_assocty: 0xcb8
-   __TEXT.__swift5_proto: 0x390
-   __TEXT.__swift5_types: 0x4c8
-   __TEXT.__swift_as_entry: 0x190
--  __TEXT.__swift_as_ret: 0x1ac
--  __TEXT.__swift_as_cont: 0x310
-+  __TEXT.__swift_as_ret: 0x1bc
-+  __TEXT.__swift_as_cont: 0x330
-   __TEXT.__swift5_mpenum: 0x3c
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__unwind_info: 0x6b78
--  __TEXT.__eh_frame: 0x25c0
-+  __TEXT.__unwind_info: 0x6e78
-+  __TEXT.__eh_frame: 0x2778
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4f8
-+  __DATA_CONST.__const: 0x520
-   __DATA_CONST.__objc_classlist: 0xb0
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x108
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xc08
-+  __DATA_CONST.__objc_selrefs: 0xc58
-   __DATA_CONST.__objc_protorefs: 0x80
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__objc_arraydata: 0x40
--  __DATA_CONST.__got: 0xc68
--  __AUTH_CONST.__const: 0x16b70
--  __AUTH_CONST.__cfstring: 0x680
--  __AUTH_CONST.__objc_const: 0xe548
-+  __DATA_CONST.__got: 0xcb0
-+  __AUTH_CONST.__const: 0x17660
-+  __AUTH_CONST.__cfstring: 0x6c0
-+  __AUTH_CONST.__objc_const: 0xe5c8
-   __AUTH_CONST.__objc_dictobj: 0xa0
--  __AUTH_CONST.__auth_got: 0x1aa0
--  __AUTH.__objc_data: 0x6a8
--  __AUTH.__data: 0x1de8
--  __DATA.__objc_ivar: 0x14
--  __DATA.__data: 0x44b0
--  __DATA.__bss: 0x7578
-+  __AUTH_CONST.__auth_got: 0x1b08
-+  __AUTH.__objc_data: 0x6c0
-+  __AUTH.__data: 0x1e28
-+  __DATA.__objc_ivar: 0x18
-+  __DATA.__data: 0x4550
-+  __DATA.__bss: 0x7598
-   __DATA.__common: 0x200
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/Combine.framework/Combine
+-772.0.3.0.0
++772.0.8.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11406
--  Symbols:   7063
--  CStrings:  827
+-  Symbols:   2050
+-  CStrings:  776
 +  Functions: 11646
-+  Symbols:   7243
-+  CStrings:  844
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
++  Symbols:   2077
++  CStrings:  791
 Symbols:
 + -[SUUITermsConditionsInterop presentUpdateTermsAndConditions:forAccount:presentedBy:usingRUIPresentationStyle:device:completionHandler:]
 + _OBJC_CLASS_$_SUUIDeviceDescriptorRef
@@ -124,17 +62,6 @@ Symbols:
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA012SubscriptionC0VySo20NSNotificationCenterC10FoundationE9PublisherVAC08_WebKit_aB0E03webC13TextSelectionyQrqd__AA0P13SelectabilityRd__lFQOyAcNE0oC21MagnificationGesturesyQrAN0mC0V0sT8BehaviorVFQOyAcNE0oC12LinkPreviewsyQrAS0v7PreviewU0VFQOyAcNE0oC17ContentBackgroundyQrAA10VisibilityOFQOyAcAE012scrollBounceU0_4axesQrAA012ScrollBounceU0V_AA4AxisO3SetVtFQOyAcNE0oc21BackForwardNavigationT0yQrAS021BackForwardNavigationtU0VFQOyAA08ModifiedY0VyAcNE0oc16OnScrollGeometryE03forAE6actionQrqd__m_qd__AA14ScrollGeometryVcyqd___qd__tctSHRd__lFQOyA12_yAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAS_AK3URLVSgQo_AA25_AppearanceActionModifierVG_So6CGSizeVA26_SH12CoreGraphicsyHCg0_Qo_AA12_FrameLayoutVG_Qo__Qo__Qo__Qo__Qo__AA08DisabledpR0VQo_G_SbSgQo_HO
 + _keypath_get_selector_hidingAlternateDescriptor
 + _keypath_get_selector_hidingPreferredDescriptor
-+ _objc_msgSend$currentDevice
-+ _objc_msgSend$hidingAlternateDescriptor
-+ _objc_msgSend$hidingPreferredDescriptor
-+ _objc_msgSend$osName
-+ _objc_msgSend$presentUpdateTermsAndConditions:forAccount:presentedBy:usingRUIPresentationStyle:device:completionHandler:
-+ _objc_msgSend$rebootRequired
-+ _objc_msgSend$scanResultsCacheRefreshForcesScan
-+ _objc_msgSend$scanResultsCacheRefreshIntervalOverride
-+ _objc_msgSend$setHidingAlternateDescriptor:
-+ _objc_msgSend$setHidingPreferredDescriptor:
-+ _objc_msgSend$userInterfaceIdiom
 + _swift_unknownObjectWeakDestroy
 + _swift_unknownObjectWeakInit
 + _swift_unknownObjectWeakLoadStrong
@@ -186,7 +113,6 @@ Symbols:
 - _get_witness_table 7SwiftUI22ContentUnavailableViewVyAA5LabelVyAA4TextVAA5ImageVGAA012_ConditionalC0VyALyA2GGAMGAA6ButtonVyAGGSgGAA0E0HPyHC
 - _get_witness_table 7SwiftUI4ViewRzAaBR_r0_lAA15ModifiedContentVy19SoftwareUpdateUIKit014AdaptiveScrollC0VyAA05TupleE0VyAA6IDViewVyADyADyADyADyAA4TextVAA12_FrameLayoutVGAA25_AllowsHitTestingModifierVGAA07_HiddenS0VGAA023AccessibilityAttachmentS0VGSo19SUUIStatefulUIStateVG_AA012SubscriptionC0Vy7Combine18PassthroughSubjectCyA_s5NeverOGA2_yA5_ySo0W15UIRefreshReasonVA7_GAaBPAAE20listHasStackBehaviorQryFQOyADyA12_AAE14contentMargins__3forQrAA4EdgeO3SetV_12CoreGraphics7CGFloatVSgAA0E15MarginPlacementVtFQOyAA6VStackVyAIyAA03AnyC0V_ADyADyADyAA6ZStackVyAKyADyAA5GroupVyAA012_ConditionalE0VyA35_yA35_yA29_A29_GA36_GA35_yA29_A7_GGGAA013_TraitWritingS0VyAA18TransitionTraitKeyVGGA_GGAA05_FlexnO0VGAA016_BackgroundStyleS0VyAA5ColorVGGAE33SplatRollbackRestartRequestDialogVGA29_QPGG_Qo_A50_G_Qo_GGQPGGA56_GAaBHPA69_AaBHPyHC_A56_AA0cS0HPyHCHC
 - _get_witness_table 7SwiftUI4ViewRzAaBR_r0_lAA15ModifiedContentVyADyADyAaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA012_ConditionalE0VyAeAE11refreshable6actionQryyYaYbc_tFQOyAeAE14scrollDisabledyQrSbFQOyADy19SoftwareUpdateUIKit014AdaptiveScrollC0VyAA05TupleE0VyAA6IDViewVyADyADyADyADyAA4TextVAA12_FrameLayoutVGAA25_AllowsHitTestingModifierVGAA15_HiddenModifierVGAA31AccessibilityAttachmentModifierVGSo19SUUIStatefulUIStateVG_AA012SubscriptionC0Vy7Combine18PassthroughSubjectCyA8_s5NeverOGA11_yA14_ySo27SUUIStatefulUIRefreshReasonVA16_GAeAE20listHasStackBehaviorQryFQOyADyAeAE14contentMargins__3forQrAA4EdgeO3SetV_12CoreGraphics7CGFloatVSgAA0E15MarginPlacementVtFQOyAA6VStackVyARyAA03AnyC0V_ADyADyADyAA6ZStackVyATyADyAA5GroupVyAJyAJyAJyA37_A37_GA42_GAJyA37_A16_GGGAA21_TraitWritingModifierVyAA18TransitionTraitKeyVGGA8_GGAA05_FlexwX0VGAA24_BackgroundStyleModifierVyAA5ColorVGGAN33SplatRollbackRestartRequestDialogVGA37_QPGG_Qo_A56_G_Qo_GGQPGGA62_G_Qo__Qo_A77_G_AN14ReactiveDialogOSgQo_AA25_AppearanceActionModifierVGA85_GAN30SUUIEnvironmentContextModifierVGAaBHPA87_AaBHPA86_AaBHPqd0__AaBHD3_A83_HO_A85_AA0C8ModifierHPyHCHC_A85_AAA91_HPyHCHC_A89_AAA91_HPyHCHC
-- _objc_msgSend$presentUpdateTermsAndConditions:forAccount:presentedBy:usingRUIPresentationStyle:completionHandler:
 - _symbolic _____yAAyAAy_____y_____y_____y_____yAAy_____y_____y_____yAAyAAyAAyAAy__________G_____G_____G_____G_____G______y_____yAO_____GAQyARy_____ASG_____yAAy_____y_____yADy______AAyAAyAAy_____yAEyAAy_____yAByAByAByA2XGA_GAByAxSGGG_____y_____GGAOGG_____G_____y_____GG_____GAXQPGG_Qo_A10_G_Qo_GGQPGGA14_G_Qo__Qo_A28_G______SgQo______GA34_G_____G 7SwiftUI15ModifiedContentV AA4ViewPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQO AA012_ConditionalD0V AeAE11refreshable6actionQryyYaYbc_tFQO AeAE14scrollDisabledyQrSbFQO 19SoftwareUpdateUIKit014AdaptiveScrollE0V AA05TupleD0V AA6IDViewV AA4TextV AA12_FrameLayoutV AA25_AllowsHitTestingModifierV AA15_HiddenModifierV AA31AccessibilityAttachmentModifierV So19SUUIStatefulUIStateV AA012SubscriptionE0V 7Combine18PassthroughSubjectC s5NeverO So27SUUIStatefulUIRefreshReasonV AeAE20listHasStackBehaviorQryFQO AeAE14contentMargins__3forQrAA4EdgeO3SetV_12CoreGraphics7CGFloatVSgAA0D15MarginPlacementVtFQO AA6VStackV AA03AnyE0V AA6ZStackV AA5GroupV AA21_TraitWritingModifierV AA18TransitionTraitKeyV AA05_FlexwX0V AA24_BackgroundStyleModifierV AA5ColorV AN33SplatRollbackRestartRequestDialogV AN14ReactiveDialogO AA25_AppearanceActionModifierV AN30SUUIEnvironmentContextModifierV
 - _symbolic _____yAAy_____y_____y_____y_____yAAy_____y_____y_____yAAyAAyAAyAAy__________G_____G_____G_____G_____G______y_____yAO_____GAQyARy_____ASG_____yAAy_____y_____yADy______AAyAAyAAy_____yAEyAAy_____yAByAByAByA2XGA_GAByAxSGGG_____y_____GGAOGG_____G_____y_____GG_____GAXQPGG_Qo_A10_G_Qo_GGQPGGA14_G_Qo__Qo_A28_G______SgQo______GA34_G 7SwiftUI15ModifiedContentV AA4ViewPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQO AA012_ConditionalD0V AeAE11refreshable6actionQryyYaYbc_tFQO AeAE14scrollDisabledyQrSbFQO 19SoftwareUpdateUIKit014AdaptiveScrollE0V AA05TupleD0V AA6IDViewV AA4TextV AA12_FrameLayoutV AA25_AllowsHitTestingModifierV AA15_HiddenModifierV AA31AccessibilityAttachmentModifierV So19SUUIStatefulUIStateV AA012SubscriptionE0V 7Combine18PassthroughSubjectC s5NeverO So27SUUIStatefulUIRefreshReasonV AeAE20listHasStackBehaviorQryFQO AeAE14contentMargins__3forQrAA4EdgeO3SetV_12CoreGraphics7CGFloatVSgAA0D15MarginPlacementVtFQO AA6VStackV AA03AnyE0V AA6ZStackV AA5GroupV AA21_TraitWritingModifierV AA18TransitionTraitKeyV AA05_FlexwX0V AA24_BackgroundStyleModifierV AA5ColorV AN33SplatRollbackRestartRequestDialogV AN14ReactiveDialogO AA25_AppearanceActionModifierV
 - _symbolic _____yAAy_____y_____y_____y_____y_____y__________y_____y_____y_____y_____y_____yABy_____yABy_____y___________SgQo______G______ALSH12CoreGraphicsyHCg0_Qo______G_Qo__Qo__Qo__Qo__Qo_______Qo_GG_Qo__Qo______y_____GGAXGAXG 7SwiftUI19_ConditionalContentV AA08ModifiedD0V AA4ViewPAAE20scrollBounceBehavior_4axesQrAA06ScrollhI0V_AA4AxisO3SetVtFQO AgAE0G8DisabledyQrSbFQO AA0kF0V AA012SubscriptionF0V So20NSNotificationCenterC10FoundationE9PublisherV AG08_WebKit_aB0E03webF13TextSelectionyQrqd__AA0W13SelectabilityRd__lFQO AgZE0vF21MagnificationGesturesyQrAZ0tF0V0z8GesturesI0VFQO AgZE0vF12LinkPreviewsyQrA3_011LinkPreviewI0VFQO AgZE0vfD10BackgroundyQrAA10VisibilityOFQO AgAEAH_AIQrAK_AOtFQO AgZE0vF29BackForwardNavigationGesturesyQrA3_029BackForwardNavigationGesturesI0VFQO AgZE0vf2OnK14GeometryChange3for2of6actionQrqd__m_qd__AA0K8GeometryVcyqd___qd__tctSHRd__lFQO AgAE8onChangeA17_7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQO A3_ AW3URLV AA25_AppearanceActionModifierV So6CGSizeV AA12_FrameLayoutV AA0nwY0V AA21_TraitWritingModifierV AA02IsX15EnabledTraitKeyV
@@ -247,5 +173,4 @@ CStrings:
 - "User Action: Clicked 'Restart Now' on the Remove Security Response dialog."
 - "presentTermsAndConditionsSheet(for:withPresentationStyle:)"
 - "startRefreshScanResultsCacheTimer(forExsitingTtl:)"
-
 ```

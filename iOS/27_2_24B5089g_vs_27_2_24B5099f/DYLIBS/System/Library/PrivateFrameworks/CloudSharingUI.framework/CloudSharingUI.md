@@ -2,75 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/CloudSharingUI.framework/CloudSharingUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x51bac` | `0x52218` | **`+0x66c`** |
+| `__TEXT.__const` | `0x481e` | `0x48ee` | **`+0xd0`** |
+| `__TEXT.__swift5_typeref` | `0x51a2` | `0x5220` | **`+0x7e`** |
+| `__AUTH_CONST.__const` | `0x1cd0` | `0x1d00` | **`+0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0xcd4` | `0xcf8` | **`+0x24`** |
+| `__TEXT.__oslogstring` | `0xda3` | `0xdc3` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0xc84` | `0xca4` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x1400` | `0x1420` | **`+0x20`** |
+| `__DATA.__bss` | `0x2d08` | `0x2d18` | **`+0x10`** |
+| `__DATA.__data` | `0x18a8` | `0x18b8` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x674` | `0x684` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1040` | `0x1048` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8c8` | `0x8d0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -240.1.4.0.0
--  __TEXT.__text: 0x4f4e8
 +240.1.5.0.0
-+  __TEXT.__text: 0x4fb40
-   __TEXT.__objc_methlist: 0xa1c
--  __TEXT.__const: 0x481e
--  __TEXT.__oslogstring: 0xda3
-+  __TEXT.__const: 0x48ee
-+  __TEXT.__oslogstring: 0xdc3
-   __TEXT.__cstring: 0x1681
-   __TEXT.__gcc_except_tab: 0x58
-   __TEXT.__constg_swiftt: 0x176c
--  __TEXT.__swift5_typeref: 0x51a2
-+  __TEXT.__swift5_typeref: 0x5220
-   __TEXT.__swift5_builtin: 0xb4
--  __TEXT.__swift5_reflstr: 0xc84
--  __TEXT.__swift5_fieldmd: 0xcd4
-+  __TEXT.__swift5_reflstr: 0xca4
-+  __TEXT.__swift5_fieldmd: 0xcf8
-   __TEXT.__swift5_assocty: 0x400
-   __TEXT.__swift5_proto: 0x144
-   __TEXT.__swift5_types: 0xe4
--  __TEXT.__swift5_capture: 0x674
-+  __TEXT.__swift5_capture: 0x684
-   __TEXT.__swift_as_entry: 0x4c
-   __TEXT.__swift_as_ret: 0x2c
-   __TEXT.__swift_as_cont: 0x70
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__unwind_info: 0x18d8
-+  __TEXT.__unwind_info: 0x18f8
-   __TEXT.__eh_frame: 0xbdc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_classlist: 0xb8
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8c8
-+  __DATA_CONST.__objc_selrefs: 0x8d0
-   __DATA_CONST.__objc_protorefs: 0x40
-   __DATA_CONST.__objc_superrefs: 0x30
-   __DATA_CONST.__got: 0x738
--  __AUTH_CONST.__const: 0x1cd0
-+  __AUTH_CONST.__const: 0x1d00
-   __AUTH_CONST.__cfstring: 0x1a0
-   __AUTH_CONST.__objc_const: 0x1e60
--  __AUTH_CONST.__auth_got: 0x1040
-+  __AUTH_CONST.__auth_got: 0x1048
-   __AUTH.__objc_data: 0xc88
-   __AUTH.__data: 0x16d8
-   __DATA.__objc_ivar: 0x70
--  __DATA.__data: 0x18a8
-+  __DATA.__data: 0x18b8
-   __DATA.__common: 0x180
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2016
 -  Symbols:   1243
 +  Functions: 2028
 +  Symbols:   1248
-   CStrings:  187
- 
 Symbols:
 + _NSSelectorFromString
 + ___swift_closure_destructor.35Tm

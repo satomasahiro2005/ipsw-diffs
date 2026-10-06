@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/LighthouseAV.framework/LighthouseAV`
 
-```diff
+### Section Size Changes
 
- 32.0.0.0.0
--  __TEXT.__text: 0x2cc28
-+  __TEXT.__text: 0x2cc14
-   __TEXT.__const: 0xf56
-   __TEXT.__cstring: 0x91c
-   __TEXT.__swift5_typeref: 0x59c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2cc28` | `0x2cc14` | **`-0x14`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_26ff69dd0 -> sub_287fa1dd0 : 796 -> 784
-~ sub_26ff6aa1c -> sub_287fa2a10 : 1444 -> 1436
+~ sub_26fee7dd0 -> sub_287eaedd0 : 796 -> 784
+~ sub_26fee8a1c -> sub_287eafa10 : 1444 -> 1436
 ```

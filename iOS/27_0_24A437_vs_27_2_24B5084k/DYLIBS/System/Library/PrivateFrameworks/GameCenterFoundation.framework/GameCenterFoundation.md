@@ -2,79 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/GameCenterFoundation.framework/GameCenterFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x172f00` | `0x177630` | **`+0x4730`** |
+| `__AUTH_CONST.__objc_const` | `0x245c8` | `0x24cd8` | **`+0x710`** |
+| `__TEXT.__objc_methlist` | `0x121fc` | `0x12614` | **`+0x418`** |
+| `__TEXT.__cstring` | `0x18ff0` | `0x19190` | **`+0x1a0`** |
+| `__TEXT.__unwind_info` | `0x67d8` | `0x6928` | **`+0x150`** |
+| `__AUTH.__objc_data` | `0x2b40` | `0x2c30` | **`+0xf0`** |
+| `__TEXT.__oslogstring` | `0xdebb` | `0xdf4b` | **`+0x90`** |
+| `__TEXT.__gcc_except_tab` | `0x12a0` | `0x12dc` | **`+0x3c`** |
+| `__DATA_CONST.__const` | `0x61b0` | `0x61d8` | **`+0x28`** |
+| `__DATA_CONST.__objc_superrefs` | `0x4f0` | `0x518` | **`+0x28`** |
+| `__DATA.__objc_ivar` | `0xfb0` | `0xfd4` | **`+0x24`** |
+| `__AUTH_CONST.__const` | `0x6d08` | `0x6d28` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x1108` | `0x1120` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x810` | `0x828` | **`+0x18`** |
+| `__DATA.__bss` | `0x82e0` | `0x82f0` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8578` | `0x8588` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -821.0.25.0.0
--  __TEXT.__text: 0x166d20
--  __TEXT.__objc_methlist: 0x121fc
--  __TEXT.__cstring: 0x18ff0
 +821.1.8.0.0
-+  __TEXT.__text: 0x16b264
-+  __TEXT.__objc_methlist: 0x12614
-+  __TEXT.__cstring: 0x19190
-   __TEXT.__const: 0x6608
--  __TEXT.__gcc_except_tab: 0x12a0
--  __TEXT.__oslogstring: 0xdebb
-+  __TEXT.__gcc_except_tab: 0x12dc
-+  __TEXT.__oslogstring: 0xdf4b
-   __TEXT.__ustring: 0x18
-   __TEXT.__dlopen_cstrs: 0xba
-   __TEXT.__swift5_typeref: 0x2062
 
-   __TEXT.__swift_as_ret: 0x1dc
-   __TEXT.__swift_as_cont: 0x3f4
-   __TEXT.__swift5_mpenum: 0x48
--  __TEXT.__unwind_info: 0x7f40
-+  __TEXT.__unwind_info: 0x80d0
-   __TEXT.__eh_frame: 0x5968
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x61b0
--  __DATA_CONST.__objc_classlist: 0x810
-+  __DATA_CONST.__const: 0x61d8
-+  __DATA_CONST.__objc_classlist: 0x828
-   __DATA_CONST.__objc_catlist: 0x100
-   __DATA_CONST.__objc_protolist: 0x230
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8578
-+  __DATA_CONST.__objc_selrefs: 0x8588
-   __DATA_CONST.__objc_protorefs: 0x128
--  __DATA_CONST.__objc_superrefs: 0x4f0
-+  __DATA_CONST.__objc_superrefs: 0x518
-   __DATA_CONST.__objc_arraydata: 0x280
--  __DATA_CONST.__got: 0x1108
--  __AUTH_CONST.__const: 0x6d08
-+  __DATA_CONST.__got: 0x1120
-+  __AUTH_CONST.__const: 0x6d28
-   __AUTH_CONST.__cfstring: 0x11640
--  __AUTH_CONST.__objc_const: 0x245c8
-+  __AUTH_CONST.__objc_const: 0x24cd8
-   __AUTH_CONST.__objc_arrayobj: 0x150
-   __AUTH_CONST.__objc_intobj: 0x288
-   __AUTH_CONST.__objc_dictobj: 0x140
-   __AUTH_CONST.__auth_got: 0x1560
--  __AUTH.__objc_data: 0x2b40
-+  __AUTH.__objc_data: 0x2c30
-   __AUTH.__data: 0x1088
--  __DATA.__objc_ivar: 0xfb0
-+  __DATA.__objc_ivar: 0xfd4
-   __DATA.__data: 0x3a60
-   __DATA.__common: 0x20
-   __DATA_DIRTY.__objc_data: 0x2c40
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11229
--  Symbols:   15078
+-  Symbols:   12321
 -  CStrings:  4204
 +  Functions: 11343
-+  Symbols:   15224
++  Symbols:   12465
 +  CStrings:  4213
- 
 Symbols:
 + +[GCFAchievement descriptionForAchievement:achievementDescriptions:]
 + +[GCFAchievement instanceMethodSignatureForSelector:]
@@ -222,8 +183,6 @@ Symbols:
 + ___86+[GCFAchievementDescription loadAchievementDescriptionsForGame:withCompletionHandler:]_block_invoke
 + ___86+[GCFAchievementDescription loadAchievementDescriptionsForGame:withCompletionHandler:]_block_invoke_2
 + ___block_descriptor_49_e8_32s40r_e31_v32?0"GCFAchievement"8Q16^B24ls32l8r40l8
-+ _objc_msgSend$gcfAchievement
-+ _objc_msgSend$setGcfAchievement:
 - -[GKAchievementChallenge setAchievement:]
 - _OBJC_IVAR_$_GKAchievementChallenge._achievement
 CStrings:

@@ -2,6 +2,8 @@
 
 > `/usr/lib/libMatch.1.dylib`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _matchOptimize : 3488 -> 3480

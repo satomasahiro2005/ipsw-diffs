@@ -2,8 +2,10 @@
 
 > `/System/Library/PrivateFrameworks/SiriPrivateLearningLogging.framework/SiriPrivateLearningLogging`
 
+### Other Changes
+
 ```text
 Functions:
-~ sub_2a7f5a218 -> sub_2a9b79218 : 5184 -> 5180
-~ sub_2a7f6066c -> sub_2a9b7f668 : 1016 -> 1020
+~ sub_2a8ca3218 -> sub_2a9a63218 : 5184 -> 5180
+~ sub_2a8ca966c -> sub_2a9a69668 : 1016 -> 1020
 ```

@@ -2,105 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/WeatherAppSupport.framework/WeatherAppSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2100d8` | `0x2144d8` | **`+0x4400`** |
+| `__DATA_DIRTY.__bss` | `0x7300` | `0xb5b0` | **`+0x42b0`** |
+| `__DATA.__bss` | `0x18f78` | `0x14d80` | **`-0x41f8`** |
+| `__TEXT.__cstring` | `0x3b890` | `0x3df60` | **`+0x26d0`** |
+| `__DATA_DIRTY.__data` | `0x6c28` | `0x9058` | **`+0x2430`** |
+| `__DATA.__data` | `0x52b0` | `0x3878` | **`-0x1a38`** |
+| `__AUTH.__data` | `0x3fe8` | `0x36b0` | **`-0x938`** |
+| `__TEXT.__swift5_typeref` | `0xf6ae` | `0xf910` | **`+0x262`** |
+| `__TEXT.__const` | `0x23a74` | `0x23c54` | **`+0x1e0`** |
+| `__TEXT.__eh_frame` | `0x4130` | `0x4300` | **`+0x1d0`** |
+| `__TEXT.__swift5_reflstr` | `0x5b0d` | `0x5bed` | **`+0xe0`** |
+| `__DATA.__common` | `0xf8` | `0x38` | **`-0xc0`** |
+| `__DATA_DIRTY.__common` | `0x288` | `0x348` | **`+0xc0`** |
+| `__TEXT.__unwind_info` | `0x7e60` | `0x7f20` | **`+0xc0`** |
+| `__TEXT.__constg_swiftt` | `0xa82c` | `0xa8e4` | **`+0xb8`** |
+| `__TEXT.__swift5_fieldmd` | `0x841c` | `0x84c8` | **`+0xac`** |
+| `__AUTH_CONST.__const` | `0xf9e8` | `0xfa48` | **`+0x60`** |
+| `__TEXT.__swift5_assocty` | `0x1ba8` | `0x1bc0` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x3590` | `0x35a0` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x1ad0` | `0x1ad8` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x10c8` | `0x10cc` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0xb08` | `0xb0c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2100d8
-+  __TEXT.__text: 0x2144d8
-   __TEXT.__objc_methlist: 0x410
--  __TEXT.__const: 0x23a74
--  __TEXT.__swift5_typeref: 0xf6ae
-+  __TEXT.__const: 0x23c54
-+  __TEXT.__swift5_typeref: 0xf910
-   __TEXT.__oslogstring: 0x16ca
--  __TEXT.__cstring: 0x3b890
--  __TEXT.__constg_swiftt: 0xa82c
--  __TEXT.__swift5_reflstr: 0x5b0d
--  __TEXT.__swift5_fieldmd: 0x841c
-+  __TEXT.__cstring: 0x3df60
-+  __TEXT.__constg_swiftt: 0xa8e4
-+  __TEXT.__swift5_reflstr: 0x5bed
-+  __TEXT.__swift5_fieldmd: 0x84c8
-   __TEXT.__swift5_builtin: 0x280
--  __TEXT.__swift5_assocty: 0x1ba8
--  __TEXT.__swift5_proto: 0x10c8
--  __TEXT.__swift5_types: 0xb08
-+  __TEXT.__swift5_assocty: 0x1bc0
-+  __TEXT.__swift5_proto: 0x10cc
-+  __TEXT.__swift5_types: 0xb0c
-   __TEXT.__swift5_protos: 0xec
-   __TEXT.__swift5_capture: 0x1428
-   __TEXT.__swift5_mpenum: 0x1f4
+-1435.0.0.0.0
++1439.0.0.0.0
 
-   __TEXT.__swift_as_entry: 0x78
-   __TEXT.__swift_as_ret: 0x6c
-   __TEXT.__swift_as_cont: 0x8c
--  __TEXT.__unwind_info: 0x7e60
--  __TEXT.__eh_frame: 0x4130
-+  __TEXT.__unwind_info: 0x7f20
-+  __TEXT.__eh_frame: 0x4300
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x488
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__got: 0x1ad0
--  __AUTH_CONST.__const: 0xf9e8
-+  __DATA_CONST.__got: 0x1ad8
-+  __AUTH_CONST.__const: 0xfa48
-   __AUTH_CONST.__objc_const: 0x26b8
--  __AUTH_CONST.__auth_got: 0x3590
-+  __AUTH_CONST.__auth_got: 0x35a0
-   __AUTH.__objc_data: 0x3a0
--  __AUTH.__data: 0x3fe8
--  __DATA.__data: 0x52b0
--  __DATA.__bss: 0x18f78
--  __DATA.__common: 0xf8
-+  __AUTH.__data: 0x36b0
-+  __DATA.__data: 0x3878
-+  __DATA.__bss: 0x14d80
-+  __DATA.__common: 0x38
-   __DATA_DIRTY.__objc_data: 0xa0
--  __DATA_DIRTY.__data: 0x6c28
--  __DATA_DIRTY.__bss: 0x7300
--  __DATA_DIRTY.__common: 0x288
-+  __DATA_DIRTY.__data: 0x9058
-+  __DATA_DIRTY.__bss: 0xb5b0
-+  __DATA_DIRTY.__common: 0x348
-   - /System/Library/Frameworks/Charts.framework/Charts
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 14481
--  Symbols:   11317
+-  Symbols:   4072
 -  CStrings:  2272
 +  Functions: 14537
-+  Symbols:   11339
++  Symbols:   4082
 +  CStrings:  2365
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_types2 : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
 Symbols:
 + _OUTLINED_FUNCTION_145
 + _OUTLINED_FUNCTION_146
@@ -314,5 +255,4 @@ CStrings:
 + "today_precipitation_less_than_amount_with_type_hail"
 + "yesterday_hail_L2_description"
 + "yesterday_less_than_hail_L2_description"
-
 ```

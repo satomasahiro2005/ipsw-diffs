@@ -2,13 +2,12 @@
 
 > `/Applications/MobilePhone.app/MobilePhone`
 
+### Other Changes
+
 ```diff
 
 -3072.100.1.2.5
 +3072.100.1.2.8
-   __TEXT.__text: 0x1e80d8
-   __TEXT.__auth_stubs: 0x50f0
-   __TEXT.__objc_stubs: 0x1c000
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/MobilePhone/install/TempContent/Objects/MobilePhone.build/MobilePhone.build/Objects-normal/arm64e/MPRTTTranscriptionMessage-bf38b569bf027bb7f0c0dd917a53ea6d.o
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/MobilePhone/install/TempContent/Objects/MobilePhone.build/MobilePhone.build/Objects-normal/arm64e/MPRecentsTableViewController-27e58213c2b299c6cfba8017adbc5287.o

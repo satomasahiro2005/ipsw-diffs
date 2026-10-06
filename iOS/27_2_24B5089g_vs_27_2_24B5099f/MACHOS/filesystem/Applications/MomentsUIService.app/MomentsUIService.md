@@ -2,71 +2,48 @@
 
 > `/Applications/MomentsUIService.app/MomentsUIService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x291504` | `0x29170c` | **`+0x208`** |
+| `__TEXT.__eh_frame` | `0x8650` | `0x8678` | **`+0x28`** |
+| `__TEXT.__auth_stubs` | `0x4aa0` | `0x4ab0` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x2560` | `0x2568` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x1ba8` | `0x1ba0` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x7718` | `0x7720` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
 - `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
- 502.0.8.0.0
--  __TEXT.__text: 0x27eae0
--  __TEXT.__auth_stubs: 0x4aa0
-+  __TEXT.__text: 0x27ece8
-+  __TEXT.__auth_stubs: 0x4ab0
-   __TEXT.__objc_stubs: 0x9480
-   __TEXT.__objc_methlist: 0x4094
-   __TEXT.__const: 0xb3c4
-
-   __TEXT.__swift_as_ret: 0x454
-   __TEXT.__swift_as_cont: 0x720
-   __TEXT.__swift5_protos: 0x48
--  __TEXT.__unwind_info: 0x9380
--  __TEXT.__eh_frame: 0x8670
-+  __TEXT.__unwind_info: 0x9390
-+  __TEXT.__eh_frame: 0x8698
-   __DATA_CONST.__const: 0x10568
-   __DATA_CONST.__cfstring: 0x2140
-   __DATA_CONST.__objc_classlist: 0x550
-
-   __DATA_CONST.__objc_intobj: 0x18
-   __DATA_CONST.__objc_arraydata: 0xf8
-   __DATA_CONST.__objc_arrayobj: 0x18
--  __DATA_CONST.__auth_got: 0x2560
--  __DATA_CONST.__got: 0x1ba8
-+  __DATA_CONST.__auth_got: 0x2568
-+  __DATA_CONST.__got: 0x1ba0
-   __DATA_CONST.__auth_ptr: 0xf28
-   __DATA.__objc_const: 0xca00
-   __DATA.__objc_selrefs: 0x3690
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   - @rpath/MomentsUIServiceCore.framework/MomentsUIServiceCore
 -  Functions: 11037
 -  Symbols:   26551
 +  Functions: 11040
 +  Symbols:   26553
-   CStrings:  5003
- 
 Symbols:
 + $ss10_NativeSetV6filteryAByxGSbxqd__YKXEqd__YKs5ErrorRd__lFADs13_UnsafeBitsetVqd__YKXEfU_So33BMMomentsEngagementSuggestionTypeV_s5NeverOTG5TA
 + _$s10Foundation4DateV2leoiySbAC_ACtFZ

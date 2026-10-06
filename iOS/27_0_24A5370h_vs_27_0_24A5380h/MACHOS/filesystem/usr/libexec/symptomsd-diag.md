@@ -2,5 +2,14 @@
 
 > `/usr/libexec/symptomsd-diag`
 
-Sections:
-~ __DATA.__objc_selrefs : content changed
+### Same-size Content Changes
+
+- `__DATA.__objc_selrefs`
+
+### Other Changes
+
+```diff
+
+-464.0.0.0.0
++467.0.0.0.0
+```

@@ -2,17 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/32023/Libraries/libComposeFilters.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xac1c` | `0xab24` | **`-0xf8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xac1c
-+  __TEXT.__text: 0xab24
-   __TEXT.__const: 0x50
-   __TEXT.__cstring: 0xc3a
-   __TEXT.__unwind_info: 0x188
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-
+-32023.917.2.0.0
++32023.920.0.0.0
 ```

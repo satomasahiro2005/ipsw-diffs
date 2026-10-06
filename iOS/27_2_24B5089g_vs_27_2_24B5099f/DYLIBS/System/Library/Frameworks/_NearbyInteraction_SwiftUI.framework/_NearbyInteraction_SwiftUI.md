@@ -2,67 +2,61 @@
 
 > `/System/Library/Frameworks/_NearbyInteraction_SwiftUI.framework/_NearbyInteraction_SwiftUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x0` | `0x5f90` | **`+0x5f90`** |
+| `__AUTH_CONST.__auth_got` | `—` | `0x3f0` | **`+0x3f0`** |
+| `__DATA.__data` | `—` | `0x300` | **`+0x300`** |
+| `__AUTH_CONST.__objc_const` | `—` | `0x278` | **`+0x278`** |
+| `__TEXT.__swift5_typeref` | `—` | `0x261` | **`+0x261`** |
+| `__TEXT.__unwind_info` | `—` | `0x1c8` | **`+0x1c8`** |
+| `__TEXT.__oslogstring` | `—` | `0x1b9` | **`+0x1b9`** |
+| `__TEXT.__objc_methlist` | `—` | `0x1b4` | **`+0x1b4`** |
+| `__AUTH_CONST.__const` | `—` | `0x198` | **`+0x198`** |
+| `__TEXT.__const` | `0x2` | `0x192` | **`+0x190`** |
+| `__TEXT.__constg_swiftt` | `—` | `0x164` | **`+0x164`** |
+| `__AUTH.__data` | `—` | `0x148` | **`+0x148`** |
+| `__DATA_CONST.__objc_selrefs` | `—` | `0xf0` | **`+0xf0`** |
+| `__TEXT.__cstring` | `—` | `0xd2` | **`+0xd2`** |
+| `__AUTH.__objc_data` | `—` | `0xc8` | **`+0xc8`** |
+| `__TEXT.__swift5_fieldmd` | `—` | `0xb8` | **`+0xb8`** |
+| `__TEXT.__swift5_reflstr` | `—` | `0x83` | **`+0x83`** |
+| `__DATA.__bss` | `—` | `0x80` | **`+0x80`** |
+| `__TEXT.__swift5_capture` | `—` | `0x60` | **`+0x60`** |
+| `__TEXT.__eh_frame` | `—` | `0x48` | **`+0x48`** |
+| `__DATA_CONST.__objc_protolist` | `—` | `0x40` | **`+0x40`** |
+| `__DATA_CONST.__objc_protorefs` | `—` | `0x20` | **`+0x20`** |
+| `__TEXT.__swift5_assocty` | `—` | `0x18` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `—` | `0x14` | **`+0x14`** |
+| `__TEXT.__swift5_types` | `—` | `0x10` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `—` | `0x4` | **`+0x4`** |
+| `__DATA_CONST.__got` | `—` | `0x0` | **`+0x0`** |
+| `__TEXT.__auth_stubs` | `—` | `0x0` | **`+0x0`** |
+| `__TEXT.__objc_classname` | `—` | `0x0` | **`+0x0`** |
+| `__TEXT.__objc_methname` | `—` | `0x0` | **`+0x0`** |
+| `__TEXT.__objc_methtype` | `—` | `0x0` | **`+0x0`** |
+| `__TEXT.__objc_stubs` | `—` | `0x0` | **`+0x0`** |
+
+### Other Changes
+
 ```diff
 
 -575.0.6.0.0
--  __TEXT.__text: 0x0
--  __TEXT.__const: 0x2
 +575.0.8.0.0
-+  __TEXT.__text: 0x5bf8
-+  __TEXT.__objc_methlist: 0x1b4
-+  __TEXT.__const: 0x192
-+  __TEXT.__constg_swiftt: 0x164
-+  __TEXT.__swift5_typeref: 0x261
-+  __TEXT.__swift5_builtin: 0x14
-+  __TEXT.__swift5_reflstr: 0x83
-+  __TEXT.__swift5_fieldmd: 0xb8
-+  __TEXT.__swift5_types: 0x10
-+  __TEXT.__swift5_assocty: 0x18
-+  __TEXT.__swift5_capture: 0x60
-+  __TEXT.__oslogstring: 0x1b9
-+  __TEXT.__cstring: 0xd2
-+  __TEXT.__swift5_proto: 0x4
-+  __TEXT.__unwind_info: 0x228
-+  __TEXT.__eh_frame: 0x48
-+  __TEXT.__objc_stubs: 0x0
-+  __TEXT.__auth_stubs: 0x0
-+  __TEXT.__objc_classname: 0x0
-+  __TEXT.__objc_methname: 0x0
-+  __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x88
-+  __DATA_CONST.__objc_classlist: 0x8
-+  __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
-+  __DATA_CONST.__objc_selrefs: 0xf0
-+  __DATA_CONST.__objc_protorefs: 0x20
-+  __DATA_CONST.__got: 0x0
-+  __AUTH_CONST.__const: 0x198
-+  __AUTH_CONST.__objc_const: 0x278
-+  __AUTH_CONST.__auth_got: 0x3f0
-+  __AUTH.__objc_data: 0xc8
-+  __AUTH.__data: 0x148
-+  __DATA.__data: 0x300
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/NearbyInteraction.framework/NearbyInteraction
-+  - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-+  - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftCoreImage.dylib
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
+
++  - /usr/lib/swift/libswiftCore.dylib
+
 -  Functions: 0
 -  Symbols:   35
 -  CStrings:  0
 +  Functions: 111
 +  Symbols:   199
 +  CStrings:  14
- 
 Symbols:
 + <redacted>
 + _OBJC_CLASS_$_NIBodyToken

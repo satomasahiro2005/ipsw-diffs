@@ -2,70 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/WebBookmarks.framework/WebBookmarks`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf171c` | `0xf1d6c` | **`+0x650`** |
+| `__TEXT.__oslogstring` | `0xb38c` | `0xb63c` | **`+0x2b0`** |
+| `__TEXT.__gcc_except_tab` | `0xc3e0` | `0xc46c` | **`+0x8c`** |
+| `__AUTH_CONST.__objc_const` | `0xa828` | `0xa848` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x59a0` | `0x59c0` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5140` | `0x5158` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x8bb0` | `0x8bc8` | **`+0x18`** |
+| `__TEXT.__const` | `0x2048` | `0x2058` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x638` | `0x63c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -625.2.5.10.1
--  __TEXT.__text: 0xea188
--  __TEXT.__objc_methlist: 0x8bb0
--  __TEXT.__const: 0x2048
--  __TEXT.__gcc_except_tab: 0xc3e0
 +625.2.7.1.0
-+  __TEXT.__text: 0xea7b4
-+  __TEXT.__objc_methlist: 0x8bc8
-+  __TEXT.__const: 0x2058
-+  __TEXT.__gcc_except_tab: 0xc46c
-   __TEXT.__cstring: 0x10210
--  __TEXT.__oslogstring: 0xb38c
-+  __TEXT.__oslogstring: 0xb63c
-   __TEXT.__dlopen_cstrs: 0xb2
-   __TEXT.__constg_swiftt: 0xadc
-   __TEXT.__swift5_typeref: 0xf5e
 
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift5_assocty: 0xa0
-   __TEXT.__swift5_mpenum: 0x1c
--  __TEXT.__unwind_info: 0x69f0
-+  __TEXT.__unwind_info: 0x6a10
-   __TEXT.__eh_frame: 0x3d68
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x120
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5140
-+  __DATA_CONST.__objc_selrefs: 0x5158
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x1f0
-   __DATA_CONST.__objc_arraydata: 0x370
-   __DATA_CONST.__got: 0xa20
-   __AUTH_CONST.__const: 0x2be8
-   __AUTH_CONST.__cfstring: 0x6540
--  __AUTH_CONST.__objc_const: 0xa828
-+  __AUTH_CONST.__objc_const: 0xa848
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x3c0
-   __AUTH_CONST.__objc_dictobj: 0x50
-
-   __AUTH_CONST.__auth_got: 0xf80
-   __AUTH.__objc_data: 0x98
-   __AUTH.__data: 0xd8
--  __DATA.__objc_ivar: 0x638
-+  __DATA.__objc_ivar: 0x63c
-   __DATA.__data: 0x1b20
-   __DATA_DIRTY.__objc_data: 0x1660
-   __DATA_DIRTY.__data: 0x468
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4943
 -  Symbols:   6604
 -  CStrings:  2190
 +  Functions: 4948
 +  Symbols:   6611
 +  CStrings:  2198
- 
 Symbols:
 + -[WebBookmarkCollection _shouldWaitForLockForVersionUpgradeMigrations]
 + -[WebBookmarkCollection _tryPerformDatabaseUpdatesWithApplyInMemoryChanges:secureDelete:shouldWaitForLock:updates:]

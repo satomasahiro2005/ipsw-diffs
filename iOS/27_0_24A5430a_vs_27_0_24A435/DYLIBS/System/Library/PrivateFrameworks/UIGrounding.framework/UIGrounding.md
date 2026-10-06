@@ -2,16 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/UIGrounding.framework/UIGrounding`
 
-```diff
+### Section Size Changes
 
- 38.0.0.0.0
--  __TEXT.__text: 0x4b088
-+  __TEXT.__text: 0x4b094
-   __TEXT.__const: 0x5bf8
-   __TEXT.__constg_swiftt: 0x14fc
-   __TEXT.__swift5_typeref: 0x111e
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4b088` | `0x4b094` | **`+0xc`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2b1bc2bb4 -> sub_2b29bfbb4 : 712 -> 716
-~ sub_2b1bc2e7c -> sub_2b29bfe80 : 392 -> 396
-~ sub_2b1be8db0 -> sub_2b29e5db8 : 968 -> 972
+~ sub_2b1aabbb4 -> sub_2b28a8bb4 : 712 -> 716
+~ sub_2b1aabe7c -> sub_2b28a8e80 : 392 -> 396
+~ sub_2b1ad1db0 -> sub_2b28cedb8 : 968 -> 972
 ```

@@ -2,70 +2,46 @@
 
 > `/usr/libexec/callverificationd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x12f34` | `0x12ea8` | **`-0x8c`** |
+| `__TEXT.__objc_stubs` | `0x540` | `0x520` | **`-0x20`** |
+| `__TEXT.__objc_methname` | `0x899` | `0x87f` | **`-0x1a`** |
+| `__DATA.__objc_selrefs` | `0x2a8` | `0x2a0` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x198` | `0x190` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__const`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
- 10.0.0.0.0
--  __TEXT.__text: 0x12f34
-+  __TEXT.__text: 0x12ea8
-   __TEXT.__auth_stubs: 0xe60
--  __TEXT.__objc_stubs: 0x540
-+  __TEXT.__objc_stubs: 0x520
-   __TEXT.__objc_methlist: 0x2c4
-   __TEXT.__const: 0x126c
-   __TEXT.__constg_swiftt: 0x3f0
-
-   __TEXT.__swift5_proto: 0x10c
-   __TEXT.__swift5_types: 0x68
-   __TEXT.__objc_classname: 0x103
--  __TEXT.__objc_methname: 0x899
-+  __TEXT.__objc_methname: 0x87f
-   __TEXT.__objc_methtype: 0x4f8
-   __TEXT.__swift5_capture: 0x1b8
-   __TEXT.__oslogstring: 0x52a
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__auth_got: 0x738
--  __DATA_CONST.__got: 0x198
-+  __DATA_CONST.__got: 0x190
-   __DATA_CONST.__auth_ptr: 0x1a0
-   __DATA.__objc_const: 0x4f0
--  __DATA.__objc_selrefs: 0x2a8
-+  __DATA.__objc_selrefs: 0x2a0
-   __DATA.__objc_data: 0x1e0
-   __DATA.__data: 0x7f0
-   __DATA.__common: 0x80
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 705
 -  Symbols:   364
 -  CStrings:  214
 +  Symbols:   363
 +  CStrings:  213
- 
 Symbols:
 - _AKSeedBuildHeaderKey
 Functions:

@@ -2,89 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/IntelligenceFlowRuntime.framework/PlugIns/IntelligenceFlowDiagnostics.appex/IntelligenceFlowDiagnostics`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_protos`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__auth_ptr`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c2f8` | `0x1b158` | **`-0x11a0`** |
+| `__DATA_CONST.__const` | `0x19b0` | `0x1760` | **`-0x250`** |
+| `__DATA.__bss` | `0x2300` | `0x2200` | **`-0x100`** |
+| `__TEXT.__objc_stubs` | `0x580` | `0x480` | **`-0x100`** |
+| `__TEXT.__swift5_capture` | `0x40c` | `0x388` | **`-0x84`** |
+| `__TEXT.__const` | `0x1850` | `0x17e8` | **`-0x68`** |
+| `__TEXT.__objc_methname` | `0x3f2` | `0x396` | **`-0x5c`** |
+| `__TEXT.__swift5_typeref` | `0x6f2` | `0x69c` | **`-0x56`** |
+| `__DATA.__objc_selrefs` | `0x180` | `0x140` | **`-0x40`** |
+| `__TEXT.__auth_stubs` | `0x12d0` | `0x1310` | **`+0x40`** |
+| `__TEXT.__constg_swiftt` | `0x540` | `0x508` | **`-0x38`** |
+| `__TEXT.__eh_frame` | `0xb10` | `0xb40` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x788` | `0x758` | **`-0x30`** |
+| `__DATA.__data` | `0x810` | `0x830` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0x970` | `0x990` | **`+0x20`** |
+| `__TEXT.__oslogstring` | `0xd12` | `0xcf9` | **`-0x19`** |
+| `__TEXT.__swift5_assocty` | `0x48` | `0x30` | **`-0x18`** |
+| `__TEXT.__swift5_builtin` | `0x28` | `0x14` | **`-0x14`** |
+| `__TEXT.__objc_methtype` | `0x4d` | `0x3d` | **`-0x10`** |
+| `__TEXT.__swift5_proto` | `0x128` | `0x11c` | **`-0xc`** |
+| `__DATA_CONST.__got` | `0x1f0` | `0x1f8` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x7c` | `0x78` | **`-0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_const`
 - `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_classlist`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_protos`
+
+### Other Changes
 
 ```diff
 
 -3600.156.4.501.4
--  __TEXT.__text: 0x1b458
--  __TEXT.__auth_stubs: 0x12d0
--  __TEXT.__objc_stubs: 0x580
 +3605.14.3.501.4
-+  __TEXT.__text: 0x1a3f4
-+  __TEXT.__auth_stubs: 0x1310
-+  __TEXT.__objc_stubs: 0x480
-   __TEXT.__objc_methlist: 0x38
--  __TEXT.__const: 0x1850
--  __TEXT.__swift5_typeref: 0x6f2
-+  __TEXT.__const: 0x17e8
-+  __TEXT.__swift5_typeref: 0x69c
-   __TEXT.__cstring: 0x6b6
-   __TEXT.__swift5_reflstr: 0x30b
--  __TEXT.__swift5_assocty: 0x48
--  __TEXT.__constg_swiftt: 0x540
--  __TEXT.__swift5_builtin: 0x28
-+  __TEXT.__swift5_assocty: 0x30
-+  __TEXT.__constg_swiftt: 0x508
-+  __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_mpenum: 0x14
-   __TEXT.__swift5_fieldmd: 0x55c
--  __TEXT.__swift5_proto: 0x128
--  __TEXT.__swift5_types: 0x7c
-+  __TEXT.__swift5_proto: 0x11c
-+  __TEXT.__swift5_types: 0x78
-   __TEXT.__swift5_protos: 0xc
--  __TEXT.__oslogstring: 0xd12
--  __TEXT.__swift5_capture: 0x40c
--  __TEXT.__objc_methtype: 0x4d
--  __TEXT.__objc_methname: 0x3f2
-+  __TEXT.__oslogstring: 0xcf9
-+  __TEXT.__swift5_capture: 0x388
-+  __TEXT.__objc_methtype: 0x3d
-+  __TEXT.__objc_methname: 0x396
-   __TEXT.__objc_classname: 0x2f
--  __TEXT.__unwind_info: 0x8f0
--  __TEXT.__eh_frame: 0xb10
--  __DATA_CONST.__const: 0x19b0
-+  __TEXT.__unwind_info: 0x8a0
-+  __TEXT.__eh_frame: 0xb40
-+  __DATA_CONST.__const: 0x1760
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x970
--  __DATA_CONST.__got: 0x1f0
-+  __DATA_CONST.__auth_got: 0x990
-+  __DATA_CONST.__got: 0x1f8
-   __DATA_CONST.__auth_ptr: 0x270
-   __DATA.__objc_const: 0x70
--  __DATA.__objc_selrefs: 0x180
-+  __DATA.__objc_selrefs: 0x140
-   __DATA.__objc_data: 0xc0
--  __DATA.__data: 0x810
-+  __DATA.__data: 0x830
-   __DATA.__common: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 794
 -  Symbols:   169
 -  CStrings:  138
 +  Functions: 762
 +  Symbols:   163
 +  CStrings:  129
- 
 Symbols:
 - _swift_allocBox
 - _swift_endAccess

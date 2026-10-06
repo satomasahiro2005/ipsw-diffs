@@ -2,65 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/CloudKitSharingManagement.framework/CloudKitSharingManagement`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x24984` | `0x24b08` | **`+0x184`** |
+| `__TEXT.__oslogstring` | `0x47b` | `0x51b` | **`+0xa0`** |
+| `__TEXT.__const` | `0x3818` | `0x3858` | **`+0x40`** |
+| `__TEXT.__swift5_typeref` | `0xcfb` | `0xd2d` | **`+0x32`** |
+| `__AUTH_CONST.__const` | `0x1cc8` | `0x1ce8` | **`+0x20`** |
+| `__TEXT.__constg_swiftt` | `0x904` | `0x924` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x130` | `0x140` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0xa20` | `0xa30` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0xf30` | `0xf40` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x348` | `0x350` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x4` | `0x8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -26.0.0.0.0
--  __TEXT.__text: 0x22e8c
 +27.125.2.0.0
-+  __TEXT.__text: 0x23010
-   __TEXT.__objc_methlist: 0x144
--  __TEXT.__const: 0x3818
--  __TEXT.__swift5_typeref: 0xcfb
-+  __TEXT.__const: 0x3858
-+  __TEXT.__swift5_typeref: 0xd2d
-   __TEXT.__cstring: 0x7a9
--  __TEXT.__constg_swiftt: 0x904
-+  __TEXT.__constg_swiftt: 0x924
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_mpenum: 0x10
-   __TEXT.__swift5_reflstr: 0x614
--  __TEXT.__swift5_fieldmd: 0xa20
-+  __TEXT.__swift5_fieldmd: 0xa30
-   __TEXT.__swift5_assocty: 0x120
--  __TEXT.__swift5_proto: 0x348
-+  __TEXT.__swift5_proto: 0x350
-   __TEXT.__swift5_types: 0xfc
-   __TEXT.__swift5_capture: 0xf0
-   __TEXT.__swift_as_entry: 0x80
-   __TEXT.__swift_as_ret: 0x78
-   __TEXT.__swift_as_cont: 0xa8
--  __TEXT.__oslogstring: 0x47b
--  __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0x11f0
-+  __TEXT.__oslogstring: 0x51b
-+  __TEXT.__swift5_protos: 0x8
-+  __TEXT.__unwind_info: 0x1200
-   __TEXT.__eh_frame: 0x1d98
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x130
-+  __DATA_CONST.__objc_selrefs: 0x140
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__got: 0x170
--  __AUTH_CONST.__const: 0x1cc8
-+  __AUTH_CONST.__const: 0x1ce8
-   __AUTH_CONST.__objc_const: 0x448
-   __AUTH_CONST.__auth_got: 0x638
-   __AUTH.__objc_data: 0x90
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 1173
--  Symbols:   3502
+-  Symbols:   3473
 +  Functions: 1178
-+  Symbols:   3520
-   CStrings:  74
- 
++  Symbols:   3489
 Symbols:
 + _$s25CloudKitSharingManagement10AudienceIDV17publicDescriptionSSvg
 + _$s25CloudKitSharingManagement10AudienceIDV17publicDescriptionSSvpMV
@@ -77,8 +45,6 @@ Symbols:
 + _$sSo7NSErrorC25CloudKitSharingManagement16PubliclyLoggableACWP
 + _$sSo7NSErrorC25CloudKitSharingManagementE17publicDescriptionSSvg
 + _$sSo7NSErrorC25CloudKitSharingManagementE17publicDescriptionSSvpMV
-+ _objc_msgSend$code
-+ _objc_msgSend$domain
 + _symbolic $s25CloudKitSharingManagement16PubliclyLoggableP
 CStrings:
 + "CKAudienceProviderListener[%{public}s] deinit"

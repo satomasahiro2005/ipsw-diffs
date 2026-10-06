@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/MessageUI.framework/MessageUI`
 
-```diff
+### Section Size Changes
 
- 3901.100.1.2.14
--  __TEXT.__text: 0x15031c
-+  __TEXT.__text: 0x150358
-   __TEXT.__delay_helper: 0x114
-   __TEXT.__objc_methlist: 0x12af4
-   __TEXT.__cstring: 0xa1d6
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15031c` | `0x150358` | **`+0x3c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1bdae83f0 -> sub_1bde9e3f0 : 588 -> 592
 ~ sub_1bdaea444 -> sub_1bdea0448 : 256 -> 260

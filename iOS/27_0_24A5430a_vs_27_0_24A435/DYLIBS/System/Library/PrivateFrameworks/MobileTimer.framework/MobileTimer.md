@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MobileTimer.framework/MobileTimer`
 
-```diff
+### Section Size Changes
 
- 2333.0.0.0.0
--  __TEXT.__text: 0x137d28
-+  __TEXT.__text: 0x137d44
-   __TEXT.__objc_methlist: 0xeb44
-   __TEXT.__const: 0x21d0
-   __TEXT.__gcc_except_tab: 0x1248
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x137d28` | `0x137d44` | **`+0x1c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1b72890dc -> sub_1b763b0dc : 356 -> 360
 ~ sub_1b728a388 -> sub_1b763c38c : 680 -> 684

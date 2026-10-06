@@ -2,21 +2,22 @@
 
 > `/System/Library/Filesystems/apfs.fs/sm_stats`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x44058` | `0x441c0` | **`+0x168`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 3288.2.1.0.0
--  __TEXT.__text: 0x44058
-+  __TEXT.__text: 0x441c0
-   __TEXT.__auth_stubs: 0x720
-   __TEXT.__cstring: 0xce18
-   __TEXT.__const: 0x1c8
+```text
 Functions:
 ~ sub_100001e28 : 636 -> 664
 ~ sub_100002244 -> sub_100002260 : 844 -> 868

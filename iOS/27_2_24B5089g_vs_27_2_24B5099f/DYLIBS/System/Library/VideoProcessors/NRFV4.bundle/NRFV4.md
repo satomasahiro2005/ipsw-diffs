@@ -2,79 +2,40 @@
 
 > `/System/Library/VideoProcessors/NRFV4.bundle/NRFV4`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x30de2c` | `0x280220` | **`-0x8dc0c`** |
+| `__TEXT.__cstring` | `0x634a9` | `0x37051` | **`-0x2c458`** |
+| `__TEXT.__oslogstring` | `0x47993` | `0x21e64` | **`-0x25b2f`** |
+| `__TEXT.__gcc_except_tab` | `0x2024` | `0x1860` | **`-0x7c4`** |
+| `__TEXT.__unwind_info` | `0x5bb8` | `0x5528` | **`-0x690`** |
+| `__AUTH_CONST.__objc_const` | `0x402e8` | `0x40508` | **`+0x220`** |
+| `__AUTH_CONST.__cfstring` | `0x160c0` | `0x15f40` | **`-0x180`** |
+| `__TEXT.__objc_methlist` | `0x14770` | `0x14850` | **`+0xe0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7868` | `0x78d0` | **`+0x68`** |
+| `__DATA_CONST.__const` | `0x1558` | `0x14f8` | **`-0x60`** |
+| `__TEXT.__const` | `0x1032d8` | `0x1032a0` | **`-0x38`** |
+| `__DATA_DIRTY.__common` | `0x130` | `0x100` | **`-0x30`** |
+| `__DATA.__objc_ivar` | `0x4434` | `0x445c` | **`+0x28`** |
+| `__DATA.__common` | `0x50` | `0x40` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x880` | `0x888` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0xf98` | `0xfa0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -764.40.5.0.0
--  __TEXT.__text: 0x308ce4
--  __TEXT.__objc_methlist: 0x14770
--  __TEXT.__const: 0x1032d8
--  __TEXT.__cstring: 0x634a9
--  __TEXT.__oslogstring: 0x47993
--  __TEXT.__gcc_except_tab: 0x2024
 +764.40.7.0.0
-+  __TEXT.__text: 0x27b420
-+  __TEXT.__objc_methlist: 0x14850
-+  __TEXT.__const: 0x1032a0
-+  __TEXT.__cstring: 0x37051
-+  __TEXT.__oslogstring: 0x21e64
-+  __TEXT.__gcc_except_tab: 0x1860
-   __TEXT.__dlopen_cstrs: 0x10c
--  __TEXT.__unwind_info: 0xb978
-+  __TEXT.__unwind_info: 0xb3f0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1558
-+  __DATA_CONST.__const: 0x14f8
-   __DATA_CONST.__objc_classlist: 0xf28
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x110
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7868
-+  __DATA_CONST.__objc_selrefs: 0x78d0
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0xbe8
-   __DATA_CONST.__objc_arraydata: 0xfe0
--  __DATA_CONST.__got: 0xf98
-+  __DATA_CONST.__got: 0xfa0
-   __AUTH_CONST.__const: 0x9e0
--  __AUTH_CONST.__cfstring: 0x160c0
--  __AUTH_CONST.__objc_const: 0x402e8
-+  __AUTH_CONST.__cfstring: 0x15f40
-+  __AUTH_CONST.__objc_const: 0x40508
-   __AUTH_CONST.__objc_floatobj: 0x140
-   __AUTH_CONST.__objc_doubleobj: 0xa0
-   __AUTH_CONST.__objc_arrayobj: 0xd68
-   __AUTH_CONST.__objc_intobj: 0xa38
-   __AUTH_CONST.__objc_dictobj: 0x500
--  __AUTH_CONST.__auth_got: 0x880
-+  __AUTH_CONST.__auth_got: 0x888
-   __AUTH.__objc_data: 0xff0
--  __DATA.__objc_ivar: 0x4434
-+  __DATA.__objc_ivar: 0x445c
-   __DATA.__data: 0xcc8
--  __DATA.__common: 0x50
-+  __DATA.__common: 0x40
-   __DATA_DIRTY.__objc_data: 0x87a0
-   __DATA_DIRTY.__bss: 0x178
--  __DATA_DIRTY.__common: 0x130
-+  __DATA_DIRTY.__common: 0x100
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 16532
 -  Symbols:   15740
 -  CStrings:  14986
 +  Functions: 15305
 +  Symbols:   15796
 +  CStrings:  9038
- 
 Symbols:
 + +[CMISoftwareFlashRenderingCommon getFlashProjGains:outputVector:outputValid:]
 + -[LCBConfig distortionEnabled]

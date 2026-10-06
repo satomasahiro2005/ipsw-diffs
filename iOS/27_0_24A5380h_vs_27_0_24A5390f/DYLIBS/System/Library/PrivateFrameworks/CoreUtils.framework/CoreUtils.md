@@ -2,93 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/CoreUtils.framework/CoreUtils`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x114c48` | `0x117560` | **`+0x2918`** |
+| `__AUTH_CONST.__objc_const` | `0x13890` | `0x13c40` | **`+0x3b0`** |
+| `__TEXT.__cstring` | `0x1d52c` | `0x1d6f7` | **`+0x1cb`** |
+| `__TEXT.__oslogstring` | `0x4818` | `0x49b7` | **`+0x19f`** |
+| `__TEXT.__objc_methlist` | `0x9ed0` | `0xa040` | **`+0x170`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5070` | `0x5120` | **`+0xb0`** |
+| `__AUTH.__objc_data` | `0x1f90` | `0x2030` | **`+0xa0`** |
+| `__TEXT.__gcc_except_tab` | `0x1b14` | `0x1ba0` | **`+0x8c`** |
+| `__AUTH_CONST.__cfstring` | `0x44c0` | `0x4540` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x3970` | `0x39d8` | **`+0x68`** |
+| `__DATA_CONST.__const` | `0x2960` | `0x29c0` | **`+0x60`** |
+| `__DATA.__objc_ivar` | `0x14cc` | `0x1510` | **`+0x44`** |
+| `__AUTH_CONST.__auth_got` | `0x1818` | `0x1858` | **`+0x40`** |
+| `__DATA.__bss` | `0x13c8` | `0x13f8` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0x2808` | `0x2828` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x6a0` | `0x6c0` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x340` | `0x350` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x238` | `0x240` | **`+0x8`** |
+| `__DATA_DIRTY.__bss` | `0x1d1` | `0x1c9` | **`-0x8`** |
+
+### Other Changes
 
 ```diff
 
 -900.48.0.0.0
--  __TEXT.__text: 0x114c48
--  __TEXT.__objc_methlist: 0x9ed0
--  __TEXT.__cstring: 0x1d52c
 +900.55.0.0.0
-+  __TEXT.__text: 0x117560
-+  __TEXT.__objc_methlist: 0xa040
-+  __TEXT.__cstring: 0x1d6f7
-   __TEXT.__const: 0x229c
--  __TEXT.__gcc_except_tab: 0x1b14
--  __TEXT.__oslogstring: 0x4818
--  __TEXT.__unwind_info: 0x3970
-+  __TEXT.__gcc_except_tab: 0x1ba0
-+  __TEXT.__oslogstring: 0x49b7
-+  __TEXT.__unwind_info: 0x39d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2960
--  __DATA_CONST.__objc_classlist: 0x340
-+  __DATA_CONST.__const: 0x29c0
-+  __DATA_CONST.__objc_classlist: 0x350
-   __DATA_CONST.__objc_catlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x158
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5070
-+  __DATA_CONST.__objc_selrefs: 0x5120
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__objc_superrefs: 0x238
-+  __DATA_CONST.__objc_superrefs: 0x240
-   __DATA_CONST.__objc_arraydata: 0x8
--  __DATA_CONST.__got: 0x6a0
--  __AUTH_CONST.__const: 0x2808
--  __AUTH_CONST.__cfstring: 0x44c0
--  __AUTH_CONST.__objc_const: 0x13890
-+  __DATA_CONST.__got: 0x6c0
-+  __AUTH_CONST.__const: 0x2828
-+  __AUTH_CONST.__cfstring: 0x4540
-+  __AUTH_CONST.__objc_const: 0x13c40
-   __AUTH_CONST.__objc_intobj: 0x258
-   __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__auth_got: 0x1818
--  __AUTH.__objc_data: 0x1f90
-+  __AUTH_CONST.__auth_got: 0x1858
-+  __AUTH.__objc_data: 0x2030
-   __AUTH.__data: 0xa00
--  __DATA.__objc_ivar: 0x14cc
-+  __DATA.__objc_ivar: 0x1510
-   __DATA.__data: 0x2f50
--  __DATA.__bss: 0x13c8
-+  __DATA.__bss: 0x13f8
-   __DATA.__common: 0x2a
-   __DATA_DIRTY.__objc_data: 0xf0
-   __DATA_DIRTY.__data: 0x88
--  __DATA_DIRTY.__bss: 0x1d1
-+  __DATA_DIRTY.__bss: 0x1c9
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 5752
--  Symbols:   11488
+-  Symbols:   10113
 -  CStrings:  4818
 +  Functions: 5789
-+  Symbols:   11598
++  Symbols:   10202
 +  CStrings:  4852
- 
 Symbols:
 + +[CUXPCSubscriber handleEventStreamName:event:]
 + +[CUXPCSubscriber mockEndpointForStreamName:]
@@ -256,31 +206,6 @@ Symbols:
 + _gCUXPCPubSubLock
 + _gCUXPCPublishers
 + _gCUXPCSubscribers
-+ _objc_msgSend$_activateWithAutoPairing:
-+ _objc_msgSend$_autoPairWithCompletion:
-+ _objc_msgSend$_createPairingMetadata
-+ _objc_msgSend$_mockGetConnection
-+ _objc_msgSend$_mockListenerCreate
-+ _objc_msgSend$_mockReportPublisherAction:token:descriptor:
-+ _objc_msgSend$_readMinLength:maxLength:completionHandler:
-+ _objc_msgSend$_writeBytes:length:completionHandler:
-+ _objc_msgSend$eventHandler
-+ _objc_msgSend$handleEventStreamName:event:
-+ _objc_msgSend$mockDescriptor
-+ _objc_msgSend$mockEndpointForStreamName:
-+ _objc_msgSend$mockPublisherAdd:streamName:
-+ _objc_msgSend$mockPublisherRemove:streamName:
-+ _objc_msgSend$mockToken
-+ _objc_msgSend$numberWithUnsignedLong:
-+ _objc_msgSend$registered
-+ _objc_msgSend$reportEventAction:token:descriptor:
-+ _objc_msgSend$resetBytesInRange:
-+ _objc_msgSend$setRegistered:
-+ _objc_msgSend$setSubscribers:
-+ _objc_msgSend$subscribers
-+ _objc_msgSend$unsignedLongValue
-+ _objc_msgSend$wfaAutoPairable
-+ _objc_msgSend$wfaPairedUUID
 + _xpc_connection_activate
 + _xpc_connection_create
 + _xpc_connection_create_from_endpoint
@@ -368,10 +293,6 @@ Symbols:
 - ___xpc_connection_send_message_with_reply_f_block_invoke
 - ___xpc_connection_set_event_handler_f_block_invoke
 - __writeLineCompletion
-- _objc_msgSend$_activateWithAutoPairing:discoveryResult:
-- _objc_msgSend$_reportErrorCode:
-- _objc_msgSend$_reportEventAction:token:descriptor:
-- _objc_msgSend$_writeLine:completionHandler:
 - _xpc_connection_send_message_with_reply_f
 - _xpc_connection_set_event_handler_f
 CStrings:

@@ -2,19 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/ClassroomKit.framework/Frameworks/ClassroomUIKit.framework/ClassroomUIKit`
 
-```diff
+### Section Size Changes
 
- 143.2.1.0.0
--  __TEXT.__text: 0x5ceb4
-+  __TEXT.__text: 0x5cecc
-   __TEXT.__objc_methlist: 0x81c
-   __TEXT.__const: 0x65c4
-   __TEXT.__constg_swiftt: 0x3150
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5ceb4` | `0x5cecc` | **`+0x18`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2576e3080 -> sub_2587f0080 : 1276 -> 1288
-~ sub_2576ff410 -> sub_25880c41c : 256 -> 264
-~ sub_25772183c -> sub_25882e850 : 832 -> 824
-~ sub_25772a450 -> sub_25883745c : 2824 -> 2828
-~ sub_25772c4dc -> sub_2588394ec : 352 -> 356
-~ sub_25772c650 -> sub_258839664 : 340 -> 344
+~ sub_2575ad080 -> sub_2586d4080 : 1276 -> 1288
+~ sub_2575c9410 -> sub_2586f041c : 256 -> 264
+~ sub_2575eb83c -> sub_258712850 : 832 -> 824
+~ sub_2575f4450 -> sub_25871b45c : 2824 -> 2828
+~ sub_2575f64dc -> sub_25871d4ec : 352 -> 356
+~ sub_2575f6650 -> sub_25871d664 : 340 -> 344
 ```

@@ -2,86 +2,53 @@
 
 > `/private/var/staged_system_apps/Podcasts.app/Frameworks/PodcastsWidgetKit.framework/PodcastsWidgetKit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__auth_ptr`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x63310` | `0x63bdc` | **`+0x8cc`** |
+| `__TEXT.__swift5_typeref` | `0x890d` | `0x8a11` | **`+0x104`** |
+| `__TEXT.__const` | `0x4d60` | `0x4da0` | **`+0x40`** |
+| `__DATA.__data` | `0x2c58` | `0x2c70` | **`+0x18`** |
+| `__TEXT.__auth_stubs` | `0x2c90` | `0x2ca0` | **`+0x10`** |
+| `__TEXT.__cstring` | `0xbe8` | `0xbd8` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x13f0` | `0x1400` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x1650` | `0x1658` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x9a0` | `0x9a8` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -4027.110.2.0.0
--  __TEXT.__text: 0x5f2f4
--  __TEXT.__auth_stubs: 0x2c90
 +4027.210.23.1.0
-+  __TEXT.__text: 0x5fb98
-+  __TEXT.__auth_stubs: 0x2ca0
-   __TEXT.__objc_stubs: 0x540
-   __TEXT.__objc_methlist: 0x194
--  __TEXT.__const: 0x4d60
-+  __TEXT.__const: 0x4da0
-   __TEXT.__constg_swiftt: 0xf98
--  __TEXT.__swift5_typeref: 0x890d
-+  __TEXT.__swift5_typeref: 0x8a11
-   __TEXT.__swift5_fieldmd: 0xd64
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_proto: 0x198
 
-   __TEXT.__objc_methtype: 0x105
-   __TEXT.__swift5_reflstr: 0xda5
-   __TEXT.__swift5_assocty: 0x5e8
--  __TEXT.__cstring: 0xbe8
-+  __TEXT.__cstring: 0xbd8
-   __TEXT.__swift_as_entry: 0xb4
-   __TEXT.__swift_as_ret: 0xe8
-   __TEXT.__swift5_capture: 0x2d0
-   __TEXT.__oslogstring: 0x42f
-   __TEXT.__swift_as_cont: 0x11c
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0x1880
-+  __TEXT.__unwind_info: 0x1890
-   __TEXT.__eh_frame: 0x1ed8
-   __DATA_CONST.__const: 0x1698
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__auth_got: 0x1650
--  __DATA_CONST.__got: 0x9a0
-+  __DATA_CONST.__auth_got: 0x1658
-+  __DATA_CONST.__got: 0x9a8
-   __DATA_CONST.__auth_ptr: 0xe78
-   __DATA.__objc_const: 0x158
-   __DATA.__objc_selrefs: 0x248
--  __DATA.__data: 0x2c58
-+  __DATA.__data: 0x2c70
-   __DATA.__common: 0x20
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - @rpath/PodcastsActions.framework/PodcastsActions
-   - @rpath/PodcastsAppEntities.framework/PodcastsAppEntities
-   - @rpath/PodcastsPlayback.framework/PodcastsPlayback
 -  Functions: 1685
 -  Symbols:   1018
 -  CStrings:  171
 +  Functions: 1689
 +  Symbols:   1022
 +  CStrings:  170
- 
 Symbols:
 + _objc_retain_x28
 + _symbolic ___________y_____y_____yACy__________ySiSgGG_Qo______G_AAQPGSg_____t 17PodcastsWidgetKit7VSpacerV 7SwiftUI12TupleContentV AD08ModifiedH0V AD4ViewPADE10unredactedQryFQO AD4TextV AD30_EnvironmentKeyWritingModifierV AA0b17TertiaryVibrantOra8AccentedP033_422CE97F8B9BD617CC30F6BE2BA540E5LLV AA011EpisodeListJ0V

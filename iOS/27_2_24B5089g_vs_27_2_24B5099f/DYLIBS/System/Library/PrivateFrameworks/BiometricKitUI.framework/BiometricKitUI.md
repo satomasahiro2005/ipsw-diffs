@@ -2,77 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/BiometricKitUI.framework/BiometricKitUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x70e88` | `0x70fd0` | **`+0x148`** |
+| `__TEXT.__oslogstring` | `0x6a83` | `0x6b13` | **`+0x90`** |
+| `__AUTH_CONST.__objc_const` | `0x10720` | `0x10790` | **`+0x70`** |
+| `__TEXT.__objc_methlist` | `0x7300` | `0x7368` | **`+0x68`** |
+| `__DATA_CONST.__const` | `0x1238` | `0x1260` | **`+0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4928` | `0x4950` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x1ac8` | `0x1ad8` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0xa00` | `0xa08` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -685.1.2.0.0
--  __TEXT.__text: 0x6ee28
--  __TEXT.__objc_methlist: 0x7300
 +685.1.4.0.0
-+  __TEXT.__text: 0x6ef70
-+  __TEXT.__objc_methlist: 0x7368
-   __TEXT.__const: 0xd44
-   __TEXT.__gcc_except_tab: 0xde4
-   __TEXT.__cstring: 0x3036
--  __TEXT.__oslogstring: 0x6a83
-+  __TEXT.__oslogstring: 0x6b13
-   __TEXT.__dlopen_cstrs: 0x292
-   __TEXT.__swift5_typeref: 0x2c2
-   __TEXT.__swift5_capture: 0x114
 
-   __TEXT.__swift5_proto: 0x20
-   __TEXT.__swift5_types: 0x34
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0x2150
-+  __TEXT.__unwind_info: 0x2158
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1238
-+  __DATA_CONST.__const: 0x1260
-   __DATA_CONST.__objc_classlist: 0x248
-   __DATA_CONST.__objc_catlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x160
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4928
-+  __DATA_CONST.__objc_selrefs: 0x4950
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x198
-   __DATA_CONST.__objc_arraydata: 0x188
-   __DATA_CONST.__got: 0x880
-   __AUTH_CONST.__const: 0xc50
-   __AUTH_CONST.__cfstring: 0x3440
--  __AUTH_CONST.__objc_const: 0x10720
-+  __AUTH_CONST.__objc_const: 0x10790
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0xc0
-   __AUTH_CONST.__objc_floatobj: 0x80
-
-   __AUTH_CONST.__auth_got: 0x970
-   __AUTH.__objc_data: 0x1448
-   __AUTH.__data: 0x180
--  __DATA.__objc_ivar: 0xa00
-+  __DATA.__objc_ivar: 0xa08
-   __DATA.__data: 0x11c0
-   __DATA.__common: 0x1f8
-   __DATA_DIRTY.__objc_data: 0x550
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2878
 -  Symbols:   4586
 -  CStrings:  1083
 +  Functions: 2887
 +  Symbols:   4600
 +  CStrings:  1085
- 
 Symbols:
 + +[BKUIPearlEnrollController preloadCollectingFramesForAgeVerification:completion:]
 + +[BKUIPearlEnrollViewController preloadCollectingFramesForAgeVerification:completion:]

@@ -2,76 +2,37 @@
 
 > `/System/Library/SubFrameworks/ShaderGraph.framework/ShaderGraph`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e9688` | `0x1ebd9c` | **`+0x2714`** |
+| `__TEXT.__cstring` | `0x1c26d` | `0x1c40d` | **`+0x1a0`** |
+| `__AUTH_CONST.__objc_const` | `0x6a58` | `0x6ab8` | **`+0x60`** |
+| `__TEXT.__swift5_reflstr` | `0x38d1` | `0x3921` | **`+0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0xcc0` | `0xd00` | **`+0x40`** |
+| `__TEXT.__constg_swiftt` | `0x3a60` | `0x3a90` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0xf48` | `0xf78` | **`+0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0x4c88` | `0x4cb8` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x5598` | `0x55c8` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0xa28` | `0xa48` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x808` | `0x828` | **`+0x20`** |
+| `__DATA.__data` | `0x3890` | `0x38a0` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x11c8` | `0x11d0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -159.0.7.0.2
--  __TEXT.__text: 0x1e4f18
--  __TEXT.__objc_methlist: 0xf48
 +159.40.2.0.0
-+  __TEXT.__text: 0x1e75c8
-+  __TEXT.__objc_methlist: 0xf78
-   __TEXT.__const: 0x12b60
--  __TEXT.__cstring: 0x1c26d
-+  __TEXT.__cstring: 0x1c40d
-   __TEXT.__oslogstring: 0x13f9
-   __TEXT.__swift5_typeref: 0x3e32
--  __TEXT.__swift5_reflstr: 0x38d1
-+  __TEXT.__swift5_reflstr: 0x3921
-   __TEXT.__swift5_assocty: 0x718
--  __TEXT.__constg_swiftt: 0x3a60
-+  __TEXT.__constg_swiftt: 0x3a90
-   __TEXT.__swift5_builtin: 0x30c
-   __TEXT.__swift5_mpenum: 0x11c
--  __TEXT.__swift5_fieldmd: 0x4c88
-+  __TEXT.__swift5_fieldmd: 0x4cb8
-   __TEXT.__swift5_proto: 0x834
-   __TEXT.__swift5_types: 0x4bc
-   __TEXT.__swift5_capture: 0x960
-   __TEXT.__swift5_protos: 0x44
--  __TEXT.__unwind_info: 0x6d58
-+  __TEXT.__unwind_info: 0x6da0
-   __TEXT.__eh_frame: 0x86dc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xa28
-+  __DATA_CONST.__const: 0xa48
-   __DATA_CONST.__objc_classlist: 0x170
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x98
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x808
-+  __DATA_CONST.__objc_selrefs: 0x828
-   __DATA_CONST.__objc_protorefs: 0x50
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x19240
--  __AUTH_CONST.__objc_const: 0x6a58
--  __AUTH_CONST.__auth_got: 0x11c8
-+  __AUTH_CONST.__objc_const: 0x6ab8
-+  __AUTH_CONST.__auth_got: 0x11d0
-   __AUTH.__objc_data: 0x6f8
-   __AUTH.__data: 0x610
--  __DATA.__data: 0x3890
-+  __DATA.__data: 0x38a0
-   __DATA.__common: 0x1ff8
--  __DATA_DIRTY.__objc_data: 0xcc0
-+  __DATA_DIRTY.__objc_data: 0xd00
-   __DATA_DIRTY.__data: 0x1b98
-   __DATA_DIRTY.__common: 0x40
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8265
--  Symbols:   18395
+-  Symbols:   18322
 -  CStrings:  3050
 +  Functions: 8293
-+  Symbols:   18431
++  Symbols:   18358
 +  CStrings:  3060
- 
 Symbols:
 + _$s11ShaderGraph04UserB0V23replaceMultiOutputNodesyyKF07swizzleF4TypeL_3forAA09MetalDataI0VAH_tKF
 + _$s11ShaderGraph04UserB0V28insertMaterialXDefaultValues12nodeDefStore6configyAA04NodeiJ0V_AA23SGMaterialConfigurationCtKF

@@ -2,15 +2,16 @@
 
 > `/System/Library/Frameworks/PermissionKit.framework/PermissionKit`
 
-```diff
+### Section Size Changes
 
- 96.0.0.0.0
--  __TEXT.__text: 0x1f5a4
-+  __TEXT.__text: 0x1f5d4
-   __TEXT.__objc_methlist: 0x2c
-   __TEXT.__const: 0x2698
-   __TEXT.__constg_swiftt: 0x91c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1f5a4` | `0x1f5d4` | **`+0x30`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_24ad3503c -> sub_24b72103c : 8624 -> 8648
-~ sub_24ad3ecc4 -> sub_24b72acdc : 7492 -> 7516
+~ sub_24abe203c -> sub_24b5d503c : 8624 -> 8648
+~ sub_24abebcc4 -> sub_24b5decdc : 7492 -> 7516
 ```

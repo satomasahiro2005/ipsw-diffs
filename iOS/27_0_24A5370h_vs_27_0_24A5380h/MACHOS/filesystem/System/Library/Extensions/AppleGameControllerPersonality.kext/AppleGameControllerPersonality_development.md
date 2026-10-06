@@ -2,38 +2,35 @@
 
 > `/System/Library/Extensions/AppleGameControllerPersonality.kext/AppleGameControllerPersonality_development`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x1bc4` | `0x1edc` | **`+0x318`** |
+| `__TEXT.__os_log` | `0x9f` | `0x27e` | **`+0x1df`** |
+| `__DATA_CONST.__const` | `0x1510` | `0x1388` | **`-0x188`** |
+| `__TEXT.__cstring` | `0x237` | `0x235` | **`-0x2`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__kalloc_type`
+- `__DATA_CONST.__mod_init_func`
+- `__DATA_CONST.__mod_term_func`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__cstring: 0x237
--  __TEXT.__os_log: 0x9f
--  __TEXT_EXEC.__text: 0x1bc4
-+  __TEXT.__cstring: 0x235
-+  __TEXT.__os_log: 0x27e
-+  __TEXT_EXEC.__text: 0x1edc
-   __TEXT_EXEC.__auth_stubs: 0x140
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x88
-   __DATA.__bss: 0x10
-   __DATA_CONST.__mod_init_func: 0x18
-   __DATA_CONST.__mod_term_func: 0x18
--  __DATA_CONST.__const: 0x1510
-+  __DATA_CONST.__const: 0x1388
-   __DATA_CONST.__kalloc_type: 0xc0
-   __DATA_CONST.__auth_got: 0xa0
-   __DATA_CONST.__got: 0x70
+-14.0.17.0.0
 -  Functions: 58
--  Symbols:   368
+-  Symbols:   365
 -  CStrings:  31
++14.0.19.0.0
 +  Functions: 60
-+  Symbols:   373
++  Symbols:   369
 +  CStrings:  33
- 
-Sections:
-~ __DATA.__data : content changed
-~ __DATA_CONST.__mod_init_func : content changed
-~ __DATA_CONST.__mod_term_func : content changed
-~ __DATA_CONST.__kalloc_type : content changed
-~ __DATA_CONST.__got : content changed
 Symbols:
 + _GLOBAL__sub_I_AppleGCIOHIDEventDriverPropertyMerger.cpp
 + _OUTLINED_FUNCTION_1
@@ -128,5 +125,4 @@ CStrings:
 - "_Privileged"
 - "com.apple."
 - "site.AppleGCHIDEventDummyService"
-
 ```

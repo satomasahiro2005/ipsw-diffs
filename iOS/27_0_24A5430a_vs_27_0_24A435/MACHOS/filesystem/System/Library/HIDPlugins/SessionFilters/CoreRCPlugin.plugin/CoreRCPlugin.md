@@ -2,6 +2,8 @@
 
 > `/System/Library/HIDPlugins/SessionFilters/CoreRCPlugin.plugin/CoreRCPlugin`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_3280 : 20 -> 12

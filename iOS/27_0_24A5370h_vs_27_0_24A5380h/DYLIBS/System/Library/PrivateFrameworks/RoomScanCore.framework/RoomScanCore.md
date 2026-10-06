@@ -2,70 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/RoomScanCore.framework/RoomScanCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x203024` | `0x1e6f80` | **`-0x1c0a4`** |
+| `__TEXT.__cstring` | `0x6bc6` | `0x35b1` | **`-0x3615`** |
+| `__TEXT.__gcc_except_tab` | `0x1df84` | `0x1df34` | **`-0x50`** |
+| `__TEXT.__unwind_info` | `0x49e0` | `0x49b0` | **`-0x30`** |
+| `__DATA_CONST.__got` | `0x2b0` | `0x2d0` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x998` | `0x988` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x203024
-+  __TEXT.__text: 0x1e6f80
-   __TEXT.__objc_methlist: 0x2298
-   __TEXT.__const: 0x16ec
--  __TEXT.__gcc_except_tab: 0x1df84
--  __TEXT.__cstring: 0x6bc6
-+  __TEXT.__gcc_except_tab: 0x1df34
-+  __TEXT.__cstring: 0x35b1
-   __TEXT.__oslogstring: 0xa9d
--  __TEXT.__unwind_info: 0x49e0
-+  __TEXT.__unwind_info: 0x49b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0xed0
-   __DATA_CONST.__objc_superrefs: 0x248
-   __DATA_CONST.__objc_arraydata: 0x30
--  __DATA_CONST.__got: 0x2b0
-+  __DATA_CONST.__got: 0x2d0
-   __AUTH_CONST.__const: 0x1678
-   __AUTH_CONST.__cfstring: 0x2a00
-   __AUTH_CONST.__objc_const: 0x8a78
-
-   __AUTH_CONST.__objc_intobj: 0xd8
-   __AUTH_CONST.__objc_floatobj: 0xa0
-   __AUTH_CONST.__objc_arrayobj: 0x30
--  __AUTH_CONST.__auth_got: 0x998
-+  __AUTH_CONST.__auth_got: 0x988
-   __AUTH.__objc_data: 0x1bd0
-   __DATA.__objc_ivar: 0x818
-   __DATA.__data: 0x498
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 3033
 -  Symbols:   506
--  CStrings:  992
+-  CStrings:  657
 +  Functions: 2996
 +  Symbols:   504
-+  CStrings:  951
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
++  CStrings:  616
 Symbols:
 - __ZNSt3__132__internal_log_hardening_failureEPKc
 - _objc_retain_x7
@@ -111,5 +68,4 @@ CStrings:
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/span:465: libc++ Hardening assertion __last - __first >= 0 failed: invalid range in span's constructor (iterator, sentinel)\n"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/span:537: libc++ Hardening assertion __idx < size() failed: span<T>::operator[](index): index out of range\n"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:1371: libc++ Hardening assertion __pos <= size() failed: string index out of bounds\n"
-
 ```

@@ -2,86 +2,56 @@
 
 > `/Applications/AXUIViewService.app/AXUIViewService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xdc5c` | `0xe95c` | **`+0xd00`** |
+| `__TEXT.__objc_methname` | `0x4ffb` | `0x55b8` | **`+0x5bd`** |
+| `__DATA.__objc_const` | `0x23a8` | `0x27e8` | **`+0x440`** |
+| `__TEXT.__objc_stubs` | `0x30a0` | `0x33c0` | **`+0x320`** |
+| `__TEXT.__objc_methlist` | `0x197c` | `0x1c54` | **`+0x2d8`** |
+| `__TEXT.__objc_methtype` | `0x1cf8` | `0x1fa7` | **`+0x2af`** |
+| `__DATA.__objc_selrefs` | `0x13f0` | `0x1530` | **`+0x140`** |
+| `__DATA.__objc_data` | `0x6e0` | `0x7d0` | **`+0xf0`** |
+| `__DATA.__data` | `0x660` | `0x720` | **`+0xc0`** |
+| `__TEXT.__objc_classname` | `0x4bd` | `0x565` | **`+0xa8`** |
+| `__TEXT.__unwind_info` | `0x470` | `0x4d8` | **`+0x68`** |
+| `__TEXT.__oslogstring` | `0x5c6` | `0x629` | **`+0x63`** |
+| `__TEXT.__gcc_except_tab` | `0x2a8` | `0x2ec` | **`+0x44`** |
+| `__DATA_CONST.__const` | `0x590` | `0x5d0` | **`+0x40`** |
+| `__TEXT.__auth_stubs` | `0x660` | `0x690` | **`+0x30`** |
+| `__DATA_CONST.__cfstring` | `0x980` | `0x9a0` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0x340` | `0x358` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x2e0` | `0x2f8` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0xb0` | `0xc8` | **`+0x18`** |
+| `__TEXT.__cstring` | `0x99b` | `0x9b3` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0xf8` | `0x108` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x88` | `0x98` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x90` | `0xa0` | **`+0x10`** |
+| `__DATA_CONST.__objc_catlist` | `—` | `0x8` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__const` | `0x68` | `0x70` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__objc_arraydata`
 - `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_intobj`
+
+### Other Changes
 
 ```diff
 
 -3237.1.0.0.0
--  __TEXT.__text: 0xdc5c
--  __TEXT.__auth_stubs: 0x660
--  __TEXT.__objc_stubs: 0x30a0
--  __TEXT.__objc_methlist: 0x197c
 +3240.3.0.0.0
-+  __TEXT.__text: 0xe95c
-+  __TEXT.__auth_stubs: 0x690
-+  __TEXT.__objc_stubs: 0x33c0
-+  __TEXT.__objc_methlist: 0x1c54
-   __TEXT.__dlopen_cstrs: 0x19e
--  __TEXT.__const: 0x68
--  __TEXT.__gcc_except_tab: 0x2a8
--  __TEXT.__objc_methname: 0x4ffb
--  __TEXT.__oslogstring: 0x5c6
--  __TEXT.__cstring: 0x99b
--  __TEXT.__objc_classname: 0x4bd
--  __TEXT.__objc_methtype: 0x1cf8
--  __TEXT.__unwind_info: 0x470
--  __DATA_CONST.__const: 0x590
--  __DATA_CONST.__cfstring: 0x980
--  __DATA_CONST.__objc_classlist: 0xb0
--  __DATA_CONST.__objc_protolist: 0x88
-+  __TEXT.__const: 0x70
-+  __TEXT.__gcc_except_tab: 0x2ec
-+  __TEXT.__objc_methname: 0x55b8
-+  __TEXT.__oslogstring: 0x629
-+  __TEXT.__cstring: 0x9b3
-+  __TEXT.__objc_classname: 0x565
-+  __TEXT.__objc_methtype: 0x1fa7
-+  __TEXT.__unwind_info: 0x4d8
-+  __DATA_CONST.__const: 0x5d0
-+  __DATA_CONST.__cfstring: 0x9a0
-+  __DATA_CONST.__objc_classlist: 0xc8
-+  __DATA_CONST.__objc_catlist: 0x8
-+  __DATA_CONST.__objc_protolist: 0x98
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_superrefs: 0x90
-+  __DATA_CONST.__objc_protorefs: 0x8
-+  __DATA_CONST.__objc_superrefs: 0xa0
-   __DATA_CONST.__objc_floatobj: 0x20
-   __DATA_CONST.__objc_intobj: 0xa8
-   __DATA_CONST.__objc_arraydata: 0x20
-   __DATA_CONST.__objc_arrayobj: 0x18
--  __DATA_CONST.__auth_got: 0x340
--  __DATA_CONST.__got: 0x2e0
--  __DATA.__objc_const: 0x23a8
--  __DATA.__objc_selrefs: 0x13f0
--  __DATA.__objc_ivar: 0xf8
--  __DATA.__objc_data: 0x6e0
--  __DATA.__data: 0x660
-+  __DATA_CONST.__auth_got: 0x358
-+  __DATA_CONST.__got: 0x2f8
-+  __DATA.__objc_const: 0x27e8
-+  __DATA.__objc_selrefs: 0x1530
-+  __DATA.__objc_ivar: 0x108
-+  __DATA.__objc_data: 0x7d0
-+  __DATA.__data: 0x720
-   __DATA.__bss: 0x90
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
 
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 353
 -  Symbols:   219
 -  CStrings:  1124
 +  Functions: 391
 +  Symbols:   224
 +  CStrings:  1196
- 
 Symbols:
 + _AXLogUIViewService
 + _OBJC_CLASS_$_UIWindow

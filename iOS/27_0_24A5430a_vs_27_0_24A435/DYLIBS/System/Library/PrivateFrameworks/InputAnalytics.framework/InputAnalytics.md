@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/InputAnalytics.framework/InputAnalytics`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_9 : 32 -> 24

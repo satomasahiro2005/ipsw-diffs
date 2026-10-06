@@ -2,100 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/HealthOntologyDaemonPlugin.framework/HealthOntologyDaemonPlugin`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x20824` | `0x5edac` | **`+0x3e588`** |
+| `__TEXT.__const` | `0xdf8` | `0x2b98` | **`+0x1da0`** |
+| `__AUTH_CONST.__const` | `0x871` | `0x1da1` | **`+0x1530`** |
+| `__TEXT.__eh_frame` | `0xb70` | `0x1cb0` | **`+0x1140`** |
+| `__DATA.__bss` | `0x900` | `0x1900` | **`+0x1000`** |
+| `__TEXT.__constg_swiftt` | `0x8c0` | `0x11fc` | **`+0x93c`** |
+| `__DATA.__data` | `0x6c0` | `0xfd0` | **`+0x910`** |
+| `__AUTH_CONST.__auth_got` | `0x928` | `0x1000` | **`+0x6d8`** |
+| `__TEXT.__unwind_info` | `0x670` | `0xd18` | **`+0x6a8`** |
+| `__AUTH_CONST.__objc_const` | `0x1018` | `0x15d8` | **`+0x5c0`** |
+| `__TEXT.__cstring` | `0x649` | `0xbc9` | **`+0x580`** |
+| `__TEXT.__swift5_reflstr` | `0x481` | `0x9d1` | **`+0x550`** |
+| `__TEXT.__swift5_typeref` | `0x580` | `0xa68` | **`+0x4e8`** |
+| `__AUTH.__data` | `0x170` | `0x650` | **`+0x4e0`** |
+| `__DATA_DIRTY.__data` | `0xc40` | `0x10f0` | **`+0x4b0`** |
+| `__DATA_DIRTY.__bss` | `0x400` | `0x880` | **`+0x480`** |
+| `__TEXT.__swift5_fieldmd` | `0x4c4` | `0x8dc` | **`+0x418`** |
+| `__TEXT.__swift5_builtin` | `—` | `0x320` | **`+0x320`** |
+| `__TEXT.__swift5_assocty` | `0x78` | `0x2b8` | **`+0x240`** |
+| `__TEXT.__swift5_proto` | `0x80` | `0x26c` | **`+0x1ec`** |
+| `__TEXT.__oslogstring` | `0x8d` | `0x21d` | **`+0x190`** |
+| `__TEXT.__swift5_capture` | `0x138` | `0x26c` | **`+0x134`** |
+| `__TEXT.__swift5_types` | `0x5c` | `0x148` | **`+0xec`** |
+| `__DATA_CONST.__objc_selrefs` | `0x258` | `0x2a8` | **`+0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x358` | `0x3a8` | **`+0x50`** |
+| `__DATA_CONST.__objc_classlist` | `0x68` | `0xa0` | **`+0x38`** |
+| `__TEXT.__swift5_mpenum` | `—` | `0x30` | **`+0x30`** |
+| `__TEXT.__swift5_protos` | `0x18` | `0x2c` | **`+0x14`** |
+
+### Other Changes
+
 ```diff
 
 -7027.0.72.2.7
--  __TEXT.__text: 0x1fd04
 +7027.1.36.2.7
-+  __TEXT.__text: 0x5bfd4
-   __TEXT.__objc_methlist: 0x4a4
--  __TEXT.__const: 0xdf8
--  __TEXT.__constg_swiftt: 0x8c0
--  __TEXT.__swift5_typeref: 0x580
--  __TEXT.__swift5_reflstr: 0x481
--  __TEXT.__swift5_fieldmd: 0x4c4
--  __TEXT.__swift5_assocty: 0x78
--  __TEXT.__swift5_proto: 0x80
--  __TEXT.__swift5_types: 0x5c
--  __TEXT.__swift5_capture: 0x138
--  __TEXT.__swift5_protos: 0x18
--  __TEXT.__cstring: 0x649
--  __TEXT.__oslogstring: 0x8d
--  __TEXT.__unwind_info: 0x8d0
--  __TEXT.__eh_frame: 0xb70
-+  __TEXT.__const: 0x2b98
-+  __TEXT.__constg_swiftt: 0x11fc
-+  __TEXT.__swift5_typeref: 0xa68
-+  __TEXT.__swift5_builtin: 0x320
-+  __TEXT.__swift5_reflstr: 0x9d1
-+  __TEXT.__swift5_assocty: 0x2b8
-+  __TEXT.__swift5_fieldmd: 0x8dc
-+  __TEXT.__cstring: 0xbc9
-+  __TEXT.__swift5_proto: 0x26c
-+  __TEXT.__swift5_types: 0x148
-+  __TEXT.__swift5_protos: 0x2c
-+  __TEXT.__swift5_capture: 0x26c
-+  __TEXT.__oslogstring: 0x21d
-+  __TEXT.__swift5_mpenum: 0x30
-+  __TEXT.__unwind_info: 0x1268
-+  __TEXT.__eh_frame: 0x1cb0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x90
--  __DATA_CONST.__objc_classlist: 0x68
-+  __DATA_CONST.__objc_classlist: 0xa0
-   __DATA_CONST.__objc_protolist: 0xa0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x258
-+  __DATA_CONST.__objc_selrefs: 0x2a8
-   __DATA_CONST.__objc_protorefs: 0x58
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x871
--  __AUTH_CONST.__objc_const: 0x1018
--  __AUTH_CONST.__auth_got: 0x928
-+  __AUTH_CONST.__const: 0x1da1
-+  __AUTH_CONST.__objc_const: 0x15d8
-+  __AUTH_CONST.__auth_got: 0x1000
-   __AUTH.__objc_data: 0x120
--  __AUTH.__data: 0x170
--  __DATA.__data: 0x6c0
-+  __AUTH.__data: 0x650
-+  __DATA.__data: 0xfd0
-   __DATA.__common: 0x10
--  __DATA_DIRTY.__objc_data: 0x358
--  __DATA_DIRTY.__data: 0xc40
--  __DATA_DIRTY.__bss: 0x400
-+  __DATA_DIRTY.__objc_data: 0x3a8
-+  __DATA_DIRTY.__data: 0x10f0
-+  __DATA_DIRTY.__bss: 0x880
-   __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /System/Library/PrivateFrameworks/HealthDaemonFoundation.framework/HealthDaemonFoundation
-   - /System/Library/PrivateFrameworks/HealthOntologyDaemon.framework/HealthOntologyDaemon
-   - /System/Library/PrivateFrameworks/HealthOntologyKit.framework/HealthOntologyKit
 -  - /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftCompression.dylib
 
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 +  - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 548
--  Symbols:   449
+-  Symbols:   434
 -  CStrings:  37
 +  Functions: 1213
-+  Symbols:   643
++  Symbols:   618
 +  CStrings:  82
- 
 Symbols:
 + _HDOntologyShardRegistryPredicateForCurrentSchemaEntry
 + _HKMedicalHistoryHealthConcernRecordTypeIdentifierMedicalHistoryHealthConcernRecord
@@ -164,16 +120,6 @@ Symbols:
 + _exit
 + _get_enum_tag_for_layout_string 26HealthOntologyDaemonPlugin0B15AppleIdentifierV0F0O
 + _get_enum_tag_for_layout_string 26HealthOntologyDaemonPlugin35ParameterizedConfigurationEvaluatorV15EvaluationErrorO
-+ _objc_msgSend$_typeWithIdentifier:
-+ _objc_msgSend$activeResourceDirectoryURLForEntry:baseResourcesDirectoryURL:
-+ _objc_msgSend$baseResourcesDirectoryURLForUpdateCoordinator:
-+ _objc_msgSend$currentVersion
-+ _objc_msgSend$daemon
-+ _objc_msgSend$enumerateEntriesWithPredicate:orderingTerms:error:enumerationHandler:
-+ _objc_msgSend$identifier
-+ _objc_msgSend$initWithDaemon:medicalHistoryDefaults:
-+ _objc_msgSend$initWithSuiteName:
-+ _objc_msgSend$shardRegistry
 + _objc_retain_x27
 + _objc_retain_x28
 + _swift_bridgeObjectRelease_n

@@ -2,118 +2,44 @@
 
 > `/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x564874` | `0x55a96c` | **`-0x9f08`** |
+| `__DATA_DIRTY.__bss` | `0x21d0` | `0x2790` | **`+0x5c0`** |
+| `__DATA.__bss` | `0x7bb0` | `0x7618` | **`-0x598`** |
+| `__DATA_DIRTY.__data` | `0xac0` | `0xfb8` | **`+0x4f8`** |
+| `__AUTH.__data` | `0x578` | `0x2a0` | **`-0x2d8`** |
+| `__DATA.__data` | `0x1c98` | `0x1a78` | **`-0x220`** |
+| `__TEXT.__cstring` | `0x4349d` | `0x43673` | **`+0x1d6`** |
+| `__TEXT.__gcc_except_tab` | `0xa4cc` | `0xa630` | **`+0x164`** |
+| `__DATA_CONST.__got` | `0x7c8` | `0x8b8` | **`+0xf0`** |
+| `__AUTH_CONST.__cfstring` | `0x9b40` | `0x9c00` | **`+0xc0`** |
+| `__TEXT.__objc_stubs` | `0x70c0` | `0x7160` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x303b0` | `0x30408` | **`+0x58`** |
+| `__TEXT.__const` | `0x1dfd20` | `0x1dfd60` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2548` | `0x2578` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0xaf78` | `0xaf90` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x4290` | `0x42a0` | **`+0x10`** |
+| `__DATA.__common` | `0x252` | `0x245` | **`-0xd`** |
+| `__AUTH_CONST.__auth_got` | `0x2680` | `0x2678` | **`-0x8`** |
+| `__AUTH_CONST.__objc_const` | `0x6c28` | `0x6c30` | **`+0x8`** |
+| `__DATA_DIRTY.__common` | `—` | `0x8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x564874
-+  __TEXT.__text: 0x55a96c
-   __TEXT.__resolver_help: 0xd8
--  __TEXT.__objc_methlist: 0x4290
--  __TEXT.__const: 0x1dfd20
--  __TEXT.__cstring: 0x4349d
-+  __TEXT.__objc_methlist: 0x42a0
-+  __TEXT.__const: 0x1dfd60
-+  __TEXT.__cstring: 0x43673
-   __TEXT.__dlopen_cstrs: 0x131
-   __TEXT.__constg_swiftt: 0x1870
-   __TEXT.__swift5_typeref: 0x19c6
+-2043.0.0.0.0
++2045.0.0.0.0
 
-   __TEXT.__swift5_capture: 0x5c8
-   __TEXT.__swift5_protos: 0x38
-   __TEXT.__swift5_mpenum: 0x5c
--  __TEXT.__gcc_except_tab: 0xa4cc
-+  __TEXT.__gcc_except_tab: 0xa630
-   __TEXT.__oslogstring: 0x15
-   __TEXT.__ustring: 0x1c
--  __TEXT.__unwind_info: 0xaf78
-+  __TEXT.__unwind_info: 0xaf90
-   __TEXT.__eh_frame: 0x4f78
--  __TEXT.__objc_stubs: 0x70c0
-+  __TEXT.__objc_stubs: 0x7160
-   __TEXT.__stubs: 0x18
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x303b0
-+  __DATA_CONST.__const: 0x30408
-   __DATA_CONST.__objc_classlist: 0x280
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x98
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0xe8
--  __DATA_CONST.__objc_selrefs: 0x2548
-+  __DATA_CONST.__objc_selrefs: 0x2578
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__objc_superrefs: 0x1e0
-   __DATA_CONST.__objc_arraydata: 0x170
--  __DATA_CONST.__got: 0x7c8
-+  __DATA_CONST.__got: 0x8b8
-   __AUTH_CONST.__const: 0x13a58
--  __AUTH_CONST.__cfstring: 0x9b40
--  __AUTH_CONST.__objc_const: 0x6c28
-+  __AUTH_CONST.__cfstring: 0x9c00
-+  __AUTH_CONST.__objc_const: 0x6c30
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_intobj: 0xd8
--  __AUTH_CONST.__auth_got: 0x2680
-+  __AUTH_CONST.__auth_got: 0x2678
-   __AUTH.__objc_data: 0x17c0
--  __AUTH.__data: 0x578
-+  __AUTH.__data: 0x2a0
-   __DATA.__objc_ivar: 0x594
--  __DATA.__data: 0x1c98
--  __DATA.__bss: 0x7bb0
--  __DATA.__common: 0x252
-+  __DATA.__data: 0x1a78
-+  __DATA.__bss: 0x7618
-+  __DATA.__common: 0x245
-   __DATA_DIRTY.__la_resolver: 0x10
--  __DATA_DIRTY.__data: 0xac0
-+  __DATA_DIRTY.__data: 0xfb8
-   __DATA_DIRTY.__crash_info: 0x148
--  __DATA_DIRTY.__bss: 0x21d0
-+  __DATA_DIRTY.__bss: 0x2790
-+  __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 14324
--  Symbols:   29926
--  CStrings:  12730
+-  Symbols:   18775
+-  CStrings:  11495
 +  Functions: 14322
-+  Symbols:   29942
-+  CStrings:  12753
- 
-Sections:
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA_DIRTY.__la_resolver : content changed
++  Symbols:   18788
++  CStrings:  11512
 Symbols:
 + -[CGRemotePDFServiceProxy _errorWithDescriptionForServiceError:]
 + GCC_except_table10046
@@ -1258,5 +1184,4 @@ CStrings:
 - "v16@?0@\"<CGRemotePDFDocumentProtocol>\"8"
 - "void CG::PDFPageCore::drawInRect(CGPDFPageRef, CGContextRef, CGPDFBox, CGRect, CFDictionaryRef)"
 - "zero pixel size"
-
 ```

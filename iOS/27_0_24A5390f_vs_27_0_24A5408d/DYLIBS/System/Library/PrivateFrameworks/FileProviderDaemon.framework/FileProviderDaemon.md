@@ -2,108 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/FileProviderDaemon.framework/FileProviderDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa7b0e8` | `0xa7d1d8` | **`+0x20f0`** |
+| `__TEXT.__cstring` | `0x4d475` | `0x4d705` | **`+0x290`** |
+| `__TEXT.__oslogstring` | `0x20642` | `0x207f2` | **`+0x1b0`** |
+| `__AUTH_CONST.__objc_const` | `0x27b18` | `0x27cb8` | **`+0x1a0`** |
+| `__TEXT.__gcc_except_tab` | `0xd540` | `0xd618` | **`+0xd8`** |
+| `__TEXT.__swift5_reflstr` | `0xf7ed` | `0xf8bd` | **`+0xd0`** |
+| `__TEXT.__swift5_fieldmd` | `0xd118` | `0xd1a4` | **`+0x8c`** |
+| `__TEXT.__swift5_typeref` | `0x14b2e` | `0x14bae` | **`+0x80`** |
+| `__AUTH_CONST.__const` | `0x4c120` | `0x4c190` | **`+0x70`** |
+| `__TEXT.__const` | `0x2e300` | `0x2e370` | **`+0x70`** |
+| `__TEXT.__eh_frame` | `0x2d1b8` | `0x2d228` | **`+0x70`** |
+| `__TEXT.__constg_swiftt` | `0x146b8` | `0x14720` | **`+0x68`** |
+| `__TEXT.__objc_methlist` | `0x9844` | `0x98a4` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0x1b08` | `0x1b58` | **`+0x50`** |
+| `__DATA_DIRTY.__data` | `0x10db0` | `0x10e00` | **`+0x50`** |
+| `__AUTH_CONST.__cfstring` | `0x7320` | `0x7340` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x46d8` | `0x46f8` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x61e0` | `0x6200` | **`+0x20`** |
+| `__TEXT.__swift5_capture` | `0x1a868` | `0x1a848` | **`-0x20`** |
+| `__TEXT.__unwind_info` | `0x16540` | `0x16560` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x3138` | `0x3150` | **`+0x18`** |
+| `__DATA.__common` | `0x20b` | `0x21b` | **`+0x10`** |
+| `__DATA.__data` | `0x80b0` | `0x80a0` | **`-0x10`** |
+| `__DATA.__objc_ivar` | `0xba4` | `0xbb4` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x1910` | `0x1920` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x598` | `0x5a0` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x290` | `0x298` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x1cc0` | `0x1cbc` | **`-0x4`** |
+| `__TEXT.__swift5_types` | `0xc50` | `0xc54` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -4838.0.93.0.0
--  __TEXT.__text: 0xa7b0e8
--  __TEXT.__objc_methlist: 0x9844
--  __TEXT.__const: 0x2e300
--  __TEXT.__cstring: 0x4d475
--  __TEXT.__oslogstring: 0x20642
--  __TEXT.__gcc_except_tab: 0xd540
 +4838.0.125.0.0
-+  __TEXT.__text: 0xa7d1d8
-+  __TEXT.__objc_methlist: 0x98a4
-+  __TEXT.__const: 0x2e370
-+  __TEXT.__cstring: 0x4d705
-+  __TEXT.__oslogstring: 0x207f2
-+  __TEXT.__gcc_except_tab: 0xd618
-   __TEXT.__ustring: 0x176e
-   __TEXT.__dlopen_cstrs: 0xc3
--  __TEXT.__constg_swiftt: 0x146b8
--  __TEXT.__swift5_typeref: 0x14b2e
-+  __TEXT.__constg_swiftt: 0x14720
-+  __TEXT.__swift5_typeref: 0x14bae
-   __TEXT.__swift5_builtin: 0x8e8
--  __TEXT.__swift5_reflstr: 0xf7ed
--  __TEXT.__swift5_fieldmd: 0xd118
-+  __TEXT.__swift5_reflstr: 0xf8bd
-+  __TEXT.__swift5_fieldmd: 0xd1a4
-   __TEXT.__swift5_mpenum: 0x144
-   __TEXT.__swift5_assocty: 0x29f0
--  __TEXT.__swift5_capture: 0x1a868
--  __TEXT.__swift5_proto: 0x1cc0
--  __TEXT.__swift5_types: 0xc50
-+  __TEXT.__swift5_capture: 0x1a848
-+  __TEXT.__swift5_proto: 0x1cbc
-+  __TEXT.__swift5_types: 0xc54
-   __TEXT.__swift5_types2: 0x8
-   __TEXT.__swift_as_entry: 0x1b4
-   __TEXT.__swift_as_ret: 0x188
-   __TEXT.__swift_as_cont: 0x36c
-   __TEXT.__swift5_protos: 0xbc
--  __TEXT.__unwind_info: 0x16540
--  __TEXT.__eh_frame: 0x2d1b8
-+  __TEXT.__unwind_info: 0x16560
-+  __TEXT.__eh_frame: 0x2d228
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x46d8
--  __DATA_CONST.__objc_classlist: 0x598
-+  __DATA_CONST.__const: 0x46f8
-+  __DATA_CONST.__objc_classlist: 0x5a0
-   __DATA_CONST.__objc_catlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x2e8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x61e0
-+  __DATA_CONST.__objc_selrefs: 0x6200
-   __DATA_CONST.__objc_protorefs: 0x150
--  __DATA_CONST.__objc_superrefs: 0x290
-+  __DATA_CONST.__objc_superrefs: 0x298
-   __DATA_CONST.__objc_arraydata: 0x118
--  __DATA_CONST.__got: 0x1910
--  __AUTH_CONST.__const: 0x4c120
--  __AUTH_CONST.__cfstring: 0x7320
--  __AUTH_CONST.__objc_const: 0x27b18
-+  __DATA_CONST.__got: 0x1920
-+  __AUTH_CONST.__const: 0x4c190
-+  __AUTH_CONST.__cfstring: 0x7340
-+  __AUTH_CONST.__objc_const: 0x27cb8
-   __AUTH_CONST.__objc_arrayobj: 0xf0
-   __AUTH_CONST.__objc_intobj: 0x138
-   __AUTH_CONST.__objc_dictobj: 0x78
--  __AUTH_CONST.__auth_got: 0x3138
--  __AUTH.__objc_data: 0x1b08
-+  __AUTH_CONST.__auth_got: 0x3150
-+  __AUTH.__objc_data: 0x1b58
-   __AUTH.__data: 0x2898
--  __DATA.__objc_ivar: 0xba4
--  __DATA.__data: 0x80b0
-+  __DATA.__objc_ivar: 0xbb4
-+  __DATA.__data: 0x80a0
-   __DATA.__bss: 0x27460
--  __DATA.__common: 0x20b
-+  __DATA.__common: 0x21b
-   __DATA_DIRTY.__objc_data: 0x33b0
--  __DATA_DIRTY.__data: 0x10db0
-+  __DATA_DIRTY.__data: 0x10e00
-   __DATA_DIRTY.__bss: 0xfe98
-   __DATA_DIRTY.__common: 0x8f0
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 31507
--  Symbols:   15253
+-  Symbols:   12534
 -  CStrings:  8123
 +  Functions: 31527
-+  Symbols:   15294
++  Symbols:   12572
 +  CStrings:  8142
- 
 Symbols:
 + -[FPDConfigurationStore relativeDiskSpaceRequiredForSelfCannibalization]
 + -[FPDDomainIndexer __indexOneBatchIfPossibleStartingNewIndexingRun:]
@@ -212,11 +157,6 @@ Symbols:
 + ___swift_closure_destructor.82Tm
 + ___swift_closure_destructor.87Tm
 + _fpfs_get_provider_content_version
-+ _objc_msgSend$__indexOneBatchIfPossibleStartingNewIndexingRun:
-+ _objc_msgSend$_indexOneBatchIfPossibleStartingNewIndexingRun:
-+ _objc_msgSend$initWithPid:
-+ _objc_msgSend$outOfBandIndexIdentifiers:completionHandler:
-+ _objc_msgSend$relativeDiskSpaceRequiredForSelfCannibalization
 + _symbolic _____ 18FileProviderDaemon11FPFSIndexerC19IndexableItemCountsV
 + _symbolic _____ 18FileProviderDaemon26PendingIndexableItemCountsV
 + _symbolic _____y_____Sg6anchor_Sb17isIndexingEnabledt______pGSg s6ResultOsRi_zRi0_zrlE 18FileProviderDaemon22ChangeEnumeratorAnchorV s5ErrorP
@@ -301,8 +241,6 @@ Symbols:
 - ___swift_closure_destructor.531Tm
 - ___swift_closure_destructor.553Tm
 - ___swift_closure_destructor.83Tm
-- _objc_msgSend$__indexOneBatchIfPossibleClearingNeedsIndexing:
-- _objc_msgSend$_indexOneBatchIfPossibleClearingNeedsIndexing:
 - _symbolic _____ySi25pendingIndexableItemCount_Si05totalbcD0t______pGIegg_ s6ResultOsRi_zRi0_zrlE s5ErrorP
 CStrings:
 + "      anchor: <error: "

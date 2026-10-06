@@ -2,96 +2,60 @@
 
 > `/System/Library/PrivateFrameworks/HealthDomains.framework/HealthDomains`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8d068` | `0x5bbc88` | **`+0x52ec20`** |
+| `__DATA.__bss` | `0x19a80` | `0x102320` | **`+0xe88a0`** |
+| `__TEXT.__const` | `0xd60c` | `0x742a6` | **`+0x66c9a`** |
+| `__AUTH_CONST.__const` | `0x69f8` | `0x4b855` | **`+0x44e5d`** |
+| `__TEXT.__cstring` | `0x1c2f` | `0x1fa7f` | **`+0x1de50`** |
+| `__TEXT.__unwind_info` | `0x2d30` | `0x16fd8` | **`+0x142a8`** |
+| `__TEXT.__eh_frame` | `0x2948` | `0x165a4` | **`+0x13c5c`** |
+| `__DATA.__data` | `0x2a80` | `0x15188` | **`+0x12708`** |
+| `__TEXT.__swift5_fieldmd` | `0x21f0` | `0x14270` | **`+0x12080`** |
+| `__TEXT.__constg_swiftt` | `0x2ec4` | `0x12d4c` | **`+0xfe88`** |
+| `__TEXT.__swift5_typeref` | `0x2d9d` | `0xe56f` | **`+0xb7d2`** |
+| `__AUTH.__data` | `0xf90` | `0xbf20` | **`+0xaf90`** |
+| `__DATA_DIRTY.__bss` | `0xe80` | `0xa400` | **`+0x9580`** |
+| `__TEXT.__swift5_proto` | `0xd7c` | `0x8a4c` | **`+0x7cd0`** |
+| `__TEXT.__swift5_assocty` | `0x8d0` | `0x75f0` | **`+0x6d20`** |
+| `__TEXT.__swift5_reflstr` | `0x11ef` | `0x6eef` | **`+0x5d00`** |
+| `__DATA_DIRTY.__data` | `0x568` | `0x4ea0` | **`+0x4938`** |
+| `__TEXT.__swift5_types` | `0x378` | `0x2100` | **`+0x1d88`** |
+| `__TEXT.__swift5_capture` | `0x93c` | `0x1f3c` | **`+0x1600`** |
+| `__AUTH_CONST.__objc_const` | `0x340` | `0xa30` | **`+0x6f0`** |
+| `__AUTH_CONST.__auth_got` | `0xba0` | `0x1268` | **`+0x6c8`** |
+| `__DATA_CONST.__got` | `0x448` | `0x930` | **`+0x4e8`** |
+| `__TEXT.__swift_as_cont` | `0x44` | `0x4ec` | **`+0x4a8`** |
+| `__TEXT.__oslogstring` | `0xc4` | `0x55f` | **`+0x49b`** |
+| `__TEXT.__swift_as_ret` | `0x2c` | `0x26c` | **`+0x240`** |
+| `__TEXT.__swift5_builtin` | `0xc8` | `0x2bc` | **`+0x1f4`** |
+| `__AUTH.__objc_data` | `—` | `0x140` | **`+0x140`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb0` | `0x1c0` | **`+0x110`** |
+| `__TEXT.__swift5_mpenum` | `0x3c` | `0x144` | **`+0x108`** |
+| `__TEXT.__swift_as_entry` | `0x2c` | `0x12c` | **`+0x100`** |
+| `__DATA_CONST.__const` | `0x158` | `0x198` | **`+0x40`** |
+| `__DATA_CONST.__objc_classlist` | `0x28` | `0x60` | **`+0x38`** |
+| `__TEXT.__swift5_protos` | `0x90` | `0xc4` | **`+0x34`** |
+
+### Other Changes
+
 ```diff
 
 -7027.0.72.2.7
--  __TEXT.__text: 0x87ac0
--  __TEXT.__const: 0xd60c
--  __TEXT.__swift5_typeref: 0x2d9d
--  __TEXT.__constg_swiftt: 0x2ec4
--  __TEXT.__swift5_builtin: 0xc8
--  __TEXT.__swift5_reflstr: 0x11ef
--  __TEXT.__swift5_fieldmd: 0x21f0
--  __TEXT.__swift5_assocty: 0x8d0
--  __TEXT.__swift5_proto: 0xd7c
--  __TEXT.__swift5_types: 0x378
--  __TEXT.__cstring: 0x1c2f
--  __TEXT.__swift5_capture: 0x93c
--  __TEXT.__swift5_protos: 0x90
--  __TEXT.__swift_as_entry: 0x2c
--  __TEXT.__swift_as_ret: 0x2c
--  __TEXT.__swift_as_cont: 0x44
--  __TEXT.__swift5_mpenum: 0x3c
--  __TEXT.__oslogstring: 0xc4
--  __TEXT.__unwind_info: 0x38e8
--  __TEXT.__eh_frame: 0x2948
 +7027.1.36.2.7
-+  __TEXT.__text: 0x5980f0
-+  __TEXT.__const: 0x742a6
-+  __TEXT.__swift5_typeref: 0xe56f
-+  __TEXT.__constg_swiftt: 0x12d4c
-+  __TEXT.__swift5_builtin: 0x2bc
-+  __TEXT.__swift5_reflstr: 0x6eef
-+  __TEXT.__swift5_fieldmd: 0x14270
-+  __TEXT.__swift5_assocty: 0x75f0
-+  __TEXT.__cstring: 0x1fa7f
-+  __TEXT.__swift5_proto: 0x8a4c
-+  __TEXT.__swift5_types: 0x2100
-+  __TEXT.__swift5_capture: 0x1f3c
-+  __TEXT.__swift_as_entry: 0x12c
-+  __TEXT.__swift_as_ret: 0x26c
-+  __TEXT.__swift_as_cont: 0x4ec
-+  __TEXT.__oslogstring: 0x55f
-+  __TEXT.__swift5_mpenum: 0x144
-+  __TEXT.__swift5_protos: 0xc4
-+  __TEXT.__unwind_info: 0x1de88
-+  __TEXT.__eh_frame: 0x165bc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x158
--  __DATA_CONST.__objc_classlist: 0x28
-+  __DATA_CONST.__const: 0x198
-+  __DATA_CONST.__objc_classlist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb0
--  __DATA_CONST.__got: 0x448
--  __AUTH_CONST.__const: 0x69f8
--  __AUTH_CONST.__objc_const: 0x340
--  __AUTH_CONST.__auth_got: 0xba0
--  __AUTH.__data: 0xf90
--  __DATA.__data: 0x2a80
--  __DATA_DIRTY.__data: 0x568
--  __DATA_DIRTY.__bss: 0xe80
-+  __DATA_CONST.__objc_selrefs: 0x1c0
-+  __DATA_CONST.__got: 0x930
-+  __AUTH_CONST.__const: 0x4b855
-+  __AUTH_CONST.__objc_const: 0xa30
-+  __AUTH_CONST.__auth_got: 0x1268
-+  __AUTH.__objc_data: 0x140
-+  __AUTH.__data: 0xbf20
-+  __DATA.__data: 0x15188
-+  __DATA_DIRTY.__data: 0x4ea0
-+  __DATA_DIRTY.__bss: 0xa400
 +  - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/HealthKit.framework/HealthKit
-   - /System/Library/PrivateFrameworks/HealthFeatures.framework/HealthFeatures
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
 +  - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
+
 -  Functions: 4345
--  Symbols:   1273
+-  Symbols:   1251
 -  CStrings:  158
 +  Functions: 37617
-+  Symbols:   7628
++  Symbols:   7572
 +  CStrings:  2849
- 
 Symbols:
 + _CFBooleanGetTypeID
 + _CFGetTypeID
@@ -4024,42 +3988,6 @@ Symbols:
 + _kHKHASharedUserDefaultsIdentifier
 + _keypath_get_selector_endDate
 + _objc_allocWithZone
-+ _objc_msgSend$_countPerMinuteUnit
-+ _objc_msgSend$_quantityTypeWithCode:
-+ _objc_msgSend$allTypes
-+ _objc_msgSend$allValuesWithCompletion:
-+ _objc_msgSend$areAllRequirementsSatisfied
-+ _objc_msgSend$audiogramSampleType
-+ _objc_msgSend$averageLeftEarSensitivity
-+ _objc_msgSend$averageRightEarSensitivity
-+ _objc_msgSend$averageSensitivity
-+ _objc_msgSend$boolValue
-+ _objc_msgSend$canonicalUnit
-+ _objc_msgSend$cardioFitnessLevelForVO2Max:biologicalSex:age:
-+ _objc_msgSend$classifyLEQ:forDuration:overDays:
-+ _objc_msgSend$countUnit
-+ _objc_msgSend$dataTypeWithCode:
-+ _objc_msgSend$decibelAWeightedSoundPressureLevelUnit
-+ _objc_msgSend$decibelHearingLevelUnit
-+ _objc_msgSend$degreeAngleUnit
-+ _objc_msgSend$doubleValue
-+ _objc_msgSend$hearingLevelSummary
-+ _objc_msgSend$hourUnit
-+ _objc_msgSend$init
-+ _objc_msgSend$initWithCategory:domainName:healthStore:
-+ _objc_msgSend$initWithFeatureIdentifier:healthStore:
-+ _objc_msgSend$initWithInteger:
-+ _objc_msgSend$integerValue
-+ _objc_msgSend$isAverageSensitivityUpperClampedForSide:
-+ _objc_msgSend$leftEarMetrics
-+ _objc_msgSend$metadata
-+ _objc_msgSend$millimeterOfMercuryUnit
-+ _objc_msgSend$percentUnit
-+ _objc_msgSend$predicateForSamplesWithStartDate:endDate:inclusiveEndDates:options:
-+ _objc_msgSend$removeValuesForKeys:completion:
-+ _objc_msgSend$rightEarMetrics
-+ _objc_msgSend$secondUnit
-+ _objc_msgSend$setValuesWithDictionary:completion:
 + _objc_retain_x21
 + _objc_retain_x24
 + _objc_retain_x25
@@ -6464,8 +6392,6 @@ Symbols:
 - __DATA__TtC13HealthDomains38DisabledHealthTypesClassificationStore
 - __METACLASS_DATA__TtC13HealthDomains38DisabledHealthTypesClassificationStore
 - ___swift_memcpy240_8
-- _objc_msgSend$allowExperimentalHealthTypesUsage
-- _objc_msgSend$features
 - _swift_dynamicCastObjCClassUnconditional
 - _symbolic _____ 13HealthDomains08DisabledA24TypesClassificationStoreC
 - _symbolic ______p 9HealthKit0A13StoreProviderP

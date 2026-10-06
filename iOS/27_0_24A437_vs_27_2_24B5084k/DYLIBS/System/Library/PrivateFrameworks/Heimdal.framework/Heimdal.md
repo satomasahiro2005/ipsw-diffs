@@ -2,50 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/Heimdal.framework/Heimdal`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x629f0` | `0x63488` | **`+0xa98`** |
+| `__TEXT.__cstring` | `0xf30d` | `0xf607` | **`+0x2fa`** |
+| `__DATA_CONST.__const` | `0x74b8` | `0x76c0` | **`+0x208`** |
+| `__AUTH_CONST.__cfstring` | `0xc20` | `0xcc0` | **`+0xa0`** |
+| `__DATA.__data` | `0x2c50` | `0x2cf0` | **`+0xa0`** |
+| `__AUTH_CONST.__auth_got` | `0xcd0` | `0xd00` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x1620` | `0x1640` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x28` | `0x34` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
 -725.0.12.0.0
--  __TEXT.__text: 0x61dc4
 +725.40.6.0.0
-+  __TEXT.__text: 0x6285c
-   __TEXT.__const: 0x10a0
--  __TEXT.__cstring: 0xf30d
-+  __TEXT.__cstring: 0xf607
-   __TEXT.__oslogstring: 0xb
--  __TEXT.__gcc_except_tab: 0x28
--  __TEXT.__unwind_info: 0x1cf0
-+  __TEXT.__gcc_except_tab: 0x34
-+  __TEXT.__unwind_info: 0x1d10
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0x74b8
-+  __DATA_CONST.__const: 0x76c0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xa0
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x1e70
--  __AUTH_CONST.__cfstring: 0xc20
--  __AUTH_CONST.__auth_got: 0xcd0
-+  __AUTH_CONST.__cfstring: 0xcc0
-+  __AUTH_CONST.__auth_got: 0xd00
-   __AUTH.__data: 0x1410
--  __DATA.__data: 0x2c50
-+  __DATA.__data: 0x2cf0
-   __DATA.__common: 0x18
-   __DATA_DIRTY.__data: 0x90
-   __DATA_DIRTY.__bss: 0x48
 
-   - /usr/lib/libheimdal-asn1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libresolv.9.dylib
--  Functions: 2510
+-  Functions: 2511
 -  Symbols:   1785
 -  CStrings:  2249
-+  Functions: 2517
++  Functions: 2518
 +  Symbols:   1796
 +  CStrings:  2272
- 
 Symbols:
 + _SecKeyCreateWithData
 + _SecKeyVerifySignature

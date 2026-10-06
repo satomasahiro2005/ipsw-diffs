@@ -2,6 +2,14 @@
 
 > `/Applications/MTLReplayer.app/MTLReplayer`
 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__cstring : content changed
+### Same-size Content Changes
+
+- `__TEXT.__const`
+
+### Other Changes
+
+```diff
+
+-2027.0.31.0.0
++2027.0.33.0.0
+```

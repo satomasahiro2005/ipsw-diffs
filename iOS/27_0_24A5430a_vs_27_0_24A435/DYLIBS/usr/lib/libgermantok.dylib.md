@@ -2,6 +2,8 @@
 
 > `/usr/lib/libgermantok.dylib`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _germantok_tokenize : 3524 -> 3528

@@ -2,41 +2,28 @@
 
 > `com.apple.driver.AOPAudio2`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__kalloc_var` | `—` | `0x280` | **`+0x280`** |
+| `__TEXT.__cstring` | `0xac1` | `0xaf9` | **`+0x38`** |
+| `__TEXT_EXEC.__auth_stubs` | `0x1d0` | `0x1f0` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0xe8` | `0xf8` | **`+0x10`** |
+| `__TEXT_EXEC.__text` | `0x2bd4` | `0x2bd8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__const: 0x30
-   __TEXT.__os_log: 0x489
--  __TEXT.__cstring: 0xac1
--  __TEXT_EXEC.__text: 0x2bd4
--  __TEXT_EXEC.__auth_stubs: 0x1d0
-+  __TEXT.__cstring: 0xaf9
-+  __TEXT_EXEC.__text: 0x2bd8
-+  __TEXT_EXEC.__auth_stubs: 0x1f0
-   __DATA.__data: 0xd0
-   __DATA.__common: 0x38
-   __DATA_CONST.__mod_init_func: 0x8
-   __DATA_CONST.__mod_term_func: 0x8
-   __DATA_CONST.__const: 0x7f8
-   __DATA_CONST.__kalloc_type: 0xc0
--  __DATA_CONST.__auth_got: 0xe8
-+  __DATA_CONST.__kalloc_var: 0x280
-+  __DATA_CONST.__auth_got: 0xf8
-   __DATA_CONST.__got: 0x48
+-400.11.0.0.0
 -  Functions: 118
++400.12.0.0.0
 +  Functions: 120
-   Symbols:   0
+
 -  CStrings:  53
 +  CStrings:  55
- 
-Sections:
-~ __DATA.__data : content changed
-~ __DATA_CONST.__mod_init_func : content changed
-~ __DATA_CONST.__mod_term_func : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__kalloc_type : content changed
-~ __DATA_CONST.__got : content changed
 CStrings:
 + "site.Packet.uint8_t"
 + "site.RegisterAccess::Packet.uint8_t"
-
 ```

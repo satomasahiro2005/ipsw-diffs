@@ -2,90 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__gcc_except_tab`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x19c9ec` | `0x19d31c` | **`+0x930`** |
+| `__TEXT.__cstring` | `0x3d09c` | `0x3d180` | **`+0xe4`** |
+| `__AUTH_CONST.__cfstring` | `0x28260` | `0x28300` | **`+0xa0`** |
+| `__TEXT.__oslogstring` | `0xf297` | `0xf322` | **`+0x8b`** |
+| `__DATA_CONST.__objc_selrefs` | `0xc060` | `0xc0a0` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0x3c80` | `0x3ca0` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x8018` | `0x8038` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x1efec` | `0x1f004` | **`+0x18`** |
+| `__DATA.__bss` | `0x1390` | `0x13a0` | **`+0x10`** |
+| `__AUTH_CONST.__objc_const` | `0x362e0` | `0x362e8` | **`+0x8`** |
+| `__DATA_CONST.__const` | `0x8548` | `0x8550` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x16c8` | `0x16d0` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -3600.68.39.1.1
--  __TEXT.__text: 0x19c9ec
--  __TEXT.__objc_methlist: 0x1efec
 +3600.68.45.0.0
-+  __TEXT.__text: 0x19d31c
-+  __TEXT.__objc_methlist: 0x1f004
-   __TEXT.__const: 0x3d0
-   __TEXT.__dlopen_cstrs: 0x538
-   __TEXT.__gcc_except_tab: 0x2108
--  __TEXT.__cstring: 0x3d09c
--  __TEXT.__oslogstring: 0xf297
-+  __TEXT.__cstring: 0x3d180
-+  __TEXT.__oslogstring: 0xf322
-   __TEXT.__ustring: 0x2ac
--  __TEXT.__unwind_info: 0x8018
-+  __TEXT.__unwind_info: 0x8038
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x8548
-+  __DATA_CONST.__const: 0x8550
-   __DATA_CONST.__objc_classlist: 0xef8
-   __DATA_CONST.__objc_catlist: 0x2a8
-   __DATA_CONST.__objc_protolist: 0x5e8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xc060
-+  __DATA_CONST.__objc_selrefs: 0xc0a0
-   __DATA_CONST.__objc_protorefs: 0x170
-   __DATA_CONST.__objc_superrefs: 0xf10
-   __DATA_CONST.__objc_arraydata: 0x2330
--  __DATA_CONST.__got: 0x16c8
--  __AUTH_CONST.__const: 0x3c80
--  __AUTH_CONST.__cfstring: 0x28260
--  __AUTH_CONST.__objc_const: 0x362e0
-+  __DATA_CONST.__got: 0x16d0
-+  __AUTH_CONST.__const: 0x3ca0
-+  __AUTH_CONST.__cfstring: 0x28300
-+  __AUTH_CONST.__objc_const: 0x362e8
-   __AUTH_CONST.__objc_intobj: 0x2628
-   __AUTH_CONST.__objc_dictobj: 0xcf8
-   __AUTH_CONST.__objc_arrayobj: 0x5d0
 
-   __AUTH.__data: 0x248
-   __DATA.__objc_ivar: 0x2574
-   __DATA.__data: 0x4800
--  __DATA.__bss: 0x1390
-+  __DATA.__bss: 0x13a0
-   __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0xfa0
-   __DATA_DIRTY.__data: 0x18
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12087
--  Symbols:   26715
+-  Symbols:   22177
 -  CStrings:  8569
 +  Functions: 12094
-+  Symbols:   26733
++  Symbols:   22187
 +  CStrings:  8579
- 
 Symbols:
 + -[AFSettingsConnection setReplayCaptureRequested:toPath:]
 + GCC_except_table10126
@@ -291,14 +237,6 @@ Symbols:
 + ___57-[AFSettingsConnection setReplayCaptureRequested:toPath:]_block_invoke
 + ___66-[AFConnectionClientServiceDelegate requestSetReplayOverridePath:]_block_invoke_2
 + ___72-[AFUserNotificationProvider withdrawNotificationRequestWithIdentifier:]_block_invoke_2
-+ _objc_msgSend$assistantConnection:setReplayCaptureRequested:toPath:
-+ _objc_msgSend$componentsWithURL:resolvingAgainstBaseURL:
-+ _objc_msgSend$host
-+ _objc_msgSend$orderedSetWithCapacity:
-+ _objc_msgSend$queryItemWithName:value:
-+ _objc_msgSend$queryItems
-+ _objc_msgSend$setQueryItems:
-+ _objc_msgSend$setReplayCaptureRequested:toPath:
 - GCC_except_table10121
 - GCC_except_table10161
 - GCC_except_table10192

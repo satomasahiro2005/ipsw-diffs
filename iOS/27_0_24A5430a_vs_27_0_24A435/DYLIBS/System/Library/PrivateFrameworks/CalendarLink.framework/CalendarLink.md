@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CalendarLink.framework/CalendarLink`
 
-```diff
+### Section Size Changes
 
- 1327.0.103.0.0
--  __TEXT.__text: 0x10d618
-+  __TEXT.__text: 0x10d5fc
-   __TEXT.__objc_methlist: 0x594
-   __TEXT.__const: 0x11ca8
-   __TEXT.__gcc_except_tab: 0x44
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10d618` | `0x10d5fc` | **`-0x1c`** |
+
+### Other Changes
+
+```diff
 Symbols:
 + _swift_release_x11
 + _swift_retain_x11

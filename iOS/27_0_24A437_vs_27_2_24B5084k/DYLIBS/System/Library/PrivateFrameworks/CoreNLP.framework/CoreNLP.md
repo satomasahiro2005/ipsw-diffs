@@ -2,36 +2,25 @@
 
 > `/System/Library/PrivateFrameworks/CoreNLP.framework/CoreNLP`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfc2a8` | `0xfcb38` | **`+0x890`** |
+| `__TEXT.__cstring` | `0xa7a5` | `0xa951` | **`+0x1ac`** |
+| `__TEXT.__gcc_except_tab` | `0xf804` | `0xf88c` | **`+0x88`** |
+| `__TEXT.__unwind_info` | `0x6620` | `0x6628` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 371.0.0.0.0
--  __TEXT.__text: 0xf8980
-+  __TEXT.__text: 0xf9210
-   __TEXT.__objc_methlist: 0x1b8
-   __TEXT.__const: 0x3320
--  __TEXT.__gcc_except_tab: 0xf804
-+  __TEXT.__gcc_except_tab: 0xf88c
-   __TEXT.__ustring: 0x32
--  __TEXT.__cstring: 0xa7a5
-+  __TEXT.__cstring: 0xa951
-   __TEXT.__dlopen_cstrs: 0x181
-   __TEXT.__oslogstring: 0xb59
--  __TEXT.__unwind_info: 0x6e30
-+  __TEXT.__unwind_info: 0x6e48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   - /usr/lib/liblangid.dylib
-   - /usr/lib/libmecab.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 4353
--  Symbols:   6466
+-  Symbols:   6331
 -  CStrings:  1355
 +  Functions: 4355
-+  Symbols:   6470
++  Symbols:   6335
 +  CStrings:  1365
- 
 Symbols:
 + GCC_except_table164
 + GCC_except_table167

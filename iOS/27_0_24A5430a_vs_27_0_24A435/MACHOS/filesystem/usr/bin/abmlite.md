@@ -2,20 +2,21 @@
 
 > `/usr/bin/abmlite`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1cd10` | `0x1cd14` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__const`
 - `__TEXT.__init_offsets`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
 
-```diff
+### Other Changes
 
- 1585.0.0.0.0
--  __TEXT.__text: 0x1cd10
-+  __TEXT.__text: 0x1cd14
-   __TEXT.__auth_stubs: 0x8d0
-   __TEXT.__objc_stubs: 0x560
-   __TEXT.__init_offsets: 0x10
+```text
 Functions:
 ~ sub_1000125e4 : 500 -> 504
 ```

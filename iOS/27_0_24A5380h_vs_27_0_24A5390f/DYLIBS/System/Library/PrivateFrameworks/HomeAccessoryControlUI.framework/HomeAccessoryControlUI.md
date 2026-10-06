@@ -2,76 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/HomeAccessoryControlUI.framework/HomeAccessoryControlUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__cstring`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x354818` | `0x354ab4` | **`+0x29c`** |
+| `__TEXT.__swift5_typeref` | `0x36c44` | `0x36dfe` | **`+0x1ba`** |
+| `__TEXT.__swift5_reflstr` | `0x478a` | `0x47aa` | **`+0x20`** |
+| `__DATA.__data` | `0xa4d0` | `0xa4c0` | **`-0x10`** |
+| `__TEXT.__const` | `0x19fa8` | `0x19fb8` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x5db0` | `0x5dbc` | **`+0xc`** |
+| `__DATA.__bss` | `0x17388` | `0x17390` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -1232.3.0.0.0
--  __TEXT.__text: 0x354818
 +1238.0.0.0.0
-+  __TEXT.__text: 0x354ab4
-   __TEXT.__objc_methlist: 0x3bc
--  __TEXT.__const: 0x19fa8
-+  __TEXT.__const: 0x19fb8
-   __TEXT.__constg_swiftt: 0x6e40
--  __TEXT.__swift5_typeref: 0x36c44
-+  __TEXT.__swift5_typeref: 0x36dfe
-   __TEXT.__swift5_builtin: 0x1b8
--  __TEXT.__swift5_reflstr: 0x478a
--  __TEXT.__swift5_fieldmd: 0x5db0
-+  __TEXT.__swift5_reflstr: 0x47aa
-+  __TEXT.__swift5_fieldmd: 0x5dbc
-   __TEXT.__swift5_assocty: 0x1ba0
-   __TEXT.__swift5_proto: 0xb90
-   __TEXT.__swift5_types: 0x71c
 
-   __AUTH.__objc_data: 0x430
-   __AUTH.__data: 0x7960
-   __DATA.__objc_ivar: 0x20
--  __DATA.__data: 0xa4d0
--  __DATA.__bss: 0x17388
-+  __DATA.__data: 0xa4c0
-+  __DATA.__bss: 0x17390
-   __DATA.__common: 0x1e8
-   __DATA_DIRTY.__common: 0x10
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11384
 +  Functions: 11386
-   Symbols:   4755
-   CStrings:  634
- 
 Symbols:
 + ___swift_closure_destructor.24Tm
 + ___swift_closure_destructor.51Tm

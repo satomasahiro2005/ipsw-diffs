@@ -2,33 +2,24 @@
 
 > `/usr/lib/updaters/libVinylUpdater.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0xaf2d` | `0xa6c3` | **`-0x86a`** |
+| `__TEXT.__text` | `0x4dc6c` | `0x4d594` | **`-0x6d8`** |
+| `__TEXT.__gcc_except_tab` | `0x47bc` | `0x47b4` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x1988` | `0x1990` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 178.0.0.0.0
--  __TEXT.__text: 0x4dc6c
-+  __TEXT.__text: 0x4d594
-   __TEXT.__init_offsets: 0x48
-   __TEXT.__const: 0x53f1
--  __TEXT.__gcc_except_tab: 0x47bc
-+  __TEXT.__gcc_except_tab: 0x47b4
-   __TEXT.__oslogstring: 0x17c3
--  __TEXT.__cstring: 0xaf2d
--  __TEXT.__unwind_info: 0x1988
-+  __TEXT.__cstring: 0xa6c3
-+  __TEXT.__unwind_info: 0x1990
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x9a8
-   __DATA_CONST.__objc_imageinfo: 0x8
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 1296
 +  Functions: 1295
-   Symbols:   2145
+
 -  CStrings:  1365
 +  CStrings:  1279
- 
 Functions:
 ~ ____ZN15BBUpdaterCommon12BBUReadNVRAMEv_block_invoke : 588 -> 564
 ~ __ZN5eUICC5Perso19PersoImplementation7PerformERK7OptionsRKNSt3__112basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEERNS5_10unique_ptrINS_15eUICCVinylValveENS5_14default_deleteISF_EEEE : 1244 -> 1204

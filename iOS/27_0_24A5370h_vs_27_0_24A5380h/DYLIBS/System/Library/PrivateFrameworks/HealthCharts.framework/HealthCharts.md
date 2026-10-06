@@ -2,92 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/HealthCharts.framework/HealthCharts`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x11588c` | `0x136ea8` | **`+0x2161c`** |
+| `__TEXT.__const` | `0x7b94` | `0x8a64` | **`+0xed0`** |
+| `__AUTH_CONST.__const` | `0xafc8` | `0xbe90` | **`+0xec8`** |
+| `__DATA_CONST.__got` | `0x0` | `0xbc8` | **`+0xbc8`** |
+| `__DATA.__bss` | `0x4a40` | `0x53f8` | **`+0x9b8`** |
+| `__DATA.__data` | `0x2f18` | `0x35c0` | **`+0x6a8`** |
+| `__TEXT.__constg_swiftt` | `0x4598` | `0x4b9c` | **`+0x604`** |
+| `__TEXT.__unwind_info` | `0x2730` | `0x2c08` | **`+0x4d8`** |
+| `__TEXT.__swift5_fieldmd` | `0x2578` | `0x2a0c` | **`+0x494`** |
+| `__TEXT.__eh_frame` | `0x1538` | `0x1884` | **`+0x34c`** |
+| `__TEXT.__swift5_reflstr` | `0xdb9` | `0x10cb` | **`+0x312`** |
+| `__TEXT.__cstring` | `0x4835` | `0x4b1f` | **`+0x2ea`** |
+| `__TEXT.__swift5_typeref` | `0x27ea` | `0x2a6e` | **`+0x284`** |
+| `__AUTH_CONST.__auth_got` | `0x1428` | `0x1660` | **`+0x238`** |
+| `__TEXT.__swift5_capture` | `0x25d4` | `0x2808` | **`+0x234`** |
+| `__AUTH.__data` | `0x18c8` | `0x1ad8` | **`+0x210`** |
+| `__TEXT.__swift5_assocty` | `0x938` | `0xa18` | **`+0xe0`** |
+| `__AUTH_CONST.__objc_const` | `0x230` | `0x2f8` | **`+0xc8`** |
+| `__TEXT.__swift5_proto` | `0x5d0` | `0x638` | **`+0x68`** |
+| `__TEXT.__swift5_types` | `0x564` | `0x5c4` | **`+0x60`** |
+| `__TEXT.__oslogstring` | `0x3dc` | `0x42f` | **`+0x53`** |
+| `__TEXT.__swift5_mpenum` | `0x20` | `0x64` | **`+0x44`** |
+| `__TEXT.__swift5_builtin` | `0x8c` | `0xc8` | **`+0x3c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1b8` | `0x1e0` | **`+0x28`** |
+| `__TEXT.__swift_as_cont` | `0xc4` | `0xd0` | **`+0xc`** |
+| `__TEXT.__swift5_protos` | `0x28` | `0x30` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x38` | `0x40` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x38` | `0x3c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x11588c
--  __TEXT.__const: 0x7b94
--  __TEXT.__constg_swiftt: 0x4598
--  __TEXT.__swift5_typeref: 0x27ea
--  __TEXT.__swift5_reflstr: 0xdb9
--  __TEXT.__swift5_fieldmd: 0x2578
--  __TEXT.__swift5_builtin: 0x8c
--  __TEXT.__swift5_assocty: 0x938
--  __TEXT.__cstring: 0x4835
--  __TEXT.__oslogstring: 0x3dc
--  __TEXT.__swift5_proto: 0x5d0
--  __TEXT.__swift5_types: 0x564
--  __TEXT.__swift5_capture: 0x25d4
--  __TEXT.__swift_as_entry: 0x38
--  __TEXT.__swift_as_ret: 0x38
--  __TEXT.__swift_as_cont: 0xc4
--  __TEXT.__swift5_protos: 0x28
--  __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__unwind_info: 0x2730
--  __TEXT.__eh_frame: 0x1538
-+  __TEXT.__text: 0x136ea8
-+  __TEXT.__const: 0x8a64
-+  __TEXT.__constg_swiftt: 0x4b9c
-+  __TEXT.__swift5_typeref: 0x2a6e
-+  __TEXT.__swift5_builtin: 0xc8
-+  __TEXT.__swift5_reflstr: 0x10cb
-+  __TEXT.__swift5_fieldmd: 0x2a0c
-+  __TEXT.__swift5_assocty: 0xa18
-+  __TEXT.__swift5_capture: 0x2808
-+  __TEXT.__swift5_proto: 0x638
-+  __TEXT.__swift5_types: 0x5c4
-+  __TEXT.__cstring: 0x4b1f
-+  __TEXT.__oslogstring: 0x42f
-+  __TEXT.__swift_as_entry: 0x40
-+  __TEXT.__swift_as_ret: 0x3c
-+  __TEXT.__swift_as_cont: 0xd0
-+  __TEXT.__swift5_protos: 0x30
-+  __TEXT.__swift5_mpenum: 0x64
-+  __TEXT.__unwind_info: 0x2c08
-+  __TEXT.__eh_frame: 0x1884
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-7027.0.60.2.2
++7027.0.64.0.0
 
-   __DATA_CONST.__const: 0x118
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1b8
--  __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xafc8
--  __AUTH_CONST.__objc_const: 0x230
--  __AUTH_CONST.__auth_got: 0x1428
--  __AUTH.__data: 0x18c8
--  __DATA.__data: 0x2f18
--  __DATA.__bss: 0x4a40
-+  __DATA_CONST.__objc_selrefs: 0x1e0
-+  __DATA_CONST.__got: 0xbc8
-+  __AUTH_CONST.__const: 0xbe90
-+  __AUTH_CONST.__objc_const: 0x2f8
-+  __AUTH_CONST.__auth_got: 0x1660
-+  __AUTH.__data: 0x1ad8
-+  __DATA.__data: 0x35c0
-+  __DATA.__bss: 0x53f8
-   __DATA.__common: 0x90
-   - /System/Library/Frameworks/Charts.framework/Charts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 +  - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/HealthKit.framework/HealthKit
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4316
--  Symbols:   2406
+-  Symbols:   1119
 -  CStrings:  453
 +  Functions: 4763
-+  Symbols:   2633
++  Symbols:   1235
 +  CStrings:  478
- 
-Sections:
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
 Symbols:
 + _CGRectGetHeight
 + _CGRectGetMinX
@@ -150,11 +112,6 @@ Symbols:
 + _initializeAvailabilityCheck
 + _malloc
 + _objc_autoreleaseReturnValue
-+ _objc_msgSend$initWithDynamicProvider:
-+ _objc_msgSend$initWithRed:green:blue:alpha:
-+ _objc_msgSend$startDate
-+ _objc_msgSend$userInterfaceStyle
-+ _objc_msgSend$value
 + _rewind
 + _sscanf
 + _swift_getAtKeyPath
@@ -298,5 +255,4 @@ CStrings:
 + "r"
 + "xDomain tracks "
 - "HealthCharts/HealthStaticChart.swift"
-
 ```

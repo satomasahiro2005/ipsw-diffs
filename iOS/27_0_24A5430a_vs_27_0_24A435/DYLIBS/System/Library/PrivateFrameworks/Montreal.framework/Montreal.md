@@ -2,23 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/Montreal.framework/Montreal`
 
-```diff
+### Section Size Changes
 
- 188.0.0.0.0
--  __TEXT.__text: 0x1b4eb4
-+  __TEXT.__text: 0x1b5294
-   __TEXT.__init_offsets: 0x48
-   __TEXT.__objc_methlist: 0x22bc
--  __TEXT.__gcc_except_tab: 0x1bdf4
-+  __TEXT.__gcc_except_tab: 0x1be24
-   __TEXT.__const: 0x4254
-   __TEXT.__cstring: 0x3452
-   __TEXT.__oslogstring: 0x3d2
--  __TEXT.__unwind_info: 0x5fd8
-+  __TEXT.__unwind_info: 0x5fc8
-   __TEXT.__eh_frame: 0xa0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1b4eb4` | `0x1b5294` | **`+0x3e0`** |
+| `__TEXT.__gcc_except_tab` | `0x1bdf4` | `0x1be24` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x5fd8` | `0x5fc8` | **`-0x10`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1a94841f4 -> sub_1a96941f4 : 944 -> 940
 ~ sub_1a9484788 -> sub_1a9694784 : 728 -> 740

@@ -2,76 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/CalendarUIKit.framework/CalendarUIKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x471270` | `0x471e78` | **`+0xc08`** |
+| `__TEXT.__swift5_typeref` | `0x4a462` | `0x4a9c2` | **`+0x560`** |
+| `__AUTH_CONST.__const` | `0x14ac0` | `0x14bb0` | **`+0xf0`** |
+| `__TEXT.__const` | `0x22384` | `0x223e4` | **`+0x60`** |
+| `__TEXT.__swift5_capture` | `0x49d4` | `0x4a1c` | **`+0x48`** |
+| `__TEXT.__unwind_info` | `0xc698` | `0xc6c0` | **`+0x28`** |
+| `__TEXT.__swift5_reflstr` | `0x8559` | `0x8579` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x2560` | `0x2578` | **`+0x18`** |
+| `__DATA.__data` | `0xc5e0` | `0xc5f0` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x856c` | `0x8578` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x36c0` | `0x36b8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1327.0.0.0.0
--  __TEXT.__text: 0x471270
 +1327.0.103.0.0
-+  __TEXT.__text: 0x471e78
-   __TEXT.__objc_methlist: 0xa808
--  __TEXT.__const: 0x22384
-+  __TEXT.__const: 0x223e4
-   __TEXT.__cstring: 0x28779
-   __TEXT.__oslogstring: 0x4dd8
-   __TEXT.__gcc_except_tab: 0xe74
-   __TEXT.__ustring: 0x204a
-   __TEXT.__dlopen_cstrs: 0x138
-   __TEXT.__constg_swiftt: 0xab8c
--  __TEXT.__swift5_typeref: 0x4a462
-+  __TEXT.__swift5_typeref: 0x4a9c2
-   __TEXT.__swift5_builtin: 0x3c0
--  __TEXT.__swift5_reflstr: 0x8559
--  __TEXT.__swift5_fieldmd: 0x856c
-+  __TEXT.__swift5_reflstr: 0x8579
-+  __TEXT.__swift5_fieldmd: 0x8578
-   __TEXT.__swift5_assocty: 0x1930
-   __TEXT.__swift5_proto: 0xf94
-   __TEXT.__swift5_types: 0x708
--  __TEXT.__swift5_capture: 0x49d4
-+  __TEXT.__swift5_capture: 0x4a1c
-   __TEXT.__swift5_protos: 0x94
-   __TEXT.__swift_as_entry: 0x298
-   __TEXT.__swift_as_ret: 0x230
-   __TEXT.__swift_as_cont: 0x598
-   __TEXT.__swift5_mpenum: 0x28
--  __TEXT.__unwind_info: 0xc698
-+  __TEXT.__unwind_info: 0xc6c0
-   __TEXT.__eh_frame: 0xbf48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_protorefs: 0x130
-   __DATA_CONST.__objc_superrefs: 0x298
-   __DATA_CONST.__objc_arraydata: 0x1d0
--  __DATA_CONST.__got: 0x2560
--  __AUTH_CONST.__const: 0x14ac0
-+  __DATA_CONST.__got: 0x2578
-+  __AUTH_CONST.__const: 0x14bb0
-   __AUTH_CONST.__cfstring: 0x8d00
-   __AUTH_CONST.__objc_const: 0x141a8
-   __AUTH_CONST.__objc_intobj: 0x450
-   __AUTH_CONST.__objc_arrayobj: 0xa8
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x36c0
-+  __AUTH_CONST.__auth_got: 0x36b8
-   __AUTH.__objc_data: 0x8b8
-   __AUTH.__data: 0x3078
-   __DATA.__objc_ivar: 0x7bc
--  __DATA.__data: 0xc5e0
-+  __DATA.__data: 0xc5f0
-   __DATA.__bss: 0x1e9c0
-   __DATA.__common: 0xba0
-   __DATA_DIRTY.__objc_data: 0x4f40
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 20223
--  Symbols:   14341
+-  Symbols:   11103
 +  Functions: 20237
-+  Symbols:   14344
-   CStrings:  2436
- 
++  Symbols:   11106
 Symbols:
 + ___swift_closure_destructor.189Tm
 + ___swift_closure_destructor.239Tm

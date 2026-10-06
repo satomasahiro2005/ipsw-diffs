@@ -2,24 +2,25 @@
 
 > `/System/Library/PrivateFrameworks/SESUIService.framework/SESUIService`
 
-```diff
+### Section Size Changes
 
- 70.39.1.0.0
--  __TEXT.__text: 0x6caec
-+  __TEXT.__text: 0x6cab8
-   __TEXT.__objc_methlist: 0x34
-   __TEXT.__const: 0x30a0
-   __TEXT.__constg_swiftt: 0x784
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6caec` | `0x6cab8` | **`-0x34`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_29dbdbbf4 -> sub_29e975bf4 : 1172 -> 1164
-~ sub_29dbe5ae4 -> sub_29e97fadc : 2288 -> 2300
-~ sub_29dbe6c8c -> sub_29e980c90 : 4156 -> 4148
-~ sub_29dbe9db8 -> sub_29e983db4 : 992 -> 984
-~ sub_29dbea56c -> sub_29e984560 : 992 -> 984
-~ sub_29dbea94c -> sub_29e984938 : 992 -> 984
-~ sub_29dbead2c -> sub_29e984d10 : 992 -> 984
-~ sub_29dbeb10c -> sub_29e9850e8 : 992 -> 984
-~ sub_29dbeb4ec -> sub_29e9854c0 : 992 -> 984
-~ sub_29dbed634 -> sub_29e987600 : 256 -> 264
-~ sub_29dbef59c -> sub_29e989570 : 4056 -> 4048
+~ sub_29dac0bf4 -> sub_29e858bf4 : 1172 -> 1164
+~ sub_29dacaae4 -> sub_29e862adc : 2288 -> 2300
+~ sub_29dacbc8c -> sub_29e863c90 : 4156 -> 4148
+~ sub_29dacedb8 -> sub_29e866db4 : 992 -> 984
+~ sub_29dacf56c -> sub_29e867560 : 992 -> 984
+~ sub_29dacf94c -> sub_29e867938 : 992 -> 984
+~ sub_29dacfd2c -> sub_29e867d10 : 992 -> 984
+~ sub_29dad010c -> sub_29e8680e8 : 992 -> 984
+~ sub_29dad04ec -> sub_29e8684c0 : 992 -> 984
+~ sub_29dad2634 -> sub_29e86a600 : 256 -> 264
+~ sub_29dad459c -> sub_29e86c570 : 4056 -> 4048
 ```

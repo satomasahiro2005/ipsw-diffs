@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/XPCDistributed.framework/XPCDistributed`
 
-```diff
+### Section Size Changes
 
- 167.0.2.0.0
--  __TEXT.__text: 0x62308
-+  __TEXT.__text: 0x62328
-   __TEXT.__const: 0x46e0
-   __TEXT.__cstring: 0x1e2c
-   __TEXT.__constg_swiftt: 0x14a8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x62308` | `0x62328` | **`+0x20`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s14XPCDistributed9XPCSystemC7resolve2id11Distributed0E5Actor_pSgAC03RawF2IDO5LocalV_tF : 248 -> 252
 ~ _$ss17_NativeDictionaryV20_copyOrMoveAndResize8capacity12moveElementsySi_SbtF14XPCDistributed9XPCSystemC14SharedActorKeyO_11Distributed0pN0_pTg5 : 760 -> 772

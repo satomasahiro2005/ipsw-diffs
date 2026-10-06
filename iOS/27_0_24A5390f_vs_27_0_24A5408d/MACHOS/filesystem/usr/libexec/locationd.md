@@ -2,117 +2,72 @@
 
 > `/usr/libexec/locationd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_classname`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ad12a8` | `0x1aec63c` | **`+0x1b394`** |
+| `__TEXT.__oslogstring` | `0x288052` | `0x28a274` | **`+0x2222`** |
+| `__TEXT.__cstring` | `0x20819a` | `0x2094fe` | **`+0x1364`** |
+| `__TEXT.__const` | `0x167208` | `0x168088` | **`+0xe80`** |
+| `__DATA.__bss` | `0x12838` | `0x133b8` | **`+0xb80`** |
+| `__DATA_CONST.__const` | `0xc01c0` | `0xc09e0` | **`+0x820`** |
+| `__TEXT.__gcc_except_tab` | `0xd8594` | `0xd8d28` | **`+0x794`** |
+| `__TEXT.__unwind_info` | `0x76398` | `0x767a8` | **`+0x410`** |
+| `__DATA.__objc_const` | `0x4e728` | `0x4e888` | **`+0x160`** |
+| `__DATA_CONST.__cfstring` | `0x42a00` | `0x42b40` | **`+0x140`** |
+| `__TEXT.__objc_methname` | `0x5b96f` | `0x5ba8f` | **`+0x120`** |
+| `__TEXT.__objc_stubs` | `0x3d6e0` | `0x3d7c0` | **`+0xe0`** |
+| `__TEXT.__objc_methlist` | `0x2ddf0` | `0x2de50` | **`+0x60`** |
+| `__TEXT.__objc_methtype` | `0x38c8f` | `0x38c47` | **`-0x48`** |
+| `__DATA.__common` | `0x22048` | `0x22080` | **`+0x38`** |
+| `__DATA.__objc_selrefs` | `0x13740` | `0x13778` | **`+0x38`** |
+| `__TEXT.__init_offsets` | `0xbdc` | `0xc08` | **`+0x2c`** |
+| `__DATA.__objc_ivar` | `0x3af4` | `0x3b18` | **`+0x24`** |
+| `__DATA_CONST.__objc_intobj` | `0x2dc0` | `0x2dd8` | **`+0x18`** |
+| `__DATA.__data` | `0x62e78` | `0x62e88` | **`+0x10`** |
+| `__TEXT.__auth_stubs` | `0x6420` | `0x6410` | **`-0x10`** |
+| `__DATA_CONST.__auth_got` | `0x3230` | `0x3228` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x25b0` | `0x25b8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_data`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_classname`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -3183.0.0.0.0
--  __TEXT.__text: 0x1ad12a8
--  __TEXT.__auth_stubs: 0x6420
--  __TEXT.__objc_stubs: 0x3d6e0
--  __TEXT.__init_offsets: 0xbdc
--  __TEXT.__objc_methlist: 0x2ddf0
--  __TEXT.__const: 0x167208
--  __TEXT.__gcc_except_tab: 0xd8594
--  __TEXT.__oslogstring: 0x288052
--  __TEXT.__cstring: 0x20819a
--  __TEXT.__objc_methname: 0x5b96f
 +3185.0.6.0.1
-+  __TEXT.__text: 0x1aec63c
-+  __TEXT.__auth_stubs: 0x6410
-+  __TEXT.__objc_stubs: 0x3d7c0
-+  __TEXT.__init_offsets: 0xc08
-+  __TEXT.__objc_methlist: 0x2de50
-+  __TEXT.__const: 0x168088
-+  __TEXT.__gcc_except_tab: 0xd8d28
-+  __TEXT.__oslogstring: 0x28a274
-+  __TEXT.__cstring: 0x2094fe
-+  __TEXT.__objc_methname: 0x5ba8f
-   __TEXT.__objc_classname: 0x7ff7
--  __TEXT.__objc_methtype: 0x38c8f
-+  __TEXT.__objc_methtype: 0x38c47
-   __TEXT.__dlopen_cstrs: 0x4a
-   __TEXT.__ustring: 0xa5e
-   __TEXT.__constg_swiftt: 0x5ec
 
-   __TEXT.__swift_as_cont: 0x1c
-   __TEXT.__swift5_proto: 0x4c
-   __TEXT.__swift5_assocty: 0x30
--  __TEXT.__unwind_info: 0x76398
-+  __TEXT.__unwind_info: 0x767a8
-   __TEXT.__eh_frame: 0xed8
--  __DATA_CONST.__const: 0xc01c0
--  __DATA_CONST.__cfstring: 0x42a00
-+  __DATA_CONST.__const: 0xc09e0
-+  __DATA_CONST.__cfstring: 0x42b40
-   __DATA_CONST.__objc_classlist: 0x1488
-   __DATA_CONST.__objc_catlist: 0xc0
-   __DATA_CONST.__objc_protolist: 0xe48
-
-   __DATA_CONST.__objc_superrefs: 0x12e0
-   __DATA_CONST.__objc_arraydata: 0x1b90
-   __DATA_CONST.__objc_dictobj: 0xb18
--  __DATA_CONST.__objc_intobj: 0x2dc0
-+  __DATA_CONST.__objc_intobj: 0x2dd8
-   __DATA_CONST.__objc_doubleobj: 0x150
-   __DATA_CONST.__objc_arrayobj: 0x978
-   __DATA_CONST.__objc_floatobj: 0x80
-   __DATA_CONST.__linkguard: 0x15
--  __DATA_CONST.__auth_got: 0x3230
--  __DATA_CONST.__got: 0x25b0
-+  __DATA_CONST.__auth_got: 0x3228
-+  __DATA_CONST.__got: 0x25b8
-   __DATA_CONST.__auth_ptr: 0x690
--  __DATA.__objc_const: 0x4e728
--  __DATA.__objc_selrefs: 0x13740
--  __DATA.__objc_ivar: 0x3af4
-+  __DATA.__objc_const: 0x4e888
-+  __DATA.__objc_selrefs: 0x13778
-+  __DATA.__objc_ivar: 0x3b18
-   __DATA.__objc_data: 0xd2f8
--  __DATA.__data: 0x62e78
--  __DATA.__common: 0x22048
--  __DATA.__bss: 0x12838
-+  __DATA.__data: 0x62e88
-+  __DATA.__common: 0x22080
-+  __DATA.__bss: 0x133b8
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 112648
 +  Functions: 112961
-   Symbols:   2892
--  CStrings:  83922
-+  CStrings:  84132
- 
+
+-  CStrings:  83925
++  CStrings:  84135
 Symbols:
 + _HKSampleSortIdentifierEndDate
 - _lgamma
@@ -189,6 +144,8 @@ CStrings:
 + "-[CLSmootherMonitor createReconstructionIntervalWithStartDate:endDate:is1HzData:isContinuationOfPriorBatch:]"
 + "-[CMStrideCalibrator(CLNotifiers) startLocationUpdates]"
 + "-[CMStrideCalibrator(CLNotifiers) stopLocationUpdates]"
++ "22:24:45"
++ "22:35:55"
 + "::CLP::LogEntry::PrivateData::ExtendedOrientationNotification_NotificationType_IsValid(value)"
 + "::CLP::LogEntry::PrivateData::GnssFailureStatusUpdate_Status_IsValid(value)"
 + "::CLP::LogEntry::PrivateData::OrientationNotification_NotificationType_IsValid(value)"
@@ -219,6 +176,8 @@ CStrings:
 + "Assertion failed: start <= end && end <= fCapacity, file /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CoreLocation/Oscar/CMQueue.h, line 267,start=%zu end=%zu fCapacity=%u."
 + "Assertion failed: static_cast<uint32_t>(Cap) == fCapacity, file /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CoreLocation/Oscar/CMQueue.h, line 252,fastIndex Cap=%zu mismatches fCapacity=%u."
 + "Assertion failed: t >= 0 && t <= 1, file /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CoreLocation/Oscar/Math/CMOQuaternion.cpp, line 300,Invalid time t for slerp."
++ "Aug  5 2026"
++ "Aug  5 2026 22:29:33"
 + "B1840@0:8{NotificationData={CLDaemonLocation=i{?=dd}ddddddddidi{?=dd}diIiiidB}{CLDaemonLocationPrivate=dddddfffBi{?=dd}diiB{?=ddBBidqddd}{?={?=iddddd{?=dd}dd}iQiiiidB}{?=dd}if{?=dd}ddiBddddddddBB{?=dd}diddddddB{shared_ptr<const CLDaemonLocationPrivate::AboveHorizonSatelliteVisibilityReport>=^{AboveHorizonSatelliteVisibilityReport}^{__shared_weak_count}}i{AltitudeInfo=dddi}CdddCCBii{?=I}{?=if}iiiBffffd{?=dddffffff}}{shared_ptr<CLBatchedLocations>=^{CLBatchedLocations}^{__shared_weak_count}}{TechnologyStatus=iB}Bd{?=dddd}{?=dd}{XtraFileAvailable=d{basic_string<char, std::char_traits<char>, std::allocator<char>>={?=(__rep={__short=[23c]b7b1}{__long=*Qb63b1})}}}i{LocationDerivedSpeed=ddd}{?=dddi}{?=ddddddB[3[3d]]dddQi}{shared_ptr<const gnss::MeasurementData>=^{MeasurementData}^{__shared_weak_count}}i{?=idddddd[5d]ddddii}{CLStrongPtr<NSData *>=@}{PredictedGnssAvailability=iidd}{CLBasebandTimeFreqTransfer=d{CLBasebandSystemClock=Qffdfd}Qf{LeapSecondInfo=sC{LeapSecondChange=Qs}}}{CLGnssBasebandCausesL1InterferenceGnssBandChangeData=ii}{CLRhythmicGnssStatusUpdate=iBi{bitset<2UL>=Q}BI}{CLRhythmicStreamingControl=B}{CLGNSSStateQueryAssertionReportData=ddd}{ProactiveLocationSessionStats=id}B{RecentLocationsRevised=ddd}{MapMatchingDriftSignal=iidddddid}{CLPIOSample=dddfffffffffffffffffffffCCCCCCS}{AnomalousGnssDetectionInfo=BBB}CC}16"
 + "B40@0:8@16@24d32"
 + "Body metrics snapshot,weight,%f,vo2max,%f,runvo2max,%f,personalizedvo2max,%f,hrmin,%f,hrmax,%f,pal,%f,hronset,%f,sedentaryhrmin,%f"
@@ -460,6 +419,8 @@ CStrings:
 - "#wci,usmon,evaluated,nowMctSec,%{public}.3f,sinceLastEvalSec,%{public}.1f,latDeg,%{sensitive}.7f,lonDeg,%{sensitive}.7f,region,%{public}d,isUS,%{private}d,borderDistM,%{private}.1f,fenceM,%{public}.1f,changed,%{public}d"
 - "%@,<recordId %llu, startTime %f, activityEndTime %f, workoutSessionId %@, workoutType %d, hrRecovery %f, lambda %f, hrMax %f, hrMinAdjusted, %f, recoveryOnsetTime, %f, steadyStateHR, %f, status, %d, sessionHrRecovery, %f, peakHR, %f, hrRecoveryReference, %f>"
 - "-[CLSmootherMonitor createReconstructionIntervalWithStartDate:endDate:is1HzData:]"
+- "22:33:11"
+- "22:43:19"
 - "@128@0:8Q16d24d32@40i48d52d60d68d76d84d92i100d104d112d120"
 - "@24@0:8r^{HRRecoverySession=Qddd[16C]qddddddidddddBB}16"
 - "@72@0:8d16d24@32@40@48B56Q60B68"
@@ -493,6 +454,8 @@ CStrings:
 - "CMStepArbitrator,mergedStepEntry,time,%f,steps,%d,distance,%f,isPedNet,%d,pedNetStep,startTime,%f,endTime,%f,steps,%d,distance,%f,currentPace,%f,legacyStep,time,%f,steps,%d,distance,%f,currentPace,%f"
 - "INSERT INTO HRRecoverySessionHistory (startTime, activityEndTime, workoutSessionId, workoutType, hrRecovery, lambda, hrMax, hrMinAdjusted, recoveryOnsetTime, steadyStateHR, status, sessionHrRecovery, peakHR, hrRecoveryReference) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
 - "INSERT INTO VO2MaxHistory SELECT NULL, startTime, workoutType, estimatedVo2Max, durationInSeconds, hrMax, hrMin, sessionId, variance, filteredVo2Max, sessionType, eligibleForHealthKit, eligibleForCalorimetry, numWorkoutsContrToEstimate, estimatedHRResponseParam, estimatedHRRecoveryParam, sessionVo2Max, platformSource FROM VO2MaxStagingHistory"
+- "Jul 14 2026"
+- "Jul 14 2026 22:38:29"
 - "LCPM,stopping gps and clearing throttle state"
 - "Legacy step buffer too large, %zu, removing oldest entry, %lf"
 - "METS consumed,startTime,%.3f,computeTime,%.3f,now,%.3f,activity,%d,userMets,%f,wrMets,%f,rawWRMets,%f,physicalEffortMets, %f, rawTruthMets,%f,avgTruthMets,%f,basalMets,%f,duration,%lf,stored,%d,%s,rawHRMets,%f,rawFMMets,%f,totalCalories,%lld,basalCalories,%lld,VectorMag,%f,pushCount,%d,activityWithoutOverride,%d,isStanding,%d,isMotionOverrideSet,%d, mediaType, %d,pedDistance,%f,distanceConfig,%s,currentPace,%f,metsSource,%d"

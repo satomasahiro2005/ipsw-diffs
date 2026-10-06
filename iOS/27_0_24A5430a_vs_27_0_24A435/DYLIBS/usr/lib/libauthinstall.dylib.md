@@ -2,45 +2,27 @@
 
 > `/usr/lib/libauthinstall.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb9544` | `0xb9a08` | **`+0x4c4`** |
+| `__AUTH_CONST.__const` | `0x1518` | `0x15c0` | **`+0xa8`** |
+| `__TEXT.__const` | `0x64b6` | `0x653c` | **`+0x86`** |
+| `__TEXT.__gcc_except_tab` | `0x45bc` | `0x4630` | **`+0x74`** |
+| `__TEXT.__unwind_info` | `0x2c28` | `0x2c80` | **`+0x58`** |
+| `__TEXT.__cstring` | `0x1ff7d` | `0x1ff77` | **`-0x6`** |
+
+### Other Changes
+
 ```diff
 
- 1155.0.5.0.0
--  __TEXT.__text: 0xb9544
-+  __TEXT.__text: 0xb9a08
-   __TEXT.__objc_methlist: 0x2a64
--  __TEXT.__cstring: 0x1ff7d
--  __TEXT.__const: 0x64b6
--  __TEXT.__gcc_except_tab: 0x45bc
-+  __TEXT.__cstring: 0x1ff77
-+  __TEXT.__const: 0x653c
-+  __TEXT.__gcc_except_tab: 0x4630
-   __TEXT.__dlopen_cstrs: 0x63
-   __TEXT.__oslogstring: 0x63da
--  __TEXT.__unwind_info: 0x2c28
-+  __TEXT.__unwind_info: 0x2c80
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_superrefs: 0x1f8
-   __DATA_CONST.__objc_arraydata: 0x10
-   __DATA_CONST.__got: 0x410
--  __AUTH_CONST.__const: 0x1518
-+  __AUTH_CONST.__const: 0x15c0
-   __AUTH_CONST.__cfstring: 0xfb40
-   __AUTH_CONST.__objc_const: 0x4fd8
-   __AUTH_CONST.__weak_auth_got: 0x20
-
-   - /usr/lib/updaters/libAppleTconUARPUpdater.dylib
-   - /usr/lib/updaters/libSavageRestoreInfo_iOS.dylib
-   - /usr/lib/updaters/libT200Updater.dylib
 -  Functions: 3794
--  Symbols:   5293
+-  Symbols:   4965
 -  CStrings:  4747
 +  Functions: 3807
-+  Symbols:   5314
++  Symbols:   4986
 +  CStrings:  4746
- 
 Symbols:
 + GCC_except_table63
 + GCC_except_table87

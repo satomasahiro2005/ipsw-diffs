@@ -2,96 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/CoreBrightness.framework/CoreBrightness`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x16c570` | `0x171b1c` | **`+0x55ac`** |
+| `__AUTH_CONST.__objc_const` | `0x33890` | `0x35760` | **`+0x1ed0`** |
+| `__TEXT.__const` | `0x16a08` | `0x15828` | **`-0x11e0`** |
+| `__TEXT.__oslogstring` | `0x1990d` | `0x19e7d` | **`+0x570`** |
+| `__TEXT.__objc_methlist` | `0xd1f4` | `0xd5f4` | **`+0x400`** |
+| `__AUTH_CONST.__cfstring` | `0xe5c0` | `0xe840` | **`+0x280`** |
+| `__TEXT.__cstring` | `0xcd15` | `0xcf85` | **`+0x270`** |
+| `__AUTH.__objc_data` | `0x2680` | `0x2860` | **`+0x1e0`** |
+| `__TEXT.__unwind_info` | `0x55d8` | `0x5700` | **`+0x128`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5958` | `0x5a60` | **`+0x108`** |
+| `__TEXT.__gcc_except_tab` | `0x2804` | `0x28cc` | **`+0xc8`** |
+| `__DATA_CONST.__const` | `0x2f60` | `0x2ff0` | **`+0x90`** |
+| `__DATA.__objc_ivar` | `0x1718` | `0x179c` | **`+0x84`** |
+| `__DATA.__data` | `0x34fb8` | `0x35018` | **`+0x60`** |
+| `__TEXT.__dlopen_cstrs` | `0x1d5` | `0x218` | **`+0x43`** |
+| `__DATA.__bss` | `0x66c0` | `0x66f0` | **`+0x30`** |
+| `__DATA_CONST.__objc_arraydata` | `0xcc8` | `0xcf8` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0x6f8` | `0x728` | **`+0x30`** |
+| `__DATA_CONST.__objc_superrefs` | `0x5c0` | `0x5f0` | **`+0x30`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x408` | `0x420` | **`+0x18`** |
+| `__AUTH_CONST.__objc_intobj` | `0xdb0` | `0xd98` | **`-0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x1370` | `0x1368` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x7b0` | `0x7b8` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x368` | `0x370` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2300.0.18.502.1
--  __TEXT.__text: 0x16c570
--  __TEXT.__objc_methlist: 0xd1f4
--  __TEXT.__cstring: 0xcd15
--  __TEXT.__const: 0x16a08
--  __TEXT.__oslogstring: 0x1990d
--  __TEXT.__gcc_except_tab: 0x2804
--  __TEXT.__dlopen_cstrs: 0x1d5
 +2300.2.7.0.0
-+  __TEXT.__text: 0x171b1c
-+  __TEXT.__objc_methlist: 0xd5f4
-+  __TEXT.__cstring: 0xcf85
-+  __TEXT.__const: 0x15828
-+  __TEXT.__oslogstring: 0x19e7d
-+  __TEXT.__gcc_except_tab: 0x28cc
-+  __TEXT.__dlopen_cstrs: 0x218
-   __TEXT.__swift5_typeref: 0xeaf
-   __TEXT.__constg_swiftt: 0xc34
-   __TEXT.__swift5_builtin: 0xdc
 
-   __TEXT.__swift5_capture: 0x3d0
-   __TEXT.__swift5_mpenum: 0x28
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__unwind_info: 0x55d8
-+  __TEXT.__unwind_info: 0x5700
-   __TEXT.__eh_frame: 0xb90
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2f60
--  __DATA_CONST.__objc_classlist: 0x6f8
-+  __DATA_CONST.__const: 0x2ff0
-+  __DATA_CONST.__objc_classlist: 0x728
-   __DATA_CONST.__objc_catlist: 0x18
--  __DATA_CONST.__objc_protolist: 0x368
-+  __DATA_CONST.__objc_protolist: 0x370
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x5958
-+  __DATA_CONST.__objc_selrefs: 0x5a60
-   __DATA_CONST.__objc_protorefs: 0x138
--  __DATA_CONST.__objc_superrefs: 0x5c0
--  __DATA_CONST.__objc_arraydata: 0xcc8
--  __DATA_CONST.__got: 0x7b0
-+  __DATA_CONST.__objc_superrefs: 0x5f0
-+  __DATA_CONST.__objc_arraydata: 0xcf8
-+  __DATA_CONST.__got: 0x7b8
-   __AUTH_CONST.__const: 0x3dc8
--  __AUTH_CONST.__cfstring: 0xe5c0
--  __AUTH_CONST.__objc_const: 0x33890
-+  __AUTH_CONST.__cfstring: 0xe840
-+  __AUTH_CONST.__objc_const: 0x35760
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_doubleobj: 0x70
--  __AUTH_CONST.__objc_intobj: 0xdb0
--  __AUTH_CONST.__objc_arrayobj: 0x408
--  __AUTH_CONST.__objc_floatobj: 0x1a0
-+  __AUTH_CONST.__objc_intobj: 0xd98
-+  __AUTH_CONST.__objc_arrayobj: 0x420
-   __AUTH_CONST.__objc_dictobj: 0x550
--  __AUTH_CONST.__auth_got: 0x1370
--  __AUTH.__objc_data: 0x2680
-+  __AUTH_CONST.__objc_floatobj: 0x1a0
-+  __AUTH_CONST.__auth_got: 0x1368
-+  __AUTH.__objc_data: 0x2860
-   __AUTH.__data: 0x640
--  __DATA.__objc_ivar: 0x1718
--  __DATA.__data: 0x34fb8
--  __DATA.__bss: 0x66c0
-+  __DATA.__objc_ivar: 0x179c
-+  __DATA.__data: 0x35018
-+  __DATA.__bss: 0x66f0
-   __DATA.__common: 0x10
-   __DATA_DIRTY.__objc_data: 0x2238
-   __DATA_DIRTY.__data: 0x4e8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8711
--  Symbols:   12544
+-  Symbols:   10139
 -  CStrings:  4696
 +  Functions: 8830
-+  Symbols:   12748
++  Symbols:   10314
 +  CStrings:  4746
- 
 Symbols:
 + +[CBAnalytics illuminanceHistogram:displayID:alsID:]
 + +[CBAnalytics luminanceHistogram:withName:displayID:]
@@ -296,43 +248,6 @@ Symbols:
 + ___block_descriptor_56_e8_32o_e35_v24?0^{__IOHIDServiceClient=}8^v16ls32l8
 + ___block_descriptor_72_e8_32o40o48o56o64r_e5_v8?0ls32l8r64l8s40l8s48l8s56l8
 + ___block_descriptor_72_e8_32o40o48o56o_e26_"NSMutableDictionary"8?0ls32l8s40l8s48l8s56l8
-+ _objc_msgSend$CBCE5_Q0_output
-+ _objc_msgSend$CBCE5_Q1_output
-+ _objc_msgSend$CBCE5_Q2_output
-+ _objc_msgSend$CBCE5_Q3_output
-+ _objc_msgSend$CBCE5_Q4_output
-+ _objc_msgSend$CBDispTypeExternal
-+ _objc_msgSend$_paramsFromAlsEvent:
-+ _objc_msgSend$activeALSServices
-+ _objc_msgSend$biLinearInterpBetweenIndices:forPoint1:andPoint2:strengthLUT:luxCount:luxArray:nitsArray:
-+ _objc_msgSend$channelAveragedColorVendorData
-+ _objc_msgSend$clientSetProperty:forKey:andHandle:
-+ _objc_msgSend$coexDescription:
-+ _objc_msgSend$copyChannelAveragedColorDataFromEvent:
-+ _objc_msgSend$copyInferenceForEvent:
-+ _objc_msgSend$encodeBrightnessState:
-+ _objc_msgSend$hasAnyCoexForALS:type:
-+ _objc_msgSend$illuminanceHistogram:displayID:alsID:
-+ _objc_msgSend$initWithCBCE5_Q0_output:CBCE5_Q1_output:CBCE5_Q2_output:CBCE5_Q3_output:CBCE5_Q4_output:strength_output:uncertainty:
-+ _objc_msgSend$initWithDisplayManager:
-+ _objc_msgSend$initWithDisplayManager:notifier:
-+ _objc_msgSend$initWithNotificationName:logCategory:
-+ _objc_msgSend$initWithQueue:andDisplayContainer:andVariant:andContext:
-+ _objc_msgSend$isActiveDisplayMode:
-+ _objc_msgSend$isDesignatedAODSensor:
-+ _objc_msgSend$isExternalWired
-+ _objc_msgSend$luminanceHistogram:withName:displayID:
-+ _objc_msgSend$publishState:
-+ _objc_msgSend$pushIlluminance:weight:forAlsID:
-+ _objc_msgSend$reevaluateAndNotify
-+ _objc_msgSend$removeDelegate:
-+ _objc_msgSend$removeDisplayModeObserver:
-+ _objc_msgSend$removeObjectsForKeys:
-+ _objc_msgSend$resetPushedThresholds
-+ _objc_msgSend$setDisplayID:
-+ _objc_msgSend$setModelInputWithParameters:
-+ _objc_msgSend$setSyncProperty:forKey:handle:error:
-+ _objc_msgSend$string
 - +[CBAnalytics illuminanceHistogram:]
 - +[CBAnalytics luminanceHistogram:withName:]
 - -[BLControl newPowerManagement:]
@@ -361,14 +276,6 @@ Symbols:
 - ___block_descriptor_48_e8_32o40o_e34_v32?0Q8"NSString"16"NSNumber"24ls32l8s40l8
 - ___block_descriptor_56_e8_32o40o_e19_"NSDictionary"8?0ls32l8s40l8
 - ___block_descriptor_64_e8_32o40o48o_e19_"NSDictionary"8?0ls32l8s40l8s48l8
-- _objc_msgSend$biLinearInterpBetweenIndices:forPoint1:andPoint2:
-- _objc_msgSend$illuminanceHistogram:
-- _objc_msgSend$initWithQueue:andDisplayContainer:andVariant:
-- _objc_msgSend$interpolateBetweenX1:Y1:X2:Y2:X:
-- _objc_msgSend$luminanceHistogram:withName:
-- _objc_msgSend$newPowerManagement:
-- _objc_msgSend$setCbpm:
-- _objc_msgSend$setModelInputWithXtalkArr:alsArr:alsRatioArr:X:Y:Z:CCT:u:v:lux:nits:iTime:gain:x:y:a:b:ceInput:
 CStrings:
 + "%s: key=%@ error=%@"
 + "-[BacklightdExportedObj clientSetProperty:forKey:andHandle:]_block_invoke"

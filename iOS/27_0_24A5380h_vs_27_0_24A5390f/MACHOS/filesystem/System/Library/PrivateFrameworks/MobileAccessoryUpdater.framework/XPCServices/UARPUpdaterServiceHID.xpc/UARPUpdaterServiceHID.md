@@ -2,20 +2,23 @@
 
 > `/System/Library/PrivateFrameworks/MobileAccessoryUpdater.framework/XPCServices/UARPUpdaterServiceHID.xpc/UARPUpdaterServiceHID`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1d064` | `0x1d06c` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__objc_methlist`
 - `__TEXT.__unwind_info`
 
+### Other Changes
+
 ```diff
 
 -1587.0.21.0.0
--  __TEXT.__text: 0x1d064
 +1587.0.27.0.0
-+  __TEXT.__text: 0x1d06c
-   __TEXT.__auth_stubs: 0x820
-   __TEXT.__objc_stubs: 0x2820
-   __TEXT.__objc_methlist: 0x11a8
 Functions:
 ~ _uarpPlatformAssetResponseData : 452 -> 460
 ```

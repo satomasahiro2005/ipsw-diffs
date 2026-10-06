@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/RequestDispatcherBridges.framework/RequestDispatcherBridges`
 
-```diff
+### Section Size Changes
 
- 3600.54.24.11.1
--  __TEXT.__text: 0x10eef0
-+  __TEXT.__text: 0x10ef48
-   __TEXT.__objc_methlist: 0x670
-   __TEXT.__const: 0x51d8
-   __TEXT.__cstring: 0x2024
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10eef0` | `0x10ef48` | **`+0x58`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_227c949f0 -> sub_2290819f0 : 448 -> 452
 ~ sub_227cb036c -> sub_22909d370 : 13972 -> 14000

@@ -2,36 +2,35 @@
 
 > `/System/Library/Filesystems/apfs.fs/apfs_vol_converter`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5a1a8` | `0x5a594` | **`+0x3ec`** |
+| `__TEXT.__cstring` | `0x11e31` | `0x11f54` | **`+0x123`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__init_offsets`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x5a1a8
-+  __TEXT.__text: 0x5a594
-   __TEXT.__auth_stubs: 0xa10
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__const: 0x750
--  __TEXT.__cstring: 0x11e31
-+  __TEXT.__cstring: 0x11f54
-   __TEXT.__gcc_except_tab: 0x6a4
-   __TEXT.__unwind_info: 0xcb0
-   __DATA_CONST.__const: 0xb20
+-3283.0.0.0.0
++3283.0.9.502.1
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libutil.dylib
 -  Functions: 905
 +  Functions: 906
-   Symbols:   187
--  CStrings:  1694
-+  CStrings:  1699
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA.__data : content changed
+
+-  CStrings:  1605
++  CStrings:  1610
 Symbols:
 + __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE21__grow_by_and_replaceEmmmmmmPKc
 - __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6assignEPKcm
@@ -49,5 +48,4 @@ CStrings:
 - "%s:%d: %s failed to create bitmap object %lld: %d\n"
 - "%s:%d: %s failed to free internal pool block %lld: %d\n"
 - "3283"
-
 ```

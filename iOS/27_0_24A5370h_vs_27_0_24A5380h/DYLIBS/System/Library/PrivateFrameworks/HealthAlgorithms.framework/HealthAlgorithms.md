@@ -2,35 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/HealthAlgorithms.framework/HealthAlgorithms`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x4d08c
-+  __TEXT.__text: 0x4cd10
-   __TEXT.__objc_methlist: 0x13bc
-   __TEXT.__const: 0xf2f6
-   __TEXT.__gcc_except_tab: 0x475c
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4d08c` | `0x4cd10` | **`-0x37c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[HAPPGFrame initWithPPGProcessorOutput:rawPacket:bootDate:] : 512 -> 504
 ~ __ZN7hal900020compute_tick_offsetsERKNSt3__17variantIJN6mimosa8PacketV1ENS2_8PacketV2ENS2_8PacketV3ENS2_8PacketV4ENS2_8PacketV5ENS2_8PacketV6ENS2_8PacketV7ENS2_8PacketV8ENS2_8PacketV9ENS2_9PacketV10ENS2_9PacketV11ENS2_9PacketV12ENS2_9PacketV13ENS2_9PacketV14EEEENS_10GenerationE : 604 -> 588
@@ -73,5 +53,4 @@ Functions:
 ~ __ZN6mimosa2v212PatchDecoder13extract_patchINS0_11PacketState8PatchV13EEEvRT_yPKSt4byteS9_ : 2540 -> 2488
 ~ __ZN6mimosa2v212PatchDecoder13extract_patchINS0_11PacketState8PatchV14EEEvRT_yPKSt4byteS9_ : 2588 -> 2540
 ~ __ZN6mimosa7Decoder24decode_version_if_neededERPKSt4byteS3_ : 264 -> 268
-
 ```

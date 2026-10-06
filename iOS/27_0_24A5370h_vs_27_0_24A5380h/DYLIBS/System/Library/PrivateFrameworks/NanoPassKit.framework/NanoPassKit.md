@@ -2,93 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/NanoPassKit.framework/NanoPassKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e7c00` | `0x1e8dd4` | **`+0x11d4`** |
+| `__TEXT.__oslogstring` | `0x21f6b` | `0x22469` | **`+0x4fe`** |
+| `__AUTH.__objc_data` | `0x8e80` | `0x8cf0` | **`-0x190`** |
+| `__DATA_DIRTY.__objc_data` | `0xb90` | `0xd20` | **`+0x190`** |
+| `__AUTH_CONST.__objc_const` | `0x36c10` | `0x36c98` | **`+0x88`** |
+| `__DATA_CONST.__const` | `0x3fc0` | `0x4018` | **`+0x58`** |
+| `__TEXT.__objc_methlist` | `0x1fd98` | `0x1fdf0` | **`+0x58`** |
+| `__TEXT.__cstring` | `0x12c74` | `0x12c44` | **`-0x30`** |
+| `__TEXT.__unwind_info` | `0x7400` | `0x7430` | **`+0x30`** |
+| `__AUTH_CONST.__cfstring` | `0xa980` | `0xa960` | **`-0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8e78` | `0x8e98` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x16a4` | `0x16ac` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1e7c00
--  __TEXT.__objc_methlist: 0x1fd98
--  __TEXT.__cstring: 0x12c74
-+  __TEXT.__text: 0x1e8dd4
-+  __TEXT.__objc_methlist: 0x1fdf0
-+  __TEXT.__cstring: 0x12c44
-   __TEXT.__const: 0x2b0
-   __TEXT.__gcc_except_tab: 0x37d0
--  __TEXT.__oslogstring: 0x21f6b
-+  __TEXT.__oslogstring: 0x22469
-   __TEXT.__dlopen_cstrs: 0x1ba
-   __TEXT.__ustring: 0x168
-   __TEXT.__constg_swiftt: 0x28
+-1334.0.0.0.0
++1338.0.0.0.0
 
-   __TEXT.__swift5_reflstr: 0x17
-   __TEXT.__swift5_fieldmd: 0x28
-   __TEXT.__swift5_types: 0x4
--  __TEXT.__unwind_info: 0x7400
-+  __TEXT.__unwind_info: 0x7430
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3fc0
-+  __DATA_CONST.__const: 0x4018
-   __DATA_CONST.__objc_classlist: 0xf68
-   __DATA_CONST.__objc_catlist: 0xf8
-   __DATA_CONST.__objc_protolist: 0x168
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8e78
-+  __DATA_CONST.__objc_selrefs: 0x8e98
-   __DATA_CONST.__objc_protorefs: 0x50
-   __DATA_CONST.__objc_superrefs: 0xf10
-   __DATA_CONST.__objc_arraydata: 0x28
-   __DATA_CONST.__got: 0x1608
-   __AUTH_CONST.__const: 0x720
--  __AUTH_CONST.__cfstring: 0xa980
--  __AUTH_CONST.__objc_const: 0x36c10
-+  __AUTH_CONST.__cfstring: 0xa960
-+  __AUTH_CONST.__objc_const: 0x36c98
-   __AUTH_CONST.__objc_arrayobj: 0x60
-   __AUTH_CONST.__objc_intobj: 0xa8
-   __AUTH_CONST.__objc_doubleobj: 0x70
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x8e80
--  __DATA.__objc_ivar: 0x16a4
-+  __AUTH.__objc_data: 0x8cf0
-+  __DATA.__objc_ivar: 0x16ac
-   __DATA.__data: 0x1120
-   __DATA.__bss: 0x1a8
--  __DATA_DIRTY.__objc_data: 0xb90
-+  __DATA_DIRTY.__objc_data: 0xd20
-   __DATA_DIRTY.__bss: 0xa8
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11863
--  Symbols:   34198
--  CStrings:  5085
+-  Symbols:   18572
+-  CStrings:  3732
 +  Functions: 11877
-+  Symbols:   34229
-+  CStrings:  5097
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_types : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __DATA.__data : content changed
++  Symbols:   18585
++  CStrings:  3745
 Symbols:
 + -[NPKIDVRemoteDeviceProtoPrearmStatusUpdate hasReason]
 + -[NPKIDVRemoteDeviceProtoPrearmStatusUpdate reason]
@@ -114,11 +57,6 @@ Symbols:
 + ___block_descriptor_40_e8_32bs_e23_v28?0B8q12"NSError"20ls32l8
 + ___block_descriptor_41_e8_32bs_e28_v24?0"NSData"8"NSError"16ls32l8
 + ___block_descriptor_56_e8_32s40bs_e20_v24?0q8"NSError"16ls40l8s32l8
-+ _objc_msgSend$_isCheckingProvisioningRequirementsSupported
-+ _objc_msgSend$base64EncodedStringWithOptions:
-+ _objc_msgSend$fetchRemoteBiometricSuspensionReasonForCredentialType:completion:
-+ _objc_msgSend$hasReason
-+ _objc_msgSend$reason
 - GCC_except_table154
 - GCC_except_table155
 - GCC_except_table190
@@ -154,5 +92,4 @@ CStrings:
 - "barcodePaymentTransactionRemoteExtensionFailed"
 - "barcodePaymentTransactionRemoteExtensionSucceeded"
 - "unlockIPhone"
-
 ```

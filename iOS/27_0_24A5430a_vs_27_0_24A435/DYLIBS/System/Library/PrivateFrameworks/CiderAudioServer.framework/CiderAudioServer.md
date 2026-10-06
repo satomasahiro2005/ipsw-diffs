@@ -2,22 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/CiderAudioServer.framework/CiderAudioServer`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x33258` | `0x33278` | **`+0x20`** |
+
+### Other Changes
+
 ```diff
 
- 64.0.0.0.0
--  __TEXT.__text: 0x33258
-+  __TEXT.__text: 0x33278
-   __TEXT.__objc_methlist: 0x524
-   __TEXT.__const: 0x914
-   __TEXT.__gcc_except_tab: 0x5794
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 433
 -  Symbols:   189
-+  Symbols:   993
-   CStrings:  180
- 
++  Symbols:   970
 Symbols:
 + +[CiderService IsSimulatedDevice:]
 + +[CiderService ServiceIsRunning]
@@ -800,36 +796,13 @@ Symbols:
 + ___block_descriptor_48_e5_v8?0l
 + ___block_literal_global
 + ___clang_call_terminate
-+ _objc_msgSend$UTF8String
-+ _objc_msgSend$activate
-+ _objc_msgSend$bytes
-+ _objc_msgSend$errorWithDomain:code:userInfo:
-+ _objc_msgSend$getPropertyDataSize:withInAddress:withInQualifierData:withReply:
-+ _objc_msgSend$getPropertyData_Arithmetic:withInAddress:withInQualifierData:withReply:
-+ _objc_msgSend$getPropertyData_Boolean:withInAddress:
-+ _objc_msgSend$getPropertyData_NSHelper:withInAddress:withClass:
-+ _objc_msgSend$initWithMachServiceName:
-+ _objc_msgSend$interfaceWithProtocol:
-+ _objc_msgSend$invalidate
-+ _objc_msgSend$length
-+ _objc_msgSend$numberWithUnsignedInt:
-+ _objc_msgSend$resume
-+ _objc_msgSend$setDelegate:
-+ _objc_msgSend$setExportedInterface:
-+ _objc_msgSend$setExportedObject:
-+ _objc_msgSend$setInterruptionHandler:
-+ _objc_msgSend$setInvalidationHandler:
-+ _objc_msgSend$setPropertyDataPrivileged_Arithmetic:withInAddress:withInQualifierData:withInData:withReply:
-+ _objc_msgSend$setPropertyDataPrivileged_NSHelper:withInAddress:withInData:
-+ _objc_msgSend$stringWithCString:encoding:
-+ _objc_msgSend$unsignedIntValue
 Functions:
-~ sub_257562c34 -> -[CiderObject connectADSDevices:withReply:] : 2680 -> 2684
-~ sub_25756a474 -> __ZN10applesauce2CF10convert_asINSt3__16vectorINS0_13DictionaryRefENS2_9allocatorIS4_EEEELi0EEENS2_8optionalIT_EEPK9__CFArray : 480 -> 484
-~ sub_25756af5c -> __ZNSt3__16vectorIjNS_9allocatorIjEEE24__emplace_back_slow_pathIJjEEEPjDpOT_ : 184 -> 176
-~ sub_257582d7c -> __ZN12_GLOBAL__N_117TransformMacAddrsERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE : 1720 -> 1716
-~ sub_25758652c -> __ZNSt3__16vectorINS_9sub_matchIPKcEENS_9allocatorIS4_EEE6assignEmRKS4_ : 340 -> 336
-~ sub_25758c274 -> __ZNKSt3__111basic_regexIcNS_12regex_traitsIcEEE16__match_at_startINS_9allocatorINS_9sub_matchIPKcEEEEEEbS8_S8_RNS_13match_resultsIS8_T_EENS_15regex_constants15match_flag_typeEb : 4084 -> 4116
-~ sub_25758d268 -> __ZNSt3__15dequeINS_7__stateIcEENS_9allocatorIS2_EEE9push_backEOS2_ : 788 -> 792
-~ sub_25758d63c -> __ZNSt3__114__split_bufferIPNS_7__stateIcEERNS_9allocatorIS3_EEE12emplace_backIJS3_EEEvDpOT_ : 248 -> 252
+~ sub_25742cc34 -> -[CiderObject connectADSDevices:withReply:] : 2680 -> 2684
+~ sub_257434474 -> __ZN10applesauce2CF10convert_asINSt3__16vectorINS0_13DictionaryRefENS2_9allocatorIS4_EEEELi0EEENS2_8optionalIT_EEPK9__CFArray : 480 -> 484
+~ sub_257434f5c -> __ZNSt3__16vectorIjNS_9allocatorIjEEE24__emplace_back_slow_pathIJjEEEPjDpOT_ : 184 -> 176
+~ sub_25744cd7c -> __ZN12_GLOBAL__N_117TransformMacAddrsERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE : 1720 -> 1716
+~ sub_25745052c -> __ZNSt3__16vectorINS_9sub_matchIPKcEENS_9allocatorIS4_EEE6assignEmRKS4_ : 340 -> 336
+~ sub_257456274 -> __ZNKSt3__111basic_regexIcNS_12regex_traitsIcEEE16__match_at_startINS_9allocatorINS_9sub_matchIPKcEEEEEEbS8_S8_RNS_13match_resultsIS8_T_EENS_15regex_constants15match_flag_typeEb : 4084 -> 4116
+~ sub_257457268 -> __ZNSt3__15dequeINS_7__stateIcEENS_9allocatorIS2_EEE9push_backEOS2_ : 788 -> 792
+~ sub_25745763c -> __ZNSt3__114__split_bufferIPNS_7__stateIcEERNS_9allocatorIS3_EEE12emplace_backIJS3_EEEvDpOT_ : 248 -> 252
 ```

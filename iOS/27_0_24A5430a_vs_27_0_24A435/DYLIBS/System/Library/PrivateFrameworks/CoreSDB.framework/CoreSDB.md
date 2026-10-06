@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CoreSDB.framework/CoreSDB`
 
-```diff
+### Section Size Changes
 
- 211.100.3.0.0
--  __TEXT.__text: 0xe7d4
-+  __TEXT.__text: 0xe7d8
-   __TEXT.__objc_methlist: 0xec
-   __TEXT.__const: 0x128
-   __TEXT.__cstring: 0x135e
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe7d4` | `0xe7d8` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_25d59ee30 -> sub_25e297e30 : 728 -> 732
+~ sub_25d46de30 -> sub_25e17be30 : 728 -> 732
 ```

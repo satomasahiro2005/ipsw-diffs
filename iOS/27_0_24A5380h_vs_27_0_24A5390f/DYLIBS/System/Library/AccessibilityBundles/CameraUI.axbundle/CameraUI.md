@@ -2,65 +2,29 @@
 
 > `/System/Library/AccessibilityBundles/CameraUI.axbundle/CameraUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH.__objc_data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x18344` | `0x18528` | **`+0x1e4`** |
+| `__AUTH_CONST.__cfstring` | `0x4560` | `0x45a0` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x3443` | `0x3474` | **`+0x31`** |
+| `__TEXT.__objc_methlist` | `0x267c` | `0x26a4` | **`+0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1518` | `0x1530` | **`+0x18`** |
+
+### Other Changes
 
 ```diff
 
 -3042.0.0.0.0
--  __TEXT.__text: 0x18344
--  __TEXT.__objc_methlist: 0x267c
 +3045.0.0.0.0
-+  __TEXT.__text: 0x18528
-+  __TEXT.__objc_methlist: 0x26a4
-   __TEXT.__const: 0x160
-   __TEXT.__gcc_except_tab: 0x378
--  __TEXT.__cstring: 0x3443
-+  __TEXT.__cstring: 0x3474
-   __TEXT.__oslogstring: 0x381
-   __TEXT.__unwind_info: 0x900
-   __TEXT.__objc_stubs: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x3c0
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1518
-+  __DATA_CONST.__objc_selrefs: 0x1530
-   __DATA_CONST.__objc_superrefs: 0x158
-   __DATA_CONST.__objc_arraydata: 0x48
-   __DATA_CONST.__got: 0x2c0
-   __AUTH_CONST.__const: 0x580
--  __AUTH_CONST.__cfstring: 0x4560
-+  __AUTH_CONST.__cfstring: 0x45a0
-   __AUTH_CONST.__objc_const: 0x5310
-   __AUTH_CONST.__objc_intobj: 0xc0
-   __AUTH_CONST.__objc_arrayobj: 0x18
-
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 818
--  Symbols:   2390
+-  Symbols:   1830
 -  CStrings:  614
 +  Functions: 822
-+  Symbols:   2400
++  Symbols:   1837
 +  CStrings:  616
- 
 Symbols:
 + -[CAMCaptureEngineAccessibility _accessibilityHasActiveRecording]
 + -[CAMFullscreenViewfinderAccessibility axLastSuggestionButton]
@@ -82,9 +46,6 @@ Symbols:
 + ___CAMFullscreenViewfinderAccessibility__axLastSuggestionButton
 + ___UIAccessibilityGetAssociatedLong
 + ___UIAccessibilitySetAssociatedLong
-+ _objc_msgSend$_accessibilityHasActiveRecording
-+ _objc_msgSend$axLastSuggestionButton
-+ _objc_msgSend$setAxLastSuggestionButton:
 - GCC_except_table472
 - GCC_except_table489
 - GCC_except_table492

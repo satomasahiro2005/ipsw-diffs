@@ -2,33 +2,30 @@
 
 > `/usr/lib/system/introspection/libdispatch.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_selrefs`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x43378` | `0x433c8` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0xe88` | `0xe80` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__AUTH.__data`
+- `__AUTH_CONST.__auth_got`
 - `__AUTH_CONST.__const`
 - `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__auth_got`
-- `__AUTH.__data`
 - `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_selrefs`
 - `__DATA_DIRTY.__data`
+- `__DATA_DIRTY.__objc_data`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
 
-```diff
+### Other Changes
 
- 1605.0.2.0.0
--  __TEXT.__text: 0x43378
-+  __TEXT.__text: 0x433c8
-   __TEXT.__objc_methlist: 0x684
-   __TEXT.__const: 0x820
-   __TEXT.__cstring: 0x6483
--  __TEXT.__unwind_info: 0xe88
-+  __TEXT.__unwind_info: 0xe80
-   __TEXT.__eh_frame: 0xb8
-   __TEXT.__objc_stubs: 0x1e0
-   __TEXT.__auth_stubs: 0xd20
+```text
 Functions:
 ~ __dispatch_workloop_invoke : 4228 -> 4232
 ~ __dispatch_root_queue_push_override_stealer : 400 -> 384

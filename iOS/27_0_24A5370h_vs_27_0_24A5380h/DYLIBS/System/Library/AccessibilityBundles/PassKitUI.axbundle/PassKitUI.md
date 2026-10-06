@@ -2,72 +2,39 @@
 
 > `/System/Library/AccessibilityBundles/PassKitUI.axbundle/PassKitUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x13c10` | `0x16240` | **`+0x2630`** |
+| `__DATA_DIRTY.__objc_data` | `0x3d90` | `0x4650` | **`+0x8c0`** |
+| `__AUTH.__objc_data` | `0x910` | `0x230` | **`-0x6e0`** |
+| `__AUTH_CONST.__cfstring` | `0x5580` | `0x5900` | **`+0x380`** |
+| `__AUTH_CONST.__objc_const` | `0x8118` | `0x8478` | **`+0x360`** |
+| `__TEXT.__cstring` | `0x4177` | `0x4417` | **`+0x2a0`** |
+| `__TEXT.__objc_methlist` | `0x2b4c` | `0x2d8c` | **`+0x240`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb18` | `0xbf0` | **`+0xd8`** |
+| `__DATA_CONST.__const` | `0x580` | `0x640` | **`+0xc0`** |
+| `__TEXT.__unwind_info` | `0x868` | `0x8f0` | **`+0x88`** |
+| `__AUTH_CONST.__const` | `0x2a0` | `0x320` | **`+0x80`** |
+| `__DATA_CONST.__objc_classlist` | `0x710` | `0x740` | **`+0x30`** |
+| `__DATA_CONST.__objc_superrefs` | `0x230` | `0x250` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x228` | `0x238` | **`+0x10`** |
+| `__TEXT.__const` | `0x20` | `0x28` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x13c10
--  __TEXT.__objc_methlist: 0x2b4c
--  __TEXT.__const: 0x20
-+  __TEXT.__text: 0x16240
-+  __TEXT.__objc_methlist: 0x2d8c
-+  __TEXT.__const: 0x28
-   __TEXT.__gcc_except_tab: 0x258
--  __TEXT.__cstring: 0x4177
-+  __TEXT.__cstring: 0x4417
-   __TEXT.__ustring: 0x4
--  __TEXT.__unwind_info: 0x868
-+  __TEXT.__unwind_info: 0x8f0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x580
--  __DATA_CONST.__objc_classlist: 0x710
-+  __DATA_CONST.__const: 0x640
-+  __DATA_CONST.__objc_classlist: 0x740
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb18
-+  __DATA_CONST.__objc_selrefs: 0xbf0
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x230
--  __DATA_CONST.__got: 0x228
--  __AUTH_CONST.__const: 0x2a0
--  __AUTH_CONST.__cfstring: 0x5580
--  __AUTH_CONST.__objc_const: 0x8118
-+  __DATA_CONST.__objc_superrefs: 0x250
-+  __DATA_CONST.__got: 0x238
-+  __AUTH_CONST.__const: 0x320
-+  __AUTH_CONST.__cfstring: 0x5900
-+  __AUTH_CONST.__objc_const: 0x8478
-   __AUTH_CONST.__objc_intobj: 0x18
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x910
-+  __AUTH.__objc_data: 0x230
-   __DATA.__objc_ivar: 0x10
-   __DATA.__data: 0xd8
-   __DATA.__bss: 0x11
--  __DATA_DIRTY.__objc_data: 0x3d90
-+  __DATA_DIRTY.__objc_data: 0x4650
-   __DATA_DIRTY.__bss: 0x8
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+-3039.1.0.0.0
++3042.0.0.0.0
 
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 766
--  Symbols:   3170
--  CStrings:  1415
+-  Symbols:   2137
+-  CStrings:  733
 +  Functions: 817
-+  Symbols:   3336
-+  CStrings:  1472
- 
-Sections:
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __DATA.__data : content changed
++  Symbols:   2226
++  CStrings:  762
 Symbols:
 + +[PKEditUserPassFieldCellAccessibility _accessibilityPerformValidations:]
 + +[PKEditUserPassFieldCellAccessibility(SafeCategory) safeCategoryBaseClass]
@@ -171,29 +138,6 @@ Symbols:
 + ___block_descriptor_48_e8_32s40s_e5_v8?0ls32l8s40l8
 + ___block_descriptor_56_e8_32s40s48s_e5_v8?0ls32l8s40l8s48l8
 + ___block_descriptor_72_e8_32s40s48s_e5_v8?0ls32l8s40l8s48l8
-+ _objc_msgSend$_axBucketView
-+ _objc_msgSend$_axBucketView:canAcceptField:
-+ _objc_msgSend$_axCanAddToBucketView:
-+ _objc_msgSend$_axCollectBucketViewsInView:into:
-+ _objc_msgSend$_axEditUserPassController
-+ _objc_msgSend$_axIndexOfFieldKey:inBucket:
-+ _objc_msgSend$_axIsEmptyAddableBucket
-+ _objc_msgSend$_axMoveDescriptorForward:
-+ _objc_msgSend$_axOrderedBucketViews
-+ _objc_msgSend$_axPerformMoveForward:
-+ _objc_msgSend$_axShouldActAsAddButton
-+ _objc_msgSend$_axUpdateLogoSymbolAccessibility
-+ _objc_msgSend$_insertField:afterField:animated:
-+ _objc_msgSend$convertRect:toView:
-+ _objc_msgSend$null
-+ _objc_msgSend$passView:tappedBucketView:tappedFieldView:fieldViewBeforeTap:fieldViewAfterTap:
-+ _objc_msgSend$passView:tappedDeleteForFieldView:
-+ _objc_msgSend$passViewTapped:
-+ _objc_msgSend$safeSwiftValueForKey:
-+ _objc_msgSend$setValue:forKey:
-+ _objc_msgSend$sortUsingComparator:
-+ _objc_msgSend$unsignedIntegerValue
-+ _objc_msgSend$validateClass:hasSwiftField:withSwiftType:
 - GCC_except_table445
 - GCC_except_table448
 - GCC_except_table452
@@ -207,7 +151,6 @@ Symbols:
 - GCC_except_table650
 - GCC_except_table706
 - ___58-[PKPassGroupViewAccessibility accessibilityPerformEscape]_block_invoke_2
-- _objc_msgSend$_groupViewTapped
 CStrings:
 + "PKEditUserPassFieldCell"
 + "PKEditUserPassFieldCellAccessibility"
@@ -244,5 +187,4 @@ CStrings:
 - "_groupViewTapped"
 - "_modalGroupIndex"
 - "_modallyPresentedGroupView"
-
 ```

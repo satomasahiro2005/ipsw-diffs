@@ -2,23 +2,25 @@
 
 > `/usr/lib/swift/libswiftRemoteMirror.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xdc9a0` | `0xdc5f4` | **`-0x3ac`** |
+| `__TEXT.__unwind_info` | `0x1500` | `0x1510` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__AUTH_CONST.__const`
+- `__DATA_CONST.__const`
+- `__TEXT.__init_offsets`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xdc9a0
-+  __TEXT.__text: 0xdc5f4
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__cstring: 0x7105
-   __TEXT.__const: 0x7f8
--  __TEXT.__unwind_info: 0x1500
-+  __TEXT.__unwind_info: 0x1510
-   __TEXT.__auth_stubs: 0x490
-   __DATA_CONST.__const: 0xe68
-   __DATA_CONST.__weak_got: 0x8
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__cstring : content changed
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__const : content changed
+-6.4.0.23.102
++6.4.0.25.5
 Functions:
 ~ __ZN7__swift9__runtime4llvm7hashing6detail23hash_combine_range_implIKcEENSt3__19enable_ifIXsr16is_hashable_dataIT_EE5valueENS1_9hash_codeEE4typeEPS8_SC_ : 920 -> 908
 ~ __ZN5swift6remote14MetadataReaderINS_8ExternalINS_15WithObjCInteropINS_13RuntimeTargetILj8EEEEEEENS_10reflection14TypeRefBuilderEE30buildContextDescriptorManglingENS0_9RemoteRefIKNS_23TargetContextDescriptorIS7_EEEERNS_8Demangle9__runtime9DemanglerEi : 3548 -> 3528
@@ -112,5 +114,4 @@ Functions:
 ~ __ZNSt3__16vectorIN5swift10reflection13FieldTypeInfoENS_9allocatorIS3_EEE24__emplace_back_slow_pathIJS3_EEEPS3_DpOT_ : 416 -> 400
 ~ __ZNSt3__16vectorIN5swift10reflection13FieldTypeInfoENS_9allocatorIS3_EEE24__emplace_back_slow_pathIJRKS3_EEEPS3_DpOT_ : 448 -> 440
 ~ __ZNSt3__16vectorIN5swift10reflection12EnumCaseInfoENS_9allocatorIS3_EEE24__emplace_back_slow_pathIJS3_EEEPS3_DpOT_ : 376 -> 360
-
 ```

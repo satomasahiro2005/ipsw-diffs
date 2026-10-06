@@ -2,16 +2,15 @@
 
 > `/usr/lib/liblangid.dylib`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0xab0
-+  __TEXT.__text: 0xaac
-   __TEXT.__cstring: 0x173
-   __TEXT.__unwind_info: 0xa0
-   __TEXT.__auth_stubs: 0x0
-Sections:
-~ __TEXT.__unwind_info : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xab0` | `0xaac` | **`-0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _langid_consume_string : 384 -> 380
-
 ```

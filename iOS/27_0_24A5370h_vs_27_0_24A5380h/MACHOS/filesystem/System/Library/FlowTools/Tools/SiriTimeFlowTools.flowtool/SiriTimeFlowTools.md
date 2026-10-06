@@ -2,82 +2,53 @@
 
 > `/System/Library/FlowTools/Tools/SiriTimeFlowTools.flowtool/SiriTimeFlowTools`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4b6fc` | `0x4d5d8` | **`+0x1edc`** |
+| `__TEXT.__oslogstring` | `0xaa9` | `0xe70` | **`+0x3c7`** |
+| `__TEXT.__cstring` | `0x6e6` | `0x776` | **`+0x90`** |
+| `__TEXT.__eh_frame` | `0x2500` | `0x2570` | **`+0x70`** |
+| `__TEXT.__auth_stubs` | `0x12f0` | `0x1330` | **`+0x40`** |
+| `__TEXT.__const` | `0x1318` | `0x1348` | **`+0x30`** |
+| `__DATA_CONST.__auth_got` | `0x980` | `0x9a0` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0xb98` | `0xbb8` | **`+0x20`** |
+| `__TEXT.__swift5_typeref` | `0x638` | `0x62e` | **`-0xa`** |
+| `__DATA.__data` | `0x758` | `0x750` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_classlist`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x4b6fc
--  __TEXT.__auth_stubs: 0x12f0
-+  __TEXT.__text: 0x4d5d8
-+  __TEXT.__auth_stubs: 0x1330
-   __TEXT.__objc_stubs: 0x60
--  __TEXT.__const: 0x1318
-+  __TEXT.__const: 0x1348
-   __TEXT.__objc_classname: 0x131
-   __TEXT.__constg_swiftt: 0x394
--  __TEXT.__swift5_typeref: 0x638
-+  __TEXT.__swift5_typeref: 0x62e
-   __TEXT.__swift5_fieldmd: 0x3f8
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_reflstr: 0x279
-   __TEXT.__swift5_assocty: 0x90
-   __TEXT.__swift5_proto: 0x9c
-   __TEXT.__swift5_types: 0x58
--  __TEXT.__cstring: 0x6e6
--  __TEXT.__oslogstring: 0xaa9
-+  __TEXT.__cstring: 0x776
-+  __TEXT.__oslogstring: 0xe70
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__objc_methname: 0x74
+-3600.26.5.0.0
++3600.26.8.0.0
 
-   __TEXT.__swift_as_ret: 0x134
-   __TEXT.__swift_as_cont: 0x1e0
-   __TEXT.__swift5_capture: 0xb4
--  __TEXT.__unwind_info: 0xb98
--  __TEXT.__eh_frame: 0x2500
-+  __TEXT.__unwind_info: 0xbb8
-+  __TEXT.__eh_frame: 0x2570
-   __DATA_CONST.__const: 0xb38
-   __DATA_CONST.__objc_classlist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x980
-+  __DATA_CONST.__auth_got: 0x9a0
-   __DATA_CONST.__got: 0x2a8
-   __DATA_CONST.__auth_ptr: 0x368
-   __DATA.__objc_const: 0x428
-   __DATA.__objc_selrefs: 0x18
--  __DATA.__data: 0x758
-+  __DATA.__data: 0x750
-   __DATA.__bss: 0x1130
-   __DATA.__common: 0x90
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 786
--  Symbols:   5886
+-  Symbols:   2165
 -  CStrings:  110
 +  Functions: 793
-+  Symbols:   5921
++  Symbols:   2174
 +  CStrings:  127
- 
-Sections:
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
 Symbols:
 + _$s10Foundation23LocalizedStringResourceV17SiriTimeFlowToolsE21doYouWantToStopAlarmsyACSiFZ
 + _$s10Foundation23LocalizedStringResourceV17SiriTimeFlowToolsE23doYouWantToSnoozeAlarmsyACSiFZ
@@ -222,5 +193,4 @@ CStrings:
 + "siriTimeOriginatingDeviceIDSIdentifier: using remoteExecutionContext (%s)"
 - "All firing timers are remote"
 - "Skipping non-local: %s"
-
 ```

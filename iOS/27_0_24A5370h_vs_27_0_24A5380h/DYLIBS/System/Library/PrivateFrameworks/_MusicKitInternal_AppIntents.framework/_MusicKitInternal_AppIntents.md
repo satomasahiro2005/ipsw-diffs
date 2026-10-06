@@ -2,107 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/_MusicKitInternal_AppIntents.framework/_MusicKitInternal_AppIntents`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x927fc` | `0xa43f8` | **`+0x11bfc`** |
+| `__DATA.__bss` | `0xd810` | `0xed90` | **`+0x1580`** |
+| `__TEXT.__const` | `0xa8d2` | `0xb5c2` | **`+0xcf0`** |
+| `__AUTH_CONST.__const` | `0x4be0` | `0x51a8` | **`+0x5c8`** |
+| `__TEXT.__swift5_typeref` | `0x2eae` | `0x332e` | **`+0x480`** |
+| `__TEXT.__oslogstring` | `0x1a77` | `0x1ee7` | **`+0x470`** |
+| `__DATA.__data` | `0x1890` | `0x1bb8` | **`+0x328`** |
+| `__TEXT.__swift5_fieldmd` | `0x15b8` | `0x1840` | **`+0x288`** |
+| `__TEXT.__unwind_info` | `0x3048` | `0x32c8` | **`+0x280`** |
+| `__DATA_DIRTY.__bss` | `0x4a80` | `0x4c80` | **`+0x200`** |
+| `__TEXT.__cstring` | `0x1959` | `0x1af9` | **`+0x1a0`** |
+| `__TEXT.__constg_swiftt` | `0x1170` | `0x12f4` | **`+0x184`** |
+| `__AUTH_CONST.__auth_got` | `0x1098` | `0x1210` | **`+0x178`** |
+| `__AUTH.__data` | `0x328` | `0x468` | **`+0x140`** |
+| `__AUTH_CONST.__objc_const` | `0x48` | `0x120` | **`+0xd8`** |
+| `__TEXT.__swift5_reflstr` | `0x18bb` | `0x197b` | **`+0xc0`** |
+| `__TEXT.__swift5_proto` | `0x98c` | `0xa48` | **`+0xbc`** |
+| `__DATA_DIRTY.__data` | `0xeb8` | `0xf18` | **`+0x60`** |
+| `__DATA_CONST.__objc_selrefs` | `0xf0` | `0x138` | **`+0x48`** |
+| `__TEXT.__swift5_types` | `0x190` | `0x1bc` | **`+0x2c`** |
+| `__TEXT.__swift5_capture` | `0x8a4` | `0x8c4` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x484` | `0x494` | **`+0x10`** |
+| `__DATA.__common` | `0x20` | `0x28` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x8` | `0x10` | **`+0x8`** |
+| `__TEXT.__eh_frame` | `0x5b6c` | `0x5b74` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x300` | `0x304` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x927fc
-+  __TEXT.__text: 0xa43f8
-   __TEXT.__objc_methlist: 0x14
--  __TEXT.__const: 0xa8d2
--  __TEXT.__cstring: 0x1959
--  __TEXT.__swift5_typeref: 0x2eae
--  __TEXT.__swift5_reflstr: 0x18bb
-+  __TEXT.__const: 0xb5c2
-+  __TEXT.__cstring: 0x1af9
-+  __TEXT.__swift5_typeref: 0x332e
-+  __TEXT.__swift5_reflstr: 0x197b
-   __TEXT.__swift5_assocty: 0xe18
--  __TEXT.__constg_swiftt: 0x1170
--  __TEXT.__swift5_fieldmd: 0x15b8
--  __TEXT.__oslogstring: 0x1a77
-+  __TEXT.__constg_swiftt: 0x12f4
-+  __TEXT.__swift5_fieldmd: 0x1840
-+  __TEXT.__oslogstring: 0x1ee7
-   __TEXT.__swift5_protos: 0x24
--  __TEXT.__swift5_proto: 0x98c
--  __TEXT.__swift5_types: 0x190
-+  __TEXT.__swift5_proto: 0xa48
-+  __TEXT.__swift5_types: 0x1bc
-   __TEXT.__swift_as_entry: 0x2ec
--  __TEXT.__swift_as_ret: 0x300
--  __TEXT.__swift_as_cont: 0x484
--  __TEXT.__swift5_capture: 0x8a4
-+  __TEXT.__swift_as_ret: 0x304
-+  __TEXT.__swift_as_cont: 0x494
-+  __TEXT.__swift5_capture: 0x8c4
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x3048
--  __TEXT.__eh_frame: 0x5b6c
-+  __TEXT.__unwind_info: 0x32c8
-+  __TEXT.__eh_frame: 0x5b74
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x470
--  __DATA_CONST.__objc_classlist: 0x8
-+  __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xf0
-+  __DATA_CONST.__objc_selrefs: 0x138
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x4be0
--  __AUTH_CONST.__objc_const: 0x48
--  __AUTH_CONST.__auth_got: 0x1098
-+  __AUTH_CONST.__const: 0x51a8
-+  __AUTH_CONST.__objc_const: 0x120
-+  __AUTH_CONST.__auth_got: 0x1210
-   __AUTH.__objc_data: 0xb0
--  __AUTH.__data: 0x328
--  __DATA.__data: 0x1890
--  __DATA.__bss: 0xd810
--  __DATA.__common: 0x20
--  __DATA_DIRTY.__data: 0xeb8
--  __DATA_DIRTY.__bss: 0x4a80
-+  __AUTH.__data: 0x468
-+  __DATA.__data: 0x1bb8
-+  __DATA.__bss: 0xed90
-+  __DATA.__common: 0x28
-+  __DATA_DIRTY.__data: 0xf18
-+  __DATA_DIRTY.__bss: 0x4c80
-   __DATA_DIRTY.__common: 0x18
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/CoreTransferable.framework/CoreTransferable
+-4026.110.78.1.0
++4026.100.85.0.0
 
-   - /System/Library/Frameworks/MusicKit.framework/MusicKit
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/Frameworks/_MediaIntents_AppIntents.framework/_MediaIntents_AppIntents
 +  - /System/Library/PrivateFrameworks/CollectionsInternal.framework/CollectionsInternal
 +  - /System/Library/PrivateFrameworks/LinkMetadata.framework/LinkMetadata
-   - /System/Library/PrivateFrameworks/MediaPlaybackCore.framework/MediaPlaybackCore
-   - /System/Library/PrivateFrameworks/MediaRemote.framework/MediaRemote
-   - /System/Library/PrivateFrameworks/MusicKitInternal.framework/MusicKitInternal
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4946
--  Symbols:   5165
+-  Symbols:   1772
 -  CStrings:  320
 +  Functions: 5377
-+  Symbols:   5717
++  Symbols:   2071
 +  CStrings:  347
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __AUTH.__objc_data : content changed
 Symbols:
 + _LNEntityIdentifierInvalidSentinel
 + _OBJC_CLASS_$_NSCachedURLResponse
@@ -334,15 +280,6 @@ Symbols:
 + _associated conformance 28_MusicKitInternal_AppIntents0A35ItemSiriUnionCachableRepresentation010_9024864C0K21F45BD335E94EBED32BC6DLLO33AlgorithmicRadioStationCodingKeysOSHAASQ
 + _associated conformance 28_MusicKitInternal_AppIntents0A35ItemSiriUnionCachableRepresentation010_9024864C0K21F45BD335E94EBED32BC6DLLO33AlgorithmicRadioStationCodingKeysOs0T3KeyAAs23CustomStringConvertible
 + _associated conformance 28_MusicKitInternal_AppIntents0A35ItemSiriUnionCachableRepresentation010_9024864C0K21F45BD335E94EBED32BC6DLLO33AlgorithmicRadioStationCodingKeysOs0T3KeyAAs28CustomDebugStringConvertible
-+ _objc_msgSend$URLsForDirectory:inDomains:
-+ _objc_msgSend$cachedResponseForRequest:
-+ _objc_msgSend$data
-+ _objc_msgSend$defaultManager
-+ _objc_msgSend$initWithResponse:data:userInfo:storagePolicy:
-+ _objc_msgSend$initWithURL:statusCode:HTTPVersion:headerFields:
-+ _objc_msgSend$removeCachedResponseForRequest:
-+ _objc_msgSend$storeCachedResponse:forRequest:
-+ _objc_msgSend$userInfo
 + _swift_getTupleTypeMetadata
 + _swift_getTupleTypeMetadata2
 + _swift_isUniquelyReferenced_native
@@ -444,5 +381,4 @@ CStrings:
 + "system.searchInApp"
 - "%{public}s query for %{public}ld identifier(s) got %{public}ld item(s)... returning %{public}ld entities."
 - "%{public}s query for %{public}ld identifier(s) threw an error: %{public}@. Returning an empty list of entities."
-
 ```

@@ -2,17 +2,16 @@
 
 > `/usr/lib/system/libsystem_dnssd.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6290` | `0x6270` | **`-0x20`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x6290
-+  __TEXT.__text: 0x6270
-   __TEXT.__const: 0x142
-   __TEXT.__cstring: 0x1a8e
-   __TEXT.__unwind_info: 0x1b8
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__const : content changed
-
+-3085.0.0.0.1
++3089.0.0.0.1
 ```

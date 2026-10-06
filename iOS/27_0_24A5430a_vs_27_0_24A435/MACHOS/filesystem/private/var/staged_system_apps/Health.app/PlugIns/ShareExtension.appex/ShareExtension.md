@@ -2,9 +2,11 @@
 
 > `/private/var/staged_system_apps/Health.app/PlugIns/ShareExtension.appex/ShareExtension`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```text
 Functions:

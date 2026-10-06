@@ -2,89 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/MediaFoundation.framework/MediaFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x262ac` | `0x28ed0` | **`+0x2c24`** |
+| `__TEXT.__oslogstring` | `—` | `0x26a` | **`+0x26a`** |
+| `__AUTH_CONST.__const` | `0x2dc8` | `0x2f38` | **`+0x170`** |
+| `__TEXT.__eh_frame` | `0x18a8` | `0x1990` | **`+0xe8`** |
+| `__AUTH_CONST.__auth_got` | `0x840` | `0x8f8` | **`+0xb8`** |
+| `__TEXT.__unwind_info` | `0x10c8` | `0x1168` | **`+0xa0`** |
+| `__TEXT.__swift5_capture` | `0x1f8` | `0x278` | **`+0x80`** |
+| `__DATA.__data` | `0x4b8` | `0x518` | **`+0x60`** |
+| `__TEXT.__cstring` | `0x63b` | `0x69a` | **`+0x5f`** |
+| `__TEXT.__const` | `0x4b48` | `0x4b78` | **`+0x30`** |
+| `__TEXT.__swift5_reflstr` | `0xeac` | `0xedc` | **`+0x30`** |
+| `__DATA.__common` | `—` | `0x18` | **`+0x18`** |
+| `__TEXT.__swift5_fieldmd` | `0x13d0` | `0x13e8` | **`+0x18`** |
+| `__TEXT.__swift5_typeref` | `0x1097` | `0x10a7` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0xd8` | `0xe0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x262ac
--  __TEXT.__const: 0x4b48
--  __TEXT.__cstring: 0x63b
--  __TEXT.__swift5_typeref: 0x1097
--  __TEXT.__swift5_capture: 0x1f8
--  __TEXT.__swift5_reflstr: 0xeac
-+  __TEXT.__text: 0x28ed0
-+  __TEXT.__const: 0x4b78
-+  __TEXT.__cstring: 0x69a
-+  __TEXT.__swift5_typeref: 0x10a7
-+  __TEXT.__swift5_capture: 0x278
-+  __TEXT.__swift5_reflstr: 0xedc
-   __TEXT.__swift5_assocty: 0x218
--  __TEXT.__swift5_fieldmd: 0x13d0
-+  __TEXT.__swift5_fieldmd: 0x13e8
-   __TEXT.__constg_swiftt: 0x10f8
-   __TEXT.__swift5_builtin: 0x1cc
-   __TEXT.__swift5_mpenum: 0x54
+-4026.100.63.0.0
++4026.100.75.0.0
 
-   __TEXT.__swift5_proto: 0x1d0
-   __TEXT.__swift5_types: 0x120
-   __TEXT.__swift5_types2: 0x38
--  __TEXT.__unwind_info: 0x10c8
--  __TEXT.__eh_frame: 0x18a8
-+  __TEXT.__oslogstring: 0x26a
-+  __TEXT.__unwind_info: 0x1168
-+  __TEXT.__eh_frame: 0x1990
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xd8
-+  __DATA_CONST.__const: 0xe0
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x550
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2dc8
-+  __AUTH_CONST.__const: 0x2f38
-   __AUTH_CONST.__objc_const: 0x248
--  __AUTH_CONST.__auth_got: 0x840
-+  __AUTH_CONST.__auth_got: 0x8f8
-   __AUTH.__data: 0xd0
--  __DATA.__data: 0x4b8
-+  __DATA.__data: 0x518
-   __DATA.__bss: 0x2e10
-+  __DATA.__common: 0x18
-   __DATA_DIRTY.__data: 0x898
-   __DATA_DIRTY.__common: 0x8
-   __DATA_DIRTY.__bss: 0x180
-
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
 +  - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1738
--  Symbols:   1326
+-  Symbols:   738
 -  CStrings:  53
 +  Functions: 1812
-+  Symbols:   1421
++  Symbols:   757
 +  CStrings:  65
- 
-Sections:
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__data : content changed
-~ __DATA_DIRTY.__data : content changed
 Symbols:
 + _OBJC_CLASS_$_NSObject
 + ___swift_allocate_value_buffer
@@ -136,5 +88,4 @@ CStrings:
 + "Unable to set busy timeout: %{public}@."
 + "While closing connection, unable to run PRAGMA optimize: %{public}@."
 + "com.apple.MediaFoundation"
-
 ```

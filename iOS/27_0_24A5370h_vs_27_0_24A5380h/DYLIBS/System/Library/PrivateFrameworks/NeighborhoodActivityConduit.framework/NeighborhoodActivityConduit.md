@@ -2,79 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/NeighborhoodActivityConduit.framework/NeighborhoodActivityConduit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6befc` | `0x6c2c0` | **`+0x3c4`** |
+| `__TEXT.__swift5_fieldmd` | `0x1e0c` | `0x1e3c` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x638` | `0x658` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0xf84` | `0xfa4` | **`+0x20`** |
+| `__AUTH.__data` | `0x2750` | `0x2760` | **`+0x10`** |
+| `__TEXT.__cstring` | `0x1cc5` | `0x1cd5` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x2bc8` | `0x2bb8` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x6befc
-+  __TEXT.__text: 0x6c2c0
-   __TEXT.__const: 0xc810
-   __TEXT.__swift5_typeref: 0x1898
--  __TEXT.__cstring: 0x1cc5
--  __TEXT.__swift5_reflstr: 0xf84
-+  __TEXT.__cstring: 0x1cd5
-+  __TEXT.__swift5_reflstr: 0xfa4
-   __TEXT.__swift5_assocty: 0x360
-   __TEXT.__constg_swiftt: 0x1638
--  __TEXT.__swift5_fieldmd: 0x1e0c
-+  __TEXT.__swift5_fieldmd: 0x1e3c
-   __TEXT.__swift5_proto: 0xba0
-   __TEXT.__swift5_types: 0x224
-   __TEXT.__swift5_protos: 0x4
+-1612.100.3.2.1
++1614.100.3.2.1
 
-   __TEXT.__swift_as_ret: 0x24
-   __TEXT.__swift_as_cont: 0x48
-   __TEXT.__oslogstring: 0x28
--  __TEXT.__unwind_info: 0x2bc8
-+  __TEXT.__unwind_info: 0x2bb8
-   __TEXT.__eh_frame: 0x31a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x638
-+  __DATA_CONST.__const: 0x658
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x18
-
-   __AUTH_CONST.__const: 0x2160
-   __AUTH_CONST.__objc_const: 0x2c8
-   __AUTH_CONST.__auth_got: 0x830
--  __AUTH.__data: 0x2750
-+  __AUTH.__data: 0x2760
-   __DATA.__data: 0x2a20
-   __DATA.__bss: 0x16200
-   __DATA_DIRTY.__objc_data: 0x50
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 4887
--  Symbols:   15571
+-  Symbols:   11417
 -  CStrings:  300
 +  Functions: 4905
-+  Symbols:   15605
++  Symbols:   11442
 +  CStrings:  301
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
 Symbols:
 + _$s27NeighborhoodActivityConduit16NCProtoCallStateV10isOutgoingSbvM
 + _$s27NeighborhoodActivityConduit16NCProtoCallStateV10isOutgoingSbvM.resume
@@ -149,5 +101,4 @@ Symbols:
 - ___swift_store_extra_inhabitant_index.502Tm
 CStrings:
 + "isOutgoing"
-
 ```

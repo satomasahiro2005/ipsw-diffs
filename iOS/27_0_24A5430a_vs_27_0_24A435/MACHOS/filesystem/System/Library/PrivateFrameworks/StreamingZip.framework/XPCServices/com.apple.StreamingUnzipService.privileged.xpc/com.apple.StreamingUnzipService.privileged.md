@@ -2,19 +2,24 @@
 
 > `/System/Library/PrivateFrameworks/StreamingZip.framework/XPCServices/com.apple.StreamingUnzipService.privileged.xpc/com.apple.StreamingUnzipService.privileged`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15794` | `0x157a0` | **`+0xc`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
 - `__TEXT.__objc_methlist`
 - `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 257.0.0.0.0
--  __TEXT.__text: 0x15794
-+  __TEXT.__text: 0x157a0
-   __TEXT.__auth_stubs: 0xae0
-   __TEXT.__objc_stubs: 0x2260
-   __TEXT.__objc_methlist: 0xeec
+```diff
 Functions:
 ~ sub_10000f350 : 21424 -> 21436
+CStrings:
++ "15:25:33"
+- "18:23:05"
 ```

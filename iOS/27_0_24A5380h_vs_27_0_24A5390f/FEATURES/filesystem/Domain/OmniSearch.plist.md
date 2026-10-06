@@ -4,9 +4,6 @@
 
 ```diff
 
- 		<key>DevelopmentPhase</key>
- 		<string>FeatureComplete</string>
- 	</dict>
 -	<key>asJournalSupport</key>
 -	<dict>
 -		<key>DevelopmentPhase</key>
@@ -42,8 +39,5 @@
 -		<key>DevelopmentPhase</key>
 -		<string>FeatureComplete</string>
 -	</dict>
- 	<key>attributionUI</key>
- 	<dict>
- 		<key>DevelopmentPhase</key>
 
 ```

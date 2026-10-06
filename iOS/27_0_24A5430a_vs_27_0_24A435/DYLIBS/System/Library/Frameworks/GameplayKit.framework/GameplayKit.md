@@ -2,18 +2,16 @@
 
 > `/System/Library/Frameworks/GameplayKit.framework/GameplayKit`
 
-```diff
+### Section Size Changes
 
- 102.0.4.0.0
--  __TEXT.__text: 0x665e4
-+  __TEXT.__text: 0x66650
-   __TEXT.__objc_methlist: 0x32e4
-   __TEXT.__const: 0x588
--  __TEXT.__gcc_except_tab: 0x54a0
-+  __TEXT.__gcc_except_tab: 0x54a4
-   __TEXT.__cstring: 0x1083
-   __TEXT.__oslogstring: 0x17
-   __TEXT.__unwind_info: 0x20d0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x665e4` | `0x66650` | **`+0x6c`** |
+| `__TEXT.__gcc_except_tab` | `0x54a0` | `0x54a4` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[GKRTree elementsInBoundingRectMin:rectMax:] : 660 -> 656
 ~ __ZN19GKCMinmaxStrategist19findBestMoveNPlayerEPU22objcproto11GKGameModel11objc_objectlRlS2_ : 1148 -> 1156

@@ -2,108 +2,66 @@
 
 > `/usr/libexec/dasd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1736b4` | `0x175bc4` | **`+0x2510`** |
+| `__TEXT.__objc_methname` | `0x2dbdd` | `0x2e0ad` | **`+0x4d0`** |
+| `__TEXT.__oslogstring` | `0x16599` | `0x16949` | **`+0x3b0`** |
+| `__TEXT.__objc_stubs` | `0x1ab00` | `0x1ade0` | **`+0x2e0`** |
+| `__TEXT.__cstring` | `0x101f6` | `0x103d6` | **`+0x1e0`** |
+| `__DATA_CONST.__cfstring` | `0x11580` | `0x11740` | **`+0x1c0`** |
+| `__TEXT.__objc_methlist` | `0x12f0c` | `0x13024` | **`+0x118`** |
+| `__DATA.__objc_selrefs` | `0x9b38` | `0x9c28` | **`+0xf0`** |
+| `__TEXT.__gcc_except_tab` | `0x4e28` | `0x4ecc` | **`+0xa4`** |
+| `__DATA.__objc_const` | `0x33b78` | `0x33c08` | **`+0x90`** |
+| `__DATA_CONST.__const` | `0x4e98` | `0x4ed8` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x4fb8` | `0x4ff0` | **`+0x38`** |
+| `__DATA.__bss` | `0x1220` | `0x1240` | **`+0x20`** |
+| `__DATA_CONST.__objc_arrayobj` | `0x198` | `0x1b0` | **`+0x18`** |
+| `__DATA.__data` | `0x2180` | `0x2190` | **`+0x10`** |
+| `__DATA_CONST.__objc_arraydata` | `0x470` | `0x480` | **`+0x10`** |
+| `__TEXT.__const` | `0x1558` | `0x1568` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x15fc` | `0x1608` | **`+0xc`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_data`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -2467.0.14.502.1
--  __TEXT.__text: 0x1736b4
 +2467.0.23.502.1
-+  __TEXT.__text: 0x175bc4
-   __TEXT.__auth_stubs: 0x2210
--  __TEXT.__objc_stubs: 0x1ab00
--  __TEXT.__objc_methlist: 0x12f0c
--  __TEXT.__const: 0x1558
--  __TEXT.__objc_methname: 0x2dbdd
--  __TEXT.__cstring: 0x101f6
--  __TEXT.__oslogstring: 0x16599
-+  __TEXT.__objc_stubs: 0x1ade0
-+  __TEXT.__objc_methlist: 0x13024
-+  __TEXT.__const: 0x1568
-+  __TEXT.__objc_methname: 0x2e0ad
-+  __TEXT.__cstring: 0x103d6
-+  __TEXT.__oslogstring: 0x16949
-   __TEXT.__objc_classname: 0x1c88
-   __TEXT.__objc_methtype: 0x41a1
--  __TEXT.__gcc_except_tab: 0x4e28
-+  __TEXT.__gcc_except_tab: 0x4ecc
-   __TEXT.__dlopen_cstrs: 0x552
-   __TEXT.__swift5_typeref: 0x966
-   __TEXT.__swift5_capture: 0x220
 
-   __TEXT.__swift_as_cont: 0x80
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__unwind_info: 0x4fb8
-+  __TEXT.__unwind_info: 0x4ff0
-   __TEXT.__eh_frame: 0xbd0
--  __DATA_CONST.__const: 0x4e98
--  __DATA_CONST.__cfstring: 0x11580
-+  __DATA_CONST.__const: 0x4ed8
-+  __DATA_CONST.__cfstring: 0x11740
-   __DATA_CONST.__objc_classlist: 0x700
-   __DATA_CONST.__objc_catlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x218
-
-   __DATA_CONST.__objc_protorefs: 0x70
-   __DATA_CONST.__objc_superrefs: 0x5b8
-   __DATA_CONST.__objc_intobj: 0x17b8
--  __DATA_CONST.__objc_arraydata: 0x470
--  __DATA_CONST.__objc_arrayobj: 0x198
-+  __DATA_CONST.__objc_arraydata: 0x480
-+  __DATA_CONST.__objc_arrayobj: 0x1b0
-   __DATA_CONST.__objc_dictobj: 0x230
-   __DATA_CONST.__objc_doubleobj: 0x50
-   __DATA_CONST.__auth_got: 0x1118
-   __DATA_CONST.__got: 0xe20
-   __DATA_CONST.__auth_ptr: 0x190
--  __DATA.__objc_const: 0x33b78
--  __DATA.__objc_selrefs: 0x9b38
--  __DATA.__objc_ivar: 0x15fc
-+  __DATA.__objc_const: 0x33c08
-+  __DATA.__objc_selrefs: 0x9c28
-+  __DATA.__objc_ivar: 0x1608
-   __DATA.__objc_data: 0x48b8
--  __DATA.__data: 0x2180
--  __DATA.__bss: 0x1220
-+  __DATA.__data: 0x2190
-+  __DATA.__bss: 0x1240
-   __DATA.__common: 0x18
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8273
 +  Functions: 8302
-   Symbols:   1010
+
 -  CStrings:  12325
 +  CStrings:  12387
- 
 CStrings:
 + "Activity has primaryDomain=Default; phased scheduling must declare a real domain"
 + "Activity not BPC-allowlisted with PhasedScheduling=true"

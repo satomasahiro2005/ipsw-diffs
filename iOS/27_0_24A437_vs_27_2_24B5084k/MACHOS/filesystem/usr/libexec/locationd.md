@@ -2,112 +2,68 @@
 
 > `/usr/libexec/locationd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__objc_classname`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1b14420` | `0x1b280ac` | **`+0x13c8c`** |
+| `__TEXT.__cstring` | `0x20cf8e` | `0x210541` | **`+0x35b3`** |
+| `__TEXT.__oslogstring` | `0x28ef30` | `0x291f05` | **`+0x2fd5`** |
+| `__TEXT.__const` | `0x1688b8` | `0x166848` | **`-0x2070`** |
+| `__TEXT.__gcc_except_tab` | `0xd9af4` | `0xda4d0` | **`+0x9dc`** |
+| `__TEXT.__unwind_info` | `0x77308` | `0x77868` | **`+0x560`** |
+| `__DATA.__bss` | `0x13468` | `0x12f78` | **`-0x4f0`** |
+| `__TEXT.__objc_methname` | `0x5cd3f` | `0x5d07f` | **`+0x340`** |
+| `__DATA_CONST.__cfstring` | `0x441c0` | `0x44460` | **`+0x2a0`** |
+| `__DATA_CONST.__const` | `0xc19a0` | `0xc1c08` | **`+0x268`** |
+| `__TEXT.__objc_methtype` | `0x38e77` | `0x39047` | **`+0x1d0`** |
+| `__TEXT.__objc_stubs` | `0x3e300` | `0x3e420` | **`+0x120`** |
+| `__TEXT.__objc_methlist` | `0x2e5d0` | `0x2e6d0` | **`+0x100`** |
+| `__DATA.__objc_const` | `0x4f5a8` | `0x4f690` | **`+0xe8`** |
+| `__DATA.__objc_selrefs` | `0x13b10` | `0x13b78` | **`+0x68`** |
+| `__DATA.__common` | `0x220b0` | `0x22100` | **`+0x50`** |
+| `__DATA.__data` | `0x62ec8` | `0x62f08` | **`+0x40`** |
+| `__TEXT.__auth_stubs` | `0x6510` | `0x6550` | **`+0x40`** |
+| `__DATA_CONST.__auth_got` | `0x32a8` | `0x32c8` | **`+0x20`** |
+| `__DATA_CONST.__objc_arraydata` | `0x1b90` | `0x1bb0` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x3be4` | `0x3bf8` | **`+0x14`** |
+| `__DATA_CONST.__got` | `0x25d8` | `0x25e0` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_data`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__init_offsets`
+- `__TEXT.__objc_classname`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -3185.0.6.0.3
--  __TEXT.__text: 0x1ad929c
--  __TEXT.__auth_stubs: 0x6510
--  __TEXT.__objc_stubs: 0x3e300
 +3186.0.12.0.0
-+  __TEXT.__text: 0x1aecdf4
-+  __TEXT.__auth_stubs: 0x6550
-+  __TEXT.__objc_stubs: 0x3e420
-   __TEXT.__init_offsets: 0xc08
--  __TEXT.__objc_methlist: 0x2e5d0
--  __TEXT.__const: 0x1688b8
--  __TEXT.__gcc_except_tab: 0xd9af4
--  __TEXT.__oslogstring: 0x28ef30
--  __TEXT.__cstring: 0x20cf8e
--  __TEXT.__objc_methname: 0x5cd3f
-+  __TEXT.__objc_methlist: 0x2e6d0
-+  __TEXT.__const: 0x166848
-+  __TEXT.__gcc_except_tab: 0xda4d0
-+  __TEXT.__oslogstring: 0x291f05
-+  __TEXT.__cstring: 0x210541
-+  __TEXT.__objc_methname: 0x5d07f
-   __TEXT.__objc_classname: 0x8097
--  __TEXT.__objc_methtype: 0x38e77
-+  __TEXT.__objc_methtype: 0x39047
-   __TEXT.__dlopen_cstrs: 0x4a
-   __TEXT.__ustring: 0xa5e
-   __TEXT.__constg_swiftt: 0x5ec
 
-   __TEXT.__swift_as_cont: 0x1c
-   __TEXT.__swift5_proto: 0x4c
-   __TEXT.__swift5_assocty: 0x30
--  __TEXT.__unwind_info: 0x88990
-+  __TEXT.__unwind_info: 0x88f80
-   __TEXT.__eh_frame: 0xf38
--  __DATA_CONST.__const: 0xc19a0
--  __DATA_CONST.__cfstring: 0x441c0
-+  __DATA_CONST.__const: 0xc1c08
-+  __DATA_CONST.__cfstring: 0x44460
-   __DATA_CONST.__objc_classlist: 0x14c0
-   __DATA_CONST.__objc_catlist: 0xc8
-   __DATA_CONST.__objc_protolist: 0xe48
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0xad0
-   __DATA_CONST.__objc_superrefs: 0x1318
--  __DATA_CONST.__objc_arraydata: 0x1b90
-+  __DATA_CONST.__objc_arraydata: 0x1bb0
-   __DATA_CONST.__objc_dictobj: 0xb18
-   __DATA_CONST.__objc_intobj: 0x2e68
-   __DATA_CONST.__objc_doubleobj: 0x150
-   __DATA_CONST.__objc_arrayobj: 0x978
-   __DATA_CONST.__objc_floatobj: 0x80
-   __DATA_CONST.__linkguard: 0x15
--  __DATA_CONST.__auth_got: 0x32a8
--  __DATA_CONST.__got: 0x25d8
-+  __DATA_CONST.__auth_got: 0x32c8
-+  __DATA_CONST.__got: 0x25e0
-   __DATA_CONST.__auth_ptr: 0x6a0
--  __DATA.__objc_const: 0x4f5a8
--  __DATA.__objc_selrefs: 0x13b10
--  __DATA.__objc_ivar: 0x3be4
-+  __DATA.__objc_const: 0x4f690
-+  __DATA.__objc_selrefs: 0x13b78
-+  __DATA.__objc_ivar: 0x3bf8
-   __DATA.__objc_data: 0xd528
--  __DATA.__data: 0x62ec8
--  __DATA.__common: 0x220b0
-+  __DATA.__data: 0x62f08
-+  __DATA.__common: 0x22100
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 113179
+-  Functions: 113777
 -  Symbols:   2910
--  CStrings:  84954
-+  Functions: 113470
+-  CStrings:  84957
++  Functions: 114069
 +  Symbols:   2915
-+  CStrings:  85189
- 
++  CStrings:  85192
 Symbols:
 + _HKErrorDomain
 + _dispatch_block_create_with_qos_class
@@ -171,6 +127,8 @@ CStrings:
 + "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/local/include/boost/uuid/string_generator.hpp"
 + "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/local/include/google/protobuf/repeated_field.h"
 + "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/local/include/google/protobuf/wire_format_lite_inl.h"
++ "00:12:12"
++ "00:21:47"
 + "@136@0:8{CLPIOSample=dddffffffffffffffffffffffCCCCCCS}16"
 + "@32@0:8r*16Q24"
 + "@344@0:8{CLExtendedStepCountEntry=d{CLStepCountEntry=dddIddddddIIdddi^{__CFString}BB{CLAccelerometerPace=ddd}IICII(FalseStepDetectorStateUnion={FalseStepDetectorState=b1b1b1b1b1b1b1b1}C)CCiII}{CLStepCountEntryAddition=ddIdddBddBdBQQd}}16"
@@ -282,6 +240,8 @@ CStrings:
 + "Reset requested.  New offset (floors %{public}d/%{public}d, activeTime %{public}f, elevation %{public}d/%{public}d)."
 + "Sending envMovement config to AOP2, %.3f, %.3f, %.6f, %.3f, %.6f, %.6f, %u, %u, %.6f"
 + "Sending motion trigger parameters to AOP, %.3f, %.3f, %u, %u, %u, %u, %u, %u"
++ "Sep 11 2026"
++ "Sep 11 2026 00:16:37"
 + "ServiceSession"
 + "ShouldHarvestFloorTransitionTriggeredTraces"
 + "System::ClientActivityType"
@@ -534,6 +494,8 @@ CStrings:
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/boost/uuid/string_generator.hpp"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/google/protobuf/repeated_field.h"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/google/protobuf/wire_format_lite_inl.h"
+- "21:51:50"
+- "22:00:58"
 - "@136@0:8{CLPIOSample=dddfffffffffffffffffffffCCCCCCS}16"
 - "@336@0:8{CLExtendedStepCountEntry=d{CLStepCountEntry=dddIdddddIIdddi^{__CFString}BB{CLAccelerometerPace=ddd}IICII(FalseStepDetectorStateUnion={FalseStepDetectorState=b1b1b1b1b1b1b1b1}C)CCiII}{CLStepCountEntryAddition=ddIdddBddBdBQQd}}16"
 - "American-Samoa"
@@ -541,6 +503,8 @@ CStrings:
 - "AngleDegPropertyCParameterCTiltEntryExitLow"
 - "Assertion failed: lambda2 != 0, file /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CoreLocation/Oscar/Math/CMOQuaternion.cpp, line 152,invalid weights."
 - "Assertion failed: t >= 0 && t <= 1, file /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CoreLocation/Oscar/Math/CMOQuaternion.cpp, line 300,Invalid time t for slerp."
+- "Aug 20 2026"
+- "Aug 20 2026 21:56:14"
 - "AuthContext InUse:%d  RegResult:%d(%d) EffectiveMask:%d  ProvisionalMask:%d  DiagnosticMask:%d"
 - "B1840@0:8{NotificationData={CLDaemonLocation=i{?=dd}ddddddddidi{?=dd}diIiiidB}{CLDaemonLocationPrivate=dddddfffBi{?=dd}diiB{?=ddBBidqddd}{?={?=iddddd{?=dd}dd}iQiiiidB}{?=dd}if{?=dd}ddiBddddddddBB{?=dd}diddddddB{shared_ptr<const CLDaemonLocationPrivate::AboveHorizonSatelliteVisibilityReport>=^{AboveHorizonSatelliteVisibilityReport}^{__shared_weak_count}}i{AltitudeInfo=dddi}CdddCCBii{?=I}{?=if}iiiBffffd{?=dddffffff}}{shared_ptr<CLBatchedLocations>=^{CLBatchedLocations}^{__shared_weak_count}}{TechnologyStatus=iB}Bd{?=dddd}{?=dd}{XtraFileAvailable=d{basic_string<char, std::char_traits<char>, std::allocator<char>>={?=(__rep={__short=[23c]b7b1}{__long=*Qb63b1})}}}i{LocationDerivedSpeed=ddd}{?=dddi}{?=ddddddB[3[3d]]dddQi}{shared_ptr<const gnss::MeasurementData>=^{MeasurementData}^{__shared_weak_count}}i{?=idddddd[5d]ddddii}{CLStrongPtr<NSData *>=@}{PredictedGnssAvailability=iidd}{CLBasebandTimeFreqTransfer=d{CLBasebandSystemClock=Qffdfd}Qf{LeapSecondInfo=sC{LeapSecondChange=Qs}}}{CLGnssBasebandCausesL1InterferenceGnssBandChangeData=ii}{CLRhythmicGnssStatusUpdate=iBi{bitset<2UL>=Q}BI}{CLRhythmicStreamingControl=B}{CLGNSSStateQueryAssertionReportData=ddd}{ProactiveLocationSessionStats=id}B{RecentLocationsRevised=ddd}{MapMatchingDriftSignal=iidddddid}{CLPIOSample=dddfffffffffffffffffffffCCCCCCS}{AnomalousGnssDetectionInfo=BBB}CC}16"
 - "CLDC.%p"

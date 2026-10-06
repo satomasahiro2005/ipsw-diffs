@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/IntelligenceTasksEngine.framework/IntelligenceTasksEngine`
 
-```diff
+### Section Size Changes
 
- 250.0.0.3.0
--  __TEXT.__text: 0x21044
-+  __TEXT.__text: 0x21048
-   __TEXT.__objc_methlist: 0x14c
-   __TEXT.__const: 0xf58
-   __TEXT.__oslogstring: 0xc69
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21044` | `0x21048` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_2374de04c -> sub_237de304c : 708 -> 712
 ~ _OUTLINED_FUNCTION_44 : 16 -> 20

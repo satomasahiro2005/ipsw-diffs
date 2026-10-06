@@ -2,15 +2,14 @@
 
 > `/private/var/staged_system_apps/Podcasts.app/PlugIns/PodcastsWidget.appex/PodcastsWidget`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -4027.110.1.0.0
 +4027.110.2.0.0
-   __TEXT.__text: 0x2bb4
-   __TEXT.__auth_stubs: 0x390
-   __TEXT.__objc_stubs: 0xd20
 ```

@@ -2,15 +2,14 @@
 
 > `/System/Library/LocationBundles/PLAMonitor.bundle/PLAMonitor`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -3185.0.6.0.1
 +3185.0.6.0.2
-   __TEXT.__text: 0x0
-   __TEXT.__const: 0x48
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 ```

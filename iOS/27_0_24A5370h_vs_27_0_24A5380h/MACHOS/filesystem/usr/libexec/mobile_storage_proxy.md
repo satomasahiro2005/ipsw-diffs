@@ -2,24 +2,27 @@
 
 > `/usr/libexec/mobile_storage_proxy`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x12fbc
-+  __TEXT.__text: 0x12fd8
-   __TEXT.__auth_stubs: 0xa50
-   __TEXT.__objc_stubs: 0x6e0
-   __TEXT.__const: 0xd6a0
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA.__objc_selrefs : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x12fbc` | `0x12fd8` | **`+0x1c`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
+```diff
 Symbols:
 + _objc_retain_x27
 - _objc_retain_x26
 Functions:
 ~ sub_100008a14 : 2472 -> 2500
-
 ```

@@ -2,20 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/XGBoostFramework.framework/XGBoostFramework`
 
-```diff
+### Section Size Changes
 
- 3600.25.2.0.0
--  __TEXT.__text: 0x17f980
-+  __TEXT.__text: 0x17faa0
-   __TEXT.__init_offsets: 0x84
-   __TEXT.__const: 0x8e80
-   __TEXT.__gcc_except_tab: 0x1b5c4
-   __TEXT.__cstring: 0x11dbd
--  __TEXT.__unwind_info: 0x7420
-+  __TEXT.__unwind_info: 0x7400
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__weak_got: 0x98
-   __DATA_CONST.__got: 0x160
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17f980` | `0x17faa0` | **`+0x120`** |
+| `__TEXT.__unwind_info` | `0x7420` | `0x7400` | **`-0x20`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__16vectorIPN4dmlc16ParserFactoryRegIyfEENS_9allocatorIS4_EEE24__emplace_back_slow_pathIJRKS4_EEEPS4_DpOT_ : 188 -> 180
 ~ __ZNSt3__16vectorIPN4dmlc16ParserFactoryRegIjiEENS_9allocatorIS4_EEE24__emplace_back_slow_pathIJRKS4_EEEPS4_DpOT_ : 188 -> 180

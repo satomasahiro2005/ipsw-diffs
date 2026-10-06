@@ -2,86 +2,53 @@
 
 > `/usr/libexec/thermalmonitord`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methtype`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5740c` | `0x5256c` | **`-0x4ea0`** |
+| `__DATA.__objc_const` | `0xd1d8` | `0xc948` | **`-0x890`** |
+| `__TEXT.__const` | `0x1cc0` | `0x1560` | **`-0x760`** |
+| `__DATA.__objc_data` | `0x36b0` | `0x3340` | **`-0x370`** |
+| `__DATA_CONST.__objc_intobj` | `0xa08` | `0x7b0` | **`-0x258`** |
+| `__TEXT.__objc_methlist` | `0x426c` | `0x4014` | **`-0x258`** |
+| `__TEXT.__objc_classname` | `0x1484` | `0x1303` | **`-0x181`** |
+| `__DATA_CONST.__objc_arraydata` | `0x1348` | `0x1280` | **`-0xc8`** |
+| `__TEXT.__unwind_info` | `0x12d0` | `0x1230` | **`-0xa0`** |
+| `__DATA_CONST.__objc_arrayobj` | `0x2b8` | `0x228` | **`-0x90`** |
+| `__DATA_CONST.__cfstring` | `0x67e0` | `0x6780` | **`-0x60`** |
+| `__DATA_CONST.__got` | `0x688` | `0x630` | **`-0x58`** |
+| `__DATA_CONST.__objc_classlist` | `0x578` | `0x520` | **`-0x58`** |
+| `__TEXT.__objc_methname` | `0x83da` | `0x8388` | **`-0x52`** |
+| `__DATA.__objc_ivar` | `0xa78` | `0xa30` | **`-0x48`** |
+| `__DATA.__bss` | `0xb05c` | `0xb024` | **`-0x38`** |
+| `__DATA_CONST.__objc_superrefs` | `0x308` | `0x2d0` | **`-0x38`** |
+| `__TEXT.__oslogstring` | `0x9d83` | `0x9d54` | **`-0x2f`** |
+| `__TEXT.__objc_stubs` | `0x4f20` | `0x4f00` | **`-0x20`** |
+| `__TEXT.__cstring` | `0x4e09` | `0x4df6` | **`-0x13`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_selrefs`
 - `__DATA_CONST.__const`
 - `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_dictobj`
-- `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__DATA_CONST.__objc_protolist`
+- `__TEXT.__objc_methtype`
+
+### Other Changes
 
 ```diff
 
 -2081.0.0.0.1
--  __TEXT.__text: 0x5740c
 +2083.0.0.0.0
-+  __TEXT.__text: 0x5256c
-   __TEXT.__auth_stubs: 0x13d0
--  __TEXT.__objc_stubs: 0x4f20
--  __TEXT.__objc_methlist: 0x426c
--  __TEXT.__const: 0x1cc0
--  __TEXT.__objc_classname: 0x1484
-+  __TEXT.__objc_stubs: 0x4f00
-+  __TEXT.__objc_methlist: 0x4014
-+  __TEXT.__const: 0x1560
-+  __TEXT.__objc_classname: 0x1303
-   __TEXT.__objc_methtype: 0x1b05
--  __TEXT.__objc_methname: 0x83da
--  __TEXT.__cstring: 0x4e09
-+  __TEXT.__objc_methname: 0x8388
-+  __TEXT.__cstring: 0x4df6
-   __TEXT.__gcc_except_tab: 0x3ac
--  __TEXT.__oslogstring: 0x9d83
--  __TEXT.__unwind_info: 0x12d0
-+  __TEXT.__oslogstring: 0x9d54
-+  __TEXT.__unwind_info: 0x1230
-   __DATA_CONST.__const: 0x1458
--  __DATA_CONST.__cfstring: 0x67e0
--  __DATA_CONST.__objc_classlist: 0x578
-+  __DATA_CONST.__cfstring: 0x6780
-+  __DATA_CONST.__objc_classlist: 0x520
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x38
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_superrefs: 0x308
--  __DATA_CONST.__objc_intobj: 0xa08
--  __DATA_CONST.__objc_arraydata: 0x1348
-+  __DATA_CONST.__objc_superrefs: 0x2d0
-+  __DATA_CONST.__objc_intobj: 0x7b0
-+  __DATA_CONST.__objc_arraydata: 0x1280
-   __DATA_CONST.__objc_dictobj: 0x730
--  __DATA_CONST.__objc_arrayobj: 0x2b8
-+  __DATA_CONST.__objc_arrayobj: 0x228
-   __DATA_CONST.__objc_doubleobj: 0x40
-   __DATA_CONST.__auth_got: 0xa00
--  __DATA_CONST.__got: 0x688
-+  __DATA_CONST.__got: 0x630
-   __DATA_CONST.__auth_ptr: 0x10
--  __DATA.__objc_const: 0xd1d8
-+  __DATA.__objc_const: 0xc948
-   __DATA.__objc_selrefs: 0x1988
--  __DATA.__objc_ivar: 0xa78
--  __DATA.__objc_data: 0x36b0
-+  __DATA.__objc_ivar: 0xa30
-+  __DATA.__objc_data: 0x3340
-   __DATA.__data: 0x370
--  __DATA.__bss: 0xb05c
-+  __DATA.__bss: 0xb024
-   __DATA.__common: 0x9f6
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2056
 +  Functions: 2000
-   Symbols:   416
+
 -  CStrings:  3764
 +  CStrings:  3744
- 
 CStrings:
 - "<Notice> %4d %4d %4d %4d %4d"
 - "<Notice> 5x6 Grid"

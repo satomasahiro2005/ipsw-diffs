@@ -2,75 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/CoreFollowUpUI.framework/CoreFollowUpUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa000` | `0xb3a0` | **`+0x13a0`** |
+| `__AUTH_CONST.__auth_got` | `0x0` | `0x3d0` | **`+0x3d0`** |
+| `__AUTH_CONST.__objc_const` | `0x24a8` | `0x27e8` | **`+0x340`** |
+| `__DATA.__bss` | `0x10` | `0x190` | **`+0x180`** |
+| `__AUTH_CONST.__const` | `0x120` | `0x250` | **`+0x130`** |
+| `__TEXT.__const` | `0xa0` | `0x1c2` | **`+0x122`** |
+| `__TEXT.__eh_frame` | `—` | `0xa0` | **`+0xa0`** |
+| `__TEXT.__objc_methlist` | `0x9d4` | `0xa6c` | **`+0x98`** |
+| `__DATA.__data` | `0x360` | `0x3f0` | **`+0x90`** |
+| `__DATA_CONST.__const` | `0x710` | `0x7a0` | **`+0x90`** |
+| `__TEXT.__swift5_typeref` | `—` | `0x60` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x388` | `0x3e0` | **`+0x58`** |
+| `__TEXT.__constg_swiftt` | `—` | `0x44` | **`+0x44`** |
+| `__TEXT.__swift5_fieldmd` | `—` | `0x38` | **`+0x38`** |
+| `__TEXT.__swift5_reflstr` | `—` | `0x31` | **`+0x31`** |
+| `__DATA_CONST.__got` | `0x2c8` | `0x2e0` | **`+0x18`** |
+| `__DATA_CONST.__objc_protolist` | `0x48` | `0x60` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x9e8` | `0xa00` | **`+0x18`** |
+| `__DATA_CONST.__objc_protorefs` | `0x30` | `0x40` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `—` | `0xc` | **`+0xc`** |
+| `__TEXT.__swift5_types` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x4` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `—` | `0x4` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__objc_imageinfo`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xa000
--  __TEXT.__objc_methlist: 0x9d4
--  __TEXT.__const: 0xa0
-+  __TEXT.__text: 0xb3a0
-+  __TEXT.__objc_methlist: 0xa6c
-+  __TEXT.__const: 0x1c2
-   __TEXT.__gcc_except_tab: 0x1c0
-   __TEXT.__cstring: 0x634
-   __TEXT.__oslogstring: 0x953
--  __TEXT.__unwind_info: 0x388
-+  __TEXT.__swift5_typeref: 0x60
-+  __TEXT.__constg_swiftt: 0x44
-+  __TEXT.__swift5_fieldmd: 0x38
-+  __TEXT.__swift5_reflstr: 0x31
-+  __TEXT.__swift5_proto: 0xc
-+  __TEXT.__swift5_types: 0x8
-+  __TEXT.__swift_as_entry: 0x4
-+  __TEXT.__swift_as_ret: 0x4
-+  __TEXT.__swift_as_cont: 0x8
-+  __TEXT.__unwind_info: 0x3e0
-+  __TEXT.__eh_frame: 0xa0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x710
-+  __DATA_CONST.__const: 0x7a0
-   __DATA_CONST.__objc_classlist: 0x90
-   __DATA_CONST.__objc_catlist: 0x8
--  __DATA_CONST.__objc_protolist: 0x48
-+  __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x9e8
--  __DATA_CONST.__objc_protorefs: 0x30
-+  __DATA_CONST.__objc_selrefs: 0xa00
-+  __DATA_CONST.__objc_protorefs: 0x40
-   __DATA_CONST.__objc_superrefs: 0x60
--  __DATA_CONST.__got: 0x2c8
--  __AUTH_CONST.__const: 0x120
-+  __DATA_CONST.__got: 0x2e0
-+  __AUTH_CONST.__const: 0x250
-   __AUTH_CONST.__cfstring: 0x580
--  __AUTH_CONST.__objc_const: 0x24a8
-+  __AUTH_CONST.__objc_const: 0x27e8
-   __AUTH_CONST.__objc_intobj: 0x30
--  __AUTH_CONST.__auth_got: 0x0
-+  __AUTH_CONST.__auth_got: 0x3d0
-   __AUTH.__objc_data: 0x460
-   __DATA.__objc_ivar: 0x98
--  __DATA.__data: 0x360
--  __DATA.__bss: 0x10
-+  __DATA.__data: 0x3f0
-+  __DATA.__bss: 0x190
-   __DATA_DIRTY.__objc_data: 0x140
-   __DATA_DIRTY.__bss: 0x20
-   - /System/Library/Frameworks/Accounts.framework/Accounts
+-293.0.0.0.0
++2027.0.4.0.0
 
-   - /System/Library/PrivateFrameworks/Preferences.framework/Preferences
-   - /System/Library/PrivateFrameworks/SettingsFoundation.framework/SettingsFoundation
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
 +  - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
+
 -  Functions: 236
--  Symbols:   1242
+-  Symbols:   664
 +  - /usr/lib/swift/libswiftAccelerate.dylib
 +  - /usr/lib/swift/libswiftCore.dylib
 +  - /usr/lib/swift/libswiftCoreFoundation.dylib
@@ -90,20 +65,7 @@
 +  - /usr/lib/swift/libswiftos.dylib
 +  - /usr/lib/swift/libswiftsimd.dylib
 +  Functions: 277
-+  Symbols:   1339
-   CStrings:  166
- 
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_imageinfo : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__objc_ivar : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   743
 Symbols:
 + +[FLPreferencesController _hasZeroActionItemForGroup:item:action:]
 + +[FLPreferencesController tapClassificationForGroup:item:action:]
@@ -164,10 +126,6 @@ Symbols:
 + _block_destroy_helper
 + _flat unique So16FLGroupViewModel_p
 + _objc_allocWithZone
-+ _objc_msgSend$_hasZeroActionItemForGroup:item:action:
-+ _objc_msgSend$init
-+ _objc_msgSend$performPreferencesActionForGroup:item:action:completion:
-+ _objc_msgSend$viewControllerToPresent
 + _objc_opt_self
 + _objc_retainAutoreleasedReturnValue
 + _swift_allocError
@@ -190,5 +148,4 @@ Symbols:
 + _symbolic _____ 14CoreFollowUpUI08FLFollowC12PaneResolverV15ResolutionErrorO
 + _symbolic ______p So16FLGroupViewModelP
 - _objc_retain_x27
-
 ```

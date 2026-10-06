@@ -2,72 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/PhotosGraph.framework/PhotosGraph`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6206dc` | `0x6208f8` | **`+0x21c`** |
+| `__AUTH_CONST.__objc_const` | `0x66dc8` | `0x66d38` | **`-0x90`** |
+| `__TEXT.__oslogstring` | `0x27b63` | `0x27bd1` | **`+0x6e`** |
+| `__TEXT.__gcc_except_tab` | `0x1189c` | `0x118e0` | **`+0x44`** |
+| `__TEXT.__objc_methlist` | `0x2c1d4` | `0x2c1b4` | **`-0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x12938` | `0x12948` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x2d90` | `0x2d84` | **`-0xc`** |
+| `__DATA.__bss` | `0x199c0` | `0x199b8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -910.33.102.0.0
--  __TEXT.__text: 0x6206dc
--  __TEXT.__objc_methlist: 0x2c1d4
 +912.0.111.0.0
-+  __TEXT.__text: 0x6208f8
-+  __TEXT.__objc_methlist: 0x2c1b4
-   __TEXT.__const: 0x1c760
-   __TEXT.__swift5_typeref: 0x8738
-   __TEXT.__swift5_reflstr: 0x743a
 
-   __TEXT.__swift5_types: 0xc40
-   __TEXT.__cstring: 0x33f3a
-   __TEXT.__swift5_capture: 0x2dd8
--  __TEXT.__oslogstring: 0x27b63
-+  __TEXT.__oslogstring: 0x27bd1
-   __TEXT.__swift_as_entry: 0xec
-   __TEXT.__swift_as_ret: 0xe0
-   __TEXT.__swift_as_cont: 0x260
-   __TEXT.__swift5_mpenum: 0x80
--  __TEXT.__gcc_except_tab: 0x1189c
-+  __TEXT.__gcc_except_tab: 0x118e0
-   __TEXT.__ustring: 0x7e6
-   __TEXT.__unwind_info: 0x11810
-   __TEXT.__eh_frame: 0xfd44
-
-   __DATA_CONST.__objc_catlist: 0x98
-   __DATA_CONST.__objc_protolist: 0x460
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x12938
-+  __DATA_CONST.__objc_selrefs: 0x12948
-   __DATA_CONST.__objc_protorefs: 0xf8
-   __DATA_CONST.__objc_superrefs: 0x1490
-   __DATA_CONST.__objc_arraydata: 0x38c0
-   __DATA_CONST.__got: 0x3af8
-   __AUTH_CONST.__const: 0x1bc60
-   __AUTH_CONST.__cfstring: 0x255e0
--  __AUTH_CONST.__objc_const: 0x66dc8
-+  __AUTH_CONST.__objc_const: 0x66d38
-   __AUTH_CONST.__objc_intobj: 0x3318
-   __AUTH_CONST.__objc_arrayobj: 0x1cf8
-   __AUTH_CONST.__objc_doubleobj: 0x2b0
-
-   __AUTH_CONST.__auth_got: 0x2468
-   __AUTH.__objc_data: 0x6938
-   __AUTH.__data: 0xc3f0
--  __DATA.__objc_ivar: 0x2d90
-+  __DATA.__objc_ivar: 0x2d84
-   __DATA.__data: 0x60a8
--  __DATA.__bss: 0x199c0
-+  __DATA.__bss: 0x199b8
-   __DATA.__common: 0x238
-   __DATA_DIRTY.__objc_data: 0x13100
-   __DATA_DIRTY.__data: 0x4da0
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 26504
--  Symbols:   40524
+-  Symbols:   32814
 -  CStrings:  8611
 +  Functions: 26501
-+  Symbols:   40520
++  Symbols:   32808
 +  CStrings:  8612
- 
 Symbols:
 + +[PGCityscapeWallpaperSuggester candidate:asset:passesFilteringWithContext:curationContext:thresholdHelper:statistics:]
 + +[PGLandscapeWallpaperSuggester candidate:asset:passesFilteringWithContext:curationContext:thresholdHelper:statistics:]
@@ -559,9 +519,6 @@ Symbols:
 + GCC_except_table9808
 + GCC_except_table9868
 + GCC_except_table9873
-+ _objc_msgSend$assetsByAssetUUIDs:inPhotoLibrary:fetchPropertySets:
-+ _objc_msgSend$candidate:asset:andFace:passesPostfilteringWithContext:curationContext:statistics:
-+ _objc_msgSend$candidate:asset:passesFilteringWithContext:curationContext:thresholdHelper:statistics:
 - +[PGCityscapeWallpaperSuggester candidate:passesFilteringWithContext:curationContext:thresholdHelper:statistics:]
 - +[PGLandscapeWallpaperSuggester candidate:passesFilteringWithContext:curationContext:thresholdHelper:statistics:]
 - +[PGSinglePersonWallpaperAssetSuggester candidate:andFace:passesPostfilteringWithContext:curationContext:statistics:]
@@ -1058,7 +1015,6 @@ Symbols:
 - _OBJC_IVAR_$_PGCityscapeWallpaperSuggestionCandidate._asset
 - _OBJC_IVAR_$_PGLandscapeWallpaperSuggestionCandidate._asset
 - _OBJC_IVAR_$_PGSinglePersonWallpaperAssetCandidate._asset
-- _objc_msgSend$candidate:andFace:passesPostfilteringWithContext:curationContext:statistics:
 CStrings:
 + "Skipping moment node with nil/empty uuid while building frequent-location UUID index (element identifier %lu)"
 ```

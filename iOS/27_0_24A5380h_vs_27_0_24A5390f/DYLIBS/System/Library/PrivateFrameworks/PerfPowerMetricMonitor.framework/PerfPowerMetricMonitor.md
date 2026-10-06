@@ -2,87 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/PerfPowerMetricMonitor.framework/PerfPowerMetricMonitor`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x18680` | `0x19d90` | **`+0x1710`** |
+| `__AUTH_CONST.__objc_const` | `0x2308` | `0x2898` | **`+0x590`** |
+| `__TEXT.__objc_methlist` | `0x15a4` | `0x187c` | **`+0x2d8`** |
+| `__TEXT.__cstring` | `0x1157` | `0x1308` | **`+0x1b1`** |
+| `__AUTH_CONST.__cfstring` | `0x14a0` | `0x1640` | **`+0x1a0`** |
+| `__TEXT.__ustring` | `0x6c0` | `0x77e` | **`+0xbe`** |
+| `__AUTH.__objc_data` | `—` | `0xa0` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x680` | `0x710` | **`+0x90`** |
+| `__TEXT.__gcc_except_tab` | `0x928` | `0x998` | **`+0x70`** |
+| `__DATA_CONST.__objc_arraydata` | `0x280` | `0x2e8` | **`+0x68`** |
+| `__DATA_CONST.__objc_selrefs` | `0xee0` | `0xf40` | **`+0x60`** |
+| `__TEXT.__oslogstring` | `0x1be2` | `0x1c3b` | **`+0x59`** |
+| `__DATA.__objc_ivar` | `0x22c` | `0x280` | **`+0x54`** |
+| `__TEXT.__unwind_info` | `0x4c0` | `0x510` | **`+0x50`** |
+| `__AUTH_CONST.__const` | `0x1a0` | `0x1c0` | **`+0x20`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x30` | `0x48` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0xf0` | `0x108` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x48` | `0x58` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x40` | `0x50` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x58` | `0x68` | **`+0x10`** |
+
+### Other Changes
 
 ```diff
 
 -3486.0.46.502.1
--  __TEXT.__text: 0x18680
--  __TEXT.__objc_methlist: 0x15a4
 +3486.0.81.502.4
-+  __TEXT.__text: 0x19d90
-+  __TEXT.__objc_methlist: 0x187c
-   __TEXT.__const: 0xf8
--  __TEXT.__gcc_except_tab: 0x928
--  __TEXT.__cstring: 0x1157
--  __TEXT.__oslogstring: 0x1be2
--  __TEXT.__ustring: 0x6c0
--  __TEXT.__unwind_info: 0x4c0
-+  __TEXT.__gcc_except_tab: 0x998
-+  __TEXT.__cstring: 0x1308
-+  __TEXT.__oslogstring: 0x1c3b
-+  __TEXT.__ustring: 0x77e
-+  __TEXT.__unwind_info: 0x510
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x680
--  __DATA_CONST.__objc_classlist: 0x48
-+  __DATA_CONST.__const: 0x710
-+  __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xee0
-+  __DATA_CONST.__objc_selrefs: 0xf40
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__objc_superrefs: 0x40
--  __DATA_CONST.__objc_arraydata: 0x280
--  __DATA_CONST.__got: 0xf0
--  __AUTH_CONST.__const: 0x1a0
--  __AUTH_CONST.__cfstring: 0x14a0
--  __AUTH_CONST.__objc_const: 0x2308
-+  __DATA_CONST.__objc_superrefs: 0x50
-+  __DATA_CONST.__objc_arraydata: 0x2e8
-+  __DATA_CONST.__got: 0x108
-+  __AUTH_CONST.__const: 0x1c0
-+  __AUTH_CONST.__cfstring: 0x1640
-+  __AUTH_CONST.__objc_const: 0x2898
-   __AUTH_CONST.__objc_intobj: 0x60
-   __AUTH_CONST.__objc_dictobj: 0x50
--  __AUTH_CONST.__objc_arrayobj: 0x30
-+  __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__auth_got: 0x310
--  __DATA.__objc_ivar: 0x22c
-+  __AUTH.__objc_data: 0xa0
-+  __DATA.__objc_ivar: 0x280
-   __DATA.__data: 0x300
-   __DATA.__bss: 0x50
-   __DATA_DIRTY.__objc_data: 0x2d0
--  __DATA_DIRTY.__bss: 0x58
-+  __DATA_DIRTY.__bss: 0x68
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/AssertionServices.framework/AssertionServices
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
+
 -  Functions: 609
--  Symbols:   1391
+-  Symbols:   978
 -  CStrings:  317
 +  Functions: 674
-+  Symbols:   1518
++  Symbols:   1095
 +  CStrings:  334
- 
 Symbols:
 + +[PPSLiteMetricCollection extractLiteMetrics:]
 + +[PPSLiteMetricCollection supportsSecureCoding]
@@ -210,17 +167,6 @@ Symbols:
 + _kPPSLiteProcessNameKey
 + _kPPSLiteSampleTimeKey
 + _kPPSMMConfigLiteMode
-+ _objc_msgSend$_emitSystemMetricsSignpost:beginMct:endMct:deltaTime:
-+ _objc_msgSend$appendFormat:
-+ _objc_msgSend$appendString:
-+ _objc_msgSend$dictionaryWithCapacity:
-+ _objc_msgSend$extractLiteMetrics:
-+ _objc_msgSend$initWithProcessMetricCollection:
-+ _objc_msgSend$isSetUp
-+ _objc_msgSend$liteMode
-+ _objc_msgSend$setUpForMonitoringWithLiteMode:
-+ _objc_msgSend$stringWithString:
-+ _objc_msgSend$upgradeToFullSetup
 - GCC_except_table110
 - GCC_except_table41
 - GCC_except_table46
@@ -230,7 +176,6 @@ Symbols:
 - GCC_except_table73
 - GCC_except_table77
 - GCC_except_table88
-- _objc_msgSend$setUpForMonitoring
 CStrings:
 + "  %@\n"
 + ")"

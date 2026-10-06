@@ -2,59 +2,33 @@
 
 > `/System/Library/Frameworks/AudioToolbox.framework/libEmbeddedSystemAUs.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__weak_auth_got`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__realtime` | `0x385d8` | `0x38a04` | **`+0x42c`** |
+| `__TEXT.__text` | `0xd11c8` | `0xd1464` | **`+0x29c`** |
+| `__TEXT.__gcc_except_tab` | `0x7718` | `0x7778` | **`+0x60`** |
+| `__TEXT.__oslogstring` | `0xc10c` | `0xc167` | **`+0x5b`** |
+| `__TEXT.__unwind_info` | `0x46d0` | `0x46f8` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x3960` | `0x3980` | **`+0x20`** |
+| `__TEXT.__cstring` | `0xa0a9` | `0xa0c9` | **`+0x20`** |
+| `__DATA.__data` | `0x9c8` | `0x9d0` | **`+0x8`** |
+| `__DATA_CONST.__const` | `0xe68` | `0xe70` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -1633.1.0.0.0
--  __TEXT.__text: 0xd11c8
--  __TEXT.__realtime: 0x385d8
 +1638.0.0.0.0
-+  __TEXT.__text: 0xd1464
-+  __TEXT.__realtime: 0x38a04
-   __TEXT.__const: 0xb344
-   __TEXT.__dlopen_cstrs: 0x2c1
--  __TEXT.__gcc_except_tab: 0x7718
--  __TEXT.__cstring: 0xa0a9
--  __TEXT.__oslogstring: 0xc10c
--  __TEXT.__unwind_info: 0x46d0
-+  __TEXT.__gcc_except_tab: 0x7778
-+  __TEXT.__cstring: 0xa0c9
-+  __TEXT.__oslogstring: 0xc167
-+  __TEXT.__unwind_info: 0x46f8
-   __TEXT.__eh_frame: 0x108
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0xe68
-+  __DATA_CONST.__const: 0xe70
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__got: 0x1d0
-   __AUTH_CONST.__const: 0x11140
--  __AUTH_CONST.__cfstring: 0x3960
-+  __AUTH_CONST.__cfstring: 0x3980
-   __AUTH_CONST.__weak_auth_got: 0x40
-   __AUTH_CONST.__auth_got: 0x11d8
--  __DATA.__data: 0x9c8
-+  __DATA.__data: 0x9d0
-   __DATA.__bss: 0x7b0
-   __DATA_DIRTY.__data: 0x20
-   __DATA_DIRTY.__bss: 0x160
 
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 3966
 -  Symbols:   6149
 -  CStrings:  1958
 +  Functions: 3971
 +  Symbols:   6158
 +  CStrings:  1962
- 
 Symbols:
 + GCC_except_table1001
 + GCC_except_table1014

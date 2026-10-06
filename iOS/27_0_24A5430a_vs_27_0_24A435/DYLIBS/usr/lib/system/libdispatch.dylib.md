@@ -2,19 +2,16 @@
 
 > `/usr/lib/system/libdispatch.dylib`
 
-```diff
+### Section Size Changes
 
- 1605.0.2.0.0
--  __TEXT.__text: 0x3de44
-+  __TEXT.__text: 0x3de60
-   __TEXT.__objc_methlist: 0x684
-   __TEXT.__const: 0x750
-   __TEXT.__cstring: 0x61a0
--  __TEXT.__unwind_info: 0xde8
-+  __TEXT.__unwind_info: 0xde0
-   __TEXT.__eh_frame: 0xb8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3de44` | `0x3de60` | **`+0x1c`** |
+| `__TEXT.__unwind_info` | `0xde8` | `0xde0` | **`-0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __dispatch_workloop_invoke : 2200 -> 2204
 ~ __dispatch_root_queue_push_override_stealer : 396 -> 380

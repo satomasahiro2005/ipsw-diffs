@@ -2,41 +2,29 @@
 
 > `/usr/lib/libPN548_API.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3fe34` | `0x459a0` | **`+0x5b6c`** |
+| `__TEXT.__cstring` | `0x92f1` | `0xab18` | **`+0x1827`** |
+| `__TEXT.__oslogstring` | `0x791c` | `0x8791` | **`+0xe75`** |
+| `__DATA_CONST.__const` | `0xe38` | `0x1128` | **`+0x2f0`** |
+| `__AUTH_CONST.__const` | `0x2e0` | `0x368` | **`+0x88`** |
+| `__TEXT.__unwind_info` | `0x5a0` | `0x618` | **`+0x78`** |
+| `__AUTH_CONST.__cfstring` | `0x740` | `0x780` | **`+0x40`** |
+| `__TEXT.__const` | `0x640` | `0x660` | **`+0x20`** |
+
+### Other Changes
+
 ```diff
 
- 370.42.1.0.0
--  __TEXT.__text: 0x3fe34
--  __TEXT.__const: 0x640
--  __TEXT.__cstring: 0x92f1
--  __TEXT.__oslogstring: 0x791c
--  __TEXT.__unwind_info: 0x5a0
-+  __TEXT.__text: 0x459a0
-+  __TEXT.__const: 0x660
-+  __TEXT.__cstring: 0xab18
-+  __TEXT.__oslogstring: 0x8791
-+  __TEXT.__unwind_info: 0x618
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0xe38
-+  __DATA_CONST.__const: 0x1128
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2e0
--  __AUTH_CONST.__cfstring: 0x740
-+  __AUTH_CONST.__const: 0x368
-+  __AUTH_CONST.__cfstring: 0x780
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__data: 0x18
-   __DATA_DIRTY.__bss: 0x18
-
-   - /usr/lib/libNFC_HAL.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libnfshared.dylib
 -  Functions: 417
 -  Symbols:   350
 -  CStrings:  1790
 +  Functions: 453
 +  Symbols:   377
 +  CStrings:  1946
- 
 Symbols:
 + _NFDataAppendBytes
 + _NFDriverClearFactoryPageE0Tag

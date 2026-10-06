@@ -2,97 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/SiriSetup.framework/SiriSetup`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x340ef8` | `0x33f83c` | **`-0x16bc`** |
+| `__TEXT.__swift5_typeref` | `0x2d0b0` | `0x2d2f8` | **`+0x248`** |
+| `__AUTH_CONST.__const` | `0x13520` | `0x133d0` | **`-0x150`** |
+| `__TEXT.__eh_frame` | `0x9a4c` | `0x9b3c` | **`+0xf0`** |
+| `__TEXT.__constg_swiftt` | `0xb5ac` | `0xb658` | **`+0xac`** |
+| `__DATA.__data` | `0x7f80` | `0x8020` | **`+0xa0`** |
+| `__TEXT.__const` | `0x1d384` | `0x1d414` | **`+0x90`** |
+| `__TEXT.__unwind_info` | `0xb340` | `0xb3d0` | **`+0x90`** |
+| `__DATA_DIRTY.__objc_data` | `0x2858` | `0x28c8` | **`+0x70`** |
+| `__TEXT.__cstring` | `0xc31f` | `0xc37f` | **`+0x60`** |
+| `__TEXT.__swift5_capture` | `0x36c0` | `0x3660` | **`-0x60`** |
+| `__DATA.__bss` | `0x11a10` | `0x119c0` | **`-0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x2df0` | `0x2e38` | **`+0x48`** |
+| `__AUTH_CONST.__objc_const` | `0x92c0` | `0x9300` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x2360` | `0x23a0` | **`+0x40`** |
+| `__TEXT.__swift5_assocty` | `0x1918` | `0x18e0` | **`-0x38`** |
+| `__TEXT.__oslogstring` | `0x35a2` | `0x35d2` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x1870` | `0x1898` | **`+0x28`** |
+| `__TEXT.__swift5_fieldmd` | `0x7588` | `0x75ac` | **`+0x24`** |
+| `__TEXT.__swift5_reflstr` | `0x8370` | `0x8390` | **`+0x20`** |
+| `__DATA_DIRTY.__data` | `0x2950` | `0x2940` | **`-0x10`** |
+| `__TEXT.__swift_as_cont` | `0x5a4` | `0x5ac` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0xa54` | `0xa50` | **`-0x4`** |
+| `__TEXT.__swift_as_ret` | `0x2f0` | `0x2f4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3600.62.43.1.7
--  __TEXT.__text: 0x340ef8
 +3600.62.43.11.102
-+  __TEXT.__text: 0x33f83c
-   __TEXT.__objc_methlist: 0x1fb8
--  __TEXT.__const: 0x1d384
--  __TEXT.__cstring: 0xc31f
-+  __TEXT.__const: 0x1d414
-+  __TEXT.__cstring: 0xc37f
-   __TEXT.__gcc_except_tab: 0x30
-   __TEXT.__dlopen_cstrs: 0xaf
--  __TEXT.__oslogstring: 0x35a2
--  __TEXT.__swift5_typeref: 0x2d0b0
--  __TEXT.__swift5_capture: 0x36c0
--  __TEXT.__constg_swiftt: 0xb5ac
--  __TEXT.__swift5_reflstr: 0x8370
--  __TEXT.__swift5_fieldmd: 0x7588
-+  __TEXT.__oslogstring: 0x35d2
-+  __TEXT.__swift5_typeref: 0x2d2f8
-+  __TEXT.__swift5_capture: 0x3660
-+  __TEXT.__constg_swiftt: 0xb658
-+  __TEXT.__swift5_reflstr: 0x8390
-+  __TEXT.__swift5_fieldmd: 0x75ac
-   __TEXT.__swift5_builtin: 0x2a8
--  __TEXT.__swift5_assocty: 0x1918
--  __TEXT.__swift5_proto: 0xa54
-+  __TEXT.__swift5_assocty: 0x18e0
-+  __TEXT.__swift5_proto: 0xa50
-   __TEXT.__swift5_types: 0x7f4
-   __TEXT.__swift5_protos: 0xc8
-   __TEXT.__swift_as_entry: 0x2d0
--  __TEXT.__swift_as_ret: 0x2f0
--  __TEXT.__swift_as_cont: 0x5a4
-+  __TEXT.__swift_as_ret: 0x2f4
-+  __TEXT.__swift_as_cont: 0x5ac
-   __TEXT.__swift5_mpenum: 0x54
--  __TEXT.__unwind_info: 0xb340
--  __TEXT.__eh_frame: 0x9a4c
-+  __TEXT.__unwind_info: 0xb3d0
-+  __TEXT.__eh_frame: 0x9b3c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2360
-+  __DATA_CONST.__const: 0x23a0
-   __DATA_CONST.__objc_classlist: 0x458
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x128
 
-   __DATA_CONST.__objc_selrefs: 0x2168
-   __DATA_CONST.__objc_protorefs: 0x90
-   __DATA_CONST.__objc_superrefs: 0x50
--  __DATA_CONST.__got: 0x1870
--  __AUTH_CONST.__const: 0x13520
-+  __DATA_CONST.__got: 0x1898
-+  __AUTH_CONST.__const: 0x133d0
-   __AUTH_CONST.__cfstring: 0x1b60
--  __AUTH_CONST.__objc_const: 0x92c0
-+  __AUTH_CONST.__objc_const: 0x9300
-   __AUTH_CONST.__objc_intobj: 0x18
--  __AUTH_CONST.__auth_got: 0x2df0
-+  __AUTH_CONST.__auth_got: 0x2e38
-   __AUTH.__objc_data: 0x4110
-   __AUTH.__data: 0x5aa0
-   __DATA.__objc_ivar: 0x70
--  __DATA.__data: 0x7f80
-+  __DATA.__data: 0x8020
-   __DATA.__objc_stublist: 0x8
-   __DATA.__common: 0x4a8
--  __DATA_DIRTY.__objc_data: 0x2858
--  __DATA_DIRTY.__data: 0x2950
-+  __DATA_DIRTY.__objc_data: 0x28c8
-+  __DATA_DIRTY.__data: 0x2940
-   __DATA_DIRTY.__bss: 0x1830
-   __DATA_DIRTY.__common: 0x158
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 19276
--  Symbols:   42426
+-  Symbols:   41610
 -  CStrings:  1676
 +  Functions: 19304
-+  Symbols:   42496
++  Symbols:   41680
 +  CStrings:  1679
- 
 Symbols:
 + _$s10Foundation23LocalizedStringResourceV9SiriSetupE22LocalizableDataSharingO04dataI32ConfirmationButtonTitleAudioOnlyACvgZ
 + _$s10Foundation23LocalizedStringResourceV9SiriSetupE22LocalizableDataSharingO04dataI32ConfirmationButtonTitleAudioOnlyACvpZMV

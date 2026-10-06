@@ -2,57 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/IsolatedCoreAudioClient.framework/IsolatedCoreAudioClient`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1b250` | `0x1b538` | **`+0x2e8`** |
+| `__TEXT.__oslogstring` | `0x2d6a` | `0x2de2` | **`+0x78`** |
+| `__AUTH_CONST.__const` | `0x2018` | `0x2080` | **`+0x68`** |
+| `__TEXT.__const` | `0x23ac` | `0x23ec` | **`+0x40`** |
+| `__DATA.__bss` | `0x240` | `0x270` | **`+0x30`** |
+| `__DATA_DIRTY.__bss` | `0xb8` | `0x88` | **`-0x30`** |
+| `__TEXT.__unwind_info` | `0xd88` | `0xdb0` | **`+0x28`** |
+| `__TEXT.__gcc_except_tab` | `0x1a68` | `0x1a84` | **`+0x1c`** |
+
+### Other Changes
+
 ```diff
 
 -7.49.0.0.0
--  __TEXT.__text: 0x1b250
 +7.49.101.0.0
-+  __TEXT.__text: 0x1b538
-   __TEXT.__objc_methlist: 0x80c
--  __TEXT.__const: 0x23ac
--  __TEXT.__gcc_except_tab: 0x1a68
-+  __TEXT.__const: 0x23ec
-+  __TEXT.__gcc_except_tab: 0x1a84
-   __TEXT.__cstring: 0xbdf
--  __TEXT.__oslogstring: 0x2d6a
--  __TEXT.__unwind_info: 0xd88
-+  __TEXT.__oslogstring: 0x2de2
-+  __TEXT.__unwind_info: 0xdb0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x48
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2018
-+  __AUTH_CONST.__const: 0x2080
-   __AUTH_CONST.__cfstring: 0x280
-   __AUTH_CONST.__objc_const: 0xcb8
-   __AUTH_CONST.__weak_auth_got: 0x18
-
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__objc_ivar: 0x54
-   __DATA.__data: 0x2a0
--  __DATA.__bss: 0x240
-+  __DATA.__bss: 0x270
-   __DATA_DIRTY.__objc_data: 0x2d0
--  __DATA_DIRTY.__bss: 0xb8
-+  __DATA_DIRTY.__bss: 0x88
-   - /System/Library/Frameworks/CoreAudio.framework/CoreAudio
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 794
--  Symbols:   1794
+-  Symbols:   1683
 -  CStrings:  255
 +  Functions: 800
-+  Symbols:   1806
++  Symbols:   1695
 +  CStrings:  257
- 
 Symbols:
 + GCC_except_table158
 + GCC_except_table161

@@ -2,39 +2,30 @@
 
 > `/usr/lib/libMIPCSdk.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x37b7e4` | `0x37c488` | **`+0xca4`** |
+| `__AUTH_CONST.__const` | `0x2d100` | `0x2d238` | **`+0x138`** |
+| `__TEXT.__gcc_except_tab` | `0x1e3b4` | `0x1e450` | **`+0x9c`** |
+| `__TEXT.__const` | `0x14970` | `0x14a00` | **`+0x90`** |
+| `__TEXT.__cstring` | `0x145a7` | `0x145f5` | **`+0x4e`** |
+| `__TEXT.__unwind_info` | `0xc4a8` | `0xc4f0` | **`+0x48`** |
+
+### Other Changes
+
 ```diff
 
 -176.0.0.0.0
--  __TEXT.__text: 0x37b7e4
--  __TEXT.__const: 0x14970
--  __TEXT.__gcc_except_tab: 0x1e3b4
--  __TEXT.__cstring: 0x145a7
--  __TEXT.__unwind_info: 0xc4a8
 +177.0.0.0.0
-+  __TEXT.__text: 0x37c488
-+  __TEXT.__const: 0x14a00
-+  __TEXT.__gcc_except_tab: 0x1e450
-+  __TEXT.__cstring: 0x145f5
-+  __TEXT.__unwind_info: 0xc4f0
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x78
-   __DATA_CONST.__weak_got: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2d100
-+  __AUTH_CONST.__const: 0x2d238
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__auth_got: 0x158
-   __AUTH.__data: 0x10
-   __DATA.__bss: 0x60
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
+
 -  Functions: 11154
 -  Symbols:   18975
 -  CStrings:  2021
 +  Functions: 11172
 +  Symbols:   19004
 +  CStrings:  2023
- 
 Symbols:
 + __ZN4mipc12ConfirmationILt63281EED0Ev
 + __ZN4mipc12ConfirmationILt63281EED1Ev

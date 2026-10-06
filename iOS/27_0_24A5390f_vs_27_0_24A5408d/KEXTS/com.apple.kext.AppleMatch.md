@@ -2,25 +2,22 @@
 
 > `com.apple.kext.AppleMatch`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x24dc` | `0x25b0` | **`+0xd4`** |
+| `__TEXT_EXEC.__auth_stubs` | `0xc0` | `0xb0` | **`-0x10`** |
+| `__DATA_CONST.__auth_got` | `0x60` | `0x58` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -49.0.0.0.0
 +50.0.1.0.0
-   __TEXT.__cstring: 0x5f
--  __TEXT_EXEC.__text: 0x24dc
--  __TEXT_EXEC.__auth_stubs: 0xc0
-+  __TEXT_EXEC.__text: 0x25b0
-+  __TEXT_EXEC.__auth_stubs: 0xb0
-   __DATA.__data: 0xdc
-   __DATA_CONST.__kalloc_type: 0x180
-   __DATA_CONST.__kalloc_var: 0xf0
--  __DATA_CONST.__auth_got: 0x60
-+  __DATA_CONST.__auth_got: 0x58
-   __DATA_CONST.__got: 0x8
-   Functions: 35
-   Symbols:   0
 Functions:
-~ sub_fffffe000920dd8c -> sub_fffffe0009214ffc : 4748 -> 4680
-~ sub_fffffe000920f240 -> sub_fffffe000921646c : 212 -> 308
-~ sub_fffffe000920f314 -> sub_fffffe00092165a0 : 272 -> 456
+~ sub_fffffff0091ef4fc -> sub_fffffff0091f677c : 4748 -> 4680
+~ sub_fffffff0091f09b0 -> sub_fffffff0091f7bec : 212 -> 308
+~ sub_fffffff0091f0a84 -> sub_fffffff0091f7d20 : 272 -> 456
 ```

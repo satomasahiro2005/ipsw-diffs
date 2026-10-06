@@ -2,121 +2,64 @@
 
 > `/System/Library/PrivateFrameworks/PhotosUICore.framework/PhotosUICore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1864928` | `0x18a8154` | **`+0x4382c`** |
+| `__TEXT.__const` | `0xa2930` | `0xa4660` | **`+0x1d30`** |
+| `__AUTH_CONST.__const` | `0x80188` | `0x81bd0` | **`+0x1a48`** |
+| `__DATA.__bss` | `0xadcc0` | `0xaf630` | **`+0x1970`** |
+| `__AUTH_CONST.__objc_const` | `0x15f6c0` | `0x160b60` | **`+0x14a0`** |
+| `__TEXT.__eh_frame` | `0x33a04` | `0x348c0` | **`+0xebc`** |
+| `__TEXT.__swift5_typeref` | `0x37508` | `0x38138` | **`+0xc30`** |
+| `__TEXT.__cstring` | `0xbe2d4` | `0xbeed8` | **`+0xc04`** |
+| `__AUTH.__objc_data` | `0x501f0` | `0x50d78` | **`+0xb88`** |
+| `__TEXT.__swift5_reflstr` | `0x34a2a` | `0x3548a` | **`+0xa60`** |
+| `__DATA.__data` | `0x40d18` | `0x41748` | **`+0xa30`** |
+| `__TEXT.__swift5_capture` | `0x1c800` | `0x1d1ec` | **`+0x9ec`** |
+| `__TEXT.__constg_swiftt` | `0x4407c` | `0x449fc` | **`+0x980`** |
+| `__TEXT.__unwind_info` | `0x5d4f8` | `0x5ddd0` | **`+0x8d8`** |
+| `__AUTH.__data` | `0x3bea8` | `0x3c6f8` | **`+0x850`** |
+| `__TEXT.__swift5_fieldmd` | `0x29f38` | `0x2a710` | **`+0x7d8`** |
+| `__TEXT.__objc_methlist` | `0xa4f9c` | `0xa55dc` | **`+0x640`** |
+| `__TEXT.__oslogstring` | `0x51128` | `0x516b5` | **`+0x58d`** |
+| `__DATA_CONST.__objc_selrefs` | `0x43dd0` | `0x44140` | **`+0x370`** |
+| `__AUTH_CONST.__cfstring` | `0x6d9a0` | `0x6dc40` | **`+0x2a0`** |
+| `__TEXT.__swift5_assocty` | `0xdc98` | `0xdea8` | **`+0x210`** |
+| `__AUTH_CONST.__auth_got` | `0xad58` | `0xaf08` | **`+0x1b0`** |
+| `__DATA_CONST.__got` | `0xcf40` | `0xd0d0` | **`+0x190`** |
+| `__DATA_CONST.__const` | `0x22f18` | `0x23048` | **`+0x130`** |
+| `__TEXT.__gcc_except_tab` | `0x10704` | `0x107d0` | **`+0xcc`** |
+| `__TEXT.__swift5_proto` | `0x53f8` | `0x54c4` | **`+0xcc`** |
+| `__TEXT.__swift5_types` | `0x35fc` | `0x3694` | **`+0x98`** |
+| `__TEXT.__swift_as_cont` | `0x24f8` | `0x257c` | **`+0x84`** |
+| `__TEXT.__swift_as_entry` | `0x1588` | `0x160c` | **`+0x84`** |
+| `__DATA_CONST.__objc_classlist` | `0x6118` | `0x6198` | **`+0x80`** |
+| `__TEXT.__swift5_builtin` | `0x1568` | `0x15e0` | **`+0x78`** |
+| `__TEXT.__swift_as_ret` | `0x1220` | `0x126c` | **`+0x4c`** |
+| `__DATA_CONST.__objc_protolist` | `0x2188` | `0x21c0` | **`+0x38`** |
+| `__AUTH_CONST.__objc_intobj` | `0x4b90` | `0x4bc0` | **`+0x30`** |
+| `__DATA.__common` | `0x1790` | `0x17c0` | **`+0x30`** |
+| `__DATA_CONST.__objc_protorefs` | `0x8d8` | `0x8f8` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0xd610` | `0xd624` | **`+0x14`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x760` | `0x770` | **`+0x10`** |
+| `__TEXT.__swift5_mpenum` | `0x184` | `0x194` | **`+0x10`** |
+| `__DATA_CONST.__objc_arraydata` | `0x4510` | `0x4518` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.234.0.0
--  __TEXT.__text: 0x1864928
 +912.0.235.0.0
-+  __TEXT.__text: 0x18a8154
-   __TEXT.__delay_helper: 0x114
--  __TEXT.__objc_methlist: 0xa4f9c
--  __TEXT.__const: 0xa2930
-+  __TEXT.__objc_methlist: 0xa55dc
-+  __TEXT.__const: 0xa4660
-   __TEXT.__dlopen_cstrs: 0x125e
--  __TEXT.__swift5_typeref: 0x37508
--  __TEXT.__constg_swiftt: 0x4407c
--  __TEXT.__swift5_reflstr: 0x34a2a
--  __TEXT.__swift5_fieldmd: 0x29f38
--  __TEXT.__swift5_builtin: 0x1568
--  __TEXT.__swift5_assocty: 0xdc98
--  __TEXT.__cstring: 0xbe2d4
--  __TEXT.__swift5_capture: 0x1c800
--  __TEXT.__oslogstring: 0x51128
--  __TEXT.__swift5_proto: 0x53f8
--  __TEXT.__swift5_types: 0x35fc
--  __TEXT.__swift_as_entry: 0x1588
--  __TEXT.__swift_as_cont: 0x24f8
-+  __TEXT.__swift5_typeref: 0x38138
-+  __TEXT.__constg_swiftt: 0x449fc
-+  __TEXT.__swift5_reflstr: 0x3548a
-+  __TEXT.__swift5_fieldmd: 0x2a710
-+  __TEXT.__swift5_builtin: 0x15e0
-+  __TEXT.__swift5_assocty: 0xdea8
-+  __TEXT.__cstring: 0xbeed8
-+  __TEXT.__swift5_capture: 0x1d1ec
-+  __TEXT.__oslogstring: 0x516b5
-+  __TEXT.__swift5_proto: 0x54c4
-+  __TEXT.__swift5_types: 0x3694
-+  __TEXT.__swift_as_entry: 0x160c
-+  __TEXT.__swift_as_cont: 0x257c
-   __TEXT.__swift5_protos: 0x2ac
--  __TEXT.__swift_as_ret: 0x1220
--  __TEXT.__swift5_mpenum: 0x184
--  __TEXT.__gcc_except_tab: 0x10704
-+  __TEXT.__swift_as_ret: 0x126c
-+  __TEXT.__swift5_mpenum: 0x194
-+  __TEXT.__gcc_except_tab: 0x107d0
-   __TEXT.__ustring: 0x3c48
--  __TEXT.__unwind_info: 0x5d4f8
--  __TEXT.__eh_frame: 0x33a04
-+  __TEXT.__unwind_info: 0x5ddd0
-+  __TEXT.__eh_frame: 0x348c0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x22f18
--  __DATA_CONST.__objc_classlist: 0x6118
-+  __DATA_CONST.__const: 0x23048
-+  __DATA_CONST.__objc_classlist: 0x6198
-   __DATA_CONST.__objc_catlist: 0x378
--  __DATA_CONST.__objc_protolist: 0x2188
-+  __DATA_CONST.__objc_protolist: 0x21c0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x43dd0
--  __DATA_CONST.__objc_protorefs: 0x8d8
-+  __DATA_CONST.__objc_selrefs: 0x44140
-+  __DATA_CONST.__objc_protorefs: 0x8f8
-   __DATA_CONST.__objc_superrefs: 0x3800
--  __DATA_CONST.__objc_arraydata: 0x4510
-+  __DATA_CONST.__objc_arraydata: 0x4518
-   __DATA_CONST.__vfx_script_tbl: 0x20
--  __DATA_CONST.__got: 0xcf40
--  __AUTH_CONST.__const: 0x80188
--  __AUTH_CONST.__cfstring: 0x6d9a0
--  __AUTH_CONST.__objc_const: 0x15f6c0
-+  __DATA_CONST.__got: 0xd0d0
-+  __AUTH_CONST.__const: 0x81bd0
-+  __AUTH_CONST.__cfstring: 0x6dc40
-+  __AUTH_CONST.__objc_const: 0x160b60
-   __AUTH_CONST.__weak_auth_got: 0x10
--  __AUTH_CONST.__objc_doubleobj: 0x760
-+  __AUTH_CONST.__objc_doubleobj: 0x770
-   __AUTH_CONST.__objc_dictobj: 0x1220
--  __AUTH_CONST.__objc_intobj: 0x4b90
-+  __AUTH_CONST.__objc_intobj: 0x4bc0
-   __AUTH_CONST.__objc_arrayobj: 0x2568
-   __AUTH_CONST.__objc_floatobj: 0x150
--  __AUTH_CONST.__auth_got: 0xad58
--  __AUTH.__objc_data: 0x501f0
--  __AUTH.__data: 0x3bea8
--  __DATA.__objc_ivar: 0xd610
--  __DATA.__data: 0x40d18
-+  __AUTH_CONST.__auth_got: 0xaf08
-+  __AUTH.__objc_data: 0x50d78
-+  __AUTH.__data: 0x3c6f8
-+  __DATA.__objc_ivar: 0xd624
-+  __DATA.__data: 0x41748
-   __DATA.__objc_stublist: 0x40
--  __DATA.__common: 0x1790
-+  __DATA.__common: 0x17c0
-   __DATA_DIRTY.__objc_data: 0x27d0
-   __DATA_DIRTY.__data: 0x90
-   __DATA_DIRTY.__bss: 0x260
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 145573
--  Symbols:   146141
+-  Symbols:   116802
 -  CStrings:  27028
 +  Functions: 146814
-+  Symbols:   146555
++  Symbols:   117134
 +  CStrings:  27118
- 
 Symbols:
 + +[PXCinematicResourceManager _assetNeedsMonocularDisparity:]
 + +[PXCinematicResourceManager _disparitySettingsForAsset:completion:]
@@ -1445,90 +1388,6 @@ Symbols:
 + _keypath_get_selector_cameraMake
 + _keypath_get_selector_cameraModel
 + _keypath_get_selector_lensModel
-+ _objc_msgSend$_assetNeedsMonocularDisparity:
-+ _objc_msgSend$_disparitySettingsForAsset:completion:
-+ _objc_msgSend$_firstInsertedIndexPath
-+ _objc_msgSend$_focusOnFixedLocationAtDetection:strong:
-+ _objc_msgSend$_snapshot
-+ _objc_msgSend$adjustmentData
-+ _objc_msgSend$animationDurationFor:animated:
-+ _objc_msgSend$assetWithOngoingResourceDownload
-+ _objc_msgSend$cancelFetching
-+ _objc_msgSend$cancelRetrievalRequest
-+ _objc_msgSend$creationRequestForProcessedProvenanceAssetFromUnprocessedProvenanceAsset:resourceInfo:
-+ _objc_msgSend$defaultTextureEffectWrapper
-+ _objc_msgSend$deserializeCompositionFromData:formatIdentifier:formatVersion:error:
-+ _objc_msgSend$deserializeMetadataWithType:fromGlobalMetadata:error:
-+ _objc_msgSend$developAssetIfNeeded
-+ _objc_msgSend$enableCinematicEverywhere
-+ _objc_msgSend$extractImageMetadataWithLowerBound:upperBound:completionHandler:
-+ _objc_msgSend$fetchSmartStyleExtendedProperties
-+ _objc_msgSend$fetcherState
-+ _objc_msgSend$finalizeDeferredPhotoIfNeeded
-+ _objc_msgSend$generation
-+ _objc_msgSend$hasDisparityTrack
-+ _objc_msgSend$hasReachedImageLoadedStateForAsset:
-+ _objc_msgSend$imageData
-+ _objc_msgSend$imageMetadata
-+ _objc_msgSend$includeProvenanceData
-+ _objc_msgSend$initWithImageData:contentType:options:timeZoneLookup:cacheImageSource:cacheImageData:
-+ _objc_msgSend$initWithIncludeAllPhotosData:includeLocationData:includeLivePhotoData:includeProvenanceData:
-+ _objc_msgSend$initWithLocalizedStringKey:
-+ _objc_msgSend$initWithMetadata:lowerBoundTimestamp:upperBoundTimestamp:
-+ _objc_msgSend$initWithQuality:globalMetadata:inputSize:
-+ _objc_msgSend$initWithSettings:downloadTimeout:initializationCallback:
-+ _objc_msgSend$isCinematicCapableVideo
-+ _objc_msgSend$loadOriginalResources
-+ _objc_msgSend$macStyleCollectionsIncludingTextureStyle:smartStyleRenderingVersion:
-+ _objc_msgSend$modifyTextureStyleAdjustment:
-+ _objc_msgSend$needsDeferredProcessing
-+ _objc_msgSend$performChangesWithProgress:completionHandler:
-+ _objc_msgSend$processContentProvenanceForSourceURLCollection:destinationURL:options:completionHandler:
-+ _objc_msgSend$processedJPEGImageData
-+ _objc_msgSend$processedProvenanceReplacementForSharingAsset:completionHandler:
-+ _objc_msgSend$processingDidCompleteWithAssetLocalIdentifier:error:uuid:
-+ _objc_msgSend$processingDidCompleteWithBookmarkData:error:uuid:
-+ _objc_msgSend$provenanceFetcher:didChangeFromUnprocessedAsset:
-+ _objc_msgSend$provenanceFetcherDidExtractImageMetadata:
-+ _objc_msgSend$provenanceFetcherStateDidChange:
-+ _objc_msgSend$provenanceMetadataFor:
-+ _objc_msgSend$provenanceOverlayController:didChangeFetcherState:forAsset:
-+ _objc_msgSend$provenanceOverlayController:didFailWithError:forAsset:
-+ _objc_msgSend$provenanceState
-+ _objc_msgSend$provenanceViewerDidRequestDismissWithUUID:
-+ _objc_msgSend$renderingVersion
-+ _objc_msgSend$replyWithSuccess:uuid:
-+ _objc_msgSend$resourceStatusForSettings:
-+ _objc_msgSend$setCinematographySnapshot:
-+ _objc_msgSend$setExcludeProvenanceByDefaultWhenSharing:
-+ _objc_msgSend$setFocusDistance:
-+ _objc_msgSend$setForceProvenanceMetadataBaking:
-+ _objc_msgSend$setGrainIntensity:
-+ _objc_msgSend$setIncludeAllAssetResources:
-+ _objc_msgSend$setInitialImage:
-+ _objc_msgSend$setLocalizedStringKey:
-+ _objc_msgSend$setPreferUncombinedProvenanceResources:
-+ _objc_msgSend$setShouldCopyProvenanceData:
-+ _objc_msgSend$setShouldIncludeProvenance:
-+ _objc_msgSend$setShouldStripProvenance:
-+ _objc_msgSend$setShowGlobalProvenanceExclusionSwitch:
-+ _objc_msgSend$setupHostingView
-+ _objc_msgSend$shouldCopyProvenanceData
-+ _objc_msgSend$shouldIncludeProvenance
-+ _objc_msgSend$shouldProcessProvenanceForAsset:shouldCopyProvenanceData:
-+ _objc_msgSend$smartStyleRenderingVersion
-+ _objc_msgSend$startFetchingImageData
-+ _objc_msgSend$statusForAsset:
-+ _objc_msgSend$textureEffectWrapper
-+ _objc_msgSend$totalExpectedBytes
-+ _objc_msgSend$totalWrittenBytes
-+ _objc_msgSend$updateTextureEffectWithPreset:textureIntensity:isGrainEnabled:
-+ _objc_msgSend$updateViewModelAssociationFrom:to:
-+ _objc_msgSend$urlQueryItemIncludeProvenanceKey
-+ _objc_msgSend$utcLowerBoundTimestamp
-+ _objc_msgSend$utcUpperBoundTimestamp
-+ _objc_msgSend$validateContentProvenanceForProcessedImageAtURL:options:completionHandler:
-+ _objc_msgSend$verifyAndExtractImageData
 + _symbolic SDySo7PHAssetC_____G 12PhotosUICore29ProvenanceCompareOverlayState33_D929CD7A32458BF9B0047AFCE31C2D59LLC
 + _symbolic SDy_____ypGSg So49PHResourceLocalAvailabilityRequestResourceInfoKeya
 + _symbolic SSSo20PXProvenanceMetadataCc
@@ -2745,8 +2604,6 @@ Symbols:
 - ___swift_closure_destructor.78Tm
 - ___swift_closure_destructor.95Tm
 - _get_witness_table 7SwiftUI15NavigationStackVyAA0C4PathVAA4ViewPAAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAgAE29navigationBarTitleDisplayModeyQrAA0cL4ItemV0mnO0OFQOyAgAE0kM0yQrqd__SyRd__lFQOyAA4FormVyAA05TupleJ0VyAA08ModifiedJ0VyAA7SectionVyAA4TextVATyAA6ToggleVyAZG_A1_QPGAA05EmptyF0VGAA32_EnvironmentKeyTransformModifierVySbGG_AXyAzgAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyA1__SbQo_AZGQPGG_SSQo__Qo__AA0iP0VyytAVyAgAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyAA6ButtonVyAA5ImageVG_AA28BorderedProminentButtonStyleVQo_AA01_xY15WritingModifierVyAA17ButtonBorderShapeVGGGQo_GAaFHPyHC
-- _objc_msgSend$initWithIncludeAllPhotosData:includeLocationData:includeLivePhotoData:
-- _objc_msgSend$macStyleCollections
 - _symbolic _____y__________y_____y_____y_____y_____y_____y_____y_____ADy_____yAGG_AIQPG_____G_____ySbGG_AFyAG_____yAI_SbQo_AGGQPGG_SSQo__Qo_______yytAEy_____y_____y_____G______Qo______y_____GGGQo_G 7SwiftUI15NavigationStackV AA0C4PathV AA4ViewPAAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQO AgAE29navigationBarTitleDisplayModeyQrAA0cL4ItemV0mnO0OFQO AgAE0kM0yQrqd__SyRd__lFQO AA4FormV AA05TupleJ0V AA08ModifiedJ0V AA7SectionV AA4TextV AA6ToggleV AA05EmptyF0V AA32_EnvironmentKeyTransformModifierV AgAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQO AA0iP0V AgAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQO AA6ButtonV AA5ImageV AA28BorderedProminentButtonStyleV AA01_xY15WritingModifierV AA17ButtonBorderShapeV
 CStrings:
 + "Adding assets to shared album `%{public}s` cancelled during provenance processing"

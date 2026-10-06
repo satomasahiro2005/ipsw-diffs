@@ -2,84 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/ScreenReaderOutput.framework/ScreenReaderOutput`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9cbf4` | `0x9dc3c` | **`+0x1048`** |
+| `__TEXT.__objc_methlist` | `0x9008` | `0x9200` | **`+0x1f8`** |
+| `__AUTH_CONST.__objc_const` | `0xbc58` | `0xbd48` | **`+0xf0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4780` | `0x4850` | **`+0xd0`** |
+| `__AUTH_CONST.__cfstring` | `0x5680` | `0x5740` | **`+0xc0`** |
+| `__TEXT.__cstring` | `0x5b79` | `0x5c0c` | **`+0x93`** |
+| `__TEXT.__unwind_info` | `0x28b8` | `0x2908` | **`+0x50`** |
+| `__DATA_CONST.__const` | `0x1270` | `0x1298` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x32a0` | `0x3280` | **`-0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x193c` | `0x1950` | **`+0x14`** |
+| `__DATA.__bss` | `0x1100` | `0x10f0` | **`-0x10`** |
+| `__DATA.__data` | `0x1680` | `0x1690` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x8c8` | `0x8d4` | **`+0xc`** |
+| `__TEXT.__oslogstring` | `0x287d` | `0x287a` | **`-0x3`** |
+
+### Other Changes
+
 ```diff
 
 -465.0.0.0.0
--  __TEXT.__text: 0x988a8
--  __TEXT.__objc_methlist: 0x9008
 +467.3.0.0.0
-+  __TEXT.__text: 0x99848
-+  __TEXT.__objc_methlist: 0x9200
-   __TEXT.__const: 0x183c
--  __TEXT.__cstring: 0x5b79
-+  __TEXT.__cstring: 0x5c0c
-   __TEXT.__swift5_typeref: 0xeec
-   __TEXT.__constg_swiftt: 0x960
-   __TEXT.__swift5_builtin: 0xb4
-   __TEXT.__swift5_types: 0xa4
--  __TEXT.__oslogstring: 0x287d
-+  __TEXT.__oslogstring: 0x287a
-   __TEXT.__swift5_reflstr: 0x605
-   __TEXT.__swift5_assocty: 0x78
-   __TEXT.__swift5_fieldmd: 0x7f8
 
-   __TEXT.__swift_as_ret: 0x5c
-   __TEXT.__swift_as_cont: 0x9c
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__gcc_except_tab: 0x193c
-+  __TEXT.__gcc_except_tab: 0x1950
-   __TEXT.__ustring: 0x9e
--  __TEXT.__unwind_info: 0x33b0
-+  __TEXT.__unwind_info: 0x3418
-   __TEXT.__eh_frame: 0xa30
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1270
-+  __DATA_CONST.__const: 0x1298
-   __DATA_CONST.__objc_classlist: 0x328
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x140
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4780
-+  __DATA_CONST.__objc_selrefs: 0x4850
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_superrefs: 0x210
-   __DATA_CONST.__objc_arraydata: 0x380
-   __DATA_CONST.__got: 0x790
--  __AUTH_CONST.__const: 0x32a0
--  __AUTH_CONST.__cfstring: 0x5680
--  __AUTH_CONST.__objc_const: 0xbc58
-+  __AUTH_CONST.__const: 0x3280
-+  __AUTH_CONST.__cfstring: 0x5740
-+  __AUTH_CONST.__objc_const: 0xbd48
-   __AUTH_CONST.__objc_intobj: 0xa68
-   __AUTH_CONST.__objc_dictobj: 0xa0
-   __AUTH_CONST.__objc_doubleobj: 0x10
-
-   __AUTH_CONST.__auth_got: 0x10a8
-   __AUTH.__objc_data: 0x360
-   __AUTH.__data: 0x80
--  __DATA.__objc_ivar: 0x8c8
--  __DATA.__data: 0x1680
-+  __DATA.__objc_ivar: 0x8d4
-+  __DATA.__data: 0x1690
-   __DATA.__common: 0x20
-   __DATA_DIRTY.__objc_data: 0x1d10
-   __DATA_DIRTY.__data: 0xc20
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3974
--  Symbols:   7779
+-  Symbols:   5771
 -  CStrings:  1077
 +  Functions: 4010
-+  Symbols:   7840
++  Symbols:   5812
 +  CStrings:  1081
- 
 Symbols:
 + -[SCROBrailleClient setTabularFocusRow:col:]
 + -[SCROBrailleClient setTabularZoomLevel:]
@@ -216,27 +170,6 @@ Symbols:
 + ___59-[SCROBrailleDisplayManager _eventQueue_stepTabularZoomIn:]_block_invoke
 + ___block_descriptor_80_e8_32s40s48s56s_e5_v8?0ls32l8s40l8s48l8s56l8
 + _kSCROBraillePrintTextRowsAttribute
-+ _objc_msgSend$_eventQueue_stepTabularZoomIn:
-+ _objc_msgSend$_resetTabularCellRoute
-+ _objc_msgSend$brailleDisplay:structuredBrailleRouterHitTabularCellWithKey:tableRow:tableCol:appToken:
-+ _objc_msgSend$brailleDisplay:structuredBrailleRouterHitTabularFocusedCellWithKey:appToken:
-+ _objc_msgSend$brailleDisplay:structuredBrailleRouterHitTabularStatusLineWithKey:appToken:
-+ _objc_msgSend$brailleDisplay:tabularZoomInWithKey:
-+ _objc_msgSend$brailleDisplay:tabularZoomOutWithKey:
-+ _objc_msgSend$currentPrintTextRows
-+ _objc_msgSend$cycleTabularZoom
-+ _objc_msgSend$decreaseTabularZoom
-+ _objc_msgSend$handleCommandTabularZoomInEvent:forDispatcher:
-+ _objc_msgSend$handleCommandTabularZoomOutEvent:forDispatcher:
-+ _objc_msgSend$handleTabularZoomDidChange:
-+ _objc_msgSend$increaseTabularZoom
-+ _objc_msgSend$routingKeyHitTestAtCellIndex:elementToken:isTextLine:brailleOffset:printTextOffset:statusCellIndex:shouldPerformActions:routerClickCount:tableRow:tableCol:
-+ _objc_msgSend$setIsTabularCellRoute:
-+ _objc_msgSend$setTabularCellCol:
-+ _objc_msgSend$setTabularCellRow:
-+ _objc_msgSend$setTabularFocusRow:col:
-+ _objc_msgSend$setTabularZoomLevel:
-+ _objc_msgSend$updateTabularFocusToRow:col:
 - GCC_except_table1062
 - GCC_except_table1064
 - GCC_except_table1066
@@ -331,7 +264,6 @@ Symbols:
 - _isBrailleXPCOn
 - _isBrailleXPCOn.brailleXPCOn
 - _isBrailleXPCOn.onceToken
-- _objc_msgSend$routingKeyHitTestAtCellIndex:elementToken:isTextLine:brailleOffset:printTextOffset:statusCellIndex:shouldPerformActions:routerClickCount:
 CStrings:
 + "SCROBraillePrintTextRowsAttribute"
 + "VOTEventCommandBrailleTabularZoomIn"

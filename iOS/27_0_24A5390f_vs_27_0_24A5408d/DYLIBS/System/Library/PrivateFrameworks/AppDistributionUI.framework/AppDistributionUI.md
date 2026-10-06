@@ -2,67 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/AppDistributionUI.framework/AppDistributionUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1630c` | `0x167b8` | **`+0x4ac`** |
+| `__AUTH.__data` | `0x170` | `0x208` | **`+0x98`** |
+| `__TEXT.__constg_swiftt` | `0x82c` | `0x85c` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x713` | `0x743` | **`+0x30`** |
+| `__TEXT.__swift5_typeref` | `0x77c` | `0x7ac` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x638` | `0x660` | **`+0x28`** |
+| `__DATA.__data` | `0x698` | `0x6c0` | **`+0x28`** |
+| `__TEXT.__swift5_fieldmd` | `0x85c` | `0x884` | **`+0x28`** |
+| `__TEXT.__const` | `0x2408` | `0x2428` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x7d0` | `0x7e8` | **`+0x18`** |
+| `__TEXT.__eh_frame` | `0x950` | `0x958` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0xac` | `0xb0` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -4.0.39.0.0
--  __TEXT.__text: 0x1630c
 +4.0.44.0.0
-+  __TEXT.__text: 0x167b8
-   __TEXT.__objc_methlist: 0x144
--  __TEXT.__const: 0x2408
--  __TEXT.__swift5_typeref: 0x77c
--  __TEXT.__cstring: 0x713
--  __TEXT.__constg_swiftt: 0x82c
--  __TEXT.__swift5_fieldmd: 0x85c
-+  __TEXT.__const: 0x2428
-+  __TEXT.__swift5_typeref: 0x7ac
-+  __TEXT.__cstring: 0x743
-+  __TEXT.__constg_swiftt: 0x85c
-+  __TEXT.__swift5_fieldmd: 0x884
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_proto: 0x1fc
--  __TEXT.__swift5_types: 0xac
-+  __TEXT.__swift5_types: 0xb0
-   __TEXT.__swift5_capture: 0x128
-   __TEXT.__oslogstring: 0x15a
-   __TEXT.__swift_as_entry: 0x14
 
-   __TEXT.__swift_as_cont: 0x24
-   __TEXT.__swift5_reflstr: 0x9
-   __TEXT.__swift5_assocty: 0x18
--  __TEXT.__unwind_info: 0x7d0
--  __TEXT.__eh_frame: 0x950
-+  __TEXT.__unwind_info: 0x7e8
-+  __TEXT.__eh_frame: 0x958
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x1618
-   __AUTH_CONST.__objc_const: 0x410
--  __AUTH_CONST.__auth_got: 0x638
-+  __AUTH_CONST.__auth_got: 0x660
-   __AUTH.__objc_data: 0x760
--  __AUTH.__data: 0x170
--  __DATA.__data: 0x698
-+  __AUTH.__data: 0x208
-+  __DATA.__data: 0x6c0
-   __DATA.__bss: 0x3f80
-   __DATA.__common: 0x38
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 704
--  Symbols:   552
+-  Symbols:   452
 -  CStrings:  46
 +  Functions: 712
-+  Symbols:   560
++  Symbols:   460
 +  CStrings:  47
- 
 Symbols:
 + _swift_cvw_initEnumMetadataMultiPayloadWithLayoutString
 + _swift_cvw_multiPayloadEnumGeneric_destructiveInjectEnumTag

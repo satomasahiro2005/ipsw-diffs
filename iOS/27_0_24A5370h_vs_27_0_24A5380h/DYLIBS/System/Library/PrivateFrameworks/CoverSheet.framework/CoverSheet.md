@@ -2,89 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/CoverSheet.framework/CoverSheet`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x1310` | `0xf00` | **`-0x410`** |
+| `__DATA_DIRTY.__objc_data` | `0x39d0` | `0x3de0` | **`+0x410`** |
+| `__TEXT.__text` | `0x18c2f4` | `0x18c5f0` | **`+0x2fc`** |
+| `__AUTH_CONST.__cfstring` | `0xc720` | `0xc7c0` | **`+0xa0`** |
+| `__TEXT.__const` | `0x402c` | `0x409c` | **`+0x70`** |
+| `__TEXT.__cstring` | `0xc9ec` | `0xca4a` | **`+0x5e`** |
+| `__DATA.__data` | `0x5678` | `0x56a8` | **`+0x30`** |
+| `__AUTH_CONST.__objc_const` | `0x3c670` | `0x3c698` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x40a8` | `0x40d0` | **`+0x28`** |
+| `__AUTH_CONST.__auth_got` | `0xd18` | `0xd28` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0xc618` | `0xc628` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x4830` | `0x4840` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x127c` | `0x1270` | **`-0xc`** |
+| `__DATA.__bss` | `0x121` | `0x119` | **`-0x8`** |
+| `__DATA_DIRTY.__bss` | `0xd8` | `0xe0` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x16444` | `0x1644c` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x1b90` | `0x1b94` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x18c2f4
--  __TEXT.__objc_methlist: 0x16444
--  __TEXT.__const: 0x402c
--  __TEXT.__cstring: 0xc9ec
-+  __TEXT.__text: 0x18c5f0
-+  __TEXT.__objc_methlist: 0x1644c
-+  __TEXT.__const: 0x409c
-+  __TEXT.__cstring: 0xca4a
-   __TEXT.__oslogstring: 0x8e7c
--  __TEXT.__gcc_except_tab: 0x127c
-+  __TEXT.__gcc_except_tab: 0x1270
-   __TEXT.__ustring: 0xa4
-   __TEXT.__dlopen_cstrs: 0x108
--  __TEXT.__unwind_info: 0x4830
-+  __TEXT.__unwind_info: 0x4840
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x40a8
-+  __DATA_CONST.__const: 0x40d0
-   __DATA_CONST.__objc_classlist: 0x7b0
-   __DATA_CONST.__objc_catlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x670
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xc618
-+  __DATA_CONST.__objc_selrefs: 0xc628
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x5f0
-   __DATA_CONST.__objc_arraydata: 0x1078
-   __DATA_CONST.__got: 0x1588
-   __AUTH_CONST.__const: 0xd10
--  __AUTH_CONST.__cfstring: 0xc720
--  __AUTH_CONST.__objc_const: 0x3c670
-+  __AUTH_CONST.__cfstring: 0xc7c0
-+  __AUTH_CONST.__objc_const: 0x3c698
-   __AUTH_CONST.__objc_arrayobj: 0x1248
-   __AUTH_CONST.__objc_intobj: 0x438
-   __AUTH_CONST.__objc_doubleobj: 0x660
--  __AUTH_CONST.__auth_got: 0xd18
--  __AUTH.__objc_data: 0x1310
--  __DATA.__objc_ivar: 0x1b90
--  __DATA.__data: 0x5678
--  __DATA.__bss: 0x121
-+  __AUTH_CONST.__auth_got: 0xd28
-+  __AUTH.__objc_data: 0xf00
-+  __DATA.__objc_ivar: 0x1b94
-+  __DATA.__data: 0x56a8
-+  __DATA.__bss: 0x119
-   __DATA.__common: 0x20
--  __DATA_DIRTY.__objc_data: 0x39d0
--  __DATA_DIRTY.__bss: 0xd8
-+  __DATA_DIRTY.__objc_data: 0x3de0
-+  __DATA_DIRTY.__bss: 0xe0
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
+-149.0.0.0.0
++152.100.0.0.0
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 7924
--  Symbols:   28403
--  CStrings:  4237
+-  Symbols:   14029
+-  CStrings:  2650
 +  Functions: 7930
-+  Symbols:   28435
-+  CStrings:  4247
- 
-Sections:
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
++  Symbols:   14052
++  CStrings:  2655
 Symbols:
 + GCC_except_table430
 + GCC_except_table434
@@ -124,7 +76,6 @@ Symbols:
 + _kAKSInternalInfoGroupSeedWrappingType
 + _kAKSInternalInfoGroupUserCount
 + _kAKSInternalInfoVolumeBagVEKCacheStatus
-+ _objc_msgSend$setInterfaceOrientation:
 + _pdk_generate
 - GCC_except_table429
 - GCC_except_table433
@@ -142,12 +93,10 @@ Symbols:
 - GCC_except_table835
 - ___block_descriptor_72_e8_32s_e63_v24?0"FBSMutableSceneSettings"8"FBSSceneTransitionContext"16ls32l8
 - ___block_descriptor_80_e8_32s40s_e43_v16?0"UIMutableApplicationSceneSettings"8ls32l8s40l8
-- _objc_msgSend$frameForBackgroundContentViewController:
 CStrings:
 + "GroupSeedGeneration"
 + "GroupSeedKCV"
 + "GroupSeedWrappingType"
 + "GroupUserCount"
 + "VolumeBagVEKCacheStatus"
-
 ```

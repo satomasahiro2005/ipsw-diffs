@@ -2,19 +2,22 @@
 
 > `/System/Library/ExtensionKit/Extensions/AirDropSettingsIntents.appex/AirDropSettingsIntents`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x190` | `0x180` | **`-0x10`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__swift5_typeref`
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__auth_got: 0x508
--  __DATA_CONST.__got: 0x190
-+  __DATA_CONST.__got: 0x180
-   __DATA_CONST.__auth_ptr: 0x6c8
-   __DATA.__objc_const: 0x90
-   __DATA.__objc_selrefs: 0x18
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-
+-1259.0.0.0.0
++2027.0.2.0.0
 ```

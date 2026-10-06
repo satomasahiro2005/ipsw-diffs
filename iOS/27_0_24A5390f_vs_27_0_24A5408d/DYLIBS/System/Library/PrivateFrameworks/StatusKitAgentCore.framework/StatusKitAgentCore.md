@@ -2,74 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/StatusKitAgentCore.framework/StatusKitAgentCore`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1bca14` | `0x1bd558` | **`+0xb44`** |
+| `__AUTH.__data` | `0x198` | `0x230` | **`+0x98`** |
+| `__TEXT.__oslogstring` | `0x19266` | `0x192d6` | **`+0x70`** |
+| `__DATA.__data` | `0x1c30` | `0x1c90` | **`+0x60`** |
+| `__TEXT.__swift5_typeref` | `0x29b6` | `0x295e` | **`-0x58`** |
+| `__DATA_DIRTY.__data` | `0x1f88` | `0x1f48` | **`-0x40`** |
+| `__TEXT.__cstring` | `0x96ac` | `0x96dc` | **`+0x30`** |
+| `__TEXT.__constg_swiftt` | `0x1c08` | `0x1c30` | **`+0x28`** |
+| `__TEXT.__swift5_fieldmd` | `0x1470` | `0x1498` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x3240` | `0x3260` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x1600` | `0x1610` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x1d0` | `0x1d4` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__swift5_reflstr`
+
+### Other Changes
 
 ```diff
 
 -151.100.1.0.0
--  __TEXT.__text: 0x1bca14
 +154.100.1.0.0
-+  __TEXT.__text: 0x1bd558
-   __TEXT.__objc_methlist: 0xb0f0
-   __TEXT.__const: 0x5c08
--  __TEXT.__cstring: 0x96ac
--  __TEXT.__oslogstring: 0x19266
-+  __TEXT.__cstring: 0x96dc
-+  __TEXT.__oslogstring: 0x192d6
-   __TEXT.__gcc_except_tab: 0xe90
--  __TEXT.__swift5_typeref: 0x29b6
--  __TEXT.__constg_swiftt: 0x1c08
-+  __TEXT.__swift5_typeref: 0x295e
-+  __TEXT.__constg_swiftt: 0x1c30
-   __TEXT.__swift5_reflstr: 0x1527
--  __TEXT.__swift5_fieldmd: 0x1470
-+  __TEXT.__swift5_fieldmd: 0x1498
-   __TEXT.__swift5_builtin: 0x26c
-   __TEXT.__swift5_assocty: 0x470
-   __TEXT.__swift5_proto: 0x2bc
--  __TEXT.__swift5_types: 0x1d0
-+  __TEXT.__swift5_types: 0x1d4
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_protos: 0x1c
-   __TEXT.__swift5_capture: 0x19f0
 
-   __DATA_CONST.__objc_arraydata: 0x18
-   __DATA_CONST.__got: 0xd88
-   __AUTH_CONST.__const: 0x6628
--  __AUTH_CONST.__cfstring: 0x3240
-+  __AUTH_CONST.__cfstring: 0x3260
-   __AUTH_CONST.__objc_const: 0x11740
-   __AUTH_CONST.__objc_intobj: 0x3d8
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x1600
-+  __AUTH_CONST.__auth_got: 0x1610
-   __AUTH.__objc_data: 0x1360
--  __AUTH.__data: 0x198
-+  __AUTH.__data: 0x230
-   __DATA.__objc_ivar: 0x808
--  __DATA.__data: 0x1c30
-+  __DATA.__data: 0x1c90
-   __DATA.__bss: 0x4280
-   __DATA_DIRTY.__objc_data: 0x3ad0
--  __DATA_DIRTY.__data: 0x1f88
-+  __DATA_DIRTY.__data: 0x1f48
-   __DATA_DIRTY.__bss: 0x14d0
-   __DATA_DIRTY.__common: 0xb0
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7777
--  Symbols:   15866
+-  Symbols:   14183
 -  CStrings:  2600
 +  Functions: 7782
-+  Symbols:   15884
++  Symbols:   14201
 +  CStrings:  2603
- 
 Symbols:
 + -[SKAInvitationManager _sendReverseInvitationIfNeededForPresenceIdentifier:incomingChannel:senderHandle:invitedHandle:dateInvitationCreated:serviceIdentifier:databaseContext:]
 + -[SKAServerBag presenceReverseInviteEnabledByServerForServiceIdentifier:]
@@ -114,8 +80,6 @@ Symbols:
 + _$ss22_ContiguousArrayBufferV20_consumeAndCreateNew14bufferIsUnique15minimumCapacity13growForAppendAByxGSb_SiSbtF10Foundation4DateV_Tg5Tm
 + _$ss23_ContiguousArrayStorageCy18StatusKitAgentCore24SKAPresentDevicesManagerC14PayloadOutcomeOGMR
 + _$ss23_ContiguousArrayStorageCy18StatusKitAgentCore24SKAPresentDevicesManagerC14PayloadOutcomeOGMd
-+ _objc_msgSend$_sendReverseInvitationIfNeededForPresenceIdentifier:incomingChannel:senderHandle:invitedHandle:dateInvitationCreated:serviceIdentifier:databaseContext:
-+ _objc_msgSend$presenceReverseInviteEnabledByServerForServiceIdentifier:
 + _swift_cvw_initEnumMetadataMultiPayloadWithLayoutString
 + _swift_cvw_multiPayloadEnumGeneric_destructiveInjectEnumTag
 + _swift_cvw_multiPayloadEnumGeneric_getEnumTag
@@ -160,8 +124,6 @@ Symbols:
 - _$ss6ResultOy18StatusKitAgentCore24SKAPresentDevicesManagerC29SKAPayloadVerificationContextVAE0I15ValidationErrorVGSgMR
 - _$ss6ResultOy18StatusKitAgentCore24SKAPresentDevicesManagerC29SKAPayloadVerificationContextVAE0I15ValidationErrorVGSgMd
 - _$ss6ResultOy18StatusKitAgentCore24SKAPresentDevicesManagerC29SKAPayloadVerificationContextVAE0I15ValidationErrorVGSgWOhTm
-- _objc_msgSend$_sendReverseInvitationIfNeededForPresenceIdentifier:incomingChannel:senderHandle:invitedHandle:dateInvitationCreated:databaseContext:
-- _objc_msgSend$presenceReverseInviteEnabledByServer
 - _symbolic Say_____y__________GG s6ResultOsRi_zRi0_zrlE 18StatusKitAgentCore24SKAPresentDevicesManagerC29SKAPayloadVerificationContextV AE0I15ValidationErrorV
 - _symbolic ScSy_____y__________GG s6ResultOsRi_zRi0_zrlE 18StatusKitAgentCore24SKAPresentDevicesManagerC29SKAPayloadVerificationContextV AE0I15ValidationErrorV
 - _symbolic _____y__________G s6ResultOsRi_zRi0_zrlE 18StatusKitAgentCore24SKAPresentDevicesManagerC29SKAPayloadVerificationContextV AE0I15ValidationErrorV

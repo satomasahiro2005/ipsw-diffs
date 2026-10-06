@@ -2,19 +2,26 @@
 
 > `/System/Library/Audio/MIDI Drivers/AppleIDAMDriver.plugin/AppleIDAMDriver`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c310` | `0x1c2dc` | **`-0x34`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1c310
-+  __TEXT.__text: 0x1c2dc
-   __TEXT.__realtime: 0x4c4
-   __TEXT.__auth_stubs: 0x780
-   __TEXT.__const: 0x290
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA.__data : content changed
+-329.0.0.0.0
++330.0.0.0.0
 Functions:
 ~ sub_960 : 1464 -> 1460
 ~ sub_59b0 -> sub_59ac : 2936 -> 2912
@@ -27,5 +34,4 @@ Functions:
 ~ sub_ffbc -> sub_ff9c : 140 -> 144
 ~ sub_14138 -> sub_1411c : 152 -> 132
 ~ sub_17d3c -> sub_17d0c : 2496 -> 2492
-
 ```

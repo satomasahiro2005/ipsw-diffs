@@ -2,67 +2,45 @@
 
 > `/System/Library/ExtensionKit/Extensions/PhotosMessagesApp.appex/PhotosMessagesApp`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5304` | `0x5630` | **`+0x32c`** |
+| `__DATA_CONST.__cfstring` | `0x2e0` | `0x3c0` | **`+0xe0`** |
+| `__TEXT.__cstring` | `0x418` | `0x4b9` | **`+0xa1`** |
+| `__TEXT.__objc_methname` | `0x1dcc` | `0x1e52` | **`+0x86`** |
+| `__TEXT.__objc_stubs` | `0x1ce0` | `0x1d60` | **`+0x80`** |
+| `__DATA_CONST.__const` | `0x5d0` | `0x638` | **`+0x68`** |
+| `__TEXT.__auth_stubs` | `0x4a0` | `0x4d0` | **`+0x30`** |
+| `__DATA.__objc_selrefs` | `0x8d8` | `0x8f8` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0x260` | `0x278` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x4ac` | `0x4bc` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x1f8` | `0x200` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_const`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -912.0.234.0.0
--  __TEXT.__text: 0x5304
--  __TEXT.__auth_stubs: 0x4a0
--  __TEXT.__objc_stubs: 0x1ce0
--  __TEXT.__objc_methlist: 0x4ac
 +912.0.235.0.0
-+  __TEXT.__text: 0x5630
-+  __TEXT.__auth_stubs: 0x4d0
-+  __TEXT.__objc_stubs: 0x1d60
-+  __TEXT.__objc_methlist: 0x4bc
-   __TEXT.__const: 0x48
-   __TEXT.__gcc_except_tab: 0x168
--  __TEXT.__cstring: 0x418
--  __TEXT.__objc_methname: 0x1dcc
-+  __TEXT.__cstring: 0x4b9
-+  __TEXT.__objc_methname: 0x1e52
-   __TEXT.__oslogstring: 0x6b5
-   __TEXT.__objc_classname: 0xfc
-   __TEXT.__objc_methtype: 0x57d
--  __TEXT.__unwind_info: 0x1f8
--  __DATA_CONST.__const: 0x5d0
--  __DATA_CONST.__cfstring: 0x2e0
-+  __TEXT.__unwind_info: 0x200
-+  __DATA_CONST.__const: 0x638
-+  __DATA_CONST.__cfstring: 0x3c0
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__auth_got: 0x260
-+  __DATA_CONST.__auth_got: 0x278
-   __DATA_CONST.__got: 0x1b8
-   __DATA.__objc_const: 0x520
--  __DATA.__objc_selrefs: 0x8d8
-+  __DATA.__objc_selrefs: 0x8f8
-   __DATA.__objc_ivar: 0x38
-   __DATA.__objc_data: 0x50
-   __DATA.__data: 0x310
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 96
 -  Symbols:   139
 -  CStrings:  449
 +  Functions: 100
 +  Symbols:   142
 +  CStrings:  461
- 
 Symbols:
 + _PUProvenanceAssetsContainSensitiveEdits
 + _PXExists

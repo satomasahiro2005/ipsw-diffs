@@ -4,9 +4,7 @@
 
 ```diff
 
- 		<key>DevelopmentPhase</key>
- 		<string>FeatureComplete</string>
- 	</dict>
++	</dict>
 +	<key>FirewallAllowsFamilyCircle</key>
 +	<dict>
 +		<key>DevelopmentPhase</key>
@@ -16,9 +14,5 @@
 +	<dict>
 +		<key>DevelopmentPhase</key>
 +		<string>FeatureComplete</string>
-+	</dict>
- 	<key>Gecko</key>
- 	<dict>
- 		<key>DevelopmentPhase</key>
 
 ```

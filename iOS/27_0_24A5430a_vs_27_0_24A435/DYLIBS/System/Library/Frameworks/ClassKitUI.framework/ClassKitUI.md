@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/ClassKitUI.framework/ClassKitUI`
 
-```diff
+### Section Size Changes
 
- 152.0.14.0.0
--  __TEXT.__text: 0x23a90
-+  __TEXT.__text: 0x23a9c
-   __TEXT.__objc_methlist: 0x14
-   __TEXT.__const: 0x1638
-   __TEXT.__constg_swiftt: 0x988
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x23a90` | `0x23a9c` | **`+0xc`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_24727a008 -> sub_247c5d008 : 980 -> 992
+~ sub_24713e008 -> sub_247b20008 : 980 -> 992
 ```

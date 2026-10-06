@@ -2,88 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/ConversationKit.framework/ConversationKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8ecf48` | `0x8eeda0` | **`+0x1e58`** |
+| `__TEXT.__eh_frame` | `0x1b218` | `0x1b428` | **`+0x210`** |
+| `__AUTH_CONST.__const` | `0x42130` | `0x42270` | **`+0x140`** |
+| `__TEXT.__oslogstring` | `0x220f1` | `0x22201` | **`+0x110`** |
+| `__TEXT.__unwind_info` | `0x22630` | `0x226c0` | **`+0x90`** |
+| `__TEXT.__swift5_capture` | `0x11a00` | `0x11a88` | **`+0x88`** |
+| `__TEXT.__const` | `0x3f6c4` | `0x3f724` | **`+0x60`** |
+| `__AUTH_CONST.__objc_const` | `0x2bf78` | `0x2bf98` | **`+0x20`** |
+| `__DATA_DIRTY.__objc_data` | `0xf358` | `0xf378` | **`+0x20`** |
+| `__TEXT.__constg_swiftt` | `0x1fbd8` | `0x1fbf8` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x1f8f1` | `0x1f911` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0xfd4` | `0xff0` | **`+0x1c`** |
+| `__DATA_CONST.__const` | `0x5e78` | `0x5e88` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0x14ec0` | `0x14ed0` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x17db0` | `0x17dbc` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `0x5bc` | `0x5c8` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x5f48` | `0x5f50` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x6d8` | `0x6e0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -619.100.1.2.5
--  __TEXT.__text: 0x89e524
 +619.100.1.2.6
-+  __TEXT.__text: 0x8a01e8
-   __TEXT.__objc_methlist: 0xa6b0
--  __TEXT.__const: 0x3f6c4
-+  __TEXT.__const: 0x3f724
-   __TEXT.__cstring: 0x1e710
--  __TEXT.__oslogstring: 0x220f1
-+  __TEXT.__oslogstring: 0x22201
-   __TEXT.__swift5_typeref: 0x32ad4
--  __TEXT.__swift5_capture: 0x11a00
--  __TEXT.__constg_swiftt: 0x1fbd8
--  __TEXT.__swift5_reflstr: 0x1f8f1
--  __TEXT.__swift5_fieldmd: 0x17db0
-+  __TEXT.__swift5_capture: 0x11a88
-+  __TEXT.__constg_swiftt: 0x1fbf8
-+  __TEXT.__swift5_reflstr: 0x1f911
-+  __TEXT.__swift5_fieldmd: 0x17dbc
-   __TEXT.__swift5_builtin: 0xaa0
-   __TEXT.__swift5_assocty: 0x29a8
-   __TEXT.__swift5_proto: 0x1cd8
-   __TEXT.__swift5_types: 0x15b0
--  __TEXT.__swift_as_entry: 0x6d8
--  __TEXT.__swift_as_ret: 0x5bc
--  __TEXT.__swift_as_cont: 0xfd4
-+  __TEXT.__swift_as_entry: 0x6e0
-+  __TEXT.__swift_as_ret: 0x5c8
-+  __TEXT.__swift_as_cont: 0xff0
-   __TEXT.__swift5_protos: 0x3c4
-   __TEXT.__swift5_mpenum: 0x1d4
--  __TEXT.__unwind_info: 0x2b0f8
--  __TEXT.__eh_frame: 0x1b220
-+  __TEXT.__unwind_info: 0x2b1a0
-+  __TEXT.__eh_frame: 0x1b430
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x5e78
-+  __DATA_CONST.__const: 0x5e88
-   __DATA_CONST.__objc_classlist: 0xeb8
-   __DATA_CONST.__objc_catlist: 0x78
-   __DATA_CONST.__objc_protolist: 0x758
 
-   __DATA_CONST.__objc_protorefs: 0x3c0
-   __DATA_CONST.__objc_superrefs: 0x10
-   __DATA_CONST.__got: 0x36e0
--  __AUTH_CONST.__const: 0x42130
-+  __AUTH_CONST.__const: 0x42270
-   __AUTH_CONST.__cfstring: 0x200
--  __AUTH_CONST.__objc_const: 0x2bf78
--  __AUTH_CONST.__auth_got: 0x5f48
-+  __AUTH_CONST.__objc_const: 0x2bf98
-+  __AUTH_CONST.__auth_got: 0x5f50
-   __AUTH.__objc_data: 0x8e60
-   __AUTH.__data: 0x9558
-   __DATA.__objc_ivar: 0x34
-   __DATA.__data: 0xf300
-   __DATA.__objc_stublist: 0x10
-   __DATA.__common: 0xc80
--  __DATA_DIRTY.__objc_data: 0xf358
--  __DATA_DIRTY.__data: 0x14ec0
-+  __DATA_DIRTY.__objc_data: 0xf378
-+  __DATA_DIRTY.__data: 0x14ed0
-   __DATA_DIRTY.__bss: 0xcdd0
-   __DATA_DIRTY.__common: 0x1168
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 68357
+-  Functions: 68356
 -  Symbols:   110831
 -  CStrings:  4825
-+  Functions: 68408
++  Functions: 68401
 +  Symbols:   110876
 +  CStrings:  4829
- 
 Symbols:
 + _$s15ConversationKit31ScreenSharingInteractionSessionC23updateDisplayIdentifieryySSSgYaF
 + _$s15ConversationKit31ScreenSharingInteractionSessionC23updateDisplayIdentifieryySSSgYaFTQ1_

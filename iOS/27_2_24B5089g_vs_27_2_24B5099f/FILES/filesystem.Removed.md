@@ -94,10 +94,10 @@
 - `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v130_ane_8bit_combined.mlmodelc/analytics/coremldata.bin`
 - `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v130_ane_8bit_combined.mlmodelc/coremldata.bin`
 - `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v130_ane_8bit_combined.mlmodelc/metadata.json`
-- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v130_ane_8bit_combined.mlmodelc/model.specialization.bundle/H19.bundle/H19.e5`
-- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v130_ane_8bit_combined.mlmodelc/model.specialization.bundle/H19.bundle/ane_compile/multiprocedure/model.hwx`
-- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v130_ane_8bit_combined.mlmodelc/model.specialization.bundle/H19.bundle/main_ctx_128_090f2853/main_ctx_128_bnns/bnns_program.bnnsir`
-- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v130_ane_8bit_combined.mlmodelc/model.specialization.bundle/H19.bundle/main_ctx_512_1fd2fbc1/main_ctx_512_bnns/bnns_program.bnnsir`
+- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v130_ane_8bit_combined.mlmodelc/model.specialization.bundle/H17.bundle/H17.e5`
+- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v130_ane_8bit_combined.mlmodelc/model.specialization.bundle/H17.bundle/ane_compile/multiprocedure/model.hwx`
+- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v130_ane_8bit_combined.mlmodelc/model.specialization.bundle/H17.bundle/main_ctx_128_090f2853/main_ctx_128_bnns/bnns_program.bnnsir`
+- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v130_ane_8bit_combined.mlmodelc/model.specialization.bundle/H17.bundle/main_ctx_512_1fd2fbc1/main_ctx_512_bnns/bnns_program.bnnsir`
 - `/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/32023/Libraries/lib/clang/32023/include/metal/prebuilt_implicit_modules/18EQE29WGBPWX/monolithic_metal.pcm`
 - `/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/32023/Libraries/lib/clang/32023/include/metal/prebuilt_implicit_modules/1ZQNPYJRQCZMP/monolithic_metal.pcm`
 - `/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/32023/Libraries/lib/clang/32023/include/metal/prebuilt_implicit_modules/20LDZTG2AP79R/monolithic_metal.pcm`
@@ -149,8 +149,8 @@
 - `/System/Library/PrivateFrameworks/SiriMessagesFlow.framework/Templates/dialog/Labels.catfamily/SnippetLabels.cat/es-us.cat.bin`
 - `/System/Library/PrivateFrameworks/SiriUICore.framework/SUICPipelineState.pipelinelib/pipelines.g18g`
 - `/System/Library/PrivateFrameworks/TextInputUI.framework/TextInputUI_iOS.pipelinelib/pipelines.g18g`
-- `/System/Library/PrivateFrameworks/VisualIntelligenceCore.framework/visualgrounding_md11_v1_hmqukbnvbt_epoch_10_categorynumber32_palettized.bundle/H19.bundle/H19.e5`
-- `/System/Library/PrivateFrameworks/VisualIntelligenceCore.framework/visualgrounding_md11_v1_hmqukbnvbt_epoch_10_categorynumber32_palettized.bundle/H19.bundle/main/main_ane/model.hwx`
+- `/System/Library/PrivateFrameworks/VisualIntelligenceCore.framework/visualgrounding_md11_v1_hmqukbnvbt_epoch_10_categorynumber32_palettized.bundle/H17.bundle/H17.e5`
+- `/System/Library/PrivateFrameworks/VisualIntelligenceCore.framework/visualgrounding_md11_v1_hmqukbnvbt_epoch_10_categorynumber32_palettized.bundle/H17.bundle/main/main_ane/model.hwx`
 - `/System/Library/PrivateFrameworks/VisualIntelligenceCore.framework/visualgrounding_md11_v1_hmqukbnvbt_epoch_10_categorynumber32_palettized_text_feats.bin`
 - `/System/Library/ProductDocuments/RegulatoryImages/RegulatoryInfo-B482_default_DK.png`
 - `/System/Library/ProductDocuments/RegulatoryImages/RegulatoryInfo-B482_default_LT.png`

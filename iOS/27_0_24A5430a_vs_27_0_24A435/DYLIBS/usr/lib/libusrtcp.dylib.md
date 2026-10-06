@@ -2,14 +2,15 @@
 
 > `/usr/lib/libusrtcp.dylib`
 
-```diff
+### Section Size Changes
 
- 6681.2.2.0.0
--  __TEXT.__text: 0x5bbdc
-+  __TEXT.__text: 0x5bbcc
-   __TEXT.__const: 0x244
-   __TEXT.__oslogstring: 0xe6be
-   __TEXT.__cstring: 0x1a8e
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5bbdc` | `0x5bbcc` | **`-0x10`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _tcp_output : 32572 -> 32528
 ~ _tcp_check_timer_state : 1628 -> 1632

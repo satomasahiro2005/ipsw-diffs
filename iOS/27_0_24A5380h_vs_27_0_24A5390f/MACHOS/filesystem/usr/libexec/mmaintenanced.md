@@ -2,76 +2,50 @@
 
 > `/usr/libexec/mmaintenanced`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_capture`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x24480` | `0x24d84` | **`+0x904`** |
+| `__TEXT.__gcc_except_tab` | `0x864` | `0x96c` | **`+0x108`** |
+| `__DATA.__bss` | `0x2d0` | `0x280` | **`-0x50`** |
+| `__TEXT.__oslogstring` | `0x2d76` | `0x2dc6` | **`+0x50`** |
+| `__TEXT.__const` | `0x7f8` | `0x7b8` | **`-0x40`** |
+| `__TEXT.__cstring` | `0x1bbd` | `0x1bfd` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x9d0` | `0xa00` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x1438` | `0x1458` | **`+0x20`** |
+| `__TEXT.__auth_stubs` | `0x13c0` | `0x13e0` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0x9f0` | `0xa00` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x240` | `0x238` | **`-0x8`** |
+| `__TEXT.__init_offsets` | `0x8` | `0x4` | **`-0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_capture`
 - `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_selrefs`
+
+### Other Changes
 
 ```diff
 
 -233.0.0.502.1
--  __TEXT.__text: 0x24480
--  __TEXT.__auth_stubs: 0x13c0
 +233.0.5.0.0
-+  __TEXT.__text: 0x24d84
-+  __TEXT.__auth_stubs: 0x13e0
-   __TEXT.__objc_stubs: 0x540
--  __TEXT.__init_offsets: 0x8
--  __TEXT.__oslogstring: 0x2d76
--  __TEXT.__const: 0x7f8
--  __TEXT.__cstring: 0x1bbd
--  __TEXT.__gcc_except_tab: 0x864
-+  __TEXT.__init_offsets: 0x4
-+  __TEXT.__const: 0x7b8
-+  __TEXT.__gcc_except_tab: 0x96c
-+  __TEXT.__cstring: 0x1bfd
-+  __TEXT.__oslogstring: 0x2dc6
-   __TEXT.__swift5_typeref: 0xfe
-   __TEXT.__swift5_capture: 0x1ec
-   __TEXT.__constg_swiftt: 0x44
 
-   __TEXT.__swift5_proto: 0x8
-   __TEXT.__objc_methtype: 0x1d
-   __TEXT.__objc_methname: 0x352
--  __TEXT.__unwind_info: 0x9d0
-+  __TEXT.__unwind_info: 0xa00
-   __TEXT.__eh_frame: 0x230
--  __DATA_CONST.__const: 0x1438
-+  __DATA_CONST.__const: 0x1458
-   __DATA_CONST.__cfstring: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x9f0
--  __DATA_CONST.__got: 0x240
-+  __DATA_CONST.__auth_got: 0xa00
-+  __DATA_CONST.__got: 0x238
-   __DATA_CONST.__auth_ptr: 0xa0
-   __DATA.__objc_selrefs: 0x150
-   __DATA.__data: 0x1a8
--  __DATA.__bss: 0x2d0
-+  __DATA.__bss: 0x280
-   __DATA.__common: 0x64
-   - /AppleInternal/Library/Frameworks/TapToRadarKit.framework/TapToRadarKit
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 695
 +  Functions: 698
-   Symbols:   1405
+
 -  CStrings:  478
 +  CStrings:  485
- 
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/ecc_api.o
 + _Z21migrate_file_locationRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES7_16migrate_option_t

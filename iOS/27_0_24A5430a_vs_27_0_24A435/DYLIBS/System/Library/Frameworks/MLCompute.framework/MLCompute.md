@@ -2,23 +2,18 @@
 
 > `/System/Library/Frameworks/MLCompute.framework/MLCompute`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x112e84` | `0x112ef0` | **`+0x6c`** |
+
+### Other Changes
+
 ```diff
 
- 87.0.0.0.0
--  __TEXT.__text: 0x112e84
-+  __TEXT.__text: 0x112ef0
-   __TEXT.__objc_methlist: 0xaf14
-   __TEXT.__const: 0x5b0
-   __TEXT.__oslogstring: 0x8ece
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 4281
 +  Functions: 4282
-   Symbols:   7872
-   CStrings:  1384
- 
 Functions:
 + _OUTLINED_FUNCTION_1
 ~ -[MLCDeviceGPU allocateDeviceHeapForGraph:forInference:] : 3660 -> 3656

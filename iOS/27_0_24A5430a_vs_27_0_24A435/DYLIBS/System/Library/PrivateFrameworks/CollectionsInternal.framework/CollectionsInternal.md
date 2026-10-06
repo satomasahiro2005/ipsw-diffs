@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CollectionsInternal.framework/CollectionsInternal`
 
-```diff
+### Section Size Changes
 
- 5027.0.64.0.0
--  __TEXT.__text: 0x133d18
-+  __TEXT.__text: 0x133db8
-   __TEXT.__swift5_typeref: 0x1881
-   __TEXT.__const: 0x881c
-   __TEXT.__cstring: 0x721
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x133d18` | `0x133db8` | **`+0xa0`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_18f302b84 -> sub_18f39ab84 : 2356 -> 2348
 ~ sub_18f31b8cc -> sub_18f3b38c4 : 5544 -> 5488

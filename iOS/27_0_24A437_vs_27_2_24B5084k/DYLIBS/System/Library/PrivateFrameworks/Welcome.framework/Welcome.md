@@ -2,112 +2,69 @@
 
 > `/System/Library/PrivateFrameworks/Welcome.framework/Welcome`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x59880` | `0x3a22c` | **`-0x1f654`** |
+| `__TEXT.__swift5_typeref` | `0x65a0` | `0x24a4` | **`-0x40fc`** |
+| `__TEXT.__const` | `0x31d4` | `0x18d4` | **`-0x1900`** |
+| `__DATA.__bss` | `0x2558` | `0x1368` | **`-0x11f0`** |
+| `__AUTH_CONST.__const` | `0x1d78` | `0xe28` | **`-0xf50`** |
+| `__DATA.__data` | `0x1ca8` | `0x1058` | **`-0xc50`** |
+| `__TEXT.__constg_swiftt` | `0x18a0` | `0xddc` | **`-0xac4`** |
+| `__TEXT.__unwind_info` | `0x1240` | `0xa90` | **`-0x7b0`** |
+| `__AUTH.__data` | `0xb00` | `0x3e8` | **`-0x718`** |
+| `__AUTH_CONST.__auth_got` | `0x1168` | `0xb08` | **`-0x660`** |
+| `__TEXT.__swift5_fieldmd` | `0xc20` | `0x624` | **`-0x5fc`** |
+| `__TEXT.__eh_frame` | `0x844` | `0x3dc` | **`-0x468`** |
+| `__TEXT.__swift5_reflstr` | `0x7a8` | `0x3e7` | **`-0x3c1`** |
+| `__DATA_CONST.__got` | `0x7f0` | `0x438` | **`-0x3b8`** |
+| `__TEXT.__swift5_capture` | `0x5c8` | `0x334` | **`-0x294`** |
+| `__TEXT.__cstring` | `0x768` | `0x575` | **`-0x1f3`** |
+| `__TEXT.__swift5_assocty` | `0x430` | `0x240` | **`-0x1f0`** |
+| `__AUTH_CONST.__objc_const` | `0x2f8` | `0x148` | **`-0x1b0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1f8` | `0x48` | **`-0x1b0`** |
+| `__TEXT.__oslogstring` | `0x1c4` | `0x85` | **`-0x13f`** |
+| `__AUTH.__objc_data` | `0x118` | `—` | **`-0x118`** |
+| `__TEXT.__swift5_proto` | `0x124` | `0x94` | **`-0x90`** |
+| `__TEXT.__swift5_types` | `0x110` | `0x8c` | **`-0x84`** |
+| `__TEXT.__objc_methlist` | `0x70` | `0x38` | **`-0x38`** |
+| `__TEXT.__swift5_builtin` | `0x28` | `—` | **`-0x28`** |
+| `__TEXT.__swift_as_cont` | `0x44` | `0x1c` | **`-0x28`** |
+| `__DATA_CONST.__const` | `0xd0` | `0xb0` | **`-0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x28` | `0x10` | **`-0x18`** |
+| `__TEXT.__swift_as_entry` | `0x1c` | `0x10` | **`-0xc`** |
+| `__TEXT.__swift_as_ret` | `0x1c` | `0x10` | **`-0xc`** |
+| `__TEXT.__swift5_mpenum` | `0x8` | `—` | **`-0x8`** |
+| `__TEXT.__swift5_protos` | `0xc` | `0x4` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -33.0.0.0.0
--  __TEXT.__text: 0x55c28
--  __TEXT.__objc_methlist: 0x70
--  __TEXT.__const: 0x31d4
--  __TEXT.__constg_swiftt: 0x18a0
--  __TEXT.__swift5_typeref: 0x65a0
--  __TEXT.__swift5_builtin: 0x28
--  __TEXT.__swift5_reflstr: 0x7a8
--  __TEXT.__swift5_fieldmd: 0xc20
--  __TEXT.__swift5_types: 0x110
--  __TEXT.__oslogstring: 0x1c4
--  __TEXT.__swift5_capture: 0x5c8
--  __TEXT.__cstring: 0x768
--  __TEXT.__swift5_assocty: 0x430
--  __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__swift5_protos: 0xc
--  __TEXT.__swift5_proto: 0x124
--  __TEXT.__swift_as_entry: 0x1c
--  __TEXT.__swift_as_ret: 0x1c
--  __TEXT.__swift_as_cont: 0x44
--  __TEXT.__unwind_info: 0x15e0
--  __TEXT.__eh_frame: 0x844
-+34.0.0.0.0
-+  __TEXT.__text: 0x37a30
-+  __TEXT.__objc_methlist: 0x38
-+  __TEXT.__const: 0x18d4
-+  __TEXT.__constg_swiftt: 0xddc
-+  __TEXT.__swift5_typeref: 0x24a4
-+  __TEXT.__swift5_fieldmd: 0x624
-+  __TEXT.__swift5_types: 0x8c
-+  __TEXT.__cstring: 0x575
-+  __TEXT.__swift5_reflstr: 0x3e7
-+  __TEXT.__swift5_proto: 0x94
-+  __TEXT.__swift5_assocty: 0x240
-+  __TEXT.__swift5_capture: 0x334
-+  __TEXT.__swift_as_entry: 0x10
-+  __TEXT.__swift_as_ret: 0x10
-+  __TEXT.__swift_as_cont: 0x1c
-+  __TEXT.__oslogstring: 0x85
-+  __TEXT.__swift5_protos: 0x4
-+  __TEXT.__unwind_info: 0xd18
-+  __TEXT.__eh_frame: 0x3dc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xd0
--  __DATA_CONST.__objc_classlist: 0x28
-+  __DATA_CONST.__const: 0xb0
-+  __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1f8
--  __DATA_CONST.__got: 0x7f0
--  __AUTH_CONST.__const: 0x1d78
--  __AUTH_CONST.__objc_const: 0x2f8
--  __AUTH_CONST.__auth_got: 0x1168
--  __AUTH.__objc_data: 0x118
--  __AUTH.__data: 0xb00
--  __DATA.__data: 0x1ca8
-+  __DATA_CONST.__objc_selrefs: 0x48
-+  __DATA_CONST.__got: 0x438
-+  __AUTH_CONST.__const: 0xe28
-+  __AUTH_CONST.__objc_const: 0x148
-+  __AUTH_CONST.__auth_got: 0xb08
-+  __AUTH.__data: 0x3e8
-+  __DATA.__data: 0x1058
-   __DATA.__common: 0xd
 -  - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 -  - /System/Library/Frameworks/AVKit.framework/AVKit
 -  - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 -  - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreText.framework/CoreText
-   - /System/Library/Frameworks/Foundation.framework/Foundation
++34.0.0.0.0
+
 -  - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-   - /System/Library/Frameworks/Symbols.framework/Symbols
-   - /System/Library/Frameworks/UIKit.framework/UIKit
+
 -  - /System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit
 -  - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
--  - /usr/lib/swift/libswiftAVFoundation.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftCoreImage.dylib
-   - /usr/lib/swift/libswiftCoreLocation.dylib
--  - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+-  - /usr/lib/swift/libswiftAVFoundation.dylib
+
+-  - /usr/lib/swift/libswiftCoreMIDI.dylib
+
 -  Functions: 1963
--  Symbols:   1106
+-  Symbols:   1047
 -  CStrings:  60
 +  Functions: 1077
-+  Symbols:   524
++  Symbols:   518
 +  CStrings:  41
- 
 Symbols:
 + ___swift_destroy_boxed_opaque_existential_0
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyACyACyACyAA012_ConditionalD0VyAEyAEyAA4TextVAGGAGGAEyACyAgA30_EnvironmentKeyWritingModifierVyAA13OpenURLActionVGGAOGGAA016_ForegroundStyleJ0VyAA017HierarchicalShapeN0VGGAA16_FlexFrameLayoutVGAKyAA0F9AlignmentOGGAA023AccessibilityAttachmentJ0VGAA015_ContainerValueiJ0VySbGGAA4ViewHPA5_AAA10_HPA2_AAA10_HPAzAA10_HPAwAA10_HPAqAA10_HPAiAA10_HPAhAA10_HPAgAA10_HPyHC_AgAA10_HPyHCHC_AgAA10_HPyHCHC_ApAA10_HPAoAA10_HPAgAA10_HPyHC_AnA0yJ0HPyHCHC_AoAA10_HPAgAA10_HPyHC_AnAA11_HPyHCHCHCHC_AvAA11_HPyHCHC_AyAA11_HPyHCHC_A1_AAA11_HPyHCHC_A4_AAA11_HPyHCHC_A8_AAA11_HPyHCHC
@@ -335,59 +292,6 @@ Symbols:
 - _kCAGravityResizeAspect
 - _kCAPackageTypeArchive
 - _keypath_get_selector_isGeometryFlipped
-- _objc_msgSend$activateConstraints:
-- _objc_msgSend$addChildViewController:
-- _objc_msgSend$addSublayer:
-- _objc_msgSend$addSubview:
-- _objc_msgSend$boolForKey:
-- _objc_msgSend$bottomAnchor
-- _objc_msgSend$bounds
-- _objc_msgSend$clearColor
-- _objc_msgSend$constraintEqualToAnchor:
-- _objc_msgSend$data
-- _objc_msgSend$dataForKey:
-- _objc_msgSend$defaultManager
-- _objc_msgSend$didMoveToParentViewController:
-- _objc_msgSend$disableActions
-- _objc_msgSend$dismissViewControllerAnimated:completion:
-- _objc_msgSend$fileExistsAtPath:
-- _objc_msgSend$init
-- _objc_msgSend$initWithLayer:
-- _objc_msgSend$initWithName:bundle:
-- _objc_msgSend$initWithURL:
-- _objc_msgSend$intrinsicContentSize
-- _objc_msgSend$isGeometryFlipped
-- _objc_msgSend$leadingAnchor
-- _objc_msgSend$linkWithBundleIdentifiers:
-- _objc_msgSend$packageWithContentsOfURL:type:options:error:
-- _objc_msgSend$packageWithData:type:options:error:
-- _objc_msgSend$play
-- _objc_msgSend$presentViewController:animated:completion:
-- _objc_msgSend$rootLayer
-- _objc_msgSend$setBackgroundColor:
-- _objc_msgSend$setContentsGravity:
-- _objc_msgSend$setDisableActions:
-- _objc_msgSend$setFillMode:
-- _objc_msgSend$setGeometryFlipped:
-- _objc_msgSend$setMasksToBounds:
-- _objc_msgSend$setModalInPresentation:
-- _objc_msgSend$setNeedsDisplay
-- _objc_msgSend$setObject:forKey:
-- _objc_msgSend$setPlayer:
-- _objc_msgSend$setPosition:
-- _objc_msgSend$setShowsPlaybackControls:
-- _objc_msgSend$setState:ofLayer:
-- _objc_msgSend$setState:ofLayer:transitionSpeed:
-- _objc_msgSend$setTransform:
-- _objc_msgSend$setTranslatesAutoresizingMaskIntoConstraints:
-- _objc_msgSend$setVideoGravity:
-- _objc_msgSend$standardUserDefaults
-- _objc_msgSend$stateOfLayer:
-- _objc_msgSend$states
-- _objc_msgSend$superlayer
-- _objc_msgSend$topAnchor
-- _objc_msgSend$trailingAnchor
-- _objc_msgSend$view
 - _objc_release_x21
 - _objc_release_x22
 - _objc_release_x25

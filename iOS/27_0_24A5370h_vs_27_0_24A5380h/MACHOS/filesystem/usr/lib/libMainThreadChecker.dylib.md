@@ -2,21 +2,26 @@
 
 > `/usr/lib/libMainThreadChecker.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x41f7c` | `0x41f80` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__init_offsets`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x41f7c
-+  __TEXT.__text: 0x41f80
-   __TEXT.__auth_stubs: 0x4d0
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__const: 0xd8
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA.__bss : content changed
+-64578.53.1.0.0
++64578.53.2.0.0
 Functions:
 ~ _resetDyldInsertLibraries : 424 -> 428
-
 ```

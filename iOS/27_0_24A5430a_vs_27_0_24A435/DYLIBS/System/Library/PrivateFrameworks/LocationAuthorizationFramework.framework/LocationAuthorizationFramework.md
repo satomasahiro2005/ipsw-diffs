@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/LocationAuthorizationFramework.framework/LocationAuthorizationFramework`
 
-```diff
+### Section Size Changes
 
- 3185.0.6.0.3
--  __TEXT.__text: 0x677e8
-+  __TEXT.__text: 0x6787c
-   __TEXT.__objc_methlist: 0x1330
-   __TEXT.__const: 0x2ae8
-   __TEXT.__cstring: 0x292d
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x677e8` | `0x6787c` | **`+0x94`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_2389c6d6c -> sub_2392bcd6c : 1592 -> 1604
 ~ sub_2389c73a4 -> sub_2392bd3b0 : 1416 -> 1452

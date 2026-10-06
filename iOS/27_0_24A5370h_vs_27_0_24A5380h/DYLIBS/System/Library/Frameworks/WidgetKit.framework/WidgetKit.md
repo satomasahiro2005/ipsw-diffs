@@ -2,117 +2,49 @@
 
 > `/System/Library/Frameworks/WidgetKit.framework/WidgetKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21731c` | `0x20efd4` | **`-0x8348`** |
+| `__DATA.__bss` | `0x15d60` | `0x14ff0` | **`-0xd70`** |
+| `__DATA_DIRTY.__bss` | `0x15600` | `0x15c80` | **`+0x680`** |
+| `__TEXT.__const` | `0x21b68` | `0x21838` | **`-0x330`** |
+| `__AUTH.__data` | `0x6008` | `0x5cf0` | **`-0x318`** |
+| `__DATA_DIRTY.__data` | `0x5d98` | `0x6060` | **`+0x2c8`** |
+| `__DATA.__data` | `0x6518` | `0x62c8` | **`-0x250`** |
+| `__TEXT.__eh_frame` | `0xe69c` | `0xe54c` | **`-0x150`** |
+| `__AUTH_CONST.__const` | `0x14520` | `0x14440` | **`-0xe0`** |
+| `__TEXT.__cstring` | `0x5156` | `0x5096` | **`-0xc0`** |
+| `__TEXT.__swift5_typeref` | `0xca42` | `0xc982` | **`-0xc0`** |
+| `__TEXT.__unwind_info` | `0x8e60` | `0x8da8` | **`-0xb8`** |
+| `__TEXT.__constg_swiftt` | `0xc03c` | `0xbfc0` | **`-0x7c`** |
+| `__TEXT.__swift5_fieldmd` | `0x7410` | `0x73b0` | **`-0x60`** |
+| `__AUTH_CONST.__auth_got` | `0x29d0` | `0x2980` | **`-0x50`** |
+| `__TEXT.__oslogstring` | `0x32f6` | `0x32b6` | **`-0x40`** |
+| `__TEXT.__swift5_proto` | `0x1618` | `0x15e0` | **`-0x38`** |
+| `__DATA_CONST.__const` | `0x870` | `0x840` | **`-0x30`** |
+| `__TEXT.__swift5_reflstr` | `0x5651` | `0x5621` | **`-0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa48` | `0xa30` | **`-0x18`** |
+| `__TEXT.__swift5_assocty` | `0x1b38` | `0x1b20` | **`-0x18`** |
+| `__TEXT.__swift5_types` | `0xa18` | `0xa0c` | **`-0xc`** |
+| `__DATA_CONST.__got` | `0x1848` | `0x1840` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x21731c
-+  __TEXT.__text: 0x20efd4
-   __TEXT.__objc_methlist: 0xdc8
--  __TEXT.__const: 0x21b68
--  __TEXT.__cstring: 0x5156
--  __TEXT.__swift5_typeref: 0xca42
--  __TEXT.__swift5_reflstr: 0x5651
--  __TEXT.__swift5_assocty: 0x1b38
--  __TEXT.__constg_swiftt: 0xc03c
--  __TEXT.__swift5_fieldmd: 0x7410
-+  __TEXT.__const: 0x21838
-+  __TEXT.__cstring: 0x5096
-+  __TEXT.__swift5_typeref: 0xc982
-+  __TEXT.__swift5_reflstr: 0x5621
-+  __TEXT.__swift5_assocty: 0x1b20
-+  __TEXT.__constg_swiftt: 0xbfc0
-+  __TEXT.__swift5_fieldmd: 0x73b0
-   __TEXT.__swift5_builtin: 0x294
--  __TEXT.__swift5_proto: 0x1618
--  __TEXT.__swift5_types: 0xa18
-+  __TEXT.__swift5_proto: 0x15e0
-+  __TEXT.__swift5_types: 0xa0c
-   __TEXT.__swift5_capture: 0x2d14
--  __TEXT.__oslogstring: 0x32f6
-+  __TEXT.__oslogstring: 0x32b6
-   __TEXT.__swift5_mpenum: 0xa8
-   __TEXT.__swift_as_entry: 0x340
-   __TEXT.__swift_as_ret: 0x3dc
-   __TEXT.__swift_as_cont: 0x5e8
-   __TEXT.__swift5_protos: 0x10c
--  __TEXT.__unwind_info: 0x8e60
--  __TEXT.__eh_frame: 0xe69c
-+  __TEXT.__unwind_info: 0x8da8
-+  __TEXT.__eh_frame: 0xe54c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x870
-+  __DATA_CONST.__const: 0x840
-   __DATA_CONST.__objc_classlist: 0x360
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0xd8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa48
-+  __DATA_CONST.__objc_selrefs: 0xa30
-   __DATA_CONST.__objc_protorefs: 0x80
--  __DATA_CONST.__got: 0x1848
--  __AUTH_CONST.__const: 0x14520
-+  __DATA_CONST.__got: 0x1840
-+  __AUTH_CONST.__const: 0x14440
-   __AUTH_CONST.__cfstring: 0xa0
-   __AUTH_CONST.__objc_const: 0x67d8
--  __AUTH_CONST.__auth_got: 0x29d0
-+  __AUTH_CONST.__auth_got: 0x2980
-   __AUTH.__objc_data: 0xce8
--  __AUTH.__data: 0x6008
--  __DATA.__data: 0x6518
--  __DATA.__bss: 0x15d60
-+  __AUTH.__data: 0x5cf0
-+  __DATA.__data: 0x62c8
-+  __DATA.__bss: 0x14ff0
-   __DATA.__common: 0x2a0
-   __DATA_DIRTY.__objc_data: 0xb80
--  __DATA_DIRTY.__data: 0x5d98
-+  __DATA_DIRTY.__data: 0x6060
-   __DATA_DIRTY.__common: 0x5c0
--  __DATA_DIRTY.__bss: 0x15600
-+  __DATA_DIRTY.__bss: 0x15c80
-   - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/Combine.framework/Combine
+-727.0.0.0.0
++734.0.0.0.0
 
-   - /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard
-   - /System/Library/PrivateFrameworks/BoardServices.framework/BoardServices
-   - /System/Library/PrivateFrameworks/ChronoServices.framework/ChronoServices
 -  - /System/Library/PrivateFrameworks/CollectionsInternal.framework/CollectionsInternal
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/CoreUI.framework/CoreUI
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12650
--  Symbols:   6273
--  CStrings:  758
+-  Symbols:   4302
+-  CStrings:  752
 +  Functions: 12504
-+  Symbols:   6252
-+  CStrings:  753
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   4284
++  CStrings:  747
 Symbols:
 + _associated conformance 9WidgetKit0A28PreferredColorSchemeModifierV7SwiftUI04ViewF0AA4BodyAdEP_AD0I0
 + _associated conformance 9WidgetKit36AllowsContentPreferredColorSchemeKeyVAA01_a11EnvironmentH0AA11CodingValueAaDP_SE
@@ -147,9 +79,6 @@ Symbols:
 - _associated conformance 9WidgetKit25ResolvedColorSchemePolicyVSLAASQ
 - _get_witness_table 7SwiftUI15ModifiedContentVyACyAA014_ViewModifier_D0Vy9WidgetKit017ColorSchemePolicyF0VGAA022_EnvironmentKeyWritingF0VyAA0iJ0OGGAA017_PreferenceActionF0VyAA09PreferredijM0VGGAA0E0HPAoaVHPAiaVHPyHC_AnA0eF0HPyHCHC_AtaWHPyHCHC
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE38addingHandGestureShortcutPlatformLayerQryFQOyAcAE01_d10BackgroundI0QryFQOyAA15ModifiedContentVyAGyAGyAGyAGyAGyAGyAGyAGyAGyAGyAGyAGyAA01_c9Modifier_L0Vy9WidgetKit015CommonArchivingn11EnvironmentM0VGAA01_r10KeyWritingM0VyAA14FontDefinition_pXpGGAOyAA8MaterialVSgGGAJ07Assuredn8MetadataM0VGAJ0nl7MarginsM0VGAJ0njM0VGAJ0n14ContainerShapeM0VGAJ0n12LayoutInsetsM0VGAJ0n7ScalingM0VGAJ017GaugeTintVibrancyM0VGAJ017ColorSchemePolicyM0VGAJ0n5IdiomM0VGAOySo9CHSWidgetCSgGGAOyAA13OpenURLActionVGG_Qo__Qo_HO
-- _objc_msgSend$allowsContentPreferredColorScheme
-- _objc_msgSend$colorScheme
-- _objc_msgSend$initWithColorScheme:allowsContentPreferredColorScheme:
 - _swift_isUniquelyReferenced_native
 - _symbolic _____ 7SwiftUI17EnvironmentValuesV9WidgetKitE025ExplicitColorSchemePolicyC3Key33_8874794CC36AFDFD17E9B4D4D5BB5971LLV
 - _symbolic _____ 9WidgetKit20ColorSchemePolicyKeyV
@@ -185,5 +114,4 @@ CStrings:
 - "Setting WidgetEnvironment.colorScheme is disallowed. Use WidgetEnvironment.colorSchemePolicy instead."
 - "colorScheme"
 - "colorSchemePolicy"
-
 ```

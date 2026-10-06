@@ -2,42 +2,23 @@
 
 > `/System/Library/PrivateFrameworks/ANECompiler.framework/libORTools.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x529570` | `0x526130` | **`-0x3440`** |
+| `__TEXT.__gcc_except_tab` | `0x27fc8` | `0x27fe8` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0xdf88` | `0xdf68` | **`-0x20`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x529570
-+  __TEXT.__text: 0x526130
-   __TEXT.__init_offsets: 0x3c
-   __TEXT.__const: 0x23bb8
--  __TEXT.__gcc_except_tab: 0x27fc8
-+  __TEXT.__gcc_except_tab: 0x27fe8
-   __TEXT.__cstring: 0x23222
--  __TEXT.__unwind_info: 0xdf88
-+  __TEXT.__unwind_info: 0xdf68
-   __TEXT.__eh_frame: 0x540
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x14b0
+-10.22.3.0.0
++10.23.3.0.0
 
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 11567
 +  Functions: 11565
-   Symbols:   32582
-   CStrings:  4405
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
 Functions:
 ~ __ZN19ORToolsCpTransposer22CreateLayerConstraintsEy : 3376 -> 3344
 ~ __ZN19ORToolsCpTransposer22PrintConstraintProblemEv : 1804 -> 1796
@@ -710,5 +691,4 @@ Functions:
 ~ __ZN4absl12lts_2024072219str_format_internal17ConsumeConversionILb1EEEPKcS4_S4_PNS1_17UnboundConversionEPi : 872 -> 864
 ~ __ZN4absl12lts_2024072219str_format_internal17ConsumeConversionILb0EEEPKcS4_S4_PNS1_17UnboundConversionEPi : 808 -> 792
 ~ __ZNK19operations_research6Domain16MultiplicationByExPb.cold.1 : 360 -> 344
-
 ```

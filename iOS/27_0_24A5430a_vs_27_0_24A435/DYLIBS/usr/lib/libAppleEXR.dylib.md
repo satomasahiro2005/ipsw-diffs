@@ -2,14 +2,15 @@
 
 > `/usr/lib/libAppleEXR.dylib`
 
-```diff
+### Section Size Changes
 
- 1006.0.0.0.0
--  __TEXT.__text: 0xa00f0
-+  __TEXT.__text: 0xa02ec
-   __TEXT.__objc_methlist: 0x254
-   __TEXT.__const: 0x211bc
-   __TEXT.__gcc_except_tab: 0x4e0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa00f0` | `0xa02ec` | **`+0x1fc`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __Z23ExtractInterleaved4_B44IjL10StreamType1ELS0_1ELS0_1ELS0_0EEvPKhmRK11ChannelInfoS5_S5_S5_PKtS7_S7_S7_RK8TileInfoRK20BlockChannelTileInfoPK11TileDecoderPvmSH_l : 3072 -> 3056
 ~ __Z23ExtractInterleaved4_B44ItL10StreamType0ELS0_0ELS0_0ELS0_1EEvPKhmRK11ChannelInfoS5_S5_S5_PKtS7_S7_S7_RK8TileInfoRK20BlockChannelTileInfoPK11TileDecoderPvmSH_l : 3100 -> 3108

@@ -2,95 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/VoiceProcessor.framework/VoiceProcessor`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x47c55` | `0x43d3c` | **`-0x3f19`** |
+| `__TEXT.__text` | `0x299e14` | `0x2974ec` | **`-0x2928`** |
+| `__AUTH_CONST.__const` | `0x17f90` | `0x18448` | **`+0x4b8`** |
+| `__TEXT.__gcc_except_tab` | `0x238a8` | `0x239b8` | **`+0x110`** |
+| `__TEXT.__unwind_info` | `0xc978` | `0xca50` | **`+0xd8`** |
+| `__TEXT.__oslogstring` | `0x1091a` | `0x10953` | **`+0x39`** |
+| `__AUTH_CONST.__auth_got` | `0x1560` | `0x1548` | **`-0x18`** |
+| `__TEXT.__const` | `0x5a4c` | `0x5a5c` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x299e14
-+  __TEXT.__text: 0x2974ec
-   __TEXT.__realtime: 0x1f70
-   __TEXT.__objc_methlist: 0x598
--  __TEXT.__const: 0x5a4c
-+  __TEXT.__const: 0x5a5c
-   __TEXT.__dlopen_cstrs: 0x116
-   __TEXT.__constg_swiftt: 0xc4
-   __TEXT.__swift5_typeref: 0xd9
-   __TEXT.__swift5_reflstr: 0x4a
-   __TEXT.__swift5_fieldmd: 0x4c
--  __TEXT.__oslogstring: 0x1091a
--  __TEXT.__cstring: 0x47c55
-+  __TEXT.__oslogstring: 0x10953
-+  __TEXT.__cstring: 0x43d3c
-   __TEXT.__swift5_capture: 0xe4
-   __TEXT.__swift5_proto: 0x4
-   __TEXT.__swift5_types: 0x4
-   __TEXT.__swift_as_entry: 0x24
-   __TEXT.__swift_as_ret: 0x1c
-   __TEXT.__swift_as_cont: 0x18
--  __TEXT.__gcc_except_tab: 0x238a8
--  __TEXT.__unwind_info: 0xc978
-+  __TEXT.__gcc_except_tab: 0x239b8
-+  __TEXT.__unwind_info: 0xca50
-   __TEXT.__eh_frame: 0x4b8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+-85.101.0.0.0
++85.102.0.0.0
 
-   __DATA_CONST.__objc_superrefs: 0x28
-   __DATA_CONST.__objc_arraydata: 0x258
-   __DATA_CONST.__got: 0x378
--  __AUTH_CONST.__const: 0x17f90
-+  __AUTH_CONST.__const: 0x18448
-   __AUTH_CONST.__cfstring: 0x3420
-   __AUTH_CONST.__objc_const: 0xb08
-   __AUTH_CONST.__weak_auth_got: 0x38
-
-   __AUTH_CONST.__objc_dictobj: 0x5a0
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x1560
-+  __AUTH_CONST.__auth_got: 0x1548
-   __AUTH.__objc_data: 0x140
-   __AUTH.__data: 0x60
-   __DATA.__objc_ivar: 0x48
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10495
--  Symbols:   26864
--  CStrings:  6680
+-  Symbols:   16072
+-  CStrings:  6256
 +  Functions: 10589
-+  Symbols:   27076
-+  CStrings:  6633
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   16190
++  CStrings:  6209
 Symbols:
 + GCC_except_table10000
 + GCC_except_table10008
@@ -6200,5 +6137,4 @@ CStrings:
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/valarray:831: libc++ Hardening assertion __i < size() failed: valarray::operator[] index out of bounds\n"
 - "@@ Strips Jun 11 2026 00:48:30"
 - "device pose is: %d"
-
 ```

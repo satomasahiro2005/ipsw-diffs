@@ -2,66 +2,40 @@
 
 > `/System/Library/Frameworks/MediaIntents.framework/MediaIntents`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x53e1c` | `0x56b30` | **`+0x2d14`** |
+| `__DATA.__bss` | `0x10000` | `0x11200` | **`+0x1200`** |
+| `__TEXT.__const` | `0xa3e8` | `0xace8` | **`+0x900`** |
+| `__AUTH_CONST.__const` | `0x3970` | `0x3bb0` | **`+0x240`** |
+| `__TEXT.__swift5_typeref` | `0x1dea` | `0x1ff4` | **`+0x20a`** |
+| `__DATA.__data` | `0x1658` | `0x1808` | **`+0x1b0`** |
+| `__TEXT.__swift5_fieldmd` | `0x1fe0` | `0x2180` | **`+0x1a0`** |
+| `__TEXT.__constg_swiftt` | `0x15f8` | `0x177c` | **`+0x184`** |
+| `__TEXT.__unwind_info` | `0x1ac0` | `0x1b90` | **`+0xd0`** |
+| `__TEXT.__swift5_proto` | `0xa0c` | `0xa9c` | **`+0x90`** |
+| `__TEXT.__eh_frame` | `0x12e8` | `0x1358` | **`+0x70`** |
+| `__TEXT.__swift5_reflstr` | `0xce7` | `0xd27` | **`+0x40`** |
+| `__TEXT.__swift5_types` | `0x284` | `0x2b0` | **`+0x2c`** |
+| `__AUTH_CONST.__auth_got` | `0x368` | `0x360` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__oslogstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x53e1c
--  __TEXT.__const: 0xa3e8
--  __TEXT.__swift5_typeref: 0x1dea
-+  __TEXT.__text: 0x56b30
-+  __TEXT.__const: 0xace8
-+  __TEXT.__swift5_typeref: 0x1ff4
-   __TEXT.__oslogstring: 0x78f
-   __TEXT.__cstring: 0x5ec
--  __TEXT.__constg_swiftt: 0x15f8
--  __TEXT.__swift5_reflstr: 0xce7
--  __TEXT.__swift5_fieldmd: 0x1fe0
-+  __TEXT.__constg_swiftt: 0x177c
-+  __TEXT.__swift5_reflstr: 0xd27
-+  __TEXT.__swift5_fieldmd: 0x2180
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_mpenum: 0xbc
--  __TEXT.__swift5_proto: 0xa0c
--  __TEXT.__swift5_types: 0x284
-+  __TEXT.__swift5_proto: 0xa9c
-+  __TEXT.__swift5_types: 0x2b0
-   __TEXT.__swift5_assocty: 0x78
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0x1ac0
--  __TEXT.__eh_frame: 0x12e8
-+  __TEXT.__unwind_info: 0x1b90
-+  __TEXT.__eh_frame: 0x1358
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x38
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x3970
--  __AUTH_CONST.__auth_got: 0x368
--  __DATA.__data: 0x1658
--  __DATA.__bss: 0x10000
-+  __AUTH_CONST.__const: 0x3bb0
-+  __AUTH_CONST.__auth_got: 0x360
-+  __DATA.__data: 0x1808
-+  __DATA.__bss: 0x11200
-   __DATA_DIRTY.__data: 0xa18
-   __DATA_DIRTY.__bss: 0x3f00
-   __DATA_DIRTY.__common: 0x20
+-3600.22.9.0.0
++3600.22.12.0.0
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 2614
--  Symbols:   958
+-  Symbols:   928
 +  Functions: 2719
-+  Symbols:   1012
-   CStrings:  83
- 
-Sections:
-~ __TEXT.__oslogstring : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   981
 Symbols:
 + ___swift_memcpy19_8
 + _associated conformance 12MediaIntents11AudioSearchV6SortByO10CodingKeys33_02044689CCB80052437AE0160996BF62LLOSHAASQ
@@ -121,5 +95,4 @@ Symbols:
 CStrings:
 + "Initialize RankingSignal with mediaType: %s, preferredSource: %s, searchTerms: %s, isWholeLibraryRequest: %{bool}d, isUnsafeSelfHarmQuery: %{bool}d, sortBy: %s"
 - "Initialize RankingSignal with mediaType: %s, preferredSource: %s, searchTerms: %s, isWholeLibraryRequest: %{bool}d, isUnsafeSelfHarmQuery: %{bool}d"
-
 ```

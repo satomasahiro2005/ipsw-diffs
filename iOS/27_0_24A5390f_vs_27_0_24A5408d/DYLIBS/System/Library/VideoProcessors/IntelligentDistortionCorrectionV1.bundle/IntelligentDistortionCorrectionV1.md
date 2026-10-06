@@ -2,58 +2,37 @@
 
 > `/System/Library/VideoProcessors/IntelligentDistortionCorrectionV1.bundle/IntelligentDistortionCorrectionV1`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x172f0` | `0x1328c` | **`-0x4064`** |
+| `__TEXT.__oslogstring` | `0x215a` | `—` | **`-0x215a`** |
+| `__TEXT.__cstring` | `0x55f1` | `0x4883` | **`-0xd6e`** |
+| `__AUTH_CONST.__objc_const` | `0x1620` | `0x1670` | **`+0x50`** |
+| `__DATA_DIRTY.__common` | `0x30` | `—` | **`-0x30`** |
+| `__TEXT.__const` | `0x1b0` | `0x180` | **`-0x30`** |
+| `__TEXT.__objc_methlist` | `0xd94` | `0xdc4` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x220` | `0x200` | **`-0x20`** |
+| `__AUTH_CONST.__cfstring` | `0xe20` | `0xe00` | **`-0x20`** |
+| `__DATA.__common` | `0x10` | `—` | **`-0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x790` | `0x7a0` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x2a8` | `0x298` | **`-0x10`** |
+| `__DATA.__objc_ivar` | `0x144` | `0x148` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -761.0.0.0.3
--  __TEXT.__text: 0x172f0
--  __TEXT.__objc_methlist: 0xd94
--  __TEXT.__const: 0x1b0
--  __TEXT.__cstring: 0x55f1
--  __TEXT.__oslogstring: 0x215a
--  __TEXT.__unwind_info: 0x2a8
 +764.22.5.122.2
-+  __TEXT.__text: 0x1328c
-+  __TEXT.__objc_methlist: 0xdc4
-+  __TEXT.__const: 0x180
-+  __TEXT.__cstring: 0x4883
-+  __TEXT.__unwind_info: 0x298
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x790
-+  __DATA_CONST.__objc_selrefs: 0x7a0
-   __DATA_CONST.__objc_superrefs: 0x28
-   __DATA_CONST.__got: 0x110
--  __AUTH_CONST.__cfstring: 0xe20
--  __AUTH_CONST.__objc_const: 0x1620
--  __AUTH_CONST.__auth_got: 0x220
--  __DATA.__objc_ivar: 0x144
-+  __AUTH_CONST.__cfstring: 0xe00
-+  __AUTH_CONST.__objc_const: 0x1670
-+  __AUTH_CONST.__auth_got: 0x200
-+  __DATA.__objc_ivar: 0x148
-   __DATA.__data: 0x180
--  __DATA.__common: 0x10
-   __DATA_DIRTY.__objc_data: 0x190
--  __DATA_DIRTY.__common: 0x30
-   __DATA_DIRTY.__bss: 0x8
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /System/Library/PrivateFrameworks/CMImaging.framework/CMImaging
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 501
 -  Symbols:   127
 -  CStrings:  594
 +  Functions: 512
 +  Symbols:   123
 +  CStrings:  473
- 
 Symbols:
 + _FigSignalErrorAtGM
 + _objc_retain_x25

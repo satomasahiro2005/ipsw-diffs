@@ -1,3 +1,3 @@
 ## AppleSMCFirmware.bin
 
-- `AppleSMCFirmware_H19_2-7372.40.166.0.8.v63.REL`
+- `AppleSMCFirmware_H17_2-7372.40.166.0.8.d93.REL`

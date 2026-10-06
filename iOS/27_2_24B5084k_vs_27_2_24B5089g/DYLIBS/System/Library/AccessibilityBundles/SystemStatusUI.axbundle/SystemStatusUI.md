@@ -2,43 +2,29 @@
 
 > `/System/Library/AccessibilityBundles/SystemStatusUI.axbundle/SystemStatusUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7528` | `0x7710` | **`+0x1e8`** |
+| `__TEXT.__objc_methlist` | `0xa58` | `0xa7c` | **`+0x24`** |
+| `__AUTH_CONST.__cfstring` | `0x28c0` | `0x28e0` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x23d1` | `0x23e2` | **`+0x11`** |
+| `__TEXT.__unwind_info` | `0x2f8` | `0x300` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3050.3.0.0.0
--  __TEXT.__text: 0x724c
--  __TEXT.__objc_methlist: 0xa58
 +3050.3.1.0.0
-+  __TEXT.__text: 0x7434
-+  __TEXT.__objc_methlist: 0xa7c
-   __TEXT.__const: 0x10
-   __TEXT.__gcc_except_tab: 0x10c
--  __TEXT.__cstring: 0x23d1
--  __TEXT.__unwind_info: 0x350
-+  __TEXT.__cstring: 0x23e2
-+  __TEXT.__unwind_info: 0x358
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_arraydata: 0xe0
-   __DATA_CONST.__got: 0x260
-   __AUTH_CONST.__const: 0xe0
--  __AUTH_CONST.__cfstring: 0x28c0
-+  __AUTH_CONST.__cfstring: 0x28e0
-   __AUTH_CONST.__objc_const: 0x1dd0
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__auth_got: 0x0
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 203
--  Symbols:   774
+-  Symbols:   663
 -  CStrings:  344
 +  Functions: 206
-+  Symbols:   779
++  Symbols:   668
 +  CStrings:  345
- 
 Symbols:
 + -[STUIStatusBarAccessibility _accessibilityStatusBarIsVerticalAlongWindowEdge]
 + -[STUIStatusBarAccessibility shouldGroupAccessibilityChildren]

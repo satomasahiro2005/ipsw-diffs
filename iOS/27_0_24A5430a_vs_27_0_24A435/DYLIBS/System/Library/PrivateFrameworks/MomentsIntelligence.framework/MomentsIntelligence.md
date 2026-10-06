@@ -2,27 +2,21 @@
 
 > `/System/Library/PrivateFrameworks/MomentsIntelligence.framework/MomentsIntelligence`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x2e2` | `0x2f8` | **`+0x16`** |
+| `__TEXT.__text` | `0x3a38` | `0x3a48` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
- 417.0.0.0.0
--  __TEXT.__text: 0x3a38
-+  __TEXT.__text: 0x3a48
-   __TEXT.__objc_methlist: 0x374
--  __TEXT.__cstring: 0x2e2
-+  __TEXT.__cstring: 0x2f8
-   __TEXT.__const: 0x38
-   __TEXT.__gcc_except_tab: 0x17c
-   __TEXT.__oslogstring: 0x471
-
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 91
--  Symbols:   286
+-  Symbols:   232
 +  Functions: 90
-+  Symbols:   285
-   CStrings:  50
- 
++  Symbols:   231
 Symbols:
 - _OUTLINED_FUNCTION_4
 Functions:

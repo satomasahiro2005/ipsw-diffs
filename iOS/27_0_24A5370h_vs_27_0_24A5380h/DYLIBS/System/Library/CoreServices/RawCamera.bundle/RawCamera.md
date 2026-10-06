@@ -2,117 +2,47 @@
 
 > `/System/Library/CoreServices/RawCamera.bundle/RawCamera`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x500` | `0x12c0` | **`+0xdc0`** |
+| `__DATA_DIRTY.__objc_data` | `0xe60` | `0xf0` | **`-0xd70`** |
+| `__DATA_CONST.__got` | `0x0` | `0xac8` | **`+0xac8`** |
+| `__TEXT.__text` | `0x229a2c` | `0x229210` | **`-0x81c`** |
+| `__AUTH_CONST.__objc_const` | `0x6c40` | `0x6d28` | **`+0xe8`** |
+| `__AUTH_CONST.__cfstring` | `0x1ab80` | `0x1ac60` | **`+0xe0`** |
+| `__TEXT.__gcc_except_tab` | `0x31504` | `0x31568` | **`+0x64`** |
+| `__TEXT.__objc_methlist` | `0x23c0` | `0x2424` | **`+0x64`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1690` | `0x16e8` | **`+0x58`** |
+| `__TEXT.__eh_frame` | `0x1380` | `0x13b8` | **`+0x38`** |
+| `__TEXT.__oslogstring` | `0x2873` | `0x283b` | **`-0x38`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x4b0` | `0x4e0` | **`+0x30`** |
+| `__DATA.__bss` | `0x72b0` | `0x72e0` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0xc638` | `0xc668` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0x3c588` | `0x3c5a8` | **`+0x20`** |
+| `__TEXT.__const` | `0x18184` | `0x18164` | **`-0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x3ae0` | `0x3af8` | **`+0x18`** |
+| `__DATA.__data` | `0x20e70` | `0x20e60` | **`-0x10`** |
+| `__DATA_CONST.__objc_arraydata` | `0x3b20` | `0x3b10` | **`-0x10`** |
+| `__TEXT.__cstring` | `0x12301` | `0x122f1` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1298` | `0x12a0` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x238` | `0x240` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0x5c7` | `0x5bf` | **`-0x8`** |
+| `__DATA.__objc_ivar` | `0x5cc` | `0x5d0` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x229a2c
--  __TEXT.__objc_methlist: 0x23c0
--  __TEXT.__const: 0x18184
--  __TEXT.__gcc_except_tab: 0x31504
--  __TEXT.__oslogstring: 0x2873
--  __TEXT.__cstring: 0x12301
-+  __TEXT.__text: 0x229210
-+  __TEXT.__objc_methlist: 0x2424
-+  __TEXT.__const: 0x18164
-+  __TEXT.__gcc_except_tab: 0x31568
-+  __TEXT.__oslogstring: 0x283b
-+  __TEXT.__cstring: 0x122f1
-   __TEXT.__ustring: 0x4b6
-   __TEXT.__constg_swiftt: 0xa14
--  __TEXT.__swift5_typeref: 0x5c7
-+  __TEXT.__swift5_typeref: 0x5bf
-   __TEXT.__swift5_reflstr: 0x1073
-   __TEXT.__swift5_fieldmd: 0x1438
-   __TEXT.__swift5_types2: 0xc
+-1810.0.0.0.1
++1814.0.0.0.0
 
-   __TEXT.__swift5_types: 0xd8
-   __TEXT.__swift5_capture: 0x4c
-   __TEXT.__dof_RawCamera: 0x8f7
--  __TEXT.__unwind_info: 0xc638
--  __TEXT.__eh_frame: 0x1380
-+  __TEXT.__unwind_info: 0xc668
-+  __TEXT.__eh_frame: 0x13b8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x2c10
--  __DATA_CONST.__objc_classlist: 0x238
-+  __DATA_CONST.__objc_classlist: 0x240
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x1690
-+  __DATA_CONST.__objc_selrefs: 0x16e8
-   __DATA_CONST.__objc_superrefs: 0x130
--  __DATA_CONST.__objc_arraydata: 0x3b20
--  __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x3c588
--  __AUTH_CONST.__cfstring: 0x1ab80
--  __AUTH_CONST.__objc_const: 0x6c40
-+  __DATA_CONST.__objc_arraydata: 0x3b10
-+  __DATA_CONST.__got: 0xac8
-+  __AUTH_CONST.__const: 0x3c5a8
-+  __AUTH_CONST.__cfstring: 0x1ac60
-+  __AUTH_CONST.__objc_const: 0x6d28
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__objc_arrayobj: 0x5e8
--  __AUTH_CONST.__objc_intobj: 0x3ae0
--  __AUTH_CONST.__objc_doubleobj: 0x4b0
-+  __AUTH_CONST.__objc_intobj: 0x3af8
-+  __AUTH_CONST.__objc_doubleobj: 0x4e0
-   __AUTH_CONST.__objc_dictobj: 0x4d58
-   __AUTH_CONST.__objc_floatobj: 0xd0
--  __AUTH_CONST.__auth_got: 0x1298
--  __AUTH.__objc_data: 0x500
-+  __AUTH_CONST.__auth_got: 0x12a0
-+  __AUTH.__objc_data: 0x12c0
-   __AUTH.__data: 0x7a8
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x18
--  __DATA.__objc_ivar: 0x5cc
--  __DATA.__data: 0x20e70
--  __DATA.__bss: 0x72b0
-+  __DATA.__objc_ivar: 0x5d0
-+  __DATA.__data: 0x20e60
-+  __DATA.__bss: 0x72e0
-   __DATA.__common: 0x4
--  __DATA_DIRTY.__objc_data: 0xe60
-+  __DATA_DIRTY.__objc_data: 0xf0
-   __DATA_DIRTY.__data: 0x8
-   __DATA_DIRTY.__bss: 0x248
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7739
 +  Functions: 7740
-   Symbols:   982
--  CStrings:  7627
-+  CStrings:  7636
- 
-Sections:
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_types2 : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__dof_RawCamera : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__thread_vars : content changed
+
+-  CStrings:  4210
++  CStrings:  4212
 Symbols:
 + _kCIImageFlipped
 + _xpc_copy_entitlement_for_self
@@ -179,5 +109,4 @@ CStrings:
 - "v3b"
 - "vNext"
 - "xtransReflectPad"
-
 ```

@@ -2,75 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/RemoteManagement.framework/RemoteManagementAgent`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__gcc_except_tab`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8b53c` | `0x8b460` | **`-0xdc`** |
+| `__TEXT.__objc_methname` | `0xf106` | `0xf16b` | **`+0x65`** |
+| `__TEXT.__objc_stubs` | `0xc380` | `0xc3c0` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x301d` | `0x3048` | **`+0x2b`** |
+| `__DATA.__objc_selrefs` | `0x3520` | `0x3540` | **`+0x20`** |
+| `__DATA_CONST.__cfstring` | `0x3460` | `0x3480` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x9f0` | `0x9e0` | **`-0x10`** |
+| `__TEXT.__auth_stubs` | `0x860` | `0x870` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x440` | `0x448` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x2070` | `0x2068` | **`-0x8`** |
+| `__TEXT.__objc_methtype` | `0x265b` | `0x265e` | **`+0x3`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
 - `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA.__objc_const`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
 -624.0.10.0.0
--  __TEXT.__text: 0x8b53c
--  __TEXT.__auth_stubs: 0x860
--  __TEXT.__objc_stubs: 0xc380
 +624.2.3.0.0
-+  __TEXT.__text: 0x8b460
-+  __TEXT.__auth_stubs: 0x870
-+  __TEXT.__objc_stubs: 0xc3c0
-   __TEXT.__objc_methlist: 0x4a28
-   __TEXT.__const: 0xf8
-   __TEXT.__gcc_except_tab: 0x4074
--  __TEXT.__cstring: 0x301d
-+  __TEXT.__cstring: 0x3048
-   __TEXT.__objc_classname: 0x1032
--  __TEXT.__objc_methname: 0xf106
--  __TEXT.__objc_methtype: 0x265b
-+  __TEXT.__objc_methname: 0xf16b
-+  __TEXT.__objc_methtype: 0x265e
-   __TEXT.__oslogstring: 0xc336
-   __TEXT.__ustring: 0x2ec
--  __TEXT.__unwind_info: 0x2070
-+  __TEXT.__unwind_info: 0x2068
-   __DATA_CONST.__const: 0x2760
--  __DATA_CONST.__cfstring: 0x3460
-+  __DATA_CONST.__cfstring: 0x3480
-   __DATA_CONST.__objc_classlist: 0x2f8
-   __DATA_CONST.__objc_catlist: 0x68
-   __DATA_CONST.__objc_protolist: 0x108
 
-   __DATA_CONST.__objc_arraydata: 0x18
-   __DATA_CONST.__objc_arrayobj: 0x30
-   __DATA_CONST.__objc_intobj: 0x150
--  __DATA_CONST.__auth_got: 0x440
--  __DATA_CONST.__got: 0x9f0
-+  __DATA_CONST.__auth_got: 0x448
-+  __DATA_CONST.__got: 0x9e0
-   __DATA.__objc_const: 0x86a8
--  __DATA.__objc_selrefs: 0x3520
-+  __DATA.__objc_selrefs: 0x3540
-   __DATA.__objc_ivar: 0x2ac
-   __DATA.__objc_data: 0x1db0
-   __DATA.__data: 0xc68
-
-   - /usr/lib/liblockdown.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 2567
 -  Symbols:   434
 -  CStrings:  3882
 +  Symbols:   433
 +  CStrings:  3887
- 
 Symbols:
 + _notify_post
 - _OBJC_CLASS_$_RMModelStatusManagementPushToken

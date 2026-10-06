@@ -1,4 +1,4 @@
-## filesystem — NEW (3104)
+## filesystem — NEW (3092)
 
 - `/System/Library/AppPlaceholders/Health.app/PlugIns/MedicalIDFollowUpExtension.appex/Info.plist`
 - `/System/Library/AppPlaceholders/Health.app/PlugIns/MedicalIDFollowUpExtension.appex/PlaceholderEntitlements.plist`
@@ -112,18 +112,6 @@
 - `/System/Library/PrivateFrameworks/HearingUtilities.framework/HearingProtection-B788.loctable`
 - `/System/Library/PrivateFrameworks/HomeAutomationInternal.framework/Templates/dialog/HomeAutomation.catfamily/SecureAccessDeniedUnsupportedDevice.cat/_params.cat.bin`
 - `/System/Library/PrivateFrameworks/HomeAutomationInternal.framework/Templates/dialog/HomeAutomation.catfamily/SecureAccessDeniedUnsupportedDevice.cat/en.cat.bin`
-- `/System/Library/PrivateFrameworks/ISPKit.framework/V63/LowLightVideo/LLV-HD-SuperWide-0.5x-v0.2.2_2304x1296.bundle/H19.bundle/H19.e5`
-- `/System/Library/PrivateFrameworks/ISPKit.framework/V63/LowLightVideo/LLV-HD-SuperWide-0.5x-v0.2.2_2304x1296.bundle/H19.bundle/main/main_ane/model.hwx`
-- `/System/Library/PrivateFrameworks/ISPKit.framework/V63/LowLightVideo/LLV-HD-SuperWide-0.5x-v0.2.2_2464x1388.bundle/H19.bundle/H19.e5`
-- `/System/Library/PrivateFrameworks/ISPKit.framework/V63/LowLightVideo/LLV-HD-SuperWide-0.5x-v0.2.2_2464x1388.bundle/H19.bundle/main/main_ane/model.hwx`
-- `/System/Library/PrivateFrameworks/ISPKit.framework/V64/LowLightVideo/LLV-HD-SuperWide-0.5x-v0.2.2_2304x1296.bundle/H19.bundle/H19.e5`
-- `/System/Library/PrivateFrameworks/ISPKit.framework/V64/LowLightVideo/LLV-HD-SuperWide-0.5x-v0.2.2_2304x1296.bundle/H19.bundle/main/main_ane/model.hwx`
-- `/System/Library/PrivateFrameworks/ISPKit.framework/V64/LowLightVideo/LLV-HD-SuperWide-0.5x-v0.2.2_2464x1388.bundle/H19.bundle/H19.e5`
-- `/System/Library/PrivateFrameworks/ISPKit.framework/V64/LowLightVideo/LLV-HD-SuperWide-0.5x-v0.2.2_2464x1388.bundle/H19.bundle/main/main_ane/model.hwx`
-- `/System/Library/PrivateFrameworks/ISPKit.framework/V64s/LowLightVideo/LLV-HD-SuperWide-0.5x-v0.2.2_2304x1296.bundle/H19.bundle/H19.e5`
-- `/System/Library/PrivateFrameworks/ISPKit.framework/V64s/LowLightVideo/LLV-HD-SuperWide-0.5x-v0.2.2_2304x1296.bundle/H19.bundle/main/main_ane/model.hwx`
-- `/System/Library/PrivateFrameworks/ISPKit.framework/V64s/LowLightVideo/LLV-HD-SuperWide-0.5x-v0.2.2_2464x1388.bundle/H19.bundle/H19.e5`
-- `/System/Library/PrivateFrameworks/ISPKit.framework/V64s/LowLightVideo/LLV-HD-SuperWide-0.5x-v0.2.2_2464x1388.bundle/H19.bundle/main/main_ane/model.hwx`
 - `/System/Library/PrivateFrameworks/LinkServices.framework/Localizable.loctable`
 - `/System/Library/PrivateFrameworks/MedicalIDDaemon.framework/Localizable.loctable`
 - `/System/Library/PrivateFrameworks/SafariFeatureSchemaManifest.framework/Info.plist`

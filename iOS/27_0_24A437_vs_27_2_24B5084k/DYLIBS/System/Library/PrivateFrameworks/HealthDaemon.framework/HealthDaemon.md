@@ -2,138 +2,74 @@
 
 > `/System/Library/PrivateFrameworks/HealthDaemon.framework/HealthDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x96cc38` | `0xd24938` | **`+0x3b7d00`** |
+| `__TEXT.__const` | `0x26c50` | `0x73ce0` | **`+0x4d090`** |
+| `__TEXT.__gcc_except_tab` | `0x399b4` | `0x7b410` | **`+0x41a5c`** |
+| `__AUTH_CONST.__const` | `0x18250` | `0x2a350` | **`+0x12100`** |
+| `__TEXT.__unwind_info` | `0x21788` | `0x309f8` | **`+0xf270`** |
+| `__TEXT.__cstring` | `0x85458` | `0x8e8b8` | **`+0x9460`** |
+| `__AUTH_CONST.__objc_const` | `0x83bc8` | `0x89770` | **`+0x5ba8`** |
+| `__TEXT.__objc_methlist` | `0x46784` | `0x4a024` | **`+0x38a0`** |
+| `__TEXT.__oslogstring` | `0x49c80` | `0x4b316` | **`+0x1696`** |
+| `__AUTH_CONST.__cfstring` | `0x408a0` | `0x41d40` | **`+0x14a0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1b530` | `0x1c400` | **`+0xed0`** |
+| `__AUTH.__objc_data` | `0x9188` | `0x9eb8` | **`+0xd30`** |
+| `__DATA.__bss` | `0x8da0` | `0x9a20` | **`+0xc80`** |
+| `__TEXT.__eh_frame` | `0x7018` | `0x78c8` | **`+0x8b0`** |
+| `__DATA_DIRTY.__objc_data` | `0x14438` | `0x14980` | **`+0x548`** |
+| `__TEXT.__constg_swiftt` | `0x44d0` | `0x4a00` | **`+0x530`** |
+| `__TEXT.__swift5_typeref` | `0x4ae1` | `0x4fc3` | **`+0x4e2`** |
+| `__TEXT.__swift5_fieldmd` | `0x3450` | `0x3844` | **`+0x3f4`** |
+| `__DATA.__data` | `0x9c38` | `0x9ff8` | **`+0x3c0`** |
+| `__DATA_CONST.__got` | `0x5d00` | `0x60c0` | **`+0x3c0`** |
+| `__DATA.__objc_ivar` | `0x45b4` | `0x48ac` | **`+0x2f8`** |
+| `__TEXT.__swift5_reflstr` | `0x3338` | `0x3608` | **`+0x2d0`** |
+| `__AUTH.__data` | `0x1f50` | `0x21e0` | **`+0x290`** |
+| `__DATA_CONST.__objc_classlist` | `0x2c28` | `0x2de0` | **`+0x1b8`** |
+| `__DATA_CONST.__const` | `0x1e000` | `0x1e1a0` | **`+0x1a0`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1d70` | `0x1f00` | **`+0x190`** |
+| `__AUTH_CONST.__auth_got` | `0x3df0` | `0x3f18` | **`+0x128`** |
+| `__AUTH_CONST.__objc_intobj` | `0x3f78` | `0x3ed0` | **`-0xa8`** |
+| `__TEXT.__swift5_assocty` | `0xae8` | `0xb80` | **`+0x98`** |
+| `__DATA_CONST.__objc_catlist` | `0x4b0` | `0x530` | **`+0x80`** |
+| `__TEXT.__swift5_proto` | `0x5fc` | `0x67c` | **`+0x80`** |
+| `__TEXT.__swift5_builtin` | `0x17c` | `0x1cc` | **`+0x50`** |
+| `__TEXT.__swift5_types` | `0x3c0` | `0x408` | **`+0x48`** |
+| `__DATA_DIRTY.__data` | `0x4070` | `0x40b0` | **`+0x40`** |
+| `__TEXT.__swift5_capture` | `0x25fc` | `0x25c0` | **`-0x3c`** |
+| `__DATA.__common` | `0x2c0` | `0x2f8` | **`+0x38`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x2178` | `0x21a8` | **`+0x30`** |
+| `__DATA_CONST.__objc_protolist` | `0xb68` | `0xb90` | **`+0x28`** |
+| `__DATA_DIRTY.__bss` | `0x2158` | `0x2178` | **`+0x20`** |
+| `__DATA_DIRTY.__objc_ivar` | `0xe60` | `0xe80` | **`+0x20`** |
+| `__TEXT.__swift5_protos` | `0xc8` | `0xe8` | **`+0x20`** |
+| `__TEXT.__swift5_mpenum` | `0x18` | `0x30` | **`+0x18`** |
+| `__TEXT.__swift_as_entry` | `0x88` | `0x74` | **`-0x14`** |
+| `__TEXT.__swift_as_ret` | `0x70` | `0x5c` | **`-0x14`** |
+| `__DATA_CONST.__objc_protorefs` | `0x310` | `0x320` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0xa0` | `0x90` | **`-0x10`** |
+| `__AUTH_CONST.__weak_auth_got` | `0x28` | `0x30` | **`+0x8`** |
+| `__DATA_CONST.__objc_arraydata` | `0x89e8` | `0x89f0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -7027.0.72.2.7
--  __TEXT.__text: 0x943bd0
--  __TEXT.__objc_methlist: 0x46784
--  __TEXT.__const: 0x26c50
 +7027.1.36.2.7
-+  __TEXT.__text: 0xcf32cc
-+  __TEXT.__objc_methlist: 0x4a024
-+  __TEXT.__const: 0x73ce0
-   __TEXT.__dlopen_cstrs: 0x15b
--  __TEXT.__constg_swiftt: 0x44d0
--  __TEXT.__swift5_typeref: 0x4ae1
--  __TEXT.__swift5_builtin: 0x17c
--  __TEXT.__swift5_reflstr: 0x3338
--  __TEXT.__swift5_fieldmd: 0x3450
--  __TEXT.__swift5_assocty: 0xae8
--  __TEXT.__swift5_proto: 0x5fc
--  __TEXT.__swift5_types: 0x3c0
--  __TEXT.__cstring: 0x85458
--  __TEXT.__swift5_capture: 0x25fc
--  __TEXT.__oslogstring: 0x49c80
--  __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__swift5_protos: 0xc8
--  __TEXT.__swift_as_entry: 0x88
--  __TEXT.__swift_as_ret: 0x70
--  __TEXT.__swift_as_cont: 0xa0
-+  __TEXT.__cstring: 0x8e8b8
-+  __TEXT.__swift5_typeref: 0x4fc3
-+  __TEXT.__swift5_capture: 0x25c0
-+  __TEXT.__constg_swiftt: 0x4a00
-+  __TEXT.__swift5_builtin: 0x1cc
-+  __TEXT.__swift5_reflstr: 0x3608
-+  __TEXT.__swift5_fieldmd: 0x3844
-+  __TEXT.__swift5_assocty: 0xb80
-+  __TEXT.__swift5_proto: 0x67c
-+  __TEXT.__swift5_types: 0x408
-+  __TEXT.__oslogstring: 0x4b316
-+  __TEXT.__swift5_mpenum: 0x30
-+  __TEXT.__swift5_protos: 0xe8
-+  __TEXT.__swift_as_entry: 0x74
-+  __TEXT.__swift_as_ret: 0x5c
-+  __TEXT.__swift_as_cont: 0x90
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__gcc_except_tab: 0x399b4
-+  __TEXT.__gcc_except_tab: 0x7b410
-   __TEXT.__ustring: 0x70
--  __TEXT.__unwind_info: 0x263b0
--  __TEXT.__eh_frame: 0x7028
-+  __TEXT.__unwind_info: 0x36658
-+  __TEXT.__eh_frame: 0x78d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1e000
--  __DATA_CONST.__objc_classlist: 0x2c28
--  __DATA_CONST.__objc_catlist: 0x4b0
--  __DATA_CONST.__objc_protolist: 0xb68
-+  __DATA_CONST.__const: 0x1e1a0
-+  __DATA_CONST.__objc_classlist: 0x2de0
-+  __DATA_CONST.__objc_catlist: 0x530
-+  __DATA_CONST.__objc_protolist: 0xb90
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x18
--  __DATA_CONST.__objc_selrefs: 0x1b530
--  __DATA_CONST.__objc_protorefs: 0x310
--  __DATA_CONST.__objc_superrefs: 0x1d70
--  __DATA_CONST.__objc_arraydata: 0x89e8
--  __DATA_CONST.__got: 0x5d00
--  __AUTH_CONST.__const: 0x18250
--  __AUTH_CONST.__cfstring: 0x408a0
--  __AUTH_CONST.__objc_const: 0x83bc8
--  __AUTH_CONST.__weak_auth_got: 0x28
-+  __DATA_CONST.__objc_selrefs: 0x1c400
-+  __DATA_CONST.__objc_protorefs: 0x320
-+  __DATA_CONST.__objc_superrefs: 0x1f00
-+  __DATA_CONST.__objc_arraydata: 0x89f0
-+  __DATA_CONST.__got: 0x60c0
-+  __AUTH_CONST.__const: 0x2a350
-+  __AUTH_CONST.__cfstring: 0x41d40
-+  __AUTH_CONST.__objc_const: 0x89770
-+  __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__objc_dictobj: 0x168
--  __AUTH_CONST.__objc_intobj: 0x3f78
--  __AUTH_CONST.__objc_arrayobj: 0x2178
-+  __AUTH_CONST.__objc_intobj: 0x3ed0
-+  __AUTH_CONST.__objc_arrayobj: 0x21a8
-   __AUTH_CONST.__objc_doubleobj: 0x3c0
--  __AUTH_CONST.__auth_got: 0x3df0
--  __AUTH.__objc_data: 0x9188
--  __AUTH.__data: 0x1f50
--  __DATA.__objc_ivar: 0x45b4
--  __DATA.__data: 0x9c38
--  __DATA.__common: 0x2c0
--  __DATA_DIRTY.__objc_ivar: 0xe60
--  __DATA_DIRTY.__objc_data: 0x14438
--  __DATA_DIRTY.__data: 0x4070
--  __DATA_DIRTY.__bss: 0x2158
-+  __AUTH_CONST.__auth_got: 0x3f18
-+  __AUTH.__objc_data: 0x9eb8
-+  __AUTH.__data: 0x21e0
-+  __DATA.__objc_ivar: 0x48ac
-+  __DATA.__data: 0x9ff8
-+  __DATA.__common: 0x2f8
-+  __DATA_DIRTY.__objc_ivar: 0xe80
-+  __DATA_DIRTY.__objc_data: 0x14980
-+  __DATA_DIRTY.__data: 0x40b0
-+  __DATA_DIRTY.__bss: 0x2178
-   __DATA_DIRTY.__common: 0x168
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
 
-   - /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset
-   - /System/Library/PrivateFrameworks/NanoPreferencesSync.framework/NanoPreferencesSync
-   - /System/Library/PrivateFrameworks/NanoRegistry.framework/NanoRegistry
 +  - /System/Library/PrivateFrameworks/PairedDeviceRegistry.framework/PairedDeviceRegistry
-   - /System/Library/PrivateFrameworks/PairedSync.framework/PairedSync
-   - /System/Library/PrivateFrameworks/PowerLog.framework/PowerLog
-   - /System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 41538
--  Symbols:   71095
+-  Symbols:   60215
 -  CStrings:  14363
 +  Functions: 52695
-+  Symbols:   91542
++  Symbols:   80391
 +  CStrings:  14740
- 
 Symbols:
 + +[HDBQuantitySampleEntityBase addCodableObject:toCollection:]
 + +[HDBQuantitySampleEntityBase codableObjectsFromObjectCollection:]
@@ -21427,351 +21363,6 @@ Symbols:
 + _kHKSessionTrackerAppEnableAutoPauseKey
 + _kHKSessionTrackerAppEnableLowPowerModeKey
 + _memorystatus_control
-+ _objc_msgSend$_activityCacheWithStartDate:endDate:dateComponents:sequence:metadata:
-+ _objc_msgSend$_backgroundTaskResultForSyncSuccess:error:shouldDefer:
-+ _objc_msgSend$_cacheCurrentSession:
-+ _objc_msgSend$_createBareObject
-+ _objc_msgSend$_currentStateCode
-+ _objc_msgSend$_fetchAllEffortRelationshipsWithNewAnchor:handler:
-+ _objc_msgSend$_fetchUpdatedEffortRelationshipsWithAnchor:newAnchor:handler:
-+ _objc_msgSend$_indoorWorkoutMetadataForCollector:
-+ _objc_msgSend$_isWorkoutFirstParty
-+ _objc_msgSend$_mostRecentSampleOfType:beforeDate:error:
-+ _objc_msgSend$_noisyValueWithAverage:noise:
-+ _objc_msgSend$_objectTypeWithCodeIfKnown:
-+ _objc_msgSend$_quantitySampleWithIdentifier:unit:value:startDate:endDate:
-+ _objc_msgSend$_queue_activityCacheIfNeededForProfile:now:cumulativeActiveHours:
-+ _objc_msgSend$_queue_beginTicking
-+ _objc_msgSend$_queue_existingActivityCacheSequenceForProfile:now:
-+ _objc_msgSend$_queue_resetActivityCacheStateIfNewDayForProfile:calendar:now:
-+ _objc_msgSend$_queue_seedActivityCacheBaselineForProfile:now:
-+ _objc_msgSend$_queue_standHourSampleAlreadyPersistedForHourStart:profile:
-+ _objc_msgSend$_queue_standHourSampleIfNeededForProfile:calendar:now:
-+ _objc_msgSend$_queue_tick
-+ _objc_msgSend$_reapplyMaskedIntervalsFilteredBy:
-+ _objc_msgSend$_requestedRangeStartsBeforeRetentionHorizon
-+ _objc_msgSend$_rollingAverageZeroFillsGapsForType:
-+ _objc_msgSend$_sampleAndLog
-+ _objc_msgSend$_setAbatementDate:
-+ _objc_msgSend$_setAllergyType:
-+ _objc_msgSend$_setAnswerData:
-+ _objc_msgSend$_setBodySite:
-+ _objc_msgSend$_setBodySiteConceptIdentifier:
-+ _objc_msgSend$_setBodySiteConceptIdentifiers:
-+ _objc_msgSend$_setClinicalStatus:
-+ _objc_msgSend$_setCompensations:
-+ _objc_msgSend$_setCriticality:
-+ _objc_msgSend$_setCriticalityConceptIdentifier:
-+ _objc_msgSend$_setEnteredDate:
-+ _objc_msgSend$_setLeftQuantity:rightQuantity:
-+ _objc_msgSend$_setMethod:
-+ _objc_msgSend$_setMethodConceptIdentifiers:
-+ _objc_msgSend$_setNotes:
-+ _objc_msgSend$_setPerformedAtLocation:
-+ _objc_msgSend$_setPerformedDate:
-+ _objc_msgSend$_setPrimaryConcept:
-+ _objc_msgSend$_setPrimaryConceptIdentifier:
-+ _objc_msgSend$_setReason:
-+ _objc_msgSend$_setReasonConceptIdentifiers:
-+ _objc_msgSend$_setSeverity:
-+ _objc_msgSend$_setSkipUDCCreation:
-+ _objc_msgSend$_setSurveyId:
-+ _objc_msgSend$_setSurveyVersion:
-+ _objc_msgSend$_setTestDate:
-+ _objc_msgSend$_setValueLabel:
-+ _objc_msgSend$_setVerificationStatus:
-+ _objc_msgSend$_shouldAggregateToSeriesIsAppleWatch:hasActiveWorkout:hasForegroundAnchoredObjectQuery:workoutIsFirstParty:firstPartyOnlyEnabled:
-+ _objc_msgSend$_standValueForHour:
-+ _objc_msgSend$_watchProvenanceForProfile:
-+ _objc_msgSend$abatementDate
-+ _objc_msgSend$accessCount
-+ _objc_msgSend$accessSummariesForSourceIDs:modeMask:since:error:
-+ _objc_msgSend$accessSummariesForSourceIDs:modeMask:since:profile:error:
-+ _objc_msgSend$accumulateAccessCount:forSourceID:dataType:mode:grain:bucketStart:lastAccessDate:transaction:error:
-+ _objc_msgSend$addBilateralQuantitySamples:
-+ _objc_msgSend$addBodySiteConceptIdentifiers:
-+ _objc_msgSend$addChangedRecordsCount:deletedRecordsCount:
-+ _objc_msgSend$addChangedZonesCount:deletedZonesCount:
-+ _objc_msgSend$addHealthFactBooleanSamples:
-+ _objc_msgSend$addHealthFactConceptSamples:
-+ _objc_msgSend$addHealthFactQuantitySamples:
-+ _objc_msgSend$addMedicalHistoryAllergyRecord:
-+ _objc_msgSend$addMedicalHistoryHealthConcernRecord:
-+ _objc_msgSend$addMedicalHistoryImmunizationRecord:
-+ _objc_msgSend$addMedicalHistoryProcedureRecord:
-+ _objc_msgSend$addMedicalHistoryQuantitativeLabResultRecord:
-+ _objc_msgSend$addMethodConceptIdentifiers:
-+ _objc_msgSend$addOverheadSquatSamples:
-+ _objc_msgSend$addPerformers:
-+ _objc_msgSend$addReasonConceptIdentifiers:
-+ _objc_msgSend$addSkuIds:
-+ _objc_msgSend$addSurveyResponses:
-+ _objc_msgSend$advanceRollingDistanceToWallTime:
-+ _objc_msgSend$allergyType
-+ _objc_msgSend$answerData
-+ _objc_msgSend$appMigrationAuthorizationCopy
-+ _objc_msgSend$appleExerciseTimeGoal
-+ _objc_msgSend$appleStandHoursGoal
-+ _objc_msgSend$arrayWithObjects:
-+ _objc_msgSend$assumeLowPowerModeOwnership
-+ _objc_msgSend$authorizationRecordsForSourceUUIDs:profile:transactionContext:error:
-+ _objc_msgSend$bilateralQuantitySamples
-+ _objc_msgSend$bilateralQuantitySamplesAtIndex:
-+ _objc_msgSend$bilateralQuantitySamplesCount
-+ _objc_msgSend$bilateralQuantityType
-+ _objc_msgSend$binWidth
-+ _objc_msgSend$bodySiteConceptIdentifier
-+ _objc_msgSend$bodySiteConceptIdentifiers
-+ _objc_msgSend$bodySiteConceptIdentifiersAtIndex:
-+ _objc_msgSend$bodySiteConceptIdentifiersCount
-+ _objc_msgSend$clearBilateralQuantitySamples
-+ _objc_msgSend$clearBodySiteConceptIdentifiers
-+ _objc_msgSend$clearHealthFactBooleanSamples
-+ _objc_msgSend$clearHealthFactConceptSamples
-+ _objc_msgSend$clearHealthFactQuantitySamples
-+ _objc_msgSend$clearMedicalHistoryAllergyRecords
-+ _objc_msgSend$clearMedicalHistoryHealthConcernRecords
-+ _objc_msgSend$clearMedicalHistoryImmunizationRecords
-+ _objc_msgSend$clearMedicalHistoryProcedureRecords
-+ _objc_msgSend$clearMedicalHistoryQuantitativeLabResultRecords
-+ _objc_msgSend$clearMethodConceptIdentifiers
-+ _objc_msgSend$clearOverheadSquatSamples
-+ _objc_msgSend$clearPerformers
-+ _objc_msgSend$clearReasonConceptIdentifiers
-+ _objc_msgSend$clearSkuIds
-+ _objc_msgSend$clearSurveyResponses
-+ _objc_msgSend$clientRemote_deviceContextStoreDidUpdate
-+ _objc_msgSend$clinicalStatus
-+ _objc_msgSend$cloudSyncRestoreTask
-+ _objc_msgSend$codableSample
-+ _objc_msgSend$compensations
-+ _objc_msgSend$copyAuthorizationFromBundleIdentifier:toBundleIdentifier:completion:
-+ _objc_msgSend$copyDataFromSeriesIdentifiers:toSeriesIdentifier:activePeriods:database:copiedCount:error:
-+ _objc_msgSend$criticalityConceptIdentifier
-+ _objc_msgSend$currentActivitySummaryHelper
-+ _objc_msgSend$currentWallTime
-+ _objc_msgSend$dataTypeAccessRecorder
-+ _objc_msgSend$deviceContextStoreDidUpdate
-+ _objc_msgSend$deviceFromNRDevice:
-+ _objc_msgSend$effectiveWindowStartForRequestedDate:nowDate:
-+ _objc_msgSend$enteredDate
-+ _objc_msgSend$fetchRecordsCompletionBlock
-+ _objc_msgSend$fetchWorkoutEffortRelationshipsWithAnchor:handler:
-+ _objc_msgSend$flushWithError:
-+ _objc_msgSend$hasAbatementDate
-+ _objc_msgSend$hasAdministrationDate
-+ _objc_msgSend$hasAsserter
-+ _objc_msgSend$hasBodySiteConceptIdentifier
-+ _objc_msgSend$hasCriticalityConceptIdentifier
-+ _objc_msgSend$hasIssueDate
-+ _objc_msgSend$hasLastOccurrenceDate
-+ _objc_msgSend$hasNotes
-+ _objc_msgSend$hasOnsetDate
-+ _objc_msgSend$hasParentActivityUUID
-+ _objc_msgSend$hasPerformedAtLocation
-+ _objc_msgSend$hasPerformedDate
-+ _objc_msgSend$hasPerformer
-+ _objc_msgSend$hasRollingDistanceWindows
-+ _objc_msgSend$hasRollingDistanceWindowsForType:
-+ _objc_msgSend$hasTestDate
-+ _objc_msgSend$hasUnfrozenSeries
-+ _objc_msgSend$healthFactBooleanSamples
-+ _objc_msgSend$healthFactBooleanSamplesAtIndex:
-+ _objc_msgSend$healthFactBooleanSamplesCount
-+ _objc_msgSend$healthFactConceptSamples
-+ _objc_msgSend$healthFactConceptSamplesAtIndex:
-+ _objc_msgSend$healthFactConceptSamplesCount
-+ _objc_msgSend$healthFactQuantitySamples
-+ _objc_msgSend$healthFactQuantitySamplesAtIndex:
-+ _objc_msgSend$healthFactQuantitySamplesCount
-+ _objc_msgSend$healthFactSample
-+ _objc_msgSend$identifierWithNumber:
-+ _objc_msgSend$identifierWithRawIdentifier:
-+ _objc_msgSend$incrementOperationCountForAnalytics
-+ _objc_msgSend$initInternalActivityWithWorkoutConfiguration:startDate:endDate:metadata:hasPrivateMetadataAccess:
-+ _objc_msgSend$initWithBundleIdentifier:dataType:mode:hourBucketStart:
-+ _objc_msgSend$initWithBundleIdentifier:windowStart:entries:
-+ _objc_msgSend$initWithDomain:pdrDevice:
-+ _objc_msgSend$initWithFeatureAvailabilityProviding:healthDataSource:
-+ _objc_msgSend$initWithObjectType:mode:accessCount:lastAccessDate:
-+ _objc_msgSend$initWithPercentile:
-+ _objc_msgSend$initWithPercentile:minValue:maxValue:binWidth:
-+ _objc_msgSend$initWithProfile:filter:options:
-+ _objc_msgSend$initWithProfile:gregorianCalendar:morningIndexRange:ascending:options:debugIdentifier:
-+ _objc_msgSend$initWithWindowDistances:stalenessTimeout:pausedIntervals:
-+ _objc_msgSend$initWithWindowDurations:aggregationStyle:zeroFillsGaps:maxHoldInterval:
-+ _objc_msgSend$insertRelatedDataWithPersistentID:profile:transaction:error:
-+ _objc_msgSend$isFirstParty
-+ _objc_msgSend$isPressDemoLiveActivityEnabled
-+ _objc_msgSend$isStatus:compatibleWithRequest:
-+ _objc_msgSend$label
-+ _objc_msgSend$lastAccessDate
-+ _objc_msgSend$leftQuantity
-+ _objc_msgSend$maxHoldInterval
-+ _objc_msgSend$medicalHistoryAllergyRecordAtIndex:
-+ _objc_msgSend$medicalHistoryAllergyRecords
-+ _objc_msgSend$medicalHistoryAllergyRecordsCount
-+ _objc_msgSend$medicalHistoryHealthConcernRecordAtIndex:
-+ _objc_msgSend$medicalHistoryHealthConcernRecords
-+ _objc_msgSend$medicalHistoryHealthConcernRecordsCount
-+ _objc_msgSend$medicalHistoryImmunizationRecordAtIndex:
-+ _objc_msgSend$medicalHistoryImmunizationRecords
-+ _objc_msgSend$medicalHistoryImmunizationRecordsCount
-+ _objc_msgSend$medicalHistoryLabResultRecord
-+ _objc_msgSend$medicalHistoryProcedureRecordAtIndex:
-+ _objc_msgSend$medicalHistoryProcedureRecords
-+ _objc_msgSend$medicalHistoryProcedureRecordsCount
-+ _objc_msgSend$medicalHistoryQuantitativeLabResultRecordAtIndex:
-+ _objc_msgSend$medicalHistoryQuantitativeLabResultRecordType
-+ _objc_msgSend$medicalHistoryQuantitativeLabResultRecords
-+ _objc_msgSend$medicalHistoryQuantitativeLabResultRecordsCount
-+ _objc_msgSend$medicalHistoryRecord
-+ _objc_msgSend$medicalUDCCategoryType
-+ _objc_msgSend$memoryMonitor
-+ _objc_msgSend$methodConceptIdentifiers
-+ _objc_msgSend$methodConceptIdentifiersAtIndex:
-+ _objc_msgSend$methodConceptIdentifiersCount
-+ _objc_msgSend$modifyRecordsCompletionBlock
-+ _objc_msgSend$mulberry
-+ _objc_msgSend$notes
-+ _objc_msgSend$oldestSampleWithType:profile:encodingOptions:predicate:error:
-+ _objc_msgSend$overheadSquatSamples
-+ _objc_msgSend$overheadSquatSamplesAtIndex:
-+ _objc_msgSend$overheadSquatSamplesCount
-+ _objc_msgSend$overlapsRangeFrom:to:
-+ _objc_msgSend$pausedIntervals
-+ _objc_msgSend$performedAtLocation
-+ _objc_msgSend$performedDate
-+ _objc_msgSend$performersAtIndex:
-+ _objc_msgSend$performersCount
-+ _objc_msgSend$persistRestoreSyncWindowStartDate:error:
-+ _objc_msgSend$prepareForPeriodicSyncWithContextType:
-+ _objc_msgSend$preparePrimaryProfileForPeriodicSyncAndRestoreWithContextType:
-+ _objc_msgSend$primaryConceptIdentifier
-+ _objc_msgSend$queryStrategy
-+ _objc_msgSend$readableDataTypeCodes
-+ _objc_msgSend$reapplyMaskedIntervalsForQuantityTypesIncludedWhilePaused:
-+ _objc_msgSend$reasonConceptIdentifiers
-+ _objc_msgSend$reasonConceptIdentifiersAtIndex:
-+ _objc_msgSend$reasonConceptIdentifiersCount
-+ _objc_msgSend$recordAccessForBundleIdentifier:dataType:mode:date:
-+ _objc_msgSend$recordAccessForBundleIdentifier:dataTypes:mode:date:
-+ _objc_msgSend$restoreSyncWindowStartDateWithError:
-+ _objc_msgSend$rightQuantity
-+ _objc_msgSend$rollingDistanceWindows
-+ _objc_msgSend$setAbatementDate:
-+ _objc_msgSend$setAddressCity:
-+ _objc_msgSend$setAddressCountry:
-+ _objc_msgSend$setAddressState:
-+ _objc_msgSend$setAddressStreet:
-+ _objc_msgSend$setAddressZip:
-+ _objc_msgSend$setAdministrationDate:
-+ _objc_msgSend$setAllergyType:
-+ _objc_msgSend$setAnswerData:
-+ _objc_msgSend$setAppointmentUUID:
-+ _objc_msgSend$setAsserter:
-+ _objc_msgSend$setAuthorizationStatuses:authorizationRequests:authorizationModes:bundleIdentifier:options:modeInfos:profile:completion:
-+ _objc_msgSend$setBodySiteConceptIdentifier:
-+ _objc_msgSend$setBookingType:
-+ _objc_msgSend$setClinicalStatus:
-+ _objc_msgSend$setConceptIdentifier:
-+ _objc_msgSend$setCriticalityConceptIdentifier:
-+ _objc_msgSend$setCurrentWallTime:
-+ _objc_msgSend$setDateAddedTimezone:
-+ _objc_msgSend$setDob:
-+ _objc_msgSend$setEmail:
-+ _objc_msgSend$setEnteredDate:
-+ _objc_msgSend$setExternalShl:
-+ _objc_msgSend$setExternalStatus:
-+ _objc_msgSend$setHasArmDrop:
-+ _objc_msgSend$setHasForwardTrunkLean:
-+ _objc_msgSend$setHasHipShift:
-+ _objc_msgSend$setHasKneesInward:
-+ _objc_msgSend$setHasKneesOutward:
-+ _objc_msgSend$setHasShallowSquatDepth:
-+ _objc_msgSend$setHealthFactSample:
-+ _objc_msgSend$setIssueDate:
-+ _objc_msgSend$setLabPartnerId:
-+ _objc_msgSend$setLastGeneratedReportId:
-+ _objc_msgSend$setLastOccurrenceDate:
-+ _objc_msgSend$setLeftValueInCanonicalUnit:
-+ _objc_msgSend$setLeftValueInOriginalUnit:
-+ _objc_msgSend$setLinkFlags:
-+ _objc_msgSend$setLinkKey:
-+ _objc_msgSend$setLinkLabel:
-+ _objc_msgSend$setLinkPasscode:
-+ _objc_msgSend$setLinkURL:
-+ _objc_msgSend$setLocationId:
-+ _objc_msgSend$setManifestData:
-+ _objc_msgSend$setMedicalHistoryLabResultRecord:
-+ _objc_msgSend$setMedicalHistoryRecord:
-+ _objc_msgSend$setNotes:
-+ _objc_msgSend$setObjectAuthorizationRecords:syncProvenance:syncIdentity:profile:transactionContext:error:
-+ _objc_msgSend$setOnsetDate:
-+ _objc_msgSend$setOrderUUID:
-+ _objc_msgSend$setPerformedAtLocation:
-+ _objc_msgSend$setPerformedDate:
-+ _objc_msgSend$setPerformer:
-+ _objc_msgSend$setPerformers:
-+ _objc_msgSend$setPhone:
-+ _objc_msgSend$setPrimaryConceptIdentifier:
-+ _objc_msgSend$setPscTimeZoneIdentifier:
-+ _objc_msgSend$setQrCode:
-+ _objc_msgSend$setRightValueInCanonicalUnit:
-+ _objc_msgSend$setRightValueInOriginalUnit:
-+ _objc_msgSend$setScheduleId:
-+ _objc_msgSend$setSecret:
-+ _objc_msgSend$setSeverity:
-+ _objc_msgSend$setSortDate:
-+ _objc_msgSend$setStatisticsConfiguration:
-+ _objc_msgSend$setSubjectDisplay:
-+ _objc_msgSend$setSurveyId:
-+ _objc_msgSend$setSurveyVersion:
-+ _objc_msgSend$setTestDate:
-+ _objc_msgSend$setTime:
-+ _objc_msgSend$setTracksPeak:
-+ _objc_msgSend$setUsesLinearInterpolation:
-+ _objc_msgSend$setVerificationStatus:
-+ _objc_msgSend$set_peakRollingSpeedQuantitiesByWindowDistance:
-+ _objc_msgSend$set_rollingAverageQuantitiesByWindowDuration:
-+ _objc_msgSend$set_rollingSpeedQuantitiesByWindowDistance:
-+ _objc_msgSend$setupPeriodicActivitiesWithCompletion:
-+ _objc_msgSend$severity
-+ _objc_msgSend$shouldRegenerateForGenerationPeriod
-+ _objc_msgSend$skipUDCCreation
-+ _objc_msgSend$skuIdsAtIndex:
-+ _objc_msgSend$skuIdsCount
-+ _objc_msgSend$sortedStatisticsSampleMerge
-+ _objc_msgSend$stalenessTimeout
-+ _objc_msgSend$stringByPaddingToLength:withString:startingAtIndex:
-+ _objc_msgSend$supportsRestoreSync
-+ _objc_msgSend$surveyId
-+ _objc_msgSend$surveyResponses
-+ _objc_msgSend$surveyResponsesAtIndex:
-+ _objc_msgSend$surveyResponsesCount
-+ _objc_msgSend$surveyVersion
-+ _objc_msgSend$syncPrimaryProfileWithContext:completion:
-+ _objc_msgSend$systemUptime
-+ _objc_msgSend$testDate
-+ _objc_msgSend$todayActivitySummary
-+ _objc_msgSend$tracksPeak
-+ _objc_msgSend$transferLowPowerModeOwnershipFromSession:
-+ _objc_msgSend$truncateWriteAheadLogWithBusyTimeout:contended:error:
-+ _objc_msgSend$unitDividedByUnit:
-+ _objc_msgSend$unitTest_ownsLowPowerMode
-+ _objc_msgSend$unitTest_setSystemLowPowerModeEnabledOverride:
-+ _objc_msgSend$updateRollingAverageWindowDurations:forType:
-+ _objc_msgSend$updateRollingDistanceWindows:forType:
-+ _objc_msgSend$usesExactPercentile
-+ _objc_msgSend$usesLinearInterpolation
-+ _objc_msgSend$valueLabel
-+ _objc_msgSend$verificationStatus
-+ _objc_msgSend$watchWorkoutSeriesFirstPartyOnly
-+ _objc_msgSend$windowDistances
-+ _objc_msgSend$windowDurations
-+ _objc_msgSend$workoutActivityNodeWrapperFrom:configuration:startDate:metadata:insertionType:hasPrivateMetadataAccess:
-+ _objc_msgSend$workoutSeriesDatumMerging
-+ _objc_msgSend$zeroFillsGaps
 + _proc_pid_rusage
 + _snprintf
 + _swift_isClassType
@@ -23035,80 +22626,6 @@ Symbols:
 - _kHKAgeGatingKeyEnableSleepApneaNotifications
 - _kHKAgeGatingKeyEnableSleepTracking
 - _kHKAgeGatingKeyEnableWalkingSteadiness
-- _objc_msgSend$HRPassiveSeriesAggregation
-- _objc_msgSend$_queue_fetchAllEffortRelationshipsWithNewAnchor:handler:
-- _objc_msgSend$_queue_fetchAssociatedEffortSamplesWithHandler:
-- _objc_msgSend$_queue_fetchUpdatedEffortRelationshipsWithAnchor:newAnchor:handler:
-- _objc_msgSend$_shouldAggregateToSeriesIsAppleWatch:hasActiveWorkout:hasForegroundAnchoredObjectQuery:
-- _objc_msgSend$activityNodeTreeWrapperForRootActivity:ownerID:transaction:error:
-- _objc_msgSend$activityNodeWrapperFrom:
-- _objc_msgSend$addOrderedSample:
-- _objc_msgSend$addOrderedSegment:
-- _objc_msgSend$applicableSleepSchedules:
-- _objc_msgSend$bedtimeDateIntervalForWakeTime:calendar:
-- _objc_msgSend$cacheIdentifier
-- _objc_msgSend$calendarForTimeZone:
-- _objc_msgSend$callback
-- _objc_msgSend$condensableQuantityTypes
-- _objc_msgSend$createDaySummary
-- _objc_msgSend$currentItem
-- _objc_msgSend$dateIntervalForDayIndexRange:gregorianCalendar:
-- _objc_msgSend$daySummaryWithMorningIndex:dateInterval:calendar:periods:schedules:sleepDurationGoal:minimumRecommendedSleepDurationGoal:creationInterval:
-- _objc_msgSend$earliestDateLowestOnboardingVersionCompletedWithError:
-- _objc_msgSend$hasOverlapWithInterval:
-- _objc_msgSend$hk_dayIndex
-- _objc_msgSend$hk_morningIndexRangeWithCalendarWithCalendar:
-- _objc_msgSend$hk_sleepDayIntervalForMorningIndexRange:calendar:
-- _objc_msgSend$hk_sleepDayStartForMorningIndex:calendar:
-- _objc_msgSend$inBedTimeStdDev
-- _objc_msgSend$incompleteSessions
-- _objc_msgSend$initProfile:morningIndex:options:gregorianCalendar:sourceOrderProvider:
-- _objc_msgSend$initWithDateIntervalMap:
-- _objc_msgSend$initWithDateIntervals:
-- _objc_msgSend$initWithDomain:pairedDevice:
-- _objc_msgSend$initWithFeatureAvailabilityProviding:healthDataSource:countryCodeSource:
-- _objc_msgSend$initWithInfo:options:
-- _objc_msgSend$initWithProfile:cachingSession:gregorianCalendar:morningIndexRange:ascending:options:debugIdentifier:
-- _objc_msgSend$initWithProfile:cachingSession:gregorianCalendar:morningIndexRange:currentDate:ascending:options:debugIdentifier:
-- _objc_msgSend$initWithProfile:dayIndexRange:weekday:options:eighteenthBirthdayDayIndex:gregorianCalendar:sourceOrderProvider:
-- _objc_msgSend$initWithProfile:morningIndex:weekday:options:eighteenthBirthdayDayIndex:gregorianCalendar:sourceOrderProvider:
-- _objc_msgSend$initWithUserSetSchedules:incompleteSessions:mappedTimezones:
-- _objc_msgSend$intersectsDateInterval:
-- _objc_msgSend$isCurrentOnboardingVersionCompletedWithError:
-- _objc_msgSend$isEligible
-- _objc_msgSend$mappedTimezones
-- _objc_msgSend$mergingSleepPeriodSegment:
-- _objc_msgSend$morningIndex
-- _objc_msgSend$nextItemWithDateIntervalPassingTest:
-- _objc_msgSend$onboardedCountryCodeSupportedStateWithError:
-- _objc_msgSend$onboardingCompletionsForLowestVersionOfFeatureIdentifier:error:
-- _objc_msgSend$periods
-- _objc_msgSend$scheduleAppliesToWeekday:
-- _objc_msgSend$setCallback:
-- _objc_msgSend$setChangedRecordsCount:
-- _objc_msgSend$setChangedZonesCount:
-- _objc_msgSend$setDeletedRecordsCount:
-- _objc_msgSend$setDeletedZonesCount:
-- _objc_msgSend$setFullNodeWrapper:
-- _objc_msgSend$setInvalidationQueryDescriptors:
-- _objc_msgSend$setMergeIntervals:
-- _objc_msgSend$setOperationCountForAnalytics:
-- _objc_msgSend$setWaitingStartTime:
-- _objc_msgSend$sleepAnalysisQueryDescriptorForDateInterval:options:
-- _objc_msgSend$sleepAnalysisSamples
-- _objc_msgSend$sleepDurationGoalSamples
-- _objc_msgSend$sleepPeriodSegmentWithDateInterval:sampleIntervals:category:containsAppleSleepTrackingData:
-- _objc_msgSend$sleepPeriodWithDateInterval:segments:isIncomplete:timezoneName:
-- _objc_msgSend$sleepQuery2
-- _objc_msgSend$sleepScheduleSamples
-- _objc_msgSend$sleepTypesQueryDescriptorsForDateInterval:options:
-- _objc_msgSend$sortedSleepPeriodSegmentsFromSamples:
-- _objc_msgSend$supportsCachedSleepDaySummaryQueries
-- _objc_msgSend$timeInBedTracking
-- _objc_msgSend$userSetSchedules
-- _objc_msgSend$waitingStartTime
-- _objc_msgSend$wakeDateComponentsForMorningIndex:calendar:
-- _objc_msgSend$workoutActivityNodeWrapperFrom:configuration:startDate:metadata:insertionType:
 - _symbolic SDy___________pG 9HealthKit14TypeIdentifierV 0A6Daemon0aC17EvaluatorProviderP
 - _symbolic SSSgSaySSGKc
 - _symbolic ScCySayq0_G______pG s5ErrorP

@@ -2,107 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/AppleAccountUI.framework/AppleAccountUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x387688` | `0x394de4` | **`+0xd75c`** |
+| `__TEXT.__cstring` | `0xb6e1` | `0xbb61` | **`+0x480`** |
+| `__TEXT.__const` | `0x13f84` | `0x143a4` | **`+0x420`** |
+| `__DATA.__bss` | `0x106c8` | `0x10a88` | **`+0x3c0`** |
+| `__AUTH_CONST.__const` | `0x14c68` | `0x14f48` | **`+0x2e0`** |
+| `__DATA.__data` | `0x7470` | `0x7620` | **`+0x1b0`** |
+| `__TEXT.__swift5_typeref` | `0x15576` | `0x156ea` | **`+0x174`** |
+| `__TEXT.__unwind_info` | `0x7cf8` | `0x7e50` | **`+0x158`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6f08` | `0x7050` | **`+0x148`** |
+| `__TEXT.__swift5_reflstr` | `0x4006` | `0x40e6` | **`+0xe0`** |
+| `__TEXT.__constg_swiftt` | `0x7904` | `0x79dc` | **`+0xd8`** |
+| `__TEXT.__oslogstring` | `0x11f8c` | `0x1205c` | **`+0xd0`** |
+| `__TEXT.__swift5_capture` | `0x6494` | `0x6560` | **`+0xcc`** |
+| `__TEXT.__swift5_fieldmd` | `0x3b48` | `0x3c08` | **`+0xc0`** |
+| `__AUTH_CONST.__cfstring` | `0x51c0` | `0x5260` | **`+0xa0`** |
+| `__AUTH.__data` | `0x4fb8` | `0x5048` | **`+0x90`** |
+| `__TEXT.__objc_methlist` | `0xc33c` | `0xc3cc` | **`+0x90`** |
+| `__AUTH_CONST.__objc_const` | `0x43f68` | `0x43fe8` | **`+0x80`** |
+| `__TEXT.__swift5_assocty` | `0x12a8` | `0x1308` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x3608` | `0x3658` | **`+0x50`** |
+| `__TEXT.__eh_frame` | `0x31f8` | `0x3248` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x25c0` | `0x2600` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x1e08` | `0x1e48` | **`+0x40`** |
+| `__TEXT.__swift5_types` | `0x740` | `0x764` | **`+0x24`** |
+| `__TEXT.__gcc_except_tab` | `0x14d8` | `0x14f4` | **`+0x1c`** |
+| `__TEXT.__swift5_proto` | `0x7b8` | `0x7d0` | **`+0x18`** |
+| `__AUTH.__objc_data` | `0x80b8` | `0x80c8` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x450` | `0x460` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0xcdc` | `0xce4` | **`+0x8`** |
+| `__DATA_CONST.__objc_catlist` | `0x80` | `0x88` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x2e0` | `0x2e8` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x2a0` | `0x2a8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -588.0.0.0.0
--  __TEXT.__text: 0x37b074
 +589.125.4.0.0
-+  __TEXT.__text: 0x3883fc
-   __TEXT.__delay_stubs: 0x80
-   __TEXT.__delay_helper: 0x2d0
--  __TEXT.__objc_methlist: 0xc33c
--  __TEXT.__cstring: 0xb6e1
--  __TEXT.__const: 0x13f84
--  __TEXT.__gcc_except_tab: 0x14d8
--  __TEXT.__oslogstring: 0x11f8c
-+  __TEXT.__objc_methlist: 0xc3cc
-+  __TEXT.__cstring: 0xbb61
-+  __TEXT.__const: 0x143a4
-+  __TEXT.__gcc_except_tab: 0x14f4
-+  __TEXT.__oslogstring: 0x1205c
-   __TEXT.__dlopen_cstrs: 0x582
-   __TEXT.__ustring: 0x4
--  __TEXT.__swift5_typeref: 0x15576
--  __TEXT.__swift5_capture: 0x6494
--  __TEXT.__swift5_reflstr: 0x4006
--  __TEXT.__swift5_assocty: 0x12a8
--  __TEXT.__constg_swiftt: 0x7904
--  __TEXT.__swift5_fieldmd: 0x3b48
-+  __TEXT.__swift5_typeref: 0x156ea
-+  __TEXT.__swift5_capture: 0x6560
-+  __TEXT.__swift5_reflstr: 0x40e6
-+  __TEXT.__swift5_assocty: 0x1308
-+  __TEXT.__constg_swiftt: 0x79dc
-+  __TEXT.__swift5_fieldmd: 0x3c08
-   __TEXT.__swift5_builtin: 0x26c
--  __TEXT.__swift5_proto: 0x7b8
--  __TEXT.__swift5_types: 0x740
--  __TEXT.__swift_as_entry: 0x2e0
--  __TEXT.__swift_as_ret: 0x2a0
--  __TEXT.__swift_as_cont: 0x450
-+  __TEXT.__swift5_proto: 0x7d0
-+  __TEXT.__swift5_types: 0x764
-+  __TEXT.__swift_as_entry: 0x2e8
-+  __TEXT.__swift_as_ret: 0x2a8
-+  __TEXT.__swift_as_cont: 0x460
-   __TEXT.__swift5_protos: 0x58
-   __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__unwind_info: 0x10aa0
--  __TEXT.__eh_frame: 0x31f8
-+  __TEXT.__unwind_info: 0x10e30
-+  __TEXT.__eh_frame: 0x3248
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3608
-+  __DATA_CONST.__const: 0x3658
-   __DATA_CONST.__objc_classlist: 0x928
--  __DATA_CONST.__objc_catlist: 0x80
-+  __DATA_CONST.__objc_catlist: 0x88
-   __DATA_CONST.__objc_protolist: 0x3d8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6f08
-+  __DATA_CONST.__objc_selrefs: 0x7050
-   __DATA_CONST.__objc_protorefs: 0x100
-   __DATA_CONST.__objc_superrefs: 0x498
-   __DATA_CONST.__objc_arraydata: 0xd0
--  __DATA_CONST.__got: 0x1e08
--  __AUTH_CONST.__const: 0x14c68
--  __AUTH_CONST.__cfstring: 0x51c0
--  __AUTH_CONST.__objc_const: 0x43f68
-+  __DATA_CONST.__got: 0x1e48
-+  __AUTH_CONST.__const: 0x14f48
-+  __AUTH_CONST.__cfstring: 0x5260
-+  __AUTH_CONST.__objc_const: 0x43fe8
-   __AUTH_CONST.__objc_intobj: 0xa8
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__objc_arrayobj: 0xa8
--  __AUTH_CONST.__auth_got: 0x25c0
--  __AUTH.__objc_data: 0x80b8
--  __AUTH.__data: 0x4fb8
--  __DATA.__objc_ivar: 0xcdc
--  __DATA.__data: 0x7470
-+  __AUTH_CONST.__auth_got: 0x2600
-+  __AUTH.__objc_data: 0x80c8
-+  __AUTH.__data: 0x5048
-+  __DATA.__objc_ivar: 0xce4
-+  __DATA.__data: 0x7620
-   __DATA.__common: 0x5e0
-   __DATA_DIRTY.__objc_data: 0x2d0
-   __DATA_DIRTY.__bss: 0x48
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 17300
--  Symbols:   13279
+-  Symbols:   10460
 -  CStrings:  2823
 +  Functions: 17531
-+  Symbols:   13378
++  Symbols:   10522
 +  CStrings:  2872
- 
 Symbols:
 + +[AAFAnalyticsEvent(AAUIRemoteUI) aaui_analyticsEventWithRUITelemetryElement:eventName:altDSID:flowID:error:]
 + +[AAFAnalyticsEvent(AAUIRemoteUI) aaui_elementIndex:]
@@ -143,47 +92,6 @@ Symbols:
 + _get_witness_table 7SwiftUI15NavigationStackVyAA0C4PathVAA4ViewPAAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAgAE29navigationBarTitleDisplayModeyQrAA0cL4ItemV0mnO0OFQOyAgAE0kM0yQrqd__SyRd__lFQOyAA4FormVyAA05TupleJ0VyAA7SectionVyAA4TextVAA6PickerVyAX012AppleAccountB039CustodianSuggestionFeedbackRadarBuilderO0yZ6ReasonOAA7ForEachVySayA3_GSSAgAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAX_A3_Qo_GGAA05EmptyF0VG_AVyAxgAE9lineLimityQrSNySiGFQOyAA0T5FieldVyAXG_Qo_A13_GAVyA13_AA6ToggleVyAXGAXGSgQPGG_SSQo__Qo__ATyAA0iP0VyytAA6ButtonVyAXGG_A32_yytAgAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyA35__AA25GlassProminentButtonStyleVQo_GQPGQo_GAaFHPyHC
 + _get_witness_table So30AAUIOBContactSelectorViewModelCRbzlqd0__7SwiftUI0C0HD3_AcDPACE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAeCE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAC6VStackVyAC12TupleContentVyAC012_ConditionalR0VyAC08ModifiedR0VyAC06ScrollC0VyAVyAVyAC10LazyHStackVyAC7ForEachVySaySo18AALocalContactInfoCGA2_AVyAVy012AppleAccountF08ItemCellVAC14_PaddingLayoutVGAC31AccessibilityAttachmentModifierVGGGA8_GAC23SafeAreaPaddingModifierVGGA11_GAC05EmptyC0VG_AVyAC6SpacerVAC12_FrameLayoutVGAVyAVyAVyAVyAC4TextVAC30_EnvironmentKeyWritingModifierVyAC13TextAlignmentOGGAC16_FixedSizeLayoutVGA8_GA11_GA28_QPGG_Qo__SbQo_HO
 + _kAKElementIdentifier
-+ _objc_msgSend$_defaultHooks:telemetryFlowID:
-+ _objc_msgSend$_iCloudDataRecoveryServiceHooksFor:accountManager:cdpContext:telemetryFlowID:
-+ _objc_msgSend$_passwordAndSecurityHooksForAccount:accountManager:telemetryFlowID:
-+ _objc_msgSend$_pdpBlobGenerationHookForAccount:telemetryFlowID:
-+ _objc_msgSend$_personalInformationHooksForAccount:accountManager:telemetryFlowID:
-+ _objc_msgSend$_transparencyMetadataHookForAltDSID:telemetryFlowID:
-+ _objc_msgSend$aaui_elementIndex:
-+ _objc_msgSend$aaui_encodeElementNameWithIndexPostFix:prefix:element:activeElements:
-+ _objc_msgSend$aaui_encodedURLWithPrefix:url:
-+ _objc_msgSend$defaultManager
-+ _objc_msgSend$drawViewHierarchyInRect:afterScreenUpdates:
-+ _objc_msgSend$enumerateObjectsUsingBlock:
-+ _objc_msgSend$hooksFor:accountManager:telemetryFlowID:
-+ _objc_msgSend$initWithAccount:telemetryFlowID:
-+ _objc_msgSend$initWithAltDSID:telemetryFlowID:
-+ _objc_msgSend$initWithBounds:
-+ _objc_msgSend$initWithInt:
-+ _objc_msgSend$isRCUpsellEnabled
-+ _objc_msgSend$largeDetent
-+ _objc_msgSend$localizedStringFromNumber:numberStyle:
-+ _objc_msgSend$mediumDetent
-+ _objc_msgSend$numberWithInt:
-+ _objc_msgSend$operatingSystemVersionString
-+ _objc_msgSend$parent
-+ _objc_msgSend$pathComponents
-+ _objc_msgSend$removeObjectAtIndex:
-+ _objc_msgSend$setComponentID:
-+ _objc_msgSend$setComponentName:
-+ _objc_msgSend$setComponentVersion:
-+ _objc_msgSend$setDetents:
-+ _objc_msgSend$setLeftBarButtonItems:
-+ _objc_msgSend$setLeftItemsSupplementBackButton:
-+ _objc_msgSend$setPrefersEdgeAttachedInCompactHeight:
-+ _objc_msgSend$setPrefersGrabberVisible:
-+ _objc_msgSend$setRadarDescription:
-+ _objc_msgSend$setRadarTitle:
-+ _objc_msgSend$sheetPresentationController
-+ _objc_msgSend$systemPurpleColor
-+ _objc_msgSend$tapToRadarWithRequest:completion:
-+ _objc_msgSend$temporaryDirectory
-+ _objc_msgSend$url
 + _symbolic Say_____G 14AppleAccountUI39CustodianSuggestionFeedbackRadarBuilderO0eF6ReasonO
 + _symbolic _____ 14AppleAccountUI31CustodianSuggestionFeedbackViewV
 + _symbolic _____ 14AppleAccountUI39CustodianSuggestionFeedbackRadarBuilderO
@@ -245,10 +153,6 @@ Symbols:
 - _get_witness_table 7SwiftUI15ModifiedContentVyAA6HStackVyAA012_ConditionalD0VyAGyAA05TupleD0VyAA6SpacerV_ACyAA12ProgressViewVyAA05EmptyJ0VAOGAA30_EnvironmentKeyWritingModifierVyAA11ControlSizeOGGAKQPGACyACyAA0J0PAAE11buttonStyleyQrqd__AA015PrimitiveButtonS0Rd__lFQOyACyAA0U0VyACyAA07LabeledD0VyAA5LabelVyAEyAIyACyACyAA5ImageVAA011_ForegroundsO0VyAA09TintShapeS0VGGARyA7_5ScaleOGGSg_AA6VStackVyAIyAA4TextVSg_AGyA23_A22_GSgQPGGAKA18_QPGGAOGAOGARyAA13TextAlignmentOGGGAA01_d5ShapeO0VyAA9RectangleVGG_AA010BorderlessuS0VQo_ARyAA5ColorVSgGGAA01_lm9TransformO0VySbGGGAGyAIyAV_A20_yAIyA23__A23_QPGGAKQPGAGyAIyACyACyA7_A9_yA47_GGA16_G_A20_yAIyA22__A23_QPGGAKQPGAOGGGGAA14_PaddingLayoutVGAaXHPA68_AaXHPyHC_A70_AA0jO0HPyHCHC
 - _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA16SubscriptionViewVySo20NSNotificationCenterC10FoundationE9PublisherVAA0F0PAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAA6ZStackVyAA012_ConditionalD0VyAL012AppleAccountB0E24sharedNameAndPhotoEditor11isPresentedQrAA7BindingVySbG_tFQOyAlAE0K10TapGesture5count7performQrSi_yyctFQOyACyAA6VStackVyAA05TupleD0VyACyACyACyACyACyAA5ImageVAA18_AspectRatioLayoutVGAA24_ForegroundStyleModifierVyAA5ColorVGGAA31AccessibilityAttachmentModifierVGAT10AvatarSizeVGAA11_ClipEffectVyAA6CircleVGG_ACyACyAlAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyACyACyAA6ButtonVyAA4TextVGAA30_EnvironmentKeyWritingModifierVyAA11ControlSizeOGGAA24_BackgroundStyleModifierVyA13_GG_AA19BorderedButtonStyleVQo_A23_yAA16RoundedRectangleVGGAA14_PaddingLayoutVGSgA2_yA4_yA33__A33_SgQPGGSgQPGGA17_G_Qo__Qo_AlAE5sheetAV0K7Dismiss7contentQrAY_yycSgqd__yctAaKRd__lFQOyA63__ACyAT27ContactVisualIdentityPickerVAA25_AppearanceActionModifierVGQo_GG_AH4DataVSgQo_GA72_GA53_GA43_GAaKHPA83_AaKHPA82_AaKHPA81_AaKHPyHC_A72_AA0F8ModifierHPyHCHC_A53_AAA85_HPyHCHC_A43_AAA85_HPyHCHC
 - _get_witness_table So30AAUIOBContactSelectorViewModelCRbzlqd0__7SwiftUI0C0HD3_AcDPACE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAC15ModifiedContentVyAC6VStackVyAC05TupleL0VyAC012_ConditionalL0VyAJyAC06ScrollC0VyAJyAJyAC10LazyHStackVyAC7ForEachVySaySo18AALocalContactInfoCGAxJyAJy012AppleAccountF08ItemCellVAC14_PaddingLayoutVGAC31AccessibilityAttachmentModifierVGGGA2_GAC23SafeAreaPaddingModifierVGGA5_GAC05EmptyC0VG_AJyAC6SpacerVAC12_FrameLayoutVGAJyAJyAJyAJyAC4TextVAC30_EnvironmentKeyWritingModifierVyAC13TextAlignmentOGGAC16_FixedSizeLayoutVGA2_GA5_GA22_QPGGA5_G_SbQo_HO
-- _objc_msgSend$_defaultHooks:
-- _objc_msgSend$_iCloudDataRecoveryServiceHooksFor:accountManager:cdpContext:
-- _objc_msgSend$_passwordAndSecurityHooksForAccount:accountManager:
-- _objc_msgSend$_personalInformationHooksForAccount:accountManager:
 - _symbolic _____yAAyAAy_____y__________y_____y_____y_____y_____yAAy_____y_____yAAyAAyAAyAAyAAy__________G_____y_____GG_____G_____G_____y_____GG_AAyAAy_____yAAyAAy_____y_____G_____y_____GG_____yALGG______Qo_ASy_____GG_____GSgAFyAGyAX_AXSgQPGGSgQPGGAOG_Qo__Qo______yA20__AAy__________GQo_GG______SgQo_GA23_GA10_GA3_G 7SwiftUI15ModifiedContentV AA16SubscriptionViewV So20NSNotificationCenterC10FoundationE9PublisherV AA0F0PAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQO AA6ZStackV AA012_ConditionalD0V AL012AppleAccountB0E24sharedNameAndPhotoEditor11isPresentedQrAA7BindingVySbG_tFQO AlAE0K10TapGesture5count7performQrSi_yyctFQO AA6VStackV AA05TupleD0V AA5ImageV AA18_AspectRatioLayoutV AA24_ForegroundStyleModifierV AA5ColorV AA31AccessibilityAttachmentModifierV AT10AvatarSizeV AA11_ClipEffectV AA6CircleV AlAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQO AA6ButtonV AA4TextV AA30_EnvironmentKeyWritingModifierV AA11ControlSizeO AA24_BackgroundStyleModifierV AA19BorderedButtonStyleV AA16RoundedRectangleV AA14_PaddingLayoutV AlAE5sheetAV0K7Dismiss7contentQrAY_yycSgqd__yctAaKRd__lFQO AT27ContactVisualIdentityPickerV AA25_AppearanceActionModifierV AH4DataV
 - _symbolic _____yAAy_____y___________y_____y_____AFG_____y_____GGACQPGADyADy_____yADy_____yADy_____y_____y_____yAByADyADy__________y_____GGAHy_____GGSg______yABy_____Sg_AAyA0_A_GSgQPGGAcYQPGGAFGAFGAHy_____GGG_____y_____GG______Qo_AHy_____SgGG_____ySbGGGAAyAByAK_AZyAByA0__A0_QPGGACQPGAAyAByADyADyAqRyA19_GGAWG_AZyAByA__A0_QPGGACQPGAFGGG 7SwiftUI19_ConditionalContentV AA05TupleD0V AA6SpacerV AA08ModifiedD0V AA12ProgressViewV AA05EmptyI0V AA30_EnvironmentKeyWritingModifierV AA11ControlSizeO AA0I0PAAE11buttonStyleyQrqd__AA015PrimitiveButtonR0Rd__lFQO AA0T0V AA07LabeledD0V AA5LabelV AA6HStackV AA5ImageV AA011_ForegroundrN0V AA09TintShapeR0V A3_5ScaleO AA6VStackV AA4TextV AA13TextAlignmentO AA01_d5ShapeN0V AA9RectangleV AA010BorderlesstR0V AA5ColorV AA01_kl9TransformN0V
 - _symbolic _____yAAy_____y__________y_____y_____y_____y_____yAAy_____y_____yAAyAAyAAyAAyAAy__________G_____y_____GG_____G_____G_____y_____GG_AAyAAy_____yAAyAAy_____y_____G_____y_____GG_____yALGG______Qo_ASy_____GG_____GSgAFyAGyAX_AXSgQPGGSgQPGGAOG_Qo__Qo______yA20__AAy__________GQo_GG______SgQo_GA23_GA10_G 7SwiftUI15ModifiedContentV AA16SubscriptionViewV So20NSNotificationCenterC10FoundationE9PublisherV AA0F0PAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQO AA6ZStackV AA012_ConditionalD0V AL012AppleAccountB0E24sharedNameAndPhotoEditor11isPresentedQrAA7BindingVySbG_tFQO AlAE0K10TapGesture5count7performQrSi_yyctFQO AA6VStackV AA05TupleD0V AA5ImageV AA18_AspectRatioLayoutV AA24_ForegroundStyleModifierV AA5ColorV AA31AccessibilityAttachmentModifierV AT10AvatarSizeV AA11_ClipEffectV AA6CircleV AlAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQO AA6ButtonV AA4TextV AA30_EnvironmentKeyWritingModifierV AA11ControlSizeO AA24_BackgroundStyleModifierV AA19BorderedButtonStyleV AA16RoundedRectangleV AA14_PaddingLayoutV AlAE5sheetAV0K7Dismiss7contentQrAY_yycSgqd__yctAaKRd__lFQO AT27ContactVisualIdentityPickerV AA25_AppearanceActionModifierV AH4DataV

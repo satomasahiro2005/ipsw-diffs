@@ -2,15 +2,14 @@
 
 > `/System/Library/PreferencesSyncBundles/ScreenTimePreferencesSyncCompanion.bundle/ScreenTimePreferencesSyncCompanion`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -655.0.107.0.0
 +655.1.6.1.0
-   __TEXT.__text: 0x0
-   __TEXT.__const: 0x58
-   - /usr/lib/libSystem.B.dylib
 ```

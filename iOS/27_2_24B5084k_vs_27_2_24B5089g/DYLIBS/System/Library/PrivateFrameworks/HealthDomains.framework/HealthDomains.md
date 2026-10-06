@@ -2,83 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/HealthDomains.framework/HealthDomains`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5bbc88` | `0x5c799c` | **`+0xbd14`** |
+| `__DATA.__bss` | `0x102320` | `0x105ca0` | **`+0x3980`** |
+| `__TEXT.__const` | `0x742a6` | `0x75a66` | **`+0x17c0`** |
+| `__AUTH_CONST.__const` | `0x4b855` | `0x4c79d` | **`+0xf48`** |
+| `__TEXT.__cstring` | `0x1fa7f` | `0x1f43f` | **`-0x640`** |
+| `__DATA.__data` | `0x15188` | `0x15618` | **`+0x490`** |
+| `__TEXT.__unwind_info` | `0x16fd8` | `0x173d0` | **`+0x3f8`** |
+| `__TEXT.__constg_swiftt` | `0x12d4c` | `0x13078` | **`+0x32c`** |
+| `__TEXT.__swift5_fieldmd` | `0x14270` | `0x1459c` | **`+0x32c`** |
+| `__TEXT.__eh_frame` | `0x165a4` | `0x1687c` | **`+0x2d8`** |
+| `__TEXT.__swift5_typeref` | `0xe56f` | `0xe7fd` | **`+0x28e`** |
+| `__TEXT.__swift5_proto` | `0x8a4c` | `0x8c0c` | **`+0x1c0`** |
+| `__TEXT.__swift5_assocty` | `0x75f0` | `0x7788` | **`+0x198`** |
+| `__DATA_DIRTY.__bss` | `0xa400` | `0xa280` | **`-0x180`** |
+| `__AUTH.__data` | `0xbf20` | `0xc058` | **`+0x138`** |
+| `__TEXT.__swift5_reflstr` | `0x6eef` | `0x6f5f` | **`+0x70`** |
+| `__TEXT.__swift5_types` | `0x2100` | `0x216c` | **`+0x6c`** |
+| `__AUTH_CONST.__auth_got` | `0x1268` | `0x12c8` | **`+0x60`** |
+| `__DATA_CONST.__got` | `0x930` | `0x950` | **`+0x20`** |
+| `__TEXT.__swift5_capture` | `0x1f3c` | `0x1f4c` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1c0` | `0x1c8` | **`+0x8`** |
+| `__DATA_DIRTY.__data` | `0x4ea0` | `0x4ea8` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0xc4` | `0xc0` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.36.2.7
--  __TEXT.__text: 0x5980f0
--  __TEXT.__const: 0x742a6
--  __TEXT.__swift5_typeref: 0xe56f
--  __TEXT.__constg_swiftt: 0x12d4c
 +7027.1.45.2.4
-+  __TEXT.__text: 0x5a3718
-+  __TEXT.__const: 0x75a66
-+  __TEXT.__swift5_typeref: 0xe7fd
-+  __TEXT.__constg_swiftt: 0x13078
-   __TEXT.__swift5_builtin: 0x2bc
--  __TEXT.__swift5_reflstr: 0x6eef
--  __TEXT.__swift5_fieldmd: 0x14270
--  __TEXT.__swift5_assocty: 0x75f0
--  __TEXT.__cstring: 0x1fa7f
--  __TEXT.__swift5_proto: 0x8a4c
--  __TEXT.__swift5_types: 0x2100
--  __TEXT.__swift5_capture: 0x1f3c
-+  __TEXT.__swift5_reflstr: 0x6f5f
-+  __TEXT.__swift5_fieldmd: 0x1459c
-+  __TEXT.__swift5_assocty: 0x7788
-+  __TEXT.__cstring: 0x1f43f
-+  __TEXT.__swift5_proto: 0x8c0c
-+  __TEXT.__swift5_types: 0x216c
-+  __TEXT.__swift5_capture: 0x1f4c
-   __TEXT.__swift_as_entry: 0x12c
-   __TEXT.__swift_as_ret: 0x26c
-   __TEXT.__swift_as_cont: 0x4ec
-   __TEXT.__oslogstring: 0x55f
-   __TEXT.__swift5_mpenum: 0x144
--  __TEXT.__swift5_protos: 0xc4
--  __TEXT.__unwind_info: 0x1de88
--  __TEXT.__eh_frame: 0x165bc
-+  __TEXT.__swift5_protos: 0xc0
-+  __TEXT.__unwind_info: 0x1e3b0
-+  __TEXT.__eh_frame: 0x16894
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__const: 0x198
-   __DATA_CONST.__objc_classlist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1c0
--  __DATA_CONST.__got: 0x930
--  __AUTH_CONST.__const: 0x4b855
-+  __DATA_CONST.__objc_selrefs: 0x1c8
-+  __DATA_CONST.__got: 0x950
-+  __AUTH_CONST.__const: 0x4c79d
-   __AUTH_CONST.__objc_const: 0xa30
--  __AUTH_CONST.__auth_got: 0x1268
-+  __AUTH_CONST.__auth_got: 0x12c8
-   __AUTH.__objc_data: 0x140
--  __AUTH.__data: 0xbf20
--  __DATA.__data: 0x15188
--  __DATA_DIRTY.__data: 0x4ea0
--  __DATA_DIRTY.__bss: 0xa400
-+  __AUTH.__data: 0xc058
-+  __DATA.__data: 0x15618
-+  __DATA_DIRTY.__data: 0x4ea8
-+  __DATA_DIRTY.__bss: 0xa280
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/HealthKit.framework/HealthKit
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 37617
--  Symbols:   7628
+-  Symbols:   7572
 -  CStrings:  2849
 +  Functions: 38008
-+  Symbols:   7723
++  Symbols:   7666
 +  CStrings:  2831
- 
 Symbols:
 + _HKErrorDomain
 + ___unnamed_15
@@ -175,7 +139,6 @@ Symbols:
 + _associated conformance 13HealthDomains22EvaluationTraceOutcomeO24DatabaseLockedCodingKeys33_81DDB1604F68B2CC02EA873E6EC303ECLLOs0H3KeyAAs28CustomDebugStringConvertible
 + _associated conformance 13HealthDomains8MeasuresO25HearingAugmentationSurveyVs12IdentifiableAA2IDsAFP_SH
 + _associated conformance 13HealthDomains8MeasuresO9AudiogramVs12IdentifiableAA2IDsAFP_SH
-+ _objc_msgSend$domain
 + _symbolic Say_____G 13HealthDomains15SleepScoreLevelO09AvailableE0O
 + _symbolic Say_____G 13HealthDomains15SleepScoreScaleO
 + _symbolic Say_____G 13HealthDomains18NeedsMoreDataLevelO

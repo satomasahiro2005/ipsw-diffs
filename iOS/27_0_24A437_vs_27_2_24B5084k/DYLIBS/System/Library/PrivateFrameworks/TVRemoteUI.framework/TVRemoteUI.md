@@ -2,99 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/TVRemoteUI.framework/TVRemoteUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe6008` | `0xd5274` | **`-0x10d94`** |
+| `__AUTH_CONST.__objc_const` | `0x17e20` | `0x156f0` | **`-0x2730`** |
+| `__TEXT.__objc_methlist` | `0xd20c` | `0xbc6c` | **`-0x15a0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7428` | `0x6c80` | **`-0x7a8`** |
+| `__AUTH.__objc_data` | `0x7000` | `0x6ab0` | **`-0x550`** |
+| `__TEXT.__cstring` | `0x5391` | `0x4e71` | **`-0x520`** |
+| `__TEXT.__gcc_except_tab` | `0x2260` | `0x1e0c` | **`-0x454`** |
+| `__TEXT.__unwind_info` | `0x3188` | `0x2d40` | **`-0x448`** |
+| `__AUTH_CONST.__cfstring` | `0x3c00` | `0x38c0` | **`-0x340`** |
+| `__DATA_CONST.__const` | `0x1cb8` | `0x1978` | **`-0x340`** |
+| `__DATA.__data` | `0x27d0` | `0x2590` | **`-0x240`** |
+| `__DATA.__objc_ivar` | `0xdb4` | `0xbc0` | **`-0x1f4`** |
+| `__DATA_CONST.__got` | `0xeb8` | `0xe30` | **`-0x88`** |
+| `__DATA_CONST.__objc_classlist` | `0x660` | `0x5d8` | **`-0x88`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x2b8` | `0x240` | **`-0x78`** |
+| `__DATA_CONST.__objc_superrefs` | `0x410` | `0x398` | **`-0x78`** |
+| `__TEXT.__oslogstring` | `0x5d86` | `0x5de6` | **`+0x60`** |
+| `__AUTH_CONST.__const` | `0x3090` | `0x30d0` | **`+0x40`** |
+| `__DATA_CONST.__objc_arraydata` | `0x158` | `0x118` | **`-0x40`** |
+| `__TEXT.__swift5_capture` | `0x56c` | `0x5ac` | **`+0x40`** |
+| `__AUTH_CONST.__objc_intobj` | `0x108` | `0xd8` | **`-0x30`** |
+| `__DATA_CONST.__objc_protolist` | `0x220` | `0x1f0` | **`-0x30`** |
+| `__DATA.__bss` | `0x27b0` | `0x2790` | **`-0x20`** |
+| `__TEXT.__const` | `0x2644` | `0x2624` | **`-0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xf30` | `0xf28` | **`-0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x50` | `0x48` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -627.0.28.0.0
--  __TEXT.__text: 0xe11cc
--  __TEXT.__objc_methlist: 0xd20c
--  __TEXT.__const: 0x2644
--  __TEXT.__cstring: 0x5391
--  __TEXT.__gcc_except_tab: 0x2260
--  __TEXT.__oslogstring: 0x5d86
 +627.10.45.0.0
-+  __TEXT.__text: 0xd0a44
-+  __TEXT.__objc_methlist: 0xbc6c
-+  __TEXT.__const: 0x2624
-+  __TEXT.__cstring: 0x4e71
-+  __TEXT.__gcc_except_tab: 0x1e0c
-+  __TEXT.__oslogstring: 0x5de6
-   __TEXT.__ustring: 0x34
-   __TEXT.__dlopen_cstrs: 0xa2
-   __TEXT.__constg_swiftt: 0x2e90
 
-   __TEXT.__swift5_fieldmd: 0x1dc8
-   __TEXT.__swift5_builtin: 0xb4
-   __TEXT.__swift5_assocty: 0x168
--  __TEXT.__swift5_capture: 0x56c
-+  __TEXT.__swift5_capture: 0x5ac
-   __TEXT.__swift5_proto: 0x130
-   __TEXT.__swift5_types: 0x108
-   __TEXT.__swift5_mpenum: 0x10
-
-   __TEXT.__swift_as_entry: 0xc
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0x20
--  __TEXT.__unwind_info: 0x3da0
-+  __TEXT.__unwind_info: 0x3870
-   __TEXT.__eh_frame: 0xa20
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1cb8
--  __DATA_CONST.__objc_classlist: 0x660
-+  __DATA_CONST.__const: 0x1978
-+  __DATA_CONST.__objc_classlist: 0x5d8
-   __DATA_CONST.__objc_catlist: 0x60
--  __DATA_CONST.__objc_protolist: 0x220
-+  __DATA_CONST.__objc_protolist: 0x1f0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7428
--  __DATA_CONST.__objc_protorefs: 0x50
--  __DATA_CONST.__objc_superrefs: 0x410
--  __DATA_CONST.__objc_arraydata: 0x158
--  __DATA_CONST.__got: 0xeb8
--  __AUTH_CONST.__const: 0x3090
--  __AUTH_CONST.__cfstring: 0x3c00
--  __AUTH_CONST.__objc_const: 0x17e20
-+  __DATA_CONST.__objc_selrefs: 0x6c80
-+  __DATA_CONST.__objc_protorefs: 0x48
-+  __DATA_CONST.__objc_superrefs: 0x398
-+  __DATA_CONST.__objc_arraydata: 0x118
-+  __DATA_CONST.__got: 0xe30
-+  __AUTH_CONST.__const: 0x30d0
-+  __AUTH_CONST.__cfstring: 0x38c0
-+  __AUTH_CONST.__objc_const: 0x156f0
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__objc_arrayobj: 0x2b8
-+  __AUTH_CONST.__objc_arrayobj: 0x240
-   __AUTH_CONST.__objc_doubleobj: 0x90
--  __AUTH_CONST.__objc_intobj: 0x108
--  __AUTH_CONST.__auth_got: 0xf30
--  __AUTH.__objc_data: 0x7000
-+  __AUTH_CONST.__objc_intobj: 0xd8
-+  __AUTH_CONST.__auth_got: 0xf28
-+  __AUTH.__objc_data: 0x6ab0
-   __AUTH.__data: 0x670
--  __DATA.__objc_ivar: 0xdb4
--  __DATA.__data: 0x27d0
-+  __DATA.__objc_ivar: 0xbc0
-+  __DATA.__data: 0x2590
-   __DATA.__common: 0x4c0
-   __DATA_DIRTY.__objc_data: 0x820
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5426
--  Symbols:   10893
+-  Symbols:   7922
 -  CStrings:  1296
 +  Functions: 4949
-+  Symbols:   9862
++  Symbols:   7116
 +  CStrings:  1263
- 
 Symbols:
 + -[TVRKeyboardView setTextDidChange:]
 + -[TVRKeyboardView textDidChange]
@@ -121,21 +72,6 @@ Symbols:
 + ___block_descriptor_32_e18_v16?0"UIButton"8l
 + ___block_descriptor_40_e8_32w_e36_"NSDictionary"16?0"NSDictionary"8lw32l8
 + ___block_descriptor_48_e8_32s40s_e27_v16?0"RTITextOperations"8ls32l8s40l8
-+ _objc_msgSend$contextAfterInput
-+ _objc_msgSend$deletionCount
-+ _objc_msgSend$forwardDeletionCount
-+ _objc_msgSend$insertText:
-+ _objc_msgSend$insertionText
-+ _objc_msgSend$keyboardOutput
-+ _objc_msgSend$metricsForTextStyle:
-+ _objc_msgSend$modifyAndFlushTextOperations:
-+ _objc_msgSend$setBaseForegroundColor:
-+ _objc_msgSend$setConfigurationUpdateHandler:
-+ _objc_msgSend$setDeletionCount:
-+ _objc_msgSend$setNeedsUpdateConfiguration
-+ _objc_msgSend$textDidChange
-+ _objc_msgSend$textOperations
-+ _objc_msgSend$traitCollectionWithPreferredContentSizeCategory:
 - +[_TVRUIAppInfoCell imageAspectFit]
 - +[_TVRUIAppInfoCell setImageAspectFit:]
 - +[_TVRUIAppInfoItem itemWithAppInfo:]
@@ -967,246 +903,6 @@ Symbols:
 - ___block_descriptor_89_e8_32s_e5_v8?0ls32l8
 - ___imageAspectFit
 - __panRecognizerDidFire:.__recognizerCommitted
-- _objc_msgSend$MRUCount
-- _objc_msgSend$_adjustedAppInfosForAppInfos:
-- _objc_msgSend$_animateResetRubberbandingTransforms
-- _objc_msgSend$_animateToFinalIndex:fromIndex:duration:
-- _objc_msgSend$_applyRubberbandingForTranslation:progress:
-- _objc_msgSend$_applySnapshot:
-- _objc_msgSend$_baseMRUCountAdjustmentForAppInfo:
-- _objc_msgSend$_commitSelectedViewControllerIndex:
-- _objc_msgSend$_commitToFinalPositionForIndex:translation:velocity:
-- _objc_msgSend$_computeFramesPadSideBySide
-- _objc_msgSend$_configureNowPlayingCell:
-- _objc_msgSend$_configurePanGesture
-- _objc_msgSend$_confirmOkToOpenApp:withHandler:
-- _objc_msgSend$_contextBarView
-- _objc_msgSend$_didBeginPlayingContent
-- _objc_msgSend$_didEndPlayingContent
-- _objc_msgSend$_evaluateState:
-- _objc_msgSend$_fetchAppInfos
-- _objc_msgSend$_fetchLaunchableAppsWithRange:currentResults:completion:
-- _objc_msgSend$_finalIndexForIndex:translation:velocity:
-- _objc_msgSend$_grabberView
-- _objc_msgSend$_hostingViewAboveIndex:
-- _objc_msgSend$_hostingViewBelowIndex:
-- _objc_msgSend$_hostingViewForIndex:
-- _objc_msgSend$_hostingViewIndexIsValid:
-- _objc_msgSend$_identifierForViewControllerIndex:
-- _objc_msgSend$_indexAboveIndex:
-- _objc_msgSend$_indexBelowIndex:
-- _objc_msgSend$_invokeDidChangeHandlerForIdentifier:
-- _objc_msgSend$_invokeLayoutHandlerIfNeeded
-- _objc_msgSend$_isIndex:directlyAboveIndex:
-- _objc_msgSend$_launchableAppsResponseDictContainsCount:
-- _objc_msgSend$_loadHiddenBundleIDs
-- _objc_msgSend$_loadMRUCountDict
-- _objc_msgSend$_makeToggleContextBarAnimator
-- _objc_msgSend$_mruCountForBundleID:
-- _objc_msgSend$_multiplierForTranslation:
-- _objc_msgSend$_notifyOrderedAppInfosChanged
-- _objc_msgSend$_persistHiddenBundleIDs:
-- _objc_msgSend$_persistMRUCountDict:
-- _objc_msgSend$_prepareHostingViewTransformsForIndex:
-- _objc_msgSend$_presentAppGridPopoverFromSender:
-- _objc_msgSend$_requestArtworkImageForNowPlayingInfo:
-- _objc_msgSend$_resetInteractiveAnimator
-- _objc_msgSend$_resetRubberbandingTransforms
-- _objc_msgSend$_resolveIdentifierForIsPlaying:nowPlayingMetadata:topShelfInfo:fallbackIdentifier:
-- _objc_msgSend$_selectAppPicker
-- _objc_msgSend$_selectViewControllerWithIdentifier:animated:
-- _objc_msgSend$_setCanPanHorizontally:
-- _objc_msgSend$_setCanPanVertically:
-- _objc_msgSend$_setupAppsController
-- _objc_msgSend$_setupNotificationHandlers
-- _objc_msgSend$_shouldCommitToFinalPositionForIndex:translation:
-- _objc_msgSend$_teardownNotificationHandlers
-- _objc_msgSend$_titleForHostingViewIndex:
-- _objc_msgSend$_toggleContextBar
-- _objc_msgSend$_trackpadView
-- _objc_msgSend$_transformWithMultiplier:
-- _objc_msgSend$_transitionToFinalIndex:duration:
-- _objc_msgSend$_updateCastSection
-- _objc_msgSend$_updateHostingViewTransformsForIndex:translation:
-- _objc_msgSend$_updateMRUCountForLaunchedAppWithBundleID:
-- _objc_msgSend$_updateNowPlayingInfo:previousNowPlayingInfo:
-- _objc_msgSend$_updateNowPlayingSection
-- _objc_msgSend$_updateViewControllerAppearanceForSelectedViewControllerIndex:
-- _objc_msgSend$_updatedMRUCountDictForCountDict:forBundleID:
-- _objc_msgSend$addEntriesFromDictionary:
-- _objc_msgSend$allItems
-- _objc_msgSend$allKeys
-- _objc_msgSend$appGenre
-- _objc_msgSend$appInfo
-- _objc_msgSend$appInfoWithBundleID:dictionary:
-- _objc_msgSend$appInfoWithMRUCount:
-- _objc_msgSend$appInfos
-- _objc_msgSend$appPickerTappedForTitleView:sender:
-- _objc_msgSend$appendItemsWithIdentifiers:intoSectionWithIdentifier:
-- _objc_msgSend$appsController
-- _objc_msgSend$appsViewController:didLaunchAppWithInfo:
-- _objc_msgSend$artworkImageView
-- _objc_msgSend$beginToggleAnimation
-- _objc_msgSend$bundleID
-- _objc_msgSend$bundleIDIsAppleTV
-- _objc_msgSend$collectionViewLayout
-- _objc_msgSend$commitToggleAnimationDidFinish:
-- _objc_msgSend$compare:
-- _objc_msgSend$contextBarController
-- _objc_msgSend$contextBarGrabberGestureRecognizerDidChange:
-- _objc_msgSend$contextBarHostingGrabberView
-- _objc_msgSend$contextBarHostingTrackpadView
-- _objc_msgSend$contextBarHostingView
-- _objc_msgSend$contextBarInfoProvider
-- _objc_msgSend$contextBarIsCollapsed
-- _objc_msgSend$contextBarItemIdentifier
-- _objc_msgSend$contextBarPreferredHeight
-- _objc_msgSend$contextBarRenderMode
-- _objc_msgSend$contextBarViewController
-- _objc_msgSend$continueAnimationWithTimingParameters:durationFactor:
-- _objc_msgSend$currentContextBarItemController
-- _objc_msgSend$currentContextBarItemDidChangeHandler
-- _objc_msgSend$currentContextBarItemIdentifier
-- _objc_msgSend$currentState
-- _objc_msgSend$deleteItemsWithIdentifiers:
-- _objc_msgSend$didCommitToViewControllerIndex:fromUserInteraction:
-- _objc_msgSend$disallowsGestures
-- _objc_msgSend$displayActionURL
-- _objc_msgSend$effectiveContextBarFrame
-- _objc_msgSend$effectiveControlPanelFrame
-- _objc_msgSend$effectiveGrabberFrame
-- _objc_msgSend$effectiveState
-- _objc_msgSend$effectiveTouchpadFrame
-- _objc_msgSend$fetchedArtworkImage
-- _objc_msgSend$flexibleSpacing:
-- _objc_msgSend$fractionComplete
-- _objc_msgSend$gestureDistance
-- _objc_msgSend$gestureIsRevealing
-- _objc_msgSend$gestureStartPoint
-- _objc_msgSend$grabberSize
-- _objc_msgSend$grabberView
-- _objc_msgSend$hasGrabber
-- _objc_msgSend$hasHiddenApps
-- _objc_msgSend$hasNoTitle
-- _objc_msgSend$hasNowPlayingMetadata
-- _objc_msgSend$hiddenBundleIDs
-- _objc_msgSend$hideAppWithBundleID:
-- _objc_msgSend$hidesPageControl
-- _objc_msgSend$hostingViews
-- _objc_msgSend$imageAspectFit
-- _objc_msgSend$imageURL1x
-- _objc_msgSend$imageURL2x
-- _objc_msgSend$impactFeedbackGenerator
-- _objc_msgSend$infoButtonActionHandler
-- _objc_msgSend$initWithAppInfo:isUnhideItem:
-- _objc_msgSend$initWithContextBarHostingView:renderMode:contextBarInfoProvider:
-- _objc_msgSend$initWithHostingViewController:actionProvider:upNextProvider:nowPlayingProvider:layoutHandler:
-- _objc_msgSend$initWithIsPlaying:nowPlayingMetadata:topShelfInfo:contextBarItemIdentifier:
-- _objc_msgSend$initWithIsPlaying:nowPlayingMetadata:topShelfInfo:fallbackIdentifier:
-- _objc_msgSend$initWithNowPlayingProvider:
-- _objc_msgSend$initWithRenderMode:
-- _objc_msgSend$initWithSectionProvider:configuration:
-- _objc_msgSend$interactiveAnimator
-- _objc_msgSend$isContextBarEnabled
-- _objc_msgSend$isContextBarMode
-- _objc_msgSend$isCurrentBundleIDAppleTV
-- _objc_msgSend$isEqualToNowPlayingMetadata:
-- _objc_msgSend$isInToggleAnimation
-- _objc_msgSend$isShowingContextBar
-- _objc_msgSend$isTVApp
-- _objc_msgSend$isUnhideItem
-- _objc_msgSend$itemIdentifiersInSectionWithIdentifier:
-- _objc_msgSend$itemWithAppInfo:
-- _objc_msgSend$launchApp:
-- _objc_msgSend$launchAppWithBundleID:
-- _objc_msgSend$launchableAppsController
-- _objc_msgSend$layoutHandler
-- _objc_msgSend$layoutManager
-- _objc_msgSend$localizedName
-- _objc_msgSend$mruCountDict
-- _objc_msgSend$nextResponder
-- _objc_msgSend$notificationObservers
-- _objc_msgSend$nowPlayingItem
-- _objc_msgSend$nowPlayingMetadata
-- _objc_msgSend$nowPlayingSentinel
-- _objc_msgSend$nowPlayingWithCastViewController
-- _objc_msgSend$orderedAppInfos
-- _objc_msgSend$pageControl
-- _objc_msgSend$playActionURL
-- _objc_msgSend$renderMode
-- _objc_msgSend$resetContent
-- _objc_msgSend$resetContentAnimated:
-- _objc_msgSend$scrollToNowPlayingAnimated:
-- _objc_msgSend$selectContextBarItemWithIdentifier:animated:
-- _objc_msgSend$selectViewControllerIndex:animated:
-- _objc_msgSend$selectedViewControllerIndex
-- _objc_msgSend$selectionFeedbackGenerator
-- _objc_msgSend$sendSubviewToBack:
-- _objc_msgSend$setAppInfo:
-- _objc_msgSend$setAppInfos:
-- _objc_msgSend$setAppPickerEnabled:
-- _objc_msgSend$setAppsController:
-- _objc_msgSend$setByAddingObject:
-- _objc_msgSend$setByAddingObjectsFromSet:
-- _objc_msgSend$setContainerView:
-- _objc_msgSend$setCurrentContextBarItemController:
-- _objc_msgSend$setCurrentContextBarItemDidChangeHandler:
-- _objc_msgSend$setCurrentPage:
-- _objc_msgSend$setCurrentState:
-- _objc_msgSend$setDirection:
-- _objc_msgSend$setEffectiveContextBarFrame:
-- _objc_msgSend$setEffectiveControlPanelFrame:
-- _objc_msgSend$setEffectiveGrabberFrame:
-- _objc_msgSend$setEffectiveTouchpadFrame:
-- _objc_msgSend$setFetchedArtworkImage:
-- _objc_msgSend$setGestureIsRevealing:
-- _objc_msgSend$setGestureStartPoint:
-- _objc_msgSend$setHiddenBundleIDs:
-- _objc_msgSend$setHostingViews:
-- _objc_msgSend$setImageAspectFit:
-- _objc_msgSend$setInfoButtonActionHandler:
-- _objc_msgSend$setInteractiveAnimator:
-- _objc_msgSend$setIsArranged:
-- _objc_msgSend$setIsInToggleAnimation:
-- _objc_msgSend$setLaunchableAppsController:
-- _objc_msgSend$setMruCountDict:
-- _objc_msgSend$setNowPlayingSentinel:
-- _objc_msgSend$setNowPlayingWithCastViewController:
-- _objc_msgSend$setNumberOfPages:
-- _objc_msgSend$setPageControl:
-- _objc_msgSend$setReversed:
-- _objc_msgSend$setScrollDirection:
-- _objc_msgSend$setSelectedViewControllerIndex:
-- _objc_msgSend$setStackBackgroundColor:
-- _objc_msgSend$setState:
-- _objc_msgSend$setTopShelfInfo:
-- _objc_msgSend$setTopShelfInfoController:
-- _objc_msgSend$setTopShelfInfoViewController:
-- _objc_msgSend$setTopShelfItems:
-- _objc_msgSend$setTransitionIsFromUserInteraction:
-- _objc_msgSend$setUsesGridStyle:
-- _objc_msgSend$setWithArray:
-- _objc_msgSend$shouldAnimateRenderFormatChange
-- _objc_msgSend$showNowPlayingWithCastInContextBar
-- _objc_msgSend$sortUsingComparator:
-- _objc_msgSend$stackBackgroundColor
-- _objc_msgSend$titleOnTop
-- _objc_msgSend$titleStyle
-- _objc_msgSend$toggleContextBarVisibleAnimated:
-- _objc_msgSend$topShelfInfo
-- _objc_msgSend$topShelfInfoController
-- _objc_msgSend$topShelfInfoViewController
-- _objc_msgSend$topShelfItems
-- _objc_msgSend$transform
-- _objc_msgSend$transitionIsFromUserInteraction
-- _objc_msgSend$unhideApps
-- _objc_msgSend$unhideItem
-- _objc_msgSend$updateFromAppInfosAnimated:
-- _objc_msgSend$updateTopShelfInfo:
-- _objc_msgSend$updateWithTouchpadFrame:controlPanelFrame:devicePickerFrame:
-- _objc_msgSend$userDidSelectContextBarItemWithIdentifier:
-- _objc_msgSend$usesGridStyle
-- _objc_msgSend$viewControllers
 CStrings:
 + "#touchpad - force directional pad setting is enabled"
 + "#touchpad - transitioning to directional pad"

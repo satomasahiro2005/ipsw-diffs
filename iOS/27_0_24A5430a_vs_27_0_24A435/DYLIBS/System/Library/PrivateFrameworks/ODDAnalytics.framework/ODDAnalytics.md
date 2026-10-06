@@ -2,16 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/ODDAnalytics.framework/ODDAnalytics`
 
-```diff
+### Section Size Changes
 
- 3600.49.21.11.1
--  __TEXT.__text: 0x99bc
-+  __TEXT.__text: 0x99c8
-   __TEXT.__const: 0x2a8
-   __TEXT.__constg_swiftt: 0x1d0
-   __TEXT.__swift5_typeref: 0x1c7
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x99bc` | `0x99c8` | **`+0xc`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2937d1dcc -> sub_294536dcc : 356 -> 360
-~ sub_2937d2080 -> sub_294537084 : 356 -> 360
-~ sub_2937d9a80 -> sub_29453ea88 : 680 -> 684
+~ sub_2936b7dcc -> sub_29440adcc : 356 -> 360
+~ sub_2936b8080 -> sub_29440b084 : 356 -> 360
+~ sub_2936bfa80 -> sub_294412a88 : 680 -> 684
 ```

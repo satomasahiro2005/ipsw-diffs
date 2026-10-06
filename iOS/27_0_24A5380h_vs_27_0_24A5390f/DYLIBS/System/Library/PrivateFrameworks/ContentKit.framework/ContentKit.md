@@ -2,124 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/ContentKit.framework/ContentKit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x20c698` | `0x20e570` | **`+0x1ed8`** |
+| `__TEXT.__cstring` | `0x1a190` | `0x1a59f` | **`+0x40f`** |
+| `__TEXT.__oslogstring` | `0x5ad9` | `0x5e96` | **`+0x3bd`** |
+| `__TEXT.__gcc_except_tab` | `0x2958` | `0x2c24` | **`+0x2cc`** |
+| `__AUTH_CONST.__objc_const` | `0x169b8` | `0x16af8` | **`+0x140`** |
+| `__AUTH_CONST.__cfstring` | `0x12560` | `0x12640` | **`+0xe0`** |
+| `__AUTH.__objc_data` | `0x2300` | `0x23a0` | **`+0xa0`** |
+| `__DATA.__bss` | `0xdd98` | `0xde28` | **`+0x90`** |
+| `__TEXT.__unwind_info` | `0x81f8` | `0x8260` | **`+0x68`** |
+| `__DATA_CONST.__const` | `0x63a0` | `0x6400` | **`+0x60`** |
+| `__TEXT.__objc_methlist` | `0xcbec` | `0xcc3c` | **`+0x50`** |
+| `__TEXT.__dlopen_cstrs` | `0x19e9` | `0x1a2c` | **`+0x43`** |
+| `__TEXT.__const` | `0x9a94` | `0x9ad4` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0xc9f0` | `0xca28` | **`+0x38`** |
+| `__DATA_CONST.__objc_selrefs` | `0x69e8` | `0x6a20` | **`+0x38`** |
+| `__TEXT.__swift5_typeref` | `0x2616` | `0x2640` | **`+0x2a`** |
+| `__TEXT.__eh_frame` | `0xaa10` | `0xaa30` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x128b` | `0x12ab` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x1ef0` | `0x1f08` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x23c0` | `0x23d0` | **`+0x10`** |
+| `__DATA.__data` | `0x39ec` | `0x39fc` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x770` | `0x780` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x1c64` | `0x1c70` | **`+0xc`** |
+| `__DATA_CONST.__got` | `0x1928` | `0x1930` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x4b0` | `0x4b8` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x698` | `0x69c` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -5032.5.0.0.0
--  __TEXT.__text: 0x20c698
 +5034.0.12.100.0
-+  __TEXT.__text: 0x20e570
-   __TEXT.__delay_helper: 0xdc
--  __TEXT.__objc_methlist: 0xcbec
--  __TEXT.__const: 0x9a94
--  __TEXT.__dlopen_cstrs: 0x19e9
--  __TEXT.__cstring: 0x1a190
--  __TEXT.__swift5_typeref: 0x2616
--  __TEXT.__oslogstring: 0x5ad9
-+  __TEXT.__objc_methlist: 0xcc3c
-+  __TEXT.__const: 0x9ad4
-+  __TEXT.__dlopen_cstrs: 0x1a2c
-+  __TEXT.__cstring: 0x1a59f
-+  __TEXT.__swift5_typeref: 0x2640
-+  __TEXT.__oslogstring: 0x5e96
-   __TEXT.__constg_swiftt: 0x1a7c
--  __TEXT.__swift5_reflstr: 0x128b
--  __TEXT.__swift5_fieldmd: 0x1c64
-+  __TEXT.__swift5_reflstr: 0x12ab
-+  __TEXT.__swift5_fieldmd: 0x1c70
-   __TEXT.__swift5_builtin: 0xb4
-   __TEXT.__swift5_assocty: 0x468
-   __TEXT.__swift5_protos: 0x1c
--  __TEXT.__swift5_proto: 0x698
-+  __TEXT.__swift5_proto: 0x69c
-   __TEXT.__swift5_types: 0x218
-   __TEXT.__swift5_capture: 0x23cc
-   __TEXT.__swift_as_entry: 0x360
-   __TEXT.__swift_as_ret: 0x4f4
-   __TEXT.__swift_as_cont: 0x908
-   __TEXT.__swift5_mpenum: 0x30
--  __TEXT.__gcc_except_tab: 0x2958
-+  __TEXT.__gcc_except_tab: 0x2c24
-   __TEXT.__ustring: 0xfd0
--  __TEXT.__unwind_info: 0x81f8
--  __TEXT.__eh_frame: 0xaa10
-+  __TEXT.__unwind_info: 0x8260
-+  __TEXT.__eh_frame: 0xaa30
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x63a0
--  __DATA_CONST.__objc_classlist: 0x770
-+  __DATA_CONST.__const: 0x6400
-+  __DATA_CONST.__objc_classlist: 0x780
-   __DATA_CONST.__objc_catlist: 0x128
-   __DATA_CONST.__objc_protolist: 0xf8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x69e8
-+  __DATA_CONST.__objc_selrefs: 0x6a20
-   __DATA_CONST.__objc_protorefs: 0x48
--  __DATA_CONST.__objc_superrefs: 0x4b0
-+  __DATA_CONST.__objc_superrefs: 0x4b8
-   __DATA_CONST.__objc_arraydata: 0x1490
--  __DATA_CONST.__got: 0x1928
--  __AUTH_CONST.__const: 0xc9f0
--  __AUTH_CONST.__cfstring: 0x12560
--  __AUTH_CONST.__objc_const: 0x169b8
--  __AUTH_CONST.__objc_intobj: 0x1ef0
-+  __DATA_CONST.__got: 0x1930
-+  __AUTH_CONST.__const: 0xca28
-+  __AUTH_CONST.__cfstring: 0x12640
-+  __AUTH_CONST.__objc_const: 0x16af8
-+  __AUTH_CONST.__objc_intobj: 0x1f08
-   __AUTH_CONST.__objc_arrayobj: 0xf0
-   __AUTH_CONST.__objc_dictobj: 0x168
--  __AUTH_CONST.__auth_got: 0x23c0
--  __AUTH.__objc_data: 0x2300
-+  __AUTH_CONST.__auth_got: 0x23d0
-+  __AUTH.__objc_data: 0x23a0
-   __AUTH.__data: 0x1710
-   __DATA.__objc_ivar: 0x8f4
--  __DATA.__data: 0x39ec
--  __DATA.__bss: 0xdd98
-+  __DATA.__data: 0x39fc
-+  __DATA.__bss: 0xde28
-   __DATA.__common: 0x10
-   __DATA_DIRTY.__objc_data: 0x29f0
-   __DATA_DIRTY.__data: 0x110
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12735
--  Symbols:   14736
+-  Symbols:   11870
 -  CStrings:  4707
 +  Functions: 12778
-+  Symbols:   14782
++  Symbols:   11909
 +  CStrings:  4740
- 
 Symbols:
 + +[WFPhotoAlbumLibraryFiltering performCustomFilteringUsingContentPredicates:compoundPredicateType:forQuery:withInput:resultHandler:]
 + -[NSURL(WFFilePathDisplay) wf_localStorageDisplayPathComponents]
@@ -345,13 +271,6 @@ Symbols:
 + ___destroy_helper_block_e8_40n4_8_s856n4_8_s8
 + _dispatch_group_async
 + _dispatch_group_wait
-+ _objc_msgSend$arrayValue
-+ _objc_msgSend$compareObject:toObject:
-+ _objc_msgSend$fetchLimit
-+ _objc_msgSend$fetchedObjects
-+ _objc_msgSend$postNotificationName:object:
-+ _objc_msgSend$wf_localStorageDisplayPathComponents
-+ _objc_msgSend$wf_relativePathFromURL:
 + _symbolic SSSg13displayedName_AA16bundleIdentifiert
 - GCC_except_table1045
 - GCC_except_table1049

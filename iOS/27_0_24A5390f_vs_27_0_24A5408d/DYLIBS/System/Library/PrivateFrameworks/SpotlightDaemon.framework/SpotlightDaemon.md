@@ -2,83 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/SpotlightDaemon.framework/SpotlightDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc06f8` | `0xc4514` | **`+0x3e1c`** |
+| `__TEXT.__oslogstring` | `0xcb64` | `0xd304` | **`+0x7a0`** |
+| `__TEXT.__cstring` | `0x96b7` | `0x98ea` | **`+0x233`** |
+| `__TEXT.__objc_methlist` | `0x49cc` | `0x4bc4` | **`+0x1f8`** |
+| `__AUTH_CONST.__objc_const` | `0x5f48` | `0x6128` | **`+0x1e0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3bd8` | `0x3d10` | **`+0x138`** |
+| `__TEXT.__unwind_info` | `0x2800` | `0x28f8` | **`+0xf8`** |
+| `__TEXT.__gcc_except_tab` | `0x4944` | `0x4a1c` | **`+0xd8`** |
+| `__DATA_CONST.__const` | `0x4730` | `0x47b0` | **`+0x80`** |
+| `__DATA.__objc_ivar` | `0x50c` | `0x540` | **`+0x34`** |
+| `__AUTH_CONST.__cfstring` | `0x7fe0` | `0x7fc0` | **`-0x20`** |
+| `__AUTH_CONST.__const` | `0x1308` | `0x1328` | **`+0x20`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x390` | `0x3a8` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x1130` | `0x1120` | **`-0x10`** |
+| `__DATA.__bss` | `0x150` | `0x160` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0xbe8` | `0xbf8` | **`+0x10`** |
+| `__DATA_CONST.__objc_arraydata` | `0x300` | `0x310` | **`+0x10`** |
+| `__TEXT.__const` | `0x3d8` | `0x3e8` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x6e0` | `0x6d8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2454.100.0.0.0
--  __TEXT.__text: 0xc06f8
--  __TEXT.__objc_methlist: 0x49cc
--  __TEXT.__const: 0x3d8
--  __TEXT.__cstring: 0x96b7
--  __TEXT.__gcc_except_tab: 0x4944
--  __TEXT.__oslogstring: 0xcb64
 +2459.102.0.0.0
-+  __TEXT.__text: 0xc4514
-+  __TEXT.__objc_methlist: 0x4bc4
-+  __TEXT.__const: 0x3e8
-+  __TEXT.__cstring: 0x98ea
-+  __TEXT.__gcc_except_tab: 0x4a1c
-+  __TEXT.__oslogstring: 0xd304
-   __TEXT.__dlopen_cstrs: 0x4a
--  __TEXT.__unwind_info: 0x2800
-+  __TEXT.__unwind_info: 0x28f8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4730
-+  __DATA_CONST.__const: 0x47b0
-   __DATA_CONST.__objc_classlist: 0x1b0
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3bd8
-+  __DATA_CONST.__objc_selrefs: 0x3d10
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x138
--  __DATA_CONST.__objc_arraydata: 0x300
--  __DATA_CONST.__got: 0xbe8
--  __AUTH_CONST.__const: 0x1308
--  __AUTH_CONST.__cfstring: 0x7fe0
--  __AUTH_CONST.__objc_const: 0x5f48
-+  __DATA_CONST.__objc_arraydata: 0x310
-+  __DATA_CONST.__got: 0xbf8
-+  __AUTH_CONST.__const: 0x1328
-+  __AUTH_CONST.__cfstring: 0x7fc0
-+  __AUTH_CONST.__objc_const: 0x6128
-   __AUTH_CONST.__weak_auth_got: 0x10
--  __AUTH_CONST.__objc_arrayobj: 0x390
-+  __AUTH_CONST.__objc_arrayobj: 0x3a8
-   __AUTH_CONST.__objc_intobj: 0x228
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x1130
-+  __AUTH_CONST.__auth_got: 0x1120
-   __AUTH.__objc_data: 0x140
--  __DATA.__objc_ivar: 0x50c
-+  __DATA.__objc_ivar: 0x540
-   __DATA.__data: 0x418
--  __DATA.__bss: 0x150
-+  __DATA.__bss: 0x160
-   __DATA.__common: 0x4
-   __DATA_DIRTY.__objc_data: 0xfa0
-   __DATA_DIRTY.__data: 0x158
--  __DATA_DIRTY.__bss: 0x6e0
-+  __DATA_DIRTY.__bss: 0x6d8
-   __DATA_DIRTY.__common: 0x18
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libutil.dylib
 -  Functions: 3320
--  Symbols:   6646
+-  Symbols:   4979
 -  CStrings:  2661
 +  Functions: 3377
-+  Symbols:   6747
++  Symbols:   5046
 +  CStrings:  2699
- 
 Symbols:
 + -[CSSearchAgent _issueDrainIfRequestedForQueryContext:searchConnection:qos:]
 + -[CSSearchAgent _validatedDrainBundleIDsForQueryContext:searchConnection:]
@@ -262,44 +222,6 @@ Symbols:
 + _logForCSLogCategoryDrain
 + _logForCSLogCategoryDrain.onceToken
 + _logForCSLogCategoryDrain.sDrainLog
-+ _objc_msgSend$_indexUnavailableErrorCodeForFailedOpen
-+ _objc_msgSend$_issueCommand:outFileDescriptor:searchContext:clientBundleID:completionHandler:
-+ _objc_msgSend$_issueDrainIfRequestedForQueryContext:searchConnection:qos:
-+ _objc_msgSend$_validatedDrainBundleIDsForQueryContext:searchConnection:
-+ _objc_msgSend$allowQueryDrainTrigger
-+ _objc_msgSend$containingAppForPlugInConnectedTo:
-+ _objc_msgSend$drainBundleIDs
-+ _objc_msgSend$drainDonations
-+ _objc_msgSend$drainToken
-+ _objc_msgSend$evaluateDrainRateLimitForBundleIDs:clientBundleID:
-+ _objc_msgSend$evictPendingDrainTokensForBundleID:
-+ _objc_msgSend$indexer
-+ _objc_msgSend$informationForPlugInWithPid:
-+ _objc_msgSend$issueDrainForBundleID:token:
-+ _objc_msgSend$performDrainWithToken:
-+ _objc_msgSend$processDrainResponse:
-+ _objc_msgSend$recordedBundleIDForDrainToken:
-+ _objc_msgSend$removeDrainTokenEntry:bundleID:
-+ _objc_msgSend$shouldLogQueryDrainTriggerRejection
-+ _objc_msgSend$sp_buildDrainDictionaryForToken:
-+ _objc_msgSend$sp_decrementDonorIdentityTokenSlotCountForBundleID:count:now:
-+ _objc_msgSend$sp_drainCallerIdentitySlotForBundleID:now:
-+ _objc_msgSend$sp_drainDonorIdentitySlotForBundleID:now:
-+ _objc_msgSend$sp_effectiveOccupiedDrainTokenTTLSeconds
-+ _objc_msgSend$sp_effectiveQuarantinedDrainTokenTTLSeconds
-+ _objc_msgSend$sp_evaluateDrainRateLimitForBundleIDs:clientBundleID:now:
-+ _objc_msgSend$sp_evictAllDrainTokensForBundleID:protectionClass:
-+ _objc_msgSend$sp_evictAllDrainTokensForBundleID:protectionClass:now:
-+ _objc_msgSend$sp_evictDrainTokenAtIndex:expectedToken:now:
-+ _objc_msgSend$sp_issueDrainForBundleID:token:now:
-+ _objc_msgSend$sp_reconcileDrainTokenSweepTimerSuspension
-+ _objc_msgSend$sp_recordedBundleIDForDrainToken:
-+ _objc_msgSend$sp_removeDrainTokenEntry:expectingBundleID:
-+ _objc_msgSend$sp_removeDrainTokenEntry:expectingBundleID:now:
-+ _objc_msgSend$sp_sendDrainToken:toBundleID:
-+ _objc_msgSend$sp_startDrainTokenSweepTimer
-+ _objc_msgSend$sp_sweepExpiredDrainTokens:
-+ _objc_msgSend$trialSpotlightUITreatmentID
 - -[SPCoreSpotlightIndexer _issueCommand:outFileDescriptor:searchContext:completionHandler:]
 - GCC_except_table1005
 - GCC_except_table1006
@@ -415,10 +337,6 @@ Symbols:
 - _gDefaultSchemaPlistBytes
 - _mach_vm_allocate
 - _mach_vm_deallocate
-- _objc_msgSend$bundleWithIdentifier:
-- _objc_msgSend$checkedInClients
-- _objc_msgSend$initWithContentsOfFile:
-- _objc_msgSend$keyEnumerator
 CStrings:
 + "%s reindexAllCallToDaemonServer1(%s/excluded:[%s]/%s)"
 + "%s reindexAllCallToDaemonServer2(excluded:[%s]/%s)"

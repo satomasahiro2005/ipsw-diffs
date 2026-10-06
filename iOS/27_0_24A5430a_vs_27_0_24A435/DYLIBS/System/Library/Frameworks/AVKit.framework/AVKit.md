@@ -2,86 +2,35 @@
 
 > `/System/Library/Frameworks/AVKit.framework/AVKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x268b10` | `0x269ccc` | **`+0x11bc`** |
+| `__AUTH_CONST.__objc_const` | `0x382a0` | `0x38578` | **`+0x2d8`** |
+| `__TEXT.__objc_methlist` | `0x1ed44` | `0x1ee14` | **`+0xd0`** |
+| `__AUTH.__objc_data` | `0x6838` | `0x68d8` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0x1329a` | `0x13322` | **`+0x88`** |
+| `__AUTH_CONST.__cfstring` | `0x99a0` | `0x9a00` | **`+0x60`** |
+| `__DATA_CONST.__got` | `0x1848` | `0x18a8` | **`+0x60`** |
+| `__DATA_CONST.__objc_selrefs` | `0xd430` | `0xd488` | **`+0x58`** |
+| `__TEXT.__oslogstring` | `0xc11d` | `0xc15b` | **`+0x3e`** |
+| `__TEXT.__unwind_info` | `0xa368` | `0xa3a0` | **`+0x38`** |
+| `__DATA.__objc_ivar` | `0x3024` | `0x3054` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0xae8` | `0xaf8` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x7f8` | `0x808` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1fa0` | `0x1fa8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 1360.75.1.3.0
--  __TEXT.__text: 0x268b10
--  __TEXT.__objc_methlist: 0x1ed44
-+  __TEXT.__text: 0x269ccc
-+  __TEXT.__objc_methlist: 0x1ee14
-   __TEXT.__const: 0x8438
-   __TEXT.__constg_swiftt: 0x2cbc
-   __TEXT.__swift5_typeref: 0x8312
-
-   __TEXT.__swift5_fieldmd: 0x1e58
-   __TEXT.__swift5_assocty: 0x858
-   __TEXT.__swift5_capture: 0x18d8
--  __TEXT.__cstring: 0x1329a
-+  __TEXT.__cstring: 0x13322
-   __TEXT.__swift5_proto: 0x2cc
-   __TEXT.__swift5_types: 0x24c
-   __TEXT.__swift5_protos: 0x54
-   __TEXT.__swift_as_entry: 0x2e8
-   __TEXT.__swift_as_ret: 0x444
-   __TEXT.__swift_as_cont: 0x86c
--  __TEXT.__oslogstring: 0xc11d
-+  __TEXT.__oslogstring: 0xc15b
-   __TEXT.__swift5_mpenum: 0x18
-   __TEXT.__gcc_except_tab: 0x426c
-   __TEXT.__dlopen_cstrs: 0x1ef
-   __TEXT.__ustring: 0x10c
--  __TEXT.__unwind_info: 0xa368
-+  __TEXT.__unwind_info: 0xa3a0
-   __TEXT.__eh_frame: 0x7a5c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x33b0
--  __DATA_CONST.__objc_classlist: 0xae8
-+  __DATA_CONST.__objc_classlist: 0xaf8
-   __DATA_CONST.__objc_catlist: 0xd8
-   __DATA_CONST.__objc_protolist: 0x4e8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xd430
-+  __DATA_CONST.__objc_selrefs: 0xd488
-   __DATA_CONST.__objc_protorefs: 0xa0
--  __DATA_CONST.__objc_superrefs: 0x7f8
-+  __DATA_CONST.__objc_superrefs: 0x808
-   __DATA_CONST.__objc_arraydata: 0x6c0
--  __DATA_CONST.__got: 0x1848
-+  __DATA_CONST.__got: 0x18a8
-   __AUTH_CONST.__const: 0x88f8
--  __AUTH_CONST.__cfstring: 0x99a0
--  __AUTH_CONST.__objc_const: 0x382a0
-+  __AUTH_CONST.__cfstring: 0x9a00
-+  __AUTH_CONST.__objc_const: 0x38578
-   __AUTH_CONST.__objc_arrayobj: 0x330
-   __AUTH_CONST.__objc_intobj: 0x6c0
-   __AUTH_CONST.__objc_doubleobj: 0x280
-   __AUTH_CONST.__objc_dictobj: 0xf0
--  __AUTH_CONST.__auth_got: 0x1fa0
--  __AUTH.__objc_data: 0x6838
-+  __AUTH_CONST.__auth_got: 0x1fa8
-+  __AUTH.__objc_data: 0x68d8
-   __AUTH.__data: 0x2148
--  __DATA.__objc_ivar: 0x3024
-+  __DATA.__objc_ivar: 0x3054
-   __DATA.__data: 0x5cb8
-   __DATA.__common: 0x1c8
-   __DATA_DIRTY.__objc_data: 0x12e0
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 14854
--  Symbols:   25650
+-  Symbols:   20102
 -  CStrings:  2999
 +  Functions: 14871
-+  Symbols:   25715
++  Symbols:   20158
 +  CStrings:  3004
- 
 Symbols:
 + +[AVCaptureDeviceStates stateWithStateADeviceIDs:stateBDeviceIDs:]
 + -[AVCaptureDeviceStateCoordinator .cxx_destruct]
@@ -189,15 +138,6 @@ Symbols:
 + ___68-[AVCaptureDeviceStateCoordinator initWithView:types:queue:handler:]_block_invoke
 + ___82-[AVCaptureDeviceStateCoordinator observeValueForKeyPath:ofObject:change:context:]_block_invoke
 + _dispatch_assert_queue$V2
-+ _objc_msgSend$_initWithStateADeviceIDs:stateBDeviceIDs:
-+ _objc_msgSend$_updateCurrentState:
-+ _objc_msgSend$devices
-+ _objc_msgSend$discoverySessionWithDeviceTypes:mediaType:position:
-+ _objc_msgSend$removeObserver:forKeyPath:
-+ _objc_msgSend$stateADeviceIDs
-+ _objc_msgSend$stateBDeviceIDs
-+ _objc_msgSend$stateWithStateADeviceIDs:stateBDeviceIDs:
-+ _objc_msgSend$uniqueID
 - GCC_except_table10105
 - GCC_except_table10107
 - GCC_except_table10121

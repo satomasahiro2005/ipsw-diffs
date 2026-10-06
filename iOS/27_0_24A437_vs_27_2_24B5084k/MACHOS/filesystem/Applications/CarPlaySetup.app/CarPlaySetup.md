@@ -2,71 +2,48 @@
 
 > `/Applications/CarPlaySetup.app/CarPlaySetup`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x78e4` | `0x7d04` | **`+0x420`** |
+| `__TEXT.__objc_stubs` | `0x12a0` | `0x1320` | **`+0x80`** |
+| `__TEXT.__objc_methname` | `0x2c11` | `0x2c8b` | **`+0x7a`** |
+| `__TEXT.__oslogstring` | `0xc6d` | `0xccc` | **`+0x5f`** |
+| `__TEXT.__gcc_except_tab` | `0x44` | `0xa0` | **`+0x5c`** |
+| `__DATA_CONST.__const` | `0x428` | `0x478` | **`+0x50`** |
+| `__TEXT.__cstring` | `0x1b1` | `0x1e6` | **`+0x35`** |
+| `__TEXT.__auth_stubs` | `0x3a0` | `0x3d0` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x240` | `0x268` | **`+0x28`** |
+| `__DATA.__objc_selrefs` | `0x8b0` | `0x8d0` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0x1e0` | `0x1f8` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x178` | `0x188` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
 - `__DATA_CONST.__cfstring`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA.__objc_const`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
 -799.3.0.0.0
--  __TEXT.__text: 0x77c4
--  __TEXT.__auth_stubs: 0x3a0
--  __TEXT.__objc_stubs: 0x12a0
 +807.2.0.0.0
-+  __TEXT.__text: 0x7bd8
-+  __TEXT.__auth_stubs: 0x3d0
-+  __TEXT.__objc_stubs: 0x1320
-   __TEXT.__objc_methlist: 0xc40
-   __TEXT.__const: 0x68
--  __TEXT.__objc_methname: 0x2c11
--  __TEXT.__cstring: 0x1b1
--  __TEXT.__oslogstring: 0xc6d
-+  __TEXT.__objc_methname: 0x2c8b
-+  __TEXT.__cstring: 0x1e6
-+  __TEXT.__oslogstring: 0xccc
-   __TEXT.__objc_classname: 0x1af
-   __TEXT.__objc_methtype: 0x11b9
--  __TEXT.__gcc_except_tab: 0x44
--  __TEXT.__unwind_info: 0x318
--  __DATA_CONST.__const: 0x428
-+  __TEXT.__gcc_except_tab: 0xa0
-+  __TEXT.__unwind_info: 0x338
-+  __DATA_CONST.__const: 0x478
-   __DATA_CONST.__cfstring: 0x160
-   __DATA_CONST.__objc_classlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x28
--  __DATA_CONST.__auth_got: 0x1e0
--  __DATA_CONST.__got: 0x178
-+  __DATA_CONST.__auth_got: 0x1f8
-+  __DATA_CONST.__got: 0x188
-   __DATA.__objc_const: 0x1888
--  __DATA.__objc_selrefs: 0x8b0
-+  __DATA.__objc_selrefs: 0x8d0
-   __DATA.__objc_ivar: 0x3c
-   __DATA.__objc_data: 0x2d0
-   __DATA.__data: 0x3c0
 
-   - /System/Library/PrivateFrameworks/SpringBoardUIServices.framework/SpringBoardUIServices
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 190
 -  Symbols:   122
 -  CStrings:  563
 +  Functions: 193
 +  Symbols:   127
 +  CStrings:  569
- 
 Symbols:
 + _OBJC_CLASS_$_UITraitHorizontalSizeClass
 + _OBJC_CLASS_$_UITraitVerticalSizeClass

@@ -2,121 +2,74 @@
 
 > `/private/var/staged_system_apps/Freeform.app/Freeform`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__objc_methtype`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_protos`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1454144` | `0x1465bd8` | **`+0x11a94`** |
+| `__TEXT.__cstring` | `0xc5ca5` | `0xc6935` | **`+0xc90`** |
+| `__TEXT.__unwind_info` | `0x43c98` | `0x443d8` | **`+0x740`** |
+| `__TEXT.__eh_frame` | `0x57a8c` | `0x5813c` | **`+0x6b0`** |
+| `__TEXT.__swift5_typeref` | `0x37aa2` | `0x37bc2` | **`+0x120`** |
+| `__DATA.__bss` | `0x8b148` | `0x8b048` | **`-0x100`** |
+| `__TEXT.__swift5_capture` | `0x11c50` | `0x11d50` | **`+0x100`** |
+| `__DATA.__data` | `0x503d8` | `0x50478` | **`+0xa0`** |
+| `__TEXT.__objc_methlist` | `0x56f98` | `0x57030` | **`+0x98`** |
+| `__TEXT.__const` | `0x79b14` | `0x79b84` | **`+0x70`** |
+| `__TEXT.__swift5_reflstr` | `0x24165` | `0x241d5` | **`+0x70`** |
+| `__TEXT.__objc_stubs` | `0x6c4a0` | `0x6c500` | **`+0x60`** |
+| `__TEXT.__auth_stubs` | `0x10f90` | `0x10fe0` | **`+0x50`** |
+| `__TEXT.__swift_as_cont` | `0x3f30` | `0x3f74` | **`+0x44`** |
+| `__TEXT.__objc_methname` | `0xc9109` | `0xc90c9` | **`-0x40`** |
+| `__DATA.__objc_const` | `0x9c5d0` | `0x9c598` | **`-0x38`** |
+| `__TEXT.__swift_as_ret` | `0x17ec` | `0x1820` | **`+0x34`** |
+| `__DATA_CONST.__auth_got` | `0x87e0` | `0x8808` | **`+0x28`** |
+| `__DATA.__objc_data` | `0x4d448` | `0x4d468` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x817d8` | `0x817b8` | **`-0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x2078c` | `0x20770` | **`-0x1c`** |
+| `__DATA.__objc_selrefs` | `0x253f8` | `0x25410` | **`+0x18`** |
+| `__TEXT.__swift_as_entry` | `0x1444` | `0x145c` | **`+0x18`** |
+| `__TEXT.__constg_swiftt` | `0x387fc` | `0x387e8` | **`-0x14`** |
+| `__TEXT.__swift5_builtin` | `0xbcc` | `0xbe0` | **`+0x14`** |
+| `__DATA_CONST.__auth_ptr` | `0x6d10` | `0x6d08` | **`-0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x204` | `0x20c` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x4f78` | `0x4f70` | **`-0x8`** |
+| `__DATA.__objc_ivar` | `0x38c8` | `0x38c4` | **`-0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_stublist`
 - `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_catlist`
 - `__DATA_CONST.__objc_catlist2`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_stublist`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methtype`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_types`
+
+### Other Changes
 
 ```diff
 
 -653.0.0.0.3
--  __TEXT.__text: 0x1454144
--  __TEXT.__auth_stubs: 0x10f90
--  __TEXT.__objc_stubs: 0x6c4a0
--  __TEXT.__objc_methlist: 0x56f98
--  __TEXT.__const: 0x79b14
 +656.2.1.0.0
-+  __TEXT.__text: 0x1465bd8
-+  __TEXT.__auth_stubs: 0x10fe0
-+  __TEXT.__objc_stubs: 0x6c500
-+  __TEXT.__objc_methlist: 0x57030
-+  __TEXT.__const: 0x79b84
-   __TEXT.__gcc_except_tab: 0x1b494
--  __TEXT.__cstring: 0xc5ca5
-+  __TEXT.__cstring: 0xc6935
-   __TEXT.__oslogstring: 0x29562
--  __TEXT.__objc_methname: 0xc9109
-+  __TEXT.__objc_methname: 0xc90c9
-   __TEXT.__objc_classname: 0x15a17
-   __TEXT.__objc_methtype: 0x24f00
-   __TEXT.__ustring: 0x134c
--  __TEXT.__swift5_typeref: 0x37aa2
--  __TEXT.__constg_swiftt: 0x387fc
-+  __TEXT.__swift5_typeref: 0x37bc2
-+  __TEXT.__constg_swiftt: 0x387e8
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__swift5_builtin: 0xbcc
--  __TEXT.__swift5_reflstr: 0x24165
--  __TEXT.__swift5_fieldmd: 0x2078c
-+  __TEXT.__swift5_builtin: 0xbe0
-+  __TEXT.__swift5_reflstr: 0x241d5
-+  __TEXT.__swift5_fieldmd: 0x20770
-   __TEXT.__swift5_assocty: 0x6928
--  __TEXT.__swift5_proto: 0x4f78
-+  __TEXT.__swift5_proto: 0x4f70
-   __TEXT.__swift5_types: 0x214c
-   __TEXT.__swift5_protos: 0x4c8
--  __TEXT.__swift5_capture: 0x11c50
--  __TEXT.__swift_as_entry: 0x1444
--  __TEXT.__swift_as_ret: 0x17ec
--  __TEXT.__swift_as_cont: 0x3f30
--  __TEXT.__swift5_mpenum: 0x204
--  __TEXT.__unwind_info: 0x43c98
--  __TEXT.__eh_frame: 0x57a8c
--  __DATA_CONST.__const: 0x817d8
-+  __TEXT.__swift5_capture: 0x11d50
-+  __TEXT.__swift_as_entry: 0x145c
-+  __TEXT.__swift_as_ret: 0x1820
-+  __TEXT.__swift_as_cont: 0x3f74
-+  __TEXT.__swift5_mpenum: 0x20c
-+  __TEXT.__unwind_info: 0x443d8
-+  __TEXT.__eh_frame: 0x5813c
-+  __DATA_CONST.__const: 0x817b8
-   __DATA_CONST.__cfstring: 0x19340
-   __DATA_CONST.__objc_classlist: 0x3458
-   __DATA_CONST.__objc_catlist: 0x200
 
-   __DATA_CONST.__objc_intobj: 0xde0
-   __DATA_CONST.__objc_doubleobj: 0x1d0
-   __DATA_CONST.__objc_floatobj: 0x2d0
--  __DATA_CONST.__auth_got: 0x87e0
-+  __DATA_CONST.__auth_got: 0x8808
-   __DATA_CONST.__got: 0x4cf8
--  __DATA_CONST.__auth_ptr: 0x6d10
--  __DATA.__objc_const: 0x9c5d0
--  __DATA.__objc_selrefs: 0x253f8
--  __DATA.__objc_ivar: 0x38c8
--  __DATA.__objc_data: 0x4d448
--  __DATA.__data: 0x503d8
-+  __DATA_CONST.__auth_ptr: 0x6d08
-+  __DATA.__objc_const: 0x9c598
-+  __DATA.__objc_selrefs: 0x25410
-+  __DATA.__objc_ivar: 0x38c4
-+  __DATA.__objc_data: 0x4d468
-+  __DATA.__data: 0x50478
-   __DATA.__objc_stublist: 0xb0
--  __DATA.__bss: 0x8b148
-+  __DATA.__bss: 0x8b048
-   __DATA.__common: 0x46e0
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - @rpath/TSFundamentals.framework/TSFundamentals
-   - @rpath/TSGeometry.framework/TSGeometry
-   - @rpath/TSUtility.framework/TSUtility
 -  Functions: 91522
 -  Symbols:   7828
 -  CStrings:  48719
 +  Functions: 91619
 +  Symbols:   7834
 +  CStrings:  48742
- 
 Symbols:
 + _$s7SwiftUI31_IndefiniteSymbolEffectModifierVAA04ViewF0AAWP
 + _$s8PaperKit30FreehandWritingToolsControllerC06canceldE0yyF

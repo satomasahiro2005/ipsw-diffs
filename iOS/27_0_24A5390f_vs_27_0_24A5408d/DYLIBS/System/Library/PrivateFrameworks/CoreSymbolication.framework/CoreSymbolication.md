@@ -2,52 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/CoreSymbolication.framework/CoreSymbolication`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x134d30` | `0x13935c` | **`+0x462c`** |
+| `__TEXT.__const` | `0x8d18` | `0x9418` | **`+0x700`** |
+| `__TEXT.__cstring` | `0x8009` | `0x8385` | **`+0x37c`** |
+| `__AUTH_CONST.__const` | `0x49c0` | `0x4bd0` | **`+0x210`** |
+| `__TEXT.__gcc_except_tab` | `0xd6a4` | `0xd7ec` | **`+0x148`** |
+| `__TEXT.__unwind_info` | `0x5fc0` | `0x6088` | **`+0xc8`** |
+| `__DATA_CONST.__const` | `0x2248` | `0x22c8` | **`+0x80`** |
+| `__TEXT.__oslogstring` | `0x1d4f` | `0x1d45` | **`-0xa`** |
+
+### Other Changes
+
 ```diff
 
 -64578.77.1.0.0
--  __TEXT.__text: 0x134d30
 +64578.82.1.0.0
-+  __TEXT.__text: 0x13935c
-   __TEXT.__objc_methlist: 0x4d4
--  __TEXT.__const: 0x8d18
--  __TEXT.__gcc_except_tab: 0xd6a4
--  __TEXT.__oslogstring: 0x1d4f
--  __TEXT.__cstring: 0x8009
--  __TEXT.__unwind_info: 0x5fc0
-+  __TEXT.__const: 0x9418
-+  __TEXT.__gcc_except_tab: 0xd7ec
-+  __TEXT.__oslogstring: 0x1d45
-+  __TEXT.__cstring: 0x8385
-+  __TEXT.__unwind_info: 0x6088
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2248
-+  __DATA_CONST.__const: 0x22c8
-   __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
-   __DATA_CONST.__objc_selrefs: 0x340
-   __DATA_CONST.__objc_superrefs: 0x20
-   __DATA_CONST.__got: 0x1d0
--  __AUTH_CONST.__const: 0x49c0
-+  __AUTH_CONST.__const: 0x4bd0
-   __AUTH_CONST.__cfstring: 0x5a0
-   __AUTH_CONST.__objc_const: 0x620
-   __AUTH_CONST.__weak_auth_got: 0x30
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 4854
--  Symbols:   7252
+-  Symbols:   7223
 -  CStrings:  1155
 +  Functions: 4950
-+  Symbols:   7377
++  Symbols:   7348
 +  CStrings:  1170
- 
 Symbols:
 + GCC_except_table1002
 + GCC_except_table1006

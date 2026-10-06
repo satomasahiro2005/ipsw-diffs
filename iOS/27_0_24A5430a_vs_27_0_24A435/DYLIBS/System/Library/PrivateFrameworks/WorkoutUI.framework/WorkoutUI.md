@@ -2,129 +2,64 @@
 
 > `/System/Library/PrivateFrameworks/WorkoutUI.framework/WorkoutUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x576598` | `0x5f357c` | **`+0x7cfe4`** |
+| `__AUTH_CONST.__const` | `0x215a0` | `0x629e0` | **`+0x41440`** |
+| `__TEXT.__cstring` | `0xf07d` | `0x364dd` | **`+0x27460`** |
+| `__TEXT.__swift5_typeref` | `0xaa842` | `0xb5ab8` | **`+0xb276`** |
+| `__TEXT.__const` | `0x3c534` | `0x40624` | **`+0x40f0`** |
+| `__DATA.__bss` | `0x1e150` | `0x20ed0` | **`+0x2d80`** |
+| `__DATA.__data` | `0x16b38` | `0x18348` | **`+0x1810`** |
+| `__TEXT.__constg_swiftt` | `0x115b8` | `0x12878` | **`+0x12c0`** |
+| `__TEXT.__eh_frame` | `0x88b0` | `0x9a88` | **`+0x11d8`** |
+| `__TEXT.__unwind_info` | `0xf608` | `0x10770` | **`+0x1168`** |
+| `__TEXT.__swift5_fieldmd` | `0xcc80` | `0xdbf8` | **`+0xf78`** |
+| `__TEXT.__swift5_reflstr` | `0x11234` | `0x12064` | **`+0xe30`** |
+| `__AUTH.__data` | `0xa4c0` | `0xb0f0` | **`+0xc30`** |
+| `__DATA_DIRTY.__data` | `0x4268` | `0x4938` | **`+0x6d0`** |
+| `__AUTH_CONST.__objc_const` | `0xc440` | `0xcae0` | **`+0x6a0`** |
+| `__AUTH_CONST.__auth_got` | `0x6608` | `0x6c38` | **`+0x630`** |
+| `__TEXT.__swift5_capture` | `0x7154` | `0x7670` | **`+0x51c`** |
+| `__DATA_CONST.__got` | `0x3130` | `0x3608` | **`+0x4d8`** |
+| `__TEXT.__swift5_assocty` | `0x3960` | `0x3d68` | **`+0x408`** |
+| `__TEXT.__oslogstring` | `0x9782` | `0x99c2` | **`+0x240`** |
+| `__DATA_DIRTY.__bss` | `0x30b0` | `0x32b0` | **`+0x200`** |
+| `__TEXT.__swift5_proto` | `0xf5c` | `0x10d8` | **`+0x17c`** |
+| `__AUTH.__objc_data` | `0x50e0` | `0x5220` | **`+0x140`** |
+| `__TEXT.__swift5_types` | `0xd4c` | `0xe58` | **`+0x10c`** |
+| `__TEXT.__swift_as_cont` | `0x3bc` | `0x464` | **`+0xa8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2940` | `0x29c0` | **`+0x80`** |
+| `__TEXT.__swift_as_entry` | `0x1c4` | `0x224` | **`+0x60`** |
+| `__TEXT.__swift_as_ret` | `0x160` | `0x1c0` | **`+0x60`** |
+| `__DATA.__common` | `0x510` | `0x560` | **`+0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x1758` | `0x17a8` | **`+0x50`** |
+| `__DATA_CONST.__objc_classlist` | `0x5a0` | `0x5d8` | **`+0x38`** |
+| `__DATA_CONST.__const` | `0x1038` | `0x1068` | **`+0x30`** |
+| `__TEXT.__swift5_builtin` | `0x438` | `0x44c` | **`+0x14`** |
+| `__TEXT.__swift5_protos` | `0x58` | `0x6c` | **`+0x14`** |
+| `__TEXT.__swift5_mpenum` | `0x38` | `0x40` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 2027.0.152.1.2
--  __TEXT.__text: 0x576598
-+  __TEXT.__text: 0x5f357c
-   __TEXT.__objc_methlist: 0x3530
--  __TEXT.__const: 0x3c534
--  __TEXT.__cstring: 0xf07d
--  __TEXT.__oslogstring: 0x9782
-+  __TEXT.__const: 0x40624
-+  __TEXT.__cstring: 0x364dd
-+  __TEXT.__oslogstring: 0x99c2
-   __TEXT.__gcc_except_tab: 0x230
--  __TEXT.__swift5_typeref: 0xaa842
--  __TEXT.__swift5_capture: 0x7154
--  __TEXT.__constg_swiftt: 0x115b8
--  __TEXT.__swift5_reflstr: 0x11234
--  __TEXT.__swift5_assocty: 0x3960
--  __TEXT.__swift5_fieldmd: 0xcc80
--  __TEXT.__swift5_builtin: 0x438
--  __TEXT.__swift5_proto: 0xf5c
--  __TEXT.__swift5_types: 0xd4c
--  __TEXT.__swift_as_entry: 0x1c4
--  __TEXT.__swift_as_cont: 0x3bc
--  __TEXT.__swift_as_ret: 0x160
--  __TEXT.__swift5_mpenum: 0x38
--  __TEXT.__swift5_protos: 0x58
--  __TEXT.__unwind_info: 0xf608
--  __TEXT.__eh_frame: 0x88b0
-+  __TEXT.__swift5_typeref: 0xb5ab8
-+  __TEXT.__swift5_capture: 0x7670
-+  __TEXT.__constg_swiftt: 0x12878
-+  __TEXT.__swift5_reflstr: 0x12064
-+  __TEXT.__swift5_assocty: 0x3d68
-+  __TEXT.__swift5_fieldmd: 0xdbf8
-+  __TEXT.__swift5_builtin: 0x44c
-+  __TEXT.__swift5_proto: 0x10d8
-+  __TEXT.__swift5_types: 0xe58
-+  __TEXT.__swift_as_entry: 0x224
-+  __TEXT.__swift_as_cont: 0x464
-+  __TEXT.__swift_as_ret: 0x1c0
-+  __TEXT.__swift5_mpenum: 0x40
-+  __TEXT.__swift5_protos: 0x6c
-+  __TEXT.__unwind_info: 0x10770
-+  __TEXT.__eh_frame: 0x9a88
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1038
--  __DATA_CONST.__objc_classlist: 0x5a0
-+  __DATA_CONST.__const: 0x1068
-+  __DATA_CONST.__objc_classlist: 0x5d8
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_catlist2: 0x8
-   __DATA_CONST.__objc_protolist: 0x2a8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2940
-+  __DATA_CONST.__objc_selrefs: 0x29c0
-   __DATA_CONST.__objc_protorefs: 0x150
-   __DATA_CONST.__objc_superrefs: 0xc8
--  __DATA_CONST.__got: 0x3130
--  __AUTH_CONST.__const: 0x215a0
-+  __DATA_CONST.__got: 0x3608
-+  __AUTH_CONST.__const: 0x629e0
-   __AUTH_CONST.__cfstring: 0x7a0
--  __AUTH_CONST.__objc_const: 0xc440
-+  __AUTH_CONST.__objc_const: 0xcae0
-   __AUTH_CONST.__objc_intobj: 0x48
--  __AUTH_CONST.__auth_got: 0x6608
--  __AUTH.__objc_data: 0x50e0
--  __AUTH.__data: 0xa4c0
-+  __AUTH_CONST.__auth_got: 0x6c38
-+  __AUTH.__objc_data: 0x5220
-+  __AUTH.__data: 0xb0f0
-   __DATA.__objc_ivar: 0x154
--  __DATA.__data: 0x16b38
-+  __DATA.__data: 0x18348
-   __DATA.__objc_stublist: 0x8
--  __DATA.__common: 0x510
--  __DATA_DIRTY.__objc_data: 0x1758
--  __DATA_DIRTY.__data: 0x4268
--  __DATA_DIRTY.__bss: 0x30b0
-+  __DATA.__common: 0x560
-+  __DATA_DIRTY.__objc_data: 0x17a8
-+  __DATA_DIRTY.__data: 0x4938
-+  __DATA_DIRTY.__bss: 0x32b0
-   __DATA_DIRTY.__common: 0xe0
-   - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-
-   - /System/Library/PrivateFrameworks/Fitness.framework/Fitness
-   - /System/Library/PrivateFrameworks/FitnessIntelligence.framework/FitnessIntelligence
-   - /System/Library/PrivateFrameworks/FitnessUI.framework/FitnessUI
 +  - /System/Library/PrivateFrameworks/HealthAppServices.framework/HealthAppServices
-   - /System/Library/PrivateFrameworks/HealthBalance.framework/HealthBalance
-   - /System/Library/PrivateFrameworks/HealthBalanceUI.framework/HealthBalanceUI
+
 +  - /System/Library/PrivateFrameworks/HealthMenstrualCycles.framework/HealthMenstrualCycles
 +  - /System/Library/PrivateFrameworks/HealthMenstrualCyclesUI.framework/HealthMenstrualCyclesUI
-   - /System/Library/PrivateFrameworks/IMSharedUtilities.framework/IMSharedUtilities
-   - /System/Library/PrivateFrameworks/IconServices.framework/IconServices
-   - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
 
-   - /System/Library/PrivateFrameworks/SeymourCoreFoundation.framework/SeymourCoreFoundation
-   - /System/Library/PrivateFrameworks/SeymourMetricsCore.framework/SeymourMetricsCore
-   - /System/Library/PrivateFrameworks/SeymourServiceSubscriptionCore.framework/SeymourServiceSubscriptionCore
 +  - /System/Library/PrivateFrameworks/SleepHealth.framework/SleepHealth
 +  - /System/Library/PrivateFrameworks/SleepHealthUI.framework/SleepHealthUI
-   - /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-   - /System/Library/PrivateFrameworks/WorkoutCore.framework/WorkoutCore
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 29941
--  Symbols:   67559
+-  Symbols:   66545
 -  CStrings:  2002
 +  Functions: 32018
-+  Symbols:   73985
++  Symbols:   72955
 +  CStrings:  3614
- 
 Symbols:
 + _$s10AppIntents15RelevantContextV14SleepConditionV7bedtimeAEvgZ
 + _$s10Foundation16AttributedStringVACSQAAWL
@@ -5971,22 +5906,6 @@ Symbols:
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE19containerBackground3for9alignment7contentQrAA09ContainerE9PlacementV_AA9AlignmentVqd__yXEtAaBRd__lFQOyAcAE16privacySensitiveyQrSbFQOyAA19_ConditionalContentVyANyANy07WorkoutB0017CircularReadinessC0VAO06LinearrC0VGANyAsO07CompactrC0VGGAVG_Qo__ANyAA08ModifiedO0VyAA5ColorVAA16_OverlayModifierVyAA0S8GradientVGGA2_GQo_HO
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE5sheet11isPresented9onDismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAcAE5alert_AE7actions7messageQrAA18LocalizedStringKeyV_AJqd__yXEqd_0_yXEtAaBRd__AaBRd_0_r0_lFQOyAcAE7toolbarAGQrqd__yXE_tAA14ToolbarContentRd__lFQOyAA08ModifiedS0VyAcAE0Q20BackgroundVisibility_3forQrAA0V0O_AA0R9PlacementVdtFQOyATyATyAcAE0I7Margins__AVQrAA4EdgeO3SetV_12CoreGraphics7CGFloatVSgAA0s6MarginX0VtFQOyATyAA06ScrollC0VyAcAE12scenePaddingyQrA3_FQOyAcAEA12_yQrA3_FQOy07WorkoutB0015ReadinessDetailS0V_Qo__Qo_GAA14_PaddingLayoutVG_Qo_AA01_U8ModifierVyAA14GeometryReaderVyATyATyATyAA06_ShapeC0VyAA6CircleVAA5ColorVGAA11_BlurEffectVGAA12_FrameLayoutVGAA13_OffsetEffectVGGSgGGAA30_SafeAreaRegionsIgnoringLayoutVG_Qo_AA16_FlexFrameLayoutVG_AA0R4ItemVyytAA6ButtonVyAA5ImageVGGSgQo__AA05TupleS0VyA57_yAA4TextVG_A68_A68_QPGA67_Qo__AcAE19presentationDetentsyQrShyAA18PresentationDetentVGFQOyA13_017ReadinessFeedbackC0V_Qo_Qo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBP9WidgetKitE16widgetAccentableyQrSbFQOy07WorkoutB0014ReadinessScoreC0V_Qo_HO
-+ _objc_msgSend$URLForDataTypeDetailWithObjectType:
-+ _objc_msgSend$activeEnergyBurned
-+ _objc_msgSend$appleBalanceMetricsType
-+ _objc_msgSend$appleSleepScoreType
-+ _objc_msgSend$cycles
-+ _objc_msgSend$days
-+ _objc_msgSend$hkmc_cycleFactor
-+ _objc_msgSend$isPartiallyLogged
-+ _objc_msgSend$localizedStringWithActiveEnergy:unitStyle:
-+ _objc_msgSend$menstruationProjections
-+ _objc_msgSend$menstruationSegment
-+ _objc_msgSend$mostLikelyDays
-+ _objc_msgSend$ongoingCycleFactors
-+ _objc_msgSend$sample
-+ _objc_msgSend$systemGroupedBackgroundColor
-+ _objc_msgSend$tertiaryLabelColor
 + _swift_asyncLet_begin
 + _swift_asyncLet_finish
 + _swift_asyncLet_get

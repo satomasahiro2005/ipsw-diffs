@@ -2,138 +2,63 @@
 
 > `/System/Library/Frameworks/HealthKit.framework/HealthKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x152b9c` | `0x158b3c` | **`+0x5fa0`** |
+| `__TEXT.__text` | `0x3f31f0` | `0x3f61dc` | **`+0x2fec`** |
+| `__DATA.__bss` | `0x31530` | `0x32370` | **`+0xe40`** |
+| `__TEXT.__oslogstring` | `0xdcb3` | `0xd683` | **`-0x630`** |
+| `__AUTH_CONST.__objc_const` | `0x530e0` | `0x53468` | **`+0x388`** |
+| `__TEXT.__objc_methlist` | `0x31534` | `0x31744` | **`+0x210`** |
+| `__TEXT.__unwind_info` | `0x13200` | `0x133b8` | **`+0x1b8`** |
+| `__AUTH_CONST.__const` | `0x13bd1` | `0x13d81` | **`+0x1b0`** |
+| `__TEXT.__eh_frame` | `0x78e8` | `0x7a30` | **`+0x148`** |
+| `__DATA_CONST.__got` | `0x1d08` | `0x1e18` | **`+0x110`** |
+| `__DATA.__data` | `0xfcb0` | `0xfda0` | **`+0xf0`** |
+| `__DATA_DIRTY.__data` | `0x1e8` | `0x2d8` | **`+0xf0`** |
+| `__DATA_DIRTY.__objc_data` | `0x2648` | `0x2738` | **`+0xf0`** |
+| `__TEXT.__swift5_fieldmd` | `0x5240` | `0x5314` | **`+0xd4`** |
+| `__AUTH_CONST.__cfstring` | `0x33480` | `0x33540` | **`+0xc0`** |
+| `__TEXT.__constg_swiftt` | `0x5600` | `0x569c` | **`+0x9c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x11f98` | `0x12020` | **`+0x88`** |
+| `__TEXT.__swift5_proto` | `0x18d0` | `0x1954` | **`+0x84`** |
+| `__AUTH.__objc_data` | `0xf258` | `0xf2c8` | **`+0x70`** |
+| `__DATA_DIRTY.__bss` | `0xcd8` | `0xd30` | **`+0x58`** |
+| `__TEXT.__swift5_typeref` | `0x5223` | `0x5275` | **`+0x52`** |
+| `__TEXT.__cstring` | `0x37ad2` | `0x37b12` | **`+0x40`** |
+| `__AUTH.__data` | `0x34b8` | `0x34e8` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x10448` | `0x10468` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x369b` | `0x36bb` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x2f60` | `0x2f7c` | **`+0x1c`** |
+| `__TEXT.__swift5_capture` | `0xef0` | `0xed4` | **`-0x1c`** |
+| `__AUTH_CONST.__auth_got` | `0x2040` | `0x2028` | **`-0x18`** |
+| `__AUTH_CONST.__objc_intobj` | `0x46b0` | `0x4698` | **`-0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x1bb8` | `0x1bd0` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0x720` | `0x738` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1798` | `0x17a8` | **`+0x10`** |
+| `__TEXT.__swift_as_ret` | `0x1c4` | `0x1b4` | **`-0x10`** |
+| `__TEXT.__swift_as_cont` | `0x33c` | `0x348` | **`+0xc`** |
+| `__TEXT.__gcc_except_tab` | `0x3f28` | `0x3f24` | **`-0x4`** |
+| `__TEXT.__swift5_protos` | `0xc8` | `0xc4` | **`-0x4`** |
+| `__TEXT.__swift_as_entry` | `0x1b0` | `0x1ac` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x3f31f0
--  __TEXT.__objc_methlist: 0x31534
--  __TEXT.__cstring: 0x37ad2
--  __TEXT.__const: 0x152b9c
--  __TEXT.__oslogstring: 0xdcb3
--  __TEXT.__gcc_except_tab: 0x3f28
-+  __TEXT.__text: 0x3f61dc
-+  __TEXT.__objc_methlist: 0x31744
-+  __TEXT.__cstring: 0x37b12
-+  __TEXT.__const: 0x158b3c
-+  __TEXT.__oslogstring: 0xd683
-+  __TEXT.__gcc_except_tab: 0x3f24
-   __TEXT.__dlopen_cstrs: 0x644
-   __TEXT.__ustring: 0x78
--  __TEXT.__constg_swiftt: 0x5600
--  __TEXT.__swift5_typeref: 0x5223
-+  __TEXT.__constg_swiftt: 0x569c
-+  __TEXT.__swift5_typeref: 0x5275
-   __TEXT.__swift5_builtin: 0x53c
--  __TEXT.__swift5_reflstr: 0x369b
--  __TEXT.__swift5_fieldmd: 0x5240
-+  __TEXT.__swift5_reflstr: 0x36bb
-+  __TEXT.__swift5_fieldmd: 0x5314
-   __TEXT.__swift5_assocty: 0x1578
--  __TEXT.__swift5_proto: 0x18d0
--  __TEXT.__swift5_types: 0x720
--  __TEXT.__swift5_capture: 0xef0
--  __TEXT.__swift_as_entry: 0x1b0
--  __TEXT.__swift_as_ret: 0x1c4
--  __TEXT.__swift_as_cont: 0x33c
--  __TEXT.__swift5_protos: 0xc8
-+  __TEXT.__swift5_proto: 0x1954
-+  __TEXT.__swift5_types: 0x738
-+  __TEXT.__swift5_capture: 0xed4
-+  __TEXT.__swift_as_entry: 0x1ac
-+  __TEXT.__swift_as_ret: 0x1b4
-+  __TEXT.__swift_as_cont: 0x348
-+  __TEXT.__swift5_protos: 0xc4
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x13200
--  __TEXT.__eh_frame: 0x78e8
-+  __TEXT.__unwind_info: 0x133b8
-+  __TEXT.__eh_frame: 0x7a30
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x10448
--  __DATA_CONST.__objc_classlist: 0x1bb8
-+  __DATA_CONST.__const: 0x10468
-+  __DATA_CONST.__objc_classlist: 0x1bd0
-   __DATA_CONST.__objc_catlist: 0x1c0
-   __DATA_CONST.__objc_protolist: 0x848
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x11f98
-+  __DATA_CONST.__objc_selrefs: 0x12020
-   __DATA_CONST.__objc_protorefs: 0x640
--  __DATA_CONST.__objc_superrefs: 0x1798
-+  __DATA_CONST.__objc_superrefs: 0x17a8
-   __DATA_CONST.__objc_arraydata: 0x69d0
--  __DATA_CONST.__got: 0x1d08
--  __AUTH_CONST.__const: 0x13bd1
--  __AUTH_CONST.__cfstring: 0x33480
--  __AUTH_CONST.__objc_const: 0x530e0
-+  __DATA_CONST.__got: 0x1e18
-+  __AUTH_CONST.__const: 0x13d81
-+  __AUTH_CONST.__cfstring: 0x33540
-+  __AUTH_CONST.__objc_const: 0x53468
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__objc_intobj: 0x46b0
-+  __AUTH_CONST.__objc_intobj: 0x4698
-   __AUTH_CONST.__objc_arrayobj: 0x768
-   __AUTH_CONST.__objc_dictobj: 0x488
-   __AUTH_CONST.__objc_doubleobj: 0x140
--  __AUTH_CONST.__auth_got: 0x2040
--  __AUTH.__objc_data: 0xf258
--  __AUTH.__data: 0x34b8
--  __DATA.__objc_ivar: 0x2f60
--  __DATA.__data: 0xfcb0
--  __DATA.__bss: 0x31530
-+  __AUTH_CONST.__auth_got: 0x2028
-+  __AUTH.__objc_data: 0xf2c8
-+  __AUTH.__data: 0x34e8
-+  __DATA.__objc_ivar: 0x2f7c
-+  __DATA.__data: 0xfda0
-+  __DATA.__bss: 0x32370
-   __DATA.__common: 0xa00
--  __DATA_DIRTY.__objc_data: 0x2648
--  __DATA_DIRTY.__data: 0x1e8
--  __DATA_DIRTY.__bss: 0xcd8
-+  __DATA_DIRTY.__objc_data: 0x2738
-+  __DATA_DIRTY.__data: 0x2d8
-+  __DATA_DIRTY.__bss: 0xd30
-   __DATA_DIRTY.__common: 0x98
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
+-7027.0.60.2.2
++7027.0.64.0.0
 
-   - /System/Library/PrivateFrameworks/CoreUtils.framework/CoreUtils
-   - /System/Library/PrivateFrameworks/CrashReporterSupport.framework/CrashReporterSupport
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
 +  - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
-   - /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
-   - /System/Library/PrivateFrameworks/HealthUtilities.framework/HealthUtilities
-   - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 29449
--  Symbols:   64379
--  CStrings:  15724
+-  Symbols:   35699
+-  CStrings:  9173
 +  Functions: 29622
-+  Symbols:   64504
-+  CStrings:  15717
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
++  Symbols:   35787
++  CStrings:  9160
 Symbols:
 + +[HKAppleIntelligenceUtilities shared]
 + +[HKHeartRateVariabilityUtilities _isHRVType:]
@@ -248,23 +173,6 @@ Symbols:
 + _associated conformance 9HealthKit9QueryTypeO16LatestCodingKeys33_C671526B9F61015261EE413755C6C835LLOs0F3KeyAAs23CustomStringConvertible
 + _associated conformance 9HealthKit9QueryTypeO16LatestCodingKeys33_C671526B9F61015261EE413755C6C835LLOs0F3KeyAAs28CustomDebugStringConvertible
 + _associated conformance 9HealthKit9QueryTypeOSHAASQ
-+ _objc_msgSend$_fetchAllLocationsFromSeriesSample:context:
-+ _objc_msgSend$_isHRVType:
-+ _objc_msgSend$_queue_setLocations:forUUID:context:
-+ _objc_msgSend$_setTrailingDailyAverageQuantity:
-+ _objc_msgSend$cyclingPowerWorkoutZoneConfigurationWrapperWithCompletion:
-+ _objc_msgSend$daysWithDataCount
-+ _objc_msgSend$locationsByUUID
-+ _objc_msgSend$orderedLocations
-+ _objc_msgSend$remainingCount
-+ _objc_msgSend$remote_cyclingPowerWorkoutZoneConfigurationWrapperWithCompletion:
-+ _objc_msgSend$remote_setAuthorizationStatuses:authorizationModes:modeInfos:forBundleIdentifier:options:completion:
-+ _objc_msgSend$remote_setCyclingPowerWorkoutZoneConfigurationWrapper:withCompletion:
-+ _objc_msgSend$sampleForDayIndex:
-+ _objc_msgSend$setCyclingPowerWorkoutZoneConfigurationWrapper:withCompletion:
-+ _objc_msgSend$setOrderedSamples:
-+ _objc_msgSend$setRemainingCount:
-+ _objc_msgSend$setTrailingDailyAverageConfiguration:
 + _symbolic $s9HealthKit13ConfigurationO12WithCalendarP
 + _symbolic $s9HealthKit13ConfigurationO13WithQueryTypeP
 + _symbolic SNy_____GSg 10Foundation4DateV
@@ -305,17 +213,6 @@ Symbols:
 - ___swift_closure_destructor.13Tm
 - _get_type_metadata 15Synchronization5MutexVy9HealthKit24ClientEvaluationExecutorC5State33_110D0FF4273B356E1EE076D7C880D620LLVG noncopyable
 - _get_type_metadata s8SendableRzl15Synchronization5MutexVySayxGG noncopyable
-- _objc_msgSend$_fetchAllLocationsFromSeriesSample:
-- _objc_msgSend$_hrvType
-- _objc_msgSend$_predicateForObjectsFromAppleWatches
-- _objc_msgSend$_queue_checkAndReturnIfLocationsLoaded
-- _objc_msgSend$_queue_locations
-- _objc_msgSend$_setLocations:forUUID:
-- _objc_msgSend$currentThread
-- _objc_msgSend$dataForKey:completion:
-- _objc_msgSend$remote_setAuthorizationStatuses:authorizationModes:modeInfo:forBundleIdentifier:options:completion:
-- _objc_msgSend$setAverageQuantity:
-- _objc_msgSend$setData:forKey:error:
 - _swift_retain_x9
 - _swift_runtimeSupportsNoncopyableTypes
 - _symbolic $s9HealthKit39HKFunctionalThresholdPowerStoreProtocolP
@@ -365,5 +262,4 @@ CStrings:
 - "HealthKit/Locale+HealthKit.swift"
 - "[CyclingPowerZones] Fetching most recent Apple FTP"
 - "createCyclingPowerZonesConfigurationFromAppleFTP(configuration:)"
-
 ```

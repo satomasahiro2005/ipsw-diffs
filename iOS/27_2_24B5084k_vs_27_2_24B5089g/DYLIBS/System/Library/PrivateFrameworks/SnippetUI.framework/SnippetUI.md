@@ -2,85 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/SnippetUI.framework/SnippetUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x52e068` | `0x532c44` | **`+0x4bdc`** |
+| `__DATA_DIRTY.__bss` | `0xe8c0` | `0x10030` | **`+0x1770`** |
+| `__DATA.__bss` | `0x1c3a0` | `0x1ae98` | **`-0x1508`** |
+| `__DATA_DIRTY.__data` | `0xa490` | `0xad20` | **`+0x890`** |
+| `__DATA.__data` | `0x105f8` | `0xff18` | **`-0x6e0`** |
+| `__TEXT.__swift5_typeref` | `0x6c7d4` | `0x6cde2` | **`+0x60e`** |
+| `__TEXT.__const` | `0x45a04` | `0x45e94` | **`+0x490`** |
+| `__TEXT.__constg_swiftt` | `0xfc78` | `0xfd7c` | **`+0x104`** |
+| `__TEXT.__swift5_fieldmd` | `0xca34` | `0xcb18` | **`+0xe4`** |
+| `__AUTH_CONST.__const` | `0x7a760` | `0x7a830` | **`+0xd0`** |
+| `__TEXT.__swift5_reflstr` | `0xd1c3` | `0xd273` | **`+0xb0`** |
+| `__AUTH.__data` | `0xbc10` | `0xbb90` | **`-0x80`** |
+| `__DATA.__common` | `0x14f8` | `0x14c0` | **`-0x38`** |
+| `__TEXT.__unwind_info` | `0xdf20` | `0xdf50` | **`+0x30`** |
+| `__TEXT.__eh_frame` | `0x982c` | `0x980c` | **`-0x20`** |
+| `__DATA_CONST.__got` | `0x3120` | `0x3138` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0xdd8` | `0xde4` | **`+0xc`** |
+| `__DATA_DIRTY.__common` | `0xa20` | `0xa28` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x1524` | `0x152c` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x35c` | `0x360` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x12c` | `0x130` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3605.20.1.0.0
--  __TEXT.__text: 0x508560
 +3605.22.1.0.0
-+  __TEXT.__text: 0x50cf04
-   __TEXT.__objc_methlist: 0x1af0
--  __TEXT.__const: 0x45a04
-+  __TEXT.__const: 0x45e94
-   __TEXT.__cstring: 0xa0fc
--  __TEXT.__swift5_typeref: 0x6c7d4
--  __TEXT.__constg_swiftt: 0xfc78
--  __TEXT.__swift5_reflstr: 0xd1c3
-+  __TEXT.__swift5_typeref: 0x6cde2
-+  __TEXT.__constg_swiftt: 0xfd7c
-+  __TEXT.__swift5_reflstr: 0xd273
-   __TEXT.__swift5_assocty: 0x47a0
--  __TEXT.__swift5_fieldmd: 0xca34
-+  __TEXT.__swift5_fieldmd: 0xcb18
-   __TEXT.__swift5_builtin: 0x370
-   __TEXT.__oslogstring: 0x58f
-   __TEXT.__swift5_capture: 0x2c62c
--  __TEXT.__swift5_proto: 0x1524
--  __TEXT.__swift5_types: 0xdd8
-+  __TEXT.__swift5_proto: 0x152c
-+  __TEXT.__swift5_types: 0xde4
-   __TEXT.__swift5_protos: 0x98
-   __TEXT.__swift_as_entry: 0x150
--  __TEXT.__swift_as_ret: 0x12c
--  __TEXT.__swift_as_cont: 0x35c
-+  __TEXT.__swift_as_ret: 0x130
-+  __TEXT.__swift_as_cont: 0x360
-   __TEXT.__swift5_mpenum: 0xbc
--  __TEXT.__unwind_info: 0x12a50
--  __TEXT.__eh_frame: 0x9834
-+  __TEXT.__unwind_info: 0x12ac0
-+  __TEXT.__eh_frame: 0x9814
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0x1d80
-   __DATA_CONST.__objc_protorefs: 0xb0
-   __DATA_CONST.__objc_superrefs: 0x28
--  __DATA_CONST.__got: 0x3120
--  __AUTH_CONST.__const: 0x7a760
-+  __DATA_CONST.__got: 0x3138
-+  __AUTH_CONST.__const: 0x7a830
-   __AUTH_CONST.__cfstring: 0x20
-   __AUTH_CONST.__objc_const: 0x4ee8
-   __AUTH_CONST.__auth_got: 0x5388
-   __AUTH.__objc_data: 0x1558
--  __AUTH.__data: 0xbc10
-+  __AUTH.__data: 0xbb90
-   __DATA.__objc_ivar: 0x28
--  __DATA.__data: 0x105f8
--  __DATA.__common: 0x14f8
-+  __DATA.__data: 0xff18
-+  __DATA.__common: 0x14c0
-   __DATA_DIRTY.__objc_data: 0xfd0
--  __DATA_DIRTY.__data: 0xa490
--  __DATA_DIRTY.__bss: 0xe8c0
--  __DATA_DIRTY.__common: 0xa20
-+  __DATA_DIRTY.__data: 0xad20
-+  __DATA_DIRTY.__bss: 0x10030
-+  __DATA_DIRTY.__common: 0xa28
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/ContactsUI.framework/ContactsUI
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 40733
--  Symbols:   10863
+-  Symbols:   10119
 +  Functions: 40831
-+  Symbols:   10890
-   CStrings:  973
- 
++  Symbols:   10146
 Symbols:
 + ___swift_closure_destructor.40Tm
 + ___swift_closure_destructor.77Tm

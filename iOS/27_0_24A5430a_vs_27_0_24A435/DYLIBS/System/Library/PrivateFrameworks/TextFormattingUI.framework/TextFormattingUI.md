@@ -2,19 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/TextFormattingUI.framework/TextFormattingUI`
 
-```diff
+### Section Size Changes
 
- 9127.0.84.1.116
--  __TEXT.__text: 0x663a8
-+  __TEXT.__text: 0x663dc
-   __TEXT.__objc_methlist: 0x42c
-   __TEXT.__const: 0x5398
-   __TEXT.__swift5_typeref: 0x865a
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x663a8` | `0x663dc` | **`+0x34`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2ae502120 -> sub_2af2fa120 : 4480 -> 4524
-~ sub_2ae50a8d8 -> sub_2af302904 : 360 -> 364
-~ sub_2ae50aa40 -> sub_2af302a70 : 356 -> 360
-~ sub_2ae5556d8 -> sub_2af34d70c : 1868 -> 1872
-~ sub_2ae55a430 -> sub_2af352468 : 904 -> 908
-~ sub_2ae55a7b8 -> sub_2af3527f4 : 1056 -> 1048
+~ sub_2ae3ee120 -> sub_2af1e4120 : 4480 -> 4524
+~ sub_2ae3f68d8 -> sub_2af1ec904 : 360 -> 364
+~ sub_2ae3f6a40 -> sub_2af1eca70 : 356 -> 360
+~ sub_2ae4416d8 -> sub_2af23770c : 1868 -> 1872
+~ sub_2ae446430 -> sub_2af23c468 : 904 -> 908
+~ sub_2ae4467b8 -> sub_2af23c7f4 : 1056 -> 1048
 ```

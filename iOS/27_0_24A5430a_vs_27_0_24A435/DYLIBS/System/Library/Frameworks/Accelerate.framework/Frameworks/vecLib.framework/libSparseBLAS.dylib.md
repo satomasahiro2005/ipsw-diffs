@@ -2,19 +2,16 @@
 
 > `/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparseBLAS.dylib`
 
-```diff
+### Section Size Changes
 
- 196.0.1.0.0
--  __TEXT.__text: 0xb7180
-+  __TEXT.__text: 0xb7304
-   __TEXT.__gcc_except_tab: 0x5528
-   __TEXT.__const: 0x1104
-   __TEXT.__cstring: 0x43
--  __TEXT.__unwind_info: 0x3008
-+  __TEXT.__unwind_info: 0x3048
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0xac0
-   __DATA_CONST.__weak_got: 0x8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb7180` | `0xb7304` | **`+0x184`** |
+| `__TEXT.__unwind_info` | `0x3008` | `0x3048` | **`+0x40`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNK6sparse8internal15DenseMatrixViewIfL11CBLAS_ORDER102EE21makeBlockRowSubmatrixEmm : 88 -> 92
 ~ __ZNK6sparse8internal15DenseMatrixViewIdL11CBLAS_ORDER102EE21makeBlockRowSubmatrixEmm : 88 -> 92

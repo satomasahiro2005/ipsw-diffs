@@ -2,89 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/ShortcutsAgent.framework/ShortcutsAgent`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa7184` | `0xa8b00` | **`+0x197c`** |
+| `__AUTH_CONST.__const` | `0x70a0` | `0x7438` | **`+0x398`** |
+| `__TEXT.__const` | `0xc120` | `0xc3d0` | **`+0x2b0`** |
+| `__AUTH.__data` | `0x15b0` | `0x13e0` | **`-0x1d0`** |
+| `__TEXT.__cstring` | `0x2098` | `0x2268` | **`+0x1d0`** |
+| `__TEXT.__eh_frame` | `0x6504` | `0x6694` | **`+0x190`** |
+| `__AUTH_CONST.__objc_const` | `0xf30` | `0x1040` | **`+0x110`** |
+| `__TEXT.__swift5_reflstr` | `0x18b7` | `0x19b7` | **`+0x100`** |
+| `__TEXT.__swift5_fieldmd` | `0x27c0` | `0x2878` | **`+0xb8`** |
+| `__TEXT.__oslogstring` | `0xd36` | `0xdd6` | **`+0xa0`** |
+| `__TEXT.__swift5_capture` | `0x68c` | `0x6e8` | **`+0x5c`** |
+| `__TEXT.__unwind_info` | `0x3618` | `0x3670` | **`+0x58`** |
+| `__AUTH.__objc_data` | `0x50` | `0xa0` | **`+0x50`** |
+| `__TEXT.__swift5_typeref` | `0x351a` | `0x3556` | **`+0x3c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x448` | `0x468` | **`+0x20`** |
+| `__DATA.__data` | `0x2ee8` | `0x2ed0` | **`-0x18`** |
+| `__TEXT.__constg_swiftt` | `0x2920` | `0x292c` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x17e8` | `0x17f0` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x68` | `0x70` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x2b8` | `0x2c0` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x138` | `0x140` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x348` | `0x34c` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x180` | `0x184` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -5034.0.12.100.0
--  __TEXT.__text: 0xa7184
 +5037.103.100.0.0
-+  __TEXT.__text: 0xa8b00
-   __TEXT.__objc_methlist: 0x320
--  __TEXT.__const: 0xc120
--  __TEXT.__cstring: 0x2098
--  __TEXT.__swift5_typeref: 0x351a
--  __TEXT.__constg_swiftt: 0x2920
--  __TEXT.__swift5_reflstr: 0x18b7
--  __TEXT.__swift5_fieldmd: 0x27c0
-+  __TEXT.__const: 0xc3d0
-+  __TEXT.__cstring: 0x2268
-+  __TEXT.__swift5_typeref: 0x3556
-+  __TEXT.__constg_swiftt: 0x292c
-+  __TEXT.__swift5_reflstr: 0x19b7
-+  __TEXT.__swift5_fieldmd: 0x2878
-   __TEXT.__swift5_builtin: 0x140
-   __TEXT.__swift5_proto: 0x9e0
--  __TEXT.__swift5_types: 0x348
-+  __TEXT.__swift5_types: 0x34c
-   __TEXT.__swift5_assocty: 0x608
-   __TEXT.__swift5_mpenum: 0xa4
--  __TEXT.__swift5_capture: 0x68c
--  __TEXT.__oslogstring: 0xd36
-+  __TEXT.__swift5_capture: 0x6e8
-+  __TEXT.__oslogstring: 0xdd6
-   __TEXT.__swift5_protos: 0x30
--  __TEXT.__swift_as_entry: 0x138
--  __TEXT.__swift_as_ret: 0x180
--  __TEXT.__swift_as_cont: 0x2b8
--  __TEXT.__unwind_info: 0x3618
--  __TEXT.__eh_frame: 0x6504
-+  __TEXT.__swift_as_entry: 0x140
-+  __TEXT.__swift_as_ret: 0x184
-+  __TEXT.__swift_as_cont: 0x2c0
-+  __TEXT.__unwind_info: 0x3670
-+  __TEXT.__eh_frame: 0x6694
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x218
--  __DATA_CONST.__objc_classlist: 0x68
-+  __DATA_CONST.__objc_classlist: 0x70
-   __DATA_CONST.__objc_protolist: 0x90
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x448
-+  __DATA_CONST.__objc_selrefs: 0x468
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_arraydata: 0x28
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x70a0
-+  __AUTH_CONST.__const: 0x7438
-   __AUTH_CONST.__cfstring: 0x120
--  __AUTH_CONST.__objc_const: 0xf30
-+  __AUTH_CONST.__objc_const: 0x1040
-   __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__auth_got: 0x17e8
--  __AUTH.__objc_data: 0x50
--  __AUTH.__data: 0x15b0
--  __DATA.__data: 0x2ee8
-+  __AUTH_CONST.__auth_got: 0x17f0
-+  __AUTH.__objc_data: 0xa0
-+  __AUTH.__data: 0x13e0
-+  __DATA.__data: 0x2ed0
-   __DATA.__bss: 0x12ec0
-   __DATA_DIRTY.__objc_data: 0x140
-   __DATA_DIRTY.__data: 0x898
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5423
--  Symbols:   1989
+-  Symbols:   1899
 -  CStrings:  253
 +  Functions: 5461
-+  Symbols:   2012
++  Symbols:   1918
 +  CStrings:  262
- 
 Symbols:
 + _NSStringFromClass
 + _OBJC_CLASS_$_WFAccessResource
@@ -111,11 +69,6 @@ Symbols:
 + _associated conformance 14ShortcutsAgent0B7ToolboxC6ResultV7BuiltInV10CodingKeys33_AF4227C4831C1248A1D3CFEDEFE64858LLOs0G3KeyAAs23CustomStringConvertible
 + _associated conformance 14ShortcutsAgent0B7ToolboxC6ResultV7BuiltInV10CodingKeys33_AF4227C4831C1248A1D3CFEDEFE64858LLOs0G3KeyAAs28CustomDebugStringConvertible
 + _get_enum_tag_for_layout_string 14ShortcutsAgent0B7ToolboxC6ResultVSg
-+ _objc_msgSend$accessResources
-+ _objc_msgSend$getContentDestinationWithCompletionHandler:
-+ _objc_msgSend$resourceManager
-+ _objc_msgSend$setLocale:
-+ _objc_msgSend$status
 + _symbolic SDySSSDySS_____GG 14ShortcutsAgent0B7ToolboxC6ResultV
 + _symbolic SDySS_____G 14ShortcutsAgent0B7ToolboxC6ResultV
 + _symbolic SDySS_____G 14ShortcutsAgent0B7ToolboxC6ResultV10ToolRenderV
@@ -174,7 +127,6 @@ Symbols:
 - _associated conformance 14ShortcutsAgent0B7ToolboxV6ResultV7BuiltInV10CodingKeys33_AF4227C4831C1248A1D3CFEDEFE64858LLOs0G3KeyAAs23CustomStringConvertible
 - _associated conformance 14ShortcutsAgent0B7ToolboxV6ResultV7BuiltInV10CodingKeys33_AF4227C4831C1248A1D3CFEDEFE64858LLOs0G3KeyAAs28CustomDebugStringConvertible
 - _get_enum_tag_for_layout_string 14ShortcutsAgent0B7ToolboxV6ResultVSg
-- _objc_msgSend$contentDestinationWithError:
 - _symbolic SDySSSDySS_____GG 14ShortcutsAgent0B7ToolboxV6ResultV
 - _symbolic SDySSSo28WFParameterStateCatalogEntryCG
 - _symbolic SDySS_____G 14ShortcutsAgent0B7ToolboxV6ResultV

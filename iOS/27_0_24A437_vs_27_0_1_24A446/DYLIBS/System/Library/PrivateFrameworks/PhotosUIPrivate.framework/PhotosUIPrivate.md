@@ -2,77 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/PhotosUIPrivate.framework/PhotosUIPrivate`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5ab904` | `0x5abc1c` | **`+0x318`** |
+| `__AUTH_CONST.__objc_const` | `0x86100` | `0x86140` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x5658` | `0x5688` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x5091c` | `0x5094c` | **`+0x30`** |
+| `__AUTH_CONST.__cfstring` | `0x26e60` | `0x26e80` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x35731` | `0x3574a` | **`+0x19`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2aa20` | `0x2aa38` | **`+0x18`** |
+| `__DATA.__bss` | `0x188d0` | `0x188c8` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x5898` | `0x58a0` | **`+0x8`** |
+| `__DATA_CONST.__objc_catlist` | `0x1b0` | `0x1b8` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x18c40` | `0x18c48` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.235.0.0
--  __TEXT.__text: 0x5823e0
--  __TEXT.__objc_methlist: 0x5091c
 +912.1.131.0.0
-+  __TEXT.__text: 0x5826d4
-+  __TEXT.__objc_methlist: 0x5094c
-   __TEXT.__const: 0x1a248
-   __TEXT.__dlopen_cstrs: 0x69b
-   __TEXT.__swift5_typeref: 0x170ba
 
-   __TEXT.__swift5_proto: 0xc3c
-   __TEXT.__swift5_types: 0x790
-   __TEXT.__oslogstring: 0x15348
--  __TEXT.__cstring: 0x35731
-+  __TEXT.__cstring: 0x3574a
-   __TEXT.__swift_as_entry: 0x2d4
-   __TEXT.__swift_as_ret: 0x2fc
-   __TEXT.__swift_as_cont: 0x6c8
-
-   __TEXT.__swift5_mpenum: 0x10
-   __TEXT.__gcc_except_tab: 0x8b3c
-   __TEXT.__ustring: 0x146
--  __TEXT.__unwind_info: 0x1e390
-+  __TEXT.__unwind_info: 0x1e3a0
-   __TEXT.__eh_frame: 0x8a18
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xc5f0
-   __DATA_CONST.__objc_classlist: 0x1e58
--  __DATA_CONST.__objc_catlist: 0x1b0
-+  __DATA_CONST.__objc_catlist: 0x1b8
-   __DATA_CONST.__objc_catlist2: 0x10
-   __DATA_CONST.__objc_protolist: 0x1430
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2aa20
-+  __DATA_CONST.__objc_selrefs: 0x2aa38
-   __DATA_CONST.__objc_protorefs: 0x508
-   __DATA_CONST.__objc_superrefs: 0x10f0
-   __DATA_CONST.__vfx_script_tbl: 0x10
-   __DATA_CONST.__objc_arraydata: 0x1630
--  __DATA_CONST.__got: 0x5898
-+  __DATA_CONST.__got: 0x58a0
-   __AUTH_CONST.__const: 0x188d0
--  __AUTH_CONST.__cfstring: 0x26e60
--  __AUTH_CONST.__objc_const: 0x86100
-+  __AUTH_CONST.__cfstring: 0x26e80
-+  __AUTH_CONST.__objc_const: 0x86140
-   __AUTH_CONST.__objc_arrayobj: 0xed0
-   __AUTH_CONST.__objc_intobj: 0x1668
-   __AUTH_CONST.__objc_dictobj: 0x398
-   __AUTH_CONST.__objc_doubleobj: 0x210
--  __AUTH_CONST.__auth_got: 0x5658
-+  __AUTH_CONST.__auth_got: 0x5688
-   __AUTH.__objc_data: 0x192b0
-   __AUTH.__data: 0x5178
-   __DATA.__objc_ivar: 0x5d28
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 42678
 -  Symbols:   49370
 -  CStrings:  8122
 +  Functions: 42681
 +  Symbols:   49384
 +  CStrings:  8123
- 
 Symbols:
 + +[UITabBar(PUHostedAccessoryHitTest) pu_installHostedAccessoryHitTestOverride]
 + -[UITabBar(PUHostedAccessoryHitTest) pu_hostedAccessoryHitTest:withEvent:]

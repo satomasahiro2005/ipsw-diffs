@@ -2,32 +2,26 @@
 
 > `/usr/lib/system/libsystem_malloc.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x43484` | `0x4357c` | **`+0xf8`** |
+| `__TEXT.__cstring` | `0xb5c5` | `0xb68f` | **`+0xca`** |
+
+### Other Changes
+
 ```diff
 
 -886.0.8.0.0
--  __TEXT.__text: 0x422c0
 +886.40.15.0.0
-+  __TEXT.__text: 0x423b8
-   __TEXT.__const: 0x614
--  __TEXT.__cstring: 0xb5c5
-+  __TEXT.__cstring: 0xb68f
-   __TEXT.__dof_magmalloc: 0x912
--  __TEXT.__unwind_info: 0xce0
-+  __TEXT.__unwind_info: 0xcd8
-   __TEXT.__eh_frame: 0x88
-   __TEXT.__auth_stubs: 0x780
-   __DATA_CONST.__const: 0xb90
 
-   - /usr/lib/system/libsystem_kernel.dylib
-   - /usr/lib/system/libsystem_platform.dylib
-   - /usr/lib/system/libsystem_pthread.dylib
 -  Functions: 1101
 -  Symbols:   1156
 -  CStrings:  965
 +  Functions: 1102
 +  Symbols:   1158
 +  CStrings:  969
- 
 Symbols:
 + ___mfm_block_mark_free
 + __xzm_xzone_malloc_from_fresh_freelist_chunk

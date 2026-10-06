@@ -2,23 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/Lexicon.framework/Lexicon`
 
-```diff
+### Section Size Changes
 
- 216.0.0.0.0
--  __TEXT.__text: 0xe5a4c
-+  __TEXT.__text: 0xe5b1c
-   __TEXT.__objc_methlist: 0xf4
-   __TEXT.__const: 0xde95
-   __TEXT.__dlopen_cstrs: 0x56
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe5a4c` | `0xe5b1c` | **`+0xd0`** |
+| `__TEXT.__unwind_info` | `0x5178` | `0x5168` | **`-0x10`** |
 
-   __TEXT.__cstring: 0xaa5e
-   __TEXT.__ustring: 0x98e
-   __TEXT.__oslogstring: 0x1c96
--  __TEXT.__unwind_info: 0x5178
-+  __TEXT.__unwind_info: 0x5168
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+### Other Changes
+
+```text
 Functions:
 ~ sub_1cafd2758 -> sub_1cb4e7758 : 1152 -> 1148
 ~ sub_1cafd2ca8 -> sub_1cb4e7ca4 : 492 -> 488

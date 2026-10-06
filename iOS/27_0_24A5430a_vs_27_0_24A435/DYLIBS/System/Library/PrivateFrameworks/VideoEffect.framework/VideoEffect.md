@@ -2,23 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/VideoEffect.framework/VideoEffect`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb160` | `0xb1b8` | **`+0x58`** |
+
+### Other Changes
+
 ```diff
 
- 3.7.0.0.0
--  __TEXT.__text: 0xb160
-+  __TEXT.__text: 0xb1b8
-   __TEXT.__objc_methlist: 0x9dc
-   __TEXT.__const: 0x1ea
-   __TEXT.__cstring: 0xe9d
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 318
 +  Functions: 319
-   Symbols:   963
-   CStrings:  117
- 
 Functions:
 + _OUTLINED_FUNCTION_5
 ~ _interleave4 : 120 -> 124

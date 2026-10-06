@@ -2,14 +2,15 @@
 
 > `/usr/lib/libTelephonyCapabilities.dylib`
 
-```diff
+### Section Size Changes
 
- 6567.1.0.0.0
--  __TEXT.__text: 0x2a92c
-+  __TEXT.__text: 0x2ac44
-   __TEXT.__init_offsets: 0xc
-   __TEXT.__gcc_except_tab: 0x1ed0
-   __TEXT.__const: 0x28fc
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2a92c` | `0x2ac44` | **`+0x318`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1cce90d08 -> sub_1cd3a8d08 : 60 -> 68
 ~ sub_1cce972f0 -> sub_1cd3af2f8 : 488 -> 512

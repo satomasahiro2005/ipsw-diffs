@@ -2,53 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/caulk.framework/caulk`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_selrefs`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH.__data`
-- `__DATA.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1f28c` | `0x1f5f0` | **`+0x364`** |
+| `__DATA_DIRTY.__bss` | `0xf48` | `0xf58` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x1d68` | `0x1d60` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x1420` | `0x1428` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -245.0.0.0.0
--  __TEXT.__text: 0x1f28c
 +247.0.0.0.0
-+  __TEXT.__text: 0x1f5f0
-   __TEXT.__realtime: 0x1198
-   __TEXT.__const: 0x48c0
--  __TEXT.__gcc_except_tab: 0x1d68
-+  __TEXT.__gcc_except_tab: 0x1d60
-   __TEXT.__cstring: 0xfe2
-   __TEXT.__oslogstring: 0x1f7
--  __TEXT.__unwind_info: 0x1420
-+  __TEXT.__unwind_info: 0x1428
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
 
-   __DATA.__data: 0x10
-   __DATA.__bss: 0x80
-   __DATA.__common: 0x8
--  __DATA_DIRTY.__bss: 0xf48
-+  __DATA_DIRTY.__bss: 0xf58
-   __DATA_DIRTY.__common: 0x10
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1065
--  Symbols:   2058
+-  Symbols:   2057
 +  Functions: 1066
-+  Symbols:   2059
-   CStrings:  210
- 
++  Symbols:   2058
 Symbols:
 + GCC_except_table1000
 + GCC_except_table1002

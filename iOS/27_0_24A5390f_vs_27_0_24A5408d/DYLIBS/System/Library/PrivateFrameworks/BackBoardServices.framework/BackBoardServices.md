@@ -2,74 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/BackBoardServices.framework/BackBoardServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8a250` | `0x8a8e4` | **`+0x694`** |
+| `__AUTH_CONST.__objc_const` | `0x123c0` | `0x124a0` | **`+0xe0`** |
+| `__DATA.__data` | `0x14b0` | `0x1570` | **`+0xc0`** |
+| `__TEXT.__oslogstring` | `0x26b6` | `0x275d` | **`+0xa7`** |
+| `__TEXT.__objc_methlist` | `0x8d94` | `0x8df4` | **`+0x60`** |
+| `__TEXT.__cstring` | `0xba23` | `0xba7b` | **`+0x58`** |
+| `__AUTH_CONST.__cfstring` | `0xa400` | `0xa440` | **`+0x40`** |
+| `__TEXT.__gcc_except_tab` | `0x558` | `0x590` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0x2388` | `0x23b8` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x30a0` | `0x30c8` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x1628` | `0x1648` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x924` | `0x934` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x1948` | `0x1958` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x1b8` | `0x1c8` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0xe8` | `0xf8` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x420` | `0x428` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -873.100.0.0.0
--  __TEXT.__text: 0x8a250
--  __TEXT.__objc_methlist: 0x8d94
 +877.0.0.0.0
-+  __TEXT.__text: 0x8a8e4
-+  __TEXT.__objc_methlist: 0x8df4
-   __TEXT.__const: 0x3f8
-   __TEXT.__dlopen_cstrs: 0x18e
--  __TEXT.__gcc_except_tab: 0x558
--  __TEXT.__cstring: 0xba23
--  __TEXT.__oslogstring: 0x26b6
-+  __TEXT.__gcc_except_tab: 0x590
-+  __TEXT.__cstring: 0xba7b
-+  __TEXT.__oslogstring: 0x275d
-   __TEXT.__ustring: 0x14
--  __TEXT.__unwind_info: 0x2388
-+  __TEXT.__unwind_info: 0x23b8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1948
-+  __DATA_CONST.__const: 0x1958
-   __DATA_CONST.__objc_classlist: 0x5f0
--  __DATA_CONST.__objc_protolist: 0x1b8
-+  __DATA_CONST.__objc_protolist: 0x1c8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x30a0
--  __DATA_CONST.__objc_protorefs: 0xe8
--  __DATA_CONST.__objc_superrefs: 0x420
-+  __DATA_CONST.__objc_selrefs: 0x30c8
-+  __DATA_CONST.__objc_protorefs: 0xf8
-+  __DATA_CONST.__objc_superrefs: 0x428
-   __DATA_CONST.__objc_arraydata: 0x70
-   __DATA_CONST.__got: 0x7e0
--  __AUTH_CONST.__const: 0x1628
--  __AUTH_CONST.__cfstring: 0xa400
--  __AUTH_CONST.__objc_const: 0x123c0
-+  __AUTH_CONST.__const: 0x1648
-+  __AUTH_CONST.__cfstring: 0xa440
-+  __AUTH_CONST.__objc_const: 0x124a0
-   __AUTH_CONST.__objc_intobj: 0x1b0
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__objc_arrayobj: 0x30
-   __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__auth_got: 0x760
-   __AUTH.__objc_data: 0x24e0
--  __DATA.__objc_ivar: 0x924
--  __DATA.__data: 0x14b0
-+  __DATA.__objc_ivar: 0x934
-+  __DATA.__data: 0x1570
-   __DATA.__bss: 0x600
-   __DATA_DIRTY.__objc_data: 0x1680
-   __DATA_DIRTY.__data: 0x50
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 3485
--  Symbols:   7573
+-  Symbols:   6591
 -  CStrings:  1957
 +  Functions: 3495
-+  Symbols:   7606
++  Symbols:   6619
 +  CStrings:  1963
- 
 Symbols:
 + -[BKSDisplayService .cxx_destruct]
 + -[BKSDisplayService _lock_connectIfNeeded]
@@ -126,11 +92,6 @@ Symbols:
 + __OBJC_PROTOCOL_REFERENCE_$_BKSDisplayServiceServerInterface
 + ___42-[BKSDisplayService _lock_connectIfNeeded]_block_invoke
 + ___42-[BKSDisplayService _lock_connectIfNeeded]_block_invoke_2
-+ _objc_msgSend$_lock_connectIfNeeded
-+ _objc_msgSend$_lock_server
-+ _objc_msgSend$proximityDetectionModeWasInherited
-+ _objc_msgSend$setProximityDetectionModeWasInherited:
-+ _objc_msgSend$setScreenBlankNotificationSuppressedDisplayUUIDs:
 - GCC_except_table1212
 - GCC_except_table1229
 - GCC_except_table1231

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/PagesQuicklook.framework/PagesQuicklook`
 
-```diff
+### Section Size Changes
 
- 488.0.0.0.0
--  __TEXT.__text: 0xadab4
-+  __TEXT.__text: 0xadab8
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__objc_methlist: 0x7b4c
-   __TEXT.__cstring: 0xb402
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb15f4` | `0xb15f8` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2bd045860 -> sub_2bcdcf860 : 124 -> 128
+~ sub_2c1166330 -> sub_2c0f91330 : 124 -> 128
 ```

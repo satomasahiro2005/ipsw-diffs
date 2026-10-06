@@ -2,57 +2,35 @@
 
 > `/System/Library/Frameworks/AudioToolbox.framework/AudioCodecs`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x68ec40` | `0x68f0b8` | **`+0x478`** |
+| `__TEXT.__oslogstring` | `0x1b6ff` | `0x1b80e` | **`+0x10f`** |
+| `__TEXT.__gcc_except_tab` | `0x11e44` | `0x11e88` | **`+0x44`** |
+| `__TEXT.__const` | `0x33a30c` | `0x33a34c` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0xc70` | `0xc50` | **`-0x20`** |
+| `__TEXT.__unwind_info` | `0x9b78` | `0x9b90` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x278` | `0x268` | **`-0x10`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__weak_auth_got`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -812.0.0.0.0
--  __TEXT.__text: 0x68ec40
 +815.0.0.0.0
-+  __TEXT.__text: 0x68f0b8
-   __TEXT.__realtime: 0x1254
--  __TEXT.__const: 0x33a30c
-+  __TEXT.__const: 0x33a34c
-   __TEXT.__cstring: 0xfca4
--  __TEXT.__gcc_except_tab: 0x11e44
--  __TEXT.__oslogstring: 0x1b6ff
-+  __TEXT.__gcc_except_tab: 0x11e88
-+  __TEXT.__oslogstring: 0x1b80e
-   __TEXT.__ustring: 0x20
--  __TEXT.__unwind_info: 0x9b78
-+  __TEXT.__unwind_info: 0x9b90
-   __TEXT.__eh_frame: 0x6a8
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0xd910
--  __DATA_CONST.__got: 0x278
-+  __DATA_CONST.__got: 0x268
-   __AUTH_CONST.__const: 0x100a8
-   __AUTH_CONST.__cfstring: 0x4580
-   __AUTH_CONST.__weak_auth_got: 0x30
--  __AUTH_CONST.__auth_got: 0xc70
-+  __AUTH_CONST.__auth_got: 0xc50
-   __DATA.__data: 0x2dc
-   __DATA.__bss: 0x648
-   __DATA_DIRTY.__bss: 0xf0
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 9741
 -  Symbols:   17066
 -  CStrings:  3563
 +  Functions: 9743
 +  Symbols:   17064
 +  CStrings:  3568
- 
 Symbols:
 + GCC_except_table10014
 + GCC_except_table10017

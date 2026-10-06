@@ -2,8 +2,10 @@
 
 > `/System/Library/PrivateFrameworks/DeviceSharingUI.framework/DeviceSharingUI`
 
+### Other Changes
+
 ```text
 Functions:
-~ sub_25ef46dac -> sub_25fc41dac : 860 -> 868
-~ sub_25ef47108 -> sub_25fc42110 : 1016 -> 1008
+~ sub_25ee15dac -> sub_25fb25dac : 860 -> 868
+~ sub_25ee16108 -> sub_25fb26110 : 1016 -> 1008
 ```

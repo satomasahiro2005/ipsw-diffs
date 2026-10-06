@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/SettingsFoundation.framework/SettingsFoundation`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_6 : 12 -> 20

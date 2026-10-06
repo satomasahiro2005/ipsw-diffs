@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/TextAnimationSupport.framework/TextAnimationSupport`
 
-```diff
+### Section Size Changes
 
- 8.0.31.0.0
--  __TEXT.__text: 0xeebc8
-+  __TEXT.__text: 0xeebe8
-   __TEXT.__objc_methlist: 0xac8
-   __TEXT.__cstring: 0xb95
-   __TEXT.__const: 0x9580
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xeebc8` | `0xeebe8` | **`+0x20`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s7SwiftUI4TextV6LayoutV0C16AnimationSupportE13buildClusters33_5BB6BA5906EF51728AE44082969295EDLLSayAF15ClusterWithPathAHLLVGyF : 4672 -> 4664
 ~ _$ss20_ArrayBufferProtocolPsE15replaceSubrange_4with10elementsOfySnySiG_Siqd__ntSlRd__7ElementQyd__AGRtzlFs01_aB0Vy20TextAnimationSupport4EditVySiGG_s15EmptyCollectionVyAOGTg5Tf4nndn_n : 184 -> 192

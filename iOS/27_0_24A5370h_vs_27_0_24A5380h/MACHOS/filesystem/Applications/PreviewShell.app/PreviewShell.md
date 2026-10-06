@@ -2,98 +2,60 @@
 
 > `/Applications/PreviewShell.app/PreviewShell`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2da68` | `0x30c9c` | **`+0x3234`** |
+| `__TEXT.__eh_frame` | `0xb88` | `0x1598` | **`+0xa10`** |
+| `__TEXT.__unwind_info` | `0xba8` | `0xd78` | **`+0x1d0`** |
+| `__TEXT.__swift_as_cont` | `0x2c` | `0xf4` | **`+0xc8`** |
+| `__TEXT.__const` | `0x22c4` | `0x2384` | **`+0xc0`** |
+| `__TEXT.__swift5_typeref` | `0xd50` | `0xd00` | **`-0x50`** |
+| `__TEXT.__swift_as_entry` | `0x28` | `0x74` | **`+0x4c`** |
+| `__TEXT.__swift_as_ret` | `0x1c` | `0x5c` | **`+0x40`** |
+| `__DATA_CONST.__auth_ptr` | `0x9d0` | `0x9a8` | **`-0x28`** |
+| `__DATA_CONST.__const` | `0x1120` | `0x1148` | **`+0x28`** |
+| `__DATA.__data` | `0x19d0` | `0x19b0` | **`-0x20`** |
+| `__TEXT.__auth_stubs` | `0x2480` | `0x2470` | **`-0x10`** |
+| `__TEXT.__constg_swiftt` | `0xc20` | `0xc10` | **`-0x10`** |
+| `__TEXT.__cstring` | `0x111b` | `0x112b` | **`+0x10`** |
+| `__DATA.__objc_data` | `0x1100` | `0x10f8` | **`-0x8`** |
+| `__DATA_CONST.__auth_got` | `0x1248` | `0x1240` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x610` | `0x618` | **`+0x8`** |
+| `__TEXT.__swift5_capture` | `0x300` | `0x308` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_types`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2da68
--  __TEXT.__auth_stubs: 0x2480
-+  __TEXT.__text: 0x30c9c
-+  __TEXT.__auth_stubs: 0x2470
-   __TEXT.__objc_stubs: 0x17c0
-   __TEXT.__objc_methlist: 0xbd4
--  __TEXT.__const: 0x22c4
-+  __TEXT.__const: 0x2384
-   __TEXT.__objc_classname: 0x6bc
-   __TEXT.__objc_methname: 0x2df5
-   __TEXT.__objc_methtype: 0x14e9
--  __TEXT.__cstring: 0x111b
--  __TEXT.__constg_swiftt: 0xc20
--  __TEXT.__swift5_typeref: 0xd50
-+  __TEXT.__cstring: 0x112b
-+  __TEXT.__constg_swiftt: 0xc10
-+  __TEXT.__swift5_typeref: 0xd00
-   __TEXT.__swift5_reflstr: 0x6d6
-   __TEXT.__swift5_fieldmd: 0x894
-   __TEXT.__swift5_builtin: 0xa0
-   __TEXT.__swift5_assocty: 0x128
--  __TEXT.__swift5_capture: 0x300
-+  __TEXT.__swift5_capture: 0x308
-   __TEXT.__oslogstring: 0x784
-   __TEXT.__swift5_proto: 0x144
-   __TEXT.__swift5_types: 0xdc
--  __TEXT.__swift_as_entry: 0x28
--  __TEXT.__swift_as_cont: 0x2c
-+  __TEXT.__swift_as_entry: 0x74
-+  __TEXT.__swift_as_ret: 0x5c
-+  __TEXT.__swift_as_cont: 0xf4
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__swift_as_ret: 0x1c
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__unwind_info: 0xba8
--  __TEXT.__eh_frame: 0xb88
--  __DATA_CONST.__const: 0x1120
-+  __TEXT.__unwind_info: 0xd78
-+  __TEXT.__eh_frame: 0x1598
-+  __DATA_CONST.__const: 0x1148
-   __DATA_CONST.__cfstring: 0x40
-   __DATA_CONST.__objc_classlist: 0xd8
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0xe0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x70
--  __DATA_CONST.__auth_got: 0x1248
--  __DATA_CONST.__got: 0x610
--  __DATA_CONST.__auth_ptr: 0x9d0
-+  __DATA_CONST.__auth_got: 0x1240
-+  __DATA_CONST.__got: 0x618
-+  __DATA_CONST.__auth_ptr: 0x9a8
-   __DATA.__objc_const: 0x3c60
-   __DATA.__objc_selrefs: 0xa88
--  __DATA.__objc_data: 0x1100
--  __DATA.__data: 0x19d0
-+  __DATA.__objc_data: 0x10f8
-+  __DATA.__data: 0x19b0
-   __DATA.__bss: 0x2590
-   __DATA.__common: 0xb8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+-24.0.35.0.0
++24.0.37.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 974
 -  Symbols:   1073
--  CStrings:  724
+-  CStrings:  720
 +  Functions: 1035
 +  Symbols:   1068
-+  CStrings:  722
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_entry : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__bss : content changed
-~ __DATA.__common : content changed
++  CStrings:  718
 Symbols:
 + _$s15PreviewShellKit0aB15ServiceProtocolP11performKill7payloady19PreviewsMessagingOS9ProcessIDO_tYaKFTq
 + _$s15PreviewShellKit0aB15ServiceProtocolP13previewCanvas3for2inAA0aG0_p19PreviewsMessagingOS0A4TypeO_AA5AgentCtYaKFTq
@@ -145,5 +107,4 @@ CStrings:
 - "prepareDisplay(for:)"
 - "previewCanvas(for:in:)"
 - "resolveHandshake(_:)"
-
 ```

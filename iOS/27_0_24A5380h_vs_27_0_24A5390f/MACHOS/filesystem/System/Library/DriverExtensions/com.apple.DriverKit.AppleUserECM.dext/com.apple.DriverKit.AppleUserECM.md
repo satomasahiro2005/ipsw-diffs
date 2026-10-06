@@ -2,20 +2,22 @@
 
 > `/System/Library/DriverExtensions/com.apple.DriverKit.AppleUserECM.dext/com.apple.DriverKit.AppleUserECM`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__cstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x60b4` | `0x60e8` | **`+0x34`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__const`
+
+### Other Changes
 
 ```diff
 
 -73.0.0.0.0
--  __TEXT.__text: 0x60b4
 +73.0.1.0.0
-+  __TEXT.__text: 0x60e8
-   __TEXT.__auth_stubs: 0x4c0
-   __TEXT.__const: 0xbb0
-   __TEXT.__cstring: 0x68a
 Functions:
 ~ sub_100002fd8 : 16 -> 40
 ~ sub_100002fe8 -> sub_100003000 : 40 -> 28

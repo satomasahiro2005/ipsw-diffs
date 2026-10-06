@@ -2,88 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/AppleMediaServicesUIPaymentSheets.framework/AppleMediaServicesUIPaymentSheets`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2a6d4` | `0x2b1b4` | **`+0xae0`** |
+| `__TEXT.__swift5_typeref` | `0x5608` | `0x5ad2` | **`+0x4ca`** |
+| `__TEXT.__cstring` | `0x7e0` | `0x970` | **`+0x190`** |
+| `__AUTH_CONST.__const` | `0x21e0` | `0x2320` | **`+0x140`** |
+| `__AUTH.__objc_data` | `0x98` | `0x48` | **`-0x50`** |
+| `__AUTH_CONST.__objc_const` | `0x6a0` | `0x6e8` | **`+0x48`** |
+| `__TEXT.__swift5_capture` | `0x3f8` | `0x43c` | **`+0x44`** |
+| `__AUTH_CONST.__auth_got` | `0xdd0` | `0xe10` | **`+0x40`** |
+| `__TEXT.__eh_frame` | `0x80c` | `0x844` | **`+0x38`** |
+| `__DATA_CONST.__got` | `0x6b0` | `0x6e0` | **`+0x30`** |
+| `__DATA.__data` | `0x840` | `0x868` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0xc78` | `0xc98` | **`+0x20`** |
+| `__DATA.__common` | `0x18` | `0x8` | **`-0x10`** |
+| `__TEXT.__const` | `0x31a4` | `0x3194` | **`-0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x8cf` | `0x8df` | **`+0x10`** |
+| `__TEXT.__constg_swiftt` | `0xf20` | `0xf14` | **`-0xc`** |
+| `__TEXT.__swift5_fieldmd` | `0xbc0` | `0xbcc` | **`+0xc`** |
+| `__DATA_CONST.__const` | `0x160` | `0x168` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -8.0.52.2.8
--  __TEXT.__text: 0x29054
 +8.1.12.2.1
-+  __TEXT.__text: 0x29b38
-   __TEXT.__objc_methlist: 0x20
--  __TEXT.__const: 0x31a4
--  __TEXT.__constg_swiftt: 0xf20
--  __TEXT.__swift5_typeref: 0x5608
-+  __TEXT.__const: 0x3194
-+  __TEXT.__constg_swiftt: 0xf14
-+  __TEXT.__swift5_typeref: 0x5ad2
-   __TEXT.__swift5_builtin: 0x64
--  __TEXT.__swift5_reflstr: 0x8cf
--  __TEXT.__swift5_fieldmd: 0xbc0
-+  __TEXT.__swift5_reflstr: 0x8df
-+  __TEXT.__swift5_fieldmd: 0xbcc
-   __TEXT.__swift5_assocty: 0x3c0
-   __TEXT.__swift5_proto: 0x13c
-   __TEXT.__swift5_types: 0xf4
--  __TEXT.__swift5_capture: 0x3f8
--  __TEXT.__cstring: 0x7e0
-+  __TEXT.__swift5_capture: 0x43c
-+  __TEXT.__cstring: 0x970
-   __TEXT.__swift_as_entry: 0x2c
-   __TEXT.__swift_as_ret: 0x28
-   __TEXT.__swift_as_cont: 0x70
-   __TEXT.__swift5_mpenum: 0x14
-   __TEXT.__oslogstring: 0x85
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__unwind_info: 0xff8
--  __TEXT.__eh_frame: 0x80c
-+  __TEXT.__unwind_info: 0x1008
-+  __TEXT.__eh_frame: 0x844
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x160
-+  __DATA_CONST.__const: 0x168
-   __DATA_CONST.__objc_classlist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x190
--  __DATA_CONST.__got: 0x6b0
--  __AUTH_CONST.__const: 0x21e0
--  __AUTH_CONST.__objc_const: 0x6a0
--  __AUTH_CONST.__auth_got: 0xdd0
--  __AUTH.__objc_data: 0x98
-+  __DATA_CONST.__got: 0x6e0
-+  __AUTH_CONST.__const: 0x2320
-+  __AUTH_CONST.__objc_const: 0x6e8
-+  __AUTH_CONST.__auth_got: 0xe10
-+  __AUTH.__objc_data: 0x48
-   __AUTH.__data: 0x198
--  __DATA.__data: 0x840
--  __DATA.__common: 0x18
-+  __DATA.__data: 0x868
-+  __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0x1e0
-   __DATA_DIRTY.__data: 0x1188
-   __DATA_DIRTY.__bss: 0x14b0
 
-   - /usr/lib/swift/libswiftCoreLocation.dylib
-   - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
 +  - /usr/lib/swift/libswiftIntents.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1442
--  Symbols:   954
+-  Symbols:   906
 -  CStrings:  55
 +  Functions: 1453
-+  Symbols:   967
++  Symbols:   919
 +  CStrings:  57
- 
 Symbols:
 + _AMSPaymentSheetContentItemTrailingValueAttribute
 + ___swift_closure_destructor.30Tm

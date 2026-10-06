@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/HealthMedicationsExperience.framework/HealthMedicationsExperience`
 
-```diff
+### Section Size Changes
 
- 7027.0.72.2.7
--  __TEXT.__text: 0x82edc
-+  __TEXT.__text: 0x82f28
-   __TEXT.__objc_methlist: 0x42c
-   __TEXT.__const: 0x5194
-   __TEXT.__swift5_typeref: 0x18aa
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x82edc` | `0x82f28` | **`+0x4c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_22ee32280 -> sub_22f6d7280 : 1304 -> 1296
 ~ sub_22ee3afc8 -> sub_22f6dffc0 : 1444 -> 1448

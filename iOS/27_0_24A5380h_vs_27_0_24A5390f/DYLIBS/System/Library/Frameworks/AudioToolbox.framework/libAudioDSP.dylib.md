@@ -2,90 +2,35 @@
 
 > `/System/Library/Frameworks/AudioToolbox.framework/libAudioDSP.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__realtime` | `0x1c3378` | `0x15c1b0` | **`-0x671c8`** |
+| `__TEXT.__text` | `0x3ae364` | `0x369fa4` | **`-0x443c0`** |
+| `__TEXT.__cstring` | `0x39491` | `0x33df1` | **`-0x56a0`** |
+| `__TEXT.__unwind_info` | `0xe618` | `0xe350` | **`-0x2c8`** |
+| `__TEXT.__oslogstring` | `0x29bcd` | `0x29d38` | **`+0x16b`** |
+| `__TEXT.__const` | `0xa25d0` | `0xa2640` | **`+0x70`** |
+| `__TEXT.__gcc_except_tab` | `0x302a8` | `0x30244` | **`-0x64`** |
+| `__AUTH_CONST.__cfstring` | `0x20640` | `0x20660` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x1e10` | `0x1e20` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0xe3a8` | `0xe3b0` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x558` | `0x560` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -881.108.0.0.0
--  __TEXT.__text: 0x3ae364
--  __TEXT.__realtime: 0x1c3378
 +881.112.0.0.0
-+  __TEXT.__text: 0x369fa4
-+  __TEXT.__realtime: 0x15c1b0
-   __TEXT.__delay_stubs: 0xb40
-   __TEXT.__delay_helper: 0x494
-   __TEXT.__objc_methlist: 0x334
--  __TEXT.__const: 0xa25d0
-+  __TEXT.__const: 0xa2640
-   __TEXT.__dlopen_cstrs: 0x4f
--  __TEXT.__cstring: 0x39491
--  __TEXT.__gcc_except_tab: 0x302a8
--  __TEXT.__oslogstring: 0x29bcd
--  __TEXT.__unwind_info: 0xe618
-+  __TEXT.__cstring: 0x33df1
-+  __TEXT.__gcc_except_tab: 0x30244
-+  __TEXT.__oslogstring: 0x29d38
-+  __TEXT.__unwind_info: 0xe350
-   __TEXT.__eh_frame: 0xf0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xe3a8
-+  __DATA_CONST.__const: 0xe3b0
-   __DATA_CONST.__objc_classlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x558
-+  __DATA_CONST.__objc_selrefs: 0x560
-   __DATA_CONST.__objc_superrefs: 0x20
-   __DATA_CONST.__objc_arraydata: 0x78
-   __DATA_CONST.__got: 0x3c0
-   __AUTH_CONST.__const: 0x214f0
--  __AUTH_CONST.__cfstring: 0x20640
-+  __AUTH_CONST.__cfstring: 0x20660
-   __AUTH_CONST.__objc_const: 0x6a0
-   __AUTH_CONST.__weak_auth_got: 0x118
-   __AUTH_CONST.__objc_intobj: 0xa8
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__objc_doubleobj: 0x20
--  __AUTH_CONST.__auth_got: 0x1e10
-+  __AUTH_CONST.__auth_got: 0x1e20
-   __AUTH.__objc_data: 0x140
-   __AUTH.__data: 0x18
-   __DATA.__objc_ivar: 0x20
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 11364
--  Symbols:   17721
+-  Symbols:   17585
 -  CStrings:  10872
 +  Functions: 11213
-+  Symbols:   17568
++  Symbols:   17431
 +  CStrings:  10810
- 
 Symbols:
 + GCC_except_table10015
 + GCC_except_table10020
@@ -3342,7 +3287,6 @@ Symbols:
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES7_EENS_22__unordered_map_hasherIS7_NS_4pairIKS7_S7_EENS_4hashIS7_EENS_8equal_toIS7_EEEENS_21__unordered_map_equalIS7_SC_SG_SE_EENS5_ISC_EEE16__emplace_uniqueB9nqe220106IJRKNS_21piecewise_construct_tENS_5tupleIJOS7_EEENSQ_IJEEEEEENSA_INS_15__hash_iteratorIPNS_11__hash_nodeIS8_PvEEEEbEEDpOT_ENKUlRSB_SP_OSS_OST_E_clES14_SP_S15_S16_
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeIjNS_5tupleIJPK10__CFStringfff22AudioUnitParameterUnitjEEEEENS_22__unordered_map_hasherIjNS_4pairIKjS7_EENS_4hashIjEENS_8equal_toIjEEEENS_21__unordered_map_equalIjSC_SG_SE_EENS_9allocatorISC_EEE16__emplace_uniqueB9nqe220106IJRKNS_21piecewise_construct_tENS2_IJRSB_EEENS2_IJEEEEEENSA_INS_15__hash_iteratorIPNS_11__hash_nodeIS8_PvEEEEbEEDpOT_ENKUlSR_SQ_OSS_OST_E_clESR_SQ_S14_S15_
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeIjbEENS_22__unordered_map_hasherIjNS_4pairIKjbEENS_4hashIjEENS_8equal_toIjEEEENS_21__unordered_map_equalIjS6_SA_S8_EENS_9allocatorIS6_EEE16__emplace_uniqueB9nqe220106IJS6_EEENS4_INS_15__hash_iteratorIPNS_11__hash_nodeIS2_PvEEEEbEEDpOT_ENKUlRS5_OS6_E_clESS_ST_
-+ _objc_msgSend$isWritableFileAtPath:
 + _objc_retain_x27
 + _sparse_set_matrix_property
 - GCC_except_table1001

@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/AirPlayAndHandoffSettingsSupport.framework/AirPlayAndHandoffSettingsSupport`
 
-```diff
+### Section Size Changes
 
- 2027.0.7.0.0
--  __TEXT.__text: 0x12a00
-+  __TEXT.__text: 0x129fc
-   __TEXT.__objc_methlist: 0x38
-   __TEXT.__const: 0xaa2
-   __TEXT.__swift5_typeref: 0x352
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x12a00` | `0x129fc` | **`-0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_250bca66c -> sub_25161966c : 752 -> 756
-~ sub_250bd3270 -> sub_251622274 : 992 -> 984
+~ sub_250a9466c -> sub_2514e266c : 752 -> 756
+~ sub_250a9d270 -> sub_2514eb274 : 992 -> 984
 ```

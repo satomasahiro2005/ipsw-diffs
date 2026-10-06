@@ -2,25 +2,22 @@
 
 > `com.apple.EXBrightKext`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x1779c` | `0x176cc` | **`-0xd0`** |
+| `__TEXT.__cstring` | `0x4b73` | `0x4b36` | **`-0x3d`** |
+
+### Other Changes
+
 ```diff
 
 -2300.2.9.0.0
 +2300.40.37.0.0
-   __TEXT.__const: 0x118
--  __TEXT.__cstring: 0x4b73
--  __TEXT_EXEC.__text: 0x1739c
-+  __TEXT.__cstring: 0x4b36
-+  __TEXT_EXEC.__text: 0x172d8
-   __TEXT_EXEC.__auth_stubs: 0x700
-   __DATA.__data: 0xd8
-   __DATA.__common: 0x130
 
-   __DATA_CONST.__got: 0x90
-   Functions: 585
-   Symbols:   0
 -  CStrings:  317
 +  CStrings:  315
- 
 CStrings:
 + "121111121222121211111112111111121111112222212111111112"
 + "1222222"

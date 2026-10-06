@@ -2,72 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/WebGPU.framework/WebGPU`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x23cbf0` | `0x23ec88` | **`+0x2098`** |
+| `__TEXT.__gcc_except_tab` | `0xa2bc` | `0xa3d0` | **`+0x114`** |
+| `__AUTH_CONST.__const` | `0x4c60` | `0x4ce0` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x4340` | `0x4388` | **`+0x48`** |
+| `__TEXT.__eh_frame` | `0xf60` | `0xfa0` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x3d34c` | `0x3d37c` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x2ae8` | `0x2b10` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0x2a8` | `0x2d0` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x39a0` | `0x39c0` | **`+0x20`** |
+| `__TEXT.__swift5_typeref` | `0x7c4` | `0x7d8` | **`+0x14`** |
+| `__TEXT.__const` | `0x1f84` | `0x1f94` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x1b8` | `0x1c8` | **`+0x10`** |
+| `__TEXT.__constg_swiftt` | `0xb70` | `0xb7c` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0xa08` | `0xa10` | **`+0x8`** |
+| `__TEXT.__swift5_assocty` | `0x120` | `0x128` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -625.1.24.10.1
--  __TEXT.__text: 0x23cbf0
 +625.1.29.10.3
-+  __TEXT.__text: 0x23ec88
-   __TEXT.__objc_methlist: 0x1f0
--  __TEXT.__const: 0x1f84
--  __TEXT.__gcc_except_tab: 0xa2bc
--  __TEXT.__swift5_typeref: 0x7c4
--  __TEXT.__cstring: 0x3d34c
--  __TEXT.__constg_swiftt: 0xb70
-+  __TEXT.__const: 0x1f94
-+  __TEXT.__gcc_except_tab: 0xa3d0
-+  __TEXT.__swift5_typeref: 0x7d8
-+  __TEXT.__cstring: 0x3d37c
-+  __TEXT.__constg_swiftt: 0xb7c
-   __TEXT.__swift5_fieldmd: 0x400
-   __TEXT.__swift5_builtin: 0xdc
--  __TEXT.__swift5_reflstr: 0x1b8
--  __TEXT.__swift5_assocty: 0x120
-+  __TEXT.__swift5_reflstr: 0x1c8
-+  __TEXT.__swift5_assocty: 0x128
-   __TEXT.__swift5_proto: 0x44
-   __TEXT.__swift5_types: 0x4c
-   __TEXT.__swift5_protos: 0x50
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0x4340
--  __TEXT.__eh_frame: 0xf60
-+  __TEXT.__unwind_info: 0x4388
-+  __TEXT.__eh_frame: 0xfa0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2ae8
-+  __DATA_CONST.__const: 0x2b10
-   __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xb00
-   __DATA_CONST.__objc_superrefs: 0x18
--  __DATA_CONST.__got: 0x2a8
--  __AUTH_CONST.__const: 0x4c60
--  __AUTH_CONST.__cfstring: 0x39a0
-+  __DATA_CONST.__got: 0x2d0
-+  __AUTH_CONST.__const: 0x4ce0
-+  __AUTH_CONST.__cfstring: 0x39c0
-   __AUTH_CONST.__objc_const: 0x638
-   __AUTH_CONST.__weak_auth_got: 0x10
--  __AUTH_CONST.__auth_got: 0xa08
-+  __AUTH_CONST.__auth_got: 0xa10
-   __AUTH.__objc_data: 0xf0
-   __AUTH.__data: 0x108
-   __DATA.__objc_ivar: 0x5c
 
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 3603
--  Symbols:   4389
+-  Symbols:   4043
 -  CStrings:  2743
 +  Functions: 3624
-+  Symbols:   4426
++  Symbols:   4080
 +  CStrings:  2744
- 
 Symbols:
 + GCC_except_table100
 + GCC_except_table126

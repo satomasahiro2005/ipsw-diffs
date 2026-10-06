@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/FMNetworking.framework/FMNetworking`
 
-```diff
+### Section Size Changes
 
- 449.30.6.14.26
--  __TEXT.__text: 0x36f30
-+  __TEXT.__text: 0x36f44
-   __TEXT.__objc_methlist: 0x294
-   __TEXT.__const: 0x2b14
-   __TEXT.__cstring: 0x1af3
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x36f30` | `0x36f44` | **`+0x14`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_23f149344 -> sub_23fa85344 : 2656 -> 2668
 ~ sub_23f161944 -> sub_23fa9d950 : 1624 -> 1616

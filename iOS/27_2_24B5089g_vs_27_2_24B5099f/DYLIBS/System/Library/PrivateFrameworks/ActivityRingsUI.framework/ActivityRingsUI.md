@@ -2,70 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/ActivityRingsUI.framework/ActivityRingsUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x22670` | `0x228f4` | **`+0x284`** |
+| `__AUTH_CONST.__objc_const` | `0x98d8` | `0x9938` | **`+0x60`** |
+| `__TEXT.__objc_methlist` | `0x31fc` | `0x3234` | **`+0x38`** |
+| `__DATA_CONST.__const` | `0x768` | `0x788` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1878` | `0x1890` | **`+0x18`** |
+| `__TEXT.__const` | `0x1144` | `0x1154` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x688` | `0x690` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x3d8` | `0x3e0` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0xc80` | `0xc88` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -2027.1.1.0.0
--  __TEXT.__text: 0x21614
--  __TEXT.__objc_methlist: 0x31fc
--  __TEXT.__const: 0x1144
 +2027.1.2.0.0
-+  __TEXT.__text: 0x2188c
-+  __TEXT.__objc_methlist: 0x3234
-+  __TEXT.__const: 0x1154
-   __TEXT.__cstring: 0x14a2
-   __TEXT.__oslogstring: 0x7c9
-   __TEXT.__gcc_except_tab: 0x32c
 
-   __TEXT.__swift5_mpenum: 0x10
-   __TEXT.__swift5_proto: 0x38
-   __TEXT.__swift5_capture: 0x30
--  __TEXT.__unwind_info: 0xf28
-+  __TEXT.__unwind_info: 0xf30
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x768
-+  __DATA_CONST.__const: 0x788
-   __DATA_CONST.__objc_classlist: 0x260
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x58
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1878
-+  __DATA_CONST.__objc_selrefs: 0x1890
-   __DATA_CONST.__objc_superrefs: 0x170
-   __DATA_CONST.__objc_arraydata: 0xe0
-   __DATA_CONST.__vfx_script_tbx: 0x18
-   __DATA_CONST.__got: 0x310
-   __AUTH_CONST.__const: 0x950
-   __AUTH_CONST.__cfstring: 0xe00
--  __AUTH_CONST.__objc_const: 0x98d8
-+  __AUTH_CONST.__objc_const: 0x9938
-   __AUTH_CONST.__objc_arrayobj: 0xc0
--  __AUTH_CONST.__auth_got: 0x688
-+  __AUTH_CONST.__auth_got: 0x690
-   __AUTH.__objc_data: 0xf78
-   __AUTH.__data: 0xb0
--  __DATA.__objc_ivar: 0x3d8
-+  __DATA.__objc_ivar: 0x3e0
-   __DATA.__data: 0x718
-   __DATA.__common: 0x10
-   __DATA_DIRTY.__objc_data: 0xa00
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1308
 -  Symbols:   2439
 +  Functions: 1315
 +  Symbols:   2450
-   CStrings:  252
- 
 Symbols:
 + -[ARUIRing setUseLightMode:]
 + -[ARUIRing useLightMode]

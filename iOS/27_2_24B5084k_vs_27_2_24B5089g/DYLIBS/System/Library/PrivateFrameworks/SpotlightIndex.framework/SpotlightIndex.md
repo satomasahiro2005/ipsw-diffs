@@ -2,46 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/SpotlightIndex.framework/SpotlightIndex`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x483c40` | `0x482d88` | **`-0xeb8`** |
+| `__TEXT.__cstring` | `0x2f2f2` | `0x2f434` | **`+0x142`** |
+| `__TEXT.__oslogstring` | `0x1dda1` | `0x1ddf2` | **`+0x51`** |
+| `__DATA.__bss` | `0x4040` | `0x3ff0` | **`-0x50`** |
+| `__DATA_DIRTY.__bss` | `0x9c78` | `0x9cc8` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x5b50` | `0x5b68` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
 -2465.1.2.0.0
--  __TEXT.__text: 0x47c720
 +2465.1.3.0.0
-+  __TEXT.__text: 0x47b844
-   __TEXT.__objc_methlist: 0x404
-   __TEXT.__const: 0xa56a
--  __TEXT.__cstring: 0x2f2f2
-+  __TEXT.__cstring: 0x2f434
-   __TEXT.__gcc_except_tab: 0x29c
--  __TEXT.__oslogstring: 0x1dda1
-+  __TEXT.__oslogstring: 0x1ddf2
-   __TEXT.__ustring: 0x2aa
-   __TEXT.__dof_mds: 0x29b
--  __TEXT.__unwind_info: 0x7190
-+  __TEXT.__unwind_info: 0x71b0
-   __TEXT.__eh_frame: 0x220
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA.__data: 0xe98
-   __DATA_DIRTY.__objc_data: 0xa0
-   __DATA_DIRTY.__data: 0x4d8
--  __DATA_DIRTY.__bss: 0x9c78
-+  __DATA_DIRTY.__bss: 0x9cc8
-   __DATA_DIRTY.__common: 0x2402c
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 7750
--  Symbols:   10449
+-  Symbols:   10261
 -  CStrings:  8055
 +  Functions: 7755
-+  Symbols:   10454
++  Symbols:   10266
 +  CStrings:  8072
- 
 Symbols:
 + GCC_except_table220
 + GCC_except_table227

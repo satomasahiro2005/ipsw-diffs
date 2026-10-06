@@ -2,120 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/AXSpringBoardServerInstance.framework/AXSpringBoardServerInstance`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3ba68` | `0x3bf14` | **`+0x4ac`** |
+| `__TEXT.__dlopen_cstrs` | `0x290` | `0x34a` | **`+0xba`** |
+| `__TEXT.__oslogstring` | `0x153d` | `0x14d1` | **`-0x6c`** |
+| `__AUTH_CONST.__cfstring` | `0x68e0` | `0x6880` | **`-0x60`** |
+| `__AUTH.__objc_data` | `0x390` | `0x3e0` | **`+0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0xfa0` | `0xf50` | **`-0x50`** |
+| `__DATA_CONST.__const` | `0xf78` | `0xfa8` | **`+0x30`** |
+| `__TEXT.__gcc_except_tab` | `0xaa0` | `0xac4` | **`+0x24`** |
+| `__TEXT.__cstring` | `0x63ff` | `0x63e4` | **`-0x1b`** |
+| `__DATA_DIRTY.__bss` | `0xc0` | `0xd8` | **`+0x18`** |
+| `__DATA.__bss` | `0x818` | `0x828` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x830` | `0x840` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x1180` | `0x1190` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2898` | `0x2890` | **`-0x8`** |
+| `__TEXT.__objc_methlist` | `0x32fc` | `0x32f4` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x3ba68
--  __TEXT.__objc_methlist: 0x32fc
-+  __TEXT.__text: 0x3bf14
-+  __TEXT.__objc_methlist: 0x32f4
-   __TEXT.__const: 0x5a0
--  __TEXT.__dlopen_cstrs: 0x290
-+  __TEXT.__dlopen_cstrs: 0x34a
-   __TEXT.__swift5_typeref: 0x188
-   __TEXT.__constg_swiftt: 0x1e8
-   __TEXT.__swift5_fieldmd: 0xa4
-   __TEXT.__swift5_reflstr: 0x34
-   __TEXT.__swift5_assocty: 0x18
-   __TEXT.__swift5_capture: 0x98
--  __TEXT.__cstring: 0x63ff
--  __TEXT.__oslogstring: 0x153d
-+  __TEXT.__cstring: 0x63e4
-+  __TEXT.__oslogstring: 0x14d1
-   __TEXT.__swift5_proto: 0x34
-   __TEXT.__swift5_types: 0x20
-   __TEXT.__swift_as_entry: 0x24
-   __TEXT.__swift_as_ret: 0x24
-   __TEXT.__swift_as_cont: 0x20
--  __TEXT.__gcc_except_tab: 0xaa0
--  __TEXT.__unwind_info: 0x1180
-+  __TEXT.__gcc_except_tab: 0xac4
-+  __TEXT.__unwind_info: 0x1190
-   __TEXT.__eh_frame: 0x320
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xf78
-+  __DATA_CONST.__const: 0xfa8
-   __DATA_CONST.__objc_classlist: 0x1f0
-   __DATA_CONST.__objc_protolist: 0x78
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2898
-+  __DATA_CONST.__objc_selrefs: 0x2890
-   __DATA_CONST.__objc_superrefs: 0xf8
-   __DATA_CONST.__objc_arraydata: 0x120
--  __DATA_CONST.__got: 0x830
-+  __DATA_CONST.__got: 0x840
-   __AUTH_CONST.__const: 0xc80
--  __AUTH_CONST.__cfstring: 0x68e0
-+  __AUTH_CONST.__cfstring: 0x6880
-   __AUTH_CONST.__objc_const: 0x38a8
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_intobj: 0x4e0
-   __AUTH_CONST.__objc_arrayobj: 0x60
-   __AUTH_CONST.__objc_dictobj: 0x190
-   __AUTH_CONST.__auth_got: 0xbe0
--  __AUTH.__objc_data: 0x390
-+  __AUTH.__objc_data: 0x3e0
-   __AUTH.__data: 0x250
-   __DATA.__objc_ivar: 0x104
-   __DATA.__data: 0x688
--  __DATA.__bss: 0x818
-+  __DATA.__bss: 0x828
-   __DATA.__common: 0x10
--  __DATA_DIRTY.__objc_data: 0xfa0
--  __DATA_DIRTY.__bss: 0xc0
-+  __DATA_DIRTY.__objc_data: 0xf50
-+  __DATA_DIRTY.__bss: 0xd8
-   - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
+-3232.3.0.0.0
++3234.5.0.0.0
 
-   - /System/Library/PrivateFrameworks/AXSpeechAssetServices.framework/AXSpeechAssetServices
-   - /System/Library/PrivateFrameworks/AccessibilitySharedSupport.framework/AccessibilitySharedSupport
-   - /System/Library/PrivateFrameworks/AccessibilityUI.framework/AccessibilityUI
 +  - /System/Library/PrivateFrameworks/AccessibilityUIService.framework/AccessibilityUIService
-   - /System/Library/PrivateFrameworks/AccessibilityUIUtilities.framework/AccessibilityUIUtilities
-   - /System/Library/PrivateFrameworks/AccessibilityUIViewServices.framework/AccessibilityUIViewServices
-   - /System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1337
--  Symbols:   4926
--  CStrings:  1906
+-  Symbols:   2626
+-  CStrings:  1068
 +  Functions: 1338
-+  Symbols:   4936
-+  CStrings:  1908
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__objc_ivar : content changed
-~ __DATA.__data : content changed
++  Symbols:   2636
++  CStrings:  1073
 Symbols:
 + +[AX_AX_SBSecureWindowOverride _accessibilityPerformValidations:]
 + +[AX_AX_SBSecureWindowOverride(SafeCategory) safeCategoryBaseClass]
@@ -220,7 +141,6 @@ Symbols:
 + _audit_stringSiriActivation
 + _getAFIsLinwoodEnabledAndWasEverAvailableSymbolLoc.ptr
 + _getSiriSimpleActivationSourceClass.softClass
-+ _objc_msgSend$activateFromSource:
 - +[AX_AX_SBSecureMainScreenActiveInterfaceOrientationWindowOverride _accessibilityPerformValidations:]
 - +[AX_AX_SBSecureMainScreenActiveInterfaceOrientationWindowOverride(SafeCategory) safeCategoryBaseClass]
 - +[AX_AX_SBSecureMainScreenActiveInterfaceOrientationWindowOverride(SafeCategory) safeCategoryTargetClassName]
@@ -314,8 +234,6 @@ Symbols:
 - ___71-[AXSpringBoardServerHelper _handleImageDescriptionPrivacyConfirmation]_block_invoke
 - ___71-[AXSpringBoardServerHelper _handleImageDescriptionPrivacyConfirmation]_block_invoke_2
 - ___95-[AX_AX_SBSecureMainScreenActiveInterfaceOrientationWindowOverride _processEventForVOSpeakage:]_block_invoke
-- _objc_msgSend$_handleImageDescriptionPrivacyConfirmation
-- _objc_msgSend$setContentViewController:
 CStrings:
 + "AFIsLinwoodEnabledAndWasEverAvailable"
 + "AX_AX_SBSecureWindowOverride"
@@ -346,5 +264,4 @@ CStrings:
 - "vo.image.description.privacy.alert.message"
 - "vo.image.description.privacy.alert.reject"
 - "vo.image.description.privacy.alert.title"
-
 ```

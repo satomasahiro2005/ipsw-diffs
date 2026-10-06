@@ -2,78 +2,36 @@
 
 > `/System/Library/Frameworks/FileProvider.framework/FileProvider`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x25f8` | `0x1a90` | **`-0xb68`** |
+| `__DATA_DIRTY.__objc_data` | `0x1bf8` | `0x2760` | **`+0xb68`** |
+| `__TEXT.__text` | `0x12dd30` | `0x12e3f0` | **`+0x6c0`** |
+| `__AUTH_CONST.__cfstring` | `0x115e0` | `0x11640` | **`+0x60`** |
+| `__TEXT.__cstring` | `0x14ea3` | `0x14f02` | **`+0x5f`** |
+| `__TEXT.__objc_methlist` | `0xe9f4` | `0xea4c` | **`+0x58`** |
+| `__TEXT.__unwind_info` | `0x5958` | `0x5998` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x70f0` | `0x7128` | **`+0x38`** |
+| `__TEXT.__gcc_except_tab` | `0x8b34` | `0x8b64` | **`+0x30`** |
+| `__DATA.__bss` | `0xc30` | `0xc50` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x6228` | `0x6240` | **`+0x18`** |
+| `__DATA_DIRTY.__bss` | `0x2e8` | `0x2d0` | **`-0x18`** |
+
+### Other Changes
+
 ```diff
 
 -4838.40.53.502.1
--  __TEXT.__text: 0x128a40
--  __TEXT.__objc_methlist: 0xe9f4
 +4838.40.92.502.1
-+  __TEXT.__text: 0x1290c4
-+  __TEXT.__objc_methlist: 0xea4c
-   __TEXT.__const: 0x89a
--  __TEXT.__cstring: 0x14ea3
--  __TEXT.__gcc_except_tab: 0x8b34
-+  __TEXT.__cstring: 0x14f02
-+  __TEXT.__gcc_except_tab: 0x8b64
-   __TEXT.__oslogstring: 0xe394
-   __TEXT.__dlopen_cstrs: 0x793
-   __TEXT.__ustring: 0x21e
 
-   __TEXT.__swift_as_entry: 0x4
-   __TEXT.__swift_as_ret: 0x4
-   __TEXT.__swift_as_cont: 0xc
--  __TEXT.__unwind_info: 0x6e88
-+  __TEXT.__unwind_info: 0x6eb8
-   __TEXT.__eh_frame: 0xa0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x6228
-+  __DATA_CONST.__const: 0x6240
-   __DATA_CONST.__objc_classlist: 0x698
-   __DATA_CONST.__objc_catlist: 0x88
-   __DATA_CONST.__objc_protolist: 0x2a8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x70f0
-+  __DATA_CONST.__objc_selrefs: 0x7128
-   __DATA_CONST.__objc_protorefs: 0x158
-   __DATA_CONST.__objc_superrefs: 0x550
-   __DATA_CONST.__objc_arraydata: 0xab0
-   __DATA_CONST.__got: 0xb18
-   __AUTH_CONST.__const: 0x1da8
--  __AUTH_CONST.__cfstring: 0x115e0
-+  __AUTH_CONST.__cfstring: 0x11640
-   __AUTH_CONST.__objc_const: 0x25030
-   __AUTH_CONST.__objc_intobj: 0x120
-   __AUTH_CONST.__objc_arrayobj: 0x198
-   __AUTH_CONST.__auth_got: 0xeb0
--  __AUTH.__objc_data: 0x25f8
-+  __AUTH.__objc_data: 0x1a90
-   __AUTH.__data: 0x10
-   __DATA.__objc_ivar: 0x10d0
-   __DATA.__data: 0x23f0
-   __DATA.__common: 0x39
--  __DATA_DIRTY.__objc_data: 0x1bf8
-+  __DATA_DIRTY.__objc_data: 0x2760
-   __DATA_DIRTY.__data: 0x1
--  __DATA_DIRTY.__bss: 0x2e8
-+  __DATA_DIRTY.__bss: 0x2d0
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
 -  Functions: 7469
--  Symbols:   13849
+-  Symbols:   11221
 -  CStrings:  4062
 +  Functions: 7478
-+  Symbols:   13866
++  Symbols:   11232
 +  CStrings:  4065
- 
 Symbols:
 + -[FPItemManager _fetchHierarchyForItemID:recursively:synchronously:depth:completionHandler:]
 + -[FPItemManager _fetchParentItemIDsForItemID:recursively:synchronously:completionHandler:]
@@ -98,13 +56,6 @@ Symbols:
 + ___92-[FPItemManager _fetchHierarchyForItemID:recursively:synchronously:depth:completionHandler:]_block_invoke_3
 + ___block_descriptor_58_e8_32s40bs_e29_v24?0"NSArray"8"NSError"16ls32l8s40l8
 + ___block_descriptor_66_e8_32s40s48bs_e52_v24?0"FPService<FPXOperationService>"8"NSError"16ls48l8s32l8s40l8
-+ _objc_msgSend$_fetchHierarchyForItemID:recursively:synchronously:depth:completionHandler:
-+ _objc_msgSend$_fetchParentItemIDsForItemID:recursively:synchronously:completionHandler:
-+ _objc_msgSend$_fetchParentsForItemID:recursively:synchronously:completionHandler:
-+ _objc_msgSend$daemonConnectionOverride
-+ _objc_msgSend$fetchOperationServiceForProviderDomainID:synchronously:handler:
-+ _objc_msgSend$fp_URLWithNoFollow
-+ _objc_msgSend$fp_hasNoFollow
 - -[FPItemManager _fetchHierarchyForItemID:recursively:depth:completionHandler:]
 - GCC_except_table104
 - GCC_except_table137
@@ -117,7 +68,6 @@ Symbols:
 - ___78-[FPItemManager _fetchHierarchyForItemID:recursively:depth:completionHandler:]_block_invoke_3
 - ___block_descriptor_57_e8_32s40bs_e29_v24?0"NSArray"8"NSError"16ls32l8s40l8
 - ___block_descriptor_65_e8_32s40s48bs_e52_v24?0"FPService<FPXOperationService>"8"NSError"16ls48l8s32l8s40l8
-- _objc_msgSend$_fetchHierarchyForItemID:recursively:depth:completionHandler:
 CStrings:
 + "4838.40.92.502.1"
 + "SHOW_FOLDER"

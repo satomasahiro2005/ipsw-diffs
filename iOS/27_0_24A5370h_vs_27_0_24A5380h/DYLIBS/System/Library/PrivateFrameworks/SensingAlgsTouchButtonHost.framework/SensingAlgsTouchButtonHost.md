@@ -2,48 +2,25 @@
 
 > `/System/Library/PrivateFrameworks/SensingAlgsTouchButtonHost.framework/SensingAlgsTouchButtonHost`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x378` | `0x30a` | **`-0x6e`** |
+| `__TEXT.__oslogstring` | `0x1048` | `0x1002` | **`-0x46`** |
+| `__TEXT.__text` | `0x6d34` | `0x6d1c` | **`-0x18`** |
+| `__TEXT.__gcc_except_tab` | `0x688` | `0x690` | **`+0x8`** |
+| `__TEXT.__cstring` | `0x39e` | `0x39f` | **`+0x1`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x6d34
-+  __TEXT.__text: 0x6d1c
-   __TEXT.__objc_methlist: 0x6c8
--  __TEXT.__const: 0x378
--  __TEXT.__gcc_except_tab: 0x688
--  __TEXT.__oslogstring: 0x1048
--  __TEXT.__cstring: 0x39e
-+  __TEXT.__const: 0x30a
-+  __TEXT.__gcc_except_tab: 0x690
-+  __TEXT.__oslogstring: 0x1002
-+  __TEXT.__cstring: 0x39f
-   __TEXT.__unwind_info: 0x2c8
-   __TEXT.__eh_frame: 0x38
-   __TEXT.__objc_stubs: 0x0
+-111.0.0.0.0
++114.0.0.0.0
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 215
--  Symbols:   669
-+  Symbols:   670
-   CStrings:  148
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+-  Symbols:   391
++  Symbols:   392
 Symbols:
 + GCC_except_table110
 + GCC_except_table112
@@ -133,5 +110,4 @@ CStrings:
 - "ExtractPointCallback: ext_requests is full, increase AlgConfig.StreamingParserBufferSize.\n"
 - "Grappa-8"
 - "SensingAlgsNovaHost-111"
-
 ```

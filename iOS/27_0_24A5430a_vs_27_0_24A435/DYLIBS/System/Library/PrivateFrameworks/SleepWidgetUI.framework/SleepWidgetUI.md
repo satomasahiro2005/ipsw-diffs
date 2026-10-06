@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SleepWidgetUI.framework/SleepWidgetUI`
 
-```diff
+### Section Size Changes
 
- 7027.0.72.2.7
--  __TEXT.__text: 0x74f78
-+  __TEXT.__text: 0x74f80
-   __TEXT.__const: 0x3f64
-   __TEXT.__constg_swiftt: 0x16f0
-   __TEXT.__swift5_typeref: 0x1a74
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x74f78` | `0x74f80` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2aa7eb4e8 -> sub_2ab5b44e8 : 3144 -> 3152
+~ sub_2aa6d74e8 -> sub_2ab49e4e8 : 3144 -> 3152
 ```

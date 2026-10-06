@@ -2,39 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/LocalAuthenticationPreboard.framework/LocalAuthenticationPreboard`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4e84` | `0x5338` | **`+0x4b4`** |
+| `__TEXT.__cstring` | `0x55b` | `0x5eb` | **`+0x90`** |
+| `__DATA_CONST.__const` | `0x40` | `0x50` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -2319.0.46.0.0
--  __TEXT.__text: 0x4e84
 +2319.0.63.0.0
-+  __TEXT.__text: 0x5338
-   __TEXT.__objc_methlist: 0x334
-   __TEXT.__const: 0x378
--  __TEXT.__cstring: 0x55b
-+  __TEXT.__cstring: 0x5eb
-   __TEXT.__swift5_typeref: 0x13e
-   __TEXT.__constg_swiftt: 0x108
-   __TEXT.__swift5_fieldmd: 0x4c
 
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x40
-+  __DATA_CONST.__const: 0x50
-   __DATA_CONST.__objc_classlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 179
--  Symbols:   575
+-  Symbols:   553
 -  CStrings:  38
 +  Functions: 185
-+  Symbols:   586
++  Symbols:   564
 +  CStrings:  42
- 
 Symbols:
 + _$s27LocalAuthenticationPreboard16LocalizedStringsO20soundEnrollmentTableSSvau
 + _$s27LocalAuthenticationPreboard16LocalizedStringsO20soundEnrollmentTableSSvgZ

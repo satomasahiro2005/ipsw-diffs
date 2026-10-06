@@ -2,23 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/TextToSpeech.framework/TextToSpeech`
 
-```diff
+### Section Size Changes
 
- 723.3.0.0.0
--  __TEXT.__text: 0x34456c
-+  __TEXT.__text: 0x3446d8
-   __TEXT.__objc_methlist: 0x3ca8
-   __TEXT.__const: 0x3f8a9
-   __TEXT.__dlopen_cstrs: 0x150
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x34456c` | `0x3446d8` | **`+0x16c`** |
+| `__TEXT.__unwind_info` | `0xc990` | `0xc998` | **`+0x8`** |
 
-   __TEXT.__swift5_mpenum: 0x13c
-   __TEXT.__gcc_except_tab: 0x1e24
-   __TEXT.__ustring: 0x2c6
--  __TEXT.__unwind_info: 0xc990
-+  __TEXT.__unwind_info: 0xc998
-   __TEXT.__eh_frame: 0x17028
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+### Other Changes
+
+```text
 Functions:
 ~ sub_1a967033c -> sub_1a988133c : 464 -> 452
 ~ sub_1a9670854 -> sub_1a9881848 : 464 -> 452

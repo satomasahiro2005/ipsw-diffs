@@ -2,133 +2,62 @@
 
 > `/System/Library/Frameworks/Vision.framework/Vision`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x66d718` | `0x692b20` | **`+0x25408`** |
+| `__DATA.__bss` | `0xa3248` | `0xa2358` | **`-0xef0`** |
+| `__TEXT.__const` | `0x728a0` | `0x71ff0` | **`-0x8b0`** |
+| `__TEXT.__oslogstring` | `0x1ef7` | `0x2787` | **`+0x890`** |
+| `__AUTH_CONST.__const` | `0x30790` | `0x302a0` | **`-0x4f0`** |
+| `__TEXT.__cstring` | `0x3aa25` | `0x3a555` | **`-0x4d0`** |
+| `__AUTH.__data` | `0x17090` | `0x16e10` | **`-0x280`** |
+| `__TEXT.__unwind_info` | `0x20530` | `0x20338` | **`-0x1f8`** |
+| `__TEXT.__swift5_typeref` | `0x1a71a` | `0x1a55c` | **`-0x1be`** |
+| `__TEXT.__swift5_reflstr` | `0xd6bd` | `0xd50d` | **`-0x1b0`** |
+| `__TEXT.__swift5_fieldmd` | `0xf698` | `0xf510` | **`-0x188`** |
+| `__TEXT.__eh_frame` | `0x18b64` | `0x18a24` | **`-0x140`** |
+| `__TEXT.__constg_swiftt` | `0xfefc` | `0xfdc0` | **`-0x13c`** |
+| `__TEXT.__gcc_except_tab` | `0x377b8` | `0x378d8` | **`+0x120`** |
+| `__AUTH.__objc_data` | `0xac50` | `0xad68` | **`+0x118`** |
+| `__DATA_DIRTY.__objc_data` | `0x3700` | `0x35e8` | **`-0x118`** |
+| `__AUTH_CONST.__cfstring` | `0x197e0` | `0x198e0` | **`+0x100`** |
+| `__DATA.__data` | `0x10240` | `0x10148` | **`-0xf8`** |
+| `__DATA_CONST.__got` | `0x1d20` | `0x1df8` | **`+0xd8`** |
+| `__AUTH_CONST.__objc_const` | `0x33a00` | `0x33948` | **`-0xb8`** |
+| `__TEXT.__swift5_assocty` | `0x33a0` | `0x3310` | **`-0x90`** |
+| `__DATA_CONST.__const` | `0x66c0` | `0x6640` | **`-0x80`** |
+| `__TEXT.__swift5_proto` | `0x5468` | `0x53e8` | **`-0x80`** |
+| `__TEXT.__swift5_types` | `0x185c` | `0x1828` | **`-0x34`** |
+| `__TEXT.__swift_as_entry` | `0xc28` | `0xbf4` | **`-0x34`** |
+| `__AUTH_CONST.__auth_got` | `0x2f28` | `0x2ef8` | **`-0x30`** |
+| `__AUTH_CONST.__objc_intobj` | `0x1080` | `0x10b0` | **`+0x30`** |
+| `__TEXT.__swift_as_ret` | `0xb8c` | `0xb60` | **`-0x2c`** |
+| `__TEXT.__swift5_capture` | `0x1cf8` | `0x1cd8` | **`-0x20`** |
+| `__TEXT.__swift5_builtin` | `0x49c` | `0x488` | **`-0x14`** |
+| `__TEXT.__objc_methlist` | `0x19708` | `0x19718` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x5c8` | `0x5b8` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x1888` | `0x1880` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8940` | `0x8938` | **`-0x8`** |
+| `__DATA_DIRTY.__bss` | `0x124` | `0x12c` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x70` | `0x68` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x66d718
--  __TEXT.__objc_methlist: 0x19708
--  __TEXT.__const: 0x728a0
-+  __TEXT.__text: 0x692b20
-+  __TEXT.__objc_methlist: 0x19718
-+  __TEXT.__const: 0x71ff0
-   __TEXT.__dlopen_cstrs: 0x474
--  __TEXT.__cstring: 0x3aa25
--  __TEXT.__swift5_typeref: 0x1a71a
--  __TEXT.__oslogstring: 0x1ef7
--  __TEXT.__constg_swiftt: 0xfefc
--  __TEXT.__swift5_fieldmd: 0xf698
--  __TEXT.__swift5_proto: 0x5468
--  __TEXT.__swift5_types: 0x185c
--  __TEXT.__swift5_reflstr: 0xd6bd
--  __TEXT.__swift5_assocty: 0x33a0
--  __TEXT.__swift5_builtin: 0x49c
--  __TEXT.__swift_as_entry: 0xc28
--  __TEXT.__swift_as_ret: 0xb8c
--  __TEXT.__swift_as_cont: 0x5c8
--  __TEXT.__swift5_capture: 0x1cf8
-+  __TEXT.__cstring: 0x3a555
-+  __TEXT.__swift5_typeref: 0x1a55c
-+  __TEXT.__oslogstring: 0x2787
-+  __TEXT.__constg_swiftt: 0xfdc0
-+  __TEXT.__swift5_fieldmd: 0xf510
-+  __TEXT.__swift5_proto: 0x53e8
-+  __TEXT.__swift5_types: 0x1828
-+  __TEXT.__swift5_reflstr: 0xd50d
-+  __TEXT.__swift5_assocty: 0x3310
-+  __TEXT.__swift5_builtin: 0x488
-+  __TEXT.__swift_as_entry: 0xbf4
-+  __TEXT.__swift_as_ret: 0xb60
-+  __TEXT.__swift_as_cont: 0x5b8
-+  __TEXT.__swift5_capture: 0x1cd8
-   __TEXT.__swift5_protos: 0x190
--  __TEXT.__swift5_mpenum: 0x70
--  __TEXT.__gcc_except_tab: 0x377b8
--  __TEXT.__unwind_info: 0x20530
--  __TEXT.__eh_frame: 0x18b64
-+  __TEXT.__swift5_mpenum: 0x68
-+  __TEXT.__gcc_except_tab: 0x378d8
-+  __TEXT.__unwind_info: 0x20338
-+  __TEXT.__eh_frame: 0x18a24
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x66c0
--  __DATA_CONST.__objc_classlist: 0x1888
-+  __DATA_CONST.__const: 0x6640
-+  __DATA_CONST.__objc_classlist: 0x1880
-   __DATA_CONST.__objc_catlist: 0xb0
-   __DATA_CONST.__objc_protolist: 0x240
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x18
--  __DATA_CONST.__objc_selrefs: 0x8940
-+  __DATA_CONST.__objc_selrefs: 0x8938
-   __DATA_CONST.__objc_protorefs: 0x70
-   __DATA_CONST.__objc_superrefs: 0x1178
-   __DATA_CONST.__objc_arraydata: 0x9e8
--  __DATA_CONST.__got: 0x1d20
--  __AUTH_CONST.__const: 0x30790
--  __AUTH_CONST.__cfstring: 0x197e0
--  __AUTH_CONST.__objc_const: 0x33a00
-+  __DATA_CONST.__got: 0x1df8
-+  __AUTH_CONST.__const: 0x302a0
-+  __AUTH_CONST.__cfstring: 0x198e0
-+  __AUTH_CONST.__objc_const: 0x33948
-   __AUTH_CONST.__weak_auth_got: 0x38
--  __AUTH_CONST.__objc_intobj: 0x1080
-+  __AUTH_CONST.__objc_intobj: 0x10b0
-   __AUTH_CONST.__objc_arrayobj: 0x2e8
-   __AUTH_CONST.__objc_floatobj: 0x2f0
-   __AUTH_CONST.__objc_doubleobj: 0x120
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x2f28
--  __AUTH.__objc_data: 0xac50
--  __AUTH.__data: 0x17090
-+  __AUTH_CONST.__auth_got: 0x2ef8
-+  __AUTH.__objc_data: 0xad68
-+  __AUTH.__data: 0x16e10
-   __DATA.__objc_ivar: 0x16d0
--  __DATA.__data: 0x10240
--  __DATA.__bss: 0xa3248
-+  __DATA.__data: 0x10148
-+  __DATA.__bss: 0xa2358
-   __DATA.__common: 0x598
--  __DATA_DIRTY.__objc_data: 0x3700
-+  __DATA_DIRTY.__objc_data: 0x35e8
-   __DATA_DIRTY.__data: 0x10
--  __DATA_DIRTY.__bss: 0x124
-+  __DATA_DIRTY.__bss: 0x12c
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+-10.0.34.0.0
++10.0.37.0.0
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
 -  - /usr/lib/swift/libswift_DarwinFoundation2.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 35552
--  Symbols:   50081
--  CStrings:  9418
+-  Symbols:   33715
+-  CStrings:  6155
 +  Functions: 35341
-+  Symbols:   50022
-+  CStrings:  9444
- 
-Sections:
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __DATA.__common : content changed
++  Symbols:   33668
++  CStrings:  6173
 Symbols:
 + -[VNANSTPromptBasedSegmentationDetector _createSubregionViewOfScribbleBuffer:regionOfInterest:imageWidth:imageHeight:error:]
 + GCC_except_table10003
@@ -820,8 +749,6 @@ Symbols:
 + ___swift_exist.box.addr_destructor.129Tm
 + ___swift_exist.box.addr_destructor.141Tm
 + ___swift_exist.box.addr_destructor.51Tm
-+ _objc_msgSend$_createSubregionViewOfScribbleBuffer:regionOfInterest:imageWidth:imageHeight:error:
-+ _objc_msgSend$inputImageDescriptor
 + _swift_deallocUninitializedObject
 + _symbolic ___________Sgt 6Vision36GenerateIterativeSegmentationRequestC AA22PixelBufferObservationV
 - GCC_except_table10009
@@ -1532,9 +1459,6 @@ Symbols:
 - _associated conformance 6Vision41GenerateSelectedObjectSegmentationRequestVSHAASQ
 - _fflush
 - _keypath_get_selector_fractionCompleted
-- _objc_msgSend$downloadAssetWithCompletionHandler:
-- _objc_msgSend$fileHandleWithStandardError
-- _objc_msgSend$fractionCompleted
 - _symbolic ScSy_____G 6Vision31DownloadableAssetsRequestStatusO
 - _symbolic Sd
 - _symbolic So10NSProgressC
@@ -1671,5 +1595,4 @@ CStrings:
 - "generateSelectedObjectSegmentationRequest"
 - "not supported yet "
 - "with faceObservations: "
-
 ```

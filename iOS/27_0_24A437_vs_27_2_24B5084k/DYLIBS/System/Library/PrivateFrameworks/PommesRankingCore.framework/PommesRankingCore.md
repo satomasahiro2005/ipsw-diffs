@@ -2,83 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/PommesRankingCore.framework/PommesRankingCore`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x31098` | `0x20e70` | **`-0x10228`** |
+| `__DATA.__common` | `0x20` | `0x101c8` | **`+0x101a8`** |
+| `__TEXT.__const` | `0x29a4` | `0xcd4` | **`-0x1cd0`** |
+| `__TEXT.__text` | `0x81b40` | `0x7ff84` | **`-0x1bbc`** |
+| `__DATA_CONST.__const` | `0x1c88` | `0x1030` | **`-0xc58`** |
+| `__TEXT.__gcc_except_tab` | `0x7ab0` | `0x7238` | **`-0x878`** |
+| `__TEXT.__cstring` | `0x707f` | `0x6cb8` | **`-0x3c7`** |
+| `__TEXT.__unwind_info` | `0x1878` | `0x14f8` | **`-0x380`** |
+| `__TEXT.__oslogstring` | `0x9da3` | `0x9e65` | **`+0xc2`** |
+| `__AUTH_CONST.__auth_got` | `0x630` | `0x668` | **`+0x38`** |
+| `__AUTH_CONST.__const` | `0xee0` | `0xec0` | **`-0x20`** |
+| `__AUTH_CONST.__objc_const` | `0xf20` | `0xf40` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x180` | `0x1a0` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x120` | `0x108` | **`-0x18`** |
+| `__DATA_CONST.__weak_got` | `—` | `0x10` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x700` | `0x710` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x788` | `0x790` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0xa0` | `0xa4` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__ustring`
+
+### Other Changes
 
 ```diff
 
 -2459.105.0.0.0
--  __TEXT.__text: 0x81264
--  __TEXT.__objc_methlist: 0x700
--  __TEXT.__const: 0x29a4
--  __TEXT.__gcc_except_tab: 0x7ab0
--  __TEXT.__cstring: 0x707f
--  __TEXT.__oslogstring: 0x9da3
--  __TEXT.__dlopen_cstrs: 0x150
 +5.0.0.0.0
-+  __TEXT.__text: 0x7f7cc
-+  __TEXT.__objc_methlist: 0x710
-+  __TEXT.__const: 0xcd4
-+  __TEXT.__gcc_except_tab: 0x7238
-+  __TEXT.__cstring: 0x6cb8
-+  __TEXT.__oslogstring: 0x9e65
-   __TEXT.__ustring: 0x114c
--  __TEXT.__unwind_info: 0x1bc8
-+  __TEXT.__dlopen_cstrs: 0x150
-+  __TEXT.__unwind_info: 0x1800
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1c88
-+  __DATA_CONST.__const: 0x1030
-   __DATA_CONST.__objc_classlist: 0x68
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x788
-+  __DATA_CONST.__weak_got: 0x10
-+  __DATA_CONST.__objc_selrefs: 0x790
-   __DATA_CONST.__objc_superrefs: 0x58
-   __DATA_CONST.__objc_arraydata: 0x1e8
--  __DATA_CONST.__got: 0x180
--  __AUTH_CONST.__const: 0xee0
-+  __DATA_CONST.__got: 0x1a0
-+  __AUTH_CONST.__const: 0xec0
-   __AUTH_CONST.__cfstring: 0x7300
--  __AUTH_CONST.__objc_const: 0xf20
-+  __AUTH_CONST.__objc_const: 0xf40
-   __AUTH_CONST.__weak_auth_got: 0x20
--  __AUTH_CONST.__objc_intobj: 0x120
--  __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__objc_floatobj: 0x10
-+  __AUTH_CONST.__objc_intobj: 0x108
-   __AUTH_CONST.__objc_doubleobj: 0x1b0
-   __AUTH_CONST.__objc_dictobj: 0x50
--  __AUTH_CONST.__auth_got: 0x630
-+  __AUTH_CONST.__objc_arrayobj: 0x18
-+  __AUTH_CONST.__objc_floatobj: 0x10
-+  __AUTH_CONST.__auth_got: 0x668
-   __AUTH.__objc_data: 0x410
--  __DATA.__objc_ivar: 0xa0
-+  __DATA.__objc_ivar: 0xa4
-   __DATA.__data: 0xc0
--  __DATA.__common: 0x20
-+  __DATA.__common: 0x101c8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/MetadataUtilities.framework/MetadataUtilities
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1136
--  Symbols:   2350
+-  Symbols:   2152
 -  CStrings:  2643
 +  Functions: 899
-+  Symbols:   1801
++  Symbols:   1602
 +  CStrings:  2442
- 
 Symbols:
 + -[PRQuerySynonymsProvider synonymsForTerm:domain:]
 + GCC_except_table103
@@ -253,7 +216,6 @@ Symbols:
 + ___cxa_end_catch
 + ___cxa_free_exception
 + ___cxa_throw
-+ _objc_msgSend$synonymsForTerm:domain:
 - GCC_except_table102
 - GCC_except_table104
 - GCC_except_table105

@@ -2,52 +2,35 @@
 
 > `/System/Library/SubFrameworks/CoreAICompiler.framework/Frameworks/libODIECompiler.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xca4ae4` | `0xc64ac8` | **`-0x4001c`** |
+| `__TEXT.__cstring` | `0xb1773` | `0xab4a7` | **`-0x62cc`** |
+| `__DATA.__bss` | `0x5840` | `0x4430` | **`-0x1410`** |
+| `__AUTH_CONST.__const` | `0x5e0d0` | `0x5dae8` | **`-0x5e8`** |
+| `__TEXT.__unwind_info` | `0x2c948` | `0x2cf10` | **`+0x5c8`** |
+| `__DATA_CONST.__const` | `0x28a0` | `0x27b8` | **`-0xe8`** |
+| `__DATA.__data` | `0x42a8` | `0x4310` | **`+0x68`** |
+| `__TEXT.__const` | `0x2a58` | `0x2a0c` | **`-0x4c`** |
+| `__DATA.__common` | `0x2688` | `0x2660` | **`-0x28`** |
+| `__AUTH_CONST.__auth_got` | `0x710` | `0x6f8` | **`-0x18`** |
+| `__AUTH.__data` | `0x60b8` | `0x60b0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xca4ae4
-+  __TEXT.__text: 0xc64ac8
-   __TEXT.__init_offsets: 0x30
--  __TEXT.__const: 0x2a58
-+  __TEXT.__const: 0x2a0c
-   __TEXT.__oslogstring: 0x3b
--  __TEXT.__cstring: 0xb1773
--  __TEXT.__unwind_info: 0x2c948
-+  __TEXT.__cstring: 0xab4a7
-+  __TEXT.__unwind_info: 0x2cf10
-   __TEXT.__eh_frame: 0x128
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x28a0
-+  __DATA_CONST.__const: 0x27b8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x5e0d0
-+  __AUTH_CONST.__const: 0x5dae8
-   __AUTH_CONST.__weak_auth_got: 0x48
--  __AUTH_CONST.__auth_got: 0x710
--  __AUTH.__data: 0x60b8
-+  __AUTH_CONST.__auth_got: 0x6f8
-+  __AUTH.__data: 0x60b0
-   __AUTH.__thread_vars: 0x108
-   __AUTH.__thread_bss: 0x230
--  __DATA.__data: 0x42a8
--  __DATA.__bss: 0x5840
--  __DATA.__common: 0x2688
-+  __DATA.__data: 0x4310
-+  __DATA.__bss: 0x4430
-+  __DATA.__common: 0x2660
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
+-3600.73.1.0.0
++3600.75.3.0.0
+
 -  Functions: 74661
--  Symbols:   160786
+-  Symbols:   83160
 -  CStrings:  12168
 +  Functions: 74707
-+  Symbols:   160799
++  Symbols:   83190
 +  CStrings:  11434
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__eh_frame : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__thread_vars : content changed
 Symbols:
 + __ZGVZN4mlir6detail14TypeIDResolverINS_4ODIE8Compiler4Exec32ConditionallyEscapingOpInterfaceEvE13resolveTypeIDEvE2id
 + __ZGVZN4mlir6detail14TypeIDResolverINS_6coreai19KernelTypeInference5TraitIZNS_6TypeID3getIS4_EES5_vE5EmptyEEvE13resolveTypeIDEvE2id
@@ -4256,5 +4239,4 @@ CStrings:
 - "while_loop_body_graph"
 - "while_loop_cond_graph"
 - "window_size"
-
 ```

@@ -2,64 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/FitnessAwards.framework/FitnessAwards`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x85274` | `0x856fc` | **`+0x488`** |
+| `__TEXT.__swift5_typeref` | `0x3e38` | `0x3f64` | **`+0x12c`** |
+| `__DATA.__data` | `0x1ef0` | `0x1f50` | **`+0x60`** |
+| `__AUTH_CONST.__const` | `0x5bd0` | `0x5bf8` | **`+0x28`** |
+| `__DATA_DIRTY.__data` | `0xfe8` | `0xfc0` | **`-0x28`** |
+| `__TEXT.__const` | `0xd1e4` | `0xd204` | **`+0x20`** |
+| `__TEXT.__swift5_capture` | `0x498` | `0x4a8` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xb50` | `0xb58` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x18` | `0x10` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x2718` | `0x2720` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.146.1.4
--  __TEXT.__text: 0x7fb0c
--  __TEXT.__const: 0xd1e4
 +2027.1.50.0.1
-+  __TEXT.__text: 0x7ff6c
-+  __TEXT.__const: 0xd204
-   __TEXT.__constg_swiftt: 0x2008
--  __TEXT.__swift5_typeref: 0x3e38
-+  __TEXT.__swift5_typeref: 0x3f64
-   __TEXT.__swift5_builtin: 0xc8
-   __TEXT.__swift5_reflstr: 0x166a
-   __TEXT.__swift5_fieldmd: 0x23d4
 
-   __TEXT.__swift_as_ret: 0xf0
-   __TEXT.__swift_as_cont: 0x180
-   __TEXT.__swift5_proto: 0xb88
--  __TEXT.__swift5_capture: 0x498
-+  __TEXT.__swift5_capture: 0x4a8
-   __TEXT.__swift5_assocty: 0x258
-   __TEXT.__oslogstring: 0x12c2
-   __TEXT.__swift5_mpenum: 0x58
--  __TEXT.__unwind_info: 0x3150
-+  __TEXT.__unwind_info: 0x3158
-   __TEXT.__eh_frame: 0x35c8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__const: 0xf8
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x18
-+  __DATA_CONST.__objc_selrefs: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x5bd0
-+  __AUTH_CONST.__const: 0x5bf8
-   __AUTH_CONST.__objc_const: 0x120
--  __AUTH_CONST.__auth_got: 0xb50
-+  __AUTH_CONST.__auth_got: 0xb58
-   __AUTH.__data: 0x478
--  __DATA.__data: 0x1ef0
--  __DATA_DIRTY.__data: 0xfe8
-+  __DATA.__data: 0x1f50
-+  __DATA_DIRTY.__data: 0xfc0
-   __DATA_DIRTY.__bss: 0x4d00
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3320
--  Symbols:   1410
+-  Symbols:   1407
 +  Functions: 3323
-+  Symbols:   1414
-   CStrings:  139
- 
++  Symbols:   1412
 Symbols:
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAA15ModifiedContentVyAA5GroupVyAA012_ConditionalI0VyALyAcAE8redacted6reasonQrAA16RedactionReasonsV_tFQOyAA4TextV_Qo_011FitnessCoreB0014LocalFileImageC0VyALyALyAsHyAA0U0VAA18_AspectRatioLayoutVGGARGGGAA5ColorVGGAA25_AppearanceActionModifierVG_0Q6Awards05AwardU9LoadStateOSgQo_HO
 + _objc_retain_x8
@@ -77,7 +45,6 @@ Symbols:
 + _symbolic _____y_____y_____y______Qo______y__________GGAC_G 7SwiftUI19_ConditionalContentV7StorageO AC AA4ViewPAAE8redacted6reasonQrAA16RedactionReasonsV_tFQO AA4TextV AA08ModifiedD0V AA5ImageV AA18_AspectRatioLayoutV
 + _symbolic _____y_____y_____y_____yACy_____y______Qo______yACyACyAeAy__________GGADGGG_____GG_____G______SgQo_ 7SwiftUI4ViewPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQO AA15ModifiedContentV AA5GroupV AA012_ConditionalI0V AcAE8redacted6reasonQrAA16RedactionReasonsV_tFQO AA4TextV 011FitnessCoreB0014LocalFileImageC0V AA0U0V AA18_AspectRatioLayoutV AA5ColorV AA25_AppearanceActionModifierV 0Q6Awards05AwardU9LoadStateO
 - _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAA15ModifiedContentVyAA5GroupVyAA012_ConditionalI0VyALyAcAE8redacted6reasonQrAA16RedactionReasonsV_tFQOyAA4TextV_Qo_ALyAHyAA5ImageVAA18_AspectRatioLayoutVGARGGAA5ColorVGGAA25_AppearanceActionModifierVG_13FitnessAwards05AwardQ9LoadStateOSgQo_HO
-- _objc_msgSend$initWithContentsOfFile:
 - _objc_retain_x19
 - _symbolic _____yAAy_____y______Qo_AAy_____y__________GABGG_____G 7SwiftUI19_ConditionalContentV AA4ViewPAAE8redacted6reasonQrAA16RedactionReasonsV_tFQO AA4TextV AA08ModifiedD0V AA5ImageV AA18_AspectRatioLayoutV AA5ColorV
 - _symbolic _____y_____yABy_____y______Qo_ABy_____y__________GACGG_____GG 7SwiftUI5GroupV AA19_ConditionalContentV AA4ViewPAAE8redacted6reasonQrAA16RedactionReasonsV_tFQO AA4TextV AA08ModifiedE0V AA5ImageV AA18_AspectRatioLayoutV AA5ColorV

@@ -2,58 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/32023/Libraries/libGPUCompilerImpl.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x57c578` | `0x58e0e0` | **`+0x11b68`** |
+| `__TEXT.__const` | `0x2c7c58` | `0x2cd378` | **`+0x5720`** |
+| `__TEXT.__cstring` | `0x5e42a2` | `0x5e9194` | **`+0x4ef2`** |
+| `__DATA_CONST.__const` | `0x109a08` | `0x10a590` | **`+0xb88`** |
+| `__DATA_DIRTY.__bss` | `0x2018` | `0x2340` | **`+0x328`** |
+| `__DATA.__bss` | `0x370` | `0x51` | **`-0x31f`** |
+| `__AUTH_CONST.__const` | `0xb350` | `0xb5a8` | **`+0x258`** |
+| `__TEXT.__unwind_info` | `0x5f60` | `0x5fc8` | **`+0x68`** |
+| `__AUTH_CONST.__auth_got` | `0x2970` | `0x2998` | **`+0x28`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x57c578
-+  __TEXT.__text: 0x58e0e0
-   __TEXT.__init_offsets: 0x50
--  __TEXT.__const: 0x2c7c58
--  __TEXT.__cstring: 0x5e42a2
-+  __TEXT.__const: 0x2cd378
-+  __TEXT.__cstring: 0x5e9194
-   __TEXT.__oslogstring: 0x47
--  __TEXT.__unwind_info: 0x5f60
-+  __TEXT.__unwind_info: 0x5fc8
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x109a08
-+  __DATA_CONST.__const: 0x10a590
-   __DATA_CONST.__weak_got: 0x178
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xb350
-+  __AUTH_CONST.__const: 0xb5a8
-   __AUTH_CONST.__weak_auth_got: 0x140
--  __AUTH_CONST.__auth_got: 0x2970
-+  __AUTH_CONST.__auth_got: 0x2998
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x18
-   __DATA.__data: 0x568
--  __DATA.__bss: 0x370
-+  __DATA.__bss: 0x51
-   __DATA.__common: 0xd
-   __DATA_DIRTY.__data: 0x50
--  __DATA_DIRTY.__bss: 0x2018
-+  __DATA_DIRTY.__bss: 0x2340
-   __DATA_DIRTY.__common: 0x388
-   - /System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/32023/Libraries/libLLVM.dylib
-   - /System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/32023/Libraries/libllvm-flatbuffers.dylib
+-32023.917.2.0.0
++32023.920.0.0.0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libarchive.2.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 9476
 -  Symbols:   3757
 -  CStrings:  27934
 +  Functions: 9530
 +  Symbols:   3765
 +  CStrings:  28342
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
 Symbols:
 + __ZN4llvm22InferAddressSpacesPass3runERNS_8FunctionERNS_15AnalysisManagerIS1_JEEE
 + __ZN4llvm22InferAddressSpacesPassC1Ev
@@ -482,5 +457,4 @@ CStrings:
 - "32023.917"
 - "AIR-NT 32023.917"
 - "AIR-PACK 32023.917 (metalfe-32023.917.2)"
-
 ```

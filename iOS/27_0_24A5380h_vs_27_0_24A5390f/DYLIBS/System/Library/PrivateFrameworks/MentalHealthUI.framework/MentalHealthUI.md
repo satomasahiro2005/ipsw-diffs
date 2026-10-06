@@ -2,84 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/MentalHealthUI.framework/MentalHealthUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x170ff4` | `0x1715d0` | **`+0x5dc`** |
+| `__DATA.__data` | `0x6280` | `0x62a0` | **`+0x20`** |
+| `__TEXT.__const` | `0x30304` | `0x30314` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x1218` | `0x1220` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x4430` | `0x4428` | **`-0x8`** |
+
+### Same-size Content Changes
+
 - `__TEXT.__swift5_reflstr`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__oslogstring`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist2`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__objc_stublist`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+
+### Other Changes
 
 ```diff
 
 -7027.0.64.0.0
--  __TEXT.__text: 0x170ff4
 +7027.0.67.2.1
-+  __TEXT.__text: 0x1715d0
-   __TEXT.__objc_methlist: 0x1600
--  __TEXT.__const: 0x30304
-+  __TEXT.__const: 0x30314
-   __TEXT.__cstring: 0x4242
-   __TEXT.__swift5_typeref: 0x4b1e
--  __TEXT.__swift5_capture: 0x1218
-+  __TEXT.__swift5_capture: 0x1220
-   __TEXT.__constg_swiftt: 0x3b94
-   __TEXT.__swift5_reflstr: 0x38bc
-   __TEXT.__swift5_fieldmd: 0x37b8
 
-   __TEXT.__swift_as_cont: 0x130
-   __TEXT.__swift5_protos: 0x18
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x4430
-+  __TEXT.__unwind_info: 0x4428
-   __TEXT.__eh_frame: 0x2358
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __AUTH.__objc_data: 0x1460
-   __AUTH.__data: 0x4070
-   __DATA.__objc_ivar: 0x30
--  __DATA.__data: 0x6280
-+  __DATA.__data: 0x62a0
-   __DATA.__objc_stublist: 0x10
-   __DATA.__bss: 0x8e68
-   __DATA.__common: 0xe0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7046
 +  Functions: 7048
-   Symbols:   2145
-   CStrings:  523
- 
 Symbols:
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE5sheet11isPresented9onDismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAA15ModifiedContentVy012MentalHealthB020AdaptiveColumnLayoutVyAMyAMyAN23ValenceSelectionSummaryVAA08_PaddingQ0VGATGAA06ScrollC6ReaderVyAMyAA0C8ThatFitsVyAA05TupleL0VyAMyAMyAMyAA6VStackVyAN12LabelsPickerVGATGATGATG_AcAE15dynamicTypeSizeyQrqd__SXRd__AA15DynamicTypeSizeO5BoundRtd__lFQOyA8__s19PartialRangeThroughVyA11_GQo_QPGGAA30_EnvironmentKeyWritingModifierVyAA0vC5ProxyVSgGGGAN26StateOfMindEntryButtonTrayVyAMyAcAEA9_yQrqd__SXRd__A11_A13_RSlFQOyAN12ActionButtonVyAA4TextVG_A16_Qo_AA31AccessibilityAttachmentModifierVGGSgGAA19_BackgroundModifierVyAMyAA14LinearGradientVAA024_SafeAreaRegionsIgnoringQ0VGGG_AcAE011interactiveH8DisabledyQrSbFQOyAN19ShowAllLabelsPickerV_Qo_Qo_HO
 + _get_witness_table qd0__7SwiftUI4ViewHD5_AaBPAAE16keyframeAnimator12initialValue7trigger7content9keyframesQrqd___qd_0_qd_1_AA018PlaceholderContentC0VyxG_qd__tYbcqd_2_qd__ct0G0Qyd_2_Rsd__SQRd_0_AaBRd_1_AA9KeyframesRd_2_r2_lFQOyAA08ModifiedL0VyAA012SubscriptionC0Vy7Combine10PublishersO6Merge3Vy_AU3MapVy_So20NSNotificationCenterC10FoundationE9PublisherV12CoreGraphics7CGFloatVGA6_A6_GAcAE29navigationBarBackButtonHiddenyQrSbFQOyAPyAcAE23scrollDismissesKeyboardyQrAA27ScrollDismissesKeyboardModeVFQOy012MentalHealthB020AdaptiveColumnLayoutVyAPyAPyA12_23ValenceSelectionSummaryVAA14_PaddingLayoutVGA18_GAA06ScrollC6ReaderVyAcAE8onChange2of0F0_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAPyAA0C8ThatFitsVyAA05TupleL0VyAPyAPyAPyAPyA12_22DomainsAndContextEntryVA18_GA18_GA18_GA18_G_AcAE15dynamicTypeSizeyQrqd__SXRd__AA15DynamicTypeSizeO5BoundRtd__lFQOyA35__s19PartialRangeThroughVyA38_GQo_QPGGAA30_EnvironmentKeyWritingModifierVyAA06ScrollC5ProxyVSgGG_SbQo_GA12_26StateOfMindEntryButtonTrayVyAPyAcAEA36_yQrqd__SXRd__A38_A40_RSlFQOyA12_12ActionButtonVyAA4TextVG_A43_Qo_AA31AccessibilityAttachmentModifierVGGSgG_Qo_AA19_BackgroundModifierVyAPyAA14LinearGradientVAA30_SafeAreaRegionsIgnoringLayoutVGGG_Qo_GAA23_GeometryActionModifierVySdGG_A12_25DomainsSelectionPhase_iOSV27ConfirmationAnimationValues33_B0C5318C757A98AB9342DBA9800F9755LLVSbAPyAJyA85_GAA16_OverlayModifierVyA12_012ConfirmationC0VGGAA0M7BuilderV17buildPartialBlock11accumulated4nextQrqd___qd_0_tALQyd__RszAaNRd__AaNRd_0_ALQyd_0_A103_RSr0_lFZQOyA90__A99_A100_A101_A102_Qrqd___qd_0_tA103_RszAaNRd__AaNRd_0_A104_A103_RSr0_lFZQOyA90__A99_A100_A101_A102_Qrqd___qd_0_tA103_RszAaNRd__AaNRd_0_A104_A103_RSr0_lFZQOyA90__A99_A100_A101_A102_Qrqd___qd_0_tA103_RszAaNRd__AaNRd_0_A104_A103_RSr0_lFZQOyA90__AA13KeyframeTrackVyA90_SdAA13CubicKeyframeVySdGGA106_yA90_SdAA013KeyframeTrackL7BuilderVA100_A101_A102_Qrqd___qd_0_tA103_RszAA013KeyframeTrackL0Rd__AAA113_Rd_0_A104_A103_RSr0_lFZQOySd_A109_A109_Qo_GQo_A106_yA90_SdA112_A100_A101_A102_Qrqd___qd_0_tA103_RszAAA113_Rd__AAA113_Rd_0_A104_A103_RSr0_lFZQOySd_AA14LinearKeyframeVySdGAA14SpringKeyframeVySdGQo_GQo_A115_Qo_A115_Qo_Qo_HO

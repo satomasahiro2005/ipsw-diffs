@@ -2,41 +2,23 @@
 
 > `/System/Library/PrivateFrameworks/CoreServicesInternal.framework/CoreServicesInternal`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__DATA_CONST.__const`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__lazy_load_got`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2e0dc` | `0x2e154` | **`+0x78`** |
+| `__TEXT.__oslogstring` | `0x20c1` | `0x20d1` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0xab0` | `0xaa8` | **`-0x8`** |
+
+### Other Changes
 
 ```diff
 
 -606.0.0.0.0
--  __TEXT.__text: 0x2e0dc
 +608.0.0.0.0
-+  __TEXT.__text: 0x2e154
-   __TEXT.__lazy_helpers: 0x9d8
-   __TEXT.__cstring: 0x1b72
-   __TEXT.__const: 0x5f8
--  __TEXT.__oslogstring: 0x20c1
--  __TEXT.__unwind_info: 0xab0
-+  __TEXT.__oslogstring: 0x20d1
-+  __TEXT.__unwind_info: 0xaa8
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x2a8
-   __DATA_CONST.__got: 0x0
 
-   - /System/Library/Frameworks/Security.framework/Security
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 654
 +  Functions: 652
-   Symbols:   1214
-   CStrings:  482
- 
 Functions:
 ~ _OUTLINED_FUNCTION_7 : 12 -> 20
 - _OUTLINED_FUNCTION_7

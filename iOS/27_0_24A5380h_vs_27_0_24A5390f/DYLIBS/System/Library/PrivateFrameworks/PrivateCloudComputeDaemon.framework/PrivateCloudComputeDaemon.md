@@ -2,124 +2,59 @@
 
 > `/System/Library/PrivateFrameworks/PrivateCloudComputeDaemon.framework/PrivateCloudComputeDaemon`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH.__objc_data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x256060` | `0x270d84` | **`+0x1ad24`** |
+| `__DATA.__bss` | `0xff90` | `0x11710` | **`+0x1780`** |
+| `__TEXT.__eh_frame` | `0x1198c` | `0x12a7c` | **`+0x10f0`** |
+| `__TEXT.__const` | `0x158b8` | `0x16958` | **`+0x10a0`** |
+| `__TEXT.__oslogstring` | `0x7729` | `0x7f39` | **`+0x810`** |
+| `__TEXT.__cstring` | `0x61b1` | `0x6891` | **`+0x6e0`** |
+| `__AUTH_CONST.__const` | `0x9e90` | `0xa558` | **`+0x6c8`** |
+| `__TEXT.__unwind_info` | `0x7558` | `0x7b00` | **`+0x5a8`** |
+| `__DATA.__data` | `0x2128` | `0x2638` | **`+0x510`** |
+| `__TEXT.__swift5_reflstr` | `0x63a8` | `0x6848` | **`+0x4a0`** |
+| `__TEXT.__constg_swiftt` | `0x55f0` | `0x5a6c` | **`+0x47c`** |
+| `__TEXT.__swift5_fieldmd` | `0x5a78` | `0x5e4c` | **`+0x3d4`** |
+| `__TEXT.__swift5_typeref` | `0x674c` | `0x6aa0` | **`+0x354`** |
+| `__AUTH.__data` | `0x11a8` | `0x1460` | **`+0x2b8`** |
+| `__TEXT.__swift_as_cont` | `0xbbc` | `0xce0` | **`+0x124`** |
+| `__AUTH_CONST.__auth_got` | `0x2530` | `0x2618` | **`+0xe8`** |
+| `__TEXT.__swift5_proto` | `0xd5c` | `0xe24` | **`+0xc8`** |
+| `__DATA_CONST.__got` | `0x1258` | `0x12e8` | **`+0x90`** |
+| `__DATA_DIRTY.__bss` | `0x9b00` | `0x9a80` | **`-0x80`** |
+| `__TEXT.__swift5_capture` | `0x119c` | `0x120c` | **`+0x70`** |
+| `__TEXT.__swift_as_ret` | `0x5e8` | `0x658` | **`+0x70`** |
+| `__TEXT.__swift_as_entry` | `0x554` | `0x5bc` | **`+0x68`** |
+| `__TEXT.__swift5_assocty` | `0x950` | `0x9a8` | **`+0x58`** |
+| `__TEXT.__swift5_builtin` | `0x118` | `0x154` | **`+0x3c`** |
+| `__DATA_CONST.__const` | `0x728` | `0x760` | **`+0x38`** |
+| `__DATA_DIRTY.__data` | `0x9550` | `0x9518` | **`-0x38`** |
+| `__TEXT.__swift5_types` | `0x518` | `0x544` | **`+0x2c`** |
+| `__TEXT.__swift5_mpenum` | `0x7c` | `0xa0` | **`+0x24`** |
+| `__AUTH_CONST.__objc_const` | `0x3de8` | `0x3e08` | **`+0x20`** |
+| `__TEXT.__swift5_protos` | `0xa4` | `0xb0` | **`+0xc`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3a8` | `0x3a0` | **`-0x8`** |
+
+### Other Changes
 
 ```diff
 
 -2570.0.12.0.0
--  __TEXT.__text: 0x256060
 +2570.0.25.502.2
-+  __TEXT.__text: 0x270d84
-   __TEXT.__objc_methlist: 0x3c8
--  __TEXT.__const: 0x158b8
--  __TEXT.__constg_swiftt: 0x55f0
--  __TEXT.__swift5_typeref: 0x674c
--  __TEXT.__swift5_reflstr: 0x63a8
--  __TEXT.__swift5_fieldmd: 0x5a78
--  __TEXT.__oslogstring: 0x7729
--  __TEXT.__cstring: 0x61b1
--  __TEXT.__swift5_builtin: 0x118
--  __TEXT.__swift5_assocty: 0x950
--  __TEXT.__swift5_proto: 0xd5c
--  __TEXT.__swift5_types: 0x518
--  __TEXT.__swift_as_entry: 0x554
--  __TEXT.__swift_as_ret: 0x5e8
--  __TEXT.__swift_as_cont: 0xbbc
--  __TEXT.__swift5_capture: 0x119c
--  __TEXT.__swift5_protos: 0xa4
--  __TEXT.__swift5_mpenum: 0x7c
--  __TEXT.__unwind_info: 0x7558
--  __TEXT.__eh_frame: 0x1198c
-+  __TEXT.__const: 0x16958
-+  __TEXT.__constg_swiftt: 0x5a6c
-+  __TEXT.__swift5_typeref: 0x6aa0
-+  __TEXT.__swift5_reflstr: 0x6848
-+  __TEXT.__swift5_fieldmd: 0x5e4c
-+  __TEXT.__oslogstring: 0x7f39
-+  __TEXT.__cstring: 0x6891
-+  __TEXT.__swift5_builtin: 0x154
-+  __TEXT.__swift5_assocty: 0x9a8
-+  __TEXT.__swift5_proto: 0xe24
-+  __TEXT.__swift5_types: 0x544
-+  __TEXT.__swift_as_entry: 0x5bc
-+  __TEXT.__swift_as_ret: 0x658
-+  __TEXT.__swift_as_cont: 0xce0
-+  __TEXT.__swift5_capture: 0x120c
-+  __TEXT.__swift5_protos: 0xb0
-+  __TEXT.__swift5_mpenum: 0xa0
-+  __TEXT.__unwind_info: 0x7b00
-+  __TEXT.__eh_frame: 0x12a7c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x728
-+  __DATA_CONST.__const: 0x760
-   __DATA_CONST.__objc_classlist: 0xf0
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3a8
-+  __DATA_CONST.__objc_selrefs: 0x3a0
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__got: 0x1258
--  __AUTH_CONST.__const: 0x9e90
--  __AUTH_CONST.__objc_const: 0x3de8
--  __AUTH_CONST.__auth_got: 0x2530
-+  __DATA_CONST.__got: 0x12e8
-+  __AUTH_CONST.__const: 0xa558
-+  __AUTH_CONST.__objc_const: 0x3e08
-+  __AUTH_CONST.__auth_got: 0x2618
-   __AUTH.__objc_data: 0xa0
--  __AUTH.__data: 0x11a8
--  __DATA.__data: 0x2128
--  __DATA.__bss: 0xff90
-+  __AUTH.__data: 0x1460
-+  __DATA.__data: 0x2638
-+  __DATA.__bss: 0x11710
-   __DATA.__common: 0x98
-   __DATA_DIRTY.__objc_data: 0x798
--  __DATA_DIRTY.__data: 0x9550
--  __DATA_DIRTY.__bss: 0x9b00
-+  __DATA_DIRTY.__data: 0x9518
-+  __DATA_DIRTY.__bss: 0x9a80
-   __DATA_DIRTY.__common: 0x258
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
 
-   - /System/Library/PrivateFrameworks/OSAnalytics.framework/OSAnalytics
-   - /System/Library/PrivateFrameworks/PrivateCloudCompute.framework/PrivateCloudCompute
-   - /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices
 +  - /System/Library/PrivateFrameworks/StorageContainersPrivate.framework/StorageContainersPrivate
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 
-   - /usr/lib/swift/libswiftObservation.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
-   - /usr/lib/swift/libswiftSynchronization.dylib
 +  - /usr/lib/swift/libswiftSystem.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9330
--  Symbols:   2546
+-  Symbols:   2476
 -  CStrings:  1155
 +  Functions: 9801
-+  Symbols:   2620
++  Symbols:   2551
 +  CStrings:  1222
- 
 Symbols:
 + ___swift_closure_destructor.197Tm
 + ___swift_closure_destructor.204Tm
@@ -176,8 +111,6 @@ Symbols:
 + _get_enum_tag_for_layout_string 25PrivateCloudComputeDaemon14TrustedRequestC10RunSubTask33_1C7F11F53338D1281DD85B9DDDA9E748LLOyxq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11__G
 + _getegid
 + _geteuid
-+ _objc_msgSend$generateTokenRequestWithQueue:completionHandler:
-+ _objc_msgSend$handleTokenResponse:withQueue:completionHandler:
 + _symbolic $s25PrivateCloudComputeDaemon28OneTimeTokenProviderProtocolP
 + _symbolic $s25PrivateCloudComputeDaemon29WaitlistTokenProviderProtocolP
 + _symbolic $s25PrivateCloudComputeDaemon31ReputationTokenProviderProtocolP
@@ -274,9 +207,6 @@ Symbols:
 - ___unnamed_4
 - _associated conformance 25PrivateCloudComputeDaemon20TokenProviderFactoryVyxq_q0_q1_GAA0efG8ProtocolAA0eF0AaEP_AA0efH0
 - _get_enum_tag_for_layout_string 25PrivateCloudComputeDaemon14TrustedRequestC10RunSubTask33_1C7F11F53338D1281DD85B9DDDA9E748LLOyxq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9__G
-- _objc_msgSend$fetchLinkedTokenPairWithQueue:completionHandler:
-- _objc_msgSend$initForKnownIssuerWithLongLivedTokenChallenge:oneTimeTokenChallenge:
-- _objc_msgSend$saveOneTimeTokenToCache:oneTimeTokenSalt:longLivedToken:
 - _symbolic 13TokenProvider_____Qz 25PrivateCloudComputeDaemon28TokenProviderFactoryProtocolP
 - _symbolic ScCy______A2At______pG 10Foundation4DataV s5ErrorP
 - _symbolic ScGy_____12ohttpContext______y_____y______________________________y__________G_______________y_____AKGAK___________G______pG6resulttG s6UInt64V s6ResultOsRi_zRi0_zrlE 25PrivateCloudComputeDaemon14TrustedRequestC021ControlledNodeSubtaskB033_1C7F11F53338D1281DD85B9DDDA9E748LLO AE22OutgoingUserDataWriterC AE08IncominguV6ReaderC AE17NWAsyncConnectionV AE22LegacyAttestationStoreC AE24DeferredAttestationStoreC AE19AttestationVerifierV 0cdE018FeatureFlagCheckerV 0D11Attestation12MuxValidatorV AE19DeferredRateLimiterC AE10SystemInfoV AE13TokenProviderC AE0C25AccessTokenFetcherWrapperC 26AppleIntelligenceReporting13EventReporterC s15ContinuousClockV s5ErrorP

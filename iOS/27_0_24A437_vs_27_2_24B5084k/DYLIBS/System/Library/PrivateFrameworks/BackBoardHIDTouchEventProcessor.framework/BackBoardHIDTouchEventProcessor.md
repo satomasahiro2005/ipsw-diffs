@@ -2,67 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/BackBoardHIDTouchEventProcessor.framework/BackBoardHIDTouchEventProcessor`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5b860` | `0x5bcc4` | **`+0x464`** |
+| `__TEXT.__gcc_except_tab` | `0x562c` | `0x56b0` | **`+0x84`** |
+| `__TEXT.__oslogstring` | `0x47a1` | `0x47f8` | **`+0x57`** |
+| `__DATA_CONST.__const` | `0x1c30` | `0x1c60` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x1b38` | `0x1b60` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x3ea0` | `0x3ec0` | **`+0x20`** |
+| `__AUTH_CONST.__const` | `0x860` | `0x880` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x34fd` | `0x3514` | **`+0x17`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2708` | `0x2710` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x3a08` | `0x3a10` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -877.0.0.0.0
--  __TEXT.__text: 0x59f74
--  __TEXT.__objc_methlist: 0x3a08
 +877.2.1.0.0
-+  __TEXT.__text: 0x5a3cc
-+  __TEXT.__objc_methlist: 0x3a10
-   __TEXT.__const: 0x480
-   __TEXT.__constg_swiftt: 0x124
-   __TEXT.__swift5_typeref: 0x164
 
-   __TEXT.__swift5_fieldmd: 0xf0
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_capture: 0x20
--  __TEXT.__cstring: 0x34fd
-+  __TEXT.__cstring: 0x3514
-   __TEXT.__swift5_types: 0x14
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__gcc_except_tab: 0x562c
--  __TEXT.__oslogstring: 0x47a1
-+  __TEXT.__gcc_except_tab: 0x56b0
-+  __TEXT.__oslogstring: 0x47f8
-   __TEXT.__ustring: 0xc
--  __TEXT.__unwind_info: 0x1e78
-+  __TEXT.__unwind_info: 0x1ea0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1c30
-+  __DATA_CONST.__const: 0x1c60
-   __DATA_CONST.__objc_classlist: 0x2f8
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x158
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2708
-+  __DATA_CONST.__objc_selrefs: 0x2710
-   __DATA_CONST.__objc_protorefs: 0x40
-   __DATA_CONST.__objc_superrefs: 0x218
-   __DATA_CONST.__objc_arraydata: 0x10
-   __DATA_CONST.__got: 0x780
--  __AUTH_CONST.__const: 0x860
--  __AUTH_CONST.__cfstring: 0x3ea0
-+  __AUTH_CONST.__const: 0x880
-+  __AUTH_CONST.__cfstring: 0x3ec0
-   __AUTH_CONST.__objc_const: 0xa9c0
-   __AUTH_CONST.__objc_intobj: 0x1f8
-   __AUTH_CONST.__objc_arrayobj: 0x18
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1596
--  Symbols:   5036
+-  Symbols:   3993
 -  CStrings:  983
 +  Functions: 1600
-+  Symbols:   5044
++  Symbols:   4001
 +  CStrings:  985
- 
 Symbols:
 + -[BKDirectTouchState _cancelContacts:destinationPredicate:preserveHitTestPolicy:excludingContextIDs:preserveDestinations:]
 + -[BKHIDDirectTouchEventProcessor gestureCancelTouchesWithIdentifiers:]

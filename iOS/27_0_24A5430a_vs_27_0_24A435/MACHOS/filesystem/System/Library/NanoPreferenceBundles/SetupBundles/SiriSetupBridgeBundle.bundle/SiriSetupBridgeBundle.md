@@ -2,22 +2,23 @@
 
 > `/System/Library/NanoPreferenceBundles/SetupBundles/SiriSetupBridgeBundle.bundle/SiriSetupBridgeBundle`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x91ac` | `0x91b8` | **`+0xc`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_data`
+- `__DATA_CONST.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 1359.9.0.0.0
--  __TEXT.__text: 0x91ac
-+  __TEXT.__text: 0x91b8
-   __TEXT.__auth_stubs: 0x930
-   __TEXT.__objc_stubs: 0x5a0
-   __TEXT.__objc_methlist: 0x424
+```text
 Functions:
 ~ sub_5c00 : 696 -> 700
 ~ sub_86d8 -> sub_86dc : 1480 -> 1484

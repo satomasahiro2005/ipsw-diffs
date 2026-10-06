@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/iCloudSubscriptionOptimizerDaemon.framework/iCloudSubscriptionOptimizerDaemon`
 
-```diff
+### Section Size Changes
 
- 71.0.0.0.0
--  __TEXT.__text: 0x71250
-+  __TEXT.__text: 0x712fc
-   __TEXT.__objc_methlist: 0x2ac
-   __TEXT.__const: 0x36f0
-   __TEXT.__cstring: 0x55f6
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x71250` | `0x712fc` | **`+0xac`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_2343e3098 -> sub_22ff00098 : 612 -> 632
 ~ sub_2343fdc54 -> sub_22ff1ac68 : 1416 -> 1408

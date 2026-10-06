@@ -2,29 +2,25 @@
 
 > `/usr/lib/libswiftPrespecialized.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__const` | `0x3eaab0` | `0x505250` | **`+0x11a7a0`** |
+| `__AUTH_CONST.__const` | `0x73f28` | `0x5efb8` | **`-0x14f70`** |
+| `__AUTH.__data` | `0xd3bb8` | `0xd1020` | **`-0x2b98`** |
+| `__DATA_CONST.__ptrhashtabkey` | `0x32468` | `0x31150` | **`-0x1318`** |
+| `__DATA_CONST.__ptrhashtab` | `0x1ebb8` | `0x1df10` | **`-0xca8`** |
+| `__TEXT.__cstring` | `—` | `0x4a` | **`+0x4a`** |
+
+### Other Changes
+
 ```diff
 
- 0.0.0.0.0
-   __TEXT.__text: 0x0
-+  __TEXT.__cstring: 0x4a
-   __TEXT.__lldb_no_nlist: 0x0
--  __DATA_CONST.__const: 0x3eaab0
--  __DATA_CONST.__ptrhashtab: 0x1ebb8
--  __DATA_CONST.__ptrhashtabkey: 0x32468
--  __AUTH_CONST.__const: 0x73f28
--  __AUTH.__data: 0xd3bb8
-+  __DATA_CONST.__const: 0x505250
-+  __DATA_CONST.__ptrhashtab: 0x1df10
-+  __DATA_CONST.__ptrhashtabkey: 0x31150
-+  __AUTH_CONST.__const: 0x5efb8
-+  __AUTH.__data: 0xd1020
-   - /usr/lib/libSystem.B.dylib
-   Functions: 0
 -  Symbols:   199170
 -  CStrings:  0
 +  Symbols:   201021
 +  CStrings:  9
- 
 Symbols:
 + _$s012HealthReportA6Daemon0aB16ProfileExtensionCMo
 + _$s012HealthReportA6Daemon23SleepDurationClassifierVMn

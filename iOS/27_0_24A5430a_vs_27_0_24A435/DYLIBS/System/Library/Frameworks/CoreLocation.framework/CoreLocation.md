@@ -2,19 +2,21 @@
 
 > `/System/Library/Frameworks/CoreLocation.framework/CoreLocation`
 
-```diff
+### Section Size Changes
 
- 3185.0.6.0.3
--  __TEXT.__text: 0x206ef8
-+  __TEXT.__text: 0x207058
-   __TEXT.__objc_methlist: 0x9bd4
--  __TEXT.__const: 0x4d10
--  __TEXT.__gcc_except_tab: 0xf264
-+  __TEXT.__const: 0x4dd0
-+  __TEXT.__gcc_except_tab: 0xf25c
-   __TEXT.__oslogstring: 0x3abea
-   __TEXT.__cstring: 0x2514e
-   __TEXT.__ustring: 0x70a
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x206ef8` | `0x207058` | **`+0x160`** |
+| `__TEXT.__const` | `0x4d10` | `0x4dd0` | **`+0xc0`** |
+| `__TEXT.__gcc_except_tab` | `0xf264` | `0xf25c` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
+```diff
 Functions:
 ~ sub_1a7819c28 -> sub_1a7900c28 : 12924 -> 13204
 ~ sub_1a78940c0 -> sub_1a797b1d8 : 1244 -> 1248
@@ -30,4 +32,7 @@ Functions:
 ~ sub_1a79cab18 -> sub_1a7ab1c60 : 280 -> 288
 ~ sub_1a79cb168 -> sub_1a7ab22b8 : 120 -> 124
 ~ sub_1a79de378 -> sub_1a7ac54cc : 6540 -> 6552
+CStrings:
++ "21:18:53"
+- "22:16:04"
 ```

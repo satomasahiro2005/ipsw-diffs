@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/TokenGenerationInference.framework/TokenGenerationInference`
 
-```diff
+### Section Size Changes
 
- 301.6.0.5.102
--  __TEXT.__text: 0x2b680c
-+  __TEXT.__text: 0x2b6974
-   __TEXT.__objc_methlist: 0xa84
-   __TEXT.__const: 0xfd10
-   __TEXT.__cstring: 0x76ea
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2b680c` | `0x2b6974` | **`+0x168`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s24TokenGenerationInference08OnDeviceC15AssetRepositoryC035fetchPromptTemplateConfigurationForF6Bundle10identifierAA0ijK0VSgSS_tYa20ModelManagerServices0C5ErrorOYKFTY0_ : 2888 -> 2900
 ~ _$s24TokenGenerationInference08OnDeviceC15AssetRepositoryC06runnerf9ObjectForF6Bundle33_65818D6FA4B5F545C6B162D7CBE031AELL10identifierAA0decfI6RunnerVSS_t20ModelManagerServices0C5ErrorOYKF : 6556 -> 6560

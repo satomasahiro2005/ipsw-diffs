@@ -2,26 +2,27 @@
 
 > `/usr/libexec/logd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x27694` | `0x276a4` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
-- `__DATA.__data`
 - `__DATA.__os_assumes_log`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 1966.2.1.0.0
--  __TEXT.__text: 0x27694
-+  __TEXT.__text: 0x276a4
-   __TEXT.__auth_stubs: 0x1bc0
-   __TEXT.__objc_stubs: 0x640
-   __TEXT.__objc_methlist: 0x44
+```text
 Functions:
 ~ sub_100000fe8 : 1508 -> 1512
 ~ sub_10000ae3c -> sub_10000ae40 : 212 -> 216

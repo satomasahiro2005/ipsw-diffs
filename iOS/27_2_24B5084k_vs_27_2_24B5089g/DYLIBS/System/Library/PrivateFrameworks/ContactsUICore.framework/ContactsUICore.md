@@ -2,67 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/ContactsUICore.framework/ContactsUICore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__data` | `0x9228` | `0x5e78` | **`-0x33b0`** |
+| `__DATA_DIRTY.__data` | `0x3328` | `0x66c8` | **`+0x33a0`** |
+| `__AUTH.__objc_data` | `0x67d0` | `0x41e8` | **`-0x25e8`** |
+| `__DATA_DIRTY.__objc_data` | `0x30f8` | `0x56e0` | **`+0x25e8`** |
+| `__TEXT.__text` | `0x3f8af0` | `0x3f8f14` | **`+0x424`** |
+| `__DATA.__bss` | `0x26bd8` | `0x26a68` | **`-0x170`** |
+| `__DATA_DIRTY.__bss` | `0x3508` | `0x3678` | **`+0x170`** |
+| `__TEXT.__swift5_typeref` | `0x2e956` | `0x2e7f6` | **`-0x160`** |
+| `__TEXT.__constg_swiftt` | `0xd364` | `0xd40c` | **`+0xa8`** |
+| `__DATA.__data` | `0x10278` | `0x10218` | **`-0x60`** |
+| `__TEXT.__const` | `0x33664` | `0x336a4` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0xe848` | `0xe828` | **`-0x20`** |
+
+### Other Changes
+
 ```diff
 
 -3723.200.41.0.0
--  __TEXT.__text: 0x3da5f4
 +3723.200.51.0.0
-+  __TEXT.__text: 0x3da9c4
-   __TEXT.__objc_methlist: 0xaf04
--  __TEXT.__const: 0x33664
-+  __TEXT.__const: 0x336a4
-   __TEXT.__oslogstring: 0x889d
-   __TEXT.__cstring: 0xbe36
-   __TEXT.__gcc_except_tab: 0xd80
-   __TEXT.__dlopen_cstrs: 0xd94
--  __TEXT.__constg_swiftt: 0xd364
--  __TEXT.__swift5_typeref: 0x2e956
-+  __TEXT.__constg_swiftt: 0xd40c
-+  __TEXT.__swift5_typeref: 0x2e7f6
-   __TEXT.__swift5_fieldmd: 0xa0e0
-   __TEXT.__swift5_reflstr: 0x96c3
-   __TEXT.__swift5_builtin: 0x294
 
-   __TEXT.__swift_as_cont: 0xa4c
-   __TEXT.__swift5_capture: 0x38ec
-   __TEXT.__swift5_mpenum: 0x144
--  __TEXT.__unwind_info: 0x12800
-+  __TEXT.__unwind_info: 0x127f8
-   __TEXT.__eh_frame: 0xe918
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __AUTH_CONST.__objc_arrayobj: 0xa8
-   __AUTH_CONST.__objc_doubleobj: 0x50
-   __AUTH_CONST.__auth_got: 0x4140
--  __AUTH.__objc_data: 0x67d0
--  __AUTH.__data: 0x9228
-+  __AUTH.__objc_data: 0x41e8
-+  __AUTH.__data: 0x5e78
-   __DATA.__objc_ivar: 0x754
--  __DATA.__data: 0x10278
-+  __DATA.__data: 0x10218
-   __DATA.__objc_stublist: 0x18
-   __DATA.__common: 0x1548
--  __DATA_DIRTY.__objc_data: 0x30f8
--  __DATA_DIRTY.__data: 0x3328
--  __DATA_DIRTY.__bss: 0x3508
-+  __DATA_DIRTY.__objc_data: 0x56e0
-+  __DATA_DIRTY.__data: 0x66c8
-+  __DATA_DIRTY.__bss: 0x3678
-   __DATA_DIRTY.__common: 0x1e8
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 21798
--  Symbols:   16715
+-  Symbols:   14059
 +  Functions: 21803
-+  Symbols:   16712
-   CStrings:  2111
- 
++  Symbols:   14056
 Symbols:
 + ___swift_closure_destructor.131Tm
 + _get_witness_table 7SwiftUI14GeometryReaderVyAA15ModifiedContentVyAEyAA012_ConditionalF0VyAGy14ContactsUICore24MonogramPosterAvatarViewVAH010SilhouetteklM0VGAA05EmptyM0VGAA12_FrameLayoutVGAA09_PositionQ0VGGAA0M0HPyHC

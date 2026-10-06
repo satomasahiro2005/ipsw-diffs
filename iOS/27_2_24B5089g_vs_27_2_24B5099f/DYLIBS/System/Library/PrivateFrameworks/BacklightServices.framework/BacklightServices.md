@@ -2,70 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/BacklightServices.framework/BacklightServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2a070` | `0x2a808` | **`+0x798`** |
+| `__AUTH_CONST.__objc_const` | `0x8290` | `0x8488` | **`+0x1f8`** |
+| `__TEXT.__objc_methlist` | `0x38f4` | `0x39cc` | **`+0xd8`** |
+| `__AUTH.__objc_data` | `0x1720` | `0x17c0` | **`+0xa0`** |
+| `__AUTH_CONST.__cfstring` | `0x2420` | `0x2480` | **`+0x60`** |
+| `__DATA_CONST.__objc_selrefs` | `0x16b8` | `0x16f0` | **`+0x38`** |
+| `__TEXT.__cstring` | `0x1bc7` | `0x1b91` | **`-0x36`** |
+| `__TEXT.__unwind_info` | `0x1090` | `0x10b0` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x2e4` | `0x2f4` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x360` | `0x370` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1c0` | `0x1d0` | **`+0x10`** |
+| `__DATA.__bss` | `0xe1` | `0xd9` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x408` | `0x410` | **`+0x8`** |
+| `__DATA_DIRTY.__bss` | `0xb0` | `0xb8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -6.1.3.0.0
--  __TEXT.__text: 0x28c20
--  __TEXT.__objc_methlist: 0x38f4
 +6.1.4.0.0
-+  __TEXT.__text: 0x29364
-+  __TEXT.__objc_methlist: 0x39cc
-   __TEXT.__const: 0x140
-+  __TEXT.__cstring: 0x1b91
-   __TEXT.__oslogstring: 0x295e
--  __TEXT.__cstring: 0x1bc7
-   __TEXT.__ustring: 0xfe
-   __TEXT.__gcc_except_tab: 0xcb4
--  __TEXT.__unwind_info: 0x14d0
-+  __TEXT.__unwind_info: 0x1510
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xdd0
--  __DATA_CONST.__objc_classlist: 0x360
-+  __DATA_CONST.__objc_classlist: 0x370
-   __DATA_CONST.__objc_catlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x108
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x16b8
-+  __DATA_CONST.__objc_selrefs: 0x16f0
-   __DATA_CONST.__objc_protorefs: 0x28
--  __DATA_CONST.__objc_superrefs: 0x1c0
--  __DATA_CONST.__got: 0x408
-+  __DATA_CONST.__objc_superrefs: 0x1d0
-+  __DATA_CONST.__got: 0x410
-   __AUTH_CONST.__const: 0x5c0
--  __AUTH_CONST.__cfstring: 0x2420
--  __AUTH_CONST.__objc_const: 0x8290
-+  __AUTH_CONST.__cfstring: 0x2480
-+  __AUTH_CONST.__objc_const: 0x8488
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x1720
--  __DATA.__objc_ivar: 0x2e4
-+  __AUTH.__objc_data: 0x17c0
-+  __DATA.__objc_ivar: 0x2f4
-   __DATA.__data: 0xc68
-   __DATA_DIRTY.__objc_data: 0xaa0
--  __DATA_DIRTY.__bss: 0xb0
-+  __DATA_DIRTY.__bss: 0xb8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOSurface.framework/IOSurface
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1352
 -  Symbols:   2752
 -  CStrings:  531
 +  Functions: 1368
 +  Symbols:   2789
 +  CStrings:  533
- 
 Symbols:
 + +[BLSBacklightProxyObservation observationForObserver:backlight:]
 + +[BLSPendingBacklightProxy addObservation:toBacklightProxy:]

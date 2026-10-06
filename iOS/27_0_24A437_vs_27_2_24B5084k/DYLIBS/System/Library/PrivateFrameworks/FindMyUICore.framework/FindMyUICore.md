@@ -2,101 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/FindMyUICore.framework/FindMyUICore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x525950` | `0x5200ac` | **`-0x58a4`** |
+| `__DATA.__bss` | `0x22548` | `0x205f8` | **`-0x1f50`** |
+| `__TEXT.__const` | `0x29d14` | `0x28984` | **`-0x1390`** |
+| `__AUTH_CONST.__const` | `0x1c7b8` | `0x1b860` | **`-0xf58`** |
+| `__TEXT.__swift5_fieldmd` | `0xbb68` | `0xb554` | **`-0x614`** |
+| `__TEXT.__oslogstring` | `0xa682` | `0xa262` | **`-0x420`** |
+| `__TEXT.__eh_frame` | `0x25690` | `0x25298` | **`-0x3f8`** |
+| `__TEXT.__unwind_info` | `0x11040` | `0x10cb0` | **`-0x390`** |
+| `__TEXT.__constg_swiftt` | `0xabbc` | `0xa86c` | **`-0x350`** |
+| `__TEXT.__cstring` | `0x8027` | `0x7d07` | **`-0x320`** |
+| `__TEXT.__swift5_typeref` | `0x20840` | `0x2059c` | **`-0x2a4`** |
+| `__AUTH.__data` | `0x62b0` | `0x64d0` | **`+0x220`** |
+| `__DATA.__data` | `0xa668` | `0xa448` | **`-0x220`** |
+| `__TEXT.__swift5_reflstr` | `0xb5e1` | `0xb471` | **`-0x170`** |
+| `__AUTH_CONST.__objc_const` | `0x9038` | `0x9138` | **`+0x100`** |
+| `__TEXT.__swift5_proto` | `0x12b8` | `0x11bc` | **`-0xfc`** |
+| `__TEXT.__swift5_capture` | `0x51a4` | `0x5230` | **`+0x8c`** |
+| `__TEXT.__swift5_types` | `0xdb0` | `0xd3c` | **`-0x74`** |
+| `__TEXT.__swift_as_ret` | `0xd94` | `0xd50` | **`-0x44`** |
+| `__DATA_CONST.__got` | `0x2978` | `0x2938` | **`-0x40`** |
+| `__TEXT.__swift5_builtin` | `0x3e8` | `0x3ac` | **`-0x3c`** |
+| `__AUTH_CONST.__auth_got` | `0x4360` | `0x4330` | **`-0x30`** |
+| `__DATA_DIRTY.__data` | `0x9de8` | `0x9db8` | **`-0x30`** |
+| `__TEXT.__swift_as_cont` | `0x1ec0` | `0x1ef0` | **`+0x30`** |
+| `__DATA_DIRTY.__common` | `0x388` | `0x368` | **`-0x20`** |
+| `__TEXT.__swift5_mpenum` | `0x118` | `0x100` | **`-0x18`** |
+| `__DATA_CONST.__const` | `0xd20` | `0xd10` | **`-0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1b68` | `0x1b78` | **`+0x10`** |
+| `__TEXT.__swift5_assocty` | `0x1df8` | `0x1e08` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0xd3c` | `0xd44` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -470.30.6.14.34
--  __TEXT.__text: 0x4ec568
 +470.31.6.16.26
-+  __TEXT.__text: 0x4e70e8
-   __TEXT.__objc_methlist: 0x18f4
--  __TEXT.__cstring: 0x8027
--  __TEXT.__const: 0x29d14
--  __TEXT.__swift5_typeref: 0x20840
--  __TEXT.__constg_swiftt: 0xabbc
--  __TEXT.__swift5_reflstr: 0xb5e1
--  __TEXT.__swift5_fieldmd: 0xbb68
--  __TEXT.__swift5_builtin: 0x3e8
--  __TEXT.__swift5_assocty: 0x1df8
--  __TEXT.__oslogstring: 0xa682
--  __TEXT.__swift5_proto: 0x12b8
--  __TEXT.__swift5_types: 0xdb0
--  __TEXT.__swift5_capture: 0x51a4
--  __TEXT.__swift_as_entry: 0xd3c
--  __TEXT.__swift_as_ret: 0xd94
--  __TEXT.__swift_as_cont: 0x1ec0
-+  __TEXT.__cstring: 0x7d07
-+  __TEXT.__const: 0x28984
-+  __TEXT.__swift5_typeref: 0x2059c
-+  __TEXT.__constg_swiftt: 0xa86c
-+  __TEXT.__swift5_reflstr: 0xb471
-+  __TEXT.__swift5_fieldmd: 0xb554
-+  __TEXT.__swift5_builtin: 0x3ac
-+  __TEXT.__swift5_assocty: 0x1e08
-+  __TEXT.__oslogstring: 0xa262
-+  __TEXT.__swift5_proto: 0x11bc
-+  __TEXT.__swift5_types: 0xd3c
-+  __TEXT.__swift5_capture: 0x5230
-+  __TEXT.__swift_as_entry: 0xd44
-+  __TEXT.__swift_as_ret: 0xd50
-+  __TEXT.__swift_as_cont: 0x1ef0
-   __TEXT.__swift5_protos: 0x7c
--  __TEXT.__swift5_mpenum: 0x118
--  __TEXT.__unwind_info: 0x14d40
--  __TEXT.__eh_frame: 0x256b8
-+  __TEXT.__swift5_mpenum: 0x100
-+  __TEXT.__unwind_info: 0x14a80
-+  __TEXT.__eh_frame: 0x252c0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xd20
-+  __DATA_CONST.__const: 0xd10
-   __DATA_CONST.__objc_classlist: 0x3f8
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x110
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1b68
-+  __DATA_CONST.__objc_selrefs: 0x1b78
-   __DATA_CONST.__objc_protorefs: 0x90
-   __DATA_CONST.__objc_superrefs: 0x10
--  __DATA_CONST.__got: 0x2978
--  __AUTH_CONST.__const: 0x1c7b8
-+  __DATA_CONST.__got: 0x2938
-+  __AUTH_CONST.__const: 0x1b860
-   __AUTH_CONST.__cfstring: 0xe0
--  __AUTH_CONST.__objc_const: 0x9038
--  __AUTH_CONST.__auth_got: 0x4360
-+  __AUTH_CONST.__objc_const: 0x9138
-+  __AUTH_CONST.__auth_got: 0x4330
-   __AUTH.__objc_data: 0xb20
--  __AUTH.__data: 0x62b0
-+  __AUTH.__data: 0x64d0
-   __DATA.__objc_ivar: 0x10
--  __DATA.__data: 0xa668
-+  __DATA.__data: 0xa448
-   __DATA.__objc_stublist: 0x10
-   __DATA.__common: 0x410
-   __DATA_DIRTY.__objc_data: 0x20f0
--  __DATA_DIRTY.__data: 0x9de8
--  __DATA_DIRTY.__common: 0x388
-+  __DATA_DIRTY.__data: 0x9db8
-+  __DATA_DIRTY.__common: 0x368
-   __DATA_DIRTY.__bss: 0x2f80
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/Combine.framework/Combine
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 21481
--  Symbols:   6997
+-  Symbols:   6449
 -  CStrings:  1537
 +  Functions: 21274
-+  Symbols:   6897
++  Symbols:   6347
 +  CStrings:  1497
- 
 Symbols:
 + _NSProcessInfoPowerStateDidChangeNotification
 + _OBJC_CLASS_$_MKPointOfInterestFilter
@@ -121,11 +74,6 @@ Symbols:
 + _associated conformance 12FindMyUICore13ItemsProviderCAA20SubscriptionManagingAA0F0AaDP_SH
 + _associated conformance 12FindMyUICore22ItemsLocationsProviderCAA013StreamChangesF0AA10IdentifierAaDP_SH
 + _associated conformance 12FindMyUICore22ItemsLocationsProviderCAA20SubscriptionManagingAA0G0AaDP_SH
-+ _objc_msgSend$filterExcludingAllCategories
-+ _objc_msgSend$isLowPowerModeEnabled
-+ _objc_msgSend$processInfo
-+ _objc_msgSend$setPointOfInterestFilter:
-+ _objc_msgSend$systemBlueColor
 + _symbolic Ig_
 + _symbolic SDySS_____GSgSaySSGYbc 10FindMyCore11PersonModelV12RelationshipV
 + _symbolic SDy__________G 10FindMyCore11PersonModelV16UniqueIdentifierV 10Foundation4DateV
@@ -247,9 +195,6 @@ Symbols:
 - _get_enum_tag_for_layout_string 12FindMyUICore16SettingsProviderC22LocationSharingDevicesV6DeviceVSg
 - _get_enum_tag_for_layout_string 12FindMyUICore22ItemsLocationsProviderC18UpdateStreamChangeO
 - _get_enum_tag_for_layout_string 12FindMyUICore26ItemsLocationsStreamChange33_E1B65C808EC9D30371B2A5BFF4792BC5LLO
-- _objc_msgSend$boolForKey:
-- _objc_msgSend$containerURLForSecurityApplicationGroupIdentifier:
-- _objc_msgSend$initWithSuiteName:
 - _symbolic SDy__________G 10FindMyCore11PersonModelV16UniqueIdentifierV 0aB6UICore29DemoLocationStreamPlistLoaderC8ResourceO
 - _symbolic SDy__________G 10FindMyCore11PersonModelV16UniqueIdentifierV AA17PublishedLocationV
 - _symbolic SDy__________G 10FindMyCore11PersonModelV16UniqueIdentifierV AC

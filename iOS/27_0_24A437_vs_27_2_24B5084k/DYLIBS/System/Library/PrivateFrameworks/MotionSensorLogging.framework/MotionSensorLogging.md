@@ -2,45 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/MotionSensorLogging.framework/MotionSensorLogging`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x26c1b0` | `0x26d55c` | **`+0x13ac`** |
+| `__AUTH_CONST.__const` | `0xb410` | `0xb4b0` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0x12abf` | `0x12b08` | **`+0x49`** |
+| `__TEXT.__const` | `0x493a` | `0x497a` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x68c8` | `0x6908` | **`+0x40`** |
+| `__TEXT.__gcc_except_tab` | `0x3cac` | `0x3cc8` | **`+0x1c`** |
+
+### Other Changes
+
 ```diff
 
 -3185.0.6.0.3
--  __TEXT.__text: 0x2642dc
 +3186.0.12.0.0
-+  __TEXT.__text: 0x26561c
-   __TEXT.__objc_methlist: 0x14
--  __TEXT.__const: 0x493a
--  __TEXT.__gcc_except_tab: 0x3cac
-+  __TEXT.__const: 0x497a
-+  __TEXT.__gcc_except_tab: 0x3cc8
-   __TEXT.__oslogstring: 0x450
--  __TEXT.__cstring: 0x12abf
--  __TEXT.__unwind_info: 0x8170
-+  __TEXT.__cstring: 0x12b08
-+  __TEXT.__unwind_info: 0x81c0
-   __TEXT.__eh_frame: 0x670
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__weak_got: 0x8
-   __DATA_CONST.__objc_selrefs: 0xf0
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xb410
-+  __AUTH_CONST.__const: 0xb4b0
-   __AUTH_CONST.__cfstring: 0x120
-   __AUTH_CONST.__objc_const: 0x90
-   __AUTH_CONST.__weak_auth_got: 0x18
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 10490
 -  Symbols:   11934
 -  CStrings:  3892
 +  Functions: 10526
 +  Symbols:   11976
 +  CStrings:  3895
- 
 Symbols:
 + __ZN5CMMsl11PencilState8readFromERN2PB6ReaderE
 + __ZN5CMMsl11PencilStateC1EOS0_

@@ -2,21 +2,21 @@
 
 > `com.apple.driver.usb.AppleUSBXHCI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x48dc4` | `0x48dec` | **`+0x28`** |
+| `__TEXT.__cstring` | `0x5722` | `0x5726` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1617.0.12.0.0
--  __TEXT.__cstring: 0x5722
 +1617.40.9.0.0
-+  __TEXT.__cstring: 0x5726
-   __TEXT.__os_log: 0x50f0
-   __TEXT.__const: 0xb4
--  __TEXT_EXEC.__text: 0x444e8
-+  __TEXT_EXEC.__text: 0x44524
-   __TEXT_EXEC.__auth_stubs: 0x720
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x3f8
 Functions:
-~ __ZN16AppleUSBXHCIPort17interruptOccurredEP22IOInterruptEventSourcei : 6916 -> 6976
+~ __ZN16AppleUSBXHCIPort17interruptOccurredEP22IOInterruptEventSourcei : 7536 -> 7576
 CStrings:
 + "121111121222121211222222212222222222222222222222222222222222222222222222222221221111122221112112222222222211122112111111111111111112"
 + "1211111212221212112222222122222222222222222222222222222222222222222222222222212211111222211121122222222222111221121111111111111111122"

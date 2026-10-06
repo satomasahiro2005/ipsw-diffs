@@ -2,98 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/WorkoutUI.framework/WorkoutUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__swift5_typeref` | `0xab46a` | `0xaa842` | **`-0xc28`** |
+| `__TEXT.__text` | `0x575b94` | `0x576598` | **`+0xa04`** |
+| `__DATA.__bss` | `0x1df40` | `0x1e150` | **`+0x210`** |
+| `__TEXT.__const` | `0x3c384` | `0x3c534` | **`+0x1b0`** |
+| `__TEXT.__oslogstring` | `0x9682` | `0x9782` | **`+0x100`** |
+| `__TEXT.__swift5_reflstr` | `0x11194` | `0x11234` | **`+0xa0`** |
+| `__TEXT.__swift5_fieldmd` | `0xcbfc` | `0xcc80` | **`+0x84`** |
+| `__AUTH_CONST.__const` | `0x21528` | `0x215a0` | **`+0x78`** |
+| `__TEXT.__constg_swiftt` | `0x11544` | `0x115b8` | **`+0x74`** |
+| `__DATA.__data` | `0x16b88` | `0x16b38` | **`-0x50`** |
+| `__TEXT.__swift5_assocty` | `0x3918` | `0x3960` | **`+0x48`** |
+| `__TEXT.__swift5_capture` | `0x718c` | `0x7154` | **`-0x38`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2910` | `0x2940` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0xf5d8` | `0xf608` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x3148` | `0x3130` | **`-0x18`** |
+| `__AUTH.__objc_data` | `0x50d0` | `0x50e0` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x3520` | `0x3530` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0xf4c` | `0xf5c` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0xd40` | `0xd4c` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x6610` | `0x6608` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.137.0.0
--  __TEXT.__text: 0x575b94
--  __TEXT.__objc_methlist: 0x3520
--  __TEXT.__const: 0x3c384
 +2027.0.152.1.1
-+  __TEXT.__text: 0x576598
-+  __TEXT.__objc_methlist: 0x3530
-+  __TEXT.__const: 0x3c534
-   __TEXT.__cstring: 0xf07d
--  __TEXT.__oslogstring: 0x9682
-+  __TEXT.__oslogstring: 0x9782
-   __TEXT.__gcc_except_tab: 0x230
--  __TEXT.__swift5_typeref: 0xab46a
--  __TEXT.__swift5_capture: 0x718c
--  __TEXT.__constg_swiftt: 0x11544
--  __TEXT.__swift5_reflstr: 0x11194
--  __TEXT.__swift5_assocty: 0x3918
--  __TEXT.__swift5_fieldmd: 0xcbfc
-+  __TEXT.__swift5_typeref: 0xaa842
-+  __TEXT.__swift5_capture: 0x7154
-+  __TEXT.__constg_swiftt: 0x115b8
-+  __TEXT.__swift5_reflstr: 0x11234
-+  __TEXT.__swift5_assocty: 0x3960
-+  __TEXT.__swift5_fieldmd: 0xcc80
-   __TEXT.__swift5_builtin: 0x438
--  __TEXT.__swift5_proto: 0xf4c
--  __TEXT.__swift5_types: 0xd40
-+  __TEXT.__swift5_proto: 0xf5c
-+  __TEXT.__swift5_types: 0xd4c
-   __TEXT.__swift_as_entry: 0x1c4
-   __TEXT.__swift_as_cont: 0x3bc
-   __TEXT.__swift_as_ret: 0x160
-   __TEXT.__swift5_mpenum: 0x38
-   __TEXT.__swift5_protos: 0x58
--  __TEXT.__unwind_info: 0xf5d8
-+  __TEXT.__unwind_info: 0xf608
-   __TEXT.__eh_frame: 0x88b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_catlist2: 0x8
-   __DATA_CONST.__objc_protolist: 0x2a8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2910
-+  __DATA_CONST.__objc_selrefs: 0x2940
-   __DATA_CONST.__objc_protorefs: 0x150
-   __DATA_CONST.__objc_superrefs: 0xc8
--  __DATA_CONST.__got: 0x3148
--  __AUTH_CONST.__const: 0x21528
-+  __DATA_CONST.__got: 0x3130
-+  __AUTH_CONST.__const: 0x215a0
-   __AUTH_CONST.__cfstring: 0x7a0
-   __AUTH_CONST.__objc_const: 0xc440
-   __AUTH_CONST.__objc_intobj: 0x48
--  __AUTH_CONST.__auth_got: 0x6610
--  __AUTH.__objc_data: 0x50d0
-+  __AUTH_CONST.__auth_got: 0x6608
-+  __AUTH.__objc_data: 0x50e0
-   __AUTH.__data: 0xa4c0
-   __DATA.__objc_ivar: 0x154
--  __DATA.__data: 0x16b88
-+  __DATA.__data: 0x16b38
-   __DATA.__objc_stublist: 0x8
-   __DATA.__common: 0x510
--  __DATA.__bss: 0x1df40
-+  __DATA.__bss: 0x1e150
-   __DATA_DIRTY.__objc_data: 0x1758
-   __DATA_DIRTY.__data: 0x4268
-   __DATA_DIRTY.__bss: 0x30b0
-
-   - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
-   - /System/Library/PrivateFrameworks/MediaSuggester.framework/MediaSuggester
-   - /System/Library/PrivateFrameworks/MusicKitInternal.framework/MusicKitInternal
 -  - /System/Library/PrivateFrameworks/NanoRegistry.framework/NanoRegistry
-   - /System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit
-+  - /System/Library/PrivateFrameworks/PairedDeviceRegistry.framework/PairedDeviceRegistry
-   - /System/Library/PrivateFrameworks/SafetyMonitor.framework/SafetyMonitor
-   - /System/Library/PrivateFrameworks/SafetyMonitorUI.framework/SafetyMonitorUI
-   - /System/Library/PrivateFrameworks/SeymourClient.framework/SeymourClient
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/PrivateFrameworks/PairedDeviceRegistry.framework/PairedDeviceRegistry
+
 -  Functions: 29901
--  Symbols:   67517
+-  Symbols:   66509
 -  CStrings:  2000
 +  Functions: 29941
-+  Symbols:   67559
++  Symbols:   66545
 +  CStrings:  2002
- 
 Symbols:
 + -[NLMachineConnection _isNonFatalPairingUIError:forConnection:]
 + GCC_except_table82
@@ -789,13 +739,6 @@ Symbols:
 + _get_witness_table 9WorkoutUI23MirrorRingPlatterLayoutVy05SwiftB015ModifiedContentVyAFyAD6IDViewVyAA17ActivityRingsViewVSSGAD06_FrameF0VGAA11DebugBorderVGAFyAD0M0PADE20accessibilityElement8childrenQrAD26AccessibilityChildBehaviorV_tFQOyAHyAA04Moved6DetailM0VSSG_Qo_APGAD09_VariadicM0O4TreeVy_AD01_F4RootVyAA17EqualColumnHStackVGAD05TupleI0VyAFyAsDEAtUQrAW_tFQOyAHyAA0dxM0VSSG_Qo_APG_A16_QPGGGAdRHPyHC
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE5sheet11isPresented0D7Dismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAA15ModifiedContentVyAPyAA5ColorVAA25_AllowsHitTestingModifierVGAA017_AppearanceActionT0VG_AcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE5alert_AH7actions7messageQrqd___AMqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAcAEAY_AhZA_Qrqd___AMqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___SbyyctSQRd__lFQOyAcAEAdeF_Qrqd___SbyyctSQRd__lFQOyAcAE22presentationBackgroundyQrqd__AA10ShapeStyleRd__lFQOyAcAE0Z17CompactAdaptationyQrAA22PresentationAdaptationVFQOyAcAE0Z12CornerRadiusyQr12CoreGraphics7CGFloatVSgFQOyAcAE0Z21BackgroundInteractionyQrAA33PresentationBackgroundInteractionVFQOyAcAE0Z6SizingyQrqd__AA18PresentationSizingRd__lFQOyAcAE0Z13DragIndicatoryQrAA10VisibilityOFQOyAcAE0Z7Detents_9selectionQrShyAA18PresentationDetentVG_ALyA21_GtFQOyAPyAcAE011interactiveK8DisabledyQrSbFQOyAPyAPyAPy07WorkoutB020SessionControlsSheetVAA16_FlexFrameLayoutVGAA12_FrameLayoutVGAA011_BackgroundT0VyA25_22SheetLayoutInvalidator33_D8A72A2C2EDF133638DB217431B7F9D6LLVGG_Qo_AA022_EnvironmentKeyWritingT0VyA8_GG_Qo__Qo__AAA14_PAAE6fitted10horizontal8verticalQrSb_SbtFQOyAA22FormPresentationSizingV_Qo_Qo__Qo__Qo__Qo__ARQo__SbQo__SiQo__11WorkoutCore26WorkoutBuddyStatePublisherC5StateOQo__So21NLWorkoutPausedReasonVQo__SSAPyAA6ButtonVyAA4TextVGAA023AccessibilityAttachmentT0VGA74_Qo__SSAA05TupleO0VyA78__A78_QPGA74_Qo__SbQo_Qo__SbQo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE15navigationTitleyQrAA4TextVFQOyAA4ListVys5NeverOAA12TupleContentVy07WorkoutB0020UnitsSettingsSectionC0VyAM04Unitm6EnergyO0OGSg_AOyAM0om10PoolLengthO0OGAOyAM0om8DistanceO0OGAyOyAM0om5TracksO0OGA5YQPGG_Qo_HO
-+ _objc_msgSend$_isNonFatalPairingUIError:forConnection:
-+ _objc_msgSend$connectionState
-+ _objc_msgSend$domain
-+ _objc_msgSend$getActivePairedDeviceExcludingAltAccount
-+ _objc_msgSend$getActivePairedDeviceIncludingAltAccount
-+ _objc_msgSend$isAltAccount
-+ _objc_msgSend$isEqualToString:
 + _symbolic SaySbG
 + _symbolic _____ 9WorkoutUI17EqualColumnHStackV
 + _symbolic _____ 9WorkoutUI24LockedControlsTwinDetent33_D8A72A2C2EDF133638DB217431B7F9D6LLV
@@ -1646,7 +1589,6 @@ Symbols:
 - _get_witness_table 9WorkoutUI23MirrorRingPlatterLayoutVy05SwiftB015ModifiedContentVyAFyAD6IDViewVyAA17ActivityRingsViewVSSGAD06_FrameF0VGAA11DebugBorderVGAFyAD0M0PADE20accessibilityElement8childrenQrAD26AccessibilityChildBehaviorV_tFQOyAHyAA04Moved6DetailM0VSSG_Qo_APGAD6HStackVyAD05TupleI0VyAFyAsDEAtUQrAW_tFQOyAHyAA0dxM0VSSG_Qo_APG_A9_QPGGGAdRHPyHC
 - _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE5sheet11isPresented0D7Dismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAA15ModifiedContentVyAPyAA5ColorVAA25_AllowsHitTestingModifierVGAA017_AppearanceActionT0VG_AcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE5alert_AH7actions7messageQrqd___AMqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAcAEAY_AhZA_Qrqd___AMqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___SbyyctSQRd__lFQOyAcAEAdeF_Qrqd___SbyyctSQRd__lFQOyAcAE22presentationBackgroundyQrqd__AA10ShapeStyleRd__lFQOyAcAE0Z17CompactAdaptationyQrAA22PresentationAdaptationVFQOyAcAE0Z12CornerRadiusyQr12CoreGraphics7CGFloatVSgFQOyAcAE0Z21BackgroundInteractionyQrAA33PresentationBackgroundInteractionVFQOyAcAE0Z6SizingyQrqd__AA18PresentationSizingRd__lFQOyAcAE0Z13DragIndicatoryQrAA10VisibilityOFQOyAcAE0Z7Detents_9selectionQrShyAA18PresentationDetentVG_ALyA21_GtFQOyAcAE011interactiveK8DisabledyQrSbFQOyAPyAPyAPy07WorkoutB020SessionControlsSheetVAA16_FlexFrameLayoutVGAA12_FrameLayoutVGAA011_BackgroundT0VyA25_22SheetLayoutInvalidator33_D8A72A2C2EDF133638DB217431B7F9D6LLVGG_Qo__Qo__Qo__AAA14_PAAE6fitted10horizontal8verticalQrSb_SbtFQOyAA22FormPresentationSizingV_Qo_Qo__Qo__Qo__Qo__ARQo__SbQo__SiQo__11WorkoutCore26WorkoutBuddyStatePublisherC5StateOQo__So21NLWorkoutPausedReasonVQo__SSAPyAA6ButtonVyAA4TextVGAA023AccessibilityAttachmentT0VGA70_Qo__SSAA05TupleO0VyA74__A74_QPGA70_Qo__SbQo_Qo__SbQo_HO
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE15navigationTitleyQrAA4TextVFQOyAA010NavigationC0VyAA4ListVys5NeverOAA12TupleContentVy07WorkoutB0020UnitsSettingsSectionC0VyAO04Unitn6EnergyP0OGSg_AQyAO0pn10PoolLengthP0OGAQyAO0pn8DistanceP0OGA_AQyAO0pn5TracktP0OGA_A_A_A_A_QPGGG_Qo_HO
-- _objc_msgSend$getActivePairedDevice
 - _symbolic _____ 7SwiftUI10ScenePhaseO
 - _symbolic _____yAAyAAyAAyAAyAAyAAy__________y_____GG_____GAEG_____GACy_____SgGGACy_____SgGG_____G_AAyAAyAAyAAy_____ACy_____GGATGATGACy_____GG_____AAyAAyAAyAbRG_____y_____GGATGSgt 7SwiftUI15ModifiedContentV AA5ImageV AA30_EnvironmentKeyWritingModifierV AE5ScaleO AA023AccessibilityAttachmentI0V AA17_FlipForRTLEffectV AA19SymbolRenderingModeV AA4FontV AA14_PaddingLayoutV AA4TextV 12CoreGraphics7CGFloatV AA0D10TransitionV AA6SpacerV AA016_ForegroundStyleI0V AA22HierarchicalShapeStyleV
 - _symbolic _____yAAyAAyAAyAAy__________ySiSgGGACy_____GGACy_____SgGG_____GACy_____GG 7SwiftUI15ModifiedContentV AA4TextV AA30_EnvironmentKeyWritingModifierV AA0E9AlignmentO AA4FontV AA16_FixedSizeLayoutV 12CoreGraphics7CGFloatV

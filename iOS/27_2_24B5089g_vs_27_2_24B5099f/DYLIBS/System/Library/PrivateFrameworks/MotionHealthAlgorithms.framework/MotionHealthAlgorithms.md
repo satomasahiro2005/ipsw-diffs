@@ -2,79 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/MotionHealthAlgorithms.framework/MotionHealthAlgorithms`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc1c34` | `0xc2f2c` | **`+0x12f8`** |
+| `__TEXT.__swift5_reflstr` | `0x3e80` | `0x3f90` | **`+0x110`** |
+| `__AUTH.__data` | `0x3618` | `0x36d8` | **`+0xc0`** |
+| `__AUTH_CONST.__objc_const` | `0x5070` | `0x5130` | **`+0xc0`** |
+| `__TEXT.__cstring` | `0x61fb` | `0x62bb` | **`+0xc0`** |
+| `__TEXT.__constg_swiftt` | `0x3040` | `0x30d8` | **`+0x98`** |
+| `__AUTH_CONST.__const` | `0x88d8` | `0x8948` | **`+0x70`** |
+| `__TEXT.__swift5_fieldmd` | `0x3648` | `0x36b4` | **`+0x6c`** |
+| `__DATA.__bss` | `0x4ba8` | `0x4c08` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x2c60` | `0x2ca0` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0xaa8` | `0xad8` | **`+0x30`** |
+| `__TEXT.__const` | `0x61b4` | `0x61e4` | **`+0x30`** |
+| `__TEXT.__eh_frame` | `0x3c4c` | `0x3c74` | **`+0x28`** |
+| `__TEXT.__swift5_capture` | `0x12e8` | `0x12fc` | **`+0x14`** |
+| `__DATA.__data` | `0x1000` | `0xff0` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xfa8` | `0xfb0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3186.0.17.0.1
--  __TEXT.__text: 0xbb648
 +3186.0.21.0.0
-+  __TEXT.__text: 0xbc934
-   __TEXT.__objc_methlist: 0x91c
--  __TEXT.__const: 0x61b4
--  __TEXT.__cstring: 0x61fb
-+  __TEXT.__const: 0x61e4
-+  __TEXT.__cstring: 0x62bb
-   __TEXT.__swift5_typeref: 0x17d6
--  __TEXT.__swift5_capture: 0x12e8
--  __TEXT.__constg_swiftt: 0x3040
--  __TEXT.__swift5_reflstr: 0x3e80
--  __TEXT.__swift5_fieldmd: 0x3648
-+  __TEXT.__swift5_capture: 0x12fc
-+  __TEXT.__constg_swiftt: 0x30d8
-+  __TEXT.__swift5_reflstr: 0x3f90
-+  __TEXT.__swift5_fieldmd: 0x36b4
-   __TEXT.__swift5_types: 0x24c
-   __TEXT.__swift_as_entry: 0x1cc
-   __TEXT.__swift_as_ret: 0x1cc
 
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__gcc_except_tab: 0x268
-   __TEXT.__oslogstring: 0x1687
--  __TEXT.__unwind_info: 0x3788
--  __TEXT.__eh_frame: 0x3cac
-+  __TEXT.__unwind_info: 0x37f8
-+  __TEXT.__eh_frame: 0x3cd4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xaa8
-+  __DATA_CONST.__const: 0xad8
-   __DATA_CONST.__objc_classlist: 0x190
-   __DATA_CONST.__objc_protolist: 0x90
-   __DATA_CONST.__objc_imageinfo: 0x8
-
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x88d8
-+  __AUTH_CONST.__const: 0x8948
-   __AUTH_CONST.__cfstring: 0x6a0
--  __AUTH_CONST.__objc_const: 0x5070
-+  __AUTH_CONST.__objc_const: 0x5130
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__auth_got: 0xfa8
-+  __AUTH_CONST.__auth_got: 0xfb0
-   __AUTH.__objc_data: 0x1078
--  __AUTH.__data: 0x3618
-+  __AUTH.__data: 0x36d8
-   __DATA.__objc_ivar: 0x70
--  __DATA.__data: 0x1000
-+  __DATA.__data: 0xff0
-   __DATA.__common: 0x220
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4703
 -  Symbols:   10523
 -  CStrings:  782
 +  Functions: 4727
 +  Symbols:   10584
 +  CStrings:  788
- 
 Symbols:
 + _$s22MotionHealthAlgorithms21StepTestVO2MaxManagerC13failureStatus8peakMETs21confidentClusterCountAA0defgJ0OSgSd_SitFZ
 + _$s22MotionHealthAlgorithms23StepTestFeedbackManagerC18stageFailsProtocol18cadenceEvaluations010belowFloorL0SbSi_SitFZ

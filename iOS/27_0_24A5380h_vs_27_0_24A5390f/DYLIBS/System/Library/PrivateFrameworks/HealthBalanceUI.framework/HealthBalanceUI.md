@@ -2,92 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/HealthBalanceUI.framework/HealthBalanceUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc4a50` | `0xc5c70` | **`+0x1220`** |
+| `__DATA.__data` | `0xc50` | `0xd50` | **`+0x100`** |
+| `__DATA_DIRTY.__data` | `0x4128` | `0x4090` | **`-0x98`** |
+| `__TEXT.__swift5_fieldmd` | `0x2074` | `0x2104` | **`+0x90`** |
+| `__TEXT.__swift5_reflstr` | `0x232b` | `0x237b` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x2550` | `0x2580` | **`+0x30`** |
+| `__TEXT.__swift5_typeref` | `0x1c24` | `0x1c48` | **`+0x24`** |
+| `__DATA_CONST.__got` | `0xe80` | `0xea0` | **`+0x20`** |
+| `__TEXT.__const` | `0x5d44` | `0x5d54` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1a90` | `0x1a98` | **`+0x8`** |
+| `__AUTH_CONST.__const` | `0x2de0` | `0x2de8` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -7027.0.64.0.0
--  __TEXT.__text: 0xc4a50
 +7027.0.67.2.1
-+  __TEXT.__text: 0xc5c70
-   __TEXT.__objc_methlist: 0x19c
--  __TEXT.__const: 0x5d44
--  __TEXT.__swift5_typeref: 0x1c24
--  __TEXT.__swift5_reflstr: 0x232b
-+  __TEXT.__const: 0x5d54
-+  __TEXT.__swift5_typeref: 0x1c48
-+  __TEXT.__swift5_reflstr: 0x237b
-   __TEXT.__swift5_assocty: 0x4b0
-   __TEXT.__constg_swiftt: 0x1fb0
--  __TEXT.__swift5_fieldmd: 0x2074
-+  __TEXT.__swift5_fieldmd: 0x2104
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_proto: 0x384
-   __TEXT.__swift5_types: 0x224
 
-   __TEXT.__swift_as_cont: 0xb8
-   __TEXT.__oslogstring: 0x73a
-   __TEXT.__swift5_protos: 0xc
--  __TEXT.__unwind_info: 0x2550
-+  __TEXT.__unwind_info: 0x2580
-   __TEXT.__eh_frame: 0x1e58
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x220
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__got: 0xe80
--  __AUTH_CONST.__const: 0x2de0
-+  __DATA_CONST.__got: 0xea0
-+  __AUTH_CONST.__const: 0x2de8
-   __AUTH_CONST.__objc_const: 0x970
--  __AUTH_CONST.__auth_got: 0x1a90
-+  __AUTH_CONST.__auth_got: 0x1a98
-   __AUTH.__objc_data: 0x1e8
-   __AUTH.__data: 0x5d0
--  __DATA.__data: 0xc50
-+  __DATA.__data: 0xd50
-   __DATA.__bss: 0x2038
-   __DATA.__common: 0x48
-   __DATA_DIRTY.__objc_data: 0xf0
--  __DATA_DIRTY.__data: 0x4128
-+  __DATA_DIRTY.__data: 0x4090
-   __DATA_DIRTY.__bss: 0x5300
-   __DATA_DIRTY.__common: 0x50
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3438
--  Symbols:   916
+-  Symbols:   874
 +  Functions: 3455
-+  Symbols:   917
-   CStrings:  198
- 
++  Symbols:   875
 Symbols:
 + ___swift_memcpy13_8
 + _get_witness_table 15HealthBalanceUI19ChartPlotSizeReaderVyAA016OvernightMetricsD17SizingPlaceholderV05SwiftC019_ConditionalContentVyAF08ModifiedN0VyAA0hiD21WarmupProgressCounterVAF21_TraitWritingModifierVyAF010TransitionS3KeyVGGAF4ViewPAFE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAJyAF5GroupVyAHyAF03AnyX0VAA010AnimatablehiD0VGGAQG_AA0hiD15AnimationValuesV010IndividualI5StateVQo_GGAfSHPyHC

@@ -2,117 +2,71 @@
 
 > `/Applications/ServicesPaymentAngel.app/ServicesPaymentAngel`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x25608` | `0x2bebc` | **`+0x68b4`** |
+| `__TEXT.__objc_methname` | `0x2b1d` | `0x323d` | **`+0x720`** |
+| `__DATA.__objc_const` | `0x42f0` | `0x49b8` | **`+0x6c8`** |
+| `__TEXT.__objc_stubs` | `0x13a0` | `0x1780` | **`+0x3e0`** |
+| `__DATA.__objc_data` | `0x1168` | `0x1510` | **`+0x3a8`** |
+| `__DATA.__data` | `0x1658` | `0x19c8` | **`+0x370`** |
+| `__DATA_CONST.__const` | `0x1860` | `0x1b90` | **`+0x330`** |
+| `__TEXT.__oslogstring` | `0x1b8f` | `0x1e9f` | **`+0x310`** |
+| `__TEXT.__objc_methtype` | `0x141a` | `0x169c` | **`+0x282`** |
+| `__TEXT.__eh_frame` | `0xa70` | `0xc90` | **`+0x220`** |
+| `__TEXT.__constg_swiftt` | `0xfb0` | `0x1178` | **`+0x1c8`** |
+| `__TEXT.__const` | `0x1264` | `0x1414` | **`+0x1b0`** |
+| `__TEXT.__swift5_typeref` | `0x9e6` | `0xb94` | **`+0x1ae`** |
+| `__TEXT.__swift5_reflstr` | `0x894` | `0xa34` | **`+0x1a0`** |
+| `__TEXT.__auth_stubs` | `0x1130` | `0x12b0` | **`+0x180`** |
+| `__TEXT.__unwind_info` | `0x960` | `0xad0` | **`+0x170`** |
+| `__DATA.__objc_selrefs` | `0x970` | `0xac0` | **`+0x150`** |
+| `__TEXT.__objc_classname` | `0x684` | `0x7c4` | **`+0x140`** |
+| `__TEXT.__swift5_capture` | `0x8dc` | `0xa18` | **`+0x13c`** |
+| `__TEXT.__swift5_fieldmd` | `0x73c` | `0x854` | **`+0x118`** |
+| `__TEXT.__objc_methlist` | `0xaa4` | `0xb7c` | **`+0xd8`** |
+| `__DATA_CONST.__auth_got` | `0x8a0` | `0x960` | **`+0xc0`** |
+| `__DATA_CONST.__got` | `0x2b8` | `0x358` | **`+0xa0`** |
+| `__DATA_CONST.__auth_ptr` | `0x368` | `0x3c8` | **`+0x60`** |
+| `__TEXT.__cstring` | `0x881` | `0x8d1` | **`+0x50`** |
+| `__DATA_CONST.__objc_classlist` | `0x90` | `0xb0` | **`+0x20`** |
+| `__DATA_CONST.__objc_protolist` | `0xd0` | `0xe0` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x70` | `0x80` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x78` | `0x84` | **`+0xc`** |
+| `__DATA.__common` | `0xe8` | `0xf0` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x70` | `0x78` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x40` | `0x48` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x3c` | `0x40` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_entry`
 - `__TEXT.__swift5_proto`
 - `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_entry`
+
+### Other Changes
 
 ```diff
 
 -1.0.22.0.0
--  __TEXT.__text: 0x25608
--  __TEXT.__auth_stubs: 0x1130
--  __TEXT.__objc_stubs: 0x13a0
--  __TEXT.__objc_methlist: 0xaa4
--  __TEXT.__const: 0x1264
--  __TEXT.__swift5_typeref: 0x9e6
--  __TEXT.__swift5_fieldmd: 0x73c
--  __TEXT.__constg_swiftt: 0xfb0
 +1.0.24.0.0
-+  __TEXT.__text: 0x2bebc
-+  __TEXT.__auth_stubs: 0x12b0
-+  __TEXT.__objc_stubs: 0x1780
-+  __TEXT.__objc_methlist: 0xb7c
-+  __TEXT.__const: 0x1414
-+  __TEXT.__swift5_typeref: 0xb94
-+  __TEXT.__swift5_fieldmd: 0x854
-+  __TEXT.__constg_swiftt: 0x1178
-   __TEXT.__swift5_builtin: 0x3c
--  __TEXT.__swift5_reflstr: 0x894
-+  __TEXT.__swift5_reflstr: 0xa34
-   __TEXT.__swift5_assocty: 0x90
-   __TEXT.__swift5_proto: 0x54
--  __TEXT.__swift5_types: 0x70
--  __TEXT.__objc_classname: 0x684
--  __TEXT.__objc_methtype: 0x141a
--  __TEXT.__cstring: 0x881
--  __TEXT.__objc_methname: 0x2b1d
--  __TEXT.__oslogstring: 0x1b8f
-+  __TEXT.__swift5_types: 0x80
-+  __TEXT.__objc_classname: 0x7c4
-+  __TEXT.__objc_methtype: 0x169c
-+  __TEXT.__cstring: 0x8d1
-+  __TEXT.__objc_methname: 0x323d
-+  __TEXT.__oslogstring: 0x1e9f
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__swift5_capture: 0x8dc
--  __TEXT.__swift_as_entry: 0x40
--  __TEXT.__swift_as_ret: 0x3c
--  __TEXT.__swift_as_cont: 0x78
-+  __TEXT.__swift5_capture: 0xa18
-+  __TEXT.__swift_as_entry: 0x48
-+  __TEXT.__swift_as_ret: 0x40
-+  __TEXT.__swift_as_cont: 0x84
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__unwind_info: 0x960
--  __TEXT.__eh_frame: 0xa70
--  __DATA_CONST.__const: 0x1860
--  __DATA_CONST.__objc_classlist: 0x90
--  __DATA_CONST.__objc_protolist: 0xd0
-+  __TEXT.__unwind_info: 0xad0
-+  __TEXT.__eh_frame: 0xc90
-+  __DATA_CONST.__const: 0x1b90
-+  __DATA_CONST.__objc_classlist: 0xb0
-+  __DATA_CONST.__objc_protolist: 0xe0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_protorefs: 0x70
--  __DATA_CONST.__auth_got: 0x8a0
--  __DATA_CONST.__got: 0x2b8
--  __DATA_CONST.__auth_ptr: 0x368
--  __DATA.__objc_const: 0x42f0
--  __DATA.__objc_selrefs: 0x970
--  __DATA.__objc_data: 0x1168
--  __DATA.__data: 0x1658
-+  __DATA_CONST.__objc_protorefs: 0x78
-+  __DATA_CONST.__auth_got: 0x960
-+  __DATA_CONST.__got: 0x358
-+  __DATA_CONST.__auth_ptr: 0x3c8
-+  __DATA.__objc_const: 0x49b8
-+  __DATA.__objc_selrefs: 0xac0
-+  __DATA.__objc_data: 0x1510
-+  __DATA.__data: 0x19c8
-   __DATA.__bss: 0x800
--  __DATA.__common: 0xe8
-+  __DATA.__common: 0xf0
-   - /AppleInternal/Library/Frameworks/TapToRadarKit.framework/TapToRadarKit
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-+  - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-+  - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
-   - /System/Library/Frameworks/Security.framework/Security
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard
-   - /System/Library/PrivateFrameworks/BoardServices.framework/BoardServices
-   - /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
-+  - /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
-   - /System/Library/PrivateFrameworks/PassKitCore.framework/PassKitCore
-   - /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices
-   - /System/Library/PrivateFrameworks/ServicesPaymentUI.framework/ServicesPaymentUI
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+
++  - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
+
++  - /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
+
 -  Functions: 849
 -  Symbols:   2367
 -  CStrings:  708
 +  Functions: 966
 +  Symbols:   2708
 +  CStrings:  793
- 
 Symbols:
 + $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.110TQ0_
 + $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.110Tu

@@ -2,92 +2,59 @@
 
 > `/System/Library/CryptoTokenKit/usbsmartcardreaderd.slotd/usbsmartcardreaderd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_doubleobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__objc_const` | `0x2700` | `0x3348` | **`+0xc48`** |
+| `__TEXT.__text` | `0x16c74` | `0x176c0` | **`+0xa4c`** |
+| `__TEXT.__objc_methname` | `0x236e` | `0x2a06` | **`+0x698`** |
+| `__TEXT.__objc_stubs` | `0x3100` | `0x3660` | **`+0x560`** |
+| `__TEXT.__objc_methlist` | `0x1734` | `0x1a94` | **`+0x360`** |
+| `__DATA.__objc_data` | `0x8c0` | `0xb90` | **`+0x2d0`** |
+| `__TEXT.__objc_methtype` | `0x891` | `0xaf3` | **`+0x262`** |
+| `__DATA.__data` | `0x1f0` | `0x370` | **`+0x180`** |
+| `__DATA.__objc_selrefs` | `0xde8` | `0xf40` | **`+0x158`** |
+| `__TEXT.__cstring` | `0x15db` | `0x16ea` | **`+0x10f`** |
+| `__TEXT.__objc_classname` | `0x1fc` | `0x2fc` | **`+0x100`** |
+| `__DATA_CONST.__const` | `0x808` | `0x898` | **`+0x90`** |
+| `__TEXT.__gcc_except_tab` | `0x278` | `0x2e8` | **`+0x70`** |
+| `__DATA.__objc_ivar` | `0xe4` | `0x144` | **`+0x60`** |
+| `__DATA_CONST.__cfstring` | `0x2140` | `0x21a0` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x630` | `0x680` | **`+0x50`** |
+| `__DATA_CONST.__objc_classlist` | `0xe0` | `0x128` | **`+0x48`** |
+| `__DATA.__bss` | `0xd0` | `0x100` | **`+0x30`** |
+| `__TEXT.__oslogstring` | `0x1a90` | `0x1a69` | **`-0x27`** |
+| `__DATA_CONST.__objc_protolist` | `0x28` | `0x48` | **`+0x20`** |
+| `__TEXT.__auth_stubs` | `0x650` | `0x670` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x150` | `0x168` | **`+0x18`** |
+| `__DATA_CONST.__auth_got` | `0x338` | `0x348` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0xc0` | `0xd0` | **`+0x10`** |
+| `__TEXT.__const` | `0x2a8` | `0x2a0` | **`-0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_dictobj`
 - `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_doubleobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protorefs`
+
+### Other Changes
 
 ```diff
 
 -878.0.8.0.0
--  __TEXT.__text: 0x16c74
--  __TEXT.__auth_stubs: 0x650
--  __TEXT.__objc_stubs: 0x3100
--  __TEXT.__objc_methlist: 0x1734
--  __TEXT.__const: 0x2a8
--  __TEXT.__objc_classname: 0x1fc
--  __TEXT.__objc_methtype: 0x891
--  __TEXT.__objc_methname: 0x236e
--  __TEXT.__oslogstring: 0x1a90
--  __TEXT.__cstring: 0x15db
--  __TEXT.__gcc_except_tab: 0x278
--  __TEXT.__unwind_info: 0x630
--  __DATA_CONST.__const: 0x808
--  __DATA_CONST.__cfstring: 0x2140
--  __DATA_CONST.__objc_classlist: 0xe0
 +878.0.9.0.0
-+  __TEXT.__text: 0x176c0
-+  __TEXT.__auth_stubs: 0x670
-+  __TEXT.__objc_stubs: 0x3660
-+  __TEXT.__objc_methlist: 0x1a94
-+  __TEXT.__const: 0x2a0
-+  __TEXT.__objc_classname: 0x2fc
-+  __TEXT.__objc_methtype: 0xaf3
-+  __TEXT.__objc_methname: 0x2a06
-+  __TEXT.__oslogstring: 0x1a69
-+  __TEXT.__cstring: 0x16ea
-+  __TEXT.__gcc_except_tab: 0x2e8
-+  __TEXT.__unwind_info: 0x680
-+  __DATA_CONST.__const: 0x898
-+  __DATA_CONST.__cfstring: 0x21a0
-+  __DATA_CONST.__objc_classlist: 0x128
-   __DATA_CONST.__objc_catlist: 0x18
--  __DATA_CONST.__objc_protolist: 0x28
-+  __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0xc0
-+  __DATA_CONST.__objc_superrefs: 0xd0
-   __DATA_CONST.__objc_intobj: 0x408
-   __DATA_CONST.__objc_doubleobj: 0x30
-   __DATA_CONST.__objc_arraydata: 0xe0
-   __DATA_CONST.__objc_dictobj: 0x28
-   __DATA_CONST.__objc_arrayobj: 0x120
--  __DATA_CONST.__auth_got: 0x338
--  __DATA_CONST.__got: 0x150
--  __DATA.__objc_const: 0x2700
--  __DATA.__objc_selrefs: 0xde8
--  __DATA.__objc_ivar: 0xe4
--  __DATA.__objc_data: 0x8c0
--  __DATA.__data: 0x1f0
--  __DATA.__bss: 0xd0
-+  __DATA_CONST.__auth_got: 0x348
-+  __DATA_CONST.__got: 0x168
-+  __DATA.__objc_const: 0x3348
-+  __DATA.__objc_selrefs: 0xf40
-+  __DATA.__objc_ivar: 0x144
-+  __DATA.__objc_data: 0xb90
-+  __DATA.__data: 0x370
-+  __DATA.__bss: 0x100
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CryptoTokenKit.framework/CryptoTokenKit
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /System/Library/PrivateFrameworks/IOUSBHost.framework/IOUSBHost
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 680
 -  Symbols:   146
 -  CStrings:  1155
 +  Functions: 740
 +  Symbols:   150
 +  CStrings:  1281
- 
 Symbols:
 + _NSLocalizedDescriptionKey
 + ___kCFBooleanFalse

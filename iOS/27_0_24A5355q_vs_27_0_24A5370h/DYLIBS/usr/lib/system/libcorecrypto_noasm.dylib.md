@@ -2,50 +2,31 @@
 
 > `/usr/lib/system/libcorecrypto_noasm.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x85464` | `0x8743c` | **`+0x1fd8`** |
+| `__TEXT.__cstring` | `0x5f9d` | `0x5530` | **`-0xa6d`** |
+| `__DATA_CONST.__const` | `0x21b0` | `0x1ec8` | **`-0x2e8`** |
+| `__AUTH_CONST.__const` | `0x1980` | `0x1a70` | **`+0xf0`** |
+| `__TEXT.__eh_frame` | `0x3a0` | `0x488` | **`+0xe8`** |
+| `__AUTH.__data` | `0x118` | `0x148` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x1c20` | `0x1c40` | **`+0x20`** |
+
+### Other Changes
+
 ```diff
 
 -2097.0.0.0.0
--  __TEXT.__text: 0x85464 sha256:cbf066f788a38f0ef61d81b14dd00b29676bfe6ae84fded3285151f56c7c66ea
--  __TEXT.__const: 0x201e8 sha256:5e0d6b309cfa4a2c23e58d5381817e808950b4243e316975e3b59cdb0edd0c51
--  __TEXT.__cstring: 0x5f9d sha256:8bd4bc847230b4478a5fe1264569d6bf0ff1231b5192be4e846d370120778ece
--  __TEXT.__fips_hmacs: 0x20 sha256:53cdd95f37fc9106230e42770bdaa885aebffb7a49332fa9759fd860a325e7b6
 +2109.0.7.0.0
-+  __TEXT.__text: 0x8743c sha256:a78525fc315ac084499e8d7c9501fb0e80a4adc900ce5e198a882fe5bed47943
-+  __TEXT.__const: 0x201e8 sha256:12eab47955062725f611bcabec5def9a55aed1a00732c76de62eb47b259314d4
-+  __TEXT.__cstring: 0x5530 sha256:95d744d9d6538d4052c0c85c540defd3846c6b984e61dd2407b0449a5070a684
-+  __TEXT.__fips_hmacs: 0x20 sha256:b1a861d0246ea988f1b9a3047045cb4f7ac56ae4f4b371eeae167e90bf6baa09
-   __TEXT.__oslogstring: 0x60 sha256:78e974179b007217d55508910e62a9486547baf68b8e3aea9812d2437b46e85a
--  __TEXT.__unwind_info: 0x1c20 sha256:57943afeb6106c75d98d116505973113a8a80618600321086b59ef9b7f2cb7dd
--  __TEXT.__eh_frame: 0x3a0 sha256:1721c9c9f0bbf925cf34f4464576e2feaa7b257f0ed53112593b36d6b8adb0af
-+  __TEXT.__unwind_info: 0x1c40 sha256:da3ab24bed2a3f8beaf42141a40bf5d559170b1f2180c24332d8d89e81278199
-+  __TEXT.__eh_frame: 0x488 sha256:c3c18c3b2998e928ceb601b628f1f53cb39eae2f47ce45f4ff7c68f2e62745ce
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x21b0 sha256:bd3b978d847c5ccaf22a1496d8b41934006550559af312e3c5b1f58da1a6958a
-+  __DATA_CONST.__const: 0x1ec8 sha256:2eebf6578182e1321d312e25c31212350009828de663ab7577e57a553cb077b7
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1980 sha256:961618358690e8ed8d3ae42e8f69cd28b2ab6eb18aa8843f6b9f98a6155ba054
-+  __AUTH_CONST.__const: 0x1a70 sha256:533f8c67acf629f18c3c15a8ee234c005759205a356ac52d476f61f4c9ee2f41
-   __AUTH_CONST.__auth_got: 0x118 sha256:1f6c9de2e555d5d589e1149fed58f9cbcc101739df97d4a4d694a13f1242c5b9
--  __AUTH.__data: 0x118 sha256:cf9dd9e46fbd7b39c39ea81f4b0ce4f6a8ad1bca0f49a318714b5c0ac586792e
--  __DATA.__data: 0x6860 sha256:a801434b0e85177167d0bd249f625f0a434caccc46a971f68a4fa6ba742f2a61
-+  __AUTH.__data: 0x148 sha256:c1f34c49ae915c8e9913d6f12755edeb0ad1eb936735b3d8bb52a6e6ce92ae0d
-+  __DATA.__data: 0x6860 sha256:cb9fef049e3668f244159d6c4533a2cf146e6f4f2198d0b4d9b77ac2a3c6974e
-   __DATA.__bss: 0x1a38 sha256:054249310193267110a4519d47f46913a45ba0ff248832e8ee86ba2a3697e713
-   __DATA.__common: 0x8 sha256:af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc
-   - /usr/lib/system/libcompiler_rt.dylib
 
-   - /usr/lib/system/libsystem_platform.dylib
-   - /usr/lib/system/libsystem_pthread.dylib
-   - /usr/lib/system/libsystem_trace.dylib
--  UUID: E7239B92-8B89-32E8-B740-15468E3839E5
 -  Functions: 2460
--  Symbols:   4400
+-  Symbols:   2760
 -  CStrings:  553
-+  UUID: F4933154-5C39-3556-8BCE-12B1233B0A3E
 +  Functions: 2487
-+  Symbols:   4454
++  Symbols:   2786
 +  CStrings:  519
- 
 Symbols:
 + _OUTLINED_FUNCTION_8
 + _cc_free
@@ -170,5 +151,4 @@ CStrings:
 - "FIPSPOST_USER [%llu] %s:%d: PASSED: (%u ms) - fipspost_post_rsa_enc_dec\n"
 - "FIPSPOST_USER [%llu] %s:%d: PASSED: (%u ms) - fipspost_post_rsa_sig\n"
 - "FIPSPOST_USER [%llu] %s:%d: PASSED: (%u ms) - fipspost_post_shake\n"
-
 ```

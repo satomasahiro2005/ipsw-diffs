@@ -2,69 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/CommunicationDetails.framework/CommunicationDetails`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0xa50` | `0x0` | **`-0xa50`** |
+| `__TEXT.__text` | `0xaa300` | `0xaa770` | **`+0x470`** |
+| `__AUTH_CONST.__const` | `0x4eb8` | `0x5040` | **`+0x188`** |
+| `__TEXT.__swift5_capture` | `0xefc` | `0xf9c` | **`+0xa0`** |
+| `__AUTH_CONST.__objc_const` | `0x4038` | `0x4050` | **`+0x18`** |
+| `__TEXT.__swift5_typeref` | `0x6292` | `0x62a0` | **`+0xe`** |
+| `__AUTH_CONST.__auth_got` | `0x1740` | `0x1748` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1600` | `0x15f8` | **`-0x8`** |
+| `__TEXT.__objc_methlist` | `0x1748` | `0x1740` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x2ad0` | `0x2ad8` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__swift5_reflstr`
+
+### Other Changes
 
 ```diff
 
 -1491.100.1.2.25
--  __TEXT.__text: 0xa600c
--  __TEXT.__objc_methlist: 0x1748
 +1491.200.63.2.1
-+  __TEXT.__text: 0xa648c
-+  __TEXT.__objc_methlist: 0x1740
-   __TEXT.__const: 0x849c
-   __TEXT.__constg_swiftt: 0x4274
--  __TEXT.__swift5_typeref: 0x6292
-+  __TEXT.__swift5_typeref: 0x62a0
-   __TEXT.__swift5_builtin: 0x1cc
-   __TEXT.__swift5_reflstr: 0x302b
-   __TEXT.__swift5_fieldmd: 0x25b4
-   __TEXT.__swift5_assocty: 0x700
-   __TEXT.__cstring: 0x1d29
--  __TEXT.__swift5_capture: 0xefc
-+  __TEXT.__swift5_capture: 0xf9c
-   __TEXT.__swift5_proto: 0x2ac
-   __TEXT.__swift5_types: 0x270
-   __TEXT.__swift_as_entry: 0xa0
 
-   __TEXT.__oslogstring: 0x1317
-   __TEXT.__swift5_protos: 0x34
-   __TEXT.__swift5_mpenum: 0x50
--  __TEXT.__unwind_info: 0x3440
-+  __TEXT.__unwind_info: 0x3438
-   __TEXT.__eh_frame: 0x260c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x188
-   __DATA_CONST.__objc_protolist: 0x1f0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1600
-+  __DATA_CONST.__objc_selrefs: 0x15f8
-   __DATA_CONST.__objc_protorefs: 0xf8
--  __DATA_CONST.__got: 0xa50
--  __AUTH_CONST.__const: 0x4eb8
--  __AUTH_CONST.__objc_const: 0x4038
--  __AUTH_CONST.__auth_got: 0x1740
-+  __DATA_CONST.__got: 0x0
-+  __AUTH_CONST.__const: 0x5040
-+  __AUTH_CONST.__objc_const: 0x4050
-+  __AUTH_CONST.__auth_got: 0x1748
-   __AUTH.__objc_data: 0x2988
-   __AUTH.__data: 0x2450
-   __DATA.__data: 0x3139
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4245
--  Symbols:   10725
+-  Symbols:   10287
 +  Functions: 4256
-+  Symbols:   10729
-   CStrings:  241
- 
++  Symbols:   10293
 Symbols:
 + _$s20CommunicationDetails0B10TabBarViewC06selectC0_8animatedyAA0bC0VSg_SbtFySbcfU2_yyXEfU_TA
 + _$s20CommunicationDetails0B10TabBarViewC06selectC0_8animatedyAA0bC0VSg_SbtFyyXEfU0_
@@ -103,7 +70,6 @@ Symbols:
 + _$sIg_Ieg_TRTA
 + _UIContentSizeCategoryAccessibilityMedium
 + _get_witness_table 7SwiftUI4ViewRzlAA15ModifiedContentVyAaBPAAE22scrollEdgeEffectHidden_3forQrSb_AA0G0O3SetVtFQOyAeAE14contentMargins__AGQrAK_12CoreGraphics7CGFloatVSgAA0E15MarginPlacementVtFQOyAeAE0F10Indicators_4axesQrAA25ScrollIndicatorVisibilityV_AA4AxisOAJVtFQOyAeAE0fS5Flash8onAppearQrSb_tFQOyADyAeAE0F8Position_6anchorQrAA7BindingVyAA0U8PositionVG_AA9UnitPointVSgtFQOyAeAE0zU14GeometryChangeAG2of6actionQrqd__m_qd__AA0U8GeometryVcyqd___qd__tctSQRd__lFQOyAeAE0zuW6Change9threshold_QrSd_ySbctFQOyADyAeAE0Z6ChangeA11_7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAeAEA17_A11_A18__Qrqd___Sbyqd___qd__tctSQRd__lFQOyAeAEA17_A11_A18__Qrqd___Sbyqd___qd__tctSQRd__lFQOyAeAE0F14TargetBehavioryQrqd__AA0U14TargetBehaviorRd__lFQOyAA0uC0VyAA09_VariadicC0O4TreeVy_AA11_LayoutRootVy20CommunicationDetails07DetailsuC0V16HeaderBodyLayout33_2DB30AA36CA0269A8F3FE974D4E61064LLVyx_GGAA05TupleE0VyAA6VStackVyA38_yAA6SpacerVSg_AeAE24listHasLazyStackBehaviorQryFQOyx_Qo_A43_QPGG_ADyADyADyA29_22DetailsHeaderContainerA33_LLVAA21_TraitWritingModifierVyAA12_LayoutTraitVyA29_25DetailsHeaderContainerKeyA33_LLVGGGAA07_OffsetH0VGAA12_FrameLayoutVGQPGGG_A31_07DetailsU8BehaviorVyx_GQo__AOQo__SbQo__SbQo_AA25_AppearanceActionModifierVG_Qo__A29_07DetailsE11OffsetProxyC0U7MetricsVQo__Qo_AA30_SafeAreaRegionsIgnoringLayoutVG_Qo__Qo__Qo__Qo_AA23_GeometryActionModifierVyAOGGAaBHPqd__AaBHD2_A91_HO_A94_AA0C8ModifierHPyHCHC
-+ _objc_msgSend$setMaximumContentSizeCategory:
 + _symbolic Ig_
 + _symbolic _____y_____y_____y_____y_____yAAy_____y_____y_____yAAy_____y_____y_____y_____y_____y_____y______y_____yx_GG_____y_____yAHy_____Sg______yx_Qo_AKQPGG_AAyAAyAAy__________y_____y_____GGG_____G_____GQPGGG______yx_GQo_______Qo__SbQo__SbQo______G_Qo_______Qo__Qo______G_Qo__Qo__Qo__Qo______yA4_GG 7SwiftUI15ModifiedContentV AA4ViewPAAE22scrollEdgeEffectHidden_3forQrSb_AA0G0O3SetVtFQO AeAE14contentMargins__AGQrAK_12CoreGraphics7CGFloatVSgAA0D15MarginPlacementVtFQO AeAE0F10Indicators_4axesQrAA25ScrollIndicatorVisibilityV_AA4AxisOAJVtFQO AeAE0fS5Flash8onAppearQrSb_tFQO AeAE0F8Position_6anchorQrAA7BindingVyAA0U8PositionVG_AA9UnitPointVSgtFQO AeAE0zU14GeometryChangeAG2of6actionQrqd__m_qd__AA0U8GeometryVcyqd___qd__tctSQRd__lFQO AeAE0zuW6Change9threshold_QrSd_ySbctFQO AeAE0Z6ChangeA11_7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQO AeAEA17_A11_A18__Qrqd___Sbyqd___qd__tctSQRd__lFQO AeAEA17_A11_A18__Qrqd___Sbyqd___qd__tctSQRd__lFQO AeAE0F14TargetBehavioryQrqd__AA0U14TargetBehaviorRd__lFQO AA0uE0V AA09_VariadicE0O4TreeV AA11_LayoutRootV 20CommunicationDetails07DetailsuE0V16HeaderBodyLayout33_2DB30AA36CA0269A8F3FE974D4E61064LLV AA05TupleD0V AA6VStackV AA6SpacerV AeAE24listHasLazyStackBehaviorQryFQO A29_22DetailsHeaderContainerA33_LLV AA21_TraitWritingModifierV AA12_LayoutTraitV A29_25DetailsHeaderContainerKeyA33_LLV AA07_OffsetH0V AA12_FrameLayoutV A31_07DetailsU8BehaviorV AO AA25_AppearanceActionModifierV A29_07DetailsD11OffsetProxyC0U7MetricsV AA30_SafeAreaRegionsIgnoringLayoutV AA23_GeometryActionModifierV
 - +[UIKitForwardDeclarationHelper scrollViewForPageViewController:]
@@ -138,8 +104,5 @@ Symbols:
 - _$s20CommunicationDetails6HeaderV0C12ViewDelegateP06headerD0_27didRequestHiddenPocketEdgesyAC0cD0C_So10UIRectEdgeVtFTq
 - __OBJC_$_CLASS_METHODS_UIKitForwardDeclarationHelper
 - _get_witness_table 7SwiftUI4ViewRzlAA15ModifiedContentVyAaBPAAE14contentMargins__3forQrAA4EdgeO3SetV_12CoreGraphics7CGFloatVSgAA0E15MarginPlacementVtFQOyAeAE16scrollIndicators_4axesQrAA25ScrollIndicatorVisibilityV_AA4AxisOAJVtFQOyAeAE0pQ5Flash8onAppearQrSb_tFQOyADyAeAE0P8Position_6anchorQrAA7BindingVyAA0sZ0VG_AA9UnitPointVSgtFQOyAeAE0xS14GeometryChangeAG2of6actionQrqd__m_qd__AA0S8GeometryVcyqd___qd__tctSQRd__lFQOyAeAE0xsU6Change9threshold_QrSd_ySbctFQOyADyAeAE0X6ChangeA10_7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAeAEA16_A10_A17__Qrqd___Sbyqd___qd__tctSQRd__lFQOyAeAEA16_A10_A17__Qrqd___Sbyqd___qd__tctSQRd__lFQOyAeAE0P14TargetBehavioryQrqd__AA0S14TargetBehaviorRd__lFQOyAA0sC0VyAA09_VariadicC0O4TreeVy_AA11_LayoutRootVy20CommunicationDetails07DetailssC0V16HeaderBodyLayout33_2DB30AA36CA0269A8F3FE974D4E61064LLVyx_GGAA05TupleE0VyAA6VStackVyA37_yAA6SpacerVSg_AeAE24listHasLazyStackBehaviorQryFQOyx_Qo_A42_QPGG_ADyADyADyA28_22DetailsHeaderContainerA32_LLVAA21_TraitWritingModifierVyAA12_LayoutTraitVyA28_25DetailsHeaderContainerKeyA32_LLVGGGAA13_OffsetEffectVGAA12_FrameLayoutVGQPGGG_A30_07DetailsS8BehaviorVyx_GQo__ANQo__SbQo__SbQo_AA25_AppearanceActionModifierVG_Qo__A28_07DetailsE11OffsetProxyC0S7MetricsVQo__Qo_AA30_SafeAreaRegionsIgnoringLayoutVG_Qo__Qo__Qo_AA23_GeometryActionModifierVyANGGAaBHPqd__AaBHD2_A89_HO_A92_AA0C8ModifierHPyHCHC
-- _objc_msgSend$_scrollView
-- _objc_msgSend$_setHiddenPocketEdges:
-- _objc_msgSend$scrollViewForPageViewController:
 - _symbolic _____y_____y_____y_____yAAy_____y_____y_____yAAy_____y_____y_____y_____y_____y_____y______y_____yx_GG_____y_____yAHy_____Sg______yx_Qo_AKQPGG_AAyAAyAAy__________y_____y_____GGG_____G_____GQPGGG______yx_GQo_______Qo__SbQo__SbQo______G_Qo_______Qo__Qo______G_Qo__Qo__Qo______yA4_GG 7SwiftUI15ModifiedContentV AA4ViewPAAE14contentMargins__3forQrAA4EdgeO3SetV_12CoreGraphics7CGFloatVSgAA0D15MarginPlacementVtFQO AeAE16scrollIndicators_4axesQrAA25ScrollIndicatorVisibilityV_AA4AxisOAJVtFQO AeAE0pQ5Flash8onAppearQrSb_tFQO AeAE0P8Position_6anchorQrAA7BindingVyAA0sZ0VG_AA9UnitPointVSgtFQO AeAE0xS14GeometryChangeAG2of6actionQrqd__m_qd__AA0S8GeometryVcyqd___qd__tctSQRd__lFQO AeAE0xsU6Change9threshold_QrSd_ySbctFQO AeAE0X6ChangeA10_7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQO AeAEA16_A10_A17__Qrqd___Sbyqd___qd__tctSQRd__lFQO AeAEA16_A10_A17__Qrqd___Sbyqd___qd__tctSQRd__lFQO AeAE0P14TargetBehavioryQrqd__AA0S14TargetBehaviorRd__lFQO AA0sE0V AA09_VariadicE0O4TreeV AA11_LayoutRootV 20CommunicationDetails07DetailssE0V16HeaderBodyLayout33_2DB30AA36CA0269A8F3FE974D4E61064LLV AA05TupleD0V AA6VStackV AA6SpacerV AeAE24listHasLazyStackBehaviorQryFQO A28_22DetailsHeaderContainerA32_LLV AA21_TraitWritingModifierV AA12_LayoutTraitV A28_25DetailsHeaderContainerKeyA32_LLV AA13_OffsetEffectV AA12_FrameLayoutV A30_07DetailsS8BehaviorV AN AA25_AppearanceActionModifierV A28_07DetailsD11OffsetProxyC0S7MetricsV AA30_SafeAreaRegionsIgnoringLayoutV AA23_GeometryActionModifierV
 ```

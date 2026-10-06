@@ -2,81 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/SoftwareUpdateUIMobile.framework/SoftwareUpdateUIMobile`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7d79c` | `0x75d1c` | **`-0x7a80`** |
+| `__TEXT.__oslogstring` | `0x8500` | `0x77f0` | **`-0xd10`** |
+| `__TEXT.__gcc_except_tab` | `0x1978` | `0x11b4` | **`-0x7c4`** |
+| `__DATA_CONST.__const` | `0x8ef8` | `0x9330` | **`+0x438`** |
+| `__AUTH_CONST.__objc_const` | `0x7b78` | `0x7f30` | **`+0x3b8`** |
+| `__AUTH.__objc_data` | `0xb50` | `0xc90` | **`+0x140`** |
+| `__TEXT.__objc_methlist` | `0x26c4` | `0x27d4` | **`+0x110`** |
+| `__AUTH_CONST.__cfstring` | `0x1f60` | `0x1fe0` | **`+0x80`** |
+| `__TEXT.__cstring` | `0x46c7` | `0x4727` | **`+0x60`** |
+| `__AUTH_CONST.__auth_got` | `0x708` | `0x6d0` | **`-0x38`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1848` | `0x1878` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0x100` | `0x120` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x1fc` | `0x214` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x8f8` | `0x8e0` | **`-0x18`** |
+| `__DATA.__data` | `0xd90` | `0xda0` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x7d79c
--  __TEXT.__objc_methlist: 0x26c4
--  __TEXT.__cstring: 0x46c7
--  __TEXT.__oslogstring: 0x8500
--  __TEXT.__gcc_except_tab: 0x1978
-+  __TEXT.__text: 0x75d1c
-+  __TEXT.__objc_methlist: 0x27d4
-+  __TEXT.__cstring: 0x4727
-+  __TEXT.__oslogstring: 0x77f0
-+  __TEXT.__gcc_except_tab: 0x11b4
-   __TEXT.__const: 0x3f0
-   __TEXT.__constg_swiftt: 0xf0
-   __TEXT.__swift5_typeref: 0x22d
+-772.0.3.0.0
++772.0.8.0.0
 
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x8ef8
--  __DATA_CONST.__objc_classlist: 0x100
-+  __DATA_CONST.__const: 0x9330
-+  __DATA_CONST.__objc_classlist: 0x120
-   __DATA_CONST.__objc_catlist: 0x38
-   __DATA_CONST.__objc_protolist: 0xd8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1848
-+  __DATA_CONST.__objc_selrefs: 0x1878
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__objc_superrefs: 0xd8
--  __DATA_CONST.__got: 0x8f8
-+  __DATA_CONST.__got: 0x8e0
-   __AUTH_CONST.__const: 0x988
--  __AUTH_CONST.__cfstring: 0x1f60
--  __AUTH_CONST.__objc_const: 0x7b78
--  __AUTH_CONST.__auth_got: 0x708
--  __AUTH.__objc_data: 0xb50
-+  __AUTH_CONST.__cfstring: 0x1fe0
-+  __AUTH_CONST.__objc_const: 0x7f30
-+  __AUTH_CONST.__auth_got: 0x6d0
-+  __AUTH.__objc_data: 0xc90
-   __AUTH.__data: 0x58
--  __DATA.__objc_ivar: 0x1fc
--  __DATA.__data: 0xd90
-+  __DATA.__objc_ivar: 0x214
-+  __DATA.__data: 0xda0
-   __DATA.__bss: 0x310
-   __DATA.__common: 0x40
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1129
--  Symbols:   7793
--  CStrings:  937
+-  Symbols:   1944
+-  CStrings:  687
 +  Functions: 1148
-+  Symbols:   8002
-+  CStrings:  919
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH.__data : content changed
++  Symbols:   1991
++  CStrings:  665
 Symbols:
 + +[SUUIMobileScanAutoUpdateResult resultWithScheduled:autoInstallOperation:]
 + +[SUUIMobileScanBetaResult resultWithSeedingDevice:betaPrograms:enrolledBetaProgram:]
@@ -185,35 +143,6 @@ Symbols:
 + _kSUUIMobileScanTaskMDMRestrictions
 + _kSUUIMobileScanTaskRollbackEligibility
 + _kSUUIMobileScanTaskRollbackStatus
-+ _objc_msgSend$addTaskNamed:task:
-+ _objc_msgSend$applyConcurrentResults:
-+ _objc_msgSend$checkForAvailableUpdatesWithRetriesCount:forceScan:
-+ _objc_msgSend$checkForBetaPrograms:withReplyHandler:
-+ _objc_msgSend$checkForMDMRestrictionsWithReplyHandler:
-+ _objc_msgSend$checkIfAutoUpdateScheduledWithReplyHandler:
-+ _objc_msgSend$checkIsEligibleForRollbackWithReplyHandler:
-+ _objc_msgSend$finishedTaskNames
-+ _objc_msgSend$firstError
-+ _objc_msgSend$initWithIdentifier:timeout:policy:
-+ _objc_msgSend$metadataGroup
-+ _objc_msgSend$outcome
-+ _objc_msgSend$pathRestriction
-+ _objc_msgSend$queryDDMDeclarationWithReplyHandler:
-+ _objc_msgSend$queryRollbackStatusWithReplyHandler:
-+ _objc_msgSend$resultForTaskNamed:
-+ _objc_msgSend$resultWithPathRestriction:isDelayingUpdate:
-+ _objc_msgSend$resultWithRollingBack:rollbackDescriptor:
-+ _objc_msgSend$resultWithScheduled:autoInstallOperation:
-+ _objc_msgSend$resultWithSeedingDevice:betaPrograms:enrolledBetaProgram:
-+ _objc_msgSend$rollingBack
-+ _objc_msgSend$scheduleAutoUpdateScheduledTask
-+ _objc_msgSend$seedingDevice
-+ _objc_msgSend$selfRetain
-+ _objc_msgSend$setMetadataGroup:
-+ _objc_msgSend$setSelfRetain:
-+ _objc_msgSend$start
-+ _objc_msgSend$unfinishedTaskNames
-+ _objc_msgSend$waitForResult:
 - -[SUUIMobileScanOperation checkForMDMRestrictions:withReplyHandler:]
 - -[SUUIMobileScanOperation checkIfAutoUpdateScheduled:withReplyHandler:]
 - -[SUUIMobileScanOperation checkIsEligibleForRollback:withReplyHandler:]
@@ -274,18 +203,6 @@ Symbols:
 - _dispatch_group_notify
 - _dispatch_time
 - _kSU_E_FullScanNoUpdateAvailable
-- _objc_msgSend$allObjects
-- _objc_msgSend$checkForAvailableUpdatesWithRetriesCount:
-- _objc_msgSend$concurrentQueue
-- _objc_msgSend$invocationWithMethodSignature:
-- _objc_msgSend$invoke
-- _objc_msgSend$methodSignatureForSelector:
-- _objc_msgSend$removeObject:
-- _objc_msgSend$scanGroup
-- _objc_msgSend$scheduleConcurrentActionWithSelector:eventInfo:
-- _objc_msgSend$setArgument:atIndex:
-- _objc_msgSend$setSelector:
-- _objc_msgSend$setTarget:
 CStrings:
 + "%s [%p]: %{public}@ Checkpoint\n\tcurrentState: %{public}@ (%ld)\n\tdelegate: %{public}@ (%p)\n\tscanError: %{public}@\n\tpreferredDescriptor: %{public}@\n\talternateDescriptor: %{public}@\n\tdownload: %{public}@ (%p)\n\tcurrentUpdateOperationType: %{public}@\n\tscheduledForAutoInstall: %{public}@\n\thiddenUpdatesPostSelection: preferred[%{public}@, %{public}@]; alternate[%{public}@, %{public}@];\n\tselectedBetaProgram: %lu (count: %ld, enrollable: %{public}@)\n\tOpFSMs: scan[%p]; refresh[%p]; update[%p]; auxiliaryOperationsCount[%lu]\n\nRollback already applied. Prompting user to restart; if declined, shows a restart-required error in the scan-failed view."
 + "%s [%{public}@|%{public}@]: Concurrent metadata tasks settled: outcome=%ld; firstError=%{public}@; unfinished=%{public}@"
@@ -343,5 +260,4 @@ CStrings:
 - "com.apple.SoftwareUpdateUI.StatefulUI.ScanOperation.State.ScheduleConcurrentActions: checkIsEligibleForRollback:withReplyHandler:"
 - "com.apple.SoftwareUpdateUI.StatefulUI.ScanOperation.State.ScheduleConcurrentActions: queryDDMDeclaration:withReplyHandler:"
 - "com.apple.SoftwareUpdateUI.StatefulUI.ScanOperation.State.ScheduleConcurrentActions: queryRollbackStatus:withReplyHandler:"
-
 ```

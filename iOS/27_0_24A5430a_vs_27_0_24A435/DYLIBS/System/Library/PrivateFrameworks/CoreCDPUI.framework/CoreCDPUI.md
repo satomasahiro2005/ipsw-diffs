@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CoreCDPUI.framework/CoreCDPUI`
 
-```diff
+### Section Size Changes
 
- 447.0.0.0.0
--  __TEXT.__text: 0x8c030
-+  __TEXT.__text: 0x8c028
-   __TEXT.__objc_methlist: 0x4a94
-   __TEXT.__const: 0x4824
-   __TEXT.__cstring: 0x5d42
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8c030` | `0x8c028` | **`-0x8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_25abff570 -> sub_25b8de570 : 1700 -> 1692
+~ sub_25aace570 -> sub_25b7c2570 : 1700 -> 1692
 ```

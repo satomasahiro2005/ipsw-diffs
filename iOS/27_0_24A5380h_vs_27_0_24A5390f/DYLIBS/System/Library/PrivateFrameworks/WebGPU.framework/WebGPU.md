@@ -2,72 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/WebGPU.framework/WebGPU`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x3ccfc` | `0x3d34c` | **`+0x650`** |
+| `__TEXT.__const` | `0x22e4` | `0x1f84` | **`-0x360`** |
+| `__AUTH_CONST.__cfstring` | `0x3920` | `0x39a0` | **`+0x80`** |
+| `__TEXT.__gcc_except_tab` | `0xa268` | `0xa2bc` | **`+0x54`** |
+| `__TEXT.__unwind_info` | `0x42f0` | `0x4340` | **`+0x50`** |
+
+### Other Changes
 
 ```diff
 
 -625.1.22.10.3
 +625.1.24.10.1
-   __TEXT.__text: 0x23cbf0
-   __TEXT.__objc_methlist: 0x1f0
--  __TEXT.__const: 0x22e4
--  __TEXT.__gcc_except_tab: 0xa268
-+  __TEXT.__const: 0x1f84
-+  __TEXT.__gcc_except_tab: 0xa2bc
-   __TEXT.__swift5_typeref: 0x7c4
--  __TEXT.__cstring: 0x3ccfc
-+  __TEXT.__cstring: 0x3d34c
-   __TEXT.__constg_swiftt: 0xb70
-   __TEXT.__swift5_fieldmd: 0x400
-   __TEXT.__swift5_builtin: 0xdc
 
-   __TEXT.__swift5_types: 0x4c
-   __TEXT.__swift5_protos: 0x50
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0x42f0
-+  __TEXT.__unwind_info: 0x4340
-   __TEXT.__eh_frame: 0xf60
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_superrefs: 0x18
-   __DATA_CONST.__got: 0x2a8
-   __AUTH_CONST.__const: 0x4c60
--  __AUTH_CONST.__cfstring: 0x3920
-+  __AUTH_CONST.__cfstring: 0x39a0
-   __AUTH_CONST.__objc_const: 0x638
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__auth_got: 0xa08
-
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 3594
--  Symbols:   4380
+-  Symbols:   4034
 -  CStrings:  2708
 +  Functions: 3603
-+  Symbols:   4389
++  Symbols:   4043
 +  CStrings:  2743
- 
 Symbols:
 + GCC_except_table86
 + __ZN3WTF13StringBuilder18appendFromAdaptersIJNS_17StringTypeAdapterINS_12ASCIILiteralEEENS2_IhEENS2_IcEEEEEvDpRKT_

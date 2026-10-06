@@ -2,103 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/CarPlayUIServices.framework/CarPlayUIServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x38984` | `0x39b60` | **`+0x11dc`** |
+| `__AUTH_CONST.__objc_const` | `0x11c40` | `0x12b08` | **`+0xec8`** |
+| `__AUTH.__objc_data` | `0x300` | `0x670` | **`+0x370`** |
+| `__TEXT.__objc_methlist` | `0x398c` | `0x3c54` | **`+0x2c8`** |
+| `__DATA.__data` | `0x1630` | `0x1880` | **`+0x250`** |
+| `__TEXT.__oslogstring` | `0x1818` | `0x1a14` | **`+0x1fc`** |
+| `__AUTH_CONST.__const` | `0x10d8` | `0x1280` | **`+0x1a8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1b78` | `0x1ca0` | **`+0x128`** |
+| `__TEXT.__const` | `0xea4` | `0xf94` | **`+0xf0`** |
+| `__TEXT.__cstring` | `0x1a13` | `0x1ae3` | **`+0xd0`** |
+| `__TEXT.__unwind_info` | `0x1158` | `0x1208` | **`+0xb0`** |
+| `__TEXT.__constg_swiftt` | `0x7a4` | `0x840` | **`+0x9c`** |
+| `__DATA_CONST.__const` | `0xb50` | `0xbe0` | **`+0x90`** |
+| `__TEXT.__swift5_typeref` | `0x628` | `0x6b6` | **`+0x8e`** |
+| `__TEXT.__swift5_fieldmd` | `0x3a0` | `0x428` | **`+0x88`** |
+| `__DATA_CONST.__got` | `0x6c8` | `0x728` | **`+0x60`** |
+| `__DATA_CONST.__objc_classlist` | `0x338` | `0x390` | **`+0x58`** |
+| `__AUTH_CONST.__cfstring` | `0x14e0` | `0x1520` | **`+0x40`** |
+| `__TEXT.__swift5_reflstr` | `0x34b` | `0x389` | **`+0x3e`** |
+| `__DATA_CONST.__objc_protolist` | `0x1c0` | `0x1f0` | **`+0x30`** |
+| `__DATA_CONST.__objc_protorefs` | `0xd0` | `0xf0` | **`+0x20`** |
+| `__TEXT.__swift5_builtin` | `0x50` | `0x64` | **`+0x14`** |
+| `__AUTH_CONST.__auth_got` | `0x960` | `0x970` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1a8` | `0x198` | **`-0x10`** |
+| `__TEXT.__swift5_capture` | `0xe4` | `0xf4` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x388` | `0x394` | **`+0xc`** |
+| `__TEXT.__swift5_types` | `0x58` | `0x64` | **`+0xc`** |
+| `__DATA_CONST.__objc_catlist` | `0x30` | `0x38` | **`+0x8`** |
+| `__DATA_DIRTY.__objc_data` | `0x2018` | `0x2020` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x4` | `0x8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -581.7.2.0.0
--  __TEXT.__text: 0x36e50
--  __TEXT.__objc_methlist: 0x398c
--  __TEXT.__const: 0xea4
--  __TEXT.__oslogstring: 0x1818
--  __TEXT.__cstring: 0x1a13
 +591.2.0.0.0
-+  __TEXT.__text: 0x37f88
-+  __TEXT.__objc_methlist: 0x3c54
-+  __TEXT.__const: 0xf94
-+  __TEXT.__oslogstring: 0x1a14
-+  __TEXT.__cstring: 0x1ae3
-   __TEXT.__gcc_except_tab: 0x4a4
--  __TEXT.__constg_swiftt: 0x7a4
--  __TEXT.__swift5_typeref: 0x628
--  __TEXT.__swift5_reflstr: 0x34b
--  __TEXT.__swift5_fieldmd: 0x3a0
--  __TEXT.__swift5_types: 0x58
--  __TEXT.__swift5_builtin: 0x50
-+  __TEXT.__constg_swiftt: 0x840
-+  __TEXT.__swift5_typeref: 0x6b6
-+  __TEXT.__swift5_reflstr: 0x389
-+  __TEXT.__swift5_fieldmd: 0x428
-+  __TEXT.__swift5_types: 0x64
-+  __TEXT.__swift5_capture: 0xf4
-+  __TEXT.__swift5_builtin: 0x64
-   __TEXT.__swift5_assocty: 0xc0
-+  __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift5_proto: 0x60
--  __TEXT.__swift5_capture: 0xe4
--  __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift_as_entry: 0x4
-   __TEXT.__swift_as_ret: 0x4
-   __TEXT.__swift_as_cont: 0xc
--  __TEXT.__unwind_info: 0x16e0
-+  __TEXT.__unwind_info: 0x1780
-   __TEXT.__eh_frame: 0x1d0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xb50
--  __DATA_CONST.__objc_classlist: 0x338
--  __DATA_CONST.__objc_catlist: 0x30
--  __DATA_CONST.__objc_protolist: 0x1c0
-+  __DATA_CONST.__const: 0xbe0
-+  __DATA_CONST.__objc_classlist: 0x390
-+  __DATA_CONST.__objc_catlist: 0x38
-+  __DATA_CONST.__objc_protolist: 0x1f0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1b78
--  __DATA_CONST.__objc_protorefs: 0xd0
--  __DATA_CONST.__objc_superrefs: 0x1a8
-+  __DATA_CONST.__objc_selrefs: 0x1ca0
-+  __DATA_CONST.__objc_protorefs: 0xf0
-+  __DATA_CONST.__objc_superrefs: 0x198
-   __DATA_CONST.__objc_arraydata: 0x40
--  __DATA_CONST.__got: 0x6c8
--  __AUTH_CONST.__const: 0x10d8
--  __AUTH_CONST.__cfstring: 0x14e0
--  __AUTH_CONST.__objc_const: 0x11c40
-+  __DATA_CONST.__got: 0x728
-+  __AUTH_CONST.__const: 0x1280
-+  __AUTH_CONST.__cfstring: 0x1520
-+  __AUTH_CONST.__objc_const: 0x12b08
-   __AUTH_CONST.__objc_doubleobj: 0x80
-   __AUTH_CONST.__objc_intobj: 0xc0
-   __AUTH_CONST.__objc_arrayobj: 0x30
--  __AUTH_CONST.__auth_got: 0x960
--  __AUTH.__objc_data: 0x300
-+  __AUTH_CONST.__auth_got: 0x970
-+  __AUTH.__objc_data: 0x670
-   __AUTH.__data: 0x668
--  __DATA.__objc_ivar: 0x388
--  __DATA.__data: 0x1630
-+  __DATA.__objc_ivar: 0x394
-+  __DATA.__data: 0x1880
-   __DATA.__common: 0x140
--  __DATA_DIRTY.__objc_data: 0x2018
-+  __DATA_DIRTY.__objc_data: 0x2020
-   __DATA_DIRTY.__data: 0x168
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1687
--  Symbols:   3558
+-  Symbols:   2909
 -  CStrings:  388
 +  Functions: 1746
-+  Symbols:   3747
++  Symbols:   3075
 +  CStrings:  398
- 
 Symbols:
 + +[CRSUIFrameRateLimitSceneExtension clientComponents]
 + +[CRSUIFrameRateLimitSceneExtension hostComponents]
@@ -324,34 +275,6 @@ Symbols:
 + ___swift_memcpy4_4
 + ___swift_memcpy9_8
 + __os_log_debug_impl
-+ _objc_msgSend$_isConnectionUsable
-+ _objc_msgSend$_sceneForFBSScene:
-+ _objc_msgSend$addMapStyleObserver:
-+ _objc_msgSend$clusterThemeManager:didUpdateExtraAssetsURL:assetVersion:
-+ _objc_msgSend$componentForExtension:ofClass:
-+ _objc_msgSend$containsProperty:
-+ _objc_msgSend$crsui_mapStyleProvider
-+ _objc_msgSend$decodeCGAffineTransformForKey:
-+ _objc_msgSend$encodeCGAffineTransform:forKey:
-+ _objc_msgSend$extensionForProtocol:
-+ _objc_msgSend$frameRateLimit
-+ _objc_msgSend$hostScene
-+ _objc_msgSend$initWithSupportsDynamicAppearance:supportsDashboardPlatterMaterials:iconLabelsRequireBackground:hideRoundedCorners:black:imageContentMode:transform:
-+ _objc_msgSend$matchesProperty:
-+ _objc_msgSend$proxiedApplicationBundleIdentifierNew
-+ _objc_msgSend$scene
-+ _objc_msgSend$scene:didUpdateFrameRateLimit:
-+ _objc_msgSend$scene:didUpdateMapStyle:
-+ _objc_msgSend$setDefaultValue:
-+ _objc_msgSend$setFrameRateLimit:
-+ _objc_msgSend$setMapStyle:
-+ _objc_msgSend$setNullPreserving:
-+ _objc_msgSend$setPropagating:
-+ _objc_msgSend$setProxiedApplicationBundleIdentifier:
-+ _objc_msgSend$setProxiedApplicationBundleIdentifierNew:
-+ _objc_msgSend$settingsDiff
-+ _objc_msgSend$transform
-+ _objc_msgSend$updateSettings:
 + _symbolic $s17CarPlayUIServices19CRSUIIconImageStoreP
 + _symbolic SDySSSo6ISIconCG
 + _symbolic So7UIImageC
@@ -439,11 +362,6 @@ Symbols:
 - ___71-[CRSUIApplicationSceneSettingsDiffInspector observeMapStyleWithBlock:]_block_invoke
 - ___77-[CRSUIApplicationSceneSettingsDiffInspector observeFrameRateLimitWithBlock:]_block_invoke
 - ___block_descriptor_57_e8_32s40s48s_e5_v8?0ls32l8s40l8s48l8
-- _objc_msgSend$_mapSettings
-- _objc_msgSend$_updateMapStyleTrait
-- _objc_msgSend$clusterThemeManager:didUpdateExtraAssetsURL:
-- _objc_msgSend$initWithSupportsDynamicAppearance:supportsDashboardPlatterMaterials:iconLabelsRequireBackground:hideRoundedCorners:black:imageContentMode:
-- _objc_msgSend$observeMapStyleWithBlock:
 - _symbolic SDy_____So6ISIconCG 10Foundation4UUIDV
 - _symbolic So7UIImageCSg___________tc So19IFAppearanceVariantV So0A0V
 - _symbolic _____y_____So6ISIconCG s18_DictionaryStorageC 10Foundation4UUIDV

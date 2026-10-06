@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CoreReporting.framework/CoreReporting`
 
-```diff
+### Section Size Changes
 
- 13.0.0.0.0
--  __TEXT.__text: 0x2faac
-+  __TEXT.__text: 0x2fa84
-   __TEXT.__objc_methlist: 0x25c
-   __TEXT.__const: 0x2d50
-   __TEXT.__swift5_typeref: 0x926
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2faac` | `0x2fa84` | **`-0x28`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s13CoreReporting12ReportWriterO5write7bugType12tempFilePath7options8metadata2at7writingySS_10Foundation3URLVSDyAA7OptionsOypGSDyAA8MetadataOypGSdySo12NSFileHandleCYaKctYaKFZTY0_ : 2176 -> 2180
 ~ _$ss17_dictionaryUpCastySDyq0_q1_GSDyxq_GSHRzSHR0_r2_lFSS_yps11AnyHashableVypTg5 : 680 -> 684

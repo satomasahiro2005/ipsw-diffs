@@ -2,33 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/GPUToolsCore.framework/GPUToolsCore`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x38c88
-+  __TEXT.__text: 0x38b4c
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__objc_methlist: 0x1c0c
-   __TEXT.__const: 0x380
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x38c88` | `0x38b4c` | **`-0x13c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN8GPUTools2FB6Stream13WriteFunctionERKNS_2FD8FunctionE : 796 -> 788
 ~ -[DYFunctionTracer traceFunctionAsLines:returnVariable:error:] : 2824 -> 2768
@@ -49,5 +31,4 @@ Functions:
 ~ _apr_itoa : 124 -> 116
 ~ _apr_ltoa : 124 -> 116
 ~ _apr_off_t_toa : 124 -> 116
-
 ```

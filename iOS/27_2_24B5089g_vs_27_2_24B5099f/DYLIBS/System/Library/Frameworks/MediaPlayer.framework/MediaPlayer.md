@@ -2,72 +2,35 @@
 
 > `/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x38e5b8` | `0x38e9d8` | **`+0x420`** |
+| `__TEXT.__oslogstring` | `0x1a31e` | `0x1a3b2` | **`+0x94`** |
+| `__TEXT.__cstring` | `0x31ce6` | `0x31d48` | **`+0x62`** |
+| `__AUTH_CONST.__cfstring` | `0x27680` | `0x276c0` | **`+0x40`** |
+| `__AUTH_CONST.__objc_const` | `0x45c58` | `0x45c78` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x30f0` | `0x3108` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x13a40` | `0x13a58` | **`+0x18`** |
+| `__DATA.__bss` | `0xea8` | `0xeb0` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x28b74` | `0x28b7c` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0xd258` | `0xd260` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x2d64` | `0x2d68` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -4026.200.17.0.0
--  __TEXT.__text: 0x37dcc8
--  __TEXT.__objc_methlist: 0x28b74
 +4026.200.22.2.0
-+  __TEXT.__text: 0x37e100
-+  __TEXT.__objc_methlist: 0x28b7c
-   __TEXT.__dlopen_cstrs: 0x4bd
-   __TEXT.__const: 0x14ff8
-   __TEXT.__swift5_typeref: 0x18a
 
-   __TEXT.__swift_as_entry: 0x1c
-   __TEXT.__swift_as_ret: 0x1c
-   __TEXT.__swift_as_cont: 0x8
--  __TEXT.__cstring: 0x31ce6
-+  __TEXT.__cstring: 0x31d48
-   __TEXT.__swift5_proto: 0x14
-   __TEXT.__gcc_except_tab: 0x1c440
--  __TEXT.__oslogstring: 0x1a31e
-+  __TEXT.__oslogstring: 0x1a3b2
-   __TEXT.__ustring: 0x1ca
--  __TEXT.__unwind_info: 0xfa68
-+  __TEXT.__unwind_info: 0xfa70
-   __TEXT.__eh_frame: 0x3c0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_protolist: 0x428
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x13a40
-+  __DATA_CONST.__objc_selrefs: 0x13a58
-   __DATA_CONST.__objc_protorefs: 0xe0
-   __DATA_CONST.__objc_superrefs: 0xdb0
-   __DATA_CONST.__objc_arraydata: 0x8e8
--  __DATA_CONST.__got: 0x30f0
-+  __DATA_CONST.__got: 0x3108
-   __AUTH_CONST.__const: 0xe938
--  __AUTH_CONST.__cfstring: 0x27680
--  __AUTH_CONST.__objc_const: 0x45c58
-+  __AUTH_CONST.__cfstring: 0x276c0
-+  __AUTH_CONST.__objc_const: 0x45c78
-   __AUTH_CONST.__weak_auth_got: 0x60
-   __AUTH_CONST.__objc_intobj: 0x8b8
-   __AUTH_CONST.__objc_arrayobj: 0xfa8
-
-   __AUTH_CONST.__auth_got: 0x2b58
-   __AUTH.__objc_data: 0xc2f8
-   __AUTH.__data: 0x100
--  __DATA.__objc_ivar: 0x2d64
-+  __DATA.__objc_ivar: 0x2d68
-   __DATA.__data: 0x3af8
-   __DATA.__common: 0xab8
-   __DATA_DIRTY.__objc_data: 0xf78
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 17177
 -  Symbols:   32392
 -  CStrings:  7435
 +  Functions: 17178
 +  Symbols:   32397
 +  CStrings:  7439
- 
 Symbols:
 + -[MPVolumeHardwareButtonController _isForeground]
 + -[MPVolumeHardwareButtonController _registerForButtonNotifications]

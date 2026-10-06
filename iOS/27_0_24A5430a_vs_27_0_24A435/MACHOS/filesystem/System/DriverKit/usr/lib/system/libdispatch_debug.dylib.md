@@ -2,24 +2,25 @@
 
 > `/System/DriverKit/usr/lib/system/libdispatch_debug.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbb920` | `0xbb96c` | **`+0x4c`** |
+
+### Same-size Content Changes
+
+- `__AUTH.__data`
+- `__AUTH_CONST.__auth_got`
+- `__AUTH_CONST.__const`
+- `__DATA_CONST.__const`
 - `__TEXT.__dof_dispatch`
 - `__TEXT.__dof_voucher`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__auth_got`
-- `__AUTH.__data`
 
-```diff
+### Other Changes
 
- 1605.0.2.0.0
--  __TEXT.__text: 0xbb920
-+  __TEXT.__text: 0xbb96c
-   __TEXT.__const: 0x54b
-   __TEXT.__cstring: 0x8a15
-   __TEXT.__dof_dispatch: 0x288c
+```text
 Functions:
 ~ __dispatch_timers_run : 2424 -> 2428
 ~ __dispatch_timer_unote_arm : 1488 -> 1496

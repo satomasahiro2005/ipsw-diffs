@@ -2,95 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/FaceTimeNotificationUI.framework/FaceTimeNotificationUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_protos`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc8c80` | `0xcd970` | **`+0x4cf0`** |
+| `__TEXT.__swift5_typeref` | `0xfd5c` | `0x10bc6` | **`+0xe6a`** |
+| `__TEXT.__const` | `0xb214` | `0xb4f4` | **`+0x2e0`** |
+| `__TEXT.__eh_frame` | `0x23c8` | `0x25d8` | **`+0x210`** |
+| `__DATA.__data` | `0x3ca0` | `0x3e80` | **`+0x1e0`** |
+| `__TEXT.__constg_swiftt` | `0x36e4` | `0x3800` | **`+0x11c`** |
+| `__AUTH.__data` | `0x3b88` | `0x3ca0` | **`+0x118`** |
+| `__TEXT.__unwind_info` | `0x2df0` | `0x2f00` | **`+0x110`** |
+| `__DATA.__bss` | `0xba58` | `0xb968` | **`-0xf0`** |
+| `__TEXT.__swift5_reflstr` | `0x1fee` | `0x20be` | **`+0xd0`** |
+| `__TEXT.__swift5_fieldmd` | `0x2a0c` | `0x2ab4` | **`+0xa8`** |
+| `__AUTH_CONST.__const` | `0x5628` | `0x56b8` | **`+0x90`** |
+| `__TEXT.__swift5_capture` | `0x1188` | `0x1204` | **`+0x7c`** |
+| `__TEXT.__swift5_assocty` | `0x740` | `0x7a0` | **`+0x60`** |
+| `__DATA_CONST.__got` | `0xda8` | `0xdf8` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x2048` | `0x2068` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x13c` | `0x14c` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x264` | `0x270` | **`+0xc`** |
+| `__TEXT.__swift5_proto` | `0x5a4` | `0x59c` | **`-0x8`** |
+| `__TEXT.__swift_as_entry` | `0xc8` | `0xd0` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x7c` | `0x80` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -3066.100.3.0.0
--  __TEXT.__text: 0xc8c80
 +3068.100.3.0.0
-+  __TEXT.__text: 0xcd970
-   __TEXT.__objc_methlist: 0x2ec
--  __TEXT.__const: 0xb214
--  __TEXT.__constg_swiftt: 0x36e4
--  __TEXT.__swift5_typeref: 0xfd5c
-+  __TEXT.__const: 0xb4f4
-+  __TEXT.__constg_swiftt: 0x3800
-+  __TEXT.__swift5_typeref: 0x10bc6
-   __TEXT.__swift5_builtin: 0x17c
--  __TEXT.__swift5_reflstr: 0x1fee
--  __TEXT.__swift5_fieldmd: 0x2a0c
--  __TEXT.__swift5_assocty: 0x740
--  __TEXT.__swift5_proto: 0x5a4
--  __TEXT.__swift5_types: 0x264
--  __TEXT.__swift5_capture: 0x1188
-+  __TEXT.__swift5_reflstr: 0x20be
-+  __TEXT.__swift5_fieldmd: 0x2ab4
-+  __TEXT.__swift5_assocty: 0x7a0
-+  __TEXT.__swift5_proto: 0x59c
-+  __TEXT.__swift5_types: 0x270
-+  __TEXT.__swift5_capture: 0x1204
-   __TEXT.__swift5_mpenum: 0x68
-   __TEXT.__oslogstring: 0x3979
-   __TEXT.__cstring: 0x11aa
--  __TEXT.__swift_as_entry: 0xc8
--  __TEXT.__swift_as_cont: 0x13c
--  __TEXT.__swift_as_ret: 0x7c
-+  __TEXT.__swift_as_entry: 0xd0
-+  __TEXT.__swift_as_cont: 0x14c
-+  __TEXT.__swift_as_ret: 0x80
-   __TEXT.__swift5_protos: 0x3c
-   __TEXT.__lldbsummaries: 0x3f
--  __TEXT.__unwind_info: 0x2df0
--  __TEXT.__eh_frame: 0x23c8
-+  __TEXT.__unwind_info: 0x2f00
-+  __TEXT.__eh_frame: 0x25d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x668
-   __DATA_CONST.__objc_protorefs: 0x38
--  __DATA_CONST.__got: 0xda8
--  __AUTH_CONST.__const: 0x5628
-+  __DATA_CONST.__got: 0xdf8
-+  __AUTH_CONST.__const: 0x56b8
-   __AUTH_CONST.__objc_const: 0x2a20
--  __AUTH_CONST.__auth_got: 0x2048
-+  __AUTH_CONST.__auth_got: 0x2068
-   __AUTH.__objc_data: 0xa70
--  __AUTH.__data: 0x3b88
--  __DATA.__data: 0x3ca0
--  __DATA.__bss: 0xba58
-+  __AUTH.__data: 0x3ca0
-+  __DATA.__data: 0x3e80
-+  __DATA.__bss: 0xb968
-   __DATA.__common: 0xc8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4588
--  Symbols:   1989
+-  Symbols:   1820
 +  Functions: 4646
-+  Symbols:   2032
-   CStrings:  385
- 
++  Symbols:   1863
 Symbols:
 + ___swift__destructor.595Tm
 + ___swift_closure_destructor.115Tm

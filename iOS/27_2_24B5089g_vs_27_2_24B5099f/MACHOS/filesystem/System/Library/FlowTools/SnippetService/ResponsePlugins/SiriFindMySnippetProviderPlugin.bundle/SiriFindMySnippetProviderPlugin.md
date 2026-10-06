@@ -2,98 +2,62 @@
 
 > `/System/Library/FlowTools/SnippetService/ResponsePlugins/SiriFindMySnippetProviderPlugin.bundle/SiriFindMySnippetProviderPlugin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x157c4` | `0x17294` | **`+0x1ad0`** |
+| `__TEXT.__oslogstring` | `0xe1a` | `0xfca` | **`+0x1b0`** |
+| `__TEXT.__eh_frame` | `0x670` | `0x590` | **`-0xe0`** |
+| `__TEXT.__auth_stubs` | `0xa90` | `0xa30` | **`-0x60`** |
+| `__DATA_CONST.__const` | `0x300` | `0x348` | **`+0x48`** |
+| `__TEXT.__constg_swiftt` | `0x128` | `0x160` | **`+0x38`** |
+| `__DATA_CONST.__auth_got` | `0x550` | `0x520` | **`-0x30`** |
+| `__TEXT.__const` | `0x7e8` | `0x818` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x12a` | `0x14a` | **`+0x20`** |
+| `__TEXT.__objc_methtype` | `0x20` | `—` | **`-0x20`** |
+| `__TEXT.__objc_stubs` | `0x180` | `0x160` | **`-0x20`** |
+| `__TEXT.__unwind_info` | `0x2d8` | `0x2f8` | **`+0x20`** |
+| `__TEXT.__objc_methname` | `0xab` | `0x8c` | **`-0x1f`** |
+| `__TEXT.__swift_as_cont` | `0x50` | `0x38` | **`-0x18`** |
+| `__TEXT.__swift5_fieldmd` | `0x9c` | `0xb0` | **`+0x14`** |
+| `__DATA_CONST.__auth_ptr` | `0x190` | `0x180` | **`-0x10`** |
+| `__TEXT.__swift_as_ret` | `0x4c` | `0x40` | **`-0xc`** |
+| `__TEXT.__swift5_reflstr` | `0x15` | `0xc` | **`-0x9`** |
+| `__DATA.__data` | `0x258` | `0x260` | **`+0x8`** |
+| `__DATA.__objc_selrefs` | `0x60` | `0x58` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x1c0` | `0x1c8` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x24` | `0x2c` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0xac` | `0xa8` | **`-0x4`** |
+| `__TEXT.__swift5_typeref` | `0x231` | `0x22f` | **`-0x2`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
 - `__TEXT.__swift5_assocty`
 - `__TEXT.__swift5_proto`
-- `__DATA.__objc_const`
+
+### Other Changes
 
 ```diff
 
 -3605.15.2.0.0
--  __TEXT.__text: 0x147e4
--  __TEXT.__auth_stubs: 0xa90
--  __TEXT.__objc_stubs: 0x180
--  __TEXT.__const: 0x7e8
--  __TEXT.__swift5_typeref: 0x231
--  __TEXT.__oslogstring: 0xe1a
--  __TEXT.__cstring: 0x12a
--  __TEXT.__swift5_reflstr: 0x15
 +3605.18.1.0.0
-+  __TEXT.__text: 0x161b8
-+  __TEXT.__auth_stubs: 0xa30
-+  __TEXT.__objc_stubs: 0x160
-+  __TEXT.__const: 0x818
-+  __TEXT.__swift5_typeref: 0x22f
-+  __TEXT.__oslogstring: 0xfca
-+  __TEXT.__cstring: 0x14a
-+  __TEXT.__swift5_reflstr: 0xc
-   __TEXT.__swift5_assocty: 0x90
--  __TEXT.__constg_swiftt: 0x128
--  __TEXT.__swift5_fieldmd: 0x9c
-+  __TEXT.__constg_swiftt: 0x160
-+  __TEXT.__swift5_fieldmd: 0xb0
-   __TEXT.__swift5_proto: 0x1c
--  __TEXT.__swift5_types: 0x24
--  __TEXT.__swift_as_entry: 0xac
--  __TEXT.__swift_as_ret: 0x4c
--  __TEXT.__swift_as_cont: 0x50
--  __TEXT.__objc_methtype: 0x20
-+  __TEXT.__swift5_types: 0x2c
-+  __TEXT.__swift_as_entry: 0xa8
-+  __TEXT.__swift_as_ret: 0x40
-+  __TEXT.__swift_as_cont: 0x38
-   __TEXT.__objc_classname: 0x47
--  __TEXT.__objc_methname: 0xab
--  __TEXT.__unwind_info: 0x340
--  __TEXT.__eh_frame: 0x670
--  __DATA_CONST.__const: 0x300
-+  __TEXT.__objc_methname: 0x8c
-+  __TEXT.__unwind_info: 0x358
-+  __TEXT.__eh_frame: 0x590
-+  __DATA_CONST.__const: 0x348
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x550
--  __DATA_CONST.__got: 0x1c0
--  __DATA_CONST.__auth_ptr: 0x190
-+  __DATA_CONST.__auth_got: 0x520
-+  __DATA_CONST.__got: 0x1c8
-+  __DATA_CONST.__auth_ptr: 0x180
-   __DATA.__objc_const: 0x90
--  __DATA.__objc_selrefs: 0x60
--  __DATA.__data: 0x258
-+  __DATA.__objc_selrefs: 0x58
-+  __DATA.__data: 0x260
-   __DATA.__common: 0x18
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+
 -  - /System/Library/Frameworks/GeoToolbox.framework/GeoToolbox
 -  - /System/Library/Frameworks/MapKit.framework/MapKit
 +  - /System/Library/Frameworks/Intents.framework/Intents
-   - /System/Library/Frameworks/UIKit.framework/UIKit
+
 -  - /System/Library/Frameworks/_GeoToolbox_AppIntents.framework/_GeoToolbox_AppIntents
-   - /System/Library/PrivateFrameworks/FlowToolsSnippetService.framework/FlowToolsSnippetService
-   - /System/Library/PrivateFrameworks/IntelligenceFlow.framework/IntelligenceFlow
-   - /System/Library/PrivateFrameworks/IntelligenceFlowShared.framework/IntelligenceFlowShared
 
-   - /System/Library/PrivateFrameworks/SiriFindMy.framework/SiriFindMy
-   - /System/Library/PrivateFrameworks/SiriKitFlow.framework/SiriKitFlow
-   - /System/Library/PrivateFrameworks/ToolKit.framework/ToolKit
 -  - /System/Library/PrivateFrameworks/_ToolKit_AppIntents.framework/_ToolKit_AppIntents
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 165
 -  Symbols:   842
 -  CStrings:  62
 +  Functions: 178
 +  Symbols:   875
 +  CStrings:  63
- 
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/SiriFindMy/install/TempContent/Objects/SiriFindMy.build/SiriFindMySnippetProviderPlugin.build/Objects-normal/arm64e/EntityExtraction.o
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/SiriFindMy/install/TempContent/Objects/SiriFindMy.build/SiriFindMySnippetProviderPlugin.build/Objects-normal/arm64e/PlaceDescriptorReader.o

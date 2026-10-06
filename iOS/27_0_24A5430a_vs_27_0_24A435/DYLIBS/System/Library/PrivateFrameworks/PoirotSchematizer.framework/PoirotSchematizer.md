@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/PoirotSchematizer.framework/PoirotSchematizer`
 
-```diff
+### Section Size Changes
 
- 3600.35.1.0.0
--  __TEXT.__text: 0x6f43c
-+  __TEXT.__text: 0x6f4d4
-   __TEXT.__objc_methlist: 0x70
-   __TEXT.__const: 0x3790
-   __TEXT.__constg_swiftt: 0x9b0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6f43c` | `0x6f4d4` | **`+0x98`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_2234ce098 -> sub_223cfe098 : 420 -> 424
 ~ sub_2234d6204 -> sub_223d06208 : 612 -> 664

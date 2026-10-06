@@ -2,105 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/PhotoLibraryServices.framework/PhotoLibraryServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x764e64` | `0x75a868` | **`-0xa5fc`** |
+| `__TEXT.__objc_methlist` | `0x45d94` | `0x4530c` | **`-0xa88`** |
+| `__AUTH_CONST.__cfstring` | `0x53b20` | `0x532c0` | **`-0x860`** |
+| `__DATA_CONST.__objc_selrefs` | `0x25618` | `0x250f8` | **`-0x520`** |
+| `__TEXT.__cstring` | `0x6db46` | `0x6d7ad` | **`-0x399`** |
+| `__AUTH_CONST.__objc_const` | `0x70938` | `0x70608` | **`-0x330`** |
+| `__TEXT.__unwind_info` | `0x16b60` | `0x168c0` | **`-0x2a0`** |
+| `__AUTH.__objc_data` | `0x136a0` | `0x13470` | **`-0x230`** |
+| `__TEXT.__gcc_except_tab` | `0x20844` | `0x2065c` | **`-0x1e8`** |
+| `__DATA_CONST.__const` | `0x16900` | `0x16778` | **`-0x188`** |
+| `__TEXT.__const` | `0x7670` | `0x74f0` | **`-0x180`** |
+| `__AUTH_CONST.__const` | `0xa6d8` | `0xa5b8` | **`-0x120`** |
+| `__TEXT.__oslogstring` | `0x86d3e` | `0x86c6f` | **`-0xcf`** |
+| `__DATA_DIRTY.__bss` | `0x1e0` | `0x180` | **`-0x60`** |
+| `__DATA_CONST.__got` | `0x52e0` | `0x5298` | **`-0x48`** |
+| `__DATA_CONST.__objc_classlist` | `0x2420` | `0x23e8` | **`-0x38`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x1500` | `0x14d0` | **`-0x30`** |
+| `__AUTH_CONST.__objc_intobj` | `0x5448` | `0x5418` | **`-0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x2b58` | `0x2b38` | **`-0x20`** |
+| `__DATA.__bss` | `0x3c10` | `0x3c30` | **`+0x20`** |
+| `__DATA_CONST.__objc_arraydata` | `0x1de0` | `0x1dc0` | **`-0x20`** |
+| `__TEXT.__eh_frame` | `0x11c8` | `0x11a8` | **`-0x20`** |
+| `__DATA.__data` | `0x7074` | `0x7084` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x3e58` | `0x3e48` | **`-0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x760` | `0x768` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1598` | `0x1590` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.235.0.0
--  __TEXT.__text: 0x74991c
 +916.40.110.0.0
-+  __TEXT.__text: 0x73f8b0
-   __TEXT.__delay_stubs: 0x40
-   __TEXT.__delay_helper: 0xa4
--  __TEXT.__objc_methlist: 0x45d94
--  __TEXT.__const: 0x7670
-+  __TEXT.__objc_methlist: 0x4530c
-+  __TEXT.__const: 0x74f0
-   __TEXT.__dlopen_cstrs: 0xb28
-   __TEXT.__swift5_typeref: 0x131a
--  __TEXT.__cstring: 0x6db46
-+  __TEXT.__cstring: 0x6d7ad
-   __TEXT.__swift5_capture: 0x188c
-   __TEXT.__constg_swiftt: 0x400
-   __TEXT.__swift5_builtin: 0xc8
 
-   __TEXT.__swift5_assocty: 0xd8
-   __TEXT.__swift5_proto: 0xa4
-   __TEXT.__swift5_types: 0x54
--  __TEXT.__oslogstring: 0x86d3e
-+  __TEXT.__oslogstring: 0x86c6f
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__gcc_except_tab: 0x20844
-+  __TEXT.__gcc_except_tab: 0x2065c
-   __TEXT.__ustring: 0xa3a
--  __TEXT.__unwind_info: 0x1b088
--  __TEXT.__eh_frame: 0x11c8
-+  __TEXT.__unwind_info: 0x1acf0
-+  __TEXT.__eh_frame: 0x11a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x16900
--  __DATA_CONST.__objc_classlist: 0x2420
-+  __DATA_CONST.__const: 0x16778
-+  __DATA_CONST.__objc_classlist: 0x23e8
-   __DATA_CONST.__objc_catlist: 0xf8
--  __DATA_CONST.__objc_protolist: 0x760
-+  __DATA_CONST.__objc_protolist: 0x768
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x25618
-+  __DATA_CONST.__objc_selrefs: 0x250f8
-   __DATA_CONST.__objc_protorefs: 0xc8
--  __DATA_CONST.__objc_superrefs: 0x1598
--  __DATA_CONST.__objc_arraydata: 0x1de0
--  __DATA_CONST.__got: 0x52e0
--  __AUTH_CONST.__const: 0xa6d8
--  __AUTH_CONST.__cfstring: 0x53b20
--  __AUTH_CONST.__objc_const: 0x70938
-+  __DATA_CONST.__objc_superrefs: 0x1590
-+  __DATA_CONST.__objc_arraydata: 0x1dc0
-+  __DATA_CONST.__got: 0x5298
-+  __AUTH_CONST.__const: 0xa5b8
-+  __AUTH_CONST.__cfstring: 0x532c0
-+  __AUTH_CONST.__objc_const: 0x70608
-   __AUTH_CONST.__weak_auth_got: 0x28
--  __AUTH_CONST.__objc_intobj: 0x5448
--  __AUTH_CONST.__objc_arrayobj: 0x1500
-+  __AUTH_CONST.__objc_intobj: 0x5418
-+  __AUTH_CONST.__objc_arrayobj: 0x14d0
-   __AUTH_CONST.__objc_doubleobj: 0x180
-   __AUTH_CONST.__objc_dictobj: 0x320
-   __AUTH_CONST.__objc_floatobj: 0x40
--  __AUTH_CONST.__auth_got: 0x2b58
--  __AUTH.__objc_data: 0x136a0
-+  __AUTH_CONST.__auth_got: 0x2b38
-+  __AUTH.__objc_data: 0x13470
-   __AUTH.__data: 0x350
--  __DATA.__objc_ivar: 0x3e58
--  __DATA.__data: 0x7074
-+  __DATA.__objc_ivar: 0x3e48
-+  __DATA.__data: 0x7084
-   __DATA.__crash_info: 0x148
-   __DATA.__common: 0x4
-   __DATA_DIRTY.__objc_data: 0x3520
-   __DATA_DIRTY.__data: 0x50
--  __DATA_DIRTY.__bss: 0x1e0
-+  __DATA_DIRTY.__bss: 0x180
-   __DATA_DIRTY.__common: 0x60
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 29549
--  Symbols:   65269
+-  Symbols:   48733
 -  CStrings:  22065
 +  Functions: 29249
-+  Symbols:   64867
++  Symbols:   48351
 +  CStrings:  21974
- 
 Symbols:
 + +[PLBackgroundJobHighPrioritySearchIndexingWorker _allCriteriaToUse]
 + +[PLBackgroundJobLowPrioritySearchIndexingWorker _allCriteriaToUse]
@@ -2072,119 +2017,6 @@ Symbols:
 + _changeNotificationObjectIDMutationKeys.pl_once_token_44
 + _changeNotificationObjectKeys.pl_once_object_43
 + _changeNotificationObjectKeys.pl_once_token_43
-+ _objc_msgSend$_allAssetsAreSavedToLibraryForCollectionShare:inContext:
-+ _objc_msgSend$_allCriteriaToUse
-+ _objc_msgSend$_applyDefaultPrefetchModeIfNeededWithCPLSettings:createOptions:
-+ _objc_msgSend$_assetHasOriginalFileOnDisk:
-+ _objc_msgSend$_calculateDonationCountsFromSnapshot:resultHandler:
-+ _objc_msgSend$_clearDeferredProcessingNeededForAsset:originalWidth:originalHeight:
-+ _objc_msgSend$_cloneResourcesForSharePlaceholderAsset:sourceAsset:shouldBakeInAdjustments:shouldFlattenLivePhoto:withPlaceholderResourceURLToSourceResourceURLMap:fileManager:photoLibrary:
-+ _objc_msgSend$_collectContributorUserIdentifiersForRecords:into:completionHandler:
-+ _objc_msgSend$_coordinateReadingSourcesWithError:accessor:
-+ _objc_msgSend$_copyAndMarkAsLocallyAvailablePairedLivePhotoResourceForRequestedResource:requestedVideoComplement:fileCoordinator:error:
-+ _objc_msgSend$_copyFileAtURL:toDestination:error:
-+ _objc_msgSend$_copyProvidedFilesForItemIdentifier:providerURL:primaryDestination:videoComplementDestination:pathManager:materializesDatalessFiles:resultHandler:
-+ _objc_msgSend$_copyProviderFileWantsVideoComplement:fromCoordinator:fileIdentifier:pathManager:copiedURL:inode:error:
-+ _objc_msgSend$_cplParticipantsWithBlockedIdentitiesLast:
-+ _objc_msgSend$_createLogger
-+ _objc_msgSend$_defaultResult
-+ _objc_msgSend$_enumerateUnattributedCPLContributorContentInPhotoLibrary:usingBlock:
-+ _objc_msgSend$_errorForCopyFailure:sourceURL:
-+ _objc_msgSend$_forcefullyInvokeCurrentManagedObjectCompletionHandler
-+ _objc_msgSend$_generateDeferredAdjustmentWithImageConversionClient:videoConversionClient:reason:retryNumber:allowCancellationByService:clientBundleID:shouldSaveMediaConversionResultBlock:completion:
-+ _objc_msgSend$_getProcessingSetURL
-+ _objc_msgSend$_imageCaptionDefaultsToCurrent
-+ _objc_msgSend$_imageEmbeddingDefaultsToCurrent
-+ _objc_msgSend$_inq_pendingJobsForBundle:workerTypes:currentCriteria:
-+ _objc_msgSend$_inq_pendingJobsOnBuffer:currentCriteria:
-+ _objc_msgSend$_inq_pendingJobsOnBundles:currentCriteria:
-+ _objc_msgSend$_inq_performRebuildForLibrary:completion:
-+ _objc_msgSend$_isDestinationURLInsideSyndicationOriginals:
-+ _objc_msgSend$_leo_computeSnapshotForPhotoLibrary:searchProgressOnly:completionHandler:
-+ _objc_msgSend$_linkOrphanedCollectionShareContributorsWithCPLSettings:
-+ _objc_msgSend$_lock_addResponder:
-+ _objc_msgSend$_lock_isRunning
-+ _objc_msgSend$_mediaAnalysisImageDefaultsToCurrent
-+ _objc_msgSend$_objectsMatchingPredicate:entityName:
-+ _objc_msgSend$_objectsMatchingPredicate:entityName:inManagedObjectContext:
-+ _objc_msgSend$_originalPrimaryImageResourceForAsset:
-+ _objc_msgSend$_processCapturePipelineAsset:originalResource:reingested:
-+ _objc_msgSend$_processSemanticEnhanceAsset:originalResource:
-+ _objc_msgSend$_provideSourceURLsForBundleID:syndicationIdentifier:typeIdentifier:isLivePhoto:options:completionHandler:
-+ _objc_msgSend$_richImageCaptionDefaultsToCurrent
-+ _objc_msgSend$_setKeywordsFromMetadata:
-+ _objc_msgSend$_setRatingFromMetadata:
-+ _objc_msgSend$_syncOutputProgress:toSourceProgress:
-+ _objc_msgSend$_unpackLivePhotoBundleAtURL:primaryURL:videoComplementURL:error:
-+ _objc_msgSend$_updateCachedEventLogLastEnteredDate
-+ _objc_msgSend$_updateCachedLastSeenDate
-+ _objc_msgSend$_updateShareParticipantWithContributorUserIdentifier:collectionShare:inPhotoLibrary:
-+ _objc_msgSend$_updateStateCaptureInfo:libraryID:
-+ _objc_msgSend$backgroundJobWorkerTypesMaskGuestAssetSync:personSync:syndicationSync:syndicationResourceSanitization:syndicationResourceDownload:syndicationAssetCleanup:assetStack:duplicateDetector:deferredRenderDerivativesLowPriority:deferredRenderDerivativesHighPriority:resourceAvailability:stableHash:editRenderingImage:editRenderingVideo:highPrioritySearchIndexing:lowPrioritySearchIndexing:sharedAssetContainerUpdate:assetResourceUploadJob:assetResourceUploadExtensionRunner:featureAvailability:optimizeTableThumbs:cascadeDonation:provenanceTimestamp:
-+ _objc_msgSend$computeSearchProgressForPhotoLibrary:completionHandler:
-+ _objc_msgSend$confidenceForMomentEdge:
-+ _objc_msgSend$coordinateReadingItemAtURL:options:error:byAccessor:
-+ _objc_msgSend$copiedPrimaryURL
-+ _objc_msgSend$copiedVideoComplementURL
-+ _objc_msgSend$copyJobContentsToHoldingDirectoryWithUUID:incomingPath:job:
-+ _objc_msgSend$copyToPrimaryDestination:videoComplementDestination:error:
-+ _objc_msgSend$countOfSharesWithUnreadBadgeActivitySinceLastSeenDate:eventLogDate:inManagedObjectContext:
-+ _objc_msgSend$countRemainingWithManagedObjectContext:
-+ _objc_msgSend$criteriaNeedingProcessingInLibrary:currentCriteria:outSignalAgainDate:
-+ _objc_msgSend$defaultStore
-+ _objc_msgSend$evaluateLexemeIDs:
-+ _objc_msgSend$eventLogLastEnteredDate
-+ _objc_msgSend$executeQueryForSyncManager:type:startDate:endDate:itemsHandler:completionHandler:
-+ _objc_msgSend$featureAnalysisLexemeCategories
-+ _objc_msgSend$generateDeferredAdjustmentWithImageConversionClient:videoConversionClient:reason:allowCancellationByService:clientBundleID:shouldSaveMediaConversionResultBlock:completion:
-+ _objc_msgSend$getCloudCacheRecordsWithLocalScopedIdentifiers:desiredProperties:completionHandler:
-+ _objc_msgSend$getSearchDonationProgressInLibrary:shouldCompute:shouldReport:completionHandler:
-+ _objc_msgSend$hasPersistedPrefetchMode
-+ _objc_msgSend$initWithFilePresenter:
-+ _objc_msgSend$initWithLexemes:versionProvider:
-+ _objc_msgSend$initWithMessage:libraryPath:
-+ _objc_msgSend$initWithSourceURL:videoComplementSourceURL:pathManager:materializesDatalessFiles:
-+ _objc_msgSend$initWithZeroWorkItemsForCurrentCriteria
-+ _objc_msgSend$installFinalImageOrVideoAndRemoveDeferredFilesWithFinalImageURL:previewImage:thumbnailImage:useExistingAsset:outError:
-+ _objc_msgSend$isAuthorizedAssetUUID:inManagedObjectContext:
-+ _objc_msgSend$isEntitledForPrivatePhotosTCCForToken:
-+ _objc_msgSend$isListening
-+ _objc_msgSend$kvsListener
-+ _objc_msgSend$kvsListenerDidUpdateEventLogLastEnteredDate:
-+ _objc_msgSend$kvsListenerDidUpdateLastSeenDate:
-+ _objc_msgSend$lastEditedDate
-+ _objc_msgSend$lastSeenDate
-+ _objc_msgSend$libraryPath
-+ _objc_msgSend$linkCPLContributorContentWithUserIdentifiers:inPhotoLibrary:
-+ _objc_msgSend$materializesDatalessFiles
-+ _objc_msgSend$notificationPredicateForFilter:
-+ _objc_msgSend$orphanedCPLContributorRecordsInPhotoLibrary:
-+ _objc_msgSend$path:isSubpathOfPhotoDirectoryWithType:
-+ _objc_msgSend$pendingCriteriaInLibrary:currentCriteria:outSignalAgainDate:
-+ _objc_msgSend$pendingWorkItemsInLibrary:currentCriteria:
-+ _objc_msgSend$performTransaction:withName:
-+ _objc_msgSend$predicateForMigratedCPLCollectionShares
-+ _objc_msgSend$predicateForPostsFromOthersCreatedAfterSubscriptionSinceDate:
-+ _objc_msgSend$provideFileURLAndUnwrapLivePhotoIfNeededForItemIdentifiersWithBundleIDs:destURLs:pathManager:options:resultHandler:completionHandler:
-+ _objc_msgSend$reconcileOrphanedRelationshipsWithCPLCollectionShare:
-+ _objc_msgSend$setAllowEmbeddedThumbnails:
-+ _objc_msgSend$setIsListening:
-+ _objc_msgSend$setLastEditedDate:
-+ _objc_msgSend$setPrefetchModeSchedulingResourceUpdate:error:
-+ _objc_msgSend$setShareContributorUserIdentifier:
-+ _objc_msgSend$setZeroWorkItemsForCurrentCriteria:
-+ _objc_msgSend$setupPlaceholderAssetWithRequiredPropertiesFromSourceAsset:placeholderAssetUUID:bundleScope:share:importSessionID:bakeInAdjustmentsFromSourceAsset:flattenLivePhoto:copyTitleDescriptionAndKeywords:copyCameraProcessingAdjustmentResources:copyLocationData:copyProvenanceData:isCurrentUser:library:
-+ _objc_msgSend$sourceURL
-+ _objc_msgSend$starRating
-+ _objc_msgSend$stateCaptureDictionariesForAllHandlers
-+ _objc_msgSend$supportsSearchProgressReporting
-+ _objc_msgSend$transitionToUninterruptible
-+ _objc_msgSend$tryPreparingForReplacementWithNewResponder:existingResponders:existingProgress:
-+ _objc_msgSend$updateImageExtendedGenerativeAttributesFromMetadata:policy:
-+ _objc_msgSend$videoComplementFilename
-+ _objc_msgSend$videoComplementSourceURL
-+ _objc_msgSend$workItemsNeedingProcessingInLibrary:currentCriteria:
-+ _objc_msgSend$zeroWorkItemsForCurrentCriteria
 + _predicateToExcludeAssetsMissingMasterThumbnailsWithThumbnailIndexKeyPath:.pl_once_object_14
 + _predicateToExcludeAssetsMissingMasterThumbnailsWithThumbnailIndexKeyPath:.pl_once_token_14
 + _predicateToExcludeCameraAutoAdjustments.pl_once_object_15
@@ -4550,139 +4382,6 @@ Symbols:
 - _kPhotosApplicationURLEventShowAlbum
 - _kPhotosApplicationURLEventShowImport
 - _kPhotosApplicationURLEventUICommandKey
-- _objc_msgSend$_assetsWithJPGFilenameAndRawPrimaryImageResourcePredicate
-- _objc_msgSend$_cloneResourcesForSharePlaceholderAsset:withPlaceholderResourceURLToSourceResourceURLMap:fileManager:photoLibrary:
-- _objc_msgSend$_copyAndMarkAsLocallyAvailablePairedLivePhotoResourceForRequestedResource:requestedVideoComplement:sourceURL:error:
-- _objc_msgSend$_copyItemAtURL:withPathManager:destFileIdentifier:inode:error:
-- _objc_msgSend$_copyJobContentsToHoldingDirectoryWithUUID:incomingPath:job:
-- _objc_msgSend$_countOfLocalCloudResourcesOfType:inManagedObjectContext:forMediumSized:localCount:unavailableCount:error:
-- _objc_msgSend$_customSharedAlbumExportsOutputDirectoryForAssetWithUUID:
-- _objc_msgSend$_debugDescription
-- _objc_msgSend$_detailsForAlbum:
-- _objc_msgSend$_enforcePrefetchModeForVisualIntelligenceLibraryIfNeededWithCPLSettings:
-- _objc_msgSend$_enqueueCloudCommentsNotifications
-- _objc_msgSend$_enqueueCloudFeedEntriesChangeNotifications
-- _objc_msgSend$_enqueueInvitationRecordsChangeNotification:
-- _objc_msgSend$_evaluateUpdatedAssets
-- _objc_msgSend$_featureAnalysisLexemeCategories
-- _objc_msgSend$_generateDeferredAdjustmentWithImageConversionClient:videoConversionClient:reason:retryNumber:allowCancellationByService:clientBundleID:completion:
-- _objc_msgSend$_getAvailableVersionedThumbnailIndexesWithCount:inLibrary:handler:
-- _objc_msgSend$_imagesWithZeroWidthHeightPredicate
-- _objc_msgSend$_initWithFullReload
-- _objc_msgSend$_initWithInsertedEntries:updatedEntries:deletedEntries:
-- _objc_msgSend$_inq_pendingJobsForBundle:workerTypes:validCriterias:
-- _objc_msgSend$_inq_pendingJobsOnBuffer:validCriterias:
-- _objc_msgSend$_inq_pendingJobsOnBundles:validCriterias:
-- _objc_msgSend$_installFTSIndexesInModel:
-- _objc_msgSend$_invalidateAllAlbums
-- _objc_msgSend$_irisesWithZeroVideoCpDuration
-- _objc_msgSend$_isAuthorizedAssetUUID:inManagedObjectContext:
-- _objc_msgSend$_leo_computeSnapshotForPhotoLibrary:completionHandler:
-- _objc_msgSend$_predicateForAdjustedAssetsWithMissingResources
-- _objc_msgSend$_processingSetURL
-- _objc_msgSend$_provideFileURLAndUnwrapLivePhotoIfNeededForBundleID:syndicationIdentifier:typeIdentifier:isLivePhoto:options:completionHandler:
-- _objc_msgSend$_ptpEventInfoIsolationQueue
-- _objc_msgSend$_setDidCalculateDiffs:
-- _objc_msgSend$_startRebuildForLibrary:
-- _objc_msgSend$_unpackPVTBundleAtURL:primaryURL:secondaryURL:error:
-- _objc_msgSend$_userDidDeleteSharedAssets:
-- _objc_msgSend$aa_formattedUsername
-- _objc_msgSend$addAssetContainerListChangeObserver:containerList:
-- _objc_msgSend$addInfosForRecipients:
-- _objc_msgSend$archiveAssetUUIDForPathPlist:
-- _objc_msgSend$archiveDictionary
-- _objc_msgSend$archivedAssetUUIDForURL:
-- _objc_msgSend$assetAttributesTrackedForSearch
-- _objc_msgSend$assetUUIDRecoveryMappingPath
-- _objc_msgSend$backgroundJobWorkerTypesMaskGuestAssetSync:personSync:syndicationSync:syndicationResourceSanitization:syndicationResourceDownload:syndicationAssetCleanup:assetStack:duplicateDetector:deferredRenderDerivativesLowPriority:deferredRenderDerivativesHighPriority:resourceAvailability:stableHash:editRenderingImage:editRenderingVideo:highPrioritySearchIndexing:lowPriorityBatterySearchIndexing:lowPriorityChargerSearchIndexing:sharedAssetContainerUpdate:assetResourceUploadJob:assetResourceUploadExtensionRunner:featureAvailability:optimizeTableThumbs:cascadeDonation:provenanceTimestamp:
-- _objc_msgSend$changedIndexesRelativeToSnapshot
-- _objc_msgSend$changedObjects
-- _objc_msgSend$compressData:error:
-- _objc_msgSend$containsTypes:
-- _objc_msgSend$countOfIndexesInRange:
-- _objc_msgSend$countRemainingWithManagedObjectContext:logger:
-- _objc_msgSend$cplDeviceLibraryConfigurationChanged
-- _objc_msgSend$cplPendingDeviceLibraryConfigurationChanged
-- _objc_msgSend$createLogger
-- _objc_msgSend$criteriaNeedingProcessingInLibrary:validCriterias:outSignalAgainDate:
-- _objc_msgSend$debugClient
-- _objc_msgSend$deleteResourceForSidecarRepresentation:
-- _objc_msgSend$descriptionForEventName:
-- _objc_msgSend$detectedFaceAttributesTrackedForSearch
-- _objc_msgSend$envelopeDictionary
-- _objc_msgSend$eventInfoForPTP
-- _objc_msgSend$executeQueryForSyncManager:type:startDate:endDate:batchHandler:completionHandler:
-- _objc_msgSend$extractPathToAssetUUIDRecoveryMappingFromDatabasePath:
-- _objc_msgSend$fetchingAlbumAttributesTrackedForSearch
-- _objc_msgSend$fileURLFromAssetURL:photoLibrary:
-- _objc_msgSend$filteredAlbumList:filter:
-- _objc_msgSend$finishDecoding
-- _objc_msgSend$generateDeferredAdjustmentWithImageConversionClient:videoConversionClient:reason:allowCancellationByService:clientBundleID:completion:
-- _objc_msgSend$generatePathToAssetUUIDRecoveryMapping
-- _objc_msgSend$highlightAttributesTrackedForSearch
-- _objc_msgSend$initCMMInvitationWithMomentShare:
-- _objc_msgSend$initNotificationWithPhotoLibrary:
-- _objc_msgSend$initWithAggregateAlbumList:fromAlbumListChangeNotification:indexOffset:
-- _objc_msgSend$initWithArchiveDictionary:
-- _objc_msgSend$initWithEnvelopeDictionary:
-- _objc_msgSend$initWithExpiringMomentShares:
-- _objc_msgSend$initWithIdentifier:settings:autoIdentifier:autoSettings:enabled:
-- _objc_msgSend$initWithIdentifier:settings:autoIdentifier:autoSettings:enabled:maskUUID:
-- _objc_msgSend$initWithInvitationAlbum:
-- _objc_msgSend$initWithInvitationRecordStatusChanged:
-- _objc_msgSend$initWithMessage:
-- _objc_msgSend$initWithMultipleContributorEnabledForAlbum:
-- _objc_msgSend$initWithName:elements:
-- _objc_msgSend$initWithProperty:collationType:
-- _objc_msgSend$initWithTransaction:
-- _objc_msgSend$initWithZeroWorkItemsForValidCriteria
-- _objc_msgSend$isLikePhoneNumber:
-- _objc_msgSend$isValidArchiveDictionary:errors:
-- _objc_msgSend$isValidEnvelopeDictionary:errors:
-- _objc_msgSend$isVisualIntelligenceDefaultLibrary
-- _objc_msgSend$lastImportedPhotosAlbumCreateIfNeeded:
-- _objc_msgSend$localizedFailureReason
-- _objc_msgSend$managedAlbumAttributesTrackedForSearch
-- _objc_msgSend$maskUUID
-- _objc_msgSend$mediaAnalysisAssetAttributesTrackedForSearch
-- _objc_msgSend$memoryAttributesTrackedForSearch
-- _objc_msgSend$noteUserDidChangeStatusForMomentShare:photoLibrary:
-- _objc_msgSend$noteUserDidNavigateAwayFromCollectionShare:photoLibrary:
-- _objc_msgSend$noteUserDidReadCommentOnSharedAsset:photoLibrary:
-- _objc_msgSend$notificationForAggregateAlbumList:fromAlbumListChangeNotification:indexOffset:
-- _objc_msgSend$notificationWithAlbum:snapshot:
-- _objc_msgSend$notificationWithAsset:snapshot:
-- _objc_msgSend$notificationWithFullReload
-- _objc_msgSend$notificationWithInsertedEntries:updatedEntries:deletedEntries:
-- _objc_msgSend$pendingCriteriaInLibrary:validCriterias:outSignalAgainDate:
-- _objc_msgSend$pendingWorkItemsInLibrary:validCriterias:
-- _objc_msgSend$personAttributesTrackedForSearch
-- _objc_msgSend$phoneNumbers
-- _objc_msgSend$placesAlbumListInPhotoLibrary:
-- _objc_msgSend$postShouldReloadNotificationWithPhotoLibrary:
-- _objc_msgSend$predicateForUploadableAssetsWithMasterCloudLocalStateNotEqualTo:cplFeatureDataclasses:
-- _objc_msgSend$prepareForReplacement
-- _objc_msgSend$privateDownloadCloudPhotoLibraryAsset:resourceType:highPriority:completionHandler:
-- _objc_msgSend$provideFileURLAndUnwrapLivePhotoIfNeededForItemIdentifiersWithBundleIDs:destURLs:options:resultHandler:completionHandler:
-- _objc_msgSend$removeAssetContainerListChangeObserver:containerList:
-- _objc_msgSend$requestAVAssetWithResultHandler:
-- _objc_msgSend$runWithCompletionHandler:
-- _objc_msgSend$scenesAlbumListInPhotoLibrary:
-- _objc_msgSend$searchTrackedAttributes
-- _objc_msgSend$serializeDictionary:error:
-- _objc_msgSend$setCloudRelationshipState:
-- _objc_msgSend$setDeletedEntries:
-- _objc_msgSend$setDouble:forKey:
-- _objc_msgSend$setIndexes:
-- _objc_msgSend$setInsertedEntries:
-- _objc_msgSend$setShouldReload:
-- _objc_msgSend$setUpdatedEntries:
-- _objc_msgSend$setZeroWorkItemsForValidCriteria:
-- _objc_msgSend$setupPlaceholderAssetWithRequiredPropertiesFromSourceAsset:placeholderAssetUUID:bundleScope:share:importSessionID:bakeInAdjustmentsFromSourceAsset:flattenLivePhoto:copyTitleDescriptionAndKeywords:copyCameraProcessingAdjustmentResources:copyProvenanceData:isCurrentUser:library:
-- _objc_msgSend$validateArchive:containsEntryWithKey:ofType:errors:
-- _objc_msgSend$validateValue:isOfType:errors:
-- _objc_msgSend$workItemsNeedingProcessingInLibrary:validCriterias:
-- _objc_msgSend$zeroWorkItemsForValidCriteria
 - _predicateForReframedAssets.onceToken
 - _predicateForReframedAssets.predicate
 - _predicateToExcludeAssetsMissingMasterThumbnailsWithThumbnailIndexKeyPath:.pl_once_object_16

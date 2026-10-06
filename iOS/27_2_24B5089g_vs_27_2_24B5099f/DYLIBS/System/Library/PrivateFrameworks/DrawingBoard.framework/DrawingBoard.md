@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/DrawingBoard.framework/DrawingBoard`
 
-```diff
+### Section Size Changes
 
- 38.1.2.0.0
--  __TEXT.__text: 0x33dcc
-+  __TEXT.__text: 0x33dd0
-   __TEXT.__objc_methlist: 0x930
-   __TEXT.__const: 0x4c38
-   __TEXT.__constg_swiftt: 0x23c0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x35a34` | `0x35a38` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2625a54d0 -> sub_26185b4d0 : 124 -> 128
+~ sub_26524366c -> sub_26455d66c : 124 -> 128
 ```

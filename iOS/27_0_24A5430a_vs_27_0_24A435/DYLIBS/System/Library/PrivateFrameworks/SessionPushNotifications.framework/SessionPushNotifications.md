@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SessionPushNotifications.framework/SessionPushNotifications`
 
-```diff
+### Section Size Changes
 
- 312.100.0.0.0
--  __TEXT.__text: 0x4a3a0
-+  __TEXT.__text: 0x4a450
-   __TEXT.__objc_methlist: 0x26c
-   __TEXT.__const: 0x2408
-   __TEXT.__swift5_typeref: 0xd8f
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4a3a0` | `0x4a450` | **`+0xb0`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_237f23198 -> sub_237f7d198 : 2816 -> 2832
 ~ sub_237f2455c -> sub_237f7e56c : 816 -> 820

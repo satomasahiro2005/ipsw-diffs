@@ -2,16 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ContextKitExtraction.framework/ContextKitExtraction`
 
-```diff
+### Section Size Changes
 
-   __TEXT.__gcc_except_tab: 0x270
-   __TEXT.__oslogstring: 0x653
-   __TEXT.__dlopen_cstrs: 0x11b
--  __TEXT.__unwind_info: 0x3e8
-+  __TEXT.__unwind_info: 0x3e0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__unwind_info` | `0x3e8` | `0x3e0` | **`-0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[CKContextContentProviderUIScene _setScene:] -> +[CKContextContentProviderManager isSpringBoard] : 20 -> 12
 ~ -[CKContextContentProviderManager userActivityWasCreated:] -> -[CKContextContentProviderUIScene _setScene:] : 180 -> 20

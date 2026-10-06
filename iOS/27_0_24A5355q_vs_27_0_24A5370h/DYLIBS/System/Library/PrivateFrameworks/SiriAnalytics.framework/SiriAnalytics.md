@@ -2,127 +2,63 @@
 
 > `/System/Library/PrivateFrameworks/SiriAnalytics.framework/SiriAnalytics`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe5ac4` | `0x10a594` | **`+0x24ad0`** |
+| `__TEXT.__cstring` | `0xaa2f` | `0x3f03` | **`-0x6b2c`** |
+| `__TEXT.__oslogstring` | `0x1136` | `0x3c90` | **`+0x2b5a`** |
+| `__AUTH_CONST.__const` | `0x6bc0` | `0x8f00` | **`+0x2340`** |
+| `__TEXT.__eh_frame` | `0x95cc` | `0xacd8` | **`+0x170c`** |
+| `__DATA.__bss` | `0xb340` | `0xc810` | **`+0x14d0`** |
+| `__AUTH_CONST.__cfstring` | `0x2200` | `0xea0` | **`-0x1360`** |
+| `__TEXT.__const` | `0xa638` | `0xb820` | **`+0x11e8`** |
+| `__TEXT.__swift5_capture` | `0xb40` | `0x17a4` | **`+0xc64`** |
+| `__TEXT.__unwind_info` | `0x4cc8` | `0x5540` | **`+0x878`** |
+| `__TEXT.__swift5_typeref` | `0x3315` | `0x391c` | **`+0x607`** |
+| `__AUTH.__data` | `0x22b0` | `0x2740` | **`+0x490`** |
+| `__DATA_CONST.__const` | `0x1410` | `0xfb8` | **`-0x458`** |
+| `__TEXT.__constg_swiftt` | `0x3bbc` | `0x3ec8` | **`+0x30c`** |
+| `__DATA.__data` | `0x2a18` | `0x2ca8` | **`+0x290`** |
+| `__TEXT.__swift5_fieldmd` | `0x2e90` | `0x30e8` | **`+0x258`** |
+| `__AUTH.__objc_data` | `0x10f0` | `0x12d0` | **`+0x1e0`** |
+| `__TEXT.__swift5_reflstr` | `0x224d` | `0x241d` | **`+0x1d0`** |
+| `__AUTH_CONST.__objc_const` | `0x6900` | `0x6ac8` | **`+0x1c8`** |
+| `__DATA_DIRTY.__data` | `0x1d48` | `0x1b88` | **`-0x1c0`** |
+| `__DATA.__common` | `0x248` | `0x3a0` | **`+0x158`** |
+| `__TEXT.__swift_as_cont` | `0x6a0` | `0x780` | **`+0xe0`** |
+| `__AUTH_CONST.__auth_got` | `0x1620` | `0x16f8` | **`+0xd8`** |
+| `__TEXT.__swift5_proto` | `0x6f0` | `0x794` | **`+0xa4`** |
+| `__DATA_DIRTY.__objc_data` | `0x1978` | `0x18d8` | **`-0xa0`** |
+| `__TEXT.__objc_methlist` | `0x2280` | `0x2210` | **`-0x70`** |
+| `__TEXT.__swift_as_entry` | `0x338` | `0x39c` | **`+0x64`** |
+| `__TEXT.__swift_as_ret` | `0x3bc` | `0x404` | **`+0x48`** |
+| `__TEXT.__swift5_types` | `0x43c` | `0x474` | **`+0x38`** |
+| `__DATA_CONST.__objc_selrefs` | `0x14d0` | `0x14a8` | **`-0x28`** |
+| `__DATA_CONST.__got` | `0x818` | `0x838` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x350` | `0x368` | **`+0x18`** |
+| `__DATA_DIRTY.__common` | `0x108` | `0xf0` | **`-0x18`** |
+| `__TEXT.__swift5_builtin` | `0x1cc` | `0x1b8` | **`-0x14`** |
+| `__DATA.__objc_ivar` | `0x208` | `0x1f8` | **`-0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0xe0` | `0xd0` | **`-0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x68` | `0x70` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.69.7.0.0
--  __TEXT.__text: 0xe5ac4 sha256:ff32f264312c82ab8c4a98f1946ec5cf990033950b9e658dd094e4dfb0a51532
--  __TEXT.__objc_methlist: 0x2280 sha256:3959c597d5f3618d5926df002b3de1be3ca8d0732002dacd10dbd6da95633389
--  __TEXT.__const: 0xa638 sha256:6ab8cce44d123ff53f3bca58255b3211aafb6f45dd2c02bdce01dcb05684c68b
--  __TEXT.__constg_swiftt: 0x3bbc sha256:3c7d178795cceaf787971e079a442311c46ea7d7f1683fece039dbd8159fdfa9
--  __TEXT.__swift5_typeref: 0x3315 sha256:431e3a117e35006250687104a1a30f0f02b26aa119a3ad60be4cf4c8999f50aa
--  __TEXT.__swift5_reflstr: 0x224d sha256:89cac5dc4574a5576a2928add9b6defbf18530fd2cf8ab1dd26f10d11f802fe3
--  __TEXT.__swift5_fieldmd: 0x2e90 sha256:b66263c411beee4b96a16fb9ea97ea16f9045047a3464f531daac7e23c873e9f
--  __TEXT.__swift5_builtin: 0x1cc sha256:61486518f85d37eedec4abae7dad7f8fa41e382fc3fb23377a13902e56f3942b
--  __TEXT.__swift5_assocty: 0x6a8 sha256:6309492b9cbac0f8296a9193699fda74e5a2b0608f2feb1df7ce4bce26f230cf
--  __TEXT.__cstring: 0xaa2f sha256:9d226714e48ff9c6e65e7fa1dcdf3836db15b0dfd6d35f13f8a81083e0a784a3
--  __TEXT.__swift5_proto: 0x6f0 sha256:9f7519c3102ec70288ea8ffcbec2312f2dbd1378d17adc686bfddc787ea2fc80
--  __TEXT.__swift5_types: 0x43c sha256:113bcbb04df515430196612582f11a298c901ed53175bb612bea485c4a14d700
--  __TEXT.__swift_as_entry: 0x338 sha256:df1147f8d23ee755640d02b9723934c56fe8c69992e501f8d70ef4edb4363daa
--  __TEXT.__swift_as_ret: 0x3bc sha256:035cfd1080b6e522727b843edd55377f2ebd80271c6681e2900c4d4f6e075641
--  __TEXT.__swift_as_cont: 0x6a0 sha256:776a491ab11af50cca47c6bbaf1cd8c7f8fde38892b6bc59bd00d9f714e7ccbc
--  __TEXT.__swift5_protos: 0x5c sha256:6b8c585f4205974ad0074e8e1c23db24ed399eda6d41712c1eb3fb73f588aac0
--  __TEXT.__swift5_capture: 0xb40 sha256:3c9552360f2651cb9612cb979c47cee381d8559069e20ece20effa6129aca214
--  __TEXT.__swift5_mpenum: 0x7c sha256:4936d52c28b7faf933c56e441e0d5d6bdd88d6dd901b2261f1387c49a8d85b33
--  __TEXT.__oslogstring: 0x1136 sha256:5bfdcc407a5ad9e8b8155120b15ef56dcb526ad481c3036fdc4e9cf2f3a58698
--  __TEXT.__gcc_except_tab: 0x2d0 sha256:3f39b4abe5f5f43bcda49251f720e607d9f12411e617499b6584ab082daf9731
--  __TEXT.__unwind_info: 0x4cc8 sha256:d1cfbb6b311c231b21a3608ce0b8293f01465a53c30bdb1e659fc165c748b140
--  __TEXT.__eh_frame: 0x95cc sha256:a2915e3b4b858e9a6df3f68048b359e0c60c106b98ef03528bf5fd5576863524
 +3600.77.1.0.0
-+  __TEXT.__text: 0x10a594 sha256:9c2f117fddeed8e9f11b74333a516448bd7ed2c2898f00edeec5daff5b90c25a
-+  __TEXT.__objc_methlist: 0x2210 sha256:99b3233dc4532961ccdb891cc81b5b6549d7d5f6d2f2d3abf153b0e9e4fbf0fa
-+  __TEXT.__const: 0xb820 sha256:b99fca9f3752b462047e3d242495a401110590476ccda1551dff479265df6412
-+  __TEXT.__constg_swiftt: 0x3ec8 sha256:0e030fbd78846eba8aed671f7dcc36b19ea6bd213668ebdacfa50758db212ef8
-+  __TEXT.__swift5_typeref: 0x391c sha256:1e32cb35b6d9102436dbe0b5e10633afd2ac7b7fab926aeb71fe2b0205ab5887
-+  __TEXT.__swift5_reflstr: 0x241d sha256:30331abf05a9d85b7ef037044877a8d1f6e222a1cf7248e2468e3731c2f7177d
-+  __TEXT.__swift5_fieldmd: 0x30e8 sha256:c39a0ec35a9f4643c81193f52faca5b895afe2400a155e1fcac35fc6ae9dda8e
-+  __TEXT.__swift5_builtin: 0x1b8 sha256:4fbd30811a1fa654f884d6e8b53640545e46075ce63edef0bdbba0513197b308
-+  __TEXT.__swift5_assocty: 0x6a8 sha256:c2945bdf351e02f506fb4dd802871b0055a459ae0e92b10bffba78c0552566c3
-+  __TEXT.__cstring: 0x3f03 sha256:26db1d0f576816895534455baaeeae9f0b306171f2c4bafc7af6431c7e7db9c0
-+  __TEXT.__swift5_proto: 0x794 sha256:e67128d1cca409278ef83edc9635ab96846804ead302dd3dc2d4c716d0c064ac
-+  __TEXT.__swift5_types: 0x474 sha256:3bb4516bdb2e0ac21026b5e1898da4187c7a59cea3beb15da1629983f8b506e3
-+  __TEXT.__swift_as_entry: 0x39c sha256:cad9b4496c94272dcd1a351cb732c54ac9c00ae764a183263a02bd4a604fe8c2
-+  __TEXT.__swift_as_ret: 0x404 sha256:e5f862246e842261491beb2cc4ca59772742d2727553a4a6290fc5f52fbbf181
-+  __TEXT.__swift_as_cont: 0x780 sha256:756f505e736c2e39934c6f585cc035fce0bc8ea3560d526c955c478d2549d730
-+  __TEXT.__swift5_protos: 0x5c sha256:6d15dd2f63276fc5f69d676dc8b19326202b213f400f1043b95e7a61255f0711
-+  __TEXT.__swift5_capture: 0x17a4 sha256:b3a835776149a8fd930920eec62418dd17232e2c3953624dcea1c1e53bd25b88
-+  __TEXT.__oslogstring: 0x3c90 sha256:5af0803f7f5436b52d8768832c7c102ddc2e7b361bb281b3a05a3a60aa9943bd
-+  __TEXT.__swift5_mpenum: 0x7c sha256:0f0927a91b06d1c1e162f5c52c68446b6c51384a350076501d83f6c5e24e8c26
-+  __TEXT.__gcc_except_tab: 0x2d0 sha256:e77fa68b4608f7d5e69de222269f3f791d88818732e284a9e0ffa7cf3bb172d2
-+  __TEXT.__unwind_info: 0x5540 sha256:94aef51647b9bd0189c21b77a544e681da56b3ccd63e32522422caae8a1ff3a2
-+  __TEXT.__eh_frame: 0xacd8 sha256:c2ccccd5d81c9236ff1344df11d37670b2f9b7c8bc0eae1f3066e07b4922e056
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1410 sha256:f39d4ada29414b9e8d7ce231b6c062a894884d51387786268f479589f9a898c0
--  __DATA_CONST.__objc_classlist: 0x350 sha256:23ce44ce4e64c59b58f8862c7290d4d446ee90411ec915f54ffcc641e4a7f3d1
--  __DATA_CONST.__objc_catlist: 0x20 sha256:f4f7c67e66bee5a9fc5c88742e758216851e57b015b8c9bab696b0ca63f5f737
--  __DATA_CONST.__objc_protolist: 0xe8 sha256:132f9a8a59b905444954cc957a2be10afce54750bfad7f06fec42148b75cbc4c
-+  __DATA_CONST.__const: 0xfb8 sha256:727414b7da5018863793a6d987b585f85c7110e965d79b009bb578ccf4e8789d
-+  __DATA_CONST.__objc_classlist: 0x368 sha256:c8059cc640c7cdb92b3c1f8f98831ad251b28280f620f71c45e616915ada0c46
-+  __DATA_CONST.__objc_catlist: 0x20 sha256:0060320e66b0c0a5fb9378007fa53509351710accdf50e0029fb63510305c168
-+  __DATA_CONST.__objc_protolist: 0xe8 sha256:dc0322ddbef7c67ba49a4f8362236247424ee80a970ece7a9e06eb22f13058ce
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0x14d0 sha256:da0ffbcc4e08c41c441f7016a70182ec52342aa7a1603b827c4a152173a5f9a7
--  __DATA_CONST.__objc_protorefs: 0x68 sha256:652bfe3ed0fdfd78de72426f7de1f1fab7fda2c9c9ad2505a02894f0c85d7086
--  __DATA_CONST.__objc_superrefs: 0xe0 sha256:34dcc51628fa40da5e4a575cc8f72714966e6052c2a22a572b1d60d599232b0a
--  __DATA_CONST.__got: 0x818 sha256:877d9b644158e324ed6abdd3c31ac1a229bb029ab76e9d642977d002bef7868f
--  __AUTH_CONST.__const: 0x6bc0 sha256:9bd902e36b5b452f587e113fa40aa9b6faf4eeb16f0ed5e85d25d1ac0befca56
--  __AUTH_CONST.__cfstring: 0x2200 sha256:877f43167da69f699c2ceee631e468fecec888c5e2c043f92527473419ac7481
--  __AUTH_CONST.__objc_const: 0x6900 sha256:2ddd18d685a75e0906cf2995e32a023e8eb02e48a87989fac084ff7a74787d08
--  __AUTH_CONST.__auth_got: 0x1620 sha256:6bbfba50cf10abb972df7648070e97d71464090a5e18fabbfc1bfec4dfa712fc
--  __AUTH.__objc_data: 0x10f0 sha256:284c488da403627945f22d3cac5bf5879be9ce1a9c19bd71689032b3b2af9ab3
--  __AUTH.__data: 0x22b0 sha256:c8d305b476c31090312964432178654c3e8cf443756311cdd01dcfdd6efa4777
--  __DATA.__objc_ivar: 0x208 sha256:3768e36b8613ed7284f0a74bea1f26734e416987baedd9f42061d3d0a7625b45
--  __DATA.__data: 0x2a18 sha256:cfddea04175134fc67c9072676785f8062f1460dff71fe8ec031954bada870b9
--  __DATA.__bss: 0xb340 sha256:ea9d0cb5f89024bee81fda5b129f552df50b52ba63edc29d2e4b4fa7f41a5ea6
--  __DATA.__common: 0x248 sha256:b9738ed024cfcf1cf6c76081b15343e3d4c1b4fbb2e0f7fa3c7370987072591a
--  __DATA_DIRTY.__objc_data: 0x1978 sha256:5cb213876c625bed464f3d6ba7876de068cc8f87bba1bba90c9691891222d717
--  __DATA_DIRTY.__data: 0x1d48 sha256:58ae820bdd325e275e656a3a21f5fcbb30b056886f05dcf96cfea275eb7534e3
-+  __DATA_CONST.__objc_selrefs: 0x14a8 sha256:297f9d3ab5b6de755cafc83d1bd21c3781b2e817d40818164823a3c34bb81844
-+  __DATA_CONST.__objc_protorefs: 0x70 sha256:6ab60247b1cdf500ee9683b14346c379eedce5e6589d5ae68b857c05c281b090
-+  __DATA_CONST.__objc_superrefs: 0xd0 sha256:fcd04473f1bf972840c09ae146d69ffe8e964ac4bb9128a4c9b2fa21e05ea2e8
-+  __DATA_CONST.__got: 0x838 sha256:7f61bfc10f505e1c7f759603e71186efffd9f4b4d8f5e6444b65bb691747e0a5
-+  __AUTH_CONST.__const: 0x8f00 sha256:2b98643ced866d3a2f04b86899a26ef9ce0e9eb3060db510c93538ead290d5a1
-+  __AUTH_CONST.__cfstring: 0xea0 sha256:95bc6810cefce8b5ccb75629a92512ef64f389b1db928a609cd26f9c4b4e0829
-+  __AUTH_CONST.__objc_const: 0x6ac8 sha256:3133a00a0d251beedd0e9d14647af786ec519ea03e0166f82d47370c65115852
-+  __AUTH_CONST.__auth_got: 0x16f8 sha256:f245942364afb415ea6ad18219deb50faf117504c6e6a0bde047d23b12ff6431
-+  __AUTH.__objc_data: 0x12d0 sha256:929ddf65a026d37c4c0ae3a6553e8f0cc9e8ce1029d1d7b1c5dd24d3e7995dbc
-+  __AUTH.__data: 0x2740 sha256:d42036dbc41db042cbbcff23e49a7b84261716238020d8d9659f3009d4bb1f1b
-+  __DATA.__objc_ivar: 0x1f8 sha256:6de0da7560169fa25fc481603ed12cc9d78b9bdbcead3946a5db3c8e067fd4f9
-+  __DATA.__data: 0x2ca8 sha256:ead490d925dd5b6e705d04da1c1d42a1b7c7bf0abaafe535256174317581abe6
-+  __DATA.__bss: 0xc810 sha256:ea697b149b2eba84ef3907013635ba98d9e71acbb2df6d73ea5b683e1853e99e
-+  __DATA.__common: 0x3a0 sha256:21dca009689775fc4aad02b4b753d3441a71f6cfa591beb18340d9790825fa5d
-+  __DATA_DIRTY.__objc_data: 0x18d8 sha256:d5123c3d800cdda551379d540a69954db0630090f8a6c642ef5eee54a0d864f8
-+  __DATA_DIRTY.__data: 0x1b88 sha256:edf587d3eaf90c400244cfd3f76112391238b27e4f67778aadd500a9179c54d8
-   __DATA_DIRTY.__bss: 0x2b8 sha256:030dd256c2a1dda892b0e57157ec52f9ae5fd1e054d0c66380fae1cb6c09c477
--  __DATA_DIRTY.__common: 0x108 sha256:1fa59a9343c1f5f56cbfa17c734faed7188c548daeab88ab1667c796022bc587
-+  __DATA_DIRTY.__common: 0xf0 sha256:f93d48073cf074fab59470582841df4c57849d50d82d13db3b4110bb6b7f379a
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
-   - /System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer
-   - /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices
 +  - /System/Library/PrivateFrameworks/SchemaTypesCore.framework/SchemaTypesCore
-   - /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
 
-   - /usr/lib/swift/libswift_DarwinFoundation3.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: 2D7A3193-CBC5-3B56-81B0-6CAD500DEE8F
 -  Functions: 6920
--  Symbols:   8460
--  CStrings:  1270
-+  UUID: 10AE9908-3259-32E9-B1AC-568D5D693219
+-  Symbols:   3353
+-  CStrings:  998
 +  Functions: 7780
-+  Symbols:   9832
-+  CStrings:  834
- 
++  Symbols:   3503
++  CStrings:  716
 Symbols:
 + -[SiriAnalyticsClientMessageStream emitMessagePayload:typeIdentifier:timestamp:isolatedStreamUUID:completion:]
 + -[SiriAnalyticsClientMessageStream initWithMachServiceName:]
@@ -220,115 +156,23 @@ Symbols:
 + ___104-[SiriAnalyticsXPCConnection emitMessagePayload:typeIdentifier:timestamp:isolatedStreamUUID:completion:]_block_invoke
 + ___104-[SiriAnalyticsXPCConnection resolvePartialMessage:timestamp:messageUUID:isolatedStreamUUID:completion:]_block_invoke
 + ___109-[SiriAnalyticsXPCConnection enqueueLargeMessageObjectFromPath:dataUploadEvent:requestIdentifier:completion:]_block_invoke
-+ ___41-[SiriAnalyticsXPCConnection _fetchTags:]_block_invoke.39
 + ___52-[SiriAnalyticsXPCConnection barrierWithCompletion:]_block_invoke_2
 + ___53-[SiriAnalyticsXPCConnection _barrierWithCompletion:]_block_invoke
-+ ___57-[SiriAnalyticsXPCConnection _runPipelineWithCompletion:]_block_invoke.47
-+ ___57-[SiriAnalyticsXPCConnection _runPipelineWithCompletion:]_block_invoke.48
 + ___62-[SiriAnalyticsXPCConnection _createTag:callerQoS:completion:]_block_invoke
 + ___62-[SiriAnalyticsXPCConnection _createTag:callerQoS:completion:]_block_invoke_2
 + ___62-[SiriAnalyticsXPCConnection _createTag:callerQoS:completion:]_block_invoke_3
-+ ___63-[SiriAnalyticsXPCConnection _resetLogicalClockWithCompletion:]_block_invoke.28
-+ ___63-[SiriAnalyticsXPCConnection _resetLogicalClockWithCompletion:]_block_invoke.29
-+ ___63-[SiriAnalyticsXPCConnection _setKillSwitchEnabled:completion:]_block_invoke.46
-+ ___64-[SiriAnalyticsXPCConnection _fetchLogicalClocksWithCompletion:]_block_invoke.37
-+ ___64-[SiriAnalyticsXPCConnection _vendResource:readonly:completion:]_block_invoke.34
-+ ___64-[SiriAnalyticsXPCConnection _vendResource:readonly:completion:]_block_invoke.35
-+ ___65-[SiriAnalyticsXPCConnection _fetchStateForPluginWithCompletion:]_block_invoke.41
-+ ___65-[SiriAnalyticsXPCConnection _fetchStateForPluginWithCompletion:]_block_invoke.42
-+ ___65-[SiriAnalyticsXPCConnection _purgeStagedMessagesWithCompletion:]_block_invoke.49
-+ ___65-[SiriAnalyticsXPCConnection _purgeStagedMessagesWithCompletion:]_block_invoke.50
-+ ___65-[SiriAnalyticsXPCConnection _saveState:forPluginWithCompletion:]_block_invoke.43
-+ ___65-[SiriAnalyticsXPCConnection _saveState:forPluginWithCompletion:]_block_invoke.44
-+ ___68-[SiriAnalyticsXPCConnection _fetchKillSwitchEnabledWithCompletion:]_block_invoke.45
-+ ___68-[SiriAnalyticsXPCConnection _purgePackagingMessagesWithCompletion:]_block_invoke.51
-+ ___68-[SiriAnalyticsXPCConnection _purgePackagingMessagesWithCompletion:]_block_invoke.52
-+ ___69-[SiriAnalyticsXPCConnection _sensitiveCondition:endedAt:completion:]_block_invoke.26
-+ ___75-[SiriAnalyticsXPCConnection _publishMessagesToRemote:attempts:completion:]_block_invoke.8
-+ ___75-[SiriAnalyticsXPCConnection _resolveMessagesAtRemote:attempts:completion:]_block_invoke.13
-+ ___75-[SiriAnalyticsXPCConnection _resolveMessagesAtRemote:attempts:completion:]_block_invoke.15
-+ ___79-[SiriAnalyticsXPCConnection _publishLargeMessageToRemote:attempts:completion:]_block_invoke.22
-+ ___79-[SiriAnalyticsXPCConnection _publishLargeMessageToRemote:attempts:completion:]_block_invoke.24
 + ___81-[SiriAnalyticsXPCConnection _sensitiveCondition:startedAt:callerQoS:completion:]_block_invoke
-+ ___81-[SiriAnalyticsXPCConnection _sensitiveCondition:startedAt:callerQoS:completion:]_block_invoke.25
 + ___81-[SiriAnalyticsXPCConnection _sensitiveCondition:startedAt:callerQoS:completion:]_block_invoke_2
-+ ___82-[SiriAnalyticsXPCConnection _publishUnorderedMessages:topic:attempts:completion:]_block_invoke.11
-+ ___82-[SiriAnalyticsXPCConnection _publishUnorderedMessages:topic:attempts:completion:]_block_invoke.9
 + ___82-[SiriAnalyticsXPCConnection emitMessage:timestamp:isolatedStreamUUID:completion:]_block_invoke
-+ ___84-[SiriAnalyticsXPCConnection _vendSandboxExtensionWithResource:readonly:completion:]_block_invoke.31
-+ ___84-[SiriAnalyticsXPCConnection _vendSandboxExtensionWithResource:readonly:completion:]_block_invoke.32
-+ ___Block_byref_object_copy_.415
-+ ___Block_byref_object_dispose_.416
 + ___block_descriptor_52_e8_32s40bs_e20_v20?0B8"NSError"12ls32l8s40l8
 + ___block_descriptor_60_e8_32s40s48bs_e5_v8?0ls32l8s40l8s48l8
 + ___block_descriptor_64_e8_32s40bs_e5_v8?0ls32l8s40l8
 + ___block_descriptor_72_e8_32s40s48s56s64bs_e5_v8?0ls32l8s40l8s48l8s56l8s64l8
 + ___block_descriptor_76_e8_32s40s48s56bs_e5_v8?0ls32l8s40l8s48l8s56l8
 + ___block_descriptor_80_e8_32s40s48s56s64bs_e5_v8?0ls32l8s40l8s48l8s56l8s64l8
-+ ___block_literal_global.1591
-+ ___block_literal_global.1597
-+ ___block_literal_global.413
-+ ___block_literal_global.813
-+ ___swift__destructor.33
-+ ___swift__destructor.44
-+ ___swift__destructor.47
-+ ___swift__destructor.50
-+ ___swift_closure_destructor.102
 + ___swift_closure_destructor.10Tm
-+ ___swift_closure_destructor.110
-+ ___swift_closure_destructor.12
-+ ___swift_closure_destructor.121
-+ ___swift_closure_destructor.2
 + ___swift_closure_destructor.21Tm
-+ ___swift_closure_destructor.22
-+ ___swift_closure_destructor.25
-+ ___swift_closure_destructor.29
-+ ___swift_closure_destructor.30
-+ ___swift_closure_destructor.31
-+ ___swift_closure_destructor.33
-+ ___swift_closure_destructor.34
-+ ___swift_closure_destructor.37
-+ ___swift_closure_destructor.39
-+ ___swift_closure_destructor.4
-+ ___swift_closure_destructor.41
-+ ___swift_closure_destructor.42
-+ ___swift_closure_destructor.43
-+ ___swift_closure_destructor.44
-+ ___swift_closure_destructor.45
-+ ___swift_closure_destructor.47
-+ ___swift_closure_destructor.48
-+ ___swift_closure_destructor.49
-+ ___swift_closure_destructor.50
-+ ___swift_closure_destructor.53
-+ ___swift_closure_destructor.54
-+ ___swift_closure_destructor.55
-+ ___swift_closure_destructor.58
-+ ___swift_closure_destructor.59
-+ ___swift_closure_destructor.60
-+ ___swift_closure_destructor.61
-+ ___swift_closure_destructor.63
-+ ___swift_closure_destructor.64
-+ ___swift_closure_destructor.65
-+ ___swift_closure_destructor.66
-+ ___swift_closure_destructor.68
-+ ___swift_closure_destructor.69
-+ ___swift_closure_destructor.70
-+ ___swift_closure_destructor.72
-+ ___swift_closure_destructor.74
-+ ___swift_closure_destructor.75
 + ___swift_closure_destructor.75Tm
-+ ___swift_closure_destructor.76
-+ ___swift_closure_destructor.78
-+ ___swift_closure_destructor.80
-+ ___swift_closure_destructor.82
-+ ___swift_closure_destructor.84
-+ ___swift_closure_destructor.86
-+ ___swift_closure_destructor.87
-+ ___swift_closure_destructor.88
-+ ___swift_closure_destructor.90
-+ ___swift_closure_destructor.91
-+ ___swift_closure_destructor.94
-+ ___swift_closure_destructor.98
 + ___swift_project_boxed_opaque_existential_1Tm
 + ___unnamed_8
 + __swift_stdlib_bridgeErrorToNSError
@@ -360,49 +204,11 @@ Symbols:
 + _associated conformance 13SiriAnalytics22ConnectedComponentsLogV8Dendrite19KeyPathBoundMessageAaD05ProtoJ6Reader
 + _associated conformance 13SiriAnalytics22ConnectedComponentsLogV8Dendrite19KeyPathBoundMessageAaD05ProtoJ6Writer
 + _associated conformance 13SiriAnalytics22ConnectedComponentsLogV8Dendrite19KeyPathBoundMessageAaD17DataRepresentable
-+ _block_copy_helper.12
-+ _block_copy_helper.32
-+ _block_copy_helper.47
-+ _block_copy_helper.51
-+ _block_copy_helper.61
-+ _block_copy_helper.67
-+ _block_copy_helper.8
-+ _block_copy_helper.89
-+ _block_descriptor.10
-+ _block_descriptor.14
-+ _block_descriptor.34
-+ _block_descriptor.49
-+ _block_descriptor.53
-+ _block_descriptor.63
-+ _block_descriptor.69
-+ _block_descriptor.91
-+ _block_destroy_helper.13
-+ _block_destroy_helper.33
-+ _block_destroy_helper.48
-+ _block_destroy_helper.52
-+ _block_destroy_helper.62
-+ _block_destroy_helper.68
-+ _block_destroy_helper.9
-+ _block_destroy_helper.90
 + _dispatch_block_create
 + _flat unique So23SiriAnalyticsXPCService_p
 + _get_enum_tag_for_layout_string 13SiriAnalytics10SchemaUUIDVSg
 + _get_enum_tag_for_layout_string 13SiriAnalytics22ConnectedComponentsLogV0C10IdentifierVSg
 + _get_enum_tag_for_layout_string 13SiriAnalytics22ConnectedComponentsLogV7ByClockVSg
-+ _objc_msgSend$_barrierWithCompletion:
-+ _objc_msgSend$_createTag:callerQoS:completion:
-+ _objc_msgSend$_sensitiveCondition:startedAt:callerQoS:completion:
-+ _objc_msgSend$emitMessage:timestamp:isolatedStreamUUID:completion:
-+ _objc_msgSend$emitMessagePayload:typeIdentifier:timestamp:isolatedStreamUUID:completion:
-+ _objc_msgSend$flushEventTelemetry
-+ _objc_msgSend$initWithBool:
-+ _objc_msgSend$initWithInt:
-+ _objc_msgSend$initWithInteger:
-+ _objc_msgSend$initWithLongLong:
-+ _objc_msgSend$initWithUnsignedLongLong:
-+ _objc_msgSend$setAnyEvent:
-+ _objc_msgSend$setTypeId:
-+ _objc_msgSend$setVersion:
 + _qos_class_self
 + _swift_release_x10
 + _swift_release_x11
@@ -576,7 +382,6 @@ Symbols:
 - ___109-[SiriAnalyticsRemoteService enqueueLargeMessageObjectFromPath:dataUploadEvent:requestIdentifier:completion:]_block_invoke
 - ___125-[SiriAnalyticsInternalTelemetry trackMessageStreamProcessed:timeToFirstMessage:messageCount:processingReason:failureReason:]_block_invoke
 - ___131-[SiriAnalyticsClientMessageStream enqueueLargeMessageObjectFromPath:assetIdentifier:requestIdentifier:messageMetadata:completion:]_block_invoke
-- ___41-[SiriAnalyticsXPCConnection _fetchTags:]_block_invoke.36
 - ___51-[SiriAnalyticsRemoteService createTag:completion:]_block_invoke
 - ___52-[SiriAnalyticsInternalTelemetry trackEventEmitted:]_block_invoke
 - ___52-[SiriAnalyticsInternalTelemetry trackLogicalClock:]_block_invoke
@@ -586,49 +391,18 @@ Symbols:
 - ___52-[SiriAnalyticsXPCConnection _createTag:completion:]_block_invoke_2
 - ___52-[SiriAnalyticsXPCConnection _createTag:completion:]_block_invoke_3
 - ___55-[SiriAnalyticsInternalTelemetry trackAnyEventEmitted:]_block_invoke
-- ___57-[SiriAnalyticsXPCConnection _runPipelineWithCompletion:]_block_invoke.44
-- ___57-[SiriAnalyticsXPCConnection _runPipelineWithCompletion:]_block_invoke.45
 - ___58-[SiriAnalyticsClientMessageStream barrierWithCompletion:]_block_invoke
-- ___63-[SiriAnalyticsXPCConnection _resetLogicalClockWithCompletion:]_block_invoke.25
-- ___63-[SiriAnalyticsXPCConnection _resetLogicalClockWithCompletion:]_block_invoke.26
-- ___63-[SiriAnalyticsXPCConnection _setKillSwitchEnabled:completion:]_block_invoke.43
 - ___64-[SiriAnalyticsInternalTelemetry trackMessageStagedWithSuccess:]_block_invoke
-- ___64-[SiriAnalyticsXPCConnection _fetchLogicalClocksWithCompletion:]_block_invoke.34
-- ___64-[SiriAnalyticsXPCConnection _vendResource:readonly:completion:]_block_invoke.31
-- ___64-[SiriAnalyticsXPCConnection _vendResource:readonly:completion:]_block_invoke.32
-- ___65-[SiriAnalyticsXPCConnection _fetchStateForPluginWithCompletion:]_block_invoke.38
-- ___65-[SiriAnalyticsXPCConnection _fetchStateForPluginWithCompletion:]_block_invoke.39
-- ___65-[SiriAnalyticsXPCConnection _purgeStagedMessagesWithCompletion:]_block_invoke.46
-- ___65-[SiriAnalyticsXPCConnection _purgeStagedMessagesWithCompletion:]_block_invoke.47
-- ___65-[SiriAnalyticsXPCConnection _saveState:forPluginWithCompletion:]_block_invoke.40
-- ___65-[SiriAnalyticsXPCConnection _saveState:forPluginWithCompletion:]_block_invoke.41
 - ___68-[SiriAnalyticsRemoteService sensitiveCondition:endedAt:completion:]_block_invoke
-- ___68-[SiriAnalyticsXPCConnection _fetchKillSwitchEnabledWithCompletion:]_block_invoke.42
-- ___68-[SiriAnalyticsXPCConnection _purgePackagingMessagesWithCompletion:]_block_invoke.48
-- ___68-[SiriAnalyticsXPCConnection _purgePackagingMessagesWithCompletion:]_block_invoke.49
-- ___69-[SiriAnalyticsXPCConnection _sensitiveCondition:endedAt:completion:]_block_invoke.22
-- ___69-[SiriAnalyticsXPCConnection _sensitiveCondition:endedAt:completion:]_block_invoke.23
 - ___70-[SiriAnalyticsRemoteService sensitiveCondition:startedAt:completion:]_block_invoke
 - ___71-[SiriAnalyticsInternalTelemetry _trackLogicalClock:isDerivativeClock:]_block_invoke
 - ___71-[SiriAnalyticsXPCConnection _sensitiveCondition:startedAt:completion:]_block_invoke
-- ___71-[SiriAnalyticsXPCConnection _sensitiveCondition:startedAt:completion:]_block_invoke.21
 - ___71-[SiriAnalyticsXPCConnection _sensitiveCondition:startedAt:completion:]_block_invoke_2
-- ___75-[SiriAnalyticsXPCConnection _publishMessagesToRemote:attempts:completion:]_block_invoke.2
-- ___75-[SiriAnalyticsXPCConnection _resolveMessagesAtRemote:attempts:completion:]_block_invoke.10
-- ___75-[SiriAnalyticsXPCConnection _resolveMessagesAtRemote:attempts:completion:]_block_invoke.9
 - ___77-[SiriAnalyticsClientMessageStream emitMessage:timestamp:isolatedStreamUUID:]_block_invoke
 - ___77-[SiriAnalyticsInternalTelemetry trackRuntimeBootstrapWithKillSwitchEnabled:]_block_invoke
-- ___79-[SiriAnalyticsXPCConnection _publishLargeMessageToRemote:attempts:completion:]_block_invoke.18
-- ___79-[SiriAnalyticsXPCConnection _publishLargeMessageToRemote:attempts:completion:]_block_invoke.20
-- ___82-[SiriAnalyticsXPCConnection _publishUnorderedMessages:topic:attempts:completion:]_block_invoke.6
-- ___82-[SiriAnalyticsXPCConnection _publishUnorderedMessages:topic:attempts:completion:]_block_invoke.8
-- ___84-[SiriAnalyticsXPCConnection _vendSandboxExtensionWithResource:readonly:completion:]_block_invoke.28
-- ___84-[SiriAnalyticsXPCConnection _vendSandboxExtensionWithResource:readonly:completion:]_block_invoke.29
 - ___85-[SiriAnalyticsInternalTelemetry trackRuntimeBootstrapCompleteWithBootstrapTimeInNs:]_block_invoke
 - ___87-[SiriAnalyticsClientMessageStream resolvePartialMessage:timestamp:isolatedStreamUUID:]_block_invoke
 - ___94-[SiriAnalyticsRemoteService emitMessage:timestamp:messageUUID:isolatedStreamUUID:completion:]_block_invoke
-- ___Block_byref_object_copy_.413
-- ___Block_byref_object_dispose_.414
 - ___block_descriptor_33_e19_"NSDictionary"8?0l
 - ___block_descriptor_40_e19_"NSDictionary"8?0l
 - ___block_descriptor_40_e8_32s_e45_v32?0"SiriAnalyticsDerivativeClock"8Q16^B24ls32l8
@@ -636,44 +410,7 @@ Symbols:
 - ___block_descriptor_72_e8_32s40s48s56s64bs_e5_v8?0ls32l8s40l8s48l8s64l8s56l8
 - ___block_descriptor_72_e8_32s40s48s56s_e5_v8?0ls32l8s40l8s48l8s56l8
 - ___block_descriptor_72_e8_32s40s_e19_"NSDictionary"8?0ls32l8s40l8
-- ___block_literal_global.1681
-- ___block_literal_global.1687
-- ___block_literal_global.410
-- ___block_literal_global.852
-- ___swift__destructor.14
-- ___swift__destructor.24
-- ___swift__destructor.27
-- ___swift__destructor.30
 - ___unnamed_7
-- _block_copy_helper.18
-- _block_copy_helper.34
-- _block_copy_helper.37
-- _block_descriptor.20
-- _block_descriptor.36
-- _block_descriptor.39
-- _block_destroy_helper.19
-- _block_destroy_helper.35
-- _block_destroy_helper.38
-- _objc_msgSend$_createTag:completion:
-- _objc_msgSend$_sensitiveCondition:startedAt:completion:
-- _objc_msgSend$_trackLogicalClock:isDerivativeClock:
-- _objc_msgSend$components:fromDate:
-- _objc_msgSend$currentCalendar
-- _objc_msgSend$description
-- _objc_msgSend$emitMessage:timestamp:messageUUID:isolatedStreamUUID:completion:
-- _objc_msgSend$hour
-- _objc_msgSend$initWithDictionary:
-- _objc_msgSend$initWithPreferences:
-- _objc_msgSend$initWithQueue:analyticsService:
-- _objc_msgSend$mutableCopy
-- _objc_msgSend$numberWithInteger:
-- _objc_msgSend$numberWithLongLong:
-- _objc_msgSend$setValue:forKey:
-- _objc_msgSend$simulateCustomerImage
-- _objc_msgSend$trackEventEmitted:
-- _objc_msgSend$trackFBFError:forEventData:
-- _objc_msgSend$trackMessageStagedWithSuccess:
-- _objc_msgSend$trackMessageStreamProcessed:timeToFirstMessage:messageCount:processingReason:failureReason:
 - _objc_retain_x6
 - _symbolic SDy__________y_Say_____GGG 10Foundation4UUIDV 13SiriAnalytics8PatternsV7FetchedO AD22TextDataClassificationV
 - _symbolic So30SiriAnalyticsInternalTelemetryCSg
@@ -1324,5 +1061,4 @@ CStrings:
 - "updateTag(tagId:tag:)"
 - "userRequestTag(clusterId:clockIdentifier:)"
 - "v32@?0@\"SiriAnalyticsDerivativeClock\"8Q16^B24"
-
 ```

@@ -2,112 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x64694` | `0x6773c` | **`+0x30a8`** |
+| `__TEXT.__swift5_typeref` | `0x1b8` | `0x53a` | **`+0x382`** |
+| `__AUTH_CONST.__objc_const` | `0x6410` | `0x65e8` | **`+0x1d8`** |
+| `__TEXT.__const` | `0x374` | `0x524` | **`+0x1b0`** |
+| `__DATA.__data` | `0x478` | `0x5f8` | **`+0x180`** |
+| `__AUTH_CONST.__auth_got` | `0x950` | `0xac8` | **`+0x178`** |
+| `__TEXT.__cstring` | `0x8244` | `0x8344` | **`+0x100`** |
+| `__TEXT.__objc_methlist` | `0x4174` | `0x4274` | **`+0x100`** |
+| `__AUTH.__objc_data` | `0x16c8` | `0x1780` | **`+0xb8`** |
+| `__AUTH.__data` | `0x1a8` | `0x250` | **`+0xa8`** |
+| `__DATA_CONST.__got` | `0x9e8` | `0xa78` | **`+0x90`** |
+| `__DATA_CONST.__objc_selrefs` | `0x32c0` | `0x3350` | **`+0x90`** |
+| `__TEXT.__unwind_info` | `0x1798` | `0x1828` | **`+0x90`** |
+| `__DATA.__bss` | `0x568` | `0x5f0` | **`+0x88`** |
+| `__TEXT.__constg_swiftt` | `0x1e8` | `0x26c` | **`+0x84`** |
+| `__AUTH_CONST.__cfstring` | `0x6f60` | `0x6fc0` | **`+0x60`** |
+| `__TEXT.__swift5_fieldmd` | `0xbc` | `0x110` | **`+0x54`** |
+| `__TEXT.__swift5_reflstr` | `0xb9` | `0xe3` | **`+0x2a`** |
+| `__AUTH_CONST.__const` | `0xa48` | `0xa70` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x1b00` | `0x1b28` | **`+0x28`** |
+| `__AUTH_CONST.__objc_intobj` | `0x348` | `0x360` | **`+0x18`** |
+| `__DATA_CONST.__objc_protolist` | `0x50` | `0x68` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `—` | `0x18` | **`+0x18`** |
+| `__DATA_CONST.__objc_protorefs` | `0x8` | `0x18` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x19c` | `0x1ac` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x468` | `0x470` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x238` | `0x240` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x12a0` | `0x12a8` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x14` | `0x1c` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `—` | `0x4` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -2027.0.2.0.0
--  __TEXT.__text: 0x64694
--  __TEXT.__objc_methlist: 0x4174
--  __TEXT.__const: 0x374
--  __TEXT.__gcc_except_tab: 0x12a0
--  __TEXT.__cstring: 0x8244
 +2027.0.4.0.0
-+  __TEXT.__text: 0x6773c
-+  __TEXT.__objc_methlist: 0x4274
-+  __TEXT.__const: 0x524
-+  __TEXT.__gcc_except_tab: 0x12a8
-+  __TEXT.__cstring: 0x8344
-   __TEXT.__oslogstring: 0x2c60
-   __TEXT.__dlopen_cstrs: 0xe98
--  __TEXT.__swift5_typeref: 0x1b8
--  __TEXT.__swift5_capture: 0x19c
--  __TEXT.__constg_swiftt: 0x1e8
--  __TEXT.__swift5_reflstr: 0xb9
--  __TEXT.__swift5_fieldmd: 0xbc
--  __TEXT.__swift5_types: 0x14
-+  __TEXT.__swift5_typeref: 0x53a
-+  __TEXT.__swift5_capture: 0x1ac
-+  __TEXT.__constg_swiftt: 0x26c
-+  __TEXT.__swift5_reflstr: 0xe3
-+  __TEXT.__swift5_fieldmd: 0x110
-+  __TEXT.__swift5_types: 0x1c
-   __TEXT.__swift_as_entry: 0x34
-   __TEXT.__swift_as_ret: 0x34
-   __TEXT.__swift_as_cont: 0x34
--  __TEXT.__unwind_info: 0x1798
-+  __TEXT.__swift5_assocty: 0x18
-+  __TEXT.__swift5_proto: 0x4
-+  __TEXT.__unwind_info: 0x1828
-   __TEXT.__eh_frame: 0x648
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1b00
--  __DATA_CONST.__objc_classlist: 0x238
-+  __DATA_CONST.__const: 0x1b28
-+  __DATA_CONST.__objc_classlist: 0x240
-   __DATA_CONST.__objc_catlist: 0x10
--  __DATA_CONST.__objc_protolist: 0x50
-+  __DATA_CONST.__objc_protolist: 0x68
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x32c0
--  __DATA_CONST.__objc_protorefs: 0x8
-+  __DATA_CONST.__objc_selrefs: 0x3350
-+  __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x1d8
-   __DATA_CONST.__objc_arraydata: 0x188
--  __DATA_CONST.__got: 0x9e8
--  __AUTH_CONST.__const: 0xa48
--  __AUTH_CONST.__cfstring: 0x6f60
--  __AUTH_CONST.__objc_const: 0x6410
--  __AUTH_CONST.__objc_intobj: 0x348
-+  __DATA_CONST.__got: 0xa78
-+  __AUTH_CONST.__const: 0xa70
-+  __AUTH_CONST.__cfstring: 0x6fc0
-+  __AUTH_CONST.__objc_const: 0x65e8
-+  __AUTH_CONST.__objc_intobj: 0x360
-   __AUTH_CONST.__objc_arrayobj: 0x120
-   __AUTH_CONST.__objc_dictobj: 0x50
--  __AUTH_CONST.__auth_got: 0x950
--  __AUTH.__objc_data: 0x16c8
--  __AUTH.__data: 0x1a8
--  __DATA.__objc_ivar: 0x468
--  __DATA.__data: 0x478
--  __DATA.__bss: 0x568
-+  __AUTH_CONST.__auth_got: 0xac8
-+  __AUTH.__objc_data: 0x1780
-+  __AUTH.__data: 0x250
-+  __DATA.__objc_ivar: 0x470
-+  __DATA.__data: 0x5f8
-+  __DATA.__bss: 0x5f0
-   __DATA.__common: 0x30
-   __DATA_DIRTY.__objc_data: 0xf0
-   - /System/Library/Frameworks/AccessorySetupKit.framework/AccessorySetupKit
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2056
--  Symbols:   4925
+-  Symbols:   3607
 -  CStrings:  1401
 +  Functions: 2126
-+  Symbols:   5034
++  Symbols:   3696
 +  CStrings:  1409
- 
 Symbols:
 + +[PUILockdownModeUtilities threatNotificationDate]
 + -[PUILockdownModeController dealloc]
@@ -167,26 +109,6 @@ Symbols:
 + _associated conformance 17PrivacySettingsUI22ThreatNotificationCard33_90078785C6D9B5A5851A578C83C225F4LLV05SwiftC04ViewAA4BodyAeFP_AeF
 + _flat unique So36PUILockdownModeLearnMoreActionTarget_p
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyACyACyACyACyAA6VStackVyAA05TupleD0VyAA4TextV_AIQPGGAA14_PaddingLayoutVGAA010_FlexFrameI0VGAA24_BackgroundStyleModifierVyAA017HierarchicalShapemN0VyAA5ColorVGGGAA11_ClipEffectVyAA16RoundedRectangleVGGAMGAA022_EnvironmentKeyWritingN0VyAA13OpenURLActionVGGSgAA4ViewHpA11_AAA13_HPA5_AAA13_HPA4_AAA13_HPAzAA13_HPAqAA13_HPAnAA13_HPAkAA13_HPyHC_AmA04ViewN0HPyHCHC_ApAA14_HPyHCHC_AyAA14_HPyHCHC_A3_AAA14_HPyHCHC_AmAA14_HPyHCHC_A10_AAA14_HPyHCHC_HC
-+ _objc_msgSend$dateKey
-+ _objc_msgSend$initWithCoder:
-+ _objc_msgSend$initWithStyle:reuseIdentifier:
-+ _objc_msgSend$initWithStyle:reuseIdentifier:specifier:
-+ _objc_msgSend$localizedModel
-+ _objc_msgSend$localizedStringFromDate:dateStyle:timeStyle:
-+ _objc_msgSend$nextResponder
-+ _objc_msgSend$openSupportPageWithURL:
-+ _objc_msgSend$registerThreatNotificationObserver
-+ _objc_msgSend$reloadSpecifiersForThreatNotificationChange
-+ _objc_msgSend$removeFromParentViewController
-+ _objc_msgSend$setSelectionStyle:
-+ _objc_msgSend$setThreatNotificationObserverRegistered:
-+ _objc_msgSend$setThreatNotificationSpecifier:
-+ _objc_msgSend$target
-+ _objc_msgSend$threatNotificationDate
-+ _objc_msgSend$threatNotificationObserverRegistered
-+ _objc_msgSend$threatNotificationSpecifier
-+ _objc_msgSend$unregisterThreatNotificationObserver
-+ _objc_msgSend$willMoveToParentViewController:
 + _swift_cvw_assignWithCopy
 + _swift_cvw_assignWithTake
 + _swift_cvw_destroy

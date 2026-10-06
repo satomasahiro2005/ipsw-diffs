@@ -2,72 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/CoreAccessories.framework/Support/accessoryd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x19fdd0` | `0x19ffb0` | **`+0x1e0`** |
+| `__TEXT.__oslogstring` | `0x390eb` | `0x3919e` | **`+0xb3`** |
+| `__DATA_CONST.__const` | `0xa2d8` | `0xa318` | **`+0x40`** |
+| `__TEXT.__objc_stubs` | `0x95c0` | `0x9600` | **`+0x40`** |
+| `__TEXT.__cstring` | `0xe5f5` | `0xe624` | **`+0x2f`** |
+| `__TEXT.__objc_methname` | `0xfed6` | `0xff03` | **`+0x2d`** |
+| `__TEXT.__objc_methlist` | `0x6eac` | `0x6ed4` | **`+0x28`** |
+| `__DATA_CONST.__cfstring` | `0x73c0` | `0x73e0` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x4830` | `0x4848` | **`+0x18`** |
+| `__DATA.__bss` | `0x1618` | `0x1628` | **`+0x10`** |
+| `__DATA.__objc_selrefs` | `0x33c0` | `0x33d0` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_const`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -1219.40.5.0.0
--  __TEXT.__text: 0x19bd94
 +1219.40.7.0.0
-+  __TEXT.__text: 0x19bfa4
-   __TEXT.__auth_stubs: 0x1890
--  __TEXT.__objc_stubs: 0x95c0
--  __TEXT.__objc_methlist: 0x6eac
-+  __TEXT.__objc_stubs: 0x9600
-+  __TEXT.__objc_methlist: 0x6ed4
-   __TEXT.__const: 0x2110
-   __TEXT.__gcc_except_tab: 0x2110
-   __TEXT.__objc_classname: 0xfd3
--  __TEXT.__objc_methname: 0xfed6
-+  __TEXT.__objc_methname: 0xff03
-   __TEXT.__objc_methtype: 0x324c
--  __TEXT.__cstring: 0xe5f5
--  __TEXT.__oslogstring: 0x390eb
-+  __TEXT.__cstring: 0xe624
-+  __TEXT.__oslogstring: 0x3919e
-   __TEXT.__ustring: 0x232
--  __TEXT.__unwind_info: 0x68c8
--  __DATA_CONST.__const: 0xa2d8
--  __DATA_CONST.__cfstring: 0x73c0
-+  __TEXT.__unwind_info: 0x68e0
-+  __DATA_CONST.__const: 0xa318
-+  __DATA_CONST.__cfstring: 0x73e0
-   __DATA_CONST.__objc_classlist: 0x318
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x178
 
-   __DATA_CONST.__got: 0xef8
-   __DATA_CONST.__auth_ptr: 0x98
-   __DATA.__objc_const: 0xb080
--  __DATA.__objc_selrefs: 0x33c0
-+  __DATA.__objc_selrefs: 0x33d0
-   __DATA.__objc_ivar: 0x7a0
-   __DATA.__objc_data: 0x1ef0
-   __DATA.__data: 0x1940
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libsysdiagnose.dylib
--  Functions: 8660
+-  Functions: 8706
 -  Symbols:   11697
 -  CStrings:  8722
-+  Functions: 8667
++  Functions: 8713
 +  Symbols:   11709
 +  CStrings:  8727
- 
 Symbols:
 + -[ACCTransportServer isConnectionEntitled:]
 + -[ACCTransportServer shouldAcceptConnection:]

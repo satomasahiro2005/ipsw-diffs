@@ -2,81 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/CoverSheet.framework/CoverSheet`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x197ea0` | `0x18d344` | **`-0xab5c`** |
+| `__AUTH_CONST.__objc_const` | `0x3d5c0` | `0x3c7f0` | **`-0xdd0`** |
+| `__AUTH_CONST.__cfstring` | `0xd160` | `0xc880` | **`-0x8e0`** |
+| `__TEXT.__cstring` | `0xd0f7` | `0xcb2d` | **`-0x5ca`** |
+| `__TEXT.__objc_methlist` | `0x1690c` | `0x1650c` | **`-0x400`** |
+| `__TEXT.__oslogstring` | `0x9269` | `0x8f34` | **`-0x335`** |
+| `__DATA_CONST.__objc_selrefs` | `0xc8f0` | `0xc6e0` | **`-0x210`** |
+| `__TEXT.__gcc_except_tab` | `0x139c` | `0x1270` | **`-0x12c`** |
+| `__AUTH_CONST.__objc_intobj` | `0x510` | `0x438` | **`-0xd8`** |
+| `__DATA.__objc_ivar` | `0x1c8c` | `0x1bb4` | **`-0xd8`** |
+| `__DATA_DIRTY.__objc_data` | `0x3e80` | `0x3de0` | **`-0xa0`** |
+| `__DATA_CONST.__objc_arraydata` | `0x1108` | `0x1078` | **`-0x90`** |
+| `__TEXT.__unwind_info` | `0x48e0` | `0x4868` | **`-0x78`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x12a8` | `0x1248` | **`-0x60`** |
+| `__AUTH.__objc_data` | `0xf50` | `0xf00` | **`-0x50`** |
+| `__TEXT.__const` | `0x4104` | `0x4154` | **`+0x50`** |
+| `__DATA_CONST.__const` | `0x4118` | `0x40d0` | **`-0x48`** |
+| `__DATA.__data` | `0x56d0` | `0x56f8` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0x15b8` | `0x1590` | **`-0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x7c8` | `0x7b0` | **`-0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x600` | `0x5f0` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -159.0.3.0.0
--  __TEXT.__text: 0x191790
--  __TEXT.__objc_methlist: 0x1690c
--  __TEXT.__const: 0x4104
--  __TEXT.__cstring: 0xd0f7
--  __TEXT.__oslogstring: 0x9269
--  __TEXT.__gcc_except_tab: 0x139c
 +159.2.1.0.0
-+  __TEXT.__text: 0x186ca4
-+  __TEXT.__objc_methlist: 0x1650c
-+  __TEXT.__const: 0x4154
-+  __TEXT.__cstring: 0xcb2d
-+  __TEXT.__oslogstring: 0x8f34
-+  __TEXT.__gcc_except_tab: 0x1270
-   __TEXT.__ustring: 0xa4
-   __TEXT.__dlopen_cstrs: 0x108
--  __TEXT.__unwind_info: 0x5a08
-+  __TEXT.__unwind_info: 0x5980
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4118
--  __DATA_CONST.__objc_classlist: 0x7c8
-+  __DATA_CONST.__const: 0x40d0
-+  __DATA_CONST.__objc_classlist: 0x7b0
-   __DATA_CONST.__objc_catlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x670
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xc8f0
-+  __DATA_CONST.__objc_selrefs: 0xc6e0
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__objc_superrefs: 0x600
--  __DATA_CONST.__objc_arraydata: 0x1108
--  __DATA_CONST.__got: 0x15b8
-+  __DATA_CONST.__objc_superrefs: 0x5f0
-+  __DATA_CONST.__objc_arraydata: 0x1078
-+  __DATA_CONST.__got: 0x1590
-   __AUTH_CONST.__const: 0xd10
--  __AUTH_CONST.__cfstring: 0xd160
--  __AUTH_CONST.__objc_const: 0x3d5c0
--  __AUTH_CONST.__objc_arrayobj: 0x12a8
--  __AUTH_CONST.__objc_intobj: 0x510
-+  __AUTH_CONST.__cfstring: 0xc880
-+  __AUTH_CONST.__objc_const: 0x3c7f0
-+  __AUTH_CONST.__objc_arrayobj: 0x1248
-+  __AUTH_CONST.__objc_intobj: 0x438
-   __AUTH_CONST.__objc_doubleobj: 0x660
-   __AUTH_CONST.__auth_got: 0xd28
--  __AUTH.__objc_data: 0xf50
--  __DATA.__objc_ivar: 0x1c8c
--  __DATA.__data: 0x56d0
-+  __AUTH.__objc_data: 0xf00
-+  __DATA.__objc_ivar: 0x1bb4
-+  __DATA.__data: 0x56f8
-   __DATA.__common: 0x20
--  __DATA_DIRTY.__objc_data: 0x3e80
-+  __DATA_DIRTY.__objc_data: 0x3de0
-   __DATA_DIRTY.__bss: 0xe0
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 8036
--  Symbols:   19218
+-  Symbols:   14257
 -  CStrings:  2743
 +  Functions: 7949
-+  Symbols:   18998
++  Symbols:   14099
 +  CStrings:  2665
- 
 Symbols:
 + -[CSCoverSheetView _updateVibrancyCaptureAnchor]
 + -[CSWidgetGridViewController _updateBackdropGroupAnchor]
@@ -102,14 +66,6 @@ Symbols:
 + _der_key_state_abs_last_passcode_auth
 + _der_key_state_abs_last_passcode_unlock
 + _der_key_state_abs_lock_time
-+ _objc_msgSend$_updateBackdropGroupAnchor
-+ _objc_msgSend$_updateVibrancyCaptureAnchor
-+ _objc_msgSend$groupNamespace
-+ _objc_msgSend$insertSublayer:atIndex:
-+ _objc_msgSend$setBackdropGroupAnchorEnabled:
-+ _objc_msgSend$setCaptureOnly:
-+ _objc_msgSend$setGroupNamespace:
-+ _objc_msgSend$sublayers
 - +[CSInadvertentTouchIDRecognizerSettings settingsControllerModule]
 - -[CSCoverSheetViewController _inadvertentTouchIDRecognizerDidUpdate:]
 - -[CSCoverSheetViewController _setupInadvertentTouchIDRecognizer]
@@ -292,76 +248,6 @@ Symbols:
 - ___block_descriptor_40_e8_32r_e8_Q16?0Q8lr32l8
 - ___block_descriptor_40_e8_d16?0d8l
 - _kCAFillRuleEvenOdd
-- _objc_msgSend$CGPath
-- _objc_msgSend$_debugLayerWithRect:cornerCutouts:color:
-- _objc_msgSend$_evaluateProtectionState
-- _objc_msgSend$_getEmblemResourceURLForNFCType:
-- _objc_msgSend$_isActiveProtectionMode:
-- _objc_msgSend$_protectionModeDescription:
-- _objc_msgSend$_removeDebugLayers
-- _objc_msgSend$_setupInadvertentTouchIDRecognizer
-- _objc_msgSend$_updateBiometricBlockState:
-- _objc_msgSend$_updateDebugViews
-- _objc_msgSend$_updateStrictCoverageState:
-- _objc_msgSend$_updateToChangedForReason:
-- _objc_msgSend$appendPath:
-- _objc_msgSend$bezierPathWithRect:
-- _objc_msgSend$biometricAuthShouldBeBlocked
-- _objc_msgSend$cornerAllowBottomLeftX
-- _objc_msgSend$cornerAllowBottomLeftY
-- _objc_msgSend$cornerAllowBottomRightX
-- _objc_msgSend$cornerAllowBottomRightY
-- _objc_msgSend$cornerAllowTopLeftX
-- _objc_msgSend$cornerAllowTopLeftY
-- _objc_msgSend$cornerAllowTopRightX
-- _objc_msgSend$cornerAllowTopRightY
-- _objc_msgSend$edgeProtectionBottomInset
-- _objc_msgSend$edgeProtectionBottomMode
-- _objc_msgSend$edgeProtectionLeftInset
-- _objc_msgSend$edgeProtectionLeftMode
-- _objc_msgSend$edgeProtectionRightInset
-- _objc_msgSend$edgeProtectionRightMode
-- _objc_msgSend$edgeProtectionTopInset
-- _objc_msgSend$edgeProtectionTopMode
-- _objc_msgSend$effectiveContentsContainerView
-- _objc_msgSend$emblemResourceURL
-- _objc_msgSend$impermissibleTouchCount
-- _objc_msgSend$impermissibleTouchCountMode
-- _objc_msgSend$inadvertentTouchIDRecognizerSettings
-- _objc_msgSend$initWithFrame:emblemResourceURL:
-- _objc_msgSend$initWithURL:
-- _objc_msgSend$lockScreenActiveMode
-- _objc_msgSend$orangeColor
-- _objc_msgSend$setCornerAllowBottomLeftX:
-- _objc_msgSend$setCornerAllowBottomLeftY:
-- _objc_msgSend$setCornerAllowBottomRightX:
-- _objc_msgSend$setCornerAllowBottomRightY:
-- _objc_msgSend$setCornerAllowTopLeftX:
-- _objc_msgSend$setCornerAllowTopLeftY:
-- _objc_msgSend$setCornerAllowTopRightX:
-- _objc_msgSend$setCornerAllowTopRightY:
-- _objc_msgSend$setDelaysTouchesEnded:
-- _objc_msgSend$setEdgeProtectionBottomInset:
-- _objc_msgSend$setEdgeProtectionBottomMode:
-- _objc_msgSend$setEdgeProtectionLeftInset:
-- _objc_msgSend$setEdgeProtectionLeftMode:
-- _objc_msgSend$setEdgeProtectionRightInset:
-- _objc_msgSend$setEdgeProtectionRightMode:
-- _objc_msgSend$setEdgeProtectionTopInset:
-- _objc_msgSend$setEdgeProtectionTopMode:
-- _objc_msgSend$setFillRule:
-- _objc_msgSend$setImpermissibleTouchCount:
-- _objc_msgSend$setImpermissibleTouchCountMode:
-- _objc_msgSend$setLockScreenActive:
-- _objc_msgSend$setLockScreenActiveMode:
-- _objc_msgSend$setShowsViewDebugArea:
-- _objc_msgSend$setState:animated:
-- _objc_msgSend$setTransform3D:
-- _objc_msgSend$setTreatsRestrictiveAsBlocking:
-- _objc_msgSend$setZPosition:
-- _objc_msgSend$showsViewDebugArea
-- _objc_msgSend$strictCoverageRequired
-- _objc_msgSend$treatsRestrictiveAsBlocking
 CStrings:
 + "?\v"
 + "lockscreenElements"

@@ -2,19 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/FitnessLibrary.framework/FitnessLibrary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x54acc` | `0x54b70` | **`+0xa4`** |
+| `__TEXT.__swift5_typeref` | `0x4676` | `0x4696` | **`+0x20`** |
+
+### Other Changes
+
 ```diff
 
 -2027.1.54.0.0
--  __TEXT.__text: 0x50acc
 +2027.1.63.0.0
-+  __TEXT.__text: 0x50b70
-   __TEXT.__const: 0x7e04
-   __TEXT.__constg_swiftt: 0x1df8
--  __TEXT.__swift5_typeref: 0x4676
-+  __TEXT.__swift5_typeref: 0x4696
-   __TEXT.__swift5_builtin: 0x78
-   __TEXT.__swift5_reflstr: 0x100e
-   __TEXT.__swift5_fieldmd: 0x1790
 Symbols:
 + _get_witness_table SeRzSERzSHRzs8SendableRzSeR_SER_SHR_sAAR_7SwiftUI4ViewR0_AbCR1_AB0D8ModifierR2_r3_lAB5GroupVyAB19_ConditionalContentVyAB0h11UnavailableD0VyAB5LabelVyAB4TextVAB5ImageVGANq1_GAHyArB08ModifiedH0VyATyAbCPABE20scrollBounceBehavior_4axesQrAB06ScrolloP0V_AB4AxisO3SetVtFQOyAB0rD0VyAB10LazyVStackVyAU013FitnessCanvasC0E19standardLockupStyleyQrqd__A6_08StandardZ5StyleRd__lFQOyA6_09DataStoreD0Vy0W7Library15LibraryDataItemVyxq_GAHyATyA6_08StandardZ0Vq2_GAuBE8redacted6reasonQrAB16RedactionReasonsV_tFQOyA16__Qo_SgGAB05EmptyD0VG_A6_20HorizontalStackStyleVQo_GG_Qo_AB14_PaddingLayoutVGA35_GGGGAbCHPA39_AbCHPArbCHPyHC_A38_AbCHPArbCHPyHC_A37_AbCHPA36_AbCHPqd__AbCHD2_A33_HO_A35_AbDHPyHCHC_A35_AbDHPyHCHCHCHC_HC
 + _get_witness_table SeRzSERzSHRzs8SendableRzSeR_SER_SHR_sAAR_7SwiftUI4ViewR0_AbCR1_AB0D8ModifierR2_r3_lAB5GroupVyAB19_ConditionalContentVyAB0h11UnavailableD0VyAB5LabelVyAB4TextVAB5ImageVGANq1_GAHyArB08ModifiedH0VyATyAbCPABE20scrollBounceBehavior_4axesQrAB06ScrolloP0V_AB4AxisO3SetVtFQOyAB0rD0VyAB9LazyVGridVyAU013FitnessCanvasC0E19standardLockupStyleyQrqd__A6_08StandardZ5StyleRd__lFQOyA6_09DataStoreD0Vy0W7Library15LibraryDataItemVyxq_GAHyATyA6_08StandardZ0Vq2_GAuBE8redacted6reasonQrAB16RedactionReasonsV_tFQOyA16__Qo_SgGAB05EmptyD0VG_A6_25DefaultVerticalStackStyleVQo_GG_Qo_AB14_PaddingLayoutVGA35_GGGGAbCHPA39_AbCHPArbCHPyHC_A38_AbCHPArbCHPyHC_A37_AbCHPA36_AbCHPqd__AbCHD2_A33_HO_A35_AbDHPyHCHC_A35_AbDHPyHCHCHCHC_HC
@@ -25,18 +25,18 @@ Symbols:
 - _symbolic _____y_____y_____y_____y__________GAEq1_GAByAH_____yAIy_____y_____y_____y_____y_____y_____yxq_GAByAIy_____q2_G_____yAO_Qo_SgGG______Qo_GG_Qo______GAZGGGG 7SwiftUI5GroupV AA19_ConditionalContentV AA0E15UnavailableViewV AA5LabelV AA4TextV AA5ImageV AA08ModifiedE0V AA0G0PAAE20scrollBounceBehavior_4axesQrAA06ScrollmN0V_AA4AxisO3SetVtFQO AA0pG0V AA10LazyVStackV AQ013FitnessCanvasB0E19standardLockupStyleyQrqd__A2_08StandardxY0Rd__lFQO A2_09DataStoreG0V 0U7Library15LibraryDataItemV A2_0zX0V AqAE8redacted6reasonQrAA16RedactionReasonsV_tFQO A2_015HorizontalStackY0V AA14_PaddingLayoutV
 - _symbolic _____y_____y_____y_____y__________GAEq1_GAByAH_____yAIy_____y_____y_____y_____y_____y_____yxq_GAByAIy_____q2_G_____yAO_Qo_SgGG______Qo_GG_Qo______GAZGGGG 7SwiftUI5GroupV AA19_ConditionalContentV AA0E15UnavailableViewV AA5LabelV AA4TextV AA5ImageV AA08ModifiedE0V AA0G0PAAE20scrollBounceBehavior_4axesQrAA06ScrollmN0V_AA4AxisO3SetVtFQO AA0pG0V AA9LazyVGridV AQ013FitnessCanvasB0E19standardLockupStyleyQrqd__A2_08StandardxY0Rd__lFQO A2_09DataStoreG0V 0U7Library15LibraryDataItemV A2_0zX0V AqAE8redacted6reasonQrAA16RedactionReasonsV_tFQO A2_020DefaultVerticalStackY0V AA14_PaddingLayoutV
 Functions:
-~ sub_21350eec8 -> sub_212677ec8 : 628 -> 620
-~ sub_213511b88 -> sub_21267ab80 : 1068 -> 1088
-~ sub_2135122d4 -> sub_21267b2e0 : 1068 -> 1088
-~ sub_213518cb0 -> sub_212681cd0 : 768 -> 752
-~ sub_213518fb0 -> sub_212681fc0 : 1204 -> 1180
-~ sub_213527cb4 -> sub_212690cac : 432 -> 424
-~ sub_213549500 -> sub_2126b24f0 : 964 -> 984
-~ sub_2135498c4 -> sub_2126b28c8 : 4444 -> 4464
-~ sub_21354aa20 -> sub_2126b3a38 : 2284 -> 2304
-~ sub_21354b604 -> sub_2126b4630 : 1652 -> 1672
-~ sub_21354d4a8 -> sub_2126b64e8 : 948 -> 968
-~ sub_21354d85c -> sub_2126b68b0 : 4444 -> 4464
-~ sub_21354ea2c -> sub_2126b7a94 : 1528 -> 1568
-~ sub_21354f024 -> sub_2126b80b4 : 1660 -> 1680
+~ sub_2151faf10 -> sub_2143b8f10 : 648 -> 640
+~ sub_2151fdf0c -> sub_2143bbf04 : 1068 -> 1088
+~ sub_2151fe6c4 -> sub_2143bc6d0 : 1068 -> 1088
+~ sub_215205570 -> sub_2143c3590 : 788 -> 772
+~ sub_215205884 -> sub_2143c3894 : 1224 -> 1200
+~ sub_215214fa8 -> sub_2143d2fa0 : 472 -> 464
+~ sub_215238300 -> sub_2143f62f0 : 964 -> 984
+~ sub_2152386c4 -> sub_2143f66c8 : 4604 -> 4624
+~ sub_2152398c0 -> sub_2143f78d8 : 2324 -> 2344
+~ sub_21523a4f4 -> sub_2143f8520 : 1732 -> 1752
+~ sub_21523c4b0 -> sub_2143fa4f0 : 948 -> 968
+~ sub_21523c864 -> sub_2143fa8b8 : 4604 -> 4624
+~ sub_21523dad4 -> sub_2143fbb3c : 1548 -> 1588
+~ sub_21523e0e0 -> sub_2143fc170 : 1740 -> 1760
 ```

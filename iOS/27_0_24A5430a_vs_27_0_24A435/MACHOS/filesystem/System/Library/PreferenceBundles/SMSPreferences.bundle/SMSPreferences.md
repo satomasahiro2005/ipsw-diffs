@@ -2,23 +2,24 @@
 
 > `/System/Library/PreferenceBundles/SMSPreferences.bundle/SMSPreferences`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_typeref`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x68e8` | `0x68ec` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__const`
 - `__TEXT.__const`
 - `__TEXT.__constg_swiftt`
-- `__TEXT.__unwind_info`
 - `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 1570.100.1.0.0
--  __TEXT.__text: 0x68e8
-+  __TEXT.__text: 0x68ec
-   __TEXT.__auth_stubs: 0x900
-   __TEXT.__objc_stubs: 0x4a0
-   __TEXT.__objc_methlist: 0x2c4
+```text
 Functions:
 ~ sub_26a0 : 6032 -> 6036
 ```

@@ -2,139 +2,53 @@
 
 > `/System/Library/Frameworks/PencilKit.framework/PencilKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x351d80` | `0x3534ec` | **`+0x176c`** |
+| `__AUTH_CONST.__objc_const` | `0x48988` | `0x48d18` | **`+0x390`** |
+| `__AUTH.__objc_data` | `0xa448` | `0xa730` | **`+0x2e8`** |
+| `__TEXT.__oslogstring` | `0xea33` | `0xebad` | **`+0x17a`** |
+| `__TEXT.__objc_methlist` | `0x25e34` | `0x25f9c` | **`+0x168`** |
+| `__AUTH_CONST.__const` | `0x8448` | `0x8538` | **`+0xf0`** |
+| `__TEXT.__constg_swiftt` | `0x1dcc` | `0x1eb8` | **`+0xec`** |
+| `__TEXT.__const` | `0x8de4` | `0x8ec4` | **`+0xe0`** |
+| `__TEXT.__cstring` | `0xf85f` | `0xf917` | **`+0xb8`** |
+| `__DATA.__data` | `0x6c18` | `0x6cb8` | **`+0xa0`** |
+| `__TEXT.__swift5_reflstr` | `0x15e3` | `0x1683` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x10610` | `0x106b0` | **`+0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x134a8` | `0x13538` | **`+0x90`** |
+| `__TEXT.__swift5_fieldmd` | `0x1a0c` | `0x1a9c` | **`+0x90`** |
+| `__AUTH.__data` | `0xba8` | `0xc20` | **`+0x78`** |
+| `__AUTH_CONST.__auth_got` | `0x1db0` | `0x1df8` | **`+0x48`** |
+| `__TEXT.__swift5_capture` | `0xa54` | `0xa9c` | **`+0x48`** |
+| `__TEXT.__swift5_typeref` | `0x1ea4` | `0x1ee4` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x2278` | `0x22a0` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x6ff0` | `0x7010` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x1160` | `0x1180` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x1cc` | `0x1d8` | **`+0xc`** |
+| `__DATA_CONST.__objc_protolist` | `0x7e0` | `0x7e8` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0xda0` | `0xda8` | **`+0x8`** |
+| `__DATA_DIRTY.__objc_ivar` | `0x114c` | `0x1154` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x25214` | `0x2520c` | **`-0x8`** |
+| `__DATA.__objc_ivar` | `0x2ca8` | `0x2cac` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -604.100.0.0.0
--  __TEXT.__text: 0x351d80 sha256:04ac58bd16987696641e15b1ccbc402911ce4e7015a55a7c789dc14161997118
--  __TEXT.__objc_methlist: 0x25e34 sha256:ab03b81b063d4e9e6fa8e011d884304f6641b06d3cfebf41d62f96c44e4968c7
--  __TEXT.__const: 0x8de4 sha256:9cb88b527304773c9f8495d8e0bde490b3d8c1705f53cc65ca085fcf78196e37
--  __TEXT.__dlopen_cstrs: 0x563 sha256:254af3f67c5bed5a0dd291e6fbc93ebc27fec7b50acfb50b1cb3c07b37cb8923
--  __TEXT.__constg_swiftt: 0x1dcc sha256:e36fe8f26eb775d598ec4f17b4aea799e45c40a7b6559c337a1aa5038334a746
--  __TEXT.__swift5_typeref: 0x1ea4 sha256:aa78caf728982df9b5ede0afdc033028a308323ff8f5b3a3e72a2e66a98386ca
--  __TEXT.__swift5_builtin: 0x118 sha256:57b83921a267d0b575aaee7e3d1a3bd9a49c8ae984d7031e355e24850cf7cbed
--  __TEXT.__swift5_reflstr: 0x15e3 sha256:6fb0083d8f26f8cb52bbcc371788b038562f60f61874cd692e940fbace3b7692
--  __TEXT.__swift5_fieldmd: 0x1a0c sha256:eb59ae44d70a417b22a6b0f4a84b0315085144b65ca232d1e5e281a2a5db8f2f
--  __TEXT.__swift5_assocty: 0x728 sha256:3470f50b4a0c6968a3b421a5d36f23d4bc177a3eb5b53042e8196ae2b2858380
--  __TEXT.__swift5_proto: 0x398 sha256:0216cfae1e6d572ce0567522be483fae9181c47835c872f6b377d7f6014db2f8
--  __TEXT.__swift5_types: 0x1cc sha256:27f757c465356da5feb81b9775640790439db11cdad8ce2c8ea598da52c41c78
--  __TEXT.__swift5_capture: 0xa54 sha256:9e8cdbfbe58f713985f2d162ff32374f640e8fb28db6dfe940f7dc508dea5a2c
--  __TEXT.__cstring: 0xf85f sha256:6411dd1da00b5fa98ed233fb9a26e1017f3afec24448ed9455f53152cde09ece
--  __TEXT.__oslogstring: 0xea33 sha256:b69db80ec54a6b5bbaa31ce68e8e19708f35477c7a82927a973045aaef059471
--  __TEXT.__swift_as_entry: 0xf0 sha256:38d460353f54e55e20067b93e5b6fd444ee7bee0f444f9144643d559b899847d
--  __TEXT.__swift_as_cont: 0x218 sha256:676403e4428cca73b1818f5d82d391aa17174fa5f53180d30d38438d941261e4
--  __TEXT.__swift_as_ret: 0xac sha256:ebefe7017768b26bcf65ea59a95692aaa202818d9f7099b655f8dc30890ef9f5
--  __TEXT.__swift5_protos: 0xc sha256:5d3f6249b75f6d8ebebdde9fa7c398f7b98d522bdab0648d925e8b23b3e2605d
--  __TEXT.__swift5_mpenum: 0x8 sha256:77eb5045ac6cdc4c152a19e3134fa46be33458b68d2b845bec17e9315074c702
--  __TEXT.__gcc_except_tab: 0x25214 sha256:88f71058dd16d34fae12b7a6e9a5c53554ec3ea2fc3d137375b5e0fc8acf4ca9
 +608.0.0.0.0
-+  __TEXT.__text: 0x3534ec sha256:8cae640cea9382c9529bba22732b50b0de84725728f374e08ef6ef51dc667de1
-+  __TEXT.__objc_methlist: 0x25f9c sha256:01778011f30c93c4e91bb8112d9a4d1204c638a0f7d534332436ac471dfb0316
-+  __TEXT.__const: 0x8ec4 sha256:538e1495ead7078f61bc41c59072dbb2d261dfe4a23adc262d55923d2c617acb
-+  __TEXT.__dlopen_cstrs: 0x563 sha256:cc7f7b3dc8f7428196b10089b3cd199b26dd058f9ee35150a51a18b41a88274d
-+  __TEXT.__constg_swiftt: 0x1eb8 sha256:ff112e9d167d829e10e4633808094d59649f9cdb13373a8a5d46304b0defdc4f
-+  __TEXT.__swift5_typeref: 0x1ee4 sha256:39a5191202a135cab303edcd412888c3d4c09bc6e5db69569875457837513b37
-+  __TEXT.__swift5_builtin: 0x118 sha256:de447451145a0b9e750661ab06eee030e08ae2b5c229584b7d30d881258b7798
-+  __TEXT.__swift5_reflstr: 0x1683 sha256:926578bfd609ae44b9125ea94c56fc11fc94297cc40c94fc44893b895cc21e7d
-+  __TEXT.__swift5_fieldmd: 0x1a9c sha256:9edd493433ba30f3d1744eadab5e4726b1e9e08871635cc9115775b179f23bc9
-+  __TEXT.__swift5_assocty: 0x728 sha256:5a0f30ab8a2c209c67f20a46d6c015339f582e0aa6a3ecab93ba11645fb561dd
-+  __TEXT.__swift5_proto: 0x398 sha256:8371412d5fe5aa4a5c7bcd67a60a8debdf0588de9c12a0c7c43e5154cb9de583
-+  __TEXT.__swift5_types: 0x1d8 sha256:93d96f53cf50e933467d2eb138a0e58e2555b2662c0c3c8880b4853cd41d7e39
-+  __TEXT.__swift5_capture: 0xa9c sha256:c08122447de68cb01db53ab3751a4ac5ac18ff96ed0f51353d7c872df5243911
-+  __TEXT.__cstring: 0xf917 sha256:1463dd3f8d3b5e12ae4463c41d99adddcc42674d33428782ec346a12e6eafdc9
-+  __TEXT.__oslogstring: 0xebad sha256:1bff3ff3fa6c7e3bd400ef8dac560518438aa52b591bd1d3bfc7555ec1dde955
-+  __TEXT.__swift_as_entry: 0xf0 sha256:f7596717c76cbcefe406d1acc020e370245ae5bc3d348b565c022bde33c251b2
-+  __TEXT.__swift_as_cont: 0x218 sha256:97d6ee0e5e1b07c1a62b37362f8bf16555fde17d314da6f52af4b5981f899ef5
-+  __TEXT.__swift_as_ret: 0xac sha256:5c90737a25ddb0c5069d0ece80f5bbba966828d0060217163578230703e1b55b
-+  __TEXT.__swift5_protos: 0xc sha256:db29ed9489e4271d4ab5fb73b24867a609fda61abbb4cd15e345880126b8039d
-+  __TEXT.__swift5_mpenum: 0x8 sha256:00402a8c8ddbd991e4f8ff12b8170542ad83e6f24ffad5f11222b40426bd8627
-+  __TEXT.__gcc_except_tab: 0x2520c sha256:bf938f0a3f000bf00e8739fecdc8528eaedd99c1ba8dd6fec5d357d70d615e1f
-   __TEXT.__ustring: 0x23a sha256:5335e939912feaa11277d0788bfa84c57adc4d7b6b1f9f3773e37a814e42b84d
--  __TEXT.__unwind_info: 0x10610 sha256:134377df6cece12c26dc17637ef4ef8d61e2b6e7543a8e8c37d641257f3b7ae2
--  __TEXT.__eh_frame: 0x2ae8 sha256:ddb72cfdaf895f8f79b1979c7b3f53214c4a859c53e24d5499e6466ce7ccdb48
-+  __TEXT.__unwind_info: 0x106b0 sha256:43240a15a94eff49113cbd84b02c6895fca4825a5c1da7b741d6c52743215e69
-+  __TEXT.__eh_frame: 0x2ae8 sha256:1a9fcd2756057f81c5d3887985932cdbd31caa00d56b1a25c34f5ea12c2d0962
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x6ff0 sha256:c453dcddd71cb70932b3e9d17a611b5d00b3571c35d20a9ea56828849733be10
--  __DATA_CONST.__objc_classlist: 0x1160 sha256:924f8584026f4212513d832396c97042c6efdeb09f4fedcf5e593bf42795ec69
--  __DATA_CONST.__objc_catlist: 0x80 sha256:e0bee4aba74a54e5e15c474089354449b3c215945b9dacdcf30190576fb9bcff
--  __DATA_CONST.__objc_protolist: 0x7e0 sha256:61c9af4c18ff6db9aae63e136fd8037e50b22d093ebaf20e5c7abb0504ba5012
-+  __DATA_CONST.__const: 0x7010 sha256:ef34af79bc93dc41559a8165a31156aedd51cbedb8ec2383fcffd952469ba154
-+  __DATA_CONST.__objc_classlist: 0x1180 sha256:ec4dc07846b77c15d7dd6b49051ab5d295ab356559f3fb48d41269ef65ee113b
-+  __DATA_CONST.__objc_catlist: 0x80 sha256:028e0d22c286f5ceefdfb752bfacf204fc0d8951ca064aa4febc63c16d2417d9
-+  __DATA_CONST.__objc_protolist: 0x7e8 sha256:394ab8a933fc8049249add0fe841bfa8f523adb8205ebabf1dcc7109f73de9a2
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__weak_got: 0x10 sha256:db089a9946ee2f440f1454b6bd081bc906524b106b3b9bd5745c567d00425fed
--  __DATA_CONST.__objc_selrefs: 0x134a8 sha256:2ec3403b91a1cead7a8af6dc5016faa8c9344e93c78749b0a44be54b44a2d035
--  __DATA_CONST.__objc_protorefs: 0x118 sha256:93a1babbc5507b442598073887fe0b486f587a9f49a1941662dcc353a45060dd
--  __DATA_CONST.__objc_superrefs: 0xda0 sha256:afcd41f90ce7a0c9469152995431464e33d7a145e164234583c2dd8e6b3b5f31
--  __DATA_CONST.__objc_arraydata: 0x920 sha256:89692ee27b59a7711636255da1266233bd9b3f83e814117937074e78a96ba9e6
--  __DATA_CONST.__got: 0x2278 sha256:dff3b038a96b0eae4a9c997357f59f762dc56a015d1366f49dfef97f8130e594
--  __AUTH_CONST.__const: 0x8448 sha256:fd515e4eb8bc1c934f478b9e85b1668ea6973f992d8391089592d1cc9a30fc63
--  __AUTH_CONST.__cfstring: 0xe740 sha256:8251337fe667a37460373aeb53a66ee9c9dee716037a0dff86e916f8f5d39dd2
--  __AUTH_CONST.__objc_const: 0x48988 sha256:2225c246ac4667d8dba5b34b1afa00a0ecbce53ef61ba7f1834083d210ad2a22
--  __AUTH_CONST.__weak_auth_got: 0x30 sha256:fb650afcef226f005d6ec94eb0bb33028b7ba7b68ce8cfe4491360fe2916b9f5
--  __AUTH_CONST.__objc_intobj: 0x918 sha256:751331ee02e98744512e1e90d6620ede39cdef0dea472f4467e41ea9854a1475
--  __AUTH_CONST.__objc_arrayobj: 0x6c0 sha256:7898ec9c8a130801724e18e31acd5551895eda79fe3395b984346cc2c75cc595
--  __AUTH_CONST.__objc_dictobj: 0x460 sha256:e494e9eccd6f827470a9993aeee993b0238a3844c62350390228da9e0c9ef65f
--  __AUTH_CONST.__objc_doubleobj: 0xb0 sha256:5e547859a61706ff7dfeceb6a8362292b264f2c13d76b7ab0b8b0558acc584cf
--  __AUTH_CONST.__auth_got: 0x1db0 sha256:551016307590fba33c9ba600b131f82386f9c324a77eb2c0b992fe0ac80bf5ec
--  __AUTH.__objc_data: 0xa448 sha256:7d3145bffb6ece462417f4b7a6852fc79dfc6095a09a3b9dccdd81b45319e478
--  __AUTH.__data: 0xba8 sha256:10863a4b416a48943903ec16fe00fbb610912f43a11c174734293e2f3f4ebd59
--  __DATA.__objc_ivar: 0x2ca8 sha256:77246a22499f9142fbc561e931b196217e0462f20e850ee929aa31bff22cd493
--  __DATA.__data: 0x6c18 sha256:b0a309f1a7e8ee820009fd62636a8b9499462288c60e452004591fda27213630
-+  __DATA_CONST.__weak_got: 0x10 sha256:c9b00cf8e5fdc159d5e0657836ccec0cbd1eddc62a50f4b3c9f634c56153dbb7
-+  __DATA_CONST.__objc_selrefs: 0x13538 sha256:117459461a01d06ec7232c2ee24b8f41752070ea45ec81dc5ee6d0863fbf1371
-+  __DATA_CONST.__objc_protorefs: 0x118 sha256:de3ba22d7a080cfa9df220ce7506ad062e169487c1bafc695b59a0b025123e23
-+  __DATA_CONST.__objc_superrefs: 0xda8 sha256:cf9b12f0190a5b625e2c2dcebb4fad6910c048b9a79e2f3c4b62295f94675955
-+  __DATA_CONST.__objc_arraydata: 0x920 sha256:39fb230ceeae06b9716e10f7b8e567f577697d7d6b07655e57f4629db79b5576
-+  __DATA_CONST.__got: 0x22a0 sha256:8ad996d91207fa9b7d83e704b6ca833880b77a1b39bdf412e995e4a8f269a44f
-+  __AUTH_CONST.__const: 0x8538 sha256:e80fa30c1fe020bbe6619069c927b797c8f94cbb49beed7777537c924f69cdac
-+  __AUTH_CONST.__cfstring: 0xe740 sha256:a699e7ee991212a79ef088d8c035a05b2c00179fc3232d8be4bc81d693cae0df
-+  __AUTH_CONST.__objc_const: 0x48d18 sha256:f3847d76b98b73d1560ab4df56e8626d85955bf5479081177bbde2f07d2bef2e
-+  __AUTH_CONST.__weak_auth_got: 0x30 sha256:6aea13dc230d28b9ccdd9f016137ee25f6840c7b6ec8db116da1a924e2bcef7a
-+  __AUTH_CONST.__objc_intobj: 0x918 sha256:5a66d262d4ba57d00d5a8edcf7f13c46763dfcc5e5599ebae70932f000881cfc
-+  __AUTH_CONST.__objc_arrayobj: 0x6c0 sha256:0dbb32a38c4b4b6d30055bff489e0d804c41907af313979000ff77e20f42143d
-+  __AUTH_CONST.__objc_dictobj: 0x460 sha256:6299acde4c0e3f5a873ad623db6c1d5939012d1ee44f52646a55038b87c09ffc
-+  __AUTH_CONST.__objc_doubleobj: 0xb0 sha256:45ca79b3fa24a566b2a0d7ac4e959987862c4f77b66284d6ff07388ec2fe006f
-+  __AUTH_CONST.__auth_got: 0x1df8 sha256:7b5a2ef52068d94151d394d2e9a210db6ac8fe5f450b0e50c1e5491d9d5f6096
-+  __AUTH.__objc_data: 0xa730 sha256:23ee3b3e0d592809c05e3c77e0ba10ccfab848f540f397b0e471ecd82080d064
-+  __AUTH.__data: 0xc20 sha256:7ed09bde915bbb2201262c1c5af10b86a603b12accd32812dd16d6929975a526
-+  __DATA.__objc_ivar: 0x2cac sha256:8b42b1cd09bdfcef147926b2ae0bf2c2ab30766f04c65bbf1d206ad6b2d7fefe
-+  __DATA.__data: 0x6cb8 sha256:dc9587ffb9d72f1a3a33308294c04a2e3122ca6bc581ee119879004663a6117c
-   __DATA.__bss: 0x7038 sha256:1ce5b9bfe1485e1a536b21e06f5339d9812f983ad76ff44a3292df83a0b12c97
-   __DATA.__common: 0x150 sha256:52a3e0804d93dc525ec3c67ef8ac5b01756ecf0513e36f3c19435e4c82cb5d29
--  __DATA_DIRTY.__objc_ivar: 0x114c sha256:5f0fc540e4c4ef636244261b833eac3df57ce7e723e97165ab5a0f863c2d5c91
--  __DATA_DIRTY.__objc_data: 0x1770 sha256:07f874c4b5e849eb2636bd8d54e0d802936ae741f8aa1b8bebc6f58af73b7a1c
-+  __DATA_DIRTY.__objc_ivar: 0x1154 sha256:594827a820c093ffd8ee05fd59e43a7a2c49a6d5df9cd3dbb83c2d0ac156a676
-+  __DATA_DIRTY.__objc_data: 0x1770 sha256:8b3537d411b2e77d3eed78fae1b646a88156d22a41f9d4af56e6f8c399820c3a
-   __DATA_DIRTY.__data: 0x50 sha256:fecaee2dc9adb86087d52ff9ac6c2862fe5b44e629f8d8dc7637c0124d3df975
-   __DATA_DIRTY.__bss: 0x7b8 sha256:8ec80619c4e78fbddcae154346e04167073fc64373bcad92fcf26288dab0e756
-   __DATA_DIRTY.__common: 0x20 sha256:66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925
 
-   - /System/Library/PrivateFrameworks/Calculate.framework/Calculate
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/CoreHandwriting.framework/CoreHandwriting
 +  - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
-   - /System/Library/PrivateFrameworks/IOMobileFramebuffer.framework/IOMobileFramebuffer
-   - /System/Library/PrivateFrameworks/InternationalSupport.framework/InternationalSupport
-   - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: 50718091-FDFA-384D-AC45-89E3E47B303C
 -  Functions: 18356
--  Symbols:   60493
--  CStrings:  5408
-+  UUID: AEBF981D-A85F-3CD6-8351-A42D2FCFEFAD
+-  Symbols:   32888
+-  CStrings:  3570
 +  Functions: 18429
-+  Symbols:   60729
-+  CStrings:  5423
- 
++  Symbols:   33036
++  CStrings:  3585
 Symbols:
 + +[PKCampoInvocationController isCampoSupportedForWritingTools]
 + -[PKCampoInvocationController .cxx_destruct]
@@ -162,10 +76,9 @@ Symbols:
 + _$s5UIKit21_UIIntelligenceButtonC8FillViewC5frame12initialStyleAESo6CGRectV_AC0H0Otcfc
 + _$s5UIKit21_UIIntelligenceButtonC8FillViewCMa
 + _$s5UIKit21_UIIntelligenceButtonC8FillViewCMn
-+ _$s9PencilKit16LiveStrokeCanvasC12drawingEnded10inputPoint32estimatedPropertiesUpdateTimeoutyAA05InputI0VSg_SdtFyAA8PKStrokeVSg_SayAKGSgtcfU_TA.158
 + _$s9PencilKit16LiveStrokeCanvasC14sixChannelModeSbvsTm
 + _$s9PencilKit16LiveStrokeCanvasC15invertInkColorsSbvM
-+ _$s9PencilKit16LiveStrokeCanvasC15invertInkColorsSbvM.resume.0
++ _$s9PencilKit16LiveStrokeCanvasC15invertInkColorsSbvM.resume
 + _$s9PencilKit16LiveStrokeCanvasC15invertInkColorsSbvMTj
 + _$s9PencilKit16LiveStrokeCanvasC15invertInkColorsSbvMTq
 + _$s9PencilKit16LiveStrokeCanvasC15invertInkColorsSbvg
@@ -179,7 +92,7 @@ Symbols:
 + _$s9PencilKit16LiveStrokeCanvasC15invertInkColorsSbvsTq
 + _$s9PencilKit16LiveStrokeCanvasC20updateBlendingForInk33_57D368878EAFD526011FA7F13D87E952LLyyF
 + _$s9PencilKit16LiveStrokeCanvasC38enableNon6ChannelMultiplyInkWorkaroundSbvM
-+ _$s9PencilKit16LiveStrokeCanvasC38enableNon6ChannelMultiplyInkWorkaroundSbvM.resume.0
++ _$s9PencilKit16LiveStrokeCanvasC38enableNon6ChannelMultiplyInkWorkaroundSbvM.resume
 + _$s9PencilKit16LiveStrokeCanvasC38enableNon6ChannelMultiplyInkWorkaroundSbvMTj
 + _$s9PencilKit16LiveStrokeCanvasC38enableNon6ChannelMultiplyInkWorkaroundSbvMTq
 + _$s9PencilKit16LiveStrokeCanvasC38enableNon6ChannelMultiplyInkWorkaroundSbvg
@@ -216,8 +129,6 @@ Symbols:
 + _$s9PencilKit33PKSqueezeVisualIntelligenceButton33_37F59D7289F7B321309FA7D662ED2685LLC20livingColorContainerAA16SymbolMaskedViewACLLCvpWvd
 + _$s9PencilKit33PKSqueezeVisualIntelligenceButton33_37F59D7289F7B321309FA7D662ED2685LLC22updateInteractionStateyyFyycfU_
 + _$s9PencilKit33PKSqueezeVisualIntelligenceButton33_37F59D7289F7B321309FA7D662ED2685LLC22updateInteractionStateyyFyycfU_TA
-+ _$s9PencilKit33PKSqueezeVisualIntelligenceButton33_37F59D7289F7B321309FA7D662ED2685LLC22updateInteractionStateyyFyycfU_TA.11
-+ _$s9PencilKit33PKSqueezeVisualIntelligenceButton33_37F59D7289F7B321309FA7D662ED2685LLC22updateInteractionStateyyFyycfU_TA.18
 + _$s9PencilKit33PKSqueezeVisualIntelligenceButton33_37F59D7289F7B321309FA7D662ED2685LLC5coderADSgSo7NSCoderC_tcfcTf4dn_n
 + _$s9PencilKit33PKSqueezeVisualIntelligenceButton33_37F59D7289F7B321309FA7D662ED2685LLC5coderADSgSo7NSCoderC_tcfcTo
 + _$s9PencilKit33PKSqueezeVisualIntelligenceButton33_37F59D7289F7B321309FA7D662ED2685LLC5frameADSo6CGRectV_tcfcTo
@@ -253,21 +164,12 @@ Symbols:
 + _$sSo8UIButtonC5UIKitE13ConfigurationVSgMR
 + _$sSo8UIButtonC5UIKitE13ConfigurationVSgMd
 + _$sSo8UIButtonC5UIKitE13configurationAbCE13ConfigurationVSgvs
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.172
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.172TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.172Tu
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.199
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.199TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.199Tu
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.216
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.216TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.216Tu
-+ _.str.365
-+ _.str.439
-+ _.str.503
-+ _.str.62
-+ _.str.81
-+ _.str.93
 + _OBJC_CLASS_$_PKCampoInvocationController
 + _OBJC_CLASS_$_PKSqueezePaletteIntelligenceLightFactory
 + _OBJC_CLASS_$__UICampoLightweightController
@@ -306,8 +208,6 @@ Symbols:
 + __OBJC_METACLASS_RO_$_PKCampoInvocationController
 + __OBJC_PROTOCOL_$__UICampoLightweightControllerDelegate
 + __PROPERTIES__TtC9PencilKitP33_37F59D7289F7B321309FA7D662ED268533PKSqueezeVisualIntelligenceButton
-+ __PROTOCOLS__TtC9PencilKitP33_57D368878EAFD526011FA7F13D87E95225DrawingControllerDelegate.35
-+ __PROTOCOLS__TtC9PencilKitP33_57D368878EAFD526011FA7F13D87E95230ShapeDrawingControllerDelegate.40
 + __ZNKSt3__111__copy_implclB9foe220106IP16PKOutputFunctionS3_S3_Li0EEENS_4pairIT_T1_EES5_T0_S6_
 + __ZNKSt3__111__copy_implclB9foe220106IPN2PB4DataES4_S4_Li0EEENS_4pairIT_T1_EES6_T0_S7_
 + __ZNKSt3__111__copy_implclB9foe220106IPNS_6vectorIN10ClipperLib8IntPointENS_9allocatorIS4_EEEES8_S8_Li0EEENS_4pairIT_T1_EESA_T0_SB_
@@ -576,115 +476,11 @@ Symbols:
 + __ZNSt3__19__sift_upB9foe220106INS_17_ClassicAlgPolicyERNS_4lessIxEENS_11__wrap_iterIPxEEEEvT1_S8_OT0_NS_15iterator_traitsIS8_E15difference_typeE
 + __ZNSt3__1eqB9foe220106IcNS_11char_traitsIcEENS_9allocatorIcEEEEbRKNS_12basic_stringIT_T0_T1_EESB_
 + __ZSt28__throw_bad_array_new_lengthB9foe220106v
-+ ___102-[PKMathRecognitionViewController _presentResult:mathItem:defaultAnimationType:fromHint:hadOldResult:]_block_invoke.221
-+ ___102-[PKMathRecognitionViewController _presentResult:mathItem:defaultAnimationType:fromHint:hadOldResult:]_block_invoke.227
-+ ___102-[PKMathRecognitionViewController _presentResult:mathItem:defaultAnimationType:fromHint:hadOldResult:]_block_invoke_2.223
-+ ___102-[PKMathRecognitionViewController _presentResult:mathItem:defaultAnimationType:fromHint:hadOldResult:]_block_invoke_3.224
-+ ___164-[PKTextInputElementsFinder _findAvailableTextInputElementsWithReusableElements:referenceHitPoint:referenceSearchArea:referenceCoordSpace:nearPointOnly:completion:]_block_invoke.63
-+ ___34-[PKToolPicker initWithToolItems:]_block_invoke.199
-+ ___40-[PKTextInputInteraction didMoveToView:]_block_invoke.84
-+ ___40-[PKTextInputInteraction didMoveToView:]_block_invoke.90
-+ ___51-[PKTiledView renderAttachment:intoCanvas:showing:]_block_invoke.540
-+ ___54-[PKTiledView _updateWantsExtendedDynamicRangeContent]_block_invoke.445
-+ ___65-[PKPencilSqueezeController pencilInteraction:didReceiveSqueeze:]_block_invoke.100
-+ ___65-[PKPencilSqueezeController pencilInteraction:didReceiveSqueeze:]_block_invoke.99
-+ ___76-[PKPencilSqueezeController _updateUIWithSqueeze:customHoverPoint:animated:]_block_invoke.109
-+ ___76-[PKTiledView _copyFromCanvas:intoAttachment:hideCanvas:strokes:forPreview:]_block_invoke.541
-+ ___76-[PKTiledView _copyFromCanvas:intoAttachment:hideCanvas:strokes:forPreview:]_block_invoke.542
-+ ___81-[PKToolPicker _setVisibleInWindow:forFirstResponder:animated:notify:completion:]_block_invoke.139
-+ ___81-[PKToolPicker _setVisibleInWindow:forFirstResponder:animated:notify:completion:]_block_invoke.140
-+ ___88-[PKTiledView updateTilesForVisibleRectOffscreenOverrideAdditionalStrokes:withCallback:]_block_invoke.544
-+ ___99-[PKTiledView _setAdditionalStrokes:forHandle:inDrawing:invalidateTiles:forceOffscreen:completion:]_block_invoke.560
-+ ___Block_byref_object_copy_.519
-+ ___Block_byref_object_copy_.522
-+ ___Block_byref_object_dispose_.520
-+ ___Block_byref_object_dispose_.523
 + ___WritingToolsLibraryCore_block_invoke
-+ ___block_literal_global.100
-+ ___block_literal_global.118
-+ ___block_literal_global.121
-+ ___block_literal_global.124
-+ ___block_literal_global.126
-+ ___block_literal_global.150
-+ ___block_literal_global.152
-+ ___block_literal_global.154
-+ ___block_literal_global.1549
-+ ___block_literal_global.1556
-+ ___block_literal_global.156
-+ ___block_literal_global.158
-+ ___block_literal_global.160
-+ ___block_literal_global.174
-+ ___block_literal_global.179
-+ ___block_literal_global.202
-+ ___block_literal_global.226
-+ ___block_literal_global.250
-+ ___block_literal_global.256
-+ ___block_literal_global.258
-+ ___block_literal_global.260
-+ ___block_literal_global.262
-+ ___block_literal_global.439
-+ ___block_literal_global.501
-+ ___block_literal_global.511
-+ ___block_literal_global.515
-+ ___block_literal_global.559
-+ ___block_literal_global.60
-+ ___block_literal_global.621
-+ ___block_literal_global.625
-+ ___block_literal_global.628
-+ ___block_literal_global.90
-+ ___block_literal_global.98
 + ___getWTAvailabilityClass_block_invoke
-+ ___swift__destructor.219
-+ ___swift_closure_destructor.11
-+ ___swift_closure_destructor.116
-+ ___swift_closure_destructor.130
-+ ___swift_closure_destructor.134
-+ ___swift_closure_destructor.166
 + ___swift_closure_destructor.166Tm
-+ ___swift_closure_destructor.170
-+ ___swift_closure_destructor.202
-+ ___swift_closure_destructor.206
-+ ___swift_closure_destructor.210
-+ ___swift_closure_destructor.214
 + _audit_stringWritingTools
-+ _block_copy_helper.118
-+ _block_copy_helper.12
-+ _block_copy_helper.126
-+ _block_copy_helper.13
-+ _block_copy_helper.162
-+ _block_copy_helper.189
-+ _block_copy_helper.19
-+ _block_copy_helper.221
-+ _block_descriptor.120
-+ _block_descriptor.128
-+ _block_descriptor.14
-+ _block_descriptor.15
-+ _block_descriptor.164
-+ _block_descriptor.191
-+ _block_descriptor.21
-+ _block_descriptor.223
-+ _block_destroy_helper.119
-+ _block_destroy_helper.127
-+ _block_destroy_helper.13
-+ _block_destroy_helper.14
-+ _block_destroy_helper.163
-+ _block_destroy_helper.190
-+ _block_destroy_helper.20
-+ _block_destroy_helper.222
 + _keypath_get.18Tm
-+ _objc_msgSend$_setNeedsEvaluationOfAffectsSystemFocus
-+ _objc_msgSend$addAction:forControlEvents:
-+ _objc_msgSend$campoLightweightControllerDidDismiss:
-+ _objc_msgSend$canInvokeCampo
-+ _objc_msgSend$dismissAnimated:
-+ _objc_msgSend$initWithPresentingViewController:
-+ _objc_msgSend$initWithSelectedImage:
-+ _objc_msgSend$initWithSelectedText:isEditable:
-+ _objc_msgSend$initWithType:
-+ _objc_msgSend$isCampoSupportedForWritingTools
-+ _objc_msgSend$showWithConfiguration:context:animated:
-+ _objc_msgSend$showWithConfiguration:imageSelectionContext:animated:
-+ _objc_msgSend$showWithConfiguration:textSelectionContext:animated:
 + _symbolic So11UIImageViewC
 + _symbolic So8UIButtonC
 + _symbolic _____ 5UIKit21_UIIntelligenceButtonC8FillViewC
@@ -700,27 +496,15 @@ Symbols:
 - -[PKPencilSqueezeControllerPaletteViewDelegateProxy isUndoRedoInvoked]
 - -[PKPencilSqueezeControllerPaletteViewDelegateProxy setCachedUndoManager:]
 - -[PKPencilSqueezeControllerPaletteViewDelegateProxy setIsUndoRedoInvoked:]
-- _$s9PencilKit16LiveStrokeCanvasC12drawingEnded10inputPoint32estimatedPropertiesUpdateTimeoutyAA05InputI0VSg_SdtFyAA8PKStrokeVSg_SayAKGSgtcfU_TA.152
-- _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.166
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.166TQ0_
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.166Tu
-- _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.193
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.193TQ0_
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.193Tu
-- _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.210
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.210TQ0_
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.210Tu
-- _.str.359
-- _.str.433
-- _.str.47
-- _.str.488
-- _.str.66
-- _.str.78
 - _OBJC_IVAR_$_PKPencilInteraction._dispatchBehavior
 - _OBJC_IVAR_$_PKPencilSqueezeControllerPaletteViewDelegateProxy._cachedUndoManager
 - _OBJC_IVAR_$_PKPencilSqueezeControllerPaletteViewDelegateProxy._isUndoRedoInvoked
-- __PROTOCOLS__TtC9PencilKitP33_57D368878EAFD526011FA7F13D87E95225DrawingControllerDelegate.29
-- __PROTOCOLS__TtC9PencilKitP33_57D368878EAFD526011FA7F13D87E95230ShapeDrawingControllerDelegate.34
 - __ZL24audit_stringWritingTools
 - __ZNKSt3__111__copy_implclB9foe220100IP16PKOutputFunctionS3_S3_Li0EEENS_4pairIT_T1_EES5_T0_S6_
 - __ZNKSt3__111__copy_implclB9foe220100IPN2PB4DataES4_S4_Li0EEENS_4pairIT_T1_EES6_T0_S7_
@@ -990,124 +774,20 @@ Symbols:
 - __ZNSt3__19__sift_upB9foe220100INS_17_ClassicAlgPolicyERNS_4lessIxEENS_11__wrap_iterIPxEEEEvT1_S8_OT0_NS_15iterator_traitsIS8_E15difference_typeE
 - __ZNSt3__1eqB9foe220100IcNS_11char_traitsIcEENS_9allocatorIcEEEEbRKNS_12basic_stringIT_T0_T1_EESB_
 - __ZSt28__throw_bad_array_new_lengthB9foe220100v
-- ___102-[PKMathRecognitionViewController _presentResult:mathItem:defaultAnimationType:fromHint:hadOldResult:]_block_invoke.206
-- ___102-[PKMathRecognitionViewController _presentResult:mathItem:defaultAnimationType:fromHint:hadOldResult:]_block_invoke.212
-- ___102-[PKMathRecognitionViewController _presentResult:mathItem:defaultAnimationType:fromHint:hadOldResult:]_block_invoke_2.208
-- ___102-[PKMathRecognitionViewController _presentResult:mathItem:defaultAnimationType:fromHint:hadOldResult:]_block_invoke_3.209
-- ___164-[PKTextInputElementsFinder _findAvailableTextInputElementsWithReusableElements:referenceHitPoint:referenceSearchArea:referenceCoordSpace:nearPointOnly:completion:]_block_invoke.48
-- ___34-[PKToolPicker initWithToolItems:]_block_invoke.184
-- ___40-[PKTextInputInteraction didMoveToView:]_block_invoke.69
-- ___40-[PKTextInputInteraction didMoveToView:]_block_invoke.75
-- ___51-[PKTiledView renderAttachment:intoCanvas:showing:]_block_invoke.534
-- ___54-[PKTiledView _updateWantsExtendedDynamicRangeContent]_block_invoke.439
-- ___65-[PKPencilSqueezeController pencilInteraction:didReceiveSqueeze:]_block_invoke.82
-- ___65-[PKPencilSqueezeController pencilInteraction:didReceiveSqueeze:]_block_invoke.83
-- ___76-[PKPencilSqueezeController _updateUIWithSqueeze:customHoverPoint:animated:]_block_invoke.92
-- ___76-[PKTiledView _copyFromCanvas:intoAttachment:hideCanvas:strokes:forPreview:]_block_invoke.535
-- ___76-[PKTiledView _copyFromCanvas:intoAttachment:hideCanvas:strokes:forPreview:]_block_invoke.536
-- ___81-[PKToolPicker _setVisibleInWindow:forFirstResponder:animated:notify:completion:]_block_invoke.124
-- ___81-[PKToolPicker _setVisibleInWindow:forFirstResponder:animated:notify:completion:]_block_invoke.125
-- ___88-[PKTiledView updateTilesForVisibleRectOffscreenOverrideAdditionalStrokes:withCallback:]_block_invoke.538
-- ___99-[PKTiledView _setAdditionalStrokes:forHandle:inDrawing:invalidateTiles:forceOffscreen:completion:]_block_invoke.554
-- ___Block_byref_object_copy_.513
-- ___Block_byref_object_copy_.516
-- ___Block_byref_object_dispose_.514
-- ___Block_byref_object_dispose_.517
 - ____ZL22getWTAvailabilityClassv_block_invoke
 - ____ZL23WritingToolsLibraryCorePPc_block_invoke
-- ___block_literal_global.103
-- ___block_literal_global.106
-- ___block_literal_global.109
-- ___block_literal_global.111
-- ___block_literal_global.135
-- ___block_literal_global.137
-- ___block_literal_global.139
-- ___block_literal_global.141
-- ___block_literal_global.143
-- ___block_literal_global.1543
-- ___block_literal_global.1550
-- ___block_literal_global.162
-- ___block_literal_global.164
-- ___block_literal_global.175
-- ___block_literal_global.187
-- ___block_literal_global.199
-- ___block_literal_global.211
-- ___block_literal_global.235
-- ___block_literal_global.241
-- ___block_literal_global.243
-- ___block_literal_global.245
-- ___block_literal_global.247
-- ___block_literal_global.433
-- ___block_literal_global.45
-- ___block_literal_global.489
-- ___block_literal_global.500
-- ___block_literal_global.505
-- ___block_literal_global.553
-- ___block_literal_global.615
-- ___block_literal_global.619
-- ___block_literal_global.622
-- ___block_literal_global.75
-- ___block_literal_global.83
-- ___block_literal_global.85
-- ___swift__destructor.213
-- ___swift_closure_destructor.110
-- ___swift_closure_destructor.128
-- ___swift_closure_destructor.132
-- ___swift_closure_destructor.135
-- ___swift_closure_destructor.154
 - ___swift_closure_destructor.160Tm
-- ___swift_closure_destructor.164
-- ___swift_closure_destructor.169
-- ___swift_closure_destructor.191
-- ___swift_closure_destructor.196
-- ___swift_closure_destructor.200
-- ___swift_closure_destructor.204
-- ___swift_closure_destructor.208
-- ___swift_closure_destructor.6
-- _block_copy_helper.11
-- _block_copy_helper.112
-- _block_copy_helper.120
-- _block_copy_helper.156
-- _block_copy_helper.171
-- _block_copy_helper.215
-- _block_descriptor.114
-- _block_descriptor.122
-- _block_descriptor.13
-- _block_descriptor.158
-- _block_descriptor.173
-- _block_descriptor.217
-- _block_destroy_helper.113
-- _block_destroy_helper.12
-- _block_destroy_helper.121
-- _block_destroy_helper.157
-- _block_destroy_helper.172
-- _block_destroy_helper.216
 - _keypath_get.16Tm
-- _objc_msgSend$cachedUndoManager
-- _objc_msgSend$isUndoRedoInvoked
-- _objc_msgSend$setCachedUndoManager:
-- _objc_msgSend$setIsUndoRedoInvoked:
 CStrings:
 + "%@ dealloc"
-+ "/AppleInternal/Library/BuildRoots/4~CRwRugDegJHzwCWXJ7n9QZUi0sRx0jGegtt2yKo/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:293: libc++ Hardening assertion __k != __leftmost failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRwRugDegJHzwCWXJ7n9QZUi0sRx0jGegtt2yKo/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:603: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRwRugDegJHzwCWXJ7n9QZUi0sRx0jGegtt2yKo/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:615: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRwRugDegJHzwCWXJ7n9QZUi0sRx0jGegtt2yKo/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:633: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRwRugDegJHzwCWXJ7n9QZUi0sRx0jGegtt2yKo/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:638: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRwRugDegJHzwCWXJ7n9QZUi0sRx0jGegtt2yKo/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:669: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRwRugDegJHzwCWXJ7n9QZUi0sRx0jGegtt2yKo/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:682: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRwRugDegJHzwCWXJ7n9QZUi0sRx0jGegtt2yKo/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:692: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRwRugDegJHzwCWXJ7n9QZUi0sRx0jGegtt2yKo/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:697: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRwRugDegJHzwCWXJ7n9QZUi0sRx0jGegtt2yKo/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__utility/is_pointer_in_range.h:38: libc++ Hardening assertion std::__is_valid_range(__begin, __end) failed: [__begin, __end) is not a valid range\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRwRugDegJHzwCWXJ7n9QZUi0sRx0jGegtt2yKo/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1161: libc++ Hardening assertion __position != end() failed: vector::erase(iterator) called with a non-dereferenceable iterator\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRwRugDegJHzwCWXJ7n9QZUi0sRx0jGegtt2yKo/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1171: libc++ Hardening assertion __first <= __last failed: vector::erase(first, last) called with invalid range\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRwRugDegJHzwCWXJ7n9QZUi0sRx0jGegtt2yKo/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:414: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRwRugDegJHzwCWXJ7n9QZUi0sRx0jGegtt2yKo/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:419: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRwRugDegJHzwCWXJ7n9QZUi0sRx0jGegtt2yKo/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:434: libc++ Hardening assertion !empty() failed: front() called on an empty vector\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRwRugDegJHzwCWXJ7n9QZUi0sRx0jGegtt2yKo/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:442: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRwRugDegJHzwCWXJ7n9QZUi0sRx0jGegtt2yKo/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:446: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRwRugDegJHzwCWXJ7n9QZUi0sRx0jGegtt2yKo/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:509: libc++ Hardening assertion !empty() failed: vector::pop_back called on an empty vector\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRwRugDegJHzwCWXJ7n9QZUi0sRx0jGegtt2yKo/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/list:1500: libc++ Hardening assertion this != std::addressof(__c) failed: list::splice(iterator, list) called with this == &list\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1161: libc++ Hardening assertion __position != end() failed: vector::erase(iterator) called with a non-dereferenceable iterator\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1171: libc++ Hardening assertion __first <= __last failed: vector::erase(first, last) called with invalid range\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:414: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:419: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:434: libc++ Hardening assertion !empty() failed: front() called on an empty vector\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:442: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:446: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:509: libc++ Hardening assertion !empty() failed: vector::pop_back called on an empty vector\n"
 + "Campo"
 + "PKPencilInteraction"
 + "PencilKit.PKSqueezeVisualIntelligenceButton"
@@ -1122,24 +802,12 @@ CStrings:
 + "show campo lightweight UI"
 + "unable to invoke campo lightweight UI"
 + "unable to invoke campo lightweight UI -- presentingViewController is nil"
-- "/AppleInternal/Library/BuildRoots/4~CQmAugAnygcN-4StyWQoq22-PFOkTTqPNuLv3iU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:293: libc++ Hardening assertion __k != __leftmost failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CQmAugAnygcN-4StyWQoq22-PFOkTTqPNuLv3iU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:603: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CQmAugAnygcN-4StyWQoq22-PFOkTTqPNuLv3iU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:615: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CQmAugAnygcN-4StyWQoq22-PFOkTTqPNuLv3iU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:633: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CQmAugAnygcN-4StyWQoq22-PFOkTTqPNuLv3iU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:638: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CQmAugAnygcN-4StyWQoq22-PFOkTTqPNuLv3iU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:669: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CQmAugAnygcN-4StyWQoq22-PFOkTTqPNuLv3iU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:682: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CQmAugAnygcN-4StyWQoq22-PFOkTTqPNuLv3iU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:692: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CQmAugAnygcN-4StyWQoq22-PFOkTTqPNuLv3iU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:697: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-- "/AppleInternal/Library/BuildRoots/4~CQmAugAnygcN-4StyWQoq22-PFOkTTqPNuLv3iU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__utility/is_pointer_in_range.h:38: libc++ Hardening assertion std::__is_valid_range(__begin, __end) failed: [__begin, __end) is not a valid range\n"
-- "/AppleInternal/Library/BuildRoots/4~CQmAugAnygcN-4StyWQoq22-PFOkTTqPNuLv3iU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1146: libc++ Hardening assertion __position != end() failed: vector::erase(iterator) called with a non-dereferenceable iterator\n"
-- "/AppleInternal/Library/BuildRoots/4~CQmAugAnygcN-4StyWQoq22-PFOkTTqPNuLv3iU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1156: libc++ Hardening assertion __first <= __last failed: vector::erase(first, last) called with invalid range\n"
-- "/AppleInternal/Library/BuildRoots/4~CQmAugAnygcN-4StyWQoq22-PFOkTTqPNuLv3iU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:413: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
-- "/AppleInternal/Library/BuildRoots/4~CQmAugAnygcN-4StyWQoq22-PFOkTTqPNuLv3iU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:418: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
-- "/AppleInternal/Library/BuildRoots/4~CQmAugAnygcN-4StyWQoq22-PFOkTTqPNuLv3iU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:433: libc++ Hardening assertion !empty() failed: front() called on an empty vector\n"
-- "/AppleInternal/Library/BuildRoots/4~CQmAugAnygcN-4StyWQoq22-PFOkTTqPNuLv3iU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:441: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
-- "/AppleInternal/Library/BuildRoots/4~CQmAugAnygcN-4StyWQoq22-PFOkTTqPNuLv3iU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:445: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
-- "/AppleInternal/Library/BuildRoots/4~CQmAugAnygcN-4StyWQoq22-PFOkTTqPNuLv3iU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:494: libc++ Hardening assertion !empty() failed: vector::pop_back called on an empty vector\n"
-- "/AppleInternal/Library/BuildRoots/4~CQmAugAnygcN-4StyWQoq22-PFOkTTqPNuLv3iU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/list:1500: libc++ Hardening assertion this != std::addressof(__c) failed: list::splice(iterator, list) called with this == &list\n"
-
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1146: libc++ Hardening assertion __position != end() failed: vector::erase(iterator) called with a non-dereferenceable iterator\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1156: libc++ Hardening assertion __first <= __last failed: vector::erase(first, last) called with invalid range\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:413: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:418: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:433: libc++ Hardening assertion !empty() failed: front() called on an empty vector\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:441: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:445: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:494: libc++ Hardening assertion !empty() failed: vector::pop_back called on an empty vector\n"
 ```

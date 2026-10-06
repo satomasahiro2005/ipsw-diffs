@@ -2,23 +2,22 @@
 
 > `/System/Library/Extensions/lifs.kext/lifs`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x203c8` | `0x2099c` | **`+0x5d4`** |
+
+### Same-size Content Changes
 
 - `__DATA.__data`
+- `__DATA_CONST.__const`
 - `__DATA_CONST.__mod_init_func`
 - `__DATA_CONST.__mod_term_func`
-- `__DATA_CONST.__const`
 
-```diff
+### Other Changes
 
-   __TEXT.__os_log: 0x1f5d
-   __TEXT.__cstring: 0x29fa
-   __TEXT.__const: 0x338
--  __TEXT_EXEC.__text: 0x203c8
-+  __TEXT_EXEC.__text: 0x2099c
-   __TEXT_EXEC.__auth_stubs: 0xfb0
-   __DATA.__data: 0x578
-   __DATA.__common: 0x138
+```text
 Functions:
 ~ _lifs_kext_start : 76 -> 80
 ~ _lifs_kext_stop : 188 -> 192

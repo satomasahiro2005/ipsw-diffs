@@ -2,18 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/PreviewsInjection.framework/PreviewsInjection`
 
-```diff
+### Section Size Changes
 
- 24.0.45.1.0
--  __TEXT.__text: 0x7b140
-+  __TEXT.__text: 0x7b144
-   __TEXT.__objc_methlist: 0x1c4
-   __TEXT.__const: 0x5718
-   __TEXT.__swift5_typeref: 0x25cf
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7b140` | `0x7b144` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_297f08e24 -> sub_29966ce24 : 992 -> 984
-~ sub_297f09204 -> sub_29966d1fc : 992 -> 984
-~ sub_297f09ff8 -> sub_29966dfe8 : 980 -> 992
-~ sub_297f0d4bc -> sub_2996714b8 : 364 -> 368
-~ sub_297f33044 -> sub_299697044 : 444 -> 448
+~ sub_297deee24 -> sub_29954fe24 : 992 -> 984
+~ sub_297def204 -> sub_2995501fc : 992 -> 984
+~ sub_297defff8 -> sub_299550fe8 : 980 -> 992
+~ sub_297df34bc -> sub_2995544b8 : 364 -> 368
+~ sub_297e19044 -> sub_29957a044 : 444 -> 448
 ```

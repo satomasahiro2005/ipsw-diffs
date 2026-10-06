@@ -2,91 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/CAFUI.framework/CAFUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xde090` | `0xde4cc` | **`+0x43c`** |
+| `__AUTH.__objc_data` | `0x3a90` | `0x3ab8` | **`+0x28`** |
+| `__TEXT.__constg_swiftt` | `0x3ad0` | `0x3af8` | **`+0x28`** |
+| `__TEXT.__swift5_typeref` | `0xc1f0` | `0xc1da` | **`-0x16`** |
+| `__DATA.__data` | `0x4158` | `0x4148` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x11a0` | `0x1190` | **`-0x10`** |
+| `__TEXT.__cstring` | `0x37c4` | `0x37d4` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x1e6e` | `0x1e5e` | **`-0x10`** |
+| `__TEXT.__objc_methlist` | `0x27a8` | `0x27b0` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x2810` | `0x2818` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -537.3.0.0.0
--  __TEXT.__text: 0xde090
--  __TEXT.__objc_methlist: 0x27a8
 +540.1.0.0.0
-+  __TEXT.__text: 0xde4cc
-+  __TEXT.__objc_methlist: 0x27b0
-   __TEXT.__const: 0x6a14
--  __TEXT.__cstring: 0x37c4
-+  __TEXT.__cstring: 0x37d4
-   __TEXT.__oslogstring: 0xd59
-   __TEXT.__ustring: 0x5e
--  __TEXT.__swift5_typeref: 0xc1f0
-+  __TEXT.__swift5_typeref: 0xc1da
-   __TEXT.__swift5_capture: 0x199c
--  __TEXT.__swift5_reflstr: 0x1e6e
-+  __TEXT.__swift5_reflstr: 0x1e5e
-   __TEXT.__swift5_assocty: 0x4b8
--  __TEXT.__constg_swiftt: 0x3ad0
-+  __TEXT.__constg_swiftt: 0x3af8
-   __TEXT.__swift5_fieldmd: 0x1e5c
-   __TEXT.__swift5_builtin: 0xdc
-   __TEXT.__swift5_proto: 0x1e0
-   __TEXT.__swift5_types: 0x21c
-   __TEXT.__swift5_protos: 0x44
-   __TEXT.__swift5_mpenum: 0x2c
--  __TEXT.__unwind_info: 0x2810
-+  __TEXT.__unwind_info: 0x2818
-   __TEXT.__eh_frame: 0xc70
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0x1f68
-   __DATA_CONST.__objc_protorefs: 0x108
-   __DATA_CONST.__objc_superrefs: 0x18
--  __DATA_CONST.__got: 0x11a0
-+  __DATA_CONST.__got: 0x1190
-   __AUTH_CONST.__const: 0x5a08
-   __AUTH_CONST.__cfstring: 0x420
-   __AUTH_CONST.__objc_const: 0xb450
-   __AUTH_CONST.__auth_got: 0x1fa8
--  __AUTH.__objc_data: 0x3a90
-+  __AUTH.__objc_data: 0x3ab8
-   __AUTH.__data: 0x2ae0
-   __DATA.__objc_ivar: 0x24
--  __DATA.__data: 0x4158
-+  __DATA.__data: 0x4148
-   __DATA.__bss: 0x2fe0
-   __DATA.__common: 0x49
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4516
--  Symbols:   12959
+-  Symbols:   12302
 +  Functions: 4517
-+  Symbols:   12953
-   CStrings:  383
- 
++  Symbols:   12297
 Symbols:
 + _$s13CarAssetUtils15CAUAssetLibraryC5CAFUIE06customA5Image33_090ABEA24F19494D6AED5E78D11536ECLL5named13isTransparentSo7UIImageCSgSS_SbtF
 + _$s13CarAssetUtils22CAUAssetLibraryManagerC5CAFUIE011fetchCustomA5Image5named13isTransparentSo7UIImageCSgSS_SbtF
@@ -160,7 +101,6 @@ Symbols:
 - _$sSo15UIBarButtonItemCSgSgWOe
 - _$sSo15UIBarButtonItemCSgSgWOy
 - _UIFontTextStyleCaption2
-- _objc_msgSend$rightBarButtonItem
 - _symbolic SaySo15UIBarButtonItemCGSg
 - _symbolic _____y______ySbSg_____GG 7Combine10PublishersO4DropV AA12AnyPublisherV s5NeverO
 - _symbolic _____y______y______ySbSg_____GGG 7Combine10PublishersO16RemoveDuplicatesV AC4DropV AA12AnyPublisherV s5NeverO

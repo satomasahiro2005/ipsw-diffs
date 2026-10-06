@@ -2,37 +2,28 @@
 
 > `/Applications/SoftwareUpdateUIService.app/SoftwareUpdateUIService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__const` | `0xc78` | `0xc88` | **`+0x10`** |
+| `__TEXT.__cstring` | `0x1825` | `0x1818` | **`-0xd`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -305.0.0.0.0
 +305.0.1.0.0
-   __TEXT.__text: 0xb258
-   __TEXT.__auth_stubs: 0x260
-   __TEXT.__objc_stubs: 0x1640
-   __TEXT.__objc_methlist: 0xe04
-   __TEXT.__const: 0x10
--  __TEXT.__cstring: 0x1825
-+  __TEXT.__cstring: 0x1818
-   __TEXT.__objc_methname: 0x29ea
-   __TEXT.__objc_classname: 0x2fa
-   __TEXT.__objc_methtype: 0x135a
-   __TEXT.__oslogstring: 0x730
-   __TEXT.__gcc_except_tab: 0x14
-   __TEXT.__unwind_info: 0x140
--  __DATA_CONST.__const: 0xc78
-+  __DATA_CONST.__const: 0xc88
-   __DATA_CONST.__cfstring: 0x1500
-   __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x68
 CStrings:
 + "165413ff-a1b0-4e64-b0a0-25ca4fa99e4a"
 + "CBBrightnessBoostFactor"

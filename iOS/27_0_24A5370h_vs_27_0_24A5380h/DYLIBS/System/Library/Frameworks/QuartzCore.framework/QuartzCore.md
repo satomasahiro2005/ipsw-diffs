@@ -2,100 +2,49 @@
 
 > `/System/Library/Frameworks/QuartzCore.framework/QuartzCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3f2fa0` | `0x3f4b14` | **`+0x1b74`** |
+| `__TEXT.__cstring` | `0x294a6` | `0x29be3` | **`+0x73d`** |
+| `__DATA_CONST.__const` | `0x10a60` | `0x11090` | **`+0x630`** |
+| `__AUTH_CONST.__cfstring` | `0x18900` | `0x18dc0` | **`+0x4c0`** |
+| `__AUTH_CONST.__objc_intobj` | `0x4908` | `0x4c80` | **`+0x378`** |
+| `__DATA_CONST.__objc_arraydata` | `0x3c80` | `0x3ee0` | **`+0x260`** |
+| `__TEXT.__oslogstring` | `0x12bb7` | `0x12dc7` | **`+0x210`** |
+| `__DATA_DIRTY.__bss` | `0x6848` | `0x6970` | **`+0x128`** |
+| `__AUTH.__objc_data` | `0x12e8` | `0x1400` | **`+0x118`** |
+| `__AUTH_CONST.__objc_const` | `0xead0` | `0xebc8` | **`+0xf8`** |
+| `__TEXT.__const` | `0x19dd0` | `0x19cf0` | **`-0xe0`** |
+| `__DATA_DIRTY.__objc_data` | `0x1888` | `0x17c0` | **`-0xc8`** |
+| `__TEXT.__objc_methlist` | `0xb9fc` | `0xba94` | **`+0x98`** |
+| `__DATA.__data` | `0x14b8` | `0x1450` | **`-0x68`** |
+| `__DATA_DIRTY.__data` | `0x5b8` | `0x620` | **`+0x68`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5c58` | `0x5ca8` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x93c8` | `0x9418` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0xd88` | `0xdc8` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0x184d0` | `0x18500` | **`+0x30`** |
+| `__TEXT.__gcc_except_tab` | `0x9f3c` | `0x9f6c` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x2b48` | `0x2b58` | **`+0x10`** |
+| `__DATA.__bss` | `0x46b0` | `0x46c0` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x72c` | `0x734` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x458` | `0x460` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x4d8` | `0x4e0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x3f2fa0
--  __TEXT.__objc_methlist: 0xb9fc
--  __TEXT.__const: 0x19dd0
-+  __TEXT.__text: 0x3f4b14
-+  __TEXT.__objc_methlist: 0xba94
-+  __TEXT.__const: 0x19cf0
-   __TEXT.__dlopen_cstrs: 0xe0
--  __TEXT.__cstring: 0x294a6
--  __TEXT.__gcc_except_tab: 0x9f3c
--  __TEXT.__oslogstring: 0x12bb7
--  __TEXT.__unwind_info: 0x93c8
-+  __TEXT.__cstring: 0x29be3
-+  __TEXT.__gcc_except_tab: 0x9f6c
-+  __TEXT.__oslogstring: 0x12dc7
-+  __TEXT.__unwind_info: 0x9418
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x10a60
--  __DATA_CONST.__objc_classlist: 0x458
-+  __DATA_CONST.__const: 0x11090
-+  __DATA_CONST.__objc_classlist: 0x460
-   __DATA_CONST.__objc_catlist: 0x60
-   __DATA_CONST.__objc_protolist: 0xd8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5c58
-+  __DATA_CONST.__objc_selrefs: 0x5ca8
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__objc_superrefs: 0x4d8
--  __DATA_CONST.__objc_arraydata: 0x3c80
--  __DATA_CONST.__got: 0xd88
--  __AUTH_CONST.__const: 0x184d0
--  __AUTH_CONST.__cfstring: 0x18900
--  __AUTH_CONST.__objc_const: 0xead0
-+  __DATA_CONST.__objc_superrefs: 0x4e0
-+  __DATA_CONST.__objc_arraydata: 0x3ee0
-+  __DATA_CONST.__got: 0xdc8
-+  __AUTH_CONST.__const: 0x18500
-+  __AUTH_CONST.__cfstring: 0x18dc0
-+  __AUTH_CONST.__objc_const: 0xebc8
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_floatobj: 0x20
-   __AUTH_CONST.__objc_doubleobj: 0x150
--  __AUTH_CONST.__objc_intobj: 0x4908
-+  __AUTH_CONST.__objc_intobj: 0x4c80
-   __AUTH_CONST.__objc_dictobj: 0x348
-   __AUTH_CONST.__objc_arrayobj: 0x30
--  __AUTH_CONST.__auth_got: 0x2b48
--  __AUTH.__objc_data: 0x12e8
-+  __AUTH_CONST.__auth_got: 0x2b58
-+  __AUTH.__objc_data: 0x1400
-   __AUTH.__data: 0x60
--  __DATA.__objc_ivar: 0x72c
--  __DATA.__data: 0x14b8
-+  __DATA.__objc_ivar: 0x734
-+  __DATA.__data: 0x1450
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x46b0
-+  __DATA.__bss: 0x46c0
-   __DATA.__common: 0x10
--  __DATA_DIRTY.__objc_data: 0x1888
--  __DATA_DIRTY.__data: 0x5b8
--  __DATA_DIRTY.__bss: 0x6848
-+  __DATA_DIRTY.__objc_data: 0x17c0
-+  __DATA_DIRTY.__data: 0x620
-+  __DATA_DIRTY.__bss: 0x6970
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+-1223.0.4.0.0
++1223.0.6.0.0
 
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libxml2.2.dylib
 -  Functions: 12705
--  Symbols:   34669
--  CStrings:  11674
+-  Symbols:   19780
+-  CStrings:  8526
 +  Functions: 12738
-+  Symbols:   34754
-+  CStrings:  11769
- 
-Sections:
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH.__data : content changed
++  Symbols:   19831
++  CStrings:  8583
 Symbols:
 + -[CABackdropLayer setSourceSublayerDefinesBounds:]
 + -[CABackdropLayer sourceSublayerDefinesBounds]
@@ -667,8 +616,6 @@ Symbols:
 + _kCGConstrainedDynamicRange
 + _kCGContentAverageLightLevelNits
 + _kCGHAGCurveTargetHeadroom
-+ _objc_msgSend$initWithDisplayLink:target:selector:
-+ _objc_msgSend$sourceSublayerDefinesBounds
 - GCC_except_table1008
 - GCC_except_table10117
 - GCC_except_table10156
@@ -1564,5 +1511,4 @@ CStrings:
 - "Pw40aXmw_TkfhBvcmA3Xhfcxs_Irsd"
 - "Pw40aXmw_TkfhBvcmA3Xhfcxs_Isrc"
 - "swap_wait (%u, flags %u) = displayed? %u\n"
-
 ```

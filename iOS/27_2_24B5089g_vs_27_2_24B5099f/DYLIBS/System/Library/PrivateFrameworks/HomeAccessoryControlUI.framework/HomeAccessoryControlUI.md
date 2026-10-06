@@ -2,29 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/HomeAccessoryControlUI.framework/HomeAccessoryControlUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3698ac` | `0x369a18` | **`+0x16c`** |
+| `__TEXT.__swift5_typeref` | `0x37634` | `0x376f0` | **`+0xbc`** |
+| `__TEXT.__const` | `0x1a138` | `0x1a128` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x3710` | `0x3718` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x7238` | `0x7240` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1265.0.0.1.1
--  __TEXT.__text: 0x34d640
 +1269.2.3.0.1
-+  __TEXT.__text: 0x34d7ac
-   __TEXT.__objc_methlist: 0x3dc
--  __TEXT.__const: 0x1a138
--  __TEXT.__swift5_typeref: 0x37634
-+  __TEXT.__const: 0x1a128
-+  __TEXT.__swift5_typeref: 0x376f0
-   __TEXT.__constg_swiftt: 0x6f44
-   __TEXT.__swift5_reflstr: 0x484a
-   __TEXT.__swift5_fieldmd: 0x5e98
-
-   __AUTH_CONST.__const: 0xc688
-   __AUTH_CONST.__cfstring: 0x60
-   __AUTH_CONST.__objc_const: 0x1858
--  __AUTH_CONST.__auth_got: 0x3710
-+  __AUTH_CONST.__auth_got: 0x3718
-   __AUTH.__objc_data: 0x4f0
-   __AUTH.__data: 0x7c48
-   __DATA.__objc_ivar: 0x20
 Symbols:
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE19allowsSecureDrawingQryFQOyAA15ModifiedContentVyAFyAFyAFyAA6ZStackVyAA05TupleH0VyAFyAFyAFyAA9RectangleVAA24_BackgroundStyleModifierVyAA5ColorVGGAA30_SafeAreaRegionsIgnoringLayoutVG020HomeAccessoryControlB014AnimationModelC10VisibilityO07DimmingC0VGSg_AFyAFyAFyAFyAA6SpacerVAA013_TraitWritingN0VyAA0T16PriorityTraitKeyVGGANyAA0lM0VGGAA14_OpacityEffectVGAX0L12TapDismissalVGSgAV0vw9ContainerC0VQPGGAA022_EnvironmentKeyWritingN0VyAXSgGGA27_yAV0vw6LegacycY0CSgGGA27_yyycSgGGAA023AccessibilityAttachmentN0VG_Qo_HO
 + _symbolic _____y_____yAAyAAyAAy_____y_____yAAyAAyAAy__________y_____GG_____G_____GSg_AAyAAyAAyAAy__________y_____GGAEy_____GG_____G_____GSg_____QPGG_____y_____SgGGA2_y_____SgGGA2_yyycSgGG_____G_Qo_ 7SwiftUI4ViewPAAE19allowsSecureDrawingQryFQO AA15ModifiedContentV AA6ZStackV AA05TupleH0V AA9RectangleV AA24_BackgroundStyleModifierV AA5ColorV AA30_SafeAreaRegionsIgnoringLayoutV 020HomeAccessoryControlB014AnimationModelC10VisibilityO07DimmingC0V AA6SpacerV AA013_TraitWritingN0V AA0T16PriorityTraitKeyV AA0lM0V AA14_OpacityEffectV AU0L12TapDismissalV AS0vw9ContainerC0V AA022_EnvironmentKeyWritingN0V AU AS0vw6LegacycY0C AA023AccessibilityAttachmentN0V

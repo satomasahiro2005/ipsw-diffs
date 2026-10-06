@@ -2,80 +2,52 @@
 
 > `/System/Library/FlowTools/SnippetService/ResponsePlugins/SiriKitSnippetProviderPlugin.bundle/SiriKitSnippetProviderPlugin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5608` | `0x7ae4` | **`+0x24dc`** |
+| `__TEXT.__oslogstring` | `0x40f` | `0x5bf` | **`+0x1b0`** |
+| `__TEXT.__const` | `0x4c8` | `0x5c8` | **`+0x100`** |
+| `__TEXT.__eh_frame` | `0x1cc` | `0x25c` | **`+0x90`** |
+| `__DATA.__bss` | `0x280` | `0x300` | **`+0x80`** |
+| `__TEXT.__auth_stubs` | `0x680` | `0x700` | **`+0x80`** |
+| `__DATA_CONST.__auth_got` | `0x348` | `0x388` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x1d8` | `0x218` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x398` | `0x3b8` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0xe8` | `0x108` | **`+0x20`** |
+| `__TEXT.__constg_swiftt` | `0x10c` | `0x128` | **`+0x1c`** |
+| `__TEXT.__swift5_assocty` | `0x30` | `0x48` | **`+0x18`** |
+| `__TEXT.__swift_as_entry` | `0x34` | `0x4c` | **`+0x18`** |
+| `__TEXT.__swift5_fieldmd` | `0xbc` | `0xcc` | **`+0x10`** |
+| `__TEXT.__swift_as_ret` | `0x28` | `0x38` | **`+0x10`** |
+| `__DATA.__data` | `0x150` | `0x158` | **`+0x8`** |
+| `__DATA_CONST.__auth_ptr` | `0x118` | `0x120` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0xeb` | `0xf1` | **`+0x6`** |
+| `__TEXT.__swift5_proto` | `0x14` | `0x18` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0x20` | `0x24` | **`+0x4`** |
+| `__TEXT.__swift_as_cont` | `0x4` | `0x8` | **`+0x4`** |
+| `__TEXT.__swift5_reflstr` | `0x37` | `0x39` | **`+0x2`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
+- `__DATA_CONST.__objc_classlist`
+
+### Other Changes
 
 ```diff
 
 -3605.6.1.0.0
--  __TEXT.__text: 0x5254
--  __TEXT.__auth_stubs: 0x680
 +3605.8.1.0.0
-+  __TEXT.__text: 0x7588
-+  __TEXT.__auth_stubs: 0x700
-   __TEXT.__objc_stubs: 0xe0
--  __TEXT.__const: 0x4c8
-+  __TEXT.__const: 0x5c8
-   __TEXT.__cstring: 0xea
--  __TEXT.__oslogstring: 0x40f
--  __TEXT.__constg_swiftt: 0x10c
--  __TEXT.__swift5_typeref: 0xeb
--  __TEXT.__swift5_fieldmd: 0xbc
--  __TEXT.__swift5_types: 0x20
-+  __TEXT.__oslogstring: 0x5bf
-+  __TEXT.__constg_swiftt: 0x128
-+  __TEXT.__swift5_typeref: 0xf1
-+  __TEXT.__swift5_fieldmd: 0xcc
-+  __TEXT.__swift5_types: 0x24
-   __TEXT.__objc_classname: 0x41
--  __TEXT.__swift5_proto: 0x14
--  __TEXT.__swift5_reflstr: 0x37
--  __TEXT.__swift5_assocty: 0x30
--  __TEXT.__swift_as_entry: 0x34
--  __TEXT.__swift_as_ret: 0x28
--  __TEXT.__swift_as_cont: 0x4
-+  __TEXT.__swift5_proto: 0x18
-+  __TEXT.__swift5_reflstr: 0x39
-+  __TEXT.__swift5_assocty: 0x48
-+  __TEXT.__swift_as_entry: 0x4c
-+  __TEXT.__swift_as_ret: 0x38
-+  __TEXT.__swift_as_cont: 0x8
-   __TEXT.__objc_methname: 0x5b
--  __TEXT.__unwind_info: 0x1f8
--  __TEXT.__eh_frame: 0x1cc
--  __DATA_CONST.__const: 0x398
-+  __TEXT.__unwind_info: 0x240
-+  __TEXT.__eh_frame: 0x25c
-+  __DATA_CONST.__const: 0x3b8
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x348
--  __DATA_CONST.__got: 0xe8
--  __DATA_CONST.__auth_ptr: 0x118
-+  __DATA_CONST.__auth_got: 0x388
-+  __DATA_CONST.__got: 0x108
-+  __DATA_CONST.__auth_ptr: 0x120
-   __DATA.__objc_const: 0x90
-   __DATA.__objc_selrefs: 0x38
--  __DATA.__data: 0x150
-+  __DATA.__data: 0x158
-   __DATA.__common: 0x60
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/UIKit.framework/UIKit
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 192
 -  Symbols:   606
 -  CStrings:  32
 +  Functions: 235
 +  Symbols:   657
 +  CStrings:  36
- 
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/SiriLinkFlow/install/TempContent/Objects/SiriLinkFlow.build/SiriKitSnippetProviderPlugin.build/Objects-normal/arm64e/EnableAppAccessResponseHandler.o
 + EnableAppAccessResponseHandler.swift

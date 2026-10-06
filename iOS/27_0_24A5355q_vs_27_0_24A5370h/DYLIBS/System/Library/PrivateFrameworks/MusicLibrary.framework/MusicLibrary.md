@@ -2,99 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/MusicLibrary.framework/MusicLibrary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3b1ae0` | `0x3b3c0c` | **`+0x212c`** |
+| `__TEXT.__oslogstring` | `0x1d1b7` | `0x1d587` | **`+0x3d0`** |
+| `__TEXT.__cstring` | `0x749e4` | `0x74be4` | **`+0x200`** |
+| `__TEXT.__gcc_except_tab` | `0x14258` | `0x143ac` | **`+0x154`** |
+| `__DATA_CONST.__const` | `0x9cb0` | `0x9d28` | **`+0x78`** |
+| `__TEXT.__unwind_info` | `0x72a8` | `0x72f8` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6fd0` | `0x7008` | **`+0x38`** |
+| `__TEXT.__objc_methlist` | `0xe6ec` | `0xe714` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x28600` | `0x28620` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0xb20` | `0xb28` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -4026.110.62.2.0
--  __TEXT.__text: 0x3b1ae0 sha256:c39170cfe3e0a20d225778c3518891694019822a20e11b257ca6c0504a47c87a
--  __TEXT.__objc_methlist: 0xe6ec sha256:b5ce2b535bc98790311474fbcb7493a529002827591002533ed113d894abe025
--  __TEXT.__const: 0x25d4c sha256:3a5ee0eaecc2e70db51677491291b5bd3dfbb35c21d8b912eb95de33b7031618
--  __TEXT.__dlopen_cstrs: 0x2d1 sha256:fbd5452cb20b53ddb99db80c711e8495320aebbe7c51aa132c4252946f89c246
--  __TEXT.__gcc_except_tab: 0x14258 sha256:372ff4fcbd44a47aae7be3fb422e1a5aa15cc73003ca9cb7042101b4025937b0
--  __TEXT.__cstring: 0x749e4 sha256:28524978ddc4b442527e3176351299927386b996e5ed98b592fbfd2505ae16e9
--  __TEXT.__oslogstring: 0x1d1b7 sha256:91579553ca887fd7472a21c3ca723ad6bf7e93acfe16b40a2cc401791b0c052c
 +4026.100.68.0.0
-+  __TEXT.__text: 0x3b3c0c sha256:f781c6abd884689584d971df0287414034a556d3598e6ed8e4c031a44c776ab4
-+  __TEXT.__objc_methlist: 0xe714 sha256:29b74c8959c0680dfdc68f913c59c85671da0e72581325d6c4187af093d93798
-+  __TEXT.__const: 0x25d4c sha256:6e614d9754e983aa4e219108e89d5f976c617f3e0bdb55ebec94dc19cc460c8f
-+  __TEXT.__dlopen_cstrs: 0x2d1 sha256:7f8d33ab80d620d4ed096bfb0f3b31ef6d73d3e22b1bd87bf453b216fd20163d
-+  __TEXT.__gcc_except_tab: 0x143ac sha256:7e37a2bdd53112bce35093a37ab3ccbaf615e99690b8f43acd25b8cc557860d8
-+  __TEXT.__cstring: 0x74be4 sha256:1021b48680212da9df753c7815fa2e748f7307e1ac9b3f7aa43da421ab86819e
-+  __TEXT.__oslogstring: 0x1d587 sha256:00dcd93f46d5fb42db5709acd4779d306b71cee4c38f5530ab70ee49db008979
-   __TEXT.__ustring: 0x210 sha256:474fe2f474efe2226045b01d02f3969199ae1f3e985e4c9453afc99d466c853f
--  __TEXT.__unwind_info: 0x72a8 sha256:c4b080cdb5abf89e7e666d0d810283392175b5ff60d9b4d643de819d81ee75d6
--  __TEXT.__eh_frame: 0x50 sha256:029ac29125f52248516e9aa9d4843cc74ccf7135da743019c1341f02f339f75e
-+  __TEXT.__unwind_info: 0x72f8 sha256:88bcf9972252d6ceec01e5b503579ace1253f4fed893d6d61acd70f12fd421b3
-+  __TEXT.__eh_frame: 0x50 sha256:2226e804d7aba4ac35c414ece71456e734f889890ddef0c656049f0a0c09fcb5
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9cb0 sha256:50c0ea9c6c116978d637518bd4e87e9aed50d82cf77802ee95aaba8f1349c331
--  __DATA_CONST.__objc_classlist: 0x708 sha256:bcd8547db6afabc715062c99e2a7546fecff60ef613140690c8ed752674de0ff
--  __DATA_CONST.__objc_catlist: 0x50 sha256:8d54f7b2a96ac2c97a7875b854fdd33ab0c4c0679d7e952018a0251baa10b0cc
--  __DATA_CONST.__objc_protolist: 0xa8 sha256:3172f585e1d55ed903a0569c574c2256e388edf1ffb97c20789b83b8bb214835
-+  __DATA_CONST.__const: 0x9d28 sha256:9452af5bfea457493d1107254acbdd2cf790271c663bb62dd982f4a02dbf1e9a
-+  __DATA_CONST.__objc_classlist: 0x708 sha256:ae1d305b9085024eb78e9a83af19d99a3d8fbfd3518aaa0ffcb5864421f31587
-+  __DATA_CONST.__objc_catlist: 0x50 sha256:c1441cf556c20b456ecabe4b0f60a514d78f250d61f25e82fe2c9c2b68628fa3
-+  __DATA_CONST.__objc_protolist: 0xa8 sha256:eb3b6ba51475d70a2a9d5868df473306c1fd1b07ff9afa2c01484c579aea4770
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x18 sha256:93445e602991f83ba289edf0a232d8af3b46dca380c1eafcc109c9602b7df76e
--  __DATA_CONST.__objc_selrefs: 0x6fd0 sha256:c6b60794d829f762eda4dfeac081e0e4894c03ebf9e76f768b0bf42345355457
--  __DATA_CONST.__objc_protorefs: 0x30 sha256:70e8bc4ad0079c324bd1099d23053f67fdbbc37428b70c20f1a2d254005bc496
--  __DATA_CONST.__objc_superrefs: 0x520 sha256:90ed5c6e39e8ebb3708e55ac4a9a08f64752e38f9530b95135f835fc0a771eb9
--  __DATA_CONST.__objc_arraydata: 0x1410 sha256:a5b11a03039b9f846abe627b927ac9f960c40f87cd1fd5a95f685ea68f826e59
--  __DATA_CONST.__got: 0xb20 sha256:742e7fe5c8af8d39be716a771d8798802c057fe962e00ed777af9298f567589a
--  __AUTH_CONST.__const: 0x19420 sha256:c01b033af5cab1d093c8afa59ae8afcc3a46662f53c9a304206003ff07f77c69
--  __AUTH_CONST.__cfstring: 0x28600 sha256:777c6d5eb1e6e3890a6d2b661676f226177334f95ca04bfd4b58c841ac7e40c9
--  __AUTH_CONST.__objc_const: 0x159f0 sha256:111883e1b52a4bc7549249b2ba950c02b527f42752cefc799606c429f1530842
--  __AUTH_CONST.__weak_auth_got: 0x20 sha256:00f08d843b534681d5c46fec57f030810d96cdfe7feb8f384ea02b16f468f70a
--  __AUTH_CONST.__objc_arrayobj: 0x22c8 sha256:9fca47b9b7ea17955aaa2984af74254e931945bc6f4c33aa0ee9d34931342888
--  __AUTH_CONST.__objc_intobj: 0x2130 sha256:226b56cc25991865fbe01fb5da0ea67e6e245a852c1326e8ff83fcd8fb7d655d
--  __AUTH_CONST.__objc_dictobj: 0xf0 sha256:24bc8c54d4101712ce54dd245eb312e83812c8817e7bdc328734cefe3daf10c9
--  __AUTH_CONST.__objc_doubleobj: 0x20 sha256:d938cfd397e57f8e5e91ef1467db0969c7928541bb2a323de07b74ac821d517f
-+  __DATA_CONST.__weak_got: 0x18 sha256:810d70d8e1cf340497c87d3481f45690f38107776c207408e41cab9d5ee0948a
-+  __DATA_CONST.__objc_selrefs: 0x7008 sha256:cdd7a38c3a397ba9532303bb797356ff31db2a2fbdc344fd14a213deb0ff1f42
-+  __DATA_CONST.__objc_protorefs: 0x30 sha256:a6d7a12f1286926b6e602b6dcf675429341698a64725d098657a598e1ff6dd6e
-+  __DATA_CONST.__objc_superrefs: 0x520 sha256:61e732fb22e43504fda342d6acc9ebf8320c7d8dc96b34cca38c8f126a6db5ec
-+  __DATA_CONST.__objc_arraydata: 0x1410 sha256:ecfe01193c5c0a34e56e782462a7e48f3c01d1f772f73ba8b438c3fc65852252
-+  __DATA_CONST.__got: 0xb28 sha256:1772b549ae89d2b86dceb381538bc8c532093a98ee42f4620450d8faaa983826
-+  __AUTH_CONST.__const: 0x19420 sha256:12268a5d3c208f0f6b09464a03acd37ae6b83fdd5e9276482720d306407bc898
-+  __AUTH_CONST.__cfstring: 0x28620 sha256:f0a3f1398a6fa535a38a4240d22847b9d67c94cbdb7fe75abc6cdae74f980b29
-+  __AUTH_CONST.__objc_const: 0x159f0 sha256:828419b2fd7660aafd5e20abf46d19834187de1dad8363bd634c685d63e4b932
-+  __AUTH_CONST.__weak_auth_got: 0x20 sha256:a027fbcfe7671c3bbe8a4b4013fb38647eaabddfda7fa21cea125426bb124e5f
-+  __AUTH_CONST.__objc_arrayobj: 0x22c8 sha256:86d4684ffd986da33bf4d73b8b576d9a67a49988e8de297d582f8f5ea5d64ca2
-+  __AUTH_CONST.__objc_intobj: 0x2130 sha256:aed0bdeb2c234602be61b7f3b0bd526f3c37ceda982406ce9581b217931857cc
-+  __AUTH_CONST.__objc_dictobj: 0xf0 sha256:cc656f5cf532b95ba953e5aba563573116655cb9e02ae12d90a8277676354ba1
-+  __AUTH_CONST.__objc_doubleobj: 0x20 sha256:ac439953c1627673d06f80c7c5f2664353fc603183fed1e26da118ccf34ce4f3
-   __AUTH_CONST.__auth_got: 0xff0 sha256:9d4e9038bfe86a9c97688e56ccd91c848bbef20d631a7cce970645162bd478ef
--  __AUTH.__objc_data: 0x2080 sha256:a0c8375b72b17fd570b1df55fc71b2f64b193cd74e8a54feb67af79640292907
--  __AUTH.__data: 0x118 sha256:32458d6151c5b12b2f1a864ee54c32392cdde2f02c06c0554dea207863a20ce0
-+  __AUTH.__objc_data: 0x2080 sha256:794dbdef32566b858ea2df0dd57ea5c7673f39e57ad8cb3e9fb36500fe6b91a9
-+  __AUTH.__data: 0x118 sha256:f40d59f13b9674720399ceba18b7d1de652b2d9a0b6e4016ed432cb2eac2a550
-   __DATA.__objc_ivar: 0xf2c sha256:602ba6393fb6fa0363798ec5ae6f2ad19c205ada75b62553fe96bed6a21ed121
--  __DATA.__data: 0x1708 sha256:2b451e8ff5c7e48a7a82c9d4de1e5ab26d7e6b68b9198638c4be7e619ac3df82
-+  __DATA.__data: 0x1708 sha256:cc395f64ca223615b2007acb954067c6355095c9699cc17e5ce028ad85ce86d6
-   __DATA.__bss: 0xe40 sha256:301efe9642b0328c0b3b5cf0efc4b71ad0ea550e1433583f59c392fa9d7d3bbb
-   __DATA.__common: 0xb20 sha256:d71a85341166dbd4085df5276b3534cc813d748f3ad9957b00f6b4102bf9b3a2
--  __DATA_DIRTY.__objc_data: 0x25d0 sha256:d369fb2b13e0b1a060b37662f3e13b94c1ce66a31b0f5363582d8be468056543
-+  __DATA_DIRTY.__objc_data: 0x25d0 sha256:b3031b37bec91300172ab2e58855286b806bd93d42e7bebe6504e2b3134459ed
-   __DATA_DIRTY.__data: 0x80 sha256:54d5f97230200d405bcaf557d4927b761c723547976bf666eafe2b3d27994b83
-   __DATA_DIRTY.__bss: 0x10d0 sha256:f91e5a26850bcaed152578a9b621d118b78798adc0cfebcdc075d4e52e83640e
-   __DATA_DIRTY.__common: 0x38 sha256:d4817aa5497628e7c77e6b606107042bbba3130888c5f47a375e6179be789fbb
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libz.1.dylib
--  UUID: FEF711E2-CF63-331B-9D83-27F0BBDBD712
 -  Functions: 8448
--  Symbols:   25882
--  CStrings:  12662
-+  UUID: E9BB74DF-76E4-3541-B291-AC7593377BFD
+-  Symbols:   14685
+-  CStrings:  7500
 +  Functions: 8468
-+  Symbols:   25933
-+  CStrings:  12679
- 
++  Symbols:   14711
++  CStrings:  7516
 Symbols:
 + -[ML3MusicLibrary _autogenerateArtworkForRelativePath:artworkType:mediaType:variantType:qualityOfService:completionHandler:]
 + -[ML3MusicLibrary _convertOriginalArtworkToDevicePreferredFormatFromSourceURL:toDestinationURL:qualityOfService:completionHandler:]
@@ -653,11 +588,7 @@ Symbols:
 + GCC_except_table8108
 + GCC_except_table8111
 + _ML3CanShowAlertToUser
-+ _MSVFastHexStringFromBytes.hexCharacters.29051
 + _OBJC_CLASS_$_NSPredicate
-+ __MSV_XXH_XXH32_update.29042
-+ __MSV_XXH_XXH64_digest.29047
-+ __MSV_XXH_XXH64_update.29043
 + __ZNKSt3__111__copy_implclB9fqe220106IPKNS_10shared_ptrI27ML3DatabaseImportDataSourceEES6_PS4_Li0EEENS_4pairIT_T1_EES9_T0_SA_
 + __ZNKSt3__111__copy_implclB9fqe220106IPNS_10shared_ptrI13ML3ImportItemEES5_S5_Li0EEENS_4pairIT_T1_EES7_T0_S8_
 + __ZNKSt3__113__string_hashIcNS_9allocatorIcEEEclB9fqe220106ERKNS_12basic_stringIcNS_11char_traitsIcEES2_EE
@@ -847,10 +778,6 @@ Symbols:
 + __ZNSt3__18optionalINS_7variantIJxfbNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_10shared_ptrI10ML3CPPDataEEEEEEaSB9fqe220106IS7_Li0EEERSC_OT_
 + __ZNSt3__19allocatorI18DAAPParserDelegateE9constructB9fqe220106IS1_JRU8__strongKP22ML3DAAPImportOperationRNS_10shared_ptrIN6ML3CPP6ParserEEER32ML3DAAPImportOperationEntityTypebEEEvPT_DpOT0_
 + __ZSt28__throw_bad_array_new_lengthB9fqe220106v
-+ __ZZL37ML3LibraryPinDefaultActionDescriptionxE38__pinnedEntityDefaultActionDescription.23993
-+ __ZZL37ML3LibraryPinDefaultActionDescriptionxE9onceToken.23992
-+ __ZZL37ML3LibraryPinnedEntityTypeDescription13ML3EntityTypeE29__pinnedEntityTypeDescription.23991
-+ __ZZL37ML3LibraryPinnedEntityTypeDescription13ML3EntityTypeE9onceToken.23990
 + __ZZNSt3__112__hash_tableINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_4hashIS6_EENS_8equal_toIS6_EENS4_IS6_EEE16__emplace_uniqueB9fqe220106IJRKS6_EEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIS6_PvEEEEbEEDpOT_ENKUlSF_SF_E_clESF_SF_
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_10shared_ptrI12ML3AlbumDataEEEENS_22__unordered_map_hasherIS7_NS_4pairIKS7_SA_EENS_4hashIS7_EENS_8equal_toIS7_EEEENS_21__unordered_map_equalIS7_SF_SJ_SH_EENS5_ISF_EEE16__emplace_uniqueB9fqe220106IJSF_EEENSD_INS_15__hash_iteratorIPNS_11__hash_nodeISB_PvEEEEbEEDpOT_ENKUlRSE_OSF_E_clES10_S11_
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_10shared_ptrI13ML3ArtistDataEEEENS_22__unordered_map_hasherIS7_NS_4pairIKS7_SA_EENS_4hashIS7_EENS_8equal_toIS7_EEEENS_21__unordered_map_equalIS7_SF_SJ_SH_EENS5_ISF_EEE16__emplace_uniqueB9fqe220106IJSF_EEENSD_INS_15__hash_iteratorIPNS_11__hash_nodeISB_PvEEEEbEEDpOT_ENKUlRSE_OSF_E_clES10_S11_
@@ -876,7 +803,6 @@ Symbols:
 + __ZZNSt3__112__hash_tableIy15echo_hash_shiftIyENS_8equal_toIyEENS_9allocatorIyEEE16__emplace_uniqueB9fqe220106IJRKyEEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIyPvEEEEbEEDpOT_ENKUlSA_SA_E_clESA_SA_
 + ___134-[ML3MusicLibrary _createColorAnalysisForRelativePath:artworkType:artworkToken:preferredImageSize:qualityOfService:completionHandler:]_block_invoke
 + ___169-[ML3MusicLibrary importOriginalArtworkFromFileURL:withArtworkToken:artworkType:sourceType:mediaType:variantType:shouldPerformColorAnalysis:qualityOfService:completion:]_block_invoke
-+ ___169-[ML3MusicLibrary importOriginalArtworkFromFileURL:withArtworkToken:artworkType:sourceType:mediaType:variantType:shouldPerformColorAnalysis:qualityOfService:completion:]_block_invoke.742
 + ___170-[ML3UpdateSpotlightIndexOperation _filterLocalTracksWithPersistentIDs:playlistsWithPersistentIDs:albumsWithPersistentIDs:artistsWithPersistentIDs:entityStringsToDelete:]_block_invoke
 + ___170-[ML3UpdateSpotlightIndexOperation _filterLocalTracksWithPersistentIDs:playlistsWithPersistentIDs:albumsWithPersistentIDs:artistsWithPersistentIDs:entityStringsToDelete:]_block_invoke_10
 + ___170-[ML3UpdateSpotlightIndexOperation _filterLocalTracksWithPersistentIDs:playlistsWithPersistentIDs:albumsWithPersistentIDs:artistsWithPersistentIDs:entityStringsToDelete:]_block_invoke_11
@@ -892,177 +818,14 @@ Symbols:
 + ___170-[ML3UpdateSpotlightIndexOperation _filterLocalTracksWithPersistentIDs:playlistsWithPersistentIDs:albumsWithPersistentIDs:artistsWithPersistentIDs:entityStringsToDelete:]_block_invoke_8
 + ___170-[ML3UpdateSpotlightIndexOperation _filterLocalTracksWithPersistentIDs:playlistsWithPersistentIDs:albumsWithPersistentIDs:artistsWithPersistentIDs:entityStringsToDelete:]_block_invoke_9
 + ___171-[ML3MusicLibrary importOriginalArtworkFromImageData:withArtworkToken:artworkType:sourceType:mediaType:variantType:shouldPerformColorAnalysis:qualityOfService:completion:]_block_invoke
-+ ___74-[ML3UpdateSpotlightIndexOperation _batchIndexWithObject:completionBlock:]_block_invoke.72
-+ ___83-[ML3UpdateSpotlightIndexOperation _createSearchableItemsForTracksWithQuery:error:]_block_invoke.99
 + ___91-[ML3MusicLibrary generateArtworkForRelativePath:sizes:qualityOfService:completionHandler:]_block_invoke
 + ___91-[ML3MusicLibrary generateArtworkForRelativePath:sizes:qualityOfService:completionHandler:]_block_invoke_2
-+ ___Block_byref_object_copy_.11205
-+ ___Block_byref_object_copy_.12080
-+ ___Block_byref_object_copy_.12184
-+ ___Block_byref_object_copy_.13047
-+ ___Block_byref_object_copy_.13204
-+ ___Block_byref_object_copy_.13604
-+ ___Block_byref_object_copy_.14066
-+ ___Block_byref_object_copy_.15348
-+ ___Block_byref_object_copy_.18017
-+ ___Block_byref_object_copy_.18371
-+ ___Block_byref_object_copy_.18908
-+ ___Block_byref_object_copy_.19043
-+ ___Block_byref_object_copy_.19786
-+ ___Block_byref_object_copy_.20221
-+ ___Block_byref_object_copy_.20471
-+ ___Block_byref_object_copy_.21426
-+ ___Block_byref_object_copy_.21784
-+ ___Block_byref_object_copy_.23425
-+ ___Block_byref_object_copy_.24118
-+ ___Block_byref_object_copy_.25977
-+ ___Block_byref_object_copy_.26055
-+ ___Block_byref_object_copy_.26156
-+ ___Block_byref_object_copy_.2620
-+ ___Block_byref_object_copy_.26351
-+ ___Block_byref_object_copy_.27073
-+ ___Block_byref_object_copy_.29184
-+ ___Block_byref_object_copy_.30011
-+ ___Block_byref_object_copy_.487
-+ ___Block_byref_object_copy_.508
-+ ___Block_byref_object_copy_.575
-+ ___Block_byref_object_copy_.605
-+ ___Block_byref_object_copy_.626
-+ ___Block_byref_object_copy_.690
-+ ___Block_byref_object_copy_.820
-+ ___Block_byref_object_copy_.826
-+ ___Block_byref_object_copy_.833
-+ ___Block_byref_object_copy_.837
-+ ___Block_byref_object_copy_.844
-+ ___Block_byref_object_copy_.849
-+ ___Block_byref_object_copy_.897
-+ ___Block_byref_object_copy_.9523
-+ ___Block_byref_object_copy_.9645
-+ ___Block_byref_object_copy_.9750
-+ ___Block_byref_object_dispose_.11206
-+ ___Block_byref_object_dispose_.12081
-+ ___Block_byref_object_dispose_.12185
-+ ___Block_byref_object_dispose_.13048
-+ ___Block_byref_object_dispose_.13205
-+ ___Block_byref_object_dispose_.13605
-+ ___Block_byref_object_dispose_.14067
-+ ___Block_byref_object_dispose_.15349
-+ ___Block_byref_object_dispose_.18018
-+ ___Block_byref_object_dispose_.18372
-+ ___Block_byref_object_dispose_.18909
-+ ___Block_byref_object_dispose_.19044
-+ ___Block_byref_object_dispose_.19787
-+ ___Block_byref_object_dispose_.20222
-+ ___Block_byref_object_dispose_.20472
-+ ___Block_byref_object_dispose_.21427
-+ ___Block_byref_object_dispose_.21785
-+ ___Block_byref_object_dispose_.23426
-+ ___Block_byref_object_dispose_.24119
-+ ___Block_byref_object_dispose_.25978
-+ ___Block_byref_object_dispose_.26056
-+ ___Block_byref_object_dispose_.26157
-+ ___Block_byref_object_dispose_.2621
-+ ___Block_byref_object_dispose_.26352
-+ ___Block_byref_object_dispose_.27074
-+ ___Block_byref_object_dispose_.29185
-+ ___Block_byref_object_dispose_.30012
-+ ___Block_byref_object_dispose_.488
-+ ___Block_byref_object_dispose_.509
-+ ___Block_byref_object_dispose_.576
-+ ___Block_byref_object_dispose_.606
-+ ___Block_byref_object_dispose_.627
-+ ___Block_byref_object_dispose_.691
-+ ___Block_byref_object_dispose_.821
-+ ___Block_byref_object_dispose_.827
-+ ___Block_byref_object_dispose_.834
-+ ___Block_byref_object_dispose_.838
-+ ___Block_byref_object_dispose_.845
-+ ___Block_byref_object_dispose_.850
-+ ___Block_byref_object_dispose_.898
-+ ___Block_byref_object_dispose_.9524
-+ ___Block_byref_object_dispose_.9646
-+ ___Block_byref_object_dispose_.9751
-+ ____ZL37ML3LibraryPinDefaultActionDescriptionx_block_invoke.24035
-+ ____ZL37ML3LibraryPinnedEntityTypeDescription13ML3EntityType_block_invoke.24043
 + ____ZN16ML3ImportSession11removeTrackEx_block_invoke
-+ ____ZN16ML3ImportSession13_finishImportEv_block_invoke.299
-+ ____ZN16ML3ImportSession13_finishImportEv_block_invoke.306
-+ ____ZN16ML3ImportSession13_finishImportEv_block_invoke.313
-+ ____ZN16ML3ImportSession13_finishImportEv_block_invoke.322
-+ ____ZN16ML3ImportSession13_finishImportEv_block_invoke_2.320
-+ ____ZN16ML3ImportSession13_finishImportEv_block_invoke_2.326
-+ ____ZN16ML3ImportSession34_prepareContainerAuthorImportItemsENSt3__110shared_ptrI13ML3ImportItemEE_block_invoke.847
-+ ____ZN16ML3ImportSession38_prepareContainerItemPersonImportItemsENSt3__110shared_ptrI13ML3ImportItemEE_block_invoke.832
-+ ____ZN16ML3ImportSession5flushEb_block_invoke.188
 + ___block_descriptor_109_e8_32s40s48s56s64bs_e17_v16?0"NSError"8ls64l8s32l8s40l8s48l8s56l8
 + ___block_descriptor_40_e8_32s_e35_B24?0"NSNumber"8"NSDictionary"16ls32l8
 + ___block_descriptor_48_e8_32s40s_e22_v24?0"NSNumber"8^B16ls32l8s40l8
 + ___block_descriptor_89_e8_32s40s48s56bs_e40_v40?0"NSError"8{CGSize=dd}16"NSURL"32ls32l8s40l8s48l8s56l8
 + ___block_descriptor_96_e8_32s40s48s56s64s72s80s88s_e20_v40?0q8r^16Q24^B32ls32l8s40l8s48l8s56l8s64l8s72l8s80l8s88l8
-+ ___block_literal_global.1012
-+ ___block_literal_global.10223
-+ ___block_literal_global.108.20225
-+ ___block_literal_global.11228
-+ ___block_literal_global.11281
-+ ___block_literal_global.12100
-+ ___block_literal_global.12530
-+ ___block_literal_global.14034
-+ ___block_literal_global.14217
-+ ___block_literal_global.15174
-+ ___block_literal_global.16133
-+ ___block_literal_global.16984
-+ ___block_literal_global.17321
-+ ___block_literal_global.18071
-+ ___block_literal_global.19237
-+ ___block_literal_global.20220
-+ ___block_literal_global.20491
-+ ___block_literal_global.20655
-+ ___block_literal_global.20777
-+ ___block_literal_global.20809
-+ ___block_literal_global.20998
-+ ___block_literal_global.21537
-+ ___block_literal_global.21999
-+ ___block_literal_global.22302
-+ ___block_literal_global.22911
-+ ___block_literal_global.23756
-+ ___block_literal_global.25418
-+ ___block_literal_global.26078
-+ ___block_literal_global.26208
-+ ___block_literal_global.27082
-+ ___block_literal_global.27422
-+ ___block_literal_global.3010
-+ ___block_literal_global.639
-+ ___block_literal_global.861
-+ ___block_literal_global.868
-+ ___block_literal_global.896
-+ ___block_literal_global.9274
-+ ___block_literal_global.9502
-+ ___block_literal_global.960
-+ ___block_literal_global.9632
-+ ___block_literal_global.998
-+ ___getICStoreArtworkInfoCropStyleSquareCenterCropSymbolLoc_block_invoke.18676
-+ ___getICStoreArtworkInfoImageFormatJPEGSymbolLoc_block_invoke.18660
-+ ___getICStorePlatformMetadataKindPlaylistSymbolLoc_block_invoke.18688
-+ ___iTunesCloudLibraryCore_block_invoke.18671
-+ _audit_stringiTunesCloud.18674
-+ _getICStoreArtworkInfoCropStyleSquareCenterCropSymbolLoc.ptr.18675
-+ _getICStoreArtworkInfoImageFormatJPEGSymbolLoc.ptr.18659
-+ _getICStorePlatformMetadataKindPlaylistSymbolLoc.ptr.18687
-+ _iTunesCloudLibrary.18661
-+ _iTunesCloudLibraryCore.frameworkLibrary.18670
-+ _objc_msgSend$_autogenerateArtworkForRelativePath:artworkType:mediaType:variantType:qualityOfService:completionHandler:
-+ _objc_msgSend$_convertOriginalArtworkToDevicePreferredFormatFromSourceURL:toDestinationURL:qualityOfService:completionHandler:
-+ _objc_msgSend$_createColorAnalysisForRelativePath:artworkType:artworkToken:preferredImageSize:qualityOfService:completionHandler:
-+ _objc_msgSend$filterUsingPredicate:
-+ _objc_msgSend$generateArtworkForRelativePath:sizes:qualityOfService:completionHandler:
-+ _objc_msgSend$importOriginalArtworkFromFileURL:withArtworkToken:artworkType:sourceType:mediaType:variantType:shouldPerformColorAnalysis:qualityOfService:completion:
-+ _objc_msgSend$importOriginalArtworkFromImageData:withArtworkToken:artworkType:sourceType:mediaType:variantType:shouldPerformColorAnalysis:qualityOfService:completion:
-+ _objc_msgSend$predicateWithBlock:
-+ _objc_msgSend$timeout
-+ _propertiesForGroupingKey.onceToken.9501
-+ _propertiesForGroupingKey.onceToken.9631
-+ _propertiesForGroupingKey.propertiesForGroupingKey.9503
-+ _propertiesForGroupingKey.propertiesForGroupingKey.9633
 - -[ML3MusicLibrary _autogenerateArtworkForRelativePath:artworkType:mediaType:variantType:completionHandler:]
 - -[ML3MusicLibrary _convertOriginalArtworkToDevicePreferredFormatFromSourceURL:toDestinationURL:completionHandler:]
 - -[ML3MusicLibrary _createColorAnalysisForRelativePath:artworkType:artworkToken:preferredImageSize:completionHandler:]
@@ -1613,10 +1376,6 @@ Symbols:
 - GCC_except_table8087
 - GCC_except_table8088
 - GCC_except_table8091
-- _MSVFastHexStringFromBytes.hexCharacters.29050
-- __MSV_XXH_XXH32_update.29041
-- __MSV_XXH_XXH64_digest.29046
-- __MSV_XXH_XXH64_update.29042
 - __ZNKSt3__111__copy_implclB9fqe220100IPKNS_10shared_ptrI27ML3DatabaseImportDataSourceEES6_PS4_Li0EEENS_4pairIT_T1_EES9_T0_SA_
 - __ZNKSt3__111__copy_implclB9fqe220100IPNS_10shared_ptrI13ML3ImportItemEES5_S5_Li0EEENS_4pairIT_T1_EES7_T0_S8_
 - __ZNKSt3__113__string_hashIcNS_9allocatorIcEEEclB9fqe220100ERKNS_12basic_stringIcNS_11char_traitsIcEES2_EE
@@ -1806,10 +1565,6 @@ Symbols:
 - __ZNSt3__18optionalINS_7variantIJxfbNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_10shared_ptrI10ML3CPPDataEEEEEEaSB9fqe220100IS7_Li0EEERSC_OT_
 - __ZNSt3__19allocatorI18DAAPParserDelegateE9constructB9fqe220100IS1_JRU8__strongKP22ML3DAAPImportOperationRNS_10shared_ptrIN6ML3CPP6ParserEEER32ML3DAAPImportOperationEntityTypebEEEvPT_DpOT0_
 - __ZSt28__throw_bad_array_new_lengthB9fqe220100v
-- __ZZL37ML3LibraryPinDefaultActionDescriptionxE38__pinnedEntityDefaultActionDescription.24004
-- __ZZL37ML3LibraryPinDefaultActionDescriptionxE9onceToken.24003
-- __ZZL37ML3LibraryPinnedEntityTypeDescription13ML3EntityTypeE29__pinnedEntityTypeDescription.24002
-- __ZZL37ML3LibraryPinnedEntityTypeDescription13ML3EntityTypeE9onceToken.24001
 - __ZZNSt3__112__hash_tableINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_4hashIS6_EENS_8equal_toIS6_EENS4_IS6_EEE16__emplace_uniqueB9fqe220100IJRKS6_EEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIS6_PvEEEEbEEDpOT_ENKUlSF_SF_E_clESF_SF_
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_10shared_ptrI12ML3AlbumDataEEEENS_22__unordered_map_hasherIS7_NS_4pairIKS7_SA_EENS_4hashIS7_EENS_8equal_toIS7_EEEENS_21__unordered_map_equalIS7_SF_SJ_SH_EENS5_ISF_EEE16__emplace_uniqueB9fqe220100IJSF_EEENSD_INS_15__hash_iteratorIPNS_11__hash_nodeISB_PvEEEEbEEDpOT_ENKUlRSE_OSF_E_clES10_S11_
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_10shared_ptrI13ML3ArtistDataEEEENS_22__unordered_map_hasherIS7_NS_4pairIKS7_SA_EENS_4hashIS7_EENS_8equal_toIS7_EEEENS_21__unordered_map_equalIS7_SF_SJ_SH_EENS5_ISF_EEE16__emplace_uniqueB9fqe220100IJSF_EEENSD_INS_15__hash_iteratorIPNS_11__hash_nodeISB_PvEEEEbEEDpOT_ENKUlRSE_OSF_E_clES10_S11_
@@ -1835,169 +1590,11 @@ Symbols:
 - __ZZNSt3__112__hash_tableIy15echo_hash_shiftIyENS_8equal_toIyEENS_9allocatorIyEEE16__emplace_uniqueB9fqe220100IJRKyEEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIyPvEEEEbEEDpOT_ENKUlSA_SA_E_clESA_SA_
 - ___117-[ML3MusicLibrary _createColorAnalysisForRelativePath:artworkType:artworkToken:preferredImageSize:completionHandler:]_block_invoke
 - ___152-[ML3MusicLibrary importOriginalArtworkFromFileURL:withArtworkToken:artworkType:sourceType:mediaType:variantType:shouldPerformColorAnalysis:completion:]_block_invoke
-- ___152-[ML3MusicLibrary importOriginalArtworkFromFileURL:withArtworkToken:artworkType:sourceType:mediaType:variantType:shouldPerformColorAnalysis:completion:]_block_invoke.742
 - ___154-[ML3MusicLibrary importOriginalArtworkFromImageData:withArtworkToken:artworkType:sourceType:mediaType:variantType:shouldPerformColorAnalysis:completion:]_block_invoke
 - ___74-[ML3MusicLibrary generateArtworkForRelativePath:sizes:completionHandler:]_block_invoke
 - ___74-[ML3MusicLibrary generateArtworkForRelativePath:sizes:completionHandler:]_block_invoke_2
-- ___74-[ML3UpdateSpotlightIndexOperation _batchIndexWithObject:completionBlock:]_block_invoke.53
-- ___83-[ML3UpdateSpotlightIndexOperation _createSearchableItemsForTracksWithQuery:error:]_block_invoke.83
-- ___Block_byref_object_copy_.11223
-- ___Block_byref_object_copy_.12098
-- ___Block_byref_object_copy_.12202
-- ___Block_byref_object_copy_.13065
-- ___Block_byref_object_copy_.13223
-- ___Block_byref_object_copy_.13623
-- ___Block_byref_object_copy_.14085
-- ___Block_byref_object_copy_.15367
-- ___Block_byref_object_copy_.18028
-- ___Block_byref_object_copy_.18382
-- ___Block_byref_object_copy_.18919
-- ___Block_byref_object_copy_.19054
-- ___Block_byref_object_copy_.19797
-- ___Block_byref_object_copy_.20232
-- ___Block_byref_object_copy_.20482
-- ___Block_byref_object_copy_.21437
-- ___Block_byref_object_copy_.21795
-- ___Block_byref_object_copy_.23438
-- ___Block_byref_object_copy_.24129
-- ___Block_byref_object_copy_.25988
-- ___Block_byref_object_copy_.26065
-- ___Block_byref_object_copy_.26166
-- ___Block_byref_object_copy_.2619
-- ___Block_byref_object_copy_.26361
-- ___Block_byref_object_copy_.27074
-- ___Block_byref_object_copy_.29183
-- ___Block_byref_object_copy_.30005
-- ___Block_byref_object_copy_.484
-- ___Block_byref_object_copy_.502
-- ___Block_byref_object_copy_.572
-- ___Block_byref_object_copy_.602
-- ___Block_byref_object_copy_.623
-- ___Block_byref_object_copy_.687
-- ___Block_byref_object_copy_.817
-- ___Block_byref_object_copy_.823
-- ___Block_byref_object_copy_.830
-- ___Block_byref_object_copy_.834
-- ___Block_byref_object_copy_.841
-- ___Block_byref_object_copy_.846
-- ___Block_byref_object_copy_.894
-- ___Block_byref_object_copy_.9540
-- ___Block_byref_object_copy_.9663
-- ___Block_byref_object_copy_.9768
-- ___Block_byref_object_dispose_.11224
-- ___Block_byref_object_dispose_.12099
-- ___Block_byref_object_dispose_.12203
-- ___Block_byref_object_dispose_.13066
-- ___Block_byref_object_dispose_.13224
-- ___Block_byref_object_dispose_.13624
-- ___Block_byref_object_dispose_.14086
-- ___Block_byref_object_dispose_.15368
-- ___Block_byref_object_dispose_.18029
-- ___Block_byref_object_dispose_.18383
-- ___Block_byref_object_dispose_.18920
-- ___Block_byref_object_dispose_.19055
-- ___Block_byref_object_dispose_.19798
-- ___Block_byref_object_dispose_.20233
-- ___Block_byref_object_dispose_.20483
-- ___Block_byref_object_dispose_.21438
-- ___Block_byref_object_dispose_.21796
-- ___Block_byref_object_dispose_.23439
-- ___Block_byref_object_dispose_.24130
-- ___Block_byref_object_dispose_.25989
-- ___Block_byref_object_dispose_.26066
-- ___Block_byref_object_dispose_.26167
-- ___Block_byref_object_dispose_.2620
-- ___Block_byref_object_dispose_.26362
-- ___Block_byref_object_dispose_.27075
-- ___Block_byref_object_dispose_.29184
-- ___Block_byref_object_dispose_.30006
-- ___Block_byref_object_dispose_.485
-- ___Block_byref_object_dispose_.503
-- ___Block_byref_object_dispose_.573
-- ___Block_byref_object_dispose_.603
-- ___Block_byref_object_dispose_.624
-- ___Block_byref_object_dispose_.688
-- ___Block_byref_object_dispose_.818
-- ___Block_byref_object_dispose_.824
-- ___Block_byref_object_dispose_.831
-- ___Block_byref_object_dispose_.835
-- ___Block_byref_object_dispose_.842
-- ___Block_byref_object_dispose_.847
-- ___Block_byref_object_dispose_.895
-- ___Block_byref_object_dispose_.9541
-- ___Block_byref_object_dispose_.9664
-- ___Block_byref_object_dispose_.9769
-- ____ZL37ML3LibraryPinDefaultActionDescriptionx_block_invoke.24046
-- ____ZL37ML3LibraryPinnedEntityTypeDescription13ML3EntityType_block_invoke.24054
-- ____ZN16ML3ImportSession13_finishImportEv_block_invoke.296
-- ____ZN16ML3ImportSession13_finishImportEv_block_invoke.303
-- ____ZN16ML3ImportSession13_finishImportEv_block_invoke.310
-- ____ZN16ML3ImportSession13_finishImportEv_block_invoke.319
-- ____ZN16ML3ImportSession13_finishImportEv_block_invoke_2.317
-- ____ZN16ML3ImportSession13_finishImportEv_block_invoke_2.323
-- ____ZN16ML3ImportSession34_prepareContainerAuthorImportItemsENSt3__110shared_ptrI13ML3ImportItemEE_block_invoke.844
-- ____ZN16ML3ImportSession38_prepareContainerItemPersonImportItemsENSt3__110shared_ptrI13ML3ImportItemEE_block_invoke.829
-- ____ZN16ML3ImportSession5flushEb_block_invoke.185
 - ___block_descriptor_101_e8_32s40s48s56s64bs_e17_v16?0"NSError"8ls64l8s32l8s40l8s48l8s56l8
 - ___block_descriptor_81_e8_32s40s48s56bs_e40_v40?0"NSError"8{CGSize=dd}16"NSURL"32ls32l8s40l8s48l8s56l8
-- ___block_literal_global.1009
-- ___block_literal_global.10241
-- ___block_literal_global.108.20236
-- ___block_literal_global.11246
-- ___block_literal_global.11299
-- ___block_literal_global.12118
-- ___block_literal_global.12548
-- ___block_literal_global.14053
-- ___block_literal_global.14236
-- ___block_literal_global.15193
-- ___block_literal_global.16144
-- ___block_literal_global.16995
-- ___block_literal_global.17332
-- ___block_literal_global.18082
-- ___block_literal_global.19248
-- ___block_literal_global.20231
-- ___block_literal_global.20502
-- ___block_literal_global.20666
-- ___block_literal_global.20788
-- ___block_literal_global.20820
-- ___block_literal_global.21009
-- ___block_literal_global.21548
-- ___block_literal_global.22010
-- ___block_literal_global.22313
-- ___block_literal_global.22922
-- ___block_literal_global.23765
-- ___block_literal_global.25429
-- ___block_literal_global.26088
-- ___block_literal_global.26218
-- ___block_literal_global.27083
-- ___block_literal_global.27425
-- ___block_literal_global.3009
-- ___block_literal_global.636
-- ___block_literal_global.858
-- ___block_literal_global.865
-- ___block_literal_global.893
-- ___block_literal_global.9290
-- ___block_literal_global.9519
-- ___block_literal_global.957
-- ___block_literal_global.9649
-- ___block_literal_global.995
-- ___getICStoreArtworkInfoCropStyleSquareCenterCropSymbolLoc_block_invoke.18687
-- ___getICStoreArtworkInfoImageFormatJPEGSymbolLoc_block_invoke.18671
-- ___getICStorePlatformMetadataKindPlaylistSymbolLoc_block_invoke.18699
-- ___iTunesCloudLibraryCore_block_invoke.18682
-- _audit_stringiTunesCloud.18685
-- _getICStoreArtworkInfoCropStyleSquareCenterCropSymbolLoc.ptr.18686
-- _getICStoreArtworkInfoImageFormatJPEGSymbolLoc.ptr.18670
-- _getICStorePlatformMetadataKindPlaylistSymbolLoc.ptr.18698
-- _iTunesCloudLibrary.18672
-- _iTunesCloudLibraryCore.frameworkLibrary.18681
-- _objc_msgSend$_autogenerateArtworkForRelativePath:artworkType:mediaType:variantType:completionHandler:
-- _objc_msgSend$_convertOriginalArtworkToDevicePreferredFormatFromSourceURL:toDestinationURL:completionHandler:
-- _objc_msgSend$_createColorAnalysisForRelativePath:artworkType:artworkToken:preferredImageSize:completionHandler:
-- _propertiesForGroupingKey.onceToken.9518
-- _propertiesForGroupingKey.onceToken.9648
-- _propertiesForGroupingKey.propertiesForGroupingKey.9520
-- _propertiesForGroupingKey.propertiesForGroupingKey.9650
 CStrings:
 + "B24@?0@\"NSNumber\"8@\"NSDictionary\"16"
 + "Can prompt the user: %{BOOL}u (setupAssistantNeedsToRun=%{BOOL}u, springBoardRunning=%{BOOL}u, dataMigratorRunning=%{BOOL}u, lastIgnoreTime=%@)"
@@ -2033,5 +1630,4 @@ CStrings:
 - "creating new genre entry: pid=%lld, name='%{public}s'"
 - "finished import session %p of %lld items in %.2f seconds (%lld items/s)"
 - "unspecified"
-
 ```

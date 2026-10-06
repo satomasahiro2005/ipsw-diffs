@@ -2,54 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/MTL3On4.framework/MTL3On4`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x74ec` | `0x7fdc` | **`+0xaf0`** |
+| `__TEXT.__unwind_info` | `0x360` | `0x3a8` | **`+0x48`** |
+| `__TEXT.__gcc_except_tab` | `0x164` | `0x198` | **`+0x34`** |
+| `__TEXT.__objc_methlist` | `0x1b8c` | `0x1ba4` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0xad8` | `0xae8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x74ec
--  __TEXT.__objc_methlist: 0x1b8c
--  __TEXT.__gcc_except_tab: 0x164
-+  __TEXT.__text: 0x7fdc
-+  __TEXT.__objc_methlist: 0x1ba4
-+  __TEXT.__gcc_except_tab: 0x198
-   __TEXT.__const: 0x8
-   __TEXT.__cstring: 0x1aa
--  __TEXT.__unwind_info: 0x360
-+  __TEXT.__unwind_info: 0x3a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-381.0.0.0.0
++382.4.0.0.0
 
-   __DATA_CONST.__objc_protolist: 0x58
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0xad8
-+  __DATA_CONST.__objc_selrefs: 0xae8
-   __DATA_CONST.__objc_superrefs: 0x38
-   __DATA_CONST.__got: 0x98
-   __AUTH_CONST.__const: 0x20
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 318
--  Symbols:   1122
+-  Symbols:   603
 +  Functions: 345
-+  Symbols:   1193
-   CStrings:  24
- 
-Sections:
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA.__objc_ivar : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   637
 Symbols:
 + -[MTL3On4CommandBuffer cachedFencesForAllocation:]
 + -[MTL3On4CommandQueue addInternalResidencySet:]
@@ -110,11 +83,6 @@ Symbols:
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeIPU24objcproto13MTLAllocation11objc_objectN24MTL3On4ResourceHazardMap35MTL3On4HazardTrackedAllocationEntryEEENS_22__unordered_map_hasherIS3_NS_4pairIKS3_S5_EENS_4hashIS3_EENS_8equal_toIS3_EEEENS_21__unordered_map_equalIS3_SA_SE_SC_EENS_9allocatorISA_EEE16__emplace_uniqueB9fqe220106IJRS3_RS5_EEENS8_INS_15__hash_iteratorIPNS_11__hash_nodeIS6_PvEEEEbEEDpOT_ENKUlRS9_SM_SN_E_clESY_SM_SN_
 + ___clang_call_terminate
 + ___cxa_begin_catch
-+ _objc_msgSend$addInternalResidencySet:
-+ _objc_msgSend$addInternalResidencySets:count:
-+ _objc_msgSend$cachedFencesForAllocation:
-+ _objc_msgSend$removeInternalResidencySet:
-+ _objc_msgSend$removeInternalResidencySets:count:
 + _objc_retain_x1
 - -[MTL3On4CommandBuffer registerHazardTrackedAllocation:]
 - -[MTL3On4Context fencesForAllocation:]
@@ -141,8 +109,5 @@ Symbols:
 - __ZNSt3__112__hash_tableIPU24objcproto13MTLAllocation11objc_objectNS_4hashIS2_EENS_8equal_toIS2_EENS_9allocatorIS2_EEED2Ev
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeIPU24objcproto13MTLAllocation11objc_object35MTL3On4HazardTrackedAllocationEntryEENS_22__unordered_map_hasherIS3_NS_4pairIKS3_S4_EENS_4hashIS3_EENS_8equal_toIS3_EEEENS_21__unordered_map_equalIS3_S9_SD_SB_EENS_9allocatorIS9_EEE16__emplace_uniqueB9fqe220106IJRS3_RS4_EEENS7_INS_15__hash_iteratorIPNS_11__hash_nodeIS5_PvEEEEbEEDpOT_ENKUlRS8_SL_SM_E_clESX_SL_SM_
 - __ZZNSt3__112__hash_tableIPU24objcproto13MTLAllocation11objc_objectNS_4hashIS2_EENS_8equal_toIS2_EENS_9allocatorIS2_EEE16__emplace_uniqueB9fqe220106IJRS2_EEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIS2_PvEEEEbEEDpOT_ENKUlRKS2_SB_E_clESO_SB_
-- _objc_msgSend$fencesForAllocation:
-- _objc_msgSend$registerHazardTrackedAllocation:
 - _objc_retain_x8
-
 ```

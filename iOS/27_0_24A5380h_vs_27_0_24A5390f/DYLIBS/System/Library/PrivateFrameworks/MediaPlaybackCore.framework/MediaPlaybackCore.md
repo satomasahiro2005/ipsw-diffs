@@ -2,129 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/MediaPlaybackCore.framework/MediaPlaybackCore`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_types2`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4921d4` | `0x4989f8` | **`+0x6824`** |
+| `__TEXT.__oslogstring` | `0x4b786` | `0x4bfeb` | **`+0x865`** |
+| `__TEXT.__eh_frame` | `0xfb04` | `0xfeb4` | **`+0x3b0`** |
+| `__TEXT.__cstring` | `0x2533b` | `0x2563e` | **`+0x303`** |
+| `__AUTH_CONST.__cfstring` | `0x1e7e0` | `0x1e8e0` | **`+0x100`** |
+| `__TEXT.__unwind_info` | `0xdb58` | `0xdc38` | **`+0xe0`** |
+| `__DATA_CONST.__const` | `0x92b0` | `0x9378` | **`+0xc8`** |
+| `__AUTH.__data` | `0x3fa0` | `0x4030` | **`+0x90`** |
+| `__TEXT.__constg_swiftt` | `0x7a24` | `0x7aa4` | **`+0x80`** |
+| `__AUTH_CONST.__objc_const` | `0x34558` | `0x345b8` | **`+0x60`** |
+| `__AUTH_CONST.__const` | `0x22f18` | `0x22ed0` | **`-0x48`** |
+| `__TEXT.__gcc_except_tab` | `0x57c8` | `0x580c` | **`+0x44`** |
+| `__TEXT.__const` | `0x105f8` | `0x10638` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0xcac8` | `0xcb00` | **`+0x38`** |
+| `__TEXT.__swift5_typeref` | `0x53ea` | `0x5410` | **`+0x26`** |
+| `__TEXT.__swift5_fieldmd` | `0x5614` | `0x5638` | **`+0x24`** |
+| `__DATA.__data` | `0x7220` | `0x7240` | **`+0x20`** |
+| `__DATA_DIRTY.__data` | `0x4518` | `0x4538` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0xdd0` | `0xdec` | **`+0x1c`** |
+| `__AUTH_CONST.__auth_got` | `0x3420` | `0x3430` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x3420` | `0x3430` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x5912` | `0x5902` | **`-0x10`** |
+| `__TEXT.__swift5_capture` | `0xab10` | `0xab04` | **`-0xc`** |
+| `__AUTH.__objc_data` | `0x5a20` | `0x5a28` | **`+0x8`** |
+| `__DATA.__common` | `0x238` | `0x230` | **`-0x8`** |
+| `__TEXT.__swift_as_entry` | `0x48c` | `0x494` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x5ac` | `0x5b0` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -26100.26.26.301.0
--  __TEXT.__text: 0x4921d4
 +26100.26.28.501.0
-+  __TEXT.__text: 0x4989f8
-   __TEXT.__objc_methlist: 0x17dd0
-   __TEXT.__dlopen_cstrs: 0x114
--  __TEXT.__const: 0x105f8
--  __TEXT.__oslogstring: 0x4b786
--  __TEXT.__cstring: 0x2533b
--  __TEXT.__swift5_typeref: 0x53ea
--  __TEXT.__swift5_capture: 0xab10
--  __TEXT.__constg_swiftt: 0x7a24
--  __TEXT.__swift5_reflstr: 0x5912
--  __TEXT.__swift5_fieldmd: 0x5614
-+  __TEXT.__const: 0x10638
-+  __TEXT.__oslogstring: 0x4bfeb
-+  __TEXT.__cstring: 0x2563e
-+  __TEXT.__swift5_typeref: 0x5410
-+  __TEXT.__swift5_capture: 0xab04
-+  __TEXT.__constg_swiftt: 0x7aa4
-+  __TEXT.__swift5_reflstr: 0x5902
-+  __TEXT.__swift5_fieldmd: 0x5638
-   __TEXT.__swift5_builtin: 0x6f4
-   __TEXT.__swift5_mpenum: 0xf0
-   __TEXT.__swift5_assocty: 0xb90
-   __TEXT.__swift5_proto: 0x918
-   __TEXT.__swift5_types: 0x560
--  __TEXT.__swift_as_entry: 0x48c
--  __TEXT.__swift_as_ret: 0x5ac
--  __TEXT.__swift_as_cont: 0xdd0
-+  __TEXT.__swift_as_entry: 0x494
-+  __TEXT.__swift_as_ret: 0x5b0
-+  __TEXT.__swift_as_cont: 0xdec
-   __TEXT.__swift5_protos: 0xd8
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__gcc_except_tab: 0x57c8
-+  __TEXT.__gcc_except_tab: 0x580c
-   __TEXT.__ustring: 0x4dc
--  __TEXT.__unwind_info: 0xdb58
--  __TEXT.__eh_frame: 0xfb04
-+  __TEXT.__unwind_info: 0xdc38
-+  __TEXT.__eh_frame: 0xfeb4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x92b0
-+  __DATA_CONST.__const: 0x9378
-   __DATA_CONST.__objc_classlist: 0xd30
-   __DATA_CONST.__objc_catlist: 0x298
-   __DATA_CONST.__objc_protolist: 0x7f0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xcac8
-+  __DATA_CONST.__objc_selrefs: 0xcb00
-   __DATA_CONST.__objc_protorefs: 0x3a0
-   __DATA_CONST.__objc_superrefs: 0x6d0
-   __DATA_CONST.__objc_arraydata: 0x298
--  __DATA_CONST.__got: 0x3420
--  __AUTH_CONST.__const: 0x22f18
--  __AUTH_CONST.__cfstring: 0x1e7e0
--  __AUTH_CONST.__objc_const: 0x34558
-+  __DATA_CONST.__got: 0x3430
-+  __AUTH_CONST.__const: 0x22ed0
-+  __AUTH_CONST.__cfstring: 0x1e8e0
-+  __AUTH_CONST.__objc_const: 0x345b8
-   __AUTH_CONST.__objc_intobj: 0x840
-   __AUTH_CONST.__objc_arrayobj: 0x288
-   __AUTH_CONST.__objc_dictobj: 0xc8
-   __AUTH_CONST.__objc_doubleobj: 0x70
--  __AUTH_CONST.__auth_got: 0x3420
--  __AUTH.__objc_data: 0x5a20
--  __AUTH.__data: 0x3fa0
-+  __AUTH_CONST.__auth_got: 0x3430
-+  __AUTH.__objc_data: 0x5a28
-+  __AUTH.__data: 0x4030
-   __DATA.__objc_ivar: 0x1ab0
--  __DATA.__data: 0x7220
-+  __DATA.__data: 0x7240
-   __DATA.__bss: 0xf1b8
--  __DATA.__common: 0x238
-+  __DATA.__common: 0x230
-   __DATA_DIRTY.__objc_data: 0x3578
--  __DATA_DIRTY.__data: 0x4518
-+  __DATA_DIRTY.__data: 0x4538
-   __DATA_DIRTY.__bss: 0x1328
-   __DATA_DIRTY.__common: 0xc8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 24179
--  Symbols:   24176
+-  Symbols:   18611
 -  CStrings:  8189
 +  Functions: 24246
-+  Symbols:   24189
++  Symbols:   18617
 +  CStrings:  8215
- 
 Symbols:
 + -[MPCModelPlaybackContext setRequest:inheritingContext:]
 + GCC_except_table1186
@@ -331,14 +253,6 @@ Symbols:
 + ___block_descriptor_88_e8_32s40s48s56s64s72s80s_e5_v8?0ls32l8s40l8s48l8s56l8s64l8s72l8s80l8
 + ___swift_closure_destructor.105Tm
 + ___swift_closure_destructor.95Tm
-+ _objc_msgSend$commitTransitionPlan:outgoingItem:incomingItem:error:
-+ _objc_msgSend$incomingItemParameters
-+ _objc_msgSend$outgoingItemParameters
-+ _objc_msgSend$setAutomaticallyHandlesInterstitialEvents:
-+ _objc_msgSend$setRequest:inheritingContext:
-+ _objc_msgSend$setSeekTime:
-+ _objc_msgSend$setSpeedRamp:
-+ _objc_msgSend$valueWithCMTimeMapping:
 + _symbolic So30AVPlayerItemSampleBufferOutputCSg
 - -[MPCModelPlaybackContext setRequest:inheritingPlaybackAccount:]
 - GCC_except_table1184
@@ -540,7 +454,6 @@ Symbols:
 - ___block_descriptor_72_e8_32s40s48s56r_e74_v32?0"NSString"8"_MPCQueueControllerBehaviorMusicDataSourceState"16^B24ls32l8s40l8s48l8r56l8
 - ___swift_closure_destructor.104Tm
 - ___swift_closure_destructor.94Tm
-- _objc_msgSend$setRequest:inheritingPlaybackAccount:
 CStrings:
 + "-[MPCPlaybackEngine videoOutput] must be created on the main thread"
 + "<MPCAssistantWatchAudioRoutingInfo hasPickedVirtualAudioRoute=%@ hasAvailableW1Route=%@ speakerRouteEnabled=%@ isConnectedToCompanion=%@>"

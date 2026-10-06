@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/Stickers.framework/Stickers`
 
-```diff
+### Section Size Changes
 
- 88.0.0.0.0
--  __TEXT.__text: 0x951d0
-+  __TEXT.__text: 0x95218
-   __TEXT.__objc_methlist: 0xb34
-   __TEXT.__const: 0x47c8
-   __TEXT.__constg_swiftt: 0x2080
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x951d0` | `0x95218` | **`+0x48`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1d0cfbdb8 -> sub_1d1335db8 : 824 -> 828
 ~ sub_1d0cfc0f0 -> sub_1d13360f4 : 1148 -> 1160

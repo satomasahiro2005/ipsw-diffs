@@ -2,74 +2,40 @@
 
 > `/System/Library/Frameworks/CarPlay.framework/CarPlay`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6ff70` | `0x70ed0` | **`+0xf60`** |
+| `__AUTH_CONST.__objc_const` | `0x21650` | `0x218a0` | **`+0x250`** |
+| `__TEXT.__objc_methlist` | `0x9a30` | `0x9b48` | **`+0x118`** |
+| `__TEXT.__cstring` | `0x5ae6` | `0x5be6` | **`+0x100`** |
+| `__AUTH_CONST.__cfstring` | `0x57a0` | `0x5840` | **`+0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x43e0` | `0x4448` | **`+0x68`** |
+| `__TEXT.__oslogstring` | `0x3726` | `0x3786` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0x48` | `0x98` | **`+0x50`** |
+| `__DATA.__bss` | `0x590` | `0x5e0` | **`+0x50`** |
+| `__DATA_CONST.__const` | `0x1f00` | `0x1f50` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x1f78` | `0x1fa8` | **`+0x30`** |
+| `__DATA.__objc_ivar` | `0xa34` | `0xa44` | **`+0x10`** |
+| `__TEXT.__const` | `0x552` | `0x562` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x3e0` | `0x3e8` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x160` | `0x168` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x348` | `0x350` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -552.3.0.0.0
--  __TEXT.__text: 0x6d23c
--  __TEXT.__objc_methlist: 0x9a30
--  __TEXT.__const: 0x552
--  __TEXT.__cstring: 0x5ae6
--  __TEXT.__oslogstring: 0x3726
 +552.6.2.0.0
-+  __TEXT.__text: 0x6e160
-+  __TEXT.__objc_methlist: 0x9b48
-+  __TEXT.__const: 0x562
-+  __TEXT.__cstring: 0x5be6
-+  __TEXT.__oslogstring: 0x3786
-   __TEXT.__gcc_except_tab: 0x934
-   __TEXT.__constg_swiftt: 0x1f8
-   __TEXT.__swift5_typeref: 0x13d
 
-   __TEXT.__swift5_proto: 0x18
-   __TEXT.__swift5_types: 0x14
-   __TEXT.__swift5_fieldmd: 0x7c
--  __TEXT.__unwind_info: 0x27e8
-+  __TEXT.__unwind_info: 0x2820
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1f00
--  __DATA_CONST.__objc_classlist: 0x3e0
-+  __DATA_CONST.__const: 0x1f50
-+  __DATA_CONST.__objc_classlist: 0x3e8
-   __DATA_CONST.__objc_catlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x2f8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x43e0
--  __DATA_CONST.__objc_protorefs: 0x160
--  __DATA_CONST.__objc_superrefs: 0x348
-+  __DATA_CONST.__objc_selrefs: 0x4448
-+  __DATA_CONST.__objc_protorefs: 0x168
-+  __DATA_CONST.__objc_superrefs: 0x350
-   __DATA_CONST.__got: 0x878
-   __AUTH_CONST.__const: 0xbe8
--  __AUTH_CONST.__cfstring: 0x57a0
--  __AUTH_CONST.__objc_const: 0x21650
-+  __AUTH_CONST.__cfstring: 0x5840
-+  __AUTH_CONST.__objc_const: 0x218a0
-   __AUTH_CONST.__objc_intobj: 0xd8
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__auth_got: 0x7b8
--  __AUTH.__objc_data: 0x48
--  __DATA.__objc_ivar: 0xa34
-+  __AUTH.__objc_data: 0x98
-+  __DATA.__objc_ivar: 0xa44
-   __DATA.__data: 0x2110
-   __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0x2698
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3380
 -  Symbols:   6354
 -  CStrings:  1111
 +  Functions: 3401
 +  Symbols:   6397
 +  CStrings:  1120
- 
 Symbols:
 + +[CPListImageRowItemCardElement _setImageSizeForAspectRatioWide:portrait:square:]
 + +[CPListImageRowItemCardElement _setMaximumImageSize:maximumFullHeightImageSize:]

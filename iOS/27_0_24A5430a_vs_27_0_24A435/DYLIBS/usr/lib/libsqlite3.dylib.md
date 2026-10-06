@@ -2,20 +2,16 @@
 
 > `/usr/lib/libsqlite3.dylib`
 
-```diff
+### Section Size Changes
 
- 406.0.0.0.0
--  __TEXT.__text: 0x19fee0
-+  __TEXT.__text: 0x1a004c
-   __TEXT.__const: 0x876c
-   __TEXT.__cstring: 0xcf66
-   __TEXT.__oslogstring: 0x835
-   __TEXT.__unwind_info: 0x1e28
--  __TEXT.__eh_frame: 0x48
-+  __TEXT.__eh_frame: 0x50
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x1e70
-   __DATA_CONST.__got: 0x0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x19fee0` | `0x1a004c` | **`+0x16c`** |
+| `__TEXT.__eh_frame` | `0x48` | `0x50` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_19e1f9fe4 -> sub_19e2bafe4 : 15348 -> 15464
 ~ sub_19e1fdcd8 -> sub_19e2bed4c : 9696 -> 9736

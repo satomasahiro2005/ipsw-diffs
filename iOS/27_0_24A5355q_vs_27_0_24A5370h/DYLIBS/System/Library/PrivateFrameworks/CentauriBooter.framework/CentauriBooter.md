@@ -2,58 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/CentauriBooter.framework/CentauriBooter`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2c104` | `0x2be84` | **`-0x280`** |
+| `__TEXT.__cstring` | `0x6db5` | `0x6c4e` | **`-0x167`** |
+| `__TEXT.__oslogstring` | `0x4c55` | `0x4baf` | **`-0xa6`** |
+| `__DATA.__bss` | `—` | `0x20` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x840` | `0x860` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x28ec` | `0x2908` | **`+0x1c`** |
+| `__TEXT.__const` | `0x3ad` | `0x3c5` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
 -77.0.0.0.0
--  __TEXT.__text: 0x2c104 sha256:e5cbe36ae491b2abf47e134251ebd193083d8ed68a1f71bf2fb55ef73fd079c0
--  __TEXT.__const: 0x3ad sha256:cf2b9258e935608b83c56f743586d7eae8766af6e0290523a83248ebc6afa4c9
--  __TEXT.__gcc_except_tab: 0x28ec sha256:30570f8f2920e868708fc4e16454baf298861a3962c571aab9601dbad1cb9e24
--  __TEXT.__cstring: 0x6db5 sha256:6237ce16bbfd2aa548152175760c6578768fd516fef69d1ae399ee690be5b604
--  __TEXT.__oslogstring: 0x4c55 sha256:6c3639cca0f31ef6a03118a5b81365a44e10c2b5d5322ed919095f3f212df5f2
--  __TEXT.__unwind_info: 0x840 sha256:9d2e45bbcd3a7c0af3088fe1a2f1b464b6649930686b955e0825fa865b18e5bf
 +79.0.0.0.0
-+  __TEXT.__text: 0x2be84 sha256:e83836578662f9390892bb83554741d1ced383cc9e2e8dd57269abb4e9e31406
-+  __TEXT.__const: 0x3c5 sha256:0c84aed8d60a49d8448ce4e6c6f2c09da6bf3f95574d7619c379109d83adf31f
-+  __TEXT.__gcc_except_tab: 0x2908 sha256:761dd0e771eeb338fc54ebc3d1687e1916ea1a54572deb51ca09fbd139f94ee6
-+  __TEXT.__cstring: 0x6c4e sha256:b3cf57bc7879f392c42978005b6d30067b4a0fab7951988fd816f3af6c4faf82
-+  __TEXT.__oslogstring: 0x4baf sha256:107f073c510be7c98c0366406d9cbe56608a88ddef3efd8a0d99649c3e697297
-+  __TEXT.__unwind_info: 0x860 sha256:8ab3e33e0135d637106af2cf825bf5b555a0127f3b704504df638adc67df2d12
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0x108 sha256:e8be06d6afb4a61515a2e50629b81d5301262418866b95692e6e3bba5a5bbcb8
-+  __DATA_CONST.__const: 0x108 sha256:9a58ff020b48ef9b9d40e05ec4e9d731abc3a0794dd4e53002de908e0e30a547
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x10 sha256:db089a9946ee2f440f1454b6bd081bc906524b106b3b9bd5745c567d00425fed
--  __DATA_CONST.__objc_selrefs: 0xe0 sha256:b6105dd228feb6b50c63b076648bdfbf6ec828ade211f432d25bbcced425aeef
-+  __DATA_CONST.__weak_got: 0x10 sha256:c9b00cf8e5fdc159d5e0657836ccec0cbd1eddc62a50f4b3c9f634c56153dbb7
-+  __DATA_CONST.__objc_selrefs: 0xe0 sha256:74b94abee4b39d8a38906bcd26cdc0ea27eb76b4f288bbe801ec8c5fabd6e7f0
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x340 sha256:8bc8062166eb4672db80802f46fea8ebbff5d3b68080d9a50fe77bc0ed0c3dca
--  __AUTH_CONST.__cfstring: 0xd80 sha256:6291235ccb708bef0e235a2a228279a50cc084eb325caa01912ec56de47d916c
--  __AUTH_CONST.__weak_auth_got: 0x10 sha256:eea02642beb18481e7c20f71accafc70bde0c2fbe6d247660b04514b5f07518f
-+  __AUTH_CONST.__const: 0x340 sha256:b9dd1b52e8b5400c1cb4d5d6dff8d063837371f7b334b667c6a34625277d49f7
-+  __AUTH_CONST.__cfstring: 0xd80 sha256:a3af86bdd63ed804a22599ad8ab0b7804577c28772cc7fdf4c39e42c7a5d52f5
-+  __AUTH_CONST.__weak_auth_got: 0x10 sha256:2f053c8f7ae2d3be9c474895041cbe7a14dbee64dce28f717cce8078e8bd92f8
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__data: 0xa82 sha256:7489b8384d2c7e4b9e32f6afc14cf6bfd32b88af2d8c896d618ba3fbe6f9f191
-+  __DATA.__bss: 0x20 sha256:66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925
-   __DATA_DIRTY.__bss: 0x48 sha256:834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/libamsupport.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  UUID: 9D0E5B87-D749-3E27-A885-F9CCDC3648F5
 -  Functions: 539
--  Symbols:   1814
--  CStrings:  1447
-+  UUID: AEBEF42C-7CBA-39B1-864F-823D6FDECF98
+-  Symbols:   765
+-  CStrings:  863
 +  Functions: 533
-+  Symbols:   1811
-+  CStrings:  1436
- 
++  Symbols:   785
++  CStrings:  855
 Symbols:
 + GCC_except_table102
 + GCC_except_table104
@@ -107,7 +80,6 @@ Symbols:
 + __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEE15__init_buf_ptrsB9nqe220106Ev
 + __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B9nqe220106Ej
 + __ZNSt3__116__pad_and_outputB9nqe220106IcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_
-+ __ZNSt3__116__pad_and_outputB9nqe220106IcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_.cold.1
 + __ZNSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B9nqe220106Ev
 + __ZNSt3__119__allocate_at_leastB9nqe220106INS_9allocatorINS_4pairIPK8__CFDataN16CentauriFirmware23CalibrationFileMetadataEEEEENS_16allocator_traitsIS9_EEEENS_19__allocation_resultINT0_7pointerENSD_9size_typeEEERT_m
 + __ZNSt3__119__allocate_at_leastB9nqe220106INS_9allocatorIPK10__CFStringEENS_16allocator_traitsIS5_EEEENS_19__allocation_resultINT0_7pointerENS9_9size_typeEEERT_m
@@ -230,15 +202,7 @@ Symbols:
 - GCC_except_table87
 - GCC_except_table94
 - GCC_except_table97
-- __ZN17CentauriTransport12pushFirmwareENSt3__110shared_ptrI12ACFUFirmwareEEPP9__CFError.cold.7
-- __ZN17CentauriTransport12pushFirmwareENSt3__110shared_ptrI12ACFUFirmwareEEPP9__CFError.cold.8
-- __ZN17CentauriTransport12pushFirmwareENSt3__110shared_ptrI12ACFUFirmwareEEPP9__CFError.cold.9
-- __ZN17CentauriTransport19createSecondaryFtabEPK8__CFDataP32CentauriControllerMemSwapRegionsPP9__CFError.cold.7
-- __ZN17CentauriTransport19createSecondaryFtabEPK8__CFDataP32CentauriControllerMemSwapRegionsPP9__CFError.cold.8
-- __ZN17CentauriTransport19createSecondaryFtabEPK8__CFDataP32CentauriControllerMemSwapRegionsPP9__CFError.cold.9
 - __ZN17CentauriTransport20destroySecondaryFtabEPh
-- __ZN17CentauriTransport20destroySecondaryFtabEPh.cold.1
-- __ZN17CentauriTransport20destroySecondaryFtabEPh.cold.2
 - __ZNKRSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEE3strB9nqe220100Ev
 - __ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4findB9nqe220100EPKcm
 - __ZNKSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEE4viewB9nqe220100Ev
@@ -259,7 +223,6 @@ Symbols:
 - __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEE15__init_buf_ptrsB9nqe220100Ev
 - __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B9nqe220100Ej
 - __ZNSt3__116__pad_and_outputB9nqe220100IcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_
-- __ZNSt3__116__pad_and_outputB9nqe220100IcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_.cold.1
 - __ZNSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B9nqe220100Ev
 - __ZNSt3__119__allocate_at_leastB9nqe220100INS_9allocatorINS_4pairIPK8__CFDataN16CentauriFirmware23CalibrationFileMetadataEEEEENS_16allocator_traitsIS9_EEEENS_19__allocation_resultINT0_7pointerENSD_9size_typeEEERT_m
 - __ZNSt3__119__allocate_at_leastB9nqe220100INS_9allocatorIPK10__CFStringEENS_16allocator_traitsIS5_EEEENS_19__allocation_resultINT0_7pointerENS9_9size_typeEEERT_m
@@ -366,5 +329,4 @@ CStrings:
 - "failed to re-map secondary memory for validation"
 - "remapBufferSize is too small"
 - "second boot stage modified secondary ftab header"
-
 ```

@@ -2,15 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/IMCore.framework/IMCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2fd190` | `0x2fd2ac` | **`+0x11c`** |
+
+### Other Changes
+
 ```diff
 
 -1491.100.1.2.23
--  __TEXT.__text: 0x2fd190
 +1491.100.1.2.25
-+  __TEXT.__text: 0x2fd2ac
-   __TEXT.__delay_stubs: 0x80
-   __TEXT.__delay_helper: 0x14c
-   __TEXT.__objc_methlist: 0x18e4c
 Functions:
 ~ sub_1bd24292c -> sub_1bd5f892c : 828 -> 836
 ~ sub_1bd25f920 -> sub_1bd615928 : 100 -> 104

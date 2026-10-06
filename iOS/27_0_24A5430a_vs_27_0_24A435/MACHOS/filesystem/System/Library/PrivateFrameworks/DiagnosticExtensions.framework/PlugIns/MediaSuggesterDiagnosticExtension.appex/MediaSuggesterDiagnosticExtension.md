@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/DiagnosticExtensions.framework/PlugIns/MediaSuggesterDiagnosticExtension.appex/MediaSuggesterDiagnosticExtension`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_1000046a0 : 12 -> 32

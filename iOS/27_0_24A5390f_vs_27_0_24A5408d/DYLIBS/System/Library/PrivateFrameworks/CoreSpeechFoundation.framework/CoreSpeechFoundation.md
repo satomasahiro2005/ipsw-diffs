@@ -2,81 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/CoreSpeechFoundation.framework/CoreSpeechFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcbbd4` | `0xcbf6c` | **`+0x398`** |
+| `__TEXT.__unwind_info` | `0x3c20` | `0x3e10` | **`+0x1f0`** |
+| `__TEXT.__cstring` | `0x1671a` | `0x16841` | **`+0x127`** |
+| `__TEXT.__oslogstring` | `0x11931` | `0x11a3e` | **`+0x10d`** |
+| `__AUTH_CONST.__objc_const` | `0x14dd0` | `0x14e50` | **`+0x80`** |
+| `__TEXT.__objc_methlist` | `0xd988` | `0xd9d8` | **`+0x50`** |
+| `__AUTH_CONST.__cfstring` | `0x9580` | `0x95c0` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x74d0` | `0x7500` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0x1ae0` | `0x1b00` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0xd90` | `0xd9c` | **`+0xc`** |
+| `__DATA.__bss` | `0x1580` | `0x1588` | **`+0x8`** |
+| `__DATA_DIRTY.__bss` | `0x608` | `0x610` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.70.32.0.0
--  __TEXT.__text: 0xcbbd4
--  __TEXT.__objc_methlist: 0xd988
 +3600.70.47.0.0
-+  __TEXT.__text: 0xcbf6c
-+  __TEXT.__objc_methlist: 0xd9d8
-   __TEXT.__const: 0xfe8
-   __TEXT.__dlopen_cstrs: 0x24a
-   __TEXT.__constg_swiftt: 0x2cc
-   __TEXT.__swift5_typeref: 0x1dc
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_types: 0x30
--  __TEXT.__cstring: 0x1671a
-+  __TEXT.__cstring: 0x16841
-   __TEXT.__swift5_reflstr: 0x278
-   __TEXT.__swift5_assocty: 0x78
-   __TEXT.__swift5_fieldmd: 0x250
-   __TEXT.__swift5_proto: 0x74
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__gcc_except_tab: 0x3cec
--  __TEXT.__oslogstring: 0x11931
--  __TEXT.__unwind_info: 0x3c20
-+  __TEXT.__oslogstring: 0x11a3e
-+  __TEXT.__unwind_info: 0x3e10
-   __TEXT.__eh_frame: 0x270
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_protolist: 0x220
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x18
--  __DATA_CONST.__objc_selrefs: 0x74d0
-+  __DATA_CONST.__objc_selrefs: 0x7500
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__objc_superrefs: 0x568
-   __DATA_CONST.__objc_arraydata: 0x1c8
-   __DATA_CONST.__got: 0x1038
--  __AUTH_CONST.__const: 0x1ae0
--  __AUTH_CONST.__cfstring: 0x9580
--  __AUTH_CONST.__objc_const: 0x14dd0
-+  __AUTH_CONST.__const: 0x1b00
-+  __AUTH_CONST.__cfstring: 0x95c0
-+  __AUTH_CONST.__objc_const: 0x14e50
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_dictobj: 0x1e0
-   __AUTH_CONST.__objc_intobj: 0x4b0
-
-   __AUTH_CONST.__objc_floatobj: 0x1a0
-   __AUTH_CONST.__auth_got: 0xfc0
-   __AUTH.__objc_data: 0x1c8
--  __DATA.__objc_ivar: 0xd90
-+  __DATA.__objc_ivar: 0xd9c
-   __DATA.__data: 0x1a00
--  __DATA.__bss: 0x1580
-+  __DATA.__bss: 0x1588
-   __DATA_DIRTY.__objc_data: 0x47c0
-   __DATA_DIRTY.__data: 0x2e8
--  __DATA_DIRTY.__bss: 0x608
-+  __DATA_DIRTY.__bss: 0x610
-   __DATA_DIRTY.__common: 0x70
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5236
--  Symbols:   12197
+-  Symbols:   9832
 -  CStrings:  3741
 +  Functions: 5244
-+  Symbols:   12215
++  Symbols:   9845
 +  CStrings:  3750
- 
 Symbols:
 + -[CSAudioRecordContext handoffInvocationTypeFromTriggerPhrase]
 + -[CSAudioRecordContext remoteDeviceInvocationType]
@@ -268,11 +223,6 @@ Symbols:
 + _OBJC_IVAR_$_CSAudioRecordContext._remoteDeviceInvocationType
 + _OBJC_IVAR_$_CSAudioStartStreamOption._originatingDeviceSupportsAlwaysListeningHeySiri
 + ___CSDeviceSupportsAlwaysListeningHeySiri_block_invoke
-+ _objc_msgSend$_localeSupportsMultiPhrase
-+ _objc_msgSend$remoteDeviceInvocationType
-+ _objc_msgSend$setOriginatingDeviceSupportsAlwaysListeningHeySiri:
-+ _objc_msgSend$setRemoteDeviceInvocationType:
-+ _objc_msgSend$supportsMphForLanguageCode:
 - GCC_except_table1341
 - GCC_except_table1370
 - GCC_except_table1448

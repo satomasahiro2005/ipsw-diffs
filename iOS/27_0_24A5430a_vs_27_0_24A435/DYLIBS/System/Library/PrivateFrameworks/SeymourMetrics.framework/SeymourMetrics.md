@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SeymourMetrics.framework/SeymourMetrics`
 
-```diff
+### Section Size Changes
 
- 2027.0.146.1.4
--  __TEXT.__text: 0x371f8
-+  __TEXT.__text: 0x37224
-   __TEXT.__objc_methlist: 0x204
-   __TEXT.__const: 0xd20
-   __TEXT.__constg_swiftt: 0x5d4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x371f8` | `0x37224` | **`+0x2c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_22375a29c -> sub_223f8a29c : 680 -> 684
 ~ sub_22375a544 -> sub_223f8a548 : 576 -> 580

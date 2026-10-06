@@ -2,14 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/Bom.framework/Bom`
 
-```diff
+### Section Size Changes
 
- 279.0.0.0.0
--  __TEXT.__text: 0x5b4ac
-+  __TEXT.__text: 0x5b4f0
-   __TEXT.__cstring: 0x129e3
-   __TEXT.__const: 0x1728
-   __TEXT.__oslogstring: 0x103e
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5b4ac` | `0x5b4f0` | **`+0x44`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
+```diff
 Functions:
 ~ __addArchInfoForFSObject : 392 -> 376
 ~ _BOMCopierDestinationEntryWriteFatHeader : 704 -> 712
@@ -17,4 +22,7 @@ Functions:
 ~ __ReadBlockTable : 340 -> 348
 ~ _BOMPKZipStoreQuarantinePath : 412 -> 416
 ~ __dense_addFreeRange : 252 -> 256
+CStrings:
++ "Aug  8 2026"
+- "Aug 10 2026"
 ```

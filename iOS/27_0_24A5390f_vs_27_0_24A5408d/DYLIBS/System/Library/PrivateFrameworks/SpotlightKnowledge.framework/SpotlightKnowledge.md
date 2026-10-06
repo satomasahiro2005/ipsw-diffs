@@ -2,98 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/SpotlightKnowledge.framework/SpotlightKnowledge`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x86ecc` | `0x8a404` | **`+0x3538`** |
+| `__DATA.__bss` | `0x26730` | `0x280b0` | **`+0x1980`** |
+| `__TEXT.__const` | `0x11a60` | `0x12540` | **`+0xae0`** |
+| `__AUTH_CONST.__const` | `0x88e8` | `0x8db0` | **`+0x4c8`** |
+| `__DATA.__data` | `0x3680` | `0x3890` | **`+0x210`** |
+| `__TEXT.__unwind_info` | `0x3530` | `0x3730` | **`+0x200`** |
+| `__TEXT.__swift5_typeref` | `0x33b0` | `0x3562` | **`+0x1b2`** |
+| `__TEXT.__swift5_fieldmd` | `0x30f8` | `0x328c` | **`+0x194`** |
+| `__TEXT.__constg_swiftt` | `0x2860` | `0x29c8` | **`+0x168`** |
+| `__TEXT.__eh_frame` | `0x33c0` | `0x34d8` | **`+0x118`** |
+| `__TEXT.__swift5_proto` | `0x132c` | `0x13f8` | **`+0xcc`** |
+| `__AUTH.__data` | `0x1658` | `0x16e8` | **`+0x90`** |
+| `__AUTH_CONST.__cfstring` | `0x4180` | `0x4120` | **`-0x60`** |
+| `__TEXT.__swift5_reflstr` | `0x1484` | `0x14e4` | **`+0x60`** |
+| `__TEXT.__swift5_assocty` | `0x3a8` | `0x3d8` | **`+0x30`** |
+| `__TEXT.__swift5_types` | `0x470` | `0x49c` | **`+0x2c`** |
+| `__TEXT.__swift5_builtin` | `0x50` | `0x3c` | **`-0x14`** |
+| `__DATA_CONST.__got` | `0x440` | `0x450` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0xd48` | `0xd58` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xba8` | `0xba0` | **`-0x8`** |
+| `__TEXT.__cstring` | `0x3187` | `0x318b` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2454.100.0.0.0
--  __TEXT.__text: 0x86ecc
 +2459.102.0.0.0
-+  __TEXT.__text: 0x8a404
-   __TEXT.__objc_methlist: 0xf8c
--  __TEXT.__const: 0x11a60
--  __TEXT.__cstring: 0x3187
-+  __TEXT.__const: 0x12540
-+  __TEXT.__cstring: 0x318b
-   __TEXT.__gcc_except_tab: 0x80
-   __TEXT.__oslogstring: 0x853
--  __TEXT.__swift5_typeref: 0x33b0
--  __TEXT.__constg_swiftt: 0x2860
--  __TEXT.__swift5_reflstr: 0x1484
--  __TEXT.__swift5_fieldmd: 0x30f8
--  __TEXT.__swift5_builtin: 0x50
-+  __TEXT.__swift5_typeref: 0x3562
-+  __TEXT.__constg_swiftt: 0x29c8
-+  __TEXT.__swift5_reflstr: 0x14e4
-+  __TEXT.__swift5_fieldmd: 0x328c
-+  __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_capture: 0x160
--  __TEXT.__swift5_proto: 0x132c
--  __TEXT.__swift5_types: 0x470
-+  __TEXT.__swift5_proto: 0x13f8
-+  __TEXT.__swift5_types: 0x49c
-   __TEXT.__swift_as_entry: 0x1c
-   __TEXT.__swift_as_ret: 0x1c
-   __TEXT.__swift_as_cont: 0x28
--  __TEXT.__swift5_assocty: 0x3a8
-+  __TEXT.__swift5_assocty: 0x3d8
-   __TEXT.__swift5_mpenum: 0x14
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0x3530
--  __TEXT.__eh_frame: 0x33c0
-+  __TEXT.__unwind_info: 0x3730
-+  __TEXT.__eh_frame: 0x34d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x60
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xd48
-+  __DATA_CONST.__objc_selrefs: 0xd58
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x38
-   __DATA_CONST.__objc_arraydata: 0x510
--  __DATA_CONST.__got: 0x440
--  __AUTH_CONST.__const: 0x88e8
--  __AUTH_CONST.__cfstring: 0x4180
-+  __DATA_CONST.__got: 0x450
-+  __AUTH_CONST.__const: 0x8db0
-+  __AUTH_CONST.__cfstring: 0x4120
-   __AUTH_CONST.__objc_const: 0x1510
-   __AUTH_CONST.__objc_intobj: 0x48
-   __AUTH_CONST.__objc_arrayobj: 0x1e0
--  __AUTH_CONST.__auth_got: 0xba8
-+  __AUTH_CONST.__auth_got: 0xba0
-   __AUTH.__objc_data: 0x200
--  __AUTH.__data: 0x1658
-+  __AUTH.__data: 0x16e8
-   __DATA.__objc_ivar: 0x108
--  __DATA.__data: 0x3680
--  __DATA.__bss: 0x26730
-+  __DATA.__data: 0x3890
-+  __DATA.__bss: 0x280b0
-   __DATA_DIRTY.__objc_data: 0x140
-   __DATA_DIRTY.__data: 0x8
-   __DATA_DIRTY.__bss: 0xb8
-
-   - /System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers
 +  - /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
-   - /System/Library/PrivateFrameworks/MetadataUtilities.framework/MetadataUtilities
-   - /System/Library/PrivateFrameworks/SpotlightEmbedding.framework/SpotlightEmbedding
-   - /System/Library/PrivateFrameworks/SpotlightLinguistics.framework/SpotlightLinguistics
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 5218
--  Symbols:   2729
+-  Symbols:   2459
 -  CStrings:  764
 +  Functions: 5389
-+  Symbols:   2782
++  Symbols:   2510
 +  CStrings:  763
- 
 Symbols:
 + -[SKGSystemListener isSiriPQAEnabled]
 + _OBJC_CLASS_$_AFPreferences
@@ -129,8 +78,6 @@ Symbols:
 + _associated conformance 18SpotlightKnowledge14UpdaterCommandO36ResetPipelineDeadReckoningCodingKeys33_D18E50E6EBB5AE12A47FA0D537BB42B3LLOs0I3KeyAAs28CustomDebugStringConvertible
 + _dlopen
 + _kCFPreferencesAnyHost
-+ _objc_msgSend$appleIntelligenceFallbackEnabled
-+ _objc_msgSend$sharedPreferences
 + _symbolic Say_____G 18SpotlightKnowledge14UpdaterCommandO26FetchPipelineDeadReckoningV3RowV
 + _symbolic _____ 18SpotlightKnowledge14UpdaterCommandO26FetchPipelineDeadReckoningV
 + _symbolic _____ 18SpotlightKnowledge14UpdaterCommandO26FetchPipelineDeadReckoningV10CodingKeys33_D18E50E6EBB5AE12A47FA0D537BB42B3LLO

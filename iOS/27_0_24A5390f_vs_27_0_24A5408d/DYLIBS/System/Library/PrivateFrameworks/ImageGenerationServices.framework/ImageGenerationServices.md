@@ -2,109 +2,59 @@
 
 > `/System/Library/PrivateFrameworks/ImageGenerationServices.framework/ImageGenerationServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8ed84` | `0x91b08` | **`+0x2d84`** |
+| `__DATA.__bss` | `0x5980` | `0x6810` | **`+0xe90`** |
+| `__AUTH_CONST.__const` | `0x4640` | `0x4ff8` | **`+0x9b8`** |
+| `__TEXT.__const` | `0x64d5` | `0x6ded` | **`+0x918`** |
+| `__TEXT.__eh_frame` | `0x40c0` | `0x3a38` | **`-0x688`** |
+| `__TEXT.__cstring` | `0x7a62` | `0x7f62` | **`+0x500`** |
+| `__TEXT.__swift5_reflstr` | `0x1615` | `0x1ac5` | **`+0x4b0`** |
+| `__TEXT.__swift5_fieldmd` | `0x15d8` | `0x1950` | **`+0x378`** |
+| `__AUTH_CONST.__objc_const` | `0x990` | `0xb88` | **`+0x1f8`** |
+| `__DATA.__data` | `0x990` | `0xb70` | **`+0x1e0`** |
+| `__TEXT.__swift5_typeref` | `0x16e2` | `0x1894` | **`+0x1b2`** |
+| `__TEXT.__constg_swiftt` | `0x1008` | `0x11a0` | **`+0x198`** |
+| `__AUTH.__data` | `0x1b0` | `0x310` | **`+0x160`** |
+| `__AUTH_CONST.__auth_got` | `0x1718` | `0x1810` | **`+0xf8`** |
+| `__TEXT.__unwind_info` | `0x2098` | `0x2190` | **`+0xf8`** |
+| `__TEXT.__swift5_assocty` | `0x240` | `0x2e8` | **`+0xa8`** |
+| `__TEXT.__swift5_capture` | `0x2a8` | `0x344` | **`+0x9c`** |
+| `__DATA_DIRTY.__bss` | `0x1280` | `0x1200` | **`-0x80`** |
+| `__TEXT.__swift_as_cont` | `0x2e8` | `0x268` | **`-0x80`** |
+| `__TEXT.__swift5_proto` | `0x37c` | `0x3ec` | **`+0x70`** |
+| `__DATA_CONST.__got` | `0x870` | `0x8d0` | **`+0x60`** |
+| `__DATA_DIRTY.__data` | `0x1938` | `0x18d8` | **`-0x60`** |
+| `__DATA_CONST.__objc_selrefs` | `0x158` | `0x1a8` | **`+0x50`** |
+| `__TEXT.__oslogstring` | `0x18d2` | `0x1892` | **`-0x40`** |
+| `__TEXT.__swift_as_ret` | `0x188` | `0x150` | **`-0x38`** |
+| `__TEXT.__swift5_types` | `0x190` | `0x1c0` | **`+0x30`** |
+| `__TEXT.__swift_as_entry` | `0x110` | `0xf0` | **`-0x20`** |
+| `__DATA_DIRTY.__common` | `0x50` | `0x38` | **`-0x18`** |
+| `__TEXT.__swift5_builtin` | `0xf0` | `0xdc` | **`-0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x50` | `0x60` | **`+0x10`** |
+| `__DATA.__common` | `0x50` | `0x48` | **`-0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x20` | `0x18` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -194.1.0.0.0
--  __TEXT.__text: 0x8ed84
--  __TEXT.__const: 0x64d5
 +198.1.0.0.0
-+  __TEXT.__text: 0x91b08
-+  __TEXT.__const: 0x6ded
-   __TEXT.__gcc_except_tab: 0x7b4
--  __TEXT.__cstring: 0x7a62
--  __TEXT.__constg_swiftt: 0x1008
--  __TEXT.__swift5_typeref: 0x16e2
--  __TEXT.__swift5_builtin: 0xf0
--  __TEXT.__swift5_reflstr: 0x1615
--  __TEXT.__swift5_fieldmd: 0x15d8
--  __TEXT.__swift5_assocty: 0x240
--  __TEXT.__swift5_capture: 0x2a8
--  __TEXT.__oslogstring: 0x18d2
--  __TEXT.__swift5_proto: 0x37c
--  __TEXT.__swift5_types: 0x190
--  __TEXT.__swift_as_entry: 0x110
--  __TEXT.__swift_as_ret: 0x188
--  __TEXT.__swift_as_cont: 0x2e8
-+  __TEXT.__cstring: 0x7f62
-+  __TEXT.__constg_swiftt: 0x11a0
-+  __TEXT.__swift5_typeref: 0x1894
-+  __TEXT.__swift5_builtin: 0xdc
-+  __TEXT.__swift5_reflstr: 0x1ac5
-+  __TEXT.__swift5_fieldmd: 0x1950
-+  __TEXT.__swift5_assocty: 0x2e8
-+  __TEXT.__swift5_capture: 0x344
-+  __TEXT.__oslogstring: 0x1892
-+  __TEXT.__swift5_proto: 0x3ec
-+  __TEXT.__swift5_types: 0x1c0
-+  __TEXT.__swift_as_entry: 0xf0
-+  __TEXT.__swift_as_ret: 0x150
-+  __TEXT.__swift_as_cont: 0x268
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__unwind_info: 0x2098
--  __TEXT.__eh_frame: 0x40c0
-+  __TEXT.__swift5_mpenum: 0x18
-+  __TEXT.__unwind_info: 0x2190
-+  __TEXT.__eh_frame: 0x3a38
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x108
--  __DATA_CONST.__objc_classlist: 0x50
-+  __DATA_CONST.__objc_classlist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x158
--  __DATA_CONST.__got: 0x870
--  __AUTH_CONST.__const: 0x4640
--  __AUTH_CONST.__objc_const: 0x990
-+  __DATA_CONST.__objc_selrefs: 0x1a8
-+  __DATA_CONST.__got: 0x8d0
-+  __AUTH_CONST.__const: 0x4ff8
-+  __AUTH_CONST.__objc_const: 0xb88
-   __AUTH_CONST.__weak_auth_got: 0x40
--  __AUTH_CONST.__auth_got: 0x1718
--  __AUTH.__data: 0x1b0
--  __DATA.__data: 0x990
--  __DATA.__bss: 0x5980
--  __DATA.__common: 0x50
-+  __AUTH_CONST.__auth_got: 0x1810
-+  __AUTH.__data: 0x310
-+  __DATA.__data: 0xb70
-+  __DATA.__bss: 0x6810
-+  __DATA.__common: 0x48
-   __DATA_DIRTY.__objc_data: 0xf0
--  __DATA_DIRTY.__data: 0x1938
--  __DATA_DIRTY.__bss: 0x1280
--  __DATA_DIRTY.__common: 0x50
-+  __DATA_DIRTY.__data: 0x18d8
-+  __DATA_DIRTY.__bss: 0x1200
-+  __DATA_DIRTY.__common: 0x38
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreImage.framework/CoreImage
 
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/Frameworks/VideoToolbox.framework/VideoToolbox
-   - /System/Library/Frameworks/Vision.framework/Vision
 +  - /System/Library/PrivateFrameworks/CoreEmoji.framework/CoreEmoji
 +  - /System/Library/PrivateFrameworks/EmojiFoundation.framework/EmojiFoundation
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/GenerativeFunctions.framework/GenerativeFunctions
-   - /System/Library/PrivateFrameworks/GenerativeFunctionsFoundation.framework/GenerativeFunctionsFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2486
--  Symbols:   1501
+-  Symbols:   1458
 -  CStrings:  351
 +  Functions: 2655
-+  Symbols:   1584
++  Symbols:   1531
 +  CStrings:  389
- 
 Symbols:
 + _CEMCreateEmojiLocaleData
 + _CEMEmojiTokenCopyGenmojiDescription
@@ -142,16 +92,6 @@ Symbols:
 + _associated conformance 23ImageGenerationServices21EmojiPromptDescriptorV10CodingKeysOs0G3KeyAAs28CustomDebugStringConvertible
 + _associated conformance 23ImageGenerationServices21EmojiPromptDescriptorV5StyleOSHAASQ
 + _associated conformance 23ImageGenerationServices21EmojiPromptDescriptorVSHAASQ
-+ _objc_msgSend$boolValue
-+ _objc_msgSend$emojiLocaleDataWithLocaleIdentifier:
-+ _objc_msgSend$emojiTokenRef
-+ _objc_msgSend$emojiTokenWithString:localeData:
-+ _objc_msgSend$initWithString:
-+ _objc_msgSend$insertString:atIndex:
-+ _objc_msgSend$nameForType:
-+ _objc_msgSend$prewarmDictionariesForCandidateLanguages:preferredLanguages:waitUntilLoaded:
-+ _objc_msgSend$replaceCharactersInRange:withString:
-+ _objc_msgSend$substringWithRange:
 + _objc_retain_x26
 + _swift_dynamicCastObjCClass
 + _swift_getKeyPath

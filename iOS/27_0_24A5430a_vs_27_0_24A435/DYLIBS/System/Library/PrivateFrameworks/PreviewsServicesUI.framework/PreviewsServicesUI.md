@@ -2,12 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/PreviewsServicesUI.framework/PreviewsServicesUI`
 
-```diff
+### Section Size Changes
 
- 24.0.45.1.0
--  __TEXT.__text: 0x1bf1c
-+  __TEXT.__text: 0x1bf40
-   __TEXT.__objc_methlist: 0x7fc
-   __TEXT.__const: 0x1f78
-   __TEXT.__cstring: 0x86f
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1bf1c` | `0x1bf40` | **`+0x24`** |

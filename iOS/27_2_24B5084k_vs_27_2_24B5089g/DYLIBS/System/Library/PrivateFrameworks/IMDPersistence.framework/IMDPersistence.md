@@ -2,87 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/IMDPersistence.framework/IMDPersistence`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2ffef4` | `0x300800` | **`+0x90c`** |
+| `__DATA.__bss` | `0x6768` | `0x64e8` | **`-0x280`** |
+| `__DATA_DIRTY.__bss` | `0x2780` | `0x2a00` | **`+0x280`** |
+| `__DATA_DIRTY.__data` | `0x62b0` | `0x6500` | **`+0x250`** |
+| `__TEXT.__oslogstring` | `0x3c174` | `0x3c3c4` | **`+0x250`** |
+| `__TEXT.__cstring` | `0x5d9d4` | `0x5db34` | **`+0x160`** |
+| `__AUTH.__data` | `0x1df8` | `0x1cb0` | **`-0x148`** |
+| `__AUTH_CONST.__cfstring` | `0x130c0` | `0x131c0` | **`+0x100`** |
+| `__DATA.__data` | `0x3b40` | `0x3a70` | **`-0xd0`** |
+| `__AUTH.__objc_data` | `0x1038` | `0xfc0` | **`-0x78`** |
+| `__DATA_DIRTY.__objc_data` | `0x3040` | `0x30b8` | **`+0x78`** |
+| `__TEXT.__gcc_except_tab` | `0xc710` | `0xc764` | **`+0x54`** |
+| `__DATA_CONST.__const` | `0x6500` | `0x6528` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0xe248` | `0xe268` | **`+0x20`** |
+| `__DATA.__common` | `0x288` | `0x270` | **`-0x18`** |
+| `__DATA_DIRTY.__common` | `0x100` | `0x118` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0xa48c` | `0xa49c` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0xa320` | `0xa330` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6b68` | `0x6b70` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1491.200.63.2.1
--  __TEXT.__text: 0x2f1f54
--  __TEXT.__objc_methlist: 0xa48c
 +1491.200.73.0.0
-+  __TEXT.__text: 0x2f28b4
-+  __TEXT.__objc_methlist: 0xa49c
-   __TEXT.__const: 0xc3d0
--  __TEXT.__cstring: 0x5d9d4
--  __TEXT.__oslogstring: 0x3c174
--  __TEXT.__gcc_except_tab: 0xc710
-+  __TEXT.__cstring: 0x5db34
-+  __TEXT.__oslogstring: 0x3c3c4
-+  __TEXT.__gcc_except_tab: 0xc764
-   __TEXT.__ustring: 0x434
-   __TEXT.__dlopen_cstrs: 0x30a
-   __TEXT.__swift5_typeref: 0x5256
 
-   __TEXT.__swift_as_cont: 0x398
-   __TEXT.__swift5_mpenum: 0x44
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0xd5e0
-+  __TEXT.__unwind_info: 0xd5f8
-   __TEXT.__eh_frame: 0x9d24
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x6500
-+  __DATA_CONST.__const: 0x6528
-   __DATA_CONST.__objc_classlist: 0x6e8
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x308
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6b68
-+  __DATA_CONST.__objc_selrefs: 0x6b70
-   __DATA_CONST.__objc_protorefs: 0x140
-   __DATA_CONST.__objc_superrefs: 0x230
-   __DATA_CONST.__objc_arraydata: 0x2c0
-   __DATA_CONST.__got: 0x1c30
--  __AUTH_CONST.__const: 0xe248
--  __AUTH_CONST.__cfstring: 0x130c0
-+  __AUTH_CONST.__const: 0xe268
-+  __AUTH_CONST.__cfstring: 0x131c0
-   __AUTH_CONST.__objc_const: 0x13b20
-   __AUTH_CONST.__objc_intobj: 0x168
-   __AUTH_CONST.__objc_arrayobj: 0xa8
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__auth_got: 0x29f8
--  __AUTH.__objc_data: 0x1038
--  __AUTH.__data: 0x1df8
-+  __AUTH.__objc_data: 0xfc0
-+  __AUTH.__data: 0x1cb0
-   __DATA.__objc_ivar: 0x568
--  __DATA.__data: 0x3b40
--  __DATA.__common: 0x288
--  __DATA_DIRTY.__objc_data: 0x3040
--  __DATA_DIRTY.__data: 0x62b0
--  __DATA_DIRTY.__bss: 0x2780
--  __DATA_DIRTY.__common: 0x100
-+  __DATA.__data: 0x3a70
-+  __DATA.__common: 0x270
-+  __DATA_DIRTY.__objc_data: 0x30b8
-+  __DATA_DIRTY.__data: 0x6500
-+  __DATA_DIRTY.__bss: 0x2a00
-+  __DATA_DIRTY.__common: 0x118
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 13781
 +  Functions: 13788
-   Symbols:   2852
+
 -  CStrings:  7534
 +  CStrings:  7546
- 
 CStrings:
 + "Alert watermark dated in the future: %@"
 + "BOOL __IMDDatabasePerformOneMigration(int, CSDBSqliteDatabase *, CSDBSqliteConnection *, int, int *, NSError *__autoreleasing *, __strong MigratorBlock)"

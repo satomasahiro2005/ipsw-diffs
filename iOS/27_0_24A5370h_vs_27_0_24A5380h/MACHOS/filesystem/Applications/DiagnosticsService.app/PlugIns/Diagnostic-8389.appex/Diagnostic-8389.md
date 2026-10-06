@@ -2,21 +2,22 @@
 
 > `/Applications/DiagnosticsService.app/PlugIns/Diagnostic-8389.appex/Diagnostic-8389`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x228` | `0x230` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__swift5_typeref`
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__objc_intobj: 0x48
-   __DATA_CONST.__auth_got: 0x7c0
--  __DATA_CONST.__got: 0x228
-+  __DATA_CONST.__got: 0x230
-   __DATA_CONST.__auth_ptr: 0x198
-   __DATA.__objc_const: 0xbf0
-   __DATA.__objc_selrefs: 0x4e8
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __DATA.__bss : content changed
-~ __DATA.__common : content changed
-
+-1369.0.0.0.0
++1374.0.5.0.0
 ```

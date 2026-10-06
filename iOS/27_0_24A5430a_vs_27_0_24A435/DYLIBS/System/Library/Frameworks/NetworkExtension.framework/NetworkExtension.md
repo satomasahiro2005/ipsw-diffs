@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/NetworkExtension.framework/NetworkExtension`
 
-```diff
+### Section Size Changes
 
- 2340.0.0.0.4
--  __TEXT.__text: 0x2100e4
-+  __TEXT.__text: 0x2100d4
-   __TEXT.__objc_methlist: 0xf4d8
-   __TEXT.__const: 0x36a4
-   __TEXT.__swift5_typeref: 0xdda
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2100e4` | `0x2100d4` | **`-0x10`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ ___NEPFKeyOpen_block_invoke_2 : 1960 -> 1964
 ~ -[NEIKEv2SecurityContextCBCPlusHMAC constructEncryptedPacketFromConstructor:plaintextLength:authenticatedHeaders:] : 1068 -> 1052

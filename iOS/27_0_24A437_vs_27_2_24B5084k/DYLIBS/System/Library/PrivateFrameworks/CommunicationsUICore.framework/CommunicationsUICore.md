@@ -2,141 +2,73 @@
 
 > `/System/Library/PrivateFrameworks/CommunicationsUICore.framework/CommunicationsUICore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xdf6ac` | `0x1175a8` | **`+0x37efc`** |
+| `__TEXT.__swift5_typeref` | `0x3f52` | `0x6092` | **`+0x2140`** |
+| `__TEXT.__const` | `0x8004` | `0x9f14` | **`+0x1f10`** |
+| `__AUTH_CONST.__const` | `0x5438` | `0x6f60` | **`+0x1b28`** |
+| `__TEXT.__eh_frame` | `0x3a58` | `0x5298` | **`+0x1840`** |
+| `__DATA.__bss` | `0x5a60` | `0x7200` | **`+0x17a0`** |
+| `__TEXT.__oslogstring` | `0x4dd1` | `0x6436` | **`+0x1665`** |
+| `__AUTH_CONST.__objc_const` | `0x14768` | `0x15d38` | **`+0x15d0`** |
+| `__TEXT.__unwind_info` | `0x2dc0` | `0x39c0` | **`+0xc00`** |
+| `__AUTH.__data` | `0x158` | `0xce0` | **`+0xb88`** |
+| `__TEXT.__constg_swiftt` | `0x30f8` | `0x3a8c` | **`+0x994`** |
+| `__TEXT.__swift5_reflstr` | `0x26c5` | `0x3015` | **`+0x950`** |
+| `__TEXT.__swift5_fieldmd` | `0x2864` | `0x3138` | **`+0x8d4`** |
+| `__DATA.__data` | `0x1db8` | `0x2618` | **`+0x860`** |
+| `__TEXT.__cstring` | `0x20d1` | `0x28ad` | **`+0x7dc`** |
+| `__TEXT.__swift5_capture` | `0xffc` | `0x1604` | **`+0x608`** |
+| `__AUTH_CONST.__auth_got` | `0x14f0` | `0x1980` | **`+0x490`** |
+| `__DATA_CONST.__got` | `0xa38` | `0xe70` | **`+0x438`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1568` | `0x1720` | **`+0x1b8`** |
+| `__AUTH.__objc_data` | `0x480` | `0x5e0` | **`+0x160`** |
+| `__TEXT.__swift5_assocty` | `0x1e0` | `0x330` | **`+0x150`** |
+| `__TEXT.__swift_as_cont` | `0x1b4` | `0x2b8` | **`+0x104`** |
+| `__TEXT.__swift5_proto` | `0x40c` | `0x4d8` | **`+0xcc`** |
+| `__TEXT.__swift5_types` | `0x2b0` | `0x350` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x4c0` | `0x558` | **`+0x98`** |
+| `__TEXT.__swift_as_entry` | `0x124` | `0x184` | **`+0x60`** |
+| `__TEXT.__objc_methlist` | `0x155c` | `0x15b8` | **`+0x5c`** |
+| `__DATA_CONST.__objc_classlist` | `0x230` | `0x278` | **`+0x48`** |
+| `__TEXT.__swift_as_ret` | `0xfc` | `0x140` | **`+0x44`** |
+| `__DATA.__common` | `0x20` | `0x58` | **`+0x38`** |
+| `__TEXT.__swift5_protos` | `0x84` | `0x98` | **`+0x14`** |
+| `__DATA_CONST.__objc_catlist` | `—` | `0x8` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0xe0` | `0xe8` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x70` | `0x78` | **`+0x8`** |
+| `__DATA_DIRTY.__objc_data` | `0x1118` | `0x1120` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -153.100.1.2.29
--  __TEXT.__text: 0xd8520
--  __TEXT.__objc_methlist: 0x155c
--  __TEXT.__const: 0x8004
--  __TEXT.__swift5_typeref: 0x3f52
--  __TEXT.__cstring: 0x20d1
--  __TEXT.__swift5_capture: 0xffc
--  __TEXT.__oslogstring: 0x4dd1
--  __TEXT.__swift5_fieldmd: 0x2864
--  __TEXT.__constg_swiftt: 0x30f8
--  __TEXT.__swift5_reflstr: 0x26c5
 +156.200.70.2.2
-+  __TEXT.__text: 0x10e4ec
-+  __TEXT.__objc_methlist: 0x15b8
-+  __TEXT.__const: 0x9f14
-+  __TEXT.__swift5_typeref: 0x6092
-+  __TEXT.__cstring: 0x28ad
-+  __TEXT.__swift5_capture: 0x1604
-+  __TEXT.__oslogstring: 0x6436
-+  __TEXT.__swift5_fieldmd: 0x3138
-+  __TEXT.__constg_swiftt: 0x3a8c
-+  __TEXT.__swift5_reflstr: 0x3015
-   __TEXT.__swift5_builtin: 0x118
--  __TEXT.__swift5_assocty: 0x1e0
--  __TEXT.__swift5_protos: 0x84
--  __TEXT.__swift5_proto: 0x40c
--  __TEXT.__swift5_types: 0x2b0
--  __TEXT.__swift_as_entry: 0x124
--  __TEXT.__swift_as_ret: 0xfc
--  __TEXT.__swift_as_cont: 0x1b4
-+  __TEXT.__swift5_assocty: 0x330
-+  __TEXT.__swift5_protos: 0x98
-+  __TEXT.__swift5_proto: 0x4d8
-+  __TEXT.__swift5_types: 0x350
-+  __TEXT.__swift_as_entry: 0x184
-+  __TEXT.__swift_as_ret: 0x140
-+  __TEXT.__swift_as_cont: 0x2b8
-   __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__unwind_info: 0x3990
--  __TEXT.__eh_frame: 0x3a58
-+  __TEXT.__unwind_info: 0x47f0
-+  __TEXT.__eh_frame: 0x5298
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4c0
--  __DATA_CONST.__objc_classlist: 0x230
--  __DATA_CONST.__objc_protolist: 0xe0
-+  __DATA_CONST.__const: 0x558
-+  __DATA_CONST.__objc_classlist: 0x278
-+  __DATA_CONST.__objc_catlist: 0x8
-+  __DATA_CONST.__objc_protolist: 0xe8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1568
--  __DATA_CONST.__objc_protorefs: 0x70
--  __DATA_CONST.__got: 0xa38
--  __AUTH_CONST.__const: 0x5438
--  __AUTH_CONST.__objc_const: 0x14768
--  __AUTH_CONST.__auth_got: 0x14f0
--  __AUTH.__objc_data: 0x480
--  __AUTH.__data: 0x158
--  __DATA.__data: 0x1db8
--  __DATA.__common: 0x20
--  __DATA_DIRTY.__objc_data: 0x1118
-+  __DATA_CONST.__objc_selrefs: 0x1720
-+  __DATA_CONST.__objc_protorefs: 0x78
-+  __DATA_CONST.__got: 0xe70
-+  __AUTH_CONST.__const: 0x6f60
-+  __AUTH_CONST.__objc_const: 0x15d38
-+  __AUTH_CONST.__auth_got: 0x1980
-+  __AUTH.__objc_data: 0x5e0
-+  __AUTH.__data: 0xce0
-+  __DATA.__data: 0x2618
-+  __DATA.__common: 0x58
-+  __DATA_DIRTY.__objc_data: 0x1120
-   __DATA_DIRTY.__data: 0x4338
-   __DATA_DIRTY.__common: 0xd0
-   __DATA_DIRTY.__bss: 0x1800
 
-   - /System/Library/Frameworks/Translation.framework/Translation
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/PrivateFrameworks/AVConference.framework/AVConference
 +  - /System/Library/PrivateFrameworks/AXCoreUtilities.framework/AXCoreUtilities
-   - /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
-   - /System/Library/PrivateFrameworks/AsyncAlgorithmsInternal.framework/AsyncAlgorithmsInternal
-   - /System/Library/PrivateFrameworks/AudioAccessoryAssetManagement.framework/AudioAccessoryAssetManagement
 
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/FindMyDevice.framework/FindMyDevice
-   - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
 +  - /System/Library/PrivateFrameworks/IMCore.framework/IMCore
 +  - /System/Library/PrivateFrameworks/IMFoundation.framework/IMFoundation
 +  - /System/Library/PrivateFrameworks/IMSharedUtilities.framework/IMSharedUtilities
-   - /System/Library/PrivateFrameworks/RTTUtilities.framework/RTTUtilities
-   - /System/Library/PrivateFrameworks/SetupAssistant.framework/SetupAssistant
-   - /System/Library/PrivateFrameworks/SiriTTSService.framework/SiriTTSService
 
-   - /System/Library/PrivateFrameworks/TCC.framework/TCC
-   - /System/Library/PrivateFrameworks/TelephonyUI.framework/TelephonyUI
-   - /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities
 +  - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
 +  - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
-+  - /usr/lib/swift/libswiftAppleArchive.dylib
-   - /usr/lib/swift/libswiftCallKit.dylib
-   - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
 
-   - /usr/lib/swift/libswiftIntents.dylib
-   - /usr/lib/swift/libswiftMLCompute.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
++  - /usr/lib/swift/libswiftAppleArchive.dylib
+
 +  - /usr/lib/swift/libswiftMetalKit.dylib
 +  - /usr/lib/swift/libswiftModelIO.dylib
-   - /usr/lib/swift/libswiftNaturalLanguage.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4348
--  Symbols:   2073
+-  Symbols:   1735
 -  CStrings:  559
 +  Functions: 5368
-+  Symbols:   2482
++  Symbols:   2088
 +  CStrings:  688
- 
 Symbols:
 + _AXLiveCaptionsGetBackgroundColor
 + _AXLiveCaptionsGetFontFamily
@@ -276,62 +208,6 @@ Symbols:
 + _kAXSLiveTranscriptionFontFamilyDidChangeNotification
 + _kAXSLiveTranscriptionTextColorDidChangeNotification
 + _kFZListenerCapAccounts
-+ _objc_msgSend$addListenerID:capabilities:
-+ _objc_msgSend$allowHandlesForNicknameSharing:forChat:fromHandle:forceSend:
-+ _objc_msgSend$beginBatchQueryWithDestinations:services:
-+ _objc_msgSend$boolForKey:
-+ _objc_msgSend$bundleIdentifier
-+ _objc_msgSend$clearPendingNicknameUpdatesForHandle:
-+ _objc_msgSend$currentNicknameForHandleIDs:
-+ _objc_msgSend$denyHandlesForNicknameSharing:
-+ _objc_msgSend$executeSaveRequest:error:
-+ _objc_msgSend$fetchPersonalNicknameWithCompletion:
-+ _objc_msgSend$firstName
-+ _objc_msgSend$fontDescriptorWithDesign:
-+ _objc_msgSend$fontWithDescriptor:size:
-+ _objc_msgSend$getInstalledVRSProvidersWithCompletion:
-+ _objc_msgSend$handle
-+ _objc_msgSend$handleIsAllowedForSharing:
-+ _objc_msgSend$handleIsDeniedForSharing:
-+ _objc_msgSend$hasListenerForID:
-+ _objc_msgSend$iMessageService
-+ _objc_msgSend$iconImageData
-+ _objc_msgSend$imHandleWithID:
-+ _objc_msgSend$initWithBundleIdentifier:localizedName:supportsLiveCommunication:iconImageData:
-+ _objc_msgSend$integerValue
-+ _objc_msgSend$isEquivalentToHandle:
-+ _objc_msgSend$isGroupDualCaptureAvailable
-+ _objc_msgSend$isNameAndPhotoAvailableForDestination:
-+ _objc_msgSend$isOneToOneModeEnabled
-+ _objc_msgSend$isiMessageAvailableForAnyDestinationInDestinations:
-+ _objc_msgSend$lastName
-+ _objc_msgSend$linkAssociation
-+ _objc_msgSend$localizedStringFromPersonNameComponents:style:options:
-+ _objc_msgSend$multiplePhoneNumbersTiedToAppleID
-+ _objc_msgSend$mutableCopy
-+ _objc_msgSend$nicknameUpdateForHandle:nicknameIfAvailable:
-+ _objc_msgSend$pendingNicknameForHandleIDs:
-+ _objc_msgSend$personalNickname
-+ _objc_msgSend$pointSize
-+ _objc_msgSend$preferredFontDescriptorWithTextStyle:compatibleWithTraitCollection:
-+ _objc_msgSend$preferredFontForTextStyle:compatibleWithTraitCollection:
-+ _objc_msgSend$remoteMembers
-+ _objc_msgSend$sendNameOnlyToHandleIDs:fromHandleID:
-+ _objc_msgSend$sendPersonalNicknameToHandleID:fromHandleID:
-+ _objc_msgSend$setFamilyName:
-+ _objc_msgSend$setGivenName:
-+ _objc_msgSend$setPersonalNickname:
-+ _objc_msgSend$setPrimaryCameraUID:secondaryCameraUID:useSquareAspectRatio:isUserPreferred:completionHandler:
-+ _objc_msgSend$setSharingEnabled:
-+ _objc_msgSend$setValue:forKey:
-+ _objc_msgSend$sharedController
-+ _objc_msgSend$sharedManager
-+ _objc_msgSend$sharingEnabled
-+ _objc_msgSend$standardUserDefaults
-+ _objc_msgSend$systemPurpleColor
-+ _objc_msgSend$traitCollectionWithPreferredContentSizeCategory:
-+ _objc_msgSend$updateContact:
-+ _objc_msgSend$valueForKey:
 + _swift_getAtKeyPath
 + _swift_release_x3
 + _swift_task_immediate

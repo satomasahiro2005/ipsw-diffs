@@ -2,88 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd5eb08` | `0xd91e24` | **`+0x3331c`** |
+| `__AUTH_CONST.__objc_const` | `0x179c20` | `0x17da90` | **`+0x3e70`** |
+| `__TEXT.__objc_methlist` | `0x107c6c` | `0x10ad94` | **`+0x3128`** |
+| `__TEXT.__cstring` | `0x94176` | `0x95c1d` | **`+0x1aa7`** |
+| `__AUTH_CONST.__const` | `0x245e9` | `0x25be9` | **`+0x1600`** |
+| `__AUTH_CONST.__cfstring` | `0x7f220` | `0x80460` | **`+0x1240`** |
+| `__DATA_CONST.__objc_selrefs` | `0x420d0` | `0x42ed0` | **`+0xe00`** |
+| `__AUTH.__objc_data` | `0x290e0` | `0x29db0` | **`+0xcd0`** |
+| `__TEXT.__unwind_info` | `0x336d0` | `0x32f68` | **`-0x768`** |
+| `__TEXT.__eh_frame` | `0x47f8` | `0x4db8` | **`+0x5c0`** |
+| `__DATA_CONST.__const` | `0x3d3f8` | `0x3d8d0` | **`+0x4d8`** |
+| `__TEXT.__const` | `0x17714` | `0x17bc4` | **`+0x4b0`** |
+| `__DATA.__bss` | `0x1f500` | `0x1f980` | **`+0x480`** |
+| `__DATA.__objc_ivar` | `0x12920` | `0x12be8` | **`+0x2c8`** |
+| `__DATA_CONST.__got` | `0x6868` | `0x69b0` | **`+0x148`** |
+| `__DATA_CONST.__objc_classlist` | `0x6730` | `0x6878` | **`+0x148`** |
+| `__DATA_CONST.__objc_superrefs` | `0x66e0` | `0x6828` | **`+0x148`** |
+| `__TEXT.__constg_swiftt` | `0x7e54` | `0x7f74` | **`+0x120`** |
+| `__TEXT.__swift5_builtin` | `0x49ac` | `0x4a60` | **`+0xb4`** |
+| `__DATA.__data` | `0x3458` | `0x3508` | **`+0xb0`** |
+| `__AUTH_CONST.__objc_intobj` | `0xc48` | `0xcf0` | **`+0xa8`** |
+| `__TEXT.__swift5_typeref` | `0x1ea6` | `0x1edc` | **`+0x36`** |
+| `__TEXT.__swift5_proto` | `0x1374` | `0x139c` | **`+0x28`** |
+| `__TEXT.__swift5_types` | `0xf10` | `0xf34` | **`+0x24`** |
+
+### Other Changes
+
 ```diff
 
 -3600.80.1.0.0
--  __TEXT.__text: 0xd5eb08
--  __TEXT.__objc_methlist: 0x107c6c
--  __TEXT.__const: 0x17714
--  __TEXT.__swift5_typeref: 0x1ea6
--  __TEXT.__cstring: 0x94176
--  __TEXT.__constg_swiftt: 0x7e54
 +3600.85.1.0.0
-+  __TEXT.__text: 0xd91e24
-+  __TEXT.__objc_methlist: 0x10ad94
-+  __TEXT.__const: 0x17bc4
-+  __TEXT.__swift5_typeref: 0x1edc
-+  __TEXT.__cstring: 0x95c1d
-+  __TEXT.__constg_swiftt: 0x7f74
-   __TEXT.__swift5_reflstr: 0x21d
-   __TEXT.__swift5_fieldmd: 0x45c
--  __TEXT.__swift5_builtin: 0x49ac
-+  __TEXT.__swift5_builtin: 0x4a60
-   __TEXT.__swift5_assocty: 0x150
--  __TEXT.__swift5_proto: 0x1374
--  __TEXT.__swift5_types: 0xf10
-+  __TEXT.__swift5_proto: 0x139c
-+  __TEXT.__swift5_types: 0xf34
-   __TEXT.__oslogstring: 0xc1
-   __TEXT.__swift5_protos: 0x24
--  __TEXT.__unwind_info: 0x336d0
--  __TEXT.__eh_frame: 0x47f8
-+  __TEXT.__unwind_info: 0x32f68
-+  __TEXT.__eh_frame: 0x4db8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3d3f8
--  __DATA_CONST.__objc_classlist: 0x6730
-+  __DATA_CONST.__const: 0x3d8d0
-+  __DATA_CONST.__objc_classlist: 0x6878
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x420d0
-+  __DATA_CONST.__objc_selrefs: 0x42ed0
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x66e0
--  __DATA_CONST.__got: 0x6868
--  __AUTH_CONST.__const: 0x245e9
--  __AUTH_CONST.__cfstring: 0x7f220
--  __AUTH_CONST.__objc_const: 0x179c20
--  __AUTH_CONST.__objc_intobj: 0xc48
-+  __DATA_CONST.__objc_superrefs: 0x6828
-+  __DATA_CONST.__got: 0x69b0
-+  __AUTH_CONST.__const: 0x25be9
-+  __AUTH_CONST.__cfstring: 0x80460
-+  __AUTH_CONST.__objc_const: 0x17da90
-+  __AUTH_CONST.__objc_intobj: 0xcf0
-   __AUTH_CONST.__auth_got: 0x928
--  __AUTH.__objc_data: 0x290e0
-+  __AUTH.__objc_data: 0x29db0
-   __AUTH.__data: 0x160
--  __DATA.__objc_ivar: 0x12920
--  __DATA.__data: 0x3458
--  __DATA.__bss: 0x1f500
-+  __DATA.__objc_ivar: 0x12be8
-+  __DATA.__data: 0x3508
-+  __DATA.__bss: 0x1f980
-   __DATA.__common: 0x20
-   __DATA_DIRTY.__objc_data: 0x17970
-   __DATA_DIRTY.__data: 0x238
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 92946
--  Symbols:   144685
+-  Symbols:   130771
 -  CStrings:  17383
 +  Functions: 94031
-+  Symbols:   146377
++  Symbols:   132275
 +  CStrings:  17568
- 
 Symbols:
 + +[COLSchemaCOLClientEvent(Component) joinability]
 + +[COLSchemaCOLClientEvent(InnerEventContainer) getInnerTypeStringByTag:]
@@ -1580,194 +1540,6 @@ Symbols:
 + __OBJC_METACLASS_RO_$_SISchemaUEILinkTapped
 + __OBJC_METACLASS_RO_$_SISchemaUEIResponseDisplayed
 + __OBJC_METACLASS_RO_$_SISchemaUEISourceListExpanded
-+ _objc_msgSend$activeNavigations
-+ _objc_msgSend$addActiveNavigation:
-+ _objc_msgSend$addAppEntities:
-+ _objc_msgSend$addAttendees:
-+ _objc_msgSend$addCallMessages:
-+ _objc_msgSend$addCitations:
-+ _objc_msgSend$addContactRelationships:
-+ _objc_msgSend$addGlobalEntities:
-+ _objc_msgSend$addHomeDeviceEntities:
-+ _objc_msgSend$addLiveEntities:
-+ _objc_msgSend$addLocalEntities:
-+ _objc_msgSend$addMultimediaItems:
-+ _objc_msgSend$addNotificationEntities:
-+ _objc_msgSend$addOnscreenText:
-+ _objc_msgSend$addOpenedApps:
-+ _objc_msgSend$addOrganizers:
-+ _objc_msgSend$addParticipants:
-+ _objc_msgSend$addReadableMessages:
-+ _objc_msgSend$addReminders:
-+ _objc_msgSend$addSelectedEntities:
-+ _objc_msgSend$addSenders:
-+ _objc_msgSend$addThreadNotificationEntities:
-+ _objc_msgSend$addTurnIndices:
-+ _objc_msgSend$addUserAttachmentTypes:
-+ _objc_msgSend$addVisibleAlarms:
-+ _objc_msgSend$addVisibleEntities:
-+ _objc_msgSend$addVisibleTimers:
-+ _objc_msgSend$appEntities
-+ _objc_msgSend$appNotification
-+ _objc_msgSend$appPartyType
-+ _objc_msgSend$attendees
-+ _objc_msgSend$author
-+ _objc_msgSend$buildVersion
-+ _objc_msgSend$calendar
-+ _objc_msgSend$calendarToolsResult
-+ _objc_msgSend$callMessages
-+ _objc_msgSend$callToolsResult
-+ _objc_msgSend$citations
-+ _objc_msgSend$citationsAttributed
-+ _objc_msgSend$clearActiveNavigation
-+ _objc_msgSend$clearAppEntities
-+ _objc_msgSend$clearAttendees
-+ _objc_msgSend$clearCallMessages
-+ _objc_msgSend$clearCitations
-+ _objc_msgSend$clearContactRelationships
-+ _objc_msgSend$clearGlobalEntities
-+ _objc_msgSend$clearHomeDeviceEntities
-+ _objc_msgSend$clearLiveEntities
-+ _objc_msgSend$clearLocalEntities
-+ _objc_msgSend$clearMultimediaItems
-+ _objc_msgSend$clearNotificationEntities
-+ _objc_msgSend$clearOnscreenText
-+ _objc_msgSend$clearOpenedApps
-+ _objc_msgSend$clearOrganizers
-+ _objc_msgSend$clearParticipants
-+ _objc_msgSend$clearReadableMessages
-+ _objc_msgSend$clearReminders
-+ _objc_msgSend$clearSelectedEntities
-+ _objc_msgSend$clearSenders
-+ _objc_msgSend$clearThreadNotificationEntities
-+ _objc_msgSend$clearTurnIndices
-+ _objc_msgSend$clearUserAttachmentTypes
-+ _objc_msgSend$clearVisibleAlarms
-+ _objc_msgSend$clearVisibleEntities
-+ _objc_msgSend$clearVisibleTimers
-+ _objc_msgSend$colId
-+ _objc_msgSend$contactRelationships
-+ _objc_msgSend$conversation
-+ _objc_msgSend$currentConversation
-+ _objc_msgSend$currentTime
-+ _objc_msgSend$deleteCitationsAttributed
-+ _objc_msgSend$deleteEntityKind
-+ _objc_msgSend$entityKind
-+ _objc_msgSend$focusedApp
-+ _objc_msgSend$gazePoint
-+ _objc_msgSend$generalResult
-+ _objc_msgSend$getSystemInfoResult
-+ _objc_msgSend$globalEntities
-+ _objc_msgSend$goalCompletionConfidence
-+ _objc_msgSend$homeDeviceEntities
-+ _objc_msgSend$isLLMSiriAvailable
-+ _objc_msgSend$isPersonalEntity
-+ _objc_msgSend$islandExpansionIndicatorShown
-+ _objc_msgSend$linkType
-+ _objc_msgSend$liveEntities
-+ _objc_msgSend$localEntities
-+ _objc_msgSend$mediaHeightPixels
-+ _objc_msgSend$mediaSizeBytes
-+ _objc_msgSend$mediaWidthPixels
-+ _objc_msgSend$messageToolsResult
-+ _objc_msgSend$multimediaItems
-+ _objc_msgSend$notificationEntities
-+ _objc_msgSend$onscreenTexts
-+ _objc_msgSend$openedApps
-+ _objc_msgSend$organizers
-+ _objc_msgSend$participants
-+ _objc_msgSend$prepareCallMessageReadingListResult
-+ _objc_msgSend$prepareNotificationsResult
-+ _objc_msgSend$prepareReadConversationResult
-+ _objc_msgSend$prepareReadMessagesListResult
-+ _objc_msgSend$prepareReadRemindersListResult
-+ _objc_msgSend$readableMessages
-+ _objc_msgSend$readableUnit
-+ _objc_msgSend$reminderList
-+ _objc_msgSend$reminders
-+ _objc_msgSend$requestQueueTimeInMs
-+ _objc_msgSend$salientEntity
-+ _objc_msgSend$searchResult
-+ _objc_msgSend$selectedEntities
-+ _objc_msgSend$senders
-+ _objc_msgSend$setAppNotification:
-+ _objc_msgSend$setAppPartyType:
-+ _objc_msgSend$setAuthor:
-+ _objc_msgSend$setBuildVersion:
-+ _objc_msgSend$setCalendar:
-+ _objc_msgSend$setCalendarToolsResult:
-+ _objc_msgSend$setCallToolsResult:
-+ _objc_msgSend$setCitationsAttributed:
-+ _objc_msgSend$setColId:
-+ _objc_msgSend$setConversation:
-+ _objc_msgSend$setCurrentConversation:
-+ _objc_msgSend$setCurrentTime:
-+ _objc_msgSend$setEntityKind:
-+ _objc_msgSend$setFocusedApp:
-+ _objc_msgSend$setGazePoint:
-+ _objc_msgSend$setGeneralResult:
-+ _objc_msgSend$setGetSystemInfoResult:
-+ _objc_msgSend$setGoalCompletionConfidence:
-+ _objc_msgSend$setIsLLMSiriAvailable:
-+ _objc_msgSend$setIsPersonalEntity:
-+ _objc_msgSend$setIslandExpansionIndicatorShown:
-+ _objc_msgSend$setLinkType:
-+ _objc_msgSend$setMediaHeightPixels:
-+ _objc_msgSend$setMediaSizeBytes:
-+ _objc_msgSend$setMediaWidthPixels:
-+ _objc_msgSend$setMessageToolsResult:
-+ _objc_msgSend$setPrepareCallMessageReadingListResult:
-+ _objc_msgSend$setPrepareNotificationsResult:
-+ _objc_msgSend$setPrepareReadConversationResult:
-+ _objc_msgSend$setPrepareReadMessagesListResult:
-+ _objc_msgSend$setPrepareReadRemindersListResult:
-+ _objc_msgSend$setReadableUnit:
-+ _objc_msgSend$setReminderList:
-+ _objc_msgSend$setRequestQueueTimeInMs:
-+ _objc_msgSend$setSalientEntity:
-+ _objc_msgSend$setSearchResult:
-+ _objc_msgSend$setSiriAppOpenCount:
-+ _objc_msgSend$setSourceCount:
-+ _objc_msgSend$setSpanMatches:
-+ _objc_msgSend$setStorefront:
-+ _objc_msgSend$setSuccessResult:
-+ _objc_msgSend$setThreadNotification:
-+ _objc_msgSend$setTimePerOutputTokenInMs:
-+ _objc_msgSend$setUeiAsyncInvocationInfoCollected:
-+ _objc_msgSend$setUeiBreadcrumbReturned:
-+ _objc_msgSend$setUeiCanvasToAppExpanded:
-+ _objc_msgSend$setUeiIslandToCanvasExpanded:
-+ _objc_msgSend$setUeiLinkTapped:
-+ _objc_msgSend$setUeiResponseDisplayed:
-+ _objc_msgSend$setUeiSourceListExpanded:
-+ _objc_msgSend$setUiSurface:
-+ _objc_msgSend$setUrlToUi:
-+ _objc_msgSend$setUrlType:
-+ _objc_msgSend$setValidNoIdKindResult:
-+ _objc_msgSend$siriAppOpenCount
-+ _objc_msgSend$sourceCount
-+ _objc_msgSend$storefront
-+ _objc_msgSend$successResult
-+ _objc_msgSend$threadNotification
-+ _objc_msgSend$threadNotificationEntities
-+ _objc_msgSend$timePerOutputTokenInMs
-+ _objc_msgSend$turnIndices
-+ _objc_msgSend$ueiAsyncInvocationInfoCollected
-+ _objc_msgSend$ueiBreadcrumbReturned
-+ _objc_msgSend$ueiCanvasToAppExpanded
-+ _objc_msgSend$ueiIslandToCanvasExpanded
-+ _objc_msgSend$ueiLinkTapped
-+ _objc_msgSend$ueiResponseDisplayed
-+ _objc_msgSend$ueiSourceListExpanded
-+ _objc_msgSend$uiSurface
-+ _objc_msgSend$urlToUi
-+ _objc_msgSend$urlType
-+ _objc_msgSend$userAttachmentTypes
-+ _objc_msgSend$validNoIdKindResult
-+ _objc_msgSend$visibleAlarms
-+ _objc_msgSend$visibleEntities
-+ _objc_msgSend$visibleTimers
-+ _objc_msgSend$whichPlannertoolsexecutionresult
 + _symbolic _____ So19SISchemaUEILinkTypeV
 + _symbolic _____ So20SISchemaUEIUISurfaceV
 + _symbolic _____ So25ODDSiriSchemaODDTurnIndexV

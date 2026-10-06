@@ -2,68 +2,44 @@
 
 > `/System/Library/AccessibilityBundles/FitnessApp.axbundle/FitnessApp`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf13c` | `0xee28` | **`-0x314`** |
+| `__DATA.__objc_const` | `0x5068` | `0x4f48` | **`-0x120`** |
+| `__DATA.__objc_data` | `0x2c60` | `0x2bc0` | **`-0xa0`** |
+| `__TEXT.__objc_methname` | `0x1ab8` | `0x1a4d` | **`-0x6b`** |
+| `__TEXT.__objc_methlist` | `0x18e8` | `0x1898` | **`-0x50`** |
+| `__DATA_CONST.__cfstring` | `0x32a0` | `0x3260` | **`-0x40`** |
+| `__TEXT.__objc_stubs` | `0x1820` | `0x1800` | **`-0x20`** |
+| `__TEXT.__objc_methtype` | `0x200` | `0x1e3` | **`-0x1d`** |
+| `__DATA.__objc_selrefs` | `0x798` | `0x788` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x470` | `0x460` | **`-0x10`** |
+| `__TEXT.__objc_classname` | `0x1997` | `0x1987` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x5c0` | `0x5b8` | **`-0x8`** |
+| `__TEXT.__cstring` | `0x2bba` | `0x2bbc` | **`+0x2`** |
+
+### Same-size Content Changes
 
 - `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_catlist`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__got`
+
+### Other Changes
 
 ```diff
 
 -1034.0.0.0.0
--  __TEXT.__text: 0xf13c
 +1035.0.0.0.0
-+  __TEXT.__text: 0xee28
-   __TEXT.__auth_stubs: 0x500
--  __TEXT.__objc_stubs: 0x1820
--  __TEXT.__objc_methlist: 0x18e8
-+  __TEXT.__objc_stubs: 0x1800
-+  __TEXT.__objc_methlist: 0x1898
-   __TEXT.__const: 0x18
-   __TEXT.__gcc_except_tab: 0x258
--  __TEXT.__objc_classname: 0x1997
--  __TEXT.__cstring: 0x2bba
--  __TEXT.__objc_methname: 0x1ab8
--  __TEXT.__objc_methtype: 0x200
-+  __TEXT.__objc_classname: 0x1987
-+  __TEXT.__cstring: 0x2bbc
-+  __TEXT.__objc_methname: 0x1a4d
-+  __TEXT.__objc_methtype: 0x1e3
-   __TEXT.__ustring: 0xa
--  __TEXT.__unwind_info: 0x5c0
-+  __TEXT.__unwind_info: 0x5b8
-   __DATA_CONST.__const: 0x480
--  __DATA_CONST.__cfstring: 0x32a0
--  __DATA_CONST.__objc_classlist: 0x470
-+  __DATA_CONST.__cfstring: 0x3260
-+  __DATA_CONST.__objc_classlist: 0x460
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x1b8
-   __DATA_CONST.__auth_got: 0x290
-   __DATA_CONST.__got: 0x180
--  __DATA.__objc_const: 0x5068
--  __DATA.__objc_selrefs: 0x798
-+  __DATA.__objc_const: 0x4f48
-+  __DATA.__objc_selrefs: 0x788
-   __DATA.__objc_ivar: 0x8
--  __DATA.__objc_data: 0x2c60
-+  __DATA.__objc_data: 0x2bc0
-   __DATA.__bss: 0x61
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 467
 -  Symbols:   1559
 -  CStrings:  744
 +  Functions: 462
 +  Symbols:   1543
 +  CStrings:  735
- 
 Symbols:
 + +[TrendDownMetricCollectionViewCellAccessibility _accessibilityPerformValidations:]
 + +[TrendDownMetricCollectionViewCellAccessibility(SafeCategory) safeCategoryBaseClass]

@@ -2,42 +2,30 @@
 
 > `/usr/lib/libETLDynamic.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4749c` | `0x47858` | **`+0x3bc`** |
+| `__TEXT.__cstring` | `0x5069` | `0x5374` | **`+0x30b`** |
+| `__TEXT.__gcc_except_tab` | `0x2a8` | `0x2dc` | **`+0x34`** |
+| `__AUTH_CONST.__auth_got` | `0x258` | `0x288` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x7d8` | `0x7f8` | **`+0x20`** |
+| `__DATA.__bss` | `—` | `0x8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1585.0.0.0.0
--  __TEXT.__text: 0x47120
 +1594.0.0.0.0
-+  __TEXT.__text: 0x474c4
-   __TEXT.__const: 0x1350
--  __TEXT.__cstring: 0x5069
--  __TEXT.__gcc_except_tab: 0x2a8
--  __TEXT.__unwind_info: 0xb10
-+  __TEXT.__cstring: 0x5374
-+  __TEXT.__gcc_except_tab: 0x2dc
-+  __TEXT.__unwind_info: 0xb38
-   __TEXT.__eh_frame: 0x50
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0xf8
 
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x218
-   __AUTH_CONST.__weak_auth_got: 0x10
--  __AUTH_CONST.__auth_got: 0x258
-+  __AUTH_CONST.__auth_got: 0x288
-   __DATA.__data: 0x2c
-   __DATA.__common: 0x2
-   __DATA_DIRTY.__data: 0x10
-
-   - /usr/lib/libTelephonyCapabilities.dylib
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 715
 -  Symbols:   881
 -  CStrings:  613
 +  Functions: 716
 +  Symbols:   892
 +  CStrings:  640
- 
 Symbols:
 + GCC_except_table10
 + _TelephonyUtilGetSystemTime
@@ -54,11 +42,11 @@ Functions:
 ~ _ETLGSDIParseGetFeatureResponse : 260 -> 288
 ~ _ETLGSDIParseGetECCResponse : 168 -> 192
 ~ _ETLGSDIPerformGetECC : 796 -> 824
-~ __ZL20_ETLDebugPrintStdoutPKcS0_Pc : 4 -> 176
+~ __ZL20_ETLDebugPrintStdoutPKcS0_Pc : 4 -> 188
 ~ __ZL26_ETLDebugPrintBinaryStdoutPKc23ETLDebugPrintBinaryTypePKvj : 4 -> 300
 + __ZL17_ETLDebugOpenFilev
 ~ _ETLMaverickParseSetGPIOResponse : 348 -> 404
-~ _ETLEVENTProcessEvent : 688 -> 456
+~ _ETLEVENTProcessEvent : 696 -> 464
 ~ _ETLEVENTProcessEventItem : 296 -> 8
 ~ _ETLEVENTProcessEventItemTSLength : 304 -> 500
 ~ _ETLEVENTProcessHeader : 60 -> 152

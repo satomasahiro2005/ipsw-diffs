@@ -2,30 +2,23 @@
 
 > `/usr/libexec/dietapplecamerad`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1b164` | `0x1b20c` | **`+0xa8`** |
+| `__TEXT.__eh_frame` | `0x48` | `0x50` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 22.304.0.0.0
--  __TEXT.__text: 0x1b164
-+  __TEXT.__text: 0x1b20c
-   __TEXT.__auth_stubs: 0xbf0
-   __TEXT.__objc_stubs: 0x1e0
-   __TEXT.__cstring: 0x3103
-
-   __TEXT.__oslogstring: 0x1126
-   __TEXT.__objc_methname: 0x110
-   __TEXT.__unwind_info: 0x390
--  __TEXT.__eh_frame: 0x48
-+  __TEXT.__eh_frame: 0x50
-   __DATA_CONST.__const: 0x71f0
-   __DATA_CONST.__cfstring: 0x720
-   __DATA_CONST.__objc_imageinfo: 0x8
+```text
 Functions:
 ~ sub_10000180c : 25568 -> 25660
 ~ sub_100007fec -> sub_100008048 : 948 -> 952

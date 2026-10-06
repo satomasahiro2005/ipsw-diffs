@@ -2,14 +2,15 @@
 
 > `/usr/lib/libWISSupport.dylib`
 
-```diff
+### Section Size Changes
 
- 350.1.0.0.0
--  __TEXT.__text: 0x28144
-+  __TEXT.__text: 0x28148
-   __TEXT.__gcc_except_tab: 0x2fdc
-   __TEXT.__cstring: 0x710
-   __TEXT.__const: 0xdfb
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x28144` | `0x28148` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2bf94d26c -> sub_2c0c8e26c : 308 -> 312
+~ sub_2bf87226c -> sub_2c0bb826c : 308 -> 312
 ```

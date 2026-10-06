@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ktrace.framework/ktrace`
 
-```diff
+### Section Size Changes
 
- 706.0.2.0.0
--  __TEXT.__text: 0xc77f4
-+  __TEXT.__text: 0xc7810
-   __TEXT.__objc_methlist: 0x458
-   __TEXT.__const: 0x5f52
-   __TEXT.__cstring: 0x6bd4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc77f4` | `0xc7810` | **`+0x1c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1cb464d34 -> sub_1ca76fd34 : 636 -> 700
 ~ sub_1cb468884 -> sub_1ca7738c4 : 4500 -> 4532

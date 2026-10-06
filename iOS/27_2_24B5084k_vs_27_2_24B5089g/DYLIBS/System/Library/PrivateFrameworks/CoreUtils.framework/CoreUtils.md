@@ -2,55 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/CoreUtils.framework/CoreUtils`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1189c4` | `0x118a74` | **`+0xb0`** |
+| `__AUTH_CONST.__objc_const` | `0x13c70` | `0x13ca0` | **`+0x30`** |
+| `__AUTH_CONST.__cfstring` | `0x4580` | `0x45a0` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0xa0b8` | `0xa0d0` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x51a0` | `0x51b0` | **`+0x10`** |
+| `__TEXT.__cstring` | `0x1d8c0` | `0x1d8d0` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x1510` | `0x1514` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -910.21.0.0.0
--  __TEXT.__text: 0x115064
--  __TEXT.__objc_methlist: 0xa0b8
--  __TEXT.__cstring: 0x1d8c0
 +910.24.0.0.0
-+  __TEXT.__text: 0x115114
-+  __TEXT.__objc_methlist: 0xa0d0
-+  __TEXT.__cstring: 0x1d8d0
-   __TEXT.__const: 0x229c
-   __TEXT.__gcc_except_tab: 0x1bcc
-   __TEXT.__oslogstring: 0x49f4
 
-   __DATA_CONST.__objc_catlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x158
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x51a0
-+  __DATA_CONST.__objc_selrefs: 0x51b0
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x240
-   __DATA_CONST.__objc_arraydata: 0x8
-   __DATA_CONST.__got: 0x6c8
-   __AUTH_CONST.__const: 0x28a8
--  __AUTH_CONST.__cfstring: 0x4580
--  __AUTH_CONST.__objc_const: 0x13c70
-+  __AUTH_CONST.__cfstring: 0x45a0
-+  __AUTH_CONST.__objc_const: 0x13ca0
-   __AUTH_CONST.__objc_intobj: 0x258
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__auth_got: 0x1870
-   __AUTH.__objc_data: 0x2030
-   __AUTH.__data: 0xa00
--  __DATA.__objc_ivar: 0x1510
-+  __DATA.__objc_ivar: 0x1514
-   __DATA.__data: 0x2f50
-   __DATA.__common: 0x2a
-   __DATA_DIRTY.__objc_data: 0xf0
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 5816
--  Symbols:   11643
+-  Symbols:   10240
 -  CStrings:  4866
 +  Functions: 5818
-+  Symbols:   11646
++  Symbols:   10243
 +  CStrings:  4867
- 
 Symbols:
 + -[CUPairingSession appInfoPostAuth]
 + -[CUPairingSession setAppInfoPostAuth:]

@@ -2,62 +2,34 @@
 
 > `/System/Library/Frameworks/CoreServices.framework/CoreServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1cd208` | `0x1ceae0` | **`+0x18d8`** |
+| `__TEXT.__gcc_except_tab` | `0x2a0f4` | `0x2a3dc` | **`+0x2e8`** |
+| `__TEXT.__oslogstring` | `0x16b4b` | `0x16d55` | **`+0x20a`** |
+| `__TEXT.__cstring` | `0x29500` | `0x29633` | **`+0x133`** |
+| `__TEXT.__unwind_info` | `0xc790` | `0xc7f0` | **`+0x60`** |
+| `__TEXT.__objc_methlist` | `0xe2e4` | `0xe334` | **`+0x50`** |
+| `__AUTH_CONST.__cfstring` | `0x17d20` | `0x17d60` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x75b0` | `0x75d8` | **`+0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0x65e0` | `0x6608` | **`+0x28`** |
+| `__AUTH_CONST.__objc_const` | `0x15748` | `0x15760` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
 -1517.1.8.0.0
--  __TEXT.__text: 0x1c61c8
 +1517.1.9.0.0
-+  __TEXT.__text: 0x1c7a88
-   __TEXT.__delay_helper: 0x1b8
-   __TEXT.__lazy_helpers: 0xa8
--  __TEXT.__objc_methlist: 0xe2e4
-+  __TEXT.__objc_methlist: 0xe334
-   __TEXT.__const: 0x9c0
--  __TEXT.__cstring: 0x29500
--  __TEXT.__oslogstring: 0x16b4b
--  __TEXT.__gcc_except_tab: 0x2a0f4
-+  __TEXT.__cstring: 0x29633
-+  __TEXT.__oslogstring: 0x16d55
-+  __TEXT.__gcc_except_tab: 0x2a3dc
-   __TEXT.__ustring: 0x23c
--  __TEXT.__unwind_info: 0xdc78
-+  __TEXT.__unwind_info: 0xdce0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x75b0
-+  __DATA_CONST.__const: 0x75d8
-   __DATA_CONST.__objc_classlist: 0x7b0
-   __DATA_CONST.__objc_catlist: 0x78
-   __DATA_CONST.__objc_protolist: 0x180
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x65e0
-+  __DATA_CONST.__objc_selrefs: 0x6608
-   __DATA_CONST.__objc_protorefs: 0x90
-   __DATA_CONST.__objc_superrefs: 0x640
-   __DATA_CONST.__objc_arraydata: 0x990
-   __DATA_CONST.__got: 0xbb8
-   __AUTH_CONST.__const: 0x3be8
--  __AUTH_CONST.__cfstring: 0x17d20
--  __AUTH_CONST.__objc_const: 0x15748
-+  __AUTH_CONST.__cfstring: 0x17d60
-+  __AUTH_CONST.__objc_const: 0x15760
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__lazy_load_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x7e0
 
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 9604
--  Symbols:   16564
+-  Symbols:   14309
 -  CStrings:  6105
 +  Functions: 9619
-+  Symbols:   16580
++  Symbols:   14321
 +  CStrings:  6119
- 
 Symbols:
 + -[LSApplicationRecord(MobileInstall) isInstallationHoldActive]
 + -[LSApplicationWorkspace setInstallationHoldActive:onApplicationWithBundleIdentifier:operationUUID:requestContext:saveObserver:error:]
@@ -124,10 +96,6 @@ Symbols:
 + ___block_descriptor_72_ea8_32s40s48r_e379_v28?0I8r^{LSBundleData={LSBundleBaseData=IIIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIIIICCIII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIIC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}II{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IQQQIIIIIIIIIIIQIIQQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[1I]II{LSAppClipFields=I}iIIIIIIIiIII}12*20ls32l8s40l8r48l8
 + ___block_descriptor_73_ea8_32s40s48s56r64r_e42_v24?0"LSDBExecutionContext"8"NSError"16ls32l8s40l8s48l8r56l8r64l8
 + ___block_descriptor_80_e8_32s40s48s56s64n6_8_8_s0_e392_v28?0"_LSDatabase"8I16r^{LSBundleData={LSBundleBaseData=IIIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIIIICCIII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIIC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}II{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IQQQIIIIIIIIIIIQIIQQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[1I]II{LSAppClipFields=I}iIIIIIIIiIII}20l
-+ _objc_msgSend$isInstallationHoldActive
-+ _objc_msgSend$rollPluginUUIDs
-+ _objc_msgSend$setInstallationHoldActive:
-+ _objc_msgSend$setInstallationHoldActive:onApplicationWithBundleIdentifier:operationUUID:reply:
 - GCC_except_table220
 - GCC_except_table230
 - GCC_except_table235

@@ -2,92 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/UserNotificationsUIKit.framework/UserNotificationsUIKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1bddf0` | `0x1bf13c` | **`+0x134c`** |
+| `__AUTH_CONST.__const` | `0x4e28` | `0x50f8` | **`+0x2d0`** |
+| `__AUTH_CONST.__objc_const` | `0x269d8` | `0x26bb8` | **`+0x1e0`** |
+| `__TEXT.__gcc_except_tab` | `0x2d38` | `0x2bf8` | **`-0x140`** |
+| `__TEXT.__objc_methlist` | `0x1acdc` | `0x1ae1c` | **`+0x140`** |
+| `__TEXT.__swift5_capture` | `0xc44` | `0xd84` | **`+0x140`** |
+| `__TEXT.__oslogstring` | `0x10239` | `0x10359` | **`+0x120`** |
+| `__DATA.__data` | `0x51b0` | `0x5100` | **`-0xb0`** |
+| `__DATA_CONST.__objc_selrefs` | `0xcbb8` | `0xcc60` | **`+0xa8`** |
+| `__AUTH.__objc_data` | `0x2490` | `0x24e0` | **`+0x50`** |
+| `__TEXT.__cstring` | `0x9fed` | `0xa02d` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x73c0` | `0x7388` | **`-0x38`** |
+| `__AUTH_CONST.__auth_got` | `0x1530` | `0x1558` | **`+0x28`** |
+| `__DATA.__objc_ivar` | `0x1798` | `0x17c0` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x41d0` | `0x41a8` | **`-0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x7f20` | `0x7f40` | **`+0x20`** |
+| `__DATA_CONST.__objc_protolist` | `0x608` | `0x5f8` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x1860` | `0x1858` | **`-0x8`** |
+| `__DATA_CONST.__objc_catlist` | `0xb0` | `0xb8` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x7f8` | `0x800` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x568` | `0x570` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1077.0.1.0.0
--  __TEXT.__text: 0x1b2250
--  __TEXT.__objc_methlist: 0x1acdc
 +1077.2.3.0.0
-+  __TEXT.__text: 0x1b3534
-+  __TEXT.__objc_methlist: 0x1ae1c
-   __TEXT.__const: 0x43e4
--  __TEXT.__gcc_except_tab: 0x2d38
--  __TEXT.__cstring: 0x9fed
--  __TEXT.__oslogstring: 0x10239
-+  __TEXT.__gcc_except_tab: 0x2bf8
-+  __TEXT.__cstring: 0xa02d
-+  __TEXT.__oslogstring: 0x10359
-   __TEXT.__ustring: 0x22
-   __TEXT.__constg_swiftt: 0x1bdc
-   __TEXT.__swift5_typeref: 0x3ce2
 
-   __TEXT.__swift5_proto: 0x17c
-   __TEXT.__swift5_types: 0x128
-   __TEXT.__swift5_mpenum: 0x5c
--  __TEXT.__swift5_capture: 0xc44
-+  __TEXT.__swift5_capture: 0xd84
-   __TEXT.__swift5_protos: 0x20
-   __TEXT.__swift_as_entry: 0x28
-   __TEXT.__swift_as_cont: 0x4c
-   __TEXT.__swift_as_ret: 0x1c
--  __TEXT.__unwind_info: 0x8d68
-+  __TEXT.__unwind_info: 0x8d70
-   __TEXT.__eh_frame: 0xcb0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x41d0
--  __DATA_CONST.__objc_classlist: 0x7f8
--  __DATA_CONST.__objc_catlist: 0xb0
--  __DATA_CONST.__objc_protolist: 0x608
-+  __DATA_CONST.__const: 0x41a8
-+  __DATA_CONST.__objc_classlist: 0x800
-+  __DATA_CONST.__objc_catlist: 0xb8
-+  __DATA_CONST.__objc_protolist: 0x5f8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xcbb8
-+  __DATA_CONST.__objc_selrefs: 0xcc60
-   __DATA_CONST.__objc_protorefs: 0xd8
--  __DATA_CONST.__objc_superrefs: 0x568
-+  __DATA_CONST.__objc_superrefs: 0x570
-   __DATA_CONST.__objc_arraydata: 0x158
--  __DATA_CONST.__got: 0x1860
--  __AUTH_CONST.__const: 0x4e28
--  __AUTH_CONST.__cfstring: 0x7f20
--  __AUTH_CONST.__objc_const: 0x269d8
-+  __DATA_CONST.__got: 0x1858
-+  __AUTH_CONST.__const: 0x50f8
-+  __AUTH_CONST.__cfstring: 0x7f40
-+  __AUTH_CONST.__objc_const: 0x26bb8
-   __AUTH_CONST.__objc_intobj: 0x330
-   __AUTH_CONST.__objc_arrayobj: 0x150
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_doubleobj: 0x20
--  __AUTH_CONST.__auth_got: 0x1530
--  __AUTH.__objc_data: 0x2490
-+  __AUTH_CONST.__auth_got: 0x1558
-+  __AUTH.__objc_data: 0x24e0
-   __AUTH.__data: 0x3d8
--  __DATA.__objc_ivar: 0x1798
--  __DATA.__data: 0x51b0
-+  __DATA.__objc_ivar: 0x17c0
-+  __DATA.__data: 0x5100
-   __DATA.__objc_stublist: 0x8
-   __DATA.__common: 0x60
-   __DATA_DIRTY.__objc_data: 0x3a10
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10922
--  Symbols:   19871
+-  Symbols:   14432
 -  CStrings:  2169
 +  Functions: 10983
-+  Symbols:   19934
++  Symbols:   14475
 +  CStrings:  2174
- 
 Symbols:
 + -[NCActionMenuButton .cxx_destruct]
 + -[NCActionMenuButton _contextMenuInteraction:shouldPresentWithCompletion:]
@@ -296,40 +249,6 @@ Symbols:
 + ___block_descriptor_72_e8_32s40s48s56s64r_e40_v32?0"NCNotificationGroupList"8Q16^B24ls32l8s40l8s48l8r64l8s56l8
 + ___swift_closure_destructor.118Tm
 + ___swift_closure_destructor.171Tm
-+ _objc_msgSend$_configurePromotedLeadingNotificationRequest:
-+ _objc_msgSend$_layoutActionButtonsForVisibleWidth:
-+ _objc_msgSend$_nc_menuDescriptor
-+ _objc_msgSend$_nc_setMenuDescriptor:
-+ _objc_msgSend$_scheduleVisibleContentExtentUpdateIfNeeded
-+ _objc_msgSend$_setupTouchEaterManagerIfNeeded
-+ _objc_msgSend$_shouldPresentOptionsMenuForRequest:completion:
-+ _objc_msgSend$appSectionListHeaderViewOptionsMenuDescriptor:
-+ _objc_msgSend$contextMenuConfiguration
-+ _objc_msgSend$contextMenuInteraction:shouldPresentWithCompletion:
-+ _objc_msgSend$contextMenuInteraction:willDisplayMenuForConfiguration:
-+ _objc_msgSend$contextMenuInteraction:willEndForConfiguration:
-+ _objc_msgSend$countIndicatorBottomInset
-+ _objc_msgSend$forceLayoutActionButtons
-+ _objc_msgSend$hasAbandonedVisibleContentExtentUpdates
-+ _objc_msgSend$hasScheduledVisibleContentExtentUpdate
-+ _objc_msgSend$initWithContextMenuConfiguration:shouldPresentBlock:willDisplayMenuInteractionBlock:willEndMenuInteractionBlock:
-+ _objc_msgSend$initWithNotificationRequest:settingsDelegate:optionsForSection:
-+ _objc_msgSend$installTouchGestureRecognizerForView:
-+ _objc_msgSend$lastPresentedOptionsMenuInteraction
-+ _objc_msgSend$menuConfiguration
-+ _objc_msgSend$notificationListComponent:optionsMenuConfigurationForNotificationRequest:optionsForSection:
-+ _objc_msgSend$notificationListComponent:shouldPresentOptionsMenuForNotificationRequest:completion:
-+ _objc_msgSend$notificationListComponent:willDismissOptionsMenuInteraction:forNotificationRequest:optionsForSection:listCell:
-+ _objc_msgSend$notificationListComponent:willDisplayOptionsMenuInteraction:forNotificationRequest:optionsForSection:listCell:
-+ _objc_msgSend$setContextMenuInteractionEnabled:
-+ _objc_msgSend$setHasAbandonedVisibleContentExtentUpdates:
-+ _objc_msgSend$setHasScheduledVisibleContentExtentUpdate:
-+ _objc_msgSend$setMenuDescriptor:
-+ _objc_msgSend$setShowsMenuFromSource:
-+ _objc_msgSend$setVisibleContentExtentRepostWindowStart:
-+ _objc_msgSend$setVisibleContentExtentRepostsInWindow:
-+ _objc_msgSend$visibleContentExtentRepostWindowStart
-+ _objc_msgSend$visibleContentExtentRepostsInWindow
 - -[NCNotificationAppSectionList appSectionListHeaderView:didRequestPresentingOptionsMenuFromView:]
 - -[NCNotificationAppSectionListHeaderOptionsButton visiblePathForPreview]
 - -[NCNotificationAppSectionListHeaderView didTapOptionsButton:]
@@ -494,20 +413,6 @@ Symbols:
 - ___block_descriptor_73_e8_32s40s48bs56bs64w_e8_v12?0B8lw64l8s32l8s48l8s40l8s56l8
 - ___swift_closure_destructor.112Tm
 - ___swift_closure_destructor.164Tm
-- _objc_msgSend$_executeOptionsActionForRequest:action:
-- _objc_msgSend$_presentMenuAtLocation:
-- _objc_msgSend$_presentOptionsMenuForNotificationRequest:withPresentingView:optionsForSection:shouldMenuOverlapSource:
-- _objc_msgSend$actionButtonsBackgroundConfiguration
-- _objc_msgSend$appSectionListHeaderView:didRequestPresentingOptionsMenuFromView:
-- _objc_msgSend$defaultStyle
-- _objc_msgSend$initForView:
-- _objc_msgSend$initWithNotificationRequest:presentingView:settingsDelegate:optionsForSection:shouldMenuOverlapSource:
-- _objc_msgSend$notificationListComponent:requestsPresentingOptionsMenuForNotificationRequest:presentingViewProvider:optionsForSection:completion:
-- _objc_msgSend$notificationOptionsMenuWillDismiss:
-- _objc_msgSend$optionsMenu
-- _objc_msgSend$presentMenu
-- _objc_msgSend$setPreferredLayout:
-- _objc_msgSend$setShouldMenuOverlapSourcePreview:
 CStrings:
 + "%{public}@ aggregatedVisibleContentExtent %{public}@ -> %{public}@"
 + "%{public}@ asked if should present options menu for notification request %{public}@ for section %{public}@"

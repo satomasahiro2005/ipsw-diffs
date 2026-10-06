@@ -2,73 +2,28 @@
 
 > `/System/Library/PrivateFrameworks/PhotoLibraryServicesCore.framework/PhotoLibraryServicesCore`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_floatobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH.__objc_data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcaf98` | `0xcb00c` | **`+0x74`** |
+| `__AUTH_CONST.__cfstring` | `0x11e80` | `0x11ec0` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x15d0f` | `0x15d39` | **`+0x2a`** |
+| `__DATA_CONST.__const` | `0x3c50` | `0x3c60` | **`+0x10`** |
+
+### Other Changes
 
 ```diff
 
 -910.27.103.0.0
--  __TEXT.__text: 0xcaf98
 +910.33.102.0.0
-+  __TEXT.__text: 0xcb00c
-   __TEXT.__objc_methlist: 0x8304
-   __TEXT.__const: 0x2324
-   __TEXT.__dlopen_cstrs: 0x19c
-   __TEXT.__gcc_except_tab: 0x56fc
--  __TEXT.__cstring: 0x15d0f
-+  __TEXT.__cstring: 0x15d39
-   __TEXT.__oslogstring: 0xb0b9
-   __TEXT.__ustring: 0x4
-   __TEXT.__unwind_info: 0x3468
 
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3c50
-+  __DATA_CONST.__const: 0x3c60
-   __DATA_CONST.__objc_classlist: 0x408
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x160
-
-   __DATA_CONST.__objc_arraydata: 0x420
-   __DATA_CONST.__got: 0xa48
-   __AUTH_CONST.__const: 0x35e8
--  __AUTH_CONST.__cfstring: 0x11e80
-+  __AUTH_CONST.__cfstring: 0x11ec0
-   __AUTH_CONST.__objc_const: 0xaa00
-   __AUTH_CONST.__objc_intobj: 0x918
-   __AUTH_CONST.__objc_floatobj: 0x10
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libperfcheck.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 3961
--  Symbols:   9422
+-  Symbols:   7887
 -  CStrings:  3656
 +  Functions: 3962
-+  Symbols:   9425
++  Symbols:   7890
 +  CStrings:  3658
- 
 Symbols:
 + GCC_except_table2117
 + GCC_except_table2167

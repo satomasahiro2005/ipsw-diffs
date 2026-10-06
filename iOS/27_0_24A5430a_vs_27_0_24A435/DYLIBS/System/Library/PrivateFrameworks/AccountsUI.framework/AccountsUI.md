@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AccountsUI.framework/AccountsUI`
 
-```diff
+### Section Size Changes
 
- 370.0.0.0.0
--  __TEXT.__text: 0x3dc3c
-+  __TEXT.__text: 0x3dc50
-   __TEXT.__objc_methlist: 0x1a4c
-   __TEXT.__cstring: 0x2e61
-   __TEXT.__oslogstring: 0x12ce
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3dc3c` | `0x3dc50` | **`+0x14`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_2210e7918 -> sub_2218ea918 : 268 -> 272
 ~ sub_2210e7b58 -> sub_2218eab5c : 256 -> 260

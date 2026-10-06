@@ -2,100 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/ShortcutsLanguage.framework/ShortcutsLanguage`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd19c0` | `0xd81e8` | **`+0x6828`** |
+| `__TEXT.__const` | `0x755f9` | `0x762f9` | **`+0xd00`** |
+| `__DATA.__bss` | `0xb0b0` | `0xb4b0` | **`+0x400`** |
+| `__TEXT.__eh_frame` | `0x6200` | `0x6548` | **`+0x348`** |
+| `__TEXT.__cstring` | `0x7e46` | `0x80e6` | **`+0x2a0`** |
+| `__AUTH_CONST.__const` | `0x4728` | `0x4910` | **`+0x1e8`** |
+| `__TEXT.__unwind_info` | `0x2f18` | `0x3030` | **`+0x118`** |
+| `__DATA_CONST.__got` | `0x830` | `0x8d8` | **`+0xa8`** |
+| `__TEXT.__swift5_fieldmd` | `0x28c4` | `0x292c` | **`+0x68`** |
+| `__TEXT.__swift5_typeref` | `0x1852` | `0x18b6` | **`+0x64`** |
+| `__AUTH_CONST.__objc_const` | `0x10d0` | `0x1128` | **`+0x58`** |
+| `__DATA.__data` | `0x1a40` | `0x1a98` | **`+0x58`** |
+| `__TEXT.__swift5_reflstr` | `0x301d` | `0x306d` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4c8` | `0x508` | **`+0x40`** |
+| `__TEXT.__swift5_capture` | `0x828` | `0x868` | **`+0x40`** |
+| `__TEXT.__constg_swiftt` | `0x1498` | `0x14d0` | **`+0x38`** |
+| `__AUTH.__data` | `0xc18` | `0xc40` | **`+0x28`** |
+| `__AUTH_CONST.__auth_got` | `0x1220` | `0x1240` | **`+0x20`** |
+| `__AUTH_CONST.__cfstring` | `0x260` | `0x280` | **`+0x20`** |
+| `__TEXT.__swift5_proto` | `0x5a8` | `0x5c8` | **`+0x20`** |
+| `__TEXT.__swift5_mpenum` | `0x170` | `0x18c` | **`+0x1c`** |
+| `__TEXT.__objc_methlist` | `0x450` | `0x468` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x228` | `0x240` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x1a4` | `0x1b8` | **`+0x14`** |
+| `__TEXT.__swift_as_cont` | `0x338` | `0x344` | **`+0xc`** |
+| `__DATA_CONST.__objc_catlist` | `0x78` | `0x80` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x1b4` | `0x1bc` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0xe4` | `0xe8` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x128` | `0x12c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xd19c0
--  __TEXT.__objc_methlist: 0x450
--  __TEXT.__const: 0x755f9
--  __TEXT.__swift5_typeref: 0x1852
--  __TEXT.__swift5_fieldmd: 0x28c4
--  __TEXT.__constg_swiftt: 0x1498
--  __TEXT.__swift5_builtin: 0x1a4
--  __TEXT.__swift5_reflstr: 0x301d
--  __TEXT.__swift5_assocty: 0x228
-+  __TEXT.__text: 0xd81e8
-+  __TEXT.__objc_methlist: 0x468
-+  __TEXT.__const: 0x762f9
-+  __TEXT.__swift5_typeref: 0x18b6
-+  __TEXT.__swift5_fieldmd: 0x292c
-+  __TEXT.__constg_swiftt: 0x14d0
-+  __TEXT.__swift5_builtin: 0x1b8
-+  __TEXT.__swift5_reflstr: 0x306d
-+  __TEXT.__swift5_assocty: 0x240
-   __TEXT.__swift5_protos: 0x3c
--  __TEXT.__swift5_proto: 0x5a8
--  __TEXT.__swift5_types: 0x1b4
--  __TEXT.__cstring: 0x7e46
--  __TEXT.__swift_as_entry: 0xe4
--  __TEXT.__swift_as_ret: 0x128
--  __TEXT.__swift_as_cont: 0x338
--  __TEXT.__swift5_capture: 0x828
-+  __TEXT.__swift5_proto: 0x5c8
-+  __TEXT.__swift5_types: 0x1bc
-+  __TEXT.__cstring: 0x80e6
-+  __TEXT.__swift_as_entry: 0xe8
-+  __TEXT.__swift_as_ret: 0x12c
-+  __TEXT.__swift_as_cont: 0x344
-+  __TEXT.__swift5_capture: 0x868
-   __TEXT.__oslogstring: 0xc0
--  __TEXT.__swift5_mpenum: 0x170
--  __TEXT.__unwind_info: 0x2f18
--  __TEXT.__eh_frame: 0x6200
-+  __TEXT.__swift5_mpenum: 0x18c
-+  __TEXT.__unwind_info: 0x3030
-+  __TEXT.__eh_frame: 0x6548
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-5028.0.21.0.0
++5032.5.0.0.0
 
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xa70
-   __DATA_CONST.__objc_classlist: 0x58
--  __DATA_CONST.__objc_catlist: 0x78
-+  __DATA_CONST.__objc_catlist: 0x80
-   __DATA_CONST.__objc_protolist: 0x90
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4c8
-+  __DATA_CONST.__objc_selrefs: 0x508
-   __DATA_CONST.__objc_protorefs: 0x48
--  __DATA_CONST.__got: 0x830
--  __AUTH_CONST.__const: 0x4728
--  __AUTH_CONST.__cfstring: 0x260
--  __AUTH_CONST.__objc_const: 0x10d0
--  __AUTH_CONST.__auth_got: 0x1220
-+  __DATA_CONST.__got: 0x8d8
-+  __AUTH_CONST.__const: 0x4910
-+  __AUTH_CONST.__cfstring: 0x280
-+  __AUTH_CONST.__objc_const: 0x1128
-+  __AUTH_CONST.__auth_got: 0x1240
-   __AUTH.__objc_data: 0x110
--  __AUTH.__data: 0xc18
--  __DATA.__data: 0x1a40
--  __DATA.__bss: 0xb0b0
-+  __AUTH.__data: 0xc40
-+  __DATA.__data: 0x1a98
-+  __DATA.__bss: 0xb4b0
-   __DATA.__common: 0x20
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4775
--  Symbols:   4320
--  CStrings:  1005
+-  Symbols:   1634
+-  CStrings:  986
 +  Functions: 4877
-+  Symbols:   4434
-+  CStrings:  1023
- 
-Sections:
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH.__objc_data : content changed
++  Symbols:   1662
++  CStrings:  1003
 Symbols:
 + _OBJC_CLASS_$_WFAXSDSettings
 + _OBJC_CLASS_$_WFContactFieldEntry
@@ -119,14 +72,6 @@ Symbols:
 + _associated conformance 17ShortcutsLanguage7IRValueO23PersonHandleConstructorVSHAASQ
 + _associated conformance 7ToolKit10TypedValueO09PrimitiveD0O06PersonD0V0A8RendererE5ProxyV17ShortcutsLanguage022ComplexTypeConstructorH0AK0M13ArgumentLabelAkLP_SY
 + _get_enum_tag_for_layout_string 17ShortcutsLanguage7IRValueO23PersonHandleConstructorV0E0O
-+ _objc_msgSend$addressWithEmailAddress:
-+ _objc_msgSend$initWithEmailAddress:
-+ _objc_msgSend$initWithPhoneNumber:
-+ _objc_msgSend$initWithUnit:unitType:
-+ _objc_msgSend$parameterStateForKey:fallingBackToDefaultValue:
-+ _objc_msgSend$phoneNumberWithPhoneNumberString:
-+ _objc_msgSend$soundDetectionEnabled
-+ _objc_msgSend$soundDetectionSupported
 + _symbolic _____ 11WorkflowKit33WFSoundRecognitionPickerParameterC
 + _symbolic _____ 17ShortcutsLanguage7IRValueO23PersonHandleConstructorV
 + _symbolic _____ 17ShortcutsLanguage7IRValueO23PersonHandleConstructorV0E0O
@@ -161,5 +106,4 @@ CStrings:
 + "Unknown measurement unit '"
 + "malformedPersonHandleExpression"
 + "unit"
-
 ```

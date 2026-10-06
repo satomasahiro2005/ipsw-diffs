@@ -2,17 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/CommonUtilities.framework/CommonUtilities`
 
-```diff
+### Section Size Changes
 
- 302.100.1.0.0
--  __TEXT.__text: 0x256a4
-+  __TEXT.__text: 0x256c8
-   __TEXT.__objc_methlist: 0x1214
-   __TEXT.__const: 0x15f2
-   __TEXT.__gcc_except_tab: 0x28c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x26978` | `0x2699c` | **`+0x24`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_1c19c4954 -> sub_1c09ec954 : 1484 -> 1488
-~ sub_1c19c6334 -> sub_1c09ee338 : 1944 -> 1948
-~ sub_1c19c8d08 -> sub_1c09f0d10 : 292 -> 308
-~ sub_1c19c8e2c -> sub_1c09f0e44 : 260 -> 272
+~ sub_1c2759864 -> sub_1c1785864 : 1524 -> 1528
+~ sub_1c275b2ec -> sub_1c17872f0 : 1984 -> 1988
+~ sub_1c275de1c -> sub_1c1789e24 : 312 -> 328
+~ sub_1c275df54 -> sub_1c1789f6c : 260 -> 272
 ```

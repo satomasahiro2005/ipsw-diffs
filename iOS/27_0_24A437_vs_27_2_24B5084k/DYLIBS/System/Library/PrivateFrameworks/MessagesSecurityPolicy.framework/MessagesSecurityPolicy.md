@@ -2,92 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/MessagesSecurityPolicy.framework/MessagesSecurityPolicy`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ad68` | `0x1ce80` | **`+0x2118`** |
+| `__TEXT.__const` | `0x157e` | `0x18ce` | **`+0x350`** |
+| `__TEXT.__oslogstring` | `0xf27` | `0x11e7` | **`+0x2c0`** |
+| `__AUTH_CONST.__const` | `0x1418` | `0x16b0` | **`+0x298`** |
+| `__TEXT.__constg_swiftt` | `0xc8c` | `0xdfc` | **`+0x170`** |
+| `__TEXT.__eh_frame` | `0x588` | `0x6b0` | **`+0x128`** |
+| `__TEXT.__swift5_typeref` | `0xb8c` | `0xc8c` | **`+0x100`** |
+| `__AUTH.__data` | `0x4c8` | `0x598` | **`+0xd0`** |
+| `__TEXT.__swift5_fieldmd` | `0x840` | `0x90c` | **`+0xcc`** |
+| `__TEXT.__swift5_assocty` | `0x2a8` | `0x348` | **`+0xa0`** |
+| `__TEXT.__swift5_reflstr` | `0x737` | `0x7d7` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x5b8` | `0x640` | **`+0x88`** |
+| `__DATA.__data` | `0x388` | `0x3e0` | **`+0x58`** |
+| `__TEXT.__cstring` | `0x7e5` | `0x815` | **`+0x30`** |
+| `__TEXT.__swift5_proto` | `0xec` | `0x118` | **`+0x2c`** |
+| `__AUTH_CONST.__auth_got` | `0x730` | `0x758` | **`+0x28`** |
+| `__AUTH_CONST.__objc_const` | `0xdc8` | `0xde8` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2a8` | `0x2c8` | **`+0x20`** |
+| `__DATA_DIRTY.__data` | `0x738` | `0x758` | **`+0x20`** |
+| `__TEXT.__swift5_capture` | `0x8c4` | `0x8e4` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x1c8` | `0x1e0` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0xa8` | `0xc0` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x354` | `0x364` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `0x74` | `0x80` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
 -1491.100.1.2.25
--  __TEXT.__text: 0x19f24
--  __TEXT.__objc_methlist: 0x354
--  __TEXT.__const: 0x157e
--  __TEXT.__constg_swiftt: 0xc8c
--  __TEXT.__swift5_typeref: 0xb8c
 +1491.200.63.2.1
-+  __TEXT.__text: 0x1bf64
-+  __TEXT.__objc_methlist: 0x364
-+  __TEXT.__const: 0x18ce
-+  __TEXT.__constg_swiftt: 0xdfc
-+  __TEXT.__swift5_typeref: 0xc8c
-   __TEXT.__swift5_builtin: 0x50
--  __TEXT.__swift5_reflstr: 0x737
--  __TEXT.__swift5_fieldmd: 0x840
--  __TEXT.__swift5_assocty: 0x2a8
--  __TEXT.__oslogstring: 0xf27
--  __TEXT.__cstring: 0x7e5
--  __TEXT.__swift5_proto: 0xec
--  __TEXT.__swift5_types: 0xa8
--  __TEXT.__swift5_capture: 0x8c4
--  __TEXT.__swift5_protos: 0x74
-+  __TEXT.__swift5_reflstr: 0x7d7
-+  __TEXT.__swift5_fieldmd: 0x90c
-+  __TEXT.__swift5_assocty: 0x348
-+  __TEXT.__oslogstring: 0x11e7
-+  __TEXT.__cstring: 0x815
-+  __TEXT.__swift5_proto: 0x118
-+  __TEXT.__swift5_types: 0xc0
-+  __TEXT.__swift5_capture: 0x8e4
-+  __TEXT.__swift5_protos: 0x80
-   __TEXT.__swift_as_entry: 0x8
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x10
--  __TEXT.__unwind_info: 0x718
--  __TEXT.__eh_frame: 0x588
-+  __TEXT.__unwind_info: 0x7a8
-+  __TEXT.__eh_frame: 0x6b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2a8
-+  __DATA_CONST.__objc_selrefs: 0x2c8
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__got: 0x1c8
--  __AUTH_CONST.__const: 0x1418
--  __AUTH_CONST.__objc_const: 0xdc8
--  __AUTH_CONST.__auth_got: 0x730
-+  __DATA_CONST.__got: 0x1e0
-+  __AUTH_CONST.__const: 0x16b0
-+  __AUTH_CONST.__objc_const: 0xde8
-+  __AUTH_CONST.__auth_got: 0x758
-   __AUTH.__objc_data: 0x1d0
--  __AUTH.__data: 0x4c8
--  __DATA.__data: 0x388
-+  __AUTH.__data: 0x598
-+  __DATA.__data: 0x3e0
-   __DATA_DIRTY.__objc_data: 0xa0
--  __DATA_DIRTY.__data: 0x738
-+  __DATA_DIRTY.__data: 0x758
-   __DATA_DIRTY.__bss: 0x100
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 547
--  Symbols:   530
+-  Symbols:   487
 -  CStrings:  118
 +  Functions: 585
-+  Symbols:   553
++  Symbols:   507
 +  CStrings:  130
- 
 Symbols:
 + _BlastDoorInstanceTypeLockDownMode
 + _OBJC_CLASS_$_IMSyndicationUtilities
-+ _objc_msgSend$cloudKitShareURLInPayloadData:
-+ _objc_msgSend$cloudKitShareURLsInAttributedString:
-+ _objc_msgSend$deviceIsLockedDownFor:senderOrigin:
 + _swift_arrayInitWithTakeBackToFront
 + _swift_arrayInitWithTakeFrontToBack
 + _symbolic $s22MessagesSecurityPolicy20SyndicationUtilitiesP

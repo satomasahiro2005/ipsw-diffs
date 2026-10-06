@@ -2,97 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/SoftwareUpdateServicesDaemonFramework.framework/SoftwareUpdateServicesDaemonFramework`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x625b0` | `0x62df4` | **`+0x844`** |
+| `__TEXT.__cstring` | `0x10a01` | `0x110f8` | **`+0x6f7`** |
+| `__AUTH_CONST.__cfstring` | `0x89a0` | `0x8c80` | **`+0x2e0`** |
+| `__AUTH_CONST.__objc_const` | `0x81a8` | `0x83d0` | **`+0x228`** |
+| `__TEXT.__objc_methlist` | `0x505c` | `0x51a4` | **`+0x148`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3d68` | `0x3e38` | **`+0xd0`** |
+| `__DATA_CONST.__const` | `0x1340` | `0x13f8` | **`+0xb8`** |
+| `__AUTH.__objc_data` | `0x190` | `0x230` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x19e0` | `0x1a60` | **`+0x80`** |
+| `__DATA.__data` | `0x7e0` | `0x840` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0x760` | `0x7a8` | **`+0x48`** |
+| `__AUTH_CONST.__const` | `0x340` | `0x360` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0xab0` | `0xad0` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x340` | `0x354` | **`+0x14`** |
+| `__DATA.__bss` | `0x38` | `0x48` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x138` | `0x148` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0xf0` | `0x100` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x80` | `0x90` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0xa8` | `0xb0` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x10` | `0x18` | **`+0x8`** |
+| `__TEXT.__const` | `0x100` | `0x108` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -1107.0.0.0.0
--  __TEXT.__text: 0x625b0
--  __TEXT.__objc_methlist: 0x505c
--  __TEXT.__const: 0x100
--  __TEXT.__cstring: 0x10a01
 +1112.0.1.0.0
-+  __TEXT.__text: 0x62df4
-+  __TEXT.__objc_methlist: 0x51a4
-+  __TEXT.__const: 0x108
-+  __TEXT.__cstring: 0x110f8
-   __TEXT.__oslogstring: 0x852
--  __TEXT.__gcc_except_tab: 0x760
--  __TEXT.__unwind_info: 0x19e0
-+  __TEXT.__gcc_except_tab: 0x7a8
-+  __TEXT.__unwind_info: 0x1a60
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1340
--  __DATA_CONST.__objc_classlist: 0x138
-+  __DATA_CONST.__const: 0x13f8
-+  __DATA_CONST.__objc_classlist: 0x148
-   __DATA_CONST.__objc_catlist: 0x30
--  __DATA_CONST.__objc_protolist: 0xa8
-+  __DATA_CONST.__objc_protolist: 0xb0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3d68
--  __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0xf0
-+  __DATA_CONST.__objc_selrefs: 0x3e38
-+  __DATA_CONST.__objc_protorefs: 0x18
-+  __DATA_CONST.__objc_superrefs: 0x100
-   __DATA_CONST.__objc_arraydata: 0xa0
--  __DATA_CONST.__got: 0xab0
--  __AUTH_CONST.__const: 0x340
--  __AUTH_CONST.__cfstring: 0x89a0
--  __AUTH_CONST.__objc_const: 0x81a8
-+  __DATA_CONST.__got: 0xad0
-+  __AUTH_CONST.__const: 0x360
-+  __AUTH_CONST.__cfstring: 0x8c80
-+  __AUTH_CONST.__objc_const: 0x83d0
-   __AUTH_CONST.__objc_dictobj: 0xa0
-   __AUTH_CONST.__objc_intobj: 0x180
-   __AUTH_CONST.__objc_arrayobj: 0xc0
-   __AUTH_CONST.__auth_got: 0x508
--  __AUTH.__objc_data: 0x190
--  __DATA.__objc_ivar: 0x340
--  __DATA.__data: 0x7e0
--  __DATA.__bss: 0x38
-+  __AUTH.__objc_data: 0x230
-+  __DATA.__objc_ivar: 0x354
-+  __DATA.__data: 0x840
-+  __DATA.__bss: 0x48
-   __DATA_DIRTY.__objc_data: 0xaa0
--  __DATA_DIRTY.__bss: 0x80
-+  __DATA_DIRTY.__bss: 0x90
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/Network.framework/Network
 
-   - /System/Library/PrivateFrameworks/BiomeLibrary.framework/BiomeLibrary
-   - /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet
-   - /System/Library/PrivateFrameworks/DuetActivityScheduler.framework/DuetActivityScheduler
 +  - /System/Library/PrivateFrameworks/LowPowerMode.framework/LowPowerMode
-   - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
-   - /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset
-   - /System/Library/PrivateFrameworks/MobileInBoxUpdate.framework/MobileInBoxUpdate
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2106
--  Symbols:   5141
+-  Symbols:   3370
 -  CStrings:  1480
 +  Functions: 2142
-+  Symbols:   5234
++  Symbols:   3435
 +  CStrings:  1507
- 
 Symbols:
 + +[SUCSPNMonitor sharedMonitor]
 + +[SUDaemonHelper shared]
@@ -161,34 +111,6 @@ Symbols:
 + ___block_descriptor_40_e8_32r_e5_v8?0lr32l8
 + ___block_descriptor_40_e8_32w_e8_v12?0C8lw32l8
 + ___block_descriptor_48_e8_32r40r_e20_v20?0B8"NSError"12lr32l8r40l8
-+ _objc_msgSend$SUCSPNStateToString:
-+ _objc_msgSend$_handleCSPNStateChange:
-+ _objc_msgSend$activate
-+ _objc_msgSend$addCSPNStateChange:
-+ _objc_msgSend$alternateUpdateFallbackDelayOverride
-+ _objc_msgSend$bucketTimestampIn10Minutes:
-+ _objc_msgSend$connection
-+ _objc_msgSend$connectionEnsured
-+ _objc_msgSend$connectionQueue
-+ _objc_msgSend$cspnStateHistory
-+ _objc_msgSend$hasAlternateUpdateFallbackWindowElapsedForPreferred:alternate:
-+ _objc_msgSend$initWithServiceName:
-+ _objc_msgSend$numberWithUnsignedInteger:
-+ _objc_msgSend$objectAtIndexedSubscript:
-+ _objc_msgSend$powerNapMonitor
-+ _objc_msgSend$registerWithCallback:callback:
-+ _objc_msgSend$setConnection:
-+ _objc_msgSend$shared
-+ _objc_msgSend$startMonitoring
-+ _objc_msgSend$stateHistory
-+ _objc_msgSend$stopMonitoring
-+ _objc_msgSend$stringByAppendingString:
-+ _objc_msgSend$synchronousRemoteObjectProxyWithErrorHandler:
-+ _objc_msgSend$telemetryDictionary
-+ _objc_msgSend$trialBGSTAutoUpdateEnabled:
-+ _objc_msgSend$trialBGSTAutoUpdateEnabledWithError:
-+ _objc_msgSend$unregister
-+ _objc_msgSend$unsignedCharValue
 + _shared.__helper
 + _shared.onceToken
 - -[SUManagerCore isDescriptorAutoUpdatable:]

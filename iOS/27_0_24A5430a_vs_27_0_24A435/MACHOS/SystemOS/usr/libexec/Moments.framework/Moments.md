@@ -2,58 +2,45 @@
 
 > `/usr/libexec/Moments.framework/Moments`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__cfstring` | `0x106e0` | `0x10920` | **`+0x240`** |
+| `__TEXT.__cstring` | `0xe22f` | `0xe38f` | **`+0x160`** |
+| `__TEXT.__text` | `0x75b34` | `0x75b4c` | **`+0x18`** |
+
+### Same-size Content Changes
+
+- `__AUTH.__data`
+- `__AUTH.__objc_data`
+- `__AUTH_CONST.__const`
+- `__AUTH_CONST.__objc_arrayobj`
+- `__AUTH_CONST.__objc_const`
+- `__AUTH_CONST.__objc_intobj`
+- `__DATA.__data`
 - `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_arraydata`
 - `__DATA_CONST.__objc_catlist`
 - `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
 - `__DATA_DIRTY.__data`
+- `__DATA_DIRTY.__objc_data`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
- 417.0.0.0.0
--  __TEXT.__text: 0x75b34
-+  __TEXT.__text: 0x75b4c
-   __TEXT.__objc_methlist: 0x682c
--  __TEXT.__cstring: 0xe22f
-+  __TEXT.__cstring: 0xe38f
-   __TEXT.__const: 0xfe8
-   __TEXT.__oslogstring: 0x55ce
-   __TEXT.__gcc_except_tab: 0x430
-
-   __DATA_CONST.__objc_arraydata: 0x470
-   __DATA_CONST.__got: 0x840
-   __AUTH_CONST.__const: 0x7e0
--  __AUTH_CONST.__cfstring: 0x106e0
-+  __AUTH_CONST.__cfstring: 0x10920
-   __AUTH_CONST.__objc_const: 0xaec0
-   __AUTH_CONST.__objc_arrayobj: 0xd8
-   __AUTH_CONST.__objc_intobj: 0x570
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2925
 +  Functions: 2924
-   Symbols:   7921
+
 -  CStrings:  5172
 +  CStrings:  5190
- 
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/Moments/install/TempContent/Objects/Moments.build/Moments.build/Objects-normal/arm64e/RTLocation+MOExtensions-7e1a45f4f90ca3312d0526f55c247da1.o
 + _swift_release_x27

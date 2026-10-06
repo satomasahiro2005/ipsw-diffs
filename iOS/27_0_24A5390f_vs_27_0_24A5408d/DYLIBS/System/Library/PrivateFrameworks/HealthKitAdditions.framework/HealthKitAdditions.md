@@ -2,17 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/HealthKitAdditions.framework/HealthKitAdditions`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x47784` | `0x47764` | **`-0x20`** |
+
+### Other Changes
+
 ```diff
 
 -7027.0.67.2.1
--  __TEXT.__text: 0x47784
 +7027.0.72.2.5
-+  __TEXT.__text: 0x47764
-   __TEXT.__objc_methlist: 0x328
-   __TEXT.__const: 0x3800
-   __TEXT.__constg_swiftt: 0x18ac
 Functions:
-~ sub_26aafe558 -> sub_282615558 : 1444 -> 1436
-~ sub_26ab00470 -> sub_282617468 : 988 -> 972
-~ sub_26ab0ade4 -> sub_282621dcc : 796 -> 788
+~ sub_26a9a4558 -> sub_282522558 : 1444 -> 1436
+~ sub_26a9a6470 -> sub_282524468 : 988 -> 972
+~ sub_26a9b0de4 -> sub_28252edcc : 796 -> 788
 ```

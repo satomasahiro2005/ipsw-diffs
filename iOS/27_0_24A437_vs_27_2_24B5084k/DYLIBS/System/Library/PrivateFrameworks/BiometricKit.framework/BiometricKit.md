@@ -2,61 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/BiometricKit.framework/BiometricKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3c59c` | `0x3cbc4` | **`+0x628`** |
+| `__TEXT.__oslogstring` | `0x4f8a` | `0x4fea` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0xb58` | `0xba0` | **`+0x48`** |
+| `__AUTH_CONST.__cfstring` | `0x17c0` | `0x1800` | **`+0x40`** |
+| `__TEXT.__objc_methlist` | `0x2cf4` | `0x2d24` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x2818` | `0x2841` | **`+0x29`** |
+| `__AUTH_CONST.__objc_const` | `0x5258` | `0x5280` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x10d0` | `0x10f0` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1768` | `0x1780` | **`+0x18`** |
+| `__DATA.__bss` | `0x28` | `0x38` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x2ec` | `0x2f0` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -577.0.0.0.0
--  __TEXT.__text: 0x3b8e8
--  __TEXT.__objc_methlist: 0x2cf4
 +578.40.6.0.0
-+  __TEXT.__text: 0x3bf04
-+  __TEXT.__objc_methlist: 0x2d24
-   __TEXT.__const: 0x220
--  __TEXT.__cstring: 0x2818
--  __TEXT.__oslogstring: 0x4f8a
--  __TEXT.__gcc_except_tab: 0xb58
--  __TEXT.__unwind_info: 0x1630
-+  __TEXT.__cstring: 0x2841
-+  __TEXT.__oslogstring: 0x4fea
-+  __TEXT.__gcc_except_tab: 0xba0
-+  __TEXT.__unwind_info: 0x1658
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x170
-   __DATA_CONST.__objc_protolist: 0x38
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1768
-+  __DATA_CONST.__objc_selrefs: 0x1780
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x120
-   __DATA_CONST.__objc_arraydata: 0x50
-   __DATA_CONST.__got: 0x248
-   __AUTH_CONST.__const: 0x540
--  __AUTH_CONST.__cfstring: 0x17c0
--  __AUTH_CONST.__objc_const: 0x5258
-+  __AUTH_CONST.__cfstring: 0x1800
-+  __AUTH_CONST.__objc_const: 0x5280
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_intobj: 0x90
-   __AUTH_CONST.__auth_got: 0x3d0
-   __AUTH.__objc_data: 0x690
--  __DATA.__objc_ivar: 0x2ec
-+  __DATA.__objc_ivar: 0x2f0
-   __DATA.__data: 0x2a0
-   __DATA_DIRTY.__objc_data: 0x7d0
-   __DATA_DIRTY.__data: 0x8
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1548
--  Symbols:   2534
+-  Symbols:   2086
 -  CStrings:  741
 +  Functions: 1555
-+  Symbols:   2545
++  Symbols:   2095
 +  CStrings:  745
- 
 Symbols:
 + -[BKDevice valueForDeviceProperty:error:]
 + -[BiometricKitXPCClient getDeviceProperties:]
@@ -72,8 +46,6 @@ Symbols:
 + _OSLogTraceHandle
 + ___45-[BiometricKitXPCClient getDeviceProperties:]_block_invoke
 + ___45-[BiometricKitXPCClient getDeviceProperties:]_block_invoke_2
-+ _objc_msgSend$getDeviceProperties:
-+ _objc_msgSend$getDeviceProperties:replyBlock:
 - GCC_except_table136
 - GCC_except_table175
 - GCC_except_table199

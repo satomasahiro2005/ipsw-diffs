@@ -2,119 +2,69 @@
 
 > `/System/Library/FlowTools/Tools/SiriPhoneFlowTools.flowtool/SiriPhoneFlowTools`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_mpenum`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb44ac` | `0xb6084` | **`+0x1bd8`** |
+| `__DATA_CONST.__const` | `0x6e08` | `0x6910` | **`-0x4f8`** |
+| `__TEXT.__cstring` | `0x1cc5` | `0x1e22` | **`+0x15d`** |
+| `__DATA.__bss` | `0xace8` | `0xadd8` | **`+0xf0`** |
+| `__TEXT.__const` | `0x8a08` | `0x8ae8` | **`+0xe0`** |
+| `__DATA.__data` | `0x37a8` | `0x3870` | **`+0xc8`** |
+| `__TEXT.__oslogstring` | `0x53ee` | `0x549e` | **`+0xb0`** |
+| `__TEXT.__swift5_capture` | `0xef0` | `0xfa0` | **`+0xb0`** |
+| `__DATA.__objc_const` | `0x1a98` | `0x1b28` | **`+0x90`** |
+| `__TEXT.__unwind_info` | `0x3360` | `0x33f0` | **`+0x90`** |
+| `__TEXT.__eh_frame` | `0x5fe0` | `0x6060` | **`+0x80`** |
+| `__TEXT.__swift5_reflstr` | `0x1e1b` | `0x1e9b` | **`+0x80`** |
+| `__TEXT.__constg_swiftt` | `0x1ce8` | `0x1d50` | **`+0x68`** |
+| `__TEXT.__objc_classname` | `0x7e2` | `0x842` | **`+0x60`** |
+| `__TEXT.__swift5_fieldmd` | `0x1d24` | `0x1d74` | **`+0x50`** |
+| `__TEXT.__objc_stubs` | `0x12c0` | `0x1300` | **`+0x40`** |
+| `__TEXT.__swift5_typeref` | `0x24ec` | `0x2528` | **`+0x3c`** |
+| `__TEXT.__objc_methname` | `0x1177` | `0x1197` | **`+0x20`** |
+| `__DATA.__objc_selrefs` | `0x560` | `0x570` | **`+0x10`** |
+| `__DATA_CONST.__auth_ptr` | `0xbe8` | `0xbf8` | **`+0x10`** |
+| `__TEXT.__objc_methtype` | `0x17f` | `0x189` | **`+0xa`** |
+| `__DATA_CONST.__got` | `0xa70` | `0xa78` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0xe8` | `0xf0` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x5e4` | `0x5ec` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x264` | `0x26c` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_got`
 - `__DATA_CONST.__cfstring`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__auth_got`
-- `__DATA.__objc_data`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -3600.38.22.11.2
--  __TEXT.__text: 0xaba34
 +3605.17.1.1.1
-+  __TEXT.__text: 0xad4fc
-   __TEXT.__auth_stubs: 0x2870
--  __TEXT.__objc_stubs: 0x12c0
-+  __TEXT.__objc_stubs: 0x1300
-   __TEXT.__objc_methlist: 0x154
--  __TEXT.__const: 0x8a08
--  __TEXT.__cstring: 0x1cc5
--  __TEXT.__swift5_typeref: 0x24ec
--  __TEXT.__oslogstring: 0x53ee
--  __TEXT.__swift5_capture: 0xef0
--  __TEXT.__constg_swiftt: 0x1ce8
--  __TEXT.__swift5_fieldmd: 0x1d24
--  __TEXT.__swift5_reflstr: 0x1e1b
-+  __TEXT.__const: 0x8ae8
-+  __TEXT.__cstring: 0x1e22
-+  __TEXT.__swift5_typeref: 0x2528
-+  __TEXT.__oslogstring: 0x549e
-+  __TEXT.__swift5_capture: 0xfa0
-+  __TEXT.__constg_swiftt: 0x1d50
-+  __TEXT.__swift5_fieldmd: 0x1d74
-+  __TEXT.__swift5_reflstr: 0x1e9b
-   __TEXT.__swift5_builtin: 0x78
-   __TEXT.__swift5_assocty: 0x860
--  __TEXT.__swift5_proto: 0x5e4
--  __TEXT.__swift5_types: 0x264
--  __TEXT.__objc_classname: 0x7e2
--  __TEXT.__objc_methname: 0x1177
--  __TEXT.__objc_methtype: 0x17f
-+  __TEXT.__swift5_proto: 0x5ec
-+  __TEXT.__swift5_types: 0x26c
-+  __TEXT.__objc_classname: 0x842
-+  __TEXT.__objc_methname: 0x1197
-+  __TEXT.__objc_methtype: 0x189
-   __TEXT.__swift5_protos: 0x70
-   __TEXT.__swift_as_entry: 0x2e8
-   __TEXT.__swift_as_ret: 0x344
-   __TEXT.__swift_as_cont: 0x48c
-   __TEXT.__swift5_mpenum: 0x68
--  __TEXT.__unwind_info: 0x3d40
--  __TEXT.__eh_frame: 0x5fe0
--  __DATA_CONST.__const: 0x6e08
-+  __TEXT.__unwind_info: 0x3e08
-+  __TEXT.__eh_frame: 0x6060
-+  __DATA_CONST.__const: 0x6910
-   __DATA_CONST.__cfstring: 0xc0
--  __DATA_CONST.__objc_classlist: 0xe8
-+  __DATA_CONST.__objc_classlist: 0xf0
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__auth_got: 0x1440
--  __DATA_CONST.__got: 0xa70
--  __DATA_CONST.__auth_ptr: 0xbe8
--  __DATA.__objc_const: 0x1a98
--  __DATA.__objc_selrefs: 0x560
-+  __DATA_CONST.__got: 0xa78
-+  __DATA_CONST.__auth_ptr: 0xbf8
-+  __DATA.__objc_const: 0x1b28
-+  __DATA.__objc_selrefs: 0x570
-   __DATA.__objc_data: 0x48
--  __DATA.__data: 0x37a8
-+  __DATA.__data: 0x3870
-   __DATA.__common: 0x338
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/Contacts.framework/Contacts
 
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
-   - /System/Library/PrivateFrameworks/CallHistory.framework/CallHistory
 +  - /System/Library/PrivateFrameworks/DeviceSelectionEmergencyFlow.framework/DeviceSelectionEmergencyFlow
-   - /System/Library/PrivateFrameworks/DialogEngine.framework/DialogEngine
-   - /System/Library/PrivateFrameworks/FTServices.framework/FTServices
-   - /System/Library/PrivateFrameworks/FaceTimeMessageStore.framework/FaceTimeMessageStore
 
-   - /System/Library/PrivateFrameworks/Rapport.framework/Rapport
-   - /System/Library/PrivateFrameworks/SAObjects.framework/SAObjects
-   - /System/Library/PrivateFrameworks/SiriAnalytics.framework/SiriAnalytics
 +  - /System/Library/PrivateFrameworks/SiriDeviceSelection.framework/SiriDeviceSelection
-   - /System/Library/PrivateFrameworks/SiriDialogEngine.framework/SiriDialogEngine
-   - /System/Library/PrivateFrameworks/SiriFlowEnvironment.framework/SiriFlowEnvironment
-   - /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5451
 -  Symbols:   11597
 -  CStrings:  802
 +  Functions: 5506
 +  Symbols:   11664
 +  CStrings:  814
- 
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/SiriPhone/install/Symbols/BuiltProducts/libSiriPhoneFlowToolsImplementation.a(GeneratedStringSymbols_SiriPhone.o)
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/SiriPhone/install/Symbols/BuiltProducts/libSiriPhoneFlowToolsImplementation.a(SPHCallCenter-b14328fffe01c1b706a937f7b537e56c.o)

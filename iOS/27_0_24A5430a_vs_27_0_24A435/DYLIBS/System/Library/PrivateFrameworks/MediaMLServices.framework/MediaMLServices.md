@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MediaMLServices.framework/MediaMLServices`
 
-```diff
+### Section Size Changes
 
- 124.1.0.0.0
--  __TEXT.__text: 0x15d6c
-+  __TEXT.__text: 0x15d80
-   __TEXT.__objc_methlist: 0xfc
-   __TEXT.__const: 0x550
-   __TEXT.__cstring: 0xa19
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15d6c` | `0x15d80` | **`+0x14`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s15MediaMLServices11_MLServiceSC13getModelStats17completionHandleryySDySSypGSgYbcSg_tFyyYacfU_TY0_ : 592 -> 596
 ~ _$s15MediaMLServices11_MLServiceSC13getModelStats17completionHandleryySDySSypGSgYbcSg_tFyyYacfU_TATQ0_ : 256 -> 260

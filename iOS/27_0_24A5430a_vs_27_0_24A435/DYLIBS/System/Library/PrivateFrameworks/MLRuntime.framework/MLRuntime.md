@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/MLRuntime.framework/MLRuntime`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_2 : 12 -> 24

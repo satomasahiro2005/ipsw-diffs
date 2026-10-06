@@ -2,14 +2,16 @@
 
 > `/usr/bin/truncate`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x42` | `0x4a` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__text: 0x388
-   __TEXT.__auth_stubs: 0xd0
--  __TEXT.__const: 0x42
-+  __TEXT.__const: 0x4a
-   __TEXT.__cstring: 0x92
-   __TEXT.__unwind_info: 0x60
-   __DATA_CONST.__auth_got: 0x68
-
+-487.0.0.0.0
++487.0.1.0.0
 ```

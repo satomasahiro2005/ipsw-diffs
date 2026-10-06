@@ -2,141 +2,74 @@
 
 > `/System/Library/PrivateFrameworks/WorkflowKit.framework/WorkflowKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8ff3e8` | `0x83faa8` | **`-0xbf940`** |
+| `__TEXT.__cstring` | `0x8d4d4` | `0xab018` | **`+0x1db44`** |
+| `__AUTH_CONST.__cfstring` | `0x2bd60` | `0x28ae0` | **`-0x3280`** |
+| `__DATA.__bss` | `0x2e988` | `0x31be8` | **`+0x3260`** |
+| `__AUTH_CONST.__const` | `0x40530` | `0x436e0` | **`+0x31b0`** |
+| `__TEXT.__objc_methlist` | `0x2eaf4` | `0x2cd54` | **`-0x1da0`** |
+| `__TEXT.__const` | `0x24648` | `0x26358` | **`+0x1d10`** |
+| `__TEXT.__eh_frame` | `0x23454` | `0x2444c` | **`+0xff8`** |
+| `__TEXT.__swift5_capture` | `0x5dc0` | `0x6c58` | **`+0xe98`** |
+| `__TEXT.__oslogstring` | `0x23aa1` | `0x245f3` | **`+0xb52`** |
+| `__TEXT.__unwind_info` | `0x1c120` | `0x1ca38` | **`+0x918`** |
+| `__TEXT.__swift5_typeref` | `0xd37e` | `0xdbfc` | **`+0x87e`** |
+| `__TEXT.__constg_swiftt` | `0x9794` | `0x9ec4` | **`+0x730`** |
+| `__TEXT.__swift5_fieldmd` | `0x7894` | `0x7f48` | **`+0x6b4`** |
+| `__AUTH.__data` | `0x7128` | `0x77c8` | **`+0x6a0`** |
+| `__TEXT.__swift5_reflstr` | `0x6278` | `0x6728` | **`+0x4b0`** |
+| `__DATA.__data` | `0xd7d8` | `0xdc18` | **`+0x440`** |
+| `__DATA_CONST.__const` | `0xf0a0` | `0xecb0` | **`-0x3f0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x138f0` | `0x13540` | **`-0x3b0`** |
+| `__AUTH_CONST.__objc_const` | `0x554c0` | `0x551c8` | **`-0x2f8`** |
+| `__TEXT.__ustring` | `0x3f0c` | `0x3cae` | **`-0x25e`** |
+| `__TEXT.__swift5_proto` | `0x1a6c` | `0x1c1c` | **`+0x1b0`** |
+| `__AUTH_CONST.__auth_got` | `0x5180` | `0x52c0` | **`+0x140`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x948` | `0x810` | **`-0x138`** |
+| `__DATA_CONST.__objc_arraydata` | `0x1650` | `0x1548` | **`-0x108`** |
+| `__TEXT.__dlopen_cstrs` | `0x110b` | `0x1041` | **`-0xca`** |
+| `__DATA_CONST.__got` | `0x5cc0` | `0x5d68` | **`+0xa8`** |
+| `__TEXT.__swift5_types` | `0xb30` | `0xbd4` | **`+0xa4`** |
+| `__DATA.__objc_ivar` | `0x2150` | `0x20c8` | **`-0x88`** |
+| `__TEXT.__swift_as_cont` | `0x1470` | `0x14f8` | **`+0x88`** |
+| `__AUTH.__objc_data` | `0x10d70` | `0x10cf8` | **`-0x78`** |
+| `__TEXT.__swift5_assocty` | `0x22d8` | `0x2338` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0x4d24` | `0x4cc8` | **`-0x5c`** |
+| `__DATA_DIRTY.__objc_data` | `0x8ec8` | `0x8e78` | **`-0x50`** |
+| `__TEXT.__swift_as_ret` | `0xc58` | `0xc9c` | **`+0x44`** |
+| `__AUTH_CONST.__objc_intobj` | `0xf90` | `0xfc0` | **`+0x30`** |
+| `__TEXT.__swift_as_entry` | `0xb00` | `0xb30` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0x2400` | `0x2420` | **`+0x20`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1368` | `0x1350` | **`-0x18`** |
+| `__DATA_DIRTY.__data` | `0xcb8` | `0xca0` | **`-0x18`** |
+| `__TEXT.__swift5_builtin` | `0x668` | `0x67c` | **`+0x14`** |
+| `__TEXT.__swift5_protos` | `0x13c` | `0x14c` | **`+0x10`** |
+| `__DATA.__common` | `0x2eb0` | `0x2eb8` | **`+0x8`** |
+| `__DATA_CONST.__objc_catlist` | `0x3e0` | `0x3d8` | **`-0x8`** |
+| `__DATA_DIRTY.__common` | `0x10` | `0x18` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `0xd4` | `0xdc` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -5037.109.0.0.0
--  __TEXT.__text: 0x8c20b8
--  __TEXT.__objc_methlist: 0x2eaf4
--  __TEXT.__const: 0x24648
--  __TEXT.__dlopen_cstrs: 0x110b
--  __TEXT.__swift5_typeref: 0xd37e
--  __TEXT.__cstring: 0x8d4d4
--  __TEXT.__oslogstring: 0x23aa1
--  __TEXT.__constg_swiftt: 0x9794
--  __TEXT.__swift5_reflstr: 0x6278
--  __TEXT.__swift5_fieldmd: 0x7894
--  __TEXT.__swift5_builtin: 0x668
--  __TEXT.__swift5_assocty: 0x22d8
--  __TEXT.__swift5_proto: 0x1a6c
--  __TEXT.__swift5_types: 0xb30
--  __TEXT.__swift5_capture: 0x5dc0
--  __TEXT.__swift_as_entry: 0xb00
--  __TEXT.__swift_as_ret: 0xc58
--  __TEXT.__swift_as_cont: 0x1470
--  __TEXT.__swift5_protos: 0x13c
--  __TEXT.__swift5_mpenum: 0xd4
--  __TEXT.__gcc_except_tab: 0x4d24
--  __TEXT.__ustring: 0x3f0c
--  __TEXT.__unwind_info: 0x21908
--  __TEXT.__eh_frame: 0x2347c
 +5110.0.8.0.0
-+  __TEXT.__text: 0x801c0c
-+  __TEXT.__objc_methlist: 0x2cd54
-+  __TEXT.__const: 0x26358
-+  __TEXT.__dlopen_cstrs: 0x1041
-+  __TEXT.__swift5_typeref: 0xdbfc
-+  __TEXT.__cstring: 0xab018
-+  __TEXT.__oslogstring: 0x245f3
-+  __TEXT.__constg_swiftt: 0x9ec4
-+  __TEXT.__swift5_reflstr: 0x6728
-+  __TEXT.__swift5_fieldmd: 0x7f48
-+  __TEXT.__swift5_builtin: 0x67c
-+  __TEXT.__swift5_assocty: 0x2338
-+  __TEXT.__swift5_proto: 0x1c1c
-+  __TEXT.__swift5_types: 0xbd4
-+  __TEXT.__swift5_capture: 0x6c58
-+  __TEXT.__swift_as_entry: 0xb30
-+  __TEXT.__swift_as_ret: 0xc9c
-+  __TEXT.__swift_as_cont: 0x14f8
-+  __TEXT.__swift5_protos: 0x14c
-+  __TEXT.__swift5_mpenum: 0xdc
-+  __TEXT.__gcc_except_tab: 0x4cc8
-+  __TEXT.__ustring: 0x3cae
-+  __TEXT.__unwind_info: 0x21a90
-+  __TEXT.__eh_frame: 0x2447c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xf0a0
--  __DATA_CONST.__objc_classlist: 0x2400
--  __DATA_CONST.__objc_catlist: 0x3e0
-+  __DATA_CONST.__const: 0xecb0
-+  __DATA_CONST.__objc_classlist: 0x2420
-+  __DATA_CONST.__objc_catlist: 0x3d8
-   __DATA_CONST.__objc_protolist: 0x6d0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x138f0
-+  __DATA_CONST.__objc_selrefs: 0x13540
-   __DATA_CONST.__objc_protorefs: 0x2a0
--  __DATA_CONST.__objc_superrefs: 0x1368
--  __DATA_CONST.__objc_arraydata: 0x1650
--  __DATA_CONST.__got: 0x5cc0
--  __AUTH_CONST.__const: 0x40530
--  __AUTH_CONST.__cfstring: 0x2bd60
--  __AUTH_CONST.__objc_const: 0x554c0
-+  __DATA_CONST.__objc_superrefs: 0x1350
-+  __DATA_CONST.__objc_arraydata: 0x1548
-+  __DATA_CONST.__got: 0x5d68
-+  __AUTH_CONST.__const: 0x436e0
-+  __AUTH_CONST.__cfstring: 0x28ae0
-+  __AUTH_CONST.__objc_const: 0x551c8
-   __AUTH_CONST.__objc_dictobj: 0x4b0
--  __AUTH_CONST.__objc_intobj: 0xf90
--  __AUTH_CONST.__objc_arrayobj: 0x948
-+  __AUTH_CONST.__objc_intobj: 0xfc0
-+  __AUTH_CONST.__objc_arrayobj: 0x810
-   __AUTH_CONST.__objc_doubleobj: 0x20
--  __AUTH_CONST.__auth_got: 0x5180
--  __AUTH.__objc_data: 0x10d70
--  __AUTH.__data: 0x7128
--  __DATA.__objc_ivar: 0x2150
--  __DATA.__data: 0xd7d8
--  __DATA.__common: 0x2eb0
--  __DATA_DIRTY.__objc_data: 0x8ec8
--  __DATA_DIRTY.__data: 0xcb8
-+  __AUTH_CONST.__auth_got: 0x52c0
-+  __AUTH.__objc_data: 0x10cf8
-+  __AUTH.__data: 0x77c8
-+  __DATA.__objc_ivar: 0x20c8
-+  __DATA.__data: 0xdc18
-+  __DATA.__common: 0x2eb8
-+  __DATA_DIRTY.__objc_data: 0x8e78
-+  __DATA_DIRTY.__data: 0xca0
-   __DATA_DIRTY.__bss: 0x1880
--  __DATA_DIRTY.__common: 0x10
-+  __DATA_DIRTY.__common: 0x18
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
 
-   - /System/Library/Frameworks/EventKit.framework/EventKit
-   - /System/Library/Frameworks/FileProvider.framework/FileProvider
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 +  - /System/Library/Frameworks/FoundationModels.framework/FoundationModels
-   - /System/Library/Frameworks/ImageIO.framework/ImageIO
-   - /System/Library/Frameworks/ImagePlayground.framework/ImagePlayground
-   - /System/Library/Frameworks/Intents.framework/Intents
 
-   - /System/Library/PrivateFrameworks/MobileBluetooth.framework/MobileBluetooth
-   - /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
-   - /System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog
 +  - /System/Library/PrivateFrameworks/NearField.framework/NearField
-   - /System/Library/PrivateFrameworks/PassKitCore.framework/PassKitCore
-   - /System/Library/PrivateFrameworks/Pasteboard.framework/Pasteboard
-   - /System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 44030
--  Symbols:   43215
+-  Functions: 44023
+-  Symbols:   35233
 -  CStrings:  18009
-+  Functions: 44790
-+  Symbols:   42682
++  Functions: 44781
++  Symbols:   34813
 +  CStrings:  19368
- 
 Symbols:
 + +[WFHomeAccessoryPresence hasAnyCompanionHomeAccessory]
 + +[WFHomeAccessoryPresence hasConfiguredAppleTV]
@@ -840,54 +773,6 @@ Symbols:
 + _initFIWorkoutActivityType
 + _initHMHomeManagerAreAnyAppleTVAccessoriesConfigured
 + _initHMHomeManagerAreAnySpeakersConfigured
-+ _objc_msgSend$actionFromSerializedRepresentation:actionRegistry:
-+ _objc_msgSend$activityTypeWithHKWorkoutActivityTypeIdentifier:isIndoor:metadata:
-+ _objc_msgSend$allTypesSupportedWithoutPairedWatch
-+ _objc_msgSend$availableVariableNames
-+ _objc_msgSend$currentLayout
-+ _objc_msgSend$endInitialSyncProtectionOn:forTriggerUUIDs:
-+ _objc_msgSend$errorNode:
-+ _objc_msgSend$evaluateURL:withCompletion:onCompletionQueue:
-+ _objc_msgSend$exportError
-+ _objc_msgSend$hasAnyCompanionHomeAccessory
-+ _objc_msgSend$hasConfiguredAppleTV
-+ _objc_msgSend$hasConfiguredHomeAccessory
-+ _objc_msgSend$hasConfiguredHomePod
-+ _objc_msgSend$holdsDuration
-+ _objc_msgSend$iconImageForActivityType:
-+ _objc_msgSend$imageByInsettingWithMarginFraction:
-+ _objc_msgSend$imageByTrimmingTransparentMargins
-+ _objc_msgSend$initWithBackgroundRefresh:
-+ _objc_msgSend$initWithExportError:
-+ _objc_msgSend$initWithIdentifier:isFolder:name:glyphCharacter:isTombstoned:
-+ _objc_msgSend$initWithIdentifier:name:color:glyphCharacter:associatedAppBundleIdentifier:searchAttributionAppBundleIdentifier:subtitle:actionsDescription:actionCount:syncHash:isTombstoned:hiddenFromLibraryAndSync:creationDate:modificationDate:lastRunDate:remoteQuarantineStatus:remoteQuarantineHash:showInSearch:receivesInputFromSearch:hasShortcutInputVariables:disabledOnLockScreen:source:modifiedUsingDaS:runEventsCount:hasOutputAction:
-+ _objc_msgSend$initWithMigrationPerformed:workflow:warnings:
-+ _objc_msgSend$initWithPreprocessedDate:
-+ _objc_msgSend$initWithURL:filename:displayName:
-+ _objc_msgSend$interval
-+ _objc_msgSend$isActionHiddenDueToRegionalPolicy
-+ _objc_msgSend$isTombstoned
-+ _objc_msgSend$isWritingToolsAvailable
-+ _objc_msgSend$isWritingToolsHiddenDueToRegionalPolicy
-+ _objc_msgSend$localStorageDisplayName
-+ _objc_msgSend$localTimeZone
-+ _objc_msgSend$localizedTitleForCalendarSource:
-+ _objc_msgSend$migrateWorkflowIfNeeded:
-+ _objc_msgSend$migrationPerformed
-+ _objc_msgSend$phoneOnlySupportedActivityTypes
-+ _objc_msgSend$pickerIconImageForActivityType:
-+ _objc_msgSend$requiresUserInactivity
-+ _objc_msgSend$setRequiresUserInactivity:
-+ _objc_msgSend$sharedHardwareManagerWithNoUI
-+ _objc_msgSend$shouldEvaluateURLs
-+ _objc_msgSend$sortOrderStateRewordedForCurrentSortProperty
-+ _objc_msgSend$stringFromDate:timeZone:formatOptions:
-+ _objc_msgSend$tintedImageWithColor:
-+ _objc_msgSend$unsupportedActivityTypesWithIsWheelchairUser:isSwimmingSupported:
-+ _objc_msgSend$wf_fileValue
-+ _objc_msgSend$writingToolsGenericallyUnavailableError
-+ _objc_msgSend$writingToolsRegionallyUnavailableError
-+ _objc_msgSend$writingToolsUnsupportedError
 + _softLinkFIUIDeviceSupportsSwimming
 + _softLinkFIUIStaticScalableWorkoutIconImage
 + _softLinkHMHomeManagerAreAnyAppleTVAccessoriesConfigured
@@ -2310,167 +2195,6 @@ Symbols:
 - _getWFTriggerNotificationsLogObject
 - _getWFUserSettingsClass
 - _getWFUserSettingsClass.softClass
-- _objc_msgSend$_triggersDidChange
-- _objc_msgSend$_triggersWillChange
-- _objc_msgSend$actionsUnavailableError
-- _objc_msgSend$additionalEffectiveInputClassesForTriggers:
-- _objc_msgSend$adjustedTime:byOffset:
-- _objc_msgSend$allConfiguredTriggers
-- _objc_msgSend$appUsageBundleID
-- _objc_msgSend$areWritingToolsActionsHiddenInCurrentRegion
-- _objc_msgSend$associateWorkflowToTrigger:workflow:error:
-- _objc_msgSend$batteryOutlineColor
-- _objc_msgSend$colorWithRed:green:blue:alpha:
-- _objc_msgSend$component:fromDate:
-- _objc_msgSend$configurationWithPointSize:hierarchicalColors:
-- _objc_msgSend$configuredTriggerForTriggerID:
-- _objc_msgSend$configuredTriggersForWorkflowID:
-- _objc_msgSend$configuredTriggersForWorkflowID:error:
-- _objc_msgSend$containsDate:
-- _objc_msgSend$contentFilterListsAllowURL:
-- _objc_msgSend$contextStoreKeyPathForCurrentState
-- _objc_msgSend$contextStorePredicate
-- _objc_msgSend$contextStoreQualityOfService
-- _objc_msgSend$contextStoreRegistrationIsForWatch
-- _objc_msgSend$createReferenceIfNecessaryWithName:nameCollisionBehavior:allowEmpty:error:
-- _objc_msgSend$createTriggerWithRecord:error:
-- _objc_msgSend$createTriggerWithRecord:workflow:error:
-- _objc_msgSend$currentVariables
-- _objc_msgSend$deleteReference
-- _objc_msgSend$disableTriggersWithIdentifiers:
-- _objc_msgSend$disableTriggersWithIdentifiers:withReason:
-- _objc_msgSend$disablementReason
-- _objc_msgSend$displayGlyph
-- _objc_msgSend$displayGlyphCornerRadius
-- _objc_msgSend$displayGlyphHierarchicalColors
-- _objc_msgSend$displayGlyphName
-- _objc_msgSend$displayGlyphTintColor
-- _objc_msgSend$doNotDisturbState
-- _objc_msgSend$editableShortcut
-- _objc_msgSend$encodeInt:forKey:
-- _objc_msgSend$enteringSymbolForSymbolName:
-- _objc_msgSend$errorHandler
-- _objc_msgSend$exitingSymbolForSymbolName:
-- _objc_msgSend$getConfiguredTriggerForTriggerID:completion:
-- _objc_msgSend$getConfiguredTriggersForWorkflowID:completion:
-- _objc_msgSend$imageNamed:inBundle:withConfiguration:
-- _objc_msgSend$initWithIdentifier:isFolder:name:glyphCharacter:isDeleted:
-- _objc_msgSend$initWithIdentifier:name:color:glyphCharacter:associatedAppBundleIdentifier:searchAttributionAppBundleIdentifier:subtitle:actionsDescription:actionCount:syncHash:isDeleted:hiddenFromLibraryAndSync:creationDate:modificationDate:lastRunDate:remoteQuarantineStatus:remoteQuarantineHash:showInSearch:receivesInputFromSearch:hasShortcutInputVariables:disabledOnLockScreen:source:runEventsCount:hasOutputAction:
-- _objc_msgSend$initWithIdentifier:workflowID:trigger:shouldPrompt:shouldNotify:shouldRecur:potentialLoopDetected:enabled:disablementReason:triggerSource:notificationLevel:editableShortcut:selectedEntryMetadata:
-- _objc_msgSend$initWithLocalizedTitle:localizedDescription:actionIcons:triggerClass:
-- _objc_msgSend$initWithPlatformColor:
-- _objc_msgSend$initWithStartDate:duration:
-- _objc_msgSend$initWithUserName:
-- _objc_msgSend$inputTypeDescriptionForClass:
-- _objc_msgSend$isAllowedToRunAutomatically
-- _objc_msgSend$isDateWithinTimeRange:
-- _objc_msgSend$isDeleted
-- _objc_msgSend$isEligibleForAutomaticDeletion
-- _objc_msgSend$keyPathForAirplaneModeStatus
-- _objc_msgSend$keyPathForAppUsageDataDictionaries
-- _objc_msgSend$keyPathForBluetoothDataDictionary
-- _objc_msgSend$keyPathForDoNotDisturbStatusDataDictionary
-- _objc_msgSend$keyPathForLowPowerModeStatus
-- _objc_msgSend$keyPathForNFCTagIdentifiers
-- _objc_msgSend$keyPathForPredictedLocationOfInterestTransitions
-- _objc_msgSend$keyPathForWiFiConnectionSSID
-- _objc_msgSend$keyPathWithKey:
-- _objc_msgSend$launchReason
-- _objc_msgSend$loadTriggers
-- _objc_msgSend$localizedDescriptionWithConfigurationSummary
-- _objc_msgSend$localizedDescriptionWithConfigurationSummaryWithCount:
-- _objc_msgSend$localizedDisplayExplanationWithContext:
-- _objc_msgSend$localizedDisplayNameWithContext:
-- _objc_msgSend$localizedRecurrenceDescriptionForDaysOfWeek:dayOfMonth:mode:
-- _objc_msgSend$localizedSunriseSunsetDescriptionForTriggerEvent:timeOffset:
-- _objc_msgSend$localizedWiFiDisplayName
-- _objc_msgSend$locationOfInterestTypeKey
-- _objc_msgSend$mailBlue
-- _objc_msgSend$markTriggersAsRunAfterConfirmationIfNeeded
-- _objc_msgSend$maxSuggestionsCount
-- _objc_msgSend$mergeAutomationsAndShortcuts
-- _objc_msgSend$messagesGreen
-- _objc_msgSend$migrateWorkflowIfNeeded:completion:
-- _objc_msgSend$minSuggestionsCount
-- _objc_msgSend$nextFireDateForTrigger:currentDate:currentSunriseTime:currentSunsetTime:
-- _objc_msgSend$nextFireDateFromNowWithTrigger:currentSunriseTime:currentSunsetTime:
-- _objc_msgSend$nextWeekdayFromDaysOfWeek:timeComponents:currentDate:calendar:
-- _objc_msgSend$numberWithFloat:
-- _objc_msgSend$outputActions
-- _objc_msgSend$pluggedInHierarchicalColors
-- _objc_msgSend$potentialLoopDetected
-- _objc_msgSend$registryLock
-- _objc_msgSend$reloadTriggers
-- _objc_msgSend$reloadTriggersIfNecessaryForDatabaseChangeWithModified:inserted:removed:
-- _objc_msgSend$restrictionType
-- _objc_msgSend$selectedEntryMetadata
-- _objc_msgSend$setActivityGlyphName:
-- _objc_msgSend$setActivityName:
-- _objc_msgSend$setActivityTintColor:
-- _objc_msgSend$setActivityUniqueIdentifier:
-- _objc_msgSend$setDaysOfWeek:
-- _objc_msgSend$setDeleted:
-- _objc_msgSend$setDisablementReason:
-- _objc_msgSend$setEditableShortcut:
-- _objc_msgSend$setEvent:
-- _objc_msgSend$setFolderIdentifier:
-- _objc_msgSend$setOnConnect:
-- _objc_msgSend$setOnDisconnect:
-- _objc_msgSend$setOnEnd:
-- _objc_msgSend$setOnStart:
-- _objc_msgSend$setPotentialLoopDetected:
-- _objc_msgSend$setRunAfterConnectionInterruption:
-- _objc_msgSend$setSelectedAccountDescriptions:
-- _objc_msgSend$setSelectedAccountIdentifiers:
-- _objc_msgSend$setSelectedContents:
-- _objc_msgSend$setSelectedDevices:
-- _objc_msgSend$setSelectedEntryMetadata:
-- _objc_msgSend$setSelectedMerchantTypes:
-- _objc_msgSend$setSelectedMerchants:
-- _objc_msgSend$setSelectedNetworks:
-- _objc_msgSend$setSelectedPassUniqueIDs:
-- _objc_msgSend$setSelectedRecipients:
-- _objc_msgSend$setSelectedSubject:
-- _objc_msgSend$setSelectedWorkoutTypes:
-- _objc_msgSend$setShouldNotify:
-- _objc_msgSend$setShouldPrompt:
-- _objc_msgSend$setShouldRecur:
-- _objc_msgSend$setSoundDetectionTypes:
-- _objc_msgSend$setSuggestedVariables:
-- _objc_msgSend$setTagIdentifier:
-- _objc_msgSend$setTime:
-- _objc_msgSend$setTimeOffset:
-- _objc_msgSend$setTriggerData:
-- _objc_msgSend$setWeekday:
-- _objc_msgSend$sharedHardwareManager
-- _objc_msgSend$shortStandaloneWeekdaySymbols
-- _objc_msgSend$shouldRecur
-- _objc_msgSend$standaloneWeekdaySymbols
-- _objc_msgSend$stopColor
-- _objc_msgSend$storageState
-- _objc_msgSend$systemIndigoColor
-- _objc_msgSend$timeIntervalLowerBound
-- _objc_msgSend$timeIntervalUpperBound
-- _objc_msgSend$timestampDateFormatter
-- _objc_msgSend$trackAddAutomationWithActionCount:source:triggerType:shortcutIdentifier:showsNotification:requiresRuntimeConfirmation:
-- _objc_msgSend$transitionWithinTimeIntervalKey
-- _objc_msgSend$triggerBacking
-- _objc_msgSend$triggerConfigurationSymbolNamed:hierarchicalColors:
-- _objc_msgSend$triggerConfigurationSymbolNamed:renderingMode:
-- _objc_msgSend$triggerConfigurationSymbolNamed:renderingMode:pointSize:
-- _objc_msgSend$triggerData
-- _objc_msgSend$triggerDisplaySymbolNamed:hierarchicalColors:
-- _objc_msgSend$triggerDisplaySymbolNamed:renderingMode:
-- _objc_msgSend$triggerResultWithFetchRequest:
-- _objc_msgSend$tryLock
-- _objc_msgSend$userDefinedVariableNames
-- _objc_msgSend$variableSuggesterSuggestionsDidChange:
-- _objc_msgSend$wf_weekdays
-- _objc_msgSend$wf_weekendDays
-- _objc_msgSend$wf_workweekDays
-- _objc_msgSend$workflowTriggersDidChange:
-- _objc_msgSend$workoutColors
-- _objc_msgSend$yellowBatteryHierarchicalColors
 - _objc_release_x3
 - _objc_retain_x13
 - _symbolic 20AtomicRepresentation______5Value_____QZ 15AtomicsInternal11AtomicValueP AA0C7StorageP

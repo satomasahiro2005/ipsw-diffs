@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SpatialInspectorFoundation.framework/SpatialInspectorFoundation`
 
-```diff
+### Section Size Changes
 
- 48.0.4.0.0
--  __TEXT.__text: 0x2cbec
-+  __TEXT.__text: 0x2cbf0
-   __TEXT.__objc_methlist: 0x20
-   __TEXT.__const: 0x43d0
-   __TEXT.__swift5_typeref: 0xf50
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2cbec` | `0x2cbf0` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2abf588a4 -> sub_2acd3b8a4 : 444 -> 448
+~ sub_2abe448a4 -> sub_2acc258a4 : 444 -> 448
 ```

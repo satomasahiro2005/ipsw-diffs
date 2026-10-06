@@ -2,126 +2,69 @@
 
 > `/System/Library/PrivateFrameworks/CoreEmbeddedSpeechRecognition.framework/CoreEmbeddedSpeechRecognition`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x33199c` | `0x3433d8` | **`+0x11a3c`** |
+| `__TEXT.__const` | `0x84c0` | `0x8d48` | **`+0x888`** |
+| `__TEXT.__cstring` | `0xe069` | `0xe7ad` | **`+0x744`** |
+| `__TEXT.__swift5_reflstr` | `0x2753` | `0x2b93` | **`+0x440`** |
+| `__AUTH_CONST.__objc_const` | `0xb550` | `0xb978` | **`+0x428`** |
+| `__TEXT.__objc_methlist` | `0x4b28` | `0x4ec0` | **`+0x398`** |
+| `__TEXT.__unwind_info` | `0x4920` | `0x4ca8` | **`+0x388`** |
+| `__TEXT.__eh_frame` | `0x5a6c` | `0x5dec` | **`+0x380`** |
+| `__TEXT.__swift5_fieldmd` | `0x25a8` | `0x2910` | **`+0x368`** |
+| `__DATA_CONST.__const` | `0x1a38` | `0x1d88` | **`+0x350`** |
+| `__DATA.__data` | `0x2478` | `0x27b0` | **`+0x338`** |
+| `__TEXT.__oslogstring` | `0xcdd5` | `0xd065` | **`+0x290`** |
+| `__AUTH_CONST.__cfstring` | `0x4f20` | `0x5140` | **`+0x220`** |
+| `__AUTH.__data` | `0xb88` | `0xd98` | **`+0x210`** |
+| `__AUTH.__objc_data` | `0x10e0` | `0x12b8` | **`+0x1d8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x36d8` | `0x3878` | **`+0x1a0`** |
+| `__TEXT.__constg_swiftt` | `0x2688` | `0x27f4` | **`+0x16c`** |
+| `__TEXT.__swift5_capture` | `0xcafc` | `0xc994` | **`-0x168`** |
+| `__TEXT.__gcc_except_tab` | `0xc88` | `0xd80` | **`+0xf8`** |
+| `__TEXT.__swift5_typeref` | `0x42bc` | `0x43ae` | **`+0xf2`** |
+| `__DATA.__bss` | `0x5998` | `0x5a88` | **`+0xf0`** |
+| `__DATA_DIRTY.__common` | `0x248` | `0x188` | **`-0xc0`** |
+| `__AUTH_CONST.__const` | `0x23330` | `0x233d8` | **`+0xa8`** |
+| `__AUTH_CONST.__auth_got` | `0x22d0` | `0x2360` | **`+0x90`** |
+| `__DATA.__common` | `0x168` | `0x108` | **`-0x60`** |
+| `__DATA_CONST.__got` | `0x1a80` | `0x1ae0` | **`+0x60`** |
+| `__DATA_DIRTY.__objc_data` | `0x1bc0` | `0x1b78` | **`-0x48`** |
+| `__DATA_DIRTY.__data` | `0x3e30` | `0x3e70` | **`+0x40`** |
+| `__DATA_CONST.__objc_protolist` | `0x148` | `0x170` | **`+0x28`** |
+| `__TEXT.__swift5_types` | `0x28c` | `0x2b0` | **`+0x24`** |
+| `__DATA_DIRTY.__bss` | `0x3f18` | `0x3f38` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0xea0` | `0xeb8` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x430` | `0x448` | **`+0x18`** |
+| `__DATA_CONST.__objc_protorefs` | `0x98` | `0xb0` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x510` | `0x528` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x514` | `0x528` | **`+0x14`** |
+| `__TEXT.__swift5_builtin` | `0x230` | `0x244` | **`+0x14`** |
+| `__DATA_CONST.__objc_superrefs` | `0x208` | `0x218` | **`+0x10`** |
+| `__DATA_CONST.__objc_arraydata` | `0x470` | `0x478` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x4dc` | `0x4e4` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x6e8` | `0x6e4` | **`-0x4`** |
+| `__TEXT.__swift_as_entry` | `0x264` | `0x260` | **`-0x4`** |
+| `__TEXT.__swift_as_ret` | `0x2d8` | `0x2dc` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3600.70.47.11.1
--  __TEXT.__text: 0x3274e0
--  __TEXT.__objc_methlist: 0x4b28
--  __TEXT.__const: 0x84c0
--  __TEXT.__dlopen_cstrs: 0xdc
--  __TEXT.__swift5_typeref: 0x42bc
--  __TEXT.__cstring: 0xe069
--  __TEXT.__constg_swiftt: 0x2688
--  __TEXT.__swift5_reflstr: 0x2753
--  __TEXT.__swift5_fieldmd: 0x25a8
--  __TEXT.__swift5_builtin: 0x230
--  __TEXT.__swift5_assocty: 0x510
--  __TEXT.__swift5_proto: 0x4dc
--  __TEXT.__swift5_types: 0x28c
--  __TEXT.__oslogstring: 0xcdd5
--  __TEXT.__swift5_capture: 0xcafc
--  __TEXT.__swift5_protos: 0x20
--  __TEXT.__swift_as_entry: 0x264
--  __TEXT.__swift_as_ret: 0x2d8
--  __TEXT.__swift_as_cont: 0x6e8
--  __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__gcc_except_tab: 0xc88
 +3605.10.1.0.0
-+  __TEXT.__text: 0x33893c
-+  __TEXT.__objc_methlist: 0x4ec0
-+  __TEXT.__const: 0x8d48
-+  __TEXT.__cstring: 0xe7ad
-+  __TEXT.__gcc_except_tab: 0xd80
-+  __TEXT.__oslogstring: 0xd065
-   __TEXT.__ustring: 0x4
--  __TEXT.__unwind_info: 0xaaa0
--  __TEXT.__eh_frame: 0x5a6c
-+  __TEXT.__dlopen_cstrs: 0xdc
-+  __TEXT.__swift5_typeref: 0x43ae
-+  __TEXT.__constg_swiftt: 0x27f4
-+  __TEXT.__swift5_reflstr: 0x2b93
-+  __TEXT.__swift5_fieldmd: 0x2910
-+  __TEXT.__swift5_builtin: 0x244
-+  __TEXT.__swift5_assocty: 0x528
-+  __TEXT.__swift5_proto: 0x4e4
-+  __TEXT.__swift5_types: 0x2b0
-+  __TEXT.__swift5_capture: 0xc994
-+  __TEXT.__swift5_protos: 0x20
-+  __TEXT.__swift_as_entry: 0x260
-+  __TEXT.__swift_as_ret: 0x2dc
-+  __TEXT.__swift_as_cont: 0x6e4
-+  __TEXT.__swift5_mpenum: 0x18
-+  __TEXT.__unwind_info: 0xb4e0
-+  __TEXT.__eh_frame: 0x5dec
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1a38
--  __DATA_CONST.__objc_classlist: 0x430
-+  __DATA_CONST.__const: 0x1d88
-+  __DATA_CONST.__objc_classlist: 0x448
-   __DATA_CONST.__objc_catlist: 0x10
--  __DATA_CONST.__objc_protolist: 0x148
-+  __DATA_CONST.__objc_protolist: 0x170
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x36d8
--  __DATA_CONST.__objc_protorefs: 0x98
--  __DATA_CONST.__objc_superrefs: 0x208
--  __DATA_CONST.__objc_arraydata: 0x470
--  __DATA_CONST.__got: 0x1a80
--  __AUTH_CONST.__const: 0x23330
--  __AUTH_CONST.__cfstring: 0x4f20
--  __AUTH_CONST.__objc_const: 0xb550
--  __AUTH_CONST.__objc_intobj: 0xea0
-+  __DATA_CONST.__objc_selrefs: 0x3878
-+  __DATA_CONST.__objc_protorefs: 0xb0
-+  __DATA_CONST.__objc_superrefs: 0x218
-+  __DATA_CONST.__objc_arraydata: 0x478
-+  __DATA_CONST.__got: 0x1ae0
-+  __AUTH_CONST.__const: 0x233d8
-+  __AUTH_CONST.__cfstring: 0x5140
-+  __AUTH_CONST.__objc_const: 0xb978
-+  __AUTH_CONST.__objc_intobj: 0xeb8
-   __AUTH_CONST.__objc_arrayobj: 0x2a0
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x22d0
--  __AUTH.__objc_data: 0x10e0
--  __AUTH.__data: 0xb88
--  __DATA.__objc_ivar: 0x514
--  __DATA.__data: 0x2478
--  __DATA.__common: 0x168
--  __DATA_DIRTY.__objc_data: 0x1bc0
--  __DATA_DIRTY.__data: 0x3e30
--  __DATA_DIRTY.__bss: 0x3f18
--  __DATA_DIRTY.__common: 0x248
-+  __AUTH_CONST.__auth_got: 0x2360
-+  __AUTH.__objc_data: 0x12b8
-+  __AUTH.__data: 0xd98
-+  __DATA.__objc_ivar: 0x528
-+  __DATA.__data: 0x27b0
-+  __DATA.__common: 0x108
-+  __DATA_DIRTY.__objc_data: 0x1b78
-+  __DATA_DIRTY.__data: 0x3e70
-+  __DATA_DIRTY.__bss: 0x3f38
-+  __DATA_DIRTY.__common: 0x188
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-+  - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/Frameworks/Accounts.framework/Accounts
+
 -  Functions: 10611
--  Symbols:   6235
+-  Symbols:   4805
 -  CStrings:  2445
 +  Functions: 11201
-+  Symbols:   6428
++  Symbols:   4952
 +  CStrings:  2504
- 
 Symbols:
 + +[CESRBackgroundSystemTask submitOnDemandEuclidProfileRebuildBGST]
 + +[CESREntityExtractionHandler _categoriesByExtractedEntityContent:originalInputString:]
@@ -334,68 +277,6 @@ Symbols:
 + _kCESREntityTaggerCategoryPersonalName
 + _kCESREntityTaggerCategoryPlaceName
 + _kCESREuclidProfilePendingFullRebuildMarkerFilenamePrefix
-+ _objc_msgSend$_categoriesByExtractedEntityContent:originalInputString:
-+ _objc_msgSend$_extractedEntitiesForParentEntity:
-+ _objc_msgSend$_lmeAssignmentsForExtractedEntities:lmeAssignmentsByCategory:originalInputString:
-+ _objc_msgSend$_maintainEuclidProfileAtAllSitesWithPermitMonitor:allowFullRebuild:
-+ _objc_msgSend$_maintainEuclidProfileForSiteAtURL:permitMonitor:allowFullRebuild:
-+ _objc_msgSend$_serviceProxyWithErrorHandler:
-+ _objc_msgSend$_updateEuclidProfileInstanceWithSets:permitMonitor:allowFullRebuild:
-+ _objc_msgSend$accountPropertyForKey:
-+ _objc_msgSend$accountTypeWithAccountTypeIdentifier:
-+ _objc_msgSend$accountsWithAccountType:
-+ _objc_msgSend$applicationProcessIdentifier
-+ _objc_msgSend$buildPhoneticMatchWithLanguage:saveIntermediateFsts:completion:
-+ _objc_msgSend$buildSpeechProfileForLanguage:
-+ _objc_msgSend$cleanupUnusedAssetSubscriptions
-+ _objc_msgSend$clearBookmarks
-+ _objc_msgSend$contributingUserDSID
-+ _objc_msgSend$createFileAtPath:contents:attributes:
-+ _objc_msgSend$currentOrchestrationMode
-+ _objc_msgSend$extractBundledOovs:appLmDataFileSandboxExtension:appBundleId:completion:
-+ _objc_msgSend$extractedEntityCategoryMapForParentEntity:
-+ _objc_msgSend$fromPreferences
-+ _objc_msgSend$generateAudioWithTexts:language:completion:
-+ _objc_msgSend$generateConfusionPairsWithUUID:parameters:language:task:samplingRate:recognizedNbest:recognizedText:correctedText:selectedAlternatives:completion:
-+ _objc_msgSend$generateConfusionPairsWithUUID:parameters:language:task:samplingRate:recognizedTokens:recognizedText:correctedText:selectedAlternatives:completion:
-+ _objc_msgSend$handlePostInstallAssetSubscriptions
-+ _objc_msgSend$initWithAssetType:language:regionId:
-+ _objc_msgSend$initWithLanguage:requestIdentifier:dictationUIInteractionIdentifier:task:loggingContext:applicationName:profile:overrides:modelOverrideURL:originalAudioFileURL:codec:narrowband:detectUtterances:censorSpeech:farField:secureOfflineOnly:shouldStoreAudioOnDevice:continuousListening:shouldHandleCapitalization:isSpeechAPIRequest:maximumRecognitionDuration:endpointStart:inputOrigin:location:jitGrammar:deliverEagerPackage:disableDeliveringAsrFeatures:enableEmojiRecognition:enableAutoPunctuation:enableVoiceCommands:disableEagerLimit:sharedUserInfos:prefixText:postfixText:selectedText:powerContext:recognitionStart:shouldGenerateVoiceCommandCandidates:asrId:activeUserInfo:messagesContext:sessionIdentifier:applicationProcessIdentifier:
-+ _objc_msgSend$initWithSuiteName:
-+ _objc_msgSend$interval
-+ _objc_msgSend$needsFullRebuild
-+ _objc_msgSend$pendingFullRebuild
-+ _objc_msgSend$pendingFullRebuildMarkerURL
-+ _objc_msgSend$performEuclidProfileMaintenanceWithPermitMonitor:allowFullRebuild:
-+ _objc_msgSend$postInstall
-+ _objc_msgSend$recordSpeechTelemetry:rebuildReason:profileSizeBytes:cascadeEntitiesQueriedCount:entitiesProcessedCount:lmeSlotUpdatedCount:lmeSlotEntityCount:bookmarkFailureCount:bookmarkRecoveryCount:
-+ _objc_msgSend$runEuclidProfileMaintenanceWithPermitMonitor:allowFullRebuild:completion:
-+ _objc_msgSend$setGroupConcurrencyLimit:
-+ _objc_msgSend$setGroupName:
-+ _objc_msgSend$setIsAutoPunctuation:
-+ _objc_msgSend$setMinDurationBetweenInstances:
-+ _objc_msgSend$setPendingFullRebuild:
-+ _objc_msgSend$stringByStandardizingPath
-+ _objc_msgSend$submitOnDemandEuclidProfileRebuildBGST
-+ _objc_msgSend$subscribeToAssetWithConfig:subscriberId:expiration:completionHandler:
-+ _objc_msgSend$trainAllAppLMWithLanguage:
-+ _objc_msgSend$trainAllAppLMWithLanguage:completion:
-+ _objc_msgSend$trainAppLMWithLanguage:configuration:appBundleId:appLmDataFile:appLmDataFileSandboxExtension:
-+ _objc_msgSend$trainAppLMWithLanguage:configuration:appBundleId:appLmDataFile:appLmDataFileSandboxExtension:completion:
-+ _objc_msgSend$trainAppLMWithLanguage:configuration:appBundleId:appLmDataFile:appLmModelFile:appLmDataFileSandboxExtension:
-+ _objc_msgSend$trainAppLMWithLanguage:configuration:appBundleId:appLmDataFile:appLmModelFile:appLmDataFileSandboxExtension:completion:
-+ _objc_msgSend$trainGlobalNNLMwithFidesSessionURL:completion:
-+ _objc_msgSend$trainPartialAllAppLMWithLanguage:
-+ _objc_msgSend$trainPartialAllAppLMWithLanguage:completion:
-+ _objc_msgSend$trainPersonalizedLMWithLanguage:configuration:asset:directory:completion:
-+ _objc_msgSend$trainPersonalizedLMWithLanguage:configuration:asset:fides:activity:completion:
-+ _objc_msgSend$trainPersonalizedLMWithLanguage:configuration:fides:activity:completion:
-+ _objc_msgSend$trainPersonalizedLMWithLanguage:configuration:fides:write:completion:
-+ _objc_msgSend$updateTaskRequest:error:
-+ _objc_msgSend$upperCaseString:withReply:
-+ _objc_msgSend$verifyEuclidProfileInstanceWithPermitMonitor:allowFullRebuild:
-+ _objc_msgSend$wakeUpWithCompletion:
-+ _objc_msgSend$xpcExitClean
 + _objc_retain_x7
 + _sLog
 + _sharedInstance.geoLMRegionIdCache
@@ -531,22 +412,6 @@ Symbols:
 - ____runReplayRecordPruning_block_invoke
 - ___block_descriptor_32_e26_B24?0"BMStoreEvent"8^B16l
 - ___block_descriptor_48_e8_32s40s_e15_B16?0"NSURL"8ls32l8s40l8
-- _objc_msgSend$_fetchExtractedEntityMappingsForEntities:extractionLmeAssignments:originalInputString:
-- _objc_msgSend$_maintainEuclidProfileAtAllSitesWithPermitMonitor:
-- _objc_msgSend$_maintainEuclidProfileForSiteAtURL:permitMonitor:
-- _objc_msgSend$_updateEuclidProfileInstanceWithSets:permitMonitor:
-- _objc_msgSend$cleanupUnusedSubscriptions
-- _objc_msgSend$defaultNotetitleExtractionLmeAssignment
-- _objc_msgSend$deleteWithPolicy:eventsPassingTest:
-- _objc_msgSend$handlePostInstallSubscriptions
-- _objc_msgSend$initWithTemplateName:tagName:
-- _objc_msgSend$logContextualReplayBiomeRecordDeleted:
-- _objc_msgSend$performEntityExtraction:extractionLmeAssignments:
-- _objc_msgSend$performEuclidProfileMaintenanceWithPermitMonitor:
-- _objc_msgSend$pruner
-- _objc_msgSend$runEuclidProfileMaintenanceWithPermitMonitor:completion:
-- _objc_msgSend$setExpectedDuration:
-- _objc_msgSend$verifyEuclidProfileInstanceWithPermitMonitor:
 - _sharedInstance.geoLMRegionIDCache
 - _symbolic SDySSSo17CESRLmeAssignmentCG
 - _symbolic SS_So17CESRLmeAssignmentCt

@@ -2,76 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/CMImaging.framework/CMImaging`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1da510` | `0x1ac778` | **`-0x2dd98`** |
+| `__TEXT.__oslogstring` | `0x1551e` | `0x4780` | **`-0x10d9e`** |
+| `__TEXT.__cstring` | `0x28bdb` | `0x18f29` | **`-0xfcb2`** |
+| `__AUTH_CONST.__cfstring` | `0x6c20` | `0x6760` | **`-0x4c0`** |
+| `__TEXT.__gcc_except_tab` | `0x154c` | `0x1210` | **`-0x33c`** |
+| `__TEXT.__unwind_info` | `0x31e0` | `0x3058` | **`-0x188`** |
+| `__DATA.__common` | `0x1e0` | `0x100` | **`-0xe0`** |
+| `__TEXT.__const` | `0x2e40` | `0x2f00` | **`+0xc0`** |
+| `__DATA_DIRTY.__common` | `0x1b0` | `0x100` | **`-0xb0`** |
+| `__AUTH_CONST.__auth_got` | `0xc00` | `0xbe0` | **`-0x20`** |
+| `__AUTH_CONST.__objc_const` | `0x1f158` | `0x1f178` | **`+0x20`** |
+| `__DATA.__bss` | `0x70` | `0x60` | **`-0x10`** |
+| `__DATA_DIRTY.__bss` | `0x1e8` | `0x1d8` | **`-0x10`** |
+| `__TEXT.__objc_methlist` | `0xd3bc` | `0xd3ac` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0xc58` | `0xc50` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6240` | `0x6248` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x17dc` | `0x17e0` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -761.0.0.0.3
--  __TEXT.__text: 0x1da510
--  __TEXT.__objc_methlist: 0xd3bc
--  __TEXT.__const: 0x2e40
--  __TEXT.__oslogstring: 0x1551e
--  __TEXT.__cstring: 0x28bdb
--  __TEXT.__gcc_except_tab: 0x154c
--  __TEXT.__unwind_info: 0x31e0
 +764.22.5.122.2
-+  __TEXT.__text: 0x1ac778
-+  __TEXT.__objc_methlist: 0xd3ac
-+  __TEXT.__cstring: 0x18f29
-+  __TEXT.__const: 0x2f00
-+  __TEXT.__gcc_except_tab: 0x1210
-+  __TEXT.__oslogstring: 0x4780
-+  __TEXT.__unwind_info: 0x3058
-   __TEXT.__eh_frame: 0x6e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x1b0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6240
-+  __DATA_CONST.__objc_selrefs: 0x6248
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__objc_superrefs: 0x4c8
-   __DATA_CONST.__objc_arraydata: 0x410
--  __DATA_CONST.__got: 0xc58
-+  __DATA_CONST.__got: 0xc50
-   __AUTH_CONST.__const: 0x810
--  __AUTH_CONST.__cfstring: 0x6c20
--  __AUTH_CONST.__objc_const: 0x1f158
-+  __AUTH_CONST.__cfstring: 0x6760
-+  __AUTH_CONST.__objc_const: 0x1f178
-   __AUTH_CONST.__objc_intobj: 0xba0
-   __AUTH_CONST.__objc_arrayobj: 0xc0
-   __AUTH_CONST.__objc_dictobj: 0xa0
-   __AUTH_CONST.__objc_doubleobj: 0x1130
--  __AUTH_CONST.__auth_got: 0xc00
-+  __AUTH_CONST.__auth_got: 0xbe0
-   __AUTH.__data: 0x8
--  __DATA.__objc_ivar: 0x17dc
-+  __DATA.__objc_ivar: 0x17e0
-   __DATA.__data: 0x12d90
--  __DATA.__common: 0x1e0
--  __DATA.__bss: 0x70
-+  __DATA.__common: 0x100
-+  __DATA.__bss: 0x60
-   __DATA_DIRTY.__objc_data: 0x3bb0
--  __DATA_DIRTY.__common: 0x1b0
--  __DATA_DIRTY.__bss: 0x1e8
-+  __DATA_DIRTY.__common: 0x100
-+  __DATA_DIRTY.__bss: 0x1d8
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 7597
--  Symbols:   10396
+-  Symbols:   8773
 -  CStrings:  5295
 +  Functions: 7306
-+  Symbols:   10341
++  Symbols:   8726
 +  CStrings:  3300
- 
 Symbols:
 + -[CMIInferenceDeviceBypass loadNetworkWithPath:shareIntermediates:aneExecutionPriority:]
 + -[CMIInferenceDeviceEspressoV1 loadNetworkWithPath:shareIntermediates:aneExecutionPriority:]
@@ -86,9 +51,6 @@ Symbols:
 + _loadExperimentsConfig.processTexture
 + _loadExperimentsConfig.waitUntilCompleted
 + _loadExperimentsConfig.waitUntilScheduled
-+ _objc_msgSend$loadNetworkWithPath:context:aneExecutionPriority:
-+ _objc_msgSend$loadNetworkWithPath:shareIntermediates:aneExecutionPriority:
-+ _objc_msgSend$setAneExecutionPriority:
 - -[CMIInferenceDeviceBypass loadNetworkWithPath:shareIntermediates:]
 - -[CMIInferenceDeviceEspressoV1 loadNetworkWithPath:shareIntermediates:]
 - -[CMIInferenceDeviceEspressoV2 loadNetworkWithPath:shareIntermediates:]
@@ -148,17 +110,6 @@ Symbols:
 - _getMachElapsedTimeMs
 - _getMachElapsedTimeMs.machTimeToMS
 - _mach_timebase_info
-- _objc_msgSend$aneCount
-- _objc_msgSend$getConnections
-- _objc_msgSend$getFragmentCount
-- _objc_msgSend$kernelEndTime
-- _objc_msgSend$kernelStartTime
-- _objc_msgSend$loadNetworkWithPath:context:
-- _objc_msgSend$parentNetwork
-- _objc_msgSend$plan
-- _objc_msgSend$profilingResults
-- _objc_msgSend$setANEExecutionPriority:
-- _objc_msgSend$setProfilingEnabled:
 - _stringForPixelFormat
 CStrings:
 + "%s signalled err=%d at <>:%d"

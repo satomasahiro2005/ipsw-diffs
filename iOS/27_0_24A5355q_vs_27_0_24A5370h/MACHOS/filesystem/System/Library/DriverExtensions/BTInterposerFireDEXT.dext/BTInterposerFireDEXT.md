@@ -2,35 +2,36 @@
 
 > `/System/Library/DriverExtensions/BTInterposerFireDEXT.dext/BTInterposerFireDEXT`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4` | `0x1a70` | **`+0x1a6c`** |
+| `__DATA_CONST.__const` | `—` | `0x650` | **`+0x650`** |
+| `__TEXT.__const` | `—` | `0x540` | **`+0x540`** |
+| `__TEXT.__oslogstring` | `—` | `0x3b6` | **`+0x3b6`** |
+| `__TEXT.__auth_stubs` | `—` | `0x1f0` | **`+0x1f0`** |
+| `__DATA_CONST.__auth_got` | `—` | `0xf8` | **`+0xf8`** |
+| `__TEXT.__cstring` | `—` | `0xbb` | **`+0xbb`** |
+| `__TEXT.__unwind_info` | `0x58` | `0xc0` | **`+0x68`** |
+| `__DATA.__common` | `—` | `0x20` | **`+0x20`** |
+| `__DATA_CONST.__got` | `—` | `0x20` | **`+0x20`** |
+| `__DATA_CONST.__osclassinfo` | `—` | `0x20` | **`+0x20`** |
+
+### Other Changes
+
 ```diff
 
 -2700.37.0.0.0
--  __TEXT.__text: 0x4 sha256:110f46b5b35c069160560c6ad6786f647dd44e8760a52a46fc22dbbcd7630b91
--  __TEXT.__unwind_info: 0x58 sha256:107712c26cdc77ec10d134d747b97ef92f91e47a3fb22dc3dd00b11f626539cf
 +2700.41.1.1.0
-+  __TEXT.__text: 0x1a70 sha256:85af735d492dcd1ddca502c951e745e3081c88c65c3d585d0d6cabeb820883d8
-+  __TEXT.__auth_stubs: 0x1f0 sha256:37d600e3676abf7d1518c49f477b5d926c980bec8e70a8fc381c3cea4fd9230b
-+  __TEXT.__const: 0x540 sha256:c854abf9aee6db677e97ad8230ec02e8827b369f231092b402628133750e79b6
-+  __TEXT.__oslogstring: 0x3b6 sha256:d33910b9bb396e6d845d78b5d7bef1ba2152a3e505e29a0d302ddcaf2b52bea5
-+  __TEXT.__cstring: 0xbb sha256:ff0d0c487192135102f40ed8a49de1e503a9a995be26d3ba8cf69a4baf6bf5c9
-+  __TEXT.__unwind_info: 0xc0 sha256:a39d268e1ddd2dd4582c4567e89a7df166103db1b7714e19e9a17c9856f2481a
-+  __DATA_CONST.__const: 0x650 sha256:d098cf1a59f1f4e9e301ea88e2d3980b9b01eef1e64151d124147514d192f324
-+  __DATA_CONST.__osclassinfo: 0x20 sha256:7c10d9da8f9d69c6ecf8bf106435440d6e0483a5481c5c6d7842fdbb616a06ed
-+  __DATA_CONST.__auth_got: 0xf8 sha256:ab36278fb895056a6d6e3ed0494154ba14689c85514a7c9d2bf62c9a7a093a1c
-+  __DATA_CONST.__got: 0x20 sha256:97380dd3785ac88a745cead7a6a6b35b3920eaacb13296b6fe270cb980380250
-+  __DATA.__common: 0x20 sha256:8dd455a2d0f1b73bdb0ee7e9b216dc91ec57e97636acc010462765ff6d38b4fe
-   - /System/DriverKit/System/Library/Frameworks/DriverKit.framework/DriverKit
-   - /System/DriverKit/System/Library/PrivateFrameworks/MobileBluetoothDK.framework/MobileBluetoothDK
--  UUID: 9972CD44-03DA-34AE-95B1-A3D456BD7315
+
 -  Functions: 1
 -  Symbols:   2
 -  CStrings:  0
 +  - /System/DriverKit/usr/lib/libc++.dylib
-+  UUID: AE108BED-7212-31B0-8356-E240BCFC1336
 +  Functions: 44
-+  Symbols:   122
++  Symbols:   118
 +  CStrings:  26
- 
 Symbols:
 + _BTInterposerFireDEXT_Class
 + _IOFree
@@ -135,12 +136,8 @@ Symbols:
 + ___destroy_helper_block_8_32r40r
 + ___stack_chk_fail
 + ___stack_chk_guard
-+ __block_descriptor_tmp.11
-+ __block_descriptor_tmp.12
-+ __block_descriptor_tmp.5
-+ __block_descriptor_tmp.8
-+ __block_literal_global.10
-+ __block_literal_global.7
++ __block_descriptor_tmp
++ __block_literal_global
 + __os_log_default
 + __os_log_impl
 + _gBTInterposerFireDEXTMetaClass
@@ -181,5 +178,4 @@ CStrings:
 + "TX"
 + "com.apple.BTInterposerFireDEXT.txpending"
 + "v8@?0"
-
 ```

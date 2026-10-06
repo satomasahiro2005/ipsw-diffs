@@ -2,26 +2,19 @@
 
 > `com.apple.driver.AppleAOPAudio`
 
-```diff
+### Section Size Changes
 
-   __TEXT.__cstring: 0xc591
-   __TEXT.__const: 0x136
-   __TEXT.__os_log: 0xf
--  __TEXT_EXEC.__text: 0x2efa0
-+  __TEXT_EXEC.__text: 0x2efa8
-   __TEXT_EXEC.__auth_stubs: 0x630
-   __DATA.__data: 0x2f0
-   __DATA.__common: 0x660
-Sections:
-~ __TEXT.__cstring : content changed
-~ __DATA.__data : content changed
-~ __DATA_CONST.__mod_init_func : content changed
-~ __DATA_CONST.__mod_term_func : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__kalloc_type : content changed
-~ __DATA_CONST.__auth_got : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA_CONST.__auth_ptr : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x2efa0` | `0x2efa8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
+```diff
 Functions:
 ~ __ZN13AppleAOPAudio12PanicHandler26unRegisterMemoryForZeroOutEPh : 224 -> 232
 CStrings:
@@ -31,5 +24,4 @@ CStrings:
 - "19:34:03"
 - "19:34:04"
 - "Jun 18 2026"
-
 ```

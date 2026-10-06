@@ -2,15 +2,14 @@
 
 > `/System/Library/PrivateFrameworks/CoreFollowUp.framework/followupd`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -2027.1.2.0.0
 +2027.1.3.0.0
-   __TEXT.__text: 0xee70
-   __TEXT.__auth_stubs: 0x860
-   __TEXT.__objc_stubs: 0x2c20
 ```

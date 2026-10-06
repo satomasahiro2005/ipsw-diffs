@@ -2,91 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/IntelligenceTasksEngine.framework/IntelligenceTasksEngine`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21048` | `0x26798` | **`+0x5750`** |
+| `__AUTH_CONST.__const` | `0x11f0` | `0x1638` | **`+0x448`** |
+| `__TEXT.__eh_frame` | `0x18f4` | `0x1ce4` | **`+0x3f0`** |
+| `__TEXT.__const` | `0xf58` | `0x1188` | **`+0x230`** |
+| `__TEXT.__swift5_capture` | `0x3cc` | `0x56c` | **`+0x1a0`** |
+| `__DATA.__bss` | `0xa00` | `0xb80` | **`+0x180`** |
+| `__TEXT.__unwind_info` | `0x8f8` | `0xa08` | **`+0x110`** |
+| `__TEXT.__cstring` | `0x523` | `0x603` | **`+0xe0`** |
+| `__TEXT.__constg_swiftt` | `0x528` | `0x5e0` | **`+0xb8`** |
+| `__TEXT.__swift5_fieldmd` | `0x480` | `0x518` | **`+0x98`** |
+| `__TEXT.__swift5_typeref` | `0x758` | `0x7de` | **`+0x86`** |
+| `__AUTH_CONST.__auth_got` | `0x7d8` | `0x858` | **`+0x80`** |
+| `__TEXT.__oslogstring` | `0xc69` | `0xce9` | **`+0x80`** |
+| `__DATA_CONST.__objc_selrefs` | `0x270` | `0x2b0` | **`+0x40`** |
+| `__DATA.__data` | `0x340` | `0x370` | **`+0x30`** |
+| `__TEXT.__swift_as_cont` | `0x140` | `0x170` | **`+0x30`** |
+| `__TEXT.__swift_as_entry` | `0xb8` | `0xe8` | **`+0x30`** |
+| `__TEXT.__swift_as_ret` | `0xc4` | `0xe8` | **`+0x24`** |
+| `__TEXT.__swift5_reflstr` | `0x359` | `0x379` | **`+0x20`** |
+| `__TEXT.__swift5_assocty` | `0x68` | `0x80` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x14` | `0x28` | **`+0x14`** |
+| `__TEXT.__swift5_proto` | `0x7c` | `0x8c` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x58` | `0x60` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -250.0.0.3.0
--  __TEXT.__text: 0x1f0d0
 +255.0.2.0.0
-+  __TEXT.__text: 0x2445c
-   __TEXT.__objc_methlist: 0x14c
--  __TEXT.__const: 0xf58
--  __TEXT.__oslogstring: 0xc69
--  __TEXT.__constg_swiftt: 0x528
--  __TEXT.__swift5_typeref: 0x758
--  __TEXT.__swift5_builtin: 0x14
--  __TEXT.__swift5_reflstr: 0x359
--  __TEXT.__swift5_fieldmd: 0x480
--  __TEXT.__swift5_types: 0x58
--  __TEXT.__swift5_assocty: 0x68
--  __TEXT.__swift5_capture: 0x3cc
--  __TEXT.__cstring: 0x523
-+  __TEXT.__const: 0x1188
-+  __TEXT.__oslogstring: 0xce9
-+  __TEXT.__constg_swiftt: 0x5e0
-+  __TEXT.__swift5_typeref: 0x7de
-+  __TEXT.__swift5_builtin: 0x28
-+  __TEXT.__swift5_reflstr: 0x379
-+  __TEXT.__swift5_fieldmd: 0x518
-+  __TEXT.__swift5_assocty: 0x80
-+  __TEXT.__swift5_proto: 0x8c
-+  __TEXT.__swift5_types: 0x60
-+  __TEXT.__swift5_capture: 0x56c
-+  __TEXT.__cstring: 0x603
-   __TEXT.__swift5_protos: 0x1c
--  __TEXT.__swift5_proto: 0x7c
--  __TEXT.__swift_as_entry: 0xb8
--  __TEXT.__swift_as_ret: 0xc4
--  __TEXT.__swift_as_cont: 0x140
-+  __TEXT.__swift_as_entry: 0xe8
-+  __TEXT.__swift_as_ret: 0xe8
-+  __TEXT.__swift_as_cont: 0x170
-   __TEXT.__swift5_acfuncs: 0x28
--  __TEXT.__unwind_info: 0xa08
--  __TEXT.__eh_frame: 0x18f4
-+  __TEXT.__unwind_info: 0xb68
-+  __TEXT.__eh_frame: 0x1ce4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x270
-+  __DATA_CONST.__objc_selrefs: 0x2b0
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x11f0
-+  __AUTH_CONST.__const: 0x1638
-   __AUTH_CONST.__objc_const: 0x578
--  __AUTH_CONST.__auth_got: 0x7d8
-+  __AUTH_CONST.__auth_got: 0x858
-   __AUTH.__objc_data: 0x98
-   __AUTH.__data: 0x218
--  __DATA.__data: 0x340
-+  __DATA.__data: 0x370
-   __DATA.__common: 0x20
-   __DATA_DIRTY.__data: 0x2e8
-   __DATA_DIRTY.__bss: 0x80
-
-   - /System/Library/PrivateFrameworks/CascadeSets.framework/CascadeSets
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
 +  - /System/Library/PrivateFrameworks/IntelligencePlatformLibrary.framework/IntelligencePlatformLibrary
-   - /System/Library/PrivateFrameworks/IntelligenceTasks.framework/IntelligenceTasks
-   - /System/Library/PrivateFrameworks/LinkServices.framework/LinkServices
-   - /System/Library/PrivateFrameworks/XPCDistributed.framework/XPCDistributed
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 890
--  Symbols:   594
+-  Symbols:   540
 -  CStrings:  86
 +  Functions: 1007
-+  Symbols:   625
++  Symbols:   563
 +  CStrings:  93
- 
 Symbols:
 + ___swift_allocate_boxed_opaque_existential_1
 + ___swift_destroy_boxed_opaque_existential_1Tm
@@ -95,14 +53,6 @@ Symbols:
 + __objc_autoreleasePoolPush
 + __swiftEmptySetSingleton
 + _associated conformance So21BMDataProtectionClassVSHSCSQ
-+ _objc_msgSend$configuration
-+ _objc_msgSend$disableResultStreaming
-+ _objc_msgSend$executePruningPolicyForAccount:includeStorageCleanup:
-+ _objc_msgSend$poll
-+ _objc_msgSend$protectionClass
-+ _objc_msgSend$queryContext
-+ _objc_msgSend$setDisableResultStreaming:
-+ _objc_msgSend$storeConfig
 + _swift_getAssociatedConformanceWitness
 + _swift_getAssociatedTypeWitness
 + _swift_makeBoxUnique

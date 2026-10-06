@@ -2,25 +2,19 @@
 
 > `/System/Library/VideoDecoders/AppleProResHWDecoder.videodecoder`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21a74` | `0x21b5c` | **`+0xe8`** |
+| `__TEXT.__cstring` | `0x1304` | `0x131f` | **`+0x1b`** |
+
+### Other Changes
+
 ```diff
 
- 600.53.0.0.0
--  __TEXT.__text: 0x21a74
-+  __TEXT.__text: 0x21b5c
-   __TEXT.__gcc_except_tab: 0x494
-   __TEXT.__const: 0x743e0
--  __TEXT.__cstring: 0x1304
-+  __TEXT.__cstring: 0x131f
-   __TEXT.__oslogstring: 0x487d
-   __TEXT.__unwind_info: 0x450
-   __TEXT.__auth_stubs: 0x0
-
-   - /usr/lib/libc++.1.dylib
-   Functions: 545
-   Symbols:   581
 -  CStrings:  430
 +  CStrings:  433
- 
 Functions:
 ~ __ZNSt3__114__split_bufferIPPvNS_9allocatorIS2_EEE12emplace_backIJS2_EEEvDpOT_ : 264 -> 268
 ~ __ZNSt3__114__split_bufferIPPvRNS_9allocatorIS2_EEE12emplace_backIJS2_EEEvDpOT_ : 264 -> 268

@@ -2,19 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/NanoUniverse.framework/NUNICalliopeShadersCompanion.metallib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__reflection`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__fragment` | `0x15140` | `0x15ce0` | **`+0xba0`** |
+| `__TEXT.__vertex` | `0xc6c0` | `0xceb0` | **`+0x7f0`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__compute`
 - `__TEXT.__metallib`
-
-```diff
-
-   __TEXT.__reflection: 0xf380
--  __TEXT.__vertex: 0xc510
--  __TEXT.__fragment: 0x15ed0
-+  __TEXT.__vertex: 0xe880
-+  __TEXT.__fragment: 0x17e00
-   __TEXT.__compute: 0x1460
-   __TEXT.__descriptor: 0x2150
-   __TEXT.__metallib: 0xb7df0
-```
+- `__TEXT.__reflection`

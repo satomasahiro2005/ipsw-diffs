@@ -2,54 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/PhotosFormats.framework/PhotosFormats`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd6810` | `0xd706c` | **`+0x85c`** |
+| `__TEXT.__oslogstring` | `0x75d2` | `0x762c` | **`+0x5a`** |
+| `__TEXT.__objc_methlist` | `0xc8b8` | `0xc8e8` | **`+0x30`** |
+| `__AUTH_CONST.__objc_const` | `0x14608` | `0x14628` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6238` | `0x6248` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x3348` | `0x3350` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.111.0.0
--  __TEXT.__text: 0xd6810
--  __TEXT.__objc_methlist: 0xc8b8
 +912.0.232.0.0
-+  __TEXT.__text: 0xd706c
-+  __TEXT.__objc_methlist: 0xc8e8
-   __TEXT.__const: 0x2db0
-   __TEXT.__dlopen_cstrs: 0x1b7
-   __TEXT.__gcc_except_tab: 0x2d8c
-   __TEXT.__cstring: 0xdc55
--  __TEXT.__oslogstring: 0x75d2
-+  __TEXT.__oslogstring: 0x762c
-   __TEXT.__ustring: 0x44
--  __TEXT.__unwind_info: 0x3348
-+  __TEXT.__unwind_info: 0x3350
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_protolist: 0x110
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x6238
-+  __DATA_CONST.__objc_selrefs: 0x6248
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x390
-   __DATA_CONST.__objc_arraydata: 0x800
-   __DATA_CONST.__got: 0x1608
-   __AUTH_CONST.__const: 0x1c10
-   __AUTH_CONST.__cfstring: 0xc920
--  __AUTH_CONST.__objc_const: 0x14608
-+  __AUTH_CONST.__objc_const: 0x14628
-   __AUTH_CONST.__weak_auth_got: 0x20
-   __AUTH_CONST.__objc_intobj: 0x900
-   __AUTH_CONST.__objc_arrayobj: 0x348
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4822
--  Symbols:   11617
+-  Symbols:   9376
 -  CStrings:  2560
 +  Functions: 4826
-+  Symbols:   11622
++  Symbols:   9380
 +  CStrings:  2562
- 
 Symbols:
 + -[PFDisplayConfigurationProvider deviceConfigurationForDisplayContext:]
 + -[PFPosterLayout isAnyFrameUsingHeadroom]
@@ -163,7 +139,6 @@ Symbols:
 + GCC_except_table4821
 + GCC_except_table4823
 + _PFGetDeterminedConfigurationFromDisplayContext
-+ _objc_msgSend$isAnyFrameUsingHeadroom
 - GCC_except_table2544
 - GCC_except_table2545
 - GCC_except_table2552

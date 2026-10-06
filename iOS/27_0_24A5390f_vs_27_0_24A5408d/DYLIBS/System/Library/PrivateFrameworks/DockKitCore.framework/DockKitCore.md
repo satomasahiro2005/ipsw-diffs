@@ -2,18 +2,21 @@
 
 > `/System/Library/PrivateFrameworks/DockKitCore.framework/DockKitCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x12de80` | `0x12e0f4` | **`+0x274`** |
+
+### Other Changes
+
 ```diff
 
 -413.0.0.0.0
--  __TEXT.__text: 0x12de80
 +414.0.0.0.0
-+  __TEXT.__text: 0x12e0f4
-   __TEXT.__objc_methlist: 0x2974
-   __TEXT.__const: 0x9438
-   __TEXT.__cstring: 0x1eca
 Functions:
-~ sub_25fd7ce40 -> sub_25f821e40 : 600 -> 568
-~ sub_25fde7174 -> sub_25f88c154 : 2116 -> 2792
-~ sub_25fe64898 -> sub_25f909b1c : 1416 -> 1408
-~ sub_25fe64e94 -> sub_25f90a110 : 1444 -> 1436
+~ sub_25fc33e40 -> sub_25f729e40 : 600 -> 568
+~ sub_25fc9e174 -> sub_25f794154 : 2116 -> 2792
+~ sub_25fd1b898 -> sub_25f811b1c : 1416 -> 1408
+~ sub_25fd1be94 -> sub_25f812110 : 1444 -> 1436
 ```

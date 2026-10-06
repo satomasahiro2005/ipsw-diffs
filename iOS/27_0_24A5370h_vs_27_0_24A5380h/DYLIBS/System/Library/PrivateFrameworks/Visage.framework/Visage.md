@@ -2,39 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/Visage.framework/Visage`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9b720` | `0x9b644` | **`-0xdc`** |
+| `__TEXT.__gcc_except_tab` | `0xf264` | `0xf268` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x9b720
-+  __TEXT.__text: 0x9b644
-   __TEXT.__objc_methlist: 0x452c
-   __TEXT.__const: 0x34c0
--  __TEXT.__gcc_except_tab: 0xf264
-+  __TEXT.__gcc_except_tab: 0xf268
-   __TEXT.__cstring: 0x54f8
-   __TEXT.__oslogstring: 0x5c5a
-   __TEXT.__unwind_info: 0x3770
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
+-279.0.5.0.0
++279.0.8.0.0
 Functions:
 ~ __ZNSt3__16vectorIN2vg4hrtf13FaceFrameDataENS_9allocatorIS3_EEE22__base_destruct_at_endB9fqe220106EPS3_ : 96 -> 84
 ~ __ZNSt3__15dequeIN2vg13ear_detection7EarSideENS_9allocatorIS3_EEE19__add_back_capacityEv : 484 -> 472
@@ -59,5 +39,4 @@ Functions:
 ~ __ZN3cva11ItemHandler12createMatrixIfLj4ELj4EEES0_RKNS_6MatrixIT_XT0_EXT1_EXclsr6detailE7IsSmallIS3_XT0_EXT1_EEEEEE : 164 -> 172
 ~ __ZNK3cva11ItemHandler9getMatrixIfLj4ELj4EEEbRNS_6MatrixIT_XT0_EXT1_EXclsr6detailE7IsSmallIS3_XT0_EXT1_EEEEEE : 108 -> 112
 ~ -[ObjMeshDataCodable initWithCoder:] : 1704 -> 1684
-
 ```

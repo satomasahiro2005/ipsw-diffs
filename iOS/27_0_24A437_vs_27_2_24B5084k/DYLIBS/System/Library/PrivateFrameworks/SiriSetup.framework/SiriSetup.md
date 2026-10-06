@@ -2,128 +2,66 @@
 
 > `/System/Library/PrivateFrameworks/SiriSetup.framework/SiriSetup`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3451cc` | `0x348440` | **`+0x3274`** |
+| `__TEXT.__swift5_typeref` | `0x2d354` | `0x2ca48` | **`-0x90c`** |
+| `__TEXT.__eh_frame` | `0x9b9c` | `0x9514` | **`-0x688`** |
+| `__DATA.__bss` | `0x11cb0` | `0x11a00` | **`-0x2b0`** |
+| `__DATA_DIRTY.__data` | `0x2910` | `0x2680` | **`-0x290`** |
+| `__DATA_DIRTY.__bss` | `0x1830` | `0x15b0` | **`-0x280`** |
+| `__TEXT.__unwind_info` | `0xb4e8` | `0xb2b0` | **`-0x238`** |
+| `__TEXT.__constg_swiftt` | `0xb728` | `0xb958` | **`+0x230`** |
+| `__TEXT.__cstring` | `0xc78f` | `0xc569` | **`-0x226`** |
+| `__TEXT.__oslogstring` | `0x35d2` | `0x37d2` | **`+0x200`** |
+| `__TEXT.__const` | `0x1da04` | `0x1d808` | **`-0x1fc`** |
+| `__TEXT.__swift5_fieldmd` | `0x7674` | `0x7484` | **`-0x1f0`** |
+| `__AUTH_CONST.__const` | `0x13710` | `0x13850` | **`+0x140`** |
+| `__TEXT.__swift5_capture` | `0x36d8` | `0x37f8` | **`+0x120`** |
+| `__TEXT.__swift5_reflstr` | `0x84ca` | `0x83d1` | **`-0xf9`** |
+| `__DATA.__data` | `0x8050` | `0x7f70` | **`-0xe0`** |
+| `__AUTH.__data` | `0x5aa0` | `0x5a20` | **`-0x80`** |
+| `__AUTH.__objc_data` | `0x4110` | `0x4188` | **`+0x78`** |
+| `__TEXT.__dlopen_cstrs` | `0xaf` | `0x125` | **`+0x76`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2180` | `0x2110` | **`-0x70`** |
+| `__AUTH_CONST.__objc_const` | `0x9340` | `0x92e0` | **`-0x60`** |
+| `__DATA_CONST.__got` | `0x1898` | `0x1838` | **`-0x60`** |
+| `__TEXT.__swift_as_cont` | `0x5ac` | `0x554` | **`-0x58`** |
+| `__TEXT.__swift5_assocty` | `0x1910` | `0x18d8` | **`-0x38`** |
+| `__DATA.__common` | `0x4b8` | `0x4e8` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x23f0` | `0x23c0` | **`-0x30`** |
+| `__TEXT.__objc_methlist` | `0x1fb8` | `0x1f88` | **`-0x30`** |
+| `__TEXT.__swift5_proto` | `0xa68` | `0xa3c` | **`-0x2c`** |
+| `__TEXT.__swift5_builtin` | `0x2bc` | `0x294` | **`-0x28`** |
+| `__TEXT.__swift_as_ret` | `0x2f4` | `0x2cc` | **`-0x28`** |
+| `__DATA_CONST.__objc_protolist` | `0x128` | `0x108` | **`-0x20`** |
+| `__TEXT.__swift_as_entry` | `0x2d0` | `0x2b8` | **`-0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x2e40` | `0x2e30` | **`-0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x90` | `0x80` | **`-0x10`** |
+| `__DATA_DIRTY.__objc_data` | `0x2908` | `0x2918` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x30` | `0x40` | **`+0x10`** |
+| `__DATA_DIRTY.__common` | `0x158` | `0x150` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0x800` | `0x7fc` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3600.62.43.11.103
--  __TEXT.__text: 0x328b7c
--  __TEXT.__objc_methlist: 0x1fb8
--  __TEXT.__const: 0x1da04
--  __TEXT.__cstring: 0xc78f
--  __TEXT.__gcc_except_tab: 0x30
--  __TEXT.__dlopen_cstrs: 0xaf
--  __TEXT.__oslogstring: 0x35d2
--  __TEXT.__swift5_typeref: 0x2d354
--  __TEXT.__swift5_capture: 0x36d8
--  __TEXT.__constg_swiftt: 0xb728
--  __TEXT.__swift5_reflstr: 0x84ca
--  __TEXT.__swift5_fieldmd: 0x7674
--  __TEXT.__swift5_builtin: 0x2bc
--  __TEXT.__swift5_assocty: 0x1910
--  __TEXT.__swift5_proto: 0xa68
--  __TEXT.__swift5_types: 0x800
 +3605.24.1.1.2
-+  __TEXT.__text: 0x32c3f4
-+  __TEXT.__objc_methlist: 0x1f88
-+  __TEXT.__const: 0x1d808
-+  __TEXT.__cstring: 0xc569
-+  __TEXT.__gcc_except_tab: 0x40
-+  __TEXT.__dlopen_cstrs: 0x125
-+  __TEXT.__oslogstring: 0x37d2
-+  __TEXT.__swift5_typeref: 0x2ca48
-+  __TEXT.__swift5_capture: 0x37f8
-+  __TEXT.__constg_swiftt: 0xb958
-+  __TEXT.__swift5_reflstr: 0x83d1
-+  __TEXT.__swift5_fieldmd: 0x7484
-+  __TEXT.__swift5_builtin: 0x294
-+  __TEXT.__swift5_assocty: 0x18d8
-+  __TEXT.__swift5_proto: 0xa3c
-+  __TEXT.__swift5_types: 0x7fc
-   __TEXT.__swift5_protos: 0xc8
--  __TEXT.__swift_as_entry: 0x2d0
--  __TEXT.__swift_as_ret: 0x2f4
--  __TEXT.__swift_as_cont: 0x5ac
-+  __TEXT.__swift_as_entry: 0x2b8
-+  __TEXT.__swift_as_ret: 0x2cc
-+  __TEXT.__swift_as_cont: 0x554
-   __TEXT.__swift5_mpenum: 0x54
--  __TEXT.__unwind_info: 0xe930
--  __TEXT.__eh_frame: 0x9bdc
-+  __TEXT.__unwind_info: 0xe6f0
-+  __TEXT.__eh_frame: 0x954c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x23f0
-+  __DATA_CONST.__const: 0x23c0
-   __DATA_CONST.__objc_classlist: 0x458
-   __DATA_CONST.__objc_catlist: 0x10
--  __DATA_CONST.__objc_protolist: 0x128
-+  __DATA_CONST.__objc_protolist: 0x108
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2180
--  __DATA_CONST.__objc_protorefs: 0x90
-+  __DATA_CONST.__objc_selrefs: 0x2110
-+  __DATA_CONST.__objc_protorefs: 0x80
-   __DATA_CONST.__objc_superrefs: 0x50
--  __DATA_CONST.__got: 0x1898
--  __AUTH_CONST.__const: 0x13710
-+  __DATA_CONST.__got: 0x1838
-+  __AUTH_CONST.__const: 0x13850
-   __AUTH_CONST.__cfstring: 0x1b60
--  __AUTH_CONST.__objc_const: 0x9340
-+  __AUTH_CONST.__objc_const: 0x92e0
-   __AUTH_CONST.__objc_intobj: 0x18
--  __AUTH_CONST.__auth_got: 0x2e40
--  __AUTH.__objc_data: 0x4110
--  __AUTH.__data: 0x5aa0
-+  __AUTH_CONST.__auth_got: 0x2e30
-+  __AUTH.__objc_data: 0x4188
-+  __AUTH.__data: 0x5a20
-   __DATA.__objc_ivar: 0x70
--  __DATA.__data: 0x8050
-+  __DATA.__data: 0x7f70
-   __DATA.__objc_stublist: 0x8
--  __DATA.__common: 0x4b8
--  __DATA_DIRTY.__objc_data: 0x2908
--  __DATA_DIRTY.__data: 0x2910
--  __DATA_DIRTY.__bss: 0x1830
--  __DATA_DIRTY.__common: 0x158
-+  __DATA.__common: 0x4e8
-+  __DATA_DIRTY.__objc_data: 0x2918
-+  __DATA_DIRTY.__data: 0x2680
-+  __DATA_DIRTY.__bss: 0x15b0
-+  __DATA_DIRTY.__common: 0x150
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AVKit.framework/AVKit
 
-   - /System/Library/Frameworks/Network.framework/Network
-   - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
-   - /System/Library/Frameworks/SceneKit.framework/SceneKit
 -  - /System/Library/Frameworks/SpriteKit.framework/SpriteKit
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-   - /System/Library/Frameworks/TipKit.framework/TipKit
-   - /System/Library/Frameworks/UIKit.framework/UIKit
 
-   - /usr/lib/swift/libswiftRegexBuilder.dylib
-   - /usr/lib/swift/libswiftSceneKit.dylib
-   - /usr/lib/swift/libswiftSpatial.dylib
 -  - /usr/lib/swift/libswiftSpriteKit.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 19466
--  Symbols:   42741
+-  Symbols:   41922
 -  CStrings:  1700
 +  Functions: 19380
-+  Symbols:   42350
++  Symbols:   41540
 +  CStrings:  1697
- 
 Symbols:
 + +[SVASSettingsConnectionLoader createConnection]
 + +[SVASSettingsConnectionLoader fetchSelectedAssistantBundleIdentifierForConnection:completion:]
@@ -3546,30 +3484,6 @@ Symbols:
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA6ZStackVyAA12TupleContentVyAA08ModifiedK0VyAOyAA6VStackVyAMyAA6SpacerV_AcAE24persistentSystemOverlaysyQrAA10VisibilityOFQOyAOyAKyAMy9SiriSetup32VoiceTrainingLinwoodAnimatedTextV_AQyAMyAS_AOyAOyAA0Y0VAA14_PaddingLayoutVGAA31AccessibilityAttachmentModifierVGQPGGSgQPGGAA16_FlexFrameLayoutVG_Qo_AsOyAOyAQyAMyAOyAsA12_FrameLayoutVG_AW012OBButtonTrayC0VA17_SgQPGGA12_GA1_GQPGGA1_GAA19_BackgroundModifierVyAOyAA5ColorVAA30_SafeAreaRegionsIgnoringLayoutVGGG_AOyAW014TooLoudOverlayC0VA33_GQPGG_Qo_HO
 + _kISImageDescriptorTableUIName
 + _objc_getAssociatedObject
-+ _objc_msgSend$activateWithInvalidationHandler:
-+ _objc_msgSend$bottomEdgeEffect
-+ _objc_msgSend$clearPendingFollowUpItemsWithUniqueIdentifiers:completion:
-+ _objc_msgSend$createConnection
-+ _objc_msgSend$fetchSelectedAssistantBundleIdentifierForConnection:completion:
-+ _objc_msgSend$fontDescriptor
-+ _objc_msgSend$imageDescriptorNamed:
-+ _objc_msgSend$initWithBundleIdentifier:allowPlaceholder:error:
-+ _objc_msgSend$initWithDispatchQueue:
-+ _objc_msgSend$insertSubview:aboveSubview:
-+ _objc_msgSend$isScrollingDisabled
-+ _objc_msgSend$labelColor
-+ _objc_msgSend$localizedName
-+ _objc_msgSend$nextResponder
-+ _objc_msgSend$overrideUserInterfaceStyle
-+ _objc_msgSend$scrollView
-+ _objc_msgSend$secondarySystemGroupedBackgroundColor
-+ _objc_msgSend$selectedAssistantApplicationIdentityWithCompletion:
-+ _objc_msgSend$setAlignment:
-+ _objc_msgSend$setColors:
-+ _objc_msgSend$setLocations:
-+ _objc_msgSend$standardUserDefaults
-+ _objc_msgSend$systemLayoutSizeFittingSize:withHorizontalFittingPriority:verticalFittingPriority:
-+ _objc_msgSend$topViewController
 + _objc_setAssociatedObject
 + _pow
 + _swift_getTupleTypeMetadata2
@@ -7794,39 +7708,6 @@ Symbols:
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA15NavigationStackVyAA0I4PathVAcAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAcAE29navigationBarTitleDisplayModeyQrAA0iQ4ItemV0rsT0OFQOyAcAE0pR0yQrAA4TextVFQOyAA5GroupVyAA012_ConditionalO0VyAA08ProgressC0VyAA05EmptyC0VA4_GAA4ListVys5NeverOAA7ForEachVySay9SiriSetup023RestrictAccessAppPickerC0V7Section33_67102BE38CDDE06F33628242513EBB2FLLVGSSAAA15_VyAXA11_ySayA12_21RestrictAccessAppInfoVGSSAA08ModifiedO0VyA24_yAcAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAcAE12onTapGesture5count7performQrSi_yyctFQOyA24_yAA6HStackVyAA05TupleO0VyA24_yA24_yA24_yAA5ImageVAA24_ForegroundStyleModifierVyAA5ColorVGGAA30_EnvironmentKeyWritingModifierVyA37_5ScaleOGGAA31AccessibilityAttachmentModifierVG_A24_yA0_yA12_12WatchAppIconVA24_yA24_yA37_AA12_FrameLayoutVGAA11_ClipEffectVyAA16RoundedRectangleVGGGA51_GAxA6SpacerVQPGGAA01_O13ShapeModifierVyAA9RectangleVGG_Qo__Qo_A51_GAA21_TraitWritingModifierVyAA25ListRowBackgroundTraitKeyVGGGA4_GGGGG_Qo__Qo__A35_yAA0nU0VyytAA6ButtonVyA37_GG_AaPPAAE26sharedBackgroundVisibilityyQrAA10VisibilityOFQOyA94_yytA24_yA96_yA24_yA24_yA43_A45_yAA4FontVSgGGA51_GGA51_GG_Qo_QPGQo_G_Qo_HO
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA6ZStackVyAA12TupleContentVyAA08ModifiedK0VyAOy9SiriSetup26VoiceTrainingPageContainerVyAcAE24persistentSystemOverlaysyQrAA10VisibilityOFQOyAOyAKyAMyAP0oP19LinwoodAnimatedTextV_AA6VStackVyAMyAA6SpacerV_AOyAOyAA0Y0VAA14_PaddingLayoutVGAA31AccessibilityAttachmentModifierVGQPGGSgQPGGAA16_FlexFrameLayoutVG_Qo_GA3_GAA19_BackgroundModifierVyAOyAA5ColorVAA30_SafeAreaRegionsIgnoringLayoutVGGG_AOyAP014TooLoudOverlayC0VA24_GQPGG_Qo_HO
 - _kCMTimeZero
-- _objc_msgSend$addChild:
-- _objc_msgSend$asset
-- _objc_msgSend$currentItem
-- _objc_msgSend$currentPage
-- _objc_msgSend$cylinderWithRadius:height:
-- _objc_msgSend$fadeOpacityTo:duration:
-- _objc_msgSend$fadeOutWithDuration:
-- _objc_msgSend$initWithAVPlayer:
-- _objc_msgSend$initWithPreferredDuration:
-- _objc_msgSend$initWithURL:options:
-- _objc_msgSend$loadTracksWithMediaType:completionHandler:
-- _objc_msgSend$moveTo:duration:
-- _objc_msgSend$pauseTimer
-- _objc_msgSend$removeFromParentNode
-- _objc_msgSend$repeatActionForever:
-- _objc_msgSend$replaceCurrentItemWithPlayerItem:
-- _objc_msgSend$resumeTimer
-- _objc_msgSend$runAction:
-- _objc_msgSend$seekToTime:
-- _objc_msgSend$sequence:
-- _objc_msgSend$setAllowsContinuousInteraction:
-- _objc_msgSend$setCurrentPage:
-- _objc_msgSend$setLightingModelName:
-- _objc_msgSend$setMaterials:
-- _objc_msgSend$setNumberOfPages:
-- _objc_msgSend$setPreferredDuration:
-- _objc_msgSend$setProgress:
-- _objc_msgSend$setScaleMode:
-- _objc_msgSend$setSize:
-- _objc_msgSend$setTimingMode:
-- _objc_msgSend$setXScale:
-- _objc_msgSend$setYScale:
-- _objc_msgSend$waitForDuration:
 - _symbolic Say_____G 10Foundation3URLV
 - _symbolic Say_____G 9SiriSetup12CarouselPageV
 - _symbolic Say_____G So10SCNVector3V

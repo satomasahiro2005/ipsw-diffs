@@ -2,134 +2,70 @@
 
 > `/System/Library/PrivateFrameworks/PassKitUI.framework/PassKitUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15242d8` | `0x1570b9c` | **`+0x4c8c4`** |
+| `__TEXT.__swift5_typeref` | `0x132724` | `0x13a6aa` | **`+0x7f86`** |
+| `__AUTH_CONST.__objc_const` | `0xd18f8` | `0xd32c8` | **`+0x19d0`** |
+| `__AUTH_CONST.__const` | `0x64e60` | `0x66650` | **`+0x17f0`** |
+| `__DATA.__bss` | `0x60c30` | `0x621a8` | **`+0x1578`** |
+| `__TEXT.__const` | `0x90570` | `0x91970` | **`+0x1400`** |
+| `__TEXT.__eh_frame` | `0x267a0` | `0x278a8` | **`+0x1108`** |
+| `__TEXT.__cstring` | `0x734ec` | `0x74460` | **`+0xf74`** |
+| `__DATA.__data` | `0x43728` | `0x44560` | **`+0xe38`** |
+| `__TEXT.__unwind_info` | `0x3fe18` | `0x40c00` | **`+0xde8`** |
+| `__TEXT.__objc_methlist` | `0x5e1f8` | `0x5ec20` | **`+0xa28`** |
+| `__AUTH.__objc_data` | `0x37370` | `0x37d90` | **`+0xa20`** |
+| `__TEXT.__constg_swiftt` | `0x2b144` | `0x2b95c` | **`+0x818`** |
+| `__TEXT.__swift5_reflstr` | `0x27e0b` | `0x28570` | **`+0x765`** |
+| `__TEXT.__swift5_fieldmd` | `0x23f40` | `0x24618` | **`+0x6d8`** |
+| `__TEXT.__swift5_capture` | `0x162d8` | `0x1692c` | **`+0x654`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2a110` | `0x2a5f0` | **`+0x4e0`** |
+| `__TEXT.__oslogstring` | `0x2a2d8` | `0x2a712` | **`+0x43a`** |
+| `__DATA_CONST.__const` | `0x1ac50` | `0x1b000` | **`+0x3b0`** |
+| `__DATA_CONST.__got` | `0xd4b0` | `0xd760` | **`+0x2b0`** |
+| `__AUTH.__data` | `0x237f0` | `0x23a08` | **`+0x218`** |
+| `__TEXT.__swift5_assocty` | `0x89b8` | `0x8b48` | **`+0x190`** |
+| `__TEXT.__swift_as_cont` | `0x1d58` | `0x1ec8` | **`+0x170`** |
+| `__AUTH_CONST.__auth_got` | `0xa7d8` | `0xa920` | **`+0x148`** |
+| `__TEXT.__gcc_except_tab` | `0x15048` | `0x15160` | **`+0x118`** |
+| `__DATA_DIRTY.__objc_ivar` | `0x68ec` | `0x69ac` | **`+0xc0`** |
+| `__TEXT.__swift5_proto` | `0x317c` | `0x322c` | **`+0xb0`** |
+| `__AUTH_CONST.__cfstring` | `0x37360` | `0x37400` | **`+0xa0`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x678` | `0x6f0` | **`+0x78`** |
+| `__DATA_CONST.__objc_classlist` | `0x3b88` | `0x3c00` | **`+0x78`** |
+| `__TEXT.__swift_as_ret` | `0xd80` | `0xdf4` | **`+0x74`** |
+| `__DATA.__common` | `0x12e1` | `0x1351` | **`+0x70`** |
+| `__TEXT.__swift_as_entry` | `0xb6c` | `0xbd8` | **`+0x6c`** |
+| `__DATA.__objc_ivar` | `0x3008` | `0x3070` | **`+0x68`** |
+| `__TEXT.__swift5_types` | `0x241c` | `0x2480` | **`+0x64`** |
+| `__DATA_CONST.__objc_arraydata` | `0x808` | `0x860` | **`+0x58`** |
+| `__AUTH_CONST.__objc_intobj` | `0x18f0` | `0x1920` | **`+0x30`** |
+| `__DATA_CONST.__objc_superrefs` | `0x2490` | `0x24b8` | **`+0x28`** |
+| `__TEXT.__swift5_builtin` | `0x10f4` | `0x111c` | **`+0x28`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x1a0` | `0x1c0` | **`+0x20`** |
+| `__DATA_CONST.__objc_protolist` | `0x1948` | `0x1960` | **`+0x18`** |
+| `__TEXT.__ustring` | `0xd0e` | `0xd1a` | **`+0xc`** |
+| `__DATA_CONST.__objc_protorefs` | `0x708` | `0x710` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x140` | `0x144` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1689.3.0.0.0
--  __TEXT.__text: 0x15242d8
 +1695.1.2.0.0
-+  __TEXT.__text: 0x1570b9c
-   __TEXT.__lazy_helpers: 0x2f4
--  __TEXT.__objc_methlist: 0x5e1f8
--  __TEXT.__const: 0x90570
--  __TEXT.__swift5_typeref: 0x132724
--  __TEXT.__constg_swiftt: 0x2b144
--  __TEXT.__swift5_fieldmd: 0x23f40
--  __TEXT.__swift5_builtin: 0x10f4
--  __TEXT.__swift5_reflstr: 0x27e0b
--  __TEXT.__swift5_assocty: 0x89b8
--  __TEXT.__cstring: 0x734ec
--  __TEXT.__swift5_capture: 0x162d8
--  __TEXT.__oslogstring: 0x2a2d8
--  __TEXT.__swift5_proto: 0x317c
--  __TEXT.__swift5_types: 0x241c
--  __TEXT.__swift_as_entry: 0xb6c
--  __TEXT.__swift_as_ret: 0xd80
--  __TEXT.__swift_as_cont: 0x1d58
--  __TEXT.__swift5_protos: 0x140
-+  __TEXT.__objc_methlist: 0x5ec20
-+  __TEXT.__const: 0x91970
-+  __TEXT.__swift5_typeref: 0x13a6aa
-+  __TEXT.__constg_swiftt: 0x2b95c
-+  __TEXT.__swift5_fieldmd: 0x24618
-+  __TEXT.__swift5_builtin: 0x111c
-+  __TEXT.__swift5_reflstr: 0x28570
-+  __TEXT.__swift5_assocty: 0x8b48
-+  __TEXT.__cstring: 0x74460
-+  __TEXT.__swift5_capture: 0x1692c
-+  __TEXT.__oslogstring: 0x2a712
-+  __TEXT.__swift5_proto: 0x322c
-+  __TEXT.__swift5_types: 0x2480
-+  __TEXT.__swift_as_entry: 0xbd8
-+  __TEXT.__swift_as_ret: 0xdf4
-+  __TEXT.__swift_as_cont: 0x1ec8
-+  __TEXT.__swift5_protos: 0x144
-   __TEXT.__swift5_mpenum: 0x208
--  __TEXT.__gcc_except_tab: 0x15048
--  __TEXT.__ustring: 0xd0e
--  __TEXT.__unwind_info: 0x3fe18
--  __TEXT.__eh_frame: 0x267a0
-+  __TEXT.__gcc_except_tab: 0x15160
-+  __TEXT.__ustring: 0xd1a
-+  __TEXT.__unwind_info: 0x40c00
-+  __TEXT.__eh_frame: 0x278a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1ac50
--  __DATA_CONST.__objc_classlist: 0x3b88
-+  __DATA_CONST.__const: 0x1b000
-+  __DATA_CONST.__objc_classlist: 0x3c00
-   __DATA_CONST.__objc_catlist: 0x1d8
--  __DATA_CONST.__objc_protolist: 0x1948
-+  __DATA_CONST.__objc_protolist: 0x1960
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2a110
--  __DATA_CONST.__objc_protorefs: 0x708
--  __DATA_CONST.__objc_superrefs: 0x2490
--  __DATA_CONST.__objc_arraydata: 0x808
-+  __DATA_CONST.__objc_selrefs: 0x2a5f0
-+  __DATA_CONST.__objc_protorefs: 0x710
-+  __DATA_CONST.__objc_superrefs: 0x24b8
-+  __DATA_CONST.__objc_arraydata: 0x860
-   __DATA_CONST.__vfx_script_tbl: 0x20
--  __DATA_CONST.__got: 0xd4b0
--  __AUTH_CONST.__const: 0x64e60
--  __AUTH_CONST.__cfstring: 0x37360
--  __AUTH_CONST.__objc_const: 0xd18f8
-+  __DATA_CONST.__got: 0xd760
-+  __AUTH_CONST.__const: 0x66650
-+  __AUTH_CONST.__cfstring: 0x37400
-+  __AUTH_CONST.__objc_const: 0xd32c8
-   __AUTH_CONST.__lazy_load_got: 0x48
--  __AUTH_CONST.__objc_intobj: 0x18f0
--  __AUTH_CONST.__objc_arrayobj: 0x678
--  __AUTH_CONST.__objc_doubleobj: 0x1a0
-+  __AUTH_CONST.__objc_intobj: 0x1920
-+  __AUTH_CONST.__objc_arrayobj: 0x6f0
-+  __AUTH_CONST.__objc_doubleobj: 0x1c0
-   __AUTH_CONST.__objc_dictobj: 0xc8
-   __AUTH_CONST.__objc_floatobj: 0x30
--  __AUTH_CONST.__auth_got: 0xa7d8
--  __AUTH.__objc_data: 0x37370
--  __AUTH.__data: 0x237f0
--  __DATA.__objc_ivar: 0x3008
--  __DATA.__data: 0x43728
-+  __AUTH_CONST.__auth_got: 0xa920
-+  __AUTH.__objc_data: 0x37d90
-+  __AUTH.__data: 0x23a08
-+  __DATA.__objc_ivar: 0x3070
-+  __DATA.__data: 0x44560
-   __DATA.__objc_stublist: 0x18
--  __DATA.__bss: 0x60c30
--  __DATA.__common: 0x12e1
--  __DATA_DIRTY.__objc_ivar: 0x68ec
-+  __DATA.__bss: 0x621a8
-+  __DATA.__common: 0x1351
-+  __DATA_DIRTY.__objc_ivar: 0x69ac
-   __DATA_DIRTY.__objc_data: 0x2dc0
-   __DATA_DIRTY.__data: 0x268
-   __DATA_DIRTY.__bss: 0xec0
 
-   - /System/Library/Frameworks/AVKit.framework/AVKit
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 -  - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 94959
--  Symbols:   97951
+-  Symbols:   79802
 -  CStrings:  14922
 +  Functions: 96125
-+  Symbols:   98849
++  Symbols:   80550
 +  CStrings:  15027
- 
 Symbols:
 + +[PKFilmSoftSeparatorView new]
 + +[PKNavigationItemConfiguration searchBarPlacementBarButtonItem]
@@ -911,214 +847,6 @@ Symbols:
 + _keypath_get.30Tm
 + _keypath_set.27Tm
 + _keypath_set.98Tm
-+ _objc_msgSend$_application_createToolbarItems
-+ _objc_msgSend$_buildMarkerSpecs
-+ _objc_msgSend$_canShowPreferredActions:
-+ _objc_msgSend$_configureButton:forAction:showPreferredActions:
-+ _objc_msgSend$_contentSectionDidReload:
-+ _objc_msgSend$_createToolbarItems
-+ _objc_msgSend$_currentPresentedViewFrame
-+ _objc_msgSend$_customFeatureAnnotations
-+ _objc_msgSend$_deviceIconsPaddingWithScreenType:window:
-+ _objc_msgSend$_displayRegion
-+ _objc_msgSend$_featureCacheToken
-+ _objc_msgSend$_fetchDisplayNameForAddressAsynchronously:
-+ _objc_msgSend$_foundInReceiptFooterText
-+ _objc_msgSend$_hasLabelText
-+ _objc_msgSend$_horizontalMarginForWidth:
-+ _objc_msgSend$_iconImageWithSymbol:backgroundColor:backgroundImage:size:scale:
-+ _objc_msgSend$_labelSizeForConstrainingSize:
-+ _objc_msgSend$_labelSizeThatFits:type:
-+ _objc_msgSend$_layoutContentForWidth:applyingFrames:
-+ _objc_msgSend$_layoutMarkers
-+ _objc_msgSend$_markerViewForSpec:
-+ _objc_msgSend$_messageActionPrimaryColor
-+ _objc_msgSend$_messageActionPrimaryLabelColor
-+ _objc_msgSend$_messageActionSecondaryColor
-+ _objc_msgSend$_metricsForSize:inLayout:scale:
-+ _objc_msgSend$_metricsForSize:inLayout:valueFont:
-+ _objc_msgSend$_metricsForSize:inLayout:valueFont:resolvedValueFont:
-+ _objc_msgSend$_optionsForRegion:size:traitCollection:isPlaceholder:customFeatureAnnotations:
-+ _objc_msgSend$_phoneCardTopInsetWithWidth:screenSize:
-+ _objc_msgSend$_phoneCornerRadiusWithWidth:screenSize:
-+ _objc_msgSend$_postAccessibilityAnnouncement:
-+ _objc_msgSend$_powerIndicatorArrowHidden
-+ _objc_msgSend$_presentBankConnectEmptyStateForDestination:
-+ _objc_msgSend$_rebuildAnnotations
-+ _objc_msgSend$_refreshSnapshot
-+ _objc_msgSend$_regeneratePassIconsIfNecessary
-+ _objc_msgSend$_reportBankConnectMessageInteraction:institution:
-+ _objc_msgSend$_reportVIWalletEngagementIfNeededForButtonTag:
-+ _objc_msgSend$_resizeMultiLineValueFontForAvailableSize:withNaturalSize:valueFont:
-+ _objc_msgSend$_resolvedDetailFontForColumnWidth:writeCache:
-+ _objc_msgSend$_resolvedUsesDarkAppearance
-+ _objc_msgSend$_sendAnalyticsForViewDidAppear
-+ _objc_msgSend$_sendAnalyticsForViewDidDisappear
-+ _objc_msgSend$_setCustomFeatureAnnotations:
-+ _objc_msgSend$_setIncludesSafeAreaInsetWhenInset:
-+ _objc_msgSend$_setNeedsRebuild
-+ _objc_msgSend$_setNeedsRefreshSnapshot
-+ _objc_msgSend$_shouldShowActionFooterForSection:inTableView:
-+ _objc_msgSend$_shouldShowRelevancySettingSectionForPass:
-+ _objc_msgSend$_showUpcomingTransactionsActionWithCount:
-+ _objc_msgSend$_startVerificationFlow
-+ _objc_msgSend$_topPaddingWithScreenType:window:
-+ _objc_msgSend$_updateAccessibilityCategory
-+ _objc_msgSend$_updateActionFooterButtonConfiguration
-+ _objc_msgSend$_updateArticleLayouts:overrideFrontmostCardToIdentifier:
-+ _objc_msgSend$_updateBubbleViewWithCurrentMessage
-+ _objc_msgSend$_updateButton
-+ _objc_msgSend$_updateScrollViewToCardIndex:cardCount:animated:
-+ _objc_msgSend$_updateSearchResultsForText:
-+ _objc_msgSend$_updateTextLabel
-+ _objc_msgSend$_useCustomCornerRadii
-+ _objc_msgSend$_useUVBInsets
-+ _objc_msgSend$_valueAttributedStringForColorProfile:font:
-+ _objc_msgSend$_valueSizeThatFits:type:scale:
-+ _objc_msgSend$_verifyADifferentWayButtonTapped
-+ _objc_msgSend$_viewPointForImagePoint:
-+ _objc_msgSend$actionFooterView
-+ _objc_msgSend$addBulletedListItemWithTitle:description:image:linkButton:
-+ _objc_msgSend$addBulletedListItemWithTitle:description:symbolName:tintColor:linkButton:
-+ _objc_msgSend$addButton:
-+ _objc_msgSend$anItemNeedsClipToBounds
-+ _objc_msgSend$applyResumeSessionConfigurationForUserInitiated:
-+ _objc_msgSend$attributedSubstringFromRange:
-+ _objc_msgSend$autoReloadSetupController:requestsPopViewController:
-+ _objc_msgSend$autoReloadSetupController:requestsPushViewController:
-+ _objc_msgSend$automatedPairingEligibility
-+ _objc_msgSend$barcodePassDataSourceDidReloadContent:
-+ _objc_msgSend$boldButton
-+ _objc_msgSend$buttonTray
-+ _objc_msgSend$canAccessPass
-+ _objc_msgSend$centerOffset
-+ _objc_msgSend$clearCurrentContactlessInterfaceSource
-+ _objc_msgSend$configurationWithTitle:style:action:
-+ _objc_msgSend$configurationWithTopLeftRadius:topRightRadius:bottomLeftRadius:bottomRightRadius:
-+ _objc_msgSend$contentSizeThatFits:
-+ _objc_msgSend$createVerificationRecordForPass:
-+ _objc_msgSend$currentRegionSupportsApplePay
-+ _objc_msgSend$customFeatureAnnotation
-+ _objc_msgSend$dataForBundleResourceNamed:withExtension:
-+ _objc_msgSend$datePickerMode
-+ _objc_msgSend$detailDescriptionWithEnvironment:matchingProduct:
-+ _objc_msgSend$deviceCanBeTreatedAsEffectivelyLocked
-+ _objc_msgSend$didChangeAnItemNeedsClipToBounds
-+ _objc_msgSend$edge
-+ _objc_msgSend$effectiveRadiusForCorner:
-+ _objc_msgSend$enumerateSubstringsInRange:options:usingBlock:
-+ _objc_msgSend$featureWelcomeControllerWith:
-+ _objc_msgSend$fetchWeatherDisplayInformationForDate:inTimeZone:atLocation:completion:
-+ _objc_msgSend$fixedRadius:
-+ _objc_msgSend$flushCachedValues
-+ _objc_msgSend$getCurrentContactlessInterfaceSource:
-+ _objc_msgSend$handleInteractionWithRelevancyPresentmentOfType:forPassWithUniqueIdentifier:completionHandler:
-+ _objc_msgSend$handleSectionFooterAction:
-+ _objc_msgSend$identifierForBackgroundTextureType:
-+ _objc_msgSend$identifiersForAllTextures
-+ _objc_msgSend$initForInstoreConextWithPassUniqueID:isPreArm:
-+ _objc_msgSend$initWithAccountIDs:currency:isFamilySharing:
-+ _objc_msgSend$initWithCustomFeature:coordinate:
-+ _objc_msgSend$initWithEdge:
-+ _objc_msgSend$initWithFrame:snapshotManager:
-+ _objc_msgSend$initWithPreferredLocation:startStationLocation:endStationLocation:
-+ _objc_msgSend$initWithRemoteCredential:redemptionToken:
-+ _objc_msgSend$initWithStartDate:endDate:
-+ _objc_msgSend$initWithState:country:target:status:credentialIdentifier:productIdentifier:accountKeyIdentifier:idType:extendedReviewURL:learnMoreURL:supplementalProvisioningData:isPairedWatchUnsupported:proofingErrorMessage:piiTokenIdentifier:referralSource:
-+ _objc_msgSend$initWithTitle:style:action:
-+ _objc_msgSend$invalidateTimeAndLocaleSensitiveCaches
-+ _objc_msgSend$isExistingCardAuthorizationCredential
-+ _objc_msgSend$isMovingToParentViewController
-+ _objc_msgSend$isPreferred
-+ _objc_msgSend$isTransit
-+ _objc_msgSend$loaderForUnifiedContext
-+ _objc_msgSend$loaderWithPaymentPass:
-+ _objc_msgSend$localizedDescriptionForTiles:passState:
-+ _objc_msgSend$makeOnboardingViewControllerWithNavigationController:destination:dataLoader:
-+ _objc_msgSend$makeViewControllerForPass:navigationController:dataLoader:
-+ _objc_msgSend$makeViewControllerForPass:transactionSourceCollection:familyCollection:account:accountUserCollection:physicalCards:dataLoader:navigationController:
-+ _objc_msgSend$makeViewControllerWithNavigationController:dataLoader:
-+ _objc_msgSend$navigationBarMinimization
-+ _objc_msgSend$needsClipToBounds
-+ _objc_msgSend$normalizesFieldHeights
-+ _objc_msgSend$notifyToContinueRemoteNetworkPaymentForSession:remoteLinkToken:paymentType:fromDeviceName:completion:
-+ _objc_msgSend$overrideStateOfRelevancyPresentmentOfType:forPassWithUniqueIdentifier:toState:completionHandler:
-+ _objc_msgSend$passTileGroupView:didTapTile:
-+ _objc_msgSend$passTilesItemPresenter:didTapTile:inGroup:pass:
-+ _objc_msgSend$pointForCoordinate:
-+ _objc_msgSend$precursorReprovisionCredential
-+ _objc_msgSend$preferredSearchBarPlacement
-+ _objc_msgSend$presentUpcomingTransactionsEmptyState
-+ _objc_msgSend$presentUserPassEditorForPass:style:sourceImage:analyticsSessionIdentifier:analyticsEntrySource:completion:
-+ _objc_msgSend$presentationInfo
-+ _objc_msgSend$presentationType
-+ _objc_msgSend$primaryTitleAllTab
-+ _objc_msgSend$primaryVerificationMethod
-+ _objc_msgSend$provisioningProximityVerificationEnabledForRegion:
-+ _objc_msgSend$provisioningViewControllerDidSelectAddDifferentWay:
-+ _objc_msgSend$referenceSizeForState:action:context:receiptImageLoadState:
-+ _objc_msgSend$refreshCount
-+ _objc_msgSend$refreshTimeWithPassState:
-+ _objc_msgSend$refreshUpcomingTransactionsCount
-+ _objc_msgSend$removeContinueRemoteNetworkPaymentNotificationForSession:completion:
-+ _objc_msgSend$reportAuthenticationSuccessForResponse:subjects:
-+ _objc_msgSend$reportVIWalletEngagementForBillSplitWithSessionID:splitType:
-+ _objc_msgSend$reportVIWalletEngagementForIntelligentPassWithAnalyticsSessionIdentifier:isPassAdded:
-+ _objc_msgSend$resetSystemTimeZone
-+ _objc_msgSend$resolveLocationsForTransaction:merchant:completion:
-+ _objc_msgSend$searchResultsViewControllerShouldCallDismissOnSearchBarCancelButtonTap:
-+ _objc_msgSend$setAccessibilityViewIsModal:
-+ _objc_msgSend$setActionButtonStyle:
-+ _objc_msgSend$setAdditionalAnalyticsTransactionAuthorizationValue:forKey:
-+ _objc_msgSend$setAdditionalApprovedKeysForProvisioningEvents:
-+ _objc_msgSend$setAllowUserGeneratedPassInUnsupportedRegion:
-+ _objc_msgSend$setAllowsHeaderViewHeightSizeChanges:
-+ _objc_msgSend$setAnalyticsSessionIdentifier:
-+ _objc_msgSend$setAutomatedPairingEligibility:
-+ _objc_msgSend$setButtonConfiguration:
-+ _objc_msgSend$setButtonEnabled:
-+ _objc_msgSend$setContentWidth:
-+ _objc_msgSend$setCornerConfiguration:
-+ _objc_msgSend$setCurrentContactlessInterfaceSource:
-+ _objc_msgSend$setEligibleSourceDeviceTypes:
-+ _objc_msgSend$setHidesLearnMore:
-+ _objc_msgSend$setIncludeAppLinksForCallingApplication:
-+ _objc_msgSend$setIsTransit:
-+ _objc_msgSend$setLocalizedHostLabel:
-+ _objc_msgSend$setLocalizedRecoveryDescription:
-+ _objc_msgSend$setMessage:withExtensionBundleIdentifier:
-+ _objc_msgSend$setMinimizationBehavior:
-+ _objc_msgSend$setNormalizesFieldHeights:
-+ _objc_msgSend$setPrecursorPassState:forPassTypeIdentifier:passSerialNumber:completion:
-+ _objc_msgSend$setPreferred:
-+ _objc_msgSend$setProductIssuer:
-+ _objc_msgSend$setReceiptImageLoadState:data:
-+ _objc_msgSend$setRecoveryUrl:
-+ _objc_msgSend$setRemoteNetworkRequestHostDeviceModel:
-+ _objc_msgSend$setRimColor:
-+ _objc_msgSend$setRimOpacity:
-+ _objc_msgSend$setRimWidth:
-+ _objc_msgSend$setSectionFooterActionTitle:
-+ _objc_msgSend$setShowsCancelButton:animated:
-+ _objc_msgSend$setSoftRim:
-+ _objc_msgSend$setStylingInfo:
-+ _objc_msgSend$setTitleVisibility:
-+ _objc_msgSend$setTransitSubtype:
-+ _objc_msgSend$setUpcomingTransactionsDataLoader:
-+ _objc_msgSend$setVerticalAlignment:
-+ _objc_msgSend$shouldShowRelevancySettingForPass:
-+ _objc_msgSend$snapshotForDisplayRegion:size:traitCollection:customFeatureAnnotations:featureCacheToken:pointForCoordinate:completion:
-+ _objc_msgSend$stateOfRelevancyPresentmentOfType:forPassWithUniqueIdentifier:
-+ _objc_msgSend$textFieldDidSelectSuggestionDigitString:
-+ _objc_msgSend$transitSubtype
-+ _objc_msgSend$upcomingTransactionsCount
-+ _objc_msgSend$updateResourceName:withData:
-+ _objc_msgSend$updateUGPassBackgroundsForIdentifiers:completion:
-+ _objc_msgSend$updateVerificationRequestRecordForPass:usingTransform:
-+ _objc_msgSend$verticalAlignment
-+ _objc_msgSend$weatherForecastDateAsOfDate:
-+ _objc_msgSend$writeIconResourcesForSymbolName:backgroundData:backgroundColor:toPassGenerator:
-+ _objc_msgSend$writeIconResourcesForSymbolName:backgroundImage:backgroundColor:toPassGenerator:
 + _symbolic $s9PassKitUI19HideMyEmailManagingP
 + _symbolic $s9PassKitUI20UpcomingTransactionsO11TransactionP
 + _symbolic $s9PassKitUI58ProvisioningExistingCardAuthorizationUICoordinatorDelegateP
@@ -2257,64 +1985,6 @@ Symbols:
 - _keypath_get.18Tm
 - _keypath_get.24Tm
 - _keypath_set.19Tm
-- _objc_msgSend$FDICBehaviorHideCreditRewardsHubSignage
-- _objc_msgSend$_closeBarButtonItem
-- _objc_msgSend$_configureButton:forAction:
-- _objc_msgSend$_deviceIconsPadding
-- _objc_msgSend$_phoneCardHeightInsetWithWidth:
-- _objc_msgSend$_resizeMultiLineValueFontForAvailableSize:withNaturalSize:
-- _objc_msgSend$_sendAnalyticsForInitialSuggestions
-- _objc_msgSend$_shiftLocationIfNeeded:completion:
-- _objc_msgSend$_showUpcomingTransactionsAction
-- _objc_msgSend$_topPadding
-- _objc_msgSend$_updateDisplayForFieldTypeLabel
-- _objc_msgSend$_valueAttributedStringForColorProfile:
-- _objc_msgSend$_verificationButtonTapped
-- _objc_msgSend$actionRequiredType
-- _objc_msgSend$applyResumeSessionConfigurationForManualResume:userInitiated:
-- _objc_msgSend$areActivitiesEnabledForBundleId:
-- _objc_msgSend$autoReloadSetupCompleteViewControllerDidComplete
-- _objc_msgSend$boxedPreferredBottomAlignment
-- _objc_msgSend$cornerRadiusForViewWithWidth:displayCornerRadius:
-- _objc_msgSend$detailDescriptionWithEnvironment:
-- _objc_msgSend$digitString
-- _objc_msgSend$errorWithTitle:message:severity:recoveryTitle:recoveryURL:
-- _objc_msgSend$fetchWeatherDisplayInformationFor:at:completion:
-- _objc_msgSend$hasRequestedBadge
-- _objc_msgSend$initForInstoreConextWithPassUniqueID:
-- _objc_msgSend$initWithAccountIDs:currency:
-- _objc_msgSend$initWithInsets:
-- _objc_msgSend$initWithState:country:target:status:credentialIdentifier:productIdentifier:accountKeyIdentifier:idType:extendedReviewURL:learnMoreURL:supplementalProvisioningData:isPairedWatchUnsupported:proofingErrorMessage:piiTokenIdentifier:
-- _objc_msgSend$isSecondaryAction
-- _objc_msgSend$makeOnboardingViewControllerWithNavigationController:
-- _objc_msgSend$makeViewControllerForPass:navigationController:
-- _objc_msgSend$makeViewControllerForPass:transactionSourceCollection:familyCollection:account:accountUserCollection:physicalCards:navigationController:
-- _objc_msgSend$makeViewControllerWithNavigationController:
-- _objc_msgSend$noteInteractionWithPresentmentOfType:containingPassUniqueIdentifier:completion:
-- _objc_msgSend$numberWithUnsignedInt:
-- _objc_msgSend$openIssuerAppAction
-- _objc_msgSend$overrideStateOfRelevancyPresentmentOfType:containingPassUniqueIdentifier:newState:completion:
-- _objc_msgSend$pluralLocalizedName
-- _objc_msgSend$preferredBottomAlignment
-- _objc_msgSend$presentUserPassEditorForPass:style:sourceImage:completion:
-- _objc_msgSend$provisioningProximityVerificationInSetupAssistantEnabledForRegion:
-- _objc_msgSend$referenceSizeForState:action:context:
-- _objc_msgSend$reportVIWalletEngagementForBillSplitWithSessionID:evenSplit:
-- _objc_msgSend$setActionButtonUsesLearnMoreStyle:
-- _objc_msgSend$setAutomatedPairingConsented:
-- _objc_msgSend$setBoxedPreferredBottomAlignment:
-- _objc_msgSend$setHelp:
-- _objc_msgSend$setIsSecondaryAction:
-- _objc_msgSend$setOpenIssuerAppAction:
-- _objc_msgSend$setPreferredBottomAlignment:
-- _objc_msgSend$setReceiptImageData:
-- _objc_msgSend$stateOfRelevancyPresentmentOfType:containingPassUniqueIdentifier:
-- _objc_msgSend$systemName
-- _objc_msgSend$unsignedIntValue
-- _objc_msgSend$updateUGPassBackgroundsIfNecessaryWithCompletion:
-- _objc_msgSend$updateVerificationRecord:
-- _objc_msgSend$verificationRequestRecordForPass:
-- _objc_msgSend$weatherFetchDateForDate:
 - _symbolic $s9PassKitUI20UpcomingTransactionsV11TransactionP
 - _symbolic $s9PassKitUI56ProvisioningExistingCardAuthorizationCoordinatorDelegateP
 - _symbolic SDySS_____GSg 9PassKitUI20UpcomingTransactionsV15PaymentCardInfoV

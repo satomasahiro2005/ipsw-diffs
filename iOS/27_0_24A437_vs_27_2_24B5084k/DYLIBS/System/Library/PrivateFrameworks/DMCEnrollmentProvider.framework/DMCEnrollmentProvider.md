@@ -2,96 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/DMCEnrollmentProvider.framework/DMCEnrollmentProvider`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4dbe0` | `0x50444` | **`+0x2864`** |
+| `__AUTH_CONST.__objc_const` | `0x10818` | `0x114a0` | **`+0xc88`** |
+| `__TEXT.__objc_methlist` | `0x6ea4` | `0x7254` | **`+0x3b0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4830` | `0x49c8` | **`+0x198`** |
+| `__AUTH.__objc_data` | `0x1a10` | `0x1b00` | **`+0xf0`** |
+| `__DATA_CONST.__const` | `0x1140` | `0x1218` | **`+0xd8`** |
+| `__TEXT.__unwind_info` | `0x1508` | `0x15b8` | **`+0xb0`** |
+| `__AUTH_CONST.__cfstring` | `0x3020` | `0x30c0` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0x2f28` | `0x2f98` | **`+0x70`** |
+| `__TEXT.__oslogstring` | `0x245f` | `0x24cf` | **`+0x70`** |
+| `__DATA.__data` | `0x13f8` | `0x1458` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0x76c` | `0x7b4` | **`+0x48`** |
+| `__DATA.__objc_ivar` | `0x5b4` | `0x5f8` | **`+0x44`** |
+| `__AUTH_CONST.__auth_got` | `0x7e8` | `0x7c8` | **`-0x20`** |
+| `__AUTH_CONST.__const` | `0x4c0` | `0x4a0` | **`-0x20`** |
+| `__DATA_CONST.__got` | `0xed8` | `0xef8` | **`+0x20`** |
+| `__TEXT.__dlopen_cstrs` | `0x47` | `0x66` | **`+0x1f`** |
+| `__AUTH_CONST.__objc_intobj` | `0x120` | `0x138` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x2f8` | `0x310` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x238` | `0x250` | **`+0x18`** |
+| `__DATA_CONST.__objc_protolist` | `0x198` | `0x1a0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -113.2.5.0.0
--  __TEXT.__text: 0x4b95c
--  __TEXT.__objc_methlist: 0x6ea4
 +113.40.17.0.0
-+  __TEXT.__text: 0x4e0d0
-+  __TEXT.__objc_methlist: 0x7254
-   __TEXT.__const: 0x504
--  __TEXT.__oslogstring: 0x245f
--  __TEXT.__cstring: 0x2f28
--  __TEXT.__gcc_except_tab: 0x76c
--  __TEXT.__dlopen_cstrs: 0x47
-+  __TEXT.__oslogstring: 0x24cf
-+  __TEXT.__cstring: 0x2f98
-+  __TEXT.__gcc_except_tab: 0x7b4
-   __TEXT.__ustring: 0xa4
-+  __TEXT.__dlopen_cstrs: 0x66
-   __TEXT.__swift5_typeref: 0x1b6
-   __TEXT.__swift5_capture: 0x9c
-   __TEXT.__swift_as_entry: 0x1c
 
-   __TEXT.__swift5_fieldmd: 0x54
-   __TEXT.__swift5_proto: 0x10
-   __TEXT.__swift5_types: 0xc
--  __TEXT.__unwind_info: 0x1a30
-+  __TEXT.__unwind_info: 0x1b10
-   __TEXT.__eh_frame: 0x430
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1140
--  __DATA_CONST.__objc_classlist: 0x2f8
-+  __DATA_CONST.__const: 0x1218
-+  __DATA_CONST.__objc_classlist: 0x310
-   __DATA_CONST.__objc_catlist: 0x40
--  __DATA_CONST.__objc_protolist: 0x198
-+  __DATA_CONST.__objc_protolist: 0x1a0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4830
-+  __DATA_CONST.__objc_selrefs: 0x49c8
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x238
-+  __DATA_CONST.__objc_superrefs: 0x250
-   __DATA_CONST.__objc_arraydata: 0x90
--  __DATA_CONST.__got: 0xed8
--  __AUTH_CONST.__const: 0x4c0
--  __AUTH_CONST.__cfstring: 0x3020
--  __AUTH_CONST.__objc_const: 0x10818
-+  __DATA_CONST.__got: 0xef8
-+  __AUTH_CONST.__const: 0x4a0
-+  __AUTH_CONST.__cfstring: 0x30c0
-+  __AUTH_CONST.__objc_const: 0x114a0
-   __AUTH_CONST.__objc_arrayobj: 0xa8
--  __AUTH_CONST.__objc_intobj: 0x120
-+  __AUTH_CONST.__objc_intobj: 0x138
-   __AUTH_CONST.__objc_floatobj: 0x30
--  __AUTH_CONST.__auth_got: 0x7e8
--  __AUTH.__objc_data: 0x1a10
-+  __AUTH_CONST.__auth_got: 0x7c8
-+  __AUTH.__objc_data: 0x1b00
-   __AUTH.__data: 0xc0
--  __DATA.__objc_ivar: 0x5b4
--  __DATA.__data: 0x13f8
-+  __DATA.__objc_ivar: 0x5f8
-+  __DATA.__data: 0x1458
-   __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0x370
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libmis.dylib
-   - /usr/lib/libobjc.A.dylib
 +  - /usr/lib/swift/libswiftAVFoundation.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
-   - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2143
--  Symbols:   5804
+-  Symbols:   4125
 -  CStrings:  626
 +  Functions: 2221
-+  Symbols:   5992
++  Symbols:   4256
 +  CStrings:  634
- 
 Symbols:
 + +[DMCEnrollmentConfirmationView _newConfirmationButton]
 + +[DMCEnrollmentConfirmationView _trayButtonHeight]
@@ -281,86 +232,6 @@ Symbols:
 + __swift_FORCE_LOAD_$_swiftAVFoundation_$_DMCEnrollmentProvider
 + _audit_stringAppleMediaServicesUI
 + _getAMSUIManageSubsriptionSpecifierProviderClass.softClass
-+ _objc_msgSend$_attributedLinkTextWithIcon:attributes:
-+ _objc_msgSend$_consentDisclosureCellDataForDeviceEnrollment:
-+ _objc_msgSend$_elevatedPayloadRowForTableRow:
-+ _objc_msgSend$_footnoteCellWithText:
-+ _objc_msgSend$_initWithTitles:subtitles:
-+ _objc_msgSend$_linkIconImage
-+ _objc_msgSend$_newConfirmationButton
-+ _objc_msgSend$_numberOfElevatedPayloadRows
-+ _objc_msgSend$_organizationCardCellData
-+ _objc_msgSend$_requiredAppCellDataWithRequest:viewGroup:
-+ _objc_msgSend$_rowViewWithTitle:subtitle:showSeparator:titleLabels:subtitleLabels:
-+ _objc_msgSend$_setSubscriptionsLoading:
-+ _objc_msgSend$_setupKeyboardNotifications
-+ _objc_msgSend$_setupManagedProfileSectionsForDeviceEnrollment:
-+ _objc_msgSend$_setupSectionsWithManagedAppleID:conflictingApps:
-+ _objc_msgSend$_setupSubscriptionsUIWithAccountManager:
-+ _objc_msgSend$_subscriptionsRow
-+ _objc_msgSend$_subscriptionsRowForElevatedPayloadTypes:
-+ _objc_msgSend$_tableChanged:
-+ _objc_msgSend$_tableView:subscriptionsCellForRowAtIndexPath:
-+ _objc_msgSend$_trayButtonHeight
-+ _objc_msgSend$addArrangedSubview:
-+ _objc_msgSend$amsProvider
-+ _objc_msgSend$attributedStringWithAttachment:
-+ _objc_msgSend$cachedSpecifier
-+ _objc_msgSend$cardTopConstraint
-+ _objc_msgSend$configurationWithFont:
-+ _objc_msgSend$configureLinkText:iconName:forceLineBreak:linkAction:
-+ _objc_msgSend$constraintEqualToAnchor:constant:
-+ _objc_msgSend$constraintEqualToConstant:
-+ _objc_msgSend$controllerLoadAction
-+ _objc_msgSend$imageByApplyingSymbolConfiguration:
-+ _objc_msgSend$imageWithRenderingMode:
-+ _objc_msgSend$initWithAccountManager:
-+ _objc_msgSend$initWithDelegate:reason:lockupRequest:lockupViewGroup:allowSkip:
-+ _objc_msgSend$initWithDelegate:username:profile:enrollmentType:requiredAppRequest:requiredAppViewGroup:
-+ _objc_msgSend$initWithMDMProfileForRMAccountWithAccountManager:
-+ _objc_msgSend$initWithTitle:subtitle:
-+ _objc_msgSend$initWithTitles:
-+ _objc_msgSend$invalidateSpecifier
-+ _objc_msgSend$keyboardLayoutGuide
-+ _objc_msgSend$keyboardOverlap
-+ _objc_msgSend$keyboardOverlapAtLastScroll
-+ _objc_msgSend$layoutFrame
-+ _objc_msgSend$linkIconName
-+ _objc_msgSend$linkRangeLength
-+ _objc_msgSend$performSelector:withObject:
-+ _objc_msgSend$removeExistingAppCompletionHandler
-+ _objc_msgSend$removeExistingAppViewController:didReceiveAction:canceled:
-+ _objc_msgSend$requiredAppRequest
-+ _objc_msgSend$requiredAppViewGroup
-+ _objc_msgSend$restoreSnapshot
-+ _objc_msgSend$selectSpecifier
-+ _objc_msgSend$setAccessoryView:
-+ _objc_msgSend$setAxis:
-+ _objc_msgSend$setCachedSpecifier:
-+ _objc_msgSend$setConstant:
-+ _objc_msgSend$setKeyboardOverlap:
-+ _objc_msgSend$setKeyboardOverlapAtLastScroll:
-+ _objc_msgSend$setLinkIconName:
-+ _objc_msgSend$setLinkRangeLength:
-+ _objc_msgSend$setNeedsUpdateConstraints
-+ _objc_msgSend$setRemoveExistingAppCompletionHandler:
-+ _objc_msgSend$setSpecifierIsCached:
-+ _objc_msgSend$setSubscriptionsIsLoading:
-+ _objc_msgSend$setSubscriptionsSpecifierProvider:
-+ _objc_msgSend$setUsesBottomSafeArea:
-+ _objc_msgSend$specifierIsCached
-+ _objc_msgSend$subscriptionsIsLoading
-+ _objc_msgSend$subscriptionsSpecifierProvider
-+ _objc_msgSend$subtitleLabels
-+ _objc_msgSend$systemGray2Color
-+ _objc_msgSend$systemGray5Color
-+ _objc_msgSend$target
-+ _objc_msgSend$textAlignment
-+ _objc_msgSend$titleLabels
-+ _objc_msgSend$topAnchor
-+ _objc_msgSend$trailingAnchor
-+ _objc_msgSend$trayHeightForButtonCount:
-+ _objc_msgSend$trayHorizontalMargin
 - -[DMCEnrollmentConsentViewController _commonCellDataForRegularBYODDisclosure]
 - -[DMCEnrollmentConsentViewController _platterCellDataForRegularADDEDisclosure]
 - -[DMCEnrollmentConsentViewController _platterCellDataForRegularADUEDisclosure]
@@ -418,29 +289,6 @@ Symbols:
 - _free
 - _getSKStoreProductParameterITunesItemIdentifierSymbolLoc.ptr
 - _getSKStoreProductViewControllerClass.softClass
-- _objc_msgSend$CGRectValue
-- _objc_msgSend$_adjustFloatyViewFrameWithKeyboardFrame:animationDuration:
-- _objc_msgSend$_commonCellDataForRegularBYODDisclosure
-- _objc_msgSend$_platterCellDataForRegularADDEDisclosure
-- _objc_msgSend$_platterCellDataForRegularADUEDisclosure
-- _objc_msgSend$_platterCellDataWithImage:text:
-- _objc_msgSend$_setupNotification
-- _objc_msgSend$_touchViewFrame:
-- _objc_msgSend$_updateFloatyViewForKeyboardFrame:duration:
-- _objc_msgSend$convertRect:toView:
-- _objc_msgSend$gapBetweenButtons
-- _objc_msgSend$initWithDelegate:username:profile:enrollmentType:
-- _objc_msgSend$initWithMDMProfileForRMAccount
-- _objc_msgSend$intrinsicContentSize
-- _objc_msgSend$loadProductWithParameters:completionBlock:
-- _objc_msgSend$preferredHeight
-- _objc_msgSend$presentedViewController
-- _objc_msgSend$setGapBetweenButtons:
-- _objc_msgSend$setPreferredHeight:
-- _objc_msgSend$setShowsRightBarButton:
-- _objc_msgSend$setShowsStoreButton:
-- _objc_msgSend$systemOrangeColor
-- _objc_msgSend$systemWhiteColor
 CStrings:
 + "\""
 + "AMSUIManageSubsriptionSpecifierProvider"

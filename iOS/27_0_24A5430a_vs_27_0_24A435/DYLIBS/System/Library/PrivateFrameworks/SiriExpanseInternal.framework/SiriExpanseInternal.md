@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SiriExpanseInternal.framework/SiriExpanseInternal`
 
-```diff
+### Section Size Changes
 
- 3505.1.1.0.0
--  __TEXT.__text: 0x49200
-+  __TEXT.__text: 0x49204
-   __TEXT.__objc_methlist: 0x38
-   __TEXT.__const: 0x5438
-   __TEXT.__constg_swiftt: 0x214c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x49200` | `0x49204` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s19SiriExpanseInternal23SharingDirectInvocationO4fromACSg0A7KitFlow5ParseO0eF0V_tcfCTf4nd_n : 2432 -> 2436
 ```

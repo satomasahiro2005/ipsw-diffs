@@ -2,88 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/PredictedContextAlgorithms.framework/PredictedContextAlgorithms`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x101f64` | `0x111c38` | **`+0xfcd4`** |
+| `__TEXT.__oslogstring` | `0x6a51` | `0x77e1` | **`+0xd90`** |
+| `__TEXT.__eh_frame` | `0x4460` | `0x45d8` | **`+0x178`** |
+| `__TEXT.__const` | `0x5a68` | `0x5bd8` | **`+0x170`** |
+| `__AUTH_CONST.__const` | `0x4c80` | `0x4dd8` | **`+0x158`** |
+| `__TEXT.__cstring` | `0x3b29` | `0x3c49` | **`+0x120`** |
+| `__DATA.__bss` | `0x2f20` | `0x2fe0` | **`+0xc0`** |
+| `__TEXT.__unwind_info` | `0x3360` | `0x3408` | **`+0xa8`** |
+| `__TEXT.__swift5_capture` | `0x388` | `0x428` | **`+0xa0`** |
+| `__TEXT.__swift5_typeref` | `0x1fd0` | `0x203c` | **`+0x6c`** |
+| `__AUTH_CONST.__auth_got` | `0xcd0` | `0xd30` | **`+0x60`** |
+| `__TEXT.__swift5_reflstr` | `0x163d` | `0x169d` | **`+0x60`** |
+| `__TEXT.__constg_swiftt` | `0x2068` | `0x20b8` | **`+0x50`** |
+| `__TEXT.__swift5_fieldmd` | `0x1efc` | `0x1f44` | **`+0x48`** |
+| `__DATA.__data` | `0x968` | `0x990` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0x7e8` | `0x808` | **`+0x20`** |
+| `__AUTH.__data` | `0xdc8` | `0xdd8` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x2dc` | `0x2ec` | **`+0x10`** |
+| `__TEXT.__swift_as_ret` | `0x19c` | `0x1a4` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x294` | `0x298` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0x21c` | `0x220` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -51.0.0.0.0
--  __TEXT.__text: 0xfa708
 +52.0.0.0.0
-+  __TEXT.__text: 0x10a170
-   __TEXT.__objc_methlist: 0x6dec
--  __TEXT.__const: 0x5a68
--  __TEXT.__swift5_typeref: 0x1fd0
--  __TEXT.__swift5_fieldmd: 0x1efc
--  __TEXT.__constg_swiftt: 0x2068
-+  __TEXT.__const: 0x5bd8
-+  __TEXT.__swift5_typeref: 0x203c
-+  __TEXT.__swift5_fieldmd: 0x1f44
-+  __TEXT.__constg_swiftt: 0x20b8
-   __TEXT.__swift5_protos: 0xe8
--  __TEXT.__swift5_capture: 0x388
--  __TEXT.__swift5_reflstr: 0x163d
-+  __TEXT.__swift5_capture: 0x428
-+  __TEXT.__swift5_reflstr: 0x169d
-   __TEXT.__swift5_assocty: 0x2b8
--  __TEXT.__swift5_proto: 0x294
-+  __TEXT.__swift5_proto: 0x298
-   __TEXT.__swift5_types: 0x1bc
--  __TEXT.__swift_as_entry: 0x21c
--  __TEXT.__swift_as_ret: 0x19c
--  __TEXT.__swift_as_cont: 0x2dc
--  __TEXT.__cstring: 0x3b29
-+  __TEXT.__swift_as_entry: 0x220
-+  __TEXT.__swift_as_ret: 0x1a4
-+  __TEXT.__swift_as_cont: 0x2ec
-+  __TEXT.__cstring: 0x3c49
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__oslogstring: 0x6a51
-+  __TEXT.__oslogstring: 0x77e1
-   __TEXT.__gcc_except_tab: 0x1458
-   __TEXT.__ustring: 0xbe
--  __TEXT.__unwind_info: 0x3ce8
--  __TEXT.__eh_frame: 0x4460
-+  __TEXT.__unwind_info: 0x3dc8
-+  __TEXT.__eh_frame: 0x45d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x2a0
-   __DATA_CONST.__objc_arraydata: 0xe8
--  __DATA_CONST.__got: 0x7e8
--  __AUTH_CONST.__const: 0x4c80
-+  __DATA_CONST.__got: 0x808
-+  __AUTH_CONST.__const: 0x4dd8
-   __AUTH_CONST.__cfstring: 0x4380
-   __AUTH_CONST.__objc_const: 0xb370
-   __AUTH_CONST.__weak_auth_got: 0x18
-
-   __AUTH_CONST.__objc_arrayobj: 0x60
-   __AUTH_CONST.__objc_intobj: 0xf0
-   __AUTH_CONST.__objc_dictobj: 0x50
--  __AUTH_CONST.__auth_got: 0xcd0
-+  __AUTH_CONST.__auth_got: 0xd30
-   __AUTH.__objc_data: 0x2c0
--  __AUTH.__data: 0xdc8
-+  __AUTH.__data: 0xdd8
-   __DATA.__objc_ivar: 0x780
--  __DATA.__data: 0x968
-+  __DATA.__data: 0x990
-   __DATA.__common: 0x20
-   __DATA_DIRTY.__objc_data: 0x2498
-   __DATA_DIRTY.__data: 0x490
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5093
--  Symbols:   12196
+-  Symbols:   11064
 -  CStrings:  1138
 +  Functions: 5163
-+  Symbols:   12348
++  Symbols:   11216
 +  CStrings:  1162
- 
 Symbols:
 + _$s26PredictedContextAlgorithms08CASensedB19NLLearnedRouteEventP20originNameConfidenceSSSgvg
 + _$s26PredictedContextAlgorithms08CASensedB19NLLearnedRouteEventP20originNameConfidenceSSSgvgTj

@@ -2,94 +2,59 @@
 
 > `/System/Library/FlowTools/SnippetService/ResponsePlugins/MusicSnippetProviderPlugin.bundle/MusicSnippetProviderPlugin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4ca8` | `0x3344` | **`-0x1964`** |
+| `__TEXT.__oslogstring` | `0x3af` | `0x205` | **`-0x1aa`** |
+| `__TEXT.__auth_stubs` | `0x5d0` | `0x440` | **`-0x190`** |
+| `__TEXT.__const` | `0x290` | `0x112` | **`-0x17e`** |
+| `__TEXT.__eh_frame` | `0x138` | `—` | **`-0x138`** |
+| `__TEXT.__swift5_typeref` | `0x13a` | `0x2f` | **`-0x10b`** |
+| `__DATA_CONST.__auth_got` | `0x2e8` | `0x220` | **`-0xc8`** |
+| `__DATA_CONST.__auth_ptr` | `0x100` | `0x68` | **`-0x98`** |
+| `__DATA.__data` | `0x160` | `0xd8` | **`-0x88`** |
+| `__TEXT.__cstring` | `0x54` | `0xd6` | **`+0x82`** |
+| `__DATA.__bss` | `0x100` | `0x80` | **`-0x80`** |
+| `__TEXT.__unwind_info` | `0x140` | `0xd8` | **`-0x68`** |
+| `__DATA_CONST.__got` | `0xf8` | `0xb0` | **`-0x48`** |
+| `__DATA_CONST.__const` | `0x168` | `0x138` | **`-0x30`** |
+| `__TEXT.__constg_swiftt` | `0x64` | `0x48` | **`-0x1c`** |
+| `__TEXT.__swift5_assocty` | `0x18` | `—` | **`-0x18`** |
+| `__TEXT.__swift_as_entry` | `0x18` | `—` | **`-0x18`** |
+| `__TEXT.__swift5_fieldmd` | `0x20` | `0x10` | **`-0x10`** |
+| `__TEXT.__swift_as_ret` | `0x10` | `—` | **`-0x10`** |
+| `__TEXT.__swift5_proto` | `0x8` | `0x4` | **`-0x4`** |
+| `__TEXT.__swift5_types` | `0x8` | `0x4` | **`-0x4`** |
+| `__TEXT.__swift_as_cont` | `0x4` | `—` | **`-0x4`** |
+| `__TEXT.__swift5_reflstr` | `0x2` | `—` | **`-0x2`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_const`
+- `__DATA_CONST.__objc_classlist`
+
+### Other Changes
 
 ```diff
 
 -4026.100.89.0.0
--  __TEXT.__text: 0x4ca8
--  __TEXT.__auth_stubs: 0x5d0
--  __TEXT.__const: 0x290
--  __TEXT.__constg_swiftt: 0x64
--  __TEXT.__swift5_typeref: 0x13a
--  __TEXT.__swift5_fieldmd: 0x20
--  __TEXT.__swift5_reflstr: 0x2
--  __TEXT.__swift5_assocty: 0x18
--  __TEXT.__oslogstring: 0x3af
--  __TEXT.__swift5_proto: 0x8
--  __TEXT.__swift5_types: 0x8
--  __TEXT.__swift_as_entry: 0x18
--  __TEXT.__swift_as_ret: 0x10
--  __TEXT.__swift_as_cont: 0x4
--  __TEXT.__cstring: 0x54
 +4026.110.2.0.0
-+  __TEXT.__text: 0x3344
-+  __TEXT.__auth_stubs: 0x440
-+  __TEXT.__const: 0x112
-+  __TEXT.__cstring: 0xd6
-+  __TEXT.__swift5_typeref: 0x2f
-+  __TEXT.__oslogstring: 0x205
-   __TEXT.__objc_classname: 0x3d
--  __TEXT.__unwind_info: 0x140
--  __TEXT.__eh_frame: 0x138
--  __DATA_CONST.__const: 0x168
-+  __TEXT.__constg_swiftt: 0x48
-+  __TEXT.__swift5_fieldmd: 0x10
-+  __TEXT.__swift5_proto: 0x4
-+  __TEXT.__swift5_types: 0x4
-+  __TEXT.__unwind_info: 0xd8
-+  __DATA_CONST.__const: 0x138
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x2e8
--  __DATA_CONST.__got: 0xf8
--  __DATA_CONST.__auth_ptr: 0x100
-+  __DATA_CONST.__auth_got: 0x220
-+  __DATA_CONST.__got: 0xb0
-+  __DATA_CONST.__auth_ptr: 0x68
-   __DATA.__objc_const: 0x90
--  __DATA.__data: 0x160
--  __DATA.__bss: 0x100
-+  __DATA.__data: 0xd8
-   __DATA.__common: 0x18
-+  __DATA.__bss: 0x80
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/MusicKit.framework/MusicKit
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
 
-   - /System/Library/PrivateFrameworks/FlowToolsSnippetService.framework/FlowToolsSnippetService
-   - /System/Library/PrivateFrameworks/IntelligenceFlow.framework/IntelligenceFlow
-   - /System/Library/PrivateFrameworks/MusicKitInternal.framework/MusicKitInternal
 -  - /System/Library/PrivateFrameworks/SiriKitFlow.framework/SiriKitFlow
-   - /System/Library/PrivateFrameworks/SnippetKit.framework/SnippetKit
-   - /System/Library/PrivateFrameworks/SnippetUI.framework/SnippetUI
-   - /System/Library/PrivateFrameworks/ToolKit.framework/ToolKit
 
-   - /usr/lib/swift/libswiftIntents.dylib
-   - /usr/lib/swift/libswiftMLCompute.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
 -  - /usr/lib/swift/libswiftMetalKit.dylib
 -  - /usr/lib/swift/libswiftModelIO.dylib
-   - /usr/lib/swift/libswiftNaturalLanguage.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
 
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 86
 -  Symbols:   73
 -  CStrings:  18
 +  Functions: 48
 +  Symbols:   61
 +  CStrings:  16
- 
 Symbols:
 + _objc_release_x25
 + _objc_release_x26

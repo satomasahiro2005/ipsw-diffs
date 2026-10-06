@@ -2,19 +2,18 @@
 
 > `/System/Library/Frameworks/SensorKit.framework/XPCServices/SensorKitLongTermStorageHelper.xpc/SensorKitLongTermStorageHelper`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
+- `__DATA_CONST.__const`
 - `__TEXT.__objc_methlist`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
+
+### Other Changes
 
 ```diff
 
 -1038.0.0.0.0
 +1039.0.1.0.0
-   __TEXT.__text: 0x7474
-   __TEXT.__auth_stubs: 0x460
-   __TEXT.__objc_stubs: 0x1480
 Functions:
 ~ sub_1000025fc : 168 -> 128
 ~ sub_1000026a4 -> sub_10000267c : 56 -> 168

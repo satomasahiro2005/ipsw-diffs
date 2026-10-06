@@ -2,73 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/NutritionUICore.framework/NutritionUICore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1f6f8` | `0x20364` | **`+0xc6c`** |
+| `__TEXT.__swift5_typeref` | `0x43d4` | `0x47f8` | **`+0x424`** |
+| `__AUTH.__data` | `0x6a8` | `0x730` | **`+0x88`** |
+| `__AUTH_CONST.__const` | `0xf88` | `0xf08` | **`-0x80`** |
+| `__DATA.__data` | `0xc38` | `0xcb8` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x6e8` | `0x720` | **`+0x38`** |
+| `__TEXT.__swift5_reflstr` | `0x451` | `0x471` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x2c8` | `0x2e0` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x9d8` | `0x9e8` | **`+0x10`** |
+| `__TEXT.__constg_swiftt` | `0x764` | `0x770` | **`+0xc`** |
+| `__TEXT.__swift5_fieldmd` | `0x6fc` | `0x708` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1f6f8
-+  __TEXT.__text: 0x20364
-   __TEXT.__const: 0x1fd4
--  __TEXT.__swift5_typeref: 0x43d4
--  __TEXT.__swift5_reflstr: 0x451
-+  __TEXT.__swift5_typeref: 0x47f8
-+  __TEXT.__swift5_reflstr: 0x471
-   __TEXT.__swift5_assocty: 0x270
--  __TEXT.__constg_swiftt: 0x764
--  __TEXT.__swift5_fieldmd: 0x6fc
-+  __TEXT.__constg_swiftt: 0x770
-+  __TEXT.__swift5_fieldmd: 0x708
-   __TEXT.__swift5_capture: 0xb0
-   __TEXT.__cstring: 0x6e1
-   __TEXT.__swift5_proto: 0xbc
-   __TEXT.__swift5_types: 0x7c
-   __TEXT.__oslogstring: 0x85
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__unwind_info: 0x6e8
-+  __TEXT.__unwind_info: 0x720
-   __TEXT.__eh_frame: 0x1d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+-30.0.2.0.0
++30.0.3.0.0
 
-   __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x10
--  __DATA_CONST.__got: 0x2c8
--  __AUTH_CONST.__const: 0xf88
-+  __DATA_CONST.__got: 0x2e0
-+  __AUTH_CONST.__const: 0xf08
-   __AUTH_CONST.__objc_const: 0x1d0
--  __AUTH_CONST.__auth_got: 0x9d8
-+  __AUTH_CONST.__auth_got: 0x9e8
-   __AUTH.__objc_data: 0x50
--  __AUTH.__data: 0x6a8
--  __DATA.__data: 0xc38
-+  __AUTH.__data: 0x730
-+  __DATA.__data: 0xcb8
-   __DATA.__bss: 0x1740
-   __DATA.__common: 0x60
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 661
--  Symbols:   558
+-  Symbols:   512
 +  Functions: 677
-+  Symbols:   566
-   CStrings:  52
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
++  Symbols:   521
 Symbols:
 + _get_witness_table 7SwiftUI19_ConditionalContentVyAA6VStackVyAA05TupleD0VyAA08ModifiedD0VyAA4TextVAA31AccessibilityAttachmentModifierVG_AA6HStackVyAGyAN_AA6SpacerVAIyACyACyAIyAA5ImageVAA016_ForegroundStyleK0VyAA5ColorVGGAZGAIyAtA07_HiddenK0VGGAA022_EnvironmentKeyWritingK0VyAA4FontVSgGGQPGGQPGGAPyAGyAN_ArIyAnA14_PaddingLayoutVGAIyA10_AA06_FrameX0VGQPGGGAA4ViewHPA14_AAA24_HPyHC_A22_AAA24_HPyHCHC
 + _symbolic _____ 7SwiftUI15DynamicTypeSizeO
@@ -95,5 +55,4 @@ Symbols:
 - _symbolic _____y___________y_____y__________G______ADyADyAE_____GAFGADyADy_____yALyADy__________y_____GGAQGAOG_____y_____SgGG_____GQPGG 7SwiftUI13_VariadicViewO4TreeV AA13_HStackLayoutV AA12TupleContentV AA08ModifiedI0V AA4TextV AA31AccessibilityAttachmentModifierV AA6SpacerV AA08_PaddingG0V AA012_ConditionalI0V AA5ImageV AA016_ForegroundStyleN0V AA5ColorV AA022_EnvironmentKeyWritingN0V AA4FontV AA06_FrameG0V
 - _symbolic _____y_____y_____y__________G______ACyACyAD_____GAEGACyACy_____yAKyACy__________y_____GGAPGANG_____y_____SgGG_____GQPGG 7SwiftUI6HStackV AA12TupleContentV AA08ModifiedE0V AA4TextV AA31AccessibilityAttachmentModifierV AA6SpacerV AA14_PaddingLayoutV AA012_ConditionalE0V AA5ImageV AA016_ForegroundStyleJ0V AA5ColorV AA022_EnvironmentKeyWritingJ0V AA4FontV AA06_FrameM0V
 - _type_layout_string 15NutritionUICore0A9FactorRowV
-
 ```

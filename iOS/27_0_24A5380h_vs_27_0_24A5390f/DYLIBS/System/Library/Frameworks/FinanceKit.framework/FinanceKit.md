@@ -2,128 +2,62 @@
 
 > `/System/Library/Frameworks/FinanceKit.framework/FinanceKit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_protos`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7e593c` | `0x7d3940` | **`-0x11ffc`** |
+| `__DATA.__bss` | `0xdb6f0` | `0xdc460` | **`+0xd70`** |
+| `__TEXT.__oslogstring` | `0x9999` | `0x8dc9` | **`-0xbd0`** |
+| `__TEXT.__eh_frame` | `0x38d58` | `0x383a8` | **`-0x9b0`** |
+| `__AUTH_CONST.__objc_const` | `0x179e0` | `0x174d0` | **`-0x510`** |
+| `__TEXT.__swift5_reflstr` | `0x12fa7` | `0x12bc7` | **`-0x3e0`** |
+| `__TEXT.__unwind_info` | `0x23cf0` | `0x23928` | **`-0x3c8`** |
+| `__DATA_DIRTY.__data` | `0xea90` | `0xe6e0` | **`-0x3b0`** |
+| `__DATA_DIRTY.__objc_data` | `0x7460` | `0x7138` | **`-0x328`** |
+| `__TEXT.__swift5_fieldmd` | `0x1f098` | `0x1ee70` | **`-0x228`** |
+| `__TEXT.__cstring` | `0x1686e` | `0x1666e` | **`-0x200`** |
+| `__TEXT.__constg_swiftt` | `0x18ad8` | `0x18924` | **`-0x1b4`** |
+| `__AUTH.__objc_data` | `0x3470` | `0x3308` | **`-0x168`** |
+| `__AUTH.__data` | `0x8a90` | `0x8948` | **`-0x148`** |
+| `__AUTH_CONST.__const` | `0x46d30` | `0x46e50` | **`+0x120`** |
+| `__TEXT.__objc_methlist` | `0x4c64` | `0x4b64` | **`-0x100`** |
+| `__AUTH_CONST.__auth_got` | `0x2cd0` | `0x2bf8` | **`-0xd8`** |
+| `__DATA.__data` | `0x13c70` | `0x13d20` | **`+0xb0`** |
+| `__DATA_CONST.__const` | `0x62e8` | `0x6238` | **`-0xb0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x53a8` | `0x5338` | **`-0x70`** |
+| `__TEXT.__swift5_proto` | `0x7a30` | `0x7a9c` | **`+0x6c`** |
+| `__TEXT.__swift5_typeref` | `0x1b67e` | `0x1b6e2` | **`+0x64`** |
+| `__DATA_CONST.__got` | `0x1640` | `0x15e8` | **`-0x58`** |
+| `__TEXT.__const` | `0x8af08` | `0x8af48` | **`+0x40`** |
+| `__DATA_CONST.__objc_classlist` | `0xb98` | `0xb60` | **`-0x38`** |
+| `__TEXT.__swift_as_cont` | `0x1f1c` | `0x1ee4` | **`-0x38`** |
+| `__TEXT.__swift5_assocty` | `0x3468` | `0x3498` | **`+0x30`** |
+| `__TEXT.__swift_as_ret` | `0xc7c` | `0xc60` | **`-0x1c`** |
+| `__DATA_DIRTY.__common` | `0x198` | `0x180` | **`-0x18`** |
+| `__TEXT.__swift5_capture` | `0x29b4` | `0x299c` | **`-0x18`** |
+| `__TEXT.__swift5_types` | `0x25ac` | `0x2594` | **`-0x18`** |
+| `__TEXT.__swift5_builtin` | `0x5dc` | `0x5c8` | **`-0x14`** |
+| `__DATA.__objc_ivar` | `0x510` | `0x51c` | **`+0xc`** |
+| `__TEXT.__swift_as_entry` | `0xc04` | `0xbf8` | **`-0xc`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1e8` | `0x1e0` | **`-0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x234` | `0x22c` | **`-0x8`** |
+
+### Other Changes
 
 ```diff
 
 -365.0.0.0.0
--  __TEXT.__text: 0x7e593c
--  __TEXT.__objc_methlist: 0x4c64
--  __TEXT.__const: 0x8af08
--  __TEXT.__cstring: 0x1686e
--  __TEXT.__oslogstring: 0x9999
 +366.1.0.0.0
-+  __TEXT.__text: 0x7d3940
-+  __TEXT.__objc_methlist: 0x4b64
-+  __TEXT.__const: 0x8af48
-+  __TEXT.__cstring: 0x1666e
-+  __TEXT.__oslogstring: 0x8dc9
-   __TEXT.__gcc_except_tab: 0x14
--  __TEXT.__swift5_typeref: 0x1b67e
--  __TEXT.__constg_swiftt: 0x18ad8
--  __TEXT.__swift5_reflstr: 0x12fa7
--  __TEXT.__swift5_fieldmd: 0x1f098
--  __TEXT.__swift5_builtin: 0x5dc
--  __TEXT.__swift5_assocty: 0x3468
--  __TEXT.__swift5_capture: 0x29b4
--  __TEXT.__swift5_proto: 0x7a30
--  __TEXT.__swift5_types: 0x25ac
--  __TEXT.__swift_as_entry: 0xc04
--  __TEXT.__swift_as_cont: 0x1f1c
--  __TEXT.__swift_as_ret: 0xc7c
-+  __TEXT.__swift5_typeref: 0x1b6e2
-+  __TEXT.__constg_swiftt: 0x18924
-+  __TEXT.__swift5_reflstr: 0x12bc7
-+  __TEXT.__swift5_fieldmd: 0x1ee70
-+  __TEXT.__swift5_builtin: 0x5c8
-+  __TEXT.__swift5_assocty: 0x3498
-+  __TEXT.__swift5_capture: 0x299c
-+  __TEXT.__swift5_proto: 0x7a9c
-+  __TEXT.__swift5_types: 0x2594
-+  __TEXT.__swift_as_entry: 0xbf8
-+  __TEXT.__swift_as_cont: 0x1ee4
-+  __TEXT.__swift_as_ret: 0xc60
-   __TEXT.__swift5_protos: 0x234
--  __TEXT.__swift5_mpenum: 0x234
--  __TEXT.__unwind_info: 0x23cf0
--  __TEXT.__eh_frame: 0x38d58
-+  __TEXT.__swift5_mpenum: 0x22c
-+  __TEXT.__unwind_info: 0x23928
-+  __TEXT.__eh_frame: 0x383a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x62e8
--  __DATA_CONST.__objc_classlist: 0xb98
-+  __DATA_CONST.__const: 0x6238
-+  __DATA_CONST.__objc_classlist: 0xb60
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x130
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x53a8
-+  __DATA_CONST.__objc_selrefs: 0x5338
-   __DATA_CONST.__objc_protorefs: 0xb8
--  __DATA_CONST.__objc_superrefs: 0x1e8
--  __DATA_CONST.__got: 0x1640
--  __AUTH_CONST.__const: 0x46d30
-+  __DATA_CONST.__objc_superrefs: 0x1e0
-+  __DATA_CONST.__got: 0x15e8
-+  __AUTH_CONST.__const: 0x46e50
-   __AUTH_CONST.__cfstring: 0x500
--  __AUTH_CONST.__objc_const: 0x179e0
-+  __AUTH_CONST.__objc_const: 0x174d0
-   __AUTH_CONST.__objc_intobj: 0x60
--  __AUTH_CONST.__auth_got: 0x2cd0
--  __AUTH.__objc_data: 0x3470
--  __AUTH.__data: 0x8a90
--  __DATA.__objc_ivar: 0x510
--  __DATA.__data: 0x13c70
--  __DATA.__bss: 0xdb6f0
-+  __AUTH_CONST.__auth_got: 0x2bf8
-+  __AUTH.__objc_data: 0x3308
-+  __AUTH.__data: 0x8948
-+  __DATA.__objc_ivar: 0x51c
-+  __DATA.__data: 0x13d20
-+  __DATA.__bss: 0xdc460
-   __DATA.__common: 0x110
--  __DATA_DIRTY.__objc_data: 0x7460
--  __DATA_DIRTY.__data: 0xea90
-+  __DATA_DIRTY.__objc_data: 0x7138
-+  __DATA_DIRTY.__data: 0xe6e0
-   __DATA_DIRTY.__bss: 0x11690
--  __DATA_DIRTY.__common: 0x198
-+  __DATA_DIRTY.__common: 0x180
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-   - /System/Library/Frameworks/Contacts.framework/Contacts
 
-   - /System/Library/Frameworks/_LocationEssentials.framework/_LocationEssentials
-   - /System/Library/PrivateFrameworks/AppSupport.framework/AppSupport
-   - /System/Library/PrivateFrameworks/AsyncAlgorithmsInternal.framework/AsyncAlgorithmsInternal
 -  - /System/Library/PrivateFrameworks/CBORLibrary.framework/CBORLibrary
-   - /System/Library/PrivateFrameworks/CollectionsInternal.framework/CollectionsInternal
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/CoreODI.framework/CoreODI
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 51249
--  Symbols:   17770
+-  Symbols:   15305
 -  CStrings:  3053
 +  Functions: 50996
-+  Symbols:   17714
++  Symbols:   15264
 +  CStrings:  2994
- 
 Symbols:
 + -[FKApplePayTransactionInsight initWithPaymentHash:transactionDate:transactionSource:cardType:adjustmentSubtype:adjustmentSubtypeReason:merchantName:merchantRawName:industryCategory:industryCode:merchantType:merchantCountryCode:terminalIdentifier:merchantAdditionalData:paymentNetwork:isMerchantTokenTransaction:isCoarseLocation:location:merchantIdentifier:merchantRawCANL:merchantRawCity:merchantRawState:merchantRawCountry:merchantCity:merchantZip:merchantState:merchantCleanConfidenceLevel:rewardsAmount:rewardsCurrency:rewardsEligibilityReason:adamIdentifier:webURL:webMerchantIdentifier:webMerchantName:isIssuerInstallmentTransaction:issuerInstallmentManagementURL:feesJSON:subtotalAmount:subtotalCurrencyCode:amountAddedToAuth:amountAddedToAuthCurrencyCode:rewardsDetailJSON:rewardsInProgressJSON:cardNumberSuffix:transactionDeclinedReason:technologyType:topUpType:interestReassessment:isRecurring:primaryFundingSourceAmount:primaryFundingSourceCurrencyCode:secondaryFundingSourceAmount:secondaryFundingSourceCurrencyCode:secondaryFundingSourceDPANSuffix:secondaryFundingSourceType:peerPaymentFlowType:questionType:questionExpirationDate:questionAnswer:]
 + -[FKApplePayTransactionInsight peerPaymentFlowType]
@@ -167,19 +101,6 @@ Symbols:
 + _keypath_get_selector_questionAnswer
 + _keypath_get_selector_questionExpirationDate
 + _keypath_get_selector_questionTypeValue
-+ _objc_msgSend$attestationReference
-+ _objc_msgSend$initWithPaymentHash:transactionDate:transactionSource:cardType:adjustmentSubtype:adjustmentSubtypeReason:merchantName:merchantRawName:industryCategory:industryCode:merchantType:merchantCountryCode:terminalIdentifier:merchantAdditionalData:paymentNetwork:isMerchantTokenTransaction:isCoarseLocation:location:merchantIdentifier:merchantRawCANL:merchantRawCity:merchantRawState:merchantRawCountry:merchantCity:merchantZip:merchantState:merchantCleanConfidenceLevel:rewardsAmount:rewardsCurrency:rewardsEligibilityReason:adamIdentifier:webURL:webMerchantIdentifier:webMerchantName:isIssuerInstallmentTransaction:issuerInstallmentManagementURL:feesJSON:subtotalAmount:subtotalCurrencyCode:amountAddedToAuth:amountAddedToAuthCurrencyCode:rewardsDetailJSON:rewardsInProgressJSON:cardNumberSuffix:transactionDeclinedReason:technologyType:topUpType:interestReassessment:isRecurring:primaryFundingSourceAmount:primaryFundingSourceCurrencyCode:secondaryFundingSourceAmount:secondaryFundingSourceCurrencyCode:secondaryFundingSourceDPANSuffix:secondaryFundingSourceType:peerPaymentFlowType:questionType:questionExpirationDate:questionAnswer:
-+ _objc_msgSend$peerPaymentFlowType
-+ _objc_msgSend$peerPaymentFlowTypeValue
-+ _objc_msgSend$questionAnswer
-+ _objc_msgSend$questionExpirationDate
-+ _objc_msgSend$questionType
-+ _objc_msgSend$questionTypeValue
-+ _objc_msgSend$setAttestationReference:
-+ _objc_msgSend$setPeerPaymentFlowTypeValue:
-+ _objc_msgSend$setQuestionAnswer:
-+ _objc_msgSend$setQuestionExpirationDate:
-+ _objc_msgSend$setQuestionTypeValue:
 + _symbolic Say_____G 10FinanceKit26ApplePayTransactionInsightV19PeerPaymentFlowTypeO
 + _symbolic Say_____G 10FinanceKit26ApplePayTransactionInsightV8QuestionV0G4TypeO
 + _symbolic Say_____G 10FinanceKit26ApplePayTransactionInsightV8QuestionV0G6AnswerO
@@ -308,34 +229,6 @@ Symbols:
 - _keypath_get_selector_registrationAttemptCount
 - _keypath_get_selector_requiresWallet
 - _keypath_get_selector_transactionInfo
-- _objc_msgSend$attestationRef
-- _objc_msgSend$content
-- _objc_msgSend$credentialIdentifier
-- _objc_msgSend$hasProcessedLinkedReceiptCheck
-- _objc_msgSend$initWithPaymentHash:transactionDate:transactionSource:cardType:adjustmentSubtype:adjustmentSubtypeReason:merchantName:merchantRawName:industryCategory:industryCode:merchantType:merchantCountryCode:terminalIdentifier:merchantAdditionalData:paymentNetwork:isMerchantTokenTransaction:isCoarseLocation:location:merchantIdentifier:merchantRawCANL:merchantRawCity:merchantRawState:merchantRawCountry:merchantCity:merchantZip:merchantState:merchantCleanConfidenceLevel:rewardsAmount:rewardsCurrency:rewardsEligibilityReason:adamIdentifier:webURL:webMerchantIdentifier:webMerchantName:isIssuerInstallmentTransaction:issuerInstallmentManagementURL:feesJSON:subtotalAmount:subtotalCurrencyCode:amountAddedToAuth:amountAddedToAuthCurrencyCode:rewardsDetailJSON:rewardsInProgressJSON:cardNumberSuffix:transactionDeclinedReason:technologyType:topUpType:interestReassessment:isRecurring:primaryFundingSourceAmount:primaryFundingSourceCurrencyCode:secondaryFundingSourceAmount:secondaryFundingSourceCurrencyCode:secondaryFundingSourceDPANSuffix:secondaryFundingSourceType:
-- _objc_msgSend$lastRegistrationAttemptDate
-- _objc_msgSend$notificationIdentifier
-- _objc_msgSend$primitiveEncryptionScheme
-- _objc_msgSend$primitiveEphemeralPublicKey
-- _objc_msgSend$primitivePrivateKey
-- _objc_msgSend$primitiveTransactionIdentifier
-- _objc_msgSend$registerPaymentTransaction:
-- _objc_msgSend$registrationAttemptCount
-- _objc_msgSend$requiresWallet
-- _objc_msgSend$setAttestationRef:
-- _objc_msgSend$setContent:
-- _objc_msgSend$setCredentialIdentifier:
-- _objc_msgSend$setHasProcessedLinkedReceiptCheck:
-- _objc_msgSend$setLastRegistrationAttemptDate:
-- _objc_msgSend$setNotificationIdentifier:
-- _objc_msgSend$setPrimitiveEncryptionScheme:
-- _objc_msgSend$setPrimitiveEphemeralPublicKey:
-- _objc_msgSend$setPrimitivePrivateKey:
-- _objc_msgSend$setPrimitiveTransactionIdentifier:
-- _objc_msgSend$setRegistrationAttemptCount:
-- _objc_msgSend$setRequiresWallet:
-- _objc_msgSend$setTransactionInfo:
-- _objc_msgSend$transactionInfo
 - _symbolic SDy_____ypG So11CFStringRefa
 - _symbolic SaySDy_____ypGG So11CFStringRefa
 - _symbolic Say_____G 10FinanceKit37ApplePayTransactionDocumentCredentialV

@@ -2,95 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/AppleIntelligenceReporting.framework/AppleIntelligenceReporting`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x74024` | `0x7614c` | **`+0x2128`** |
+| `__DATA.__bss` | `0x1c190` | `0x1c590` | **`+0x400`** |
+| `__AUTH_CONST.__const` | `0x6248` | `0x64d0` | **`+0x288`** |
+| `__TEXT.__const` | `0xea4c` | `0xec1c` | **`+0x1d0`** |
+| `__AUTH_CONST.__auth_got` | `0x1678` | `0x1718` | **`+0xa0`** |
+| `__TEXT.__swift5_fieldmd` | `0x344c` | `0x34e4` | **`+0x98`** |
+| `__AUTH.__data` | `0x120` | `0x1a8` | **`+0x88`** |
+| `__DATA.__data` | `0x2520` | `0x2590` | **`+0x70`** |
+| `__TEXT.__swift5_reflstr` | `0x2015` | `0x2085` | **`+0x70`** |
+| `__TEXT.__cstring` | `0x1686` | `0x16e6` | **`+0x60`** |
+| `__TEXT.__constg_swiftt` | `0x2324` | `0x2370` | **`+0x4c`** |
+| `__TEXT.__swift5_typeref` | `0x2dd9` | `0x2e21` | **`+0x48`** |
+| `__TEXT.__unwind_info` | `0x2820` | `0x2860` | **`+0x40`** |
+| `__TEXT.__swift5_capture` | `0x150` | `0x170` | **`+0x20`** |
+| `__TEXT.__swift5_proto` | `0xe5c` | `0xe7c` | **`+0x20`** |
+| `__TEXT.__swift5_assocty` | `0x150` | `0x168` | **`+0x18`** |
+| `__TEXT.__eh_frame` | `0x32d0` | `0x32c0` | **`-0x10`** |
+| `__TEXT.__swift5_mpenum` | `0x260` | `0x270` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x3d0` | `0x3d8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -194.0.0.0.0
--  __TEXT.__text: 0x74024 sha256:e4df06ee99ab73e12aa41d59445851219ce383d838420d557b906e864dc58585
--  __TEXT.__const: 0xea4c sha256:deb431bc61a9d5363fd8864032c4d015bbea1d406e45af75d831d5692c94b9b4
--  __TEXT.__swift5_typeref: 0x2dd9 sha256:8701e3cc0cd0cb7e7ba0b8e26712fb49e434fe2f1b8bfb65a4b2b27f1c99fa03
 +200.0.0.0.0
-+  __TEXT.__text: 0x7614c sha256:d3716169300cd5dce208a5a5b5d7fc53455306151291a555c610971b7a2ac44b
-+  __TEXT.__const: 0xec1c sha256:30a9381725ae3b4f729ddf783b8b8a0cc230f435b0ace3264cd4f29c6d2fb285
-+  __TEXT.__swift5_typeref: 0x2e21 sha256:05593b0593c9a83d78948c8af7ff5548c68bd66933e9bd84093f273e4e70fc61
-   __TEXT.__oslogstring: 0x5eb sha256:49ff7082daa77f4eabf60d588cbea74ede1488b2949eb7af0a7341c15c9a79a7
--  __TEXT.__constg_swiftt: 0x2324 sha256:bda28d6e15724e0247217e8711d89b8ea5c46933ea2c5ecce1dfbfa66c523547
--  __TEXT.__swift5_reflstr: 0x2015 sha256:976b4ec978dfc86222875c5541210a5f4e1d6d2ca3989138a92d976100a23f3e
--  __TEXT.__swift5_fieldmd: 0x344c sha256:9702ef1a2f00146e39c47ecd16d7cd68d7ca376bfc0e57b90c87322975bd05db
--  __TEXT.__cstring: 0x1686 sha256:4ed50a1b885280a1d69036b34890ca4935a73f2d448aafd034f96413118c7a99
--  __TEXT.__swift5_proto: 0xe5c sha256:836fa8eaf81e74c1219c5f450741796b7911f59dab818024ad0dcb614421e13d
--  __TEXT.__swift5_types: 0x3d0 sha256:6b79d7cc43cd39d22441321f0cb1f0f56705b90ef7b6f5d30f7a4245a4279abf
--  __TEXT.__swift5_protos: 0x10 sha256:c046a38811a54f006c29e126d65abf6e5a0df62fb0b0c719c3b61027e9e33621
--  __TEXT.__swift5_assocty: 0x150 sha256:942d3e116c4c3febe45b16ffb4475f4e168690c25512613f211cfefc7f6a4398
--  __TEXT.__swift5_builtin: 0x3c sha256:c70d76a8e5c845c0533f1cf50a93582b282175f47a07b21812e57bcf6fd50202
--  __TEXT.__swift5_mpenum: 0x260 sha256:dfa57eea5bcab259b1a34fc2597e2a53448d3f6947558f84172fc94acf4c31ed
--  __TEXT.__swift5_capture: 0x150 sha256:fbb133035a06f943aeb5193e5052fb7635a55f286dda623da383694e738fa7e0
--  __TEXT.__swift_as_entry: 0xc sha256:b4e4522d7889bc8bed589c3bda64ee4251fb40014d0e5de27b01f7a31972b091
--  __TEXT.__swift_as_ret: 0xc sha256:2f2b760d46241ea9302b487843bc0667fc0c9bab3f111f5c744d7c4905baad4f
--  __TEXT.__swift_as_cont: 0x20 sha256:fd54db324cc2879ec5f34d1647887fe1fb6f7afe08462ffca013379934dfece7
--  __TEXT.__unwind_info: 0x2820 sha256:513dcbf8ad7c834c1134c68bd4f015e8a4e187fffda0bccb6907150b9a87609c
--  __TEXT.__eh_frame: 0x32d0 sha256:3410df73858e6eff1d0d3e50c0ea546e385473d419c45d9c0e9a915477fa14d2
-+  __TEXT.__constg_swiftt: 0x2370 sha256:45d00fd2255a0fc96c3fc8fc7b4e2f6648df95ed1a15826bbf60845f4cd001c3
-+  __TEXT.__swift5_reflstr: 0x2085 sha256:28482830e16bce3c217c3dd648a044068b1487b585a5912729ee120af4adada7
-+  __TEXT.__swift5_fieldmd: 0x34e4 sha256:ed67884e9c34e8de8e5a93e41f2de0d49bbe11c00d1b92c327435c0f390ffdb7
-+  __TEXT.__cstring: 0x16e6 sha256:dfc5f1642ea96522b5aee9f54741bed0d12568b85096d855c4620e0f65938972
-+  __TEXT.__swift5_proto: 0xe7c sha256:af9a693f47385250e6b0fbc0656ecc9e406e0fe191d03b1b130f60c8ff936561
-+  __TEXT.__swift5_types: 0x3d8 sha256:d1249a93d4a31ffbe2b125f5814631be54686be37e87516b87d1eb7272cb626d
-+  __TEXT.__swift5_protos: 0x10 sha256:126d610ab9dcf3aee9e736af0ff09a644599a8e6d10d6bdf1f9f3c5ad9b21a26
-+  __TEXT.__swift5_assocty: 0x168 sha256:8bc2ffbe4b9c16b18f557ae5b0414d5689865b2d4d6daf293fa6229f1636a961
-+  __TEXT.__swift5_builtin: 0x3c sha256:e6c970fe3f09ac9cc4b7915c333525b10a97974f9285117e33d78e7769362a9d
-+  __TEXT.__swift5_mpenum: 0x270 sha256:218820994326895f54a6f7583bf398fce05421dc152bca6b90fb2677ebc0e0a6
-+  __TEXT.__swift5_capture: 0x170 sha256:664a97ec391b8d6c27bd3d81a6625704c28e926db5e594986eb3557d051cb9db
-+  __TEXT.__swift_as_entry: 0xc sha256:8fb6c052bde53be055911a261ebed64e7c35df61be9ff5c58ac36bf2fcf7e753
-+  __TEXT.__swift_as_ret: 0xc sha256:19a60529289144da0d2e946a666df51723b1dd414896302d55c72bd086840785
-+  __TEXT.__swift_as_cont: 0x20 sha256:52831da4e2a0528f84e2ac1b572501550b6bcca5087e1dbde06ac31d9d8d32f9
-+  __TEXT.__unwind_info: 0x2860 sha256:0da25d2f6ca45bfdd51d889756117c0c27d66860bc2c76a613e8c84f29e1bb9b
-+  __TEXT.__eh_frame: 0x32c0 sha256:abac93efbac05be01711b54dac14e29b933701cafa95f1723177e66f1d58bc76
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x158 sha256:cfd065e376dbc5bff10be91a22169b06505cf798b7c770fef73bd50c37a02fe2
--  __DATA_CONST.__objc_classlist: 0x28 sha256:0a4eccaea810c05d8e2b11f405e5ad8cc5ef564153c570e29f08f1586db724ed
-+  __DATA_CONST.__const: 0x158 sha256:f3860fab8065fc5b5c5306517675c89a3256a1dea7d8d43834c713f1e3034af1
-+  __DATA_CONST.__objc_classlist: 0x28 sha256:66dbb86af9661e138ecaabfe83128d0285eca000f05bbbb5cdb8fefbf1a74bc8
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0x30 sha256:1f441d3e00fbf94c5945fc2cb57504ac3c1b258fdc0df251dabf649d77df9d6d
-+  __DATA_CONST.__objc_selrefs: 0x30 sha256:7694784ee417abb43a295daabcaf2aa9b69f0a30a6162c1eb69e0ca24b7e0901
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x6248 sha256:be2a6edd6394bdbeac44b05ff14fe8322a6543fd189c13f27094d711d92dfb1f
--  __AUTH_CONST.__objc_const: 0x650 sha256:a4c584096abc99e2d4a947b05ab9d437ba735e40c1eac2cd1ab4f9eb2e8a6ebc
--  __AUTH_CONST.__auth_got: 0x1678 sha256:f555a67ed3857cf37b323db8b28868a0fd5101e27ff5b1ef046e24aeba7bbc01
--  __AUTH.__data: 0x120 sha256:aae9ec8aec93791a6409da456c3f7246302beabcb3738ae8be25a99071f99b5d
--  __DATA.__data: 0x2520 sha256:73aa3708808ee4b9fb9c7f1fe2b24e6bf654494303354eb6605f4080341cd52f
--  __DATA.__bss: 0x1c190 sha256:03067f88165fe1ad74b7cb82c8e7baa76aa34a62df7350758088b6f6a96d08d7
-+  __AUTH_CONST.__const: 0x64d0 sha256:55b993383cf118cc17a42f9590b0ae17f20c2eef47074e6414e374d8d74f089a
-+  __AUTH_CONST.__objc_const: 0x650 sha256:c4725e8be2250a864d45a6fddecdd776c96cf3fb7092a7426fd4da3c595d721b
-+  __AUTH_CONST.__auth_got: 0x1718 sha256:934501d23fb3608d08e79e93bab10630bbc9961d88d6d28cd2d7059685650646
-+  __AUTH.__data: 0x1a8 sha256:6ca8e5e6b146accaaf4ea3f7371a888386553ed478d0b9645e9d64e0c804b2de
-+  __DATA.__data: 0x2590 sha256:6d542fd9a9570f707c33b940732a332292c16a4bc942ea8c776d7005c009d61a
-+  __DATA.__bss: 0x1c590 sha256:ed4b24572383165fcc9938db8b001c2e185a82266affc588dbdee8cd228bffec
-   __DATA.__common: 0x48 sha256:834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400
--  __DATA_DIRTY.__objc_data: 0x50 sha256:46924f0a0a7c61fe660598cf740799b17bb64f8d0d7e3f4b12f8075b83e6b90e
--  __DATA_DIRTY.__data: 0xe28 sha256:e0fb94d4ddf5fe114f0f242e9524a456e77f030e8beb1ed4a99b8aab11d0777c
-+  __DATA_DIRTY.__objc_data: 0x50 sha256:52e1ba050f99ab65e6605f3e9586f014b6db9f4fc7fe9505794bed92dd33511d
-+  __DATA_DIRTY.__data: 0xe28 sha256:83e822c75e7980efeb80243793167e8d0005878d478d722bfdbf18bb6c1582e0
-   __DATA_DIRTY.__common: 0x18 sha256:9d908ecfb6b256def8b49a7c504e6c889c4b0e41fe6ce3e01863dd7b61a20aa0
-   __DATA_DIRTY.__bss: 0x880 sha256:5626d9a8f1d7364b61839a6d47fdc7e1519abda6704ab341fe8d34575f0faa8e
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
--  UUID: 49E6D85A-9EE9-323C-8172-E90717112D5E
 -  Functions: 5030
--  Symbols:   20787
+-  Symbols:   14056
 -  CStrings:  194
-+  UUID: 243E9B7C-09B1-3BAD-82DB-05BE9BC098D1
 +  Functions: 5088
-+  Symbols:   20999
++  Symbols:   14209
 +  CStrings:  198
- 
 Symbols:
 + _$s26AppleIntelligenceReporting0aB14InferenceEventV10CodingKeys33_1888C56F039490CA8E56ACAF96CED69CLLO8rawValueAFSgSS_tcfC
 + _$s26AppleIntelligenceReporting0aB14InferenceEventV10CodingKeys33_1888C56F039490CA8E56ACAF96CED69CLLO8rawValueAFSgSS_tcfCTv0_
@@ -177,7 +125,7 @@ Symbols:
 + _$s26AppleIntelligenceReporting0aB14InferenceEventV26internalMonotonicTimestamp0B15PlatformLibrary0gH0VSgvpMV
 + _$s26AppleIntelligenceReporting0aB14InferenceEventV9subsystem17sessionIdentifier04stepH0017invocationRequestH006clientkH0012modelManagerkH06errors07useCaseH0013additionalUseQ11Identifiers015requestorBundleH0010onBehalfOfvH0017inferenceProviderH005assetvH06assets8metadata11spanContext9timestamp18monotonicTimestampACSS_10Foundation4UUIDVSgSSSgAA14UUIDIdentifierVSgA2YSayAA0aB5Error_pGAA0absQ0VSgSayA5_GA4ZSayAA0aB5AssetVGAA0abC8MetadataOSgAA0abC11SpanContextVSgAV4DateVSg0B15PlatformLibrary18MonotonicTimestampVSgtcfC
 + _$s26AppleIntelligenceReporting17InferenceMetadataV9batchSizeSiSgvM
-+ _$s26AppleIntelligenceReporting17InferenceMetadataV9batchSizeSiSgvM.resume.0
++ _$s26AppleIntelligenceReporting17InferenceMetadataV9batchSizeSiSgvM.resume
 + _$s26AppleIntelligenceReporting17InferenceMetadataV9batchSizeSiSgvg
 + _$s26AppleIntelligenceReporting17InferenceMetadataV9batchSizeSiSgvpMV
 + _$s26AppleIntelligenceReporting17InferenceMetadataV9batchSizeSiSgvs
@@ -260,5 +208,4 @@ CStrings:
 + "internalErrors"
 + "internalMonotonicTimestamp"
 + "nanosecondsSinceBoot"
-
 ```

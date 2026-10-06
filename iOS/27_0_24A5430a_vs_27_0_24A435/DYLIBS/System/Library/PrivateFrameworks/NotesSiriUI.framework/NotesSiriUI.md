@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/NotesSiriUI.framework/NotesSiriUI`
 
-```diff
+### Section Size Changes
 
- 3001.2.2.0.0
--  __TEXT.__text: 0x16de4
-+  __TEXT.__text: 0x16de8
-   __TEXT.__objc_methlist: 0x5ec
-   __TEXT.__const: 0xd50
-   __TEXT.__swift5_typeref: 0x444f
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x16de4` | `0x16de8` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_293710e6c -> sub_294475e6c : 612 -> 616
+~ sub_2935f6e6c -> sub_294349e6c : 612 -> 616
 ```

@@ -2,54 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/AppleBasebandServices.framework/AppleBasebandServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1b11c` | `0x1b114` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
 -1563.0.0.0.0
--  __TEXT.__text: 0x1b11c sha256:49b5373dcc6242efd7d52b91f773e5fcfba3d1dc13b28ecdb9bbb3cef75c8fb8
--  __TEXT.__init_offsets: 0x4 sha256:da0d76a8705385ba87d2d8619e382a20465a6e686ed869cd564cbc71f9ac11e3
 +1570.0.0.0.0
-+  __TEXT.__text: 0x1b114 sha256:1185265286f00640edff157641aebf0d7eef60953b12bcc232c5f80d2dfa93ff
-+  __TEXT.__init_offsets: 0x4 sha256:089477e0722be593273640d941f0aaf0e35d5d5e59f2a45cc7fa2f53aae7145d
-   __TEXT.__const: 0x638 sha256:35773c3467bda2be8c51c1d0197ce4f8b95f4b72c4101b85df1295241536fad2
--  __TEXT.__gcc_except_tab: 0x107c sha256:26ef70a65141ec298c27e8e2a43ee7448e1149680171d07f37c95abfda86495b
-+  __TEXT.__gcc_except_tab: 0x107c sha256:1f8f3bddb2f5c45dcda25fb945aa193a9dbda05bc5d70e0cd5e6186a0424d896
-   __TEXT.__oslogstring: 0x25f sha256:a3c87565861965143eb5d94c6a618afafc04fd886dd604c99f3c3ca89cedd394
--  __TEXT.__cstring: 0x317 sha256:6c0b272e7ac170d55882a2a515c05e6d650786d1ca16908923f63708df65c2f2
--  __TEXT.__unwind_info: 0x660 sha256:cfc7b4d44f0cafc3b0511046d755b3d0d4c4aba122ce040b816a083279d34d24
-+  __TEXT.__cstring: 0x317 sha256:aeba78b8f2a8efbfec27d90158b58d777b99ce82d4ba1bb792da3ba02914a052
-+  __TEXT.__unwind_info: 0x660 sha256:b1910c2a089a06332e595424f8170f5149cfcb26d56fc0a3a30ed1108dde2ea3
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0xc8 sha256:3951e36397c514674690d0aa4584b72027825632073b151ad718f0b63648c42f
-+  __DATA_CONST.__const: 0xc8 sha256:f9b0194d5c52357178cc288593c8345bd12a256f2dbb3d1f08902e971c1f6b3d
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x20 sha256:7d22bf178d752f5b66c6fc3e15f36490bfebbbba59f9601d63f7582b80a0863e
--  __DATA_CONST.__objc_selrefs: 0x8 sha256:556d0b78a39686f1886192a8ed7a698a38ff2b15e96e643759896fc30e3df1e1
-+  __DATA_CONST.__weak_got: 0x20 sha256:8dedad55b7757ac9bb76b38ccaee66f9a9d1b45aa4fd9f2f26d1f568817f0d8b
-+  __DATA_CONST.__objc_selrefs: 0x8 sha256:1623988dadd09f5475c43e1e0a556a10b0f6eb460564b4edfcc69ba2396c808d
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x7d0 sha256:6b0a37e84e66b6fb9541bc143d02ae93b98a9f55b1cd3d157fe83945fde51b80
--  __AUTH_CONST.__cfstring: 0x20 sha256:bd4d76b4bc9c2750b73d83eb95bffbe7f7fa0f42945bcefcece5fdf3e1f09a9e
--  __AUTH_CONST.__weak_auth_got: 0x10 sha256:eea02642beb18481e7c20f71accafc70bde0c2fbe6d247660b04514b5f07518f
-+  __AUTH_CONST.__const: 0x7d0 sha256:542b74a6bab46bb3a0629349a3c4998b2d429f6fc0d0b95e15bf24e850522f8b
-+  __AUTH_CONST.__cfstring: 0x20 sha256:187e3eb78382087f3afcae2bd5ce944f19987d9c9191e7f59b4449904d421fe7
-+  __AUTH_CONST.__weak_auth_got: 0x10 sha256:2f053c8f7ae2d3be9c474895041cbe7a14dbee64dce28f717cce8078e8bd92f8
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__data: 0xd8 sha256:50b0c136d065d0c0a90bb3877f57c86bdfe92f934d06bfd5a6e2a6e942e2b2a5
-+  __DATA.__data: 0xd8 sha256:351d0437b6e7cb3e75fd0b3994023b7ee11f746a21330f50860c519622d1702f
-   __DATA_DIRTY.__data: 0x8 sha256:af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc
-   __DATA_DIRTY.__bss: 0x40 sha256:f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  UUID: B79E8653-DCBA-3FC4-A9EA-FB4919A31146
-+  UUID: F297CF54-0EBA-3E28-8B16-E5A7E6E33760
-   Functions: 263
-   Symbols:   846
-   CStrings:  66
 Symbols:
 + __ZNSt12length_errorC1B9fqe220106EPKc
 + __ZNSt12out_of_rangeC1B9fqe220106EPKc
@@ -150,5 +118,4 @@ Symbols:
 CStrings:
 + "AppleBasebandManager-AppleBasebandServices_Manager-1570"
 - "AppleBasebandManager-AppleBasebandServices_Manager-1563"
-
 ```

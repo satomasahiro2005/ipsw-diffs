@@ -2,23 +2,24 @@
 
 > `/System/Library/PrivateFrameworks/DialogEngine.framework/catutil`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x61b5c` | `0x61b78` | **`+0x1c`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_selrefs`
+- `__DATA_CONST.__const`
+- `__TEXT.__eh_frame`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__init_offsets`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 3600.23.9.0.0
--  __TEXT.__text: 0x61b5c
-+  __TEXT.__text: 0x61b78
-   __TEXT.__auth_stubs: 0x16d0
-   __TEXT.__objc_stubs: 0xe0
-   __TEXT.__init_offsets: 0x8
+```text
 Functions:
 ~ sub_10001afb4 : 19940 -> 19924
 ~ sub_1000343b8 -> sub_1000343a8 : 84 -> 88

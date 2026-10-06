@@ -2,18 +2,21 @@
 
 > `/usr/sbin/distnoted`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0xb0` | `0xb8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__const`
+- `__TEXT.__dof_distnoted`
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x28
-   __DATA_CONST.__auth_got: 0x3e0
--  __DATA_CONST.__got: 0xb0
-+  __DATA_CONST.__got: 0xb8
-   __DATA_CONST.__auth_ptr: 0x8
-   __DATA.__objc_const: 0x970
-   __DATA.__objc_selrefs: 0x288
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__dof_distnoted : content changed
-
+-5027.0.55.1.0
++5027.0.59.0.0
 ```

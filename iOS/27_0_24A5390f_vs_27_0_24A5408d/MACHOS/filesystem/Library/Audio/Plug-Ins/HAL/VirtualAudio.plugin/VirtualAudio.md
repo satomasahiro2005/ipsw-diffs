@@ -2,101 +2,62 @@
 
 > `/Library/Audio/Plug-Ins/HAL/VirtualAudio.plugin/VirtualAudio`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__dof_VirtualAu`
-- `__TEXT.__dof_Aggregate`
-- `__TEXT.__dof_VirtualA0`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__oslogstring` | `0x56013` | `0x56a41` | **`+0xa2e`** |
+| `__DATA_CONST.__const` | `0x294c8` | `0x28c80` | **`-0x848`** |
+| `__TEXT.__realtime` | `0x145e4` | `0x14908` | **`+0x324`** |
+| `__TEXT.__text` | `0x52efb8` | `0x52ee30` | **`-0x188`** |
+| `__TEXT.__unwind_info` | `0x14520` | `0x14430` | **`-0xf0`** |
+| `__TEXT.__gcc_except_tab` | `0x5f834` | `0x5f90c` | **`+0xd8`** |
+| `__TEXT.__cstring` | `0x36be6` | `0x36b5e` | **`-0x88`** |
+| `__DATA.__bss` | `0x25678` | `0x25628` | **`-0x50`** |
+| `__TEXT.__const` | `0xb13e0` | `0xb1418` | **`+0x38`** |
+| `__DATA_CONST.__cfstring` | `0x2f60` | `0x2f40` | **`-0x20`** |
+| `__TEXT.__auth_stubs` | `0x2890` | `0x28b0` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0x1460` | `0x1470` | **`+0x10`** |
+| `__DATA.__data` | `0x5b0` | `0x5a8` | **`-0x8`** |
+| `__TEXT.__init_offsets` | `0x102c` | `0x1034` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_arraydata`
 - `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__dof_Aggregate`
+- `__TEXT.__dof_VirtualA0`
+- `__TEXT.__dof_VirtualAu`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -1451.108.1.0.0
--  __TEXT.__text: 0x52efb8
--  __TEXT.__realtime: 0x145e4
--  __TEXT.__auth_stubs: 0x2890
 +1451.115.0.0.0
-+  __TEXT.__text: 0x52ee30
-+  __TEXT.__realtime: 0x14908
-+  __TEXT.__auth_stubs: 0x28b0
-   __TEXT.__objc_stubs: 0xfa0
--  __TEXT.__init_offsets: 0x102c
-+  __TEXT.__init_offsets: 0x1034
-   __TEXT.__objc_methlist: 0x2c0
--  __TEXT.__const: 0xb13e0
--  __TEXT.__cstring: 0x36be6
--  __TEXT.__gcc_except_tab: 0x5f834
-+  __TEXT.__const: 0xb1418
-+  __TEXT.__cstring: 0x36b5e
-+  __TEXT.__gcc_except_tab: 0x5f90c
-   __TEXT.__swift5_typeref: 0x12b
-   __TEXT.__swift5_capture: 0x168
--  __TEXT.__oslogstring: 0x56013
-+  __TEXT.__oslogstring: 0x56a41
-   __TEXT.__objc_methname: 0xdad
-   __TEXT.__objc_classname: 0x9d
-   __TEXT.__objc_methtype: 0x422
 
-   __TEXT.__dof_VirtualAu: 0x340
-   __TEXT.__dof_Aggregate: 0x5ec
-   __TEXT.__dof_VirtualA0: 0x2aa
--  __TEXT.__unwind_info: 0x14520
-+  __TEXT.__unwind_info: 0x14430
-   __TEXT.__eh_frame: 0x730
--  __DATA_CONST.__const: 0x294c8
--  __DATA_CONST.__cfstring: 0x2f60
-+  __DATA_CONST.__const: 0x28c80
-+  __DATA_CONST.__cfstring: 0x2f40
-   __DATA_CONST.__objc_classlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-
-   __DATA_CONST.__objc_intobj: 0x30
-   __DATA_CONST.__objc_arraydata: 0x10
-   __DATA_CONST.__objc_arrayobj: 0x18
--  __DATA_CONST.__auth_got: 0x1460
-+  __DATA_CONST.__auth_got: 0x1470
-   __DATA_CONST.__got: 0x510
-   __DATA_CONST.__auth_ptr: 0x70
-   __DATA.__objc_const: 0x630
-   __DATA.__objc_selrefs: 0x4c0
-   __DATA.__objc_ivar: 0x28
-   __DATA.__objc_data: 0x2b8
--  __DATA.__data: 0x5b0
--  __DATA.__bss: 0x25678
-+  __DATA.__data: 0x5a8
-+  __DATA.__bss: 0x25628
-   __DATA.__common: 0x18
-   - /AppleInternal/Library/Frameworks/AudioCapture.framework/AudioCapture
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12360
 -  Symbols:   804
 -  CStrings:  12081
 +  Functions: 12158
 +  Symbols:   806
 +  CStrings:  12105
- 
 Symbols:
 + __ZNSt3__120__libcpp_atomic_waitEPVKvx
 + __ZNSt3__123__libcpp_atomic_monitorEPVKv

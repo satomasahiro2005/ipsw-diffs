@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/NanoWeatherKitUICompanion.framework/NanoWeatherKitUICompanion`
 
-```diff
+### Section Size Changes
 
- 1168.0.0.0.0
--  __TEXT.__text: 0x2dc40
-+  __TEXT.__text: 0x2dc4c
-   __TEXT.__objc_methlist: 0x674
-   __TEXT.__const: 0x2048
-   __TEXT.__cstring: 0x952
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2dc40` | `0x2dc4c` | **`+0xc`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_292ab9870 -> sub_29381e870 : 3568 -> 3580
+~ sub_29299f870 -> sub_2936f2870 : 3568 -> 3580
 ```

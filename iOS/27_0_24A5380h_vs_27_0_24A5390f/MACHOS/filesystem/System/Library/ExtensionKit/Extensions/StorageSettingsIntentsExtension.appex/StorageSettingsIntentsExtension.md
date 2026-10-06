@@ -2,61 +2,37 @@
 
 > `/System/Library/ExtensionKit/Extensions/StorageSettingsIntentsExtension.appex/StorageSettingsIntentsExtension`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__swift_as_cont`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3884` | `0x3934` | **`+0xb0`** |
+| `__TEXT.__eh_frame` | `0x228` | `0x250` | **`+0x28`** |
+| `__TEXT.__auth_stubs` | `0x5b0` | `0x5c0` | **`+0x10`** |
+| `__TEXT.__const` | `0xb28` | `0xb38` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x2d8` | `0x2e0` | **`+0x8`** |
+| `__DATA_CONST.__auth_ptr` | `0x4d8` | `0x4e0` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x78` | `0x80` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x268` | `0x270` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x38` | `0x3c` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x24` | `0x28` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+
+### Other Changes
 
 ```diff
 
- 176.0.0.0.0
--  __TEXT.__text: 0x3884
--  __TEXT.__auth_stubs: 0x5b0
--  __TEXT.__const: 0xb28
-+  __TEXT.__text: 0x3934
-+  __TEXT.__auth_stubs: 0x5c0
-+  __TEXT.__const: 0xb38
-   __TEXT.__constg_swiftt: 0xb4
-   __TEXT.__swift5_typeref: 0x378
-   __TEXT.__swift5_fieldmd: 0x90
-
-   __TEXT.__swift5_reflstr: 0xb4
-   __TEXT.__swift5_assocty: 0x118
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__swift_as_entry: 0x38
--  __TEXT.__swift_as_ret: 0x24
-+  __TEXT.__swift_as_entry: 0x3c
-+  __TEXT.__swift_as_ret: 0x28
-   __TEXT.__swift_as_cont: 0x14
--  __TEXT.__unwind_info: 0x268
--  __TEXT.__eh_frame: 0x228
-+  __TEXT.__unwind_info: 0x270
-+  __TEXT.__eh_frame: 0x250
-   __DATA_CONST.__const: 0x2a8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x2d8
--  __DATA_CONST.__got: 0x78
--  __DATA_CONST.__auth_ptr: 0x4d8
-+  __DATA_CONST.__auth_got: 0x2e0
-+  __DATA_CONST.__got: 0x80
-+  __DATA_CONST.__auth_ptr: 0x4e0
-   __DATA.__data: 0x1b0
-   __DATA.__bss: 0x1020
-   __DATA.__common: 0x30
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 165
 +  Functions: 166
-   Symbols:   58
-   CStrings:  10
- 
 Functions:
 ~ sub_100002608 : 192 -> 176
 + sub_1000026b8

@@ -2,24 +2,27 @@
 
 > `/System/Library/Assistant/Plugins/PreferencesAssistant.assistantBundle/PreferencesAssistant`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x98` | `0xa0` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__auth_stubs: 0x3c0
-   __TEXT.__objc_stubs: 0xb20
-   __TEXT.__objc_methlist: 0x8fc
--  __TEXT.__const: 0x98
-+  __TEXT.__const: 0xa0
-   __TEXT.__oslogstring: 0xce7
-   __TEXT.__cstring: 0x606
-   __TEXT.__objc_classname: 0x6ba
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__data : content changed
-
+-27.0.42.100.0
++2027.0.3.100.0
 ```

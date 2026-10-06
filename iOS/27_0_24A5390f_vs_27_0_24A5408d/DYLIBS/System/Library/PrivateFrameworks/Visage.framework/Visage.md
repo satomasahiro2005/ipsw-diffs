@@ -2,70 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/Visage.framework/Visage`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9b644` | `0x9c534` | **`+0xef0`** |
+| `__TEXT.__oslogstring` | `0x5c5a` | `0x5dff` | **`+0x1a5`** |
+| `__TEXT.__gcc_except_tab` | `0xf268` | `0xf3d0` | **`+0x168`** |
+| `__AUTH_CONST.__objc_const` | `0xa0c0` | `0xa1b0` | **`+0xf0`** |
+| `__TEXT.__objc_methlist` | `0x452c` | `0x4584` | **`+0x58`** |
+| `__TEXT.__cstring` | `0x54f8` | `0x5548` | **`+0x50`** |
+| `__AUTH_CONST.__cfstring` | `0x46e0` | `0x4700` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x510` | `0x530` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x3770` | `0x3790` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x724` | `0x73c` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2728` | `0x2740` | **`+0x18`** |
+| `__TEXT.__const` | `0x34c0` | `0x34d0` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x7b0` | `0x7b8` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1d8` | `0x1e0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -279.0.9.0.0
--  __TEXT.__text: 0x9b644
--  __TEXT.__objc_methlist: 0x452c
--  __TEXT.__const: 0x34c0
--  __TEXT.__gcc_except_tab: 0xf268
--  __TEXT.__cstring: 0x54f8
--  __TEXT.__oslogstring: 0x5c5a
--  __TEXT.__unwind_info: 0x3770
 +279.0.11.0.0
-+  __TEXT.__text: 0x9c534
-+  __TEXT.__objc_methlist: 0x4584
-+  __TEXT.__const: 0x34d0
-+  __TEXT.__gcc_except_tab: 0xf3d0
-+  __TEXT.__cstring: 0x5548
-+  __TEXT.__oslogstring: 0x5dff
-+  __TEXT.__unwind_info: 0x3790
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x510
-+  __DATA_CONST.__const: 0x530
-   __DATA_CONST.__objc_classlist: 0x320
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x20
--  __DATA_CONST.__objc_selrefs: 0x2728
--  __DATA_CONST.__objc_superrefs: 0x1d8
-+  __DATA_CONST.__objc_selrefs: 0x2740
-+  __DATA_CONST.__objc_superrefs: 0x1e0
-   __DATA_CONST.__objc_arraydata: 0xf8
--  __DATA_CONST.__got: 0x7b0
-+  __DATA_CONST.__got: 0x7b8
-   __AUTH_CONST.__const: 0x8e8
--  __AUTH_CONST.__cfstring: 0x46e0
--  __AUTH_CONST.__objc_const: 0xa0c0
-+  __AUTH_CONST.__cfstring: 0x4700
-+  __AUTH_CONST.__objc_const: 0xa1b0
-   __AUTH_CONST.__weak_auth_got: 0x100
-   __AUTH_CONST.__objc_floatobj: 0xc0
-   __AUTH_CONST.__objc_arrayobj: 0x138
-   __AUTH_CONST.__objc_intobj: 0x558
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0x1f40
--  __DATA.__objc_ivar: 0x724
-+  __DATA.__objc_ivar: 0x73c
-   __DATA.__data: 0x520
-   __DATA.__common: 0x8
-   __DATA.__bss: 0x280
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 3062
--  Symbols:   6087
+-  Symbols:   5100
 -  CStrings:  1380
 +  Functions: 3070
-+  Symbols:   6106
++  Symbols:   5116
 +  CStrings:  1393
- 
 Symbols:
 + -[VGEarPCACaptureOptions setUseDepth:]
 + -[VGEarPCACaptureOptions useDepth]
@@ -90,10 +58,6 @@ Symbols:
 + __ZN2vg4hrtf7RectifyC2Eb
 + ___block_descriptor_48_e5_v8?0l
 + _kCVAFaceTracking_ColorOnly
-+ _objc_msgSend$initWithDebugDataPath:useDepth:
-+ _objc_msgSend$initWithDebugDataPath:withModelsRootPath:useDepth:
-+ _objc_msgSend$setUseDepth:
-+ _objc_msgSend$useDepth
 - -[VGHRTFEarPCACaptureProcessor initWithDebugDataPath:withModelsRootPath:]
 - -[VGHRTFFaceCaptureProcessor initWithDebugDataPath:]
 - __ZN2vg4hrtf7Rectify6createEv
@@ -101,7 +65,6 @@ Symbols:
 - __ZN2vg4hrtf7RectifyC2Ev
 - ___58-[VGHRTFFaceCaptureProcessor processCaptureData:faceData:]_block_invoke_4
 - ___60-[VGHRTFEarPCACaptureProcessor processCaptureData:faceData:]_block_invoke_2
-- _objc_msgSend$initWithDebugDataPath:
 CStrings:
 + " HRTF post-processing skipped: useDepth=NO (frame selection only). "
 + " Missing lens calibration on captureData. "

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MessagesBlastDoorSupport.framework/MessagesBlastDoorSupport`
 
-```diff
+### Section Size Changes
 
- 331.100.1.0.0
--  __TEXT.__text: 0x48c48
-+  __TEXT.__text: 0x48c84
-   __TEXT.__objc_methlist: 0x60c
-   __TEXT.__const: 0x2630
-   __TEXT.__cstring: 0x9bc
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x48c48` | `0x48c84` | **`+0x3c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1c073e6f4 -> sub_1c0bf26f4 : 3712 -> 3724
 ~ sub_1c0744264 -> sub_1c0bf8270 : 8380 -> 8392

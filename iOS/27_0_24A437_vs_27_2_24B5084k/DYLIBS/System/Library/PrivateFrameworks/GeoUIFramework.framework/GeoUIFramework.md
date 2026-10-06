@@ -2,53 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/GeoUIFramework.framework/GeoUIFramework`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2c280` | `0x2c7ec` | **`+0x56c`** |
+| `__TEXT.__swift5_typeref` | `0x3179` | `0x31ef` | **`+0x76`** |
+| `__TEXT.__const` | `0x3fa0` | `0x3ff0` | **`+0x50`** |
+| `__DATA.__data` | `0x1050` | `0x1070` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x56f` | `0x57d` | **`+0xe`** |
+| `__TEXT.__swift5_fieldmd` | `0xb6c` | `0xb78` | **`+0xc`** |
+| `__TEXT.__unwind_info` | `0xd18` | `0xd20` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.36.19.0.0
--  __TEXT.__text: 0x2aa68
--  __TEXT.__const: 0x3fa0
--  __TEXT.__swift5_typeref: 0x3179
 +3605.11.2.0.0
-+  __TEXT.__text: 0x2afa0
-+  __TEXT.__const: 0x3ff0
-+  __TEXT.__swift5_typeref: 0x31ef
-   __TEXT.__swift5_capture: 0x21c
-   __TEXT.__cstring: 0x941
--  __TEXT.__swift5_reflstr: 0x56f
-+  __TEXT.__swift5_reflstr: 0x57d
-   __TEXT.__swift5_assocty: 0x348
-   __TEXT.__constg_swiftt: 0xbc8
--  __TEXT.__swift5_fieldmd: 0xb6c
-+  __TEXT.__swift5_fieldmd: 0xb78
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__oslogstring: 0xf1
-   __TEXT.__swift5_proto: 0x2c4
-   __TEXT.__swift5_types: 0xf0
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x1118
-+  __TEXT.__unwind_info: 0x1120
-   __TEXT.__eh_frame: 0x8a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __AUTH_CONST.__objc_const: 0x90
-   __AUTH_CONST.__auth_got: 0xaf8
-   __AUTH.__data: 0x580
--  __DATA.__data: 0x1050
-+  __DATA.__data: 0x1070
-   __DATA.__common: 0x60
-   __DATA_DIRTY.__data: 0x98
-   __DATA_DIRTY.__bss: 0x80
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1320
--  Symbols:   4151
+-  Symbols:   4118
 +  Functions: 1327
-+  Symbols:   4166
-   CStrings:  76
- 
++  Symbols:   4133
 Symbols:
 + _$s14GeoUIFramework21ButtonsOnlyHostChrome33_7452851A631EF7A3D73772B08B86E6E0LLV4body7contentQr7SwiftUI21_ViewModifier_ContentVyADG_tF
 + _$s14GeoUIFramework21ButtonsOnlyHostChrome33_7452851A631EF7A3D73772B08B86E6E0LLV4body7contentQr7SwiftUI21_ViewModifier_ContentVyADG_tFA2JcfU0_

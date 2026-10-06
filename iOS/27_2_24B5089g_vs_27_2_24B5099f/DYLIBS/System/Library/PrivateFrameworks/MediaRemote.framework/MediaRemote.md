@@ -2,70 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/MediaRemote.framework/MediaRemote`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x317ca8` | `0x318190` | **`+0x4e8`** |
+| `__AUTH_CONST.__cfstring` | `0x24a40` | `0x24b40` | **`+0x100`** |
+| `__AUTH_CONST.__objc_const` | `0x47fa8` | `0x48050` | **`+0xa8`** |
+| `__TEXT.__cstring` | `0x2de57` | `0x2deda` | **`+0x83`** |
+| `__TEXT.__gcc_except_tab` | `0x6364` | `0x63b4` | **`+0x50`** |
+| `__DATA_CONST.__const` | `0xbb98` | `0xbbe0` | **`+0x48`** |
+| `__TEXT.__objc_methlist` | `0x2c890` | `0x2c8c8` | **`+0x38`** |
+| `__AUTH_CONST.__const` | `0x3460` | `0x3480` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0xf9b0` | `0xf9d0` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x528` | `0x540` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x33f0` | `0x33fc` | **`+0xc`** |
+| `__TEXT.__unwind_info` | `0xbe28` | `0xbe20` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -4026.200.15.0.0
--  __TEXT.__text: 0x306624
--  __TEXT.__objc_methlist: 0x2c890
 +4026.200.23.0.0
-+  __TEXT.__text: 0x306b30
-+  __TEXT.__objc_methlist: 0x2c8c8
-   __TEXT.__const: 0x650
--  __TEXT.__cstring: 0x2de57
-+  __TEXT.__cstring: 0x2deda
-   __TEXT.__oslogstring: 0xebb9
--  __TEXT.__gcc_except_tab: 0x6364
-+  __TEXT.__gcc_except_tab: 0x63b4
-   __TEXT.__dlopen_cstrs: 0x777
-   __TEXT.__ustring: 0x7b8
--  __TEXT.__unwind_info: 0xee28
-+  __TEXT.__unwind_info: 0xee20
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xbb98
-+  __DATA_CONST.__const: 0xbbe0
-   __DATA_CONST.__objc_classlist: 0x1210
-   __DATA_CONST.__objc_catlist: 0x78
-   __DATA_CONST.__objc_protolist: 0x260
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xf9b0
-+  __DATA_CONST.__objc_selrefs: 0xf9d0
-   __DATA_CONST.__objc_protorefs: 0x88
-   __DATA_CONST.__objc_superrefs: 0x1038
-   __DATA_CONST.__objc_arraydata: 0x260
-   __DATA_CONST.__got: 0x14d8
--  __AUTH_CONST.__const: 0x3460
--  __AUTH_CONST.__cfstring: 0x24a40
--  __AUTH_CONST.__objc_const: 0x47fa8
--  __AUTH_CONST.__objc_intobj: 0x528
-+  __AUTH_CONST.__const: 0x3480
-+  __AUTH_CONST.__cfstring: 0x24b40
-+  __AUTH_CONST.__objc_const: 0x48050
-+  __AUTH_CONST.__objc_intobj: 0x540
-   __AUTH_CONST.__objc_arrayobj: 0x180
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__auth_got: 0xbc0
-   __AUTH.__objc_data: 0x5f00
--  __DATA.__objc_ivar: 0x33f0
-+  __DATA.__objc_ivar: 0x33fc
-   __DATA.__data: 0x1ca8
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0x55a0
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
--  Functions: 21039
+-  Functions: 21040
 -  Symbols:   30278
 -  CStrings:  6776
-+  Functions: 21044
++  Functions: 21045
 +  Symbols:   30285
 +  CStrings:  6784
- 
 Symbols:
 + -[MRAVRoutingDiscoverySessionWrapper _onNotifyQueue_reevaluateAndNotify]
 + -[MRGroupComposition setSpeakerGroupCount:]

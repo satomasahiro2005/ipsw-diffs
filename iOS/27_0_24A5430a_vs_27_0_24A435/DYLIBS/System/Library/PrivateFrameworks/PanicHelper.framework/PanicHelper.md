@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/PanicHelper.framework/PanicHelper`
 
-```diff
+### Section Size Changes
 
- 37.0.1.0.0
--  __TEXT.__text: 0x21c4
-+  __TEXT.__text: 0x21c8
-   __TEXT.__const: 0x132
-   __TEXT.__constg_swiftt: 0x12c
-   __TEXT.__swift5_typeref: 0x6c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21c4` | `0x21c8` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_296345964 -> sub_2970ad964 : 324 -> 328
+~ sub_29622b964 -> sub_296f81964 : 324 -> 328
 ```

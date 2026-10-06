@@ -2,118 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/TelephonyUI.framework/TelephonyUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x66620` | `0x67cac` | **`+0x168c`** |
+| `__TEXT.__swift5_typeref` | `0x28f7` | `0x25fd` | **`-0x2fa`** |
+| `__TEXT.__oslogstring` | `0xb5c` | `0xd5c` | **`+0x200`** |
+| `__AUTH_CONST.__const` | `0x1d78` | `0x1f08` | **`+0x190`** |
+| `__DATA.__data` | `0xdf8` | `0xf20` | **`+0x128`** |
+| `__TEXT.__swift5_fieldmd` | `0x930` | `0xa24` | **`+0xf4`** |
+| `__TEXT.__swift5_reflstr` | `0x826` | `0x8f6` | **`+0xd0`** |
+| `__AUTH.__objc_data` | `0x1330` | `0x13c8` | **`+0x98`** |
+| `__TEXT.__eh_frame` | `0x808` | `0x888` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x1bd0` | `0x1c48` | **`+0x78`** |
+| `__AUTH_CONST.__objc_const` | `0x6ed0` | `0x6f40` | **`+0x70`** |
+| `__TEXT.__constg_swiftt` | `0xcac` | `0xd1c` | **`+0x70`** |
+| `__TEXT.__objc_methlist` | `0x3c64` | `0x3cc4` | **`+0x60`** |
+| `__AUTH.__data` | `0x830` | `0x888` | **`+0x58`** |
+| `__DATA_CONST.__const` | `0xca0` | `0xc60` | **`-0x40`** |
+| `__TEXT.__const` | `0x2b58` | `0x2b98` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3130` | `0x3168` | **`+0x38`** |
+| `__DATA.__bss` | `0x2810` | `0x2840` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x11a8` | `0x11d0` | **`+0x28`** |
+| `__TEXT.__cstring` | `0x2d01` | `0x2d21` | **`+0x20`** |
+| `__TEXT.__swift5_mpenum` | `0x24` | `0x8` | **`-0x1c`** |
+| `__TEXT.__swift5_builtin` | `0x50` | `0x64` | **`+0x14`** |
+| `__TEXT.__swift5_types` | `0xbc` | `0xcc` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0xa58` | `0xa60` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x200` | `0x208` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x66620
--  __TEXT.__objc_methlist: 0x3c64
--  __TEXT.__const: 0x2b58
-+  __TEXT.__text: 0x67cac
-+  __TEXT.__objc_methlist: 0x3cc4
-+  __TEXT.__const: 0x2b98
-   __TEXT.__gcc_except_tab: 0x370
--  __TEXT.__cstring: 0x2d01
--  __TEXT.__oslogstring: 0xb5c
-+  __TEXT.__cstring: 0x2d21
-+  __TEXT.__oslogstring: 0xd5c
-   __TEXT.__dlopen_cstrs: 0x1a9
-   __TEXT.__ustring: 0x208
--  __TEXT.__swift5_typeref: 0x28f7
--  __TEXT.__constg_swiftt: 0xcac
--  __TEXT.__swift5_reflstr: 0x826
--  __TEXT.__swift5_fieldmd: 0x930
-+  __TEXT.__swift5_typeref: 0x25fd
-+  __TEXT.__constg_swiftt: 0xd1c
-+  __TEXT.__swift5_reflstr: 0x8f6
-+  __TEXT.__swift5_fieldmd: 0xa24
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift5_proto: 0xf0
--  __TEXT.__swift5_types: 0xbc
-+  __TEXT.__swift5_types: 0xcc
-   __TEXT.__swift5_capture: 0x4a8
-   __TEXT.__swift5_assocty: 0x2e0
--  __TEXT.__swift5_builtin: 0x50
--  __TEXT.__swift5_mpenum: 0x24
-+  __TEXT.__swift5_builtin: 0x64
-+  __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift_as_entry: 0x50
-   __TEXT.__swift_as_ret: 0x58
-   __TEXT.__swift_as_cont: 0x70
--  __TEXT.__unwind_info: 0x1bd0
--  __TEXT.__eh_frame: 0x808
-+  __TEXT.__unwind_info: 0x1c48
-+  __TEXT.__eh_frame: 0x888
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xca0
--  __DATA_CONST.__objc_classlist: 0x200
-+  __DATA_CONST.__const: 0xc60
-+  __DATA_CONST.__objc_classlist: 0x208
-   __DATA_CONST.__objc_catlist: 0x68
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3130
-+  __DATA_CONST.__objc_selrefs: 0x3168
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x120
-   __DATA_CONST.__objc_arraydata: 0x68
--  __DATA_CONST.__got: 0xa58
--  __AUTH_CONST.__const: 0x1d78
-+  __DATA_CONST.__got: 0xa60
-+  __AUTH_CONST.__const: 0x1f08
-   __AUTH_CONST.__cfstring: 0x28a0
--  __AUTH_CONST.__objc_const: 0x6ed0
-+  __AUTH_CONST.__objc_const: 0x6f40
-   __AUTH_CONST.__objc_arrayobj: 0x30
-   __AUTH_CONST.__objc_intobj: 0x120
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x11a8
--  __AUTH.__objc_data: 0x1330
--  __AUTH.__data: 0x830
-+  __AUTH_CONST.__auth_got: 0x11d0
-+  __AUTH.__objc_data: 0x13c8
-+  __AUTH.__data: 0x888
-   __DATA.__objc_ivar: 0x338
--  __DATA.__data: 0xdf8
--  __DATA.__bss: 0x2810
-+  __DATA.__data: 0xf20
-+  __DATA.__bss: 0x2840
-   __DATA.__common: 0x140
-   __DATA_DIRTY.__objc_data: 0x638
-   __DATA_DIRTY.__data: 0x28
+-143.100.11.2.1
++145.100.7.2.1
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3014
--  Symbols:   6051
--  CStrings:  818
+-  Symbols:   3187
+-  CStrings:  528
 +  Functions: 3034
-+  Symbols:   6065
-+  CStrings:  824
- 
-Sections:
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __DATA.__objc_ivar : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   3195
++  CStrings:  534
 Symbols:
 + _OBJC_CLASS_$_UIPanGestureRecognizer
 + _OBJC_CLASS_$_UITouch
@@ -143,10 +74,6 @@ Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA5GroupVyAA012_ConditionalD0VyAA4ViewPAAE12_glassEffect_2inQrAA6_GlassV_qd__tAA5ShapeRd__lFQOyAA7CapsuleV_APQo_AA01_lG0VyApA5ColorVGGGAA16_OverlayModifierVyACyACyACyAA0G8ThatFitsVyAA05TupleD0VyACy09TelephonyB00K12ActionSliderV012GlintyStringG0VAA14_PaddingLayoutVGSg_A11_AA6HStackVyA2_yACyA10_AA010_FlexFrameZ0VG_AA6SpacerVQPGGSgA21_A11_A11_QPGGAA012_CompositingeI0VGAA08_OpacityI0VGAA07_OffsetI0VGGGAA010_BlendModeI0VGAA09_GeometryuP0Vy12CoreGraphics7CGFloatVGGAaHHPA37_AaHHPA34_AaHHPAxaHHPAwaHHPqd0__AaHHD3_AQHO_AvaHHPyHCHC_HC_A33_AA0gP0HPyHCHC_A36_AAA45_HPyHCHC_A43_AAA45_HPyHCHC
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyACyACyACyACyAA4ViewPAAE12_glassEffect_2inQrAA6_GlassV_qd__tAA5ShapeRd__lFQOyAA01_jE0VyAA16RoundedRectangleVAA5ColorVG_AA7CapsuleVQo_AA12_FrameLayoutVGAA16_OverlayModifierVyACyACyACyAA6ZStackVyAA05TupleD0VyAA012_ConditionalD0VyA3_yAA5ImageVA5_GAA4TextVG_ACyACyAeAE019backgroundExtensionG0QryFQOyACyACyACyACyACyACyA9_AA07_ShadowG0VGA12_GA12_GA12_GAA08_OpacityG0VGAVG_Qo_AA010_BlendModeG0VGAA017_AppearanceActionR0VGSgQPGGAA022_EnvironmentKeyWritingR0VyAA4FontVSgGGAA016_ForegroundStyleR0VyAPGGAA08_PaddingP0VGGGAA015_GeometryActionR0Vy12CoreGraphics7CGFloatVGGA43_GAA01_djR0VyANGGAA06_ScaleG0VGAaDHPA58_AaDHPA54_AaDHPA53_AaDHPA46_AaDHPAwaDHPqd0__AaDHD3_ATHO_AvA0eR0HPyHCHC_A45_AAA62_HPyHCHC_A52_AAA62_HPyHCHC_A43_AAA62_HPyHCHC_A57_AAA62_HPyHCHC_A60_AAA62_HPyHCHC
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE15sensoryFeedback_7trigger9conditionQrAA07SensoryE0V_qd__Sbqd___qd__tctSQRd__lFQOyAA15ModifiedContentVyAcAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAJyAJyAA6ZStackVyAA05TupleJ0VyAJyAJyAJyAJyAJyAA06_ShapeC0VyAA7CapsuleVAA5ColorVGAA12_FrameLayoutVGAA12_ScaleEffectVGAA08_PaddingW0VGAA07_OffsetY0VGAA0N18AttachmentModifierVGSg_AJy09TelephonyB017GlassActionSliderV5TrackVA2_GAJyAJyA16_5ThumbVA8_GAA16_OverlayModifierVyAJyA14_010ThumbInputC033_771A05A3184784DD17FD6AEB15A3A0E0LLVA11_GGGQPGGAA18_AnimationModifierVySbGGAA23_GeometryActionModifierVySo6CGSizeVA40_SQ12CoreGraphicsyHCg_GG_Qo_A11_G_A16_9DragPhaseOQo_HO
-+ _objc_msgSend$setMaximumNumberOfTouches:
-+ _objc_msgSend$translationInView:
-+ _objc_msgSend$velocityInView:
-+ _objc_msgSend$window
 + _objc_retain_x12
 + _swift_dynamicCastObjCClass
 + _symbolic _____ 11TelephonyUI14ThumbInputView33_771A05A3184784DD17FD6AEB15A3A0E0LLV
@@ -278,5 +205,4 @@ CStrings:
 + "GlassActionSlider TOUCH LANDED: loc=%{public}s viewBounds=%{public}s inWindow=%{bool,public}d"
 + "TelephonyUI.Coordinator"
 + "init()"
-
 ```

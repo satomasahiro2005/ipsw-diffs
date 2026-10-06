@@ -2,96 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/TextToSpeechVoiceBankingUI.framework/TextToSpeechVoiceBankingUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14ae28` | `0x14b73c` | **`+0x914`** |
+| `__TEXT.__const` | `0x95b8` | `0x94f8` | **`-0xc0`** |
+| `__AUTH.__data` | `0x2958` | `0x2a08` | **`+0xb0`** |
+| `__TEXT.__eh_frame` | `0x765c` | `0x76dc` | **`+0x80`** |
+| `__DATA.__data` | `0x4628` | `0x46a0` | **`+0x78`** |
+| `__TEXT.__swift5_typeref` | `0x1ba5c` | `0x1b9fe` | **`-0x5e`** |
+| `__AUTH_CONST.__const` | `0x5de8` | `0x5d90` | **`-0x58`** |
+| `__TEXT.__swift5_capture` | `0x20b0` | `0x2108` | **`+0x58`** |
+| `__TEXT.__unwind_info` | `0x3fe8` | `0x4020` | **`+0x38`** |
+| `__TEXT.__swift5_reflstr` | `0x2571` | `0x2591` | **`+0x20`** |
+| `__DATA.__bss` | `0x5fa8` | `0x5fb8` | **`+0x10`** |
+| `__TEXT.__constg_swiftt` | `0x2858` | `0x2864` | **`+0xc`** |
+| `__TEXT.__swift5_fieldmd` | `0x1edc` | `0x1ee8` | **`+0xc`** |
+| `__DATA_CONST.__objc_selrefs` | `0x568` | `0x570` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x530` | `0x534` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0x218` | `0x21c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x14ae28
-+  __TEXT.__text: 0x14b73c
-   __TEXT.__objc_methlist: 0x32c
--  __TEXT.__const: 0x95b8
-+  __TEXT.__const: 0x94f8
-   __TEXT.__dlopen_cstrs: 0x56
--  __TEXT.__swift5_typeref: 0x1ba5c
-+  __TEXT.__swift5_typeref: 0x1b9fe
-   __TEXT.__cstring: 0x2270
--  __TEXT.__swift5_capture: 0x20b0
--  __TEXT.__constg_swiftt: 0x2858
--  __TEXT.__swift5_reflstr: 0x2571
-+  __TEXT.__swift5_capture: 0x2108
-+  __TEXT.__constg_swiftt: 0x2864
-+  __TEXT.__swift5_reflstr: 0x2591
-   __TEXT.__swift5_assocty: 0x9c8
--  __TEXT.__swift5_fieldmd: 0x1edc
-+  __TEXT.__swift5_fieldmd: 0x1ee8
-   __TEXT.__oslogstring: 0x1b61
-   __TEXT.__swift5_proto: 0x2a4
-   __TEXT.__swift5_types: 0x20c
--  __TEXT.__swift_as_entry: 0x218
-+  __TEXT.__swift_as_entry: 0x21c
-   __TEXT.__swift_as_ret: 0x2a8
--  __TEXT.__swift_as_cont: 0x530
-+  __TEXT.__swift_as_cont: 0x534
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift5_builtin: 0xc8
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__gcc_except_tab: 0x5c
--  __TEXT.__unwind_info: 0x3fe8
--  __TEXT.__eh_frame: 0x765c
-+  __TEXT.__unwind_info: 0x4020
-+  __TEXT.__eh_frame: 0x76dc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-716.0.0.0.0
++718.0.0.0.0
 
-   __DATA_CONST.__objc_classlist: 0xb0
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x568
-+  __DATA_CONST.__objc_selrefs: 0x570
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__got: 0x1288
--  __AUTH_CONST.__const: 0x5de8
-+  __AUTH_CONST.__const: 0x5d90
-   __AUTH_CONST.__cfstring: 0x20
-   __AUTH_CONST.__objc_const: 0x1930
-   __AUTH_CONST.__auth_got: 0x26f8
-   __AUTH.__objc_data: 0xbb0
--  __AUTH.__data: 0x2958
--  __DATA.__data: 0x4628
--  __DATA.__bss: 0x5fa8
-+  __AUTH.__data: 0x2a08
-+  __DATA.__data: 0x46a0
-+  __DATA.__bss: 0x5fb8
-   __DATA.__common: 0xc0
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4853
--  Symbols:   3638
+-  Symbols:   2387
 +  Functions: 4858
-+  Symbols:   3647
-   CStrings:  338
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
++  Symbols:   2391
 Symbols:
 + ___swift_closure_destructor.104Tm
 + ___swift_closure_destructor.142Tm
@@ -100,7 +42,6 @@ Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA4ViewPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAeAEAfgH_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAeAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAeAE7toolbar7contentQrqd__yXE_tAA07ToolbarD0Rd__lFQOy28AccessibilitySharedUISupport012AXOnboardingE0VyAA05TupleD0VyAA6ZStackVyAVyAeAE15dynamicTypeSizeyQrqd__SXRd__AA07DynamicyZ0O5BoundRtd__lFQOyACyAA6VStackVyAVy024TextToSpeechVoiceBankingB008CarouselE0V_ACyACyACyACyAA4TextVAA06_FixedZ6LayoutVGAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA24_ForegroundStyleModifierVyAA22HierarchicalShapeStyleVGGAA18_AnimationModifierVySiSgGGACyACyA4_013RecordingModeE0VAA14_PaddingLayoutVGAA32_EnvironmentKeyTransformModifierVySbGGQPGGA33_G_s19PartialRangeThroughVyA_GQo__AA6HStackVyAVyACyAeAE16keyboardShortcut_9modifiersQrAA13KeyEquivalentV_AA14EventModifiersVtFQOyAA6ButtonVyA8_G_Qo_AA15_HiddenModifierVG_A60_A60_SgQPGGQPGG_AA6SpacerVACyACyAeAE20accessibilityFocusedyQrAA0R10FocusStateV7BindingVySb_GFQOyA3_yAVyAeAEA68_yQrA73_FQOyA4_10PromptItemV_Qo__AA012_ConditionalD0VyACyA4_15VBCapsuleButtonVyA47_yAVyAA5ImageV_A8_QPGGGAA14_OpacityEffectVGACyA88_AA0R18AttachmentModifierVGGQPGG_Qo_A13_yAA15LayoutDirectionOGGA90_GSgA67_QPGA78_yACyA3_yAVyACyACyA3_yAVyA4_08WaveformE0V_AeAEAYyQrqd__SXRd__A_A1_RSlFQOyACyA47_yAVyACyA82_A20_yAA5ColorVGGSg_ACyACyA8_A87_GA17_GQPGGAA12_FrameLayoutVG_A44_Qo_QPGGAA13_OffsetEffectVGA33_G_A4_12VBTrayButtonVAeAE11buttonStyleyQrqd__AA11ButtonStyleRd__lFQOyAeAE4boldyQrSbFQOyAeAEA48_yQrAA16KeyboardShortcutVFQOyA56__Qo__Qo__AR0U20SecondaryButtonStyleVQo_QPGGA33_GACyACyA3_yAVyA122__ACyA4_13VBAudioButtonVA37_GQPGGA90_GA33_GGAA05EmptyE0VG_A4_0Q12CancelButtonVQo__Qo__SbQo__A27_Qo_A90_GAaDHPqd0__AaDHD3_A155_HO_A90_AA0E8ModifierHPyHCHC
 + _get_witness_table 7SwiftUI16SubscriptionViewVy7Combine10PublishersO11AutoconnectCy_So7NSTimerC10FoundationE14TimerPublisherCGAA0D0PAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOy28AccessibilitySharedUISupport012AXOnboardingD0VyAA12TupleContentVyAA012_ConditionalV0VyAA6VStackVyA_yAA6SpacerV_ApAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyAA6ButtonVyA3_yA_yAA08ModifiedV0VyAA5ImageVAWE17imageSizeModifieryQr12CoreGraphics7CGFloatVFQOy_Qo_AA25_ForegroundStyleModifier2VyAA5ColorVA22_GG_AA4TextVQPGGG_AA16PlainButtonStyleVQo_A5_QPGGAW0T10BulletListVyA1_yA_yAW0T10BulletItemVSg_A38_QPGA38_GGG_A5_QPGAW0T7ToolbarVyApAEA6_yQrqd__AA11ButtonStyleRd__lFQOyA9_yA26_G_AW0T18PrimaryButtonStyleVQo_AA05EmptyD0VGA11_yA11_yApAE20accessibilityElement8childrenQrAA0Q13ChildBehaviorV_tFQOyA11_yAA6ZStackVyA_yA11_yAA011StrokeShapeD0VyAA6CircleVA22_AA06_ShapeD0VyA64_A22_GGAA12_FrameLayoutVG_A11_yA11_yA62_yAA13_TrimmedShapeVyA64_GA22_A66_yA74_A22_GGA70_GAA15_RotationEffectVGApAE4boldyQrSbFQOyA11_yA11_yA18_AA24_ForegroundStyleModifierVyA22_GGAA30_EnvironmentKeyWritingModifierVyAA0V10TransitionVGG_Qo_SgQPGGAA14_PaddingLayoutVG_Qo_AA0Q18AttachmentModifierVGA97_GG_Qo_GAaOHPyHC
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAcAE5sheet11isPresented9onDismissAKQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAA08ModifiedL0VyAA012SubscriptionC0Vy7Combine10PublishersO11AutoconnectCy_So7NSTimerC10FoundationE14TimerPublisherCGAcAE0P6Change2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEA7_A8_A9__Qrqd___Sbyqd___qd__tctSQRd__lFQOy28AccessibilitySharedUISupport012AXOnboardingC0VyAA012_ConditionalL0VyA14_yAA05TupleL0VyAA6SpacerV_AUy024TextToSpeechVoiceBankingB015VBCapsuleButtonVyAA6HStackVyA14_yA16_yAA5ImageV_AA4TextVQPGA28_GSgGGAA16_FlexFrameLayoutVGA18_QPGA16_yA19_012MicInputNameC0V_A18_AUyA19_10PromptItemVAA14_PaddingLayoutVGA18_QPGGAUyA27_A34_GGSgA14_yAUyAA6VStackVyA16_yA19_12VBTrayButtonV_AcAE11buttonStyleyQrqd__AA11ButtonStyleRd__lFQOyAcAE4boldyQrSbFQOyAA6ButtonVyAUyA23_yA16_yA18__A27_A18_QPGGAA01_L13ShapeModifierVyAA7CapsuleVGGG_Qo__A10_32AXOnboardingSecondaryButtonStyleVQo_QPGGA42_GAUyA50_yA16_yAUyA19_08WaveformC0VA42_G_AUyA19_13VBAudioButtonVAA32_EnvironmentKeyTransformModifierVySbGGQPGGA42_GGAUyAUyAcAE10fontWeightyQrAA4FontV6WeightVSgFQOyAUyA25_A10_E17imageSizeModifieryQr12CoreGraphics7CGFloatVFQOy_Qo_AA24_ForegroundStyleModifierVyAA5ColorVGG_Qo_AA31AccessibilityAttachmentModifierVGA42_GSgG_A19_11SampleStateOQo__A19_20VBConfigurationStageOQo_GA106_G_A19_017VBRecordingResultC0VQo__AA05TuplekL0VyA14_yAA0kL7BuilderV10buildBlockyQrxAaLRzlFZQOy_A19_0K12CancelButtonVQo_A125_A126_yQrxAaLRzlFZQOy_A14_yA125_A126_yQrxAaLRzlFZQOy_A125_A126_yQrxAaLRzlFZQOy_A125_A126_yQrxAaLRzlFZQOy_AA0K4ItemVyytAA9ShareLinkVys15CollectionOfOneVyA3_3URLVGs5NeverOA140_A27_GGQo_SgQo_Qo_A125_A126_yQrxAaLRzlFZQOy_A131_yytAUyA57_yA27_GAA14_OpacityEffectVGGQo_GQo_G_A14_yA125_A126_yQrxAaLRzlFZQOy_A131_yytA19_24ActivityIndicatorWrapperVGQo_A125_A126_yQrxAaLRzlFZQOy_AA0K9ItemGroupVyA16_yAUyA57_yA25_GAA30_EnvironmentKeyWritingModifierVyAA13AnyShapeStyleVSgGGSgSg_A147_SgQPGGQo_GSgtGQo__Qo_HO
-+ _objc_msgSend$setValue:originator:
 + _symbolic So18TTSAUMessagingHostCSg
 + _symbolic So19LSApplicationRecordCSg
 + _symbolic So34AVSpeechSynthesisProviderAudioUnitCSg
@@ -176,5 +117,4 @@ Symbols:
 - _symbolic _____y_____y_____y_____y_____y_____y_____yABy_____y_____y_____yABy______ADyADyADyADy__________G_____y_____SgGG_____y_____GG_____ySiSgGGADyADy__________G_____ySbGGQPGGAXG______y_____GQo_______yAByADy_____y_____yAGG_Qo______G_A13_A13_SgQPGGQPGG______ADyADy_____yAEyABy_____y______Qo_______yADy_____yA8_yABy______AGQPGGG_____GADyA29______GGQPGG_Qo_AJy_____GGA30_GSgA19_QPGA22_yADyAEyAByADyADyAEyABy___________yADyA8_yAByADyA24_AOy_____GGSg_ADyADyAGA28_GAMGQPGG_____G_A6_Qo_QPGG_____GAXG___________y_____y_____yA10__Qo__Qo_______Qo_QPGGAXGADyADyAEyAByA57__ADy_____A_GQPGGA30_GAXGG_____G______y______Qo_Qo__Qo__SbQo__ATQo_ 7SwiftUI4ViewPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQO AcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQO AcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQO AcAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQO 28AccessibilitySharedUISupport012AXOnboardingC0V AA05TupleP0V AA6ZStackV AcAE15dynamicTypeSizeyQrqd__SXRd__AA07DynamicxY0O5BoundRtd__lFQO AA08ModifiedP0V AA6VStackV 024TextToSpeechVoiceBankingB008CarouselC0V AA4TextV AA06_FixedY6LayoutV AA30_EnvironmentKeyWritingModifierV AA4FontV AA24_ForegroundStyleModifierV AA22HierarchicalShapeStyleV AA18_AnimationModifierV A4_013RecordingModeC0V AA14_PaddingLayoutV AA32_EnvironmentKeyTransformModifierV s19PartialRangeThroughV AY AA6HStackV AcAE16keyboardShortcut_9modifiersQrAA13KeyEquivalentV_AA14EventModifiersVtFQO AA6ButtonV AA15_HiddenModifierV AA6SpacerV AcAE20accessibilityFocusedyQrAA0Q10FocusStateV7BindingVySb_GFQO AcAEA43_yQrA48_FQO A4_10PromptItemV AA012_ConditionalP0V A4_15VBCapsuleButtonV AA5ImageV AA14_OpacityEffectV AA0Q18AttachmentModifierV AA15LayoutDirectionO A4_08WaveformC0V AcAEAWyQrqd__SXRd__AYA_RSlFQO AA5ColorV AA12_FrameLayoutV AA13_OffsetEffectV A4_12VBTrayButtonV AcAE11buttonStyleyQrqd__AA11ButtonStyleRd__lFQO AcAE4boldyQrSbFQO AcAEA31_yQrAA16KeyboardShortcutVFQO AP0T20SecondaryButtonStyleV A4_13VBAudioButtonV AA05EmptyC0V AA0oP7BuilderV10buildBlockyQrxAaORzlFZQO A4_0O12CancelButtonV
 - _symbolic _____y_____y_____y_____y_____y_____y_____y_____yACy_____yAAy_____yACy______AAyAAyAAyAAy__________G_____y_____SgGG_____y_____GG_____ySiSgGGAAyAAy__________G_____ySbGGQPGGAXG______y_____GQo_______yACyAAy_____y_____yAGG_Qo______G_A13_A13_SgQPGGQPGG______AAyAAy_____yAEyACy_____y______Qo_______yAAy_____yA8_yACy______AGQPGGG_____GAAyA29______GGQPGG_Qo_AJy_____GGA30_GSgA19_QPGA22_yAAyAEyACyAAyAAyAEyACy___________yAAyA8_yACyAAyA24_AOy_____GGSg_AAyAAyAGA28_GAMGQPGG_____G_A6_Qo_QPGG_____GAXG___________y_____y_____yA10__Qo__Qo_______Qo_QPGGAXGAAyAAyAEyACyA57__AAy_____A_GQPGGA30_GAXGG_____G______y______Qo_Qo__Qo__SbQo__ATQo_A30_G 7SwiftUI15ModifiedContentV AA4ViewPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQO AeAEAfgH_Qrqd___Sbyqd___qd__tctSQRd__lFQO AeAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQO AeAE7toolbar7contentQrqd__yXE_tAA07ToolbarD0Rd__lFQO 28AccessibilitySharedUISupport012AXOnboardingE0V AA05TupleD0V AA6ZStackV AeAE15dynamicTypeSizeyQrqd__SXRd__AA07DynamicyZ0O5BoundRtd__lFQO AA6VStackV 024TextToSpeechVoiceBankingB008CarouselE0V AA4TextV AA06_FixedZ6LayoutV AA30_EnvironmentKeyWritingModifierV AA4FontV AA24_ForegroundStyleModifierV AA22HierarchicalShapeStyleV AA18_AnimationModifierV A4_013RecordingModeE0V AA14_PaddingLayoutV AA32_EnvironmentKeyTransformModifierV s19PartialRangeThroughV A_ AA6HStackV AeAE16keyboardShortcut_9modifiersQrAA13KeyEquivalentV_AA14EventModifiersVtFQO AA6ButtonV AA15_HiddenModifierV AA6SpacerV AeAE20accessibilityFocusedyQrAA0R10FocusStateV7BindingVySb_GFQO AeAEA43_yQrA48_FQO A4_10PromptItemV AA012_ConditionalD0V A4_15VBCapsuleButtonV AA5ImageV AA14_OpacityEffectV AA0R18AttachmentModifierV AA15LayoutDirectionO A4_08WaveformE0V AeAEAYyQrqd__SXRd__A_A1_RSlFQO AA5ColorV AA12_FrameLayoutV AA13_OffsetEffectV A4_12VBTrayButtonV AeAE11buttonStyleyQrqd__AA11ButtonStyleRd__lFQO AeAE4boldyQrSbFQO AeAEA31_yQrAA16KeyboardShortcutVFQO AR0U20SecondaryButtonStyleV A4_13VBAudioButtonV AA05EmptyE0V AA0qD7BuilderV10buildBlockyQrxAaQRzlFZQO A4_0Q12CancelButtonV
 - _type_layout_string 26TextToSpeechVoiceBankingUI06TTSPerD20SettingsAUParamsViewV
-
 ```

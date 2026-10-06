@@ -2,93 +2,59 @@
 
 > `/private/var/staged_system_apps/Freeform.app/Frameworks/AppImageGenerationModel.framework/AppImageGenerationModel`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x1486` | `0x8995` | **`+0x750f`** |
+| `__TEXT.__text` | `0x44e6c` | `0x4b1dc` | **`+0x6370`** |
+| `__DATA.__bss` | `0x30a0` | `0x4220` | **`+0x1180`** |
+| `__TEXT.__const` | `0x3650` | `0x3f30` | **`+0x8e0`** |
+| `__DATA_CONST.__const` | `0x1c50` | `0x2460` | **`+0x810`** |
+| `__TEXT.__eh_frame` | `0x19a8` | `0x1d10` | **`+0x368`** |
+| `__TEXT.__swift5_typeref` | `0xd40` | `0xf0a` | **`+0x1ca`** |
+| `__TEXT.__swift5_fieldmd` | `0x9bc` | `0xb44` | **`+0x188`** |
+| `__TEXT.__unwind_info` | `0x10c8` | `0x1248` | **`+0x180`** |
+| `__DATA.__data` | `0x11e8` | `0x1360` | **`+0x178`** |
+| `__TEXT.__constg_swiftt` | `0x564` | `0x6c0` | **`+0x15c`** |
+| `__TEXT.__auth_stubs` | `0x1780` | `0x1860` | **`+0xe0`** |
+| `__TEXT.__swift5_reflstr` | `0x996` | `0xa36` | **`+0xa0`** |
+| `__TEXT.__swift5_proto` | `0x164` | `0x1f0` | **`+0x8c`** |
+| `__DATA_CONST.__auth_got` | `0xbc8` | `0xc38` | **`+0x70`** |
+| `__TEXT.__swift5_types` | `0x84` | `0xb0` | **`+0x2c`** |
+| `__DATA_CONST.__auth_ptr` | `0x578` | `0x5a0` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0x3a8` | `0x3c8` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x108` | `0x120` | **`+0x18`** |
+| `__TEXT.__swift_as_ret` | `0x70` | `0x7c` | **`+0xc`** |
+| `__TEXT.__swift_as_entry` | `0x6c` | `0x68` | **`-0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__oslogstring`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_protos`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x44e6c
--  __TEXT.__auth_stubs: 0x1780
-+  __TEXT.__text: 0x4b1dc
-+  __TEXT.__auth_stubs: 0x1860
-   __TEXT.__objc_stubs: 0x2c0
-   __TEXT.__objc_methlist: 0x68
-+  __TEXT.__const: 0x3f30
-+  __TEXT.__swift5_typeref: 0xf0a
-+  __TEXT.__constg_swiftt: 0x6c0
-+  __TEXT.__swift5_fieldmd: 0xb44
-+  __TEXT.__swift5_reflstr: 0xa36
-+  __TEXT.__cstring: 0x8995
-+  __TEXT.__swift5_proto: 0x1f0
-+  __TEXT.__swift5_types: 0xb0
-   __TEXT.__objc_classname: 0x15d
-   __TEXT.__objc_methname: 0x8a6
-   __TEXT.__objc_methtype: 0x226
--  __TEXT.__const: 0x3650
--  __TEXT.__constg_swiftt: 0x564
--  __TEXT.__swift5_typeref: 0xd40
--  __TEXT.__swift5_fieldmd: 0x9bc
--  __TEXT.__swift5_types: 0x84
--  __TEXT.__cstring: 0x1486
--  __TEXT.__swift5_reflstr: 0x996
-   __TEXT.__swift5_assocty: 0x168
--  __TEXT.__swift5_proto: 0x164
--  __TEXT.__swift_as_entry: 0x6c
-+  __TEXT.__swift_as_entry: 0x68
-   __TEXT.__oslogstring: 0x29f
-   __TEXT.__swift5_capture: 0x2b4
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__swift_as_ret: 0x70
--  __TEXT.__swift_as_cont: 0x108
--  __TEXT.__unwind_info: 0x10c8
--  __TEXT.__eh_frame: 0x19a8
--  __DATA_CONST.__const: 0x1c50
-+  __TEXT.__swift_as_ret: 0x7c
-+  __TEXT.__swift_as_cont: 0x120
-+  __TEXT.__unwind_info: 0x1248
-+  __TEXT.__eh_frame: 0x1d10
-+  __DATA_CONST.__const: 0x2460
-   __DATA_CONST.__objc_classlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__auth_got: 0xbc8
--  __DATA_CONST.__got: 0x3a8
--  __DATA_CONST.__auth_ptr: 0x578
-+  __DATA_CONST.__auth_got: 0xc38
-+  __DATA_CONST.__got: 0x3c8
-+  __DATA_CONST.__auth_ptr: 0x5a0
-   __DATA.__objc_const: 0xa38
-   __DATA.__objc_selrefs: 0xe8
-   __DATA.__objc_data: 0xa0
--  __DATA.__data: 0x11e8
--  __DATA.__bss: 0x30a0
-+  __DATA.__data: 0x1360
-+  __DATA.__bss: 0x4220
-   __DATA.__common: 0x48
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/Combine.framework/Combine
+-649.0.0.0.3
++651.0.0.501.2
 
-   - /usr/lib/swift/libswiftsimd.dylib
-   - @rpath/AppsGen.framework/AppsGen
-   - @rpath/AppsGenUI.framework/AppsGenUI
 -  Functions: 1479
--  Symbols:   610
+-  Symbols:   573
 -  CStrings:  237
 +  Functions: 1599
-+  Symbols:   661
++  Symbols:   624
 +  CStrings:  267
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__oslogstring : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__common : content changed
 Symbols:
 + ___swift_memcpy80_8
 + __swift_closure_destructor.211Tm
@@ -182,5 +148,4 @@ CStrings:
 - "LLM provider alert message for text generation. Parameter is the provider name (e.g. OpenAI)."
 - "LLM provider alert message. Parameter is the provider name (e.g. OpenAI)."
 - "LLM provider alert title. Parameter is the provider name (e.g. OpenAI)."
-
 ```

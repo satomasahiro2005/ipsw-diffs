@@ -2,69 +2,49 @@
 
 > `/usr/libexec/cryptexd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x691c8` | `0x6979c` | **`+0x5d4`** |
+| `__TEXT.__oslogstring` | `0xb3cc` | `0xb4e7` | **`+0x11b`** |
+| `__TEXT.__cstring` | `0x5e3c` | `0x5e6c` | **`+0x30`** |
+| `__TEXT.__gcc_except_tab` | `0x1b4c` | `0x1b68` | **`+0x1c`** |
+| `__TEXT.__auth_stubs` | `0x25f0` | `0x2600` | **`+0x10`** |
+| `__TEXT.__const` | `0xcc0` | `0xcd0` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x1308` | `0x1310` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x358` | `0x360` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
 - `__TEXT.__objc_methlist`
 - `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
 - `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -761.0.15.0.0
--  __TEXT.__text: 0x691c8
--  __TEXT.__auth_stubs: 0x25f0
 +761.0.17.502.1
-+  __TEXT.__text: 0x6979c
-+  __TEXT.__auth_stubs: 0x2600
-   __TEXT.__objc_stubs: 0x1700
-   __TEXT.__objc_methlist: 0x9b4
--  __TEXT.__const: 0xcc0
--  __TEXT.__gcc_except_tab: 0x1b4c
-+  __TEXT.__const: 0xcd0
-+  __TEXT.__gcc_except_tab: 0x1b68
-   __TEXT.__objc_methname: 0x1817
-   __TEXT.__objc_classname: 0x123
--  __TEXT.__cstring: 0x5e3c
-+  __TEXT.__cstring: 0x5e6c
-   __TEXT.__objc_methtype: 0x4e2
--  __TEXT.__oslogstring: 0xb3cc
-+  __TEXT.__oslogstring: 0xb4e7
-   __TEXT.__swift5_typeref: 0x127
-   __TEXT.__swift5_capture: 0x1bc
-   __TEXT.__constg_swiftt: 0xa4
 
-   __DATA_CONST.__objc_intobj: 0x48
-   __DATA_CONST.__subsystem: 0x18
-   __DATA_CONST.__object_init: 0x8
--  __DATA_CONST.__auth_got: 0x1308
--  __DATA_CONST.__got: 0x358
-+  __DATA_CONST.__auth_got: 0x1310
-+  __DATA_CONST.__got: 0x360
-   __DATA_CONST.__auth_ptr: 0x88
-   __DATA.__objc_const: 0x1520
-   __DATA.__objc_selrefs: 0x6d0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   Functions: 1556
 -  Symbols:   2918
 -  CStrings:  2228
 +  Symbols:   2920
 +  CStrings:  2235
- 
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/libcryptex_executables/install/TempContent/Objects/libcryptex_executables-761.0.17.502.1~2/cryptexd/RELEASE_ARM64E/DaemonServer.o
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/libcryptex_executables/install/TempContent/Objects/libcryptex_executables-761.0.17.502.1~2/cryptexd/RELEASE_ARM64E/Logger+init.o

@@ -2,58 +2,32 @@
 
 > `/System/Library/Frameworks/AudioToolbox.framework/libAudioDSP.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x369ce4` | `0x36b3d0` | **`+0x16ec`** |
+| `__TEXT.__oslogstring` | `0x29d38` | `0x2ab16` | **`+0xdde`** |
+| `__TEXT.__realtime` | `0x15c8f4` | `0x15cbf0` | **`+0x2fc`** |
+| `__TEXT.__gcc_except_tab` | `0x30250` | `0x3045c` | **`+0x20c`** |
+| `__TEXT.__cstring` | `0x33e09` | `0x33fc9` | **`+0x1c0`** |
+| `__AUTH_CONST.__cfstring` | `0x20660` | `0x207e0` | **`+0x180`** |
+| `__TEXT.__const` | `0xa2640` | `0xa2690` | **`+0x50`** |
+| `__AUTH_CONST.__const` | `0x214c0` | `0x214f8` | **`+0x38`** |
+| `__DATA_CONST.__objc_selrefs` | `0x560` | `0x590` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0xe350` | `0xe378` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0x3c0` | `0x3d0` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
- 881.117.20.0.0
--  __TEXT.__text: 0x369ce4
--  __TEXT.__realtime: 0x15c8f4
-+  __TEXT.__text: 0x36b3d0
-+  __TEXT.__realtime: 0x15cbf0
-   __TEXT.__delay_stubs: 0xb40
-   __TEXT.__delay_helper: 0x494
-   __TEXT.__objc_methlist: 0x334
--  __TEXT.__const: 0xa2640
-+  __TEXT.__const: 0xa2690
-   __TEXT.__dlopen_cstrs: 0x4f
--  __TEXT.__cstring: 0x33e09
--  __TEXT.__gcc_except_tab: 0x30250
--  __TEXT.__oslogstring: 0x29d38
--  __TEXT.__unwind_info: 0xe350
-+  __TEXT.__cstring: 0x33fc9
-+  __TEXT.__gcc_except_tab: 0x3045c
-+  __TEXT.__oslogstring: 0x2ab16
-+  __TEXT.__unwind_info: 0xe378
-   __TEXT.__eh_frame: 0xf0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x560
-+  __DATA_CONST.__objc_selrefs: 0x590
-   __DATA_CONST.__objc_superrefs: 0x20
-   __DATA_CONST.__objc_arraydata: 0x78
--  __DATA_CONST.__got: 0x3c0
--  __AUTH_CONST.__const: 0x214c0
--  __AUTH_CONST.__cfstring: 0x20660
-+  __DATA_CONST.__got: 0x3d0
-+  __AUTH_CONST.__const: 0x214f8
-+  __AUTH_CONST.__cfstring: 0x207e0
-   __AUTH_CONST.__objc_const: 0x6a0
-   __AUTH_CONST.__weak_auth_got: 0x118
-   __AUTH_CONST.__objc_intobj: 0xa8
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 11214
--  Symbols:   17567
--  CStrings:  10808
+-  Symbols:   17430
+-  CStrings:  10811
 +  Functions: 11219
-+  Symbols:   17585
-+  CStrings:  10835
- 
++  Symbols:   17442
++  CStrings:  10838
 Symbols:
 + GCC_except_table10000
 + GCC_except_table10001
@@ -672,12 +646,6 @@ Symbols:
 + ___block_descriptor_56_ea8_32bs40c60_ZTSNSt3__18weak_ptrI35AUSpatialMixerV2OrientationObserverEE_e40_v24?0"CMDeviceStateEvent"8"NSError"16l
 + ___copy_helper_block_ea8_40c60_ZTSNSt3__18weak_ptrI35AUSpatialMixerV2OrientationObserverEE
 + ___destroy_helper_block_ea8_40c60_ZTSNSt3__18weak_ptrI35AUSpatialMixerV2OrientationObserverEE
-+ _objc_msgSend$initWithName:
-+ _objc_msgSend$isAvailable
-+ _objc_msgSend$propertyA
-+ _objc_msgSend$propertyB
-+ _objc_msgSend$setQualityOfService:
-+ _objc_msgSend$startUpdatesToQueue:withHandler:
 - GCC_except_table10016
 - GCC_except_table10021
 - GCC_except_table10023
@@ -1360,6 +1328,9 @@ CStrings:
 + "/System/Library/Audio/Tunings/Generic/CinematicSeparation/Tunings/separate_and_remix_music.austrip"
 + "/System/Library/Audio/Tunings/Generic/CinematicSeparation/Tunings/separate_and_remix_music.dspg"
 + "/System/Library/Audio/Tunings/Generic/CinematicSeparation/Tunings/separate_and_remix_music.propstrip"
++ "17:18:09"
++ "17:18:16"
++ "17:18:31"
 + "CMDeviceState orientation error on %s: %{public}@"
 + "CMDeviceStateManager not available"
 + "Failed to create new music austrip plist"
@@ -1453,4 +1424,7 @@ CStrings:
 - "%25s:%-5d EXCEPTION (%d): \"mInputSize is wrong.\""
 - "%25s:%-5d EXCEPTION (%d): \"mInputSize of NeuralNet (%u) is not matching the feature vector size (%u).\""
 - "%25s:%-5d EXCEPTION (%d): \"unable to compile program %s\""
+- "20:43:52"
+- "20:44:00"
+- "20:44:20"
 ```

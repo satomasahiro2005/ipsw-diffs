@@ -2,107 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/HearingUtilities.framework/HearingUtilities`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb6570` | `0xb68dc` | **`+0x36c`** |
+| `__TEXT.__oslogstring` | `0xeee3` | `0xf1e3` | **`+0x300`** |
+| `__AUTH.__objc_data` | `0x1320` | `0x11d8` | **`-0x148`** |
+| `__DATA_DIRTY.__objc_data` | `0x460` | `0x5a8` | **`+0x148`** |
+| `__DATA_DIRTY.__data` | `—` | `0xc8` | **`+0xc8`** |
+| `__DATA.__data` | `0x1020` | `0xf80` | **`-0xa0`** |
+| `__DATA.__bss` | `0x850` | `0x7e0` | **`-0x70`** |
+| `__DATA_DIRTY.__bss` | `0xa8` | `0x110` | **`+0x68`** |
+| `__TEXT.__cstring` | `0x6046` | `0x609b` | **`+0x55`** |
+| `__AUTH_CONST.__cfstring` | `0x5d00` | `0x5d40` | **`+0x40`** |
+| `__AUTH_CONST.__objc_const` | `0xbdb0` | `0xbdf0` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x36e8` | `0x3710` | **`+0x28`** |
+| `__AUTH.__data` | `0xc8` | `0xa8` | **`-0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x54f8` | `0x5508` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x919c` | `0x91ac` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x9ec` | `0x9f4` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x760` | `0x768` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x2c38` | `0x2c30` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xb6570
--  __TEXT.__objc_methlist: 0x919c
-+  __TEXT.__text: 0xb68dc
-+  __TEXT.__objc_methlist: 0x91ac
-   __TEXT.__const: 0x7e4
-   __TEXT.__dlopen_cstrs: 0x85c
--  __TEXT.__cstring: 0x6046
-+  __TEXT.__cstring: 0x609b
-   __TEXT.__swift5_typeref: 0x2a5
-   __TEXT.__swift5_capture: 0x1d8
-   __TEXT.__constg_swiftt: 0x1a0
+-530.0.0.0.0
++534.0.0.0.0
 
-   __TEXT.__swift5_assocty: 0x30
-   __TEXT.__swift5_proto: 0x14
-   __TEXT.__swift5_types: 0x1c
--  __TEXT.__oslogstring: 0xeee3
-+  __TEXT.__oslogstring: 0xf1e3
-   __TEXT.__gcc_except_tab: 0x2858
--  __TEXT.__unwind_info: 0x2c38
-+  __TEXT.__unwind_info: 0x2c30
-   __TEXT.__eh_frame: 0x70
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x36e8
-+  __DATA_CONST.__const: 0x3710
-   __DATA_CONST.__objc_classlist: 0x218
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x120
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x54f8
-+  __DATA_CONST.__objc_selrefs: 0x5508
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x1a0
-   __DATA_CONST.__objc_arraydata: 0x3f0
--  __DATA_CONST.__got: 0x760
-+  __DATA_CONST.__got: 0x768
-   __AUTH_CONST.__const: 0x1618
--  __AUTH_CONST.__cfstring: 0x5d00
--  __AUTH_CONST.__objc_const: 0xbdb0
-+  __AUTH_CONST.__cfstring: 0x5d40
-+  __AUTH_CONST.__objc_const: 0xbdf0
-   __AUTH_CONST.__objc_intobj: 0xa50
-   __AUTH_CONST.__objc_dictobj: 0x410
-   __AUTH_CONST.__objc_arrayobj: 0x1e0
-   __AUTH_CONST.__objc_doubleobj: 0x1870
-   __AUTH_CONST.__auth_got: 0xbb0
--  __AUTH.__objc_data: 0x1320
--  __AUTH.__data: 0xc8
--  __DATA.__objc_ivar: 0x9ec
--  __DATA.__data: 0x1020
--  __DATA.__bss: 0x850
--  __DATA_DIRTY.__objc_data: 0x460
--  __DATA_DIRTY.__bss: 0xa8
-+  __AUTH.__objc_data: 0x11d8
-+  __AUTH.__data: 0xa8
-+  __DATA.__objc_ivar: 0x9f4
-+  __DATA.__data: 0xf80
-+  __DATA.__bss: 0x7e0
-+  __DATA_DIRTY.__objc_data: 0x5a8
-+  __DATA_DIRTY.__data: 0xc8
-+  __DATA_DIRTY.__bss: 0x110
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AVRouting.framework/AVRouting
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 4064
--  Symbols:   12743
--  CStrings:  2804
-+  Symbols:   12746
-+  CStrings:  2817
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
+-  CStrings:  2060
++  CStrings:  2071
 Symbols:
 + -[HUComfortSoundsController scheduleFileWithRetryCount:]
 + -[HUNoiseController writeAttenuationSampleToHealth]
@@ -134,9 +65,6 @@ Symbols:
 + ___56-[HUComfortSoundsController scheduleFileWithRetryCount:]_block_invoke
 + ___56-[HUComfortSoundsController scheduleFileWithRetryCount:]_block_invoke_2
 + ___block_descriptor_41_e8_32s_e35_v32?0"AXHearingAidDevice"8Q16^B24ls32l8
-+ _objc_msgSend$scheduleFileWithRetryCount:
-+ _objc_msgSend$stringByAppendingString:
-+ _objc_msgSend$writeAttenuationSampleToHealth
 - -[HUNoiseController writeAttentuationSampleToHealth]
 - GCC_except_table3108
 - GCC_except_table3129
@@ -167,8 +95,6 @@ Symbols:
 - ___58-[AXHearingAidDeviceController pairedHearingAidsDidChange]_block_invoke_3
 - ___58-[AXHearingAidDeviceController pairedHearingAidsDidChange]_block_invoke_4
 - _getHKUnitClass
-- _objc_msgSend$isRunning
-- _objc_msgSend$writeAttentuationSampleToHealth
 CStrings:
 + "CentralManager: No peripherals with IDs, unpairing %@"
 + "Error playing node: %@"
@@ -195,5 +121,4 @@ CStrings:
 - "HearingAidDeviceController: pairedHearingAidsDidChange, No peripheral identifiers %@, unpairing persistent device\n%@"
 - "HearingAidDeviceController: pairedHearingAidsDidChange, Updating Persistent/Loaded/Available with device\n%@"
 - "HearingAidDeviceGenericLabel"
-
 ```

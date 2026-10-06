@@ -2,42 +2,21 @@
 
 > `/System/Library/PrivateFrameworks/SystemUIWindowingKit.framework/SystemUIWindowingKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x111f4` | `0x1122c` | **`+0x38`** |
+| `__TEXT.__const` | `0xa94` | `0xaa4` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x111f4
-+  __TEXT.__text: 0x1122c
-   __TEXT.__objc_methlist: 0x584
--  __TEXT.__const: 0xa94
-+  __TEXT.__const: 0xaa4
-   __TEXT.__swift5_typeref: 0x3e6
-   __TEXT.__swift5_fieldmd: 0x4d8
-   __TEXT.__constg_swiftt: 0x430
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
+-100.0.0.0.0
++102.0.0.0.0
 Functions:
-~ sub_2a79f27bc -> sub_2ac7627bc : 344 -> 408
-~ sub_2a79fd764 -> sub_2ac76d7a4 : 432 -> 428
-~ sub_2a79fe39c -> sub_2ac76e3d8 : 196 -> 192
-
+~ sub_2a78b97bc -> sub_2ac6357bc : 344 -> 408
+~ sub_2a78c4764 -> sub_2ac6407a4 : 432 -> 428
+~ sub_2a78c539c -> sub_2ac6413d8 : 196 -> 192
 ```

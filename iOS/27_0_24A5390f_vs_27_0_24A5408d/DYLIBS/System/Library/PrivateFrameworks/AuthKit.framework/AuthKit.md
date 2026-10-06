@@ -2,69 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/AuthKit.framework/AuthKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a1d68` | `0x1a1bac` | **`-0x1bc`** |
+| `__TEXT.__oslogstring` | `0x15c80` | `0x15b61` | **`-0x11f`** |
+| `__AUTH_CONST.__objc_const` | `0x2e820` | `0x2e8c0` | **`+0xa0`** |
+| `__TEXT.__gcc_except_tab` | `0x6694` | `0x6638` | **`-0x5c`** |
+| `__TEXT.__objc_methlist` | `0x10544` | `0x10584` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0x13e0` | `0x1400` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x81a0` | `0x81c0` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x518` | `0x528` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x78f8` | `0x7908` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x123c` | `0x1248` | **`+0xc`** |
+| `__TEXT.__cstring` | `0x12f8f` | `0x12f98` | **`+0x9`** |
+| `__TEXT.__unwind_info` | `0x4880` | `0x4878` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -555.0.0.0.0
--  __TEXT.__text: 0x1a1d68
--  __TEXT.__objc_methlist: 0x10544
 +559.0.0.0.0
-+  __TEXT.__text: 0x1a1bac
-+  __TEXT.__objc_methlist: 0x10584
-   __TEXT.__const: 0xd30
--  __TEXT.__cstring: 0x12f8f
--  __TEXT.__oslogstring: 0x15c80
--  __TEXT.__gcc_except_tab: 0x6694
-+  __TEXT.__cstring: 0x12f98
-+  __TEXT.__oslogstring: 0x15b61
-+  __TEXT.__gcc_except_tab: 0x6638
-   __TEXT.__dlopen_cstrs: 0x267
-   __TEXT.__ustring: 0x34a
--  __TEXT.__unwind_info: 0x4880
-+  __TEXT.__unwind_info: 0x4878
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x78f8
-+  __DATA_CONST.__const: 0x7908
-   __DATA_CONST.__objc_classlist: 0x7d0
-   __DATA_CONST.__objc_catlist: 0x88
-   __DATA_CONST.__objc_protolist: 0x240
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x81a0
-+  __DATA_CONST.__objc_selrefs: 0x81c0
-   __DATA_CONST.__objc_protorefs: 0xf0
-   __DATA_CONST.__objc_superrefs: 0x4c8
-   __DATA_CONST.__objc_arraydata: 0x358
-   __DATA_CONST.__got: 0xbc8
--  __AUTH_CONST.__const: 0x13e0
-+  __AUTH_CONST.__const: 0x1400
-   __AUTH_CONST.__cfstring: 0x13fc0
--  __AUTH_CONST.__objc_const: 0x2e820
-+  __AUTH_CONST.__objc_const: 0x2e8c0
-   __AUTH_CONST.__objc_intobj: 0x300
-   __AUTH_CONST.__objc_dictobj: 0x410
-   __AUTH_CONST.__objc_arrayobj: 0x90
--  __AUTH_CONST.__auth_got: 0x518
-+  __AUTH_CONST.__auth_got: 0x528
-   __AUTH.__objc_data: 0x3890
--  __DATA.__objc_ivar: 0x123c
-+  __DATA.__objc_ivar: 0x1248
-   __DATA.__data: 0x1bf0
-   __DATA.__bss: 0x6d0
-   __DATA_DIRTY.__objc_data: 0x1590
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 6105
--  Symbols:   14633
+-  Symbols:   12295
 -  CStrings:  4636
 +  Functions: 6112
-+  Symbols:   14640
++  Symbols:   12304
 +  CStrings:  4633
- 
 Symbols:
 + +[AKSecurityHelper secAccessControlCreateWithProtection:flags:error:]
 + +[AKSecurityHelper secKeyCreateRandomKeyWithParameters:error:]
@@ -101,8 +68,6 @@ Symbols:
 + _SecKeyCreateRandomKey
 + ___87-[AKAppleIDPasskeyAuthenticationController silentCreateAuthorizationControllerProvider]_block_invoke
 + ___block_descriptor_32_e44_"ASAuthorizationController"16?0"NSArray"8l
-+ _objc_msgSend$setProxyShouldIgnoreSilentRequestRequirements:
-+ _objc_msgSend$silentCreateAuthorizationControllerProvider
 - -[AKAccountManager setTrustedDeviceId:forAccount:]
 - -[AKAccountManager trustedDeviceIdForAccount:]
 - -[NSMutableURLRequest(AuthKit) ak_addTrustedDeviceIdHeader:]
@@ -129,10 +94,6 @@ Symbols:
 - _kAKAnalyticsEventSigninTrustedDeviceId
 - _kAKAnalyticsEventStableId
 - _kAKAnalyticsEventUpgradeTrustedDeviceId
-- _objc_msgSend$ak_addTrustedDeviceIdHeader:
-- _objc_msgSend$setTrustedDeviceId:forAccount:
-- _objc_msgSend$trustedDeviceIdForAccount:
-- _objc_msgSend$trustedDeviceIdentifierForAccount:
 CStrings:
 + "<%@:%p> Name: %@, SN: %@, SDID: %@, TrustedDeviceId: %@, Build: %@, OS: %@, Version: %@, Model: %@, Timestamp: %@, Trusted: %d, Safety State' %@, Circle Status: %d, Color Code: %@, Additional Info %@, services: %@, lastCacheUpdatedDate: %@, deletedDate: %@, removalReason: %ld, stableId: %@, isThisDevice: %d "
 + "@\"ASAuthorizationController\"16@?0@\"NSArray\"8"

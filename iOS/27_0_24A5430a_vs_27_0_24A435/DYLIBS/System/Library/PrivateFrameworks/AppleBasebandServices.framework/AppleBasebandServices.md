@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AppleBasebandServices.framework/AppleBasebandServices`
 
-```diff
+### Section Size Changes
 
- 1585.0.0.0.0
--  __TEXT.__text: 0x1a768
-+  __TEXT.__text: 0x1a818
-   __TEXT.__const: 0x560
-   __TEXT.__gcc_except_tab: 0xd7c
-   __TEXT.__oslogstring: 0x236
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a768` | `0x1a818` | **`+0xb0`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN7support2fs20createUniqueFilenameENSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE : 6416 -> 6424
 ~ __ZN7support2fs9removeDirERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE : 1780 -> 1784

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/EXSurface.framework/EXSurface`
 
-```diff
+### Section Size Changes
 
- 16.0.15.0.0
--  __TEXT.__text: 0x42fc
-+  __TEXT.__text: 0x4300
-   __TEXT.__objc_methlist: 0xa5c
-   __TEXT.__cstring: 0x689
-   __TEXT.__gcc_except_tab: 0x4c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x42fc` | `0x4300` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _EXSurfaceRangeAllocatorAllocate : 300 -> 304
 ```

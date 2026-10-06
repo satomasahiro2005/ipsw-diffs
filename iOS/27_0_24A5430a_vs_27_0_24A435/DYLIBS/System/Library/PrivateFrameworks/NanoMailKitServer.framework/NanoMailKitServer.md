@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/NanoMailKitServer.framework/NanoMailKitServer`
 
-```diff
+### Section Size Changes
 
- 866.0.0.0.0
--  __TEXT.__text: 0x7874c
-+  __TEXT.__text: 0x78748
-   __TEXT.__objc_methlist: 0x94dc
-   __TEXT.__const: 0x5b6
-   __TEXT.__cstring: 0x4b97
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7874c` | `0x78748` | **`-0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[NNMKSyncPersistenceHandler addMessagesToResend:mailbox:] : 1284 -> 1288
 ~ -[NNMKResendScheduler registerIDSIdentifier:objectIds:type:resendInterval:].cold.1 : 88 -> 92

@@ -2,60 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/CoreSDB.framework/CoreSDB`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe7d8` | `0xe240` | **`-0x598`** |
+| `__DATA_CONST.__objc_selrefs` | `0x160` | `0xf8` | **`-0x68`** |
+| `__TEXT.__cstring` | `0x135e` | `0x1316` | **`-0x48`** |
+| `__AUTH_CONST.__cfstring` | `0xb20` | `0xae0` | **`-0x40`** |
+| `__DATA.__data` | `0x40` | `—` | **`-0x40`** |
+| `__TEXT.__oslogstring` | `0x159a` | `0x156f` | **`-0x2b`** |
+| `__DATA_CONST.__const` | `0x130` | `0x108` | **`-0x28`** |
+| `__TEXT.__unwind_info` | `0x588` | `0x560` | **`-0x28`** |
+| `__TEXT.__gcc_except_tab` | `0x810` | `0x7f0` | **`-0x20`** |
+| `__DATA.__bss` | `0x2c` | `0x20` | **`-0xc`** |
+| `__DATA_DIRTY.__bss` | `0x5c` | `0x54` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -211.100.3.0.0
--  __TEXT.__text: 0xe418
 +211.200.1.0.0
-+  __TEXT.__text: 0xdea4
-   __TEXT.__objc_methlist: 0xec
-   __TEXT.__const: 0x128
--  __TEXT.__cstring: 0x135e
--  __TEXT.__gcc_except_tab: 0x810
--  __TEXT.__oslogstring: 0x159a
--  __TEXT.__unwind_info: 0x6f8
-+  __TEXT.__cstring: 0x1316
-+  __TEXT.__gcc_except_tab: 0x7f0
-+  __TEXT.__oslogstring: 0x156f
-+  __TEXT.__unwind_info: 0x6d0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x130
-+  __DATA_CONST.__const: 0x108
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x160
-+  __DATA_CONST.__objc_selrefs: 0xf8
-   __DATA_CONST.__objc_superrefs: 0x10
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x1a8
--  __AUTH_CONST.__cfstring: 0xb20
-+  __AUTH_CONST.__cfstring: 0xae0
-   __AUTH_CONST.__objc_const: 0x2c0
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__objc_ivar: 0x2c
--  __DATA.__data: 0x40
-   __DATA_DIRTY.__objc_data: 0xa0
-   __DATA_DIRTY.__data: 0x84
--  __DATA_DIRTY.__bss: 0x5c
-+  __DATA_DIRTY.__bss: 0x54
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/IMFoundation.framework/IMFoundation
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 364
 -  Symbols:   425
 -  CStrings:  292
 +  Functions: 360
 +  Symbols:   413
 +  CStrings:  288
- 
 Symbols:
 - _CC_MD5
 - _CFNotificationCenterAddObserver

@@ -2,49 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/MLIR_ML.framework/mlir-ml-viewer-tool`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a88` | `0x1ccc` | **`+0x244`** |
+| `__TEXT.__cstring` | `0x3fa` | `0x44c` | **`+0x52`** |
+| `__TEXT.__gcc_except_tab` | `0x154` | `0x174` | **`+0x20`** |
+| `__TEXT.__objc_stubs` | `0x1c0` | `0x1e0` | **`+0x20`** |
+| `__TEXT.__objc_methname` | `0x146` | `0x158` | **`+0x12`** |
+| `__TEXT.__unwind_info` | `0xf8` | `0x108` | **`+0x10`** |
+| `__DATA.__objc_selrefs` | `0x70` | `0x78` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+
+### Other Changes
 
 ```diff
 
 -7.0.75.1.0
--  __TEXT.__text: 0x1a88
 +7.0.76.1.0
-+  __TEXT.__text: 0x1ccc
-   __TEXT.__auth_stubs: 0x210
--  __TEXT.__objc_stubs: 0x1c0
--  __TEXT.__gcc_except_tab: 0x154
-+  __TEXT.__objc_stubs: 0x1e0
-+  __TEXT.__gcc_except_tab: 0x174
-   __TEXT.__const: 0x10
--  __TEXT.__cstring: 0x3fa
--  __TEXT.__objc_methname: 0x146
--  __TEXT.__unwind_info: 0xf8
-+  __TEXT.__cstring: 0x44c
-+  __TEXT.__objc_methname: 0x158
-+  __TEXT.__unwind_info: 0x108
-   __DATA_CONST.__const: 0xd0
-   __DATA_CONST.__cfstring: 0x160
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__auth_got: 0x118
-   __DATA_CONST.__got: 0x78
--  __DATA.__objc_selrefs: 0x70
-+  __DATA.__objc_selrefs: 0x78
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/MLIR_ML.framework/MLIR_ML
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
+
 -  Functions: 32
 -  Symbols:   116
 -  CStrings:  43
 +  Functions: 33
 +  Symbols:   119
 +  CStrings:  46
- 
 Symbols:
 + GCC_except_table31
 + GCC_except_table34

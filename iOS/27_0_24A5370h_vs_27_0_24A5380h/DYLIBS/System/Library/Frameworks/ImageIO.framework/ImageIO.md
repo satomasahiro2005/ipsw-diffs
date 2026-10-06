@@ -2,110 +2,41 @@
 
 > `/System/Library/Frameworks/ImageIO.framework/ImageIO`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4fcacc` | `0x4fd300` | **`+0x834`** |
+| `__TEXT.__cstring` | `0xa5a3e` | `0xa5f9e` | **`+0x560`** |
+| `__DATA.__bss` | `0x2f820` | `0x2fc30` | **`+0x410`** |
+| `__AUTH_CONST.__const` | `0x4edb0` | `0x4eea0` | **`+0xf0`** |
+| `__TEXT.__gcc_except_tab` | `0x22754` | `0x22844` | **`+0xf0`** |
+| `__AUTH_CONST.__cfstring` | `0x35fa0` | `0x35f60` | **`-0x40`** |
+| `__DATA_DIRTY.__bss` | `0xba8` | `0xbe8` | **`+0x40`** |
+| `__TEXT.__const` | `0x49460` | `0x494a0` | **`+0x40`** |
+| `__TEXT.__eh_frame` | `0x90c4` | `0x908c` | **`-0x38`** |
+| `__TEXT.__unwind_info` | `0x13640` | `0x13660` | **`+0x20`** |
+| `__DATA.__common` | `0x2288` | `0x2270` | **`-0x18`** |
+| `__DATA_DIRTY.__common` | `0xfa0` | `0xfb8` | **`+0x18`** |
+| `__AUTH.__data` | `0x15c8` | `0x15d8` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x2f60` | `0x2f70` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x4b820` | `0x4b810` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0xaa0` | `0xab0` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0x3c0` | `0x3b0` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x4fcacc
-+  __TEXT.__text: 0x4fd300
-   __TEXT.__objc_methlist: 0xd58
--  __TEXT.__const: 0x49460
--  __TEXT.__gcc_except_tab: 0x22754
--  __TEXT.__cstring: 0xa5a3e
-+  __TEXT.__const: 0x494a0
-+  __TEXT.__gcc_except_tab: 0x22844
-+  __TEXT.__cstring: 0xa5f9e
-   __TEXT.__oslogstring: 0x17
-   __TEXT.__constg_swiftt: 0x260c
-   __TEXT.__swift5_typeref: 0x3cb0
+-2843.1.1.0.0
++2846.0.0.0.0
 
-   __TEXT.__swift_as_cont: 0x10
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__ustring: 0x30
--  __TEXT.__unwind_info: 0x13640
--  __TEXT.__eh_frame: 0x90c4
-+  __TEXT.__unwind_info: 0x13660
-+  __TEXT.__eh_frame: 0x908c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4b820
-+  __DATA_CONST.__const: 0x4b810
-   __DATA_CONST.__objc_classlist: 0x60
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-
-   __DATA_CONST.__objc_selrefs: 0xb50
-   __DATA_CONST.__objc_superrefs: 0x40
-   __DATA_CONST.__objc_arraydata: 0x470
--  __DATA_CONST.__got: 0xaa0
--  __AUTH_CONST.__const: 0x4edb0
--  __AUTH_CONST.__cfstring: 0x35fa0
-+  __DATA_CONST.__got: 0xab0
-+  __AUTH_CONST.__const: 0x4eea0
-+  __AUTH_CONST.__cfstring: 0x35f60
-   __AUTH_CONST.__objc_const: 0x11d0
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__objc_intobj: 0x6d8
-   __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__objc_dictobj: 0x78
--  __AUTH_CONST.__auth_got: 0x2f60
-+  __AUTH_CONST.__auth_got: 0x2f70
-   __AUTH.__objc_data: 0x370
--  __AUTH.__data: 0x15c8
-+  __AUTH.__data: 0x15d8
-   __AUTH.__thread_vars: 0x18
-   __AUTH.__thread_bss: 0x1
-   __DATA.__objc_ivar: 0xa4
-   __DATA.__data: 0x64e0
--  __DATA.__bss: 0x2f820
--  __DATA.__common: 0x2288
--  __DATA_DIRTY.__data: 0x3c0
-+  __DATA.__bss: 0x2fc30
-+  __DATA.__common: 0x2270
-+  __DATA_DIRTY.__data: 0x3b0
-   __DATA_DIRTY.__crash_info: 0x148
--  __DATA_DIRTY.__common: 0xfa0
--  __DATA_DIRTY.__bss: 0xba8
-+  __DATA_DIRTY.__bss: 0xbe8
-+  __DATA_DIRTY.__common: 0xfb8
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/ColorSync.framework/ColorSync
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_StringProcessing.dylib
 -  Functions: 22960
--  Symbols:   45060
--  CStrings:  25080
+-  Symbols:   24297
+-  CStrings:  18177
 +  Functions: 22998
-+  Symbols:   45167
-+  CStrings:  25096
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
++  Symbols:   24341
++  CStrings:  18195
 Symbols:
 + GCC_except_table218
 + __ZGVZ23OFDCreatePDFDataFromURLE7ofdLock
@@ -153,10 +84,8 @@ Symbols:
 + __ZZL27IIOGetCodesigningIdentifiervE11cachedBytes
 + _fmod
 + _modf
-+ _objc_msgSend$initWithBytesNoCopy:length:encoding:freeWhenDone:
 - _kCGImageAuxiliaryDataTypeProvenanceProcessedImage
 - _kCGImageAuxiliaryDataTypeProvenanceUnprocessedImage
-- _objc_msgSend$initWithUTF8String:
 CStrings:
 + "%.0f,%.6f%c"
 + "*** ERROR: failed to read RLE size table\n"
@@ -184,5 +113,4 @@ CStrings:
 - "kCGImageAuxiliaryDataTypeProvenanceProcessedImage"
 - "kCGImageAuxiliaryDataTypeProvenanceUnprocessedImage"
 - "☀️ Using subsample factor: %u (%u px)"
-
 ```

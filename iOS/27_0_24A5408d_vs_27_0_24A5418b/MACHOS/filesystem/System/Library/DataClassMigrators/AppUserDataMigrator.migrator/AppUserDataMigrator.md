@@ -2,6 +2,6 @@
 
 > `/System/Library/DataClassMigrators/AppUserDataMigrator.migrator/AppUserDataMigrator`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`

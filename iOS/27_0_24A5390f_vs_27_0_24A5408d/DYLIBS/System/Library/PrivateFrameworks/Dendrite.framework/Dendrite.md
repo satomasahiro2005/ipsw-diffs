@@ -2,19 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/Dendrite.framework/Dendrite`
 
-```diff
+### Section Size Changes
 
- 6.7.0.0.0
--  __TEXT.__text: 0x701d8
-+  __TEXT.__text: 0x7019c
-   __TEXT.__objc_methlist: 0x14c
-   __TEXT.__const: 0x5370
-   __TEXT.__swift5_typeref: 0x15cd
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x701d8` | `0x7019c` | **`-0x3c`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_25f127f7c -> sub_25ebbbf7c : 1436 -> 1428
-~ sub_25f1298a0 -> sub_25ebbd898 : 796 -> 784
-~ sub_25f1544f0 -> sub_25ebe84dc : 756 -> 748
-~ sub_25f164f14 -> sub_25ebf8ef8 : 1112 -> 1100
-~ sub_25f16695c -> sub_25ebfa934 : 1424 -> 1416
-~ sub_25f1671b8 -> sub_25ebfb188 : 812 -> 800
+~ sub_25efdef7c -> sub_25eac3f7c : 1436 -> 1428
+~ sub_25efe08a0 -> sub_25eac5898 : 796 -> 784
+~ sub_25f00b4f0 -> sub_25eaf04dc : 756 -> 748
+~ sub_25f01bf14 -> sub_25eb00ef8 : 1112 -> 1100
+~ sub_25f01d95c -> sub_25eb02934 : 1424 -> 1416
+~ sub_25f01e1b8 -> sub_25eb03188 : 812 -> 800
 ```

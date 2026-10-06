@@ -2,32 +2,26 @@
 
 > `/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/MPSCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x96a4c` | `0x94eac` | **`-0x1ba0`** |
+| `__TEXT.__cstring` | `0xa812` | `0xa85d` | **`+0x4b`** |
+| `__TEXT.__gcc_except_tab` | `0x4dd8` | `0x4da4` | **`-0x34`** |
+
+### Other Changes
+
 ```diff
 
 -130.0.19.0.0
--  __TEXT.__text: 0x94ac8
 +130.1.1.0.0
-+  __TEXT.__text: 0x92f28
-   __TEXT.__objc_methlist: 0x27fc
-   __TEXT.__const: 0x2974
--  __TEXT.__cstring: 0xa812
-+  __TEXT.__cstring: 0xa85d
-   __TEXT.__oslogstring: 0x7f
--  __TEXT.__gcc_except_tab: 0x4dd8
-+  __TEXT.__gcc_except_tab: 0x4da4
-   __TEXT.__unwind_info: 0x24d0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   - /usr/lib/libobjc.A.dylib
-   Functions: 1732
-   Symbols:   800
 -  CStrings:  893
 +  CStrings:  901
- 
 Functions:
 ~ __ZN12MPSKernelDAG25appendConversionFunctionsEPU21objcproto10MTLLibrary11objc_objectP14NSMutableArrayIPU22objcproto11MTLFunction11objc_objectEPb : 7304 -> 4596
-~ sub_247e047ec -> sub_24ba8ad58 : 1088 -> 1312
+~ sub_24aaad998 -> sub_24e44af04 : 1088 -> 1312
 ~ __ZN12MPSKernelDAG13getDAGAndHashEPU21objcproto10MTLLibrary11objc_objectP14MPSDAGKernelOpP19NSMutableDictionaryIP8NSStringPU22objcproto11MTLFunction11objc_objectEP14NSMutableArrayIS6_ERDv4_yPb : 16092 -> 11968
 ~ __ZN12MPSKernelDAG6castOpEP10BaseTensorRKNSt3__16vectorIlNS2_9allocatorIlEEEE11MPSDataTypePKc : 1248 -> 1304
 ~ __ZN12MPSKernelDAG10exponentOpEP10BaseTensorRKNSt3__16vectorIlNS2_9allocatorIlEEEE11MPSDataTypePKc : 1440 -> 1496
@@ -103,8 +97,8 @@ Functions:
 ~ __ZN12MPSKernelDAG15complexCreateOpEP10BaseTensorS1_RKNSt3__16vectorIlNS2_9allocatorIlEEEE11MPSDataTypePKc : 1452 -> 1508
 ~ __ZN12MPSKernelDAG14complexScaleOpEP10BaseTensorS1_RKNSt3__16vectorIlNS2_9allocatorIlEEEE11MPSDataTypePKc : 1456 -> 1512
 ~ __ZN21MPSKernelMiddlefixDAG13getDAGAndHashEPU21objcproto10MTLLibrary11objc_objectP14MPSDAGKernelOpP19NSMutableDictionaryIP8NSStringPU22objcproto11MTLFunction11objc_objectEP14NSMutableArrayIS6_ERDv4_yPb : 16960 -> 11592
-~ sub_247e65a48 -> sub_24baeab78 : 2536 -> 2572
-~ sub_247e68228 -> sub_24baed37c : 3564 -> 4328
+~ sub_24ab1006c -> sub_24e4ac19c : 2560 -> 2596
+~ sub_24ab12918 -> sub_24e4aea6c : 3564 -> 4328
 ~ __ZNK9MPSDevice19isDataTypeSupportedE11MPSDataType : 416 -> 432
 CStrings:
 + "130.1.1"

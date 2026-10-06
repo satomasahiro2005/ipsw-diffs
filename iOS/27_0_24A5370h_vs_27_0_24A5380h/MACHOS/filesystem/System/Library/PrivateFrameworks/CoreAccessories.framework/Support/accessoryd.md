@@ -2,87 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/CoreAccessories.framework/Support/accessoryd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x183af0` | `0x199608` | **`+0x15b18`** |
+| `__DATA_CONST.__const` | `0x8760` | `0x99a0` | **`+0x1240`** |
+| `__TEXT.__cstring` | `0xd52c` | `0xe275` | **`+0xd49`** |
+| `__TEXT.__objc_methname` | `0xf3d0` | `0xfeab` | **`+0xadb`** |
+| `__DATA.__objc_const` | `0xa708` | `0xb078` | **`+0x970`** |
+| `__DATA_CONST.__cfstring` | `0x6b00` | `0x7340` | **`+0x840`** |
+| `__TEXT.__unwind_info` | `0x4180` | `0x4758` | **`+0x5d8`** |
+| `__TEXT.__gcc_except_tab` | `0x1bb4` | `0x20e0` | **`+0x52c`** |
+| `__TEXT.__oslogstring` | `0x37447` | `0x37924` | **`+0x4dd`** |
+| `__TEXT.__objc_stubs` | `0x9180` | `0x95c0` | **`+0x440`** |
+| `__TEXT.__objc_methlist` | `0x6b84` | `0x6e8c` | **`+0x308`** |
+| `__TEXT.__objc_methtype` | `0x2f90` | `0x321c` | **`+0x28c`** |
+| `__DATA.__objc_selrefs` | `0x3240` | `0x33b8` | **`+0x178`** |
+| `__DATA.__data` | `0x1a78` | `0x1940` | **`-0x138`** |
+| `__DATA.__objc_data` | `0x1e00` | `0x1ef0` | **`+0xf0`** |
+| `__DATA_CONST.__got` | `0xdd8` | `0xec8` | **`+0xf0`** |
+| `__DATA.__objc_ivar` | `0x700` | `0x7a0` | **`+0xa0`** |
+| `__DATA.__bss` | `0x1678` | `0x1618` | **`-0x60`** |
+| `__TEXT.__objc_classname` | `0xf93` | `0xfd3` | **`+0x40`** |
+| `__TEXT.__auth_stubs` | `0x18c0` | `0x1890` | **`-0x30`** |
+| `__TEXT.__const` | `0x20e0` | `0x2110` | **`+0x30`** |
+| `__DATA_CONST.__auth_ptr` | `0xc0` | `0x98` | **`-0x28`** |
+| `__DATA_CONST.__auth_got` | `0xc70` | `0xc58` | **`-0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x300` | `0x318` | **`+0x18`** |
+| `__DATA_CONST.__objc_intobj` | `0xf0` | `0x108` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x2e0` | `0x2f0` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x183af0
--  __TEXT.__auth_stubs: 0x18c0
--  __TEXT.__objc_stubs: 0x9180
--  __TEXT.__objc_methlist: 0x6b84
--  __TEXT.__const: 0x20e0
--  __TEXT.__gcc_except_tab: 0x1bb4
--  __TEXT.__objc_classname: 0xf93
--  __TEXT.__objc_methname: 0xf3d0
--  __TEXT.__objc_methtype: 0x2f90
--  __TEXT.__cstring: 0xd52c
--  __TEXT.__oslogstring: 0x37447
-+  __TEXT.__text: 0x199608
-+  __TEXT.__auth_stubs: 0x1890
-+  __TEXT.__objc_stubs: 0x95c0
-+  __TEXT.__objc_methlist: 0x6e8c
-+  __TEXT.__const: 0x2110
-+  __TEXT.__gcc_except_tab: 0x20e0
-+  __TEXT.__objc_classname: 0xfd3
-+  __TEXT.__objc_methname: 0xfeab
-+  __TEXT.__objc_methtype: 0x321c
-+  __TEXT.__cstring: 0xe275
-+  __TEXT.__oslogstring: 0x37924
-   __TEXT.__ustring: 0x232
--  __TEXT.__unwind_info: 0x4180
--  __DATA_CONST.__const: 0x8760
--  __DATA_CONST.__cfstring: 0x6b00
--  __DATA_CONST.__objc_classlist: 0x300
-+  __TEXT.__unwind_info: 0x4758
-+  __DATA_CONST.__const: 0x99a0
-+  __DATA_CONST.__cfstring: 0x7340
-+  __DATA_CONST.__objc_classlist: 0x318
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x178
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x130
--  __DATA_CONST.__objc_superrefs: 0x2e0
-+  __DATA_CONST.__objc_superrefs: 0x2f0
-   __DATA_CONST.__objc_arraydata: 0x100
-   __DATA_CONST.__objc_arrayobj: 0xd8
--  __DATA_CONST.__objc_intobj: 0xf0
--  __DATA_CONST.__auth_got: 0xc70
--  __DATA_CONST.__got: 0xdd8
--  __DATA_CONST.__auth_ptr: 0xc0
--  __DATA.__objc_const: 0xa708
--  __DATA.__objc_selrefs: 0x3240
--  __DATA.__objc_ivar: 0x700
--  __DATA.__objc_data: 0x1e00
--  __DATA.__data: 0x1a78
--  __DATA.__bss: 0x1678
-+  __DATA_CONST.__objc_intobj: 0x108
-+  __DATA_CONST.__auth_got: 0xc58
-+  __DATA_CONST.__got: 0xec8
-+  __DATA_CONST.__auth_ptr: 0x98
-+  __DATA.__objc_const: 0xb078
-+  __DATA.__objc_selrefs: 0x33b8
-+  __DATA.__objc_ivar: 0x7a0
-+  __DATA.__objc_data: 0x1ef0
-+  __DATA.__data: 0x1940
-+  __DATA.__bss: 0x1618
-   __DATA.__common: 0x28
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+-1196.0.0.502.1
++1203.0.0.0.0
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libsysdiagnose.dylib
 -  Functions: 8002
--  Symbols:   51708
--  CStrings:  9259
+-  Symbols:   10916
+-  CStrings:  8382
 +  Functions: 8569
-+  Symbols:   55126
-+  CStrings:  9569
- 
-Sections:
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
++  Symbols:   11615
++  CStrings:  8619
 Symbols:
 + -[ACCConnectionSnapshotInfo .cxx_destruct]
 + -[ACCConnectionSnapshotInfo accInfo]
@@ -2419,5 +2390,4 @@ CStrings:
 - "v32@0:8@16^{ACCEndpoint_s=^{ACCConnection_s}^{__CFString}^{__CFString}ii^{__CFString}Q^{?}^v^{?}^{__CFDictionary}^{__CFDictionary}BBiB^{__CFString}^{__CFString}^?@@?BB{_opaque_pthread_mutex_t=q[56c]}}24"
 - "v40@0:8@16Q24Q32"
 - "wpcPolicyExt"
-
 ```

@@ -2,14 +2,15 @@
 
 > `/usr/lib/libAppleArchive.dylib`
 
-```diff
+### Section Size Changes
 
- 469.0.0.0.0
--  __TEXT.__text: 0x83724
-+  __TEXT.__text: 0x83790
-   __TEXT.__cstring: 0x13496
-   __TEXT.__const: 0x920
-   __TEXT.__oslogstring: 0x31
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x83724` | `0x83790` | **`+0x6c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _aaCacheStreamOpen : 740 -> 744
 ~ _cacheFlush : 204 -> 212

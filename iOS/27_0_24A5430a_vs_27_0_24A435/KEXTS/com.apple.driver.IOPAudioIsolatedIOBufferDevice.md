@@ -2,14 +2,8 @@
 
 > `com.apple.driver.IOPAudioIsolatedIOBufferDevice`
 
-```diff
+### Section Size Changes
 
-   __TEXT.__cstring: 0x6da
-   __TEXT.__os_log: 0x49a
-   __TEXT.__const: 0x8
--  __TEXT_EXEC.__text: 0x29b8
-+  __TEXT_EXEC.__text: 0x2b24
-   __TEXT_EXEC.__auth_stubs: 0x100
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x60
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x29b8` | `0x2b24` | **`+0x16c`** |

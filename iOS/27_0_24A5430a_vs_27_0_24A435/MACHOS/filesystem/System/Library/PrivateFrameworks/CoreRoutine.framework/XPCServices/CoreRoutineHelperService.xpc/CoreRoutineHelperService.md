@@ -2,34 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/CoreRoutine.framework/XPCServices/CoreRoutineHelperService.xpc/CoreRoutineHelperService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc311c` | `0xc3240` | **`+0x124`** |
+| `__TEXT.__gcc_except_tab` | `0x2190` | `0x2194` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 1122.0.0.0.0
--  __TEXT.__text: 0xc311c
-+  __TEXT.__text: 0xc3240
-   __TEXT.__auth_stubs: 0xf40
-   __TEXT.__objc_stubs: 0x5ee0
-   __TEXT.__objc_methlist: 0x35ec
-
-   __TEXT.__oslogstring: 0x3294
-   __TEXT.__cstring: 0x3ae1d
-   __TEXT.__objc_methname: 0xa1d9
--  __TEXT.__gcc_except_tab: 0x2190
-+  __TEXT.__gcc_except_tab: 0x2194
-   __TEXT.__unwind_info: 0x10e0
-   __DATA_CONST.__const: 0xff0
-   __DATA_CONST.__cfstring: 0x1ff40
+```text
 Functions:
 ~ sub_100006138 : 24792 -> 24804
 ~ sub_10000cf3c -> sub_10000cf48 : 3212 -> 3224

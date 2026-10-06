@@ -2,76 +2,39 @@
 
 > `/System/Library/Frameworks/CoreImage.framework/CoreImage`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3497a0` | `0x349f6c` | **`+0x7cc`** |
+| `__TEXT.__cstring` | `0x1049a8` | `0x104a1a` | **`+0x72`** |
+| `__DATA_CONST.__const` | `0x64d8` | `0x6528` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x1858` | `0x1898` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0xaf8` | `0xb20` | **`+0x28`** |
+| `__AUTH_CONST.__objc_const` | `0x2b4c0` | `0x2b4e0` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x159b0` | `0x159d0` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8e50` | `0x8e68` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0xa8a8` | `0xa8c0` | **`+0x18`** |
+| `__TEXT.__gcc_except_tab` | `0xa868` | `0xa87c` | **`+0x14`** |
+| `__TEXT.__oslogstring` | `0xb283` | `0xb275` | **`-0xe`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__dlopen_cstrs`
+
+### Other Changes
 
 ```diff
 
 -1667.22.1.0.0
--  __TEXT.__text: 0x341f7c
--  __TEXT.__objc_methlist: 0x159b0
 +1667.40.3.0.0
-+  __TEXT.__text: 0x342700
-+  __TEXT.__objc_methlist: 0x159d0
-   __TEXT.__const: 0xe198
--  __TEXT.__gcc_except_tab: 0xa868
--  __TEXT.__cstring: 0x1049a8
--  __TEXT.__oslogstring: 0xb283
-+  __TEXT.__gcc_except_tab: 0xa87c
-+  __TEXT.__cstring: 0x104a1a
-+  __TEXT.__oslogstring: 0xb275
-   __TEXT.__dlopen_cstrs: 0x3fd
-   __TEXT.__runtimeheader: 0x15aa4
-   __TEXT.__cikl2metal_pre: 0x54b
-   __TEXT.__grain: 0x105040
--  __TEXT.__unwind_info: 0xc7e0
-+  __TEXT.__unwind_info: 0xc800
-   __TEXT.__eh_frame: 0x350
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x64d8
-+  __DATA_CONST.__const: 0x6528
-   __DATA_CONST.__objc_classlist: 0x1078
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8e50
-+  __DATA_CONST.__objc_selrefs: 0x8e68
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x360
-   __DATA_CONST.__objc_arraydata: 0x1488
--  __DATA_CONST.__got: 0xaf8
-+  __DATA_CONST.__got: 0xb20
-   __AUTH_CONST.__const: 0xde40
-   __AUTH_CONST.__cfstring: 0x1dba0
--  __AUTH_CONST.__objc_const: 0x2b4c0
-+  __AUTH_CONST.__objc_const: 0x2b4e0
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0xdc8
-   __AUTH_CONST.__objc_dictobj: 0x410
-   __AUTH_CONST.__objc_doubleobj: 0x2a40
-   __AUTH_CONST.__objc_floatobj: 0x2e0
-   __AUTH_CONST.__objc_arrayobj: 0x198
--  __AUTH_CONST.__auth_got: 0x1858
-+  __AUTH_CONST.__auth_got: 0x1898
-   __AUTH.__objc_data: 0x9dd0
-   __AUTH.__data: 0x278a0
-   __DATA.__objc_ivar: 0x1fc0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  Functions: 15163
--  Symbols:   28584
+-  Functions: 15164
+-  Symbols:   26333
 -  CStrings:  8881
-+  Functions: 15173
-+  Symbols:   28608
++  Functions: 15174
++  Symbols:   26357
 +  CStrings:  8883
- 
 Symbols:
 + +[CIContextCache currentEntryCount]
 + +[CIContextCache peakEntryCount]

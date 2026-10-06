@@ -2,116 +2,65 @@
 
 > `/System/Library/PrivateFrameworks/CarPlayAssetUI.framework/CarPlayAssetUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3bb840` | `0x1601c4` | **`-0x25b67c`** |
+| `__DATA.__bss` | `0x86eb0` | `0xaa70` | **`-0x7c440`** |
+| `__TEXT.__const` | `0x7cac4` | `0xdc74` | **`-0x6ee50`** |
+| `__AUTH_CONST.__const` | `0x2b010` | `0x6970` | **`-0x246a0`** |
+| `__TEXT.__eh_frame` | `0x10148` | `0x2060` | **`-0xe0e8`** |
+| `__TEXT.__swift5_fieldmd` | `0x10018` | `0x2ec0` | **`-0xd158`** |
+| `__DATA.__data` | `0x13898` | `0x69a8` | **`-0xcef0`** |
+| `__TEXT.__unwind_info` | `0x102e0` | `0x4808` | **`-0xbad8`** |
+| `__TEXT.__swift5_typeref` | `0x1a960` | `0xefb4` | **`-0xb9ac`** |
+| `__TEXT.__constg_swiftt` | `0xcccc` | `0x4a7c` | **`-0x8250`** |
+| `__TEXT.__swift5_reflstr` | `0xa38f` | `0x2bb3` | **`-0x77dc`** |
+| `__TEXT.__cstring` | `0x7437` | `0x1a57` | **`-0x59e0`** |
+| `__TEXT.__swift5_proto` | `0x452c` | `0x58c` | **`-0x3fa0`** |
+| `__TEXT.__swift5_assocty` | `0x2500` | `0x1190` | **`-0x1370`** |
+| `__TEXT.__swift5_capture` | `0x2964` | `0x186c` | **`-0x10f8`** |
+| `__TEXT.__swift5_types` | `0x11e4` | `0x3a4` | **`-0xe40`** |
+| `__AUTH.__data` | `0x4de0` | `0x4140` | **`-0xca0`** |
+| `__AUTH_CONST.__objc_const` | `0x3330` | `0x2800` | **`-0xb30`** |
+| `__TEXT.__swift5_mpenum` | `0x948` | `0x20` | **`-0x928`** |
+| `__DATA_CONST.__const` | `0x1498` | `0xcc0` | **`-0x7d8`** |
+| `__TEXT.__swift5_builtin` | `0x44c` | `0x140` | **`-0x30c`** |
+| `__DATA_CONST.__got` | `0x11d0` | `0x1050` | **`-0x180`** |
+| `__DATA.__common` | `0x480` | `0x338` | **`-0x148`** |
+| `__TEXT.__oslogstring` | `0x17ff` | `0x1705` | **`-0xfa`** |
+| `__TEXT.__swift_as_cont` | `0x118` | `0x64` | **`-0xb4`** |
+| `__DATA_CONST.__objc_selrefs` | `0x12d8` | `0x1238` | **`-0xa0`** |
+| `__AUTH.__objc_data` | `0xb20` | `0xa88` | **`-0x98`** |
+| `__DATA_CONST.__objc_classlist` | `0xf8` | `0x98` | **`-0x60`** |
+| `__AUTH_CONST.__auth_got` | `0x27d0` | `0x2828` | **`+0x58`** |
+| `__TEXT.__swift5_protos` | `0x78` | `0x24` | **`-0x54`** |
+| `__TEXT.__swift_as_entry` | `0x70` | `0x38` | **`-0x38`** |
+| `__TEXT.__swift_as_ret` | `0x54` | `0x28` | **`-0x2c`** |
+
+### Other Changes
+
 ```diff
 
 -499.1.0.0.0
--  __TEXT.__text: 0x3a64d8
 +509.4.2.0.0
-+  __TEXT.__text: 0x15475c
-   __TEXT.__objc_methlist: 0x150c
--  __TEXT.__const: 0x7cac4
--  __TEXT.__cstring: 0x7437
--  __TEXT.__swift5_typeref: 0x1a960
--  __TEXT.__constg_swiftt: 0xcccc
--  __TEXT.__swift5_reflstr: 0xa38f
--  __TEXT.__swift5_fieldmd: 0x10018
--  __TEXT.__swift5_builtin: 0x44c
--  __TEXT.__swift5_assocty: 0x2500
--  __TEXT.__swift5_proto: 0x452c
--  __TEXT.__swift5_types: 0x11e4
--  __TEXT.__swift5_capture: 0x2964
--  __TEXT.__swift5_mpenum: 0x948
--  __TEXT.__swift5_protos: 0x78
--  __TEXT.__swift_as_entry: 0x70
--  __TEXT.__swift_as_ret: 0x54
--  __TEXT.__swift_as_cont: 0x118
--  __TEXT.__oslogstring: 0x17ff
--  __TEXT.__unwind_info: 0x14918
--  __TEXT.__eh_frame: 0x10180
-+  __TEXT.__const: 0xdc74
-+  __TEXT.__constg_swiftt: 0x4a7c
-+  __TEXT.__swift5_typeref: 0xefb4
-+  __TEXT.__swift5_builtin: 0x140
-+  __TEXT.__swift5_reflstr: 0x2bb3
-+  __TEXT.__swift5_fieldmd: 0x2ec0
-+  __TEXT.__swift5_assocty: 0x1190
-+  __TEXT.__swift5_capture: 0x186c
-+  __TEXT.__oslogstring: 0x1705
-+  __TEXT.__swift5_proto: 0x58c
-+  __TEXT.__swift5_types: 0x3a4
-+  __TEXT.__cstring: 0x1a57
-+  __TEXT.__swift5_protos: 0x24
-+  __TEXT.__swift5_mpenum: 0x20
-+  __TEXT.__swift_as_entry: 0x38
-+  __TEXT.__swift_as_ret: 0x28
-+  __TEXT.__swift_as_cont: 0x64
-+  __TEXT.__unwind_info: 0x5d28
-+  __TEXT.__eh_frame: 0x2060
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1498
--  __DATA_CONST.__objc_classlist: 0xf8
-+  __DATA_CONST.__const: 0xcc0
-+  __DATA_CONST.__objc_classlist: 0x98
-   __DATA_CONST.__objc_protolist: 0x1c0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x12d8
-+  __DATA_CONST.__objc_selrefs: 0x1238
-   __DATA_CONST.__objc_protorefs: 0xe0
--  __DATA_CONST.__got: 0x11d0
--  __AUTH_CONST.__const: 0x2b010
--  __AUTH_CONST.__objc_const: 0x3330
--  __AUTH_CONST.__auth_got: 0x27d0
--  __AUTH.__objc_data: 0xb20
--  __AUTH.__data: 0x4de0
--  __DATA.__data: 0x13898
--  __DATA.__common: 0x480
-+  __DATA_CONST.__got: 0x1050
-+  __AUTH_CONST.__const: 0x6970
-+  __AUTH_CONST.__objc_const: 0x2800
-+  __AUTH_CONST.__auth_got: 0x2828
-+  __AUTH.__objc_data: 0xa88
-+  __AUTH.__data: 0x4140
-+  __DATA.__data: 0x69a8
-+  __DATA.__common: 0x338
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreImage.framework/CoreImage
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/CoreText.framework/CoreText
--  - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
-   - /System/Library/Frameworks/DeveloperToolsSupport.framework/DeveloperToolsSupport
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
 
-   - /System/Library/PrivateFrameworks/AppPredictionClient.framework/AppPredictionClient
-   - /System/Library/PrivateFrameworks/AsyncAlgorithmsInternal.framework/AsyncAlgorithmsInternal
-   - /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard
+-  - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
+
 +  - /System/Library/PrivateFrameworks/CarPlayAsset.framework/CarPlayAsset
-   - /System/Library/PrivateFrameworks/ChronoServices.framework/ChronoServices
-   - /System/Library/PrivateFrameworks/ChronoUIServices.framework/ChronoUIServices
+
 -  - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
+
 -  - /System/Library/PrivateFrameworks/ReflectionInternal.framework/ReflectionInternal
 -  - /System/Library/PrivateFrameworks/RuntimeInternal.framework/RuntimeInternal
-   - /System/Library/PrivateFrameworks/SpringBoardHome.framework/SpringBoardHome
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-   - /usr/lib/libSystem.B.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 26680
--  Symbols:   72466
+-  Symbols:   72193
 -  CStrings:  1081
 +  Functions: 7951
-+  Symbols:   19322
++  Symbols:   19069
 +  CStrings:  262
- 
 Symbols:
 + _$s10Foundation3URLV12CarPlayAssetE7poppingyACSiF
 + _$s10Foundation4DataV12CarPlayAssetE4sha1SSyF
@@ -3627,7 +3576,6 @@ Symbols:
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAA15ModifiedContentVyAHyAHyAHyAHyAHyAHyAHyAA6ZStackVyAA7ForEachVySay12CarPlayAsset4ZoneVGAM11TaggedValueVyAOSSGAHyAHyAHyAHyAHy0mnoB00pC0VAA30_EnvironmentKeyWritingModifierVyARyAM6LayoutVSSGSgGGAA06_FrameW0VGAA09_PositionW0VGAT018DirectionalPaddingV033_7B51074619E88F9A5374CB07EC116614LLVyAOGGAA01_st9TransformV0VySbGGGSgGAA08_OverlayV0VyAT08TrackingC0VGGA22_yAT018AppearanceTrackingC0VGGA4_GAA011_BackgroundV0VyAT20PhaseFadingWallpaper33_CBECB6783AF347936C78B960D9765265LLVyAHyAHyAHyAJyAA05TupleI0VyAA5ColorV_AJyA38_yAHyAHyAHyAHyAA03AnyC0VAA14_OpacityEffectVGAA17_SaturationEffectVGAA12_ScaleEffectVGAA11_BlurEffectVG_AHyAHyA40_AT017VisibilityOutcomeV0VGA44_GSgQPGGSgQPGGSgA4_GA50_GA7_GGGGAA11_ClipEffectVyAA9RectangleVGGAT013DCATransitionsV0VGAT015UIConfigurationsV0VGAT0w4ModesV0VG_SayAO0P6RegionOGQo_HO
 + _keypath_set.21Tm
 + _keypath_set.40Tm
-+ _objc_msgSend$initWithRed:green:blue:alpha:
 + _swift_isUniquelyReferenced_nonNull
 + _swift_release_x12
 + _swift_unknownObjectRetain_n
@@ -57887,27 +57835,6 @@ Symbols:
 - _kCFBundleVersionKey
 - _keypath_get_selector_preferredFilename
 - _memcmp
-- _objc_msgSend$URLForResource:withExtension:
-- _objc_msgSend$addFileWrapper:
-- _objc_msgSend$addRegularFileWithContents:preferredFilename:
-- _objc_msgSend$bundleURL
-- _objc_msgSend$createDirectoryAtURL:withIntermediateDirectories:attributes:error:
-- _objc_msgSend$initRegularFileWithContents:
-- _objc_msgSend$initWithPattern:options:error:
-- _objc_msgSend$isRegularFile
-- _objc_msgSend$isSymbolicLink
-- _objc_msgSend$lastPathComponent
-- _objc_msgSend$mainBundle
-- _objc_msgSend$matchesInString:options:range:
-- _objc_msgSend$pathComponents
-- _objc_msgSend$pathExtension
-- _objc_msgSend$range
-- _objc_msgSend$removeFileWrapper:
-- _objc_msgSend$stringByDeletingLastPathComponent
-- _objc_msgSend$stringByDeletingPathExtension
-- _objc_msgSend$stringByStandardizingPath
-- _objc_msgSend$symbolicLinkDestinationURL
-- _objc_msgSend$writeToURL:options:originalContentsURL:error:
 - _objc_release_x2
 - _objc_release_x3
 - _objc_retain_x10

@@ -2,13 +2,16 @@
 
 > `/System/Library/DoNotDisturb/ClientBundles/com.apple.donotdisturb.private.smart-trigger.bundle/com.apple.donotdisturb.private.smart-trigger`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x68` | `0x60` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__text: 0x0
--  __TEXT.__const: 0x68
-+  __TEXT.__const: 0x60
-   - /usr/lib/libSystem.B.dylib
-   Functions: 0
-   Symbols:   2
-
+-502.0.100.0.0
++506.0.0.0.0
 ```

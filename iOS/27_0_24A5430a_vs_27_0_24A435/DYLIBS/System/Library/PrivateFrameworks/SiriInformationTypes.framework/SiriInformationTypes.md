@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/SiriInformationTypes.framework/SiriInformationTypes`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4da2c` | `0x4da4c` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xb50` | `0xb58` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 3600.38.8.11.2
--  __TEXT.__text: 0x4da2c
-+  __TEXT.__text: 0x4da4c
-   __TEXT.__objc_methlist: 0x888
-   __TEXT.__const: 0x46e60
-   __TEXT.__cstring: 0x1319
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x1360
-   __AUTH_CONST.__objc_const: 0x1b08
--  __AUTH_CONST.__auth_got: 0xb50
-+  __AUTH_CONST.__auth_got: 0xb58
-   __AUTH.__objc_data: 0x360
-   __AUTH.__data: 0xb8
-   __DATA.__data: 0x750
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 1960
--  Symbols:   5022
-+  Symbols:   5023
-   CStrings:  201
- 
+-  Symbols:   4977
++  Symbols:   4978
 Symbols:
 + _swift_release_x25
 Functions:

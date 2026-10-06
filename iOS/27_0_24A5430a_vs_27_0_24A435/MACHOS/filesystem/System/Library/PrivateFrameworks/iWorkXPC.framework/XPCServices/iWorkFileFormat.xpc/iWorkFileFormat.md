@@ -2,37 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/iWorkXPC.framework/XPCServices/iWorkFileFormat.xpc/iWorkFileFormat`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x163584` | `0x1635c4` | **`+0x40`** |
+| `__TEXT.__gcc_except_tab` | `0xcc70` | `0xcc74` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__const`
+- `__TEXT.__init_offsets`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 31.0.0.0.0
--  __TEXT.__text: 0x163584
-+  __TEXT.__text: 0x1635c4
-   __TEXT.__auth_stubs: 0x18e0
-   __TEXT.__objc_stubs: 0x90c0
-   __TEXT.__init_offsets: 0x40
-
-   __TEXT.__objc_classname: 0xf0a
-   __TEXT.__objc_methname: 0xe53e
-   __TEXT.__objc_methtype: 0x28a5
--  __TEXT.__gcc_except_tab: 0xcc70
-+  __TEXT.__gcc_except_tab: 0xcc74
-   __TEXT.__cstring: 0x1344e
-   __TEXT.__oslogstring: 0x66f7
-   __TEXT.__ustring: 0x76
+```text
 Functions:
 ~ sub_1000705e4 : 284 -> 288
 ~ sub_1000709d4 -> sub_1000709d8 : 488 -> 484

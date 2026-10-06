@@ -2,14 +2,16 @@
 
 > `/System/Library/Frameworks/UIKit.framework/UIKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x38` | `0x40` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -9127.1.7.1.0
 +9127.1.12.1.101
-   __TEXT.__text: 0x0
--  __TEXT.__const: 0x38
-+  __TEXT.__const: 0x40
-   - /System/Library/Frameworks/FileProvider.framework/FileProvider
-   - /System/Library/PrivateFrameworks/DocumentManager.framework/DocumentManager
-   - /System/Library/PrivateFrameworks/PrintKitUI.framework/PrintKitUI
 ```

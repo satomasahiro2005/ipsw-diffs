@@ -2,38 +2,21 @@
 
 > `/System/Library/PrivateFrameworks/BasebandTraceHelper.framework/BasebandTraceHelper`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5bbe4` | `0x5bb24` | **`-0xc0`** |
+| `__DATA.__data` | `0x348` | `0x2f8` | **`-0x50`** |
+| `__DATA_DIRTY.__data` | `0xd0` | `0x120` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x4ba8` | `0x4ba0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x5bbe4
-+  __TEXT.__text: 0x5bb24
-   __TEXT.__init_offsets: 0x38
-   __TEXT.__const: 0x2e10
--  __TEXT.__gcc_except_tab: 0x4ba8
-+  __TEXT.__gcc_except_tab: 0x4ba0
-   __TEXT.__oslogstring: 0x36a1
-   __TEXT.__cstring: 0x13ba
-   __TEXT.__unwind_info: 0x1ac0
-
-   __AUTH_CONST.__cfstring: 0x20
-   __AUTH_CONST.__weak_auth_got: 0x20
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__data: 0x348
-+  __DATA.__data: 0x2f8
-   __DATA.__bss: 0x108
--  __DATA_DIRTY.__data: 0xd0
-+  __DATA_DIRTY.__data: 0x120
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-Sections:
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
+-1570.0.0.0.0
++1576.0.0.0.0
 Functions:
 ~ __ZN3abm5trace18TraceChannelReader18unregisterConsumerENSt3__110shared_ptrINS0_17TraceDataConsumerEEE : 516 -> 500
 ~ __ZN3abm5trace18TraceChannelReader24unregisterConsumerByNameERKNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE : 672 -> 684
@@ -48,5 +31,4 @@ Functions:
 ~ __ZNSt3__111basic_regexIcNS_12regex_traitsIcEEE24__parse_collating_symbolINS_11__wrap_iterIPKcEEEET_S9_S9_RNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE : 240 -> 232
 ~ __ZN3abm5trace31extractSettingsTypeFromFileNameERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE : 1016 -> 1032
 ~ __ZN9Timestamp9toISO8601ERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE : 1060 -> 1072
-
 ```

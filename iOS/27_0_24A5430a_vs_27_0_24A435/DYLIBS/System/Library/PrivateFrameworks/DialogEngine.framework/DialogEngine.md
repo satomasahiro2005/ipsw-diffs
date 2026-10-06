@@ -2,23 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/DialogEngine.framework/DialogEngine`
 
-```diff
+### Section Size Changes
 
- 3600.23.9.0.0
--  __TEXT.__text: 0x460ca0
-+  __TEXT.__text: 0x460d44
-   __TEXT.__init_offsets: 0x28
-   __TEXT.__objc_methlist: 0x33b4
-   __TEXT.__const: 0x1c888
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x460ca0` | `0x460d44` | **`+0xa4`** |
+| `__TEXT.__unwind_info` | `0x14318` | `0x14310` | **`-0x8`** |
 
-   __TEXT.__gcc_except_tab: 0x391e0
-   __TEXT.__oslogstring: 0x303
-   __TEXT.__ustring: 0xca
--  __TEXT.__unwind_info: 0x14318
-+  __TEXT.__unwind_info: 0x14310
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+### Other Changes
+
+```text
 Functions:
 ~ +[DEBundle frameworkInternalUserSettings] : 92 -> 76
 ~ __ZN4siri12dialogengine20ParseRequestFromJsonERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_S9_S9_ : 10568 -> 10500

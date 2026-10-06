@@ -2,101 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/FeedbackCore.framework/FeedbackCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x147ccc` | `0x148610` | **`+0x944`** |
+| `__TEXT.__lazy_helpers` | `—` | `0x2a0` | **`+0x2a0`** |
+| `__TEXT.__cstring` | `0xa388` | `0xa4c8` | **`+0x140`** |
+| `__AUTH_CONST.__objc_const` | `0x1da40` | `0x1db50` | **`+0x110`** |
+| `__TEXT.__objc_methlist` | `0xb89c` | `0xb91c` | **`+0x80`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7788` | `0x77e0` | **`+0x58`** |
+| `__AUTH_CONST.__lazy_load_got` | `—` | `0x40` | **`+0x40`** |
+| `__DATA_DIRTY.__data` | `0xe38` | `0xe68` | **`+0x30`** |
+| `__TEXT.__eh_frame` | `0x1390` | `0x1360` | **`-0x30`** |
+| `__TEXT.__constg_swiftt` | `0x1f98` | `0x1fc0` | **`+0x28`** |
+| `__TEXT.__const` | `0x3a64` | `0x3a44` | **`-0x20`** |
+| `__TEXT.__swift5_reflstr` | `0xd00` | `0xd1b` | **`+0x1b`** |
+| `__DATA.__objc_ivar` | `0x71c` | `0x730` | **`+0x14`** |
+| `__DATA_CONST.__got` | `0x1208` | `0x11f8` | **`-0x10`** |
+| `__DATA.__data` | `0x2d90` | `0x2d84` | **`-0xc`** |
+| `__TEXT.__swift5_fieldmd` | `0xe98` | `0xea4` | **`+0xc`** |
+| `__TEXT.__swift5_typeref` | `0x3ecc` | `0x3ec2` | **`-0xa`** |
+| `__AUTH_CONST.__auth_got` | `0x1818` | `0x1810` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x4d98` | `0x4d90` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -232.0.0.0.0
--  __TEXT.__text: 0x147ccc
--  __TEXT.__objc_methlist: 0xb89c
--  __TEXT.__const: 0x3a64
--  __TEXT.__cstring: 0xa388
 +235.0.0.0.0
-+  __TEXT.__text: 0x148610
-+  __TEXT.__lazy_helpers: 0x2a0
-+  __TEXT.__objc_methlist: 0xb91c
-+  __TEXT.__const: 0x3a44
-+  __TEXT.__cstring: 0xa4c8
-   __TEXT.__oslogstring: 0xb006
-   __TEXT.__ustring: 0xe6
-   __TEXT.__gcc_except_tab: 0x15f0
-   __TEXT.__dlopen_cstrs: 0x62
--  __TEXT.__constg_swiftt: 0x1f98
--  __TEXT.__swift5_typeref: 0x3ecc
-+  __TEXT.__constg_swiftt: 0x1fc0
-+  __TEXT.__swift5_typeref: 0x3ec2
-   __TEXT.__swift5_builtin: 0xdc
--  __TEXT.__swift5_reflstr: 0xd00
--  __TEXT.__swift5_fieldmd: 0xe98
-+  __TEXT.__swift5_reflstr: 0xd1b
-+  __TEXT.__swift5_fieldmd: 0xea4
-   __TEXT.__swift5_assocty: 0x2b8
-   __TEXT.__swift5_proto: 0x174
-   __TEXT.__swift5_types: 0x154
 
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x24
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__unwind_info: 0x4d98
--  __TEXT.__eh_frame: 0x1390
-+  __TEXT.__unwind_info: 0x4d90
-+  __TEXT.__eh_frame: 0x1360
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_catlist: 0xc0
-   __DATA_CONST.__objc_protolist: 0x238
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7788
-+  __DATA_CONST.__objc_selrefs: 0x77e0
-   __DATA_CONST.__objc_protorefs: 0x98
-   __DATA_CONST.__objc_superrefs: 0x278
-   __DATA_CONST.__objc_arraydata: 0x580
--  __DATA_CONST.__got: 0x1208
-+  __DATA_CONST.__got: 0x11f8
-   __AUTH_CONST.__const: 0x49a0
-   __AUTH_CONST.__cfstring: 0x9200
--  __AUTH_CONST.__objc_const: 0x1da40
-+  __AUTH_CONST.__objc_const: 0x1db50
-+  __AUTH_CONST.__lazy_load_got: 0x40
-   __AUTH_CONST.__objc_intobj: 0x318
-   __AUTH_CONST.__objc_dictobj: 0xa0
-   __AUTH_CONST.__objc_arrayobj: 0x4c8
--  __AUTH_CONST.__auth_got: 0x1818
-+  __AUTH_CONST.__auth_got: 0x1810
-   __AUTH.__objc_data: 0xbb0
-   __AUTH.__data: 0x1f8
--  __DATA.__objc_ivar: 0x71c
--  __DATA.__data: 0x2d90
-+  __DATA.__objc_ivar: 0x730
-+  __DATA.__data: 0x2d84
-   __DATA.__objc_stublist: 0x8
-   __DATA.__bss: 0x31d8
-   __DATA.__common: 0x120
-   __DATA_DIRTY.__objc_data: 0x4678
--  __DATA_DIRTY.__data: 0xe38
-+  __DATA_DIRTY.__data: 0xe68
-   __DATA_DIRTY.__bss: 0x1e0
-   __DATA_DIRTY.__common: 0x40
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit
-   - /System/Library/PrivateFrameworks/PersonaUI.framework/PersonaUI
-   - /System/Library/PrivateFrameworks/ShareSheet.framework/ShareSheet
 -  - /System/Library/PrivateFrameworks/SiriAppIntents.framework/SiriAppIntents
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-   - /usr/lib/libSystem.B.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7712
--  Symbols:   10369
+-  Symbols:   7435
 -  CStrings:  2627
 +  Functions: 7725
-+  Symbols:   10397
++  Symbols:   7452
 +  CStrings:  2632
- 
 Symbols:
 + -[FBKAttachmentManager initWithMatcherPredicates:pendingFileUrls:pendingExtensions:form:targetDevice:shouldGetSessionStatus:shouldCheckDeferredLogs:attachmentDescriptors:autoGathersDiagnosticExtensions:removesDeletedDEAttachments:]
 + -[FBKAttachmentManager isRemovingAllAttachments]
@@ -124,19 +68,6 @@ Symbols:
 + __dyld_lazy_load
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA6HStackVyAA05TupleD0VyACyACyAA4ViewPAAE10fontWeightyQrAA4FontV0I0VSgFQOyACyACyACyAA5ImageVAA24_ForegroundStyleModifierVyAA5ColorVGGAA18_AspectRatioLayoutVGAA06_FrameR0VG_Qo_AA08_PaddingR0VGAA013_TraitWritingN0VyAA010TransitionU3KeyVGGSg_ACyACyACyAA6VStackVyAGyAA4TextVSg_ACyAA09_VariadicG0O4TreeVy_AA01_R4RootVy12FeedbackCore013EvenWidthGridR0VGAA7ForEachVySaySo17FBKQuestionChoiceCGA31_ACyAiAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAiAE06toggleM0yQrqd__AA06ToggleM0Rd__lFQOyAA6ToggleVyACyA16_AA05_FlexsR0VGG_AA012ButtonToggleM0VQo__A31_Qo_A4_GGGA4_GQPGGA4_GA40_GA0_GQPGGA40_GAaHHPA57_AaHHPyHC_A40_AA0gN0HPyHCHC
 + _lazyLoadFlag$SiriAppIntents
-+ _objc_msgSend$applySnapshot:animatingDifferences:
-+ _objc_msgSend$clearSnapshotForModelTeardown
-+ _objc_msgSend$disableGatherAndSubmit
-+ _objc_msgSend$initWithCGImage:scale:orientation:
-+ _objc_msgSend$initWithDeviceManager:delegate:filerForm:pendingFileUrls:pendingURLExtensions:draftDeviceIds:attachmentDescriptors:autoGathersDiagnosticExtensions:removesDeletedDEAttachments:
-+ _objc_msgSend$initWithMatcherPredicates:pendingFileUrls:pendingExtensions:form:targetDevice:shouldGetSessionStatus:shouldCheckDeferredLogs:attachmentDescriptors:autoGathersDiagnosticExtensions:removesDeletedDEAttachments:
-+ _objc_msgSend$isRemovingAllAttachments
-+ _objc_msgSend$prepareImageForDescriptor:
-+ _objc_msgSend$removesDeletedDEAttachments
-+ _objc_msgSend$setDirectionalLayoutMargins:
-+ _objc_msgSend$setIsRemovingAllAttachments:
-+ _objc_msgSend$setRemovesDeletedDEAttachments:
-+ _objc_msgSend$setTableHeaderView:
 + _symbolic _____Sg______y_____y______y_____G_____ySaySo17FBKQuestionChoiceCGAjCy_____y_____y_____yACyAA_____GG______Qo__AJQo______GGGASGt 7SwiftUI4TextV AA15ModifiedContentV AA13_VariadicViewO4TreeV AA11_LayoutRootV 12FeedbackCore013EvenWidthGridI0V AA7ForEachV AA0G0PAAE3tag_15includeOptionalQrqd___SbtSHRd__lFQO ArAE11toggleStyleyQrqd__AA06ToggleV0Rd__lFQO AA0W0V AA010_FlexFrameI0V AA06ButtonwV0V AA08_PaddingI0V
 + _symbolic ______p s7CVarArgP
 + _symbolic _____yAAyAAy_____y_____y_____Sg_AAy_____y______y_____G_____ySaySo17FBKQuestionChoiceCGAlAy_____y_____y_____yAAyAD_____GG______Qo__ALQo______GGGAUGQPGGAUGAOG_____G 7SwiftUI15ModifiedContentV AA6VStackV AA05TupleD0V AA4TextV AA13_VariadicViewO4TreeV AA11_LayoutRootV 12FeedbackCore013EvenWidthGridK0V AA7ForEachV AA0I0PAAE3tag_15includeOptionalQrqd___SbtSHRd__lFQO AvAE11toggleStyleyQrqd__AA06ToggleX0Rd__lFQO AA0Y0V AA010_FlexFrameK0V AA06ButtonyX0V AA08_PaddingK0V AA06_FrameK0V
@@ -154,8 +85,6 @@ Symbols:
 - ___203-[FBKAttachmentManager initWithMatcherPredicates:pendingFileUrls:pendingExtensions:form:targetDevice:shouldGetSessionStatus:shouldCheckDeferredLogs:attachmentDescriptors:autoGathersDiagnosticExtensions:]_block_invoke
 - ___block_descriptor_98_e8_32s40s48s56s64s72s80s88s_e32_v24?0"NSDictionary"8"NSSet"16ls32l8s40l8s48l8s56l8s64l8s72l8s80l8s88l8
 - _get_witness_table 7SwiftUI15ModifiedContentVyAA6HStackVyAA05TupleD0VyACyACyAA4ViewPAAE10fontWeightyQrAA4FontV0I0VSgFQOyACyACyACyAA5ImageVAA24_ForegroundStyleModifierVyAA5ColorVGGAA18_AspectRatioLayoutVGAA06_FrameR0VG_Qo_AA08_PaddingR0VGAA013_TraitWritingN0VyAA010TransitionU3KeyVGGSg_ACyACyACyAA6VStackVyAGyAA4TextV_ACyAA09_VariadicG0O4TreeVy_AA01_R4RootVy12FeedbackCore013EvenWidthGridR0VGAA7ForEachVySaySo17FBKQuestionChoiceCGA30_ACyAiAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAiAE06toggleM0yQrqd__AA06ToggleM0Rd__lFQOyAA6ToggleVyACyA16_AA05_FlexsR0VGG_AA012ButtonToggleM0VQo__A30_Qo_A4_GGGA4_GQPGGA4_GA39_GA0_GQPGGA39_GAaHHPA56_AaHHPyHC_A39_AA0gN0HPyHCHC
-- _objc_msgSend$initWithDeviceManager:delegate:filerForm:pendingFileUrls:pendingURLExtensions:draftDeviceIds:attachmentDescriptors:autoGathersDiagnosticExtensions:
-- _objc_msgSend$initWithMatcherPredicates:pendingFileUrls:pendingExtensions:form:targetDevice:shouldGetSessionStatus:shouldCheckDeferredLogs:attachmentDescriptors:autoGathersDiagnosticExtensions:
 - _symbolic _____Sg 14SiriAppIntents0A10TrajectoryO17RedactionCategoryO
 - _symbolic ___________y_____y______y_____G_____ySaySo17FBKQuestionChoiceCGAiBy_____y_____y_____yAByAA_____GG______Qo__AIQo______GGGARGt 7SwiftUI4TextV AA15ModifiedContentV AA13_VariadicViewO4TreeV AA11_LayoutRootV 12FeedbackCore013EvenWidthGridI0V AA7ForEachV AA0G0PAAE3tag_15includeOptionalQrqd___SbtSHRd__lFQO ArAE11toggleStyleyQrqd__AA06ToggleV0Rd__lFQO AA0W0V AA010_FlexFrameI0V AA06ButtonwV0V AA08_PaddingI0V
 - _symbolic _____yAAyAAy_____y_____y______AAy_____y______y_____G_____ySaySo17FBKQuestionChoiceCGAkAy_____y_____y_____yAAyAD_____GG______Qo__AKQo______GGGATGQPGGATGANG_____G 7SwiftUI15ModifiedContentV AA6VStackV AA05TupleD0V AA4TextV AA13_VariadicViewO4TreeV AA11_LayoutRootV 12FeedbackCore013EvenWidthGridK0V AA7ForEachV AA0I0PAAE3tag_15includeOptionalQrqd___SbtSHRd__lFQO AvAE11toggleStyleyQrqd__AA06ToggleX0Rd__lFQO AA0Y0V AA010_FlexFrameK0V AA06ButtonyX0V AA08_PaddingK0V AA06_FrameK0V

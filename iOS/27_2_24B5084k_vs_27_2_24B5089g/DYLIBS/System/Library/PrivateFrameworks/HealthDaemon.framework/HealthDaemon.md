@@ -2,108 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/HealthDaemon.framework/HealthDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd24938` | `0xd25e84` | **`+0x154c`** |
+| `__DATA.__bss` | `0x9a20` | `0x9320` | **`-0x700`** |
+| `__DATA_DIRTY.__bss` | `0x2178` | `0x2878` | **`+0x700`** |
+| `__DATA_DIRTY.__data` | `0x40b0` | `0x4570` | **`+0x4c0`** |
+| `__AUTH.__data` | `0x21e0` | `0x1ee0` | **`-0x300`** |
+| `__TEXT.__cstring` | `0x8e8b8` | `0x8eb4d` | **`+0x295`** |
+| `__AUTH_CONST.__cfstring` | `0x41d40` | `0x41fa0` | **`+0x260`** |
+| `__AUTH.__objc_data` | `0x9eb8` | `0x9cd8` | **`-0x1e0`** |
+| `__DATA_DIRTY.__objc_data` | `0x14980` | `0x14b60` | **`+0x1e0`** |
+| `__DATA.__data` | `0x9ff8` | `0x9e78` | **`-0x180`** |
+| `__DATA_CONST.__const` | `0x1e1a0` | `0x1e288` | **`+0xe8`** |
+| `__TEXT.__gcc_except_tab` | `0x7b410` | `0x7b348` | **`-0xc8`** |
+| `__TEXT.__objc_methlist` | `0x4a024` | `0x4a0d4` | **`+0xb0`** |
+| `__TEXT.__oslogstring` | `0x4b316` | `0x4b3ac` | **`+0x96`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1c400` | `0x1c470` | **`+0x70`** |
+| `__AUTH_CONST.__objc_const` | `0x89770` | `0x897c0` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x309f8` | `0x30a48` | **`+0x50`** |
+| `__AUTH_CONST.__const` | `0x2a350` | `0x2a390` | **`+0x40`** |
+| `__TEXT.__eh_frame` | `0x78c8` | `0x7900` | **`+0x38`** |
+| `__DATA.__common` | `0x2f8` | `0x2d0` | **`-0x28`** |
+| `__DATA_DIRTY.__common` | `0x168` | `0x190` | **`+0x28`** |
+| `__DATA_CONST.__objc_arraydata` | `0x89f0` | `0x8a10` | **`+0x20`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x21a8` | `0x21c0` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x3f18` | `0x3f20` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x60c0` | `0x60c8` | **`+0x8`** |
+| `__DATA_CONST.__objc_catlist` | `0x530` | `0x538` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x48ac` | `0x48a8` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.36.2.7
--  __TEXT.__text: 0xcf32cc
--  __TEXT.__objc_methlist: 0x4a024
 +7027.1.45.2.4
-+  __TEXT.__text: 0xcf47b0
-+  __TEXT.__objc_methlist: 0x4a0d4
-   __TEXT.__const: 0x73ce0
-   __TEXT.__dlopen_cstrs: 0x15b
--  __TEXT.__cstring: 0x8e8b8
-+  __TEXT.__cstring: 0x8eb4d
-   __TEXT.__swift5_typeref: 0x4fc3
-   __TEXT.__swift5_capture: 0x25c0
-   __TEXT.__constg_swiftt: 0x4a00
 
-   __TEXT.__swift5_assocty: 0xb80
-   __TEXT.__swift5_proto: 0x67c
-   __TEXT.__swift5_types: 0x408
--  __TEXT.__oslogstring: 0x4b316
-+  __TEXT.__oslogstring: 0x4b3ac
-   __TEXT.__swift5_mpenum: 0x30
-   __TEXT.__swift5_protos: 0xe8
-   __TEXT.__swift_as_entry: 0x74
-   __TEXT.__swift_as_ret: 0x5c
-   __TEXT.__swift_as_cont: 0x90
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__gcc_except_tab: 0x7b410
-+  __TEXT.__gcc_except_tab: 0x7b348
-   __TEXT.__ustring: 0x70
--  __TEXT.__unwind_info: 0x36658
--  __TEXT.__eh_frame: 0x78d8
-+  __TEXT.__unwind_info: 0x366b8
-+  __TEXT.__eh_frame: 0x7910
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1e1a0
-+  __DATA_CONST.__const: 0x1e288
-   __DATA_CONST.__objc_classlist: 0x2de0
--  __DATA_CONST.__objc_catlist: 0x530
-+  __DATA_CONST.__objc_catlist: 0x538
-   __DATA_CONST.__objc_protolist: 0xb90
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x18
--  __DATA_CONST.__objc_selrefs: 0x1c400
-+  __DATA_CONST.__objc_selrefs: 0x1c470
-   __DATA_CONST.__objc_protorefs: 0x320
-   __DATA_CONST.__objc_superrefs: 0x1f00
--  __DATA_CONST.__objc_arraydata: 0x89f0
--  __DATA_CONST.__got: 0x60c0
--  __AUTH_CONST.__const: 0x2a350
--  __AUTH_CONST.__cfstring: 0x41d40
--  __AUTH_CONST.__objc_const: 0x89770
-+  __DATA_CONST.__objc_arraydata: 0x8a10
-+  __DATA_CONST.__got: 0x60c8
-+  __AUTH_CONST.__const: 0x2a390
-+  __AUTH_CONST.__cfstring: 0x41fa0
-+  __AUTH_CONST.__objc_const: 0x897c0
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__objc_dictobj: 0x168
-   __AUTH_CONST.__objc_intobj: 0x3ed0
--  __AUTH_CONST.__objc_arrayobj: 0x21a8
-+  __AUTH_CONST.__objc_arrayobj: 0x21c0
-   __AUTH_CONST.__objc_doubleobj: 0x3c0
--  __AUTH_CONST.__auth_got: 0x3f18
--  __AUTH.__objc_data: 0x9eb8
--  __AUTH.__data: 0x21e0
--  __DATA.__objc_ivar: 0x48ac
--  __DATA.__data: 0x9ff8
--  __DATA.__common: 0x2f8
-+  __AUTH_CONST.__auth_got: 0x3f20
-+  __AUTH.__objc_data: 0x9cd8
-+  __AUTH.__data: 0x1ee0
-+  __DATA.__objc_ivar: 0x48a8
-+  __DATA.__data: 0x9e78
-+  __DATA.__common: 0x2d0
-   __DATA_DIRTY.__objc_ivar: 0xe80
--  __DATA_DIRTY.__objc_data: 0x14980
--  __DATA_DIRTY.__data: 0x40b0
--  __DATA_DIRTY.__bss: 0x2178
--  __DATA_DIRTY.__common: 0x168
-+  __DATA_DIRTY.__objc_data: 0x14b60
-+  __DATA_DIRTY.__data: 0x4570
-+  __DATA_DIRTY.__bss: 0x2878
-+  __DATA_DIRTY.__common: 0x190
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
-   - /System/Library/Frameworks/AddressBook.framework/AddressBook
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 52695
--  Symbols:   91542
+-  Symbols:   80391
 -  CStrings:  14740
 +  Functions: 52724
-+  Symbols:   91581
++  Symbols:   80421
 +  CStrings:  14765
- 
 Symbols:
 + +[HDDatabaseTransaction(PendingCommitStorage) hk_pendingCommitStorageKeyForOwner:suffix:]
 + +[NSThread(HKPendingCommitStorage) hk_existingPendingCommitStorageForKey:]
@@ -147,16 +90,6 @@ Symbols:
 + ___block_descriptor_40_e8_32s_e8_v16?08ls32l8
 + ___block_descriptor_48_e8_32s40s_e48_v16?0"HDDatabaseValueCacheTransactionStorage"8ls32l8s40l8
 + ___block_descriptor_56_e8_32s40s_e5_8?0ls32l8s40l8
-+ _objc_msgSend$_validateAndAddActivity:parentActivity:skipActivityTypeValidation:excludingActivityUUIDs:error:
-+ _objc_msgSend$appleIntelligenceEligibility
-+ _objc_msgSend$getAnswer:forDomain:error:
-+ _objc_msgSend$hk_accessPendingCommitStorageForKey:createIfNeeded:accessBlock:commitBlock:
-+ _objc_msgSend$hk_existingPendingCommitStorageForKey:
-+ _objc_msgSend$hk_pendingCommitStorageKeyForOwner:suffix:
-+ _objc_msgSend$setAppleIntelligenceEligibility:
-+ _objc_msgSend$setHasAppleIntelligenceEligibility:
-+ _objc_msgSend$updateAppleIntelligenceEligibility:
-+ _objc_msgSend$updateAppleIntelligenceEligibilityWithDataSource:
 - -[HDDatabaseValueCache _storageForTransaction:createIfNecessary:]
 - -[HDWorkoutBuilderServer _isActivityDateOverlapping:endDate:error:]
 - -[HDWorkoutBuilderServer _validateAndAddActivity:parentActivity:skipActivityTypeValidation:error:]
@@ -169,7 +102,6 @@ Symbols:
 - ___65-[HDDatabaseValueCache _storageForTransaction:createIfNecessary:]_block_invoke
 - ___65-[HDDatabaseValueCache _storageForTransaction:createIfNecessary:]_block_invoke_2
 - ___block_descriptor_64_e8_32s40s48s56r_e9_B16?0^8ls32l8s40l8s48l8r56l8
-- _objc_msgSend$_validateAndAddActivity:parentActivity:skipActivityTypeValidation:error:
 CStrings:
 + "%@.%@.%p"
 + "%{public}@: Failed to read Apple Intelligence eligibility: %{public}@"

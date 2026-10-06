@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/TSUtility.framework/TSUtility`
 
-```diff
+### Section Size Changes
 
- 778.0.0.0.0
--  __TEXT.__text: 0x57870
-+  __TEXT.__text: 0x57894
-   __TEXT.__objc_methlist: 0x64ac
-   __TEXT.__const: 0x578
-   __TEXT.__cstring: 0xb8e3
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x57870` | `0x57894` | **`+0x24`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _TSUDurationFormatterStringFromTimeIntervalWithFormatAndRoundingAndSingularOption : 3164 -> 3168
 ~ +[TSUPathSet(Private) parseNumberOutOfBasename:hasNumber:number:] : 300 -> 308

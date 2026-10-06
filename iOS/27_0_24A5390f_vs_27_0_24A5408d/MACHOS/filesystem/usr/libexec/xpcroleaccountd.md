@@ -2,28 +2,27 @@
 
 > `/usr/libexec/xpcroleaccountd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA.__objc_selrefs`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x417` | `0x421` | **`+0xa`** |
+| `__TEXT.__const` | `0x98` | `0xa0` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -3298.0.21.0.0
 +3298.0.26.502.1
-   __TEXT.__text: 0x2238
-   __TEXT.__auth_stubs: 0x640
-   __TEXT.__objc_stubs: 0x40
--  __TEXT.__const: 0x98
--  __TEXT.__cstring: 0x417
-+  __TEXT.__const: 0xa0
-+  __TEXT.__cstring: 0x421
-   __TEXT.__gcc_except_tab: 0x68
-   __TEXT.__oslogstring: 0x85d
-   __TEXT.__objc_methname: 0x2a
 CStrings:
 + "@(#)VERSION:Darwin Role Account Bootstrapper Version 1.0.0: Wed Aug  5 00:09:39 PDT 2026; root:libxpc_executables-3298.0.26.502.1~2/xpcroleaccountd/RELEASE_ARM64E"
 + "Darwin Role Account Bootstrapper Version 1.0.0: Wed Aug  5 00:09:39 PDT 2026; root:libxpc_executables-3298.0.26.502.1~2/xpcroleaccountd/RELEASE_ARM64E"

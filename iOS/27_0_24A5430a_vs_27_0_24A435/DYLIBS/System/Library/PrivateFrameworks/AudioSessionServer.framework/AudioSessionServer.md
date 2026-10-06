@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AudioSessionServer.framework/AudioSessionServer`
 
-```diff
+### Section Size Changes
 
- 449.107.0.0.0
--  __TEXT.__text: 0x6f430
-+  __TEXT.__text: 0x6f484
-   __TEXT.__realtime: 0x49c
-   __TEXT.__objc_methlist: 0xc4c
-   __TEXT.__gcc_except_tab: 0xa638
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6f430` | `0x6f484` | **`+0x54`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN8nlohmann6detail9dtoa_impl36get_cached_power_for_binary_exponentEi : 184 -> 188
 ~ __ZNSt3__16vectorIPKvNS_9allocatorIS2_EEE6resizeEm : 284 -> 288

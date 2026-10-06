@@ -2,27 +2,24 @@
 
 > `/System/Library/AccessibilityBundles/SpringBoardUIServices.axbundle/SpringBoardUIServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__objc_methlist` | `0xb4c` | `0xb5c` | **`+0x10`** |
+| `__TEXT.__text` | `0x4ba4` | `0x4bac` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3045.0.0.0.0
--  __TEXT.__text: 0x4ba4
--  __TEXT.__objc_methlist: 0xb4c
 +3048.0.0.0.0
-+  __TEXT.__text: 0x4bac
-+  __TEXT.__objc_methlist: 0xb5c
-   __TEXT.__const: 0x18
-   __TEXT.__gcc_except_tab: 0x80
-   __TEXT.__cstring: 0x116b
 
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 208
--  Symbols:   722
+-  Symbols:   619
 +  Functions: 209
-+  Symbols:   723
-   CStrings:  190
- 
++  Symbols:   620
 Symbols:
 + -[SBPasscodeNumberPadButtonAccessibility accessibilityValue]
 + GCC_except_table109

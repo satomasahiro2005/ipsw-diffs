@@ -2,14 +2,15 @@
 
 > `/System/Library/SubFrameworks/RealityFoundationCloth.framework/RealityFoundationCloth`
 
-```diff
+### Section Size Changes
 
- 453.2.1.0.0
--  __TEXT.__text: 0x1c7c4
-+  __TEXT.__text: 0x1c808
-   __TEXT.__objc_methlist: 0x244
-   __TEXT.__const: 0x2d88
-   __TEXT.__swift5_typeref: 0x950
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c7c4` | `0x1c808` | **`+0x44`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$sSDyx3key_q_5valuetSD5IndexVyxq__Gcig22RealityFoundationCloth0F19SimulationComponentV27FrictionOverridesCollectionV3KeyV_AJ5ValueVTg5Tm : 148 -> 152
 ~ _$s22RealityFoundationCloth0C19SimulationComponentV19frictionOverridesV3AC08Frictiong10CollectionH0Vvg : 780 -> 784

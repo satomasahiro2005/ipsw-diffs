@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/TranslationPersistence.framework/TranslationPersistence`
 
-```diff
+### Section Size Changes
 
- 389.1.0.0.0
--  __TEXT.__text: 0x1c460
-+  __TEXT.__text: 0x1c464
-   __TEXT.__objc_methlist: 0x158
-   __TEXT.__const: 0x1a40
-   __TEXT.__swift5_typeref: 0x68c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c460` | `0x1c464` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2b0c69188 -> sub_2b1a66188 : 836 -> 840
+~ sub_2b0b52188 -> sub_2b194f188 : 836 -> 840
 ```

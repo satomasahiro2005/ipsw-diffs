@@ -2,65 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/WatchListKit.framework/WatchListKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x66ba0` | `0x68394` | **`+0x17f4`** |
+| `__DATA_CONST.__const` | `0x27a0` | `0x29a8` | **`+0x208`** |
+| `__TEXT.__cstring` | `0x7dfa` | `0x7f44` | **`+0x14a`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3a20` | `0x3aa0` | **`+0x80`** |
+| `__TEXT.__oslogstring` | `0x6492` | `0x6506` | **`+0x74`** |
+| `__AUTH_CONST.__objc_const` | `0x11ce8` | `0x11d50` | **`+0x68`** |
+| `__AUTH_CONST.__cfstring` | `0xa6c0` | `0xa720` | **`+0x60`** |
+| `__TEXT.__objc_methlist` | `0x7174` | `0x71d4` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x1e00` | `0x1e58` | **`+0x58`** |
+| `__DATA.__objc_ivar` | `0xa4c` | `0xa54` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -952.0.1.0.0
--  __TEXT.__text: 0x646ec
--  __TEXT.__objc_methlist: 0x7174
 +952.10.6.0.0
-+  __TEXT.__text: 0x65e5c
-+  __TEXT.__objc_methlist: 0x71d4
-   __TEXT.__const: 0x1a4
--  __TEXT.__cstring: 0x7dfa
--  __TEXT.__oslogstring: 0x6492
-+  __TEXT.__cstring: 0x7f44
-+  __TEXT.__oslogstring: 0x6506
-   __TEXT.__gcc_except_tab: 0xf44
--  __TEXT.__unwind_info: 0x2568
-+  __TEXT.__unwind_info: 0x25d0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x27a0
-+  __DATA_CONST.__const: 0x29a8
-   __DATA_CONST.__objc_classlist: 0x560
-   __DATA_CONST.__objc_catlist: 0x50
-   __DATA_CONST.__objc_protolist: 0x98
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3a20
-+  __DATA_CONST.__objc_selrefs: 0x3aa0
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x4b0
-   __DATA_CONST.__objc_arraydata: 0x628
-   __DATA_CONST.__got: 0x908
-   __AUTH_CONST.__const: 0xea0
--  __AUTH_CONST.__cfstring: 0xa6c0
--  __AUTH_CONST.__objc_const: 0x11ce8
-+  __AUTH_CONST.__cfstring: 0xa720
-+  __AUTH_CONST.__objc_const: 0x11d50
-   __AUTH_CONST.__objc_intobj: 0x378
-   __AUTH_CONST.__objc_dictobj: 0x190
-   __AUTH_CONST.__objc_arrayobj: 0x78
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0x1810
--  __DATA.__objc_ivar: 0xa4c
-+  __DATA.__objc_ivar: 0xa54
-   __DATA.__data: 0x7a0
-   __DATA_DIRTY.__objc_data: 0x1db0
-   __DATA_DIRTY.__data: 0x8
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2784
--  Symbols:   6889
+-  Symbols:   5616
 -  CStrings:  1927
 +  Functions: 2812
-+  Symbols:   6931
++  Symbols:   5649
 +  CStrings:  1943
- 
 Symbols:
 + +[NSURL(WLKAdditions) _wlk_URLWithServerConfig:fullPath:endpoint:queryParameters:suppressParameterEncoding:ignoreUserLocation:]
 + +[NSURL(WLKAdditions) wlk_URLWithServerConfig:endpoint:baseURLString:queryParameters:suppressParameterEncoding:ignoreUserLocation:]
@@ -97,21 +66,8 @@ Symbols:
 + ___block_descriptor_64_e8_32s40s48s56bs_e22_v16?0"NSURLRequest"8ls32l8s40l8s56l8s48l8
 + ___block_descriptor_64_e8_32s40s48s56bs_e5_v8?0ls56l8s32l8s40l8s48l8
 + ___block_descriptor_72_e8_32s40s48bs_e30_v24?0"NSString"8"NSError"16ls48l8s32l8s40l8
-+ _objc_msgSend$URLRequestWithConfiguration:baseURLString:
-+ _objc_msgSend$_configURLStringWithCompletion:
-+ _objc_msgSend$_wlk_URLWithServerConfig:fullPath:endpoint:queryParameters:suppressParameterEncoding:ignoreUserLocation:
-+ _objc_msgSend$defaultBagV3
-+ _objc_msgSend$getConfigPathV3WithCompletion:
-+ _objc_msgSend$getMaxLocalSettingsAgeV3WithCompletion:
-+ _objc_msgSend$getNowPlayingEnabledV3WithCompletion:
-+ _objc_msgSend$getUTSBaseURLV3WithCompletion:
-+ _objc_msgSend$getWatchListSettingsURLsV3WithCompletion:
-+ _objc_msgSend$isSimpleProfile
-+ _objc_msgSend$wlk_URLWithServerConfig:endpoint:baseURLString:queryParameters:suppressParameterEncoding:ignoreUserLocation:
 - GCC_except_table36
 - GCC_except_table41
-- _objc_msgSend$URLRequestWithConfiguration:
-- _objc_msgSend$_configURLString:
 CStrings:
 + "%@: tricycle enabled but base URL could not be resolved from the V3 bag"
 + "-[WLKURLRequestProperties URLRequestWithConfiguration:baseURLString:]"

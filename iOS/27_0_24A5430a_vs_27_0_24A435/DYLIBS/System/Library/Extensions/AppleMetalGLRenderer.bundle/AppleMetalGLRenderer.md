@@ -2,14 +2,15 @@
 
 > `/System/Library/Extensions/AppleMetalGLRenderer.bundle/AppleMetalGLRenderer`
 
-```diff
+### Section Size Changes
 
- 105.0.0.0.0
--  __TEXT.__text: 0x183c0
-+  __TEXT.__text: 0x183dc
-   __TEXT.__objc_methlist: 0x20
-   __TEXT.__gcc_except_tab: 0x318
-   __TEXT.__const: 0x860
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x183c0` | `0x183dc` | **`+0x1c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN13GLDTextureRec16updateDescriptorEv : 1212 -> 1216
 ~ __ZN13GLDContextRec15bindVertexArrayEP17GLDVertexArrayRecyy : 616 -> 624

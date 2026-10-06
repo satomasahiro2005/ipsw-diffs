@@ -2,98 +2,59 @@
 
 > `/usr/libexec/modelmanagerd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_assocty`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1b4730` | `0x1b4d3c` | **`+0x60c`** |
+| `__TEXT.__auth_stubs` | `0x3da0` | `0x3e40` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x82d8` | `0x8260` | **`-0x78`** |
+| `__DATA_CONST.__auth_got` | `0x1ed8` | `0x1f28` | **`+0x50`** |
+| `__TEXT.__oslogstring` | `0x9e69` | `0x9e99` | **`+0x30`** |
+| `__TEXT.__swift5_capture` | `0x2504` | `0x24d4` | **`-0x30`** |
+| `__TEXT.__eh_frame` | `0x16514` | `0x164ec` | **`-0x28`** |
+| `__TEXT.__unwind_info` | `0x6c98` | `0x6cc0` | **`+0x28`** |
+| `__DATA.__data` | `0x6378` | `0x6398` | **`+0x20`** |
+| `__TEXT.__const` | `0x67b6` | `0x67d6` | **`+0x20`** |
+| `__DATA_CONST.__auth_ptr` | `0xd38` | `0xd50` | **`+0x18`** |
+| `__TEXT.__swift5_typeref` | `0x2861` | `0x2879` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0xf30` | `0xf40` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x25b3` | `0x25c3` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x21a8` | `0x21b4` | **`+0xc`** |
+| `__TEXT.__constg_swiftt` | `0x2d5c` | `0x2d64` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x121c` | `0x1218` | **`-0x4`** |
+| `__TEXT.__swift_as_ret` | `0xad0` | `0xacc` | **`-0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__bss`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_entry`
+
+### Other Changes
 
 ```diff
 
 -703.0.11.0.0
--  __TEXT.__text: 0x1b4730
--  __TEXT.__auth_stubs: 0x3da0
 +703.0.21.502.1
-+  __TEXT.__text: 0x1b4d3c
-+  __TEXT.__auth_stubs: 0x3e40
-   __TEXT.__objc_stubs: 0x700
-   __TEXT.__objc_methlist: 0x1c0
--  __TEXT.__const: 0x67b6
--  __TEXT.__swift5_typeref: 0x2861
-+  __TEXT.__const: 0x67d6
-+  __TEXT.__swift5_typeref: 0x2879
-   __TEXT.__cstring: 0x1f50
--  __TEXT.__swift5_capture: 0x2504
--  __TEXT.__oslogstring: 0x9e69
-+  __TEXT.__swift5_capture: 0x24d4
-+  __TEXT.__oslogstring: 0x9e99
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__constg_swiftt: 0x2d5c
-+  __TEXT.__constg_swiftt: 0x2d64
-   __TEXT.__swift5_builtin: 0x3c
--  __TEXT.__swift5_reflstr: 0x25b3
--  __TEXT.__swift5_fieldmd: 0x21a8
-+  __TEXT.__swift5_reflstr: 0x25c3
-+  __TEXT.__swift5_fieldmd: 0x21b4
-   __TEXT.__swift5_types: 0x1d4
-   __TEXT.__objc_classname: 0xb90
-   __TEXT.__objc_methname: 0x1933
-   __TEXT.__objc_methtype: 0x395
-   __TEXT.__swift_as_entry: 0x954
--  __TEXT.__swift_as_ret: 0xad0
--  __TEXT.__swift_as_cont: 0x121c
-+  __TEXT.__swift_as_ret: 0xacc
-+  __TEXT.__swift_as_cont: 0x1218
-   __TEXT.__swift5_proto: 0x318
-   __TEXT.__swift5_protos: 0x94
-   __TEXT.__swift5_assocty: 0x1b8
--  __TEXT.__unwind_info: 0x6c98
--  __TEXT.__eh_frame: 0x16514
--  __DATA_CONST.__const: 0x82d8
-+  __TEXT.__unwind_info: 0x6cc0
-+  __TEXT.__eh_frame: 0x164ec
-+  __DATA_CONST.__const: 0x8260
-   __DATA_CONST.__objc_classlist: 0x1c0
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x38
--  __DATA_CONST.__auth_got: 0x1ed8
--  __DATA_CONST.__got: 0xf30
--  __DATA_CONST.__auth_ptr: 0xd38
-+  __DATA_CONST.__auth_got: 0x1f28
-+  __DATA_CONST.__got: 0xf40
-+  __DATA_CONST.__auth_ptr: 0xd50
-   __DATA.__objc_const: 0x43f0
-   __DATA.__objc_selrefs: 0x2a0
-   __DATA.__objc_data: 0x700
--  __DATA.__data: 0x6378
-+  __DATA.__data: 0x6398
-   __DATA.__common: 0x640
-   __DATA.__bss: 0x52c0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_DarwinFoundation3.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9078
 -  Symbols:   1681
 -  CStrings:  1214
 +  Functions: 9074
 +  Symbols:   1696
 +  CStrings:  1215
- 
 Symbols:
 + _$s12ModelCatalog0B8ResourceP12resourceTypeSSvgTj
 + _$s20ModelManagerServices0aB5ErrorO027underlyingInferenceProviderD0SS6domain_Si4codetSgvg

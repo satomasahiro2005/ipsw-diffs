@@ -2,38 +2,25 @@
 
 > `/System/Library/PrivateFrameworks/SpeechDictionary.framework/SpeechDictionary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x66484` | `0x6375c` | **`-0x2d28`** |
+| `__TEXT.__cstring` | `0x10b8d` | `0xf808` | **`-0x1385`** |
+| `__TEXT.__gcc_except_tab` | `0x1be0` | `0x1bb8` | **`-0x28`** |
+| `__TEXT.__unwind_info` | `0xea0` | `0xe90` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x66484
--  __TEXT.__gcc_except_tab: 0x1be0
--  __TEXT.__cstring: 0x10b8d
-+  __TEXT.__text: 0x6375c
-+  __TEXT.__gcc_except_tab: 0x1bb8
-+  __TEXT.__cstring: 0xf808
-   __TEXT.__const: 0x5508
--  __TEXT.__unwind_info: 0xea0
-+  __TEXT.__unwind_info: 0xe90
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x10c50
-   __DATA_CONST.__weak_got: 0x10
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 854
--  Symbols:   2066
--  CStrings:  4501
+-  Symbols:   1340
+-  CStrings:  4483
 +  Functions: 849
-+  Symbols:   2055
-+  CStrings:  4485
- 
-Sections:
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA.__data : content changed
++  Symbols:   1331
++  CStrings:  4467
 Symbols:
 + GCC_except_table104
 + GCC_except_table113
@@ -237,5 +224,4 @@ CStrings:
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/list:838: libc++ Hardening assertion !empty() failed: list::back called on empty list\n"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:1362: libc++ Hardening assertion __pos <= size() failed: string index out of bounds\n"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:1371: libc++ Hardening assertion __pos <= size() failed: string index out of bounds\n"
-
 ```

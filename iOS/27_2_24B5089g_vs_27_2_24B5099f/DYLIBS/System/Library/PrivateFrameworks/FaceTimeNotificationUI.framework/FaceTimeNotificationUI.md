@@ -2,24 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/FaceTimeNotificationUI.framework/FaceTimeNotificationUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__eh_frame` | `0x2608` | `0x2630` | **`+0x28`** |
+| `__TEXT.__text` | `0xd33e4` | `0xd3408` | **`+0x24`** |
+| `__TEXT.__unwind_info` | `0x3058` | `0x3060` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3077.200.64.2.3
--  __TEXT.__text: 0xcde0c
 +3077.200.88.0.0
-+  __TEXT.__text: 0xcde30
-   __TEXT.__objc_methlist: 0x354
-   __TEXT.__const: 0xbab4
-   __TEXT.__constg_swiftt: 0x3a94
-
-   __TEXT.__swift5_protos: 0x3c
-   __TEXT.__lldbsummaries: 0x3f
-   __TEXT.__unwind_info: 0x3bd0
--  __TEXT.__eh_frame: 0x2610
-+  __TEXT.__eh_frame: 0x2638
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 Functions:
-~ sub_26344def4 -> sub_26270bef4 : 32 -> 68
+~ sub_2661329a4 -> sub_2654549a4 : 32 -> 68
 ```

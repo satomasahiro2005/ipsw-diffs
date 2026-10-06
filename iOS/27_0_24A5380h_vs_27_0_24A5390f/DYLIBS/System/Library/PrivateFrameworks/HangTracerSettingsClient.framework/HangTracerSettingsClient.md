@@ -2,99 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/HangTracerSettingsClient.framework/HangTracerSettingsClient`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_proto`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17278` | `0x18c3c` | **`+0x19c4`** |
+| `__TEXT.__oslogstring` | `0x60a` | `0xa2f` | **`+0x425`** |
+| `__AUTH_CONST.__objc_const` | `0x1670` | `0x1960` | **`+0x2f0`** |
+| `__TEXT.__cstring` | `0x31ce` | `0x3372` | **`+0x1a4`** |
+| `__TEXT.__objc_methlist` | `0xc94` | `0xd8c` | **`+0xf8`** |
+| `__AUTH.__objc_data` | `0x3c0` | `0x460` | **`+0xa0`** |
+| `__AUTH_CONST.__cfstring` | `0x3980` | `0x3900` | **`-0x80`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb60` | `0xbc8` | **`+0x68`** |
+| `__TEXT.__unwind_info` | `0x670` | `0x6d8` | **`+0x68`** |
+| `__DATA.__bss` | `0x36b0` | `0x3710` | **`+0x60`** |
+| `__DATA_CONST.__got` | `0x380` | `0x3d8` | **`+0x58`** |
+| `__DATA.__objc_ivar` | `0xdc` | `0x100` | **`+0x24`** |
+| `__AUTH_CONST.__auth_got` | `0x4b0` | `0x4d0` | **`+0x20`** |
+| `__TEXT.__const` | `0x20c2` | `0x20e2` | **`+0x20`** |
+| `__TEXT.__ustring` | `0x822` | `0x83c` | **`+0x1a`** |
+| `__DATA_CONST.__objc_classlist` | `0x68` | `0x78` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x50` | `0x60` | **`+0x10`** |
+
+### Other Changes
 
 ```diff
 
 -421.0.0.0.0
--  __TEXT.__text: 0x17278
--  __TEXT.__objc_methlist: 0xc94
--  __TEXT.__const: 0x20c2
--  __TEXT.__cstring: 0x31ce
 +424.0.0.0.0
-+  __TEXT.__text: 0x18c3c
-+  __TEXT.__objc_methlist: 0xd8c
-+  __TEXT.__const: 0x20e2
-+  __TEXT.__cstring: 0x3372
-   __TEXT.__gcc_except_tab: 0x1a8
--  __TEXT.__oslogstring: 0x60a
-+  __TEXT.__oslogstring: 0xa2f
-   __TEXT.__dlopen_cstrs: 0xaf
--  __TEXT.__ustring: 0x822
-+  __TEXT.__ustring: 0x83c
-   __TEXT.__swift5_typeref: 0x4c3
-   __TEXT.__swift5_reflstr: 0x45
-   __TEXT.__swift5_assocty: 0x6c0
 
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift5_proto: 0x194
-   __TEXT.__swift5_types: 0x3c
--  __TEXT.__unwind_info: 0x670
-+  __TEXT.__unwind_info: 0x6d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xdc8
--  __DATA_CONST.__objc_classlist: 0x68
-+  __DATA_CONST.__objc_classlist: 0x78
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb60
--  __DATA_CONST.__objc_superrefs: 0x50
-+  __DATA_CONST.__objc_selrefs: 0xbc8
-+  __DATA_CONST.__objc_superrefs: 0x60
-   __DATA_CONST.__objc_arraydata: 0x158
--  __DATA_CONST.__got: 0x380
-+  __DATA_CONST.__got: 0x3d8
-   __AUTH_CONST.__const: 0x608
--  __AUTH_CONST.__cfstring: 0x3980
--  __AUTH_CONST.__objc_const: 0x1670
-+  __AUTH_CONST.__cfstring: 0x3900
-+  __AUTH_CONST.__objc_const: 0x1960
-   __AUTH_CONST.__objc_intobj: 0xc0
-   __AUTH_CONST.__objc_arrayobj: 0x30
--  __AUTH_CONST.__auth_got: 0x4b0
--  __AUTH.__objc_data: 0x3c0
--  __DATA.__objc_ivar: 0xdc
-+  __AUTH_CONST.__auth_got: 0x4d0
-+  __AUTH.__objc_data: 0x460
-+  __DATA.__objc_ivar: 0x100
-   __DATA.__data: 0x6f8
--  __DATA.__bss: 0x36b0
-+  __DATA.__bss: 0x3710
-   __DATA_DIRTY.__objc_data: 0x50
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 806
--  Symbols:   1420
+-  Symbols:   1177
 -  CStrings:  589
 +  Functions: 851
-+  Symbols:   1513
++  Symbols:   1259
 +  CStrings:  617
- 
 Symbols:
 + +[HTPerformanceInformation informationWithExtendedAttribute:]
 + +[HTPerformanceInformation parseLostPerfIntervalsFromObject:]
@@ -179,18 +121,6 @@ Symbols:
 + _kHTLostPerfJSONKeyIntervals
 + _kHTLostPerfJSONKeyReason
 + _kHTLostPerfJSONKeyStartMATU
-+ _objc_msgSend$getMATUExtendedAttributeNamed:forFileAtPath:
-+ _objc_msgSend$hangWindow
-+ _objc_msgSend$informationWithExtendedAttribute:
-+ _objc_msgSend$initWithIntervalWindow:reason:
-+ _objc_msgSend$initWithLostPerfIntervals:
-+ _objc_msgSend$initWithPath:hangID:creationDate:duration:processBundleID:processPath:processRecord:isBoosted:isBeingProcessed:performanceInformation:hangWindow:sampleWindow:
-+ _objc_msgSend$intervalWindow
-+ _objc_msgSend$lostPerfIntervals
-+ _objc_msgSend$parseLostPerfIntervalsFromObject:
-+ _objc_msgSend$performanceInformation
-+ _objc_msgSend$reason
-+ _objc_msgSend$sampleWindow
 + _objc_retain_x26
 + _objc_retain_x28
 + _objc_retain_x4
@@ -199,7 +129,6 @@ Symbols:
 - ___72-[HTHangsDataFinder findEventsFilteringDeveloperApps:completionHandler:]_block_invoke_2
 - ___90-[HTHangsDataFinder initWithLogUpdateCallback:tailspinSavedCallback:tailspinDoneCallback:]_block_invoke_2
 - ___90-[HTHangsDataFinder initWithLogUpdateCallback:tailspinSavedCallback:tailspinDoneCallback:]_block_invoke_3
-- _objc_msgSend$initWithPath:hangID:creationDate:duration:processBundleID:processPath:processRecord:isBoosted:isBeingProcessed:
 - _objc_retain_x27
 CStrings:
 + "%@ – %@ (%@)"

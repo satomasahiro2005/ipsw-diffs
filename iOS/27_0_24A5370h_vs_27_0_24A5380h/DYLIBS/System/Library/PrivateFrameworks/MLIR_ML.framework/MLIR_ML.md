@@ -2,95 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/MLIR_ML.framework/MLIR_ML`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x395e9d0` | `0x39511a4` | **`-0xd82c`** |
+| `__TEXT.__cstring` | `0x17ac73` | `0x17bcbb` | **`+0x1048`** |
+| `__TEXT.__gcc_except_tab` | `0x1132e4` | `0x11416c` | **`+0xe88`** |
+| `__AUTH_CONST.__objc_const` | `0x1718` | `0x22b8` | **`+0xba0`** |
+| `__AUTH_CONST.__cfstring` | `0x9dc0` | `0xa340` | **`+0x580`** |
+| `__TEXT.__objc_methlist` | `0xaa8` | `0xff0` | **`+0x548`** |
+| `__TEXT.__unwind_info` | `0x99a80` | `0x99e58` | **`+0x3d8`** |
+| `__AUTH.__objc_data` | `0x460` | `0x730` | **`+0x2d0`** |
+| `__AUTH_CONST.__const` | `0xd04e0` | `0xd0690` | **`+0x1b0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4f8` | `0x698` | **`+0x1a0`** |
+| `__DATA.__data` | `0x46908` | `0x46a08` | **`+0x100`** |
+| `__AUTH_CONST.__objc_intobj` | `0x3a8` | `0x438` | **`+0x90`** |
+| `__TEXT.__const` | `0x15e24b` | `0x15e1bb` | **`-0x90`** |
+| `__DATA_CONST.__objc_arraydata` | `0xa58` | `0xae0` | **`+0x88`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x1848` | `0x18c0` | **`+0x78`** |
+| `__DATA.__objc_ivar` | `0xdc` | `0x14c` | **`+0x70`** |
+| `__DATA_CONST.__got` | `0x550` | `0x5b0` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x387d8` | `0x38820` | **`+0x48`** |
+| `__DATA_CONST.__objc_classlist` | `0x70` | `0xb8` | **`+0x48`** |
+| `__DATA_CONST.__objc_superrefs` | `0x70` | `0xb8` | **`+0x48`** |
+| `__TEXT.__eh_frame` | `0x2e98` | `0x2ed0` | **`+0x38`** |
+| `__AUTH.__data` | `0x79d8` | `0x7a08` | **`+0x30`** |
+| `__AUTH_CONST.__objc_dictobj` | `0x28` | `0x50` | **`+0x28`** |
+| `__DATA.__bss` | `0x280f8` | `0x28108` | **`+0x10`** |
+| `__DATA.__common` | `0x601c` | `0x6024` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x395e9d0
-+  __TEXT.__text: 0x39511a4
-   __TEXT.__init_offsets: 0x1bc
--  __TEXT.__objc_methlist: 0xaa8
--  __TEXT.__gcc_except_tab: 0x1132e4
--  __TEXT.__cstring: 0x17ac73
--  __TEXT.__const: 0x15e24b
--  __TEXT.__unwind_info: 0x99a80
--  __TEXT.__eh_frame: 0x2e98
-+  __TEXT.__objc_methlist: 0xff0
-+  __TEXT.__gcc_except_tab: 0x11416c
-+  __TEXT.__cstring: 0x17bcbb
-+  __TEXT.__const: 0x15e1bb
-+  __TEXT.__unwind_info: 0x99e58
-+  __TEXT.__eh_frame: 0x2ed0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x387d8
--  __DATA_CONST.__objc_classlist: 0x70
-+  __DATA_CONST.__const: 0x38820
-+  __DATA_CONST.__objc_classlist: 0xb8
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x53b0
--  __DATA_CONST.__objc_selrefs: 0x4f8
--  __DATA_CONST.__objc_superrefs: 0x70
--  __DATA_CONST.__objc_arraydata: 0xa58
--  __DATA_CONST.__got: 0x550
--  __AUTH_CONST.__const: 0xd04e0
--  __AUTH_CONST.__cfstring: 0x9dc0
--  __AUTH_CONST.__objc_const: 0x1718
-+  __DATA_CONST.__objc_selrefs: 0x698
-+  __DATA_CONST.__objc_superrefs: 0xb8
-+  __DATA_CONST.__objc_arraydata: 0xae0
-+  __DATA_CONST.__got: 0x5b0
-+  __AUTH_CONST.__const: 0xd0690
-+  __AUTH_CONST.__cfstring: 0xa340
-+  __AUTH_CONST.__objc_const: 0x22b8
-   __AUTH_CONST.__weak_auth_got: 0xdb0
--  __AUTH_CONST.__objc_intobj: 0x3a8
--  __AUTH_CONST.__objc_arrayobj: 0x1848
--  __AUTH_CONST.__objc_dictobj: 0x28
-+  __AUTH_CONST.__objc_intobj: 0x438
-+  __AUTH_CONST.__objc_dictobj: 0x50
-+  __AUTH_CONST.__objc_arrayobj: 0x18c0
-   __AUTH_CONST.__auth_got: 0x1120
--  __AUTH.__objc_data: 0x460
--  __AUTH.__data: 0x79d8
-+  __AUTH.__objc_data: 0x730
-+  __AUTH.__data: 0x7a08
-   __AUTH.__thread_vars: 0x1f8
-   __AUTH.__thread_data: 0x8
-   __AUTH.__thread_bss: 0x330
--  __DATA.__objc_ivar: 0xdc
--  __DATA.__data: 0x46908
-+  __DATA.__objc_ivar: 0x14c
-+  __DATA.__data: 0x46a08
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x280f8
--  __DATA.__common: 0x601c
-+  __DATA.__bss: 0x28108
-+  __DATA.__common: 0x6024
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+-7.0.72.0.0
++7.0.75.1.0
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 201332
--  Symbols:   445131
--  CStrings:  43007
+-  Symbols:   236724
+-  CStrings:  41746
 +  Functions: 201573
-+  Symbols:   445966
-+  CStrings:  43141
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__thread_vars : content changed
++  Symbols:   237098
++  CStrings:  41836
 Symbols:
 + +[MLViewerAliasAccessSPI supportsSecureCoding]
 + +[MLViewerDeallocateAccessSPI supportsSecureCoding]
@@ -518,56 +472,6 @@ Symbols:
 + __ZZN4mlir7mps_spi17LinearAttentionOp6verifyEvENK3$_3clExN4llvm9StringRefE
 + ____ZL28MLViewerAccessModeFromStringP8NSString_block_invoke
 + ___kCFBooleanTrue
-+ _objc_msgSend$addressSpace
-+ _objc_msgSend$aliasSourceRef
-+ _objc_msgSend$allValues
-+ _objc_msgSend$allocationRef
-+ _objc_msgSend$alwaysIncludeNodeLocations
-+ _objc_msgSend$byteSize
-+ _objc_msgSend$elementBytes
-+ _objc_msgSend$elementType
-+ _objc_msgSend$footprint
-+ _objc_msgSend$initWithAllocationRef:byteSize:elementType:isInput:producerRef:addressSpace:
-+ _objc_msgSend$initWithAllocationRef:programOrder:operandName:footprint:aliasSourceRef:
-+ _objc_msgSend$initWithAllocationRef:programOrder:operandName:footprint:scope:
-+ _objc_msgSend$initWithCommonJSON:mode:
-+ _objc_msgSend$initWithKind:
-+ _objc_msgSend$initWithLength:
-+ _objc_msgSend$initWithMode:allocationRef:programOrder:operandName:footprint:
-+ _objc_msgSend$initWithOffsetBytes:sizes:strides:elementBytes:
-+ _objc_msgSend$initWithRanges:
-+ _objc_msgSend$integerValue
-+ _objc_msgSend$isInput
-+ _objc_msgSend$isMemref
-+ _objc_msgSend$kind
-+ _objc_msgSend$memoryAccesses
-+ _objc_msgSend$memoryAllocations
-+ _objc_msgSend$memoryCategory
-+ _objc_msgSend$memoryModelVersion
-+ _objc_msgSend$memrefElementType
-+ _objc_msgSend$mode
-+ _objc_msgSend$newGraphWithMLIR:descriptor:
-+ _objc_msgSend$newGraphWithMLIRByteCode:descriptor:
-+ _objc_msgSend$newGraphWithOdixBytecode:delegateBytecodeMap:descriptor:
-+ _objc_msgSend$numberWithInteger:
-+ _objc_msgSend$numberWithUnsignedLongLong:
-+ _objc_msgSend$objectAtIndexedSubscript:
-+ _objc_msgSend$offsetBytes
-+ _objc_msgSend$operandName
-+ _objc_msgSend$producerRef
-+ _objc_msgSend$programOrder
-+ _objc_msgSend$rangeValue
-+ _objc_msgSend$ranges
-+ _objc_msgSend$scope
-+ _objc_msgSend$setMemoryAccesses:
-+ _objc_msgSend$setMemoryAllocations:
-+ _objc_msgSend$setMemoryCategory:
-+ _objc_msgSend$setMemoryModelVersion:
-+ _objc_msgSend$setSignature:
-+ _objc_msgSend$signature
-+ _objc_msgSend$sizes
-+ _objc_msgSend$strides
-+ _objc_msgSend$valueWithRange:
 + _objc_retain_x3
 - +[MLViewerGraphSPI newGraphWithModule:]
 - GCC_except_table705
@@ -621,7 +525,6 @@ Symbols:
 - __ZTIN4llvm7support6detail30stream_operator_format_adapterIN4mlir4TypeEEE
 - __ZTSN4llvm7support6detail23provider_format_adapterIRNS_9StringRefEEE
 - __ZTSN4llvm7support6detail30stream_operator_format_adapterIN4mlir4TypeEEE
-- _objc_msgSend$newGraphWithModule:
 - _objc_retain_x4
 CStrings:
 + "\v"
@@ -722,5 +625,4 @@ CStrings:
 - "' failed to satisfy constraint: si8 or ui8 elements attribute of rank 0/1/2"
 - "'anec.linear' op attribute 'kernel_scale' failed to satisfy constraint: f16 or f32 elements attribute of rank 0/1/2"
 - "'anec.linear' op attribute 'kernel_zero_point' failed to satisfy constraint: si8 or ui8 elements attribute of rank 0/1/2"
-
 ```

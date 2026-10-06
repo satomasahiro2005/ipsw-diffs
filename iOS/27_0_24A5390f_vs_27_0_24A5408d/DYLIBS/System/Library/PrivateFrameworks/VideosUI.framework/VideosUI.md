@@ -2,134 +2,64 @@
 
 > `/System/Library/PrivateFrameworks/VideosUI.framework/VideosUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1042dc0` | `0x1050a54` | **`+0xdc94`** |
+| `__TEXT.__swift5_typeref` | `0x12a474` | `0x12d438` | **`+0x2fc4`** |
+| `__TEXT.__const` | `0x84540` | `0x84c60` | **`+0x720`** |
+| `__AUTH_CONST.__const` | `0x779b8` | `0x77e28` | **`+0x470`** |
+| `__AUTH_CONST.__objc_const` | `0x889d0` | `0x88e20` | **`+0x450`** |
+| `__TEXT.__cstring` | `0x355e6` | `0x359f6` | **`+0x410`** |
+| `__DATA.__bss` | `0x25030` | `0x25430` | **`+0x400`** |
+| `__DATA.__data` | `0x21e58` | `0x22168` | **`+0x310`** |
+| `__TEXT.__constg_swiftt` | `0x3cbbc` | `0x3ce5c` | **`+0x2a0`** |
+| `__AUTH.__objc_data` | `0x1c880` | `0x1cae8` | **`+0x268`** |
+| `__TEXT.__unwind_info` | `0x319e0` | `0x31c38` | **`+0x258`** |
+| `__TEXT.__oslogstring` | `0x4af6d` | `0x4b1ad` | **`+0x240`** |
+| `__TEXT.__swift5_fieldmd` | `0x29cc0` | `0x29ec4` | **`+0x204`** |
+| `__TEXT.__swift5_reflstr` | `0x36f21` | `0x37101` | **`+0x1e0`** |
+| `__TEXT.__eh_frame` | `0x26c0c` | `0x26de4` | **`+0x1d8`** |
+| `__DATA_DIRTY.__objc_data` | `0x27418` | `0x275b0` | **`+0x198`** |
+| `__AUTH.__data` | `0x365a8` | `0x36728` | **`+0x180`** |
+| `__AUTH_CONST.__cfstring` | `0x1b560` | `0x1b6e0` | **`+0x180`** |
+| `__TEXT.__objc_methlist` | `0x338c4` | `0x33a2c` | **`+0x168`** |
+| `__DATA_CONST.__objc_selrefs` | `0x18e68` | `0x18f48` | **`+0xe0`** |
+| `__TEXT.__swift5_capture` | `0x1779c` | `0x17860` | **`+0xc4`** |
+| `__TEXT.__swift5_assocty` | `0x5df8` | `0x5e90` | **`+0x98`** |
+| `__AUTH_CONST.__auth_got` | `0x6be0` | `0x6c60` | **`+0x80`** |
+| `__DATA_CONST.__got` | `0x5bd8` | `0x5c48` | **`+0x70`** |
+| `__DATA_CONST.__const` | `0x8ff0` | `0x9058` | **`+0x68`** |
+| `__TEXT.__swift5_types` | `0x23f0` | `0x2414` | **`+0x24`** |
+| `__TEXT.__swift5_proto` | `0x2794` | `0x27b4` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x30d8` | `0x30f0` | **`+0x18`** |
+| `__DATA.__common` | `0x1b30` | `0x1b40` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x2e30` | `0x2e40` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0x69b38` | `0x69b28` | **`-0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x8be8` | `0x8bf8` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x1cf8` | `0x1d08` | **`+0x10`** |
+| `__TEXT.__swift_as_ret` | `0xcd8` | `0xce8` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0xcb0` | `0xcb8` | **`+0x8`** |
+| `__DATA_DIRTY.__common` | `0x1a80` | `0x1a78` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1145.0.6.0.0
--  __TEXT.__text: 0x1042dc0
--  __TEXT.__objc_methlist: 0x338c4
--  __TEXT.__cstring: 0x355e6
--  __TEXT.__const: 0x84540
--  __TEXT.__oslogstring: 0x4af6d
--  __TEXT.__gcc_except_tab: 0x8be8
 +1145.1.1.0.0
-+  __TEXT.__text: 0x1050a54
-+  __TEXT.__objc_methlist: 0x33a2c
-+  __TEXT.__cstring: 0x359f6
-+  __TEXT.__const: 0x84c60
-+  __TEXT.__oslogstring: 0x4b1ad
-+  __TEXT.__gcc_except_tab: 0x8bf8
-   __TEXT.__ustring: 0xd2
-   __TEXT.__dlopen_cstrs: 0x6d
--  __TEXT.__constg_swiftt: 0x3cbbc
--  __TEXT.__swift5_typeref: 0x12a474
--  __TEXT.__swift5_reflstr: 0x36f21
--  __TEXT.__swift5_fieldmd: 0x29cc0
-+  __TEXT.__constg_swiftt: 0x3ce5c
-+  __TEXT.__swift5_typeref: 0x12d438
-+  __TEXT.__swift5_reflstr: 0x37101
-+  __TEXT.__swift5_fieldmd: 0x29ec4
-   __TEXT.__swift5_builtin: 0x938
--  __TEXT.__swift5_assocty: 0x5df8
--  __TEXT.__swift5_proto: 0x2794
--  __TEXT.__swift5_types: 0x23f0
--  __TEXT.__swift5_capture: 0x1779c
-+  __TEXT.__swift5_assocty: 0x5e90
-+  __TEXT.__swift5_proto: 0x27b4
-+  __TEXT.__swift5_types: 0x2414
-+  __TEXT.__swift5_capture: 0x17860
-   __TEXT.__swift5_protos: 0x2d0
-   __TEXT.__swift5_mpenum: 0x138
-   __TEXT.__swift_as_entry: 0xbf0
--  __TEXT.__swift_as_ret: 0xcd8
--  __TEXT.__swift_as_cont: 0x1cf8
--  __TEXT.__unwind_info: 0x319e0
--  __TEXT.__eh_frame: 0x26c0c
-+  __TEXT.__swift_as_ret: 0xce8
-+  __TEXT.__swift_as_cont: 0x1d08
-+  __TEXT.__unwind_info: 0x31c38
-+  __TEXT.__eh_frame: 0x26de4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x8ff0
--  __DATA_CONST.__objc_classlist: 0x30d8
-+  __DATA_CONST.__const: 0x9058
-+  __DATA_CONST.__objc_classlist: 0x30f0
-   __DATA_CONST.__objc_catlist: 0x148
-   __DATA_CONST.__objc_protolist: 0xd28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x18e68
-+  __DATA_CONST.__objc_selrefs: 0x18f48
-   __DATA_CONST.__objc_protorefs: 0x660
--  __DATA_CONST.__objc_superrefs: 0xcb0
-+  __DATA_CONST.__objc_superrefs: 0xcb8
-   __DATA_CONST.__objc_arraydata: 0xd70
--  __DATA_CONST.__got: 0x5bd8
--  __AUTH_CONST.__const: 0x779b8
--  __AUTH_CONST.__cfstring: 0x1b560
--  __AUTH_CONST.__objc_const: 0x889d0
-+  __DATA_CONST.__got: 0x5c48
-+  __AUTH_CONST.__const: 0x77e28
-+  __AUTH_CONST.__cfstring: 0x1b6e0
-+  __AUTH_CONST.__objc_const: 0x88e20
-   __AUTH_CONST.__objc_intobj: 0x2268
-   __AUTH_CONST.__objc_arrayobj: 0x3c0
-   __AUTH_CONST.__objc_doubleobj: 0x220
-   __AUTH_CONST.__objc_dictobj: 0x578
--  __AUTH_CONST.__auth_got: 0x6be0
--  __AUTH.__objc_data: 0x1c880
--  __AUTH.__data: 0x365a8
--  __DATA.__objc_ivar: 0x2e30
--  __DATA.__data: 0x21e58
-+  __AUTH_CONST.__auth_got: 0x6c60
-+  __AUTH.__objc_data: 0x1cae8
-+  __AUTH.__data: 0x36728
-+  __DATA.__objc_ivar: 0x2e40
-+  __DATA.__data: 0x22168
-   __DATA.__objc_stublist: 0x28
--  __DATA.__bss: 0x25030
--  __DATA.__common: 0x1b30
--  __DATA_DIRTY.__objc_data: 0x27418
--  __DATA_DIRTY.__data: 0x69b38
-+  __DATA.__bss: 0x25430
-+  __DATA.__common: 0x1b40
-+  __DATA_DIRTY.__objc_data: 0x275b0
-+  __DATA_DIRTY.__data: 0x69b28
-   __DATA_DIRTY.__bss: 0x205d0
--  __DATA_DIRTY.__common: 0x1a80
-+  __DATA_DIRTY.__common: 0x1a78
-   - /System/Library/Frameworks/ARKit.framework/ARKit
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /System/Library/PrivateFrameworks/TVMLKit.framework/TVMLKit
-   - /System/Library/PrivateFrameworks/TVPlayback.framework/TVPlayback
-   - /System/Library/PrivateFrameworks/TVUIKit.framework/TVUIKit
 +  - /System/Library/PrivateFrameworks/UIAccessibility.framework/UIAccessibility
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-   - /System/Library/PrivateFrameworks/UnifiedMessagingKit.framework/UnifiedMessagingKit
-   - /System/Library/PrivateFrameworks/VideosUICore.framework/VideosUICore
 
-   - /usr/lib/swift/libswiftMetal.dylib
-   - /usr/lib/swift/libswiftMetalKit.dylib
-   - /usr/lib/swift/libswiftModelIO.dylib
 +  - /usr/lib/swift/libswiftNaturalLanguage.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftObservation.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 84401
--  Symbols:   55636
+-  Symbols:   45909
 -  CStrings:  12108
 +  Functions: 84691
-+  Symbols:   55795
++  Symbols:   46046
 +  CStrings:  12140
- 
 Symbols:
 + +[VUIMediaShareControlButton chevronImageForRTL:leadingPadding:]
 + +[VUIMediaShareControlButton menuRowFont]
@@ -251,30 +181,6 @@ Symbols:
 + _get_witness_table 7SwiftUI19_ConditionalContentVyAA08ModifiedD0VyAEyACyACyACy06VideosB014AsyncImageViewVAA05EmptyI0VGAF09CompositeH0VGAJGAA14_PaddingLayoutVGAA31AccessibilityAttachmentModifierVGAEyAEyACyACyAF012StandardTextI033_9F6E14765133CE7217CD769C78AD854CLLVAF011DescriptionrI0AWLLVGAJGAQGATGGSgAA0I0HpA3_AAA5_HPAuAA5_HPArAA5_HPAoAA5_HPAnAA5_HPAkAA5_HPAhAA5_HPyHC_AjAA5_HPyHCHC_AmAA5_HPyHCHC_AjAA5_HPyHCHC_AqA0iP0HPyHCHC_AtAA6_HPyHCHC_A2_AAA5_HPA1_AAA5_HPA0_AAA5_HPA_AAA5_HPAxAA5_HPyHC_AzAA5_HPyHCHC_AjAA5_HPyHCHC_AqAA6_HPyHCHC_AtAA6_HPyHCHCHC_HC
 + _get_witness_table 7SwiftUI19_ConditionalContentVyACyAA08ModifiedD0VyAEyAA6VStackVyAA05TupleD0VyAA4ViewPAAE7gesture_9includingQrqd___AA11GestureMaskVtAA0K0Rd__lFQOyAEyACyACyACy06VideosB0010AsyncImageH0VAA05EmptyH0VGAQ09CompositeO0VGAUGAA16_FixedSizeLayoutVG_AA06_EndedK0VyAA03TapK0VGQo_Sg_AEyAEyAEyAEyACyACyAQ012StandardTextH033_9F6E14765133CE7217CD769C78AD854CLLVAQ011DescriptionxH0A10_LLVGAUGAA010_FlexFrameT0VGA0_GAA08_PaddingT0VGSgA21_GA24_A24_AEyAEyAQ017ContextMenuButtonB0VA21_GSgA21_GAA6SpacerVAEyAQ15SimpleSeparatorVA21_GQPGGA21_GA17_GAEyAEyAEyAEyAA6HStackVyAIyA8__AGyAIyA31__A23_A23_A24_A31_A33_QPGGA28_QPGGA21_GA17_GAQ011ContextMenuH25ModifierWithCustomPreview33_E7D0B8DC46F8D9D8CBE1E972458D1F0CLLVGAQ0D25ShapedHoverEffectModifier33_CBA9BF1B6481C11889D3FE7AC7C79543LLVyAA8AnyShapeVGGGAEyAkAE18accessibilityLabel7contentQrqd__AA011PlaceholderdH0VyxGXE_tAaJRd__lFQOyAEyAkAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAEyAEyAEyAEyAEyAQ014LockupGradientO9ContainerVyAEyAGyAIyAEyAGyAIyA23__A23_AEyAEyAEyA19_AA15_HiddenModifierVGA21_GSgAA16_OverlayModifierVyA23_GGQPGGAA14_OpacityEffectVG_A31_SgAEyAEyAQ024LockupAccessoryContainerH0VyAQ14PlaybackStatusVSgAQ034DownloadStatusAndContextMenuButtonH033_F2865B4D4504602C59E578ECE4C8702CLLVGA21_GA82_GA84_QPGGA21_GGA17_GA0_GAQ28ClippedRoundedBorderModifier33_8F52F7DB7912CD881306B52F7C6B9B94LLVGA49_GA56_G_Qo_AA31AccessibilityAttachmentModifierVG_A98_Qo_A110_GGAaJHPA58_AaJHPA38_AaJHPA37_AaJHPA36_AaJHPyHC_A21_AA0H8ModifierHPyHCHC_A17_AAA115_HPyHCHC_A57_AaJHPA50_AaJHPA46_AaJHPA45_AaJHPA44_AaJHPyHC_A21_AAA115_HPyHCHC_A17_AAA115_HPyHCHC_A49_AAA115_HPyHCHC_A56_AAA115_HPyHCHCHC_A113_AaJHPqd0__AaJHD3_A112_HO_A110_AAA115_HPyHCHCHC
 + _get_witness_table 7SwiftUI6ZStackVyAA19_ConditionalContentVyAEyAEyAA6VStackVyAA05TupleE0VyAA6HStackVyAA08ModifiedE0VyAMyAA6SpacerVAA12_FrameLayoutVGAA25_AlignmentWritingModifierVGG_AMyAMyAKyAIyAMyAEyAMyAEyAMyAMy06VideosB015SportsClockViewVAA08_PaddingL0VGAW26VoiceOverTextAccessibility33_31F428E29B6E5E7E07BD9B92C0CA95EALLVGAMyA4_AA0x10AttachmentO0VGGAW013BalancedWidthO0VGA8_GAW0d8FlexiblekO033_4559761B36531BADA5588625B8B287C4LLVG_AMyAMyAW0q12BaseballBaseS0VAQGATGAMyAMyAEyAMyAMyAMyAMyAMyAMyAA0W0VAW07RunningrwlO0VGAA010_FixedSizeL0VGAA015_EnvironmentKeynO0VyAA0E10TransitionVGGAA010_AnimationO0VySSGGA_GA3_GAMyA40_A6_GGAW0d5FixedkO0A14_LLVGA15_GQPGGA27_GA_GQPGGAMyAGyAIyA8__AKyAIyA19__A42_QPGGQPGGA_GGAMyAMyAKyAIyA8__A19_A42_QPGGA27_GA_GGAW014StaticBaseballR0VGSgGAA0S0HPyHC
-+ _objc_msgSend$_becomePendingInstance
-+ _objc_msgSend$_setPaddingRemoved:
-+ _objc_msgSend$channelType
-+ _objc_msgSend$chevronImageForRTL:leadingPadding:
-+ _objc_msgSend$detailTextForRestrictionIdentifier:
-+ _objc_msgSend$handleRestrictionChangeForIdentifier:denied:
-+ _objc_msgSend$imageByApplyingSymbolConfiguration:
-+ _objc_msgSend$leftBarButtonItem
-+ _objc_msgSend$menuRowFont
-+ _objc_msgSend$menuRowTitleWithText:columnWidth:trailingChevronForRTL:
-+ _objc_msgSend$notifyAppearingViewControllerOfTabSwitch:
-+ _objc_msgSend$rawBackingDictionary
-+ _objc_msgSend$restrictionIdentifiers
-+ _objc_msgSend$setChannelType:
-+ _objc_msgSend$setElements:
-+ _objc_msgSend$setStorageManagementPolicy:forURL:
-+ _objc_msgSend$sharedDownloadStorageManager
-+ _objc_msgSend$textForRestrictionIdentifier:
-+ _objc_msgSend$useExperienceController
-+ _objc_msgSend$videoSummaryFeatureAdamID
-+ _objc_msgSend$videoSummaryFeatureCanonicalID
-+ _objc_msgSend$videoSummaryFeatureExternalID
-+ _objc_msgSend$videoSummaryFeatureReferenceID
-+ _objc_msgSend$widthForMenuRowTitle:
 + _symbolic SDySSSo18CPListImageRowItemCG
 + _symbolic SDySi_____G 12CoreGraphics7CGFloatV
 + _symbolic SaySi_Say_____GtG 8VideosUI9ViewModelC
@@ -484,8 +390,6 @@ Symbols:
 - _get_witness_table 7SwiftUI19_ConditionalContentVyAA08ModifiedD0VyACyACyACy06VideosB014AsyncImageViewVAA05EmptyI0VGAF09CompositeH0VGAJGAA14_PaddingLayoutVGAEyACyACyAF012StandardTextI033_9F6E14765133CE7217CD769C78AD854CLLVAF011DescriptionoI0ATLLVGAJGAQGGSgAA0I0HpA_AAA1_HPArAA1_HPAoAA1_HPAnAA1_HPAkAA1_HPAhAA1_HPyHC_AjAA1_HPyHCHC_AmAA1_HPyHCHC_AjAA1_HPyHCHC_AqA0I8ModifierHPyHCHC_AzAA1_HPAyAA1_HPAxAA1_HPAuAA1_HPyHC_AwAA1_HPyHCHC_AjAA1_HPyHCHC_AqAA2_HPyHCHCHC_HC
 - _get_witness_table 7SwiftUI19_ConditionalContentVyACyAA08ModifiedD0VyAEyAA6VStackVyAA05TupleD0VyAA4ViewPAAE7gesture_9includingQrqd___AA11GestureMaskVtAA0K0Rd__lFQOyAEyACyACyACy06VideosB0010AsyncImageH0VAA05EmptyH0VGAQ09CompositeO0VGAUGAA16_FixedSizeLayoutVG_AA06_EndedK0VyAA03TapK0VGQo_Sg_AEyAEyAEyAEyACyACyAQ012StandardTextH033_9F6E14765133CE7217CD769C78AD854CLLVAQ011DescriptionxH0A10_LLVGAUGAA010_FlexFrameT0VGA0_GAA08_PaddingT0VGSgA21_GA24_A24_AEyAEyAQ017ContextMenuButtonB0VA21_GSgA21_GAA6SpacerVAEyAQ15SimpleSeparatorVA21_GQPGGA21_GA17_GAEyAEyAEyAEyAA6HStackVyAIyA8__AGyAIyA31__A23_A23_A24_A31_A33_QPGGA28_QPGGA21_GA17_GAQ011ContextMenuH25ModifierWithCustomPreview33_E7D0B8DC46F8D9D8CBE1E972458D1F0CLLVGAQ0D25ShapedHoverEffectModifier33_CBA9BF1B6481C11889D3FE7AC7C79543LLVyAA8AnyShapeVGGGAEyAkAE18accessibilityLabel7contentQrqd__AA011PlaceholderdH0VyxGXE_tAaJRd__lFQOyAkAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAEyAEyAEyAEyAEyAQ014LockupGradientO9ContainerVyAEyAGyAIyAEyAGyAIyA23__A23_AEyAEyAEyA19_AA15_HiddenModifierVGA21_GSgAA16_OverlayModifierVyA23_GGQPGGAA14_OpacityEffectVG_A31_SgAEyAEyAQ024LockupAccessoryContainerH0VyAQ14PlaybackStatusVSgAQ034DownloadStatusAndContextMenuButtonH033_F2865B4D4504602C59E578ECE4C8702CLLVGA21_GA82_GA84_QPGGA21_GGA17_GA0_GAQ28ClippedRoundedBorderModifier33_8F52F7DB7912CD881306B52F7C6B9B94LLVGA49_GA56_G_Qo__A98_Qo_AA31AccessibilityAttachmentModifierVGGAaJHPA58_AaJHPA38_AaJHPA37_AaJHPA36_AaJHPyHC_A21_AA0H8ModifierHPyHCHC_A17_AAA114_HPyHCHC_A57_AaJHPA50_AaJHPA46_AaJHPA45_AaJHPA44_AaJHPyHC_A21_AAA114_HPyHCHC_A17_AAA114_HPyHCHC_A49_AAA114_HPyHCHC_A56_AAA114_HPyHCHCHC_A112_AaJHPqd0__AaJHD3_A109_HO_A111_AAA114_HPyHCHCHC
 - _get_witness_table 7SwiftUI6ZStackVyAA19_ConditionalContentVyAEyAEyAA6VStackVyAA05TupleE0VyAA6HStackVyAA08ModifiedE0VyAMyAA6SpacerVAA12_FrameLayoutVGAA25_AlignmentWritingModifierVGG_AMyAMyAKyAIyAMyAEyAMyAEyAMyAMy06VideosB015SportsClockViewVAA08_PaddingL0VGAW26VoiceOverTextAccessibility33_31F428E29B6E5E7E07BD9B92C0CA95EALLVGAMyA4_AA0x10AttachmentO0VGGAW013BalancedWidthO0VGA8_GAW0d8FlexiblekO033_4559761B36531BADA5588625B8B287C4LLVG_AMyAMyAW0q12BaseballBaseS0VAQGATGAMyAMyAEyAMyAMyAMyAMyAMyAMyAA0W0VAW07RunningrwlO0VGAA010_FixedSizeL0VGAA015_EnvironmentKeynO0VyAA0E10TransitionVGGAA010_AnimationO0VySSGGA_GA3_GAMyA40_A6_GGAW0d5FixedkO0A14_LLVGA15_GQPGGA27_GA_GQPGGAMyAGyAIyA8__AKyAIyA19__A42_QPGGQPGGA_GGAMyAKyAIyA8__A19_A42_QPGGA_GGAW014StaticBaseballR0VGSgGAA0S0HPyHC
-- _objc_msgSend$isFederatedContent
-- _objc_msgSend$setIsFederatedContent:
 - _symbolic _____ 8VideosUI15PassThroughView33_2D9B1F594E91213D44EAB40C33886ADCLLC
 - _symbolic _____yAAyAAyAAy_____y_____yACyAAy_____y_____yAAyACyACyACyACy__________G_____GAGGAAyAK_____GG_____GSg______SgACyApAyACyACyACy__________GAGGAAyAwLGGAOGGSg_____SgAAyAAy_____AOG_____GSg_____yACyAAyACyAAyAAy__________GAOGAAyA12_ALGG_____yAAy_____y__________G_____GGGA14_GSSSgGSgAAyAAyAAyACyACyACy_____AWGACyAK_____GGACyACy__________GACyACyACyACy__________GACyAG_____GGACyACy__________GACyACyA42_AGG_____GGGAGGGGAOG_____G_____y_____GGSgAAy_____A5_GSgQPGG_____y_____GGAAy_____yAEyADyAEyAQ_ARA0_A2_A27_A60_A63_QPGG_AAyA39_A58_GAAyADyAEyA7_______SgSgQPGG_____GQPGGA68_GGA70_yAEyADyAEyAQ_ARA0_A2_A76_A7_A27_A60_A63_QPGG_A39_QPGGGG_____y_____GGAOG_____y_____GG_____G 7SwiftUI15ModifiedContentV AA5GroupV AA012_ConditionalD0V AA6VStackV AA05TupleD0V 06VideosB014AsyncImageViewV AA05EmptyL0V AL09CompositeK0V AA31AccessibilityAttachmentModifierV AA14_PaddingLayoutV AL022SportBadgeAndClockTimeL0V AL012StandardTextL033_9F6E14765133CE7217CD769C78AD854CLLV AL011DescriptionzL0AZLLV AL031SportsCanonicalBannerScoreboardL0V AL015AttributionPillL0V AA010_FixedSizeS0V AA6IDViewV AL15LegacyMediaTagsV AA06_FrameS0V AA011_BackgroundQ0V AA06_ShapeL0V AA9RectangleV AA5ColorV AA13_ShadowEffectV AL021VisibilityRestrictionL0V AL011SportsStatsL0V AL09TeamStatsL0V AL011PlayerStatsL0V AL0zU0V AL024SportsPortableScoreboardL0V AA6SpacerV AL021LeagueStandingsLegendL0V AL010LeagueRankL0V AA7DividerV AA010_FlexFrameS0V AA013_TraitWritingQ0V AA0S16PriorityTraitKeyV AL18StackedButtonViewsV AA022_EnvironmentKeyWritingQ0V AA11ColorSchemeO AA6HStackV AL020SportsCanonicalStatsL033_DB969288989DD2CA297D6E8E0D15A29ELLV AL021BottomButtonAlignmentF033_A4B6704B5717C011D4A3896EBA7F86B1LLV AA018_PreferenceWritingQ0V AA23PreferredColorSchemeKeyV AA017_PreferenceActionQ0V A51_021HasBottomSupplementalZ3KeyV AA024_SafeAreaRegionsIgnoringS0V
 - _symbolic _____yAAyAAyAAy_____y_____y_____y_____y_____y_____yAEyADyAEyAAyAAy__________yACyACy__________GACy_____AJGGSgGGSg_____G______AAyADyAEyAAyAAy__________GATGSg_AAy__________GSgQPGGA1_GQPGG_AGyAEyAAyACyACy__________GAJGATGSg_ACyAAyA13_ATGA15_GSgQPGGQPGGG_AAyACyACyACyAhJG_____GAJG_____GSgQPGGADyAEyADyAFyAEyAU_A19_QPGGG_AVA6_A29_QPGGGG_____yAGyAEyAV_AAy_____ATGQPGGGG_____y_____GG_____G_____G 7SwiftUI15ModifiedContentV AA5GroupV AA012_ConditionalD0V AA6HStackV AA05TupleD0V 06VideosB011RoutingViewV AA6VStackV AL010AsyncImageK0V AA16_OverlayModifierV AA05EmptyK0V AL07UnifiedO0V AL018LibEpisodeListCelloK0V AA14_PaddingLayoutV AA6SpacerV AL014DownloadStatusK0V AA06_FrameX0V AL017ContextMenuButtonB0V AA023AccessibilityAttachmentP0V AL012StandardTextK033_9F6E14765133CE7217CD769C78AD854CLLV AL015DescriptionTextK0A12_LLV AL09CompositeN0V AA010_FixedSizeX0V AA011_BackgroundP0V AA7DividerV AA01_d5ShapeP0V AA9RectangleV AL23TappableHighlightedArea33_6ECA81762323E6D1CADDB158CB2F2631LLV AL015FirstAppearanceP033_6EC82EAF45B257DD4831BC8B4EEEB841LLV

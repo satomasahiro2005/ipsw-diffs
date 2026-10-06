@@ -2,71 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/PhotosPlayer.framework/PhotosPlayer`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2bce0` | `0x2b338` | **`-0x9a8`** |
+| `__AUTH_CONST.__objc_const` | `0x75a0` | `0x7480` | **`-0x120`** |
+| `__AUTH_CONST.__cfstring` | `0x14c0` | `0x1400` | **`-0xc0`** |
+| `__DATA_DIRTY.__objc_data` | `0x1220` | `0x1180` | **`-0xa0`** |
+| `__TEXT.__objc_methlist` | `0x42cc` | `0x423c` | **`-0x90`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2708` | `0x2688` | **`-0x80`** |
+| `__DATA_CONST.__const` | `0xe80` | `0xe38` | **`-0x48`** |
+| `__AUTH_CONST.__const` | `0x3c0` | `0x380` | **`-0x40`** |
+| `__TEXT.__const` | `0x1c0` | `0x180` | **`-0x40`** |
+| `__TEXT.__cstring` | `0x1087` | `0x104f` | **`-0x38`** |
+| `__TEXT.__unwind_info` | `0x1298` | `0x1268` | **`-0x30`** |
+| `__DATA.__bss` | `0x38` | `0x28` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x3e8` | `0x3d8` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x1d0` | `0x1c0` | **`-0x10`** |
+| `__DATA_DIRTY.__bss` | `0x118` | `0x110` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.235.0.0
--  __TEXT.__text: 0x2a9ec
--  __TEXT.__objc_methlist: 0x42cc
--  __TEXT.__const: 0x1c0
 +916.40.110.0.0
-+  __TEXT.__text: 0x2a098
-+  __TEXT.__objc_methlist: 0x423c
-+  __TEXT.__const: 0x180
-   __TEXT.__gcc_except_tab: 0x99c
--  __TEXT.__cstring: 0x1087
-+  __TEXT.__cstring: 0x104f
-   __TEXT.__oslogstring: 0x963
-   __TEXT.__ustring: 0x62
--  __TEXT.__unwind_info: 0x1608
-+  __TEXT.__unwind_info: 0x15d0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xe80
--  __DATA_CONST.__objc_classlist: 0x1d0
-+  __DATA_CONST.__const: 0xe38
-+  __DATA_CONST.__objc_classlist: 0x1c0
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x78
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2708
-+  __DATA_CONST.__objc_selrefs: 0x2688
-   __DATA_CONST.__objc_superrefs: 0x188
-   __DATA_CONST.__objc_arraydata: 0x168
--  __DATA_CONST.__got: 0x3e8
--  __AUTH_CONST.__const: 0x3c0
--  __AUTH_CONST.__cfstring: 0x14c0
--  __AUTH_CONST.__objc_const: 0x75a0
-+  __DATA_CONST.__got: 0x3d8
-+  __AUTH_CONST.__const: 0x380
-+  __AUTH_CONST.__cfstring: 0x1400
-+  __AUTH_CONST.__objc_const: 0x7480
-   __AUTH_CONST.__objc_intobj: 0x108
-   __AUTH_CONST.__objc_arrayobj: 0x168
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__objc_ivar: 0x658
-   __DATA.__data: 0x600
--  __DATA_DIRTY.__objc_data: 0x1220
--  __DATA_DIRTY.__bss: 0x118
-+  __DATA_DIRTY.__objc_data: 0x1180
-+  __DATA_DIRTY.__bss: 0x110
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AVKit.framework/AVKit
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1624
--  Symbols:   4060
+-  Symbols:   3028
 -  CStrings:  260
 +  Functions: 1601
-+  Symbols:   4009
++  Symbols:   2988
 +  CStrings:  254
- 
 Symbols:
 + GCC_except_table1161
 + GCC_except_table1211
@@ -237,17 +205,6 @@ Symbols:
 - ___52-[ISWrappedAVAudioSession unregisterVolumeObserver:]_block_invoke
 - ___68+[ISWrappedAVAudioSession sharedPhotosOneUpInstanceWithLoadHandler:]_block_invoke
 - _mainQueue_ISWrappedAVAudioSessionDidLoadOneUpInstance
-- _objc_msgSend$_isPerformingOutputChanges
-- _objc_msgSend$_outputDidChange
-- _objc_msgSend$_setPerformingOutputChanges:
-- _objc_msgSend$fileURLWithPath:
-- _objc_msgSend$imageDisplayTime
-- _objc_msgSend$imageOrientation
-- _objc_msgSend$imagePath
-- _objc_msgSend$initWithBundleAtURL:
-- _objc_msgSend$initWithContentsOfFile:
-- _objc_msgSend$sharedPhotosOneUpInstance
-- _objc_msgSend$videoPath
 - _sharedPhotosOneUpInstance.onceToken
 - _sharedPhotosOneUpInstance.sharedVideoPlaybackInstance
 - _sin

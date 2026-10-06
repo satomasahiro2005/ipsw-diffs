@@ -2,94 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/PaymentUIBase.framework/PaymentUIBase`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_protos`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x43cac` | `0x4590c` | **`+0x1c60`** |
+| `__TEXT.__eh_frame` | `—` | `0x1c0` | **`+0x1c0`** |
+| `__AUTH_CONST.__auth_got` | `0xe08` | `0xec8` | **`+0xc0`** |
+| `__TEXT.__unwind_info` | `0xf80` | `0xff0` | **`+0x70`** |
+| `__AUTH_CONST.__const` | `0x1d50` | `0x1da0` | **`+0x50`** |
+| `__TEXT.__const` | `0x3584` | `0x35c4` | **`+0x40`** |
+| `__TEXT.__swift5_capture` | `0x4d8` | `0x518` | **`+0x40`** |
+| `__TEXT.__swift5_typeref` | `0x1f0d` | `0x1f4b` | **`+0x3e`** |
+| `__DATA_CONST.__got` | `0x5b0` | `0x5e8` | **`+0x38`** |
+| `__DATA.__data` | `0xbf8` | `0xc28` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x558` | `0x580` | **`+0x28`** |
+| `__DATA_DIRTY.__data` | `0x1560` | `0x1540` | **`-0x20`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x14` | **`+0x14`** |
+| `__TEXT.__swift5_reflstr` | `0xf44` | `0xf54` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0xcd0` | `0xcdc` | **`+0xc`** |
+| `__TEXT.__swift_as_entry` | `—` | `0xc` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `—` | `0xc` | **`+0xc`** |
+
+### Other Changes
 
 ```diff
 
 -1686.3.0.0.0
--  __TEXT.__text: 0x43cac
 +1689.3.0.0.0
-+  __TEXT.__text: 0x4590c
-   __TEXT.__objc_methlist: 0x4c4
--  __TEXT.__const: 0x3584
-+  __TEXT.__const: 0x35c4
-   __TEXT.__constg_swiftt: 0x1934
--  __TEXT.__swift5_typeref: 0x1f0d
--  __TEXT.__swift5_fieldmd: 0xcd0
-+  __TEXT.__swift5_typeref: 0x1f4b
-+  __TEXT.__swift5_fieldmd: 0xcdc
-   __TEXT.__swift5_builtin: 0x28
--  __TEXT.__swift5_reflstr: 0xf44
-+  __TEXT.__swift5_reflstr: 0xf54
-   __TEXT.__swift5_assocty: 0x468
-   __TEXT.__swift5_proto: 0x13c
-   __TEXT.__swift5_types: 0xdc
-   __TEXT.__cstring: 0x742
--  __TEXT.__swift5_capture: 0x4d8
-+  __TEXT.__swift5_capture: 0x518
-   __TEXT.__oslogstring: 0xdd
-+  __TEXT.__swift_as_entry: 0xc
-+  __TEXT.__swift_as_ret: 0xc
-+  __TEXT.__swift_as_cont: 0x14
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__unwind_info: 0xf80
-+  __TEXT.__unwind_info: 0xff0
-+  __TEXT.__eh_frame: 0x1c0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x558
-+  __DATA_CONST.__objc_selrefs: 0x580
-   __DATA_CONST.__objc_protorefs: 0x38
--  __DATA_CONST.__got: 0x5b0
--  __AUTH_CONST.__const: 0x1d50
-+  __DATA_CONST.__got: 0x5e8
-+  __AUTH_CONST.__const: 0x1da0
-   __AUTH_CONST.__objc_const: 0xb78
--  __AUTH_CONST.__auth_got: 0xe08
-+  __AUTH_CONST.__auth_got: 0xec8
-   __AUTH.__objc_data: 0x48
-   __AUTH.__data: 0x198
--  __DATA.__data: 0xbf8
-+  __DATA.__data: 0xc28
-   __DATA.__bss: 0x1470
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0x168
--  __DATA_DIRTY.__data: 0x1560
-+  __DATA_DIRTY.__data: 0x1540
-   __DATA_DIRTY.__bss: 0x1600
-   __DATA_DIRTY.__common: 0x58
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1886
--  Symbols:   821
+-  Symbols:   722
 +  Functions: 1904
-+  Symbols:   842
-   CStrings:  59
- 
++  Symbols:   738
 Symbols:
 + _CGRectGetMaxX
 + _CGRectGetMinX
@@ -100,11 +45,6 @@ Symbols:
 + ___unnamed_23
 + ___unnamed_26
 + _get_witness_table 7SwiftUI4ViewRzAaBR_AaBR0_AaBR1_r2_lAA19_ConditionalContentVyAA08ModifiedE0VyAFyAFyAA6HStackVyAA05TupleE0VyAFyAFyAA6ZStackVyAJyAFyAA6VStackVyAJyAA6SpacerV_AA6IDViewVyAaBPAAE15dynamicTypeSizeyQrqd__SXRd__AA07DynamicnO0O5BoundRtd__lFQOyq__s19PartialRangeThroughVyAVGQo_13PaymentUIBase0U27SheetHeroListItemsContainerV2ID33_D9D7008EBF5A57F24F9B089E25E0C17CLLOyxq_q0_q1__GGAPQPGGAA16_FlexFrameLayoutVG_AFyANyAJyAP_q1_QPGGA12_GSgQPGGA12_GAA21_TraitWritingModifierVyAA14ZIndexTraitKeyVGG_AFyAsAE06scrollE10BackgroundyQrAA10VisibilityOFQOyAsAE22scrollEdgeEffectHidden_3forQrSb_AA4EdgeO3SetVtFQOyAFyARyAsAE14contentMargins__A31_QrA35__12CoreGraphics7CGFloatVSgAA0E15MarginPlacementVtFQOyAFyAsAE21scrollIndicatorsFlash8onAppearQrSb_tFQOyAsAE20scrollBounceBehavior_4axesQrAA20ScrollBounceBehaviorV_AA4AxisOA34_VtFQOyAFyAA06ScrollC0VyAFyAsAE9listStyleyQrqd__AA0Y5StyleRd__lFQOyAFyAFyAsAE20listHasStackBehaviorQryFQOyAA0Y0Vys5NeverOAJyAsAE16listRowSeparator_5edgesQrA29__AA12VerticalEdgeOA34_VtFQOyAFyAsAE18listSectionMarginsyQrA35__A40_tFQOyAsAEA66_yQrA35__A40_tFQOyAFyAA7SectionVyAA05EmptyC0VAsAEATyQrqd__SXRd__AvXRSlFQOyAFyAFyq0_AA14_PaddingLayoutVGA12_G_SNyAVGQo_A70_GA22_yAA0Y21RowBackgroundTraitKeyVGG_Qo__Qo_A22_yAA0Y17RowInsetsTraitKeyVGG_Qo_Sg_xQPGG_Qo_A22_yAA0Y22SectionSpacingTraitKeyVGGAA30_EnvironmentKeyWritingModifierVyAA0Y14SectionSpacingVSgGG_AA012InsetGroupedY5StyleVQo_AA23_GeometryActionModifierVyA39_GGGA109_G_Qo__Qo_AA24_BackgroundStyleModifierVyAA5ColorVGG_Qo_A7_GA12_G_Qo__Qo_A22_yAA18TransitionTraitKeyVGGSgQPGGAA18_AnimationModifierVyA1_19ContainerLayoutModeOGGAA30_SafeAreaRegionsIgnoringLayoutVGA119_GAsAE11safeAreaBar4edge9alignment7spacing7contentQrA64__AA19HorizontalAlignmentVA40_qd__yXEtAaBRd__lFQOyAsAE21scrollEdgeEffectStyle_A31_QrAA21ScrollEdgeEffectStyleVSg_A35_tFQOyAsAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAsAEA36___A31_QrA35__A40_A42_tFQOyAFyAsAEA43_A44_QrSb_tFQOyAsAEA45__A46_QrA48__A51_tFQOyAFyA53_yAFyAsAEA54_yQrqd__AAA55_Rd__lFQOyAFyAFyAsAEA56_QryFQOyA58_yA60_AJyAsAEA61__A62_QrA29__A65_tFQOyAFyAsAEA66_yQrA35__A40_tFQOyAsAEA66_yQrA35__A40_tFQOyAFyA68_yA70_AFyAFyA8_A72_GA12_GA70_GA80_G_Qo__Qo_A86_G_Qo__ARyxA7_GSgQPGG_Qo_A95_GA102_G_A105_Qo_A109_GGA109_G_Qo__Qo_A119_G_Qo__A39_Qo__Qo__AFyAFyAFyq1_A109_GAA14_OpacityEffectVGA134_ySbGGSgQo_GAaBHPA142_AaBHPA141_AaBHPA138_AaBHPA132_AaBHPyHC_A137_AA0C8ModifierHPyHCHC_A140_AAA191_HPyHCHC_A119_AAA191_HPyHCHC_qd0__AaBHD3_A189_HOHC
-+ _objc_msgSend$edge
-+ _objc_msgSend$inset
-+ _objc_msgSend$setInset:
-+ _objc_msgSend$setInstructionBackdropColor:
-+ _objc_msgSend$setShowsInstructionBackdrop:animated:
 + _swift_errorRelease
 + _swift_release_x9
 + _swift_retain_x28

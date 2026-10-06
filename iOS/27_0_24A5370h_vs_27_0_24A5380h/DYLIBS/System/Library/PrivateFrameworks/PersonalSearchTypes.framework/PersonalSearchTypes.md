@@ -2,76 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/PersonalSearchTypes.framework/PersonalSearchTypes`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x66a4` | `0x6aac` | **`+0x408`** |
+| `__AUTH.__data` | `0x98` | `0x118` | **`+0x80`** |
+| `__AUTH_CONST.__const` | `0x498` | `0x418` | **`-0x80`** |
+| `__AUTH_CONST.__auth_got` | `0x370` | `0x3a0` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x2c8` | `0x2f0` | **`+0x28`** |
+| `__DATA.__data` | `0x98` | `0xa8` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x66` | `0x76` | **`+0x10`** |
+| `__TEXT.__constg_swiftt` | `0x398` | `0x3a4` | **`+0xc`** |
+| `__TEXT.__swift5_fieldmd` | `0x158` | `0x164` | **`+0xc`** |
+| `__TEXT.__eh_frame` | `0x2c8` | `0x2d0` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0x35c` | `0x362` | **`+0x6`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x66a4
-+  __TEXT.__text: 0x6aac
-   __TEXT.__const: 0x7e2
--  __TEXT.__constg_swiftt: 0x398
--  __TEXT.__swift5_typeref: 0x35c
--  __TEXT.__swift5_fieldmd: 0x158
-+  __TEXT.__constg_swiftt: 0x3a4
-+  __TEXT.__swift5_typeref: 0x362
-+  __TEXT.__swift5_fieldmd: 0x164
-   __TEXT.__cstring: 0xd9
-   __TEXT.__swift5_types: 0x28
-   __TEXT.__oslogstring: 0xf6
-   __TEXT.__swift5_capture: 0x80
--  __TEXT.__swift5_reflstr: 0x66
-+  __TEXT.__swift5_reflstr: 0x76
-   __TEXT.__swift5_assocty: 0x20
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_mpenum: 0x8
+-3600.56.11.0.0
++3600.56.20.0.0
 
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0x8
--  __TEXT.__unwind_info: 0x2c8
--  __TEXT.__eh_frame: 0x2c8
-+  __TEXT.__unwind_info: 0x2f0
-+  __TEXT.__eh_frame: 0x2d0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x498
-+  __AUTH_CONST.__const: 0x418
-   __AUTH_CONST.__objc_const: 0x168
--  __AUTH_CONST.__auth_got: 0x370
--  __AUTH.__data: 0x98
--  __DATA.__data: 0x98
-+  __AUTH_CONST.__auth_got: 0x3a0
-+  __AUTH.__data: 0x118
-+  __DATA.__data: 0xa8
-   __DATA.__bss: 0x690
-   __DATA_DIRTY.__data: 0x248
-   __DATA_DIRTY.__common: 0x8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   Functions: 256
--  Symbols:   933
-+  Symbols:   942
-   CStrings:  12
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __DATA_DIRTY.__data : content changed
+-  Symbols:   724
++  Symbols:   734
 Symbols:
 + _$s19PersonalSearchTypes15ServiceEndpointV11serviceName15peerRequirement0F0ACyxq_GSS_3XPC07XPCPeerI0VAA0D8Protocol_px7RequestAaKPRts_q_8ResponseAMRtsXPtcfC
 + _$s19PersonalSearchTypes15ServiceEndpointV11serviceName15peerRequirement0F4TypeACyxq_GSS_3XPC07XPCPeerI0VAA0D8Protocol_px7RequestAaKPRts_q_8ResponseAMRtsXPXptcfC
@@ -107,5 +62,4 @@ Symbols:
 - _$s19PersonalSearchTypes26MachServiceListenerFactoryVAcA0efG0AAWl
 - _$s3XPC11XPCListenerC7service11targetQueue7options22incomingSessionHandlerACSS_So17OS_dispatch_queueCSgAC21InitializationOptionsVAC08IncomingH7RequestC8DecisionVANctKcfc
 - ___unnamed_13
-
 ```

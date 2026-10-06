@@ -2,102 +2,64 @@
 
 > `/usr/bin/fm`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa8ebc` | `0xb5210` | **`+0xc354`** |
+| `__TEXT.__eh_frame` | `0x3914` | `0x3df8` | **`+0x4e4`** |
+| `__TEXT.__auth_stubs` | `0x2d10` | `0x3060` | **`+0x350`** |
+| `__TEXT.__cstring` | `0x509a` | `0x534a` | **`+0x2b0`** |
+| `__TEXT.__const` | `0x3d3c` | `0x3fa4` | **`+0x268`** |
+| `__DATA_CONST.__auth_got` | `0x1690` | `0x1838` | **`+0x1a8`** |
+| `__DATA_CONST.__const` | `0x2ce8` | `0x2e80` | **`+0x198`** |
+| `__TEXT.__unwind_info` | `0x1830` | `0x1958` | **`+0x128`** |
+| `__TEXT.__swift5_reflstr` | `0xda7` | `0xeb7` | **`+0x110`** |
+| `__DATA.__bss` | `0x5080` | `0x5180` | **`+0x100`** |
+| `__TEXT.__swift5_fieldmd` | `0x11d8` | `0x1294` | **`+0xbc`** |
+| `__DATA_CONST.__got` | `0x688` | `0x730` | **`+0xa8`** |
+| `__DATA.__data` | `0x1f80` | `0x2008` | **`+0x88`** |
+| `__TEXT.__swift5_typeref` | `0x1147` | `0x11af` | **`+0x68`** |
+| `__TEXT.__swift5_capture` | `0x844` | `0x7f4` | **`-0x50`** |
+| `__DATA_CONST.__auth_ptr` | `0x778` | `0x7b0` | **`+0x38`** |
+| `__TEXT.__constg_swiftt` | `0xc80` | `0xcb8` | **`+0x38`** |
+| `__TEXT.__swift_as_cont` | `0x280` | `0x2b0` | **`+0x30`** |
+| `__TEXT.__swift_as_ret` | `0x178` | `0x19c` | **`+0x24`** |
+| `__TEXT.__swift5_builtin` | `0x78` | `0x8c` | **`+0x14`** |
+| `__TEXT.__swift_as_entry` | `0xc8` | `0xdc` | **`+0x14`** |
+| `__DATA.__common` | `0x268` | `0x278` | **`+0x10`** |
+| `__TEXT.__swift5_mpenum` | `0x2c` | `0x34` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x2b4` | `0x2bc` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x15c` | `0x164` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_protos`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xa8ebc
--  __TEXT.__auth_stubs: 0x2d10
-+  __TEXT.__text: 0xb5210
-+  __TEXT.__auth_stubs: 0x3060
-   __TEXT.__objc_stubs: 0x260
-   __TEXT.__objc_methlist: 0x104
--  __TEXT.__const: 0x3d3c
--  __TEXT.__constg_swiftt: 0xc80
--  __TEXT.__swift5_typeref: 0x1147
--  __TEXT.__swift5_builtin: 0x78
--  __TEXT.__swift5_reflstr: 0xda7
--  __TEXT.__swift5_fieldmd: 0x11d8
-+  __TEXT.__const: 0x3fa4
-+  __TEXT.__constg_swiftt: 0xcb8
-+  __TEXT.__swift5_typeref: 0x11af
-+  __TEXT.__swift5_builtin: 0x8c
-+  __TEXT.__swift5_reflstr: 0xeb7
-+  __TEXT.__swift5_fieldmd: 0x1294
-   __TEXT.__swift5_assocty: 0x90
--  __TEXT.__swift5_proto: 0x2b4
--  __TEXT.__swift5_types: 0x15c
--  __TEXT.__cstring: 0x509a
--  __TEXT.__swift_as_entry: 0xc8
--  __TEXT.__swift_as_ret: 0x178
--  __TEXT.__swift_as_cont: 0x280
-+  __TEXT.__swift5_proto: 0x2bc
-+  __TEXT.__swift5_types: 0x164
-+  __TEXT.__cstring: 0x534a
-+  __TEXT.__swift_as_entry: 0xdc
-+  __TEXT.__swift_as_ret: 0x19c
-+  __TEXT.__swift_as_cont: 0x2b0
-   __TEXT.__objc_classname: 0x141
-   __TEXT.__objc_methname: 0x77d
-   __TEXT.__objc_methtype: 0xb4
--  __TEXT.__swift5_mpenum: 0x2c
--  __TEXT.__swift5_capture: 0x844
-+  __TEXT.__swift5_mpenum: 0x34
-+  __TEXT.__swift5_capture: 0x7f4
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__unwind_info: 0x1830
--  __TEXT.__eh_frame: 0x3914
--  __DATA_CONST.__const: 0x2ce8
-+  __TEXT.__unwind_info: 0x1958
-+  __TEXT.__eh_frame: 0x3df8
-+  __DATA_CONST.__const: 0x2e80
-   __DATA_CONST.__objc_classlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__auth_got: 0x1690
--  __DATA_CONST.__got: 0x688
--  __DATA_CONST.__auth_ptr: 0x778
-+  __DATA_CONST.__auth_got: 0x1838
-+  __DATA_CONST.__got: 0x730
-+  __DATA_CONST.__auth_ptr: 0x7b0
-   __DATA.__objc_const: 0xbf0
-   __DATA.__objc_selrefs: 0x138
-   __DATA.__objc_data: 0xa0
--  __DATA.__data: 0x1f80
--  __DATA.__bss: 0x5080
--  __DATA.__common: 0x268
-+  __DATA.__data: 0x2008
-+  __DATA.__bss: 0x5180
-+  __DATA.__common: 0x278
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/FoundationModels.framework/FoundationModels
-+  - /System/Library/Frameworks/ImageIO.framework/ImageIO
-   - /System/Library/Frameworks/Network.framework/Network
-   - /System/Library/PrivateFrameworks/ArgumentParserInternal.framework/ArgumentParserInternal
-   - /usr/lib/libMobileGestalt.dylib
+-2.0.55.1.102
++2.0.59.0.0
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/Frameworks/ImageIO.framework/ImageIO
+
 -  Functions: 1713
 -  Symbols:   1092
 -  CStrings:  464
 +  Functions: 1775
 +  Symbols:   1169
 +  CStrings:  478
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_entry : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__objc_data : content changed
 Symbols:
 + _$s10Foundation12CharacterSetV17controlCharactersACvgZ
 + _$s10Foundation12CharacterSetV8containsySbs7UnicodeO6ScalarVF
@@ -303,5 +265,4 @@ CStrings:
 - "[Model assets are unavailable. Try again later.]\n"
 - "fm schema object --name Restaurant --string title \\\n  --object address --schema \"$(fm schema object --name Address --string zipcode)\""
 - "fm schema object --name Restaurant \\\n  --string 'name' --description 'Name of the restaurant' \\\n  --double 'average_rating' --description 'Rating between 1 and 5' --optional \\\n  --string 'tags' --array --description 'Tags for the restaurant' --optional \\\n  --string 'address.street' --string 'address.zip'\n\nfm schema object --name Restaurant \\\n  --string 'title' \\\n  --object 'address' --schema \"$(fm schema object --name Address --string zipcode --string country)\"\n\nfm schema object --name SearchResult \\\n  --anyOf \\\n  --schema \"$(fm schema object --name Found --string name)\" \\\n  --schema \"$(fm schema object --name NotFound --string reason)\""
-
 ```

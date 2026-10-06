@@ -2,14 +2,15 @@
 
 > `/System/Library/HIDPlugins/AppleSPUHIDStatistics.plugin/AppleSPUHIDStatistics`
 
-```diff
+### Section Size Changes
 
- 1087.0.5.0.0
--  __TEXT.__text: 0xf510
-+  __TEXT.__text: 0xf514
-   __TEXT.__gcc_except_tab: 0x14e4
-   __TEXT.__const: 0xff
-   __TEXT.__cstring: 0x2048
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf510` | `0xf514` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __Z20spu_log_get_aop_logsjmPFvPvPKcPKvmbES_ : 796 -> 800
 ```

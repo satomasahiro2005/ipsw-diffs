@@ -2,92 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/ScreenSharingKit.framework/ScreenSharingKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2615ec` | `0x267f64` | **`+0x6978`** |
+| `__TEXT.__eh_frame` | `0x18138` | `0x18878` | **`+0x740`** |
+| `__TEXT.__cstring` | `0x9145` | `0x96c5` | **`+0x580`** |
+| `__TEXT.__swift_as_cont` | `0x1910` | `0x17c4` | **`-0x14c`** |
+| `__TEXT.__unwind_info` | `0x8e78` | `0x8f10` | **`+0x98`** |
+| `__TEXT.__constg_swiftt` | `0x88f0` | `0x885c` | **`-0x94`** |
+| `__AUTH_CONST.__objc_const` | `0xab20` | `0xaba8` | **`+0x88`** |
+| `__AUTH.__data` | `0x8c18` | `0x8b98` | **`-0x80`** |
+| `__TEXT.__const` | `0x19654` | `0x195f4` | **`-0x60`** |
+| `__AUTH.__objc_data` | `0x2b40` | `0x2af0` | **`-0x50`** |
+| `__AUTH_CONST.__const` | `0x10a90` | `0x10ae0` | **`+0x50`** |
+| `__DATA.__bss` | `0x1d780` | `0x1d730` | **`-0x50`** |
+| `__DATA.__data` | `0x57f8` | `0x57b0` | **`-0x48`** |
+| `__TEXT.__swift_as_entry` | `0x9d4` | `0xa1c` | **`+0x48`** |
+| `__TEXT.__swift5_capture` | `0x3d30` | `0x3d68` | **`+0x38`** |
+| `__TEXT.__swift_as_ret` | `0xa70` | `0xaa4` | **`+0x34`** |
+| `__TEXT.__oslogstring` | `0xb9c5` | `0xb9e5` | **`+0x20`** |
+| `__DATA.__common` | `0x278` | `0x288` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0x7932` | `0x7936` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__swift5_reflstr`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2615ec
-+  __TEXT.__text: 0x267f64
-   __TEXT.__objc_methlist: 0xf64
--  __TEXT.__const: 0x19654
--  __TEXT.__constg_swiftt: 0x88f0
--  __TEXT.__swift5_typeref: 0x7932
-+  __TEXT.__const: 0x195f4
-+  __TEXT.__constg_swiftt: 0x885c
-+  __TEXT.__swift5_typeref: 0x7936
-   __TEXT.__swift5_reflstr: 0x8eb5
-   __TEXT.__swift5_fieldmd: 0x7100
-   __TEXT.__swift5_builtin: 0x294
-   __TEXT.__swift5_assocty: 0x798
--  __TEXT.__swift5_capture: 0x3d30
--  __TEXT.__oslogstring: 0xb9c5
--  __TEXT.__cstring: 0x9145
-+  __TEXT.__swift5_capture: 0x3d68
-+  __TEXT.__oslogstring: 0xb9e5
-+  __TEXT.__cstring: 0x96c5
-   __TEXT.__swift5_proto: 0x10a8
-   __TEXT.__swift5_types: 0x6f8
--  __TEXT.__swift_as_entry: 0x9d4
--  __TEXT.__swift_as_ret: 0xa70
--  __TEXT.__swift_as_cont: 0x1910
-+  __TEXT.__swift_as_entry: 0xa1c
-+  __TEXT.__swift_as_ret: 0xaa4
-+  __TEXT.__swift_as_cont: 0x17c4
-   __TEXT.__swift5_protos: 0x14c
-   __TEXT.__swift5_mpenum: 0xc8
--  __TEXT.__unwind_info: 0x8e78
--  __TEXT.__eh_frame: 0x18138
-+  __TEXT.__unwind_info: 0x8f10
-+  __TEXT.__eh_frame: 0x18878
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-114.44.0.0.0
++114.48.0.0.0
 
-   __DATA_CONST.__objc_selrefs: 0xe08
-   __DATA_CONST.__objc_protorefs: 0xd8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x10a90
--  __AUTH_CONST.__objc_const: 0xab20
-+  __AUTH_CONST.__const: 0x10ae0
-+  __AUTH_CONST.__objc_const: 0xaba8
-   __AUTH_CONST.__auth_got: 0x1840
--  __AUTH.__objc_data: 0x2b40
--  __AUTH.__data: 0x8c18
--  __DATA.__data: 0x57f8
--  __DATA.__bss: 0x1d780
--  __DATA.__common: 0x278
-+  __AUTH.__objc_data: 0x2af0
-+  __AUTH.__data: 0x8b98
-+  __DATA.__data: 0x57b0
-+  __DATA.__bss: 0x1d730
-+  __DATA.__common: 0x288
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9655
--  Symbols:   5702
--  CStrings:  1558
+-  Symbols:   3410
+-  CStrings:  1552
 +  Functions: 9612
-+  Symbols:   5705
-+  CStrings:  1579
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_reflstr : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
++  Symbols:   3408
++  CStrings:  1573
 Symbols:
 + ___swift_closure_destructor.125Tm
 + ___swift_closure_destructor.131Tm
@@ -131,5 +86,4 @@ CStrings:
 + "reconfigurePlaybackPrimitives(for:)"
 + "sessionActivated()"
 - "Session is already in a terminal state. Ignoring"
-
 ```

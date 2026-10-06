@@ -2,91 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/BiomeLibrary.framework/BiomeLibrary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x74170c` | `0x748b3c` | **`+0x7430`** |
+| `__AUTH_CONST.__objc_const` | `0xa14e0` | `0xa1d40` | **`+0x860`** |
+| `__AUTH.__objc_data` | `0xa8e0` | `0xb080` | **`+0x7a0`** |
+| `__DATA_DIRTY.__objc_data` | `0xbf80` | `0xb990` | **`-0x5f0`** |
+| `__TEXT.__cstring` | `0x4dc45` | `0x4e0ec` | **`+0x4a7`** |
+| `__TEXT.__objc_methlist` | `0x4f9e4` | `0x4fd44` | **`+0x360`** |
+| `__AUTH_CONST.__cfstring` | `0x4aaa0` | `0x4acc0` | **`+0x220`** |
+| `__DATA_CONST.__const` | `0x1e8c8` | `0x1e9b8` | **`+0xf0`** |
+| `__DATA_CONST.__objc_arraydata` | `0xafc8` | `0xb0a8` | **`+0xe0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x12688` | `0x12748` | **`+0xc0`** |
+| `__TEXT.__const` | `0x4718` | `0x47b8` | **`+0xa0`** |
+| `__DATA.__objc_ivar` | `0x8060` | `0x80f4` | **`+0x94`** |
+| `__TEXT.__unwind_info` | `0xf6f0` | `0xf768` | **`+0x78`** |
+| `__TEXT.__constg_swiftt` | `0x560` | `0x5b8` | **`+0x58`** |
+| `__AUTH.__data` | `0xc8` | `0x118` | **`+0x50`** |
+| `__TEXT.__swift5_fieldmd` | `0x1f0` | `0x210` | **`+0x20`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x6648` | `0x6660` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x22e0` | `0x22f8` | **`+0x18`** |
+| `__TEXT.__swift5_typeref` | `0x172` | `0x17e` | **`+0xc`** |
+| `__DATA_CONST.__got` | `0x1bf0` | `0x1bf8` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1b20` | `0x1b28` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x7c` | `0x84` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x74170c
--  __TEXT.__objc_methlist: 0x4f9e4
--  __TEXT.__const: 0x4718
--  __TEXT.__swift5_typeref: 0x172
-+  __TEXT.__text: 0x748b3c
-+  __TEXT.__objc_methlist: 0x4fd44
-+  __TEXT.__const: 0x47b8
-+  __TEXT.__swift5_typeref: 0x17e
-   __TEXT.__swift5_capture: 0x30
--  __TEXT.__cstring: 0x4dc45
--  __TEXT.__constg_swiftt: 0x560
--  __TEXT.__swift5_fieldmd: 0x1f0
--  __TEXT.__swift5_types: 0x7c
-+  __TEXT.__cstring: 0x4e0ec
-+  __TEXT.__constg_swiftt: 0x5b8
-+  __TEXT.__swift5_fieldmd: 0x210
-+  __TEXT.__swift5_types: 0x84
-   __TEXT.__oslogstring: 0x47
--  __TEXT.__unwind_info: 0xf6f0
-+  __TEXT.__unwind_info: 0xf768
-   __TEXT.__eh_frame: 0x40
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1e8c8
--  __DATA_CONST.__objc_classlist: 0x22e0
-+  __DATA_CONST.__const: 0x1e9b8
-+  __DATA_CONST.__objc_classlist: 0x22f8
-   __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x12688
-+  __DATA_CONST.__objc_selrefs: 0x12748
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x1b20
--  __DATA_CONST.__objc_arraydata: 0xafc8
--  __DATA_CONST.__got: 0x1bf0
-+  __DATA_CONST.__objc_superrefs: 0x1b28
-+  __DATA_CONST.__objc_arraydata: 0xb0a8
-+  __DATA_CONST.__got: 0x1bf8
-   __AUTH_CONST.__const: 0x9ad8
--  __AUTH_CONST.__cfstring: 0x4aaa0
--  __AUTH_CONST.__objc_const: 0xa14e0
--  __AUTH_CONST.__objc_arrayobj: 0x6648
-+  __AUTH_CONST.__cfstring: 0x4acc0
-+  __AUTH_CONST.__objc_const: 0xa1d40
-+  __AUTH_CONST.__objc_arrayobj: 0x6660
-   __AUTH_CONST.__objc_intobj: 0x300
-   __AUTH_CONST.__auth_got: 0x3a0
--  __AUTH.__objc_data: 0xa8e0
--  __AUTH.__data: 0xc8
--  __DATA.__objc_ivar: 0x8060
-+  __AUTH.__objc_data: 0xb080
-+  __AUTH.__data: 0x118
-+  __DATA.__objc_ivar: 0x80f4
-   __DATA.__data: 0x328
-   __DATA.__bss: 0x18
--  __DATA_DIRTY.__objc_data: 0xbf80
-+  __DATA_DIRTY.__objc_data: 0xb990
-   __DATA_DIRTY.__data: 0x430
-   __DATA_DIRTY.__bss: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+-420.0.0.0.0
++426.0.0.0.0
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 28467
--  Symbols:   87841
--  CStrings:  19243
+-  Symbols:   52579
+-  CStrings:  9686
 +  Functions: 28554
-+  Symbols:   88070
-+  CStrings:  19281
- 
-Sections:
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   52727
++  CStrings:  9707
 Symbols:
 + +[BMSiriODDAssistantLLMSiriDigests columns]
 + +[BMSiriODDAssistantLLMSiriDigests eventWithData:dataVersion:]
@@ -234,26 +189,6 @@ Symbols:
 + __OBJC_CLASS_PROTOCOLS_$_BMSiriODDAssistantLLMSiriDigests
 + __OBJC_CLASS_RO_$_BMSiriODDAssistantLLMSiriDigests
 + __OBJC_METACLASS_RO_$_BMSiriODDAssistantLLMSiriDigests
-+ _objc_msgSend$ODDAssistantLLMSiriDigests
-+ _objc_msgSend$configurationForODDAssistantLLMSiriDigests
-+ _objc_msgSend$contextualFollowUpCount
-+ _objc_msgSend$digestDate
-+ _objc_msgSend$executionCategory
-+ _objc_msgSend$hasContextualFollowUpCount
-+ _objc_msgSend$hasOnScreenAwarenessCount
-+ _objc_msgSend$hasSiriAppResumeCount
-+ _objc_msgSend$hasWkaSummarizationCount
-+ _objc_msgSend$initWithOddId:deviceAggregationId:userAggregationId:digestDate:userAggregationIdRotationDate:userAggregationIdExpirationDate:deviceType:programCode:systemBuild:dataSharingOptInStatus:viewInterface:audioInterfaceVendorId:audioInterfaceProductId:asrLocation:nlLocation:siriInputLocaleLanguageCode:siriInputLocaleCountryCode:subDomain:invocationSource:executionCategory:orchestrationMode:totalTurnCount:validTurnCount:wkaSummarizationCount:onScreenAwarenessCount:contextualFollowUpCount:siriAppResumeCount:
-+ _objc_msgSend$onScreenAwarenessCount
-+ _objc_msgSend$orchestrationMode
-+ _objc_msgSend$siriAppResumeCount
-+ _objc_msgSend$siriInputLocaleCountryCode
-+ _objc_msgSend$siriInputLocaleLanguageCode
-+ _objc_msgSend$storeConfigurationForODDAssistantLLMSiriDigests
-+ _objc_msgSend$syncPolicyForODDAssistantLLMSiriDigests
-+ _objc_msgSend$userAggregationIdExpirationDate
-+ _objc_msgSend$userAggregationIdRotationDate
-+ _objc_msgSend$wkaSummarizationCount
 + _symbolic _____ 12BiomeLibrary026_BMIPBridgePrivateMLClientB4NodeC
 + _symbolic _____ 12BiomeLibrary029_BMIPBridgeUnilogSafariSearchB4NodeC
 CStrings:
@@ -282,5 +217,4 @@ CStrings:
 + "wkaSummarizationCount"
 - "ErrorBotDetectionFailure"
 - "ErrorUnableToSignInWithCredentials"
-
 ```

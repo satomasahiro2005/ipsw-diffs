@@ -2,69 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/CoreHAP.framework/CoreHAP`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2af29c` | `0x2af7dc` | **`+0x540`** |
+| `__TEXT.__oslogstring` | `0x450b2` | `0x4514e` | **`+0x9c`** |
+| `__TEXT.__gcc_except_tab` | `0x5f00` | `0x5eb8` | **`-0x48`** |
+| `__AUTH_CONST.__objc_const` | `0x2b280` | `0x2b2c0` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x146a9` | `0x146d5` | **`+0x2c`** |
+| `__DATA_CONST.__const` | `0x59c0` | `0x59e8` | **`+0x28`** |
+| `__TEXT.__objc_methlist` | `0x18c98` | `0x18cc0` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x1498` | `0x14b8` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8338` | `0x8358` | **`+0x20`** |
+| `__TEXT.__const` | `0x1238` | `0x1240` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x77d8` | `0x77d0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1490.2.0.1.1
--  __TEXT.__text: 0x2af29c
--  __TEXT.__objc_methlist: 0x18c98
--  __TEXT.__const: 0x1238
 +1493.1.5.1.1
-+  __TEXT.__text: 0x2af7dc
-+  __TEXT.__objc_methlist: 0x18cc0
-+  __TEXT.__const: 0x1240
-   __TEXT.__dlopen_cstrs: 0x4e
-   __TEXT.__constg_swiftt: 0x960
-   __TEXT.__swift5_typeref: 0x3e4
 
-   __TEXT.__swift5_assocty: 0xc0
-   __TEXT.__swift5_proto: 0x50
-   __TEXT.__swift5_types: 0x30
--  __TEXT.__cstring: 0x146a9
--  __TEXT.__oslogstring: 0x450b2
-+  __TEXT.__cstring: 0x146d5
-+  __TEXT.__oslogstring: 0x4514e
-   __TEXT.__swift5_capture: 0x288
--  __TEXT.__gcc_except_tab: 0x5f00
--  __TEXT.__unwind_info: 0x77d8
-+  __TEXT.__gcc_except_tab: 0x5eb8
-+  __TEXT.__unwind_info: 0x77d0
-   __TEXT.__eh_frame: 0x1080
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x59c0
-+  __DATA_CONST.__const: 0x59e8
-   __DATA_CONST.__objc_classlist: 0xc20
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x3b0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8338
-+  __DATA_CONST.__objc_selrefs: 0x8358
-   __DATA_CONST.__objc_protorefs: 0x100
-   __DATA_CONST.__objc_superrefs: 0xa68
-   __DATA_CONST.__objc_arraydata: 0x200
-   __DATA_CONST.__got: 0x1030
--  __AUTH_CONST.__const: 0x1498
-+  __AUTH_CONST.__const: 0x14b8
-   __AUTH_CONST.__cfstring: 0x10080
--  __AUTH_CONST.__objc_const: 0x2b280
-+  __AUTH_CONST.__objc_const: 0x2b2c0
-   __AUTH_CONST.__objc_intobj: 0x738
-   __AUTH_CONST.__objc_floatobj: 0x20
-   __AUTH_CONST.__objc_doubleobj: 0x40
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9858
--  Symbols:   20215
+-  Symbols:   16520
 -  CStrings:  7178
 +  Functions: 9860
-+  Symbols:   20221
++  Symbols:   16522
 +  CStrings:  7181
- 
 Symbols:
 + -[HAP2AccessoryServerController operationQueue]
 + -[HAPMetadataTuple hmf_fastEncodedSize]
@@ -219,11 +185,6 @@ Symbols:
 + ___40-[HAP2CoAPIOThread _unregisterConsumer:]_block_invoke_2
 + ___40-[HAP2CoAPIOThread _unregisterConsumer:]_block_invoke_3
 + ___block_descriptor_40_e8_32s_e43_B32?0"HAP2CoAPIOThreadQueueEntry"8Q16^B24ls32l8
-+ _objc_msgSend$hmf_fastEncodedSize
-+ _objc_msgSend$hmf_fastEncodedSizeForObject:
-+ _objc_msgSend$indexesOfObjectsPassingTest:
-+ _objc_msgSend$objectsAtIndexes:
-+ _objc_msgSend$openTransportWithResume:completion:
 - -[HAPAccessoryServerBrowser isThreadAccessoryDiscoveredWithAccessoryServerIdentifier:]
 - -[HAPAccessoryServerBrowserHAP2Adapter isThreadAccessoryDiscoveredWithAccessoryServerIdentifier:]
 - GCC_except_table6092
@@ -375,7 +336,6 @@ Symbols:
 - GCC_except_table9109
 - ___45-[HAP2CoAPIOThread _processQueueWithContext:]_block_invoke_3
 - ___97-[HAPAccessoryServerBrowserHAP2Adapter isThreadAccessoryDiscoveredWithAccessoryServerIdentifier:]_block_invoke
-- _objc_msgSend$isKnownToSystemCommissioner
 CStrings:
 + "B32@?0@\"HAP2CoAPIOThreadQueueEntry\"8Q16^B24"
 + "Coap IO reclaimed %lu in-flight + %lu queued slot(s) on unregister (%lu/%lu now in use)"

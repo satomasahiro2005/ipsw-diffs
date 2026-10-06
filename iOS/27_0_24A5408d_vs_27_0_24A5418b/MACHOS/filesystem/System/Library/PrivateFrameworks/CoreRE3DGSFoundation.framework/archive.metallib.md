@@ -2,25 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/CoreRE3DGSFoundation.framework/archive.metallib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__object` | `0x94e0` | `0x8020` | **`-0x14c0`** |
+| `__TEXT.__fragment` | `0xf380` | `0xf390` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__compute`
+- `__TEXT.__mesh`
+- `__TEXT.__metallib`
 - `__TEXT.__reflection`
 - `__TEXT.__vertex`
-- `__TEXT.__compute`
-- `__TEXT.__metallib`
-
-```diff
-
-   __TEXT.__reflection: 0x10400
-   __TEXT.__vertex: 0xc820
--  __TEXT.__fragment: 0xf560
-+  __TEXT.__fragment: 0xf570
-   __TEXT.__compute: 0x27240
--  __TEXT.__mesh: 0x8830
--  __TEXT.__object: 0x93c0
-+  __TEXT.__mesh: 0x7640
-+  __TEXT.__object: 0x7f30
-   __TEXT.__descriptor: 0x2660
-   __TEXT.__metallib: 0x19bda0
-   Functions: 0
-```

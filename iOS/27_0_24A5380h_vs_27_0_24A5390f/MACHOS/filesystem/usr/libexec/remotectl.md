@@ -2,15 +2,14 @@
 
 > `/usr/libexec/remotectl`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -245.0.4.0.0
 +245.0.6.0.0
-   __TEXT.__text: 0x1a5dc
-   __TEXT.__auth_stubs: 0x1bf0
-   __TEXT.__objc_stubs: 0x3e0
 ```

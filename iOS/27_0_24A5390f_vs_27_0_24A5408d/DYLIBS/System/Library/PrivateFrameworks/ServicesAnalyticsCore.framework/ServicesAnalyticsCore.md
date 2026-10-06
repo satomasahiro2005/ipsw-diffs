@@ -2,70 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/ServicesAnalyticsCore.framework/ServicesAnalyticsCore`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x170d8` | `0x18fe8` | **`+0x1f10`** |
+| `__DATA.__bss` | `0x7080` | `0x7f00` | **`+0xe80`** |
+| `__TEXT.__const` | `0x38d0` | `0x4170` | **`+0x8a0`** |
+| `__AUTH_CONST.__const` | `0x1af8` | `0x1df8` | **`+0x300`** |
+| `__DATA.__data` | `0x990` | `0xae0` | **`+0x150`** |
+| `__TEXT.__swift5_typeref` | `0x912` | `0xa5e` | **`+0x14c`** |
+| `__TEXT.__constg_swiftt` | `0x86c` | `0x944` | **`+0xd8`** |
+| `__TEXT.__unwind_info` | `0x920` | `0x9d0` | **`+0xb0`** |
+| `__TEXT.__swift5_fieldmd` | `0xa80` | `0xb10` | **`+0x90`** |
+| `__TEXT.__swift5_proto` | `0x384` | `0x3f8` | **`+0x74`** |
+| `__TEXT.__eh_frame` | `0xb48` | `0xb90` | **`+0x48`** |
+| `__TEXT.__swift5_mpenum` | `0x8` | `0x40` | **`+0x38`** |
+| `__TEXT.__swift5_builtin` | `0x14` | `0x3c` | **`+0x28`** |
+| `__AUTH_CONST.__auth_got` | `0x398` | `0x380` | **`-0x18`** |
+| `__TEXT.__swift5_assocty` | `0x30` | `0x18` | **`-0x18`** |
+| `__TEXT.__swift5_types` | `0xd4` | `0xec` | **`+0x18`** |
+| `__TEXT.__cstring` | `0x798` | `0x788` | **`-0x10`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__swift5_reflstr`
+
+### Other Changes
 
 ```diff
 
 -3.0.54.0.0
--  __TEXT.__text: 0x170d8
--  __TEXT.__const: 0x38d0
--  __TEXT.__cstring: 0x798
--  __TEXT.__constg_swiftt: 0x86c
--  __TEXT.__swift5_typeref: 0x912
--  __TEXT.__swift5_fieldmd: 0xa80
--  __TEXT.__swift5_types: 0xd4
 +3.0.59.0.0
-+  __TEXT.__text: 0x18fe8
-+  __TEXT.__const: 0x4170
-+  __TEXT.__cstring: 0x788
-+  __TEXT.__constg_swiftt: 0x944
-+  __TEXT.__swift5_typeref: 0xa5e
-+  __TEXT.__swift5_fieldmd: 0xb10
-+  __TEXT.__swift5_types: 0xec
-   __TEXT.__swift5_reflstr: 0x4b2
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__swift5_proto: 0x384
--  __TEXT.__swift5_builtin: 0x14
--  __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__swift5_assocty: 0x30
-+  __TEXT.__swift5_proto: 0x3f8
-+  __TEXT.__swift5_builtin: 0x3c
-+  __TEXT.__swift5_mpenum: 0x40
-+  __TEXT.__swift5_assocty: 0x18
-   __TEXT.__swift5_capture: 0x20
--  __TEXT.__unwind_info: 0x920
--  __TEXT.__eh_frame: 0xb48
-+  __TEXT.__unwind_info: 0x9d0
-+  __TEXT.__eh_frame: 0xb90
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1af8
--  __AUTH_CONST.__auth_got: 0x398
-+  __AUTH_CONST.__const: 0x1df8
-+  __AUTH_CONST.__auth_got: 0x380
-   __AUTH.__data: 0x220
--  __DATA.__data: 0x990
--  __DATA.__bss: 0x7080
-+  __DATA.__data: 0xae0
-+  __DATA.__bss: 0x7f00
-   __DATA_DIRTY.__data: 0x80
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /usr/lib/libSystem.B.dylib
 
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 807
 -  Symbols:   349
 -  CStrings:  56
 +  Functions: 875
 +  Symbols:   385
 +  CStrings:  54
- 
 Symbols:
 + ___swift_memcpy100_8
 + ___swift_memcpy169_8

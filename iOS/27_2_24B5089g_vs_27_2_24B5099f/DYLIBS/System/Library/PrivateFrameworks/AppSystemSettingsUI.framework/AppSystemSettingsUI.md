@@ -2,87 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/AppSystemSettingsUI.framework/AppSystemSettingsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x25040` | `0x260b4` | **`+0x1074`** |
+| `__TEXT.__cstring` | `0x237c` | `0x263c` | **`+0x2c0`** |
+| `__TEXT.__oslogstring` | `0x855` | `0xa75` | **`+0x220`** |
+| `__AUTH_CONST.__objc_const` | `0x1738` | `0x18b0` | **`+0x178`** |
+| `__DATA_CONST.__const` | `0x508` | `0x620` | **`+0x118`** |
+| `__AUTH_CONST.__cfstring` | `0x1600` | `0x16c0` | **`+0xc0`** |
+| `__TEXT.__objc_methlist` | `0xd04` | `0xd7c` | **`+0x78`** |
+| `__DATA_CONST.__objc_selrefs` | `0xf30` | `0xf98` | **`+0x68`** |
+| `__TEXT.__unwind_info` | `0x9a8` | `0xa08` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0x2f8` | `0x348` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x384` | `0x3a4` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x84` | `0xa0` | **`+0x1c`** |
+| `__DATA_CONST.__got` | `0x720` | `0x730` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xb70` | `0xb78` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x70` | `0x78` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x30` | `0x38` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2027.1.3.0.0
--  __TEXT.__text: 0x23c9c
--  __TEXT.__objc_methlist: 0xd04
 +2027.1.4.0.0
-+  __TEXT.__text: 0x24cd4
-+  __TEXT.__objc_methlist: 0xd7c
-   __TEXT.__const: 0xe18
--  __TEXT.__gcc_except_tab: 0x384
--  __TEXT.__cstring: 0x237c
--  __TEXT.__oslogstring: 0x855
-+  __TEXT.__gcc_except_tab: 0x3a4
-+  __TEXT.__cstring: 0x263c
-+  __TEXT.__oslogstring: 0xa75
-   __TEXT.__ustring: 0x2f6
-   __TEXT.__dlopen_cstrs: 0x5e
-   __TEXT.__constg_swiftt: 0x36c
 
-   __TEXT.__swift_as_ret: 0x3c
-   __TEXT.__swift_as_cont: 0x60
-   __TEXT.__swift5_assocty: 0x78
--  __TEXT.__unwind_info: 0xbd0
-+  __TEXT.__unwind_info: 0xc28
-   __TEXT.__eh_frame: 0x900
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x508
--  __DATA_CONST.__objc_classlist: 0x70
-+  __DATA_CONST.__const: 0x620
-+  __DATA_CONST.__objc_classlist: 0x78
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xf30
-+  __DATA_CONST.__objc_selrefs: 0xf98
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__objc_superrefs: 0x30
-+  __DATA_CONST.__objc_superrefs: 0x38
-   __DATA_CONST.__objc_arraydata: 0x18
--  __DATA_CONST.__got: 0x720
-+  __DATA_CONST.__got: 0x730
-   __AUTH_CONST.__const: 0x890
--  __AUTH_CONST.__cfstring: 0x1600
--  __AUTH_CONST.__objc_const: 0x1738
-+  __AUTH_CONST.__cfstring: 0x16c0
-+  __AUTH_CONST.__objc_const: 0x18b0
-   __AUTH_CONST.__objc_intobj: 0x300
-   __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__auth_got: 0xb70
--  __AUTH.__objc_data: 0x2f8
-+  __AUTH_CONST.__auth_got: 0xb78
-+  __AUTH.__objc_data: 0x348
-   __AUTH.__data: 0x50
--  __DATA.__objc_ivar: 0x84
-+  __DATA.__objc_ivar: 0xa0
-   __DATA.__data: 0x368
-   __DATA_DIRTY.__objc_data: 0x380
-   __DATA_DIRTY.__data: 0x770
-
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/PrivateFrameworks/AccountsUI.framework/AccountsUI
-   - /System/Library/PrivateFrameworks/AppSystemSettings.framework/AppSystemSettings
 +  - /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
-   - /System/Library/PrivateFrameworks/BulletinBoard.framework/BulletinBoard
-   - /System/Library/PrivateFrameworks/CTMessagingSettings.framework/CTMessagingSettings
-   - /System/Library/PrivateFrameworks/CommunicationSafetySettingsUI.framework/CommunicationSafetySettingsUI
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 741
 -  Symbols:   1043
 -  CStrings:  329
 +  Functions: 760
 +  Symbols:   1082
 +  CStrings:  352
- 
 Symbols:
 + -[AUSiriPolicyController .cxx_destruct]
 + -[AUSiriPolicyController applyUseWithSiriEnabled:]

@@ -2,17 +2,16 @@
 
 > `/System/Library/NanoTimeKit/ComplicationBundles/NanoCalendarComplicationsCompanion.bundle/NanoCalendarComplicationsCompanion`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__oslogstring`
+
+### Other Changes
 
 ```diff
 
 -746.0.0.0.0
 +749.0.0.0.0
-   __TEXT.__text: 0x112a4
-   __TEXT.__auth_stubs: 0x630
-   __TEXT.__objc_stubs: 0x34a0
 CStrings:
 + "==> alerts_ttl [Aug  4 2026 16:23:57]"
 + "==> always_on_display [Aug  4 2026 16:23:57]"

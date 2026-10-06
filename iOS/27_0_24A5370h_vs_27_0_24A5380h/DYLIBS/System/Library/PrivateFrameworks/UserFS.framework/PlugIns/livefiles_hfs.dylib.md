@@ -2,34 +2,24 @@
 
 > `/System/Library/PrivateFrameworks/UserFS.framework/PlugIns/livefiles_hfs.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3d388` | `0x3d360` | **`-0x28`** |
+| `__TEXT.__unwind_info` | `0x6e0` | `0x6d8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x3d388
-+  __TEXT.__text: 0x3d360
-   __TEXT.__const: 0x4e60
-   __TEXT.__oslogstring: 0x5ecc
-   __TEXT.__cstring: 0x26fb
--  __TEXT.__unwind_info: 0x6e0
-+  __TEXT.__unwind_info: 0x6d8
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__weak_got: 0x8
-   __DATA_CONST.__got: 0x0
+-748.0.0.0.0
++749.0.0.0.0
 
-   __DATA.__common: 0x100
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /usr/lib/libSystem.B.dylib
 -  Functions: 676
--  Symbols:   1141
+-  Symbols:   645
 +  Functions: 677
-+  Symbols:   1143
-   CStrings:  747
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__cstring : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
++  Symbols:   646
 Symbols:
 + _hfs_set_summary
 Functions:
@@ -53,5 +43,4 @@ Functions:
 ~ _hfs_find_summary_free : 160 -> 172
 + _hfs_set_summary
 ~ _InsertKeyRecord : 412 -> 420
-
 ```

@@ -2,19 +2,13 @@
 
 > `/System/Library/Frameworks/CoreImage.framework/photo_style_archive_bin.metallib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__compute`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__metallib` | `0xdd500` | `0xe0700` | **`+0x3200`** |
+| `__TEXT.__compute` | `0x94b0` | `0x94c0` | **`+0x10`** |
+
+### Same-size Content Changes
+
 - `__TEXT.__descriptor`
-
-```diff
-
-   __TEXT.__reflection: 0x1dc0
-   __TEXT.__compute: 0x9290
-   __TEXT.__descriptor: 0x6e0
--  __TEXT.__metallib: 0xdd500
-+  __TEXT.__metallib: 0xe0700
-   Functions: 0
-   Symbols:   0
-   CStrings:  0
-```

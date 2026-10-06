@@ -2,55 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/AirPlaySupport.framework/AirPlaySupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcc71c` | `0xcc820` | **`+0x104`** |
+| `__TEXT.__cstring` | `0x33f15` | `0x33f56` | **`+0x41`** |
+| `__AUTH_CONST.__cfstring` | `0x72c0` | `0x72e0` | **`+0x20`** |
+| `__AUTH_CONST.__const` | `0x3c78` | `0x3c98` | **`+0x20`** |
+| `__DATA.__bss` | `0xc00` | `0xc08` | **`+0x8`** |
+| `__DATA_DIRTY.__bss` | `0x5f8` | `0x600` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1005.7.1.0.0
--  __TEXT.__text: 0xc8400
 +1005.8.1.0.0
-+  __TEXT.__text: 0xc8504
-   __TEXT.__objc_methlist: 0x374
-   __TEXT.__const: 0xf38
-   __TEXT.__dlopen_cstrs: 0x158
-   __TEXT.__gcc_except_tab: 0x368
--  __TEXT.__cstring: 0x33f15
-+  __TEXT.__cstring: 0x33f56
-   __TEXT.__oslogstring: 0x252
--  __TEXT.__unwind_info: 0x29b0
-+  __TEXT.__unwind_info: 0x29b8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_superrefs: 0x28
-   __DATA_CONST.__objc_arraydata: 0x60
-   __DATA_CONST.__got: 0x7a8
--  __AUTH_CONST.__const: 0x3c78
--  __AUTH_CONST.__cfstring: 0x72c0
-+  __AUTH_CONST.__const: 0x3c98
-+  __AUTH_CONST.__cfstring: 0x72e0
-   __AUTH_CONST.__objc_const: 0x7a8
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x48
-
-   __DATA.__data: 0x2778
-   __DATA_DIRTY.__objc_data: 0x1e0
-   __DATA_DIRTY.__data: 0x8a8
--  __DATA_DIRTY.__bss: 0x5f8
-+  __DATA_DIRTY.__bss: 0x600
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2625
--  Symbols:   5150
+-  Symbols:   4969
 -  CStrings:  4481
 +  Functions: 2627
-+  Symbols:   5154
++  Symbols:   4973
 +  CStrings:  4484
- 
 Symbols:
 + GCC_except_table1476
 + GCC_except_table1601

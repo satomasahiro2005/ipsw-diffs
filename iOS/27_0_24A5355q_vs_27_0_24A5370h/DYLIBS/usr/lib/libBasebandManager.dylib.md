@@ -2,87 +2,36 @@
 
 > `/usr/lib/libBasebandManager.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x277e84` | `0x279d78` | **`+0x1ef4`** |
+| `__TEXT.__gcc_except_tab` | `0x39dc8` | `0x3a0b8` | **`+0x2f0`** |
+| `__TEXT.__oslogstring` | `0xd034` | `0xd1d2` | **`+0x19e`** |
+| `__AUTH_CONST.__const` | `0x109d8` | `0x10a98` | **`+0xc0`** |
+| `__TEXT.__const` | `0x134a0` | `0x13550` | **`+0xb0`** |
+| `__TEXT.__unwind_info` | `0xac70` | `0xacf8` | **`+0x88`** |
+| `__DATA_CONST.__got` | `0x22b0` | `0x22e0` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x8bea` | `0x8c0f` | **`+0x25`** |
+| `__AUTH_CONST.__cfstring` | `0xaa0` | `0xac0` | **`+0x20`** |
+| `__DATA_DIRTY.__bss` | `0x16ba` | `0x16ca` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x680` | `0x688` | **`+0x8`** |
+| `__TEXT.__init_offsets` | `0x174` | `0x178` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1563.0.0.0.0
--  __TEXT.__text: 0x277e84 sha256:1576bdda7fec3d3236eeaf5bd51502353261113d24db92ac658cbb9470e752c9
--  __TEXT.__init_offsets: 0x174 sha256:dd077e3fdfd52ca5b00d230f62aa2b676796e6b36d01fb6da4eae37a41aeca53
--  __TEXT.__objc_methlist: 0x52c sha256:3a8f5f186515fb0519f81dd483ac95b997142085d21917474f60b297e57ea3d3
--  __TEXT.__const: 0x134a0 sha256:162659fb206c719153e4320fb6436a3f5dc1f6c97dfa76ca98281ee112d2739a
 +1570.0.0.0.0
-+  __TEXT.__text: 0x279d78 sha256:9e9195c7a1dfce21764ed16a11d3651364f83fdf9b66dec257d479f1e9ce7659
-+  __TEXT.__init_offsets: 0x178 sha256:395e1d70649a9f39785762bd21d99c0f493bf1ca29b60e72950cfccd023b5676
-+  __TEXT.__objc_methlist: 0x52c sha256:eace8aa750868f5d072e24d99f9a32446e0f6be180d8df1eea23e1e40f538993
-+  __TEXT.__const: 0x13550 sha256:cfbc9496795b8be893a2474efa3e849a3d518eaed636afac096e3b55508eae40
-   __TEXT.__dlopen_cstrs: 0x52 sha256:29acd7219694fca78f7574f631520e278537bb87ff4b91897332deb41b178b75
--  __TEXT.__gcc_except_tab: 0x39dc8 sha256:2e7199073c359f72288e31c0efdf8ccb914a0683bf2365a922ec7320c63ee97e
--  __TEXT.__cstring: 0x8bea sha256:eb8109ae980b1be43073c7db82ee7f582a2eea3b11f4be505da7b7f881738b4f
--  __TEXT.__oslogstring: 0xd034 sha256:29fa60d9bf7ca3a8a1646644567d4ded56af489d100e4a0d06ed5f8e016d681e
--  __TEXT.__unwind_info: 0xac70 sha256:2deff65368470c999d35937a35b800121e08b1c372d1e4da00e8c07b4c63aa5b
-+  __TEXT.__gcc_except_tab: 0x3a0b8 sha256:2d5902fddc8fcbf09fe5379ce7403f5fb601db5954b26961fb98f205fa1056e5
-+  __TEXT.__cstring: 0x8c0f sha256:cd53609335b713c8baeab6f04d2388ec3976bae77b2b5078e06daffdc65ba44b
-+  __TEXT.__oslogstring: 0xd1d2 sha256:a092bd8e20d8ad39a524f1cdeb86770e2d17917e1f87fcc4b9056fa93d77df4c
-+  __TEXT.__unwind_info: 0xacf8 sha256:4443fb100257092cffbc0b916a163fb8ad91f3fd6d6a9f32e26db736e50f8621
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2330 sha256:091d69be674c5a08b6cb069b5bfa7af5e9585e763a618600cc4be14488bbc2c2
--  __DATA_CONST.__objc_classlist: 0x38 sha256:527ce7df5d0a3fb060771eb791faa9dc3b85b381fa6559a56e078f0a904388b4
--  __DATA_CONST.__objc_protolist: 0x30 sha256:9102536e3aefeec5f8466e23d0ea3744f2ce9cbf3b56a12026983af994ca4b66
-+  __DATA_CONST.__const: 0x2330 sha256:bcc119a82bff9f588abda6ecc1e2f6e5b408ed51458f4076bcedd0b317662c22
-+  __DATA_CONST.__objc_classlist: 0x38 sha256:507f0ad0be35e88bcfa5eb87c57715f243b1427568b76ce95a618807e334f3f4
-+  __DATA_CONST.__objc_protolist: 0x30 sha256:71effa19cc34b0e27604fd47b75cd60bc041e7d2a5638a7225f6773697be096d
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x158 sha256:bd24b9ee9933b45cc17d1cd19eac759d7ce6b8275b013846b7a3485bf617361a
--  __DATA_CONST.__objc_selrefs: 0x680 sha256:cb5e79aa08b58bc6d5db192b91c058ddf262ba645536aa63f7757f43cf49f2de
--  __DATA_CONST.__objc_superrefs: 0x28 sha256:04ee6d4a8f4d1e72c75e9b1246f2f04a32ceb704ee156a1ddd056183bb9598c0
--  __DATA_CONST.__got: 0x22b0 sha256:1262b4806ca42af731fe9a19b693130174a378075bdb0353a65adf8a5343b66b
--  __AUTH_CONST.__const: 0x109d8 sha256:c720c2e8eb417d6bae8e06f3498f039f7d9ea1282a8256948560174d26f1fd38
--  __AUTH_CONST.__cfstring: 0xaa0 sha256:90177030a9d8029dc22fe7266e9cd6fae6d9f315e8571400db6e3dfec61c51b9
--  __AUTH_CONST.__objc_const: 0xa68 sha256:0193672b000a2c198cc02b34da3045191095888c948e72905f245ea5790fd9fb
--  __AUTH_CONST.__weak_auth_got: 0x20 sha256:52c9b9f7054537bcbd1b0015a017ad87fc2d84bd7ab268479e6b5286366dc849
--  __AUTH_CONST.__objc_intobj: 0x18 sha256:8d20ac068d3500864f97789d93085209de746aefa0c02f202b5e65bef511d5a5
-+  __DATA_CONST.__weak_got: 0x158 sha256:ff3213fa1ce1ba6398d6ed3b5796ea9f75f0ee2f6fee800578b367d7c1f8538a
-+  __DATA_CONST.__objc_selrefs: 0x688 sha256:b15a7ccd8db22e5965d489b28fedec14f11d60da4e2d05991c617351efe4af3b
-+  __DATA_CONST.__objc_superrefs: 0x28 sha256:ee2f8163f31d24c25b95eafdd212c9bf5fb16fc7768c6ffd3b99580912d83380
-+  __DATA_CONST.__got: 0x22e0 sha256:cfe58abee824d5a2ec37619346d0ffdb2c8775ce1a8382748872d570eddb498e
-+  __AUTH_CONST.__const: 0x10a98 sha256:ae2bb9ac1445e2f1c081d4f20203e3be9cb094e80a45f5a84b5ef59f6275c846
-+  __AUTH_CONST.__cfstring: 0xac0 sha256:e494477ec3467c9512befb0508bf014422bc04df9d1953b88bc72baa71c6bcb0
-+  __AUTH_CONST.__objc_const: 0xa68 sha256:4d23177f04bb0145e524d29d30583490912a8ce884ef315cab0e15fbab6eea76
-+  __AUTH_CONST.__weak_auth_got: 0x20 sha256:9a19875ee94a4545924efc5e43b8a7cc9a6e9ae6f74f8f241796dbaf9c719f6b
-+  __AUTH_CONST.__objc_intobj: 0x18 sha256:55e6e951af3718a57a5fc4d2bcc1dcbfca713cb80c1123e0fd6ce1d3f525c3bf
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x140 sha256:e06a56ee9123d88bd7c7b6af199239ce3f9b130fc5b6078e837fc7967d13767b
-+  __AUTH.__objc_data: 0x140 sha256:cb2c1654900e3a51c7dba5d15ce8304844154ba9a956ffe889c19baa72a3a0d1
-   __DATA.__objc_ivar: 0x4c sha256:589f9cc5b865b3b6d08b16e8c9db4d95dca5d652e39eaf9c97df40c276d25225
--  __DATA.__data: 0x570 sha256:73bff8878f726e8c29a009cd5a9255d443a4c4c2e855d08e9412085bdb91c734
-+  __DATA.__data: 0x570 sha256:56e6aa5d28acbfa09941737531e137f67d0ae311bb70559a2ccc84eecd015df9
-   __DATA.__bss: 0x4d0 sha256:0abe90866c4fbc89ae5b4512dde9df1c441a2f5923ee3e7932cf34532a6bf773
-   __DATA.__common: 0xa sha256:01d448afd928065458cf670b60f5a594d735af0172c8d67f22a81680132681ca
--  __DATA_DIRTY.__objc_data: 0xf0 sha256:2a673c961229676a6d3e533318b98042af74e0c76702da1cc564b9e148cf5aa7
-+  __DATA_DIRTY.__objc_data: 0xf0 sha256:703819dbe9c455613250fae40e123bad56d79c6aa47ef8a108ea2690b348443d
-   __DATA_DIRTY.__data: 0x630 sha256:aaf5ef5879ea010dc2595fe05761cc01ebb60e1c352528cc7305d3415bef0229
-   __DATA_DIRTY.__common: 0x118 sha256:1f6c9de2e555d5d589e1149fed58f9cbcc101739df97d4a4d694a13f1242c5b9
--  __DATA_DIRTY.__bss: 0x16ba sha256:921a641e2920d9625a92bc291ac1e7d09518ebd57c7e00e4fefd2816c83fd442
-+  __DATA_DIRTY.__bss: 0x16ca sha256:dc71f7ecb0b72f3483b3ecf3cd2503ece0dcb33059d45d52cc48842d03b7e1e8
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CallKit.framework/CallKit
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libprotobuf-lite.dylib
-   - /usr/lib/libprotobuf.dylib
--  UUID: 1349ED2B-28D3-3DF6-ADBE-D67366C33083
 -  Functions: 6783
--  Symbols:   20590
--  CStrings:  2769
-+  UUID: 6850D250-87D6-3A31-AC40-F098D044D20B
+-  Symbols:   11780
+-  CStrings:  2682
 +  Functions: 6805
-+  Symbols:   20651
-+  CStrings:  2780
- 
++  Symbols:   11814
++  CStrings:  2691
 Symbols:
 + __ZL15localizedStringP10__CFBundleP8NSStringS2_
 + __ZN12capabilities5trace22supportedModemFeaturesEv
@@ -1096,16 +1045,7 @@ Symbols:
 + __ZZNSt3__18__format26__handle_replacement_fieldB9fqe220106IPKcNS_26basic_format_parse_contextIcEENS_20basic_format_contextINS_20back_insert_iteratorINS0_15__output_bufferIcEEEEcEEEET_SC_SC_RT0_RT1_ENKUlSC_E_clIoEEDaSC_
 + __ZZNSt3__18__format26__handle_replacement_fieldB9fqe220106IPKcNS_26basic_format_parse_contextIcEENS_20basic_format_contextINS_20back_insert_iteratorINS0_15__output_bufferIcEEEEcEEEET_SC_SC_RT0_RT1_ENKUlSC_E_clIxEEDaSC_
 + __ZZNSt3__18__format26__handle_replacement_fieldB9fqe220106IPKcNS_26basic_format_parse_contextIcEENS_20basic_format_contextINS_20back_insert_iteratorINS0_15__output_bufferIcEEEEcEEEET_SC_SC_RT0_RT1_ENKUlSC_E_clIyEEDaSC_
-+ ____ZN9SARModule20initializeAudio_syncEv_block_invoke.35
-+ ____ZN9SARModule27setupTxIndicationWorkaroundEv_block_invoke.79
-+ ___block_descriptor_tmp.82
-+ ___cxx_global_var_init.100
-+ ___cxx_global_var_init.101
-+ ___cxx_global_var_init.102
-+ ___cxx_global_var_init.103
-+ ___cxx_global_var_init.99
 + __dyld_lazy_load
-+ _objc_msgSend$stringByReplacingOccurrencesOfString:withString:
 - __ZN3abm26getActiveTraceChannelCountEv
 - __ZNKSt3__111__copy_implclB9fqe220100IPKN4lcdm6SubTLVENS_16__deque_iteratorIS3_PS3_RS3_PS7_lLl128EEELi0EEENS_4pairIT_T0_EESC_SC_SD_
 - __ZNKSt3__111__move_implINS_17_ClassicAlgPolicyEEclB9fqe220100IPN4lcdm10CrashEntryENS_16__deque_iteratorIS5_S6_RS5_PS6_lLl56EEELi0EEENS_4pairIT_T0_EESC_SC_SD_
@@ -2085,12 +2025,6 @@ Symbols:
 - __ZZNSt3__18__format26__handle_replacement_fieldB9fqe220100IPKcNS_26basic_format_parse_contextIcEENS_20basic_format_contextINS_20back_insert_iteratorINS0_15__output_bufferIcEEEEcEEEET_SC_SC_RT0_RT1_ENKUlSC_E_clIoEEDaSC_
 - __ZZNSt3__18__format26__handle_replacement_fieldB9fqe220100IPKcNS_26basic_format_parse_contextIcEENS_20basic_format_contextINS_20back_insert_iteratorINS0_15__output_bufferIcEEEEcEEEET_SC_SC_RT0_RT1_ENKUlSC_E_clIxEEDaSC_
 - __ZZNSt3__18__format26__handle_replacement_fieldB9fqe220100IPKcNS_26basic_format_parse_contextIcEENS_20basic_format_contextINS_20back_insert_iteratorINS0_15__output_bufferIcEEEEcEEEET_SC_SC_RT0_RT1_ENKUlSC_E_clIyEEDaSC_
-- ____ZN9SARModule27setupTxIndicationWorkaroundEv_block_invoke.71
-- ___block_descriptor_tmp.61
-- ___cxx_global_var_init.95
-- ___cxx_global_var_init.96
-- ___cxx_global_var_init.97
-- ___cxx_global_var_init.98
 CStrings:
 + "AppleBasebandManager-AppleBasebandServices_Manager-1570"
 + "AppleBasebandServices_Manager-1570"
@@ -2105,5 +2039,4 @@ CStrings:
 + "notificationsupport::localization"
 - "AppleBasebandManager-AppleBasebandServices_Manager-1563"
 - "AppleBasebandServices_Manager-1563"
-
 ```

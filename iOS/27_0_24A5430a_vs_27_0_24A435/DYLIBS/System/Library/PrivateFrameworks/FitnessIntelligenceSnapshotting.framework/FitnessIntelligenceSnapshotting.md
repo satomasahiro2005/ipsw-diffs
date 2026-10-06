@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/FitnessIntelligenceSnapshotting.framework/FitnessIntelligenceSnapshotting`
 
-```diff
+### Section Size Changes
 
- 2027.0.77.1.3
--  __TEXT.__text: 0x8045c
-+  __TEXT.__text: 0x80458
-   __TEXT.__objc_methlist: 0x28c
-   __TEXT.__const: 0x1768
-   __TEXT.__constg_swiftt: 0x758
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8045c` | `0x80458` | **`-0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_212ddfbd8 -> sub_2135b8bd8 : 980 -> 992
 ~ sub_212ddffac -> sub_2135b8fb8 : 992 -> 984

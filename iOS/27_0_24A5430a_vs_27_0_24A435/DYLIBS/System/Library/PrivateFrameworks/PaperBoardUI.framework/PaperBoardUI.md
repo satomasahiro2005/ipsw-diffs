@@ -2,12 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/PaperBoardUI.framework/PaperBoardUI`
 
-```diff
+### Section Size Changes
 
- 355.0.8.0.0
--  __TEXT.__text: 0x78af4
-+  __TEXT.__text: 0x78afc
-   __TEXT.__objc_methlist: 0x972c
-   __TEXT.__const: 0x838
-   __TEXT.__cstring: 0x7b16
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x78af4` | `0x78afc` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
+```diff
+CStrings:
++ "Aug 10 2026 22:04:35"
+- "Aug 11 2026 23:22:25"
 ```

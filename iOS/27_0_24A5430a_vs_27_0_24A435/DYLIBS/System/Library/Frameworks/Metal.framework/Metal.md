@@ -2,63 +2,31 @@
 
 > `/System/Library/Frameworks/Metal.framework/Metal`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e6d38` | `0x1e8758` | **`+0x1a20`** |
+| `__TEXT.__const` | `0x2d790` | `0x2e620` | **`+0xe90`** |
+| `__TEXT.__cstring` | `0x233f9` | `0x2378c` | **`+0x393`** |
+| `__AUTH_CONST.__objc_const` | `0x46bf0` | `0x46f58` | **`+0x368`** |
+| `__TEXT.__objc_methlist` | `0x1eb8c` | `0x1ee04` | **`+0x278`** |
+| `__AUTH_CONST.__cfstring` | `0x12ca0` | `0x12e00` | **`+0x160`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8e80` | `0x8f38` | **`+0xb8`** |
+| `__DATA.__objc_ivar` | `0x2234` | `0x225c` | **`+0x28`** |
+| `__TEXT.__gcc_except_tab` | `0xc3ac` | `0xc3bc` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x8b18` | `0x8b08` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
- 382.5.3.0.0
--  __TEXT.__text: 0x1e6d38
--  __TEXT.__objc_methlist: 0x1eb8c
--  __TEXT.__cstring: 0x233f9
--  __TEXT.__gcc_except_tab: 0xc3ac
--  __TEXT.__const: 0x2d790
-+  __TEXT.__text: 0x1e8758
-+  __TEXT.__objc_methlist: 0x1ee04
-+  __TEXT.__cstring: 0x2378c
-+  __TEXT.__gcc_except_tab: 0xc3bc
-+  __TEXT.__const: 0x2e620
-   __TEXT.__oslogstring: 0x22d6
-   __TEXT.__ustring: 0x1be
--  __TEXT.__unwind_info: 0x8b18
-+  __TEXT.__unwind_info: 0x8b08
-   __TEXT.__eh_frame: 0x78
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_protolist: 0x490
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x8e80
-+  __DATA_CONST.__objc_selrefs: 0x8f38
-   __DATA_CONST.__objc_protorefs: 0x68
-   __DATA_CONST.__objc_superrefs: 0xc08
-   __DATA_CONST.__objc_arraydata: 0x10
-   __DATA_CONST.__got: 0xa30
-   __AUTH_CONST.__const: 0x4f80
--  __AUTH_CONST.__cfstring: 0x12ca0
--  __AUTH_CONST.__objc_const: 0x46bf0
-+  __AUTH_CONST.__cfstring: 0x12e00
-+  __AUTH_CONST.__objc_const: 0x46f58
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__objc_intobj: 0x2b8
-   __AUTH_CONST.__objc_arrayobj: 0x30
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__auth_got: 0xe98
-   __AUTH.__objc_data: 0x4380
--  __DATA.__objc_ivar: 0x2234
-+  __DATA.__objc_ivar: 0x225c
-   __DATA.__data: 0x4498
-   __DATA.__common: 0x40
-   __DATA_DIRTY.__objc_data: 0x40b0
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 13495
--  Symbols:   25322
--  CStrings:  4572
+-  Symbols:   22506
+-  CStrings:  4574
 +  Functions: 13563
-+  Symbols:   25419
-+  CStrings:  4604
- 
++  Symbols:   22582
++  CStrings:  4606
 Symbols:
 + -[MTL4ComputePipelineDescriptor contentionRelief]
 + -[MTL4ComputePipelineDescriptor forwardProgressUsage]
@@ -160,27 +128,6 @@ Symbols:
 + __ZZ25MTLGetUnpackFloatFunctionEN4$_548__invokeEPKvPf
 + __ZZ25MTLGetUnpackFloatFunctionEN4$_558__invokeEPKvPf
 + _isRGBPixelFormat
-+ _objc_msgSend$contentionRelief
-+ _objc_msgSend$enableYieldChecks
-+ _objc_msgSend$familySupportsAtomicWaitNotify
-+ _objc_msgSend$familySupportsMXUNarrowTileSizes
-+ _objc_msgSend$familySupportsPackUnpackSmallInteger
-+ _objc_msgSend$familySupportsRGBTextureBuffers
-+ _objc_msgSend$familySupportsSIMDGroupParallelForwardProgress
-+ _objc_msgSend$familySupportsTextureViewMinLOD
-+ _objc_msgSend$forwardProgressUsage
-+ _objc_msgSend$minLOD
-+ _objc_msgSend$optimizeForPersistentKernel
-+ _objc_msgSend$setContentionRelief:
-+ _objc_msgSend$setForwardProgressUsage:
-+ _objc_msgSend$setMinLOD:
-+ _objc_msgSend$setOptimizeForPersistentKernel:
-+ _objc_msgSend$supportsAtomicWaitNotify
-+ _objc_msgSend$supportsMXUNarrowTileSizes
-+ _objc_msgSend$supportsPackUnpackSmallInteger
-+ _objc_msgSend$supportsRGBTextureBuffers
-+ _objc_msgSend$supportsSIMDGroupParallelForwardProgress
-+ _objc_msgSend$supportsTextureViewMinLOD
 - GCC_except_table149
 - GCC_except_table318
 - GCC_except_table330
@@ -207,7 +154,10 @@ Symbols:
 - GCC_except_table856
 CStrings:
 + "-[_MTLComputePipelineState recommendedPersistentThreadgroupsPerGridForThreadsPerThreadgroup:]"
++ "22:27:50"
 + "Atomic Wait and Notify"
++ "Aug 10 2026"
++ "Aug 10 2026 22:27:50"
 + "ForwardProgressUsageFnAttr"
 + "MTLGPUFamilyApple11"
 + "MTLPixelFormatRGB16Bfloat"
@@ -238,4 +188,7 @@ CStrings:
 + "forwardProgressUsage ="
 + "optimizeForPersistentKernel ="
 + "recommendedPersistentThreadgroupsPerGridForThreadsPerThreadgroup must be overridden by the driver."
+- "23:51:28"
+- "Aug 11 2026"
+- "Aug 11 2026 23:51:28"
 ```

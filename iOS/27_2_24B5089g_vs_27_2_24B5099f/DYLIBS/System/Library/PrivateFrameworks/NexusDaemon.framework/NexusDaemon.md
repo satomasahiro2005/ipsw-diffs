@@ -2,19 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/NexusDaemon.framework/NexusDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x741c0` | `0x741f0` | **`+0x30`** |
+
+### Other Changes
+
 ```diff
 
 -910.24.0.0.0
--  __TEXT.__text: 0x70b78
 +910.29.0.0.0
-+  __TEXT.__text: 0x70ba8
-   __TEXT.__objc_methlist: 0x39c
-   __TEXT.__const: 0xe68
-   __TEXT.__constg_swiftt: 0x4f0
 Functions:
-~ sub_296cf96a8 -> sub_29692e6a8 : 1236 -> 1240
-~ sub_296cfcb80 -> sub_296931b84 : 6712 -> 6736
-~ sub_296d06a68 -> sub_29693ba84 : 260 -> 272
-~ sub_296d5d094 -> sub_2969920bc : 108 -> 112
-~ sub_296d618fc -> sub_296996928 : 1724 -> 1728
+~ sub_29a4878bc -> sub_29a1388bc : 1244 -> 1248
+~ sub_29a48aee4 -> sub_29a13bee8 : 6772 -> 6796
+~ sub_29a49520c -> sub_29a146228 : 260 -> 272
+~ sub_29a4ee274 -> sub_29a19f29c : 108 -> 112
+~ sub_29a4f2cd4 -> sub_29a1a3d00 : 1732 -> 1736
 ```

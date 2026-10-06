@@ -2,104 +2,67 @@
 
 > `/System/Library/PrivateFrameworks/MedicalIDDaemon.framework/MedicalIDDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1340` | `0x993c` | **`+0x85fc`** |
+| `__DATA.__bss` | `—` | `0x780` | **`+0x780`** |
+| `__TEXT.__const` | `0x8a` | `0x6d8` | **`+0x64e`** |
+| `__TEXT.__oslogstring` | `0x6d` | `0x5cd` | **`+0x560`** |
+| `__DATA.__data` | `0xe0` | `0x588` | **`+0x4a8`** |
+| `__AUTH_CONST.__auth_got` | `0x178` | `0x588` | **`+0x410`** |
+| `__AUTH_CONST.__objc_const` | `0x1f0` | `0x548` | **`+0x358`** |
+| `__TEXT.__swift5_typeref` | `0x17` | `0x2a4` | **`+0x28d`** |
+| `__AUTH.__objc_data` | `0x48` | `0x2c0` | **`+0x278`** |
+| `__TEXT.__constg_swiftt` | `0x68` | `0x270` | **`+0x208`** |
+| `__AUTH_CONST.__const` | `0x21` | `0x219` | **`+0x1f8`** |
+| `__TEXT.__cstring` | `0x11` | `0x201` | **`+0x1f0`** |
+| `__DATA_CONST.__objc_selrefs` | `0xf8` | `0x280` | **`+0x188`** |
+| `__TEXT.__unwind_info` | `0xd8` | `0x258` | **`+0x180`** |
+| `__TEXT.__swift5_fieldmd` | `0x1c` | `0x198` | **`+0x17c`** |
+| `__TEXT.__objc_methlist` | `0x1bc` | `0x304` | **`+0x148`** |
+| `__TEXT.__swift5_reflstr` | `0x11` | `0x131` | **`+0x120`** |
+| `__AUTH.__data` | `—` | `0x110` | **`+0x110`** |
+| `__TEXT.__swift5_assocty` | `—` | `0x78` | **`+0x78`** |
+| `__DATA_CONST.__objc_protolist` | `0x20` | `0x90` | **`+0x70`** |
+| `__TEXT.__swift5_capture` | `—` | `0x4c` | **`+0x4c`** |
+| `__TEXT.__swift5_proto` | `—` | `0x44` | **`+0x44`** |
+| `__DATA_CONST.__objc_protorefs` | `0x10` | `0x48` | **`+0x38`** |
+| `__DATA_CONST.__const` | `0x88` | `0xb0` | **`+0x28`** |
+| `__TEXT.__swift5_builtin` | `—` | `0x28` | **`+0x28`** |
+| `__TEXT.__swift5_types` | `0x4` | `0x28` | **`+0x24`** |
+| `__DATA.__common` | `—` | `0x20` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x8` | `0x20` | **`+0x18`** |
+| `__TEXT.__swift5_protos` | `—` | `0x8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.36.2.7
--  __TEXT.__text: 0x129c
--  __TEXT.__objc_methlist: 0x1bc
--  __TEXT.__const: 0x8a
--  __TEXT.__oslogstring: 0x6d
--  __TEXT.__constg_swiftt: 0x68
--  __TEXT.__swift5_typeref: 0x17
--  __TEXT.__swift5_reflstr: 0x11
--  __TEXT.__swift5_fieldmd: 0x1c
--  __TEXT.__swift5_types: 0x4
--  __TEXT.__cstring: 0x11
--  __TEXT.__unwind_info: 0x100
 +7027.1.45.2.4
-+  __TEXT.__text: 0x949c
-+  __TEXT.__objc_methlist: 0x304
-+  __TEXT.__const: 0x6d8
-+  __TEXT.__swift5_typeref: 0x2a4
-+  __TEXT.__swift5_fieldmd: 0x198
-+  __TEXT.__constg_swiftt: 0x270
-+  __TEXT.__oslogstring: 0x5cd
-+  __TEXT.__swift5_reflstr: 0x131
-+  __TEXT.__swift5_builtin: 0x28
-+  __TEXT.__swift5_assocty: 0x78
-+  __TEXT.__swift5_protos: 0x8
-+  __TEXT.__swift5_proto: 0x44
-+  __TEXT.__swift5_types: 0x28
-+  __TEXT.__cstring: 0x201
-+  __TEXT.__swift5_capture: 0x4c
-+  __TEXT.__unwind_info: 0x328
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x88
--  __DATA_CONST.__objc_classlist: 0x8
--  __DATA_CONST.__objc_protolist: 0x20
-+  __DATA_CONST.__const: 0xb0
-+  __DATA_CONST.__objc_classlist: 0x20
-+  __DATA_CONST.__objc_protolist: 0x90
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xf8
--  __DATA_CONST.__objc_protorefs: 0x10
-+  __DATA_CONST.__objc_selrefs: 0x280
-+  __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x21
--  __AUTH_CONST.__objc_const: 0x1f0
--  __AUTH_CONST.__auth_got: 0x178
--  __AUTH.__objc_data: 0x48
--  __DATA.__data: 0xe0
-+  __AUTH_CONST.__const: 0x219
-+  __AUTH_CONST.__objc_const: 0x548
-+  __AUTH_CONST.__auth_got: 0x588
-+  __AUTH.__objc_data: 0x2c0
-+  __AUTH.__data: 0x110
-+  __DATA.__data: 0x588
-+  __DATA.__common: 0x20
-   __DATA_DIRTY.__objc_data: 0x98
-   __DATA_DIRTY.__data: 0x50
-   __DATA_DIRTY.__common: 0x18
 +  - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/HealthKit.framework/HealthKit
+
 +  - /System/Library/Frameworks/UIKit.framework/UIKit
 +  - /System/Library/PrivateFrameworks/CoreFollowUp.framework/CoreFollowUp
-   - /System/Library/PrivateFrameworks/HealthDaemon.framework/HealthDaemon
+
 +  - /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
+
 +  - /usr/lib/swift/libswiftAccelerate.dylib
-   - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
+
 +  - /usr/lib/swift/libswiftCoreImage.dylib
-   - /usr/lib/swift/libswiftCoreLocation.dylib
+
 +  - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
+
 +  - /usr/lib/swift/libswiftSpatial.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 42
--  Symbols:   107
+-  Symbols:   105
 -  CStrings:  3
 +  Functions: 187
-+  Symbols:   356
++  Symbols:   315
 +  CStrings:  36
- 
 Symbols:
 + _CNContactPhoneNumbersKey
 + _FLGroupIdentifierDevice
@@ -219,45 +182,6 @@ Symbols:
 + _kHKMedicalIDFollowUpClientIdentifier
 + _kHKMedicalIDFollowUpReviewActionIdentifier
 + _kHKMedicalIDFollowUpUniqueIdentifier
-+ _objc_msgSend$addProtectedDataObserver:queue:
-+ _objc_msgSend$bundleForClass:
-+ _objc_msgSend$database
-+ _objc_msgSend$dateSaved
-+ _objc_msgSend$emergencyContacts
-+ _objc_msgSend$features
-+ _objc_msgSend$fetchMedicalIDIfSetUpWithError:
-+ _objc_msgSend$initWithCategory:domainName:profile:
-+ _objc_msgSend$initWithClientIdentifier:
-+ _objc_msgSend$isMedicalIDAvailable
-+ _objc_msgSend$isProtectedDataAvailable
-+ _objc_msgSend$lock
-+ _objc_msgSend$medicalIDDataManager
-+ _objc_msgSend$medicalIdFollowUp
-+ _objc_msgSend$nameContactIdentifier
-+ _objc_msgSend$phoneNumberContactIdentifier
-+ _objc_msgSend$phoneNumbers
-+ _objc_msgSend$postFollowUpItem:completion:
-+ _objc_msgSend$registerProfileReadyObserver:queue:
-+ _objc_msgSend$removeProtectedDataObserver:
-+ _objc_msgSend$setActions:
-+ _objc_msgSend$setCategoryIdentifier:
-+ _objc_msgSend$setDate:forKey:error:
-+ _objc_msgSend$setDisplayStyle:
-+ _objc_msgSend$setExpirationDate:
-+ _objc_msgSend$setExtensionIdentifier:
-+ _objc_msgSend$setGroupIdentifier:
-+ _objc_msgSend$setIdentifier:
-+ _objc_msgSend$setInformativeText:
-+ _objc_msgSend$setLabel:
-+ _objc_msgSend$setNotification:
-+ _objc_msgSend$setOptions:
-+ _objc_msgSend$setTitle:
-+ _objc_msgSend$setUniqueIdentifier:
-+ _objc_msgSend$setUserInfo:
-+ _objc_msgSend$shared
-+ _objc_msgSend$sharedBehavior
-+ _objc_msgSend$unifiedContactWithIdentifier:keysToFetch:error:
-+ _objc_msgSend$unlock
 + _objc_release
 + _objc_release_x19
 + _objc_release_x24

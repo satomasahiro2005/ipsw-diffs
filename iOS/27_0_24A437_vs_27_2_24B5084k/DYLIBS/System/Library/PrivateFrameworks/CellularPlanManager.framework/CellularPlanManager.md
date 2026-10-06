@@ -2,51 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/CellularPlanManager.framework/CellularPlanManager`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x121f8` | `0x1296c` | **`+0x774`** |
+| `__DATA_CONST.__const` | `0xcc0` | `0xd88` | **`+0xc8`** |
+| `__TEXT.__oslogstring` | `0x573` | `0x5fc` | **`+0x89`** |
+| `__AUTH_CONST.__const` | `0x3e0` | `0x440` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x838` | `0x860` | **`+0x28`** |
+| `__TEXT.__cstring` | `0x226c` | `0x2284` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
 -13487.7.0.0.0
--  __TEXT.__text: 0x11ebc
 +13494.0.0.0.0
-+  __TEXT.__text: 0x1260c
-   __TEXT.__objc_methlist: 0x17c4
--  __TEXT.__cstring: 0x226c
-+  __TEXT.__cstring: 0x2284
-   __TEXT.__const: 0x60
-   __TEXT.__gcc_except_tab: 0x1b8
--  __TEXT.__oslogstring: 0x573
--  __TEXT.__unwind_info: 0x970
-+  __TEXT.__oslogstring: 0x5fc
-+  __TEXT.__unwind_info: 0x9a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xcc0
-+  __DATA_CONST.__const: 0xd88
-   __DATA_CONST.__objc_classlist: 0x98
-   __DATA_CONST.__objc_protolist: 0x38
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x50
-   __DATA_CONST.__got: 0x100
--  __AUTH_CONST.__const: 0x3e0
-+  __AUTH_CONST.__const: 0x440
-   __AUTH_CONST.__cfstring: 0x1b60
-   __AUTH_CONST.__objc_const: 0x26c8
-   __AUTH_CONST.__auth_got: 0x0
-
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 683
--  Symbols:   1319
+-  Symbols:   1107
 -  CStrings:  320
 +  Functions: 695
-+  Symbols:   1337
++  Symbols:   1120
 +  CStrings:  326
- 
 Symbols:
 + GCC_except_table155
 + GCC_except_table161
@@ -72,11 +51,6 @@ Symbols:
 + ___block_descriptor_56_e8_32b_e5_v8?0ls32l8
 + ___block_descriptor_56_e8_32o40o48o_e5_v8?0ls32l8s40l8s48l8
 + ___block_descriptor_56_e8_32o_e5_v8?0ls32l8
-+ _objc_msgSend$latitudeLongitudeOverride:
-+ _objc_msgSend$mccMncOverride:
-+ _objc_msgSend$setLatitude:andLongitude:
-+ _objc_msgSend$setMcc:andMnc:
-+ _objc_msgSend$showUiIgnoringActivationFlags:
 - GCC_except_table134
 - GCC_except_table143
 - GCC_except_table149

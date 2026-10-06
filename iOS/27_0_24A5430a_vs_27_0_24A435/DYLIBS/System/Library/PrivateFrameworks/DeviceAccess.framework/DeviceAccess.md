@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/DeviceAccess.framework/DeviceAccess`
 
-```diff
+### Section Size Changes
 
- 2700.34.0.0.0
--  __TEXT.__text: 0x54bfc
-+  __TEXT.__text: 0x54c00
-   __TEXT.__objc_methlist: 0x46e4
-   __TEXT.__const: 0x908
-   __TEXT.__cstring: 0xa223
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x54bfc` | `0x54c00` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_25ece50a8 -> sub_25f9e00a8 : 356 -> 360
+~ sub_25ebb40a8 -> sub_25f8c40a8 : 356 -> 360
 ```

@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/UniversalHIDKit.framework/UniversalHIDKit`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_3 : 28 -> 32

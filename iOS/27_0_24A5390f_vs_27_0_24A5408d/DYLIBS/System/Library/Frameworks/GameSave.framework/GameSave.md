@@ -2,6 +2,8 @@
 
 > `/System/Library/Frameworks/GameSave.framework/GameSave`
 
+### Other Changes
+
 ```diff
 Symbols:
 + _$s8GameSave0A21SyncedDirectoryHolderC23relinquishPresentedItem8toReaderyyyycSgYbc_tF09$sIeyB_Sgl8Bhy_Ieg_M8Ieghg_TRIeyB_SgIeyBhy_Tf1En_nTf4ng_n

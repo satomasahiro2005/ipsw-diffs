@@ -2,20 +2,16 @@
 
 > `/usr/lib/libolaf.dylib`
 
-```diff
+### Section Size Changes
 
- 193.0.0.0.0
--  __TEXT.__text: 0x252a78
-+  __TEXT.__text: 0x252b88
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__const: 0x3a268
-   __TEXT.__gcc_except_tab: 0x8b70
-   __TEXT.__cstring: 0x61511
--  __TEXT.__unwind_info: 0x3418
-+  __TEXT.__unwind_info: 0x3420
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x44be8
-   __DATA_CONST.__weak_got: 0x8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x252a78` | `0x252b88` | **`+0x110`** |
+| `__TEXT.__unwind_info` | `0x3418` | `0x3420` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __Z23NK_Set_Environ_SeverityPK15s_DB_Track_MeasP15s_DB_Sys_StatusP15s_Nav_Kalman_SDP15s_Nav_Kalman_WD : 756 -> 768
 ~ __Z13ds_NK_SummaryP9s_GN_Ptrs : 49832 -> 49812

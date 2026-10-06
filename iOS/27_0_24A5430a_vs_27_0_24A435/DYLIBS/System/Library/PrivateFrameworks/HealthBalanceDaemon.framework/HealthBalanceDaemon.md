@@ -2,103 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/HealthBalanceDaemon.framework/HealthBalanceDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x86198` | `0xe509c` | **`+0x5ef04`** |
+| `__TEXT.__const` | `0x2ae0` | `0x5080` | **`+0x25a0`** |
+| `__AUTH_CONST.__const` | `0x20a8` | `0x3d10` | **`+0x1c68`** |
+| `__DATA_DIRTY.__data` | `0x2898` | `0x40a8` | **`+0x1810`** |
+| `__DATA.__bss` | `0x1520` | `0x2c40` | **`+0x1720`** |
+| `__TEXT.__constg_swiftt` | `0x1608` | `0x2b68` | **`+0x1560`** |
+| `__TEXT.__swift5_reflstr` | `0x18d4` | `0x2cb4` | **`+0x13e0`** |
+| `__TEXT.__swift5_fieldmd` | `0x1460` | `0x25e8` | **`+0x1188`** |
+| `__TEXT.__oslogstring` | `0x2533` | `0x34b3` | **`+0xf80`** |
+| `__TEXT.__swift5_typeref` | `0x13f0` | `0x21a8` | **`+0xdb8`** |
+| `__TEXT.__eh_frame` | `0xf30` | `0x1bd0` | **`+0xca0`** |
+| `__TEXT.__unwind_info` | `0x1170` | `0x1c60` | **`+0xaf0`** |
+| `__DATA.__data` | `0x1198` | `0x1c68` | **`+0xad0`** |
+| `__AUTH_CONST.__auth_got` | `0x15b0` | `0x2038` | **`+0xa88`** |
+| `__AUTH_CONST.__objc_const` | `0x2738` | `0x30a0` | **`+0x968`** |
+| `__TEXT.__cstring` | `0xf73` | `0x18b3` | **`+0x940`** |
+| `__AUTH.__data` | `0x3e0` | `0x7d8` | **`+0x3f8`** |
+| `__DATA_DIRTY.__bss` | `0xb80` | `0xe80` | **`+0x300`** |
+| `__TEXT.__objc_methlist` | `0xa24` | `0xbd4` | **`+0x1b0`** |
+| `__TEXT.__swift5_proto` | `0x150` | `0x2a0` | **`+0x150`** |
+| `__DATA_DIRTY.__objc_data` | `0x890` | `0x9d8` | **`+0x148`** |
+| `__TEXT.__swift5_types` | `0x13c` | `0x284` | **`+0x148`** |
+| `__AUTH.__objc_data` | `0x2d0` | `0x410` | **`+0x140`** |
+| `__TEXT.__swift5_assocty` | `0x208` | `0x338` | **`+0x130`** |
+| `__DATA_CONST.__const` | `0xa0` | `0x1c0` | **`+0x120`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb58` | `0xc78` | **`+0x120`** |
+| `__TEXT.__swift5_capture` | `0x3a0` | `0x490` | **`+0xf0`** |
+| `__TEXT.__swift5_protos` | `0x54` | `0xbc` | **`+0x68`** |
+| `__TEXT.__swift5_builtin` | `0xb4` | `0xf0` | **`+0x3c`** |
+| `__DATA_DIRTY.__common` | `0xf0` | `0x128` | **`+0x38`** |
+| `__DATA_CONST.__objc_classlist` | `0xe0` | `0x110` | **`+0x30`** |
+| `__AUTH_CONST.__cfstring` | `0x20` | `0x40` | **`+0x20`** |
+| `__DATA.__common` | `—` | `0x10` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x210` | `0x220` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x110` | `0x118` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 7027.0.72.2.7
--  __TEXT.__text: 0x86198
--  __TEXT.__objc_methlist: 0xa24
--  __TEXT.__const: 0x2ae0
--  __TEXT.__swift5_typeref: 0x13f0
--  __TEXT.__swift5_fieldmd: 0x1460
--  __TEXT.__constg_swiftt: 0x1608
--  __TEXT.__swift5_builtin: 0xb4
--  __TEXT.__swift5_reflstr: 0x18d4
--  __TEXT.__swift5_assocty: 0x208
--  __TEXT.__swift5_protos: 0x54
--  __TEXT.__swift5_proto: 0x150
--  __TEXT.__swift5_types: 0x13c
--  __TEXT.__oslogstring: 0x2533
--  __TEXT.__swift5_capture: 0x3a0
--  __TEXT.__cstring: 0xf73
-+  __TEXT.__text: 0xe509c
-+  __TEXT.__objc_methlist: 0xbd4
-+  __TEXT.__const: 0x5080
-+  __TEXT.__swift5_typeref: 0x21a8
-+  __TEXT.__swift5_fieldmd: 0x25e8
-+  __TEXT.__constg_swiftt: 0x2b68
-+  __TEXT.__swift5_builtin: 0xf0
-+  __TEXT.__swift5_reflstr: 0x2cb4
-+  __TEXT.__swift5_assocty: 0x338
-+  __TEXT.__swift5_protos: 0xbc
-+  __TEXT.__swift5_proto: 0x2a0
-+  __TEXT.__swift5_types: 0x284
-+  __TEXT.__cstring: 0x18b3
-+  __TEXT.__oslogstring: 0x34b3
-+  __TEXT.__swift5_capture: 0x490
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x1170
--  __TEXT.__eh_frame: 0xf30
-+  __TEXT.__unwind_info: 0x1c60
-+  __TEXT.__eh_frame: 0x1bd0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xa0
--  __DATA_CONST.__objc_classlist: 0xe0
--  __DATA_CONST.__objc_protolist: 0x210
-+  __DATA_CONST.__const: 0x1c0
-+  __DATA_CONST.__objc_classlist: 0x110
-+  __DATA_CONST.__objc_protolist: 0x220
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb58
--  __DATA_CONST.__objc_protorefs: 0x110
-+  __DATA_CONST.__objc_selrefs: 0xc78
-+  __DATA_CONST.__objc_protorefs: 0x118
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x20a8
--  __AUTH_CONST.__cfstring: 0x20
--  __AUTH_CONST.__objc_const: 0x2738
--  __AUTH_CONST.__auth_got: 0x15b0
--  __AUTH.__objc_data: 0x2d0
--  __AUTH.__data: 0x3e0
--  __DATA.__data: 0x1198
--  __DATA_DIRTY.__objc_data: 0x890
--  __DATA_DIRTY.__data: 0x2898
--  __DATA_DIRTY.__bss: 0xb80
--  __DATA_DIRTY.__common: 0xf0
-+  __AUTH_CONST.__const: 0x3d10
-+  __AUTH_CONST.__cfstring: 0x40
-+  __AUTH_CONST.__objc_const: 0x30a0
-+  __AUTH_CONST.__auth_got: 0x2038
-+  __AUTH.__objc_data: 0x410
-+  __AUTH.__data: 0x7d8
-+  __DATA.__data: 0x1c68
-+  __DATA.__common: 0x10
-+  __DATA_DIRTY.__objc_data: 0x9d8
-+  __DATA_DIRTY.__data: 0x40a8
-+  __DATA_DIRTY.__bss: 0xe80
-+  __DATA_DIRTY.__common: 0x128
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/HealthKit.framework/HealthKit
-   - /System/Library/Frameworks/UserNotifications.framework/UserNotifications
 +  - /System/Library/PrivateFrameworks/AppliedSensingFitness.framework/AppliedSensingFitness
-   - /System/Library/PrivateFrameworks/ChronoServices.framework/ChronoServices
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/HealthBalance.framework/HealthBalance
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1672
--  Symbols:   1321
+-  Symbols:   1043
 -  CStrings:  239
 +  Functions: 2779
-+  Symbols:   1679
++  Symbols:   1366
 +  CStrings:  346
- 
 Symbols:
 + _HKCategoryTypeIdentifierSleepAnalysis
 + _HKCharacteristicTypeIdentifierActivityMoveMode
@@ -207,41 +162,6 @@ Symbols:
 + _get_witness_table 19HealthBalanceDaemon29DaytimeVitalsRequestEvaluatorCyAA0dE10CalculatorVAA0dE20SampleChangeProviderCAA021DatabaseProtectedDataK0VG0A10TopicsCore0fG0HPyHC
 + _get_witness_table s12LazySequenceVys07FlattenB0Vys0a3MapB0Vy12HealthDaemon31SleepDaySummaryCachedEnumeratorCSays6ResultOy0e7BalanceF0013DaytimeVitalsG7SessionVs5Error_pGGGGGSTHPyHC
 + _kHKHASharedUserDefaultsIdentifier
-+ _objc_msgSend$_productType
-+ _objc_msgSend$_startDate
-+ _objc_msgSend$addProfileObserver:
-+ _objc_msgSend$addProtectedDataObserver:queue:
-+ _objc_msgSend$anySampleOfType:profile:encodingOptions:predicate:error:
-+ _objc_msgSend$appleExerciseTime
-+ _objc_msgSend$appleStandHours
-+ _objc_msgSend$cacheIndex
-+ _objc_msgSend$capabilityIsSupportedOnAnyWatch:supportedOnLocalDevice:
-+ _objc_msgSend$celsius
-+ _objc_msgSend$characteristicTypeForIdentifier:
-+ _objc_msgSend$clientSourceForPersistentID:error:
-+ _objc_msgSend$countUnit
-+ _objc_msgSend$gramUnitWithMetricPrefix:
-+ _objc_msgSend$greenLightMeasurementsAreEnabled
-+ _objc_msgSend$hertzUnit
-+ _objc_msgSend$kilocalorieUnit
-+ _objc_msgSend$kilocalories
-+ _objc_msgSend$literUnitWithMetricPrefix:
-+ _objc_msgSend$meterUnit
-+ _objc_msgSend$milliseconds
-+ _objc_msgSend$minutes
-+ _objc_msgSend$objectForKey:
-+ _objc_msgSend$orderedQuantityValuesBySeriesForPredicate:profile:options:error:handler:
-+ _objc_msgSend$profileType
-+ _objc_msgSend$removeObjectForKey:
-+ _objc_msgSend$removeProfileObserver:
-+ _objc_msgSend$removeProtectedDataObserver:
-+ _objc_msgSend$secondUnitWithMetricPrefix:
-+ _objc_msgSend$seconds
-+ _objc_msgSend$supportsComputedUserCharacteristicCaching
-+ _objc_msgSend$unitDividedByUnit:
-+ _objc_msgSend$userCharacteristicForType:error:
-+ _objc_msgSend$userCharacteristicsManager
-+ _objc_msgSend$workoutType
 + _objc_retain_x10
 + _swift_coroFrameAlloc
 + _swift_cvw_instantiateLayoutString

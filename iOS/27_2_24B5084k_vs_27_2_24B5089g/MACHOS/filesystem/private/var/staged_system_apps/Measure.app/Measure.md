@@ -2,9 +2,11 @@
 
 > `/private/var/staged_system_apps/Measure.app/Measure`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 CStrings:

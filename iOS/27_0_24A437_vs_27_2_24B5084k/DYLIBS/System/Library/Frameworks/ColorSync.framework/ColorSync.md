@@ -2,49 +2,29 @@
 
 > `/System/Library/Frameworks/ColorSync.framework/ColorSync`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x68abc` | `0x6a128` | **`+0x166c`** |
+| `__AUTH_CONST.__cfstring` | `0x4de0` | `0x4d20` | **`-0xc0`** |
+| `__TEXT.__cstring` | `0x7144` | `0x7099` | **`-0xab`** |
+| `__TEXT.__unwind_info` | `0x12b8` | `0x12e8` | **`+0x30`** |
+| `__TEXT.__const` | `0x122910` | `0x122908` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3929.0.0.0.0
--  __TEXT.__text: 0x67978
--  __TEXT.__const: 0x122910
 +3929.1.3.0.0
-+  __TEXT.__text: 0x68fdc
-+  __TEXT.__const: 0x122908
-   __TEXT.__constg_swiftt: 0x204
-   __TEXT.__swift5_typeref: 0x156
-   __TEXT.__swift5_fieldmd: 0x270
 
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_proto: 0x4
--  __TEXT.__cstring: 0x7144
-+  __TEXT.__cstring: 0x7099
-   __TEXT.__oslogstring: 0xb
--  __TEXT.__unwind_info: 0x1708
-+  __TEXT.__unwind_info: 0x1748
-   __TEXT.__eh_frame: 0x7a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0x30
-   __DATA_CONST.__got: 0x110
-   __AUTH_CONST.__const: 0x73b8
--  __AUTH_CONST.__cfstring: 0x4de0
-+  __AUTH_CONST.__cfstring: 0x4d20
-   __AUTH_CONST.__weak_auth_got: 0x20
-   __AUTH_CONST.__auth_got: 0x7e8
-   __DATA.__data: 0x970
-
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 1729
--  Symbols:   3091
+-  Symbols:   3085
 -  CStrings:  905
 +  Functions: 1746
-+  Symbols:   3108
++  Symbols:   3102
 +  CStrings:  899
- 
 Symbols:
 + GCC_except_table1000
 + GCC_except_table1017

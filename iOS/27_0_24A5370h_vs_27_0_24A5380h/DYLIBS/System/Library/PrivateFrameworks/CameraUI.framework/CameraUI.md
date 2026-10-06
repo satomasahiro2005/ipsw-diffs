@@ -2,157 +2,71 @@
 
 > `/System/Library/PrivateFrameworks/CameraUI.framework/CameraUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3d3e08` | `0x3ebec0` | **`+0x180b8`** |
+| `__TEXT.__swift5_typeref` | `0x27830` | `0x2984e` | **`+0x201e`** |
+| `__TEXT.__const` | `0x22524` | `0x23544` | **`+0x1020`** |
+| `__TEXT.__eh_frame` | `0x3038` | `0x376c` | **`+0x734`** |
+| `__TEXT.__cstring` | `0x25655` | `0x25d4a` | **`+0x6f5`** |
+| `__DATA.__bss` | `0xf770` | `0xfe28` | **`+0x6b8`** |
+| `__AUTH_CONST.__const` | `0xf060` | `0xf6c8` | **`+0x668`** |
+| `__DATA.__data` | `0xadc0` | `0xb2a8` | **`+0x4e8`** |
+| `__TEXT.__unwind_info` | `0xf1b8` | `0xf610` | **`+0x458`** |
+| `__TEXT.__oslogstring` | `0x17894` | `0x17c54` | **`+0x3c0`** |
+| `__TEXT.__constg_swiftt` | `0x6c08` | `0x6f50` | **`+0x348`** |
+| `__DATA_DIRTY.__bss` | `0x6a18` | `0x6d18` | **`+0x300`** |
+| `__AUTH.__data` | `0x1558` | `0x17d0` | **`+0x278`** |
+| `__TEXT.__swift5_reflstr` | `0x639a` | `0x65fa` | **`+0x260`** |
+| `__AUTH_CONST.__auth_got` | `0x3690` | `0x38d0` | **`+0x240`** |
+| `__TEXT.__swift5_fieldmd` | `0x5e2c` | `0x6050` | **`+0x224`** |
+| `__TEXT.__swift5_capture` | `0x2580` | `0x270c` | **`+0x18c`** |
+| `__DATA_CONST.__got` | `0x4490` | `0x4610` | **`+0x180`** |
+| `__AUTH.__objc_data` | `0x4910` | `0x4a80` | **`+0x170`** |
+| `__TEXT.__swift5_assocty` | `0x1880` | `0x1928` | **`+0xa8`** |
+| `__AUTH_CONST.__cfstring` | `0x15940` | `0x158a0` | **`-0xa0`** |
+| `__DATA_CONST.__const` | `0x7760` | `0x76f8` | **`-0x68`** |
+| `__TEXT.__lazy_helpers` | `0x984` | `0x9d8` | **`+0x54`** |
+| `__TEXT.__swift5_proto` | `0xb2c` | `0xb70` | **`+0x44`** |
+| `__TEXT.__swift_as_cont` | `0x154` | `0x190` | **`+0x3c`** |
+| `__DATA.__common` | `0x189` | `0x1c0` | **`+0x37`** |
+| `__AUTH_CONST.__objc_intobj` | `0x14d0` | `0x14a0` | **`-0x30`** |
+| `__TEXT.__swift5_types` | `0x648` | `0x674` | **`+0x2c`** |
+| `__TEXT.__swift_as_ret` | `0xe8` | `0x10c` | **`+0x24`** |
+| `__TEXT.__swift_as_entry` | `0xf8` | `0x114` | **`+0x1c`** |
+| `__AUTH_CONST.__objc_const` | `0x4c248` | `0x4c258` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x3a04` | `0x3a14` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0xcc8` | `0xcb8` | **`-0x10`** |
+| `__DATA_DIRTY.__data` | `0x4a48` | `0x4a58` | **`+0x10`** |
+| `__DATA_DIRTY.__objc_data` | `0x7948` | `0x7958` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x2bf98` | `0x2bf88` | **`-0x10`** |
+| `__AUTH_CONST.__lazy_load_got` | `0xe8` | `0xf0` | **`+0x8`** |
+| `__DATA_CONST.__objc_arraydata` | `0xfd8` | `0xfe0` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x10e8` | `0x10f0` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x798` | `0x790` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x19378` | `0x19370` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x3d3e08
--  __TEXT.__lazy_helpers: 0x984
--  __TEXT.__objc_methlist: 0x2bf98
--  __TEXT.__const: 0x22524
-+  __TEXT.__text: 0x3ebec0
-+  __TEXT.__lazy_helpers: 0x9d8
-+  __TEXT.__objc_methlist: 0x2bf88
-+  __TEXT.__const: 0x23544
-   __TEXT.__gcc_except_tab: 0x2cfc
--  __TEXT.__cstring: 0x25655
--  __TEXT.__oslogstring: 0x17894
-+  __TEXT.__cstring: 0x25d4a
-+  __TEXT.__oslogstring: 0x17c54
-   __TEXT.__dlopen_cstrs: 0x3b9
-   __TEXT.__ustring: 0x4
--  __TEXT.__constg_swiftt: 0x6c08
--  __TEXT.__swift5_typeref: 0x27830
--  __TEXT.__swift5_reflstr: 0x639a
--  __TEXT.__swift5_fieldmd: 0x5e2c
-+  __TEXT.__constg_swiftt: 0x6f50
-+  __TEXT.__swift5_typeref: 0x2984e
-+  __TEXT.__swift5_reflstr: 0x65fa
-+  __TEXT.__swift5_fieldmd: 0x6050
-   __TEXT.__swift5_builtin: 0x4b0
--  __TEXT.__swift5_assocty: 0x1880
--  __TEXT.__swift5_proto: 0xb2c
--  __TEXT.__swift5_types: 0x648
--  __TEXT.__swift5_capture: 0x2580
--  __TEXT.__swift_as_entry: 0xf8
--  __TEXT.__swift_as_ret: 0xe8
--  __TEXT.__swift_as_cont: 0x154
-+  __TEXT.__swift5_assocty: 0x1928
-+  __TEXT.__swift5_proto: 0xb70
-+  __TEXT.__swift5_types: 0x674
-+  __TEXT.__swift5_capture: 0x270c
-+  __TEXT.__swift_as_entry: 0x114
-+  __TEXT.__swift_as_ret: 0x10c
-+  __TEXT.__swift_as_cont: 0x190
-   __TEXT.__swift5_protos: 0x48
-   __TEXT.__swift5_mpenum: 0x28
--  __TEXT.__unwind_info: 0xf1b8
--  __TEXT.__eh_frame: 0x3038
-+  __TEXT.__unwind_info: 0xf610
-+  __TEXT.__eh_frame: 0x376c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7760
--  __DATA_CONST.__objc_classlist: 0x10e8
-+  __DATA_CONST.__const: 0x76f8
-+  __DATA_CONST.__objc_classlist: 0x10f0
-   __DATA_CONST.__objc_catlist: 0x90
--  __DATA_CONST.__objc_protolist: 0x798
-+  __DATA_CONST.__objc_protolist: 0x790
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x19378
-+  __DATA_CONST.__objc_selrefs: 0x19370
-   __DATA_CONST.__objc_protorefs: 0xf0
--  __DATA_CONST.__objc_superrefs: 0xcc8
--  __DATA_CONST.__objc_arraydata: 0xfd8
--  __DATA_CONST.__got: 0x4490
--  __AUTH_CONST.__const: 0xf060
--  __AUTH_CONST.__cfstring: 0x15940
--  __AUTH_CONST.__objc_const: 0x4c248
--  __AUTH_CONST.__lazy_load_got: 0xe8
--  __AUTH_CONST.__objc_intobj: 0x14d0
-+  __DATA_CONST.__objc_superrefs: 0xcb8
-+  __DATA_CONST.__objc_arraydata: 0xfe0
-+  __DATA_CONST.__got: 0x4610
-+  __AUTH_CONST.__const: 0xf6c8
-+  __AUTH_CONST.__cfstring: 0x158a0
-+  __AUTH_CONST.__objc_const: 0x4c258
-+  __AUTH_CONST.__lazy_load_got: 0xf0
-+  __AUTH_CONST.__objc_intobj: 0x14a0
-   __AUTH_CONST.__objc_doubleobj: 0x4c0
-   __AUTH_CONST.__objc_dictobj: 0x280
-   __AUTH_CONST.__objc_arrayobj: 0xc48
-   __AUTH_CONST.__objc_floatobj: 0x30
--  __AUTH_CONST.__auth_got: 0x3690
--  __AUTH.__objc_data: 0x4910
--  __AUTH.__data: 0x1558
--  __DATA.__objc_ivar: 0x3a04
--  __DATA.__data: 0xadc0
--  __DATA.__bss: 0xf770
--  __DATA.__common: 0x189
--  __DATA_DIRTY.__objc_data: 0x7948
--  __DATA_DIRTY.__data: 0x4a48
--  __DATA_DIRTY.__bss: 0x6a18
-+  __AUTH_CONST.__auth_got: 0x38d0
-+  __AUTH.__objc_data: 0x4a80
-+  __AUTH.__data: 0x17d0
-+  __DATA.__objc_ivar: 0x3a14
-+  __DATA.__data: 0xb2a8
-+  __DATA.__bss: 0xfe28
-+  __DATA.__common: 0x1c0
-+  __DATA_DIRTY.__objc_data: 0x7958
-+  __DATA_DIRTY.__data: 0x4a58
-+  __DATA_DIRTY.__bss: 0x6d18
-   __DATA_DIRTY.__common: 0x180
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AVKit.framework/AVKit
+-4167.0.0.0.2
++4171.0.0.0.1
 
-   - /System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight
-   - /System/Library/Frameworks/CoreText.framework/CoreText
-   - /System/Library/Frameworks/CoreVideo.framework/CoreVideo
 +  - /System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOSurface.framework/IOSurface
-   - /System/Library/Frameworks/ImageIO.framework/ImageIO
 
-   - /System/Library/Frameworks/Metal.framework/Metal
-   - /System/Library/Frameworks/ModelIO.framework/ModelIO
-   - /System/Library/Frameworks/PDFKit.framework/PDFKit
 +  - /System/Library/Frameworks/PermissionKit.framework/PermissionKit
-   - /System/Library/Frameworks/Photos.framework/Photos
-   - /System/Library/Frameworks/PhotosUI.framework/PhotosUI
-   - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
 
-   - /System/Library/Frameworks/VideoToolbox.framework/VideoToolbox
-   - /System/Library/Frameworks/Vision.framework/Vision
-   - /System/Library/Frameworks/_LocationEssentials.framework/_LocationEssentials
 +  - /System/Library/Frameworks/_PermissionKit_SwiftUI.framework/_PermissionKit_SwiftUI
-   - /System/Library/PrivateFrameworks/ACTFramework.framework/ACTFramework
-   - /System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities
-   - /System/Library/PrivateFrameworks/AppProtection.framework/AppProtection
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 25443
--  Symbols:   58036
--  CStrings:  8046
+-  Symbols:   29509
+-  CStrings:  5286
 +  Functions: 25828
-+  Symbols:   58226
-+  CStrings:  8087
- 
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
++  Symbols:   29643
++  CStrings:  5332
 Symbols:
 + +[CAMFrameworkUtilities requestPasscodeUnlockWithCompletion:]
 + -[CAMCaptureAttributeManager _commandInvalidatesCustomLensPosition:]
@@ -279,25 +193,6 @@ Symbols:
 + _keypath_set.200Tm
 + _keypath_set.252Tm
 + _malloc
-+ _objc_msgSend$_commandInvalidatesCustomLensPosition:
-+ _objc_msgSend$_createFlipAspectRatioButtonIfNeeded
-+ _objc_msgSend$_easeAndDrawWithDrawable:commandBuffer:easeAlpha:
-+ _objc_msgSend$_invalidateCustomLensPosition
-+ _objc_msgSend$_setVisualIntelligenceShouldDropSampleBuffersWhileInactive:
-+ _objc_msgSend$_visualIntelligenceShouldDropSampleBuffersWhileInactive
-+ _objc_msgSend$defaultStore
-+ _objc_msgSend$featureDevelopmentEnableSignificantChangeTest
-+ _objc_msgSend$initWithUUID:captureSession:captureDate:metadata:burstIdentifier:burstRepresentedCount:imageWellImage:textAnalysisImage:coordinationInfo:finalExpectedPixelSize:expectingPairedVideo:captureID:semanticEnhanceScene:captureTimestamp:
-+ _objc_msgSend$isSceneStabilityMetadataSupported
-+ _objc_msgSend$operatingSystemVersion
-+ _objc_msgSend$presentIfNeededFromViewController:
-+ _objc_msgSend$requestPasscodeUnlockWithCompletion:
-+ _objc_msgSend$setPreferredFrameRateRange:
-+ _objc_msgSend$setSceneStabilityMetadataEnabled:
-+ _objc_msgSend$setZoomControlsRowFrame:
-+ _objc_msgSend$setZoomPIPVisible:
-+ _objc_msgSend$set_customLensPosition:
-+ _objc_msgSend$updateForActivePrimaryConstituentDeviceChange
 + _rewind
 + _sscanf
 + _swift_release_x3
@@ -636,26 +531,6 @@ Symbols:
 - _initWithHistogramObject:forDeviceFormat:.onceToken
 - _keypath_set.198Tm
 - _keypath_set.250Tm
-- _objc_msgSend$_button
-- _objc_msgSend$_highlightClippingValue
-- _objc_msgSend$_metadataHistogramObject
-- _objc_msgSend$_pendingLockFocusOnLensPositionCount
-- _objc_msgSend$_resetExposureClipping
-- _objc_msgSend$_setHighlightClippingValue:
-- _objc_msgSend$_setShadowClippingValue:
-- _objc_msgSend$_shadowClippingValue
-- _objc_msgSend$captureController:didOutputHistogramResult:
-- _objc_msgSend$highlightClipping
-- _objc_msgSend$histogramDelegate
-- _objc_msgSend$initWithHistogramObject:forDeviceFormat:
-- _objc_msgSend$initWithUUID:captureSession:captureDate:metadata:burstIdentifier:burstRepresentedCount:imageWellImage:textAnalysisImage:coordinationInfo:finalExpectedPixelSize:expectingPairedVideo:captureID:semanticEnhanceScene:
-- _objc_msgSend$isVideoPreviewHistogramMetadataSupported
-- _objc_msgSend$lumaHistogramBinCount
-- _objc_msgSend$lumaHistogramData
-- _objc_msgSend$setHistogramDelegate:
-- _objc_msgSend$setVideoPreviewHistogramMetadataObjectTypesAvailable:
-- _objc_msgSend$set_pendingLockFocusOnLensPositionCount:
-- _objc_msgSend$shadowClipping
 - _symbolic SS______4fontt 7SwiftUI4FontV
 - _symbolic _____ 8CameraUI13ControlButton33_366F3E641E765367FCB762D804AB7336LLV
 - _symbolic _____ 8CameraUI23SecureHostingController33_3CB9ED15B63E1D281457F06ED5909DA0LLC
@@ -850,5 +725,4 @@ CStrings:
 - "CAMHistogramResult received with unsupported pixel format type: %d"
 - "arrow.trianglehead.2.clockwise.rotate.90.camera"
 - "setHDREnabled:"
-
 ```

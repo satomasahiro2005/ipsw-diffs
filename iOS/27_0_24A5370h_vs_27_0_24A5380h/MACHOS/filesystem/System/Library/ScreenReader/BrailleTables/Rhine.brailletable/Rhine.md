@@ -2,23 +2,26 @@
 
 > `/System/Library/ScreenReader/BrailleTables/Rhine.brailletable/Rhine`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x1f218
-+  __TEXT.__text: 0x1ef68
-   __TEXT.__auth_stubs: 0x310
-   __TEXT.__objc_stubs: 0x3a0
-   __TEXT.__objc_methlist: 0x264
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__data : content changed
-~ __DATA.__common : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1f218` | `0x1ef68` | **`-0x2b0`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
+```text
 Functions:
 ~ _find_in : 108 -> 116
 ~ _equals_nocase : 88 -> 80
@@ -49,5 +52,4 @@ Functions:
 ~ _bwd_no_locution : 868 -> 852
 ~ _bwd_no_abbrev : 712 -> 704
 ~ _wh_backward_translate : 33520 -> 33152
-
 ```

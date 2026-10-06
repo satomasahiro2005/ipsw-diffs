@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AppAnalytics.framework/AppAnalytics`
 
-```diff
+### Section Size Changes
 
- 573.0.0.0.0
--  __TEXT.__text: 0x14b914
-+  __TEXT.__text: 0x14ba44
-   __TEXT.__objc_methlist: 0x1b24
-   __TEXT.__const: 0xcaf0
-   __TEXT.__swift5_typeref: 0x2d26
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14b914` | `0x14ba44` | **`+0x130`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1bfe3e504 -> sub_1bfce4504 : 528 -> 536
 ~ sub_1bfe41ec8 -> sub_1bfce7ed0 : 680 -> 676

@@ -2,15 +2,16 @@
 
 > `/System/Library/NanoTimeKit/FaceBundles/NTKAkitaFaceBundleCompanion.bundle/NTKAkitaFaceBundleCompanion`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x108` | `0x110` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_superrefs: 0x18
-   __DATA_CONST.__objc_doubleobj: 0x20
-   __DATA_CONST.__auth_got: 0x1d8
--  __DATA_CONST.__got: 0x108
-+  __DATA_CONST.__got: 0x110
-   __DATA.__objc_const: 0x9f0
-   __DATA.__objc_selrefs: 0x5d0
-   __DATA.__objc_ivar: 0xb0
-
+-2483.493.1.0.0
++2483.503.0.0.0
 ```

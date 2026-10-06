@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/CoordinationCore.framework/CoordinationCore`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_4 -> _OUTLINED_FUNCTION_5 : 16 -> 12

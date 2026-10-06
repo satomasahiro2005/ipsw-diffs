@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/NotesEditor.framework/NotesEditor`
 
-```diff
+### Section Size Changes
 
- 3001.2.2.0.0
--  __TEXT.__text: 0x30c150
-+  __TEXT.__text: 0x30c1f8
-   __TEXT.__delay_helper: 0x41c
-   __TEXT.__objc_methlist: 0x16d04
-   __TEXT.__const: 0xbdb4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x30c150` | `0x30c1f8` | **`+0xa8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_21519739c -> sub_21597539c : 712 -> 708
 ~ -[ICEditingTextView(PasteUtilities) pasteStringUsingBlock:approxPasteString:pasteboardTypes:session:] : 888 -> 900

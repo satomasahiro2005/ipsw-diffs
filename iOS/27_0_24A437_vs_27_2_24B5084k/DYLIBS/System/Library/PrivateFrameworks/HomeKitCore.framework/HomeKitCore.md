@@ -2,15 +2,14 @@
 
 > `/System/Library/PrivateFrameworks/HomeKitCore.framework/HomeKitCore`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__swift5_reflstr`
+
+### Other Changes
 
 ```diff
 
 -1493.1.5.1.1
 +1514.0.0.0.1
-   __TEXT.__text: 0x85d74
-   __TEXT.__objc_methlist: 0x374
-   __TEXT.__const: 0x7038
 ```

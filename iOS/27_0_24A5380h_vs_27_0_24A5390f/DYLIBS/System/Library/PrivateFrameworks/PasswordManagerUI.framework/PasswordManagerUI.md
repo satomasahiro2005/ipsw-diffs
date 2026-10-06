@@ -2,116 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/PasswordManagerUI.framework/PasswordManagerUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__oslogstring`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_protos`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x54e758` | `0x5556dc` | **`+0x6f84`** |
+| `__TEXT.__swift5_typeref` | `0x7556a` | `0x764f4` | **`+0xf8a`** |
+| `__AUTH_CONST.__const` | `0x19bc8` | `0x1a1b0` | **`+0x5e8`** |
+| `__TEXT.__const` | `0x367b4` | `0x36c74` | **`+0x4c0`** |
+| `__TEXT.__eh_frame` | `0x11fd0` | `0x123c0` | **`+0x3f0`** |
+| `__TEXT.__cstring` | `0x11f7d` | `0x1222d` | **`+0x2b0`** |
+| `__TEXT.__swift5_reflstr` | `0xd95b` | `0xdb7b` | **`+0x220`** |
+| `__DATA.__data` | `0x110b8` | `0x112c8` | **`+0x210`** |
+| `__TEXT.__swift5_fieldmd` | `0xa4e0` | `0xa66c` | **`+0x18c`** |
+| `__TEXT.__swift5_capture` | `0x6600` | `0x6774` | **`+0x174`** |
+| `__TEXT.__unwind_info` | `0xe768` | `0xe8a0` | **`+0x138`** |
+| `__TEXT.__constg_swiftt` | `0xd100` | `0xd214` | **`+0x114`** |
+| `__DATA.__bss` | `0x1f390` | `0x1f4a0` | **`+0x110`** |
+| `__DATA_DIRTY.__data` | `0xb288` | `0xb1d8` | **`-0xb0`** |
+| `__AUTH_CONST.__objc_const` | `0xb370` | `0xb3b0` | **`+0x40`** |
+| `__TEXT.__swift_as_cont` | `0xc94` | `0xcd0` | **`+0x3c`** |
+| `__TEXT.__swift5_assocty` | `0x2900` | `0x2930` | **`+0x30`** |
+| `__DATA_DIRTY.__objc_data` | `0x39c0` | `0x39e8` | **`+0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3258` | `0x3278` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x41f8` | `0x4210` | **`+0x18`** |
+| `__AUTH.__data` | `0x5d58` | `0x5d68` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0xa90` | `0xaa0` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0xa34` | `0xa40` | **`+0xc`** |
+| `__TEXT.__swift_as_entry` | `0x550` | `0x55c` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `0x5bc` | `0x5c8` | **`+0xc`** |
+| `__DATA_CONST.__got` | `0x2d48` | `0x2d50` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0xe58` | `0xe60` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -7625.1.22.10.3
--  __TEXT.__text: 0x54e758
 +7625.1.24.10.1
-+  __TEXT.__text: 0x5556dc
-   __TEXT.__objc_methlist: 0x283c
--  __TEXT.__cstring: 0x11f7d
--  __TEXT.__const: 0x367b4
-+  __TEXT.__cstring: 0x1222d
-+  __TEXT.__const: 0x36c74
-   __TEXT.__gcc_except_tab: 0x4c
-   __TEXT.__dlopen_cstrs: 0x9a
-   __TEXT.__oslogstring: 0x3679
-   __TEXT.__ustring: 0x76
--  __TEXT.__constg_swiftt: 0xd100
--  __TEXT.__swift5_typeref: 0x7556a
-+  __TEXT.__constg_swiftt: 0xd214
-+  __TEXT.__swift5_typeref: 0x764f4
-   __TEXT.__swift5_builtin: 0x35c
--  __TEXT.__swift5_reflstr: 0xd95b
--  __TEXT.__swift5_fieldmd: 0xa4e0
--  __TEXT.__swift5_assocty: 0x2900
--  __TEXT.__swift5_capture: 0x6600
--  __TEXT.__swift5_proto: 0xe58
--  __TEXT.__swift5_types: 0xa34
--  __TEXT.__swift_as_entry: 0x550
--  __TEXT.__swift_as_ret: 0x5bc
--  __TEXT.__swift_as_cont: 0xc94
-+  __TEXT.__swift5_reflstr: 0xdb7b
-+  __TEXT.__swift5_fieldmd: 0xa66c
-+  __TEXT.__swift5_assocty: 0x2930
-+  __TEXT.__swift5_capture: 0x6774
-+  __TEXT.__swift5_proto: 0xe60
-+  __TEXT.__swift5_types: 0xa40
-+  __TEXT.__swift_as_entry: 0x55c
-+  __TEXT.__swift_as_ret: 0x5c8
-+  __TEXT.__swift_as_cont: 0xcd0
-   __TEXT.__swift5_mpenum: 0xd4
-   __TEXT.__swift5_protos: 0x6c
--  __TEXT.__unwind_info: 0xe768
--  __TEXT.__eh_frame: 0x11fd0
-+  __TEXT.__unwind_info: 0xe8a0
-+  __TEXT.__eh_frame: 0x123c0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xa90
-+  __DATA_CONST.__const: 0xaa0
-   __DATA_CONST.__objc_classlist: 0x418
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x270
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3258
-+  __DATA_CONST.__objc_selrefs: 0x3278
-   __DATA_CONST.__objc_protorefs: 0x130
-   __DATA_CONST.__objc_superrefs: 0x30
--  __DATA_CONST.__got: 0x2d48
--  __AUTH_CONST.__const: 0x19bc8
-+  __DATA_CONST.__got: 0x2d50
-+  __AUTH_CONST.__const: 0x1a1b0
-   __AUTH_CONST.__cfstring: 0x420
--  __AUTH_CONST.__objc_const: 0xb370
--  __AUTH_CONST.__auth_got: 0x41f8
-+  __AUTH_CONST.__objc_const: 0xb3b0
-+  __AUTH_CONST.__auth_got: 0x4210
-   __AUTH.__objc_data: 0x870
--  __AUTH.__data: 0x5d58
-+  __AUTH.__data: 0x5d68
-   __DATA.__objc_ivar: 0x80
--  __DATA.__data: 0x110b8
--  __DATA.__bss: 0x1f390
-+  __DATA.__data: 0x112c8
-+  __DATA.__bss: 0x1f4a0
-   __DATA.__common: 0x118
--  __DATA_DIRTY.__objc_data: 0x39c0
--  __DATA_DIRTY.__data: 0xb288
-+  __DATA_DIRTY.__objc_data: 0x39e8
-+  __DATA_DIRTY.__data: 0xb1d8
-   __DATA_DIRTY.__bss: 0xb30
-   __DATA_DIRTY.__common: 0x1d8
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 22753
--  Symbols:   10046
+-  Symbols:   8733
 -  CStrings:  1559
 +  Functions: 22879
-+  Symbols:   10095
++  Symbols:   8778
 +  CStrings:  1587
- 
 Symbols:
 + _WBSAutomaticPasswordChangeDebugSiteShouldEnableObstacleKey
 + ___swift_closure_destructor.107Tm
@@ -137,10 +72,6 @@ Symbols:
 + _get_witness_table 7SwiftUI5LabelVyAA4TextVAA5ImageVGAA4ViewHPyHC
 + _get_witness_table SHRzl7SwiftUI15ModifiedContentVyAA4ViewPAAE5sheet4item9onDismiss7contentQrAA7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaDRd_0_r0_lFQOyAeAEAfghIQrAM_ANqd_0_qd__ctsAORd__AaDRd_0_r0_lFQOyACyAeAE11contextMenu16forSelectionType4menu13primaryActionQrqd__m_qd_0_Shyqd__GcyATcSgtSHRd__AaDRd_0_r0_lFQOyAA01_e9Modifier_D0Vy015PasswordManagerB0014PMItemsContextN0VyxGG_xAA05TupleD0VyAA7SectionVyAA05EmptyE0VAA6ButtonVyAX23PMOpenInNewWindowsLabelVGA6_GSg_AA012_ConditionalD0VyA4_yA6_A8_yAA5LabelVyAA4TextVAA5ImageVGGA6_GSgA2_yAX013PMFocusedCopyN0VyAX9PMAccountVG_A25_AeAE10labelStyleyQrqd__AA10LabelStyleRd__lFQOyA4_yA6_A2_yACyAeAE11pickerStyleyQrqd__AA11PickerStyleRd__lFQOyAX26PMMoveAccountToGroupPickerV_AA0N11PickerStyleVQo_AA024_EnvironmentKeyTransformU0VySbGGSg_AX22PMAirDropAccountButtonVyA22_GSgQPGA6_G_AA22TitleAndIconLabelStyleVQo_QPGGSgA25_A4_yA19_A23_SgA6_GSgSgQPGQo_AX25PMMoveAccountToGroupAlertVG_A29_AX14PMNewGroupFlowVQo__A29_AX09PMAirDropE0VQo_AX33PMConfirmOpeningManyWindowsDialogVySSGGAaDHPqd0__AaDHD4_A71_HO_A74_AA0eU0HPyHCHC
 + _get_witness_table l7SwiftUI15ModifiedContentVyAA014_ViewModifier_D0Vy015PasswordManagerB033PMConfirmOpeningManyWindowsDialogVyxGGAF014PMConfirmationm7OrAlerteF0VyAA05TupleD0VyAA6ButtonVyAA4TextVG_ASQPGArF0ijkL13ConfigurationVyxGGGAA0E0HPAjaZHPyHC_AxA0eF0HPyHCHC
-+ _objc_msgSend$appURLForAppID:name:
-+ _objc_msgSend$automaticPasswordChangeAccountLevelEligibility
-+ _objc_msgSend$serviceIdentifierType
-+ _objc_msgSend$setContentHuggingPriority:forAxis:
 + _symbolic SSIegn_
 + _symbolic SayxG
 + _symbolic _____ 17PasswordManagerUI23PMOpenInNewWindowsLabelV

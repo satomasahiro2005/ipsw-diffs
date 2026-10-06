@@ -2,86 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/SpotlightDaemon.framework/SpotlightDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbb9a0` | `0xbc484` | **`+0xae4`** |
+| `__TEXT.__oslogstring` | `0xc161` | `0xc3d0` | **`+0x26f`** |
+| `__TEXT.__gcc_except_tab` | `0x4664` | `0x4710` | **`+0xac`** |
+| `__AUTH.__objc_data` | `0x1e0` | `0x140` | **`-0xa0`** |
+| `__DATA_DIRTY.__objc_data` | `0xf00` | `0xfa0` | **`+0xa0`** |
+| `__DATA.__bss` | `0x148` | `0xf0` | **`-0x58`** |
+| `__DATA_DIRTY.__bss` | `0x6a0` | `0x6f0` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x26f8` | `0x2720` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x7b60` | `0x7b40` | **`-0x20`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x3a8` | `0x390` | **`-0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x1118` | `0x1110` | **`-0x8`** |
+| `__DATA.__data` | `0x410` | `0x418` | **`+0x8`** |
+| `__DATA_CONST.__objc_arraydata` | `0x300` | `0x2f8` | **`-0x8`** |
+| `__TEXT.__objc_methlist` | `0x48ac` | `0x48b4` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xbb9a0
--  __TEXT.__objc_methlist: 0x48ac
-+  __TEXT.__text: 0xbc484
-+  __TEXT.__objc_methlist: 0x48b4
-   __TEXT.__const: 0x3c0
-   __TEXT.__cstring: 0x932b
--  __TEXT.__gcc_except_tab: 0x4664
--  __TEXT.__oslogstring: 0xc161
-+  __TEXT.__gcc_except_tab: 0x4710
-+  __TEXT.__oslogstring: 0xc3d0
-   __TEXT.__dlopen_cstrs: 0x4a
--  __TEXT.__unwind_info: 0x26f8
-+  __TEXT.__unwind_info: 0x2720
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-2448.100.0.0.0
++2451.1.101.0.0
 
-   __DATA_CONST.__objc_selrefs: 0x3b08
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x138
--  __DATA_CONST.__objc_arraydata: 0x300
-+  __DATA_CONST.__objc_arraydata: 0x2f8
-   __DATA_CONST.__got: 0xbe8
-   __AUTH_CONST.__const: 0x1228
--  __AUTH_CONST.__cfstring: 0x7b60
-+  __AUTH_CONST.__cfstring: 0x7b40
-   __AUTH_CONST.__objc_const: 0x5ec0
-   __AUTH_CONST.__weak_auth_got: 0x10
--  __AUTH_CONST.__objc_arrayobj: 0x3a8
-+  __AUTH_CONST.__objc_arrayobj: 0x390
-   __AUTH_CONST.__objc_intobj: 0x228
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x1118
--  __AUTH.__objc_data: 0x1e0
-+  __AUTH_CONST.__auth_got: 0x1110
-+  __AUTH.__objc_data: 0x140
-   __DATA.__objc_ivar: 0x4fc
--  __DATA.__data: 0x410
--  __DATA.__bss: 0x148
-+  __DATA.__data: 0x418
-+  __DATA.__bss: 0xf0
-   __DATA.__common: 0x4
--  __DATA_DIRTY.__objc_data: 0xf00
-+  __DATA_DIRTY.__objc_data: 0xfa0
-   __DATA_DIRTY.__data: 0x158
--  __DATA_DIRTY.__bss: 0x6a0
-+  __DATA_DIRTY.__bss: 0x6f0
-   __DATA_DIRTY.__common: 0x18
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libutil.dylib
 -  Functions: 3246
--  Symbols:   10906
--  CStrings:  3567
+-  Symbols:   4880
+-  CStrings:  2577
 +  Functions: 3249
-+  Symbols:   10916
-+  CStrings:  3580
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__cstring : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
++  Symbols:   4883
++  CStrings:  2591
 Symbols:
 + +[SPQueryResultsQueue _countOfTrackedQueues]
 + GCC_except_table1027
@@ -208,7 +160,6 @@ Symbols:
 - ___block_descriptor_88_e8_32s40s48s56s64bs72w_e5_v8?0ls32l8s40l8s48l8s56l8s64l8w72l8
 - _dup
 - _fdopen
-- _objc_msgSend$sourceOptions
 CStrings:
 + "### command %@ pid: %d fd: %d %s"
 + "### command[%u] complete fd: %d (%d)"
@@ -230,5 +181,4 @@ CStrings:
 - "Could not write to file, closing it. Error: %@"
 - "fetchConsumedAndLatestSerialNums failed: consumed:%lld, latest:%lld"
 - "fetchConsumedAndLatestSerialNums failed: index:%p suspended:%d suspending:%d"
-
 ```

@@ -2,6 +2,8 @@
 
 > `/Applications/LocalAuthenticationUIService.app/LocalAuthenticationUIService`
 
+### Other Changes
+
 ```diff
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/LocalAuthenticationUI/install/TempContent/Objects/CoreAuthentication.build/LocalAuthenticationUIService.build/Objects-normal/arm64e/PasscodeContentViewControllerFullScreen-76f3691af75bfdec75ef3739c7f44fea.o

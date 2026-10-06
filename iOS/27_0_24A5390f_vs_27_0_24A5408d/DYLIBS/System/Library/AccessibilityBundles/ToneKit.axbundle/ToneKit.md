@@ -2,55 +2,36 @@
 
 > `/System/Library/AccessibilityBundles/ToneKit.axbundle/ToneKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x698` | `0x864` | **`+0x1cc`** |
+| `__AUTH_CONST.__objc_const` | `0x510` | `0x630` | **`+0x120`** |
+| `__AUTH_CONST.__cfstring` | `0x1e0` | `0x2a0` | **`+0xc0`** |
+| `__TEXT.__cstring` | `0x1e7` | `0x294` | **`+0xad`** |
+| `__AUTH.__objc_data` | `—` | `0xa0` | **`+0xa0`** |
+| `__TEXT.__objc_methlist` | `0x154` | `0x19c` | **`+0x48`** |
+| `__AUTH_CONST.__const` | `0x60` | `0x80` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x40` | `0x60` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x50` | `0x68` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x48` | `0x58` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0xe0` | `0xf0` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x18` | `0x20` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3045.0.0.0.0
--  __TEXT.__text: 0x698
--  __TEXT.__objc_methlist: 0x154
--  __TEXT.__cstring: 0x1e7
 +3048.0.0.0.0
-+  __TEXT.__text: 0x864
-+  __TEXT.__objc_methlist: 0x19c
-+  __TEXT.__cstring: 0x294
-   __TEXT.__unwind_info: 0xa8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x40
--  __DATA_CONST.__objc_classlist: 0x48
-+  __DATA_CONST.__const: 0x60
-+  __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xe0
--  __DATA_CONST.__objc_superrefs: 0x18
--  __DATA_CONST.__got: 0x50
--  __AUTH_CONST.__const: 0x60
--  __AUTH_CONST.__cfstring: 0x1e0
--  __AUTH_CONST.__objc_const: 0x510
-+  __DATA_CONST.__objc_selrefs: 0xf0
-+  __DATA_CONST.__objc_superrefs: 0x20
-+  __DATA_CONST.__got: 0x68
-+  __AUTH_CONST.__const: 0x80
-+  __AUTH_CONST.__cfstring: 0x2a0
-+  __AUTH_CONST.__objc_const: 0x630
-   __AUTH_CONST.__auth_got: 0x0
-+  __AUTH.__objc_data: 0xa0
-   __DATA_DIRTY.__objc_data: 0x2d0
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 24
--  Symbols:   130
+-  Symbols:   109
 -  CStrings:  21
 +  Functions: 29
-+  Symbols:   155
++  Symbols:   133
 +  CStrings:  29
- 
 Symbols:
 + +[TKVibrationRecorderViewAccessibility _accessibilityPerformValidations:]
 + +[TKVibrationRecorderViewAccessibility(SafeCategory) safeCategoryBaseClass]
@@ -75,7 +56,6 @@ Symbols:
 + __dispatch_main_q
 + _dispatch_after
 + _dispatch_time
-+ _objc_msgSend$safeValueForKey:
 + _objc_release_x22
 CStrings:
 + "TKVibrationRecorderView"

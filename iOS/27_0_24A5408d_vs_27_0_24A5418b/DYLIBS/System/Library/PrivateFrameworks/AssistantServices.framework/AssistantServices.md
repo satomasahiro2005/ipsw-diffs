@@ -2,53 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x19da60` | `0x19dae4` | **`+0x84`** |
+| `__AUTH_CONST.__cfstring` | `0x28360` | `0x283a0` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x3d217` | `0x3d24b` | **`+0x34`** |
+| `__TEXT.__objc_methlist` | `0x1f044` | `0x1f05c` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0xc0c8` | `0xc0d8` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x8140` | `0x8148` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.68.61.11.1
--  __TEXT.__text: 0x19da60
--  __TEXT.__objc_methlist: 0x1f044
 +3600.68.61.11.9
-+  __TEXT.__text: 0x19dae4
-+  __TEXT.__objc_methlist: 0x1f05c
-   __TEXT.__const: 0x3d0
-   __TEXT.__dlopen_cstrs: 0x538
-   __TEXT.__gcc_except_tab: 0x2190
--  __TEXT.__cstring: 0x3d217
-+  __TEXT.__cstring: 0x3d24b
-   __TEXT.__oslogstring: 0xf46b
-   __TEXT.__ustring: 0x2ac
--  __TEXT.__unwind_info: 0x8140
-+  __TEXT.__unwind_info: 0x8148
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x2a8
-   __DATA_CONST.__objc_protolist: 0x5e8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xc0c8
-+  __DATA_CONST.__objc_selrefs: 0xc0d8
-   __DATA_CONST.__objc_protorefs: 0x170
-   __DATA_CONST.__objc_superrefs: 0xf10
-   __DATA_CONST.__objc_arraydata: 0x2330
-   __DATA_CONST.__got: 0x16d0
-   __AUTH_CONST.__const: 0x3ca0
--  __AUTH_CONST.__cfstring: 0x28360
-+  __AUTH_CONST.__cfstring: 0x283a0
-   __AUTH_CONST.__objc_const: 0x36338
-   __AUTH_CONST.__objc_intobj: 0x2628
-   __AUTH_CONST.__objc_dictobj: 0xcf8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12106
--  Symbols:   26756
+-  Symbols:   22208
 -  CStrings:  8584
 +  Functions: 12108
-+  Symbols:   26758
++  Symbols:   22210
 +  CStrings:  8586
- 
 Symbols:
 + -[AFPreferences assistantEnabledBeforeRestriction]
 + -[AFPreferences setAssistantEnabledBeforeRestriction:]

@@ -2,15 +2,14 @@
 
 > `/System/Library/PrivateFrameworks/HangTracer.framework/PlugIns/PerformanceLoggingDiagnosticExtension.appex/PerformanceLoggingDiagnosticExtension`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -424.0.0.0.0
 +426.0.0.0.0
-   __TEXT.__text: 0x81c8
-   __TEXT.__auth_stubs: 0x540
-   __TEXT.__objc_stubs: 0xb60
 ```

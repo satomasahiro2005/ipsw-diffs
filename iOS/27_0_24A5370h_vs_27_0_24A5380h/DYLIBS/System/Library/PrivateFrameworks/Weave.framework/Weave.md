@@ -2,32 +2,9 @@
 
 > `/System/Library/PrivateFrameworks/Weave.framework/Weave`
 
-```diff
+### Section Size Changes
 
-   __AUTH_CONST.__cfstring: 0x120
-   __AUTH_CONST.__objc_const: 0x1398
-   __AUTH_CONST.__auth_got: 0x0
-+  __AUTH.__objc_data: 0x370
-   __DATA.__objc_ivar: 0xbc
-   __DATA.__data: 0x480
--  __DATA_DIRTY.__objc_data: 0x410
-+  __DATA_DIRTY.__objc_data: 0xa0
-   __DATA_DIRTY.__bss: 0x10
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __DATA.__data : content changed
-
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `—` | `0x370` | **`+0x370`** |
+| `__DATA_DIRTY.__objc_data` | `0x410` | `0xa0` | **`-0x370`** |

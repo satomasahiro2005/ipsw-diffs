@@ -2,7 +2,16 @@
 
 > `/System/Library/UserEventPlugins/com.apple.networkextension.plugin/com.apple.networkextension`
 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA.__const : content changed
+### Same-size Content Changes
+
+- `__DATA.__const`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
+```diff
+
+-2315.0.0.0.2
++2322.0.0.0.1
+```

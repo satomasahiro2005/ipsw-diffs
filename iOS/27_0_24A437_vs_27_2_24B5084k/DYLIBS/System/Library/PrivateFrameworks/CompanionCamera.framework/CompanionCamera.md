@@ -2,74 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/CompanionCamera.framework/CompanionCamera`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9a14` | `0x8d00` | **`-0xd14`** |
+| `__AUTH_CONST.__cfstring` | `0xa00` | `0x720` | **`-0x2e0`** |
+| `__TEXT.__cstring` | `0xfc7` | `0xd07` | **`-0x2c0`** |
+| `__AUTH_CONST.__objc_const` | `0xbd8` | `0xa90` | **`-0x148`** |
+| `__AUTH_CONST.__objc_intobj` | `0xf0` | `0x48` | **`-0xa8`** |
+| `__TEXT.__gcc_except_tab` | `0x118` | `0x78` | **`-0xa0`** |
+| `__TEXT.__objc_methlist` | `0xbdc` | `0xb3c` | **`-0xa0`** |
+| `__DATA_CONST.__const` | `0x478` | `0x3f0` | **`-0x88`** |
+| `__DATA_CONST.__objc_selrefs` | `0x898` | `0x810` | **`-0x88`** |
+| `__TEXT.__unwind_info` | `0x2b8` | `0x258` | **`-0x60`** |
+| `__DATA_DIRTY.__objc_data` | `0x140` | `0xf0` | **`-0x50`** |
+| `__TEXT.__oslogstring` | `0x60b` | `0x5c1` | **`-0x4a`** |
+| `__DATA_CONST.__got` | `0xd0` | `0xa8` | **`-0x28`** |
+| `__DATA.__objc_ivar` | `0x8c` | `0x78` | **`-0x14`** |
+| `__DATA_DIRTY.__bss` | `0x40` | `0x30` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x30` | `0x28` | **`-0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x20` | `0x18` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2024.100.18.0.0
--  __TEXT.__text: 0x95f4
--  __TEXT.__objc_methlist: 0xbdc
 +2024.200.2.0.0
-+  __TEXT.__text: 0x8934
-+  __TEXT.__objc_methlist: 0xb3c
-   __TEXT.__const: 0x110
--  __TEXT.__gcc_except_tab: 0x118
--  __TEXT.__oslogstring: 0x60b
--  __TEXT.__cstring: 0xfc7
--  __TEXT.__unwind_info: 0x490
-+  __TEXT.__gcc_except_tab: 0x78
-+  __TEXT.__oslogstring: 0x5c1
-+  __TEXT.__cstring: 0xd07
-+  __TEXT.__unwind_info: 0x418
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x478
--  __DATA_CONST.__objc_classlist: 0x30
-+  __DATA_CONST.__const: 0x3f0
-+  __DATA_CONST.__objc_classlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x898
-+  __DATA_CONST.__objc_selrefs: 0x810
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x20
--  __DATA_CONST.__got: 0xd0
-+  __DATA_CONST.__objc_superrefs: 0x18
-+  __DATA_CONST.__got: 0xa8
-   __AUTH_CONST.__const: 0x460
--  __AUTH_CONST.__cfstring: 0xa00
--  __AUTH_CONST.__objc_const: 0xbd8
--  __AUTH_CONST.__objc_intobj: 0xf0
-+  __AUTH_CONST.__cfstring: 0x720
-+  __AUTH_CONST.__objc_const: 0xa90
-+  __AUTH_CONST.__objc_intobj: 0x48
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0xa0
--  __DATA.__objc_ivar: 0x8c
-+  __DATA.__objc_ivar: 0x78
-   __DATA.__data: 0x1e0
--  __DATA_DIRTY.__objc_data: 0x140
--  __DATA_DIRTY.__bss: 0x40
-+  __DATA_DIRTY.__objc_data: 0xf0
-+  __DATA_DIRTY.__bss: 0x30
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /System/Library/PrivateFrameworks/DockKitCore.framework/DockKitCore
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 272
--  Symbols:   698
+-  Symbols:   493
 -  CStrings:  167
 +  Functions: 253
-+  Symbols:   637
++  Symbols:   448
 +  CStrings:  139
- 
 Symbols:
 + -[ViewfinderErrorReport initWithCode:status:]
-+ _objc_msgSend$initWithCode:status:
 - +[ViewfinderReliability sharedInstance]
 - -[ViewfinderErrorReport .cxx_destruct]
 - -[ViewfinderErrorReport date]
@@ -112,23 +81,6 @@ Symbols:
 - __dispatch_source_type_signal
 - __os_log_fault_impl
 - _objc_enumerationMutation
-- _objc_msgSend$_checkForRepeatedEvent:
-- _objc_msgSend$_checkForUnexpectedEvent:
-- _objc_msgSend$_print
-- _objc_msgSend$_registerSources
-- _objc_msgSend$_reset
-- _objc_msgSend$addObject:
-- _objc_msgSend$appendString:
-- _objc_msgSend$countByEnumeratingWithState:objects:count:
-- _objc_msgSend$countForObject:
-- _objc_msgSend$defaultCenter
-- _objc_msgSend$initWithCode:status:date:
-- _objc_msgSend$logEvent:
-- _objc_msgSend$postNotificationName:object:userInfo:
-- _objc_msgSend$removeAllObjects
-- _objc_msgSend$set
-- _objc_msgSend$string
-- _objc_msgSend$stringFromDate:
 - _objc_sync_enter
 - _objc_sync_exit
 - _os_variant_has_internal_diagnostics

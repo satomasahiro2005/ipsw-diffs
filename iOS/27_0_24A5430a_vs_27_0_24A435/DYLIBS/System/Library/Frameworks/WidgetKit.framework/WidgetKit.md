@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/WidgetKit.framework/WidgetKit`
 
-```diff
+### Section Size Changes
 
- 749.0.2.0.0
--  __TEXT.__text: 0x2131fc
-+  __TEXT.__text: 0x2131d0
-   __TEXT.__objc_methlist: 0xdc8
-   __TEXT.__const: 0x21738
-   __TEXT.__cstring: 0x51a6
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2131fc` | `0x2131d0` | **`-0x2c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_18bbbb498 -> sub_18bbbf498 : 4656 -> 4660
 ~ sub_18bbc0830 -> sub_18bbc4834 : 700 -> 716

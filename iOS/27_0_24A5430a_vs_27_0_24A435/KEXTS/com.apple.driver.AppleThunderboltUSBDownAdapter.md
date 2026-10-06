@@ -2,25 +2,24 @@
 
 > `com.apple.driver.AppleThunderboltUSBDownAdapter`
 
-```diff
+### Section Size Changes
 
- 138.0.1.0.0
-   __TEXT.__cstring: 0x2e6
-   __TEXT.__os_log: 0x283
--  __TEXT_EXEC.__text: 0x1300
-+  __TEXT_EXEC.__text: 0x1340
-   __TEXT_EXEC.__auth_stubs: 0x100
-   __DATA.__data: 0xc4
-   __DATA.__common: 0x38
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x1300` | `0x1340` | **`+0x40`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_fffffe00098e8850 -> sub_fffffe0009974c60 : 72 -> 76
-~ sub_fffffe00098e88a0 -> sub_fffffe0009974cb4 : 52 -> 56
-~ sub_fffffe00098e88d4 -> sub_fffffe0009974cec : 52 -> 56
-~ sub_fffffe00098e8918 -> sub_fffffe0009974d34 : 68 -> 72
-~ sub_fffffe00098e8984 -> sub_fffffe0009974da4 : 72 -> 76
-~ sub_fffffe00098e89cc -> sub_fffffe0009974df0 : 104 -> 108
-~ sub_fffffe00098e8a48 -> sub_fffffe0009974e70 : 88 -> 92
-~ sub_fffffe00098e8aa0 -> sub_fffffe0009974ecc : 88 -> 92
+~ sub_fffffff0098f30f0 -> sub_fffffff00997b9b0 : 72 -> 76
+~ sub_fffffff0098f3140 -> sub_fffffff00997ba04 : 52 -> 56
+~ sub_fffffff0098f3174 -> sub_fffffff00997ba3c : 52 -> 56
+~ sub_fffffff0098f31b8 -> sub_fffffff00997ba84 : 68 -> 72
+~ sub_fffffff0098f3224 -> sub_fffffff00997baf4 : 72 -> 76
+~ sub_fffffff0098f326c -> sub_fffffff00997bb40 : 104 -> 108
+~ sub_fffffff0098f32e8 -> sub_fffffff00997bbc0 : 88 -> 92
+~ sub_fffffff0098f3340 -> sub_fffffff00997bc1c : 88 -> 92
 ~ __ZN30AppleThunderboltUSBDownAdapter5startEP9IOService : 1144 -> 1148
 ~ __ZN30AppleThunderboltUSBDownAdapter8finalizeEj : 384 -> 388
 ~ __ZN30AppleThunderboltUSBDownAdapter4freeEv : 332 -> 336
@@ -28,5 +27,5 @@ Functions:
 ~ __ZN30AppleThunderboltUSBDownAdapter13enableAdapterEb : 624 -> 628
 ~ __ZN30AppleThunderboltUSBDownAdapter9lateSleepEv : 344 -> 348
 ~ __ZN30AppleThunderboltUSBDownAdapter9earlyWakeEv : 344 -> 348
-~ sub_fffffe00098e9aa8 -> sub_fffffe0009975ef4 : 80 -> 84
+~ sub_fffffff0098f4348 -> sub_fffffff00997cc44 : 80 -> 84
 ```

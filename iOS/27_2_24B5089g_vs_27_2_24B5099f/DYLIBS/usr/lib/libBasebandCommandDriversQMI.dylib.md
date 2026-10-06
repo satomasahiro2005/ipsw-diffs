@@ -2,55 +2,34 @@
 
 > `/usr/lib/libBasebandCommandDriversQMI.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x105194` | `0x101318` | **`-0x3e7c`** |
+| `__TEXT.__gcc_except_tab` | `0x13818` | `0x1343c` | **`-0x3dc`** |
+| `__TEXT.__const` | `0x7a30` | `0x7960` | **`-0xd0`** |
+| `__TEXT.__cstring` | `0x3fc8` | `0x3efd` | **`-0xcb`** |
+| `__TEXT.__unwind_info` | `0x6f10` | `0x6e50` | **`-0xc0`** |
+| `__DATA.__data` | `0x200` | `0x150` | **`-0xb0`** |
+| `__AUTH_CONST.__const` | `0xa930` | `0xa8e0` | **`-0x50`** |
+| `__DATA_DIRTY.__common` | `0x40` | `—` | **`-0x40`** |
+| `__TEXT.__oslogstring` | `0x248c` | `0x245a` | **`-0x32`** |
+| `__AUTH_CONST.__cfstring` | `0x20` | `—` | **`-0x20`** |
+| `__DATA_CONST.__got` | `0x980` | `0x970` | **`-0x10`** |
+| `__DATA_DIRTY.__bss` | `0x160` | `0x150` | **`-0x10`** |
+| `__TEXT.__init_offsets` | `0x14` | `0x8` | **`-0xc`** |
+
+### Other Changes
+
 ```diff
 
- 1594.0.0.0.0
--  __TEXT.__text: 0x103024
--  __TEXT.__init_offsets: 0x14
--  __TEXT.__const: 0x7a30
--  __TEXT.__gcc_except_tab: 0x13818
--  __TEXT.__cstring: 0x3fc8
--  __TEXT.__oslogstring: 0x248c
--  __TEXT.__unwind_info: 0x7210
-+  __TEXT.__text: 0xff324
-+  __TEXT.__init_offsets: 0x8
-+  __TEXT.__const: 0x7960
-+  __TEXT.__gcc_except_tab: 0x1343c
-+  __TEXT.__cstring: 0x3efd
-+  __TEXT.__oslogstring: 0x245a
-+  __TEXT.__unwind_info: 0x7148
-   __TEXT.__eh_frame: 0x150
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x3768
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__got: 0x980
--  __AUTH_CONST.__const: 0xa930
--  __AUTH_CONST.__cfstring: 0x20
-+  __DATA_CONST.__got: 0x970
-+  __AUTH_CONST.__const: 0xa8e0
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__data: 0x200
-+  __DATA.__data: 0x150
-   __DATA_DIRTY.__data: 0xa0
--  __DATA_DIRTY.__common: 0x40
--  __DATA_DIRTY.__bss: 0x160
-+  __DATA_DIRTY.__bss: 0x150
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMotion.framework/CoreMotion
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 5158
 -  Symbols:   7559
 -  CStrings:  1047
 +  Functions: 5135
 +  Symbols:   7524
 +  CStrings:  1033
- 
 Symbols:
 + GCC_except_table185
 + GCC_except_table187

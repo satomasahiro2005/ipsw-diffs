@@ -2,21 +2,21 @@
 
 > `com.apple.driver.AppleT8103TypeCPhy`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x46d64` | `0x46d70` | **`+0xc`** |
+| `__TEXT.__cstring` | `0xaaea` | `0xaaec` | **`+0x2`** |
+
+### Other Changes
+
 ```diff
 
 -317.0.1.0.0
 +317.40.3.0.0
-   __TEXT.__const: 0x1a0
--  __TEXT.__cstring: 0xaaea
-+  __TEXT.__cstring: 0xaaec
-   __TEXT.__os_log: 0xed5e
--  __TEXT_EXEC.__text: 0x43040
-+  __TEXT_EXEC.__text: 0x4304c
-   __TEXT_EXEC.__auth_stubs: 0x1a0
-   __DATA.__data: 0xd8
-   __DATA.__common: 0x60
 Functions:
-~ __ZN18AppleT8310TypeCPhy5startEP9IOService : 3740 -> 3752
+~ __ZN18AppleT8310TypeCPhy5startEP9IOService : 3940 -> 3952
 CStrings:
 + "121111121222121211111111212121212111211112211222"
 + "1211111212221212111111112121212121112111122211111111111111111111111111111111111111111111111111111111112222222222222222222111222"

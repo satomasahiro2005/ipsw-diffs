@@ -2,102 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/CopresenceCore.framework/CopresenceCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2ed27c` | `0x2eed48` | **`+0x1acc`** |
+| `__TEXT.__const` | `0x160d4` | `0x169c4` | **`+0x8f0`** |
+| `__TEXT.__cstring` | `0x6613` | `0x62e3` | **`-0x330`** |
+| `__DATA.__bss` | `0x1b0e0` | `0x1b3e0` | **`+0x300`** |
+| `__AUTH_CONST.__const` | `0x115b0` | `0x11890` | **`+0x2e0`** |
+| `__TEXT.__constg_swiftt` | `0x7d4c` | `0x7f10` | **`+0x1c4`** |
+| `__DATA.__data` | `0x65f8` | `0x67a8` | **`+0x1b0`** |
+| `__TEXT.__eh_frame` | `0xdb48` | `0xdcd8` | **`+0x190`** |
+| `__AUTH_CONST.__objc_const` | `0xad48` | `0xaea8` | **`+0x160`** |
+| `__TEXT.__oslogstring` | `0xff75` | `0x100a5` | **`+0x130`** |
+| `__TEXT.__swift5_reflstr` | `0x6210` | `0x6330` | **`+0x120`** |
+| `__DATA_DIRTY.__objc_data` | `0x3bf0` | `0x3cf0` | **`+0x100`** |
+| `__TEXT.__swift5_fieldmd` | `0x61f0` | `0x62cc` | **`+0xdc`** |
+| `__AUTH.__objc_data` | `0x970` | `0xa38` | **`+0xc8`** |
+| `__AUTH_CONST.__auth_got` | `0x1e60` | `0x1f08` | **`+0xa8`** |
+| `__TEXT.__objc_methlist` | `0x341c` | `0x34bc` | **`+0xa0`** |
+| `__TEXT.__swift5_typeref` | `0x7dec` | `0x7e5c` | **`+0x70`** |
+| `__DATA_CONST.__got` | `0xe08` | `0xe60` | **`+0x58`** |
+| `__TEXT.__swift5_capture` | `0x41a8` | `0x41fc` | **`+0x54`** |
+| `__DATA_CONST.__const` | `0x20e0` | `0x2128` | **`+0x48`** |
+| `__AUTH.__data` | `0x32b0` | `0x32e0` | **`+0x30`** |
+| `__DATA_DIRTY.__data` | `0x6428` | `0x6458` | **`+0x30`** |
+| `__TEXT.__swift5_assocty` | `0x858` | `0x870` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0xebc` | `0xed4` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1e78` | `0x1e88` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x63c` | `0x64c` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x2f0` | `0x2f8` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x6d8` | `0x6d0` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0xa0e0` | `0xa0e8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -303.100.1.0.0
--  __TEXT.__text: 0x2d2a24
--  __TEXT.__objc_methlist: 0x341c
--  __TEXT.__const: 0x160d4
--  __TEXT.__oslogstring: 0xff75
--  __TEXT.__cstring: 0x6613
 +309.200.41.0.0
-+  __TEXT.__text: 0x2d4384
-+  __TEXT.__objc_methlist: 0x34bc
-+  __TEXT.__const: 0x169c4
-+  __TEXT.__oslogstring: 0x100a5
-+  __TEXT.__cstring: 0x62e3
-   __TEXT.__gcc_except_tab: 0x40
-   __TEXT.__dlopen_cstrs: 0x66
--  __TEXT.__swift5_typeref: 0x7dec
--  __TEXT.__swift5_capture: 0x41a8
--  __TEXT.__swift5_reflstr: 0x6210
--  __TEXT.__swift5_assocty: 0x858
--  __TEXT.__swift5_fieldmd: 0x61f0
--  __TEXT.__constg_swiftt: 0x7d4c
-+  __TEXT.__swift5_typeref: 0x7e5c
-+  __TEXT.__swift5_reflstr: 0x6330
-+  __TEXT.__swift5_assocty: 0x870
-+  __TEXT.__constg_swiftt: 0x7f10
-+  __TEXT.__swift5_fieldmd: 0x62cc
-   __TEXT.__swift5_builtin: 0x1cc
-+  __TEXT.__swift5_proto: 0xed4
-+  __TEXT.__swift5_types: 0x64c
-+  __TEXT.__swift5_capture: 0x41fc
-   __TEXT.__swift5_mpenum: 0x78
-   __TEXT.__swift5_protos: 0xf4
--  __TEXT.__swift5_proto: 0xebc
--  __TEXT.__swift5_types: 0x63c
-   __TEXT.__swift_as_entry: 0x310
-   __TEXT.__swift_as_ret: 0x2c4
--  __TEXT.__swift_as_cont: 0x6d8
-+  __TEXT.__swift_as_cont: 0x6d0
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0xcac0
--  __TEXT.__eh_frame: 0xdb78
-+  __TEXT.__unwind_info: 0xcb00
-+  __TEXT.__eh_frame: 0xdd08
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x20e0
--  __DATA_CONST.__objc_classlist: 0x2f0
-+  __DATA_CONST.__const: 0x2128
-+  __DATA_CONST.__objc_classlist: 0x2f8
-   __DATA_CONST.__objc_catlist: 0x68
-   __DATA_CONST.__objc_protolist: 0x2e8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1e78
-+  __DATA_CONST.__objc_selrefs: 0x1e88
-   __DATA_CONST.__objc_protorefs: 0x1b8
-   __DATA_CONST.__objc_superrefs: 0x28
--  __DATA_CONST.__got: 0xe08
--  __AUTH_CONST.__const: 0x115b0
-+  __DATA_CONST.__got: 0xe60
-+  __AUTH_CONST.__const: 0x11890
-   __AUTH_CONST.__cfstring: 0x920
--  __AUTH_CONST.__objc_const: 0xad48
--  __AUTH_CONST.__auth_got: 0x1e60
--  __AUTH.__objc_data: 0x970
--  __AUTH.__data: 0x32b0
-+  __AUTH_CONST.__objc_const: 0xaea8
-+  __AUTH_CONST.__auth_got: 0x1f08
-+  __AUTH.__objc_data: 0xa38
-+  __AUTH.__data: 0x32e0
-   __DATA.__objc_ivar: 0x60
--  __DATA.__data: 0x65f8
-+  __DATA.__data: 0x67a8
-   __DATA.__objc_stublist: 0x50
-   __DATA.__common: 0xc68
--  __DATA_DIRTY.__objc_data: 0x3bf0
--  __DATA_DIRTY.__data: 0x6428
-+  __DATA_DIRTY.__objc_data: 0x3cf0
-+  __DATA_DIRTY.__data: 0x6458
-   __DATA_DIRTY.__common: 0x4a8
-   __DATA_DIRTY.__bss: 0x280
-   - /System/Library/Frameworks/Combine.framework/Combine
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 16501
--  Symbols:   33284
+-  Symbols:   32708
 -  CStrings:  1813
 +  Functions: 16581
-+  Symbols:   33485
++  Symbols:   32905
 +  CStrings:  1778
- 
 Symbols:
 + _$s10Foundation19PropertyListDecoderC6decode_4fromxxm_AA4DataVtKSeRzlFTj
 + _$s10Foundation19PropertyListDecoderCACycfc
@@ -356,11 +307,6 @@ Symbols:
 + _associated conformance 14CopresenceCore10XPCWrapperC5ErrorOyx_GSHAASQ
 + _associated conformance 14CopresenceCore10XPCWrapperC6FormatOyx_GSHAASQ
 + _objc_autorelease
-+ _objc_msgSend$activitySessionManager:requestMediaKeysForParticipants:topicName:
-+ _objc_msgSend$activitySessionManager:subscribeMediaCryptorForTopic:onCryptor:
-+ _objc_msgSend$failWithError:
-+ _objc_msgSend$initWithDomain:code:userInfo:
-+ _objc_msgSend$isAccessibilityCaptions
 + _symbolic Sayy______pcG So13CPDataCryptorP
 + _symbolic _____ 14CopresenceCore10XPCWrapperC
 + _symbolic _____ 14CopresenceCore10XPCWrapperC5ErrorO
@@ -441,7 +387,6 @@ Symbols:
 - _$sSo36TUConversationActivityLifetimePolicyVMaTm
 - _$ss12_ArrayBufferV20_consumeAndCreateNew14bufferIsUnique15minimumCapacity13growForAppendAByxGSb_SiSbtFyyKc_Tg5Tm
 - ___swift_closure_destructor.54Tm
-- _objc_msgSend$sharePlayInFaceTimeCanvasEnabled
 CStrings:
 + "CopresenceCore.MKMDataCryptor"
 + "CopresenceCore.XPCWrapper"

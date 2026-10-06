@@ -2,18 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/CryptexKit.framework/CryptexKit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x91110` | `0x9111c` | **`+0xc`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
 
-```diff
+### Other Changes
 
- 761.40.23.0.0
--  __TEXT.__text: 0x8d2a0
-+  __TEXT.__text: 0x8d2ac
-   __TEXT.__objc_methlist: 0x124
-   __TEXT.__const: 0xbb08
-   __TEXT.__cstring: 0x2226
+```diff
 Symbols:
 + _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVy10CryptexKit7PkgMetaV4SpecVG_Tg504$s10f4Kit6h5EnvV4j38V8packages6parent4metaAESayAA0C3RefVG_q20C8ObjectIdVyACGSgSDyq2C4I41V6SchemaVAA0C5ValueOGtcfcSbAqDV_AWtXEfU1_Tf1nnc_nTm
 + _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVy10CryptexKit7PkgMetaVG_Tg504$s10f4Kit6h52EnvV8populate7xpcDictySo03OS_F7_object_pz_tKFSbAA0C4I10V_AHtXEfU_Tf1nnc_n

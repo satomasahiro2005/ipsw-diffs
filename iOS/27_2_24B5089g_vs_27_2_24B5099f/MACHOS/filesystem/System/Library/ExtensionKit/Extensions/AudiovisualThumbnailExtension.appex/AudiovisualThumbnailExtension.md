@@ -2,15 +2,14 @@
 
 > `/System/Library/ExtensionKit/Extensions/AudiovisualThumbnailExtension.appex/AudiovisualThumbnailExtension`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -218.1.1.0.0
 +218.1.3.200.0
-   __TEXT.__text: 0x54e4
-   __TEXT.__auth_stubs: 0xaf0
-   __TEXT.__objc_stubs: 0xe0
 ```

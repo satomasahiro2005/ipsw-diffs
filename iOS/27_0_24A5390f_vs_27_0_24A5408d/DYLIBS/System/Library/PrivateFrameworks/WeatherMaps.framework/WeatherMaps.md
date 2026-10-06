@@ -2,73 +2,28 @@
 
 > `/System/Library/PrivateFrameworks/WeatherMaps.framework/WeatherMaps`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c5acc` | `0x1c5e00` | **`+0x334`** |
+| `__AUTH_CONST.__objc_const` | `0xed38` | `0xed58` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x86be` | `0x86de` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x6fd0` | `0x6ff0` | **`+0x20`** |
+| `__DATA.__data` | `0x35f0` | `0x3600` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x3528` | `0x3538` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x8750` | `0x875c` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x2920` | `0x2928` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2608` | `0x2600` | **`-0x8`** |
+| `__DATA_DIRTY.__objc_data` | `0x17c0` | `0x17c8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1444.1.0.0.0
--  __TEXT.__text: 0x1c5acc
 +1454.1.0.0.0
-+  __TEXT.__text: 0x1c5e00
-   __TEXT.__objc_methlist: 0x30f0
-   __TEXT.__const: 0x14a24
-   __TEXT.__gcc_except_tab: 0x30
-   __TEXT.__constg_swiftt: 0x8058
-   __TEXT.__swift5_typeref: 0x90a2
-   __TEXT.__swift5_builtin: 0x488
--  __TEXT.__swift5_reflstr: 0x86be
--  __TEXT.__swift5_fieldmd: 0x8750
-+  __TEXT.__swift5_reflstr: 0x86de
-+  __TEXT.__swift5_fieldmd: 0x875c
-   __TEXT.__swift5_assocty: 0x710
-   __TEXT.__swift5_mpenum: 0x27c
-   __TEXT.__swift5_proto: 0xba4
-   __TEXT.__swift5_types: 0x794
--  __TEXT.__swift5_capture: 0x3528
-+  __TEXT.__swift5_capture: 0x3538
-   __TEXT.__cstring: 0x64c1
-   __TEXT.__swift5_protos: 0x1bc
-   __TEXT.__oslogstring: 0x695d
-   __TEXT.__swift_as_entry: 0x218
-   __TEXT.__swift_as_cont: 0x59c
-   __TEXT.__swift_as_ret: 0x1d4
--  __TEXT.__unwind_info: 0x6fd0
-+  __TEXT.__unwind_info: 0x6ff0
-   __TEXT.__eh_frame: 0x8c8c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x1b8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2608
-+  __DATA_CONST.__objc_selrefs: 0x2600
-   __DATA_CONST.__objc_protorefs: 0xe0
-   __DATA_CONST.__got: 0x1040
-   __AUTH_CONST.__const: 0x12101
--  __AUTH_CONST.__objc_const: 0xed38
--  __AUTH_CONST.__auth_got: 0x2920
-+  __AUTH_CONST.__objc_const: 0xed58
-+  __AUTH_CONST.__auth_got: 0x2928
-   __AUTH.__objc_data: 0x2718
-   __AUTH.__data: 0x39a8
--  __DATA.__data: 0x35f0
-+  __DATA.__data: 0x3600
-   __DATA.__bss: 0xce90
-   __DATA.__common: 0x1a8
--  __DATA_DIRTY.__objc_data: 0x17c0
-+  __DATA_DIRTY.__objc_data: 0x17c8
-   __DATA_DIRTY.__data: 0x7c50
-   __DATA_DIRTY.__bss: 0x6e00
-   __DATA_DIRTY.__common: 0x2b0
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11587
--  Symbols:   4511
 +  Functions: 11592
-+  Symbols:   4510
-   CStrings:  856
- 
-Symbols:
-- _objc_msgSend$modelTime
 ```

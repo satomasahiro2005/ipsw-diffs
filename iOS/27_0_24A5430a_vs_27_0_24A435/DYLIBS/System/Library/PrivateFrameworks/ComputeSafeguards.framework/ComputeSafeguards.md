@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/ComputeSafeguards.framework/ComputeSafeguards`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_22 : 12 -> 20

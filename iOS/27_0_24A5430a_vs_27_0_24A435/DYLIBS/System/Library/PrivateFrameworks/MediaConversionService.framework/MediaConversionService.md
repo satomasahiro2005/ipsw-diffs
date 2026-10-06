@@ -2,72 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/MediaConversionService.framework/MediaConversionService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1b520` | `0x1e05c` | **`+0x2b3c`** |
+| `__TEXT.__cstring` | `0x4c8c` | `0x5970` | **`+0xce4`** |
+| `__AUTH_CONST.__cfstring` | `0x2da0` | `0x3460` | **`+0x6c0`** |
+| `__AUTH_CONST.__objc_const` | `0x2a78` | `0x2f88` | **`+0x510`** |
+| `__TEXT.__oslogstring` | `0x2564` | `0x28ca` | **`+0x366`** |
+| `__TEXT.__objc_methlist` | `0x1c3c` | `0x1eec` | **`+0x2b0`** |
+| `__DATA_CONST.__const` | `0xae0` | `0xcd8` | **`+0x1f8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x14b0` | `0x1638` | **`+0x188`** |
+| `__DATA_CONST.__objc_arraydata` | `0x4c8` | `0x578` | **`+0xb0`** |
+| `__AUTH.__objc_data` | `—` | `0xa0` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x710` | `0x778` | **`+0x68`** |
+| `__DATA.__objc_ivar` | `0x200` | `0x250` | **`+0x50`** |
+| `__DATA.__data` | `0x488` | `0x4a8` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x398` | `0x3b8` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x58c` | `0x5a0` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0xb8` | `0xc8` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x58` | `0x60` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.234.0.0
--  __TEXT.__text: 0x1b520
--  __TEXT.__objc_methlist: 0x1c3c
 +912.0.235.0.0
-+  __TEXT.__text: 0x1e05c
-+  __TEXT.__objc_methlist: 0x1eec
-   __TEXT.__const: 0xc0
--  __TEXT.__gcc_except_tab: 0x58c
--  __TEXT.__cstring: 0x4c8c
--  __TEXT.__oslogstring: 0x2564
--  __TEXT.__unwind_info: 0x710
-+  __TEXT.__gcc_except_tab: 0x5a0
-+  __TEXT.__cstring: 0x5970
-+  __TEXT.__oslogstring: 0x28ca
-+  __TEXT.__unwind_info: 0x778
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xae0
--  __DATA_CONST.__objc_classlist: 0xb8
-+  __DATA_CONST.__const: 0xcd8
-+  __DATA_CONST.__objc_classlist: 0xc8
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x14b0
-+  __DATA_CONST.__objc_selrefs: 0x1638
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__objc_superrefs: 0x58
--  __DATA_CONST.__objc_arraydata: 0x4c8
--  __DATA_CONST.__got: 0x398
-+  __DATA_CONST.__objc_superrefs: 0x60
-+  __DATA_CONST.__objc_arraydata: 0x578
-+  __DATA_CONST.__got: 0x3b8
-   __AUTH_CONST.__const: 0x140
--  __AUTH_CONST.__cfstring: 0x2da0
--  __AUTH_CONST.__objc_const: 0x2a78
-+  __AUTH_CONST.__cfstring: 0x3460
-+  __AUTH_CONST.__objc_const: 0x2f88
-   __AUTH_CONST.__objc_intobj: 0x198
-   __AUTH_CONST.__objc_arrayobj: 0xc0
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__objc_ivar: 0x200
--  __DATA.__data: 0x488
-+  __AUTH.__objc_data: 0xa0
-+  __DATA.__objc_ivar: 0x250
-+  __DATA.__data: 0x4a8
-   __DATA_DIRTY.__objc_data: 0x730
-   __DATA_DIRTY.__bss: 0x20
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /System/Library/PrivateFrameworks/PhotosFormats.framework/PhotosFormats
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 640
--  Symbols:   1897
+-  Symbols:   1362
 -  CStrings:  553
 +  Functions: 708
-+  Symbols:   2066
++  Symbols:   1496
 +  CStrings:  623
- 
 Symbols:
 + -[ConversionOptionSet setSourcePathProvenanceUnprocessedImage:]
 + -[ConversionOptionSet sourcePathProvenanceUnprocessedImage]
@@ -229,41 +198,6 @@ Symbols:
 + ___block_descriptor_64_e8_32s40s48s56bs_e20_v24?0q8"NSError"16ls32l8s40l8s48l8s56l8
 + ___block_descriptor_80_e8_32s40s48s56s64s72bs_e37_v32?0q8"NSDictionary"16"NSError"24ls32l8s40l8s48l8s56l8s64l8s72l8
 + _getprogname
-+ _objc_msgSend$_requiresNonProvenanceMetadataChange
-+ _objc_msgSend$_submitAdjustedProvenanceProcessingRequest:destination:sourceURLCollection:options:completionHandler:
-+ _objc_msgSend$_submitProvenanceProcessedEmbedRequest:destination:options:completionHandler:
-+ _objc_msgSend$bundleIdentifier
-+ _objc_msgSend$checkForProvenanceData
-+ _objc_msgSend$embedProcessedProvenanceFromRegularImageAtURL:intoRegularImageAtURL:destinationURL:options:completionHandler:
-+ _objc_msgSend$hasProvenanceMetadata
-+ _objc_msgSend$mainBundle
-+ _objc_msgSend$markProvenanceMetadataAsCheckedWithStatus:
-+ _objc_msgSend$provenanceAdjustedRenderSourceURL
-+ _objc_msgSend$provenanceMetadataBehavior
-+ _objc_msgSend$provenanceMetadataStatus
-+ _objc_msgSend$provenanceProcessedOriginalDestinationURL
-+ _objc_msgSend$provenanceProcessedSourceImageURL
-+ _objc_msgSend$provenanceSidecarURL
-+ _objc_msgSend$requiresProvenanceMetadataChange
-+ _objc_msgSend$setCertificateVerificationStatus:
-+ _objc_msgSend$setDiagnosticsRequested:
-+ _objc_msgSend$setProcessedJPEGImageData:
-+ _objc_msgSend$setProvenanceMetadataBehavior:withProcessedSourceImageURL:
-+ _objc_msgSend$setProvenanceMetadataBehavior:withProvenanceSidecarURL:
-+ _objc_msgSend$setProvenanceMetadataBehavior:withUnprocessedSourceAdjustedRenderURL:processedOriginalDestinationURL:sidecarURL:
-+ _objc_msgSend$setRevocationCheckIdentifier:
-+ _objc_msgSend$setRevocationStatus:
-+ _objc_msgSend$setShouldPreserveProvenance:
-+ _objc_msgSend$setSignatureVerificationStatus:
-+ _objc_msgSend$setSourcePathProvenanceUnprocessedImage:
-+ _objc_msgSend$setUtcLowerBoundTimestamp:
-+ _objc_msgSend$setUtcProcessingTimestamp:
-+ _objc_msgSend$setUtcUpperBoundTimestamp:
-+ _objc_msgSend$shouldPreserveProvenance
-+ _objc_msgSend$sourcePathProvenanceUnprocessedImage
-+ _objc_msgSend$sourceProvenanceMetadataStatus
-+ _objc_msgSend$stringWithUTF8String:
-+ _objc_msgSend$stripProvenanceMetadataFromOriginalProvenanceImageAtURL:destinationURL:options:completionHandler:
 - GCC_except_table112
 - GCC_except_table114
 - GCC_except_table116

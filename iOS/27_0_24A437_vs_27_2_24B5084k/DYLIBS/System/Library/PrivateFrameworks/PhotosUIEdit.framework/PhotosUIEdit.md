@@ -2,121 +2,60 @@
 
 > `/System/Library/PrivateFrameworks/PhotosUIEdit.framework/PhotosUIEdit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x6444` | `0x6037` | **`-0x40d`** |
+| `__TEXT.__text` | `0xe23a8` | `0xe265c` | **`+0x2b4`** |
+| `__TEXT.__eh_frame` | `0x2d64` | `0x2b2c` | **`-0x238`** |
+| `__AUTH_CONST.__objc_const` | `0xad70` | `0xabc8` | **`-0x1a8`** |
+| `__TEXT.__unwind_info` | `0x4188` | `0x4028` | **`-0x160`** |
+| `__TEXT.__const` | `0x78a8` | `0x7778` | **`-0x130`** |
+| `__TEXT.__objc_methlist` | `0x4adc` | `0x49bc` | **`-0x120`** |
+| `__AUTH_CONST.__const` | `0x5908` | `0x5820` | **`-0xe8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3e08` | `0x3d48` | **`-0xc0`** |
+| `__TEXT.__oslogstring` | `0x43d3` | `0x4333` | **`-0xa0`** |
+| `__TEXT.__swift5_capture` | `0x11f8` | `0x1168` | **`-0x90`** |
+| `__AUTH_CONST.__cfstring` | `0x3de0` | `0x3e40` | **`+0x60`** |
+| `__TEXT.__swift5_reflstr` | `0x281b` | `0x287b` | **`+0x60`** |
+| `__TEXT.__constg_swiftt` | `0x30c8` | `0x311c` | **`+0x54`** |
+| `__DATA_CONST.__got` | `0x16a0` | `0x1650` | **`-0x50`** |
+| `__TEXT.__swift5_typeref` | `0x1318a` | `0x13140` | **`-0x4a`** |
+| `__AUTH.__objc_data` | `0x928` | `0x8e0` | **`-0x48`** |
+| `__TEXT.__swift5_fieldmd` | `0x2190` | `0x21d0` | **`+0x40`** |
+| `__DATA_DIRTY.__data` | `0x3520` | `0x34e8` | **`-0x38`** |
+| `__DATA_DIRTY.__objc_data` | `0x24b8` | `0x2490` | **`-0x28`** |
+| `__DATA.__bss` | `0x3f78` | `0x3f58` | **`-0x20`** |
+| `__DATA.__data` | `0x2880` | `0x28a0` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x170` | `0x154` | **`-0x1c`** |
+| `__TEXT.__swift_as_entry` | `0x88` | `0x6c` | **`-0x1c`** |
+| `__TEXT.__swift_as_ret` | `0xac` | `0x90` | **`-0x1c`** |
+| `__AUTH.__data` | `0xca0` | `0xc90` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x23f8` | `0x2408` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x21b8` | `0x21c0` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x3d8` | `0x3d0` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0x1e0` | `0x1e4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.235.0.0
--  __TEXT.__text: 0xdb2e8
--  __TEXT.__objc_methlist: 0x4adc
--  __TEXT.__const: 0x78a8
--  __TEXT.__swift5_typeref: 0x1318a
--  __TEXT.__constg_swiftt: 0x30c8
--  __TEXT.__swift5_reflstr: 0x281b
 +916.40.110.0.0
-+  __TEXT.__text: 0xdb72c
-+  __TEXT.__objc_methlist: 0x49bc
-+  __TEXT.__const: 0x7778
-+  __TEXT.__swift5_typeref: 0x13140
-+  __TEXT.__constg_swiftt: 0x311c
-+  __TEXT.__swift5_reflstr: 0x287b
-   __TEXT.__swift5_assocty: 0x680
--  __TEXT.__swift5_fieldmd: 0x2190
-+  __TEXT.__swift5_fieldmd: 0x21d0
-   __TEXT.__swift5_builtin: 0x140
-   __TEXT.__swift5_proto: 0x254
--  __TEXT.__swift5_types: 0x1e0
--  __TEXT.__cstring: 0x6444
--  __TEXT.__swift5_capture: 0x11f8
--  __TEXT.__swift_as_entry: 0x88
--  __TEXT.__swift_as_ret: 0xac
--  __TEXT.__swift_as_cont: 0x170
--  __TEXT.__oslogstring: 0x43d3
-+  __TEXT.__swift5_types: 0x1e4
-+  __TEXT.__cstring: 0x6037
-+  __TEXT.__swift5_capture: 0x1168
-+  __TEXT.__swift_as_entry: 0x6c
-+  __TEXT.__swift_as_ret: 0x90
-+  __TEXT.__swift_as_cont: 0x154
-+  __TEXT.__oslogstring: 0x4333
-   __TEXT.__swift5_mpenum: 0x28
-   __TEXT.__swift5_protos: 0x14
-   __TEXT.__gcc_except_tab: 0x678
--  __TEXT.__unwind_info: 0x52a8
--  __TEXT.__eh_frame: 0x2d74
-+  __TEXT.__unwind_info: 0x50e0
-+  __TEXT.__eh_frame: 0x2b34
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x21b8
--  __DATA_CONST.__objc_classlist: 0x3d8
-+  __DATA_CONST.__const: 0x21c0
-+  __DATA_CONST.__objc_classlist: 0x3d0
-   __DATA_CONST.__objc_catlist: 0x58
-   __DATA_CONST.__objc_protolist: 0xb8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3e08
-+  __DATA_CONST.__objc_selrefs: 0x3d48
-   __DATA_CONST.__objc_protorefs: 0x40
-   __DATA_CONST.__objc_superrefs: 0x188
-   __DATA_CONST.__objc_arraydata: 0x70
--  __DATA_CONST.__got: 0x16a0
--  __AUTH_CONST.__const: 0x5908
--  __AUTH_CONST.__cfstring: 0x3de0
--  __AUTH_CONST.__objc_const: 0xad70
-+  __DATA_CONST.__got: 0x1650
-+  __AUTH_CONST.__const: 0x5820
-+  __AUTH_CONST.__cfstring: 0x3e40
-+  __AUTH_CONST.__objc_const: 0xabc8
-   __AUTH_CONST.__objc_arrayobj: 0x30
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_intobj: 0x30
--  __AUTH_CONST.__auth_got: 0x23f8
--  __AUTH.__objc_data: 0x928
--  __AUTH.__data: 0xca0
-+  __AUTH_CONST.__auth_got: 0x2408
-+  __AUTH.__objc_data: 0x8e0
-+  __AUTH.__data: 0xc90
-   __DATA.__objc_ivar: 0x4d4
--  __DATA.__data: 0x2880
-+  __DATA.__data: 0x28a0
-   __DATA.__objc_stublist: 0x8
-   __DATA.__common: 0x50
--  __DATA_DIRTY.__objc_data: 0x24b8
--  __DATA_DIRTY.__data: 0x3520
-+  __DATA_DIRTY.__objc_data: 0x2490
-+  __DATA_DIRTY.__data: 0x34e8
-   __DATA_DIRTY.__bss: 0xd80
-   __DATA_DIRTY.__common: 0x38
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
+
 -  - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreImage.framework/CoreImage
 
-   - /System/Library/Frameworks/Symbols.framework/Symbols
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers
 +  - /System/Library/PrivateFrameworks/AppleIntelligenceReporting.framework/AppleIntelligenceReporting
-   - /System/Library/PrivateFrameworks/CPAnalytics.framework/CPAnalytics
-   - /System/Library/PrivateFrameworks/CameraEditKit.framework/CameraEditKit
-   - /System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog
-+  - /System/Library/PrivateFrameworks/ModelManagerServices.framework/ModelManagerServices
-   - /System/Library/PrivateFrameworks/NeutrinoCore.framework/NeutrinoCore
-   - /System/Library/PrivateFrameworks/PhotoFoundation.framework/PhotoFoundation
-   - /System/Library/PrivateFrameworks/PhotoImaging.framework/PhotoImaging
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/PrivateFrameworks/ModelManagerServices.framework/ModelManagerServices
+
 -  Functions: 7096
--  Symbols:   6516
+-  Symbols:   4901
 -  CStrings:  1145
 +  Functions: 7036
-+  Symbols:   6537
++  Symbols:   4944
 +  CStrings:  1130
- 
 Symbols:
 + +[PEEditAIToolCompletedEventBuilder resultForError:fallbackResult:]
 + GCC_except_table1272
@@ -261,28 +200,6 @@ Symbols:
 - _keypath_get_selector_showText
 - _notify_cancel
 - _notify_register_dispatch
-- _objc_msgSend$aa_isCloudSubscriber
-- _objc_msgSend$aa_isManagedAppleID
-- _objc_msgSend$aa_primaryAppleAccount
-- _objc_msgSend$aa_primaryAppleAccountWithCompletion:
-- _objc_msgSend$defaultStore
-- _objc_msgSend$iCloudPlusHelpArticleURL
-- _objc_msgSend$iCloudPlusURL
-- _objc_msgSend$isManagedAccountWithCompletionHandler:
-- _objc_msgSend$isManagedAppleAccount
-- _objc_msgSend$openURL:options:completionHandler:
-- _objc_msgSend$refresh
-- _objc_msgSend$refreshIsManagedAppleAccount
-- _objc_msgSend$refreshRateLimitStatuses
-- _objc_msgSend$setIsManagedAppleAccount:
-- _objc_msgSend$setShowText:
-- _objc_msgSend$set_cleanupStatus:
-- _objc_msgSend$set_outfillStatus:
-- _objc_msgSend$set_reframeStatus:
-- _objc_msgSend$showText
-- _objc_msgSend$startObservingRateLimitFetchNotification
-- _objc_msgSend$window
-- _objc_msgSend$windowScene
 - _swift_continuation_throwingResume
 - _swift_continuation_throwingResumeWithError
 - _symbolic IeAgH_

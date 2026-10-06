@@ -2,92 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/SiriActivation.framework/SiriActivation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x74408` | `0x762d0` | **`+0x1ec8`** |
+| `__TEXT.__oslogstring` | `0x934c` | `0x9ae4` | **`+0x798`** |
+| `__AUTH_CONST.__objc_const` | `0xb188` | `0xb5f8` | **`+0x470`** |
+| `__TEXT.__cstring` | `0xcc42` | `0xcf62` | **`+0x320`** |
+| `__TEXT.__objc_methlist` | `0x6fa4` | `0x7254` | **`+0x2b0`** |
+| `__AUTH.__objc_data` | `0x20a0` | `0x2190` | **`+0xf0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3528` | `0x35f8` | **`+0xd0`** |
+| `__DATA_CONST.__const` | `0x1808` | `0x18c0` | **`+0xb8`** |
+| `__AUTH_CONST.__cfstring` | `0x5000` | `0x50a0` | **`+0xa0`** |
+| `__TEXT.__const` | `0x11dc` | `0x124c` | **`+0x70`** |
+| `__TEXT.__unwind_info` | `0x1ea8` | `0x1f10` | **`+0x68`** |
+| `__DATA.__data` | `0x16a0` | `0x1700` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0xc8c` | `0xcec` | **`+0x60`** |
+| `__DATA.__objc_ivar` | `0x720` | `0x748` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0xa80` | `0xaa8` | **`+0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x390` | `0x3a8` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0xbd8` | `0xbe8` | **`+0x10`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x10` | `—` | **`-0x10`** |
+| `__DATA.__bss` | `0x648` | `0x658` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x2c8` | `0x2d8` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x1d8` | `0x1e0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.55.37.11.4
--  __TEXT.__text: 0x719bc
--  __TEXT.__objc_methlist: 0x6fa4
--  __TEXT.__const: 0x11dc
--  __TEXT.__cstring: 0xcc42
--  __TEXT.__oslogstring: 0x934c
--  __TEXT.__gcc_except_tab: 0xc8c
 +3605.22.2.0.0
-+  __TEXT.__text: 0x7385c
-+  __TEXT.__objc_methlist: 0x7254
-+  __TEXT.__const: 0x124c
-+  __TEXT.__cstring: 0xcf62
-+  __TEXT.__oslogstring: 0x9ae4
-+  __TEXT.__gcc_except_tab: 0xcec
-   __TEXT.__dlopen_cstrs: 0x1bc
-   __TEXT.__swift5_typeref: 0x77a
-   __TEXT.__constg_swiftt: 0x42c
 
-   __TEXT.__swift5_protos: 0xc
-   __TEXT.__swift5_mpenum: 0x14
-   __TEXT.__swift_as_cont: 0x8c
--  __TEXT.__unwind_info: 0x2638
-+  __TEXT.__unwind_info: 0x26f0
-   __TEXT.__eh_frame: 0xf58
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1808
--  __DATA_CONST.__objc_classlist: 0x390
-+  __DATA_CONST.__const: 0x18c0
-+  __DATA_CONST.__objc_classlist: 0x3a8
-   __DATA_CONST.__objc_catlist: 0x18
--  __DATA_CONST.__objc_protolist: 0x1d8
-+  __DATA_CONST.__objc_protolist: 0x1e0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3528
-+  __DATA_CONST.__objc_selrefs: 0x35f8
-   __DATA_CONST.__objc_protorefs: 0x68
--  __DATA_CONST.__objc_superrefs: 0x2c8
-+  __DATA_CONST.__objc_superrefs: 0x2d8
-   __DATA_CONST.__objc_arraydata: 0x510
--  __DATA_CONST.__got: 0xa80
-+  __DATA_CONST.__got: 0xaa8
-   __AUTH_CONST.__const: 0x14b0
--  __AUTH_CONST.__cfstring: 0x5000
--  __AUTH_CONST.__objc_const: 0xb188
-+  __AUTH_CONST.__cfstring: 0x50a0
-+  __AUTH_CONST.__objc_const: 0xb5f8
-   __AUTH_CONST.__objc_intobj: 0x978
-   __AUTH_CONST.__objc_dictobj: 0x118
--  __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0xbd8
--  __AUTH.__objc_data: 0x20a0
-+  __AUTH_CONST.__auth_got: 0xbe8
-+  __AUTH.__objc_data: 0x2190
-   __AUTH.__data: 0x118
--  __DATA.__objc_ivar: 0x720
--  __DATA.__data: 0x16a0
-+  __DATA.__objc_ivar: 0x748
-+  __DATA.__data: 0x1700
-   __DATA.__common: 0x270
-   __DATA_DIRTY.__objc_data: 0x5f0
-   __DATA_DIRTY.__bss: 0x10
-
-   - /System/Library/PrivateFrameworks/IAP.framework/IAP
-   - /System/Library/PrivateFrameworks/MediaExperience.framework/MediaExperience
-   - /System/Library/PrivateFrameworks/MobileBluetooth.framework/MobileBluetooth
 +  - /System/Library/PrivateFrameworks/MobileStoreDemoKit.framework/MobileStoreDemoKit
-   - /System/Library/PrivateFrameworks/PowerLog.framework/PowerLog
-   - /System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer
-   - /System/Library/PrivateFrameworks/SAObjects.framework/SAObjects
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2906
--  Symbols:   6020
+-  Symbols:   4644
 -  CStrings:  1806
 +  Functions: 2971
-+  Symbols:   6136
++  Symbols:   4743
 +  CStrings:  1856
- 
 Symbols:
 + +[SASActivationDecision shouldContinueActivationForCondition:errorNotification:activationDeclinedHandler:]
 + +[SASDeviceSelectionController _resetSignalObserverSetupForTesting]
@@ -219,37 +174,6 @@ Symbols:
 + ___block_descriptor_41_e8_32w_e42_v16?0"<BSServiceConnectionConfiguring>"8lw32l8
 + ___block_descriptor_49_e8_32s40w_e29_v16?0"BSServiceConnection"8lw40l8s32l8
 + _activationOutcomeListenerLock
-+ _objc_msgSend$_demoModeIsSupported
-+ _objc_msgSend$_inPressDemoMode
-+ _objc_msgSend$_inSecureDemoModeWithError:
-+ _objc_msgSend$_inStoreDemoMode
-+ _objc_msgSend$_notifyListenersOfDeclinedActivation
-+ _objc_msgSend$_presentationsLock_cancelPrewarmCancellationTimer
-+ _objc_msgSend$_presentationsLock_startPrewarmCancellationTimer
-+ _objc_msgSend$_selectDeviceWithSignals:completion:
-+ _objc_msgSend$_shouldShowDemoSiriAI
-+ _objc_msgSend$_triggerSignalForActivationRequest:isSiriDisplayed:isSiriSpeaking:
-+ _objc_msgSend$_triggerTypeForActivationRequest:
-+ _objc_msgSend$activateForRequest:withTimeout:visible:idleAndQuiet:
-+ _objc_msgSend$activationDeclinedBecauseSiriIsUnavailable
-+ _objc_msgSend$activationOutcomeListeners
-+ _objc_msgSend$activationSourceDidReceiveDeclinedActivation
-+ _objc_msgSend$initAsOutcomeReceiverWithDelegate:
-+ _objc_msgSend$initWithState:timestamp:
-+ _objc_msgSend$initWithType:context:
-+ _objc_msgSend$isDashboardCampoEnabled
-+ _objc_msgSend$isSecureDemoModeEnabled:
-+ _objc_msgSend$registerActivationOutcomeListenerServer:identifier:
-+ _objc_msgSend$registerActivationOutcomeListenerWithIdentifier:
-+ _objc_msgSend$selectDeviceForRole:withSignals:completion:
-+ _objc_msgSend$setActivationOutcomeListeners:
-+ _objc_msgSend$setupSignalObservers
-+ _objc_msgSend$shouldContinueActivationForCondition:errorNotification:activationDeclinedHandler:
-+ _objc_msgSend$siriActivationDeclined
-+ _objc_msgSend$unavailabilityReasons
-+ _objc_msgSend$unregisterActivationOutcomeListenerWithIdentifier:
-+ _objc_msgSend$unregisterSiriPresentation:withIdentifier:
-+ _objc_msgSend$willAttemptFallback
 + _shouldContinueActivationForCondition:errorNotification:activationDeclinedHandler:.log
 + _shouldContinueActivationForCondition:errorNotification:activationDeclinedHandler:.once
 - +[SASActivationDecision shouldContinueActivationForCondition:errorNotification:]
@@ -283,20 +207,6 @@ Symbols:
 - ___81-[SiriActivationService _sendActivationTriggerToDeviceSelection:withSystemState:]_block_invoke
 - ___91-[SiriActivationService _performDeviceSelectionWithActivation:withSystemState:withOptions:]_block_invoke
 - ___block_descriptor_40_e8_32s_e43_v24?0"DeviceSelectionDevice"8"NSError"16ls32l8
-- _objc_msgSend$_performDeviceSelectionWithActivation:withSystemState:withOptions:
-- _objc_msgSend$_performLegacyDeviceSelectionActivation:withSystemState:presentationIdentifier:
-- _objc_msgSend$_sendActivationTriggerToDeviceSelection:withSystemState:
-- _objc_msgSend$_setupDeviceSelectionSignalObservers
-- _objc_msgSend$activateForRequest:visible:
-- _objc_msgSend$activateForRequest:withTimeout:visible:quiet:
-- _objc_msgSend$donateTriggerSource:withCompletion:
-- _objc_msgSend$initWithSessionId:
-- _objc_msgSend$initWithTriggerType:context:
-- _objc_msgSend$selectDeviceForRole:context:completion:
-- _objc_msgSend$shouldContinueActivationForCondition:errorNotification:
-- _objc_msgSend$turnIdentifier
-- _objc_msgSend$unregisterSiriPresentationIdentifier:
-- _objc_msgSend$unregisterSiriPresentationWithIdentifier:
 - _shouldContinueActivationForCondition:errorNotification:.log
 - _shouldContinueActivationForCondition:errorNotification:.once
 CStrings:

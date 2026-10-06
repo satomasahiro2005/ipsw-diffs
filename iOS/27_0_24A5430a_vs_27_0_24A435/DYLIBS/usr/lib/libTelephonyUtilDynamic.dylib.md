@@ -2,14 +2,15 @@
 
 > `/usr/lib/libTelephonyUtilDynamic.dylib`
 
-```diff
+### Section Size Changes
 
- 6567.1.0.0.0
--  __TEXT.__text: 0x84c74
-+  __TEXT.__text: 0x84c44
-   __TEXT.__init_offsets: 0x10
-   __TEXT.__objc_methlist: 0x2a4
-   __TEXT.__const: 0xa138
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x84c74` | `0x84c44` | **`-0x30`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN3ctu20RestDispatchListener34getOrCreateResourceConnection_syncERKNSt3__110shared_ptrIKNS_4rest23RestConnectorSourceBaseEEENS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE : 1036 -> 1032
 ~ __ZNK3ctu4rest27WatchableRestResourceHelper3mapENSt3__18functionIFvRKNS_22RestResourceConnectionEEEE : 172 -> 168

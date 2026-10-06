@@ -2,104 +2,59 @@
 
 > `/System/Library/PrivateFrameworks/AppIntentsServices.framework/AppIntentsServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2beaa4` | `0x2d833c` | **`+0x19898`** |
+| `__DATA.__bss` | `0x28440` | `0x2a380` | **`+0x1f40`** |
+| `__AUTH_CONST.__const` | `0x1d650` | `0x1f1e8` | **`+0x1b98`** |
+| `__TEXT.__const` | `0x25f10` | `0x27610` | **`+0x1700`** |
+| `__TEXT.__eh_frame` | `0x27380` | `0x28888` | **`+0x1508`** |
+| `__TEXT.__swift5_capture` | `0x7be8` | `0x83c4` | **`+0x7dc`** |
+| `__TEXT.__unwind_info` | `0xe9b0` | `0xf0c8` | **`+0x718`** |
+| `__AUTH.__data` | `0x5488` | `0x5a88` | **`+0x600`** |
+| `__DATA.__data` | `0x5ec8` | `0x6418` | **`+0x550`** |
+| `__TEXT.__swift5_typeref` | `0x88a1` | `0x8d69` | **`+0x4c8`** |
+| `__TEXT.__constg_swiftt` | `0x73dc` | `0x7824` | **`+0x448`** |
+| `__TEXT.__swift5_fieldmd` | `0x7190` | `0x7550` | **`+0x3c0`** |
+| `__AUTH_CONST.__objc_const` | `0x3ac8` | `0x3e48` | **`+0x380`** |
+| `__TEXT.__oslogstring` | `0x3ab9` | `0x3d89` | **`+0x2d0`** |
+| `__TEXT.__swift5_reflstr` | `0x4a1c` | `0x4c2c` | **`+0x210`** |
+| `__TEXT.__cstring` | `0x55ca` | `0x574a` | **`+0x180`** |
+| `__DATA.__common` | `0x1b10` | `0x1c28` | **`+0x118`** |
+| `__TEXT.__swift5_proto` | `0x180c` | `0x190c` | **`+0x100`** |
+| `__TEXT.__swift_as_cont` | `0x1864` | `0x1930` | **`+0xcc`** |
+| `__TEXT.__swift_as_entry` | `0xc24` | `0xccc` | **`+0xa8`** |
+| `__TEXT.__swift_as_ret` | `0xd6c` | `0xe14` | **`+0xa8`** |
+| `__DATA_DIRTY.__data` | `0x4ab0` | `0x4a10` | **`-0xa0`** |
+| `__AUTH_CONST.__auth_got` | `0x1a60` | `0x1ac0` | **`+0x60`** |
+| `__TEXT.__swift5_assocty` | `0xce8` | `0xd48` | **`+0x60`** |
+| `__TEXT.__swift5_types` | `0x834` | `0x88c` | **`+0x58`** |
+| `__DATA_CONST.__const` | `0x298` | `0x2e8` | **`+0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x930` | `0x8e0` | **`-0x50`** |
+| `__TEXT.__swift5_acfuncs` | `0x5a0` | `0x5dc` | **`+0x3c`** |
+| `__DATA_DIRTY.__common` | `0x378` | `0x340` | **`-0x38`** |
+| `__DATA_CONST.__objc_classlist` | `0x160` | `0x178` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x44c` | `0x460` | **`+0x14`** |
+| `__DATA_CONST.__got` | `0xe58` | `0xe48` | **`-0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb68` | `0xb70` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x160` | `0x168` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x154` | `0x15c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -41.0.50.0.0
--  __TEXT.__text: 0x29babc
 +41.1.9.0.0
-+  __TEXT.__text: 0x2b4148
-   __TEXT.__objc_methlist: 0x5a4
--  __TEXT.__cstring: 0x55ca
--  __TEXT.__const: 0x25f10
--  __TEXT.__swift5_typeref: 0x88a1
--  __TEXT.__constg_swiftt: 0x73dc
--  __TEXT.__swift5_reflstr: 0x4a1c
--  __TEXT.__swift5_fieldmd: 0x7190
--  __TEXT.__swift5_builtin: 0x44c
--  __TEXT.__swift5_assocty: 0xce8
--  __TEXT.__swift5_proto: 0x180c
--  __TEXT.__swift5_types: 0x834
--  __TEXT.__oslogstring: 0x3ab9
--  __TEXT.__swift5_protos: 0x154
--  __TEXT.__swift5_capture: 0x7be8
--  __TEXT.__swift_as_entry: 0xc24
--  __TEXT.__swift_as_ret: 0xd6c
--  __TEXT.__swift_as_cont: 0x1864
-+  __TEXT.__cstring: 0x574a
-+  __TEXT.__const: 0x27610
-+  __TEXT.__swift5_typeref: 0x8d69
-+  __TEXT.__constg_swiftt: 0x7824
-+  __TEXT.__swift5_reflstr: 0x4c2c
-+  __TEXT.__swift5_fieldmd: 0x7550
-+  __TEXT.__swift5_builtin: 0x460
-+  __TEXT.__swift5_assocty: 0xd48
-+  __TEXT.__swift5_proto: 0x190c
-+  __TEXT.__swift5_types: 0x88c
-+  __TEXT.__oslogstring: 0x3d89
-+  __TEXT.__swift5_protos: 0x15c
-+  __TEXT.__swift5_capture: 0x83c4
-+  __TEXT.__swift_as_entry: 0xccc
-+  __TEXT.__swift_as_ret: 0xe14
-+  __TEXT.__swift_as_cont: 0x1930
-   __TEXT.__swift5_types2: 0xc
--  __TEXT.__swift5_acfuncs: 0x5a0
--  __TEXT.__swift5_mpenum: 0x160
--  __TEXT.__unwind_info: 0x10620
--  __TEXT.__eh_frame: 0x27380
-+  __TEXT.__swift5_acfuncs: 0x5dc
-+  __TEXT.__swift5_mpenum: 0x168
-+  __TEXT.__unwind_info: 0x11358
-+  __TEXT.__eh_frame: 0x28888
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x298
--  __DATA_CONST.__objc_classlist: 0x160
-+  __DATA_CONST.__const: 0x2e8
-+  __DATA_CONST.__objc_classlist: 0x178
-   __DATA_CONST.__objc_protolist: 0x78
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb68
-+  __DATA_CONST.__objc_selrefs: 0xb70
-   __DATA_CONST.__objc_protorefs: 0x40
--  __DATA_CONST.__got: 0xe58
--  __AUTH_CONST.__const: 0x1d650
--  __AUTH_CONST.__objc_const: 0x3ac8
--  __AUTH_CONST.__auth_got: 0x1a60
-+  __DATA_CONST.__got: 0xe48
-+  __AUTH_CONST.__const: 0x1f1e8
-+  __AUTH_CONST.__objc_const: 0x3e48
-+  __AUTH_CONST.__auth_got: 0x1ac0
-   __AUTH.__objc_data: 0x90
--  __AUTH.__data: 0x5488
--  __DATA.__data: 0x5ec8
--  __DATA.__common: 0x1b10
--  __DATA_DIRTY.__objc_data: 0x930
--  __DATA_DIRTY.__data: 0x4ab0
-+  __AUTH.__data: 0x5a88
-+  __DATA.__data: 0x6418
-+  __DATA.__common: 0x1c28
-+  __DATA_DIRTY.__objc_data: 0x8e0
-+  __DATA_DIRTY.__data: 0x4a10
-   __DATA_DIRTY.__bss: 0xf00
--  __DATA_DIRTY.__common: 0x378
-+  __DATA_DIRTY.__common: 0x340
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 20441
--  Symbols:   4693
+-  Functions: 20437
+-  Symbols:   4381
 -  CStrings:  846
-+  Functions: 21149
-+  Symbols:   4833
++  Functions: 21145
++  Symbols:   4520
 +  CStrings:  867
- 
 Symbols:
 + _MobileGestalt_get_cellularDataCapability
 + _OUTLINED_FUNCTION_767
@@ -219,7 +174,6 @@ Symbols:
 + _get_enum_tag_for_layout_string 18AppIntentsServices16UserProfileCacheC0F3Key33_752DDC5A2247F297E1278AC466F4F211LLO
 + _nw_parameters_set_preferred_interface_subtypes
 + _nw_parameters_set_prohibited_interface_subtypes
-+ _objc_msgSend$entityOptions
 + _swift_setAtWritableKeyPath
 + _symbolic $s18AppIntentsServices29PersonaIdentifierLookupSourceP
 + _symbolic $s18AppIntentsServices30InterfaceAvailabilityProvidingP

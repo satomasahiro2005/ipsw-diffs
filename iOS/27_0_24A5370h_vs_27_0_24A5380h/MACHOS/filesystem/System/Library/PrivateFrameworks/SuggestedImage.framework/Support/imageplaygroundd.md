@@ -2,30 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/SuggestedImage.framework/Support/imageplaygroundd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1004c` | `0x1005c` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1004c
-+  __TEXT.__text: 0x1005c
-   __TEXT.__auth_stubs: 0xe60
-   __TEXT.__objc_stubs: 0x240
-   __TEXT.__objc_methlist: 0x104
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_entry : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
+-190.0.0.0.0
++193.1.0.0.0
 Symbols:
 + _$s14SuggestedImage27DefaultGenerationControllerV06handleD8Requests3for15progressHandleryAA7UseCaseOSg_yAA0D13ProgressEventOYbcSgtYaKF
 + _$s14SuggestedImage27DefaultGenerationControllerV06handleD8Requests3for15progressHandleryAA7UseCaseOSg_yAA0D13ProgressEventOYbcSgtYaKFTu
@@ -36,5 +43,4 @@ Symbols:
 Functions:
 ~ sub_10000c404 : 316 -> 324
 ~ sub_10000c9bc -> sub_10000c9c4 : 224 -> 232
-
 ```

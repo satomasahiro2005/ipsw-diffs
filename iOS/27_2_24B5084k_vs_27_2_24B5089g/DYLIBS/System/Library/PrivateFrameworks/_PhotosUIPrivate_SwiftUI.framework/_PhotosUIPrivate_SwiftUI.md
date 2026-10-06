@@ -2,86 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/_PhotosUIPrivate_SwiftUI.framework/_PhotosUIPrivate_SwiftUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x48b38` | `0x4c9ec` | **`+0x3eb4`** |
+| `__TEXT.__const` | `0x54a8` | `0x5728` | **`+0x280`** |
+| `__TEXT.__swift5_typeref` | `0x4987` | `0x4b59` | **`+0x1d2`** |
+| `__DATA.__bss` | `0x30d8` | `0x3270` | **`+0x198`** |
+| `__AUTH.__data` | `0x1348` | `0x14d8` | **`+0x190`** |
+| `__DATA_DIRTY.__data` | `—` | `0x100` | **`+0x100`** |
+| `__DATA.__data` | `0x1dc0` | `0x1eb0` | **`+0xf0`** |
+| `__TEXT.__oslogstring` | `0x70a` | `0x7fa` | **`+0xf0`** |
+| `__AUTH_CONST.__objc_const` | `0x1558` | `0x1630` | **`+0xd8`** |
+| `__TEXT.__swift5_fieldmd` | `0x12a4` | `0x136c` | **`+0xc8`** |
+| `__AUTH_CONST.__const` | `0x3090` | `0x3150` | **`+0xc0`** |
+| `__TEXT.__swift5_reflstr` | `0xe78` | `0xec8` | **`+0x50`** |
+| `__TEXT.__swift5_assocty` | `0x6f0` | `0x738` | **`+0x48`** |
+| `__TEXT.__swift5_capture` | `0x804` | `0x84c` | **`+0x48`** |
+| `__TEXT.__cstring` | `0xa46` | `0xa76` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x1620` | `0x1608` | **`-0x18`** |
+| `__TEXT.__constg_swiftt` | `0x241c` | `0x2430` | **`+0x14`** |
+| `__TEXT.__swift5_types` | `0x1a4` | `0x1b8` | **`+0x14`** |
+| `__TEXT.__swift5_proto` | `0x178` | `0x184` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x1320` | `0x1328` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x888` | `0x890` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0xa8` | `0xb0` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x7ec` | `0x7f4` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -916.40.110.0.0
--  __TEXT.__text: 0x46150
--  __TEXT.__objc_methlist: 0x7ec
--  __TEXT.__const: 0x54a8
--  __TEXT.__constg_swiftt: 0x241c
--  __TEXT.__swift5_typeref: 0x4987
--  __TEXT.__swift5_reflstr: 0xe78
--  __TEXT.__swift5_fieldmd: 0x12a4
 +916.45.110.0.0
-+  __TEXT.__text: 0x49d1c
-+  __TEXT.__objc_methlist: 0x7f4
-+  __TEXT.__const: 0x5728
-+  __TEXT.__constg_swiftt: 0x2430
-+  __TEXT.__swift5_typeref: 0x4b59
-+  __TEXT.__swift5_reflstr: 0xec8
-+  __TEXT.__swift5_fieldmd: 0x136c
-   __TEXT.__swift5_builtin: 0x64
--  __TEXT.__swift5_assocty: 0x6f0
--  __TEXT.__cstring: 0xa46
--  __TEXT.__oslogstring: 0x70a
--  __TEXT.__swift5_capture: 0x804
--  __TEXT.__swift5_proto: 0x178
--  __TEXT.__swift5_types: 0x1a4
-+  __TEXT.__swift5_assocty: 0x738
-+  __TEXT.__cstring: 0xa76
-+  __TEXT.__oslogstring: 0x7fa
-+  __TEXT.__swift5_capture: 0x84c
-+  __TEXT.__swift5_proto: 0x184
-+  __TEXT.__swift5_types: 0x1b8
-   __TEXT.__swift_as_entry: 0x1c
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0x2c
-   __TEXT.__swift5_mpenum: 0x18
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__unwind_info: 0x1c20
-+  __TEXT.__unwind_info: 0x1cb8
-   __TEXT.__eh_frame: 0x964
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xe0
--  __DATA_CONST.__objc_classlist: 0xa8
-+  __DATA_CONST.__objc_classlist: 0xb0
-   __DATA_CONST.__objc_protolist: 0x90
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x958
-   __DATA_CONST.__objc_protorefs: 0x48
--  __DATA_CONST.__got: 0x888
--  __AUTH_CONST.__const: 0x3090
--  __AUTH_CONST.__objc_const: 0x1558
--  __AUTH_CONST.__auth_got: 0x1320
-+  __DATA_CONST.__got: 0x890
-+  __AUTH_CONST.__const: 0x3150
-+  __AUTH_CONST.__objc_const: 0x1630
-+  __AUTH_CONST.__auth_got: 0x1328
-   __AUTH.__objc_data: 0x650
--  __AUTH.__data: 0x1348
--  __DATA.__data: 0x1dc0
-+  __AUTH.__data: 0x14d8
-+  __DATA.__data: 0x1eb0
-   __DATA.__common: 0x48
-+  __DATA_DIRTY.__data: 0x100
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2490
--  Symbols:   1510
+-  Symbols:   1326
 -  CStrings:  103
 +  Functions: 2598
-+  Symbols:   1563
++  Symbols:   1379
 +  CStrings:  108
- 
 Symbols:
 + _OUTLINED_FUNCTION_54
 + _OUTLINED_FUNCTION_55

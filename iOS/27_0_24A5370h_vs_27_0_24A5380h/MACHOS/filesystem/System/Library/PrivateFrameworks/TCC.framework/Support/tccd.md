@@ -2,89 +2,59 @@
 
 > `/System/Library/PrivateFrameworks/TCC.framework/Support/tccd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x80968` | `0x85664` | **`+0x4cfc`** |
+| `__TEXT.__cstring` | `0x113aa` | `0x120b3` | **`+0xd09`** |
+| `__TEXT.__objc_methname` | `0x1220a` | `0x12795` | **`+0x58b`** |
+| `__DATA_CONST.__cfstring` | `0x8480` | `0x8940` | **`+0x4c0`** |
+| `__TEXT.__oslogstring` | `0xef5b` | `0xf36a` | **`+0x40f`** |
+| `__DATA.__objc_const` | `0x9e20` | `0xa1b0` | **`+0x390`** |
+| `__TEXT.__objc_stubs` | `0xaea0` | `0xb1c0` | **`+0x320`** |
+| `__TEXT.__gcc_except_tab` | `0x2a9c` | `0x2d88` | **`+0x2ec`** |
+| `__TEXT.__objc_methlist` | `0x50b4` | `0x52f4` | **`+0x240`** |
+| `__DATA.__objc_selrefs` | `0x3488` | `0x35a8` | **`+0x120`** |
+| `__DATA_CONST.__objc_arraydata` | `0x1550` | `0x1620` | **`+0xd0`** |
+| `__TEXT.__unwind_info` | `0x1890` | `0x1940` | **`+0xb0`** |
+| `__DATA.__objc_data` | `0x12c0` | `0x1360` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x26f0` | `0x2788` | **`+0x98`** |
+| `__DATA_CONST.__got` | `0x430` | `0x4a8` | **`+0x78`** |
+| `__TEXT.__objc_methtype` | `0x22b4` | `0x22f6` | **`+0x42`** |
+| `__TEXT.__objc_classname` | `0x69c` | `0x6ce` | **`+0x32`** |
+| `__DATA.__objc_ivar` | `0x6d8` | `0x708` | **`+0x30`** |
+| `__DATA_CONST.__objc_intobj` | `0x648` | `0x660` | **`+0x18`** |
+| `__DATA.__bss` | `0x429` | `0x439` | **`+0x10`** |
+| `__DATA.__data` | `0x720` | `0x730` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x1e0` | `0x1f0` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x190` | `0x1a0` | **`+0x10`** |
+| `__TEXT.__auth_stubs` | `0x1640` | `0x1650` | **`+0x10`** |
+| `__TEXT.__const` | `0x6e8` | `0x6f8` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0xb30` | `0xb38` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x80968
--  __TEXT.__auth_stubs: 0x1640
--  __TEXT.__objc_stubs: 0xaea0
--  __TEXT.__objc_methlist: 0x50b4
--  __TEXT.__cstring: 0x113aa
--  __TEXT.__const: 0x6e8
--  __TEXT.__gcc_except_tab: 0x2a9c
--  __TEXT.__objc_methname: 0x1220a
--  __TEXT.__oslogstring: 0xef5b
--  __TEXT.__objc_classname: 0x69c
--  __TEXT.__objc_methtype: 0x22b4
-+  __TEXT.__text: 0x85664
-+  __TEXT.__auth_stubs: 0x1650
-+  __TEXT.__objc_stubs: 0xb1c0
-+  __TEXT.__objc_methlist: 0x52f4
-+  __TEXT.__cstring: 0x120b3
-+  __TEXT.__const: 0x6f8
-+  __TEXT.__gcc_except_tab: 0x2d88
-+  __TEXT.__objc_methname: 0x12795
-+  __TEXT.__oslogstring: 0xf36a
-+  __TEXT.__objc_classname: 0x6ce
-+  __TEXT.__objc_methtype: 0x22f6
-   __TEXT.__dlopen_cstrs: 0x90
--  __TEXT.__unwind_info: 0x1890
--  __DATA_CONST.__const: 0x26f0
--  __DATA_CONST.__cfstring: 0x8480
--  __DATA_CONST.__objc_classlist: 0x1e0
-+  __TEXT.__unwind_info: 0x1940
-+  __DATA_CONST.__const: 0x2788
-+  __DATA_CONST.__cfstring: 0x8940
-+  __DATA_CONST.__objc_classlist: 0x1f0
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x190
--  __DATA_CONST.__objc_intobj: 0x648
--  __DATA_CONST.__objc_arraydata: 0x1550
-+  __DATA_CONST.__objc_superrefs: 0x1a0
-+  __DATA_CONST.__objc_intobj: 0x660
-+  __DATA_CONST.__objc_arraydata: 0x1620
-   __DATA_CONST.__objc_arrayobj: 0xf0
-   __DATA_CONST.__objc_dictobj: 0xeb0
--  __DATA_CONST.__auth_got: 0xb30
--  __DATA_CONST.__got: 0x430
-+  __DATA_CONST.__auth_got: 0xb38
-+  __DATA_CONST.__got: 0x4a8
-   __DATA_CONST.__auth_ptr: 0x38
--  __DATA.__objc_const: 0x9e20
--  __DATA.__objc_selrefs: 0x3488
--  __DATA.__objc_ivar: 0x6d8
--  __DATA.__objc_data: 0x12c0
--  __DATA.__data: 0x720
--  __DATA.__bss: 0x429
-+  __DATA.__objc_const: 0xa1b0
-+  __DATA.__objc_selrefs: 0x35a8
-+  __DATA.__objc_ivar: 0x708
-+  __DATA.__objc_data: 0x1360
-+  __DATA.__data: 0x730
-+  __DATA.__bss: 0x439
-   __DATA.__common: 0x20
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+-906.0.0.0.0
++909.0.0.0.0
 
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 2830
 -  Symbols:   503
--  CStrings:  6721
+-  CStrings:  5608
 +  Functions: 2918
 +  Symbols:   505
-+  CStrings:  6894
- 
-Sections:
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
-~ __DATA_CONST.__auth_ptr : content changed
++  CStrings:  5737
 Symbols:
 + _NSClassFromString
 + _NSURLIsExcludedFromBackupKey
@@ -230,5 +200,4 @@ CStrings:
 - "_updateManagedTCCDefaults:"
 - "c24@0:8@16"
 - "isPathInRootVolume:"
-
 ```

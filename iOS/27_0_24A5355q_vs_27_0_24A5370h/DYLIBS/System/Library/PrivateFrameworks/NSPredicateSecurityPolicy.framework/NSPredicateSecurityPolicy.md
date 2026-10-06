@@ -2,36 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/NSPredicateSecurityPolicy.framework/NSPredicateSecurityPolicy`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0xe510` | `0x13c` | **`-0xe3d4`** |
+| `__TEXT.__const` | `0x58` | `0x8220` | **`+0x81c8`** |
+| `__DATA_CONST.__const` | `0x7bb0` | `0x93e0` | **`+0x1830`** |
+| `__TEXT.__text` | `0x594` | `0xa28` | **`+0x494`** |
+| `__TEXT.__unwind_info` | `0x78` | `0x80` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -9.0.0.0.0
--  __TEXT.__text: 0x594 sha256:6ec334f1434a809ab81e709ed962f11e5679363241bc334a8500ab343bcce91e
--  __TEXT.__const: 0x58 sha256:b266f1c8b68a99d30691ca43df795b22376a3e0f31ff5731d3b8eccf6993677d
--  __TEXT.__cstring: 0xe510 sha256:a0605a34b0bcd71a5c746313d451c90a49df0ae01e99a1ae93bf2df76ff12858
--  __TEXT.__unwind_info: 0x78 sha256:18e02a943f8048925cb5f6a2928f6abcca996120f79090849bcd4c3feb660800
 +10.0.0.0.0
-+  __TEXT.__text: 0xa28 sha256:84adedab80c65c7942a7bb36581e7dfbdb95cead5baba927c2bf241450b8edbd
-+  __TEXT.__const: 0x8220 sha256:95af985681e9b3f040aa07176f1291fb9bd5bddeed3a5bc59b25f5af2b49d485
-+  __TEXT.__cstring: 0x13c sha256:81612a37312da8df92945245dc8cf9f6e33fb52138e979f04e4f11390694e80a
-+  __TEXT.__unwind_info: 0x80 sha256:79e9db33b7f251e51733080fa42e489be4583c950742c3ba3571d1449aaa9a0c
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x7bb0 sha256:ea29487e54290b4506960f03b78b1b5620a8d37845750ed0f3bad5c34fb02d41
-+  __DATA_CONST.__const: 0x93e0 sha256:f209567bf07242fc65868bfddf52d5a188b8eb795b737046d582eaca50a7b20c
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__bss: 0x18 sha256:9d908ecfb6b256def8b49a7c504e6c889c4b0e41fe6ce3e01863dd7b61a20aa0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
--  UUID: FB157E95-5070-3AE3-A927-9B7774159B86
+
 -  Functions: 8
--  Symbols:   298
+-  Symbols:   296
 -  CStrings:  2221
-+  UUID: FDDC8B6A-C44C-3F8D-BE21-D674FA431346
 +  Functions: 9
-+  Symbols:   301
++  Symbols:   299
 +  CStrings:  14
- 
 Symbols:
 + _CC_SHA256
 + ___memcpy_chk
@@ -44,12 +37,8 @@ Functions:
 ~ _RTPredicateSecurityPolicyClassAllowed : 124 -> 180
 ~ _selectorItemComp : 8 -> 96
 ~ _RTPredicateSecurityPolicyClassSelectorAllowed : 868 -> 924
-~ _RTGetNSPredicateSecurityPolicyData : sha256 a0ac966a20a17d9ed83c7f5149b9defa83247ed76bcdc7c65ab83a88339a5a0e -> 8c422a392b7d9c0df716d3836bae0b24cb13e28d9895da328d00fcbb6511ad27
 - _classListItemComp
-~ _RTShouldApplyNSPredicateSecurityPolicy : sha256 9e4a0d125bb62f2c359a38be43cf56d2e6fb38f74cadc2ee61820d8258d5c427 -> 6373205498773b63a7bf42eb4de43144612d57032d1099d31a0329adc3a1c0b7
-~ _isChildOfNSManagedObject : sha256 18f8c404cb4fe2585eac33abaff483dae4f514ca7c16bf941f21b2044c998dc3 -> 4c6966711ee2e5e86693c1132b324bac766c7b5a589965fafb2f1beb3ade7bd5
 + _classListItemKeyComp
-~ _RTGetNSPredicateSecurityPolicyDeniedSelectors : sha256 e8a76fcec8360688539d2190078bf9c1297ec113772cb875f186010d0dc8fece -> b6125678007fc1686f96c8a3cb42f38a6182b787f89341d124cb4c2e31a419c3
 CStrings:
 - "..NSKVONotifying_TeaUI.WindowScene"
 - ".cxx_construct"
@@ -2258,5 +2247,4 @@ CStrings:
 - "xpSendMethod"
 - "zone"
 - "zoneOwnerName"
-
 ```

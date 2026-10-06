@@ -2,48 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/SDAPI.framework/SDAPI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x30bc4c` | `0x309810` | **`-0x243c`** |
+| `__TEXT.__gcc_except_tab` | `0x22644` | `0x22624` | **`-0x20`** |
+| `__TEXT.__unwind_info` | `0xa6a0` | `0xa6b8` | **`+0x18`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
- 19.0.0.0.0
--  __TEXT.__text: 0x30bc4c sha256:58f7afe6b2da61ad52d0aff11988e9993b744dd105d3cdf1aca9b17f9d38a4be
--  __TEXT.__const: 0x2e1eb sha256:4e8b749188e23bf8ab9bfb67805075a43504680c330cb0f309935977fd20959f
--  __TEXT.__cstring: 0x17afd sha256:61b7f293bffea4b081579fdad6f490c85882149850411f6b0dd2c8067a7c0b28
--  __TEXT.__gcc_except_tab: 0x22644 sha256:5af4cb0248d597ffc599e333d58d33919d4869c844ac5d5e57ae6f4d378621b2
--  __TEXT.__unwind_info: 0xa6a0 sha256:3158966d8353107e0c53e86453818545ea0eaf06592ed5bc15fc711f70f43e33
-+  __TEXT.__text: 0x309810 sha256:ec0c41b0c34224c5ab41e60df3e894bdd77037f4a1f7fac468066460d617dc41
-+  __TEXT.__const: 0x2e1eb sha256:d779c3d80d15f60fd5148daa4ae1e801af756e8dea0474f4fa8807ba72b5a17f
-+  __TEXT.__cstring: 0x17afd sha256:1e5273b0d4547d9f520f48e282ecfeee5a149c4115f06e5b36391c738b3f428d
-+  __TEXT.__gcc_except_tab: 0x22624 sha256:f0ceacb90f1b32065f8b60122427e701cf626927e9f3add07f5ad65e7750571a
-+  __TEXT.__unwind_info: 0xa6b8 sha256:03d6a5ba263f0189397e7b2ac69fdb521028af31d738676c73072997cba5d56f
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x7408 sha256:b66aa200c60514a3151efd6ba94000bdd67768b7915e8d7551e3c616f6fb0eb3
--  __DATA_CONST.__weak_got: 0x10 sha256:9e844d98776b438b7c85999692b955b98072742831c7ffb5836798f952d4771e
--  __DATA_CONST.__got: 0xf0 sha256:7c07db7905edb26e08b98ffdd8c74bf2b3d1555c56e4425e1bfd271471197b43
--  __AUTH_CONST.__const: 0x9d78 sha256:3443225abdbb039255a56866e717c9e2e943b56c18bef707d7fbe82046519ec2
--  __AUTH_CONST.__weak_auth_got: 0x28 sha256:e26f779ff00d617bde7a57bef71a1087c05780bfff67a644a06f16461003acca
-+  __DATA_CONST.__const: 0x7408 sha256:a377c0ea6d02015a3a33f1a84751dde615f8814a71e850f4c8b1e6801270c5f9
-+  __DATA_CONST.__weak_got: 0x10 sha256:12ac465c662e0bce66a480e1b9ef36aed7a44a315ed323d5db6f5efe96c1db2b
-+  __DATA_CONST.__got: 0xf0 sha256:13c54620d3e729a623e1054d8b7d7fc440c98e59f8055f3f959023de8c529c36
-+  __AUTH_CONST.__const: 0x9d78 sha256:20e6aa67044e8cb87164cae20341e29b545834559847ffe80999f64a77fc0414
-+  __AUTH_CONST.__weak_auth_got: 0x28 sha256:c76cae83ac5412e2b59fe9b41423d7d7a86e9a08e59d4e1ffc0bf6d10402f97e
-   __AUTH_CONST.__auth_got: 0x618 sha256:0ae208d8333b8d56b0871129f974ea63ad90303e5087fd1092d7cc7a66e85ed6
--  __DATA.__data: 0x130 sha256:9cb47fb101e4fc9f2c58547fafa52edbba109d648f75ff673f7ecc6620460801
-+  __DATA.__data: 0x130 sha256:6dae89aae75d8150f183bbb64c767b478bba3a74a5f6ccfeeb0c45d3e340a28a
-   __DATA.__bss: 0x2662 sha256:0644205f4b7a2ab3841e4520dbead6bc38698e5b17b8d4fa56ff76267401188e
-   __DATA.__common: 0x1 sha256:6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d
-   __DATA_DIRTY.__data: 0x80 sha256:6f2cc46bbd8a8466b84d957c09b7237c226340ea6feba16d8a80f57bef049049
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libz.1.dylib
--  UUID: 22320431-245B-345E-AC1C-273851229F73
 -  Functions: 8085
--  Symbols:   23575
-+  UUID: BB40AFD6-BE0A-3147-AB67-0B417005FDD0
+-  Symbols:   12568
 +  Functions: 8087
-+  Symbols:   23577
-   CStrings:  3262
- 
++  Symbols:   12569
 Symbols:
 + _OUTLINED_FUNCTION_1
 + __ZNKSt3__112basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEE7compareB9fqe220106INS_17basic_string_viewIwS2_EELi0EEEiRKT_
@@ -1065,5 +1043,4 @@ CStrings:
 + "Jun  9 2026"
 - "07:45:44"
 - "May 21 2026"
-
 ```

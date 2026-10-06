@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CalendarDatabase.framework/CalendarDatabase`
 
-```diff
+### Section Size Changes
 
- 1291.0.0.0.0
--  __TEXT.__text: 0xdc27c
-+  __TEXT.__text: 0xdc2a0
-   __TEXT.__objc_methlist: 0x1f0c
-   __TEXT.__cstring: 0x1fa88
-   __TEXT.__const: 0xaa4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xdc27c` | `0xdc2a0` | **`+0x24`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __CalRecurrenceCopyOccurrenceDatesDispatch : 6436 -> 6472
 ```

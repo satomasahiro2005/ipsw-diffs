@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ShellSceneKit.framework/ShellSceneKit`
 
-```diff
+### Section Size Changes
 
- 54.0.1.0.0
--  __TEXT.__text: 0xef8c0
-+  __TEXT.__text: 0xef9c8
-   __TEXT.__objc_methlist: 0x1700
-   __TEXT.__const: 0x82f0
-   __TEXT.__cstring: 0x2d1b
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xef8c0` | `0xef9c8` | **`+0x108`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRTQ0_ : 260 -> 264
 ~ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRTQ0_ : 260 -> 264

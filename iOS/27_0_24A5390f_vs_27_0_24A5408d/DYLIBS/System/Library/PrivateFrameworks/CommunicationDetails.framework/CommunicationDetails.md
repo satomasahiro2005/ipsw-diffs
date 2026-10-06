@@ -2,80 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/CommunicationDetails.framework/CommunicationDetails`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xabfdc` | `0xaa1f0` | **`-0x1dec`** |
+| `__TEXT.__eh_frame` | `0x27cc` | `0x25fc` | **`-0x1d0`** |
+| `__TEXT.__const` | `0x856c` | `0x849c` | **`-0xd0`** |
+| `__TEXT.__unwind_info` | `0x2b38` | `0x2ad0` | **`-0x68`** |
+| `__AUTH_CONST.__const` | `0x4f08` | `0x4eb8` | **`-0x50`** |
+| `__DATA.__bss` | `0x58b8` | `0x5888` | **`-0x30`** |
+| `__TEXT.__cstring` | `0x1d59` | `0x1d29` | **`-0x30`** |
+| `__TEXT.__swift5_capture` | `0xf2c` | `0xefc` | **`-0x30`** |
+| `__DATA_CONST.__got` | `0xa78` | `0xa50` | **`-0x28`** |
+| `__TEXT.__swift_as_cont` | `0x164` | `0x140` | **`-0x24`** |
+| `__TEXT.__swift5_typeref` | `0x62b4` | `0x6292` | **`-0x22`** |
+| `__AUTH_CONST.__auth_got` | `0x1760` | `0x1740` | **`-0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x304b` | `0x302b` | **`-0x20`** |
+| `__DATA.__data` | `0x3149` | `0x3139` | **`-0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x25c0` | `0x25b4` | **`-0xc`** |
+| `__TEXT.__swift_as_ret` | `0x74` | `0x68` | **`-0xc`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1608` | `0x1600` | **`-0x8`** |
+| `__TEXT.__swift_as_entry` | `0xa4` | `0xa0` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1487.100.6.2.2
--  __TEXT.__text: 0xabfdc
 +1491.100.1.2.11
-+  __TEXT.__text: 0xaa1f0
-   __TEXT.__objc_methlist: 0x1748
--  __TEXT.__const: 0x856c
-+  __TEXT.__const: 0x849c
-   __TEXT.__constg_swiftt: 0x4274
--  __TEXT.__swift5_typeref: 0x62b4
-+  __TEXT.__swift5_typeref: 0x6292
-   __TEXT.__swift5_builtin: 0x1cc
--  __TEXT.__swift5_reflstr: 0x304b
--  __TEXT.__swift5_fieldmd: 0x25c0
-+  __TEXT.__swift5_reflstr: 0x302b
-+  __TEXT.__swift5_fieldmd: 0x25b4
-   __TEXT.__swift5_assocty: 0x700
--  __TEXT.__cstring: 0x1d59
--  __TEXT.__swift5_capture: 0xf2c
-+  __TEXT.__cstring: 0x1d29
-+  __TEXT.__swift5_capture: 0xefc
-   __TEXT.__swift5_proto: 0x2ac
-   __TEXT.__swift5_types: 0x270
--  __TEXT.__swift_as_entry: 0xa4
--  __TEXT.__swift_as_ret: 0x74
--  __TEXT.__swift_as_cont: 0x164
-+  __TEXT.__swift_as_entry: 0xa0
-+  __TEXT.__swift_as_ret: 0x68
-+  __TEXT.__swift_as_cont: 0x140
-   __TEXT.__oslogstring: 0x1317
-   __TEXT.__swift5_protos: 0x34
-   __TEXT.__swift5_mpenum: 0x50
--  __TEXT.__unwind_info: 0x2b38
--  __TEXT.__eh_frame: 0x27cc
-+  __TEXT.__unwind_info: 0x2ad0
-+  __TEXT.__eh_frame: 0x25fc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x188
-   __DATA_CONST.__objc_protolist: 0x1f0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1608
-+  __DATA_CONST.__objc_selrefs: 0x1600
-   __DATA_CONST.__objc_protorefs: 0xf8
--  __DATA_CONST.__got: 0xa78
--  __AUTH_CONST.__const: 0x4f08
-+  __DATA_CONST.__got: 0xa50
-+  __AUTH_CONST.__const: 0x4eb8
-   __AUTH_CONST.__objc_const: 0x4038
--  __AUTH_CONST.__auth_got: 0x1760
-+  __AUTH_CONST.__auth_got: 0x1740
-   __AUTH.__objc_data: 0x2988
-   __AUTH.__data: 0x2450
--  __DATA.__data: 0x3149
--  __DATA.__bss: 0x58b8
-+  __DATA.__data: 0x3139
-+  __DATA.__bss: 0x5888
-   __DATA.__common: 0x148
-   __DATA_DIRTY.__objc_data: 0x598
-   __DATA_DIRTY.__data: 0x510
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4269
--  Symbols:   10759
+-  Symbols:   10320
 -  CStrings:  242
 +  Functions: 4245
-+  Symbols:   10725
++  Symbols:   10287
 +  CStrings:  241
- 
 Symbols:
 + _$s20CommunicationDetails0B14ViewControllerC29effectiveHeaderSafeAreaInsets33_53A605DFFFCB253977666A985B6F4F1FLLSo06UIEdgeI0Vvg
 + _$s20CommunicationDetails10EditActionO_ACtWOhTm
@@ -128,7 +90,6 @@ Symbols:
 - _$s7SwiftUI22UserInterfaceSizeClassOSg_ADtMd
 - _$s7SwiftUI9BlendModeOSgWOcTm
 - _$sSa20_reserveCapacityImpl07minimumB013growForAppendySi_SbtF20CommunicationDetails0I18ContentOffsetProxyC_Tg5
-- _objc_msgSend$verticalSizeClass
 - _symbolic So15UIBarButtonItemC
 - _symbolic _____Sg_ABt 7SwiftUI22UserInterfaceSizeClassO
 CStrings:

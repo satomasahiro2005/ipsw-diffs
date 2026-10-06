@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ChronoCore.framework/ChronoCore`
 
-```diff
+### Section Size Changes
 
- 749.0.2.0.0
--  __TEXT.__text: 0x424350
-+  __TEXT.__text: 0x4243a8
-   __TEXT.__objc_methlist: 0x1f20
-   __TEXT.__const: 0x148d8
-   __TEXT.__cstring: 0x6e5b
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x424350` | `0x4243a8` | **`+0x58`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_22a824668 -> sub_22b0c0668 : 996 -> 988
 ~ sub_22a82574c -> sub_22b0c1744 : 996 -> 988

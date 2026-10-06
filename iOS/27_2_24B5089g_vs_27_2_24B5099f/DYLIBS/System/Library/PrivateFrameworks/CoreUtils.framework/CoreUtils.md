@@ -2,44 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/CoreUtils.framework/CoreUtils`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x118a74` | `0x118e84` | **`+0x410`** |
+| `__TEXT.__oslogstring` | `0x49f4` | `0x4a72` | **`+0x7e`** |
+| `__TEXT.__objc_methlist` | `0xa0d0` | `0xa0e8` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x51b0` | `0x51c0` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x3a48` | `0x3a50` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -910.24.0.0.0
--  __TEXT.__text: 0x115114
--  __TEXT.__objc_methlist: 0xa0d0
 +910.29.0.0.0
-+  __TEXT.__text: 0x115518
-+  __TEXT.__objc_methlist: 0xa0e8
-   __TEXT.__cstring: 0x1d8d0
-   __TEXT.__const: 0x229c
-   __TEXT.__gcc_except_tab: 0x1bcc
--  __TEXT.__oslogstring: 0x49f4
--  __TEXT.__unwind_info: 0x49c0
-+  __TEXT.__oslogstring: 0x4a72
-+  __TEXT.__unwind_info: 0x49c8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x158
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x51b0
-+  __DATA_CONST.__objc_selrefs: 0x51c0
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x240
-   __DATA_CONST.__objc_arraydata: 0x8
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 5818
 -  Symbols:   10243
 -  CStrings:  4867
 +  Functions: 5821
 +  Symbols:   10246
 +  CStrings:  4869
- 
 Symbols:
 + -[CUNANDataSession _scheduleWFAStopTimeout]
 + -[CUNANDataSession _scheduleWFAStop]

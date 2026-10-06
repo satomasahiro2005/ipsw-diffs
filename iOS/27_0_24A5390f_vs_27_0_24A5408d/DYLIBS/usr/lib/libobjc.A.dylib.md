@@ -2,15 +2,18 @@
 
 > `/usr/lib/libobjc.A.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3c8a0` | `0x3c900` | **`+0x60`** |
+
+### Other Changes
+
 ```diff
 
 -971.0.0.0.0
--  __TEXT.__text: 0x3c8a0
 +973.1.0.0.0
-+  __TEXT.__text: 0x3c900
-   __TEXT.__lazy_helpers: 0xa8
-   __TEXT.__objc_methlist: 0x5ec
-   __TEXT.__const: 0x4130
 Functions:
 ~ _objc_retainAutoreleasedReturnValue : 160 -> 168
 ~ __objc_rootAllocWithZone : 324 -> 332

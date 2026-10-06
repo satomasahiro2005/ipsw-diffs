@@ -2,82 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/SoftwareUpdateUIMobile.framework/SoftwareUpdateUIMobile`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x75d1c` | `0x7ccc8` | **`+0x6fac`** |
+| `__TEXT.__oslogstring` | `0x77f0` | `0x8418` | **`+0xc28`** |
+| `__TEXT.__cstring` | `0x4727` | `0x4a27` | **`+0x300`** |
+| `__TEXT.__gcc_except_tab` | `0x11b4` | `0x1464` | **`+0x2b0`** |
+| `__AUTH_CONST.__cfstring` | `0x1fe0` | `0x2080` | **`+0xa0`** |
+| `__TEXT.__objc_methlist` | `0x27d4` | `0x2864` | **`+0x90`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1878` | `0x18f8` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0xe30` | `0xeb0` | **`+0x80`** |
+| `__TEXT.__const` | `0x3f0` | `0x450` | **`+0x60`** |
+| `__AUTH_CONST.__objc_const` | `0x7f30` | `0x7f88` | **`+0x58`** |
+| `__AUTH_CONST.__const` | `0x988` | `0x938` | **`-0x50`** |
+| `__DATA_CONST.__got` | `0x8e0` | `0x918` | **`+0x38`** |
+| `__DATA_CONST.__const` | `0x9330` | `0x9300` | **`-0x30`** |
+| `__TEXT.__swift5_capture` | `0x3c0` | `0x3a0` | **`-0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x6d0` | `0x6e0` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0x22d` | `0x235` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x214` | `0x218` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -772.0.10.0.0
--  __TEXT.__text: 0x75d1c
--  __TEXT.__objc_methlist: 0x27d4
--  __TEXT.__cstring: 0x4727
--  __TEXT.__oslogstring: 0x77f0
--  __TEXT.__gcc_except_tab: 0x11b4
--  __TEXT.__const: 0x3f0
 +772.0.20.0.0
-+  __TEXT.__text: 0x7ccc8
-+  __TEXT.__objc_methlist: 0x2864
-+  __TEXT.__const: 0x450
-+  __TEXT.__cstring: 0x4a27
-+  __TEXT.__oslogstring: 0x8418
-+  __TEXT.__gcc_except_tab: 0x1464
-   __TEXT.__constg_swiftt: 0xf0
--  __TEXT.__swift5_typeref: 0x22d
-+  __TEXT.__swift5_typeref: 0x235
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_reflstr: 0xe6
-   __TEXT.__swift5_fieldmd: 0xb4
-   __TEXT.__swift5_assocty: 0x60
-   __TEXT.__swift5_proto: 0x18
-   __TEXT.__swift5_types: 0xc
--  __TEXT.__swift5_capture: 0x3c0
-+  __TEXT.__swift5_capture: 0x3a0
-   __TEXT.__swift_as_entry: 0x14
-   __TEXT.__swift_as_ret: 0x8
-   __TEXT.__swift_as_cont: 0xc
--  __TEXT.__unwind_info: 0xe30
-+  __TEXT.__unwind_info: 0xeb0
-   __TEXT.__eh_frame: 0x388
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9330
-+  __DATA_CONST.__const: 0x9300
-   __DATA_CONST.__objc_classlist: 0x120
-   __DATA_CONST.__objc_catlist: 0x38
-   __DATA_CONST.__objc_protolist: 0xd8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1878
-+  __DATA_CONST.__objc_selrefs: 0x18f8
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__objc_superrefs: 0xd8
--  __DATA_CONST.__got: 0x8e0
--  __AUTH_CONST.__const: 0x988
--  __AUTH_CONST.__cfstring: 0x1fe0
--  __AUTH_CONST.__objc_const: 0x7f30
--  __AUTH_CONST.__auth_got: 0x6d0
-+  __DATA_CONST.__got: 0x918
-+  __AUTH_CONST.__const: 0x938
-+  __AUTH_CONST.__cfstring: 0x2080
-+  __AUTH_CONST.__objc_const: 0x7f88
-+  __AUTH_CONST.__auth_got: 0x6e0
-   __AUTH.__objc_data: 0xc90
-   __AUTH.__data: 0x58
--  __DATA.__objc_ivar: 0x214
-+  __DATA.__objc_ivar: 0x218
-   __DATA.__data: 0xda0
-   __DATA.__bss: 0x310
-   __DATA.__common: 0x40
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1148
--  Symbols:   2561
+-  Symbols:   1991
 -  CStrings:  665
 +  Functions: 1160
-+  Symbols:   2604
++  Symbols:   2022
 +  CStrings:  693
- 
 Symbols:
 + +[SUUIUserDefaults(Mobile) scanResultsCacheResponseDelayEntry]
 + -[SUUIMobileScanOperation applyScanResultsCacheResponseDelayIfNeeded]
@@ -134,19 +93,6 @@ Symbols:
 + _kSU_E_PromoteDownloadSuccess
 + _kSU_E_UpdateOpPromoteToUserInitiated
 + _kSU_S_PromotingDownload
-+ _objc_msgSend$applyScanResultsCacheResponseDelayIfNeeded
-+ _objc_msgSend$beginPromotionOperationWithDownload:
-+ _objc_msgSend$clientCompletionQueue
-+ _objc_msgSend$descriptors:
-+ _objc_msgSend$doubleValue
-+ _objc_msgSend$fsmAction_PromoteDownload:error:
-+ _objc_msgSend$hasScanResultsCacheLocalCheckWithCompletion:
-+ _objc_msgSend$notifyDelegateOfStateRefreshWithReason:
-+ _objc_msgSend$queryProgramsForSystemAccountsWithPlatforms:retryConfiguration:identifier:completion:
-+ _objc_msgSend$quickConfiguration
-+ _objc_msgSend$scanResultsCacheResponseDelay
-+ _objc_msgSend$sleepForTimeInterval:
-+ _objc_msgSend$verifyCacheConsistencyWithController:completion:
 + _objc_setProperty_atomic_copy
 + _symbolic _____Sg 26SoftwareUpdateUIFoundation20SUUIDeviceDescriptorV12OSIdentifierV
 - GCC_except_table24
@@ -175,7 +121,6 @@ Symbols:
 - ___os_log_helper_16_2_5_8_32_8_66_8_66_8_66_8_64
 - ___os_log_helper_16_2_6_8_32_8_66_8_66_4_0_8_66_8_64
 - ___os_log_helper_16_2_6_8_32_8_66_8_66_8_64_8_0_8_66
-- _objc_msgSend$queryProgramsForSystemAccountsWithPlatforms:completion:
 CStrings:
 + " [Automation Mode]"
 + "%s [%p]: %{public}@ Checkpoint\n\tcurrentState: %{public}@ (%ld)\n\tdelegate: %{public}@ (%p)\n\tscanError: %{public}@\n\tpreferredDescriptor: %{public}@\n\talternateDescriptor: %{public}@\n\tdownload: %{public}@ (%p)\n\tcurrentUpdateOperationType: %{public}@\n\tscheduledForAutoInstall: %{public}@\n\thiddenUpdatesPostSelection: preferred[%{public}@, %{public}@]; alternate[%{public}@, %{public}@];\n\tselectedBetaProgram: %lu (count: %ld, enrollable: %{public}@)\n\tOpFSMs: scan[%p]; refresh[%p]; update[%p]; auxiliaryOperationsCount[%lu]\n\nCould not fetch the scheduled auto-install operation (error: %{public}@); falling back to refreshState."

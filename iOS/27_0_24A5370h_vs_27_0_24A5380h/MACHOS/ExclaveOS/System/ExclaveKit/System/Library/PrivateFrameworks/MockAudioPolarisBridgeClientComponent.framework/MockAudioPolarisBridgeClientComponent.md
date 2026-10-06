@@ -2,74 +2,52 @@
 
 > `/System/ExclaveKit/System/Library/PrivateFrameworks/MockAudioPolarisBridgeClientComponent.framework/MockAudioPolarisBridgeClientComponent`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf15c` | `0xedb0` | **`-0x3ac`** |
+| `__DATA.__objc_const` | `0x280` | `0x338` | **`+0xb8`** |
+| `__TEXT.__eh_frame` | `0xf08` | `0xe60` | **`-0xa8`** |
+| `__DATA.__data` | `0xb28` | `0xbc8` | **`+0xa0`** |
+| `__TEXT.__objc_classname` | `0xdb` | `0x14b` | **`+0x70`** |
+| `__TEXT.__cstring` | `0xaeb` | `0xa8b` | **`-0x60`** |
+| `__DATA_CONST.__const` | `0xf48` | `0xef0` | **`-0x58`** |
+| `__TEXT.__const` | `0xfc0` | `0x1010` | **`+0x50`** |
+| `__TEXT.__constg_swiftt` | `0x750` | `0x78c` | **`+0x3c`** |
+| `__TEXT.__auth_stubs` | `0x8e0` | `0x900` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x7b4` | `0x7d0` | **`+0x1c`** |
+| `__TEXT.__unwind_info` | `0x460` | `0x448` | **`-0x18`** |
+| `__DATA_CONST.__auth_got` | `0x470` | `0x480` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x4cc` | `0x4dc` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x18` | `0x20` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0x44c` | `0x452` | **`+0x6`** |
+| `__TEXT.__swift5_types` | `0x90` | `0x94` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__TIGHTBEAM`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__got`
+- `__TEXT.__objc_methname`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xf15c
--  __TEXT.__auth_stubs: 0x8e0
--  __TEXT.__const: 0xfc0
--  __TEXT.__cstring: 0xaeb
--  __TEXT.__swift5_typeref: 0x44c
--  __TEXT.__objc_classname: 0xdb
--  __TEXT.__constg_swiftt: 0x750
--  __TEXT.__swift5_fieldmd: 0x7b4
-+  __TEXT.__text: 0xedb0
-+  __TEXT.__auth_stubs: 0x900
-+  __TEXT.__const: 0x1010
-+  __TEXT.__cstring: 0xa8b
-+  __TEXT.__swift5_typeref: 0x452
-+  __TEXT.__objc_classname: 0x14b
-+  __TEXT.__constg_swiftt: 0x78c
-+  __TEXT.__swift5_fieldmd: 0x7d0
-   __TEXT.__objc_methname: 0x81
-   __TEXT.__objc_methtype: 0x1
--  __TEXT.__swift5_reflstr: 0x4cc
-+  __TEXT.__swift5_reflstr: 0x4dc
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_proto: 0xf0
--  __TEXT.__swift5_types: 0x90
-+  __TEXT.__swift5_types: 0x94
-   __TEXT.__swift5_assocty: 0x90
-   __TEXT.__swift5_protos: 0x20
--  __TEXT.__unwind_info: 0x460
--  __TEXT.__eh_frame: 0xf08
--  __DATA_CONST.__const: 0xf48
--  __DATA_CONST.__objc_classlist: 0x18
-+  __TEXT.__unwind_info: 0x448
-+  __TEXT.__eh_frame: 0xe60
-+  __DATA_CONST.__const: 0xef0
-+  __DATA_CONST.__objc_classlist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x470
-+  __DATA_CONST.__auth_got: 0x480
-   __DATA_CONST.__got: 0x150
-   __DATA_CONST.__auth_ptr: 0x1a0
--  __DATA.__objc_const: 0x280
--  __DATA.__data: 0xb28
-+  __DATA.__objc_const: 0x338
-+  __DATA.__data: 0xbc8
-   __DATA.__TIGHTBEAM: 0x10
-   __DATA.__common: 0x18
-   __DATA.__bss: 0x1080
+-92.30.0.0.0
++93.1.0.0.0
 
-   - /System/ExclaveKit/usr/lib/swift/libswiftObjectiveC.dylib
-   - /System/ExclaveKit/usr/lib/swift/libswift_Builtin_float.dylib
-   - /System/ExclaveKit/usr/lib/swift/libswiftos.dylib
 -  Functions: 394
 -  Symbols:   1226
 -  CStrings:  55
 +  Functions: 387
 +  Symbols:   1232
 +  CStrings:  56
- 
-Sections:
-~ __TEXT.__objc_methname : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__TIGHTBEAM : content changed
 Symbols:
 + _$s37MockAudioPolarisBridgeClientComponent0abcdeF14HandlerContextC7handlerAA0abcdeF7Methods_pvpWvd
 + _$s37MockAudioPolarisBridgeClientComponent0abcdeF14HandlerContextC7handlerAcA0abcdeF7Methods_p_tcfCTq
@@ -101,5 +79,4 @@ CStrings:
 + "_TtC37MockAudioPolarisBridgeClientComponent51MockAudioPolarisBridgeClientComponentHandlerContext"
 + "handler"
 - "invalid handler object, does not conform to MockAudioPolarisBridgeClientComponentMethods"
-
 ```

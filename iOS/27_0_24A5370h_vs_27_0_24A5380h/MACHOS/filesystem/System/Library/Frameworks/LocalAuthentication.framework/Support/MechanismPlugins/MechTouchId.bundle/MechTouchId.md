@@ -2,23 +2,30 @@
 
 > `/System/Library/Frameworks/LocalAuthentication.framework/Support/MechanismPlugins/MechTouchId.bundle/MechTouchId`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3238` | `0x3244` | **`+0xc`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__const`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x3238
-+  __TEXT.__text: 0x3244
-   __TEXT.__auth_stubs: 0x2b0
-   __TEXT.__objc_stubs: 0xe80
-   __TEXT.__objc_methlist: 0x2fc
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__data : content changed
+-2319.0.16.502.1
++2319.0.33.0.1
 Symbols:
 + _OBJC_CLASS_$_LACBiometryHelper
 + _OBJC_CLASS_$_LACMobileGestalt
@@ -26,5 +33,4 @@ Symbols:
 - _OBJC_CLASS_$_DaemonUtils
 Functions:
 ~ sub_3204 : 928 -> 940
-
 ```

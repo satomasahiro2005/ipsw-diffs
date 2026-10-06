@@ -2,69 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/FitnessCanvasUI.framework/FitnessCanvasUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x182a34` | `0x184d48` | **`+0x2314`** |
+| `__TEXT.__swift5_capture` | `0x4618` | `0x4924` | **`+0x30c`** |
+| `__AUTH_CONST.__const` | `0xa4f8` | `0xa5c0` | **`+0xc8`** |
+| `__TEXT.__const` | `0x14488` | `0x14518` | **`+0x90`** |
+| `__TEXT.__swift5_reflstr` | `0x3092` | `0x30f2` | **`+0x60`** |
+| `__TEXT.__swift5_fieldmd` | `0x452c` | `0x455c` | **`+0x30`** |
+| `__TEXT.__swift5_typeref` | `0xcff4` | `0xd016` | **`+0x22`** |
+| `__TEXT.__cstring` | `0xda7` | `0xdc7` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x3fb8` | `0x3fd8` | **`+0x20`** |
+| `__DATA.__bss` | `0x16230` | `0x16240` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1850` | `0x1848` | **`-0x8`** |
+| `__DATA_DIRTY.__data` | `0x4368` | `0x4370` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.134.0.0
--  __TEXT.__text: 0x182a34
--  __TEXT.__const: 0x14488
 +2027.0.146.0.2
-+  __TEXT.__text: 0x184d48
-+  __TEXT.__const: 0x14518
-   __TEXT.__constg_swiftt: 0x76a4
--  __TEXT.__swift5_typeref: 0xcff4
-+  __TEXT.__swift5_typeref: 0xd016
-   __TEXT.__swift5_builtin: 0x78
--  __TEXT.__swift5_reflstr: 0x3092
--  __TEXT.__swift5_fieldmd: 0x452c
-+  __TEXT.__swift5_reflstr: 0x30f2
-+  __TEXT.__swift5_fieldmd: 0x455c
-   __TEXT.__swift5_assocty: 0x920
-   __TEXT.__swift5_proto: 0x10f8
-   __TEXT.__swift5_types: 0x504
--  __TEXT.__swift5_capture: 0x4618
--  __TEXT.__cstring: 0xda7
-+  __TEXT.__swift5_capture: 0x4924
-+  __TEXT.__cstring: 0xdc7
-   __TEXT.__swift5_protos: 0x60
-   __TEXT.__oslogstring: 0x347
-   __TEXT.__swift_as_entry: 0xdc
-   __TEXT.__swift_as_ret: 0xb8
-   __TEXT.__swift_as_cont: 0x110
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x3fb8
-+  __TEXT.__unwind_info: 0x3fd8
-   __TEXT.__eh_frame: 0x497c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x30
-   __DATA_CONST.__got: 0xab0
--  __AUTH_CONST.__const: 0xa4f8
-+  __AUTH_CONST.__const: 0xa5c0
-   __AUTH_CONST.__objc_const: 0x4e8
--  __AUTH_CONST.__auth_got: 0x1850
-+  __AUTH_CONST.__auth_got: 0x1848
-   __AUTH.__data: 0x8a0
-   __DATA.__data: 0x32b8
--  __DATA.__bss: 0x16230
--  __DATA_DIRTY.__data: 0x4368
-+  __DATA.__bss: 0x16240
-+  __DATA_DIRTY.__data: 0x4370
-   __DATA_DIRTY.__bss: 0xbf30
-   __DATA_DIRTY.__common: 0x18
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6104
--  Symbols:   2445
+-  Symbols:   2439
 -  CStrings:  119
 +  Functions: 6122
-+  Symbols:   2446
++  Symbols:   2440
 +  CStrings:  120
- 
 Symbols:
 + ___swift_closure_destructor.21Tm
 + ___swift_memcpy225_8

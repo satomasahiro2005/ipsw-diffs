@@ -2,92 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/CoreSpeechFoundation.framework/CoreSpeechFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcd8fc` | `0xcf004` | **`+0x1708`** |
+| `__AUTH_CONST.__objc_const` | `0x15018` | `0x15270` | **`+0x258`** |
+| `__TEXT.__oslogstring` | `0x11c58` | `0x11e8b` | **`+0x233`** |
+| `__TEXT.__objc_methlist` | `0xdb18` | `0xdcb0` | **`+0x198`** |
+| `__TEXT.__cstring` | `0x16b38` | `0x16c54` | **`+0x11c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7590` | `0x7680` | **`+0xf0`** |
+| `__DATA_CONST.__const` | `0x28c8` | `0x2920` | **`+0x58`** |
+| `__DATA_DIRTY.__bss` | `0x608` | `0x660` | **`+0x58`** |
+| `__DATA_DIRTY.__objc_data` | `0x47c0` | `0x4810` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x3e88` | `0x3ed0` | **`+0x48`** |
+| `__DATA.__bss` | `0x15b0` | `0x1570` | **`-0x40`** |
+| `__DATA.__objc_ivar` | `0xdb0` | `0xdd4` | **`+0x24`** |
+| `__AUTH_CONST.__cfstring` | `0x9a60` | `0x9a80` | **`+0x20`** |
+| `__TEXT.__const` | `0xfe8` | `0xff8` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x3d24` | `0x3d30` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0xfc0` | `0xfc8` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x1040` | `0x1048` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x750` | `0x758` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x570` | `0x578` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3605.25.1.0.0
--  __TEXT.__text: 0xc9bc4
--  __TEXT.__objc_methlist: 0xdb18
--  __TEXT.__const: 0xfe8
 +3605.31.3.0.0
-+  __TEXT.__text: 0xcb278
-+  __TEXT.__objc_methlist: 0xdcb0
-+  __TEXT.__const: 0xff8
-   __TEXT.__dlopen_cstrs: 0x24a
-   __TEXT.__constg_swiftt: 0x2cc
-   __TEXT.__swift5_typeref: 0x1dc
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_types: 0x30
--  __TEXT.__cstring: 0x16b38
-+  __TEXT.__cstring: 0x16c54
-   __TEXT.__swift5_reflstr: 0x278
-   __TEXT.__swift5_assocty: 0x78
-   __TEXT.__swift5_fieldmd: 0x250
-   __TEXT.__swift5_proto: 0x74
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__gcc_except_tab: 0x3d24
--  __TEXT.__oslogstring: 0x11c58
--  __TEXT.__unwind_info: 0x4ac8
-+  __TEXT.__gcc_except_tab: 0x3d30
-+  __TEXT.__oslogstring: 0x11e8b
-+  __TEXT.__unwind_info: 0x4b28
-   __TEXT.__eh_frame: 0x270
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x28c8
--  __DATA_CONST.__objc_classlist: 0x750
-+  __DATA_CONST.__const: 0x2920
-+  __DATA_CONST.__objc_classlist: 0x758
-   __DATA_CONST.__objc_catlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x228
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x18
--  __DATA_CONST.__objc_selrefs: 0x7590
-+  __DATA_CONST.__objc_selrefs: 0x7680
-   __DATA_CONST.__objc_protorefs: 0x30
--  __DATA_CONST.__objc_superrefs: 0x570
-+  __DATA_CONST.__objc_superrefs: 0x578
-   __DATA_CONST.__objc_arraydata: 0x1c8
--  __DATA_CONST.__got: 0x1040
-+  __DATA_CONST.__got: 0x1048
-   __AUTH_CONST.__const: 0x1b40
--  __AUTH_CONST.__cfstring: 0x9a60
--  __AUTH_CONST.__objc_const: 0x15018
-+  __AUTH_CONST.__cfstring: 0x9a80
-+  __AUTH_CONST.__objc_const: 0x15270
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_dictobj: 0x1e0
-   __AUTH_CONST.__objc_intobj: 0x4b0
-   __AUTH_CONST.__objc_arrayobj: 0xa8
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_floatobj: 0x1a0
--  __AUTH_CONST.__auth_got: 0xfc0
-+  __AUTH_CONST.__auth_got: 0xfc8
-   __AUTH.__objc_data: 0x218
--  __DATA.__objc_ivar: 0xdb0
-+  __DATA.__objc_ivar: 0xdd4
-   __DATA.__data: 0x1a60
--  __DATA_DIRTY.__objc_data: 0x47c0
-+  __DATA_DIRTY.__objc_data: 0x4810
-   __DATA_DIRTY.__data: 0x2e8
--  __DATA_DIRTY.__bss: 0x608
-+  __DATA_DIRTY.__bss: 0x660
-   __DATA_DIRTY.__common: 0x70
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5276
 -  Symbols:   9902
 -  CStrings:  3793
 +  Functions: 5311
 +  Symbols:   9961
 +  CStrings:  3810
- 
 Symbols:
 + +[CSAudioStreamHoldRequestOption defaultOptionWithTimeout:requestExclaveAudio:]
 + +[CSConfig inputRecordingDurationInSecsAttentive]

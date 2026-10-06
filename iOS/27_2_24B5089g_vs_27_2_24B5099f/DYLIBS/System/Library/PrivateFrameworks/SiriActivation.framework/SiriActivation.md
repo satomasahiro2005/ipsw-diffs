@@ -2,75 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/SiriActivation.framework/SiriActivation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x762dc` | `0x76d6c` | **`+0xa90`** |
+| `__TEXT.__cstring` | `0xcf62` | `0xd0d2` | **`+0x170`** |
+| `__TEXT.__oslogstring` | `0x9ae4` | `0x9bc3` | **`+0xdf`** |
+| `__TEXT.__objc_methlist` | `0x7254` | `0x72dc` | **`+0x88`** |
+| `__DATA_CONST.__objc_selrefs` | `0x35f8` | `0x3658` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x18c0` | `0x1910` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x1f10` | `0x1f60` | **`+0x50`** |
+| `__AUTH_CONST.__objc_const` | `0xb5f8` | `0xb640` | **`+0x48`** |
+| `__TEXT.__gcc_except_tab` | `0xcec` | `0xd00` | **`+0x14`** |
+| `__AUTH_CONST.__auth_got` | `0xbe8` | `0xbf0` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x748` | `0x750` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x2d8` | `0x2e0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3605.24.1.0.0
--  __TEXT.__text: 0x73868
--  __TEXT.__objc_methlist: 0x7254
 +3605.30.1.0.0
-+  __TEXT.__text: 0x742c8
-+  __TEXT.__objc_methlist: 0x72dc
-   __TEXT.__const: 0x124c
--  __TEXT.__cstring: 0xcf62
--  __TEXT.__oslogstring: 0x9ae4
--  __TEXT.__gcc_except_tab: 0xcec
-+  __TEXT.__cstring: 0xd0d2
-+  __TEXT.__oslogstring: 0x9bc3
-+  __TEXT.__gcc_except_tab: 0xd00
-   __TEXT.__dlopen_cstrs: 0x1bc
-   __TEXT.__swift5_typeref: 0x77a
-   __TEXT.__constg_swiftt: 0x42c
 
-   __TEXT.__swift5_protos: 0xc
-   __TEXT.__swift5_mpenum: 0x14
-   __TEXT.__swift_as_cont: 0x8c
--  __TEXT.__unwind_info: 0x26f0
-+  __TEXT.__unwind_info: 0x2740
-   __TEXT.__eh_frame: 0xf58
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x18c0
-+  __DATA_CONST.__const: 0x1910
-   __DATA_CONST.__objc_classlist: 0x3a8
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x1e0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x35f8
-+  __DATA_CONST.__objc_selrefs: 0x3658
-   __DATA_CONST.__objc_protorefs: 0x68
--  __DATA_CONST.__objc_superrefs: 0x2d8
-+  __DATA_CONST.__objc_superrefs: 0x2e0
-   __DATA_CONST.__objc_arraydata: 0x510
-   __DATA_CONST.__got: 0xaa8
-   __AUTH_CONST.__const: 0x14b0
-   __AUTH_CONST.__cfstring: 0x50a0
--  __AUTH_CONST.__objc_const: 0xb5f8
-+  __AUTH_CONST.__objc_const: 0xb640
-   __AUTH_CONST.__objc_intobj: 0x978
-   __AUTH_CONST.__objc_dictobj: 0x118
--  __AUTH_CONST.__auth_got: 0xbe8
-+  __AUTH_CONST.__auth_got: 0xbf0
-   __AUTH.__objc_data: 0x2190
-   __AUTH.__data: 0x118
--  __DATA.__objc_ivar: 0x748
-+  __DATA.__objc_ivar: 0x750
-   __DATA.__data: 0x1710
-   __DATA.__common: 0x270
-   __DATA_DIRTY.__objc_data: 0x5f0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2971
 -  Symbols:   4743
 -  CStrings:  1856
 +  Functions: 2988
 +  Symbols:   4764
 +  CStrings:  1867
- 
 Symbols:
 + -[SASActivationRequest isAutoPromptRequest]
 + -[SASHeater _replacePreheatBlock:]

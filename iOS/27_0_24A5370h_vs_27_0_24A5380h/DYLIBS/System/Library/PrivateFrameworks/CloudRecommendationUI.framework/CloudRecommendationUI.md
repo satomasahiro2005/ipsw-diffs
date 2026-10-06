@@ -2,96 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/CloudRecommendationUI.framework/CloudRecommendationUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xaa184` | `0xaa654` | **`+0x4d0`** |
+| `__TEXT.__swift5_typeref` | `0x8b7a` | `0x8ddc` | **`+0x262`** |
+| `__TEXT.__eh_frame` | `0x49e8` | `0x4a50` | **`+0x68`** |
+| `__TEXT.__oslogstring` | `0x28d2` | `0x2913` | **`+0x41`** |
+| `__TEXT.__const` | `0x72c4` | `0x72e4` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x2660` | `0x2680` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0xb28` | `0xb40` | **`+0x18`** |
+| `__DATA.__data` | `0x24b0` | `0x24c0` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x16d8` | `0x16e0` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb88` | `0xb90` | **`+0x8`** |
+| `__TEXT.__cstring` | `0x2055` | `0x2054` | **`-0x1`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xaa184
-+  __TEXT.__text: 0xaa654
-   __TEXT.__objc_methlist: 0x8b4
--  __TEXT.__const: 0x72c4
-+  __TEXT.__const: 0x72e4
-   __TEXT.__gcc_except_tab: 0x64
--  __TEXT.__cstring: 0x2055
-+  __TEXT.__cstring: 0x2054
-   __TEXT.__dlopen_cstrs: 0x15c
-   __TEXT.__constg_swiftt: 0x27e8
--  __TEXT.__swift5_typeref: 0x8b7a
-+  __TEXT.__swift5_typeref: 0x8ddc
-   __TEXT.__swift5_reflstr: 0x1b94
-   __TEXT.__swift5_fieldmd: 0x19fc
-   __TEXT.__swift5_builtin: 0x78
-   __TEXT.__swift5_assocty: 0x558
--  __TEXT.__oslogstring: 0x28d2
-+  __TEXT.__oslogstring: 0x2913
-   __TEXT.__swift5_capture: 0x12ec
-   __TEXT.__swift5_proto: 0x330
-   __TEXT.__swift5_types: 0x1ac
+-301.24.0.3.0
++301.24.0.4.0
 
-   __TEXT.__swift_as_ret: 0x20c
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift5_mpenum: 0x14
--  __TEXT.__unwind_info: 0x2660
--  __TEXT.__eh_frame: 0x49e8
-+  __TEXT.__unwind_info: 0x2680
-+  __TEXT.__eh_frame: 0x4a50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x178
-   __DATA_CONST.__objc_protolist: 0xb0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb88
-+  __DATA_CONST.__objc_selrefs: 0xb90
-   __DATA_CONST.__objc_protorefs: 0x58
-   __DATA_CONST.__objc_superrefs: 0x18
--  __DATA_CONST.__got: 0xb28
-+  __DATA_CONST.__got: 0xb40
-   __AUTH_CONST.__const: 0x48b0
-   __AUTH_CONST.__objc_const: 0x4f48
--  __AUTH_CONST.__auth_got: 0x16d8
-+  __AUTH_CONST.__auth_got: 0x16e0
-   __AUTH.__objc_data: 0x1260
-   __AUTH.__data: 0x2ed8
-   __DATA.__objc_ivar: 0x20
--  __DATA.__data: 0x24b0
-+  __DATA.__data: 0x24c0
-   __DATA.__bss: 0x6868
-   __DATA.__common: 0x138
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3069
--  Symbols:   2870
+-  Symbols:   1629
 -  CStrings:  412
 +  Functions: 3076
-+  Symbols:   2872
++  Symbols:   1631
 +  CStrings:  413
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
 Symbols:
 + _OBJC_CLASS_$_LSApplicationRecord
 + ___swift_closure_destructor.275Tm
@@ -100,7 +39,6 @@ Symbols:
 + ___swift_closure_destructor.53Tm
 + _associated conformance 21CloudRecommendationUI0B11FlowTestRowV05SwiftC04ViewAA4BodyAdEP_AdE
 + _get_witness_table 7SwiftUI19_ConditionalContentVyAA08ModifiedD0VyAA4ViewP011_JetEngine_aB0E28optOutFromMetricsValidationsQryFQOyAEyAEyAEyAEyAA6ButtonVyAEyAA6HStackVyAA05TupleD0VyAEy019CloudRecommendationB00r5ImageF0VAA14_PaddingLayoutVG_AA6VStackVyAOyAMyAOyAWyAOyAEyAEyAEyAEyAEyAA4TextVAA30_EnvironmentKeyWritingModifierVySbGGAA010_FlexFrameU0VGA_yAA5ColorVSgGGATGAA31AccessibilityAttachmentModifierVG_AEyAgAE10labelStyleyQrqd__AA10LabelStyleRd__lFQOyAA5LabelVyAEyAEyAEyAgAE10fontWeightyQrAA4FontV6WeightVSgFQOyA1__Qo_A8_GA3_GA12_GAEyAEyAA0S0VA_yA20_SgGGAA24_ForegroundStyleModifierVyA6_GGG_AP17AlignedLabelStyle33_92AAD4F1D2358D4C53B613838A89C2E7LLVQo_ATGSgAEyAEyAEyAEyAYA3_GA8_GATGA12_GQPGG_ACyAEyAEyA32_A8_GATGAgAE11buttonStyleyQrqd__AA09PrimitiveN5StyleRd__lFQOyAgAE5alert_11isPresented7actions7messageQrAY_AA7BindingVySbGqd__yXEqd_0_yXEtAaFRd__AaFRd_0_r0_lFQOyAgHEAIQryFQOyAgHE14impressionable_13configuration8position20definesParentContextQr0gH0010ImpressionL0VSg_A65_21ImpressionsCalculatorC13ConfigurationVSiSgSbtFQOyAgHEAIQryFQOyAEyAEyAKyA50_GATGA12_G_Qo__Qo__Qo__AOyAKyAYG_A80_QPGACyA2YGQo__AA010BorderlessN5StyleVQo_GSgQPGG_AOyAEyAA7DividerVATG_AA7ForEachVySaySo22CERecommendationActionCGSSAEyAgHEAIQryFQOyAgHEA61__A62_A63_A64_QrA68__A72_A73_SbtFQOyAgHEAIQryFQOyAA6ZStackVyAgAEA52_yQrqd__AAA53_Rd__lFQOyAKyAEyAEyAYA_yAA0W9AlignmentOGGA12_GG_A85_Qo_G_Qo__Qo__Qo_ATGGQPGSgQPGGQPGGATGGA3_GAA24_BackgroundStyleModifierVyA6_GGAA06_TraitZ8ModifierVyAA022ListRowBackgroundTraitY0VGGAA11_ClipEffectVyAA16RoundedRectangleVGG_Qo_AA19_BackgroundModifierVyAgHEAIQryFQOyAgHEA61__A62_A63_A64_QrA68__A72_A73_SbtFQOyA6__Qo__Qo_GGAEyAEyAEyAEyAgHEAIQryFQOyAgHEA61__A62_A63_A64_QrA68__A72_A73_SbtFQOyAgHEAIQryFQOyA120__Qo__Qo__Qo_A3_GA125_GA131_GA137_GGAaFHPA145_AaFHPqd__AaFHD2_A139_HO_A144_AA0F8ModifierHPyHCHC_A152_AaFHPA151_AaFHPA150_AaFHPA149_AaFHPqd__AaFHD2_A148_HO_A3_AAA154_HPyHCHC_A125_AAA154_HPyHCHC_A131_AAA154_HPyHCHC_A137_AAA154_HPyHCHCHC
-+ _objc_msgSend$initWithBundleIdentifierOfSystemPlaceholder:error:
 + _symbolic _____ 21CloudRecommendationUI0B11FlowTestRowV
 + _symbolic _____yAAyAAyAAy_____yAAy_____y_____yAAy__________G______yADyACyADyAHyADyAAyAAyAAyAAyAAy__________ySbGG_____GAJy_____SgGGAFG_____G_AAy_____y_____yAAyAAyAAy_____yAL_Qo_AQGAMGATGAAyAAy_____AJy_____SgGG_____yAOGGG______Qo_AFGSgAAyAAyAAyAAyAiMGAQGAFGATGQPGG______yAAyAAyA3_AQGAFG_____y_____y_____y_____y_____yAAyAAyAByA19_GAFGATG_Qo__Qo__Qo__ADyAByAIG_A27_QPGA18_yA2IGQo_______Qo_GSgQPGG_ADyAAy_____AFG______ySaySo22CERecommendationActionCGSSAAy_____y_____y_____y_____y_____yAByAAyAAyAiJy_____GGATGG_A31_Qo_G_Qo__Qo__Qo_AFGGQPGSgQPGGQPGGAFGGAMG_____yAOGG_____y_____GG_____y_____GG 7SwiftUI15ModifiedContentV AA6ButtonV AA6HStackV AA05TupleD0V 019CloudRecommendationB00I9ImageViewV AA14_PaddingLayoutV AA6VStackV AA4TextV AA30_EnvironmentKeyWritingModifierV AA010_FlexFrameM0V AA5ColorV AA023AccessibilityAttachmentS0V AA0K0PAAE10labelStyleyQrqd__AA05LabelZ0Rd__lFQO AA5LabelV A0_AAE10fontWeightyQrAA4FontV6WeightVSgFQO AA0J0V A7_ AA011_ForegroundzS0V AJ012AlignedLabelZ033_92AAD4F1D2358D4C53B613838A89C2E7LLV AA012_ConditionalD0V A0_AAE06buttonZ0yQrqd__AA09PrimitiveeZ0Rd__lFQO A0_AAE5alert_11isPresented7actions7messageQrAR_AA7BindingVySbGqd__yXEqd_0_yXEtAAA_Rd__AAA_Rd_0_r0_lFQO A0_011_JetEngine_aB0E28optOutFromMetricsValidationsQryFQO A0_A29_E14impressionable_13configuration8position20definesParentContextQr9JetEngine17ImpressionMetricsVSg_A35_21ImpressionsCalculatorC13ConfigurationVSiSgSbtFQO A0_A29_EA30_QryFQO AA010BorderlesseZ0V AA7DividerV AA7ForEachV A0_A29_EA30_QryFQO A0_A29_EA31__A32_A33_A34_QrA38__A42_A43_SbtFQO A0_A29_EA30_QryFQO AA6ZStackV A0_AAEA20_yQrqd__AAA21_Rd__lFQO AA0O9AlignmentO AA011_BackgroundzS0V AA06_TraitrS0V AA022ListRowBackgroundTraitQ0V AA11_ClipEffectV AA16RoundedRectangleV
 + _symbolic _____yAAyAAyAAy_____y_____y_____yAAy_____y_____yAAy__________G______yACyAByACyAGyACyAAyAAyAAyAAyAAy__________ySbGG_____GAIy_____SgGGAEG_____G_AAy_____y_____yAAyAAyAAy_____yAK_Qo_APGALGASGAAyAAy_____AIy_____SgGG_____yANGGG______Qo_AEGSgAAyAAyAAyAAyAhLGAPGAEGASGQPGG______yAAyAAyA2_APGAEG_____y_____y_____y_____y_____yAAyAAy_____yA18_GAEGASG_Qo__Qo__Qo__ACyA20_yAHG_A27_QPGA17_yA2HGQo_______Qo_GSgQPGG_ACyAAy_____AEG______ySaySo22CERecommendationActionCGSSAAy_____y_____y_____y_____y_____yA20_yAAyAAyAhIy_____GGASGG_A31_Qo_G_Qo__Qo__Qo_AEGGQPGSgQPGGQPGGAEG_Qo__Qo__Qo_ALG_____yANGG_____y_____GG_____y_____GG 7SwiftUI15ModifiedContentV AA4ViewP011_JetEngine_aB0E28optOutFromMetricsValidationsQryFQO AeFE14impressionable_13configuration8position20definesParentContextQr0fG0010ImpressionK0VSg_AL21ImpressionsCalculatorC13ConfigurationVSiSgSbtFQO AeFEAGQryFQO AA6HStackV AA05TupleD0V 019CloudRecommendationB00z5ImageE0V AA14_PaddingLayoutV AA6VStackV AA4TextV AA30_EnvironmentKeyWritingModifierV AA16_FlexFrameLayoutV AA5ColorV AA31AccessibilityAttachmentModifierV AeAE10labelStyleyQrqd__AA10LabelStyleRd__lFQO AA5LabelV AeAE10fontWeightyQrAA4FontV6WeightVSgFQO AA5ImageV A20_ AA24_ForegroundStyleModifierV AY17AlignedLabelStyle33_92AAD4F1D2358D4C53B613838A89C2E7LLV AA012_ConditionalD0V AeAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQO AeAE5alert_11isPresented7actions7messageQrA5__AA7BindingVySbGqd__yXEqd_0_yXEtAaDRd__AaDRd_0_r0_lFQO AeFEAGQryFQO AeFEAH_AijKQrAO_AsTSbtFQO AeFEAGQryFQO AA6ButtonV AA21BorderlessButtonStyleV AA7DividerV AA7ForEachV AeFEAGQryFQO AeFEAH_AijKQrAO_AsTSbtFQO AeFEAGQryFQO AA6ZStackV AeAEA33_yQrqd__AAA34_Rd__lFQO AA13TextAlignmentO AA24_BackgroundStyleModifierV AA21_TraitWritingModifierV AA25ListRowBackgroundTraitKeyV AA11_ClipEffectV AA16RoundedRectangleV
@@ -142,5 +80,4 @@ CStrings:
 + "Icon available for %s: %{bool}d (installed check)"
 + "Icon available for %s: system app placeholder"
 - "Bundle ID %s is installed: %{bool}d"
-
 ```

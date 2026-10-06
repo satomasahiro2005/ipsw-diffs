@@ -2,96 +2,60 @@
 
 > `/Applications/LimitedModeShieldApp.app/Frameworks/AppManagedFeaturesUI.framework/AppManagedFeaturesUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x23450` | `0x23914` | **`+0x4c4`** |
+| `__TEXT.__cstring` | `0xbb1` | `0xc71` | **`+0xc0`** |
+| `__DATA.__common` | `0x8` | `0x28` | **`+0x20`** |
+| `__TEXT.__auth_stubs` | `0x1640` | `0x1660` | **`+0x20`** |
+| `__TEXT.__const` | `0x1238` | `0x1258` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xb28` | `0xb38` | **`+0x10`** |
+| `__DATA.__data` | `0x748` | `0x758` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x3c8` | `0x3b8` | **`-0x10`** |
+| `__AUTH.__objc_data` | `0x830` | `0x838` | **`+0x8`** |
+| `__TEXT.__constg_swiftt` | `0x838` | `0x840` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__AUTH.__data`
+- `__AUTH_CONST.__const`
+- `__AUTH_CONST.__objc_const`
 - `__DATA_CONST.__const`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
 - `__DATA_CONST.__objc_protorefs`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__data`
+- `__DATA_CONST.__objc_selrefs`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -46.0.7.0.0
--  __TEXT.__text: 0x23450
 +46.0.15.0.0
-+  __TEXT.__text: 0x23914
-   __TEXT.__objc_methlist: 0x35c
--  __TEXT.__const: 0x1238
--  __TEXT.__cstring: 0xbb1
-+  __TEXT.__const: 0x1258
-+  __TEXT.__cstring: 0xc71
-   __TEXT.__oslogstring: 0x8ee
--  __TEXT.__constg_swiftt: 0x838
-+  __TEXT.__constg_swiftt: 0x840
-   __TEXT.__swift5_typeref: 0x119e
-   __TEXT.__swift5_reflstr: 0x408
-   __TEXT.__swift5_fieldmd: 0x4f4
 
-   __TEXT.__unwind_info: 0x9f8
-   __TEXT.__eh_frame: 0x1378
-   __TEXT.__objc_stubs: 0xd80
--  __TEXT.__auth_stubs: 0x1640
-+  __TEXT.__auth_stubs: 0x1660
-   __TEXT.__objc_classname: 0x276
-   __TEXT.__objc_methname: 0xe29
-   __TEXT.__objc_methtype: 0x2d7
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x4a8
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__got: 0x3c8
-+  __DATA_CONST.__got: 0x3b8
-   __AUTH_CONST.__const: 0xf50
-   __AUTH_CONST.__objc_const: 0x8b8
--  __AUTH_CONST.__auth_got: 0xb28
--  __AUTH.__objc_data: 0x830
-+  __AUTH_CONST.__auth_got: 0xb38
-+  __AUTH.__objc_data: 0x838
-   __AUTH.__data: 0x558
--  __DATA.__data: 0x748
-+  __DATA.__data: 0x758
-   __DATA.__bss: 0xd40
--  __DATA.__common: 0x8
-+  __DATA.__common: 0x28
-   - /System/Library/Frameworks/AppManagedFeatures.framework/AppManagedFeatures
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit
-   - /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities
-   - /System/Library/PrivateFrameworks/_IconServices_SwiftUI.framework/_IconServices_SwiftUI
 +  - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 707
 -  Symbols:   640
 -  CStrings:  327
 +  Functions: 711
 +  Symbols:   642
 +  CStrings:  329
- 
 Symbols:
 + _MobileGestalt_get_current_device
 + _MobileGestalt_get_wapiCapability

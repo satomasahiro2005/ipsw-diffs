@@ -2,36 +2,31 @@
 
 > `/System/Library/SystemConfiguration/IPConfiguration.bundle/IPConfiguration`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5ca48` | `0x5cd9c` | **`+0x354`** |
+| `__TEXT.__oslogstring` | `0x61dc` | `0x623e` | **`+0x62`** |
+| `__TEXT.__cstring` | `0x424b` | `0x425e` | **`+0x13`** |
+| `__TEXT.__const` | `0x300` | `0x308` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -555.0.0.0.0
--  __TEXT.__text: 0x5ca48
 +557.0.0.0.0
-+  __TEXT.__text: 0x5cd9c
-   __TEXT.__auth_stubs: 0x10d0
--  __TEXT.__const: 0x300
--  __TEXT.__oslogstring: 0x61dc
--  __TEXT.__cstring: 0x424b
-+  __TEXT.__const: 0x308
-+  __TEXT.__oslogstring: 0x623e
-+  __TEXT.__cstring: 0x425e
-   __TEXT.__unwind_info: 0xc48
-   __DATA_CONST.__const: 0x1db0
-   __DATA_CONST.__cfstring: 0x2b40
 
-   - /usr/lib/libbsm.0.dylib
-   Functions: 1030
-   Symbols:   494
 -  CStrings:  1740
 +  CStrings:  1744
- 
 CStrings:
 + "%s: %s present in new list"
 + "%s: can't find %s, building new list"

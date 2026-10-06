@@ -2,75 +2,24 @@
 
 > `/System/Library/PrivateFrameworks/AppletTranslationFramework.framework/AppletTranslationFramework`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x470` | `0x520` | **`+0xb0`** |
+| `__TEXT.__text` | `0xd353c` | `0xd3518` | **`-0x24`** |
+| `__AUTH_CONST.__auth_got` | `0xcf0` | `0xce8` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x1bd8` | `0x1be0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xd353c
-+  __TEXT.__text: 0xd3518
-   __TEXT.__objc_methlist: 0x3028
-   __TEXT.__const: 0x4bf8
-   __TEXT.__cstring: 0x94b5
+-70.30.0.0.0
++70.31.0.0.0
 
-   __TEXT.__swift5_mpenum: 0x6c
-   __TEXT.__ustring: 0xa
-   __TEXT.__swift5_protos: 0xc
--  __TEXT.__unwind_info: 0x1bd8
-+  __TEXT.__unwind_info: 0x1be0
-   __TEXT.__eh_frame: 0x1de8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x70
-   __DATA_CONST.__objc_arraydata: 0x2ba8
--  __DATA_CONST.__got: 0x470
-+  __DATA_CONST.__got: 0x520
-   __AUTH_CONST.__const: 0x34c1
-   __AUTH_CONST.__cfstring: 0xac80
-   __AUTH_CONST.__objc_const: 0x42e8
-
-   __AUTH_CONST.__objc_arrayobj: 0x450
-   __AUTH_CONST.__objc_dictobj: 0xf28
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0xcf0
-+  __AUTH_CONST.__auth_got: 0xce8
-   __AUTH.__objc_data: 0x1bd0
-   __AUTH.__data: 0x440
-   __DATA.__objc_ivar: 0x198
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   Functions: 2319
--  Symbols:   5206
-+  Symbols:   5205
-   CStrings:  3742
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
+-  Symbols:   2945
++  Symbols:   2944
 Symbols:
 - _swift_willThrowTypedImpl
 Functions:
@@ -90,5 +39,4 @@ Functions:
 ~ sub_237bf8e28 -> sub_23c611de0 : 412 -> 408
 ~ _DERParseSequenceC : 696 -> 728
 ~ _DERParseUnsortedSequenceC : 912 -> 920
-
 ```

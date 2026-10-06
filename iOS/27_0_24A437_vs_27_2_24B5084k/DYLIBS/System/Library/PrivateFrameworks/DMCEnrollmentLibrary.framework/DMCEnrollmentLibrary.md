@@ -2,69 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/DMCEnrollmentLibrary.framework/DMCEnrollmentLibrary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2beb0` | `0x2cd74` | **`+0xec4`** |
+| `__TEXT.__oslogstring` | `0x46a2` | `0x47ab` | **`+0x109`** |
+| `__DATA_CONST.__const` | `0x13a8` | `0x1498` | **`+0xf0`** |
+| `__TEXT.__gcc_except_tab` | `0x880` | `0x8e4` | **`+0x64`** |
+| `__AUTH_CONST.__cfstring` | `0x1980` | `0x19e0` | **`+0x60`** |
+| `__TEXT.__cstring` | `0x278f` | `0x27e8` | **`+0x59`** |
+| `__TEXT.__objc_methlist` | `0x1d1c` | `0x1d74` | **`+0x58`** |
+| `__TEXT.__unwind_info` | `0x998` | `0x9f0` | **`+0x58`** |
+| `__TEXT.__dlopen_cstrs` | `0xae` | `0x104` | **`+0x56`** |
+| `__AUTH_CONST.__objc_intobj` | `0xb28` | `0xb70` | **`+0x48`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1d38` | `0x1d80` | **`+0x48`** |
+| `__AUTH_CONST.__objc_const` | `0x2030` | `0x2060` | **`+0x30`** |
+| `__DATA_CONST.__objc_arraydata` | `0x558` | `0x578` | **`+0x20`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x4e0` | `0x4f8` | **`+0x18`** |
+| `__DATA.__bss` | `0x218` | `0x220` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x1a4` | `0x1a8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -113.2.5.0.0
--  __TEXT.__text: 0x2b7f0
--  __TEXT.__objc_methlist: 0x1d1c
 +113.40.17.0.0
-+  __TEXT.__text: 0x2c690
-+  __TEXT.__objc_methlist: 0x1d74
-   __TEXT.__const: 0x100
--  __TEXT.__oslogstring: 0x46a2
--  __TEXT.__cstring: 0x278f
--  __TEXT.__gcc_except_tab: 0x880
--  __TEXT.__dlopen_cstrs: 0xae
--  __TEXT.__unwind_info: 0xbd0
-+  __TEXT.__oslogstring: 0x47ab
-+  __TEXT.__cstring: 0x27e8
-+  __TEXT.__gcc_except_tab: 0x8e4
-+  __TEXT.__dlopen_cstrs: 0x104
-+  __TEXT.__unwind_info: 0xc30
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x13a8
-+  __DATA_CONST.__const: 0x1498
-   __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1d38
-+  __DATA_CONST.__objc_selrefs: 0x1d80
-   __DATA_CONST.__objc_superrefs: 0x38
--  __DATA_CONST.__objc_arraydata: 0x558
-+  __DATA_CONST.__objc_arraydata: 0x578
-   __DATA_CONST.__got: 0x4e0
-   __AUTH_CONST.__const: 0x160
--  __AUTH_CONST.__cfstring: 0x1980
--  __AUTH_CONST.__objc_const: 0x2030
--  __AUTH_CONST.__objc_intobj: 0xb28
--  __AUTH_CONST.__objc_arrayobj: 0x4e0
-+  __AUTH_CONST.__cfstring: 0x19e0
-+  __AUTH_CONST.__objc_const: 0x2060
-+  __AUTH_CONST.__objc_intobj: 0xb70
-+  __AUTH_CONST.__objc_arrayobj: 0x4f8
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__objc_ivar: 0x1a4
-+  __DATA.__objc_ivar: 0x1a8
-   __DATA.__data: 0x1e0
-   __DATA_DIRTY.__objc_data: 0x370
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 854
--  Symbols:   2349
+-  Symbols:   1491
 -  CStrings:  617
 +  Functions: 870
-+  Symbols:   2384
++  Symbols:   1519
 +  CStrings:  624
- 
 Symbols:
 + +[DMCEnrollmentFlowController(Utilities) _createSignInErrorFromError:]
 + -[DMCEnrollmentFlowController _checkExistingESSOApplicationWithITunesStoreID:debuggingAppIDs:]
@@ -106,15 +77,6 @@ Symbols:
 + ___block_descriptor_56_e8_32s40w_e23_v24?0B8B12"NSError"16lw40l8s32l8
 + ___block_descriptor_74_e8_32s40s48s56w_e5_v8?0ls32l8s40l8s48l8w56l8
 + _audit_stringAppleAccount
-+ _objc_msgSend$_ADxE_ESSO_displayManagementDetailsSteps
-+ _objc_msgSend$_checkExistingESSOApplicationWithITunesStoreID:debuggingAppIDs:
-+ _objc_msgSend$_checkExistingRequiredApplicationWithITunesStoreID:essoITunesStoreID:
-+ _objc_msgSend$_createSignInErrorFromError:
-+ _objc_msgSend$_presentAndHandleRemovalForITunesStoreID:installedBundleID:reason:allowSkip:
-+ _objc_msgSend$aa_isTermsOfServiceUpdateRequired
-+ _objc_msgSend$requestRemovalOfExistingApplicationForReason:iTunesStoreID:allowSkip:completionHandler:
-+ _objc_msgSend$requiredAppID
-+ _objc_msgSend$setRequiredAppID:
 - GCC_except_table149
 - GCC_except_table151
 - GCC_except_table165
@@ -127,8 +89,6 @@ Symbols:
 - GCC_except_table219
 - GCC_except_table251
 - GCC_except_table47
-- _objc_msgSend$_appNameWithBundleID:
-- _objc_msgSend$_createEnterpriseApplicationExistsErrorWithAppName:
 CStrings:
 + "CheckExistingESSOApplication"
 + "CheckExistingRequiredApplication"

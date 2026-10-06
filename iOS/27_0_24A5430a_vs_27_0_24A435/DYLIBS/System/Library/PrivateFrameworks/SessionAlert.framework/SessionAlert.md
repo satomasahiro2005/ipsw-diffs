@@ -2,17 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/SessionAlert.framework/SessionAlert`
 
-```diff
+### Section Size Changes
 
- 312.100.0.0.0
--  __TEXT.__text: 0x21f84
-+  __TEXT.__text: 0x21f7c
-   __TEXT.__const: 0x1d12
-   __TEXT.__constg_swiftt: 0x6a0
-   __TEXT.__swift5_typeref: 0x736
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21f84` | `0x21f7c` | **`-0x8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2a2b356b4 -> sub_2a38e96b4 : 1308 -> 1296
-~ sub_2a2b3cc38 -> sub_2a38f0c2c : 492 -> 488
-~ sub_2a2b3e804 -> sub_2a38f27f4 : 208 -> 212
-~ sub_2a2b4803c -> sub_2a38fc030 : 356 -> 360
+~ sub_2a2a2b6b4 -> sub_2a37db6b4 : 1308 -> 1296
+~ sub_2a2a32c38 -> sub_2a37e2c2c : 492 -> 488
+~ sub_2a2a34804 -> sub_2a37e47f4 : 208 -> 212
+~ sub_2a2a3e03c -> sub_2a37ee030 : 356 -> 360
 ```

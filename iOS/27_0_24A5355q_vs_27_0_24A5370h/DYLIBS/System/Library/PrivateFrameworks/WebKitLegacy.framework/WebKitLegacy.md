@@ -2,97 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/WebKitLegacy.framework/WebKitLegacy`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x165c4c` | `0x166ed0` | **`+0x1284`** |
+| `__TEXT.__cstring` | `0x1c177` | `0x1c6f4` | **`+0x57d`** |
+| `__AUTH_CONST.__cfstring` | `0xf140` | `0xf440` | **`+0x300`** |
+| `__TEXT.__gcc_except_tab` | `0x132ac` | `0x13398` | **`+0xec`** |
+| `__AUTH_CONST.__const` | `0x52b8` | `0x52f8` | **`+0x40`** |
+| `__TEXT.__oslogstring` | `0x141` | `0x155` | **`+0x14`** |
+| `__TEXT.__const` | `0x284` | `0x294` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x9600` | `0x9608` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -625.1.18.10.4
--  __TEXT.__text: 0x165c4c sha256:18805bfb5c9ee8e4176f6cbbddf5b8b4ab959126459470d2cd219b722a6666fd
--  __TEXT.__objc_methlist: 0xf620 sha256:9a2a23ec65b630733d793c5889f83464a6d7a6646ae70b3f72c621706ebdd7e4
--  __TEXT.__const: 0x284 sha256:79b1462870a7a96010c8e21201512e71236e7ba36c1f035f112ed43523189ad5
 +625.1.20.10.3
-+  __TEXT.__text: 0x166ed0 sha256:9bdde1262ee20d93aa6a8b5da0efc9d03a676b2775919a80d75fab538935d9e0
-+  __TEXT.__objc_methlist: 0xf620 sha256:87ce28e122e544bbb2b675ac11fd049ecec1ca9bf59ed75417889c7fdbdb9b68
-+  __TEXT.__const: 0x294 sha256:ec769e72bd6590a970ca5a806b23fa1ed6db12b5e0b4fd7d79bd89945b85199f
-   __TEXT.__getClass_cstr: 0x12 sha256:0a4a1121345594231e205bee93a0f13bb18fb42b277772ad7baf5e0d6adbd714
-   __TEXT.__dlsym_cstr: 0x39 sha256:aede99aa7b345d3f5e767c6ba69c1d706dbff99e346ebff88ec3aea1ed4a97d8
--  __TEXT.__gcc_except_tab: 0x132ac sha256:5574e233b5eaa19ca58c290cc463d405aacd4116b31185889315da2ae9fc848a
--  __TEXT.__cstring: 0x1c177 sha256:26954daa7b325358aaaca765eac52e8cd812eb669ba08d91a1fda56d830d928a
--  __TEXT.__oslogstring: 0x141 sha256:50ba77c9317d77fc93f86a4017734320e988c9cbe1ac1fe5ed9df8c35cef1e80
--  __TEXT.__unwind_info: 0x9600 sha256:99d8d96daa2f99e11a558f4e43063e7c5e203e4623fb559ee73730be8a48e9ae
--  __TEXT.__eh_frame: 0x80 sha256:ed6b091f37eb12fec66dba5b84d80e0ee8770f5ef73f520b5e316771b8aafe85
-+  __TEXT.__gcc_except_tab: 0x13398 sha256:2a2bc93d71923e6b100e0b07b0db5597541085bc8fc51b36062ab32fb7953904
-+  __TEXT.__cstring: 0x1c6f4 sha256:14caf4c75c12363c5928503cdfaa2b27921deacd2b0525c933d321b381763f03
-+  __TEXT.__oslogstring: 0x155 sha256:08991283f76aed83387ce0e90d007ce61c1c01992a590c2336cbbd7330323385
-+  __TEXT.__unwind_info: 0x9608 sha256:87a1af91193ea2852a058a6d5921fa18b47e0ef7ee608eaccaf629a2af749630
-+  __TEXT.__eh_frame: 0x80 sha256:f32efae4d04eb12b51af6dd357a0bbb588a465688bf449b600f7de74da368870
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7f8 sha256:5370cbcac8ab3b68bdef532edade7122764fb9cba6ff38ff26cf8552b147cac1
--  __DATA_CONST.__objc_classlist: 0x6c8 sha256:9f1345ebab9a2fa4f35e75d7d959eaf59f9ea8936c495f009bc38922273c6a56
--  __DATA_CONST.__objc_catlist: 0x70 sha256:932855abe37c7f5af96551643bca8d7bc616513d8382431503e4a873965872ed
--  __DATA_CONST.__objc_protolist: 0x138 sha256:0442c90cde62e1ca1183d7a10490a6fdc20e954c5c235daeef3b1d2e3bd3eb68
-+  __DATA_CONST.__const: 0x7f8 sha256:5cca7d05b1065b6adadd352ab8f8c2f87d4041eadf7d51cd3d711aad8f3789d3
-+  __DATA_CONST.__objc_classlist: 0x6c8 sha256:d92578bc430209567fda7b5ac709455f09f35fe521a6d64025609303221e28df
-+  __DATA_CONST.__objc_catlist: 0x70 sha256:1a7a54b4e92fb10ad6c251fb25dbadd5cf3878093ecdffd75633f36e2bb131c5
-+  __DATA_CONST.__objc_protolist: 0x138 sha256:9ee7b9e0b07692d962214799d66c8127cda7ac57f8c48dd7637b619f299311f7
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__objc_selrefs: 0x7ee8 sha256:eda272be748e344a4c51e7b081f3878a5920dd15b826aeb7a99ea41ea65a835f
--  __DATA_CONST.__objc_protorefs: 0x48 sha256:0f8cb224db40fbe08d10efc2b5ef3481ae7bd9c8d58346fb11a6095a5bd7ad61
--  __DATA_CONST.__objc_superrefs: 0x358 sha256:aed85dc4b37f1d46a15ddf2b400964015f43a6b5e4ace33606b636311188351f
--  __DATA_CONST.__objc_arraydata: 0x30 sha256:7d6a30be45e55197391f3c86224e9041ce7ad142086482960c33626cd8cdb797
--  __DATA_CONST.__got: 0x1010 sha256:eb409a1b559507345c2c302588232fa9f5b2ac1fa97734f0b860a83210442b93
--  __AUTH_CONST.__const: 0x52b8 sha256:1ffd5bfba6b8422ecfdc6a6842d2ad6559da057d26b227d22a53d21a9e3321e5
--  __AUTH_CONST.__cfstring: 0xf140 sha256:3b661b7c4bd5766ada45b036f07d4ef603d9463571f2de667000dd6789fcf7ab
--  __AUTH_CONST.__objc_const: 0xfe80 sha256:4e5465602a07786f5f2c6f807ead30beb3935b316bdda7050c616838b979a61c
--  __AUTH_CONST.__weak_auth_got: 0x10 sha256:33a79679efb69e90269fe6dc2dc9b793280fd830eba1f9e6fe9f83b921b11a18
--  __AUTH_CONST.__objc_intobj: 0x2d0 sha256:1e111a7652b6502f92b60175dcdef24bbc22c0533db106d0b15db47724011985
--  __AUTH_CONST.__objc_dictobj: 0x28 sha256:fea129a4164bd05bb273384a8c2affd765fe255f168a8254afe3db9f5f45f584
--  __AUTH_CONST.__objc_arrayobj: 0x18 sha256:32f205e8aca8fa805a250b7e12f78859e22988f054af48dc2c4cffb7e53b1e72
-+  __DATA_CONST.__objc_selrefs: 0x7ee8 sha256:214f35b2179581062a941008b5f36f24d5e9ed05f37b8cc5420760599535c7e9
-+  __DATA_CONST.__objc_protorefs: 0x48 sha256:1597f02107fca3df4c49465234541b18ae89b656fe3fb3a849cf2f7bf733e741
-+  __DATA_CONST.__objc_superrefs: 0x358 sha256:42049f70684a1c7dc3d2f75042c9af58f4791a2427c60cc82c9d5102e75beab4
-+  __DATA_CONST.__objc_arraydata: 0x30 sha256:00726c8c223b6612d0d4b41d51e5273a9dc097533c089f5482672359b75e3dde
-+  __DATA_CONST.__got: 0x1010 sha256:851431d7c8bd21f5309649eebf531be173926cf2ef7c2877faee1cb8ad6f4649
-+  __AUTH_CONST.__const: 0x52f8 sha256:969b7774c3467a228d32696995d8fb9135efc05528f12b50b2deca1c1a70c305
-+  __AUTH_CONST.__cfstring: 0xf440 sha256:b216db51c28eaecfa97f231605b765a6364faaea46916b89eb94faa24badfda1
-+  __AUTH_CONST.__objc_const: 0xfe80 sha256:60abeeac0aa33f7250ad400b50cb2995e5a4849e311a93540af88cdd736cc4f6
-+  __AUTH_CONST.__weak_auth_got: 0x10 sha256:611ff31069095036d9438de548c30ee90e13cc383261d10014d9001986889e1d
-+  __AUTH_CONST.__objc_intobj: 0x2d0 sha256:342b27d0a0696cf7a597247131a927c608551c92d996fc1bd98a05bdf9c4b8a1
-+  __AUTH_CONST.__objc_dictobj: 0x28 sha256:f0470f502b32648dcd063e8433763cf7c48f75d7e6fcf9b97f5277fcc2b2e5aa
-+  __AUTH_CONST.__objc_arrayobj: 0x18 sha256:a89d2effb715b0e624b0a947f4bd79e715f933a48abd457237b2e23b1595c43c
-   __AUTH_CONST.__auth_got: 0x46d8 sha256:58e56facc4c237b3702eb6325e546e5b180aa805a87fa49ccfe963fb8956369e
--  __AUTH.__objc_data: 0x3980 sha256:ce793758a796793acc213ba18a0b7c11cc669aeeaff135a075c4eb851bab52ff
--  __AUTH.__data: 0xe8 sha256:12c869d6bf3f486709a93bfa123875b373ddcf8e4edf5fcc1107b03307417558
-+  __AUTH.__objc_data: 0x3980 sha256:f8d51ac44c6f1a95c442ff4142d9d0ac5bc90aaa05f023904dc573b36f63d055
-+  __AUTH.__data: 0xe8 sha256:f3cbef003860d3a39c7a0e49bf11de16e83e651f21daa10fe359e0aac162ceb8
-   __DATA.__objc_ivar: 0x4a0 sha256:78d1e9a78f816e2c6e8b57fd62e76f314dbf3661a26201dfbd6c546943786524
--  __DATA.__data: 0x14b4 sha256:bbf4cbf544fb35c7fbb468c6175a1698e9f01525efc404874cb2df2e3ed21f33
-+  __DATA.__data: 0x14b4 sha256:f3a802a50f3d66cc683b3ab66f564f78a78af612fe2d80a2158c38331db402d9
-   __DATA.__common: 0x460 sha256:5cc201eb697e57027dcf74bac0995467bc9b787848be4c0d740956a97ddf65a5
-   __DATA.__bss: 0x150 sha256:52a3e0804d93dc525ec3c67ef8ac5b01756ecf0513e36f3c19435e4c82cb5d29
-   __DATA_DIRTY.__objc_ivar: 0x4c sha256:93f1632f0ae94b8d5004e3fb2a9e4742ad226aa8939c6d734bd6a965c33e36f0
--  __DATA_DIRTY.__objc_data: 0xa50 sha256:57cc0fc9828544dae95ac4eefad70fcbbe2852b3b45e171594017a140470a8c2
--  __DATA_DIRTY.__data: 0x10 sha256:3d20049916b77f176342539ac5a169799c9046d804e8d421671ed752216ffbee
-+  __DATA_DIRTY.__objc_data: 0xa50 sha256:a74d5810e7950d62bf103ba46a66ae9b592a7e3213702b205dd9baf84e16ce4d
-+  __DATA_DIRTY.__data: 0x10 sha256:5b47579e58339ed526e2f99012a4a11e625d7feb3d1563dda9884e493d99a879
-   __DATA_DIRTY.__bss: 0x330 sha256:0645a4a67dcec462dc9f335bb0564e6e39bf12ea7e40cf8de81418210102c2d1
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
--  UUID: 9205B295-93F4-30DF-B70F-AEC6BFCA37E0
 -  Functions: 7309
--  Symbols:   23848
--  CStrings:  4199
-+  UUID: 6496DD16-A242-389A-8E2C-A248772A229D
+-  Symbols:   13084
+-  CStrings:  2270
 +  Functions: 7313
-+  Symbols:   23831
-+  CStrings:  4248
- 
++  Symbols:   13071
++  CStrings:  2294
 Symbols:
 + GCC_except_table206
 + GCC_except_table210
@@ -358,19 +293,6 @@ Symbols:
 - __ZNSt3__117__call_once_proxyB9sqn220100INS_5tupleIJOZ31WebInstallMemoryPressureHandlerE3$_0EEEEEvPv
 - __ZNSt3__127__optional_move_assign_baseIN3WTF17TextBreakIteratorELb0EEaSB9sqn220100EOS3_
 CStrings:
-+ "/AppleInternal/Library/BuildRoots/4~CSIwugAAIEY1UejQ3I5uThZcwSq3KBjw1eP_vnI/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/System/Library/PrivateFrameworks/WebCore.framework/PrivateHeaders/StyleScrollbarWidth.h"
-+ "/AppleInternal/Library/BuildRoots/4~CSIwugAAIEY1UejQ3I5uThZcwSq3KBjw1eP_vnI/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/wtf/Box.h"
-+ "/AppleInternal/Library/BuildRoots/4~CSIwugAAIEY1UejQ3I5uThZcwSq3KBjw1eP_vnI/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/wtf/CheckedPtr.h"
-+ "/AppleInternal/Library/BuildRoots/4~CSIwugAAIEY1UejQ3I5uThZcwSq3KBjw1eP_vnI/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/wtf/CheckedRef.h"
-+ "/AppleInternal/Library/BuildRoots/4~CSIwugAAIEY1UejQ3I5uThZcwSq3KBjw1eP_vnI/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/wtf/Deque.h"
-+ "/AppleInternal/Library/BuildRoots/4~CSIwugAAIEY1UejQ3I5uThZcwSq3KBjw1eP_vnI/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/wtf/HashTable.h"
-+ "/AppleInternal/Library/BuildRoots/4~CSIwugAAIEY1UejQ3I5uThZcwSq3KBjw1eP_vnI/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/wtf/RefCounted.h"
-+ "/AppleInternal/Library/BuildRoots/4~CSIwugAAIEY1UejQ3I5uThZcwSq3KBjw1eP_vnI/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/wtf/StdLibExtras.h"
-+ "/AppleInternal/Library/BuildRoots/4~CSIwugAAIEY1UejQ3I5uThZcwSq3KBjw1eP_vnI/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/wtf/TypeCasts.h"
-+ "/AppleInternal/Library/BuildRoots/4~CSIwugAAIEY1UejQ3I5uThZcwSq3KBjw1eP_vnI/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/wtf/WeakPtr.h"
-+ "/AppleInternal/Library/BuildRoots/4~CSIwugAAIEY1UejQ3I5uThZcwSq3KBjw1eP_vnI/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/wtf/WeakRef.h"
-+ "/AppleInternal/Library/BuildRoots/4~CSIwugAAIEY1UejQ3I5uThZcwSq3KBjw1eP_vnI/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/wtf/cf/TypeCastsCF.h"
-+ "/AppleInternal/Library/BuildRoots/4~CSIwugAAIEY1UejQ3I5uThZcwSq3KBjw1eP_vnI/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/wtf/text/StringCommon.h"
 + "::Class initCLLocationManager()"
 + "CSS Scroll State Container Queries"
 + "CSSScrollStateContainerQueriesEnabled"
@@ -397,20 +319,6 @@ CStrings:
 + "WebKitStorageAccessAPIPerPageScopeEnabled"
 + "When enabled, storage access granted to one frame is shared with all same-origin frames on the page"
 + "void *CoreLocationLibrary(bool)_block_invoke"
-- "/AppleInternal/Library/BuildRoots/4~CQqnugDkhT4_7UiswGAKhFKqFGtteqJ44kE5yko/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/System/Library/PrivateFrameworks/WebCore.framework/PrivateHeaders/StyleScrollbarWidth.h"
-- "/AppleInternal/Library/BuildRoots/4~CQqnugDkhT4_7UiswGAKhFKqFGtteqJ44kE5yko/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/wtf/Box.h"
-- "/AppleInternal/Library/BuildRoots/4~CQqnugDkhT4_7UiswGAKhFKqFGtteqJ44kE5yko/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/wtf/CheckedPtr.h"
-- "/AppleInternal/Library/BuildRoots/4~CQqnugDkhT4_7UiswGAKhFKqFGtteqJ44kE5yko/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/wtf/CheckedRef.h"
-- "/AppleInternal/Library/BuildRoots/4~CQqnugDkhT4_7UiswGAKhFKqFGtteqJ44kE5yko/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/wtf/Deque.h"
-- "/AppleInternal/Library/BuildRoots/4~CQqnugDkhT4_7UiswGAKhFKqFGtteqJ44kE5yko/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/wtf/HashTable.h"
-- "/AppleInternal/Library/BuildRoots/4~CQqnugDkhT4_7UiswGAKhFKqFGtteqJ44kE5yko/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/wtf/RefCounted.h"
-- "/AppleInternal/Library/BuildRoots/4~CQqnugDkhT4_7UiswGAKhFKqFGtteqJ44kE5yko/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/wtf/StdLibExtras.h"
-- "/AppleInternal/Library/BuildRoots/4~CQqnugDkhT4_7UiswGAKhFKqFGtteqJ44kE5yko/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/wtf/TypeCasts.h"
-- "/AppleInternal/Library/BuildRoots/4~CQqnugDkhT4_7UiswGAKhFKqFGtteqJ44kE5yko/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/wtf/WeakPtr.h"
-- "/AppleInternal/Library/BuildRoots/4~CQqnugDkhT4_7UiswGAKhFKqFGtteqJ44kE5yko/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/wtf/WeakRef.h"
-- "/AppleInternal/Library/BuildRoots/4~CQqnugDkhT4_7UiswGAKhFKqFGtteqJ44kE5yko/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/wtf/cf/TypeCastsCF.h"
-- "/AppleInternal/Library/BuildRoots/4~CQqnugDkhT4_7UiswGAKhFKqFGtteqJ44kE5yko/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/wtf/text/StringCommon.h"
 - "Class initCLLocationManager()"
 - "void *CoreLocationLibrary()_block_invoke"
-
 ```

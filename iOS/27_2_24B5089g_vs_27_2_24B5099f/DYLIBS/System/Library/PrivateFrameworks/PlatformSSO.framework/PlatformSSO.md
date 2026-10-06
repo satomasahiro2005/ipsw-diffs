@@ -2,70 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/PlatformSSO.framework/PlatformSSO`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5d028` | `0x5dd74` | **`+0xd4c`** |
+| `__TEXT.__oslogstring` | `0x2a41` | `0x2c81` | **`+0x240`** |
+| `__AUTH_CONST.__objc_const` | `0x8828` | `0x8948` | **`+0x120`** |
+| `__TEXT.__objc_methlist` | `0x36bc` | `0x37cc` | **`+0x110`** |
+| `__TEXT.__gcc_except_tab` | `0x1464` | `0x1554` | **`+0xf0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2460` | `0x2538` | **`+0xd8`** |
+| `__TEXT.__cstring` | `0x8376` | `0x83e6` | **`+0x70`** |
+| `__TEXT.__unwind_info` | `0x15e8` | `0x1640` | **`+0x58`** |
+| `__AUTH_CONST.__cfstring` | `0x3aa0` | `0x3ae0` | **`+0x40`** |
+| `__DATA.__objc_ivar` | `0x3a4` | `0x3bc` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x458` | `0x468` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -643.40.27.0.0
--  __TEXT.__text: 0x5aeac
--  __TEXT.__objc_methlist: 0x36bc
 +643.40.34.0.0
-+  __TEXT.__text: 0x5bbbc
-+  __TEXT.__objc_methlist: 0x37cc
-   __TEXT.__const: 0x322
--  __TEXT.__cstring: 0x8376
--  __TEXT.__oslogstring: 0x2a41
--  __TEXT.__gcc_except_tab: 0x1464
-+  __TEXT.__cstring: 0x83e6
-+  __TEXT.__oslogstring: 0x2c81
-+  __TEXT.__gcc_except_tab: 0x1554
-   __TEXT.__dlopen_cstrs: 0x162
-   __TEXT.__swift5_typeref: 0xd9
-   __TEXT.__swift5_capture: 0x14c
 
-   __TEXT.__swift_as_entry: 0x30
-   __TEXT.__swift_as_ret: 0x54
-   __TEXT.__swift_as_cont: 0x58
--  __TEXT.__unwind_info: 0x1e60
-+  __TEXT.__unwind_info: 0x1ec0
-   __TEXT.__eh_frame: 0x628
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2460
-+  __DATA_CONST.__objc_selrefs: 0x2538
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__objc_superrefs: 0xd0
-   __DATA_CONST.__objc_arraydata: 0x10
--  __DATA_CONST.__got: 0x458
-+  __DATA_CONST.__got: 0x468
-   __AUTH_CONST.__const: 0xc80
--  __AUTH_CONST.__cfstring: 0x3aa0
--  __AUTH_CONST.__objc_const: 0x8828
-+  __AUTH_CONST.__cfstring: 0x3ae0
-+  __AUTH_CONST.__objc_const: 0x8948
-   __AUTH_CONST.__objc_intobj: 0xc0
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__auth_got: 0x760
-   __AUTH.__objc_data: 0xa50
--  __DATA.__objc_ivar: 0x3a4
-+  __DATA.__objc_ivar: 0x3bc
-   __DATA.__data: 0x600
-   __DATA_DIRTY.__objc_data: 0x50
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2179
 -  Symbols:   2703
 -  CStrings:  1058
 +  Functions: 2206
 +  Symbols:   2741
 +  CStrings:  1067
- 
 Symbols:
 + -[POAgentAuthenticationProcess handleUserNeedsReauthenticationAfterDelay:error:]
 + -[POAgentAuthenticationProcess requestUserRegistrationRepairIfNeeded]

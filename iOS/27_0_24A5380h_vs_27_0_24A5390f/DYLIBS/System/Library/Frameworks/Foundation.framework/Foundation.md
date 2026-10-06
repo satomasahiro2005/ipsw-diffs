@@ -2,134 +2,45 @@
 
 > `/System/Library/Frameworks/Foundation.framework/Foundation`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_reflstr`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__dof_NSProcess`
-- `__TEXT.__dof_NSXPCProx`
-- `__TEXT.__dof_NSXPCList`
-- `__TEXT.__dof_NSXPCConn`
-- `__TEXT.__dof_NSXPCLis0`
-- `__TEXT.__dof_NSProgres`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_nlclslist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_nlcatlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_dictobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x33ddf3` | `0x407dc3` | **`+0xc9fd0`** |
+| `__DATA_CONST.__const` | `0xa870` | `0xb6f8` | **`+0xe88`** |
+| `__DATA_DIRTY.__bss` | `0x8158` | `0x8870` | **`+0x718`** |
+| `__DATA.__bss` | `0x68fb8` | `0x688a8` | **`-0x710`** |
+| `__DATA_DIRTY.__data` | `0x4d08` | `0x5158` | **`+0x450`** |
+| `__AUTH.__objc_data` | `0x7b70` | `0x78b8` | **`-0x2b8`** |
+| `__DATA.__data` | `0xd46c` | `0xd1b4` | **`-0x2b8`** |
+| `__DATA_DIRTY.__objc_data` | `0x5fa0` | `0x6258` | **`+0x2b8`** |
+| `__TEXT.__cstring` | `0x33b2e` | `0x33d92` | **`+0x264`** |
+| `__AUTH.__data` | `0x6b68` | `0x69f0` | **`-0x178`** |
+| `__TEXT.__text` | `0xc0a0a0` | `0xc0a210` | **`+0x170`** |
+| `__DATA_DIRTY.__common` | `0x268` | `0x328` | **`+0xc0`** |
+| `__DATA.__common` | `0x8a89` | `0x89d1` | **`-0xb8`** |
+| `__AUTH_CONST.__cfstring` | `0x25e80` | `0x25f20` | **`+0xa0`** |
+| `__TEXT.__eh_frame` | `0x22520` | `0x22484` | **`-0x9c`** |
+| `__TEXT.__unwind_info` | `0x1de10` | `0x1ddd0` | **`-0x40`** |
+| `__AUTH_CONST.__const` | `0x377a0` | `0x377c0` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x6010` | `0x601c` | **`+0xc`** |
+| `__DATA_CONST.__got` | `0x2a30` | `0x2a38` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xc940` | `0xc948` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x2468c` | `0x24694` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -5027.0.59.0.0
--  __TEXT.__text: 0xc0a0a0
 +5027.0.63.2.0
-+  __TEXT.__text: 0xc0a210
-   __TEXT.__delay_stubs: 0x800
-   __TEXT.__delay_helper: 0x184
--  __TEXT.__objc_methlist: 0x2468c
--  __TEXT.__const: 0x33ddf3
--  __TEXT.__cstring: 0x33b2e
-+  __TEXT.__objc_methlist: 0x24694
-+  __TEXT.__const: 0x407dc3
-+  __TEXT.__cstring: 0x33d92
-   __TEXT.__dlopen_cstrs: 0x5d
-   __TEXT.__swift5_typeref: 0xdd69
-   __TEXT.__constg_swiftt: 0xec18
 
-   __TEXT.__swift_as_entry: 0x104
-   __TEXT.__swift_as_ret: 0x170
-   __TEXT.__swift_as_cont: 0x26c
--  __TEXT.__gcc_except_tab: 0x6010
-+  __TEXT.__gcc_except_tab: 0x601c
-   __TEXT.__ustring: 0x53a
-   __TEXT.__dof_NSProcess: 0x34f
-   __TEXT.__dof_NSXPCProx: 0x7a3
-
-   __TEXT.__dof_NSXPCConn: 0x26cc
-   __TEXT.__dof_NSXPCLis0: 0x865
-   __TEXT.__dof_NSProgres: 0x115b
--  __TEXT.__unwind_info: 0x1de10
--  __TEXT.__eh_frame: 0x22520
-+  __TEXT.__unwind_info: 0x1ddd0
-+  __TEXT.__eh_frame: 0x22484
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xa870
-+  __DATA_CONST.__const: 0xb6f8
-   __DATA_CONST.__objc_classlist: 0x1718
-   __DATA_CONST.__objc_nlclslist: 0x30
-   __DATA_CONST.__objc_catlist: 0x1a8
-   __DATA_CONST.__objc_nlcatlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x208
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xc940
-+  __DATA_CONST.__objc_selrefs: 0xc948
-   __DATA_CONST.__objc_protorefs: 0x128
-   __DATA_CONST.__objc_superrefs: 0xf78
-   __DATA_CONST.__objc_arraydata: 0xe098
--  __DATA_CONST.__got: 0x2a30
--  __AUTH_CONST.__const: 0x377a0
--  __AUTH_CONST.__cfstring: 0x25e80
-+  __DATA_CONST.__got: 0x2a38
-+  __AUTH_CONST.__const: 0x377c0
-+  __AUTH_CONST.__cfstring: 0x25f20
-   __AUTH_CONST.__objc_const: 0x34588
-   __AUTH_CONST.__objc_intobj: 0x1260
-   __AUTH_CONST.__objc_arrayobj: 0x2238
-   __AUTH_CONST.__objc_dictobj: 0x20a8
-   __AUTH_CONST.__auth_got: 0x5420
--  __AUTH.__objc_data: 0x7b70
--  __AUTH.__data: 0x6b68
-+  __AUTH.__objc_data: 0x78b8
-+  __AUTH.__data: 0x69f0
-   __DATA.__objc_ivar: 0x1498
--  __DATA.__data: 0xd46c
-+  __DATA.__data: 0xd1b4
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x68fb8
--  __DATA.__common: 0x8a89
-+  __DATA.__bss: 0x688a8
-+  __DATA.__common: 0x89d1
-   __DATA_DIRTY.__objc_ivar: 0x574
--  __DATA_DIRTY.__objc_data: 0x5fa0
--  __DATA_DIRTY.__data: 0x4d08
--  __DATA_DIRTY.__bss: 0x8158
--  __DATA_DIRTY.__common: 0x268
-+  __DATA_DIRTY.__objc_data: 0x6258
-+  __DATA_DIRTY.__data: 0x5158
-+  __DATA_DIRTY.__bss: 0x8870
-+  __DATA_DIRTY.__common: 0x328
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 43693
--  Symbols:   96106
+-  Symbols:   91747
 -  CStrings:  7817
 +  Functions: 43692
-+  Symbols:   96108
++  Symbols:   91748
 +  CStrings:  7827
- 
 Symbols:
 + -[NSCoder _validateDictionary:forKey:matchesKeyClasses:valueClasses:strictModeEnabled:alwaysEnforceExplicitSubclasses:]
 + -[NSCoder(Exceptions) __decoderEnforceCollectionType]
@@ -152,7 +63,6 @@ Symbols:
 + ___CFUniCharBitmapDataArray
 + ___SCR_NSKeyValueNestedProperty
 + ___block_descriptor_64_e8_32r40r_e12_v24?0Q8^B16lr32l8r40l8
-+ _objc_msgSend$__decoderEnforceCollectionType
 - GCC_except_table98
 - _$s10Foundation11JSONEncoderC19KeyEncodingStrategyO19_convertToSnakeCase33_12768CA107A31EF2DCE034FD75B541C9LLyS2SFZTf4nd_n
 - _$s10Foundation12CharacterSetV6update4withs7UnicodeO6ScalarVSgAI_tFTm

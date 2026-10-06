@@ -2,44 +2,28 @@
 
 > `/System/Library/PrivateFrameworks/PeridotDepth.framework/PeridotDepth`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__data` | `0x24e50` | `0x374d0` | **`+0x12680`** |
+| `__TEXT.__text` | `0x143440` | `0x143c6c` | **`+0x82c`** |
+| `__DATA.__bss` | `0x28a9b8` | `0x28ab38` | **`+0x180`** |
+| `__TEXT.__const` | `0x18b50` | `0x18b80` | **`+0x30`** |
+| `__TEXT.__gcc_except_tab` | `0x7d14` | `0x7d28` | **`+0x14`** |
+| `__TEXT.__unwind_info` | `0x1b70` | `0x1b78` | **`+0x8`** |
+| `__TEXT.__cstring` | `0x6f37` | `0x6f3b` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
- 52.0.1.0.0
--  __TEXT.__text: 0x143440
-+  __TEXT.__text: 0x143c6c
-   __TEXT.__objc_methlist: 0x134c
--  __TEXT.__const: 0x18b50
--  __TEXT.__cstring: 0x6f37
--  __TEXT.__gcc_except_tab: 0x7d14
-+  __TEXT.__const: 0x18b80
-+  __TEXT.__cstring: 0x6f3b
-+  __TEXT.__gcc_except_tab: 0x7d28
-   __TEXT.__oslogstring: 0x29e4
--  __TEXT.__unwind_info: 0x1b70
-+  __TEXT.__unwind_info: 0x1b78
-   __TEXT.__eh_frame: 0x48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__auth_got: 0xc10
-   __DATA.__objc_ivar: 0x29c
--  __DATA.__data: 0x24e50
-+  __DATA.__data: 0x374d0
-   __DATA.__common: 0x10
-   __DATA_DIRTY.__objc_data: 0x7d0
-   __DATA_DIRTY.__bss: 0x2a0
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1508
--  Symbols:   3256
+-  Symbols:   2956
 -  CStrings:  1155
 +  Functions: 1509
-+  Symbols:   3266
++  Symbols:   2966
 +  CStrings:  1156
- 
 Symbols:
 + GCC_except_table1000
 + GCC_except_table1002

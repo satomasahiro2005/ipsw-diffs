@@ -2,20 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/MobileDeviceLink.framework/MobileDeviceLink`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xccf0` | `0xcce8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xccf0
-+  __TEXT.__text: 0xcce8
-   __TEXT.__cstring: 0x4a02
-   __TEXT.__const: 0x50
-   __TEXT.__oslogstring: 0x108
-Sections:
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH.__data : content changed
+-305.0.0.0.0
++306.0.0.0.0
 Functions:
 ~ __DLLog : 456 -> 448
-
 ```

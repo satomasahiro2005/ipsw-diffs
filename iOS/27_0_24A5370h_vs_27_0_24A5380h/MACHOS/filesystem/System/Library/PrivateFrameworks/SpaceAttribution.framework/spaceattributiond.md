@@ -2,83 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/SpaceAttribution.framework/spaceattributiond`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x422d0` | `0x3f8fc` | **`-0x29d4`** |
+| `__TEXT.__objc_methname` | `0x8ea5` | `0x8a2a` | **`-0x47b`** |
+| `__DATA_CONST.__cfstring` | `0x30e0` | `0x2d80` | **`-0x360`** |
+| `__TEXT.__cstring` | `0x384e` | `0x359d` | **`-0x2b1`** |
+| `__TEXT.__objc_stubs` | `0x7880` | `0x7660` | **`-0x220`** |
+| `__DATA.__objc_const` | `0x4740` | `0x45b0` | **`-0x190`** |
+| `__TEXT.__objc_methlist` | `0x30b8` | `0x2f50` | **`-0x168`** |
+| `__TEXT.__gcc_except_tab` | `0x1948` | `0x1800` | **`-0x148`** |
+| `__DATA_CONST.__const` | `0x1880` | `0x1790` | **`-0xf0`** |
+| `__TEXT.__oslogstring` | `0x58aa` | `0x57cf` | **`-0xdb`** |
+| `__DATA.__objc_selrefs` | `0x23d8` | `0x2320` | **`-0xb8`** |
+| `__TEXT.__unwind_info` | `0xee8` | `0xe50` | **`-0x98`** |
+| `__TEXT.__objc_methtype` | `0x1227` | `0x1192` | **`-0x95`** |
+| `__DATA_CONST.__got` | `0x248` | `0x2b0` | **`+0x68`** |
+| `__DATA.__objc_data` | `0xdc0` | `0xd70` | **`-0x50`** |
+| `__TEXT.__auth_stubs` | `0xa00` | `0x9e0` | **`-0x20`** |
+| `__DATA_CONST.__objc_intobj` | `0x5a0` | `0x588` | **`-0x18`** |
+| `__TEXT.__objc_classname` | `0x30a` | `0x2f4` | **`-0x16`** |
+| `__DATA.__objc_ivar` | `0x384` | `0x370` | **`-0x14`** |
+| `__DATA_CONST.__auth_got` | `0x510` | `0x500` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x160` | `0x158` | **`-0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0xc8` | `0xc0` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x422d0
--  __TEXT.__auth_stubs: 0xa00
--  __TEXT.__objc_stubs: 0x7880
--  __TEXT.__objc_methlist: 0x30b8
-+  __TEXT.__text: 0x3f8fc
-+  __TEXT.__auth_stubs: 0x9e0
-+  __TEXT.__objc_stubs: 0x7660
-+  __TEXT.__objc_methlist: 0x2f50
-   __TEXT.__const: 0x228
--  __TEXT.__gcc_except_tab: 0x1948
--  __TEXT.__cstring: 0x384e
--  __TEXT.__oslogstring: 0x58aa
--  __TEXT.__objc_classname: 0x30a
--  __TEXT.__objc_methname: 0x8ea5
--  __TEXT.__objc_methtype: 0x1227
--  __TEXT.__unwind_info: 0xee8
--  __DATA_CONST.__const: 0x1880
--  __DATA_CONST.__cfstring: 0x30e0
--  __DATA_CONST.__objc_classlist: 0x160
-+  __TEXT.__gcc_except_tab: 0x1800
-+  __TEXT.__cstring: 0x359d
-+  __TEXT.__oslogstring: 0x57cf
-+  __TEXT.__objc_classname: 0x2f4
-+  __TEXT.__objc_methname: 0x8a2a
-+  __TEXT.__objc_methtype: 0x1192
-+  __TEXT.__unwind_info: 0xe50
-+  __DATA_CONST.__const: 0x1790
-+  __DATA_CONST.__cfstring: 0x2d80
-+  __DATA_CONST.__objc_classlist: 0x158
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0xc8
--  __DATA_CONST.__objc_intobj: 0x5a0
-+  __DATA_CONST.__objc_superrefs: 0xc0
-+  __DATA_CONST.__objc_intobj: 0x588
-   __DATA_CONST.__objc_arraydata: 0x168
-   __DATA_CONST.__objc_dictobj: 0x50
-   __DATA_CONST.__objc_arrayobj: 0xa8
--  __DATA_CONST.__auth_got: 0x510
--  __DATA_CONST.__got: 0x248
-+  __DATA_CONST.__auth_got: 0x500
-+  __DATA_CONST.__got: 0x2b0
-   __DATA_CONST.__auth_ptr: 0x8
--  __DATA.__objc_const: 0x4740
--  __DATA.__objc_selrefs: 0x23d8
--  __DATA.__objc_ivar: 0x384
--  __DATA.__objc_data: 0xdc0
-+  __DATA.__objc_const: 0x45b0
-+  __DATA.__objc_selrefs: 0x2320
-+  __DATA.__objc_ivar: 0x370
-+  __DATA.__objc_data: 0xd70
-   __DATA.__data: 0x250
-   __DATA.__bss: 0x210
-   - /AppleInternal/Library/Frameworks/TapToRadarKit.framework/TapToRadarKit
+-490.0.0.0.0
++491.0.0.0.0
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1511
 -  Symbols:   246
--  CStrings:  3266
+-  CStrings:  2847
 +  Functions: 1468
 +  Symbols:   244
-+  CStrings:  3163
- 
-Sections:
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__data : content changed
-~ __DATA.__bss : content changed
++  CStrings:  2774
 Symbols:
 - _objc_retain_x27
 - _traverse_directory
@@ -156,5 +129,4 @@ CStrings:
 - "v56@0:8@16@24@32@40@48"
 - "v64@0:8@16@24Q32Q40@48@56"
 - "v72@0:8@16q24Q32Q40Q48Q56Q64"
-
 ```

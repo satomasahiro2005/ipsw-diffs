@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/NetworkScore.framework/NetworkScore`
 
-```diff
+### Section Size Changes
 
- 59.0.0.0.0
--  __TEXT.__text: 0x245a0
-+  __TEXT.__text: 0x245b0
-   __TEXT.__objc_methlist: 0x8ac
-   __TEXT.__const: 0xfca
-   __TEXT.__gcc_except_tab: 0x1a54
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x245a0` | `0x245b0` | **`+0x10`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__16vectorINS_9sub_matchIPKcEENS_9allocatorIS4_EEE6assignEmRKS4_ : 340 -> 336
 ~ __ZNSt3__16vectorINS_4pairImPKcEENS_9allocatorIS4_EEE6resizeEm : 284 -> 288

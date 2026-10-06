@@ -2,87 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/PhotosEditing.framework/PhotosEditing`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa8668` | `0xaecb4` | **`+0x664c`** |
+| `__DATA.__bss` | `0xb450` | `0xc8d0` | **`+0x1480`** |
+| `__TEXT.__const` | `0x93d4` | `0x9e14` | **`+0xa40`** |
+| `__DATA.__data` | `0x2ac8` | `0x2fb0` | **`+0x4e8`** |
+| `__TEXT.__swift5_typeref` | `0x62f8` | `0x6698` | **`+0x3a0`** |
+| `__AUTH.__data` | `0x3128` | `0x3480` | **`+0x358`** |
+| `__TEXT.__swift5_assocty` | `0x1050` | `0x1328` | **`+0x2d8`** |
+| `__TEXT.__eh_frame` | `0x2500` | `0x2710` | **`+0x210`** |
+| `__TEXT.__cstring` | `0x16f6` | `0x18e6` | **`+0x1f0`** |
+| `__TEXT.__unwind_info` | `0x3158` | `0x3338` | **`+0x1e0`** |
+| `__TEXT.__swift5_fieldmd` | `0x30fc` | `0x32a0` | **`+0x1a4`** |
+| `__AUTH_CONST.__objc_const` | `0x28d8` | `0x2a50` | **`+0x178`** |
+| `__TEXT.__swift5_reflstr` | `0x26a1` | `0x280d` | **`+0x16c`** |
+| `__TEXT.__constg_swiftt` | `0x3ad4` | `0x3bc4` | **`+0xf0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x940` | `0xa28` | **`+0xe8`** |
+| `__AUTH_CONST.__auth_got` | `0x15d8` | `0x16b0` | **`+0xd8`** |
+| `__TEXT.__swift5_proto` | `0x5e8` | `0x68c` | **`+0xa4`** |
+| `__TEXT.__objc_methlist` | `0xbb4` | `0xc54` | **`+0xa0`** |
+| `__DATA_CONST.__objc_protolist` | `0x80` | `0xd0` | **`+0x50`** |
+| `__DATA_CONST.__objc_protorefs` | `0x40` | `0x68` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x400` | `0x3e0` | **`-0x20`** |
+| `__AUTH_CONST.__const` | `0x5880` | `0x5868` | **`-0x18`** |
+| `__TEXT.__swift5_types` | `0x338` | `0x350` | **`+0x18`** |
+| `__TEXT.__swift5_capture` | `0xddc` | `0xdec` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -916.40.110.0.0
--  __TEXT.__text: 0xa274c
--  __TEXT.__objc_methlist: 0xbb4
--  __TEXT.__const: 0x93d4
--  __TEXT.__swift5_typeref: 0x62f8
--  __TEXT.__swift5_fieldmd: 0x30fc
--  __TEXT.__constg_swiftt: 0x3ad4
 +916.45.110.0.0
-+  __TEXT.__text: 0xa891c
-+  __TEXT.__objc_methlist: 0xc54
-+  __TEXT.__const: 0x9e14
-+  __TEXT.__swift5_typeref: 0x6698
-+  __TEXT.__swift5_fieldmd: 0x32a0
-+  __TEXT.__constg_swiftt: 0x3bc4
-   __TEXT.__swift5_builtin: 0x1e0
--  __TEXT.__swift5_reflstr: 0x26a1
--  __TEXT.__swift5_assocty: 0x1050
--  __TEXT.__cstring: 0x16f6
-+  __TEXT.__swift5_reflstr: 0x280d
-+  __TEXT.__swift5_assocty: 0x1328
-+  __TEXT.__cstring: 0x18e6
-   __TEXT.__swift5_protos: 0x28
--  __TEXT.__swift5_proto: 0x5e8
--  __TEXT.__swift5_types: 0x338
-+  __TEXT.__swift5_proto: 0x68c
-+  __TEXT.__swift5_types: 0x350
-   __TEXT.__oslogstring: 0x873
--  __TEXT.__swift5_capture: 0xddc
-+  __TEXT.__swift5_capture: 0xdec
-   __TEXT.__swift_as_entry: 0x3c
-   __TEXT.__swift_as_ret: 0x44
-   __TEXT.__swift_as_cont: 0x88
-   __TEXT.__swift5_mpenum: 0x100
--  __TEXT.__unwind_info: 0x3ba0
--  __TEXT.__eh_frame: 0x2530
-+  __TEXT.__unwind_info: 0x3e10
-+  __TEXT.__eh_frame: 0x2740
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x400
-+  __DATA_CONST.__const: 0x3e0
-   __DATA_CONST.__objc_classlist: 0x150
-   __DATA_CONST.__objc_catlist: 0x10
--  __DATA_CONST.__objc_protolist: 0x80
-+  __DATA_CONST.__objc_protolist: 0xd0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x940
--  __DATA_CONST.__objc_protorefs: 0x40
-+  __DATA_CONST.__objc_selrefs: 0xa28
-+  __DATA_CONST.__objc_protorefs: 0x68
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x5880
--  __AUTH_CONST.__objc_const: 0x28d8
--  __AUTH_CONST.__auth_got: 0x15d8
-+  __AUTH_CONST.__const: 0x5868
-+  __AUTH_CONST.__objc_const: 0x2a50
-+  __AUTH_CONST.__auth_got: 0x16b0
-   __AUTH.__objc_data: 0xb08
--  __AUTH.__data: 0x3128
--  __DATA.__data: 0x2ac8
-+  __AUTH.__data: 0x3480
-+  __DATA.__data: 0x2fb0
-   __DATA.__common: 0x90
-   __DATA_DIRTY.__objc_data: 0x1ed0
-   __DATA_DIRTY.__data: 0x1258
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5933
--  Symbols:   2179
+-  Symbols:   1964
 -  CStrings:  272
 +  Functions: 6171
-+  Symbols:   2337
++  Symbols:   2096
 +  CStrings:  278
- 
 Symbols:
 + _OBJC_CLASS_$_NUAssetCapability
 + _OBJC_CLASS_$_NUError
@@ -252,32 +213,6 @@ Symbols:
 + _associated conformance So30PICinematicAudioRenderingStylea06PhotosC024ChannelDataRepresentable0E7Editing6FormatAcDP_AC0fjH0
 + _associated conformance So30PICinematicAudioRenderingStylea06PhotosC024ControlDataRepresentable0E7EditingAC015ProcessorOutputH0
 + _associated conformance So30PICinematicAudioRenderingStylea06PhotosC024ControlDataRepresentable0E7EditingAC07ChannelgH0
-+ _objc_msgSend$buildPipelineWithBuilder:error:
-+ _objc_msgSend$cinematicVideoV1
-+ _objc_msgSend$cinematicVideoV2
-+ _objc_msgSend$depthEffectDescriptorForAsset:
-+ _objc_msgSend$destinationURL
-+ _objc_msgSend$hasCapability:
-+ _objc_msgSend$initWithAsset:options:
-+ _objc_msgSend$initWithContentEditingInput:
-+ _objc_msgSend$initWithMedia:destinationURL:
-+ _objc_msgSend$initWithMedia:exportFormat:
-+ _objc_msgSend$invalidError:object:
-+ _objc_msgSend$lightingEffectDescriptorForAsset:
-+ _objc_msgSend$portraitSettingsDescriptorForAsset:
-+ _objc_msgSend$portraitV1
-+ _objc_msgSend$portraitV2
-+ _objc_msgSend$renderedContentURL
-+ _objc_msgSend$renderedContentURLForType:error:
-+ _objc_msgSend$renderedVideoComplementContentURL
-+ _objc_msgSend$setDestinationURL:
-+ _objc_msgSend$setFormat:
-+ _objc_msgSend$setOutputSettings:
-+ _objc_msgSend$setRenderToData:
-+ _objc_msgSend$setVideoComplementURL:
-+ _objc_msgSend$supportedRenderedContentTypes
-+ _objc_msgSend$unsupportedError:object:
-+ _objc_msgSend$videoComplementURL
 + _swift_dynamicCastObjCProtocolConditional
 + _symbolic $s15PhotosRendering17ExportDestinationP
 + _symbolic $s15PhotosRendering24ChannelDataRepresentableP

@@ -2,39 +2,32 @@
 
 > `com.apple.kec.corecrypto`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x1b5a0` | `0x10140` | **`-0xb460`** |
+| `__DATA.__data` | `0x9340` | `0x29e0` | **`-0x6960`** |
+| `__TEXT_EXEC.__text` | `0x6fe68` | `0x69da4` | **`-0x60c4`** |
+| `__TEXT.__cstring` | `0x4567` | `0x3f2c` | **`-0x63b`** |
+| `__DATA_CONST.__const` | `0x4218` | `0x3fb8` | **`-0x260`** |
+| `__DATA.__bss` | `0x2a00` | `0x27c0` | **`-0x240`** |
+| `__DATA.__common` | `0x140` | `0x18` | **`-0x128`** |
+| `__TEXT_EXEC.__auth_stubs` | `0x250` | `0x230` | **`-0x20`** |
+| `__DATA_CONST.__auth_got` | `0x128` | `0x118` | **`-0x10`** |
+| `__DATA_CONST.__auth_ptr` | `0x190` | `0x188` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__cstring: 0x4567
--  __TEXT.__const: 0x1b5a0
-+  __TEXT.__cstring: 0x3f2c
-+  __TEXT.__const: 0x10140
-   __TEXT.__fips_hmacs: 0x20
--  __TEXT_EXEC.__text: 0x6fe68
--  __TEXT_EXEC.__auth_stubs: 0x250
--  __DATA.__data: 0x9340
--  __DATA.__bss: 0x2a00
--  __DATA.__common: 0x140
--  __DATA_CONST.__const: 0x4218
--  __DATA_CONST.__auth_got: 0x128
-+  __TEXT_EXEC.__text: 0x69da4
-+  __TEXT_EXEC.__auth_stubs: 0x230
-+  __DATA.__data: 0x29e0
-+  __DATA.__bss: 0x27c0
-+  __DATA.__common: 0x18
-+  __DATA_CONST.__const: 0x3fb8
-+  __DATA_CONST.__auth_got: 0x118
-   __DATA_CONST.__got: 0x10
--  __DATA_CONST.__auth_ptr: 0x190
+-2109.0.7.0.0
 -  Functions: 1993
-+  __DATA_CONST.__auth_ptr: 0x188
++2109.0.11.0.0
 +  Functions: 1944
-   Symbols:   0
+
 -  CStrings:  443
 +  CStrings:  337
- 
-Sections:
-~ __TEXT.__fips_hmacs : content changed
-~ __DATA_CONST.__got : content changed
 CStrings:
 - "A"
 - "AES-ECB decryption implementation"
@@ -142,5 +135,4 @@ CStrings:
 - "sha3"
 - "sha384"
 - "xts"
-
 ```

@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/UserNotificationsKit.framework/UserNotificationsKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9d30c` | `0x9d374` | **`+0x68`** |
+| `__AUTH_CONST.__auth_got` | `0x14a0` | `0x1498` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 1077.0.1.0.0
--  __TEXT.__text: 0x9d30c
-+  __TEXT.__text: 0x9d374
-   __TEXT.__objc_methlist: 0x2d04
-   __TEXT.__const: 0x5344
-   __TEXT.__cstring: 0x3157
-
-   __AUTH_CONST.__const: 0x36b8
-   __AUTH_CONST.__cfstring: 0x1a60
-   __AUTH_CONST.__objc_const: 0x6470
--  __AUTH_CONST.__auth_got: 0x14a0
-+  __AUTH_CONST.__auth_got: 0x1498
-   __AUTH.__objc_data: 0x978
-   __AUTH.__data: 0x13b8
-   __DATA.__objc_ivar: 0x2a0
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 3197
--  Symbols:   3145
-+  Symbols:   3144
-   CStrings:  588
- 
+-  Symbols:   2568
++  Symbols:   2567
 Symbols:
 - _objc_retain_x12
 Functions:

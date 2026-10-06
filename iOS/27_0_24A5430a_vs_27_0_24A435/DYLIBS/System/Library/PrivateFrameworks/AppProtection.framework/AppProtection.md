@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AppProtection.framework/AppProtection`
 
-```diff
+### Section Size Changes
 
- 55.0.0.0.0
--  __TEXT.__text: 0xb1d34
-+  __TEXT.__text: 0xb1ddc
-   __TEXT.__delay_helper: 0xdc
-   __TEXT.__objc_methlist: 0x16ec
-   __TEXT.__const: 0x5190
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb1d34` | `0xb1ddc` | **`+0xa8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1b9e22468 -> sub_1ba1a1468 : 2088 -> 2092
 ~ sub_1b9e32088 -> sub_1ba1b108c : 640 -> 644

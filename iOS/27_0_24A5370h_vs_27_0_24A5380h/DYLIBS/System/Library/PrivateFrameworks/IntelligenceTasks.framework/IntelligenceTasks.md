@@ -2,74 +2,62 @@
 
 > `/System/Library/PrivateFrameworks/IntelligenceTasks.framework/IntelligenceTasks`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2e4` | `0xa6e8` | **`+0xa404`** |
+| `__DATA.__bss` | `0x20` | `0x1900` | **`+0x18e0`** |
+| `__TEXT.__const` | `0x7c` | `0x112c` | **`+0x10b0`** |
+| `__TEXT.__eh_frame` | `—` | `0xb58` | **`+0xb58`** |
+| `__AUTH_CONST.__const` | `0x90` | `0x560` | **`+0x4d0`** |
+| `__TEXT.__unwind_info` | `0x70` | `0x4b0` | **`+0x440`** |
+| `__DATA.__data` | `—` | `0x420` | **`+0x420`** |
+| `__AUTH_CONST.__auth_got` | `0x0` | `0x3e8` | **`+0x3e8`** |
+| `__TEXT.__swift5_typeref` | `0x6` | `0x3cf` | **`+0x3c9`** |
+| `__TEXT.__constg_swiftt` | `0x28` | `0x370` | **`+0x348`** |
+| `__TEXT.__cstring` | `0x1c` | `0x1d2` | **`+0x1b6`** |
+| `__TEXT.__swift5_fieldmd` | `0x10` | `0x1a0` | **`+0x190`** |
+| `__AUTH_CONST.__objc_const` | `—` | `0x168` | **`+0x168`** |
+| `__AUTH.__data` | `—` | `0x158` | **`+0x158`** |
+| `__TEXT.__swift5_proto` | `—` | `0xc8` | **`+0xc8`** |
+| `__TEXT.__swift5_reflstr` | `—` | `0xbd` | **`+0xbd`** |
+| `__TEXT.__swift5_assocty` | `—` | `0x98` | **`+0x98`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x78` | **`+0x78`** |
+| `__AUTH.__objc_data` | `—` | `0x50` | **`+0x50`** |
+| `__TEXT.__swift5_acfuncs` | `—` | `0x50` | **`+0x50`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x44` | **`+0x44`** |
+| `__TEXT.__swift_as_ret` | `—` | `0x44` | **`+0x44`** |
+| `__TEXT.__swift5_types` | `0x4` | `0x34` | **`+0x30`** |
+| `__DATA.__common` | `—` | `0x10` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x38` | `0x48` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `—` | `0x10` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `—` | `0x4` | **`+0x4`** |
+| `__DATA_CONST.__got` | `—` | `0x0` | **`+0x0`** |
+| `__TEXT.__objc_classname` | `—` | `0x0` | **`+0x0`** |
+| `__TEXT.__objc_methname` | `—` | `0x0` | **`+0x0`** |
+| `__TEXT.__objc_methtype` | `—` | `0x0` | **`+0x0`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2e4
--  __TEXT.__const: 0x7c
--  __TEXT.__constg_swiftt: 0x28
--  __TEXT.__swift5_typeref: 0x6
--  __TEXT.__swift5_fieldmd: 0x10
--  __TEXT.__cstring: 0x1c
--  __TEXT.__swift5_types: 0x4
--  __TEXT.__unwind_info: 0x70
-+  __TEXT.__text: 0xa6e8
-+  __TEXT.__const: 0x112c
-+  __TEXT.__constg_swiftt: 0x370
-+  __TEXT.__swift5_typeref: 0x3cf
-+  __TEXT.__swift5_fieldmd: 0x1a0
-+  __TEXT.__cstring: 0x1d2
-+  __TEXT.__swift5_types: 0x34
-+  __TEXT.__swift5_reflstr: 0xbd
-+  __TEXT.__swift_as_entry: 0x44
-+  __TEXT.__swift_as_ret: 0x44
-+  __TEXT.__swift_as_cont: 0x78
-+  __TEXT.__swift5_assocty: 0x98
-+  __TEXT.__swift5_protos: 0x4
-+  __TEXT.__swift5_proto: 0xc8
-+  __TEXT.__swift5_acfuncs: 0x50
-+  __TEXT.__unwind_info: 0x4b0
-+  __TEXT.__eh_frame: 0xb58
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x38
-+  __TEXT.__objc_classname: 0x0
-+  __TEXT.__objc_methname: 0x0
-+  __TEXT.__objc_methtype: 0x0
-+  __DATA_CONST.__const: 0x48
-+  __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __AUTH_CONST.__const: 0x90
--  __AUTH_CONST.__auth_got: 0x0
--  __DATA.__bss: 0x20
-+  __DATA_CONST.__got: 0x0
-+  __AUTH_CONST.__const: 0x560
-+  __AUTH_CONST.__objc_const: 0x168
-+  __AUTH_CONST.__auth_got: 0x3e8
-+  __AUTH.__objc_data: 0x50
-+  __AUTH.__data: 0x158
-+  __DATA.__data: 0x420
-+  __DATA.__common: 0x10
-+  __DATA.__bss: 0x1900
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+-239.0.2.0.0
++243.0.0.0.0
+
 +  - /System/Library/PrivateFrameworks/CascadeSets.framework/CascadeSets
 +  - /System/Library/PrivateFrameworks/XPCDistributed.framework/XPCDistributed
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
+
 +  - /usr/lib/swift/libswiftDistributed.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
+
 +  - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
+
 -  Functions: 13
--  Symbols:   29
+-  Symbols:   26
 -  CStrings:  1
 +  Functions: 479
-+  Symbols:   413
++  Symbols:   271
 +  CStrings:  11
- 
 Symbols:
 + _OBJC_CLASS_$__TtCs12_SwiftObject
 + _OBJC_METACLASS_$__TtCs12_SwiftObject
@@ -329,5 +317,4 @@ CStrings:
 + "performNightlyMaintenance(options:)"
 + "performUserVaultAvailabilityMaintenance(personaIdentifier:options:)"
 + "personaIdentifier"
-
 ```

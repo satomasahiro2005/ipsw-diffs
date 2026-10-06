@@ -2,94 +2,47 @@
 
 > `/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x720a64` | `0x5399e8` | **`-0x1e707c`** |
+| `__TEXT.__cstring` | `0x44375` | `0xe575` | **`-0x35e00`** |
+| `__TEXT.__oslogstring` | `0x2d8c6` | `0x5c13` | **`-0x27cb3`** |
+| `__AUTH_CONST.__cfstring` | `0x25dc0` | `0xb4a0` | **`-0x1a920`** |
+| `__AUTH_CONST.__const` | `0x4e088` | `0x43228` | **`-0xae60`** |
+| `__DATA_CONST.__const` | `0x41d8` | `0x45c8` | **`+0x3f0`** |
+| `__DATA.__data` | `0x8f4` | `0x6f4` | **`-0x200`** |
+| `__DATA.__common` | `0x338` | `0x158` | **`-0x1e0`** |
+| `__TEXT.__unwind_info` | `0x5f80` | `0x5e00` | **`-0x180`** |
+| `__DATA_DIRTY.__common` | `0x180` | `0xe0` | **`-0xa0`** |
+| `__TEXT.__const` | `0x50ec` | `0x504c` | **`-0xa0`** |
+| `__DATA.__bss` | `0x10e0` | `0x1080` | **`-0x60`** |
+| `__DATA_DIRTY.__bss` | `0x500` | `0x550` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x154` | `0x108` | **`-0x4c`** |
+| `__TEXT.__eh_frame` | `0x7a5c` | `0x7aa4` | **`+0x48`** |
+| `__AUTH_CONST.__objc_doubleobj` | `—` | `0x30` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x20a8` | `0x2080` | **`-0x28`** |
+| `__TEXT.__objc_methlist` | `0xed4` | `0xefc` | **`+0x28`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x60` | `0x78` | **`+0x18`** |
+| `__DATA_CONST.__objc_arraydata` | `0x20` | `0x38` | **`+0x18`** |
+| `__AUTH_CONST.__objc_const` | `0x3670` | `0x3680` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0x310` | `0x300` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0xe50` | `0xe48` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3350.71.2.11.1
--  __TEXT.__text: 0x720a64
 +3350.75.2.0.0
-+  __TEXT.__text: 0x5399e8
-   __TEXT.__delay_helper: 0xdc
--  __TEXT.__objc_methlist: 0xed4
--  __TEXT.__const: 0x50ec
--  __TEXT.__cstring: 0x44375
--  __TEXT.__oslogstring: 0x2d8c6
--  __TEXT.__gcc_except_tab: 0x154
-+  __TEXT.__objc_methlist: 0xefc
-+  __TEXT.__const: 0x504c
-+  __TEXT.__cstring: 0xe575
-+  __TEXT.__oslogstring: 0x5c13
-+  __TEXT.__gcc_except_tab: 0x108
-   __TEXT.__dlopen_cstrs: 0x9b
-   __TEXT.__swift5_typeref: 0x2dc
-   __TEXT.__swift5_reflstr: 0xff
 
-   __TEXT.__swift_as_entry: 0x4
-   __TEXT.__swift_as_ret: 0x4
-   __TEXT.__swift_as_cont: 0x10
--  __TEXT.__unwind_info: 0x5f80
--  __TEXT.__eh_frame: 0x7a5c
-+  __TEXT.__unwind_info: 0x5e00
-+  __TEXT.__eh_frame: 0x7aa4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x41d8
-+  __DATA_CONST.__const: 0x45c8
-   __DATA_CONST.__objc_classlist: 0xd0
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x8f8
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0xb8
--  __DATA_CONST.__objc_arraydata: 0x20
--  __DATA_CONST.__got: 0xe50
--  __AUTH_CONST.__const: 0x4e088
--  __AUTH_CONST.__cfstring: 0x25dc0
--  __AUTH_CONST.__objc_const: 0x3670
-+  __DATA_CONST.__objc_arraydata: 0x38
-+  __DATA_CONST.__got: 0xe48
-+  __AUTH_CONST.__const: 0x43228
-+  __AUTH_CONST.__cfstring: 0xb4a0
-+  __AUTH_CONST.__objc_const: 0x3680
-   __AUTH_CONST.__objc_intobj: 0x48
--  __AUTH_CONST.__objc_arrayobj: 0x60
--  __AUTH_CONST.__auth_got: 0x20a8
-+  __AUTH_CONST.__objc_arrayobj: 0x78
-+  __AUTH_CONST.__objc_doubleobj: 0x30
-+  __AUTH_CONST.__auth_got: 0x2080
-   __AUTH.__objc_data: 0x730
-   __AUTH.__data: 0x1b8
-   __DATA.__objc_ivar: 0x244
--  __DATA.__data: 0x8f4
--  __DATA.__bss: 0x10e0
--  __DATA.__common: 0x338
-+  __DATA.__data: 0x6f4
-+  __DATA.__bss: 0x1080
-+  __DATA.__common: 0x158
-   __DATA_DIRTY.__objc_data: 0x50
--  __DATA_DIRTY.__data: 0x310
-+  __DATA_DIRTY.__data: 0x300
-   __DATA_DIRTY.__crash_info: 0x148
--  __DATA_DIRTY.__common: 0x180
--  __DATA_DIRTY.__bss: 0x500
-+  __DATA_DIRTY.__common: 0xe0
-+  __DATA_DIRTY.__bss: 0x550
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/ColorSync.framework/ColorSync
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10570
--  Symbols:   11227
+-  Symbols:   10992
 -  CStrings:  10690
 +  Functions: 9248
-+  Symbols:   11091
++  Symbols:   10854
 +  CStrings:  2238
- 
 Symbols:
 + +[VTLowLatencySuperResolutionScalerConfiguration maximumDimensionForSpatialScaleFactor:]
 + +[VTLowLatencySuperResolutionScalerConfiguration maximumPixelCountForSpatialScaleFactor:]
@@ -117,8 +70,6 @@ Symbols:
 + _gVTDecompressionSessionXPCRemoteConnection2Lock
 + _hardwareSupportsYUVS.checked
 + _hardwareSupportsYUVS.hasSupport
-+ _objc_msgSend$maximumDimensionForSpatialScaleFactor:
-+ _objc_msgSend$maximumPixelCountForSpatialScaleFactor:
 + _sVTParavirtualizationStringToKeyIndexDict
 + _sVideoDecoderRegistry
 + _scalerCapabilities.hasSupportIn_2plane10bit420

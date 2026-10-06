@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/STSXPCHelperClient.framework/STSXPCHelperClient`
 
-```diff
+### Section Size Changes
 
- 6.0.15.0.0
--  __TEXT.__text: 0xf30c
-+  __TEXT.__text: 0xf310
-   __TEXT.__objc_methlist: 0xf34
-   __TEXT.__const: 0x119
-   __TEXT.__cstring: 0x2021
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf30c` | `0xf310` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_29ffbb008 -> sub_29fc3e008 : 404 -> 408
+~ sub_29ff92008 -> sub_29fb21008 : 404 -> 408
 ```

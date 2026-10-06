@@ -2,17 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/CTLazuliSupport.framework/CTLazuliSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4bba4` | `0x4bbb0` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
 -13487.6.0.0.0
--  __TEXT.__text: 0x4bba4
 +13487.7.0.0.0
-+  __TEXT.__text: 0x4bbb0
-   __TEXT.__objc_methlist: 0x314
-   __TEXT.__swift5_typeref: 0x161a
-   __TEXT.__swift5_fieldmd: 0xf2c
 Functions:
-~ sub_256480aa8 -> sub_257019aa8 : 968 -> 972
-~ sub_2564aa048 -> sub_25704304c : 1768 -> 1772
-~ sub_2564bb178 -> sub_257054180 : 356 -> 360
+~ sub_25634aaa8 -> sub_256ee2aa8 : 968 -> 972
+~ sub_256374048 -> sub_256f0c04c : 1768 -> 1772
+~ sub_256385178 -> sub_256f1d180 : 356 -> 360
 ```

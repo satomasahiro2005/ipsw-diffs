@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/HealthRecordsDaemon.framework/HealthRecordsDaemon`
 
-```diff
+### Section Size Changes
 
- 7027.0.72.2.7
--  __TEXT.__text: 0x2000a4
-+  __TEXT.__text: 0x2000e0
-   __TEXT.__objc_methlist: 0x624
-   __TEXT.__const: 0x1c2ec
-   __TEXT.__constg_swiftt: 0x4be0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2000a4` | `0x2000e0` | **`+0x3c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_22f73099c -> sub_230fba99c : 804 -> 808
 ~ sub_22f73cea0 -> sub_230fc6ea4 : 2484 -> 2480

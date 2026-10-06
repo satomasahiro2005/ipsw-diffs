@@ -2,145 +2,70 @@
 
 > `/System/Library/PrivateFrameworks/SiriSetup.framework/SiriSetup`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x33d6f4` | `0x340ef8` | **`+0x3804`** |
+| `__TEXT.__swift5_typeref` | `0x2e8ca` | `0x2d0b0` | **`-0x181a`** |
+| `__TEXT.__const` | `0x1e4a4` | `0x1d384` | **`-0x1120`** |
+| `__AUTH_CONST.__const` | `0x14168` | `0x13520` | **`-0xc48`** |
+| `__AUTH_CONST.__objc_const` | `0x9b88` | `0x92c0` | **`-0x8c8`** |
+| `__TEXT.__constg_swiftt` | `0xbcdc` | `0xb5ac` | **`-0x730`** |
+| `__DATA.__bss` | `0x120a0` | `0x11a10` | **`-0x690`** |
+| `__TEXT.__eh_frame` | `0x9fc8` | `0x9a4c` | **`-0x57c`** |
+| `__DATA.__data` | `0x84b8` | `0x7f80` | **`-0x538`** |
+| `__TEXT.__swift5_fieldmd` | `0x7978` | `0x7588` | **`-0x3f0`** |
+| `__TEXT.__unwind_info` | `0xb6b0` | `0xb340` | **`-0x370`** |
+| `__TEXT.__swift5_capture` | `0x39b8` | `0x36c0` | **`-0x2f8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2450` | `0x2168` | **`-0x2e8`** |
+| `__TEXT.__oslogstring` | `0x32e2` | `0x35a2` | **`+0x2c0`** |
+| `__TEXT.__objc_methlist` | `0x2250` | `0x1fb8` | **`-0x298`** |
+| `__TEXT.__cstring` | `0xc0bf` | `0xc31f` | **`+0x260`** |
+| `__AUTH_CONST.__auth_got` | `0x2fa8` | `0x2df0` | **`-0x1b8`** |
+| `__DATA_CONST.__got` | `0x1a08` | `0x1870` | **`-0x198`** |
+| `__AUTH.__objc_data` | `0x4258` | `0x4110` | **`-0x148`** |
+| `__TEXT.__swift5_assocty` | `0x1a58` | `0x1918` | **`-0x140`** |
+| `__DATA_DIRTY.__data` | `0x2a50` | `0x2950` | **`-0x100`** |
+| `__DATA_CONST.__const` | `0x2450` | `0x2360` | **`-0xf0`** |
+| `__AUTH.__data` | `0x5b48` | `0x5aa0` | **`-0xa8`** |
+| `__DATA_DIRTY.__bss` | `0x18b0` | `0x1830` | **`-0x80`** |
+| `__DATA_DIRTY.__objc_data` | `0x27f0` | `0x2858` | **`+0x68`** |
+| `__DATA.__common` | `0x458` | `0x4a8` | **`+0x50`** |
+| `__TEXT.__swift5_types` | `0x844` | `0x7f4` | **`-0x50`** |
+| `__TEXT.__swift5_reflstr` | `0x83ba` | `0x8370` | **`-0x4a`** |
+| `__TEXT.__swift5_proto` | `0xa80` | `0xa54` | **`-0x2c`** |
+| `__DATA_CONST.__objc_protolist` | `0x148` | `0x128` | **`-0x20`** |
+| `__TEXT.__swift5_mpenum` | `0x3c` | `0x54` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x2bc` | `0x2a8` | **`-0x14`** |
+| `__TEXT.__swift_as_entry` | `0x2e4` | `0x2d0` | **`-0x14`** |
+| `__DATA_CONST.__objc_protorefs` | `0xa0` | `0x90` | **`-0x10`** |
+| `__TEXT.__swift5_protos` | `0xbc` | `0xc8` | **`+0xc`** |
+| `__TEXT.__swift_as_cont` | `0x5b0` | `0x5a4` | **`-0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x460` | `0x458` | **`-0x8`** |
+| `__TEXT.__swift_as_ret` | `0x2ec` | `0x2f0` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3600.62.36.1.1
--  __TEXT.__text: 0x33d6f4
--  __TEXT.__objc_methlist: 0x2250
--  __TEXT.__const: 0x1e4a4
--  __TEXT.__cstring: 0xc0bf
 +3600.62.43.1.7
-+  __TEXT.__text: 0x340ef8
-+  __TEXT.__objc_methlist: 0x1fb8
-+  __TEXT.__const: 0x1d384
-+  __TEXT.__cstring: 0xc31f
-   __TEXT.__gcc_except_tab: 0x30
-   __TEXT.__dlopen_cstrs: 0xaf
--  __TEXT.__oslogstring: 0x32e2
--  __TEXT.__swift5_typeref: 0x2e8ca
--  __TEXT.__swift5_capture: 0x39b8
--  __TEXT.__constg_swiftt: 0xbcdc
--  __TEXT.__swift5_reflstr: 0x83ba
--  __TEXT.__swift5_fieldmd: 0x7978
--  __TEXT.__swift5_builtin: 0x2bc
--  __TEXT.__swift5_assocty: 0x1a58
--  __TEXT.__swift5_proto: 0xa80
--  __TEXT.__swift5_types: 0x844
--  __TEXT.__swift5_protos: 0xbc
--  __TEXT.__swift_as_entry: 0x2e4
--  __TEXT.__swift_as_ret: 0x2ec
--  __TEXT.__swift_as_cont: 0x5b0
--  __TEXT.__swift5_mpenum: 0x3c
--  __TEXT.__unwind_info: 0xb6b0
--  __TEXT.__eh_frame: 0x9fc8
-+  __TEXT.__oslogstring: 0x35a2
-+  __TEXT.__swift5_typeref: 0x2d0b0
-+  __TEXT.__swift5_capture: 0x36c0
-+  __TEXT.__constg_swiftt: 0xb5ac
-+  __TEXT.__swift5_reflstr: 0x8370
-+  __TEXT.__swift5_fieldmd: 0x7588
-+  __TEXT.__swift5_builtin: 0x2a8
-+  __TEXT.__swift5_assocty: 0x1918
-+  __TEXT.__swift5_proto: 0xa54
-+  __TEXT.__swift5_types: 0x7f4
-+  __TEXT.__swift5_protos: 0xc8
-+  __TEXT.__swift_as_entry: 0x2d0
-+  __TEXT.__swift_as_ret: 0x2f0
-+  __TEXT.__swift_as_cont: 0x5a4
-+  __TEXT.__swift5_mpenum: 0x54
-+  __TEXT.__unwind_info: 0xb340
-+  __TEXT.__eh_frame: 0x9a4c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2450
--  __DATA_CONST.__objc_classlist: 0x460
-+  __DATA_CONST.__const: 0x2360
-+  __DATA_CONST.__objc_classlist: 0x458
-   __DATA_CONST.__objc_catlist: 0x10
--  __DATA_CONST.__objc_protolist: 0x148
-+  __DATA_CONST.__objc_protolist: 0x128
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2450
--  __DATA_CONST.__objc_protorefs: 0xa0
-+  __DATA_CONST.__objc_selrefs: 0x2168
-+  __DATA_CONST.__objc_protorefs: 0x90
-   __DATA_CONST.__objc_superrefs: 0x50
--  __DATA_CONST.__got: 0x1a08
--  __AUTH_CONST.__const: 0x14168
-+  __DATA_CONST.__got: 0x1870
-+  __AUTH_CONST.__const: 0x13520
-   __AUTH_CONST.__cfstring: 0x1b60
--  __AUTH_CONST.__objc_const: 0x9b88
-+  __AUTH_CONST.__objc_const: 0x92c0
-   __AUTH_CONST.__objc_intobj: 0x18
--  __AUTH_CONST.__auth_got: 0x2fa8
--  __AUTH.__objc_data: 0x4258
--  __AUTH.__data: 0x5b48
-+  __AUTH_CONST.__auth_got: 0x2df0
-+  __AUTH.__objc_data: 0x4110
-+  __AUTH.__data: 0x5aa0
-   __DATA.__objc_ivar: 0x70
--  __DATA.__data: 0x84b8
-+  __DATA.__data: 0x7f80
-   __DATA.__objc_stublist: 0x8
--  __DATA.__bss: 0x120a0
--  __DATA.__common: 0x458
--  __DATA_DIRTY.__objc_data: 0x27f0
--  __DATA_DIRTY.__data: 0x2a50
--  __DATA_DIRTY.__bss: 0x18b0
-+  __DATA.__bss: 0x11a10
-+  __DATA.__common: 0x4a8
-+  __DATA_DIRTY.__objc_data: 0x2858
-+  __DATA_DIRTY.__data: 0x2950
-+  __DATA_DIRTY.__bss: 0x1830
-   __DATA_DIRTY.__common: 0x158
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AVKit.framework/AVKit
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
+
 +  - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/ContactsUI.framework/ContactsUI
 
-   - /System/Library/Frameworks/CoreImage.framework/CoreImage
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
 -  - /System/Library/Frameworks/CoreText.framework/CoreText
-   - /System/Library/Frameworks/DeveloperToolsSupport.framework/DeveloperToolsSupport
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/Network.framework/Network
 
-   - /System/Library/PrivateFrameworks/AppleIntelligenceReporting.framework/AppleIntelligenceReporting
-   - /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
-   - /System/Library/PrivateFrameworks/AttributeGraph.framework/AttributeGraph
 -  - /System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore
-   - /System/Library/PrivateFrameworks/BaseBoardUI.framework/BaseBoardUI
-   - /System/Library/PrivateFrameworks/CloudSubscriptionFeatures.framework/CloudSubscriptionFeatures
-   - /System/Library/PrivateFrameworks/CoreFollowUp.framework/CoreFollowUp
 
-   - /System/Library/PrivateFrameworks/SiriAnalytics.framework/SiriAnalytics
-   - /System/Library/PrivateFrameworks/SiriAssetUtilities.framework/SiriAssetUtilities
-   - /System/Library/PrivateFrameworks/SiriCrossDeviceArbitration.framework/SiriCrossDeviceArbitration
 -  - /System/Library/PrivateFrameworks/SiriDeviceSelection.framework/SiriDeviceSelection
-   - /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation
-   - /System/Library/PrivateFrameworks/SiriTTSService.framework/SiriTTSService
-   - /System/Library/PrivateFrameworks/SiriUICore.framework/SiriUICore
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 19603
--  Symbols:   43646
+-  Symbols:   42745
 -  CStrings:  1622
 +  Functions: 19276
-+  Symbols:   42426
++  Symbols:   41610
 +  CStrings:  1676
- 
 Symbols:
 + -[SRSVTPreferences remoteDarwinWasEverConnected]
 + -[SRSVoiceTrainingManager useRemoteDarwinDevicesForTraining:]
@@ -3791,19 +3716,6 @@ Symbols:
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA15NavigationStackVyAA0I4PathVAcAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAcAE29navigationBarTitleDisplayModeyQrAA0iQ4ItemV0rsT0OFQOyAcAE0pR0yQrAA4TextVFQOyAA5GroupVyAA012_ConditionalO0VyAA08ProgressC0VyAA05EmptyC0VA4_GAA4ListVys5NeverOAA7ForEachVySay9SiriSetup023RestrictAccessAppPickerC0V7Section33_67102BE38CDDE06F33628242513EBB2FLLVGSSAAA15_VyAXA11_ySayA12_21RestrictAccessAppInfoVGSSAA08ModifiedO0VyA24_yAcAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAcAE12onTapGesture5count7performQrSi_yyctFQOyA24_yAA6HStackVyAA05TupleO0VyA24_yA24_yA24_yAA5ImageVAA24_ForegroundStyleModifierVyAA5ColorVGGAA30_EnvironmentKeyWritingModifierVyA37_5ScaleOGGAA31AccessibilityAttachmentModifierVG_A24_yA0_yA12_12WatchAppIconVA24_yA24_yA37_AA12_FrameLayoutVGAA11_ClipEffectVyAA16RoundedRectangleVGGGA51_GAxA6SpacerVQPGGAA01_O13ShapeModifierVyAA9RectangleVGG_Qo__Qo_A51_GAA21_TraitWritingModifierVyAA25ListRowBackgroundTraitKeyVGGGA4_GGGGG_Qo__Qo__A35_yAA0nU0VyytAA6ButtonVyA37_GG_AaPPAAE26sharedBackgroundVisibilityyQrAA10VisibilityOFQOyA94_yytA24_yA96_yA24_yA24_yA43_A45_yAA4FontVSgGGA51_GGA51_GG_Qo_QPGQo_G_Qo_HO
 + _kCFPreferencesAnyApplication
 + _keypath_get_selector_isReadyForDisplay
-+ _objc_msgSend$compactVoiceTriggerEnabled:
-+ _objc_msgSend$downloadStatus
-+ _objc_msgSend$endAdvertisingAfterDelay:
-+ _objc_msgSend$initWithStatus:restrictionReasons:isAvailable:siriLocale:desiredOrchestrationMode:desiredOrchestrationModeIfEnabled:currentOrchestrationMode:unavailabilityReasons:allCapabilities:linwoodEverAvailable:bootUUID:
-+ _objc_msgSend$isReadyForDisplay
-+ _objc_msgSend$linkColor
-+ _objc_msgSend$linwoodEverAvailable
-+ _objc_msgSend$resolvedColorWithTraitCollection:
-+ _objc_msgSend$setEnabled:
-+ _objc_msgSend$setThumbTintColor:
-+ _objc_msgSend$startAdvertisingForPHSSetupAfterDelay:maxInterval:
-+ _objc_msgSend$stopListening:
-+ _objc_msgSend$traitCollectionWithUserInterfaceStyle:
 + _symbolic $s9SiriSetup17SRSServiceSessionP
 + _symbolic $s9SiriSetup23AssetDownloadMonitoringP
 + _symbolic $s9SiriSetup24AvailabilityCoordinatingP
@@ -8783,104 +8695,6 @@ Symbols:
 - _keypath_get_selector_occlusionMultiplier
 - _keypath_get_selector_onTapAudioTransitionDuration
 - _keypath_get_selector_reverbGain
-- _objc_msgSend$ambience1BandPassFilterCenterFrequency
-- _objc_msgSend$ambience1VolumeMultiplier
-- _objc_msgSend$ambience2LowPassFilterCutoff
-- _objc_msgSend$ambience2VolumeMultiplier
-- _objc_msgSend$ambienceMaxVelocity
-- _objc_msgSend$ambienceVolumeBoost
-- _objc_msgSend$audioUnit
-- _objc_msgSend$clearCurrentCoordinator
-- _objc_msgSend$connect:to:fromBus:toBus:format:
-- _objc_msgSend$currentAssetStatus
-- _objc_msgSend$disconnectNodeOutput:
-- _objc_msgSend$donateOutgoingTrigger:withCompletion:
-- _objc_msgSend$donateSiriSession:forTimestamp:withCompletion:
-- _objc_msgSend$downloadSiriAssetsOverCellular
-- _objc_msgSend$fileFormat
-- _objc_msgSend$grayColor
-- _objc_msgSend$gridPreviewPresenceInteractionMaxDistance
-- _objc_msgSend$gridPreviewPresenceInteractionMinDistance
-- _objc_msgSend$initWithAudioComponentDescription:
-- _objc_msgSend$initWithCGImage:
-- _objc_msgSend$initWithLanguageCode:gender:name:footprint:isCustom:
-- _objc_msgSend$integerValue
-- _objc_msgSend$invalidate
-- _objc_msgSend$isLocal
-- _objc_msgSend$knobPreviewPresenceInteractionMaxAngle
-- _objc_msgSend$knobPreviewPresenceInteractionMaxDistance
-- _objc_msgSend$knobPreviewPresenceInteractionMinAngle
-- _objc_msgSend$knobPreviewPresenceInteractionMinDistance
-- _objc_msgSend$loadFactoryReverbPreset:
-- _objc_msgSend$localizedNameOfOutputVoiceWithIdentifier:inDisplayLanguage:
-- _objc_msgSend$mainRunLoop
-- _objc_msgSend$maxAmbience1BandPassFilterMinFrequencyRange
-- _objc_msgSend$maxAmbienceVolumeRange
-- _objc_msgSend$minAmbience1BandPassFilterMinFrequencyRange
-- _objc_msgSend$minAmbienceVolumeRange
-- _objc_msgSend$networkExpensive
-- _objc_msgSend$nextAvailableInputBus
-- _objc_msgSend$occlusionMultiplier
-- _objc_msgSend$onTapAudioTransitionDuration
-- _objc_msgSend$readIntoBuffer:error:
-- _objc_msgSend$reverbGain
-- _objc_msgSend$reverbParameters
-- _objc_msgSend$scheduledTimerWithTimeInterval:repeats:block:
-- _objc_msgSend$selectDeviceForRole:withSignals:completion:
-- _objc_msgSend$setAllowsEdgeAntialiasing:
-- _objc_msgSend$setAmbience1BandPassFilterCenterFrequency:
-- _objc_msgSend$setAmbience1VolumeMultiplier:
-- _objc_msgSend$setAmbience2LowPassFilterCutoff:
-- _objc_msgSend$setAmbience2VolumeMultiplier:
-- _objc_msgSend$setAmbienceMaxVelocity:
-- _objc_msgSend$setAmbienceVolumeBoost:
-- _objc_msgSend$setContentsOneValueDistance:
-- _objc_msgSend$setContentsZeroValueDistance:
-- _objc_msgSend$setCurvature:
-- _objc_msgSend$setEffect:
-- _objc_msgSend$setEnable:
-- _objc_msgSend$setFillAmount:
-- _objc_msgSend$setFillAngle:
-- _objc_msgSend$setFillHeight:
-- _objc_msgSend$setFillHeightOffset:
-- _objc_msgSend$setFillHeightScale:
-- _objc_msgSend$setFillSpread:
-- _objc_msgSend$setFillSpreadOffset:
-- _objc_msgSend$setFillSpreadScale:
-- _objc_msgSend$setGradientOvalization:
-- _objc_msgSend$setGridPreviewPresenceInteractionMaxDistance:
-- _objc_msgSend$setGridPreviewPresenceInteractionMinDistance:
-- _objc_msgSend$setKeyAmount:
-- _objc_msgSend$setKeyAngle:
-- _objc_msgSend$setKeyColor:
-- _objc_msgSend$setKeyHeight:
-- _objc_msgSend$setKeyHeightOffset:
-- _objc_msgSend$setKeyHeightScale:
-- _objc_msgSend$setKeySpread:
-- _objc_msgSend$setKeySpreadScale:
-- _objc_msgSend$setKnobPreviewPresenceInteractionMaxAngle:
-- _objc_msgSend$setKnobPreviewPresenceInteractionMaxDistance:
-- _objc_msgSend$setKnobPreviewPresenceInteractionMinAngle:
-- _objc_msgSend$setKnobPreviewPresenceInteractionMinDistance:
-- _objc_msgSend$setLevel:
-- _objc_msgSend$setMaxAmbience1BandPassFilterMinFrequencyRange:
-- _objc_msgSend$setMaxAmbienceVolumeRange:
-- _objc_msgSend$setMaximum:
-- _objc_msgSend$setMinAmbience1BandPassFilterMinFrequencyRange:
-- _objc_msgSend$setMinAmbienceVolumeRange:
-- _objc_msgSend$setMinimum:
-- _objc_msgSend$setOcclusion:
-- _objc_msgSend$setOcclusionMultiplier:
-- _objc_msgSend$setOnTapAudioTransitionDuration:
-- _objc_msgSend$setOperation:
-- _objc_msgSend$setOutputVolume:
-- _objc_msgSend$setReverbBlend:
-- _objc_msgSend$setReverbGain:
-- _objc_msgSend$sf_isChinaRegionCellularDevice
-- _objc_msgSend$startAdvertisingFromOutgoingTrigger
-- _objc_msgSend$startAdvertisingFromVoiceTrigger
-- _objc_msgSend$startObservers
-- _objc_msgSend$state
 - _swift_projectBox
 - _swift_retain_x10
 - _swift_setAtWritableKeyPath

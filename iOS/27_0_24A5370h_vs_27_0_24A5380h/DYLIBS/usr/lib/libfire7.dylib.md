@@ -2,40 +2,28 @@
 
 > `/usr/lib/libfire7.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x283c78` | `0x2836f8` | **`-0x580`** |
+| `__TEXT.__cstring` | `0x3fe95` | `0x3ffaa` | **`+0x115`** |
+| `__TEXT.__gcc_except_tab` | `0x54f0` | `0x54c8` | **`-0x28`** |
+| `__TEXT.__unwind_info` | `0x5728` | `0x5718` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x283c78
-+  __TEXT.__text: 0x2836f8
-   __TEXT.__init_offsets: 0x10
-   __TEXT.__const: 0x2cd1c
--  __TEXT.__cstring: 0x3fe95
--  __TEXT.__gcc_except_tab: 0x54f0
--  __TEXT.__unwind_info: 0x5728
-+  __TEXT.__cstring: 0x3ffaa
-+  __TEXT.__gcc_except_tab: 0x54c8
-+  __TEXT.__unwind_info: 0x5718
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x84a0
-   __DATA_CONST.__weak_got: 0x8
+-135.0.3.0.0
++135.0.4.0.0
 
-   __DATA_DIRTY.__bss: 0x9c
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 7336
--  Symbols:   18790
+-  Symbols:   9840
 -  CStrings:  6185
 +  Functions: 7333
-+  Symbols:   18783
++  Symbols:   9839
 +  CStrings:  6193
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
 Symbols:
 + GCC_except_table112
 + GCC_except_table148
@@ -91,5 +79,4 @@ CStrings:
 - "GlReqOnStart,request,ok,%p,size,%zu"
 - "Jun 12 2026, 22:35:31"
 - "fmh,StartRequest,request,%p,%d,size,%zu"
-
 ```

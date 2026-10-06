@@ -2,84 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/CoreRepairCore.framework/CoreRepairCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8caec` | `0x9a280` | **`+0xd794`** |
+| `__AUTH_CONST.__cfstring` | `0x8700` | `0x9520` | **`+0xe20`** |
+| `__AUTH_CONST.__objc_const` | `0x6910` | `0x7668` | **`+0xd58`** |
+| `__TEXT.__cstring` | `0x72e0` | `0x7e70` | **`+0xb90`** |
+| `__TEXT.__objc_methlist` | `0x47e4` | `0x4f64` | **`+0x780`** |
+| `__TEXT.__oslogstring` | `0x9d45` | `0xa4a8` | **`+0x763`** |
+| `__AUTH.__objc_data` | `0x1220` | `0x1680` | **`+0x460`** |
+| `__DATA_CONST.__const` | `0xaa0` | `0xe40` | **`+0x3a0`** |
+| `__DATA_CONST.__objc_arraydata` | `0xb68` | `0xee0` | **`+0x378`** |
+| `__TEXT.__gcc_except_tab` | `0x171c` | `0x19e8` | **`+0x2cc`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x8b8` | `0xb40` | **`+0x288`** |
+| `__DATA_CONST.__objc_selrefs` | `0x26a8` | `0x28f0` | **`+0x248`** |
+| `__TEXT.__unwind_info` | `0x1458` | `0x1658` | **`+0x200`** |
+| `__DATA_DIRTY.__objc_data` | `0xdc0` | `0xf50` | **`+0x190`** |
+| `__AUTH_CONST.__objc_intobj` | `0x288` | `0x3f0` | **`+0x168`** |
+| `__DATA.__bss` | `0x120` | `0x1c0` | **`+0xa0`** |
+| `__DATA_CONST.__objc_classlist` | `0x330` | `0x3c8` | **`+0x98`** |
+| `__DATA_CONST.__got` | `0x660` | `0x6e0` | **`+0x80`** |
+| `__DATA.__data` | `0x658` | `0x6b8` | **`+0x60`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1e8` | `0x240` | **`+0x58`** |
+| `__AUTH_CONST.__const` | `0x5a0` | `0x5e0` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0xba8` | `0xbe0` | **`+0x38`** |
+| `__DATA.__objc_ivar` | `0x37c` | `0x3a4` | **`+0x28`** |
+| `__DATA_DIRTY.__bss` | `0x1a0` | `0x1b0` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x70` | `0x78` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x28` | `0x30` | **`+0x8`** |
+| `__TEXT.__const` | `0x858` | `0x850` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 1307.2.4.0.0
--  __TEXT.__text: 0x8caec
--  __TEXT.__objc_methlist: 0x47e4
--  __TEXT.__const: 0x858
--  __TEXT.__cstring: 0x72e0
--  __TEXT.__oslogstring: 0x9d45
--  __TEXT.__gcc_except_tab: 0x171c
--  __TEXT.__unwind_info: 0x1458
-+  __TEXT.__text: 0x9a280
-+  __TEXT.__objc_methlist: 0x4f64
-+  __TEXT.__const: 0x850
-+  __TEXT.__cstring: 0x7e70
-+  __TEXT.__oslogstring: 0xa4a8
-+  __TEXT.__gcc_except_tab: 0x19e8
-+  __TEXT.__unwind_info: 0x1658
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xaa0
--  __DATA_CONST.__objc_classlist: 0x330
-+  __DATA_CONST.__const: 0xe40
-+  __DATA_CONST.__objc_classlist: 0x3c8
-   __DATA_CONST.__objc_catlist: 0x28
--  __DATA_CONST.__objc_protolist: 0x70
-+  __DATA_CONST.__objc_protolist: 0x78
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x26a8
--  __DATA_CONST.__objc_protorefs: 0x28
--  __DATA_CONST.__objc_superrefs: 0x1e8
--  __DATA_CONST.__objc_arraydata: 0xb68
--  __DATA_CONST.__got: 0x660
--  __AUTH_CONST.__const: 0x5a0
--  __AUTH_CONST.__cfstring: 0x8700
--  __AUTH_CONST.__objc_const: 0x6910
--  __AUTH_CONST.__objc_intobj: 0x288
-+  __DATA_CONST.__objc_selrefs: 0x28f0
-+  __DATA_CONST.__objc_protorefs: 0x30
-+  __DATA_CONST.__objc_superrefs: 0x240
-+  __DATA_CONST.__objc_arraydata: 0xee0
-+  __DATA_CONST.__got: 0x6e0
-+  __AUTH_CONST.__const: 0x5e0
-+  __AUTH_CONST.__cfstring: 0x9520
-+  __AUTH_CONST.__objc_const: 0x7668
-+  __AUTH_CONST.__objc_intobj: 0x3f0
-   __AUTH_CONST.__objc_dictobj: 0x1e0
--  __AUTH_CONST.__objc_arrayobj: 0x8b8
--  __AUTH_CONST.__auth_got: 0xba8
--  __AUTH.__objc_data: 0x1220
--  __DATA.__objc_ivar: 0x37c
--  __DATA.__data: 0x658
-+  __AUTH_CONST.__objc_arrayobj: 0xb40
-+  __AUTH_CONST.__auth_got: 0xbe0
-+  __AUTH.__objc_data: 0x1680
-+  __DATA.__objc_ivar: 0x3a4
-+  __DATA.__data: 0x6b8
-   __DATA.__common: 0x28
--  __DATA_DIRTY.__objc_data: 0xdc0
--  __DATA_DIRTY.__bss: 0x1a0
-+  __DATA_DIRTY.__objc_data: 0xf50
-+  __DATA_DIRTY.__bss: 0x1b0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/updaters/libSavageRestoreInfo_iOS.dylib
-   - /usr/lib/updaters/libSavageUpdater_iOS.dylib
 -  Functions: 2569
 -  Symbols:   664
 -  CStrings:  2470
 +  Functions: 2783
 +  Symbols:   697
 +  CStrings:  2629
- 
 Symbols:
 + _CFBooleanGetTypeID
 + _CFStringCompare

@@ -2,129 +2,54 @@
 
 > `/System/Library/Frameworks/GameController.framework/GameController`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_arrayobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfc208` | `0x100990` | **`+0x4788`** |
+| `__AUTH_CONST.__objc_const` | `0x48618` | `0x4cbb8` | **`+0x45a0`** |
+| `__TEXT.__objc_methlist` | `0xf2b4` | `0xff54` | **`+0xca0`** |
+| `__DATA_DIRTY.__objc_data` | `0xff0` | `0x1810` | **`+0x820`** |
+| `__TEXT.__cstring` | `0x9c01` | `0xa101` | **`+0x500`** |
+| `__AUTH_CONST.__cfstring` | `0xaf00` | `0xb380` | **`+0x480`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4b78` | `0x4f68` | **`+0x3f0`** |
+| `__AUTH.__objc_data` | `0x5558` | `0x5198` | **`-0x3c0`** |
+| `__DATA.__data` | `0x5c30` | `0x5f90` | **`+0x360`** |
+| `__TEXT.__oslogstring` | `0x8348` | `0x85a8` | **`+0x260`** |
+| `__TEXT.__unwind_info` | `0x4bf8` | `0x4de0` | **`+0x1e8`** |
+| `__DATA_CONST.__got` | `0xcd0` | `0xdf0` | **`+0x120`** |
+| `__TEXT.__gcc_except_tab` | `0x36cc` | `0x37d0` | **`+0x104`** |
+| `__DATA.__objc_ivar` | `0x15b8` | `0x16a0` | **`+0xe8`** |
+| `__AUTH_CONST.__const` | `0x22f0` | `0x23c0` | **`+0xd0`** |
+| `__DATA_CONST.__const` | `0x2bd8` | `0x2c70` | **`+0x98`** |
+| `__AUTH_CONST.__auth_got` | `0xf60` | `0xfd0` | **`+0x70`** |
+| `__DATA_CONST.__objc_classlist` | `0x9b8` | `0xa28` | **`+0x70`** |
+| `__DATA_CONST.__objc_superrefs` | `0x890` | `0x900` | **`+0x70`** |
+| `__TEXT.__dlopen_cstrs` | `0xfd` | `0xab` | **`-0x52`** |
+| `__DATA_CONST.__objc_protolist` | `0x7d8` | `0x820` | **`+0x48`** |
+| `__DATA.__bss` | `0x2810` | `0x2840` | **`+0x30`** |
+| `__DATA_CONST.__objc_protorefs` | `0x4a8` | `0x4d0` | **`+0x28`** |
+| `__AUTH_CONST.__objc_intobj` | `0x1080` | `0x1098` | **`+0x18`** |
+| `__AUTH.__data` | `0x5a0` | `0x5b0` | **`+0x10`** |
+| `__TEXT.__const` | `0x23dc` | `0x23ec` | **`+0x10`** |
+
+### Other Changes
 
 ```diff
 
 -14.0.19.0.0
--  __TEXT.__text: 0xfc208
 +14.0.21.0.0
-+  __TEXT.__text: 0x100990
-   __TEXT.__init_offsets: 0x4
--  __TEXT.__objc_methlist: 0xf2b4
--  __TEXT.__const: 0x23dc
--  __TEXT.__gcc_except_tab: 0x36cc
--  __TEXT.__cstring: 0x9c01
--  __TEXT.__oslogstring: 0x8348
--  __TEXT.__dlopen_cstrs: 0xfd
-+  __TEXT.__objc_methlist: 0xff54
-+  __TEXT.__const: 0x23ec
-+  __TEXT.__gcc_except_tab: 0x37d0
-+  __TEXT.__cstring: 0xa101
-+  __TEXT.__oslogstring: 0x85a8
-+  __TEXT.__dlopen_cstrs: 0xab
-   __TEXT.__swift5_typeref: 0x878
-   __TEXT.__swift5_reflstr: 0x34f
-   __TEXT.__swift5_assocty: 0x3e8
 
-   __TEXT.__swift5_types: 0xb0
-   __TEXT.__swift5_capture: 0x10c
-   __TEXT.__swift5_builtin: 0x28
--  __TEXT.__unwind_info: 0x4bf8
-+  __TEXT.__unwind_info: 0x4de0
-   __TEXT.__eh_frame: 0x170
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2bd8
--  __DATA_CONST.__objc_classlist: 0x9b8
-+  __DATA_CONST.__const: 0x2c70
-+  __DATA_CONST.__objc_classlist: 0xa28
-   __DATA_CONST.__objc_catlist: 0xb8
--  __DATA_CONST.__objc_protolist: 0x7d8
-+  __DATA_CONST.__objc_protolist: 0x820
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4b78
--  __DATA_CONST.__objc_protorefs: 0x4a8
--  __DATA_CONST.__objc_superrefs: 0x890
-+  __DATA_CONST.__objc_selrefs: 0x4f68
-+  __DATA_CONST.__objc_protorefs: 0x4d0
-+  __DATA_CONST.__objc_superrefs: 0x900
-   __DATA_CONST.__objc_arraydata: 0x470
--  __DATA_CONST.__got: 0xcd0
--  __AUTH_CONST.__const: 0x22f0
--  __AUTH_CONST.__cfstring: 0xaf00
--  __AUTH_CONST.__objc_const: 0x48618
--  __AUTH_CONST.__objc_intobj: 0x1080
-+  __DATA_CONST.__got: 0xdf0
-+  __AUTH_CONST.__const: 0x23c0
-+  __AUTH_CONST.__cfstring: 0xb380
-+  __AUTH_CONST.__objc_const: 0x4cbb8
-+  __AUTH_CONST.__objc_intobj: 0x1098
-   __AUTH_CONST.__objc_dictobj: 0xa0
-   __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__auth_got: 0xf60
--  __AUTH.__objc_data: 0x5558
--  __AUTH.__data: 0x5a0
--  __DATA.__objc_ivar: 0x15b8
--  __DATA.__data: 0x5c30
-+  __AUTH_CONST.__auth_got: 0xfd0
-+  __AUTH.__objc_data: 0x5198
-+  __AUTH.__data: 0x5b0
-+  __DATA.__objc_ivar: 0x16a0
-+  __DATA.__data: 0x5f90
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x2810
-+  __DATA.__bss: 0x2840
-   __DATA.__common: 0x90
--  __DATA_DIRTY.__objc_data: 0xff0
-+  __DATA_DIRTY.__objc_data: 0x1810
-   __DATA_DIRTY.__data: 0x8
-   __DATA_DIRTY.__bss: 0x200
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-
-   - /System/Library/Frameworks/ExternalAccessory.framework/ExternalAccessory
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
 +  - /System/Library/Frameworks/ImageIO.framework/ImageIO
-   - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
-   - /System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers
-   - /System/Library/Frameworks/UserNotifications.framework/UserNotifications
 
-   - /System/Library/PrivateFrameworks/GameControllerFoundation.framework/GameControllerFoundation
-   - /System/Library/PrivateFrameworks/GameControllerIO.framework/GameControllerIO
-   - /System/Library/PrivateFrameworks/GameControllerSettings.framework/GameControllerSettings
 +  - /System/Library/PrivateFrameworks/IconServices.framework/IconServices
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices
-   - /usr/lib/libSystem.B.dylib
 
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 7476
--  Symbols:   16227
+-  Symbols:   14412
 -  CStrings:  2386
 +  Functions: 7692
-+  Symbols:   16782
++  Symbols:   14892
 +  CStrings:  2427
- 
 Symbols:
 + +[GCControllerLowBatteryNotification supportsSecureCoding]
 + +[GCGameIntentLaunchAppleGamesAction supportsSecureCoding]
@@ -639,93 +564,6 @@ Symbols:
 + _kCFUserNotificationTextFieldTitlesKey
 + _kCFUserNotificationTextFieldValuesKey
 + _kEntryAssociatedKey
-+ _objc_msgSend$CGImage
-+ _objc_msgSend$GameControllerFoundationBundle
-+ _objc_msgSend$_cancelEntry:
-+ _objc_msgSend$_enqueueEntry:
-+ _objc_msgSend$_initWithConnection:server:userDefaultsProxy:gameIntentProxy:userNotificationProxy:
-+ _objc_msgSend$_onrunloop_finalizeEntry:
-+ _objc_msgSend$_onrunloop_handleResponseForNotification:responseFlags:
-+ _objc_msgSend$_onrunloop_pump
-+ _objc_msgSend$_terminate
-+ _objc_msgSend$_ui_configureNotificationDictionary:
-+ _objc_msgSend$addIndex:
-+ _objc_msgSend$cancelPresentation
-+ _objc_msgSend$checkBoxCount
-+ _objc_msgSend$checkExceptionForApp:parent:
-+ _objc_msgSend$checkSystemGestureEnabled
-+ _objc_msgSend$copyNotificationDictionary
-+ _objc_msgSend$currentThread
-+ _objc_msgSend$defaultManager
-+ _objc_msgSend$dismissAction
-+ _objc_msgSend$domain
-+ _objc_msgSend$firstIndex
-+ _objc_msgSend$future
-+ _objc_msgSend$futureWithError:
-+ _objc_msgSend$gc_userNotificationError:userInfo:
-+ _objc_msgSend$hasPopUp
-+ _objc_msgSend$iconWithDecorations:
-+ _objc_msgSend$imageForDescriptor:
-+ _objc_msgSend$indexGreaterThanIndex:
-+ _objc_msgSend$indexOfObjectIdenticalTo:
-+ _objc_msgSend$initWithChirality:batteryLevel:
-+ _objc_msgSend$initWithConditional:
-+ _objc_msgSend$initWithDismissAction:textFieldValues:checkedCheckBoxes:popUpSelection:
-+ _objc_msgSend$initWithFuture:
-+ _objc_msgSend$initWithPromise:
-+ _objc_msgSend$initWithRequest:promise:
-+ _objc_msgSend$initWithSize:scale:
-+ _objc_msgSend$initWithSystemColor:
-+ _objc_msgSend$initWithTarget:selector:object:
-+ _objc_msgSend$initWithType:
-+ _objc_msgSend$isEqualToIndexSet:
-+ _objc_msgSend$localizedStringForKey:value:table:
-+ _objc_msgSend$notification
-+ _objc_msgSend$observeCancellation:
-+ _objc_msgSend$observeFinish:
-+ _objc_msgSend$performAction
-+ _objc_msgSend$performActions:
-+ _objc_msgSend$performSelector:onThread:withObject:waitUntilDone:
-+ _objc_msgSend$placeholder
-+ _objc_msgSend$prepareImageForDescriptor:
-+ _objc_msgSend$prepareNotification:error:
-+ _objc_msgSend$presentUserNotificationForRequest:
-+ _objc_msgSend$presentUserNotificationForRequest:client:reply:
-+ _objc_msgSend$presentationDidCancel
-+ _objc_msgSend$presentationDidFailWithError:
-+ _objc_msgSend$presentationDidSucceedWithResponse:
-+ _objc_msgSend$promise
-+ _objc_msgSend$refreshActiveServer
-+ _objc_msgSend$removeItemAtURL:error:
-+ _objc_msgSend$request
-+ _objc_msgSend$requestFlags
-+ _objc_msgSend$runCleanupHandlers
-+ _objc_msgSend$setAlertHeader:
-+ _objc_msgSend$setAlertLevel:
-+ _objc_msgSend$setAlertMessage:
-+ _objc_msgSend$setAlternateButtonTitle:
-+ _objc_msgSend$setDefaultButtonTitle:
-+ _objc_msgSend$setEnclosureColors:
-+ _objc_msgSend$setIconURL:
-+ _objc_msgSend$setIconURL:withCleanupHandler:
-+ _objc_msgSend$setName:
-+ _objc_msgSend$setNoDefaultButton:
-+ _objc_msgSend$setNotification:
-+ _objc_msgSend$setPosition:
-+ _objc_msgSend$setQualityOfService:
-+ _objc_msgSend$setRenderingMode:
-+ _objc_msgSend$setServerHandle:
-+ _objc_msgSend$setSoundURL:
-+ _objc_msgSend$setSource:
-+ _objc_msgSend$setSymbolColors:
-+ _objc_msgSend$setTerminated:
-+ _objc_msgSend$setTimeout:
-+ _objc_msgSend$start
-+ _objc_msgSend$systemGestureAction
-+ _objc_msgSend$terminated
-+ _objc_msgSend$textFieldCount
-+ _objc_msgSend$timeout
-+ _objc_msgSend$tryMergeWithOther:
 + _objc_retain_x6
 - +[_GCAgentClientProxy clientProxyWithConnection:server:userDefaultsProxy:gameIntentProxy:]
 - -[GCGameIntentLauncherXPCProxyClient launchApplicationWithBundleIdentifier:]
@@ -760,18 +598,6 @@ Symbols:
 - _audit_stringGamePolicy
 - _getGPUserExperienceProxyClass
 - _getGPUserExperienceProxyClass.softClass
-- _objc_msgSend$_initWithConnection:server:userDefaultsProxy:gameIntentProxy:
-- _objc_msgSend$defaultWorkspace
-- _objc_msgSend$dismissAppLibraryWithCompletion:
-- _objc_msgSend$launchApplicationWithBundleIdentifier:
-- _objc_msgSend$launchGameOverlayWithOptions:reply:
-- _objc_msgSend$launchGamesApp
-- _objc_msgSend$openApplicationWithBundleID:
-- _objc_msgSend$presentAppLibraryCategoryPodForCategoryIdentifier:completion:
-- _objc_msgSend$proxy
-- _objc_msgSend$toggleGamesFolder
-- _objc_msgSend$togglePlatformGamesLibrary
-- _objc_msgSend$tryPresentAppLibraryPod
 - _objc_retain_x5
 CStrings:
 + "#Mach message received during teardown"

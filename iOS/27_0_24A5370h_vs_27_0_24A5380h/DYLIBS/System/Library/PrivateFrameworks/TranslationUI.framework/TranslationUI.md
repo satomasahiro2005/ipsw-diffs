@@ -2,94 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/TranslationUI.framework/TranslationUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x107f18` | `0x107cf8` | **`-0x220`** |
+| `__TEXT.__swift5_typeref` | `0xc24e` | `0xc19e` | **`-0xb0`** |
+| `__TEXT.__const` | `0xacb4` | `0xac94` | **`-0x20`** |
+| `__DATA.__data` | `0x2a50` | `0x2a40` | **`-0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x2513` | `0x2523` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x273c` | `0x2748` | **`+0xc`** |
+| `__AUTH.__data` | `0xe68` | `0xe70` | **`+0x8`** |
+| `__AUTH_CONST.__auth_got` | `0x1fe8` | `0x1fe0` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0xef0` | `0xef8` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x3578` | `0x3580` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x107f18
-+  __TEXT.__text: 0x107cf8
-   __TEXT.__objc_methlist: 0xb8c
--  __TEXT.__const: 0xacb4
-+  __TEXT.__const: 0xac94
-   __TEXT.__cstring: 0x1f56
-   __TEXT.__oslogstring: 0x2711
-   __TEXT.__gcc_except_tab: 0x3c
--  __TEXT.__swift5_typeref: 0xc24e
-+  __TEXT.__swift5_typeref: 0xc19e
-   __TEXT.__swift5_capture: 0x116c
-   __TEXT.__constg_swiftt: 0x31e8
-   __TEXT.__swift5_builtin: 0x12c
--  __TEXT.__swift5_reflstr: 0x2513
--  __TEXT.__swift5_fieldmd: 0x273c
-+  __TEXT.__swift5_reflstr: 0x2523
-+  __TEXT.__swift5_fieldmd: 0x2748
-   __TEXT.__swift5_assocty: 0xcc0
-   __TEXT.__swift5_proto: 0x528
-   __TEXT.__swift5_types: 0x2f4
+-384.1.0.0.0
++384.3.0.0.0
 
-   __TEXT.__swift_as_ret: 0x108
-   __TEXT.__swift_as_cont: 0x30c
-   __TEXT.__swift5_protos: 0xc
--  __TEXT.__unwind_info: 0x3578
-+  __TEXT.__unwind_info: 0x3580
-   __TEXT.__eh_frame: 0x3b54
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0xe00
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__objc_superrefs: 0x18
--  __DATA_CONST.__got: 0xef0
-+  __DATA_CONST.__got: 0xef8
-   __AUTH_CONST.__const: 0x6810
-   __AUTH_CONST.__cfstring: 0x400
-   __AUTH_CONST.__objc_const: 0x2598
--  __AUTH_CONST.__auth_got: 0x1fe8
-+  __AUTH_CONST.__auth_got: 0x1fe0
-   __AUTH.__objc_data: 0xa58
--  __AUTH.__data: 0xe68
-+  __AUTH.__data: 0xe70
-   __DATA.__objc_ivar: 0x1c
--  __DATA.__data: 0x2a50
-+  __DATA.__data: 0x2a40
-   __DATA.__bss: 0x88a8
-   __DATA.__common: 0x120
-   __DATA_DIRTY.__objc_data: 0x8e0
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4998
--  Symbols:   3442
+-  Symbols:   2268
 +  Functions: 4997
-+  Symbols:   3440
-   CStrings:  488
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__objc_ivar : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   2266
 Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA6ButtonVyAA4ViewPAAE10labelStyleyQrqd__AA05LabelH0Rd__lFQOyAA0I0VyAA4TextVAA5ImageVSgG_011TranslationB004ListiH0VQo_GAA31AccessibilityAttachmentModifierVGAaFHPAvaFHPyHC_AxA0fP0HPyHCHC
 + _get_witness_table 7SwiftUI19_ConditionalContentVyAA05TupleD0VyACyAEyAA7SectionVyAA08ModifiedD0VyAA4TextVAA31AccessibilityAttachmentModifierVGSgAA7ForEachVySay011TranslationB013LanguageModelVGSSAIyAR0O10ListButtonVAA024_EnvironmentKeyTransformK0VySbGGGAA9EmptyViewVG_A3_QPGAGyA2_A0_A2_GG_AA0W0PAAE12onTapGesture5count7performQrSi_yyctFQOyAIyAGyA2_AA6HStackVyAEyAK_AA6SpacerVQPGGAKGAA01_d5ShapeK0VyAA9RectangleVGG_Qo_SgQPGA8_AAE15navigationTitleyQrAKFQOyA8_AAE9listStyleyQrqd__AA0Q5StyleRd__lFQOyAA0Q0Vys5NeverOA27_G_AA012InsetGroupedQ5StyleVQo__Qo_GAAA7_HPA27_AAA7_HPA6_AAA7_HPA4_AAA7_HPA3_AAA7_HPAoAA7_HpAnAA7_HPAkAA7_HPyHC_AmA0wK0HPyHCHC_HC_A0_AAA7_HPA_AAA7_HPAwAA7_HPyHC_AzAA41_HPyHCHC_HCA2_AAA7_HPyHCHC_A3_AAA7_HPAoAA7_HpAnAA7_HPAkAA7_HPyHC_AmAA41_HPyHCHC_HC_A0_AAA7_HPA_AAA7_HPAwAA7_HPyHC_AzAA41_HPyHCHC_HCA2_AAA7_HPyHCHCHX_HC_A5_AAA7_HPA2_AAA7_HPyHC_A0_AAA7_HPA_AAA7_HPAwAA7_HPyHC_AzAA41_HPyHCHC_HCA2_AAA7_HPyHCHCHC_A26_AAA7_Hpqd__AAA7_HD2_A25_HO_HCHX_HC_qd__AAA7_HD2_A39_HOHC
@@ -127,5 +65,4 @@ Symbols:
 - _symbolic _____y_____y_____y_____y__________GSg_____ySay_____GSSADy__________ySbGGG_____G_ARQPGACyAqIySay_____GSSAOGAQGG 7SwiftUI19_ConditionalContentV AA05TupleD0V AA7SectionV AA08ModifiedD0V AA4TextV AA31AccessibilityAttachmentModifierV AA7ForEachV 10Foundation6LocaleV 011TranslationB018LanguageListButtonV AA024_EnvironmentKeyTransformK0V AA9EmptyViewV AS0Q5ModelV
 - _symbolic _____y_____y_____y_____y__________GSg_____ySay_____GSSADy__________ySbGGG_____G_ARQPGACyAqIySay_____GSSAOGAQGG______yADyACyAQ_____yAByAE______QPGGAEG_____y_____GG_Qo_Sgt 7SwiftUI19_ConditionalContentV AA05TupleD0V AA7SectionV AA08ModifiedD0V AA4TextV AA31AccessibilityAttachmentModifierV AA7ForEachV 10Foundation6LocaleV 011TranslationB018LanguageListButtonV AA024_EnvironmentKeyTransformK0V AA9EmptyViewV AS0Q5ModelV AA0X0PAAE12onTapGesture5count7performQrSi_yyctFQO AA6HStackV AA6SpacerV AA01_d5ShapeK0V AA9RectangleV
 - _symbolic _____y_____y_____y_____y__________GSg_____ySay_____GSSADy__________ySbGGG_____G_ARQPGACyAqIySay_____GSSAOGAQG_G 7SwiftUI19_ConditionalContentV7StorageO AA05TupleD0V AA7SectionV AA08ModifiedD0V AA4TextV AA31AccessibilityAttachmentModifierV AA7ForEachV 10Foundation6LocaleV 011TranslationB018LanguageListButtonV AA024_EnvironmentKeyTransformL0V AA9EmptyViewV AU0R5ModelV
-
 ```

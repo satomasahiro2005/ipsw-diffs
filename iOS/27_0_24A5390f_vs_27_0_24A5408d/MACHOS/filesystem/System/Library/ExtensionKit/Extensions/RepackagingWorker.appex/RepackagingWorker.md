@@ -2,6 +2,6 @@
 
 > `/System/Library/ExtensionKit/Extensions/RepackagingWorker.appex/RepackagingWorker`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__constg_swiftt`

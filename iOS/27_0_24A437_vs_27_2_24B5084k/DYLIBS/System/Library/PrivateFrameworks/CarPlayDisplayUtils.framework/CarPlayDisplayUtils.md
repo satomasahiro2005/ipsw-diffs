@@ -2,59 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/CarPlayDisplayUtils.framework/CarPlayDisplayUtils`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15e38` | `0x16de4` | **`+0xfac`** |
+| `__TEXT.__oslogstring` | `0xa26` | `0xb76` | **`+0x150`** |
+| `__TEXT.__eh_frame` | `0x368` | `0x2b0` | **`-0xb8`** |
+| `__TEXT.__swift5_typeref` | `0x2f2` | `0x2c2` | **`-0x30`** |
+| `__TEXT.__const` | `0x10e0` | `0x10b8` | **`-0x28`** |
+| `__TEXT.__unwind_info` | `0x470` | `0x448` | **`-0x28`** |
+| `__TEXT.__swift5_fieldmd` | `0x4b8` | `0x4dc` | **`+0x24`** |
+| `__TEXT.__cstring` | `0x2ea` | `0x2ca` | **`-0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x550` | `0x56e` | **`+0x1e`** |
+| `__DATA.__data` | `0x1b0` | `0x1a0` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x448` | `0x450` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -799.3.0.0.0
--  __TEXT.__text: 0x15a6c
--  __TEXT.__const: 0x10e0
--  __TEXT.__swift5_typeref: 0x2f2
 +807.2.0.0.0
-+  __TEXT.__text: 0x16a0c
-+  __TEXT.__const: 0x10b8
-+  __TEXT.__swift5_typeref: 0x2c2
-   __TEXT.__constg_swiftt: 0x274
--  __TEXT.__swift5_reflstr: 0x550
--  __TEXT.__swift5_fieldmd: 0x4b8
-+  __TEXT.__swift5_reflstr: 0x56e
-+  __TEXT.__swift5_fieldmd: 0x4dc
-   __TEXT.__swift5_proto: 0xb8
-   __TEXT.__swift5_types: 0x5c
--  __TEXT.__cstring: 0x2ea
-+  __TEXT.__cstring: 0x2ca
-   __TEXT.__swift5_builtin: 0x64
-   __TEXT.__swift5_mpenum: 0x1c
--  __TEXT.__oslogstring: 0xa26
-+  __TEXT.__oslogstring: 0xb76
-   __TEXT.__swift5_assocty: 0x78
--  __TEXT.__unwind_info: 0x530
--  __TEXT.__eh_frame: 0x368
-+  __TEXT.__unwind_info: 0x528
-+  __TEXT.__eh_frame: 0x2b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0x40
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0xcc0
--  __AUTH_CONST.__auth_got: 0x448
--  __DATA.__data: 0x1b0
-+  __AUTH_CONST.__auth_got: 0x450
-+  __DATA.__data: 0x1a0
-   __DATA.__common: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 511
--  Symbols:   232
+-  Symbols:   224
 -  CStrings:  57
 +  Functions: 513
-+  Symbols:   231
++  Symbols:   223
 +  CStrings:  55
- 
 Symbols:
 + ___swift_memcpy6_1
 + _objc_retain_x21

@@ -2,84 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/FaceTimeNotificationUI.framework/FaceTimeNotificationUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc7560` | `0xc8c80` | **`+0x1720`** |
+| `__TEXT.__swift5_typeref` | `0xfa5a` | `0xfd5c` | **`+0x302`** |
+| `__TEXT.__const` | `0xb194` | `0xb214` | **`+0x80`** |
+| `__DATA.__data` | `0x3c28` | `0x3ca0` | **`+0x78`** |
+| `__AUTH_CONST.__auth_got` | `0x1fe8` | `0x2048` | **`+0x60`** |
+| `__DATA_CONST.__got` | `0xd90` | `0xda8` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x2de0` | `0x2df0` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x660` | `0x668` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xc7560
-+  __TEXT.__text: 0xc8c80
-   __TEXT.__objc_methlist: 0x2ec
--  __TEXT.__const: 0xb194
-+  __TEXT.__const: 0xb214
-   __TEXT.__constg_swiftt: 0x36e4
--  __TEXT.__swift5_typeref: 0xfa5a
-+  __TEXT.__swift5_typeref: 0xfd5c
-   __TEXT.__swift5_builtin: 0x17c
-   __TEXT.__swift5_reflstr: 0x1fee
-   __TEXT.__swift5_fieldmd: 0x2a0c
+-3064.100.8.0.0
++3066.100.3.0.0
 
-   __TEXT.__swift_as_ret: 0x7c
-   __TEXT.__swift5_protos: 0x3c
-   __TEXT.__lldbsummaries: 0x3f
--  __TEXT.__unwind_info: 0x2de0
-+  __TEXT.__unwind_info: 0x2df0
-   __TEXT.__eh_frame: 0x23c8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_classlist: 0xb8
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x660
-+  __DATA_CONST.__objc_selrefs: 0x668
-   __DATA_CONST.__objc_protorefs: 0x38
--  __DATA_CONST.__got: 0xd90
-+  __DATA_CONST.__got: 0xda8
-   __AUTH_CONST.__const: 0x5628
-   __AUTH_CONST.__objc_const: 0x2a20
--  __AUTH_CONST.__auth_got: 0x1fe8
-+  __AUTH_CONST.__auth_got: 0x2048
-   __AUTH.__objc_data: 0xa70
-   __AUTH.__data: 0x3b88
--  __DATA.__data: 0x3c28
-+  __DATA.__data: 0x3ca0
-   __DATA.__bss: 0xba58
-   __DATA.__common: 0xc8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4582
--  Symbols:   2610
+-  Symbols:   1807
 +  Functions: 4588
-+  Symbols:   2624
-   CStrings:  385
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
++  Symbols:   1820
 Symbols:
 + _get_witness_table 7SwiftUI6HStackVyAA12TupleContentVyAA08ModifiedE0VyAGy020FaceTimeNotificationB014CallAvatarViewVyAH0j5BadgeL0VGAA12_FrameLayoutVGAA21_TraitWritingModifierVyAA010TransitionP3KeyVGGSg_AGyAGyAA0L0PAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAA6VStackVyAEyACyAEyAGy014CommunicationsB012MarqueeLabelVAA012_EnvironmenttqR0VyAA4FontVSgGG_AEyAA6SpacerV_AGyAA4TextVAA16_BlendModeEffectVGQPGSgQPGG_AA6IDViewVyAGyAYA4_E011conditionallR03for04viewR0QrSb_qd__xXEtAaXRd__lFQOyAGyAGyAA5GroupVyAA012_ConditionalE0VyA33_yAGyACyAEyA4_0mL0VSg_AGyA31_yA33_yAyAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyAA6ButtonVyACyAEyA6__AGyA15_AOGAA5ImageVQPGGG_AA16PlainButtonStyleVQo_A6_GGA8_ySiSgGGQPGGAA010_FixedSizeO0VGA33_yA33_yACyAEyA36__A17_QPGGA17_GA17_GGA62_GSgGA12_GAA016_ForegroundStyleR0VyAA5ColorVGG_AGyA74_A19_GQo_AA22_MatchedGeometryEffectVySSGGSbGAYA4_EA27_A28_A29_QrSb_qd__xXEtAaXRd__lFQOyA17__A20_Qo_SgQPGG_Qo_AA13_OffsetEffectVGAH17AvoidsObstructionVGQPGGAaXHPyHC
-+ _objc_msgSend$tertiaryLabelColor
 + _symbolic _____Sg 7SwiftUI4TextV13EncapsulationV
 + _symbolic _____Sg 7SwiftUI4TextV13EncapsulationV11PlatterSizeV
 + _symbolic _____Sg 7SwiftUI4TextV13EncapsulationV5ScaleV
@@ -110,5 +58,4 @@ Symbols:
 - _symbolic _____y_____y_____yACy_____y_____G_____G_____y_____GGSg_ACyACy_____y_____yAByACy__________y_____SgGG______yACy_____yACyACy_____y_____yAWyACyAAyABy_____Sg_ACyAVyAWy_____y_____yAAyAByAO_ACy_____AGG_____QPGGG______Qo_AOGGAPySiSgGGQPGG_____GAWyAWyAAyAByAY______QPGGA16_GA16_GGA19_GSgGASG_____y_____GG_ACyA29______GQo______ySSGGSbGQPGG_Qo______G_____GQPGG 7SwiftUI6HStackV AA12TupleContentV AA08ModifiedE0V 020FaceTimeNotificationB014CallAvatarViewV AH0j5BadgeL0V AA12_FrameLayoutV AA21_TraitWritingModifierV AA010TransitionP3KeyV AA0L0PAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQO AA6VStackV 014CommunicationsB012MarqueeLabelV AA012_EnvironmenttqR0V AA4FontV AA6IDViewV ATA_E011conditionallR03for04viewR0QrSb_qd__xXEtAaSRd__lFQO AA5GroupV AA012_ConditionalE0V A_0mL0V AtAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQO AA6ButtonV AA6SpacerV AA5ImageV AA16PlainButtonStyleV AA010_FixedSizeO0V AA4TextV AA016_ForegroundStyleR0V AA5ColorV AA16_BlendModeEffectV AA22_MatchedGeometryEffectV AA13_OffsetEffectV AH17AvoidsObstructionV
 - _symbolic _____y_____y_____y__________y_____SgGG______yACy_____yACyACy_____y_____yALyACy_____yABy_____Sg_ACyAKyALy_____y_____yAMyAByAD_ACy__________G_____QPGGG______Qo_ADGGAEySiSgGGQPGG_____GALyALyAMyAByAO______QPGGA7_GA7_GGA10_GSgGAHG_____y_____GG_ACyA20______GQo______ySSGGSbGQPGG 7SwiftUI6VStackV AA12TupleContentV AA08ModifiedE0V 014CommunicationsB012MarqueeLabelV AA30_EnvironmentKeyWritingModifierV AA4FontV AA6IDViewV AA4ViewPAHE011conditionalpM03for04viewM0QrSb_qd__xXEtAaQRd__lFQO AA5GroupV AA012_ConditionalE0V AA6HStackV AH05BadgeP0V ArAE11buttonStyleyQrqd__AA015PrimitiveButtonY0Rd__lFQO AA6ButtonV AA6SpacerV AA12_FrameLayoutV AA5ImageV AA011PlainButtonY0V AA16_FixedSizeLayoutV AA4TextV AA011_ForegroundyM0V AA5ColorV AA16_BlendModeEffectV AA22_MatchedGeometryEffectV
 - _symbolic _____y_____y_____y_____yAAy__________y_____SgGG______yAAy_____yAAyAAy_____y_____yALyAAy_____yACy_____Sg_AAyAKyALy_____y_____yAMyACyAD_AAy__________G_____QPGGG______Qo_ADGGAEySiSgGGQPGG_____GALyALyAMyACyAO______QPGGA7_GA7_GGA10_GSgGAHG_____y_____GG_AAyA20______GQo______ySSGGSbGQPGG_Qo______G 7SwiftUI15ModifiedContentV AA4ViewPAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQO AA6VStackV AA05TupleD0V 014CommunicationsB012MarqueeLabelV AA30_EnvironmentKeyWritingModifierV AA4FontV AA6IDViewV AeNE011conditionaleT03for04viewT0QrSb_qd__xXEtAaDRd__lFQO AA5GroupV AA012_ConditionalD0V AA6HStackV AN05BadgeE0V AeAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQO AA6ButtonV AA6SpacerV AA12_FrameLayoutV AA5ImageV AA16PlainButtonStyleV AA16_FixedSizeLayoutV AA4TextV AA016_ForegroundStyleT0V AA5ColorV AA16_BlendModeEffectV AA22_MatchedGeometryEffectV AA13_OffsetEffectV
-
 ```

@@ -2,34 +2,35 @@
 
 > `/usr/libexec/caraccessoryd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6858c` | `0x685f4` | **`+0x68`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
 - `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
 - `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
 
-```diff
+### Other Changes
 
- 542.7.0.0.0
--  __TEXT.__text: 0x6858c
-+  __TEXT.__text: 0x685f4
-   __TEXT.__auth_stubs: 0x1850
-   __TEXT.__objc_stubs: 0x37a0
-   __TEXT.__objc_methlist: 0x1ebc
+```text
 Functions:
 ~ _$sSr15_stableSortImpl2byySbx_xtKXE_tKFySryxGz_SiztKXEfU_So18CAFDeepLinkSettingC7setting_So24CAFProminenceInformationC10prominencet_Tg5098$s13caraccessoryd17CAFDAppLinksAgentC010_updateAppC033_D2640CE36BC885AE244045554995650ELLyyFSbSo18efg14C7setting_So24iJ30C10prominencet_AgH_AjKttXEfU0_Tf1nnncn_n : 2312 -> 2300
 ~ _$sSMsSKRzrlE14_insertionSort6within9sortedEnd2byySny5IndexSlQzG_AFSb7ElementSTQz_AItKXEtKFSrySo18CAFDeepLinkSettingC7setting_So24CAFProminenceInformationC10prominencetG_Tg5098$s13caraccessoryd17CAFDAppLinksAgentC010_updateAppC033_D2640CE36BC885AE244045554995650ELLyyFSbSo18ijk14C7setting_So24mN30C10prominencet_AgH_AjKttXEfU0_Tf1nncn_n : 752 -> 736

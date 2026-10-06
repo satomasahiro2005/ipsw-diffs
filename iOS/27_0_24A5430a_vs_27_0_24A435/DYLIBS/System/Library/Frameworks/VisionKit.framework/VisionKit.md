@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/VisionKit.framework/VisionKit`
 
-```diff
+### Section Size Changes
 
- 344.0.0.0.0
--  __TEXT.__text: 0x18598
-+  __TEXT.__text: 0x18590
-   __TEXT.__objc_methlist: 0x554
-   __TEXT.__const: 0x1170
-   __TEXT.__swift5_typeref: 0x7e0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x18598` | `0x18590` | **`-0x8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_24cc3d77c -> sub_24d64077c : 992 -> 984
+~ sub_24caea77c -> sub_24d4f477c : 992 -> 984
 ```

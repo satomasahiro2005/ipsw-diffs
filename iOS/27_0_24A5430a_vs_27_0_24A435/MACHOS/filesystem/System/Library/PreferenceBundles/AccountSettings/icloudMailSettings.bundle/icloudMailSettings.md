@@ -2,34 +2,35 @@
 
 > `/System/Library/PreferenceBundles/AccountSettings/icloudMailSettings.bundle/icloudMailSettings`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xffd38` | `0xffd84` | **`+0x4c`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
 - `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
 - `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
 
-```diff
+### Other Changes
 
- 2027.0.5.0.0
--  __TEXT.__text: 0xffd38
-+  __TEXT.__text: 0xffd84
-   __TEXT.__auth_stubs: 0x2e90
-   __TEXT.__objc_stubs: 0x15e0
-   __TEXT.__objc_methlist: 0x5a8
+```text
 Functions:
 ~ _$sSS18icloudMailSettingsE15validateEmailId5rulesSSSgSayAA14ValidationRuleVG_tF : 340 -> 356
 ~ _$ss17_NativeDictionaryV4copyyyFSS_SbTg5 : 352 -> 356

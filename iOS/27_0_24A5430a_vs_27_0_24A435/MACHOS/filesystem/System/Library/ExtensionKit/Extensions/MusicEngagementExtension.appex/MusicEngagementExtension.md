@@ -2,51 +2,39 @@
 
 > `/System/Library/ExtensionKit/Extensions/MusicEngagementExtension.appex/MusicEngagementExtension`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_typeref`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4f0d8c` | `0x4f0ebc` | **`+0x130`** |
+| `__TEXT.__unwind_info` | `0x10990` | `0x109a0` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
 - `__TEXT.__const`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
 - `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
- 4026.110.1.0.0
--  __TEXT.__text: 0x4f0d8c
-+  __TEXT.__text: 0x4f0ebc
-   __TEXT.__auth_stubs: 0x9930
-   __TEXT.__objc_stubs: 0xcd80
-   __TEXT.__objc_methlist: 0x3d14
-
-   __TEXT.__swift5_protos: 0x128
-   __TEXT.__swift5_mpenum: 0x1b8
-   __TEXT.__ustring: 0xec
--  __TEXT.__unwind_info: 0x10990
-+  __TEXT.__unwind_info: 0x109a0
-   __TEXT.__eh_frame: 0x1672c
-   __DATA_CONST.__const: 0x32040
-   __DATA_CONST.__cfstring: 0x120
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 23988
 -  Symbols:   61115
 +  Symbols:   61117
-   CStrings:  5309
- 
 Symbols:
 + _$sSo13MGProductTypeaSQSCSQ2eeoiySbx_xtFZTW
 + _$sSo13MGProductTypeaSYSCSY8rawValue03RawD0QzvgTW

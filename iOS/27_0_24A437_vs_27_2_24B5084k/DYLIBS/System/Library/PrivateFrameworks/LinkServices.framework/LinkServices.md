@@ -2,152 +2,83 @@
 
 > `/System/Library/PrivateFrameworks/LinkServices.framework/LinkServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x163ed4` | `0x1231d4` | **`-0x40d00`** |
+| `__TEXT.__eh_frame` | `0x78b8` | `0x4578` | **`-0x3340`** |
+| `__AUTH_CONST.__const` | `0x7a98` | `0x59b8` | **`-0x20e0`** |
+| `__TEXT.__const` | `0x8928` | `0x6e88` | **`-0x1aa0`** |
+| `__TEXT.__unwind_info` | `0x6c38` | `0x56a0` | **`-0x1598`** |
+| `__TEXT.__oslogstring` | `0x7b17` | `0x8f60` | **`+0x1449`** |
+| `__DATA.__data` | `0x31f4` | `0x24c4` | **`-0xd30`** |
+| `__DATA.__bss` | `0x4e68` | `0x4150` | **`-0xd18`** |
+| `__TEXT.__swift5_typeref` | `0x32ac` | `0x287a` | **`-0xa32`** |
+| `__TEXT.__constg_swiftt` | `0x20d4` | `0x1810` | **`-0x8c4`** |
+| `__TEXT.__swift5_fieldmd` | `0x16b4` | `0xdfc` | **`-0x8b8`** |
+| `__AUTH.__data` | `0x1660` | `0xf20` | **`-0x740`** |
+| `__TEXT.__swift5_reflstr` | `0x1071` | `0xa5c` | **`-0x615`** |
+| `__DATA.__common` | `0x658` | `0x50` | **`-0x608`** |
+| `__AUTH.__objc_data` | `0x39f0` | `0x3ff0` | **`+0x600`** |
+| `__TEXT.__swift5_capture` | `0x15ec` | `0x1034` | **`-0x5b8`** |
+| `__AUTH_CONST.__cfstring` | `0x8780` | `0x8be0` | **`+0x460`** |
+| `__AUTH_CONST.__auth_got` | `0x1700` | `0x13a0` | **`-0x360`** |
+| `__TEXT.__cstring` | `0xc397` | `0xc080` | **`-0x317`** |
+| `__DATA_DIRTY.__data` | `0x328` | `0x40` | **`-0x2e8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5068` | `0x52c0` | **`+0x258`** |
+| `__TEXT.__swift5_assocty` | `0x460` | `0x210` | **`-0x250`** |
+| `__TEXT.__objc_methlist` | `0xae84` | `0xb0b0` | **`+0x22c`** |
+| `__DATA_CONST.__const` | `0x27e8` | `0x2930` | **`+0x148`** |
+| `__TEXT.__swift5_proto` | `0x378` | `0x244` | **`-0x134`** |
+| `__DATA_DIRTY.__objc_data` | `0x1fa0` | `0x1ec8` | **`-0xd8`** |
+| `__DATA_CONST.__got` | `0x18a0` | `0x17d0` | **`-0xd0`** |
+| `__TEXT.__swift5_types` | `0x1fc` | `0x160` | **`-0x9c`** |
+| `__DATA_DIRTY.__bss` | `0x1c8` | `0x140` | **`-0x88`** |
+| `__TEXT.__gcc_except_tab` | `0x206c` | `0x1fe4` | **`-0x88`** |
+| `__AUTH_CONST.__objc_const` | `0x16748` | `0x167b8` | **`+0x70`** |
+| `__TEXT.__dlopen_cstrs` | `0x565` | `0x5cd` | **`+0x68`** |
+| `__DATA_CONST.__objc_arraydata` | `0x38` | `0x8` | **`-0x30`** |
+| `__TEXT.__swift5_protos` | `0x68` | `0x40` | **`-0x28`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x30` | `0x18` | **`-0x18`** |
+| `__DATA.__objc_ivar` | `0xaec` | `0xb00` | **`+0x14`** |
+| `__TEXT.__swift5_builtin` | `0x1f4` | `0x208` | **`+0x14`** |
+| `__DATA_CONST.__objc_catlist` | `0x128` | `0x138` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x5f8` | `0x608` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x848` | `0x850` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x1e8` | `0x1e0` | **`-0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x108` | `0x100` | **`-0x8`** |
+| `__DATA_DIRTY.__common` | `0x8` | `—` | **`-0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x58` | `0x50` | **`-0x8`** |
+| `__TEXT.__swift_as_cont` | `0x19c` | `0x198` | **`-0x4`** |
+| `__TEXT.__swift_as_entry` | `0x104` | `0x100` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -301.0.51.1.104
--  __TEXT.__text: 0x15b5c8
 +301.1.9.1.101
-+  __TEXT.__text: 0x11bab8
-   __TEXT.__lazy_helpers: 0xa8
--  __TEXT.__objc_methlist: 0xae84
--  __TEXT.__dlopen_cstrs: 0x565
--  __TEXT.__const: 0x8928
--  __TEXT.__constg_swiftt: 0x20d4
--  __TEXT.__swift5_typeref: 0x32ac
--  __TEXT.__swift5_builtin: 0x1f4
--  __TEXT.__swift5_reflstr: 0x1071
--  __TEXT.__swift5_fieldmd: 0x16b4
--  __TEXT.__swift5_assocty: 0x460
--  __TEXT.__swift5_capture: 0x15ec
--  __TEXT.__cstring: 0xc397
--  __TEXT.__swift5_proto: 0x378
--  __TEXT.__swift5_types: 0x1fc
--  __TEXT.__swift5_protos: 0x68
--  __TEXT.__oslogstring: 0x7b17
--  __TEXT.__swift_as_entry: 0x104
-+  __TEXT.__objc_methlist: 0xb0b0
-+  __TEXT.__dlopen_cstrs: 0x5cd
-+  __TEXT.__const: 0x6e88
-+  __TEXT.__swift5_typeref: 0x287a
-+  __TEXT.__swift5_fieldmd: 0xdfc
-+  __TEXT.__constg_swiftt: 0x1810
-+  __TEXT.__swift5_builtin: 0x208
-+  __TEXT.__swift5_reflstr: 0xa5c
-+  __TEXT.__swift5_assocty: 0x210
-+  __TEXT.__cstring: 0xc080
-+  __TEXT.__swift5_protos: 0x40
-+  __TEXT.__swift5_proto: 0x244
-+  __TEXT.__swift5_types: 0x160
-+  __TEXT.__swift5_capture: 0x1034
-+  __TEXT.__oslogstring: 0x8f60
-+  __TEXT.__swift_as_entry: 0x100
-   __TEXT.__swift_as_ret: 0x120
--  __TEXT.__swift_as_cont: 0x19c
--  __TEXT.__swift5_mpenum: 0x58
--  __TEXT.__gcc_except_tab: 0x206c
--  __TEXT.__unwind_info: 0x7e60
--  __TEXT.__eh_frame: 0x78b8
-+  __TEXT.__swift_as_cont: 0x198
-+  __TEXT.__swift5_mpenum: 0x50
-+  __TEXT.__gcc_except_tab: 0x1fe4
-+  __TEXT.__unwind_info: 0x6378
-+  __TEXT.__eh_frame: 0x4578
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x27e8
--  __DATA_CONST.__objc_classlist: 0x848
--  __DATA_CONST.__objc_catlist: 0x128
--  __DATA_CONST.__objc_protolist: 0x1e8
-+  __DATA_CONST.__const: 0x2930
-+  __DATA_CONST.__objc_classlist: 0x850
-+  __DATA_CONST.__objc_catlist: 0x138
-+  __DATA_CONST.__objc_protolist: 0x1e0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5068
--  __DATA_CONST.__objc_protorefs: 0x108
--  __DATA_CONST.__objc_superrefs: 0x5f8
--  __DATA_CONST.__objc_arraydata: 0x38
--  __DATA_CONST.__got: 0x18a0
--  __AUTH_CONST.__const: 0x7a98
--  __AUTH_CONST.__cfstring: 0x8780
--  __AUTH_CONST.__objc_const: 0x16748
-+  __DATA_CONST.__objc_selrefs: 0x52c0
-+  __DATA_CONST.__objc_protorefs: 0x100
-+  __DATA_CONST.__objc_superrefs: 0x608
-+  __DATA_CONST.__objc_arraydata: 0x8
-+  __DATA_CONST.__got: 0x17d0
-+  __AUTH_CONST.__const: 0x59b8
-+  __AUTH_CONST.__cfstring: 0x8be0
-+  __AUTH_CONST.__objc_const: 0x167b8
-   __AUTH_CONST.__lazy_load_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x78
--  __AUTH_CONST.__objc_arrayobj: 0x30
--  __AUTH_CONST.__auth_got: 0x1700
--  __AUTH.__objc_data: 0x39f0
--  __AUTH.__data: 0x1660
--  __DATA.__objc_ivar: 0xaec
--  __DATA.__data: 0x31f4
--  __DATA.__common: 0x658
--  __DATA_DIRTY.__objc_data: 0x1fa0
--  __DATA_DIRTY.__data: 0x328
--  __DATA_DIRTY.__bss: 0x1c8
--  __DATA_DIRTY.__common: 0x8
-+  __AUTH_CONST.__objc_arrayobj: 0x18
-+  __AUTH_CONST.__auth_got: 0x13a0
-+  __AUTH.__objc_data: 0x3ff0
-+  __AUTH.__data: 0xf20
-+  __DATA.__objc_ivar: 0xb00
-+  __DATA.__data: 0x24c4
-+  __DATA.__common: 0x50
-+  __DATA_DIRTY.__objc_data: 0x1ec8
-+  __DATA_DIRTY.__data: 0x40
-+  __DATA_DIRTY.__bss: 0x140
-   - /System/Library/Frameworks/AppIntentsTypeSupport.framework/AppIntentsTypeSupport
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreLocation.framework/CoreLocation
 
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/Intents.framework/Intents
-   - /System/Library/Frameworks/RelevanceKit.framework/RelevanceKit
 -  - /System/Library/Frameworks/Security.framework/Security
-   - /System/Library/Frameworks/_LocationEssentials.framework/_LocationEssentials
+
 -  - /System/Library/PrivateFrameworks/AppIntentSchemas.framework/AppIntentSchemas
-   - /System/Library/PrivateFrameworks/AppProtection.framework/AppProtection
+
 -  - /System/Library/PrivateFrameworks/AppSupport.framework/AppSupport
 -  - /System/Library/PrivateFrameworks/AvailabilityKit.framework/AvailabilityKit
-   - /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard
-   - /System/Library/PrivateFrameworks/BiomeFoundation.framework/BiomeFoundation
-   - /System/Library/PrivateFrameworks/BiomeLibrary.framework/BiomeLibrary
-   - /System/Library/PrivateFrameworks/BiomeStorage.framework/BiomeStorage
-   - /System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams
+
 +  - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
-   - /System/Library/PrivateFrameworks/IntentsCore.framework/IntentsCore
-   - /System/Library/PrivateFrameworks/LinkMetadata.framework/LinkMetadata
 
-   - /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
 -  - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libobjc.A.dylib
--  - /usr/lib/libsqlite3.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
-   - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+-  - /usr/lib/libsqlite3.dylib
+
 -  Functions: 10418
--  Symbols:   11525
+-  Symbols:   9307
 -  CStrings:  2119
 +  Functions: 8159
-+  Symbols:   11286
++  Symbols:   9049
 +  CStrings:  2165
- 
 Symbols:
 + +[LNConnection(Restrictions) daemonRestrictionTargetResolverOverride]
 + +[LNConnection(Restrictions) setDaemonRestrictionTargetResolverOverride:]
@@ -726,90 +657,6 @@ Symbols:
 + _associated conformance So14LNPlatformNameas20_SwiftNewtypeWrapperSCs35_HasCustomAnyHashableRepresentation
 + _daemonRestrictionTargetResolverOverride
 + _isDaemonOwnedEmbeddedAppConnectionOverride
-+ _objc_msgSend$_applicationServiceConnection:
-+ _objc_msgSend$_launchRequestForOptions:shouldConnect:
-+ _objc_msgSend$_ln_resolveDaemonRestrictionTargetBundleIdentifier
-+ _objc_msgSend$_openApplicationAndFetchEndpointWithRequest:completion:
-+ _objc_msgSend$_openApplicationWithRequest:completion:
-+ _objc_msgSend$_openApplicationWithRequest:completionHandler:
-+ _objc_msgSend$actionMarkingFailedMigration:
-+ _objc_msgSend$actionMetadataForIdentifier:
-+ _objc_msgSend$actionMetadataWithDeprecationMetadata:
-+ _objc_msgSend$applyLaunchPolicyForAction:bundleIdentifier:source:sourceOverride:assistantDismissalPolicy:
-+ _objc_msgSend$arrayByAddingObject:
-+ _objc_msgSend$auditTokensMapTable
-+ _objc_msgSend$availableForCurrentPlatformVersion
-+ _objc_msgSend$availableMigrationTargetIdentifier
-+ _objc_msgSend$bundleIdentifierForAuditToken:
-+ _objc_msgSend$checkRestrictionsForBundleIdentifier:reply:
-+ _objc_msgSend$connectUsingApplicationServiceWithOptions:
-+ _objc_msgSend$connectionAction
-+ _objc_msgSend$connectionOptions
-+ _objc_msgSend$currentProcessHasApplicationServiceMachLookup
-+ _objc_msgSend$daemonRecordWithBundleIdentifier:
-+ _objc_msgSend$daemonRestrictionTargetResolverOverride
-+ _objc_msgSend$deferredProperty
-+ _objc_msgSend$deprecationMetadata
-+ _objc_msgSend$enqueueConnectionOperation:auditToken:
-+ _objc_msgSend$enumCasesForEnumeration:
-+ _objc_msgSend$fetchDisplayRepresentationsForEntities:components:completionHandler:
-+ _objc_msgSend$filteredArrayUsingPredicate:
-+ _objc_msgSend$firstMatchInString:options:range:
-+ _objc_msgSend$fromVersion
-+ _objc_msgSend$initWithAlternateNames:contentType:contentTypeTree:contentURL:requiresImport:importSandboxExtension:darkThumbnailURL:displayName:keywords:path:rankingHint:relatedUniqueIdentifier:thumbnailData:thumbnailURL:title:domainIdentifier:weakRelatedUniqueIdentifier:accountType:error:
-+ _objc_msgSend$initWithAvailabilityAnnotations:
-+ _objc_msgSend$initWithEntity:displayRepresentation:error:
-+ _objc_msgSend$initWithHTMLContentData:accountHandles:accountIdentifier:additionalRecipients:authorAddresses:authorEmailAddresses:authorNames:authors:emailAddresses:hiddenAdditionalRecipients:instantMessageAddresses:likelyJunk:mailboxIdentifiers:phoneNumbers:primaryRecipients:recipientAddresses:recipientEmailAddresses:recipientNames:textContent:attachmentPaths:attachmentTypes:attachmentNames:attachmentKinds:sentDate:isFlagged:isRead:threadIdentifier:emailHeaders:isVIP:categories:categoryType:serviceIdentifier:additionalRecipientEmailAddresses:hiddenAdditionalRecipientEmailAddresses:messageType:isGroupThread:error:
-+ _objc_msgSend$initWithMessageText:replacedByIntentIdentifier:
-+ _objc_msgSend$initWithProvider:bundleIdentifier:
-+ _objc_msgSend$initWithSDBInfo:fetchedAttributes:
-+ _objc_msgSend$initWithString:
-+ _objc_msgSend$initWithTypes:error:
-+ _objc_msgSend$initWithURL:readonly:scope:
-+ _objc_msgSend$isDaemonOwnedEmbeddedAppConnectionEnabled
-+ _objc_msgSend$isSameConnectionAs:
-+ _objc_msgSend$issueTokenForAuditToken:readonly:error:
-+ _objc_msgSend$launchOptionsDictionaryForConnectionOptions:progressIsPersistentInSystemAperture:bundleIdentifier:userIdentity:outError:
-+ _objc_msgSend$launchOptionsDictionaryForRequest:outError:
-+ _objc_msgSend$ln_decodeNullableObjectOfClasses:forKey:failureReason:
-+ _objc_msgSend$ln_processInstanceIdentifier
-+ _objc_msgSend$ln_typedCopy
-+ _objc_msgSend$ln_typedMutableCopy
-+ _objc_msgSend$mappings
-+ _objc_msgSend$markedDeprecatedIfSuperseded
-+ _objc_msgSend$migratedActionForAction:node:resolver:error:
-+ _objc_msgSend$migrationMetadata
-+ _objc_msgSend$migrationPlanTowardTargetVersion:excluding:staticOnly:
-+ _objc_msgSend$nodes
-+ _objc_msgSend$numberFromString:
-+ _objc_msgSend$objectIsMemberOfType:
-+ _objc_msgSend$oneShot
-+ _objc_msgSend$openApplicationAndFetchListenerEndpointWithLaunchApplicationRequest:reply:
-+ _objc_msgSend$openApplicationWithLaunchApplicationRequest:reply:
-+ _objc_msgSend$performDynamicMigrationForAction:targetVersion:completionHandler:
-+ _objc_msgSend$policyWithActionMetadata:signals:schemaVersion:error:
-+ _objc_msgSend$policyWithEntityMetadata:signals:error:
-+ _objc_msgSend$policyWithEnumMetadata:signals:error:
-+ _objc_msgSend$policyWithQueryMetadata:signals:error:
-+ _objc_msgSend$progressIsPersistentInSystemAperture
-+ _objc_msgSend$recordOperation:startMachTime:succeeded:
-+ _objc_msgSend$recordPerformWithResult:error:source:kind:
-+ _objc_msgSend$runningInDynamicIslandPersistentModeForConnectionOptions:
-+ _objc_msgSend$setConnectionAction:
-+ _objc_msgSend$setConnectionOptions:
-+ _objc_msgSend$setDateStyle:
-+ _objc_msgSend$setLenient:
-+ _objc_msgSend$setNumberStyle:
-+ _objc_msgSend$setProgressIsPersistentInSystemAperture:
-+ _objc_msgSend$setTimeStyle:
-+ _objc_msgSend$setUserIdentity:
-+ _objc_msgSend$shouldConnect
-+ _objc_msgSend$sourceIntentIdentifier
-+ _objc_msgSend$sourceKind
-+ _objc_msgSend$sourceParameterName
-+ _objc_msgSend$targetIntentIdentifier
-+ _objc_msgSend$toVersion
-+ _objc_msgSend$valueDecodingError
 + _objc_retain_x10
 + _object_getClass
 + _preflightManager.onceToken
@@ -1490,71 +1337,6 @@ Symbols:
 - _get_enum_tag_for_layout_string 17AppIntents_SQLite6BackupC12DatabaseNameO
 - _get_enum_tag_for_layout_string 17AppIntents_SQLite9CollationO
 - _get_enum_tag_for_layout_string Say17AppIntents_SQLite11Expressible_pG2by_AA10ExpressionVySbSgGSg6havingtSg
-- _objc_msgSend$actionIdentifiersForBundleIdentifier:error:
-- _objc_msgSend$actionMetadataWithSourceBundleIdentifier:
-- _objc_msgSend$actionsAndSystemProtocolDefaultsForBundleIdentifier:error:
-- _objc_msgSend$actionsConformingToSystemProtocol:withParametersOfTypes:bundleIdentifier:error:
-- _objc_msgSend$actionsConformingToSystemProtocols:logicalType:bundleIdentifier:error:
-- _objc_msgSend$actionsForBundleIdentifier:andActionIdentifier:error:
-- _objc_msgSend$actionsForBundleIdentifier:error:
-- _objc_msgSend$actionsWithError:
-- _objc_msgSend$actionsWithFullyQualifiedIdentifiers:error:
-- _objc_msgSend$appShortcutBundles:
-- _objc_msgSend$appShortcutsProviderMangledTypeNameForBundleIdentifier:error:
-- _objc_msgSend$autoShortcutsForBundleIdentifier:localeIdentifier:completion:
-- _objc_msgSend$autoShortcutsForBundleIdentifier:localeIdentifier:error:
-- _objc_msgSend$autoShortcutsForLocaleIdentifier:completion:
-- _objc_msgSend$autoShortcutsForLocaleIdentifier:error:
-- _objc_msgSend$bundleRegistrationsWithError:
-- _objc_msgSend$componentsFromLocaleIdentifier:
-- _objc_msgSend$currentProcess
-- _objc_msgSend$deprioritizedQueriesWithCapabilities:inputValueType:resultValueType:bundleIdentifier:completionHandler:
-- _objc_msgSend$entitiesForBundleIdentifier:error:
-- _objc_msgSend$entitiesForSchemaIdentifier:error:
-- _objc_msgSend$entitiesWithError:
-- _objc_msgSend$entityForBundleIdentifier:withEntityIdentifier:error:
-- _objc_msgSend$entityForBundleIdentifier:withEntityIdentifier:waitForIndexing:error:
-- _objc_msgSend$entityIdentifiersForBundleIdentifier:error:
-- _objc_msgSend$entityMetadataWithSourceBundleIdentifier:
-- _objc_msgSend$enumMetadataWithSourceBundleIdentifier:
-- _objc_msgSend$enumsForBundleIdentifier:error:
-- _objc_msgSend$enumsForSchemaIdentifier:error:
-- _objc_msgSend$enumsWithError:
-- _objc_msgSend$examplePhrasesForBundleIdentifier:error:
-- _objc_msgSend$fetchDatabaseURL:
-- _objc_msgSend$initWithActionIdentifier:bundleIdentifier:
-- _objc_msgSend$initWithActions:systemProtocolDefaults:
-- _objc_msgSend$initWithAlternateNames:contentType:contentTypeTree:contentURL:requiresImport:importSandboxExtension:darkThumbnailURL:displayName:keywords:metadataModificationDate:path:rankingHint:relatedUniqueIdentifier:thumbnailData:thumbnailURL:title:domainIdentifier:weakRelatedUniqueIdentifier:accountType:error:
-- _objc_msgSend$initWithBundleIdentifier:actionIdentifier:
-- _objc_msgSend$initWithConnection:options:error:
-- _objc_msgSend$initWithConnectionInterface:actions:queue:completionHandler:
-- _objc_msgSend$initWithHTMLContentData:accountHandles:accountIdentifier:additionalRecipients:authorAddresses:authorEmailAddresses:authorNames:authors:emailAddresses:hiddenAdditionalRecipients:instantMessageAddresses:likelyJunk:mailboxIdentifiers:phoneNumbers:primaryRecipients:recipientAddresses:recipientEmailAddresses:recipientNames:textContent:attachmentPaths:attachmentTypes:attachmentNames:attachmentKinds:sentDate:isFlagged:isRead:threadIdentifier:emailHeaders:isVIP:categories:categoryType:serviceIdentifier:additionalRecipientEmailAddresses:hiddenAdditionalRecipientEmailAddresses:error:
-- _objc_msgSend$initWithObject:
-- _objc_msgSend$isApplication
-- _objc_msgSend$localeIdentifierFromComponents:
-- _objc_msgSend$metadataByAddingEffectiveBundleIdentifiers:mangledTypeNameByBundleIdentifier:
-- _objc_msgSend$metadataVersionForBundleIdentifier:error:
-- _objc_msgSend$openActionsForTypeIdentifier:bundleIdentifier:error:
-- _objc_msgSend$openCollectionActionsForEntityTypeIdentifier:capabilities:bundleIdentifier:error:
-- _objc_msgSend$phrase
-- _objc_msgSend$phraseMetadata
-- _objc_msgSend$policyWithActionMetadata:
-- _objc_msgSend$policyWithEntityMetadata:
-- _objc_msgSend$policyWithEntityQueryMetadata:
-- _objc_msgSend$policyWithEnumMetadata:
-- _objc_msgSend$propertiesForIdentifiers:error:
-- _objc_msgSend$protocolOrNilWithIdentifier:
-- _objc_msgSend$queriesForBundleIdentifier:ofType:error:
-- _objc_msgSend$queriesForSchemaIdentifier:error:
-- _objc_msgSend$queriesWithCapabilities:inputValueType:resultValueType:error:
-- _objc_msgSend$queriesWithError:
-- _objc_msgSend$queryForBundleIdentifier:ofType:error:
-- _objc_msgSend$queryForBundleIdentifier:withFullyQualifiedIdentifier:error:
-- _objc_msgSend$queryMetadataWithSourceBundleIdentifier:
-- _objc_msgSend$requestReadAccessWithReply:
-- _objc_msgSend$searchForQuery:error:
-- _objc_msgSend$setConnection:
-- _objc_msgSend$suggestionPhrasesForQueries:error:
 - _sqlite3_backup_finish
 - _sqlite3_backup_init
 - _sqlite3_backup_pagecount

@@ -2,69 +2,47 @@
 
 > `/System/Library/AccessibilityBundles/GAXBackboardServer.bundle/GAXBackboardServer`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__gcc_except_tab`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__got`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2bbe8` | `0x2be68` | **`+0x280`** |
+| `__TEXT.__oslogstring` | `0x42db` | `0x4388` | **`+0xad`** |
+| `__TEXT.__objc_methname` | `0x8e80` | `0x8eea` | **`+0x6a`** |
+| `__TEXT.__cstring` | `0x47a4` | `0x47fe` | **`+0x5a`** |
+| `__TEXT.__objc_methtype` | `0x18cd` | `0x1919` | **`+0x4c`** |
+| `__DATA_CONST.__cfstring` | `0x3760` | `0x37a0` | **`+0x40`** |
+| `__TEXT.__objc_stubs` | `0x6a20` | `0x6a60` | **`+0x40`** |
+| `__TEXT.__objc_methlist` | `0x28ec` | `0x2904` | **`+0x18`** |
+| `__DATA.__objc_selrefs` | `0x1f00` | `0x1f10` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0xaa8` | `0xab8` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_data`
-- `__DATA.__data`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__gcc_except_tab`
+
+### Other Changes
 
 ```diff
 
 -1067.3.1.0.0
--  __TEXT.__text: 0x2b054
 +1067.3.3.0.0
-+  __TEXT.__text: 0x2b2e0
-   __TEXT.__auth_stubs: 0xc40
--  __TEXT.__objc_stubs: 0x6a20
--  __TEXT.__objc_methlist: 0x28ec
-+  __TEXT.__objc_stubs: 0x6a60
-+  __TEXT.__objc_methlist: 0x2904
-   __TEXT.__const: 0x188
-   __TEXT.__gcc_except_tab: 0x84c
--  __TEXT.__objc_methname: 0x8e80
--  __TEXT.__cstring: 0x47a4
--  __TEXT.__oslogstring: 0x42db
-+  __TEXT.__objc_methname: 0x8eea
-+  __TEXT.__cstring: 0x47fe
-+  __TEXT.__oslogstring: 0x4388
-   __TEXT.__objc_classname: 0x2ed
--  __TEXT.__objc_methtype: 0x18cd
--  __TEXT.__unwind_info: 0xdb8
-+  __TEXT.__objc_methtype: 0x1919
-+  __TEXT.__unwind_info: 0xdc8
-   __DATA_CONST.__const: 0x16b0
--  __DATA_CONST.__cfstring: 0x3760
-+  __DATA_CONST.__cfstring: 0x37a0
-   __DATA_CONST.__objc_classlist: 0x90
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x60
 
-   __DATA_CONST.__got: 0x350
-   __DATA_CONST.__auth_ptr: 0x8
-   __DATA.__objc_const: 0x2a68
--  __DATA.__objc_selrefs: 0x1f00
-+  __DATA.__objc_selrefs: 0x1f10
-   __DATA.__objc_ivar: 0x1ac
-   __DATA.__objc_data: 0x5a0
-   __DATA.__data: 0x588
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 974
 -  Symbols:   586
 -  CStrings:  2273
 +  Functions: 980
 +  Symbols:   588
 +  CStrings:  2280
- 
 Symbols:
 + _GAXBackboardStateAllowsAllTouchByOverride
 + _GAXBackboardStateAllowsAllTouchForTransientSystemUI

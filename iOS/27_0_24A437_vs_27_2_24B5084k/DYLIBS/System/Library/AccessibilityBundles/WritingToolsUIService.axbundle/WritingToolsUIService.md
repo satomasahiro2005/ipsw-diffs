@@ -2,57 +2,38 @@
 
 > `/System/Library/AccessibilityBundles/WritingToolsUIService.axbundle/WritingToolsUIService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x284` | `0x6c4` | **`+0x440`** |
+| `__AUTH_CONST.__objc_const` | `0x1b0` | `0x3f0` | **`+0x240`** |
+| `__AUTH.__objc_data` | `—` | `0x140` | **`+0x140`** |
+| `__AUTH_CONST.__cfstring` | `0xc0` | `0x1c0` | **`+0x100`** |
+| `__TEXT.__cstring` | `0xc1` | `0x1a0` | **`+0xdf`** |
+| `__TEXT.__objc_methlist` | `0x5c` | `0x104` | **`+0xa8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x80` | `0x120` | **`+0xa0`** |
+| `__DATA_CONST.__got` | `0x28` | `0x58` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x60` | `0x88` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x78` | `0xa0` | **`+0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x18` | `0x38` | **`+0x20`** |
+| `__TEXT.__ustring` | `—` | `0x18` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x8` | `0x10` | **`+0x8`** |
+| `__TEXT.__const` | `—` | `0x8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3048.0.0.0.0
--  __TEXT.__text: 0x260
--  __TEXT.__objc_methlist: 0x5c
--  __TEXT.__cstring: 0xc1
--  __TEXT.__unwind_info: 0x78
 +3050.3.0.0.0
-+  __TEXT.__text: 0x67c
-+  __TEXT.__objc_methlist: 0x104
-+  __TEXT.__const: 0x8
-+  __TEXT.__cstring: 0x1a0
-+  __TEXT.__ustring: 0x18
-+  __TEXT.__unwind_info: 0xa0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x60
--  __DATA_CONST.__objc_classlist: 0x18
-+  __DATA_CONST.__const: 0x88
-+  __DATA_CONST.__objc_classlist: 0x38
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x80
--  __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__got: 0x28
-+  __DATA_CONST.__objc_selrefs: 0x120
-+  __DATA_CONST.__objc_superrefs: 0x10
-+  __DATA_CONST.__got: 0x58
-   __AUTH_CONST.__const: 0x80
--  __AUTH_CONST.__cfstring: 0xc0
--  __AUTH_CONST.__objc_const: 0x1b0
-+  __AUTH_CONST.__cfstring: 0x1c0
-+  __AUTH_CONST.__objc_const: 0x3f0
-   __AUTH_CONST.__auth_got: 0x0
-+  __AUTH.__objc_data: 0x140
-   __DATA_DIRTY.__objc_data: 0xf0
-   __DATA_DIRTY.__bss: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 10
--  Symbols:   69
+-  Symbols:   58
 -  CStrings:  9
 +  Functions: 21
-+  Symbols:   133
++  Symbols:   106
 +  CStrings:  19
- 
 Symbols:
 + +[AccessibilityNodeAccessibility__WritingToolsUIService__SwiftUI _accessibilityPerformValidations:]
 + +[AccessibilityNodeAccessibility__WritingToolsUIService__SwiftUI(SafeCategory) safeCategoryBaseClass]
@@ -97,22 +78,6 @@ Symbols:
 + ___block_descriptor_48_e8_32s_e5_v8?0ls32l8
 + _abort
 + _objc_alloc
-+ _objc_msgSend$_accessibilityIsUserInteractionEnabled
-+ _objc_msgSend$_axChangeToPageThroughContinuousInteraction:
-+ _objc_msgSend$_setPage:interactionState:
-+ _objc_msgSend$accessibilityIdentifier
-+ _objc_msgSend$addAttribute:value:range:
-+ _objc_msgSend$currentPage
-+ _objc_msgSend$firstObject
-+ _objc_msgSend$hasPrefix:
-+ _objc_msgSend$initWithString:
-+ _objc_msgSend$isEqualToString:
-+ _objc_msgSend$length
-+ _objc_msgSend$mutableCopy
-+ _objc_msgSend$numberOfPages
-+ _objc_msgSend$preferredLanguages
-+ _objc_msgSend$string
-+ _objc_msgSend$validateClass:hasInstanceMethod:withFullSignature:
 + _objc_release
 + _objc_release_x20
 + _objc_release_x22

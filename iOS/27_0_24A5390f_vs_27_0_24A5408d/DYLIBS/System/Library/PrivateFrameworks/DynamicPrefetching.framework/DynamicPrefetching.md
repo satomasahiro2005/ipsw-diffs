@@ -2,69 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/DynamicPrefetching.framework/DynamicPrefetching`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x18abc` | `0x1b2d0` | **`+0x2814`** |
+| `__TEXT.__oslogstring` | `0x2774` | `0x3019` | **`+0x8a5`** |
+| `__TEXT.__gcc_except_tab` | `0x12ec` | `0x1570` | **`+0x284`** |
+| `__TEXT.__cstring` | `0x87e` | `0x9e5` | **`+0x167`** |
+| `__TEXT.__unwind_info` | `0x868` | `0x978` | **`+0x110`** |
+| `__DATA_CONST.__const` | `0x230` | `0x2f8` | **`+0xc8`** |
+| `__AUTH_CONST.__const` | `0x1e8` | `0x2a8` | **`+0xc0`** |
+| `__AUTH_CONST.__auth_got` | `0x3f0` | `0x4a8` | **`+0xb8`** |
+| `__DATA.__bss` | `0x248` | `0x2f8` | **`+0xb0`** |
+| `__TEXT.__const` | `0x4b6` | `0x4f9` | **`+0x43`** |
+| `__AUTH_CONST.__cfstring` | `0x1e0` | `0x220` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0xb8` | `0xf0` | **`+0x38`** |
+
+### Other Changes
+
 ```diff
 
 -3.5.8.0.0
--  __TEXT.__text: 0x18abc
 +3.6.0.0.0
-+  __TEXT.__text: 0x1b2d0
-   __TEXT.__objc_methlist: 0x29c
--  __TEXT.__const: 0x4b6
--  __TEXT.__gcc_except_tab: 0x12ec
--  __TEXT.__cstring: 0x87e
--  __TEXT.__oslogstring: 0x2774
--  __TEXT.__unwind_info: 0x868
-+  __TEXT.__const: 0x4f9
-+  __TEXT.__gcc_except_tab: 0x1570
-+  __TEXT.__cstring: 0x9e5
-+  __TEXT.__oslogstring: 0x3019
-+  __TEXT.__unwind_info: 0x978
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x230
-+  __DATA_CONST.__const: 0x2f8
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x2b8
-   __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__got: 0xb8
--  __AUTH_CONST.__const: 0x1e8
--  __AUTH_CONST.__cfstring: 0x1e0
-+  __DATA_CONST.__got: 0xf0
-+  __AUTH_CONST.__const: 0x2a8
-+  __AUTH_CONST.__cfstring: 0x220
-   __AUTH_CONST.__objc_const: 0x310
-   __AUTH_CONST.__weak_auth_got: 0x28
--  __AUTH_CONST.__auth_got: 0x3f0
-+  __AUTH_CONST.__auth_got: 0x4a8
-   __AUTH.__objc_data: 0x50
-   __DATA.__objc_ivar: 0x8
-   __DATA.__data: 0xe0
--  __DATA.__bss: 0x248
-+  __DATA.__bss: 0x2f8
-   __DATA_DIRTY.__data: 0x10
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+
 +  - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/PowerLog.framework/PowerLog
-   - /System/Library/PrivateFrameworks/Trial.framework/Trial
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
+
 -  Functions: 492
 -  Symbols:   175
 -  CStrings:  266
 +  Functions: 555
 +  Symbols:   208
 +  CStrings:  315
- 
 Symbols:
 + _CFDictionaryCreateMutable
 + _CFDictionarySetValue

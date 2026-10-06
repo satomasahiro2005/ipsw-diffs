@@ -2,81 +2,39 @@
 
 > `/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x38df30` | `0x38ede0` | **`+0xeb0`** |
+| `__TEXT.__cstring` | `0x31be7` | `0x31e4f` | **`+0x268`** |
+| `__AUTH_CONST.__cfstring` | `0x27580` | `0x276a0` | **`+0x120`** |
+| `__DATA_CONST.__const` | `0xd930` | `0xd9d0` | **`+0xa0`** |
+| `__AUTH_CONST.__const` | `0xe858` | `0xe8d8` | **`+0x80`** |
+| `__AUTH_CONST.__objc_const` | `0x46288` | `0x46220` | **`-0x68`** |
+| `__DATA_CONST.__objc_selrefs` | `0x13a98` | `0x13b00` | **`+0x68`** |
+| `__TEXT.__unwind_info` | `0xd240` | `0xd2a0` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0xc438` | `0xc3e8` | **`-0x50`** |
+| `__DATA_CONST.__got` | `0x30c8` | `0x3110` | **`+0x48`** |
+| `__AUTH_CONST.__auth_got` | `0x2b40` | `0x2b58` | **`+0x18`** |
+| `__DATA.__bss` | `0xe88` | `0xe98` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x2db8` | `0x2db0` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x1528` | `0x1520` | **`-0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x1c444` | `0x1c440` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -4026.110.2.0.0
--  __TEXT.__text: 0x37d6b8
 +4026.200.12.0.0
-+  __TEXT.__text: 0x37e4cc
-   __TEXT.__objc_methlist: 0x28d54
-   __TEXT.__dlopen_cstrs: 0x4bd
-   __TEXT.__const: 0x14ff8
 
-   __TEXT.__swift_as_entry: 0x1c
-   __TEXT.__swift_as_ret: 0x1c
-   __TEXT.__swift_as_cont: 0x8
--  __TEXT.__cstring: 0x31be7
-+  __TEXT.__cstring: 0x31e4f
-   __TEXT.__swift5_proto: 0x14
--  __TEXT.__gcc_except_tab: 0x1c444
-+  __TEXT.__gcc_except_tab: 0x1c440
-   __TEXT.__oslogstring: 0x1a3fe
-   __TEXT.__ustring: 0x1ca
--  __TEXT.__unwind_info: 0xfa40
-+  __TEXT.__unwind_info: 0xfab0
-   __TEXT.__eh_frame: 0x3c0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xd930
--  __DATA_CONST.__objc_classlist: 0x1528
-+  __DATA_CONST.__const: 0xd9d0
-+  __DATA_CONST.__objc_classlist: 0x1520
-   __DATA_CONST.__objc_catlist: 0x108
-   __DATA_CONST.__objc_protolist: 0x428
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x13a98
-+  __DATA_CONST.__objc_selrefs: 0x13b00
-   __DATA_CONST.__objc_protorefs: 0xe0
-   __DATA_CONST.__objc_superrefs: 0xdc8
-   __DATA_CONST.__objc_arraydata: 0x8d8
--  __DATA_CONST.__got: 0x30c8
--  __AUTH_CONST.__const: 0xe858
--  __AUTH_CONST.__cfstring: 0x27580
--  __AUTH_CONST.__objc_const: 0x46288
-+  __DATA_CONST.__got: 0x3110
-+  __AUTH_CONST.__const: 0xe8d8
-+  __AUTH_CONST.__cfstring: 0x276a0
-+  __AUTH_CONST.__objc_const: 0x46220
-   __AUTH_CONST.__weak_auth_got: 0x60
-   __AUTH_CONST.__objc_intobj: 0x8b8
-   __AUTH_CONST.__objc_arrayobj: 0xf78
-   __AUTH_CONST.__objc_doubleobj: 0x60
-   __AUTH_CONST.__objc_dictobj: 0x50
--  __AUTH_CONST.__auth_got: 0x2b40
--  __AUTH.__objc_data: 0xc438
-+  __AUTH_CONST.__auth_got: 0x2b58
-+  __AUTH.__objc_data: 0xc3e8
-   __AUTH.__data: 0x100
--  __DATA.__objc_ivar: 0x2db8
-+  __DATA.__objc_ivar: 0x2db0
-   __DATA.__data: 0x3af8
-   __DATA.__common: 0xab8
-   __DATA_DIRTY.__objc_data: 0xf78
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 17203
--  Symbols:   39063
+-  Symbols:   32445
 -  CStrings:  7427
 +  Functions: 17213
-+  Symbols:   39096
++  Symbols:   32474
 +  CStrings:  7441
- 
 Symbols:
 + +[MPModelAlbum __MPModelPropertyAlbumCloudChannelName__MAPPING_MISSING__]
 + +[MPModelAlbum __MPModelPropertyAlbumIsFollowed__MAPPING_MISSING__]
@@ -876,11 +834,6 @@ Symbols:
 + ___block_descriptor_40_e8_32s_e43_"NSDictionary"16?0"MPModelRadioStation"8ls32l8
 + _kMRMediaRemoteNowPlayingInfoContentType
 + _kMRMediaRemoteNowPlayingInfoStrictMediaType
-+ _objc_msgSend$isActuallyW1Route
-+ _objc_msgSend$isWXDeviceWithModelID:
-+ _objc_msgSend$setCloudChannelName:
-+ _objc_msgSend$setIsFollowed:
-+ _objc_msgSend$setShouldShowCountdownTimer:
 - -[MPPlaybackContextRemotePlaybackQueue .cxx_destruct]
 - -[MPPlaybackContextRemotePlaybackQueue asMusicPlaybackContextWithOptions:error:]
 - -[MPPlaybackContextRemotePlaybackQueue description]
@@ -1650,7 +1603,6 @@ Symbols:
 - __OBJC_$_INSTANCE_VARIABLES_MPPlaybackContextRemotePlaybackQueue
 - __OBJC_CLASS_RO_$_MPPlaybackContextRemotePlaybackQueue
 - __OBJC_METACLASS_RO_$_MPPlaybackContextRemotePlaybackQueue
-- _objc_msgSend$privateListeningOverride
 CStrings:
 + "@\"NSDictionary\"16@?0@\"MPModelRadioStation\"8"
 + "MPModelPropertyAlbumCloudChannelName"

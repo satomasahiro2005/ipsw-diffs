@@ -2,85 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/HomeAccessoryControlUI.framework/HomeAccessoryControlUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__swift5_typeref` | `0x36492` | `0x36c44` | **`+0x7b2`** |
+| `__TEXT.__text` | `0x3540d0` | `0x354818` | **`+0x748`** |
+| `__DATA.__data` | `0xa450` | `0xa4d0` | **`+0x80`** |
+| `__TEXT.__const` | `0x19f48` | `0x19fa8` | **`+0x60`** |
+| `__TEXT.__cstring` | `0x4b71` | `0x4bb1` | **`+0x40`** |
+| `__TEXT.__oslogstring` | `0x27d0` | `0x2800` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x70b0` | `0x70a8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x3540d0
-+  __TEXT.__text: 0x354818
-   __TEXT.__objc_methlist: 0x3bc
--  __TEXT.__const: 0x19f48
-+  __TEXT.__const: 0x19fa8
-   __TEXT.__constg_swiftt: 0x6e40
--  __TEXT.__swift5_typeref: 0x36492
-+  __TEXT.__swift5_typeref: 0x36c44
-   __TEXT.__swift5_builtin: 0x1b8
-   __TEXT.__swift5_reflstr: 0x478a
-   __TEXT.__swift5_fieldmd: 0x5db0
+-1227.0.0.0.1
++1232.3.0.0.0
 
-   __TEXT.__swift5_proto: 0xb90
-   __TEXT.__swift5_types: 0x71c
-   __TEXT.__swift5_capture: 0x2278
--  __TEXT.__cstring: 0x4b71
--  __TEXT.__oslogstring: 0x27d0
-+  __TEXT.__cstring: 0x4bb1
-+  __TEXT.__oslogstring: 0x2800
-   __TEXT.__swift5_protos: 0x28
-   __TEXT.__swift_as_entry: 0x16c
-   __TEXT.__swift_as_ret: 0x194
-   __TEXT.__swift_as_cont: 0x32c
-   __TEXT.__swift5_mpenum: 0x28
-   __TEXT.__gcc_except_tab: 0x13c
--  __TEXT.__unwind_info: 0x70b0
-+  __TEXT.__unwind_info: 0x70a8
-   __TEXT.__eh_frame: 0x5214
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __AUTH.__objc_data: 0x430
-   __AUTH.__data: 0x7960
-   __DATA.__objc_ivar: 0x20
--  __DATA.__data: 0xa450
-+  __DATA.__data: 0xa4d0
-   __DATA.__bss: 0x17388
-   __DATA.__common: 0x1e8
-   __DATA_DIRTY.__common: 0x10
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11388
--  Symbols:   6032
--  CStrings:  635
+-  Symbols:   4588
+-  CStrings:  632
 +  Functions: 11384
-+  Symbols:   6043
-+  CStrings:  637
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
++  Symbols:   4599
++  CStrings:  634
 Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA6VStackVyAA05TupleD0VyACyACyAA7DividerVAA21_OverlayStyleModifierVyAA017HierarchicalShapeI0VGGAA022_EnvironmentKeyWritingJ0VyAA8MaterialVSgGG_ACyAA6HStackVyAGyACyAA4ViewPAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyACyAXyAGyACyAA5ImageVAQyAA5ColorVSgGG_AA4TextVQPGGAQyAA4FontVSgGG_Qo_AA0v10AttachmentJ0VG_AA6SpacerVACyAA6ButtonVyA11_GAA14_OpacityEffectVGQPGGAUGAA012_ConditionalD0VyACyACyAzAE04listI0yQrqd__AA04ListI0Rd__lFQOyAzAE016listHasLazyStackX0QryFQOyAA4ListVys5NeverOACyACyAzAE16listRowSeparator_5edgesQrAA10VisibilityO_AA12VerticalEdgeO3SetVtFQOyAA7ForEachVySay13HomeDataModel11StaticAlarmVG10Foundation4UUIDVAzAE12swipeActions4edge15allowsFullSwipe5style7contentQrAA14HorizontalEdgeO_SbAA012SwipeActionsI0Vqd__yXEtAaYRd__lFQOy020HomeAccessoryControlB09AlarmCellV_A27_Qo_G_Qo_AA06_TraitoJ0VyAA022ListRowBackgroundTraitN0VGGA76_yAA018ListRowInsetsTraitN0VGGG_Qo__AA09PlainListI0VQo_AQy12CoreGraphics7CGFloatVSgGGA76_yAA019LayoutPriorityTraitN0VGGAGyACyACyACyA26_yACyACyAXyAGyA11__A24_QPGGAA14_PaddingLayoutVGA103_GGAA011_BackgroundJ0VyAA6ZStackVyAGyA69_017ControlBackgroundR0V_A6_QPGGGGAA11_ClipEffectVyAA16RoundedRectangleVGGAA16_FixedSizeLayoutVG_ACyA24_AA12_FrameLayoutVGQPGGQPGGAA16_FlexFrameLayoutVGAaYHPA132_AaYHPyHC_A134_AA0rJ0HPyHCHC
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA6ButtonVyACyAA6VStackVyAA05TupleD0VyAA012_ConditionalD0VyAKyACyACyACyACyAA4TextVAA30_EnvironmentKeyWritingModifierVyAA8MaterialVSgGGAOyAA11ColorSchemeOGGAOyAA0I9AlignmentOGGAA14_PaddingLayoutVGACyACyACyACyACyAA6HStackVyAIyACyACyAA5ImageVAOyAA4FontVSgGGA_G_ACyACyAMA_GAOySiSgGGQPGGAA016_ForegroundStyleM0VyAA0O0VGGASGAWGAA023AccessibilityAttachmentM0VGA2_GGAA9EmptyViewVG_AKyAKyA0_A30_GA0_GSgQPGGAA010_FlexFrameS0VGGAA01_jk9TransformM0VySbGGA2_GA2_GAA4ViewHPA49_AAA51_HPA48_AAA51_HPA44_AAA51_HPyHC_A47_AA04ViewM0HPyHCHC_A2_AAA52_HPyHCHC_A2_AAA52_HPyHCHC
@@ -138,5 +84,4 @@ Symbols:
 CStrings:
 + "Home.AccessoryControlDecorationButton.iconTextView"
 + "TextButtonContentView button tapped"
-
 ```

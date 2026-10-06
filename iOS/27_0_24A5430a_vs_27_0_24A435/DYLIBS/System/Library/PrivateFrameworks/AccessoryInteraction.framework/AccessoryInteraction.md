@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AccessoryInteraction.framework/AccessoryInteraction`
 
-```diff
+### Section Size Changes
 
- 32.0.0.0.0
--  __TEXT.__text: 0x923c4
-+  __TEXT.__text: 0x923f8
-   __TEXT.__objc_methlist: 0x7010
-   __TEXT.__const: 0x9f0
-   __TEXT.__oslogstring: 0x2a906
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x923c4` | `0x923f8` | **`+0x34`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[ANDeviceManager isAirPodsBLECase:] : 136 -> 160
 ~ sub_238eea25c -> sub_2397e0274 : 4564 -> 4584

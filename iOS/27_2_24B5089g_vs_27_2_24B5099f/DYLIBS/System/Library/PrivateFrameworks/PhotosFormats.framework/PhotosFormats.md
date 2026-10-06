@@ -2,73 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/PhotosFormats.framework/PhotosFormats`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xdf970` | `0xe0288` | **`+0x918`** |
+| `__TEXT.__oslogstring` | `0x7b40` | `0x7c8e` | **`+0x14e`** |
+| `__TEXT.__cstring` | `0xe177` | `0xe1f2` | **`+0x7b`** |
+| `__TEXT.__gcc_except_tab` | `0x2ddc` | `0x2e30` | **`+0x54`** |
+| `__AUTH_CONST.__cfstring` | `0xccc0` | `0xcd00` | **`+0x40`** |
+| `__AUTH_CONST.__objc_const` | `0x156a8` | `0x156d8` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x17d0` | `0x17f8` | **`+0x28`** |
+| `__TEXT.__objc_methlist` | `0xd1e8` | `0xd210` | **`+0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6550` | `0x6568` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x35e8` | `0x35f8` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x10e8` | `0x10f0` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0xdb0` | `0xdb4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -916.45.110.0.0
--  __TEXT.__text: 0xdb550
--  __TEXT.__objc_methlist: 0xd1e8
 +916.51.202.0.0
-+  __TEXT.__text: 0xdbe44
-+  __TEXT.__objc_methlist: 0xd210
-   __TEXT.__const: 0x33a0
-   __TEXT.__dlopen_cstrs: 0x1b7
--  __TEXT.__cstring: 0xe177
-+  __TEXT.__cstring: 0xe1f2
-   __TEXT.__constg_swiftt: 0xa0
-   __TEXT.__swift5_typeref: 0xeb
-   __TEXT.__swift5_reflstr: 0x162
-   __TEXT.__swift5_fieldmd: 0xf4
-   __TEXT.__swift5_proto: 0x2c
-   __TEXT.__swift5_types: 0x10
--  __TEXT.__gcc_except_tab: 0x2ddc
--  __TEXT.__oslogstring: 0x7b40
-+  __TEXT.__gcc_except_tab: 0x2e30
-+  __TEXT.__oslogstring: 0x7c8e
-   __TEXT.__ustring: 0x44
--  __TEXT.__unwind_info: 0x4240
-+  __TEXT.__unwind_info: 0x4258
-   __TEXT.__eh_frame: 0x380
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_protolist: 0x110
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x6550
-+  __DATA_CONST.__objc_selrefs: 0x6568
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x3d0
-   __DATA_CONST.__objc_arraydata: 0x800
--  __DATA_CONST.__got: 0x17d0
-+  __DATA_CONST.__got: 0x17f8
-   __AUTH_CONST.__const: 0x1da8
--  __AUTH_CONST.__cfstring: 0xccc0
--  __AUTH_CONST.__objc_const: 0x156a8
-+  __AUTH_CONST.__cfstring: 0xcd00
-+  __AUTH_CONST.__objc_const: 0x156d8
-   __AUTH_CONST.__weak_auth_got: 0x20
-   __AUTH_CONST.__objc_intobj: 0x918
-   __AUTH_CONST.__objc_arrayobj: 0x348
-   __AUTH_CONST.__objc_doubleobj: 0x1b0
-   __AUTH_CONST.__objc_dictobj: 0x208
--  __AUTH_CONST.__auth_got: 0x10e8
--  __DATA.__objc_ivar: 0xdb0
-+  __AUTH_CONST.__auth_got: 0x10f0
-+  __DATA.__objc_ivar: 0xdb4
-   __DATA.__data: 0xd0
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0x3860
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5138
 -  Symbols:   9819
 -  CStrings:  2625
 +  Functions: 5143
 +  Symbols:   9831
 +  CStrings:  2631
- 
 Symbols:
 + +[PFContentProvenanceEmbeddedImageWriter outputContentTypeForRegularImageContentType:]
 + -[PFMetadata sizeAndDateResourceValues]

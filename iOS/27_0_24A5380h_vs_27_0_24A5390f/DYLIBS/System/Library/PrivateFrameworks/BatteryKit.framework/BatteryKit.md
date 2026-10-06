@@ -2,82 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/BatteryKit.framework/BatteryKit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__cstring`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__objc_classlist`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c1bc` | `0x1b944` | **`-0x878`** |
+| `__TEXT.__swift5_typeref` | `0x2282` | `0x1eee` | **`-0x394`** |
+| `__TEXT.__const` | `0x1c54` | `0x1ba4` | **`-0xb0`** |
+| `__DATA.__data` | `0x980` | `0x918` | **`-0x68`** |
+| `__TEXT.__eh_frame` | `0x470` | `0x4a0` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x958` | `0x930` | **`-0x28`** |
+| `__DATA.__bss` | `0x2530` | `0x2520` | **`-0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x98` | `0xa0` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -3486.0.46.502.1
--  __TEXT.__text: 0x1c1bc
--  __TEXT.__const: 0x1c54
 +3486.0.81.502.4
-+  __TEXT.__text: 0x1b944
-+  __TEXT.__const: 0x1ba4
-   __TEXT.__constg_swiftt: 0x70c
--  __TEXT.__swift5_typeref: 0x2282
-+  __TEXT.__swift5_typeref: 0x1eee
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_reflstr: 0x3a4
-   __TEXT.__swift5_fieldmd: 0x680
 
-   __TEXT.__swift5_proto: 0x128
-   __TEXT.__oslogstring: 0xb
-   __TEXT.__unwind_info: 0x640
--  __TEXT.__eh_frame: 0x470
-+  __TEXT.__eh_frame: 0x4a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__const: 0x90
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x98
-+  __DATA_CONST.__objc_selrefs: 0xa0
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x1361
-   __AUTH_CONST.__objc_const: 0x120
--  __AUTH_CONST.__auth_got: 0x958
-+  __AUTH_CONST.__auth_got: 0x930
-   __AUTH.__data: 0x3f0
--  __DATA.__data: 0x980
--  __DATA.__bss: 0x2530
-+  __DATA.__data: 0x918
-+  __DATA.__bss: 0x2520
-   - /System/Library/Frameworks/Charts.framework/Charts
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 575
--  Symbols:   470
+-  Symbols:   451
 +  Functions: 574
-+  Symbols:   462
-   CStrings:  173
- 
++  Symbols:   442
 Symbols:
 + _OBJC_CLASS_$_LSApplicationRecord
 + _get_witness_table 7SwiftUI14LabeledContentVyAA4TextVAEGAA4ViewHPAeaGHPyHC_AeaGHPyHCHC
 + _get_witness_table 7SwiftUI6VStackVyAA12TupleContentVy10BatteryKit18SummaryHeadingViewV_AA08ModifiedE0VyAA7DividerVAA14_PaddingLayoutVGAJyAF022DrainPercentComparisonJ0VANGAJyAJyAA14GeometryReaderVyAA6ZStackVyAEyAF07FullDayO5ChartV_AF07DynamicvoW0VQPGGGAA06_FrameN0VGANGQPGGAA0J0HPyHC
 + _get_witness_table 7SwiftUI7SectionVyAA9EmptyViewV10BatteryKit0fg15MaximumCapacityE0VAA4TextVGAA0E0HPAeaLHPyHC_AhaLHPyHCAjaLHPyHCHC
 + _get_witness_table 7SwiftUI7SectionVyAA9EmptyViewV10BatteryKit0fg17UsageSummaryGraphE0VAEGAA0E0HPAeaJHPyHC_AhaJHPyHCAeaJHPyHCHC
-+ _objc_msgSend$initWithBundleIdentifier:allowPlaceholder:error:
-+ _objc_msgSend$localizedName
 + _objc_retain_x22
 + _symbolic ___________y__________GABy_____ADGAByABy_____y_____y_____y___________QPGGG_____GADGt 10BatteryKit18SummaryHeadingViewV 7SwiftUI15ModifiedContentV AD7DividerV AD14_PaddingLayoutV AA022DrainPercentComparisonE0V AD14GeometryReaderV AD6ZStackV AD05TupleI0V AA07FullDayM5ChartV AA07DynamicumV0V AD06_FrameL0V
 + _symbolic _____ySi_G 10Foundation18IntegerFormatStyleV7PercentV
@@ -90,7 +44,6 @@ Symbols:
 - _get_witness_table 7SwiftUI15ModifiedContentVyAA6VStackVyAA05TupleD0VyACy10BatteryKit18SummaryHeadingViewVAA14_PaddingLayoutVG_ACyAA7DividerVALGACyAH022DrainPercentComparisonK0VALGACyACyAA14GeometryReaderVyAA6ZStackVyAGyAH07FullDayO5ChartV_AH07DynamicvoW0VQPGGGAA06_FrameM0VGALGQPGGALGAA0K0HPA8_AAA10_HPyHC_AlA0K8ModifierHPyHCHC
 - _get_witness_table 7SwiftUI15ModifiedContentVyAA7SectionVyAA9EmptyViewVAA6VStackVyAA05TupleD0VyACyACy10BatteryKit0jk15MaximumCapacityG0VAA24_BackgroundStyleModifierVyAA5ColorVGGAA11_ClipEffectVyAA16RoundedRectangleVGG_ACyACyACyAA4TextVAA14_PaddingLayoutVGAA022_EnvironmentKeyWritingP0VyAA4FontVSgGGAA011_ForegroundoP0VyAA017HierarchicalShapeO0VGGQPGGAGGA2_GAA0G0HPA19_AAA21_HPAgAA21_HPyHC_A18_AAA21_HPyHCAgAA21_HPyHCHC_A2_AA0gP0HPyHCHC
 - _get_witness_table 7SwiftUI7SectionVyAA9EmptyViewVAA15ModifiedContentVy10BatteryKit0hi17UsageSummaryGraphE0VAA24_BackgroundStyleModifierVyAA5ColorVGGAEGAA0E0HPAeaRHPyHC_ApaRHPAjaRHPyHC_AoA0eO0HPyHCHCAeaRHPyHCHC
-- _objc_msgSend$systemBackgroundColor
 - _symbolic _____yAAyAAy__________G_____y_____SgGG_____y_____GG 7SwiftUI15ModifiedContentV AA4TextV AA14_PaddingLayoutV AA30_EnvironmentKeyWritingModifierV AA4FontV AA016_ForegroundStyleK0V AA017HierarchicalShapeN0V
 - _symbolic _____yAAy__________G_____y_____SgGG 7SwiftUI15ModifiedContentV AA4TextV AA14_PaddingLayoutV AA30_EnvironmentKeyWritingModifierV AA4FontV
 - _symbolic _____yAAy__________y_____GG_____y_____GG 7SwiftUI15ModifiedContentV 10BatteryKit0eF19MaximumCapacityViewV AA24_BackgroundStyleModifierV AA5ColorV AA11_ClipEffectV AA16RoundedRectangleV

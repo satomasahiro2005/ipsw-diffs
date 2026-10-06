@@ -2,50 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/SignpostSupport.framework/SignpostSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7753c` | `0x7757c` | **`+0x40`** |
+| `__AUTH_CONST.__objc_const` | `0x16c08` | `0x16c38` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0xa014` | `0xa02c` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3b68` | `0x3b78` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0xf2c` | `0xf30` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -202.0.0.0.0
--  __TEXT.__text: 0x7753c
--  __TEXT.__objc_methlist: 0xa014
 +203.0.0.0.0
-+  __TEXT.__text: 0x7757c
-+  __TEXT.__objc_methlist: 0xa02c
-   __TEXT.__const: 0x19f8
-   __TEXT.__cstring: 0x1a737
-   __TEXT.__oslogstring: 0xef4
 
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3b68
-+  __DATA_CONST.__objc_selrefs: 0x3b78
-   __DATA_CONST.__objc_superrefs: 0x488
-   __DATA_CONST.__objc_arraydata: 0x50c8
-   __DATA_CONST.__got: 0x470
-   __AUTH_CONST.__const: 0x1868
-   __AUTH_CONST.__cfstring: 0x1ca60
--  __AUTH_CONST.__objc_const: 0x16c08
-+  __AUTH_CONST.__objc_const: 0x16c38
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_arrayobj: 0x408
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_intobj: 0x1e0
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__objc_ivar: 0xf2c
-+  __DATA.__objc_ivar: 0xf30
-   __DATA.__data: 0x1180
-   __DATA.__bss: 0x410
-   __DATA_DIRTY.__objc_data: 0x3390
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 4103
--  Symbols:   8818
+-  Symbols:   7282
 +  Functions: 4105
-+  Symbols:   8824
-   CStrings:  3920
- 
++  Symbols:   7286
 Symbols:
 + -[SignpostSupportObjectExtractor didComplete]
 + -[SignpostSupportObjectExtractor setDidComplete:]
@@ -110,9 +87,6 @@ Symbols:
 + GCC_except_table88
 + GCC_except_table97
 + _OBJC_IVAR_$_SignpostSupportObjectExtractor._didComplete
-+ _objc_msgSend$didComplete
-+ _objc_msgSend$setDidComplete:
-+ _objc_msgSend$set_stopProcessingBlock:
 - GCC_except_table110
 - GCC_except_table111
 - GCC_except_table12
@@ -172,5 +146,4 @@ Symbols:
 - GCC_except_table93
 - GCC_except_table95
 - GCC_except_table96
-- _objc_msgSend$setNotificationProcessingQueue:
 ```

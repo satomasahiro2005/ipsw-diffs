@@ -2,103 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/CMCapture.framework/CMCapture`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__dlopen_cstrs`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_floatobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8c4fc0` | `0x8cddc4` | **`+0x8e04`** |
+| `__TEXT.__oslogstring` | `0x16645a` | `0x168211` | **`+0x1db7`** |
+| `__TEXT.__cstring` | `0xff0b4` | `0xffc93` | **`+0xbdf`** |
+| `__AUTH_CONST.__objc_const` | `0xa67d0` | `0xa7038` | **`+0x868`** |
+| `__TEXT.__objc_methlist` | `0x3a578` | `0x3a9a8` | **`+0x430`** |
+| `__AUTH_CONST.__cfstring` | `0x590a0` | `0x593a0` | **`+0x300`** |
+| `__DATA_CONST.__objc_selrefs` | `0x174f0` | `0x176b0` | **`+0x1c0`** |
+| `__TEXT.__gcc_except_tab` | `0x4a94` | `0x4be4` | **`+0x150`** |
+| `__DATA.__objc_ivar` | `0xbdb0` | `0xbe64` | **`+0xb4`** |
+| `__AUTH.__objc_data` | `0x3b10` | `0x3bb0` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x11eb0` | `0x11f50` | **`+0xa0`** |
+| `__AUTH_CONST.__const` | `0x4a58` | `0x4ad8` | **`+0x80`** |
+| `__DATA.__common` | `0x2c40` | `0x2c90` | **`+0x50`** |
+| `__DATA_CONST.__const` | `0x11328` | `0x11378` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x7058` | `0x7078` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x6540` | `0x6528` | **`-0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x1ef8` | `0x1f08` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1d10` | `0x1d20` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x2db0` | `0x2db8` | **`+0x8`** |
+| `__TEXT.__const` | `0x151770` | `0x151768` | **`-0x8`** |
+
+### Other Changes
 
 ```diff
 
 -758.0.0.122.2
--  __TEXT.__text: 0x8c4fc0
--  __TEXT.__objc_methlist: 0x3a578
--  __TEXT.__const: 0x151770
--  __TEXT.__cstring: 0xff0b4
--  __TEXT.__oslogstring: 0x16645a
--  __TEXT.__gcc_except_tab: 0x4a94
 +761.0.0.0.3
-+  __TEXT.__text: 0x8cddc4
-+  __TEXT.__objc_methlist: 0x3a9a8
-+  __TEXT.__const: 0x151768
-+  __TEXT.__cstring: 0xffc93
-+  __TEXT.__oslogstring: 0x168211
-+  __TEXT.__gcc_except_tab: 0x4be4
-   __TEXT.__dlopen_cstrs: 0x7ad
-   __TEXT.__ustring: 0x10
--  __TEXT.__unwind_info: 0x11eb0
-+  __TEXT.__unwind_info: 0x11f50
-   __TEXT.__eh_frame: 0x38
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x11328
--  __DATA_CONST.__objc_classlist: 0x1ef8
-+  __DATA_CONST.__const: 0x11378
-+  __DATA_CONST.__objc_classlist: 0x1f08
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x628
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x174f0
-+  __DATA_CONST.__objc_selrefs: 0x176b0
-   __DATA_CONST.__objc_protorefs: 0x78
--  __DATA_CONST.__objc_superrefs: 0x1d10
-+  __DATA_CONST.__objc_superrefs: 0x1d20
-   __DATA_CONST.__objc_arraydata: 0x3bc8
--  __DATA_CONST.__got: 0x7058
--  __AUTH_CONST.__const: 0x4a58
--  __AUTH_CONST.__cfstring: 0x590a0
--  __AUTH_CONST.__objc_const: 0xa67d0
-+  __DATA_CONST.__got: 0x7078
-+  __AUTH_CONST.__const: 0x4ad8
-+  __AUTH_CONST.__cfstring: 0x593a0
-+  __AUTH_CONST.__objc_const: 0xa7038
-   __AUTH_CONST.__weak_auth_got: 0x10
--  __AUTH_CONST.__objc_intobj: 0x6540
-+  __AUTH_CONST.__objc_intobj: 0x6528
-   __AUTH_CONST.__objc_arrayobj: 0x2c70
-   __AUTH_CONST.__objc_floatobj: 0x270
-   __AUTH_CONST.__objc_dictobj: 0x1798
-   __AUTH_CONST.__objc_doubleobj: 0xab0
--  __AUTH_CONST.__auth_got: 0x2db0
--  __AUTH.__objc_data: 0x3b10
-+  __AUTH_CONST.__auth_got: 0x2db8
-+  __AUTH.__objc_data: 0x3bb0
-   __AUTH.__data: 0x110
--  __DATA.__objc_ivar: 0xbdb0
-+  __DATA.__objc_ivar: 0xbe64
-   __DATA.__data: 0x5958
-   __DATA.__crash_info: 0x148
--  __DATA.__common: 0x2c40
-+  __DATA.__common: 0x2c90
-   __DATA.__bss: 0x2df8
-   __DATA_DIRTY.__objc_data: 0xfaa0
-   __DATA_DIRTY.__data: 0xf98
 
-   - /usr/lib/liblockdown.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libtailspin.dylib
 -  Functions: 41535
--  Symbols:   66932
+-  Symbols:   56434
 -  CStrings:  38813
 +  Functions: 41663
-+  Symbols:   67152
++  Symbols:   56605
 +  CStrings:  38929
- 
 Symbols:
 + +[BWInferenceLazyVideoRequirement initialize]
 + +[BWStandardResolutionAttachmentNode initialize]
@@ -337,69 +278,6 @@ Symbols:
 + _kFigCaptureSourceWhiteBalanceOperationKey_FeaturesEnabled
 + _kFigQuickTimeMetadataKey_LivePhotoVitalityDisabled
 + _kFigVirtualCaptureCardProperty_InitialCapacityOverhead
-+ _objc_msgSend$_adjustAspectRatio:settings:applyOutputAspectRatioOverride:
-+ _objc_msgSend$_cropRectForRequestedSettings:inputDimensions:outputDimensions:metadata:processingFlags:applyOutputAspectRatioOverride:
-+ _objc_msgSend$_initWithGainsByPortType:requestID:featuresEnabled:
-+ _objc_msgSend$_initWithLensPosition:clampToHyperfocal:requestID:
-+ _objc_msgSend$_updateGazeStatesUsingGazeProbabilitiesData:gazeScoreOut:
-+ _objc_msgSend$attachedMediaFromStandardResolutionImage
-+ _objc_msgSend$beginIrisMovieCaptureTime
-+ _objc_msgSend$blurMapRenderErrorFromStandardResolutionImage
-+ _objc_msgSend$blurredGainMapSbuf
-+ _objc_msgSend$captureState
-+ _objc_msgSend$commonEffectsSbuf
-+ _objc_msgSend$consumed
-+ _objc_msgSend$didStop
-+ _objc_msgSend$digitalFlashBacklitRecommendFlashNormalizedSNRHysteresisLag
-+ _objc_msgSend$digitalFlashBacklitRecommendFlashNormalizedSNRThreshold
-+ _objc_msgSend$digitalFlashRecommendFlashNormalizedSNRHysteresisLag
-+ _objc_msgSend$digitalFlashRecommendFlashNormalizedSNRThreshold
-+ _objc_msgSend$disableVitalityForSettingsID:
-+ _objc_msgSend$enqueueInputForProcessing:delegate:processErrorRecoveryFrame:processErrorRecoveryProxy:processHDRErrorRecovery:processOriginalImage:processLinearImage:processToneMapping:processInferenceInputImage:clientBracketSequenceNumber:processSemanticRendering:provideInferenceInputImageForProcessing:processSmartStyleRenderingInput:inferencesAvailable:
-+ _objc_msgSend$faceAdjustedBlurMapFromStandardResolutionImage
-+ _objc_msgSend$faceId
-+ _objc_msgSend$hyperfocalLogicalFocusLensPosition
-+ _objc_msgSend$inferenceInputAttachedMediaKey
-+ _objc_msgSend$inferenceResultsFromStandardResolutionImage
-+ _objc_msgSend$initWithExpectedSbufEmits:
-+ _objc_msgSend$initWithFaceIndex:boundingBoxScalingFactor:isDeviceOriented:
-+ _objc_msgSend$initWithGroupID:significanceDetectionThreshold:smartFramingSceneMonitorMode:isPet:
-+ _objc_msgSend$invalidateAndKeepFigCaptureDeviceAlive:streamsToRelinquishControl:preserveTorchState:unsynchronizedStreamsStopSupported:
-+ _objc_msgSend$lastKnownSubjectGazingState
-+ _objc_msgSend$learnedCoefficientsSbuf
-+ _objc_msgSend$openDeviceWithUsagePage:vendor:product:error:
-+ _objc_msgSend$outputAspectRatioOverride
-+ _objc_msgSend$portTypesWithSoftISPClientBracketEnabled
-+ _objc_msgSend$portraitStillImageAuxDepthMetadata
-+ _objc_msgSend$reasonForNotEqualingConfigurationIgnoringConfigurationID:
-+ _objc_msgSend$releaseStashedAttachedMediaAndInferenceResultsFromStandardRes
-+ _objc_msgSend$releaseStyledUnstyledSynchronizationBuffers
-+ _objc_msgSend$restoreLastKnownSubjectGazingState:
-+ _objc_msgSend$sbufEmitted
-+ _objc_msgSend$sessionClearNonSystemInterruption
-+ _objc_msgSend$setBlurMapRenderErrorFromStandardResolutionImage:
-+ _objc_msgSend$setBlurredGainMapSbuf:
-+ _objc_msgSend$setCaptureState:
-+ _objc_msgSend$setCommonEffectsSbuf:
-+ _objc_msgSend$setInferenceInputAttachedMediaKey:
-+ _objc_msgSend$setLearnedCoefficientsSbuf:
-+ _objc_msgSend$setOutputAspectRatioOverride:
-+ _objc_msgSend$setPortTypesWithSoftISPClientBracketEnabled:
-+ _objc_msgSend$setShutterSoundRelaxationTrueVideoTransitionActive:
-+ _objc_msgSend$setStyledFullResolutionSbuf:
-+ _objc_msgSend$setTargetVendor:
-+ _objc_msgSend$setUnneeded:
-+ _objc_msgSend$setUnstyledFullResolutionSbuf:
-+ _objc_msgSend$setVitalityDisabled:
-+ _objc_msgSend$stashMediaFromRenderedBlurMap:
-+ _objc_msgSend$stillImageCoordinator:didSelectVitalityMode:forSettings:
-+ _objc_msgSend$styledFullResolutionSbuf
-+ _objc_msgSend$subjectRelightingEnabled
-+ _objc_msgSend$transferManager
-+ _objc_msgSend$unneeded
-+ _objc_msgSend$unstyledFullResolutionSbuf
-+ _objc_msgSend$vitalityDisabled
-+ _objc_msgSend$willStop
 + _vcc_getInitialCapacityOverhead
 - +[FigCaptureCustomFocusConfiguration focusConfigurationWithLensPosition:requestID:]
 - +[FigCaptureCustomWhiteBalanceConfiguration whiteBalanceConfigurationWithGainsByDeviceType:position:requestID:]
@@ -468,20 +346,6 @@ Symbols:
 - ___50-[BWTemporalFilterNode didReachEndOfDataForInput:]_block_invoke
 - ___58-[BWStillImageFilterNode _emitSampleBufferAsync:withNote:]_block_invoke
 - ___59-[FigCaptureSessionStateManager clearNonSystemInterruption]_block_invoke
-- _objc_msgSend$_adjustAspectRatio:settings:
-- _objc_msgSend$_cropRectForRequestedSettings:inputDimensions:outputDimensions:metadata:processingFlags:
-- _objc_msgSend$_initWithGainsByPortType:requestID:
-- _objc_msgSend$_initWithLensPosition:requestID:
-- _objc_msgSend$_updateGazeStatesUsingGazeProbabilitiesData:gazeScoreOut:gazeScoreFilteredOut:
-- _objc_msgSend$clearNonSystemInterruption
-- _objc_msgSend$enqueueInputForProcessing:delegate:processErrorRecoveryFrame:processErrorRecoveryProxy:processOriginalImage:processLinearImage:processToneMapping:processInferenceInputImage:clientBracketSequenceNumber:processSemanticRendering:provideInferenceInputImageForProcessing:processSmartStyleRenderingInput:inferencesAvailable:
-- _objc_msgSend$initWithFaceIndex:boundingBoxScalingFactor:
-- _objc_msgSend$initWithGroupID:significanceDetectionThreshold:gazeFilteringStrength:smartFramingSceneMonitorMode:isPet:
-- _objc_msgSend$invalidateAndKeepFigCaptureDeviceAlive:streamsToRelinquishControl:preserveTorchState:
-- _objc_msgSend$openDeviceWithUsagePage:usage:error:
-- _objc_msgSend$setTargetUsage:
-- _objc_msgSend$synchronizedStreamsGroupDidStop
-- _objc_msgSend$synchronizedStreamsGroupWillStop
 CStrings:
 + " AROverride:%.3f"
 + " backgroundQoSTransition: {lastJobQoS:%@, currentJobQoS:%@}"

@@ -2,62 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/MusicLibrary.framework/MusicLibrary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x1a90` | `—` | **`-0x1a90`** |
+| `__DATA_DIRTY.__objc_data` | `0x2c60` | `0x46f0` | **`+0x1a90`** |
+| `__DATA_DIRTY.__data` | `0x80` | `0x988` | **`+0x908`** |
+| `__DATA.__data` | `0x1708` | `0xf18` | **`-0x7f0`** |
+| `__AUTH.__data` | `0x118` | `—` | **`-0x118`** |
+| `__TEXT.__text` | `0x3b8454` | `0x3b84ec` | **`+0x98`** |
+| `__TEXT.__cstring` | `0x750c3` | `0x75135` | **`+0x72`** |
+| `__AUTH_CONST.__cfstring` | `0x288c0` | `0x28900` | **`+0x40`** |
+| `__DATA_CONST.__objc_arraydata` | `0x1420` | `0x1428` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -4026.200.14.0.0
--  __TEXT.__text: 0x3b1490
 +4026.200.17.0.0
-+  __TEXT.__text: 0x3b1528
-   __TEXT.__objc_methlist: 0xe834
-   __TEXT.__const: 0x25d54
-   __TEXT.__dlopen_cstrs: 0x399
-   __TEXT.__gcc_except_tab: 0x14924
--  __TEXT.__cstring: 0x750c3
-+  __TEXT.__cstring: 0x75135
-   __TEXT.__oslogstring: 0x1e205
-   __TEXT.__ustring: 0x210
-   __TEXT.__unwind_info: 0x84e8
 
-   __DATA_CONST.__objc_selrefs: 0x70b8
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__objc_superrefs: 0x528
--  __DATA_CONST.__objc_arraydata: 0x1420
-+  __DATA_CONST.__objc_arraydata: 0x1428
-   __DATA_CONST.__got: 0xb40
-   __AUTH_CONST.__const: 0x19420
--  __AUTH_CONST.__cfstring: 0x288c0
-+  __AUTH_CONST.__cfstring: 0x28900
-   __AUTH_CONST.__objc_const: 0x15c28
-   __AUTH_CONST.__weak_auth_got: 0x20
-   __AUTH_CONST.__objc_arrayobj: 0x22c8
-
-   __AUTH_CONST.__objc_dictobj: 0xf0
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__auth_got: 0xff0
--  __AUTH.__objc_data: 0x1a90
--  __AUTH.__data: 0x118
-   __DATA.__objc_ivar: 0xf40
--  __DATA.__data: 0x1710
-+  __DATA.__data: 0xf20
-   __DATA.__common: 0xb20
--  __DATA_DIRTY.__objc_data: 0x2c60
--  __DATA_DIRTY.__data: 0x80
-+  __DATA_DIRTY.__objc_data: 0x46f0
-+  __DATA_DIRTY.__data: 0x988
-   __DATA_DIRTY.__bss: 0x10e0
-   __DATA_DIRTY.__common: 0x38
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 8507
--  Symbols:   17553
+-  Symbols:   14778
 -  CStrings:  7578
 +  Functions: 8508
-+  Symbols:   17554
++  Symbols:   14779
 +  CStrings:  7580
- 
 Symbols:
 + GCC_except_table1132
 + GCC_except_table1143

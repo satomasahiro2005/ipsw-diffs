@@ -2,17 +2,18 @@
 
 > `/System/Library/Frameworks/CreateMLComponents.framework/CreateMLComponents`
 
-```diff
+### Section Size Changes
 
- 1431.0.0.0.0
--  __TEXT.__text: 0x286304
-+  __TEXT.__text: 0x2862e4
-   __TEXT.__objc_methlist: 0x25c
-   __TEXT.__const: 0x1e52c
-   __TEXT.__constg_swiftt: 0xb4f0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x286304` | `0x2862e4` | **`-0x20`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_248c70a8c -> sub_248756a8c : 1344 -> 1336
-~ sub_248c70fcc -> sub_248756fc4 : 652 -> 636
+~ sub_248b9aa8c -> sub_24851aa8c : 1344 -> 1336
+~ sub_248b9afcc -> sub_24851afc4 : 652 -> 636
 ~ _OUTLINED_FUNCTION_37 : 28 -> 16
 ~ _OUTLINED_FUNCTION_38 : 16 -> 28
 ~ _OUTLINED_FUNCTION_52 : 24 -> 28
@@ -32,5 +33,5 @@ Functions:
 ~ _OUTLINED_FUNCTION_78 : 12 -> 28
 ~ _OUTLINED_FUNCTION_97 : 28 -> 8
 ~ _OUTLINED_FUNCTION_98 : 8 -> 28
-~ sub_248d4ee20 -> sub_248834e08 : 1288 -> 1280
+~ sub_248c78e20 -> sub_2485f8e08 : 1288 -> 1280
 ```

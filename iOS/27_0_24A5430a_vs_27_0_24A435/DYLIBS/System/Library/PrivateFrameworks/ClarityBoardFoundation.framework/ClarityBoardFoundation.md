@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ClarityBoardFoundation.framework/ClarityBoardFoundation`
 
-```diff
+### Section Size Changes
 
- 168.2.0.0.0
--  __TEXT.__text: 0xe6f8
-+  __TEXT.__text: 0xe6fc
-   __TEXT.__objc_methlist: 0x284
-   __TEXT.__const: 0x790
-   __TEXT.__oslogstring: 0x37c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe6f8` | `0xe6fc` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2575f7308 -> sub_258704308 : 356 -> 360
+~ sub_2574c1308 -> sub_2585e8308 : 356 -> 360
 ```

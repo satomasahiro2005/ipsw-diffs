@@ -2,20 +2,26 @@
 
 > `/System/Library/Filesystems/hfs.fs/fsck_hfs`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x34be8` | `0x34ba8` | **`-0x40`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x34be8
-+  __TEXT.__text: 0x34ba8
-   __TEXT.__auth_stubs: 0x7b0
-   __TEXT.__const: 0x10b4
-   __TEXT.__cstring: 0x6e74
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA.__data : content changed
-~ __DATA.__common : content changed
+-748.0.0.0.0
++749.0.0.0.0
 Functions:
 ~ sub_100000ec4 : 572 -> 548
 ~ sub_100001100 -> sub_1000010e8 : 632 -> 616
@@ -34,5 +40,4 @@ Functions:
 ~ sub_100032cfc -> sub_100032cd4 : 336 -> 324
 ~ sub_100033ff0 -> sub_100033fbc : 2228 -> 2220
 ~ sub_100034998 -> sub_10003495c : 700 -> 696
-
 ```

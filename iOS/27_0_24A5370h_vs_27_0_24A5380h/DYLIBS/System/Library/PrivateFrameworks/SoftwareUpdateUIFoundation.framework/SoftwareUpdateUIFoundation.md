@@ -2,92 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/SoftwareUpdateUIFoundation.framework/SoftwareUpdateUIFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa2ff0` | `0xaaa2c` | **`+0x7a3c`** |
+| `__AUTH_CONST.__objc_const` | `0x6010` | `0x69c0` | **`+0x9b0`** |
+| `__TEXT.__oslogstring` | `0x9f67` | `0xa757` | **`+0x7f0`** |
+| `__TEXT.__cstring` | `0x660e` | `0x6a48` | **`+0x43a`** |
+| `__TEXT.__objc_methlist` | `0x1f74` | `0x22cc` | **`+0x358`** |
+| `__AUTH_CONST.__cfstring` | `0x3b80` | `0x3e00` | **`+0x280`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1360` | `0x1568` | **`+0x208`** |
+| `__TEXT.__gcc_except_tab` | `0x21ec` | `0x2394` | **`+0x1a8`** |
+| `__AUTH.__objc_data` | `0xeb0` | `0xff0` | **`+0x140`** |
+| `__DATA_CONST.__const` | `0x22a8` | `0x23a8` | **`+0x100`** |
+| `__TEXT.__unwind_info` | `0x1120` | `0x11d8` | **`+0xb8`** |
+| `__DATA.__objc_ivar` | `0x254` | `0x300` | **`+0xac`** |
+| `__TEXT.__eh_frame` | `0xba8` | `0xb00` | **`-0xa8`** |
+| `__AUTH_CONST.__auth_got` | `0x948` | `0x8f8` | **`-0x50`** |
+| `__DATA_CONST.__got` | `0x428` | `0x458` | **`+0x30`** |
+| `__DATA.__bss` | `0x3608` | `0x35e0` | **`-0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x178` | `0x198` | **`+0x20`** |
+| `__DATA_CONST.__objc_superrefs` | `0xf8` | `0x110` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xa2ff0
--  __TEXT.__objc_methlist: 0x1f74
--  __TEXT.__cstring: 0x660e
--  __TEXT.__gcc_except_tab: 0x21ec
--  __TEXT.__oslogstring: 0x9f67
-+  __TEXT.__text: 0xaaa2c
-+  __TEXT.__objc_methlist: 0x22cc
-+  __TEXT.__cstring: 0x6a48
-+  __TEXT.__gcc_except_tab: 0x2394
-+  __TEXT.__oslogstring: 0xa757
-   __TEXT.__const: 0x2300
-   __TEXT.__swift5_typeref: 0x75d
-   __TEXT.__swift5_reflstr: 0x61e
+-772.0.3.0.0
++772.0.8.0.0
 
-   __TEXT.__swift_as_ret: 0x38
-   __TEXT.__swift_as_cont: 0x48
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0x1120
--  __TEXT.__eh_frame: 0xba8
-+  __TEXT.__unwind_info: 0x11d8
-+  __TEXT.__eh_frame: 0xb00
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x22a8
--  __DATA_CONST.__objc_classlist: 0x178
-+  __DATA_CONST.__const: 0x23a8
-+  __DATA_CONST.__objc_classlist: 0x198
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1360
-+  __DATA_CONST.__objc_selrefs: 0x1568
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__objc_superrefs: 0xf8
--  __DATA_CONST.__got: 0x428
-+  __DATA_CONST.__objc_superrefs: 0x110
-+  __DATA_CONST.__got: 0x458
-   __AUTH_CONST.__const: 0x1770
--  __AUTH_CONST.__cfstring: 0x3b80
--  __AUTH_CONST.__objc_const: 0x6010
-+  __AUTH_CONST.__cfstring: 0x3e00
-+  __AUTH_CONST.__objc_const: 0x69c0
-   __AUTH_CONST.__objc_intobj: 0xd8
--  __AUTH_CONST.__auth_got: 0x948
--  __AUTH.__objc_data: 0xeb0
-+  __AUTH_CONST.__auth_got: 0x8f8
-+  __AUTH.__objc_data: 0xff0
-   __AUTH.__data: 0x40
--  __DATA.__objc_ivar: 0x254
-+  __DATA.__objc_ivar: 0x300
-   __DATA.__data: 0xdf0
--  __DATA.__bss: 0x3608
-+  __DATA.__bss: 0x35e0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1990
--  Symbols:   4162
--  CStrings:  1380
+-  Symbols:   2128
+-  CStrings:  905
 +  Functions: 2071
-+  Symbols:   4453
-+  CStrings:  1443
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
++  Symbols:   2282
++  CStrings:  948
 Symbols:
 + +[SUUIUserDefaults(Foundation) scanResultsCacheRefreshForcesScanEntry]
 + +[SUUIUserDefaults(Foundation) scanResultsCacheRefreshIntervalOverrideEntry]
@@ -290,56 +240,6 @@ Symbols:
 + _dispatch_source_set_timer
 + _kSUUIUserDefaultsScanResultsCacheRefreshForceScan
 + _kSUUIUserDefaultsScanResultsCacheRefreshIntervalOverride
-+ _objc_msgSend$_armSafetyDeadline
-+ _objc_msgSend$_armWaitDeadline
-+ _objc_msgSend$_cancelSafetyDeadline
-+ _objc_msgSend$_cancelWaitDeadline
-+ _objc_msgSend$_dispatchEntry:
-+ _objc_msgSend$_errorForException:taskNamed:
-+ _objc_msgSend$_resolveToken:result:error:
-+ _objc_msgSend$_settleWithOutcome:
-+ _objc_msgSend$_timeoutError
-+ _objc_msgSend$_unfinishedNames
-+ _objc_msgSend$addTaskNamed:context:task:
-+ _objc_msgSend$allValues
-+ _objc_msgSend$array
-+ _objc_msgSend$arrayWithCapacity:
-+ _objc_msgSend$block
-+ _objc_msgSend$buildVersion
-+ _objc_msgSend$checkForAvailableUpdatesWithRetriesCount:forceScan:
-+ _objc_msgSend$componentsJoinedByString:
-+ _objc_msgSend$containsObject:
-+ _objc_msgSend$context
-+ _objc_msgSend$deviceFamilyName
-+ _objc_msgSend$dispatched
-+ _objc_msgSend$hasWapiCapability
-+ _objc_msgSend$initWithIdentifier:timeout:policy:completionQueue:
-+ _objc_msgSend$initWithOSName:productFamilyName:productVersion:buildVersion:productVersionExtra:deviceFamilyName:isInternalBuild:isRootsInstalled:isSeedBuild:hasWapiCapability:
-+ _objc_msgSend$initWithOutcome:firstError:resultsByName:finishedNames:unfinishedNames:
-+ _objc_msgSend$initWithRetriesCount:forceScan:
-+ _objc_msgSend$isInternalBuild
-+ _objc_msgSend$isRootsInstalled
-+ _objc_msgSend$isSeedBuild
-+ _objc_msgSend$name
-+ _objc_msgSend$numberWithUnsignedLongLong:
-+ _objc_msgSend$osName
-+ _objc_msgSend$outcome
-+ _objc_msgSend$productFamilyName
-+ _objc_msgSend$productVersion
-+ _objc_msgSend$productVersionExtra
-+ _objc_msgSend$reason
-+ _objc_msgSend$selectCompletionQueue:
-+ _objc_msgSend$set
-+ _objc_msgSend$setBlock:
-+ _objc_msgSend$setContext:
-+ _objc_msgSend$setDispatched:
-+ _objc_msgSend$setName:
-+ _objc_msgSend$setState:
-+ _objc_msgSend$setToken:
-+ _objc_msgSend$start
-+ _objc_msgSend$state
-+ _objc_msgSend$token
-+ _objc_msgSend$waitForResult:
 - GCC_except_table139
 - GCC_except_table150
 - GCC_except_table157
@@ -457,5 +357,4 @@ CStrings:
 - "CFStringGetTypeID"
 - "kCFAllocatorNull"
 - "r"
-
 ```

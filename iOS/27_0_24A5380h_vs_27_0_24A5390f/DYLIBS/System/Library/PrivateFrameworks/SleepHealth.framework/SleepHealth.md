@@ -2,75 +2,25 @@
 
 > `/System/Library/PrivateFrameworks/SleepHealth.framework/SleepHealth`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3aed0` | `0x3ae08` | **`-0xc8`** |
+| `__AUTH_CONST.__const` | `0x2810` | `0x27e0` | **`-0x30`** |
+| `__TEXT.__cstring` | `0x11ae` | `0x118e` | **`-0x20`** |
+
+### Other Changes
 
 ```diff
 
 -7027.0.64.0.0
--  __TEXT.__text: 0x3aed0
 +7027.0.67.2.1
-+  __TEXT.__text: 0x3ae08
-   __TEXT.__objc_methlist: 0x46c
-   __TEXT.__const: 0x2b10
-   __TEXT.__constg_swiftt: 0x824
 
-   __TEXT.__swift5_reflstr: 0xaf3
-   __TEXT.__swift5_fieldmd: 0xc6c
-   __TEXT.__swift5_types: 0xd4
--  __TEXT.__cstring: 0x11ae
-+  __TEXT.__cstring: 0x118e
-   __TEXT.__swift5_assocty: 0x170
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift5_proto: 0x248
-
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_superrefs: 0x18
-   __DATA_CONST.__got: 0x518
--  __AUTH_CONST.__const: 0x2810
-+  __AUTH_CONST.__const: 0x27e0
-   __AUTH_CONST.__cfstring: 0x4c0
-   __AUTH_CONST.__objc_const: 0xb00
-   __AUTH_CONST.__objc_intobj: 0x18
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 1434
--  Symbols:   735
+-  Symbols:   646
 -  CStrings:  140
-+  Symbols:   734
++  Symbols:   645
 +  CStrings:  139
- 
 Symbols:
 - _objc_retain_x25
 Functions:

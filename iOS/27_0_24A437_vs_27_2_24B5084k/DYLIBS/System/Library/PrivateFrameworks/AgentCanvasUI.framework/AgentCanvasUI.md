@@ -2,130 +2,66 @@
 
 > `/System/Library/PrivateFrameworks/AgentCanvasUI.framework/AgentCanvasUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1819e8` | `0x18f674` | **`+0xdc8c`** |
+| `__TEXT.__swift5_typeref` | `0xc2e8` | `0xd218` | **`+0xf30`** |
+| `__TEXT.__const` | `0xdf24` | `0xe924` | **`+0xa00`** |
+| `__TEXT.__eh_frame` | `0x7b9c` | `0x847c` | **`+0x8e0`** |
+| `__DATA.__bss` | `0x5d50` | `0x64e0` | **`+0x790`** |
+| `__DATA.__data` | `0x30e8` | `0x36b8` | **`+0x5d0`** |
+| `__AUTH_CONST.__const` | `0x7848` | `0x7d78` | **`+0x530`** |
+| `__DATA_DIRTY.__bss` | `0x4330` | `0x3f30` | **`-0x400`** |
+| `__TEXT.__unwind_info` | `0x5620` | `0x5998` | **`+0x378`** |
+| `__AUTH.__data` | `0x1be0` | `0x1f30` | **`+0x350`** |
+| `__TEXT.__constg_swiftt` | `0x494c` | `0x4c70` | **`+0x324`** |
+| `__TEXT.__swift5_fieldmd` | `0x3824` | `0x3a58` | **`+0x234`** |
+| `__DATA_DIRTY.__data` | `0x5a58` | `0x5840` | **`-0x218`** |
+| `__TEXT.__swift5_capture` | `0x1d14` | `0x1f0c` | **`+0x1f8`** |
+| `__TEXT.__swift5_reflstr` | `0x3dae` | `0x3f5e` | **`+0x1b0`** |
+| `__AUTH_CONST.__auth_got` | `0x3c88` | `0x3e30` | **`+0x1a8`** |
+| `__TEXT.__swift5_assocty` | `0xe40` | `0xf18` | **`+0xd8`** |
+| `__DATA_CONST.__got` | `0x2050` | `0x2100` | **`+0xb0`** |
+| `__TEXT.__cstring` | `0x454f` | `0x44af` | **`-0xa0`** |
+| `__TEXT.__swift_as_cont` | `0x2f8` | `0x348` | **`+0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x848` | `0x800` | **`-0x48`** |
+| `__DATA_CONST.__const` | `0x540` | `0x580` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0xc80` | `0xcc0` | **`+0x40`** |
+| `__TEXT.__swift_as_entry` | `0x290` | `0x2c8` | **`+0x38`** |
+| `__TEXT.__swift_as_ret` | `0x280` | `0x2b0` | **`+0x30`** |
+| `__TEXT.__swift5_types` | `0x400` | `0x424` | **`+0x24`** |
+| `__TEXT.__oslogstring` | `0x2bcf` | `0x2baf` | **`-0x20`** |
+| `__TEXT.__swift5_proto` | `0x4e0` | `0x4fc` | **`+0x1c`** |
+| `__AUTH_CONST.__objc_const` | `0x34d8` | `0x34f0` | **`+0x18`** |
+| `__AUTH.__objc_data` | `0x480` | `0x488` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x150` | `0x158` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -73.0.24.109.0
--  __TEXT.__text: 0x16f4a0
 +3605.1.1.1.5
-+  __TEXT.__text: 0x17c538
-   __TEXT.__objc_methlist: 0xb38
--  __TEXT.__const: 0xdf24
--  __TEXT.__constg_swiftt: 0x494c
--  __TEXT.__swift5_typeref: 0xc2e8
-+  __TEXT.__const: 0xe924
-+  __TEXT.__constg_swiftt: 0x4c70
-+  __TEXT.__swift5_typeref: 0xd218
-   __TEXT.__swift5_builtin: 0x154
--  __TEXT.__swift5_reflstr: 0x3dae
--  __TEXT.__swift5_fieldmd: 0x3824
--  __TEXT.__swift5_assocty: 0xe40
--  __TEXT.__cstring: 0x454f
--  __TEXT.__swift5_proto: 0x4e0
--  __TEXT.__swift5_types: 0x400
--  __TEXT.__swift5_capture: 0x1d14
--  __TEXT.__swift_as_entry: 0x290
--  __TEXT.__swift_as_ret: 0x280
--  __TEXT.__swift_as_cont: 0x2f8
-+  __TEXT.__swift5_reflstr: 0x3f5e
-+  __TEXT.__swift5_fieldmd: 0x3a58
-+  __TEXT.__swift5_assocty: 0xf18
-+  __TEXT.__swift5_proto: 0x4fc
-+  __TEXT.__swift5_types: 0x424
-+  __TEXT.__cstring: 0x44af
-+  __TEXT.__swift5_capture: 0x1f0c
-+  __TEXT.__swift_as_entry: 0x2c8
-+  __TEXT.__swift_as_ret: 0x2b0
-+  __TEXT.__swift_as_cont: 0x348
-   __TEXT.__swift5_protos: 0x24
--  __TEXT.__oslogstring: 0x2bcf
-+  __TEXT.__oslogstring: 0x2baf
-   __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__unwind_info: 0x6788
--  __TEXT.__eh_frame: 0x7b9c
-+  __TEXT.__unwind_info: 0x6be0
-+  __TEXT.__eh_frame: 0x847c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x540
--  __DATA_CONST.__objc_classlist: 0x150
-+  __DATA_CONST.__const: 0x580
-+  __DATA_CONST.__objc_classlist: 0x158
-   __DATA_CONST.__objc_protolist: 0x118
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xc80
-+  __DATA_CONST.__objc_selrefs: 0xcc0
-   __DATA_CONST.__objc_protorefs: 0x90
--  __DATA_CONST.__got: 0x2050
--  __AUTH_CONST.__const: 0x7848
--  __AUTH_CONST.__objc_const: 0x34d8
--  __AUTH_CONST.__auth_got: 0x3c88
--  __AUTH.__objc_data: 0x480
--  __AUTH.__data: 0x1be0
--  __DATA.__data: 0x30e8
-+  __DATA_CONST.__got: 0x2100
-+  __AUTH_CONST.__const: 0x7d78
-+  __AUTH_CONST.__objc_const: 0x34f0
-+  __AUTH_CONST.__auth_got: 0x3e30
-+  __AUTH.__objc_data: 0x488
-+  __AUTH.__data: 0x1f30
-+  __DATA.__data: 0x36b8
-   __DATA.__common: 0x78
--  __DATA_DIRTY.__objc_data: 0x848
--  __DATA_DIRTY.__data: 0x5a58
--  __DATA_DIRTY.__bss: 0x4330
-+  __DATA_DIRTY.__objc_data: 0x800
-+  __DATA_DIRTY.__data: 0x5840
-   __DATA_DIRTY.__common: 0x90
-+  __DATA_DIRTY.__bss: 0x3f30
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreHaptics.framework/CoreHaptics
 
-   - /System/Library/Frameworks/_LocationEssentials.framework/_LocationEssentials
-   - /System/Library/PrivateFrameworks/AgentCanvasFoundation.framework/AgentCanvasFoundation
-   - /System/Library/PrivateFrameworks/AgentCanvasKit.framework/AgentCanvasKit
 +  - /System/Library/PrivateFrameworks/AgentCanvasModel.framework/AgentCanvasModel
-   - /System/Library/PrivateFrameworks/AgentCanvasPersistence.framework/AgentCanvasPersistence
-   - /System/Library/PrivateFrameworks/AgentCanvasUICore.framework/AgentCanvasUICore
-   - /System/Library/PrivateFrameworks/AgentCanvasUIFoundation.framework/AgentCanvasUIFoundation
-   - /System/Library/PrivateFrameworks/AppIntentsServices.framework/AppIntentsServices
-+  - /System/Library/PrivateFrameworks/AssistantIslandClient.framework/AssistantIslandClient
-   - /System/Library/PrivateFrameworks/AssistantUICore.framework/AssistantUICore
-   - /System/Library/PrivateFrameworks/AsyncAlgorithmsInternal.framework/AsyncAlgorithmsInternal
-   - /System/Library/PrivateFrameworks/CollectionsInternal.framework/CollectionsInternal
-   - /System/Library/PrivateFrameworks/DesignLibrary.framework/DesignLibrary
--  - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/Feedback.framework/Feedback
-   - /System/Library/PrivateFrameworks/FeedbackService.framework/FeedbackService
-   - /System/Library/PrivateFrameworks/FlowToolsSnippetService.framework/FlowToolsSnippetService
-   - /System/Library/PrivateFrameworks/GenerativeAssistantUI.framework/GenerativeAssistantUI
-+  - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
-   - /System/Library/PrivateFrameworks/GenerativePartnerService.framework/GenerativePartnerService
-   - /System/Library/PrivateFrameworks/GenerativePartnerServiceUI.framework/GenerativePartnerServiceUI
-   - /System/Library/PrivateFrameworks/IntelligenceFlow.framework/IntelligenceFlow
 
-   - /System/Library/PrivateFrameworks/SearchFoundation.framework/SearchFoundation
-   - /System/Library/PrivateFrameworks/SearchUI.framework/SearchUI
-   - /System/Library/PrivateFrameworks/SiriAppIntents.framework/SiriAppIntents
++  - /System/Library/PrivateFrameworks/AssistantIslandClient.framework/AssistantIslandClient
+
+-  - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
+
++  - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
+
 -  - /System/Library/PrivateFrameworks/SiriReaderServices.framework/SiriReaderServices
 +  - /System/Library/PrivateFrameworks/SiriTTSService.framework/SiriTTSService
-   - /System/Library/PrivateFrameworks/SiriUIFoundation.framework/SiriUIFoundation
-   - /System/Library/PrivateFrameworks/SiriUtilities.framework/SiriUtilities
-   - /System/Library/PrivateFrameworks/SnippetKit.framework/SnippetKit
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8342
--  Symbols:   3246
+-  Symbols:   2997
 -  CStrings:  603
 +  Functions: 8650
-+  Symbols:   3364
++  Symbols:   3107
 +  CStrings:  599
- 
 Symbols:
 + _OBJC_CLASS_$_NSPersonNameComponentsFormatter
 + _OBJC_CLASS_$_SAAppInfo
@@ -189,16 +125,6 @@ Symbols:
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBP17AgentCanvasUICoreE17campoDebugOverlay_14additionalInfo5color9alignment8isActiveQrSSyXK_SSSgAA5ColorVAA9AlignmentVSbtFQOyAA15ModifiedContentVyAPyAPyAPyAA6VStackVyAA05TupleS0VyAPyAA4TextVAA14_PaddingLayoutVGSg_AA7ForEachVySaySo12SAUIListItemCGAjcAE11buttonStyleyQrqd__AA11ButtonStyleRd__lFQOyAA6ButtonVyAA6HStackVyATyAPy0deB0014ProfileArtworkC033_4CF2B3DED22D3969374EE8A6B8D927B1LLVAXGSg_ARyATyAV_AVSgQPGGAA6SpacerVQPGGG_A10_28DisambiguationRowButtonStyleA12_LLVQo_GQPGGAXGAXGAA010_FixedSizeX0VGAA32_EnvironmentKeyTransformModifierVySbGG_Qo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBP17AgentCanvasUICoreE19viewLoadingBehavioryQrAD0chI0OFQOyAA06ScrollC0VyAA15ModifiedContentVyAA6VStackVyAA05TupleL0Vy0deB017CitationSourceRow33_38140D1B2FC0017CB93F207B8B7A7C2BLLVSg_AA7ForEachVySay0dE5Model0P15AttributionInfoVGAyKyAsA14_PaddingLayoutVGGQPGGAA16_FlexFrameLayoutVGG_Qo_HO
 + _keypath_get_selector_aceId
-+ _objc_msgSend$fullName
-+ _objc_msgSend$items
-+ _objc_msgSend$object
-+ _objc_msgSend$personNameComponentsFromString:
-+ _objc_msgSend$primaryDescriptiveText
-+ _objc_msgSend$profileImage
-+ _objc_msgSend$selectionText
-+ _objc_msgSend$setSelectedAceId:
-+ _objc_msgSend$setStyle:
-+ _objc_msgSend$stringFromPersonNameComponents:
 + _swift_task_future_wait_throwing
 + _symbolic BASay4Item______2ID_____QZGSay_____GSbSay_____GIeNghHgILggyo_ 14AgentCanvasKit11ChatServiceP s12IdentifiableP 10Foundation4UUIDV AA0D20RequestConfigurationV10AttachmentV
 + _symbolic BASay4Item______2ID_____QZGSay_____GSbSay_____GIeNghHgILggyo_Sg 14AgentCanvasKit11ChatServiceP s12IdentifiableP 10Foundation4UUIDV AA0D20RequestConfigurationV10AttachmentV
@@ -437,8 +363,6 @@ Symbols:
 - _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVyAHyAcAE06scrollI10BackgroundyQrAA10VisibilityOFQOyAA06ScrollC0VyAHyAA012_ConditionalI0Vy011AgentCanvasB0021DrillInSnippetHostingC033_BE127B663FF69C641762CC4A47F91D28LLVAA0i11UnavailableC0VyAA5LabelVyAA4TextVAA5ImageVGAYSgAA05EmptyC0VGGAA14_PaddingLayoutVGG_Qo_AA01_K13StyleModifierVyAA5ColorVGGAA25_AppearanceActionModifierVG_AP012IdentifiableqrS4DataVSgQo_HO
 - _get_witness_table qd0__7SwiftUI4ViewHD4_AaBPAAE5alert_11isPresented10presenting7actions7messageQrAA4TextV_AA7BindingVySbGqd_1_Sgqd__qd_1_XEqd_0_qd_1_XEtAaBRd__AaBRd_0_r1_lFQOyAA15ModifiedContentVyAA01_c9Modifier_M0Vy011AgentCanvasB0010ThirdPartyo7URLViewN0VGAA022_EnvironmentKeyWritingN0VySb10Foundation3URLVcSgGG_AA05TupleM0VyAA6ButtonVyAJG_A6_yAA07DefaultZ5LabelVGQPGAJA_Qo_HO
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBP17AgentCanvasUICoreE19viewLoadingBehavioryQrAD0chI0OFQOyAA06ScrollC0VyAA15ModifiedContentVyAA6VStackVyAA05TupleL0Vy0deB017CitationSourceRow33_38140D1B2FC0017CB93F207B8B7A7C2BLLVSg_AA7ForEachVySayAD0P15AttributionInfoVGAxKyAsA14_PaddingLayoutVGGQPGGAA16_FlexFrameLayoutVGG_Qo_HO
-- _objc_msgSend$endMediaSessionForIdentifier:
-- _objc_msgSend$readText:textBody:textIdentifier:textLocale:textLeadingImage:activationSource:
 - _symbolic SDySS______pG 17AgentCanvasUICore8RichTextV9ReferenceP
 - _symbolic Say_____G 17AgentCanvasUICore21SourceAttributionInfoV
 - _symbolic Sb_____cSg 10Foundation3URLV

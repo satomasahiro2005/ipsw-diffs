@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/AppInstallationMetrics.framework/AppInstallationMetrics`
 
-```diff
+### Section Size Changes
 
- 3.1.1.0.0
--  __TEXT.__text: 0x14d4c
-+  __TEXT.__text: 0x14d54
-   __TEXT.__objc_methlist: 0x50
-   __TEXT.__const: 0x16d0
-   __TEXT.__swift5_typeref: 0x549
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14d4c` | `0x14d54` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_25292ab70 -> sub_253385b70 : 904 -> 908
-~ sub_25292c554 -> sub_253387558 : 488 -> 492
+~ sub_2527f4b70 -> sub_25324eb70 : 904 -> 908
+~ sub_2527f6554 -> sub_253250558 : 488 -> 492
 ```

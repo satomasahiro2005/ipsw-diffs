@@ -2,97 +2,65 @@
 
 > `/System/Library/PrivateFrameworks/MediaConversionService.framework/XPCServices/com.apple.photos.ImageConversionService.xpc/com.apple.photos.ImageConversionService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a5bc` | `0x22460` | **`+0x7ea4`** |
+| `__TEXT.__objc_methname` | `0x6763` | `0x7949` | **`+0x11e6`** |
+| `__TEXT.__cstring` | `0x270c` | `0x38a2` | **`+0x1196`** |
+| `__TEXT.__objc_stubs` | `0x5000` | `0x5a40` | **`+0xa40`** |
+| `__DATA_CONST.__cfstring` | `0x1da0` | `0x27a0` | **`+0xa00`** |
+| `__TEXT.__oslogstring` | `0x2694` | `0x2bb3` | **`+0x51f`** |
+| `__TEXT.__auth_stubs` | `0x9a0` | `0xe30` | **`+0x490`** |
+| `__DATA.__objc_const` | `0x1f10` | `0x2320` | **`+0x410`** |
+| `__DATA.__bss` | `0x98` | `0x3c0` | **`+0x328`** |
+| `__TEXT.__objc_methlist` | `0x15d4` | `0x18c4` | **`+0x2f0`** |
+| `__DATA.__objc_selrefs` | `0x17a8` | `0x1a80` | **`+0x2d8`** |
+| `__TEXT.__const` | `0xe0` | `0x368` | **`+0x288`** |
+| `__DATA_CONST.__auth_got` | `0x4e0` | `0x728` | **`+0x248`** |
+| `__DATA_CONST.__const` | `0x940` | `0xb30` | **`+0x1f0`** |
+| `__TEXT.__eh_frame` | `—` | `0x1e8` | **`+0x1e8`** |
+| `__TEXT.__gcc_except_tab` | `0x7b0` | `0x968` | **`+0x1b8`** |
+| `__TEXT.__unwind_info` | `0x5c8` | `0x768` | **`+0x1a0`** |
+| `__DATA.__objc_data` | `0x3c0` | `0x520` | **`+0x160`** |
+| `__TEXT.__objc_methtype` | `0xb67` | `0xc82` | **`+0x11b`** |
+| `__TEXT.__swift5_typeref` | `—` | `0x113` | **`+0x113`** |
+| `__DATA_CONST.__got` | `0x608` | `0x6f0` | **`+0xe8`** |
+| `__DATA_CONST.__auth_ptr` | `—` | `0xd8` | **`+0xd8`** |
+| `__TEXT.__objc_classname` | `0x253` | `0x327` | **`+0xd4`** |
+| `__DATA.__data` | `0x2a0` | `0x328` | **`+0x88`** |
+| `__TEXT.__constg_swiftt` | `—` | `0x88` | **`+0x88`** |
+| `__TEXT.__swift5_capture` | `—` | `0x40` | **`+0x40`** |
+| `__DATA.__objc_ivar` | `0x1a8` | `0x1dc` | **`+0x34`** |
+| `__DATA_CONST.__objc_intobj` | `0x18` | `0x48` | **`+0x30`** |
+| `__TEXT.__swift5_assocty` | `—` | `0x30` | **`+0x30`** |
+| `__TEXT.__swift5_fieldmd` | `—` | `0x2c` | **`+0x2c`** |
+| `__TEXT.__swift5_reflstr` | `—` | `0x23` | **`+0x23`** |
+| `__DATA_CONST.__objc_classlist` | `0x60` | `0x78` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `—` | `0x18` | **`+0x18`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x18` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `—` | `0x14` | **`+0x14`** |
+| `__DATA_CONST.__objc_doubleobj` | `—` | `0x10` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `—` | `0xc` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `—` | `0xc` | **`+0xc`** |
+| `__DATA_CONST.__objc_superrefs` | `0x48` | `0x50` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `—` | `0x8` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 
+### Other Changes
+
 ```diff
 
 -912.0.234.0.0
--  __TEXT.__text: 0x1a5bc
--  __TEXT.__auth_stubs: 0x9a0
--  __TEXT.__objc_stubs: 0x5000
--  __TEXT.__objc_methlist: 0x15d4
 +912.0.235.0.0
-+  __TEXT.__text: 0x22460
-+  __TEXT.__auth_stubs: 0xe30
-+  __TEXT.__objc_stubs: 0x5a40
-+  __TEXT.__objc_methlist: 0x18c4
-   __TEXT.__dlopen_cstrs: 0xbe
--  __TEXT.__const: 0xe0
--  __TEXT.__gcc_except_tab: 0x7b0
--  __TEXT.__objc_methname: 0x6763
--  __TEXT.__cstring: 0x270c
--  __TEXT.__objc_classname: 0x253
--  __TEXT.__objc_methtype: 0xb67
--  __TEXT.__oslogstring: 0x2694
--  __TEXT.__unwind_info: 0x5c8
--  __DATA_CONST.__const: 0x940
--  __DATA_CONST.__cfstring: 0x1da0
--  __DATA_CONST.__objc_classlist: 0x60
-+  __TEXT.__const: 0x368
-+  __TEXT.__swift5_typeref: 0x113
-+  __TEXT.__swift5_capture: 0x40
-+  __TEXT.__objc_methtype: 0xc82
-+  __TEXT.__objc_classname: 0x327
-+  __TEXT.__constg_swiftt: 0x88
-+  __TEXT.__swift5_fieldmd: 0x2c
-+  __TEXT.__cstring: 0x38a2
-+  __TEXT.__swift5_builtin: 0x14
-+  __TEXT.__swift5_reflstr: 0x23
-+  __TEXT.__swift5_assocty: 0x30
-+  __TEXT.__swift5_proto: 0x18
-+  __TEXT.__swift5_types: 0x8
-+  __TEXT.__swift_as_entry: 0xc
-+  __TEXT.__swift_as_ret: 0xc
-+  __TEXT.__swift_as_cont: 0x18
-+  __TEXT.__gcc_except_tab: 0x968
-+  __TEXT.__objc_methname: 0x7949
-+  __TEXT.__oslogstring: 0x2bb3
-+  __TEXT.__unwind_info: 0x768
-+  __TEXT.__eh_frame: 0x1e8
-+  __DATA_CONST.__const: 0xb30
-+  __DATA_CONST.__cfstring: 0x27a0
-+  __DATA_CONST.__objc_classlist: 0x78
-   __DATA_CONST.__objc_protolist: 0x38
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x48
--  __DATA_CONST.__objc_intobj: 0x18
--  __DATA_CONST.__auth_got: 0x4e0
--  __DATA_CONST.__got: 0x608
--  __DATA.__objc_const: 0x1f10
--  __DATA.__objc_selrefs: 0x17a8
--  __DATA.__objc_ivar: 0x1a8
--  __DATA.__objc_data: 0x3c0
--  __DATA.__data: 0x2a0
-+  __DATA_CONST.__objc_superrefs: 0x50
-+  __DATA_CONST.__objc_intobj: 0x48
-+  __DATA_CONST.__objc_doubleobj: 0x10
-+  __DATA_CONST.__auth_got: 0x728
-+  __DATA_CONST.__got: 0x6f0
-+  __DATA_CONST.__auth_ptr: 0xd8
-+  __DATA.__objc_const: 0x2320
-+  __DATA.__objc_selrefs: 0x1a80
-+  __DATA.__objc_ivar: 0x1dc
-+  __DATA.__objc_data: 0x520
-+  __DATA.__data: 0x328
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/ImageIO.framework/ImageIO
 +  - /System/Library/Frameworks/Security.framework/Security
-   - /System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers
-   - /System/Library/PrivateFrameworks/CMPhoto.framework/CMPhoto
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libperfcheck.dylib
 -  Functions: 498
 -  Symbols:   356
 -  CStrings:  1532
@@ -109,7 +77,6 @@
 +  Functions: 668
 +  Symbols:   435
 +  CStrings:  1767
- 
 Symbols:
 + _AnalyticsSendEvent
 + _CFDictionaryGetValue

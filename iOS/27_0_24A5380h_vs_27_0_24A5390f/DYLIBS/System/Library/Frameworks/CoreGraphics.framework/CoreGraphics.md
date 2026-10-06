@@ -2,127 +2,39 @@
 
 > `/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA_DIRTY.__la_resolver`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__delay_helper` | `—` | `0x1f4` | **`+0x1f4`** |
+| `__TEXT.__text` | `0x55a96c` | `0x55ab18` | **`+0x1ac`** |
+| `__TEXT.__const` | `0x1dfd60` | `0x1dfce0` | **`-0x80`** |
+| `__TEXT.__dlopen_cstrs` | `0x131` | `0xd5` | **`-0x5c`** |
+| `__TEXT.__gcc_except_tab` | `0xa630` | `0xa5e4` | **`-0x4c`** |
+| `__TEXT.__unwind_info` | `0xaf90` | `0xaf68` | **`-0x28`** |
+| `__TEXT.__cstring` | `0x43673` | `0x43695` | **`+0x22`** |
+| `__AUTH_CONST.__const` | `0x13a58` | `0x13a78` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x8b8` | `0x8d8` | **`+0x20`** |
+| `__DATA.__bss` | `0x7618` | `0x7600` | **`-0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x2678` | `0x2670` | **`-0x8`** |
+| `__DATA_CONST.__const` | `0x30408` | `0x30410` | **`+0x8`** |
+| `__DATA_DIRTY.__bss` | `0x2790` | `0x2798` | **`+0x8`** |
+| `__DATA.__data` | `0x1a78` | `0x1a7c` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -2045.0.0.0.0
--  __TEXT.__text: 0x55a96c
 +2047.0.0.0.0
-+  __TEXT.__text: 0x55ab18
-   __TEXT.__resolver_help: 0xd8
-+  __TEXT.__delay_helper: 0x1f4
-   __TEXT.__objc_methlist: 0x42a0
--  __TEXT.__const: 0x1dfd60
--  __TEXT.__cstring: 0x43673
--  __TEXT.__dlopen_cstrs: 0x131
-+  __TEXT.__const: 0x1dfce0
-+  __TEXT.__cstring: 0x43695
-+  __TEXT.__dlopen_cstrs: 0xd5
-   __TEXT.__constg_swiftt: 0x1870
-   __TEXT.__swift5_typeref: 0x19c6
-   __TEXT.__swift5_reflstr: 0xadc
 
-   __TEXT.__swift5_capture: 0x5c8
-   __TEXT.__swift5_protos: 0x38
-   __TEXT.__swift5_mpenum: 0x5c
--  __TEXT.__gcc_except_tab: 0xa630
-+  __TEXT.__gcc_except_tab: 0xa5e4
-   __TEXT.__oslogstring: 0x15
-   __TEXT.__ustring: 0x1c
--  __TEXT.__unwind_info: 0xaf90
-+  __TEXT.__unwind_info: 0xaf68
-   __TEXT.__eh_frame: 0x4f78
-   __TEXT.__objc_stubs: 0x7160
-   __TEXT.__stubs: 0x18
-
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x30408
-+  __DATA_CONST.__const: 0x30410
-   __DATA_CONST.__objc_classlist: 0x280
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x98
-
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__objc_superrefs: 0x1e0
-   __DATA_CONST.__objc_arraydata: 0x170
--  __DATA_CONST.__got: 0x8b8
--  __AUTH_CONST.__const: 0x13a58
-+  __DATA_CONST.__got: 0x8d8
-+  __AUTH_CONST.__const: 0x13a78
-   __AUTH_CONST.__cfstring: 0x9c00
-   __AUTH_CONST.__objc_const: 0x6c30
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_intobj: 0xd8
--  __AUTH_CONST.__auth_got: 0x2678
-+  __AUTH_CONST.__auth_got: 0x2670
-   __AUTH.__objc_data: 0x17c0
-   __AUTH.__data: 0x2a0
-   __DATA.__objc_ivar: 0x594
--  __DATA.__data: 0x1a78
--  __DATA.__bss: 0x7618
-+  __DATA.__data: 0x1a7c
-+  __DATA.__bss: 0x7600
-   __DATA.__common: 0x245
-   __DATA_DIRTY.__la_resolver: 0x10
-   __DATA_DIRTY.__data: 0xfb8
-   __DATA_DIRTY.__crash_info: 0x148
--  __DATA_DIRTY.__bss: 0x2790
-+  __DATA_DIRTY.__bss: 0x2798
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-
-   - /System/Library/PrivateFrameworks/FontServices.framework/libFontParser.dylib
-   - /System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
 +  - /System/Library/PrivateFrameworks/TextRecognition.framework/TextRecognition
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
 
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 14322
 +  Functions: 14318
-   Symbols:   18788
+
 -  CStrings:  11512
 +  CStrings:  11508
- 
 Symbols:
 + GCC_except_table10040
 + GCC_except_table10443

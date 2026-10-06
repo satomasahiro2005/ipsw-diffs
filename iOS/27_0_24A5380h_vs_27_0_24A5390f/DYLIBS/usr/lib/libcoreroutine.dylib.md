@@ -2,116 +2,43 @@
 
 > `/usr/lib/libcoreroutine.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_floatobj`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6b5624` | `0x6bd79c` | **`+0x8178`** |
+| `__AUTH_CONST.__cfstring` | `0x2b820` | `0x2c300` | **`+0xae0`** |
+| `__TEXT.__cstring` | `0x4a64a` | `0x4ae89` | **`+0x83f`** |
+| `__TEXT.__oslogstring` | `0x8992d` | `0x89e8d` | **`+0x560`** |
+| `__TEXT.__gcc_except_tab` | `0x2ea88` | `0x2ef98` | **`+0x510`** |
+| `__TEXT.__objc_methlist` | `0x34c60` | `0x34e30` | **`+0x1d0`** |
+| `__AUTH_CONST.__objc_const` | `0x56850` | `0x56920` | **`+0xd0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1b3d8` | `0x1b4a8` | **`+0xd0`** |
+| `__TEXT.__unwind_info` | `0xf1c0` | `0xf268` | **`+0xa8`** |
+| `__DATA_CONST.__const` | `0x105f0` | `0x10658` | **`+0x68`** |
+| `__AUTH_CONST.__const` | `0x36d8` | `0x3738` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0x1ad0` | `0x1b20` | **`+0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0xc7b0` | `0xc760` | **`-0x50`** |
+| `__DATA_DIRTY.__bss` | `0x238` | `0x258` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x4ba8` | `0x4bc0` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x28dc` | `0x28ec` | **`+0x10`** |
+| `__DATA.__data` | `0x2dc8` | `0x2dd0` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1278` | `0x1280` | **`+0x8`** |
+| `__DATA_DIRTY.__objc_ivar` | `0x1278` | `0x1274` | **`-0x4`** |
+
+### Other Changes
 
 ```diff
 
 -1117.0.0.0.0
--  __TEXT.__text: 0x6b5624
--  __TEXT.__objc_methlist: 0x34c60
 +1119.0.0.0.0
-+  __TEXT.__text: 0x6bd79c
-+  __TEXT.__objc_methlist: 0x34e30
-   __TEXT.__const: 0x4bd8
-   __TEXT.__dlopen_cstrs: 0x1d2
-   __TEXT.__swift5_typeref: 0x41b
--  __TEXT.__oslogstring: 0x8992d
--  __TEXT.__cstring: 0x4a64a
-+  __TEXT.__oslogstring: 0x89e8d
-+  __TEXT.__cstring: 0x4ae89
-   __TEXT.__swift5_capture: 0xdc
-   __TEXT.__swift_as_entry: 0x2c
-   __TEXT.__swift_as_ret: 0x38
 
-   __TEXT.__swift5_reflstr: 0x14
-   __TEXT.__swift5_fieldmd: 0x38
-   __TEXT.__swift5_types: 0x8
--  __TEXT.__gcc_except_tab: 0x2ea88
-+  __TEXT.__gcc_except_tab: 0x2ef98
-   __TEXT.__ustring: 0x50
--  __TEXT.__unwind_info: 0xf1c0
-+  __TEXT.__unwind_info: 0xf268
-   __TEXT.__eh_frame: 0x6d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x105f0
-+  __DATA_CONST.__const: 0x10658
-   __DATA_CONST.__objc_classlist: 0x1688
-   __DATA_CONST.__objc_catlist: 0x3f0
-   __DATA_CONST.__objc_protolist: 0x370
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1b3d8
-+  __DATA_CONST.__objc_selrefs: 0x1b4a8
-   __DATA_CONST.__objc_protorefs: 0x128
--  __DATA_CONST.__objc_superrefs: 0x1278
-+  __DATA_CONST.__objc_superrefs: 0x1280
-   __DATA_CONST.__objc_arraydata: 0x2e58
-   __DATA_CONST.__got: 0x3510
--  __AUTH_CONST.__const: 0x36d8
--  __AUTH_CONST.__cfstring: 0x2b820
--  __AUTH_CONST.__objc_const: 0x56850
--  __AUTH_CONST.__objc_intobj: 0x4ba8
-+  __AUTH_CONST.__const: 0x3738
-+  __AUTH_CONST.__cfstring: 0x2c300
-+  __AUTH_CONST.__objc_const: 0x56920
-+  __AUTH_CONST.__objc_intobj: 0x4bc0
-   __AUTH_CONST.__objc_arrayobj: 0xfc0
-   __AUTH_CONST.__objc_doubleobj: 0xbe0
-   __AUTH_CONST.__objc_dictobj: 0x348
-   __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__auth_got: 0x12f0
--  __AUTH.__objc_data: 0x1ad0
--  __DATA.__objc_ivar: 0x28dc
--  __DATA.__data: 0x2dc8
-+  __AUTH.__objc_data: 0x1b20
-+  __DATA.__objc_ivar: 0x28ec
-+  __DATA.__data: 0x2dd0
-   __DATA.__bss: 0x80
--  __DATA_DIRTY.__objc_ivar: 0x1278
--  __DATA_DIRTY.__objc_data: 0xc7b0
-+  __DATA_DIRTY.__objc_ivar: 0x1274
-+  __DATA_DIRTY.__objc_data: 0xc760
-   __DATA_DIRTY.__data: 0x7d8
--  __DATA_DIRTY.__bss: 0x238
-+  __DATA_DIRTY.__bss: 0x258
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 21965
--  Symbols:   45721
+-  Symbols:   33894
 -  CStrings:  16306
 +  Functions: 22020
-+  Symbols:   45813
++  Symbols:   33958
 +  CStrings:  16422
- 
 Symbols:
 + +[RTBluePOIMonitor archivePendingObservations:]
 + +[RTBluePOIMonitor pendingObservationsFromArchivedData:]
@@ -234,44 +161,6 @@ Symbols:
 + ___block_descriptor_81_e8_32s40s48s56bs64w_e34_v24?0"NSDictionary"8"NSError"16lw64l8s56l8s32l8s40l8s48l8
 + ___block_descriptor_97_e8_32s40s48s56s64s72bs80w_e5_v8?0lw80l8s72l8s32l8s40l8s48l8s56l8s64l8
 + ___block_descriptor_97_e8_32s40s48s56s64s72s80bs_e5_v8?0ls32l8s40l8s48l8s56l8s64l8s72l8s80l8
-+ _objc_msgSend$_dayCalendar
-+ _objc_msgSend$_fetchBluePOICategoryIdStringsForMuids:handler:
-+ _objc_msgSend$_fetchFinerGranularityInferredMapItemsForVisitIdentifiers:handler:
-+ _objc_msgSend$_fetchHindsightVisitsBetweenStartDate:endDate:ascending:limit:handler:
-+ _objc_msgSend$_fetchHindsightVisitsWithOptions:handler:
-+ _objc_msgSend$_fetchLocationOfInterestIdentifiersForPlaceMapItemIdentifiers:handler:
-+ _objc_msgSend$_fetchLocationsOfInterestVisitedBetweenStartDate:endDate:ascending:limit:handler:
-+ _objc_msgSend$_history:containsDay:forAllEntities:
-+ _objc_msgSend$_historyByAppendingCount:forDay:intoHistory:
-+ _objc_msgSend$_payloadFromHistory:trackedEntities:todayStartOfDay:
-+ _objc_msgSend$_pendingObservationForPOIMuid:
-+ _objc_msgSend$_persistEntityCountHistory:
-+ _objc_msgSend$_persistPendingObservations
-+ _objc_msgSend$_persistedEntityCountHistory
-+ _objc_msgSend$_processVisitsLabeling:error:
-+ _objc_msgSend$_purgeDepartedPendingObservationsFromLocation:
-+ _objc_msgSend$_recordDailyEntityCounts
-+ _objc_msgSend$_trackedEntities
-+ _objc_msgSend$_unconfirmedPendingPOIMuids
-+ _objc_msgSend$_updatePendingObservationsForEstimate:
-+ _objc_msgSend$_visitFromLearnedVisit:learnedLOI:finerGranularityInferredMapItem:
-+ _objc_msgSend$archivePendingObservations:
-+ _objc_msgSend$calendarWithIdentifier:
-+ _objc_msgSend$fetchBluePOICategoryIdStringsForMuids:handler:
-+ _objc_msgSend$fetchFinerGranularityInferredMapItemsForVisitIdentifiers:handler:
-+ _objc_msgSend$fetchHindsightVisitsWithOptions:handler:
-+ _objc_msgSend$fetchLocationOfInterestIdentifiersForPlaceMapItemIdentifiers:handler:
-+ _objc_msgSend$fetchLocationsOfInterestVisitedBetweenStartDate:endDate:ascending:limit:handler:
-+ _objc_msgSend$firstSeen
-+ _objc_msgSend$hasSignificantChangeOnPOIEstimate:fromPOIEstimate:
-+ _objc_msgSend$initWithPOIMuid:firstSeen:referenceLocation:
-+ _objc_msgSend$pendingObservations
-+ _objc_msgSend$pendingObservationsFromArchivedData:
-+ _objc_msgSend$poiMuid
-+ _objc_msgSend$setPendingObservations:
-+ _objc_msgSend$shouldPostUpdateOnPOIEstimate:fromPOIEstimate:significantChange:
-+ _objc_msgSend$submitDailyEntityCountMetrics
-+ _objc_msgSend$timeZoneForSecondsFromGMT:
 - -[RTBluePOIMonitor shouldPostUpdateOnPOIEstimate:fromPOIEstimate:]
 - -[RTBluePOITileManager categoryIdStringForMuid:handler:]
 - -[RTBluePOITileStore _fetchBluePOICategoryIdStringForMuid:handler:]
@@ -329,16 +218,6 @@ Symbols:
 - ___block_descriptor_88_e8_32s40s48s56s64bs72w_e5_v8?0lw72l8s64l8s32l8s40l8s48l8s56l8
 - ___block_descriptor_89_e8_32s40s48s56s64bs72w_e5_v8?0lw72l8s64l8s32l8s40l8s48l8s56l8
 - _kRTNewWorkoutForSMSuggestionsNotification
-- _objc_msgSend$_fetchBluePOICategoryIdStringForMuid:handler:
-- _objc_msgSend$_fetchHindsightVisitsBetweenStartDate:endDate:ascending:handler:
-- _objc_msgSend$_fetchHindsightVisitsWithDateInterval:ascending:handler:
-- _objc_msgSend$_onNewWorkoutForSMSuggestionsNotification
-- _objc_msgSend$_visitFromLearnedVisit:learnedLOI:handler:
-- _objc_msgSend$fetchBluePOICategoryIdStringForMuid:handler:
-- _objc_msgSend$listenForNewWorkoutsForSMSuggestionsEnabled
-- _objc_msgSend$onNewWorkoutForSMSuggestionsNotification
-- _objc_msgSend$setListenForNewWorkoutsForSMSuggestionsEnabled:
-- _objc_msgSend$shouldPostUpdateOnPOIEstimate:fromPOIEstimate:
 CStrings:
 + "\""
 + "%@, CM labeling complete, batched, %lu, batch_resolved, %lu, individual_fallback, %lu"

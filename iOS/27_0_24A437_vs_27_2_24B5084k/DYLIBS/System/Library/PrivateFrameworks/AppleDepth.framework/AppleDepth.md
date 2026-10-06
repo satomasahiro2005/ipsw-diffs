@@ -2,96 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/AppleDepth.framework/AppleDepth`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x114388` | `0x1213ec` | **`+0xd064`** |
+| `__TEXT.__gcc_except_tab` | `0x137dc` | `0x14170` | **`+0x994`** |
+| `__AUTH_CONST.__const` | `0xac8` | `0x1348` | **`+0x880`** |
+| `__AUTH_CONST.__objc_const` | `0x13d70` | `0x143a0` | **`+0x630`** |
+| `__DATA.__bss` | `0x4f1` | `0x988` | **`+0x497`** |
+| `__TEXT.__oslogstring` | `0xacc8` | `0xb07f` | **`+0x3b7`** |
+| `__TEXT.__objc_methlist` | `0x7d4c` | `0x7ffc` | **`+0x2b0`** |
+| `__AUTH_CONST.__cfstring` | `0x5fa0` | `0x61e0` | **`+0x240`** |
+| `__TEXT.__cstring` | `0xff77` | `0x101b0` | **`+0x239`** |
+| `__AUTH.__objc_data` | `0x50` | `0x1e0` | **`+0x190`** |
+| `__DATA.__data` | `0xe8680` | `0xe8810` | **`+0x190`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3cb0` | `0x3de8` | **`+0x138`** |
+| `__TEXT.__unwind_info` | `0x4128` | `0x4248` | **`+0x120`** |
+| `__DATA_CONST.__const` | `0x488` | `0x500` | **`+0x78`** |
+| `__DATA_CONST.__got` | `0x878` | `0x8c0` | **`+0x48`** |
+| `__AUTH_CONST.__objc_intobj` | `0x528` | `0x558` | **`+0x30`** |
+| `__DATA.__objc_ivar` | `0x12d8` | `0x1308` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0x5c8` | `0x5f0` | **`+0x28`** |
+| `__DATA_CONST.__objc_protolist` | `0x30` | `0x50` | **`+0x20`** |
+| `__DATA_CONST.__objc_superrefs` | `0x4e8` | `0x508` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xa50` | `0xa60` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `—` | `0x10` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x128` | `0x138` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -174.2.1.0.0
--  __TEXT.__text: 0x1124c8
--  __TEXT.__objc_methlist: 0x7d4c
 +177.0.0.0.0
-+  __TEXT.__text: 0x11f004
-+  __TEXT.__objc_methlist: 0x7ffc
-   __TEXT.__const: 0x1520
--  __TEXT.__gcc_except_tab: 0x137dc
--  __TEXT.__oslogstring: 0xacc8
--  __TEXT.__cstring: 0xff77
--  __TEXT.__unwind_info: 0x43d8
-+  __TEXT.__gcc_except_tab: 0x14170
-+  __TEXT.__oslogstring: 0xb07f
-+  __TEXT.__cstring: 0x101b0
-+  __TEXT.__unwind_info: 0x4678
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x488
--  __DATA_CONST.__objc_classlist: 0x5c8
-+  __DATA_CONST.__const: 0x500
-+  __DATA_CONST.__objc_classlist: 0x5f0
-   __DATA_CONST.__objc_catlist: 0x8
--  __DATA_CONST.__objc_protolist: 0x30
-+  __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x280
--  __DATA_CONST.__objc_selrefs: 0x3cb0
--  __DATA_CONST.__objc_superrefs: 0x4e8
-+  __DATA_CONST.__objc_selrefs: 0x3de8
-+  __DATA_CONST.__objc_protorefs: 0x10
-+  __DATA_CONST.__objc_superrefs: 0x508
-   __DATA_CONST.__objc_arraydata: 0x330
--  __DATA_CONST.__got: 0x878
--  __AUTH_CONST.__const: 0xac8
--  __AUTH_CONST.__cfstring: 0x5fa0
--  __AUTH_CONST.__objc_const: 0x13d70
-+  __DATA_CONST.__got: 0x8c0
-+  __AUTH_CONST.__const: 0x1348
-+  __AUTH_CONST.__cfstring: 0x61e0
-+  __AUTH_CONST.__objc_const: 0x143a0
-   __AUTH_CONST.__weak_auth_got: 0x28
--  __AUTH_CONST.__objc_intobj: 0x528
-+  __AUTH_CONST.__objc_intobj: 0x558
-   __AUTH_CONST.__objc_floatobj: 0x30
-   __AUTH_CONST.__objc_doubleobj: 0x1c0
-   __AUTH_CONST.__objc_arrayobj: 0x198
-   __AUTH_CONST.__objc_dictobj: 0x78
--  __AUTH_CONST.__auth_got: 0xa50
--  __AUTH.__objc_data: 0x50
--  __DATA.__objc_ivar: 0x12d8
--  __DATA.__data: 0xe8680
-+  __AUTH_CONST.__auth_got: 0xa60
-+  __AUTH.__objc_data: 0x1e0
-+  __DATA.__objc_ivar: 0x1308
-+  __DATA.__data: 0xe8810
-   __DATA_DIRTY.__objc_data: 0x3980
--  __DATA_DIRTY.__bss: 0x128
-+  __DATA_DIRTY.__bss: 0x138
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /System/Library/Frameworks/VideoToolbox.framework/VideoToolbox
-   - /System/Library/PrivateFrameworks/AppleDepthCore.framework/AppleDepthCore
-   - /System/Library/PrivateFrameworks/AppleNeuralEngine.framework/AppleNeuralEngine
 +  - /System/Library/PrivateFrameworks/CMImaging.framework/CMImaging
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/DiagnosticRequest.framework/DiagnosticRequest
-   - /System/Library/PrivateFrameworks/Espresso.framework/Espresso
-   - /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset
-+  - /System/Library/PrivateFrameworks/PolarisRuntime.framework/PolarisRuntime
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /System/Library/PrivateFrameworks/UnifiedAssetFramework.framework/UnifiedAssetFramework
-   - /System/Library/PrivateFrameworks/VisualLogger.framework/VisualLogger
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/PrivateFrameworks/PolarisRuntime.framework/PolarisRuntime
+
 -  Functions: 3363
--  Symbols:   9351
+-  Symbols:   7848
 -  CStrings:  2088
 +  Functions: 3515
-+  Symbols:   9548
++  Symbols:   8007
 +  CStrings:  2127
- 
 Symbols:
 + +[ADModelAvailabilityResult supportsSecureCoding]
 + +[ADModelDownloadClient checkAvailabilityForName:assetSpecifier:pipelineParameters:result:]
@@ -991,44 +946,6 @@ Symbols:
 + __ad_getLogForCategory
 + _kADDeviceConfigurationKeyVisualDepthPovcHeight
 + _kADDeviceConfigurationKeyVisualDepthPovcWidth
-+ _objc_msgSend$acquireModel:withReply:
-+ _objc_msgSend$assetSpecifier
-+ _objc_msgSend$checkAvailabilityForModel:withReply:
-+ _objc_msgSend$decodeDoubleForKey:
-+ _objc_msgSend$decodeInt64ForKey:
-+ _objc_msgSend$decodeIntegerForKey:
-+ _objc_msgSend$decodeObjectOfClass:forKey:
-+ _objc_msgSend$encodeDouble:forKey:
-+ _objc_msgSend$encodeInt64:forKey:
-+ _objc_msgSend$encodeInteger:forKey:
-+ _objc_msgSend$encodeObject:forKey:
-+ _objc_msgSend$error
-+ _objc_msgSend$estimatedTimeRemaining
-+ _objc_msgSend$initWithCVPixelBuffer:
-+ _objc_msgSend$initWithCallback:
-+ _objc_msgSend$initWithFile:
-+ _objc_msgSend$initWithMachServiceName:options:
-+ _objc_msgSend$interfaceWithProtocol:
-+ _objc_msgSend$invalidate
-+ _objc_msgSend$makeConnectionWithProgressSink:
-+ _objc_msgSend$networkName
-+ _objc_msgSend$pixelBuffer
-+ _objc_msgSend$remoteObjectProxyWithErrorHandler:
-+ _objc_msgSend$requestForName:assetSpecifier:pipelineParameters:
-+ _objc_msgSend$resume
-+ _objc_msgSend$saveToFile:
-+ _objc_msgSend$setAssetSpecifier:
-+ _objc_msgSend$setClasses:forSelector:argumentIndex:ofReply:
-+ _objc_msgSend$setDownloadTimeout:
-+ _objc_msgSend$setExportedInterface:
-+ _objc_msgSend$setExportedObject:
-+ _objc_msgSend$setInterruptionHandler:
-+ _objc_msgSend$setInvalidationHandler:
-+ _objc_msgSend$setNetworkName:
-+ _objc_msgSend$setRemoteObjectInterface:
-+ _objc_msgSend$setWithObject:
-+ _objc_msgSend$setWithObjects:
-+ _objc_msgSend$status
 + _objc_retain_x10
 - +[ADNetworkProvider getModelFileInPath:]
 - GCC_except_table1004

@@ -2,16 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/HIDRMKit.framework/HIDRMKit`
 
-```diff
+### Section Size Changes
 
- 49.0.0.0.0
--  __TEXT.__text: 0x28a54
-+  __TEXT.__text: 0x28a74
-   __TEXT.__objc_methlist: 0x104
-   __TEXT.__const: 0xaf0
-   __TEXT.__constg_swiftt: 0xc48
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x28a54` | `0x28a74` | **`+0x20`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_267a038d0 -> sub_2824318d0 : 1436 -> 1460
-~ sub_267a06888 -> sub_2824348a0 : 4404 -> 4408
-~ sub_267a09914 -> sub_282437930 : 360 -> 364
+~ sub_2678e58d0 -> sub_267f6e8d0 : 1436 -> 1460
+~ sub_2678e8888 -> sub_267f718a0 : 4404 -> 4408
+~ sub_2678eb914 -> sub_267f74930 : 360 -> 364
 ```

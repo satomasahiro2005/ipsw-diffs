@@ -2,9 +2,11 @@
 
 > `/System/Library/Filesystems/hfs.fs/newfs_hfs`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```text
 Functions:

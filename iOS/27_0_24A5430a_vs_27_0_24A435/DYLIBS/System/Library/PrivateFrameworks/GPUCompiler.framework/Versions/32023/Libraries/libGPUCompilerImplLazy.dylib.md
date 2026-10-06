@@ -2,48 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/32023/Libraries/libGPUCompilerImplLazy.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x117e480` | `0x1187120` | **`+0x8ca0`** |
+| `__TEXT.__const` | `0xd5fd0` | `0xd6420` | **`+0x450`** |
+| `__TEXT.__cstring` | `0x13a4c7` | `0x13a8b3` | **`+0x3ec`** |
+| `__DATA_CONST.__const` | `0x192f30` | `0x193158` | **`+0x228`** |
+| `__AUTH_CONST.__const` | `0xf4a20` | `0xf4bb8` | **`+0x198`** |
+| `__AUTH.__data` | `0x4b40` | `0x4bd0` | **`+0x90`** |
+| `__TEXT.__unwind_info` | `0x18b60` | `0x18bd0` | **`+0x70`** |
+| `__DATA.__data` | `0x16e8` | `0x1700` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x35a8` | `0x35b8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
- 32023.921.6.0.0
--  __TEXT.__text: 0x117e480
-+  __TEXT.__text: 0x1187120
-   __TEXT.__init_offsets: 0x14
--  __TEXT.__const: 0xd5fd0
--  __TEXT.__cstring: 0x13a4c7
--  __TEXT.__unwind_info: 0x18b60
-+  __TEXT.__const: 0xd6420
-+  __TEXT.__cstring: 0x13a8b3
-+  __TEXT.__unwind_info: 0x18bd0
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x192f30
-+  __DATA_CONST.__const: 0x193158
-   __DATA_CONST.__weak_got: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xf4a20
-+  __AUTH_CONST.__const: 0xf4bb8
-   __AUTH_CONST.__weak_auth_got: 0xb8
--  __AUTH_CONST.__auth_got: 0x35a8
--  __AUTH.__data: 0x4b40
-+  __AUTH_CONST.__auth_got: 0x35b8
-+  __AUTH.__data: 0x4bd0
-   __AUTH.__thread_vars: 0x18
-   __AUTH.__thread_bss: 0x8
--  __DATA.__data: 0x16e8
-+  __DATA.__data: 0x1700
-   __DATA.__common: 0x20
-   __DATA_DIRTY.__data: 0x1130
-   __DATA_DIRTY.__bss: 0x15a8
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libarchive.2.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 37894
 -  Symbols:   1842
 -  CStrings:  56845
 +  Functions: 37935
 +  Symbols:   1844
 +  CStrings:  56883
- 
 Symbols:
 + __ZN4llvm3air12AIPersistent7getImplERNS_11LLVMContextEbNS_8Metadata11StorageTypeEb
 + __ZN4llvm3air16AIKernelFunction7getImplERNS_11LLVMContextEPNS_8FunctionENS_24MDTupleTypedArrayWrapperINS0_12AIReturnTypeEEENS6_INS0_10AIArgumentEEEPNS0_13AIVecTypeHintEPNS0_15AIWorkgroupSizeEPNS0_19AIWorkgroupSizeHintEPNS0_18AIWorkgroupMaxSizeEPNS0_16AIUserAnnotationEPNS0_12AIPersistentEPNS0_22AIForwardProgressUsageENS_8Metadata11StorageTypeEb

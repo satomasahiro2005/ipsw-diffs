@@ -2,112 +2,62 @@
 
 > `/System/Library/PrivateFrameworks/PhotosRendering.framework/PhotosRendering`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x19c6c` | `0x41a80` | **`+0x27e14`** |
+| `__TEXT.__const` | `0x1140` | `0x4a60` | **`+0x3920`** |
+| `__AUTH_CONST.__const` | `0x14c8` | `0x47c8` | **`+0x3300`** |
+| `__DATA.__bss` | `0x880` | `0x3900` | **`+0x3080`** |
+| `__DATA.__data` | `0x988` | `0x2798` | **`+0x1e10`** |
+| `__TEXT.__constg_swiftt` | `0xa68` | `0x1d8c` | **`+0x1324`** |
+| `__TEXT.__swift5_fieldmd` | `0x844` | `0x1b64` | **`+0x1320`** |
+| `__AUTH.__data` | `0x360` | `0x1388` | **`+0x1028`** |
+| `__TEXT.__unwind_info` | `0x8e8` | `0x1770` | **`+0xe88`** |
+| `__TEXT.__swift5_typeref` | `0x814` | `0x158d` | **`+0xd79`** |
+| `__TEXT.__eh_frame` | `0x1098` | `0x1d98` | **`+0xd00`** |
+| `__TEXT.__objc_methlist` | `0x314` | `0xdbc` | **`+0xaa8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4e0` | `0xe10` | **`+0x930`** |
+| `__TEXT.__cstring` | `0x63a` | `0xeb2` | **`+0x878`** |
+| `__TEXT.__swift5_reflstr` | `0x3a5` | `0xbfc` | **`+0x857`** |
+| `__AUTH_CONST.__objc_const` | `0xa78` | `0x1258` | **`+0x7e0`** |
+| `__TEXT.__swift5_assocty` | `0x90` | `0x6c8` | **`+0x638`** |
+| `__DATA_DIRTY.__data` | `0x400` | `0x50` | **`-0x3b0`** |
+| `__TEXT.__swift5_proto` | `0xb4` | `0x34c` | **`+0x298`** |
+| `__TEXT.__swift5_capture` | `0xa4` | `0x2a4` | **`+0x200`** |
+| `__AUTH_CONST.__auth_got` | `0x758` | `0x940` | **`+0x1e8`** |
+| `__TEXT.__swift5_types` | `0xb8` | `0x280` | **`+0x1c8`** |
+| `__DATA_CONST.__objc_protolist` | `0xa0` | `0x1f0` | **`+0x150`** |
+| `__TEXT.__swift5_builtin` | `0xc8` | `0x17c` | **`+0xb4`** |
+| `__DATA_CONST.__const` | `0xa8` | `0x150` | **`+0xa8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x50` | `0xf8` | **`+0xa8`** |
+| `__TEXT.__swift5_protos` | `0x2c` | `0x64` | **`+0x38`** |
+| `__DATA_CONST.__objc_classlist` | `0x48` | `0x18` | **`-0x30`** |
+| `__TEXT.__swift5_mpenum` | `0x38` | `0x20` | **`-0x18`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.235.0.0
--  __TEXT.__text: 0x19180
--  __TEXT.__objc_methlist: 0x314
--  __TEXT.__const: 0x1140
--  __TEXT.__constg_swiftt: 0xa68
--  __TEXT.__swift5_typeref: 0x814
--  __TEXT.__swift5_builtin: 0xc8
--  __TEXT.__swift5_reflstr: 0x3a5
--  __TEXT.__swift5_fieldmd: 0x844
--  __TEXT.__swift5_types: 0xb8
--  __TEXT.__cstring: 0x63a
--  __TEXT.__swift5_capture: 0xa4
 +916.40.110.0.0
-+  __TEXT.__text: 0x3f8d0
-+  __TEXT.__objc_methlist: 0xdbc
-+  __TEXT.__const: 0x4a60
-+  __TEXT.__swift5_typeref: 0x158d
-+  __TEXT.__cstring: 0xeb2
-+  __TEXT.__swift5_reflstr: 0xbfc
-+  __TEXT.__swift5_assocty: 0x6c8
-+  __TEXT.__constg_swiftt: 0x1d8c
-+  __TEXT.__swift5_fieldmd: 0x1b64
-+  __TEXT.__swift5_builtin: 0x17c
-+  __TEXT.__swift5_mpenum: 0x20
-+  __TEXT.__swift5_protos: 0x64
-+  __TEXT.__swift5_proto: 0x34c
-+  __TEXT.__swift5_types: 0x280
-+  __TEXT.__swift5_capture: 0x2a4
-   __TEXT.__oslogstring: 0x84
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x1c
--  __TEXT.__swift5_assocty: 0x90
--  __TEXT.__swift5_proto: 0xb4
--  __TEXT.__swift5_protos: 0x2c
--  __TEXT.__swift5_mpenum: 0x38
--  __TEXT.__unwind_info: 0xa60
--  __TEXT.__eh_frame: 0x1098
-+  __TEXT.__unwind_info: 0x1cb0
-+  __TEXT.__eh_frame: 0x1d98
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xa8
--  __DATA_CONST.__objc_classlist: 0x48
--  __DATA_CONST.__objc_protolist: 0xa0
-+  __DATA_CONST.__const: 0x150
-+  __DATA_CONST.__objc_classlist: 0x18
-+  __DATA_CONST.__objc_protolist: 0x1f0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4e0
--  __DATA_CONST.__objc_protorefs: 0x50
-+  __DATA_CONST.__objc_selrefs: 0xe10
-+  __DATA_CONST.__objc_protorefs: 0xf8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x14c8
--  __AUTH_CONST.__objc_const: 0xa78
--  __AUTH_CONST.__auth_got: 0x758
-+  __AUTH_CONST.__const: 0x47c8
-+  __AUTH_CONST.__objc_const: 0x1258
-+  __AUTH_CONST.__auth_got: 0x940
-   __AUTH.__objc_data: 0xe0
--  __AUTH.__data: 0x360
--  __DATA.__data: 0x988
-+  __AUTH.__data: 0x1388
-+  __DATA.__data: 0x2798
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0xf0
--  __DATA_DIRTY.__data: 0x400
-+  __DATA_DIRTY.__data: 0x50
 +  - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+
 +  - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreImage.framework/CoreImage
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-   - /System/Library/Frameworks/CoreVideo.framework/CoreVideo
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+
 +  - /System/Library/Frameworks/ImageIO.framework/ImageIO
-   - /System/Library/PrivateFrameworks/NeutrinoCore.framework/NeutrinoCore
+
 +  - /System/Library/PrivateFrameworks/PhotosFormats.framework/PhotosFormats
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
 
-   - /usr/lib/swift/libswiftCoreAudio.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftCoreImage.dylib
 +  - /usr/lib/swift/libswiftCoreLocation.dylib
-   - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 943
--  Symbols:   796
+-  Symbols:   673
 -  CStrings:  49
 +  Functions: 2890
-+  Symbols:   1519
++  Symbols:   1258
 +  CStrings:  100
- 
 Symbols:
 + _AVVideoCodecKey
 + _AVVideoCodecTypeH264
@@ -431,152 +381,6 @@ Symbols:
 + _kCGImageDestinationLossyCompressionQuality
 + _kCGImagePropertyTIFFCompression
 + _kCGImagePropertyTIFFDictionary
-+ _objc_msgSend$HDR
-+ _objc_msgSend$RGBA16
-+ _objc_msgSend$RGBA8
-+ _objc_msgSend$RGBAh
-+ _objc_msgSend$X2RGB10
-+ _objc_msgSend$__swift_setObject:forKeyedSubscript:
-+ _objc_msgSend$_mediaForComponent:
-+ _objc_msgSend$addInputChannels:error:
-+ _objc_msgSend$addOutputChannels:error:
-+ _objc_msgSend$after:
-+ _objc_msgSend$assetPipelineWithAsset:options:error:
-+ _objc_msgSend$assignData:to:error:
-+ _objc_msgSend$attachments
-+ _objc_msgSend$audio
-+ _objc_msgSend$audioMediaType
-+ _objc_msgSend$avMetadataItems
-+ _objc_msgSend$before:
-+ _objc_msgSend$buildPipeline:error:
-+ _objc_msgSend$canAcceptDataWithDescriptor:
-+ _objc_msgSend$canDisconnect:
-+ _objc_msgSend$cgImageMetadata
-+ _objc_msgSend$cgImageProperties
-+ _objc_msgSend$clearInputChannel:error:
-+ _objc_msgSend$completeDuration
-+ _objc_msgSend$completeLatency
-+ _objc_msgSend$components
-+ _objc_msgSend$connect:to:error:
-+ _objc_msgSend$connectedInput
-+ _objc_msgSend$containerFormat
-+ _objc_msgSend$containerMediaType
-+ _objc_msgSend$cropPipeline
-+ _objc_msgSend$dataForCapability:
-+ _objc_msgSend$destinationData
-+ _objc_msgSend$destinationURL
-+ _objc_msgSend$disconnect:error:
-+ _objc_msgSend$displayP3ColorSpace
-+ _objc_msgSend$displayP3_PQ
-+ _objc_msgSend$end
-+ _objc_msgSend$evaluateOutputChannel:error:
-+ _objc_msgSend$extendedSRGBLinearColorSpace
-+ _objc_msgSend$genericAudioFormat
-+ _objc_msgSend$genericDynamicMediaFormat
-+ _objc_msgSend$genericImageComponentFormat
-+ _objc_msgSend$genericImageFormat
-+ _objc_msgSend$genericImageFormat:
-+ _objc_msgSend$genericMediaComponentFormat
-+ _objc_msgSend$genericMediaFormat
-+ _objc_msgSend$genericStaticMediaFormat
-+ _objc_msgSend$genericVideoComponentFormat
-+ _objc_msgSend$geometry
-+ _objc_msgSend$hasCapability:
-+ _objc_msgSend$hdrGainMap
-+ _objc_msgSend$heic
-+ _objc_msgSend$imageAssetWithCGImage:type:options:error:
-+ _objc_msgSend$imageAssetWithCIImage:type:options:error:
-+ _objc_msgSend$imageAssetWithCVPixelBuffer:type:options:error:
-+ _objc_msgSend$imageAssetWithIOSurface:type:options:error:
-+ _objc_msgSend$imageContainerWithChannels:error:
-+ _objc_msgSend$imageMediaType
-+ _objc_msgSend$initWithDataFormat:temporality:
-+ _objc_msgSend$initWithDictionary:
-+ _objc_msgSend$initWithDuration:
-+ _objc_msgSend$initWithExtent:scale:orientation:duration:
-+ _objc_msgSend$initWithFileType:
-+ _objc_msgSend$initWithMedia:destinationURL:
-+ _objc_msgSend$initWithMedia:destinationURL:videoComplementURL:
-+ _objc_msgSend$initWithMedia:exportFormat:
-+ _objc_msgSend$initWithName:format:
-+ _objc_msgSend$initWithName:session:
-+ _objc_msgSend$inputNamed:error:
-+ _objc_msgSend$insertSubpipeline:at:error:
-+ _objc_msgSend$isExtended
-+ _objc_msgSend$isGeneric
-+ _objc_msgSend$isHDR
-+ _objc_msgSend$isNull
-+ _objc_msgSend$isOptional
-+ _objc_msgSend$itur2100HLGColorSpace
-+ _objc_msgSend$jpeg
-+ _objc_msgSend$lastPathComponent
-+ _objc_msgSend$livePhotoContainerWithImageFormat:videoFormat:
-+ _objc_msgSend$loadImageAssetFromURL:options:error:
-+ _objc_msgSend$loadLivePhotoAssetFromImageURL:videoURL:options:error:
-+ _objc_msgSend$loadVideoAssetFromURL:options:error:
-+ _objc_msgSend$media
-+ _objc_msgSend$mediaForComponent:
-+ _objc_msgSend$mediaType
-+ _objc_msgSend$metadata
-+ _objc_msgSend$nu_valueWithPixelPoint:
-+ _objc_msgSend$nu_valueWithPixelRect:
-+ _objc_msgSend$nullDataWithOptionalFormat:
-+ _objc_msgSend$objectForKeyedSubscript:
-+ _objc_msgSend$openEXRImageType
-+ _objc_msgSend$orientation
-+ _objc_msgSend$orientationPipeline
-+ _objc_msgSend$outputNamed:error:
-+ _objc_msgSend$pathWithComponent:
-+ _objc_msgSend$prepareDuration
-+ _objc_msgSend$prepareLatency
-+ _objc_msgSend$rawDecode
-+ _objc_msgSend$rawDecodePipelineWithAsset:options:error:
-+ _objc_msgSend$rawProfilePipelineWithAsset:options:error:
-+ _objc_msgSend$rec709ColorSpace
-+ _objc_msgSend$reconnectAllOutputsFrom:to:error:
-+ _objc_msgSend$reconnectInputFrom:to:error:
-+ _objc_msgSend$removeObjectForKey:
-+ _objc_msgSend$removeSubpipelineAtPath:error:
-+ _objc_msgSend$renderDuration
-+ _objc_msgSend$renderLatency
-+ _objc_msgSend$sRGBColorSpace
-+ _objc_msgSend$scale
-+ _objc_msgSend$scaledExtent
-+ _objc_msgSend$setAlternateColorSpace:
-+ _objc_msgSend$setAudioMode:
-+ _objc_msgSend$setAudioOutputSettings:
-+ _objc_msgSend$setAuxiliaryImageOptions:
-+ _objc_msgSend$setCurrentEDRHeadroom:
-+ _objc_msgSend$setDestinationURL:
-+ _objc_msgSend$setFlexRangeProperties:
-+ _objc_msgSend$setForceGainMapGeneration:
-+ _objc_msgSend$setFormat:
-+ _objc_msgSend$setGainMapExportOptions:
-+ _objc_msgSend$setImageColorSpace:
-+ _objc_msgSend$setImageProperties:
-+ _objc_msgSend$setMaxEDRHeadroom:
-+ _objc_msgSend$setMetadata:
-+ _objc_msgSend$setObject:forKeyedSubscript:
-+ _objc_msgSend$setOptions:
-+ _objc_msgSend$setOutputSettings:
-+ _objc_msgSend$setRenderToData:
-+ _objc_msgSend$setResumable:
-+ _objc_msgSend$setResumableIntermediateDirectory:
-+ _objc_msgSend$setTargetHeadroom:
-+ _objc_msgSend$setVideoColorSpace:
-+ _objc_msgSend$spatialAudioFormat
-+ _objc_msgSend$standardAudioFormat
-+ _objc_msgSend$stillImageFormat:
-+ _objc_msgSend$subpathWithPath:
-+ _objc_msgSend$subpipelineAtPath:error:
-+ _objc_msgSend$subport:
-+ _objc_msgSend$temporality
-+ _objc_msgSend$updateInputChannels:error:
-+ _objc_msgSend$updateOutputChannels:error:
-+ _objc_msgSend$videoComplementURL
-+ _objc_msgSend$videoContainerWithChannels:error:
-+ _objc_msgSend$videoImageFormat:
-+ _objc_msgSend$videoMetadataFormat
 + _objc_retain_x28
 + _objc_retain_x9
 + _objc_storeStrong
@@ -945,14 +749,6 @@ Symbols:
 - _associated conformance 15PhotosRendering5AssetV5ErrorOSHAASQ
 - _associated conformance 15PhotosRendering7VersionCSLAASQ
 - _get_witness_table 15PhotosRendering13RenderRequestRzlScSyAA0C8ResponseVy10ResultTypeQzGGSciHPyHC
-- _objc_msgSend$addInputChannel:error:
-- _objc_msgSend$addOutputChannel:error:
-- _objc_msgSend$addPipelineWithBuilder:error:
-- _objc_msgSend$canConnectInputPort:toOutputPort:error:
-- _objc_msgSend$channel
-- _objc_msgSend$connectInputPort:toOutputPort:error:
-- _objc_msgSend$failureError:object:
-- _objc_msgSend$initWithPurpose:
 - _objc_retainAutoreleaseReturnValue
 - _swift_release_x24
 - _swift_release_x26

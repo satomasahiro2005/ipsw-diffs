@@ -2,35 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/AppleDepthCore.framework/AppleDepthCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x600b8` | `0x600b0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x600b8
-+  __TEXT.__text: 0x600b0
-   __TEXT.__objc_methlist: 0x2424
-   __TEXT.__const: 0x21c0
-   __TEXT.__gcc_except_tab: 0x5688
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+-170.0.0.0.0
++171.0.1.0.0
 Functions:
 ~ -[ADStreamSync checkOnceForMatch:] : 568 -> 556
 ~ __Z17compareRawBuffersIffE19BaselineTestStats_sPT_mPT0_mmmbbf : 992 -> 1004
@@ -46,5 +29,4 @@ Functions:
 ~ __ZN16PixelBufferUtils25colorizedDepthPixelBufferEP10__CVBufferbffbPfS1_ : 2032 -> 1944
 ~ -[ADReprojection vectorizeCameraPixels:] : 1336 -> 1356
 ~ __ZNKSt3__113__string_hashIcNS_9allocatorIcEEEclB9fqe220106ERKNS_12basic_stringIcNS_11char_traitsIcEES2_EE : 1092 -> 1080
-
 ```

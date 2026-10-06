@@ -2,100 +2,49 @@
 
 > `/System/Library/Frameworks/Network.framework/Network`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x154cfd0` | `0x146208c` | **`-0xeaf44`** |
+| `__TEXT.__oslogstring` | `0x13da12` | `0x13f42a` | **`+0x1a18`** |
+| `__TEXT.__gcc_except_tab` | `0x44390` | `0x4545c` | **`+0x10cc`** |
+| `__TEXT.__cstring` | `0x7388c` | `0x745f0` | **`+0xd64`** |
+| `__AUTH_CONST.__cfstring` | `0x94c0` | `0x9e80` | **`+0x9c0`** |
+| `__TEXT.__unwind_info` | `0x25f30` | `0x26218` | **`+0x2e8`** |
+| `__AUTH_CONST.__const` | `0x3d120` | `0x3d390` | **`+0x270`** |
+| `__DATA_CONST.__const` | `0x15900` | `0x15b60` | **`+0x260`** |
+| `__AUTH_CONST.__objc_const` | `0x2e158` | `0x2e268` | **`+0x110`** |
+| `__TEXT.__swift5_capture` | `0xadf0` | `0xae88` | **`+0x98`** |
+| `__DATA.__bss` | `0x4504` | `0x4574` | **`+0x70`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3ac8` | `0x3b08` | **`+0x40`** |
+| `__TEXT.__swift5_reflstr` | `0xe3c5` | `0xe405` | **`+0x40`** |
+| `__TEXT.__swift5_typeref` | `0xcebd` | `0xcefd` | **`+0x40`** |
+| `__TEXT.__eh_frame` | `0x222a8` | `0x222e0` | **`+0x38`** |
+| `__AUTH_CONST.__auth_got` | `0x4060` | `0x4090` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x86c4` | `0x86f4` | **`+0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0x10280` | `0x102b0` | **`+0x30`** |
+| `__AUTH.__data` | `0xc5b8` | `0xc5d8` | **`+0x20`** |
+| `__DATA.__data` | `0x9db0` | `0x9dd0` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x1200` | `0x1220` | **`+0x20`** |
+| `__TEXT.__const` | `0x101750` | `0x101770` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x90` | `0xa8` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x25bc` | `0x25d0` | **`+0x14`** |
+| `__TEXT.__constg_swiftt` | `0xf858` | `0xf868` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -6681.2.2.0.0
--  __TEXT.__text: 0x151daec
 +6681.40.80.0.0
-+  __TEXT.__text: 0x1432b2c
-   __TEXT.__lazy_helpers: 0x13b0
-   __TEXT.__init_offsets: 0x5cc
--  __TEXT.__objc_methlist: 0x86c4
--  __TEXT.__const: 0x101750
--  __TEXT.__cstring: 0x7388c
--  __TEXT.__constg_swiftt: 0xf858
--  __TEXT.__swift5_typeref: 0xcebd
--  __TEXT.__swift5_reflstr: 0xe3c5
--  __TEXT.__swift5_fieldmd: 0x10280
-+  __TEXT.__objc_methlist: 0x86f4
-+  __TEXT.__const: 0x101770
-+  __TEXT.__cstring: 0x745f0
-+  __TEXT.__constg_swiftt: 0xf868
-+  __TEXT.__swift5_typeref: 0xcefd
-+  __TEXT.__swift5_reflstr: 0xe405
-+  __TEXT.__swift5_fieldmd: 0x102b0
-   __TEXT.__swift5_builtin: 0x6cc
-   __TEXT.__swift5_assocty: 0x2c58
-   __TEXT.__swift5_proto: 0x230c
-   __TEXT.__swift5_types: 0xebc
-   __TEXT.__swift5_protos: 0x208
--  __TEXT.__swift5_capture: 0xadf0
-+  __TEXT.__swift5_capture: 0xae88
-   __TEXT.__swift5_mpenum: 0x60c
-   __TEXT.__swift5_types2: 0x144
--  __TEXT.__oslogstring: 0x13da12
-+  __TEXT.__oslogstring: 0x13f42a
-   __TEXT.__swift_as_entry: 0xa40
-   __TEXT.__swift_as_ret: 0xa08
-   __TEXT.__swift_as_cont: 0x1704
--  __TEXT.__gcc_except_tab: 0x44390
--  __TEXT.__unwind_info: 0x2d208
--  __TEXT.__eh_frame: 0x222a8
-+  __TEXT.__gcc_except_tab: 0x4545c
-+  __TEXT.__unwind_info: 0x2d578
-+  __TEXT.__eh_frame: 0x222e0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x15900
-+  __DATA_CONST.__const: 0x15b60
-   __DATA_CONST.__objc_classlist: 0xb58
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x5a8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3ac8
-+  __DATA_CONST.__objc_selrefs: 0x3b08
-   __DATA_CONST.__objc_protorefs: 0x1b8
-   __DATA_CONST.__objc_superrefs: 0x6a8
-   __DATA_CONST.__objc_arraydata: 0x8
--  __DATA_CONST.__got: 0x1200
--  __AUTH_CONST.__const: 0x3d120
--  __AUTH_CONST.__cfstring: 0x94c0
--  __AUTH_CONST.__objc_const: 0x2e158
-+  __DATA_CONST.__got: 0x1220
-+  __AUTH_CONST.__const: 0x3d390
-+  __AUTH_CONST.__cfstring: 0x9e80
-+  __AUTH_CONST.__objc_const: 0x2e268
-   __AUTH_CONST.__weak_auth_got: 0x20
-   __AUTH_CONST.__lazy_load_got: 0x1d0
-   __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__objc_intobj: 0x90
--  __AUTH_CONST.__auth_got: 0x4060
-+  __AUTH_CONST.__objc_intobj: 0xa8
-+  __AUTH_CONST.__auth_got: 0x4090
-   __AUTH.__objc_data: 0x3f58
--  __AUTH.__data: 0xc5b8
--  __DATA.__objc_ivar: 0x25bc
--  __DATA.__data: 0x9db0
-+  __AUTH.__data: 0xc5d8
-+  __DATA.__objc_ivar: 0x25d0
-+  __DATA.__data: 0x9dd0
-   __DATA.__crash_info: 0x148
-   __DATA.__common: 0x710
-   __DATA_DIRTY.__objc_data: 0x1358
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 45378
--  Symbols:   32858
+-  Symbols:   31470
 -  CStrings:  31951
 +  Functions: 45573
-+  Symbols:   33079
++  Symbols:   31681
 +  CStrings:  32155
- 
 Symbols:
 + -[NWConcrete_nw_listener copyPeerDeviceModel]
 + -[NWConcrete_nw_listener copyPeerDeviceName]
@@ -2360,16 +2309,6 @@ Symbols:
 + _nw_webtransport_options_set_connection_wt_enabled
 + _objc_autoreleasePoolPop
 + _objc_autoreleasePoolPush
-+ _objc_msgSend$_pidForHAR
-+ _objc_msgSend$copyPeerDeviceModel
-+ _objc_msgSend$copyPeerDeviceName
-+ _objc_msgSend$dateWithTimeIntervalSinceReferenceDate:
-+ _objc_msgSend$dictionaryWithCapacity:
-+ _objc_msgSend$localeWithLocaleIdentifier:
-+ _objc_msgSend$localizedDescription
-+ _objc_msgSend$null
-+ _objc_msgSend$sessionDescription
-+ _objc_msgSend$setLocale:
 + _os_signpost_id_make_with_pointer
 + _strtoul
 + _symbolic Iegh_

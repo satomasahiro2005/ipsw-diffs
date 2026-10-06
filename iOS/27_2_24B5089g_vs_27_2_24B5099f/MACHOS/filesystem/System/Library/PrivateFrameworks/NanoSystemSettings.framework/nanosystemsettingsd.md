@@ -2,16 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/NanoSystemSettings.framework/nanosystemsettingsd`
 
-```diff
+### Section Size Changes
 
-   __TEXT.__objc_stubs: 0x3e00
-   __TEXT.__objc_methlist: 0x1c7c
-   __TEXT.__const: 0xea
--  __TEXT.__oslogstring: 0x2788
-+  __TEXT.__oslogstring: 0x2789
-   __TEXT.__objc_classname: 0x274
-   __TEXT.__objc_methtype: 0x1473
-   __TEXT.__cstring: 0x18e6
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__oslogstring` | `0x2788` | `0x2789` | **`+0x1`** |
+
+### Other Changes
+
+```diff
 CStrings:
 + "Launching; \"NanoSystemSettingsDaemon-383\" \"1109\""
 - "Launching; \"NanoSystemSettingsDaemon-383\" \"398\""

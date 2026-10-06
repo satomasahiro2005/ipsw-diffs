@@ -2,34 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/SiriSuggestionsAPI.framework/SiriSuggestionsAPI`
 
-```diff
+### Section Size Changes
 
- 3605.6.1.0.0
--  __TEXT.__text: 0xb1640
-+  __TEXT.__text: 0xb1660
-   __TEXT.__objc_methlist: 0x124
-   __TEXT.__const: 0x7b68
-   __TEXT.__swift5_typeref: 0x1f90
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x4900` | `0x4880` | **`-0x80`** |
+| `__DATA_DIRTY.__bss` | `0x3180` | `0x3200` | **`+0x80`** |
+| `__TEXT.__eh_frame` | `0xa730` | `0xa750` | **`+0x20`** |
+| `__TEXT.__text` | `0xbee7c` | `0xbee9c` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x3e68` | `0x3e70` | **`+0x8`** |
 
-   __TEXT.__swift_as_ret: 0x674
-   __TEXT.__swift_as_cont: 0x7d8
-   __TEXT.__swift5_mpenum: 0x28
--  __TEXT.__unwind_info: 0x45d8
--  __TEXT.__eh_frame: 0xa730
-+  __TEXT.__unwind_info: 0x45e0
-+  __TEXT.__eh_frame: 0xa750
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+### Other Changes
 
-   __DATA.__data: 0xa70
-   __DATA_DIRTY.__objc_data: 0x200
-   __DATA_DIRTY.__data: 0x2b80
--  __DATA_DIRTY.__bss: 0x3180
-+  __DATA_DIRTY.__bss: 0x3200
-   __DATA_DIRTY.__common: 0x50
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/UIKit.framework/UIKit
+```text
 Functions:
-~ sub_227e6d8c0 -> sub_2270c98c0 : 36 -> 68
+~ sub_22a559ad8 -> sub_2297dead8 : 36 -> 68
 ```

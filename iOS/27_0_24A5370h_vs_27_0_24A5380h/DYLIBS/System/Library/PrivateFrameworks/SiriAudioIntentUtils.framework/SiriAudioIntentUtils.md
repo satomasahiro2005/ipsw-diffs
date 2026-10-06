@@ -2,26 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/SiriAudioIntentUtils.framework/SiriAudioIntentUtils`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x20408` | `0x203fc` | **`-0xc`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x20408
-+  __TEXT.__text: 0x203fc
-   __TEXT.__const: 0x1382
-   __TEXT.__constg_swiftt: 0xac0
-   __TEXT.__swift5_typeref: 0x4fa
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__data : content changed
+-3600.33.2.0.0
++3600.33.6.0.0
 Functions:
-~ sub_29f2ea134 -> sub_2a3fde134 : 1048 -> 1044
-~ sub_29f2ea5b8 -> sub_2a3fde5b4 : 800 -> 792
-
+~ sub_29f1ae134 -> sub_2a3eb6134 : 1048 -> 1044
+~ sub_29f1ae5b8 -> sub_2a3eb65b4 : 800 -> 792
 ```

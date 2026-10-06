@@ -2,53 +2,25 @@
 
 > `/System/Library/PrivateFrameworks/MomentsUI.framework/MomentsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x519ae8` | `0x51977c` | **`-0x36c`** |
+| `__TEXT.__eh_frame` | `0x1e300` | `0x1e328` | **`+0x28`** |
+| `__DATA_DIRTY.__data` | `0x4d28` | `0x4d48` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x2650` | `0x2660` | **`+0x10`** |
+| `__DATA.__data` | `0x67d0` | `0x67c0` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x108d0` | `0x108e0` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
- 502.0.8.0.0
--  __TEXT.__text: 0x4ec75c
-+  __TEXT.__text: 0x4ec3f0
-   __TEXT.__objc_methlist: 0x436c
-   __TEXT.__cstring: 0xe646
-   __TEXT.__const: 0x1f804
-
-   __TEXT.__swift5_protos: 0xb4
-   __TEXT.__swift5_capture: 0x4a80
-   __TEXT.__swift5_mpenum: 0x40
--  __TEXT.__unwind_info: 0x147a8
--  __TEXT.__eh_frame: 0x1e378
-+  __TEXT.__unwind_info: 0x14c58
-+  __TEXT.__eh_frame: 0x1e3a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __AUTH_CONST.__const: 0x192c0
-   __AUTH_CONST.__cfstring: 0x1c0
-   __AUTH_CONST.__objc_const: 0x10d48
--  __AUTH_CONST.__auth_got: 0x2650
-+  __AUTH_CONST.__auth_got: 0x2660
-   __AUTH.__objc_data: 0x138b8
-   __AUTH.__data: 0x69b8
-   __DATA.__objc_ivar: 0x24
--  __DATA.__data: 0x67d0
-+  __DATA.__data: 0x67c0
-   __DATA.__common: 0x1118
-   __DATA_DIRTY.__objc_data: 0xe70
--  __DATA_DIRTY.__data: 0x4d28
-+  __DATA_DIRTY.__data: 0x4d48
-   __DATA_DIRTY.__bss: 0x5180
-   __DATA_DIRTY.__common: 0x238
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 24173
 -  Symbols:   48776
 +  Functions: 24175
 +  Symbols:   48779
-   CStrings:  2619
- 
 Symbols:
 + _$s10Foundation4DateV2geoiySbAC_ACtFZ
 + _$s10Foundation4DateV2leoiySbAC_ACtFZ

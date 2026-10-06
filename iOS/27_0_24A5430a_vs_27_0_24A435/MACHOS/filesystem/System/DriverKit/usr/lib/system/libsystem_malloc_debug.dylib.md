@@ -2,24 +2,25 @@
 
 > `/System/DriverKit/usr/lib/system/libsystem_malloc_debug.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__dof_magmalloc`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__AUTH_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf0b64` | `0xf0ed4` | **`+0x370`** |
+
+### Same-size Content Changes
+
 - `__AUTH.__data`
 - `__AUTH.__v_zone`
+- `__AUTH_CONST.__const`
+- `__DATA_CONST.__const`
+- `__TEXT.__dof_magmalloc`
+- `__TEXT.__eh_frame`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 886.0.8.0.0
--  __TEXT.__text: 0xf0b64
-+  __TEXT.__text: 0xf0ed4
-   __TEXT.__const: 0x69f
-   __TEXT.__cstring: 0x30b45
-   __TEXT.__dof_magmalloc: 0x8c7
+```text
 Functions:
 ~ _bitarray_set : 752 -> 756
 ~ _bitarray_zap : 752 -> 756

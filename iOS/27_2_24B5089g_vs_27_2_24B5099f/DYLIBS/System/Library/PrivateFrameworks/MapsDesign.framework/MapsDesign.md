@@ -2,68 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/MapsDesign.framework/MapsDesign`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2729d4` | `0x273938` | **`+0xf64`** |
+| `__DATA.__bss` | `0x87e0` | `0x84e0` | **`-0x300`** |
+| `__DATA_DIRTY.__bss` | `0xa7b0` | `0xaab0` | **`+0x300`** |
+| `__TEXT.__swift5_typeref` | `0x4f062` | `0x4f186` | **`+0x124`** |
+| `__DATA.__data` | `0x6a40` | `0x6a98` | **`+0x58`** |
+| `__TEXT.__const` | `0x21464` | `0x214b4` | **`+0x50`** |
+| `__DATA.__common` | `0x808` | `0x7d0` | **`-0x38`** |
+| `__DATA_DIRTY.__common` | `0x220` | `0x258` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0x6800` | `0x6818` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x29d8` | `0x29e8` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0xceb8` | `0xcea8` | **`-0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x6141` | `0x6151` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x8244` | `0x8250` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
 -82.31.6.17.9
--  __TEXT.__text: 0x260288
 +82.31.6.17.13
-+  __TEXT.__text: 0x261184
-   __TEXT.__objc_methlist: 0x5cc
--  __TEXT.__const: 0x21464
-+  __TEXT.__const: 0x214b4
-   __TEXT.__constg_swiftt: 0x9b90
--  __TEXT.__swift5_typeref: 0x4f062
-+  __TEXT.__swift5_typeref: 0x4f186
-   __TEXT.__swift5_builtin: 0x258
-   __TEXT.__swift5_mpenum: 0xc4
--  __TEXT.__swift5_reflstr: 0x6141
--  __TEXT.__swift5_fieldmd: 0x8244
-+  __TEXT.__swift5_reflstr: 0x6151
-+  __TEXT.__swift5_fieldmd: 0x8250
-   __TEXT.__swift5_assocty: 0x1f70
-   __TEXT.__cstring: 0x4d7d
-   __TEXT.__swift5_proto: 0x8f0
 
-   __TEXT.__swift_as_cont: 0x9c
-   __TEXT.__oslogstring: 0xe9f
-   __TEXT.__swift5_protos: 0x14
--  __TEXT.__unwind_info: 0x8a88
-+  __TEXT.__unwind_info: 0x8aa8
-   __TEXT.__eh_frame: 0x2254
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__got: 0x15e0
-   __AUTH_CONST.__const: 0xf510
-   __AUTH_CONST.__objc_const: 0x3118
--  __AUTH_CONST.__auth_got: 0x29d8
-+  __AUTH_CONST.__auth_got: 0x29e8
-   __AUTH.__objc_data: 0x290
-   __AUTH.__data: 0x1568
--  __DATA.__data: 0x6a40
--  __DATA.__common: 0x808
-+  __DATA.__data: 0x6a98
-+  __DATA.__common: 0x7d0
-   __DATA_DIRTY.__objc_data: 0xc90
--  __DATA_DIRTY.__data: 0xceb8
--  __DATA_DIRTY.__bss: 0xa7b0
--  __DATA_DIRTY.__common: 0x220
-+  __DATA_DIRTY.__data: 0xcea8
-+  __DATA_DIRTY.__bss: 0xaab0
-+  __DATA_DIRTY.__common: 0x258
-   - /System/Library/Frameworks/Charts.framework/Charts
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12083
 -  Symbols:   5392
 +  Functions: 12092
 +  Symbols:   5395
-   CStrings:  538
- 
 Symbols:
 + ___swift_memcpy85_8
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyAA4ViewPAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyACyACyACyACyAA6HStackVyAA05TupleD0VyACyACyACy10MapsDesign0nO5ImageVAA12_FrameLayoutVGAA21_TraitWritingModifierVyAA010TransitionS3KeyVGGAA14_OpacityEffectVG_ACyAA09EquatableE0VyAN16InstructionLabelVGAA05_FlexqR0VGQPGGAA08_PaddingR0VGA12_GA12_GAA026_InsettableBackgroundShapeU0VyAA22HierarchicalShapeStyleVAA9RectangleVGG_Qo_AA01_d9ShapeKindU0VyAA22UnevenRoundedRectangleVGGAA0i10AttachmentU0VGAaDHPA30_AaDHPqd__AaDHD2_A24_HO_A29_AA0eU0HPyHCHC_A32_AAA34_HPyHCHC

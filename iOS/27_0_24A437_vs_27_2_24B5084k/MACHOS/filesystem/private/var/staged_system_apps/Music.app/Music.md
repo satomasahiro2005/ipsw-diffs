@@ -2,120 +2,72 @@
 
 > `/private/var/staged_system_apps/Music.app/Music`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methtype`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_entry`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xffeed4` | `0xffb858` | **`-0x367c`** |
+| `__TEXT.__cstring` | `0x5fbd8` | `0x5d7f8` | **`-0x23e0`** |
+| `__DATA_CONST.__const` | `0x7afe8` | `0x7bbd0` | **`+0xbe8`** |
+| `__TEXT.__swift5_capture` | `0x1d544` | `0x1dcfc` | **`+0x7b8`** |
+| `__TEXT.__const` | `0x717c0` | `0x71f20` | **`+0x760`** |
+| `__TEXT.__eh_frame` | `0x40398` | `0x3fe20` | **`-0x578`** |
+| `__TEXT.__constg_swiftt` | `0x35e48` | `0x3634c` | **`+0x504`** |
+| `__TEXT.__auth_stubs` | `0x11500` | `0x119b0` | **`+0x4b0`** |
+| `__DATA.__bss` | `0x63178` | `0x63528` | **`+0x3b0`** |
+| `__DATA.__data` | `0x4db50` | `0x4def0` | **`+0x3a0`** |
+| `__DATA.__objc_const` | `0x3ecc8` | `0x3eff0` | **`+0x328`** |
+| `__TEXT.__swift5_reflstr` | `0x2b721` | `0x2ba31` | **`+0x310`** |
+| `__DATA_CONST.__auth_got` | `0x8a90` | `0x8ce8` | **`+0x258`** |
+| `__TEXT.__swift5_fieldmd` | `0x27268` | `0x27484` | **`+0x21c`** |
+| `__TEXT.__objc_methname` | `0x3826a` | `0x3843a` | **`+0x1d0`** |
+| `__DATA_CONST.__got` | `0x7150` | `0x72f0` | **`+0x1a0`** |
+| `__DATA.__objc_data` | `0x30d08` | `0x30e78` | **`+0x170`** |
+| `__TEXT.__oslogstring` | `0x1ca1a` | `0x1caea` | **`+0xd0`** |
+| `__TEXT.__swift_as_cont` | `0x3124` | `0x307c` | **`-0xa8`** |
+| `__TEXT.__swift_as_ret` | `0x15e8` | `0x1548` | **`-0xa0`** |
+| `__TEXT.__swift5_typeref` | `0x62cc0` | `0x62d38` | **`+0x78`** |
+| `__TEXT.__objc_methlist` | `0x11ee4` | `0x11f44` | **`+0x60`** |
+| `__DATA.__common` | `0x6170` | `0x6120` | **`-0x50`** |
+| `__TEXT.__unwind_info` | `0x2cc28` | `0x2cbe0` | **`-0x48`** |
+| `__TEXT.__objc_stubs` | `0x1bb20` | `0x1bb60` | **`+0x40`** |
+| `__DATA.__objc_selrefs` | `0x9870` | `0x98a0` | **`+0x30`** |
+| `__DATA_CONST.__auth_ptr` | `0xcb98` | `0xcbc8` | **`+0x30`** |
+| `__TEXT.__objc_classname` | `0xb106` | `0xb136` | **`+0x30`** |
+| `__TEXT.__swift5_assocty` | `0x62d8` | `0x6300` | **`+0x28`** |
+| `__TEXT.__swift5_proto` | `0x3a84` | `0x3a9c` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0x270c` | `0x271c` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x15c0` | `0x15b4` | **`-0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x1830` | `0x1838` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_stublist`
 - `__DATA_CONST.__cfstring`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA.__objc_stublist`
+- `__TEXT.__objc_methtype`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_protos`
+
+### Other Changes
 
 ```diff
 
 -4026.110.1.0.0
--  __TEXT.__text: 0xf781dc
--  __TEXT.__auth_stubs: 0x11500
--  __TEXT.__objc_stubs: 0x1bb20
--  __TEXT.__objc_methlist: 0x11ee4
--  __TEXT.__objc_methname: 0x3826a
--  __TEXT.__cstring: 0x5fbd8
--  __TEXT.__objc_classname: 0xb106
 +4026.210.13.1.0
-+  __TEXT.__text: 0xf7514c
-+  __TEXT.__auth_stubs: 0x119b0
-+  __TEXT.__objc_stubs: 0x1bb60
-+  __TEXT.__objc_methlist: 0x11f44
-+  __TEXT.__objc_methname: 0x3843a
-+  __TEXT.__cstring: 0x5d7f8
-+  __TEXT.__objc_classname: 0xb136
-   __TEXT.__objc_methtype: 0xb7a2
--  __TEXT.__const: 0x717c0
--  __TEXT.__oslogstring: 0x1ca1a
-+  __TEXT.__const: 0x71f20
-+  __TEXT.__oslogstring: 0x1caea
-   __TEXT.__gcc_except_tab: 0x6fc
-   __TEXT.__ustring: 0x148
--  __TEXT.__constg_swiftt: 0x35e48
--  __TEXT.__swift5_typeref: 0x62cc0
--  __TEXT.__swift5_reflstr: 0x2b721
--  __TEXT.__swift5_fieldmd: 0x27268
-+  __TEXT.__constg_swiftt: 0x3634c
-+  __TEXT.__swift5_typeref: 0x62d38
-+  __TEXT.__swift5_reflstr: 0x2ba31
-+  __TEXT.__swift5_fieldmd: 0x27484
-   __TEXT.__swift5_builtin: 0x1360
--  __TEXT.__swift5_assocty: 0x62d8
--  __TEXT.__swift5_capture: 0x1d544
--  __TEXT.__swift5_proto: 0x3a84
--  __TEXT.__swift5_types: 0x270c
-+  __TEXT.__swift5_assocty: 0x6300
-+  __TEXT.__swift5_capture: 0x1dcfc
-+  __TEXT.__swift5_proto: 0x3a9c
-+  __TEXT.__swift5_types: 0x271c
-   __TEXT.__swift5_protos: 0x318
-   __TEXT.__swift5_mpenum: 0x3f0
--  __TEXT.__swift_as_entry: 0x15c0
--  __TEXT.__swift_as_ret: 0x15e8
--  __TEXT.__swift_as_cont: 0x3124
-+  __TEXT.__swift_as_entry: 0x15b4
-+  __TEXT.__swift_as_ret: 0x1548
-+  __TEXT.__swift_as_cont: 0x307c
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__unwind_info: 0x37e30
--  __TEXT.__eh_frame: 0x40400
--  __DATA_CONST.__const: 0x7afe8
-+  __TEXT.__unwind_info: 0x37e38
-+  __TEXT.__eh_frame: 0x3fe90
-+  __DATA_CONST.__const: 0x7bbd0
-   __DATA_CONST.__cfstring: 0x19e0
--  __DATA_CONST.__objc_classlist: 0x1830
-+  __DATA_CONST.__objc_classlist: 0x1838
-   __DATA_CONST.__objc_catlist: 0x138
-   __DATA_CONST.__objc_protolist: 0xa88
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   __DATA_CONST.__objc_superrefs: 0x1c0
-   __DATA_CONST.__objc_intobj: 0x48
-   __DATA_CONST.__objc_doubleobj: 0x20
--  __DATA_CONST.__auth_got: 0x8a90
--  __DATA_CONST.__got: 0x7150
--  __DATA_CONST.__auth_ptr: 0xcb98
--  __DATA.__objc_const: 0x3ecc8
--  __DATA.__objc_selrefs: 0x9870
-+  __DATA_CONST.__auth_got: 0x8ce8
-+  __DATA_CONST.__got: 0x72f0
-+  __DATA_CONST.__auth_ptr: 0xcbc8
-+  __DATA.__objc_const: 0x3eff0
-+  __DATA.__objc_selrefs: 0x98a0
-   __DATA.__objc_ivar: 0x344
--  __DATA.__objc_data: 0x30d08
--  __DATA.__data: 0x4db50
-+  __DATA.__objc_data: 0x30e78
-+  __DATA.__data: 0x4def0
-   __DATA.__objc_stublist: 0x38
--  __DATA.__common: 0x6170
-+  __DATA.__common: 0x6120
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 63837
 -  Symbols:   9262
 -  CStrings:  15567
 +  Functions: 63983
 +  Symbols:   9371
 +  CStrings:  15496
- 
 Symbols:
 + _$s10Foundation16AttributedStringV10startIndexAC0E0Vvg
 + _$s10Foundation16AttributedStringV8endIndexAC0E0Vvg

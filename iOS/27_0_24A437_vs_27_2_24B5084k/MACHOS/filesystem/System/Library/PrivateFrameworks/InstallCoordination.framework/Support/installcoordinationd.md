@@ -2,127 +2,81 @@
 
 > `/System/Library/PrivateFrameworks/InstallCoordination.framework/Support/installcoordinationd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__gcc_except_tab`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8e9c0` | `0xa05b8` | **`+0x11bf8`** |
+| `__DATA.__objc_const` | `0x94b0` | `0xb050` | **`+0x1ba0`** |
+| `__TEXT.__objc_methname` | `0xf5cb` | `0x1007b` | **`+0xab0`** |
+| `__TEXT.__cstring` | `0x161ad` | `0x169fa` | **`+0x84d`** |
+| `__TEXT.__oslogstring` | `0xce35` | `0xd60c` | **`+0x7d7`** |
+| `__TEXT.__objc_stubs` | `0xa060` | `0xa680` | **`+0x620`** |
+| `__TEXT.__auth_stubs` | `0x15b0` | `0x1b30` | **`+0x580`** |
+| `__TEXT.__eh_frame` | `0xa8` | `0x530` | **`+0x488`** |
+| `__DATA.__data` | `0x948` | `0xdb0` | **`+0x468`** |
+| `__DATA_CONST.__const` | `0x2960` | `0x2d40` | **`+0x3e0`** |
+| `__TEXT.__objc_methlist` | `0x4d74` | `0x511c` | **`+0x3a8`** |
+| `__TEXT.__objc_methtype` | `0x2532` | `0x2892` | **`+0x360`** |
+| `__DATA.__bss` | `0x228` | `0x530` | **`+0x308`** |
+| `__TEXT.__const` | `0x280` | `0x580` | **`+0x300`** |
+| `__DATA_CONST.__auth_got` | `0xae8` | `0xda8` | **`+0x2c0`** |
+| `__TEXT.__swift5_typeref` | `0xb0` | `0x35e` | **`+0x2ae`** |
+| `__TEXT.__unwind_info` | `0x2368` | `0x2610` | **`+0x2a8`** |
+| `__DATA.__objc_selrefs` | `0x2f68` | `0x3118` | **`+0x1b0`** |
+| `__DATA.__objc_data` | `0x10f0` | `0x1240` | **`+0x150`** |
+| `__TEXT.__objc_classname` | `0x847` | `0x986` | **`+0x13f`** |
+| `__TEXT.__swift5_capture` | `0x68` | `0x178` | **`+0x110`** |
+| `__TEXT.__constg_swiftt` | `—` | `0xb8` | **`+0xb8`** |
+| `__DATA_CONST.__got` | `0x4f8` | `0x598` | **`+0xa0`** |
+| `__DATA_CONST.__cfstring` | `0x8540` | `0x85c0` | **`+0x80`** |
+| `__DATA_CONST.__objc_protolist` | `0xc0` | `0x128` | **`+0x68`** |
+| `__TEXT.__swift5_fieldmd` | `—` | `0x64` | **`+0x64`** |
+| `__DATA_CONST.__auth_ptr` | `0x48` | `0xa8` | **`+0x60`** |
+| `__TEXT.__swift5_assocty` | `—` | `0x48` | **`+0x48`** |
+| `__TEXT.__swift5_builtin` | `—` | `0x3c` | **`+0x3c`** |
+| `__DATA_CONST.__objc_protorefs` | `0x18` | `0x50` | **`+0x38`** |
+| `__DATA_CONST.__objc_catlist` | `—` | `0x20` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x1a8` | `0x1c0` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `—` | `0x18` | **`+0x18`** |
+| `__TEXT.__swift5_reflstr` | `—` | `0x12` | **`+0x12`** |
+| `__TEXT.__swift5_types` | `—` | `0xc` | **`+0xc`** |
+| `__DATA.__common` | `0x20` | `0x18` | **`-0x8`** |
+| `__TEXT.__swift5_protos` | `—` | `0x4` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__objc_arraydata`
 - `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__gcc_except_tab`
+
+### Other Changes
 
 ```diff
 
 -842.0.1.0.0
--  __TEXT.__text: 0x8cf90
--  __TEXT.__auth_stubs: 0x15b0
--  __TEXT.__objc_stubs: 0xa060
--  __TEXT.__objc_methlist: 0x4d74
--  __TEXT.__const: 0x280
--  __TEXT.__cstring: 0x161ad
--  __TEXT.__oslogstring: 0xce35
--  __TEXT.__objc_classname: 0x847
--  __TEXT.__objc_methtype: 0x2532
--  __TEXT.__objc_methname: 0xf5cb
 +849.40.2.502.1
-+  __TEXT.__text: 0x9e654
-+  __TEXT.__auth_stubs: 0x1b30
-+  __TEXT.__objc_stubs: 0xa680
-+  __TEXT.__objc_methlist: 0x511c
-+  __TEXT.__const: 0x580
-+  __TEXT.__cstring: 0x169fa
-+  __TEXT.__oslogstring: 0xd60c
-+  __TEXT.__objc_classname: 0x986
-+  __TEXT.__objc_methtype: 0x2892
-+  __TEXT.__objc_methname: 0x1007b
-   __TEXT.__gcc_except_tab: 0x2ce8
-   __TEXT.__ustring: 0x1b64
-   __TEXT.__dlopen_cstrs: 0x68
--  __TEXT.__swift5_typeref: 0xb0
--  __TEXT.__swift5_capture: 0x68
--  __TEXT.__unwind_info: 0x2d28
--  __TEXT.__eh_frame: 0xa8
--  __DATA_CONST.__const: 0x2960
--  __DATA_CONST.__cfstring: 0x8540
--  __DATA_CONST.__objc_classlist: 0x1a8
--  __DATA_CONST.__objc_protolist: 0xc0
-+  __TEXT.__constg_swiftt: 0xb8
-+  __TEXT.__swift5_typeref: 0x35e
-+  __TEXT.__swift5_builtin: 0x3c
-+  __TEXT.__swift5_reflstr: 0x12
-+  __TEXT.__swift5_fieldmd: 0x64
-+  __TEXT.__swift5_assocty: 0x48
-+  __TEXT.__swift5_proto: 0x18
-+  __TEXT.__swift5_types: 0xc
-+  __TEXT.__swift5_protos: 0x4
-+  __TEXT.__swift5_capture: 0x178
-+  __TEXT.__unwind_info: 0x30d0
-+  __TEXT.__eh_frame: 0x530
-+  __DATA_CONST.__const: 0x2d40
-+  __DATA_CONST.__cfstring: 0x85c0
-+  __DATA_CONST.__objc_classlist: 0x1c0
-+  __DATA_CONST.__objc_catlist: 0x20
-+  __DATA_CONST.__objc_protolist: 0x128
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_protorefs: 0x18
-+  __DATA_CONST.__objc_protorefs: 0x50
-   __DATA_CONST.__objc_superrefs: 0x158
-   __DATA_CONST.__objc_intobj: 0x138
-   __DATA_CONST.__objc_arraydata: 0x41d0
-   __DATA_CONST.__objc_dictobj: 0x6dd8
--  __DATA_CONST.__auth_got: 0xae8
--  __DATA_CONST.__got: 0x4f8
--  __DATA_CONST.__auth_ptr: 0x48
--  __DATA.__objc_const: 0x94b0
--  __DATA.__objc_selrefs: 0x2f68
-+  __DATA_CONST.__auth_got: 0xda8
-+  __DATA_CONST.__got: 0x598
-+  __DATA_CONST.__auth_ptr: 0xa8
-+  __DATA.__objc_const: 0xb050
-+  __DATA.__objc_selrefs: 0x3118
-   __DATA.__objc_ivar: 0x378
--  __DATA.__objc_data: 0x10f0
--  __DATA.__data: 0x948
-+  __DATA.__objc_data: 0x1240
-+  __DATA.__data: 0xdb0
-   __DATA.__crash_info: 0x148
--  __DATA.__common: 0x20
-+  __DATA.__common: 0x18
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-+  - /System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-   - /System/Library/Frameworks/Security.framework/Security
-   - /System/Library/PrivateFrameworks/AppConduit.framework/AppConduit
-   - /System/Library/PrivateFrameworks/AppProtection.framework/AppProtection
-+  - /System/Library/PrivateFrameworks/AppleKeyStore.framework/AppleKeyStore
-   - /System/Library/PrivateFrameworks/BackgroundSystemTasks.framework/BackgroundSystemTasks
-   - /System/Library/PrivateFrameworks/CacheDelete.framework/CacheDelete
-   - /System/Library/PrivateFrameworks/FontServices.framework/FontServices
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
++  - /System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation
+
++  - /System/Library/PrivateFrameworks/AppleKeyStore.framework/AppleKeyStore
+
 +  - /usr/lib/swift/libswiftAccelerate.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
+
 +  - /usr/lib/swift/libswiftMetal.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
+
 +  - /usr/lib/swift/libswiftQuartzCore.dylib
 +  - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
+
 -  Functions: 2985
 -  Symbols:   521
--  CStrings:  4922
+-  CStrings:  4923
 +  - /usr/lib/swift/libswiftsimd.dylib
 +  Functions: 3235
 +  Symbols:   639
-+  CStrings:  5089
- 
++  CStrings:  5090
 Symbols:
 + _$s10Foundation3URLV19_bridgeToObjectiveCSo5NSURLCyF
 + _$s10Foundation3URLV22appendingPathComponent_11isDirectoryACSS_SbtF
@@ -271,6 +225,7 @@ CStrings:
 + "-[IXSClientConnection _remote_recordAppReplacementNotApplicableForAppIdentity:options:completion:]"
 + "-[IXSClientConnection _remote_resetAppReplacementStateForAppIdentity:options:completion:]"
 + "-[IXSClientConnection _remote_resumeInterruptedAppReplacementWithOptions:completion:]"
++ "20:46:02"
 + ": an install is already in flight for "
 + ": failed to cancel the in-flight coordinator for "
 + ": failed to look up the SYSTEM persona"
@@ -322,6 +277,7 @@ CStrings:
 + "Nothing will migrate %@ -> %@ [%s]: its data container could not be resolved: %s"
 + "PushReplacementInfoToLS"
 + "Resumed and finished %@"
++ "Sep  9 2026"
 + "Skipping a migration extension registered for %s with no bundle identifier"
 + "Skipping an app extension replacing %s with no bundle identifier"
 + "T@\"<IXSPropertyListProtocol>\",R,N"
@@ -412,4 +368,6 @@ CStrings:
 + "v40@0:8@\"IXApplicationIdentity\"16@\"IXAppReplacementStateResetOptions\"24@?<v@?B@\"NSError\">32"
 + "v48@0:8@\"IXApplicationIdentity\"16@\"IXApplicationIdentity\"24@\"IXAppReplacementOptions\"32@?<v@?B@\"NSError\">40"
 - "-[IXSAppUninstaller _acquireTerminationAssertionForIdentity:withError:]"
+- "16:38:35"
+- "Aug  8 2026"
 ```

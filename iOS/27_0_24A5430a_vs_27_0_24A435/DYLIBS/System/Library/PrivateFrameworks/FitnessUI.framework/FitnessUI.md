@@ -2,102 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/FitnessUI.framework/FitnessUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa3a00` | `0xaa1a4` | **`+0x67a4`** |
+| `__DATA.__bss` | `0x3068` | `0x3848` | **`+0x7e0`** |
+| `__TEXT.__const` | `0x2bf4` | `0x31d4` | **`+0x5e0`** |
+| `__TEXT.__swift5_typeref` | `0x2952` | `0x2cfe` | **`+0x3ac`** |
+| `__AUTH_CONST.__const` | `0x20f0` | `0x22e8` | **`+0x1f8`** |
+| `__TEXT.__unwind_info` | `0x2e28` | `0x2ff0` | **`+0x1c8`** |
+| `__AUTH_CONST.__objc_const` | `0xf3b8` | `0xf560` | **`+0x1a8`** |
+| `__AUTH.__data` | `0xe00` | `0xf50` | **`+0x150`** |
+| `__AUTH.__objc_data` | `0x1ff0` | `0x2140` | **`+0x150`** |
+| `__TEXT.__objc_methlist` | `0x6c7c` | `0x6dbc` | **`+0x140`** |
+| `__DATA.__data` | `0x1388` | `0x14a8` | **`+0x120`** |
+| `__TEXT.__eh_frame` | `0xaa8` | `0xbc8` | **`+0x120`** |
+| `__TEXT.__constg_swiftt` | `0xf18` | `0x102c` | **`+0x114`** |
+| `__TEXT.__cstring` | `0x618d` | `0x626d` | **`+0xe0`** |
+| `__TEXT.__swift5_reflstr` | `0x8d4` | `0x9a4` | **`+0xd0`** |
+| `__TEXT.__swift5_capture` | `0x464` | `0x4ec` | **`+0x88`** |
+| `__TEXT.__swift5_fieldmd` | `0x8a4` | `0x928` | **`+0x84`** |
+| `__AUTH_CONST.__auth_got` | `0x17c0` | `0x1828` | **`+0x68`** |
+| `__TEXT.__swift5_assocty` | `0x138` | `0x198` | **`+0x60`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4da8` | `0x4e00` | **`+0x58`** |
+| `__TEXT.__oslogstring` | `0x198c` | `0x19dc` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0xdd8` | `0xe20` | **`+0x48`** |
+| `__TEXT.__swift5_proto` | `0xa4` | `0xe0` | **`+0x3c`** |
+| `__TEXT.__swift5_builtin` | `0x8c` | `0xb4` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x1208` | `0x1228` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0xb4` | `0xc8` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x370` | `0x380` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x58` | `0x64` | **`+0xc`** |
+| `__TEXT.__swift_as_cont` | `0x50` | `0x58` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x30` | `0x34` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
- 2027.0.68.0.0
--  __TEXT.__text: 0xa3a00
--  __TEXT.__objc_methlist: 0x6c7c
--  __TEXT.__const: 0x2bf4
--  __TEXT.__cstring: 0x618d
--  __TEXT.__oslogstring: 0x198c
-+  __TEXT.__text: 0xaa1a4
-+  __TEXT.__objc_methlist: 0x6dbc
-+  __TEXT.__const: 0x31d4
-+  __TEXT.__cstring: 0x626d
-+  __TEXT.__oslogstring: 0x19dc
-   __TEXT.__gcc_except_tab: 0x380
-   __TEXT.__dlopen_cstrs: 0x140
-   __TEXT.__ustring: 0xe
--  __TEXT.__swift5_typeref: 0x2952
--  __TEXT.__constg_swiftt: 0xf18
--  __TEXT.__swift5_fieldmd: 0x8a4
--  __TEXT.__swift5_types: 0xb4
--  __TEXT.__swift5_capture: 0x464
--  __TEXT.__swift5_reflstr: 0x8d4
-+  __TEXT.__swift5_typeref: 0x2cfe
-+  __TEXT.__constg_swiftt: 0x102c
-+  __TEXT.__swift5_fieldmd: 0x928
-+  __TEXT.__swift5_types: 0xc8
-+  __TEXT.__swift5_capture: 0x4ec
-+  __TEXT.__swift5_reflstr: 0x9a4
-   __TEXT.__swift5_protos: 0xc
--  __TEXT.__swift5_proto: 0xa4
--  __TEXT.__swift_as_entry: 0x58
--  __TEXT.__swift_as_ret: 0x30
--  __TEXT.__swift_as_cont: 0x50
--  __TEXT.__swift5_assocty: 0x138
--  __TEXT.__swift5_builtin: 0x8c
-+  __TEXT.__swift5_proto: 0xe0
-+  __TEXT.__swift_as_entry: 0x64
-+  __TEXT.__swift_as_ret: 0x34
-+  __TEXT.__swift_as_cont: 0x58
-+  __TEXT.__swift5_assocty: 0x198
-+  __TEXT.__swift5_builtin: 0xb4
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x2e28
--  __TEXT.__eh_frame: 0xaa8
-+  __TEXT.__unwind_info: 0x2ff0
-+  __TEXT.__eh_frame: 0xbc8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1208
--  __DATA_CONST.__objc_classlist: 0x370
-+  __DATA_CONST.__const: 0x1228
-+  __DATA_CONST.__objc_classlist: 0x380
-   __DATA_CONST.__objc_catlist: 0x88
-   __DATA_CONST.__objc_protolist: 0xf8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4da8
-+  __DATA_CONST.__objc_selrefs: 0x4e00
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x208
-   __DATA_CONST.__objc_arraydata: 0x198
--  __DATA_CONST.__got: 0xdd8
--  __AUTH_CONST.__const: 0x20f0
-+  __DATA_CONST.__got: 0xe20
-+  __AUTH_CONST.__const: 0x22e8
-   __AUTH_CONST.__cfstring: 0x3c40
--  __AUTH_CONST.__objc_const: 0xf3b8
-+  __AUTH_CONST.__objc_const: 0xf560
-   __AUTH_CONST.__objc_arrayobj: 0x150
-   __AUTH_CONST.__objc_intobj: 0x540
-   __AUTH_CONST.__objc_doubleobj: 0x120
--  __AUTH_CONST.__auth_got: 0x17c0
--  __AUTH.__objc_data: 0x1ff0
--  __AUTH.__data: 0xe00
-+  __AUTH_CONST.__auth_got: 0x1828
-+  __AUTH.__objc_data: 0x2140
-+  __AUTH.__data: 0xf50
-   __DATA.__objc_ivar: 0x808
--  __DATA.__data: 0x1388
-+  __DATA.__data: 0x14a8
-   __DATA.__common: 0x4418
-   __DATA_DIRTY.__objc_data: 0x500
-   __DATA_DIRTY.__data: 0x98
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5910
--  Symbols:   6984
+-  Symbols:   5157
 -  CStrings:  1043
 +  Functions: 6090
-+  Symbols:   7048
++  Symbols:   5210
 +  CStrings:  1049
- 
 Symbols:
 + _OBJC_CLASS_$_FIUIPedometerTextProvider
 + _OBJC_CLASS_$_FIUIStepsComplicationFormatter
@@ -127,17 +76,6 @@ Symbols:
 + _associated conformance 9FitnessUI31StepCountCircularArchivableViewV05SwiftB00G0AA4BodyAdEP_AdE
 + _associated conformance 9FitnessUI32FIUIStepsComplicationDisplayTypeOSHAASQ
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE10unredactedQryFQOyAA15ModifiedContentVyAFyAFyAA6VStackVyAA05TupleF0VyAC9WidgetKitE16widgetAccentableyQrSbFQOyAFyAA5ImageVAA24_ForegroundStyleModifierVyAA5ColorVGG_Qo__AFyAC07FitnessB0E18rollingNumericText5valueQrSdSg_tFQOyAA0U0V_Qo_AA017_AppearanceActionP0VGQPGGAA023AccessibilityAttachmentP0VGAA16_FlexFrameLayoutVGAA022_EnvironmentKeyWritingP0VyAA0U9AlignmentOGG_Qo_HO
-+ _objc_msgSend$_value
-+ _objc_msgSend$axLabelWithPedometerData:
-+ _objc_msgSend$cornerLabelWithPedometerData:
-+ _objc_msgSend$flights
-+ _objc_msgSend$initWithIsWheelchairUser:
-+ _objc_msgSend$inlineLabelWithPedometerData:
-+ _objc_msgSend$numberString:placeholder:
-+ _objc_msgSend$pushes
-+ _objc_msgSend$setRoundingMode:
-+ _objc_msgSend$shortInlineLabelWithPedometerData:
-+ _objc_msgSend$steps
 + _swift_task_getMainExecutor
 + _swift_task_isCurrentExecutor
 + _symbolic So13PedometerDataC

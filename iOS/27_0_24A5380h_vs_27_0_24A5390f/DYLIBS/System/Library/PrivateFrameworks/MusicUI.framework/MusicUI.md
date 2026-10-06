@@ -2,122 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/MusicUI.framework/MusicUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x99f5fc` | `0x99f8f4` | **`+0x2f8`** |
+| `__TEXT.__swift5_typeref` | `0x93864` | `0x93ad6` | **`+0x272`** |
+| `__TEXT.__const` | `0x6e314` | `0x6e114` | **`-0x200`** |
+| `__DATA_DIRTY.__data` | `0x28218` | `0x280b8` | **`-0x160`** |
+| `__DATA_DIRTY.__bss` | `0x35130` | `0x35030` | **`-0x100`** |
+| `__DATA.__bss` | `0x386d0` | `0x38790` | **`+0xc0`** |
+| `__AUTH.__data` | `0xd990` | `0xda30` | **`+0xa0`** |
+| `__AUTH_CONST.__objc_const` | `0x160d8` | `0x16050` | **`-0x88`** |
+| `__TEXT.__swift5_reflstr` | `0x1f45f` | `0x1f4df` | **`+0x80`** |
+| `__TEXT.__swift5_fieldmd` | `0x1d104` | `0x1d158` | **`+0x54`** |
+| `__AUTH_CONST.__const` | `0x3d378` | `0x3d3c8` | **`+0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x2fb0` | `0x2f60` | **`-0x50`** |
+| `__TEXT.__cstring` | `0xd87e` | `0xd8be` | **`+0x40`** |
+| `__TEXT.__eh_frame` | `0x33284` | `0x332bc` | **`+0x38`** |
+| `__DATA_CONST.__got` | `0x3610` | `0x3630` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x6170` | `0x6188` | **`+0x18`** |
+| `__DATA.__data` | `0x18d30` | `0x18d48` | **`+0x18`** |
+| `__TEXT.__constg_swiftt` | `0x1f07c` | `0x1f064` | **`-0x18`** |
+| `__TEXT.__objc_methlist` | `0x2828` | `0x2810` | **`-0x18`** |
+| `__TEXT.__swift5_assocty` | `0x8970` | `0x8958` | **`-0x18`** |
+| `__TEXT.__unwind_info` | `0x1f308` | `0x1f320` | **`+0x18`** |
+| `__TEXT.__swift5_capture` | `0xbd20` | `0xbd34` | **`+0x14`** |
+| `__DATA.__common` | `0x4a8` | `0x4b8` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x608` | `0x600` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2230` | `0x2228` | **`-0x8`** |
+
+### Other Changes
 
 ```diff
 
 -4026.100.77.0.0
--  __TEXT.__text: 0x99f5fc
--  __TEXT.__objc_methlist: 0x2828
--  __TEXT.__const: 0x6e314
 +4026.100.81.0.0
-+  __TEXT.__text: 0x99f8f4
-+  __TEXT.__objc_methlist: 0x2810
-+  __TEXT.__const: 0x6e114
-   __TEXT.__gcc_except_tab: 0x70
--  __TEXT.__cstring: 0xd87e
-+  __TEXT.__cstring: 0xd8be
-   __TEXT.__dlopen_cstrs: 0x5a
--  __TEXT.__constg_swiftt: 0x1f07c
--  __TEXT.__swift5_typeref: 0x93864
-+  __TEXT.__constg_swiftt: 0x1f064
-+  __TEXT.__swift5_typeref: 0x93ad6
-   __TEXT.__swift5_builtin: 0x4c4
--  __TEXT.__swift5_reflstr: 0x1f45f
--  __TEXT.__swift5_fieldmd: 0x1d104
--  __TEXT.__swift5_assocty: 0x8970
-+  __TEXT.__swift5_reflstr: 0x1f4df
-+  __TEXT.__swift5_fieldmd: 0x1d158
-+  __TEXT.__swift5_assocty: 0x8958
-   __TEXT.__swift5_proto: 0x3a20
-   __TEXT.__swift5_types: 0x1e28
--  __TEXT.__swift5_capture: 0xbd20
-+  __TEXT.__swift5_capture: 0xbd34
-   __TEXT.__oslogstring: 0x9567
-   __TEXT.__swift_as_entry: 0x1028
-   __TEXT.__swift_as_ret: 0x1258
-   __TEXT.__swift_as_cont: 0x262c
-   __TEXT.__swift5_protos: 0x210
-   __TEXT.__swift5_mpenum: 0x1b8
--  __TEXT.__unwind_info: 0x1f308
--  __TEXT.__eh_frame: 0x33284
-+  __TEXT.__unwind_info: 0x1f320
-+  __TEXT.__eh_frame: 0x332bc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x3b0
--  __DATA_CONST.__objc_classlist: 0x608
-+  __DATA_CONST.__objc_classlist: 0x600
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x378
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2230
-+  __DATA_CONST.__objc_selrefs: 0x2228
-   __DATA_CONST.__objc_protorefs: 0x208
--  __DATA_CONST.__got: 0x3610
--  __AUTH_CONST.__const: 0x3d378
-+  __DATA_CONST.__got: 0x3630
-+  __AUTH_CONST.__const: 0x3d3c8
-   __AUTH_CONST.__cfstring: 0x20
--  __AUTH_CONST.__objc_const: 0x160d8
--  __AUTH_CONST.__auth_got: 0x6170
-+  __AUTH_CONST.__objc_const: 0x16050
-+  __AUTH_CONST.__auth_got: 0x6188
-   __AUTH.__objc_data: 0x1dc8
--  __AUTH.__data: 0xd990
--  __DATA.__data: 0x18d30
--  __DATA.__bss: 0x386d0
--  __DATA.__common: 0x4a8
--  __DATA_DIRTY.__objc_data: 0x2fb0
--  __DATA_DIRTY.__data: 0x28218
--  __DATA_DIRTY.__bss: 0x35130
-+  __AUTH.__data: 0xda30
-+  __DATA.__data: 0x18d48
-+  __DATA.__bss: 0x38790
-+  __DATA.__common: 0x4b8
-+  __DATA_DIRTY.__objc_data: 0x2f60
-+  __DATA_DIRTY.__data: 0x280b8
-+  __DATA_DIRTY.__bss: 0x35030
-   __DATA_DIRTY.__common: 0x510
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 
-   - /System/Library/PrivateFrameworks/UIAccessibility.framework/UIAccessibility
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-   - /System/Library/PrivateFrameworks/_JetEngine_SwiftUI.framework/_JetEngine_SwiftUI
 +  - /System/Library/PrivateFrameworks/_MusicKitInternal_AppIntents.framework/_MusicKitInternal_AppIntents
-   - /System/Library/PrivateFrameworks/_MusicKitInternal_MediaPlayer.framework/_MusicKitInternal_MediaPlayer
-   - /System/Library/PrivateFrameworks/_MusicKitInternal_SwiftUI.framework/_MusicKitInternal_SwiftUI
-   - /System/Library/PrivateFrameworks/iTunesCloud.framework/iTunesCloud
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 52348
--  Symbols:   17335
+-  Symbols:   16643
 -  CStrings:  2222
 +  Functions: 52313
-+  Symbols:   17331
++  Symbols:   16640
 +  CStrings:  2224
- 
 Symbols:
 + ___swift_closure_destructor.156Tm
 + ___swift_closure_destructor.27Tm
@@ -488,7 +417,6 @@ Symbols:
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE26interactiveDismissDisabledyQrSbFQOyAcAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAcAE11safeAreaBar4edge9alignment7spacingAFQrAA12VerticalEdgeO_AA19HorizontalAlignmentV12CoreGraphics7CGFloatVSgqd__yXEtAaBRd__lFQOyAcAEAhijkFQrAM_AoSqd__yXEtAaBRd__lFQOyAA5GroupVyAA012_ConditionalJ0VyAA06ScrollC0VyAA08ModifiedJ0VyA_yA_y05MusicB0019OrderedPlaylistListC0VAA30_EnvironmentKeyWritingModifierVyA0_20SocialProfileUpdaterCSgGGAA14_PaddingLayoutVGA11_GGAA6VStackVyAA05TupleJ0VyAA6SpacerV_A_yA_yAA4TextVA4_yAA04TextT0OGGA11_GA20_QPGGGG_AcAE18scrollPocketTag_v15styleQrAA0M16MagicPocketStyleV_tFQOyA_yA_yA_yA_yA_yA22_AA16_FlexFrameLayoutVGA25_GA4_ySiSgGGA11_GA11_G_Qo_Qo__AcAEA32_A33_QrA35__tFQOyA_yA_yA_yA_yA0_12ActionButtonVyA_yA_yA_yAUyAWyA_yAA08ProgressC0VyAA05EmptyC0VA52_GA4_yAA11ControlSizeOGGA22_GGA37_GA11_GAA19_BackgroundModifierVyA0_21ModalButtonBackgroundVGGGAA32_EnvironmentKeyTransformModifierVySbGGA4_ySbGGA11_GA11_G_Qo_Qo__AA0I4ItemVyytAcAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyA48_yA_yA22_A11_GG_AA16PlainButtonStyleVQo_GSgQo__Qo_HO
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE29navigationBarBackButtonHiddenyQrSbFQOyAcAE11toolbarRoleyQrAA07ToolbarJ0VFQOyAcAE26interactiveDismissDisabledyQrSbFQOyAcAE08safeAreaE04edge9alignment7spacing7contentQrAA12VerticalEdgeO_AA19HorizontalAlignmentV12CoreGraphics7CGFloatVSgqd__yXEtAaBRd__lFQOyAcAEAijklMQrAO_AqUqd__yXEtAaBRd__lFQOyAA5GroupVyAA19_ConditionalContentVyAYyAA15ModifiedContentVyAA6VStackVyA_yAA08ProgressC0VyAA05EmptyC0VA5_GAA12_FrameLayoutVGGAA16_FlexFrameLayoutVGA_yAA4TextVA12_GGAcAE9listStyleyQrqd__AA9ListStyleRd__lFQOyAA4ListVys5NeverOA_yA_yA_yAWyAA12TupleContentVyAA7SectionVyAcAE18scrollPocketTag_v15styleQrAA0E16MagicPocketStyleV_tFQOyA15__Qo_AA7ForEachVySay05MusicB027SocialFindFriendsControllerC6FriendVGA39_A35_030SocialFindFriendsContactLockupC0VGA5_GSg_A27_yAcAE06pinnedE3_v1AJQrAO_tFQOyA32__Qo_A43_A5_GSgQPGGAA14_PaddingLayoutVGAA01_X15WritingModifierVGAA21_TraitWritingModifierVyAA21ListRowInsetsTraitKeyVGGG_AA14PlainListStyleVQo_GG_AcAEA28_A29_QrA31__tFQOyA_yA_yA_yA_yA_yA15_AA30_EnvironmentKeyWritingModifierVySiSgGGA53_GA53_GA53_GA12_G_Qo_Qo__AcAEA28_A29_QrA31__tFQOyA_yA_yA35_06ActionG0VyA_yA_yA15_A53_GAA19_BackgroundModifierVyA35_05ModalG10BackgroundVGGGA53_GA71_ySbGG_Qo_Qo__Qo__Qo__Qo_HO
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE29navigationBarTitleDisplayModeyQrAA010NavigationE4ItemV0fgH0OFQOyAA15ModifiedContentVyAJy05MusicB0021ContainerDetailHeaderC0VAK0M24EntityAnnotationModifier33_B8392E264094EC53BA5702CB78F339ABLLVGAA16_FlexFrameLayoutVG_Qo_HO
-- _objc_msgSend$invalidateIntrinsicContentSize
 - _symbolic _____ 7MusicUI0A24EntityAnnotationModifier33_B8392E264094EC53BA5702CB78F339ABLLV
 - _symbolic _____ 7MusicUI24LibrarySearchResultsViewV5Model33_87D2F52FA9A0D520B2E4D909D5E583F5LLC
 - _symbolic _____Sg 17_MusicKit_SwiftUI12ArtworkImageV

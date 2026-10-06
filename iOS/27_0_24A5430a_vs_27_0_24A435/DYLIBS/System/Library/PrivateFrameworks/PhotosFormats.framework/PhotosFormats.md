@@ -2,112 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/PhotosFormats.framework/PhotosFormats`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd706c` | `0xde05c` | **`+0x6ff0`** |
+| `__AUTH_CONST.__objc_const` | `0x14628` | `0x15380` | **`+0xd58`** |
+| `__TEXT.__objc_methlist` | `0xc8e8` | `0xcfc0` | **`+0x6d8`** |
+| `__DATA.__bss` | `0xc70` | `0x1270` | **`+0x600`** |
+| `__TEXT.__const` | `0x2db0` | `0x33a0` | **`+0x5f0`** |
+| `__TEXT.__cstring` | `0xdc55` | `0xe147` | **`+0x4f2`** |
+| `__TEXT.__eh_frame` | `—` | `0x380` | **`+0x380`** |
+| `__AUTH_CONST.__cfstring` | `0xc920` | `0xcc80` | **`+0x360`** |
+| `__TEXT.__oslogstring` | `0x762c` | `0x7954` | **`+0x328`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6248` | `0x64f0` | **`+0x2a8`** |
+| `__AUTH.__objc_data` | `0x500` | `0x7a0` | **`+0x2a0`** |
+| `__AUTH_CONST.__auth_got` | `0xe98` | `0x10e8` | **`+0x250`** |
+| `__TEXT.__unwind_info` | `0x3350` | `0x3580` | **`+0x230`** |
+| `__AUTH_CONST.__const` | `0x1c10` | `0x1da8` | **`+0x198`** |
+| `__DATA_CONST.__got` | `0x1608` | `0x17a0` | **`+0x198`** |
+| `__TEXT.__swift5_reflstr` | `—` | `0x162` | **`+0x162`** |
+| `__TEXT.__swift5_fieldmd` | `—` | `0xf4` | **`+0xf4`** |
+| `__TEXT.__swift5_typeref` | `—` | `0xeb` | **`+0xeb`** |
+| `__AUTH.__data` | `0x10` | `0xd0` | **`+0xc0`** |
+| `__TEXT.__constg_swiftt` | `—` | `0xa0` | **`+0xa0`** |
+| `__DATA.__data` | `0xdd8` | `0xe58` | **`+0x80`** |
+| `__DATA.__objc_ivar` | `0xd10` | `0xd8c` | **`+0x7c`** |
+| `__DATA_CONST.__objc_classlist` | `0x550` | `0x590` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x2ae8` | `0x2b18` | **`+0x30`** |
+| `__DATA_CONST.__objc_superrefs` | `0x390` | `0x3c0` | **`+0x30`** |
+| `__TEXT.__swift5_proto` | `—` | `0x2c` | **`+0x2c`** |
+| `__TEXT.__gcc_except_tab` | `0x2d8c` | `0x2da4` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `—` | `0x10` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.234.0.0
--  __TEXT.__text: 0xd706c
--  __TEXT.__objc_methlist: 0xc8e8
--  __TEXT.__const: 0x2db0
 +912.0.235.0.0
-+  __TEXT.__text: 0xde05c
-+  __TEXT.__objc_methlist: 0xcfc0
-+  __TEXT.__const: 0x33a0
-   __TEXT.__dlopen_cstrs: 0x1b7
--  __TEXT.__gcc_except_tab: 0x2d8c
--  __TEXT.__cstring: 0xdc55
--  __TEXT.__oslogstring: 0x762c
-+  __TEXT.__cstring: 0xe147
-+  __TEXT.__constg_swiftt: 0xa0
-+  __TEXT.__swift5_typeref: 0xeb
-+  __TEXT.__swift5_reflstr: 0x162
-+  __TEXT.__swift5_fieldmd: 0xf4
-+  __TEXT.__swift5_proto: 0x2c
-+  __TEXT.__swift5_types: 0x10
-+  __TEXT.__gcc_except_tab: 0x2da4
-+  __TEXT.__oslogstring: 0x7954
-   __TEXT.__ustring: 0x44
--  __TEXT.__unwind_info: 0x3350
-+  __TEXT.__unwind_info: 0x3580
-+  __TEXT.__eh_frame: 0x380
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2ae8
--  __DATA_CONST.__objc_classlist: 0x550
-+  __DATA_CONST.__const: 0x2b18
-+  __DATA_CONST.__objc_classlist: 0x590
-   __DATA_CONST.__objc_protolist: 0x110
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x6248
-+  __DATA_CONST.__objc_selrefs: 0x64f0
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x390
-+  __DATA_CONST.__objc_superrefs: 0x3c0
-   __DATA_CONST.__objc_arraydata: 0x800
--  __DATA_CONST.__got: 0x1608
--  __AUTH_CONST.__const: 0x1c10
--  __AUTH_CONST.__cfstring: 0xc920
--  __AUTH_CONST.__objc_const: 0x14628
-+  __DATA_CONST.__got: 0x17a0
-+  __AUTH_CONST.__const: 0x1da8
-+  __AUTH_CONST.__cfstring: 0xcc80
-+  __AUTH_CONST.__objc_const: 0x15380
-   __AUTH_CONST.__weak_auth_got: 0x20
-   __AUTH_CONST.__objc_intobj: 0x900
-   __AUTH_CONST.__objc_arrayobj: 0x348
-   __AUTH_CONST.__objc_doubleobj: 0x1b0
-   __AUTH_CONST.__objc_dictobj: 0x208
--  __AUTH_CONST.__auth_got: 0xe98
--  __AUTH.__objc_data: 0x500
--  __AUTH.__data: 0x10
--  __DATA.__objc_ivar: 0xd10
--  __DATA.__data: 0xdd8
-+  __AUTH_CONST.__auth_got: 0x10e8
-+  __AUTH.__objc_data: 0x7a0
-+  __AUTH.__data: 0xd0
-+  __DATA.__objc_ivar: 0xd8c
-+  __DATA.__data: 0xe58
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0x3020
-   __DATA_DIRTY.__bss: 0x858
 
-   - /System/Library/PrivateFrameworks/PhotoFoundation.framework/PhotoFoundation
-   - /System/Library/PrivateFrameworks/Portrait.framework/Portrait
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
 +  - /System/Library/PrivateFrameworks/SwiftASN1Internal.framework/SwiftASN1Internal
-   - /usr/lib/libAppleArchive.dylib
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
 +  - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftCoreImage.dylib
 
-   - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
 +  - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4826
--  Symbols:   11622
+-  Symbols:   9380
 -  CStrings:  2562
 +  Functions: 5090
-+  Symbols:   12022
++  Symbols:   9739
 +  CStrings:  2616
- 
 Symbols:
 + +[PFContentProvenanceDNGHelper dngFileContainsEmbeddedProvenanceImage:checkUnprocessed:]
 + +[PFContentProvenanceResourceInfo dataContainsNonZeroBytes:]
@@ -631,47 +577,6 @@ Symbols:
 + _kSecRandomDefault
 + _malloc_size
 + _objc_allocWithZone
-+ _objc_msgSend$_flagForProvenanceState:
-+ _objc_msgSend$_writeCombinedProvenanceImageToURL:error:
-+ _objc_msgSend$certificateVerificationStatus
-+ _objc_msgSend$cinematicRenderingVersion
-+ _objc_msgSend$configureWithMetadata:
-+ _objc_msgSend$containsNonZeroUpperBoundTimestampData
-+ _objc_msgSend$coreMediaCaptureMode
-+ _objc_msgSend$dataContainsNonZeroBytes:
-+ _objc_msgSend$dataForEmbeddedUnprocessedProvenanceImageWithError:
-+ _objc_msgSend$dateWithTimeIntervalSince1970:
-+ _objc_msgSend$deserializeMetadataWithType:fromGlobalMetadata:error:
-+ _objc_msgSend$dngFileContainsEmbeddedProvenanceImage:checkUnprocessed:
-+ _objc_msgSend$dngProperties
-+ _objc_msgSend$fileContentPartialDigest
-+ _objc_msgSend$hasProcessedProvenanceAuxiliaryMetadata
-+ _objc_msgSend$hasProcessedProvenanceDNGMetadata
-+ _objc_msgSend$hasUnprocessedProvenanceAuxiliaryMetadata
-+ _objc_msgSend$hasUnprocessedProvenanceDNGMetadata
-+ _objc_msgSend$initWithSensorSignature:sepSignature:error:
-+ _objc_msgSend$isRenderVersionSupported:
-+ _objc_msgSend$metadataIndicatesDevelopedProvenanceImage
-+ _objc_msgSend$metadataIndicatesUndevelopedProvenanceImage
-+ _objc_msgSend$nonceReservedLength
-+ _objc_msgSend$provenanceFlags
-+ _objc_msgSend$quickTimeMetadataCoreMediaCaptureMode
-+ _objc_msgSend$reconciledProvenanceState:forMetadata:hasUnprocessedEmbeddedProvenanceContent:assetContainsProvenanceResource:utiConformsToDNGType:
-+ _objc_msgSend$renderingVersion
-+ _objc_msgSend$setCertificateVerificationStatus:
-+ _objc_msgSend$setFileContentPartialDigest:
-+ _objc_msgSend$setProcessedImageJPEGData:
-+ _objc_msgSend$setSignatureVerificationStatus:
-+ _objc_msgSend$setUtcLowerBoundTimestamp:
-+ _objc_msgSend$setUtcProcessingTimestamp:
-+ _objc_msgSend$setUtcUpperBoundTimestamp:
-+ _objc_msgSend$signatureVerificationStatus
-+ _objc_msgSend$upperBoundTimestampData
-+ _objc_msgSend$upperBoundTimestampReservedLength
-+ _objc_msgSend$utcLowerBoundTimestamp
-+ _objc_msgSend$utcProcessingTimestamp
-+ _objc_msgSend$utcUpperBoundTimestamp
-+ _objc_msgSend$validateConfiguration
 + _swift_allocBox
 + _swift_allocError
 + _swift_allocObject

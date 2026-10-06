@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/iCloudMailAssistant.framework/iCloudMailAssistant`
 
-```diff
+### Section Size Changes
 
- 2027.0.5.0.0
--  __TEXT.__text: 0x11fdfc
-+  __TEXT.__text: 0x11fe5c
-   __TEXT.__objc_methlist: 0x21c
-   __TEXT.__const: 0x10dd4
-   __TEXT.__cstring: 0x313d
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x11fdfc` | `0x11fe5c` | **`+0x60`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s19iCloudMailAssistant19MARepositoryDefaultC02isB23CleanupFeatureAvailableSbvpZfiSbyXEfU_ : 2472 -> 2480
 ~ _$s19iCloudMailAssistant14AccountBagKeysV0bC0V9getDomain05appleD0SSSo9ACAccountC_tFZTf4nd_n : 716 -> 720

@@ -2,96 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/TranslationDaemon.framework/TranslationDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1abfac` | `0x1ac85c` | **`+0x8b0`** |
+| `__TEXT.__oslogstring` | `0xdbb0` | `0xddd0` | **`+0x220`** |
+| `__AUTH_CONST.__objc_const` | `0x2d2c8` | `0x2d410` | **`+0x148`** |
+| `__TEXT.__objc_methlist` | `0x1a568` | `0x1a628` | **`+0xc0`** |
+| `__TEXT.__gcc_except_tab` | `0x1b588` | `0x1b4f8` | **`-0x90`** |
+| `__DATA_DIRTY.__objc_data` | `0x10e0` | `0x1130` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6cb8` | `0x6d00` | **`+0x48`** |
+| `__TEXT.__cstring` | `0x633b` | `0x637b` | **`+0x40`** |
+| `__DATA_DIRTY.__data` | `0x280` | `0x2b8` | **`+0x38`** |
+| `__DATA_CONST.__const` | `0x4648` | `0x4618` | **`-0x30`** |
+| `__AUTH_CONST.__cfstring` | `0x7f20` | `0x7f40` | **`+0x20`** |
+| `__DATA_DIRTY.__bss` | `0x2f0` | `0x310` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0xfb20` | `0xfb40` | **`+0x20`** |
+| `__DATA.__data` | `0xd78` | `0xd60` | **`-0x18`** |
+| `__DATA.__bss` | `0x6d0` | `0x6c0` | **`-0x10`** |
+| `__TEXT.__const` | `0x9a0` | `0x990` | **`-0x10`** |
+| `__DATA.__objc_ivar` | `0x11fc` | `0x1204` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x11d8` | `0x11e0` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1128` | `0x1130` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -393.1.0.0.0
--  __TEXT.__text: 0x19e734
--  __TEXT.__objc_methlist: 0x1a568
--  __TEXT.__const: 0x9a0
--  __TEXT.__gcc_except_tab: 0x1b588
--  __TEXT.__cstring: 0x633b
--  __TEXT.__oslogstring: 0xdbb0
 +396.0.0.0.0
-+  __TEXT.__text: 0x19efb0
-+  __TEXT.__objc_methlist: 0x1a628
-+  __TEXT.__const: 0x990
-+  __TEXT.__gcc_except_tab: 0x1b4f8
-+  __TEXT.__cstring: 0x637b
-+  __TEXT.__oslogstring: 0xddd0
-   __TEXT.__dlopen_cstrs: 0xb2
-   __TEXT.__swift5_typeref: 0x33b
-   __TEXT.__swift5_capture: 0xe0
 
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x10
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0x10e18
-+  __TEXT.__unwind_info: 0x10e30
-   __TEXT.__eh_frame: 0x388
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4648
--  __DATA_CONST.__objc_classlist: 0x11d8
-+  __DATA_CONST.__const: 0x4618
-+  __DATA_CONST.__objc_classlist: 0x11e0
-   __DATA_CONST.__objc_catlist: 0x140
-   __DATA_CONST.__objc_protolist: 0x100
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6cb8
-+  __DATA_CONST.__objc_selrefs: 0x6d00
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x1128
-+  __DATA_CONST.__objc_superrefs: 0x1130
-   __DATA_CONST.__objc_arraydata: 0x3e8
-   __DATA_CONST.__got: 0xf30
-   __AUTH_CONST.__const: 0x10b0
--  __AUTH_CONST.__cfstring: 0x7f20
--  __AUTH_CONST.__objc_const: 0x2d2c8
-+  __AUTH_CONST.__cfstring: 0x7f40
-+  __AUTH_CONST.__objc_const: 0x2d410
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x348
-   __AUTH_CONST.__objc_arrayobj: 0x138
-
-   __AUTH_CONST.__objc_doubleobj: 0x30
-   __AUTH_CONST.__auth_got: 0xd00
-   __AUTH.__objc_data: 0xa210
--  __DATA.__objc_ivar: 0x11fc
--  __DATA.__data: 0xd78
--  __DATA_DIRTY.__objc_data: 0x10e0
--  __DATA_DIRTY.__data: 0x280
--  __DATA_DIRTY.__bss: 0x2f0
-+  __DATA.__objc_ivar: 0x1204
-+  __DATA.__data: 0xd60
-+  __DATA_DIRTY.__objc_data: 0x1130
-+  __DATA_DIRTY.__data: 0x2b8
-+  __DATA_DIRTY.__bss: 0x310
-   __DATA_DIRTY.__common: 0x30
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
 -  - /usr/lib/swift/libswiftNaturalLanguage.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10457
 -  Symbols:   18832
 -  CStrings:  2276
 +  Functions: 10473
 +  Symbols:   18854
 +  CStrings:  2285
- 
 Symbols:
 + +[_LTHotfixManager _selectHotfixAssetFromEntries:minimumFormatVersion:maximumFormatVersion:]
 + +[_LTSpeechTranslationAssetInfo _phrasebookHasContentAtLocalFileURL:]

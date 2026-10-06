@@ -2,82 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/Rapport.framework/Rapport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xddf34` | `0xdffbc` | **`+0x2088`** |
+| `__TEXT.__cstring` | `0x145fc` | `0x14dfc` | **`+0x800`** |
+| `__AUTH_CONST.__objc_const` | `0x113e8` | `0x11670` | **`+0x288`** |
+| `__TEXT.__objc_methlist` | `0x9fe0` | `0xa190` | **`+0x1b0`** |
+| `__DATA.__data` | `0x20e8` | `0x2218` | **`+0x130`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4558` | `0x4600` | **`+0xa8`** |
+| `__DATA_CONST.__const` | `0x2810` | `0x28b0` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x2f00` | `0x2f70` | **`+0x70`** |
+| `__AUTH_CONST.__cfstring` | `0x6100` | `0x6160` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0x1300` | `0x1350` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x14d8` | `0x1518` | **`+0x40`** |
+| `__DATA.__objc_ivar` | `0x10f8` | `0x111c` | **`+0x24`** |
+| `__AUTH_CONST.__auth_got` | `0x1178` | `0x1188` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x150` | `0x160` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0xe0` | `0xf0` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x4e0` | `0x4e8` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x2d0` | `0x2d8` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1f0` | `0x1f8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -751.200.31.0.0
--  __TEXT.__text: 0xd8a60
--  __TEXT.__objc_methlist: 0x9fe0
--  __TEXT.__cstring: 0x145fc
 +751.200.41.0.0
-+  __TEXT.__text: 0xdaa1c
-+  __TEXT.__objc_methlist: 0xa190
-+  __TEXT.__cstring: 0x14dfc
-   __TEXT.__const: 0x41b8
--  __TEXT.__gcc_except_tab: 0x14d8
-+  __TEXT.__gcc_except_tab: 0x1518
-   __TEXT.__oslogstring: 0x26fd
-   __TEXT.__swift5_typeref: 0xc4f
-   __TEXT.__swift5_capture: 0x950
 
-   __TEXT.__swift5_builtin: 0x50
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0x3b50
-+  __TEXT.__unwind_info: 0x3bf0
-   __TEXT.__eh_frame: 0x960
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2810
--  __DATA_CONST.__objc_classlist: 0x2d0
-+  __DATA_CONST.__const: 0x28b0
-+  __DATA_CONST.__objc_classlist: 0x2d8
-   __DATA_CONST.__objc_catlist: 0x20
--  __DATA_CONST.__objc_protolist: 0x150
-+  __DATA_CONST.__objc_protolist: 0x160
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4558
--  __DATA_CONST.__objc_protorefs: 0xe0
--  __DATA_CONST.__objc_superrefs: 0x1f0
-+  __DATA_CONST.__objc_selrefs: 0x4600
-+  __DATA_CONST.__objc_protorefs: 0xf0
-+  __DATA_CONST.__objc_superrefs: 0x1f8
-   __DATA_CONST.__objc_arraydata: 0xb0
--  __DATA_CONST.__got: 0x4e0
-+  __DATA_CONST.__got: 0x4e8
-   __AUTH_CONST.__const: 0x27c0
--  __AUTH_CONST.__cfstring: 0x6100
--  __AUTH_CONST.__objc_const: 0x113e8
-+  __AUTH_CONST.__cfstring: 0x6160
-+  __AUTH_CONST.__objc_const: 0x11670
-   __AUTH_CONST.__objc_intobj: 0x258
-   __AUTH_CONST.__objc_arrayobj: 0x30
-   __AUTH_CONST.__objc_dictobj: 0x78
--  __AUTH_CONST.__auth_got: 0x1178
--  __AUTH.__objc_data: 0x1300
-+  __AUTH_CONST.__auth_got: 0x1188
-+  __AUTH.__objc_data: 0x1350
-   __AUTH.__data: 0x538
--  __DATA.__objc_ivar: 0x10f8
--  __DATA.__data: 0x20e8
-+  __DATA.__objc_ivar: 0x111c
-+  __DATA.__data: 0x2218
-   __DATA.__common: 0x68
-   __DATA_DIRTY.__objc_data: 0x1318
-   __DATA_DIRTY.__data: 0x588
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5785
--  Symbols:   8255
+-  Symbols:   6793
 -  CStrings:  3030
 +  Functions: 5840
-+  Symbols:   8344
++  Symbols:   6867
 +  CStrings:  3081
- 
 Symbols:
 + -[RPAccessPolicyClient .cxx_destruct]
 + -[RPAccessPolicyClient _activateWithPolicy:forService:completion:]
@@ -153,21 +113,6 @@ Symbols:
 + _gLogCategory_RPAccessPolicyClient
 + _nw_endpoint_copy_dictionary
 + _nw_endpoint_create_from_dictionary
-+ _objc_msgSend$_activateWithPolicy:forService:completion:
-+ _objc_msgSend$_updateState:
-+ _objc_msgSend$_xpcActivate:completion:
-+ _objc_msgSend$_xpcInterrupted
-+ _objc_msgSend$_xpcInvalidated
-+ _objc_msgSend$_xpcSetup
-+ _objc_msgSend$accessPolicyClientActivate:serviceName:completion:
-+ _objc_msgSend$endpointContextForService:trustCircles:completion:
-+ _objc_msgSend$initWithArray:
-+ _objc_msgSend$intersectSet:
-+ _objc_msgSend$isEqualToSet:
-+ _objc_msgSend$minusSet:
-+ _objc_msgSend$setDevices:
-+ _objc_msgSend$setXPCType:forSelector:argumentIndex:ofReply:
-+ _objc_msgSend$updateEncodedEndpoint:forService:usingContext:completion:
 CStrings:
 + "-[RPAccessPolicyClient _activateWithPolicy:forService:completion:]"
 + "-[RPAccessPolicyClient _invalidate]"

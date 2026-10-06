@@ -2,58 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/APTransport.framework/APTransport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb6550` | `0xb714c` | **`+0xbfc`** |
+| `__TEXT.__cstring` | `0x3095b` | `0x30ebc` | **`+0x561`** |
+| `__DATA.__data` | `0x14a0` | `0x1430` | **`-0x70`** |
+| `__DATA_DIRTY.__data` | `0xc40` | `0xcb0` | **`+0x70`** |
+| `__AUTH_CONST.__cfstring` | `0x6640` | `0x6660` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x2d30` | `0x2d50` | **`+0x20`** |
+| `__DATA.__bss` | `0x130` | `0x120` | **`-0x10`** |
+| `__DATA_DIRTY.__bss` | `0x2b8` | `0x2c8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -1005.7.1.0.0
--  __TEXT.__text: 0xb3740
 +1005.8.1.0.0
-+  __TEXT.__text: 0xb4350
-   __TEXT.__objc_methlist: 0x1d2c
-   __TEXT.__const: 0x674
-   __TEXT.__gcc_except_tab: 0xa10
--  __TEXT.__cstring: 0x3095b
-+  __TEXT.__cstring: 0x30ebc
-   __TEXT.__dlopen_cstrs: 0x1f3
-   __TEXT.__oslogstring: 0x31c
--  __TEXT.__unwind_info: 0x4560
-+  __TEXT.__unwind_info: 0x4578
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_arraydata: 0x30
-   __DATA_CONST.__got: 0x400
-   __AUTH_CONST.__const: 0x2d78
--  __AUTH_CONST.__cfstring: 0x6640
-+  __AUTH_CONST.__cfstring: 0x6660
-   __AUTH_CONST.__objc_const: 0x24f8
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__objc_intobj: 0x78
-
-   __AUTH.__objc_data: 0x140
-   __AUTH.__data: 0x2c0
-   __DATA.__objc_ivar: 0x18c
--  __DATA.__data: 0x14a0
-+  __DATA.__data: 0x1430
-   __DATA_DIRTY.__objc_data: 0x2d0
--  __DATA_DIRTY.__data: 0xc40
--  __DATA_DIRTY.__bss: 0x2b8
-+  __DATA_DIRTY.__data: 0xcb0
-+  __DATA_DIRTY.__bss: 0x2c8
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-
-   - /System/Library/PrivateFrameworks/WiFiPeerToPeer.framework/WiFiPeerToPeer
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
--  Functions: 5345
--  Symbols:   5034
+-  Functions: 5349
+-  Symbols:   4412
 -  CStrings:  4565
-+  Functions: 5361
-+  Symbols:   5044
++  Functions: 5364
++  Symbols:   4422
 +  CStrings:  4587
- 
 Symbols:
 + GCC_except_table36
 + GCC_except_table45

@@ -2,103 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/CampoUIInternal.framework/CampoUIInternal`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4a84d0` | `0x4aabfc` | **`+0x272c`** |
+| `__TEXT.__oslogstring` | `0x1243e` | `0x125be` | **`+0x180`** |
+| `__TEXT.__eh_frame` | `0x21730` | `0x21890` | **`+0x160`** |
+| `__TEXT.__const` | `0x28380` | `0x284d0` | **`+0x150`** |
+| `__AUTH_CONST.__const` | `0x1e420` | `0x1e510` | **`+0xf0`** |
+| `__AUTH.__objc_data` | `0x1770` | `0x1820` | **`+0xb0`** |
+| `__AUTH_CONST.__objc_const` | `0x120d0` | `0x12178` | **`+0xa8`** |
+| `__DATA.__data` | `0x96f8` | `0x97a0` | **`+0xa8`** |
+| `__TEXT.__swift5_typeref` | `0x34e7e` | `0x34f06` | **`+0x88`** |
+| `__TEXT.__unwind_info` | `0x12f38` | `0x12fb0` | **`+0x78`** |
+| `__TEXT.__swift5_capture` | `0x86b0` | `0x8718` | **`+0x68`** |
+| `__TEXT.__objc_methlist` | `0x79a8` | `0x79e0` | **`+0x38`** |
+| `__TEXT.__constg_swiftt` | `0xb8d4` | `0xb908` | **`+0x34`** |
+| `__TEXT.__swift5_reflstr` | `0xb8ff` | `0xb92f` | **`+0x30`** |
+| `__AUTH.__data` | `0x4d70` | `0x4d98` | **`+0x28`** |
+| `__TEXT.__swift5_fieldmd` | `0xa798` | `0xa7c0` | **`+0x28`** |
+| `__DATA_DIRTY.__data` | `0xfb78` | `0xfb98` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5328` | `0x5340` | **`+0x18`** |
+| `__DATA_CONST.__objc_protolist` | `0x360` | `0x370` | **`+0x10`** |
+| `__TEXT.__swift_as_ret` | `0xbc4` | `0xbd4` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x13dc` | `0x13e8` | **`+0xc`** |
+| `__TEXT.__swift_as_entry` | `0xb58` | `0xb64` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x61c0` | `0x61c8` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x3b10` | `0x3b18` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x678` | `0x680` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x158` | `0x160` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0xb74` | `0xb78` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -73.0.24.102.0
--  __TEXT.__text: 0x4a84d0
 +73.0.24.108.0
-+  __TEXT.__text: 0x4aabfc
-   __TEXT.__delay_helper: 0x14c
--  __TEXT.__objc_methlist: 0x79a8
--  __TEXT.__const: 0x28380
-+  __TEXT.__objc_methlist: 0x79e0
-+  __TEXT.__const: 0x284d0
-   __TEXT.__dlopen_cstrs: 0x13d
--  __TEXT.__constg_swiftt: 0xb8d4
--  __TEXT.__swift5_typeref: 0x34e7e
-+  __TEXT.__constg_swiftt: 0xb908
-+  __TEXT.__swift5_typeref: 0x34f06
-   __TEXT.__swift5_builtin: 0x348
--  __TEXT.__swift5_reflstr: 0xb8ff
--  __TEXT.__swift5_fieldmd: 0xa798
-+  __TEXT.__swift5_reflstr: 0xb92f
-+  __TEXT.__swift5_fieldmd: 0xa7c0
-   __TEXT.__swift5_assocty: 0x1e70
-   __TEXT.__swift5_proto: 0x10b0
--  __TEXT.__swift5_types: 0xb74
--  __TEXT.__swift5_capture: 0x86b0
-+  __TEXT.__swift5_types: 0xb78
-+  __TEXT.__swift5_capture: 0x8718
-   __TEXT.__cstring: 0x1166e
--  __TEXT.__swift_as_entry: 0xb58
--  __TEXT.__swift_as_ret: 0xbc4
--  __TEXT.__swift_as_cont: 0x13dc
-+  __TEXT.__swift_as_entry: 0xb64
-+  __TEXT.__swift_as_ret: 0xbd4
-+  __TEXT.__swift_as_cont: 0x13e8
-   __TEXT.__swift5_protos: 0xfc
--  __TEXT.__oslogstring: 0x1243e
-+  __TEXT.__oslogstring: 0x125be
-   __TEXT.__swift5_mpenum: 0xb8
-   __TEXT.__gcc_except_tab: 0xe80
--  __TEXT.__unwind_info: 0x12f38
--  __TEXT.__eh_frame: 0x21730
-+  __TEXT.__unwind_info: 0x12fb0
-+  __TEXT.__eh_frame: 0x21890
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x15f0
--  __DATA_CONST.__objc_classlist: 0x678
-+  __DATA_CONST.__objc_classlist: 0x680
-   __DATA_CONST.__objc_catlist: 0xa0
--  __DATA_CONST.__objc_protolist: 0x360
-+  __DATA_CONST.__objc_protolist: 0x370
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5328
--  __DATA_CONST.__objc_protorefs: 0x158
-+  __DATA_CONST.__objc_selrefs: 0x5340
-+  __DATA_CONST.__objc_protorefs: 0x160
-   __DATA_CONST.__objc_superrefs: 0x90
--  __DATA_CONST.__got: 0x3b10
--  __AUTH_CONST.__const: 0x1e420
-+  __DATA_CONST.__got: 0x3b18
-+  __AUTH_CONST.__const: 0x1e510
-   __AUTH_CONST.__cfstring: 0x17c0
--  __AUTH_CONST.__objc_const: 0x120d0
-+  __AUTH_CONST.__objc_const: 0x12178
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__objc_intobj: 0x18
--  __AUTH_CONST.__auth_got: 0x61c0
--  __AUTH.__objc_data: 0x1770
--  __AUTH.__data: 0x4d70
-+  __AUTH_CONST.__auth_got: 0x61c8
-+  __AUTH.__objc_data: 0x1820
-+  __AUTH.__data: 0x4d98
-   __DATA.__objc_ivar: 0x360
--  __DATA.__data: 0x96f8
-+  __DATA.__data: 0x97a0
-   __DATA.__bss: 0x182c0
-   __DATA.__common: 0x328
-   __DATA_DIRTY.__objc_data: 0x2960
--  __DATA_DIRTY.__data: 0xfb78
-+  __DATA_DIRTY.__data: 0xfb98
-   __DATA_DIRTY.__common: 0x450
-   __DATA_DIRTY.__bss: 0x8070
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 27421
--  Symbols:   12037
+-  Symbols:   9976
 -  CStrings:  2706
 +  Functions: 27462
-+  Symbols:   12054
++  Symbols:   9991
 +  CStrings:  2710
- 
 Symbols:
 + _OBJC_METACLASS_$__TtCC15CampoUIInternal18SystemPhotoLibraryP33_3CFEFBFBF4490C50123E665E5D5DD47A20AvailabilityObserver
 + __DATA__TtCC15CampoUIInternal18SystemPhotoLibraryP33_3CFEFBFBF4490C50123E665E5D5DD47A20AvailabilityObserver
@@ -113,8 +61,6 @@ Symbols:
 + ___swift_closure_destructor.4Tm
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA4ViewPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAeAEAfgH_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAeAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA01_e9Modifier_D0Vy15CampoUIInternal012PhotosPickereO0VG_Qo__SbQo__AA10ScenePhaseOQo_AA08_OverlayO0VyACyAE01_rb1_aB0E06photosS011isPresented9selection17maxSelectionCount0Z8Behavior8matching21preferredItemEncoding12photoLibraryQrAA7BindingVySbG_A10_ySayA0_0rS4ItemVGGSiSgA0_0rS17SelectionBehaviorV0rB014PHPickerFilterVSgA13_28EncodingDisambiguationPolicyVSo14PHPhotoLibraryCtFQOyACyAA5ColorVAA12_FrameLayoutVG_Qo_AA023AccessibilityAttachmentO0VGSgGGAaDHPqd0__AaDHD3_AYHO_A37_AA0eO0HPyHCHC
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE5sheet4item0D7Dismiss7contentQrAA7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lFQOyAcAE5alert_11isPresented7actions7messageQrAA4TextV_ALySbGqd__yXEqd_0_yXEtAaBRd__AaBRd_0_r0_lFQOyAcAEAQ_ArsTQrAV_AWqd__yXEqd_0_yXEtAaBRd__AaBRd_0_r0_lFQOyAA5GroupVyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVyA_yAYyAA012_ConditionalV0VyA_yA_yA_yA_y15CampoUIInternal010ChatDetailC0VA2_19QuotaBannerModifier33_54B1A395B8F71469DF11B83A50714C53LLVGA2_021IgnoreNavigationSplitC16SafeAreaModifier33_B1BF1C92D7C3942E3990A9DFD8F79D37LLVGAA30_EnvironmentKeyWritingModifierVyALyShyA2_0Z2IDVGGGGA14_ySbGGAcAE15fullScreenCoverAriJQrAW_AOqd__yctAaBRd__lFQOyA_yA_yA_yAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___SbyyctSQRd__lFQOyAcAEAdeF_Qrqd___SbyyctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE0D20ContinueUserActivity_7performQrSS_ySo14NSUserActivityCctFQOyAcAEA24__A25_QrSS_yA27_ctFQOyAcAE11environmentyQrAMRld__C11Observation10ObservableRd__lFQOyAcAE015navigationSplitC23ColumnVisibilityGestureyQrAA015NavigationSplitC31ColumnVisibilityGestureBehaviorVFQOyAA015NavigationSplitC0VyA_yA_yAcAE13searchFocusedyQrAA10FocusStateVAKVySb_GFQOyAcAE10searchable4textAR9placement6promptQrALySSG_AwA20SearchFieldPlacementVAVSgtFQOyAcAE22scrollEdgeEffectHidden_3forQrSb_AA4EdgeO3SetVtFQOyAcAE17toolbarVisibility_A50_QrAA10VisibilityO_AA16ToolbarPlacementVdtFQOyAcAE7toolbarAJQrqd__yXE_tAA07ToolbarV0Rd__lFQOyAYyA2_013SidebarColumnvC0VG_AA07ToolbarV7BuilderV10buildBlockyQrxAAA61_RzlFZQOy_A1_yA66_A67_yQrxAAA61_RzlFZQOy_A2_16CompactBottomBarVQo_A66_A67_yQrxAAA61_RzlFZQOy_AAA61_PAAE18visibilityPriorityyQrAA29ToolbarItemVisibilityPriorityVFQOyA71_AAE26sharedBackgroundVisibilityyQrA57_FQOyAA11ToolbarItemVyytA2_18TabSelectionPickerVG_Qo__Qo_Qo_GSgQo_Qo__Qo__Qo__Qo__Qo_AA23_GeometryActionModifierVy12CoreGraphics7CGFloatVGGA21_GAA05EmptyC0VAcAE21searchToolbarBehavioryQrAA21SearchToolbarBehaviorVFQOyAcAEA41_A42_ARA43_A44_QrA45__AWA47_A48_tFQOyAcAE19containerBackgroundA50_9alignmentAJQrAA28ContainerBackgroundPlacementV_AA9AlignmentVqd__yXEtAaBRd__lFQOyA1_yAcAE20navigationTransitionyQrqd__AA20NavigationTransitionRd__lFQOyA22__AA24ZoomNavigationTransitionVQo_A22_G_AA5ColorVQo__Qo__Qo_G_Qo__A2_12SidebarStateCQo__Qo__Qo__SbQo__A2_12TabSelectionC3TabOQo__SiSgQo__15AssistantUICore0X9SceneModeOQo__AA015NavigationSplitC6ColumnVQo__A16_SgQo_AA25_AppearanceActionModifierVGAA20_LayoutScaleModifierVGAA12_FrameLayoutVG_AcAEA111_yQrqd__AAA112_Rd__lFQOyAA15NavigationStackVyAA14NavigationPathVAcAEA60_AJQrqd__yXE_tAAA61_Rd__lFQOyA22__A77_yytA_yAA6ButtonVyAcAE10fontWeightyQrAA4FontV6WeightVSgFQOyAcAE10labelStyleyQrqd__AA10LabelStyleRd__lFQOyAA5LabelVyAvA5ImageVG_AA18IconOnlyLabelStyleVQo__Qo_GAA31AccessibilityAttachmentModifierVGGQo_G_A114_Qo_Qo_GGA147_GA147_G_SbQo_G_AA05TupleV0VyA_yAcAE16keyboardShortcutyQrAA16KeyboardShortcutVFQOyA160_yAVG_Qo_A180_G_A_yA160_yAA18DefaultButtonLabelVGA180_GQPGA_yAVA180_GQo__A203_A48_Qo__9SiriSetup14SiriSetupStageV11CoordinatorCA211_Qo__SbQo_HO
-+ _objc_msgSend$registerAvailabilityObserver:
-+ _objc_msgSend$unavailabilityReason
 + _symbolic _____ 15CampoUIInternal18SystemPhotoLibraryC20AvailabilityObserver33_3CFEFBFBF4490C50123E665E5D5DD47ALLC
 + _symbolic _____yAAyAAy_____y_____y_____y_____y_____y_____y_____y_____y_____y_____y_____yAAyAAy_____y_____y_____y_____y_____y_____y_____G______y______y_____y______Qo______y______y_____y_____yyt_____G_Qo__Qo_Qo_GSgQo_Qo__Qo__Qo__Qo__Qo______y_____GG_____ySbGG__________y_____y_____yAFy_____yAAyAAyAAyAAy__________G_____GA_y_____yShy_____GGGGA0_G______Qo_A14_G______Qo__Qo__Qo_G_Qo_______Qo__Qo__Qo__SbQo_______Qo__SiSgQo_______Qo_______Qo__A9_SgQo______G_____G_____G 7SwiftUI15ModifiedContentV AA4ViewPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQO AeAEAfgH_Qrqd___SbyyctSQRd__lFQO AeAEAfgH_Qrqd___SbyyctSQRd__lFQO AeAEAfgH_Qrqd___Sbyqd___qd__tctSQRd__lFQO AeAEAfgH_Qrqd___Sbyqd___qd__tctSQRd__lFQO AeAEAfgH_Qrqd___Sbyqd___qd__tctSQRd__lFQO AeAE0F20ContinueUserActivity_7performQrSS_ySo06NSUserL0CctFQO AeAEAI_AJQrSS_yALctFQO AeAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQO AeAE015navigationSplitE23ColumnVisibilityGestureyQrAA010NavigationsetuV8BehaviorVFQO AA0wsE0V AeAE13searchFocusedyQrAA10FocusStateV7BindingVySb_GFQO AeAE10searchable4text11isPresented9placement6promptQrAaYVySSG_A5_ySbGAA20SearchFieldPlacementVAA4TextVSgtFQO AeAE22scrollEdgeEffectHidden_3forQrSb_AA4EdgeO3SetVtFQO AeAE07toolbarU0_A14_QrAA0U0O_AA16ToolbarPlacementVdtFQO AeAE7toolbar7contentQrqd__yXE_tAA07ToolbarD0Rd__lFQO AA5GroupV 15CampoUIInternal07SidebartdE0V AA07ToolbarD7BuilderV10buildBlockyQrxAAA26_RzlFZQO AA012_ConditionalD0V A33_A34_yQrxAAA26_RzlFZQO A29_16CompactBottomBarV A33_A34_yQrxAAA26_RzlFZQO AAA26_PAAE18visibilityPriorityyQrAA011ToolbarItemU8PriorityVFQO A39_AAE016sharedBackgroundU0yQrA21_FQO AA11ToolbarItemV A29_18TabSelectionPickerV AA23_GeometryActionModifierV 12CoreGraphics7CGFloatV AA30_EnvironmentKeyWritingModifierV AA05EmptyE0V AeAE0y7ToolbarX0yQrAA013SearchToolbarX0VFQO AeAEA0_A1_A2_A3_A4_QrA6__A7_A9_A12_tFQO AeAE19containerBackgroundA14_9alignmentA25_QrAA28ContainerBackgroundPlacementV_AA9AlignmentVqd__yXEtAaDRd__lFQO AeAE0R10TransitionyQrqd__AA0W10TransitionRd__lFQO A29_010ChatDetailE0V A29_19QuotaBannerModifier33_54B1A395B8F71469DF11B83A50714C53LLV A29_06IgnorewsE16SafeAreaModifier33_B1BF1C92D7C3942E3990A9DFD8F79D37LLV A5_ A29_6ChatIDV AA04ZoomW10TransitionV AA5ColorV A29_12SidebarStateC A29_12TabSelectionC3TabO 15AssistantUICore14CampoSceneModeO AA0wseT0V AA25_AppearanceActionModifierV AA20_LayoutScaleModifierV AA12_FrameLayoutV
 + _symbolic _____yAAy_____y_____yAAyAAyAAyAAy__________G_____G_____y_____yShy_____GGGGAIySbGG_____yAAyAAyAAy_____y_____y_____y_____y_____y_____y_____y_____y_____y_____y_____yAAyAAy_____y_____y_____y_____y_____yABy_____G______y_ACy_____y______Qo______y______y_____y_____yyt_____G_Qo__Qo_Qo_GSgQo_Qo__Qo__Qo__Qo__Qo______y_____GGAPG__________y_____y_____yACy_____yAQ______Qo_AQG______Qo__Qo__Qo_G_Qo_______Qo__Qo__Qo__SbQo_______Qo__SiSgQo_______Qo_______Qo__AKSgQo______G_____G_____G______y_____y__________yAQ_AWyytAAy_____y_____y_____y_____y__________G______Qo__Qo_G_____GGQo_G_A15_Qo_Qo_GGA39_GA39_G 7SwiftUI15ModifiedContentV AA5GroupV AA012_ConditionalD0V 15CampoUIInternal14ChatDetailViewV AH19QuotaBannerModifier33_54B1A395B8F71469DF11B83A50714C53LLV AH021IgnoreNavigationSplitk8SafeAreaN001_O30BF1C92D7C3942E3990A9DFD8F79D37LLV AA022_EnvironmentKeyWritingN0V AA7BindingV AH0I2IDV AA0K0PAAE15fullScreenCover11isPresented9onDismiss7contentQrATySbG_yycSgqd__yctAaWRd__lFQO AxAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQO AxAEA3_A4_A5__Qrqd___SbyyctSQRd__lFQO AxAEA3_A4_A5__Qrqd___SbyyctSQRd__lFQO AxAEA3_A4_A5__Qrqd___Sbyqd___qd__tctSQRd__lFQO AxAEA3_A4_A5__Qrqd___Sbyqd___qd__tctSQRd__lFQO AxAEA3_A4_A5__Qrqd___Sbyqd___qd__tctSQRd__lFQO AxAE22onContinueUserActivity_7performQrSS_ySo14NSUserActivityCctFQO AxAEA6__A7_QrSS_yA9_ctFQO AxAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQO AxAE010navigationyK23ColumnVisibilityGestureyQrAA0xyK31ColumnVisibilityGestureBehaviorVFQO AA0xyK0V AxAE13searchFocusedyQrAA10FocusStateVASVySb_GFQO AxAE10searchable4textAZ9placement6promptQrATySSG_A1_AA20SearchFieldPlacementVAA4TextVSgtFQO AxAE22scrollEdgeEffectHidden_3forQrSb_AA4EdgeO3SetVtFQO AxAE17toolbarVisibility_A35_QrAA10VisibilityO_AA16ToolbarPlacementVdtFQO AxAE7toolbarA0_Qrqd__yXE_tAA07ToolbarD0Rd__lFQO AH013SidebarColumndK0V AA07ToolbarD7BuilderV10buildBlockyQrxAAA46_RzlFZQO A50_A51_yQrxAAA46_RzlFZQO AH16CompactBottomBarV A50_A51_yQrxAAA46_RzlFZQO AAA46_PAAE18visibilityPriorityyQrAA29ToolbarItemVisibilityPriorityVFQO A54_AAE26sharedBackgroundVisibilityyQrA42_FQO AA11ToolbarItemV AH18TabSelectionPickerV AA015_GeometryActionN0V 12CoreGraphics7CGFloatV AA05EmptyK0V AxAE21searchToolbarBehavioryQrAA21SearchToolbarBehaviorVFQO AxAEA24_A25_AZA26_A27_QrA28__A1_A30_A33_tFQO AxAE19containerBackgroundA35_9alignmentA0_QrAA28ContainerBackgroundPlacementV_AA9AlignmentVqd__yXEtAaWRd__lFQO AxAE20navigationTransitionyQrqd__AA0X10TransitionRd__lFQO AA04ZoomX10TransitionV AA5ColorV AH12SidebarStateC AH12TabSelectionC3TabO 15AssistantUICore0G9SceneModeO AA0xyK6ColumnV AA017_AppearanceActionN0V AA012_LayoutScaleN0V AA12_FrameLayoutV AxAEA79_yQrqd__AAA80_Rd__lFQO AA0X5StackV AA0X4PathV AxAEA45_A0_Qrqd__yXE_tAAA46_Rd__lFQO AA6ButtonV AxAE10fontWeightyQrAA4FontV6WeightVSgFQO AxAE10labelStyleyQrqd__AA10LabelStyleRd__lFQO AA5LabelV A32_ AA5ImageV AA18IconOnlyLabelStyleV AA023AccessibilityAttachmentN0V

@@ -2,48 +2,37 @@
 
 > `/usr/libexec/xpcproxy`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x989c` | `0x9948` | **`+0xac`** |
+| `__TEXT.__oslogstring` | `0x1696` | `0x1712` | **`+0x7c`** |
+| `__TEXT.__auth_stubs` | `0xb00` | `0xb10` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x580` | `0x588` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__os_assumes_log`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
 - `__TEXT.__const`
 - `__TEXT.__cstring`
 - `__TEXT.__dof_launchd`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__got`
-- `__DATA.__os_assumes_log`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -3298.0.10.0.0
--  __TEXT.__text: 0x989c
--  __TEXT.__auth_stubs: 0xb00
 +3298.0.21.0.0
-+  __TEXT.__text: 0x9948
-+  __TEXT.__auth_stubs: 0xb10
-   __TEXT.__lazy_helpers: 0x150
-   __TEXT.__const: 0x190
-   __TEXT.__xpcproxy: 0x1
--  __TEXT.__oslogstring: 0x1696
-+  __TEXT.__oslogstring: 0x1712
-   __TEXT.__cstring: 0x19d2
-   __TEXT.__dof_launchd: 0x2e5
-   __TEXT.__unwind_info: 0x178
-   __DATA_CONST.__const: 0x248
--  __DATA_CONST.__auth_got: 0x580
-+  __DATA_CONST.__auth_got: 0x588
-   __DATA_CONST.__got: 0x88
-   __DATA.__lazy_load_got: 0x20
-   __DATA.__os_assumes_log: 0x8
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 92
 -  Symbols:   199
 -  CStrings:  297
 +  Symbols:   200
 +  CStrings:  298
- 
 Symbols:
 + _posix_spawnattr_set_shared_region_config_np
 Functions:

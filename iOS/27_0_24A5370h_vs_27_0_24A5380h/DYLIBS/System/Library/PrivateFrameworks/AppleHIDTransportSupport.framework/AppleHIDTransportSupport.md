@@ -2,26 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/AppleHIDTransportSupport.framework/AppleHIDTransportSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x98` | `0x88` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__text: 0x6420
-   __TEXT.__objc_methlist: 0x72c
--  __TEXT.__const: 0x98
-+  __TEXT.__const: 0x88
-   __TEXT.__cstring: 0x4da
-   __TEXT.__gcc_except_tab: 0x1e0
-   __TEXT.__oslogstring: 0x1bc
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-
+-10100.38.1.0.0
++10100.39.0.0.0
 ```

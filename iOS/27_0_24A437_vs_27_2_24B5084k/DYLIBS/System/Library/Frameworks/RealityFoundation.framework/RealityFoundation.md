@@ -2,67 +2,32 @@
 
 > `/System/Library/Frameworks/RealityFoundation.framework/RealityFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5e7d30` | `0x5e9014` | **`+0x12e4`** |
+| `__DATA_CONST.__got` | `0x19c8` | `0x1a40` | **`+0x78`** |
+| `__AUTH_CONST.__auth_got` | `0x9b18` | `0x9b48` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x14596` | `0x145b6` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x12e4c` | `0x12e6c` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x17b38` | `0x17b50` | **`+0x18`** |
+| `__DATA.__data` | `0x11378` | `0x11388` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0x15e18` | `0x15e28` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x1ba50` | `0x1ba5c` | **`+0xc`** |
+| `__AUTH_CONST.__const` | `0x9f718` | `0x9f720` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -453.2.1.0.0
--  __TEXT.__text: 0x5c595c
 +453.40.4.0.0
-+  __TEXT.__text: 0x5c6bf4
-   __TEXT.__objc_methlist: 0x1a34
-   __TEXT.__const: 0x6b594
-   __TEXT.__constg_swiftt: 0x1d0f8
--  __TEXT.__swift5_typeref: 0x15e18
-+  __TEXT.__swift5_typeref: 0x15e28
-   __TEXT.__swift5_builtin: 0x15e0
--  __TEXT.__swift5_reflstr: 0x12e4c
--  __TEXT.__swift5_fieldmd: 0x1ba50
-+  __TEXT.__swift5_reflstr: 0x12e6c
-+  __TEXT.__swift5_fieldmd: 0x1ba5c
-   __TEXT.__swift5_assocty: 0x3e60
-   __TEXT.__swift5_proto: 0x43f4
-   __TEXT.__swift5_types: 0x23d0
-   __TEXT.__swift5_capture: 0x978c
--  __TEXT.__cstring: 0x14596
-+  __TEXT.__cstring: 0x145b6
-   __TEXT.__oslogstring: 0x57a8
-   __TEXT.__swift5_mpenum: 0x3fc
-   __TEXT.__swift5_protos: 0x25c
 
-   __TEXT.__swift_as_ret: 0x410
-   __TEXT.__swift_as_cont: 0xc74
-   __TEXT.__swift5_types2: 0x10
--  __TEXT.__unwind_info: 0x1e2a8
-+  __TEXT.__unwind_info: 0x1e2b8
-   __TEXT.__eh_frame: 0x19858
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x1490
-   __DATA_CONST.__objc_protorefs: 0x80
--  __DATA_CONST.__got: 0x19c8
--  __AUTH_CONST.__const: 0x9f718
-+  __DATA_CONST.__got: 0x1a40
-+  __AUTH_CONST.__const: 0x9f720
-   __AUTH_CONST.__objc_const: 0x13360
--  __AUTH_CONST.__auth_got: 0x9b18
-+  __AUTH_CONST.__auth_got: 0x9b48
-   __AUTH.__objc_data: 0x5e8
-   __AUTH.__data: 0x1a0e0
--  __DATA.__data: 0x11378
-+  __DATA.__data: 0x11388
-   __DATA.__common: 0x348
-   __DATA_DIRTY.__objc_data: 0x80
-   __DATA_DIRTY.__data: 0x468
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 43934
--  Symbols:   107440
+-  Symbols:   107178
 -  CStrings:  2284
-+  Symbols:   107466
++  Symbols:   107204
 +  CStrings:  2285
- 
 Symbols:
 + _$s11ShaderGraph12SGREMaterialC32hasClearcoatAnisotropicRoughnessSbvg
 + _$s11ShaderGraph23SGMaterialConfigurationC29disableLegacyAPICompatibilitySbvsTj

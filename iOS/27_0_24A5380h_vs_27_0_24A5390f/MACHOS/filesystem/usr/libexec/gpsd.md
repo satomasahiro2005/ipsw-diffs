@@ -2,99 +2,60 @@
 
 > `/usr/libexec/gpsd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_protos`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x16ef08` | `0x1755a8` | **`+0x66a0`** |
+| `__TEXT.__oslogstring` | `0x10c19` | `0x11d36` | **`+0x111d`** |
+| `__DATA.__common` | `0x9e2a0` | `0x9dcc0` | **`-0x5e0`** |
+| `__TEXT.__gcc_except_tab` | `0x8ae8` | `0x8e68` | **`+0x380`** |
+| `__TEXT.__unwind_info` | `0x8250` | `0x8448` | **`+0x1f8`** |
+| `__TEXT.__const` | `0xecc0` | `0xeeb0` | **`+0x1f0`** |
+| `__TEXT.__cstring` | `0xa652` | `0xa7fa` | **`+0x1a8`** |
+| `__DATA_CONST.__const` | `0x10028` | `0x10190` | **`+0x168`** |
+| `__TEXT.__objc_stubs` | `0x880` | `0x860` | **`-0x20`** |
+| `__DATA.__bss` | `0x3d0` | `0x3b8` | **`-0x18`** |
+| `__TEXT.__swift5_typeref` | `0x2db` | `0x2f1` | **`+0x16`** |
+| `__TEXT.__objc_methname` | `0x832` | `0x822` | **`-0x10`** |
+| `__DATA.__objc_selrefs` | `0x2d8` | `0x2d0` | **`-0x8`** |
+| `__DATA_CONST.__auth_ptr` | `0xe8` | `0xe0` | **`-0x8`** |
+| `__TEXT.__eh_frame` | `0xbd0` | `0xbd8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_data`
-- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__init_offsets`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_types`
+
+### Other Changes
 
 ```diff
 
 -365.0.6.0.0
--  __TEXT.__text: 0x16ef08
 +365.0.9.0.0
-+  __TEXT.__text: 0x1755a8
-   __TEXT.__auth_stubs: 0x20b0
--  __TEXT.__objc_stubs: 0x880
-+  __TEXT.__objc_stubs: 0x860
-   __TEXT.__init_offsets: 0x30
-   __TEXT.__objc_methlist: 0x1b4
--  __TEXT.__gcc_except_tab: 0x8ae8
--  __TEXT.__const: 0xecc0
-+  __TEXT.__gcc_except_tab: 0x8e68
-+  __TEXT.__const: 0xeeb0
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__constg_swiftt: 0x6a4
--  __TEXT.__swift5_typeref: 0x2db
-+  __TEXT.__swift5_typeref: 0x2f1
-   __TEXT.__swift5_reflstr: 0x11c
-   __TEXT.__swift5_fieldmd: 0x29c
-   __TEXT.__swift5_builtin: 0x28
--  __TEXT.__oslogstring: 0x10c19
-+  __TEXT.__oslogstring: 0x11d36
-   __TEXT.__swift5_types: 0x54
-   __TEXT.__objc_classname: 0x28b
--  __TEXT.__objc_methname: 0x832
-+  __TEXT.__objc_methname: 0x822
-   __TEXT.__swift5_capture: 0x188
--  __TEXT.__cstring: 0xa652
-+  __TEXT.__cstring: 0xa7fa
-   __TEXT.__swift5_proto: 0x10
-   __TEXT.__swift5_protos: 0xc
-   __TEXT.__objc_methtype: 0x16c
--  __TEXT.__unwind_info: 0x8250
--  __TEXT.__eh_frame: 0xbd0
--  __DATA_CONST.__const: 0x10028
-+  __TEXT.__unwind_info: 0x8448
-+  __TEXT.__eh_frame: 0xbd8
-+  __DATA_CONST.__const: 0x10190
-   __DATA_CONST.__cfstring: 0x1240
-   __DATA_CONST.__objc_classlist: 0x80
-   __DATA_CONST.__objc_protolist: 0x28
 
-   __DATA_CONST.__objc_doubleobj: 0x20
-   __DATA_CONST.__auth_got: 0x1070
-   __DATA_CONST.__got: 0x348
--  __DATA_CONST.__auth_ptr: 0xe8
-+  __DATA_CONST.__auth_ptr: 0xe0
-   __DATA.__objc_const: 0xd28
--  __DATA.__objc_selrefs: 0x2d8
-+  __DATA.__objc_selrefs: 0x2d0
-   __DATA.__objc_data: 0x1f0
-   __DATA.__data: 0xc50
--  __DATA.__common: 0x9e2a0
--  __DATA.__bss: 0x3d0
-+  __DATA.__common: 0x9dcc0
-+  __DATA.__bss: 0x3b8
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreTelephony.framework/CoreTelephony
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 9993
 -  Symbols:   15383
 -  CStrings:  2480
 +  Functions: 10097
 +  Symbols:   15516
 +  CStrings:  2551
- 
 Symbols:
 + $s6GPSRPC19GnssCallbackHandlerC9_onNotifyys6UInt32VcSgvM.resume
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/CoreGPS/install/Symbols/BuiltProducts/libGPSDaemon.a(GpsdClientManager-b9d5fe69641b8127b0b6b845f93599ed.o)

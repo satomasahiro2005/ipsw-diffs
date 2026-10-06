@@ -2,21 +2,24 @@
 
 > `/System/Library/PrivateFrameworks/DockKitCore.framework/PlugIns/DockKitExtension.appex/DockKitExtension`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x65d8
-+  __TEXT.__text: 0x65d4
-   __TEXT.__auth_stubs: 0x910
-   __TEXT.__objc_stubs: 0x100
-   __TEXT.__objc_methlist: 0x38
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x65d8` | `0x65d4` | **`-0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_100006804 : 1344 -> 1340
-
 ```

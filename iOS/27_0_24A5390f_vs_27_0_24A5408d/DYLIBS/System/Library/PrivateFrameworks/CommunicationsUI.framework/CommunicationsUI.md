@@ -2,102 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/CommunicationsUI.framework/CommunicationsUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x31a214` | `0x3192d8` | **`-0xf3c`** |
+| `__TEXT.__swift5_typeref` | `0x312ce` | `0x30aa2` | **`-0x82c`** |
+| `__AUTH_CONST.__const` | `0x15320` | `0x15570` | **`+0x250`** |
+| `__TEXT.__const` | `0x23084` | `0x231c4` | **`+0x140`** |
+| `__TEXT.__constg_swiftt` | `0xc320` | `0xc410` | **`+0xf0`** |
+| `__TEXT.__swift5_fieldmd` | `0x93e4` | `0x9484` | **`+0xa0`** |
+| `__TEXT.__oslogstring` | `0x3ee6` | `0x3e56` | **`-0x90`** |
+| `__TEXT.__swift5_reflstr` | `0xac28` | `0xacb8` | **`+0x90`** |
+| `__AUTH.__data` | `0x9790` | `0x9710` | **`-0x80`** |
+| `__TEXT.__eh_frame` | `0x81b4` | `0x8138` | **`-0x7c`** |
+| `__DATA.__data` | `0xd680` | `0xd608` | **`-0x78`** |
+| `__AUTH_CONST.__objc_const` | `0x156c0` | `0x15720` | **`+0x60`** |
+| `__DATA_CONST.__got` | `0x2348` | `0x2390` | **`+0x48`** |
+| `__TEXT.__unwind_info` | `0xa588` | `0xa540` | **`-0x48`** |
+| `__AUTH_CONST.__auth_got` | `0x4080` | `0x40c0` | **`+0x40`** |
+| `__TEXT.__swift5_capture` | `0x4bb8` | `0x4b7c` | **`-0x3c`** |
+| `__AUTH.__objc_data` | `0x6670` | `0x66a8` | **`+0x38`** |
+| `__DATA.__bss` | `0x13c88` | `0x13ca8` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x954` | `0x964` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x1408` | `0x1410` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x27d8` | `0x27d0` | **`-0x8`** |
+| `__DATA_DIRTY.__data` | `0x578` | `0x580` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -147.100.5.2.1
--  __TEXT.__text: 0x31a214
 +153.100.1.2.7
-+  __TEXT.__text: 0x3192d8
-   __TEXT.__objc_methlist: 0x2fc0
--  __TEXT.__const: 0x23084
--  __TEXT.__swift5_typeref: 0x312ce
--  __TEXT.__constg_swiftt: 0xc320
-+  __TEXT.__const: 0x231c4
-+  __TEXT.__swift5_typeref: 0x30aa2
-+  __TEXT.__constg_swiftt: 0xc410
-   __TEXT.__swift5_builtin: 0x3d4
--  __TEXT.__swift5_reflstr: 0xac28
--  __TEXT.__swift5_fieldmd: 0x93e4
-+  __TEXT.__swift5_reflstr: 0xacb8
-+  __TEXT.__swift5_fieldmd: 0x9484
-   __TEXT.__swift5_assocty: 0x1d20
-   __TEXT.__swift5_proto: 0x9dc
--  __TEXT.__swift5_types: 0x954
--  __TEXT.__oslogstring: 0x3ee6
-+  __TEXT.__swift5_types: 0x964
-+  __TEXT.__swift5_capture: 0x4b7c
-   __TEXT.__cstring: 0x481e
--  __TEXT.__swift5_capture: 0x4bb8
--  __TEXT.__swift5_mpenum: 0x140
--  __TEXT.__swift5_protos: 0xd8
-   __TEXT.__swift_as_entry: 0x1bc
--  __TEXT.__swift_as_ret: 0x1a8
-   __TEXT.__swift_as_cont: 0x4c0
--  __TEXT.__unwind_info: 0xa588
--  __TEXT.__eh_frame: 0x81b4
-+  __TEXT.__oslogstring: 0x3e56
-+  __TEXT.__swift_as_ret: 0x1a8
-+  __TEXT.__swift5_protos: 0xd8
-+  __TEXT.__swift5_mpenum: 0x140
-+  __TEXT.__unwind_info: 0xa540
-+  __TEXT.__eh_frame: 0x8138
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1408
-+  __DATA_CONST.__const: 0x1410
-   __DATA_CONST.__objc_classlist: 0x588
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x210
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x27d8
-+  __DATA_CONST.__objc_selrefs: 0x27d0
-   __DATA_CONST.__objc_protorefs: 0x110
--  __DATA_CONST.__got: 0x2348
--  __AUTH_CONST.__const: 0x15320
--  __AUTH_CONST.__objc_const: 0x156c0
--  __AUTH_CONST.__auth_got: 0x4080
--  __AUTH.__objc_data: 0x6670
--  __AUTH.__data: 0x9790
--  __DATA.__data: 0xd680
-+  __DATA_CONST.__got: 0x2390
-+  __AUTH_CONST.__const: 0x15570
-+  __AUTH_CONST.__objc_const: 0x15720
-+  __AUTH_CONST.__auth_got: 0x40c0
-+  __AUTH.__objc_data: 0x66a8
-+  __AUTH.__data: 0x9710
-+  __DATA.__data: 0xd608
-   __DATA.__objc_stublist: 0x8
--  __DATA.__bss: 0x13c88
-+  __DATA.__bss: 0x13ca8
-   __DATA.__common: 0x6a9
-   __DATA_DIRTY.__objc_data: 0x178
--  __DATA_DIRTY.__data: 0x578
-+  __DATA_DIRTY.__data: 0x580
-   __DATA_DIRTY.__bss: 0xb0
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-+  - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/ContactsUI.framework/ContactsUI
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/Frameworks/Accessibility.framework/Accessibility
+
 -  Functions: 16514
--  Symbols:   7135
+-  Symbols:   6316
 -  CStrings:  698
 +  Functions: 16507
-+  Symbols:   7137
++  Symbols:   6319
 +  CStrings:  696
- 
 Symbols:
 + __DATA__TtC16CommunicationsUI26ScreeningCaptionsAnnouncer
 + __IVARS__TtC16CommunicationsUI26ScreeningCaptionsAnnouncer
@@ -126,7 +76,6 @@ Symbols:
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE24scrollEdgeEffectDisabledyQrSbFQOyAcAE0D10Indicators_4axesQrAA25ScrollIndicatorVisibilityV_AA4AxisO3SetVtFQOyAcAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVy20CommunicationDetails0vjC0VyAQyAA012_ConditionalT0VyAcAE14contentMargins__3forQrAA0E0OAKV_12CoreGraphics7CGFloatVSgAA0T15MarginPlacementVtFQOyAcAE0dT10BackgroundyQrAA0L0OFQOyAQyAQyAcAEAW__AXQrA__A3_A5_tFQOyAcAE20listHasStackBehaviorQryFQOyAA4ListVys5NeverOAQyAA5GroupVyAA05TupleT0VyAcAE0O10TapGesture5count15coordinateSpace7performQrSi_qd__ySo7CGPointVctAA23CoordinateSpaceProtocolRd__lFQOyAQyAQy014CommunicationsB0024RecentsCallHistoryHeaderC0VAA19_BackgroundModifierVyA25_0C6Anchor33_0429C8C06193ABDF7834579B0E353E77LLVGGAA01_T13ShapeModifierVyAA9RectangleVGG_AA21GlobalCoordinateSpaceVQo_Sg_AVy08ContactsB022ContactCardAllSectionsVA25_022RecentsParticipantListC0VGA25_018BlockUnblockReportC0VSgQPGGA25_24ContactCardStyleModifierVGG_Qo__Qo_AA21_TraitWritingModifierVyAA26ListSectionSpacingTraitKeyVGGAA30_EnvironmentKeyWritingModifierVyAA18ListSectionSpacingVSgGG_Qo__Qo_A75_GAA23_GeometryActionModifierVyA2_GGGA29_yAVyAQyAA14LinearGradientVAA30_SafeAreaRegionsIgnoringLayoutVGAA08_CALayerC0VySo15CABackdropLayerCGGGG_SaySo9CNContactCGQo__Qo__Qo_HO
 + _kCHCallStatusIncoming
 + _keypath_set.56Tm
-+ _objc_msgSend$setPreferredSymbolConfiguration:
 + _symbolic SDyS2SG
 + _symbolic So11UIStackViewCSgXw
 + _symbolic _____ 16CommunicationsUI24MiddleStackConfigurationO
@@ -210,8 +159,6 @@ Symbols:
 - _get_witness_table 7SwiftUI8StaticIfVyAA8SolariumVAA21_GlassEffectContainerVyAA6ZStackVyAA12TupleContentVyAA08ModifiedK0VyAA10_ShapeViewVyAA6CircleVAA5ColorVGAA12_FrameLayoutVG_AMyAMyAMyAA5ImageVAA012_AspectRatioR0VGAVGAA30_EnvironmentKeyWritingModifierVyASSgGGQPGGGAMyAMyAyVGA5_GGAA0N0HPAeA0N14InputPredicateHPyHC_A9_AAA13_HPyHCA11_AAA13_HPA10_AAA13_HPAyAA13_HPyHC_AvA0nY0HPyHCHC_A5_AAA15_HPyHCHCHC
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE16scrollIndicators_4axesQrAA25ScrollIndicatorVisibilityV_AA4AxisO3SetVtFQOyAcAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVy20CommunicationDetails0sgC0VyAPyAA012_ConditionalQ0VyAcAE14contentMargins__3forQrAA4EdgeOAJV_12CoreGraphics7CGFloatVSgAA0Q15MarginPlacementVtFQOyAcAE0dQ10BackgroundyQrAA0I0OFQOyAPyAPyAcAEAV__AWQrAZ_A2_A4_tFQOyAcAE20listHasStackBehaviorQryFQOyAA4ListVys5NeverOAPyAA5GroupVyAA05TupleQ0VyAcAE0L10TapGesture5count15coordinateSpace7performQrSi_qd__ySo7CGPointVctAA23CoordinateSpaceProtocolRd__lFQOyAPyAPy014CommunicationsB0024RecentsCallHistoryHeaderC0VAA19_BackgroundModifierVyA24_0C6Anchor33_0429C8C06193ABDF7834579B0E353E77LLVGGAA01_Q13ShapeModifierVyAA9RectangleVGG_AA21GlobalCoordinateSpaceVQo_Sg_AUy08ContactsB022ContactCardAllSectionsVA24_022RecentsParticipantListC0VGA24_018BlockUnblockReportC0VSgQPGGA24_24ContactCardStyleModifierVGG_Qo__Qo_AA21_TraitWritingModifierVyAA26ListSectionSpacingTraitKeyVGGAA30_EnvironmentKeyWritingModifierVyAA18ListSectionSpacingVSgGG_Qo__Qo_A74_GAA23_GeometryActionModifierVyA1_GGGA28_yAUyAPyAA14LinearGradientVAA30_SafeAreaRegionsIgnoringLayoutVGAA08_CALayerC0VySo15CABackdropLayerCGGGG_SaySo9CNContactCGQo__Qo_HO
 - _keypath_set.15Tm
-- _objc_msgSend$imageWithConfiguration:
-- _objc_msgSend$initWithDuration:dampingRatio:animations:
 - _symbolic _____ 16CommunicationsUI20FilterMenuItemVisualV
 - _symbolic _____ 16CommunicationsUI22CameraReconfigAnimatorC
 - _symbolic ___________y_____yAByABy_____y_____y_____yADyAA______QPGG_AByAByAByACyADyAEyADyABy__________y_____GG_AByAI_____GSgAP_____QPGG_AEyADyAM_AEyADyAO_AQQPGGQPGGAEyADyAM_AoQSgAXQPGGAEyADyAI_AoQQPGGAEyADyAM_AoQQPGGQPGG_____G_____yABy_____y_____AKG_____y_____GGGG_____yAKSgGGQPGG_____GA5_G_Qo______Gt 7SwiftUI6SpacerV AA15ModifiedContentV AA4ViewPAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQO AA6VStackV AA05TupleE0V AA6HStackV 014CommunicationsB020FilterMenuItemVisualV AA5ImageV AA24_ForegroundStyleModifierV AA5ColorV AA12_FrameLayoutV AA4TextV AA14_PaddingLayoutV AA011_BackgroundX0V AA06_ShapeF0V AA9RectangleV AA11_ClipEffectV AA22UnevenRoundedRectangleV AA022_EnvironmentKeyWritingX0V AA16_FixedSizeLayoutV AA0j10AttachmentX0V

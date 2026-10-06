@@ -2,48 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/TipsDaemon.framework/TipsDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa0730` | `0xa0878` | **`+0x148`** |
+| `__AUTH_CONST.__objc_intobj` | `0x168` | `0x1c8` | **`+0x60`** |
+| `__AUTH_CONST.__cfstring` | `0x2a00` | `0x2a40` | **`+0x40`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x78` | `0xa8` | **`+0x30`** |
+| `__DATA_CONST.__objc_arraydata` | `0x58` | `0x78` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x427c` | `0x428c` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1230` | `0x1238` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 866.0.0.0.0
--  __TEXT.__text: 0xa0730
-+  __TEXT.__text: 0xa0878
-   __TEXT.__objc_methlist: 0x3898
-   __TEXT.__const: 0x3258
-   __TEXT.__oslogstring: 0x2474
--  __TEXT.__cstring: 0x427c
-+  __TEXT.__cstring: 0x428c
-   __TEXT.__gcc_except_tab: 0x1484
-   __TEXT.__swift5_typeref: 0x1182
-   __TEXT.__swift5_fieldmd: 0x988
-
-   __DATA_CONST.__objc_selrefs: 0x2688
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x1b8
--  __DATA_CONST.__objc_arraydata: 0x58
-+  __DATA_CONST.__objc_arraydata: 0x78
-   __DATA_CONST.__got: 0xd18
-   __AUTH_CONST.__const: 0x2838
--  __AUTH_CONST.__cfstring: 0x2a00
-+  __AUTH_CONST.__cfstring: 0x2a40
-   __AUTH_CONST.__objc_const: 0x80f8
--  __AUTH_CONST.__objc_intobj: 0x168
--  __AUTH_CONST.__objc_arrayobj: 0x78
--  __AUTH_CONST.__auth_got: 0x1230
-+  __AUTH_CONST.__objc_intobj: 0x1c8
-+  __AUTH_CONST.__objc_arrayobj: 0xa8
-+  __AUTH_CONST.__auth_got: 0x1238
-   __AUTH.__objc_data: 0xf00
-   __AUTH.__data: 0x50
-   __DATA.__objc_ivar: 0x220
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 3315
--  Symbols:   4535
+-  Symbols:   3457
 -  CStrings:  807
-+  Symbols:   4536
++  Symbols:   3458
 +  CStrings:  809
- 
 Symbols:
 + _MGGetProductType
 Functions:

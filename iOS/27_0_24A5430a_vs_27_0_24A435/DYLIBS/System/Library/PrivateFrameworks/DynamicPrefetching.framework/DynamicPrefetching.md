@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/DynamicPrefetching.framework/DynamicPrefetching`
 
-```diff
+### Section Size Changes
 
- 3.6.0.0.0
--  __TEXT.__text: 0x1b2d0
-+  __TEXT.__text: 0x1b2c8
-   __TEXT.__objc_methlist: 0x29c
-   __TEXT.__const: 0x4f9
-   __TEXT.__gcc_except_tab: 0x1570
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1b2d0` | `0x1b2c8` | **`-0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_23ef4a830 -> sub_23f886830 : 348 -> 352
 ~ sub_23ef4cfc8 -> sub_23f888fcc : 372 -> 376

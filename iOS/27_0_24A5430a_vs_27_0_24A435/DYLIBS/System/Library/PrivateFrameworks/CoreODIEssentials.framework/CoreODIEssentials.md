@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CoreODIEssentials.framework/CoreODIEssentials`
 
-```diff
+### Section Size Changes
 
- 27.0.61.0.0
--  __TEXT.__text: 0x1fbf4c
-+  __TEXT.__text: 0x1fc2e8
-   __TEXT.__objc_methlist: 0xd74
-   __TEXT.__const: 0x270d0
-   __TEXT.__cstring: 0x12c2f
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1fbf4c` | `0x1fc2e8` | **`+0x39c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_226ec6c4c -> sub_22770dc4c : 860 -> 864
 ~ sub_226ec87d4 -> sub_22770f7d8 : 1436 -> 1444

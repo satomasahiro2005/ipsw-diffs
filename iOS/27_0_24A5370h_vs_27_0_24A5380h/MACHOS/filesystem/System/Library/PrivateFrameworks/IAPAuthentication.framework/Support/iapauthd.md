@@ -2,6 +2,14 @@
 
 > `/System/Library/PrivateFrameworks/IAPAuthentication.framework/Support/iapauthd`
 
-Sections:
-~ __TEXT.__cstring : content changed
-~ __TEXT.__eh_frame : content changed
+### Same-size Content Changes
+
+- `__TEXT.__eh_frame`
+
+### Other Changes
+
+```diff
+
+-2181.0.3.0.0
++2185.0.0.0.0
+```

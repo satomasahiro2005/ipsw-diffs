@@ -2,43 +2,36 @@
 
 > `/System/ExclaveKit/usr/lib/dyld`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__eh_frame`
-- `__AUTH_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5bc38` | `0x5c5cc` | **`+0x994`** |
+| `__TEXT.__cstring` | `0xe51e` | `0xe679` | **`+0x15b`** |
+| `__DATA_CONST.__const` | `0xaf0` | `0xb30` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x1e88` | `0x1ea8` | **`+0x20`** |
+
+### Same-size Content Changes
+
 - `__AUTH.__data`
+- `__AUTH_CONST.__const`
 - `__DATA.__data`
 - `__DATA_DIRTY.__all_image_info`
+- `__TEXT.__const`
+- `__TEXT.__eh_frame`
+
+### Other Changes
 
 ```diff
 
 -27060.1.0.0.0
--  __TEXT.__text: 0x5bc38
-+27062.0.0.0.0
-+  __TEXT.__text: 0x5c5cc
-   __TEXT.__const: 0x1c0a8
--  __TEXT.__cstring: 0xe51e
--  __TEXT.__unwind_info: 0x1e88
-+  __TEXT.__cstring: 0xe679
-+  __TEXT.__unwind_info: 0x1ea8
-   __TEXT.__eh_frame: 0x48
--  __DATA_CONST.__const: 0xaf0
-+  __DATA_CONST.__const: 0xb30
-   __AUTH_CONST.__const: 0x3ee8
-   __AUTH.__data: 0x470
-   __DATA.__data: 0x1448
-
-   __DATA.__common: 0x550
-   __DATA.__bss: 0xba408
-   __DATA_DIRTY.__all_image_info: 0x170
 -  Functions: 2746
 -  Symbols:   2422
 -  CStrings:  1461
++27062.0.0.0.0
 +  Functions: 2756
 +  Symbols:   2429
 +  CStrings:  1468
- 
 Symbols:
 + _ZNK4objc19objc_headeropt_rw_t8isLoadedEj
 + __ZN4objc7lookup8EPKhmy

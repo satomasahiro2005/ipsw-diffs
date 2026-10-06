@@ -2,58 +2,47 @@
 
 > `/usr/libexec/appleaccountd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__const`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_acfuncs`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3f2bd0` | `0x3f2e74` | **`+0x2a4`** |
+| `__TEXT.__oslogstring` | `0x20c9d` | `0x20ccd` | **`+0x30`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA.__objc_stublist`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
-- `__DATA.__objc_stublist`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_acfuncs`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
- 1067.0.0.0.0
--  __TEXT.__text: 0x3f2bd0
-+  __TEXT.__text: 0x3f2e74
-   __TEXT.__auth_stubs: 0x37d0
-   __TEXT.__objc_stubs: 0x4d40
-   __TEXT.__objc_methlist: 0xf80
-
-   __TEXT.__swift5_proto: 0xc74
-   __TEXT.__swift5_types: 0x638
-   __TEXT.__swift5_capture: 0x65fc
--  __TEXT.__oslogstring: 0x20c9d
-+  __TEXT.__oslogstring: 0x20ccd
-   __TEXT.__swift5_protos: 0x22c
-   __TEXT.__swift_as_entry: 0x674
-   __TEXT.__swift_as_ret: 0x87c
-
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 10245
-   Symbols:   1815
 -  CStrings:  4183
 +  CStrings:  4184
- 
 Functions:
 ~ sub_100019170 : 904 -> 908
 ~ sub_10005b238 -> sub_10005b23c : 2428 -> 2436

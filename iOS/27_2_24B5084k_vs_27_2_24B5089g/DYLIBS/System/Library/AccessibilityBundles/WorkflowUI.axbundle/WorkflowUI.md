@@ -2,59 +2,37 @@
 
 > `/System/Library/AccessibilityBundles/WorkflowUI.axbundle/WorkflowUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10a0` | `0xb80` | **`-0x520`** |
+| `__AUTH_CONST.__objc_const` | `0xcf0` | `0x870` | **`-0x480`** |
+| `__DATA_DIRTY.__objc_data` | `0x5f0` | `0x370` | **`-0x280`** |
+| `__AUTH_CONST.__cfstring` | `0x640` | `0x420` | **`-0x220`** |
+| `__TEXT.__cstring` | `0x5a3` | `0x3ac` | **`-0x1f7`** |
+| `__TEXT.__objc_methlist` | `0x3e4` | `0x28c` | **`-0x158`** |
+| `__DATA_CONST.__objc_selrefs` | `0x190` | `0x140` | **`-0x50`** |
+| `__DATA_CONST.__objc_classlist` | `0xb8` | `0x78` | **`-0x40`** |
+| `__TEXT.__unwind_info` | `0x118` | `0xe0` | **`-0x38`** |
+| `__AUTH_CONST.__const` | `0xc0` | `0xa0` | **`-0x20`** |
+| `__DATA_CONST.__const` | `0xc8` | `0xa8` | **`-0x20`** |
+| `__DATA_CONST.__objc_superrefs` | `0x38` | `0x20` | **`-0x18`** |
+| `__DATA_CONST.__got` | `0x78` | `0x68` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3050.3.0.0.0
--  __TEXT.__text: 0xfd4
--  __TEXT.__objc_methlist: 0x3e4
 +3050.3.1.0.0
-+  __TEXT.__text: 0xad8
-+  __TEXT.__objc_methlist: 0x28c
-   __TEXT.__const: 0x8
--  __TEXT.__cstring: 0x5a3
--  __TEXT.__unwind_info: 0x120
-+  __TEXT.__cstring: 0x3ac
-+  __TEXT.__unwind_info: 0xe8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xc8
--  __DATA_CONST.__objc_classlist: 0xb8
-+  __DATA_CONST.__const: 0xa8
-+  __DATA_CONST.__objc_classlist: 0x78
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x190
--  __DATA_CONST.__objc_superrefs: 0x38
--  __DATA_CONST.__got: 0x78
--  __AUTH_CONST.__const: 0xc0
--  __AUTH_CONST.__cfstring: 0x640
--  __AUTH_CONST.__objc_const: 0xcf0
-+  __DATA_CONST.__objc_selrefs: 0x140
-+  __DATA_CONST.__objc_superrefs: 0x20
-+  __DATA_CONST.__got: 0x68
-+  __AUTH_CONST.__const: 0xa0
-+  __AUTH_CONST.__cfstring: 0x420
-+  __AUTH_CONST.__objc_const: 0x870
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0x140
--  __DATA_DIRTY.__objc_data: 0x5f0
-+  __DATA_DIRTY.__objc_data: 0x370
-   __DATA_DIRTY.__bss: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 70
--  Symbols:   277
+-  Symbols:   241
 -  CStrings:  62
 +  Functions: 48
-+  Symbols:   201
++  Symbols:   173
 +  CStrings:  44
- 
 Symbols:
 - +[WFAutomationEmptyStateCellAccessibility _accessibilityPerformValidations:]
 - +[WFAutomationEmptyStateCellAccessibility(SafeCategory) safeCategoryBaseClass]
@@ -124,14 +102,6 @@ Symbols:
 - ___65-[WFAutomationEmptyStateCellAccessibility _accessibilityChildren]_block_invoke
 - ___AXStringForVariables
 - ___block_descriptor_32_e15_B32?08Q16^B24l
-- _objc_msgSend$accessibilityActivationPoint
-- _objc_msgSend$indexOfObjectPassingTest:
-- _objc_msgSend$navigationItem
-- _objc_msgSend$objectAtIndex:
-- _objc_msgSend$rightBarButtonItem
-- _objc_msgSend$safeBoolForKey:
-- _objc_msgSend$safeValueForKeyPath:
-- _objc_msgSend$setIsAccessibilityElement:
 CStrings:
 - "B32@?0@8Q16^B24"
 - "UITableTextAccessibilityElement"

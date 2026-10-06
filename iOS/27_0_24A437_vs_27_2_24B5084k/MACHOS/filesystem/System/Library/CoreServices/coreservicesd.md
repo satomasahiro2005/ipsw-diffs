@@ -2,15 +2,14 @@
 
 > `/System/Library/CoreServices/coreservicesd`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -1406.0.0.0.0
 +1406.1.1.0.0
-   __TEXT.__text: 0x4
-   __TEXT.__auth_stubs: 0x10
-   __TEXT.__const: 0x40
 ```

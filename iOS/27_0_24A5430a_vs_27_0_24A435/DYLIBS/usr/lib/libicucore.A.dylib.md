@@ -2,14 +2,15 @@
 
 > `/usr/lib/libicucore.A.dylib`
 
-```diff
+### Section Size Changes
 
- 78132.0.0.0.0
--  __TEXT.__text: 0x26a8fc
-+  __TEXT.__text: 0x26ab18
-   __TEXT.__const: 0x6b3c0
-   __TEXT.__cstring: 0xa179
-   __TEXT.__oslogstring: 0xf0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x26a8fc` | `0x26ab18` | **`+0x21c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNK3icu16SimpleDateFormat9subFormatERNS_13UnicodeStringEDsi15UDisplayContextiDsRNS_20FieldPositionHandlerERNS_8CalendarER10UErrorCode : 6804 -> 6808
 ~ sub_18f45c23c -> sub_18f4f4240 : 236 -> 244

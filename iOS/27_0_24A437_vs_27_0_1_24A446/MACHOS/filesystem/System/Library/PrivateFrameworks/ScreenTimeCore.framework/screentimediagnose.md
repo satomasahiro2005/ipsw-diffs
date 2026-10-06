@@ -2,15 +2,14 @@
 
 > `/System/Library/PrivateFrameworks/ScreenTimeCore.framework/screentimediagnose`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -655.0.107.0.0
 +655.0.109.0.0
-   __TEXT.__text: 0x745c
-   __TEXT.__auth_stubs: 0x4c0
-   __TEXT.__objc_stubs: 0x1a40
 ```

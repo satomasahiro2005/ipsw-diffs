@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CalendarWidget.framework/CalendarWidget`
 
-```diff
+### Section Size Changes
 
- 415.0.100.0.0
--  __TEXT.__text: 0xf984c
-+  __TEXT.__text: 0xf9838
-   __TEXT.__objc_methlist: 0x7a0
-   __TEXT.__const: 0xa134
-   __TEXT.__constg_swiftt: 0x2e94
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf984c` | `0xf9838` | **`-0x14`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_20ccbccbc -> sub_20d357cbc : 2380 -> 2376
 ~ sub_20ccc86f4 -> sub_20d3636f0 : 5200 -> 5176

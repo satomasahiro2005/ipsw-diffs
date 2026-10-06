@@ -2,74 +2,36 @@
 
 > `/System/Library/Frameworks/CoreAudio.framework/CoreAudio`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__realtime` | `0x293f4` | `0x29064` | **`-0x390`** |
+| `__TEXT.__text` | `0x542d30` | `0x542b0c` | **`-0x224`** |
+| `__AUTH_CONST.__const` | `0x34388` | `0x34298` | **`-0xf0`** |
+| `__TEXT.__const` | `0x55ea0` | `0x55dc0` | **`-0xe0`** |
+| `__DATA_CONST.__const` | `0x66f8` | `0x67b0` | **`+0xb8`** |
+| `__TEXT.__gcc_except_tab` | `0x589e4` | `0x58a68` | **`+0x84`** |
+| `__TEXT.__cstring` | `0x31928` | `0x318d2` | **`-0x56`** |
+| `__TEXT.__dlopen_cstrs` | `0x58` | `0xae` | **`+0x56`** |
+| `__DATA.__bss` | `0x4130` | `0x40f0` | **`-0x40`** |
+| `__TEXT.__oslogstring` | `0x42ee0` | `0x42ea5` | **`-0x3b`** |
+| `__DATA_DIRTY.__bss` | `0x164c` | `0x163c` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1600` | `0x1608` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -482.102.0.0.0
--  __TEXT.__text: 0x5371e0
--  __TEXT.__realtime: 0x28d5c
 +482.205.0.0.0
-+  __TEXT.__text: 0x53703c
-+  __TEXT.__realtime: 0x289f0
-   __TEXT.__delay_stubs: 0x780
-   __TEXT.__delay_helper: 0x148
-   __TEXT.__objc_methlist: 0x175c
--  __TEXT.__const: 0x55ea0
--  __TEXT.__cstring: 0x31928
--  __TEXT.__dlopen_cstrs: 0x58
--  __TEXT.__gcc_except_tab: 0x589e4
--  __TEXT.__oslogstring: 0x42ee0
-+  __TEXT.__const: 0x55dc0
-+  __TEXT.__cstring: 0x318d2
-+  __TEXT.__dlopen_cstrs: 0xae
-+  __TEXT.__gcc_except_tab: 0x58a68
-+  __TEXT.__oslogstring: 0x42ea5
-   __TEXT.__unwind_info: 0x1b1b8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x66f8
-+  __DATA_CONST.__const: 0x67b0
-   __DATA_CONST.__objc_classlist: 0xc0
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x70
 
-   __DATA_CONST.__objc_superrefs: 0x88
-   __DATA_CONST.__objc_arraydata: 0x60
-   __DATA_CONST.__got: 0x420
--  __AUTH_CONST.__const: 0x34388
-+  __AUTH_CONST.__const: 0x34298
-   __AUTH_CONST.__cfstring: 0x41e0
-   __AUTH_CONST.__objc_const: 0x28e8
-   __AUTH_CONST.__weak_auth_got: 0x48
-   __AUTH_CONST.__objc_intobj: 0x18
-   __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__auth_got: 0x1600
-+  __AUTH_CONST.__auth_got: 0x1608
-   __AUTH.__data: 0x120
-   __AUTH.__thread_vars: 0x18
-   __AUTH.__thread_bss: 0x4
-
-   __DATA.__crash_info: 0x148
-   __DATA_DIRTY.__objc_data: 0x780
-   __DATA_DIRTY.__data: 0x168
--  __DATA_DIRTY.__bss: 0x164c
-+  __DATA_DIRTY.__bss: 0x163c
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 19122
--  Symbols:   35427
+-  Symbols:   35142
 -  CStrings:  7048
 +  Functions: 19113
-+  Symbols:   35414
++  Symbols:   35129
 +  CStrings:  7046
- 
 Symbols:
 + GCC_except_table10009
 + GCC_except_table10010

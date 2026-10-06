@@ -2,87 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/AuthKit.framework/AuthKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x19f4d0` | `0x1a1494` | **`+0x1fc4`** |
+| `__TEXT.__oslogstring` | `0x158a1` | `0x15c80` | **`+0x3df`** |
+| `__AUTH.__objc_data` | `0x34d0` | `0x3890` | **`+0x3c0`** |
+| `__DATA_DIRTY.__objc_data` | `0x1950` | `0x1590` | **`-0x3c0`** |
+| `__TEXT.__gcc_except_tab` | `0x65c4` | `0x6694` | **`+0xd0`** |
+| `__AUTH_CONST.__cfstring` | `0x13f20` | `0x13fa0` | **`+0x80`** |
+| `__TEXT.__cstring` | `0x12f02` | `0x12f76` | **`+0x74`** |
+| `__TEXT.__objc_methlist` | `0x1049c` | `0x104fc` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x4830` | `0x4870` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x78a8` | `0x78d8` | **`+0x30`** |
+| `__AUTH_CONST.__objc_const` | `0x2e488` | `0x2e4b0` | **`+0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8178` | `0x81a0` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0xbc0` | `0xbc8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__ustring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x19f4d0
--  __TEXT.__objc_methlist: 0x1049c
-+  __TEXT.__text: 0x1a1494
-+  __TEXT.__objc_methlist: 0x104fc
-   __TEXT.__const: 0xd30
--  __TEXT.__cstring: 0x12f02
--  __TEXT.__oslogstring: 0x158a1
--  __TEXT.__gcc_except_tab: 0x65c4
-+  __TEXT.__cstring: 0x12f76
-+  __TEXT.__oslogstring: 0x15c80
-+  __TEXT.__gcc_except_tab: 0x6694
-   __TEXT.__dlopen_cstrs: 0x267
-   __TEXT.__ustring: 0x34a
--  __TEXT.__unwind_info: 0x4830
-+  __TEXT.__unwind_info: 0x4870
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x78a8
-+  __DATA_CONST.__const: 0x78d8
-   __DATA_CONST.__objc_classlist: 0x7d0
-   __DATA_CONST.__objc_catlist: 0x88
-   __DATA_CONST.__objc_protolist: 0x238
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8178
-+  __DATA_CONST.__objc_selrefs: 0x81a0
-   __DATA_CONST.__objc_protorefs: 0xf0
-   __DATA_CONST.__objc_superrefs: 0x4c8
-   __DATA_CONST.__objc_arraydata: 0x358
--  __DATA_CONST.__got: 0xbc0
-+  __DATA_CONST.__got: 0xbc8
-   __AUTH_CONST.__const: 0x13e0
--  __AUTH_CONST.__cfstring: 0x13f20
--  __AUTH_CONST.__objc_const: 0x2e488
-+  __AUTH_CONST.__cfstring: 0x13fa0
-+  __AUTH_CONST.__objc_const: 0x2e4b0
-   __AUTH_CONST.__objc_intobj: 0x300
-   __AUTH_CONST.__objc_dictobj: 0x410
-   __AUTH_CONST.__objc_arrayobj: 0x90
-   __AUTH_CONST.__auth_got: 0x518
--  __AUTH.__objc_data: 0x34d0
-+  __AUTH.__objc_data: 0x3890
-   __DATA.__objc_ivar: 0x123c
-   __DATA.__data: 0x1b70
-   __DATA.__bss: 0x6d0
--  __DATA_DIRTY.__objc_data: 0x1950
-+  __DATA_DIRTY.__objc_data: 0x1590
-   __DATA_DIRTY.__bss: 0x2f0
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
+-552.0.0.0.0
++554.0.0.0.0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 6091
--  Symbols:   23093
--  CStrings:  7152
+-  Symbols:   12279
+-  CStrings:  4613
 +  Functions: 6103
-+  Symbols:   23126
-+  CStrings:  7178
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__dlopen_cstrs : content changed
-~ __TEXT.__ustring : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __DATA.__objc_ivar : content changed
-~ __DATA.__data : content changed
++  Symbols:   12289
++  CStrings:  4635
 Symbols:
 + -[AKAccountRecoveryStepLocalAuthentication _isPushStyleResponse:]
 + -[AKAnisetteProvisioningController fetchSignedDeviceInfoHeadersWithCompletion:]
@@ -95,14 +49,7 @@ Symbols:
 + ___79-[AKAnisetteProvisioningController fetchSignedDeviceInfoHeadersWithCompletion:]_block_invoke_2
 + ___87-[AKAppleIDPasskeyController submitPasskeyCredentialWithContext:credential:completion:]_block_invoke
 + ___block_descriptor_56_e8_32bs_e62_v24?0"AKAppleIDPasskeyCredentialRequestContext"8"NSError"16ls32l8
-+ _objc_msgSend$_isPushStyleResponse:
-+ _objc_msgSend$fetchSignedDeviceInfoHeadersWithCompletion:
-+ _objc_msgSend$hardwareModel
-+ _objc_msgSend$queryItems
-+ _objc_msgSend$requestPasskeyChallengeWithContext:completion:
-+ _objc_msgSend$submitPasskeyCredentialWithContext:credential:completion:
 - +[AKDevice _hardwareModel]
-- _objc_msgSend$_hardwareModel
 CStrings:
 + "AppleID passkey challenge request failed with error: %@"
 + "AppleID passkey credential submission failed with error: %@"
@@ -126,5 +73,4 @@ CStrings:
 + "push"
 + "v24@?0@\"AKAppleIDPasskeyCredentialRequestContext\"8@\"NSError\"16"
 + "xa"
-
 ```

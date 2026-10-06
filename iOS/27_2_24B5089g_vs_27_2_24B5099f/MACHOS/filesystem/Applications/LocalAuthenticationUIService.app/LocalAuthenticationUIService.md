@@ -2,96 +2,60 @@
 
 > `/Applications/LocalAuthenticationUIService.app/LocalAuthenticationUIService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6f46c` | `0x6fdf4` | **`+0x988`** |
+| `__TEXT.__objc_stubs` | `0x7260` | `0x75e0` | **`+0x380`** |
+| `__TEXT.__objc_methname` | `0x9ad5` | `0x9cc5` | **`+0x1f0`** |
+| `__DATA.__objc_selrefs` | `0x2620` | `0x26c0` | **`+0xa0`** |
+| `__TEXT.__objc_methlist` | `0x3c80` | `0x3d18` | **`+0x98`** |
+| `__TEXT.__unwind_info` | `0x1ce8` | `0x1d48` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0x710` | `0x74c` | **`+0x3c`** |
+| `__DATA_CONST.__objc_intobj` | `0x408` | `0x438` | **`+0x30`** |
+| `__TEXT.__objc_methtype` | `0x28b7` | `0x28e7` | **`+0x30`** |
+| `__DATA.__objc_const` | `0xc2f8` | `0xc318` | **`+0x20`** |
+| `__DATA_CONST.__cfstring` | `0xfe0` | `0x1000` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0xb30` | `0xb50` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x15ee` | `0x15fe` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x338` | `0x33c` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_catlist`
 - `__DATA_CONST.__objc_catlist2`
+- `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -2319.40.35.0.1
--  __TEXT.__text: 0x6c6f8
 +2319.40.43.0.0
-+  __TEXT.__text: 0x6d02c
-   __TEXT.__auth_stubs: 0x21e0
--  __TEXT.__objc_stubs: 0x7260
--  __TEXT.__objc_methlist: 0x3c80
-+  __TEXT.__objc_stubs: 0x75e0
-+  __TEXT.__objc_methlist: 0x3d18
-   __TEXT.__const: 0x3454
-   __TEXT.__objc_classname: 0x127c
--  __TEXT.__objc_methname: 0x9ad5
--  __TEXT.__gcc_except_tab: 0x710
--  __TEXT.__cstring: 0x15ee
-+  __TEXT.__objc_methname: 0x9cc5
-+  __TEXT.__gcc_except_tab: 0x74c
-+  __TEXT.__cstring: 0x15fe
-   __TEXT.__oslogstring: 0x1cfe
--  __TEXT.__objc_methtype: 0x28b7
-+  __TEXT.__objc_methtype: 0x28e7
-   __TEXT.__swift5_typeref: 0x33a6
-   __TEXT.__constg_swiftt: 0x11d4
-   __TEXT.__swift5_reflstr: 0xbcd
 
-   __TEXT.__swift_as_ret: 0x8
-   __TEXT.__swift_as_cont: 0x20
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__unwind_info: 0x24a0
-+  __TEXT.__unwind_info: 0x24f8
-   __TEXT.__eh_frame: 0x5a0
-   __DATA_CONST.__const: 0x3678
--  __DATA_CONST.__cfstring: 0xfe0
-+  __DATA_CONST.__cfstring: 0x1000
-   __DATA_CONST.__objc_classlist: 0x218
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_catlist2: 0x8
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0xd8
-   __DATA_CONST.__objc_superrefs: 0xa0
--  __DATA_CONST.__objc_intobj: 0x408
-+  __DATA_CONST.__objc_intobj: 0x438
-   __DATA_CONST.__auth_got: 0x1100
--  __DATA_CONST.__got: 0xb30
-+  __DATA_CONST.__got: 0xb50
-   __DATA_CONST.__auth_ptr: 0x7f8
--  __DATA.__objc_const: 0xc2f8
--  __DATA.__objc_selrefs: 0x2620
--  __DATA.__objc_ivar: 0x338
-+  __DATA.__objc_const: 0xc318
-+  __DATA.__objc_selrefs: 0x26c0
-+  __DATA.__objc_ivar: 0x33c
-   __DATA.__objc_data: 0x2508
-   __DATA.__data: 0x2a60
-   __DATA.__common: 0xc8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2745
 -  Symbols:   8018
 -  CStrings:  2403
 +  Functions: 2760
 +  Symbols:   8066
 +  CStrings:  2426
- 
 Symbols:
 + -[PinView _applyInputTraitsToKeypad]
 + -[PinView _currentKeypadSize]

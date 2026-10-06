@@ -2,27 +2,19 @@
 
 > `com.apple.driver.AppleUSBXDCI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x1eeac` | `0x1ee8c` | **`-0x20`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__cstring: 0x586c
-   __TEXT.__os_log: 0x284e
-   __TEXT.__const: 0x34
--  __TEXT_EXEC.__text: 0x1eeac
-+  __TEXT_EXEC.__text: 0x1ee8c
-   __TEXT_EXEC.__auth_stubs: 0x570
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x100
-Sections:
-~ __DATA.__data : content changed
-~ __DATA_CONST.__mod_init_func : content changed
-~ __DATA_CONST.__mod_term_func : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__kalloc_type : content changed
-~ __DATA_CONST.__kalloc_var : content changed
-~ __DATA_CONST.__auth_got : content changed
-~ __DATA_CONST.__got : content changed
+-896.0.0.0.0
++896.0.3.0.0
 Functions:
 ~ __ZN12AppleUSBXDCI18filterOccurredIsocEP28IOFilterInterruptEventSource : 2756 -> 2744
-~ sub_fffffe000a580910 -> sub_fffffe000a5811f4 : 148 -> 128
-
+~ sub_fffffff00a57e790 -> sub_fffffff00a57f074 : 148 -> 128
 ```

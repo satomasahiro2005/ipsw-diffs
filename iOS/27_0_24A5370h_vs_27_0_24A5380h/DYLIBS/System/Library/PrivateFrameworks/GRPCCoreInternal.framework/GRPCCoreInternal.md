@@ -2,72 +2,28 @@
 
 > `/System/Library/PrivateFrameworks/GRPCCoreInternal.framework/GRPCCoreInternal`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7fbf8` | `0x800b0` | **`+0x4b8`** |
+| `__TEXT.__eh_frame` | `0x58ac` | `0x598c` | **`+0xe0`** |
+| `__TEXT.__swift5_typeref` | `0x1ace` | `0x1af6` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x2ac0` | `0x2ae8` | **`+0x28`** |
+| `__DATA.__data` | `0x5c8` | `0x5b0` | **`-0x18`** |
+| `__TEXT.__const` | `0x6ee0` | `0x6ed0` | **`-0x10`** |
+| `__TEXT.__swift_as_entry` | `0x2e4` | `0x2ec` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x34c` | `0x354` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x424` | `0x428` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x7fbf8
--  __TEXT.__swift5_typeref: 0x1ace
--  __TEXT.__const: 0x6ee0
-+  __TEXT.__text: 0x800b0
-+  __TEXT.__swift5_typeref: 0x1af6
-+  __TEXT.__const: 0x6ed0
-   __TEXT.__swift5_capture: 0x8ac
-   __TEXT.__constg_swiftt: 0x2134
-   __TEXT.__swift5_reflstr: 0x1171
-   __TEXT.__swift5_fieldmd: 0x1cf4
-   __TEXT.__swift5_proto: 0x3b4
-   __TEXT.__swift5_types: 0x29c
--  __TEXT.__swift_as_entry: 0x2e4
--  __TEXT.__swift_as_cont: 0x424
-+  __TEXT.__swift_as_entry: 0x2ec
-+  __TEXT.__swift_as_cont: 0x428
-   __TEXT.__swift5_assocty: 0x6b8
-   __TEXT.__swift5_protos: 0x30
-   __TEXT.__cstring: 0x1017
-   __TEXT.__swift5_builtin: 0x78
-   __TEXT.__swift5_mpenum: 0x30
--  __TEXT.__swift_as_ret: 0x34c
--  __TEXT.__unwind_info: 0x2ac0
--  __TEXT.__eh_frame: 0x58ac
-+  __TEXT.__swift_as_ret: 0x354
-+  __TEXT.__unwind_info: 0x2ae8
-+  __TEXT.__eh_frame: 0x598c
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-
-   __AUTH_CONST.__objc_const: 0x3f0
-   __AUTH_CONST.__auth_got: 0xa40
-   __AUTH.__data: 0x318
--  __DATA.__data: 0x5c8
-+  __DATA.__data: 0x5b0
-   __DATA.__bss: 0x8aa0
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__data: 0x2d8
-
-   - /usr/lib/swift/libswiftSynchronization.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
 -  Functions: 3404
--  Symbols:   1126
+-  Symbols:   885
 +  Functions: 3402
-+  Symbols:   1124
-   CStrings:  87
- 
-Sections:
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   883
 Symbols:
 + ___swift_closure_destructor.85Tm
 + ___swift_get_extra_inhabitant_index.71Tm
@@ -89,5 +45,4 @@ Symbols:
 - _get_type_metadata ScIRzl15Synchronization6AtomicVySbG noncopyable
 - _get_type_metadata s8SendableRzl15Synchronization5MutexVy16GRPCCoreInternal30_BroadcastSequenceStateMachineVyxGG noncopyable
 - _swift_runtimeSupportsNoncopyableTypes
-
 ```

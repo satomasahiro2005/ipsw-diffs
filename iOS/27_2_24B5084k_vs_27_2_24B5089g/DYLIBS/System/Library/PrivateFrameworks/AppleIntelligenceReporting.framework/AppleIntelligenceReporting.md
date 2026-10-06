@@ -2,63 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/AppleIntelligenceReporting.framework/AppleIntelligenceReporting`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7cde0` | `0x7f154` | **`+0x2374`** |
+| `__DATA_DIRTY.__data` | `0xe50` | `0x1120` | **`+0x2d0`** |
+| `__AUTH.__data` | `0x2c0` | `—` | **`-0x2c0`** |
+| `__TEXT.__eh_frame` | `0x3620` | `0x36e8` | **`+0xc8`** |
+| `__TEXT.__cstring` | `0x1906` | `0x1986` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x2bc8` | `0x2c30` | **`+0x68`** |
+| `__TEXT.__swift5_typeref` | `0x2f5f` | `0x2fa7` | **`+0x48`** |
+| `__DATA.__data` | `0x2700` | `0x2740` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x17a8` | `0x17e0` | **`+0x38`** |
+| `__TEXT.__const` | `0xf78c` | `0xf7bc` | **`+0x30`** |
+
+### Other Changes
+
 ```diff
 
 -232.40.11.0.0
--  __TEXT.__text: 0x78654
--  __TEXT.__const: 0xf78c
--  __TEXT.__swift5_typeref: 0x2f5f
 +232.40.14.502.1
-+  __TEXT.__text: 0x7a91c
-+  __TEXT.__const: 0xf7bc
-+  __TEXT.__swift5_typeref: 0x2fa7
-   __TEXT.__oslogstring: 0x5eb
-   __TEXT.__constg_swiftt: 0x24dc
-   __TEXT.__swift5_reflstr: 0x247e
-   __TEXT.__swift5_fieldmd: 0x3960
--  __TEXT.__cstring: 0x1906
-+  __TEXT.__cstring: 0x1986
-   __TEXT.__swift5_proto: 0xf38
-   __TEXT.__swift5_types: 0x404
-   __TEXT.__swift5_protos: 0x10
 
-   __TEXT.__swift_as_entry: 0xc
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x20
--  __TEXT.__unwind_info: 0x3a38
--  __TEXT.__eh_frame: 0x3620
-+  __TEXT.__unwind_info: 0x3ab8
-+  __TEXT.__eh_frame: 0x36e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x6ad8
-   __AUTH_CONST.__objc_const: 0x650
--  __AUTH_CONST.__auth_got: 0x17a8
--  __AUTH.__data: 0x2c0
--  __DATA.__data: 0x2700
-+  __AUTH_CONST.__auth_got: 0x17e0
-+  __DATA.__data: 0x2740
-   __DATA.__common: 0x30
-   __DATA_DIRTY.__objc_data: 0x50
--  __DATA_DIRTY.__data: 0xe50
-+  __DATA_DIRTY.__data: 0x1120
-   __DATA_DIRTY.__common: 0x30
-   __DATA_DIRTY.__bss: 0x780
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 5353
--  Symbols:   14850
+-  Symbols:   14844
 -  CStrings:  216
 +  Functions: 5390
-+  Symbols:   14910
++  Symbols:   14904
 +  CStrings:  219
- 
 Symbols:
 + _$s10Foundation13CustomNSErrorP13errorUserInfoSDySSypGvgTj
 + _$s10Foundation4DateVSgWOh

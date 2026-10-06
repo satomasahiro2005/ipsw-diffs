@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/HealthOntologyKit.framework/HealthOntologyKit`
 
-```diff
+### Section Size Changes
 
- 7027.0.72.2.7
--  __TEXT.__text: 0x44994
-+  __TEXT.__text: 0x44970
-   __TEXT.__objc_methlist: 0x6ec
-   __TEXT.__const: 0x6498
-   __TEXT.__gcc_except_tab: 0x4c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x44994` | `0x44970` | **`-0x24`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_22f6c8aac -> sub_230f52aac : 5172 -> 5180
 ~ sub_22f6ca3c8 -> sub_230f543d0 : 3128 -> 3132

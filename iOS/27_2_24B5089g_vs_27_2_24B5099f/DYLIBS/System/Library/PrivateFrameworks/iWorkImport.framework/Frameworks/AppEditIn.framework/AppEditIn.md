@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/AppEditIn.framework/AppEditIn`
 
-```diff
+### Section Size Changes
 
- 488.0.0.0.0
--  __TEXT.__text: 0x26598
-+  __TEXT.__text: 0x2659c
-   __TEXT.__objc_methlist: 0x43c
-   __TEXT.__swift5_typeref: 0x759
-   __TEXT.__const: 0x1f20
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x27774` | `0x27778` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2c75d70c8 -> sub_2c72370c8 : 108 -> 112
+~ sub_2cece8404 -> sub_2ce9f2404 : 108 -> 112
 ```

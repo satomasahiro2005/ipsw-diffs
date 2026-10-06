@@ -2,16 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/AccessibilityPlatformTranslation.framework/AccessibilityPlatformTranslation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x159c8` | `0x15a0c` | **`+0x44`** |
+
+### Other Changes
+
 ```diff
 
 -587.0.3.0.0
--  __TEXT.__text: 0x151a0
 +591.4.1.0.0
-+  __TEXT.__text: 0x151e4
-   __TEXT.__objc_methlist: 0x11dc
-   __TEXT.__const: 0x5d8
-   __TEXT.__dlopen_cstrs: 0x6a
 Functions:
-~ -[AXPTranslator_iOS _processValueAttributeRequest:error:axpAttribute:useAttributes:] : 400 -> 420
+~ -[AXPTranslator_iOS _processValueAttributeRequest:error:axpAttribute:useAttributes:] : 412 -> 432
 ~ -[AXPTranslator_iOS _processRoleAttributeRequest:traits:error:] : 1064 -> 1112
 ```

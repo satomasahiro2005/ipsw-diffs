@@ -2,18 +2,21 @@
 
 > `/System/Library/PrivateFrameworks/SiriSuggestionsIntelligence.framework/SiriSuggestionsIntelligence`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x85eb0` | `0x85e70` | **`-0x40`** |
+
+### Other Changes
+
 ```diff
 
 -3600.11.5.0.0
--  __TEXT.__text: 0x85eb0
 +3600.11.7.0.0
-+  __TEXT.__text: 0x85e70
-   __TEXT.__objc_methlist: 0x354
-   __TEXT.__const: 0x9100
-   __TEXT.__swift5_typeref: 0x2d7f
 Functions:
-~ sub_2a9ae58b0 -> sub_2a99238b0 : 1176 -> 1160
-~ sub_2a9ae5d48 -> sub_2a9923d38 : 764 -> 748
-~ sub_2a9ae67c0 -> sub_2a99247a0 : 1308 -> 1292
-~ sub_2a9ae6e74 -> sub_2a9924e44 : 1440 -> 1424
+~ sub_2a99708b0 -> sub_2a98208b0 : 1176 -> 1160
+~ sub_2a9970d48 -> sub_2a9820d38 : 764 -> 748
+~ sub_2a99717c0 -> sub_2a98217a0 : 1308 -> 1292
+~ sub_2a9971e74 -> sub_2a9821e44 : 1440 -> 1424
 ```

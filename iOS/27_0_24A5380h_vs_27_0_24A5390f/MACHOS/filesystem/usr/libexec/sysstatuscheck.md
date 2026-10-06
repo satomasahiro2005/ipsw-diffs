@@ -2,48 +2,38 @@
 
 > `/usr/libexec/sysstatuscheck`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd0cc` | `0xd22c` | **`+0x160`** |
+| `__TEXT.__const` | `0x548` | `0x4c8` | **`-0x80`** |
+| `__TEXT.__gcc_except_tab` | `0x5a0` | `0x61c` | **`+0x7c`** |
+| `__DATA.__bss` | `0x4c` | `0x4` | **`-0x48`** |
+| `__TEXT.__unwind_info` | `0x520` | `0x548` | **`+0x28`** |
+| `__TEXT.__cstring` | `0xc5a` | `0xc74` | **`+0x1a`** |
+| `__TEXT.__auth_stubs` | `0x510` | `0x520` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x290` | `0x298` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x78` | `0x70` | **`-0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__const`
+- `__TEXT.__init_offsets`
+
+### Other Changes
 
 ```diff
 
 -233.0.0.502.1
--  __TEXT.__text: 0xd0cc
--  __TEXT.__auth_stubs: 0x510
 +233.0.5.0.0
-+  __TEXT.__text: 0xd22c
-+  __TEXT.__auth_stubs: 0x520
-   __TEXT.__init_offsets: 0x4
--  __TEXT.__gcc_except_tab: 0x5a0
--  __TEXT.__const: 0x548
--  __TEXT.__cstring: 0xc5a
--  __TEXT.__unwind_info: 0x520
-+  __TEXT.__gcc_except_tab: 0x61c
-+  __TEXT.__const: 0x4c8
-+  __TEXT.__cstring: 0xc74
-+  __TEXT.__unwind_info: 0x548
-   __DATA_CONST.__const: 0x728
--  __DATA_CONST.__auth_got: 0x290
--  __DATA_CONST.__got: 0x78
-+  __DATA_CONST.__auth_got: 0x298
-+  __DATA_CONST.__got: 0x70
-   __DATA.__data: 0x60
--  __DATA.__bss: 0x4c
-+  __DATA.__bss: 0x4
-   __DATA.__common: 0x18
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
+
 -  Functions: 247
 -  Symbols:   128
 -  CStrings:  83
 +  Functions: 249
 +  Symbols:   127
 +  CStrings:  86
- 
 Symbols:
 - __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEED1Ev
 CStrings:

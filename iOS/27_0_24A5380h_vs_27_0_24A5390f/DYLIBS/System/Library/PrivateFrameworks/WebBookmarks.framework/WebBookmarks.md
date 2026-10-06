@@ -2,91 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/WebBookmarks.framework/WebBookmarks`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__constg_swiftt`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH.__objc_data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa726c` | `0xa7c3c` | **`+0x9d0`** |
+| `__TEXT.__gcc_except_tab` | `0xc1e4` | `0xc32c` | **`+0x148`** |
+| `__TEXT.__cstring` | `0xfc87` | `0xfd75` | **`+0xee`** |
+| `__TEXT.__oslogstring` | `0x9e5d` | `0x9ee9` | **`+0x8c`** |
+| `__AUTH_CONST.__cfstring` | `0x6440` | `0x64c0` | **`+0x80`** |
+| `__AUTH_CONST.__objc_const` | `0x9f00` | `0x9f50` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x893c` | `0x8964` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x46f8` | `0x4720` | **`+0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0x50a8` | `0x50c8` | **`+0x20`** |
+| `__TEXT.__const` | `0x326` | `0x336` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x624` | `0x62c` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -625.1.22.10.3
--  __TEXT.__text: 0xa726c
--  __TEXT.__objc_methlist: 0x893c
--  __TEXT.__const: 0x326
--  __TEXT.__gcc_except_tab: 0xc1e4
--  __TEXT.__cstring: 0xfc87
--  __TEXT.__oslogstring: 0x9e5d
 +625.1.24.10.1
-+  __TEXT.__text: 0xa7c3c
-+  __TEXT.__objc_methlist: 0x8964
-+  __TEXT.__const: 0x336
-+  __TEXT.__gcc_except_tab: 0xc32c
-+  __TEXT.__cstring: 0xfd75
-+  __TEXT.__oslogstring: 0x9ee9
-   __TEXT.__dlopen_cstrs: 0xb2
-   __TEXT.__constg_swiftt: 0x60
-   __TEXT.__swift5_typeref: 0x9
-   __TEXT.__swift5_reflstr: 0x1c
-   __TEXT.__swift5_fieldmd: 0x1c
-   __TEXT.__swift5_types: 0x4
--  __TEXT.__unwind_info: 0x46f8
-+  __TEXT.__unwind_info: 0x4720
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x110
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x50a8
-+  __DATA_CONST.__objc_selrefs: 0x50c8
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x1e8
-   __DATA_CONST.__objc_arraydata: 0x370
-   __DATA_CONST.__got: 0x818
-   __AUTH_CONST.__const: 0xfe0
--  __AUTH_CONST.__cfstring: 0x6440
--  __AUTH_CONST.__objc_const: 0x9f00
-+  __AUTH_CONST.__cfstring: 0x64c0
-+  __AUTH_CONST.__objc_const: 0x9f50
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x3c0
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_arrayobj: 0xd8
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0x50
--  __DATA.__objc_ivar: 0x624
-+  __DATA.__objc_ivar: 0x62c
-   __DATA.__data: 0x10d0
-   __DATA.__bss: 0x74
-   __DATA_DIRTY.__objc_data: 0x1590
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3706
--  Symbols:   8046
+-  Symbols:   6071
 -  CStrings:  2083
 +  Functions: 3711
-+  Symbols:   8062
++  Symbols:   6082
 +  CStrings:  2089
- 
 Symbols:
 + +[WBBookmarkSyncData _decodedTrimmedBookmarkSyncDataWithContentsOfData:]
 + +[WBBookmarkSyncData containsRecordInContentsOfData:]
@@ -151,11 +95,6 @@ Symbols:
 + _OBJC_IVAR_$__WBBookmarkSyncDataForFieldSetupDecoding._hasRecord
 + __ZZ54-[WebBookmarkCollection _mergeDuplicateSpecialFolders]E32specialIDsWithCanonicalServerIDs
 + ___54-[WebBookmarkCollection _mergeDuplicateSpecialFolders]_block_invoke
-+ _objc_msgSend$_decodedTrimmedBookmarkSyncDataWithContentsOfData:
-+ _objc_msgSend$_mergeDuplicateSpecialFolders
-+ _objc_msgSend$containsRecordInContentsOfData:
-+ _objc_msgSend$hasRecord
-+ _objc_msgSend$setHasFetchedFeatureText:
 - -[WebBookmarkCollection bookmarksPendingFeatureTextBackfill:]
 - GCC_except_table318
 - GCC_except_table322

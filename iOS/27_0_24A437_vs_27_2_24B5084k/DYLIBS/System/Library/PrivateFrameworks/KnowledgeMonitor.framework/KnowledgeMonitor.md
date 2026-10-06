@@ -2,71 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/KnowledgeMonitor.framework/KnowledgeMonitor`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2e24c` | `0x30458` | **`+0x220c`** |
+| `__TEXT.__cstring` | `0x3111` | `0x3a10` | **`+0x8ff`** |
+| `__AUTH_CONST.__cfstring` | `0x1fe0` | `0x2860` | **`+0x880`** |
+| `__TEXT.__oslogstring` | `0x28d2` | `0x2c2f` | **`+0x35d`** |
+| `__AUTH_CONST.__objc_const` | `0x50d0` | `0x53c0` | **`+0x2f0`** |
+| `__DATA_CONST.__objc_arraydata` | `0x100` | `0x328` | **`+0x228`** |
+| `__TEXT.__objc_methlist` | `0x3264` | `0x3394` | **`+0x130`** |
+| `__DATA_CONST.__objc_selrefs` | `0x24b0` | `0x2578` | **`+0xc8`** |
+| `__TEXT.__gcc_except_tab` | `0x7e4` | `0x894` | **`+0xb0`** |
+| `__AUTH.__objc_data` | `—` | `0xa0` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x9e0` | `0xa80` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0xca8` | `0xd18` | **`+0x70`** |
+| `__DATA_CONST.__got` | `0x648` | `0x6b0` | **`+0x68`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x1c8` | `0x210` | **`+0x48`** |
+| `__DATA.__objc_ivar` | `0x38c` | `0x3b8` | **`+0x2c`** |
+| `__DATA_CONST.__objc_classlist` | `0x180` | `0x190` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x158` | `0x168` | **`+0x10`** |
+| `__TEXT.__const` | `0x250` | `0x240` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -477.0.1.0.0
--  __TEXT.__text: 0x2d6e0
--  __TEXT.__objc_methlist: 0x3264
--  __TEXT.__const: 0x250
--  __TEXT.__gcc_except_tab: 0x7e4
--  __TEXT.__cstring: 0x3111
--  __TEXT.__oslogstring: 0x28d2
--  __TEXT.__unwind_info: 0xfb8
 +480.0.0.0.0
-+  __TEXT.__text: 0x2f85c
-+  __TEXT.__objc_methlist: 0x3394
-+  __TEXT.__const: 0x240
-+  __TEXT.__gcc_except_tab: 0x894
-+  __TEXT.__cstring: 0x3a10
-+  __TEXT.__oslogstring: 0x2c2f
-+  __TEXT.__unwind_info: 0x1058
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9e0
--  __DATA_CONST.__objc_classlist: 0x180
-+  __DATA_CONST.__const: 0xa80
-+  __DATA_CONST.__objc_classlist: 0x190
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x24b0
--  __DATA_CONST.__objc_superrefs: 0x158
--  __DATA_CONST.__objc_arraydata: 0x100
--  __DATA_CONST.__got: 0x648
-+  __DATA_CONST.__objc_selrefs: 0x2578
-+  __DATA_CONST.__objc_superrefs: 0x168
-+  __DATA_CONST.__objc_arraydata: 0x328
-+  __DATA_CONST.__got: 0x6b0
-   __AUTH_CONST.__const: 0x420
--  __AUTH_CONST.__cfstring: 0x1fe0
--  __AUTH_CONST.__objc_const: 0x50d0
--  __AUTH_CONST.__objc_arrayobj: 0x1c8
-+  __AUTH_CONST.__cfstring: 0x2860
-+  __AUTH_CONST.__objc_const: 0x53c0
-+  __AUTH_CONST.__objc_arrayobj: 0x210
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__objc_intobj: 0x168
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__objc_ivar: 0x38c
-+  __AUTH.__objc_data: 0xa0
-+  __DATA.__objc_ivar: 0x3b8
-   __DATA.__data: 0x548
-   __DATA_DIRTY.__objc_data: 0xf00
-   __DATA_DIRTY.__bss: 0xb0
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1249
--  Symbols:   3160
+-  Symbols:   2249
 -  CStrings:  584
 +  Functions: 1293
-+  Symbols:   3253
++  Symbols:   2321
 +  CStrings:  663
- 
 Symbols:
 + -[DKApplicationState rawApplication]
 + -[DKApplicationState setRawApplication:]
@@ -152,31 +123,6 @@ Symbols:
 + ___block_descriptor_80_e8_32r40r48r56r64r72r_e42_v16?0"_DKApplicationMonitorGuardedData"8lr32l8r40l8r48l8r56l8r64l8r72l8
 + _kMRMediaRemoteNowPlayingInfoContentType
 + _kMRMediaRemoteNowPlayingInfoStrictMediaType
-+ _objc_msgSend$ExtensionUsage
-+ _objc_msgSend$addProcess:forIdentity:
-+ _objc_msgSend$allValues
-+ _objc_msgSend$dateWithTimeIntervalSinceReferenceDate:
-+ _objc_msgSend$exitEvent
-+ _objc_msgSend$extensionInfoForID:
-+ _objc_msgSend$extensionPointRecord
-+ _objc_msgSend$iTunesMetadata
-+ _objc_msgSend$initWithBundleIdentifier:parentBundleIdentifier:extensionHostID:
-+ _objc_msgSend$initWithLaunchReason:type:starting:absoluteTimestamp:bundleID:parentBundleID:extensionHostID:shortVersionString:exactVersionString:dyldPlatform:isNativeArchitecture:displayType:transitionReason:
-+ _objc_msgSend$initWithStarting:absoluteTimestamp:bundleID:parentBundleID:extensionHostID:
-+ _objc_msgSend$localNonWakingRegistrationWithIdentifier:contextualPredicate:clientIdentifier:callback:
-+ _objc_msgSend$parentBundleIdentifier
-+ _objc_msgSend$predicateMatchingExtensionPoint:
-+ _objc_msgSend$processUpdateHandlerForEpoch:
-+ _objc_msgSend$rawApplication
-+ _objc_msgSend$removeProcessForIdentity:
-+ _objc_msgSend$saveBMEventWithCurrent:outputDevices:artistStoreIdentifier:albumStoreIdentifier:strictMediaType:contentType:excludeFromSuggestions:
-+ _objc_msgSend$sendBiomeEvent:type:timestamp:
-+ _objc_msgSend$setEndowmentNamespaces:
-+ _objc_msgSend$setEvents:
-+ _objc_msgSend$setValues:
-+ _objc_msgSend$storeItemIdentifier
-+ _objc_msgSend$updateBiomeAppInFocusWithStopEventAtTimestamp:reason:transitionReason:
-+ _objc_msgSend$updateFocalApplication:rawFocalApplication:timestamp:displayType:transitionReason:transaction:
 - -[_DKApplicationMonitor updateFocalApplication:timestamp:displayType:transitionReason:transaction:]
 - -[_DKNowPlayingMonitor saveBMEventWithCurrent:outputDevices:artistStoreIdentifier:albumStoreIdentifier:excludeFromSuggestions:]
 - GCC_except_table42
@@ -189,10 +135,6 @@ Symbols:
 - ___block_descriptor_40_e8_32w_e17_v16?0"NSTimer"8lw32l8
 - ___block_descriptor_72_e8_32r40r48r56r64r_e42_v16?0"_DKApplicationMonitorGuardedData"8lr32l8r40l8r48l8r56l8r64l8
 - ___block_descriptor_96_e8_32s40s48s56s64r72r80r88r_e29_v24?0^{__CFDictionary=}8^v16lr64l8s32l8s40l8r72l8r80l8r88l8s48l8s56l8
-- _objc_msgSend$localNonWakingRegistrationWithIdentifier:contextualPredicate:callback:
-- _objc_msgSend$saveBMEventWithCurrent:outputDevices:artistStoreIdentifier:albumStoreIdentifier:excludeFromSuggestions:
-- _objc_msgSend$scheduledTimerWithTimeInterval:repeats:block:
-- _objc_msgSend$updateFocalApplication:timestamp:displayType:transitionReason:transaction:
 CStrings:
 + "/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/DuetKnowledgeCollector/KnowledgeMonitor/KnowledgeMonitor/Monitors/_DKBacklightMonitor.m:200"
 + "/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/DuetKnowledgeCollector/KnowledgeMonitor/KnowledgeMonitor/Monitors/_DKNowPlayingMonitor.m:502"

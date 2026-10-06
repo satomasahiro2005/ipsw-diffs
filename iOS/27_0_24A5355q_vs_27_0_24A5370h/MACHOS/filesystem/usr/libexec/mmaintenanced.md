@@ -2,118 +2,55 @@
 
 > `/usr/libexec/mmaintenanced`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x22e58` | `0x2418c` | **`+0x1334`** |
+| `__TEXT.__cstring` | `0x1a58` | `0x1bbd` | **`+0x165`** |
+| `__TEXT.__oslogstring` | `0x2c81` | `0x2d46` | **`+0xc5`** |
+| `__DATA_CONST.__const` | `0x13c0` | `0x1438` | **`+0x78`** |
+| `__TEXT.__auth_stubs` | `0x1370` | `0x13d0` | **`+0x60`** |
+| `__TEXT.__eh_frame` | `0x1e8` | `0x230` | **`+0x48`** |
+| `__DATA_CONST.__auth_got` | `0x9c8` | `0x9f8` | **`+0x30`** |
+| `__DATA.__bss` | `0x2b0` | `0x2d0` | **`+0x20`** |
+| `__TEXT.__const` | `0x7e0` | `0x7f8` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x9b8` | `0x9d0` | **`+0x18`** |
+| `__TEXT.__swift5_capture` | `0x1d8` | `0x1ec` | **`+0x14`** |
+| `__TEXT.__swift5_typeref` | `0xec` | `0xfe` | **`+0x12`** |
+| `__DATA_CONST.__auth_ptr` | `0x90` | `0xa0` | **`+0x10`** |
+| `__DATA.__data` | `0x1a0` | `0x1a8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__got`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__init_offsets`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
 -230.0.0.0.0
--  __TEXT.__text: 0x22e58 sha256:3fa1e0a83c9ba26175b424712b911fc50be99f0353b5ddb86e0a0256b1e0d807
--  __TEXT.__auth_stubs: 0x1370 sha256:bf9b1598efc99187ccad688ef584742b62fb09581c2c838cfb66bf8f5e389d55
--  __TEXT.__objc_stubs: 0x540 sha256:ff50da90c8804a942198b9576ed737ec05e0b03e03021f2606a3e3826eba541a
--  __TEXT.__init_offsets: 0x8 sha256:390073e77f1f33c90c0473f22ed79d055af76cc7927e3df8c2619803a595f49e
--  __TEXT.__oslogstring: 0x2c81 sha256:c582c9967a3b373537821495c8c15cbc10e19e225f040e8673af5f1220369d80
--  __TEXT.__const: 0x7e0 sha256:2da7cca332278e73e27f2677f8db7c4c0c66897e0e5d7a69e6e96cca8479ab6d
--  __TEXT.__cstring: 0x1a58 sha256:c2e847e9ae1197f95cdaccae850d203c9f4e9f82e97b655dc739762030d3f05a
--  __TEXT.__gcc_except_tab: 0x868 sha256:81cb5115862bc80f1ed7c5b6014f4722a416ce0236473a59dee84a5cde954faa
--  __TEXT.__swift5_typeref: 0xec sha256:362ae77e6857db61d278c28a8073cf2a6465bd1f1936e20f2a9101eb52b0090d
--  __TEXT.__swift5_capture: 0x1d8 sha256:2f066185f9e4e199f18f74c149232820f4ddf104415c5e0ad6a9f62a54d37e3d
--  __TEXT.__constg_swiftt: 0x44 sha256:c569446c009c5a1fe6b0faa13054c21631575af9b63c52dd8ea0de38df0c49ea
--  __TEXT.__swift5_fieldmd: 0x50 sha256:66bc410c39db6b21995cdeb47dde5f8d4c61b8bf83262a3c5498f2e6e68c7f02
 +233.0.0.0.0
-+  __TEXT.__text: 0x2418c sha256:448b9d98ecfcee9113c76d982f4bcc72963f620bdd54b16f2882e6b6b08b6418
-+  __TEXT.__auth_stubs: 0x13d0 sha256:d93a84c5fc06b0cadfead601eb4b8ad749228cab8c44b8019f23ec566b9a9085
-+  __TEXT.__objc_stubs: 0x540 sha256:8ae4ed27d8e622be7834a91f4f83843767eccdb13f74a615ce43e8537008fa95
-+  __TEXT.__init_offsets: 0x8 sha256:421770f4f8f083c5e8cd9f1304ec937676d67ccba17d18bffb419f7133b5dfbb
-+  __TEXT.__oslogstring: 0x2d46 sha256:fa531ab52ae6ba5422652cdd1149341d927eaf86133080decb94b75eaaa28a9b
-+  __TEXT.__const: 0x7f8 sha256:935e91842bc852605c540df54e8b02a4ee66e447177f20a5f1ae1926a29ff149
-+  __TEXT.__cstring: 0x1bbd sha256:9d0b9f8e5601d23b5111cc0dc2fce03bc44442a6faa76d61d2e3e78352a9ba57
-+  __TEXT.__gcc_except_tab: 0x868 sha256:6e7266270e561e7fa42a7151d0dd6dcaa33fcad10bcfb310507a4f56d08b3ebd
-+  __TEXT.__swift5_typeref: 0xfe sha256:83bb759cd4be6019c6327f539ff7c82308881da49f37241ecb59888c4f71d32b
-+  __TEXT.__swift5_capture: 0x1ec sha256:c51786396ead9e4f529b4d84eb4ddb393b6237ccfcde2df08d8c8f89700fe150
-+  __TEXT.__constg_swiftt: 0x44 sha256:8b4842b79f5bbee37f2af6d80349a2f90a90dd90ea9b0e2ff65c67e576354ea0
-+  __TEXT.__swift5_fieldmd: 0x50 sha256:839fb6d6fb55e02de557c348257f466158b6722f21cdab2a3fe5496e0a654cb8
-   __TEXT.__swift5_types: 0x8 sha256:74da0f35d27397a9621c4d2b0df1cf2c377ccee4fa154ddf53648c707c8bc2eb
--  __TEXT.__swift_as_entry: 0x14 sha256:81cb3d23a4e832b4210fe76f90d803683a0477211ccc6305786d19d406fbb58c
--  __TEXT.__swift_as_ret: 0x14 sha256:abc0420a56bdb2b76f06d18417692e57b60d6d72a3c314b78f98b9b32f0d3678
--  __TEXT.__swift_as_cont: 0x1c sha256:c5d5aa24a86b4e479b9134e72207cce37efc98d431716f3b8b670edee63a8a77
-+  __TEXT.__swift_as_entry: 0x14 sha256:af056326fb081b88f920226f18c5bd940b14a70e07fdabde40f6933d71109660
-+  __TEXT.__swift_as_ret: 0x14 sha256:38c0fe64c6d1ded9c66b82db8894828eb5c2d31f2a2b0037b1ee5fa46816b3a7
-+  __TEXT.__swift_as_cont: 0x1c sha256:17f9350a4f54e365aa5bbbb15282ceba0f18c49f356766cd117e24a81fe52ab7
-   __TEXT.__swift5_reflstr: 0x24 sha256:551dac0af9db391a41a642fb1a6a65dbe97d26cf689dd5b3fc8e1202f0b3dc79
--  __TEXT.__swift5_proto: 0x8 sha256:641d734b19762df716470f9ab6bbb7e610db0d8462fb0620d3504b67f44b4d67
-+  __TEXT.__swift5_proto: 0x8 sha256:b0e409ffef4954fb5a267dc280b0a2ad083511a4926c2174c67da1f2f57975e1
-   __TEXT.__objc_methtype: 0x1d sha256:bbca203793837ff7c1a183afe674b2667a8cf7bb46d344066e0508e6a51a8275
-   __TEXT.__objc_methname: 0x352 sha256:4cca29d583009bb34d827904e70b24eaa3ac2c111141a2f547412700b5451166
--  __TEXT.__unwind_info: 0x9b8 sha256:1e094458ded74c4c695eaaf4100dde3ce42b008fdad630714a666def9bd5f55e
--  __TEXT.__eh_frame: 0x1e8 sha256:1da22a8f71b2317a275b146862dbfba06409c7d523921f512eca78e10c3e4fca
--  __DATA_CONST.__const: 0x13c0 sha256:19ad766e165e9b6b4f154c7953941189ddb9c6e8996a26f156f6dd86a1364376
--  __DATA_CONST.__cfstring: 0x60 sha256:d1c18a77cb1ace8016a5d3b1cb9a2a443c4186b35761bb7801283ccc1141ded0
-+  __TEXT.__unwind_info: 0x9d0 sha256:14cdf118169c3b2571919f3075fabbd0418ecb29a7c73cda0aced8bb611a7af0
-+  __TEXT.__eh_frame: 0x230 sha256:803deb17d14a7500fda9d58829c6359f8cb3be30955f80282f8e278ad498c412
-+  __DATA_CONST.__const: 0x1438 sha256:fe2622600500b791483041f426c4e7c345a72f00660819fea6810676ac50201a
-+  __DATA_CONST.__cfstring: 0x60 sha256:b3cad626b33db4bc59d3ffe24eff85c392b3cc2115c5cd91a077435b97b7ac3a
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:885ce8037a15de89b0ceb0054c31fc3de725513307f685be388961916dadcdb0
--  __DATA_CONST.__auth_got: 0x9c8 sha256:7065d6c14744ecf8669c81b197931bb8103d0fb7bea0a17e2aef2ae0e42d487b
--  __DATA_CONST.__got: 0x218 sha256:5a9686f99f80618c9a46baa77b674563a19ec6909837ec93efab5ed5c6dc0caf
--  __DATA_CONST.__auth_ptr: 0x90 sha256:f5c20d234653b601be059f924ae7d9a8223d871d173870451720f7241c44009e
--  __DATA.__objc_selrefs: 0x150 sha256:4ecdb3d0535d50f2f1c3a2237319bdfb4c5f8c5868ec6291e07fed67db419cea
--  __DATA.__data: 0x1a0 sha256:e04624fc8c4834fa89c341324153a77f75815eea0781512413a866b37d9cfd2d
--  __DATA.__bss: 0x2b0 sha256:334e61fade598d87a35822d34aaa6adec70d9edb5a441ea134552eeb2afd813e
-+  __DATA_CONST.__auth_got: 0x9f8 sha256:eba85c4c9b0c7677771ecd1f7be6fd7b52353f2d56721ba3f3bfd508126481f2
-+  __DATA_CONST.__got: 0x218 sha256:8e390ffa1126dae30fc3c56f11ace98fcde407b4d54416d6d121ea37dcc4b616
-+  __DATA_CONST.__auth_ptr: 0xa0 sha256:12a49843679163f1c6056f3976c3843a451f335ae69ac1bb35798d353d251414
-+  __DATA.__objc_selrefs: 0x150 sha256:d2690c5f24ee0aa7179ed6e8814bd79e0c2bc4309a5022dfb045e843bd4800e5
-+  __DATA.__data: 0x1a8 sha256:b8c76afe33b971b2f874f7a88f5109e40f58fca350c5b0c317f3b2c3f8bb377c
-+  __DATA.__bss: 0x2d0 sha256:fe2f74a1e0b16a66452888eb4d734bc455cf1304481bb495d59afa8cf9cae93b
-   __DATA.__common: 0x64 sha256:cd00e292c5970d3c5e2f0ffa5171e555bc46bfc4faddfb4a418b6840b86e79a3
-   - /AppleInternal/Library/Frameworks/TapToRadarKit.framework/TapToRadarKit
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/CoreSymbolication.framework/CoreSymbolication
-   - /System/Library/PrivateFrameworks/CrashReporterSupport.framework/CrashReporterSupport
 +  - /System/Library/PrivateFrameworks/ExclavesStats.framework/ExclavesStats
-   - /System/Library/PrivateFrameworks/KRExperiments.framework/KRExperiments
-   - /System/Library/PrivateFrameworks/ModelManagerServices.framework/ModelManagerServices
-   - /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: 21195631-EC49-3CFD-B050-7417C3CB38EB
 -  Functions: 680
--  Symbols:   3807
--  CStrings:  469
-+  UUID: 07013353-1BA4-3088-B642-10A1B7B70CA4
+-  Symbols:   1381
+-  CStrings:  465
 +  Functions: 695
-+  Symbols:   3836
-+  CStrings:  481
- 
++  Symbols:   1402
++  CStrings:  477
 Symbols:
-+ $s23MemoryMaintenance_Swift26registerBackgroundActivity6taskID8activityySS_yyYbXBtFySo12BGSystemTaskCcfU_TA.38
-+ $s23MemoryMaintenance_Swift26registerBackgroundActivity6taskID8activityySS_yyYbXBtFySo12BGSystemTaskCcfU_TA.45
-+ $s23MemoryMaintenance_Swift26registerBackgroundActivity6taskID8activityySS_yyYbXBtFySo12BGSystemTaskCcfU_TA.58
-+ $s23MemoryMaintenance_Swift26registerBackgroundActivity6taskID8activityySS_yyYbXBtFySo12BGSystemTaskCcfU_TA.65
-+ $s23MemoryMaintenance_Swift26registerBackgroundActivity6taskID8activityySS_yyYbXBtFySo12BGSystemTaskCcfU_TA.72
-+ /Library/Caches/com.apple.xbs/30EE84CB-4FD0-4E13-9EB9-747BF23534A1/TemporaryDirectory.b6yowc/Sources/kernel_tools/CPPUtil/
-+ /Library/Caches/com.apple.xbs/AA5AEC94-E2C7-4A0A-8001-F0A28AAA55F1/TemporaryDirectory.YpBxMA/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/DerivedSources/arm64e/
-+ /Library/Caches/com.apple.xbs/AA5AEC94-E2C7-4A0A-8001-F0A28AAA55F1/TemporaryDirectory.YpBxMA/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/compressor_sweep.o
-+ /Library/Caches/com.apple.xbs/AA5AEC94-E2C7-4A0A-8001-F0A28AAA55F1/TemporaryDirectory.YpBxMA/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/ecc_logging.o
-+ /Library/Caches/com.apple.xbs/AA5AEC94-E2C7-4A0A-8001-F0A28AAA55F1/TemporaryDirectory.YpBxMA/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/file_utils.o
-+ /Library/Caches/com.apple.xbs/AA5AEC94-E2C7-4A0A-8001-F0A28AAA55F1/TemporaryDirectory.YpBxMA/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/llc_logging.o
-+ /Library/Caches/com.apple.xbs/AA5AEC94-E2C7-4A0A-8001-F0A28AAA55F1/TemporaryDirectory.YpBxMA/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/mach_services.o
-+ /Library/Caches/com.apple.xbs/AA5AEC94-E2C7-4A0A-8001-F0A28AAA55F1/TemporaryDirectory.YpBxMA/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/mcc_logging.o
-+ /Library/Caches/com.apple.xbs/AA5AEC94-E2C7-4A0A-8001-F0A28AAA55F1/TemporaryDirectory.YpBxMA/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/memory_error_notificationServer.o
-+ /Library/Caches/com.apple.xbs/AA5AEC94-E2C7-4A0A-8001-F0A28AAA55F1/TemporaryDirectory.YpBxMA/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/memory_level.o
-+ /Library/Caches/com.apple.xbs/AA5AEC94-E2C7-4A0A-8001-F0A28AAA55F1/TemporaryDirectory.YpBxMA/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/memory_stats.o
-+ /Library/Caches/com.apple.xbs/AA5AEC94-E2C7-4A0A-8001-F0A28AAA55F1/TemporaryDirectory.YpBxMA/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/mmaintenanced.o
-+ /Library/Caches/com.apple.xbs/AA5AEC94-E2C7-4A0A-8001-F0A28AAA55F1/TemporaryDirectory.YpBxMA/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/mmaintenanced_lto.o
-+ /Library/Caches/com.apple.xbs/AA5AEC94-E2C7-4A0A-8001-F0A28AAA55F1/TemporaryDirectory.YpBxMA/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/neural_memory.o
-+ /Library/Caches/com.apple.xbs/AA5AEC94-E2C7-4A0A-8001-F0A28AAA55F1/TemporaryDirectory.YpBxMA/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/os_logging.o
-+ /Library/Caches/com.apple.xbs/AA5AEC94-E2C7-4A0A-8001-F0A28AAA55F1/TemporaryDirectory.YpBxMA/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/read_jetsam_properties.o
-+ /Library/Caches/com.apple.xbs/AA5AEC94-E2C7-4A0A-8001-F0A28AAA55F1/TemporaryDirectory.YpBxMA/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/system_hwm.o
-+ /Library/Caches/com.apple.xbs/AA5AEC94-E2C7-4A0A-8001-F0A28AAA55F1/TemporaryDirectory.YpBxMA/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/system_hwm_reporting.o
-+ /Library/Caches/com.apple.xbs/AA5AEC94-E2C7-4A0A-8001-F0A28AAA55F1/TemporaryDirectory.YpBxMA/Sources/MemoryMaintenance/Shared/
-+ /Library/Caches/com.apple.xbs/AA5AEC94-E2C7-4A0A-8001-F0A28AAA55F1/TemporaryDirectory.YpBxMA/Sources/MemoryMaintenance/mmaintenanced/
-+ /Library/Caches/com.apple.xbs/AA5AEC94-E2C7-4A0A-8001-F0A28AAA55F1/TemporaryDirectory.YpBxMA/Sources/MemoryMaintenance/mmaintenanced/error_logging/
 + _$s13ExclavesStats0aB6ServerC012getAddrspaceB0SDySSSDySSSdGGyKFZ
 + _$s13ExclavesStats0aB6ServerC08getShmemB0SDySSSDySSSdGGyKFZ
 + _$s13ExclavesStats0aB6ServerCMa
@@ -132,9 +69,9 @@ Symbols:
 + _$ss10_HashTableV11startBucketAB0D0Vvg
 + _$ss18_DictionaryStorageCySSSDySSSdGGMR
 + _$ss18_DictionaryStorageCySSSDySSSdGGMd
-+ _ZNSt3__110shared_ptrINS_13__empty_stateIcEEEC2B9fqe220106IS2_Li0EEEPT_.cold.1
-+ _ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSC_EEESD_SG_EUlvE0_EEvbT_T0_.cold.1
-+ _ZNSt3__118__match_char_icaseIcNS_12regex_traitsIcEEEC2B9fqe220106ERKS2_cPNS_6__nodeIcEE.cold.1
++ _ZNSt3__110shared_ptrINS_13__empty_stateIcEEEC2B9fqe220106IS2_Li0EEEPT_
++ _ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSC_EEESD_SG_EUlvE0_EEvbT_T0_
++ _ZNSt3__118__match_char_icaseIcNS_12regex_traitsIcEEEC2B9fqe220106ERKS2_cPNS_6__nodeIcEE
 + __ZNKSt3__16__loopIcE13__init_repeatB9fqe220106ERNS_7__stateIcEE
 + __ZNKSt9type_infoeqB9fqe220106ERKS_
 + __ZNSt12length_errorC1B9fqe220106EPKc
@@ -213,64 +150,12 @@ Symbols:
 + __ZNSt3__1plB9fqe220106IcNS_11char_traitsIcEENS_9allocatorIcEEEENS_12basic_stringIT_T0_T1_EERKS9_SB_
 + __ZNSt3__1ssB9fqe220106IcNS_11char_traitsIcEENS_9allocatorIcEEEEDaRKNS_12basic_stringIT_T0_T1_EESC_
 + __ZSt28__throw_bad_array_new_lengthB9fqe220106v
-+ __swift_closure_destructor.36
-+ __swift_closure_destructor.43
-+ __swift_closure_destructor.50
-+ __swift_closure_destructor.56
-+ __swift_closure_destructor.63
-+ __swift_closure_destructor.70
 + _objc_release_x28
 + _register_report_exclaves_memory_info_activity
 + _symbolic _____ySSSDySSSdGG s18_DictionaryStorageC
-+ block_copy_helper.32
-+ block_copy_helper.39
-+ block_copy_helper.46
-+ block_copy_helper.52
-+ block_copy_helper.59
-+ block_copy_helper.66
-+ block_copy_helper.73
-+ block_descriptor.34
-+ block_descriptor.41
-+ block_descriptor.48
-+ block_descriptor.54
-+ block_descriptor.61
-+ block_descriptor.68
-+ block_descriptor.75
-+ block_destroy_helper.33
-+ block_destroy_helper.40
-+ block_destroy_helper.47
-+ block_destroy_helper.53
-+ block_destroy_helper.60
-+ block_destroy_helper.67
-+ block_destroy_helper.74
-- $s23MemoryMaintenance_Swift26registerBackgroundActivity6taskID8activityySS_yyYbXBtFySo12BGSystemTaskCcfU_TA.35
-- $s23MemoryMaintenance_Swift26registerBackgroundActivity6taskID8activityySS_yyYbXBtFySo12BGSystemTaskCcfU_TA.48
-- $s23MemoryMaintenance_Swift26registerBackgroundActivity6taskID8activityySS_yyYbXBtFySo12BGSystemTaskCcfU_TA.55
-- $s23MemoryMaintenance_Swift26registerBackgroundActivity6taskID8activityySS_yyYbXBtFySo12BGSystemTaskCcfU_TA.62
-- /Library/Caches/com.apple.xbs/E82063C3-CEAE-42A5-80EA-AFEC9DF6B734/TemporaryDirectory.F7uz9s/Sources/kernel_tools/CPPUtil/
-- /Library/Caches/com.apple.xbs/FBC11451-9E4A-4FB5-9F56-884396BEE73C/TemporaryDirectory.CsyGri/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/DerivedSources/arm64e/
-- /Library/Caches/com.apple.xbs/FBC11451-9E4A-4FB5-9F56-884396BEE73C/TemporaryDirectory.CsyGri/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/compressor_sweep.o
-- /Library/Caches/com.apple.xbs/FBC11451-9E4A-4FB5-9F56-884396BEE73C/TemporaryDirectory.CsyGri/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/ecc_logging.o
-- /Library/Caches/com.apple.xbs/FBC11451-9E4A-4FB5-9F56-884396BEE73C/TemporaryDirectory.CsyGri/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/file_utils.o
-- /Library/Caches/com.apple.xbs/FBC11451-9E4A-4FB5-9F56-884396BEE73C/TemporaryDirectory.CsyGri/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/llc_logging.o
-- /Library/Caches/com.apple.xbs/FBC11451-9E4A-4FB5-9F56-884396BEE73C/TemporaryDirectory.CsyGri/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/mach_services.o
-- /Library/Caches/com.apple.xbs/FBC11451-9E4A-4FB5-9F56-884396BEE73C/TemporaryDirectory.CsyGri/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/mcc_logging.o
-- /Library/Caches/com.apple.xbs/FBC11451-9E4A-4FB5-9F56-884396BEE73C/TemporaryDirectory.CsyGri/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/memory_error_notificationServer.o
-- /Library/Caches/com.apple.xbs/FBC11451-9E4A-4FB5-9F56-884396BEE73C/TemporaryDirectory.CsyGri/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/memory_level.o
-- /Library/Caches/com.apple.xbs/FBC11451-9E4A-4FB5-9F56-884396BEE73C/TemporaryDirectory.CsyGri/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/memory_stats.o
-- /Library/Caches/com.apple.xbs/FBC11451-9E4A-4FB5-9F56-884396BEE73C/TemporaryDirectory.CsyGri/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/mmaintenanced.o
-- /Library/Caches/com.apple.xbs/FBC11451-9E4A-4FB5-9F56-884396BEE73C/TemporaryDirectory.CsyGri/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/mmaintenanced_lto.o
-- /Library/Caches/com.apple.xbs/FBC11451-9E4A-4FB5-9F56-884396BEE73C/TemporaryDirectory.CsyGri/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/neural_memory.o
-- /Library/Caches/com.apple.xbs/FBC11451-9E4A-4FB5-9F56-884396BEE73C/TemporaryDirectory.CsyGri/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/os_logging.o
-- /Library/Caches/com.apple.xbs/FBC11451-9E4A-4FB5-9F56-884396BEE73C/TemporaryDirectory.CsyGri/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/read_jetsam_properties.o
-- /Library/Caches/com.apple.xbs/FBC11451-9E4A-4FB5-9F56-884396BEE73C/TemporaryDirectory.CsyGri/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/system_hwm.o
-- /Library/Caches/com.apple.xbs/FBC11451-9E4A-4FB5-9F56-884396BEE73C/TemporaryDirectory.CsyGri/Binaries/MemoryMaintenance/install/TempContent/Objects/MemoryMaintenance.build/mmaintenanced.build/Objects-normal/arm64e/system_hwm_reporting.o
-- /Library/Caches/com.apple.xbs/FBC11451-9E4A-4FB5-9F56-884396BEE73C/TemporaryDirectory.CsyGri/Sources/MemoryMaintenance/Shared/
-- /Library/Caches/com.apple.xbs/FBC11451-9E4A-4FB5-9F56-884396BEE73C/TemporaryDirectory.CsyGri/Sources/MemoryMaintenance/mmaintenanced/
-- /Library/Caches/com.apple.xbs/FBC11451-9E4A-4FB5-9F56-884396BEE73C/TemporaryDirectory.CsyGri/Sources/MemoryMaintenance/mmaintenanced/error_logging/
-- _ZNSt3__110shared_ptrINS_13__empty_stateIcEEEC2B9fqe220100IS2_Li0EEEPT_.cold.1
-- _ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSC_EEESD_SG_EUlvE0_EEvbT_T0_.cold.1
-- _ZNSt3__118__match_char_icaseIcNS_12regex_traitsIcEEEC2B9fqe220100ERKS2_cPNS_6__nodeIcEE.cold.1
+- _ZNSt3__110shared_ptrINS_13__empty_stateIcEEEC2B9fqe220100IS2_Li0EEEPT_
+- _ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSC_EEESD_SG_EUlvE0_EEvbT_T0_
+- _ZNSt3__118__match_char_icaseIcNS_12regex_traitsIcEEEC2B9fqe220100ERKS2_cPNS_6__nodeIcEE
 - __ZNKSt3__16__loopIcE13__init_repeatB9fqe220100ERNS_7__stateIcEE
 - __ZNKSt9type_infoeqB9fqe220100ERKS_
 - __ZNSt12length_errorC1B9fqe220100EPKc
@@ -349,26 +234,6 @@ Symbols:
 - __ZNSt3__1plB9fqe220100IcNS_11char_traitsIcEENS_9allocatorIcEEEENS_12basic_stringIT_T0_T1_EERKS9_SB_
 - __ZNSt3__1ssB9fqe220100IcNS_11char_traitsIcEENS_9allocatorIcEEEEDaRKNS_12basic_stringIT_T0_T1_EESC_
 - __ZSt28__throw_bad_array_new_lengthB9fqe220100v
-- __swift_closure_destructor.33
-- __swift_closure_destructor.40
-- __swift_closure_destructor.46
-- __swift_closure_destructor.53
-- __swift_closure_destructor.60
-- block_copy_helper.36
-- block_copy_helper.42
-- block_copy_helper.49
-- block_copy_helper.56
-- block_copy_helper.63
-- block_descriptor.38
-- block_descriptor.44
-- block_descriptor.51
-- block_descriptor.58
-- block_descriptor.65
-- block_destroy_helper.37
-- block_destroy_helper.43
-- block_destroy_helper.50
-- block_destroy_helper.57
-- block_destroy_helper.64
 CStrings:
 + "Exclaves Stats Reporting"
 + "Failed to sample exclaves addrspace stats"
@@ -386,5 +251,4 @@ CStrings:
 + "peak_footprint_kib"
 - "Failed to update permisions to %04o and/or user/group ownership to %d/%d for '%s'."
 - "Failed to update permisions to %04o for '%s'."
-
 ```

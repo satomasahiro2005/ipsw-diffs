@@ -2,38 +2,26 @@
 
 > `/usr/lib/system/libcorecrypto_trace.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__fips_hmacs`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__AUTH_CONST.__const`
-- `__AUTH.__data`
-- `__DATA.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8cd58` | `0x8d054` | **`+0x2fc`** |
+| `__TEXT.__cstring` | `0x57a3` | `0x5a8b` | **`+0x2e8`** |
+
+### Other Changes
 
 ```diff
 
 -2109.0.11.0.0
--  __TEXT.__text: 0x8cd58
--  __TEXT.__cstring: 0x57a3
 +2109.0.17.0.0
-+  __TEXT.__text: 0x8d054
-+  __TEXT.__cstring: 0x5a8b
-   __TEXT.__const: 0x20498
-   __TEXT.__fips_hmacs: 0x20
-   __TEXT.__oslogstring: 0x60
 
-   - /usr/lib/system/libsystem_platform.dylib
-   - /usr/lib/system/libsystem_pthread.dylib
-   - /usr/lib/system/libsystem_trace.dylib
 -  Functions: 2646
 -  Symbols:   2979
 -  CStrings:  543
 +  Functions: 2645
 +  Symbols:   2981
 +  CStrings:  553
- 
 Symbols:
 + _ccmldsa_keygen_pairwise_check
 + _ccmlkem_kem_pairwise_check

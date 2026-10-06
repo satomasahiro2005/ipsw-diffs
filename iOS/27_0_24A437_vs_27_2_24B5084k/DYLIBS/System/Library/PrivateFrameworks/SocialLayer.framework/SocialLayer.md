@@ -2,104 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/SocialLayer.framework/SocialLayer`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xdad14` | `0xdc6fc` | **`+0x19e8`** |
+| `__DATA.__bss` | `0x2a80` | `0x2c00` | **`+0x180`** |
+| `__TEXT.__eh_frame` | `0x29e0` | `0x2b58` | **`+0x178`** |
+| `__TEXT.__oslogstring` | `0xdcf7` | `0xde62` | **`+0x16b`** |
+| `__AUTH_CONST.__const` | `0x3728` | `0x3828` | **`+0x100`** |
+| `__TEXT.__const` | `0x31d4` | `0x32d4` | **`+0x100`** |
+| `__TEXT.__cstring` | `0x575d` | `0x581d` | **`+0xc0`** |
+| `__TEXT.__unwind_info` | `0x3570` | `0x3608` | **`+0x98`** |
+| `__TEXT.__swift5_typeref` | `0x1346` | `0x139a` | **`+0x54`** |
+| `__TEXT.__objc_methlist` | `0x650c` | `0x655c` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3b50` | `0x3b98` | **`+0x48`** |
+| `__AUTH_CONST.__auth_got` | `0x1368` | `0x13a8` | **`+0x40`** |
+| `__TEXT.__swift5_fieldmd` | `0xd38` | `0xd70` | **`+0x38`** |
+| `__TEXT.__constg_swiftt` | `0x13b0` | `0x13e0` | **`+0x30`** |
+| `__TEXT.__gcc_except_tab` | `0x1498` | `0x146c` | **`-0x2c`** |
+| `__TEXT.__swift_as_cont` | `0x1b4` | `0x1d8` | **`+0x24`** |
+| `__DATA.__data` | `0x17a8` | `0x17c8` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x7e3` | `0x803` | **`+0x20`** |
+| `__TEXT.__swift5_assocty` | `0x170` | `0x188` | **`+0x18`** |
+| `__DATA_CONST.__const` | `0x20f8` | `0x20e8` | **`-0x10`** |
+| `__TEXT.__swift5_proto` | `0x1b4` | `0x1c0` | **`+0xc`** |
+| `__TEXT.__swift_as_entry` | `0xa4` | `0xb0` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `0x100` | `0x10c` | **`+0xc`** |
+| `__AUTH.__data` | `0xb70` | `0xb68` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0x134` | `0x13c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -217.100.1.0.0
--  __TEXT.__text: 0xd5500
--  __TEXT.__objc_methlist: 0x650c
--  __TEXT.__const: 0x31d4
--  __TEXT.__gcc_except_tab: 0x1498
--  __TEXT.__cstring: 0x575d
 +217.200.21.0.0
-+  __TEXT.__text: 0xd6d18
-+  __TEXT.__objc_methlist: 0x655c
-+  __TEXT.__const: 0x32d4
-+  __TEXT.__gcc_except_tab: 0x146c
-+  __TEXT.__cstring: 0x581d
-   __TEXT.__dlopen_cstrs: 0x3a8
--  __TEXT.__oslogstring: 0xdcf7
--  __TEXT.__swift5_typeref: 0x1346
--  __TEXT.__constg_swiftt: 0x13b0
--  __TEXT.__swift5_reflstr: 0x7e3
--  __TEXT.__swift5_fieldmd: 0xd38
-+  __TEXT.__oslogstring: 0xde62
-+  __TEXT.__swift5_typeref: 0x139a
-+  __TEXT.__constg_swiftt: 0x13e0
-+  __TEXT.__swift5_reflstr: 0x803
-+  __TEXT.__swift5_fieldmd: 0xd70
-   __TEXT.__swift5_builtin: 0xc8
--  __TEXT.__swift5_assocty: 0x170
--  __TEXT.__swift5_proto: 0x1b4
--  __TEXT.__swift5_types: 0x134
-+  __TEXT.__swift5_assocty: 0x188
-+  __TEXT.__swift5_proto: 0x1c0
-+  __TEXT.__swift5_types: 0x13c
-   __TEXT.__swift5_capture: 0x714
--  __TEXT.__swift_as_entry: 0xa4
--  __TEXT.__swift_as_ret: 0x100
--  __TEXT.__swift_as_cont: 0x1b4
-+  __TEXT.__swift_as_entry: 0xb0
-+  __TEXT.__swift_as_ret: 0x10c
-+  __TEXT.__swift_as_cont: 0x1d8
-   __TEXT.__swift5_protos: 0x24
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x4388
--  __TEXT.__eh_frame: 0x29e0
-+  __TEXT.__unwind_info: 0x4438
-+  __TEXT.__eh_frame: 0x2b58
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x20f8
-+  __DATA_CONST.__const: 0x20e8
-   __DATA_CONST.__objc_classlist: 0x3a8
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x150
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3b50
-+  __DATA_CONST.__objc_selrefs: 0x3b98
-   __DATA_CONST.__objc_protorefs: 0x98
-   __DATA_CONST.__objc_superrefs: 0x278
-   __DATA_CONST.__objc_arraydata: 0x38
-   __DATA_CONST.__got: 0xe80
--  __AUTH_CONST.__const: 0x3728
-+  __AUTH_CONST.__const: 0x3828
-   __AUTH_CONST.__cfstring: 0x2fc0
-   __AUTH_CONST.__objc_const: 0xb548
-   __AUTH_CONST.__objc_intobj: 0xa8
-   __AUTH_CONST.__objc_arrayobj: 0x30
--  __AUTH_CONST.__auth_got: 0x1368
-+  __AUTH_CONST.__auth_got: 0x13a8
-   __AUTH.__objc_data: 0x22b0
--  __AUTH.__data: 0xb70
-+  __AUTH.__data: 0xb68
-   __DATA.__objc_ivar: 0x628
--  __DATA.__data: 0x17a8
-+  __DATA.__data: 0x17c8
-   __DATA.__common: 0x190
-   __DATA_DIRTY.__objc_data: 0x820
-   __DATA_DIRTY.__bss: 0xe8
 
-   - /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard
-   - /System/Library/PrivateFrameworks/CloudDocs.framework/CloudDocs
-   - /System/Library/PrivateFrameworks/ContactsUICore.framework/ContactsUICore
 +  - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/CorePhoneNumbers.framework/CorePhoneNumbers
-   - /System/Library/PrivateFrameworks/CoreUI.framework/CoreUI
-   - /System/Library/PrivateFrameworks/CoreUtils.framework/CoreUtils
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5061
--  Symbols:   11130
+-  Symbols:   9541
 -  CStrings:  1350
 +  Functions: 5095
-+  Symbols:   11215
++  Symbols:   9618
 +  CStrings:  1360
- 
 Symbols:
 + +[SLDCollaborationAttributionViewRenderer pendingRequestBadgeCutoutWidth]
 + +[SLDCollaborationAttributionViewRenderer pendingRequestBadgeRectForAvatarRect:displayScale:RTL:]
@@ -193,14 +140,6 @@ Symbols:
 + ___70-[SLDCollaborationAttributionViewRenderer newPendingRequestBadgeColor]_block_invoke
 + ___swift_destroy_boxed_opaque_existential_0Tm
 + _associated conformance 11SocialLayer24CollaborationLinkMetricsO9ShareTypeOSHAASQ
-+ _objc_msgSend$concatGlyphDrawingTransformForGlyph:contentRect:inContext:
-+ _objc_msgSend$drawPendingRequestBadgeOverlayForAvatarRect:inContext:
-+ _objc_msgSend$initWithBool:
-+ _objc_msgSend$initWithInteger:
-+ _objc_msgSend$newBadgeAccentedImageForGlyph:peopleColor:
-+ _objc_msgSend$newPendingRequestBadgeColor
-+ _objc_msgSend$pendingRequestBadgeRectForAvatarRect:displayScale:RTL:
-+ _objc_msgSend$placeholderGlyphCenteredWithinRect:contentRect:
 + _symbolic SS_So8NSObjectCt
 + _symbolic _____ 11SocialLayer24CollaborationLinkMetricsO
 + _symbolic _____ 11SocialLayer24CollaborationLinkMetricsO9ShareTypeO

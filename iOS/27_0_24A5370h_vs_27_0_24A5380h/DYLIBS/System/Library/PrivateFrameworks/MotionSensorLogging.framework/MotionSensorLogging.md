@@ -2,54 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/MotionSensorLogging.framework/MotionSensorLogging`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x266e84` | `0x26819c` | **`+0x1318`** |
+| `__TEXT.__cstring` | `0x127b9` | `0x12810` | **`+0x57`** |
+| `__AUTH_CONST.__const` | `0xb3c0` | `0xb410` | **`+0x50`** |
+| `__TEXT.__const` | `0x491a` | `0x493a` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x6880` | `0x68a0` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x3c94` | `0x3ca4` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x266e84
-+  __TEXT.__text: 0x26819c
-   __TEXT.__objc_methlist: 0x14
--  __TEXT.__const: 0x491a
--  __TEXT.__gcc_except_tab: 0x3c94
-+  __TEXT.__const: 0x493a
-+  __TEXT.__gcc_except_tab: 0x3ca4
-   __TEXT.__oslogstring: 0x450
--  __TEXT.__cstring: 0x127b9
--  __TEXT.__unwind_info: 0x6880
-+  __TEXT.__cstring: 0x12810
-+  __TEXT.__unwind_info: 0x68a0
-   __TEXT.__eh_frame: 0x670
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+-3169.4.0.0.0
++3176.0.0.0.0
 
-   __DATA_CONST.__weak_got: 0x8
-   __DATA_CONST.__objc_selrefs: 0xf0
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xb3c0
-+  __AUTH_CONST.__const: 0xb410
-   __AUTH_CONST.__cfstring: 0x120
-   __AUTH_CONST.__objc_const: 0x90
-   __AUTH_CONST.__weak_auth_got: 0x18
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 10474
 -  Symbols:   11913
--  CStrings:  3858
+-  CStrings:  3849
 +  Functions: 10492
 +  Symbols:   11934
-+  CStrings:  3866
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__objc_data : content changed
++  CStrings:  3857
 Symbols:
 + __ZN5CMMsl11ButtonPress8readFromERN2PB6ReaderE
 + __ZN5CMMsl11ButtonPressC1EOS0_
@@ -81,5 +57,4 @@ CStrings:
 + "usage"
 + "usagePage"
 + "yOffset"
-
 ```

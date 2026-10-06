@@ -2,89 +2,55 @@
 
 > `/Applications/AccessibilityReader_iOS.app/AccessibilityReader_iOS`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x11128` | `0x160c0` | **`+0x4f98`** |
+| `__TEXT.__auth_stubs` | `0x1170` | `0x1520` | **`+0x3b0`** |
+| `__DATA_CONST.__auth_got` | `0x8c0` | `0xa98` | **`+0x1d8`** |
+| `__DATA_CONST.__got` | `0x2c0` | `0x3e0` | **`+0x120`** |
+| `__TEXT.__eh_frame` | `0x680` | `0x7a0` | **`+0x120`** |
+| `__DATA.__data` | `0x8c8` | `0x958` | **`+0x90`** |
+| `__TEXT.__swift5_typeref` | `0xb92` | `0xc04` | **`+0x72`** |
+| `__TEXT.__const` | `0x6c4` | `0x734` | **`+0x70`** |
+| `__TEXT.__unwind_info` | `0x400` | `0x470` | **`+0x70`** |
+| `__DATA_CONST.__const` | `0x660` | `0x6b0` | **`+0x50`** |
+| `__TEXT.__swift5_reflstr` | `0x236` | `0x286` | **`+0x50`** |
+| `__DATA_CONST.__auth_ptr` | `0x2c8` | `0x2f8` | **`+0x30`** |
+| `__TEXT.__swift5_capture` | `0x1b8` | `0x1e0` | **`+0x28`** |
+| `__TEXT.__swift5_fieldmd` | `0x1e8` | `0x20c` | **`+0x24`** |
+| `__TEXT.__swift_as_cont` | `0x44` | `0x58` | **`+0x14`** |
+| `__TEXT.__swift_as_entry` | `0x24` | `0x28` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x1c` | `0x20` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_types`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x11128
--  __TEXT.__auth_stubs: 0x1170
-+  __TEXT.__text: 0x160c0
-+  __TEXT.__auth_stubs: 0x1520
-   __TEXT.__objc_stubs: 0x1a0
-   __TEXT.__objc_methlist: 0x19c
--  __TEXT.__const: 0x6c4
-+  __TEXT.__const: 0x734
-   __TEXT.__objc_classname: 0x107
-   __TEXT.__objc_methname: 0x459
-   __TEXT.__objc_methtype: 0x159
-   __TEXT.__constg_swiftt: 0x288
--  __TEXT.__swift5_typeref: 0xb92
--  __TEXT.__swift5_reflstr: 0x236
--  __TEXT.__swift5_fieldmd: 0x1e8
--  __TEXT.__swift5_capture: 0x1b8
-+  __TEXT.__swift5_typeref: 0xc04
-+  __TEXT.__swift5_reflstr: 0x286
-+  __TEXT.__swift5_fieldmd: 0x20c
-+  __TEXT.__swift5_capture: 0x1e0
-   __TEXT.__cstring: 0x19b
-   __TEXT.__oslogstring: 0x5bb
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_proto: 0x14
-   __TEXT.__swift5_types: 0x24
--  __TEXT.__swift_as_entry: 0x24
--  __TEXT.__swift_as_ret: 0x1c
--  __TEXT.__swift_as_cont: 0x44
-+  __TEXT.__swift_as_entry: 0x28
-+  __TEXT.__swift_as_ret: 0x20
-+  __TEXT.__swift_as_cont: 0x58
-   __TEXT.__swift5_assocty: 0x48
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__unwind_info: 0x400
--  __TEXT.__eh_frame: 0x680
--  __DATA_CONST.__const: 0x660
-+  __TEXT.__unwind_info: 0x470
-+  __TEXT.__eh_frame: 0x7a0
-+  __DATA_CONST.__const: 0x6b0
-   __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__auth_got: 0x8c0
--  __DATA_CONST.__got: 0x2c0
--  __DATA_CONST.__auth_ptr: 0x2c8
-+  __DATA_CONST.__auth_got: 0xa98
-+  __DATA_CONST.__got: 0x3e0
-+  __DATA_CONST.__auth_ptr: 0x2f8
-   __DATA.__objc_const: 0x328
-   __DATA.__objc_selrefs: 0x150
-   __DATA.__objc_data: 0xb8
--  __DATA.__data: 0x8c8
-+  __DATA.__data: 0x958
-   __DATA.__common: 0x10
-   __DATA.__bss: 0x2b0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+-3232.3.0.0.0
++3234.5.0.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 270
 -  Symbols:   484
 +  Functions: 293
 +  Symbols:   581
-   CStrings:  107
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_entry : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__objc_data : content changed
 Symbols:
 + _$s10Foundation4DateVSQAAMc
 + _$s23AccessibilityReaderData12AXRTextBlockC14characterCountSivgTj
@@ -187,5 +153,4 @@ Symbols:
 + _swift_retain_x26
 - _swift_release_x26
 - _swift_retain_x23
-
 ```

@@ -2,14 +2,15 @@
 
 > `/usr/lib/libmorphun.dylib`
 
-```diff
+### Section Size Changes
 
- 3600.36.1.0.0
--  __TEXT.__text: 0x102aec
-+  __TEXT.__text: 0x102b30
-   __TEXT.__const: 0x10aba0
-   __TEXT.__gcc_except_tab: 0x132e8
-   __TEXT.__cstring: 0x2630
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x102aec` | `0x102b30` | **`+0x44`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__112basic_stringIDsNS_11char_traitsIDsEENS_9allocatorIDsEEE6appendEPKDsm : 224 -> 228
 ~ __ZN7morphun8analysis20ConfigurableAnalyzer16createTokenChainEPKNS_5ChunkENSt3__117basic_string_viewIDsNS5_11char_traitsIDsEEEE : 3080 -> 3076

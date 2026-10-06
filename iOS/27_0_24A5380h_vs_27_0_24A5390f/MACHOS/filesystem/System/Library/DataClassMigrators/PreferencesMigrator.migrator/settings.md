@@ -2,93 +2,55 @@
 
 > `/System/Library/DataClassMigrators/PreferencesMigrator.migrator/settings`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x154d8` | `0x17524` | **`+0x204c`** |
+| `__DATA.__bss` | `0x3580` | `0x3a00` | **`+0x480`** |
+| `__TEXT.__const` | `0x1d20` | `0x1f70` | **`+0x250`** |
+| `__TEXT.__cstring` | `0x1344` | `0x1524` | **`+0x1e0`** |
+| `__TEXT.__eh_frame` | `0x864` | `0x94c` | **`+0xe8`** |
+| `__DATA.__data` | `0xa60` | `0xb40` | **`+0xe0`** |
+| `__TEXT.__swift5_reflstr` | `0x499` | `0x569` | **`+0xd0`** |
+| `__DATA_CONST.__const` | `0xaa0` | `0xb30` | **`+0x90`** |
+| `__TEXT.__unwind_info` | `0x6a0` | `0x728` | **`+0x88`** |
+| `__TEXT.__swift5_fieldmd` | `0x3d4` | `0x448` | **`+0x74`** |
+| `__TEXT.__swift5_typeref` | `0x604` | `0x65c` | **`+0x58`** |
+| `__TEXT.__constg_swiftt` | `0x3a0` | `0x3ec` | **`+0x4c`** |
+| `__TEXT.__auth_stubs` | `0xcf0` | `0xd30` | **`+0x40`** |
+| `__TEXT.__swift5_proto` | `0x1ac` | `0x1d0` | **`+0x24`** |
+| `__DATA_CONST.__auth_got` | `0x680` | `0x6a0` | **`+0x20`** |
+| `__DATA_CONST.__auth_ptr` | `0x318` | `0x328` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x298` | `0x2a0` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x68` | `0x70` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x3c` | `0x44` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x34` | `0x3c` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x48` | `0x4c` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
 - `__TEXT.__swift5_assocty`
 - `__TEXT.__swift5_entry`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
+
+### Other Changes
 
 ```diff
 
 -2027.0.3.100.0
--  __TEXT.__text: 0x154d8
--  __TEXT.__auth_stubs: 0xcf0
 +2027.0.6.101.0
-+  __TEXT.__text: 0x17524
-+  __TEXT.__auth_stubs: 0xd30
-   __TEXT.__objc_stubs: 0x60
--  __TEXT.__const: 0x1d20
-+  __TEXT.__const: 0x1f70
-   __TEXT.__objc_classname: 0x9
--  __TEXT.__swift5_typeref: 0x604
--  __TEXT.__constg_swiftt: 0x3a0
--  __TEXT.__swift5_reflstr: 0x499
--  __TEXT.__swift5_fieldmd: 0x3d4
--  __TEXT.__cstring: 0x1344
--  __TEXT.__swift5_proto: 0x1ac
--  __TEXT.__swift5_types: 0x68
--  __TEXT.__swift_as_entry: 0x3c
--  __TEXT.__swift_as_ret: 0x34
--  __TEXT.__swift_as_cont: 0x48
-+  __TEXT.__swift5_typeref: 0x65c
-+  __TEXT.__constg_swiftt: 0x3ec
-+  __TEXT.__swift5_reflstr: 0x569
-+  __TEXT.__swift5_fieldmd: 0x448
-+  __TEXT.__cstring: 0x1524
-+  __TEXT.__swift5_proto: 0x1d0
-+  __TEXT.__swift5_types: 0x70
-+  __TEXT.__swift_as_entry: 0x44
-+  __TEXT.__swift_as_ret: 0x3c
-+  __TEXT.__swift_as_cont: 0x4c
-   __TEXT.__swift5_assocty: 0x60
-   __TEXT.__objc_methtype: 0x15
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__objc_methname: 0x6f
--  __TEXT.__unwind_info: 0x6a0
--  __TEXT.__eh_frame: 0x864
--  __DATA_CONST.__const: 0xaa0
-+  __TEXT.__unwind_info: 0x728
-+  __TEXT.__eh_frame: 0x94c
-+  __DATA_CONST.__const: 0xb30
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x680
--  __DATA_CONST.__got: 0x298
--  __DATA_CONST.__auth_ptr: 0x318
-+  __DATA_CONST.__auth_got: 0x6a0
-+  __DATA_CONST.__got: 0x2a0
-+  __DATA_CONST.__auth_ptr: 0x328
-   __DATA.__objc_const: 0x90
-   __DATA.__objc_selrefs: 0x18
-   __DATA.__objc_data: 0x50
--  __DATA.__data: 0xa60
--  __DATA.__bss: 0x3580
-+  __DATA.__data: 0xb40
-+  __DATA.__bss: 0x3a00
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/PrivateFrameworks/ArgumentParserInternal.framework/ArgumentParserInternal
-   - /System/Library/PrivateFrameworks/SettingsHost.framework/SettingsHost
 +  - /System/Library/PrivateFrameworks/SettingsServices.framework/SettingsServices
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 489
 -  Symbols:   403
 -  CStrings:  107
 +  Functions: 529
 +  Symbols:   409
 +  CStrings:  110
- 
 Symbols:
 + _$s16SettingsServices0A19SearchIndexerClientC14requestReindex3forySayAC0G13DomainRequestVG_tYaKFZ
 + _$s16SettingsServices0A19SearchIndexerClientC14requestReindex3forySayAC0G13DomainRequestVG_tYaKFZTu

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CoreIndoor.framework/CoreIndoor`
 
-```diff
+### Section Size Changes
 
- 803.0.0.0.0
--  __TEXT.__text: 0x5ec38
-+  __TEXT.__text: 0x5ec24
-   __TEXT.__init_offsets: 0x44
-   __TEXT.__objc_methlist: 0x14cc
-   __TEXT.__gcc_except_tab: 0x44f4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5ec38` | `0x5ec24` | **`-0x14`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_25b7d9d40 -> sub_25c4c4d40 : 324 -> 304
+~ sub_25b6a8d40 -> sub_25c3a8d40 : 324 -> 304
 ```

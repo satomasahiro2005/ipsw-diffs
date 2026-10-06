@@ -2,94 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/CallsAppUI.framework/CallsAppUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfce6c` | `0x102500` | **`+0x5694`** |
+| `__AUTH_CONST.__const` | `0x5738` | `0x5c18` | **`+0x4e0`** |
+| `__TEXT.__eh_frame` | `0x3980` | `0x3d40` | **`+0x3c0`** |
+| `__TEXT.__swift5_capture` | `0x1f28` | `0x2244` | **`+0x31c`** |
+| `__TEXT.__swift5_typeref` | `0xeb26` | `0xe934` | **`-0x1f2`** |
+| `__TEXT.__oslogstring` | `0x1824` | `0x1944` | **`+0x120`** |
+| `__AUTH_CONST.__objc_const` | `0x8090` | `0x81a8` | **`+0x118`** |
+| `__TEXT.__unwind_info` | `0x3618` | `0x3720` | **`+0x108`** |
+| `__TEXT.__const` | `0x8c14` | `0x8b14` | **`-0x100`** |
+| `__AUTH.__data` | `0x16e8` | `0x17b8` | **`+0xd0`** |
+| `__DATA.__data` | `0x2da8` | `0x2cd8` | **`-0xd0`** |
+| `__TEXT.__cstring` | `0x1b7b` | `0x1c1b` | **`+0xa0`** |
+| `__DATA.__bss` | `0x2758` | `0x26c8` | **`-0x90`** |
+| `__DATA_DIRTY.__data` | `0x45a0` | `0x4520` | **`-0x80`** |
+| `__TEXT.__constg_swiftt` | `0x412c` | `0x41a4` | **`+0x78`** |
+| `__TEXT.__swift5_reflstr` | `0x2adc` | `0x2b1c` | **`+0x40`** |
+| `__TEXT.__swift_as_cont` | `0x26c` | `0x298` | **`+0x2c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1650` | `0x1678` | **`+0x28`** |
+| `__TEXT.__swift5_fieldmd` | `0x2308` | `0x2330` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0x1360` | `0x1340` | **`-0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x2b38` | `0x2b20` | **`-0x18`** |
+| `__DATA_DIRTY.__objc_data` | `0xf88` | `0xf70` | **`-0x18`** |
+| `__TEXT.__swift5_assocty` | `0x740` | `0x728` | **`-0x18`** |
+| `__TEXT.__swift_as_entry` | `0x150` | `0x164` | **`+0x14`** |
+| `__TEXT.__swift_as_ret` | `0xf4` | `0x108` | **`+0x14`** |
+| `__DATA.__common` | `0x178` | `0x188` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x180` | `0x188` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x54` | `0x58` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -153.100.1.2.29
--  __TEXT.__text: 0xf3e60
 +156.200.70.2.2
-+  __TEXT.__text: 0xf8fe0
-   __TEXT.__objc_methlist: 0x1360
--  __TEXT.__const: 0x8c14
--  __TEXT.__constg_swiftt: 0x412c
--  __TEXT.__swift5_typeref: 0xeb26
--  __TEXT.__swift5_reflstr: 0x2adc
--  __TEXT.__swift5_fieldmd: 0x2308
-+  __TEXT.__const: 0x8b14
-+  __TEXT.__constg_swiftt: 0x41a4
-+  __TEXT.__swift5_typeref: 0xe934
-+  __TEXT.__swift5_reflstr: 0x2b1c
-+  __TEXT.__swift5_fieldmd: 0x2330
-   __TEXT.__swift5_builtin: 0x154
--  __TEXT.__swift5_assocty: 0x740
--  __TEXT.__cstring: 0x1b7b
-+  __TEXT.__swift5_assocty: 0x728
-+  __TEXT.__cstring: 0x1c1b
-   __TEXT.__swift5_proto: 0x2b8
-   __TEXT.__swift5_types: 0x214
--  __TEXT.__swift5_capture: 0x1f28
--  __TEXT.__oslogstring: 0x1824
--  __TEXT.__swift5_protos: 0x54
--  __TEXT.__swift_as_entry: 0x150
--  __TEXT.__swift_as_ret: 0xf4
--  __TEXT.__swift_as_cont: 0x26c
-+  __TEXT.__swift5_capture: 0x2244
-+  __TEXT.__oslogstring: 0x1944
-+  __TEXT.__swift5_protos: 0x58
-+  __TEXT.__swift_as_entry: 0x164
-+  __TEXT.__swift_as_ret: 0x108
-+  __TEXT.__swift_as_cont: 0x298
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x41f8
--  __TEXT.__eh_frame: 0x3980
-+  __TEXT.__unwind_info: 0x42f8
-+  __TEXT.__eh_frame: 0x3d40
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x1b8
--  __DATA_CONST.__objc_classlist: 0x180
-+  __DATA_CONST.__objc_classlist: 0x188
-   __DATA_CONST.__objc_protolist: 0x1c0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1650
-+  __DATA_CONST.__objc_selrefs: 0x1678
-   __DATA_CONST.__objc_protorefs: 0xe8
--  __DATA_CONST.__got: 0x1360
--  __AUTH_CONST.__const: 0x5738
--  __AUTH_CONST.__objc_const: 0x8090
--  __AUTH_CONST.__auth_got: 0x2b38
-+  __DATA_CONST.__got: 0x1340
-+  __AUTH_CONST.__const: 0x5c18
-+  __AUTH_CONST.__objc_const: 0x81a8
-+  __AUTH_CONST.__auth_got: 0x2b20
-   __AUTH.__objc_data: 0x1af0
--  __AUTH.__data: 0x16e8
--  __DATA.__data: 0x2da8
-+  __AUTH.__data: 0x17b8
-+  __DATA.__data: 0x2cd8
-   __DATA.__objc_stublist: 0x8
--  __DATA.__common: 0x178
--  __DATA_DIRTY.__objc_data: 0xf88
--  __DATA_DIRTY.__data: 0x45a0
-+  __DATA.__common: 0x188
-+  __DATA_DIRTY.__objc_data: 0xf70
-+  __DATA_DIRTY.__data: 0x4520
-   __DATA_DIRTY.__bss: 0x2c80
-   __DATA_DIRTY.__common: 0xf8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4983
--  Symbols:   2837
+-  Symbols:   2337
 -  CStrings:  286
 +  Functions: 5069
-+  Symbols:   2825
++  Symbols:   2320
 +  CStrings:  293
- 
 Symbols:
 + _IMSharedHelperNickNameEnabled
 + _OBJC_CLASS_$_IMMeCardSharingStateController
@@ -106,11 +64,6 @@ Symbols:
 + ___swift_closure_destructor.82Tm
 + _get_witness_table 7SwiftUI14GeometryReaderVyAA15ModifiedContentVyAEyAEyAA6VStackVyAEyAEyAEyAEyACyAA4ViewPAAE20scrollBounceBehavior_4axesQrAA06ScrolljK0V_AA4AxisO3SetVtFQOyAiAE0I10Indicators_AKQrAA0M19IndicatorVisibilityV_AQtFQOyAiAE14contentMargins__3forQrAA4EdgeOAPV_12CoreGraphics7CGFloatVSgAA0F15MarginPlacementVtFQOyAA0mH0VyAA05TupleF0Vy08CallsAppB0023VoicemailDetailControlsH0V_AGyA7_yA7_yAEyAA6SpacerVAA12_FrameLayoutVG_AEyAA7DividerVAA14_PaddingLayoutVGA7_yA15__AA6HStackVyA7_yA12__AA0H8ThatFitsVyA7_yA22_yA7_yAEyAA6ButtonVyAEyAA5LabelVyAA4TextVAA5ImageVGA8_024VoicemailDetailContainerH0V024UnknownCallerButtonLabelH8Modifier33_3B7921963B486EF4D5736B1F073B5DECLLVGGA35_024UnknownCallerButtonStyleH8ModifierA37_LLVG_AA012_ConditionalF0VyAiAE18confirmationDialog_11isPresented05titleR07actionsQrqd___AA7BindingVySbGAA0R0Oqd_0_yXEtSyRd__AaHRd_0_r0_lFQOyA43__SSA7_yA26_yA30_G_A55_QPGQo_A43_GSgSgQPGG_AGyA61_GQPGGA12_QPGGQPGSgQPGSg_AEyA65_A19_GSgAEyAEyA45_yA45_yAA05EmptyH0VA22_yA7_yA12__A30_A12_QPGGGAGyA7_yA30__A8_025VoicemailDetailTranscriptH0VQPGGGA19_GA19_GAEyAEy014CommunicationsB0021SmartVoicemailActionsH0VAA30_EnvironmentKeyWritingModifierVyA1_GGA19_GSgQPGGQPGG_Qo__Qo__Qo_GA35_0mh4MaskH8ModifierA37_LLVGA35_20CustomContainerWidthVGAA25_AppearanceActionModifierVGA110_GGA19_GAA16_FlexFrameLayoutVGAA24_BackgroundStyleModifierVyAA5ColorVGGGAaHHPyHC
 + _get_witness_table 7SwiftUI6IDViewVyAA4TextVAA15DynamicTypeSizeOGSgAA4ViewHpAhaJHPyHC_HC
-+ _objc_msgSend$imageWithTintColor:renderingMode:
-+ _objc_msgSend$setPreferredImageVisibility:
-+ _objc_msgSend$sharingEnabled
-+ _objc_msgSend$systemOrangeColor
-+ _objc_msgSend$transitionCoordinator
 + _symbolic $s10CallsAppUI21SpamDecisionReportingP
 + _symbolic Say_____G 16CommunicationsUI19FilterMenuViewModelC6ActionO
 + _symbolic Sbyc

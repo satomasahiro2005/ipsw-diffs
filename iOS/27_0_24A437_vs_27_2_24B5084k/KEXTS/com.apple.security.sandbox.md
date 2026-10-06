@@ -2,29 +2,23 @@
 
 > `com.apple.security.sandbox`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x1eecb1` | `0x1f1651` | **`+0x29a0`** |
+| `__TEXT_EXEC.__text` | `0x398a4` | `0x39a60` | **`+0x1bc`** |
+| `__DATA.__bss` | `0x152fc` | `0x1531c` | **`+0x20`** |
+| `__TEXT.__os_log` | `0x1d7e` | `0x1d8e` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3051.0.52.0.0
--  __TEXT.__os_log: 0x1d7e
--  __TEXT.__const: 0x1eecb1
-+3051.40.70.0.0
-+  __TEXT.__os_log: 0x1d8e
-+  __TEXT.__const: 0x1f1651
-   __TEXT.__cstring: 0x6f21
--  __TEXT_EXEC.__text: 0x38018
-+  __TEXT_EXEC.__text: 0x381e8
-   __TEXT_EXEC.__auth_stubs: 0x1080
-   __DATA.__data: 0x220
-   __DATA_CONST.__const: 0x3928
-
-   __DATA_CONST.__kalloc_var: 0x550
-   __DATA_CONST.__auth_got: 0x840
-   __DATA_CONST.__got: 0xc0
 -  Functions: 659
++3051.40.70.0.0
 +  Functions: 658
-   Symbols:   0
-   CStrings:  1309
- 
 CStrings:
 + "failed to register disk image backing store for %s: %d"
 + "failed to register sync root for %s: %d"

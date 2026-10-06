@@ -2,15 +2,14 @@
 
 > `/System/Library/UserNotifications/Bundles/com.apple.askpermission.notifications.bundle/com.apple.askpermission.notifications`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -130.1.4.0.0
 +130.1.6.0.0
-   __TEXT.__text: 0x0
-   __TEXT.__const: 0x60
-   - /usr/lib/libSystem.B.dylib
 ```

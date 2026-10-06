@@ -2,10 +2,12 @@
 
 > `/usr/libexec/keybagd`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__objc_methlist`
 - `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```text
 Functions:

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SiriPrivateLearningAnalytics.framework/SiriPrivateLearningAnalytics`
 
-```diff
+### Section Size Changes
 
- 3600.5.1.0.0
--  __TEXT.__text: 0xea4ec
-+  __TEXT.__text: 0xea570
-   __TEXT.__objc_methlist: 0x784
-   __TEXT.__const: 0xb8c0
-   __TEXT.__cstring: 0x34b5
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xea4ec` | `0xea570` | **`+0x84`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_200f03820 -> sub_2015aa820 : 336 -> 340
 ~ sub_200f09178 -> sub_2015b017c : 980 -> 992

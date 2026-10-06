@@ -2,101 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/CoreIDVUI.framework/CoreIDVUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x280660` | `0x2886bc` | **`+0x805c`** |
+| `__TEXT.__swift5_typeref` | `0x10960` | `0x112b0` | **`+0x950`** |
+| `__AUTH_CONST.__const` | `0xf040` | `0xf6d8` | **`+0x698`** |
+| `__TEXT.__cstring` | `0xdccd` | `0xd88d` | **`-0x440`** |
+| `__TEXT.__const` | `0x144c4` | `0x147d4` | **`+0x310`** |
+| `__TEXT.__swift5_capture` | `0x374c` | `0x39bc` | **`+0x270`** |
+| `__TEXT.__swift5_reflstr` | `0x784c` | `0x7a7c` | **`+0x230`** |
+| `__DATA.__data` | `0x59d4` | `0x5bf4` | **`+0x220`** |
+| `__DATA.__bss` | `0xb150` | `0xb350` | **`+0x200`** |
+| `__TEXT.__eh_frame` | `0x13d4c` | `0x13f1c` | **`+0x1d0`** |
+| `__AUTH.__data` | `0x9890` | `0x9a50` | **`+0x1c0`** |
+| `__TEXT.__constg_swiftt` | `0x7e18` | `0x7fa4` | **`+0x18c`** |
+| `__TEXT.__swift5_fieldmd` | `0x6214` | `0x6374` | **`+0x160`** |
+| `__AUTH.__objc_data` | `0x3ec8` | `0x4018` | **`+0x150`** |
+| `__TEXT.__unwind_info` | `0x88f0` | `0x8a38` | **`+0x148`** |
+| `__AUTH_CONST.__objc_const` | `0xd768` | `0xd880` | **`+0x118`** |
+| `__TEXT.__oslogstring` | `0xfe82` | `0xff22` | **`+0xa0`** |
+| `__AUTH_CONST.__auth_got` | `0x4620` | `0x46b0` | **`+0x90`** |
+| `__TEXT.__objc_methlist` | `0x18f4` | `0x1974` | **`+0x80`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1b40` | `0x1bb0` | **`+0x70`** |
+| `__TEXT.__swift5_assocty` | `0xe10` | `0xe58` | **`+0x48`** |
+| `__TEXT.__swift5_builtin` | `0x1b8` | `0x1e0` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x240` | `0x260` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x520` | `0x534` | **`+0x14`** |
+| `__TEXT.__swift_as_cont` | `0x1178` | `0x118c` | **`+0x14`** |
+| `__TEXT.__swift5_proto` | `0x5d0` | `0x5e0` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x2218` | `0x2220` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x438` | `0x440` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x730` | `0x738` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x6c` | `0x70` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x694` | `0x698` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -9.38.0.0.0
--  __TEXT.__text: 0x280660
 +9.42.0.0.0
-+  __TEXT.__text: 0x2886bc
-   __TEXT.__lazy_helpers: 0xa8
--  __TEXT.__objc_methlist: 0x18f4
--  __TEXT.__const: 0x144c4
--  __TEXT.__cstring: 0xdccd
--  __TEXT.__swift5_typeref: 0x10960
--  __TEXT.__constg_swiftt: 0x7e18
--  __TEXT.__swift5_builtin: 0x1b8
--  __TEXT.__swift5_reflstr: 0x784c
--  __TEXT.__swift5_fieldmd: 0x6214
--  __TEXT.__swift5_assocty: 0xe10
--  __TEXT.__swift5_proto: 0x5d0
--  __TEXT.__swift5_types: 0x520
--  __TEXT.__swift5_capture: 0x374c
--  __TEXT.__oslogstring: 0xfe82
-+  __TEXT.__objc_methlist: 0x1974
-+  __TEXT.__const: 0x147d4
-+  __TEXT.__cstring: 0xd88d
-+  __TEXT.__constg_swiftt: 0x7fa4
-+  __TEXT.__swift5_typeref: 0x112b0
-+  __TEXT.__swift5_builtin: 0x1e0
-+  __TEXT.__swift5_reflstr: 0x7a7c
-+  __TEXT.__swift5_fieldmd: 0x6374
-+  __TEXT.__swift5_assocty: 0xe58
-+  __TEXT.__swift5_proto: 0x5e0
-+  __TEXT.__swift5_types: 0x534
-+  __TEXT.__swift5_capture: 0x39bc
-+  __TEXT.__oslogstring: 0xff22
-   __TEXT.__swift5_protos: 0x70
--  __TEXT.__swift_as_entry: 0x730
--  __TEXT.__swift_as_ret: 0x694
--  __TEXT.__swift_as_cont: 0x1178
-+  __TEXT.__swift_as_entry: 0x738
-+  __TEXT.__swift_as_ret: 0x698
-+  __TEXT.__swift_as_cont: 0x118c
-   __TEXT.__swift5_mpenum: 0x24
--  __TEXT.__unwind_info: 0x88f0
--  __TEXT.__eh_frame: 0x13d4c
-+  __TEXT.__unwind_info: 0x8a38
-+  __TEXT.__eh_frame: 0x13f1c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x1b8
--  __DATA_CONST.__objc_classlist: 0x438
-+  __DATA_CONST.__objc_classlist: 0x440
-   __DATA_CONST.__objc_protolist: 0x168
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1b40
-+  __DATA_CONST.__objc_selrefs: 0x1bb0
-   __DATA_CONST.__objc_protorefs: 0xe0
-   __DATA_CONST.__objc_superrefs: 0x40
--  __DATA_CONST.__got: 0x2218
--  __AUTH_CONST.__const: 0xf040
--  __AUTH_CONST.__cfstring: 0x240
--  __AUTH_CONST.__objc_const: 0xd768
-+  __DATA_CONST.__got: 0x2220
-+  __AUTH_CONST.__const: 0xf6d8
-+  __AUTH_CONST.__cfstring: 0x260
-+  __AUTH_CONST.__objc_const: 0xd880
-   __AUTH_CONST.__lazy_load_got: 0x10
--  __AUTH_CONST.__auth_got: 0x4620
--  __AUTH.__objc_data: 0x3ec8
--  __AUTH.__data: 0x9890
--  __DATA.__objc_ivar: 0x6c
--  __DATA.__data: 0x59d4
-+  __AUTH_CONST.__auth_got: 0x46b0
-+  __AUTH.__objc_data: 0x4018
-+  __AUTH.__data: 0x9a50
-+  __DATA.__objc_ivar: 0x70
-+  __DATA.__data: 0x5bf4
-   __DATA.__objc_stublist: 0x60
--  __DATA.__bss: 0xb150
-+  __DATA.__bss: 0xb350
-   __DATA.__common: 0x4b8
-   __DATA_DIRTY.__objc_data: 0x2f0
-   __DATA_DIRTY.__data: 0x60
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10288
--  Symbols:   4389
+-  Symbols:   3679
 -  CStrings:  1888
 +  Functions: 10438
-+  Symbols:   4459
++  Symbols:   3739
 +  CStrings:  1880
- 
 Symbols:
 + -[CIDVUIProofingConfiguration initWithState:country:target:status:credentialIdentifier:productIdentifier:accountKeyIdentifier:idType:extendedReviewURL:learnMoreURL:supplementalProvisioningData:isPairedWatchUnsupported:proofingErrorMessage:piiTokenIdentifier:referralSource:]
 + -[CIDVUIProofingConfiguration referralSource]
@@ -127,18 +81,6 @@ Symbols:
 + _get_witness_table 9CoreIDVUI24IdentityProofingBaseViewVy7SwiftUI05EmptyF0VAD15ModifiedContentVyAHyAD0F0PADE14contentMargins__3forQrAD4EdgeO3SetV_0A8Graphics7CGFloatVSgAD0K15MarginPlacementVtFQOyAjDE06scrollK10BackgroundyQrAD10VisibilityOFQOyAjDE20listHasStackBehaviorQryFQOyAD4ListVys5NeverOAD7ForEachVySayAA0cD20DocumentConfirmationVG10Foundation4UUIDVAA0cD18DocumentPreviewRowVGG_Qo__Qo__Qo_AD23SafeAreaPaddingModifierVGAD14_PaddingLayoutVGSgAFGAdIHPyHC
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE5sheet11isPresented9onDismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAA15ModifiedContentVyAMyAMy9CoreIDVUI020IdentityProofingBaseC0VyAMyAC0M14IDVRGBLivenessE19windowRelativeFrame13relativeWidth0V6HeightQr0M8Graphics7CGFloatVSg_AXtFQOyAA6ZStackVyAMyAMyAMyAMyAN017PassportAnimationC0VAA30_SafeAreaRegionsIgnoringLayoutVGAN28DisableScreenCaptureModifier33_D900324AE570B5D10D63D45E5DF092EDLLVGAA16_OverlayModifierVyAMyAMyAMyAMyAA6ButtonVyAMyAMyAcAE10fontWeightyQrAA4FontV6WeightVSgFQOyAMyAA5LabelVyAA4TextVAA5ImageVGAA30_EnvironmentKeyWritingModifierVyA14_SgGG_Qo_AA01_U6LayoutVGAA14_PaddingLayoutVGGAA34_InsettableBackgroundShapeModifierVyAA8MaterialVAA7CapsuleVGGAA14_OpacityEffectVGAA18_AnimationModifierVySdGGA35_GGGA47_GG_Qo_A50_ySbGGAA05EmptyC0VAMyAMyAA6VStackVyAA05TupleL0VyAA08ProgressC0VyA62_A62_G_AMyAMyAMyAcAE15monospacedDigitQryFQOyAMyA21_A26_yAA13TextAlignmentOGG_Qo_A28_GAA24_ForegroundStyleModifierVyAA22HierarchicalShapeStyleVGGA50_ySSGGQPGGAA05_FlexU6LayoutVGA35_GSgGA26_yAN0opC11StyleFormatCGGAA25_AppearanceActionModifierVGA98_G_AMyAN016PassportNFCGuideC0VA98_GQo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA15ModifiedContentVyAKyAKyAA6ZStackVyAKyAKy9CoreIDVUI017PassportAnimationC0VAA18_AspectRatioLayoutVGAA14_OpacityEffectVGGAA010_FlexFrameR0VGAA01_O8ModifierVySbGGAA08_OverlayW0VyAKyAKyAKyAA4TextVAA08_PaddingR0VGAA026_InsettableBackgroundShapeW0VyAA8MaterialVAA7CapsuleVGGA8_GGG_Qo_HO
-+ _objc_msgSend$additionalSafeAreaInsets
-+ _objc_msgSend$camera
-+ _objc_msgSend$contentView
-+ _objc_msgSend$convertRect:toCoordinateSpace:
-+ _objc_msgSend$fetchProofingAnalyticsInfoWithConfiguration:proofingOptions:completionHandler:
-+ _objc_msgSend$referralSource
-+ _objc_msgSend$session
-+ _objc_msgSend$setAdditionalSafeAreaInsets:
-+ _objc_msgSend$setAutomaticallyPlacesContentView:
-+ _objc_msgSend$setContentView:
-+ _objc_msgSend$setNeedsLayout
-+ _objc_msgSend$startPollingForIDCardWithTechnology:error:
 + _symbolic Sccy_____Sg_____G 13CoreIDVShared29IdentityProofingAnalyticsInfoC s5NeverO
 + _symbolic So25UIBackgroundExtensionViewC
 + _symbolic _____ 9CoreIDVUI23PassportScanTestingViewV
@@ -220,8 +162,6 @@ Symbols:
 - _get_witness_table 7SwiftUI15ModifiedContentVyACyACy9CoreIDVUI24IdentityProofingBaseViewVyACyAA0J0P0E14IDVRGBLivenessE22captureGuidanceOverlayyQrSSSgFQOyAhIE19windowRelativeFrame13relativeWidth0R6HeightQr0E8Graphics7CGFloatVSg_ARtFQOyAA6ZStackVyAA05TupleD0VyAA5ColorV_AD0gh17PassportMRZReaderJ0V0ghz16MRZCameraPreviewJ033_2A8B028722C7AB1C1374D80B1989607ELLVQPGG_Qo__Qo_AD28DisableScreenCaptureModifier33_D900324AE570B5D10D63D45E5DF092EDLLVGAA05EmptyJ0VA11_GAA25_AppearanceActionModifierVGA14_GAA30_EnvironmentKeyWritingModifierVyAD0ghJ11StyleFormatCGGAaGHPA16_AaGHPA15_AaGHPA12_AaGHPyHC_A14_AA0J8ModifierHPyHCHC_A14_AAA23_HPyHCHC_A21_AAA23_HPyHCHC
 - _get_witness_table 9CoreIDVUI24IdentityProofingBaseViewVy7SwiftUI05EmptyF0VAD15ModifiedContentVyAD0F0PADE14contentMargins__3forQrAD4EdgeO3SetV_0A8Graphics7CGFloatVSgAD0K15MarginPlacementVtFQOyAjDEAK__ALQrAP_AtVtFQOyAjDE06scrollK10BackgroundyQrAD10VisibilityOFQOyAjDE20listHasStackBehaviorQryFQOyAD4ListVys5NeverOAD7ForEachVySayAA0cD20DocumentConfirmationVG10Foundation4UUIDVAA0cD18DocumentPreviewRowVGG_Qo__Qo__Qo__Qo_AD14_PaddingLayoutVGSgAFGAdIHPyHC
 - _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE5sheet11isPresented9onDismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAA15ModifiedContentVyAMyAMy9CoreIDVUI020IdentityProofingBaseC0VyAMyAMyAC0M14IDVRGBLivenessE19windowRelativeFrame13relativeWidth0V6HeightQr0M8Graphics7CGFloatVSg_AXtFQOyAN017PassportAnimationC0V_Qo_AN28DisableScreenCaptureModifier33_D900324AE570B5D10D63D45E5DF092EDLLVGAA16_OverlayModifierVyAMyAMyAMyAMyAA6ButtonVyAMyAMyAcAE10fontWeightyQrAA4FontV6WeightVSgFQOyAMyAA5LabelVyAA4TextVAA5ImageVGAA30_EnvironmentKeyWritingModifierVyA10_SgGG_Qo_AA01_U6LayoutVGAA14_PaddingLayoutVGGAA34_InsettableBackgroundShapeModifierVyAA8MaterialVAA7CapsuleVGGAA14_OpacityEffectVGAA18_AnimationModifierVySdGGA31_GGGAA05EmptyC0VAMyAMyAA6VStackVyAA05TupleL0VyAA08ProgressC0VyA53_A53_G_AMyAMyAMyAcAE15monospacedDigitQryFQOyAMyA17_A22_yAA13TextAlignmentOGG_Qo_A24_GAA24_ForegroundStyleModifierVyAA22HierarchicalShapeStyleVGGA46_ySSGGQPGGAA05_FlexU6LayoutVGA31_GSgGA22_yAN0opC11StyleFormatCGGAA25_AppearanceActionModifierVGA89_G_AMyAN016PassportNFCGuideC0VA89_GQo_HO
-- _objc_msgSend$fetchAnalyticsSessionIDWithConfiguration:proofingOptions:completionHandler:
-- _objc_msgSend$startPollingForTechnology:error:
 - _symbolic SccySSSg_____G s5NeverO
 - _symbolic _____yAAyAAy_____yAAyAAy_____y______Qo______G_____yAAyAAyAAyAAy_____yAAyAAy_____yAAy_____y__________G_____y_____SgGG_Qo______G_____GG_____y__________GG_____G_____ySdGGAUGGG_____AAyAAy_____y_____y_____yA9_A9_G_AAyAAyAAy_____yAAyAjMy_____GG_Qo_APG_____y_____GGA3_ySSGGQPGG_____GAUGSgGAMy_____GG_____GA35_G 7SwiftUI15ModifiedContentV 9CoreIDVUI24IdentityProofingBaseViewV AA0J0P0E14IDVRGBLivenessE19windowRelativeFrame13relativeWidth0O6HeightQr0E8Graphics7CGFloatVSg_APtFQO AD017PassportAnimationJ0V AD28DisableScreenCaptureModifier33_D900324AE570B5D10D63D45E5DF092EDLLV AA08_OverlayY0V AA6ButtonV AhAE10fontWeightyQrAA4FontV6WeightVSgFQO AA5LabelV AA4TextV AA5ImageV AA022_EnvironmentKeyWritingY0V A0_ AA01_N6LayoutV AA14_PaddingLayoutV AA026_InsettableBackgroundShapeY0V AA8MaterialV AA7CapsuleV AA14_OpacityEffectV AA01_uY0V AA05EmptyJ0V AA6VStackV AA05TupleD0V AA08ProgressJ0V AhAE15monospacedDigitQryFQO AA13TextAlignmentO AA016_ForegroundStyleY0V AA22HierarchicalShapeStyleV AA05_FlexN6LayoutV AD0ghJ11StyleFormatC AA017_AppearanceActionY0V
 - _symbolic _____yAAyAAy_____yAAy_____y_____y_____y_____y___________QPGG_Qo__Qo______G_____AMG_____GAOG_____y_____GG 7SwiftUI15ModifiedContentV 9CoreIDVUI24IdentityProofingBaseViewV AA0J0P0E14IDVRGBLivenessE22captureGuidanceOverlayyQrSSSgFQO AhIE19windowRelativeFrame13relativeWidth0R6HeightQr0E8Graphics7CGFloatVSg_ARtFQO AA6ZStackV AA05TupleD0V AA5ColorV AD0gh17PassportMRZReaderJ0V0ghz16MRZCameraPreviewJ033_2A8B028722C7AB1C1374D80B1989607ELLV AD28DisableScreenCaptureModifier33_D900324AE570B5D10D63D45E5DF092EDLLV AA05EmptyJ0V AA25_AppearanceActionModifierV AA30_EnvironmentKeyWritingModifierV AD0ghJ11StyleFormatC

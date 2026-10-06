@@ -2,32 +2,19 @@
 
 > `/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x38df00` | `0x38df30` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x2b38` | `0x2b40` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 4026.110.2.0.0
--  __TEXT.__text: 0x38df00
-+  __TEXT.__text: 0x38df30
-   __TEXT.__objc_methlist: 0x28d54
-   __TEXT.__dlopen_cstrs: 0x4bd
-   __TEXT.__const: 0x14ff8
-
-   __AUTH_CONST.__objc_arrayobj: 0xf78
-   __AUTH_CONST.__objc_doubleobj: 0x60
-   __AUTH_CONST.__objc_dictobj: 0x50
--  __AUTH_CONST.__auth_got: 0x2b38
-+  __AUTH_CONST.__auth_got: 0x2b40
-   __AUTH.__objc_data: 0xc438
-   __AUTH.__data: 0x100
-   __DATA.__objc_ivar: 0x2db8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 17204
 +  Functions: 17203
-   Symbols:   39063
-   CStrings:  7427
- 
 Symbols:
 + _swift_release_x28
 - _OUTLINED_FUNCTION_12

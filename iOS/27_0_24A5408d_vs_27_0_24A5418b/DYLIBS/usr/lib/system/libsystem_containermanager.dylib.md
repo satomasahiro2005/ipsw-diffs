@@ -2,9 +2,11 @@
 
 > `/usr/lib/system/libsystem_containermanager.dylib`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 CStrings:

@@ -2,97 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/AirPlaySender.framework/AirPlaySender`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x24708c` | `0x241554` | **`-0x5b38`** |
+| `__AUTH_CONST.__auth_got` | `0x2ee8` | `0x0` | **`-0x2ee8`** |
+| `__TEXT.__cstring` | `0x8fbcf` | `0x8dd16` | **`-0x1eb9`** |
+| `__AUTH_CONST.__cfstring` | `0x14e40` | `0x147c0` | **`-0x680`** |
+| `__DATA_CONST.__const` | `0x7818` | `0x75d0` | **`-0x248`** |
+| `__AUTH_CONST.__const` | `0x78c0` | `0x7740` | **`-0x180`** |
+| `__TEXT.__oslogstring` | `0xef6` | `0xfdd` | **`+0xe7`** |
+| `__DATA.__data` | `0x18770` | `0x18690` | **`-0xe0`** |
+| `__TEXT.__unwind_info` | `0x58e8` | `0x5818` | **`-0xd0`** |
+| `__DATA.__bss` | `0x670` | `0x608` | **`-0x68`** |
+| `__TEXT.__dlopen_cstrs` | `0x61d` | `0x5c1` | **`-0x5c`** |
+| `__DATA_CONST.__got` | `0x2368` | `0x2370` | **`+0x8`** |
+| `__DATA_DIRTY.__bss` | `0x790` | `0x788` | **`-0x8`** |
+
+### Other Changes
 
 ```diff
 
 -980.67.2.0.0
--  __TEXT.__text: 0x24708c
 +980.71.1.0.0
-+  __TEXT.__text: 0x241554
-   __TEXT.__objc_methlist: 0x7ec
--  __TEXT.__cstring: 0x8fbcf
-+  __TEXT.__cstring: 0x8dd16
-   __TEXT.__const: 0x6150
-   __TEXT.__gcc_except_tab: 0xa48
--  __TEXT.__dlopen_cstrs: 0x61d
--  __TEXT.__oslogstring: 0xef6
--  __TEXT.__unwind_info: 0x58e8
-+  __TEXT.__dlopen_cstrs: 0x5c1
-+  __TEXT.__oslogstring: 0xfdd
-+  __TEXT.__unwind_info: 0x5818
-   __TEXT.__eh_frame: 0x48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7818
-+  __DATA_CONST.__const: 0x75d0
-   __DATA_CONST.__objc_classlist: 0x38
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x48
 
-   __DATA_CONST.__objc_selrefs: 0xaa0
-   __DATA_CONST.__objc_superrefs: 0x38
-   __DATA_CONST.__objc_arraydata: 0x170
--  __DATA_CONST.__got: 0x2368
--  __AUTH_CONST.__const: 0x78c0
--  __AUTH_CONST.__cfstring: 0x14e40
-+  __DATA_CONST.__got: 0x2370
-+  __AUTH_CONST.__const: 0x7740
-+  __AUTH_CONST.__cfstring: 0x147c0
-   __AUTH_CONST.__objc_const: 0xed0
-   __AUTH_CONST.__objc_dictobj: 0x1b8
-   __AUTH_CONST.__objc_intobj: 0x150
-   __AUTH_CONST.__objc_arrayobj: 0x60
--  __AUTH_CONST.__auth_got: 0x2ee8
-+  __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0x190
-   __AUTH.__data: 0x878
-   __DATA.__objc_ivar: 0x88
--  __DATA.__data: 0x18770
--  __DATA.__bss: 0x670
-+  __DATA.__data: 0x18690
-+  __DATA.__bss: 0x608
-   __DATA.__common: 0xa04
-   __DATA_DIRTY.__objc_data: 0xa0
-   __DATA_DIRTY.__data: 0xf78
--  __DATA_DIRTY.__bss: 0x790
-+  __DATA_DIRTY.__bss: 0x788
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CoreAudio.framework/CoreAudio
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 11546
--  Symbols:   8952
+-  Symbols:   8686
 -  CStrings:  11706
 +  Functions: 11380
-+  Symbols:   8894
++  Symbols:   8628
 +  CStrings:  11533
- 
 Symbols:
 + GCC_except_table127
 + _APEndpointDescriptionCopyEndpointID

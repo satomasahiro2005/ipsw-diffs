@@ -2,9 +2,11 @@
 
 > `/usr/libexec/icloudmailagent`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__eh_frame`
+
+### Other Changes
 
 ```diff
 Symbols:

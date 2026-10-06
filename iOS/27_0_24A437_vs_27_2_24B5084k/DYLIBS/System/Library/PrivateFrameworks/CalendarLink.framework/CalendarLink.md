@@ -2,86 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/CalendarLink.framework/CalendarLink`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10d5fc` | `0x10f328` | **`+0x1d2c`** |
+| `__DATA.__bss` | `0xfae8` | `0xfee8` | **`+0x400`** |
+| `__TEXT.__const` | `0x11ca8` | `0x11fb8` | **`+0x310`** |
+| `__TEXT.__cstring` | `0xb650` | `0xb8c0` | **`+0x270`** |
+| `__AUTH_CONST.__const` | `0x57e8` | `0x5928` | **`+0x140`** |
+| `__TEXT.__eh_frame` | `0x4cc0` | `0x4dc0` | **`+0x100`** |
+| `__TEXT.__swift5_reflstr` | `0x2baf` | `0x2c7f` | **`+0xd0`** |
+| `__TEXT.__unwind_info` | `0x47d8` | `0x4870` | **`+0x98`** |
+| `__TEXT.__swift5_typeref` | `0x6fb2` | `0x7044` | **`+0x92`** |
+| `__TEXT.__constg_swiftt` | `0x2460` | `0x24c8` | **`+0x68`** |
+| `__TEXT.__swift5_fieldmd` | `0x24a4` | `0x250c` | **`+0x68`** |
+| `__DATA.__data` | `0x3970` | `0x39c0` | **`+0x50`** |
+| `__TEXT.__swift5_assocty` | `0x1778` | `0x17c8` | **`+0x50`** |
+| `__DATA_CONST.__const` | `0x13e0` | `0x1410` | **`+0x30`** |
+| `__TEXT.__swift5_proto` | `0xedc` | `0xf08` | **`+0x2c`** |
+| `__TEXT.__swift5_types` | `0x25c` | `0x264` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x2fc` | `0x304` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x2c4` | `0x2c8` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x25c` | `0x260` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1327.0.103.0.0
--  __TEXT.__text: 0x105398
 +1327.1.6.0.0
-+  __TEXT.__text: 0x106fc8
-   __TEXT.__objc_methlist: 0x594
--  __TEXT.__const: 0x11ca8
-+  __TEXT.__const: 0x11fb8
-   __TEXT.__gcc_except_tab: 0x44
--  __TEXT.__cstring: 0xb650
-+  __TEXT.__cstring: 0xb8c0
-   __TEXT.__dlopen_cstrs: 0x141
--  __TEXT.__constg_swiftt: 0x2460
--  __TEXT.__swift5_typeref: 0x6fb2
--  __TEXT.__swift5_reflstr: 0x2baf
--  __TEXT.__swift5_fieldmd: 0x24a4
-+  __TEXT.__constg_swiftt: 0x24c8
-+  __TEXT.__swift5_typeref: 0x7044
-+  __TEXT.__swift5_reflstr: 0x2c7f
-+  __TEXT.__swift5_fieldmd: 0x250c
-   __TEXT.__swift5_builtin: 0xdc
--  __TEXT.__swift5_assocty: 0x1778
--  __TEXT.__swift5_proto: 0xedc
--  __TEXT.__swift5_types: 0x25c
--  __TEXT.__swift_as_entry: 0x2fc
--  __TEXT.__swift_as_ret: 0x25c
--  __TEXT.__swift_as_cont: 0x2c4
-+  __TEXT.__swift5_assocty: 0x17c8
-+  __TEXT.__swift5_proto: 0xf08
-+  __TEXT.__swift5_types: 0x264
-+  __TEXT.__swift_as_entry: 0x304
-+  __TEXT.__swift_as_ret: 0x260
-+  __TEXT.__swift_as_cont: 0x2c8
-   __TEXT.__swift5_mpenum: 0x20
-   __TEXT.__oslogstring: 0xa88
-   __TEXT.__swift5_protos: 0x1c
-   __TEXT.__swift5_capture: 0x278
--  __TEXT.__unwind_info: 0x5e70
--  __TEXT.__eh_frame: 0x4cc0
-+  __TEXT.__unwind_info: 0x5f38
-+  __TEXT.__eh_frame: 0x4dc0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x13e0
-+  __DATA_CONST.__const: 0x1410
-   __DATA_CONST.__objc_classlist: 0x68
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x80
 
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__objc_superrefs: 0x18
-   __DATA_CONST.__got: 0xc40
--  __AUTH_CONST.__const: 0x57e8
-+  __AUTH_CONST.__const: 0x5928
-   __AUTH_CONST.__cfstring: 0xc0
-   __AUTH_CONST.__objc_const: 0x13a0
-   __AUTH_CONST.__auth_got: 0x2008
-   __AUTH.__objc_data: 0x480
-   __AUTH.__data: 0x850
-   __DATA.__objc_ivar: 0x20
--  __DATA.__data: 0x3970
-+  __DATA.__data: 0x39c0
-   __DATA.__common: 0xd8
-   __DATA_DIRTY.__objc_data: 0x458
-   __DATA_DIRTY.__data: 0x1b78
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6583
--  Symbols:   3014
+-  Symbols:   2737
 -  CStrings:  942
 +  Functions: 6636
-+  Symbols:   3030
++  Symbols:   2753
 +  CStrings:  953
- 
 Symbols:
 + _associated conformance 12CalendarLink20HighlightEventIntentV10AppIntents015AssistantSchemaE0AaD0hE0
 + _associated conformance 12CalendarLink20HighlightEventIntentV10AppIntents04OpenE0AA5ValueAdEP_AD0fI0

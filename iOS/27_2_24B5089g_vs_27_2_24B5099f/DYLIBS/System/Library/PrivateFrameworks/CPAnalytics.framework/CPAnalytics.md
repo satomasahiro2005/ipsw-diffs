@@ -2,57 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/CPAnalytics.framework/CPAnalytics`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x123c0` | `0x121f0` | **`-0x1d0`** |
+| `__TEXT.__cstring` | `0x2411` | `0x24a3` | **`+0x92`** |
+| `__TEXT.__oslogstring` | `0x1004` | `0xfba` | **`-0x4a`** |
+| `__AUTH_CONST.__cfstring` | `0x2c00` | `0x2c40` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0xd98` | `0xd88` | **`-0x10`** |
+| `__DATA_CONST.__const` | `0x8e0` | `0x8d8` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x2a8` | `0x2a0` | **`-0x8`** |
+| `__TEXT.__objc_methlist` | `0x141c` | `0x1414` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x528` | `0x520` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -916.45.110.0.0
--  __TEXT.__text: 0x11cb4
--  __TEXT.__objc_methlist: 0x141c
 +916.51.202.0.0
-+  __TEXT.__text: 0x11ae4
-+  __TEXT.__objc_methlist: 0x1414
-   __TEXT.__const: 0x180
-   __TEXT.__gcc_except_tab: 0x174
--  __TEXT.__cstring: 0x2411
--  __TEXT.__oslogstring: 0x1004
--  __TEXT.__unwind_info: 0x5f0
-+  __TEXT.__cstring: 0x24a3
-+  __TEXT.__oslogstring: 0xfba
-+  __TEXT.__unwind_info: 0x5e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x8e0
-+  __DATA_CONST.__const: 0x8d8
-   __DATA_CONST.__objc_classlist: 0xd8
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xd98
-+  __DATA_CONST.__objc_selrefs: 0xd88
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0xb0
-   __DATA_CONST.__objc_arraydata: 0x60
--  __DATA_CONST.__got: 0x2a8
-+  __DATA_CONST.__got: 0x2a0
-   __AUTH_CONST.__const: 0xe0
--  __AUTH_CONST.__cfstring: 0x2c00
-+  __AUTH_CONST.__cfstring: 0x2c40
-   __AUTH_CONST.__objc_const: 0x2620
-   __AUTH_CONST.__objc_intobj: 0x3c0
-   __AUTH_CONST.__objc_arrayobj: 0x30
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftDemangle.dylib
 -  Functions: 391
 -  Symbols:   1123
 -  CStrings:  449
 +  Functions: 390
 +  Symbols:   1120
 +  CStrings:  450
- 
 Symbols:
 + GCC_except_table142
 + GCC_except_table146
@@ -74,7 +50,7 @@ Symbols:
 - _CPAnalyticsPhotosDeleteKey
 - _OBJC_CLASS_$_BMPhotosDelete
 Functions:
-~ +[CPAnalyticsCoreAnalyticsHelper upgradePayload:sourceEvent:] : 608 -> 640
+~ +[CPAnalyticsCoreAnalyticsHelper upgradePayload:sourceEvent:] : 620 -> 652
 ~ -[CPAnalyticsBiomeDestination _sendBiomeEvent:matcher:] : 832 -> 792
 - -[CPAnalyticsBiomeDestination _donatePhotoDeleteEventWithBaseSample:andEvent:]
 CStrings:

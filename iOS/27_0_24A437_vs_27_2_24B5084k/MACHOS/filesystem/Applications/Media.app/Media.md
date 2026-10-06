@@ -2,121 +2,72 @@
 
 > `/Applications/Media.app/Media`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc68d4` | `0xc9cf8` | **`+0x3424`** |
+| `__TEXT.__objc_methname` | `0x8205` | `0x8685` | **`+0x480`** |
+| `__TEXT.__objc_stubs` | `0x40e0` | `0x4420` | **`+0x340`** |
+| `__TEXT.__oslogstring` | `0x3b09` | `0x3d29` | **`+0x220`** |
+| `__TEXT.__swift5_typeref` | `0x74ea` | `0x76bc` | **`+0x1d2`** |
+| `__DATA_CONST.__const` | `0x47a8` | `0x4970` | **`+0x1c8`** |
+| `__DATA.__objc_const` | `0x4498` | `0x45d8` | **`+0x140`** |
+| `__TEXT.__objc_methlist` | `0x217c` | `0x22ac` | **`+0x130`** |
+| `__DATA.__objc_selrefs` | `0x1b58` | `0x1c70` | **`+0x118`** |
+| `__DATA.__data` | `0x4f60` | `0x5060` | **`+0x100`** |
+| `__TEXT.__auth_stubs` | `0x31e0` | `0x3120` | **`-0xc0`** |
+| `__TEXT.__const` | `0x73d4` | `0x7494` | **`+0xc0`** |
+| `__TEXT.__constg_swiftt` | `0x37d8` | `0x3894` | **`+0xbc`** |
+| `__TEXT.__unwind_info` | `0x2030` | `0x20e8` | **`+0xb8`** |
+| `__TEXT.__swift5_reflstr` | `0x1a7a` | `0x1b2a` | **`+0xb0`** |
+| `__DATA.__objc_data` | `0x36f0` | `0x3798` | **`+0xa8`** |
+| `__TEXT.__objc_methtype` | `0x2d21` | `0x2dc1` | **`+0xa0`** |
+| `__TEXT.__swift5_fieldmd` | `0x1938` | `0x19d8` | **`+0xa0`** |
+| `__DATA.__bss` | `0x44e0` | `0x4560` | **`+0x80`** |
+| `__DATA_CONST.__auth_got` | `0x1900` | `0x18a0` | **`-0x60`** |
+| `__TEXT.__swift5_capture` | `0xf70` | `0xfa0` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x1a6d` | `0x1a8d` | **`+0x20`** |
+| `__DATA_CONST.__auth_ptr` | `0xe70` | `0xe78` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0xb18` | `0xb10` | **`-0x8`** |
+| `__TEXT.__swift5_proto` | `0x1f8` | `0x1fc` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0x1ac` | `0x1b0` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_stublist`
 - `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA.__objc_stublist`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -342.1.0.0.0
--  __TEXT.__text: 0xc2220
--  __TEXT.__auth_stubs: 0x31e0
--  __TEXT.__objc_stubs: 0x40e0
--  __TEXT.__objc_methlist: 0x217c
--  __TEXT.__const: 0x73d4
 +351.2.0.0.0
-+  __TEXT.__text: 0xc551c
-+  __TEXT.__auth_stubs: 0x3120
-+  __TEXT.__objc_stubs: 0x4420
-+  __TEXT.__objc_methlist: 0x22ac
-+  __TEXT.__const: 0x7494
-   __TEXT.__gcc_except_tab: 0x2c
--  __TEXT.__cstring: 0x1a6d
--  __TEXT.__objc_methname: 0x8205
--  __TEXT.__oslogstring: 0x3b09
-+  __TEXT.__cstring: 0x1a8d
-+  __TEXT.__objc_methname: 0x8685
-+  __TEXT.__oslogstring: 0x3d29
-   __TEXT.__objc_classname: 0xcc4
--  __TEXT.__objc_methtype: 0x2d21
--  __TEXT.__constg_swiftt: 0x37d8
--  __TEXT.__swift5_typeref: 0x74ea
-+  __TEXT.__objc_methtype: 0x2dc1
-+  __TEXT.__constg_swiftt: 0x3894
-+  __TEXT.__swift5_typeref: 0x76bc
-   __TEXT.__swift5_builtin: 0x104
--  __TEXT.__swift5_reflstr: 0x1a7a
--  __TEXT.__swift5_fieldmd: 0x1938
-+  __TEXT.__swift5_reflstr: 0x1b2a
-+  __TEXT.__swift5_fieldmd: 0x19d8
-   __TEXT.__swift5_assocty: 0x638
--  __TEXT.__swift5_proto: 0x1f8
--  __TEXT.__swift5_types: 0x1ac
--  __TEXT.__swift5_capture: 0xf70
-+  __TEXT.__swift5_proto: 0x1fc
-+  __TEXT.__swift5_types: 0x1b0
-+  __TEXT.__swift5_capture: 0xfa0
-   __TEXT.__swift_as_entry: 0x34
-   __TEXT.__swift_as_cont: 0x34
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x2840
-+  __TEXT.__unwind_info: 0x28f0
-   __TEXT.__eh_frame: 0x117c
--  __DATA_CONST.__const: 0x47a8
-+  __DATA_CONST.__const: 0x4970
-   __DATA_CONST.__cfstring: 0x40
-   __DATA_CONST.__objc_classlist: 0x188
-   __DATA_CONST.__objc_catlist: 0x8
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0xf0
-   __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__auth_got: 0x1900
--  __DATA_CONST.__got: 0xb18
--  __DATA_CONST.__auth_ptr: 0xe70
--  __DATA.__objc_const: 0x4498
--  __DATA.__objc_selrefs: 0x1b58
-+  __DATA_CONST.__auth_got: 0x18a0
-+  __DATA_CONST.__got: 0xb10
-+  __DATA_CONST.__auth_ptr: 0xe78
-+  __DATA.__objc_const: 0x45d8
-+  __DATA.__objc_selrefs: 0x1c70
-   __DATA.__objc_ivar: 0x10
--  __DATA.__objc_data: 0x36f0
--  __DATA.__data: 0x4f60
-+  __DATA.__objc_data: 0x3798
-+  __DATA.__data: 0x5060
-   __DATA.__objc_stublist: 0x10
-   __DATA.__common: 0x280
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /System/Library/PrivateFrameworks/CarAccessoryFramework.framework/CarAccessoryFramework
-   - /System/Library/PrivateFrameworks/CarAssetUtils.framework/CarAssetUtils
-   - /System/Library/PrivateFrameworks/CarKit.framework/CarKit
 -  - /System/Library/PrivateFrameworks/CarPlayAssetUI.framework/CarPlayAssetUI
 +  - /System/Library/PrivateFrameworks/CarPlayAsset.framework/CarPlayAsset
-   - /System/Library/PrivateFrameworks/CarPlayServices.framework/CarPlayServices
-   - /System/Library/PrivateFrameworks/CarPlayUI.framework/CarPlayUI
-   - /System/Library/PrivateFrameworks/CarPlayUIServices.framework/CarPlayUIServices
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3403
 -  Symbols:   1488
 -  CStrings:  1946
 +  Functions: 3468
 +  Symbols:   1474
 +  CStrings:  2006
- 
 Symbols:
 + _$s10Foundation11MeasurementVAASo11NSDimensionCRbzrlE9converted2toACyxGx_tF
 + _$s13CarAssetUtils15CAUAssetLibraryC20featureConfigurationAA010CAUFeatureG0VyFTj

@@ -2,84 +2,37 @@
 
 > `/System/Library/Frameworks/HomeKit.framework/HomeKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3e7a74` | `0x3e7b6c` | **`+0xf8`** |
+| `__AUTH_CONST.__objc_const` | `0x49ed8` | `0x49f38` | **`+0x60`** |
+| `__TEXT.__eh_frame` | `0x8370` | `0x83d0` | **`+0x60`** |
+| `__TEXT.__objc_methlist` | `0x2919c` | `0x291dc` | **`+0x40`** |
+| `__TEXT.__oslogstring` | `0x58641` | `0x58601` | **`-0x40`** |
+| `__AUTH_CONST.__const` | `0x70a8` | `0x7080` | **`-0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0xe6c8` | `0xe6f0` | **`+0x28`** |
+| `__TEXT.__cstring` | `0x308a7` | `0x308ca` | **`+0x23`** |
+| `__AUTH.__data` | `0x1c20` | `0x1c40` | **`+0x20`** |
+| `__AUTH_CONST.__cfstring` | `0x2c3c0` | `0x2c3e0` | **`+0x20`** |
+| `__TEXT.__const` | `0x82b8` | `0x82d8` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x15b5` | `0x15d5` | **`+0x20`** |
+| `__TEXT.__constg_swiftt` | `0x217c` | `0x2194` | **`+0x18`** |
+| `__TEXT.__swift5_fieldmd` | `0x1a74` | `0x1a80` | **`+0xc`** |
+| `__DATA.__objc_ivar` | `0x28cc` | `0x28d0` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1514.0.0.0.1
--  __TEXT.__text: 0x3d2354
--  __TEXT.__objc_methlist: 0x2919c
--  __TEXT.__const: 0x82b8
 +1516.0.0.0.0
-+  __TEXT.__text: 0x3d246c
-+  __TEXT.__objc_methlist: 0x291dc
-+  __TEXT.__const: 0x82d8
-   __TEXT.__dlopen_cstrs: 0x403
-   __TEXT.__swift5_typeref: 0x2538
--  __TEXT.__cstring: 0x308a7
--  __TEXT.__constg_swiftt: 0x217c
--  __TEXT.__swift5_reflstr: 0x15b5
--  __TEXT.__swift5_fieldmd: 0x1a74
-+  __TEXT.__cstring: 0x308ca
-+  __TEXT.__constg_swiftt: 0x2194
-+  __TEXT.__swift5_reflstr: 0x15d5
-+  __TEXT.__swift5_fieldmd: 0x1a80
-   __TEXT.__swift5_builtin: 0xa0
-   __TEXT.__swift5_assocty: 0x3d8
-   __TEXT.__swift5_capture: 0x970
 
-   __TEXT.__swift_as_entry: 0x1fc
-   __TEXT.__swift_as_ret: 0x240
-   __TEXT.__swift_as_cont: 0x444
--  __TEXT.__oslogstring: 0x58641
-+  __TEXT.__oslogstring: 0x58601
-   __TEXT.__swift5_mpenum: 0x18
-   __TEXT.__gcc_except_tab: 0x6920
-   __TEXT.__ustring: 0x50
--  __TEXT.__unwind_info: 0xfe50
--  __TEXT.__eh_frame: 0x8378
-+  __TEXT.__unwind_info: 0xfe58
-+  __TEXT.__eh_frame: 0x83d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x108
-   __DATA_CONST.__objc_protolist: 0x568
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xe6c8
-+  __DATA_CONST.__objc_selrefs: 0xe6f0
-   __DATA_CONST.__objc_protorefs: 0x110
-   __DATA_CONST.__objc_superrefs: 0xfe8
-   __DATA_CONST.__objc_arraydata: 0x1430
-   __DATA_CONST.__got: 0x1eb0
--  __AUTH_CONST.__const: 0x70a8
--  __AUTH_CONST.__cfstring: 0x2c3c0
--  __AUTH_CONST.__objc_const: 0x49ed8
-+  __AUTH_CONST.__const: 0x7080
-+  __AUTH_CONST.__cfstring: 0x2c3e0
-+  __AUTH_CONST.__objc_const: 0x49f38
-   __AUTH_CONST.__objc_intobj: 0x9a8
-   __AUTH_CONST.__objc_dictobj: 0x848
-   __AUTH_CONST.__objc_arrayobj: 0x5e8
-   __AUTH_CONST.__objc_doubleobj: 0x70
-   __AUTH_CONST.__auth_got: 0x1ab0
-   __AUTH.__objc_data: 0x9238
--  __AUTH.__data: 0x1c20
--  __DATA.__objc_ivar: 0x28cc
-+  __AUTH.__data: 0x1c40
-+  __DATA.__objc_ivar: 0x28d0
-   __DATA.__data: 0x57d0
-   __DATA.__common: 0xa8
-   __DATA_DIRTY.__objc_data: 0x3630
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 18249
--  Symbols:   33096
+-  Symbols:   27761
 +  Functions: 18251
-+  Symbols:   33102
-   CStrings:  12657
- 
++  Symbols:   27767
 Symbols:
 + -[HMCameraUserSettings _resolveSettingsForThisSensor:]
 + -[HMProtoResidentCapabilities hasSupportsMultiSensorCameraRecording]
@@ -358,7 +311,6 @@ Symbols:
 + GCC_except_table9990
 + GCC_except_table9992
 + OBJC_IVAR_$_HMProtoResidentCapabilities._supportsMultiSensorCameraRecording
-+ _objc_msgSend$_resolveSettingsForThisSensor:
 - GCC_except_table10053
 - GCC_except_table10073
 - GCC_except_table10074
@@ -630,7 +582,6 @@ Symbols:
 - GCC_except_table9979
 - GCC_except_table9982
 - GCC_except_table9985
-- _objc_msgSend$fetchAccessorySettingsWithHomeIdentifier:accessoryIdentifier:keyPaths:completionHandler:
 CStrings:
 + "supportsMultiSensorCameraRecording"
 - "Dynamic settings adapter initial fetch failed: %@"

@@ -2,14 +2,20 @@
 
 > `com.apple.driver.RTBuddy`
 
-```diff
+### Section Size Changes
 
-   __TEXT.__cstring: 0x9e99
-   __TEXT.__os_log: 0xbf1
-   __TEXT.__const: 0x2a8
--  __TEXT_EXEC.__text: 0x44fe4
-+  __TEXT_EXEC.__text: 0x46830
-   __TEXT_EXEC.__auth_stubs: 0xb20
-   __DATA.__data: 0x128
-   __DATA.__common: 0xb98
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x44fe4` | `0x46830` | **`+0x184c`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
+```diff
+CStrings:
++ "21:33:19"
+- "22:18:01"
 ```

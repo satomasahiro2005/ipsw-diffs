@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/GameControllerSettingsUI.framework/GameControllerSettingsUI`
 
-```diff
+### Section Size Changes
 
- 7.0.20.0.0
--  __TEXT.__text: 0x1cb16c
-+  __TEXT.__text: 0x1cb218
-   __TEXT.__objc_methlist: 0x7bc
-   __TEXT.__const: 0x11184
-   __TEXT.__gcc_except_tab: 0x10
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1cb16c` | `0x1cb218` | **`+0xac`** |
+
+### Other Changes
+
+```diff
 Symbols:
 + _swift_retain_x12
 - _swift_retain_x11

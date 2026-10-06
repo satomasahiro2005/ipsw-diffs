@@ -2,23 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/ServicesPlayback.framework/ServicesPlayback`
 
-```diff
+### Section Size Changes
 
- 4.10.1.0.0
--  __TEXT.__text: 0x6fbd4
-+  __TEXT.__text: 0x6fbf8
-   __TEXT.__objc_methlist: 0x1ec
-   __TEXT.__const: 0x7ec0
-   __TEXT.__constg_swiftt: 0x315c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__eh_frame` | `0x1960` | `0x1998` | **`+0x38`** |
+| `__TEXT.__text` | `0x745d0` | `0x745f4` | **`+0x24`** |
+| `__TEXT.__unwind_info` | `0x2060` | `0x2068` | **`+0x8`** |
 
-   __TEXT.__swift_as_cont: 0x118
-   __TEXT.__swift5_mpenum: 0x1c
-   __TEXT.__unwind_info: 0x2730
--  __TEXT.__eh_frame: 0x1960
-+  __TEXT.__eh_frame: 0x19a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+### Other Changes
+
+```text
 Functions:
-~ sub_2c798ee48 -> sub_2c7601e48 : 32 -> 68
+~ sub_2cf0b6cb0 -> sub_2cedd5cb0 : 32 -> 68
 ```

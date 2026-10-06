@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/HealthPlatformFoundation.framework/HealthPlatformFoundation`
 
-```diff
+### Section Size Changes
 
- 7027.0.72.2.7
--  __TEXT.__text: 0x47ea0
-+  __TEXT.__text: 0x47ea8
-   __TEXT.__objc_methlist: 0x1a8
-   __TEXT.__const: 0x29a0
-   __TEXT.__swift5_typeref: 0xbb5
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x47ea0` | `0x47ea8` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_22e35b740 -> sub_22ebfa740 : 4900 -> 4896
 ~ sub_22e36036c -> sub_22ebff368 : 676 -> 680

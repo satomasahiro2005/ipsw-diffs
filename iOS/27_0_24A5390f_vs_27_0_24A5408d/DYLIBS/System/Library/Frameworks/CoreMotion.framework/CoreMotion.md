@@ -2,91 +2,38 @@
 
 > `/System/Library/Frameworks/CoreMotion.framework/CoreMotion`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3ae150` | `0x3b5ea4` | **`+0x7d54`** |
+| `__TEXT.__cstring` | `0x457a3` | `0x459ba` | **`+0x217`** |
+| `__TEXT.__const` | `0xc530` | `0xc690` | **`+0x160`** |
+| `__TEXT.__oslogstring` | `0x2d130` | `0x2d273` | **`+0x143`** |
+| `__AUTH_CONST.__cfstring` | `0x135c0` | `0x136e0` | **`+0x120`** |
+| `__AUTH_CONST.__objc_const` | `0x1c9f8` | `0x1caa8` | **`+0xb0`** |
+| `__TEXT.__unwind_info` | `0xb6e0` | `0xb648` | **`-0x98`** |
+| `__DATA_DIRTY.__bss` | `0x1038` | `0x10a0` | **`+0x68`** |
+| `__AUTH_CONST.__const` | `0x14fc0` | `0x14f60` | **`-0x60`** |
+| `__DATA_CONST.__const` | `0x3a48` | `0x3a08` | **`-0x40`** |
+| `__TEXT.__gcc_except_tab` | `0xca1c` | `0xc9e4` | **`-0x38`** |
+| `__TEXT.__objc_methlist` | `0xd0b4` | `0xd0e4` | **`+0x30`** |
+| `__DATA.__objc_ivar` | `0x16d8` | `0x16e8` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5488` | `0x5480` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3183.0.0.0.0
--  __TEXT.__text: 0x3ae150
--  __TEXT.__objc_methlist: 0xd0b4
--  __TEXT.__const: 0xc530
 +3185.0.6.0.1
-+  __TEXT.__text: 0x3b5ea4
-+  __TEXT.__objc_methlist: 0xd0e4
-+  __TEXT.__const: 0xc690
-   __TEXT.__swift5_typeref: 0x257
-   __TEXT.__swift5_reflstr: 0x2e
-   __TEXT.__swift5_assocty: 0x90
-   __TEXT.__constg_swiftt: 0xb8
-   __TEXT.__swift5_fieldmd: 0x70
-   __TEXT.__swift5_capture: 0x40
--  __TEXT.__oslogstring: 0x2d130
--  __TEXT.__cstring: 0x457a3
-+  __TEXT.__oslogstring: 0x2d273
-+  __TEXT.__cstring: 0x459ba
-   __TEXT.__swift5_proto: 0x10
-   __TEXT.__swift5_types: 0x10
-   __TEXT.__swift_as_entry: 0x18
-   __TEXT.__swift_as_ret: 0x18
-   __TEXT.__swift_as_cont: 0x30
--  __TEXT.__gcc_except_tab: 0xca1c
--  __TEXT.__unwind_info: 0xb6e0
-+  __TEXT.__gcc_except_tab: 0xc9e4
-+  __TEXT.__unwind_info: 0xb648
-   __TEXT.__eh_frame: 0x178
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3a48
-+  __DATA_CONST.__const: 0x3a08
-   __DATA_CONST.__objc_classlist: 0x880
-   __DATA_CONST.__objc_protolist: 0xd0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x5488
-+  __DATA_CONST.__objc_selrefs: 0x5480
-   __DATA_CONST.__objc_protorefs: 0x58
-   __DATA_CONST.__objc_superrefs: 0x770
-   __DATA_CONST.__objc_arraydata: 0x240
-   __DATA_CONST.__got: 0x7e8
--  __AUTH_CONST.__const: 0x14fc0
--  __AUTH_CONST.__cfstring: 0x135c0
--  __AUTH_CONST.__objc_const: 0x1c9f8
-+  __AUTH_CONST.__const: 0x14f60
-+  __AUTH_CONST.__cfstring: 0x136e0
-+  __AUTH_CONST.__objc_const: 0x1caa8
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_arrayobj: 0x90
-   __AUTH_CONST.__objc_dictobj: 0x258
 
-   __AUTH_CONST.__auth_got: 0x1490
-   __AUTH.__objc_data: 0x3f20
-   __AUTH.__data: 0x220
--  __DATA.__objc_ivar: 0x16d8
-+  __DATA.__objc_ivar: 0x16e8
-   __DATA.__data: 0xde8
-   __DATA.__bss: 0x4b0
-   __DATA.__common: 0xf8
-
-   __DATA_DIRTY.__objc_data: 0x15e0
-   __DATA_DIRTY.__data: 0x138
-   __DATA_DIRTY.__common: 0x89
--  __DATA_DIRTY.__bss: 0x1038
-+  __DATA_DIRTY.__bss: 0x10a0
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 12363
 -  Symbols:   1772
--  CStrings:  11071
+-  CStrings:  11072
 +  Functions: 12331
 +  Symbols:   1776
-+  CStrings:  11104
- 
++  CStrings:  11105
 Symbols:
 + _CMSuppressionType2ClientEvent
 + _CMSuppressionType2ClientType
@@ -98,6 +45,7 @@ CStrings:
 + ", platformSource, %ld, testType, %ld"
 + "-[CMBody _startUpdatingBodyToken:]"
 + "-[CMBody _stopUpdatingBodyToken:]"
++ "00:06:53"
 + "Assertion failed: !empty(), file /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CoreMotionFramework/Oscar/CMVectorBuffer.h, line 141,front() on empty buffer."
 + "Assertion failed: !empty(), file /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CoreMotionFramework/Oscar/CMVectorBuffer.h, line 147,back() on empty buffer."
 + "Assertion failed: !empty(), file /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CoreMotionFramework/Oscar/CMVectorBuffer.h, line 163,maxElement() on empty buffer."
@@ -118,6 +66,7 @@ CStrings:
 + "Assertion failed: start <= end && end <= fCapacity, file /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CoreMotionFramework/Oscar/CMQueue.h, line 267,start=%zu end=%zu fCapacity=%u."
 + "Assertion failed: static_cast<uint32_t>(Cap) == fCapacity, file /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CoreMotionFramework/Oscar/CMQueue.h, line 252,fastIndex Cap=%zu mismatches fCapacity=%u."
 + "Assertion failed: t >= 0 && t <= 1, file /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CoreMotionFramework/Oscar/Math/CMOQuaternion.cpp, line 300,Invalid time t for slerp."
++ "Aug  5 2026"
 + "CMVector<T, 3> CMFactoredMatrix<float, 3>::biermanObservationalUpdateSkew3(T, T, T, T, T, T, T) [T = float, N = 3, Dummy = void]"
 + "VOEvent"
 + "[CMBody] _startUpdatingBodyToken:%{public}@"
@@ -167,6 +116,7 @@ CStrings:
 - "%@, <recordId, %lu, startDate, %@, workoutType, %ld, sessionId, %@, durationInSeconds, %f, pointCount, %llu, hrMax, %f, hrMin, %f, meanHr, %f, meanVo2, %f, meanSpeed, %f, meanGrade, %f, meanHrConfidence, %f, meanHrCadenceAgreement, %f, meanCadence, %f, vo2MaxModelSource, %ld, sessionType, %ld>"
 - "-[CMBody _startUpdatingMotionManager:]"
 - "-[CMBody _stopUpdatingMotionManager:]"
+- "19:30:32"
 - "Assertion failed: !empty(), file /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CoreMotionFramework/Oscar/CMVectorBuffer.h, line 139,front() on empty buffer."
 - "Assertion failed: !empty(), file /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CoreMotionFramework/Oscar/CMVectorBuffer.h, line 145,back() on empty buffer."
 - "Assertion failed: !empty(), file /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CoreMotionFramework/Oscar/CMVectorBuffer.h, line 161,maxElement() on empty buffer."
@@ -188,6 +138,7 @@ CStrings:
 - "Assertion failed: t >= 0 && t <= 1, file /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CoreMotionFramework/Oscar/Math/CMOQuaternion.cpp, line 375,Invalid time t for slerp."
 - "Element &CMVectorBufferBase<float, 1>::operator[](const size_t) [T = float, N = 1]"
 - "Element &CMVectorBufferBase<float, 3>::operator[](const size_t) [T = float, N = 3]"
+- "Jul 11 2026"
 - "T &CMVector<float, 12>::operator[](const size_t) [T = float, N = 12]"
 - "T &CMVector<float, 4>::operator[](const size_t) [T = float, N = 4]"
 - "T &CMVector<float, 6>::operator[](const size_t) [T = float, N = 6]"

@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/CloudAttestation.framework/CloudAttestation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x13d600` | `0x13d880` | **`+0x280`** |
+| `__AUTH_CONST.__auth_got` | `0x1380` | `0x1378` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 323.0.8.0.0
--  __TEXT.__text: 0x13d600
-+  __TEXT.__text: 0x13d880
-   __TEXT.__objc_methlist: 0x164
-   __TEXT.__const: 0x1daf8
-   __TEXT.__constg_swiftt: 0x2f1c
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x7df8
-   __AUTH_CONST.__objc_const: 0x818
--  __AUTH_CONST.__auth_got: 0x1380
-+  __AUTH_CONST.__auth_got: 0x1378
-   __AUTH.__objc_data: 0x48
-   __AUTH.__data: 0x1b10
-   __DATA.__data: 0x2990
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   Functions: 7033
--  Symbols:   2413
-+  Symbols:   2412
-   CStrings:  371
- 
+-  Symbols:   2391
++  Symbols:   2390
 Symbols:
 - _swift_retain_x11
 Functions:

@@ -2,70 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/EmojiKit.framework/EmojiKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc9c8` | `0xcbcc` | **`+0x204`** |
+| `__AUTH_CONST.__objc_const` | `0x2068` | `0x20f8` | **`+0x90`** |
+| `__AUTH_CONST.__cfstring` | `0x2a0` | `0x320` | **`+0x80`** |
+| `__TEXT.__cstring` | `0x427` | `0x488` | **`+0x61`** |
+| `__AUTH.__objc_data` | `0x320` | `0x370` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x10ac` | `0x10ec` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x1a8` | `0x1e0` | **`+0x38`** |
+| `__DATA_CONST.__objc_selrefs` | `0xdc8` | `0xdf8` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0xa0` | `0xc0` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x520` | `0x540` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x468` | `0x478` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x150` | `0x15c` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x80` | `0x88` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -43.0.0.0.0
--  __TEXT.__text: 0xc5a4
--  __TEXT.__objc_methlist: 0x10ac
 +44.0.0.0.0
-+  __TEXT.__text: 0xc79c
-+  __TEXT.__objc_methlist: 0x10ec
-   __TEXT.__const: 0x160
-   __TEXT.__oslogstring: 0x530
--  __TEXT.__cstring: 0x427
--  __TEXT.__gcc_except_tab: 0x150
-+  __TEXT.__cstring: 0x488
-+  __TEXT.__gcc_except_tab: 0x15c
-   __TEXT.__ustring: 0x4
--  __TEXT.__unwind_info: 0x500
-+  __TEXT.__unwind_info: 0x510
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x520
--  __DATA_CONST.__objc_classlist: 0x80
-+  __DATA_CONST.__const: 0x540
-+  __DATA_CONST.__objc_classlist: 0x88
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xdc8
-+  __DATA_CONST.__objc_selrefs: 0xdf8
-   __DATA_CONST.__objc_superrefs: 0x70
-   __DATA_CONST.__objc_arraydata: 0x10
--  __DATA_CONST.__got: 0x1a8
--  __AUTH_CONST.__const: 0xa0
--  __AUTH_CONST.__cfstring: 0x2a0
--  __AUTH_CONST.__objc_const: 0x2068
-+  __DATA_CONST.__got: 0x1e0
-+  __AUTH_CONST.__const: 0xc0
-+  __AUTH_CONST.__cfstring: 0x320
-+  __AUTH_CONST.__objc_const: 0x20f8
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x30
-   __AUTH_CONST.__auth_got: 0x390
--  __AUTH.__objc_data: 0x320
-+  __AUTH.__objc_data: 0x370
-   __DATA.__objc_ivar: 0x16c
-   __DATA.__data: 0x1e0
-   __DATA_DIRTY.__objc_data: 0x1e0
 
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/PrivateFrameworks/CoreEmoji.framework/CoreEmoji
-   - /System/Library/PrivateFrameworks/EmojiFoundation.framework/EmojiFoundation
 +  - /System/Library/PrivateFrameworks/InputAnalytics.framework/InputAnalytics
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
+
 -  Functions: 348
 -  Symbols:   826
 -  CStrings:  76
 +  Functions: 354
 +  Symbols:   845
 +  CStrings:  80
- 
 Symbols:
 + +[EMKInputAnalyticsHelper _reportUsageType:]
 + +[EMKInputAnalyticsHelper reportAccepted]

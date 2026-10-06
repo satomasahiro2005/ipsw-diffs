@@ -2,47 +2,21 @@
 
 > `/System/Library/VideoProcessors/STF.bundle/STF`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfcd20` | `0xf9128` | **`-0x3bf8`** |
+| `__DATA_CONST.__got` | `0x0` | `0x190` | **`+0x190`** |
+| `__TEXT.__eh_frame` | `0x5c0` | `0x608` | **`+0x48`** |
+| `__TEXT.__unwind_info` | `0xea8` | `0xeb0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xfcd20
-+  __TEXT.__text: 0xf9128
-   __TEXT.__objc_methlist: 0x171c
-   __TEXT.__const: 0x580
-   __TEXT.__oslogstring: 0x1c4b
-   __TEXT.__cstring: 0x84c5
-   __TEXT.__gcc_except_tab: 0x24c
--  __TEXT.__unwind_info: 0xea8
--  __TEXT.__eh_frame: 0x5c0
-+  __TEXT.__unwind_info: 0xeb0
-+  __TEXT.__eh_frame: 0x608
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0xcf0
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x70
--  __DATA_CONST.__got: 0x0
-+  __DATA_CONST.__got: 0x190
-   __AUTH_CONST.__const: 0x388
-   __AUTH_CONST.__cfstring: 0xfa0
-   __AUTH_CONST.__objc_const: 0x3dd0
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__oslogstring : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+-753.0.0.122.3
++758.0.0.122.2
 Functions:
 ~ _cblas_isamax$NEWLAPACK : 596 -> 588
 ~ -[STFLtmFrameProcessorV1 computeBinned8BitsMonochromeThumbnail:width:height:binnedThumbnail:] : 836 -> 828
@@ -358,5 +332,4 @@ Functions:
 ~ __ZN11accelerate210production22repack_aligned_alignedIfLb1EEEvllPKT_lPS2_l : 396 -> 440
 ~ __ZN11accelerate210production22repack_aligned_alignedIfLb0EEEvllPKT_lPS2_l : 272 -> 328
 ~ __ZN11accelerate210production24repack_unaligned_alignedIfLb1EEEvllPKT_lPS2_l : 744 -> 756
-
 ```

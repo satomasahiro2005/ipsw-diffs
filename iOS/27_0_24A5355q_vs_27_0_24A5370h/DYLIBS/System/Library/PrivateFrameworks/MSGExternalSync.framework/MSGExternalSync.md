@@ -2,42 +2,21 @@
 
 > `/System/Library/PrivateFrameworks/MSGExternalSync.framework/MSGExternalSync`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xecc8` | `0xecf8` | **`+0x30`** |
+
+### Other Changes
+
 ```diff
 
 -418.0.0.0.1
--  __TEXT.__text: 0xecc8 sha256:64cd14bd737294f59ad07243344e564ff2852d527bf87e3d0ebb937a6879ef80
 +420.0.0.0.0
-+  __TEXT.__text: 0xecf8 sha256:441a58262f7eeef975c8964c104e2137803b80eea32906ccddd526b37792419d
-   __TEXT.__const: 0x10a sha256:cef8106b0dca125c090f55b092a852358464687111df3378a8caa627ac0ee7b8
-   __TEXT.__oslogstring: 0x1942 sha256:fb844112691d767e9dbfd951ff983beb16d68f0b7b209f59821f7ae46f081695
--  __TEXT.__cstring: 0x19a4 sha256:cc6d8f37248babc4a9daa106326dcda33e1779da2177961ea25d9970325340ba
--  __TEXT.__gcc_except_tab: 0x3f4 sha256:371dc14d2511dabd74e6047ce62b30d56233183f761764ac8fc6049bca69233c
--  __TEXT.__unwind_info: 0x298 sha256:e2754f30c253442939e19abfb633f65d72516512b1077f773897150496beca23
-+  __TEXT.__cstring: 0x19a4 sha256:9cf3228ab955e6eb395f4e441ce4dad4bb0be636cc0e789bcaf1ba1ce5ab9273
-+  __TEXT.__gcc_except_tab: 0x3f4 sha256:15f3bc9f209387e924a905cc7539afc8102dd12540091e588ac76892ee0eae46
-+  __TEXT.__unwind_info: 0x298 sha256:45d3d339e05975531cb60ea50b3355caf5eda9421f190a83d6d24be777027b44
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__weak_got: 0x10 sha256:9d0f1c6cfa9fdcdde7b47d1fd3afecdc841fb31cab76a674e51d063578a2d576
-+  __DATA_CONST.__weak_got: 0x10 sha256:25e7a6b39be83d9f15552f6f1e9071374a997f07cb887f4cf761d881beaf5ea5
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x88 sha256:8cd2f863b6cdf06446508bba3b622ed4c2987b4369b6a43932c858df27a259db
--  __AUTH_CONST.__weak_auth_got: 0x18 sha256:9301580f2a4c506b3a281d68e0e22bffb435cbb497ce8c36f9bdbf987996a481
-+  __AUTH_CONST.__const: 0x88 sha256:33503a0bdcd1f4756115899fc6b3f25792c5fd62cf70cb00c03c267b81102d58
-+  __AUTH_CONST.__weak_auth_got: 0x18 sha256:29088a447bd737ef9fbfae413fb96a052bde0411bc28166e36dc698bd3ad3621
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__data: 0x10 sha256:b6b385c3e9aa7528f952ad252c829d0925b17c264db232388f26be385ff297a5
-   __DATA.__bss: 0x18 sha256:9d908ecfb6b256def8b49a7c504e6c889c4b0e41fe6ce3e01863dd7b61a20aa0
-   - /System/Library/PrivateFrameworks/AppleMSG.framework/AppleMSG
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
--  UUID: 779D7E12-2A09-345D-B648-AB36F6503E42
+
 -  Functions: 214
--  Symbols:   603
-+  UUID: 5EBE40AD-3184-3530-A30A-B8F11DF0DBEB
 +  Functions: 212
-+  Symbols:   599
-   CStrings:  274
- 
 Symbols:
 + __ZNKSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEE4viewB9fqe220106Ev
 + __ZNSt12length_errorC1B9fqe220106EPKc
@@ -95,5 +74,4 @@ Symbols:
 - __ZNSt3__19allocatorI19PenroseSimulateDataE17allocate_at_leastB9fqe220100Em
 - __ZNSt3__1lsB9fqe220100IcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_RKNS_9__iom_t10IS4_EE
 - __ZSt28__throw_bad_array_new_lengthB9fqe220100v
-
 ```

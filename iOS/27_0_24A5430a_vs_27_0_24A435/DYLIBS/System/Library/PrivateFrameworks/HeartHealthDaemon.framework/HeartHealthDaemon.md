@@ -2,84 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/HeartHealthDaemon.framework/HeartHealthDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x64dd4` | `0x67ecc` | **`+0x30f8`** |
+| `__TEXT.__oslogstring` | `0xc32f` | `0xca8f` | **`+0x760`** |
+| `__AUTH_CONST.__objc_const` | `0x9a00` | `0x9c10` | **`+0x210`** |
+| `__TEXT.__cstring` | `0x57d2` | `0x59e2` | **`+0x210`** |
+| `__TEXT.__objc_methlist` | `0x4f24` | `0x5104` | **`+0x1e0`** |
+| `__AUTH_CONST.__cfstring` | `0x4760` | `0x4820` | **`+0xc0`** |
+| `__TEXT.__unwind_info` | `0x1688` | `0x1748` | **`+0xc0`** |
+| `__DATA_CONST.__const` | `0x1940` | `0x19e0` | **`+0xa0`** |
+| `__TEXT.__const` | `0x34a` | `0x3ca` | **`+0x80`** |
+| `__TEXT.__gcc_except_tab` | `0xadc` | `0xb4c` | **`+0x70`** |
+| `__DATA_CONST.__objc_selrefs` | `0x35c0` | `0x3610` | **`+0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x1640` | `0x1690` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0xec0` | `0xee8` | **`+0x28`** |
+| `__DATA_CONST.__objc_arraydata` | `0x510` | `0x538` | **`+0x28`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x120` | `0x138` | **`+0x18`** |
+| `__AUTH_CONST.__objc_intobj` | `0xdb0` | `0xdc8` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x634` | `0x64c` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x890` | `0x8a0` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x300` | `0x308` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x288` | `0x290` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 7027.0.72.2.7
--  __TEXT.__text: 0x64dd4
--  __TEXT.__objc_methlist: 0x4f24
--  __TEXT.__const: 0x34a
--  __TEXT.__gcc_except_tab: 0xadc
--  __TEXT.__cstring: 0x57d2
--  __TEXT.__oslogstring: 0xc32f
-+  __TEXT.__text: 0x67ecc
-+  __TEXT.__objc_methlist: 0x5104
-+  __TEXT.__const: 0x3ca
-+  __TEXT.__gcc_except_tab: 0xb4c
-+  __TEXT.__cstring: 0x59e2
-+  __TEXT.__oslogstring: 0xca8f
-   __TEXT.__ustring: 0x86
-   __TEXT.__swift5_typeref: 0x47
-   __TEXT.__swift5_capture: 0x30
-
-   __TEXT.__swift5_fieldmd: 0x38
-   __TEXT.__swift5_proto: 0xc
-   __TEXT.__swift5_types: 0x8
--  __TEXT.__unwind_info: 0x1688
-+  __TEXT.__unwind_info: 0x1748
-   __TEXT.__eh_frame: 0x78
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1940
--  __DATA_CONST.__objc_classlist: 0x300
-+  __DATA_CONST.__const: 0x19e0
-+  __DATA_CONST.__objc_classlist: 0x308
-   __DATA_CONST.__objc_catlist: 0x80
-   __DATA_CONST.__objc_protolist: 0x270
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x35c0
-+  __DATA_CONST.__objc_selrefs: 0x3610
-   __DATA_CONST.__objc_protorefs: 0x40
--  __DATA_CONST.__objc_superrefs: 0x288
--  __DATA_CONST.__objc_arraydata: 0x510
--  __DATA_CONST.__got: 0xec0
-+  __DATA_CONST.__objc_superrefs: 0x290
-+  __DATA_CONST.__objc_arraydata: 0x538
-+  __DATA_CONST.__got: 0xee8
-   __AUTH_CONST.__const: 0x620
--  __AUTH_CONST.__cfstring: 0x4760
--  __AUTH_CONST.__objc_const: 0x9a00
--  __AUTH_CONST.__objc_intobj: 0xdb0
-+  __AUTH_CONST.__cfstring: 0x4820
-+  __AUTH_CONST.__objc_const: 0x9c10
-+  __AUTH_CONST.__objc_intobj: 0xdc8
-   __AUTH_CONST.__objc_doubleobj: 0x3d0
--  __AUTH_CONST.__objc_arrayobj: 0x120
--  __AUTH_CONST.__auth_got: 0x890
-+  __AUTH_CONST.__objc_arrayobj: 0x138
-+  __AUTH_CONST.__auth_got: 0x8a0
-   __AUTH.__objc_data: 0x868
--  __DATA.__objc_ivar: 0x634
-+  __DATA.__objc_ivar: 0x64c
-   __DATA.__data: 0x1d60
--  __DATA_DIRTY.__objc_data: 0x1640
-+  __DATA_DIRTY.__objc_data: 0x1690
-   __DATA_DIRTY.__data: 0x58
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2077
--  Symbols:   5498
+-  Symbols:   4050
 -  CStrings:  1338
 +  Functions: 2153
-+  Symbols:   5582
++  Symbols:   4123
 +  CStrings:  1365
- 
 Symbols:
 + +[HDFeatureAvailabilityManager(HypertensionNotifications) hdhr_HypertensionNotificationsV1AvailabilityManagerWithProfile:]
 + +[HDFeatureAvailabilityManager(HypertensionNotifications) hdhr_HypertensionNotificationsV2AvailabilityManagerWithProfile:]
@@ -164,18 +121,6 @@ Symbols:
 + ___block_descriptor_56_e8_32s40s_e9_B16?0^8ls32l8s40l8
 + ___block_descriptor_64_e8_32s40s48s56w_e20_v20?0B8"NSError"12lw56l8s32l8s40l8s48l8
 + ___block_descriptor_80_e8_32s40s48s56s64bs_e20_v20?0B8"NSError"12ls64l8s32l8s40l8s48l8s56l8
-+ _objc_msgSend$_ihaAlgorithmVersionAnalyticsWithDataSource:
-+ _objc_msgSend$_mostRecentHypertensionEventSample
-+ _objc_msgSend$_watchSupportedFeatureIdentifier
-+ _objc_msgSend$hdhr_HypertensionNotificationsV1AvailabilityManagerWithProfile:
-+ _objc_msgSend$hdhr_HypertensionNotificationsV2AvailabilityManagerWithProfile:
-+ _objc_msgSend$initWithFeatureIdentifier:currentOnboardingVersion:
-+ _objc_msgSend$initWithProfile:type:algorithmVersion:
-+ _objc_msgSend$initWithV1FeatureAvailabilityManager:v2FeatureAvailabilityManager:pairedDeviceCapabilityProvider:
-+ _objc_msgSend$localAvailabilityForHypertensionNotificationsV2
-+ _objc_msgSend$requirementSetForFeatureIdentifier:
-+ _objc_msgSend$setFeatureSettingData:forKey:completion:
-+ _objc_msgSend$setFeatureSettingString:forKey:completion:
 - -[HDHRHypertensionMeasurementAnalyzer _saveHypertensionEventSampleAndLastAnalysisDateAtomicallyWithDateInterval:databaseTransactionContext:error:]
 - -[HDHRHypertensionMeasurementAnalyzer _saveHypertensionEventSampleWithDateInterval:error:]
 - -[HDHRHypertensionNotificationDeliveryEvent initWithProfile:type:]
@@ -186,7 +131,6 @@ Symbols:
 - ___146-[HDHRHypertensionMeasurementAnalyzer _saveHypertensionEventSampleAndLastAnalysisDateAtomicallyWithDateInterval:databaseTransactionContext:error:]_block_invoke_2
 - ___block_descriptor_48_e8_32s40s_e9_B16?0^8ls32l8s40l8
 - ___block_descriptor_56_e8_32s40s48w_e20_v20?0B8"NSError"12lw48l8s32l8s40l8
-- _objc_msgSend$initWithProfile:type:
 CStrings:
 + "!!! [HDHRHypertensionMeasurementAnalyzer] Overriding analyzer result, algorithm version: %@"
 + "%{public}s Failed to determine V2 device capability support with error: %{public}@"

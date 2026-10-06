@@ -2,90 +2,55 @@
 
 > `/usr/libexec/BatteryDischargeService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_entry`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x65c4` | `0x9314` | **`+0x2d50`** |
+| `__TEXT.__oslogstring` | `0x81e` | `0xc7e` | **`+0x460`** |
+| `__TEXT.__cstring` | `0x24a` | `0x3b3` | **`+0x169`** |
+| `__TEXT.__auth_stubs` | `0x7e0` | `0x940` | **`+0x160`** |
+| `__DATA_CONST.__const` | `0x298` | `0x388` | **`+0xf0`** |
+| `__DATA_CONST.__auth_got` | `0x3f8` | `0x4a8` | **`+0xb0`** |
+| `__TEXT.__objc_methname` | `0x5f5` | `0x698` | **`+0xa3`** |
+| `__TEXT.__objc_methtype` | `0x1bb` | `0x23e` | **`+0x83`** |
+| `__TEXT.__objc_stubs` | `0x400` | `0x460` | **`+0x60`** |
+| `__TEXT.__swift5_capture` | `0x54` | `0xa8` | **`+0x54`** |
+| `__DATA.__objc_data` | `0x3c0` | `0x408` | **`+0x48`** |
+| `__TEXT.__swift5_reflstr` | `0x14f` | `0x193` | **`+0x44`** |
+| `__TEXT.__swift5_typeref` | `0x118` | `0x159` | **`+0x41`** |
+| `__TEXT.__constg_swiftt` | `0x2d4` | `0x314` | **`+0x40`** |
+| `__DATA.__objc_const` | `0x790` | `0x7c0` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x1cc` | `0x1fc` | **`+0x30`** |
+| `__DATA.__objc_selrefs` | `0x1d8` | `0x200` | **`+0x28`** |
+| `__DATA.__data` | `0x2f0` | `0x310` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x110` | `0x130` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x188` | `0x1a8` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0xfc` | `0x114` | **`+0x18`** |
+| `__TEXT.__const` | `0x2e2` | `0x2f2` | **`+0x10`** |
+| `__DATA_CONST.__auth_ptr` | `0x98` | `0xa0` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_types`
+
+### Other Changes
 
 ```diff
 
- 16.0.0.0.0
--  __TEXT.__text: 0x65c4
--  __TEXT.__auth_stubs: 0x7e0
--  __TEXT.__objc_stubs: 0x400
--  __TEXT.__objc_methlist: 0x1cc
--  __TEXT.__const: 0x2e2
--  __TEXT.__cstring: 0x24a
--  __TEXT.__oslogstring: 0x81e
-+  __TEXT.__text: 0x9314
-+  __TEXT.__auth_stubs: 0x940
-+  __TEXT.__objc_stubs: 0x460
-+  __TEXT.__objc_methlist: 0x1fc
-+  __TEXT.__const: 0x2f2
-+  __TEXT.__cstring: 0x3b3
-+  __TEXT.__oslogstring: 0xc7e
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__objc_classname: 0xf9
--  __TEXT.__objc_methname: 0x5f5
--  __TEXT.__objc_methtype: 0x1bb
--  __TEXT.__constg_swiftt: 0x2d4
--  __TEXT.__swift5_typeref: 0x118
--  __TEXT.__swift5_fieldmd: 0xfc
-+  __TEXT.__objc_methname: 0x698
-+  __TEXT.__objc_methtype: 0x23e
-+  __TEXT.__constg_swiftt: 0x314
-+  __TEXT.__swift5_typeref: 0x159
-+  __TEXT.__swift5_fieldmd: 0x114
-   __TEXT.__swift5_builtin: 0x28
--  __TEXT.__swift5_reflstr: 0x14f
-+  __TEXT.__swift5_reflstr: 0x193
-   __TEXT.__swift5_assocty: 0x30
-   __TEXT.__swift5_proto: 0x10
-   __TEXT.__swift5_types: 0x14
--  __TEXT.__swift5_capture: 0x54
--  __TEXT.__unwind_info: 0x188
--  __DATA_CONST.__const: 0x298
-+  __TEXT.__swift5_capture: 0xa8
-+  __TEXT.__unwind_info: 0x1a8
-+  __DATA_CONST.__const: 0x388
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x28
--  __DATA_CONST.__auth_got: 0x3f8
--  __DATA_CONST.__got: 0x110
--  __DATA_CONST.__auth_ptr: 0x98
--  __DATA.__objc_const: 0x790
--  __DATA.__objc_selrefs: 0x1d8
--  __DATA.__objc_data: 0x3c0
--  __DATA.__data: 0x2f0
-+  __DATA_CONST.__auth_got: 0x4a8
-+  __DATA_CONST.__got: 0x130
-+  __DATA_CONST.__auth_ptr: 0xa0
-+  __DATA.__objc_const: 0x7c0
-+  __DATA.__objc_selrefs: 0x200
-+  __DATA.__objc_data: 0x408
-+  __DATA.__data: 0x310
-   __DATA.__common: 0x30
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 108
 -  Symbols:   190
 -  CStrings:  162
 +  Functions: 134
 +  Symbols:   217
 +  CStrings:  201
- 
 Symbols:
 + _$s10Foundation4DateV18addingTimeIntervalyACSdF
 + _$s10Foundation4DateV1loiySbAC_ACtFZ

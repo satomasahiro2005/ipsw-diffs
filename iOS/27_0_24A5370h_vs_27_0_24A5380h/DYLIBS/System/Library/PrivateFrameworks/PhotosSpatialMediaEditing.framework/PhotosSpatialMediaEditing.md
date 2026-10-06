@@ -2,108 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/PhotosSpatialMediaEditing.framework/PhotosSpatialMediaEditing`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x318c0` | `0x32d5c` | **`+0x149c`** |
+| `__DATA_DIRTY.__data` | `0xc8` | `0x8e0` | **`+0x818`** |
+| `__AUTH.__data` | `0x850` | `0x178` | **`-0x6d8`** |
+| `__AUTH.__objc_data` | `0x580` | `0x288` | **`-0x2f8`** |
+| `__DATA_DIRTY.__objc_data` | `0x220` | `0x518` | **`+0x2f8`** |
+| `__TEXT.__const` | `0x1bc8` | `0x1e88` | **`+0x2c0`** |
+| `__TEXT.__swift5_reflstr` | `0x7e6` | `0x9f6` | **`+0x210`** |
+| `__AUTH_CONST.__objc_const` | `0x1990` | `0x1b48` | **`+0x1b8`** |
+| `__DATA.__bss` | `0x2180` | `0x2300` | **`+0x180`** |
+| `__AUTH_CONST.__const` | `0xf08` | `0x1020` | **`+0x118`** |
+| `__TEXT.__swift5_fieldmd` | `0x78c` | `0x894` | **`+0x108`** |
+| `__TEXT.__cstring` | `0xe8f` | `0xf8f` | **`+0x100`** |
+| `__TEXT.__oslogstring` | `0x5bf` | `0x4ff` | **`-0xc0`** |
+| `__TEXT.__constg_swiftt` | `0xa6c` | `0xb20` | **`+0xb4`** |
+| `__TEXT.__swift5_typeref` | `0x7ac` | `0x83c` | **`+0x90`** |
+| `__TEXT.__unwind_info` | `0xcd0` | `0xd50` | **`+0x80`** |
+| `__DATA.__data` | `0x9e0` | `0xa40` | **`+0x60`** |
+| `__AUTH_CONST.__auth_got` | `0xd50` | `0xd98` | **`+0x48`** |
+| `__DATA_CONST.__const` | `0x130` | `0x170` | **`+0x40`** |
+| `__DATA.__common` | `0x138` | `0x114` | **`-0x24`** |
+| `__DATA_DIRTY.__common` | `0x10` | `0x30` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8d0` | `0x8e8` | **`+0x18`** |
+| `__TEXT.__eh_frame` | `0xdc8` | `0xdb0` | **`-0x18`** |
+| `__TEXT.__swift5_builtin` | `0x50` | `0x64` | **`+0x14`** |
+| `__TEXT.__swift5_types` | `0x98` | `0xa8` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x10c` | `0x118` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x70` | `0x78` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x318c0
-+  __TEXT.__text: 0x32d5c
-   __TEXT.__objc_methlist: 0xd6c
--  __TEXT.__const: 0x1bc8
--  __TEXT.__constg_swiftt: 0xa6c
--  __TEXT.__swift5_typeref: 0x7ac
--  __TEXT.__swift5_builtin: 0x50
--  __TEXT.__swift5_reflstr: 0x7e6
--  __TEXT.__swift5_fieldmd: 0x78c
-+  __TEXT.__const: 0x1e88
-+  __TEXT.__constg_swiftt: 0xb20
-+  __TEXT.__swift5_typeref: 0x83c
-+  __TEXT.__swift5_builtin: 0x64
-+  __TEXT.__swift5_reflstr: 0x9f6
-+  __TEXT.__swift5_fieldmd: 0x894
-   __TEXT.__swift5_assocty: 0x108
--  __TEXT.__swift5_proto: 0x10c
--  __TEXT.__swift5_types: 0x98
--  __TEXT.__cstring: 0xe8f
--  __TEXT.__oslogstring: 0x5bf
-+  __TEXT.__swift5_proto: 0x118
-+  __TEXT.__swift5_types: 0xa8
-+  __TEXT.__cstring: 0xf8f
-+  __TEXT.__oslogstring: 0x4ff
-   __TEXT.__swift_as_entry: 0xc
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0x20
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_capture: 0x44
--  __TEXT.__unwind_info: 0xcd0
--  __TEXT.__eh_frame: 0xdc8
-+  __TEXT.__unwind_info: 0xd50
-+  __TEXT.__eh_frame: 0xdb0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x130
--  __DATA_CONST.__objc_classlist: 0x70
-+  __DATA_CONST.__const: 0x170
-+  __DATA_CONST.__objc_classlist: 0x78
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8d0
-+  __DATA_CONST.__objc_selrefs: 0x8e8
-   __DATA_CONST.__objc_protorefs: 0x40
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xf08
--  __AUTH_CONST.__objc_const: 0x1990
--  __AUTH_CONST.__auth_got: 0xd50
--  __AUTH.__objc_data: 0x580
--  __AUTH.__data: 0x850
--  __DATA.__data: 0x9e0
--  __DATA.__bss: 0x2180
--  __DATA.__common: 0x138
--  __DATA_DIRTY.__objc_data: 0x220
--  __DATA_DIRTY.__data: 0xc8
--  __DATA_DIRTY.__common: 0x10
-+  __AUTH_CONST.__const: 0x1020
-+  __AUTH_CONST.__objc_const: 0x1b48
-+  __AUTH_CONST.__auth_got: 0xd98
-+  __AUTH.__objc_data: 0x288
-+  __AUTH.__data: 0x178
-+  __DATA.__data: 0xa40
-+  __DATA.__bss: 0x2300
-+  __DATA.__common: 0x114
-+  __DATA_DIRTY.__objc_data: 0x518
-+  __DATA_DIRTY.__data: 0x8e0
-+  __DATA_DIRTY.__common: 0x30
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreImage.framework/CoreImage
-   - /System/Library/Frameworks/CoreVideo.framework/CoreVideo
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-+  - /System/Library/Frameworks/ImageIO.framework/ImageIO
-   - /System/Library/Frameworks/Metal.framework/Metal
-   - /System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders
-   - /System/Library/PrivateFrameworks/AlchemistBase.framework/AlchemistBase
+-910.21.101.0.0
++910.27.103.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/Frameworks/ImageIO.framework/ImageIO
+
 -  Functions: 1358
--  Symbols:   1233
+-  Symbols:   720
 -  CStrings:  116
 +  Functions: 1428
-+  Symbols:   1270
++  Symbols:   746
 +  CStrings:  120
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
 Symbols:
 + __DATA__TtC25PhotosSpatialMediaEditing36SpatialReframePipelineAnalyticsStash
 + __IVARS__TtC25PhotosSpatialMediaEditing36SpatialReframePipelineAnalyticsStash
@@ -118,9 +63,6 @@ Symbols:
 + _kCGImagePropertyExifDictionary
 + _kCGImagePropertyExifFocalLength
 + _kCGImagePropertyOrientation
-+ _objc_msgSend$doubleValue
-+ _objc_msgSend$initWithUnsignedInteger:
-+ _objc_msgSend$unsignedIntegerValue
 + _objc_retain_x28
 + _os_unfair_lock_lock
 + _os_unfair_lock_unlock
@@ -173,5 +115,4 @@ CStrings:
 - "SpatialPhotoReframeSubjectGuardrailHeadboxPaddings"
 - "landscapeScore"
 - "rejectedTooSmall"
-
 ```

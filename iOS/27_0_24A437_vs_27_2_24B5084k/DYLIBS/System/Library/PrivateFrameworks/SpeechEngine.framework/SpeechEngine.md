@@ -2,86 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/SpeechEngine.framework/SpeechEngine`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x133594` | `0x13acb0` | **`+0x771c`** |
+| `__DATA.__bss` | `0x13630` | `0x13e30` | **`+0x800`** |
+| `__AUTH_CONST.__const` | `0xbe28` | `0xc5d0` | **`+0x7a8`** |
+| `__TEXT.__const` | `0xe3f0` | `0xe950` | **`+0x560`** |
+| `__TEXT.__eh_frame` | `0xe374` | `0xe6dc` | **`+0x368`** |
+| `__TEXT.__unwind_info` | `0x5ef0` | `0x5c78` | **`-0x278`** |
+| `__TEXT.__oslogstring` | `0x417f` | `0x43ef` | **`+0x270`** |
+| `__TEXT.__swift5_capture` | `0x1a48` | `0x1c6c` | **`+0x224`** |
+| `__TEXT.__cstring` | `0x5771` | `0x5981` | **`+0x210`** |
+| `__TEXT.__swift5_reflstr` | `0x3b06` | `0x3d16` | **`+0x210`** |
+| `__TEXT.__swift5_fieldmd` | `0x4838` | `0x4a14` | **`+0x1dc`** |
+| `__DATA.__data` | `0x2968` | `0x2a88` | **`+0x120`** |
+| `__TEXT.__constg_swiftt` | `0x518c` | `0x5290` | **`+0x104`** |
+| `__TEXT.__swift5_typeref` | `0x3948` | `0x3a22` | **`+0xda`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3f8` | `0x468` | **`+0x70`** |
+| `__TEXT.__swift5_proto` | `0x9ec` | `0xa2c` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x1990` | `0x19b8` | **`+0x28`** |
+| `__DATA.__common` | `0x400` | `0x420` | **`+0x20`** |
+| `__DATA_DIRTY.__data` | `0x59f0` | `0x5a10` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0xc00` | `0xc20` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x470` | `0x484` | **`+0x14`** |
+| `__TEXT.__swift_as_entry` | `0x414` | `0x424` | **`+0x10`** |
+| `__TEXT.__swift_as_ret` | `0x424` | `0x430` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
 -3600.85.2.0.0
--  __TEXT.__text: 0x1236b8
 +3605.7.1.0.0
-+  __TEXT.__text: 0x12aa50
-   __TEXT.__objc_methlist: 0xdc
--  __TEXT.__const: 0xe3f0
--  __TEXT.__cstring: 0x5771
--  __TEXT.__swift5_typeref: 0x3948
--  __TEXT.__constg_swiftt: 0x518c
--  __TEXT.__swift5_reflstr: 0x3b06
--  __TEXT.__swift5_fieldmd: 0x4838
-+  __TEXT.__const: 0xe950
-+  __TEXT.__cstring: 0x5981
-+  __TEXT.__swift5_typeref: 0x3a22
-+  __TEXT.__constg_swiftt: 0x5290
-+  __TEXT.__swift5_reflstr: 0x3d16
-+  __TEXT.__swift5_fieldmd: 0x4a14
-   __TEXT.__swift5_builtin: 0x1b8
-   __TEXT.__swift5_assocty: 0x1c8
-   __TEXT.__swift5_protos: 0x3c
--  __TEXT.__swift5_proto: 0x9ec
--  __TEXT.__swift5_types: 0x470
--  __TEXT.__swift_as_entry: 0x414
--  __TEXT.__swift_as_ret: 0x424
-+  __TEXT.__swift5_proto: 0xa2c
-+  __TEXT.__swift5_types: 0x484
-+  __TEXT.__swift_as_entry: 0x424
-+  __TEXT.__swift_as_ret: 0x430
-   __TEXT.__swift5_mpenum: 0x60
--  __TEXT.__swift_as_cont: 0xc00
--  __TEXT.__swift5_capture: 0x1a48
--  __TEXT.__oslogstring: 0x417f
--  __TEXT.__unwind_info: 0x6dc0
--  __TEXT.__eh_frame: 0xe394
-+  __TEXT.__swift_as_cont: 0xc20
-+  __TEXT.__swift5_capture: 0x1c6c
-+  __TEXT.__oslogstring: 0x43ef
-+  __TEXT.__unwind_info: 0x7010
-+  __TEXT.__eh_frame: 0xe6fc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x1c8
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3f8
-+  __DATA_CONST.__objc_selrefs: 0x468
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xbe28
-+  __AUTH_CONST.__const: 0xc5d0
-   __AUTH_CONST.__objc_const: 0x5158
--  __AUTH_CONST.__auth_got: 0x1990
-+  __AUTH_CONST.__auth_got: 0x19b8
-   __AUTH.__objc_data: 0xe8
-   __AUTH.__data: 0xe80
--  __DATA.__data: 0x2968
--  __DATA.__common: 0x400
-+  __DATA.__data: 0x2a88
-+  __DATA.__common: 0x420
-   __DATA_DIRTY.__objc_data: 0x6e8
--  __DATA_DIRTY.__data: 0x59f0
-+  __DATA_DIRTY.__data: 0x5a10
-   __DATA_DIRTY.__common: 0x198
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9158
--  Symbols:   2499
+-  Symbols:   2381
 -  CStrings:  914
 +  Functions: 9343
-+  Symbols:   2544
++  Symbols:   2412
 +  CStrings:  937
- 
 Symbols:
 + _OUTLINED_FUNCTION_370
 + _OUTLINED_FUNCTION_371
@@ -101,20 +62,6 @@ Symbols:
 + _associated conformance 12SpeechEngine0A32RecognitionVoiceCommandDebugInfoV10CodingKeys33_DB366A090B4C7661F21C552431303D7ALLOs0H3KeyAAs23CustomStringConvertible
 + _get_enum_tag_for_layout_string 12SpeechEngine0A20RecognitionDebugInfoVSg
 + _get_enum_tag_for_layout_string 12SpeechEngine0A32RecognitionVoiceCommandDebugInfoVSg
-+ _objc_msgSend$commandParserMachAbsoluteEndTicks
-+ _objc_msgSend$commandParserMachAbsoluteStartTicks
-+ _objc_msgSend$commandParserMachContinuousEndTicks
-+ _objc_msgSend$commandParserMachContinuousStartTicks
-+ _objc_msgSend$commandUtterance
-+ _objc_msgSend$hasNoVoiceCommandAfterRespeakCheck
-+ _objc_msgSend$hasVoiceCommandAfterReranking
-+ _objc_msgSend$hasVoiceCommandEditIntent
-+ _objc_msgSend$hasVoiceCommandInExhaustiveParses
-+ _objc_msgSend$hasVoiceCommandParses
-+ _objc_msgSend$payload
-+ _objc_msgSend$precedingUtterance
-+ _objc_msgSend$target
-+ _objc_msgSend$voiceCommandDebugInfo
 + _symbolic B0
 + _symbolic _____ 12SpeechEngine0A20RecognitionDebugInfoV
 + _symbolic _____ 12SpeechEngine0A20RecognitionDebugInfoV10CodingKeys33_DB366A090B4C7661F21C552431303D7ALLO

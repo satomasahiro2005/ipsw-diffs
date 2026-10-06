@@ -2,22 +2,23 @@
 
 > `/System/Library/PrivateFrameworks/IntelligencePlatform.framework/PlugIns/DiagnosticExtension.appex/DiagnosticExtension`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x265c` | `0x2660` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_data`
+- `__DATA_CONST.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 190.0.0.0.0
--  __TEXT.__text: 0x265c
-+  __TEXT.__text: 0x2660
-   __TEXT.__auth_stubs: 0x4e0
-   __TEXT.__objc_stubs: 0x140
-   __TEXT.__objc_methlist: 0x68
+```text
 Functions:
 ~ sub_100002988 : 100 -> 104
 ~ sub_1000037d0 -> sub_1000037d4 : 28 -> 12

@@ -2,95 +2,55 @@
 
 > `/usr/libexec/gpsd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1755a8` | `0x177cf4` | **`+0x274c`** |
+| `__DATA.__common` | `0x9dcc0` | `0x9f560` | **`+0x18a0`** |
+| `__TEXT.__const` | `0xeeb0` | `0xf2d0` | **`+0x420`** |
+| `__TEXT.__oslogstring` | `0x11d36` | `0x12153` | **`+0x41d`** |
+| `__DATA_CONST.__const` | `0x10190` | `0x103d8` | **`+0x248`** |
+| `__TEXT.__gcc_except_tab` | `0x8e68` | `0x9074` | **`+0x20c`** |
+| `__TEXT.__unwind_info` | `0x8448` | `0x8518` | **`+0xd0`** |
+| `__TEXT.__cstring` | `0xa7fa` | `0xa830` | **`+0x36`** |
+| `__TEXT.__auth_stubs` | `0x20b0` | `0x20c0` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x1070` | `0x1078` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
 - `__TEXT.__init_offsets`
 - `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_types`
 - `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_entry`
 - `__TEXT.__swift5_proto`
 - `__TEXT.__swift5_protos`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift5_types`
+
+### Other Changes
 
 ```diff
 
 -365.0.9.0.0
--  __TEXT.__text: 0x1755a8
--  __TEXT.__auth_stubs: 0x20b0
 +365.0.9.0.1
-+  __TEXT.__text: 0x177cf4
-+  __TEXT.__auth_stubs: 0x20c0
-   __TEXT.__objc_stubs: 0x860
-   __TEXT.__init_offsets: 0x30
-   __TEXT.__objc_methlist: 0x1b4
--  __TEXT.__gcc_except_tab: 0x8e68
--  __TEXT.__const: 0xeeb0
-+  __TEXT.__gcc_except_tab: 0x9074
-+  __TEXT.__const: 0xf2d0
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__constg_swiftt: 0x6a4
-   __TEXT.__swift5_typeref: 0x2f1
-   __TEXT.__swift5_reflstr: 0x11c
-   __TEXT.__swift5_fieldmd: 0x29c
-   __TEXT.__swift5_builtin: 0x28
--  __TEXT.__oslogstring: 0x11d36
-+  __TEXT.__oslogstring: 0x12153
-   __TEXT.__swift5_types: 0x54
-   __TEXT.__objc_classname: 0x28b
-   __TEXT.__objc_methname: 0x822
-   __TEXT.__swift5_capture: 0x188
--  __TEXT.__cstring: 0xa7fa
-+  __TEXT.__cstring: 0xa830
-   __TEXT.__swift5_proto: 0x10
-   __TEXT.__swift5_protos: 0xc
-   __TEXT.__objc_methtype: 0x16c
--  __TEXT.__unwind_info: 0x8448
-+  __TEXT.__unwind_info: 0x8518
-   __TEXT.__eh_frame: 0xbd8
--  __DATA_CONST.__const: 0x10190
-+  __DATA_CONST.__const: 0x103d8
-   __DATA_CONST.__cfstring: 0x1240
-   __DATA_CONST.__objc_classlist: 0x80
-   __DATA_CONST.__objc_protolist: 0x28
 
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_intobj: 0x108
-   __DATA_CONST.__objc_doubleobj: 0x20
--  __DATA_CONST.__auth_got: 0x1070
-+  __DATA_CONST.__auth_got: 0x1078
-   __DATA_CONST.__got: 0x348
-   __DATA_CONST.__auth_ptr: 0xe0
-   __DATA.__objc_const: 0xd28
-   __DATA.__objc_selrefs: 0x2d0
-   __DATA.__objc_data: 0x1f0
-   __DATA.__data: 0xc50
--  __DATA.__common: 0x9dcc0
-+  __DATA.__common: 0x9f560
-   __DATA.__bss: 0x3b8
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 10097
 -  Symbols:   15516
--  CStrings:  2549
+-  CStrings:  2551
 +  Functions: 10145
 +  Symbols:   15594
-+  CStrings:  2567
- 
++  CStrings:  2569
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/CoreGPS/install/Symbols/BuiltProducts/libGPSDaemon.a(GpsdClientManager-23f8c4a442d92b24d005adb3aa3c4b98.o)
 + GCC_except_table125
@@ -271,6 +231,9 @@ CStrings:
 + "#gdm,handleReset,device,%{public}p"
 + "#gdm,stop,alreadyInFlight,ignore"
 + "#version,CoreGPS-365.0.9.0.1,machContSec,%{public}.3f,BuildTime,{Aug  5 2026,21:57:45}"
++ "21:57:42"
++ "22:00:31"
++ "Aug  5 2026"
 + "ExitCompletedWatchdog"
 + "GnssClientManager,handleInterrupt,restarting,%{public}llu,ms"
 + "GnssClientManager,ingressRequest,full,type,%{public}d"
@@ -289,6 +252,8 @@ CStrings:
 + "gnss::Exception,%{public}s,%{public}s,%{public}d,payload,%{public}d,#gdh,exitCompletedWatchdog,noExitCompleted,forceExit"
 - "#gdm,handleReset,notBuilt,skip"
 - "#version,CoreGPS-365.0.9,machContSec,%{public}.3f,BuildTime,{Jul 14 2026,21:29:22}"
+- "21:29:17"
+- "21:32:57"
 - "GnssClientManager,gpsdDisconnected,sendingExit"
 - "GpsdGnssDeviceRpc,handleRequest(buffer),pendingNotEmpty,type,%{public}d"
 - "GpsdGnssDeviceRpc,handleRequest(buffer),shmemFull,park,type,%{public}d,size,%{public}zu"
@@ -296,5 +261,6 @@ CStrings:
 - "GpsdGnssDeviceRpc,handleRequest,sendBusy,park,type,%{public}d"
 - "GpsdGnssDeviceRpc,sendPendingRequest,type,%{public}d,bufferSize,%{public}zu"
 - "GpsdGnssDeviceRpc,stats,pending,%{public}d"
+- "Jul 14 2026"
 - "glonassExternalCalMeters,%{public}.2f"
 ```

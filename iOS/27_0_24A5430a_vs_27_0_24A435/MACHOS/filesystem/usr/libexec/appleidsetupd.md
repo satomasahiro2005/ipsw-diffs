@@ -2,20 +2,21 @@
 
 > `/usr/libexec/appleidsetupd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x767c` | `0x7684` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__const`
+- `__TEXT.__eh_frame`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 128.1.1.0.0
--  __TEXT.__text: 0x767c
-+  __TEXT.__text: 0x7684
-   __TEXT.__auth_stubs: 0xa30
-   __TEXT.__objc_stubs: 0x3e0
-   __TEXT.__const: 0x3c8
+```text
 Functions:
 ~ sub_1000085d0 : 1196 -> 1204
 ```

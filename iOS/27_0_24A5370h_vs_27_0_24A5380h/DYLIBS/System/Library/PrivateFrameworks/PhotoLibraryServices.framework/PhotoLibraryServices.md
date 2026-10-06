@@ -2,126 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/PhotoLibraryServices.framework/PhotoLibraryServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__oslogstring` | `0x8348f` | `0x83dc5` | **`+0x936`** |
+| `__TEXT.__cstring` | `0x6c038` | `0x6c454` | **`+0x41c`** |
+| `__AUTH_CONST.__objc_const` | `0x6fc88` | `0x6fef0` | **`+0x268`** |
+| `__AUTH_CONST.__cfstring` | `0x52d60` | `0x52ec0` | **`+0x160`** |
+| `__DATA_DIRTY.__objc_data` | `0x3660` | `0x3520` | **`-0x140`** |
+| `__TEXT.__gcc_except_tab` | `0x20058` | `0x2017c` | **`+0x124`** |
+| `__DATA_CONST.__objc_selrefs` | `0x24f90` | `0x250a0` | **`+0x110`** |
+| `__DATA_CONST.__const` | `0x165e0` | `0x166e8` | **`+0x108`** |
+| `__TEXT.__objc_methlist` | `0x455a4` | `0x4568c` | **`+0xe8`** |
+| `__TEXT.__dlopen_cstrs` | `0xa6e` | `0xb28` | **`+0xba`** |
+| `__AUTH.__objc_data` | `0x132b0` | `0x13350` | **`+0xa0`** |
+| `__AUTH_CONST.__objc_intobj` | `0x53d0` | `0x5340` | **`-0x90`** |
+| `__TEXT.__text` | `0x744d40` | `0x744dd0` | **`+0x90`** |
+| `__TEXT.__unwind_info` | `0x166f8` | `0x16758` | **`+0x60`** |
+| `__DATA.__objc_ivar` | `0x3de4` | `0x3e28` | **`+0x44`** |
+| `__DATA_DIRTY.__bss` | `0x1a0` | `0x1e0` | **`+0x40`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x14b8` | `0x1488` | **`-0x30`** |
+| `__DATA.__data` | `0x7004` | `0x6fd4` | **`-0x30`** |
+| `__DATA_CONST.__got` | `0x50d8` | `0x5108` | **`+0x30`** |
+| `__TEXT.__const` | `0x7128` | `0x7158` | **`+0x30`** |
+| `__TEXT.__swift5_typeref` | `0x11e0` | `0x11b2` | **`-0x2e`** |
+| `__DATA_CONST.__objc_arraydata` | `0x1ce8` | `0x1cc0` | **`-0x28`** |
+| `__AUTH_CONST.__const` | `0x9b90` | `0x9bb0` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x23e0` | `0x23d0` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x2a78` | `0x2a80` | **`+0x8`** |
+| `__DATA.__bss` | `0x3538` | `0x3540` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x768` | `0x760` | **`-0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0xd0` | `0xc8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x744d40
-+  __TEXT.__text: 0x744dd0
-   __TEXT.__delay_stubs: 0x40
-   __TEXT.__delay_helper: 0xa4
--  __TEXT.__objc_methlist: 0x455a4
--  __TEXT.__const: 0x7128
--  __TEXT.__dlopen_cstrs: 0xa6e
--  __TEXT.__swift5_typeref: 0x11e0
--  __TEXT.__cstring: 0x6c038
-+  __TEXT.__objc_methlist: 0x4568c
-+  __TEXT.__const: 0x7158
-+  __TEXT.__dlopen_cstrs: 0xb28
-+  __TEXT.__swift5_typeref: 0x11b2
-+  __TEXT.__cstring: 0x6c454
-   __TEXT.__swift5_capture: 0x1528
-   __TEXT.__constg_swiftt: 0x290
-   __TEXT.__swift5_builtin: 0x78
+-910.21.101.0.0
++910.27.103.0.0
 
-   __TEXT.__swift5_fieldmd: 0x200
-   __TEXT.__swift5_proto: 0x70
-   __TEXT.__swift5_types: 0x3c
--  __TEXT.__oslogstring: 0x8348f
-+  __TEXT.__oslogstring: 0x83dc5
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__gcc_except_tab: 0x20058
-+  __TEXT.__gcc_except_tab: 0x2017c
-   __TEXT.__ustring: 0xa3a
--  __TEXT.__unwind_info: 0x166f8
-+  __TEXT.__unwind_info: 0x16758
-   __TEXT.__eh_frame: 0xf88
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x165e0
--  __DATA_CONST.__objc_classlist: 0x23e0
-+  __DATA_CONST.__const: 0x166e8
-+  __DATA_CONST.__objc_classlist: 0x23d0
-   __DATA_CONST.__objc_catlist: 0xf8
--  __DATA_CONST.__objc_protolist: 0x768
-+  __DATA_CONST.__objc_protolist: 0x760
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x24f90
--  __DATA_CONST.__objc_protorefs: 0xd0
-+  __DATA_CONST.__objc_selrefs: 0x250a0
-+  __DATA_CONST.__objc_protorefs: 0xc8
-   __DATA_CONST.__objc_superrefs: 0x15a0
--  __DATA_CONST.__objc_arraydata: 0x1ce8
--  __DATA_CONST.__got: 0x50d8
--  __AUTH_CONST.__const: 0x9b90
--  __AUTH_CONST.__cfstring: 0x52d60
--  __AUTH_CONST.__objc_const: 0x6fc88
-+  __DATA_CONST.__objc_arraydata: 0x1cc0
-+  __DATA_CONST.__got: 0x5108
-+  __AUTH_CONST.__const: 0x9bb0
-+  __AUTH_CONST.__cfstring: 0x52ec0
-+  __AUTH_CONST.__objc_const: 0x6fef0
-   __AUTH_CONST.__weak_auth_got: 0x28
--  __AUTH_CONST.__objc_intobj: 0x53d0
--  __AUTH_CONST.__objc_arrayobj: 0x14b8
-+  __AUTH_CONST.__objc_intobj: 0x5340
-+  __AUTH_CONST.__objc_arrayobj: 0x1488
-   __AUTH_CONST.__objc_doubleobj: 0x180
-   __AUTH_CONST.__objc_dictobj: 0x2f8
-   __AUTH_CONST.__objc_floatobj: 0x40
--  __AUTH_CONST.__auth_got: 0x2a78
--  __AUTH.__objc_data: 0x132b0
-+  __AUTH_CONST.__auth_got: 0x2a80
-+  __AUTH.__objc_data: 0x13350
-   __AUTH.__data: 0x1e8
--  __DATA.__objc_ivar: 0x3de4
--  __DATA.__data: 0x7004
-+  __DATA.__objc_ivar: 0x3e28
-+  __DATA.__data: 0x6fd4
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x3538
-+  __DATA.__bss: 0x3540
-   __DATA.__common: 0x4
--  __DATA_DIRTY.__objc_data: 0x3660
-+  __DATA_DIRTY.__objc_data: 0x3520
-   __DATA_DIRTY.__data: 0x50
--  __DATA_DIRTY.__bss: 0x1a0
-+  __DATA_DIRTY.__bss: 0x1e0
-   __DATA_DIRTY.__common: 0x60
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 29103
--  Symbols:   94602
--  CStrings:  32398
+-  Symbols:   48313
+-  CStrings:  21735
 +  Functions: 29130
-+  Symbols:   94713
-+  CStrings:  32449
- 
-Sections:
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   48383
++  CStrings:  21775
 Symbols:
 + +[PLAggdLogging shouldExcludeAssetFromLibrarySummary:]
 + +[PLCloudSharedAssetSaveJob assetsdProcessMetadataForAssetCollectionsAndWait:inAlbum:personID:info:libraryServicesManager:]
@@ -1772,102 +1698,6 @@ Symbols:
 + _getIMDDatabaseClass.softClass
 + _getIMMessageGuidFromIMFileTransferGuidSymbolLoc
 + _getIMMessageGuidFromIMFileTransferGuidSymbolLoc.ptr
-+ _objc_msgSend$UUIDStringsForKey:
-+ _objc_msgSend$_addFullResourceRecordsForAssets:toBatchManager:photoLibrary:
-+ _objc_msgSend$_addMessagesSenderAndReceiversFromAsset:withMessagesFetcher:
-+ _objc_msgSend$_baseMADEmbeddingSearchOptionsForSearchOptions:
-+ _objc_msgSend$_batchResolveDisplayNamesForHandles:
-+ _objc_msgSend$_bumpLastModifiedDate:
-+ _objc_msgSend$_cachedDisplayNameForHandle:
-+ _objc_msgSend$_cachedMessageInfoForAsset:
-+ _objc_msgSend$_continueMigrationSetupForShareUUID:silent:progress:plLibrary:completionHandler:
-+ _objc_msgSend$_directUploadFullResourcesForProxyAssets:photoLibrary:
-+ _objc_msgSend$_ensureSystemColocatedApplicationLibraries
-+ _objc_msgSend$_generativeEditsRenderTypeFromAssetAdjustments:adjustmentEnvelope:
-+ _objc_msgSend$_importFileSystemImportAssets:intoLibrary:type:progress:keywordUUIDRemapping:
-+ _objc_msgSend$_inq_donateSpotlightItemsByBundleID:leoDonatableItems:leoLexemeScoreUpdates:deleteIdentifiers:spotlightClientState:completion:
-+ _objc_msgSend$_isEnabled
-+ _objc_msgSend$_processDeletesForBundleID:unprefixedIdentifiers:error:
-+ _objc_msgSend$_recreationOptionsForMissingApplicationLibraryDatabaseAtURL:
-+ _objc_msgSend$_resetLocalStateForOriginatingScopeIdentifier:photoLibrary:completionHandler:
-+ _objc_msgSend$_revertMSASForOriginatingScopeIdentifier:photoLibrary:completionHandler:
-+ _objc_msgSend$_runDaemonSideWaitUntilFinished:
-+ _objc_msgSend$_successfulProxyAssetsFromResults:proxyMap:
-+ _objc_msgSend$_supportsHighlightGeneration
-+ _objc_msgSend$addContentFromAsset:forPropertySets:withIndexingContext:fetchHelper:embeddingsFetcher:messagesFetcher:
-+ _objc_msgSend$addLexemeWithCategory:text:localizationKey:additionalVariants:identifier:
-+ _objc_msgSend$addLexemeWithCategory:text:localizationKey:identifier:
-+ _objc_msgSend$assetsdLocallyProcessAddedCommentsAndWait:assetGUID:albumGUID:info:libraryServicesManager:
-+ _objc_msgSend$assetsdProcessMetadataForAssetCollectionsAndWait:inAlbum:personID:info:libraryServicesManager:
-+ _objc_msgSend$bumpLastModifiedDateIfValidWithDate:
-+ _objc_msgSend$cancelMigrationToCPLForAlbumWithGUID:personID:clientVersion:completionBlock:
-+ _objc_msgSend$canonicalizedURIString
-+ _objc_msgSend$chatRecord
-+ _objc_msgSend$checkServerForChangesForCollectionShare:completionHandler:
-+ _objc_msgSend$checkServerForChangesWithCompletionHandler:
-+ _objc_msgSend$completeMigrationToCPLForAlbumWithGUID:personID:clientVersion:sourceAssetCount:destinationAssetCount:completionBlock:
-+ _objc_msgSend$embeddingSearchMode
-+ _objc_msgSend$ensureApplicationLibraryExistsWithContainerIdentifier:uuid:name:error:
-+ _objc_msgSend$failMigrationToCPLForAlbumWithGUID:migrationError:personID:clientVersion:completionBlock:
-+ _objc_msgSend$fetchMessageRecordWithGUID:excludeRecoverableMessages:completionHandler:
-+ _objc_msgSend$handleRecord
-+ _objc_msgSend$handleRecords
-+ _objc_msgSend$hasActiveSilentMigration
-+ _objc_msgSend$highPrecision
-+ _objc_msgSend$highRecall
-+ _objc_msgSend$iCloudLibraryClientNeedsToVerifyTerms
-+ _objc_msgSend$identityDocumentNodeThresholdsForContentClassificationVersion:
-+ _objc_msgSend$informMSASToCompleteMigrationToCPLForCollectionShare:sourceAssetCount:destinationAssetCount:completionHandler:
-+ _objc_msgSend$informMSASToCompleteMigrationToCPLWithSourceAssetCount:destinationAssetCount:completionHandler:
-+ _objc_msgSend$informMSASToInitiateMigrationToCPLForCollectionShare:isSilentMigration:sourceAssetCount:completionHandler:
-+ _objc_msgSend$informMSASToInitiateMigrationToCPLWithIsSilentMigration:sourceAssetCount:completionHandler:
-+ _objc_msgSend$initWithConfiguration:
-+ _objc_msgSend$initWithDomain:containerIdentifier:uuid:name:
-+ _objc_msgSend$initWithLibraryIdentifier:indexingContext:
-+ _objc_msgSend$initWithName:canDelayAnyQOS:singleThreadedMode:minDelayBetweenRuns:maxDelayBetweenRuns:timeProvider:targetQueue:target:
-+ _objc_msgSend$initiateMigrationToCPLForAlbumWithGUID:personID:isSilentMigration:clientVersion:sourceAssetCount:completionBlock:
-+ _objc_msgSend$isFromMe
-+ _objc_msgSend$isRetryableMigrationError:
-+ _objc_msgSend$keywordUUIDRemapping
-+ _objc_msgSend$lastAddressedHandle
-+ _objc_msgSend$leoDonatableItemForManagedObject:partialUpdateMask:indexingContext:fetchHelper:embeddingsFetcher:messagesFetcher:
-+ _objc_msgSend$libraryCreateOptionsForApplicationLibraryWithContainerIdentifier:
-+ _objc_msgSend$migrationOriginatingAssetCount
-+ _objc_msgSend$numberOfProbes
-+ _objc_msgSend$oldestAndNewestDatesForAssetsWithFilter:useDayGroupAssets:error:
-+ _objc_msgSend$pause
-+ _objc_msgSend$pauseProcessingIncrementalUpdates
-+ _objc_msgSend$predicateForContactsMatchingHandleStrings:
-+ _objc_msgSend$prefetchForAssets:
-+ _objc_msgSend$queryEmbedding
-+ _objc_msgSend$rebuildAllKeywordsFromDirectoryJournalInManagedObjectContext:pathManager:keywordUUIDRemapping:
-+ _objc_msgSend$receiverDisplayNamesForAsset:
-+ _objc_msgSend$refreshContentOfAlbumWithGUID:resetSync:personID:completionBlock:
-+ _objc_msgSend$revertSilentMigrationForOriginatingScopeIdentifier:photoLibrary:completionHandler:
-+ _objc_msgSend$runDaemonSideAndWait
-+ _objc_msgSend$searchWithQueryTexts:photoLibraryURL:options:error:
-+ _objc_msgSend$searchableItemForObject:fetchHelper:partialUpdateMask:libraryIdentifier:indexingContext:embeddingsFetcher:messagesFetcher:
-+ _objc_msgSend$senderDisplayNameForAsset:
-+ _objc_msgSend$setCheckSafety:
-+ _objc_msgSend$setEmbeddingSourceTypes:
-+ _objc_msgSend$setIncludeAcceptedIntroductions:
-+ _objc_msgSend$setKeywordUUIDRemapping:
-+ _objc_msgSend$setKeywordsFromPersistedAttributes:keywordUUIDRemapping:
-+ _objc_msgSend$setLastModifiedDateIfNeeded:fromMigration:
-+ _objc_msgSend$setMigrationOriginatingAssetCount:
-+ _objc_msgSend$setSearchMode:
-+ _objc_msgSend$setUUIDStrings:forKey:
-+ _objc_msgSend$setUseCache:
-+ _objc_msgSend$setUseInProcessMapperExclusively:
-+ _objc_msgSend$shouldExcludeAssetFromLibrarySummary:
-+ _objc_msgSend$sortedResults
-+ _objc_msgSend$synchronizeWithPersistedFileSystemAttributesWithKeywordUUIDRemapping:
-+ _objc_msgSend$synchronousDatabase
-+ _objc_msgSend$unarchiveMigrationToCPLForAlbumWithGUID:personID:clientVersion:completionBlock:
-+ _objc_msgSend$uploadedBatch
-+ _objc_msgSend$useCache
-+ _objc_msgSend$validateAndCleanupID:
-+ _objc_msgSend$validateContinerIdentifier:
 + _softlink_IMMessageGuidFromIMFileTransferGuid
 - +[PLDayGroupPhotosHighlightTitleGenerator assetsToUseForDayGroupHighlight:withFilter:]
 - +[PLDayPhotosHighlightTitleGenerator assetsToUseForDayHighlight:withFilter:]
@@ -3448,90 +3278,6 @@ Symbols:
 - ___copy_helper_block_e8_144n11_8_8_s0_t8w8
 - ___destroy_helper_block_e8_144n4_8_s0
 - _flat unique So30PLIntersectedSearchIndexEntity_p
-- _objc_msgSend$_addContentClassificationToAsset:nodeLabel:nodeSynonyms:nodeSceneID:
-- _objc_msgSend$_appendAssetTextDataToAsset:forAsset:
-- _objc_msgSend$_appendAudioClassificationToAsset:forAsset:
-- _objc_msgSend$_appendContentClassificationsToAsset:sceneTaxonomyProvider:forAsset:fetchHelper:
-- _objc_msgSend$_appendContributorToAsset:forAsset:
-- _objc_msgSend$_appendDateCreatedToAsset:indexingContext:forAsset:
-- _objc_msgSend$_appendExifDataToAsset:forAsset:
-- _objc_msgSend$_appendFavoriteToAsset:forAsset:
-- _objc_msgSend$_appendFilenameToAsset:forAsset:
-- _objc_msgSend$_appendGEODataToAsset:forAsset:countrySynonymProvider:
-- _objc_msgSend$_appendGraphDataToAsset:forMomentFromFetchHelper:hasValidReverseLocationData:indexingContext:
-- _objc_msgSend$_appendHumanActionsToAsset:forAsset:fetchHelper:
-- _objc_msgSend$_appendKeywords:toAsset:
-- _objc_msgSend$_appendLibraryScopeToAsset:forAsset:
-- _objc_msgSend$_appendMediaTypesToAsset:forAsset:
-- _objc_msgSend$_appendOCRTextForAsset:documentObservation:
-- _objc_msgSend$_appendPerson:fetchHelper:toAsset:
-- _objc_msgSend$_appendPersonsAndPetsToAsset:forAsset:fetchHelper:
-- _objc_msgSend$_appendPet:fetchHelper:toAsset:
-- _objc_msgSend$_appendPrivateEncryptedComputeScenes:forAsset:fetchHelper:csuTaxonomyObjectStore:locale:
-- _objc_msgSend$_appendSavedFromAppToAsset:forAsset:
-- _objc_msgSend$_appendSceneClassificationsToAsset:sceneTaxonomyProvider:forAsset:fetchHelper:
-- _objc_msgSend$_appendStickerSuggestionsToAsset:fetchHelper:sceneTaxonomyProvider:forAsset:
-- _objc_msgSend$_appendStyleCastToAsset:forAsset:
-- _objc_msgSend$_appendUtilityTypesToAsset:forAsset:indexingContext:
-- _objc_msgSend$_deleteSyndicationAssetsWithBundleID:syndicationIdentifiers:deleteCount:
-- _objc_msgSend$_endDateForMemory:
-- _objc_msgSend$_fetchCuratedAssetsForMemory:sortedAscending:
-- _objc_msgSend$_importFileSystemImportAssets:intoLibrary:type:progress:
-- _objc_msgSend$_indexCategoryForSearchEntityType:
-- _objc_msgSend$_inq_donatePSIObjectsByType:spotlightItemsByBundleID:leoDonatableItems:leoLexemeScoreUpdates:deleteIdentifiers:spotlightClientState:completion:
-- _objc_msgSend$_lookupIdentifierForSearchEntity:
-- _objc_msgSend$_performLocalCleanupWithCompletionHandler:
-- _objc_msgSend$_performServerCleanupWithCompletionHandler:
-- _objc_msgSend$_processDeletesForBundleID:unprefixedIdentifiers:
-- _objc_msgSend$_safePerformBlockWithPSIDatabase:sync:
-- _objc_msgSend$_searchWithEmbeddings:photoLibraryURL:searchOptions:numberOfProbes:error:
-- _objc_msgSend$_startDateForMemory:
-- _objc_msgSend$addContentFromAsset:forPropertySets:withIndexingContext:fetchHelper:embeddingsFetcher:
-- _objc_msgSend$addIdentifier:category:owningCategory:
-- _objc_msgSend$addSynonym:category:originalContentString:
-- _objc_msgSend$assetsPrivate
-- _objc_msgSend$assetsShared
-- _objc_msgSend$assetsToUseForDayGroupHighlight:withFilter:
-- _objc_msgSend$assetsToUseForDayHighlight:withFilter:
-- _objc_msgSend$cancelMigrationToCPLForAlbumWithGUID:personID:completionBlock:
-- _objc_msgSend$completeMigrationToCPLForAlbumWithGUID:personID:completionBlock:
-- _objc_msgSend$dayGroupAssetsPrivate
-- _objc_msgSend$dayGroupAssetsShared
-- _objc_msgSend$dayGroupExtendedAssetsPrivate
-- _objc_msgSend$dayGroupExtendedAssetsShared
-- _objc_msgSend$deleteAllInitialSuggestions
-- _objc_msgSend$dropDatabaseAtPath:withCompletion:
-- _objc_msgSend$dropDatabaseWithCompletion:
-- _objc_msgSend$failMigrationToCPLForAlbumWithGUID:migrationError:personID:completionBlock:
-- _objc_msgSend$informMSASToCompleteMigrationToCPLForCollectionShare:completionHandler:
-- _objc_msgSend$informMSASToCompleteMigrationToCPLWithCompletionHandler:
-- _objc_msgSend$informMSASToInitiateMigrationToCPLForCollectionShare:isSilentMigration:completionHandler:
-- _objc_msgSend$informMSASToInitiateMigrationToCPLWithIsSilentMigration:completionHandler:
-- _objc_msgSend$initWithName:canDelayAnyQOS:singleThreadedMode:timeProvider:targetQueue:target:
-- _objc_msgSend$initWithUUID:startDate:endDate:title:subtitle:type:assetsCountPrivate:assetsCountShared:sortDate:
-- _objc_msgSend$initiateMigrationToCPLForAlbumWithGUID:personID:isSilentMigration:completionBlock:
-- _objc_msgSend$leoDonatableItemForManagedObject:partialUpdateMask:indexingContext:fetchHelper:embeddingsFetcher:
-- _objc_msgSend$objectType
-- _objc_msgSend$psiAssetFromAsset:fetchHelper:propertySets:indexingContext:documentObservation:
-- _objc_msgSend$psiCollectionFromAlbum:indexingContext:
-- _objc_msgSend$psiCollectionFromCollectionShare:indexingContext:
-- _objc_msgSend$psiCollectionFromMemory:indexingContext:
-- _objc_msgSend$psiGroupFromSearchEntity:
-- _objc_msgSend$psiObjectForIdentifierRequiringAdditionalWork:entity:
-- _objc_msgSend$psiObjectForObject:fetchHelper:partialUpdateMask:indexingContext:
-- _objc_msgSend$removeUnusedGroups
-- _objc_msgSend$safePerformBlockAndWaitWithPSIDatabase:
-- _objc_msgSend$safePerformBlockWithPSIDatabase:
-- _objc_msgSend$saveInitialSuggestions:
-- _objc_msgSend$searchIndexEmbeddingModelVersion
-- _objc_msgSend$searchableItemForObject:fetchHelper:partialUpdateMask:libraryIdentifier:indexingContext:embeddingsFetcher:
-- _objc_msgSend$setPropertySets:
-- _objc_msgSend$supportsPSI
-- _objc_msgSend$synchronizeWithPersistedFileSystemAttributes
-- _objc_msgSend$unarchiveMigrationToCPLForAlbumWithGUID:personID:completionBlock:
-- _objc_msgSend$updateInitialSuggestionsWithIdentifiers:dateLastUsed:
-- _objc_msgSend$updateRankingScoreForGroups:withCompletion:
-- _objc_msgSend$zeroScorePSIGroupFromLabel:type:identifier:
 - _symbolic ______p So30PLIntersectedSearchIndexEntityP
 CStrings:
 + "%@ : runDaemonSide %@ waitUntilFinished:%d"
@@ -3674,5 +3420,4 @@ CStrings:
 - "psi delete collections"
 - "psi groups"
 - "v16@?0@\"PSIDatabase\"8"
-
 ```

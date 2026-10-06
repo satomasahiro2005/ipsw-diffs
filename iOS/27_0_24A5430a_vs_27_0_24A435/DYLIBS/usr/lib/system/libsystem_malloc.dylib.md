@@ -2,14 +2,15 @@
 
 > `/usr/lib/system/libsystem_malloc.dylib`
 
-```diff
+### Section Size Changes
 
- 886.0.8.0.0
--  __TEXT.__text: 0x43304
-+  __TEXT.__text: 0x43484
-   __TEXT.__const: 0x614
-   __TEXT.__cstring: 0xb5c5
-   __TEXT.__dof_magmalloc: 0x912
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x43304` | `0x43484` | **`+0x180`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __xzm_free : 1932 -> 1940
 ~ __xzm_xzone_malloc_small : 2300 -> 2304

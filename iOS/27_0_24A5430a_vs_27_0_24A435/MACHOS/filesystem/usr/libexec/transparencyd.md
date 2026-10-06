@@ -2,66 +2,44 @@
 
 > `/usr/libexec/transparencyd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3520e8` | `0x3521e4` | **`+0xfc`** |
+| `__TEXT.__objc_stubs` | `0x1e000` | `0x1e020` | **`+0x20`** |
+| `__TEXT.__auth_stubs` | `0x4c70` | `0x4c60` | **`-0x10`** |
+| `__DATA_CONST.__auth_got` | `0x2648` | `0x2640` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0xd788` | `0xd780` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA.__thread_vars`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_intobj`
 - `__TEXT.__const`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__swift5_typeref`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
-- `__DATA.__thread_vars`
+
+### Other Changes
 
 ```diff
 
- 1766.0.60.0.0
--  __TEXT.__text: 0x3520e8
--  __TEXT.__auth_stubs: 0x4c70
--  __TEXT.__objc_stubs: 0x1e000
-+  __TEXT.__text: 0x3521e4
-+  __TEXT.__auth_stubs: 0x4c60
-+  __TEXT.__objc_stubs: 0x1e020
-   __TEXT.__objc_methlist: 0x15cf8
-   __TEXT.__objc_classname: 0x4124
-   __TEXT.__cstring: 0x13142
-
-   __TEXT.__swift5_mpenum: 0x34
-   __TEXT.__swift5_protos: 0x3c
-   __TEXT.__swift5_acfuncs: 0xb4
--  __TEXT.__unwind_info: 0xd788
-+  __TEXT.__unwind_info: 0xd780
-   __TEXT.__eh_frame: 0xc228
-   __DATA_CONST.__const: 0x1e880
-   __DATA_CONST.__cfstring: 0xe880
-
-   __DATA_CONST.__objc_arraydata: 0x1a8
-   __DATA_CONST.__objc_dictobj: 0xf0
-   __DATA_CONST.__objc_arrayobj: 0x1e0
--  __DATA_CONST.__auth_got: 0x2648
-+  __DATA_CONST.__auth_got: 0x2640
-   __DATA_CONST.__got: 0x17a8
-   __DATA_CONST.__auth_ptr: 0x1400
-   __DATA.__objc_const: 0x334b8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   Functions: 20711
 -  Symbols:   2370
 +  Symbols:   2369
-   CStrings:  11820
- 
 Symbols:
 - _objc_retain_x12
 Functions:

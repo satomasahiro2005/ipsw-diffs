@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/TextInputCore.framework/Support/StickersSearchCore.framework/StickersSearchCore`
 
-```diff
+### Section Size Changes
 
- 3567.0.0.0.0
--  __TEXT.__text: 0xa80c
-+  __TEXT.__text: 0xa804
-   __TEXT.__objc_methlist: 0xac
-   __TEXT.__const: 0x422
-   __TEXT.__swift5_typeref: 0x303
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa80c` | `0xa804` | **`-0x8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2ae64b5e4 -> sub_2af4435e4 : 992 -> 984
+~ sub_2ae5375e4 -> sub_2af32d5e4 : 992 -> 984
 ```

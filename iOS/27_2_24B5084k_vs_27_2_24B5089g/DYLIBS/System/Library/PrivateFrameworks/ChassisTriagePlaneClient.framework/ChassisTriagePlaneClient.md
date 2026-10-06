@@ -2,87 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/ChassisTriagePlaneClient.framework/ChassisTriagePlaneClient`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x11e1d4` | `0x11eda8` | **`+0xbd4`** |
+| `__DATA.__bss` | `0x1f0e0` | `0x1f730` | **`+0x650`** |
+| `__TEXT.__const` | `0x122e0` | `0x12840` | **`+0x560`** |
+| `__AUTH_CONST.__const` | `0xb8c8` | `0xbc38` | **`+0x370`** |
+| `__DATA.__data` | `0x34f0` | `0x3658` | **`+0x168`** |
+| `__TEXT.__swift5_fieldmd` | `0x3dd8` | `0x3f34` | **`+0x15c`** |
+| `__TEXT.__constg_swiftt` | `0x37c8` | `0x3920` | **`+0x158`** |
+| `__TEXT.__cstring` | `0x4518` | `0x4648` | **`+0x130`** |
+| `__TEXT.__swift5_typeref` | `0x41ee` | `0x4306` | **`+0x118`** |
+| `__TEXT.__swift5_reflstr` | `0x1a1a` | `0x1b2a` | **`+0x110`** |
+| `__TEXT.__unwind_info` | `0x62b0` | `0x6210` | **`-0xa0`** |
+| `__TEXT.__oslogstring` | `0x1149` | `0x10b9` | **`-0x90`** |
+| `__AUTH_CONST.__objc_const` | `0x18e0` | `0x1960` | **`+0x80`** |
+| `__TEXT.__swift_as_cont` | `0xc84` | `0xd04` | **`+0x80`** |
+| `__AUTH.__data` | `0x3d38` | `0x3d78` | **`+0x40`** |
+| `__TEXT.__swift5_proto` | `0xf7c` | `0xfbc` | **`+0x40`** |
+| `__TEXT.__swift5_capture` | `0x16f4` | `0x1728` | **`+0x34`** |
+| `__DATA_CONST.__const` | `0x430` | `0x400` | **`-0x30`** |
+| `__TEXT.__eh_frame` | `0x10c18` | `0x10bfc` | **`-0x1c`** |
+| `__TEXT.__swift_as_entry` | `0x4f0` | `0x50c` | **`+0x1c`** |
+| `__TEXT.__swift5_assocty` | `0xa00` | `0xa18` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0x4d4` | `0x4e8` | **`+0x14`** |
+| `__AUTH_CONST.__auth_got` | `0x1650` | `0x1660` | **`+0x10`** |
+| `__TEXT.__swift_as_ret` | `0x540` | `0x550` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `0x1c` | `0x20` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -231.40.14.0.0
--  __TEXT.__text: 0x11041c
 +231.40.17.0.0
-+  __TEXT.__text: 0x110d38
-   __TEXT.__objc_methlist: 0x104
--  __TEXT.__const: 0x122e0
--  __TEXT.__cstring: 0x4518
--  __TEXT.__oslogstring: 0x1149
--  __TEXT.__swift5_typeref: 0x41ee
--  __TEXT.__swift5_capture: 0x16f4
--  __TEXT.__swift5_fieldmd: 0x3dd8
--  __TEXT.__constg_swiftt: 0x37c8
-+  __TEXT.__const: 0x12840
-+  __TEXT.__swift5_typeref: 0x4306
-+  __TEXT.__swift5_reflstr: 0x1b2a
-+  __TEXT.__swift5_assocty: 0xa18
-+  __TEXT.__constg_swiftt: 0x3920
-+  __TEXT.__swift5_fieldmd: 0x3f34
-+  __TEXT.__swift5_proto: 0xfbc
-+  __TEXT.__swift5_types: 0x4e8
-+  __TEXT.__cstring: 0x4648
-   __TEXT.__swift5_builtin: 0x104
-   __TEXT.__swift5_mpenum: 0x50
--  __TEXT.__swift5_reflstr: 0x1a1a
--  __TEXT.__swift5_protos: 0x1c
--  __TEXT.__swift5_proto: 0xf7c
--  __TEXT.__swift5_types: 0x4d4
--  __TEXT.__swift_as_entry: 0x4f0
--  __TEXT.__swift_as_ret: 0x540
--  __TEXT.__swift_as_cont: 0xc84
--  __TEXT.__swift5_assocty: 0xa00
--  __TEXT.__unwind_info: 0x7d10
--  __TEXT.__eh_frame: 0x10c28
-+  __TEXT.__oslogstring: 0x10b9
-+  __TEXT.__swift5_capture: 0x1728
-+  __TEXT.__swift5_protos: 0x20
-+  __TEXT.__swift_as_entry: 0x50c
-+  __TEXT.__swift_as_ret: 0x550
-+  __TEXT.__swift_as_cont: 0xd04
-+  __TEXT.__unwind_info: 0x7780
-+  __TEXT.__eh_frame: 0x10c0c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x430
-+  __DATA_CONST.__const: 0x400
-   __DATA_CONST.__objc_classlist: 0xe0
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x1f8
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xb8c8
--  __AUTH_CONST.__objc_const: 0x18e0
--  __AUTH_CONST.__auth_got: 0x1650
-+  __AUTH_CONST.__const: 0xbc38
-+  __AUTH_CONST.__objc_const: 0x1960
-+  __AUTH_CONST.__auth_got: 0x1660
-   __AUTH.__objc_data: 0x280
--  __AUTH.__data: 0x3d38
--  __DATA.__data: 0x34f0
-+  __AUTH.__data: 0x3d78
-+  __DATA.__data: 0x3658
-   __DATA.__common: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 7273
--  Symbols:   2251
+-  Symbols:   2208
 -  CStrings:  477
 +  Functions: 7069
-+  Symbols:   2273
++  Symbols:   2230
 +  CStrings:  482
- 
 Symbols:
 + __DATA__TtCFFFZFO24ChassisTriagePlaneClient25ChassisTriagePlaneFactoryP33_DE99E97F012B8A0BA62F460392FBA65D20discoverRemoteDeviceFzZT6loggerV2os6Logger_SSU_FzZRGVs17ThrowingTaskGroupSSPs5Error__SSU_FZT_SSU_FGVs19CheckedContinuationSSOs5Never_T_L_11BrowseState
 + __IVARS__TtCFFFZFO24ChassisTriagePlaneClient25ChassisTriagePlaneFactoryP33_DE99E97F012B8A0BA62F460392FBA65D20discoverRemoteDeviceFzZT6loggerV2os6Logger_SSU_FzZRGVs17ThrowingTaskGroupSSPs5Error__SSU_FZT_SSU_FGVs19CheckedContinuationSSOs5Never_T_L_11BrowseState

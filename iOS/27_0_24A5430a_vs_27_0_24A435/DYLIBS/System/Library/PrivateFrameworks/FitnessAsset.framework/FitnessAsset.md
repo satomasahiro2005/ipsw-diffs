@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/FitnessAsset.framework/FitnessAsset`
 
-```diff
+### Section Size Changes
 
- 2027.0.146.1.4
--  __TEXT.__text: 0x51630
-+  __TEXT.__text: 0x516b0
-   __TEXT.__objc_methlist: 0x2c
-   __TEXT.__const: 0x6034
-   __TEXT.__swift5_typeref: 0x2562
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x51630` | `0x516b0` | **`+0x80`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_20ff75b08 -> sub_20ff7fb08 : 876 -> 880
 ~ sub_20ff763f4 -> sub_20ff803f8 : 1164 -> 1168

@@ -2,60 +2,28 @@
 
 > `/System/Library/Frameworks/ImageIO.framework/ImageIO`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5028a4` | `0x5035b4` | **`+0xd10`** |
+| `__TEXT.__cstring` | `0xa667d` | `0xa6a6d` | **`+0x3f0`** |
+| `__DATA_DIRTY.__common` | `0xfb8` | `0xff0` | **`+0x38`** |
+| `__TEXT.__gcc_except_tab` | `0x2298c` | `0x229c0` | **`+0x34`** |
+| `__AUTH_CONST.__cfstring` | `0x35fe0` | `0x36000` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x13880` | `0x13890` | **`+0x10`** |
+| `__TEXT.__eh_frame` | `0x9214` | `0x921c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 2851.0.0.0.0
--  __TEXT.__text: 0x5028a4
-+  __TEXT.__text: 0x5035b4
-   __TEXT.__objc_methlist: 0xd58
-   __TEXT.__const: 0x49ed0
--  __TEXT.__gcc_except_tab: 0x2298c
--  __TEXT.__cstring: 0xa667d
-+  __TEXT.__gcc_except_tab: 0x229c0
-+  __TEXT.__cstring: 0xa6a6d
-   __TEXT.__oslogstring: 0x17
-   __TEXT.__constg_swiftt: 0x26a4
-   __TEXT.__swift5_typeref: 0x3d88
-
-   __TEXT.__swift_as_cont: 0x10
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__ustring: 0x30
--  __TEXT.__unwind_info: 0x13880
--  __TEXT.__eh_frame: 0x9214
-+  __TEXT.__unwind_info: 0x13890
-+  __TEXT.__eh_frame: 0x921c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_arraydata: 0x470
-   __DATA_CONST.__got: 0xaa8
-   __AUTH_CONST.__const: 0x4f290
--  __AUTH_CONST.__cfstring: 0x35fe0
-+  __AUTH_CONST.__cfstring: 0x36000
-   __AUTH_CONST.__objc_const: 0x11d0
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__objc_doubleobj: 0x20
-
-   __DATA_DIRTY.__data: 0x3b0
-   __DATA_DIRTY.__crash_info: 0x148
-   __DATA_DIRTY.__bss: 0xbe8
--  __DATA_DIRTY.__common: 0xfb8
-+  __DATA_DIRTY.__common: 0xff0
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/ColorSync.framework/ColorSync
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_StringProcessing.dylib
 -  Functions: 23178
--  Symbols:   24716
+-  Symbols:   24408
 -  CStrings:  18232
 +  Functions: 23179
-+  Symbols:   24725
++  Symbols:   24417
 +  CStrings:  18247
- 
 Symbols:
 + __ZL33IIOCopyDNGProvenanceFromContainerPK14__CFDictionaryPK10__CFString
 + __ZN14IIOImageSource25copyProvenanceDataAtIndexEmP21CGImageProvenanceType

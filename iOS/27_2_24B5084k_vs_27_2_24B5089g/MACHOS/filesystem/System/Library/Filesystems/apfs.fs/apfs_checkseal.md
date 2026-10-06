@@ -2,27 +2,30 @@
 
 > `/System/Library/Filesystems/apfs.fs/apfs_checkseal`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x500dc` | `0x5022c` | **`+0x150`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -3288.40.13.0.0
--  __TEXT.__text: 0x4fafc
 +3288.40.14.0.0
-+  __TEXT.__text: 0x4fc18
-   __TEXT.__auth_stubs: 0x760
-   __TEXT.__const: 0x4c0
-   __TEXT.__cstring: 0x10117
 Functions:
-~ sub_100020698 : 572 -> 596
-~ sub_100041b7c -> sub_100041b94 : 1028 -> 1040
-~ sub_100041f80 -> sub_100041fa4 : 3792 -> 3856
-~ sub_100044dc0 -> sub_100044e24 : 3480 -> 3524
-~ sub_100045b58 -> sub_100045be8 : 3596 -> 3720
-~ sub_100048de4 -> sub_100048ef0 : 68 -> 84
+~ sub_100020880 : 584 -> 608
+~ sub_100042058 -> sub_100042070 : 1028 -> 1044
+~ sub_10004245c -> sub_100042484 : 3796 -> 3868
+~ sub_1000452ac -> sub_10004531c : 3520 -> 3592
+~ sub_10004606c -> sub_100046124 : 3612 -> 3744
+~ sub_100049370 -> sub_1000494ac : 68 -> 88
 ```

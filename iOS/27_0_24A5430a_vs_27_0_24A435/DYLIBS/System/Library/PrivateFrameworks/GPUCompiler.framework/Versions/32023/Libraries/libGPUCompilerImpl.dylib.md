@@ -2,36 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/32023/Libraries/libGPUCompilerImpl.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x2ce798` | `0x2d2678` | **`+0x3ee0`** |
+| `__TEXT.__text` | `0x591a68` | `0x5947c8` | **`+0x2d60`** |
+| `__TEXT.__cstring` | `0x5e9196` | `0x5eb44b` | **`+0x22b5`** |
+| `__DATA_CONST.__const` | `0x10a590` | `0x10ab38` | **`+0x5a8`** |
+| `__TEXT.__unwind_info` | `0x6048` | `0x6070` | **`+0x28`** |
+
+### Other Changes
+
 ```diff
 
- 32023.921.6.0.0
--  __TEXT.__text: 0x591a68
-+  __TEXT.__text: 0x5947c8
-   __TEXT.__init_offsets: 0x50
--  __TEXT.__const: 0x2ce798
--  __TEXT.__cstring: 0x5e9196
-+  __TEXT.__const: 0x2d2678
-+  __TEXT.__cstring: 0x5eb44b
-   __TEXT.__oslogstring: 0x47
--  __TEXT.__unwind_info: 0x6048
-+  __TEXT.__unwind_info: 0x6070
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x10a590
-+  __DATA_CONST.__const: 0x10ab38
-   __DATA_CONST.__weak_got: 0x178
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0xb5d8
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libarchive.2.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 9567
 -  Symbols:   3766
 -  CStrings:  28342
 +  Functions: 9583
 +  Symbols:   3770
 +  CStrings:  28548
- 
 Symbols:
 + __ZN4llvm3air12AIPersistent7classofEPKNS_8MetadataE
 + __ZN4llvm3air12AIPersistent7getImplERNS_11LLVMContextEbNS_8Metadata11StorageTypeEb

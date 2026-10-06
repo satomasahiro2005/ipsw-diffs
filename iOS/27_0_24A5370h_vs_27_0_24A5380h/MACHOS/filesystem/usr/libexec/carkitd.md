@@ -2,83 +2,55 @@
 
 > `/usr/libexec/carkitd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x944c0` | `0x94894` | **`+0x3d4`** |
+| `__TEXT.__objc_methname` | `0x18914` | `0x18a14` | **`+0x100`** |
+| `__TEXT.__objc_stubs` | `0x11500` | `0x115c0` | **`+0xc0`** |
+| `__TEXT.__oslogstring` | `0x11351` | `0x11411` | **`+0xc0`** |
+| `__DATA_CONST.__got` | `0x960` | `0x9a8` | **`+0x48`** |
+| `__TEXT.__objc_methlist` | `0x7b44` | `0x7b7c` | **`+0x38`** |
+| `__DATA.__objc_const` | `0x147a0` | `0x147d0` | **`+0x30`** |
+| `__DATA.__objc_selrefs` | `0x5068` | `0x5090` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x3790` | `0x3770` | **`-0x20`** |
+| `__TEXT.__objc_methtype` | `0x497e` | `0x498e` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x21f8` | `0x2200` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x7c8` | `0x7cc` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__cstring`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x944c0
-+  __TEXT.__text: 0x94894
-   __TEXT.__auth_stubs: 0x18d0
--  __TEXT.__objc_stubs: 0x11500
--  __TEXT.__objc_methlist: 0x7b44
-+  __TEXT.__objc_stubs: 0x115c0
-+  __TEXT.__objc_methlist: 0x7b7c
-   __TEXT.__const: 0x712
-   __TEXT.__gcc_except_tab: 0x1920
-   __TEXT.__cstring: 0x63f2
--  __TEXT.__objc_methname: 0x18914
--  __TEXT.__oslogstring: 0x11351
-+  __TEXT.__objc_methname: 0x18a14
-+  __TEXT.__oslogstring: 0x11411
-   __TEXT.__objc_classname: 0x110b
--  __TEXT.__objc_methtype: 0x497e
-+  __TEXT.__objc_methtype: 0x498e
-   __TEXT.__dlopen_cstrs: 0x16e
-   __TEXT.__swift5_typeref: 0x1ca
-   __TEXT.__constg_swiftt: 0x14c
+-792.0.0.0.0
++794.0.0.0.0
 
-   __TEXT.__swift5_proto: 0xc
-   __TEXT.__swift5_types: 0x14
-   __TEXT.__swift5_capture: 0x110
--  __TEXT.__unwind_info: 0x21f8
--  __DATA_CONST.__const: 0x3790
-+  __TEXT.__unwind_info: 0x2200
-+  __DATA_CONST.__const: 0x3770
-   __DATA_CONST.__cfstring: 0x7200
-   __DATA_CONST.__objc_classlist: 0x2a8
-   __DATA_CONST.__objc_catlist: 0x30
-
-   __DATA_CONST.__objc_floatobj: 0x10
-   __DATA_CONST.__objc_dictobj: 0x78
-   __DATA_CONST.__auth_got: 0xc78
--  __DATA_CONST.__got: 0x960
-+  __DATA_CONST.__got: 0x9a8
-   __DATA_CONST.__auth_ptr: 0xc0
--  __DATA.__objc_const: 0x147a0
--  __DATA.__objc_selrefs: 0x5068
--  __DATA.__objc_ivar: 0x7c8
-+  __DATA.__objc_const: 0x147d0
-+  __DATA.__objc_selrefs: 0x5090
-+  __DATA.__objc_ivar: 0x7cc
-   __DATA.__objc_data: 0x1d08
-   __DATA.__data: 0x1e70
-   __DATA.__bss: 0x340
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3420
 +  Functions: 3425
-   Symbols:   746
--  CStrings:  7686
-+  CStrings:  7697
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
+
+-  CStrings:  6688
++  CStrings:  6699
 CStrings:
 + "@\"CRDiagnosticsBulletin\""
 + "@40@0:8@16d24@?32"
@@ -95,5 +67,4 @@ CStrings:
 + "setDictationInProgressBulletin:"
 - "Stopping dictation."
 - "v40@0:8@16d24@?32"
-
 ```

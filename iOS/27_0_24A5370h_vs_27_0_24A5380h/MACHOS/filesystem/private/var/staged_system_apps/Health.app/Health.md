@@ -2,102 +2,63 @@
 
 > `/private/var/staged_system_apps/Health.app/Health`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcc18c` | `0xcca64` | **`+0x8d8`** |
+| `__DATA.__data` | `0x57d8` | `0x5818` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x5cc0` | `0x5ce8` | **`+0x28`** |
+| `__TEXT.__cstring` | `0x545e` | `0x547e` | **`+0x20`** |
+| `__TEXT.__objc_stubs` | `0x35c0` | `0x35e0` | **`+0x20`** |
+| `__TEXT.__swift5_capture` | `0x13dc` | `0x13f4` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x26e8` | `0x2700` | **`+0x18`** |
+| `__TEXT.__auth_stubs` | `0x55a0` | `0x55b0` | **`+0x10`** |
+| `__TEXT.__objc_methname` | `0x577d` | `0x578d` | **`+0x10`** |
+| `__DATA.__objc_selrefs` | `0x13b0` | `0x13b8` | **`+0x8`** |
+| `__DATA_CONST.__auth_got` | `0x2ad8` | `0x2ae0` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_stublist`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_catlist2`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xcc18c
--  __TEXT.__auth_stubs: 0x55a0
--  __TEXT.__objc_stubs: 0x35c0
-+  __TEXT.__text: 0xcca64
-+  __TEXT.__auth_stubs: 0x55b0
-+  __TEXT.__objc_stubs: 0x35e0
-   __TEXT.__objc_methlist: 0xe34
-   __TEXT.__const: 0x58c4
-   __TEXT.__constg_swiftt: 0x3390
+-7027.0.60.2.2
++7027.0.64.0.0
 
-   __TEXT.__swift5_builtin: 0x104
-   __TEXT.__swift5_reflstr: 0x2501
-   __TEXT.__swift5_assocty: 0x568
--  __TEXT.__cstring: 0x545e
-+  __TEXT.__cstring: 0x547e
-   __TEXT.__swift5_protos: 0x40
-   __TEXT.__swift5_proto: 0x3e0
-   __TEXT.__swift5_types: 0x1f8
-   __TEXT.__objc_classname: 0x11f8
--  __TEXT.__objc_methname: 0x577d
-+  __TEXT.__objc_methname: 0x578d
-   __TEXT.__objc_methtype: 0x1d59
--  __TEXT.__swift5_capture: 0x13dc
-+  __TEXT.__swift5_capture: 0x13f4
-   __TEXT.__oslogstring: 0x2a6a
-   __TEXT.__swift5_mpenum: 0x10
-   __TEXT.__swift_as_entry: 0x44
-   __TEXT.__swift_as_ret: 0x38
-   __TEXT.__swift_as_cont: 0xac
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__unwind_info: 0x26e8
-+  __TEXT.__unwind_info: 0x2700
-   __TEXT.__eh_frame: 0x222c
--  __DATA_CONST.__const: 0x5cc0
-+  __DATA_CONST.__const: 0x5ce8
-   __DATA_CONST.__cfstring: 0x40
-   __DATA_CONST.__objc_classlist: 0xf0
-   __DATA_CONST.__objc_catlist: 0x8
-
-   __DATA_CONST.__objc_protolist: 0x130
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0xa0
--  __DATA_CONST.__auth_got: 0x2ad8
-+  __DATA_CONST.__auth_got: 0x2ae0
-   __DATA_CONST.__got: 0x14d8
-   __DATA_CONST.__auth_ptr: 0x1128
-   __DATA.__objc_const: 0x37f8
--  __DATA.__objc_selrefs: 0x13b0
-+  __DATA.__objc_selrefs: 0x13b8
-   __DATA.__objc_data: 0x2250
--  __DATA.__data: 0x57d8
-+  __DATA.__data: 0x5818
-   __DATA.__objc_stublist: 0x48
-   __DATA.__bss: 0x7208
-   __DATA.__common: 0x528
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3641
 -  Symbols:   2401
--  CStrings:  1696
+-  CStrings:  1694
 +  Functions: 3649
 +  Symbols:   2402
-+  CStrings:  1698
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_entry : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_catlist2 : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__objc_stublist : content changed
-~ __DATA.__bss : content changed
-~ __DATA.__common : content changed
++  CStrings:  1696
 Symbols:
 + _$s18HealthExperienceUI024PinnedContentDataLoggingF6SourceC06pinnedE7Manager7contextAC0A8Platform0dE8Managing_p_So22NSManagedObjectContextCtcfc
 + _$s2os6LoggerV15HealthUtilitiesE15healthSubsystemSSvgZ
@@ -107,5 +68,4 @@ Symbols:
 CStrings:
 + "Quick log title text"
 + "simplifiedLogging"
-
 ```

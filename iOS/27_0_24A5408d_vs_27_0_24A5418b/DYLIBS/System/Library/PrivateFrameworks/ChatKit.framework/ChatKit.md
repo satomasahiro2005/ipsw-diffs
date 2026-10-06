@@ -2,55 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/ChatKit.framework/ChatKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc21d70` | `0xc21e74` | **`+0x104`** |
+| `__TEXT.__objc_methlist` | `0x732f4` | `0x7330c` | **`+0x18`** |
+| `__AUTH_CONST.__objc_const` | `0x9dd40` | `0x9dd48` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x37518` | `0x37520` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x31bc8` | `0x31bd0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1491.100.1.2.11
--  __TEXT.__text: 0xc21d70
 +1491.100.1.2.23
-+  __TEXT.__text: 0xc21e74
-   __TEXT.__delay_stubs: 0x1c0
-   __TEXT.__delay_helper: 0x3050
--  __TEXT.__objc_methlist: 0x732f4
-+  __TEXT.__objc_methlist: 0x7330c
-   __TEXT.__const: 0x42924
-   __TEXT.__gcc_except_tab: 0x207dc
-   __TEXT.__cstring: 0x3f657
 
-   __TEXT.__swift_as_cont: 0xe50
-   __TEXT.__swift5_protos: 0xdc
-   __TEXT.__swift5_mpenum: 0x140
--  __TEXT.__unwind_info: 0x31bc8
-+  __TEXT.__unwind_info: 0x31bd0
-   __TEXT.__eh_frame: 0x12d50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x568
-   __DATA_CONST.__objc_protolist: 0x13f8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x37518
-+  __DATA_CONST.__objc_selrefs: 0x37520
-   __DATA_CONST.__objc_protorefs: 0x578
-   __DATA_CONST.__objc_superrefs: 0x19f8
-   __DATA_CONST.__objc_arraydata: 0xed0
-   __DATA_CONST.__got: 0x7d10
-   __AUTH_CONST.__const: 0x3f190
-   __AUTH_CONST.__cfstring: 0x24460
--  __AUTH_CONST.__objc_const: 0x9dd40
-+  __AUTH_CONST.__objc_const: 0x9dd48
-   __AUTH_CONST.__objc_arrayobj: 0xde0
-   __AUTH_CONST.__objc_intobj: 0xf18
-   __AUTH_CONST.__objc_doubleobj: 0x870
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 74865
--  Symbols:   96550
+-  Symbols:   73711
 +  Functions: 74866
-+  Symbols:   96548
-   CStrings:  13244
- 
++  Symbols:   73708
 Symbols:
 + -[CKTranscriptCollectionViewController invalidateChatItemLayoutWithNewBalloonMaxWidth:marginInsets:traitCollection:getContentHeightChanged:]
 + GCC_except_table1000
@@ -207,7 +179,6 @@ Symbols:
 + GCC_except_table988
 + GCC_except_table990
 + GCC_except_table994
-+ _objc_msgSend$invalidateChatItemLayoutWithNewBalloonMaxWidth:marginInsets:traitCollection:getContentHeightChanged:
 - GCC_except_table1001
 - GCC_except_table1004
 - GCC_except_table1007

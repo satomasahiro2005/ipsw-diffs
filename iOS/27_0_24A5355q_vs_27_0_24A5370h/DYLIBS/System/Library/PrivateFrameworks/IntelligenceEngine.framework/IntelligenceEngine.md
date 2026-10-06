@@ -2,69 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/IntelligenceEngine.framework/IntelligenceEngine`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a5ecc` | `0x1a5e98` | **`-0x34`** |
+| `__TEXT.__unwind_info` | `0x64b8` | `0x64c0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
-
- 3500.3.1.0.0
--  __TEXT.__text: 0x1a5ecc sha256:487973852c1a12dcc07e2a2e1d8d51d9f70c0efb594aadc4f48765eddb5bdfd0
--  __TEXT.__init_offsets: 0x44 sha256:58bed22384b51a9f3f5865e39b50f3faeacc8a036e481f03ee5a89332708850a
--  __TEXT.__objc_methlist: 0xbcc sha256:b87e8afa3ab1e0bbe1152248a8313cec036f08a3b6a91914d3389c0eec98a03f
-+  __TEXT.__text: 0x1a5e98 sha256:e6263f5dba8f4221f24a4e21f8f95cd889b7482ef5cd8e0c140ed01b1e615b43
-+  __TEXT.__init_offsets: 0x44 sha256:01397584a12e04c4be12a912ab0d44d23905e4378403a21b53934fda8ebc6e55
-+  __TEXT.__objc_methlist: 0xbcc sha256:828eb0969e27f2831a125641697e250f42a0c7e93f511a6a17057b9d72637ddc
-   __TEXT.__const: 0x3800 sha256:83487b56093d83023d2d5debdf0abdc7ed3678ae4ce680b79567e22e99f2b7d9
--  __TEXT.__cstring: 0xd5fe sha256:8f43d7990dac662aa7dd7639617a68a124378e8bfdd37a8280b70af95a9e1de4
--  __TEXT.__gcc_except_tab: 0x1bca8 sha256:359ea6e9d13515ce844465626ba86e64712aa8bde3274d01989c33675122d71e
-+  __TEXT.__cstring: 0xd5fe sha256:e177b6214870253d76188e4b013504d25bf61567a92ef7d69debd1a4259da778
-+  __TEXT.__gcc_except_tab: 0x1bca8 sha256:2b257d1b5a948417f917427aaf7b93643c0a77a29c5b1c4642a06de49d9674df
-   __TEXT.__oslogstring: 0x3a9 sha256:1c38c0432b378e5be214ab88796a17e425d12eef27fc41f6f1387765a10ab5c3
--  __TEXT.__unwind_info: 0x64b8 sha256:9a823acf722a13bb52fe8a475e838cd4ca67f75e05c56312d291f8045f3aa702
-+  __TEXT.__unwind_info: 0x64c0 sha256:7f855ec18b48632af90047aec55fa04ec73046cd2f33223ebf0b29f0c92cad4b
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x110 sha256:0e8eb4da53ecb5b6a1a02890b9648c0aa48dea0fdbc200da96e1c228d22016ed
--  __DATA_CONST.__objc_classlist: 0xd0 sha256:a8c65acde5692dd4c640d14d9d0ceac797dd2a92689795b898213a0473342894
-+  __DATA_CONST.__const: 0x110 sha256:48e36bb56ab58ecdf39089402059da523639441f83d005c58d90b6484577c2b9
-+  __DATA_CONST.__objc_classlist: 0xd0 sha256:0219caeacaa5eae35011446d7d5e227f7e913b44d35ce2670e02781fe7c0402c
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x18 sha256:fa9a68abe1ffaa3275d8a7d43e7931c1a1294a82d945abf6aa43282765200521
--  __DATA_CONST.__objc_selrefs: 0x608 sha256:926a8f2a349659122e26b1f0d0b7b713dc5b9bed5724d1851e7129495bde2c91
--  __DATA_CONST.__objc_superrefs: 0x28 sha256:61cecd0d042837f5f1d466944996d877eb70b7df71b18344897a89bcfe44b77f
--  __DATA_CONST.__got: 0x178 sha256:7415ff950119fc8a87fcb5da94dedde8b0be7a2dbe9762404c6e2a0f60c9c228
--  __AUTH_CONST.__const: 0x4028 sha256:f22739c6785624a2eaf04e2dfa718cf60ac30993803382f0df8b9bdce58566c6
--  __AUTH_CONST.__cfstring: 0x1a0 sha256:9662f74ba6c221950ec5365129465bf58487ea1bf27a9bc7048ce2ecca9e56ce
--  __AUTH_CONST.__objc_const: 0x1bf0 sha256:3efe6e836be9480f4f4dd7d0adf132384a760b54bd6f869f4b63b968ce92b8ca
--  __AUTH_CONST.__weak_auth_got: 0x30 sha256:64b38894b73db3126259d0bdae38a06e4431fdd16323e3b391d3e48bbd99708e
-+  __DATA_CONST.__weak_got: 0x18 sha256:957192401d3263bcc987bcaafc950a820e924e9190a914845ed6a1db41fb6557
-+  __DATA_CONST.__objc_selrefs: 0x608 sha256:619ff7edadc5e54f115e6a6508ddc6d8fb71219628e84f54c35906420ee2e4cc
-+  __DATA_CONST.__objc_superrefs: 0x28 sha256:c7833479f4b2be1343ca04b4539fb0ca07b48330f8fb238daa1e78008ba8134b
-+  __DATA_CONST.__got: 0x178 sha256:e7b603dcf9158741e11563bcb6944b91edc8f723077fcc09c43f98850e4f8822
-+  __AUTH_CONST.__const: 0x4028 sha256:fb50f594ba90287b8646596833821ce458d1f7e4192bf600532ec952a96541f2
-+  __AUTH_CONST.__cfstring: 0x1a0 sha256:d18e4f5d61cb4c7113480d14b70d79c9d8daa972bdc1a8a16e685c901cfb88cb
-+  __AUTH_CONST.__objc_const: 0x1bf0 sha256:a46ad83c7e9bca8f4753b4d89e5dceaab17e2039ec25d21a993183b661fd1dcc
-+  __AUTH_CONST.__weak_auth_got: 0x30 sha256:3287575a2f03cf58a79762aefc7f8a382b88d8092c7fb7cfe55c15ce2454e7cf
-   __AUTH_CONST.__auth_got: 0x600 sha256:80422bc3d307b4a25bdafcc84ac7fb01cb55a09810e8b0f37bb12e0edb5c48ca
--  __AUTH.__objc_data: 0x820 sha256:f34977916215f771754a5a09e12f009af64154c76514120c2c10e77e32328322
--  __AUTH.__data: 0x5f8 sha256:00d0e3022e8368e493e92b95d78345080a287ffa0f71bf26ff33076b0d1f867e
-+  __AUTH.__objc_data: 0x820 sha256:2a2d52b0ddd65b46cc00ec0a113bd9dfa1d3d5414b6ea4771a83dfd08186bfcc
-+  __AUTH.__data: 0x5f8 sha256:928eb77a0a05a2162498fc61a980ef0346d5d095a38dc36f3514f9eba4aa0263
-   __DATA.__objc_ivar: 0xdc sha256:832d85a19f0a02e42785042c332740b9c0ce18d28697b96303f6841ce0c8e489
--  __DATA.__data: 0x390 sha256:e994b9560de8629f68f0316ba7c0e6ebe91dc42239ce8346e87e782cdaf6ca7e
-+  __DATA.__data: 0x390 sha256:3d154b3bac35f62cfd924ef32933af50c36a92b1c82207cee54e447b7da5c1dc
-   __DATA.__bss: 0x40 sha256:f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b
-   __DATA.__common: 0x1128 sha256:337b04454d4c790368baacf72ecd486cd5a9ecb70805f2840b66b129b22b2b54
-   __DATA_DIRTY.__objc_ivar: 0x24 sha256:eac96772d5af65f4c4ad54c1b1cae660b5966ded99f5844da2b5566cffc1c5d7
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  UUID: ABF4D1C7-1C48-3475-8BB5-6D11A0B0D09E
-+  UUID: 9FD371BB-6FEE-3A59-A448-D6FC0852209A
-   Functions: 4518
-   Symbols:   10328
-   CStrings:  1978
 Symbols:
 + __ZNKSt3__110__equal_toclB9fqe220106INS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES7_EEbRKT_RKT0_
 + __ZNKSt3__111__copy_implclB9fqe220106IPN4siri12intelligence12NLParametersES5_S5_Li0EEENS_4pairIT_T1_EES7_T0_S8_
@@ -1340,5 +1287,4 @@ Symbols:
 - __ZSt28__throw_bad_array_new_lengthB9fqe220100v
 - __ZZNSt3__16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES7_EENS_19__map_value_compareIS7_NS_4pairIKS7_S7_EENS_4lessIS7_EEEENS5_ISC_EEE21__insert_range_uniqueB9fqe220100IPKSC_SK_EEvT_T0_ENKUlRSB_RSJ_E_clESN_SO_
 - __ZZNSt3__16__treeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_4lessIS6_EENS4_IS6_EEE21__insert_range_uniqueB9fqe220100IPKS6_SD_EEvT_T0_ENKUlRSC_SG_E_clESG_SG_
-
 ```

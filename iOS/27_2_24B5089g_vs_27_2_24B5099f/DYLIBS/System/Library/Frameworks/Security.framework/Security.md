@@ -2,63 +2,29 @@
 
 > `/System/Library/Frameworks/Security.framework/Security`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x181a6c` | `0x182790` | **`+0xd24`** |
+| `__TEXT.__cstring` | `0x194ec` | `0x1965d` | **`+0x171`** |
+| `__AUTH_CONST.__cfstring` | `0x178e0` | `0x17a00` | **`+0x120`** |
+| `__DATA_CONST.__const` | `0x15380` | `0x15398` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x1ff8` | `0x2000` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -62460.40.56.502.1
--  __TEXT.__text: 0x17d498
 +62460.40.74.0.0
-+  __TEXT.__text: 0x17e1bc
-   __TEXT.__lazy_helpers: 0x54
-   __TEXT.__objc_methlist: 0x67cc
-   __TEXT.__const: 0x1b9c8
-   __TEXT.__dlopen_cstrs: 0xbc
--  __TEXT.__cstring: 0x194ec
-+  __TEXT.__cstring: 0x1965d
-   __TEXT.__gcc_except_tab: 0x7db4
-   __TEXT.__oslogstring: 0xf8f4
-   __TEXT.__ustring: 0x406
-   __TEXT.__dof_codesign: 0x1f2c
-   __TEXT.__dof_security_: 0x325
--  __TEXT.__unwind_info: 0x72e8
-+  __TEXT.__unwind_info: 0x72f8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x15380
-+  __DATA_CONST.__const: 0x15398
-   __DATA_CONST.__objc_classlist: 0x350
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x100
 
-   __DATA_CONST.__objc_arraydata: 0x100
-   __DATA_CONST.__got: 0x770
-   __AUTH_CONST.__const: 0x3f80
--  __AUTH_CONST.__cfstring: 0x178e0
-+  __AUTH_CONST.__cfstring: 0x17a00
-   __AUTH_CONST.__objc_const: 0xa628
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__lazy_load_got: 0x8
-   __AUTH_CONST.__objc_arrayobj: 0x120
-   __AUTH_CONST.__objc_intobj: 0x168
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x1ff8
-+  __AUTH_CONST.__auth_got: 0x2000
-   __AUTH.__objc_data: 0x1f90
-   __AUTH.__data: 0x1488
-   __DATA.__objc_ivar: 0x674
-
-   - /usr/lib/libcoretls_cfhelpers.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 7140
 -  Symbols:   13678
 -  CStrings:  5763
 +  Functions: 7143
 +  Symbols:   13685
 +  CStrings:  5772
- 
 Symbols:
 + GCC_except_table5901
 + GCC_except_table5910

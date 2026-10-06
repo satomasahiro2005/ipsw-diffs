@@ -2,36 +2,25 @@
 
 > `/System/Library/Frameworks/RealityKit.framework/RealityKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7b49c` | `0x7b628` | **`+0x18c`** |
+| `__TEXT.__eh_frame` | `0x1350` | `0x1368` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x1a48` | `0x1a50` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -453.40.4.0.0
--  __TEXT.__text: 0x775c4
 +453.40.5.0.0
-+  __TEXT.__text: 0x77750
-   __TEXT.__objc_methlist: 0x11a4
-   __TEXT.__const: 0x47d0
-   __TEXT.__swift5_typeref: 0x1668
 
-   __TEXT.__swift_as_ret: 0x44
-   __TEXT.__swift_as_cont: 0xd4
-   __TEXT.__swift5_mpenum: 0x88
--  __TEXT.__unwind_info: 0x1ff8
--  __TEXT.__eh_frame: 0x1358
-+  __TEXT.__unwind_info: 0x2010
-+  __TEXT.__eh_frame: 0x1368
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2728
 -  Symbols:   7444
 +  Functions: 2733
 +  Symbols:   7450
-   CStrings:  133
- 
 Symbols:
 + _$ss10_NativeSetV12intersectionyAByxGADFADs13_UnsafeBitsetVXEfU_17RealityFoundation22SpatialTrackingSessionC13ConfigurationV16AnchorCapabilityV_TG5TA
 + _$ss10_NativeSetV12intersectionyAByxGADFADs13_UnsafeBitsetVXEfU_17RealityFoundation22SpatialTrackingSessionC13ConfigurationV28SceneUnderstandingCapabilityV_TG5TA

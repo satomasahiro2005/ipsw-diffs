@@ -2,129 +2,78 @@
 
 > `/System/Library/PrivateFrameworks/AppStoreDaemon.framework/Support/appstored`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_types2`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x559998` | `0x56ad24` | **`+0x1138c`** |
+| `__TEXT.__oslogstring` | `0x3c725` | `0x3d5fc` | **`+0xed7`** |
+| `__TEXT.__cstring` | `0x2081b` | `0x21372` | **`+0xb57`** |
+| `__TEXT.__eh_frame` | `0xe4e0` | `0xeab8` | **`+0x5d8`** |
+| `__DATA_CONST.__cfstring` | `0x1a800` | `0x1ad20` | **`+0x520`** |
+| `__DATA.__objc_const` | `0x33910` | `0x33ce0` | **`+0x3d0`** |
+| `__DATA_CONST.__const` | `0x29358` | `0x29720` | **`+0x3c8`** |
+| `__TEXT.__const` | `0x26808` | `0x26b80` | **`+0x378`** |
+| `__DATA.__objc_data` | `0x10580` | `0x108a8` | **`+0x328`** |
+| `__TEXT.__objc_methname` | `0x1e14c` | `0x1e38c` | **`+0x240`** |
+| `__DATA.__data` | `0x83f8` | `0x8628` | **`+0x230`** |
+| `__TEXT.__objc_methlist` | `0xd4ec` | `0xd6dc` | **`+0x1f0`** |
+| `__TEXT.__unwind_info` | `0xbb28` | `0xbce8` | **`+0x1c0`** |
+| `__DATA.__bss` | `0x8cb8` | `0x8e50` | **`+0x198`** |
+| `__TEXT.__constg_swiftt` | `0x2d04` | `0x2e94` | **`+0x190`** |
+| `__TEXT.__swift5_fieldmd` | `0x2f1c` | `0x3040` | **`+0x124`** |
+| `__TEXT.__objc_stubs` | `0x14bc0` | `0x14cc0` | **`+0x100`** |
+| `__TEXT.__swift5_typeref` | `0x34f2` | `0x35e0` | **`+0xee`** |
+| `__TEXT.__auth_stubs` | `0x4810` | `0x48e0` | **`+0xd0`** |
+| `__TEXT.__objc_classname` | `0x51b3` | `0x5283` | **`+0xd0`** |
+| `__TEXT.__swift5_reflstr` | `0x2200` | `0x22d0` | **`+0xd0`** |
+| `__DATA.__objc_selrefs` | `0x69c0` | `0x6a58` | **`+0x98`** |
+| `__TEXT.__objc_methtype` | `0x8de2` | `0x8e59` | **`+0x77`** |
+| `__DATA_CONST.__auth_got` | `0x2418` | `0x2480` | **`+0x68`** |
+| `__TEXT.__swift5_capture` | `0x2de0` | `0x2e30` | **`+0x50`** |
+| `__DATA_CONST.__auth_ptr` | `0xaf0` | `0xb28` | **`+0x38`** |
+| `__DATA_CONST.__got` | `0x1e58` | `0x1e88` | **`+0x30`** |
+| `__TEXT.__gcc_except_tab` | `0x8bf8` | `0x8c28` | **`+0x30`** |
+| `__DATA.__common` | `0xcd4` | `0xcfc` | **`+0x28`** |
+| `__TEXT.__swift5_builtin` | `0x1a4` | `0x1cc` | **`+0x28`** |
+| `__TEXT.__swift_as_cont` | `0xa64` | `0xa8c` | **`+0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x15c0` | `0x15e0` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x330` | `0x34c` | **`+0x1c`** |
+| `__TEXT.__swift5_assocty` | `0x480` | `0x498` | **`+0x18`** |
+| `__TEXT.__swift_as_ret` | `0x6e0` | `0x6f8` | **`+0x18`** |
+| `__DATA_CONST.__objc_protolist` | `0x528` | `0x538` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x55c` | `0x56c` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x44c` | `0x458` | **`+0xc`** |
+| `__DATA.__objc_ivar` | `0x22c4` | `0x22cc` | **`+0x8`** |
+| `__DATA_CONST.__objc_arraydata` | `0x808` | `0x800` | **`-0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x188` | `0x190` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x4c` | `0x54` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x20` | `0x24` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
 - `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__swift5_types2`
+
+### Other Changes
 
 ```diff
 
 -13.0.52.2.1
--  __TEXT.__text: 0x540e50
--  __TEXT.__auth_stubs: 0x4810
--  __TEXT.__objc_stubs: 0x14bc0
--  __TEXT.__objc_methlist: 0xd4ec
 +13.1.12.0.0
-+  __TEXT.__text: 0x551b84
-+  __TEXT.__auth_stubs: 0x48e0
-+  __TEXT.__objc_stubs: 0x14cc0
-+  __TEXT.__objc_methlist: 0xd6dc
-   __TEXT.__dlopen_cstrs: 0x45e
--  __TEXT.__const: 0x26808
--  __TEXT.__objc_classname: 0x51b3
--  __TEXT.__objc_methtype: 0x8de2
--  __TEXT.__constg_swiftt: 0x2d04
--  __TEXT.__swift5_typeref: 0x34f2
--  __TEXT.__swift5_fieldmd: 0x2f1c
--  __TEXT.__swift5_builtin: 0x1a4
--  __TEXT.__swift5_reflstr: 0x2200
--  __TEXT.__swift5_assocty: 0x480
--  __TEXT.__swift5_proto: 0x44c
--  __TEXT.__swift5_types: 0x330
--  __TEXT.__objc_methname: 0x1e14c
--  __TEXT.__swift5_capture: 0x2de0
--  __TEXT.__oslogstring: 0x3c725
--  __TEXT.__swift_as_entry: 0x55c
--  __TEXT.__swift_as_ret: 0x6e0
--  __TEXT.__swift_as_cont: 0xa64
--  __TEXT.__cstring: 0x2081b
--  __TEXT.__swift5_mpenum: 0x4c
-+  __TEXT.__const: 0x26b80
-+  __TEXT.__swift5_typeref: 0x35e0
-+  __TEXT.__objc_classname: 0x5283
-+  __TEXT.__objc_methname: 0x1e38c
-+  __TEXT.__objc_methtype: 0x8e59
-+  __TEXT.__constg_swiftt: 0x2e94
-+  __TEXT.__swift5_reflstr: 0x22d0
-+  __TEXT.__swift5_fieldmd: 0x3040
-+  __TEXT.__swift5_builtin: 0x1cc
-+  __TEXT.__swift5_assocty: 0x498
-+  __TEXT.__oslogstring: 0x3d5fc
-+  __TEXT.__cstring: 0x21372
-+  __TEXT.__swift5_proto: 0x458
-+  __TEXT.__swift5_types: 0x34c
-+  __TEXT.__swift5_protos: 0x24
-+  __TEXT.__swift5_capture: 0x2e30
-+  __TEXT.__swift_as_entry: 0x56c
-+  __TEXT.__swift_as_ret: 0x6f8
-+  __TEXT.__swift_as_cont: 0xa8c
-+  __TEXT.__swift5_mpenum: 0x54
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__swift5_protos: 0x20
--  __TEXT.__gcc_except_tab: 0x8bf8
-+  __TEXT.__gcc_except_tab: 0x8c28
-   __TEXT.__ustring: 0x94
--  __TEXT.__unwind_info: 0xe160
--  __TEXT.__eh_frame: 0xe4e8
--  __DATA_CONST.__const: 0x29358
--  __DATA_CONST.__cfstring: 0x1a800
--  __DATA_CONST.__objc_classlist: 0x15c0
-+  __TEXT.__unwind_info: 0xe360
-+  __TEXT.__eh_frame: 0xeac0
-+  __DATA_CONST.__const: 0x29720
-+  __DATA_CONST.__cfstring: 0x1ad20
-+  __DATA_CONST.__objc_classlist: 0x15e0
-   __DATA_CONST.__objc_catlist: 0x68
--  __DATA_CONST.__objc_protolist: 0x528
-+  __DATA_CONST.__objc_protolist: 0x538
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_protorefs: 0x188
-+  __DATA_CONST.__objc_protorefs: 0x190
-   __DATA_CONST.__objc_superrefs: 0xc88
-   __DATA_CONST.__objc_intobj: 0x1ba8
--  __DATA_CONST.__objc_arraydata: 0x808
-+  __DATA_CONST.__objc_arraydata: 0x800
-   __DATA_CONST.__objc_arrayobj: 0x420
-   __DATA_CONST.__objc_dictobj: 0x168
--  __DATA_CONST.__auth_got: 0x2418
--  __DATA_CONST.__got: 0x1e58
--  __DATA_CONST.__auth_ptr: 0xaf0
--  __DATA.__objc_const: 0x33910
--  __DATA.__objc_selrefs: 0x69c0
--  __DATA.__objc_ivar: 0x22c4
--  __DATA.__objc_data: 0x10580
--  __DATA.__data: 0x8400
--  __DATA.__common: 0xcd4
-+  __DATA_CONST.__auth_got: 0x2480
-+  __DATA_CONST.__got: 0x1e88
-+  __DATA_CONST.__auth_ptr: 0xb28
-+  __DATA.__objc_const: 0x33ce0
-+  __DATA.__objc_selrefs: 0x6a58
-+  __DATA.__objc_ivar: 0x22cc
-+  __DATA.__objc_data: 0x108a8
-+  __DATA.__data: 0x8630
-+  __DATA.__common: 0xcfc
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/AdAttributionKit.framework/AdAttributionKit
-+  - /System/Library/Frameworks/AppManagedFeatures.framework/AppManagedFeatures
-   - /System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices
-   - /System/Library/Frameworks/BackgroundAssets.framework/BackgroundAssets
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/Frameworks/AppManagedFeatures.framework/AppManagedFeatures
+
 -  Functions: 13635
 -  Symbols:   2262
--  CStrings:  14936
+-  CStrings:  14937
 +  Functions: 13796
 +  Symbols:   2279
-+  CStrings:  15097
- 
++  CStrings:  15098
 Symbols:
 + _$s10Foundation8CalendarV12dateInterval2of3forAA04DateD0VSgAC9ComponentO_AA0G0VtF
 + _$s10Foundation8CalendarV12firstWeekdaySivs
@@ -158,6 +107,7 @@ CStrings:
 + "(missing)"
 + "(none)"
 + "(unknown)"
++ "00:46:22"
 + "<%@ %p> { %@ }"
 + "@\"NSData\"16@0:8"
 + "@28@0:8@\"NSData\"16I24"
@@ -193,6 +143,7 @@ CStrings:
 + "Removing update because %{public}@ is not eligible for updates"
 + "Removing update because %{public}@ was updated more than 30 days ago"
 + "SHA256s = %lu [%@]"
++ "Sep  5 2026"
 + "TB,N,R,VisExtensionUsage"
 + "TI,?,R,N"
 + "TI,R,N"
@@ -341,6 +292,8 @@ CStrings:
 + "variantDescriptors = [%@]"
 + "variantID = %@, deviceBasedVPP = %@"
 + "variantIDs = [%@]"
+- "20:25:18"
+- "Aug  8 2026"
 - "CREATE TABLE IF NOT EXISTS active_launch_events (pid INTEGER, bundle_id TEXT, containing_bundle_id, event_source INTEGER, is_extension INTEGER, launch_end_time DATETIME, launch_start_time DATETIME, payload JSON, recent_launch_times JSON, timestamp DATETIME DEFAULT (timestamp()), PRIMARY KEY (pid));"
 - "CREATE TABLE IF NOT EXISTS launch_events (pid INTEGER, bundle_id TEXT, containing_bundle_id, event_source INTEGER, is_extension INTEGER, launch_end_time DATETIME, launch_start_time DATETIME, recent_launch_times JSON, timestamp DATETIME DEFAULT (timestamp()), PRIMARY KEY (pid));"
 - "Fixing update state for installed update %{public}@"

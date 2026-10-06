@@ -2,9 +2,11 @@
 
 > `/System/Library/PrivateFrameworks/NanoPreferencesSync.framework/nanoprefsyncd`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__oslogstring`
+
+### Other Changes
 
 ```diff
 CStrings:

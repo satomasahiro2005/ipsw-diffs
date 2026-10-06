@@ -2,17 +2,20 @@
 
 > `/System/Library/UsageBundles/SoftwareUpdateUsage.bundle/SoftwareUpdateUsage`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x108` | `0x110` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__const`
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__auth_got: 0x120
--  __DATA_CONST.__got: 0x108
-+  __DATA_CONST.__got: 0x110
-   __DATA.__objc_const: 0x2d8
-   __DATA.__objc_selrefs: 0x2b8
-   __DATA.__objc_ivar: 0x4
-Sections:
-~ __TEXT.__const : content changed
-
+-27.0.42.100.0
++2027.0.3.100.0
 ```

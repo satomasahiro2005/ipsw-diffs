@@ -2,114 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/GameControllerServer.framework/GameControllerServer`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xdebc` | `0x102c4` | **`+0x2408`** |
+| `__AUTH_CONST.__auth_got` | `0x0` | `0x518` | **`+0x518`** |
+| `__AUTH_CONST.__objc_const` | `0x1e80` | `0x2318` | **`+0x498`** |
+| `__TEXT.__swift5_typeref` | `—` | `0x2e0` | **`+0x2e0`** |
+| `__TEXT.__eh_frame` | `—` | `0x238` | **`+0x238`** |
+| `__DATA.__data` | `0x248` | `0x3c0` | **`+0x178`** |
+| `__AUTH_CONST.__const` | `0x1c8` | `0x310` | **`+0x148`** |
+| `__TEXT.__const` | `0x21a` | `0x342` | **`+0x128`** |
+| `__TEXT.__unwind_info` | `0x668` | `0x738` | **`+0xd0`** |
+| `__TEXT.__objc_methlist` | `0xd9c` | `0xe3c` | **`+0xa0`** |
+| `__AUTH.__objc_data` | `0x3c0` | `0x430` | **`+0x70`** |
+| `__TEXT.__cstring` | `0x814` | `0x884` | **`+0x70`** |
+| `__TEXT.__swift5_capture` | `—` | `0x70` | **`+0x70`** |
+| `__DATA_CONST.__got` | `0x120` | `0x180` | **`+0x60`** |
+| `__DATA_CONST.__objc_selrefs` | `0x998` | `0x9c8` | **`+0x30`** |
+| `__TEXT.__constg_swiftt` | `—` | `0x2c` | **`+0x2c`** |
+| `__AUTH.__data` | `—` | `0x28` | **`+0x28`** |
+| `__DATA_CONST.__objc_protolist` | `0x30` | `0x58` | **`+0x28`** |
+| `__TEXT.__swift5_fieldmd` | `—` | `0x1c` | **`+0x1c`** |
+| `__DATA_CONST.__objc_protorefs` | `0x20` | `0x38` | **`+0x18`** |
+| `__TEXT.__swift5_reflstr` | `—` | `0x17` | **`+0x17`** |
+| `__TEXT.__swift5_builtin` | `—` | `0x14` | **`+0x14`** |
+| `__DATA.__bss` | `0x30` | `0x40` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x10` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `—` | `0xc` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `—` | `0xc` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x68` | `0x70` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `—` | `0x4` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -14.0.19.0.0
--  __TEXT.__text: 0xdebc
--  __TEXT.__objc_methlist: 0xd9c
--  __TEXT.__const: 0x21a
 +14.0.21.0.0
-+  __TEXT.__text: 0x102c4
-+  __TEXT.__objc_methlist: 0xe3c
-+  __TEXT.__const: 0x342
-   __TEXT.__gcc_except_tab: 0x1864
-   __TEXT.__oslogstring: 0x1150
--  __TEXT.__cstring: 0x814
--  __TEXT.__unwind_info: 0x668
-+  __TEXT.__cstring: 0x884
-+  __TEXT.__swift5_typeref: 0x2e0
-+  __TEXT.__swift5_capture: 0x70
-+  __TEXT.__constg_swiftt: 0x2c
-+  __TEXT.__swift5_builtin: 0x14
-+  __TEXT.__swift5_reflstr: 0x17
-+  __TEXT.__swift5_fieldmd: 0x1c
-+  __TEXT.__swift5_types: 0x4
-+  __TEXT.__swift_as_entry: 0xc
-+  __TEXT.__swift_as_ret: 0xc
-+  __TEXT.__swift_as_cont: 0x10
-+  __TEXT.__unwind_info: 0x738
-+  __TEXT.__eh_frame: 0x238
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x360
--  __DATA_CONST.__objc_classlist: 0x68
-+  __DATA_CONST.__objc_classlist: 0x70
-   __DATA_CONST.__objc_catlist: 0x8
--  __DATA_CONST.__objc_protolist: 0x30
-+  __DATA_CONST.__objc_protolist: 0x58
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x998
--  __DATA_CONST.__objc_protorefs: 0x20
-+  __DATA_CONST.__objc_selrefs: 0x9c8
-+  __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__objc_superrefs: 0x70
-   __DATA_CONST.__objc_arraydata: 0x48
--  __DATA_CONST.__got: 0x120
--  __AUTH_CONST.__const: 0x1c8
-+  __DATA_CONST.__got: 0x180
-+  __AUTH_CONST.__const: 0x310
-   __AUTH_CONST.__cfstring: 0x7c0
--  __AUTH_CONST.__objc_const: 0x1e80
-+  __AUTH_CONST.__objc_const: 0x2318
-   __AUTH_CONST.__weak_auth_got: 0x8
-   __AUTH_CONST.__objc_intobj: 0xa8
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x90
--  __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x3c0
-+  __AUTH_CONST.__auth_got: 0x518
-+  __AUTH.__objc_data: 0x430
-+  __AUTH.__data: 0x28
-   __DATA.__objc_ivar: 0x18c
--  __DATA.__data: 0x248
--  __DATA.__bss: 0x30
-+  __DATA.__data: 0x3c0
-+  __DATA.__bss: 0x40
-   __DATA_DIRTY.__objc_data: 0x50
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
 
-   - /System/Library/PrivateFrameworks/AssertionServices.framework/AssertionServices
-   - /System/Library/PrivateFrameworks/GameControllerFoundation.framework/GameControllerFoundation
-   - /System/Library/PrivateFrameworks/GameControllerIO.framework/GameControllerIO
 +  - /System/Library/PrivateFrameworks/GameControllerSettings.framework/GameControllerSettings
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-+  - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftCoreImage.dylib
-   - /usr/lib/swift/libswiftCoreLocation.dylib
 
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
++  - /usr/lib/swift/libswiftCore.dylib
+
 +  - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 305
--  Symbols:   999
+-  Symbols:   780
 -  CStrings:  188
 +  Functions: 358
-+  Symbols:   1228
++  Symbols:   1005
 +  CStrings:  191
- 
 Symbols:
 + _$s10Foundation27_KeyValueCodingAndObservingPAAE010willChangeC03forys0B4PathCyxqd__Gn_tlF
 + _$s10Foundation27_KeyValueCodingAndObservingPAAE09didChangeC03forys0B4PathCyxqd__Gn_tlF
@@ -276,10 +220,6 @@ Symbols:
 + __swift_stdlib_reportUnimplementedInitializer
 + _keypath_get_selector_settingsGeneration
 + _objc_allocWithZone
-+ _objc_msgSend$controllerShortcutGrants
-+ _objc_msgSend$init
-+ _objc_msgSend$initWithUserDefaults:
-+ _objc_msgSend$settingsGeneration
 + _objc_opt_self
 + _objc_retainAutoreleasedReturnValue
 + _swift_allocObject

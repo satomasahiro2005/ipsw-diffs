@@ -2,77 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/ANEServices.framework/ANEServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x49d90` | `0x4a2ec` | **`+0x55c`** |
+| `__TEXT.__oslogstring` | `0x4bc5` | `0x4bfb` | **`+0x36`** |
+| `__TEXT.__unwind_info` | `0x1390` | `0x13a8` | **`+0x18`** |
+| `__TEXT.__gcc_except_tab` | `0x1858` | `0x186c` | **`+0x14`** |
+| `__TEXT.__const` | `0x2770` | `0x276d` | **`-0x3`** |
+
+### Other Changes
+
 ```diff
 
 -10.13.20.0.0
--  __TEXT.__text: 0x49d90 sha256:bad1e1a61eef0b42d0196558691808584d931f2d1feae37a9db48465df9b9166
--  __TEXT.__objc_methlist: 0x38 sha256:cce65d94bb4cff9ecc206a661731304095d19afa5fc9b666da578ef38fc4c290
--  __TEXT.__const: 0x2770 sha256:7157710576e53ea2d3778f4f6b82f0c1f3c0a31b15b372737aa11c5ddbe77925
--  __TEXT.__cstring: 0x547b sha256:6a2b3f37b3d8d40a48e6bca67f665dbb91b61c429fd02c0c1f9e5a33f5188feb
--  __TEXT.__gcc_except_tab: 0x1858 sha256:9818a1e519be7a3e6efe94762adaa20714b0bca627b8f7c3dff70edc8291121f
--  __TEXT.__oslogstring: 0x4bc5 sha256:4c51c3e977eccf3c8269078d58b9e351c27fa4ff9d5c479e8b345559fba89cc9
--  __TEXT.__unwind_info: 0x1390 sha256:6f11183867669c1c9a21793c3e77beabc2949c5150aed8ed9e55eb94c7d019c4
 +10.14.2.0.0
-+  __TEXT.__text: 0x4a2ec sha256:1d9ae3de98399187c3572ab058bd39429544949d92c8d741c6aeef71239466c9
-+  __TEXT.__objc_methlist: 0x38 sha256:365f087c54eb534109c73e510b7b4060575bdd1e70d0f6aefac6ecc769eab526
-+  __TEXT.__const: 0x276d sha256:be3ff967a8378ab256d3b6bc3526a1e6098f23c67aa370ea28c19175b3cd50f2
-+  __TEXT.__cstring: 0x547b sha256:b65a0a7bdaed2c97c37851531bddfc9893a6d689d3dcacc45f41896f8ddefc03
-+  __TEXT.__gcc_except_tab: 0x186c sha256:54184c97ce9e12cc025c9663025eba7f876560b5a8f7d605f89d2030f77bb435
-+  __TEXT.__oslogstring: 0x4bfb sha256:395c7eb24b623e3b705d4f7784e12af1bf30a52703786e14753b714ec045afa7
-+  __TEXT.__unwind_info: 0x13a8 sha256:6ce99ee9a2a6b90375b10ca91417d7ecd9919c215eb7bbf714227a561c066bcd
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x530 sha256:05e57471d10de5f79b39c6b9c9980ac374c95528a328891e5106498e8bac51f2
--  __DATA_CONST.__objc_classlist: 0x8 sha256:01a9f4928937f2cdc0f2b876900e72326b67c555559eadd9809d9e5200802f0f
-+  __DATA_CONST.__const: 0x530 sha256:3fe04d46ea2dbe36eae9f6297e61b43662df1e18bc43da8e462d87cb6beea9a0
-+  __DATA_CONST.__objc_classlist: 0x8 sha256:be9f182b3938595c1b1d82d696de84c3f1a1dc916835961e16336ee5a272a395
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x10 sha256:db089a9946ee2f440f1454b6bd081bc906524b106b3b9bd5745c567d00425fed
--  __DATA_CONST.__objc_selrefs: 0x40 sha256:3e5f58968f7ce595156e6924d10c707ed40f2779d038409a25f4c5165bde8d59
--  __DATA_CONST.__got: 0x1e8 sha256:86bccae1e497dcf5bcf97bfdca37b39548821ad646e39ec9bc73e5eef303352b
--  __AUTH_CONST.__const: 0x1e78 sha256:b82c06276d7430928bb7cb83e63ce34eb4f1ef19edb0554f8124816536e49047
--  __AUTH_CONST.__cfstring: 0xa0 sha256:6ac0a2e77b707552b34f8aeffbb69c5cb77591a2ba9708dc15424cd88010a79b
--  __AUTH_CONST.__objc_const: 0x90 sha256:16574e138e5d1b6b84fba355adca435e764a3f5d54d10755138c64dc2b2d6648
--  __AUTH_CONST.__weak_auth_got: 0xf8 sha256:6bffedc6259c04324cdab5ccda64379e0ebc7db26b44ecbcc31b6a4352c673db
-+  __DATA_CONST.__weak_got: 0x10 sha256:c9b00cf8e5fdc159d5e0657836ccec0cbd1eddc62a50f4b3c9f634c56153dbb7
-+  __DATA_CONST.__objc_selrefs: 0x40 sha256:3c17ebb8712f5664ea3d02206c4e3f1e5b1362b304372fb3292fe98be24e5c56
-+  __DATA_CONST.__got: 0x1e8 sha256:393dac66bc9017794606b4e2717c87505c2feb30d87ff0a0fc1f38d3ec465c5f
-+  __AUTH_CONST.__const: 0x1e78 sha256:5becdd6b169cd6e949515abfc88a88a03d3a4264672d875035ed50116b1a64fe
-+  __AUTH_CONST.__cfstring: 0xa0 sha256:5b2409a3068e720a196d85788792bc4dfe299f5c92aa6bd7bcd8608cb242b3f0
-+  __AUTH_CONST.__objc_const: 0x90 sha256:95d86fd08912e2b6f212c61b370c21e8e9eae3d89dbcfa44379d3103e7ce7010
-+  __AUTH_CONST.__weak_auth_got: 0xf8 sha256:110e89cff5869a647a3aa5e3cba0810ad762011cef5a2c619f8bf2f492ad32eb
-   __AUTH_CONST.__auth_got: 0x6e8 sha256:7314b978571ffc723887d81a40c88dbd2de4b221b4a0149d14f284b074eec9f9
--  __DATA.__data: 0x4c sha256:91d129eab2f0524b611fd0c0862d486aacc842da801a4532413f3580f3fc4d67
-+  __DATA.__data: 0x4c sha256:eb05fab22f035aedff5e40c70d6290251d28a2f7d6da761516afde962400df74
-   __DATA.__bss: 0x18 sha256:9d908ecfb6b256def8b49a7c504e6c889c4b0e41fe6ce3e01863dd7b61a20aa0
-   __DATA.__common: 0x8 sha256:af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc
--  __DATA_DIRTY.__objc_data: 0x50 sha256:40f0c729b9c13d738ad11ef05e9d25424c87f076e4f08c6b0fae5dc2ff39ac6f
--  __DATA_DIRTY.__data: 0x28 sha256:11687873eb7ab41e1063eb8d6dfc6438eb636ec97377927c81f1bde4a0f3b7db
-+  __DATA_DIRTY.__objc_data: 0x50 sha256:4c270b508cfbcefd7c660e06b039b8943ea2a622ed4331bb6b6ce66097693045
-+  __DATA_DIRTY.__data: 0x28 sha256:616c622c13b0e8922f3a5aeae918bd50f183255b97943650e4478f614075322c
-   __DATA_DIRTY.__bss: 0x20 sha256:66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreVideo.framework/CoreVideo
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
--  UUID: 6D32CB55-AD67-3E84-A712-4550C6E466A9
 -  Functions: 2100
--  Symbols:   4696
--  CStrings:  896
-+  UUID: C787C1CE-2243-3505-8B05-B4DF673F2586
+-  Symbols:   2369
+-  CStrings:  891
 +  Functions: 2114
-+  Symbols:   4715
-+  CStrings:  897
- 
++  Symbols:   2382
++  CStrings:  892
 Symbols:
 + __ZN3ANE14ANEDriverDebug14ANE_GetNumANEsEPh
 + __ZN3ANE14ANEDriverDebug18ANEDriverDebugOpenEv
-+ __ZN3ANE14ANEDriverDebug18ANEDriverDebugOpenEv.cold.1
 + __ZN3ANE14ANEDriverDebug19ANEDriverDebugCloseEv
 + __ZN3ANE14ANEDriverDebug19ANE_GetProcessCountEPj
 + __ZN3ANE14ANEDriverDebug20EnableDeviceMessagesEv
@@ -127,11 +82,8 @@ Symbols:
 + __ZNSt3__114__split_bufferIN12ANEDebugInfo14DebugInfoInMemERNS_9allocatorIS2_EEE17__destruct_at_endB9fqe220106EPS2_
 + __ZNSt3__114__split_bufferINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEERNS4_IS6_EEE17__destruct_at_endB9fqe220106EPS6_
 + __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorIN12ANEDebugInfo14DebugInfoInMem5GroupENS_9allocatorIS4_EEE12emplace_backIJRKS4_EEERS4_DpOT_EUlvE_ZNS8_IJSA_EEESB_SE_EUlvE0_EEvbT_T0_
-+ __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorIN12ANEDebugInfo14DebugInfoInMem5GroupENS_9allocatorIS4_EEE12emplace_backIJRKS4_EEERS4_DpOT_EUlvE_ZNS8_IJSA_EEESB_SE_EUlvE0_EEvbT_T0_.cold.1
 + __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorIN12ANEDebugInfo14DebugInfoInMemENS_9allocatorIS3_EEE12emplace_backIJRKS3_EEERS3_DpOT_EUlvE_ZNS7_IJS9_EEESA_SD_EUlvE0_EEvbT_T0_
-+ __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorIN12ANEDebugInfo14DebugInfoInMemENS_9allocatorIS3_EEE12emplace_backIJRKS3_EEERS3_DpOT_EUlvE_ZNS7_IJS9_EEESA_SD_EUlvE0_EEvbT_T0_.cold.1
 + __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSC_EEESD_SG_EUlvE0_EEvbT_T0_
-+ __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSC_EEESD_SG_EUlvE0_EEvbT_T0_.cold.1
 + __ZNSt3__116__pad_and_outputB9fqe220106IcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_
 + __ZNSt3__116allocator_traitsINS_9allocatorIN12ANEDebugInfo14DebugInfoInMemEEEE7destroyB9fqe220106IS3_Li0EEEvRS4_PT_
 + __ZNSt3__118__for_each_segmentB9fqe220106INS_16__deque_iteratorIPN3ANE25ANERequestReceiverRequestEPS4_RS4_PS5_lLl512EEEZNKS_11__move_implINS_17_ClassicAlgPolicyEEclB9fqe220106IS8_S8_Li0EEENS_4pairIT_T0_EESE_SE_SF_EUlS5_S5_E_EEvSE_SE_SF_
@@ -283,11 +235,8 @@ Symbols:
 - __ZNSt3__114__split_bufferIN12ANEDebugInfo14DebugInfoInMemERNS_9allocatorIS2_EEE17__destruct_at_endB9fqe220100EPS2_
 - __ZNSt3__114__split_bufferINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEERNS4_IS6_EEE17__destruct_at_endB9fqe220100EPS6_
 - __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorIN12ANEDebugInfo14DebugInfoInMem5GroupENS_9allocatorIS4_EEE12emplace_backIJRKS4_EEERS4_DpOT_EUlvE_ZNS8_IJSA_EEESB_SE_EUlvE0_EEvbT_T0_
-- __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorIN12ANEDebugInfo14DebugInfoInMem5GroupENS_9allocatorIS4_EEE12emplace_backIJRKS4_EEERS4_DpOT_EUlvE_ZNS8_IJSA_EEESB_SE_EUlvE0_EEvbT_T0_.cold.1
 - __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorIN12ANEDebugInfo14DebugInfoInMemENS_9allocatorIS3_EEE12emplace_backIJRKS3_EEERS3_DpOT_EUlvE_ZNS7_IJS9_EEESA_SD_EUlvE0_EEvbT_T0_
-- __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorIN12ANEDebugInfo14DebugInfoInMemENS_9allocatorIS3_EEE12emplace_backIJRKS3_EEERS3_DpOT_EUlvE_ZNS7_IJS9_EEESA_SD_EUlvE0_EEvbT_T0_.cold.1
 - __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSC_EEESD_SG_EUlvE0_EEvbT_T0_
-- __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSC_EEESD_SG_EUlvE0_EEvbT_T0_.cold.1
 - __ZNSt3__116__pad_and_outputB9fqe220100IcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_
 - __ZNSt3__116allocator_traitsINS_9allocatorIN12ANEDebugInfo14DebugInfoInMemEEEE7destroyB9fqe220100IS3_Li0EEEvRS4_PT_
 - __ZNSt3__118__for_each_segmentB9fqe220100INS_16__deque_iteratorIPN3ANE25ANERequestReceiverRequestEPS4_RS4_PS5_lLl512EEEZNKS_11__move_implINS_17_ClassicAlgPolicyEEclB9fqe220100IS8_S8_Li0EEENS_4pairIT_T0_EESE_SE_SF_EUlS5_S5_E_EEvSE_SE_SF_
@@ -398,5 +347,4 @@ Symbols:
 - __ZZNSt3__112__hash_tableIyNS_4hashIyEENS_8equal_toIyEENS_9allocatorIyEEE16__emplace_uniqueB9fqe220100IJRKyEEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIyPvEEEEbEEDpOT_ENKUlSA_SA_E_clESA_SA_
 CStrings:
 + "ANEDriverDebugOpen: IOServiceOpen failed result=0x%x\n"
-
 ```

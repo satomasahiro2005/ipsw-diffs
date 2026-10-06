@@ -2,19 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/SpeechRecognitionCore.framework/XPCServices/com.apple.SpeechRecognitionCore.brokerd.xpc/com.apple.SpeechRecognitionCore.brokerd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10b58` | `0x10b5c` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__constg_swiftt`
 - `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 40.1.0.0.0
--  __TEXT.__text: 0x10b58
-+  __TEXT.__text: 0x10b5c
-   __TEXT.__auth_stubs: 0xd50
-   __TEXT.__objc_stubs: 0x14e0
-   __TEXT.__init_offsets: 0x4
+```text
 Functions:
 ~ sub_10001141c : 1500 -> 1504
 ```

@@ -2,98 +2,61 @@
 
 > `/System/Library/PrivateFrameworks/RemoteManagement.framework/XPCServices/NetworkExtensionSubscriber.xpc/NetworkExtensionSubscriber`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfad4c` | `0xf817c` | **`-0x2bd0`** |
+| `__DATA.__objc_const` | `0x8b70` | `0x8998` | **`-0x1d8`** |
+| `__DATA.__objc_data` | `0x95f8` | `0x9440` | **`-0x1b8`** |
+| `__DATA_CONST.__const` | `0x9b78` | `0x9a10` | **`-0x168`** |
+| `__TEXT.__objc_methlist` | `0x5838` | `0x5728` | **`-0x110`** |
+| `__TEXT.__swift5_reflstr` | `0x3636` | `0x3526` | **`-0x110`** |
+| `__TEXT.__constg_swiftt` | `0x53b8` | `0x52bc` | **`-0xfc`** |
+| `__TEXT.__objc_methname` | `0x65f5` | `0x6535` | **`-0xc0`** |
+| `__TEXT.__unwind_info` | `0x3f98` | `0x3f08` | **`-0x90`** |
+| `__DATA.__data` | `0x2f08` | `0x2e88` | **`-0x80`** |
+| `__TEXT.__objc_classname` | `0x2b4d` | `0x2acd` | **`-0x80`** |
+| `__TEXT.__objc_methtype` | `0x2395` | `0x2315` | **`-0x80`** |
+| `__TEXT.__swift5_fieldmd` | `0x22cc` | `0x225c` | **`-0x70`** |
+| `__TEXT.__const` | `0x30f0` | `0x30a0` | **`-0x50`** |
+| `__TEXT.__eh_frame` | `0x5cb8` | `0x5c78` | **`-0x40`** |
+| `__TEXT.__swift5_capture` | `0x16ac` | `0x168c` | **`-0x20`** |
+| `__DATA.__bss` | `0x1a30` | `0x1a20` | **`-0x10`** |
+| `__TEXT.__swift5_typeref` | `0x12b2` | `0x12a4` | **`-0xe`** |
+| `__DATA_CONST.__auth_ptr` | `0x3a8` | `0x3a0` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x3b0` | `0x3a8` | **`-0x8`** |
+| `__TEXT.__swift5_proto` | `0x1ec` | `0x1e4` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0x24c` | `0x248` | **`-0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__cstring`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xfad4c
-+  __TEXT.__text: 0xf817c
-   __TEXT.__auth_stubs: 0xdc0
-   __TEXT.__objc_stubs: 0x6e0
--  __TEXT.__objc_methlist: 0x5838
--  __TEXT.__const: 0x30f0
--  __TEXT.__swift5_typeref: 0x12b2
-+  __TEXT.__objc_methlist: 0x5728
-+  __TEXT.__const: 0x30a0
-+  __TEXT.__swift5_typeref: 0x12a4
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__swift5_fieldmd: 0x22cc
--  __TEXT.__constg_swiftt: 0x53b8
--  __TEXT.__objc_methtype: 0x2395
-+  __TEXT.__swift5_fieldmd: 0x225c
-+  __TEXT.__constg_swiftt: 0x52bc
-+  __TEXT.__objc_methtype: 0x2315
-   __TEXT.__swift5_protos: 0x4c
--  __TEXT.__swift5_proto: 0x1ec
-+  __TEXT.__swift5_proto: 0x1e4
-   __TEXT.__swift_as_entry: 0x280
-   __TEXT.__swift_as_ret: 0x2d0
-   __TEXT.__swift_as_cont: 0x3b0
-   __TEXT.__cstring: 0x3226
-   __TEXT.__oslogstring: 0xf72
--  __TEXT.__objc_methname: 0x65f5
--  __TEXT.__objc_classname: 0x2b4d
--  __TEXT.__swift5_reflstr: 0x3636
-+  __TEXT.__objc_methname: 0x6535
-+  __TEXT.__objc_classname: 0x2acd
-+  __TEXT.__swift5_reflstr: 0x3526
-   __TEXT.__swift5_builtin: 0xdc
-   __TEXT.__swift5_mpenum: 0x48
--  __TEXT.__swift5_capture: 0x16ac
--  __TEXT.__swift5_types: 0x24c
-+  __TEXT.__swift5_capture: 0x168c
-+  __TEXT.__swift5_types: 0x248
-   __TEXT.__swift5_assocty: 0x268
--  __TEXT.__unwind_info: 0x3f98
--  __TEXT.__eh_frame: 0x5cb8
--  __DATA_CONST.__const: 0x9b78
--  __DATA_CONST.__objc_classlist: 0x3b0
-+  __TEXT.__unwind_info: 0x3f08
-+  __TEXT.__eh_frame: 0x5c78
-+  __DATA_CONST.__const: 0x9a10
-+  __DATA_CONST.__objc_classlist: 0x3a8
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__auth_got: 0x6e8
-   __DATA_CONST.__got: 0x648
--  __DATA_CONST.__auth_ptr: 0x3a8
--  __DATA.__objc_const: 0x8b70
-+  __DATA_CONST.__auth_ptr: 0x3a0
-+  __DATA.__objc_const: 0x8998
-   __DATA.__objc_selrefs: 0xd38
--  __DATA.__objc_data: 0x95f8
--  __DATA.__data: 0x2f08
-+  __DATA.__objc_data: 0x9440
-+  __DATA.__data: 0x2e88
-   __DATA.__common: 0x128
--  __DATA.__bss: 0x1a30
-+  __DATA.__bss: 0x1a20
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/NetworkExtension.framework/NetworkExtension
+-624.0.3.0.0
++624.0.8.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6410
 -  Symbols:   544
--  CStrings:  1190
+-  CStrings:  1076
 +  Functions: 6341
 +  Symbols:   542
-+  CStrings:  1187
- 
-Sections:
-~ __TEXT.__swift5_entry : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA.__objc_selrefs : content changed
++  CStrings:  1073
 Symbols:
 - _OBJC_CLASS_$__TtCC26NetworkExtensionSubscriber36RMModelNetworkVPNAlwaysOnDeclaration45TunnelConfigurationElementIKEV2NetworkRouting
 - _OBJC_METACLASS_$__TtCC26NetworkExtensionSubscriber36RMModelNetworkVPNAlwaysOnDeclaration45TunnelConfigurationElementIKEV2NetworkRouting
@@ -101,5 +64,4 @@ CStrings:
 - "@\"_TtCC26NetworkExtensionSubscriber36RMModelNetworkVPNAlwaysOnDeclaration45TunnelConfigurationElementIKEV2NetworkRouting\""
 - "T@\"_TtCC26NetworkExtensionSubscriber36RMModelNetworkVPNAlwaysOnDeclaration45TunnelConfigurationElementIKEV2NetworkRouting\",N,&,VpayloadNetworkRouting"
 - "_TtCC26NetworkExtensionSubscriber36RMModelNetworkVPNAlwaysOnDeclaration45TunnelConfigurationElementIKEV2NetworkRouting"
-
 ```

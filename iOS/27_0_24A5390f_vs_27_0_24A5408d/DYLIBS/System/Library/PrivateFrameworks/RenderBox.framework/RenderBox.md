@@ -2,75 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/RenderBox.framework/RenderBox`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x16e6d8` | `0x16f86c` | **`+0x1194`** |
+| `__AUTH_CONST.__const` | `0xa5f8` | `0xa748` | **`+0x150`** |
+| `__TEXT.__gcc_except_tab` | `0x7f94` | `0x80b8` | **`+0x124`** |
+| `__TEXT.__unwind_info` | `0x73e0` | `0x7490` | **`+0xb0`** |
+| `__TEXT.__cstring` | `0x68d0` | `0x6888` | **`-0x48`** |
+| `__TEXT.__oslogstring` | `0x12a5` | `0x12ca` | **`+0x25`** |
+| `__DATA.__bss` | `0x2c8` | `0x2d8` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1f50` | `0x1f40` | **`-0x10`** |
+| `__DATA_DIRTY.__bss` | `0x5c8` | `0x5b8` | **`-0x10`** |
+| `__TEXT.__const` | `0x6030` | `0x6040` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1500` | `0x14f8` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x890` | `0x888` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -8.0.79.0.0
--  __TEXT.__text: 0x16e6d8
 +8.0.84.0.0
-+  __TEXT.__text: 0x16f86c
-   __TEXT.__objc_methlist: 0x2d2c
--  __TEXT.__const: 0x6030
--  __TEXT.__gcc_except_tab: 0x7f94
--  __TEXT.__cstring: 0x68d0
--  __TEXT.__oslogstring: 0x12a5
--  __TEXT.__unwind_info: 0x73e0
-+  __TEXT.__const: 0x6040
-+  __TEXT.__gcc_except_tab: 0x80b8
-+  __TEXT.__cstring: 0x6888
-+  __TEXT.__oslogstring: 0x12ca
-+  __TEXT.__unwind_info: 0x7490
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0xb8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1f50
-+  __DATA_CONST.__objc_selrefs: 0x1f40
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0xe8
-   __DATA_CONST.__objc_arraydata: 0x10
--  __DATA_CONST.__got: 0x890
--  __AUTH_CONST.__const: 0xa5f8
-+  __DATA_CONST.__got: 0x888
-+  __AUTH_CONST.__const: 0xa748
-   __AUTH_CONST.__cfstring: 0x3320
-   __AUTH_CONST.__objc_const: 0x49a0
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__objc_intobj: 0x60
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_floatobj: 0x10
--  __AUTH_CONST.__auth_got: 0x1500
-+  __AUTH_CONST.__auth_got: 0x14f8
-   __AUTH.__objc_data: 0x320
-   __AUTH.__thread_vars: 0x48
-   __AUTH.__thread_bss: 0x18
-   __DATA.__objc_ivar: 0x2cc
-   __DATA.__data: 0xb0c
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x2c8
-+  __DATA.__bss: 0x2d8
-   __DATA.__common: 0x2c
-   __DATA_DIRTY.__objc_data: 0x910
-   __DATA_DIRTY.__data: 0x4
-   __DATA_DIRTY.__common: 0x58
--  __DATA_DIRTY.__bss: 0x5c8
-+  __DATA_DIRTY.__bss: 0x5b8
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 7671
--  Symbols:   10632
+-  Symbols:   10021
 -  CStrings:  1779
 +  Functions: 7705
-+  Symbols:   10668
++  Symbols:   10059
 +  CStrings:  1778
- 
 Symbols:
 + -[CALayer kitScreenAllowingSystemID:]
 + GCC_except_table170
@@ -117,16 +78,12 @@ Symbols:
 + __ZZN12_GLOBAL__N_117make_wrapped_pathIZ20RBPathCopyOffsetPathE10OffsetArgsEE6RBPathS2_OT_ENUlPKvPvPFbS7_13RBPathElementPKdS6_EE_8__invokeES6_S7_SC_
 + __ZZN12_GLOBAL__N_117make_wrapped_pathIZ20RBPathCopyOffsetPathE10OffsetArgsEE6RBPathS2_OT_ENUlPKvS6_E_8__invokeES6_S6_
 + ___block_descriptor_45_e5_v8?0l
-+ _objc_msgSend$bundleForClass:
 - -[CALayer kitView]
 - GCC_except_table158
 - _OBJC_CLASS_$_NSURL
 - __ZN12_GLOBAL__N_114AnimationTimer17dispatch_handlersE13RBDisplayTypeP11objc_objectddRNSt3__111unique_lockIN2RB9spin_lockEEE
 - ___block_descriptor_41_e5_v8?0l
 - _dyld_image_path_containing_address
-- _objc_msgSend$bundleWithIdentifier:
-- _objc_msgSend$bundleWithURL:
-- _objc_msgSend$fileURLWithFileSystemRepresentation:isDirectory:relativeToURL:
 - _strstr
 CStrings:
 + "8.0.84"

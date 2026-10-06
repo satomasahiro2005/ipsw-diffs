@@ -2,74 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/WorkoutSeymourBridge.framework/WorkoutSeymourBridge`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x61314` | `0x619dc` | **`+0x6c8`** |
+| `__TEXT.__cstring` | `0x2c95` | `0x2d75` | **`+0xe0`** |
+| `__TEXT.__swift5_reflstr` | `0xd24` | `0xd54` | **`+0x30`** |
+| `__AUTH_CONST.__objc_const` | `0x11f8` | `0x1218` | **`+0x20`** |
+| `__DATA_DIRTY.__objc_data` | `0x3c8` | `0x3e8` | **`+0x20`** |
+| `__TEXT.__const` | `0x17e2` | `0x1802` | **`+0x20`** |
+| `__TEXT.__constg_swiftt` | `0xcdc` | `0xcfc` | **`+0x20`** |
+| `__TEXT.__swift5_typeref` | `0xd28` | `0xd0a` | **`-0x1e`** |
+| `__DATA.__data` | `0xdf0` | `0xde0` | **`-0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x968` | `0x974` | **`+0xc`** |
+| `__AUTH.__objc_data` | `0x808` | `0x810` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6e8` | `0x6f0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.152.1.2
--  __TEXT.__text: 0x5e5fc
 +2027.1.48.0.0
-+  __TEXT.__text: 0x5ecb4
-   __TEXT.__objc_methlist: 0x6ec
--  __TEXT.__const: 0x17e2
--  __TEXT.__swift5_typeref: 0xd28
--  __TEXT.__constg_swiftt: 0xcdc
--  __TEXT.__swift5_reflstr: 0xd24
--  __TEXT.__swift5_fieldmd: 0x968
-+  __TEXT.__const: 0x1802
-+  __TEXT.__swift5_typeref: 0xd0a
-+  __TEXT.__constg_swiftt: 0xcfc
-+  __TEXT.__swift5_reflstr: 0xd54
-+  __TEXT.__swift5_fieldmd: 0x974
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_assocty: 0x48
-   __TEXT.__swift5_proto: 0x7c
-   __TEXT.__swift5_types: 0x68
--  __TEXT.__cstring: 0x2c95
-+  __TEXT.__cstring: 0x2d75
-   __TEXT.__swift5_capture: 0x8f8
-   __TEXT.__swift5_protos: 0x14
-   __TEXT.__swift_as_entry: 0x6c
-   __TEXT.__swift_as_cont: 0xc8
-   __TEXT.__swift_as_ret: 0x24
-   __TEXT.__oslogstring: 0x65
--  __TEXT.__unwind_info: 0x1508
-+  __TEXT.__unwind_info: 0x1510
-   __TEXT.__eh_frame: 0x1970
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x30
-   __DATA_CONST.__objc_protolist: 0xa0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6e8
-+  __DATA_CONST.__objc_selrefs: 0x6f0
-   __DATA_CONST.__objc_protorefs: 0x50
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x1970
--  __AUTH_CONST.__objc_const: 0x11f8
-+  __AUTH_CONST.__objc_const: 0x1218
-   __AUTH_CONST.__auth_got: 0x1198
--  __AUTH.__objc_data: 0x808
-+  __AUTH.__objc_data: 0x810
-   __AUTH.__data: 0x410
--  __DATA.__data: 0xdf0
-+  __DATA.__data: 0xde0
-   __DATA.__common: 0x130
--  __DATA_DIRTY.__objc_data: 0x3c8
-+  __DATA_DIRTY.__objc_data: 0x3e8
-   __DATA_DIRTY.__data: 0x128
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1659
--  Symbols:   3876
+-  Symbols:   3746
 -  CStrings:  178
 +  Functions: 1660
-+  Symbols:   3873
++  Symbols:   3742
 +  CStrings:  181
- 
 Symbols:
 + _$s13SeymourClient017SessionPreferenceB8ProtocolP018queryAudioLanguageD00A14CoreFoundation7PromiseVyAE0ghD0VGyFTj
 + _$s13SeymourClient07SessionB8ProtocolPAAE06updateC05token13activityRings20audioFocusPreference0i8LanguageK013cadenceMetric18displayPreferences08distanceN006energyN016gymKitConnection015heartRateDeviceU00vwN010meditation014mindfulMinutesN009multiUserC009multiUserC10Identities04paceN014playbackIntent8playback013remoteDisplayU005scoreN017structuredWorkout11termination04unitP008userMassN007workoutxU005watchU9Rejection7workout13workoutIntentyAA0C5TokenC_0A4Core08ActivityH0VSgA7_05AudiojK0VSg0A14CoreFoundation05AudiolK0VSgA7_07CadenceN0VSgA7_07DisplayP0VSgA7_08DistanceN0VSgA7_06EnergyN0VSgA7_03GymtU0VSgA7_05HeartwxU0VSgA7_05HeartwN0VSgA7_10MeditationVSgA7_014MindfulMinutesN0VSgA7_09MultiUserC0VSgA7_09MultiUserC10IdentitiesVSgA7_04PaceN0VSgA7_14PlaybackIntentVSgA7_8PlaybackVSgA7_013RemoteDisplayU0VSgA7_05ScoreN0VSgA7_17StructuredWorkoutVSgA7_11TerminationVSgA7_04UnitP0VSgA7_012UserBodyMassN0VSgA7_07WorkoutxU0VSgA7_05WatchU9RejectionVSgA7_7WorkoutVSgA7_13WorkoutIntentVSgtF
@@ -118,7 +80,6 @@ Symbols:
 + ___swift_closure_destructor.38Tm
 + ___swift_closure_destructor.41Tm
 + ___swift_closure_destructor.69Tm
-+ _objc_msgSend$lastPauseEventSource
 + _symbolic SS3key_ypSg5valuet
 + _symbolic SS_ypSgt
 + _symbolic ScCy___________pG 21SeymourCoreFoundation23AudioLanguagePreferenceV s5ErrorP

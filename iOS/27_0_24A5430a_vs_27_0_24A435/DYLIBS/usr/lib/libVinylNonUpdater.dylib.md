@@ -2,23 +2,18 @@
 
 > `/usr/lib/libVinylNonUpdater.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x59504` | `0x59518` | **`+0x14`** |
+
+### Other Changes
+
 ```diff
 
- 178.0.0.0.0
--  __TEXT.__text: 0x59504
-+  __TEXT.__text: 0x59518
-   __TEXT.__init_offsets: 0x54
-   __TEXT.__const: 0x7424
-   __TEXT.__gcc_except_tab: 0x4e90
-
-   - /usr/lib/libTelephonyCapabilities.dylib
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 1699
 +  Functions: 1700
-   Symbols:   3148
-   CStrings:  1411
- 
 Functions:
 ~ __ZNSt3__114__split_bufferIP15eVinylOperationNS_9allocatorIS2_EEE12emplace_backIJS2_EEEvDpOT_ : 264 -> 268
 ~ __ZNSt3__114__split_bufferIP15eVinylOperationRNS_9allocatorIS2_EEE12emplace_backIJS2_EEEvDpOT_ : 264 -> 268

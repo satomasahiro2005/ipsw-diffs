@@ -2,95 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/AgentCanvasFoundation.framework/AgentCanvasFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x13ff0` | `0x172a0` | **`+0x32b0`** |
+| `__TEXT.__eh_frame` | `0x630` | `0x890` | **`+0x260`** |
+| `__AUTH_CONST.__auth_got` | `0x5b8` | `0x748` | **`+0x190`** |
+| `__AUTH_CONST.__const` | `0x1d48` | `0x1ed0` | **`+0x188`** |
+| `__TEXT.__const` | `0x1854` | `0x1974` | **`+0x120`** |
+| `__TEXT.__unwind_info` | `0x7f8` | `0x918` | **`+0x120`** |
+| `__DATA.__bss` | `0x1d10` | `0x1e10` | **`+0x100`** |
+| `__TEXT.__cstring` | `0x981` | `0x8a1` | **`-0xe0`** |
+| `__TEXT.__swift5_reflstr` | `0x820` | `0x750` | **`-0xd0`** |
+| `__DATA.__data` | `0x220` | `0x290` | **`+0x70`** |
+| `__TEXT.__constg_swiftt` | `0x5ec` | `0x658` | **`+0x6c`** |
+| `__TEXT.__swift5_typeref` | `0x5cf` | `0x633` | **`+0x64`** |
+| `__DATA_CONST.__objc_selrefs` | `0x30` | `0x68` | **`+0x38`** |
+| `__TEXT.__oslogstring` | `0x88` | `0xa8` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x8d8` | `0x8c4` | **`-0x14`** |
+| `__TEXT.__swift5_types` | `0x88` | `0x94` | **`+0xc`** |
+| `__TEXT.__swift_as_entry` | `0x3c` | `0x48` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `0x2c` | `0x38` | **`+0xc`** |
+| `__DATA.__common` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x130` | `0x138` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x10` | `0x14` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -73.0.24.109.0
--  __TEXT.__text: 0x13544
--  __TEXT.__const: 0x1854
--  __TEXT.__swift5_typeref: 0x5cf
--  __TEXT.__constg_swiftt: 0x5ec
--  __TEXT.__swift5_reflstr: 0x820
--  __TEXT.__swift5_fieldmd: 0x8d8
--  __TEXT.__swift5_proto: 0x130
--  __TEXT.__swift5_types: 0x88
 +3605.1.1.1.5
-+  __TEXT.__text: 0x16570
-+  __TEXT.__const: 0x1974
-+  __TEXT.__swift5_typeref: 0x633
-+  __TEXT.__constg_swiftt: 0x658
-+  __TEXT.__swift5_reflstr: 0x750
-+  __TEXT.__swift5_fieldmd: 0x8c4
-+  __TEXT.__swift5_proto: 0x138
-+  __TEXT.__swift5_types: 0x94
-+  __TEXT.__cstring: 0x8a1
-+  __TEXT.__oslogstring: 0xa8
-+  __TEXT.__swift_as_entry: 0x48
-+  __TEXT.__swift_as_ret: 0x38
-   __TEXT.__swift5_assocty: 0x150
--  __TEXT.__cstring: 0x981
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_mpenum: 0x10
-   __TEXT.__swift5_capture: 0x460
--  __TEXT.__swift_as_entry: 0x3c
--  __TEXT.__swift_as_ret: 0x2c
-   __TEXT.__swift_as_cont: 0x10
--  __TEXT.__swift5_protos: 0x10
--  __TEXT.__oslogstring: 0x88
--  __TEXT.__unwind_info: 0x908
--  __TEXT.__eh_frame: 0x630
-+  __TEXT.__swift5_protos: 0x14
-+  __TEXT.__unwind_info: 0xa50
-+  __TEXT.__eh_frame: 0x890
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__const: 0xa8
-   __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x30
-+  __DATA_CONST.__objc_selrefs: 0x68
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1d48
-+  __AUTH_CONST.__const: 0x1ed0
-   __AUTH_CONST.__objc_const: 0x1f8
--  __AUTH_CONST.__auth_got: 0x5b8
-+  __AUTH_CONST.__auth_got: 0x748
-   __AUTH.__objc_data: 0x50
-   __AUTH.__data: 0xa0
--  __DATA.__data: 0x220
-+  __DATA.__data: 0x290
-+  __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0x50
-   __DATA_DIRTY.__data: 0x558
-   __DATA_DIRTY.__bss: 0x800
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 +  - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 876
--  Symbols:   355
+-  Symbols:   349
 -  CStrings:  82
 +  Functions: 958
-+  Symbols:   380
++  Symbols:   367
 +  CStrings:  77
- 
 Symbols:
 + _NSClassFromString
 + _OBJC_CLASS_$_NSBundle
-+ _objc_msgSend$boolForKey:
-+ _objc_msgSend$bundleIdentifier
-+ _objc_msgSend$charactersToBeSkipped
-+ _objc_msgSend$isAtEnd
-+ _objc_msgSend$mainBundle
-+ _objc_msgSend$setCharactersToBeSkipped:
-+ _objc_msgSend$string
 + _os_variant_has_internal_ui
 + _swift_getAssociatedConformanceWitness
 + _swift_getAssociatedTypeWitness

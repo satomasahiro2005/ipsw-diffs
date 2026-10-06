@@ -2,87 +2,34 @@
 
 > `/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x26d1f0` | `0x26dccc` | **`+0xadc`** |
+| `__TEXT.__oslogstring` | `0x377b0` | `0x3787b` | **`+0xcb`** |
+| `__TEXT.__gcc_except_tab` | `0x2300c` | `0x23068` | **`+0x5c`** |
+| `__AUTH_CONST.__const` | `0x116c8` | `0x116f0` | **`+0x28`** |
+| `__TEXT.__realtime` | `0x29b20` | `0x29b40` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x22b3f` | `0x22b59` | **`+0x1a`** |
+| `__TEXT.__unwind_info` | `0xca70` | `0xca80` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1bb0` | `0x1bb8` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -1633.1.0.0.0
--  __TEXT.__text: 0x26d1f0
--  __TEXT.__realtime: 0x29b20
 +1638.0.0.0.0
-+  __TEXT.__text: 0x26dccc
-+  __TEXT.__realtime: 0x29b40
-   __TEXT.__delay_stubs: 0x100
-   __TEXT.__delay_helper: 0x148
-   __TEXT.__objc_methlist: 0x205c
-   __TEXT.__const: 0x486c
-   __TEXT.__dlopen_cstrs: 0x84f
--  __TEXT.__gcc_except_tab: 0x2300c
--  __TEXT.__cstring: 0x22b3f
--  __TEXT.__oslogstring: 0x377b0
--  __TEXT.__unwind_info: 0xca70
-+  __TEXT.__gcc_except_tab: 0x23068
-+  __TEXT.__cstring: 0x22b59
-+  __TEXT.__oslogstring: 0x3787b
-+  __TEXT.__unwind_info: 0xca80
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_superrefs: 0xb8
-   __DATA_CONST.__objc_arraydata: 0x3a8
-   __DATA_CONST.__got: 0xdd0
--  __AUTH_CONST.__const: 0x116c8
-+  __AUTH_CONST.__const: 0x116f0
-   __AUTH_CONST.__cfstring: 0x5da0
-   __AUTH_CONST.__objc_const: 0x30f0
-   __AUTH_CONST.__weak_auth_got: 0x38
-   __AUTH_CONST.__objc_intobj: 0x5e8
-   __AUTH_CONST.__objc_arrayobj: 0x510
--  __AUTH_CONST.__auth_got: 0x1bb0
-+  __AUTH_CONST.__auth_got: 0x1bb8
-   __AUTH.__objc_data: 0x6e0
-   __AUTH.__data: 0x28
-   __DATA.__objc_ivar: 0x204
-
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-   - /System/Library/Frameworks/Security.framework/Security
 +  - /System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
-   - /System/Library/PrivateFrameworks/AudioSession.framework/AudioSession
-   - /System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore
-   - /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 9927
--  Symbols:   16836
+-  Symbols:   16306
 -  CStrings:  7335
 +  Functions: 9932
-+  Symbols:   16843
++  Symbols:   16313
 +  CStrings:  7338
- 
 Symbols:
 + GCC_except_table10001
 + GCC_except_table10003

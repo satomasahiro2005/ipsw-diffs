@@ -2,51 +2,37 @@
 
 > `/usr/libexec/jetsam_priority`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xafbc` | `0xb404` | **`+0x448`** |
+| `__TEXT.__gcc_except_tab` | `0xcc4` | `0xd20` | **`+0x5c`** |
+| `__TEXT.__auth_stubs` | `0x5d0` | `0x610` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x1320` | `0x135f` | **`+0x3f`** |
+| `__DATA_CONST.__auth_got` | `0x2f8` | `0x318` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0xe0` | `0xf8` | **`+0x18`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
 - `__TEXT.__init_offsets`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_selrefs`
+
+### Other Changes
 
 ```diff
 
 -10848.0.9.0.0
--  __TEXT.__text: 0xafbc
--  __TEXT.__auth_stubs: 0x5d0
 +10848.0.13.0.0
-+  __TEXT.__text: 0xb404
-+  __TEXT.__auth_stubs: 0x610
-   __TEXT.__objc_stubs: 0x1e0
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__const: 0x89
--  __TEXT.__gcc_except_tab: 0xcc4
--  __TEXT.__cstring: 0x1320
-+  __TEXT.__gcc_except_tab: 0xd20
-+  __TEXT.__cstring: 0x135f
-   __TEXT.__objc_methname: 0x14a
-   __TEXT.__unwind_info: 0x2e0
-   __DATA_CONST.__const: 0x178
-   __DATA_CONST.__cfstring: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x2f8
--  __DATA_CONST.__got: 0xe0
-+  __DATA_CONST.__auth_got: 0x318
-+  __DATA_CONST.__got: 0xf8
-   __DATA_CONST.__auth_ptr: 0x8
-   __DATA.__objc_selrefs: 0x78
-   __DATA.__data: 0x50
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 104
 -  Symbols:   128
 -  CStrings:  190
 +  Symbols:   135
 +  CStrings:  196
- 
 Symbols:
 + _XPC_COALITION_INFO_KEY_BUNDLE_IDENTIFIER
 + _XPC_COALITION_INFO_KEY_NAME

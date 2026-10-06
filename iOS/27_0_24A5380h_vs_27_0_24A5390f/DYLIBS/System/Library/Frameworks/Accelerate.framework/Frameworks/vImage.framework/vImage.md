@@ -2,45 +2,27 @@
 
 > `/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__const`
-- `__DATA.__data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x28a850` | `0x292ee4` | **`+0x8694`** |
+| `__TEXT.__eh_frame` | `0x1a50` | `0x1ed8` | **`+0x488`** |
+| `__AUTH_CONST.__const` | `0xbd88` | `0xbf88` | **`+0x200`** |
+| `__TEXT.__unwind_info` | `0x22f0` | `0x2430` | **`+0x140`** |
+| `__TEXT.__cstring` | `0x6ac7` | `0x6acb` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -650.0.0.0.0
--  __TEXT.__text: 0x28a850
 +650.0.1.0.0
-+  __TEXT.__text: 0x292ee4
-   __TEXT.__delay_stubs: 0x780
-   __TEXT.__delay_helper: 0x5a4
-   __TEXT.__const: 0x99ef0
--  __TEXT.__cstring: 0x6ac7
--  __TEXT.__unwind_info: 0x22f0
--  __TEXT.__eh_frame: 0x1a50
-+  __TEXT.__cstring: 0x6acb
-+  __TEXT.__unwind_info: 0x2430
-+  __TEXT.__eh_frame: 0x1ed8
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x2f20
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xbd88
-+  __AUTH_CONST.__const: 0xbf88
-   __AUTH_CONST.__auth_got: 0x328
-   __DATA.__data: 0x50
-   __DATA.__common: 0x8
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libcompression.dylib
 -  Functions: 3334
 -  Symbols:   4266
 +  Functions: 3409
 +  Symbols:   4342
-   CStrings:  404
- 
 Symbols:
 + _rpad_axis_fill
 + _rpad_axis_max_taps

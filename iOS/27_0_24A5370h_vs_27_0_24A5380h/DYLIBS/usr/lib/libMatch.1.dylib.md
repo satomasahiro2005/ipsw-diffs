@@ -2,17 +2,16 @@
 
 > `/usr/lib/libMatch.1.dylib`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x682c
-+  __TEXT.__text: 0x6868
-   __TEXT.__const: 0x10
-   __TEXT.__cstring: 0x4f4
-   __TEXT.__unwind_info: 0x158
-Sections:
-~ __TEXT.__unwind_info : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x682c` | `0x6868` | **`+0x3c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _matchOptimize : 3420 -> 3488
 ~ _tokenize : 1040 -> 1032
-
 ```

@@ -2,14 +2,15 @@
 
 > `/System/Library/Health/FeedItemPlugins/Safety.healthplugin/Safety`
 
-```diff
+### Section Size Changes
 
- 7027.0.72.2.7
--  __TEXT.__text: 0xb379c
-+  __TEXT.__text: 0xb37a0
-   __TEXT.__objc_methlist: 0x904
-   __TEXT.__const: 0x71e4
-   __TEXT.__constg_swiftt: 0x3218
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb379c` | `0xb37a0` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_22e42d740 -> sub_22ecd2740 : 804 -> 796
 ~ sub_22e42da64 -> sub_22ecd2a5c : 388 -> 392

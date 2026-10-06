@@ -2,94 +2,46 @@
 
 > `/System/Library/SubFrameworks/ShaderGraph.framework/ShaderGraph`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e41c4` | `0x1e82bc` | **`+0x40f8`** |
+| `__AUTH_CONST.__objc_const` | `0x8530` | `0x69c8` | **`-0x1b68`** |
+| `__AUTH.__objc_data` | `0x5c0` | `0x12e8` | **`+0xd28`** |
+| `__DATA_DIRTY.__objc_data` | `0xba0` | `—` | **`-0xba0`** |
+| `__TEXT.__objc_methlist` | `0x14c0` | `0xf30` | **`-0x590`** |
+| `__DATA_CONST.__objc_selrefs` | `0xbd8` | `0x808` | **`-0x3d0`** |
+| `__TEXT.__constg_swiftt` | `0x3900` | `0x3a1c` | **`+0x11c`** |
+| `__AUTH_CONST.__const` | `0x19228` | `0x19330` | **`+0x108`** |
+| `__TEXT.__unwind_info` | `0x5520` | `0x5610` | **`+0xf0`** |
+| `__TEXT.__cstring` | `0x1c64d` | `0x1c56d` | **`-0xe0`** |
+| `__TEXT.__eh_frame` | `0x8624` | `0x86ec` | **`+0xc8`** |
+| `__TEXT.__const` | `0x127c0` | `0x12850` | **`+0x90`** |
+| `__AUTH.__data` | `0x960` | `0x9b0` | **`+0x50`** |
+| `__TEXT.__oslogstring` | `0x13b9` | `0x13f9` | **`+0x40`** |
+| `__DATA.__data` | `0x38a0` | `0x3870` | **`-0x30`** |
+| `__TEXT.__swift5_reflstr` | `0x34c1` | `0x34f1` | **`+0x30`** |
+| `__TEXT.__swift5_typeref` | `0x3ddc` | `0x3df2` | **`+0x16`** |
+| `__AUTH_CONST.__auth_got` | `0x11b8` | `0x11c8` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0xa08` | `0xa18` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x160` | `0x168` | **`+0x8`** |
+| `__TEXT.__swift5_fieldmd` | `0x4adc` | `0x4ad4` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0x4b4` | `0x4b8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1e41c4
--  __TEXT.__objc_methlist: 0x14c0
--  __TEXT.__const: 0x127c0
--  __TEXT.__cstring: 0x1c64d
--  __TEXT.__oslogstring: 0x13b9
--  __TEXT.__swift5_typeref: 0x3ddc
--  __TEXT.__swift5_reflstr: 0x34c1
-+  __TEXT.__text: 0x1e82bc
-+  __TEXT.__objc_methlist: 0xf30
-+  __TEXT.__const: 0x12850
-+  __TEXT.__cstring: 0x1c56d
-+  __TEXT.__oslogstring: 0x13f9
-+  __TEXT.__swift5_typeref: 0x3df2
-+  __TEXT.__swift5_reflstr: 0x34f1
-   __TEXT.__swift5_assocty: 0x6e8
--  __TEXT.__constg_swiftt: 0x3900
-+  __TEXT.__constg_swiftt: 0x3a1c
-   __TEXT.__swift5_builtin: 0x30c
-   __TEXT.__swift5_mpenum: 0x11c
--  __TEXT.__swift5_fieldmd: 0x4adc
-+  __TEXT.__swift5_fieldmd: 0x4ad4
-   __TEXT.__swift5_proto: 0x81c
--  __TEXT.__swift5_types: 0x4b4
-+  __TEXT.__swift5_types: 0x4b8
-   __TEXT.__swift5_capture: 0x960
-   __TEXT.__swift5_protos: 0x44
--  __TEXT.__unwind_info: 0x5520
--  __TEXT.__eh_frame: 0x8624
-+  __TEXT.__unwind_info: 0x5610
-+  __TEXT.__eh_frame: 0x86ec
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xa08
--  __DATA_CONST.__objc_classlist: 0x160
-+  __DATA_CONST.__const: 0xa18
-+  __DATA_CONST.__objc_classlist: 0x168
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x98
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xbd8
-+  __DATA_CONST.__objc_selrefs: 0x808
-   __DATA_CONST.__objc_protorefs: 0x50
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x19228
--  __AUTH_CONST.__objc_const: 0x8530
--  __AUTH_CONST.__auth_got: 0x11b8
--  __AUTH.__objc_data: 0x5c0
--  __AUTH.__data: 0x960
--  __DATA.__data: 0x38a0
-+  __AUTH_CONST.__const: 0x19330
-+  __AUTH_CONST.__objc_const: 0x69c8
-+  __AUTH_CONST.__auth_got: 0x11c8
-+  __AUTH.__objc_data: 0x12e8
-+  __AUTH.__data: 0x9b0
-+  __DATA.__data: 0x3870
-   __DATA.__bss: 0xefc0
-   __DATA.__common: 0x2008
--  __DATA_DIRTY.__objc_data: 0xba0
-   __DATA_DIRTY.__data: 0x17b8
-   __DATA_DIRTY.__common: 0x38
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+-159.0.2.0.0
++159.0.4.0.0
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8143
--  Symbols:   23808
+-  Symbols:   18112
 -  CStrings:  3071
 +  Functions: 8244
-+  Symbols:   23991
++  Symbols:   18248
 +  CStrings:  3064
- 
-Sections:
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_DIRTY.__data : content changed
 Symbols:
 + _$s11ShaderGraph07_Proto_aB14NodeDefinitionV7nodeDefAcA0dG0V_tKcfCTv0_r
 + _$s11ShaderGraph0B8CompilerV7compile3for7options8debugLogSo10MTLLibrary_pSo9MTLDevice_p_AA26MaterialCompilationOptionsVAA0b5DebugH0CtKF
@@ -286,8 +238,6 @@ Symbols:
 + __PROTOCOLS_SGREMaterialCompilationOptions
 + ___swift_memcpy50_8
 + ___swift_project_boxed_opaque_existential_0
-+ _objc_msgSend$currentThread
-+ _objc_msgSend$threadDictionary
 + _symbolic _____ 11ShaderGraph37SGREMutableMaterialCompilationOptionsC
 + _symbolic _____Sg 11ShaderGraphAAC11NodeLibraryC7VersionV
 + _symbolic _____ySs_S2sSgA4BtGSg 17_StringProcessing5RegexV
@@ -389,5 +339,4 @@ CStrings:
 - "ND_INTERNAL_realitykit_light_spill_diffuse_for_pfrm_content"
 - "StitchingLibrary"
 - "worldPositionOffset"
-
 ```

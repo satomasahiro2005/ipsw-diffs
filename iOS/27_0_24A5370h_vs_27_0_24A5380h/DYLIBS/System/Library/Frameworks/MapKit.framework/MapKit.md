@@ -2,121 +2,43 @@
 
 > `/System/Library/Frameworks/MapKit.framework/MapKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x9440` | `0x87c0` | **`-0xc80`** |
+| `__DATA_DIRTY.__objc_data` | `0x1978` | `0x25f8` | **`+0xc80`** |
+| `__TEXT.__text` | `0x28e56c` | `0x28ebbc` | **`+0x650`** |
+| `__DATA_CONST.__got` | `0x23d8` | `0x2488` | **`+0xb0`** |
+| `__DATA_DIRTY.__bss` | `0x50` | `0xd8` | **`+0x88`** |
+| `__AUTH_CONST.__objc_const` | `0x45bd8` | `0x45c38` | **`+0x60`** |
+| `__TEXT.__objc_methlist` | `0x26a7c` | `0x26acc` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x14a40` | `0x14a80` | **`+0x40`** |
+| `__TEXT.__oslogstring` | `0x7d85` | `0x7dc0` | **`+0x3b`** |
+| `__TEXT.__swift5_typeref` | `0x160c` | `0x15f4` | **`-0x18`** |
+| `__TEXT.__unwind_info` | `0xa7b8` | `0xa7a8` | **`-0x10`** |
+| `__DATA.__bss` | `0x4710` | `0x4718` | **`+0x8`** |
+| `__DATA.__data` | `0x5608` | `0x5600` | **`-0x8`** |
+| `__DATA.__objc_ivar` | `0x3208` | `0x3210` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x61b4` | `0x61bc` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x28e56c
--  __TEXT.__objc_methlist: 0x26a7c
-+  __TEXT.__text: 0x28ebbc
-+  __TEXT.__objc_methlist: 0x26acc
-   __TEXT.__const: 0x6910
-   __TEXT.__dlopen_cstrs: 0xbc
-   __TEXT.__cstring: 0x17a8c
--  __TEXT.__swift5_typeref: 0x160c
-+  __TEXT.__swift5_typeref: 0x15f4
-   __TEXT.__swift5_reflstr: 0x1460
-   __TEXT.__swift5_assocty: 0x1e8
-   __TEXT.__swift5_fieldmd: 0x2124
+-2550.30.6.5.2
++2552.30.6.12.2
 
-   __TEXT.__swift5_protos: 0x70
-   __TEXT.__swift5_proto: 0x208
-   __TEXT.__swift5_types: 0x2d0
--  __TEXT.__oslogstring: 0x7d85
-+  __TEXT.__oslogstring: 0x7dc0
-   __TEXT.__swift5_capture: 0x3a4
-   __TEXT.__swift_as_entry: 0x13c
-   __TEXT.__swift_as_ret: 0x134
-   __TEXT.__swift_as_cont: 0x1cc
--  __TEXT.__gcc_except_tab: 0x61b4
-+  __TEXT.__gcc_except_tab: 0x61bc
-   __TEXT.__ustring: 0x19c
--  __TEXT.__unwind_info: 0xa7b8
-+  __TEXT.__unwind_info: 0xa7a8
-   __TEXT.__eh_frame: 0x241c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_protolist: 0x660
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x14a40
-+  __DATA_CONST.__objc_selrefs: 0x14a80
-   __DATA_CONST.__objc_protorefs: 0xe8
-   __DATA_CONST.__objc_superrefs: 0xd98
-   __DATA_CONST.__objc_arraydata: 0x6b0
--  __DATA_CONST.__got: 0x23d8
-+  __DATA_CONST.__got: 0x2488
-   __AUTH_CONST.__const: 0x6858
-   __AUTH_CONST.__cfstring: 0x1bb00
--  __AUTH_CONST.__objc_const: 0x45bd8
-+  __AUTH_CONST.__objc_const: 0x45c38
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_doubleobj: 0x220
-   __AUTH_CONST.__objc_intobj: 0xf18
-
-   __AUTH_CONST.__objc_arrayobj: 0x480
-   __AUTH_CONST.__objc_floatobj: 0x70
-   __AUTH_CONST.__auth_got: 0x2080
--  __AUTH.__objc_data: 0x9440
-+  __AUTH.__objc_data: 0x87c0
-   __AUTH.__data: 0x2d48
--  __DATA.__objc_ivar: 0x3208
--  __DATA.__data: 0x5608
--  __DATA.__bss: 0x4710
-+  __DATA.__objc_ivar: 0x3210
-+  __DATA.__data: 0x5600
-+  __DATA.__bss: 0x4718
-   __DATA.__common: 0x70
--  __DATA_DIRTY.__objc_data: 0x1978
-+  __DATA_DIRTY.__objc_data: 0x25f8
-   __DATA_DIRTY.__data: 0x18
--  __DATA_DIRTY.__bss: 0x50
-+  __DATA_DIRTY.__bss: 0xd8
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15035
--  Symbols:   47035
--  CStrings:  8125
+-  Symbols:   25270
+-  CStrings:  4597
 +  Functions: 15039
-+  Symbols:   47054
-+  CStrings:  8126
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   25273
++  CStrings:  4598
 Symbols:
 + +[MKMapCamera cameraLookingAtMapItem:forViewSize:allowPitch:viewInsets:]
 + -[MKPlaceCollectionImageDownloadOperation cacheDownload]
@@ -333,14 +255,6 @@ Symbols:
 + _OBJC_IVAR_$_MKPlaceCollectionImageGradientOperation._downloadOperation
 + ___block_descriptor_96_e8_32s40s48s56s64bs72w80w88w_e5_v8?0lw72l8s32l8s40l8s48l8s56l8s64l8w80l8w88l8
 + ___swift_closure_destructor.34Tm
-+ _objc_msgSend$cacheDownload
-+ _objc_msgSend$downloadOperation
-+ _objc_msgSend$downloadedImage
-+ _objc_msgSend$initWithUrl:desiredSize:cacheDownload:downloadCache:cacheId:
-+ _objc_msgSend$initWithUrl:size:contentSizeCategory:name:downloadOperation:gradientCache:isRTL:screenScale:cacheId:
-+ _objc_msgSend$setDownloadedImage:
-+ _objc_msgSend$setObject:forKey:cost:
-+ _objc_msgSend$setTotalCostLimit:
 - -[MKPlaceCollectionImageDownloadOperation initWithUrl:downloadCache:cacheId:]
 - -[MKPlaceCollectionImageGradientOperation downloadCache]
 - -[MKPlaceCollectionImageGradientOperation initWithUrl:size:contentSizeCategory:name:downloadCache:gradientCache:isRTL:screenScale:cacheId:]
@@ -552,10 +466,7 @@ Symbols:
 - _get_type_metadata 15Synchronization5MutexVy6MapKit21DefaultDrivingSessionC13InternalState33_F9CB34E8265588051844F50E7C4C41DALLVG noncopyable
 - _get_type_metadata 15Synchronization5MutexVy6MapKit31DefaultNavigationServiceMonitorC13InternalState33_FDDD2FF941E079B851936CE5A69C68D8LLVG noncopyable
 - _get_type_metadata 15Synchronization5MutexVyScTyyts5NeverOGSgG noncopyable
-- _objc_msgSend$initWithUrl:downloadCache:cacheId:
-- _objc_msgSend$initWithUrl:size:contentSizeCategory:name:downloadCache:gradientCache:isRTL:screenScale:cacheId:
 - _swift_runtimeSupportsNoncopyableTypes
 CStrings:
 + "Gradient operation cancelled for \nURL: %@. \nCollection: %@"
-
 ```

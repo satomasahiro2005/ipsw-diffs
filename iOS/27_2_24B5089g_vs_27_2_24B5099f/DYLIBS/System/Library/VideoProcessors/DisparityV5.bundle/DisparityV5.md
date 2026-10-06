@@ -2,54 +2,33 @@
 
 > `/System/Library/VideoProcessors/DisparityV5.bundle/DisparityV5`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x299e0` | `0x24f90` | **`-0x4a50`** |
+| `__TEXT.__cstring` | `0x6934` | `0x59e5` | **`-0xf4f`** |
+| `__TEXT.__oslogstring` | `0xf99` | `0xb6` | **`-0xee3`** |
+| `__AUTH_CONST.__cfstring` | `0x1a20` | `0x1920` | **`-0x100`** |
+| `__DATA_DIRTY.__common` | `0x50` | `—` | **`-0x50`** |
+| `__TEXT.__unwind_info` | `0x5b8` | `0x570` | **`-0x48`** |
+| `__TEXT.__const` | `0xed0` | `0xe90` | **`-0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x358` | `0x330` | **`-0x28`** |
+| `__DATA.__common` | `0x10` | `—` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -764.40.5.0.0
--  __TEXT.__text: 0x29598
 +764.40.7.0.0
-+  __TEXT.__text: 0x24a94
-   __TEXT.__objc_methlist: 0x116c
--  __TEXT.__cstring: 0x6934
--  __TEXT.__const: 0xed0
--  __TEXT.__oslogstring: 0xf99
--  __TEXT.__unwind_info: 0xbb0
-+  __TEXT.__cstring: 0x59e5
-+  __TEXT.__const: 0xe90
-+  __TEXT.__oslogstring: 0xb6
-+  __TEXT.__unwind_info: 0xaf8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_arraydata: 0x20
-   __DATA_CONST.__got: 0x1c0
-   __AUTH_CONST.__const: 0x320
--  __AUTH_CONST.__cfstring: 0x1a20
-+  __AUTH_CONST.__cfstring: 0x1920
-   __AUTH_CONST.__objc_const: 0x2898
-   __AUTH_CONST.__objc_intobj: 0x30
-   __AUTH_CONST.__objc_arrayobj: 0x48
--  __AUTH_CONST.__auth_got: 0x358
-+  __AUTH_CONST.__auth_got: 0x330
-   __DATA.__objc_ivar: 0x32c
-   __DATA.__data: 0x120
--  __DATA.__common: 0x10
-   __DATA_DIRTY.__objc_data: 0x3c0
--  __DATA_DIRTY.__common: 0x50
-   __DATA_DIRTY.__bss: 0x20
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 893
 -  Symbols:   174
 -  CStrings:  867
 +  Functions: 854
 +  Symbols:   169
 +  CStrings:  718
- 
 Symbols:
 + _FigSignalErrorAtGM
 - _FigSignalErrorAt3

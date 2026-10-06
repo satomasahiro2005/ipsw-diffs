@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/PoirotUDFs.framework/PoirotUDFs`
 
-```diff
+### Section Size Changes
 
- 3600.35.1.0.0
--  __TEXT.__text: 0x28714
-+  __TEXT.__text: 0x28730
-   __TEXT.__const: 0x276c
-   __TEXT.__cstring: 0xa15
-   __TEXT.__swift5_typeref: 0x9c2
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x28714` | `0x28730` | **`+0x1c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_200b88548 -> sub_20122f548 : 480 -> 484
 ~ sub_200b88728 -> sub_20122f72c : 4572 -> 4568

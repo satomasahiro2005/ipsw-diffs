@@ -2,69 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/SonicAudioUnits.framework/SonicAudioUnits`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__const` | `0xc38` | `0x1138` | **`+0x500`** |
+| `__TEXT.__text` | `0x444a0` | `0x4468c` | **`+0x1ec`** |
+| `__TEXT.__const` | `0x3c50` | `0x3d20` | **`+0xd0`** |
+| `__AUTH_CONST.__const` | `0x3450` | `0x34d0` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x16f0` | `0x1718` | **`+0x28`** |
+| `__TEXT.__gcc_except_tab` | `0x1cf0` | `0x1cfc` | **`+0xc`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
 -26100.26.21.301.0
--  __TEXT.__text: 0x444a0 sha256:d0acaa11b2596f7f621afcada7526f3baa5b23a56d6bebcfa6e567436fe483d6
--  __TEXT.__objc_methlist: 0x2c sha256:621c339aab0c6a5f696328f60e8aa998b52f18307d5c796398da8289ee2c1147
--  __TEXT.__const: 0x3c50 sha256:cc0d3d7cb0df5a7a18c4af69b9c6ded4ce60e99ba8ec0933141e0e854010f9e2
--  __TEXT.__gcc_except_tab: 0x1cf0 sha256:9c78c6e7ad6f045ed9d9ed1e216cb192cba8918efab688a3df925e7ec31c1e9b
 +26100.26.24.401.0
-+  __TEXT.__text: 0x4468c sha256:4dd63dcfca4cbd6645c31d004bdaea5cbdaaac5df6d1bb9a011355846bc6f73c
-+  __TEXT.__objc_methlist: 0x2c sha256:2f470b3e2b53fb36d99da123234902218b0ace4639c8a02023ed76edebd4c041
-+  __TEXT.__const: 0x3d20 sha256:6389a40d44ae87c9f476e3c775ef3fa760fad3c8015033757621a3e569d35b78
-+  __TEXT.__gcc_except_tab: 0x1cfc sha256:c65fe51dd6d4ba40cae42c469fce23eda8451697d87778f45850fec12d24771f
-   __TEXT.__oslogstring: 0x5d4 sha256:a7fe75db79579d663549a76666ebf4dbbaba7f79201f82957dac1a4b06e48a25
--  __TEXT.__cstring: 0xab36 sha256:ae64882e86fff3298a64590a829b978091438cf235b8c99eceb05f306fed3800
--  __TEXT.__unwind_info: 0x16f0 sha256:62f8f259a5419ca7bb7e1ce1be17f9f1b93ac5ae24a89f5529f22621643ec4de
-+  __TEXT.__cstring: 0xab36 sha256:6da99fc993d4784ea70443648bd6d53370a4192c457040515d35337f88c40d30
-+  __TEXT.__unwind_info: 0x1718 sha256:7742a7602d61fcf5609101f0509b65079fbd237c3fd36cad21fc7acafe0d01ac
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xc38 sha256:df37b9b371a4533ddcdc5ac5c743e50939a726e6ef79cdf655719b8beba065b3
--  __DATA_CONST.__objc_classlist: 0x8 sha256:c1ba3aab768176d2b62df3fe5b3ff4283cfbe326d5ae7b6466e12840c3a27c7a
-+  __DATA_CONST.__const: 0x1138 sha256:2fa991e95243bfc11a1b4869ce414160cff8afd1f4eb892a19ca861ad5e4e413
-+  __DATA_CONST.__objc_classlist: 0x8 sha256:f02ddceda4f6992442320d2124f46a3ce584f8b114dc823cc1baf05f9724bbf8
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x18 sha256:eaf5f7d5eb584a82449bd35fd49b7b12648af57f4c7c22d75b255b943418eb4b
--  __DATA_CONST.__objc_selrefs: 0x18 sha256:3a02a73d7f4417bb6bb0582b670cc57fed50b85fa7226a19825d977c8aa4cc29
--  __DATA_CONST.__objc_superrefs: 0x8 sha256:4ee7d19b7148763785aaad2ec95ae5fcc882105a8066f1e814d930991d34f645
--  __DATA_CONST.__got: 0x110 sha256:41dd5703749121ca558d7090ee6527edd23ff9ea54d562712cf94fde82269be0
--  __AUTH_CONST.__const: 0x3450 sha256:6479d7d637c8df5e522c9bcd034fa646cdcb8808656f9593ae89b0e107f225fd
--  __AUTH_CONST.__cfstring: 0x820 sha256:2297a1a9e293ed181f7d2d9579581da67e670049c595100aa45e4f980e5a797c
--  __AUTH_CONST.__objc_const: 0xb8 sha256:ac87c71381817474f8def721e7eed1352f15da91d0112d050511a45f74ed78fe
--  __AUTH_CONST.__weak_auth_got: 0x28 sha256:06f75a841abae5eca7ade5d9cb92b3271180165e3e4647a62b98c3baf62d8088
-+  __DATA_CONST.__weak_got: 0x18 sha256:82e8f2fd2b25c25ef297adb6a315573ab41ce9a8991498b0105c8923dbff9fdd
-+  __DATA_CONST.__objc_selrefs: 0x18 sha256:4f63316f3440c937bfab84e5268d59d39e6171842f14bd94a8176d5a20dd8365
-+  __DATA_CONST.__objc_superrefs: 0x8 sha256:a0cff38d819efcf677fc162c956c22626f729363445a319f2aa59767949c5c00
-+  __DATA_CONST.__got: 0x110 sha256:f17adbe4621d2f67fead473c0facaa7743da37c070ab773bdc9e6f2082671e32
-+  __AUTH_CONST.__const: 0x34d0 sha256:d5351ce453f03bb076542c3d9d227ac349fc3d1fcd087c46b0eb9a07001e6cf9
-+  __AUTH_CONST.__cfstring: 0x820 sha256:969feb8e2b62aa8af79adfdd5d02d691c551dba9a87830a974cd6d4e451bb3b5
-+  __AUTH_CONST.__objc_const: 0xb8 sha256:8df8625a6f82fde9fe8e4db48c5c015672ec0b5750b6b207406d547b9a2884c9
-+  __AUTH_CONST.__weak_auth_got: 0x28 sha256:483f0dd4961b37e2db05c32eb5f33abd0ec47adcbfdaf48dbe78ec210ec05319
-   __AUTH_CONST.__auth_got: 0x4c8 sha256:e28b98a94e0077340a3aece749f2d400c3f06890cec9447f4c2567bd1e7a5839
--  __AUTH.__objc_data: 0x50 sha256:a717b999c8f09ec104a169f75f25ea69cc9355b7b518849448eea120cc60785d
--  __AUTH.__data: 0x8 sha256:ab5fd6c6eb1f71478fcdc7ec8d981b2997eec32b73a7741a2a21ea45647e559c
-+  __AUTH.__objc_data: 0x50 sha256:fbb94e6a6684d87309db89384becab54f8193b21ba922192e0993da4804a88ca
-+  __AUTH.__data: 0x8 sha256:d902582ae23751fce87b56eb5b98ed4864aa0cb4db95fcdd1c50beb5955ca9f4
-   __DATA.__objc_ivar: 0x4 sha256:dc765660b06ee03dd16fd7ca5b957e8c805161ac2c4af28c5a100ab2ab432ca1
-   __DATA.__data: 0x4cc sha256:b860011e89755a3ec88e64af5505f89d560eb0a37123bcb465e50ed6bb2cd1b4
-   __DATA.__bss: 0x970 sha256:7e8fd724013868d6228184629c10df6163e6b259de1777fdfe3d8faf806cee79
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  UUID: 1F17AA16-BCA9-31F1-83C3-729F75733870
 -  Functions: 1524
--  Symbols:   4018
-+  UUID: E1565184-C7EE-39E2-BED7-9225868CB1CC
+-  Symbols:   2104
 +  Functions: 1535
-+  Symbols:   4047
-   CStrings:  585
- 
++  Symbols:   2123
 Symbols:
 + GCC_except_table42
 + GCC_except_table49
@@ -134,7 +97,6 @@ Symbols:
 + __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEE15__init_buf_ptrsB9fqe220106Ev
 + __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B9fqe220106Ej
 + __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSC_EEESD_SG_EUlvE0_EEvbT_T0_
-+ __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSC_EEESD_SG_EUlvE0_EEvbT_T0_.cold.1
 + __ZNSt3__116__insertion_sortB9fqe220106INS_15_RangeAlgPolicyERPDoFbRK23AudioUnitParameterEventS4_EPS2_EEvT1_S9_T0_
 + __ZNSt3__116__pad_and_outputB9fqe220106IcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_
 + __ZNSt3__119__allocate_at_leastB9fqe220106INS_9allocatorI18AudioChannelLayoutEENS_16allocator_traitsIS3_EEEENS_19__allocation_resultINT0_7pointerENS7_9size_typeEEERT_m
@@ -320,7 +282,6 @@ Symbols:
 - __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEE15__init_buf_ptrsB9fqe220100Ev
 - __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B9fqe220100Ej
 - __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSC_EEESD_SG_EUlvE0_EEvbT_T0_
-- __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSC_EEESD_SG_EUlvE0_EEvbT_T0_.cold.1
 - __ZNSt3__116__insertion_sortB9fqe220100INS_15_RangeAlgPolicyERPDoFbRK23AudioUnitParameterEventS4_EPS2_EEvT1_S9_T0_
 - __ZNSt3__116__pad_and_outputB9fqe220100IcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_
 - __ZNSt3__119__allocate_at_leastB9fqe220100INS_9allocatorI18AudioChannelLayoutEENS_16allocator_traitsIS3_EEEENS_19__allocation_resultINT0_7pointerENS7_9size_typeEEERT_m
@@ -470,5 +431,4 @@ CStrings:
 - "/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/SonicAudioUnits/Partner/RemixFXAudioUnit/Source/AURemixExtension/DSP/LiveRemixer/CLiveRemixerFX_FreezeReverb.cpp:186"
 - "/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/SonicAudioUnits/Partner/RemixFXAudioUnit/Source/AURemixExtension/DSP/LiveRemixer/CLiveRemixerFX_Repeater.cpp:312"
 - "/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/SonicAudioUnits/Partner/RemixFXAudioUnit/Source/AURemixExtension/DSP/LiveRemixer/CLiveRemixerFX_Repeater.cpp:66"
-
 ```

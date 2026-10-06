@@ -2,90 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/StocksCore.framework/StocksCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x256844` | `0x257afc` | **`+0x12b8`** |
+| `__TEXT.__oslogstring` | `0x3405` | `0x3665` | **`+0x260`** |
+| `__TEXT.__gcc_except_tab` | `0x2b8` | `0x334` | **`+0x7c`** |
+| `__TEXT.__cstring` | `0xffc0` | `0x10010` | **`+0x50`** |
+| `__AUTH_CONST.__cfstring` | `0x1580` | `0x15c0` | **`+0x40`** |
+| `__DATA.__data` | `0x43d0` | `0x4410` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x95f8` | `0x9630` | **`+0x38`** |
+| `__TEXT.__objc_methlist` | `0x6c04` | `0x6c2c` | **`+0x28`** |
+| `__DATA_DIRTY.__data` | `0xb5e0` | `0xb5c0` | **`-0x20`** |
+| `__AUTH_CONST.__objc_const` | `0x14260` | `0x14278` | **`+0x18`** |
+| `__DATA.__common` | `—` | `0x18` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x12c0` | `0x12d8` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3738` | `0x3750` | **`+0x18`** |
+| `__DATA_DIRTY.__common` | `0x208` | `0x1f0` | **`-0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x2470` | `0x2478` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2022.0.0.0.0
--  __TEXT.__text: 0x256844
--  __TEXT.__objc_methlist: 0x6c04
 +2028.1.0.0.0
-+  __TEXT.__text: 0x257afc
-+  __TEXT.__objc_methlist: 0x6c2c
-   __TEXT.__const: 0x1d5c0
--  __TEXT.__cstring: 0xffc0
--  __TEXT.__gcc_except_tab: 0x2b8
--  __TEXT.__oslogstring: 0x3405
-+  __TEXT.__cstring: 0x10010
-+  __TEXT.__gcc_except_tab: 0x334
-+  __TEXT.__oslogstring: 0x3665
-   __TEXT.__ustring: 0x28
-   __TEXT.__swift5_typeref: 0x5667
-   __TEXT.__swift5_capture: 0x2344
 
-   __TEXT.__swift_as_entry: 0x294
-   __TEXT.__swift_as_ret: 0x2b4
-   __TEXT.__swift_as_cont: 0x490
--  __TEXT.__unwind_info: 0x95f8
-+  __TEXT.__unwind_info: 0x9630
-   __TEXT.__eh_frame: 0xd094
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x50
-   __DATA_CONST.__objc_protolist: 0x3d0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3738
-+  __DATA_CONST.__objc_selrefs: 0x3750
-   __DATA_CONST.__objc_protorefs: 0x1c8
-   __DATA_CONST.__objc_superrefs: 0x198
-   __DATA_CONST.__objc_arraydata: 0xf58
--  __DATA_CONST.__got: 0x12c0
-+  __DATA_CONST.__got: 0x12d8
-   __AUTH_CONST.__const: 0x17c58
--  __AUTH_CONST.__cfstring: 0x1580
--  __AUTH_CONST.__objc_const: 0x14260
-+  __AUTH_CONST.__cfstring: 0x15c0
-+  __AUTH_CONST.__objc_const: 0x14278
-   __AUTH_CONST.__objc_arrayobj: 0x618
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_intobj: 0x78
--  __AUTH_CONST.__auth_got: 0x2470
-+  __AUTH_CONST.__auth_got: 0x2478
-   __AUTH.__objc_data: 0x240
-   __AUTH.__data: 0x120
-   __DATA.__objc_ivar: 0x320
--  __DATA.__data: 0x43d0
-+  __DATA.__data: 0x4410
-   __DATA.__objc_stublist: 0x60
-   __DATA.__bss: 0x18d40
-+  __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0x2358
--  __DATA_DIRTY.__data: 0xb5e0
-+  __DATA_DIRTY.__data: 0xb5c0
-   __DATA_DIRTY.__bss: 0x17a40
--  __DATA_DIRTY.__common: 0x208
-+  __DATA_DIRTY.__common: 0x1f0
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-
-   - /System/Library/Frameworks/EventKit.framework/EventKit
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
 +  - /System/Library/PrivateFrameworks/AppPrivateData.framework/AppPrivateData
-   - /System/Library/PrivateFrameworks/NewsCore.framework/NewsCore
-   - /System/Library/PrivateFrameworks/NewsTransport.framework/NewsTransport
-   - /System/Library/PrivateFrameworks/OAuth.framework/OAuth
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 13741
--  Symbols:   6336
+-  Symbols:   5583
 -  CStrings:  1884
 +  Functions: 13770
-+  Symbols:   6346
++  Symbols:   5590
 +  CStrings:  1895
- 
 Symbols:
 + +[NSError(SCWAdditions) scw_databaseDecodeErrorWithUnderlyingError:]
 + +[NSError(SCWAdditions) scw_databaseReadErrorWithUnderlyingError:]
@@ -139,16 +90,6 @@ Symbols:
 + ___block_descriptor_80_e8_32s40s48s56bs64r72r_e5_v8?0ls32l8s40l8r64l8r72l8s48l8s56l8
 + ___block_descriptor_88_e8_32s40s48s56s64s72bs80r_e74_v44?0"CKRecordZoneID"8"CKServerChangeToken"16"NSData"24B32"NSError"36ls32l8s40l8s48l8s56l8s64l8r80l8s72l8
 + _objc_autorelease
-+ _objc_msgSend$_loadFromFileURL:error:
-+ _objc_msgSend$_reloadIfNeededFromFileURL:didReload:error:
-+ _objc_msgSend$readWithError:accessor:
-+ _objc_msgSend$readZone:error:accessor:
-+ _objc_msgSend$reloadWithError:accessor:
-+ _objc_msgSend$scw_databaseDecodeErrorWithUnderlyingError:
-+ _objc_msgSend$scw_databaseReadErrorWithUnderlyingError:
-+ _objc_msgSend$scw_isFileNotFoundError
-+ _objc_msgSend$writeWithError:accessor:
-+ _objc_msgSend$writeZone:error:accessor:
 - -[SCWDatabaseJSONStore _loadFromFileURL:]
 - -[SCWDatabaseJSONStore _reloadIfNeededFromFileURL:]
 - -[SCWDatabaseJSONStore readWithAccessor:]
@@ -194,13 +135,6 @@ Symbols:
 - ___block_descriptor_72_e8_32s40s48s56bs64r_e5_v8?0ls32l8s40l8r64l8s48l8s56l8
 - ___block_descriptor_80_e8_32s40s48s56s64s72bs_e74_v44?0"CKRecordZoneID"8"CKServerChangeToken"16"NSData"24B32"NSError"36ls32l8s40l8s48l8s56l8s64l8s72l8
 - ___swift_closure_destructor.20Tm
-- _objc_msgSend$_loadFromFileURL:
-- _objc_msgSend$_reloadIfNeededFromFileURL:
-- _objc_msgSend$readWithAccessor:
-- _objc_msgSend$readZone:withAccessor:
-- _objc_msgSend$reloadWithAccessor:
-- _objc_msgSend$writeWithAccessor:
-- _objc_msgSend$writeZone:withAccessor:
 CStrings:
 + "%p JSON store failed to decode JSON from disk with error: %{public}@"
 + "%p JSON store failed to load from disk with error: %{public}@"

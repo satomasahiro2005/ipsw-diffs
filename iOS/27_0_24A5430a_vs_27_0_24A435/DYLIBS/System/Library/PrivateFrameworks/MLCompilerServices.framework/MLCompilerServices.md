@@ -2,16 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/MLCompilerServices.framework/MLCompilerServices`
 
-```diff
+### Section Size Changes
 
- 3600.11.1.0.0
--  __TEXT.__text: 0x13ab4
-+  __TEXT.__text: 0x13ac8
-   __TEXT.__gcc_except_tab: 0xe00
-   __TEXT.__const: 0x177
-   __TEXT.__cstring: 0x1b8d
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x13ab4` | `0x13ac8` | **`+0x14`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2893850b4 -> sub_28a0cf0b4 : 1072 -> 1076
-~ sub_28938711c -> sub_28a0d1120 : 696 -> 708
-~ sub_289389adc -> sub_28a0d3aec : 184 -> 188
+~ sub_2892590b4 -> sub_289f9c0b4 : 1072 -> 1076
+~ sub_28925b11c -> sub_289f9e120 : 696 -> 708
+~ sub_28925dadc -> sub_289fa0aec : 184 -> 188
 ```

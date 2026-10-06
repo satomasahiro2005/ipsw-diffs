@@ -2,71 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/FitnessWorkoutPlan.framework/FitnessWorkoutPlan`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c8410` | `0x1c7c2c` | **`-0x7e4`** |
+| `__TEXT.__eh_frame` | `0x7928` | `0x79d0` | **`+0xa8`** |
+| `__TEXT.__swift5_fieldmd` | `0x5cc8` | `0x5c8c` | **`-0x3c`** |
+| `__AUTH_CONST.__auth_got` | `0x18d8` | `0x18b0` | **`-0x28`** |
+| `__DATA_CONST.__got` | `0xcc0` | `0xc98` | **`-0x28`** |
+| `__TEXT.__unwind_info` | `0x5f78` | `0x5fa0` | **`+0x28`** |
+| `__TEXT.__const` | `0x1e414` | `0x1e424` | **`+0x10`** |
+| `__TEXT.__cstring` | `0x1cae` | `0x1cbe` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x4004` | `0x3ff4` | **`-0x10`** |
+| `__AUTH.__data` | `0x1598` | `0x1590` | **`-0x8`** |
+| `__DATA.__data` | `0x75e8` | `0x75e0` | **`-0x8`** |
+| `__DATA_DIRTY.__data` | `0x17e8` | `0x17e0` | **`-0x8`** |
+| `__TEXT.__swift5_typeref` | `0x13c20` | `0x13c18` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2027.1.54.0.0
--  __TEXT.__text: 0x1b9398
--  __TEXT.__const: 0x1e414
--  __TEXT.__swift5_typeref: 0x13c20
 +2027.1.63.0.0
-+  __TEXT.__text: 0x1b8bc0
-+  __TEXT.__const: 0x1e424
-+  __TEXT.__swift5_typeref: 0x13c18
-   __TEXT.__swift5_capture: 0x22b0
-   __TEXT.__constg_swiftt: 0x696c
--  __TEXT.__swift5_reflstr: 0x4004
-+  __TEXT.__swift5_reflstr: 0x3ff4
-   __TEXT.__swift5_assocty: 0xa38
--  __TEXT.__swift5_fieldmd: 0x5cc8
-+  __TEXT.__swift5_fieldmd: 0x5c8c
-   __TEXT.__swift5_builtin: 0x50
--  __TEXT.__cstring: 0x1cae
-+  __TEXT.__cstring: 0x1cbe
-   __TEXT.__swift5_proto: 0x1850
-   __TEXT.__swift5_types: 0x718
-   __TEXT.__oslogstring: 0x1a3
 
-   __TEXT.__swift_as_ret: 0x1b4
-   __TEXT.__swift_as_cont: 0x270
-   __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__unwind_info: 0x7c38
--  __TEXT.__eh_frame: 0x7940
-+  __TEXT.__unwind_info: 0x7c60
-+  __TEXT.__eh_frame: 0x79e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x68
--  __DATA_CONST.__got: 0xcc0
-+  __DATA_CONST.__got: 0xc98
-   __AUTH_CONST.__const: 0xdb68
-   __AUTH_CONST.__objc_const: 0x240
--  __AUTH_CONST.__auth_got: 0x18d8
--  __AUTH.__data: 0x1598
--  __DATA.__data: 0x75e8
-+  __AUTH_CONST.__auth_got: 0x18b0
-+  __AUTH.__data: 0x1590
-+  __DATA.__data: 0x75e0
-   __DATA.__common: 0x90
--  __DATA_DIRTY.__data: 0x17e8
-+  __DATA_DIRTY.__data: 0x17e0
-   __DATA_DIRTY.__bss: 0x3c00
-   __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8657
 -  Symbols:   3314
 -  CStrings:  228
 +  Functions: 8661
 +  Symbols:   3312
 +  CStrings:  229
- 
 Symbols:
 + _get_witness_table SeRzSERzSHRzs8SendableRzSeR_SER_SHR_sAAR_7SwiftUI4ViewR0_r1_lqd0__AbCHD3_AbCPABE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAB15ModifiedContentVyAIyAB6VStackVyAB05TupleJ0VyAIyAIyAIyAB6ZStackVyAMyAIyAIyAB4TextVAB16_FlexFrameLayoutVGAB31AccessibilityAttachmentModifierVG_AB6HStackVyAMyAIyAB6ButtonVyAIyAIyAIyAIyAB5ImageVAB022_EnvironmentKeyWritingT0VyAB4FontVSgGGAB016_ForegroundStyleT0VyAB5ColorVGGAB01_pQ0VGAB026_InsettableBackgroundShapeT0VyAB8MaterialVAB6CircleVGGGAB01_j9ShapeKindT0VyA23_GG_AB6SpacerVQPGGQPGGAB08_PaddingQ0VGA38_GA38_G_AB012_ConditionalJ0VyA43_yAIyAB08ProgressD0VyAB05EmptyD0VA47_GASGATGAIyAKyAMyAIyAdBE11pickerStyleyQrqd__AB11PickerStyleRd__lFQOyAB6PickerVyAQSiAB7ForEachVySaySiGSiAdBE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAQ_SiQo_GG_AB20SegmentedPickerStyleVQo_A38_GSg_AB06ScrollD0VyAIyAIyAB04LazyK0VyA43_yAIyATA38_G013FitnessCanvasC009DataStoreD0Vy18FitnessWorkoutPlan19WorkoutSwapDataItemVyxq_GADA73_E19standardLockupStyleyQrqd__A73_19StandardLockupStyleRd__lFQOyAB5GroupVyA43_yA73_14StandardLockupVAIyAdBE8redacted6reasonQrAB16RedactionReasonsV_tFQOyA85__Qo_AVGGG_A73_20HorizontalStackStyleVQo_A47_GGGA38_GA38_GGQPGGAB01_xy9TransformT0VySbGGGQPGGASGAB017_AppearanceActionT0VG_SbQo_HO
 + _symbolic _____4item______7weekdayt 18FitnessWorkoutPlan0bC13ScheduledItemV AA0bC7WeekdayO

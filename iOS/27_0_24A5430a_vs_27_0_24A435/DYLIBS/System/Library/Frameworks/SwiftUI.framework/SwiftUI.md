@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/SwiftUI.framework/SwiftUI`
 
-```diff
+### Section Size Changes
 
- 8.0.84.1.104
--  __TEXT.__text: 0x1048c34
-+  __TEXT.__text: 0x1048fa8
-   __TEXT.__lazy_helpers: 0x54
-   __TEXT.__objc_methlist: 0xa594
-   __TEXT.__cstring: 0x1719b
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1048c34` | `0x1048fa8` | **`+0x374`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s7SwiftUI16AppSceneDelegateC5scene_13willConnectTo7optionsySo7UISceneC_So0K7SessionCSo0K17ConnectionOptionsCtF : 13312 -> 13316
 ~ _$ss10_NativeSetV9insertNew_2at8isUniqueyxn_s10_HashTableV6BucketVSbtF7SwiftUI15HashableWeakBoxVyyXlG_Tg5 : 404 -> 408

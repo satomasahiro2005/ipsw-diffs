@@ -2,103 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/WorkoutUI.framework/WorkoutUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x611234` | `0x611f70` | **`+0xd3c`** |
+| `__TEXT.__swift5_typeref` | `0xb7fb2` | `0xb76fa` | **`-0x8b8`** |
+| `__DATA_DIRTY.__bss` | `0x32b0` | `0x3530` | **`+0x280`** |
+| `__TEXT.__const` | `0x41ee4` | `0x42114` | **`+0x230`** |
+| `__AUTH_CONST.__const` | `0x63948` | `0x63aa8` | **`+0x160`** |
+| `__DATA_DIRTY.__data` | `0x4828` | `0x4908` | **`+0xe0`** |
+| `__TEXT.__constg_swiftt` | `0x12ea0` | `0x12f68` | **`+0xc8`** |
+| `__TEXT.__cstring` | `0x366ad` | `0x365fd` | **`-0xb0`** |
+| `__DATA.__data` | `0x18c58` | `0x18bb8` | **`-0xa0`** |
+| `__TEXT.__swift5_fieldmd` | `0xe1f0` | `0xe25c` | **`+0x6c`** |
+| `__AUTH.__data` | `0xb510` | `0xb570` | **`+0x60`** |
+| `__DATA.__bss` | `0x21dd0` | `0x21d70` | **`-0x60`** |
+| `__AUTH.__objc_data` | `0x52c0` | `0x5270` | **`-0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x17a8` | `0x17f8` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x10c50` | `0x10c98` | **`+0x48`** |
+| `__TEXT.__eh_frame` | `0x9cc8` | `0x9c88` | **`-0x40`** |
+| `__TEXT.__swift5_reflstr` | `0x127b4` | `0x127f4` | **`+0x40`** |
+| `__TEXT.__swift5_capture` | `0x7a2c` | `0x79f0` | **`-0x3c`** |
+| `__TEXT.__swift5_assocty` | `0x3ed8` | `0x3f08` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x6d18` | `0x6d38` | **`+0x20`** |
+| `__TEXT.__oslogstring` | `0x9f42` | `0x9f62` | **`+0x20`** |
+| `__TEXT.__swift5_builtin` | `0x488` | `0x474` | **`-0x14`** |
+| `__TEXT.__swift5_mpenum` | `0x48` | `0x38` | **`-0x10`** |
+| `__TEXT.__swift5_proto` | `0x1148` | `0x1158` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0xea8` | `0xeb4` | **`+0xc`** |
+| `__DATA.__common` | `0x5a8` | `0x5a0` | **`-0x8`** |
+| `__DATA_CONST.__const` | `0x1088` | `0x1080` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x36d0` | `0x36d8` | **`+0x8`** |
+| `__DATA_DIRTY.__common` | `0xe0` | `0xe8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2027.1.48.0.0
--  __TEXT.__text: 0x5e4f78
 +2027.1.51.0.0
-+  __TEXT.__text: 0x5e5ca0
-   __TEXT.__objc_methlist: 0x3540
--  __TEXT.__const: 0x41ee4
--  __TEXT.__cstring: 0x366ad
--  __TEXT.__oslogstring: 0x9f42
-+  __TEXT.__const: 0x42114
-+  __TEXT.__cstring: 0x365fd
-+  __TEXT.__oslogstring: 0x9f62
-   __TEXT.__gcc_except_tab: 0x230
--  __TEXT.__swift5_typeref: 0xb7fb2
--  __TEXT.__swift5_capture: 0x7a2c
--  __TEXT.__constg_swiftt: 0x12ea0
--  __TEXT.__swift5_reflstr: 0x127b4
--  __TEXT.__swift5_assocty: 0x3ed8
--  __TEXT.__swift5_fieldmd: 0xe1f0
--  __TEXT.__swift5_builtin: 0x488
--  __TEXT.__swift5_proto: 0x1148
--  __TEXT.__swift5_types: 0xea8
-+  __TEXT.__swift5_typeref: 0xb76fa
-+  __TEXT.__swift5_capture: 0x79f0
-+  __TEXT.__constg_swiftt: 0x12f68
-+  __TEXT.__swift5_reflstr: 0x127f4
-+  __TEXT.__swift5_assocty: 0x3f08
-+  __TEXT.__swift5_fieldmd: 0xe25c
-+  __TEXT.__swift5_builtin: 0x474
-+  __TEXT.__swift5_proto: 0x1158
-+  __TEXT.__swift5_types: 0xeb4
-   __TEXT.__swift_as_entry: 0x22c
-   __TEXT.__swift_as_cont: 0x47c
-   __TEXT.__swift_as_ret: 0x1c4
--  __TEXT.__swift5_mpenum: 0x48
-+  __TEXT.__swift5_mpenum: 0x38
-   __TEXT.__swift5_protos: 0x70
--  __TEXT.__unwind_info: 0x16f88
--  __TEXT.__eh_frame: 0x9ce0
-+  __TEXT.__unwind_info: 0x17000
-+  __TEXT.__eh_frame: 0x9ca0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1088
-+  __DATA_CONST.__const: 0x1080
-   __DATA_CONST.__objc_classlist: 0x5e0
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_catlist2: 0x8
 
-   __DATA_CONST.__objc_selrefs: 0x2a28
-   __DATA_CONST.__objc_protorefs: 0x150
-   __DATA_CONST.__objc_superrefs: 0xc8
--  __DATA_CONST.__got: 0x36d0
--  __AUTH_CONST.__const: 0x63948
-+  __DATA_CONST.__got: 0x36d8
-+  __AUTH_CONST.__const: 0x63aa8
-   __AUTH_CONST.__cfstring: 0x7a0
-   __AUTH_CONST.__objc_const: 0xcc08
-   __AUTH_CONST.__objc_intobj: 0x48
--  __AUTH_CONST.__auth_got: 0x6d18
--  __AUTH.__objc_data: 0x52c0
--  __AUTH.__data: 0xb510
-+  __AUTH_CONST.__auth_got: 0x6d38
-+  __AUTH.__objc_data: 0x5270
-+  __AUTH.__data: 0xb570
-   __DATA.__objc_ivar: 0x154
--  __DATA.__data: 0x18c58
-+  __DATA.__data: 0x18bb8
-   __DATA.__objc_stublist: 0x8
--  __DATA.__common: 0x5a8
--  __DATA_DIRTY.__objc_data: 0x17a8
--  __DATA_DIRTY.__data: 0x4828
--  __DATA_DIRTY.__bss: 0x32b0
--  __DATA_DIRTY.__common: 0xe0
-+  __DATA.__common: 0x5a0
-+  __DATA_DIRTY.__objc_data: 0x17f8
-+  __DATA_DIRTY.__data: 0x4908
-+  __DATA_DIRTY.__bss: 0x3530
-+  __DATA_DIRTY.__common: 0xe8
-   - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/Charts.framework/Charts
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 32754
--  Symbols:   75342
+-  Symbols:   74300
 -  CStrings:  3635
 +  Functions: 32798
-+  Symbols:   75417
++  Symbols:   74375
 +  CStrings:  3632
- 
 Symbols:
 + _$s13HealthBalance24SleepingSampleDaySummaryV14OutlierContextV13elevationGainAEvgZ
 + _$s13HealthBalance24SleepingSampleDaySummaryV14OutlierContextVAEs10SetAlgebraAAWL
@@ -405,8 +355,6 @@ Symbols:
 + _get_witness_table 7SwiftUI6VStackVyAA12TupleContentVyAA08ModifiedE0VyAGyAGyAA4TextVAA16_FlexFrameLayoutVGAA30_EnvironmentKeyWritingModifierVyAA0G9AlignmentOGGAA023AccessibilityAttachmentN0VGSg_AGyAA6IDViewVy021HealthMenstrualCyclesB023StaticCycleTimelineViewVAA22UserInterfaceSizeClassOSgGAA08_OverlayN0VyAA6HStackVyAEyAGyAA14LinearGradientVAA01_iJ0VG_AA6SpacerVA12_QPGGGGSgQPGGAA0Y0HPyHC
 + _get_witness_table 7SwiftUI7SectionVyAA9EmptyViewVAA12TupleContentVyAA08ModifiedG0VyAA0E0PAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAkAE12onTapGesture5count7performQrSi_yyctFQOy07WorkoutB027AdaptiveLeadingAccessoryRowVyAIyAIyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA5ColorVSgGGAA0L18AttachmentModifierVGSgAA4TextVAkAE0I14Representation14representationQrqd__yXE_tAaJRd__lFQOyAIyAIyAkAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyAA6ButtonVyA8_G_AA19BorderedButtonStyleVQo_A1_GA1_G_AGyA8__A14_yAEGQPGQo_G_Qo__Qo_A4_G_AIyAIyAkAE04listX6InsetsyQrAA4EdgeO3SetV_12CoreGraphics7CGFloatVSgtFQOyAkAE11pickerStyleyQrqd__AA11PickerStyleRd__lFQOyAA6PickerVyAESiAA7ForEachVySaySiGSiAkAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyA8__SiQo_GG_AA16WheelPickerStyleVQo__Qo_AS012AdjustedListx9SeparatorV0VGAA20_TransactionModifierVGSgQPGAEGAaJHPAeaJHPyHC_A60_AaJHPA27_AaJHPqd__AaJHD2_A26_HO_A4_AA0E8ModifierHPyHCHC_A59_AaJHpA58_AaJHPA55_AaJHPqd__AaJHD2_A52_HO_A54_AAA62_HPyHCHC_A57_AAA62_HPyHCHC_HCHX_HCAeaJHPyHCHC
 + _get_witness_table 9WorkoutUI22ReadinessComponentViewVy05SwiftB005EmptyE0VGAD0E0HPyHC
-+ _objc_msgSend$currentCalendar
-+ _objc_msgSend$lastLoggedDayIndex
 + _symbolic Say_____G 9WorkoutUI13ReadinessFlagO
 + _symbolic Say_____G 9WorkoutUI21EnergyPickerViewModelC8StepTierV
 + _symbolic Si__________y_____Sg______y_____y_____ySay_____GAH_____GGAFyABy_____yAMy__________G_____G______yAGySay_____GAT_____y_____y_____yAMyAMyAEyAEy_____y_____GAEy_____AWyAMy__________GGGGAEyAWyAMy_____A0_GSgG_____SgGGAOG_____y_____GGG______Qo_______yAMyA12_AQG_Qo_Qo_GGQPGGGQPGIegynr_ 9WorkoutUI22ReadinessDetailSectionO 05SwiftB012TupleContentV AD7DividerV AD012_ConditionalH0V AD6VStackV AD7ForEachV AA0C4FlagO AA0cN4ViewV AD08ModifiedH0V AD4TextV AD16_FlexFrameLayoutV AD31AccessibilityAttachmentModifierV AD9LazyVGridV AA0C13ComponentTypeO AD0O0PADE27accessibilityRepresentation14representationQrqd__yXE_tADA3_Rd__lFQO A4_ADE11buttonStyleyQrqd__AD20PrimitiveButtonStyleRd__lFQO AD6ButtonV AA0czO0V AD05EmptyO0V AD03AnyO0V 013HealthBalanceB021OvernightMetricsChartV AD01_sT0V 011SleepHealthB023SleepScoreVisualizationV AA013CycleTrackingO0V AD01_h5ShapeW0V AD9RectangleV AD16PlainButtonStyleV A4_ADE20accessibilityElement8childrenQrAD0U13ChildBehaviorV_tFQO
@@ -696,8 +644,6 @@ Symbols:
 - _get_witness_table 7SwiftUI4ViewRzlAA19_ConditionalContentVyAA6HStackVyAA05TupleE0VyAA6VStackVyAHyAaBPAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAFyAHyAFyAHyAA08ModifiedE0VyAQyAQyAA5ImageVAA24_ForegroundStyleModifierVyAA5ColorVGGAA022_EnvironmentKeyWritingS0VyAS5ScaleOGGAA0l10AttachmentS0VGSg_AQyAA4TextVA5_GQPGG_AQyAQyAkAE10fontWeightyQrAA4FontV6WeightVSgFQOyAQyASA_yA15_SgGG_Qo_AUyAA017HierarchicalShapeR0VGGA5_GQPGG_Qo__A9_SgQPGG_AA6SpacerVxSgQPGGAJyAHyAkAEAlMQrAO_tFQOyAFyAHyA12__A35_A31_A27_QPGG_Qo__A31_QPGGGAaBHPA38_AaBHPyHC_A43_AaBHPyHCHC
 - _get_witness_table 7SwiftUI6VStackVyAA12TupleContentVyAA08ModifiedE0VyAGyAGyAA4TextVAA16_FlexFrameLayoutVGAA30_EnvironmentKeyWritingModifierVyAA0G9AlignmentOGGAA023AccessibilityAttachmentN0VGSg_AGy021HealthMenstrualCyclesB023StaticCycleTimelineViewVAA08_OverlayN0VyAA6HStackVyAEyAGyAA14LinearGradientVAA01_iJ0VG_AA6SpacerVA6_QPGGGGSgQPGGAA0X0HPyHC
 - _get_witness_table 7SwiftUI7SectionVyAA9EmptyViewVAA12TupleContentVyAA08ModifiedG0VyAA0E0PAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAkAE12onTapGesture5count7performQrSi_yyctFQOy07WorkoutB027AdaptiveLeadingAccessoryRowVyAIyAIyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA5ColorVSgGGAA0L18AttachmentModifierVGSgAA4TextVAkAE0I14Representation14representationQrqd__yXE_tAaJRd__lFQOyAIyAIyAkAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyAA6ButtonVyA8_G_AA19BorderedButtonStyleVQo_A1_GA1_G_AGyA8__A14_yAEGQPGQo_G_Qo__Qo_A4_G_AIyAkAE04listX6InsetsyQrAA4EdgeO3SetV_12CoreGraphics7CGFloatVSgtFQOyAkAE11pickerStyleyQrqd__AA11PickerStyleRd__lFQOyAA6PickerVyAESiAA7ForEachVySaySiGSiAkAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyA8__SiQo_GG_AA16WheelPickerStyleVQo__Qo_AS012AdjustedListx9SeparatorV0VGSgQPGAEGAaJHPAeaJHPyHC_A57_AaJHPA27_AaJHPqd__AaJHD2_A26_HO_A4_AA0E8ModifierHPyHCHC_A56_AaJHpA55_AaJHPqd__AaJHD2_A52_HO_A54_AAA59_HPyHCHC_HCHX_HCAeaJHPyHCHC
-- _objc_msgSend$caloriesForEnergyBurnedInUserUnit:
-- _objc_msgSend$fu_backupAndSetBool:forKey:
 - _symbolic Si__________y_____Sg______y_____yABy_____y_____y_____yAGyAGy_____yAByAGy__________G______AGyAGyAGy__________y_____SgGG_____y_____GGAKGQPGG_____G_____y_____GGG______Qo_AKG______y_____ySay_____GA11______y_____yAHyAGyAGyAEyAEy_____y_____GAEy_____A13_yAGy__________GGGGAEyA13_yAGy_____A18_GSgG_____SgGGA_GA3_GG_A6_Qo_______yAGyA30_AKG_Qo_Qo_GGSgQPGGAFyAByAGyAGyAJA_GAKG_A39_QPGGGQPGIegynr_ 9WorkoutUI22ReadinessDetailSectionO 05SwiftB012TupleContentV AD7DividerV AD012_ConditionalH0V AD6VStackV AD08ModifiedH0V AD4ViewPADE11buttonStyleyQrqd__AD015PrimitiveButtonO0Rd__lFQO AD0Q0V AD6HStackV AD4TextV AD31AccessibilityAttachmentModifierV AD6SpacerV AD5ImageV AD022_EnvironmentKeyWritingV0V AD4FontV AD011_ForegroundoV0V AD017HierarchicalShapeO0V AD16_FlexFrameLayoutV AD01_h5ShapeV0V AD9RectangleV AD05PlainqO0V AD9LazyVGridV AD7ForEachV AA0C13ComponentTypeO ApDE27accessibilityRepresentation14representationQrqd__yXE_tAdORd__lFQO ApDEAQyQrqd__AdRRd__lFQO AA0c9ComponentM0V AD05EmptyM0V AD03AnyM0V 013HealthBalanceB021OvernightMetricsChartV AD12_FrameLayoutV 011SleepHealthB023SleepScoreVisualizationV AA013CycleTrackingM0V ApDE20accessibilityElement8childrenQrAD0T13ChildBehaviorV_tFQO
 - _symbolic _____Sg______y_____y_____y_____y_____y_____yAFyAFy_____yAEyAFy__________G______AFyAFyAFy__________y_____SgGG_____y_____GGAJGQPGG_____G_____y_____GGG______Qo_AJG______y_____ySay_____GA10______y_____yAGyAFyAFyACyACy_____y_____GACy_____A12_yAFy__________GGGGACyA12_yAFy_____A17_GSgG_____SgGGAZGA2_GG_A5_Qo_______yAFyA29_AJG_Qo_Qo_GGSgQPGGADyAEyAFyAFyAiZGAJG_A38_QPGGGt 7SwiftUI7DividerV AA19_ConditionalContentV AA6VStackV AA05TupleE0V AA08ModifiedE0V AA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonK0Rd__lFQO AA0M0V AA6HStackV AA4TextV AA31AccessibilityAttachmentModifierV AA6SpacerV AA5ImageV AA022_EnvironmentKeyWritingR0V AA4FontV AA011_ForegroundkR0V AA017HierarchicalShapeK0V AA16_FlexFrameLayoutV AA01_e5ShapeR0V AA9RectangleV AA05PlainmK0V AA9LazyVGridV AA7ForEachV 07WorkoutB022ReadinessComponentTypeO AmAE27accessibilityRepresentation14representationQrqd__yXE_tAaLRd__lFQO AmAEANyQrqd__AaORd__lFQO A20_018ReadinessComponentI0V AA05EmptyI0V AA03AnyI0V 013HealthBalanceB021OvernightMetricsChartV AA12_FrameLayoutV 011SleepHealthB023SleepScoreVisualizationV A20_013CycleTrackingI0V AmAE20accessibilityElement8childrenQrAA0P13ChildBehaviorV_tFQO
 - _symbolic _____yAAyAAy__________G_____y_____GG_____GSg_AAy__________y_____y_____yAAy__________G______ARQPGGGGSgt 7SwiftUI15ModifiedContentV AA4TextV AA16_FlexFrameLayoutV AA30_EnvironmentKeyWritingModifierV AA0E9AlignmentO AA023AccessibilityAttachmentL0V 021HealthMenstrualCyclesB023StaticCycleTimelineViewV AA08_OverlayL0V AA6HStackV AA05TupleD0V AA14LinearGradientV AA01_gH0V AA6SpacerV

@@ -2,23 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/GPUTools.framework/GPUTools`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2a9ec` | `0x2a960` | **`-0x8c`** |
+
+### Other Changes
+
 ```diff
 
- 310.8.0.0.0
--  __TEXT.__text: 0x2a9ec
-+  __TEXT.__text: 0x2a960
-   __TEXT.__objc_methlist: 0x2344
-   __TEXT.__gcc_except_tab: 0xd44
-   __TEXT.__const: 0x130
-
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 1122
 +  Functions: 1121
-   Symbols:   2639
-   CStrings:  461
- 
 Functions:
 ~ __ZNSt3__16vectorIjNS_9allocatorIjEEE6resizeEm : 284 -> 288
 ~ -[DYCaptureArchive _createNewNameEntry] : 188 -> 192

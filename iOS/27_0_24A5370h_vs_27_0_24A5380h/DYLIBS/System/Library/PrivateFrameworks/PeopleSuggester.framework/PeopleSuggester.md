@@ -2,88 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/PeopleSuggester.framework/PeopleSuggester`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x120510` | `0x127f88` | **`+0x7a78`** |
+| `__AUTH.__objc_data` | `0xf00` | `0x1db0` | **`+0xeb0`** |
+| `__DATA_DIRTY.__objc_data` | `0x2760` | `0x1950` | **`-0xe10`** |
+| `__AUTH_CONST.__cfstring` | `0x7ee00` | `0x7f960` | **`+0xb60`** |
+| `__TEXT.__cstring` | `0x30c88` | `0x31473` | **`+0x7eb`** |
+| `__AUTH_CONST.__objc_const` | `0x15458` | `0x15978` | **`+0x520`** |
+| `__TEXT.__objc_methlist` | `0xaaf4` | `0xaeb4` | **`+0x3c0`** |
+| `__TEXT.__oslogstring` | `0x10fbc` | `0x11218` | **`+0x25c`** |
+| `__TEXT.__gcc_except_tab` | `0x4790` | `0x49d8` | **`+0x248`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6f18` | `0x7110` | **`+0x1f8`** |
+| `__DATA_CONST.__objc_arraydata` | `0x39cb0` | `0x39e80` | **`+0x1d0`** |
+| `__TEXT.__unwind_info` | `0x34b0` | `0x35b8` | **`+0x108`** |
+| `__DATA_CONST.__const` | `0x41b0` | `0x4278` | **`+0xc8`** |
+| `__AUTH_CONST.__const` | `0x1c20` | `0x1cc0` | **`+0xa0`** |
+| `__AUTH_CONST.__objc_dictobj` | `0x227b8` | `0x22858` | **`+0xa0`** |
+| `__DATA.__objc_ivar` | `0xed4` | `0xf34` | **`+0x60`** |
+| `__AUTH_CONST.__objc_intobj` | `0x11a0` | `0x11d0` | **`+0x30`** |
+| `__DATA.__bss` | `0xb10` | `0xb40` | **`+0x30`** |
+| `__TEXT.__const` | `0x968` | `0x988` | **`+0x20`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0xd0` | `0xe0` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0xa20` | `0xa30` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x570` | `0x580` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x400` | `0x410` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x120510
--  __TEXT.__objc_methlist: 0xaaf4
--  __TEXT.__const: 0x968
--  __TEXT.__gcc_except_tab: 0x4790
--  __TEXT.__cstring: 0x30c88
--  __TEXT.__oslogstring: 0x10fbc
-+  __TEXT.__text: 0x127f88
-+  __TEXT.__objc_methlist: 0xaeb4
-+  __TEXT.__const: 0x988
-+  __TEXT.__gcc_except_tab: 0x49d8
-+  __TEXT.__cstring: 0x31473
-+  __TEXT.__oslogstring: 0x11218
-   __TEXT.__dlopen_cstrs: 0x19c8
-   __TEXT.__ustring: 0xb22
--  __TEXT.__unwind_info: 0x34b0
-+  __TEXT.__unwind_info: 0x35b8
-   __TEXT.__eh_frame: 0x50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x41b0
--  __DATA_CONST.__objc_classlist: 0x570
-+  __DATA_CONST.__const: 0x4278
-+  __DATA_CONST.__objc_classlist: 0x580
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x58
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6f18
--  __DATA_CONST.__objc_superrefs: 0x400
--  __DATA_CONST.__objc_arraydata: 0x39cb0
--  __DATA_CONST.__got: 0xa20
--  __AUTH_CONST.__const: 0x1c20
--  __AUTH_CONST.__cfstring: 0x7ee00
--  __AUTH_CONST.__objc_const: 0x15458
--  __AUTH_CONST.__objc_intobj: 0x11a0
-+  __DATA_CONST.__objc_selrefs: 0x7110
-+  __DATA_CONST.__objc_superrefs: 0x410
-+  __DATA_CONST.__objc_arraydata: 0x39e80
-+  __DATA_CONST.__got: 0xa30
-+  __AUTH_CONST.__const: 0x1cc0
-+  __AUTH_CONST.__cfstring: 0x7f960
-+  __AUTH_CONST.__objc_const: 0x15978
-+  __AUTH_CONST.__objc_intobj: 0x11d0
-   __AUTH_CONST.__objc_arrayobj: 0x11d60
--  __AUTH_CONST.__objc_doubleobj: 0xd0
--  __AUTH_CONST.__objc_dictobj: 0x227b8
-+  __AUTH_CONST.__objc_doubleobj: 0xe0
-+  __AUTH_CONST.__objc_dictobj: 0x22858
-   __AUTH_CONST.__auth_got: 0x818
--  __AUTH.__objc_data: 0xf00
--  __DATA.__objc_ivar: 0xed4
-+  __AUTH.__objc_data: 0x1db0
-+  __DATA.__objc_ivar: 0xf34
-   __DATA.__data: 0x4f0
--  __DATA.__bss: 0xb10
--  __DATA_DIRTY.__objc_data: 0x2760
-+  __DATA.__bss: 0xb40
-+  __DATA_DIRTY.__objc_data: 0x1950
-   __DATA_DIRTY.__bss: 0x520
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+-1959.0.1.0.0
++1962.0.1.0.0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libarchive.2.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 5264
--  Symbols:   18251
--  CStrings:  33978
+-  Symbols:   7838
+-  CStrings:  17812
 +  Functions: 5357
-+  Symbols:   18562
-+  CStrings:  34171
- 
-Sections:
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __DATA.__data : content changed
++  Symbols:   7979
++  CStrings:  17914
 Symbols:
 + +[_PSDebugUI descriptionForReasonType:]
 + +[_PSEnsembleModel canonicalIdentifierForSuggestion:]
@@ -249,74 +208,6 @@ Symbols:
 + _kPSStaticContentFeatureMaxFaceShareIoUWithConversationAsString
 + _kProxyRankLookupCap
 + _log2
-+ _objc_msgSend$_shareTimeBackfillProxiesFromInteractionStatistics:afterHeuristicProxies:predictionContext:
-+ _objc_msgSend$_suggestionProxiesFromAttachmentTagsUsingBoW:interactionStatistics:suggestionProxyType:reasonMessage:reasonType:contextDetails:useCatalog:similarityThreshold:weightedScoreThreshold:parentSpan:
-+ _objc_msgSend$_suggestionProxiesFromAttachmentTagsUsingSentenceEmbedding:interactionStatistics:suggestionProxyType:reasonMessage:reasonType:contextDetails:useCatalog:similarityThreshold:weightedScoreThreshold:parentSpan:
-+ _objc_msgSend$appendCandidateSectionTo:forSuggestion:
-+ _objc_msgSend$appendCatalogSectionTo:canonicalID:
-+ _objc_msgSend$appendContentSectionTo:canonicalID:
-+ _objc_msgSend$appendDevLayoutTo:canonicalID:suggestion:
-+ _objc_msgSend$appendEnvSectionTo:
-+ _objc_msgSend$appendIndexSectionTo:
-+ _objc_msgSend$appendLatencySectionTo:
-+ _objc_msgSend$appendRankSectionTo:canonicalID:
-+ _objc_msgSend$appendUserLayoutTo:canonicalID:
-+ _objc_msgSend$appendWarningsSectionTo:
-+ _objc_msgSend$applyDebugTextToSuggestions:canonicalIDProvider:
-+ _objc_msgSend$cachedEmbeddingsForClusters:
-+ _objc_msgSend$candidAttributesForDedupKeys:multiEngineByDedupKey:
-+ _objc_msgSend$candidStringFromContributions:
-+ _objc_msgSend$captureMultiEngineAndPreRankContributionsFromProxies:dedupKeyResolver:privatizedIdResolver:outMultiEngineByDedupKey:outRawContributions:
-+ _objc_msgSend$catalogConversationIdsSnapshot
-+ _objc_msgSend$catalogInventoryAttributesForSnapshot:statistics:
-+ _objc_msgSend$debugUI
-+ _objc_msgSend$descriptionForReasonType:
-+ _objc_msgSend$engagedCandidateInCatalogStateForConversationId:catalogConversationIds:interactionStatistics:
-+ _objc_msgSend$engineRankSummaryStringForCanonicalID:
-+ _objc_msgSend$enrichSuggestions:withStatsMap:predictionContext:
-+ _objc_msgSend$firstReasonTypeFromContributions:
-+ _objc_msgSend$fullCatalogRanksForSortedConversationIds:cap:bundleIdMap:
-+ _objc_msgSend$fullySortedConversationIdsForFeatureNames:interactionsStatistics:
-+ _objc_msgSend$initWithContext:
-+ _objc_msgSend$initWithContext:showDevLayout:
-+ _objc_msgSend$initWithData:encoding:
-+ _objc_msgSend$interactionStatistics
-+ _objc_msgSend$intervalInMilliSeconds
-+ _objc_msgSend$isReplayInstrumentationEnabled
-+ _objc_msgSend$modelScoreAttributesForAvailable:
-+ _objc_msgSend$modelScoreAvailable
-+ _objc_msgSend$numberOfPeopleInPhoto
-+ _objc_msgSend$passV1MappedFaceTagCount
-+ _objc_msgSend$photoAgeSeconds
-+ _objc_msgSend$photoAgeSecondsForPhotoLocalIdentifier:
-+ _objc_msgSend$preRankCandidatesAttributesForRawContributions:perEngineCap:
-+ _objc_msgSend$predictionContext
-+ _objc_msgSend$prerank_contribution:worseThan:
-+ _objc_msgSend$prerank_jsonObjectFromContribution:
-+ _objc_msgSend$proxyRankAttributesForConversationId:candidateBundleId:proxyRankLookup:
-+ _objc_msgSend$recordCatalogStatsForCanonicalID:sceneClusters:titleClusters:
-+ _objc_msgSend$recordDurationMillis:forPhase:
-+ _objc_msgSend$recordEngineRankSummary:forCanonicalID:
-+ _objc_msgSend$recordIndexStats:
-+ _objc_msgSend$recordSessionTopMappedCluster:
-+ _objc_msgSend$recordSpan:forPhase:
-+ _objc_msgSend$replaceObjectAtIndex:withObject:
-+ _objc_msgSend$rotatingDeviceIdentifier
-+ _objc_msgSend$sassSentenceSimilarityThreshold
-+ _objc_msgSend$sceneBasedSuggestionsUsingEmbedding:withPredictionContext:config:useCatalog:similarityThreshold:sentenceSimilarityThreshold:weightedScoreThreshold:
-+ _objc_msgSend$sentenceEmbeddingForLanguage:
-+ _objc_msgSend$setCatalogConversationIdsSnapshot:
-+ _objc_msgSend$setInteractionStatistics:
-+ _objc_msgSend$setModelScoreAvailable:
-+ _objc_msgSend$setNumberOfPeopleInPhoto:
-+ _objc_msgSend$setPassV1MappedFaceTagCount:
-+ _objc_msgSend$setPhotoAgeSeconds:
-+ _objc_msgSend$setPredictionContext:
-+ _objc_msgSend$setTitleSource:
-+ _objc_msgSend$suggestionProxiesFromAttachmentTags:interactionStatistics:suggestionProxyType:reasonMessage:reasonType:contextDetails:useCatalog:similarityThreshold:sentenceSimilarityThreshold:weightedScoreThreshold:parentSpan:
-+ _objc_msgSend$suggestionsFromSuggestionProxies:supportedBundleIDs:contactKeysToFetch:meContactIdentifier:maxSuggestions:predictionContext:
-+ _objc_msgSend$titleSource
-+ _objc_msgSend$whitespaceAndNewlineCharacterSet
 + _rotatingDeviceIdentifier.defaults
 + _rotatingDeviceIdentifier.once
 + _sCachedClusterEmbeddings
@@ -347,12 +238,6 @@ Symbols:
 - ___block_descriptor_40_e8_32s_e38_"_PSSuggestion"16?0"_PSSuggestion"8ls32l8
 - ___block_descriptor_56_e8_32s40s48s_e30_v32?0"_PSSuggestion"8Q16^B24ls32l8s40l8s48l8
 - _kPSStaticContentFeatureMaxIoUOfSharesOfPeopleInPhotoWithConversationAsString
-- _objc_msgSend$_shareTimeBackfillProxiesFromInteractionStatistics:afterHeuristicProxies:
-- _objc_msgSend$enrichSuggestions:withStatsMap:
-- _objc_msgSend$sceneBasedSuggestionsUsingEmbedding:withPredictionContext:config:useCatalog:similarityThreshold:weightedScoreThreshold:
-- _objc_msgSend$suggestionProxiesFromAttachmentTags:interactionStatistics:suggestionProxyType:reasonMessage:reasonType:contextDetails:useCatalog:similarityThreshold:weightedScoreThreshold:parentSpan:
-- _objc_msgSend$suggestionsFromSuggestionProxies:supportedBundleIDs:contactKeysToFetch:meContactIdentifier:maxSuggestions:
-- _objc_msgSend$usedContactCatalogForFallback
 - _objc_retain_x10
 CStrings:
 + "\n\n[Contact Info] %@"
@@ -471,5 +356,4 @@ CStrings:
 - "Cached Suggestion (from Interaction Store)"
 - "Using %lu title clusters from Trial: [%{public}@]"
 - "Using %lu title clusters from bundled url_clusters.json: [%{public}@]"
-
 ```

@@ -2,91 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/AnalyticsAgentFramework.framework/AnalyticsAgentFramework`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e944` | `0x23174` | **`+0x4830`** |
+| `__TEXT.__eh_frame` | `0x1f70` | `0x265c` | **`+0x6ec`** |
+| `__TEXT.__const` | `0x808` | `0xc00` | **`+0x3f8`** |
+| `__AUTH_CONST.__const` | `0xa80` | `0xe40` | **`+0x3c0`** |
+| `__DATA.__bss` | `—` | `0x380` | **`+0x380`** |
+| `__TEXT.__swift5_typeref` | `0x68c` | `0x8c0` | **`+0x234`** |
+| `__TEXT.__unwind_info` | `0x880` | `0xa60` | **`+0x1e0`** |
+| `__TEXT.__gcc_except_tab` | `0xc60` | `0xe28` | **`+0x1c8`** |
+| `__TEXT.__oslogstring` | `0xffb` | `0x117b` | **`+0x180`** |
+| `__DATA.__data` | `0x238` | `0x360` | **`+0x128`** |
+| `__TEXT.__constg_swiftt` | `0x3cc` | `0x4c4` | **`+0xf8`** |
+| `__TEXT.__swift5_fieldmd` | `0x314` | `0x3e0` | **`+0xcc`** |
+| `__AUTH_CONST.__objc_const` | `0x1890` | `0x1918` | **`+0x88`** |
+| `__TEXT.__swift5_capture` | `0x194` | `0x21c` | **`+0x88`** |
+| `__TEXT.__swift5_reflstr` | `0x295` | `0x315` | **`+0x80`** |
+| `__TEXT.__swift5_assocty` | `0x60` | `0xd8` | **`+0x78`** |
+| `__AUTH_CONST.__auth_got` | `0x7c8` | `0x820` | **`+0x58`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb58` | `0xba0` | **`+0x48`** |
+| `__TEXT.__cstring` | `0x58c` | `0x5cc` | **`+0x40`** |
+| `__TEXT.__swift_as_cont` | `0x88` | `0xc0` | **`+0x38`** |
+| `__TEXT.__swift_as_ret` | `0x64` | `0x8c` | **`+0x28`** |
+| `__TEXT.__swift5_proto` | `0x14` | `0x38` | **`+0x24`** |
+| `__AUTH.__data` | `0x120` | `0x140` | **`+0x20`** |
+| `__TEXT.__swift_as_entry` | `0x34` | `0x50` | **`+0x1c`** |
+| `__TEXT.__swift5_types` | `0x38` | `0x4c` | **`+0x14`** |
+| `__TEXT.__swift5_protos` | `0x18` | `0x1c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -569.0.5.0.0
--  __TEXT.__text: 0x1d23c
 +577.40.5.0.0
-+  __TEXT.__text: 0x21554
-   __TEXT.__objc_methlist: 0xd84
--  __TEXT.__const: 0x808
--  __TEXT.__gcc_except_tab: 0xc60
--  __TEXT.__swift5_typeref: 0x68c
--  __TEXT.__swift5_fieldmd: 0x314
--  __TEXT.__constg_swiftt: 0x3cc
--  __TEXT.__oslogstring: 0xffb
--  __TEXT.__swift5_capture: 0x194
-+  __TEXT.__const: 0xc00
-+  __TEXT.__gcc_except_tab: 0xe28
-+  __TEXT.__swift5_typeref: 0x8c0
-+  __TEXT.__swift5_fieldmd: 0x3e0
-+  __TEXT.__constg_swiftt: 0x4c4
-+  __TEXT.__oslogstring: 0x117b
-+  __TEXT.__swift5_capture: 0x21c
-   __TEXT.__swift5_builtin: 0x14
--  __TEXT.__swift5_reflstr: 0x295
--  __TEXT.__swift5_protos: 0x18
--  __TEXT.__swift5_types: 0x38
--  __TEXT.__cstring: 0x58c
--  __TEXT.__swift5_proto: 0x14
--  __TEXT.__swift5_assocty: 0x60
--  __TEXT.__swift_as_entry: 0x34
--  __TEXT.__swift_as_ret: 0x64
--  __TEXT.__swift_as_cont: 0x88
--  __TEXT.__unwind_info: 0x928
--  __TEXT.__eh_frame: 0x1ff0
-+  __TEXT.__swift5_reflstr: 0x315
-+  __TEXT.__swift5_protos: 0x1c
-+  __TEXT.__swift5_types: 0x4c
-+  __TEXT.__cstring: 0x5cc
-+  __TEXT.__swift5_proto: 0x38
-+  __TEXT.__swift5_assocty: 0xd8
-+  __TEXT.__swift_as_entry: 0x50
-+  __TEXT.__swift_as_ret: 0x8c
-+  __TEXT.__swift_as_cont: 0xc0
-+  __TEXT.__unwind_info: 0xb28
-+  __TEXT.__eh_frame: 0x26fc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb58
-+  __DATA_CONST.__objc_selrefs: 0xba0
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xa80
--  __AUTH_CONST.__objc_const: 0x1890
--  __AUTH_CONST.__auth_got: 0x7c8
--  __AUTH.__data: 0x120
--  __DATA.__data: 0x238
-+  __AUTH_CONST.__const: 0xe40
-+  __AUTH_CONST.__objc_const: 0x1918
-+  __AUTH_CONST.__auth_got: 0x820
-+  __AUTH.__data: 0x140
-+  __DATA.__data: 0x360
-   __DATA.__common: 0x38
-   __DATA_DIRTY.__data: 0x4f8
-   __DATA_DIRTY.__bss: 0x80
-   __DATA_DIRTY.__common: 0x60
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 +  - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreLocation.framework/CoreLocation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 372
--  Symbols:   484
+-  Symbols:   399
 -  CStrings:  104
 +  Functions: 490
-+  Symbols:   550
++  Symbols:   456
 +  CStrings:  111
- 
 Symbols:
 + GCC_except_table23
 + GCC_except_table25
@@ -115,15 +76,6 @@ Symbols:
 + _associated conformance 23AnalyticsAgentFramework28BluetoothConnectedTransportsVs10SetAlgebraAAs25ExpressibleByArrayLiteral
 + _associated conformance 23AnalyticsAgentFramework28BluetoothConnectedTransportsVs9OptionSetAASY
 + _associated conformance 23AnalyticsAgentFramework28BluetoothConnectedTransportsVs9OptionSetAAs0H7Algebra
-+ _objc_msgSend$bleAddressData
-+ _objc_msgSend$bluetoothState
-+ _objc_msgSend$btAddressData
-+ _objc_msgSend$connectedServices
-+ _objc_msgSend$getControllerInfoWithCompletion:
-+ _objc_msgSend$getDevicesWithFlags:completionHandler:
-+ _objc_msgSend$inquiryState
-+ _objc_msgSend$lock
-+ _objc_msgSend$unlock
 + _swift_retain_x28
 + _symbolic $s23AnalyticsAgentFramework28BluetoothControllerProvidingP
 + _symbolic $sSY

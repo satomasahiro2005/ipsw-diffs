@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/DeviceTreeKit.framework/DeviceTreeKit`
 
-```diff
+### Section Size Changes
 
- 509.2.1.0.0
--  __TEXT.__text: 0x67c0
-+  __TEXT.__text: 0x67b0
-   __TEXT.__const: 0x93e
-   __TEXT.__cstring: 0xde
-   __TEXT.__swift5_typeref: 0x21b
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x67c0` | `0x67b0` | **`-0x10`** |
+
+### Other Changes
+
+```diff
 Symbols:
 + _swift_release_x27
 - _swift_release_x25

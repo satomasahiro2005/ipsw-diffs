@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AppletTranslationFramework.framework/AppletTranslationFramework`
 
-```diff
+### Section Size Changes
 
- 70.32.0.0.0
--  __TEXT.__text: 0xd8794
-+  __TEXT.__text: 0xd883c
-   __TEXT.__objc_methlist: 0x3010
-   __TEXT.__const: 0x4ab8
-   __TEXT.__cstring: 0x94d5
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd8794` | `0xd883c` | **`+0xa8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__114__split_bufferIPNS_3mapINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_10shared_ptrIN3OVM3VarEEENS_4lessIS7_EENS5_INS_4pairIKS7_SB_EEEEEENS5_ISJ_EEE12emplace_backIJSJ_EEEvDpOT_ : 256 -> 260
 ~ __ZNSt3__114__split_bufferIPNS_3mapINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_10shared_ptrIN3OVM3VarEEENS_4lessIS7_EENS5_INS_4pairIKS7_SB_EEEEEERNS5_ISJ_EEE12emplace_backIJSJ_EEEvDpOT_ : 256 -> 260

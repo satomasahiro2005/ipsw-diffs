@@ -2,96 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/WebCore.framework/WebCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3766044` | `0x3728d20` | **`-0x3d324`** |
+| `__TEXT.__gcc_except_tab` | `0x36e38` | `0x366f4` | **`-0x744`** |
+| `__TEXT.__unwind_info` | `0x77128` | `0x777f8` | **`+0x6d0`** |
+| `__TEXT.__cstring` | `0x335711` | `0x335b3d` | **`+0x42c`** |
+| `__DATA.__common` | `0x1a578` | `0x1a3a0` | **`-0x1d8`** |
+| `__DATA_DIRTY.__data` | `0x8b48` | `0x8c98` | **`+0x150`** |
+| `__AUTH_CONST.__const` | `0x24d9e0` | `0x24db10` | **`+0x130`** |
+| `__DATA.__data` | `0x1e840` | `0x1e710` | **`-0x130`** |
+| `__TEXT.__const` | `0x1b4830` | `0x1b4710` | **`-0x120`** |
+| `__DATA.__bss` | `0x40688` | `0x407a0` | **`+0x118`** |
+| `__DATA_DIRTY.__bss` | `0xb6e0` | `0xb7e0` | **`+0x100`** |
+| `__TEXT.__oslogstring` | `0x13e86` | `0x13f16` | **`+0x90`** |
+| `__DATA_DIRTY.__common` | `0x99c4` | `0x9944` | **`-0x80`** |
+| `__DATA_CONST.__const` | `0x37f88` | `0x37f68` | **`-0x20`** |
+| `__AUTH.__thread_vars` | `0x18` | `—` | **`-0x18`** |
+| `__AUTH.__thread_bss` | `0x8` | `—` | **`-0x8`** |
+| `__AUTH_CONST.__auth_got` | `0x6f70` | `0x6f68` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5a20` | `0x5a28` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x5ad4` | `0x5adc` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -625.1.29.10.29
--  __TEXT.__text: 0x36e73e0
--  __TEXT.__objc_methlist: 0x5ad4
 +625.2.4.1.0
-+  __TEXT.__text: 0x36a9c3c
-+  __TEXT.__objc_methlist: 0x5adc
-   __TEXT.__getClass_cstr: 0x1290
-   __TEXT.__dlsym_cstr: 0x7628
--  __TEXT.__const: 0x1b4830
-+  __TEXT.__const: 0x1b4710
-   __TEXT.__swift5_typeref: 0x2bb
--  __TEXT.__cstring: 0x335711
-+  __TEXT.__cstring: 0x335b3d
-   __TEXT.__constg_swiftt: 0x2e8
-   __TEXT.__swift5_fieldmd: 0x17c
-   __TEXT.__swift5_reflstr: 0x7f
-   __TEXT.__swift5_proto: 0x3c
-   __TEXT.__swift5_types: 0x44
--  __TEXT.__gcc_except_tab: 0x36e38
-+  __TEXT.__gcc_except_tab: 0x366f4
-   __TEXT.__swift5_assocty: 0x1a0
-   __TEXT.__swift5_builtin: 0x14
--  __TEXT.__oslogstring: 0x13e86
-+  __TEXT.__oslogstring: 0x13f16
-   __TEXT.__ustring: 0x262
--  __TEXT.__unwind_info: 0x7e3a8
-+  __TEXT.__unwind_info: 0x7e820
-   __TEXT.__eh_frame: 0x18c4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x37f88
-+  __DATA_CONST.__const: 0x37f68
-   __DATA_CONST.__objc_classlist: 0x368
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x150
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5a20
-+  __DATA_CONST.__objc_selrefs: 0x5a28
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__objc_superrefs: 0x280
-   __DATA_CONST.__jsc_ops: 0x510
-   __DATA_CONST.__objc_arraydata: 0x98
-   __DATA_CONST.__got: 0x1458
--  __AUTH_CONST.__const: 0x24d9e0
-+  __AUTH_CONST.__const: 0x24db10
-   __AUTH_CONST.__cfstring: 0x7960
-   __AUTH_CONST.__objc_const: 0x8e80
-   __AUTH_CONST.__weak_auth_got: 0x30
 
-   __AUTH_CONST.__objc_intobj: 0x270
-   __AUTH_CONST.__objc_doubleobj: 0x50
-   __AUTH_CONST.__objc_dictobj: 0x50
--  __AUTH_CONST.__auth_got: 0x6f70
-+  __AUTH_CONST.__auth_got: 0x6f68
-   __AUTH.__objc_data: 0x1a10
-   __AUTH.__data: 0x15d8
--  __AUTH.__thread_vars: 0x18
--  __AUTH.__thread_bss: 0x8
-   __DATA.__objc_ivar: 0x498
--  __DATA.__data: 0x1e840
--  __DATA.__common: 0x1a578
-+  __DATA.__data: 0x1e710
-+  __DATA.__common: 0x1a3a0
-   __DATA_DIRTY.__objc_ivar: 0x50
-   __DATA_DIRTY.__objc_data: 0x640
--  __DATA_DIRTY.__data: 0x8b48
--  __DATA_DIRTY.__bss: 0xb6e0
--  __DATA_DIRTY.__common: 0x99c4
-+  __DATA_DIRTY.__data: 0x8c98
-+  __DATA_DIRTY.__bss: 0xb7e0
-+  __DATA_DIRTY.__common: 0x9944
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/BrowserEngineCore.framework/BrowserEngineCore
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_StringProcessing.dylib
 -  Functions: 125582
--  Symbols:   158897
+-  Symbols:   156732
 -  CStrings:  33279
 +  Functions: 125799
-+  Symbols:   159061
++  Symbols:   156895
 +  CStrings:  33293
- 
 Symbols:
 + -[WebCoreResourceHandleAsOperationQueueDelegate handle]
 + GCC_except_table327
@@ -1138,7 +1085,6 @@ Symbols:
 + ___PRETTY_FUNCTION__._ZNK3WTF7WeakPtrIN7WebCore9NavigatorENS_18DefaultWeakPtrImplENS_12RawPtrTraitsIS3_EEEptEv
 + ___PRETTY_FUNCTION__._ZNK7WebCore5Style16PrimitiveNumericINS_3CSS16LengthPercentageIXtlNS2_5RangeELdfff0000000000000ELd7ff0000000000000ELNS2_22RangeParseTimeBehaviorE0ELS5_0ELNS2_16RangeZoomOptionsE1EEEfEEE8switchOnIJZNS0_L17toCSSNumericValueERKNS0_16LengthPercentageIXtlS4_Ldfff0000000000000ELd7ff0000000000000ELS5_0ELS5_0ELS6_1EEEfEENS0_10ZoomFactorEE3$_0ZNS0_L17toCSSNumericValueESD_SE_E3$_1ZNS0_L17toCSSNumericValueESD_SE_E3$_2EEEDcDpOT_
 + ___func__._ZN7WebCore16HTMLMediaElement37remoteHasAvailabilityCallbacksChangedEv
-+ _objc_msgSend$handle
 - GCC_except_table1022
 - GCC_except_table1212
 - GCC_except_table276

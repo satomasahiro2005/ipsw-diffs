@@ -2,107 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/FitnessMachineServices.framework/FitnessMachineServices`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4f4d8` | `0x53a60` | **`+0x4588`** |
+| `__TEXT.__swift5_typeref` | `0x3398` | `0x414a` | **`+0xdb2`** |
+| `__TEXT.__const` | `0x35a8` | `0x3978` | **`+0x3d0`** |
+| `__AUTH_CONST.__const` | `0x2560` | `0x2848` | **`+0x2e8`** |
+| `__DATA.__bss` | `0x21b0` | `0x2308` | **`+0x158`** |
+| `__TEXT.__cstring` | `0x1fcb` | `0x210b` | **`+0x140`** |
+| `__DATA.__data` | `0x1228` | `0x1338` | **`+0x110`** |
+| `__TEXT.__unwind_info` | `0x1550` | `0x1650` | **`+0x100`** |
+| `__TEXT.__swift5_capture` | `0x8c4` | `0x994` | **`+0xd0`** |
+| `__AUTH.__objc_data` | `0x15a8` | `0x1658` | **`+0xb0`** |
+| `__TEXT.__oslogstring` | `0x1b00` | `0x1bb0` | **`+0xb0`** |
+| `__TEXT.__constg_swiftt` | `0x1200` | `0x12ac` | **`+0xac`** |
+| `__DATA_CONST.__objc_selrefs` | `0xd78` | `0xe18` | **`+0xa0`** |
+| `__AUTH_CONST.__cfstring` | `0x8a0` | `0x920` | **`+0x80`** |
+| `__DATA_CONST.__const` | `0x928` | `0x990` | **`+0x68`** |
+| `__TEXT.__eh_frame` | `0xa64` | `0xac4` | **`+0x60`** |
+| `__DATA_CONST.__got` | `0x658` | `0x6b0` | **`+0x58`** |
+| `__TEXT.__objc_methlist` | `0x1538` | `0x1590` | **`+0x58`** |
+| `__AUTH_CONST.__objc_const` | `0x2820` | `0x2868` | **`+0x48`** |
+| `__TEXT.__swift5_fieldmd` | `0xa3c` | `0xa78` | **`+0x3c`** |
+| `__AUTH.__data` | `0x8f8` | `0x928` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x1308` | `0x1330` | **`+0x28`** |
+| `__TEXT.__gcc_except_tab` | `0x458` | `0x478` | **`+0x20`** |
+| `__TEXT.__swift5_assocty` | `0x2b0` | `0x2c8` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x12c` | `0x140` | **`+0x14`** |
+| `__TEXT.__swift5_types` | `0x124` | `0x134` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x120` | `0x128` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x10c` | `0x114` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__swift5_reflstr`
+
+### Other Changes
 
 ```diff
 
 -2027.0.152.1.2
--  __TEXT.__text: 0x4d508
--  __TEXT.__objc_methlist: 0x1538
--  __TEXT.__const: 0x35a8
--  __TEXT.__cstring: 0x1fcb
--  __TEXT.__gcc_except_tab: 0x458
--  __TEXT.__oslogstring: 0x1b00
--  __TEXT.__swift5_typeref: 0x3398
--  __TEXT.__swift5_capture: 0x8c4
--  __TEXT.__constg_swiftt: 0x1200
 +2027.1.48.0.0
-+  __TEXT.__text: 0x51948
-+  __TEXT.__objc_methlist: 0x1590
-+  __TEXT.__const: 0x3978
-+  __TEXT.__cstring: 0x210b
-+  __TEXT.__gcc_except_tab: 0x478
-+  __TEXT.__oslogstring: 0x1bb0
-+  __TEXT.__swift5_typeref: 0x414a
-+  __TEXT.__swift5_capture: 0x994
-+  __TEXT.__constg_swiftt: 0x12ac
-   __TEXT.__swift5_reflstr: 0xcea
--  __TEXT.__swift5_assocty: 0x2b0
--  __TEXT.__swift5_fieldmd: 0xa3c
--  __TEXT.__swift5_builtin: 0x12c
--  __TEXT.__swift5_proto: 0x10c
--  __TEXT.__swift5_types: 0x124
-+  __TEXT.__swift5_assocty: 0x2c8
-+  __TEXT.__swift5_fieldmd: 0xa78
-+  __TEXT.__swift5_builtin: 0x140
-+  __TEXT.__swift5_proto: 0x114
-+  __TEXT.__swift5_types: 0x134
-   __TEXT.__swift_as_entry: 0x2c
-   __TEXT.__swift_as_ret: 0x14
-   __TEXT.__swift_as_cont: 0x28
-   __TEXT.__swift5_protos: 0xc
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x1c48
--  __TEXT.__eh_frame: 0xa64
-+  __TEXT.__unwind_info: 0x1d88
-+  __TEXT.__eh_frame: 0xac4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x928
--  __DATA_CONST.__objc_classlist: 0x120
-+  __DATA_CONST.__const: 0x990
-+  __DATA_CONST.__objc_classlist: 0x128
-   __DATA_CONST.__objc_protolist: 0xe8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xd78
-+  __DATA_CONST.__objc_selrefs: 0xe18
-   __DATA_CONST.__objc_protorefs: 0x88
-   __DATA_CONST.__objc_superrefs: 0x30
--  __DATA_CONST.__got: 0x658
--  __AUTH_CONST.__const: 0x2560
--  __AUTH_CONST.__cfstring: 0x8a0
--  __AUTH_CONST.__objc_const: 0x2820
-+  __DATA_CONST.__got: 0x6b0
-+  __AUTH_CONST.__const: 0x2848
-+  __AUTH_CONST.__cfstring: 0x920
-+  __AUTH_CONST.__objc_const: 0x2868
-   __AUTH_CONST.__objc_intobj: 0x18
--  __AUTH_CONST.__auth_got: 0x1308
--  __AUTH.__objc_data: 0x15a8
--  __AUTH.__data: 0x8f8
-+  __AUTH_CONST.__auth_got: 0x1330
-+  __AUTH.__objc_data: 0x1658
-+  __AUTH.__data: 0x928
-   __DATA.__objc_ivar: 0xd4
--  __DATA.__data: 0x1228
-+  __DATA.__data: 0x1338
-   __DATA.__common: 0x60
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 +  - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/DeveloperToolsSupport.framework/DeveloperToolsSupport
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/HealthKit.framework/HealthKit
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2213
--  Symbols:   5665
+-  Symbols:   5358
 -  CStrings:  323
 +  Functions: 2329
-+  Symbols:   5921
++  Symbols:   5594
 +  CStrings:  337
- 
 Symbols:
 + -[NLAPMachinePairingAlertUIController _muteGymKitForToday]
 + -[NLAPMachinePairingAlertUIController _openGymKitSettings]
@@ -328,26 +279,6 @@ Symbols:
 + _kNLAPConnectedGymPreferencesMutedDay
 + _kNLAPGymKitSettingsURLString
 + _notify_post
-+ _objc_msgSend$URLWithString:
-+ _objc_msgSend$_muteGymKitForToday
-+ _objc_msgSend$_openGymKitSettings
-+ _objc_msgSend$calendarWithIdentifier:
-+ _objc_msgSend$date
-+ _objc_msgSend$defaultWorkspace
-+ _objc_msgSend$length
-+ _objc_msgSend$localTimeZone
-+ _objc_msgSend$localeWithLocaleIdentifier:
-+ _objc_msgSend$makeHostingControllerWithMuteHandler:
-+ _objc_msgSend$openSensitiveURL:withOptions:error:
-+ _objc_msgSend$persistentDomainForName:
-+ _objc_msgSend$setCalendar:
-+ _objc_msgSend$setDateFormat:
-+ _objc_msgSend$setLocale:
-+ _objc_msgSend$setTimeZone:
-+ _objc_msgSend$showMuteGymKitView
-+ _objc_msgSend$standardUserDefaults
-+ _objc_msgSend$stringFromDate:
-+ _objc_msgSend$tertiarySystemFillColor
 + _symbolic _____ 22FitnessMachineServices04$s22ab12Services0033B105PairingMuteViewswift_DbGHjfMX104_0_33_D27B23641DB8C43CC3D5E69A29A09F50Ll7PreviewfMf_15PreviewRegistryfMu_V
 + _symbolic _____ 22FitnessMachineServices0B15PairingMuteViewV
 + _symbolic _____ 22FitnessMachineServices0B25PairingMuteViewControllerC

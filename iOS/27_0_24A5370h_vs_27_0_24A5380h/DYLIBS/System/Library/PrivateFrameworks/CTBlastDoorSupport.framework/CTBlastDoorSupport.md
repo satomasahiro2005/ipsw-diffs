@@ -2,75 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/CTBlastDoorSupport.framework/CTBlastDoorSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x610` | `0x48` | **`-0x5c8`** |
+| `__DATA_DIRTY.__objc_data` | `—` | `0x5c8` | **`+0x5c8`** |
+| `__DATA.__bss` | `0x4d00` | `0x4800` | **`-0x500`** |
+| `__DATA_DIRTY.__bss` | `—` | `0x500` | **`+0x500`** |
+| `__DATA_DIRTY.__data` | `—` | `0x218` | **`+0x218`** |
+| `__TEXT.__text` | `0x6965c` | `0x69868` | **`+0x20c`** |
+| `__DATA.__data` | `0xd58` | `0xb68` | **`-0x1f0`** |
+| `__AUTH.__data` | `0x248` | `0x220` | **`-0x28`** |
+| `__DATA_CONST.__got` | `0x728` | `0x750` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x3ac8` | `0x3ab8` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x16f8` | `0x1700` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x6965c
-+  __TEXT.__text: 0x69868
-   __TEXT.__objc_methlist: 0x4ec
-   __TEXT.__gcc_except_tab: 0x386c
-   __TEXT.__cstring: 0x35c
+-13473.1.0.0.0
++13478.3.1.3.0
 
-   __TEXT.__oslogstring: 0x14e
-   __TEXT.__swift5_protos: 0x50
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0x3ac8
-+  __TEXT.__unwind_info: 0x3ab8
-   __TEXT.__eh_frame: 0x6508
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0xd8
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x90
--  __DATA_CONST.__got: 0x728
-+  __DATA_CONST.__got: 0x750
-   __AUTH_CONST.__const: 0x46e0
-   __AUTH_CONST.__objc_const: 0xf38
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__auth_got: 0x16f8
--  __AUTH.__objc_data: 0x610
--  __AUTH.__data: 0x248
-+  __AUTH_CONST.__auth_got: 0x1700
-+  __AUTH.__objc_data: 0x48
-+  __AUTH.__data: 0x220
-   __DATA.__objc_ivar: 0x48
--  __DATA.__data: 0xd58
--  __DATA.__bss: 0x4d00
-+  __DATA.__data: 0xb68
-+  __DATA.__bss: 0x4800
-+  __DATA_DIRTY.__objc_data: 0x5c8
-+  __DATA_DIRTY.__data: 0x218
-+  __DATA_DIRTY.__bss: 0x500
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/BlastDoor.framework/BlastDoor
-   - /System/Library/PrivateFrameworks/SymptomDiagnosticReporter.framework/SymptomDiagnosticReporter
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2872
--  Symbols:   4094
+-  Symbols:   2545
 +  Functions: 2876
-+  Symbols:   4096
-   CStrings:  37
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
++  Symbols:   2546
 Symbols:
 + GCC_except_table151
 + GCC_except_table1553
@@ -119,5 +77,4 @@ Symbols:
 - GCC_except_table240
 - GCC_except_table248
 - GCC_except_table53
-
 ```

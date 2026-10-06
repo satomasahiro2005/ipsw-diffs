@@ -2,24 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/RoyaReplayCore.framework/RoyaReplayCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1d740` | `0x1d74c` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
- 47.0.1.0.1
--  __TEXT.__text: 0x1d740
-+  __TEXT.__text: 0x1d74c
-   __TEXT.__objc_methlist: 0x1bbc
-   __TEXT.__const: 0x200
-   __TEXT.__gcc_except_tab: 0x32e0
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 719
--  Symbols:   2078
+-  Symbols:   1769
 +  Functions: 720
-+  Symbols:   2079
-   CStrings:  176
- 
++  Symbols:   1770
 Symbols:
 + _OUTLINED_FUNCTION_4
 Functions:

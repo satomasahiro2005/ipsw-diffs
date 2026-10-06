@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/APFoundation.framework/APFoundation`
 
-```diff
+### Section Size Changes
 
- 557.1.33.0.0
--  __TEXT.__text: 0x1ec590
-+  __TEXT.__text: 0x1ec5c8
-   __TEXT.__objc_methlist: 0x46bc
-   __TEXT.__const: 0xb480
-   __TEXT.__cstring: 0x462d
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ec590` | `0x1ec5c8` | **`+0x38`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1dbc3afe4 -> sub_1dc2c0fe4 : 356 -> 360
 ~ sub_1dbc3e44c -> sub_1dc2c4450 : 692 -> 696

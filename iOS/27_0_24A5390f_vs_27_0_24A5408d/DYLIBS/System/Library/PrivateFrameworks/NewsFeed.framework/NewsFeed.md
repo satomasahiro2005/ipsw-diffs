@@ -2,104 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/NewsFeed.framework/NewsFeed`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1831e68` | `0x1835708` | **`+0x38a0`** |
+| `__AUTH_CONST.__const` | `0x11f4b9` | `0x11f841` | **`+0x388`** |
+| `__TEXT.__eh_frame` | `0x95660` | `0x95904` | **`+0x2a4`** |
+| `__TEXT.__const` | `0x151c34` | `0x151e04` | **`+0x1d0`** |
+| `__DATA.__bss` | `0x1328c8` | `0x132a48` | **`+0x180`** |
+| `__AUTH_CONST.__objc_const` | `0x50f58` | `0x510c0` | **`+0x168`** |
+| `__TEXT.__cstring` | `0x3b2ff` | `0x3b43f` | **`+0x140`** |
+| `__TEXT.__unwind_info` | `0x53e48` | `0x53f88` | **`+0x140`** |
+| `__TEXT.__oslogstring` | `0x8ba7` | `0x8cc7` | **`+0x120`** |
+| `__TEXT.__swift5_reflstr` | `0x3ca46` | `0x3cb46` | **`+0x100`** |
+| `__TEXT.__swift5_fieldmd` | `0x5447c` | `0x54574` | **`+0xf8`** |
+| `__TEXT.__constg_swiftt` | `0x3cd3c` | `0x3ce24` | **`+0xe8`** |
+| `__AUTH.__objc_data` | `0xbd88` | `0xbe58` | **`+0xd0`** |
+| `__TEXT.__swift5_capture` | `0x36780` | `0x36844` | **`+0xc4`** |
+| `__AUTH.__data` | `0x11318` | `0x113d8` | **`+0xc0`** |
+| `__TEXT.__objc_methlist` | `0xbbb8` | `0xbbf8` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x83f8` | `0x83c0` | **`-0x38`** |
+| `__DATA.__data` | `0x235b0` | `0x235e0` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x43e0` | `0x4410` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x5330` | `0x5310` | **`-0x20`** |
+| `__DATA_DIRTY.__data` | `0x4ba30` | `0x4ba10` | **`-0x20`** |
+| `__TEXT.__swift5_assocty` | `0x9cd8` | `0x9cf0` | **`+0x18`** |
+| `__TEXT.__swift_as_entry` | `0xd68` | `0xd7c` | **`+0x14`** |
+| `__TEXT.__swift_as_ret` | `0xe1c` | `0xe30` | **`+0x14`** |
+| `__TEXT.__swift5_typeref` | `0x2cb9c` | `0x2cb8c` | **`-0x10`** |
+| `__TEXT.__swift5_types` | `0x53b4` | `0x53c4` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x11d60` | `0x11d6c` | **`+0xc`** |
+| `__TEXT.__swift_as_cont` | `0x2d64` | `0x2d58` | **`-0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x1f68` | `0x1f70` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7e08` | `0x7e10` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -5926.0.0.0.0
--  __TEXT.__text: 0x1831e68
 +5934.2.0.0.0
-+  __TEXT.__text: 0x1835708
-   __TEXT.__delay_helper: 0x1f4
--  __TEXT.__objc_methlist: 0xbbb8
--  __TEXT.__const: 0x151c34
--  __TEXT.__cstring: 0x3b2ff
--  __TEXT.__oslogstring: 0x8ba7
--  __TEXT.__constg_swiftt: 0x3cd3c
--  __TEXT.__swift5_typeref: 0x2cb9c
--  __TEXT.__swift5_reflstr: 0x3ca46
--  __TEXT.__swift5_fieldmd: 0x5447c
-+  __TEXT.__objc_methlist: 0xbbf8
-+  __TEXT.__const: 0x151e04
-+  __TEXT.__cstring: 0x3b43f
-+  __TEXT.__oslogstring: 0x8cc7
-+  __TEXT.__constg_swiftt: 0x3ce24
-+  __TEXT.__swift5_typeref: 0x2cb8c
-+  __TEXT.__swift5_reflstr: 0x3cb46
-+  __TEXT.__swift5_fieldmd: 0x54574
-   __TEXT.__swift5_builtin: 0x1f2c
--  __TEXT.__swift5_assocty: 0x9cd8
--  __TEXT.__swift5_proto: 0x11d60
--  __TEXT.__swift5_types: 0x53b4
--  __TEXT.__swift5_capture: 0x36780
-+  __TEXT.__swift5_assocty: 0x9cf0
-+  __TEXT.__swift5_proto: 0x11d6c
-+  __TEXT.__swift5_types: 0x53c4
-+  __TEXT.__swift5_capture: 0x36844
-   __TEXT.__swift5_protos: 0x670
--  __TEXT.__swift_as_entry: 0xd68
--  __TEXT.__swift_as_ret: 0xe1c
--  __TEXT.__swift_as_cont: 0x2d64
-+  __TEXT.__swift_as_entry: 0xd7c
-+  __TEXT.__swift_as_ret: 0xe30
-+  __TEXT.__swift_as_cont: 0x2d58
-   __TEXT.__swift5_mpenum: 0x15d8
--  __TEXT.__unwind_info: 0x53e48
--  __TEXT.__eh_frame: 0x95660
-+  __TEXT.__unwind_info: 0x53f88
-+  __TEXT.__eh_frame: 0x95904
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x43e0
--  __DATA_CONST.__objc_classlist: 0x1f68
-+  __DATA_CONST.__const: 0x4410
-+  __DATA_CONST.__objc_classlist: 0x1f70
-   __DATA_CONST.__objc_catlist: 0x50
-   __DATA_CONST.__objc_catlist2: 0x10
-   __DATA_CONST.__objc_protolist: 0x888
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7e08
-+  __DATA_CONST.__objc_selrefs: 0x7e10
-   __DATA_CONST.__objc_protorefs: 0x4a8
-   __DATA_CONST.__objc_superrefs: 0x40
--  __DATA_CONST.__got: 0x5330
--  __AUTH_CONST.__const: 0x11f4b9
-+  __DATA_CONST.__got: 0x5310
-+  __AUTH_CONST.__const: 0x11f841
-   __AUTH_CONST.__cfstring: 0xa0
--  __AUTH_CONST.__objc_const: 0x50f58
--  __AUTH_CONST.__auth_got: 0x83f8
--  __AUTH.__objc_data: 0xbd88
--  __AUTH.__data: 0x11318
-+  __AUTH_CONST.__objc_const: 0x510c0
-+  __AUTH_CONST.__auth_got: 0x83c0
-+  __AUTH.__objc_data: 0xbe58
-+  __AUTH.__data: 0x113d8
-   __DATA.__objc_ivar: 0x50
--  __DATA.__data: 0x235b0
-+  __DATA.__data: 0x235e0
-   __DATA.__objc_stublist: 0x58
--  __DATA.__bss: 0x1328c8
-+  __DATA.__bss: 0x132a48
-   __DATA.__common: 0x850
-   __DATA_DIRTY.__objc_data: 0x5d18
--  __DATA_DIRTY.__data: 0x4ba30
-+  __DATA_DIRTY.__data: 0x4ba10
-   __DATA_DIRTY.__bss: 0xc8190
-   __DATA_DIRTY.__common: 0xcc0
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 119487
--  Symbols:   27586
+-  Symbols:   24992
 -  CStrings:  6761
 +  Functions: 119587
-+  Symbols:   27610
++  Symbols:   25016
 +  CStrings:  6770
- 
 Symbols:
 + _FCThumbnailForHeadline
 + _OBJC_CLASS_$__TtC8NewsFeed37SharingArticleImageActivityItemSource
@@ -124,10 +74,6 @@ Symbols:
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE23scrollContentBackgroundyQrAA10VisibilityOFQOyAcAE16listRowSeparator_5edgesQrAF_AA12VerticalEdgeO3SetVtFQOyAA08ModifiedE0VyAcAE0H5StyleyQrqd__AA04ListP0Rd__lFQOyAA0Q0Vys5NeverOAA05TupleE0VyAA7ForEachVySay8NewsFeed0W8ItemType_pGSSAcAEAG_AHQrAF_ALtFQOyAY011DebugFormatwxC0V_Qo_G_AcAEAG_AHQrAF_ALtFQOyAY0z25FormatBindingTreeSelectorC0V_Qo_SgAcAEAG_AHQrAF_ALtFQOyAY0z23FormatBindingTreeOptionC0V_Qo_SgAXySayAY0Z22FormatPackageInventoryCGSSAY0z17FormatBindingTreeiC0VGAXySayAY0Z26FormatEditorWorkspaceGroupVGSSAcAEAG_AHQrAF_ALtFQOyAY0z25FormatBindingTreeSubgroupC0V_Qo_GSgQPGSgG_AA05PlainqP0VQo_AA30_EnvironmentKeyWritingModifierVyAA08AnyShapeP0VSgGG_Qo__Qo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE23scrollContentBackgroundyQrAA10VisibilityOFQOyAcAE16listRowSeparator_5edgesQrAF_AA12VerticalEdgeO3SetVtFQOyAA08ModifiedE0VyAcAE0H5StyleyQrqd__AA04ListP0Rd__lFQOyAA0Q0Vys5NeverOAA05TupleE0VyAcAEAG_AHQrAF_ALtFQOy8NewsFeed033DebugFormatInventoryTreeWorkspaceC0V_Qo__AA7ForEachVySayAW0vwX11PackageRoleOGSSAcAEAOyQrqd__AaPRd__lFQOyAcAEAG_AHQrAF_ALtFQOyAW0vwxy4RoleC0V_Qo__AA012InsetGroupedqP0VQo_GQPGG_AA05PlainqP0VQo_AA30_EnvironmentKeyWritingModifierVyAA08AnyShapeP0VSgGG_Qo__Qo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE23scrollContentBackgroundyQrAA10VisibilityOFQOyAcAE9listStyleyQrqd__AA04ListI0Rd__lFQOyAA0J0Vys5NeverOAA08ModifiedE0VyAcAE0H12RowSeparator_5edgesQrAF_AA12VerticalEdgeO3SetVtFQOy8NewsFeed034DebugFormatLayoutTreeTraceChildrenC033_7E5B76AECE2FCEA66BE836E2F0749841LLV_Qo_AA21_TraitWritingModifierVyAA0jmF8TraitKeyVGGG_AA05PlainjI0VQo__Qo_HO
-+ _objc_msgSend$initWithContext:URL:canBecomeFocused:canBecomeFirstResponder:
-+ _objc_msgSend$pocketInsetsForSafeArea
-+ _objc_msgSend$setPocketInsetsForSafeArea:
-+ _objc_msgSend$setToolbarIntegration:
 + _symbolic SbIeAgHr_
 + _symbolic Sdyc
 + _symbolic _____ 5TeaUI25MastheadViewLayoutOptionsV
@@ -161,10 +107,6 @@ Symbols:
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE23scrollContentBackgroundyQrAA10VisibilityOFQOyAcAE0D15EdgeEffectStyle_3forQrAA06ScrollhiJ0VSg_AA0H0O3SetVtFQOyAcAEAG_AHQrAK_AOtFQOyAcAE16listRowSeparator_5edgesQrAF_AA08VerticalH0OANVtFQOyAA08ModifiedE0VyAVyAA15DisclosureGroupVy8NewsFeed024DebugFormatWorkspaceTreez6HeaderC0VAA05TupleE0VyAVyAVyAVyAVyAY0xyw5AsyncC0VAA21_TraitWritingModifierVyAA04ListO14InsetsTraitKeyVGGA5_yAA24IsDeleteDisabledTraitKeyVGGA5_yAA22IsMoveDisabledTraitKeyVGGA5_yAA04ListoF8TraitKeyVGG_A21_SgAVyAVyAVyAVyAA7ForEachVySaySi6offset_AY0W8ItemType_pSgyYaKc7elementtGSiAY0xyw9ItemAsyncC0VGA8_GA12_GA16_GA20_GAVyAVyAVyAVyAVyAVyA24_ySayAY0xY16PackageInventoryCGSSAY0xy7PackageC0VGA5_yAA16OnDeleteTraitKeyVGGA5_yAA14OnMoveTraitKeyVGGA12_GA16_GA8_GA20_GAVyAVyAVyAVyAVyAVyA24_ySayAY0xyzU0VGSSA41_GA45_GA49_GA12_GA16_GA8_GA20_GQPGGA8_GA20_G_Qo__Qo__Qo__Qo_HO
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE23scrollContentBackgroundyQrAA10VisibilityOFQOyAcAE0D15EdgeEffectStyle_3forQrAA06ScrollhiJ0VSg_AA0H0O3SetVtFQOyAcAEAG_AHQrAK_AOtFQOyAcAE16listRowSeparator_5edgesQrAF_AA08VerticalH0OANVtFQOyAA08ModifiedE0VyAcAE0nJ0yQrqd__AA04ListJ0Rd__lFQOyAA0T0Vys5NeverOAA05TupleE0VyAA7ForEachVySay8NewsFeed0Z8ItemType_pGSSAcAEAP_AQQrAF_ATtFQOyA5_011DebugFormatz4ItemC0V_Qo_G_AcAEAP_AQQrAF_ATtFQOyA5_030DebugFormatBindingTreeSelectorC0V_Qo_SgAcAEAP_AQQrAF_ATtFQOyA5_028DebugFormatBindingTreeOptionC0V_Qo_SgA4_ySayA5_27DebugFormatPackageInventoryCGSSA5_022DebugFormatBindingTreeoC0VGA4_ySayA5_31DebugFormatEditorWorkspaceGroupVGSSAcAEAP_AQQrAF_ATtFQOyA5_030DebugFormatBindingTreeSubgroupC0V_Qo_GSgQPGSgG_AA05PlaintJ0VQo_AA30_EnvironmentKeyWritingModifierVyAA08AnyShapeJ0VSgGG_Qo__Qo__Qo__Qo_HO
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE23scrollContentBackgroundyQrAA10VisibilityOFQOyAcAE0D15EdgeEffectStyle_3forQrAA06ScrollhiJ0VSg_AA0H0O3SetVtFQOyAcAEAG_AHQrAK_AOtFQOyAcAE16listRowSeparator_5edgesQrAF_AA08VerticalH0OANVtFQOyAA08ModifiedE0VyAcAE0nJ0yQrqd__AA04ListJ0Rd__lFQOyAA0T0Vys5NeverOAA05TupleE0VyAcAEAP_AQQrAF_ATtFQOy8NewsFeed033DebugFormatInventoryTreeWorkspaceC0V_Qo__AA7ForEachVySayA3_0yZ20InventoryPackageRoleOGSSAcAEAWyQrqd__AaXRd__lFQOyAcAEAP_AQQrAF_ATtFQOyA3_0yz17InventoryTreeRoleC0V_Qo__AA012InsetGroupedtJ0VQo_GQPGG_AA05PlaintJ0VQo_AA30_EnvironmentKeyWritingModifierVyAA08AnyShapeJ0VSgGG_Qo__Qo__Qo__Qo_HO
-- _objc_msgSend$bottomEdgeEffect
-- _objc_msgSend$hardStyle
-- _objc_msgSend$initWithContext:URL:canBecomeFocused:
-- _objc_msgSend$topEdgeEffect
 - _symbolic _____ 7Network13NWPathMonitorC
 - _symbolic _____y18FeedServiceContext_____Qz______y_____y0aB6ConfigACQzGGtSgG 13TeaFoundation6AtomicC 8NewsFeed0E24ServiceConfigFetcherTypeP AA7PromiseC AD0eF11FetchResultO
 - _symbolic _____yAAyAAy_____y_____y_____yAAy_____y_____y__________y_____ySay_____GSSAAyAAy_____y______Qo______y_____GGAJy_____GGG_____yAAyAAy__________G_____y_____GG_Qo_GSgG______Qo_AUy_____SgGG_Qo__Qo__Qo_ALG_____y_____GGAUy_____GG 7SwiftUI15ModifiedContentV AA4ViewPAAE21scrollEdgeEffectStyle_3forQrAA06ScrollghI0VSg_AA0G0O3SetVtFQO AeAE0fD10BackgroundyQrAA10VisibilityOFQO AeAE16listRowSeparator_5edgesQrAQ_AA08VerticalG0OAMVtFQO AeAE0oI0yQrqd__AA04ListI0Rd__lFQO AA0T0V s5NeverO AA012_ConditionalD0V AA7ForEachV 8NewsFeed28FormatDebuggerScriptVariableV AeAEAR_ASQrAQ_AVtFQO A5_037DebugFormatDebuggerScriptTreeVariableE0V AA21_TraitWritingModifierV AA0tpM8TraitKeyV AA0tP14InsetsTraitKeyV AeAEAR_ASQrAQ_AVtFQO AA4TextV AA16_FlexFrameLayoutV AA30_EnvironmentKeyWritingModifierV AA13TextAlignmentO AA05PlaintI0V AA08AnyShapeI0V AA01_mI8ModifierV AA5ColorV 12CoreGraphics7CGFloatV

@@ -2,74 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/Visage.framework/Visage`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9c534` | `0x9d8cc` | **`+0x1398`** |
+| `__TEXT.__oslogstring` | `0x5dff` | `0x6451` | **`+0x652`** |
+| `__AUTH_CONST.__cfstring` | `0x4700` | `0x48a0` | **`+0x1a0`** |
+| `__AUTH_CONST.__objc_const` | `0xa1b0` | `0xa2e8` | **`+0x138`** |
+| `__TEXT.__cstring` | `0x5548` | `0x565c` | **`+0x114`** |
+| `__DATA_CONST.__const` | `0x530` | `0x5d0` | **`+0xa0`** |
+| `__TEXT.__objc_methlist` | `0x4584` | `0x461c` | **`+0x98`** |
+| `__TEXT.__gcc_except_tab` | `0xf3d0` | `0xf450` | **`+0x80`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2740` | `0x27b0` | **`+0x70`** |
+| `__TEXT.__unwind_info` | `0x3790` | `0x37e8` | **`+0x58`** |
+| `__DATA.__bss` | `0x280` | `0x2a0` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x73c` | `0x758` | **`+0x1c`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x138` | `0x150` | **`+0x18`** |
+| `__DATA_CONST.__objc_arraydata` | `0xf8` | `0x110` | **`+0x18`** |
+| `__TEXT.__const` | `0x34d0` | `0x34e0` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -279.0.11.0.0
--  __TEXT.__text: 0x9c534
--  __TEXT.__objc_methlist: 0x4584
--  __TEXT.__const: 0x34d0
--  __TEXT.__gcc_except_tab: 0xf3d0
--  __TEXT.__cstring: 0x5548
--  __TEXT.__oslogstring: 0x5dff
--  __TEXT.__unwind_info: 0x3790
 +279.0.13.0.0
-+  __TEXT.__text: 0x9d8cc
-+  __TEXT.__objc_methlist: 0x461c
-+  __TEXT.__const: 0x34e0
-+  __TEXT.__gcc_except_tab: 0xf450
-+  __TEXT.__cstring: 0x565c
-+  __TEXT.__oslogstring: 0x6451
-+  __TEXT.__unwind_info: 0x37e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x530
-+  __DATA_CONST.__const: 0x5d0
-   __DATA_CONST.__objc_classlist: 0x320
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x20
--  __DATA_CONST.__objc_selrefs: 0x2740
-+  __DATA_CONST.__objc_selrefs: 0x27b0
-   __DATA_CONST.__objc_superrefs: 0x1e0
--  __DATA_CONST.__objc_arraydata: 0xf8
-+  __DATA_CONST.__objc_arraydata: 0x110
-   __DATA_CONST.__got: 0x7b8
-   __AUTH_CONST.__const: 0x8e8
--  __AUTH_CONST.__cfstring: 0x4700
--  __AUTH_CONST.__objc_const: 0xa1b0
-+  __AUTH_CONST.__cfstring: 0x48a0
-+  __AUTH_CONST.__objc_const: 0xa2e8
-   __AUTH_CONST.__weak_auth_got: 0x100
-   __AUTH_CONST.__objc_floatobj: 0xc0
--  __AUTH_CONST.__objc_arrayobj: 0x138
-+  __AUTH_CONST.__objc_arrayobj: 0x150
-   __AUTH_CONST.__objc_intobj: 0x558
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0x1f40
--  __DATA.__objc_ivar: 0x73c
-+  __DATA.__objc_ivar: 0x758
-   __DATA.__data: 0x520
-   __DATA.__common: 0x8
--  __DATA.__bss: 0x280
-+  __DATA.__bss: 0x2a0
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 3070
--  Symbols:   6106
+-  Symbols:   5116
 -  CStrings:  1393
 +  Functions: 3090
-+  Symbols:   6144
++  Symbols:   5145
 +  CStrings:  1437
- 
 Symbols:
 + +[VGHRTFAssetManager getAssetForEnrollmentMode:error:]
 + -[VGHRTFEarPCACaptureProcessor initWithDebugDataPath:withModelsRootPath:useDepth:rectifyColor:]
@@ -138,17 +103,6 @@ Symbols:
 + ____ZN2vg4hrtf6detailL32sortByContentThenMasteredVersionEP7NSArrayIP7MAAssetE_block_invoke
 + ___block_descriptor_40_e34_B24?0"MAAsset"8"NSDictionary"16l
 + ___block_descriptor_56_e5_v8?0l
-+ _objc_msgSend$caseInsensitiveCompare:
-+ _objc_msgSend$getAssetForEnrollmentMode:error:
-+ _objc_msgSend$initWithDebugDataPath:useDepth:rectifyColor:
-+ _objc_msgSend$initWithDebugDataPath:withModelsRootPath:useDepth:rectifyColor:
-+ _objc_msgSend$modelSource
-+ _objc_msgSend$rectifyRGBOnlyColor
-+ _objc_msgSend$resolveModelSource
-+ _objc_msgSend$setupWithConfig:applyDefaults:error:
-+ _objc_msgSend$shouldRectifyColor
-+ _objc_msgSend$useFrameworkResourcePath
-+ _objc_msgSend$useLocalModels
 - -[VGHRTFEarPCACaptureProcessor initWithDebugDataPath:withModelsRootPath:useDepth:]
 - -[VGHRTFFaceCaptureProcessor initWithDebugDataPath:useDepth:]
 - -[VGHRTFSessionConfig setUseDepth:]
@@ -187,8 +141,6 @@ Symbols:
 - ____ZN2vg4hrtf6detailL22filterAssetsWithLatestEP7NSArrayIP7MAAssetEl_block_invoke
 - ____ZN2vg4hrtf6detailL23filterAssetsWithVersionEP7NSArrayIP7MAAssetEll_block_invoke
 - ___block_descriptor_32_e34_B24?0"MAAsset"8"NSDictionary"16l
-- _objc_msgSend$initWithDebugDataPath:useDepth:
-- _objc_msgSend$initWithDebugDataPath:withModelsRootPath:useDepth:
 CStrings:
 + " Failed to compile HRTF DTF model at: %s "
 + " Failed to compile HRTF DTFBias model at: %s "

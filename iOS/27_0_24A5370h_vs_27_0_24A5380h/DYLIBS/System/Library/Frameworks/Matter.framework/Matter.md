@@ -2,88 +2,42 @@
 
 > `/System/Library/Frameworks/Matter.framework/Matter`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x80e9c8` | `0x835010` | **`+0x26648`** |
+| `__TEXT.__gcc_except_tab` | `0xbb6d4` | `0xc030c` | **`+0x4c38`** |
+| `__AUTH_CONST.__objc_const` | `0x6f880` | `0x73328` | **`+0x3aa8`** |
+| `__TEXT.__objc_methlist` | `0x59994` | `0x5c054` | **`+0x26c0`** |
+| `__TEXT.__unwind_info` | `0x4e9f8` | `0x50200` | **`+0x1808`** |
+| `__AUTH.__objc_data` | `0x1cc00` | `0x1db50` | **`+0xf50`** |
+| `__TEXT.__cstring` | `0x2ec96` | `0x2fa0c` | **`+0xd76`** |
+| `__AUTH_CONST.__cfstring` | `0x16fa0` | `0x17ae0` | **`+0xb40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1b7d0` | `0x1c008` | **`+0x838`** |
+| `__DATA.__objc_ivar` | `0x3c48` | `0x3e64` | **`+0x21c`** |
+| `__AUTH_CONST.__objc_intobj` | `0x67c8` | `0x6990` | **`+0x1c8`** |
+| `__DATA_CONST.__const` | `0x128c8` | `0x12a88` | **`+0x1c0`** |
+| `__DATA_CONST.__objc_classlist` | `0x2e00` | `0x2f88` | **`+0x188`** |
+| `__DATA_CONST.__got` | `0x2188` | `0x22c8` | **`+0x140`** |
+| `__DATA_CONST.__objc_superrefs` | `0x2038` | `0x2160` | **`+0x128`** |
+| `__TEXT.__oslogstring` | `0x1b0de` | `0x1b1c6` | **`+0xe8`** |
+| `__TEXT.__const` | `0x63179` | `0x63239` | **`+0xc0`** |
+| `__AUTH_CONST.__const` | `0x1c3e8` | `0x1c420` | **`+0x38`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x80e9c8
--  __TEXT.__objc_methlist: 0x59994
--  __TEXT.__const: 0x63179
--  __TEXT.__gcc_except_tab: 0xbb6d4
--  __TEXT.__cstring: 0x2ec96
--  __TEXT.__oslogstring: 0x1b0de
-+  __TEXT.__text: 0x835010
-+  __TEXT.__objc_methlist: 0x5c054
-+  __TEXT.__const: 0x63239
-+  __TEXT.__gcc_except_tab: 0xc030c
-+  __TEXT.__cstring: 0x2fa0c
-+  __TEXT.__oslogstring: 0x1b1c6
-   __TEXT.__dlopen_cstrs: 0x45
--  __TEXT.__unwind_info: 0x4e9f8
-+  __TEXT.__unwind_info: 0x50200
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x128c8
--  __DATA_CONST.__objc_classlist: 0x2e00
-+  __DATA_CONST.__const: 0x12a88
-+  __DATA_CONST.__objc_classlist: 0x2f88
-   __DATA_CONST.__objc_protolist: 0xd0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1b7d0
-+  __DATA_CONST.__objc_selrefs: 0x1c008
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__objc_superrefs: 0x2038
-+  __DATA_CONST.__objc_superrefs: 0x2160
-   __DATA_CONST.__objc_arraydata: 0x38
--  __DATA_CONST.__got: 0x2188
--  __AUTH_CONST.__const: 0x1c3e8
--  __AUTH_CONST.__cfstring: 0x16fa0
--  __AUTH_CONST.__objc_const: 0x6f880
-+  __DATA_CONST.__got: 0x22c8
-+  __AUTH_CONST.__const: 0x1c420
-+  __AUTH_CONST.__cfstring: 0x17ae0
-+  __AUTH_CONST.__objc_const: 0x73328
-   __AUTH_CONST.__weak_auth_got: 0x38
--  __AUTH_CONST.__objc_intobj: 0x67c8
-+  __AUTH_CONST.__objc_intobj: 0x6990
-   __AUTH_CONST.__objc_arrayobj: 0x30
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__auth_got: 0x998
--  __AUTH.__objc_data: 0x1cc00
-+  __AUTH.__objc_data: 0x1db50
-   __AUTH.__data: 0x1a0
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x180
--  __DATA.__objc_ivar: 0x3c48
-+  __DATA.__objc_ivar: 0x3e64
-   __DATA.__data: 0x6110
-   __DATA.__bss: 0x8f68
-   __DATA.__common: 0x490
+-315.0.0.0.0
++320.1.0.0.0
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libdns_services.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 50883
 -  Symbols:   3292
--  CStrings:  11703
+-  CStrings:  8749
 +  Functions: 51797
 +  Symbols:   3387
-+  CStrings:  11899
- 
-Sections:
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
++  CStrings:  8855
 Symbols:
 + _OBJC_CLASS_$_MTRAVAnalysisClusterActivateAnalysisStreamParams
 + _OBJC_CLASS_$_MTRAVAnalysisClusterAnalysisSessionEndEvent
@@ -311,5 +265,4 @@ CStrings:
 - "ObjectCountReached"
 - "UnpoweredPhaseOverNFC"
 - "mStatus == Status::NotSynced"
-
 ```

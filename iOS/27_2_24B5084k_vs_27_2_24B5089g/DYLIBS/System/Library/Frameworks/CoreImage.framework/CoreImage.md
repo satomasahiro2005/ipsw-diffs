@@ -2,83 +2,39 @@
 
 > `/System/Library/Frameworks/CoreImage.framework/CoreImage`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x349f6c` | `0x34b1fc` | **`+0x1290`** |
+| `__AUTH.__objc_data` | `0x9dd0` | `0x9a88` | **`-0x348`** |
+| `__DATA_DIRTY.__objc_data` | `0x6e0` | `0xa28` | **`+0x348`** |
+| `__TEXT.__cstring` | `0x104a1a` | `0x104bb8` | **`+0x19e`** |
+| `__AUTH_CONST.__cfstring` | `0x1dba0` | `0x1dcc0` | **`+0x120`** |
+| `__TEXT.__oslogstring` | `0xb275` | `0xb37e` | **`+0x109`** |
+| `__DATA_CONST.__const` | `0x6528` | `0x65b8` | **`+0x90`** |
+| `__TEXT.__unwind_info` | `0xa8c0` | `0xa920` | **`+0x60`** |
+| `__TEXT.__dlopen_cstrs` | `0x3fd` | `0x445` | **`+0x48`** |
+| `__TEXT.__gcc_except_tab` | `0xa87c` | `0xa8b4` | **`+0x38`** |
+| `__TEXT.__objc_methlist` | `0x159d0` | `0x159f0` | **`+0x20`** |
+| `__DATA_DIRTY.__bss` | `0x688` | `0x6a0` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8e68` | `0x8e78` | **`+0x10`** |
+| `__DATA.__bss` | `0x3ae8` | `0x3ae0` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0xb20` | `0xb28` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1667.40.3.0.0
--  __TEXT.__text: 0x342700
--  __TEXT.__objc_methlist: 0x159d0
 +1667.40.5.0.0
-+  __TEXT.__text: 0x34396c
-+  __TEXT.__objc_methlist: 0x159f0
-   __TEXT.__const: 0xe198
--  __TEXT.__gcc_except_tab: 0xa87c
--  __TEXT.__cstring: 0x104a1a
--  __TEXT.__oslogstring: 0xb275
--  __TEXT.__dlopen_cstrs: 0x3fd
-+  __TEXT.__gcc_except_tab: 0xa8b4
-+  __TEXT.__cstring: 0x104bb8
-+  __TEXT.__oslogstring: 0xb37e
-+  __TEXT.__dlopen_cstrs: 0x445
-   __TEXT.__runtimeheader: 0x15aa4
-   __TEXT.__cikl2metal_pre: 0x54b
-   __TEXT.__grain: 0x105040
--  __TEXT.__unwind_info: 0xc800
-+  __TEXT.__unwind_info: 0xc860
-   __TEXT.__eh_frame: 0x350
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x6528
-+  __DATA_CONST.__const: 0x65b8
-   __DATA_CONST.__objc_classlist: 0x1078
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8e68
-+  __DATA_CONST.__objc_selrefs: 0x8e78
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x360
-   __DATA_CONST.__objc_arraydata: 0x1488
--  __DATA_CONST.__got: 0xb20
-+  __DATA_CONST.__got: 0xb28
-   __AUTH_CONST.__const: 0xde40
--  __AUTH_CONST.__cfstring: 0x1dba0
-+  __AUTH_CONST.__cfstring: 0x1dcc0
-   __AUTH_CONST.__objc_const: 0x2b4e0
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0xdc8
 
-   __AUTH_CONST.__objc_floatobj: 0x2e0
-   __AUTH_CONST.__objc_arrayobj: 0x198
-   __AUTH_CONST.__auth_got: 0x1898
--  __AUTH.__objc_data: 0x9dd0
-+  __AUTH.__objc_data: 0x9a88
-   __AUTH.__data: 0x278a0
-   __DATA.__objc_ivar: 0x1fc0
-   __DATA.__data: 0x67a8
-   __DATA.__common: 0x38
--  __DATA_DIRTY.__objc_data: 0x6e0
-+  __DATA_DIRTY.__objc_data: 0xa28
-   __DATA_DIRTY.__data: 0x4
-   __DATA_DIRTY.__crash_info: 0x148
--  __DATA_DIRTY.__bss: 0x688
-+  __DATA_DIRTY.__bss: 0x6a0
-   __DATA_DIRTY.__common: 0x22c
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/ColorSync.framework/ColorSync
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  Functions: 15173
--  Symbols:   28608
+-  Functions: 15174
+-  Symbols:   26357
 -  CStrings:  8883
-+  Functions: 15193
-+  Symbols:   28629
++  Functions: 15194
++  Symbols:   26377
 +  CStrings:  8900
- 
 Symbols:
 + -[CIImage isMonochrome]
 + -[CIRAWFilterImpl rawSensorPattern]
@@ -116,7 +72,6 @@ Symbols:
 + _audit_stringRawCamera
 + _getRCModelDownloadStartSymbolLoc
 + _getRCModelDownloadStartSymbolLoc.ptr
-+ _objc_msgSend$rawSensorPattern
 - GCC_except_table147
 - GCC_except_table157
 - GCC_except_table161

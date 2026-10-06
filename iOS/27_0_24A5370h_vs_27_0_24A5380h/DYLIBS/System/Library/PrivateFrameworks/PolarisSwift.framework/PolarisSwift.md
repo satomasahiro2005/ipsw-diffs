@@ -2,13 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/PolarisSwift.framework/PolarisSwift`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x4a` | `0x42` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__text: 0x0
--  __TEXT.__const: 0x4a
-+  __TEXT.__const: 0x42
-   __DATA_CONST.__const: 0x38
-   __DATA_CONST.__objc_imageinfo: 0x8
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
+-256.0.2.500.1
++256.0.3.0.0
 ```

@@ -2,8 +2,13 @@
 
 > `/System/Library/PrivateFrameworks/CMCapture.framework/BWPreviewStitcherNodeCoreImageArchive_bin.metallib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__reflection`
-- `__TEXT.__compute`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__compute` | `0x53440` | `0x53150` | **`-0x2f0`** |
+
+### Same-size Content Changes
+
 - `__TEXT.__metallib`
+- `__TEXT.__reflection`

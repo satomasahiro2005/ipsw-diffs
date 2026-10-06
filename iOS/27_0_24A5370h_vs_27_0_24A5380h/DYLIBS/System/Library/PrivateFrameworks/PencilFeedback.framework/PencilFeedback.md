@@ -2,54 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/PencilFeedback.framework/PencilFeedback`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__objc_selrefs` | `0x8d8` | `0x8d0` | **`-0x8`** |
+| `__TEXT.__text` | `0x7c98` | `0x7c90` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x7c98
-+  __TEXT.__text: 0x7c90
-   __TEXT.__objc_methlist: 0xed0
-   __TEXT.__const: 0x270
-   __TEXT.__oslogstring: 0xde
-
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x8d8
-+  __DATA_CONST.__objc_selrefs: 0x8d0
-   __DATA_CONST.__objc_superrefs: 0x48
-   __DATA_CONST.__objc_arraydata: 0x18
-   __DATA_CONST.__got: 0x120
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 307
--  Symbols:   1156
-+  Symbols:   1155
-   CStrings:  220
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
-Symbols:
-+ _objc_msgSend$initWithUpdateMode:spatialMode:audioSession:
-- _objc_msgSend$URLByDeletingLastPathComponent
-- _objc_msgSend$initWithUpdateMode:spatialMode:
+-10.0.0.0.0
++11.0.0.0.0
 Functions:
 ~ -[PFSoundGeneratorPHASE setupAudioEngine] : 1208 -> 1200
-
 ```

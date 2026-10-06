@@ -2,31 +2,27 @@
 
 > `com.apple.driver.AppleTypeCPhy`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x1306c` | `0x13558` | **`+0x4ec`** |
+| `__TEXT.__cstring` | `0x1970` | `0x19f7` | **`+0x87`** |
+| `__TEXT.__os_log` | `0x1440` | `0x149a` | **`+0x5a`** |
+
+### Other Changes
+
 ```diff
 
 -317.0.1.0.0
--  __TEXT.__cstring: 0x1970
 +317.40.3.0.0
-+  __TEXT.__cstring: 0x19f7
-   __TEXT.__const: 0x24
--  __TEXT.__os_log: 0x1440
--  __TEXT_EXEC.__text: 0x11f48
-+  __TEXT.__os_log: 0x149a
-+  __TEXT_EXEC.__text: 0x123bc
-   __TEXT_EXEC.__auth_stubs: 0x2d0
-   __DATA.__data: 0xc8
-   __DATA.__common: 0xd8
 
-   __DATA_CONST.__got: 0x88
-   Functions: 253
-   Symbols:   0
 -  CStrings:  178
 +  CStrings:  183
- 
 Functions:
-~ __ZN13AppleTypeCPhy5startEP9IOService : 3816 -> 4260
-~ sub_fffffe00099cedcc -> sub_fffffe0009ab2e48 : 264 -> 304
-~ __ZN13AppleTypeCPhy13configureUSB2E23AppleTypeCPhyPowerLevelj : 1440 -> 2096
+~ __ZN13AppleTypeCPhy5startEP9IOService : 4292 -> 4796
+~ sub_fffffff0099ba188 -> sub_fffffff009a7e560 : 276 -> 316
+~ __ZN13AppleTypeCPhy13configureUSB2E23AppleTypeCPhyPowerLevelj : 1608 -> 2324
 CStrings:
 + "%s@%s: %s::%s: failed to configure usb-repeater %s\n"
 + "%s@%s: %s::%s: found usb-repeater %s\n"

@@ -2,24 +2,18 @@
 
 > `com.apple.driver.AppleT8110DART`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0xffc0` | `0xfff8` | **`+0x38`** |
+
+### Other Changes
+
 ```diff
 
 -501.0.4.0.0
-+501.40.4.0.0
-   __TEXT.__const: 0x60
-   __TEXT.__cstring: 0x2961
--  __TEXT_EXEC.__text: 0xfbd8
-+  __TEXT_EXEC.__text: 0xfc10
-   __TEXT_EXEC.__auth_stubs: 0x320
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x38
-
-   __DATA_CONST.__kalloc_var: 0x410
-   __DATA_CONST.__auth_got: 0x190
-   __DATA_CONST.__got: 0x40
 -  Functions: 162
++501.40.4.0.0
 +  Functions: 164
-   Symbols:   0
-   CStrings:  235
- 
 ```

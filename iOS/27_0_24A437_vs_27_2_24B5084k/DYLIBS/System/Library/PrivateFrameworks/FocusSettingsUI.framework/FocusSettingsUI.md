@@ -2,69 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/FocusSettingsUI.framework/FocusSettingsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1deb5c` | `0x1df28c` | **`+0x730`** |
+| `__AUTH_CONST.__objc_const` | `0x5ce0` | `0x60e8` | **`+0x408`** |
+| `__TEXT.__unwind_info` | `0x4b50` | `0x4ad8` | **`-0x78`** |
+| `__TEXT.__cstring` | `0x4d3c` | `0x4d6d` | **`+0x31`** |
+| `__TEXT.__swift5_typeref` | `0x3de2b` | `0x3de07` | **`-0x24`** |
+| `__TEXT.__const` | `0x13f00` | `0x13f14` | **`+0x14`** |
+| `__DATA_CONST.__got` | `0x10f0` | `0x1100` | **`+0x10`** |
+| `__TEXT.__oslogstring` | `0x2755` | `0x275f` | **`+0xa`** |
+| `__AUTH.__data` | `0x5da0` | `0x5d98` | **`-0x8`** |
+| `__DATA.__data` | `0x8f70` | `0x8f78` | **`+0x8`** |
+| `__TEXT.__swift5_reflstr` | `0x3e6f` | `0x3e6e` | **`-0x1`** |
+
+### Other Changes
+
 ```diff
 
 -511.0.0.0.0
--  __TEXT.__text: 0x1d2fc0
 +511.2.3.0.0
-+  __TEXT.__text: 0x1d3654
-   __TEXT.__objc_methlist: 0xf18
--  __TEXT.__const: 0x13f00
-+  __TEXT.__const: 0x13f14
-   __TEXT.__gcc_except_tab: 0x5c
--  __TEXT.__cstring: 0x4d3c
--  __TEXT.__oslogstring: 0x2755
--  __TEXT.__swift5_typeref: 0x3de2b
-+  __TEXT.__cstring: 0x4d6d
-+  __TEXT.__oslogstring: 0x275f
-   __TEXT.__constg_swiftt: 0x5f3c
--  __TEXT.__swift5_reflstr: 0x3e6f
-+  __TEXT.__swift5_typeref: 0x3de07
-+  __TEXT.__swift5_reflstr: 0x3e6e
-   __TEXT.__swift5_fieldmd: 0x4280
-   __TEXT.__swift5_builtin: 0x190
-   __TEXT.__swift5_assocty: 0x1678
-   __TEXT.__swift5_capture: 0x1d9c
-   __TEXT.__swift5_proto: 0x564
-   __TEXT.__swift5_types: 0x454
--  __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift_as_entry: 0x4c
-   __TEXT.__swift_as_ret: 0x48
-   __TEXT.__swift_as_cont: 0xb8
-+  __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0x5e00
-+  __TEXT.__unwind_info: 0x5e08
-   __TEXT.__eh_frame: 0x2598
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0x1618
-   __DATA_CONST.__objc_protorefs: 0xb0
-   __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__got: 0x10f0
-+  __DATA_CONST.__got: 0x1100
-   __AUTH_CONST.__const: 0x8d58
-   __AUTH_CONST.__cfstring: 0x20
--  __AUTH_CONST.__objc_const: 0x5ce0
-+  __AUTH_CONST.__objc_const: 0x60e8
-   __AUTH_CONST.__auth_got: 0x1e48
-   __AUTH.__objc_data: 0x1a70
--  __AUTH.__data: 0x5da0
-+  __AUTH.__data: 0x5d98
-   __DATA.__objc_ivar: 0x10
--  __DATA.__data: 0x8f70
-+  __DATA.__data: 0x8f78
-   __DATA.__common: 0x1d0
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 7510
-   Symbols:   4894
 -  CStrings:  658
 +  CStrings:  659
- 
 Symbols:
 + ___swift_closure_destructor.61Tm
 + ___swift_closure_destructor.75Tm

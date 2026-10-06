@@ -2,29 +2,20 @@
 
 > `/usr/lib/libolaf.dylib`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x252a1c
-+  __TEXT.__text: 0x252a78
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__const: 0x3a268
-   __TEXT.__gcc_except_tab: 0x8b70
-   __TEXT.__cstring: 0x61511
--  __TEXT.__unwind_info: 0x3420
-+  __TEXT.__unwind_info: 0x3418
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x44be8
-   __DATA_CONST.__weak_got: 0x8
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__cstring : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__data : content changed
-~ __DATA_DIRTY.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x252a1c` | `0x252a78` | **`+0x5c`** |
+| `__TEXT.__unwind_info` | `0x3420` | `0x3418` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
+```diff
 Functions:
 ~ __Z10PERGetBitsP6sCoderh : 432 -> 420
 ~ __Z13ds_NK_SummaryP9s_GN_Ptrs : 49752 -> 49832
@@ -94,5 +85,4 @@ Functions:
 CStrings:
 + "Jun 23 2026"
 - "Jun 12 2026"
-
 ```

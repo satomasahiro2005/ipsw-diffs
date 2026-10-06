@@ -2,17 +2,20 @@
 
 > `/usr/libexec/finish_demo_restore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0xd0` | `0xe0` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_arraydata: 0x10
-   __DATA_CONST.__objc_arrayobj: 0x18
-   __DATA_CONST.__auth_got: 0x270
--  __DATA_CONST.__got: 0xd0
-+  __DATA_CONST.__got: 0xe0
-   __DATA.__objc_const: 0x318
-   __DATA.__objc_selrefs: 0x2f0
-   __DATA.__objc_ivar: 0x14
-Sections:
-~ __TEXT.__unwind_info : content changed
-
+-225.0.0.0.0
++227.0.0.0.0
 ```

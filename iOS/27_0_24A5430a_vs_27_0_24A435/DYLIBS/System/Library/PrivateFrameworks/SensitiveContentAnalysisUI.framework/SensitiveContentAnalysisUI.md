@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SensitiveContentAnalysisUI.framework/SensitiveContentAnalysisUI`
 
-```diff
+### Section Size Changes
 
- 151.0.0.0.0
--  __TEXT.__text: 0x21ceec
-+  __TEXT.__text: 0x21cf48
-   __TEXT.__objc_methlist: 0x2108
-   __TEXT.__const: 0x1a034
-   __TEXT.__cstring: 0x92e6
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21ceec` | `0x21cf48` | **`+0x5c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1c1d8b914 -> sub_1c226f914 : 1112 -> 1116
 ~ sub_1c1d8da64 -> sub_1c2271a68 : 740 -> 744

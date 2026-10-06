@@ -2,96 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/HeadphoneSettingsUI.framework/HeadphoneSettingsUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x23503c` | `0x22e3c4` | **`-0x6c78`** |
+| `__DATA.__bss` | `0x10ae8` | `0x103d8` | **`-0x710`** |
+| `__TEXT.__const` | `0xe4e4` | `0xdeb4` | **`-0x630`** |
+| `__AUTH_CONST.__const` | `0x127b0` | `0x125a8` | **`-0x208`** |
+| `__TEXT.__unwind_info` | `0x41f8` | `0x4138` | **`-0xc0`** |
+| `__TEXT.__swift5_proto` | `0xcbc` | `0xc0c` | **`-0xb0`** |
+| `__DATA.__data` | `0x3d48` | `0x3cc8` | **`-0x80`** |
+| `__TEXT.__swift5_assocty` | `0xe38` | `0xdc0` | **`-0x78`** |
+| `__TEXT.__swift5_capture` | `0x5828` | `0x5898` | **`+0x70`** |
+| `__TEXT.__swift5_reflstr` | `0x220b` | `0x21ab` | **`-0x60`** |
+| `__TEXT.__swift5_typeref` | `0xd45e` | `0xd418` | **`-0x46`** |
+| `__AUTH_CONST.__cfstring` | `0x32e0` | `0x3320` | **`+0x40`** |
+| `__TEXT.__constg_swiftt` | `0x4b40` | `0x4b04` | **`-0x3c`** |
+| `__TEXT.__swift5_fieldmd` | `0x2370` | `0x2338` | **`-0x38`** |
+| `__AUTH_CONST.__auth_got` | `0x2438` | `0x2420` | **`-0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2938` | `0x2920` | **`-0x18`** |
+| `__TEXT.__swift5_builtin` | `0x3c0` | `0x3ac` | **`-0x14`** |
+| `__DATA_CONST.__got` | `0x1090` | `0x1080` | **`-0x10`** |
+| `__TEXT.__swift5_types` | `0x548` | `0x538` | **`-0x10`** |
+| `__DATA.__common` | `0x5c0` | `0x5b8` | **`-0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -40.41.1.1.10
--  __TEXT.__text: 0x231d48
 +41.4.0.0.0
-+  __TEXT.__text: 0x22b0d0
-   __TEXT.__objc_methlist: 0x372c
--  __TEXT.__const: 0xe4e4
-+  __TEXT.__const: 0xdeb4
-   __TEXT.__cstring: 0xb03e
-   __TEXT.__gcc_except_tab: 0x578
-   __TEXT.__oslogstring: 0x6e0f
--  __TEXT.__swift5_typeref: 0xd45e
--  __TEXT.__swift5_capture: 0x5828
--  __TEXT.__swift5_reflstr: 0x220b
--  __TEXT.__swift5_assocty: 0xe38
--  __TEXT.__swift5_fieldmd: 0x2370
--  __TEXT.__constg_swiftt: 0x4b40
--  __TEXT.__swift5_builtin: 0x3c0
-+  __TEXT.__swift5_typeref: 0xd418
-+  __TEXT.__swift5_capture: 0x5898
-+  __TEXT.__swift5_reflstr: 0x21ab
-+  __TEXT.__swift5_assocty: 0xdc0
-+  __TEXT.__swift5_fieldmd: 0x2338
-+  __TEXT.__constg_swiftt: 0x4b04
-+  __TEXT.__swift5_builtin: 0x3ac
-   __TEXT.__swift5_protos: 0xa8
--  __TEXT.__swift5_proto: 0xcbc
--  __TEXT.__swift5_types: 0x548
-+  __TEXT.__swift5_proto: 0xc0c
-+  __TEXT.__swift5_types: 0x538
-   __TEXT.__swift_as_entry: 0xb8
-   __TEXT.__swift_as_ret: 0x7c
-   __TEXT.__swift_as_cont: 0x108
-   __TEXT.__swift5_mpenum: 0x2c
--  __TEXT.__unwind_info: 0x99c0
-+  __TEXT.__unwind_info: 0x9798
-   __TEXT.__eh_frame: 0x1798
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2938
-+  __DATA_CONST.__objc_selrefs: 0x2920
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__objc_superrefs: 0xf0
-   __DATA_CONST.__objc_arraydata: 0x248
--  __DATA_CONST.__got: 0x1090
--  __AUTH_CONST.__const: 0x127b0
--  __AUTH_CONST.__cfstring: 0x32e0
-+  __DATA_CONST.__got: 0x1080
-+  __AUTH_CONST.__const: 0x125a8
-+  __AUTH_CONST.__cfstring: 0x3320
-   __AUTH_CONST.__objc_const: 0xa8a0
-   __AUTH_CONST.__objc_intobj: 0x1e0
-   __AUTH_CONST.__objc_arrayobj: 0x108
-   __AUTH_CONST.__objc_doubleobj: 0xa0
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x2438
-+  __AUTH_CONST.__auth_got: 0x2420
-   __AUTH.__objc_data: 0x3108
-   __AUTH.__data: 0x2b88
-   __DATA.__objc_ivar: 0x68c
--  __DATA.__data: 0x3d48
-+  __DATA.__data: 0x3cc8
-   __DATA.__objc_stublist: 0x8
--  __DATA.__common: 0x5c0
-+  __DATA.__common: 0x5b8
-   __DATA_DIRTY.__objc_data: 0x668
-   __DATA_DIRTY.__data: 0x50
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9902
--  Symbols:   5168
+-  Symbols:   4175
 -  CStrings:  1811
 +  Functions: 9763
-+  Symbols:   5153
++  Symbols:   4163
 +  CStrings:  1789
- 
 Symbols:
-+ _objc_msgSend$bundleWithURL:
 + _swift_isEscapingClosureAtFileLocation
 + _symbolic Ig_
 - _OBJC_CLASS_$_CBControllerSettings
@@ -102,10 +55,6 @@ Symbols:
 - _associated conformance So13CBDeviceFlagsVs10SetAlgebraSCs25ExpressibleByArrayLiteral
 - _associated conformance So13CBDeviceFlagsVs9OptionSetSCSY
 - _associated conformance So13CBDeviceFlagsVs9OptionSetSCs0D7Algebra
-- _objc_msgSend$deviceFlags
-- _objc_msgSend$modifyControllerSettings:completionHandler:
-- _objc_msgSend$serialNumber
-- _objc_msgSend$setSpatialSoundProfileAllowed:
 - _os_variant_has_internal_ui
 - _symbolic _____ 19HeadphoneSettingsUI15InternalFeatureV
 - _symbolic _____ So13CBDeviceFlagsV

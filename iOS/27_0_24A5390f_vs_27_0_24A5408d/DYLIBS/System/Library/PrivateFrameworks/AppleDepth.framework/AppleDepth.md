@@ -2,78 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/AppleDepth.framework/AppleDepth`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x113fdc` | `0x114388` | **`+0x3ac`** |
+| `__TEXT.__gcc_except_tab` | `0x137a8` | `0x13818` | **`+0x70`** |
+| `__TEXT.__objc_methlist` | `0x7cfc` | `0x7d4c` | **`+0x50`** |
+| `__TEXT.__oslogstring` | `0xac83` | `0xacc8` | **`+0x45`** |
+| `__AUTH_CONST.__objc_const` | `0x13d30` | `0x13d70` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x40e0` | `0x4118` | **`+0x38`** |
+| `__AUTH_CONST.__const` | `0xae8` | `0xac8` | **`-0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3ca0` | `0x3cb0` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x138` | `0x128` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x870` | `0x878` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x4e0` | `0x4e8` | **`+0x8`** |
+| `__TEXT.__cstring` | `0xff4a` | `0xff51` | **`+0x7`** |
+| `__DATA.__objc_ivar` | `0x12d4` | `0x12d8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -173.0.0.0.0
--  __TEXT.__text: 0x113fdc
--  __TEXT.__objc_methlist: 0x7cfc
 +174.2.1.0.0
-+  __TEXT.__text: 0x114388
-+  __TEXT.__objc_methlist: 0x7d4c
-   __TEXT.__const: 0x1520
--  __TEXT.__gcc_except_tab: 0x137a8
--  __TEXT.__oslogstring: 0xac83
--  __TEXT.__cstring: 0xff4a
--  __TEXT.__unwind_info: 0x40e0
-+  __TEXT.__gcc_except_tab: 0x13818
-+  __TEXT.__oslogstring: 0xacc8
-+  __TEXT.__cstring: 0xff51
-+  __TEXT.__unwind_info: 0x4118
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x280
--  __DATA_CONST.__objc_selrefs: 0x3ca0
--  __DATA_CONST.__objc_superrefs: 0x4e0
-+  __DATA_CONST.__objc_selrefs: 0x3cb0
-+  __DATA_CONST.__objc_superrefs: 0x4e8
-   __DATA_CONST.__objc_arraydata: 0x250
--  __DATA_CONST.__got: 0x870
--  __AUTH_CONST.__const: 0xae8
-+  __DATA_CONST.__got: 0x878
-+  __AUTH_CONST.__const: 0xac8
-   __AUTH_CONST.__cfstring: 0x5f00
--  __AUTH_CONST.__objc_const: 0x13d30
-+  __AUTH_CONST.__objc_const: 0x13d70
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x4e0
-   __AUTH_CONST.__objc_floatobj: 0x30
-
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__auth_got: 0xa50
-   __AUTH.__objc_data: 0x50
--  __DATA.__objc_ivar: 0x12d4
-+  __DATA.__objc_ivar: 0x12d8
-   __DATA.__data: 0xe8680
-   __DATA.__bss: 0x4f1
-   __DATA_DIRTY.__objc_data: 0x3980
--  __DATA_DIRTY.__bss: 0x138
-+  __DATA_DIRTY.__bss: 0x128
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /System/Library/PrivateFrameworks/DiagnosticRequest.framework/DiagnosticRequest
-   - /System/Library/PrivateFrameworks/Espresso.framework/Espresso
-   - /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset
 -  - /System/Library/PrivateFrameworks/PolarisRuntime.framework/PolarisRuntime
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /System/Library/PrivateFrameworks/UnifiedAssetFramework.framework/UnifiedAssetFramework
-   - /System/Library/PrivateFrameworks/VisualLogger.framework/VisualLogger
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3357
--  Symbols:   9335
+-  Symbols:   7834
 -  CStrings:  2082
 +  Functions: 3362
-+  Symbols:   9349
++  Symbols:   7846
 +  CStrings:  2083
- 
 Symbols:
 + +[ADMonocularStillsPipeline networkNameForParameters:]
 + +[ADMonocularStillsPipeline networkVariantForParameters:]
@@ -257,9 +218,6 @@ Symbols:
 + __OBJC_$_INSTANCE_METHODS_ADMonocularStillsPipelineParameters
 + __OBJC_$_INSTANCE_VARIABLES_ADMonocularStillsPipelineParameters
 + __OBJC_$_PROP_LIST_ADMonocularStillsPipelineParameters
-+ _objc_msgSend$lockContentSync:withUsagePolicy:withTimeout:lockedAssetSelector:newerInProgress:error:reportingProgress:
-+ _objc_msgSend$networkVariantForParameters:
-+ _objc_msgSend$setUserInitiated:
 - GCC_except_table2847
 - GCC_except_table2853
 - GCC_except_table2854
@@ -430,7 +388,6 @@ Symbols:
 - __ZZ48+[ADMonocularStillsPipeline supportedDimensions]E4once
 - __ZZ48+[ADMonocularStillsPipeline supportedDimensions]E6result
 - ___48+[ADMonocularStillsPipeline supportedDimensions]_block_invoke
-- _objc_msgSend$lockContentSync:withTimeout:lockedAssetSelector:newerInProgress:error:reportingProgress:
 CStrings:
 + "174.2.1"
 + "Could not find supported dimensions for provided pipeline parameters"

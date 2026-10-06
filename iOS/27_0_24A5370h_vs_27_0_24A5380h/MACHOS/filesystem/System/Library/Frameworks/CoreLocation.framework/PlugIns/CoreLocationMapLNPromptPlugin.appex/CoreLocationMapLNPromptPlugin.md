@@ -2,53 +2,42 @@
 
 > `/System/Library/Frameworks/CoreLocation.framework/PlugIns/CoreLocationMapLNPromptPlugin.appex/CoreLocationMapLNPromptPlugin`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0xf70` | `0x233` | **`-0xd3d`** |
+| `__TEXT.__text` | `0x84f8` | `0x844c` | **`-0xac`** |
+| `__TEXT.__auth_stubs` | `0x3a0` | `0x390` | **`-0x10`** |
+| `__DATA_CONST.__auth_got` | `0x1e0` | `0x1d8` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__const`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x84f8
--  __TEXT.__auth_stubs: 0x3a0
-+  __TEXT.__text: 0x844c
-+  __TEXT.__auth_stubs: 0x390
-   __TEXT.__objc_stubs: 0x1720
-   __TEXT.__objc_methlist: 0x668
-   __TEXT.__const: 0x110
-   __TEXT.__gcc_except_tab: 0x12b4
--  __TEXT.__cstring: 0xf70
-+  __TEXT.__cstring: 0x233
-   __TEXT.__objc_methname: 0x19f5
-   __TEXT.__objc_classname: 0x9f
-   __TEXT.__objc_methtype: 0x67c
+-3169.4.0.0.0
++3176.0.0.0.0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x20
-   __DATA_CONST.__objc_doubleobj: 0x10
--  __DATA_CONST.__auth_got: 0x1e0
-+  __DATA_CONST.__auth_got: 0x1d8
-   __DATA_CONST.__got: 0x170
-   __DATA.__objc_const: 0x1080
-   __DATA.__objc_selrefs: 0x7b8
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 101
 -  Symbols:   128
--  CStrings:  449
+-  CStrings:  428
 +  Symbols:   127
-+  CStrings:  440
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
++  CStrings:  419
 Symbols:
 - __ZNSt3__132__internal_log_hardening_failureEPKc
 Functions:
@@ -64,5 +53,4 @@ CStrings:
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:682: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:692: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:697: libc++ Hardening assertion __last != __begin failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
-
 ```

@@ -2,28 +2,24 @@
 
 > `com.apple.iokit.IONVMeFamily`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x5dd3c` | `0x5cb90` | **`-0x11ac`** |
+| `__TEXT.__cstring` | `0x10469` | `0x104d0` | **`+0x67`** |
+
+### Other Changes
+
 ```diff
 
 -877.0.7.0.0
--  __TEXT.__cstring: 0x10469
+-  Functions: 3589
 +877.40.5.0.0
-+  __TEXT.__cstring: 0x104d0
-   __TEXT.__const: 0x740
--  __TEXT_EXEC.__text: 0x5bff8
-+  __TEXT_EXEC.__text: 0x5ae74
-   __TEXT_EXEC.__auth_stubs: 0xe00
-   __DATA.__data: 0x46c
-   __DATA.__common: 0x578
++  Functions: 3556
 
-   __DATA_CONST.__kalloc_var: 0x690
-   __DATA_CONST.__auth_got: 0x700
-   __DATA_CONST.__got: 0x188
--  Functions: 3588
-+  Functions: 3555
-   Symbols:   0
 -  CStrings:  1760
 +  CStrings:  1764
- 
 CStrings:
 + "Sanitize Status Bytes Read"
 + "Sanitize Status Bytes Written"

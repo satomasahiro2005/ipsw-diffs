@@ -2,35 +2,30 @@
 
 > `/usr/lib/libhwtrace.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x27f5f8` | `0x2833e0` | **`+0x3de8`** |
+| `__TEXT.__cstring` | `0x16f45` | `0x17205` | **`+0x2c0`** |
+| `__TEXT.__unwind_info` | `0x3200` | `0x3268` | **`+0x68`** |
+| `__TEXT.__const` | `0x176f50` | `0x176f80` | **`+0x30`** |
+| `__TEXT.__oslogstring` | `0xaa5` | `0xac5` | **`+0x20`** |
+| `__DATA.__bss` | `0xac0` | `0xab8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -328.2.1.0.0
--  __TEXT.__text: 0x27b510
--  __TEXT.__const: 0x176f10
--  __TEXT.__cstring: 0x16f45
--  __TEXT.__oslogstring: 0xaa5
 +328.40.29.0.0
-+  __TEXT.__text: 0x27f264
-+  __TEXT.__const: 0x176f40
-+  __TEXT.__cstring: 0x17205
-+  __TEXT.__oslogstring: 0xac5
-   __TEXT.__gcc_except_tab: 0x390
--  __TEXT.__unwind_info: 0x4090
-+  __TEXT.__unwind_info: 0x4108
-   __TEXT.__eh_frame: 0xa0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 4867
 -  Symbols:   597
 -  CStrings:  4359
 +  Functions: 4923
 +  Symbols:   647
 +  CStrings:  4376
- 
 Symbols:
 + _hwtrace_cluster_options_create
 + _hwtrace_cluster_options_destroy

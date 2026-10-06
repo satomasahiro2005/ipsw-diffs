@@ -2,90 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/HoverTextUI.framework/HoverTextUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6c410` | `0x6be54` | **`-0x5bc`** |
+| `__AUTH.__data` | `0x1718` | `0x16a0` | **`-0x78`** |
+| `__TEXT.__const` | `0x3dd0` | `0x3d90` | **`-0x40`** |
+| `__TEXT.__swift5_typeref` | `0x3f84` | `0x3fb4` | **`+0x30`** |
+| `__AUTH_CONST.__objc_const` | `0x19f0` | `0x19d0` | **`-0x20`** |
+| `__TEXT.__constg_swiftt` | `0x1de0` | `0x1dc0` | **`-0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x1642` | `0x1622` | **`-0x20`** |
+| `__TEXT.__unwind_info` | `0x1760` | `0x1748` | **`-0x18`** |
+| `__TEXT.__swift5_fieldmd` | `0xfdc` | `0xfd0` | **`-0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x1350` | `0x1358` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x848` | `0x840` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x6c410
-+  __TEXT.__text: 0x6be54
-   __TEXT.__objc_methlist: 0x41c
--  __TEXT.__const: 0x3dd0
--  __TEXT.__swift5_typeref: 0x3f84
--  __TEXT.__constg_swiftt: 0x1de0
--  __TEXT.__swift5_reflstr: 0x1642
--  __TEXT.__swift5_fieldmd: 0xfdc
-+  __TEXT.__const: 0x3d90
-+  __TEXT.__swift5_typeref: 0x3fb4
-+  __TEXT.__constg_swiftt: 0x1dc0
-+  __TEXT.__swift5_reflstr: 0x1622
-+  __TEXT.__swift5_fieldmd: 0xfd0
-   __TEXT.__swift5_builtin: 0x154
-   __TEXT.__swift5_assocty: 0x2e8
-   __TEXT.__oslogstring: 0x16d1
+-3232.3.0.0.0
++3234.5.0.0.0
 
-   __TEXT.__swift_as_entry: 0x94
-   __TEXT.__swift_as_ret: 0x68
-   __TEXT.__swift_as_cont: 0x140
--  __TEXT.__unwind_info: 0x1760
-+  __TEXT.__unwind_info: 0x1748
-   __TEXT.__eh_frame: 0x2398
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x50
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x848
-+  __DATA_CONST.__objc_selrefs: 0x840
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x10
-   __DATA_CONST.__got: 0x710
-   __AUTH_CONST.__const: 0x2e48
-   __AUTH_CONST.__cfstring: 0x4c0
--  __AUTH_CONST.__objc_const: 0x19f0
--  __AUTH_CONST.__auth_got: 0x1350
-+  __AUTH_CONST.__objc_const: 0x19d0
-+  __AUTH_CONST.__auth_got: 0x1358
-   __AUTH.__objc_data: 0x2d0
--  __AUTH.__data: 0x1718
-+  __AUTH.__data: 0x16a0
-   __DATA.__objc_ivar: 0x1c
-   __DATA.__data: 0x1258
-   __DATA.__objc_stublist: 0x8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2150
--  Symbols:   1768
+-  Symbols:   1045
 +  Functions: 2143
-+  Symbols:   1765
-   CStrings:  231
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
-~ __DATA.__objc_stublist : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   1043
 Symbols:
 + ___swift_closure_destructor.290Tm
 + _get_witness_table 7SwiftUI6ZStackVyAA12TupleContentVyAA08ModifiedE0VyAGyAA6VStackVyAEyAA6SpacerVSg_AGyAA4ViewPAAE7gesture_9includingQrqd___AA11GestureMaskVtAA0L0Rd__lFQOyAnAE05onTapL05count7performQrSi_yyctFQOyAGyAA09_VariadicI0O4TreeVy_AA11_LayoutRootVy09HoverTextB00vwT0VGAEyAIyAEyAZy_A0_yA1_0v6Typingw11ReplacementT0VGAGyA1_0vxwyI0VAA23_CompositingGroupEffectVGGSg_AGyAGyAGyA1_0vX7HUDViewVA1_8HUDStyleVGAA13_OffsetEffectVGAA12_ScaleEffectVGQPGGSg_A1_0vW7HUDViewVSgQPGGAA18_AnimationModifierVySbGG_Qo__AA06_EndedL0VyAA04DragL0VGQo_AA25_AllowsHitTestingModifierVGALQPGGAA14_OpacityEffectVGA36_G_AEyA1_0V20TouchDebugVisualizerVSg_A1_0V21TouchEnablementButtonVSgSgQPGSgQPGGAaMHPyHC
@@ -101,7 +44,6 @@ Symbols:
 - ___swift_closure_destructor.296Tm
 - _get_witness_table 7SwiftUI6ZStackVyAA12TupleContentVyAA08ModifiedE0VyAGyAA6VStackVyAEyAA6SpacerVSg_AA4ViewPAAE7gesture_9includingQrqd___AA11GestureMaskVtAA0L0Rd__lFQOyAnAE05onTapL05count7performQrSi_yyctFQOyAGyAA09_VariadicI0O4TreeVy_AA11_LayoutRootVy09HoverTextB00vwT0VGAEyAIyAEyAZy_A0_yA1_0v6Typingw11ReplacementT0VGAGyA1_0vxwyI0VAA23_CompositingGroupEffectVGGSg_AGyAGyAGyA1_0vX7HUDViewVA1_8HUDStyleVGAA13_OffsetEffectVGAA12_ScaleEffectVGQPGGSg_A1_0vW7HUDViewVSgQPGGAA18_AnimationModifierVySbGG_Qo__AA06_EndedL0VyAA04DragL0VGQo_ALQPGGAA14_OpacityEffectVGA36_G_AEyA1_0V20TouchDebugVisualizerVSg_A1_0V21TouchEnablementButtonVSgSgQPGSgQPGGAaMHPyHC
 - _keypath_set.178Tm
-- _objc_msgSend$activeReservedAvoidanceRegionsForView:
 - _symbolic Say_____G So6CGRectV
 - _symbolic _____Sg______y_____y_____y_____y______y_____G_____y_____yAHyADy_AEy_____GACy__________GGSg_ACyACyACy__________G_____G_____GQPGGSg______SgQPGG_____ySbGG_Qo_______y_____GQo_ABt 7SwiftUI6SpacerV AA4ViewPAAE7gesture_9includingQrqd___AA11GestureMaskVtAA0G0Rd__lFQO AeAE05onTapG05count7performQrSi_yyctFQO AA15ModifiedContentV AA09_VariadicD0O4TreeV AA11_LayoutRootV 09HoverTextB00stQ0V AA05TupleN0V AA6VStackV AV0s6Typingt11ReplacementQ0V AV0swtxD0V AA23_CompositingGroupEffectV AV0sW7HUDViewV AV8HUDStyleV AA13_OffsetEffectV AA12_ScaleEffectV AV0sT7HUDViewV AA18_AnimationModifierV AA06_EndedG0V AA04DragG0V
 - _symbolic _____yAAy_____y_____y_____Sg______y_____yAAy_____y______y_____GACyAByACyAFy_AGy_____GAAy__________GGSg_AAyAAyAAy__________G_____G_____GQPGGSg______SgQPGG_____ySbGG_Qo_______y_____GQo_AEQPGG_____GA4_G 7SwiftUI15ModifiedContentV AA6VStackV AA05TupleD0V AA6SpacerV AA4ViewPAAE7gesture_9includingQrqd___AA11GestureMaskVtAA0K0Rd__lFQO AkAE05onTapK05count7performQrSi_yyctFQO AA09_VariadicH0O4TreeV AA11_LayoutRootV 09HoverTextB00uvS0V AZ0u6Typingv11ReplacementS0V AZ0uwvxH0V AA23_CompositingGroupEffectV AZ0uW7HUDViewV AZ8HUDStyleV AA13_OffsetEffectV AA12_ScaleEffectV AZ0uV7HUDViewV AA18_AnimationModifierV AA06_EndedK0V AA04DragK0V AA14_OpacityEffectV
@@ -112,5 +54,4 @@ Symbols:
 - _symbolic _____y_____y_____yACy_____yABy_____Sg______y_____yACy_____y______y_____GAByADyAByAGy_AHy_____GACy__________GGSg_ACyACyACy__________G_____G_____GQPGGSg______SgQPGG_____ySbGG_Qo_______y_____GQo_AFQPGG_____GA5_G_ABy_____Sg______SgSgQPGSgQPGG 7SwiftUI6ZStackV AA12TupleContentV AA08ModifiedE0V AA6VStackV AA6SpacerV AA4ViewPAAE7gesture_9includingQrqd___AA11GestureMaskVtAA0L0Rd__lFQO AmAE05onTapL05count7performQrSi_yyctFQO AA09_VariadicI0O4TreeV AA11_LayoutRootV 09HoverTextB00vwT0V A0_0v6Typingw11ReplacementT0V A0_0vxwyI0V AA23_CompositingGroupEffectV A0_0vX7HUDViewV A0_8HUDStyleV AA13_OffsetEffectV AA12_ScaleEffectV A0_0vW7HUDViewV AA18_AnimationModifierV AA06_EndedL0V AA04DragL0V AA14_OpacityEffectV A0_0V20TouchDebugVisualizerV A0_0V21TouchEnablementButtonV
 - _symbolic _____y_____y_____y_____Sg______y_____yAAy_____y______y_____GACyAByACyAFy_AGy_____GAAy__________GGSg_AAyAAyAAy__________G_____G_____GQPGGSg______SgQPGG_____ySbGG_Qo_______y_____GQo_AEQPGG_____G 7SwiftUI15ModifiedContentV AA6VStackV AA05TupleD0V AA6SpacerV AA4ViewPAAE7gesture_9includingQrqd___AA11GestureMaskVtAA0K0Rd__lFQO AkAE05onTapK05count7performQrSi_yyctFQO AA09_VariadicH0O4TreeV AA11_LayoutRootV 09HoverTextB00uvS0V AZ0u6Typingv11ReplacementS0V AZ0uwvxH0V AA23_CompositingGroupEffectV AZ0uW7HUDViewV AZ8HUDStyleV AA13_OffsetEffectV AA12_ScaleEffectV AZ0uV7HUDViewV AA18_AnimationModifierV AA06_EndedK0V AA04DragK0V AA14_OpacityEffectV
 - _symbolic _____y_____y_____y_____y______y_____G_____y_____yAFyABy_ACy_____GAAy__________GGSg_AAyAAyAAy__________G_____G_____GQPGGSg______SgQPGG_____ySbGG_Qo_______y_____GQo_ 7SwiftUI4ViewPAAE7gesture_9includingQrqd___AA11GestureMaskVtAA0F0Rd__lFQO AcAE05onTapF05count7performQrSi_yyctFQO AA15ModifiedContentV AA09_VariadicC0O4TreeV AA11_LayoutRootV 09HoverTextB00rsP0V AA05TupleM0V AA6VStackV AT0r6Typings11ReplacementP0V AT0rvswC0V AA23_CompositingGroupEffectV AT0rV7HUDViewV AT8HUDStyleV AA07_OffsetZ0V AA06_ScaleZ0V AT0rS7HUDViewV AA18_AnimationModifierV AA06_EndedF0V AA04DragF0V
-
 ```

@@ -2,43 +2,30 @@
 
 > `/usr/lib/libPN548_API.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0xaabc` | `0x91ab` | **`-0x1911`** |
+| `__DATA_CONST.__const` | `0x1448` | `0xe18` | **`-0x630`** |
+| `__TEXT.__text` | `0x3f2cc` | `0x3f3c4` | **`+0xf8`** |
+| `__AUTH_CONST.__const` | `0x2e0` | `0x2f8` | **`+0x18`** |
+| `__TEXT.__const` | `0x610` | `0x600` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x590` | `0x598` | **`+0x8`** |
+| `__TEXT.__oslogstring` | `0x77ff` | `0x7804` | **`+0x5`** |
+
+### Other Changes
+
 ```diff
 
 -370.33.1.0.0
--  __TEXT.__text: 0x3f2cc sha256:1c40e191767242d692018db73752d868202cdc43ebf7b9b6b38f46cce68f1bbc
--  __TEXT.__const: 0x610 sha256:6304a20d6d8afca23b721e7beea5b0543d4005ac0ec54e0ddd2f5802742e7565
--  __TEXT.__cstring: 0xaabc sha256:f54a2c5b281b787e5bfaf53ee8e436b0edbd342486811f8a60190afe3c9d1fa2
--  __TEXT.__oslogstring: 0x77ff sha256:7145bf57aba10cafd232b9f3c7aee840db5b34423ed86f35a36c004c74c6df9e
--  __TEXT.__unwind_info: 0x590 sha256:56db52284b968c1dc5ef4d1e6f0d280283e8eb69769894e6828c3f98a6bf29b7
 +370.37.0.0.0
-+  __TEXT.__text: 0x3f3c4 sha256:0fdd98f4c457a55d29b9a3332aeb89350d01134645b4d153f2609427ced19e62
-+  __TEXT.__const: 0x600 sha256:dd7ee13890bb4cafac0c398271269a7d46a468c416a3deb03103ca598cbfef2b
-+  __TEXT.__cstring: 0x91ab sha256:0f33fe8cde8b295bed0761df0bdc68cde2fa528e43e6add2bf77530c5ee2dd1e
-+  __TEXT.__oslogstring: 0x7804 sha256:741e54caac4c3cc86766ec014ce7e031feba4a837c40716a28f9cfa657935990
-+  __TEXT.__unwind_info: 0x598 sha256:0de71583609942c2cbb720d7369bc78096341d726a07c9c653864323948b7cb2
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x1448 sha256:f09c087ed890e90dd2d0d9ca8d0c598d9fb2ec891ccd080736e79a3d3440f45b
-+  __DATA_CONST.__const: 0xe18 sha256:64ac5809a4d2132cd6eeb2b8df9db55fb7f4e48a0b8b95b84e5d926918b1a27b
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2e0 sha256:80ff87f5da34093dcf72f30357aedb6f5deab09ac2cbe2eef5ba53b8c473363f
--  __AUTH_CONST.__cfstring: 0x700 sha256:5c7aecb031efcd3a9fa5d0f7a41646cf508f28751eb393d085bdd655d31a3e94
-+  __AUTH_CONST.__const: 0x2f8 sha256:f7bc9682d42aab01f5f2db943699205a6e07c450ccf5c517b209655752083749
-+  __AUTH_CONST.__cfstring: 0x700 sha256:c2fbc050b5571c3011e89aac85dab55dc498e9e9d952ed2f9ce58501763d3e11
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__data: 0x18 sha256:b1076a8f7ac4be4b155f834d3bb0ed27ace3d1ac3199d5b3d11518c29e874692
-   __DATA.__bss: 0x21 sha256:7f9c9e31ac8256ca2f258583df262dbc7d6f68f2a03043d5c99a4ae5a7396ce9
 
-   - /usr/lib/libNFC_HAL.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libnfshared.dylib
--  UUID: 8C0F7CA0-2C4A-32B4-A7E3-9E9A8C86C3BA
 -  Functions: 414
-+  UUID: 6EF386CE-FD09-33DB-BD44-B3D96471CEC3
 +  Functions: 415
-   Symbols:   348
--  CStrings:  1863
-+  CStrings:  1832
- 
+
+-  CStrings:  1804
++  CStrings:  1773
 CStrings:
 + "%s:%i Got unknown certificate type??"
 + "%s:%i Running build from (B&I) Stockholm_Base-370.37"
@@ -81,5 +68,4 @@ CStrings:
 - "A0130439393939A00D03610983A06A08000000000000C800A0980593A8098039A0AF091178A0391178A03902A09E0A07DE0A9600FA002B5203A0682A064060031900004000930418205E205E00010001A000A00007FA000000350014007D000D3500000E0003"
 - "A0130439393939A00D03610983A06A08000000000000F000A098056899098039A0AF091178A0391178903902A09E0A07DE0A9600FA002B5203A0682A064060031900004000930418E058E05860016001E000E00007FA000000350014007D000D3500000E0003"
 - "A019022301"
-
 ```

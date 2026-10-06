@@ -2,50 +2,39 @@
 
 > `/System/Library/DriverExtensions/com.apple.DriverKit-AppleBCMWLAN.dext/com.apple.DriverKit-AppleBCMWLAN`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x29103c` | `0x2913ac` | **`+0x370`** |
+| `__TEXT.__cstring` | `0x8300f` | `0x830d4` | **`+0xc5`** |
+| `__DATA_CONST.__const` | `0x21100` | `0x21120` | **`+0x20`** |
+| `__TEXT.__auth_stubs` | `0x25b0` | `0x25c0` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x12d8` | `0x12e0` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x5fd0` | `0x5fd8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__osclassinfo`
 - `__TEXT.__const`
 - `__TEXT.__eh_frame`
-- `__DATA_CONST.__osclassinfo`
-- `__DATA_CONST.__got`
-- `__DATA.__data`
+- `__TEXT.__init_offsets`
+
+### Other Changes
 
 ```diff
 
 -1580.63.0.0.0
--  __TEXT.__text: 0x29103c
--  __TEXT.__auth_stubs: 0x25b0
 +1580.68.0.0.0
-+  __TEXT.__text: 0x2913ac
-+  __TEXT.__auth_stubs: 0x25c0
-   __TEXT.__init_offsets: 0x1bc
--  __TEXT.__cstring: 0x8300f
-+  __TEXT.__cstring: 0x830d4
-   __TEXT.__const: 0x7f168
-   __TEXT.__oslogstring: 0x1f27
--  __TEXT.__unwind_info: 0x5fd0
-+  __TEXT.__unwind_info: 0x5fd8
-   __TEXT.__eh_frame: 0x38
--  __DATA_CONST.__const: 0x21100
-+  __DATA_CONST.__const: 0x21120
-   __DATA_CONST.__osclassinfo: 0x388
--  __DATA_CONST.__auth_got: 0x12d8
-+  __DATA_CONST.__auth_got: 0x12e0
-   __DATA_CONST.__got: 0x108
-   __DATA.__data: 0x390
-   __DATA.__bss: 0x948
 
-   - /System/DriverKit/System/Library/PrivateFrameworks/IOFileValidation.framework/IOFileValidation
-   - /System/DriverKit/System/Library/PrivateFrameworks/OLYHALDriverKit.framework/OLYHALDriverKit
-   - /System/DriverKit/usr/lib/libc++.dylib
 -  Functions: 14172
 -  Symbols:   12055
 -  CStrings:  13125
 +  Functions: 14174
 +  Symbols:   12057
 +  CStrings:  13130
- 
 Symbols:
 + __ZN16IODispatchSource6CancelEU13block_pointerFvvEPFiP15OSMetaClassBase5IORPCE
 + ____ZN28AppleBCMWLANBusInterfacePCIe18detachPCIeBusGatedEP11IOPCIDeviceb_block_invoke_2

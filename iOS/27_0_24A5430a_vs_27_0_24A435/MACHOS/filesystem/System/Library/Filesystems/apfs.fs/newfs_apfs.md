@@ -2,21 +2,22 @@
 
 > `/System/Library/Filesystems/apfs.fs/newfs_apfs`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x51914` | `0x51b00` | **`+0x1ec`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 3288.2.1.0.0
--  __TEXT.__text: 0x51914
-+  __TEXT.__text: 0x51b00
-   __TEXT.__auth_stubs: 0x8d0
-   __TEXT.__cstring: 0xfa1e
-   __TEXT.__const: 0x8480
+```text
 Functions:
 ~ sub_1000023c8 : 1980 -> 2108
 ~ sub_100005948 -> sub_1000059c8 : 10480 -> 10440

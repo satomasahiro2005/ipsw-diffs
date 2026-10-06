@@ -2,79 +2,51 @@
 
 > `/usr/libexec/safarifetcherd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__cstring`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__objc_methtype` | `0x251d` | `0x2a60` | **`+0x543`** |
+| `__TEXT.__objc_methname` | `0x54b0` | `0x57db` | **`+0x32b`** |
+| `__TEXT.__text` | `0x933c` | `0x94bc` | **`+0x180`** |
+| `__DATA.__objc_const` | `0x1630` | `0x1768` | **`+0x138`** |
+| `__DATA.__data` | `0x368` | `0x488` | **`+0x120`** |
+| `__TEXT.__objc_methlist` | `0x1394` | `0x149c` | **`+0x108`** |
+| `__DATA.__objc_selrefs` | `0x1190` | `0x1210` | **`+0x80`** |
+| `__TEXT.__objc_classname` | `0x162` | `0x1a9` | **`+0x47`** |
+| `__TEXT.__objc_stubs` | `0x2480` | `0x24c0` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x328` | `0x348` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0xb10` | `0xb30` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x2d8` | `0x2f0` | **`+0x18`** |
+| `__DATA_CONST.__objc_protolist` | `0x48` | `0x60` | **`+0x18`** |
+| `__DATA.__bss` | `0x40` | `0x50` | **`+0x10`** |
+| `__TEXT.__auth_stubs` | `0x7f0` | `0x800` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x5c0` | `0x5d0` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x410` | `0x418` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -7625.1.29.10.29
--  __TEXT.__text: 0x933c
--  __TEXT.__auth_stubs: 0x7f0
--  __TEXT.__objc_stubs: 0x2480
--  __TEXT.__objc_methlist: 0x1394
--  __TEXT.__gcc_except_tab: 0xb10
 +7625.2.4.1.0
-+  __TEXT.__text: 0x94bc
-+  __TEXT.__auth_stubs: 0x800
-+  __TEXT.__objc_stubs: 0x24c0
-+  __TEXT.__objc_methlist: 0x149c
-+  __TEXT.__gcc_except_tab: 0xb30
-   __TEXT.__const: 0x98
--  __TEXT.__objc_methname: 0x54b0
-   __TEXT.__cstring: 0x451
--  __TEXT.__objc_classname: 0x162
--  __TEXT.__objc_methtype: 0x251d
-+  __TEXT.__objc_methname: 0x57db
-+  __TEXT.__objc_classname: 0x1a9
-+  __TEXT.__objc_methtype: 0x2a60
-   __TEXT.__oslogstring: 0x1011
-   __TEXT.__dlopen_cstrs: 0x4e
--  __TEXT.__unwind_info: 0x5c0
--  __DATA_CONST.__const: 0x328
-+  __TEXT.__unwind_info: 0x5d0
-+  __DATA_CONST.__const: 0x348
-   __DATA_CONST.__cfstring: 0x480
-   __DATA_CONST.__objc_classlist: 0x28
-   __DATA_CONST.__objc_catlist: 0x10
--  __DATA_CONST.__objc_protolist: 0x48
-+  __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x28
-   __DATA_CONST.__objc_doubleobj: 0x10
-   __DATA_CONST.__objc_intobj: 0x18
--  __DATA_CONST.__auth_got: 0x410
--  __DATA_CONST.__got: 0x2d8
--  __DATA.__objc_const: 0x1630
--  __DATA.__objc_selrefs: 0x1190
-+  __DATA_CONST.__auth_got: 0x418
-+  __DATA_CONST.__got: 0x2f0
-+  __DATA.__objc_const: 0x1768
-+  __DATA.__objc_selrefs: 0x1210
-   __DATA.__objc_ivar: 0xf8
-   __DATA.__objc_data: 0x190
--  __DATA.__data: 0x368
-+  __DATA.__data: 0x488
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 265
 -  Symbols:   229
 -  CStrings:  1023
 +  Functions: 266
 +  Symbols:   233
 +  CStrings:  1062
- 
 Symbols:
 + _OBJC_CLASS_$_NSOperationQueue
 + _OBJC_CLASS_$_NSURLSession

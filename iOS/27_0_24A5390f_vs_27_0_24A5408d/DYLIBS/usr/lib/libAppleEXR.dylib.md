@@ -2,15 +2,18 @@
 
 > `/usr/lib/libAppleEXR.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9fe8c` | `0xa00f0` | **`+0x264`** |
+
+### Other Changes
+
 ```diff
 
 -1005.0.0.0.0
--  __TEXT.__text: 0x9fe8c
 +1006.0.0.0.0
-+  __TEXT.__text: 0xa00f0
-   __TEXT.__objc_methlist: 0x254
-   __TEXT.__const: 0x211bc
-   __TEXT.__gcc_except_tab: 0x4e0
 Functions:
 ~ __ZL21CompressedInterleave2IjL10StreamType1ELS0_0EEvPKvPK11TileDecoderRK8TileInfoRK11ChannelInfoSB_mmjPvl : 500 -> 496
 ~ __ZL21CompressedInterleave2IjL10StreamType0ELS0_1EEvPKvPK11TileDecoderRK8TileInfoRK11ChannelInfoSB_mmjPvl : 516 -> 512

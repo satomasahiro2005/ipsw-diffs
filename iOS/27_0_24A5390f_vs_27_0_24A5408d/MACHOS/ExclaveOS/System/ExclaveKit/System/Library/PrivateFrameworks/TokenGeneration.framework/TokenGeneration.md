@@ -2,66 +2,48 @@
 
 > `/System/ExclaveKit/System/Library/PrivateFrameworks/TokenGeneration.framework/TokenGeneration`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_capture`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10fd8` | `0x11148` | **`+0x170`** |
+| `__TEXT.__eh_frame` | `0x890` | `0x8c0` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x980` | `0x998` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x508` | `0x520` | **`+0x18`** |
+| `__TEXT.__auth_stubs` | `0xd90` | `0xda0` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x6c8` | `0x6d0` | **`+0x8`** |
+| `__TEXT.__constg_swiftt` | `0x324` | `0x32c` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_data`
-- `__DATA.__data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__got`
+- `__TEXT.__const`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -301.1.0.5.0
--  __TEXT.__text: 0x10fd8
--  __TEXT.__auth_stubs: 0xd90
 +301.6.0.5.101
-+  __TEXT.__text: 0x11148
-+  __TEXT.__auth_stubs: 0xda0
-   __TEXT.__const: 0x978
--  __TEXT.__constg_swiftt: 0x324
-+  __TEXT.__constg_swiftt: 0x32c
-   __TEXT.__swift5_typeref: 0x3da
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_reflstr: 0x501
 
-   __TEXT.__objc_classname: 0x26
-   __TEXT.__objc_methname: 0x64
-   __TEXT.__objc_methtype: 0x1
--  __TEXT.__unwind_info: 0x508
--  __TEXT.__eh_frame: 0x890
--  __DATA_CONST.__const: 0x980
-+  __TEXT.__unwind_info: 0x520
-+  __TEXT.__eh_frame: 0x8c0
-+  __DATA_CONST.__const: 0x998
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x6c8
-+  __DATA_CONST.__auth_got: 0x6d0
-   __DATA_CONST.__got: 0x198
-   __DATA_CONST.__auth_ptr: 0x1b8
-   __DATA.__objc_const: 0xd0
-
-   - /System/ExclaveKit/usr/lib/swift/libswift_Builtin_float.dylib
-   - /System/ExclaveKit/usr/lib/swift/libswift_Concurrency.dylib
-   - /System/ExclaveKit/usr/lib/swift/libswiftos.dylib
 -  Functions: 387
 -  Symbols:   1227
 +  Functions: 392
 +  Symbols:   1238
-   CStrings:  88
- 
 Symbols:
 + _$s15TokenGeneration0A9GeneratorC27handleCompletePromptRequest024_B0AADB69DCBB36E9E1CEB36H7BE61E73LL7requestAA0A6StreamVySSGAA0efG0V_tFAA0F10CompletionVyYaYbKcfU_Tf2nnnni_n
 + _$s15TokenGeneration0A9GeneratorC27handleCompletePromptRequest024_B0AADB69DCBB36E9E1CEB36H7BE61E73LL7requestAA0A6StreamVySSGAA0efG0V_tFAA0F10CompletionVyYaYbKcfU_Tf2nnnni_nTA

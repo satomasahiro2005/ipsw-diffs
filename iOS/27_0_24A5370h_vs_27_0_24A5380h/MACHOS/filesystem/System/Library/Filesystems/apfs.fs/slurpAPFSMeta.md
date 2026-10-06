@@ -2,29 +2,30 @@
 
 > `/System/Library/Filesystems/apfs.fs/slurpAPFSMeta`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x378f0` | `0x37c14` | **`+0x324`** |
+| `__TEXT.__cstring` | `0x8f26` | `0x903f` | **`+0x119`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x378f0
-+  __TEXT.__text: 0x37c14
-   __TEXT.__auth_stubs: 0x830
--  __TEXT.__cstring: 0x8f26
-+  __TEXT.__cstring: 0x903f
-   __TEXT.__const: 0x1b0
-   __TEXT.__unwind_info: 0x6a8
-   __DATA_CONST.__const: 0x470
+-3283.0.0.0.0
++3283.0.9.502.1
 
-   - /usr/lib/libSystem.B.dylib
-   Functions: 534
-   Symbols:   144
--  CStrings:  779
-+  CStrings:  784
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA.__data : content changed
+-  CStrings:  769
++  CStrings:  774
 Functions:
 ~ sub_100008f10 : 296 -> 280
 ~ sub_1000091c4 -> sub_1000091b4 : 572 -> 576
@@ -52,5 +53,4 @@ CStrings:
 - "%s:%d: %s failed to allocate block from internal pool: %d\n"
 - "%s:%d: %s failed to create bitmap object %lld: %d\n"
 - "%s:%d: %s failed to free internal pool block %lld: %d\n"
-
 ```

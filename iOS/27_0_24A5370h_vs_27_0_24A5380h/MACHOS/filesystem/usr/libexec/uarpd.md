@@ -2,89 +2,60 @@
 
 > `/usr/libexec/uarpd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9d0ec` | `0xa02bc` | **`+0x31d0`** |
+| `__DATA.__objc_const` | `0xfeb0` | `0x10918` | **`+0xa68`** |
+| `__TEXT.__objc_methname` | `0xee96` | `0xf377` | **`+0x4e1`** |
+| `__TEXT.__objc_methlist` | `0x8218` | `0x8678` | **`+0x460`** |
+| `__DATA.__objc_data` | `0x3840` | `0x3c00` | **`+0x3c0`** |
+| `__TEXT.__objc_stubs` | `0xa0a0` | `0xa360` | **`+0x2c0`** |
+| `__TEXT.__cstring` | `0xa96b` | `0xac00` | **`+0x295`** |
+| `__TEXT.__objc_classname` | `0x1a8a` | `0x1ce4` | **`+0x25a`** |
+| `__DATA_CONST.__cfstring` | `0x5280` | `0x53e0` | **`+0x160`** |
+| `__TEXT.__unwind_info` | `0x21f0` | `0x2318` | **`+0x128`** |
+| `__DATA_CONST.__got` | `0x568` | `0x640` | **`+0xd8`** |
+| `__TEXT.__oslogstring` | `0x8c29` | `0x8cec` | **`+0xc3`** |
+| `__DATA.__objc_selrefs` | `0x3028` | `0x30e8` | **`+0xc0`** |
+| `__DATA_CONST.__objc_classlist` | `0x5a0` | `0x600` | **`+0x60`** |
+| `__DATA_CONST.__objc_superrefs` | `0x588` | `0x5e8` | **`+0x60`** |
+| `__TEXT.__objc_methtype` | `0x29e9` | `0x2a49` | **`+0x60`** |
+| `__DATA.__objc_ivar` | `0xb4c` | `0xb90` | **`+0x44`** |
+| `__DATA_CONST.__const` | `0x1078` | `0x10a0` | **`+0x28`** |
+| `__TEXT.__gcc_except_tab` | `0x1c4` | `0x19c` | **`-0x28`** |
+| `__TEXT.__auth_stubs` | `0xa40` | `0xa20` | **`-0x20`** |
+| `__DATA_CONST.__auth_got` | `0x530` | `0x520` | **`-0x10`** |
+| `__DATA.__bss` | `0x1180` | `0x1178` | **`-0x8`** |
+| `__TEXT.__const` | `0x148` | `0x140` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x9d0ec
--  __TEXT.__auth_stubs: 0xa40
--  __TEXT.__objc_stubs: 0xa0a0
--  __TEXT.__objc_methlist: 0x8218
--  __TEXT.__objc_methname: 0xee96
--  __TEXT.__objc_classname: 0x1a8a
--  __TEXT.__cstring: 0xa96b
--  __TEXT.__objc_methtype: 0x29e9
--  __TEXT.__const: 0x148
--  __TEXT.__oslogstring: 0x8c29
--  __TEXT.__gcc_except_tab: 0x1c4
--  __TEXT.__unwind_info: 0x21f0
--  __DATA_CONST.__const: 0x1078
--  __DATA_CONST.__cfstring: 0x5280
--  __DATA_CONST.__objc_classlist: 0x5a0
-+  __TEXT.__text: 0xa02bc
-+  __TEXT.__auth_stubs: 0xa20
-+  __TEXT.__objc_stubs: 0xa360
-+  __TEXT.__objc_methlist: 0x8678
-+  __TEXT.__objc_methname: 0xf377
-+  __TEXT.__objc_classname: 0x1ce4
-+  __TEXT.__cstring: 0xac00
-+  __TEXT.__objc_methtype: 0x2a49
-+  __TEXT.__const: 0x140
-+  __TEXT.__oslogstring: 0x8cec
-+  __TEXT.__gcc_except_tab: 0x19c
-+  __TEXT.__unwind_info: 0x2318
-+  __DATA_CONST.__const: 0x10a0
-+  __DATA_CONST.__cfstring: 0x53e0
-+  __DATA_CONST.__objc_classlist: 0x600
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x30
--  __DATA_CONST.__objc_superrefs: 0x588
-+  __DATA_CONST.__objc_superrefs: 0x5e8
-   __DATA_CONST.__objc_intobj: 0x3d8
-   __DATA_CONST.__objc_arraydata: 0x70
-   __DATA_CONST.__objc_arrayobj: 0x30
-   __DATA_CONST.__objc_dictobj: 0x28
--  __DATA_CONST.__auth_got: 0x530
--  __DATA_CONST.__got: 0x568
--  __DATA.__objc_const: 0xfeb0
--  __DATA.__objc_selrefs: 0x3028
--  __DATA.__objc_ivar: 0xb4c
--  __DATA.__objc_data: 0x3840
-+  __DATA_CONST.__auth_got: 0x520
-+  __DATA_CONST.__got: 0x640
-+  __DATA.__objc_const: 0x10918
-+  __DATA.__objc_selrefs: 0x30e8
-+  __DATA.__objc_ivar: 0xb90
-+  __DATA.__objc_data: 0x3c00
-   __DATA.__data: 0x548
--  __DATA.__bss: 0x1180
-+  __DATA.__bss: 0x1178
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
--  - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-   - /System/Library/Frameworks/Network.framework/Network
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/CoreDiagnostics.framework/CoreDiagnostics
+-1587.0.3.0.3
++1587.0.21.0.0
 
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libpcap.A.dylib
+-  - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+
 -  Functions: 3816
 -  Symbols:   230
--  CStrings:  5517
+-  CStrings:  4825
 +  Functions: 3910
 +  Symbols:   228
-+  CStrings:  5609
- 
-Sections:
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
-~ __DATA.__data : content changed
++  CStrings:  4906
 Symbols:
 - _IOPMAssertionCreateWithName
 - _IOPMAssertionRelease
@@ -242,5 +213,4 @@ CStrings:
 - "v32@0:8@16r*24"
 - "{uarpPlatformEndpointCallbacks=\"fRequestBuffer\"^?\"fReturnBuffer\"^?\"fRequestTransmitMsgBuffer\"^?\"fReturnTransmitMsgBuffer\"^?\"fSendMessage\"^?\"fDataTransferPause\"^?\"fDataTransferPauseAck\"^?\"fDataTransferResume\"^?\"fDataTransferResumeAck\"^?\"fSuperBinaryOffered\"^?\"fDynamicAssetOffered\"^?\"fApplyStagedAssets\"^?\"fApplyStagedAssetsResponse\"^?\"fManufacturerName\"^?\"fManufacturerNameResponse\"^?\"fModelName\"^?\"fModelNameResponse\"^?\"fSerialNumber\"^?\"fSerialNumberResponse\"^?\"fHardwareVersion\"^?\"fHardwareVersionResponse\"^?\"fActiveFirmwareVersion2\"^?\"fActiveFirmwareVersionResponse\"^?\"fStagedFirmwareVersion2\"^?\"fStagedFirmwareVersionResponse\"^?\"fLastError\"^?\"fLastErrorResponse\"^?\"fStatisticsResponse\"^?\"fAssetSolicitation\"^?\"fRescindAllAssets\"^?\"fRescindAllAssetsAck\"^?\"fLayer2WatchdogSet\"^?\"fLayer2WatchdogCancel\"^?\"fMonotonicClockTime\"^?\"fProtocolVersion\"^?\"fFriendlyName\"^?\"fFriendlyNameResponse\"^?\"fDiscoveredEndpointID\"^?\"fDiscoveredComponent\"^?\"fBulkInfoQuery\"^?\"fBulkInfoResponse\"^?\"fDecompressBuffer\"^?\"fCompressBuffer\"^?\"fHashInfo\"^?\"fHashInit\"^?\"fHashUpdate\"^?\"fHashFinal\"^?\"fHashLog\"^?\"fLogPacket\"^?\"fLogError\"^?\"fLogInfo\"^?\"fLogDebug\"^?\"fLogFault\"^?\"fDownstreamDiscovery\"^?\"fDownstreamReachable2\"^?\"fDownstreamUnreachable2\"^?\"fDownstreamReleased2\"^?\"fDownstreamRecvMessage\"^?\"fNoFirmwareUpdateAvailable\"^?\"fVendorSpecificRecvMsg\"^?\"fVendorSpecificCheckExpectedResponse\"^?\"fVendorSpecificCheckValidToSend\"^?\"fVendorSpecificExceededRetries\"^?\"fActiveFirmwareVersion\"^?\"fStagedFirmwareVersion\"^?\"fTxWatchdogSet\"^?\"fTxWatchdogCancel\"^?\"fDownstreamReachable\"^?\"fDownstreamUnreachable\"^?\"fDownstreamReleased\"^?}"
 - "\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0c1"
-
 ```

@@ -2,47 +2,31 @@
 
 > `/System/Library/VideoProcessors/MattingV2.bundle/MattingV2`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10b5c` | `0xe36c` | **`-0x27f0`** |
+| `__TEXT.__oslogstring` | `0x104a` | `0xca` | **`-0xf80`** |
+| `__TEXT.__cstring` | `0x2d61` | `0x2862` | **`-0x4ff`** |
+| `__TEXT.__const` | `0xdf0` | `0xdc0` | **`-0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x288` | `0x268` | **`-0x20`** |
+| `__TEXT.__unwind_info` | `0x2e0` | `0x2c8` | **`-0x18`** |
+| `__DATA.__common` | `0x10` | `—` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -764.40.5.0.0
--  __TEXT.__text: 0x108bc
 +764.40.7.0.0
-+  __TEXT.__text: 0xe114
-   __TEXT.__objc_methlist: 0xc04
--  __TEXT.__cstring: 0x2d61
--  __TEXT.__const: 0xdf0
--  __TEXT.__oslogstring: 0x104a
--  __TEXT.__unwind_info: 0x4e0
-+  __TEXT.__cstring: 0x2862
-+  __TEXT.__const: 0xdc0
-+  __TEXT.__oslogstring: 0xca
-+  __TEXT.__unwind_info: 0x4d0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __AUTH_CONST.__objc_const: 0x1758
-   __AUTH_CONST.__objc_intobj: 0x1f8
-   __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__auth_got: 0x288
-+  __AUTH_CONST.__auth_got: 0x268
-   __DATA.__objc_ivar: 0x19c
-   __DATA.__data: 0xc0
--  __DATA.__common: 0x10
-   __DATA_DIRTY.__objc_data: 0x2d0
-   __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /System/Library/PrivateFrameworks/CMImaging.framework/CMImaging
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 401
 -  Symbols:   116
 -  CStrings:  362
 +  Functions: 378
 +  Symbols:   112
 +  CStrings:  298
- 
 Symbols:
 + _FigSignalErrorAtGM
 + _objc_retain_x5

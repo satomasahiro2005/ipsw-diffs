@@ -2,85 +2,56 @@
 
 > `/System/Library/ExtensionKit/Extensions/PassbookStubAppIntentsExtension.appex/PassbookStubAppIntentsExtension`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4a4c` | `0x77d8` | **`+0x2d8c`** |
+| `__DATA.__bss` | `0x1000` | `0x1a80` | **`+0xa80`** |
+| `__TEXT.__const` | `0x9c8` | `0x10e0` | **`+0x718`** |
+| `__DATA_CONST.__const` | `0x381` | `0x5d8` | **`+0x257`** |
+| `__TEXT.__swift5_typeref` | `0x3ae` | `0x592` | **`+0x1e4`** |
+| `__TEXT.__eh_frame` | `0x98` | `0x238` | **`+0x1a0`** |
+| `__TEXT.__cstring` | `0x1f3` | `0x373` | **`+0x180`** |
+| `__TEXT.__unwind_info` | `0x228` | `0x390` | **`+0x168`** |
+| `__DATA.__data` | `0x1e8` | `0x320` | **`+0x138`** |
+| `__TEXT.__constg_swiftt` | `0x118` | `0x20c` | **`+0xf4`** |
+| `__TEXT.__swift5_assocty` | `0x108` | `0x1c0` | **`+0xb8`** |
+| `__TEXT.__auth_stubs` | `0x710` | `0x7c0` | **`+0xb0`** |
+| `__TEXT.__swift5_reflstr` | `0x1f3` | `0x2a3` | **`+0xb0`** |
+| `__TEXT.__objc_methname` | `0x129` | `0x1d4` | **`+0xab`** |
+| `__TEXT.__swift5_fieldmd` | `0x104` | `0x198` | **`+0x94`** |
+| `__DATA.__common` | `0x18` | `0x78` | **`+0x60`** |
+| `__DATA_CONST.__auth_got` | `0x390` | `0x3e8` | **`+0x58`** |
+| `__TEXT.__swift5_proto` | `0x80` | `0xd4` | **`+0x54`** |
+| `__DATA_CONST.__got` | `0x128` | `0x170` | **`+0x48`** |
+| `__TEXT.__objc_stubs` | `0x140` | `0x180` | **`+0x40`** |
+| `__TEXT.__swift_as_cont` | `0x4` | `0x20` | **`+0x1c`** |
+| `__TEXT.__objc_methtype` | `—` | `0x15` | **`+0x15`** |
+| `__TEXT.__swift_as_entry` | `0x8` | `0x1c` | **`+0x14`** |
+| `__DATA.__objc_selrefs` | `0x50` | `0x60` | **`+0x10`** |
+| `__DATA_CONST.__auth_ptr` | `0x410` | `0x420` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x18` | `0x28` | **`+0x10`** |
+| `__TEXT.__swift_as_ret` | `0x4` | `0x14` | **`+0x10`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__swift5_builtin`
 - `__TEXT.__swift5_entry`
 
+### Other Changes
+
 ```diff
 
 -1689.3.0.0.0
--  __TEXT.__text: 0x4a4c
--  __TEXT.__auth_stubs: 0x710
--  __TEXT.__objc_stubs: 0x140
--  __TEXT.__const: 0x9c8
--  __TEXT.__constg_swiftt: 0x118
--  __TEXT.__swift5_typeref: 0x3ae
--  __TEXT.__swift5_reflstr: 0x1f3
--  __TEXT.__swift5_fieldmd: 0x104
 +1695.1.2.0.0
-+  __TEXT.__text: 0x77d8
-+  __TEXT.__auth_stubs: 0x7c0
-+  __TEXT.__objc_stubs: 0x180
-+  __TEXT.__const: 0x10e0
-+  __TEXT.__constg_swiftt: 0x20c
-+  __TEXT.__swift5_typeref: 0x592
-+  __TEXT.__swift5_reflstr: 0x2a3
-+  __TEXT.__swift5_fieldmd: 0x198
-   __TEXT.__swift5_builtin: 0x28
--  __TEXT.__swift5_assocty: 0x108
--  __TEXT.__swift5_proto: 0x80
--  __TEXT.__swift5_types: 0x18
-+  __TEXT.__swift5_assocty: 0x1c0
-+  __TEXT.__swift5_proto: 0xd4
-+  __TEXT.__swift5_types: 0x28
-+  __TEXT.__cstring: 0x373
-+  __TEXT.__objc_methtype: 0x15
-+  __TEXT.__swift_as_entry: 0x1c
-+  __TEXT.__swift_as_ret: 0x14
-+  __TEXT.__swift_as_cont: 0x20
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__cstring: 0x1f3
--  __TEXT.__swift_as_entry: 0x8
--  __TEXT.__swift_as_ret: 0x4
--  __TEXT.__swift_as_cont: 0x4
--  __TEXT.__objc_methname: 0x129
--  __TEXT.__unwind_info: 0x228
--  __TEXT.__eh_frame: 0x98
--  __DATA_CONST.__const: 0x381
-+  __TEXT.__objc_methname: 0x1d4
-+  __TEXT.__unwind_info: 0x390
-+  __TEXT.__eh_frame: 0x238
-+  __DATA_CONST.__const: 0x5d8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x390
--  __DATA_CONST.__got: 0x128
--  __DATA_CONST.__auth_ptr: 0x410
--  __DATA.__objc_selrefs: 0x50
--  __DATA.__data: 0x1e8
--  __DATA.__bss: 0x1000
--  __DATA.__common: 0x18
-+  __DATA_CONST.__auth_got: 0x3e8
-+  __DATA_CONST.__got: 0x170
-+  __DATA_CONST.__auth_ptr: 0x420
-+  __DATA.__objc_selrefs: 0x60
-+  __DATA.__data: 0x320
-+  __DATA.__bss: 0x1a80
-+  __DATA.__common: 0x78
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 157
 -  Symbols:   117
 -  CStrings:  27
 +  Functions: 275
 +  Symbols:   127
 +  CStrings:  41
- 
 Symbols:
 + _OBJC_CLASS_$_PKPaymentService
 + __NSConcreteStackBlock

@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/BrookServices.framework/BrookServices`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_0 : 40 -> 16

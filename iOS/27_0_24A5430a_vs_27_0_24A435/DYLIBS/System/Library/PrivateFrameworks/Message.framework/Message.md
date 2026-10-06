@@ -2,25 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/Message.framework/Message`
 
-```diff
+### Section Size Changes
 
- 3901.100.1.2.14
--  __TEXT.__text: 0xaf7328
-+  __TEXT.__text: 0xaf76c8
-   __TEXT.__objc_methlist: 0x1444c
-   __TEXT.__gcc_except_tab: 0x36a70
-   __TEXT.__const: 0x6b608
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xaf7328` | `0xaf76c8` | **`+0x3a0`** |
+| `__TEXT.__unwind_info` | `0x1e9f8` | `0x1ea28` | **`+0x30`** |
+| `__TEXT.__eh_frame` | `0x1860c` | `0x1861c` | **`+0x10`** |
 
-   __TEXT.__swift_as_entry: 0x8
-   __TEXT.__swift_as_ret: 0x8
-   __TEXT.__swift_as_cont: 0xc
--  __TEXT.__unwind_info: 0x1e9f8
--  __TEXT.__eh_frame: 0x1860c
-+  __TEXT.__unwind_info: 0x1ea28
-+  __TEXT.__eh_frame: 0x1861c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+### Other Changes
+
+```text
 Functions:
 ~ sub_1b9f1a104 -> sub_1ba299104 : 20216 -> 20208
 ~ sub_1b9f2a41c -> sub_1ba2a9414 : 352 -> 348

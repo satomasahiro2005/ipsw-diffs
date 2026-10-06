@@ -2,23 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/CoreNLP.framework/CoreNLP`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfc26c` | `0xfc2a8` | **`+0x3c`** |
+
+### Other Changes
+
 ```diff
 
- 371.0.0.0.0
--  __TEXT.__text: 0xfc26c
-+  __TEXT.__text: 0xfc2a8
-   __TEXT.__objc_methlist: 0x1b8
-   __TEXT.__const: 0x3320
-   __TEXT.__gcc_except_tab: 0xf804
-
-   - /usr/lib/liblangid.dylib
-   - /usr/lib/libmecab.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 4354
 +  Functions: 4353
-   Symbols:   6466
-   CStrings:  1355
- 
 Functions:
 ~ __ZN7CoreNLP19EnglishCompoundWord42enumerateSubTokensOfTokenWithCharacterTypeEPK7CFRangemU13block_pointerFvP7NLTokenPbE : 896 -> 884
 ~ __ZNSt3__13mapINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEiNS_4lessIS6_EENS4_INS_4pairIKS6_iEEEEEC2B9foe220106ESt16initializer_listISB_ERKS8_ : 84 -> 88

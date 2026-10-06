@@ -2,31 +2,23 @@
 
 > `/usr/lib/system/libsystem_kernel.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x34ee0` | `0x34f00` | **`+0x20`** |
+| `__TEXT.__const` | `0xc80` | `0xc90` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x34ee0
--  __TEXT.__const: 0xc80
-+  __TEXT.__text: 0x34f00
-+  __TEXT.__const: 0xc90
-   __TEXT.__cstring: 0x5cda
-   __TEXT.__unwind_info: 0x11f8
-   __DATA_CONST.__const: 0x28d8
-
-   __DATA_DIRTY.__data: 0x18
-   __DATA_DIRTY.__bss: 0x38
-   __DATA_DIRTY.__common: 0x680
+-13432.0.5.502.4
 -  Functions: 1554
--  Symbols:   1778
+-  Symbols:   1724
++13432.0.50.502.2
 +  Functions: 1555
-+  Symbols:   1779
-   CStrings:  915
- 
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__const : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   1725
 Symbols:
 + _exclaves_device_state
 Functions:
@@ -42,5 +34,4 @@ Functions:
 ~ _host_kernel_version : 520 -> 512
 ~ __kernelrpc_mach_port_kobject_description : 576 -> 568
 ~ _netname_version : 420 -> 416
-
 ```

@@ -2,77 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/PersonalizedSensing.framework/XPCServices/PersonalizedSensingService.xpc/PersonalizedSensingService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10b260` | `0x10b3b8` | **`+0x158`** |
+| `__DATA_CONST.__got` | `0x9d0` | `0xab0` | **`+0xe0`** |
+| `__TEXT.__oslogstring` | `0xad0d` | `0xadad` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0xd430` | `0xd460` | **`+0x30`** |
+| `__DATA_CONST.__cfstring` | `0xe820` | `0xe840` | **`+0x20`** |
+| `__TEXT.__auth_stubs` | `0x1b80` | `0x1b70` | **`-0x10`** |
+| `__TEXT.__const` | `0x355e` | `0x356e` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0xdd8` | `0xdd0` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x10b260
--  __TEXT.__auth_stubs: 0x1b80
-+  __TEXT.__text: 0x10b3b8
-+  __TEXT.__auth_stubs: 0x1b70
-   __TEXT.__objc_stubs: 0xb000
-   __TEXT.__objc_methlist: 0x6928
-   __TEXT.__objc_classname: 0x1375
-   __TEXT.__objc_methtype: 0xf1b
--  __TEXT.__cstring: 0xd430
-+  __TEXT.__cstring: 0xd460
-   __TEXT.__objc_methname: 0x12b5a
--  __TEXT.__const: 0x355e
-+  __TEXT.__const: 0x356e
-   __TEXT.__gcc_except_tab: 0xd14
--  __TEXT.__oslogstring: 0xad0d
-+  __TEXT.__oslogstring: 0xadad
-   __TEXT.__ustring: 0x10c
-   __TEXT.__swift5_typeref: 0xfb2
-   __TEXT.__constg_swiftt: 0x1a48
+-412.0.0.0.0
++415.0.0.0.0
 
-   __TEXT.__unwind_info: 0x2df8
-   __TEXT.__eh_frame: 0x3578
-   __DATA_CONST.__const: 0x64a9
--  __DATA_CONST.__cfstring: 0xe820
-+  __DATA_CONST.__cfstring: 0xe840
-   __DATA_CONST.__objc_classlist: 0x458
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x70
-
-   __DATA_CONST.__objc_dictobj: 0x28
-   __DATA_CONST.__objc_floatobj: 0x1c0
-   __DATA_CONST.__objc_doubleobj: 0x10
--  __DATA_CONST.__auth_got: 0xdd8
--  __DATA_CONST.__got: 0x9d0
-+  __DATA_CONST.__auth_got: 0xdd0
-+  __DATA_CONST.__got: 0xab0
-   __DATA_CONST.__auth_ptr: 0x3f0
-   __DATA.__objc_const: 0xdf90
-   __DATA.__objc_selrefs: 0x3ab8
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 4586
--  Symbols:   35286
--  CStrings:  7994
-+  Symbols:   35289
-+  CStrings:  7997
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
+-  Symbols:   12266
+-  CStrings:  5661
++  Symbols:   12267
++  CStrings:  5663
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/Moments/install/TempContent/Objects/Moments.build/PersonalizedSensingService.build/Objects-normal/arm64e/MOMotionManagerKeys.o
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/Moments/momentsd/PromptEngine/PromptSource/Motion/
@@ -114,5 +90,4 @@ Functions:
 CStrings:
 + "MOInternalMotionActivityUITreatment"
 + "Phone-sensed motion activity suggestion was rejected from UI because elapsed time >%.2f days: bundleID %@, suggestionID %@, bundleSubType %lu, elapsedTime %.2f"
-
 ```

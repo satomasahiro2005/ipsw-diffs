@@ -2,57 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/VoiceShortcuts.framework/VoiceShortcuts`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x149d7c` | `0x149f94` | **`+0x218`** |
+| `__AUTH_CONST.__objc_const` | `0xa098` | `0xa0d8` | **`+0x40`** |
+| `__TEXT.__objc_methlist` | `0x566c` | `0x568c` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x4f78` | `0x4f88` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x1a20` | `0x1a28` | **`+0x8`** |
+| `__DATA_CONST.__objc_catlist` | `0x108` | `0x110` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4878` | `0x4880` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 5037.109.0.0.0
--  __TEXT.__text: 0x149d7c
--  __TEXT.__objc_methlist: 0x566c
-+  __TEXT.__text: 0x149f94
-+  __TEXT.__objc_methlist: 0x568c
-   __TEXT.__const: 0x6918
-   __TEXT.__dlopen_cstrs: 0x1e1
-   __TEXT.__oslogstring: 0xfd79
-
-   __TEXT.__swift5_mpenum: 0x28
-   __TEXT.__gcc_except_tab: 0x90c
-   __TEXT.__ustring: 0x44
--  __TEXT.__unwind_info: 0x4f78
-+  __TEXT.__unwind_info: 0x4f88
-   __TEXT.__eh_frame: 0x8dd8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x1e68
-   __DATA_CONST.__objc_classlist: 0x310
--  __DATA_CONST.__objc_catlist: 0x108
-+  __DATA_CONST.__objc_catlist: 0x110
-   __DATA_CONST.__objc_protolist: 0x2b8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4878
-+  __DATA_CONST.__objc_selrefs: 0x4880
-   __DATA_CONST.__objc_protorefs: 0xd0
-   __DATA_CONST.__objc_superrefs: 0x180
-   __DATA_CONST.__objc_arraydata: 0x40
--  __DATA_CONST.__got: 0x1a20
-+  __DATA_CONST.__got: 0x1a28
-   __AUTH_CONST.__const: 0xa5d8
-   __AUTH_CONST.__cfstring: 0x3f40
--  __AUTH_CONST.__objc_const: 0xa098
-+  __AUTH_CONST.__objc_const: 0xa0d8
-   __AUTH_CONST.__objc_intobj: 0xc0
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__auth_got: 0x2110
-
-   - /usr/lib/swift/libswift_DarwinFoundation3.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8040
--  Symbols:   7396
+-  Symbols:   5411
 +  Functions: 8058
-+  Symbols:   7404
-   CStrings:  2309
- 
++  Symbols:   5418
 Symbols:
 + -[WFMultiTaskingArrangementTrigger(BiomeContext) publisherWithScheduler:]
 + -[WFMultiTaskingArrangementTrigger(BiomeContext) shouldFireInResponseToEvent:triggerIdentifier:completion:]
@@ -104,7 +73,6 @@ Symbols:
 + _OUTLINED_FUNCTION_353
 + __OBJC_$_CATEGORY_INSTANCE_METHODS_WFMultiTaskingArrangementTrigger_$_BiomeContext
 + __OBJC_$_CATEGORY_WFMultiTaskingArrangementTrigger_$_BiomeContext
-+ _objc_msgSend$MultiTaskingArrangement
 - GCC_except_table1009
 - GCC_except_table1015
 - GCC_except_table1035

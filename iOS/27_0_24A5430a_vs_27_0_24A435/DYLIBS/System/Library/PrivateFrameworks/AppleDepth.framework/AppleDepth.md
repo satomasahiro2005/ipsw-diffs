@@ -2,61 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/AppleDepth.framework/AppleDepth`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__objc_arraydata` | `0x250` | `0x330` | **`+0xe0`** |
+| `__AUTH_CONST.__cfstring` | `0x5f00` | `0x5fa0` | **`+0xa0`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x138` | `0x198` | **`+0x60`** |
+| `__AUTH_CONST.__objc_intobj` | `0x4e0` | `0x528` | **`+0x48`** |
+| `__TEXT.__gcc_except_tab` | `0x13818` | `0x137dc` | **`-0x3c`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x190` | `0x1c0` | **`+0x30`** |
+| `__TEXT.__cstring` | `0xff51` | `0xff77` | **`+0x26`** |
+| `__DATA_CONST.__const` | `0x478` | `0x488` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x4118` | `0x4128` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__text: 0x114388
-   __TEXT.__objc_methlist: 0x7d4c
-   __TEXT.__const: 0x1520
--  __TEXT.__gcc_except_tab: 0x13818
-+  __TEXT.__gcc_except_tab: 0x137dc
-   __TEXT.__oslogstring: 0xacc8
--  __TEXT.__cstring: 0xff51
--  __TEXT.__unwind_info: 0x4118
-+  __TEXT.__cstring: 0xff77
-+  __TEXT.__unwind_info: 0x4128
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x478
-+  __DATA_CONST.__const: 0x488
-   __DATA_CONST.__objc_classlist: 0x5c8
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x30
-
-   __DATA_CONST.__weak_got: 0x280
-   __DATA_CONST.__objc_selrefs: 0x3cb0
-   __DATA_CONST.__objc_superrefs: 0x4e8
--  __DATA_CONST.__objc_arraydata: 0x250
-+  __DATA_CONST.__objc_arraydata: 0x330
-   __DATA_CONST.__got: 0x878
-   __AUTH_CONST.__const: 0xac8
--  __AUTH_CONST.__cfstring: 0x5f00
-+  __AUTH_CONST.__cfstring: 0x5fa0
-   __AUTH_CONST.__objc_const: 0x13d70
-   __AUTH_CONST.__weak_auth_got: 0x28
--  __AUTH_CONST.__objc_intobj: 0x4e0
-+  __AUTH_CONST.__objc_intobj: 0x528
-   __AUTH_CONST.__objc_floatobj: 0x30
--  __AUTH_CONST.__objc_doubleobj: 0x190
--  __AUTH_CONST.__objc_arrayobj: 0x138
-+  __AUTH_CONST.__objc_doubleobj: 0x1c0
-+  __AUTH_CONST.__objc_arrayobj: 0x198
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__auth_got: 0xa50
-   __AUTH.__objc_data: 0x50
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3362
--  Symbols:   9349
+-  Symbols:   7846
 -  CStrings:  2083
 +  Functions: 3363
-+  Symbols:   9351
++  Symbols:   7848
 +  CStrings:  2088
- 
 Symbols:
 + GCC_except_table2001
 + GCC_except_table2003

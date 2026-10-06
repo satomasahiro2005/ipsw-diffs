@@ -2,20 +2,18 @@
 
 > `/System/Library/Frameworks/OpenGLES.framework/GLEngine.bundle/GLEngine`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc0498` | `0xc04b4` | **`+0x1c`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xc0498
-+  __TEXT.__text: 0xc04b4
-   __TEXT.__const: 0x1448
-   __TEXT.__cstring: 0x1e3d
-   __TEXT.__oslogstring: 0x8e
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__auth_got : content changed
+-24.0.1.0.0
++24.0.2.0.0
 Functions:
 ~ _gleGetState : 9492 -> 9496
 ~ _glGetString_Exec : 1100 -> 1108
@@ -33,5 +31,4 @@ Functions:
 ~ _gleLLVMVecPrimLineRender : 4720 -> 4700
 ~ _gleLLVMVecPrimMultiRender : 8652 -> 8600
 ~ _gleLLVMVecPrimPolyRender : 3732 -> 3744
-
 ```

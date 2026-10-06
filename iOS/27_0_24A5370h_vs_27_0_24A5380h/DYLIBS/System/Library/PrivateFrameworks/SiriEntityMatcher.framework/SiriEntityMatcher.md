@@ -2,84 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/SiriEntityMatcher.framework/SiriEntityMatcher`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x13b2c` | `0x1cb2c` | **`+0x9000`** |
+| `__DATA_CONST.__const` | `0x24d40` | `0x29e78` | **`+0x5138`** |
+| `__TEXT.__ustring` | `0x9e78` | `0xb61a` | **`+0x17a2`** |
+| `__TEXT.__text` | `0x5c4bc` | `0x5c284` | **`-0x238`** |
+| `__AUTH.__objc_data` | `0xcc8` | `0xc28` | **`-0xa0`** |
+| `__DATA_DIRTY.__objc_data` | `0x11f8` | `0x1298` | **`+0xa0`** |
+| `__AUTH_CONST.__const` | `0x16a0` | `0x16f8` | **`+0x58`** |
+| `__DATA_CONST.__got` | `0x488` | `0x4e0` | **`+0x58`** |
+| `__TEXT.__unwind_info` | `0x1c50` | `0x1c58` | **`+0x8`** |
+| `__TEXT.__cstring` | `0x70be` | `0x70c4` | **`+0x6`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x5c4bc
-+  __TEXT.__text: 0x5c284
-   __TEXT.__objc_methlist: 0x4084
--  __TEXT.__const: 0x13b2c
-+  __TEXT.__const: 0x1cb2c
-   __TEXT.__dlopen_cstrs: 0x78
-   __TEXT.__oslogstring: 0x69ca
--  __TEXT.__cstring: 0x70be
-+  __TEXT.__cstring: 0x70c4
-   __TEXT.__swift5_typeref: 0x2a
-   __TEXT.__gcc_except_tab: 0x3614
--  __TEXT.__ustring: 0x9e78
--  __TEXT.__unwind_info: 0x1c50
-+  __TEXT.__ustring: 0xb61a
-+  __TEXT.__unwind_info: 0x1c58
-   __TEXT.__eh_frame: 0x50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x24d40
-+  __DATA_CONST.__const: 0x29e78
-   __DATA_CONST.__objc_classlist: 0x310
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_protolist: 0xc8
+-3600.34.6.0.0
++3600.34.11.0.0
 
-   __DATA_CONST.__objc_selrefs: 0x2088
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x260
--  __DATA_CONST.__got: 0x488
--  __AUTH_CONST.__const: 0x16a0
-+  __DATA_CONST.__got: 0x4e0
-+  __AUTH_CONST.__const: 0x16f8
-   __AUTH_CONST.__cfstring: 0x3720
-   __AUTH_CONST.__objc_const: 0x7708
-   __AUTH_CONST.__weak_auth_got: 0x38
-   __AUTH_CONST.__objc_intobj: 0x60
-   __AUTH_CONST.__auth_got: 0xb58
--  __AUTH.__objc_data: 0xcc8
-+  __AUTH.__objc_data: 0xc28
-   __DATA.__objc_ivar: 0x44c
-   __DATA.__data: 0x980
-   __DATA.__bss: 0x18
-   __DATA.__common: 0x20
-   __DATA_DIRTY.__objc_ivar: 0x3c
--  __DATA_DIRTY.__objc_data: 0x11f8
-+  __DATA_DIRTY.__objc_data: 0x1298
-   __DATA_DIRTY.__data: 0x40
-   __DATA_DIRTY.__common: 0x20
-   __DATA_DIRTY.__bss: 0x98
-
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 1661
-   Symbols:   554
--  CStrings:  1799
-+  CStrings:  1800
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
+-  CStrings:  1359
++  CStrings:  1360
 Functions:
 ~ sub_1c6a28868 -> sub_1cb083868 : 1868 -> 1864
 ~ sub_1c6a2e778 -> sub_1cb089774 : 96 -> 80
@@ -98,5 +44,4 @@ Functions:
 ~ sub_1c6a6bb04 -> sub_1cb0c68e8 : 3208 -> 3180
 CStrings:
 + "hi_IN"
-
 ```

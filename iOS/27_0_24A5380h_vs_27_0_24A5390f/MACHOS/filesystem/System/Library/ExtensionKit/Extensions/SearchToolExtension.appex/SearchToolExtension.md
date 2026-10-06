@@ -2,50 +2,38 @@
 
 > `/System/Library/ExtensionKit/Extensions/SearchToolExtension.appex/SearchToolExtension`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x342c` | `0x34c0` | **`+0x94`** |
+| `__DATA.__common` | `0x279` | `0x291` | **`+0x18`** |
+| `__DATA.__data` | `0x168` | `0x170` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__const`
 - `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_entry`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
 - `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
+
+### Other Changes
 
 ```diff
 
 -3600.56.20.0.0
--  __TEXT.__text: 0x342c
 +3600.56.27.0.0
-+  __TEXT.__text: 0x34c0
-   __TEXT.__auth_stubs: 0x3a0
-   __TEXT.__const: 0x23c
-   __TEXT.__swift5_typeref: 0xd8
 
-   __DATA_CONST.__auth_got: 0x1d0
-   __DATA_CONST.__got: 0x48
-   __DATA_CONST.__auth_ptr: 0x128
--  __DATA.__data: 0x168
-+  __DATA.__data: 0x170
-   __DATA.__bss: 0x280
--  __DATA.__common: 0x279
-+  __DATA.__common: 0x291
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 188
 -  Symbols:   533
 +  Functions: 191
 +  Symbols:   539
-   CStrings:  11
- 
 Symbols:
 + _$s19SearchToolExtension7LoggingO19hydrationSignposter2os12OSSignposterVvau
 + _$s19SearchToolExtension7LoggingO19hydrationSignposter2os12OSSignposterVvgZ

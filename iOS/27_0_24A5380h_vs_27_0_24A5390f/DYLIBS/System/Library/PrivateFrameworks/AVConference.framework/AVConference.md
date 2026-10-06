@@ -2,104 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/AVConference.framework/AVConference`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_floatobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__auth_got`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7d4120` | `0x7d7380` | **`+0x3260`** |
+| `__TEXT.__oslogstring` | `0x13e750` | `0x13f959` | **`+0x1209`** |
+| `__TEXT.__cstring` | `0x9ead7` | `0x9eef2` | **`+0x41b`** |
+| `__AUTH_CONST.__cfstring` | `0x298e0` | `0x299c0` | **`+0xe0`** |
+| `__AUTH_CONST.__const` | `0x4528` | `0x45c8` | **`+0xa0`** |
+| `__AUTH_CONST.__objc_const` | `0x6cd98` | `0x6ce28` | **`+0x90`** |
+| `__DATA_CONST.__const` | `0x7698` | `0x7718` | **`+0x80`** |
+| `__TEXT.__objc_methlist` | `0x3a8e8` | `0x3a968` | **`+0x80`** |
+| `__DATA_CONST.__objc_selrefs` | `0x18bf0` | `0x18c38` | **`+0x48`** |
+| `__TEXT.__unwind_info` | `0x12490` | `0x124c8` | **`+0x38`** |
+| `__DATA.__bss` | `0x910` | `0x930` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x52e0` | `0x52f8` | **`+0x18`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x1d0` | `0x1e0` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0xaf0` | `0xae0` | **`-0x10`** |
+| `__TEXT.__const` | `0xc6b0` | `0xc6c0` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x2d08` | `0x2cf8` | **`-0x10`** |
+| `__DATA.__objc_ivar` | `0x76b8` | `0x76c4` | **`+0xc`** |
+
+### Other Changes
 
 ```diff
 
 -2235.55.1.0.0
--  __TEXT.__text: 0x7d4120
--  __TEXT.__objc_methlist: 0x3a8e8
--  __TEXT.__const: 0xc6b0
--  __TEXT.__cstring: 0x9ead7
--  __TEXT.__oslogstring: 0x13e750
--  __TEXT.__gcc_except_tab: 0x2d08
 +2235.57.1.0.0
-+  __TEXT.__text: 0x7d7380
-+  __TEXT.__objc_methlist: 0x3a968
-+  __TEXT.__const: 0xc6c0
-+  __TEXT.__cstring: 0x9eef2
-+  __TEXT.__oslogstring: 0x13f959
-+  __TEXT.__gcc_except_tab: 0x2cf8
-   __TEXT.__ustring: 0x2d4
-   __TEXT.__dlopen_cstrs: 0x56
--  __TEXT.__unwind_info: 0x12490
-+  __TEXT.__unwind_info: 0x124c8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7698
-+  __DATA_CONST.__const: 0x7718
-   __DATA_CONST.__objc_classlist: 0x14b8
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x510
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x18bf0
-+  __DATA_CONST.__objc_selrefs: 0x18c38
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_superrefs: 0x1268
-   __DATA_CONST.__objc_arraydata: 0x27c8
-   __DATA_CONST.__got: 0x1e30
--  __AUTH_CONST.__const: 0x4528
--  __AUTH_CONST.__cfstring: 0x298e0
--  __AUTH_CONST.__objc_const: 0x6cd98
-+  __AUTH_CONST.__const: 0x45c8
-+  __AUTH_CONST.__cfstring: 0x299c0
-+  __AUTH_CONST.__objc_const: 0x6ce28
-   __AUTH_CONST.__weak_auth_got: 0x28
--  __AUTH_CONST.__objc_intobj: 0x52e0
-+  __AUTH_CONST.__objc_intobj: 0x52f8
-   __AUTH_CONST.__objc_arrayobj: 0x1d88
-   __AUTH_CONST.__objc_floatobj: 0x30
--  __AUTH_CONST.__objc_doubleobj: 0x1d0
-+  __AUTH_CONST.__objc_doubleobj: 0x1e0
-   __AUTH_CONST.__objc_dictobj: 0x2d0
-   __AUTH_CONST.__auth_got: 0x2c38
-   __AUTH.__data: 0xf8
--  __DATA.__objc_ivar: 0x76b8
-+  __DATA.__objc_ivar: 0x76c4
-   __DATA.__data: 0x7d48
--  __DATA.__bss: 0x910
-+  __DATA.__bss: 0x930
-   __DATA.__common: 0x55
-   __DATA_DIRTY.__objc_data: 0xcf30
-   __DATA_DIRTY.__data: 0x420
--  __DATA_DIRTY.__bss: 0xaf0
-+  __DATA_DIRTY.__bss: 0xae0
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
 
-   - /usr/lib/libspindump.dylib
-   - /usr/lib/libtailspin.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 35352
--  Symbols:   52949
+-  Symbols:   41883
 -  CStrings:  33855
 +  Functions: 35388
-+  Symbols:   52994
++  Symbols:   41920
 +  CStrings:  33917
- 
 Symbols:
 + +[VCHardwareSettings supportsVideoPresentationOrientation]
 + -[AVConferenceXPCServer drainListenerQueues]
@@ -147,14 +84,6 @@ Symbols:
 + _kVCExperimentEnableRateControlOscillationAvoidance
 + _kVCExperimentReduceKPIVariationTierA
 + _kVCExperimentReduceKPIVariationTierB
-+ _objc_msgSend$_uplinkOvershootFixTargetForConnection:oldUplinkTargetBitrate:
-+ _objc_msgSend$enableRampUpStuckFix
-+ _objc_msgSend$reportEnabledRealtimeStats:
-+ _objc_msgSend$reportPostDisableRealtimeStats:
-+ _objc_msgSend$rtpTimestampRateForHomeKitSecureVideoModeWithStreamGroupID:fallbackRate:
-+ _objc_msgSend$safeDispatch:
-+ _objc_msgSend$setEnableRampUpStuckFix:
-+ _objc_msgSend$supportsVideoPresentationOrientation
 + _supportsVideoPresentationOrientation.onceToken
 + _supportsVideoPresentationOrientation.resolved
 - GCC_except_table102

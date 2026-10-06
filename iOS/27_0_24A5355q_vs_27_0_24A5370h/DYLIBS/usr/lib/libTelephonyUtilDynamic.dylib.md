@@ -2,78 +2,30 @@
 
 > `/usr/lib/libTelephonyUtilDynamic.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8555c` | `0x85b60` | **`+0x604`** |
+| `__TEXT.__gcc_except_tab` | `0x8abc` | `0x8b40` | **`+0x84`** |
+| `__TEXT.__unwind_info` | `0x4468` | `0x44d0` | **`+0x68`** |
+| `__AUTH_CONST.__auth_got` | `0xc48` | `0xc70` | **`+0x28`** |
+| `__TEXT.__oslogstring` | `0x2176` | `0x2196` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x364b` | `0x3667` | **`+0x1c`** |
+
+### Other Changes
+
 ```diff
 
 -6554.0.0.0.0
--  __TEXT.__text: 0x8555c sha256:5046199a07db3d8364a13404e13cf97910111d944634d2f8c473667253322a50
--  __TEXT.__init_offsets: 0x10 sha256:120be820896d990b44715bb2f25710d0f6a17cf0ad1bf5e09e829b97c3fc74fc
--  __TEXT.__objc_methlist: 0x2a4 sha256:df93006df88877fe7e55457594c7c68be737bc385b065153fe63bcce533ce435
 +6559.0.0.0.0
-+  __TEXT.__text: 0x85b60 sha256:7236a59c7a9b8c62aa3a1f1f335bc2b1d9a374dd27bcb12ba4650967fdcf527d
-+  __TEXT.__init_offsets: 0x10 sha256:9b4df7e7ef6a0dc8855fd6615435d7d50fac1ec3f4ef50dfbe5f0bf8a5269745
-+  __TEXT.__objc_methlist: 0x2a4 sha256:43e6bb6103b81107aab90d19efc750ba5f06f85b8c450b9649885eb44edf29df
-   __TEXT.__const: 0xa128 sha256:98580e991d76141b40bd5fb15f61d1e31dd136171fbf0757e51554a1037e144a
--  __TEXT.__cstring: 0x364b sha256:48db8d9a47ad6a387abb90690b82fd6009273dc3487e15f908dd7b3cf2726480
--  __TEXT.__gcc_except_tab: 0x8abc sha256:5df7d23d15c7d902fff1d20d7ce6c0ef52e498dc4196f308223b7898a9067c70
--  __TEXT.__oslogstring: 0x2176 sha256:cd79d8bfc1a62152c9411539fff5ac6a7903cf5b187912a3a58be38b8186137c
--  __TEXT.__unwind_info: 0x4468 sha256:11fced10687f420d1d8d5aa147033341e407283bcefd6fa20f76281130de9527
-+  __TEXT.__cstring: 0x3667 sha256:8f7fe0c29ef7565a0be1629cf70dca400e526d0c1c46efa7f53a47ddb7443019
-+  __TEXT.__gcc_except_tab: 0x8b40 sha256:75071639b38206262e0e6eb6a1e8373c82aad8e50b85b6c1b46b2a4707579ea5
-+  __TEXT.__oslogstring: 0x2196 sha256:40c7855849a5a61dae9f7cba2009767f2a9be313dcc4d800c1cd0929597a8b0e
-+  __TEXT.__unwind_info: 0x44d0 sha256:0430d11c6aa4e1c46f29b10c3208120be8d19b0bd2f47a83f667db0b80b099a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x8f0 sha256:bdac9fc434f22bc9bd69f38ae71d6999c382048909120d0fcd99a72d8cde99dd
--  __DATA_CONST.__objc_classlist: 0x8 sha256:415f3036c4699077bd927e39916bc6901b0df3a100cca534d6e1480505734444
--  __DATA_CONST.__objc_protolist: 0x20 sha256:e593891d68857dc5c7645b723aa4a83a40b8e5311ff0ac9ee54f7145f3311d12
-+  __DATA_CONST.__const: 0x8f0 sha256:b037d5f6a40861c9a43555b3e07240ddf0fcc676057a1ed975d13265a80e4051
-+  __DATA_CONST.__objc_classlist: 0x8 sha256:a3c9500ccdd09b913cc22a021bb5de1f6891cd78f098da451988547f0af3c3f8
-+  __DATA_CONST.__objc_protolist: 0x20 sha256:cd95f587f6f2ea1643c68f452b00a54a9812ffe466aebf5a6e5020ac5556c868
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x20 sha256:c251a143948d1d7130c4ba62828a11aec49ba272e50a81f1bca71364c142adce
--  __DATA_CONST.__objc_selrefs: 0x368 sha256:1f0e26aaa50fc8750fe43f4c249ff9c09947e9ab813b7b72314243502f301671
--  __DATA_CONST.__objc_superrefs: 0x8 sha256:415f3036c4699077bd927e39916bc6901b0df3a100cca534d6e1480505734444
--  __DATA_CONST.__got: 0x308 sha256:5931cbef0502671101c9b5cb9dc8b113944731ef0f0d52ea4b77f071af3c90b0
--  __AUTH_CONST.__const: 0x6d70 sha256:80e0671a001eb636648e1223292cf2e63c9545042ac7841810bb7d4982b098e1
--  __AUTH_CONST.__cfstring: 0x6c0 sha256:c46e4a6cb40a0924ff25cd39089108159c31a9208ae1f2b6e991ba6bc8e2497b
--  __AUTH_CONST.__objc_const: 0x2e8 sha256:4338138edf69bfcf92fe73d29ce34ee6c9f92b1028a36669480c2264192b9b1c
--  __AUTH_CONST.__weak_auth_got: 0x18 sha256:b4d63f5143cab03784bcd8078cf368b3211ad44901943893b9a38a1d65161ab2
--  __AUTH_CONST.__auth_got: 0xc48 sha256:9c3a23610cbe1a6c739eb0c734761208641c970d6adfcfaf2ea599163434e704
--  __AUTH.__objc_data: 0x50 sha256:bb5c1bcb52069f5a6a136a58926c3ab3465662907a34086cb18719c9a30a4d36
--  __AUTH.__data: 0x10 sha256:308f6d5bf5c043d0c5796ec2413e50316a3518a65658ecaa0db5202f9faece12
-+  __DATA_CONST.__weak_got: 0x20 sha256:ff334a2a43f9c7fd84df42b3032b58c31cbb2733f0239dbe606717fa0cce9cdd
-+  __DATA_CONST.__objc_selrefs: 0x368 sha256:46e86e8ef9d47573842950cc7bedcdcd6cd54db3370296d0163ac5fbd37f6354
-+  __DATA_CONST.__objc_superrefs: 0x8 sha256:a3c9500ccdd09b913cc22a021bb5de1f6891cd78f098da451988547f0af3c3f8
-+  __DATA_CONST.__got: 0x308 sha256:8707f7e5bd49f7b70fc87120d661b7280cd68b7432f9fc2ef618c1d566548344
-+  __AUTH_CONST.__const: 0x6d70 sha256:b26400d25015e66d2a42cf4adfb4bcb814bef283aaeafa6c14f7351a96ac4418
-+  __AUTH_CONST.__cfstring: 0x6c0 sha256:4a58b2f8accdcd3bffdf1674fdf79e6558120b54ffe766525168022012b71468
-+  __AUTH_CONST.__objc_const: 0x2e8 sha256:2cd8aa47bf291524f705b0f6432a1b765fde73914359f28033a531d2391b0131
-+  __AUTH_CONST.__weak_auth_got: 0x18 sha256:59840b5ab725ff395f4d50ab7fa15bc9090e451f340dc56e5222bd047e535ade
-+  __AUTH_CONST.__auth_got: 0xc70 sha256:867a1c6b54224cf6d58f1c17a1bb7d2524b3ffba7ce07d3c26783cacec286875
-+  __AUTH.__objc_data: 0x50 sha256:358dbaf53e4554b4d590a29a8899ebf669d526a36b9d6b8b34ac19885d3a993a
-+  __AUTH.__data: 0x10 sha256:612f7b7b85e3adfe1f529278894fa828212cac94c812f82e59aa1ccc74086a78
-   __DATA.__objc_ivar: 0x4 sha256:dc765660b06ee03dd16fd7ca5b957e8c805161ac2c4af28c5a100ab2ab432ca1
--  __DATA.__data: 0x238 sha256:a1b4f0f8e661bbf567010cbef8d4738ad77414b3e01df6a524694df2a1801ef7
-+  __DATA.__data: 0x238 sha256:6f4a07ff22d07eb19f19bbe04391bd49d696e3317f1d5ea2f741ec260fa0c628
-   __DATA.__crash_info: 0x148 sha256:6da6349e97370e8d430272961ce52dff296ff7c22208bd465045a16f557b12e4
-   __DATA.__common: 0x68 sha256:39f37f8d1931b3bdf767e7510dd69509fbf23af1f7654933d0a4d291cbdd4418
-   __DATA.__bss: 0x110 sha256:e4d879a3407de578f579dfab4366fcea75a6649c683d9efe4f056f6505437574
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
--  UUID: DDC32508-B37D-3D3D-95CD-31606B1F8C48
 -  Functions: 3353
--  Symbols:   8345
--  CStrings:  781
-+  UUID: 06D6ED89-6180-3AD9-B22C-25B43C8AA96A
+-  Symbols:   5221
+-  CStrings:  725
 +  Functions: 3362
-+  Symbols:   8367
-+  CStrings:  783
- 
++  Symbols:   5235
++  CStrings:  727
 Symbols:
 + __ZN3ctu2cf13CFWeakRefBase5storeEPKv
 + __ZN3ctu2cf13CFWeakRefBaseC1EPKv
@@ -784,5 +736,4 @@ Symbols:
 CStrings:
 + "%s: process %s exists? %{bool}d"
 + "process %s exists? %{bool}d"
-
 ```

@@ -2,96 +2,60 @@
 
 > `/System/Library/Assistant/FlowDelegatePlugins/PhoneCallFlowDelegatePlugin.bundle/PhoneCallFlowDelegatePlugin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_protos`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x43eb7c` | `0x440724` | **`+0x1ba8`** |
+| `__DATA.__bss` | `0x3a4b0` | `0x3abb0` | **`+0x700`** |
+| `__TEXT.__const` | `0x2e008` | `0x2e368` | **`+0x360`** |
+| `__DATA_CONST.__const` | `0x30e78` | `0x31050` | **`+0x1d8`** |
+| `__TEXT.__swift5_fieldmd` | `0xdd34` | `0xde78` | **`+0x144`** |
+| `__TEXT.__swift5_reflstr` | `0xf274` | `0xf304` | **`+0x90`** |
+| `__TEXT.__swift5_typeref` | `0xb9d3` | `0xba5d` | **`+0x8a`** |
+| `__TEXT.__unwind_info` | `0x13c08` | `0x13c90` | **`+0x88`** |
+| `__TEXT.__cstring` | `0xd1fa` | `0xd27a` | **`+0x80`** |
+| `__DATA.__data` | `0x16bf0` | `0x16c60` | **`+0x70`** |
+| `__TEXT.__eh_frame` | `0x26a84` | `0x26af4` | **`+0x70`** |
+| `__TEXT.__oslogstring` | `0x1b8cc` | `0x1b93c` | **`+0x70`** |
+| `__TEXT.__constg_swiftt` | `0x12174` | `0x121d8` | **`+0x64`** |
+| `__TEXT.__swift5_proto` | `0x1fe0` | `0x2018` | **`+0x38`** |
+| `__TEXT.__swift5_types` | `0xf24` | `0xf30` | **`+0xc`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_got`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__cfstring`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__auth_got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -3600.38.16.0.0
--  __TEXT.__text: 0x43eb7c
 +3600.38.22.11.1
-+  __TEXT.__text: 0x440724
-   __TEXT.__auth_stubs: 0x8410
-   __TEXT.__objc_stubs: 0x4640
-   __TEXT.__objc_methlist: 0x638
--  __TEXT.__const: 0x2e008
--  __TEXT.__swift5_typeref: 0xb9d3
-+  __TEXT.__const: 0x2e368
-+  __TEXT.__swift5_typeref: 0xba5d
-   __TEXT.__swift5_capture: 0x56f0
--  __TEXT.__cstring: 0xd1fa
--  __TEXT.__constg_swiftt: 0x12174
-+  __TEXT.__cstring: 0xd27a
-+  __TEXT.__constg_swiftt: 0x121d8
-   __TEXT.__swift5_builtin: 0x2bc
--  __TEXT.__swift5_reflstr: 0xf274
--  __TEXT.__swift5_fieldmd: 0xdd34
-+  __TEXT.__swift5_reflstr: 0xf304
-+  __TEXT.__swift5_fieldmd: 0xde78
-   __TEXT.__swift5_assocty: 0x30e0
--  __TEXT.__swift5_proto: 0x1fe0
--  __TEXT.__swift5_types: 0xf24
-+  __TEXT.__swift5_proto: 0x2018
-+  __TEXT.__swift5_types: 0xf30
-   __TEXT.__objc_classname: 0x3c8b
-   __TEXT.__objc_methname: 0x5209
-   __TEXT.__objc_methtype: 0x4c6
--  __TEXT.__oslogstring: 0x1b8cc
-+  __TEXT.__oslogstring: 0x1b93c
-   __TEXT.__swift_as_entry: 0x1ab8
-   __TEXT.__swift_as_ret: 0x1c48
-   __TEXT.__swift_as_cont: 0x2168
-   __TEXT.__swift5_mpenum: 0x70
-   __TEXT.__swift5_protos: 0x1b0
--  __TEXT.__unwind_info: 0x13c08
--  __TEXT.__eh_frame: 0x26a84
--  __DATA_CONST.__const: 0x30e78
-+  __TEXT.__unwind_info: 0x13c90
-+  __TEXT.__eh_frame: 0x26af4
-+  __DATA_CONST.__const: 0x31050
-   __DATA_CONST.__cfstring: 0x640
-   __DATA_CONST.__objc_classlist: 0x4a0
-   __DATA_CONST.__objc_protolist: 0x180
 
-   __DATA.__objc_const: 0xc818
-   __DATA.__objc_selrefs: 0x12e0
-   __DATA.__objc_data: 0x20c8
--  __DATA.__data: 0x16bf0
--  __DATA.__bss: 0x3a4b0
-+  __DATA.__data: 0x16c60
-+  __DATA.__bss: 0x3abb0
-   __DATA.__common: 0xe30
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 29654
 -  Symbols:   61502
 -  CStrings:  4139
 +  Functions: 29720
 +  Symbols:   61683
 +  CStrings:  4144
- 
 Symbols:
 + $s27PhoneCallFlowDelegatePlugin0B17ConfirmationModelV14responseViewIdSSvM.resume
 + _$s27PhoneCallFlowDelegatePlugin010StartAudioB12DirectActionVWOc

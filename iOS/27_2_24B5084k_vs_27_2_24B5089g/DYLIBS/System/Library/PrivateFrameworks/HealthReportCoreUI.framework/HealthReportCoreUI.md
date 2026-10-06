@@ -2,94 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/HealthReportCoreUI.framework/HealthReportCoreUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x149dc0` | `0x14d30c` | **`+0x354c`** |
+| `__DATA.__bss` | `0x9ed8` | `0xa1c8` | **`+0x2f0`** |
+| `__TEXT.__cstring` | `0x3cf7` | `0x3fa7` | **`+0x2b0`** |
+| `__AUTH_CONST.__const` | `0x79c0` | `0x7c30` | **`+0x270`** |
+| `__TEXT.__const` | `0x9274` | `0x9454` | **`+0x1e0`** |
+| `__AUTH.__data` | `0x2f28` | `0x3098` | **`+0x170`** |
+| `__TEXT.__swift5_capture` | `0x16d4` | `0x183c` | **`+0x168`** |
+| `__TEXT.__swift5_reflstr` | `0x24f8` | `0x2648` | **`+0x150`** |
+| `__AUTH_CONST.__objc_const` | `0x1520` | `0x1650` | **`+0x130`** |
+| `__TEXT.__swift5_fieldmd` | `0x2e1c` | `0x2efc` | **`+0xe0`** |
+| `__TEXT.__unwind_info` | `0x43a0` | `0x4468` | **`+0xc8`** |
+| `__DATA_CONST.__got` | `0x1af8` | `0x1b80` | **`+0x88`** |
+| `__AUTH_CONST.__auth_got` | `0x3240` | `0x32c0` | **`+0x80`** |
+| `__TEXT.__constg_swiftt` | `0x39b8` | `0x3a28` | **`+0x70`** |
+| `__TEXT.__swift5_typeref` | `0x3ce8` | `0x3d4a` | **`+0x62`** |
+| `__TEXT.__eh_frame` | `0x3d0c` | `0x3cac` | **`-0x60`** |
+| `__AUTH.__objc_data` | `0x558` | `0x5a8` | **`+0x50`** |
+| `__TEXT.__oslogstring` | `0xe9c` | `0xeec` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x318` | `0x340` | **`+0x28`** |
+| `__TEXT.__swift_as_cont` | `0x2a4` | `0x288` | **`-0x1c`** |
+| `__DATA.__common` | `0x3c8` | `0x3e0` | **`+0x18`** |
+| `__DATA_CONST.__const` | `0x2e0` | `0x2f8` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0xb00` | `0xb18` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0x4f8` | `0x510` | **`+0x18`** |
+| `__DATA.__data` | `0x5148` | `0x5158` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0xa8` | `0xb0` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x324` | `0x32c` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x12c` | `0x124` | **`-0x8`** |
+| `__TEXT.__swift_as_entry` | `0x110` | `0x10c` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.36.2.7
--  __TEXT.__text: 0x13e8bc
 +7027.1.45.2.4
-+  __TEXT.__text: 0x141d44
-   __TEXT.__objc_methlist: 0xd0
--  __TEXT.__const: 0x9274
--  __TEXT.__swift5_typeref: 0x3ce8
--  __TEXT.__cstring: 0x3cf7
--  __TEXT.__constg_swiftt: 0x39b8
--  __TEXT.__swift5_reflstr: 0x24f8
--  __TEXT.__swift5_fieldmd: 0x2e1c
-+  __TEXT.__const: 0x9454
-+  __TEXT.__swift5_typeref: 0x3d4a
-+  __TEXT.__cstring: 0x3fa7
-+  __TEXT.__constg_swiftt: 0x3a28
-+  __TEXT.__swift5_reflstr: 0x2648
-+  __TEXT.__swift5_fieldmd: 0x2efc
-   __TEXT.__swift5_builtin: 0xf0
--  __TEXT.__swift5_assocty: 0xb00
--  __TEXT.__swift5_capture: 0x16d4
--  __TEXT.__swift5_proto: 0x4f8
--  __TEXT.__swift5_types: 0x324
-+  __TEXT.__swift5_assocty: 0xb18
-+  __TEXT.__swift5_capture: 0x183c
-+  __TEXT.__swift5_proto: 0x510
-+  __TEXT.__swift5_types: 0x32c
-+  __TEXT.__oslogstring: 0xeec
-   __TEXT.__swift5_protos: 0x50
--  __TEXT.__oslogstring: 0xe9c
-   __TEXT.__swift5_mpenum: 0x28
--  __TEXT.__swift_as_entry: 0x110
--  __TEXT.__swift_as_ret: 0x12c
--  __TEXT.__swift_as_cont: 0x2a4
--  __TEXT.__unwind_info: 0x5708
--  __TEXT.__eh_frame: 0x3d0c
-+  __TEXT.__swift_as_entry: 0x10c
-+  __TEXT.__swift_as_ret: 0x124
-+  __TEXT.__swift_as_cont: 0x288
-+  __TEXT.__unwind_info: 0x57f8
-+  __TEXT.__eh_frame: 0x3cac
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2e0
--  __DATA_CONST.__objc_classlist: 0xa8
-+  __DATA_CONST.__const: 0x2f8
-+  __DATA_CONST.__objc_classlist: 0xb0
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x318
-+  __DATA_CONST.__objc_selrefs: 0x340
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__got: 0x1af8
--  __AUTH_CONST.__const: 0x79c0
--  __AUTH_CONST.__objc_const: 0x1520
--  __AUTH_CONST.__auth_got: 0x3240
--  __AUTH.__objc_data: 0x558
--  __AUTH.__data: 0x2f28
--  __DATA.__data: 0x5148
--  __DATA.__common: 0x3c8
-+  __DATA_CONST.__got: 0x1b80
-+  __AUTH_CONST.__const: 0x7c30
-+  __AUTH_CONST.__objc_const: 0x1650
-+  __AUTH_CONST.__auth_got: 0x32c0
-+  __AUTH.__objc_data: 0x5a8
-+  __AUTH.__data: 0x3098
-+  __DATA.__data: 0x5158
-+  __DATA.__common: 0x3e0
-   - /System/Library/Frameworks/Charts.framework/Charts
-+  - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/DeveloperToolsSupport.framework/DeveloperToolsSupport
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+
 -  Functions: 6183
--  Symbols:   1507
+-  Symbols:   1414
 -  CStrings:  433
 +  Functions: 6270
-+  Symbols:   1531
++  Symbols:   1433
 +  CStrings:  445
- 
 Symbols:
 + _OBJC_CLASS_$_NSUserDefaults
 + __DATA__TtC18HealthReportCoreUI29LongevityAnalyticsRecordStore
@@ -112,11 +73,6 @@ Symbols:
 + _get_witness_table 7SwiftUI6VStackVyAA12TupleContentVyAA08ModifiedE0VyAGyAA4TextVAA16_FlexFrameLayoutVGAA31AccessibilityAttachmentModifierVGSg_AA7ForEachVys18EnumeratedSequenceVySay016HealthReportCoreB015EvaluationStackV0U5ModelVGG0rS00U20ExperienceIdentifierOAGyAA012_ConditionalE0VyAGy0rB018WasabiActionButtonVyAGyAGyAA7AnyViewVAA25_ForegroundStyleModifier2VyAA5ColorVA13_GGAA027_EnvironmentBackgroundStyleM0VyA13_GGGAA01_e9ShapeKindM0VyAA16RoundedRectangleVGGA19_GAA024_EnvironmentKeyTransformM0VySbGGGQPGGAA4ViewHPyHC
 + _get_witness_table qd0__6Charts12ChartContentHD3_AaBPAAE6symbolADQrqd__yXE_t7SwiftUI4ViewRd__lFQOy06HealthA09DotSeriesVySdG_AE08ModifiedC0VyAE06_ShapeG0VyAE6CircleVAE5ColorVGAE12_FrameLayoutVGQo_HO
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE7toolbar_3forQrAA10VisibilityO_AA16ToolbarPlacementVdtFQOyAcAE11safeAreaBar4edge9alignment7spacing7contentQrAA12VerticalEdgeO_AA19HorizontalAlignmentV12CoreGraphics7CGFloatVSgqd__yXEtAaBRd__lFQOy06HealthB029WasabiVideoThumbnailContainerVyAA15ModifiedContentVyA2_y012HealthReportxB030EvaluationExperienceBulletListVAA25_ForegroundStyleModifier2VyAA5ColorVA9_GGA3_19WasabiDevicePaddingVGG_AA19_ConditionalContentVy016HealthFoundationB010ActionDockVyA3_26EvaluationCoverFrameButtonVAA05EmptyC0VA24_GA20_yA24_A2_yAA6ButtonVyAA4TextVGAA30_EnvironmentKeyWritingModifierVyA9_SgGGA24_GGSgQo__Qo__SbQo_HO
-+ _objc_msgSend$boolForKey:
-+ _objc_msgSend$secondarySystemGroupedBackgroundColor
-+ _objc_msgSend$setBool:forKey:
-+ _objc_msgSend$standardUserDefaults
-+ _objc_msgSend$tertiaryLabelColor
 + _swift_bridgeObjectRelease_n
 + _swift_release_x3
 + _swift_release_x7

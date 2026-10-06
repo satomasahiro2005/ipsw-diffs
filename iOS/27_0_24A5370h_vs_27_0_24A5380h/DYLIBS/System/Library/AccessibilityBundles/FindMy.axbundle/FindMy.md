@@ -2,58 +2,35 @@
 
 > `/System/Library/AccessibilityBundles/FindMy.axbundle/FindMy`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__objc_const` | `0xbd0` | `0xab0` | **`-0x120`** |
+| `__TEXT.__text` | `0x2f88` | `0x2e90` | **`-0xf8`** |
+| `__AUTH.__objc_data` | `0x690` | `0x5f0` | **`-0xa0`** |
+| `__AUTH_CONST.__cfstring` | `0xb20` | `0xac0` | **`-0x60`** |
+| `__TEXT.__cstring` | `0x7de` | `0x77f` | **`-0x5f`** |
+| `__TEXT.__objc_methlist` | `0x374` | `0x32c` | **`-0x48`** |
+| `__DATA_CONST.__objc_classlist` | `0xa8` | `0x98` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0xa0` | `0x98` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2b0` | `0x2a8` | **`-0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x40` | `0x38` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x1a8` | `0x1a0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2f88
--  __TEXT.__objc_methlist: 0x374
-+  __TEXT.__text: 0x2e90
-+  __TEXT.__objc_methlist: 0x32c
-   __TEXT.__const: 0x18
-   __TEXT.__gcc_except_tab: 0x100
--  __TEXT.__cstring: 0x7de
--  __TEXT.__unwind_info: 0x1a8
-+  __TEXT.__cstring: 0x77f
-+  __TEXT.__unwind_info: 0x1a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x1e8
--  __DATA_CONST.__objc_classlist: 0xa8
-+  __DATA_CONST.__objc_classlist: 0x98
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2b0
--  __DATA_CONST.__objc_superrefs: 0x40
--  __DATA_CONST.__got: 0xa0
-+  __DATA_CONST.__objc_selrefs: 0x2a8
-+  __DATA_CONST.__objc_superrefs: 0x38
-+  __DATA_CONST.__got: 0x98
-   __AUTH_CONST.__const: 0x140
--  __AUTH_CONST.__cfstring: 0xb20
--  __AUTH_CONST.__objc_const: 0xbd0
-+  __AUTH_CONST.__cfstring: 0xac0
-+  __AUTH_CONST.__objc_const: 0xab0
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x690
-+  __AUTH.__objc_data: 0x5f0
-   __DATA.__bss: 0x18
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+-3039.1.0.0.0
++3042.0.0.0.0
 
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 84
--  Symbols:   444
--  CStrings:  192
+-  Symbols:   282
+-  CStrings:  104
 +  Functions: 80
-+  Symbols:   424
-+  CStrings:  185
- 
-Sections:
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__const : content changed
++  Symbols:   266
++  CStrings:  100
 Symbols:
 + GCC_except_table57
 + GCC_except_table58
@@ -84,5 +61,4 @@ CStrings:
 - "FMInitialCardControllerAccessibility"
 - "FindMy.FMInitialCardController"
 - "presentCard:completion:"
-
 ```

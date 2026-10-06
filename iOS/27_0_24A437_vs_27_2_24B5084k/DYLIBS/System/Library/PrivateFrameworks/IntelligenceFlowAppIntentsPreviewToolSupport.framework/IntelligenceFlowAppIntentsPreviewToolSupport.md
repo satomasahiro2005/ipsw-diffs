@@ -2,15 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/IntelligenceFlowAppIntentsPreviewToolSupport.framework/IntelligenceFlowAppIntentsPreviewToolSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7680` | `0x7684` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3600.156.4.501.4
--  __TEXT.__text: 0x6fcc
 +3605.14.3.501.4
-+  __TEXT.__text: 0x6fd0
-   __TEXT.__const: 0x35c
-   __TEXT.__swift5_typeref: 0x1e6
-   __TEXT.__swift5_capture: 0x70
 Functions:
-~ sub_284e688c4 -> sub_28a6668c4 : 884 -> 888
+~ sub_287df3c54 -> sub_28d803c54 : 916 -> 920
 ```

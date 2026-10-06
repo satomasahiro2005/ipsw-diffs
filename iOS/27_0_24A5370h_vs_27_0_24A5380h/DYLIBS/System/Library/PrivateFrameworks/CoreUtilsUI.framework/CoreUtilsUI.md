@@ -2,104 +2,68 @@
 
 > `/System/Library/PrivateFrameworks/CoreUtilsUI.framework/CoreUtilsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2d9c` | `0x9c70` | **`+0x6ed4`** |
+| `__DATA.__bss` | `0x20` | `0x810` | **`+0x7f0`** |
+| `__TEXT.__const` | `0xaa` | `0x802` | **`+0x758`** |
+| `__AUTH_CONST.__const` | `0x208` | `0x6e0` | **`+0x4d8`** |
+| `__TEXT.__constg_swiftt` | `0x84` | `0x478` | **`+0x3f4`** |
+| `__AUTH_CONST.__auth_got` | `0x390` | `0x760` | **`+0x3d0`** |
+| `__TEXT.__swift5_typeref` | `0x9c` | `0x453` | **`+0x3b7`** |
+| `__DATA.__data` | `0x48` | `0x298` | **`+0x250`** |
+| `__AUTH.__data` | `—` | `0x240` | **`+0x240`** |
+| `__TEXT.__unwind_info` | `0x110` | `0x330` | **`+0x220`** |
+| `__TEXT.__swift5_fieldmd` | `0x38` | `0x228` | **`+0x1f0`** |
+| `__TEXT.__eh_frame` | `0x160` | `0x2f8` | **`+0x198`** |
+| `__TEXT.__cstring` | `0x1c3` | `0x35a` | **`+0x197`** |
+| `__AUTH_CONST.__objc_const` | `—` | `0x140` | **`+0x140`** |
+| `__TEXT.__swift5_reflstr` | `0xd` | `0x121` | **`+0x114`** |
+| `__TEXT.__oslogstring` | `0x4c` | `0x14c` | **`+0x100`** |
+| `__AUTH.__objc_data` | `—` | `0xd0` | **`+0xd0`** |
+| `__TEXT.__swift5_assocty` | `—` | `0xb0` | **`+0xb0`** |
+| `__TEXT.__swift5_capture` | `0x4c` | `0xa0` | **`+0x54`** |
+| `__TEXT.__swift5_builtin` | `0x14` | `0x64` | **`+0x50`** |
+| `__TEXT.__swift5_proto` | `—` | `0x40` | **`+0x40`** |
+| `__TEXT.__swift5_types` | `0xc` | `0x40` | **`+0x34`** |
+| `__DATA_CONST.__const` | `0x88` | `0xb0` | **`+0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0xf8` | `0x118` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `—` | `0x20` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `—` | `0x10` | **`+0x10`** |
+| `__TEXT.__swift5_mpenum` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x4` | `0xc` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0xc` | `0x10` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x4` | `0x8` | **`+0x4`** |
+| `__TEXT.__objc_classname` | `—` | `0x0` | **`+0x0`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2d9c
--  __TEXT.__const: 0xaa
--  __TEXT.__swift5_typeref: 0x9c
--  __TEXT.__cstring: 0x1c3
--  __TEXT.__swift5_capture: 0x4c
--  __TEXT.__constg_swiftt: 0x84
--  __TEXT.__swift5_fieldmd: 0x38
--  __TEXT.__swift5_builtin: 0x14
--  __TEXT.__swift5_reflstr: 0xd
--  __TEXT.__oslogstring: 0x4c
--  __TEXT.__swift5_types: 0xc
--  __TEXT.__swift_as_entry: 0x4
--  __TEXT.__swift_as_ret: 0x4
--  __TEXT.__swift_as_cont: 0xc
--  __TEXT.__unwind_info: 0x110
--  __TEXT.__eh_frame: 0x160
-+  __TEXT.__text: 0x9c70
-+  __TEXT.__objc_methlist: 0x20
-+  __TEXT.__const: 0x802
-+  __TEXT.__swift5_typeref: 0x453
-+  __TEXT.__swift5_reflstr: 0x121
-+  __TEXT.__swift5_assocty: 0xb0
-+  __TEXT.__constg_swiftt: 0x478
-+  __TEXT.__swift5_fieldmd: 0x228
-+  __TEXT.__swift5_builtin: 0x64
-+  __TEXT.__swift5_mpenum: 0x8
-+  __TEXT.__oslogstring: 0x14c
-+  __TEXT.__cstring: 0x35a
-+  __TEXT.__swift5_capture: 0xa0
-+  __TEXT.__swift5_proto: 0x40
-+  __TEXT.__swift5_types: 0x40
-+  __TEXT.__swift_as_entry: 0xc
-+  __TEXT.__swift_as_ret: 0x8
-+  __TEXT.__swift_as_cont: 0x10
-+  __TEXT.__unwind_info: 0x330
-+  __TEXT.__eh_frame: 0x2f8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-+  __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x88
-+  __DATA_CONST.__const: 0xb0
-+  __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xf8
-+  __DATA_CONST.__objc_selrefs: 0x118
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x208
--  __AUTH_CONST.__auth_got: 0x390
--  __DATA.__data: 0x48
--  __DATA.__bss: 0x20
-+  __AUTH_CONST.__const: 0x6e0
-+  __AUTH_CONST.__objc_const: 0x140
-+  __AUTH_CONST.__auth_got: 0x760
-+  __AUTH.__objc_data: 0xd0
-+  __AUTH.__data: 0x240
-+  __DATA.__data: 0x298
-+  __DATA.__bss: 0x810
-   __DATA_DIRTY.__data: 0x20
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreImage.framework/CoreImage
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+-900.37.0.0.0
++900.48.0.0.0
+
 +  - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-   - /System/Library/Frameworks/UIKit.framework/UIKit
+
 +  - /System/Library/Frameworks/Vision.framework/Vision
 +  - /System/Library/Frameworks/VisionKit.framework/VisionKit
-   - /System/Library/PrivateFrameworks/CoreUtils.framework/CoreUtils
-   - /System/Library/PrivateFrameworks/CoreUtilsSwift.framework/CoreUtilsSwift
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
+
 +  - /usr/lib/swift/libswiftAVFoundation.dylib
 +  - /usr/lib/swift/libswiftAccelerate.dylib
 +  - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftCoreImage.dylib
-   - /usr/lib/swift/libswiftCoreLocation.dylib
-+  - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
-+  - /usr/lib/swift/libswiftMLCompute.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /usr/lib/swift/libswiftCoreMIDI.dylib
+
++  - /usr/lib/swift/libswiftMLCompute.dylib
+
 -  Functions: 57
--  Symbols:   204
+-  Symbols:   152
 -  CStrings:  11
 +  Functions: 274
-+  Symbols:   389
++  Symbols:   315
 +  CStrings:  27
- 
 Symbols:
 + _OBJC_CLASS_$_NSBundle
 + _OBJC_CLASS_$_NSObject
@@ -156,10 +120,6 @@ Symbols:
 + _get_witness_table 7SwiftUI6ZStackVyAA12TupleContentVy09CoreUtilsB021_ScannerRepresentable33_AB2C6E6A9DD3362D09C45DF990E1477ALLV_AF01_H15UnavailableViewAHLLVSgQPGGAA0T0HPyHC
 + _malloc_size
 + _memmove
-+ _objc_msgSend$CGImage
-+ _objc_msgSend$bundleForClass:
-+ _objc_msgSend$initWithCGImage:
-+ _objc_msgSend$initWithSize:format:
 + _objc_msgSendSuper2
 + _objc_release_x21
 + _objc_retain_x20
@@ -272,8 +232,6 @@ Symbols:
 + _type_layout_string 11CoreUtilsUI21_ScannerRepresentable33_AB2C6E6A9DD3362D09C45DF990E1477ALLV
 + _type_layout_string So18VNBarcodeSymbologya
 + _type_layout_string So6CGRectV
-- _objc_msgSend$initWithImage:
-- _objc_msgSend$initWithSize:
 - _objc_retain_x24
 - _swift_release_x27
 - _swift_retain_x27
@@ -297,5 +255,4 @@ CStrings:
 + "scan started"
 + "scan stop"
 - "Create CIImage from UIImage failed"
-
 ```

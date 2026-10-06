@@ -2,22 +2,22 @@
 
 > `/usr/libexec/duetexpertd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x50` | `0x48` | **`-0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+
+### Other Changes
 
 ```diff
 
 -671.0.2.0.1
 +674.0.1.0.0
-   __TEXT.__text: 0x454
-   __TEXT.__auth_stubs: 0x180
-   __TEXT.__objc_stubs: 0x160
--  __TEXT.__const: 0x50
-+  __TEXT.__const: 0x48
-   __TEXT.__cstring: 0x35e
-   __TEXT.__oslogstring: 0x4e
-   __TEXT.__objc_methname: 0xf1
 ```

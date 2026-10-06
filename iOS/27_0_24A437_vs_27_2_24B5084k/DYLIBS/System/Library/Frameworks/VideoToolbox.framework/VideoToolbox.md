@@ -2,90 +2,44 @@
 
 > `/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x53bf18` | `0x7248b8` | **`+0x1e89a0`** |
+| `__TEXT.__cstring` | `0xe575` | `0x44495` | **`+0x35f20`** |
+| `__TEXT.__oslogstring` | `0x5c13` | `0x2da03` | **`+0x27df0`** |
+| `__AUTH_CONST.__cfstring` | `0xb4a0` | `0x25e20` | **`+0x1a980`** |
+| `__AUTH_CONST.__const` | `0x43228` | `0x4e0a8` | **`+0xae80`** |
+| `__DATA.__common` | `0x158` | `0x338` | **`+0x1e0`** |
+| `__TEXT.__unwind_info` | `0x5dd8` | `0x5f78` | **`+0x1a0`** |
+| `__AUTH_CONST.__objc_const` | `0x3680` | `0x3740` | **`+0xc0`** |
+| `__DATA_CONST.__const` | `0x45c8` | `0x4680` | **`+0xb8`** |
+| `__DATA_DIRTY.__common` | `0xe0` | `0x180` | **`+0xa0`** |
+| `__TEXT.__const` | `0x504c` | `0x50ec` | **`+0xa0`** |
+| `__DATA.__bss` | `0x1080` | `0x10f0` | **`+0x70`** |
+| `__TEXT.__gcc_except_tab` | `0x108` | `0x178` | **`+0x70`** |
+| `__DATA_DIRTY.__bss` | `0x550` | `0x500` | **`-0x50`** |
+| `__TEXT.__eh_frame` | `0x7afc` | `0x7ab4` | **`-0x48`** |
+| `__AUTH_CONST.__auth_got` | `0x2080` | `0x20c0` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0xe48` | `0xe78` | **`+0x30`** |
+| `__DATA.__objc_ivar` | `0x244` | `0x25c` | **`+0x18`** |
+| `__DATA_DIRTY.__data` | `0x300` | `0x310` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8f8` | `0x900` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3350.77.1.6.0
--  __TEXT.__text: 0x52fd08
 +3385.7.1.0.0
-+  __TEXT.__text: 0x71886c
-   __TEXT.__delay_helper: 0xdc
-   __TEXT.__objc_methlist: 0xefc
--  __TEXT.__const: 0x504c
--  __TEXT.__cstring: 0xe575
--  __TEXT.__oslogstring: 0x5c13
--  __TEXT.__gcc_except_tab: 0x108
-+  __TEXT.__const: 0x50ec
-+  __TEXT.__cstring: 0x44495
-+  __TEXT.__oslogstring: 0x2da03
-+  __TEXT.__gcc_except_tab: 0x178
-   __TEXT.__dlopen_cstrs: 0x9b
-   __TEXT.__swift5_typeref: 0x2dc
-   __TEXT.__swift5_reflstr: 0xff
 
-   __TEXT.__swift_as_entry: 0x4
-   __TEXT.__swift_as_ret: 0x4
-   __TEXT.__swift_as_cont: 0x10
--  __TEXT.__unwind_info: 0x8050
--  __TEXT.__eh_frame: 0x7b0c
-+  __TEXT.__unwind_info: 0x8458
-+  __TEXT.__eh_frame: 0x7abc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x45c8
-+  __DATA_CONST.__const: 0x4680
-   __DATA_CONST.__objc_classlist: 0xd0
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8f8
-+  __DATA_CONST.__objc_selrefs: 0x900
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0xb8
-   __DATA_CONST.__objc_arraydata: 0x38
--  __DATA_CONST.__got: 0xe48
--  __AUTH_CONST.__const: 0x43228
--  __AUTH_CONST.__cfstring: 0xb4a0
--  __AUTH_CONST.__objc_const: 0x3680
-+  __DATA_CONST.__got: 0xe78
-+  __AUTH_CONST.__const: 0x4e0a8
-+  __AUTH_CONST.__cfstring: 0x25e20
-+  __AUTH_CONST.__objc_const: 0x3740
-   __AUTH_CONST.__objc_intobj: 0x48
-   __AUTH_CONST.__objc_arrayobj: 0x78
-   __AUTH_CONST.__objc_doubleobj: 0x30
--  __AUTH_CONST.__auth_got: 0x2080
-+  __AUTH_CONST.__auth_got: 0x20c0
-   __AUTH.__objc_data: 0x730
-   __AUTH.__data: 0x1b8
--  __DATA.__objc_ivar: 0x244
-+  __DATA.__objc_ivar: 0x25c
-   __DATA.__data: 0x6f4
--  __DATA.__common: 0x158
-+  __DATA.__common: 0x338
-   __DATA_DIRTY.__objc_data: 0x50
--  __DATA_DIRTY.__data: 0x300
-+  __DATA_DIRTY.__data: 0x310
-   __DATA_DIRTY.__crash_info: 0x148
--  __DATA_DIRTY.__common: 0xe0
--  __DATA_DIRTY.__bss: 0x550
-+  __DATA_DIRTY.__common: 0x180
-+  __DATA_DIRTY.__bss: 0x500
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/ColorSync.framework/ColorSync
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9250
--  Symbols:   11089
+-  Symbols:   10852
 -  CStrings:  2238
 +  Functions: 10581
-+  Symbols:   11250
++  Symbols:   11011
 +  CStrings:  10702
- 
 Symbols:
 + -[VTTemporalNoiseFilterImplementation _validateParameters:]
 + GCC_except_table35
@@ -276,9 +230,6 @@ Symbols:
 + _kFigReportingEventKey_VTFP_SourceFrameRate
 + _logNodeInfo
 + _objc_autorelease
-+ _objc_msgSend$_validateParameters:
-+ _objc_msgSend$firstObject
-+ _objc_msgSend$nextFrame
 + _objc_release_x27
 + _paravirtualizedVideoDecoder_HandleMessageFromHost
 + _sSymbolsAvailable
@@ -322,7 +273,6 @@ Symbols:
 - ___vtcss_appStateChangeListener_block_invoke_3
 - _hardwareSupportsYUVS.checked
 - _hardwareSupportsYUVS.hasSupport
-- _objc_msgSend$_validateParameters:error:
 - _sVTParavirtualizationStringToKeyIndexDict
 - _sVideoDecoderRegistry
 - _scalerCapabilities.hasSupportIn_2plane10bit420

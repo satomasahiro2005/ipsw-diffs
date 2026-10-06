@@ -2,15 +2,18 @@
 
 > `/usr/lib/libAppleEXR.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa16fc` | `0xa1758` | **`+0x5c`** |
+
+### Other Changes
+
 ```diff
 
 -1010.0.0.0.0
--  __TEXT.__text: 0xa0a30
 +1011.0.0.0.0
-+  __TEXT.__text: 0xa0a8c
-   __TEXT.__objc_methlist: 0x254
-   __TEXT.__const: 0x211bc
-   __TEXT.__gcc_except_tab: 0x4e4
 Functions:
 ~ __ZN7AXRDataC2EPKvm11axr_flags_tU13block_pointerFvPvmE : 336 -> 428
 ```

@@ -2,105 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/EmailDaemon.framework/EmailDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x28d200` | `0x290f84` | **`+0x3d84`** |
+| `__TEXT.__gcc_except_tab` | `0x4a340` | `0x4a5dc` | **`+0x29c`** |
+| `__TEXT.__oslogstring` | `0x1b12f` | `0x1b3bf` | **`+0x290`** |
+| `__TEXT.__cstring` | `0x28eaa` | `0x28fca` | **`+0x120`** |
+| `__AUTH_CONST.__const` | `0x76fb` | `0x77fb` | **`+0x100`** |
+| `__TEXT.__unwind_info` | `0x11170` | `0x11210` | **`+0xa0`** |
+| `__AUTH_CONST.__objc_const` | `0x226a8` | `0x22648` | **`-0x60`** |
+| `__TEXT.__swift5_typeref` | `0x17db` | `0x182f` | **`+0x54`** |
+| `__DATA_CONST.__const` | `0x94b8` | `0x94e0` | **`+0x28`** |
+| `__AUTH_CONST.__auth_got` | `0x17f8` | `0x1818` | **`+0x20`** |
+| `__DATA.__data` | `0x39a0` | `0x39c0` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x1e50` | `0x1e70` | **`+0x20`** |
+| `__DATA_DIRTY.__bss` | `0x1b60` | `0x1b80` | **`+0x20`** |
+| `__TEXT.__const` | `0x522c` | `0x524c` | **`+0x20`** |
+| `__TEXT.__constg_swiftt` | `0x10d0` | `0x10ec` | **`+0x1c`** |
+| `__TEXT.__objc_methlist` | `0x133dc` | `0x133f4` | **`+0x18`** |
+| `__TEXT.__swift5_capture` | `0x7fc` | `0x810` | **`+0x14`** |
+| `__DATA_DIRTY.__data` | `0x1b10` | `0x1b00` | **`-0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x1654` | `0x1664` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x1484` | `0x147c` | **`-0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x428` | `0x430` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x120` | `0x128` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb128` | `0xb130` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x1d4` | `0x1d8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3897.100.8.2.5
--  __TEXT.__text: 0x28d200
--  __TEXT.__objc_methlist: 0x133dc
--  __TEXT.__const: 0x522c
--  __TEXT.__gcc_except_tab: 0x4a340
--  __TEXT.__cstring: 0x28eaa
--  __TEXT.__oslogstring: 0x1b12f
 +3901.100.1.2.7
-+  __TEXT.__text: 0x290f84
-+  __TEXT.__objc_methlist: 0x133f4
-+  __TEXT.__const: 0x524c
-+  __TEXT.__gcc_except_tab: 0x4a5dc
-+  __TEXT.__cstring: 0x28fca
-+  __TEXT.__oslogstring: 0x1b3bf
-   __TEXT.__dlopen_cstrs: 0x3bc
-   __TEXT.__ustring: 0x26
--  __TEXT.__constg_swiftt: 0x10d0
--  __TEXT.__swift5_typeref: 0x17db
-+  __TEXT.__constg_swiftt: 0x10ec
-+  __TEXT.__swift5_typeref: 0x182f
-   __TEXT.__swift5_builtin: 0x104
-   __TEXT.__swift5_reflstr: 0x10df
--  __TEXT.__swift5_fieldmd: 0x1654
-+  __TEXT.__swift5_fieldmd: 0x1664
-   __TEXT.__swift5_assocty: 0x248
-   __TEXT.__swift5_proto: 0x39c
--  __TEXT.__swift5_types: 0x1d4
--  __TEXT.__swift5_capture: 0x7fc
-+  __TEXT.__swift5_types: 0x1d8
-+  __TEXT.__swift5_capture: 0x810
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift_as_entry: 0x40
-   __TEXT.__swift_as_ret: 0x48
-   __TEXT.__swift_as_cont: 0x60
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x11170
-+  __TEXT.__unwind_info: 0x11210
-   __TEXT.__eh_frame: 0x16b8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x94b8
-+  __DATA_CONST.__const: 0x94e0
-   __DATA_CONST.__objc_classlist: 0x9e0
-   __DATA_CONST.__objc_catlist: 0x58
--  __DATA_CONST.__objc_protolist: 0x428
-+  __DATA_CONST.__objc_protolist: 0x430
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb128
--  __DATA_CONST.__objc_protorefs: 0x120
-+  __DATA_CONST.__objc_selrefs: 0xb130
-+  __DATA_CONST.__objc_protorefs: 0x128
-   __DATA_CONST.__objc_superrefs: 0x5d8
-   __DATA_CONST.__objc_arraydata: 0x6b8
--  __DATA_CONST.__got: 0x1e50
--  __AUTH_CONST.__const: 0x76fb
-+  __DATA_CONST.__got: 0x1e70
-+  __AUTH_CONST.__const: 0x77fb
-   __AUTH_CONST.__cfstring: 0xfce0
--  __AUTH_CONST.__objc_const: 0x226a8
-+  __AUTH_CONST.__objc_const: 0x22648
-   __AUTH_CONST.__objc_intobj: 0xa38
-   __AUTH_CONST.__objc_arrayobj: 0x270
-   __AUTH_CONST.__objc_dictobj: 0xa0
-   __AUTH_CONST.__objc_doubleobj: 0x40
--  __AUTH_CONST.__auth_got: 0x17f8
-+  __AUTH_CONST.__auth_got: 0x1818
-   __AUTH.__objc_data: 0xb98
-   __AUTH.__data: 0x388
--  __DATA.__objc_ivar: 0x1484
--  __DATA.__data: 0x39a0
-+  __DATA.__objc_ivar: 0x147c
-+  __DATA.__data: 0x39c0
-   __DATA.__crash_info: 0x148
-   __DATA.__bss: 0x67c0
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0x5c78
--  __DATA_DIRTY.__data: 0x1b10
--  __DATA_DIRTY.__bss: 0x1b60
-+  __DATA_DIRTY.__data: 0x1b00
-+  __DATA_DIRTY.__bss: 0x1b80
-   __DATA_DIRTY.__common: 0x90
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11529
--  Symbols:   19984
+-  Symbols:   15156
 -  CStrings:  5469
 +  Functions: 11564
-+  Symbols:   20005
++  Symbols:   15172
 +  CStrings:  5480
- 
 Symbols:
 + +[EDMessagePersistence paginationBoundaryHasAlreadyDeliveredRowWithDatabaseID:sortDate:cursorBoundaryDatabaseID:cursorSortDate:]
 + +[EDServer signpostLog]
@@ -147,22 +90,6 @@ Symbols:
 + ___block_descriptor_89_ea8_32s40s48s56s64bs_e5_v8?0ls32l8s40l8s48l8s56l8s64l8
 + ___swift_destroy_boxed_opaque_existential_1Tm
 + _flat unique So9EDAccount_p
-+ _objc_msgSend$_invalidateAllCachedSizeDecisions
-+ _objc_msgSend$_invalidateCachedMigratableSizeDecisions
-+ _objc_msgSend$_minSearchRelevanceRank
-+ _objc_msgSend$_threadScopeIsTooLargeToMigrate:
-+ _objc_msgSend$countOfMessagesInMailboxDatabaseIDs:upToLimit:
-+ _objc_msgSend$defaultPolicyForIMAPHost:
-+ _objc_msgSend$getValueForKey:
-+ _objc_msgSend$initWithRankingSignals:rankPosition:
-+ _objc_msgSend$loadMoreWithQuery:sortAscending:cancelationToken:messageHandler:
-+ _objc_msgSend$localSearchDidFindMessages:itemSnippetData:resultMetadata:
-+ _objc_msgSend$localSearchDidFindTopHits:itemSnippetData:resultMetadata:instantAnswer:
-+ _objc_msgSend$paginationBoundaryHasAlreadyDeliveredRowWithDatabaseID:sortDate:cursorBoundaryDatabaseID:cursorSortDate:
-+ _objc_msgSend$processResultMetadataBySearchableItemID:forMessages:
-+ _objc_msgSend$rankPosition
-+ _objc_msgSend$rankingSignals
-+ _objc_msgSend$shouldCancel
 + _symbolic SDySSypG
 + _symbolic SS3key_yp5valuet
 + _symbolic _____ So31EDSearchableIndexDownloadPolicyC11EmailDaemonE05DailyC5LimitO
@@ -204,17 +131,6 @@ Symbols:
 - ___block_descriptor_48_ea8_32s40r_e20_v24?0"NSArray"8q16ls32l8r40l8
 - ___block_descriptor_56_ea8_32s40s48r_e25_v32?0"NSString"816^B24ls32l8r48l8s40l8
 - ___block_descriptor_97_ea8_32s40s48s56s64bs72bs_e5_v8?0ls32l8s40l8s48l8s56l8s64l8s72l8
-- _objc_msgSend$_maxSearchRelevanceScore
-- _objc_msgSend$l1Score
-- _objc_msgSend$l2Score
-- _objc_msgSend$lastEmittedDatabaseID
-- _objc_msgSend$loadMoreWithQuery:sortAscending:cancelationToken:messageHandler:completion:
-- _objc_msgSend$localSearchDidFindMessages:itemSnippetData:rankingSignals:
-- _objc_msgSend$localSearchDidFindTopHits:itemSnippetData:rankingSignals:instantAnswer:
-- _objc_msgSend$processRankingSignalsBySearchableItemID:forMessages:
-- _objc_msgSend$rawRowsReceived
-- _objc_msgSend$setCursorBoundaryDatabaseID:
-- _objc_msgSend$setCursorBoundarySortAscending:
 CStrings:
 + "-[EDMessagePersistence countOfMessagesInMailboxDatabaseIDs:upToLimit:]"
 + "Data source updates were canceled (watchdog fired, no items returned); deferring background-scheduled indexing run to a later retry instead of re-arming immediately."

@@ -2,54 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/TCC.framework/TCC`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15c74` | `0x16694` | **`+0xa20`** |
+| `__TEXT.__cstring` | `0x3389` | `0x3547` | **`+0x1be`** |
+| `__TEXT.__oslogstring` | `0x1665` | `0x1796` | **`+0x131`** |
+| `__DATA_CONST.__const` | `0x1870` | `0x1920` | **`+0xb0`** |
+| `__AUTH_CONST.__cfstring` | `0x1720` | `0x17a0` | **`+0x80`** |
+| `__DATA.__data` | `0x958` | `0x970` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x618` | `0x630` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
 -913.0.1.0.0
--  __TEXT.__text: 0x1596c
 +918.0.0.0.0
-+  __TEXT.__text: 0x1638c
-   __TEXT.__objc_methlist: 0x11c
--  __TEXT.__cstring: 0x3389
--  __TEXT.__oslogstring: 0x1665
-+  __TEXT.__cstring: 0x3547
-+  __TEXT.__oslogstring: 0x1796
-   __TEXT.__const: 0x398
--  __TEXT.__unwind_info: 0x870
-+  __TEXT.__unwind_info: 0x8b8
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1870
-+  __DATA_CONST.__const: 0x1920
-   __DATA_CONST.__objc_classlist: 0x70
-   __DATA_CONST.__objc_protolist: 0x78
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x2d8
--  __AUTH_CONST.__cfstring: 0x1720
-+  __AUTH_CONST.__cfstring: 0x17a0
-   __AUTH_CONST.__objc_const: 0xf58
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0x190
-   __AUTH.__data: 0x208
--  __DATA.__data: 0x958
-+  __DATA.__data: 0x970
-   __DATA_DIRTY.__objc_data: 0x2d0
-   __DATA_DIRTY.__bss: 0x90
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libobjc.A.dylib
--  Functions: 597
+-  Functions: 598
 -  Symbols:   962
 -  CStrings:  611
-+  Functions: 613
++  Functions: 614
 +  Symbols:   974
 +  CStrings:  631
- 
 Symbols:
 + _OUTLINED_FUNCTION_12
 + _TCCAccessCopyAuthorizationsFromBundleId

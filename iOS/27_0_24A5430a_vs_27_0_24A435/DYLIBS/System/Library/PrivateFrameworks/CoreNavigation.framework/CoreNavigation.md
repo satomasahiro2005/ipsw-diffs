@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CoreNavigation.framework/CoreNavigation`
 
-```diff
+### Section Size Changes
 
- 425.0.0.0.0
--  __TEXT.__text: 0x361f64
-+  __TEXT.__text: 0x3620ec
-   __TEXT.__objc_methlist: 0x198
-   __TEXT.__const: 0x51fb1
-   __TEXT.__cstring: 0x3839c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x361f64` | `0x3620ec` | **`+0x188`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN5raven31RavenDeviceAttitudeActiveObject39UpdateDeviceVehicleAttitudeWithRotationEv : 4664 -> 4660
 ~ __ZN5raven14RavenEstimator23StoreHistoricalSolutionEv : 2168 -> 2184

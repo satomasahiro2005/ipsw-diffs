@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SensingAlgsTouchButtonHost.framework/SensingAlgsTouchButtonHost`
 
-```diff
+### Section Size Changes
 
- 114.0.0.0.0
--  __TEXT.__text: 0x6d1c
-+  __TEXT.__text: 0x6d20
-   __TEXT.__objc_methlist: 0x6c8
-   __TEXT.__const: 0x30a
-   __TEXT.__gcc_except_tab: 0x690
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6d1c` | `0x6d20` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _OUTLINED_FUNCTION_31 : 24 -> 20
 ~ _OUTLINED_FUNCTION_23 : 24 -> 12

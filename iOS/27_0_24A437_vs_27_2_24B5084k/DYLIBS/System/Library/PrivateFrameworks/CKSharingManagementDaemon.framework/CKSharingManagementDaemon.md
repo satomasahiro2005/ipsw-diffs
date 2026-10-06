@@ -2,83 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/CKSharingManagementDaemon.framework/CKSharingManagementDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcd24c` | `0xc9ec0` | **`-0x338c`** |
+| `__TEXT.__cstring` | `0x11a6` | `0x1cf6` | **`+0xb50`** |
+| `__DATA.__bss` | `0xadb0` | `0xa930` | **`-0x480`** |
+| `__TEXT.__oslogstring` | `0x4a01` | `0x45a9` | **`-0x458`** |
+| `__TEXT.__const` | `0x7f08` | `0x7bf0` | **`-0x318`** |
+| `__AUTH_CONST.__const` | `0x4b00` | `0x48d8` | **`-0x228`** |
+| `__TEXT.__swift5_typeref` | `0x270e` | `0x2570` | **`-0x19e`** |
+| `__TEXT.__swift5_fieldmd` | `0x1ee8` | `0x1de8` | **`-0x100`** |
+| `__TEXT.__unwind_info` | `0x3db8` | `0x3ce8` | **`-0xd0`** |
+| `__TEXT.__swift5_reflstr` | `0x1865` | `0x179a` | **`-0xcb`** |
+| `__TEXT.__constg_swiftt` | `0x1eec` | `0x1e40` | **`-0xac`** |
+| `__TEXT.__eh_frame` | `0xaf10` | `0xaeb0` | **`-0x60`** |
+| `__TEXT.__swift5_capture` | `0x920` | `0x8c4` | **`-0x5c`** |
+| `__DATA.__data` | `0x1c40` | `0x1bf8` | **`-0x48`** |
+| `__TEXT.__swift5_proto` | `0x5d8` | `0x5a0` | **`-0x38`** |
+| `__AUTH_CONST.__auth_got` | `0x1288` | `0x12a0` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x7c0` | `0x7b8` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x628` | `0x630` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x68` | `0x60` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0x270` | `0x268` | **`-0x8`** |
+| `__TEXT.__swift_as_cont` | `0x814` | `0x810` | **`-0x4`** |
+| `__TEXT.__swift_as_entry` | `0x33c` | `0x338` | **`-0x4`** |
+| `__TEXT.__swift_as_ret` | `0x448` | `0x444` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -26.0.0.0.0
--  __TEXT.__text: 0xc26f8
 +27.125.2.0.0
-+  __TEXT.__text: 0xbf44c
-   __TEXT.__objc_methlist: 0x464
--  __TEXT.__const: 0x7f08
--  __TEXT.__cstring: 0x11a6
--  __TEXT.__swift5_typeref: 0x270e
--  __TEXT.__swift5_capture: 0x920
--  __TEXT.__constg_swiftt: 0x1eec
--  __TEXT.__swift5_reflstr: 0x1865
--  __TEXT.__swift5_fieldmd: 0x1ee8
-+  __TEXT.__const: 0x7bf0
-+  __TEXT.__cstring: 0x1cf6
-+  __TEXT.__swift5_typeref: 0x2570
-+  __TEXT.__swift5_capture: 0x8c4
-+  __TEXT.__constg_swiftt: 0x1e40
-+  __TEXT.__swift5_reflstr: 0x179a
-+  __TEXT.__swift5_fieldmd: 0x1de8
-   __TEXT.__swift5_assocty: 0x390
-   __TEXT.__swift5_builtin: 0x50
--  __TEXT.__swift5_proto: 0x5d8
--  __TEXT.__swift5_types: 0x270
--  __TEXT.__swift5_protos: 0x68
--  __TEXT.__swift_as_entry: 0x33c
--  __TEXT.__swift_as_ret: 0x448
--  __TEXT.__swift_as_cont: 0x814
--  __TEXT.__oslogstring: 0x4a01
-+  __TEXT.__swift5_proto: 0x5a0
-+  __TEXT.__swift5_types: 0x268
-+  __TEXT.__swift5_protos: 0x60
-+  __TEXT.__swift_as_entry: 0x338
-+  __TEXT.__swift_as_ret: 0x444
-+  __TEXT.__swift_as_cont: 0x810
-+  __TEXT.__oslogstring: 0x45a9
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x4470
--  __TEXT.__eh_frame: 0xaf10
-+  __TEXT.__unwind_info: 0x43f0
-+  __TEXT.__eh_frame: 0xaeb0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x628
-+  __DATA_CONST.__objc_selrefs: 0x630
-   __DATA_CONST.__objc_protorefs: 0x40
--  __DATA_CONST.__got: 0x7c0
--  __AUTH_CONST.__const: 0x4b00
-+  __DATA_CONST.__got: 0x7b8
-+  __AUTH_CONST.__const: 0x48d8
-   __AUTH_CONST.__objc_const: 0x1580
--  __AUTH_CONST.__auth_got: 0x1288
-+  __AUTH_CONST.__auth_got: 0x12a0
-   __AUTH.__objc_data: 0x4c8
-   __AUTH.__data: 0x1918
--  __DATA.__data: 0x1c40
-+  __DATA.__data: 0x1bf8
-   __DATA.__common: 0x38
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 3657
--  Symbols:   1346
+-  Symbols:   1207
 -  CStrings:  381
 +  Functions: 3595
-+  Symbols:   1330
++  Symbols:   1190
 +  CStrings:  383
- 
 Symbols:
 + ___swift_memcpy305_8
 + _associated conformance 25CKSharingManagementDaemon0A14AnalyticsEventV0E4TypeOSHAASQ
@@ -87,7 +51,6 @@ Symbols:
 + _associated conformance 25CKSharingManagementDaemon0A14AnalyticsEventV10CodingKeys33_2AB9DF926DB221FEE0C589754424BACALLOs0F3KeyAAs28CustomDebugStringConvertible
 + _associated conformance 25CKSharingManagementDaemon0A14AnalyticsEventV6StatusOSHAASQ
 + _associated conformance 25CKSharingManagementDaemon20AcceptShareOperationV7TriggerOSHAASQ
-+ _objc_msgSend$userRecordID
 + _objc_retain_x11
 + _symbolic Say_____SgG 25CKSharingManagementDaemon17InvitationOutcomeV
 + _symbolic ScGy_____SgG 25CKSharingManagementDaemon17InvitationOutcomeV

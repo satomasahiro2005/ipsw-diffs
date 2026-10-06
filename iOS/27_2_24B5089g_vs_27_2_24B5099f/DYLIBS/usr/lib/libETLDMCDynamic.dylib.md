@@ -2,31 +2,24 @@
 
 > `/usr/lib/libETLDMCDynamic.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x138c` | `0x1185` | **`-0x207`** |
+| `__TEXT.__text` | `0x1e140` | `0x1e188` | **`+0x48`** |
+| `__TEXT.__unwind_info` | `0x330` | `0x328` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 1594.0.0.0.0
--  __TEXT.__text: 0x1df8c
-+  __TEXT.__text: 0x1dfd4
-   __TEXT.__const: 0xda8
--  __TEXT.__cstring: 0x138c
-+  __TEXT.__cstring: 0x1185
-   __TEXT.__gcc_except_tab: 0x200
--  __TEXT.__unwind_info: 0x4b0
-+  __TEXT.__unwind_info: 0x4a8
-   __TEXT.__eh_frame: 0x50
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0xd0
-
-   - /usr/lib/libxml2.2.dylib
-   Functions: 254
-   Symbols:   378
 -  CStrings:  200
 +  CStrings:  186
- 
 Functions:
 ~ _ETLLOGParseLogHeader : 148 -> 88
 ~ _ETLLOGParseLog : 476 -> 440
-~ _ETLEVENTProcessEvent : 456 -> 688
+~ _ETLEVENTProcessEvent : 464 -> 696
 ~ _ETLEVENTProcessEventItem : 8 -> 296
 ~ _ETLEVENTProcessEventItemTSLength : 500 -> 304
 ~ _ETLEVENTProcessHeader : 152 -> 60

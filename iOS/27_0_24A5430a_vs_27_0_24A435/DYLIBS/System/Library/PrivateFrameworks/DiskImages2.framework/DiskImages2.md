@@ -2,27 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/DiskImages2.framework/DiskImages2`
 
-```diff
+### Section Size Changes
 
- 598.0.1.0.0
--  __TEXT.__text: 0x1f25d4
-+  __TEXT.__text: 0x1f2750
-   __TEXT.__objc_methlist: 0x3d0c
-   __TEXT.__const: 0x172fa
--  __TEXT.__gcc_except_tab: 0x1b4dc
-+  __TEXT.__gcc_except_tab: 0x1b4d8
-   __TEXT.__cstring: 0x17538
-   __TEXT.__oslogstring: 0x1d7e
-   __TEXT.__ustring: 0x13c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1f25d4` | `0x1f2750` | **`+0x17c`** |
+| `__TEXT.__unwind_info` | `0xe548` | `0xe540` | **`-0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x1b4dc` | `0x1b4d8` | **`-0x4`** |
 
-   __TEXT.__swift5_typeref: 0x58
-   __TEXT.__swift5_fieldmd: 0x10
-   __TEXT.__swift5_types: 0x4
--  __TEXT.__unwind_info: 0xe548
-+  __TEXT.__unwind_info: 0xe540
-   __TEXT.__eh_frame: 0xf0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+### Other Changes
+
+```text
 Functions:
 ~ __ZN6sg_vecC2ERK8sg_entry : 324 -> 320
 ~ __ZL27create_stack_vec_from_graphP14DiskImageGraphb : 1484 -> 1492

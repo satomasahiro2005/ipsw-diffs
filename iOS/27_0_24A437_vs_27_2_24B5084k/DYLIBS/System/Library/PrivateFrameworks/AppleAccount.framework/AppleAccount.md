@@ -2,80 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/AppleAccount.framework/AppleAccount`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a99cc` | `0x1aa0e4` | **`+0x718`** |
+| `__AUTH_CONST.__objc_const` | `0x26ad0` | `0x26c18` | **`+0x148`** |
+| `__TEXT.__oslogstring` | `0x1397d` | `0x13aad` | **`+0x130`** |
+| `__AUTH_CONST.__cfstring` | `0xd640` | `0xd760` | **`+0x120`** |
+| `__TEXT.__cstring` | `0x11472` | `0x11532` | **`+0xc0`** |
+| `__AUTH.__objc_data` | `0x1130` | `0x11d0` | **`+0xa0`** |
+| `__TEXT.__objc_methlist` | `0xb5ec` | `0xb5a4` | **`-0x48`** |
+| `__DATA_CONST.__objc_selrefs` | `0x52a0` | `0x5260` | **`-0x40`** |
+| `__DATA.__objc_ivar` | `0xbd4` | `0xbf4` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x3f90` | `0x3fb0` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x1150` | `0x1168` | **`+0x18`** |
+| `__DATA.__bss` | `0x176c0` | `0x176d0` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x8a8` | `0x8b8` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x588` | `0x590` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1067.0.0.0.0
--  __TEXT.__text: 0x19bb88
 +1069.125.4.0.0
-+  __TEXT.__text: 0x19c31c
-   __TEXT.__lazy_helpers: 0xa8
--  __TEXT.__objc_methlist: 0xb5ec
--  __TEXT.__cstring: 0x11472
-+  __TEXT.__objc_methlist: 0xb5a4
-+  __TEXT.__cstring: 0x11532
-   __TEXT.__const: 0x10db0
-+  __TEXT.__oslogstring: 0x13aad
-   __TEXT.__gcc_except_tab: 0x1bf8
--  __TEXT.__oslogstring: 0x1397d
-   __TEXT.__dlopen_cstrs: 0x325
-   __TEXT.__swift5_typeref: 0x3a66
-   __TEXT.__constg_swiftt: 0x2a74
 
-   __TEXT.__swift_as_ret: 0x29c
-   __TEXT.__swift_as_cont: 0x510
-   __TEXT.__swift5_capture: 0x848
--  __TEXT.__unwind_info: 0x81f8
-+  __TEXT.__unwind_info: 0x81f0
-   __TEXT.__eh_frame: 0x77a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3f90
--  __DATA_CONST.__objc_classlist: 0x8a8
-+  __DATA_CONST.__const: 0x3fb0
-+  __DATA_CONST.__objc_classlist: 0x8b8
-   __DATA_CONST.__objc_catlist: 0xa0
-   __DATA_CONST.__objc_protolist: 0x260
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x52a0
-+  __DATA_CONST.__objc_selrefs: 0x5260
-   __DATA_CONST.__objc_protorefs: 0xe0
--  __DATA_CONST.__objc_superrefs: 0x588
-+  __DATA_CONST.__objc_superrefs: 0x590
-   __DATA_CONST.__objc_arraydata: 0xe0
--  __DATA_CONST.__got: 0x1150
-+  __DATA_CONST.__got: 0x1168
-   __AUTH_CONST.__const: 0xd3a0
--  __AUTH_CONST.__cfstring: 0xd640
--  __AUTH_CONST.__objc_const: 0x26ad0
-+  __AUTH_CONST.__cfstring: 0xd760
-+  __AUTH_CONST.__objc_const: 0x26c18
-   __AUTH_CONST.__lazy_load_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x120
-   __AUTH_CONST.__objc_arrayobj: 0x108
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__auth_got: 0x1508
--  __AUTH.__objc_data: 0x1130
-+  __AUTH.__objc_data: 0x11d0
-   __AUTH.__data: 0xc38
--  __DATA.__objc_ivar: 0xbd4
-+  __DATA.__objc_ivar: 0xbf4
-   __DATA.__data: 0x4104
-   __DATA.__common: 0xc0
-   __DATA_DIRTY.__objc_data: 0x4b80
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 9165
--  Symbols:   11669
+-  Symbols:   10009
 -  CStrings:  3735
 +  Functions: 9163
-+  Symbols:   11689
++  Symbols:   10033
 +  CStrings:  3750
- 
 Symbols:
 + +[AACloudKitDevicesListRequest urlBagKey]
 + +[AACloudKitMigrationStateRequest urlBagKey]
@@ -170,28 +128,6 @@ Symbols:
 + ___64-[AAURLSession _enqueueRequest:withFlowID:urlBagKey:completion:]_block_invoke
 + ___64-[AAURLSession _enqueueRequest:withFlowID:urlBagKey:completion:]_block_invoke_2
 + _kAAProtocolPrefForceServerBackoffKey
-+ _objc_msgSend$_appStateForDataclass:bundleID:
-+ _objc_msgSend$_enqueueRequest:withFlowID:urlBagKey:completion:
-+ _objc_msgSend$_sessionQueue_enqueueTask:urlBagKey:completion:
-+ _objc_msgSend$appendBackoffHeadersToRequest:
-+ _objc_msgSend$appendBackoffHeadersToRequest:clientBundleID:proxiedAppBundleID:
-+ _objc_msgSend$dataTaskWithRequest:withFlowID:urlBagKey:completion:
-+ _objc_msgSend$initWithAccount:proxiedAppBundleID:parameters:
-+ _objc_msgSend$initWithAppServerName:userDefaults:
-+ _objc_msgSend$initWithBackoffController:
-+ _objc_msgSend$initWithURLBagKey:completion:
-+ _objc_msgSend$isAAAFoundationBackoffEnabled
-+ _objc_msgSend$isForceServerBackoffEnabled
-+ _objc_msgSend$operationWithURLBagKey:completion:
-+ _objc_msgSend$processBackoffInfoFrom:
-+ _objc_msgSend$processBackoffInfoFromHeaderFields:
-+ _objc_msgSend$serverBackoffHelper
-+ _objc_msgSend$setProxiedAppBundleID:
-+ _objc_msgSend$sharedHelper
-+ _objc_msgSend$shouldBackoffForURLBagKey:clientBundleID:proxiedAppBundleID:
-+ _objc_msgSend$shouldBackoffRequest:urlBagKey:
-+ _objc_msgSend$urlBagKey
-+ _objc_msgSend$urlStringForKey:
 + _sharedHelper.onceToken
 + _sharedHelper.sharedHelper
 - +[_AAURLSessionOperation operationWithCompletion:]
@@ -265,32 +201,6 @@ Symbols:
 - __OBJC_$_INSTANCE_METHODS_AAPaymentUIRequest
 - __OBJC_$_INSTANCE_METHODS_AAPersonalInfoUIRequest
 - ___54-[AAURLSession _enqueueRequest:withFlowID:completion:]_block_invoke
-- _objc_msgSend$_enqueueRequest:withFlowID:completion:
-- _objc_msgSend$_sessionQueue_enqueueTask:completion:
-- _objc_msgSend$_urlStringForKey:
-- _objc_msgSend$cloudKitDevicesListURL
-- _objc_msgSend$cloudKitMigrationStateURL
-- _objc_msgSend$cloudKitStartMigrationURL
-- _objc_msgSend$dataTaskWithRequest:withFlowID:completion:
-- _objc_msgSend$deviceListURL
-- _objc_msgSend$familyEligibilityURL
-- _objc_msgSend$fmipAuthenticate
-- _objc_msgSend$genericTermsURL
-- _objc_msgSend$getFamilyDetailsURL
-- _objc_msgSend$getMyPhotoURL
-- _objc_msgSend$initWithCompletion:
-- _objc_msgSend$loginDelegatesURL
-- _objc_msgSend$operationWithCompletion:
-- _objc_msgSend$passwordSecurityUIURL
-- _objc_msgSend$paymentInfoUIURL
-- _objc_msgSend$paymentSummaryURL
-- _objc_msgSend$personalInfoUIURL
-- _objc_msgSend$secondaryAuthenticationURL
-- _objc_msgSend$sendCodeURL
-- _objc_msgSend$updateAccountUIURL
-- _objc_msgSend$updateMyPhotoURL
-- _objc_msgSend$updateNameURL
-- _objc_msgSend$verifyCodeURL
 CStrings:
 + "AAAFoundationBackoff"
 + "AAForceServerBackoff"

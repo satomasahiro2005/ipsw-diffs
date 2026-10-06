@@ -2,64 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/GPUToolsReplay.framework/GPUToolsReplay`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x41e660` | `0x41eb88` | **`+0x528`** |
+| `__TEXT.__cstring` | `0x10df32` | `0x10ded9` | **`-0x59`** |
+| `__TEXT.__objc_methlist` | `0x7c74` | `0x7cbc` | **`+0x48`** |
+| `__AUTH_CONST.__objc_const` | `0xbfb8` | `0xbff8` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6860` | `0x68a0` | **`+0x40`** |
+| `__TEXT.__gcc_except_tab` | `0x16acc` | `0x16a9c` | **`-0x30`** |
+| `__TEXT.__unwind_info` | `0x5a20` | `0x5a38` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x790` | `0x798` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x978` | `0x980` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.37.0.0
--  __TEXT.__text: 0x416960
 +2027.0.44.0.0
-+  __TEXT.__text: 0x416e40
-   __TEXT.__init_offsets: 0x10
--  __TEXT.__objc_methlist: 0x7c74
-+  __TEXT.__objc_methlist: 0x7cbc
-   __TEXT.__const: 0xa560
-   __TEXT.__oslogstring: 0x184f
--  __TEXT.__cstring: 0x10df32
--  __TEXT.__gcc_except_tab: 0x16acc
-+  __TEXT.__cstring: 0x10ded9
-+  __TEXT.__gcc_except_tab: 0x16a9c
-   __TEXT.__ustring: 0x4f6
--  __TEXT.__unwind_info: 0x77f8
-+  __TEXT.__unwind_info: 0x7820
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x190
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6860
-+  __DATA_CONST.__objc_selrefs: 0x68a0
-   __DATA_CONST.__objc_protorefs: 0xc0
-   __DATA_CONST.__objc_superrefs: 0x270
-   __DATA_CONST.__objc_arraydata: 0xba0
--  __DATA_CONST.__got: 0x978
-+  __DATA_CONST.__got: 0x980
-   __AUTH_CONST.__const: 0x1a48
-   __AUTH_CONST.__cfstring: 0xf940
--  __AUTH_CONST.__objc_const: 0xbfb8
-+  __AUTH_CONST.__objc_const: 0xbff8
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x720
-   __AUTH_CONST.__objc_arrayobj: 0x270
-
-   __AUTH.__objc_data: 0x19f0
-   __AUTH.__thread_vars: 0x78
-   __AUTH.__thread_bss: 0x1088
--  __DATA.__objc_ivar: 0x790
-+  __DATA.__objc_ivar: 0x798
-   __DATA.__data: 0x25a8
-   __DATA.__common: 0x51
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 7371
--  Symbols:   12095
+-  Symbols:   9290
 +  Functions: 7381
-+  Symbols:   12116
-   CStrings:  18408
- 
++  Symbols:   9303
 Symbols:
 + -[GTMTLReplayObjectMap attachResidencySetsToMTL4Queue:count:]
 + -[GTMTLReplayObjectMap attachResidencySetsToQueue:count:]
@@ -342,14 +309,6 @@ Symbols:
 + _OBJC_CLASS_$_NSCountedSet
 + _OBJC_IVAR_$_GTMTLReplayObjectMap._attachedResidencySets
 + _OBJC_IVAR_$_GTMTLReplayObjectMap._attachedResidencySets4
-+ _objc_msgSend$attachResidencySetsToMTL4Queue:count:
-+ _objc_msgSend$attachResidencySetsToQueue:count:
-+ _objc_msgSend$countForObject:
-+ _objc_msgSend$detachAllResidencySets
-+ _objc_msgSend$detachResidencySetsFromMTL4Queue:count:
-+ _objc_msgSend$detachResidencySetsFromQueue:count:
-+ _objc_msgSend$fullyDetachResidencySetFromMTL4Queue:
-+ _objc_msgSend$fullyDetachResidencySetFromQueue:
 - -[GTShaderProfilerStreamData dealloc]
 - GCC_except_table1004
 - GCC_except_table1007

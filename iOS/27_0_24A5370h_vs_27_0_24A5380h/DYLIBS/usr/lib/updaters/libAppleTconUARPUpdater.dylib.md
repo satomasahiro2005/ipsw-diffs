@@ -2,76 +2,38 @@
 
 > `/usr/lib/updaters/libAppleTconUARPUpdater.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6d514` | `0x702e4` | **`+0x2dd0`** |
+| `__AUTH_CONST.__objc_const` | `0xc810` | `0xd1f8` | **`+0x9e8`** |
+| `__TEXT.__objc_methlist` | `0x63ec` | `0x67fc` | **`+0x410`** |
+| `__AUTH.__objc_data` | `0x32f0` | `0x36b0` | **`+0x3c0`** |
+| `__TEXT.__cstring` | `0x7439` | `0x7675` | **`+0x23c`** |
+| `__AUTH_CONST.__cfstring` | `0x5340` | `0x54c0` | **`+0x180`** |
+| `__TEXT.__unwind_info` | `0x1938` | `0x1a50` | **`+0x118`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1ee0` | `0x1f70` | **`+0x90`** |
+| `__DATA_CONST.__got` | `0x620` | `0x680` | **`+0x60`** |
+| `__DATA_CONST.__objc_classlist` | `0x518` | `0x578` | **`+0x60`** |
+| `__DATA_CONST.__objc_superrefs` | `0x508` | `0x568` | **`+0x60`** |
+| `__DATA.__objc_ivar` | `0x870` | `0x8a4` | **`+0x34`** |
+| `__TEXT.__oslogstring` | `0x37a1` | `0x377b` | **`-0x26`** |
+| `__DATA.__bss` | `0x1188` | `0x1180` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x6d514
--  __TEXT.__objc_methlist: 0x63ec
--  __TEXT.__cstring: 0x7439
-+  __TEXT.__text: 0x702e4
-+  __TEXT.__objc_methlist: 0x67fc
-+  __TEXT.__cstring: 0x7675
-   __TEXT.__const: 0x110
--  __TEXT.__oslogstring: 0x37a1
-+  __TEXT.__oslogstring: 0x377b
-   __TEXT.__gcc_except_tab: 0x14
--  __TEXT.__unwind_info: 0x1938
-+  __TEXT.__unwind_info: 0x1a50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xdb8
--  __DATA_CONST.__objc_classlist: 0x518
-+  __DATA_CONST.__objc_classlist: 0x578
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1ee0
-+  __DATA_CONST.__objc_selrefs: 0x1f70
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x508
-+  __DATA_CONST.__objc_superrefs: 0x568
-   __DATA_CONST.__objc_arraydata: 0xd8
--  __DATA_CONST.__got: 0x620
-+  __DATA_CONST.__got: 0x680
-   __AUTH_CONST.__const: 0x40
--  __AUTH_CONST.__cfstring: 0x5340
--  __AUTH_CONST.__objc_const: 0xc810
-+  __AUTH_CONST.__cfstring: 0x54c0
-+  __AUTH_CONST.__objc_const: 0xd1f8
-   __AUTH_CONST.__objc_intobj: 0x408
-   __AUTH_CONST.__objc_arrayobj: 0x90
-   __AUTH_CONST.__auth_got: 0x3d0
--  __AUTH.__objc_data: 0x32f0
--  __DATA.__objc_ivar: 0x870
-+  __AUTH.__objc_data: 0x36b0
-+  __DATA.__objc_ivar: 0x8a4
-   __DATA.__data: 0x305
--  __DATA.__bss: 0x1188
-+  __DATA.__bss: 0x1180
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
+-1587.0.3.0.3
++1587.0.21.0.0
+
 -  Functions: 2835
--  Symbols:   8252
--  CStrings:  1949
+-  Symbols:   4627
+-  CStrings:  1281
 +  Functions: 2921
-+  Symbols:   8532
-+  CStrings:  1974
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __DATA.__data : content changed
++  Symbols:   4806
++  CStrings:  1294
 Symbols:
 + -[UARPEndpointLayer3 downstreamEndpointReachable:downstreamEndpointID:tlvs:]
 + -[UARPEndpointLayer3 notifyDownstreamEndpointReachable:tlvs:]
@@ -253,26 +215,6 @@ Symbols:
 + ___64-[UARPEndpointLayer3 packetTracking:packetDirection:inFunction:]_block_invoke
 + ___76-[UARPEndpointLayer3 downstreamEndpointReachable:downstreamEndpointID:tlvs:]_block_invoke
 + ___86-[UARPEndpointLayer3(Layer2EndpointCallbacks) layer2CallbackDownstreamReachable:tlvs:]_block_invoke
-+ _objc_msgSend$adjustSubfileLengthsAndOffsets
-+ _objc_msgSend$data
-+ _objc_msgSend$dataWithLength:
-+ _objc_msgSend$demotionProductionMode
-+ _objc_msgSend$demotionSecurityMode
-+ _objc_msgSend$digestListSize
-+ _objc_msgSend$downstreamEndpointReachable:downstreamEndpointID:tlvs:
-+ _objc_msgSend$layer2CallbackDownstreamReachable:tlvs:
-+ _objc_msgSend$layer3DownstreamEndpointReachable:downstreamID:tlvs:
-+ _objc_msgSend$matchingData
-+ _objc_msgSend$moreRequestsToFollow
-+ _objc_msgSend$notifyDownstreamEndpointReachable:tlvs:
-+ _objc_msgSend$packetTracking:packetDirection:inFunction:
-+ _objc_msgSend$payloadTags
-+ _objc_msgSend$productRevisionMax
-+ _objc_msgSend$productRevisionMin
-+ _objc_msgSend$productionModeHostOverride
-+ _objc_msgSend$securityModeHostOverride
-+ _objc_msgSend$sharedManifest
-+ _objc_msgSend$updateSubfileOffset:
 + _uarpDownstreamEndpointProcessReachableMessage
 + _uarpPlatformDownstreamEndpointReachable2
 + _uarpProcessTLV2
@@ -283,10 +225,6 @@ Symbols:
 - ___71-[UARPEndpointLayer3 downstreamEndpointReachable:downstreamEndpointID:]_block_invoke
 - ___81-[UARPEndpointLayer3(Layer2EndpointCallbacks) layer2CallbackDownstreamReachable:]_block_invoke
 - _composeFTAB.paddingBytes
-- _objc_msgSend$layer2CallbackDownstreamReachable:
-- _objc_msgSend$layer3DownstreamEndpointReachable:downstreamID:
-- _objc_msgSend$notifyDownstreamEndpointReachable:
-- _objc_msgSend$packetTracking:inFunction:
 - _uarpTransmitBufferUpstream
 CStrings:
 + "%s: ESPRESSO: Message <type=0x%04x, id=0x%04x> Length too big ! expected <%u>, got <%u>"
@@ -318,5 +256,4 @@ CStrings:
 - "-[UARPEndpointLayer3 notifyDownstreamEndpointReachable:]"
 - "Endpoint %@: Downstream Endpoint Reachable, ID = %u"
 - "\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0c1"
-
 ```

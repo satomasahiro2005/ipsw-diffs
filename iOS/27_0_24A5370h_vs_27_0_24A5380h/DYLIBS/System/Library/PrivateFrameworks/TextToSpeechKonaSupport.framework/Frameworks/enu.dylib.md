@@ -2,31 +2,21 @@
 
 > `/System/Library/PrivateFrameworks/TextToSpeechKonaSupport.framework/Frameworks/enu.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x161708` | `0x1616a0` | **`-0x68`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x161708
-+  __TEXT.__text: 0x1616a0
-   __TEXT.__const: 0xa88a
-   __TEXT.__cstring: 0x10df
-   __TEXT.__gcc_except_tab: 0x438
+-676.0.0.0.0
++678.0.0.0.0
 
-   __DATA.__common: 0x5a8
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 7324
--  Symbols:   11686
 +  Functions: 7323
-+  Symbols:   11684
-   CStrings:  657
- 
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
 Functions:
 ~ __ZN8UserDict13parseNextLineEP17Delta_This_StructPcS2_S2_ : 392 -> 344
 ~ _ins_tokens_s : 292 -> 256
@@ -52,5 +42,4 @@ Functions:
 ~ _next_sync : 92 -> 96
 ~ __ZL11pole_filterP12filter_parmsPfl : 268 -> 276
 ~ _atoiOK : 252 -> 236
-
 ```

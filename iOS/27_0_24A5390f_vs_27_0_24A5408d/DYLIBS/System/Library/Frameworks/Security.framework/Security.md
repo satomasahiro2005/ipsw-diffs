@@ -2,90 +2,40 @@
 
 > `/System/Library/Frameworks/Security.framework/Security`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x17590` | `0x1b9d0` | **`+0x4440`** |
+| `__TEXT.__text` | `0x180480` | `0x180f80` | **`+0xb00`** |
+| `__DATA_CONST.__const` | `0x14ed8` | `0x15350` | **`+0x478`** |
+| `__AUTH_CONST.__cfstring` | `0x17620` | `0x17720` | **`+0x100`** |
+| `__TEXT.__oslogstring` | `0xf7ef` | `0xf8d9` | **`+0xea`** |
+| `__TEXT.__cstring` | `0x19301` | `0x193cf` | **`+0xce`** |
+| `__TEXT.__gcc_except_tab` | `0x7d14` | `0x7d8c` | **`+0x78`** |
+| `__AUTH_CONST.__const` | `0x3f40` | `0x3f80` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x5fa0` | `0x5fd0` | **`+0x30`** |
+| `__DATA.__bss` | `0xa18` | `0xa40` | **`+0x28`** |
+| `__TEXT.__objc_methlist` | `0x6794` | `0x67bc` | **`+0x28`** |
+| `__AUTH_CONST.__auth_got` | `0x1fe8` | `0x1ff8` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x34b8` | `0x34c8` | **`+0x10`** |
+| `__AUTH_CONST.__objc_const` | `0xa5f0` | `0xa5f8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -62460.0.55.0.1
--  __TEXT.__text: 0x180480
 +62460.2.1.0.0
-+  __TEXT.__text: 0x180f80
-   __TEXT.__lazy_helpers: 0x54
--  __TEXT.__objc_methlist: 0x6794
--  __TEXT.__const: 0x17590
-+  __TEXT.__objc_methlist: 0x67bc
-+  __TEXT.__const: 0x1b9d0
-   __TEXT.__dlopen_cstrs: 0xbc
--  __TEXT.__cstring: 0x19301
--  __TEXT.__gcc_except_tab: 0x7d14
--  __TEXT.__oslogstring: 0xf7ef
-+  __TEXT.__cstring: 0x193cf
-+  __TEXT.__gcc_except_tab: 0x7d8c
-+  __TEXT.__oslogstring: 0xf8d9
-   __TEXT.__ustring: 0x406
-   __TEXT.__dof_codesign: 0x1f2c
-   __TEXT.__dof_security_: 0x325
--  __TEXT.__unwind_info: 0x5fa0
-+  __TEXT.__unwind_info: 0x5fd0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x14ed8
-+  __DATA_CONST.__const: 0x15350
-   __DATA_CONST.__objc_classlist: 0x350
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x100
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x34b8
-+  __DATA_CONST.__objc_selrefs: 0x34c8
-   __DATA_CONST.__objc_protorefs: 0x60
-   __DATA_CONST.__objc_superrefs: 0x2f0
-   __DATA_CONST.__objc_arraydata: 0x100
-   __DATA_CONST.__got: 0x770
--  __AUTH_CONST.__const: 0x3f40
--  __AUTH_CONST.__cfstring: 0x17620
--  __AUTH_CONST.__objc_const: 0xa5f0
-+  __AUTH_CONST.__const: 0x3f80
-+  __AUTH_CONST.__cfstring: 0x17720
-+  __AUTH_CONST.__objc_const: 0xa5f8
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__lazy_load_got: 0x8
-   __AUTH_CONST.__objc_arrayobj: 0x120
-   __AUTH_CONST.__objc_intobj: 0x168
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x1fe8
-+  __AUTH_CONST.__auth_got: 0x1ff8
-   __AUTH.__objc_data: 0x1f90
-   __AUTH.__data: 0x1488
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x48
-   __DATA.__objc_ivar: 0x670
-   __DATA.__data: 0x2180
--  __DATA.__bss: 0xa18
-+  __DATA.__bss: 0xa40
-   __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0x190
-   __DATA_DIRTY.__data: 0x40
 
-   - /System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
-   - /System/Library/PrivateFrameworks/AppleKeyStore.framework/AppleKeyStore
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
 +  - /System/Library/PrivateFrameworks/CoreTime.framework/CoreTime
-   - /System/Library/PrivateFrameworks/CrashReporterSupport.framework/CrashReporterSupport
-   - /System/Library/PrivateFrameworks/MessageSecurity.framework/MessageSecurity
-   - /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
 
-   - /usr/lib/libcoretls_cfhelpers.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 7117
--  Symbols:   14812
+-  Symbols:   13623
 -  CStrings:  5733
 +  Functions: 7129
-+  Symbols:   14851
++  Symbols:   13661
 +  CStrings:  5748
- 
 Symbols:
 + -[CKKSControl isOctagonExcluded:]
 + -[SFAnalyticsSQLiteStore enumerateEventsWithLimit:usingBlock:]
@@ -511,7 +461,6 @@ Symbols:
 + _kSecTrustInfoEvaluationIDKey
 + _kSecTrustInfoOCSPFetchFailedKey
 + _kSecTrustInfoOCSPTimedOutKey
-+ _objc_msgSend$isOctagonExcluded:
 + _os_variant_has_internal_content
 - GCC_except_table1007
 - GCC_except_table1008

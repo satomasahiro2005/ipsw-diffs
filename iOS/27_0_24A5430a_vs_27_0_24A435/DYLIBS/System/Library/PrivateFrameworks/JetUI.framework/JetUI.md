@@ -2,23 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/JetUI.framework/JetUI`
 
-```diff
+### Section Size Changes
 
- 10.0.47.0.0
--  __TEXT.__text: 0x9ac20
-+  __TEXT.__text: 0x9ac60
-   __TEXT.__objc_methlist: 0xda4
-   __TEXT.__const: 0xa1d8
-   __TEXT.__cstring: 0x156d
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9ac20` | `0x9ac60` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x2b58` | `0x2b60` | **`+0x8`** |
 
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0xc
--  __TEXT.__unwind_info: 0x2b58
-+  __TEXT.__unwind_info: 0x2b60
-   __TEXT.__eh_frame: 0x1528
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+### Other Changes
+
+```text
 Functions:
 ~ sub_1cb597f84 -> sub_1cbaacf84 : 1984 -> 1976
 ~ sub_1cb5ab598 -> sub_1cbac0590 : 380 -> 396

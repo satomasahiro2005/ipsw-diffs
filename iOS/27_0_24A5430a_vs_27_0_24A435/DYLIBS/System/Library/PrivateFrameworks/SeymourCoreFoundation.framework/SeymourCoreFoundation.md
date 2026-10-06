@@ -2,19 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/SeymourCoreFoundation.framework/SeymourCoreFoundation`
 
-```diff
+### Section Size Changes
 
- 2027.0.146.1.4
--  __TEXT.__text: 0x4bc78
-+  __TEXT.__text: 0x4bca4
-   __TEXT.__const: 0x4e40
-   __TEXT.__swift5_typeref: 0xe87
-   __TEXT.__swift5_fieldmd: 0xa04
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4bc78` | `0x4bca4` | **`+0x2c`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2a307b248 -> sub_2a3e30248 : 464 -> 468
-~ sub_2a30926d0 -> sub_2a3e476d4 : 968 -> 972
-~ sub_2a309c598 -> sub_2a3e515a0 : 580 -> 588
-~ sub_2a309d4d8 -> sub_2a3e524e8 : 592 -> 600
-~ sub_2a30a2d00 -> sub_2a3e57d18 : 3192 -> 3208
-~ sub_2a30c3adc -> sub_2a3e78b04 : 384 -> 388
+~ sub_2a2f71248 -> sub_2a3d22248 : 464 -> 468
+~ sub_2a2f886d0 -> sub_2a3d396d4 : 968 -> 972
+~ sub_2a2f92598 -> sub_2a3d435a0 : 580 -> 588
+~ sub_2a2f934d8 -> sub_2a3d444e8 : 592 -> 600
+~ sub_2a2f98d00 -> sub_2a3d49d18 : 3192 -> 3208
+~ sub_2a2fb9adc -> sub_2a3d6ab04 : 384 -> 388
 ```

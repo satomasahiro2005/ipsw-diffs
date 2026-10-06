@@ -2,63 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/AppleIDSetupUI.framework/AppleIDSetupUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1896f4` | `0x189be8` | **`+0x4f4`** |
+| `__TEXT.__eh_frame` | `0xb410` | `0xb478` | **`+0x68`** |
+| `__TEXT.__oslogstring` | `0xb95d` | `0xb98d` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x2510` | `0x2520` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1d50` | `0x1d60` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x5768` | `0x5778` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x14e8` | `0x14f0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -129.125.3.0.0
--  __TEXT.__text: 0x1782b8
 +129.125.6.1.0
-+  __TEXT.__text: 0x178784
-   __TEXT.__objc_methlist: 0x26cc
-   __TEXT.__const: 0xd944
-   __TEXT.__cstring: 0x4f19
 
-   __TEXT.__swift5_assocty: 0xc20
-   __TEXT.__swift5_proto: 0x4c0
-   __TEXT.__swift5_types: 0x3b8
--  __TEXT.__oslogstring: 0xb95d
-+  __TEXT.__oslogstring: 0xb98d
-   __TEXT.__swift_as_entry: 0x474
-   __TEXT.__swift_as_ret: 0x454
-   __TEXT.__swift_as_cont: 0x908
-   __TEXT.__swift5_capture: 0x2ce8
-   __TEXT.__swift5_protos: 0x70
-   __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__unwind_info: 0x69e0
--  __TEXT.__eh_frame: 0xb410
-+  __TEXT.__unwind_info: 0x69f0
-+  __TEXT.__eh_frame: 0xb480
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x218
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1d50
-+  __DATA_CONST.__objc_selrefs: 0x1d60
-   __DATA_CONST.__objc_protorefs: 0x120
-   __DATA_CONST.__objc_superrefs: 0x18
-   __DATA_CONST.__objc_arraydata: 0xb0
--  __DATA_CONST.__got: 0x14e8
-+  __DATA_CONST.__got: 0x14f0
-   __AUTH_CONST.__const: 0xa9d8
-   __AUTH_CONST.__cfstring: 0xae0
-   __AUTH_CONST.__objc_const: 0x11ac0
-   __AUTH_CONST.__objc_arrayobj: 0x48
--  __AUTH_CONST.__auth_got: 0x2510
-+  __AUTH_CONST.__auth_got: 0x2520
-   __AUTH.__objc_data: 0x5158
-   __AUTH.__data: 0x3c10
-   __DATA.__objc_ivar: 0x50
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 7270
 -  Symbols:   3196
 -  CStrings:  1289
 +  Symbols:   3197
 +  CStrings:  1290
- 
 Symbols:
 + _OBJC_CLASS_$_FARestrictionsManagementSettings
 + _get_witness_table 7SwiftUI15NavigationStackVyAA0C4PathVAA4ViewPAAE5alert11isPresented7contentQrAA7BindingVySbG_AA5AlertVyXEtFQOyAgAE21navigationDestination3for11destinationQrqd__m_qd_0_qd__ctSHRd__AaFRd_0_r0_lFQOy012AppleIDSetupB00C16ControllerReaderVyAgAE26interactiveDismissDisabledyQrSbFQOyAA15ModifiedContentVyAgAE7toolbarAJQrqd__yXE_tAA07ToolbarY0Rd__lFQOyAS013SignInOptionsF7Wrapper33_57A1F0F949FF19643FCF1DFD00C49E5ELLV_AA11ToolbarItemVyytAA6ButtonVyAA18DefaultButtonLabelVGGQo_AA30_SafeAreaRegionsIgnoringLayoutVG_Qo_G_AS12SignInOptionOAA012_ConditionalY0VyAgAEAY_AQQrAA10VisibilityO_AA16ToolbarPlacementVdtFQOyAS014PasswordSignInF0V_Qo_AA4TextVGQo__Qo_GAaFHPyHC
@@ -74,17 +40,17 @@ Symbols:
 - _symbolic _____y_____y_____y_____y_____y___________yyt_____y_____GGQo______G_Qo_G___________y_____y______Qo______GQo_ 7SwiftUI4ViewPAAE21navigationDestination3for11destinationQrqd__m_qd_0_qd__ctSHRd__AaBRd_0_r0_lFQO 012AppleIDSetupB026NavigationControllerReaderV AcAE26interactiveDismissDisabledyQrSbFQO AA15ModifiedContentV AcAE7toolbar7contentQrqd__yXE_tAA07ToolbarQ0Rd__lFQO AG013SignInOptionsC7Wrapper33_57A1F0F949FF19643FCF1DFD00C49E5ELLV AA0T4ItemV AA6ButtonV AA18DefaultButtonLabelV AA23_SafeAreaIgnoringLayoutV AG0uV6OptionO AA012_ConditionalQ0V AcAEAM_AEQrAA10VisibilityO_AA0T9PlacementVdtFQO AG08PassworduvC0V AA4TextV
 - _symbolic _____y_____y_____y_____y_____y_____y___________yyt_____y_____GGQo______G_Qo_G___________y_____y______Qo______GQo__Qo_ 7SwiftUI4ViewPAAE5alert11isPresented7contentQrAA7BindingVySbG_AA5AlertVyXEtFQO AcAE21navigationDestination3for11destinationQrqd__m_qd_0_qd__ctSHRd__AaBRd_0_r0_lFQO 012AppleIDSetupB026NavigationControllerReaderV AcAE26interactiveDismissDisabledyQrSbFQO AA15ModifiedContentV AcAE7toolbarAFQrqd__yXE_tAA07ToolbarW0Rd__lFQO AO013SignInOptionsC7Wrapper33_57A1F0F949FF19643FCF1DFD00C49E5ELLV AA0Y4ItemV AA6ButtonV AA18DefaultButtonLabelV AA23_SafeAreaIgnoringLayoutV AO0Z8InOptionO AA012_ConditionalW0V AcAEAU_AMQrAA10VisibilityO_AA0Y9PlacementVdtFQO AO08Passwordz2InC0V AA4TextV
 Functions:
-~ sub_255c382e4 -> sub_2550092e4 : 32 -> 68
-~ sub_255c91620 -> sub_255062644 : 1124 -> 1164
-~ sub_255c9cda8 -> sub_25506ddf4 : 1624 -> 2372
-~ sub_255cb0b70 -> sub_255081ea8 : 1464 -> 1504
-~ sub_255ce5f58 -> sub_2550b72b8 : 772 -> 860
-~ sub_255d56c84 -> sub_25512803c : 652 -> 700
-~ sub_255d56f10 -> sub_2551282f8 : 232 -> 208
-~ sub_255d56ff8 -> sub_2551283c8 : 376 -> 404
-~ sub_255d57170 -> sub_25512855c : 140 -> 148
-~ sub_255d5bb20 -> sub_25512cf14 : 1868 -> 2044
-~ sub_255d81404 -> sub_2551528a8 : 956 -> 996
+~ sub_2589cdf0c -> sub_2579aef0c : 32 -> 68
+~ sub_258a2b544 -> sub_257a0c568 : 1144 -> 1184
+~ sub_258a37590 -> sub_257a185dc : 1704 -> 2492
+~ sub_258a4c0a8 -> sub_257a2d408 : 1464 -> 1504
+~ sub_258a83538 -> sub_257a648c0 : 792 -> 880
+~ sub_258af9524 -> sub_257ada904 : 664 -> 712
+~ sub_258af97bc -> sub_257adabcc : 284 -> 260
+~ sub_258af98d8 -> sub_257adacd0 : 388 -> 416
+~ sub_258af9a5c -> sub_257adae70 : 152 -> 160
+~ sub_258afe8d4 -> sub_257adfcf0 : 1908 -> 2084
+~ sub_258b26208 -> sub_257b076d4 : 996 -> 1036
 CStrings:
 + "[receive] Acknowledging coordinated update"
 ```

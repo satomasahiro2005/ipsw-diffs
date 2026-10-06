@@ -2,79 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/Proximity.framework/Proximity`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2f9bc` | `0x2c838` | **`-0x3184`** |
+| `__TEXT.__const` | `0xb14` | `0x854` | **`-0x2c0`** |
+| `__TEXT.__gcc_except_tab` | `0x2e58` | `0x2ba0` | **`-0x2b8`** |
+| `__DATA.__bss` | `0x2e0` | `0x90` | **`-0x250`** |
+| `__TEXT.__unwind_info` | `0x15a0` | `0x1410` | **`-0x190`** |
+| `__DATA_DIRTY.__bss` | `0x110` | `—` | **`-0x110`** |
+| `__DATA_DIRTY.__common` | `0xa8` | `—` | **`-0xa8`** |
+| `__TEXT.__cstring` | `0x2717` | `0x269f` | **`-0x78`** |
+| `__DATA_DIRTY.__data` | `—` | `0x50` | **`+0x50`** |
+| `__DATA_CONST.__const` | `0x6b0` | `0x6f0` | **`+0x40`** |
+| `__DATA.__data` | `0x830` | `0x7f8` | **`-0x38`** |
+| `__AUTH_CONST.__cfstring` | `0x2600` | `0x2620` | **`+0x20`** |
+| `__TEXT.__init_offsets` | `0xc` | `—` | **`-0xc`** |
+| `__AUTH_CONST.__const` | `0x728` | `0x720` | **`-0x8`** |
+| `__DATA_CONST.__weak_got` | `0x10` | `0x8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2f9bc
--  __TEXT.__init_offsets: 0xc
-+  __TEXT.__text: 0x2c838
-   __TEXT.__objc_methlist: 0x1fb4
--  __TEXT.__gcc_except_tab: 0x2e58
--  __TEXT.__const: 0xb14
--  __TEXT.__cstring: 0x2717
-+  __TEXT.__gcc_except_tab: 0x2ba0
-+  __TEXT.__cstring: 0x269f
-+  __TEXT.__const: 0x854
-   __TEXT.__oslogstring: 0x103b
--  __TEXT.__unwind_info: 0x15a0
-+  __TEXT.__unwind_info: 0x1410
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x6b0
-+  __DATA_CONST.__const: 0x6f0
-   __DATA_CONST.__objc_classlist: 0x128
-   __DATA_CONST.__objc_protolist: 0xa8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__weak_got: 0x10
-+  __DATA_CONST.__weak_got: 0x8
-   __DATA_CONST.__objc_selrefs: 0xe68
-   __DATA_CONST.__objc_protorefs: 0x60
-   __DATA_CONST.__objc_superrefs: 0x118
-   __DATA_CONST.__got: 0x1e8
--  __AUTH_CONST.__const: 0x728
--  __AUTH_CONST.__cfstring: 0x2600
-+  __AUTH_CONST.__const: 0x720
-+  __AUTH_CONST.__cfstring: 0x2620
-   __AUTH_CONST.__objc_const: 0x68f8
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x18
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0xb90
-   __DATA.__objc_ivar: 0x300
--  __DATA.__data: 0x830
--  __DATA.__bss: 0x2e0
--  __DATA_DIRTY.__common: 0xa8
--  __DATA_DIRTY.__bss: 0x110
-+  __DATA.__data: 0x7f8
-+  __DATA.__bss: 0x90
-+  __DATA_DIRTY.__data: 0x50
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
+-557.0.0.0.0
++560.0.0.0.0
+
 -  Functions: 1103
--  Symbols:   4085
--  CStrings:  814
+-  Symbols:   2128
+-  CStrings:  507
 +  Functions: 1050
-+  Symbols:   3924
-+  CStrings:  808
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH.__objc_data : content changed
++  Symbols:   2044
++  CStrings:  500
 Symbols:
 + GCC_except_table77
 + GCC_except_table84
@@ -192,5 +152,4 @@ CStrings:
 - "OLYMPIC_FILTER"
 - "RAYLEIGH_FILTER"
 - "map::at:  key not found"
-
 ```

@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/CarPlaySupport.framework/CarPlaySupport`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_17 : 24 -> 20

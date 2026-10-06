@@ -2,10 +2,12 @@
 
 > `/private/var/staged_system_apps/Music.app/Frameworks/MusicApplication.framework/MusicApplication`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
-- `__TEXT.__const`
 - `__DATA_CONST.__const`
+- `__TEXT.__const`
+
+### Other Changes
 
 ```text
 Functions:

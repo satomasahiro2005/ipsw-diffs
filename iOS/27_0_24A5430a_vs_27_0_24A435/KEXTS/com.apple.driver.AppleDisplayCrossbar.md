@@ -2,40 +2,31 @@
 
 > `com.apple.driver.AppleDisplayCrossbar`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x3d704` | `0x414ac` | **`+0x3da8`** |
+| `__DATA_CONST.__const` | `0x10bc8` | `0x11838` | **`+0xc70`** |
+| `__TEXT.__cstring` | `0x4de0` | `0x515c` | **`+0x37c`** |
+| `__TEXT.__os_log` | `0x689b` | `0x69e8` | **`+0x14d`** |
+| `__TEXT.__const` | `0x1a4` | `0x2b0` | **`+0x10c`** |
+| `__DATA_CONST.__kalloc_type` | `0x7c0` | `0x800` | **`+0x40`** |
+| `__DATA.__common` | `0x4e8` | `0x510` | **`+0x28`** |
+| `__TEXT_EXEC.__auth_stubs` | `0x630` | `0x640` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x318` | `0x320` | **`+0x8`** |
+| `__DATA_CONST.__mod_init_func` | `0xf0` | `0xf8` | **`+0x8`** |
+| `__DATA_CONST.__mod_term_func` | `0xf0` | `0xf8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 417.0.4.0.0
--  __TEXT.__const: 0x1a4
--  __TEXT.__cstring: 0x4de0
--  __TEXT.__os_log: 0x689b
--  __TEXT_EXEC.__text: 0x3d704
--  __TEXT_EXEC.__auth_stubs: 0x630
-+  __TEXT.__const: 0x2b0
-+  __TEXT.__cstring: 0x515c
-+  __TEXT.__os_log: 0x69e8
-+  __TEXT_EXEC.__text: 0x414ac
-+  __TEXT_EXEC.__auth_stubs: 0x640
-   __DATA.__data: 0xc4
--  __DATA.__common: 0x4e8
--  __DATA_CONST.__mod_init_func: 0xf0
--  __DATA_CONST.__mod_term_func: 0xf0
--  __DATA_CONST.__const: 0x10bc8
--  __DATA_CONST.__kalloc_type: 0x7c0
-+  __DATA.__common: 0x510
-+  __DATA_CONST.__mod_init_func: 0xf8
-+  __DATA_CONST.__mod_term_func: 0xf8
-+  __DATA_CONST.__const: 0x11838
-+  __DATA_CONST.__kalloc_type: 0x800
-   __DATA_CONST.__kalloc_var: 0xa0
--  __DATA_CONST.__auth_got: 0x318
-+  __DATA_CONST.__auth_got: 0x320
-   __DATA_CONST.__got: 0xf8
 -  Functions: 2160
 +  Functions: 2263
-   Symbols:   0
+
 -  CStrings:  821
 +  CStrings:  855
- 
 CStrings:
 + "\"%s::%s(): \" \"RCAL impedance failed\" @%s:%d"
 + "\"%s::%s(): \" \"no ACK to POWER DOWN command after 16us\" @%s:%d"

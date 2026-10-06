@@ -2,24 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/InputTranscoder.framework/InputTranscoder`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x2b244
-+  __TEXT.__text: 0x2b04c
-   __TEXT.__const: 0x3878
-   __TEXT.__gcc_except_tab: 0x2478
-   __TEXT.__cstring: 0xecc
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__data : content changed
-~ __DATA_DIRTY.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2b244` | `0x2b04c` | **`-0x1f8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN15InputTranscoder16LexiconContainer18isPresentInLexiconERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE : 372 -> 352
 ~ __ZNSt3__127__insertion_sort_incompleteB9fqe220106INS_17_ClassicAlgPolicyERPFbPKN15InputTranscoder8PathTrieES5_EPPS3_EEbT1_SB_T0_ : 768 -> 744
@@ -41,5 +32,4 @@ Functions:
 ~ __ZNK15InputTranscoder11DecoderImpl19enumerateCandidatesENSt3__14spanIKjLm18446744073709551615EEEPK14__CFDictionaryNS1_8functionIFvNS1_10unique_ptrINS_13CandidateImplENS1_14default_deleteISA_EEEERbEEE : 680 -> 668
 ~ __ZNSt3__16vectorINS0_IdNS_9allocatorIdEEEENS1_IS3_EEEC2B9fqe220106EmRKS3_ : 304 -> 288
 ~ __ZN15InputTranscoder4Path30set_sample_is_inflection_pointEj : 124 -> 120
-
 ```

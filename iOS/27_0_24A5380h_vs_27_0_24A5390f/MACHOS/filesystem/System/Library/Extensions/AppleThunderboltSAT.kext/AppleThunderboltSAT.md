@@ -2,17 +2,16 @@
 
 > `/System/Library/Extensions/AppleThunderboltSAT.kext/AppleThunderboltSAT`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -112.0.0.0.0
 +113.0.0.0.0
-   __TEXT.__cstring: 0x10dcf
-   __TEXT.__const: 0x50
-   __TEXT_EXEC.__text: 0x23fe0
 CStrings:
 + "113"
 + "21:19:24"

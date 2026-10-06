@@ -2,97 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/CDMFoundation.framework/CDMFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x274f58` | `0x28b1a4` | **`+0x1624c`** |
+| `__TEXT.__oslogstring` | `0x1dd75` | `0x1f260` | **`+0x14eb`** |
+| `__TEXT.__gcc_except_tab` | `0xb52c` | `0xc560` | **`+0x1034`** |
+| `__TEXT.__cstring` | `0x1ba53` | `0x1c783` | **`+0xd30`** |
+| `__AUTH_CONST.__objc_const` | `0x128c8` | `0x132b0` | **`+0x9e8`** |
+| `__TEXT.__objc_methlist` | `0x8684` | `0x8cd8` | **`+0x654`** |
+| `__AUTH_CONST.__cfstring` | `0x81a0` | `0x8660` | **`+0x4c0`** |
+| `__AUTH.__objc_data` | `0x1168` | `0x1438` | **`+0x2d0`** |
+| `__TEXT.__unwind_info` | `0x7e98` | `0x80f8` | **`+0x260`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5400` | `0x5500` | **`+0x100`** |
+| `__DATA_CONST.__const` | `0x1e80` | `0x1f08` | **`+0x88`** |
+| `__AUTH_CONST.__objc_intobj` | `0x678` | `0x6d8` | **`+0x60`** |
+| `__DATA_CONST.__objc_classlist` | `0x8d0` | `0x918` | **`+0x48`** |
+| `__DATA.__objc_ivar` | `0x7ac` | `0x7f0` | **`+0x44`** |
+| `__AUTH_CONST.__const` | `0xc880` | `0xc8c0` | **`+0x40`** |
+| `__DATA_CONST.__objc_arraydata` | `0x228` | `0x260` | **`+0x38`** |
+| `__DATA_CONST.__got` | `0x26c8` | `0x26f8` | **`+0x30`** |
+| `__DATA_CONST.__objc_superrefs` | `0x408` | `0x438` | **`+0x30`** |
+| `__DATA.__bss` | `0x9ab0` | `0x9ad0` | **`+0x20`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0xa8` | `0xc0` | **`+0x18`** |
+| `__TEXT.__const` | `0xd370` | `0xd388` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x4e58` | `0x4e60` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.31.14.0.0
--  __TEXT.__text: 0x25ccc0
--  __TEXT.__objc_methlist: 0x8684
--  __TEXT.__const: 0xd370
 +3605.16.1.0.0
-+  __TEXT.__text: 0x272d8c
-+  __TEXT.__objc_methlist: 0x8cd8
-+  __TEXT.__const: 0xd388
-   __TEXT.__swift5_typeref: 0x423c
-   __TEXT.__swift5_fieldmd: 0x3d80
-   __TEXT.__constg_swiftt: 0x55d4
-   __TEXT.__swift5_protos: 0x98
--  __TEXT.__cstring: 0x1ba53
-+  __TEXT.__cstring: 0x1c783
-   __TEXT.__swift5_types: 0x574
-   __TEXT.__swift5_proto: 0x9ac
-   __TEXT.__swift5_reflstr: 0x306a
--  __TEXT.__oslogstring: 0x1dd75
-+  __TEXT.__oslogstring: 0x1f260
-   __TEXT.__swift5_assocty: 0x438
-   __TEXT.__swift5_capture: 0x196c
-   __TEXT.__swift5_builtin: 0xf0
 
-   __TEXT.__swift_as_entry: 0x23c
-   __TEXT.__swift_as_ret: 0x270
-   __TEXT.__swift_as_cont: 0x42c
--  __TEXT.__gcc_except_tab: 0xb52c
-+  __TEXT.__gcc_except_tab: 0xc560
-   __TEXT.__ustring: 0x17c
--  __TEXT.__unwind_info: 0x96f8
-+  __TEXT.__unwind_info: 0x99d8
-   __TEXT.__eh_frame: 0x7a20
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1e80
--  __DATA_CONST.__objc_classlist: 0x8d0
-+  __DATA_CONST.__const: 0x1f08
-+  __DATA_CONST.__objc_classlist: 0x918
-   __DATA_CONST.__objc_catlist: 0x50
-   __DATA_CONST.__objc_protolist: 0x148
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5400
-+  __DATA_CONST.__objc_selrefs: 0x5500
-   __DATA_CONST.__objc_protorefs: 0x88
--  __DATA_CONST.__objc_superrefs: 0x408
--  __DATA_CONST.__objc_arraydata: 0x228
--  __DATA_CONST.__got: 0x26c8
--  __AUTH_CONST.__const: 0xc880
--  __AUTH_CONST.__cfstring: 0x81a0
--  __AUTH_CONST.__objc_const: 0x128c8
-+  __DATA_CONST.__objc_superrefs: 0x438
-+  __DATA_CONST.__objc_arraydata: 0x260
-+  __DATA_CONST.__got: 0x26f8
-+  __AUTH_CONST.__const: 0xc8c0
-+  __AUTH_CONST.__cfstring: 0x8660
-+  __AUTH_CONST.__objc_const: 0x132b0
-   __AUTH_CONST.__weak_auth_got: 0x28
--  __AUTH_CONST.__objc_arrayobj: 0xa8
--  __AUTH_CONST.__objc_intobj: 0x678
-+  __AUTH_CONST.__objc_arrayobj: 0xc0
-+  __AUTH_CONST.__objc_intobj: 0x6d8
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__objc_floatobj: 0x20
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x4e58
--  __AUTH.__objc_data: 0x1168
-+  __AUTH_CONST.__auth_got: 0x4e60
-+  __AUTH.__objc_data: 0x1438
-   __AUTH.__data: 0x1090
--  __DATA.__objc_ivar: 0x7ac
-+  __DATA.__objc_ivar: 0x7f0
-   __DATA.__data: 0x1c68
-   __DATA.__common: 0x378
-   __DATA_DIRTY.__objc_data: 0x4a00
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12861
--  Symbols:   11211
+-  Symbols:   8871
 -  CStrings:  4592
 +  Functions: 13047
-+  Symbols:   11491
++  Symbols:   9126
 +  CStrings:  4742
- 
 Symbols:
 + +[CDMBaseSpanMatchService convertToSpanMatchRequest:nlContext:connectionId:]
 + +[CDMBaseSpanMatchService convertToSpanMatchRequests:nlContext:connectionId:]
@@ -762,47 +711,6 @@ Symbols:
 + ___block_descriptor_80_e8_32s40s48s56s64r72r_e52_v56?0"NSString"8{_NSRange=QQ}16{_NSRange=QQ}32^B48ls32l8s40l8s48l8r64l8r72l8s56l8
 + _kIntelligenceFlowBundleId
 + _kSelfRequesterMagicCompose
-+ _objc_msgSend$_handleContactNLURequest:withCallback:
-+ _objc_msgSend$_handleMagicComposeRequest:withCallback:
-+ _objc_msgSend$_handleTrustedAgentRequest:withCallback:
-+ _objc_msgSend$buildNluRequestWithText:requestConnectionId:nlContext:previousUtterances:
-+ _objc_msgSend$cdmRequestId
-+ _objc_msgSend$checkExactMatchForUtterances:connectionId:
-+ _objc_msgSend$computeRecurrenceTrimmedRange:nodeIndex:matchingSpans:spanStart:spanEnd:outStart:outEnd:
-+ _objc_msgSend$convertToSpanMatchRequest:nlContext:connectionId:
-+ _objc_msgSend$convertToSpanMatchRequests:nlContext:connectionId:
-+ _objc_msgSend$createProtoTokenRequestWithAsrOutputs:locale:connectionId:
-+ _objc_msgSend$emitNluRequestInsights:
-+ _objc_msgSend$entityHasExplicitDate:entityNodeIndex:forwardEdgeIndex:
-+ _objc_msgSend$entityHasExplicitTime:entityNodeIndex:forwardEdgeIndex:
-+ _objc_msgSend$extractInputTextForDateName:nameNodeIndex:spanInfo:alignmentsByNodeIndex:
-+ _objc_msgSend$findDateNameSpansForNameNode:nameNodeIndex:
-+ _objc_msgSend$findDefinedDateTimeRangeSpansForNameNode:nameNodeIndex:
-+ _objc_msgSend$findEnclosingTaskVerbElementId:nodeIndex:invertedEdgeIndex:
-+ _objc_msgSend$findNameNodeIndexForEntity:entityNodeIndex:forwardEdgeIndex:
-+ _objc_msgSend$findNameParentNodeIndex:nameNodeIndex:parentElementId:invertedEdgeIndex:
-+ _objc_msgSend$findOrCreateDateTimeNodeForReminder:reminderNodeIndex:forwardEdgeIndex:
-+ _objc_msgSend$graphNameForTrustedAgent
-+ _objc_msgSend$hasUsoVerbElementId
-+ _objc_msgSend$isCreateTaskTarget:entityNodeIndex:invertedEdgeIndex:
-+ _objc_msgSend$isRecurrenceQualifierSpan:
-+ _objc_msgSend$matchSpansForTokenChain:asrHypothesis:connectionId:
-+ _objc_msgSend$prepareCcqrTokens:currentTurn:previousTurns:utterance:locale:connectionId:
-+ _objc_msgSend$processContactNluRequest:completionHandler:
-+ _objc_msgSend$processContactNluRequestWithCdmNluRequest:completionHandler:
-+ _objc_msgSend$processDateNameSpansForReminder:parseGraph:reminderNodeIndex:reminderNameNodeIndex:hasExplicitDate:hasNonDateTimeTrigger:forwardEdgeIndex:alignmentsByNodeIndex:
-+ _objc_msgSend$processDateTimeAlignmentForReminder:reminderNodeIndex:reminderNameNodeIndex:forwardEdgeIndex:alignmentsByNodeIndex:
-+ _objc_msgSend$processDefinedDateTimeRangeSpansForReminder:parseGraph:reminderNodeIndex:reminderNameNodeIndex:hasExplicitTime:hasNonDateTimeTrigger:forwardEdgeIndex:
-+ _objc_msgSend$processMagicComposeNluRequest:completionHandler:
-+ _objc_msgSend$processMagicComposeNluRequestWithCdmNluRequest:completionHandler:
-+ _objc_msgSend$processTrustedAgentNluRequest:completionHandler:
-+ _objc_msgSend$processTrustedAgentNluRequestWithCdmNluRequest:completionHandler:
-+ _objc_msgSend$reminderHasNonDateTimeTrigger:reminderNodeIndex:forwardEdgeIndex:
-+ _objc_msgSend$reminderName
-+ _objc_msgSend$requiresUtteranceRedactionForRequest:
-+ _objc_msgSend$spanizeAsrs:asrSpansMap:topAsrSpans:topAsrSpansFiltered:asrHypotheses:connectionId:
-+ _objc_msgSend$spanizeTokenChain:spans:isTopAsr:topAsrSpansFiltered:asrHypothesis:connectionId:
-+ _objc_msgSend$usoVerbElementId
 + _reminderName.onceToken
 + _reminderName.value
 - +[CDMBaseSpanMatchService convertToSpanMatchRequest:nlContext:]
@@ -1220,22 +1128,6 @@ Symbols:
 - ___block_descriptor_40_ea8_32s_e5_v8?0ls32l8
 - ___block_descriptor_56_e8_32s40r48r_e29_v16?0"CDMServiceGraphNode"8lr40l8r48l8s32l8
 - ___block_descriptor_72_e8_32s40s48s56r64r_e52_v56?0"NSString"8{_NSRange=QQ}16{_NSRange=QQ}32^B48ls32l8s40l8r56l8r64l8s48l8
-- _objc_msgSend$calendarEventHasExplicitDate:calendarEventNodeIndex:forwardEdgeIndex:
-- _objc_msgSend$calendarEventHasExplicitTime:calendarEventNodeIndex:forwardEdgeIndex:
-- _objc_msgSend$checkExactMatchForUtterances:
-- _objc_msgSend$convertToSpanMatchRequest:nlContext:
-- _objc_msgSend$convertToSpanMatchRequests:nlContext:
-- _objc_msgSend$createProtoTokenRequestWithAsrOutputs:locale:
-- _objc_msgSend$extractInputTextForDateName:calendarEventNameNodeIndex:spanInfo:alignmentsByNodeIndex:
-- _objc_msgSend$findCalendarEventNameNodeIndex:calendarEventNodeIndex:forwardEdgeIndex:
-- _objc_msgSend$findCalendarEventParentNodeIndex:calendarEventNameNodeIndex:invertedEdgeIndex:
-- _objc_msgSend$findDateNameSpansForCalendarEventName:calendarEventNameNodeIndex:
-- _objc_msgSend$findDefinedDateTimeRangeSpansForCalendarEventName:calendarEventNameNodeIndex:
-- _objc_msgSend$isCalendarEventNameNode:nodeIndex:invertedEdgeIndex:
-- _objc_msgSend$matchSpansForTokenChain:asrHypothesis:
-- _objc_msgSend$prepareCcqrTokens:currentTurn:previousTurns:utterance:locale:
-- _objc_msgSend$spanizeAsrs:asrSpansMap:topAsrSpans:topAsrSpansFiltered:asrHypotheses:
-- _objc_msgSend$spanizeTokenChain:spans:isTopAsr:topAsrSpansFiltered:asrHypothesis:
 CStrings:
 + "%s ASR #%d: Added asr.UUID=%@, trimmed=%{sensitive}@"
 + "%s ASR #%d: Processing asr.UUID=%@, asr.utterance=%{sensitive}@"

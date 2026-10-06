@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/MediaContinuityKit.framework/MediaContinuityKit`
 
-```diff
+### Section Size Changes
 
- 125.1.0.0.0
--  __TEXT.__text: 0x117854
-+  __TEXT.__text: 0x11785c
-   __TEXT.__objc_methlist: 0x850
-   __TEXT.__const: 0xd994
-   __TEXT.__constg_swiftt: 0x530c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x128aa0` | `0x128aa8` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_28dc36bdc -> sub_28d7ecbdc : 260 -> 272
-~ sub_28dc37cac -> sub_28d7edcb8 : 1476 -> 1472
+~ sub_29503f544 -> sub_294c78544 : 260 -> 272
+~ sub_295040620 -> sub_294c7962c : 1496 -> 1492
 ```

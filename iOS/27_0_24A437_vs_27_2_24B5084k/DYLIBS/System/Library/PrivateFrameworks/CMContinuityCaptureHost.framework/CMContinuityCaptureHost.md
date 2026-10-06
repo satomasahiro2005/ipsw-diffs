@@ -2,80 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/CMContinuityCaptureHost.framework/CMContinuityCaptureHost`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa0ec4` | `0xa58d8` | **`+0x4a14`** |
+| `__TEXT.__oslogstring` | `0x8958` | `0xa2ac` | **`+0x1954`** |
+| `__TEXT.__cstring` | `0x8b85` | `0x98c5` | **`+0xd40`** |
+| `__TEXT.__gcc_except_tab` | `0x2d00` | `0x2edc` | **`+0x1dc`** |
+| `__AUTH_CONST.__cfstring` | `0x42e0` | `0x4360` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x27e8` | `0x2830` | **`+0x48`** |
+| `__DATA.__common` | `0xa8` | `0xd8` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x1110` | `0x1138` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x1610` | `0x15f0` | **`-0x20`** |
+| `__DATA_CONST.__const` | `0x1e58` | `0x1e78` | **`+0x20`** |
+| `__TEXT.__const` | `0x1420` | `0x1430` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x978` | `0x980` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2568` | `0x2570` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -764.22.13.0.0
--  __TEXT.__text: 0x9cad8
 +764.40.4.122.1
-+  __TEXT.__text: 0xa1570
-   __TEXT.__objc_methlist: 0x4dcc
--  __TEXT.__const: 0x1420
--  __TEXT.__cstring: 0x8b85
--  __TEXT.__oslogstring: 0x8958
--  __TEXT.__gcc_except_tab: 0x2d00
-+  __TEXT.__const: 0x1430
-+  __TEXT.__cstring: 0x98c5
-+  __TEXT.__oslogstring: 0xa2ac
-+  __TEXT.__gcc_except_tab: 0x2edc
-   __TEXT.__swift5_typeref: 0x947
-   __TEXT.__swift5_capture: 0x688
-   __TEXT.__constg_swiftt: 0x764
 
-   __TEXT.__swift5_proto: 0x54
-   __TEXT.__swift5_acfuncs: 0x64
-   __TEXT.__swift5_builtin: 0x28
--  __TEXT.__unwind_info: 0x2e80
-+  __TEXT.__unwind_info: 0x2ec8
-   __TEXT.__eh_frame: 0x2408
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1e58
-+  __DATA_CONST.__const: 0x1e78
-   __DATA_CONST.__objc_classlist: 0x1e0
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x170
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2568
-+  __DATA_CONST.__objc_selrefs: 0x2570
-   __DATA_CONST.__objc_protorefs: 0x68
-   __DATA_CONST.__objc_superrefs: 0x198
-   __DATA_CONST.__objc_arraydata: 0x68
--  __DATA_CONST.__got: 0x978
--  __AUTH_CONST.__const: 0x1610
--  __AUTH_CONST.__cfstring: 0x42e0
-+  __DATA_CONST.__got: 0x980
-+  __AUTH_CONST.__const: 0x15f0
-+  __AUTH_CONST.__cfstring: 0x4360
-   __AUTH_CONST.__objc_const: 0x9630
-   __AUTH_CONST.__objc_intobj: 0x3a8
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_doubleobj: 0x40
-   __AUTH_CONST.__objc_arrayobj: 0x30
--  __AUTH_CONST.__auth_got: 0x1110
-+  __AUTH_CONST.__auth_got: 0x1138
-   __AUTH.__objc_data: 0x1a38
-   __AUTH.__data: 0x2c8
-   __DATA.__objc_ivar: 0x7a8
-   __DATA.__data: 0x1360
--  __DATA.__common: 0xa8
-+  __DATA.__common: 0xd8
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CoreAudio.framework/CoreAudio
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2845
--  Symbols:   5089
+-  Symbols:   4108
 -  CStrings:  1621
 +  Functions: 2861
-+  Symbols:   5098
++  Symbols:   4116
 +  CStrings:  1723
- 
 Symbols:
 + _CFPreferencesGetAppIntegerValue
 + _CVPixelBufferGetIOSurface
@@ -88,7 +45,6 @@ Symbols:
 + _gCMContinuityCaptureTimeSyncClockTrace
 + _gGMFigKTraceEnabled
 + _kdebug_trace
-+ _objc_msgSend$availableClockIdentifiers
 - ___76-[CMContinuityCaptureAudioInputProvider listener:shouldAcceptNewConnection:]_block_invoke_3
 - ___76-[CMContinuityCaptureAudioInputProvider listener:shouldAcceptNewConnection:]_block_invoke_4
 - ___87-[CMContinuityCaptureAudioInputProvider getRemotelyCollectedLatencyMetricsForUniqueID:]_block_invoke_2

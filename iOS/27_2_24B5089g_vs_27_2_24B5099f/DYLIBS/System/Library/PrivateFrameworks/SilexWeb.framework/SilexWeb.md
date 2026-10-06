@@ -2,17 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/SilexWeb.framework/SilexWeb`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x194c8` | `0x19574` | **`+0xac`** |
+
+### Other Changes
+
 ```diff
 
 -5962.0.0.0.0
--  __TEXT.__text: 0x1858c
 +5969.0.0.0.0
-+  __TEXT.__text: 0x18638
-   __TEXT.__objc_methlist: 0x36c4
-   __TEXT.__const: 0x68
-   __TEXT.__cstring: 0x1e30
 Functions:
-~ -[SWContainerViewController handleKeyboardChange:] : 296 -> 396
+~ -[SWContainerViewController handleKeyboardChange:] : 308 -> 408
 ~ -[SWContainerViewController convertedKeyboardFrame] : 352 -> 440
-~ -[SWContainerViewController updateInputAccessoryViewFrame] : 404 -> 388
+~ -[SWContainerViewController updateInputAccessoryViewFrame] : 416 -> 400
 ```

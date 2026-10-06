@@ -2,102 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xae8878` | `0xaf3d70` | **`+0xb4f8`** |
+| `__DATA_DIRTY.__objc_data` | `0x24f40` | `0x26ca0` | **`+0x1d60`** |
+| `__AUTH.__objc_data` | `0xfa00` | `0xde80` | **`-0x1b80`** |
+| `__AUTH_CONST.__objc_const` | `0x2824c8` | `0x283c68` | **`+0x17a0`** |
+| `__TEXT.__oslogstring` | `0x61caf` | `0x6286e` | **`+0xbbf`** |
+| `__TEXT.__objc_methlist` | `0xbbbf8` | `0xbc5e8` | **`+0x9f0`** |
+| `__TEXT.__cstring` | `0x83663` | `0x83fbd` | **`+0x95a`** |
+| `__AUTH_CONST.__cfstring` | `0x73160` | `0x73a40` | **`+0x8e0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4daf0` | `0x4df50` | **`+0x460`** |
+| `__TEXT.__unwind_info` | `0x2de40` | `0x2e090` | **`+0x250`** |
+| `__DATA_DIRTY.__bss` | `0x1738` | `0x18d8` | **`+0x1a0`** |
+| `__DATA_CONST.__const` | `0x1d550` | `0x1d6a8` | **`+0x158`** |
+| `__DATA.__bss` | `0xb20` | `0xa00` | **`-0x120`** |
+| `__DATA.__objc_ivar` | `0xf960` | `0xfa5c` | **`+0xfc`** |
+| `__AUTH_CONST.__const` | `0x109f8` | `0x10ad8` | **`+0xe0`** |
+| `__DATA.__data` | `0x20b10` | `0x20bc0` | **`+0xb0`** |
+| `__TEXT.__gcc_except_tab` | `0x181c0` | `0x1823c` | **`+0x7c`** |
+| `__DATA_CONST.__got` | `0xa860` | `0xa8c0` | **`+0x60`** |
+| `__AUTH_CONST.__objc_dictobj` | `0x348` | `0x2f8` | **`-0x50`** |
+| `__TEXT.__const` | `0x11250` | `0x112a0` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x2b78` | `0x2ba8` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0x5420` | `0x5450` | **`+0x30`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x800` | `0x820` | **`+0x20`** |
+| `__DATA_CONST.__objc_arraydata` | `0x18c0` | `0x18a0` | **`-0x20`** |
+| `__DATA_CONST.__objc_superrefs` | `0x4010` | `0x4030` | **`+0x20`** |
+| `__DATA_CONST.__objc_protolist` | `0x2a80` | `0x2a90` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0x130` | `0x140` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0xd8` | `0xd0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xae8878
-+  __TEXT.__text: 0xaf3d70
-   __TEXT.__init_offsets: 0x4
--  __TEXT.__objc_methlist: 0xbbbf8
--  __TEXT.__const: 0x11250
--  __TEXT.__cstring: 0x83663
--  __TEXT.__oslogstring: 0x61caf
--  __TEXT.__gcc_except_tab: 0x181c0
-+  __TEXT.__objc_methlist: 0xbc5e8
-+  __TEXT.__const: 0x112a0
-+  __TEXT.__oslogstring: 0x6286e
-+  __TEXT.__cstring: 0x83fbd
-+  __TEXT.__gcc_except_tab: 0x1823c
-   __TEXT.__ustring: 0xd04
-   __TEXT.__dlopen_cstrs: 0x373
--  __TEXT.__unwind_info: 0x2de40
-+  __TEXT.__unwind_info: 0x2e090
-   __TEXT.__eh_frame: 0x48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1d550
--  __DATA_CONST.__objc_classlist: 0x5420
-+  __DATA_CONST.__const: 0x1d6a8
-+  __DATA_CONST.__objc_classlist: 0x5450
-   __DATA_CONST.__objc_catlist: 0x338
-   __DATA_CONST.__objc_nlcatlist: 0x8
--  __DATA_CONST.__objc_protolist: 0x2a80
-+  __DATA_CONST.__objc_protolist: 0x2a90
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4daf0
--  __DATA_CONST.__objc_protorefs: 0xd8
--  __DATA_CONST.__objc_superrefs: 0x4010
--  __DATA_CONST.__objc_arraydata: 0x18c0
--  __DATA_CONST.__got: 0xa860
--  __AUTH_CONST.__const: 0x109f8
--  __AUTH_CONST.__cfstring: 0x73160
--  __AUTH_CONST.__objc_const: 0x2824c8
-+  __DATA_CONST.__objc_selrefs: 0x4df50
-+  __DATA_CONST.__objc_protorefs: 0xd0
-+  __DATA_CONST.__objc_superrefs: 0x4030
-+  __DATA_CONST.__objc_arraydata: 0x18a0
-+  __DATA_CONST.__got: 0xa8c0
-+  __AUTH_CONST.__const: 0x10ad8
-+  __AUTH_CONST.__cfstring: 0x73a40
-+  __AUTH_CONST.__objc_const: 0x283c68
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x1758
--  __AUTH_CONST.__objc_doubleobj: 0x800
-+  __AUTH_CONST.__objc_doubleobj: 0x820
-   __AUTH_CONST.__objc_intobj: 0x2c88
--  __AUTH_CONST.__objc_dictobj: 0x348
--  __AUTH_CONST.__auth_got: 0x2b78
--  __AUTH.__objc_data: 0xfa00
--  __DATA.__objc_ivar: 0xf960
--  __DATA.__data: 0x20b10
--  __DATA.__bss: 0xb20
-+  __AUTH_CONST.__objc_dictobj: 0x2f8
-+  __AUTH_CONST.__auth_got: 0x2ba8
-+  __AUTH.__objc_data: 0xde80
-+  __DATA.__objc_ivar: 0xfa5c
-+  __DATA.__data: 0x20bc0
-+  __DATA.__bss: 0xa00
-   __DATA.__common: 0xa40
--  __DATA_DIRTY.__objc_data: 0x24f40
--  __DATA_DIRTY.__data: 0x130
--  __DATA_DIRTY.__bss: 0x1738
-+  __DATA_DIRTY.__objc_data: 0x26ca0
-+  __DATA_DIRTY.__data: 0x140
-+  __DATA_DIRTY.__bss: 0x18d8
-   __DATA_DIRTY.__common: 0x40
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
+-4621.0.0.0.0
++4626.103.0.0.0
 
-   - /usr/lib/libsp.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libutil.dylib
 -  Functions: 72722
--  Symbols:   246745
--  CStrings:  37844
+-  Symbols:   118107
+-  CStrings:  23169
 +  Functions: 72987
-+  Symbols:   247423
-+  CStrings:  38025
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_nlcatlist : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
++  Symbols:   118509
++  CStrings:  23279
 Symbols:
 + +[SBCompanionSceneForegroundConstraint foregroundConstraint]
 + +[SBCompanionScenePresentationContext defaultLifecycleConstraints]
@@ -724,186 +674,6 @@ Symbols:
 + _alm_app_will_launch_with_signpost_id_and_metrics_payload
 + _foregroundConstraint.foregroundConstraint
 + _foregroundConstraint.onceToken
-+ _objc_msgSend$_acquireSuspensionUnderLockExemptionIfNeeded
-+ _objc_msgSend$_adjustPresentedMenuForGestureOverViewInContainer:forPanGesture:isDirectTouch:
-+ _objc_msgSend$_allowsCapabilitySearchOnLockScreenWithExplanation:
-+ _objc_msgSend$_anyRegisteredPresentationsMayBeConstrainedByUpdate:
-+ _objc_msgSend$_applyCBDeviceLoss:
-+ _objc_msgSend$_applyCBDeviceUpdate:
-+ _objc_msgSend$_applyVolumeLimitedSizeLayout:
-+ _objc_msgSend$_buildVolumeLeadingContentProviderForRingerSilent:
-+ _objc_msgSend$_buildVolumeTrailingContentProvider
-+ _objc_msgSend$_calculateResolvedSize:constraintHelper:
-+ _objc_msgSend$_cbDeviceGlyphPropertiesDifferBetween:and:
-+ _objc_msgSend$_createOrResetPreventSystemSleepAssertion
-+ _objc_msgSend$_effectivePreferredSize
-+ _objc_msgSend$_finalizeLaunchSignpostState
-+ _objc_msgSend$_hardwareButtonPressedStateDidChange
-+ _objc_msgSend$_headerIconImageInfo
-+ _objc_msgSend$_indexOfCBDeviceWithIdentifier:
-+ _objc_msgSend$_invalidateOrDeferPreferredMinimumTopInsetInteractive:
-+ _objc_msgSend$_invalidatePreferredMinimumTopInsetInteractive:
-+ _objc_msgSend$_isAnySceneLocked
-+ _objc_msgSend$_isFocusRequestReasonBlocked:
-+ _objc_msgSend$_isUniversalResizabilityEnabled
-+ _objc_msgSend$_leadingStatusBarPartFrameInWindow:
-+ _objc_msgSend$_notifyResizingChangedIfNeeded
-+ _objc_msgSend$_performMainMenuCommandInvocationRequestForCommand:withSystemAuthenticationServiceMessage:session:
-+ _objc_msgSend$_postAssistantIslandLayoutUpdate
-+ _objc_msgSend$_presentMenuViewNonInteractively:forPointerHover:forKeyPress:
-+ _objc_msgSend$_presentSIMSetupFlowWithFlowType:reason:
-+ _objc_msgSend$_presentation:isConstrainedByContext:
-+ _objc_msgSend$_releasePreventSystemSleepAssertion
-+ _objc_msgSend$_scheduleReleaseOfPreventSystemSleepAssertion
-+ _objc_msgSend$_sendResizingStatusToConnection:
-+ _objc_msgSend$_setContentBorderWidth:
-+ _objc_msgSend$_setDisplayedWithLimitedSize:
-+ _objc_msgSend$_setHiddenStatusBarParts:
-+ _objc_msgSend$_setLastInteractedResizableSceneHandle:
-+ _objc_msgSend$_setPreferredSystemClipPadding:
-+ _objc_msgSend$_setUnavailabilityReasons:
-+ _objc_msgSend$_setWantsLayoutPassForClientUpdate:reason:
-+ _objc_msgSend$_startCBDiscovery
-+ _objc_msgSend$_statusBarStyleAttributesForAppOwningStatusBarPart:
-+ _objc_msgSend$_unlockIfNecessaryAndPresentSIMSetupFlowWithFlowType:reason:unlockName:
-+ _objc_msgSend$_updateAssistantIslandDodgeWithFrame:state:gestureInteractive:
-+ _objc_msgSend$_updateBorderColor
-+ _objc_msgSend$_updateClockMorphForProgress:velocity:forPresentationValue:
-+ _objc_msgSend$_updateCompanionScenesForInterestedModes:registeredPresentations:
-+ _objc_msgSend$_updateCompanionScenesForInterestedModes:registeredPresentations:update:
-+ _objc_msgSend$_updateContentBorderAppearance
-+ _objc_msgSend$_updateDisplayConfiguration:fence:
-+ _objc_msgSend$_updateEffectiveTopInsetInteractive:
-+ _objc_msgSend$_updateMapsShowingOnLockScreen
-+ _objc_msgSend$_updateQueryIterationLabelVisibility
-+ _objc_msgSend$_updateStatusBarRevealForProgress:
-+ _objc_msgSend$_updateSystemApertureBehaviorSettings
-+ _objc_msgSend$_updateTransientOverlayPresence
-+ _objc_msgSend$_updateVisibilityForFrame:
-+ _objc_msgSend$actionForPartWithIdentifier:
-+ _objc_msgSend$addPropagatedProperty:
-+ _objc_msgSend$adjustPresentedMenuForInteractionOverView:
-+ _objc_msgSend$appLeadingStatusBarStyleAttributes
-+ _objc_msgSend$appStatusBarThatContainsActivationView
-+ _objc_msgSend$appTrailingStatusBarStyleAttributes
-+ _objc_msgSend$backNavigationEntry
-+ _objc_msgSend$beginCoordinatingSwitcherController:options:completion:
-+ _objc_msgSend$blocksFocusRequestsForReasons
-+ _objc_msgSend$btAddressData
-+ _objc_msgSend$captureHardwareButton
-+ _objc_msgSend$cbDeviceForAudioRoute:
-+ _objc_msgSend$contentBorderDebugColorsEnabled
-+ _objc_msgSend$contentBorderEnabled
-+ _objc_msgSend$contentBorderEnabledForCompactLayout
-+ _objc_msgSend$contentBorderEnabledForCustomLayout
-+ _objc_msgSend$contentBorderEnabledForLimitedSize
-+ _objc_msgSend$contentBorderEnabledForMinimalLayout
-+ _objc_msgSend$contentBorderEnabledForNonLimitedSize
-+ _objc_msgSend$contentBorderWidth
-+ _objc_msgSend$currentRemoteSession
-+ _objc_msgSend$dataByApplyingUpdate:keys:
-+ _objc_msgSend$defaultLifecycleConstraints
-+ _objc_msgSend$deviceType
-+ _objc_msgSend$didConsumeLayoutUpdateRequestForHostedClient
-+ _objc_msgSend$didPresentContextMenuForMainMenuView:forDirectTouchPan:
-+ _objc_msgSend$displayProfileManager
-+ _objc_msgSend$endCoordinatingSwitcherController:options:completion:
-+ _objc_msgSend$existingEntryKeys
-+ _objc_msgSend$foregroundConstraint
-+ _objc_msgSend$handleDirectTouchPanOrLongPressReleased:
-+ _objc_msgSend$handleMenuPanOrLongPressGesture:isDirectTouch:
-+ _objc_msgSend$imposesConstraint
-+ _objc_msgSend$initWithBundleIdentifiers:iconImageInfo:iconImageLoadPriority:
-+ _objc_msgSend$initWithCoordinator:displayProfileManager:windowSceneManager:startupInterfaceOrientation:
-+ _objc_msgSend$initWithDisplayBounds:
-+ _objc_msgSend$initWithHostScene:sceneUpdate:
-+ _objc_msgSend$initWithResizingSession:connection:delegate:
-+ _objc_msgSend$initWithSceneManager:displayProfileManager:windowSceneManager:startupInterfaceOrientation:
-+ _objc_msgSend$initWithSceneSpecification:parameters:
-+ _objc_msgSend$initWithUnavailabilityReasons:resizableApplication:
-+ _objc_msgSend$initWithWindowSceneManager:displayUniqueId:resizingCornerRadius:
-+ _objc_msgSend$invalidateForClient
-+ _objc_msgSend$invalidateForServer
-+ _objc_msgSend$isConstrainedByContext:
-+ _objc_msgSend$isDismissingMenuForPointerHoverOrDrag
-+ _objc_msgSend$isPresentingMenuForPointerHoverOrDrag
-+ _objc_msgSend$isStatusBarUnderlappedByAnyAppWindowControls
-+ _objc_msgSend$isTransitioningMenuForInteraction
-+ _objc_msgSend$isWallpaperEditorPresented
-+ _objc_msgSend$launchCaptureApplication:
-+ _objc_msgSend$lifecycleConstraints
-+ _objc_msgSend$managesResizingSession:
-+ _objc_msgSend$menuBarRecipientSceneHandle
-+ _objc_msgSend$needOwnershipWarning:error:
-+ _objc_msgSend$noteDownButtonPressed:
-+ _objc_msgSend$noteUpButtonPressed:
-+ _objc_msgSend$partAlphas
-+ _objc_msgSend$placementMode
-+ _objc_msgSend$preferredMinimumTopInsetDidInvalidateInteractive:
-+ _objc_msgSend$preferredSystemClipPadding
-+ _objc_msgSend$prepareForDisplayWithBounds:
-+ _objc_msgSend$preventSystemSleepAssertionName
-+ _objc_msgSend$primaryPlacement
-+ _objc_msgSend$productID
-+ _objc_msgSend$remoteAppResizingSessionDidInvalidate:
-+ _objc_msgSend$requestAuthenticationMessageForSecureNamespace:context:clientVersionedPID:completion:
-+ _objc_msgSend$resizableApplication
-+ _objc_msgSend$resizingAvailability
-+ _objc_msgSend$resizingAvailabilityOnResizableDisplays
-+ _objc_msgSend$resizingCoordinator:didUpdateAvailability:preferredSize:
-+ _objc_msgSend$resizingService
-+ _objc_msgSend$sb_isDisplayResizable
-+ _objc_msgSend$sceneSpecification
-+ _objc_msgSend$sceneUpdate
-+ _objc_msgSend$secondaryPlacement
-+ _objc_msgSend$secureNamespace
-+ _objc_msgSend$serverDidUpdateStatus:
-+ _objc_msgSend$setAlpha:forParts:
-+ _objc_msgSend$setBorderCornerRadius:
-+ _objc_msgSend$setContentBorderDebugColorsEnabled:
-+ _objc_msgSend$setContentBorderEnabled:
-+ _objc_msgSend$setContentBorderEnabledForCompactLayout:
-+ _objc_msgSend$setContentBorderEnabledForCustomLayout:
-+ _objc_msgSend$setContentBorderEnabledForLimitedSize:
-+ _objc_msgSend$setContentBorderEnabledForMinimalLayout:
-+ _objc_msgSend$setContentBorderEnabledForNonLimitedSize:
-+ _objc_msgSend$setContentBorderWidth:
-+ _objc_msgSend$setCurrentMenuBarApplicationName:
-+ _objc_msgSend$setDebugColorsEnabled:
-+ _objc_msgSend$setDeviceFoundHandler:
-+ _objc_msgSend$setDeviceLostHandler:
-+ _objc_msgSend$setDiscoveryFlags:
-+ _objc_msgSend$setDismissingMenuForPointerHoverOrDrag:
-+ _objc_msgSend$setDismissingMenuForTouchDrag:
-+ _objc_msgSend$setIsMapsOnLockScreen:
-+ _objc_msgSend$setLifecycleConstraints:
-+ _objc_msgSend$setMenuBarStatusBarFollowingAppLeadingStyle:
-+ _objc_msgSend$setPartAlphas:
-+ _objc_msgSend$setPreferredSystemClipPadding:
-+ _objc_msgSend$setPresentingMenuForPointerHoverOrDrag:
-+ _objc_msgSend$setPresentingMenuForTouchDrag:
-+ _objc_msgSend$setReleasePreventSystemSleepAssertionTimer:
-+ _objc_msgSend$setResizableDisplayUUID:initialFrame:
-+ _objc_msgSend$setSystemAuthenticationServiceMessage:
-+ _objc_msgSend$setWallpaperEditorPresented:
-+ _objc_msgSend$setWantsLayoutPassForClientUpdateEnabled:
-+ _objc_msgSend$shouldEvaluateConstraintForSceneUpdate:
-+ _objc_msgSend$showQueryIterationLabel
-+ _objc_msgSend$simulateClickActivationLaunchForBundleIdentifier:completion:
-+ _objc_msgSend$simulateLaunchFromSource:bundleIdentifier:coverSheetViewController:completion:
-+ _objc_msgSend$supportsDynamicSIMConfiguration
-+ _objc_msgSend$switcherAddedMultipleApps
-+ _objc_msgSend$switcherAddedSingleApp
-+ _objc_msgSend$switcherFocusedWindowClosed
-+ _objc_msgSend$switcherLayoutChangeRequests
-+ _objc_msgSend$switcherUpdateTopmostApp
-+ _objc_msgSend$transientOverlayOwningKeyboard
-+ _objc_msgSend$updateBackgroundGlassEffectForDraggingProgress:usingGlassEffects:
-+ _objc_msgSend$updateDisplayConfiguration:fence:
-+ _objc_msgSend$updatePreferredSize:forAssertionWithIdentifier:
-+ _objc_msgSend$userFocusRequestForScene:requestReason:completion:
-+ _objc_msgSend$wantsInitialKeyboardFocus
-+ _objc_msgSend$wantsLayoutPassForClientUpdateEnabled
 + _switcherAddedMultipleApps.onceToken
 + _switcherAddedMultipleApps.reason
 + _switcherAddedSingleApp.onceToken
@@ -1147,82 +917,6 @@ Symbols:
 - ___block_descriptor_49_e8_32s40s_e21_v16?0"UIStatusBar"8ls32l8s40l8
 - ___block_descriptor_65_e8_32s40s48bs56w_e5_v8?0lw56l8s32l8s40l8s48l8
 - ___block_descriptor_72_e8_32s_e35_v16?0"FBSMutableSceneParameters"8ls32l8
-- _objc_msgSend$_adjustPresentedMenuForPointerOverViewInContainer:forPanGesture:
-- _objc_msgSend$_calculateResolvedSize:
-- _objc_msgSend$_constraintHelperForWindowSceneManager:sceneHandle:
-- _objc_msgSend$_handleMenuPanGesture:
-- _objc_msgSend$_hasShownSiriHeaderViewControllerDuringCurrentCarDNDSession
-- _objc_msgSend$_invalidateOrDeferPreferredMinimumTopInset
-- _objc_msgSend$_invalidatePreferredMinimumTopInset
-- _objc_msgSend$_leadingContentViewProviderForVolume
-- _objc_msgSend$_performMainMenuCommandInvocationRequestForCommand:withAuthenticationMessage:
-- _objc_msgSend$_presentMenuViewNonInteractively:forPointerHover:
-- _objc_msgSend$_requestSecurePasteAuthenticationMessageWithContext:forClientVersionedPID:completionBlock:
-- _objc_msgSend$_restoreSceneToSwitcher
-- _objc_msgSend$_sceneHandleForAppResize
-- _objc_msgSend$_setDebugUIEnabled:
-- _objc_msgSend$_setHasShownSiriHeaderViewControllerDuringCurrentCarDNDSession:
-- _objc_msgSend$_setLastInteractedResizableSceneHandle:provider:
-- _objc_msgSend$_setRealStatusBarHiddenIfApplicable:
-- _objc_msgSend$_setResizingSession:
-- _objc_msgSend$_showShieldWindows:
-- _objc_msgSend$_stopObservingLockEvents:
-- _objc_msgSend$_takeSceneFromSwitcher
-- _objc_msgSend$_updateClockMorphForProgress:forPresentationValue:
-- _objc_msgSend$_updateCompanionScenesForInterestedModes:registeredPresentations:foreground:
-- _objc_msgSend$_updateSpaceConstrainedAlpha
-- _objc_msgSend$_warmUpIconsForAppLayout:
-- _objc_msgSend$addWindowScene:
-- _objc_msgSend$adjustPresentedMenuForPointerOverViewInContainer:
-- _objc_msgSend$appSwitcherHeaderIconImageCache
-- _objc_msgSend$cacheImageForIcon:compatibleWithTraitCollection:options:completionHandler:
-- _objc_msgSend$contentColor
-- _objc_msgSend$contentProvider
-- _objc_msgSend$didPresentContextMenuForMainMenuView:
-- _objc_msgSend$encodeCGRect:forKey:
-- _objc_msgSend$encodeDouble:forKey:
-- _objc_msgSend$hostingWindowScene
-- _objc_msgSend$inEarDetectEnabled
-- _objc_msgSend$inEarStatusPrimary:secondary:
-- _objc_msgSend$initWithCoordinator:displayProfileManager:
-- _objc_msgSend$initWithResizingSession:connection:
-- _objc_msgSend$initWithResizingSession:initialRegionOfInterestFrame:updateRegionOfInterestOnTransactionBegin:showShieldUI:
-- _objc_msgSend$initWithResizingSession:updateRegionOfInterestOnTransactionBegin:
-- _objc_msgSend$initWithSceneManager:windowSceneManager:displayProfileManager:
-- _objc_msgSend$initWithWindowSceneManager:displayUniqueId:resizingCornerRadius:windowScenes:
-- _objc_msgSend$isAppleAudioDevice
-- _objc_msgSend$isDismissingMenuForPointerHover
-- _objc_msgSend$isOverlayDisappearing
-- _objc_msgSend$isPresentingMenuForPointerHover
-- _objc_msgSend$isTransitioningMenuForPointerInteraction
-- _objc_msgSend$menuBarRecipientScene
-- _objc_msgSend$moveLiveOverlayContentViewControllerForSceneHandle:toViewController:
-- _objc_msgSend$moveLiveOverlayContentViewControllerFromAppHostingViewController:
-- _objc_msgSend$moveLiveOverlayContentViewControllerToResizableAppHostingViewController:
-- _objc_msgSend$needsAuthenticationMessage
-- _objc_msgSend$removeWindowScene:
-- _objc_msgSend$resizingCoordinator:didUpdateResizability:preferredSize:
-- _objc_msgSend$resizingSession
-- _objc_msgSend$resizingSession:didAddWindowScene:
-- _objc_msgSend$resizingSession:didRemoveWindowScene:
-- _objc_msgSend$restoreLiveOverlayContentViewControllerToSwitcherForSceneHandle:
-- _objc_msgSend$setAmount:
-- _objc_msgSend$setAngle:
-- _objc_msgSend$setAuthenticationMessage:
-- _objc_msgSend$setContentDistribution:
-- _objc_msgSend$setContentSpacing:
-- _objc_msgSend$setDismissingMenuForPointerHover:
-- _objc_msgSend$setOverlayDisappearing:
-- _objc_msgSend$setPresentingMenuForPointerHover:
-- _objc_msgSend$setResizingSession:
-- _objc_msgSend$setShowSiriHeaderViewController:
-- _objc_msgSend$setSpread:
-- _objc_msgSend$shouldShowCarDNDUseSiriHeaderViewController
-- _objc_msgSend$showRegionOfInterest
-- _objc_msgSend$statusBarStyleAttributesForScene:
-- _objc_msgSend$updateDisplayConfiguration:
-- _objc_msgSend$updateMenuBar
-- _objc_msgSend$updateRegionOfInterestOnTransactionBeginForResizingService
 CStrings:
 + "%02X:%02X:%02X:%02X:%02X:%02X"
 + "%@ is not a known capture application"
@@ -1422,5 +1116,4 @@ CStrings:
 - "\xf0\xf0\xb1$"
 - "\xf0\xf0\xe1"
 - "\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xb1"
-
 ```

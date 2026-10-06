@@ -2,94 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/CoreCDPUI.framework/CoreCDPUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8bf3c` | `0x8c030` | **`+0xf4`** |
+| `__AUTH.__data` | `0x1620` | `0x1648` | **`+0x28`** |
+| `__TEXT.__oslogstring` | `0x4a82` | `0x4aa2` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0xc14` | `0xc28` | **`+0x14`** |
+| `__DATA.__data` | `0x2928` | `0x2918` | **`-0x10`** |
+| `__TEXT.__cstring` | `0x5d32` | `0x5d42` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x4a6c` | `0x4a7c` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x2158` | `0x2168` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3380` | `0x3388` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x8bf3c
--  __TEXT.__objc_methlist: 0x4a6c
-+  __TEXT.__text: 0x8c030
-+  __TEXT.__objc_methlist: 0x4a7c
-   __TEXT.__const: 0x4824
--  __TEXT.__cstring: 0x5d32
--  __TEXT.__oslogstring: 0x4a82
--  __TEXT.__gcc_except_tab: 0xc14
-+  __TEXT.__cstring: 0x5d42
-+  __TEXT.__oslogstring: 0x4aa2
-+  __TEXT.__gcc_except_tab: 0xc28
-   __TEXT.__dlopen_cstrs: 0x2e8
-   __TEXT.__constg_swiftt: 0x1b5c
-   __TEXT.__swift5_typeref: 0x9b38
+-442.0.0.0.0
++444.0.0.0.0
 
-   __TEXT.__swift_as_entry: 0x14
-   __TEXT.__swift_as_ret: 0x14
-   __TEXT.__swift_as_cont: 0xc
--  __TEXT.__unwind_info: 0x2158
-+  __TEXT.__unwind_info: 0x2168
-   __TEXT.__eh_frame: 0x420
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist2: 0x10
-   __DATA_CONST.__objc_protolist: 0x1d0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3380
-+  __DATA_CONST.__objc_selrefs: 0x3388
-   __DATA_CONST.__objc_protorefs: 0x80
-   __DATA_CONST.__objc_superrefs: 0x148
-   __DATA_CONST.__got: 0xe20
-
-   __AUTH_CONST.__objc_const: 0x11d90
-   __AUTH_CONST.__auth_got: 0x1288
-   __AUTH.__objc_data: 0x25b8
--  __AUTH.__data: 0x1620
-+  __AUTH.__data: 0x1648
-   __DATA.__objc_ivar: 0x3b4
--  __DATA.__data: 0x2928
-+  __DATA.__data: 0x2918
-   __DATA.__objc_stublist: 0x10
-   __DATA.__bss: 0x2820
-   __DATA.__common: 0x60
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3322
--  Symbols:   7477
--  CStrings:  1281
+-  Symbols:   3728
+-  CStrings:  936
 +  Functions: 3323
-+  Symbols:   7481
-+  CStrings:  1282
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_catlist2 : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__objc_ivar : content changed
-~ __DATA.__objc_stublist : content changed
-~ __DATA.__common : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   3729
++  CStrings:  937
 Symbols:
 + -[CDPUIController _executeCustodianRecoveryEscapeActionWithSupportedEscapeOfferMask:replacingViewController:]
 + -[CDPUIController _startAAUICustodianRecoveryFlowWithSupportedEscapeOfferMask:replacingViewController:]
@@ -121,9 +60,6 @@ Symbols:
 + GCC_except_table310
 + GCC_except_table88
 + ___103-[CDPUIController _startAAUICustodianRecoveryFlowWithSupportedEscapeOfferMask:replacingViewController:]_block_invoke
-+ _objc_msgSend$_executeCustodianRecoveryEscapeActionWithSupportedEscapeOfferMask:replacingViewController:
-+ _objc_msgSend$_startAAUICustodianRecoveryFlowWithSupportedEscapeOfferMask:replacingViewController:
-+ _objc_msgSend$startFlowReplacing:completion:
 - -[CDPUIController _startAAUICustodianRecoveryFlowWithSupportedEscapeOfferMask:]
 - GCC_except_table165
 - GCC_except_table169
@@ -153,11 +89,8 @@ Symbols:
 - GCC_except_table309
 - ___44-[CDPUIController performCustodianRecovery:]_block_invoke_3
 - ___79-[CDPUIController _startAAUICustodianRecoveryFlowWithSupportedEscapeOfferMask:]_block_invoke
-- _objc_msgSend$_startAAUICustodianRecoveryFlowWithSupportedEscapeOfferMask:
-- _objc_msgSend$startFlowWithCompletion:
 CStrings:
 + "-[CDPUIController _executeCustodianRecoveryEscapeActionWithSupportedEscapeOfferMask:replacingViewController:]"
 + "User elected to start Custodian Flow"
 - "-[CDPUIController _executeCustodianRecoveryEscapeActionWithSupportedEscapeOfferMask:]"
-
 ```

@@ -2,28 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/FindMyCore.framework/FindMyCore`
 
-```diff
+### Section Size Changes
 
- 470.30.6.14.34
--  __TEXT.__text: 0xb036c
-+  __TEXT.__text: 0xb035c
-   __TEXT.__objc_methlist: 0x2a4
-   __TEXT.__swift5_typeref: 0x2c4d
-   __TEXT.__const: 0xb53c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb036c` | `0xb035c` | **`-0x10`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_262061270 -> sub_262d69270 : 992 -> 984
-~ sub_262061ce8 -> sub_262d69ce0 : 992 -> 984
-~ sub_262062398 -> sub_262d6a388 : 1132 -> 1176
-~ sub_262063d68 -> sub_262d6bd84 : 436 -> 440
-~ sub_262064168 -> sub_262d6c188 : 360 -> 364
-~ sub_262077054 -> sub_262d7f078 : 1064 -> 1076
-~ sub_26208a0c8 -> sub_262d920f8 : 948 -> 936
-~ sub_2620a12ec -> sub_262da9310 : 1324 -> 1312
-~ sub_2620a556c -> sub_262dad584 : 948 -> 936
-~ sub_2620b336c -> sub_262dbb378 : 1332 -> 1336
-~ sub_2620b38a0 -> sub_262dbb8b0 : 536 -> 540
-~ sub_2620be850 -> sub_262dc6864 : 664 -> 660
-~ sub_2620ca21c -> sub_262dd222c : 1760 -> 1752
-~ sub_2620e1fb0 -> sub_262de9fb8 : 808 -> 812
-~ sub_2620f7814 -> sub_262dff820 : 4824 -> 4796
+~ sub_261f43270 -> sub_262c45270 : 992 -> 984
+~ sub_261f43ce8 -> sub_262c45ce0 : 992 -> 984
+~ sub_261f44398 -> sub_262c46388 : 1132 -> 1176
+~ sub_261f45d68 -> sub_262c47d84 : 436 -> 440
+~ sub_261f46168 -> sub_262c48188 : 360 -> 364
+~ sub_261f59054 -> sub_262c5b078 : 1064 -> 1076
+~ sub_261f6c0c8 -> sub_262c6e0f8 : 948 -> 936
+~ sub_261f832ec -> sub_262c85310 : 1324 -> 1312
+~ sub_261f8756c -> sub_262c89584 : 948 -> 936
+~ sub_261f9536c -> sub_262c97378 : 1332 -> 1336
+~ sub_261f958a0 -> sub_262c978b0 : 536 -> 540
+~ sub_261fa0850 -> sub_262ca2864 : 664 -> 660
+~ sub_261fac21c -> sub_262cae22c : 1760 -> 1752
+~ sub_261fc3fb0 -> sub_262cc5fb8 : 808 -> 812
+~ sub_261fd9814 -> sub_262cdb820 : 4824 -> 4796
 ```

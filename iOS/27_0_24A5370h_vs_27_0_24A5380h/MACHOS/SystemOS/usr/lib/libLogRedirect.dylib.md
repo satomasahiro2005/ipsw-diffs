@@ -2,20 +2,26 @@
 
 > `/usr/lib/libLogRedirect.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x24ac` | `0x24b0` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__AUTH_CONST.__interpose`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__init_offsets`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x24ac
-+  __TEXT.__text: 0x24b0
-   __TEXT.__auth_stubs: 0x290
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__const: 0x60
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__interpose : content changed
+-64578.53.1.0.0
++64578.53.2.0.0
 Functions:
 ~ _resetDyldInsertLibraries : 424 -> 428
-
 ```

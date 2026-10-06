@@ -2,18 +2,14 @@
 
 > `/usr/libexec/timed`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1796c` | `0x17968` | **`-0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__const`
 - `__TEXT.__objc_methlist`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-
-```diff
-
- 340.0.14.0.0
--  __TEXT.__text: 0x1796c
-+  __TEXT.__text: 0x17968
-   __TEXT.__auth_stubs: 0xba0
-   __TEXT.__objc_stubs: 0x2700
-   __TEXT.__objc_methlist: 0xd7c
-```

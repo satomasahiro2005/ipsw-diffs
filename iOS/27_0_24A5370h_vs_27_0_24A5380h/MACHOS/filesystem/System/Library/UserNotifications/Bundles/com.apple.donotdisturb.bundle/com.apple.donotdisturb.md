@@ -2,13 +2,16 @@
 
 > `/System/Library/UserNotifications/Bundles/com.apple.donotdisturb.bundle/com.apple.donotdisturb`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x50` | `0x48` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__text: 0x0
--  __TEXT.__const: 0x50
-+  __TEXT.__const: 0x48
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /usr/lib/libSystem.B.dylib
-   Functions: 0
-
+-502.0.100.0.0
++506.0.0.0.0
 ```

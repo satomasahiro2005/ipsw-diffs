@@ -2,108 +2,38 @@
 
 > `/System/Library/Frameworks/EventKit.framework/EventKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x2f30` | `0x34d0` | **`+0x5a0`** |
+| `__DATA_DIRTY.__objc_data` | `0x2170` | `0x1bd0` | **`-0x5a0`** |
+| `__TEXT.__text` | `0x1a1160` | `0x1a1510` | **`+0x3b0`** |
+| `__DATA_CONST.__got` | `0x1978` | `0x1a08` | **`+0x90`** |
+| `__TEXT.__oslogstring` | `0xef48` | `0xef78` | **`+0x30`** |
+| `__DATA.__data` | `0x2850` | `0x2830` | **`-0x20`** |
+| `__TEXT.__objc_methlist` | `0x15a4c` | `0x15a6c` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0xae40` | `0xae58` | **`+0x18`** |
+| `__TEXT.__const` | `0x4820` | `0x4810` | **`-0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x3918` | `0x3928` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x6720` | `0x6730` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0x194c` | `0x1942` | **`-0xa`** |
+| `__AUTH_CONST.__objc_const` | `0x18540` | `0x18548` | **`+0x8`** |
+| `__DATA_DIRTY.__bss` | `0x580` | `0x588` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1a1160
--  __TEXT.__objc_methlist: 0x15a4c
-+  __TEXT.__text: 0x1a1510
-+  __TEXT.__objc_methlist: 0x15a6c
-   __TEXT.__cstring: 0xbddf
--  __TEXT.__const: 0x4820
--  __TEXT.__oslogstring: 0xef48
--  __TEXT.__gcc_except_tab: 0x3918
-+  __TEXT.__const: 0x4810
-+  __TEXT.__oslogstring: 0xef78
-+  __TEXT.__gcc_except_tab: 0x3928
-   __TEXT.__dlopen_cstrs: 0x400
-   __TEXT.__ustring: 0x1a0
--  __TEXT.__swift5_typeref: 0x194c
-+  __TEXT.__swift5_typeref: 0x1942
-   __TEXT.__swift5_reflstr: 0x1261
-   __TEXT.__swift5_assocty: 0x210
-   __TEXT.__constg_swiftt: 0x1300
+-1968.0.0.0.0
++1970.0.0.0.0
 
-   __TEXT.__swift_as_ret: 0xe8
-   __TEXT.__swift_as_cont: 0x1a4
-   __TEXT.__swift5_mpenum: 0x60
--  __TEXT.__unwind_info: 0x6720
-+  __TEXT.__unwind_info: 0x6730
-   __TEXT.__eh_frame: 0x25a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0xa0
-   __DATA_CONST.__objc_protolist: 0x250
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xae40
-+  __DATA_CONST.__objc_selrefs: 0xae58
-   __DATA_CONST.__objc_protorefs: 0x70
-   __DATA_CONST.__objc_superrefs: 0x530
-   __DATA_CONST.__objc_arraydata: 0x5d8
--  __DATA_CONST.__got: 0x1978
-+  __DATA_CONST.__got: 0x1a08
-   __AUTH_CONST.__const: 0x4470
-   __AUTH_CONST.__cfstring: 0x9ec0
--  __AUTH_CONST.__objc_const: 0x18540
-+  __AUTH_CONST.__objc_const: 0x18548
-   __AUTH_CONST.__objc_intobj: 0x6d8
-   __AUTH_CONST.__objc_arrayobj: 0x1f8
-   __AUTH_CONST.__objc_dictobj: 0x1b8
-   __AUTH_CONST.__objc_doubleobj: 0x100
-   __AUTH_CONST.__auth_got: 0x1400
--  __AUTH.__objc_data: 0x2f30
-+  __AUTH.__objc_data: 0x34d0
-   __AUTH.__data: 0xf08
-   __DATA.__objc_ivar: 0xd64
--  __DATA.__data: 0x2850
-+  __DATA.__data: 0x2830
-   __DATA.__bss: 0x4770
-   __DATA.__common: 0x68
--  __DATA_DIRTY.__objc_data: 0x2170
-+  __DATA_DIRTY.__objc_data: 0x1bd0
-   __DATA_DIRTY.__data: 0x8
--  __DATA_DIRTY.__bss: 0x580
-+  __DATA_DIRTY.__bss: 0x588
-   __DATA_DIRTY.__common: 0x30
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10661
--  Symbols:   28216
--  CStrings:  3929
+-  Symbols:   13226
+-  CStrings:  2665
 +  Functions: 10665
-+  Symbols:   28227
-+  CStrings:  3930
- 
-Sections:
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH.__data : content changed
++  Symbols:   13229
++  CStrings:  2666
 Symbols:
 + -[EKEventStore isMagicComposeRestrictedByMDM]
 + -[EKLocationSearchModel removeRecentSearchResult:]
@@ -178,9 +108,6 @@ Symbols:
 + GCC_except_table90
 + GCC_except_table99
 + ___45-[EKEventStore isMagicComposeRestrictedByMDM]_block_invoke
-+ _objc_msgSend$CADInternalGetMagicComposeRestrictedByMDM:
-+ _objc_msgSend$proposedEndDate
-+ _objc_msgSend$removeRecentLocation:
 - GCC_except_table109
 - GCC_except_table117
 - GCC_except_table125
@@ -253,5 +180,4 @@ Symbols:
 - _symbolic ______pSg 8EventKit20IntelligentSchedulerC20ScheduleInfoProviderP
 CStrings:
 + "Error fetching Magic Compose MDM restriction: %d"
-
 ```

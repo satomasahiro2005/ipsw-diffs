@@ -2,66 +2,38 @@
 
 > `/System/Library/AccessibilityBundles/Maps.axbundle/Maps`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x178a0` | `0x157a0` | **`-0x2100`** |
+| `__AUTH_CONST.__objc_const` | `0x9470` | `0x8270` | **`-0x1200`** |
+| `__AUTH_CONST.__cfstring` | `0x6c80` | `0x63c0` | **`-0x8c0`** |
+| `__TEXT.__cstring` | `0x4ff7` | `0x48f7` | **`-0x700`** |
+| `__AUTH.__objc_data` | `0x6e0` | `0x140` | **`-0x5a0`** |
+| `__TEXT.__objc_methlist` | `0x2d08` | `0x27a0` | **`-0x568`** |
+| `__DATA_DIRTY.__objc_data` | `0x4b50` | `0x46f0` | **`-0x460`** |
+| `__DATA_CONST.__objc_classlist` | `0x838` | `0x738` | **`-0x100`** |
+| `__TEXT.__unwind_info` | `0x978` | `0x890` | **`-0xe8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xaa8` | `0x9f8` | **`-0xb0`** |
+| `__DATA_CONST.__const` | `0x4e8` | `0x478` | **`-0x70`** |
+| `__DATA_CONST.__objc_superrefs` | `0x2a8` | `0x260` | **`-0x48`** |
+| `__AUTH_CONST.__const` | `0x4a0` | `0x460` | **`-0x40`** |
+| `__DATA_CONST.__got` | `0x240` | `0x238` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x178a0
--  __TEXT.__objc_methlist: 0x2d08
-+  __TEXT.__text: 0x157a0
-+  __TEXT.__objc_methlist: 0x27a0
-   __TEXT.__const: 0xc8
-   __TEXT.__gcc_except_tab: 0x308
--  __TEXT.__cstring: 0x4ff7
-+  __TEXT.__cstring: 0x48f7
-   __TEXT.__oslogstring: 0x14e
-   __TEXT.__ustring: 0x4
--  __TEXT.__unwind_info: 0x978
-+  __TEXT.__unwind_info: 0x890
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4e8
--  __DATA_CONST.__objc_classlist: 0x838
-+  __DATA_CONST.__const: 0x478
-+  __DATA_CONST.__objc_classlist: 0x738
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xaa8
--  __DATA_CONST.__objc_superrefs: 0x2a8
--  __DATA_CONST.__got: 0x240
--  __AUTH_CONST.__const: 0x4a0
--  __AUTH_CONST.__cfstring: 0x6c80
--  __AUTH_CONST.__objc_const: 0x9470
-+  __DATA_CONST.__objc_selrefs: 0x9f8
-+  __DATA_CONST.__objc_superrefs: 0x260
-+  __DATA_CONST.__got: 0x238
-+  __AUTH_CONST.__const: 0x460
-+  __AUTH_CONST.__cfstring: 0x63c0
-+  __AUTH_CONST.__objc_const: 0x8270
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x6e0
-+  __AUTH.__objc_data: 0x140
-   __DATA.__objc_ivar: 0x4
-   __DATA.__bss: 0x90
--  __DATA_DIRTY.__objc_data: 0x4b50
-+  __DATA_DIRTY.__objc_data: 0x46f0
-   __DATA_DIRTY.__bss: 0x48
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+-3039.1.0.0.0
++3042.0.0.0.0
 
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 826
--  Symbols:   3489
--  CStrings:  1794
+-  Symbols:   2390
+-  CStrings:  928
 +  Functions: 731
-+  Symbols:   3121
-+  CStrings:  1653
- 
-Sections:
-~ __DATA_CONST.__objc_catlist : content changed
++  Symbols:   2129
++  CStrings:  857
 Symbols:
 + GCC_except_table147
 + GCC_except_table171
@@ -353,16 +325,6 @@ Symbols:
 - ___block_descriptor_40_e12_B24?08^B16lu32l8
 - ___block_descriptor_40_e8_32s_e14_"NSArray"8?0ls32l8
 - ___block_descriptor_48_e8_32s40s_e5_B8?0ls32l8s40l8
-- _objc_msgSend$_accessibilityFindViewAncestor:startWithSelf:
-- _objc_msgSend$_accessibilityTextForAudioType:
-- _objc_msgSend$_animateContentUpdate
-- _objc_msgSend$_axAnnotateButtons
-- _objc_msgSend$_selectAudioType:
-- _objc_msgSend$_setAccessibilityElementsHiddenBlock:
-- _objc_msgSend$_setAccessibilityHintBlock:
-- _objc_msgSend$row
-- _objc_msgSend$setAccessibilityElementsBlock:
-- _objc_msgSend$tag
 - _objc_retainAutoreleaseReturnValue
 - _objc_retain_x23
 - _objc_retain_x3
@@ -438,5 +400,4 @@ CStrings:
 - "presentRoutePlanningViewType:"
 - "showDropDownIfNeeded:"
 - "viewWillAppear:"
-
 ```

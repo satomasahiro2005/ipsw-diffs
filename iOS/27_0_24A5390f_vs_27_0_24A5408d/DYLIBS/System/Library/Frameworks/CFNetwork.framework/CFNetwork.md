@@ -2,58 +2,32 @@
 
 > `/System/Library/Frameworks/CFNetwork.framework/CFNetwork`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2563ec` | `0x2565e4` | **`+0x1f8`** |
+| `__AUTH_CONST.__cfstring` | `0xeac0` | `0xeb60` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0x1889a` | `0x18933` | **`+0x99`** |
+| `__AUTH_CONST.__objc_const` | `0x13e40` | `0x13e70` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x9c74` | `0x9c8c` | **`+0x18`** |
+| `__TEXT.__const` | `0xc9c1c` | `0xc9c2c` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0xb880` | `0xb888` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x1360` | `0x1364` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3892.100.1.0.0
--  __TEXT.__text: 0x2563ec
 +3896.100.1.2.1
-+  __TEXT.__text: 0x2565e4
-   __TEXT.__lazy_helpers: 0x2808
--  __TEXT.__objc_methlist: 0x9c74
--  __TEXT.__const: 0xc9c1c
--  __TEXT.__cstring: 0x1889a
-+  __TEXT.__objc_methlist: 0x9c8c
-+  __TEXT.__const: 0xc9c2c
-+  __TEXT.__cstring: 0x18933
-   __TEXT.__gcc_except_tab: 0x13ed8
-   __TEXT.__oslogstring: 0xf9c9
-   __TEXT.__dof_CFNetwork: 0xf3b
--  __TEXT.__unwind_info: 0xb880
-+  __TEXT.__unwind_info: 0xb888
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_arraydata: 0x68
-   __DATA_CONST.__got: 0xaa8
-   __AUTH_CONST.__const: 0x13418
--  __AUTH_CONST.__cfstring: 0xeac0
--  __AUTH_CONST.__objc_const: 0x13e40
-+  __AUTH_CONST.__cfstring: 0xeb60
-+  __AUTH_CONST.__objc_const: 0x13e70
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__lazy_load_got: 0x378
-   __AUTH_CONST.__objc_intobj: 0x138
-
-   __AUTH.__objc_data: 0x16d0
-   __AUTH.__data: 0x2f8
-   __AUTH.__cfstring_CFN: 0x7cb0
--  __DATA.__objc_ivar: 0x1360
-+  __DATA.__objc_ivar: 0x1364
-   __DATA.__data: 0xe1c
-   __DATA.__crash_info: 0x148
-   __DATA.__bss: 0xd50
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 12680
--  Symbols:   23330
+-  Symbols:   21447
 -  CStrings:  4748
 +  Functions: 12682
-+  Symbols:   23333
++  Symbols:   21450
 +  CStrings:  4753
- 
 Symbols:
 + -[NSURLSessionTask _atsContext]
 + -[NSURLSessionTask set_atsContext:]

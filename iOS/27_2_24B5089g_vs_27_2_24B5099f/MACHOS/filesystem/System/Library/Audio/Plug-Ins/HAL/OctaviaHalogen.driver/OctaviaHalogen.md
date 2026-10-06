@@ -2,55 +2,40 @@
 
 > `/System/Library/Audio/Plug-Ins/HAL/OctaviaHalogen.driver/OctaviaHalogen`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__auth_ptr`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2bee0` | `0x13f50` | **`-0x17f90`** |
+| `__TEXT.__oslogstring` | `0x4992` | `0xb1e` | **`-0x3e74`** |
+| `__TEXT.__cstring` | `0x2abf` | `0xf6f` | **`-0x1b50`** |
+| `__DATA_CONST.__cfstring` | `0xc80` | `0xb40` | **`-0x140`** |
+| `__DATA.__common` | `0xb0` | `—` | **`-0xb0`** |
+| `__TEXT.__unwind_info` | `0x4a0` | `0x400` | **`-0xa0`** |
+| `__TEXT.__auth_stubs` | `0x12a0` | `0x1240` | **`-0x60`** |
+| `__DATA_CONST.__auth_got` | `0x958` | `0x928` | **`-0x30`** |
+| `__TEXT.__const` | `0x288` | `0x260` | **`-0x28`** |
+| `__DATA_CONST.__got` | `0x480` | `0x478` | **`-0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__const`
+
+### Other Changes
 
 ```diff
 
 -3385.8.1.11.1
--  __TEXT.__text: 0x2b528
--  __TEXT.__auth_stubs: 0x12a0
 +3385.12.1.0.0
-+  __TEXT.__text: 0x13724
-+  __TEXT.__auth_stubs: 0x1240
-   __TEXT.__objc_stubs: 0x1c0
--  __TEXT.__const: 0x288
--  __TEXT.__cstring: 0x2abf
--  __TEXT.__oslogstring: 0x4992
-+  __TEXT.__const: 0x260
-+  __TEXT.__cstring: 0xf6f
-+  __TEXT.__oslogstring: 0xb1e
-   __TEXT.__objc_methname: 0xb6
--  __TEXT.__unwind_info: 0x6d8
-+  __TEXT.__unwind_info: 0x560
-   __DATA_CONST.__const: 0x1610
--  __DATA_CONST.__cfstring: 0xc80
-+  __DATA_CONST.__cfstring: 0xb40
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x958
--  __DATA_CONST.__got: 0x480
-+  __DATA_CONST.__auth_got: 0x928
-+  __DATA_CONST.__got: 0x478
-   __DATA_CONST.__auth_ptr: 0x38
-   __DATA.__objc_selrefs: 0x70
--  __DATA.__common: 0xb0
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CoreAudio.framework/CoreAudio
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/liblockdown.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 605
 -  Symbols:   460
 -  CStrings:  680
 +  Functions: 357
 +  Symbols:   453
 +  CStrings:  218
- 
 Symbols:
 + _FigSignalErrorAtGM
 + _fig_log_get_emitter

@@ -2,19 +2,25 @@
 
 > `/usr/libexec/seputil`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x162c8` | `0x162cc` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x162c8
-+  __TEXT.__text: 0x162cc
-   __TEXT.__auth_stubs: 0xa90
-   __TEXT.__cstring: 0x65af
-   __TEXT.__const: 0xd14
-Sections:
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA.__data : content changed
+-927.0.0.0.0
++928.0.0.0.0
 Functions:
 ~ sub_100001c54 : 9596 -> 9588
 ~ sub_10000446c -> sub_100004464 : 276 -> 268
@@ -23,5 +29,4 @@ Functions:
 ~ sub_10000c85c -> sub_10000c838 : 216 -> 236
 ~ sub_100010830 -> sub_100010820 : 340 -> 352
 ~ sub_100014ad0 -> sub_100014acc : 1464 -> 1472
-
 ```

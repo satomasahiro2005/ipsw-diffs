@@ -2,53 +2,33 @@
 
 > `/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa2dd0` | `0xa3474` | **`+0x6a4`** |
+| `__TEXT.__oslogstring` | `0x5630` | `0x58c8` | **`+0x298`** |
+| `__TEXT.__cstring` | `0xbe08` | `0xbe60` | **`+0x58`** |
+| `__DATA_CONST.__const` | `0x2ce8` | `0x2d30` | **`+0x48`** |
+| `__AUTH_CONST.__const` | `0x1e58` | `0x1e98` | **`+0x40`** |
+| `__DATA.__bss` | `0x4b8` | `0x4e0` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x75c0` | `0x75e0` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x22a0` | `0x22b8` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x10b8` | `0x10c0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -100288.0.9.0.0
--  __TEXT.__text: 0xa15d4
 +100288.40.8.0.1
-+  __TEXT.__text: 0xa1c78
-   __TEXT.__objc_methlist: 0x150
-   __TEXT.__const: 0x104bc
--  __TEXT.__oslogstring: 0x5630
--  __TEXT.__cstring: 0xbe08
--  __TEXT.__unwind_info: 0x30d0
-+  __TEXT.__oslogstring: 0x58c8
-+  __TEXT.__cstring: 0xbe60
-+  __TEXT.__unwind_info: 0x30f0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2ce8
-+  __DATA_CONST.__const: 0x2d30
-   __DATA_CONST.__objc_classlist: 0x38
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x40
-   __DATA_CONST.__objc_superrefs: 0x38
-   __DATA_CONST.__got: 0x1e0
--  __AUTH_CONST.__const: 0x1e58
--  __AUTH_CONST.__cfstring: 0x75c0
-+  __AUTH_CONST.__const: 0x1e98
-+  __AUTH_CONST.__cfstring: 0x75e0
-   __AUTH_CONST.__objc_const: 0x508
--  __AUTH_CONST.__auth_got: 0x10b8
-+  __AUTH_CONST.__auth_got: 0x10c0
-   __AUTH.__objc_data: 0x190
-   __AUTH.__data: 0x78
-   __DATA.__objc_ivar: 0x1c
 
-   - /usr/lib/libenergytrace.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 3575
--  Symbols:   3963
+-  Symbols:   3960
 -  CStrings:  2587
 +  Functions: 3586
-+  Symbols:   3972
++  Symbols:   3969
 +  CStrings:  2596
- 
 Symbols:
 + __IOHIDServiceGetTCCService
 + ___IOHIDEventSystemLoadSecurity.onceToken

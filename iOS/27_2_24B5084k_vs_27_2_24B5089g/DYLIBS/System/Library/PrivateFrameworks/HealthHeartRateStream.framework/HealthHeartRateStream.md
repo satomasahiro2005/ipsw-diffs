@@ -2,95 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/HealthHeartRateStream.framework/HealthHeartRateStream`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5eb14` | `0x60ddc` | **`+0x22c8`** |
+| `__DATA_DIRTY.__data` | `—` | `0xee0` | **`+0xee0`** |
+| `__AUTH.__data` | `0x1c18` | `0x1188` | **`-0xa90`** |
+| `__DATA_DIRTY.__objc_data` | `—` | `0x5f0` | **`+0x5f0`** |
+| `__AUTH.__objc_data` | `0x898` | `0x2b8` | **`-0x5e0`** |
+| `__DATA.__data` | `0x12d8` | `0xee8` | **`-0x3f0`** |
+| `__DATA_DIRTY.__bss` | `—` | `0x380` | **`+0x380`** |
+| `__DATA.__bss` | `0x2430` | `0x2190` | **`-0x2a0`** |
+| `__TEXT.__oslogstring` | `0x2084` | `0x2324` | **`+0x2a0`** |
+| `__AUTH_CONST.__const` | `0x3500` | `0x3690` | **`+0x190`** |
+| `__TEXT.__eh_frame` | `0x2504` | `0x263c` | **`+0x138`** |
+| `__TEXT.__cstring` | `0xaa2` | `0xb22` | **`+0x80`** |
+| `__TEXT.__const` | `0x3850` | `0x38c0` | **`+0x70`** |
+| `__TEXT.__swift5_typeref` | `0x1262` | `0x12ca` | **`+0x68`** |
+| `__TEXT.__swift5_fieldmd` | `0x15b0` | `0x1614` | **`+0x64`** |
+| `__AUTH_CONST.__objc_const` | `0x2648` | `0x26a8` | **`+0x60`** |
+| `__TEXT.__swift5_capture` | `0x720` | `0x770` | **`+0x50`** |
+| `__TEXT.__swift5_reflstr` | `0x150a` | `0x154a` | **`+0x40`** |
+| `__DATA.__common` | `0x50` | `0x18` | **`-0x38`** |
+| `__DATA_DIRTY.__common` | `—` | `0x38` | **`+0x38`** |
+| `__TEXT.__constg_swiftt` | `0x19c0` | `0x19f4` | **`+0x34`** |
+| `__TEXT.__unwind_info` | `0x1b68` | `0x1b98` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0xa68` | `0xa78` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x2d0` | `0x2e0` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x338` | `0x340` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x330` | `0x338` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x1d8` | `0x1e0` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x174` | `0x178` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.36.2.7
--  __TEXT.__text: 0x5aff0
 +7027.1.45.2.4
-+  __TEXT.__text: 0x5d27c
-   __TEXT.__objc_methlist: 0x36c
--  __TEXT.__const: 0x3850
--  __TEXT.__constg_swiftt: 0x19c0
--  __TEXT.__swift5_typeref: 0x1262
--  __TEXT.__swift5_reflstr: 0x150a
--  __TEXT.__swift5_fieldmd: 0x15b0
-+  __TEXT.__const: 0x38c0
-+  __TEXT.__constg_swiftt: 0x19f4
-+  __TEXT.__swift5_typeref: 0x12ca
-+  __TEXT.__swift5_reflstr: 0x154a
-+  __TEXT.__swift5_fieldmd: 0x1614
-   __TEXT.__swift5_builtin: 0x50
--  __TEXT.__oslogstring: 0x2084
--  __TEXT.__swift5_capture: 0x720
--  __TEXT.__cstring: 0xaa2
--  __TEXT.__swift5_proto: 0x1d8
--  __TEXT.__swift5_types: 0x174
-+  __TEXT.__oslogstring: 0x2324
-+  __TEXT.__swift5_capture: 0x770
-+  __TEXT.__cstring: 0xb22
-+  __TEXT.__swift5_proto: 0x1e0
-+  __TEXT.__swift5_types: 0x178
-   __TEXT.__swift5_protos: 0x6c
-   __TEXT.__swift5_assocty: 0xc0
-   __TEXT.__swift_as_entry: 0x114
-   __TEXT.__swift_as_ret: 0x104
-   __TEXT.__swift_as_cont: 0x1d8
--  __TEXT.__unwind_info: 0x2258
--  __TEXT.__eh_frame: 0x250c
-+  __TEXT.__unwind_info: 0x2280
-+  __TEXT.__eh_frame: 0x2644
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2d0
-+  __DATA_CONST.__const: 0x2e0
-   __DATA_CONST.__objc_classlist: 0x138
-   __DATA_CONST.__objc_protolist: 0x90
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x330
-+  __DATA_CONST.__objc_selrefs: 0x338
-   __DATA_CONST.__objc_protorefs: 0x48
--  __DATA_CONST.__got: 0x338
--  __AUTH_CONST.__const: 0x3500
-+  __DATA_CONST.__got: 0x340
-+  __AUTH_CONST.__const: 0x3690
-   __AUTH_CONST.__cfstring: 0x20
--  __AUTH_CONST.__objc_const: 0x2648
--  __AUTH_CONST.__auth_got: 0xa68
--  __AUTH.__objc_data: 0x898
--  __AUTH.__data: 0x1c18
--  __DATA.__data: 0x12d8
--  __DATA.__common: 0x50
-+  __AUTH_CONST.__objc_const: 0x26a8
-+  __AUTH_CONST.__auth_got: 0xa78
-+  __AUTH.__objc_data: 0x2b8
-+  __AUTH.__data: 0x1188
-+  __DATA.__data: 0xee8
-+  __DATA.__common: 0x18
-+  __DATA_DIRTY.__objc_data: 0x5f0
-+  __DATA_DIRTY.__data: 0xee0
-+  __DATA_DIRTY.__bss: 0x380
-+  __DATA_DIRTY.__common: 0x38
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/AudioAccessoryServices.framework/AudioAccessoryServices
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2419
--  Symbols:   882
+-  Symbols:   824
 -  CStrings:  189
 +  Functions: 2459
-+  Symbols:   891
++  Symbols:   832
 +  CStrings:  193
- 
 Symbols:
 + ___swift_closure_destructor.12Tm
 + _associated conformance 21HealthHeartRateStream17MockRapportClientC12RegistrationOSHAASQ
-+ _objc_msgSend$setInterruptionHandler:
 + _swift_getFunctionTypeMetadata0
 + _symbolic So11PDRRegistryC
 + _symbolic _____ 21HealthHeartRateStream17MockRapportClientC12RegistrationO

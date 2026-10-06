@@ -2,16 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/AppProtectionDaemon.framework/AppProtectionDaemon`
 
-```diff
+### Section Size Changes
 
- 55.0.0.0.0
--  __TEXT.__text: 0x99c0
-+  __TEXT.__text: 0x99cc
-   __TEXT.__objc_methlist: 0x134
-   __TEXT.__const: 0x27e
-   __TEXT.__constg_swiftt: 0x140
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x99c0` | `0x99cc` | **`+0xc`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_252b166e0 -> sub_25356f6e0 : 7180 -> 7184
-~ sub_252b18a38 -> sub_253571a3c : 872 -> 876
-~ sub_252b19eac -> sub_253572eb4 : 648 -> 652
+~ sub_2529e06e0 -> sub_2534386e0 : 7180 -> 7184
+~ sub_2529e2a38 -> sub_25343aa3c : 872 -> 876
+~ sub_2529e3eac -> sub_25343beb4 : 648 -> 652
 ```

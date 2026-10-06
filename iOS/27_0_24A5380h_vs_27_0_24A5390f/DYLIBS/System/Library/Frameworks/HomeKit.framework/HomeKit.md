@@ -2,131 +2,59 @@
 
 > `/System/Library/Frameworks/HomeKit.framework/HomeKit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3c4c48` | `0x3cda24` | **`+0x8ddc`** |
+| `__TEXT.__oslogstring` | `0x56db2` | `0x57a7a` | **`+0xcc8`** |
+| `__AUTH_CONST.__objc_const` | `0x49030` | `0x49650` | **`+0x620`** |
+| `__TEXT.__objc_methlist` | `0x288ac` | `0x28bd4` | **`+0x328`** |
+| `__TEXT.__cstring` | `0x2fd97` | `0x2facf` | **`-0x2c8`** |
+| `__AUTH_CONST.__const` | `0x60d0` | `0x6388` | **`+0x2b8`** |
+| `__AUTH_CONST.__cfstring` | `0x2b6c0` | `0x2b940` | **`+0x280`** |
+| `__DATA.__bss` | `0x9398` | `0x9508` | **`+0x170`** |
+| `__AUTH.__objc_data` | `0x90d8` | `0x9238` | **`+0x160`** |
+| `__DATA_CONST.__objc_selrefs` | `0xe280` | `0xe3e0` | **`+0x160`** |
+| `__DATA_CONST.__const` | `0x8bf8` | `0x8d30` | **`+0x138`** |
+| `__TEXT.__eh_frame` | `0x7b40` | `0x7a10` | **`-0x130`** |
+| `__TEXT.__unwind_info` | `0xca10` | `0xcb40` | **`+0x130`** |
+| `__TEXT.__const` | `0x65f8` | `0x66f8` | **`+0x100`** |
+| `__TEXT.__swift5_typeref` | `0x1ee4` | `0x1fd4` | **`+0xf0`** |
+| `__TEXT.__gcc_except_tab` | `0x6844` | `0x691c` | **`+0xd8`** |
+| `__AUTH.__data` | `0x1728` | `0x17d8` | **`+0xb0`** |
+| `__TEXT.__swift5_capture` | `0x8fc` | `0x9a4` | **`+0xa8`** |
+| `__TEXT.__constg_swiftt` | `0x1bc8` | `0x1c60` | **`+0x98`** |
+| `__TEXT.__dlopen_cstrs` | `0x3a1` | `0x403` | **`+0x62`** |
+| `__DATA.__data` | `0x5250` | `0x52a0` | **`+0x50`** |
+| `__TEXT.__swift5_fieldmd` | `0x13ec` | `0x143c` | **`+0x50`** |
+| `__DATA.__objc_ivar` | `0x2810` | `0x2858` | **`+0x48`** |
+| `__TEXT.__swift5_assocty` | `0x320` | `0x350` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x19c0` | `0x19e0` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x1370` | `0x1390` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x44c` | `0x434` | **`-0x18`** |
+| `__TEXT.__swift5_builtin` | `0x8c` | `0xa0` | **`+0x14`** |
+| `__DATA_CONST.__got` | `0x1e40` | `0x1e50` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0xfd8` | `0xfe8` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x1e8` | `0x1d8` | **`-0x10`** |
+| `__TEXT.__swift_as_ret` | `0x23c` | `0x22c` | **`-0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x1145` | `0x1154` | **`+0xf`** |
+| `__TEXT.__swift5_types` | `0x1b0` | `0x1bc` | **`+0xc`** |
+| `__TEXT.__swift5_proto` | `0x4b8` | `0x4c0` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -1484.2.0.0.0
--  __TEXT.__text: 0x3c4c48
--  __TEXT.__objc_methlist: 0x288ac
--  __TEXT.__const: 0x65f8
--  __TEXT.__dlopen_cstrs: 0x3a1
--  __TEXT.__swift5_typeref: 0x1ee4
--  __TEXT.__cstring: 0x2fd97
--  __TEXT.__constg_swiftt: 0x1bc8
--  __TEXT.__swift5_reflstr: 0x1145
--  __TEXT.__swift5_fieldmd: 0x13ec
--  __TEXT.__swift5_builtin: 0x8c
--  __TEXT.__swift5_assocty: 0x320
--  __TEXT.__swift5_capture: 0x8fc
 +1490.2.0.1.1
-+  __TEXT.__text: 0x3cda24
-+  __TEXT.__objc_methlist: 0x28bd4
-+  __TEXT.__const: 0x66f8
-+  __TEXT.__dlopen_cstrs: 0x403
-+  __TEXT.__swift5_typeref: 0x1fd4
-+  __TEXT.__cstring: 0x2facf
-+  __TEXT.__constg_swiftt: 0x1c60
-+  __TEXT.__swift5_reflstr: 0x1154
-+  __TEXT.__swift5_fieldmd: 0x143c
-+  __TEXT.__swift5_builtin: 0xa0
-+  __TEXT.__swift5_assocty: 0x350
-+  __TEXT.__swift5_capture: 0x9a4
-   __TEXT.__swift5_protos: 0x38
--  __TEXT.__swift5_proto: 0x4b8
--  __TEXT.__swift5_types: 0x1b0
-+  __TEXT.__swift5_proto: 0x4c0
-+  __TEXT.__swift5_types: 0x1bc
-   __TEXT.__swift_as_entry: 0x1e8
--  __TEXT.__swift_as_ret: 0x23c
--  __TEXT.__swift_as_cont: 0x44c
--  __TEXT.__oslogstring: 0x56db2
-+  __TEXT.__swift_as_ret: 0x22c
-+  __TEXT.__swift_as_cont: 0x434
-+  __TEXT.__oslogstring: 0x57a7a
-   __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__gcc_except_tab: 0x6844
-+  __TEXT.__gcc_except_tab: 0x691c
-   __TEXT.__ustring: 0x50
--  __TEXT.__unwind_info: 0xca10
--  __TEXT.__eh_frame: 0x7b40
-+  __TEXT.__unwind_info: 0xcb40
-+  __TEXT.__eh_frame: 0x7a10
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x8bf8
--  __DATA_CONST.__objc_classlist: 0x1370
-+  __DATA_CONST.__const: 0x8d30
-+  __DATA_CONST.__objc_classlist: 0x1390
-   __DATA_CONST.__objc_catlist: 0x108
-   __DATA_CONST.__objc_protolist: 0x568
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xe280
-+  __DATA_CONST.__objc_selrefs: 0xe3e0
-   __DATA_CONST.__objc_protorefs: 0x110
--  __DATA_CONST.__objc_superrefs: 0xfd8
-+  __DATA_CONST.__objc_superrefs: 0xfe8
-   __DATA_CONST.__objc_arraydata: 0x1430
--  __DATA_CONST.__got: 0x1e40
--  __AUTH_CONST.__const: 0x60d0
--  __AUTH_CONST.__cfstring: 0x2b6c0
--  __AUTH_CONST.__objc_const: 0x49030
-+  __DATA_CONST.__got: 0x1e50
-+  __AUTH_CONST.__const: 0x6388
-+  __AUTH_CONST.__cfstring: 0x2b940
-+  __AUTH_CONST.__objc_const: 0x49650
-   __AUTH_CONST.__objc_intobj: 0x9a8
-   __AUTH_CONST.__objc_dictobj: 0x848
-   __AUTH_CONST.__objc_arrayobj: 0x5e8
-   __AUTH_CONST.__objc_doubleobj: 0x70
--  __AUTH_CONST.__auth_got: 0x19c0
--  __AUTH.__objc_data: 0x90d8
--  __AUTH.__data: 0x1728
--  __DATA.__objc_ivar: 0x2810
--  __DATA.__data: 0x5250
--  __DATA.__bss: 0x9398
-+  __AUTH_CONST.__auth_got: 0x19e0
-+  __AUTH.__objc_data: 0x9238
-+  __AUTH.__data: 0x17d8
-+  __DATA.__objc_ivar: 0x2858
-+  __DATA.__data: 0x52a0
-+  __DATA.__bss: 0x9508
-   __DATA.__common: 0xa8
-   __DATA_DIRTY.__objc_data: 0x3628
-   __DATA_DIRTY.__data: 0x78
--  __DATA_DIRTY.__bss: 0x1e8
-+  __DATA_DIRTY.__bss: 0x1d8
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 17461
--  Symbols:   32494
+-  Symbols:   27255
 -  CStrings:  12408
 +  Functions: 17606
-+  Symbols:   32700
++  Symbols:   27416
 +  CStrings:  12497
- 
 Symbols:
 + +[HMUserActionPredictionCompositeDataSource convertLegacyPredictionToLegacyScoreFormat:]
 + +[HMUserActionPredictionCompositeDataSource convertLegacyPredictionsToLegacyScoreFormat:]
@@ -786,54 +714,6 @@ Symbols:
 + _logCategory._hmf_once_t69
 + _logCategory._hmf_once_v111
 + _logCategory._hmf_once_v70
-+ _objc_msgSend$_clearStagedData
-+ _objc_msgSend$_shouldCreateDynamicAccessorySettingsAdapter
-+ _objc_msgSend$addNumberSettingForKeyPath:value:minimumValue:maximumValue:stepValue:
-+ _objc_msgSend$clearStagedDataForMediaGroupsController:
-+ _objc_msgSend$convertLegacyPredictionToLegacyScoreFormat:
-+ _objc_msgSend$convertLegacyPredictionsToLegacyScoreFormat:
-+ _objc_msgSend$coordinate
-+ _objc_msgSend$createDynamicAccessoryAdapterWithDataSource:controller:
-+ _objc_msgSend$fetchAccessorySettingsWithHomeIdentifier:accessoryIdentifier:keyPaths:completionHandler:
-+ _objc_msgSend$hasAccessorySettingForKeyPath:
-+ _objc_msgSend$hasLegacyScore
-+ _objc_msgSend$hasMapIsValid
-+ _objc_msgSend$hasMicroLocationModelCategory
-+ _objc_msgSend$hasModelHasSignificantData
-+ _objc_msgSend$hasPeripheralAvailable
-+ _objc_msgSend$hasTargetAccessoryServiceIdentifier
-+ _objc_msgSend$homeSuggestions
-+ _objc_msgSend$initWithFloat:
-+ _objc_msgSend$initWithPredictionTargetUUID:predictionType:predictionScore:predictionReason:legacyPredictionScore:modelHasSignificantData:mapIsValid:peripheralAvailable:microLocationModelCategory:
-+ _objc_msgSend$initWithPredictionTargetUUID:targetServiceUUID:predictionType:predictionScore:predictionReason:legacyPredictionScore:modelHasSignificantData:mapIsValid:peripheralAvailable:microLocationModelCategory:
-+ _objc_msgSend$initWithPredictionTargetUUID:targetServiceUUID:targetGroupUUID:targetGroupType:predictionType:predictionScore:predictionReason:
-+ _objc_msgSend$initWithPredictionTargetUUID:targetServiceUUID:targetGroupUUID:targetGroupType:predictionType:predictionScore:predictionReason:legacyPredictionScore:modelHasSignificantData:mapIsValid:peripheralAvailable:microLocationModelCategory:
-+ _objc_msgSend$initWithServiceToken:
-+ _objc_msgSend$initWithWorkQueue:cacheManager:
-+ _objc_msgSend$lastMergedPredictions
-+ _objc_msgSend$legacyDataSource
-+ _objc_msgSend$legacyPredictionScore
-+ _objc_msgSend$legacyScore
-+ _objc_msgSend$mapIsValid
-+ _objc_msgSend$mergePrimaryPrediction:withLegacyPrediction:
-+ _objc_msgSend$mergePrimaryPredictions:withLegacyPredictions:
-+ _objc_msgSend$microLocationModelCategory
-+ _objc_msgSend$modelHasSignificantData
-+ _objc_msgSend$peripheralAvailable
-+ _objc_msgSend$predictionMatchingKeyForPrediction:
-+ _objc_msgSend$predictionReason
-+ _objc_msgSend$primaryDataSource
-+ _objc_msgSend$requestCurrentContextWithReply:
-+ _objc_msgSend$residentDevice:didUpdateSupportsHKSV3:
-+ _objc_msgSend$runWithConfiguration:
-+ _objc_msgSend$serviceTokenForServiceIdentifier:
-+ _objc_msgSend$setLastMergedPredictions:
-+ _objc_msgSend$setLegacyScore:
-+ _objc_msgSend$setMapIsValid:
-+ _objc_msgSend$setMicroLocationModelCategory:
-+ _objc_msgSend$setModelHasSignificantData:
-+ _objc_msgSend$setPeripheralAvailable:
-+ _objc_msgSend$suggestionReason
 + _swift_retain_x1
 + _swift_retain_x28
 + _symbolic SDySSSaySo8NSNumberCGG
@@ -1362,9 +1242,6 @@ Symbols:
 - _logCategory._hmf_once_v109
 - _logCategory._hmf_once_v68
 - _logCategory._hmf_once_v85
-- _objc_msgSend$initWithPredictionTargetUUID:predictionType:predictionScore:
-- _objc_msgSend$initWithPredictionTargetUUID:targetServiceUUID:predictionType:predictionScore:
-- _objc_msgSend$initWithPredictionTargetUUID:targetServiceUUID:targetGroupUUID:targetGroupType:predictionType:predictionScore:
 - _symbolic _____ 7HomeKit18SummarizationErrorO
 - _symbolic ______pSg 7HomeKit22LanguageModelExecutingP
 - _symbolic _____ySbG 15Synchronization5MutexVAARi_zrlE

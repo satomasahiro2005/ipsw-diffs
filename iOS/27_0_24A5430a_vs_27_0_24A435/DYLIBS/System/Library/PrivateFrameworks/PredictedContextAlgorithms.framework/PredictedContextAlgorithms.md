@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/PredictedContextAlgorithms.framework/PredictedContextAlgorithms`
 
-```diff
+### Section Size Changes
 
- 46.0.1.0.0
--  __TEXT.__text: 0x983ec
-+  __TEXT.__text: 0x98408
-   __TEXT.__objc_methlist: 0x6dec
-   __TEXT.__const: 0xcd8
-   __TEXT.__cstring: 0x31f6
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x983ec` | `0x98408` | **`+0x1c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__16vectorIdNS_9allocatorIdEEE6resizeEm : 284 -> 288
 ~ __ZNSt3__16vectorIbNS_9allocatorIbEEE6resizeEmb : 128 -> 132

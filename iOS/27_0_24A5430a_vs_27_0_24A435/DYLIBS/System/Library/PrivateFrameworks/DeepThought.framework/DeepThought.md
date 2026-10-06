@@ -2,24 +2,25 @@
 
 > `/System/Library/PrivateFrameworks/DeepThought.framework/DeepThought`
 
-```diff
+### Section Size Changes
 
- 6.0.7.0.0
--  __TEXT.__text: 0x28694
-+  __TEXT.__text: 0x28700
-   __TEXT.__const: 0x29ea
-   __TEXT.__swift5_typeref: 0x976
-   __TEXT.__swift5_fieldmd: 0x93c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x28694` | `0x28700` | **`+0x6c`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_25ea64ad0 -> sub_25f75ead0 : 356 -> 360
-~ sub_25ea68254 -> sub_25f762258 : 1496 -> 1500
-~ sub_25ea6b7cc -> sub_25f7657d4 : 1032 -> 1044
-~ sub_25ea6bbd4 -> sub_25f765be8 : 1036 -> 1048
-~ sub_25ea71470 -> sub_25f76b490 : 1036 -> 1048
-~ sub_25ea7187c -> sub_25f76b8a8 : 1692 -> 1712
-~ sub_25ea72528 -> sub_25f76c568 : 2596 -> 2604
-~ sub_25ea766d4 -> sub_25f77071c : 360 -> 364
-~ sub_25ea7683c -> sub_25f770888 : 356 -> 360
-~ sub_25ea7fb34 -> sub_25f779b84 : 1036 -> 1048
-~ sub_25ea7ff40 -> sub_25f779f9c : 1268 -> 1284
+~ sub_25e933ad0 -> sub_25f642ad0 : 356 -> 360
+~ sub_25e937254 -> sub_25f646258 : 1496 -> 1500
+~ sub_25e93a7cc -> sub_25f6497d4 : 1032 -> 1044
+~ sub_25e93abd4 -> sub_25f649be8 : 1036 -> 1048
+~ sub_25e940470 -> sub_25f64f490 : 1036 -> 1048
+~ sub_25e94087c -> sub_25f64f8a8 : 1692 -> 1712
+~ sub_25e941528 -> sub_25f650568 : 2596 -> 2604
+~ sub_25e9456d4 -> sub_25f65471c : 360 -> 364
+~ sub_25e94583c -> sub_25f654888 : 356 -> 360
+~ sub_25e94eb34 -> sub_25f65db84 : 1036 -> 1048
+~ sub_25e94ef40 -> sub_25f65df9c : 1268 -> 1284
 ```

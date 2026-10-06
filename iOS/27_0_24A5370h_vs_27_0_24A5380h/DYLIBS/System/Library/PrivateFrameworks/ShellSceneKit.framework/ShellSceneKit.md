@@ -2,97 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/ShellSceneKit.framework/ShellSceneKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe9204` | `0xec0d8` | **`+0x2ed4`** |
+| `__AUTH_CONST.__const` | `0x7a80` | `0x8138` | **`+0x6b8`** |
+| `__TEXT.__swift5_capture` | `0x1f14` | `0x21c4` | **`+0x2b0`** |
+| `__TEXT.__unwind_info` | `0x3088` | `0x3250` | **`+0x1c8`** |
+| `__TEXT.__oslogstring` | `0xab3` | `0xbb3` | **`+0x100`** |
+| `__DATA_DIRTY.__data` | `0x13a8` | `0x1378` | **`-0x30`** |
+| `__TEXT.__eh_frame` | `0x1eb0` | `0x1e88` | **`-0x28`** |
+| `__TEXT.__const` | `0x82a0` | `0x8280` | **`-0x20`** |
+| `__TEXT.__swift5_typeref` | `0x2554` | `0x2538` | **`-0x1c`** |
+| `__DATA.__data` | `0x14d0` | `0x14c0` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x638` | `0x630` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xbe0` | `0xbe8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xe9204
-+  __TEXT.__text: 0xec0d8
-   __TEXT.__objc_methlist: 0x16b8
--  __TEXT.__const: 0x82a0
-+  __TEXT.__const: 0x8280
-   __TEXT.__cstring: 0x2bfb
--  __TEXT.__swift5_typeref: 0x2554
--  __TEXT.__swift5_capture: 0x1f14
--  __TEXT.__oslogstring: 0xab3
-+  __TEXT.__swift5_typeref: 0x2538
-+  __TEXT.__swift5_capture: 0x21c4
-+  __TEXT.__oslogstring: 0xbb3
-   __TEXT.__constg_swiftt: 0x1f04
-   __TEXT.__swift5_reflstr: 0x156b
-   __TEXT.__swift5_fieldmd: 0x1b90
+-47.0.0.0.0
++50.0.0.0.0
 
-   __TEXT.__swift_as_ret: 0x4c
-   __TEXT.__swift_as_cont: 0x88
-   __TEXT.__swift5_types2: 0x8
--  __TEXT.__unwind_info: 0x3088
--  __TEXT.__eh_frame: 0x1eb0
-+  __TEXT.__unwind_info: 0x3250
-+  __TEXT.__eh_frame: 0x1e88
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x1a8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xbe0
-+  __DATA_CONST.__objc_selrefs: 0xbe8
-   __DATA_CONST.__objc_protorefs: 0xe8
-   __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__got: 0x638
--  __AUTH_CONST.__const: 0x7a80
-+  __DATA_CONST.__got: 0x630
-+  __AUTH_CONST.__const: 0x8138
-   __AUTH_CONST.__cfstring: 0x120
-   __AUTH_CONST.__objc_const: 0x6c68
-   __AUTH_CONST.__auth_got: 0xcb8
-   __AUTH.__objc_data: 0x1238
-   __AUTH.__data: 0x660
-   __DATA.__objc_ivar: 0xc
--  __DATA.__data: 0x14d0
-+  __DATA.__data: 0x14c0
-   __DATA.__common: 0x18
-   __DATA.__bss: 0x8bd0
-   __DATA_DIRTY.__objc_data: 0x1178
--  __DATA_DIRTY.__data: 0x13a8
-+  __DATA_DIRTY.__data: 0x1378
-   __DATA_DIRTY.__bss: 0x2b60
-   __DATA_DIRTY.__common: 0x90
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5765
--  Symbols:   15694
--  CStrings:  372
+-  Symbols:   9946
+-  CStrings:  363
 +  Functions: 5852
-+  Symbols:   15865
-+  CStrings:  375
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__bss : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   9947
++  CStrings:  366
 Symbols:
 + _$s13ShellSceneKit17FBSHardwareSourceC14displayMonitorACSo010FBSDisplayG0C_tcfcSo8NSObjectCycfu0_
 + _$s13ShellSceneKit17FBSHardwareSourceC14displayMonitorACSo010FBSDisplayG0C_tcfcSo8NSObjectCycfu0_TA
@@ -139,7 +82,6 @@ Symbols:
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRTA.67TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRTA.67Tu
 + _get_witness_table 19CollectionsInternal17OrderedDictionaryV6ValuesVy13ShellSceneKit7DisplayV10IdentifierVAF17CADisplayHardwareC_GSTHPyHC
-+ _objc_msgSend$alwaysConnectedIdentities
 + _symbolic _____y__________G 19CollectionsInternal17OrderedDictionaryV 13ShellSceneKit7DisplayV10IdentifierV AD17CADisplayHardwareC
 + _symbolic _____y___________G 19CollectionsInternal17OrderedDictionaryV6ValuesV 13ShellSceneKit7DisplayV10IdentifierV AF17CADisplayHardwareC
 - _$s13ShellSceneKit17FBSHardwareSourceC14displayMonitor_10didConnect4withySo010FBSDisplayG0C_So0K8IdentityCSo0K13ConfigurationCtFSbycfu_
@@ -202,5 +144,4 @@ CStrings:
 - "Not tracking hardware for display identity: "
 - "Stopped tracking disconnecting display. hardwareIdentity: %s; identity: %@"
 - "Tracking connecting display. hardwareIdentity: %s; configuration: %@"
-
 ```

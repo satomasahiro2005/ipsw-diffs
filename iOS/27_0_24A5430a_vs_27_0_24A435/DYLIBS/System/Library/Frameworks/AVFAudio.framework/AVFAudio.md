@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/AVFAudio.framework/AVFAudio`
 
-```diff
+### Section Size Changes
 
- 794.106.0.0.0
--  __TEXT.__text: 0x113d98
-+  __TEXT.__text: 0x113db4
-   __TEXT.__realtime: 0x1d20
-   __TEXT.__objc_methlist: 0x5b1c
-   __TEXT.__dlopen_cstrs: 0xa9
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x113d98` | `0x113db4` | **`+0x1c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __Z12isHACProductv : 552 -> 564
 ~ __ZN19AVVCRecordingEngine22populateRecordSettingsEv : 2016 -> 2024

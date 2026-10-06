@@ -2,92 +2,59 @@
 
 > `/Applications/DictationExperience.iOS.app/DictationExperience.iOS`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa8b8` | `0xc718` | **`+0x1e60`** |
+| `__TEXT.__objc_methname` | `0x1b6b` | `0x2328` | **`+0x7bd`** |
+| `__TEXT.__objc_methtype` | `0xdd2` | `0x1362` | **`+0x590`** |
+| `__DATA.__objc_const` | `0xbd8` | `0x1038` | **`+0x460`** |
+| `__DATA.__data` | `0x648` | `0xa28` | **`+0x3e0`** |
+| `__TEXT.__auth_stubs` | `0xb10` | `0xda0` | **`+0x290`** |
+| `__DATA_CONST.__const` | `0x858` | `0x648` | **`-0x210`** |
+| `__TEXT.__objc_methlist` | `0x6c8` | `0x8d0` | **`+0x208`** |
+| `__DATA.__objc_selrefs` | `0x668` | `0x7e0` | **`+0x178`** |
+| `__DATA_CONST.__auth_got` | `0x590` | `0x6d8` | **`+0x148`** |
+| `__TEXT.__const` | `0x944` | `0xa34` | **`+0xf0`** |
+| `__TEXT.__swift5_typeref` | `0xc10` | `0xcdc` | **`+0xcc`** |
+| `__TEXT.__objc_stubs` | `0xc20` | `0xce0` | **`+0xc0`** |
+| `__DATA_CONST.__got` | `0x1f8` | `0x2b0` | **`+0xb8`** |
+| `__TEXT.__unwind_info` | `0x388` | `0x420` | **`+0x98`** |
+| `__DATA_CONST.__auth_ptr` | `0x208` | `0x290` | **`+0x88`** |
+| `__TEXT.__constg_swiftt` | `0x6a0` | `0x6e0` | **`+0x40`** |
+| `__TEXT.__objc_classname` | `0x237` | `0x267` | **`+0x30`** |
+| `__DATA_CONST.__objc_protolist` | `0x50` | `0x70` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x2e4` | `0x2cc` | **`-0x18`** |
+| `__DATA.__bss` | `0x420` | `0x430` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x28` | `0x38` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x345` | `0x355` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA_CONST.__objc_classlist`
 - `__TEXT.__cstring`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_capture`
 - `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_entry`
 - `__TEXT.__swift5_proto`
 - `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_entry`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA.__objc_data`
+- `__TEXT.__swift5_types`
+
+### Other Changes
 
 ```diff
 
 -5.0.0.0.0
--  __TEXT.__text: 0xa8b8
--  __TEXT.__auth_stubs: 0xb10
--  __TEXT.__objc_stubs: 0xc20
--  __TEXT.__objc_methlist: 0x6c8
--  __TEXT.__const: 0x944
--  __TEXT.__objc_methname: 0x1b6b
--  __TEXT.__objc_methtype: 0xdd2
 +7.0.0.0.0
-+  __TEXT.__text: 0xc718
-+  __TEXT.__auth_stubs: 0xda0
-+  __TEXT.__objc_stubs: 0xce0
-+  __TEXT.__objc_methlist: 0x8d0
-+  __TEXT.__const: 0xa34
-+  __TEXT.__objc_methname: 0x2328
-+  __TEXT.__objc_methtype: 0x1362
-   __TEXT.__cstring: 0x341
--  __TEXT.__objc_classname: 0x237
--  __TEXT.__constg_swiftt: 0x6a0
--  __TEXT.__swift5_typeref: 0xc10
--  __TEXT.__swift5_reflstr: 0x345
--  __TEXT.__swift5_fieldmd: 0x2e4
-+  __TEXT.__objc_classname: 0x267
-+  __TEXT.__constg_swiftt: 0x6e0
-+  __TEXT.__swift5_typeref: 0xcdc
-+  __TEXT.__swift5_reflstr: 0x355
-+  __TEXT.__swift5_fieldmd: 0x2cc
-   __TEXT.__swift5_types: 0x38
-   __TEXT.__swift5_capture: 0x180
-   __TEXT.__swift5_assocty: 0x90
-   __TEXT.__swift5_proto: 0x2c
-   __TEXT.__swift5_protos: 0xc
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__unwind_info: 0x388
--  __DATA_CONST.__const: 0x858
-+  __TEXT.__unwind_info: 0x420
-+  __DATA_CONST.__const: 0x648
-   __DATA_CONST.__objc_classlist: 0x30
--  __DATA_CONST.__objc_protolist: 0x50
-+  __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_protorefs: 0x28
--  __DATA_CONST.__auth_got: 0x590
--  __DATA_CONST.__got: 0x1f8
--  __DATA_CONST.__auth_ptr: 0x208
--  __DATA.__objc_const: 0xbd8
--  __DATA.__objc_selrefs: 0x668
-+  __DATA_CONST.__objc_protorefs: 0x38
-+  __DATA_CONST.__auth_got: 0x6d8
-+  __DATA_CONST.__got: 0x2b0
-+  __DATA_CONST.__auth_ptr: 0x290
-+  __DATA.__objc_const: 0x1038
-+  __DATA.__objc_selrefs: 0x7e0
-   __DATA.__objc_data: 0x6f0
--  __DATA.__data: 0x648
--  __DATA.__bss: 0x420
-+  __DATA.__data: 0xa28
-+  __DATA.__bss: 0x430
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 335
 -  Symbols:   325
 -  CStrings:  355
 +  Functions: 368
 +  Symbols:   396
 +  CStrings:  434
- 
 Symbols:
 + _$s10Foundation15AttributeScopesO0A10AttributesV04LinkB0OAA19AttributedStringKeyAAMc
 + _$s10Foundation15AttributeScopesO0A10AttributesV04LinkB0ON

@@ -2,65 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/CMPhoto.framework/CMPhoto`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e4d68` | `0x1e564c` | **`+0x8e4`** |
+| `__AUTH_CONST.__objc_const` | `0x2f58` | `0x2f78` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x2580` | `0x2590` | **`+0x10`** |
+| `__TEXT.__const` | `0x136a4` | `0x13694` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x1d40` | `0x1d48` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xbc0` | `0xbc8` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x894` | `0x89c` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x4748` | `0x4750` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x10c` | `0x110` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -486.0.0.0.1
--  __TEXT.__text: 0x1e4d68
--  __TEXT.__objc_methlist: 0x894
--  __TEXT.__const: 0x136a4
 +488.22.2.0.0
-+  __TEXT.__text: 0x1e564c
-+  __TEXT.__objc_methlist: 0x89c
-+  __TEXT.__const: 0x13694
-   __TEXT.__cstring: 0x4ab1f
-   __TEXT.__oslogstring: 0x4604
-   __TEXT.__gcc_except_tab: 0x20e4
 
-   __TEXT.__swift5_protos: 0x38
-   __TEXT.__swift5_proto: 0x394
-   __TEXT.__swift5_types: 0x218
--  __TEXT.__unwind_info: 0x4748
-+  __TEXT.__unwind_info: 0x4750
-   __TEXT.__eh_frame: 0x38ec
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0xbc0
-+  __DATA_CONST.__objc_selrefs: 0xbc8
-   __DATA_CONST.__objc_superrefs: 0x20
-   __DATA_CONST.__objc_arraydata: 0x2b0
--  __DATA_CONST.__got: 0x1d40
-+  __DATA_CONST.__got: 0x1d48
-   __AUTH_CONST.__const: 0xc740
-   __AUTH_CONST.__cfstring: 0x5f6a0
--  __AUTH_CONST.__objc_const: 0x2f58
-+  __AUTH_CONST.__objc_const: 0x2f78
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x1b0
-   __AUTH_CONST.__objc_arrayobj: 0x210
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x2580
-+  __AUTH_CONST.__auth_got: 0x2590
-   __AUTH.__objc_data: 0x3e0
-   __AUTH.__data: 0x21f0
--  __DATA.__objc_ivar: 0x10c
-+  __DATA.__objc_ivar: 0x110
-   __DATA.__data: 0xec8
-   __DATA.__bss: 0x70c0
-   __DATA.__common: 0x44b8
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7628
--  Symbols:   12221
+-  Symbols:   11869
 +  Functions: 7636
-+  Symbols:   12231
-   CStrings:  13488
- 
++  Symbols:   11878
 Symbols:
 + -[CMPhotoTiledLayer _gainMapHeadroomForAuxiliaryIndex:]
 + GCC_except_table30
@@ -73,7 +39,6 @@ Symbols:
 + __computeDestinationBlackLevels
 + __ifdAddDNGBlackLevelTag
 + _kIOSurfaceContentHeadroom
-+ _objc_msgSend$_gainMapHeadroomForAuxiliaryIndex:
 - GCC_except_table29
 - __addRawImageTags.blackLevelRepeatDim
 ```

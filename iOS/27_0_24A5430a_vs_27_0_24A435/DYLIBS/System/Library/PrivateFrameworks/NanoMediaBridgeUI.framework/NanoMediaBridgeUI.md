@@ -2,24 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/NanoMediaBridgeUI.framework/NanoMediaBridgeUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa4f8` | `0xa4fc` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
- 2024.100.52.0.0
--  __TEXT.__text: 0xa4f8
-+  __TEXT.__text: 0xa4fc
-   __TEXT.__objc_methlist: 0xb4c
-   __TEXT.__const: 0xa8
-   __TEXT.__cstring: 0x1986
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 227
--  Symbols:   914
+-  Symbols:   631
 +  Functions: 228
-+  Symbols:   915
-   CStrings:  348
- 
++  Symbols:   632
 Symbols:
 + _OUTLINED_FUNCTION_2
 Functions:

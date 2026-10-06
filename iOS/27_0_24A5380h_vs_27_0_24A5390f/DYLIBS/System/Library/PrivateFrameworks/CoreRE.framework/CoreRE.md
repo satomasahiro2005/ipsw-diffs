@@ -2,110 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/CoreRE.framework/CoreRE`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1664a04` | `0x166aec4` | **`+0x64c0`** |
+| `__DATA.__bss` | `0x6678` | `0x6f98` | **`+0x920`** |
+| `__DATA_DIRTY.__bss` | `0x5a870` | `0x5a080` | **`-0x7f0`** |
+| `__TEXT.__oslogstring` | `0x52278` | `0x52982` | **`+0x70a`** |
+| `__AUTH_CONST.__const` | `0x9d890` | `0x9dc80` | **`+0x3f0`** |
+| `__TEXT.__const` | `0x107244` | `0x1075e4` | **`+0x3a0`** |
+| `__TEXT.__cstring` | `0xb46e6` | `0xb4934` | **`+0x24e`** |
+| `__TEXT.__unwind_info` | `0x550d8` | `0x55278` | **`+0x1a0`** |
+| `__AUTH_CONST.__objc_const` | `0x7c78` | `0x7d50` | **`+0xd8`** |
+| `__AUTH_CONST.__cfstring` | `0xb680` | `0xb700` | **`+0x80`** |
+| `__DATA.__data` | `0x24480` | `0x24500` | **`+0x80`** |
+| `__DATA_DIRTY.__data` | `0x44d8` | `0x4548` | **`+0x70`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4750` | `0x47b8` | **`+0x68`** |
+| `__TEXT.__objc_methlist` | `0x4208` | `0x4270` | **`+0x68`** |
+| `__DATA_CONST.__const` | `0xd3a0` | `0xd400` | **`+0x60`** |
+| `__AUTH.__objc_data` | `—` | `0x50` | **`+0x50`** |
+| `__AUTH_CONST.__objc_floatobj` | `—` | `0x10` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x220` | `0x228` | **`+0x8`** |
+| `__DATA_DIRTY.__objc_ivar` | `0x128` | `0x130` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0xe094` | `0xe098` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -453.0.4.0.2
--  __TEXT.__text: 0x1664a04
--  __TEXT.__objc_methlist: 0x4208
--  __TEXT.__const: 0x107244
 +453.0.5.502.1
-+  __TEXT.__text: 0x166aec4
-+  __TEXT.__objc_methlist: 0x4270
-+  __TEXT.__const: 0x1075e4
-   __TEXT.__constg_swiftt: 0x44
-   __TEXT.__swift5_typeref: 0x2f
-   __TEXT.__swift5_fieldmd: 0x44
-   __TEXT.__swift5_reflstr: 0x1f
-   __TEXT.__swift5_types: 0x8
--  __TEXT.__cstring: 0xb46e6
--  __TEXT.__gcc_except_tab: 0xe094
--  __TEXT.__oslogstring: 0x52278
-+  __TEXT.__cstring: 0xb4934
-+  __TEXT.__gcc_except_tab: 0xe098
-+  __TEXT.__oslogstring: 0x52982
-   __TEXT.__ustring: 0x1a
--  __TEXT.__unwind_info: 0x550d8
-+  __TEXT.__unwind_info: 0x55278
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xd3a0
--  __DATA_CONST.__objc_classlist: 0x220
-+  __DATA_CONST.__const: 0xd400
-+  __DATA_CONST.__objc_classlist: 0x228
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0xc8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x4750
-+  __DATA_CONST.__objc_selrefs: 0x47b8
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_superrefs: 0x1c0
-   __DATA_CONST.__objc_arraydata: 0x10
-   __DATA_CONST.__got: 0x1070
--  __AUTH_CONST.__const: 0x9d890
--  __AUTH_CONST.__cfstring: 0xb680
--  __AUTH_CONST.__objc_const: 0x7c78
-+  __AUTH_CONST.__const: 0x9dc80
-+  __AUTH_CONST.__cfstring: 0xb700
-+  __AUTH_CONST.__objc_const: 0x7d50
-   __AUTH_CONST.__weak_auth_got: 0x48
-   __AUTH_CONST.__objc_intobj: 0x108
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__objc_doubleobj: 0x10
-+  __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__auth_got: 0x3c20
-+  __AUTH.__objc_data: 0x50
-   __AUTH.__data: 0x1698
-   __AUTH.__thread_vars: 0xc0
-   __AUTH.__thread_bss: 0x310
-   __DATA.__objc_ivar: 0x448
--  __DATA.__data: 0x24480
--  __DATA.__bss: 0x6678
-+  __DATA.__data: 0x24500
-+  __DATA.__bss: 0x6f98
-   __DATA.__common: 0x5fa0
--  __DATA_DIRTY.__objc_ivar: 0x128
-+  __DATA_DIRTY.__objc_ivar: 0x130
-   __DATA_DIRTY.__objc_data: 0x1540
--  __DATA_DIRTY.__data: 0x44d8
--  __DATA_DIRTY.__bss: 0x5a870
-+  __DATA_DIRTY.__data: 0x4548
-+  __DATA_DIRTY.__bss: 0x5a080
-   __DATA_DIRTY.__common: 0x3ad0
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/swift/libswiftObservation.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 86258
--  Symbols:   123509
+-  Symbols:   121389
 -  CStrings:  23156
 +  Functions: 86363
-+  Symbols:   123690
++  Symbols:   121559
 +  CStrings:  23214
- 
 Symbols:
 + -[REVFXProxyDispatchWrapper .cxx_destruct]
 + -[REVFXProxyDispatchWrapper class]
@@ -210,16 +144,10 @@ Symbols:
 + __ZN2re9HashTableINS_13DynamicStringENSt3__110unique_ptrINS_22MaterialDefinitionFileENS2_8functionIFvPS4_EEEEENS_4HashIS1_EENS_7EqualToIS1_EELb1ELb0EE9EntryBase4freeEv
 + __ZN3MTL7Private8Selector20s_kisBlendingEnabledE
 + __ZN3MTL7Private8Selector20s_krasterSampleCountE
-+ __ZN3MTL7Private8Selector24s_knameisBlendingEnabledE
-+ __ZN3MTL7Private8Selector24s_knamerasterSampleCountE
 + __ZN3MTL7Private8Selector29s_kdepthAttachmentPixelFormatE
 + __ZN3MTL7Private8Selector30s_kmaxVertexAmplificationCountE
 + __ZN3MTL7Private8Selector31s_kstencilAttachmentPixelFormatE
-+ __ZN3MTL7Private8Selector33s_knamedepthAttachmentPixelFormatE
-+ __ZN3MTL7Private8Selector34s_knamemaxVertexAmplificationCountE
-+ __ZN3MTL7Private8Selector35s_knamestencilAttachmentPixelFormatE
 + __ZN3MTL7Private8Selector43s_kmapScreenToPhysicalCoordinates_forLayer_E
-+ __ZN3MTL7Private8Selector47s_knamemapScreenToPhysicalCoordinates_forLayer_E
 + __ZNK2re10MXIManager35updateRuntimeFunctionConstantInputsERNS_10MXIContextEPKNS_4ecs212MXIComponentE
 + __ZNK2re11HashSetBaseIttNS_8internal10ValueAsKeyItEENS_4HashItEENS_7EqualToItEELb0ELb0EE8containsERKt
 + __ZNK2re13RenderManager17canDestructInlineEv
@@ -343,12 +271,6 @@ Symbols:
 + ____ZN2re12_GLOBAL__N_144addVFXParticleEmitterDrawsToTechniqueBucketsERKNS_8VFXSceneERNS_17PerFrameAllocatorERNS_11MeshVisitorE_block_invoke_2
 + ___block_descriptor_48_a8_32s40s_e18_v16?0"NSObject"8ls32l8s40l8
 + ___block_descriptor_48_a8_32s_e60_v24?0"<MTLRenderCommandEncoder>"8"<VFXDrawCallContext>"16ls32l8
-+ _objc_msgSend$enumerateDrawCallsWithEmitterID:handler:
-+ _objc_msgSend$invokeWithTarget:
-+ _objc_msgSend$methodSignatureForSelector:
-+ _objc_msgSend$retainArguments
-+ _objc_msgSend$setPowerThreshold:
-+ _objc_msgSend$setSplatIntegration:
 - __ZN2re12DynamicArrayIN12_GLOBAL__N_18ViewInfoEE11setCapacityEm
 - __ZN2re12DynamicArrayIN12_GLOBAL__N_18ViewInfoEE3addERKS2_
 - __ZN2re12_GLOBAL__N_120gatherLightsForSceneERKNS_14CullingFrustumERKNS_9Matrix4x4IfEERKNS_12WeakStringIDERNS_15RenderFrameDataERNS_24LightCullingProviderDataERNS_16LightCullingDataE
@@ -409,7 +331,6 @@ Symbols:
 - ____ZN2re12_GLOBAL__N_117simulateVFXScenesINS_8VFXSceneEEEvRNS_20RenderGraphDataStoreEPKNS_26RetainedDrawcallDataSlicesEmRKNS_12DynamicArrayIT_EERK13simd_float4x4SF_RKNS_7Vector3IfEESJ__block_invoke_2
 - ____ZN2re12_GLOBAL__N_117simulateVFXScenesIPNS_8VFXSceneEEEvRNS_20RenderGraphDataStoreEPKNS_26RetainedDrawcallDataSlicesEmRKNS_12DynamicArrayIT_EERK13simd_float4x4SG_RKNS_7Vector3IfEESK__block_invoke
 - ____ZN2re12_GLOBAL__N_117simulateVFXScenesIPNS_8VFXSceneEEEvRNS_20RenderGraphDataStoreEPKNS_26RetainedDrawcallDataSlicesEmRKNS_12DynamicArrayIT_EERK13simd_float4x4SG_RKNS_7Vector3IfEESK__block_invoke_2
-- _objc_msgSend$viewports
 CStrings:
 + "  PSO-FC[%{public}s::%{public}s] %{public}s = 0x%llx"
 + "%s Node (%s) Invalid Node Modifiers."

@@ -2,25 +2,17 @@
 
 > `/System/Library/Frameworks/CoreAudio.framework/CoreAudio`
 
-```diff
+### Section Size Changes
 
- 482.102.0.0.0
--  __TEXT.__text: 0x542b90
--  __TEXT.__realtime: 0x291c0
-+  __TEXT.__text: 0x542d30
-+  __TEXT.__realtime: 0x293f4
-   __TEXT.__delay_stubs: 0x780
-   __TEXT.__delay_helper: 0x148
-   __TEXT.__objc_methlist: 0x175c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__realtime` | `0x291c0` | `0x293f4` | **`+0x234`** |
+| `__TEXT.__text` | `0x542b90` | `0x542d30` | **`+0x1a0`** |
+| `__TEXT.__unwind_info` | `0x196b8` | `0x196b0` | **`-0x8`** |
 
-   __TEXT.__dlopen_cstrs: 0x58
-   __TEXT.__gcc_except_tab: 0x589e4
-   __TEXT.__oslogstring: 0x42ee0
--  __TEXT.__unwind_info: 0x196b8
-+  __TEXT.__unwind_info: 0x196b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__16vectorIjNS_9allocatorIjEEE24__emplace_back_slow_pathIJjEEEPjDpOT_ : 184 -> 176
 ~ __ZNSt3__16vectorI17CAPropertyAddressNS_9allocatorIS1_EEE24__emplace_back_slow_pathIJS1_EEEPS1_DpOT_ : 252 -> 248

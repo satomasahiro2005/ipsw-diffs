@@ -2,137 +2,70 @@
 
 > `/System/Library/PrivateFrameworks/CascadeSets.framework/CascadeSets`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa96ac` | `0xa6ddc` | **`-0x28d0`** |
+| `__DATA_DIRTY.__data` | `—` | `0x13f0` | **`+0x13f0`** |
+| `__AUTH.__data` | `0x1820` | `0x6d0` | **`-0x1150`** |
+| `__TEXT.__oslogstring` | `0x52d4` | `0x4d40` | **`-0x594`** |
+| `__AUTH_CONST.__const` | `0x3d80` | `0x38c8` | **`-0x4b8`** |
+| `__DATA.__bss` | `0x2110` | `0x1d10` | **`-0x400`** |
+| `__DATA_DIRTY.__bss` | `0x148` | `0x540` | **`+0x3f8`** |
+| `__TEXT.__eh_frame` | `0x2c38` | `0x2970` | **`-0x2c8`** |
+| `__AUTH.__objc_data` | `0x1410` | `0x1188` | **`-0x288`** |
+| `__TEXT.__const` | `0x3e5c` | `0x3c98` | **`-0x1c4`** |
+| `__TEXT.__swift5_typeref` | `0xf46` | `0xe33` | **`-0x113`** |
+| `__AUTH_CONST.__objc_const` | `0x12270` | `0x12168` | **`-0x108`** |
+| `__TEXT.__unwind_info` | `0x3290` | `0x3188` | **`-0x108`** |
+| `__TEXT.__swift5_capture` | `0x2a4` | `0x1b0` | **`-0xf4`** |
+| `__AUTH_CONST.__cfstring` | `0x59e0` | `0x5ac0` | **`+0xe0`** |
+| `__TEXT.__delay_helper` | `0xdc` | `—` | **`-0xdc`** |
+| `__DATA.__data` | `0x1ae0` | `0x1a10` | **`-0xd0`** |
+| `__TEXT.__constg_swiftt` | `0x1760` | `0x16bc` | **`-0xa4`** |
+| `__TEXT.__objc_methlist` | `0x6594` | `0x64f4` | **`-0xa0`** |
+| `__DATA_DIRTY.__objc_data` | `0x1900` | `0x1890` | **`-0x70`** |
+| `__TEXT.__swift5_fieldmd` | `0x1a80` | `0x1a1c` | **`-0x64`** |
+| `__TEXT.__swift5_reflstr` | `0x13b6` | `0x1354` | **`-0x62`** |
+| `__DATA_CONST.__const` | `0x1bc8` | `0x1c28` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0x17dc` | `0x183c` | **`+0x60`** |
+| `__DATA_CONST.__objc_selrefs` | `0x31c0` | `0x3170` | **`-0x50`** |
+| `__TEXT.__cstring` | `0x891f` | `0x8967` | **`+0x48`** |
+| `__AUTH_CONST.__auth_got` | `0xd68` | `0xd28` | **`-0x40`** |
+| `__DATA.__common` | `0xe8` | `0xa8` | **`-0x40`** |
+| `__DATA_CONST.__objc_classlist` | `0x520` | `0x4f8` | **`-0x28`** |
+| `__TEXT.__swift5_builtin` | `0x118` | `0xf0` | **`-0x28`** |
+| `__TEXT.__swift_as_entry` | `0x28` | `—` | **`-0x28`** |
+| `__TEXT.__swift_as_ret` | `0x24` | `—` | **`-0x24`** |
+| `__DATA_CONST.__objc_protolist` | `0x1e8` | `0x1c8` | **`-0x20`** |
+| `__DATA_CONST.__objc_protorefs` | `0xb8` | `0x98` | **`-0x20`** |
+| `__DATA_DIRTY.__common` | `—` | `0x20` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x1c` | `—` | **`-0x1c`** |
+| `__AUTH_CONST.__objc_intobj` | `0x540` | `0x558` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0x1e0` | `0x1cc` | **`-0x14`** |
+| `__TEXT.__swift5_proto` | `0x220` | `0x214` | **`-0xc`** |
+| `__DATA.__objc_ivar` | `0x688` | `0x680` | **`-0x8`** |
+| `__TEXT.__swift5_mpenum` | `0xd8` | `0xd0` | **`-0x8`** |
+| `__TEXT.__swift5_protos` | `0x3c` | `0x38` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xa96ac
--  __TEXT.__delay_helper: 0xdc
--  __TEXT.__objc_methlist: 0x6594
--  __TEXT.__const: 0x3e5c
--  __TEXT.__gcc_except_tab: 0x17dc
--  __TEXT.__cstring: 0x891f
--  __TEXT.__oslogstring: 0x52d4
-+  __TEXT.__text: 0xa6ddc
-+  __TEXT.__objc_methlist: 0x64f4
-+  __TEXT.__const: 0x3c98
-+  __TEXT.__gcc_except_tab: 0x183c
-+  __TEXT.__cstring: 0x8967
-+  __TEXT.__oslogstring: 0x4d40
-   __TEXT.__dlopen_cstrs: 0x37a
--  __TEXT.__swift5_typeref: 0xf46
--  __TEXT.__constg_swiftt: 0x1760
--  __TEXT.__swift5_reflstr: 0x13b6
--  __TEXT.__swift5_fieldmd: 0x1a80
--  __TEXT.__swift5_builtin: 0x118
-+  __TEXT.__swift5_typeref: 0xe33
-+  __TEXT.__constg_swiftt: 0x16bc
-+  __TEXT.__swift5_reflstr: 0x1354
-+  __TEXT.__swift5_fieldmd: 0x1a1c
-+  __TEXT.__swift5_builtin: 0xf0
-   __TEXT.__swift5_assocty: 0x68
--  __TEXT.__swift5_proto: 0x220
--  __TEXT.__swift5_types: 0x1e0
--  __TEXT.__swift5_capture: 0x2a4
--  __TEXT.__swift5_mpenum: 0xd8
--  __TEXT.__swift5_protos: 0x3c
--  __TEXT.__swift_as_entry: 0x28
--  __TEXT.__swift_as_ret: 0x24
--  __TEXT.__swift_as_cont: 0x1c
--  __TEXT.__unwind_info: 0x3290
--  __TEXT.__eh_frame: 0x2c38
-+  __TEXT.__swift5_proto: 0x214
-+  __TEXT.__swift5_types: 0x1cc
-+  __TEXT.__swift5_capture: 0x1b0
-+  __TEXT.__swift5_mpenum: 0xd0
-+  __TEXT.__swift5_protos: 0x38
-+  __TEXT.__unwind_info: 0x3188
-+  __TEXT.__eh_frame: 0x2970
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1bc8
--  __DATA_CONST.__objc_classlist: 0x520
-+  __DATA_CONST.__const: 0x1c28
-+  __DATA_CONST.__objc_classlist: 0x4f8
-   __DATA_CONST.__objc_catlist: 0x20
--  __DATA_CONST.__objc_protolist: 0x1e8
-+  __DATA_CONST.__objc_protolist: 0x1c8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x31c0
--  __DATA_CONST.__objc_protorefs: 0xb8
-+  __DATA_CONST.__objc_selrefs: 0x3170
-+  __DATA_CONST.__objc_protorefs: 0x98
-   __DATA_CONST.__objc_superrefs: 0x358
-   __DATA_CONST.__objc_arraydata: 0x168
-   __DATA_CONST.__got: 0x6d0
--  __AUTH_CONST.__const: 0x3d80
--  __AUTH_CONST.__cfstring: 0x59e0
--  __AUTH_CONST.__objc_const: 0x12270
-+  __AUTH_CONST.__const: 0x38c8
-+  __AUTH_CONST.__cfstring: 0x5ac0
-+  __AUTH_CONST.__objc_const: 0x12168
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__objc_intobj: 0x540
-+  __AUTH_CONST.__objc_intobj: 0x558
-   __AUTH_CONST.__objc_arrayobj: 0x78
-   __AUTH_CONST.__objc_floatobj: 0x40
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0xd68
--  __AUTH.__objc_data: 0x1410
--  __AUTH.__data: 0x1820
--  __DATA.__objc_ivar: 0x688
--  __DATA.__data: 0x1ae0
--  __DATA.__bss: 0x2110
--  __DATA.__common: 0xe8
--  __DATA_DIRTY.__objc_data: 0x1900
--  __DATA_DIRTY.__bss: 0x148
-+  __AUTH_CONST.__auth_got: 0xd28
-+  __AUTH.__objc_data: 0x1188
-+  __AUTH.__data: 0x6d0
-+  __DATA.__objc_ivar: 0x680
-+  __DATA.__data: 0x1a10
-+  __DATA.__bss: 0x1d10
-+  __DATA.__common: 0xa8
-+  __DATA_DIRTY.__objc_data: 0x1890
-+  __DATA_DIRTY.__data: 0x13f0
-+  __DATA_DIRTY.__bss: 0x540
-+  __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/AppSupport.framework/AppSupport
--  - /System/Library/PrivateFrameworks/BackgroundSystemTasks.framework/BackgroundSystemTasks
-   - /System/Library/PrivateFrameworks/BiomeFoundation.framework/BiomeFoundation
-   - /System/Library/PrivateFrameworks/BiomePubSub.framework/BiomePubSub
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
+-239.0.2.0.0
++243.0.0.0.0
 
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
+-  - /System/Library/PrivateFrameworks/BackgroundSystemTasks.framework/BackgroundSystemTasks
+
 -  - /usr/lib/swift/libswiftSynchronization.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
+
 -  Functions: 4648
--  Symbols:   10302
--  CStrings:  2028
+-  Symbols:   5115
+-  CStrings:  1308
 +  Functions: 4553
-+  Symbols:   10136
-+  CStrings:  2008
- 
-Sections:
-~ __TEXT.__swift5_assocty : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
++  Symbols:   5051
++  CStrings:  1281
 Symbols:
 + +[CCDataResourceReadAccess _storageFootprintForResource:error:]
 + +[CCDataResourceReadAccess storageFootprintForSet:accessAssertion:error:]
@@ -196,18 +129,6 @@ Symbols:
 + ___block_descriptor_48_e8_32bs40w_e20_v20?0C8"NSError"12lw40l8s32l8
 + ___block_descriptor_56_e8_32r40r48r_e44_v28?0C8"NSError"12"CCSetDonationResult"20lr32l8r40l8r48l8
 + ___unnamed_25
-+ _objc_msgSend$_evictCacheContentWithPercentage:candidateBatchProvider:error:
-+ _objc_msgSend$_finishWithServiceOptions:outResult:error:
-+ _objc_msgSend$_requireOpenTransaction:
-+ _objc_msgSend$_storageFootprintForResource:error:
-+ _objc_msgSend$criterionWithColumnName:GREATERTHANColumnValue:
-+ _objc_msgSend$evictCacheContentWithStorageReductionPercentageTarget:evictionCandidateBatchProvider:reply:
-+ _objc_msgSend$evictCacheContentWithStorageReductionPercentageTarget:reply:
-+ _objc_msgSend$freelistBytes:
-+ _objc_msgSend$inTransaction
-+ _objc_msgSend$initWithInitialStorageFootprintBytes:finalStorageFootprintBytes:
-+ _objc_msgSend$truncateWALCheckpoint:
-+ _objc_msgSend$vacuum:
 + _swift_getEnumTagSinglePayloadGeneric
 + _swift_getSingletonMetadata
 + _swift_storeEnumTagSinglePayloadGeneric
@@ -327,24 +248,6 @@ Symbols:
 - _dlopenHelperFlag$BackgroundSystemTasks
 - _flat unique So16CCSetBookkeeping_p
 - _get_type_metadata 15Synchronization5MutexVySbG noncopyable
-- _objc_msgSend$_currentPersonaShouldSkipEnumeratingResource:
-- _objc_msgSend$_finishWithServiceOptions:error:
-- _objc_msgSend$_performNightlyMaintenanceSynchronously:options:completion:
-- _objc_msgSend$_resourceIsUserWithPotentialDomainOverrides:
-- _objc_msgSend$attributesOfItemAtPath:error:
-- _objc_msgSend$initWithQueue:setBookkeeping:
-- _objc_msgSend$initWithSetBookkeeping:
-- _objc_msgSend$openContainerForResource:mode:error:
-- _objc_msgSend$performMaintenanceOnAllSets:clientId:options:shouldDeferBlock:error:
-- _objc_msgSend$performNightlyMaintenanceWithOptions:completionHandler:
-- _objc_msgSend$register
-- _objc_msgSend$registerForTaskWithIdentifier:usingQueue:launchHandler:
-- _objc_msgSend$removeAllSets:useCase:error:
-- _objc_msgSend$resetRootDirectoryIfNecessary
-- _objc_msgSend$setExpirationHandler:
-- _objc_msgSend$setTaskCompleted
-- _objc_msgSend$setTaskExpiredWithRetryAfter:error:
-- _objc_msgSend$sharedScheduler
 - _swift_bridgeObjectRetain_n
 - _swift_deletedAsyncMethodErrorTu
 - _swift_runtimeSupportsNoncopyableTypes
@@ -454,5 +357,4 @@ CStrings:
 - "resetRootDirectoryIfNecessary found that the directory owner uid is %@ while the main process uid is %@. Using SetStoreUpdateService to remove the directory"
 - "root"
 - "select page_count * page_size as size FROM pragma_page_count(), pragma_page_size()"
-
 ```

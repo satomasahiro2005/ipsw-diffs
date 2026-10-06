@@ -2,17 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/BackBoardServices.framework/BackBoardServices`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -877.2.1.0.0
 +877.2.2.0.0
-   __TEXT.__text: 0x872b0
-   __TEXT.__objc_methlist: 0x8df4
-   __TEXT.__const: 0x3f8
 CStrings:
 + "BKSSystemShellDidReconnect-21000401"
 + "backboardd-attr-cache-21000401"

@@ -2,91 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/MediaExperience.framework/MediaExperience`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2ebccc` | `0x2534a8` | **`-0x98824`** |
+| `__TEXT.__oslogstring` | `0x790b0` | `0x4fcdf` | **`-0x293d1`** |
+| `__TEXT.__cstring` | `0x4e827` | `0x38c1a` | **`-0x15c0d`** |
+| `__TEXT.__gcc_except_tab` | `0x5248` | `0x4e0c` | **`-0x43c`** |
+| `__TEXT.__unwind_info` | `0x6410` | `0x5fe0` | **`-0x430`** |
+| `__AUTH_CONST.__cfstring` | `0x1c3e0` | `0x1c100` | **`-0x2e0`** |
+| `__AUTH_CONST.__objc_const` | `0xcec0` | `0xd190` | **`+0x2d0`** |
+| `__TEXT.__objc_methlist` | `0x87e8` | `0x88d8` | **`+0xf0`** |
+| `__DATA.__bss` | `0x12b8` | `0x1370` | **`+0xb8`** |
+| `__DATA.__common` | `0x680` | `0x5d0` | **`-0xb0`** |
+| `__DATA_DIRTY.__bss` | `0xd90` | `0xce8` | **`-0xa8`** |
+| `__AUTH.__objc_data` | `0x1d10` | `0x1db0` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x7350` | `0x72c0` | **`-0x90`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5420` | `0x54a8` | **`+0x88`** |
+| `__AUTH_CONST.__const` | `0x4908` | `0x4968` | **`+0x60`** |
+| `__DATA.__objc_ivar` | `0xc70` | `0xca4` | **`+0x34`** |
+| `__DATA_DIRTY.__common` | `0x90` | `0x60` | **`-0x30`** |
+| `__DATA.__data` | `0x1408` | `0x1428` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0xd08` | `0xd18` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x310` | `0x320` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x2e0` | `0x2f0` | **`+0x10`** |
+| `__TEXT.__const` | `0x1cf8` | `0x1d08` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -360.70.2.0.0
--  __TEXT.__text: 0x2ebccc
 +360.75.1.1.0
-+  __TEXT.__text: 0x2534a8
-   __TEXT.__delay_helper: 0x304
-   __TEXT.__lazy_helpers: 0xfc
--  __TEXT.__objc_methlist: 0x87e8
--  __TEXT.__cstring: 0x4e827
--  __TEXT.__const: 0x1cf8
--  __TEXT.__gcc_except_tab: 0x5248
--  __TEXT.__oslogstring: 0x790b0
-+  __TEXT.__objc_methlist: 0x88d8
-+  __TEXT.__cstring: 0x38c1a
-+  __TEXT.__const: 0x1d08
-+  __TEXT.__gcc_except_tab: 0x4e0c
-+  __TEXT.__oslogstring: 0x4fcdf
-   __TEXT.__dlopen_cstrs: 0x613
--  __TEXT.__unwind_info: 0x6410
-+  __TEXT.__unwind_info: 0x5fe0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7350
--  __DATA_CONST.__objc_classlist: 0x310
-+  __DATA_CONST.__const: 0x72c0
-+  __DATA_CONST.__objc_classlist: 0x320
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x68
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5420
-+  __DATA_CONST.__objc_selrefs: 0x54a8
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x2e0
-+  __DATA_CONST.__objc_superrefs: 0x2f0
-   __DATA_CONST.__objc_arraydata: 0xf8
--  __DATA_CONST.__got: 0xd08
--  __AUTH_CONST.__const: 0x4908
--  __AUTH_CONST.__cfstring: 0x1c3e0
--  __AUTH_CONST.__objc_const: 0xcec0
-+  __DATA_CONST.__got: 0xd18
-+  __AUTH_CONST.__const: 0x4968
-+  __AUTH_CONST.__cfstring: 0x1c100
-+  __AUTH_CONST.__objc_const: 0xd190
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__lazy_load_got: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x78
 
-   __AUTH_CONST.__objc_dictobj: 0x118
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x1d10
-+  __AUTH.__objc_data: 0x1db0
-   __AUTH.__data: 0x5f0
--  __DATA.__objc_ivar: 0xc70
--  __DATA.__data: 0x1408
--  __DATA.__bss: 0x12b8
--  __DATA.__common: 0x680
-+  __DATA.__objc_ivar: 0xca4
-+  __DATA.__data: 0x1428
-+  __DATA.__bss: 0x1370
-+  __DATA.__common: 0x5d0
-   __DATA_DIRTY.__objc_data: 0x190
--  __DATA_DIRTY.__bss: 0xd90
--  __DATA_DIRTY.__common: 0x90
-+  __DATA_DIRTY.__bss: 0xce8
-+  __DATA_DIRTY.__common: 0x60
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CoreAudio.framework/CoreAudio
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 11574
--  Symbols:   16164
--  CStrings:  14221
+-  Symbols:   13753
+-  CStrings:  14222
 +  Functions: 10098
-+  Symbols:   15985
-+  CStrings:  9875
- 
++  Symbols:   13561
++  CStrings:  9876
 Symbols:
 + +[MXSessionManager sendTelemetryForMatchRingtoneVolumeToggleChange]
 + -[MXEndpointDescriptorCache copyAvailableVAEndpoints:]
@@ -253,23 +208,6 @@ Symbols:
 + _kMXSystemMediaCastingControllerReplyParam_Result
 + _kMXVolumeOperationLog_RingtoneVolume
 + _mx_runningBoardServices_initializeGlobalAssertionProperties.onceToken
-+ _objc_msgSend$completeWithError:result:
-+ _objc_msgSend$completeWithReplyError:result:
-+ _objc_msgSend$domain
-+ _objc_msgSend$failUnresponsiveWithError:
-+ _objc_msgSend$flushPendingHandlersWithError:
-+ _objc_msgSend$getAudioVideoVolumeForCurrentRoute
-+ _objc_msgSend$handleAsyncResult:
-+ _objc_msgSend$initWithClient:resultOpCode:requestID:
-+ _objc_msgSend$initWithOperation:instance:completion:
-+ _objc_msgSend$noteUnresponsiveExtensionForOperation:error:
-+ _objc_msgSend$postNotificationToAVVolumeClientsWithAudioVideoCategoryAndVolume
-+ _objc_msgSend$registerPendingHandler:
-+ _objc_msgSend$remoteObjectProxyWithErrorHandler:
-+ _objc_msgSend$resolveUnresponsive:error:result:
-+ _objc_msgSend$sendTelemetryForMatchRingtoneVolumeToggleChange
-+ _objc_msgSend$sendVolumeRequestForOperation:completionHandler:send:
-+ _objc_msgSend$takePendingHandlerForRequestID:
 + _sCMSessionMgrAudioDeviceStartIdleSleepPreventor
 + _sCMSessionMgrAudioDeviceStartIdleSleepPreventorAllocated
 + _sCMSessionMgrAudioDeviceStartIdleSleepPreventorCreationTime
@@ -624,10 +562,6 @@ Symbols:
 - _gSTSTrace
 - _gVibeSynthDylibHandle
 - _getnw_path_uses_interface_typeSymbolLoc.ptr
-- _objc_msgSend$getCleanupSessionAssertionReasonString:
-- _objc_msgSend$readHDMILatencyFromCoreAnimation
-- _objc_msgSend$sendTelemetryForMatchRingtoneVolumeToggleChange:followingRingtone:
-- _objc_msgSend$typeAsAString
 - _pvmCopyMappedCategoryAndMode
 - _pvmInitialize
 - _pvmRawVolumeToVolume
@@ -667,6 +601,8 @@ CStrings:
 + "-[MXSystemCastingExtensionInstance startApplicationWithURL:applicationID:launchType:withCompletionHandler:]_block_invoke_2"
 + "-[MXSystemMediaCastingController_Client handleAsyncResult:]"
 + "-[MXVolumeClientManager postNotificationToAVVolumeClientsWithAudioVideoCategoryAndVolume]"
++ "08:54:07"
++ "Aug  4 2026"
 + "CMSMMDE_Initialize_block_invoke_2"
 + "Extension was unresponsive to a request"
 + "FigRoutingManagerContextUtilities_AddCurrentlyActivatingEndpoint_block_invoke_2"
@@ -3142,6 +3078,7 @@ CStrings:
 - "-stark mode- %s: carPlayEndpoint or currentExtendedEndpoint is NULL"
 - "-stark mode- %s: controller is NULL"
 - "0 for ShadowingAudioSessionID, must be non-zero"
+- "22:44:50"
 - "AN"
 - "AVAILABLE"
 - "AVSystemController.m"
@@ -3770,6 +3707,7 @@ CStrings:
 - "IsRecordingMutedForRemoteDevice requires FF support"
 - "IsRemoteDeviceInputControlAllowed requires FF support"
 - "IsSharePlayCapableCallSession needs to have phone call behavior"
+- "Jul 10 2026"
 - "Long-form video routing session manager not yet allocated.  Call FigRoutingSessionManagerInit first"
 - "LookupEndpointUIAgentByObjectIDForConnection"
 - "LookupRouteDiscovererByObjectIDForConnection"

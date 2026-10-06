@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/iCloudMailAccountUI.framework/iCloudMailAccountUI`
 
-```diff
+### Section Size Changes
 
- 2027.0.5.0.0
--  __TEXT.__text: 0x5370c
-+  __TEXT.__text: 0x53748
-   __TEXT.__objc_methlist: 0x4bc
-   __TEXT.__const: 0x41e4
-   __TEXT.__cstring: 0x141c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5370c` | `0x53748` | **`+0x3c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s19iCloudMailAccountUI0C7BagKeysV0B9AssistantV9getDomain05appleC0SSSo9ACAccountC_tFZ : 716 -> 720
 ~ _$s19iCloudMailAccountUI9MSRequestC13apiGatewayUrlSSvg : 780 -> 784

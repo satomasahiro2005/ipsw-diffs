@@ -2,21 +2,22 @@
 
 > `/Applications/PreBoard.app/PreBoard`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__unwind_info`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xca18` | `0xca1c` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__const`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 4636.115.0.0.0
--  __TEXT.__text: 0xca18
-+  __TEXT.__text: 0xca1c
-   __TEXT.__auth_stubs: 0x650
-   __TEXT.__objc_stubs: 0x3640
-   __TEXT.__objc_methlist: 0x15e8
+```text
 Functions:
 ~ sub_1000059c8 : 636 -> 640
 ```

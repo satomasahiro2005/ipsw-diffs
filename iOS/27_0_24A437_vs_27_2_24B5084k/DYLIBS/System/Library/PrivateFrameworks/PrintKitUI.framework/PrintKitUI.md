@@ -2,69 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/PrintKitUI.framework/PrintKitUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6590c` | `0x64aa8` | **`-0xe64`** |
+| `__AUTH_CONST.__objc_const` | `0xa750` | `0xa560` | **`-0x1f0`** |
+| `__TEXT.__objc_methlist` | `0x7184` | `0x70a4` | **`-0xe0`** |
+| `__AUTH.__objc_data` | `0x1630` | `0x15e0` | **`-0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x1ba8` | `0x1bf4` | **`+0x4c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4988` | `0x4948` | **`-0x40`** |
+| `__DATA.__objc_ivar` | `0x7d0` | `0x7b4` | **`-0x1c`** |
+| `__TEXT.__const` | `0x310` | `0x300` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x918` | `0x910` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x288` | `0x280` | **`-0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x240` | `0x238` | **`-0x8`** |
+| `__TEXT.__cstring` | `0x2a97` | `0x2a95` | **`-0x2`** |
+
+### Other Changes
+
 ```diff
 
 -97.0.0.0.0
--  __TEXT.__text: 0x63894
--  __TEXT.__objc_methlist: 0x7184
--  __TEXT.__const: 0x310
--  __TEXT.__gcc_except_tab: 0x1ba8
--  __TEXT.__cstring: 0x2a97
 +97.2.0.0.0
-+  __TEXT.__text: 0x62a48
-+  __TEXT.__objc_methlist: 0x70a4
-+  __TEXT.__const: 0x300
-+  __TEXT.__gcc_except_tab: 0x1bf4
-+  __TEXT.__cstring: 0x2a95
-   __TEXT.__ustring: 0x182
-   __TEXT.__dlopen_cstrs: 0x95
--  __TEXT.__unwind_info: 0x1b88
-+  __TEXT.__unwind_info: 0x1b80
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xf60
--  __DATA_CONST.__objc_classlist: 0x288
-+  __DATA_CONST.__objc_classlist: 0x280
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x110
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4988
-+  __DATA_CONST.__objc_selrefs: 0x4948
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x240
-+  __DATA_CONST.__objc_superrefs: 0x238
-   __DATA_CONST.__objc_arraydata: 0x358
--  __DATA_CONST.__got: 0x918
-+  __DATA_CONST.__got: 0x910
-   __AUTH_CONST.__const: 0x160
-   __AUTH_CONST.__cfstring: 0x3b80
--  __AUTH_CONST.__objc_const: 0xa750
-+  __AUTH_CONST.__objc_const: 0xa560
-   __AUTH_CONST.__objc_intobj: 0x468
-   __AUTH_CONST.__objc_arrayobj: 0x78
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x1630
--  __DATA.__objc_ivar: 0x7d0
-+  __AUTH.__objc_data: 0x15e0
-+  __DATA.__objc_ivar: 0x7b4
-   __DATA.__data: 0xcd8
-   __DATA_DIRTY.__objc_data: 0x320
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2303
--  Symbols:   6213
+-  Symbols:   4285
 +  Functions: 2285
-+  Symbols:   6168
-   CStrings:  560
- 
++  Symbols:   4253
 Symbols:
 + -[UIPrintInteractionController updatePageCountWithRanges:]
 + -[UIPrintPanelViewController compactPreviewController]
@@ -113,21 +78,6 @@ Symbols:
 + _OBJC_IVAR_$_UIPrintPreviewViewController._usingGlassLayoutButton
 + _OBJC_IVAR_$_UIPrintPreviewViewController._usingSideBar
 + ___block_descriptor_64_e8_32s40s48s56w_e8_v16?0q8lw56l8s32l8s40l8s48l8
-+ _objc_msgSend$_setCollapsingEnabled:
-+ _objc_msgSend$compactPreviewController
-+ _objc_msgSend$constant
-+ _objc_msgSend$hideColumn:
-+ _objc_msgSend$initWithPrintPanelViewController:usingSideBar:withContainerView:
-+ _objc_msgSend$layoutGlassButtonInset
-+ _objc_msgSend$setCompactPreviewController:
-+ _objc_msgSend$setSidebarPreviewController:
-+ _objc_msgSend$setUsingGlassLayoutButton:
-+ _objc_msgSend$setUsingSideBar:
-+ _objc_msgSend$showColumn:
-+ _objc_msgSend$sidebarPreviewController
-+ _objc_msgSend$updatePageCountWithRanges:
-+ _objc_msgSend$usingGlassLayoutButton
-+ _objc_msgSend$usingSideBar
 - -[UIPrintInteractionController _currentPrintInfo]
 - -[UIPrintInteractionController pageRanges]
 - -[UIPrintInteractionController setPageRanges:]
@@ -207,34 +157,6 @@ Symbols:
 - __OBJC_CLASS_RO_$_UIPrintPreviewContainerView
 - __OBJC_METACLASS_RO_$_UIPrintPreviewContainerView
 - ___block_descriptor_64_e8_32s40s48s56s_e8_v16?0q8ls32l8s40l8s48l8s56l8
-- _objc_msgSend$_currentPrintInfo
-- _objc_msgSend$_sceneUserResizability
-- _objc_msgSend$compactPreviewViewController
-- _objc_msgSend$horizScrollPrintPanelConstraints
-- _objc_msgSend$initWithImage:menu:
-- _objc_msgSend$initWithPrintPanelViewController:useCompactPreview:withContainerView:
-- _objc_msgSend$layoutBarButton
-- _objc_msgSend$layoutMargins
-- _objc_msgSend$navigationBar
-- _objc_msgSend$previewScrollDirection
-- _objc_msgSend$previewVertSeparatorView
-- _objc_msgSend$printOptionsLeadingConstraint
-- _objc_msgSend$printOptionsWidthConstraint
-- _objc_msgSend$setCompactPreviewViewController:
-- _objc_msgSend$setHorizScrollPrintPanelConstraints:
-- _objc_msgSend$setLayoutBarButton:
-- _objc_msgSend$setPreviewVertSeparatorView:
-- _objc_msgSend$setSidebarPreviewViewController:
-- _objc_msgSend$setSolariumEnabled:
-- _objc_msgSend$setUsingCompactPreview:
-- _objc_msgSend$setUsingSplitView:
-- _objc_msgSend$setVertScrollPrintPanelConstraints:
-- _objc_msgSend$sidebarPreviewViewController
-- _objc_msgSend$solariumEnabled
-- _objc_msgSend$topItem
-- _objc_msgSend$usingCompactPreview
-- _objc_msgSend$usingSplitView
-- _objc_msgSend$vertScrollPrintPanelConstraints
 CStrings:
 + "q\xf0\xe1"
 + "\xf0\xf0\""

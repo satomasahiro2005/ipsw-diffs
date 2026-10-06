@@ -2,27 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/NotesSiriUI.framework/NotesSiriUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__swift5_typeref` | `0x444f` | `0x452b` | **`+0xdc`** |
+| `__TEXT.__text` | `0x16de8` | `0x16e40` | **`+0x58`** |
+
+### Other Changes
+
 ```diff
 
 -3001.2.2.0.0
--  __TEXT.__text: 0x16350
 +3001.40.8.100.1
-+  __TEXT.__text: 0x163a8
-   __TEXT.__objc_methlist: 0x5ec
-   __TEXT.__const: 0xd50
--  __TEXT.__swift5_typeref: 0x444f
-+  __TEXT.__swift5_typeref: 0x452b
-   __TEXT.__swift5_fieldmd: 0x448
-   __TEXT.__constg_swiftt: 0x5c4
-   __TEXT.__swift5_reflstr: 0x451
 
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 400
--  Symbols:   600
-+  Symbols:   601
-   CStrings:  17
- 
+-  Symbols:   500
++  Symbols:   501
 Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyAA6VStackVyAA05TupleD0VyACyAA6SpacerVAA12_FrameLayoutVG_AA6HStackVyAGyAEyAGyANyAGyACyANyAA012_ConditionalD0VyAPyAPyACyACyACyAA5ImageVAA24_ForegroundStyleModifierVyAA017HierarchicalShapeN0VGGAA022_EnvironmentKeyWritingO0VyAA4FontVSgGGAZyAR5ScaleOGGA7_GAPyACyACyACyACyArZyAA5ColorVSgGGAWGA2_GA6_GACyACyAXA6_GA2_GGGAPyA16_AIGGGAKG_ACyACyAA4TextVAZySiSgGGAA010_AlignmenttO0VGQPGG_ANyAGyACyANyAPyA18_ACyACyAIA6_GAKGGGAKG_ACyACyANyAGyA26__APyA26_A26_GSgQPGGAWGA28_GQPGGANyAGyA36__ACyACyANyAGyA26__A26_QPGGA2_GAWGQPGGQPGG_AGyAI_ACyA10_AKGAEyAA05AsyncL0VyAPyACyACyACyAA4ViewP05NotesB0E10squareCropQryFQOyAR_Qo_AKGAA11_ClipEffectVyAA16RoundedRectangleVGGAA08_OverlayO0VyAA06StrokeQ4ViewVyA68_AvA9EmptyViewVGGGA56_GGGQPGSgQPGGALQPGGAA05_FlexhI0VGAA08_PaddingI0VGAAA59_HPA91_AAA59_HPA88_AAA59_HPyHC_A90_AA04ViewO0HPyHCHC_A93_AAA95_HPyHCHC
 + _symbolic _____yAAy_____y_____yAAy__________G______yACyAByACyAGyACyAAyAGy_____yAHyAHyAAyAAyAAy__________y_____GG_____y_____SgGGANy_____GGAUGAHyAAyAAyAAyAAyAiNy_____SgGGALGAQGATGAAyAAyAmTGAQGGGAHyA1_ADGGGAEG_AAyAAy_____ANySiSgGG_____GQPGG_AGyACyAAyAGyAHyA3_AAyAAyAdTGAEGGGAEG_AAyAAyAGyACyA10__AHyA10_A10_GSgQPGGALGA12_GQPGGAGyACyA19__AAyAAyAGyACyA10__A10_QPGGAQGALGQPGGQPGG_ACyAD_AAyAwEGABy_____yAHyAAyAAyAAy_____yAI_Qo_AEG_____y_____GG_____y_____yA44_AK_____GGGA39_GGGQPGSgQPGGAFQPGG_____G_____G 7SwiftUI15ModifiedContentV AA6VStackV AA05TupleD0V AA6SpacerV AA12_FrameLayoutV AA6HStackV AA012_ConditionalD0V AA5ImageV AA24_ForegroundStyleModifierV AA017HierarchicalShapeN0V AA022_EnvironmentKeyWritingO0V AA4FontV AQ5ScaleO AA5ColorV AA4TextV AA010_AlignmenttO0V AA05AsyncL0V AA4ViewP05NotesB0E10squareCropQryFQO AA11_ClipEffectV AA16RoundedRectangleV AA08_OverlayO0V AA06StrokeQ4ViewV AA9EmptyViewV AA05_FlexhI0V AA08_PaddingI0V
@@ -62,6 +57,6 @@ Symbols:
 - _symbolic _____y_____y_____yACyACyAAyAAyAAy__________y_____GG_____y_____SgGGAIy_____GGAPGACyAAyAAyAAyAAyAdIy_____SgGGAGGALGAOGAAyAAyAhOGALGGG_____GG_____G_AAyAAy_____AIySiSgGG_____Gt 7SwiftUI15ModifiedContentV AA6HStackV AA012_ConditionalD0V AA5ImageV AA24_ForegroundStyleModifierV AA017HierarchicalShapeI0V AA022_EnvironmentKeyWritingJ0V AA4FontV AI5ScaleO AA5ColorV AA6SpacerV AA12_FrameLayoutV AA4TextV AA010_AlignmentoJ0V
 - _symbolic _____y_____y_____y__________G______yAByAAyAByAGyAByACyAGy_____yAHyAHyACyACyACy__________y_____GG_____y_____SgGGANy_____GGAUGAHyACyACyACyACyAiNy_____SgGGALGAQGATGACyACyAmTGAQGGGADGGAEG_ACyACy_____ANySiSgGG_____GQPGG_AGyAByACyAGyAHyA3_ACyACyAdTGAEGGGAEG_ACyACyAGyAByA9__AHyA9_A9_GSgQPGGALGA11_GQPGGAGyAByA18__ACyACyAGyAByA9__A9_QPGGAQGALGQPGGQPGG_AByAD_ACyAwEGAAy_____yAHyACyACyACy_____yAI_Qo_AEG_____y_____GG_____y_____yA43_AK_____GGGA38_GGGQPGSgQPGGAFQPGG 7SwiftUI6VStackV AA12TupleContentV AA08ModifiedE0V AA6SpacerV AA12_FrameLayoutV AA6HStackV AA012_ConditionalE0V AA5ImageV AA24_ForegroundStyleModifierV AA017HierarchicalShapeN0V AA022_EnvironmentKeyWritingO0V AA4FontV AQ5ScaleO AA5ColorV AA4TextV AA010_AlignmenttO0V AA05AsyncL0V AA4ViewP05NotesB0E10squareCropQryFQO AA11_ClipEffectV AA16RoundedRectangleV AA08_OverlayO0V AA06StrokeQ4ViewV AA9EmptyViewV
 Functions:
-~ sub_29117f1f4 -> sub_296b42214 : 2360 -> 2412
-~ sub_2911844b4 -> sub_296b47508 : 1140 -> 1176
+~ sub_29433c38c -> sub_29a35f3ac : 2400 -> 2452
+~ sub_294341888 -> sub_29a3648dc : 1152 -> 1188
 ```

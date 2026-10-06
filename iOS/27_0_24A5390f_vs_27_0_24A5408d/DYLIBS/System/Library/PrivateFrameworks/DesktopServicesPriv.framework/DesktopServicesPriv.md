@@ -2,72 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/DesktopServicesPriv.framework/DesktopServicesPriv`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x18e2e4` | `0x1a2c4c` | **`+0x14968`** |
+| `__TEXT.__gcc_except_tab` | `0x26b78` | `0x28f3c` | **`+0x23c4`** |
+| `__TEXT.__cstring` | `0x63ce` | `0x6f2c` | **`+0xb5e`** |
+| `__TEXT.__unwind_info` | `0xc130` | `0xc8d0` | **`+0x7a0`** |
+| `__TEXT.__oslogstring` | `0x887e` | `0x8e12` | **`+0x594`** |
+| `__AUTH_CONST.__const` | `0x93e0` | `0x9870` | **`+0x490`** |
+| `__AUTH_CONST.__cfstring` | `0x3900` | `0x3d40` | **`+0x440`** |
+| `__TEXT.__const` | `0x8d25` | `0x90a7` | **`+0x382`** |
+| `__TEXT.__objc_methlist` | `0x466c` | `0x49ac` | **`+0x340`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2770` | `0x2908` | **`+0x198`** |
+| `__AUTH_CONST.__objc_const` | `0x71c0` | `0x72c8` | **`+0x108`** |
+| `__DATA_CONST.__const` | `0x1070` | `0xfc0` | **`-0xb0`** |
+| `__DATA.__objc_ivar` | `0x3f4` | `0x40c` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0xb38` | `0xb50` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
 -1854.0.0.0.0
--  __TEXT.__text: 0x18e2e4
--  __TEXT.__objc_methlist: 0x466c
--  __TEXT.__gcc_except_tab: 0x26b78
--  __TEXT.__const: 0x8d25
--  __TEXT.__cstring: 0x63ce
--  __TEXT.__oslogstring: 0x887e
 +1857.0.0.0.0
-+  __TEXT.__text: 0x1a2c4c
-+  __TEXT.__objc_methlist: 0x49ac
-+  __TEXT.__gcc_except_tab: 0x28f3c
-+  __TEXT.__const: 0x90a7
-+  __TEXT.__cstring: 0x6f2c
-+  __TEXT.__oslogstring: 0x8e12
-   __TEXT.__ustring: 0x24
--  __TEXT.__unwind_info: 0xc130
-+  __TEXT.__unwind_info: 0xc8d0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1070
-+  __DATA_CONST.__const: 0xfc0
-   __DATA_CONST.__objc_classlist: 0x2f8
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x2770
-+  __DATA_CONST.__objc_selrefs: 0x2908
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__objc_superrefs: 0x1b0
-   __DATA_CONST.__objc_arraydata: 0x88
--  __DATA_CONST.__got: 0xb38
--  __AUTH_CONST.__const: 0x93e0
--  __AUTH_CONST.__cfstring: 0x3900
--  __AUTH_CONST.__objc_const: 0x71c0
-+  __DATA_CONST.__got: 0xb50
-+  __AUTH_CONST.__const: 0x9870
-+  __AUTH_CONST.__cfstring: 0x3d40
-+  __AUTH_CONST.__objc_const: 0x72c8
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x138
-   __AUTH_CONST.__objc_arrayobj: 0x30
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__auth_got: 0x1128
-   __AUTH.__objc_data: 0x1d88
--  __DATA.__objc_ivar: 0x3f4
-+  __DATA.__objc_ivar: 0x40c
-   __DATA.__data: 0xc70
-   __DATA.__common: 0x121
-   __DATA.__bss: 0x1150
 
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 7665
--  Symbols:   13422
+-  Symbols:   12428
 -  CStrings:  1817
 +  Functions: 7921
-+  Symbols:   13837
++  Symbols:   12796
 +  CStrings:  1924
- 
 Symbols:
 + +[FIOperation conflictForFPError:]
 + +[FIOperation fpCollisionRecoveryPolicyForResolution:]
@@ -632,54 +598,6 @@ Symbols:
 + ___destroy_helper_block_ea8_32c91_ZTSKZZ55-[FIOperation configureCompletionHandlers:fpOperation:]ENK4$_83clEbP7NSErrorEUlvE_
 + ___destroy_helper_block_ea8_32c93_ZTSKZZ33-[FIOperation executeDSOperation]ENK4$_50clE16NodeSuboperationP13OpaqueNodeRefEUlvE_
 + ___destroy_helper_block_ea8_32c95_ZTSKZZ46-[FIOperation scheduleFPOperation:completion:]ENK4$_26clEP11objc_objectP7NSErrorEUlmE_
-+ _objc_msgSend$_applyResolution:toRemainingConflicts:
-+ _objc_msgSend$_canContinueAfterConflict:
-+ _objc_msgSend$_canSkipAfterConflict:
-+ _objc_msgSend$_resolutionForStopAfterConflict:
-+ _objc_msgSend$_resolutionToContinueAfterConflict:
-+ _objc_msgSend$addConflict:
-+ _objc_msgSend$applyResolutionsForCollidingItems:recordsByItem:destinationPath:
-+ _objc_msgSend$cachedResolutionForConflict:
-+ _objc_msgSend$canApplyResolutionToConflict:
-+ _objc_msgSend$canContinueAfterCopyConflict:
-+ _objc_msgSend$canContinueAfterDuplicationConflict:
-+ _objc_msgSend$conflictForFPError:
-+ _objc_msgSend$conflictOpRecord
-+ _objc_msgSend$createdFPOperation:
-+ _objc_msgSend$fpCollisionRecoveryPolicyForResolution:
-+ _objc_msgSend$fpSecondaryOperation
-+ _objc_msgSend$fp_addDocumentTrackingWithError:
-+ _objc_msgSend$fp_isFileProviderError:
-+ _objc_msgSend$fp_userInfoFPItem
-+ _objc_msgSend$handleRecoverableFPError:
-+ _objc_msgSend$initialResolutionForConflict:
-+ _objc_msgSend$initialResolutionForCopyConflict:
-+ _objc_msgSend$initialResolutionForDuplicationConflict:
-+ _objc_msgSend$makeOperationRecordForFPError:completion:
-+ _objc_msgSend$makeOperationRecordForFPItem:completion:
-+ _objc_msgSend$mostImportantCopyConflict:
-+ _objc_msgSend$mostImportantDuplicationConflict:
-+ _objc_msgSend$needsFPNameConflictPreflight
-+ _objc_msgSend$outOfBandIndexItemIDs:completionHandler:
-+ _objc_msgSend$preflightFPNameConflictsWithCompletion:
-+ _objc_msgSend$preflightTargetFilenamesByFPItem
-+ _objc_msgSend$removeItemAtPath:error:
-+ _objc_msgSend$removeObjectsInArray:
-+ _objc_msgSend$reportOperationError:
-+ _objc_msgSend$resolutionForFPConflict:opRecord:
-+ _objc_msgSend$resolutionToContinueAfterCopyConflict:
-+ _objc_msgSend$resolutionToContinueAfterDuplicationConflict:
-+ _objc_msgSend$scheduleFPOperation:completion:
-+ _objc_msgSend$scheduleFPOperations
-+ _objc_msgSend$scheduleFPOperationsAfterPreflight:
-+ _objc_msgSend$selectResult:orTransferResultsForOp:
-+ _objc_msgSend$setConflictOpRecord:
-+ _objc_msgSend$setDuplication:
-+ _objc_msgSend$setFpSecondaryOperation:
-+ _objc_msgSend$setPreflightTargetFilenamesByFPItem:
-+ _objc_msgSend$setResolution:forConflict:
-+ _objc_msgSend$transferResults
-+ _objc_msgSend$uniqueNameByAppendingNumber:fileExtension:
 - -[FICopyOperation initialResolution:forConflict:]
 - -[FICopyOperation isDuplication]
 - -[FICopyOperation shouldExecuteDSOperation]
@@ -875,7 +793,6 @@ Symbols:
 - ___destroy_helper_block_ea8_32c88_ZTSKZZ45-[FIOperation fetchNodesAsyncFor:completion:]ENK4$_85clEvEUlP6FINodeP7NSErrorE_
 - ___destroy_helper_block_ea8_32c91_ZTSKZZ55-[FIOperation configureCompletionHandlers:fpOperation:]ENK4$_81clEbP7NSErrorEUlvE_
 - ___destroy_helper_block_ea8_32c93_ZTSKZZ33-[FIOperation executeDSOperation]ENK4$_48clE16NodeSuboperationP13OpaqueNodeRefEUlvE_
-- _objc_msgSend$initialResolution:forConflict:
 CStrings:
 + "\n\t "
 + "%{public}@ - %lu of %lu source items collide with the destination"

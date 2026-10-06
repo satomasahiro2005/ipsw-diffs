@@ -2,96 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/LocalAuthenticationCore.framework/LocalAuthenticationCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x195984` | `0x196e28` | **`+0x14a4`** |
+| `__AUTH_CONST.__objc_const` | `0x595b0` | `0x59880` | **`+0x2d0`** |
+| `__AUTH_CONST.__cfstring` | `0x76c0` | `0x77e0` | **`+0x120`** |
+| `__TEXT.__cstring` | `0x109d8` | `0x10a98` | **`+0xc0`** |
+| `__AUTH_CONST.__const` | `0x8998` | `0x8a48` | **`+0xb0`** |
+| `__AUTH.__data` | `0x24b0` | `0x2558` | **`+0xa8`** |
+| `__TEXT.__objc_methlist` | `0xd410` | `0xd4b0` | **`+0xa0`** |
+| `__TEXT.__const` | `0xae4c` | `0xaed4` | **`+0x88`** |
+| `__AUTH.__objc_data` | `0x76c0` | `0x7730` | **`+0x70`** |
+| `__DATA.__data` | `0x7730` | `0x7798` | **`+0x68`** |
+| `__TEXT.__unwind_info` | `0x6b00` | `0x6b58` | **`+0x58`** |
+| `__TEXT.__swift5_capture` | `0x1ad0` | `0x1b20` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0xd28` | `0xd70` | **`+0x48`** |
+| `__DATA_CONST.__objc_selrefs` | `0x49f0` | `0x4a20` | **`+0x30`** |
+| `__TEXT.__gcc_except_tab` | `0x1790` | `0x17c0` | **`+0x30`** |
+| `__TEXT.__oslogstring` | `0xb0c5` | `0xb0f5` | **`+0x30`** |
+| `__TEXT.__constg_swiftt` | `0x2eb8` | `0x2ee0` | **`+0x28`** |
+| `__TEXT.__swift5_fieldmd` | `0x282c` | `0x2848` | **`+0x1c`** |
+| `__TEXT.__swift5_typeref` | `0x40f8` | `0x410a` | **`+0x12`** |
+| `__AUTH_CONST.__auth_got` | `0x1578` | `0x1588` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x8ac` | `0x8b4` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0xc28` | `0xc30` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x528` | `0x530` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x444` | `0x448` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0x2c0` | `0x2c4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2319.0.63.0.0
--  __TEXT.__text: 0x189090
--  __TEXT.__objc_methlist: 0xd410
--  __TEXT.__const: 0xae4c
--  __TEXT.__gcc_except_tab: 0x1790
--  __TEXT.__oslogstring: 0xb0c5
--  __TEXT.__cstring: 0x109d8
 +2319.40.29.0.0
-+  __TEXT.__text: 0x18a404
-+  __TEXT.__objc_methlist: 0xd4b0
-+  __TEXT.__const: 0xaed4
-+  __TEXT.__gcc_except_tab: 0x17c0
-+  __TEXT.__oslogstring: 0xb0f5
-+  __TEXT.__cstring: 0x10a98
-   __TEXT.__dlopen_cstrs: 0x705
--  __TEXT.__swift5_typeref: 0x40f8
-+  __TEXT.__swift5_typeref: 0x410a
-   __TEXT.__swift5_reflstr: 0x206e
-   __TEXT.__swift5_assocty: 0x600
--  __TEXT.__constg_swiftt: 0x2eb8
--  __TEXT.__swift5_fieldmd: 0x282c
-+  __TEXT.__constg_swiftt: 0x2ee0
-+  __TEXT.__swift5_fieldmd: 0x2848
-   __TEXT.__swift5_builtin: 0x258
-   __TEXT.__swift5_protos: 0xc0
--  __TEXT.__swift5_proto: 0x444
--  __TEXT.__swift5_types: 0x2c0
--  __TEXT.__swift5_capture: 0x1ad0
-+  __TEXT.__swift5_proto: 0x448
-+  __TEXT.__swift5_types: 0x2c4
-+  __TEXT.__swift5_capture: 0x1b20
-   __TEXT.__swift_as_entry: 0x144
-   __TEXT.__swift_as_cont: 0x1f4
-   __TEXT.__swift_as_ret: 0x138
-   __TEXT.__swift5_mpenum: 0x2c
--  __TEXT.__unwind_info: 0x8f30
-+  __TEXT.__unwind_info: 0x8f90
-   __TEXT.__eh_frame: 0x3200
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x5618
--  __DATA_CONST.__objc_classlist: 0xc28
-+  __DATA_CONST.__objc_classlist: 0xc30
-   __DATA_CONST.__objc_protolist: 0xa50
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x49f0
-+  __DATA_CONST.__objc_selrefs: 0x4a20
-   __DATA_CONST.__objc_protorefs: 0x4d0
--  __DATA_CONST.__objc_superrefs: 0x528
-+  __DATA_CONST.__objc_superrefs: 0x530
-   __DATA_CONST.__objc_arraydata: 0x40
--  __DATA_CONST.__got: 0xd28
--  __AUTH_CONST.__const: 0x8998
--  __AUTH_CONST.__cfstring: 0x76c0
--  __AUTH_CONST.__objc_const: 0x595b0
-+  __DATA_CONST.__got: 0xd70
-+  __AUTH_CONST.__const: 0x8a48
-+  __AUTH_CONST.__cfstring: 0x77e0
-+  __AUTH_CONST.__objc_const: 0x59880
-   __AUTH_CONST.__objc_intobj: 0x360
-   __AUTH_CONST.__objc_arrayobj: 0x78
--  __AUTH_CONST.__auth_got: 0x1578
--  __AUTH.__objc_data: 0x76c0
--  __AUTH.__data: 0x24b0
--  __DATA.__objc_ivar: 0x8ac
--  __DATA.__data: 0x7730
-+  __AUTH_CONST.__auth_got: 0x1588
-+  __AUTH.__objc_data: 0x7730
-+  __AUTH.__data: 0x2558
-+  __DATA.__objc_ivar: 0x8b4
-+  __DATA.__data: 0x7798
-   __DATA.__common: 0x38
-   __DATA_DIRTY.__objc_data: 0xe38
-   __DATA_DIRTY.__data: 0x1938
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 10894
--  Symbols:   23867
+-  Symbols:   21968
 -  CStrings:  3123
 +  Functions: 10929
-+  Symbols:   23938
++  Symbols:   22035
 +  CStrings:  3132
- 
 Symbols:
 + -[LACDTOLostModeProviderAKAdapter _analyticsOutcomeForError:]
 + -[LACDTOLostModeProviderAKAdapter initWithWorkQueue:deviceInfo:telemetry:]
@@ -170,10 +123,6 @@ Symbols:
 + _der_key_state_abs_last_passcode_auth
 + _der_key_state_abs_last_passcode_unlock
 + _der_key_state_abs_lock_time
-+ _objc_msgSend$_analyticsOutcomeForError:
-+ _objc_msgSend$elapsedMilliseconds
-+ _objc_msgSend$sendLostModeQueryResult:lost:confirmed:durationMs:
-+ _objc_msgSend$sendRatchetConfigAnomaly:secondsSinceBoot:
 + _symbolic _____ 23LocalAuthenticationCore18LACSuspendingClockV
 + _symbolic _____ s15SuspendingClockV
 + _symbolic _____ s15SuspendingClockV7InstantV

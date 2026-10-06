@@ -2,70 +2,44 @@
 
 > `/usr/libexec/gamecontrollerd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__data` | `0x248` | `0x308` | **`+0xc0`** |
+| `__TEXT.__text` | `0x1fcc` | `0x207c` | **`+0xb0`** |
+| `__DATA.__objc_const` | `0xbb8` | `0xc60` | **`+0xa8`** |
+| `__TEXT.__objc_methtype` | `0x655` | `0x6e8` | **`+0x93`** |
+| `__TEXT.__objc_methname` | `0xc4e` | `0xcd5` | **`+0x87`** |
+| `__TEXT.__objc_methlist` | `0x494` | `0x4dc` | **`+0x48`** |
+| `__TEXT.__objc_classname` | `0xc0` | `0xfb` | **`+0x3b`** |
+| `__DATA.__objc_selrefs` | `0x3c8` | `0x3e8` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0xc8` | `0xd8` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x30` | `0x40` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x20` | `0x30` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x4c` | `0x54` | **`+0x8`** |
+| `__TEXT.__cstring` | `0x315` | `0x316` | **`+0x1`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
 - `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA.__objc_data`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -14.0.19.0.0
--  __TEXT.__text: 0x1fcc
 +14.0.21.0.0
-+  __TEXT.__text: 0x207c
-   __TEXT.__auth_stubs: 0x380
-   __TEXT.__objc_stubs: 0x6e0
--  __TEXT.__objc_methlist: 0x494
--  __TEXT.__objc_classname: 0xc0
--  __TEXT.__objc_methname: 0xc4e
--  __TEXT.__objc_methtype: 0x655
--  __TEXT.__cstring: 0x315
-+  __TEXT.__objc_methlist: 0x4dc
-+  __TEXT.__objc_classname: 0xfb
-+  __TEXT.__objc_methname: 0xcd5
-+  __TEXT.__objc_methtype: 0x6e8
-+  __TEXT.__cstring: 0x316
-   __TEXT.__oslogstring: 0x19e
-   __TEXT.__gcc_except_tab: 0xb0
-   __TEXT.__const: 0x18
 
-   __DATA_CONST.__const: 0x1a0
-   __DATA_CONST.__cfstring: 0x1e0
-   __DATA_CONST.__objc_classlist: 0x18
--  __DATA_CONST.__objc_protolist: 0x30
-+  __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_protorefs: 0x20
-+  __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__objc_superrefs: 0x10
-   __DATA_CONST.__auth_got: 0x1d0
--  __DATA_CONST.__got: 0xc8
--  __DATA.__objc_const: 0xbb8
--  __DATA.__objc_selrefs: 0x3c8
--  __DATA.__objc_ivar: 0x4c
-+  __DATA_CONST.__got: 0xd8
-+  __DATA.__objc_const: 0xc60
-+  __DATA.__objc_selrefs: 0x3e8
-+  __DATA.__objc_ivar: 0x54
-   __DATA.__objc_data: 0xf0
--  __DATA.__data: 0x248
-+  __DATA.__data: 0x308
-   __DATA.__bss: 0x98
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 72
 -  Symbols:   92
 -  CStrings:  282
 +  Symbols:   94
 +  CStrings:  294
- 
 Symbols:
 + _OBJC_CLASS_$_GCSystemButtonArbitrationServer
 + _OBJC_CLASS_$_GCUserNotificationManager

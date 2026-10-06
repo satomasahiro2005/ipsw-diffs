@@ -2,171 +2,80 @@
 
 > `/System/Library/PrivateFrameworks/CampoUIInternal.framework/CampoUIInternal`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4aad2c` | `0x4e6fd0` | **`+0x3c2a4`** |
+| `__TEXT.__const` | `0x284d0` | `0x2a550` | **`+0x2080`** |
+| `__TEXT.__eh_frame` | `0x21890` | `0x23480` | **`+0x1bf0`** |
+| `__AUTH_CONST.__const` | `0x1e530` | `0x1f7a8` | **`+0x1278`** |
+| `__DATA.__bss` | `0x182d0` | `0x19530` | **`+0x1260`** |
+| `__AUTH_CONST.__objc_const` | `0x12178` | `0x13250` | **`+0x10d8`** |
+| `__DATA.__data` | `0x97a0` | `0xa618` | **`+0xe78`** |
+| `__AUTH.__data` | `0x4d98` | `0x5ba8` | **`+0xe10`** |
+| `__TEXT.__swift5_typeref` | `0x34f06` | `0x35c70` | **`+0xd6a`** |
+| `__TEXT.__constg_swiftt` | `0xb908` | `0xc594` | **`+0xc8c`** |
+| `__TEXT.__oslogstring` | `0x125be` | `0x13238` | **`+0xc7a`** |
+| `__TEXT.__swift5_fieldmd` | `0xa7c0` | `0xb264` | **`+0xaa4`** |
+| `__TEXT.__swift5_reflstr` | `0xb92f` | `0xc39f` | **`+0xa70`** |
+| `__TEXT.__unwind_info` | `0x12fb8` | `0x138d8` | **`+0x920`** |
+| `__TEXT.__cstring` | `0x1168e` | `0x11de0` | **`+0x752`** |
+| `__AUTH.__objc_data` | `0x1820` | `0x1d68` | **`+0x548`** |
+| `__AUTH_CONST.__auth_got` | `0x61d0` | `0x66f0` | **`+0x520`** |
+| `__TEXT.__objc_methlist` | `0x79e0` | `0x7d68` | **`+0x388`** |
+| `__DATA_DIRTY.__data` | `0xfb98` | `0xf858` | **`-0x340`** |
+| `__TEXT.__swift5_capture` | `0x8718` | `0x89d0` | **`+0x2b8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5340` | `0x5588` | **`+0x248`** |
+| `__DATA_CONST.__got` | `0x3b18` | `0x3d38` | **`+0x220`** |
+| `__DATA_DIRTY.__bss` | `0x8070` | `0x7e70` | **`-0x200`** |
+| `__TEXT.__swift5_assocty` | `0x1e70` | `0x2038` | **`+0x1c8`** |
+| `__TEXT.__swift_as_cont` | `0x13e8` | `0x14c8` | **`+0xe0`** |
+| `__TEXT.__swift_as_entry` | `0xb64` | `0xc40` | **`+0xdc`** |
+| `__TEXT.__swift_as_ret` | `0xbd4` | `0xc9c` | **`+0xc8`** |
+| `__TEXT.__swift5_types` | `0xb78` | `0xc30` | **`+0xb8`** |
+| `__TEXT.__swift5_proto` | `0x10b0` | `0x1154` | **`+0xa4`** |
+| `__DATA.__common` | `0x328` | `0x3a8` | **`+0x80`** |
+| `__DATA_CONST.__objc_protolist` | `0x370` | `0x3d8` | **`+0x68`** |
+| `__DATA_CONST.__objc_classlist` | `0x680` | `0x6e0` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x15f0` | `0x15a8` | **`-0x48`** |
+| `__AUTH_CONST.__cfstring` | `0x17c0` | `0x1800` | **`+0x40`** |
+| `__TEXT.__gcc_except_tab` | `0xe80` | `0xe44` | **`-0x3c`** |
+| `__DATA_CONST.__objc_protorefs` | `0x160` | `0x198` | **`+0x38`** |
+| `__TEXT.__swift5_builtin` | `0x348` | `0x370` | **`+0x28`** |
+| `__DATA_DIRTY.__objc_data` | `0x2960` | `0x2948` | **`-0x18`** |
+| `__TEXT.__swift5_protos` | `0xfc` | `0x114` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x360` | `0x368` | **`+0x8`** |
+| `__DATA_DIRTY.__common` | `0x450` | `0x448` | **`-0x8`** |
+| `__TEXT.__swift5_mpenum` | `0xb8` | `0xb0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -73.0.24.109.0
--  __TEXT.__text: 0x47150c
 +3605.1.1.1.5
-+  __TEXT.__text: 0x4aa998
-   __TEXT.__delay_helper: 0x14c
--  __TEXT.__objc_methlist: 0x79e0
--  __TEXT.__const: 0x284d0
-+  __TEXT.__objc_methlist: 0x7d68
-+  __TEXT.__const: 0x2a550
-   __TEXT.__dlopen_cstrs: 0x13d
--  __TEXT.__constg_swiftt: 0xb908
--  __TEXT.__swift5_typeref: 0x34f06
--  __TEXT.__swift5_builtin: 0x348
--  __TEXT.__swift5_reflstr: 0xb92f
--  __TEXT.__swift5_fieldmd: 0xa7c0
--  __TEXT.__swift5_assocty: 0x1e70
--  __TEXT.__swift5_proto: 0x10b0
--  __TEXT.__swift5_types: 0xb78
--  __TEXT.__swift5_capture: 0x8718
--  __TEXT.__cstring: 0x1168e
--  __TEXT.__swift_as_entry: 0xb64
--  __TEXT.__swift_as_ret: 0xbd4
--  __TEXT.__swift_as_cont: 0x13e8
--  __TEXT.__swift5_protos: 0xfc
--  __TEXT.__oslogstring: 0x125be
--  __TEXT.__swift5_mpenum: 0xb8
--  __TEXT.__gcc_except_tab: 0xe80
--  __TEXT.__unwind_info: 0x15e80
--  __TEXT.__eh_frame: 0x218c8
-+  __TEXT.__constg_swiftt: 0xc594
-+  __TEXT.__swift5_typeref: 0x35c70
-+  __TEXT.__swift5_builtin: 0x370
-+  __TEXT.__swift5_reflstr: 0xc39f
-+  __TEXT.__swift5_fieldmd: 0xb264
-+  __TEXT.__swift5_assocty: 0x2038
-+  __TEXT.__swift5_proto: 0x1154
-+  __TEXT.__swift5_types: 0xc30
-+  __TEXT.__swift5_capture: 0x89d0
-+  __TEXT.__cstring: 0x11de0
-+  __TEXT.__swift_as_entry: 0xc40
-+  __TEXT.__swift_as_ret: 0xc9c
-+  __TEXT.__swift_as_cont: 0x14c8
-+  __TEXT.__oslogstring: 0x13238
-+  __TEXT.__swift5_protos: 0x114
-+  __TEXT.__swift5_mpenum: 0xb0
-+  __TEXT.__gcc_except_tab: 0xe44
-+  __TEXT.__unwind_info: 0x17548
-+  __TEXT.__eh_frame: 0x234c8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x15f0
--  __DATA_CONST.__objc_classlist: 0x680
-+  __DATA_CONST.__const: 0x15a8
-+  __DATA_CONST.__objc_classlist: 0x6e0
-   __DATA_CONST.__objc_catlist: 0xa0
--  __DATA_CONST.__objc_protolist: 0x370
-+  __DATA_CONST.__objc_protolist: 0x3d8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5340
--  __DATA_CONST.__objc_protorefs: 0x160
-+  __DATA_CONST.__objc_selrefs: 0x5588
-+  __DATA_CONST.__objc_protorefs: 0x198
-   __DATA_CONST.__objc_superrefs: 0x90
--  __DATA_CONST.__got: 0x3b18
--  __AUTH_CONST.__const: 0x1e530
--  __AUTH_CONST.__cfstring: 0x17c0
--  __AUTH_CONST.__objc_const: 0x12178
-+  __DATA_CONST.__got: 0x3d38
-+  __AUTH_CONST.__const: 0x1f7a8
-+  __AUTH_CONST.__cfstring: 0x1800
-+  __AUTH_CONST.__objc_const: 0x13250
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__objc_intobj: 0x18
--  __AUTH_CONST.__auth_got: 0x61d0
--  __AUTH.__objc_data: 0x1820
--  __AUTH.__data: 0x4d98
--  __DATA.__objc_ivar: 0x360
--  __DATA.__data: 0x97a0
--  __DATA.__common: 0x328
--  __DATA_DIRTY.__objc_data: 0x2960
--  __DATA_DIRTY.__data: 0xfb98
--  __DATA_DIRTY.__common: 0x450
--  __DATA_DIRTY.__bss: 0x8070
-+  __AUTH_CONST.__auth_got: 0x66f0
-+  __AUTH.__objc_data: 0x1d68
-+  __AUTH.__data: 0x5ba8
-+  __DATA.__objc_ivar: 0x368
-+  __DATA.__data: 0xa618
-+  __DATA.__common: 0x3a8
-+  __DATA_DIRTY.__objc_data: 0x2948
-+  __DATA_DIRTY.__data: 0xf858
-+  __DATA_DIRTY.__common: 0x448
-+  __DATA_DIRTY.__bss: 0x7e70
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AVRouting.framework/AVRouting
 
-   - /System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities
-   - /System/Library/PrivateFrameworks/AgentCanvasFoundation.framework/AgentCanvasFoundation
-   - /System/Library/PrivateFrameworks/AgentCanvasKit.framework/AgentCanvasKit
 +  - /System/Library/PrivateFrameworks/AgentCanvasModel.framework/AgentCanvasModel
-   - /System/Library/PrivateFrameworks/AgentCanvasPersistence.framework/AgentCanvasPersistence
-   - /System/Library/PrivateFrameworks/AgentCanvasUI.framework/AgentCanvasUI
-   - /System/Library/PrivateFrameworks/AgentCanvasUICore.framework/AgentCanvasUICore
-   - /System/Library/PrivateFrameworks/AgentSessionKit.framework/AgentSessionKit
+
 -  - /System/Library/PrivateFrameworks/AgentSessionKitRuntime.framework/AgentSessionKitRuntime
-   - /System/Library/PrivateFrameworks/AppIntentsServices.framework/AppIntentsServices
-   - /System/Library/PrivateFrameworks/AppProtection.framework/AppProtection
-   - /System/Library/PrivateFrameworks/AssistantActionSuggestion.framework/AssistantActionSuggestion
 
-   - /System/Library/PrivateFrameworks/CoreKnowledge.framework/CoreKnowledge
-   - /System/Library/PrivateFrameworks/CoreSpeechFoundation.framework/CoreSpeechFoundation
-   - /System/Library/PrivateFrameworks/CoreSuggestionsUI.framework/CoreSuggestionsUI
 -  - /System/Library/PrivateFrameworks/DataDetectorsUI.framework/DataDetectorsUI
-   - /System/Library/PrivateFrameworks/DesignLibrary.framework/DesignLibrary
-   - /System/Library/PrivateFrameworks/DeviceManagement.framework/DeviceManagement
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
 
-   - /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
-   - /System/Library/PrivateFrameworks/HybridSearch.framework/HybridSearch
-   - /System/Library/PrivateFrameworks/HybridSearchAdapter.framework/HybridSearchAdapter
 -  - /System/Library/PrivateFrameworks/IconServices.framework/IconServices
-   - /System/Library/PrivateFrameworks/LinkMetadata.framework/LinkMetadata
-   - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
-   - /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
 
-   - /System/Library/PrivateFrameworks/PhotosUIPrivate.framework/PhotosUIPrivate
-   - /System/Library/PrivateFrameworks/PowerExperience.framework/PowerExperience
-   - /System/Library/PrivateFrameworks/PromptKit.framework/PromptKit
 -  - /System/Library/PrivateFrameworks/RenderBox.framework/RenderBox
-   - /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices
-   - /System/Library/PrivateFrameworks/SAObjects.framework/SAObjects
-   - /System/Library/PrivateFrameworks/ScreenTimeUI.framework/ScreenTimeUI
 
-   - /System/Library/PrivateFrameworks/SnippetUI.framework/SnippetUI
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /System/Library/PrivateFrameworks/SpotlightUIInternal.framework/SpotlightUIInternal
 -  - /System/Library/PrivateFrameworks/SpotlightUIShared.framework/SpotlightUIShared
-   - /System/Library/PrivateFrameworks/SpringBoardUIServices.framework/SpringBoardUIServices
-   - /System/Library/PrivateFrameworks/TokenGeneration.framework/TokenGeneration
-   - /System/Library/PrivateFrameworks/TokenGenerationCore.framework/TokenGenerationCore
 
-   - /usr/lib/swift/libswiftQuartzCore.dylib
-   - /usr/lib/swift/libswiftSceneKit.dylib
-   - /usr/lib/swift/libswiftSpatial.dylib
 -  - /usr/lib/swift/libswiftSpriteKit.dylib
-   - /usr/lib/swift/libswiftSynchronization.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 27482
--  Symbols:   12058
+-  Symbols:   9995
 -  CStrings:  2711
 +  Functions: 28603
-+  Symbols:   12498
++  Symbols:   10394
 +  CStrings:  2786
- 
 Symbols:
 + -[CampoUIAutoDismissController initWithDelegate:lockState:userAttentionSupportState:]
 + -[CampoUIConnectedAccessoryState .cxx_destruct]
@@ -530,72 +439,6 @@ Symbols:
 + _kCGImagePropertyPixelHeight
 + _kCGImagePropertyPixelWidth
 + _keypath_get_selector_wrappedAudioMeters
-+ _objc_msgSend$_invocationEventForRequestOptions:localDataSource:presentationContext:invocationSource:userAttachmentTypes:isFirstRequestInChat:
-+ _objc_msgSend$_processInstrumentationForFinalOptionsAndGenerateNewTurn:presentationContext:invocationSource:userAttachmentTypes:isFirstRequestInChat:
-+ _objc_msgSend$_setPaddingRemoved:
-+ _objc_msgSend$_startRequestWithFinalOptions:explicitReferences:externalProviderID:invocationContext:presentationContext:userAttachmentTypes:isFirstRequestInChat:completion:
-+ _objc_msgSend$actionWithTitle:style:handler:
-+ _objc_msgSend$addAction:
-+ _objc_msgSend$addGestureRecognizer:
-+ _objc_msgSend$addTarget:action:forControlEvents:
-+ _objc_msgSend$addTextFieldWithConfigurationHandler:
-+ _objc_msgSend$alertControllerWithTitle:message:preferredStyle:
-+ _objc_msgSend$appendAttributedString:
-+ _objc_msgSend$attributedSubstringFromRange:
-+ _objc_msgSend$cancelDelayedActionWithDelayedActionCancelCommand:completion:
-+ _objc_msgSend$cancelImageRequest:
-+ _objc_msgSend$colorWithAlphaComponent:
-+ _objc_msgSend$convertPoint:toCoordinateSpace:
-+ _objc_msgSend$dialogCategory
-+ _objc_msgSend$dismissViewControllerAnimated:completion:
-+ _objc_msgSend$duckTTSToVolume:rampTime:completion:
-+ _objc_msgSend$emitMessage:isolatedStreamUUID:
-+ _objc_msgSend$enqueueDelayedActionCommand:completion:
-+ _objc_msgSend$enumerateAttributesInRange:options:usingBlock:
-+ _objc_msgSend$fetchDeviceSupportOnQueue:completion:
-+ _objc_msgSend$handleExecutionLatencyInformation:
-+ _objc_msgSend$initWithConnectedAccessoryState:
-+ _objc_msgSend$initWithDelegate:lockState:userAttentionSupportState:
-+ _objc_msgSend$initWithSessionIdentifier:connectedAccessoryState:userAttentionSupportState:
-+ _objc_msgSend$initWithSessionIdentifier:connectionProvider:delegateQueue:slidingHashedChatIDStore:desiresStateFeedback:
-+ _objc_msgSend$initWithString:
-+ _objc_msgSend$initWithString:attributes:
-+ _objc_msgSend$initWithTarget:action:
-+ _objc_msgSend$initWithTitle:image:tag:
-+ _objc_msgSend$invalidatePendingCommands
-+ _objc_msgSend$keyWindow
-+ _objc_msgSend$lineHeight
-+ _objc_msgSend$markRequestSubmitted
-+ _objc_msgSend$navigationBar
-+ _objc_msgSend$nextResponder
-+ _objc_msgSend$notifySiriDidBecomeEffectivelyInactive
-+ _objc_msgSend$performDismissalCommands
-+ _objc_msgSend$presentViewController:animated:completion:
-+ _objc_msgSend$presentedViewController
-+ _objc_msgSend$safeAreaInsets
-+ _objc_msgSend$secondaryLabelColor
-+ _objc_msgSend$selectedItem
-+ _objc_msgSend$setAccessibilityElementsHidden:
-+ _objc_msgSend$setAppForegrounded:
-+ _objc_msgSend$setAttributedText:
-+ _objc_msgSend$setClearButtonMode:
-+ _objc_msgSend$setIsNewConversation:
-+ _objc_msgSend$setPlaceholder:
-+ _objc_msgSend$setSelectedItem:
-+ _objc_msgSend$setTextContainerInset:
-+ _objc_msgSend$setTintColor:
-+ _objc_msgSend$setUiSurface:
-+ _objc_msgSend$setWrappedAudioMeters:
-+ _objc_msgSend$shouldSuppressTTSForAceCommand:
-+ _objc_msgSend$siriDidBecomeEffectivelyInactive
-+ _objc_msgSend$startAutoRecording
-+ _objc_msgSend$startRequestWithOptions:explicitReferences:externalProviderID:invocationContext:presentationContext:userAttachmentTypes:isFirstRequestInChat:completion:
-+ _objc_msgSend$stopAutoRecording
-+ _objc_msgSend$string
-+ _objc_msgSend$systemFontOfSize:
-+ _objc_msgSend$tag
-+ _objc_msgSend$textContainerInset
-+ _objc_msgSend$wrappedAudioMeters
 + _swift_retain_x10
 + _swift_task_addCancellationHandler
 + _swift_task_removeCancellationHandler
@@ -1340,31 +1183,6 @@ Symbols:
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBP17AgentCanvasUICoreE24diagnosticContextOverlayyQrAD010DiagnosticH0VFQOy15CampoUIInternal020ChatSessionContainerC0V015ServiceResolverC033_415C5E50A94AC133AE63DA6F7579AC11LLV_Qo_HO
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE15fullScreenCover11isPresented9onDismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAcAEAdefgH_QrAI_ScPSSSiyyYaYAcntFQOyAA01_C16Modifier_ContentVy15CampoUIInternal021SignificantChangeGateR033_7DD9958025AF0A3E8E5135B029E9165ALLVG_Qo__AcAE011interactiveO8DisabledyQrSbFQOyAA012_ConditionalS0VyA0_yAA05EmptyC0VAA0s11UnavailableC0VyAA5LabelVyAA4TextV15AssistantUICore18AssistantLogoImageVGA8_AcAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOy015_PermissionKit_aB016PermissionButtonVy13PermissionKit0V14AppUpdateTopicVAA08ModifiedS0VyA22_yA8_AA16_FlexFrameLayoutVGAA14_PaddingLayoutVGG_AA28BorderedProminentButtonStyleVQo_GGA0_yA33_A4_yA6_yA8_AA5ImageVGA8_A2_GGG_Qo_Qo__Qo_HO
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE6onDrop2of10isTargeted7performQrSay22UniformTypeIdentifiers6UTTypeVG_AA7BindingVySbGSgSbSaySo14NSItemProviderCGctFQOyAA15ModifiedContentVyAA01_c9Modifier_R0Vy15CampoUIInternal0e6TargetS033_25163B110F5DF1BBE632801240829FDDLLVGAA01_r5ShapeS0VyAA9RectangleVGG_Qo_HO
-- _objc_msgSend$_getMissingAssetTypes:
-- _objc_msgSend$_invocationEventForRequestOptions:localDataSource:presentationContext:invocationSource:userAttachmentTypes:
-- _objc_msgSend$_processInstrumentationForFinalOptionsAndGenerateNewTurn:presentationContext:invocationSource:userAttachmentTypes:
-- _objc_msgSend$_shouldFetchActiveAccount
-- _objc_msgSend$_startRequestWithFinalOptions:explicitReferences:externalProviderID:invocationContext:presentationContext:userAttachmentTypes:completion:
-- _objc_msgSend$_startUserAttentionControllerIfNeededForTypes:using:
-- _objc_msgSend$_updateActiveAccount:
-- _objc_msgSend$_updateActiveAccount:withNumberOfActiveAccounts:
-- _objc_msgSend$activeAccount
-- _objc_msgSend$assistantUODStatus
-- _objc_msgSend$bundleID
-- _objc_msgSend$initWithDelegate:andLockState:
-- _objc_msgSend$initWithSessionIdentifier:
-- _objc_msgSend$initWithSessionIdentifier:connectionProvider:delegateQueue:slidingHashedChatIDStore:
-- _objc_msgSend$isActive
-- _objc_msgSend$isForAppleTV
-- _objc_msgSend$isPPTAvailable
-- _objc_msgSend$numberWithInt:
-- _objc_msgSend$setActiveAccountAndGenerateLightweightInfo:
-- _objc_msgSend$setAssetTypes:
-- _objc_msgSend$setProduct:
-- _objc_msgSend$setUserAccountCountGenerateLightweightInfo:
-- _objc_msgSend$showServerOnUI
-- _objc_msgSend$startRequestWithOptions:explicitReferences:externalProviderID:invocationContext:presentationContext:userAttachmentTypes:completion:
-- _objc_msgSend$tertiaryLabelColor
 - _symbolic $s15CampoUIInternal28SceneRequestSettingsUpdatingP
 - _symbolic BASo14PHPhotoLibraryCSg______pIeNghHgILrzo_ s5ErrorP
 - _symbolic Say_____G 15AgentSessionKit0aB8ArtifactV

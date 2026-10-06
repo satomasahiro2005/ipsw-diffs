@@ -2,117 +2,66 @@
 
 > `/System/Library/PrivateFrameworks/UnilogIngestion.framework/UnilogIngestion`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c868` | `0x250c8` | **`+0x8860`** |
+| `__TEXT.__eh_frame` | `0x5d0` | `0x1018` | **`+0xa48`** |
+| `__AUTH_CONST.__objc_const` | `0x588` | `0xd90` | **`+0x808`** |
+| `__TEXT.__const` | `0xd20` | `0x1140` | **`+0x420`** |
+| `__AUTH_CONST.__const` | `0xa90` | `0xdd8` | **`+0x348`** |
+| `__TEXT.__unwind_info` | `0x598` | `0x8a8` | **`+0x310`** |
+| `__DATA.__data` | `0x5f8` | `0x870` | **`+0x278`** |
+| `__TEXT.__swift5_typeref` | `0x5f4` | `0x856` | **`+0x262`** |
+| `__TEXT.__constg_swiftt` | `0x6e8` | `0x918` | **`+0x230`** |
+| `__DATA.__bss` | `0x780` | `0x980` | **`+0x200`** |
+| `__AUTH.__data` | `0x210` | `0x3f8` | **`+0x1e8`** |
+| `__AUTH_CONST.__auth_got` | `0x950` | `0xb18` | **`+0x1c8`** |
+| `__TEXT.__oslogstring` | `0x2fc` | `0x4bc` | **`+0x1c0`** |
+| `__TEXT.__swift5_fieldmd` | `0x424` | `0x554` | **`+0x130`** |
+| `__TEXT.__swift5_capture` | `0x58` | `0x138` | **`+0xe0`** |
+| `__TEXT.__swift5_reflstr` | `0x2a1` | `0x371` | **`+0xd0`** |
+| `__AUTH.__objc_data` | `0x50` | `0xf0` | **`+0xa0`** |
+| `__TEXT.__swift_as_cont` | `0x30` | `0xcc` | **`+0x9c`** |
+| `__DATA_CONST.__const` | `0x140` | `0x198` | **`+0x58`** |
+| `__TEXT.__cstring` | `0x151` | `0x1a1` | **`+0x50`** |
+| `__TEXT.__swift_as_entry` | `0x18` | `0x58` | **`+0x40`** |
+| `__TEXT.__swift_as_ret` | `0x10` | `0x50` | **`+0x40`** |
+| `__TEXT.__swift5_builtin` | `0x14` | `0x28` | **`+0x14`** |
+| `__TEXT.__swift5_types` | `0x5c` | `0x70` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x20` | `0x30` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x20` | `0x30` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x48` | `0x58` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x10` | `0x18` | **`+0x8`** |
+| `__DATA_DIRTY.__data` | `0x338` | `0x340` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x14` | `0x1c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2.3.0.0.0
--  __TEXT.__text: 0x1b9c0
 +2.8.0.0.0
-+  __TEXT.__text: 0x235c8
-   __TEXT.__objc_methlist: 0x174
--  __TEXT.__const: 0xd20
--  __TEXT.__constg_swiftt: 0x6e8
--  __TEXT.__swift5_typeref: 0x5f4
--  __TEXT.__swift5_builtin: 0x14
--  __TEXT.__swift5_reflstr: 0x2a1
--  __TEXT.__swift5_fieldmd: 0x424
--  __TEXT.__swift5_types: 0x5c
--  __TEXT.__oslogstring: 0x2fc
-+  __TEXT.__const: 0x1140
-+  __TEXT.__swift5_typeref: 0x856
-+  __TEXT.__swift5_fieldmd: 0x554
-+  __TEXT.__constg_swiftt: 0x918
-+  __TEXT.__swift5_builtin: 0x28
-+  __TEXT.__swift5_reflstr: 0x371
-+  __TEXT.__swift5_capture: 0x138
-+  __TEXT.__oslogstring: 0x4bc
-+  __TEXT.__swift5_protos: 0x1c
-+  __TEXT.__swift5_types: 0x70
-+  __TEXT.__swift_as_entry: 0x58
-+  __TEXT.__swift_as_ret: 0x50
-+  __TEXT.__swift_as_cont: 0xcc
-+  __TEXT.__swift5_mpenum: 0x8
-+  __TEXT.__cstring: 0x1a1
-+  __TEXT.__swift5_proto: 0x58
-   __TEXT.__swift5_assocty: 0x68
--  __TEXT.__swift5_proto: 0x48
--  __TEXT.__swift5_protos: 0x14
--  __TEXT.__swift5_capture: 0x58
--  __TEXT.__swift_as_entry: 0x18
--  __TEXT.__swift_as_cont: 0x30
--  __TEXT.__swift_as_ret: 0x10
--  __TEXT.__cstring: 0x151
--  __TEXT.__unwind_info: 0x748
--  __TEXT.__eh_frame: 0x5d8
-+  __TEXT.__unwind_info: 0xa98
-+  __TEXT.__eh_frame: 0x1020
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x140
--  __DATA_CONST.__objc_classlist: 0x20
--  __DATA_CONST.__objc_protolist: 0x20
-+  __DATA_CONST.__const: 0x198
-+  __DATA_CONST.__objc_classlist: 0x30
-+  __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x100
--  __DATA_CONST.__objc_protorefs: 0x10
-+  __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xa90
--  __AUTH_CONST.__objc_const: 0x588
--  __AUTH_CONST.__auth_got: 0x950
--  __AUTH.__objc_data: 0x50
--  __AUTH.__data: 0x210
--  __DATA.__data: 0x5f8
-+  __AUTH_CONST.__const: 0xdd8
-+  __AUTH_CONST.__objc_const: 0xd90
-+  __AUTH_CONST.__auth_got: 0xb18
-+  __AUTH.__objc_data: 0xf0
-+  __AUTH.__data: 0x3f8
-+  __DATA.__data: 0x870
-   __DATA.__common: 0x80
--  __DATA_DIRTY.__data: 0x338
-+  __DATA_DIRTY.__data: 0x340
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /System/Library/PrivateFrameworks/Dendrite.framework/Dendrite
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/IntelligencePlatformLibrary.framework/IntelligencePlatformLibrary
 +  - /System/Library/PrivateFrameworks/LighthouseBackground.framework/LighthouseBackground
-   - /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
-   - /System/Library/PrivateFrameworks/UnilogCommonLibrary.framework/UnilogCommonLibrary
-   - /System/Library/PrivateFrameworks/UnilogPlatformLibrary.framework/UnilogPlatformLibrary
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 +  - /usr/lib/swift/libswiftAccelerate.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
+
 +  - /usr/lib/swift/libswiftMetal.dylib
 +  - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
+
 +  - /usr/lib/swift/libswiftQuartzCore.dylib
 +  - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
+
 -  Functions: 528
--  Symbols:   346
+-  Symbols:   340
 -  CStrings:  28
 +  - /usr/lib/swift/libswiftsimd.dylib
 +  Functions: 700
-+  Symbols:   436
++  Symbols:   430
 +  CStrings:  42
- 
 Symbols:
 + __DATA__TtC15UnilogIngestion10WorkStream
 + __DATA__TtCC15UnilogIngestion10WorkStreamP33_16201C4F38BF25568DDDAB2D28D43AE95Scope

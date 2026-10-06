@@ -2,62 +2,38 @@
 
 > `/System/Library/AccessibilityBundles/PosterKit.axbundle/PosterKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7448` | `0x7cc4` | **`+0x87c`** |
+| `__TEXT.__oslogstring` | `—` | `0x2ec` | **`+0x2ec`** |
+| `__AUTH.__objc_data` | `0xa0` | `0x1e0` | **`+0x140`** |
+| `__AUTH_CONST.__objc_const` | `0x27f0` | `0x2910` | **`+0x120`** |
+| `__AUTH_CONST.__cfstring` | `0x2340` | `0x2400` | **`+0xc0`** |
+| `__DATA_DIRTY.__objc_data` | `0x1590` | `0x14f0` | **`-0xa0`** |
+| `__TEXT.__cstring` | `0x1d39` | `0x1d9f` | **`+0x66`** |
+| `__TEXT.__objc_methlist` | `0xcec` | `0xd4c` | **`+0x60`** |
+| `__DATA_CONST.__objc_selrefs` | `0x538` | `0x558` | **`+0x20`** |
+| `__TEXT.__const` | `0x28` | `0x48` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x328` | `0x340` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x238` | `0x248` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0xa0` | `0xb0` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x108` | `0x110` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3045.0.0.0.0
--  __TEXT.__text: 0x7448
--  __TEXT.__objc_methlist: 0xcec
--  __TEXT.__const: 0x28
 +3048.0.0.0.0
-+  __TEXT.__text: 0x7cc4
-+  __TEXT.__objc_methlist: 0xd4c
-+  __TEXT.__const: 0x48
-   __TEXT.__gcc_except_tab: 0x214
--  __TEXT.__cstring: 0x1d39
--  __TEXT.__unwind_info: 0x328
-+  __TEXT.__cstring: 0x1d9f
-+  __TEXT.__oslogstring: 0x2ec
-+  __TEXT.__unwind_info: 0x340
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x300
--  __DATA_CONST.__objc_classlist: 0x238
-+  __DATA_CONST.__objc_classlist: 0x248
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x538
--  __DATA_CONST.__objc_superrefs: 0xa0
--  __DATA_CONST.__got: 0x108
-+  __DATA_CONST.__objc_selrefs: 0x558
-+  __DATA_CONST.__objc_superrefs: 0xb0
-+  __DATA_CONST.__got: 0x110
-   __AUTH_CONST.__const: 0x80
--  __AUTH_CONST.__cfstring: 0x2340
--  __AUTH_CONST.__objc_const: 0x27f0
-+  __AUTH_CONST.__cfstring: 0x2400
-+  __AUTH_CONST.__objc_const: 0x2910
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0xa0
-+  __AUTH.__objc_data: 0x1e0
-   __DATA.__bss: 0x21
--  __DATA_DIRTY.__objc_data: 0x1590
-+  __DATA_DIRTY.__objc_data: 0x14f0
-   __DATA_DIRTY.__bss: 0x10
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 248
--  Symbols:   883
+-  Symbols:   745
 -  CStrings:  299
 +  Functions: 254
-+  Symbols:   910
++  Symbols:   769
 +  CStrings:  311
- 
 Symbols:
 + +[AccessibilityNodeAccessibility__PosterKit__SwiftUI _accessibilityPerformValidations:]
 + +[AccessibilityNodeAccessibility__PosterKit__SwiftUI(SafeCategory) safeCategoryBaseClass]
@@ -105,11 +81,6 @@ Symbols:
 + __OBJC_METACLASS_RO_$___AccessibilityNodeAccessibility__PosterKit__SwiftUI_super
 + __OBJC_METACLASS_RO_$___UIViewAccessibility__PosterKit__UIKit_super
 + __os_log_impl
-+ _objc_msgSend$_accessibilityParentView
-+ _objc_msgSend$bounds
-+ _objc_msgSend$frame
-+ _objc_msgSend$isHidden
-+ _objc_msgSend$superview
 + _objc_opt_respondsToSelector
 + _os_log_type_enabled
 - +[UIViewLongPressHostContextAccessibility__PosterKit__UIKitAccessibility _accessibilityPerformValidations:]
@@ -136,8 +107,6 @@ Symbols:
 - __OBJC_CLASS_RO_$___UIViewLongPressHostContextAccessibility__PosterKit__UIKitAccessibility_super
 - __OBJC_METACLASS_RO_$_UIViewLongPressHostContextAccessibility__PosterKit__UIKitAccessibility
 - __OBJC_METACLASS_RO_$___UIViewLongPressHostContextAccessibility__PosterKit__UIKitAccessibility_super
-- _objc_msgSend$persistentIdentifier
-- _objc_msgSend$session
 CStrings:
 + "(nil)"
 + "AccessibilityNodeAccessibility__PosterKit__SwiftUI"

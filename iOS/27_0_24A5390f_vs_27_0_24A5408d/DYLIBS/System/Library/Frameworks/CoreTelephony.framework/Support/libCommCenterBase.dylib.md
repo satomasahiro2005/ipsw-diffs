@@ -2,64 +2,36 @@
 
 > `/System/Library/Frameworks/CoreTelephony.framework/Support/libCommCenterBase.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd228c` | `0xd2ff4` | **`+0xd68`** |
+| `__TEXT.__oslogstring` | `0x25ef` | `0x2849` | **`+0x25a`** |
+| `__TEXT.__gcc_except_tab` | `0x13b38` | `0x13be4` | **`+0xac`** |
+| `__TEXT.__const` | `0xd2e0` | `0xd370` | **`+0x90`** |
+| `__AUTH_CONST.__auth_got` | `0xc00` | `0xc38` | **`+0x38`** |
+| `__TEXT.__cstring` | `0x14a9d` | `0x14ac8` | **`+0x2b`** |
+| `__AUTH_CONST.__cfstring` | `0x2cc0` | `0x2ce0` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x168` | `0x188` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x4e48` | `0x4e60` | **`+0x18`** |
+| `__AUTH_CONST.__const` | `0x14470` | `0x14480` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x76d0` | `0x76e0` | **`+0x10`** |
+| `__DATA.__data` | `0x68` | `0x70` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -13482.1.0.0.0
--  __TEXT.__text: 0xd228c
 +13487.3.0.0.0
-+  __TEXT.__text: 0xd2ff4
-   __TEXT.__init_offsets: 0x20
-   __TEXT.__objc_methlist: 0x110
--  __TEXT.__const: 0xd2e0
--  __TEXT.__cstring: 0x14a9d
--  __TEXT.__gcc_except_tab: 0x13b38
--  __TEXT.__oslogstring: 0x25ef
--  __TEXT.__unwind_info: 0x4e48
-+  __TEXT.__const: 0xd370
-+  __TEXT.__cstring: 0x14ac8
-+  __TEXT.__gcc_except_tab: 0x13be4
-+  __TEXT.__oslogstring: 0x2849
-+  __TEXT.__unwind_info: 0x4e60
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x76d0
-+  __DATA_CONST.__const: 0x76e0
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x168
-+  __DATA_CONST.__objc_selrefs: 0x188
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__got: 0x218
--  __AUTH_CONST.__const: 0x14470
--  __AUTH_CONST.__cfstring: 0x2cc0
-+  __AUTH_CONST.__const: 0x14480
-+  __AUTH_CONST.__cfstring: 0x2ce0
-   __AUTH_CONST.__objc_const: 0x200
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__auth_got: 0xc00
-+  __AUTH_CONST.__auth_got: 0xc38
-   __DATA.__objc_ivar: 0x8
--  __DATA.__data: 0x68
-+  __DATA.__data: 0x70
-   __DATA.__bss: 0x5
-   __DATA_DIRTY.__objc_data: 0x50
-   __DATA_DIRTY.__data: 0x18
 
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 5760
--  Symbols:   9489
+-  Symbols:   9458
 -  CStrings:  4486
 +  Functions: 5765
-+  Symbols:   9507
++  Symbols:   9472
 +  CStrings:  4497
- 
 Symbols:
 + __ZN16CSIPacketAddress36getAddressDefaultGatewayForInterfaceEPKciRS_
 + __ZNK16CSIPacketAddress23isPublicRoutableAddressEv
@@ -71,10 +43,6 @@ Symbols:
 + _getpid
 + _if_nametoindex
 + _objc_enumerationMutation
-+ _objc_msgSend$countByEnumeratingWithState:objects:count:
-+ _objc_msgSend$dictionaryWithCapacity:
-+ _objc_msgSend$mutableCopy
-+ _objc_msgSend$setObject:forKeyedSubscript:
 + _objc_release_x27
 + _read
 + _send

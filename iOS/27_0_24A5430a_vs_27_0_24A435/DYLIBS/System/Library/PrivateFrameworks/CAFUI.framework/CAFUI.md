@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CAFUI.framework/CAFUI`
 
-```diff
+### Section Size Changes
 
- 542.7.0.0.0
--  __TEXT.__text: 0xe40b4
-+  __TEXT.__text: 0xe40a4
-   __TEXT.__objc_methlist: 0x27e0
-   __TEXT.__const: 0x6b84
-   __TEXT.__cstring: 0x3904
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe40b4` | `0xe40a4` | **`-0x10`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$sSr15_stableSortImpl2byySbx_xtKXE_tKFySryxGz_SiztKXEfU_So15CAFPairedDeviceC_Tg506$sSo27e51DevicesInformationC5CAFUIE012sortedPairedB0SaySo0A6F17CGvgSbAF_AFtXEfU_Tf1nnncn_n : 1388 -> 1384
 ~ _$s5CAFUI38CAFUIDetailedDescriptionViewControllerC17textLayoutManager_0fG11FragmentFor2inSo06NSTextgI0CSo0lgH0C_So0L8Location_pSo0L7ElementCtF : 1492 -> 1496

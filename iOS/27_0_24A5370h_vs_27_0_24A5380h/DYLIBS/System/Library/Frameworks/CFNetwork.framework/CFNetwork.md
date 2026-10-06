@@ -2,87 +2,34 @@
 
 > `/System/Library/Frameworks/CFNetwork.framework/CFNetwork`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x18992` | `0x1889a` | **`-0xf8`** |
+| `__AUTH.__objc_data` | `0x1608` | `0x16d0` | **`+0xc8`** |
+| `__DATA_DIRTY.__objc_data` | `0x19c8` | `0x1900` | **`-0xc8`** |
+| `__AUTH_CONST.__objc_const` | `0x13ec0` | `0x13e40` | **`-0x80`** |
+| `__DATA_CONST.__got` | `0xa38` | `0xaa8` | **`+0x70`** |
+| `__TEXT.__text` | `0x256344` | `0x25639c` | **`+0x58`** |
+| `__TEXT.__gcc_except_tab` | `0x13eb4` | `0x13ed8` | **`+0x24`** |
+| `__DATA.__objc_ivar` | `0x1370` | `0x1360` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0xb890` | `0xb880` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x2bf0` | `0x2be8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x256344
-+  __TEXT.__text: 0x25639c
-   __TEXT.__lazy_helpers: 0x2808
-   __TEXT.__objc_methlist: 0x9c74
-   __TEXT.__const: 0xc9c1c
--  __TEXT.__cstring: 0x18992
--  __TEXT.__gcc_except_tab: 0x13eb4
-+  __TEXT.__cstring: 0x1889a
-+  __TEXT.__gcc_except_tab: 0x13ed8
-   __TEXT.__oslogstring: 0xf9c9
-   __TEXT.__dof_CFNetwork: 0xf3b
--  __TEXT.__unwind_info: 0xb890
-+  __TEXT.__unwind_info: 0xb880
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-3888.100.1.0.0
++3890.100.1.0.0
 
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x3d0
-   __DATA_CONST.__objc_arraydata: 0x68
--  __DATA_CONST.__got: 0xa38
-+  __DATA_CONST.__got: 0xaa8
-   __AUTH_CONST.__const: 0x13418
-   __AUTH_CONST.__cfstring: 0xeac0
--  __AUTH_CONST.__objc_const: 0x13ec0
-+  __AUTH_CONST.__objc_const: 0x13e40
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__lazy_load_got: 0x378
-   __AUTH_CONST.__objc_intobj: 0x138
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_arrayobj: 0x30
--  __AUTH_CONST.__auth_got: 0x2bf0
--  __AUTH.__objc_data: 0x1608
-+  __AUTH_CONST.__auth_got: 0x2be8
-+  __AUTH.__objc_data: 0x16d0
-   __AUTH.__data: 0x2f8
-   __AUTH.__cfstring_CFN: 0x7cb0
--  __DATA.__objc_ivar: 0x1370
-+  __DATA.__objc_ivar: 0x1360
-   __DATA.__data: 0xe1c
-   __DATA.__crash_info: 0x148
-   __DATA.__bss: 0xd70
--  __DATA_DIRTY.__objc_data: 0x19c8
-+  __DATA_DIRTY.__objc_data: 0x1900
-   __DATA_DIRTY.__data: 0x1b8
-   __DATA_DIRTY.__bss: 0x9a8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 12678
--  Symbols:   36245
--  CStrings:  6627
+-  Symbols:   21450
+-  CStrings:  4747
 +  Functions: 12680
-+  Symbols:   36244
-+  CStrings:  6628
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__dof_CFNetwork : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__lazy_load_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__cfstring_CFN : content changed
-~ __DATA.__data : content changed
++  Symbols:   21447
++  CStrings:  4748
 Symbols:
 + GCC_except_table10006
 + GCC_except_table10015
@@ -2439,5 +2386,4 @@ CStrings:
 + "\xe1\""
 - "SELECT isDataOnFS,receiver_data FROM cfurl_cache_receiver_data WHERE entry_ID=%q"
 - "SELECT receiver_data from %s WHERE isDataOnFS > 0 AND entry_ID in \t\t\t\t\t\t\t\t\t (SELECT entry_ID from cfurl_cache_response WHERE entry_ID > 0 ORDER BY time_stamp ASC LIMIT %q)"
-
 ```

@@ -4,9 +4,6 @@
 
 ```diff
 
- 		<key>Enabled</key>
- 		<true/>
- 	</dict>
 +	<key>support_concurrency_boosting</key>
 +	<dict>
 +		<key>Enabled</key>
@@ -17,8 +14,5 @@
 +		<key>Enabled</key>
 +		<true/>
 +	</dict>
- 	<key>use_ml_freezer_recommender</key>
- 	<dict>
- 		<key>Enabled</key>
 
 ```

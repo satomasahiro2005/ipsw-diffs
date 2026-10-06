@@ -2,63 +2,43 @@
 
 > `/Applications/DiagnosticsService.app/PlugIns/Diagnostic-8253.appex/Diagnostic-8253`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_dictobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x13820` | `0x19d90` | **`+0x6570`** |
+| `__TEXT.__gcc_except_tab` | `0x2358` | `0x30fc` | **`+0xda4`** |
+| `__DATA_CONST.__const` | `0x518` | `0x550` | **`+0x38`** |
+| `__TEXT.__auth_stubs` | `0x710` | `0x730` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0x398` | `0x3a8` | **`+0x10`** |
+| `__TEXT.__oslogstring` | `—` | `0xb` | **`+0xb`** |
+| `__DATA_CONST.__got` | `0x328` | `0x330` | **`+0x8`** |
+| `__TEXT.__const` | `0x58` | `0x60` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x630` | `0x628` | **`-0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
 - `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
 -60.0.0.0.0
--  __TEXT.__text: 0x13520
--  __TEXT.__auth_stubs: 0x710
 +62.0.0.0.0
-+  __TEXT.__text: 0x19aa8
-+  __TEXT.__auth_stubs: 0x730
-   __TEXT.__objc_stubs: 0x860
-   __TEXT.__objc_methlist: 0xf8
--  __TEXT.__gcc_except_tab: 0x2358
--  __TEXT.__const: 0x58
-+  __TEXT.__const: 0x60
-+  __TEXT.__gcc_except_tab: 0x30fc
-   __TEXT.__cstring: 0x3f1c
-+  __TEXT.__oslogstring: 0xb
-   __TEXT.__objc_classname: 0x1c
-   __TEXT.__objc_methname: 0x633
-   __TEXT.__objc_methtype: 0x7d1
--  __TEXT.__unwind_info: 0x6c8
--  __DATA_CONST.__const: 0x518
-+  __TEXT.__unwind_info: 0x6c0
-+  __DATA_CONST.__const: 0x550
-   __DATA_CONST.__cfstring: 0x33a0
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_intobj: 0x120
-   __DATA_CONST.__objc_arraydata: 0x40
-   __DATA_CONST.__objc_dictobj: 0xa0
--  __DATA_CONST.__auth_got: 0x398
--  __DATA_CONST.__got: 0x328
-+  __DATA_CONST.__auth_got: 0x3a8
-+  __DATA_CONST.__got: 0x330
-   __DATA.__objc_const: 0x278
-   __DATA.__objc_selrefs: 0x240
-   __DATA.__objc_ivar: 0x3c
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 217
 -  Symbols:   361
 -  CStrings:  583
 +  Symbols:   364
 +  CStrings:  584
- 
 Symbols:
 + __os_log_default
 + __os_log_error_impl
@@ -67,16 +47,16 @@ Symbols:
 - _NSLog
 Functions:
 ~ __ZN23JasDiagnosticInteractor37pointCloudHxISPFrameAvailableCallbackEP10__CVBuffer6CMTime16StreamIdentifier : 648 -> 764
-~ sub_100001c08 -> sub_100001ccc : 1328 -> 1752
-~ sub_100002180 -> sub_1000023ec : 320 -> 440
-~ sub_100002484 -> sub_100002768 : 296 -> 412
-~ sub_1000025ac -> sub_100002904 : 416 -> 640
-~ sub_10000274c -> sub_100002b84 : 416 -> 640
-~ sub_1000028f0 -> sub_100002e08 : 288 -> 408
-~ sub_100002a10 -> sub_100002fa0 : 2128 -> 2256
-~ sub_100003540 -> sub_100003b50 : 4812 -> 7304
-~ sub_1000049a0 -> sub_10000596c : 416 -> 532
-~ sub_100004b40 -> sub_100005b80 : 2228 -> 2480
+~ sub_100001c14 -> sub_100001cd8 : 1328 -> 1752
+~ sub_10000218c -> sub_1000023f8 : 320 -> 440
+~ sub_100002490 -> sub_100002774 : 296 -> 412
+~ sub_1000025b8 -> sub_100002910 : 416 -> 640
+~ sub_100002758 -> sub_100002b90 : 416 -> 640
+~ sub_1000028fc -> sub_100002e14 : 300 -> 420
+~ sub_100002a28 -> sub_100002fb8 : 2128 -> 2256
+~ sub_100003564 -> sub_100003b74 : 4812 -> 7304
+~ sub_1000049c4 -> sub_100005990 : 428 -> 532
+~ sub_100004b70 -> sub_100005ba4 : 2228 -> 2480
 ~ __ZN17DeviceCMInterface38initAndActivateCaptureDeviceControllerEv : 348 -> 484
 ~ __ZN17DeviceCMInterface19setRgbConfigurationEiRK19RGBCamConfiguration : 3760 -> 5244
 ~ __ZN17DeviceCMInterface20enableJasperRgbVideoEv : 576 -> 900
@@ -84,7 +64,7 @@ Functions:
 ~ __ZN17DeviceCMInterface28enableJasperPointCloudOutputEv : 512 -> 784
 ~ __ZN17DeviceCMInterface26configJasperRgbMultiStreamERK19JasperConfiguration : 1640 -> 2432
 ~ __ZN17DeviceCMInterface31setJasperMultiOutModeByStreamIdEjb : 624 -> 1056
-~ __ZN17DeviceCMInterface18configJasperDeviceERK19JasperConfiguration : 3152 -> 4692
+~ __ZN17DeviceCMInterface18configJasperDeviceERK19JasperConfiguration : 3172 -> 4712
 ~ __ZN17DeviceCMInterface17enableSWRGBOutputEv : 212 -> 340
 ~ __ZN17DeviceCMInterface23requestControlOfStreamsEbj : 1344 -> 2100
 ~ __ZN17DeviceCMInterface23releaseControlOfStreamsEv : 384 -> 620
@@ -109,10 +89,10 @@ Functions:
 ~ __ZN17DeviceCMInterface17setPearlSyncSlaveEii -> __ZN17DeviceCMInterface30enableSyncForEnumeratedStreamsEi : 780 -> 856
 ~ __ZN17DeviceCMInterface21setPearlIRAsSyncSlaveEi -> __ZN17DeviceCMInterface17setPearlSyncSlaveEii : 12 -> 1192
 ~ __ZN17DeviceCMInterface20disablePearlSyncModeEi -> __ZN17DeviceCMInterface22setPearlRgbAsSyncSlaveEi : 316 -> 12
-~ __ZN17DeviceCMInterface19setPearlFormatIndexEii -> __ZN17DeviceCMInterface20disablePearlSyncModeEi : 88 -> 436
-~ __ZN17DeviceCMInterface17configPearlDeviceERK18PearlConfiguration -> __ZN17DeviceCMInterface19setPearlFormatIndexEii : 2736 -> 88
+~ __ZN17DeviceCMInterface19setPearlFormatIndexEii -> __ZN17DeviceCMInterface20disablePearlSyncModeEi : 100 -> 436
+~ __ZN17DeviceCMInterface17configPearlDeviceERK18PearlConfiguration -> __ZN17DeviceCMInterface19setPearlFormatIndexEii : 2736 -> 100
 ~ __ZN17DeviceCMInterface26getPearlProjectorHWVersionEPi -> __ZN17DeviceCMInterface17configPearlDeviceERK18PearlConfiguration : 432 -> 4652
-~ __ZNK17DeviceCMInterface30getPearlConfigurationStringKeyEPK18PearlConfiguration : 464 -> 328
+~ __ZNK17DeviceCMInterface30getPearlConfigurationStringKeyEPK18PearlConfiguration : 476 -> 340
 ~ __ZN17DeviceCMInterface22isPDECaliobrationValidEPb : 388 -> 624
 ~ __ZN17DeviceCMInterface23getJasperProjectorFaultEPyPU15__autoreleasingP12NSDictionary : 436 -> 556
 ~ __ZN17DeviceCMInterface27getJasperProjectorWillFaultEPy : 476 -> 736
@@ -122,7 +102,7 @@ Functions:
 ~ __ZN17DeviceCMInterface20getAntliaFaultStatusEPy : 492 -> 700
 ~ __ZN17DeviceCMInterface28getProjectorCalibratedValuesEPU15__autoreleasingP12NSDictionary : 452 -> 692
 ~ __ZN17DeviceCMInterface19getDiagnosticReportEPU15__autoreleasingP12NSDictionary : 648 -> 1024
-~ __ZN17DeviceCMInterface13releaseDeviceEv : 212 -> 340
+~ __ZN17DeviceCMInterface13releaseDeviceEv : 224 -> 340
 ~ __ZN17DeviceCMInterface13getRgbjReportERiS0_S0_S0_S0_ : 528 -> 880
 ~ __ZN17DeviceCMInterface24forceSaveWideJasperCalibEv : 280 -> 408
 ~ __ZN17DeviceCMInterface20setRgbjConfigurationEjjj : 492 -> 620
@@ -131,7 +111,7 @@ Functions:
 ~ __ZN17DeviceCMInterface25getPearlRigelSerialNumberEPU15__autoreleasingP8NSString : 440 -> 664
 ~ __ZN17DeviceCMInterface23getPearlRigelOtpVersionEPi : 444 -> 632
 ~ __ZN17DeviceCMInterface18getGuadalupeValuesEPxS0_S0_PiS0_ : 1084 -> 1664
-~ __Z18ecDisplayPipeStatsv : 1076 -> 1312
+~ __Z18ecDisplayPipeStatsv : 1088 -> 1324
 ~ __Z14logMainResultsP12NSDictionaryii : 1276 -> 2060
 CStrings:
 + "%{public}s"

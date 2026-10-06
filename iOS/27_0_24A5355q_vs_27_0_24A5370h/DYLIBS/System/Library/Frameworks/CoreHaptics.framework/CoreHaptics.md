@@ -2,80 +2,33 @@
 
 > `/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4a198` | `0x4a4f0` | **`+0x358`** |
+| `__TEXT.__gcc_except_tab` | `0x7de4` | `0x7f44` | **`+0x160`** |
+| `__TEXT.__cstring` | `0x6ac3` | `0x6b22` | **`+0x5f`** |
+| `__TEXT.__unwind_info` | `0x1d70` | `0x1db8` | **`+0x48`** |
+| `__AUTH_CONST.__cfstring` | `0x3580` | `0x35c0` | **`+0x40`** |
+| `__AUTH_CONST.__objc_const` | `0x44c0` | `0x44e0` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x246c` | `0x248c` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0xc88` | `0xc98` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x14f8` | `0x1508` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -291.0.0.0.0
--  __TEXT.__text: 0x4a198 sha256:89501eae6231d04178d07f8b8acb1e6e56e6191f931da986713d423ac4cf2e02
--  __TEXT.__objc_methlist: 0x246c sha256:f70a278b7dc6749ddc7b19de58b710ac2e816dda3c3aef2b3c91f2f70f955fd7
 +293.0.0.0.0
-+  __TEXT.__text: 0x4a4f0 sha256:b868a689a37d176be2d090843f5ae651ec515751eb4411445bb7ef78ec158d41
-+  __TEXT.__objc_methlist: 0x248c sha256:3493cfb48243b68b1e33dd414979cffe61aaa54e487cdeb91b1c41c49aa66972
-   __TEXT.__const: 0x4d0 sha256:b93c2ce5d65daaf167cd7006a70ae222679ab31027ba122e9746b1fa740e9902
--  __TEXT.__gcc_except_tab: 0x7de4 sha256:7fe6d458c03373c01f72aa954cf71ce8bf95f2cb746ed03ce89e13a600132a61
--  __TEXT.__cstring: 0x6ac3 sha256:32f22342190c0626c2bd825cbb538e733d9b4aeb0e723a797aaebff8b37750f9
-+  __TEXT.__gcc_except_tab: 0x7f44 sha256:eae95408143b5101f351dce6a6de46f218319b3d798170f69cdaf6cdf79976ea
-+  __TEXT.__cstring: 0x6b22 sha256:7f46b96dbd1aaa8dbddbab19085b42a1c742d320c5f268ac72c4d9e5200046f0
-   __TEXT.__oslogstring: 0x6fa8 sha256:1fb890b159480691a57e7d719815e504726f89936749cad43daa17a4f889795f
--  __TEXT.__unwind_info: 0x1d70 sha256:b6411b379d6886105fcc34d8d2e8352299352d7717fe00718146598410a7a0af
-+  __TEXT.__unwind_info: 0x1db8 sha256:fbc24c5f23a2cd9272526ffbca97d1c53eae6b05a310eb079b5cece2358e7559
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xc88 sha256:574c1f24be6ff815cb8f035bc71436569c6c42428e1c9e7f090ff316ef3a9811
--  __DATA_CONST.__objc_classlist: 0xd0 sha256:5af5c10960eeec9296a4c288ec976b40136ee91832929f5d154523477616d84c
--  __DATA_CONST.__objc_protolist: 0x60 sha256:75ae346e5c5f685f130afe81506e4d88123fd9e78c2e453cf6820dcf71a6b429
-+  __DATA_CONST.__const: 0xc98 sha256:44032f24c4d664d4fd516bb3328398238dba8f17c520260a5b2c03c2b511aad5
-+  __DATA_CONST.__objc_classlist: 0xd0 sha256:9ef6b62b98110e03a3261cf3624c9114d660addd51e09cdbc018e53fdc1727c3
-+  __DATA_CONST.__objc_protolist: 0x60 sha256:61da0cc66b0f30308221ddf73fa56307c9256a251c1e7ff99aa81ca70daa0087
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x10 sha256:db089a9946ee2f440f1454b6bd081bc906524b106b3b9bd5745c567d00425fed
--  __DATA_CONST.__objc_selrefs: 0x14f8 sha256:11dcab44b0a8863422d03c03d933b15c7ebed54e002c8293ee53386449e5fc4a
--  __DATA_CONST.__objc_protorefs: 0x10 sha256:51af2d792684afb3522a904d95f401ce2c5b75b8e2a1191607692029bbf6cae5
--  __DATA_CONST.__objc_superrefs: 0x98 sha256:dee7b131b9870b11b4e88b7c886868cb87c4c3ae8662c3a3063385f6a27d21d6
--  __DATA_CONST.__got: 0x230 sha256:ee2c9e79d345d832cd602e98111f9e22b2e9545cd575d5d5c1bdf1536d6d0734
--  __AUTH_CONST.__const: 0x5e8 sha256:e9a1a606097e3f218d35eee4fb4b5b09cd50581a560c32cb3bbc97694355f9a9
--  __AUTH_CONST.__cfstring: 0x3580 sha256:a2ae974ca74dafa56670a57c1379fd0d4488154e9dc2ad214c93157386f3f7ac
--  __AUTH_CONST.__objc_const: 0x44c0 sha256:0fe8894b09e96c30823e16c0505dd94bf60316545240571a5f4c9b9ed0883307
--  __AUTH_CONST.__weak_auth_got: 0x28 sha256:4a7d5a6862c5431b2249d57b76660013b16903a5dadf666d8b652501384c4219
--  __AUTH_CONST.__objc_doubleobj: 0x70 sha256:e2340b804f7076e73e66cb942baa15b36e0c16d5b49f943b75fe5b775858e450
--  __AUTH_CONST.__objc_intobj: 0x1e0 sha256:6069907b812fd941f1b8c36a177a02bb386a699c7a26699a610532bf5ba71166
-+  __DATA_CONST.__weak_got: 0x10 sha256:c9b00cf8e5fdc159d5e0657836ccec0cbd1eddc62a50f4b3c9f634c56153dbb7
-+  __DATA_CONST.__objc_selrefs: 0x1508 sha256:b1201b8a4c0e5f52f3d5304fd76e482b8ba66b9f2005d198b24afe95e8aacba8
-+  __DATA_CONST.__objc_protorefs: 0x10 sha256:742befd55fc80aff28c7d68cc038aca03dbbf36d7902d4f47d2431dc51be6811
-+  __DATA_CONST.__objc_superrefs: 0x98 sha256:523f5df196e0f4d48db1873c1aa96eabf5312f54556c43eace10a71dea84ca5d
-+  __DATA_CONST.__got: 0x230 sha256:42158dcf61e0cbf975a35d614d960115d3828fe7d0f8c5e820bae6c86c3e8c43
-+  __AUTH_CONST.__const: 0x5e8 sha256:e79fcbd0ca441040a666e2b550cc07f37ee2845fcbb8f42d769c1744f2286d55
-+  __AUTH_CONST.__cfstring: 0x35c0 sha256:74ac31b0481eff6e04d8bf3fa9c0c9aefb22bfa49ec22f41d354a98900865f9b
-+  __AUTH_CONST.__objc_const: 0x44e0 sha256:729fc98da1d1cebe8fcebcab4d008636264e172d52984d9032ea53794b2535d4
-+  __AUTH_CONST.__weak_auth_got: 0x28 sha256:ce730ac904d7ee375ed02cc55451c60f1221ea40d155b3549317863900e04169
-+  __AUTH_CONST.__objc_doubleobj: 0x70 sha256:eb00524df0e2a1e4771386ddb56559d6a0667cb79090d3cd6ca78326e2e3ee10
-+  __AUTH_CONST.__objc_intobj: 0x1e0 sha256:610812c05ef8e586200c127552ce8595e8c29469d1721ac2b10b678119fda43d
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__objc_ivar: 0x240 sha256:3ab8873cf1c1c57ec064c71bd15aeb25367936cc1bfd5c3165f4270e676f4887
--  __DATA.__data: 0x638 sha256:65389efd4244a1903c9530efef7aac58dde0233bfafecc6c457cb644d8463b47
-+  __DATA.__data: 0x638 sha256:cc7839ba39790f90cb5239176cba26110e563191209125bad31a0bde50d168a6
-   __DATA.__bss: 0x79 sha256:d8129de4286dc4fd245c7776b51d76aaa727956e8fc88ff928eb69ff7fc17e0b
-   __DATA.__common: 0x8 sha256:af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc
--  __DATA_DIRTY.__objc_data: 0x820 sha256:1b402a08fd7fa26492329a94fcabdbf1f1a6184d41db8795c90bcd7569310401
-+  __DATA_DIRTY.__objc_data: 0x820 sha256:61d9b063ba2b0123b636db955696a054fb4246506c3479136527d19d26cdd903
-   __DATA_DIRTY.__data: 0x78 sha256:0c7cf7c80470be8e0cb3e2153f4ba4e9b4be5f62536c855f155fd8670569f332
-   __DATA_DIRTY.__common: 0x30 sha256:17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1
-   __DATA_DIRTY.__bss: 0xd0 sha256:46f531b7ea0428fbf2c3ca2b60e8dc33d6bbfa000e0fd1b489c5e39140a47006
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  UUID: D4D8D0C6-33EB-3555-A701-69C83AC2D0AC
 -  Functions: 1073
--  Symbols:   4325
--  CStrings:  1768
-+  UUID: C0C59948-0AEA-3D8B-82F8-09543A0D4119
+-  Symbols:   2207
+-  CStrings:  1341
 +  Functions: 1076
-+  Symbols:   4340
-+  CStrings:  1771
- 
++  Symbols:   2214
++  CStrings:  1342
 Symbols:
 + -[CHHapticEngine player]
 + -[CHHapticEngine setPlayer:]
@@ -159,11 +112,6 @@ Symbols:
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeIPKvjEENS_22__unordered_map_hasherIS3_NS_4pairIKS3_jEENS_4hashIS3_EENS_8equal_toIS3_EEEENS_21__unordered_map_equalIS3_S8_SC_SA_EENS_9allocatorIS8_EEE16__emplace_uniqueB9fqe220106IJRKS8_EEENS6_INS_15__hash_iteratorIPNS_11__hash_nodeIS4_PvEEEEbEEDpOT_ENKUlRS7_SL_E_clESW_SL_
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeIPKvjEENS_22__unordered_map_hasherIS3_NS_4pairIKS3_jEENS_4hashIS3_EENS_8equal_toIS3_EEEENS_21__unordered_map_equalIS3_S8_SC_SA_EENS_9allocatorIS8_EEE16__emplace_uniqueB9fqe220106IJS8_EEENS6_INS_15__hash_iteratorIPNS_11__hash_nodeIS4_PvEEEEbEEDpOT_ENKUlRS7_OS8_E_clESU_SV_
 + __ZZNSt3__112__hash_tableImNS_4hashImEENS_8equal_toImEENS_9allocatorImEEE16__emplace_uniqueB9fqe220106IJRKmEEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeImPvEEEEbEEDpOT_ENKUlSA_SA_E_clESA_SA_
-+ ___38-[CHHapticEngine doPlayPattern:error:]_block_invoke.245
-+ ___92-[CHHapticEngine(CHHapticEngineInternal) doRegisterAudioResource:options:fromPattern:error:]_block_invoke.493
-+ ___92-[CHHapticEngine(CHHapticEngineInternal) doRegisterAudioResource:options:fromPattern:error:]_block_invoke.498
-+ _objc_msgSend$setWritableServerConfig:
-+ _objc_msgSend$writableServerConfig
 - -[CHHapticEngine(CHHapticEngineInternal) player]
 - GCC_except_table144
 - GCC_except_table150
@@ -239,14 +187,10 @@ Symbols:
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeIPKvjEENS_22__unordered_map_hasherIS3_NS_4pairIKS3_jEENS_4hashIS3_EENS_8equal_toIS3_EEEENS_21__unordered_map_equalIS3_S8_SC_SA_EENS_9allocatorIS8_EEE16__emplace_uniqueB9fqe220100IJRKS8_EEENS6_INS_15__hash_iteratorIPNS_11__hash_nodeIS4_PvEEEEbEEDpOT_ENKUlRS7_SL_E_clESW_SL_
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeIPKvjEENS_22__unordered_map_hasherIS3_NS_4pairIKS3_jEENS_4hashIS3_EENS_8equal_toIS3_EEEENS_21__unordered_map_equalIS3_S8_SC_SA_EENS_9allocatorIS8_EEE16__emplace_uniqueB9fqe220100IJS8_EEENS6_INS_15__hash_iteratorIPNS_11__hash_nodeIS4_PvEEEEbEEDpOT_ENKUlRS7_OS8_E_clESU_SV_
 - __ZZNSt3__112__hash_tableImNS_4hashImEENS_8equal_toImEENS_9allocatorImEEE16__emplace_uniqueB9fqe220100IJRKmEEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeImPvEEEEbEEDpOT_ENKUlSA_SA_E_clESA_SA_
-- ___38-[CHHapticEngine doPlayPattern:error:]_block_invoke.246
-- ___92-[CHHapticEngine(CHHapticEngineInternal) doRegisterAudioResource:options:fromPattern:error:]_block_invoke.486
-- ___92-[CHHapticEngine(CHHapticEngineInternal) doRegisterAudioResource:options:fromPattern:error:]_block_invoke.491
 CStrings:
 + "UIClickPresentationFeedbackGeneratorPresentationDragged"
 + "UIClickPresentationFeedbackGeneratorPresentationPreview"
 + "strongSelf && (strongSelf.player != nil)"
 - "_player != nil"
 - "strongSelf && (strongSelf->_player != nil)"
-
 ```

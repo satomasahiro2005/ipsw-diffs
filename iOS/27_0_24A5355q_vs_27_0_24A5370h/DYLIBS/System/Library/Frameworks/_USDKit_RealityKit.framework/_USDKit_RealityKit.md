@@ -2,111 +2,49 @@
 
 > `/System/Library/Frameworks/_USDKit_RealityKit.framework/_USDKit_RealityKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf8a44` | `0xfd048` | **`+0x4604`** |
+| `__DATA.__bss` | `0x3ac0` | `0x38d0` | **`-0x1f0`** |
+| `__AUTH_CONST.__const` | `0x5b38` | `0x5cc0` | **`+0x188`** |
+| `__TEXT.__cstring` | `0xa61c` | `0xa725` | **`+0x109`** |
+| `__TEXT.__eh_frame` | `0x5970` | `0x5898` | **`-0xd8`** |
+| `__TEXT.__gcc_except_tab` | `0x8598` | `0x84c8` | **`-0xd0`** |
+| `__TEXT.__const` | `0x6888` | `0x6950` | **`+0xc8`** |
+| `__AUTH_CONST.__auth_got` | `0x26f8` | `0x27b8` | **`+0xc0`** |
+| `__TEXT.__swift5_typeref` | `0x1dfa` | `0x1d42` | **`-0xb8`** |
+| `__TEXT.__unwind_info` | `0x3ad0` | `0x3a70` | **`-0x60`** |
+| `__TEXT.__oslogstring` | `0x1998` | `0x1957` | **`-0x41`** |
+| `__DATA.__data` | `0x163b` | `0x1668` | **`+0x2d`** |
+| `__TEXT.__swift5_fieldmd` | `0x222c` | `0x2250` | **`+0x24`** |
+| `__AUTH_CONST.__objc_const` | `0x2580` | `0x25a0` | **`+0x20`** |
+| `__TEXT.__swift5_proto` | `0x1dc` | `0x1bc` | **`-0x20`** |
+| `__TEXT.__swift5_builtin` | `0xc8` | `0xdc` | **`+0x14`** |
+| `__DATA.__common` | `0x2d0` | `0x2e0` | **`+0x10`** |
+| `__TEXT.__constg_swiftt` | `0x1f74` | `0x1f84` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x1f68` | `0x1f58` | **`-0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4c0` | `0x4c8` | **`+0x8`** |
+| `__TEXT.__swift5_capture` | `0x338` | `0x33c` | **`+0x4`** |
+| `__TEXT.__swift5_protos` | `0x14` | `0x10` | **`-0x4`** |
+| `__TEXT.__swift5_types` | `0x210` | `0x214` | **`+0x4`** |
+| `__TEXT.__swift_as_cont` | `0x17c` | `0x180` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0xa0` | `0xa4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -106.0.0.0.2
--  __TEXT.__text: 0xf8a44 sha256:62b7238f2c52a0314e942a5c9d2fd30723e233725d69032912f0596234ef3370
--  __TEXT.__objc_methlist: 0x53c sha256:4ea147f56e2aa1ef3e533245e6a6188cf88ced12ff7f449fda502f996a967731
--  __TEXT.__const: 0x6888 sha256:3a0b9dbb18e988c643024593440dd382f3a617456eb28657a46957313c4c9fea
--  __TEXT.__gcc_except_tab: 0x8598 sha256:1ba9cee5e83f0851e7e189caa64eca581c61f5b0a858cf8cdc07e8e590ab22ab
--  __TEXT.__constg_swiftt: 0x1f74 sha256:ddaf8fd5f6b296d1fbb3e535af28d964a82d8ae0453a17469633f6097d8f4c31
--  __TEXT.__swift5_typeref: 0x1dfa sha256:dcbfeb891215c5ceda9586231b4640ecb28dfae256f99e8f71d51d65f9c8d8a9
--  __TEXT.__swift5_fieldmd: 0x222c sha256:3ae0fe6721eb94cc4ae7fe472be029154c50d26ff3d5f8d733587dcdf54b0620
--  __TEXT.__swift5_builtin: 0xc8 sha256:3f3b6ece0542d754c9f8c21ded7f662e39ada8df11b0ff5cdec2cfabca2bf3c9
--  __TEXT.__swift5_reflstr: 0x1f68 sha256:0d7618fbb7766dd3839ada47c0261646891b311b3706d3cbab220f3311d7ce00
--  __TEXT.__swift5_capture: 0x338 sha256:3b597ebc5cb1e3ac4bbeb142dda415daf48415dd6934a4a9349c150feb6810ee
--  __TEXT.__cstring: 0xa61c sha256:44ed4acb61282a3563746e09dedf2f444b79905e6e1109ccf33e5f2e99f67c60
--  __TEXT.__swift5_proto: 0x1dc sha256:d61f10f776aa832450afc634a87e1f4a7d6563ef575a871e0b1e0be4f7a562cc
--  __TEXT.__swift5_types: 0x210 sha256:055b7ce48a9fb5ce452fba8bfe206df0481e69972ea20c7b157a8c117805a32d
--  __TEXT.__swift5_types2: 0x10 sha256:3bce988c9fb4999dd59fc6490dd58300fa24352e6fd7df74ceecb86dc68741cc
--  __TEXT.__swift_as_entry: 0xa0 sha256:e00901e37e79899d67764252d5d73159813e3feafec8016a9a045dffe7ec9188
--  __TEXT.__swift_as_ret: 0xe0 sha256:409abea3b2dfe3f2e801825146cbf54ede754d33cf1a82458cf303940334bc5c
--  __TEXT.__swift_as_cont: 0x17c sha256:f3cdd3454fb69a688b4f2e602d97994996205cfc886aebd6642fc9cdb70fc1da
--  __TEXT.__oslogstring: 0x1998 sha256:ad298270b7f24f0674e50b444615a3c7c3a5d9109feaa87ee025c94fd306db9a
--  __TEXT.__swift5_protos: 0x14 sha256:2f5e2db458675a44da7fb597f99bc304e31c075c41ec0647fbe4edb12068d878
--  __TEXT.__swift5_assocty: 0x140 sha256:55121db6874a1a4d79bb87984cd36e63a30d343ea35516fc2307bce563138981
--  __TEXT.__unwind_info: 0x3ad0 sha256:abd16ac73c14cd686704d59970f5f7d3b78d302d0ebd42a7a51208d4a76119c1
--  __TEXT.__eh_frame: 0x5970 sha256:21db538ba9d235fa8a45e8b9e3f7ee7c341f2ba65fd3ed8334e350cf964df664
 +106.0.3.0.1
-+  __TEXT.__text: 0xfd048 sha256:f92d55fb08bff3673d0328aaf7c944f317ccfe883f6b20ae98708f9550d7ae5c
-+  __TEXT.__objc_methlist: 0x53c sha256:375bf6cdd57880175010b5d95543002e2109f522e6c521c572352d9c4c862cb1
-+  __TEXT.__const: 0x6950 sha256:8fdfb48a60d8361e3f8c9dfebf99306f5ba1cfdd8df7b33264c05700a1f85708
-+  __TEXT.__gcc_except_tab: 0x84c8 sha256:a6a0a32cb3d571eddd0bd1ba060996499905ff4b10f206f4a1c70a17d86e92c8
-+  __TEXT.__constg_swiftt: 0x1f84 sha256:345fc088807bb1bf22d235781a1b8f66c9f895cbfb8d3e5dd18d31d783920203
-+  __TEXT.__swift5_typeref: 0x1d42 sha256:748bd5c097620690e90a94502a555d973d2ac5d09a98bbf9aebdc47a621107ce
-+  __TEXT.__swift5_fieldmd: 0x2250 sha256:733625b197dff0b44fe1f3c6771aaf5f0a3e0f3e288b39a6ddf894e9cc8476e7
-+  __TEXT.__swift5_builtin: 0xdc sha256:f9446f0ea15384f3662bb57eb3ffc4d618d3865e60a8b1b27b27080250762bb7
-+  __TEXT.__swift5_reflstr: 0x1f58 sha256:8cf37c31b04c98284e82fd51bc88b18ae21fc776e7dc692032f58ec200b52150
-+  __TEXT.__swift5_capture: 0x33c sha256:c1d1577eafd731dac8003287804129213c779314be61d2759c98381065f94ba0
-+  __TEXT.__cstring: 0xa725 sha256:2f9e9b2014673a7166dafd95393d4019c85fec5edc37825b873396a20ccd4354
-+  __TEXT.__swift5_proto: 0x1bc sha256:7928c3b8727401dd467291fc830735a7c89856f35dc19fc0fe65819c6dc02b6a
-+  __TEXT.__swift5_types: 0x214 sha256:a5a570087ae6338f4fb8b095caf424b9de93317013f857d0ec9775618514643a
-+  __TEXT.__swift5_types2: 0x10 sha256:685d6df80a886780157a8dd46c8a70bf430b4679da53b4182a72cc5214ff6019
-+  __TEXT.__swift_as_entry: 0xa4 sha256:888d85f68db69d1503864af0115383da817cd2263f67c4a983566c04c64e49a7
-+  __TEXT.__swift_as_ret: 0xe0 sha256:5623df4f57be5b394eb39992e7fff2a26eff5aba8d619ac839275098db565524
-+  __TEXT.__swift_as_cont: 0x180 sha256:172b9884b3c3df3756feaca654e3c091cb0e80bcb546f7c55178d6267abdd11c
-+  __TEXT.__oslogstring: 0x1957 sha256:f8cc21c16aeea9c5591e3a5c933e7ca2de842e50eb2c70d1e3aeb4d5998ef166
-+  __TEXT.__swift5_protos: 0x10 sha256:742c23ce679538c4cdb9216613af47c0fde76930c73d215ff8a2f396dcd21e18
-+  __TEXT.__swift5_assocty: 0x140 sha256:c749fee85c590398f34da9e51456acbb117cd5e80e76f4e43ed7b15320646bff
-+  __TEXT.__unwind_info: 0x3a70 sha256:f52b961d55ff8de2255389613a07ff9dccb8023b57f9a77ca56a21826ef3129b
-+  __TEXT.__eh_frame: 0x5898 sha256:5c17811392c37e4b729646a24a17f9606334318a337b2434b04b8349ca1d86ba
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x5f8 sha256:77ed113350afa79f8f2adb35f6ec19719fb80d7ea5cf61200720f6b6019c897a
--  __DATA_CONST.__objc_classlist: 0xa8 sha256:77d549637d2ad40d42ce847eba2346cb7500b64fe13e436f329bd684b44e7064
--  __DATA_CONST.__objc_protolist: 0x60 sha256:2a313e5ac8e5342cc59cf2698b0adeee387550b4f5f2abf379fe96f1a293f8f2
-+  __DATA_CONST.__const: 0x5f8 sha256:6a34fce6049c8b4916c52420d4728f6a238a4654826fe502893adf5c8bebf16d
-+  __DATA_CONST.__objc_classlist: 0xa8 sha256:66a2fcd839604f38b107eb53454b0404774a1996e767fa8dde4935cb7b487d16
-+  __DATA_CONST.__objc_protolist: 0x60 sha256:a20300111b5449d9f1edda6f68ccd93c47de717124fc11d36ab8e1e599466f7d
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__weak_got: 0x8 sha256:baed7a8f4fe06577baf9413d1425189458482e4f64d55b4f5cc304378385a036
--  __DATA_CONST.__objc_selrefs: 0x4c0 sha256:f2ba02664f77aa3b1100bf09477c2f4de091c51f5c80fc64f1b8bfb89cd02bfd
--  __DATA_CONST.__objc_protorefs: 0x30 sha256:6379644d9f549882ff7550879b782f3b093f8d28d32136eacdb827280dd25dae
-+  __DATA_CONST.__weak_got: 0x8 sha256:0187a61bf3fae6fc3b3aa794eddabd32ea418a3c89d235dd3a82b6bd02e4fd49
-+  __DATA_CONST.__objc_selrefs: 0x4c8 sha256:057353e68a1651cbb34df09648fc872e68a07c82f2f5fdf4e41354937e21d932
-+  __DATA_CONST.__objc_protorefs: 0x30 sha256:6582ed46b73d7ccf0933d2449d4913417d5ae5ac5a6389b17789cee63baeb4ae
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x5b38 sha256:2dab63c9ef8d1eda85e2c4f7a92cbc6cd7e8e86a603a912b83f1a263e9e201a7
--  __AUTH_CONST.__cfstring: 0x80 sha256:18f435775c83a40fba36b93a7fa7abe019a685927715478cb6a8197e0f42c56f
--  __AUTH_CONST.__objc_const: 0x2580 sha256:5999ad316adf5fed8a196f3192f5d2f8ed9fc08fbf90cda4cc472c3b328437b0
--  __AUTH_CONST.__weak_auth_got: 0x50 sha256:79520aa8b76cb95b23dbae55dd3f782972df9bfd057d34a22e8f230d2083d382
--  __AUTH_CONST.__auth_got: 0x26f8 sha256:ab2071149f93aeaeb22f14de686b05b5537dff70babae07e96090ea2e0941bf6
--  __AUTH.__objc_data: 0x1e0 sha256:f3f6aad962d6b0dc3b441df52f726440f8d0639c58255e1e081b1268b4cb068a
--  __AUTH.__tf_func: 0xc0 sha256:a3e13ea8888021194842e027373cc1cbeb51a13e5edee0c1d3a5e764bafe1b9f
--  __AUTH.__data: 0x2a10 sha256:c4d4029ed4094206d71563cf37d2d1cac75965e3dd05b212b1e77e243b1d6793
--  __DATA.__data: 0x163b sha256:1bf942671f242829a0136b5e0bee3ed36efe77f842bfadf804a891d92665e8ab
--  __DATA.__bss: 0x3ac0 sha256:d351ec5a210b9c5e99f5ebd9530961095effd2d01c71d61f417fe4dbe74591f6
--  __DATA.__common: 0x2d0 sha256:fe2f74a1e0b16a66452888eb4d734bc455cf1304481bb495d59afa8cf9cae93b
-+  __AUTH_CONST.__const: 0x5cc0 sha256:4677cebeb1bcd0e9f2b96a972401b427cbbeb26af209b2b6109c09c43358a923
-+  __AUTH_CONST.__cfstring: 0x80 sha256:8ee8c32f64dbbccc06763ac44ed6556bd3a45ffea6147e0381f844e636478119
-+  __AUTH_CONST.__objc_const: 0x25a0 sha256:9b76cdd8c3dca099c4e4ac48a11a594c46af38eacb0bb664998511ea412c833b
-+  __AUTH_CONST.__weak_auth_got: 0x50 sha256:a264880ab5b5a901a9b53ab98d16704342756be79220882b19c3d866d3a98ac7
-+  __AUTH_CONST.__auth_got: 0x27b8 sha256:da6717855b6ffc5183c801eca4bd2a54ae98ab65a486f03242ad69df6869a7ec
-+  __AUTH.__objc_data: 0x1e0 sha256:209d155c69b3601c127c0d826ec459d07fd2df24da115dc74f9f2b7e98212997
-+  __AUTH.__tf_func: 0xc0 sha256:739fb405f5984bf63c1d73988217a6067ec5503500f10104a197f5d9237eeafc
-+  __AUTH.__data: 0x2a10 sha256:1a7d29ce78ffa3dd914b9a472fe8a49b7e4ca66d0c70c04d5d0b4f9ff31a561d
-+  __DATA.__data: 0x1668 sha256:dac8e35697a908e6d7f91f7822ec187de180640c0797d22c3c92e3b7b3ade838
-+  __DATA.__bss: 0x38d0 sha256:ec872c015dbee9dee999a153fee6912c4d3fb1e2918d66a1d957b53b6407ef00
-+  __DATA.__common: 0x2e0 sha256:c6c9b8650bdf333e657353246bc6f5b02f61950d8990935e2f0e38a63197c80c
-   __DATA_DIRTY.__tf_func: 0x0
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   - /usr/lib/usd/libusd_ms.dylib
--  UUID: E25B4DB3-EB89-3F37-96B5-12C0618BAB0C
 -  Functions: 3927
--  Symbols:   14494
--  CStrings:  826
-+  UUID: C40B2B0B-1FEE-3B6C-B681-ED6FDD1F654C
+-  Symbols:   10148
+-  CStrings:  822
 +  Functions: 3935
-+  Symbols:   14529
-+  CStrings:  832
- 
++  Symbols:   10172
++  CStrings:  828
 Symbols:
 + GCC_except_table107
 + GCC_except_table117
@@ -133,11 +71,6 @@ Symbols:
 + _$s10RealityKit5SceneC0A10FoundationE26withAccessToHiddenEntities7closureyyyKXE_tKF
 + _$s10RealityKit6EntityC08_USDKit_aB0E11findUSDRoot4withACSgSS_tFyyXEfU_
 + _$s10RealityKit6EntityC08_USDKit_aB0E11findUSDRoot4withACSgSS_tFyyXEfU_TA
-+ _$s10RealityKit6EntityC08_USDKit_aB0E11findUSDRoot4withACSgSS_tFyyXEfU_TA.2
-+ _$s10RealityKit6EntityC08_USDKit_aB0E11findUSDRoot4withACSgSS_tFyyXEfU_TA.3
-+ _$s10RealityKit6EntityC08_USDKit_aB0E11findUSDRoot4withACSgSS_tFyyXEfU_TA.4
-+ _$s10RealityKit6EntityC08_USDKit_aB0E11findUSDRoot4withACSgSS_tFyyXEfU_TA.5
-+ _$s10RealityKit6EntityC08_USDKit_aB0E11findUSDRoot4withACSgSS_tFyyXEfU_TA.6
 + _$s10RealityKit6EntityC0A10FoundationE8isHiddenSbvg
 + _$s10RealityKit6EntityC0A10FoundationE8isHiddenSbvs
 + _$s10RealityKit6EntityC5sceneAA5SceneCSgvgTj
@@ -150,7 +83,6 @@ Symbols:
 + _$s12HdRealityKit0A13RKitMeshSwiftC08_USDKit_bC0E07extractE8Addition33_9898728573CE32BC016FE7F68CD98F87LL_8primPath18materialPathsToIds8meshTypeAD9USDPlayerC0E4DataVSgAK0E2IDV_SSSDySSAK08MaterialZ0VGAM0eW0OtF
 + _$s12HdRealityKit0A13RKitMeshSwiftC08_USDKit_bC0E24extractDeformationUpdate33_9898728573CE32BC016FE7F68CD98F87LLyAD9USDPlayerC0I4DataV0J0VSgAH0I2IDVF
 + _$s12HdRealityKit0A13RKitMeshSwiftC08_USDKit_bC0E26extractDeformationAddition33_9898728573CE32BC016FE7F68CD98F87LLyAD9USDPlayerC0I4DataVSgAH0I2IDVF
-+ _$s12HdRealityKit0A13RKitMeshSwiftC08updateLlE8AsNeeded33_6DA3A3A627F16DD90B126E934FD07458LL03llmE07mEntityy0B10Foundation08LowLevelE0C_0bC005ModelT0CtFySWXEfU_ySwXEfU_TA.132
 + _$s12HdRealityKit0A16RKitTextureSwiftC08_USDKit_bC0E07extractE8Addition33_9898728573CE32BC016FE7F68CD98F87LL_9assetPathAD9USDPlayerC0E4DataVSgAI0E2IDV_SStF
 + _$s12HdRealityKit0A16RKitTextureSwiftC10identifier9assetPath14renderDelegateACSo3stdO3__1O0088basic_stringCCharstd__1char_traitsCCharstd__1allocatorCChar_cyHBywaEDexaCidvdFCgAayGjzaaV_AlA09HydraPrimK0CtcfC
 + _$s12HdRealityKit0A16RKitTextureSwiftC10identifier9assetPath14renderDelegateACSo3stdO3__1O0088basic_stringCCharstd__1char_traitsCCharstd__1allocatorCChar_cyHBywaEDexaCidvdFCgAayGjzaaV_AlA09HydraPrimK0CtcfCTq
@@ -170,7 +102,7 @@ Symbols:
 + _$s12HdRealityKit0A17RKitMaterialSwiftC35mParameterNamesToTextureIdentifiersSDyS2SGvpWvd
 + _$s12HdRealityKit0A17RKitMaterialSwiftC35mParameterNamesToTextureIdentifiersSDyS2SGvpfi
 + _$s12HdRealityKit13HydraRendererC16hidePrimEntitiesSbvMZ
-+ _$s12HdRealityKit13HydraRendererC16hidePrimEntitiesSbvMZ.resume.0
++ _$s12HdRealityKit13HydraRendererC16hidePrimEntitiesSbvMZ.resume
 + _$s12HdRealityKit13HydraRendererC16hidePrimEntitiesSbvau
 + _$s12HdRealityKit13HydraRendererC16hidePrimEntitiesSbvgZ
 + _$s12HdRealityKit13HydraRendererC16hidePrimEntitiesSbvpZ
@@ -189,7 +121,7 @@ Symbols:
 + _$s12HdRealityKit13HydraRendererCACycfcyyYaYbScMYccfU_TY0_
 + _$s12HdRealityKit13HydraRendererCACycfcyyYaYbScMYccfU_Tu
 + _$s12HdRealityKit18HydraDeferredTasksC16hidePrimEntitiesSbvMZ
-+ _$s12HdRealityKit18HydraDeferredTasksC16hidePrimEntitiesSbvMZ.resume.0
++ _$s12HdRealityKit18HydraDeferredTasksC16hidePrimEntitiesSbvMZ.resume
 + _$s12HdRealityKit18HydraDeferredTasksC16hidePrimEntitiesSbvau
 + _$s12HdRealityKit18HydraDeferredTasksC16hidePrimEntitiesSbvgZ
 + _$s12HdRealityKit18HydraDeferredTasksC16hidePrimEntitiesSbvpZ
@@ -894,15 +826,10 @@ Symbols:
 + _$ss23_ContiguousArrayStorageCy18_USDKit_RealityKit9USDPlayerC6MeshIDVGMd
 + _$ss23_ContiguousArrayStorageCy18_USDKit_RealityKit9USDPlayerC9TextureIDVGMR
 + _$ss23_ContiguousArrayStorageCy18_USDKit_RealityKit9USDPlayerC9TextureIDVGMd
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.13
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.13TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.13Tu
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.149
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.149TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.149Tu
-+ _.str.14
-+ _.str.15
-+ __MergedGlobals.18
 + __Z7strrchrB9fqe220106Ua9enable_ifIXLb1EEEPKci
 + __ZL11gatherNodesRN32pxrInternal__aapl__pxrReserved__18HdMaterialNetwork2ERKNS_27HdMaterialNetwork2InterfaceERKNS_7SdfPathERNSt3__110unique_ptrIN12HdRealityKit19HdRKitMaterialSwiftENS8_14default_deleteISB_EEEERKNS8_3mapIN21USDRealityKitRenderer8AssetKeyENS8_12basic_stringIcNS8_11char_traitsIcEENS8_9allocatorIcEEEENS8_4lessISI_EENSM_INS8_4pairIKSI_SO_EEEEEE
 + __ZL25_Tf_RegistryFunctionBar88PN32pxrInternal__aapl__pxrReserved__6TfEnumEPv
@@ -1128,17 +1055,7 @@ Symbols:
 + ___destroy_helper_block_ea8_32c48_ZTSNSt3__110shared_ptrI20HdRKitTextureStorageEE
 + ___func__._ZN21USDRealityKitRenderer21HdRKitTextureImporter16importMTLTextureEPU29objcproto18RTIImportOperation11objc_objectbRP9__CFError
 + ___invert_d4
-+ ___swift_closure_destructor.137
-+ ___swift_closure_destructor.143
-+ ___swift_closure_destructor.147
-+ ___swift_closure_destructor.155
 + ___swift_closure_destructor.155Tm
-+ ___swift_closure_destructor.159
-+ ___swift_closure_destructor.171
-+ ___swift_closure_destructor.175
-+ ___swift_closure_destructor.183
-+ ___swift_closure_destructor.23
-+ ___swift_closure_destructor.7
 + ___swift_memcpy128_16
 + ___swift_memcpy144_16
 + _associated conformance 18_USDKit_RealityKit9USDPlayerC10MaterialIDVSHAASQ
@@ -1147,15 +1064,8 @@ Symbols:
 + _associated conformance 18_USDKit_RealityKit9USDPlayerC9TextureIDVSHAASQ
 + _get_enum_tag_for_layout_string 18_USDKit_RealityKit9USDPlayerC15DeformationDataV015RenormalizationF0VSg
 + _get_enum_tag_for_layout_string 18_USDKit_RealityKit9USDPlayerC15DeformationDataV08SkinningF0VSg
-+ _get_type_metadata 15Synchronization5MutexVy11ShaderGraph07_Proto_c4NodeD0CG noncopyable.167
-+ _get_type_metadata 15Synchronization5MutexVy11ShaderGraphADCG noncopyable.97
-+ _get_type_metadata 15Synchronization5MutexVySay18_USDKit_RealityKit16UsdRenderMessageVGG noncopyable.29
-+ _get_type_metadata 15Synchronization5MutexVyShySSGG noncopyable.82
-+ _get_type_metadata So12RKitRendererV noncopyable.49
-+ _get_witness_table 18_USDKit_RealityKit18UsdCoordinateSpaceV7Spatial0E12Space3DFloatHPyHC.54
 + _matrix_identity_double4x4
 + _objc_alloc
-+ _objc_msgSend$initWithBytesNoCopy:length:deallocator:
 + _objc_storeStrong
 + _symbolic SDyS2SG
 + _symbolic SDySS_____G 18_USDKit_RealityKit9USDPlayerC10MaterialIDV
@@ -1289,7 +1199,6 @@ Symbols:
 - _$s12HdRealityKit0A13RKitMeshSwiftC08_USDKit_bC0E07extractE8Addition33_9898728573CE32BC016FE7F68CD98F87LL_8primPath18materialPathsToIds8meshTypeAD0E4DataVSgAD0E2IDV_SSSDySSAD08MaterialY0VGAK0eW0OtF
 - _$s12HdRealityKit0A13RKitMeshSwiftC08_USDKit_bC0E24extractDeformationUpdate33_9898728573CE32BC016FE7F68CD98F87LLyAD0I4DataV0J0VSgAD0I2IDVF
 - _$s12HdRealityKit0A13RKitMeshSwiftC08_USDKit_bC0E26extractDeformationAddition33_9898728573CE32BC016FE7F68CD98F87LLyAD0I4DataVSgAD0I2IDVF
-- _$s12HdRealityKit0A13RKitMeshSwiftC08updateLlE8AsNeeded33_6DA3A3A627F16DD90B126E934FD07458LL03llmE07mEntityy0B10Foundation08LowLevelE0C_0bC005ModelT0CtFySWXEfU_ySwXEfU_TA.127
 - _$s12HdRealityKit0A13RKitMeshSwiftC16setPrimvar_half28rkitName11valuesCount7dataPtr05indexM007indicesO010rateHandleySS_s6UInt64VSPys7Float16VGSiSPys6UInt32VGSitFTm
 - _$s12HdRealityKit0A13RKitMeshSwiftC16setPrimvar_half38rkitName11valuesCount7dataPtr05indexM007indicesO010rateHandleySS_s6UInt64VSPys7Float16VGSiSPys6UInt32VGSitFTm
 - _$s12HdRealityKit0A13RKitMeshSwiftC18setPrimvar_double48rkitName11valuesCount7dataPtr05indexM007indicesO010rateHandleySS_s6UInt64VSPySdGSiSPys6UInt32VGSitFTm
@@ -2036,11 +1945,9 @@ Symbols:
 - _$ss5SIMD3VyxG12HdRealityKit18AttributeInputType33_0793D9550CA1C1474F0A4E3902982EAFLLADSfRszrlWP
 - _$ss5SIMD4VyxG12HdRealityKit18AttributeInputType33_0793D9550CA1C1474F0A4E3902982EAFLLADSfRszrlMc
 - _$ss5SIMD4VyxG12HdRealityKit18AttributeInputType33_0793D9550CA1C1474F0A4E3902982EAFLLADSfRszrlWP
-- _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.148
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.148TQ0_
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.148Tu
 - _RTIImportOperationSetTextureDescriptorTemplate
-- __MergedGlobals.19
 - __Z7strrchrB9fqe220100Ua9enable_ifIXLb1EEEPKci
 - __ZL11gatherNodesRN32pxrInternal__aapl__pxrReserved__18HdMaterialNetwork2ERKNS_27HdMaterialNetwork2InterfaceERKNS_7SdfPathERNSt3__110unique_ptrIN12HdRealityKit19HdRKitMaterialSwiftENS8_14default_deleteISB_EEEE
 - __ZL25_Tf_RegistryFunctionBar87PN32pxrInternal__aapl__pxrReserved__6TfEnumEPv
@@ -2241,16 +2148,7 @@ Symbols:
 - ____ZN21USDRealityKitRenderer13HdRKitBackend20RenderToBuffersAsyncEPN32pxrInternal__aapl__pxrReserved__3HgiEPNS_18HdRKitRenderBufferES5_iiRKNSt3__112basic_stringIcNS6_11char_traitsIcEENS6_9allocatorIcEEEEPKNS1_10GfMatrix4dESH_PNS_17HdRKitRenderParamE_block_invoke_2
 - ___block_descriptor_40_e8_v12?0B8l
 - ___block_descriptor_96_ea8_32s40s48s56s64s72s_e5_v8?0ls32l8s40l8s48l8s56l8s64l8s72l8
-- ___swift_closure_destructor.136
-- ___swift_closure_destructor.14
-- ___swift_closure_destructor.142
-- ___swift_closure_destructor.146
-- ___swift_closure_destructor.154
 - ___swift_closure_destructor.154Tm
-- ___swift_closure_destructor.158
-- ___swift_closure_destructor.170
-- ___swift_closure_destructor.174
-- ___swift_closure_destructor.182
 - ___swift_exist.box.addr_destructor
 - _associated conformance 12HdRealityKit0A16RKitTextureSwiftCSHAASQ
 - _associated conformance 12HdRealityKit0A17RKitMaterialSwiftC0E5ErrorOSHAASQ
@@ -2260,12 +2158,6 @@ Symbols:
 - _associated conformance 18_USDKit_RealityKit9TextureIDVSHAASQ
 - _get_enum_tag_for_layout_string 18_USDKit_RealityKit15DeformationDataV015RenormalizationE0VSg
 - _get_enum_tag_for_layout_string 18_USDKit_RealityKit15DeformationDataV08SkinningE0VSg
-- _get_type_metadata 15Synchronization5MutexVy11ShaderGraph07_Proto_c4NodeD0CG noncopyable.97
-- _get_type_metadata 15Synchronization5MutexVy11ShaderGraphADCG noncopyable.103
-- _get_type_metadata 15Synchronization5MutexVySay18_USDKit_RealityKit16UsdRenderMessageVGG noncopyable.24
-- _get_type_metadata 15Synchronization5MutexVyShySSGG noncopyable.81
-- _get_type_metadata So12RKitRendererV noncopyable.40
-- _get_witness_table 18_USDKit_RealityKit18UsdCoordinateSpaceV7Spatial0E12Space3DFloatHPyHC.49
 - _objc_alloc_init
 - _symbolic $s12HdRealityKit18AttributeInputType33_0793D9550CA1C1474F0A4E3902982EAFLLP
 - _symbolic SDySS_____G 18_USDKit_RealityKit10MaterialIDV
@@ -2371,12 +2263,6 @@ CStrings:
 + " invalid, graph has "
 + "' dest node with index "
 + ") invalid, graph has "
-+ "/AppleInternal/Library/BuildRoots/4~CRtEugCknsE5SItnNlcOOBGUmj-6Din2E0lTZHU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/base/tf/refPtr.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRtEugCknsE5SItnNlcOOBGUmj-6Din2E0lTZHU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/base/tf/weakPtrFacade.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRtEugCknsE5SItnNlcOOBGUmj-6Din2E0lTZHU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/base/vt/array.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRtEugCknsE5SItnNlcOOBGUmj-6Din2E0lTZHU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/usd/object.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRtEugCknsE5SItnNlcOOBGUmj-6Din2E0lTZHU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/usd/primData.h"
-+ "/AppleInternal/Library/BuildRoots/4~CRtEugCknsE5SItnNlcOOBGUmj-6Din2E0lTZHU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/usd/primRange.h"
 + "Error finding parameter name for texture \"%s\"."
 + "SGGraph.create returned nil for "
 + "SGInput.create returned nil for texture '"
@@ -2395,12 +2281,6 @@ CStrings:
 + "void USDRealityKitRenderer::HdRKitMaterial::setTextureToSync(HdRenderParam *, const AssetKey &, const std::string &, TextureSemantic, const TfToken &)"
 + "void USDRealityKitRenderer::HdRKitMaterial::syncTextures(pxr_aapl::HdSceneDelegate *, pxr_aapl::HdRenderParam *, pxr_aapl::HdDirtyBits *, HdMaterialNetwork2 &, HdMaterialNode2 &, const SdfPath &)"
 + "void gatherNodes(HdMaterialNetwork2 &, const HdMaterialNetwork2Interface &, const SdfPath &, std::unique_ptr<HdRealityKit::HdRKitMaterialSwift> &, const std::map<AssetKey, std::string> &)"
-- "/AppleInternal/Library/BuildRoots/4~CQKougB2D7QzSCYGBY_L8ixaez74dUoy76KI0u0/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/base/tf/refPtr.h"
-- "/AppleInternal/Library/BuildRoots/4~CQKougB2D7QzSCYGBY_L8ixaez74dUoy76KI0u0/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/base/tf/weakPtrFacade.h"
-- "/AppleInternal/Library/BuildRoots/4~CQKougB2D7QzSCYGBY_L8ixaez74dUoy76KI0u0/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/base/vt/array.h"
-- "/AppleInternal/Library/BuildRoots/4~CQKougB2D7QzSCYGBY_L8ixaez74dUoy76KI0u0/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/usd/object.h"
-- "/AppleInternal/Library/BuildRoots/4~CQKougB2D7QzSCYGBY_L8ixaez74dUoy76KI0u0/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/usd/primData.h"
-- "/AppleInternal/Library/BuildRoots/4~CQKougB2D7QzSCYGBY_L8ixaez74dUoy76KI0u0/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/usd/pxr/usd/usd/primRange.h"
 - "/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/USDKit_Imaging/Sources/USDRealityKit/imaging/hdRealityKit/RKitRenderer.mm"
 - "BadIndex (ss.destNode)"
 - "BadIndex (ss.sourceNode)"
@@ -2417,5 +2297,4 @@ CStrings:
 - "void USDRealityKitRenderer::HdRKitMaterial::SyncTextures(pxr_aapl::HdSceneDelegate *, pxr_aapl::HdRenderParam *, pxr_aapl::HdDirtyBits *, HdMaterialNetwork2 &, HdMaterialNode2 &, const SdfPath &)"
 - "void USDRealityKitRenderer::HdRKitMaterial::setTextureToSync(HdRenderParam *, const SdfAssetPath &, TextureSemantic, const TfToken &)"
 - "void gatherNodes(HdMaterialNetwork2 &, const HdMaterialNetwork2Interface &, const SdfPath &, std::unique_ptr<HdRealityKit::HdRKitMaterialSwift> &)"
-
 ```

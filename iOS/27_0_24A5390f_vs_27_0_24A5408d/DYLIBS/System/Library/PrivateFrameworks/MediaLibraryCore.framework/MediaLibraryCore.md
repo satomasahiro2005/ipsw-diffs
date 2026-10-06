@@ -2,40 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/MediaLibraryCore.framework/MediaLibraryCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3a7ad0` | `0x3a1b8c` | **`-0x5f44`** |
+| `__TEXT.__gcc_except_tab` | `0x2a9e8` | `0x2aa84` | **`+0x9c`** |
+| `__TEXT.__unwind_info` | `0x8680` | `0x86d0` | **`+0x50`** |
+| `__TEXT.__const` | `0xd292` | `0xd262` | **`-0x30`** |
+| `__AUTH_CONST.__weak_auth_got` | `0xd8` | `0xf8` | **`+0x20`** |
+
+### Other Changes
+
 ```diff
 
 -4026.100.72.0.0
--  __TEXT.__text: 0x3a7ad0
--  __TEXT.__const: 0xd292
--  __TEXT.__gcc_except_tab: 0x2a9e8
 +4026.100.85.0.0
-+  __TEXT.__text: 0x3a1b8c
-+  __TEXT.__const: 0xd262
-+  __TEXT.__gcc_except_tab: 0x2aa84
-   __TEXT.__cstring: 0x5add
--  __TEXT.__unwind_info: 0x8680
-+  __TEXT.__unwind_info: 0x86d0
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x140
-   __DATA_CONST.__weak_got: 0x120
-   __DATA_CONST.__got: 0x170
-   __AUTH_CONST.__const: 0xdbe0
-   __AUTH_CONST.__cfstring: 0xea0
--  __AUTH_CONST.__weak_auth_got: 0xd8
-+  __AUTH_CONST.__weak_auth_got: 0xf8
-   __AUTH_CONST.__auth_got: 0x9b0
-   __DATA.__bss: 0xc48
-   __DATA_DIRTY.__bss: 0x1e58
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 7191
 -  Symbols:   12880
 +  Functions: 7195
 +  Symbols:   12891
-   CStrings:  1151
- 
 Symbols:
 + GCC_except_table1002
 + GCC_except_table1003

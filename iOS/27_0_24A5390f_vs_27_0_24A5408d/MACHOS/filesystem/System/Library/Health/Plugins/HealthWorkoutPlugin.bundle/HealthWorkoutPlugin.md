@@ -2,17 +2,16 @@
 
 > `/System/Library/Health/Plugins/HealthWorkoutPlugin.bundle/HealthWorkoutPlugin`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -7027.0.67.2.1
 +7027.0.72.2.5
-   __TEXT.__text: 0x5a00
-   __TEXT.__auth_stubs: 0x450
-   __TEXT.__objc_stubs: 0xbe0
 Functions:
 ~ sub_3e4c : 792 -> 196
 ~ sub_4164 -> sub_3f10 : 320 -> 792

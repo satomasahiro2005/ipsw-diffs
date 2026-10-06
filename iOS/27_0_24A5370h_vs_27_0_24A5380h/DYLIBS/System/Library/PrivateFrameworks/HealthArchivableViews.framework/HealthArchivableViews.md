@@ -2,64 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/HealthArchivableViews.framework/HealthArchivableViews`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x65f4` | `0x798c` | **`+0x1398`** |
+| `__TEXT.__cstring` | `0xc7` | `0x165` | **`+0x9e`** |
+| `__AUTH_CONST.__auth_got` | `0x418` | `0x4b0` | **`+0x98`** |
+| `__DATA.__data` | `0x268` | `0x2f8` | **`+0x90`** |
+| `__TEXT.__const` | `0x20c` | `0x29c` | **`+0x90`** |
+| `__AUTH.__data` | `0x80` | `0x100` | **`+0x80`** |
+| `__DATA.__bss` | `0x100` | `0x180` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x1b0` | `0x210` | **`+0x60`** |
+| `__TEXT.__constg_swiftt` | `0x120` | `0x170` | **`+0x50`** |
+| `__TEXT.__swift5_typeref` | `0x1aa` | `0x1ee` | **`+0x44`** |
+| `__TEXT.__swift5_assocty` | `0x30` | `0x48` | **`+0x18`** |
+| `__TEXT.__swift5_fieldmd` | `0xa4` | `0xb4` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x8` | `0xc` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0x14` | `0x18` | **`+0x4`** |
+| `__TEXT.__swift5_reflstr` | `0x62` | `0x60` | **`-0x2`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x65f4
--  __TEXT.__swift5_typeref: 0x1aa
-+  __TEXT.__text: 0x798c
-+  __TEXT.__swift5_typeref: 0x1ee
-   __TEXT.__swift5_capture: 0x74
--  __TEXT.__swift5_reflstr: 0x62
--  __TEXT.__swift5_assocty: 0x30
--  __TEXT.__const: 0x20c
--  __TEXT.__constg_swiftt: 0x120
--  __TEXT.__swift5_fieldmd: 0xa4
--  __TEXT.__cstring: 0xc7
--  __TEXT.__swift5_proto: 0x8
--  __TEXT.__swift5_types: 0x14
--  __TEXT.__unwind_info: 0x1b0
-+  __TEXT.__swift5_reflstr: 0x60
-+  __TEXT.__swift5_assocty: 0x48
-+  __TEXT.__const: 0x29c
-+  __TEXT.__constg_swiftt: 0x170
-+  __TEXT.__swift5_fieldmd: 0xb4
-+  __TEXT.__cstring: 0x165
-+  __TEXT.__swift5_proto: 0xc
-+  __TEXT.__swift5_types: 0x18
-+  __TEXT.__unwind_info: 0x210
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
+-7027.0.60.2.2
++7027.0.64.0.0
 
-   __DATA_CONST.__objc_selrefs: 0x8
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x2f8
--  __AUTH_CONST.__auth_got: 0x418
--  __AUTH.__data: 0x80
--  __DATA.__data: 0x268
--  __DATA.__bss: 0x100
-+  __AUTH_CONST.__auth_got: 0x4b0
-+  __AUTH.__data: 0x100
-+  __DATA.__data: 0x2f8
-+  __DATA.__bss: 0x180
-   - /System/Library/Frameworks/Charts.framework/Charts
-   - /System/Library/Frameworks/ClockKit.framework/ClockKit
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 129
--  Symbols:   126
+-  Symbols:   110
 -  CStrings:  4
 +  Functions: 157
-+  Symbols:   132
++  Symbols:   116
 +  CStrings:  8
- 
-Sections:
-~ __TEXT.__swift5_capture : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__const : content changed
 Symbols:
 + ___swift_memcpy40_8
 + _associated conformance 21HealthArchivableViews30HeartRateChartAXRepresentationV7SwiftUI4ViewAA4BodyAdEP_AdE
@@ -76,5 +51,4 @@ CStrings:
 + "HealthArchivableViews/HeartRateChartAXRepresentation.swift"
 + "Localizable-HeartRateComplications"
 - "Localizable-LiveHeartRateComplications"
-
 ```

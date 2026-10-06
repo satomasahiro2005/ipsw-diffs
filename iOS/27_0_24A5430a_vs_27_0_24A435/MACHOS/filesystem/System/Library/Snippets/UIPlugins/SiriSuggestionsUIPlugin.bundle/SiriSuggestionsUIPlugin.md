@@ -2,6 +2,8 @@
 
 > `/System/Library/Snippets/UIPlugins/SiriSuggestionsUIPlugin.bundle/SiriSuggestionsUIPlugin`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_c008 : 12 -> 32

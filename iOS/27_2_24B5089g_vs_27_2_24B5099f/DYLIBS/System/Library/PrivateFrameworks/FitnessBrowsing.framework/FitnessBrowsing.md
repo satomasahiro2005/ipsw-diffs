@@ -2,68 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/FitnessBrowsing.framework/FitnessBrowsing`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x19660` | `0x198e0` | **`+0x280`** |
+| `__TEXT.__const` | `0xedd4` | `0xef24` | **`+0x150`** |
+| `__TEXT.__text` | `0x94b6c` | `0x94a6c` | **`-0x100`** |
+| `__AUTH_CONST.__const` | `0x68a0` | `0x6930` | **`+0x90`** |
+| `__TEXT.__swift5_fieldmd` | `0x2d50` | `0x2db4` | **`+0x64`** |
+| `__TEXT.__cstring` | `0xb8e` | `0xbce` | **`+0x40`** |
+| `__TEXT.__swift5_reflstr` | `0x1cc7` | `0x1d07` | **`+0x40`** |
+| `__DATA.__data` | `0x2670` | `0x26a0` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x2bb8` | `0x2be8` | **`+0x30`** |
+| `__TEXT.__swift5_typeref` | `0x3d40` | `0x3d6a` | **`+0x2a`** |
+| `__TEXT.__constg_swiftt` | `0x2998` | `0x29bc` | **`+0x24`** |
+| `__TEXT.__swift5_proto` | `0xdec` | `0xe00` | **`+0x14`** |
+| `__TEXT.__swift5_capture` | `0x50c` | `0x510` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0x390` | `0x394` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2027.1.54.0.0
--  __TEXT.__text: 0x8eba0
--  __TEXT.__const: 0xedd4
--  __TEXT.__constg_swiftt: 0x2998
--  __TEXT.__swift5_typeref: 0x3d40
--  __TEXT.__swift5_reflstr: 0x1cc7
--  __TEXT.__swift5_fieldmd: 0x2d50
 +2027.1.63.0.0
-+  __TEXT.__text: 0x8ea84
-+  __TEXT.__const: 0xef24
-+  __TEXT.__constg_swiftt: 0x29bc
-+  __TEXT.__swift5_typeref: 0x3d6a
-+  __TEXT.__swift5_reflstr: 0x1d07
-+  __TEXT.__swift5_fieldmd: 0x2db4
-   __TEXT.__swift5_assocty: 0x2b0
--  __TEXT.__swift5_proto: 0xdec
--  __TEXT.__swift5_types: 0x390
--  __TEXT.__cstring: 0xb8e
--  __TEXT.__swift5_capture: 0x50c
-+  __TEXT.__swift5_proto: 0xe00
-+  __TEXT.__swift5_types: 0x394
-+  __TEXT.__cstring: 0xbce
-+  __TEXT.__swift5_capture: 0x510
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift5_builtin: 0x50
-   __TEXT.__swift5_mpenum: 0x20
 
-   __TEXT.__swift_as_entry: 0x74
-   __TEXT.__swift_as_ret: 0xf8
-   __TEXT.__swift_as_cont: 0x168
--  __TEXT.__unwind_info: 0x38d0
-+  __TEXT.__unwind_info: 0x38f8
-   __TEXT.__eh_frame: 0x3d58
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x68a0
-+  __AUTH_CONST.__const: 0x6930
-   __AUTH_CONST.__objc_const: 0x1b0
-   __AUTH_CONST.__auth_got: 0xd80
-   __AUTH.__data: 0x2a8
--  __DATA.__data: 0x2670
-+  __DATA.__data: 0x26a0
-   __DATA.__common: 0x20
-   __DATA_DIRTY.__data: 0x1920
-   __DATA_DIRTY.__bss: 0x2800
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3808
 -  Symbols:   1492
 -  CStrings:  136
 +  Functions: 3819
 +  Symbols:   1498
 +  CStrings:  138
- 
 Symbols:
 + _associated conformance 15FitnessBrowsing15BrowseLoadStateO18RetryingCodingKeys33_79C8B3E053B2F5870D72589382CB1A6ALLOSHAASQ
 + _associated conformance 15FitnessBrowsing15BrowseLoadStateO18RetryingCodingKeys33_79C8B3E053B2F5870D72589382CB1A6ALLOs0G3KeyAAs23CustomStringConvertible

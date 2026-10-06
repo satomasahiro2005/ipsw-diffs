@@ -2,127 +2,67 @@
 
 > `/System/Library/PrivateFrameworks/AgentCanvasUICore.framework/AgentCanvasUICore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5653f0` | `0x587244` | **`+0x21e54`** |
+| `__DATA_DIRTY.__data` | `—` | `0x11528` | **`+0x11528`** |
+| `__DATA_DIRTY.__bss` | `—` | `0xe5b0` | **`+0xe5b0`** |
+| `__DATA.__bss` | `0x3db28` | `0x30bf0` | **`-0xcf38`** |
+| `__AUTH.__data` | `0x11370` | `0x7cc0` | **`-0x96b0`** |
+| `__DATA.__data` | `0x16080` | `0xee40` | **`-0x7240`** |
+| `__TEXT.__swift5_typeref` | `0x3b944` | `0x3e2f8` | **`+0x29b4`** |
+| `__TEXT.__const` | `0x422c4` | `0x43e14` | **`+0x1b50`** |
+| `__AUTH_CONST.__const` | `0x2a518` | `0x2b738` | **`+0x1220`** |
+| `__DATA_DIRTY.__objc_data` | `—` | `0x1088` | **`+0x1088`** |
+| `__AUTH.__objc_data` | `0x2500` | `0x1518` | **`-0xfe8`** |
+| `__TEXT.__cstring` | `0x12139` | `0x12c09` | **`+0xad0`** |
+| `__TEXT.__unwind_info` | `0x157e8` | `0x14f50` | **`-0x898`** |
+| `__TEXT.__constg_swiftt` | `0x15364` | `0x15b20` | **`+0x7bc`** |
+| `__TEXT.__eh_frame` | `0x13f44` | `0x14658` | **`+0x714`** |
+| `__TEXT.__swift5_fieldmd` | `0x11710` | `0x11ce8` | **`+0x5d8`** |
+| `__TEXT.__swift5_reflstr` | `0x1001a` | `0x105d4` | **`+0x5ba`** |
+| `__AUTH_CONST.__objc_const` | `0xa770` | `0xaaa8` | **`+0x338`** |
+| `__DATA_DIRTY.__common` | `—` | `0x329` | **`+0x329`** |
+| `__DATA.__common` | `0x1460` | `0x1168` | **`-0x2f8`** |
+| `__TEXT.__swift5_assocty` | `0x4280` | `0x44c0` | **`+0x240`** |
+| `__TEXT.__oslogstring` | `0x3543` | `0x3773` | **`+0x230`** |
+| `__TEXT.__swift5_capture` | `0x7810` | `0x7a28` | **`+0x218`** |
+| `__AUTH_CONST.__auth_got` | `0x4180` | `0x42b0` | **`+0x130`** |
+| `__DATA_CONST.__got` | `0x2208` | `0x2318` | **`+0x110`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1bb0` | `0x1c68` | **`+0xb8`** |
+| `__TEXT.__swift5_proto` | `0x1fcc` | `0x207c` | **`+0xb0`** |
+| `__TEXT.__objc_methlist` | `0x1484` | `0x1514` | **`+0x90`** |
+| `__TEXT.__swift5_types` | `0x1474` | `0x14f4` | **`+0x80`** |
+| `__TEXT.__swift_as_cont` | `0x8d0` | `0x91c` | **`+0x4c`** |
+| `__TEXT.__swift_as_ret` | `0x4b4` | `0x4e4` | **`+0x30`** |
+| `__TEXT.__swift_as_entry` | `0x4d4` | `0x4f8` | **`+0x24`** |
+| `__DATA_CONST.__objc_classlist` | `0x458` | `0x470` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x2e4` | `0x2f8` | **`+0x14`** |
+| `__DATA_CONST.__const` | `0x970` | `0x980` | **`+0x10`** |
+| `__TEXT.__swift5_mpenum` | `0xec` | `0xf4` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x5653f0
--  __TEXT.__objc_methlist: 0x1484
--  __TEXT.__const: 0x422c4
--  __TEXT.__constg_swiftt: 0x15364
--  __TEXT.__swift5_typeref: 0x3b944
--  __TEXT.__swift5_builtin: 0x2e4
--  __TEXT.__swift5_reflstr: 0x1001a
--  __TEXT.__swift5_fieldmd: 0x11710
--  __TEXT.__swift5_assocty: 0x4280
--  __TEXT.__swift5_proto: 0x1fcc
--  __TEXT.__swift5_types: 0x1474
--  __TEXT.__cstring: 0x12139
--  __TEXT.__swift5_capture: 0x7810
-+  __TEXT.__text: 0x587244
-+  __TEXT.__objc_methlist: 0x1514
-+  __TEXT.__const: 0x43e14
-+  __TEXT.__constg_swiftt: 0x15b20
-+  __TEXT.__swift5_typeref: 0x3e2f8
-+  __TEXT.__swift5_builtin: 0x2f8
-+  __TEXT.__swift5_reflstr: 0x105d4
-+  __TEXT.__swift5_fieldmd: 0x11ce8
-+  __TEXT.__swift5_assocty: 0x44c0
-+  __TEXT.__swift5_proto: 0x207c
-+  __TEXT.__swift5_types: 0x14f4
-+  __TEXT.__cstring: 0x12c09
-+  __TEXT.__swift5_capture: 0x7a28
-   __TEXT.__swift5_protos: 0x118
--  __TEXT.__swift_as_entry: 0x4d4
--  __TEXT.__swift_as_ret: 0x4b4
--  __TEXT.__swift_as_cont: 0x8d0
--  __TEXT.__oslogstring: 0x3543
--  __TEXT.__swift5_mpenum: 0xec
--  __TEXT.__unwind_info: 0x157e8
--  __TEXT.__eh_frame: 0x13f44
-+  __TEXT.__swift_as_entry: 0x4f8
-+  __TEXT.__swift_as_ret: 0x4e4
-+  __TEXT.__swift_as_cont: 0x91c
-+  __TEXT.__oslogstring: 0x3773
-+  __TEXT.__swift5_mpenum: 0xf4
-+  __TEXT.__unwind_info: 0x14f50
-+  __TEXT.__eh_frame: 0x14658
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x970
--  __DATA_CONST.__objc_classlist: 0x458
-+  __DATA_CONST.__const: 0x980
-+  __DATA_CONST.__objc_classlist: 0x470
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x100
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1bb0
-+  __DATA_CONST.__objc_selrefs: 0x1c68
-   __DATA_CONST.__objc_protorefs: 0x80
--  __DATA_CONST.__got: 0x2208
--  __AUTH_CONST.__const: 0x2a518
--  __AUTH_CONST.__objc_const: 0xa770
--  __AUTH_CONST.__auth_got: 0x4180
--  __AUTH.__objc_data: 0x2500
--  __AUTH.__data: 0x11370
--  __DATA.__data: 0x16080
--  __DATA.__bss: 0x3db28
--  __DATA.__common: 0x1460
-+  __DATA_CONST.__got: 0x2318
-+  __AUTH_CONST.__const: 0x2b738
-+  __AUTH_CONST.__objc_const: 0xaaa8
-+  __AUTH_CONST.__auth_got: 0x42b0
-+  __AUTH.__objc_data: 0x1518
-+  __AUTH.__data: 0x7cc0
-+  __DATA.__data: 0xee40
-+  __DATA.__bss: 0x30bf0
-+  __DATA.__common: 0x1168
-+  __DATA_DIRTY.__objc_data: 0x1088
-+  __DATA_DIRTY.__data: 0x11528
-+  __DATA_DIRTY.__bss: 0xe5b0
-+  __DATA_DIRTY.__common: 0x329
+-67.4.100.0.0
++73.0.5.102.0
 +  - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreText.framework/CoreText
 
-   - /System/Library/Frameworks/PDFKit.framework/PDFKit
-   - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
-   - /System/Library/Frameworks/QuickLook.framework/QuickLook
 +  - /System/Library/Frameworks/QuickLookThumbnailing.framework/QuickLookThumbnailing
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-   - /System/Library/Frameworks/Symbols.framework/Symbols
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/Frameworks/WebKit.framework/WebKit
+
 +  - /System/Library/Frameworks/_DataDetection_SwiftUI.framework/_DataDetection_SwiftUI
-   - /System/Library/PrivateFrameworks/AgentCanvasFoundation.framework/AgentCanvasFoundation
-   - /System/Library/PrivateFrameworks/AgentCanvasUIFoundation.framework/AgentCanvasUIFoundation
-   - /System/Library/PrivateFrameworks/AssistantIslandClient.framework/AssistantIslandClient
 
-   - /System/Library/PrivateFrameworks/CampoMarkdown.framework/CampoMarkdown
-   - /System/Library/PrivateFrameworks/CoreSVG.framework/CoreSVG
-   - /System/Library/PrivateFrameworks/MathTypesetting.framework/MathTypesetting
 +  - /System/Library/PrivateFrameworks/RenderBox.framework/RenderBox
-   - /System/Library/PrivateFrameworks/ShareSheet.framework/ShareSheet
-   - /System/Library/PrivateFrameworks/SiriAppIntents.framework/SiriAppIntents
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 35266
--  Symbols:   31005
--  CStrings:  1736
+-  Symbols:   9608
+-  CStrings:  1735
 +  Functions: 36023
-+  Symbols:   31684
-+  CStrings:  1777
- 
-Sections:
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
++  Symbols:   9832
++  CStrings:  1776
 Symbols:
 + _CGImageGetHeight
 + _CGImageGetWidth
@@ -241,29 +181,6 @@ Symbols:
 + _keypath_get_selector_enableCanvasVerticalOffset
 + _keypath_get_selector_sourceAttributionBaselineOffsetPercentage
 + _keypath_get_selector_useGPUStreamingAnimation
-+ _objc_msgSend$_enableCanvasVerticalOffset
-+ _objc_msgSend$_sourceAttributionBaselineOffsetPercentage
-+ _objc_msgSend$_useGPUStreamingAnimation
-+ _objc_msgSend$enableCanvasVerticalOffset
-+ _objc_msgSend$generateBestRepresentationForRequest:completionHandler:
-+ _objc_msgSend$initWithData:contentType:size:scale:representationTypes:
-+ _objc_msgSend$initWithFileAtURL:size:scale:representationTypes:
-+ _objc_msgSend$initWithObject:
-+ _objc_msgSend$separatorColor
-+ _objc_msgSend$setABIVersion:
-+ _objc_msgSend$setBinaryArchiveURL:
-+ _objc_msgSend$setClipsToBounds:
-+ _objc_msgSend$setCornerRadius:
-+ _objc_msgSend$setEnableCanvasVerticalOffset:
-+ _objc_msgSend$setIconMode:
-+ _objc_msgSend$setSourceAttributionBaselineOffsetPercentage:
-+ _objc_msgSend$setUseGPUStreamingAnimation:
-+ _objc_msgSend$set_enableCanvasVerticalOffset:
-+ _objc_msgSend$set_sourceAttributionBaselineOffsetPercentage:
-+ _objc_msgSend$set_useGPUStreamingAnimation:
-+ _objc_msgSend$sharedGenerator
-+ _objc_msgSend$sourceAttributionBaselineOffsetPercentage
-+ _objc_msgSend$useGPUStreamingAnimation
 + _symbolic $s7SwiftUI11ButtonStyleP
 + _symbolic 8Duration_____Qyd__ s5ClockP
 + _symbolic SDy__________G 10Foundation3URLV 17AgentCanvasUICore18FileThumbnailEntryV
@@ -881,5 +798,4 @@ CStrings:
 - "Bad server response"
 - "Download completed for %{private}s, loaded in %ss"
 - "url name contentType fileSize "
-
 ```

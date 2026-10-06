@@ -2,128 +2,64 @@
 
 > `/System/Library/PrivateFrameworks/VisualIntelligenceUI.framework/VisualIntelligenceUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3d7fc8` | `0x3c1508` | **`-0x16ac0`** |
+| `__TEXT.__swift5_typeref` | `0x4e0ea` | `0x4a290` | **`-0x3e5a`** |
+| `__TEXT.__eh_frame` | `0xb738` | `0xb03c` | **`-0x6fc`** |
+| `__TEXT.__const` | `0x24384` | `0x23d14` | **`-0x670`** |
+| `__TEXT.__swift5_capture` | `0x4110` | `0x3d2c` | **`-0x3e4`** |
+| `__DATA.__data` | `0x9c48` | `0x9898` | **`-0x3b0`** |
+| `__AUTH_CONST.__const` | `0x103f0` | `0x10070` | **`-0x380`** |
+| `__DATA_DIRTY.__data` | `0x7d60` | `0x7a38` | **`-0x328`** |
+| `__TEXT.__unwind_info` | `0x9e88` | `0x9c48` | **`-0x240`** |
+| `__DATA_DIRTY.__bss` | `0x7a30` | `0x7830` | **`-0x200`** |
+| `__TEXT.__oslogstring` | `0x5229` | `0x5082` | **`-0x1a7`** |
+| `__AUTH.__data` | `0x3898` | `0x3748` | **`-0x150`** |
+| `__AUTH_CONST.__objc_const` | `0x9d60` | `0x9e80` | **`+0x120`** |
+| `__TEXT.__swift5_fieldmd` | `0x73e8` | `0x74f0` | **`+0x108`** |
+| `__TEXT.__objc_methlist` | `0x10dc` | `0x11c4` | **`+0xe8`** |
+| `__DATA_CONST.__got` | `0x2db8` | `0x2cd8` | **`-0xe0`** |
+| `__AUTH_CONST.__auth_got` | `0x4e68` | `0x4d98` | **`-0xd0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1500` | `0x15c8` | **`+0xc8`** |
+| `__TEXT.__swift5_reflstr` | `0x8238` | `0x82e8` | **`+0xb0`** |
+| `__TEXT.__swift5_assocty` | `0x1ef0` | `0x1e78` | **`-0x78`** |
+| `__TEXT.__constg_swiftt` | `0x7bb0` | `0x7b40` | **`-0x70`** |
+| `__TEXT.__cstring` | `0x7828` | `0x77e8` | **`-0x40`** |
+| `__TEXT.__swift_as_cont` | `0x54c` | `0x51c` | **`-0x30`** |
+| `__TEXT.__swift_as_ret` | `0x298` | `0x270` | **`-0x28`** |
+| `__DATA_DIRTY.__objc_data` | `0xf48` | `0xf68` | **`+0x20`** |
+| `__AUTH.__objc_data` | `0xf78` | `0xf90` | **`+0x18`** |
+| `__TEXT.__swift_as_entry` | `0x2c4` | `0x2b0` | **`-0x14`** |
+| `__DATA.__bss` | `0xe6c0` | `0xe6d0` | **`+0x10`** |
+| `__DATA.__common` | `0xc0` | `0xd0` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0xa30` | `0xa40` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x148` | `0x158` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x9f0` | `0x9e4` | **`-0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x1f8` | `0x1f0` | **`-0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0xa8` | `0xb0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -246.0.0.0.0
--  __TEXT.__text: 0x3ba270
 +246.1.17.0.0
-+  __TEXT.__text: 0x3a48a0
-   __TEXT.__lazy_helpers: 0x21a4
--  __TEXT.__objc_methlist: 0x10dc
--  __TEXT.__const: 0x24384
--  __TEXT.__cstring: 0x7828
--  __TEXT.__swift5_typeref: 0x4e0ea
--  __TEXT.__swift5_capture: 0x4110
--  __TEXT.__constg_swiftt: 0x7bb0
--  __TEXT.__swift5_reflstr: 0x8238
--  __TEXT.__swift5_assocty: 0x1ef0
--  __TEXT.__swift5_fieldmd: 0x73e8
-+  __TEXT.__objc_methlist: 0x11c4
-+  __TEXT.__const: 0x23d14
-+  __TEXT.__cstring: 0x77e8
-+  __TEXT.__swift5_typeref: 0x4a290
-+  __TEXT.__swift5_capture: 0x3d2c
-+  __TEXT.__constg_swiftt: 0x7b40
-+  __TEXT.__swift5_reflstr: 0x82e8
-+  __TEXT.__swift5_assocty: 0x1e78
-+  __TEXT.__swift5_fieldmd: 0x74f0
-   __TEXT.__swift5_builtin: 0x154
--  __TEXT.__swift5_proto: 0x9f0
-+  __TEXT.__swift5_proto: 0x9e4
-   __TEXT.__swift5_types: 0x6a0
--  __TEXT.__swift_as_entry: 0x2c4
--  __TEXT.__swift_as_ret: 0x298
--  __TEXT.__swift_as_cont: 0x54c
--  __TEXT.__oslogstring: 0x5229
-+  __TEXT.__swift_as_entry: 0x2b0
-+  __TEXT.__swift_as_ret: 0x270
-+  __TEXT.__swift_as_cont: 0x51c
-+  __TEXT.__oslogstring: 0x5082
-   __TEXT.__swift5_protos: 0x2c
-   __TEXT.__swift5_mpenum: 0x40
--  __TEXT.__unwind_info: 0xc7b8
--  __TEXT.__eh_frame: 0xb780
-+  __TEXT.__unwind_info: 0xc498
-+  __TEXT.__eh_frame: 0xb08c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xa30
--  __DATA_CONST.__objc_classlist: 0x1f8
--  __DATA_CONST.__objc_protolist: 0x148
-+  __DATA_CONST.__const: 0xa40
-+  __DATA_CONST.__objc_classlist: 0x1f0
-+  __DATA_CONST.__objc_protolist: 0x158
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1500
--  __DATA_CONST.__objc_protorefs: 0xa8
-+  __DATA_CONST.__objc_selrefs: 0x15c8
-+  __DATA_CONST.__objc_protorefs: 0xb0
-   __DATA_CONST.__vfx_script_tbl: 0x10
--  __DATA_CONST.__got: 0x2db8
--  __AUTH_CONST.__const: 0x103f0
--  __AUTH_CONST.__objc_const: 0x9d60
-+  __DATA_CONST.__got: 0x2cd8
-+  __AUTH_CONST.__const: 0x10070
-+  __AUTH_CONST.__objc_const: 0x9e80
-   __AUTH_CONST.__lazy_load_got: 0x2b8
--  __AUTH_CONST.__auth_got: 0x4e68
--  __AUTH.__objc_data: 0xf78
--  __AUTH.__data: 0x3898
--  __DATA.__data: 0x9c48
-+  __AUTH_CONST.__auth_got: 0x4d98
-+  __AUTH.__objc_data: 0xf90
-+  __AUTH.__data: 0x3748
-+  __DATA.__data: 0x9898
-   __DATA.__objc_stublist: 0x8
--  __DATA.__common: 0xc0
--  __DATA_DIRTY.__objc_data: 0xf48
--  __DATA_DIRTY.__data: 0x7d60
--  __DATA_DIRTY.__bss: 0x7a30
-+  __DATA.__common: 0xd0
-+  __DATA_DIRTY.__objc_data: 0xf68
-+  __DATA_DIRTY.__data: 0x7a38
-+  __DATA_DIRTY.__bss: 0x7830
-   __DATA_DIRTY.__common: 0x100
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
 
-   - /System/Library/Frameworks/EventKitUI.framework/EventKitUI
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/GeoToolbox.framework/GeoToolbox
 +  - /System/Library/Frameworks/IOSurface.framework/IOSurface
-   - /System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-   - /System/Library/Frameworks/Symbols.framework/Symbols
 
-   - /System/Library/PrivateFrameworks/AssistantUI.framework/AssistantUI
-   - /System/Library/PrivateFrameworks/BarcodeSupport.framework/BarcodeSupport
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
 -  - /System/Library/PrivateFrameworks/Feedback.framework/Feedback
-   - /System/Library/PrivateFrameworks/FeedbackService.framework/FeedbackService
-   - /System/Library/PrivateFrameworks/GenerativeAssistantSettings.framework/GenerativeAssistantSettings
-   - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
 
-   - /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf
-   - /System/Library/PrivateFrameworks/MapsUI.framework/MapsUI
-   - /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
 -  - /System/Library/PrivateFrameworks/NutritionCore.framework/NutritionCore
-   - /System/Library/PrivateFrameworks/NutritionUICore.framework/NutritionUICore
-   - /System/Library/PrivateFrameworks/PartnerVisualSearch.framework/PartnerVisualSearch
-   - /System/Library/PrivateFrameworks/SearchUI.framework/SearchUI
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15431
--  Symbols:   6490
+-  Symbols:   6034
 -  CStrings:  1028
 +  Functions: 15167
-+  Symbols:   6405
++  Symbols:   5937
 +  CStrings:  1012
- 
 Symbols:
 + _CGImageGetHeight
 + _CGImageGetWidth
@@ -209,21 +145,6 @@ Symbols:
 + _keypath_set.23Tm
 + _keypath_set.51Tm
 + _keypath_set.76Tm
-+ _objc_msgSend$contentOffset
-+ _objc_msgSend$height
-+ _objc_msgSend$minimumZoomScale
-+ _objc_msgSend$setBounces:
-+ _objc_msgSend$setBouncesZoom:
-+ _objc_msgSend$setContentInsetAdjustmentBehavior:
-+ _objc_msgSend$setContentOffset:
-+ _objc_msgSend$setContentSize:
-+ _objc_msgSend$setMaximumZoomScale:
-+ _objc_msgSend$setMinimumZoomScale:
-+ _objc_msgSend$setShowsHorizontalScrollIndicator:
-+ _objc_msgSend$setShowsVerticalScrollIndicator:
-+ _objc_msgSend$setZoomScale:animated:
-+ _objc_msgSend$width
-+ _objc_msgSend$zoomScale
 + _swift_release_x3
 + _swift_retain_x10
 + _symbolic SDy_____SiG 22VisualIntelligenceCore79visualgrounding_md11_v1_hmqukbnvbt_epoch_10_categorynumber32_palettizedTaxonomyO
@@ -658,9 +579,6 @@ Symbols:
 - _keypath_set.31Tm
 - _keypath_set.44Tm
 - _keypath_set.55Tm
-- _objc_msgSend$_setHorizontalAlignment:
-- _objc_msgSend$setDateFormat:
-- _objc_msgSend$stringFromDate:
 - _swift_deallocUninitializedObject
 - _symbolic SDyS2iG
 - _symbolic SS3key_SS5valuet

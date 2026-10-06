@@ -2,106 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/WorkflowKit.framework/WorkflowKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8fb078` | `0x8ff3e8` | **`+0x4370`** |
+| `__DATA.__bss` | `0x2e548` | `0x2e988` | **`+0x440`** |
+| `__AUTH_CONST.__const` | `0x401e0` | `0x40530` | **`+0x350`** |
+| `__AUTH_CONST.__objc_const` | `0x55210` | `0x554c0` | **`+0x2b0`** |
+| `__TEXT.__objc_methlist` | `0x2e90c` | `0x2eaf4` | **`+0x1e8`** |
+| `__DATA.__common` | `0x2cd0` | `0x2eb0` | **`+0x1e0`** |
+| `__TEXT.__const` | `0x24478` | `0x24648` | **`+0x1d0`** |
+| `__TEXT.__cstring` | `0x8d372` | `0x8d4d4` | **`+0x162`** |
+| `__AUTH.__objc_data` | `0x10c20` | `0x10d70` | **`+0x150`** |
+| `__TEXT.__unwind_info` | `0x1bff8` | `0x1c120` | **`+0x128`** |
+| `__TEXT.__swift5_typeref` | `0xd2d2` | `0xd37e` | **`+0xac`** |
+| `__DATA_CONST.__objc_selrefs` | `0x13858` | `0x138f0` | **`+0x98`** |
+| `__TEXT.__oslogstring` | `0x23a17` | `0x23aa1` | **`+0x8a`** |
+| `__TEXT.__swift5_capture` | `0x5d48` | `0x5dc0` | **`+0x78`** |
+| `__TEXT.__eh_frame` | `0x233e0` | `0x23454` | **`+0x74`** |
+| `__DATA.__data` | `0xd768` | `0xd7d8` | **`+0x70`** |
+| `__TEXT.__constg_swiftt` | `0x9724` | `0x9794` | **`+0x70`** |
+| `__TEXT.__swift5_reflstr` | `0x6208` | `0x6278` | **`+0x70`** |
+| `__TEXT.__swift5_fieldmd` | `0x7828` | `0x7894` | **`+0x6c`** |
+| `__AUTH.__data` | `0x70c8` | `0x7128` | **`+0x60`** |
+| `__TEXT.__swift5_assocty` | `0x2278` | `0x22d8` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0xf0f8` | `0xf0a0` | **`-0x58`** |
+| `__AUTH_CONST.__cfstring` | `0x2bd40` | `0x2bd60` | **`+0x20`** |
+| `__TEXT.__swift5_proto` | `0x1a4c` | `0x1a6c` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x23e8` | `0x2400` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x5cb0` | `0x5cc0` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0xca8` | `0xcb8` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0xb24` | `0xb30` | **`+0xc`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1360` | `0x1368` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x214c` | `0x2150` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
- 5037.109.0.0.0
--  __TEXT.__text: 0x8fb078
--  __TEXT.__objc_methlist: 0x2e90c
--  __TEXT.__const: 0x24478
-+  __TEXT.__text: 0x8ff3e8
-+  __TEXT.__objc_methlist: 0x2eaf4
-+  __TEXT.__const: 0x24648
-   __TEXT.__dlopen_cstrs: 0x110b
--  __TEXT.__swift5_typeref: 0xd2d2
--  __TEXT.__cstring: 0x8d372
--  __TEXT.__oslogstring: 0x23a17
--  __TEXT.__constg_swiftt: 0x9724
--  __TEXT.__swift5_reflstr: 0x6208
--  __TEXT.__swift5_fieldmd: 0x7828
-+  __TEXT.__swift5_typeref: 0xd37e
-+  __TEXT.__cstring: 0x8d4d4
-+  __TEXT.__oslogstring: 0x23aa1
-+  __TEXT.__constg_swiftt: 0x9794
-+  __TEXT.__swift5_reflstr: 0x6278
-+  __TEXT.__swift5_fieldmd: 0x7894
-   __TEXT.__swift5_builtin: 0x668
--  __TEXT.__swift5_assocty: 0x2278
--  __TEXT.__swift5_proto: 0x1a4c
--  __TEXT.__swift5_types: 0xb24
--  __TEXT.__swift5_capture: 0x5d48
-+  __TEXT.__swift5_assocty: 0x22d8
-+  __TEXT.__swift5_proto: 0x1a6c
-+  __TEXT.__swift5_types: 0xb30
-+  __TEXT.__swift5_capture: 0x5dc0
-   __TEXT.__swift_as_entry: 0xb00
-   __TEXT.__swift_as_ret: 0xc58
-   __TEXT.__swift_as_cont: 0x1470
-
-   __TEXT.__swift5_mpenum: 0xd4
-   __TEXT.__gcc_except_tab: 0x4d24
-   __TEXT.__ustring: 0x3f0c
--  __TEXT.__unwind_info: 0x1bff8
--  __TEXT.__eh_frame: 0x233e0
-+  __TEXT.__unwind_info: 0x1c120
-+  __TEXT.__eh_frame: 0x23454
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xf0f8
--  __DATA_CONST.__objc_classlist: 0x23e8
-+  __DATA_CONST.__const: 0xf0a0
-+  __DATA_CONST.__objc_classlist: 0x2400
-   __DATA_CONST.__objc_catlist: 0x3e0
-   __DATA_CONST.__objc_protolist: 0x6d0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x13858
-+  __DATA_CONST.__objc_selrefs: 0x138f0
-   __DATA_CONST.__objc_protorefs: 0x2a0
--  __DATA_CONST.__objc_superrefs: 0x1360
-+  __DATA_CONST.__objc_superrefs: 0x1368
-   __DATA_CONST.__objc_arraydata: 0x1650
--  __DATA_CONST.__got: 0x5cb0
--  __AUTH_CONST.__const: 0x401e0
--  __AUTH_CONST.__cfstring: 0x2bd40
--  __AUTH_CONST.__objc_const: 0x55210
-+  __DATA_CONST.__got: 0x5cc0
-+  __AUTH_CONST.__const: 0x40530
-+  __AUTH_CONST.__cfstring: 0x2bd60
-+  __AUTH_CONST.__objc_const: 0x554c0
-   __AUTH_CONST.__objc_dictobj: 0x4b0
-   __AUTH_CONST.__objc_intobj: 0xf90
-   __AUTH_CONST.__objc_arrayobj: 0x948
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__auth_got: 0x5180
--  __AUTH.__objc_data: 0x10c20
--  __AUTH.__data: 0x70c8
--  __DATA.__objc_ivar: 0x214c
--  __DATA.__data: 0xd768
--  __DATA.__common: 0x2cd0
-+  __AUTH.__objc_data: 0x10d70
-+  __AUTH.__data: 0x7128
-+  __DATA.__objc_ivar: 0x2150
-+  __DATA.__data: 0xd7d8
-+  __DATA.__common: 0x2eb0
-   __DATA_DIRTY.__objc_data: 0x8ec8
--  __DATA_DIRTY.__data: 0xca8
-+  __DATA_DIRTY.__data: 0xcb8
-   __DATA_DIRTY.__bss: 0x1880
-   __DATA_DIRTY.__common: 0x10
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 43824
--  Symbols:   43119
+-  Symbols:   35156
 -  CStrings:  17996
 +  Functions: 44023
-+  Symbols:   43215
++  Symbols:   35233
 +  CStrings:  18009
- 
 Symbols:
 + +[WFMTASupport isMTACapableDevice]
 + +[WFMTASupport mtaDeviceSymbolName]
@@ -281,25 +226,6 @@ Symbols:
 + _initMTPArrangement
 + _mtaDeviceSymbolName.iconServicesSymbolName
 + _mtaDeviceSymbolName.onceToken
-+ _objc_msgSend$MultiTaskingArrangement
-+ _objc_msgSend$_typeOfCurrentDevice
-+ _objc_msgSend$isMTACapableDevice
-+ _objc_msgSend$mtaDeviceSymbolName
-+ _objc_msgSend$mtaModeA
-+ _objc_msgSend$mtaModeADescription
-+ _objc_msgSend$mtaModeAPastTense
-+ _objc_msgSend$mtaModeAny
-+ _objc_msgSend$mtaModeAnyDescription
-+ _objc_msgSend$mtaModeAnyPastTense
-+ _objc_msgSend$mtaModeB
-+ _objc_msgSend$mtaModeBDescription
-+ _objc_msgSend$mtaModeBPastTense
-+ _objc_msgSend$mtaParameterSummaryFormat
-+ _objc_msgSend$mtaSymbolName
-+ _objc_msgSend$mtaTriggerDescription
-+ _objc_msgSend$mtaTriggerExplanation
-+ _objc_msgSend$mtaTriggerName
-+ _objc_msgSend$symbolForTypeIdentifier:withResolutionStrategy:variantOptions:error:
 + _symbolic Say_____G So32WFMultiTaskingArrangementTriggerC11WorkflowKitE0C4ModeO
 + _symbolic So12BMStoreEventCySo36BMSpringBoardMultiTaskingArrangementCGIegg_
 + _symbolic So32WFMultiTaskingArrangementTriggerC

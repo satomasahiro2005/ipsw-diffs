@@ -2,17 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/AlchemistService.framework/AlchemistService`
 
-```diff
+### Section Size Changes
 
- 32.0.6.0.0
--  __TEXT.__text: 0x6ba7c
-+  __TEXT.__text: 0x6baa8
-   __TEXT.__objc_methlist: 0x81c
-   __TEXT.__const: 0x7556
-   __TEXT.__swift5_typeref: 0x1a50
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6f6d0` | `0x6f6fc` | **`+0x2c`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_24f2376a0 -> sub_252f046a0 : 1332 -> 1348
-~ sub_24f237bd4 -> sub_252f04be4 : 1332 -> 1348
-~ sub_24f238198 -> sub_252f051b8 : 1360 -> 1364
-~ sub_24f286804 -> sub_252f53828 : 224 -> 232
+~ sub_251e2dc30 -> sub_255826c30 : 1372 -> 1388
+~ sub_251e2e18c -> sub_25582719c : 1372 -> 1388
+~ sub_251e2e778 -> sub_255827798 : 1400 -> 1404
+~ sub_251e7faa8 -> sub_255878acc : 224 -> 232
 ```

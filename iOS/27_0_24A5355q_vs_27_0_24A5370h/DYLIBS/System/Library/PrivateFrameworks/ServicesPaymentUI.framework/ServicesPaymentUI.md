@@ -2,98 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/ServicesPaymentUI.framework/ServicesPaymentUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x87578` | `0x8bb20` | **`+0x45a8`** |
+| `__DATA.__bss` | `0x97c0` | `0x9ce0` | **`+0x520`** |
+| `__TEXT.__const` | `0x6c08` | `0x70a8` | **`+0x4a0`** |
+| `__TEXT.__swift5_typeref` | `0x329a` | `0x35ac` | **`+0x312`** |
+| `__AUTH_CONST.__const` | `0x4198` | `0x43b0` | **`+0x218`** |
+| `__AUTH_CONST.__objc_const` | `0x38a0` | `0x3ab0` | **`+0x210`** |
+| `__TEXT.__swift5_fieldmd` | `0x1c3c` | `0x1e18` | **`+0x1dc`** |
+| `__DATA.__data` | `0x2058` | `0x21f8` | **`+0x1a0`** |
+| `__AUTH.__data` | `0x1418` | `0x1580` | **`+0x168`** |
+| `__TEXT.__constg_swiftt` | `0x2144` | `0x2264` | **`+0x120`** |
+| `__TEXT.__swift5_reflstr` | `0x1910` | `0x1a20` | **`+0x110`** |
+| `__AUTH.__objc_data` | `0x1830` | `0x1928` | **`+0xf8`** |
+| `__TEXT.__eh_frame` | `0x3410` | `0x3508` | **`+0xf8`** |
+| `__TEXT.__unwind_info` | `0x1eb0` | `0x1fa0` | **`+0xf0`** |
+| `__TEXT.__oslogstring` | `0x2390` | `0x2430` | **`+0xa0`** |
+| `__TEXT.__swift5_capture` | `0xb24` | `0xb9c` | **`+0x78`** |
+| `__DATA_CONST.__got` | `0x980` | `0x9d8` | **`+0x58`** |
+| `__TEXT.__objc_methlist` | `0x9a4` | `0x9ec` | **`+0x48`** |
+| `__TEXT.__cstring` | `0x12c1` | `0x1305` | **`+0x44`** |
+| `__TEXT.__swift5_proto` | `0x4c8` | `0x4f0` | **`+0x28`** |
+| `__TEXT.__swift5_assocty` | `0x668` | `0x680` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0x1d4` | `0x1e8` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0xa0` | `0xb0` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x16f8` | `0x1700` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xc68` | `0xc60` | **`-0x8`** |
+| `__TEXT.__swift_as_cont` | `0x1e0` | `0x1dc` | **`-0x4`** |
+| `__TEXT.__swift_as_entry` | `0x84` | `0x88` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1.0.14.0.0
--  __TEXT.__text: 0x87578 sha256:58a7e2f42d518a0d9989d2f1169a190cea4d113620eba1bcef68bdf0c805ffd7
--  __TEXT.__objc_methlist: 0x9a4 sha256:40c37ebabc7c2545cc7e7f873a47dc07b6e1d8a1342e2c54bf34ea7e6857e068
--  __TEXT.__const: 0x6c08 sha256:7b4ce77e8e46cf3ff7cfac92cfc0f63fd64870960f4bd2e29a7b75112f3204b8
--  __TEXT.__swift5_typeref: 0x329a sha256:9b18d2c09ffc2b9a90945069c4631a5fc51242e05962239caaeaf0a0cedd1d4c
--  __TEXT.__swift5_fieldmd: 0x1c3c sha256:1f4c3529e95e7996f62245f6b6775d84e7ff4249c30f3110f0ba33a5d4d5f649
--  __TEXT.__constg_swiftt: 0x2144 sha256:6880de6d6472ea6f4a245a719601b66982e497b8d3bff1fdf418b7272bc77d1a
--  __TEXT.__swift5_builtin: 0x8c sha256:21eb4e80410e6eda21027f61bb0b035bad8d4bb9e103acd62889e759843afea3
--  __TEXT.__swift5_reflstr: 0x1910 sha256:20c68d68aff012bbf96af056fbfd9bc1be923ab6a72aaba7871c3ce01d93ba48
--  __TEXT.__swift5_assocty: 0x668 sha256:94f869280bf923d6c64f01190c19b9607159eb4138db05180b7137ed80f9ef8c
--  __TEXT.__swift5_proto: 0x4c8 sha256:432a976778df29b15eda4e1c20e4fd04e206fdd905d41d76ecf4905ea17c5d61
--  __TEXT.__swift5_types: 0x1d4 sha256:bb88cd4180507808e57c58d435ea10926cab0a17dfe65401a6518530651e918d
--  __TEXT.__cstring: 0x12c1 sha256:19ddcb5997d6988a8a706c8e777d2883c0dac456a4bf865be3f5e15552438bc3
--  __TEXT.__swift5_capture: 0xb24 sha256:0c16a2bf5654cb993e9e30ae61c0bc1102b5fbd5c78c32c2d7188df634ce4651
--  __TEXT.__swift_as_entry: 0x84 sha256:7d6920407b163c437d608e119ba4df2a21bb5e63b32db9036c3509ccca5f9416
--  __TEXT.__swift_as_cont: 0x1e0 sha256:97dcdae0f2f55205d4ed13e998c846972aca4f5fa2173f60c2aa05b2cee48241
--  __TEXT.__swift_as_ret: 0xa0 sha256:8480fc1dd0d7df7ecf0331755c7765f188cb7f72585a6bd5a92d62bbcca28182
--  __TEXT.__oslogstring: 0x2390 sha256:7781ccb53771c8f8e34f4e46fcb9e9140dac66dc1e9a99cdb19af1ee2c5ed1ee
--  __TEXT.__swift5_protos: 0x10 sha256:1738de900d2fd5425c168194e8baa2872fea8a02d3643464ad592a9d686bddf2
--  __TEXT.__unwind_info: 0x1eb0 sha256:246328fd3242fd848e0e16389ea11dbff5d9a56ffbd875636754efcd4161c25f
--  __TEXT.__eh_frame: 0x3410 sha256:bf378d532b9c5c30ab139f8adf8ad8dd31899b982634d44f8685b30f183c8296
 +1.0.17.0.0
-+  __TEXT.__text: 0x8bb20 sha256:4b399180fc4b81f89ada415f565076c9267264c6e025ff03b7127c3005a1d550
-+  __TEXT.__objc_methlist: 0x9ec sha256:dacca6eca1df7a477db14541fb84832262b620dc623ab3a3353a875b58d0ece8
-+  __TEXT.__const: 0x70a8 sha256:9741e301b2fcce72d846c47ce35879d40f6adeb27db311f0e9b88dfb850b903e
-+  __TEXT.__swift5_typeref: 0x35ac sha256:44b746e97c451dcf172d41001a799b2fd2f5565bc451567bda1325f48f6c0b44
-+  __TEXT.__swift5_fieldmd: 0x1e18 sha256:543c32bc39293212802f2c732cba44ab7a14dd8c16419fd50e38dcc17a4a6a66
-+  __TEXT.__constg_swiftt: 0x2264 sha256:f59b36d584f47046cfaec2deb0a8c7a81bca624c876c880975c6402036d0616a
-+  __TEXT.__swift5_builtin: 0x8c sha256:e8610e2dc5a22dd60b7ed14e0f6762ed3e1d44e60f9a6eb430642d26c53d0cce
-+  __TEXT.__swift5_reflstr: 0x1a20 sha256:f5faa51e7c2846ecb8b2feb2378b3e4afc964b3efc6ded864d213a5f9e851581
-+  __TEXT.__swift5_assocty: 0x680 sha256:6f907491fe2d51a3c9759c7de21969ecf2ccaedfebb5733af873b14bfffc6204
-+  __TEXT.__swift5_proto: 0x4f0 sha256:1aa955b31bb5f795e46ac4b95b197e2d820b1b523cb1a161506d8ee73e506c69
-+  __TEXT.__swift5_types: 0x1e8 sha256:6f835ba866fe4d15b4c4ed41c561c047f69bd6b6fbacef96d69e08b4abfd4bc2
-+  __TEXT.__cstring: 0x1305 sha256:e6055d9a153cd3282c463f5296264eab9815a653eb46ece2f75f081089d8e227
-+  __TEXT.__swift5_capture: 0xb9c sha256:50c5fbd957e78195dd2a436c5cd7e1b54f9afa9b1560c4eb1db8a07afdb84008
-+  __TEXT.__swift_as_entry: 0x88 sha256:b4d78bf11befde451c1cbc0de2e633f64a165d909c41ad3f325b83a6ae2783ef
-+  __TEXT.__swift_as_cont: 0x1dc sha256:4ced9b4ef72ffd0600932f81928f264babcdb06149d82eebe13612d980572ed1
-+  __TEXT.__swift_as_ret: 0xa0 sha256:e5fde5596f408ce6cbf83e4b3151525acb1b2cffe647874f964a7f07d1ab498c
-+  __TEXT.__oslogstring: 0x2430 sha256:bef48e873acff6436b641e1f11923a3cef802332fe42bff255abdb79bdcdc3a1
-+  __TEXT.__swift5_protos: 0x10 sha256:52463c29489ec8fc124d4d98a05c3b5e9e0bfcae55b67aa7206bb4c0e6c57bc4
-+  __TEXT.__unwind_info: 0x1fa0 sha256:579277759a468a43a407c325c2aea8125a8dbc08b385485571960da7c36d0914
-+  __TEXT.__eh_frame: 0x3508 sha256:8375ae3eac4a7750f692211085784a6c6461b1611cc5ed927454c659e231b141
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x148 sha256:d36508133cea2d5844516a5456495b1a02cc866646d32f938778e084dc49e7e5
--  __DATA_CONST.__objc_classlist: 0xa0 sha256:081cdaf8adea6a85ae0c0cc4e6eb4abc9323a116fa0c657438a6eae517fd957d
--  __DATA_CONST.__objc_protolist: 0xf8 sha256:c6f8f85596f7718db12e4b3d557d2f5b71becf9036bf5f0861f233ce8d353d40
-+  __DATA_CONST.__const: 0x148 sha256:482573fa6111be8561ed4b333cfd6e4ee12a24329200d338afa81bc70d5dfee4
-+  __DATA_CONST.__objc_classlist: 0xb0 sha256:92cf76c67733c6afe320e8ee97ee22cd014ebb66c1c42f5416c20af8b7b3da11
-+  __DATA_CONST.__objc_protolist: 0xf8 sha256:5c228124d10fdc3bcc5e5d8a44e1153fb96ae6fa11002747fa22148d78d11954
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0xc68 sha256:50d9ccf199eeb4cfa37f4d45907fcb94180368ad51619f3e292c138bf74169eb
--  __DATA_CONST.__objc_protorefs: 0x98 sha256:da70ea9dd0434969322df74d886bc907dc94e5f6219911527e946c333f9d0614
--  __DATA_CONST.__got: 0x980 sha256:e03430af54f540efe875cec9b335d20d3343a1b0ec82a5041dab965d90089cf3
--  __AUTH_CONST.__const: 0x4198 sha256:1f72f52132bd4a0cadd0b236df2fb5c57ff6e357365e8bc955262dc57530aeae
--  __AUTH_CONST.__objc_const: 0x38a0 sha256:9370d2f1e5b52b32d65408fb0fa14ad0cd8e9be9152fc1ab6dcf6376ce16a920
--  __AUTH_CONST.__auth_got: 0x16f8 sha256:f245942364afb415ea6ad18219deb50faf117504c6e6a0bde047d23b12ff6431
--  __AUTH.__objc_data: 0x1830 sha256:0056781b9e8d755af3d861699fa0bc1ee4872b2a1ed3e97737443386d8872d29
--  __AUTH.__data: 0x1418 sha256:7cd11fe7eee06698da37f73fb1d503bbd6daad01c3c9c9d194a65a411d9cad9c
--  __DATA.__data: 0x2058 sha256:6df721a1674fa7512fa458d1302e84ca27a8338099a2193eaccf4b229a0f35f9
--  __DATA.__bss: 0x97c0 sha256:d595e7b0407d219255b563bb02dfe40f0284508b531bd92b5dcdfa4ecfff101f
-+  __DATA_CONST.__objc_selrefs: 0xc60 sha256:c70b9a71e2f713d1e2237a9c6ee8b7014b327c5a8ed3f11436c5fdd17b7a5d79
-+  __DATA_CONST.__objc_protorefs: 0x98 sha256:ad3e0ee2b11e75b10bef7a79ac34384f3ef95574e0ab057ff124236eea254d81
-+  __DATA_CONST.__got: 0x9d8 sha256:21070885113a0cc54e6d7576edfb515bcc893722eb121b6733c3b2036a4020fb
-+  __AUTH_CONST.__const: 0x43b0 sha256:10fafe5bab7b8502eb9455e33bcd55a6641679d90643cedeacc7c0213ed608f7
-+  __AUTH_CONST.__objc_const: 0x3ab0 sha256:8f9ca6e0521338608e93fb7572e3cf2d3496fc3eab7427631410dc91d614e091
-+  __AUTH_CONST.__auth_got: 0x1700 sha256:2cc2784c0ddcd0769b915ab468a65b378a10302cf058230ac75c9735750559d8
-+  __AUTH.__objc_data: 0x1928 sha256:739e8d6cbec63480766eb086b216d343f06fde395bcadbbf4f0c86d39d4765f9
-+  __AUTH.__data: 0x1580 sha256:ba74901ac5d431c1ae4d2b6145a95009aff6e656ec65a64505a617a3b487c98a
-+  __DATA.__data: 0x21f8 sha256:71669d42dc9f0e4c58b6624fceeee6f4fd3cea46c40c5135cced452773568a65
-+  __DATA.__bss: 0x9ce0 sha256:d5b6905c70b0258602eecb5f2c192585d68a217c3a210ba3d9c0da338ad773d8
-   __DATA.__common: 0xf0 sha256:5a4f6058fb16c5237f6d939017b1b5608097907a510390405b9469c1fbb82a85
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: D02707E6-6CE0-3A18-A209-F69D1132CA8D
 -  Functions: 2595
--  Symbols:   11591
+-  Symbols:   7831
 -  CStrings:  302
-+  UUID: 1710E3B7-A0AA-3D8C-BAD4-38D32AC1F22A
 +  Functions: 2682
-+  Symbols:   11978
++  Symbols:   8102
 +  CStrings:  305
- 
 Symbols:
 + _$s17ServicesPaymentUI0B12FooterButtonC14reloadRootView33_21681FE8B9A3B542AED980FFB64FF841LLyyF
 + _$s17ServicesPaymentUI0B12FooterButtonC14reloadRootView33_21681FE8B9A3B542AED980FFB64FF841LLyyFyycfU_
@@ -151,16 +104,6 @@ Symbols:
 + _$s17ServicesPaymentUI0B23AuthorizationFooterViewC14passwordButton33_1CC7DE853BB270382B28BC3E78107AC0LLAA0beH0CvgAGyXEfU_yycfU_Tm
 + _$s17ServicesPaymentUI0B23AuthorizationFooterViewC18confirmationButton33_1CC7DE853BB270382B28BC3E78107AC0LLAA0beH0Cvg
 + _$s17ServicesPaymentUI0B23AuthorizationFooterViewC18confirmationButton33_1CC7DE853BB270382B28BC3E78107AC0LLAA0beH0CvgAGyXEfU_
-+ _$s17ServicesPaymentUI0B23AuthorizationFooterViewC18transitionToLockup33_1CC7DE853BB270382B28BC3E78107AC0LL9showLabelySb_tFyycfU_TA.104
-+ _$s17ServicesPaymentUI0B23AuthorizationFooterViewC18transitionToLockup33_1CC7DE853BB270382B28BC3E78107AC0LL9showLabelySb_tFyycfU_TA.111
-+ _$s17ServicesPaymentUI0B23AuthorizationFooterViewC18transitionToLockup33_1CC7DE853BB270382B28BC3E78107AC0LL9showLabelySb_tFyycfU_TA.118
-+ _$s17ServicesPaymentUI0B23AuthorizationFooterViewC18transitionToLockup33_1CC7DE853BB270382B28BC3E78107AC0LL9showLabelySb_tFyycfU_TA.125
-+ _$s17ServicesPaymentUI0B23AuthorizationFooterViewC18transitionToLockup33_1CC7DE853BB270382B28BC3E78107AC0LL9showLabelySb_tFyycfU_TA.132
-+ _$s17ServicesPaymentUI0B23AuthorizationFooterViewC18transitionToLockup33_1CC7DE853BB270382B28BC3E78107AC0LL9showLabelySb_tFyycfU_TA.145
-+ _$s17ServicesPaymentUI0B23AuthorizationFooterViewC18transitionToLockup33_1CC7DE853BB270382B28BC3E78107AC0LL9showLabelySb_tFyycfU_TA.152
-+ _$s17ServicesPaymentUI0B23AuthorizationFooterViewC18transitionToLockup33_1CC7DE853BB270382B28BC3E78107AC0LL9showLabelySb_tFyycfU_TA.159
-+ _$s17ServicesPaymentUI0B23AuthorizationFooterViewC18transitionToLockup33_1CC7DE853BB270382B28BC3E78107AC0LL9showLabelySb_tFyycfU_TA.90
-+ _$s17ServicesPaymentUI0B23AuthorizationFooterViewC18transitionToLockup33_1CC7DE853BB270382B28BC3E78107AC0LL9showLabelySb_tFyycfU_TA.97
 + _$s17ServicesPaymentUI0B23AuthorizationFooterViewC24updatePasswordButtonText33_1CC7DE853BB270382B28BC3E78107AC0LLyyF
 + _$s17ServicesPaymentUI0B23AuthorizationFooterViewC32$__lazy_storage_$_passwordButton33_1CC7DE853BB270382B28BC3E78107AC0LLAA0beJ0CSgvpWvd
 + _$s17ServicesPaymentUI0B23AuthorizationFooterViewC36$__lazy_storage_$_confirmationButton33_1CC7DE853BB270382B28BC3E78107AC0LLAA0beJ0CSgvpWvd
@@ -188,9 +131,6 @@ Symbols:
 + _$s17ServicesPaymentUI27SecureThreeDomainPageIntentVWOc
 + _$s17ServicesPaymentUI27SecureThreeDomainPageIntentVWOh
 + _$s17ServicesPaymentUI34BiometricAuthenticationCoordinatorC05needsD18RestartAfterResumeSbvgTq
-+ _$s17ServicesPaymentUI34BiometricAuthenticationCoordinatorC15resetForRestartyyFySb_s5Error_pSgtYbcfU_TA.106
-+ _$s17ServicesPaymentUI34BiometricAuthenticationCoordinatorC15resetForRestartyyFySb_s5Error_pSgtYbcfU_TA.92
-+ _$s17ServicesPaymentUI34BiometricAuthenticationCoordinatorC15resetForRestartyyFySb_s5Error_pSgtYbcfU_TA.99
 + _$s17ServicesPaymentUI34BiometricAuthenticationCoordinatorC5pauseyyFySb_s5Error_pSgtYbcfU_TA
 + _$s17ServicesPaymentUI34BiometricAuthenticationCoordinatorC5pauseyyFyyYaYbScMYccfU0_
 + _$s17ServicesPaymentUI34BiometricAuthenticationCoordinatorC5pauseyyFyyYaYbScMYccfU0_TA
@@ -357,7 +297,6 @@ Symbols:
 + _$s7SwiftUI6ButtonVyAA15ModifiedContentVyAEyAEyAA4TextVAA14_PaddingLayoutVGAIGAA30_EnvironmentKeyWritingModifierVySiSgGGGACyxGAA4ViewAAWL
 + _$s7SwiftUI6ButtonVyAA15ModifiedContentVyAEyAEyAA4TextVAA14_PaddingLayoutVGAIGAA30_EnvironmentKeyWritingModifierVySiSgGGGMR
 + _$s7SwiftUI6ButtonVyAA15ModifiedContentVyAEyAEyAA4TextVAA14_PaddingLayoutVGAIGAA30_EnvironmentKeyWritingModifierVySiSgGGGMd
-+ _$s7SwiftUI7AnyViewVIego_ACIegr_TRTA.318
 + _$sBAs5Error_pIeNgHgILzo_BAytsAA_pIeNgHgILrzo_TRTQ0_
 + _$sBAyts5Error_pIeNgHgILrzo_BAsAA_pIeNgHgILzo_TRTQ0_
 + _$sSD17dictionaryLiteralSDyxq_Gx_q_td_tcfCSS_SbTt0g5Tf4g_n
@@ -393,28 +332,20 @@ Symbols:
 + _$ss22KeyedDecodingContainerVy17ServicesPaymentUI8CheckboxV10CodingKeys33_A0326416C5D8921FA65BA964C8AA8093LLOGMd
 + _$ss22KeyedEncodingContainerVy17ServicesPaymentUI8CheckboxV10CodingKeys33_A0326416C5D8921FA65BA964C8AA8093LLOGMR
 + _$ss22KeyedEncodingContainerVy17ServicesPaymentUI8CheckboxV10CodingKeys33_A0326416C5D8921FA65BA964C8AA8093LLOGMd
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.123
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.123TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.123Tu
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.156
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.156TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.156Tu
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.190
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.190TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.190Tu
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.200
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.200TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.200Tu
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.220
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.220TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.220Tu
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.241
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.241TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.241Tu
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.253
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.253TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.253Tu
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.305
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.305TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.305Tu
 + _OBJC_CLASS_$__TtC17ServicesPaymentUI19PaymentFooterButton
@@ -427,172 +358,16 @@ Symbols:
 + __METACLASS_DATA__TtC17ServicesPaymentUI14AccountContext
 + __METACLASS_DATA__TtC17ServicesPaymentUI19PaymentFooterButton
 + __PROPERTIES__TtC17ServicesPaymentUI19PaymentFooterButton
-+ ___swift_closure_destructor.104
-+ ___swift_closure_destructor.109
-+ ___swift_closure_destructor.111
-+ ___swift_closure_destructor.116
-+ ___swift_closure_destructor.117
-+ ___swift_closure_destructor.121
-+ ___swift_closure_destructor.123
-+ ___swift_closure_destructor.126
-+ ___swift_closure_destructor.130
-+ ___swift_closure_destructor.137
-+ ___swift_closure_destructor.143
-+ ___swift_closure_destructor.150
-+ ___swift_closure_destructor.154
-+ ___swift_closure_destructor.160
-+ ___swift_closure_destructor.166
-+ ___swift_closure_destructor.172
-+ ___swift_closure_destructor.178
-+ ___swift_closure_destructor.184
 + ___swift_closure_destructor.184Tm
-+ ___swift_closure_destructor.188
-+ ___swift_closure_destructor.194
-+ ___swift_closure_destructor.198
-+ ___swift_closure_destructor.204
-+ ___swift_closure_destructor.210
 + ___swift_closure_destructor.210Tm
-+ ___swift_closure_destructor.214
-+ ___swift_closure_destructor.218
-+ ___swift_closure_destructor.228
-+ ___swift_closure_destructor.235
 + ___swift_closure_destructor.235Tm
-+ ___swift_closure_destructor.239
-+ ___swift_closure_destructor.247
-+ ___swift_closure_destructor.251
-+ ___swift_closure_destructor.258
-+ ___swift_closure_destructor.264
-+ ___swift_closure_destructor.273
-+ ___swift_closure_destructor.285
-+ ___swift_closure_destructor.292
-+ ___swift_closure_destructor.299
-+ ___swift_closure_destructor.303
-+ ___swift_closure_destructor.316
-+ ___swift_closure_destructor.320
-+ ___swift_closure_destructor.326
-+ ___swift_closure_destructor.359
-+ ___swift_closure_destructor.363
-+ ___swift_closure_destructor.381
-+ ___swift_closure_destructor.67
-+ ___swift_closure_destructor.71
-+ ___swift_closure_destructor.73
-+ ___swift_closure_destructor.84
-+ ___swift_closure_destructor.88
-+ ___swift_closure_destructor.90
-+ ___swift_closure_destructor.95
-+ ___swift_closure_destructor.97
 + ___swift_memcpy64_8
 + _associated conformance 17ServicesPaymentUI0B16FooterButtonViewV05SwiftC00F0AA4BodyAdEP_AdE
 + _associated conformance 17ServicesPaymentUI8CheckboxV10CodingKeys33_A0326416C5D8921FA65BA964C8AA8093LLOSHAASQ
 + _associated conformance 17ServicesPaymentUI8CheckboxV10CodingKeys33_A0326416C5D8921FA65BA964C8AA8093LLOs0E3KeyAAs23CustomStringConvertible
 + _associated conformance 17ServicesPaymentUI8CheckboxV10CodingKeys33_A0326416C5D8921FA65BA964C8AA8093LLOs0E3KeyAAs28CustomDebugStringConvertible
 + _associated conformance 17ServicesPaymentUI8CheckboxV9JetEngine14ComponentModelAaD04ViewH0
-+ _block_copy_helper.100
-+ _block_copy_helper.105
-+ _block_copy_helper.107
-+ _block_copy_helper.113
-+ _block_copy_helper.119
-+ _block_copy_helper.126
-+ _block_copy_helper.128
-+ _block_copy_helper.133
-+ _block_copy_helper.139
-+ _block_copy_helper.146
-+ _block_copy_helper.153
-+ _block_copy_helper.160
-+ _block_copy_helper.162
-+ _block_copy_helper.168
-+ _block_copy_helper.174
-+ _block_copy_helper.180
-+ _block_copy_helper.206
-+ _block_copy_helper.231
-+ _block_copy_helper.260
-+ _block_copy_helper.266
-+ _block_copy_helper.275
-+ _block_copy_helper.280
-+ _block_copy_helper.287
-+ _block_copy_helper.294
-+ _block_copy_helper.365
-+ _block_copy_helper.73
-+ _block_copy_helper.75
-+ _block_copy_helper.76
-+ _block_copy_helper.80
-+ _block_copy_helper.84
-+ _block_copy_helper.86
-+ _block_copy_helper.91
-+ _block_copy_helper.93
-+ _block_descriptor.102
-+ _block_descriptor.107
-+ _block_descriptor.109
-+ _block_descriptor.115
-+ _block_descriptor.121
-+ _block_descriptor.128
-+ _block_descriptor.130
-+ _block_descriptor.135
-+ _block_descriptor.141
-+ _block_descriptor.148
-+ _block_descriptor.155
-+ _block_descriptor.162
-+ _block_descriptor.164
-+ _block_descriptor.170
-+ _block_descriptor.176
-+ _block_descriptor.182
-+ _block_descriptor.208
-+ _block_descriptor.233
-+ _block_descriptor.262
-+ _block_descriptor.268
-+ _block_descriptor.277
-+ _block_descriptor.282
-+ _block_descriptor.289
-+ _block_descriptor.296
-+ _block_descriptor.367
-+ _block_descriptor.75
-+ _block_descriptor.77
-+ _block_descriptor.78
-+ _block_descriptor.82
-+ _block_descriptor.86
-+ _block_descriptor.88
-+ _block_descriptor.93
-+ _block_descriptor.95
-+ _block_destroy_helper.101
-+ _block_destroy_helper.106
-+ _block_destroy_helper.108
-+ _block_destroy_helper.114
-+ _block_destroy_helper.120
-+ _block_destroy_helper.127
-+ _block_destroy_helper.129
-+ _block_destroy_helper.134
-+ _block_destroy_helper.140
-+ _block_destroy_helper.147
-+ _block_destroy_helper.154
-+ _block_destroy_helper.161
-+ _block_destroy_helper.163
-+ _block_destroy_helper.169
-+ _block_destroy_helper.175
-+ _block_destroy_helper.181
-+ _block_destroy_helper.207
-+ _block_destroy_helper.232
-+ _block_destroy_helper.261
-+ _block_destroy_helper.267
-+ _block_destroy_helper.276
-+ _block_destroy_helper.281
-+ _block_destroy_helper.288
-+ _block_destroy_helper.295
-+ _block_destroy_helper.366
-+ _block_destroy_helper.74
-+ _block_destroy_helper.76
-+ _block_destroy_helper.77
-+ _block_destroy_helper.81
-+ _block_destroy_helper.85
-+ _block_destroy_helper.87
-+ _block_destroy_helper.92
-+ _block_destroy_helper.94
-+ _get_witness_table 7SwiftUI15ModifiedContentVyAA4ViewPAAE15dynamicTypeSizeyQrqd__SXRd__AA07DynamicgH0O5BoundRtd__lFQOyACyACyAeAE11buttonStyleyQrqd__AA015PrimitiveButtonL0Rd__lFQOyAA0N0VyACyACyACyAA4TextVAA14_PaddingLayoutVGARGAA30_EnvironmentKeyWritingModifierVySiSgGGG_AA014GlassProminentnL0VQo_AVyAA08AnyShapeL0VSgGGAA01_rs9TransformU0VySbGG_s19PartialRangeThroughVyAHGQo_AA023AccessibilityAttachmentU0VGAaDHPqd0__AaDHD3_A14_HO_A16_AA0eU0HPyHCHC.13
-+ _get_witness_table 7SwiftUI15NavigationStackVyAA0C4PathVAA4ViewPAAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAA08ModifiedJ0Vy015ServicesPaymentB0013AppleIDSignInF0VAA16_FlexFrameLayoutVG_AA0I4ItemVyytAA6ButtonVyAA5ImageVGGQo_GAaFHPyHC.386
-+ _get_witness_table 7SwiftUI4ViewRzlqd0__AaBHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVyxAA30_EnvironmentKeyWritingModifierVyAA7BindingVySbGGG_SbQo_HO.385
-+ _objc_msgSend$nextResponder
-+ _objc_msgSend$parentViewController
-+ _objc_msgSend$removeFromParentViewController
-+ _objc_msgSend$willMoveToParentViewController:
++ _get_witness_table 7SwiftUI15ModifiedContentVyAA4ViewPAAE15dynamicTypeSizeyQrqd__SXRd__AA07DynamicgH0O5BoundRtd__lFQOyACyACyAeAE11buttonStyleyQrqd__AA015PrimitiveButtonL0Rd__lFQOyAA0N0VyACyACyACyAA4TextVAA14_PaddingLayoutVGARGAA30_EnvironmentKeyWritingModifierVySiSgGGG_AA014GlassProminentnL0VQo_AVyAA08AnyShapeL0VSgGGAA01_rs9TransformU0VySbGG_s19PartialRangeThroughVyAHGQo_AA023AccessibilityAttachmentU0VGAaDHPqd0__AaDHD3_A14_HO_A16_AA0eU0HPyHCHC
 + _objc_release_x1
 + _symbolic SDySSSbG
 + _symbolic SDySSSbGSg
@@ -640,16 +415,6 @@ Symbols:
 - _$s17ServicesPaymentUI0B23AuthorizationFooterViewC15handleButtonTap33_1CC7DE853BB270382B28BC3E78107AC0LLyyFTo
 - _$s17ServicesPaymentUI0B23AuthorizationFooterViewC17confirmationStyleSo028PKPaymentRequestConfirmationH0VvW
 - _$s17ServicesPaymentUI0B23AuthorizationFooterViewC18confirmationButton33_1CC7DE853BB270382B28BC3E78107AC0LLSo8UIButtonCvg
-- _$s17ServicesPaymentUI0B23AuthorizationFooterViewC18transitionToLockup33_1CC7DE853BB270382B28BC3E78107AC0LL9showLabelySb_tFyycfU_TA.103
-- _$s17ServicesPaymentUI0B23AuthorizationFooterViewC18transitionToLockup33_1CC7DE853BB270382B28BC3E78107AC0LL9showLabelySb_tFyycfU_TA.110
-- _$s17ServicesPaymentUI0B23AuthorizationFooterViewC18transitionToLockup33_1CC7DE853BB270382B28BC3E78107AC0LL9showLabelySb_tFyycfU_TA.117
-- _$s17ServicesPaymentUI0B23AuthorizationFooterViewC18transitionToLockup33_1CC7DE853BB270382B28BC3E78107AC0LL9showLabelySb_tFyycfU_TA.124
-- _$s17ServicesPaymentUI0B23AuthorizationFooterViewC18transitionToLockup33_1CC7DE853BB270382B28BC3E78107AC0LL9showLabelySb_tFyycfU_TA.131
-- _$s17ServicesPaymentUI0B23AuthorizationFooterViewC18transitionToLockup33_1CC7DE853BB270382B28BC3E78107AC0LL9showLabelySb_tFyycfU_TA.144
-- _$s17ServicesPaymentUI0B23AuthorizationFooterViewC18transitionToLockup33_1CC7DE853BB270382B28BC3E78107AC0LL9showLabelySb_tFyycfU_TA.151
-- _$s17ServicesPaymentUI0B23AuthorizationFooterViewC18transitionToLockup33_1CC7DE853BB270382B28BC3E78107AC0LL9showLabelySb_tFyycfU_TA.158
-- _$s17ServicesPaymentUI0B23AuthorizationFooterViewC18transitionToLockup33_1CC7DE853BB270382B28BC3E78107AC0LL9showLabelySb_tFyycfU_TA.89
-- _$s17ServicesPaymentUI0B23AuthorizationFooterViewC18transitionToLockup33_1CC7DE853BB270382B28BC3E78107AC0LL9showLabelySb_tFyycfU_TA.96
 - _$s17ServicesPaymentUI0B23AuthorizationFooterViewC23handlePasswordButtonTap33_1CC7DE853BB270382B28BC3E78107AC0LLyyFTo
 - _$s17ServicesPaymentUI0B23AuthorizationFooterViewC32$__lazy_storage_$_passwordButton33_1CC7DE853BB270382B28BC3E78107AC0LLSo8UIButtonCSgvpWvd
 - _$s17ServicesPaymentUI0B23AuthorizationFooterViewC36$__lazy_storage_$_confirmationButton33_1CC7DE853BB270382B28BC3E78107AC0LLSo8UIButtonCSgvpWvd
@@ -662,16 +427,12 @@ Symbols:
 - _$s17ServicesPaymentUI18interactionObjects5using10stepUpData06customI09JetEngine15BaseObjectGraphCAA0aB9Navigator_p_AA04StephI0VAA06CustomI0CtFAF16ActionDispatcherVyAHGyYbcfU0_TA
 - _$s17ServicesPaymentUI18interactionObjects5using10stepUpData06customI09JetEngine15BaseObjectGraphCAA0aB9Navigator_p_AA04StephI0VAA06CustomI0CtFAKyYbcfU2_TA
 - _$s17ServicesPaymentUI18interactionObjects5using10stepUpData06customI09JetEngine15BaseObjectGraphCAA0aB9Navigator_p_AA04StephI0VAA06CustomI0CtFAMyYbcfU3_TA
-- _$s17ServicesPaymentUI34BiometricAuthenticationCoordinatorC15resetForRestartyyFySb_s5Error_pSgtYbcfU_TA.77
-- _$s17ServicesPaymentUI34BiometricAuthenticationCoordinatorC15resetForRestartyyFySb_s5Error_pSgtYbcfU_TA.84
-- _$s17ServicesPaymentUI34BiometricAuthenticationCoordinatorC15resetForRestartyyFySb_s5Error_pSgtYbcfU_TA.91
 - _$s17ServicesPaymentUI34BiometricAuthenticationCoordinatorC5pauseyyFTm
 - _$s5UIKit40UIConfigurationTextAttributesTransformerVMa
 - _$s5UIKit40UIConfigurationTextAttributesTransformerVMn
 - _$s5UIKit40UIConfigurationTextAttributesTransformerVSgMR
 - _$s5UIKit40UIConfigurationTextAttributesTransformerVSgMd
 - _$s5UIKit40UIConfigurationTextAttributesTransformerVyAC10Foundation18AttributeContainerVAFccfC
-- _$s7SwiftUI7AnyViewVIego_ACIegr_TRTA.315
 - _$sBAs5Error_pIeNgHgILzo_BAytsAA_pIeNgHgILrzo_TRTQ1_
 - _$sBAs5Error_pIeNgHgILzo_BAytsAA_pIeNgHgILrzo_TRTY0_
 - _$sBAyts5Error_pIeNgHgILrzo_BAsAA_pIeNgHgILzo_TRTQ1_
@@ -700,176 +461,25 @@ Symbols:
 - _$sSo8UIButtonC5UIKitE13configurationAbCE13ConfigurationVSgvs
 - _$sSo8UIButtonCML
 - _$ss15LazyMapSequenceV8IteratorV4nextq_SgyFSDySS9JetEngine11ActionModel_pXpG_SS_AgH_pXptTgq5
-- _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.153
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.153TQ0_
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.153Tu
-- _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.187
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.187TQ0_
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.187Tu
-- _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.197
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.197TQ0_
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.197Tu
-- _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.217
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.217TQ0_
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.217Tu
-- _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.238
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.238TQ0_
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.238Tu
-- _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.250
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.250TQ0_
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.250Tu
-- _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.302
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.302TQ0_
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.302Tu
 - _OBJC_CLASS_$_UIButton
 - _UIFontWeightMedium
-- ___swift_closure_destructor.101
-- ___swift_closure_destructor.106
-- ___swift_closure_destructor.108
-- ___swift_closure_destructor.110
-- ___swift_closure_destructor.115
-- ___swift_closure_destructor.122
-- ___swift_closure_destructor.129
-- ___swift_closure_destructor.136
-- ___swift_closure_destructor.142
-- ___swift_closure_destructor.147
-- ___swift_closure_destructor.149
-- ___swift_closure_destructor.151
-- ___swift_closure_destructor.156
-- ___swift_closure_destructor.163
-- ___swift_closure_destructor.169
-- ___swift_closure_destructor.181
 - ___swift_closure_destructor.181Tm
-- ___swift_closure_destructor.185
-- ___swift_closure_destructor.191
-- ___swift_closure_destructor.195
-- ___swift_closure_destructor.201
-- ___swift_closure_destructor.207
 - ___swift_closure_destructor.207Tm
-- ___swift_closure_destructor.211
-- ___swift_closure_destructor.215
-- ___swift_closure_destructor.222
-- ___swift_closure_destructor.232
 - ___swift_closure_destructor.232Tm
-- ___swift_closure_destructor.236
-- ___swift_closure_destructor.244
-- ___swift_closure_destructor.248
-- ___swift_closure_destructor.255
-- ___swift_closure_destructor.261
-- ___swift_closure_destructor.267
-- ___swift_closure_destructor.282
-- ___swift_closure_destructor.289
-- ___swift_closure_destructor.296
-- ___swift_closure_destructor.300
-- ___swift_closure_destructor.307
-- ___swift_closure_destructor.317
-- ___swift_closure_destructor.323
-- ___swift_closure_destructor.329
-- ___swift_closure_destructor.360
-- ___swift_closure_destructor.378
-- ___swift_closure_destructor.75
-- ___swift_closure_destructor.81
-- ___swift_closure_destructor.87
-- ___swift_closure_destructor.89
-- ___swift_closure_destructor.94
-- ___swift_closure_destructor.96
-- _block_copy_helper.104
-- _block_copy_helper.111
-- _block_copy_helper.118
-- _block_copy_helper.125
-- _block_copy_helper.132
-- _block_copy_helper.138
-- _block_copy_helper.145
-- _block_copy_helper.152
-- _block_copy_helper.159
-- _block_copy_helper.165
-- _block_copy_helper.177
-- _block_copy_helper.203
-- _block_copy_helper.228
-- _block_copy_helper.257
-- _block_copy_helper.263
-- _block_copy_helper.272
-- _block_copy_helper.277
-- _block_copy_helper.284
-- _block_copy_helper.291
-- _block_copy_helper.362
-- _block_copy_helper.64
-- _block_copy_helper.68
-- _block_copy_helper.71
-- _block_copy_helper.77
-- _block_copy_helper.78
-- _block_copy_helper.83
-- _block_copy_helper.85
-- _block_copy_helper.90
-- _block_copy_helper.92
-- _block_copy_helper.97
-- _block_descriptor.106
-- _block_descriptor.113
-- _block_descriptor.120
-- _block_descriptor.127
-- _block_descriptor.134
-- _block_descriptor.140
-- _block_descriptor.147
-- _block_descriptor.154
-- _block_descriptor.161
-- _block_descriptor.167
-- _block_descriptor.179
-- _block_descriptor.205
-- _block_descriptor.230
-- _block_descriptor.259
-- _block_descriptor.265
-- _block_descriptor.274
-- _block_descriptor.279
-- _block_descriptor.286
-- _block_descriptor.293
-- _block_descriptor.364
-- _block_descriptor.66
-- _block_descriptor.70
-- _block_descriptor.73
-- _block_descriptor.79
-- _block_descriptor.80
-- _block_descriptor.85
-- _block_descriptor.87
-- _block_descriptor.92
-- _block_descriptor.94
-- _block_descriptor.99
-- _block_destroy_helper.105
-- _block_destroy_helper.112
-- _block_destroy_helper.119
-- _block_destroy_helper.126
-- _block_destroy_helper.133
-- _block_destroy_helper.139
-- _block_destroy_helper.146
-- _block_destroy_helper.153
-- _block_destroy_helper.160
-- _block_destroy_helper.166
-- _block_destroy_helper.178
-- _block_destroy_helper.204
-- _block_destroy_helper.229
-- _block_destroy_helper.258
-- _block_destroy_helper.264
-- _block_destroy_helper.273
-- _block_destroy_helper.278
-- _block_destroy_helper.285
-- _block_destroy_helper.292
-- _block_destroy_helper.363
-- _block_destroy_helper.65
-- _block_destroy_helper.69
-- _block_destroy_helper.72
-- _block_destroy_helper.78
-- _block_destroy_helper.79
-- _block_destroy_helper.84
-- _block_destroy_helper.86
-- _block_destroy_helper.91
-- _block_destroy_helper.93
-- _block_destroy_helper.98
-- _get_witness_table 7SwiftUI15NavigationStackVyAA0C4PathVAA4ViewPAAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAA08ModifiedJ0Vy015ServicesPaymentB0013AppleIDSignInF0VAA16_FlexFrameLayoutVG_AA0I4ItemVyytAA6ButtonVyAA5ImageVGGQo_GAaFHPyHC.383
-- _get_witness_table 7SwiftUI4ViewRzlqd0__AaBHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVyxAA30_EnvironmentKeyWritingModifierVyAA7BindingVySbGGG_SbQo_HO.382
-- _objc_msgSend$addTarget:action:forControlEvents:
-- _objc_msgSend$pointSize
-- _objc_msgSend$setTitle:forState:
-- _objc_msgSend$systemFontOfSize:weight:
-- _objc_msgSend$titleLabel
 - _symbolic So8UIButtonCSg
 - _symbolic _____Sg 5UIKit40UIConfigurationTextAttributesTransformerV
 - _symbolic _____Sg So8UIButtonC5UIKitE13ConfigurationV
@@ -879,5 +489,4 @@ CStrings:
 + "Pausing biometric coordinator - cancelling active evaluation"
 + "ServicesPaymentUI/PaymentFooterButton.swift"
 - "Pausing biometric coordinator"
-
 ```

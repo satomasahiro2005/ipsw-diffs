@@ -2,23 +2,26 @@
 
 > `/System/Library/Filesystems/apfs.fs/apfs_condenser`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__cstring`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4d3e8` | `0x4d3c8` | **`-0x20`** |
+| `__TEXT.__unwind_info` | `0x830` | `0x840` | **`+0x10`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -3288.40.14.0.0
--  __TEXT.__text: 0x4ce0c
 +3288.40.17.0.0
-+  __TEXT.__text: 0x4cdec
-   __TEXT.__auth_stubs: 0x780
-   __TEXT.__cstring: 0xf7c5
-   __TEXT.__const: 0x220
 CStrings:
 + "3288.40.17"
 - "3288.40.14"

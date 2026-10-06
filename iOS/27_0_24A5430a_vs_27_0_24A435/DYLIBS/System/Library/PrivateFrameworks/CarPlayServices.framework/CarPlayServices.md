@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CarPlayServices.framework/CarPlayServices`
 
-```diff
+### Section Size Changes
 
- 581.7.2.0.0
--  __TEXT.__text: 0x14c54
-+  __TEXT.__text: 0x14c5c
-   __TEXT.__objc_methlist: 0x1274
-   __TEXT.__const: 0x62c
-   __TEXT.__cstring: 0xcd4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14c54` | `0x14c5c` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_256f29aec -> sub_257ac2aec : 448 -> 456
+~ sub_256df3aec -> sub_25798baec : 448 -> 456
 ```

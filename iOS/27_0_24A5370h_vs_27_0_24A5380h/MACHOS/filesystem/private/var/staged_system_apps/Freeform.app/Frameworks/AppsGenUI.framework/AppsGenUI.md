@@ -2,94 +2,58 @@
 
 > `/private/var/staged_system_apps/Freeform.app/Frameworks/AppsGenUI.framework/AppsGenUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x47388` | `0x481fc` | **`+0xe74`** |
+| `__DATA.__bss` | `0x2370` | `0x25f0` | **`+0x280`** |
+| `__DATA_CONST.__const` | `0x2788` | `0x2928` | **`+0x1a0`** |
+| `__TEXT.__const` | `0x2e28` | `0x2f58` | **`+0x130`** |
+| `__TEXT.__cstring` | `0x22da` | `0x236a` | **`+0x90`** |
+| `__TEXT.__swift5_reflstr` | `0x796` | `0x816` | **`+0x80`** |
+| `__TEXT.__swift5_fieldmd` | `0x98c` | `0x9e4` | **`+0x58`** |
+| `__TEXT.__auth_stubs` | `0x1cb0` | `0x1d00` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x1360` | `0x13a8` | **`+0x48`** |
+| `__TEXT.__oslogstring` | `0x607` | `0x637` | **`+0x30`** |
+| `__TEXT.__swift5_assocty` | `0x240` | `0x270` | **`+0x30`** |
+| `__DATA.__data` | `0x1fc0` | `0x1fe8` | **`+0x28`** |
+| `__DATA_CONST.__auth_got` | `0xe60` | `0xe88` | **`+0x28`** |
+| `__TEXT.__swift5_typeref` | `0x54f2` | `0x5512` | **`+0x20`** |
+| `__TEXT.__constg_swiftt` | `0xdd4` | `0xdf0` | **`+0x1c`** |
+| `__TEXT.__swift5_proto` | `0x11c` | `0x130` | **`+0x14`** |
+| `__DATA_CONST.__got` | `0x568` | `0x570` | **`+0x8`** |
+| `__TEXT.__swift5_capture` | `0x580` | `0x584` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0xcc` | `0xd0` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_classlist`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x47388
--  __TEXT.__auth_stubs: 0x1cb0
-+  __TEXT.__text: 0x481fc
-+  __TEXT.__auth_stubs: 0x1d00
-   __TEXT.__objc_stubs: 0x9c0
-   __TEXT.__objc_methlist: 0x24c
--  __TEXT.__const: 0x2e28
--  __TEXT.__swift5_typeref: 0x54f2
--  __TEXT.__swift5_capture: 0x580
--  __TEXT.__swift5_reflstr: 0x796
--  __TEXT.__swift5_assocty: 0x240
--  __TEXT.__constg_swiftt: 0xdd4
--  __TEXT.__swift5_fieldmd: 0x98c
-+  __TEXT.__const: 0x2f58
-+  __TEXT.__swift5_typeref: 0x5512
-+  __TEXT.__swift5_capture: 0x584
-+  __TEXT.__swift5_reflstr: 0x816
-+  __TEXT.__swift5_assocty: 0x270
-+  __TEXT.__constg_swiftt: 0xdf0
-+  __TEXT.__swift5_fieldmd: 0x9e4
-   __TEXT.__swift5_builtin: 0x3c
--  __TEXT.__cstring: 0x22da
--  __TEXT.__swift5_proto: 0x11c
--  __TEXT.__swift5_types: 0xcc
-+  __TEXT.__cstring: 0x236a
-+  __TEXT.__swift5_proto: 0x130
-+  __TEXT.__swift5_types: 0xd0
-   __TEXT.__objc_methname: 0xcc8
-   __TEXT.__objc_classname: 0x2b0
-   __TEXT.__objc_methtype: 0x2d8
+-649.0.0.0.3
++651.0.0.501.2
 
-   __TEXT.__swift_as_entry: 0x98
-   __TEXT.__swift_as_ret: 0xd8
-   __TEXT.__swift_as_cont: 0x1b4
--  __TEXT.__oslogstring: 0x607
--  __TEXT.__unwind_info: 0x1360
-+  __TEXT.__oslogstring: 0x637
-+  __TEXT.__unwind_info: 0x13a8
-   __TEXT.__eh_frame: 0x1f10
--  __DATA_CONST.__const: 0x2788
-+  __DATA_CONST.__const: 0x2928
-   __DATA_CONST.__objc_classlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__auth_got: 0xe60
--  __DATA_CONST.__got: 0x568
-+  __DATA_CONST.__auth_got: 0xe88
-+  __DATA_CONST.__got: 0x570
-   __DATA_CONST.__auth_ptr: 0x6a0
-   __DATA.__objc_const: 0xac8
-   __DATA.__objc_selrefs: 0x388
-   __DATA.__objc_data: 0x610
--  __DATA.__data: 0x1fc0
-+  __DATA.__data: 0x1fe8
-   __DATA.__objc_stublist: 0x10
--  __DATA.__bss: 0x2370
-+  __DATA.__bss: 0x25f0
-   __DATA.__common: 0x48
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   - @rpath/AppsGen.framework/AppsGen
 -  Functions: 1608
--  Symbols:   12931
+-  Symbols:   4657
 -  CStrings:  411
 +  Functions: 1639
-+  Symbols:   13162
++  Symbols:   4738
 +  CStrings:  417
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__common : content changed
 Symbols:
 + $s9AppsGenUI28RemoteLLMUsageQAMenuProviderC06forcedB16ShapesImageModelAC0bijK0OvMZ.resume
 + $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.119TQ0_
@@ -207,5 +171,4 @@ CStrings:
 + "gemini-3.1-flash-image"
 + "llm.gemini.apiKey"
 - "RemoteLLMUsage: Message for LLM provider error alert. Parameter is the provider name (e.g. OpenAI)."
-
 ```

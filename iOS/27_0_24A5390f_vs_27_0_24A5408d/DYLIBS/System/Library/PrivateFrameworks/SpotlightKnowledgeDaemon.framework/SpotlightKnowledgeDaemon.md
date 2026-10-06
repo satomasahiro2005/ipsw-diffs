@@ -2,122 +2,60 @@
 
 > `/System/Library/PrivateFrameworks/SpotlightKnowledgeDaemon.framework/SpotlightKnowledgeDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4659a8` | `0x48acd0` | **`+0x25328`** |
+| `__TEXT.__cstring` | `0x14613` | `0x15963` | **`+0x1350`** |
+| `__TEXT.__eh_frame` | `0x13618` | `0x145a8` | **`+0xf90`** |
+| `__AUTH_CONST.__const` | `0x17ef8` | `0x18b30` | **`+0xc38`** |
+| `__DATA.__bss` | `0xedf0` | `0xf900` | **`+0xb10`** |
+| `__TEXT.__const` | `0x16928` | `0x17408` | **`+0xae0`** |
+| `__TEXT.__unwind_info` | `0xc1e0` | `0xc858` | **`+0x678`** |
+| `__TEXT.__swift5_reflstr` | `0x82fd` | `0x87ed` | **`+0x4f0`** |
+| `__TEXT.__swift5_fieldmd` | `0x88b8` | `0x8d40` | **`+0x488`** |
+| `__TEXT.__swift5_typeref` | `0xe528` | `0xe9a8` | **`+0x480`** |
+| `__DATA.__data` | `0x35e8` | `0x3a60` | **`+0x478`** |
+| `__TEXT.__constg_swiftt` | `0x89bc` | `0x8dc0` | **`+0x404`** |
+| `__AUTH.__data` | `0x2638` | `0x2a28` | **`+0x3f0`** |
+| `__TEXT.__oslogstring` | `0x1132e` | `0x116be` | **`+0x390`** |
+| `__AUTH_CONST.__objc_const` | `0x18478` | `0x186f0` | **`+0x278`** |
+| `__TEXT.__swift5_capture` | `0x3698` | `0x37e8` | **`+0x150`** |
+| `__TEXT.__swift_as_cont` | `0x4ec` | `0x574` | **`+0x88`** |
+| `__TEXT.__swift5_proto` | `0x1010` | `0x107c` | **`+0x6c`** |
+| `__TEXT.__swift_as_ret` | `0x468` | `0x4d4` | **`+0x6c`** |
+| `__AUTH_CONST.__auth_got` | `0x3680` | `0x36e8` | **`+0x68`** |
+| `__TEXT.__swift_as_entry` | `0x430` | `0x488` | **`+0x58`** |
+| `__AUTH.__objc_data` | `0x1738` | `0x1788` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x2210` | `0x2260` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x9918` | `0x9968` | **`+0x50`** |
+| `__TEXT.__swift5_types` | `0x878` | `0x8bc` | **`+0x44`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5f48` | `0x5f88` | **`+0x40`** |
+| `__DATA.__common` | `0x98` | `0xc0` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x9400` | `0x9420` | **`+0x20`** |
+| `__DATA_DIRTY.__objc_data` | `0x3ed8` | `0x3ef0` | **`+0x18`** |
+| `__TEXT.__gcc_except_tab` | `0x5a94` | `0x5aac` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x960` | `0x970` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0xc328` | `0xc338` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `0x268` | `0x274` | **`+0xc`** |
+| `__DATA_CONST.__const` | `0x35b0` | `0x35b8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2454.100.0.0.0
--  __TEXT.__text: 0x4659a8
--  __TEXT.__objc_methlist: 0x9918
--  __TEXT.__const: 0x16928
--  __TEXT.__oslogstring: 0x1132e
--  __TEXT.__cstring: 0x14613
--  __TEXT.__gcc_except_tab: 0x5a94
 +2459.102.0.0.0
-+  __TEXT.__text: 0x48acd0
-+  __TEXT.__objc_methlist: 0x9968
-+  __TEXT.__const: 0x17408
-+  __TEXT.__oslogstring: 0x116be
-+  __TEXT.__gcc_except_tab: 0x5aac
-+  __TEXT.__cstring: 0x15963
-   __TEXT.__dlopen_cstrs: 0x5e
--  __TEXT.__swift5_typeref: 0xe528
--  __TEXT.__constg_swiftt: 0x89bc
-+  __TEXT.__swift5_typeref: 0xe9a8
-+  __TEXT.__constg_swiftt: 0x8dc0
-   __TEXT.__swift5_builtin: 0x244
--  __TEXT.__swift5_reflstr: 0x82fd
--  __TEXT.__swift5_fieldmd: 0x88b8
-+  __TEXT.__swift5_reflstr: 0x87ed
-+  __TEXT.__swift5_fieldmd: 0x8d40
-   __TEXT.__swift5_assocty: 0x1398
--  __TEXT.__swift5_capture: 0x3698
--  __TEXT.__swift5_proto: 0x1010
--  __TEXT.__swift5_types: 0x878
--  __TEXT.__swift_as_entry: 0x430
--  __TEXT.__swift_as_ret: 0x468
--  __TEXT.__swift_as_cont: 0x4ec
--  __TEXT.__swift5_protos: 0x268
-+  __TEXT.__swift5_capture: 0x37e8
-+  __TEXT.__swift5_proto: 0x107c
-+  __TEXT.__swift5_types: 0x8bc
-+  __TEXT.__swift_as_entry: 0x488
-+  __TEXT.__swift_as_ret: 0x4d4
-+  __TEXT.__swift_as_cont: 0x574
-+  __TEXT.__swift5_protos: 0x274
-   __TEXT.__swift5_mpenum: 0x94
--  __TEXT.__unwind_info: 0xc1e0
--  __TEXT.__eh_frame: 0x13618
-+  __TEXT.__unwind_info: 0xc858
-+  __TEXT.__eh_frame: 0x145a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x35b0
--  __DATA_CONST.__objc_classlist: 0x960
-+  __DATA_CONST.__const: 0x35b8
-+  __DATA_CONST.__objc_classlist: 0x970
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x1e8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5f48
-+  __DATA_CONST.__objc_selrefs: 0x5f88
-   __DATA_CONST.__objc_protorefs: 0xb8
-   __DATA_CONST.__objc_superrefs: 0x4e8
-   __DATA_CONST.__objc_arraydata: 0x8a0
--  __DATA_CONST.__got: 0x2210
--  __AUTH_CONST.__const: 0x17ef8
--  __AUTH_CONST.__cfstring: 0x9400
--  __AUTH_CONST.__objc_const: 0x18478
-+  __DATA_CONST.__got: 0x2260
-+  __AUTH_CONST.__const: 0x18b30
-+  __AUTH_CONST.__cfstring: 0x9420
-+  __AUTH_CONST.__objc_const: 0x186f0
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x9d8
-   __AUTH_CONST.__objc_arrayobj: 0x5e8
-   __AUTH_CONST.__objc_dictobj: 0x280
-   __AUTH_CONST.__objc_doubleobj: 0x20
--  __AUTH_CONST.__auth_got: 0x3680
--  __AUTH.__objc_data: 0x1738
--  __AUTH.__data: 0x2638
-+  __AUTH_CONST.__auth_got: 0x36e8
-+  __AUTH.__objc_data: 0x1788
-+  __AUTH.__data: 0x2a28
-   __DATA.__objc_ivar: 0xbd8
--  __DATA.__data: 0x35e8
--  __DATA.__bss: 0xedf0
--  __DATA.__common: 0x98
--  __DATA_DIRTY.__objc_data: 0x3ed8
--  __DATA_DIRTY.__data: 0xc328
-+  __DATA.__data: 0x3a60
-+  __DATA.__bss: 0xf900
-+  __DATA.__common: 0xc0
-+  __DATA_DIRTY.__objc_data: 0x3ef0
-+  __DATA_DIRTY.__data: 0xc338
-   __DATA_DIRTY.__bss: 0x8900
-   __DATA_DIRTY.__common: 0x3a0
-   - /System/Library/Frameworks/Contacts.framework/Contacts
 
-   - /System/Library/PrivateFrameworks/FileDerivatives.framework/FileDerivatives
-   - /System/Library/PrivateFrameworks/GRDBInternal.framework/GRDBInternal
-   - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
 -  - /System/Library/PrivateFrameworks/GenerativeSearch.framework/GenerativeSearch
-   - /System/Library/PrivateFrameworks/HybridSearch.framework/HybridSearch
-   - /System/Library/PrivateFrameworks/IntelligencePlatform.framework/IntelligencePlatform
-   - /System/Library/PrivateFrameworks/IntelligencePlatformLibrary.framework/IntelligencePlatformLibrary
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 16148
--  Symbols:   14211
+-  Symbols:   11577
 -  CStrings:  3605
 +  Functions: 16549
-+  Symbols:   14305
++  Symbols:   11663
 +  CStrings:  3672
- 
 Symbols:
 + -[SKDPipelineState _resetSerialsIfGenerationChanged:forPipeline:forIndexType:]
 + -[SKDPipelineState prioritySerialNumberForPipeline:indexType:]
@@ -174,15 +112,6 @@ Symbols:
 + _associated conformance 24SpotlightKnowledgeDaemon28PipelineStateTransitionEventV10CodingKeys33_A35D547553989C3894BDE2B07983E4B5LLOs0H3KeyAAs23CustomStringConvertible
 + _associated conformance 24SpotlightKnowledgeDaemon28PipelineStateTransitionEventV10CodingKeys33_A35D547553989C3894BDE2B07983E4B5LLOs0H3KeyAAs28CustomDebugStringConvertible
 + _dlopen
-+ _objc_msgSend$_resetSerialsIfGenerationChanged:forPipeline:forIndexType:
-+ _objc_msgSend$isDASPhasedProcessingEnabled
-+ _objc_msgSend$prioritySerialNumberForPipeline:indexType:
-+ _objc_msgSend$removePrioritySerialNumberForPipeline:forIndexType:
-+ _objc_msgSend$setPrimaryDomain:
-+ _objc_msgSend$setPrioritySerialNumber:forPipeline:forIndexType:
-+ _objc_msgSend$setPrioritySerialNumber:journalCookie:forPipeline:forIndexType:
-+ _objc_msgSend$setPurpose:
-+ _objc_msgSend$valueType
 + _symbolic $s24SpotlightKnowledgeDaemon26PipelineProgressEstimatingP
 + _symbolic $s24SpotlightKnowledgeDaemon26PipelineProgressPersistingP
 + _symbolic $s24SpotlightKnowledgeDaemon32PipelineCompletenessCoordinatingP
@@ -303,7 +232,6 @@ Symbols:
 - _associated conformance 24SpotlightKnowledgeDaemon9SchedulerC9TaskStateOSHAASQ
 - _kCFPreferencesAnyHost
 - _kCFPreferencesAnyUser
-- _objc_msgSend$showRelatedContentIsEnabled
 - _symbolic So20SKDCancellationTokenC_____Ieghy_Ieghgg_ 24SpotlightKnowledgeDaemon9SchedulerC9TaskStateO
 - _symbolic _____ 24SpotlightKnowledgeDaemon11MetricsItemV
 - _symbolic _____ 24SpotlightKnowledgeDaemon23CascadeMetricsCollectorC32generateDailyStatusForAllBundles3for10reportDate17cancellationTokenSayAA014PipelineBundleE0VGSS_10Foundation0O0VSgSo015SKDCancellationQ0CtYaKF0E11AggregationL_V

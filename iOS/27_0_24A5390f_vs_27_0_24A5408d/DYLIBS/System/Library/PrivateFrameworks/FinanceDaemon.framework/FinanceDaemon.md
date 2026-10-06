@@ -2,128 +2,63 @@
 
 > `/System/Library/PrivateFrameworks/FinanceDaemon.framework/FinanceDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x46e3e0` | `0x48c25c` | **`+0x1de7c`** |
+| `__AUTH_CONST.__const` | `0xef68` | `0x10888` | **`+0x1920`** |
+| `__TEXT.__const` | `0x169c2` | `0x17cf2` | **`+0x1330`** |
+| `__TEXT.__eh_frame` | `0x25150` | `0x263f0` | **`+0x12a0`** |
+| `__DATA.__bss` | `0x13320` | `0x142e0` | **`+0xfc0`** |
+| `__TEXT.__oslogstring` | `0x13752` | `0x14592` | **`+0xe40`** |
+| `__TEXT.__cstring` | `0xc145` | `0xcc55` | **`+0xb10`** |
+| `__TEXT.__swift5_reflstr` | `0x99d4` | `0xa494` | **`+0xac0`** |
+| `__TEXT.__swift5_fieldmd` | `0x7b28` | `0x837c` | **`+0x854`** |
+| `__TEXT.__swift5_typeref` | `0x8d90` | `0x9450` | **`+0x6c0`** |
+| `__TEXT.__constg_swiftt` | `0x7ba0` | `0x817c` | **`+0x5dc`** |
+| `__DATA.__data` | `0x4c00` | `0x5170` | **`+0x570`** |
+| `__TEXT.__unwind_info` | `0xbd20` | `0xc240` | **`+0x520`** |
+| `__AUTH.__data` | `0x88e0` | `0x8d60` | **`+0x480`** |
+| `__DATA_DIRTY.__bss` | `0x3a80` | `0x3880` | **`-0x200`** |
+| `__AUTH_CONST.__auth_got` | `0x6858` | `0x6a08` | **`+0x1b0`** |
+| `__TEXT.__swift5_capture` | `0x246c` | `0x25e8` | **`+0x17c`** |
+| `__AUTH_CONST.__objc_const` | `0x6fa0` | `0x7118` | **`+0x178`** |
+| `__DATA_DIRTY.__data` | `0x6678` | `0x6508` | **`-0x170`** |
+| `__DATA_CONST.__got` | `0x2c18` | `0x2d70` | **`+0x158`** |
+| `__TEXT.__swift5_assocty` | `0xde8` | `0xef8` | **`+0x110`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2028` | `0x1f60` | **`-0xc8`** |
+| `__TEXT.__swift5_types` | `0x814` | `0x8a4` | **`+0x90`** |
+| `__TEXT.__swift5_proto` | `0xcf4` | `0xd80` | **`+0x8c`** |
+| `__TEXT.__swift_as_cont` | `0x14b4` | `0x1518` | **`+0x64`** |
+| `__TEXT.__swift_as_entry` | `0x950` | `0x988` | **`+0x38`** |
+| `__TEXT.__swift_as_ret` | `0xaa0` | `0xad0` | **`+0x30`** |
+| `__TEXT.__swift5_builtin` | `0x168` | `0x190` | **`+0x28`** |
+| `__DATA_DIRTY.__common` | `0xa0` | `0x88` | **`-0x18`** |
+| `__DATA_DIRTY.__objc_data` | `0x610` | `0x600` | **`-0x10`** |
+| `__TEXT.__swift5_mpenum` | `0x84` | `0x94` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x340` | `0x348` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x164` | `0x16c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -366.1.0.0.0
--  __TEXT.__text: 0x46e3e0
 +376.0.1.0.0
-+  __TEXT.__text: 0x48c25c
-   __TEXT.__objc_methlist: 0x7d0
--  __TEXT.__const: 0x169c2
--  __TEXT.__cstring: 0xc145
--  __TEXT.__oslogstring: 0x13752
--  __TEXT.__constg_swiftt: 0x7ba0
--  __TEXT.__swift5_typeref: 0x8d90
--  __TEXT.__swift5_builtin: 0x168
--  __TEXT.__swift5_reflstr: 0x99d4
--  __TEXT.__swift5_fieldmd: 0x7b28
--  __TEXT.__swift5_capture: 0x246c
--  __TEXT.__swift5_assocty: 0xde8
--  __TEXT.__swift5_proto: 0xcf4
--  __TEXT.__swift5_types: 0x814
--  __TEXT.__swift_as_entry: 0x950
--  __TEXT.__swift_as_ret: 0xaa0
--  __TEXT.__swift_as_cont: 0x14b4
--  __TEXT.__swift5_protos: 0x164
--  __TEXT.__swift5_mpenum: 0x84
-+  __TEXT.__const: 0x17cf2
-+  __TEXT.__cstring: 0xcc55
-+  __TEXT.__oslogstring: 0x14592
-+  __TEXT.__constg_swiftt: 0x817c
-+  __TEXT.__swift5_typeref: 0x9450
-+  __TEXT.__swift5_builtin: 0x190
-+  __TEXT.__swift5_reflstr: 0xa494
-+  __TEXT.__swift5_fieldmd: 0x837c
-+  __TEXT.__swift5_capture: 0x25e8
-+  __TEXT.__swift5_assocty: 0xef8
-+  __TEXT.__swift5_proto: 0xd80
-+  __TEXT.__swift5_types: 0x8a4
-+  __TEXT.__swift_as_entry: 0x988
-+  __TEXT.__swift_as_ret: 0xad0
-+  __TEXT.__swift_as_cont: 0x1518
-+  __TEXT.__swift5_protos: 0x16c
-+  __TEXT.__swift5_mpenum: 0x94
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0xbd20
--  __TEXT.__eh_frame: 0x25150
-+  __TEXT.__unwind_info: 0xc240
-+  __TEXT.__eh_frame: 0x263f0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x188
--  __DATA_CONST.__objc_classlist: 0x340
-+  __DATA_CONST.__objc_classlist: 0x348
-   __DATA_CONST.__objc_protolist: 0xc0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2028
-+  __DATA_CONST.__objc_selrefs: 0x1f60
-   __DATA_CONST.__objc_protorefs: 0x60
-   __DATA_CONST.__objc_superrefs: 0x10
--  __DATA_CONST.__got: 0x2c18
--  __AUTH_CONST.__const: 0xef68
--  __AUTH_CONST.__objc_const: 0x6fa0
--  __AUTH_CONST.__auth_got: 0x6858
-+  __DATA_CONST.__got: 0x2d70
-+  __AUTH_CONST.__const: 0x10888
-+  __AUTH_CONST.__objc_const: 0x7118
-+  __AUTH_CONST.__auth_got: 0x6a08
-   __AUTH.__objc_data: 0x458
--  __AUTH.__data: 0x88e0
-+  __AUTH.__data: 0x8d60
-   __DATA.__objc_ivar: 0x8
--  __DATA.__data: 0x4c00
--  __DATA.__bss: 0x13320
-+  __DATA.__data: 0x5170
-+  __DATA.__bss: 0x142e0
-   __DATA.__common: 0xe0
--  __DATA_DIRTY.__objc_data: 0x610
--  __DATA_DIRTY.__data: 0x6678
--  __DATA_DIRTY.__bss: 0x3a80
--  __DATA_DIRTY.__common: 0xa0
-+  __DATA_DIRTY.__objc_data: 0x600
-+  __DATA_DIRTY.__data: 0x6508
-+  __DATA_DIRTY.__bss: 0x3880
-+  __DATA_DIRTY.__common: 0x88
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+
 +  - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreML.framework/CoreML
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight
 
-   - /System/Library/Frameworks/DataDetection.framework/DataDetection
-   - /System/Library/Frameworks/FinanceKit.framework/FinanceKit
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 -  - /System/Library/Frameworks/FoundationModels.framework/FoundationModels
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-   - /System/Library/Frameworks/Photos.framework/Photos
-   - /System/Library/Frameworks/Security.framework/Security
 
-   - /System/Library/PrivateFrameworks/IconServices.framework/IconServices
-   - /System/Library/PrivateFrameworks/IntelligencePlatformLibrary.framework/IntelligencePlatformLibrary
-   - /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf
 +  - /System/Library/PrivateFrameworks/OSEligibility.framework/OSEligibility
-   - /System/Library/PrivateFrameworks/PassKitCore.framework/PassKitCore
-   - /System/Library/PrivateFrameworks/PhotoLibraryServices.framework/PhotoLibraryServices
-   - /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11750
--  Symbols:   4679
+-  Symbols:   3730
 -  CStrings:  2394
 +  Functions: 12193
-+  Symbols:   4839
++  Symbols:   3915
 +  CStrings:  2519
- 
 Symbols:
 + _CGBitmapContextCreate
 + _CGBitmapContextCreateImage
@@ -225,26 +160,6 @@ Symbols:
 + _get_enum_tag_for_layout_string 13FinanceDaemon23EmailDeletionWorkSourceV0E15ItemDescriptionO
 + _get_enum_tag_for_layout_string 13FinanceDaemon33OrderToReceiptEmailLinkingVoucherO
 + _notify_cancel
-+ _objc_msgSend$availableAmountValue
-+ _objc_msgSend$bookedAmountValue
-+ _objc_msgSend$createForName:withTintColor:
-+ _objc_msgSend$emailMetadataMessageIDHash
-+ _objc_msgSend$exchangeToken
-+ _objc_msgSend$foundInMailItemObject
-+ _objc_msgSend$fusionCluster
-+ _objc_msgSend$initWithCGImage:scale:orientation:
-+ _objc_msgSend$isDeleted
-+ _objc_msgSend$lastAttemptDate
-+ _objc_msgSend$maximumSizeForStyle:
-+ _objc_msgSend$publicAccountBalanceObject
-+ _objc_msgSend$retryCount
-+ _objc_msgSend$rollback
-+ _objc_msgSend$setAvailableAmountValue:
-+ _objc_msgSend$setBookedAmountValue:
-+ _objc_msgSend$setEmailExistenceReevaluationVersion:
-+ _objc_msgSend$setEmailMetadataMessageIDHash:
-+ _objc_msgSend$setLastAttemptDate:
-+ _objc_msgSend$setRetryCount:
 + _objc_retain_x10
 + _symbolic $s13FinanceDaemon22OSEligibilityProvidingP
 + _symbolic $s13FinanceDaemon24OrderManagementDisablingP
@@ -491,51 +406,6 @@ Symbols:
 - _associated conformance 13FinanceDaemon17StoreMappingErrorOSHAASQ
 - _associated conformance 13FinanceDaemon29FoundInMailItemDocumentPrunerV15ExistenceSourceOSHAASQ
 - _associated conformance 13FinanceDaemon30ManagedBiomeOrderEmailImporterC5ErrorOSHAASQ
-- _objc_msgSend$country
-- _objc_msgSend$customerBillingAddress
-- _objc_msgSend$customerEmailAddress
-- _objc_msgSend$customerFullName
-- _objc_msgSend$customerPhoneNumber
-- _objc_msgSend$emailMetadataFromDisplayName
-- _objc_msgSend$emailMetadataFromEmailAddress
-- _objc_msgSend$emailMetadataReplyToDisplayName
-- _objc_msgSend$emailMetadataReplyToEmailAddress
-- _objc_msgSend$emailMetadataSenderDomain
-- _objc_msgSend$emailMetadataSubject
-- _objc_msgSend$emailMetadataToDisplayName
-- _objc_msgSend$emailMetadataToEmailAddress
-- _objc_msgSend$label
-- _objc_msgSend$orderDate
-- _objc_msgSend$orderManagementURL
-- _objc_msgSend$paymentInformationPaymentMethodDisplayName
-- _objc_msgSend$paymentInformationPaymentMethodIsApplePay
-- _objc_msgSend$paymentInformationPaymentMethodLastFourDigits
-- _objc_msgSend$setEmailMetadataFromDisplayName:
-- _objc_msgSend$setEmailMetadataReplyToDisplayName:
-- _objc_msgSend$setEmailMetadataReplyToEmailAddress:
-- _objc_msgSend$setEmailMetadataSubject:
-- _objc_msgSend$setEmailMetadataToDisplayName:
-- _objc_msgSend$setIsVisible:
-- _objc_msgSend$setLastProcessedEmailExistenceReevaluationVersion:
-- _objc_msgSend$shippingInformationCarrierName
-- _objc_msgSend$shippingInformationDeliveryDate
-- _objc_msgSend$shippingInformationDeliveryTime
-- _objc_msgSend$shippingInformationEstimatedDeliveryEndDate
-- _objc_msgSend$shippingInformationEstimatedDeliveryEndTime
-- _objc_msgSend$shippingInformationEstimatedDeliveryStartDate
-- _objc_msgSend$shippingInformationEstimatedDeliveryStartTime
-- _objc_msgSend$shippingInformationShippingDate
-- _objc_msgSend$shippingInformationShippingMethod
-- _objc_msgSend$shippingInformationShippingTime
-- _objc_msgSend$shippingInformationTrackingURL
-- _objc_msgSend$shippingRecipientAddress
-- _objc_msgSend$shippingRecipientEmailAddress
-- _objc_msgSend$shippingRecipientFullName
-- _objc_msgSend$shippingRecipientPhoneNumber
-- _objc_msgSend$supportEmail
-- _objc_msgSend$supportPhoneNumber
-- _objc_msgSend$supportURL
-- _objc_msgSend$title
 - _swift_unknownObjectRetain_n
 - _symbolic $s13FinanceDaemon28SystemLanguageModelProvidingP
 - _symbolic SS17clusterIdentifier_t

@@ -2,65 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/LocalAuthenticationCore.framework/LocalAuthenticationCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1952e4` | `0x195844` | **`+0x560`** |
+| `__AUTH_CONST.__objc_const` | `0x59170` | `0x595b0` | **`+0x440`** |
+| `__TEXT.__eh_frame` | `0x31a8` | `0x3200` | **`+0x58`** |
+| `__DATA_CONST.__const` | `0x5600` | `0x5618` | **`+0x18`** |
+| `__DATA.__data` | `0x7720` | `0x7730` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x6af0` | `0x6b00` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x1f0` | `0x1f4` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x134` | `0x138` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2319.0.46.0.0
--  __TEXT.__text: 0x1952e4
 +2319.0.63.0.0
-+  __TEXT.__text: 0x195844
-   __TEXT.__objc_methlist: 0xd410
-   __TEXT.__const: 0xae4c
-   __TEXT.__gcc_except_tab: 0x1790
 
-   __TEXT.__swift5_types: 0x2c0
-   __TEXT.__swift5_capture: 0x1ad0
-   __TEXT.__swift_as_entry: 0x144
--  __TEXT.__swift_as_cont: 0x1f0
--  __TEXT.__swift_as_ret: 0x134
-+  __TEXT.__swift_as_cont: 0x1f4
-+  __TEXT.__swift_as_ret: 0x138
-   __TEXT.__swift5_mpenum: 0x2c
--  __TEXT.__unwind_info: 0x6af0
--  __TEXT.__eh_frame: 0x31a8
-+  __TEXT.__unwind_info: 0x6b00
-+  __TEXT.__eh_frame: 0x3200
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x5600
-+  __DATA_CONST.__const: 0x5618
-   __DATA_CONST.__objc_classlist: 0xc28
-   __DATA_CONST.__objc_protolist: 0xa50
-   __DATA_CONST.__objc_imageinfo: 0x8
-
-   __DATA_CONST.__got: 0xd28
-   __AUTH_CONST.__const: 0x8998
-   __AUTH_CONST.__cfstring: 0x76c0
--  __AUTH_CONST.__objc_const: 0x59170
-+  __AUTH_CONST.__objc_const: 0x595b0
-   __AUTH_CONST.__objc_intobj: 0x360
-   __AUTH_CONST.__objc_arrayobj: 0x78
-   __AUTH_CONST.__auth_got: 0x1578
-   __AUTH.__objc_data: 0x76c0
-   __AUTH.__data: 0x24b0
-   __DATA.__objc_ivar: 0x8ac
--  __DATA.__data: 0x7720
-+  __DATA.__data: 0x7730
-   __DATA.__bss: 0x71a1
-   __DATA.__common: 0x38
-   __DATA_DIRTY.__objc_data: 0xe38
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 10889
--  Symbols:   23860
+-  Symbols:   21962
 +  Functions: 10894
-+  Symbols:   23867
-   CStrings:  3123
- 
++  Symbols:   21968
 Symbols:
 + _$s23LocalAuthenticationCore012LACCompanionB13ProviderDummyC11domainState3for10completionySo09LACDomainH7Request_p_ySDys11AnyHashableVypGSg_s5Error_pSgtctF031$sSo12NSDictionaryCSgSo7NSErrors13IeyByy_SDys11mn8VypGSgs5O12_pSgIeggg_TRSo0R0CSgSo0U0CSgIeyByy_Tf1nEn_nTf4dnn_n
 + _$s23LocalAuthenticationCore21LACPreboardControllerC20enableCurrentUseCase18withSecurePasscodey10Foundation4DataV_tYaKFTQ4_
@@ -99,7 +64,6 @@ Symbols:
 + _LACErrorSubcodeInterrupted
 + _LACPreboardUseCaseSoundEnrollment
 + ___swift_closure_destructor.25Tm
-+ _objc_msgSend$featureFlagPreboardProtectedVariablesEnabled
 - _$s23LocalAuthenticationCore012LACCompanionB13ProviderDummyC11domainState3for10completionySo09LACDomainH7Request_p_ySDys11AnyHashableVypGSg_s5Error_pSgtctF031$sSo12NSDictionaryCSgSo7NSErrors13IeyByy_SDys11mn8VypGSgs5O12_pSgIeggg_TRSo0R0CSgSo0U0CSgIeyByy_Tf1ncn_nTf4dnn_n
 - _$s23LocalAuthenticationCore21LACPreboardControllerC20enableCurrentUseCase18withSecurePasscodey10Foundation4DataV_tYaKFTY4_
 - _$s23LocalAuthenticationCore30LACAutoLockNotificationServiceC19notificationManager_012didRespondToF012fromCategory10withAction17completionHandlerySo12LACUNManager_p_S2SSgAJyyctF13$sIeyB_Ieg_TRIeyB_Tf1nnnncn_nTf4dnnnng_n

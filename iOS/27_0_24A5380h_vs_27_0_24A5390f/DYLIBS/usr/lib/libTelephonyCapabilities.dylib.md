@@ -2,56 +2,31 @@
 
 > `/usr/lib/libTelephonyCapabilities.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__DATA_CONST.__weak_got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__weak_auth_got`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x53694` | `0x53f64` | **`+0x8d0`** |
+| `__TEXT.__gcc_except_tab` | `0x89b0` | `0x8ac0` | **`+0x110`** |
+| `__TEXT.__cstring` | `0x49e6` | `0x4a54` | **`+0x6e`** |
+| `__TEXT.__unwind_info` | `0x3d28` | `0x3d78` | **`+0x50`** |
+| `__DATA_DIRTY.__bss` | `0x1868` | `0x18b0` | **`+0x48`** |
+| `__DATA_CONST.__const` | `0x11b8` | `0x11d0` | **`+0x18`** |
+| `__TEXT.__const` | `0x3ec4` | `0x3ed4` | **`+0x10`** |
+
+### Other Changes
 
 ```diff
 
 -6562.0.0.0.0
--  __TEXT.__text: 0x53694
 +6565.0.0.0.0
-+  __TEXT.__text: 0x53f64
-   __TEXT.__init_offsets: 0x5c
--  __TEXT.__const: 0x3ec4
--  __TEXT.__gcc_except_tab: 0x89b0
--  __TEXT.__cstring: 0x49e6
-+  __TEXT.__const: 0x3ed4
-+  __TEXT.__gcc_except_tab: 0x8ac0
-+  __TEXT.__cstring: 0x4a54
-   __TEXT.__oslogstring: 0x4c1
--  __TEXT.__unwind_info: 0x3d28
-+  __TEXT.__unwind_info: 0x3d78
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x11b8
-+  __DATA_CONST.__const: 0x11d0
-   __DATA_CONST.__weak_got: 0x8
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x178
 
-   __DATA.__bss: 0x4
-   __DATA.__common: 0x180
-   __DATA_DIRTY.__data: 0xb0
--  __DATA_DIRTY.__bss: 0x1868
-+  __DATA_DIRTY.__bss: 0x18b0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-
-   - /usr/lib/libTelephonyBasebandDynamic.dylib
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 1870
 -  Symbols:   3043
 -  CStrings:  711
 +  Functions: 1879
 +  Symbols:   3059
 +  CStrings:  714
- 
 Symbols:
 + GCC_except_table314
 + GCC_except_table317

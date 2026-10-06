@@ -2,7 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/StatusKit.framework/StatusKitAgent`
 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
+### Same-size Content Changes
+
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
+```diff
+
+-147.100.1.0.0
++149.100.1.0.0
+```

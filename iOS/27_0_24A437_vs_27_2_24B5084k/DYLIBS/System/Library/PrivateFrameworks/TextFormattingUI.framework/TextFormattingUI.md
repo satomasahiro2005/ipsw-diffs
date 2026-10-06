@@ -2,73 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/TextFormattingUI.framework/TextFormattingUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x663dc` | `0x66e78` | **`+0xa9c`** |
+| `__TEXT.__swift5_typeref` | `0x865a` | `0x8b06` | **`+0x4ac`** |
+| `__AUTH_CONST.__const` | `0x1f30` | `0x1ff0` | **`+0xc0`** |
+| `__TEXT.__const` | `0x5398` | `0x5448` | **`+0xb0`** |
+| `__DATA.__data` | `0x2368` | `0x23e0` | **`+0x78`** |
+| `__TEXT.__swift5_fieldmd` | `0xf04` | `0xf50` | **`+0x4c`** |
+| `__TEXT.__swift5_reflstr` | `0xb42` | `0xb82` | **`+0x40`** |
+| `__AUTH_CONST.__objc_const` | `0xb80` | `0xbb8` | **`+0x38`** |
+| `__TEXT.__constg_swiftt` | `0xfa8` | `0xfc4` | **`+0x1c`** |
+| `__AUTH_CONST.__auth_got` | `0x1110` | `0x10f8` | **`-0x18`** |
+| `__TEXT.__objc_methlist` | `0x42c` | `0x444` | **`+0x18`** |
+| `__DATA.__bss` | `0x2e40` | `0x2e30` | **`-0x10`** |
+| `__TEXT.__swift5_capture` | `0x4a8` | `0x4b8` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x1208` | `0x1218` | **`+0x10`** |
+| `__AUTH.__data` | `0x9e8` | `0x9f0` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x698` | `0x6a0` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x100` | `0x104` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -9127.0.84.1.116
--  __TEXT.__text: 0x642b8
--  __TEXT.__objc_methlist: 0x42c
--  __TEXT.__const: 0x5398
--  __TEXT.__swift5_typeref: 0x865a
--  __TEXT.__constg_swiftt: 0xfa8
 +9127.1.6.1.103
-+  __TEXT.__text: 0x64cbc
-+  __TEXT.__objc_methlist: 0x444
-+  __TEXT.__const: 0x5448
-+  __TEXT.__swift5_typeref: 0x8b06
-+  __TEXT.__constg_swiftt: 0xfc4
-   __TEXT.__swift5_builtin: 0x78
--  __TEXT.__swift5_reflstr: 0xb42
--  __TEXT.__swift5_fieldmd: 0xf04
-+  __TEXT.__swift5_reflstr: 0xb82
-+  __TEXT.__swift5_fieldmd: 0xf50
-   __TEXT.__swift5_assocty: 0x5b0
-   __TEXT.__cstring: 0xeab
--  __TEXT.__swift5_capture: 0x4a8
-+  __TEXT.__swift5_capture: 0x4b8
-   __TEXT.__oslogstring: 0xba
-   __TEXT.__swift5_proto: 0x14c
--  __TEXT.__swift5_types: 0x100
-+  __TEXT.__swift5_types: 0x104
-   __TEXT.__swift_as_entry: 0x8
-   __TEXT.__swift_as_ret: 0x4
-   __TEXT.__swift_as_cont: 0x4
--  __TEXT.__unwind_info: 0x1798
-+  __TEXT.__unwind_info: 0x17c0
-   __TEXT.__eh_frame: 0x508
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x698
-+  __DATA_CONST.__objc_selrefs: 0x6a0
-   __DATA_CONST.__objc_protorefs: 0x40
-   __DATA_CONST.__got: 0xae0
--  __AUTH_CONST.__const: 0x1f30
--  __AUTH_CONST.__objc_const: 0xb80
--  __AUTH_CONST.__auth_got: 0x1110
-+  __AUTH_CONST.__const: 0x1ff0
-+  __AUTH_CONST.__objc_const: 0xbb8
-+  __AUTH_CONST.__auth_got: 0x10f8
-   __AUTH.__objc_data: 0x3c0
--  __AUTH.__data: 0x9e8
--  __DATA.__data: 0x2368
-+  __AUTH.__data: 0x9f0
-+  __DATA.__data: 0x23e0
-   __DATA.__common: 0x388
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1868
--  Symbols:   1328
+-  Symbols:   1159
 +  Functions: 1884
-+  Symbols:   1339
-   CStrings:  98
- 
++  Symbols:   1169
 Symbols:
 + __PROPERTIES__TtC16TextFormattingUIP33_BDE70E073124A1E87C81AA7137722CAE16_TFUIHostingView
 + ___swift_closure_destructor.108Tm
@@ -87,7 +53,6 @@ Symbols:
 + _get_witness_table 7SwiftUI19_ConditionalContentVyAA08ModifiedD0VyAEy014TextFormattingB011TFComponentVyAEyAA4ViewPAAE9menuStyleyQrqd__AA04MenuK0Rd__lFQOyAA0L0VyAF11TFMenuLabelVyAF8TFSymbolVGAA7ForEachVySaySo06UITextgI10ControllerC5UIKitE0gK0VGSSAA6ToggleVyAA0F0VGGG_AF0mK0VQo_AA32_EnvironmentKeyTransformModifierVySbGGGAA14_PaddingLayoutVGA16_GACyAjAE14contentMargins__3forQrAA4EdgeO3SetV_12CoreGraphics7CGFloatVSgAA0D15MarginPlacementVtFQOyAjAEA19___A20_QrA24__A28_A30_tFQOyAjAE18scrollClipDisabledyQrSbFQOyAEyAjAE14scrollPosition2id6anchorQrAA7BindingVyqd__SgG_AA9UnitPointVSgtSHRd__lFQOyAEyAA06ScrollI0VyAjAE18scrollTargetLayout9isEnabledQrSb_tFQOyAA6HStackVyAUys18EnumeratedSequenceVyA_GSSAEyAEyAjAE06buttonK0yQrqd__AA06ButtonK0Rd__lFQOyAA6ButtonVyAEyAF6TFTextVAF06TFFontY033_E3EB2DC6766E7546A0387CD38A3BADCFLLVGG_AF25TFFormattingStylesControlV012FormatButtonK033_E3C94154172FB4A24F84D6358BD2AF73LLVQo_AA12_FrameLayoutVGAA023AccessibilityAttachmentY0VGGG_Qo_GAA20_GeometryGroupEffectVG_SSQo_AA017_AppearanceActionY0VG_Qo__Qo__Qo_AHyAEyAEyAjAEA19___A20_QrA24__A28_A30_tFQOyAjAEA19___A20_QrA24__A28_A30_tFQOyA84__Qo__Qo_A16_GAF0h10BackgroundY033_765D2D84B42F2E34C8687CE391E4C01FLLVGGGGAaIHPA18_AaIHPA17_AaIHPA14_AaIHPyHC_A16_AA0iY0HPyHCHC_A16_AAA98_HPyHCHC_A96_AaIHPqd__AaIHD2_A87_HO_A95_AaIHPyHCHCHC
 + _keypath_set.100Tm
 + _keypath_set.386Tm
-+ _objc_msgSend$_substituteKeyboardHeight
 + _symbolic _____ 16TextFormattingUI17TFComponentHeightO
 + _symbolic _____SgXo 16TextFormattingUI0aB5StateC
 + _symbolic _____yAAy_____y_____G_____ySbGG_____G 7SwiftUI15ModifiedContentV 014TextFormattingB08TFButtonV AD8TFSymbolV AA32_EnvironmentKeyTransformModifierV AA023AccessibilityAttachmentL0V

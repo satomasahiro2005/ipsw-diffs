@@ -2,49 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/AppleTracingSupportSymbolication.framework/AppleTracingSupportSymbolication`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1f12c` | `0x1f3a8` | **`+0x27c`** |
+| `__TEXT.__oslogstring` | `0x252` | `0x296` | **`+0x44`** |
+| `__TEXT.__cstring` | `0x6b9` | `0x6f6` | **`+0x3d`** |
+| `__TEXT.__gcc_except_tab` | `0x143c` | `0x1448` | **`+0xc`** |
+| `__DATA_CONST.__objc_imageinfo` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0xe78` | `0xe80` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1f12c
-+  __TEXT.__text: 0x1f3a8
-   __TEXT.__const: 0x588
--  __TEXT.__gcc_except_tab: 0x143c
--  __TEXT.__cstring: 0x6b9
--  __TEXT.__oslogstring: 0x252
--  __TEXT.__unwind_info: 0xe78
-+  __TEXT.__gcc_except_tab: 0x1448
-+  __TEXT.__cstring: 0x6f6
-+  __TEXT.__oslogstring: 0x296
-+  __TEXT.__unwind_info: 0xe80
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x520
-+  __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x18
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x380
+-196.0.0.0.0
++202.0.0.0.0
 
-   __DATA.__bss: 0x88
-   __DATA.__common: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 +  - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/CoreSymbolication.framework/CoreSymbolication
-   - /System/Library/PrivateFrameworks/LoggingSupport.framework/LoggingSupport
-   - /System/Library/PrivateFrameworks/ktrace.framework/ktrace
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
+
 -  Functions: 776
--  Symbols:   1983
+-  Symbols:   1241
 -  CStrings:  65
 +  - /usr/lib/libobjc.A.dylib
 +  Functions: 781
-+  Symbols:   1991
++  Symbols:   1248
 +  CStrings:  67
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
 Symbols:
 + GCC_except_table110
 + GCC_except_table113
@@ -132,5 +116,4 @@ Symbols:
 CStrings:
 + "[Symbolication] BulkSymbolication failed to produce results."
 + "[Symbolication] Failed to ingest BulkSymbolication JSON for uuid %s"
-
 ```

@@ -2,19 +2,20 @@
 
 > `/usr/libexec/NANDTaskScheduler`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfdb4` | `0xfdb8` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 849.0.11.0.0
--  __TEXT.__text: 0xfdb4
-+  __TEXT.__text: 0xfdb8
-   __TEXT.__auth_stubs: 0x810
-   __TEXT.__objc_stubs: 0x16a0
-   __TEXT.__objc_methlist: 0x4c4
+```text
 Functions:
 ~ sub_100008794 : 524 -> 528
 ```

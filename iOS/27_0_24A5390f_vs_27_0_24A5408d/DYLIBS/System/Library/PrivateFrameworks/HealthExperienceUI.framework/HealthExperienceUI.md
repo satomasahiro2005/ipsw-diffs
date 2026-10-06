@@ -2,102 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/HealthExperienceUI.framework/HealthExperienceUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x618b5c` | `0x617cac` | **`-0xeb0`** |
+| `__AUTH.__objc_data` | `0x1adc8` | `0x1b188` | **`+0x3c0`** |
+| `__TEXT.__const` | `0x32de4` | `0x32eb4` | **`+0xd0`** |
+| `__DATA.__data` | `0x11aa8` | `0x119e8` | **`-0xc0`** |
+| `__DATA_DIRTY.__objc_data` | `0x4df8` | `0x4eb8` | **`+0xc0`** |
+| `__AUTH_CONST.__objc_const` | `0x22e98` | `0x22f50` | **`+0xb8`** |
+| `__AUTH.__data` | `0x21198` | `0x21240` | **`+0xa8`** |
+| `__AUTH_CONST.__const` | `0x2b910` | `0x2b878` | **`-0x98`** |
+| `__TEXT.__cstring` | `0x1b8d1` | `0x1b841` | **`-0x90`** |
+| `__DATA.__bss` | `0x2a708` | `0x2a688` | **`-0x80`** |
+| `__TEXT.__swift5_reflstr` | `0x12eb1` | `0x12f31` | **`+0x80`** |
+| `__TEXT.__swift5_fieldmd` | `0x1208c` | `0x120e0` | **`+0x54`** |
+| `__TEXT.__objc_methlist` | `0x8a8c` | `0x8a3c` | **`-0x50`** |
+| `__DATA_CONST.__got` | `0x32a8` | `0x3270` | **`-0x38`** |
+| `__TEXT.__constg_swiftt` | `0x223e8` | `0x2241c` | **`+0x34`** |
+| `__AUTH_CONST.__auth_got` | `0x5238` | `0x5208` | **`-0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5458` | `0x5480` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x15f00` | `0x15ed8` | **`-0x28`** |
+| `__TEXT.__swift5_assocty` | `0x22f0` | `0x2308` | **`+0x18`** |
+| `__TEXT.__swift5_typeref` | `0xfff0` | `0xffd8` | **`-0x18`** |
+| `__DATA.__common` | `0xb80` | `0xb88` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x1118` | `0x1110` | **`-0x8`** |
+| `__TEXT.__eh_frame` | `0xcab4` | `0xcaac` | **`-0x8`** |
+| `__TEXT.__swift5_capture` | `0x5ad4` | `0x5adc` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x2794` | `0x2790` | **`-0x4`** |
+| `__TEXT.__swift_as_cont` | `0x324` | `0x328` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0x20c` | `0x210` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.0.67.2.1
--  __TEXT.__text: 0x618b5c
--  __TEXT.__objc_methlist: 0x8a8c
--  __TEXT.__const: 0x32de4
 +7027.0.72.2.5
-+  __TEXT.__text: 0x617cac
-+  __TEXT.__objc_methlist: 0x8a3c
-+  __TEXT.__const: 0x32eb4
-   __TEXT.__gcc_except_tab: 0x1e0
--  __TEXT.__cstring: 0x1b8d1
-+  __TEXT.__cstring: 0x1b841
-   __TEXT.__oslogstring: 0xcbd4
--  __TEXT.__constg_swiftt: 0x223e8
--  __TEXT.__swift5_typeref: 0xfff0
--  __TEXT.__swift5_reflstr: 0x12eb1
--  __TEXT.__swift5_fieldmd: 0x1208c
-+  __TEXT.__constg_swiftt: 0x2241c
-+  __TEXT.__swift5_typeref: 0xffd8
-+  __TEXT.__swift5_reflstr: 0x12f31
-+  __TEXT.__swift5_fieldmd: 0x120e0
-   __TEXT.__swift5_builtin: 0x71c
--  __TEXT.__swift5_assocty: 0x22f0
--  __TEXT.__swift5_proto: 0x2794
-+  __TEXT.__swift5_assocty: 0x2308
-+  __TEXT.__swift5_proto: 0x2790
-   __TEXT.__swift5_types: 0x14a0
--  __TEXT.__swift5_capture: 0x5ad4
-+  __TEXT.__swift5_capture: 0x5adc
-   __TEXT.__swift5_protos: 0x4d0
-   __TEXT.__swift5_mpenum: 0x120
--  __TEXT.__swift_as_entry: 0x20c
-+  __TEXT.__swift_as_entry: 0x210
-   __TEXT.__swift_as_ret: 0x184
--  __TEXT.__swift_as_cont: 0x324
--  __TEXT.__unwind_info: 0x15f00
--  __TEXT.__eh_frame: 0xcab4
-+  __TEXT.__swift_as_cont: 0x328
-+  __TEXT.__unwind_info: 0x15ed8
-+  __TEXT.__eh_frame: 0xcaac
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x31b8
--  __DATA_CONST.__objc_classlist: 0x1118
-+  __DATA_CONST.__objc_classlist: 0x1110
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x490
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5458
-+  __DATA_CONST.__objc_selrefs: 0x5480
-   __DATA_CONST.__objc_protorefs: 0x238
-   __DATA_CONST.__objc_superrefs: 0x100
-   __DATA_CONST.__objc_arraydata: 0x260
--  __DATA_CONST.__got: 0x32a8
--  __AUTH_CONST.__const: 0x2b910
-+  __DATA_CONST.__got: 0x3270
-+  __AUTH_CONST.__const: 0x2b878
-   __AUTH_CONST.__cfstring: 0x1600
--  __AUTH_CONST.__objc_const: 0x22e98
-+  __AUTH_CONST.__objc_const: 0x22f50
-   __AUTH_CONST.__objc_intobj: 0x270
-   __AUTH_CONST.__objc_arrayobj: 0x300
--  __AUTH_CONST.__auth_got: 0x5238
--  __AUTH.__objc_data: 0x1adc8
--  __AUTH.__data: 0x21198
-+  __AUTH_CONST.__auth_got: 0x5208
-+  __AUTH.__objc_data: 0x1b188
-+  __AUTH.__data: 0x21240
-   __DATA.__objc_ivar: 0x2e8
--  __DATA.__data: 0x11aa8
-+  __DATA.__data: 0x119e8
-   __DATA.__objc_stublist: 0xd0
--  __DATA.__bss: 0x2a708
--  __DATA.__common: 0xb80
--  __DATA_DIRTY.__objc_data: 0x4df8
-+  __DATA.__bss: 0x2a688
-+  __DATA.__common: 0xb88
-+  __DATA_DIRTY.__objc_data: 0x4eb8
-   __DATA_DIRTY.__data: 0x4250
-   __DATA_DIRTY.__bss: 0x7000
-   __DATA_DIRTY.__common: 0x170
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 35741
--  Symbols:   12070
+-  Symbols:   10005
 -  CStrings:  3280
 +  Functions: 35748
-+  Symbols:   12066
++  Symbols:   9996
 +  CStrings:  3279
- 
 Symbols:
 + _CGRectGetMidX
 + _CGRectGetMidY
@@ -108,17 +57,6 @@ Symbols:
 + ___swift_memcpy232_8
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA6IDViewVyAA07LabeledD0VyAA4TextVAA6HStackVyAA05TupleD0VyAA4ViewPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAoAEApqR_Qrqd___Sbyqd___qd__tctSQRd__lFQOyACyAoAE12keyboardTypeyQrSo010UIKeyboardP0VFQOyAA012_ConditionalD0VyAoAE7focused_6equalsQrAA10FocusStateV7BindingVyqd___G_qd__tSHRd__lFQOyAA0G5FieldVyAIG_SSSgQo_A5_G_Qo_AA30_EnvironmentKeyWritingModifierVyAA0G9AlignmentOGG_016HealthExperienceB020DataEntryNumberValueVQo__SSQo__AISgQPGGGSSGAA31AccessibilityAttachmentModifierVGAaNHPA25_AaNHPyHC_A27_AA0J8ModifierHPyHCHC
 + _get_witness_table 7SwiftUI4ViewRzlAA15NavigationStackVyAA0D4PathVAA06ScrollC6ReaderVyAaBPAAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAiAE20scrollBounceBehavior_4axesQrAA0gnO0V_AA4AxisO3SetVtFQOyAiAE18presentationSizingyQrqd__AA012PresentationT0Rd__lFQOyAiAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAiAEAwxY_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAiAEAwxY_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA08ModifiedL0VyA_yA_yA_yAiAE0J7Margins__3forQrAA4EdgeOASV_12CoreGraphics7CGFloatVSgAA0L15MarginPlacementVtFQOyA_yA_yAA4ListVys5NeverOA_yxAA31AccessibilityAttachmentModifierVGGAA24_BackgroundStyleModifierVyAA5ColorVGG016HealthExperienceB018BasicAlertModifierVG_Qo_AA30_EnvironmentKeyWritingModifierVyAA10FocusStateV7BindingVySSSg_GSgGGAA21_TraitWritingModifierVyAA26ListSectionSpacingTraitKeyVGGA31_yAA18ListSectionSpacingVSgGGAA25_AppearanceActionModifierVG_A25_25DataEntryCompositionValueVQo__A56_Qo__SbQo__AA04FormuT0VQo__Qo__AA05TupleL0VyAA0K4ItemVyytAiAE16keyboardShortcutyQrAA16KeyboardShortcutVFQOyA_yAA6ButtonVyAA5LabelVyAA4TextVAA5ImageVGGA16_G_Qo_G_A67_yytAiAEA68_yQrA70_FQOyA_yA81_AA32_EnvironmentKeyTransformModifierVySbGG_Qo_GQPGQo_GGAaBHPyHC
-+ _objc_msgSend$additionalSafeAreaInsets
-+ _objc_msgSend$intrinsicContentSize
-+ _objc_msgSend$isTwoColumnLayoutEnabled
-+ _objc_msgSend$layoutDirection
-+ _objc_msgSend$setAdditionalSafeAreaInsets:
-+ _objc_msgSend$setPaddingRemoved:
-+ _objc_msgSend$setSensitive:
-+ _objc_msgSend$setSubtitle:
-+ _objc_msgSend$setSubtitleTextAttributes:
-+ _objc_msgSend$subtitle
-+ _objc_msgSend$transitionWithView:duration:options:animations:completion:
 + _symbolic _____ 18HealthExperienceUI28SharingParticipantDataSourceC18PendingQueryResult33_56CDE48C26DAE3FEC4DA8A0E441A5CC1LLV
 + _symbolic _____ 18HealthExperienceUI30ProfileNavigationBarTitleModelC
 + _symbolic _____ 7SwiftUI17EnvironmentValuesV016HealthExperienceB0E20__Key_dataEntryFocus33_4ADE94BF2B1314EEBFF2EFA8715B0553LLV
@@ -158,12 +96,6 @@ Symbols:
 - _associated conformance 18HealthExperienceUI24DataEntryNumberValueViewV5FieldOSHAASQ
 - _get_witness_table 7SwiftUI15ModifiedContentVyAA07LabeledD0VyAA4TextVAA6HStackVyAA05TupleD0VyAA4ViewPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAmAEAnoP_Qrqd___Sbyqd___qd__tctSQRd__lFQOyACyACyAmAE12keyboardTypeyQrSo010UIKeyboardO0VFQOyAmAE12defaultFocus__8priorityQrAA0R5StateV7BindingVyqd___G_qd__AA07DefaultR18EvaluationPriorityVtSHRd__lFQOyAmAE7focused_6equalsQrAZ_qd__tSHRd__lFQOyAA0F5FieldVyAGG_016HealthExperienceB0020DataEntryNumberValueI0V5FieldOSgQo__A11_Qo__Qo_AA30_EnvironmentKeyWritingModifierVyAA0F9AlignmentOGGAA25_AppearanceActionModifierVG_A6_20DataEntryNumberValueVQo__SSQo__AGSgQPGGGAA31AccessibilityAttachmentModifierVGAaLHPA31_AaLHPAgaLHPyHC_A30_AaLHPyHCHC_A33_AA0I8ModifierHPyHCHC
 - _get_witness_table 7SwiftUI4ViewRzlAA15NavigationStackVyAA0D4PathVAA06ScrollC6ReaderVyAaBPAAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAiAE20scrollBounceBehavior_4axesQrAA0gnO0V_AA4AxisO3SetVtFQOyAiAE18presentationSizingyQrqd__AA012PresentationT0Rd__lFQOyAA012SubscriptionC0VySo20NSNotificationCenterC10FoundationE9PublisherVAiAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAiAEA2_A3_A4__Qrqd___Sbyqd___qd__tctSQRd__lFQOyAiAEA2_A3_A4__Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA08ModifiedL0VyA6_yA6_yA6_yAiAE0J7Margins__3forQrAA4EdgeOASV_12CoreGraphics7CGFloatVSgAA0L15MarginPlacementVtFQOyA6_yA6_yAA4ListVys5NeverOAA05TupleL0VyA6_yAA6IDViewVyxAA9NamespaceV2IDVGAA31AccessibilityAttachmentModifierVG_A25_yAiAE16listRowSeparator_5edgesQrAA10VisibilityO_AA12VerticalEdgeOASVtFQOyA6_yA6_yA6_yAA5ColorVAA12_FrameLayoutVGAA21_TraitWritingModifierVyAA21ListRowInsetsTraitKeyVGGA47_yAA25ListRowBackgroundTraitKeyVGG_Qo_A29_GQPGGAA24_BackgroundStyleModifierVyA42_GG016HealthExperienceB018BasicAlertModifierVG_Qo_AA30_EnvironmentKeyWritingModifierVyA14_GGA47_yAA26ListSectionSpacingTraitKeyVGGA70_yAA18ListSectionSpacingVSgGGAA25_AppearanceActionModifierVG_A64_25DataEntryCompositionValueVQo__A86_Qo__SbQo_G_AA04FormuT0VQo__Qo__A23_yAA0K4ItemVyytAiAE16keyboardShortcutyQrAA16KeyboardShortcutVFQOyA6_yAA6ButtonVyAA5LabelVyAA4TextVAA5ImageVGGA32_G_Qo_G_A96_yytAiAEA97_yQrA99_FQOyA6_yA110_AA32_EnvironmentKeyTransformModifierVySbGG_Qo_GQPGQo_GGAaBHPyHC
-- _objc_msgSend$_setPaddingRemoved:
-- _objc_msgSend$alpha
-- _objc_msgSend$setHeight:
-- _objc_msgSend$setHeightShouldBeIncreasedByTabBarHeight:
-- _objc_msgSend$setHideStandardTitle:
-- _objc_msgSend$titleView
 - _symbolic So25_UINavigationBarTitleViewC
 - _symbolic _____ 16HealthExperience23ProfileImageInformationC
 - _symbolic _____ 18HealthExperienceUI23TitleWithSubHeadingViewC

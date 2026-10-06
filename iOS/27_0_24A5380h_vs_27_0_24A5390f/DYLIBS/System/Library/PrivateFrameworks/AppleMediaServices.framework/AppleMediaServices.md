@@ -2,135 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/AppleMediaServices.framework/AppleMediaServices`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_protos`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__lazy_load_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__DATA_DIRTY.__objc_ivar`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x81c848` | `0x81f38c` | **`+0x2b44`** |
+| `__TEXT.__unwind_info` | `0x142c0` | `0x14730` | **`+0x470`** |
+| `__AUTH_CONST.__objc_const` | `0x40300` | `0x406a0` | **`+0x3a0`** |
+| `__TEXT.__oslogstring` | `0x34463` | `0x34709` | **`+0x2a6`** |
+| `__TEXT.__objc_methlist` | `0x248dc` | `0x24b34` | **`+0x258`** |
+| `__AUTH_CONST.__cfstring` | `0x23c20` | `0x23e20` | **`+0x200`** |
+| `__AUTH_CONST.__const` | `0x31640` | `0x317f0` | **`+0x1b0`** |
+| `__TEXT.__eh_frame` | `0x1a250` | `0x1a0d4` | **`-0x17c`** |
+| `__TEXT.__cstring` | `0x2e878` | `0x2e9af` | **`+0x137`** |
+| `__DATA_CONST.__objc_selrefs` | `0x10070` | `0x10178` | **`+0x108`** |
+| `__DATA_CONST.__const` | `0xd3c0` | `0xd4b8` | **`+0xf8`** |
+| `__AUTH.__objc_data` | `0xaa98` | `0xab20` | **`+0x88`** |
+| `__DATA.__data` | `0x8354` | `0x83dc` | **`+0x88`** |
+| `__TEXT.__swift5_capture` | `0x46b8` | `0x4644` | **`-0x74`** |
+| `__TEXT.__gcc_except_tab` | `0x536c` | `0x53b0` | **`+0x44`** |
+| `__TEXT.__swift5_reflstr` | `0x4993` | `0x4953` | **`-0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x2710` | `0x2738` | **`+0x28`** |
+| `__DATA.__objc_ivar` | `0x1a14` | `0x1a3c` | **`+0x28`** |
+| `__TEXT.__swift5_typeref` | `0x7dcb` | `0x7df1` | **`+0x26`** |
+| `__DATA_DIRTY.__data` | `0x2c08` | `0x2be8` | **`-0x20`** |
+| `__TEXT.__swift_as_cont` | `0x1514` | `0x14f4` | **`-0x20`** |
+| `__TEXT.__constg_swiftt` | `0x63f8` | `0x640c` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x1610` | `0x1620` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x62d0` | `0x62e0` | **`+0x10`** |
+| `__TEXT.__const` | `0x5b048` | `0x5b058` | **`+0x10`** |
+| `__TEXT.__swift_as_ret` | `0xb04` | `0xaf4` | **`-0x10`** |
+| `__TEXT.__swift_as_entry` | `0x918` | `0x90c` | **`-0xc`** |
+| `__AUTH.__data` | `0x30a8` | `0x30b0` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x1ac8` | `0x1ad0` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x498` | `0x4a0` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0xd20` | `0xd28` | **`+0x8`** |
+| `__DATA.__common` | `0xb68` | `0xb64` | **`-0x4`** |
+
+### Other Changes
 
 ```diff
 
 -10.0.50.0.0
--  __TEXT.__text: 0x81c848
 +10.0.54.0.0
-+  __TEXT.__text: 0x81f38c
-   __TEXT.__delay_stubs: 0x40
-   __TEXT.__delay_helper: 0x134
-   __TEXT.__lazy_helpers: 0x4028
--  __TEXT.__objc_methlist: 0x248dc
--  __TEXT.__const: 0x5b048
-+  __TEXT.__objc_methlist: 0x24b34
-+  __TEXT.__const: 0x5b058
-   __TEXT.__dlopen_cstrs: 0x990
--  __TEXT.__cstring: 0x2e878
--  __TEXT.__swift5_typeref: 0x7dcb
--  __TEXT.__swift5_reflstr: 0x4993
-+  __TEXT.__cstring: 0x2e9af
-+  __TEXT.__swift5_typeref: 0x7df1
-+  __TEXT.__swift5_reflstr: 0x4953
-   __TEXT.__swift5_assocty: 0x10f8
--  __TEXT.__constg_swiftt: 0x63f8
-+  __TEXT.__constg_swiftt: 0x640c
-   __TEXT.__swift5_builtin: 0x474
-   __TEXT.__swift5_fieldmd: 0x621c
-   __TEXT.__swift5_proto: 0x1414
-   __TEXT.__swift5_types: 0x784
--  __TEXT.__swift_as_entry: 0x918
--  __TEXT.__swift_as_ret: 0xb04
--  __TEXT.__swift_as_cont: 0x1514
--  __TEXT.__swift5_capture: 0x46b8
-+  __TEXT.__swift_as_entry: 0x90c
-+  __TEXT.__swift_as_ret: 0xaf4
-+  __TEXT.__swift_as_cont: 0x14f4
-+  __TEXT.__swift5_capture: 0x4644
-   __TEXT.__swift5_mpenum: 0x8c
-   __TEXT.__swift5_protos: 0x120
--  __TEXT.__oslogstring: 0x34463
--  __TEXT.__gcc_except_tab: 0x536c
-+  __TEXT.__oslogstring: 0x34709
-+  __TEXT.__gcc_except_tab: 0x53b0
-   __TEXT.__ustring: 0x1b2
--  __TEXT.__unwind_info: 0x142c0
--  __TEXT.__eh_frame: 0x1a250
-+  __TEXT.__unwind_info: 0x14730
-+  __TEXT.__eh_frame: 0x1a0d4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xd3c0
--  __DATA_CONST.__objc_classlist: 0x1610
-+  __DATA_CONST.__const: 0xd4b8
-+  __DATA_CONST.__objc_classlist: 0x1620
-   __DATA_CONST.__objc_catlist: 0xe8
--  __DATA_CONST.__objc_protolist: 0x498
-+  __DATA_CONST.__objc_protolist: 0x4a0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x10070
-+  __DATA_CONST.__objc_selrefs: 0x10178
-   __DATA_CONST.__objc_protorefs: 0x248
--  __DATA_CONST.__objc_superrefs: 0xd20
-+  __DATA_CONST.__objc_superrefs: 0xd28
-   __DATA_CONST.__objc_arraydata: 0x5f8
--  __DATA_CONST.__got: 0x1ac8
--  __AUTH_CONST.__const: 0x31640
--  __AUTH_CONST.__cfstring: 0x23c20
--  __AUTH_CONST.__objc_const: 0x40300
-+  __DATA_CONST.__got: 0x1ad0
-+  __AUTH_CONST.__const: 0x317f0
-+  __AUTH_CONST.__cfstring: 0x23e20
-+  __AUTH_CONST.__objc_const: 0x406a0
-   __AUTH_CONST.__lazy_load_got: 0x5f8
-   __AUTH_CONST.__objc_intobj: 0xcf0
-   __AUTH_CONST.__objc_arrayobj: 0x180
-   __AUTH_CONST.__objc_dictobj: 0x118
--  __AUTH_CONST.__auth_got: 0x2710
--  __AUTH.__objc_data: 0xaa98
--  __AUTH.__data: 0x30a8
--  __DATA.__objc_ivar: 0x1a14
--  __DATA.__data: 0x8354
-+  __AUTH_CONST.__auth_got: 0x2738
-+  __AUTH.__objc_data: 0xab20
-+  __AUTH.__data: 0x30b0
-+  __DATA.__objc_ivar: 0x1a3c
-+  __DATA.__data: 0x83dc
-   __DATA.__bss: 0x20050
--  __DATA.__common: 0xb68
-+  __DATA.__common: 0xb64
-   __DATA_DIRTY.__objc_ivar: 0x710
-   __DATA_DIRTY.__objc_data: 0x5658
--  __DATA_DIRTY.__data: 0x2c08
--  __DATA_DIRTY.__bss: 0x62d0
-+  __DATA_DIRTY.__data: 0x2be8
-+  __DATA_DIRTY.__bss: 0x62e0
-   __DATA_DIRTY.__common: 0x98
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 31053
--  Symbols:   32816
+-  Symbols:   26348
 -  CStrings:  9301
 +  Functions: 31099
-+  Symbols:   32926
++  Symbols:   26428
 +  CStrings:  9325
- 
 Symbols:
 + +[ACAccount(AppleMediaServices) _ams_storageForDomain:]
 + +[AMSBagNetworkTask _expirationDateForInterval:now:]
@@ -258,48 +179,6 @@ Symbols:
 + ___block_descriptor_80_e8_32s40s48s56s64s_e46_"AMSPromise"24?0"AMSURLResult"8"NSError"16ls32l8s40l8s48l8s56l8s64l8
 + ___block_descriptor_89_e8_32s40s48s56s64s72s_e41_"AMSPromise"24?0"NSArray"8"NSError"16ls32l8s40l8s48l8s56l8s64l8s72l8
 + _flat unique So23AMSLocalAuthHeaderNames_p
-+ _objc_msgSend$_ams_storageForDomain:
-+ _objc_msgSend$_attestationStyleForBiometricsEnabled:passcodeEnabled:
-+ _objc_msgSend$_bundleFactsForIdentifier:
-+ _objc_msgSend$_cacheBundleFacts:forIdentifier:
-+ _objc_msgSend$_cachedBundleFactsForIdentifier:
-+ _objc_msgSend$_computeCurrentProcessBundleFacts
-+ _objc_msgSend$_credentialAccountForPaymentAccount:
-+ _objc_msgSend$_currentProcessBundleFacts
-+ _objc_msgSend$_ensureAllPropertiesResolved
-+ _objc_msgSend$_equalityFieldsSnapshot
-+ _objc_msgSend$_expirationDateForInterval:now:
-+ _objc_msgSend$_launchServicesBundleFactsForIdentifier:
-+ _objc_msgSend$_mergedStyleDictionaryFromOuter:inner:
-+ _objc_msgSend$_nonKeyHeadersWithAccount:headerNames:state:signatureResult:
-+ _objc_msgSend$_promiseResultForURLResult:error:queryItems:responseStorefront:account:
-+ _objc_msgSend$_resolveMappedPropertiesIfNeededLocked
-+ _objc_msgSend$_resolveRecordPropertiesIfNeededLocked
-+ _objc_msgSend$_selectedStorefrontForResponseStorefront:queryItems:
-+ _objc_msgSend$_shouldCancelInFlightTaskForError:
-+ _objc_msgSend$_shouldRetryForStorefrontChangeWithRequestStorefront:responseStorefront:
-+ _objc_msgSend$_signingErrorFromResult:encodingError:
-+ _objc_msgSend$_stateValueForHeaderNames:account:
-+ _objc_msgSend$ams_didAcknowledgeBundleHolderPrivacyAcknowledgementOnDeviceInStorageDomain:
-+ _objc_msgSend$ams_isExpiredForCookieExpiry:asOf:
-+ _objc_msgSend$ams_setDidAcknowledgeBundleHolderPrivacyAcknowledgementOnDevice:inStorageDomain:
-+ _objc_msgSend$ams_simpleProfileIdentifiers
-+ _objc_msgSend$buyParamsSnapshot
-+ _objc_msgSend$expandableInfo
-+ _objc_msgSend$identities
-+ _objc_msgSend$identitySource
-+ _objc_msgSend$initWithBundleURL:executableName:localizedName:bundleVersion:clientVersion:
-+ _objc_msgSend$initWithTitle:info:clientInfo:
-+ _objc_msgSend$invalidateMediaTokenPromise:
-+ _objc_msgSend$invalidatePATMediaTokenPromise
-+ _objc_msgSend$pageUserInteractiveTime
-+ _objc_msgSend$roundBytesToNearestTens:
-+ _objc_msgSend$setBuyParamsSnapshot:
-+ _objc_msgSend$setCachedMediaTokenPromise:patBasedToken:
-+ _objc_msgSend$setPageUserInteractiveTime:
-+ _objc_msgSend$shouldSkipCardEnrollmentForWalletBiometricsCheck:walletBiometricsEnabled:
-+ _objc_msgSend$signatureHeaderNamesFor:
-+ _objc_msgSend$supportsPasscodePurchaseWithAttestationStyle:
 + _symbolic _____ 18AppleMediaServices20AssetsJetpackFetcherO
 + _symbolic ______p 18AppleMediaServices20LocalAuthHeaderNamesP
 - +[ACAccount(AppleMediaServices) _ams_storage]
@@ -349,18 +228,6 @@ Symbols:
 - ___block_descriptor_72_e8_32s40s48s56s_e34_"AMSPromise"16?0"AMSURLResult"8ls32l8s40l8s48l8s56l8
 - ___block_descriptor_88_e8_32s40s48s56s64s72s_e41_"AMSPromise"24?0"NSArray"8"NSError"16ls32l8s40l8s48l8s56l8s64l8s72l8
 - _kCFBundleIdentifierKey
-- _objc_msgSend$_ams_storage
-- _objc_msgSend$_cacheProcessInfo:
-- _objc_msgSend$_cachedProcessInfoForIdentifier:
-- _objc_msgSend$_nonKeyHeadersWithAccount:headerNames:signatureResult:
-- _objc_msgSend$_roundTransferBytesToNearestTens:
-- _objc_msgSend$_setComputedPropertiesForBundleIdentifier:
-- _objc_msgSend$ams_isExpiredCookieExpiresValue:asOfDate:
-- _objc_msgSend$copyPropertiesFrom:to:
-- _objc_msgSend$downloadTaskWithRequest:completionHandler:
-- _objc_msgSend$invalidatePATMediaToken
-- _objc_msgSend$partnerHeader
-- _objc_msgSend$setExecutableName:
 - _symbolic _____ 18AppleMediaServices20AssetsJetpackFetcherC
 CStrings:
 + " | selectedProfile = %@"

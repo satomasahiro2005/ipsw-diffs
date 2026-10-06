@@ -2,20 +2,21 @@
 
 > `/usr/bin/footprint`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x215c0` | `0x215c8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__const`
 - `__TEXT.__objc_methlist`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
 
-```diff
+### Other Changes
 
- 365.0.0.0.0
--  __TEXT.__text: 0x215c0
-+  __TEXT.__text: 0x215c8
-   __TEXT.__auth_stubs: 0xcf0
-   __TEXT.__objc_stubs: 0x2560
-   __TEXT.__objc_methlist: 0x131c
+```text
 Functions:
 ~ -[FPUserProcess _enumerateDispositionChunksWithStartAddr:pagesToQuery:block:] : 392 -> 400
 ~ ___33-[FPUserProcess _gatherImageData]_block_invoke_2 : 1576 -> 1584

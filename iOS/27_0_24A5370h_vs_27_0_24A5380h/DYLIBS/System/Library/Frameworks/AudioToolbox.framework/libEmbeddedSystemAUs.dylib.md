@@ -2,59 +2,33 @@
 
 > `/System/Library/Frameworks/AudioToolbox.framework/libEmbeddedSystemAUs.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd3020` | `0xd11c8` | **`-0x1e58`** |
+| `__TEXT.__realtime` | `0x36888` | `0x385d8` | **`+0x1d50`** |
+| `__DATA.__data` | `0x7d0` | `0x9c8` | **`+0x1f8`** |
+| `__DATA_DIRTY.__data` | `0x218` | `0x20` | **`-0x1f8`** |
+| `__DATA.__bss` | `0x640` | `0x7b0` | **`+0x170`** |
+| `__DATA_DIRTY.__bss` | `0x2d0` | `0x160` | **`-0x170`** |
+| `__TEXT.__oslogstring` | `0xc0c0` | `0xc10c` | **`+0x4c`** |
+| `__TEXT.__cstring` | `0xa09a` | `0xa0a9` | **`+0xf`** |
+| `__TEXT.__unwind_info` | `0x46d8` | `0x46d0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xd3020
--  __TEXT.__realtime: 0x36888
-+  __TEXT.__text: 0xd11c8
-+  __TEXT.__realtime: 0x385d8
-   __TEXT.__const: 0xb344
-   __TEXT.__dlopen_cstrs: 0x2c1
-   __TEXT.__gcc_except_tab: 0x7718
--  __TEXT.__cstring: 0xa09a
--  __TEXT.__oslogstring: 0xc0c0
--  __TEXT.__unwind_info: 0x46d8
-+  __TEXT.__cstring: 0xa0a9
-+  __TEXT.__oslogstring: 0xc10c
-+  __TEXT.__unwind_info: 0x46d0
-   __TEXT.__eh_frame: 0x108
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0xe68
+-1626.30.0.0.0
++1633.1.0.0.0
 
-   __AUTH_CONST.__cfstring: 0x3960
-   __AUTH_CONST.__weak_auth_got: 0x40
-   __AUTH_CONST.__auth_got: 0x11d8
--  __DATA.__data: 0x7d0
--  __DATA.__bss: 0x640
--  __DATA_DIRTY.__data: 0x218
--  __DATA_DIRTY.__bss: 0x2d0
-+  __DATA.__data: 0x9c8
-+  __DATA.__bss: 0x7b0
-+  __DATA_DIRTY.__data: 0x20
-+  __DATA_DIRTY.__bss: 0x160
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 3964
--  Symbols:   9665
--  CStrings:  2415
+-  Symbols:   6147
+-  CStrings:  1957
 +  Functions: 3966
-+  Symbols:   9562
-+  CStrings:  2416
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
++  Symbols:   6149
++  CStrings:  1958
 Symbols:
 + GCC_except_table1011
 + GCC_except_table1017
@@ -980,5 +954,4 @@ CStrings:
 + "%25s:%-5d AUSpatializationHost (%p): %s rejected MaximumFramesPerSlice=%u (err %d); clamping host cap to %u to keep host ≤ inner.\n"
 + "AUSpatialMixer"
 - "%25s:%-5d RefCounted::Unref(this = %p) count going to %d"
-
 ```

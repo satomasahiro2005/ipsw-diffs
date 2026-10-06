@@ -2,106 +2,59 @@
 
 > `/System/Library/PrivateFrameworks/HealthPluginHost.framework/HealthPluginHost`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3116c` | `0x416b0` | **`+0x10544`** |
+| `__DATA.__bss` | `0xd20` | `0x1920` | **`+0xc00`** |
+| `__AUTH_CONST.__const` | `0x13f8` | `0x1d70` | **`+0x978`** |
+| `__TEXT.__const` | `0x19b0` | `0x2170` | **`+0x7c0`** |
+| `__TEXT.__eh_frame` | `0xae8` | `0x1240` | **`+0x758`** |
+| `__TEXT.__unwind_info` | `0xc48` | `0x1040` | **`+0x3f8`** |
+| `__AUTH.__data` | `0x328` | `0x710` | **`+0x3e8`** |
+| `__AUTH_CONST.__objc_const` | `0x1320` | `0x16f0` | **`+0x3d0`** |
+| `__DATA.__data` | `0x418` | `0x770` | **`+0x358`** |
+| `__AUTH_CONST.__auth_got` | `0xf70` | `0x12b0` | **`+0x340`** |
+| `__TEXT.__swift5_capture` | `0x40c` | `0x728` | **`+0x31c`** |
+| `__TEXT.__swift5_typeref` | `0x95a` | `0xbf3` | **`+0x299`** |
+| `__TEXT.__objc_methlist` | `0xc0` | `0x2f0` | **`+0x230`** |
+| `__TEXT.__oslogstring` | `0x109b` | `0x12b0` | **`+0x215`** |
+| `__TEXT.__swift5_fieldmd` | `0x760` | `0x968` | **`+0x208`** |
+| `__TEXT.__constg_swiftt` | `0xd6c` | `0xf34` | **`+0x1c8`** |
+| `__AUTH.__objc_data` | `0x3c0` | `0x528` | **`+0x168`** |
+| `__TEXT.__swift5_reflstr` | `0x771` | `0x87a` | **`+0x109`** |
+| `__DATA_DIRTY.__data` | `0x1338` | `0x1230` | **`-0x108`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1b8` | `0x268` | **`+0xb0`** |
+| `__DATA_DIRTY.__objc_data` | `0x4f0` | `0x560` | **`+0x70`** |
+| `__TEXT.__swift5_proto` | `0xfc` | `0x168` | **`+0x6c`** |
+| `__TEXT.__swift5_assocty` | `0xd0` | `0x128` | **`+0x58`** |
+| `__TEXT.__cstring` | `0x8b5` | `0x909` | **`+0x54`** |
+| `__TEXT.__swift_as_cont` | `0x20` | `0x74` | **`+0x54`** |
+| `__TEXT.__swift_as_ret` | `0x14` | `0x44` | **`+0x30`** |
+| `__TEXT.__swift5_types` | `0xa8` | `0xd0` | **`+0x28`** |
+| `__TEXT.__swift_as_entry` | `0x14` | `0x3c` | **`+0x28`** |
+| `__DATA_CONST.__objc_protolist` | `0x38` | `0x58` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x78` | `0x90` | **`+0x18`** |
+| `__DATA.__common` | `0x70` | `0x80` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x20` | `0x30` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `0x14` | `0x20` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
 -7027.0.72.2.7
--  __TEXT.__text: 0x2f564
--  __TEXT.__objc_methlist: 0xc0
--  __TEXT.__const: 0x19b0
--  __TEXT.__swift5_typeref: 0x95a
--  __TEXT.__swift5_reflstr: 0x771
--  __TEXT.__swift5_assocty: 0xd0
--  __TEXT.__constg_swiftt: 0xd6c
--  __TEXT.__swift5_fieldmd: 0x760
 +7027.1.36.2.7
-+  __TEXT.__text: 0x3ea44
-+  __TEXT.__objc_methlist: 0x2f0
-+  __TEXT.__const: 0x2170
-+  __TEXT.__swift5_typeref: 0xbf3
-+  __TEXT.__swift5_reflstr: 0x87a
-+  __TEXT.__swift5_assocty: 0x128
-+  __TEXT.__constg_swiftt: 0xf34
-+  __TEXT.__swift5_fieldmd: 0x968
-   __TEXT.__swift5_builtin: 0x28
--  __TEXT.__swift5_proto: 0xfc
--  __TEXT.__swift5_types: 0xa8
--  __TEXT.__cstring: 0x8b5
--  __TEXT.__oslogstring: 0x109b
--  __TEXT.__swift_as_entry: 0x14
--  __TEXT.__swift_as_ret: 0x14
--  __TEXT.__swift_as_cont: 0x20
--  __TEXT.__swift5_capture: 0x40c
--  __TEXT.__swift5_protos: 0x14
--  __TEXT.__unwind_info: 0xff8
--  __TEXT.__eh_frame: 0xae8
-+  __TEXT.__swift5_proto: 0x168
-+  __TEXT.__swift5_types: 0xd0
-+  __TEXT.__cstring: 0x909
-+  __TEXT.__oslogstring: 0x12b0
-+  __TEXT.__swift_as_entry: 0x3c
-+  __TEXT.__swift_as_ret: 0x44
-+  __TEXT.__swift_as_cont: 0x74
-+  __TEXT.__swift5_capture: 0x728
-+  __TEXT.__swift5_protos: 0x20
-+  __TEXT.__unwind_info: 0x14d8
-+  __TEXT.__eh_frame: 0x1240
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x140
--  __DATA_CONST.__objc_classlist: 0x78
--  __DATA_CONST.__objc_protolist: 0x38
-+  __DATA_CONST.__objc_classlist: 0x90
-+  __DATA_CONST.__objc_protolist: 0x58
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1b8
--  __DATA_CONST.__objc_protorefs: 0x20
-+  __DATA_CONST.__objc_selrefs: 0x268
-+  __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x13f8
--  __AUTH_CONST.__objc_const: 0x1320
--  __AUTH_CONST.__auth_got: 0xf70
--  __AUTH.__objc_data: 0x3c0
--  __AUTH.__data: 0x328
--  __DATA.__data: 0x418
-+  __AUTH_CONST.__const: 0x1d70
-+  __AUTH_CONST.__objc_const: 0x16f0
-+  __AUTH_CONST.__auth_got: 0x12b0
-+  __AUTH.__objc_data: 0x528
-+  __AUTH.__data: 0x710
-+  __DATA.__data: 0x770
-   __DATA.__objc_stublist: 0x58
--  __DATA.__common: 0x70
--  __DATA_DIRTY.__objc_data: 0x4f0
--  __DATA_DIRTY.__data: 0x1338
-+  __DATA.__common: 0x80
-+  __DATA_DIRTY.__objc_data: 0x560
-+  __DATA_DIRTY.__data: 0x1230
-   __DATA_DIRTY.__common: 0xa8
-   __DATA_DIRTY.__bss: 0x1000
-   - /System/Library/Frameworks/Combine.framework/Combine
 
-   - /System/Library/Frameworks/HealthKit.framework/HealthKit
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/Frameworks/UserNotifications.framework/UserNotifications
 +  - /System/Library/Frameworks/WeatherKit.framework/WeatherKit
-   - /System/Library/Frameworks/_LocationEssentials.framework/_LocationEssentials
-   - /System/Library/PrivateFrameworks/HealthAppHealthDaemonSupport.framework/HealthAppHealthDaemonSupport
-   - /System/Library/PrivateFrameworks/HealthAppServices.framework/HealthAppServices
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1168
--  Symbols:   624
+-  Symbols:   576
 -  CStrings:  116
 +  Functions: 1531
-+  Symbols:   727
++  Symbols:   676
 +  CStrings:  128
- 
 Symbols:
 + _CFAbsoluteTimeGetCurrent
 + _OBJC_CLASS_$_HKDaemonProxyProvider
@@ -161,16 +114,6 @@ Symbols:
 + _associated conformance 16HealthPluginHost18WeatherInputSignalC6AnchorV5ValueV10CodingKeys33_6A6892102F702143915DEC412214F53CLLOs0I3KeyAAs23CustomStringConvertible
 + _associated conformance 16HealthPluginHost18WeatherInputSignalC6AnchorV5ValueV10CodingKeys33_6A6892102F702143915DEC412214F53CLLOs0I3KeyAAs28CustomDebugStringConvertible
 + _flat unique So24HealthPluginHostProtocol_p
-+ _objc_msgSend$addChild:withPendingUnitCount:
-+ _objc_msgSend$distanceFromLocation:
-+ _objc_msgSend$fetchProxyWithHandler:errorHandler:
-+ _objc_msgSend$handleJournaledSharingEntries:completion:
-+ _objc_msgSend$initWithConnection:serviceIdentifier:exportedObject:
-+ _objc_msgSend$invalidateStoreCache
-+ _objc_msgSend$isCancelled
-+ _objc_msgSend$progressWithTotalUnitCount:
-+ _objc_msgSend$runLaunchGenerationIfIdleWithCompletion:
-+ _objc_msgSend$startInteractiveFeedItemGenerationWithCompletion:
 + _swift_continuation_await
 + _swift_continuation_init
 + _swift_cvw_initStructMetadataWithLayoutString
@@ -231,13 +174,6 @@ Symbols:
 - _OBJC_CLASS_$_NSXPCConnection
 - ___swift_closure_destructorTm
 - ___swift_memcpy17_8
-- _objc_msgSend$initWithMachServiceName:options:
-- _objc_msgSend$performBlock:
-- _objc_msgSend$remoteObjectProxyWithErrorHandler:
-- _objc_msgSend$resume
-- _objc_msgSend$setInterruptionHandler:
-- _objc_msgSend$setInvalidationHandler:
-- _objc_msgSend$setRemoteObjectInterface:
 - _swift_retain_x8
 - _symbolic Ieg_Sg
 - _symbolic SbIegy_

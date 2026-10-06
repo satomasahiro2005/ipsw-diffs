@@ -2,36 +2,34 @@
 
 > `/System/DriverKit/usr/lib/system/libdispatch_debug.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbb96c` | `0xbba8c` | **`+0x120`** |
+| `__TEXT.__unwind_info` | `0x8c8` | `0x8d0` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__AUTH.__data`
+- `__AUTH_CONST.__auth_got`
+- `__AUTH_CONST.__const`
+- `__DATA_CONST.__const`
 - `__TEXT.__const`
 - `__TEXT.__dof_dispatch`
 - `__TEXT.__dof_voucher`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__auth_got`
-- `__AUTH.__data`
+
+### Other Changes
 
 ```diff
 
 -1605.0.2.0.0
--  __TEXT.__text: 0xb87a8
 +1605.40.4.0.0
-+  __TEXT.__text: 0xb88c8
-   __TEXT.__const: 0x54b
-   __TEXT.__cstring: 0x8a15
-   __TEXT.__dof_dispatch: 0x288c
 
-   - /System/DriverKit/usr/lib/system/libsystem_malloc.dylib
-   - /System/DriverKit/usr/lib/system/libsystem_platform.dylib
-   - /System/DriverKit/usr/lib/system/libsystem_pthread.dylib
 -  Functions: 1170
 -  Symbols:   1589
 +  Functions: 1171
 +  Symbols:   1590
-   CStrings:  793
- 
 Symbols:
 + _firehose_mach_port_allocate_connection_port
 Functions:

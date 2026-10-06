@@ -2,78 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/HealthIntelligence.framework/HealthIntelligence`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__objc_const` | `0x160` | `—` | **`-0x160`** |
+| `__AUTH.__objc_data` | `0xd0` | `—` | **`-0xd0`** |
+| `__TEXT.__swift5_typeref` | `0x3e9` | `0x360` | **`-0x89`** |
+| `__DATA.__bss` | `0x95b8` | `0x9638` | **`+0x80`** |
+| `__TEXT.__oslogstring` | `0xd4` | `0x64` | **`-0x70`** |
+| `__AUTH_CONST.__auth_got` | `0xb18` | `0xab8` | **`-0x60`** |
+| `__TEXT.__objc_methlist` | `0x5c` | `—` | **`-0x5c`** |
+| `__DATA_CONST.__objc_selrefs` | `0xf0` | `0xa0` | **`-0x50`** |
+| `__TEXT.__constg_swiftt` | `0x884` | `0x838` | **`-0x4c`** |
+| `__TEXT.__swift5_fieldmd` | `0x60c` | `0x5d0` | **`-0x3c`** |
+| `__AUTH.__data` | `0xc90` | `0xc68` | **`-0x28`** |
+| `__DATA.__data` | `0xd38` | `0xd10` | **`-0x28`** |
+| `__TEXT.__unwind_info` | `0x1380` | `0x1358` | **`-0x28`** |
+| `__TEXT.__cstring` | `0x93b3` | `0x93d9` | **`+0x26`** |
+| `__TEXT.__const` | `0x3324` | `0x3304` | **`-0x20`** |
+| `__TEXT.__text` | `0xc5ebc` | `0xc5ed0` | **`+0x14`** |
+| `__AUTH_CONST.__const` | `0x2c18` | `0x2c08` | **`-0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x10` | `—` | **`-0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x10` | `—` | **`-0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x3d0` | `0x3c5` | **`-0xb`** |
+| `__DATA_CONST.__objc_classlist` | `0x8` | `—` | **`-0x8`** |
+| `__TEXT.__swift5_proto` | `0x4a8` | `0x4ac` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0xcc` | `0xc8` | **`-0x4`** |
+| `__TEXT.__objc_classname` | `0x0` | `—` | **`-0x0`** |
+| `__TEXT.__objc_methtype` | `0x0` | `—` | **`-0x0`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.36.2.7
--  __TEXT.__text: 0xbe3e4
--  __TEXT.__objc_methlist: 0x5c
--  __TEXT.__const: 0x3324
--  __TEXT.__cstring: 0x93b3
--  __TEXT.__constg_swiftt: 0x884
--  __TEXT.__swift5_typeref: 0x3e9
--  __TEXT.__swift5_fieldmd: 0x60c
--  __TEXT.__swift5_reflstr: 0x3d0
 +7027.1.45.2.4
-+  __TEXT.__text: 0xbe3d8
-+  __TEXT.__const: 0x3304
-+  __TEXT.__cstring: 0x93d9
-+  __TEXT.__constg_swiftt: 0x838
-+  __TEXT.__swift5_typeref: 0x360
-+  __TEXT.__swift5_fieldmd: 0x5d0
-+  __TEXT.__swift5_reflstr: 0x3c5
-   __TEXT.__swift5_builtin: 0x154
-   __TEXT.__swift5_assocty: 0x150
--  __TEXT.__swift5_proto: 0x4a8
--  __TEXT.__swift5_types: 0xcc
-+  __TEXT.__swift5_proto: 0x4ac
-+  __TEXT.__swift5_types: 0xc8
-   __TEXT.__swift5_protos: 0x14
--  __TEXT.__oslogstring: 0xd4
-+  __TEXT.__oslogstring: 0x64
-   __TEXT.__swift_as_entry: 0x4
-   __TEXT.__swift_as_ret: 0x4
-   __TEXT.__swift_as_cont: 0xc
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x1788
-+  __TEXT.__unwind_info: 0x1760
-   __TEXT.__eh_frame: 0x4c8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
--  __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
--  __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x48
--  __DATA_CONST.__objc_classlist: 0x8
--  __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xf0
--  __DATA_CONST.__objc_protorefs: 0x10
-+  __DATA_CONST.__objc_selrefs: 0xa0
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2c18
--  __AUTH_CONST.__objc_const: 0x160
--  __AUTH_CONST.__auth_got: 0xb18
--  __AUTH.__objc_data: 0xd0
--  __AUTH.__data: 0xc90
--  __DATA.__data: 0xd38
-+  __AUTH_CONST.__const: 0x2c08
-+  __AUTH_CONST.__auth_got: 0xab8
-+  __AUTH.__data: 0xc68
-+  __DATA.__data: 0xd10
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/HealthKit.framework/HealthKit
-   - /System/Library/PrivateFrameworks/HealthDomains.framework/HealthDomains
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 1614
--  Symbols:   277
+-  Symbols:   250
 -  CStrings:  885
 +  Functions: 1597
-+  Symbols:   229
++  Symbols:   209
 +  CStrings:  883
- 
 Symbols:
 - _OBJC_CLASS_$_NSObject
 - _OBJC_CLASS_$_NSXPCInterface
@@ -100,13 +71,6 @@ Symbols:
 - _block_descriptor
 - _block_destroy_helper
 - _objc_allocWithZone
-- _objc_msgSend$init
-- _objc_msgSend$interfaceWithProtocol:
-- _objc_msgSend$remoteObjectProxy
-- _objc_msgSend$remote_helloWithCompletion:
-- _objc_msgSend$resume
-- _objc_msgSend$setExportedInterface:
-- _objc_msgSend$setRemoteObjectInterface:
 - _objc_msgSendSuper2
 - _objc_release
 - _objc_retain_x19

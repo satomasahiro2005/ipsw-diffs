@@ -2,49 +2,30 @@
 
 > `/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x26dccc` | `0x26e274` | **`+0x5a8`** |
+| `__TEXT.__oslogstring` | `0x3787b` | `0x379b8` | **`+0x13d`** |
+| `__TEXT.__unwind_info` | `0xca80` | `0xcab8` | **`+0x38`** |
+| `__TEXT.__cstring` | `0x22b59` | `0x22b8d` | **`+0x34`** |
+| `__AUTH_CONST.__cfstring` | `0x5da0` | `0x5dc0` | **`+0x20`** |
+| `__TEXT.__realtime` | `0x29b40` | `0x29b20` | **`-0x20`** |
+
+### Other Changes
+
 ```diff
 
 -1638.0.0.0.0
--  __TEXT.__text: 0x26dccc
--  __TEXT.__realtime: 0x29b40
 +1638.104.1.0.0
-+  __TEXT.__text: 0x26e274
-+  __TEXT.__realtime: 0x29b20
-   __TEXT.__delay_stubs: 0x100
-   __TEXT.__delay_helper: 0x148
-   __TEXT.__objc_methlist: 0x205c
-   __TEXT.__const: 0x486c
-   __TEXT.__dlopen_cstrs: 0x84f
-   __TEXT.__gcc_except_tab: 0x23068
--  __TEXT.__cstring: 0x22b59
--  __TEXT.__oslogstring: 0x3787b
--  __TEXT.__unwind_info: 0xca80
-+  __TEXT.__cstring: 0x22b8d
-+  __TEXT.__oslogstring: 0x379b8
-+  __TEXT.__unwind_info: 0xcab8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_arraydata: 0x3a8
-   __DATA_CONST.__got: 0xdd0
-   __AUTH_CONST.__const: 0x116f0
--  __AUTH_CONST.__cfstring: 0x5da0
-+  __AUTH_CONST.__cfstring: 0x5dc0
-   __AUTH_CONST.__objc_const: 0x30f0
-   __AUTH_CONST.__weak_auth_got: 0x38
-   __AUTH_CONST.__objc_intobj: 0x5e8
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 9932
--  Symbols:   16843
+-  Symbols:   16313
 -  CStrings:  7338
 +  Functions: 9941
-+  Symbols:   16855
++  Symbols:   16325
 +  CStrings:  7343
- 
 Symbols:
 + GCC_except_table10002
 + GCC_except_table10004

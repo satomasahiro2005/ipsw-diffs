@@ -2,39 +2,24 @@
 
 > `/System/Library/Frameworks/AVFAudio.framework/AVFAudio`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x113af0` | `0x113d98` | **`+0x2a8`** |
+| `__TEXT.__oslogstring` | `0x180ed` | `0x18210` | **`+0x123`** |
+| `__TEXT.__cstring` | `0xfe95` | `0xfe65` | **`-0x30`** |
+| `__TEXT.__gcc_except_tab` | `0x12560` | `0x12568` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -794.0.0.0.0
--  __TEXT.__text: 0x113af0
 +794.106.0.0.0
-+  __TEXT.__text: 0x113d98
-   __TEXT.__realtime: 0x1d20
-   __TEXT.__objc_methlist: 0x5b1c
-   __TEXT.__dlopen_cstrs: 0xa9
-   __TEXT.__const: 0xb80
--  __TEXT.__cstring: 0xfe95
-+  __TEXT.__cstring: 0xfe65
-   __TEXT.__swift5_typeref: 0x256
-   __TEXT.__swift5_reflstr: 0x109
-   __TEXT.__swift5_assocty: 0x78
 
-   __TEXT.__swift5_builtin: 0x78
-   __TEXT.__swift5_mpenum: 0x18
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__gcc_except_tab: 0x12560
--  __TEXT.__oslogstring: 0x180ed
-+  __TEXT.__gcc_except_tab: 0x12568
-+  __TEXT.__oslogstring: 0x18210
-   __TEXT.__unwind_info: 0x6318
-   __TEXT.__eh_frame: 0x2e0
-   __TEXT.__objc_stubs: 0x0
-
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 4136
-   Symbols:   9070
 -  CStrings:  3368
 +  CStrings:  3370
- 
 Functions:
 ~ -[AVVCSessionManager setSessionCategoryModeOptionsForActivationMode:withOptions:] : 3844 -> 3852
 ~ -[AVVCSessionManager setSessionAudioHWControlFlagsForActivationMode:withOptions:] : 3228 -> 3232

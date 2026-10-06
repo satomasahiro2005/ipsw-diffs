@@ -2,31 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/DoubleAgent.framework/DoubleAgent`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3d70` | `0x3e40` | **`+0xd0`** |
+| `__TEXT.__oslogstring` | `0x47e` | `0x4fc` | **`+0x7e`** |
+
+### Other Changes
+
 ```diff
 
 -46.0.0.0.0
--  __TEXT.__text: 0x3d70
 +46.0.1.0.0
-+  __TEXT.__text: 0x3e40
-   __TEXT.__objc_methlist: 0x3f4
-   __TEXT.__const: 0x90
-   __TEXT.__cstring: 0x30e
--  __TEXT.__oslogstring: 0x47e
-+  __TEXT.__oslogstring: 0x4fc
-   __TEXT.__unwind_info: 0x120
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 103
--  Symbols:   211
+-  Symbols:   179
 -  CStrings:  46
 +  Functions: 105
-+  Symbols:   212
++  Symbols:   180
 +  CStrings:  47
- 
 Symbols:
 + _OUTLINED_FUNCTION_10
 Functions:

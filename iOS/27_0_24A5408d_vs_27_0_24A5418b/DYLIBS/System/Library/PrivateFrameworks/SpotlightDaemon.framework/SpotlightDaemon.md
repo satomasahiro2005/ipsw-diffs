@@ -2,43 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/SpotlightDaemon.framework/SpotlightDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc4514` | `0xc463c` | **`+0x128`** |
+| `__TEXT.__oslogstring` | `0xd304` | `0xd359` | **`+0x55`** |
+| `__TEXT.__cstring` | `0x98ea` | `0x991f` | **`+0x35`** |
+| `__TEXT.__objc_methlist` | `0x4bc4` | `0x4bd4` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3d10` | `0x3d18` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2459.102.0.0.0
--  __TEXT.__text: 0xc4514
--  __TEXT.__objc_methlist: 0x4bc4
 +2459.105.0.0.0
-+  __TEXT.__text: 0xc463c
-+  __TEXT.__objc_methlist: 0x4bd4
-   __TEXT.__const: 0x3e8
--  __TEXT.__cstring: 0x98ea
-+  __TEXT.__cstring: 0x991f
-   __TEXT.__gcc_except_tab: 0x4a1c
--  __TEXT.__oslogstring: 0xd304
-+  __TEXT.__oslogstring: 0xd359
-   __TEXT.__dlopen_cstrs: 0x4a
-   __TEXT.__unwind_info: 0x28f8
-   __TEXT.__objc_stubs: 0x0
 
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3d10
-+  __DATA_CONST.__objc_selrefs: 0x3d18
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x138
-   __DATA_CONST.__objc_arraydata: 0x310
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libutil.dylib
 -  Functions: 3377
--  Symbols:   6747
+-  Symbols:   5046
 -  CStrings:  2699
 +  Functions: 3378
-+  Symbols:   6750
++  Symbols:   5048
 +  CStrings:  2702
- 
 Symbols:
 + -[SPConcreteCoreSpotlightIndexer deferFixupWhileSuspended:]
 + GCC_except_table1013
@@ -121,7 +107,6 @@ Symbols:
 + GCC_except_table923
 + GCC_except_table952
 + GCC_except_table983
-+ _objc_msgSend$deferFixupWhileSuspended:
 - GCC_except_table1011
 - GCC_except_table1021
 - GCC_except_table1037

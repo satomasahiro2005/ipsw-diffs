@@ -2,94 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/NanoPassKit.framework/NanoPassKit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_types`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e8dd4` | `0x1e9d88` | **`+0xfb4`** |
+| `__TEXT.__oslogstring` | `0x22469` | `0x22813` | **`+0x3aa`** |
+| `__AUTH_CONST.__objc_const` | `0x36c98` | `0x36e88` | **`+0x1f0`** |
+| `__TEXT.__objc_methlist` | `0x1fdf0` | `0x1ff28` | **`+0x138`** |
+| `__AUTH.__objc_data` | `0x8cf0` | `0x8d90` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x7430` | `0x7480` | **`+0x50`** |
+| `__AUTH_CONST.__cfstring` | `0xa960` | `0xa9a0` | **`+0x40`** |
+| `__TEXT.__const` | `0x2b0` | `0x2f0` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x12c44` | `0x12c84` | **`+0x40`** |
+| `__TEXT.__gcc_except_tab` | `0x37d0` | `0x3808` | **`+0x38`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8e98` | `0x8eb8` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0xf68` | `0xf78` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0xf10` | `0xf20` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x4018` | `0x4020` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x1608` | `0x1610` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x16ac` | `0x16b0` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -1338.0.0.0.0
--  __TEXT.__text: 0x1e8dd4
--  __TEXT.__objc_methlist: 0x1fdf0
--  __TEXT.__cstring: 0x12c44
--  __TEXT.__const: 0x2b0
--  __TEXT.__gcc_except_tab: 0x37d0
--  __TEXT.__oslogstring: 0x22469
 +1341.0.0.0.0
-+  __TEXT.__text: 0x1e9d88
-+  __TEXT.__objc_methlist: 0x1ff28
-+  __TEXT.__cstring: 0x12c84
-+  __TEXT.__const: 0x2f0
-+  __TEXT.__gcc_except_tab: 0x3808
-+  __TEXT.__oslogstring: 0x22813
-   __TEXT.__dlopen_cstrs: 0x1ba
-   __TEXT.__ustring: 0x168
-   __TEXT.__constg_swiftt: 0x28
 
-   __TEXT.__swift5_reflstr: 0x17
-   __TEXT.__swift5_fieldmd: 0x28
-   __TEXT.__swift5_types: 0x4
--  __TEXT.__unwind_info: 0x7430
-+  __TEXT.__unwind_info: 0x7480
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4018
--  __DATA_CONST.__objc_classlist: 0xf68
-+  __DATA_CONST.__const: 0x4020
-+  __DATA_CONST.__objc_classlist: 0xf78
-   __DATA_CONST.__objc_catlist: 0xf8
-   __DATA_CONST.__objc_protolist: 0x168
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8e98
-+  __DATA_CONST.__objc_selrefs: 0x8eb8
-   __DATA_CONST.__objc_protorefs: 0x50
--  __DATA_CONST.__objc_superrefs: 0xf10
-+  __DATA_CONST.__objc_superrefs: 0xf20
-   __DATA_CONST.__objc_arraydata: 0x28
--  __DATA_CONST.__got: 0x1608
-+  __DATA_CONST.__got: 0x1610
-   __AUTH_CONST.__const: 0x720
--  __AUTH_CONST.__cfstring: 0xa960
--  __AUTH_CONST.__objc_const: 0x36c98
-+  __AUTH_CONST.__cfstring: 0xa9a0
-+  __AUTH_CONST.__objc_const: 0x36e88
-   __AUTH_CONST.__objc_arrayobj: 0x60
-   __AUTH_CONST.__objc_intobj: 0xa8
-   __AUTH_CONST.__objc_doubleobj: 0x70
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x8cf0
--  __DATA.__objc_ivar: 0x16ac
-+  __AUTH.__objc_data: 0x8d90
-+  __DATA.__objc_ivar: 0x16b0
-   __DATA.__data: 0x1120
-   __DATA.__bss: 0x1a8
-   __DATA_DIRTY.__objc_data: 0xd20
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11877
--  Symbols:   21392
+-  Symbols:   18585
 -  CStrings:  3745
 +  Functions: 11907
-+  Symbols:   21441
++  Symbols:   18633
 +  CStrings:  3749
- 
 Symbols:
 + -[NPKPaymentWebServiceCompanionTargetDevice handleUpdateReviewStateForProfileWithResponse:]
 + -[NPKPaymentWebServiceCompanionTargetDevice updateReviewStateForProfile:withCompletionHandler:]
@@ -140,7 +86,6 @@ Symbols:
 + ___91-[NPKPaymentWebServiceCompanionTargetDevice handleUpdateReviewStateForProfileWithResponse:]_block_invoke
 + ___95-[NPKPaymentWebServiceCompanionTargetDevice updateReviewStateForProfile:withCompletionHandler:]_block_invoke
 + ___95-[NPKPaymentWebServiceCompanionTargetDevice updateReviewStateForProfile:withCompletionHandler:]_block_invoke_2
-+ _objc_msgSend$setRawReviewState:
 - GCC_except_table897
 CStrings:
 + "Error: Incoming unhandled protobuf: %@ %@ %{private}@ %{private}@ %@"

@@ -2,141 +2,106 @@
 
 > `/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/TSTables.framework/TSTables`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6a1328` | `0x69e488` | **`-0x2ea0`** |
+| `__TEXT.__cstring` | `0x451d9` | `0x451bc` | **`-0x1d`** |
+| `__TEXT.__unwind_info` | `0x2d9a8` | `0x2d990` | **`-0x18`** |
+| `__TEXT.__gcc_except_tab` | `0x9b970` | `0x9b960` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x6a1328
-+  __TEXT.__text: 0x69e488
-   __TEXT.__init_offsets: 0x10
-   __TEXT.__objc_methlist: 0x35a04
--  __TEXT.__gcc_except_tab: 0x9b970
-+  __TEXT.__gcc_except_tab: 0x9b960
-   __TEXT.__const: 0x3e9e6
--  __TEXT.__cstring: 0x451d9
-+  __TEXT.__cstring: 0x451bc
-   __TEXT.__ustring: 0x1f24
-   __TEXT.__swift5_typeref: 0x32
-   __TEXT.__swift5_fieldmd: 0x10
--  __TEXT.__unwind_info: 0x2d9a8
-+  __TEXT.__unwind_info: 0x2d990
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 36022
-   Symbols:   13345
--  CStrings:  7845
-+  CStrings:  7844
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
+-  CStrings:  6027
++  CStrings:  6026
 Functions:
-~ sub_2b86ee384 -> sub_2b929c384 : 412 -> 396
-~ sub_2b87002b4 -> sub_2b92ae2a4 : 8040 -> 8064
-~ sub_2b8719dbc -> sub_2b92c7dc4 : 164 -> 156
-~ sub_2b8749d44 -> sub_2b92f7d44 : 476 -> 456
-~ sub_2b874be84 -> sub_2b92f9e70 : 1204 -> 1156
-~ sub_2b87566bc -> sub_2b9304678 : 804 -> 768
-~ sub_2b87843dc -> sub_2b9332374 : 300 -> 292
-~ sub_2b8788a54 -> sub_2b93369e4 : 208 -> 200
-~ sub_2b879f078 -> sub_2b934d000 : 484 -> 472
-~ sub_2b87aff54 -> sub_2b935ded0 : 604 -> 592
-~ sub_2b87b06ec -> sub_2b935e65c : 540 -> 516
-~ sub_2b87b3c50 -> sub_2b9361ba8 : 824 -> 812
-~ sub_2b87b71c0 -> sub_2b936510c : 220 -> 200
-~ sub_2b87baf18 -> sub_2b9368e50 : 876 -> 856
-~ sub_2b87c30f8 -> sub_2b937101c : 1632 -> 1608
-~ sub_2b8805c48 -> sub_2b93b3b54 : 288 -> 264
-~ sub_2b8805d68 -> sub_2b93b3c5c : 300 -> 296
-~ sub_2b88061e8 -> sub_2b93b40d8 : 1224 -> 1168
-~ sub_2b889b620 -> sub_2b94494d8 : 312 -> 292
-~ sub_2b88daa80 -> sub_2b9488924 : 744 -> 708
-~ sub_2b88e0830 -> sub_2b948e6b0 : 280 -> 264
-~ sub_2b88e4658 -> sub_2b94924c8 : 208 -> 184
-~ sub_2b88e4728 -> sub_2b9492580 : 208 -> 184
-~ sub_2b88e87fc -> sub_2b949663c : 200 -> 180
-~ sub_2b88e88c4 -> sub_2b94966f0 : 224 -> 220
-~ sub_2b88e8cc4 -> sub_2b9496aec : 1064 -> 1040
-~ sub_2b88e90ec -> sub_2b9496efc : 368 -> 348
-~ sub_2b88fc258 -> sub_2b94aa054 : 2868 -> 2840
-~ sub_2b89029d0 -> sub_2b94b07b0 : 952 -> 928
-~ sub_2b8903a34 -> sub_2b94b17fc : 484 -> 556
-~ sub_2b89087c4 -> sub_2b94b65d4 : 56 -> 44
-~ sub_2b89187a4 -> sub_2b94c65a8 : 544 -> 548
-~ sub_2b89454e4 -> sub_2b94f32ec : 832 -> 820
-~ sub_2b89602d0 -> sub_2b950e0cc : 952 -> 900
-~ sub_2b896cb4c -> sub_2b951a914 : 196 -> 184
+~ sub_2b86ee384 -> sub_2b915e384 : 412 -> 396
+~ sub_2b87002b4 -> sub_2b91702a4 : 8040 -> 8064
+~ sub_2b8719dbc -> sub_2b9189dc4 : 164 -> 156
+~ sub_2b8749d44 -> sub_2b91b9d44 : 476 -> 456
+~ sub_2b874be84 -> sub_2b91bbe70 : 1204 -> 1156
+~ sub_2b87566bc -> sub_2b91c6678 : 804 -> 768
+~ sub_2b87843dc -> sub_2b91f4374 : 300 -> 292
+~ sub_2b8788a54 -> sub_2b91f89e4 : 208 -> 200
+~ sub_2b879f078 -> sub_2b920f000 : 484 -> 472
+~ sub_2b87aff54 -> sub_2b921fed0 : 604 -> 592
+~ sub_2b87b06ec -> sub_2b922065c : 540 -> 516
+~ sub_2b87b3c50 -> sub_2b9223ba8 : 824 -> 812
+~ sub_2b87b71c0 -> sub_2b922710c : 220 -> 200
+~ sub_2b87baf18 -> sub_2b922ae50 : 876 -> 856
+~ sub_2b87c30f8 -> sub_2b923301c : 1632 -> 1608
+~ sub_2b8805c48 -> sub_2b9275b54 : 288 -> 264
+~ sub_2b8805d68 -> sub_2b9275c5c : 300 -> 296
+~ sub_2b88061e8 -> sub_2b92760d8 : 1224 -> 1168
+~ sub_2b889b620 -> sub_2b930b4d8 : 312 -> 292
+~ sub_2b88daa80 -> sub_2b934a924 : 744 -> 708
+~ sub_2b88e0830 -> sub_2b93506b0 : 280 -> 264
+~ sub_2b88e4658 -> sub_2b93544c8 : 208 -> 184
+~ sub_2b88e4728 -> sub_2b9354580 : 208 -> 184
+~ sub_2b88e87fc -> sub_2b935863c : 200 -> 180
+~ sub_2b88e88c4 -> sub_2b93586f0 : 224 -> 220
+~ sub_2b88e8cc4 -> sub_2b9358aec : 1064 -> 1040
+~ sub_2b88e90ec -> sub_2b9358efc : 368 -> 348
+~ sub_2b88fc258 -> sub_2b936c054 : 2868 -> 2840
+~ sub_2b89029d0 -> sub_2b93727b0 : 952 -> 928
+~ sub_2b8903a34 -> sub_2b93737fc : 484 -> 556
+~ sub_2b89087c4 -> sub_2b93785d4 : 56 -> 44
+~ sub_2b89187a4 -> sub_2b93885a8 : 544 -> 548
+~ sub_2b89454e4 -> sub_2b93b52ec : 832 -> 820
+~ sub_2b89602d0 -> sub_2b93d00cc : 952 -> 900
+~ sub_2b896cb4c -> sub_2b93dc914 : 196 -> 184
 ~ __ZN30TSCEASTRelativeCoordRefElement31expandRangeCoordinateUsingUuidsEP19TSCEASTIteratorBaseRK12TSKUIDStructR19TSCERangeCoordinateRK26TSKUIDStructVectorTemplateIS2_ERS8_b : 1148 -> 1124
-~ sub_2b89b3f04 -> sub_2b9561ca8 : 776 -> 752
-~ sub_2b89b459c -> sub_2b9562328 : 264 -> 252
-~ sub_2b89b8b14 -> sub_2b9566894 : 1620 -> 1600
-~ sub_2b89b963c -> sub_2b95673a8 : 580 -> 556
-~ sub_2b89bc65c -> sub_2b956a3b0 : 7668 -> 7628
-~ sub_2b89c355c -> sub_2b9571288 : 560 -> 552
-~ sub_2b89d2cfc -> sub_2b9580a20 : 940 -> 928
-~ sub_2b89dc0d8 -> sub_2b9589df0 : 164 -> 156
-~ sub_2b89dc17c -> sub_2b9589e8c : 372 -> 352
-~ sub_2b89fd74c -> sub_2b95ab448 : 204 -> 180
-~ sub_2b8a249d0 -> sub_2b95d26b4 : 284 -> 276
-~ sub_2b8a24e40 -> sub_2b95d2b1c : 552 -> 584
-~ sub_2b8a25068 -> sub_2b95d2d64 : 180 -> 160
-~ sub_2b8a3ee7c -> sub_2b95ecb64 : 172 -> 200
-~ sub_2b8a5d0b0 -> sub_2b960adb4 : 172 -> 152
-~ sub_2b8a606ac -> sub_2b960e39c : 2572 -> 2588
-~ sub_2b8a628b0 -> sub_2b96105b0 : 388 -> 360
-~ sub_2b8a62a34 -> sub_2b9610718 : 420 -> 404
-~ sub_2b8a62dd0 -> sub_2b9610aa4 : 516 -> 504
-~ sub_2b8a62fd4 -> sub_2b9610c9c : 988 -> 956
-~ sub_2b8a63a60 -> sub_2b9611708 : 348 -> 324
-~ sub_2b8a7de68 -> sub_2b962baf8 : 2716 -> 2688
-~ sub_2b8a99eb4 -> sub_2b9647b28 : 248 -> 252
-~ sub_2b8a99fac -> sub_2b9647c24 : 324 -> 316
-~ sub_2b8a9a0f0 -> sub_2b9647d60 : 344 -> 336
-~ sub_2b8a9a41c -> sub_2b9648084 : 380 -> 356
-~ sub_2b8a9a598 -> sub_2b96481e8 : 280 -> 284
-~ sub_2b8ab43cc -> sub_2b9662020 : 556 -> 536
-~ sub_2b8acf628 -> sub_2b967d268 : 5000 -> 4996
-~ sub_2b8adc748 -> sub_2b968a384 : 272 -> 256
-~ sub_2b8adc858 -> sub_2b968a484 : 292 -> 272
-~ sub_2b8adcb08 -> sub_2b968a720 : 416 -> 408
-~ sub_2b8adcca8 -> sub_2b968a8b8 : 1100 -> 1076
-~ sub_2b8ade398 -> sub_2b968bf90 : 272 -> 256
-~ sub_2b8ade4a8 -> sub_2b968c090 : 292 -> 272
-~ sub_2b8ade758 -> sub_2b968c32c : 416 -> 408
-~ sub_2b8ade8f8 -> sub_2b968c4c4 : 1100 -> 1076
-~ sub_2b8affd78 -> sub_2b96ad92c : 320 -> 288
-~ sub_2b8b000c4 -> sub_2b96adc58 : 192 -> 188
-~ sub_2b8b00d40 -> sub_2b96ae8d0 : 600 -> 556
-~ sub_2b8b017c0 -> sub_2b96af324 : 1296 -> 1236
-~ sub_2b8b01e78 -> sub_2b96af9a0 : 416 -> 408
-~ sub_2b8b02018 -> sub_2b96afb38 : 132 -> 124
-~ sub_2b8b05124 -> sub_2b96b2c3c : 644 -> 604
-~ sub_2b8b05854 -> sub_2b96b3344 : 484 -> 472
-~ sub_2b8b0aa68 -> sub_2b96b854c : 152 -> 136
-~ sub_2b8b33fe4 -> sub_2b96e1ab8 : 140 -> 124
-~ sub_2b8b3d598 -> sub_2b96eb05c : 484 -> 472
+~ sub_2b89b3f04 -> sub_2b9423ca8 : 776 -> 752
+~ sub_2b89b459c -> sub_2b9424328 : 264 -> 252
+~ sub_2b89b8b14 -> sub_2b9428894 : 1620 -> 1600
+~ sub_2b89b963c -> sub_2b94293a8 : 580 -> 556
+~ sub_2b89bc65c -> sub_2b942c3b0 : 7668 -> 7628
+~ sub_2b89c355c -> sub_2b9433288 : 560 -> 552
+~ sub_2b89d2cfc -> sub_2b9442a20 : 940 -> 928
+~ sub_2b89dc0d8 -> sub_2b944bdf0 : 164 -> 156
+~ sub_2b89dc17c -> sub_2b944be8c : 372 -> 352
+~ sub_2b89fd74c -> sub_2b946d448 : 204 -> 180
+~ sub_2b8a249d0 -> sub_2b94946b4 : 284 -> 276
+~ sub_2b8a24e40 -> sub_2b9494b1c : 552 -> 584
+~ sub_2b8a25068 -> sub_2b9494d64 : 180 -> 160
+~ sub_2b8a3ee7c -> sub_2b94aeb64 : 172 -> 200
+~ sub_2b8a5d0b0 -> sub_2b94ccdb4 : 172 -> 152
+~ sub_2b8a606ac -> sub_2b94d039c : 2572 -> 2588
+~ sub_2b8a628b0 -> sub_2b94d25b0 : 388 -> 360
+~ sub_2b8a62a34 -> sub_2b94d2718 : 420 -> 404
+~ sub_2b8a62dd0 -> sub_2b94d2aa4 : 516 -> 504
+~ sub_2b8a62fd4 -> sub_2b94d2c9c : 988 -> 956
+~ sub_2b8a63a60 -> sub_2b94d3708 : 348 -> 324
+~ sub_2b8a7de68 -> sub_2b94edaf8 : 2716 -> 2688
+~ sub_2b8a99eb4 -> sub_2b9509b28 : 248 -> 252
+~ sub_2b8a99fac -> sub_2b9509c24 : 324 -> 316
+~ sub_2b8a9a0f0 -> sub_2b9509d60 : 344 -> 336
+~ sub_2b8a9a41c -> sub_2b950a084 : 380 -> 356
+~ sub_2b8a9a598 -> sub_2b950a1e8 : 280 -> 284
+~ sub_2b8ab43cc -> sub_2b9524020 : 556 -> 536
+~ sub_2b8acf628 -> sub_2b953f268 : 5000 -> 4996
+~ sub_2b8adc748 -> sub_2b954c384 : 272 -> 256
+~ sub_2b8adc858 -> sub_2b954c484 : 292 -> 272
+~ sub_2b8adcb08 -> sub_2b954c720 : 416 -> 408
+~ sub_2b8adcca8 -> sub_2b954c8b8 : 1100 -> 1076
+~ sub_2b8ade398 -> sub_2b954df90 : 272 -> 256
+~ sub_2b8ade4a8 -> sub_2b954e090 : 292 -> 272
+~ sub_2b8ade758 -> sub_2b954e32c : 416 -> 408
+~ sub_2b8ade8f8 -> sub_2b954e4c4 : 1100 -> 1076
+~ sub_2b8affd78 -> sub_2b956f92c : 320 -> 288
+~ sub_2b8b000c4 -> sub_2b956fc58 : 192 -> 188
+~ sub_2b8b00d40 -> sub_2b95708d0 : 600 -> 556
+~ sub_2b8b017c0 -> sub_2b9571324 : 1296 -> 1236
+~ sub_2b8b01e78 -> sub_2b95719a0 : 416 -> 408
+~ sub_2b8b02018 -> sub_2b9571b38 : 132 -> 124
+~ sub_2b8b05124 -> sub_2b9574c3c : 644 -> 604
+~ sub_2b8b05854 -> sub_2b9575344 : 484 -> 472
+~ sub_2b8b0aa68 -> sub_2b957a54c : 152 -> 136
+~ sub_2b8b33fe4 -> sub_2b95a3ab8 : 140 -> 124
+~ sub_2b8b3d598 -> sub_2b95ad05c : 484 -> 472
 ~ __ZNK4TSCE20CellReferenceArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 556 -> 532
 ~ __ZNK4TSCE28InternalCellReferenceArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 392 -> 376
 ~ __ZNK4TSCE22RelativeCellRefArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 780 -> 756
@@ -190,7 +155,7 @@ Functions:
 ~ __ZNK4TSCE35SpanningDependenciesExpandedArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 604 -> 580
 ~ __ZNK4TSCE29WholeOwnerDependenciesArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 296 -> 288
 ~ __ZNK4TSCE37WholeOwnerDependenciesExpandedArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 244 -> 236
-~ sub_2b8b6f500 -> sub_2b971ca98 : 304 -> 292
+~ sub_2b8b6f500 -> sub_2b95dea98 : 304 -> 292
 ~ __ZNK4TSCE12ErrorArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 436 -> 420
 ~ __ZNK4TSCE14WarningArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 588 -> 564
 ~ __ZNK4TSCE30CellErrorsArchive_ErrorForCell18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 564 -> 540
@@ -243,7 +208,7 @@ Functions:
 ~ __ZNK4TSCE40ASTNodeArrayArchive_ASTColonTractArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 904 -> 872
 ~ __ZNK4TSCE58ASTNodeArrayArchive_ASTCrossTableReferenceExtraInfoArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 400 -> 392
 ~ __ZNK4TSCE46ASTNodeArrayArchive_ASTLambdaIdentsListArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 384 -> 376
-~ sub_2b8b9cf18 -> sub_2b974a014 : 304 -> 292
+~ sub_2b8b9cf18 -> sub_2b960c014 : 304 -> 292
 ~ __ZNK4TSCE34ASTNodeArrayArchive_ASTNodeArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 5472 -> 5232
 ~ __ZNK4TSCE19ASTNodeArrayArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 296 -> 288
 ~ __ZNK4TSCE14FormulaArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 1292 -> 1236
@@ -450,21 +415,20 @@ Functions:
 ~ __ZNK3TST16WidthHeightCache18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 436 -> 420
 ~ __ZNK3TST19LayoutEngineArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 244 -> 236
 ~ __ZNK3TST42CollaboratorTableCursorSubselectionArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 588 -> 564
-~ sub_2b8d39a20 -> sub_2b98e4ee8 : 428 -> 420
-~ sub_2b8d3a920 -> sub_2b98e5de0 : 1868 -> 1780
-~ sub_2b8d3bcac -> sub_2b98e7114 : 712 -> 680
-~ sub_2b8d3c898 -> sub_2b98e7ce0 : 712 -> 680
-~ sub_2b8d3d62c -> sub_2b98e8a54 : 620 -> 596
-~ sub_2b8d40f98 -> sub_2b98ec3a8 : 11624 -> 11088
-~ sub_2b8d46d4c -> sub_2b98f1f44 : 564 -> 540
-~ sub_2b8d4758c -> sub_2b98f276c : 228 -> 220
-~ sub_2b8d47d50 -> sub_2b98f2f28 : 480 -> 464
-~ sub_2b8d56934 -> sub_2b9901afc : 828 -> 788
-~ sub_2b8d572b4 -> sub_2b9902454 : 212 -> 208
-~ sub_2b8d5a344 -> sub_2b99054e0 : 828 -> 788
-~ sub_2b8d5a984 -> sub_2b9905af8 : 212 -> 208
-~ sub_2b8d5c7c4 -> sub_2b9907934 : 92 -> 76
+~ sub_2b8d39a20 -> sub_2b97a6ee8 : 428 -> 420
+~ sub_2b8d3a920 -> sub_2b97a7de0 : 1868 -> 1780
+~ sub_2b8d3bcac -> sub_2b97a9114 : 712 -> 680
+~ sub_2b8d3c898 -> sub_2b97a9ce0 : 712 -> 680
+~ sub_2b8d3d62c -> sub_2b97aaa54 : 620 -> 596
+~ sub_2b8d40f98 -> sub_2b97ae3a8 : 11624 -> 11088
+~ sub_2b8d46d4c -> sub_2b97b3f44 : 564 -> 540
+~ sub_2b8d4758c -> sub_2b97b476c : 228 -> 220
+~ sub_2b8d47d50 -> sub_2b97b4f28 : 480 -> 464
+~ sub_2b8d56934 -> sub_2b97c3afc : 828 -> 788
+~ sub_2b8d572b4 -> sub_2b97c4454 : 212 -> 208
+~ sub_2b8d5a344 -> sub_2b97c74e0 : 828 -> 788
+~ sub_2b8d5a984 -> sub_2b97c7af8 : 212 -> 208
+~ sub_2b8d5c7c4 -> sub_2b97c9934 : 92 -> 76
 CStrings:
 - "input in flex scanner failed"
-
 ```

@@ -2,51 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/CoreSpeechFoundation.framework/CoreSpeechFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcbf44` | `0xcbfc4` | **`+0x80`** |
+| `__AUTH_CONST.__cfstring` | `0x95c0` | `0x95e0` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x16841` | `0x1685c` | **`+0x1b`** |
+| `__TEXT.__objc_methlist` | `0xd9d8` | `0xd9e8` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7500` | `0x7508` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 3600.70.47.11.1
--  __TEXT.__text: 0xcbf44
--  __TEXT.__objc_methlist: 0xd9d8
-+  __TEXT.__text: 0xcbfc4
-+  __TEXT.__objc_methlist: 0xd9e8
-   __TEXT.__const: 0xfe8
-   __TEXT.__dlopen_cstrs: 0x24a
-   __TEXT.__constg_swiftt: 0x2cc
-   __TEXT.__swift5_typeref: 0x1dc
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_types: 0x30
--  __TEXT.__cstring: 0x16841
-+  __TEXT.__cstring: 0x1685c
-   __TEXT.__swift5_reflstr: 0x278
-   __TEXT.__swift5_assocty: 0x78
-   __TEXT.__swift5_fieldmd: 0x250
-
-   __DATA_CONST.__objc_protolist: 0x220
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x18
--  __DATA_CONST.__objc_selrefs: 0x7500
-+  __DATA_CONST.__objc_selrefs: 0x7508
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__objc_superrefs: 0x568
-   __DATA_CONST.__objc_arraydata: 0x1c8
-   __DATA_CONST.__got: 0x1038
-   __AUTH_CONST.__const: 0x1ae0
--  __AUTH_CONST.__cfstring: 0x95c0
-+  __AUTH_CONST.__cfstring: 0x95e0
-   __AUTH_CONST.__objc_const: 0x14e50
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_dictobj: 0x1e0
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5243
--  Symbols:   12213
+-  Symbols:   9843
 -  CStrings:  3750
 +  Functions: 5244
-+  Symbols:   12214
++  Symbols:   9844
 +  CStrings:  3751
- 
 Symbols:
 + -[CSFPreferences forceAPModeNonExclaveWatch]
 + GCC_except_table3191

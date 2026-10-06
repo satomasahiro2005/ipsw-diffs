@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/TextGenerationInference.framework/TextGenerationInference`
 
-```diff
+### Section Size Changes
 
- 8.0.0.0.0
--  __TEXT.__text: 0x8354c
-+  __TEXT.__text: 0x835ec
-   __TEXT.__objc_methlist: 0x4c0
-   __TEXT.__const: 0x2b67
-   __TEXT.__gcc_except_tab: 0x9150
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8354c` | `0x835ec` | **`+0xa0`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[TGITextGenerationInferenceRunner run] : 4796 -> 4788
 ~ __ZNSt3__16vectorIiNS_9allocatorIiEEE6resizeEm : 284 -> 288

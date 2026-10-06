@@ -2,94 +2,41 @@
 
 > `/System/Library/Frameworks/PencilKit.framework/PencilKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x355d24` | `0x3575a4` | **`+0x1880`** |
+| `__AUTH_CONST.__objc_const` | `0x48df0` | `0x49260` | **`+0x470`** |
+| `__TEXT.__objc_methlist` | `0x26074` | `0x2620c` | **`+0x198`** |
+| `__TEXT.__oslogstring` | `0xed2f` | `0xee56` | **`+0x127`** |
+| `__DATA_CONST.__objc_selrefs` | `0x135b0` | `0x13688` | **`+0xd8`** |
+| `__AUTH.__objc_data` | `0xa698` | `0xa738` | **`+0xa0`** |
+| `__AUTH_CONST.__const` | `0x85d0` | `0x8648` | **`+0x78`** |
+| `__TEXT.__unwind_info` | `0x10770` | `0x107e8` | **`+0x78`** |
+| `__TEXT.__const` | `0x8ef4` | `0x8f54` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0x254b8` | `0x254f8` | **`+0x40`** |
+| `__DATA.__objc_ivar` | `0x2cb8` | `0x2cec` | **`+0x34`** |
+| `__TEXT.__swift5_capture` | `0xa9c` | `0xacc` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0x1180` | `0x1190` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0xda8` | `0xdb8` | **`+0x10`** |
+| `__DATA_DIRTY.__objc_ivar` | `0x115c` | `0x116c` | **`+0x10`** |
+| `__TEXT.__cstring` | `0xf962` | `0xf959` | **`-0x9`** |
+| `__AUTH_CONST.__auth_got` | `0x1e28` | `0x1e30` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -616.100.0.0.0
--  __TEXT.__text: 0x344b00
--  __TEXT.__objc_methlist: 0x26074
--  __TEXT.__const: 0x8ef4
 +621.0.0.0.0
-+  __TEXT.__text: 0x346338
-+  __TEXT.__objc_methlist: 0x2620c
-+  __TEXT.__const: 0x8f54
-   __TEXT.__dlopen_cstrs: 0x563
-   __TEXT.__constg_swiftt: 0x1f2c
-   __TEXT.__swift5_typeref: 0x1f06
 
-   __TEXT.__swift5_assocty: 0x728
-   __TEXT.__swift5_proto: 0x398
-   __TEXT.__swift5_types: 0x1dc
--  __TEXT.__swift5_capture: 0xa9c
--  __TEXT.__cstring: 0xf962
--  __TEXT.__oslogstring: 0xed2f
-+  __TEXT.__swift5_capture: 0xacc
-+  __TEXT.__cstring: 0xf959
-+  __TEXT.__oslogstring: 0xee56
-   __TEXT.__swift_as_entry: 0xf0
-   __TEXT.__swift_as_cont: 0x218
-   __TEXT.__swift_as_ret: 0xac
-   __TEXT.__swift5_protos: 0xc
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__gcc_except_tab: 0x254b8
-+  __TEXT.__gcc_except_tab: 0x254f8
-   __TEXT.__ustring: 0x23a
--  __TEXT.__unwind_info: 0x128b8
-+  __TEXT.__unwind_info: 0x12948
-   __TEXT.__eh_frame: 0x2af8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x7010
--  __DATA_CONST.__objc_classlist: 0x1180
-+  __DATA_CONST.__objc_classlist: 0x1190
-   __DATA_CONST.__objc_catlist: 0x80
-   __DATA_CONST.__objc_protolist: 0x7e8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x135b0
-+  __DATA_CONST.__objc_selrefs: 0x13688
-   __DATA_CONST.__objc_protorefs: 0x118
--  __DATA_CONST.__objc_superrefs: 0xda8
-+  __DATA_CONST.__objc_superrefs: 0xdb8
-   __DATA_CONST.__objc_arraydata: 0x920
-   __DATA_CONST.__got: 0x22c8
--  __AUTH_CONST.__const: 0x85d0
-+  __AUTH_CONST.__const: 0x8648
-   __AUTH_CONST.__cfstring: 0xe780
--  __AUTH_CONST.__objc_const: 0x48df0
-+  __AUTH_CONST.__objc_const: 0x49260
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__objc_intobj: 0x918
-   __AUTH_CONST.__objc_arrayobj: 0x6c0
-   __AUTH_CONST.__objc_dictobj: 0x460
-   __AUTH_CONST.__objc_doubleobj: 0xb0
--  __AUTH_CONST.__auth_got: 0x1e28
--  __AUTH.__objc_data: 0xa698
-+  __AUTH_CONST.__auth_got: 0x1e30
-+  __AUTH.__objc_data: 0xa738
-   __AUTH.__data: 0xc20
--  __DATA.__objc_ivar: 0x2cb8
-+  __DATA.__objc_ivar: 0x2cec
-   __DATA.__data: 0x6d68
-   __DATA.__common: 0x160
--  __DATA_DIRTY.__objc_ivar: 0x115c
-+  __DATA_DIRTY.__objc_ivar: 0x116c
-   __DATA_DIRTY.__objc_data: 0x1810
-   __DATA_DIRTY.__data: 0x50
-   __DATA_DIRTY.__bss: 0x7c0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 18461
--  Symbols:   40882
+-  Symbols:   33099
 -  CStrings:  3595
 +  Functions: 18501
-+  Symbols:   40968
++  Symbols:   33163
 +  CStrings:  3600
- 
 Symbols:
 + +[PKInkingTool _convertColorFromLight:toAppearance:]
 + +[PKInkingTool _isPureBlackOrWhite:]
@@ -197,30 +144,6 @@ Symbols:
 + ___62-[PKMetalRendererController updateCyclePreCACommit:isDrawing:]_block_invoke_5
 + ___68-[PKPaletteToolReorderController _beginDraggingToolView:atLocation:]_block_invoke
 + _notify_cancel
-+ _objc_msgSend$_allowedCenterRectForVisibleToolsRect:liftedSize:
-+ _objc_msgSend$_beginDraggingToolView:atLocation:
-+ _objc_msgSend$_colorUserInterfaceStyleOnlyConvertsBlackAndWhite
-+ _objc_msgSend$_containerLocationOfRecognizer:
-+ _objc_msgSend$_convertColorFromLight:toAppearance:
-+ _objc_msgSend$_endDragAnimated:
-+ _objc_msgSend$_endReordering
-+ _objc_msgSend$_isPureBlackOrWhite:
-+ _objc_msgSend$_reorderableToolViewAtLocationOfRecognizer:
-+ _objc_msgSend$_shouldConvertColorPickerColorFromDarkToLight:
-+ _objc_msgSend$_updateContextMenuAvoidanceRect
-+ _objc_msgSend$_updateDragAtLocation:
-+ _objc_msgSend$beginReordering
-+ _objc_msgSend$colorAppearance
-+ _objc_msgSend$colorAppearanceDidChange
-+ _objc_msgSend$colorUserInterfaceStyleOnlyConvertsBlackAndWhite
-+ _objc_msgSend$dragContainerViewForReorderController:
-+ _objc_msgSend$reorderControllerDidChangeActive:
-+ _objc_msgSend$reorderControllerShouldBeginReordering:
-+ _objc_msgSend$reorderableToolViewsForReorderController:
-+ _objc_msgSend$setColorAppearance:
-+ _objc_msgSend$setColorUserInterfaceStyleOnlyConvertsBlackAndWhite:
-+ _objc_msgSend$snapshotViewAfterScreenUpdates:
-+ _objc_msgSend$visibleToolsRectForReorderController:
 - -[PKColorMatrixView _uiColorUserInterfaceStyle]
 - -[PKColorMatrixView colorUserInterfaceStyle]
 - -[PKColorMatrixView setColorUserInterfaceStyle:]
@@ -263,8 +186,6 @@ Symbols:
 - _OBJC_IVAR_$_PKSqueezePaletteDrawingTool._colorUserInterfaceStyle
 - _OBJC_IVAR_$_PKSqueezePaletteMulticolorSwatchButton._colorUserInterfaceStyle
 - _OBJC_IVAR_$_PKSqueezePaletteView._colorUserInterfaceStyle
-- _objc_msgSend$_uiColorUserInterfaceStyle
-- _objc_msgSend$colorUserInterfaceStyleDidChange
 CStrings:
 + "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:293: libc++ Hardening assertion __k != __leftmost failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"
 + "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/include/c++/v1/__algorithm/sort.h:603: libc++ Hardening assertion __first != __end failed: Would read out of bounds, does your comparator satisfy the strict-weak ordering requirement?\n"

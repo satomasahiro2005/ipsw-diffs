@@ -2,85 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/BatteryAlgorithms.framework/BatteryAlgorithms`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x80440` | `0x80218` | **`-0x228`** |
+| `__TEXT.__gcc_except_tab` | `0x86c0` | `0x8734` | **`+0x74`** |
+| `__TEXT.__cstring` | `0x3e5c` | `0x3ecb` | **`+0x6f`** |
+| `__DATA_DIRTY.__bss` | `0x50` | `—` | **`-0x50`** |
+| `__TEXT.__unwind_info` | `0x28e0` | `0x2920` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x28` | `—` | **`-0x28`** |
+| `__TEXT.__const` | `0xa9c0` | `0xa9e0` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x440` | `0x428` | **`-0x18`** |
+| `__DATA_CONST.__got` | `0x1d8` | `0x1d0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -139.0.0.0.0
--  __TEXT.__text: 0x80440 sha256:af0941c216135db81150bfbe14fd157ad9032901872cd3defa441349a9182c90
--  __TEXT.__objc_methlist: 0xb04 sha256:0c7198bc6d5fbcad1979e8846b75c543ce5dfb324f252d0a9c7adfcdb2c60f27
--  __TEXT.__const: 0xa9c0 sha256:49a8dc6b7a75c8ac771403e44a40aaf76d9079ecb798bc5393752518e9fab86d
--  __TEXT.__cstring: 0x3e5c sha256:33e911e81047fb8859d86e463ee881f8bdcca3d2bc128c67e443765599b95d10
--  __TEXT.__gcc_except_tab: 0x86c0 sha256:f7002cb81b9481c206cb9c9ee2f380023ff718b6ffa0d84808e229a67829da08
 +142.0.0.0.0
-+  __TEXT.__text: 0x80218 sha256:06902ed8607e7dcf59c10a48d4e72c5e236338d3830aa8d2dbbb7270c0a531a6
-+  __TEXT.__objc_methlist: 0xb04 sha256:04b499f2b58f9ceebf60152bac971484b5587ce229b3de5dfe5f464c05eb8378
-+  __TEXT.__const: 0xa9e0 sha256:20dff99a7de0ad841fed41d58620936ae4dbe85834f1008bc35c0d46fad7e7d7
-+  __TEXT.__cstring: 0x3ecb sha256:952c576b3aa154696e82bf1c1e60a69b9d3faaf77f09553a8044be67e538480f
-+  __TEXT.__gcc_except_tab: 0x8734 sha256:86fc4aa1335d947d06d97823a3cdde0faad6697d97a2d439e4b2246820cd53cf
-   __TEXT.__oslogstring: 0xc5 sha256:bfc2b74f8152bbe1a0b2e487afc4bf6424119c41d93988d0a27c36c3bfbd9493
--  __TEXT.__unwind_info: 0x28e0 sha256:821402c829675d57bf157320f189d4dc24df64b23c846e3304fba8f0b62b62a2
-+  __TEXT.__unwind_info: 0x2920 sha256:9dc5c32d7bf13b69af68eb5ad81704764655cc7b9718ca9cb7c7faff2548778a
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x28 sha256:af8023e3b3630f225e8ded9c1c50617fff2876dbf4853f506cb74947d7e7227f
--  __DATA_CONST.__objc_classlist: 0x30 sha256:c879ad176e0ddaf688fec2b7d57f962c426c652671a24ed76d4cbd7efdca9028
--  __DATA_CONST.__objc_protolist: 0x10 sha256:a06a6322f82ccde53d87407e3005f4443a62815f55aa27a4dfca32388573b4e1
-+  __DATA_CONST.__objc_classlist: 0x30 sha256:2cea4f3b7369f17f60589404fb82a762c5d1e20a5822b5bb1480e23c7fc04f3e
-+  __DATA_CONST.__objc_protolist: 0x10 sha256:4506ed08cb8884358dde3cc3480b18bc96db0f28a49e5e7145d73c00300d8273
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x40 sha256:366e0d6bcbbc4e8755237ae6fc740a2570538f1bc3dea22871dd61daf0849cbe
--  __DATA_CONST.__objc_selrefs: 0x578 sha256:5b4d748785b0105e14ccba321ba076b4f2163f34c03546d026ac40f27f7cbd35
--  __DATA_CONST.__objc_superrefs: 0x30 sha256:c879ad176e0ddaf688fec2b7d57f962c426c652671a24ed76d4cbd7efdca9028
--  __DATA_CONST.__objc_arraydata: 0x6b0 sha256:4eb3986a8290d019d7474333ec043dda8a74d5e3b9e50380ed94a453a5ed3828
--  __DATA_CONST.__got: 0x1d8 sha256:ab2af66e43b226f449e126efed92cd93bc23cf6d2f673c679a6fa23e581449fb
--  __AUTH_CONST.__const: 0x3210 sha256:51726720368ffc1459fda212561deab9ebd69e709b606280527e8b213342129d
--  __AUTH_CONST.__cfstring: 0x3240 sha256:dc54da9055f310f8b5fd67c3da3835ba21a4afe12580c43d8b332920b43d5dd2
--  __AUTH_CONST.__objc_const: 0x1690 sha256:142c6c1d2ca29e2e56adeb5c9336cba97416ee1bba2298fa22b5fe6df581cf60
--  __AUTH_CONST.__weak_auth_got: 0x58 sha256:08ff63c7b76523125a37b8f2d34c4f5cfacab7b675708bece740d1d624847d5a
--  __AUTH_CONST.__objc_intobj: 0x77a0 sha256:c50ccb110bdf0374a5ddb836f4ea0839e4a1fd2d13b6ef194e4cad9282f0bebe
--  __AUTH_CONST.__objc_dictobj: 0x168 sha256:a70b74dffa1a643c13bbc0e917357e46fa1db9a7b7ed1b5a5215d55568a9c085
--  __AUTH_CONST.__objc_arrayobj: 0x4f8 sha256:946d0630328534377a0d9378ed000d2ab1179920ddb9f4eb1bb4f846a32edecb
--  __AUTH_CONST.__objc_doubleobj: 0x1d0 sha256:b9871e8c103d2bda1fb96578ca5e190dba58c35b7e12276f39e4acf49b3f0b78
--  __AUTH_CONST.__auth_got: 0x440 sha256:0e40a09dd6c3d8b503c0095444488c25f0fa19356ddd9b77a16219cb1cec69e6
--  __AUTH.__objc_data: 0x50 sha256:0972cc6b85696241b3c6f89729a2d318b2ec053f24a3812a3314b07d45dfac0e
-+  __DATA_CONST.__weak_got: 0x40 sha256:16488327252f3ec14c9d28951ef31a8de383cf633a3fa91e9f8c7159915a5512
-+  __DATA_CONST.__objc_selrefs: 0x578 sha256:82e9b93631dc5429b8c454c3c0eb83badd4653dc357779de618ac40f03dc68c2
-+  __DATA_CONST.__objc_superrefs: 0x30 sha256:2cea4f3b7369f17f60589404fb82a762c5d1e20a5822b5bb1480e23c7fc04f3e
-+  __DATA_CONST.__objc_arraydata: 0x6b0 sha256:2f9065a9573bc854230c3665e39ad0ff4ae0f3ae350d447d6fa78014c1a8ea89
-+  __DATA_CONST.__got: 0x1d0 sha256:566d2215332904bc7c2e2923af1a6188f2a4e65d22fd305e31886804cb8ccfcd
-+  __AUTH_CONST.__const: 0x3210 sha256:479b6ed401ab373928956cd1aca90bd45dd7218d0dd314bfb6c8f00763e5673e
-+  __AUTH_CONST.__cfstring: 0x3240 sha256:516c886584b142883696b2168ab55396000b231494ef0c3cb37f60eff6f27e89
-+  __AUTH_CONST.__objc_const: 0x1690 sha256:68a5fe98d6ca42dd1bca200b8e79fb419fb4c254a3c33f5cb8083786ed834b01
-+  __AUTH_CONST.__weak_auth_got: 0x58 sha256:172c177ef7b9afed22fdab74addf2ebe46636a0fa5dc7bb148de712d1cac174a
-+  __AUTH_CONST.__objc_intobj: 0x77a0 sha256:a19bd04c4a893bca1d98a15fd88bd75d84a8afb5771b4f9ddd00e1fd245843e2
-+  __AUTH_CONST.__objc_dictobj: 0x168 sha256:b5f8711f734680cdf49cfa23cc1d3cf8f6d38283d8bcf52e8e026b18ddbba417
-+  __AUTH_CONST.__objc_arrayobj: 0x4f8 sha256:db46c2392b184e26fb5a8d347b6669daa369f684df94f463cb930d8b88808c77
-+  __AUTH_CONST.__objc_doubleobj: 0x1d0 sha256:a13c0b8e2e40c73d2987dbc071a0b618b95fb1c6144cdccfe35164b921836483
-+  __AUTH_CONST.__auth_got: 0x428 sha256:3b449f81c553e3972dd31acc7df0ccfa308b1a290a103632c751828372f7ba3e
-+  __AUTH.__objc_data: 0x50 sha256:f0bc915e6eba2ce4f6dc27a80c129f4c7fae6566feae11dafd726e2db9d436f3
-   __DATA.__objc_ivar: 0x13c sha256:8f93f993bf0546fb26374959911a9537432a3f42c4c247b087389cb74b64c3b0
--  __DATA.__data: 0x74dfe0 sha256:a9fc9786e78959d4f47dcdd085ad53693f0b01056016a83a4e6e6fde41151965
-+  __DATA.__data: 0x74dfe0 sha256:ee4ae312fccbfd133ade4cc1fc2500bb0823185b9843fd82ff2dd8f4d4d4122c
-   __DATA.__common: 0xe sha256:e7ecebbc590bc88b3761fa6cd03d749f87463dabb67021a5c6768c25ec68b3f2
--  __DATA_DIRTY.__objc_data: 0x190 sha256:5ea82be383c7e13109f941a2012912bfe5ee04c3201809b73923b360a3a514c9
--  __DATA_DIRTY.__bss: 0x50 sha256:5b6fb58e61fa475939767d68a446f97f1bff02c0e5935a3ea8bb51e6515783d8
-+  __DATA_DIRTY.__objc_data: 0x190 sha256:e193f6895a0a009f93d4ba1177713f89dfcf15d5ce1809e16311b253ae574e76
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  UUID: B399E0C1-C3F3-3F1D-8422-871E4F5EA670
+
 -  Functions: 2109
--  Symbols:   6431
--  CStrings:  1021
-+  UUID: 59D50DEB-5607-31DA-BCD7-69EF8E926115
+-  Symbols:   4083
+-  CStrings:  619
 +  Functions: 2104
-+  Symbols:   6411
-+  CStrings:  1022
- 
++  Symbols:   4070
++  CStrings:  620
 Symbols:
 + GCC_except_table125
 + GCC_except_table132
@@ -159,7 +107,6 @@ Symbols:
 + __ZNSt3__110__function6__funcIZNK12LoggerModule20printAccessorByRegexENS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES8_bE3$_0FvRK8LogEntryINS_7variantIJfdNS_13unordered_mapIS8_dNS_4hashIS8_EENS_8equal_toIS8_EENS6_INS_4pairIKS8_dEEEEEEEEE10PropertiesEEEC1B9fqe220106ERKS9_
 + __ZNSt3__110shared_ptrINS_13__empty_stateIcEEE5resetB9fqe220106IS2_Li0EEEvPT_
 + __ZNSt3__110shared_ptrINS_13__empty_stateIcEEEC2B9fqe220106IS2_Li0EEEPT_
-+ __ZNSt3__110shared_ptrINS_13__empty_stateIcEEEC2B9fqe220106IS2_Li0EEEPT_.cold.1
 + __ZNSt3__110unique_ptrI8LogEntryINS_7variantIJfdNS_13unordered_mapINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEdNS_4hashIS9_EENS_8equal_toIS9_EENS7_INS_4pairIKS9_dEEEEEEEEE10PropertiesENS_14default_deleteISL_EEE5resetB9fqe220106EPSL_
 + __ZNSt3__110unique_ptrIN16TypeErasedConfig5EntryENS_14default_deleteIS2_EEED1B9fqe220106Ev
 + __ZNSt3__110unique_ptrIN16TypeErasedConfig6ModuleENS_14default_deleteIS2_EEED1B9fqe220106Ev
@@ -212,17 +159,11 @@ Symbols:
 + __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B9fqe220106ERKNS_12basic_stringIcS2_S4_EEj
 + __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B9fqe220106Ej
 + __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorIN25AugmentedBatteryHealthLib14ACAMWeeklyDataENS_9allocatorIS3_EEE12emplace_backIJRKS3_EEERS3_DpOT_EUlvE_ZNS7_IJS9_EEESA_SD_EUlvE0_EEvbT_T0_
-+ __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorIN25AugmentedBatteryHealthLib14ACAMWeeklyDataENS_9allocatorIS3_EEE12emplace_backIJRKS3_EEERS3_DpOT_EUlvE_ZNS7_IJS9_EEESA_SD_EUlvE0_EEvbT_T0_.cold.1
 + __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorIN25AugmentedBatteryHealthLib9BDCWeeklyENS_9allocatorIS3_EEE12emplace_backIJRKS3_EEERS3_DpOT_EUlvE_ZNS7_IJS9_EEESA_SD_EUlvE0_EEvbT_T0_
-+ __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorIN25AugmentedBatteryHealthLib9BDCWeeklyENS_9allocatorIS3_EEE12emplace_backIJRKS3_EEERS3_DpOT_EUlvE_ZNS7_IJS9_EEESA_SD_EUlvE0_EEvbT_T0_.cold.1
 + __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorINS1_INS1_IdNS_9allocatorIdEEEENS2_IS4_EEEENS2_IS6_EEE12emplace_backIJRKS6_EEERS6_DpOT_EUlvE_ZNS9_IJSB_EEESC_SF_EUlvE0_EEvbT_T0_
-+ __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorINS1_INS1_IdNS_9allocatorIdEEEENS2_IS4_EEEENS2_IS6_EEE12emplace_backIJRKS6_EEERS6_DpOT_EUlvE_ZNS9_IJSB_EEESC_SF_EUlvE0_EEvbT_T0_.cold.1
 + __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorINS1_IdNS_9allocatorIdEEEENS2_IS4_EEE12emplace_backIJRKS4_EEERS4_DpOT_EUlvE_ZNS7_IJS9_EEESA_SD_EUlvE0_EEvbT_T0_
-+ __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorINS1_IdNS_9allocatorIdEEEENS2_IS4_EEE12emplace_backIJRKS4_EEERS4_DpOT_EUlvE_ZNS7_IJS9_EEESA_SD_EUlvE0_EEvbT_T0_.cold.1
 + __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSC_EEESD_SG_EUlvE0_EEvbT_T0_
-+ __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSC_EEESD_SG_EUlvE0_EEvbT_T0_.cold.1
 + __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRS7_EEESB_DpOT_EUlvE_ZNSA_IJSB_EEESB_SE_EUlvE0_EEvbT_T0_
-+ __ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRS7_EEESB_DpOT_EUlvE_ZNSA_IJSB_EEESB_SE_EUlvE0_EEvbT_T0_.cold.1
 + __ZNSt3__116__insertion_sortB9fqe220106INS_17_ClassicAlgPolicyERNS_6__lessIvvEEPNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEvT1_SC_T0_
 + __ZNSt3__116__insertion_sortB9fqe220106INS_17_ClassicAlgPolicyERPFbRKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES9_EPS7_EEvT1_SE_T0_
 + __ZNSt3__116__insertion_sortB9fqe220106INS_17_ClassicAlgPolicyERZN16TypeErasedConfig7utility15findBestMatchesINS_10unique_ptrINS2_5EntryENS_14default_deleteIS6_EEEEEENS_6vectorINS_17basic_string_viewIcNS_11char_traitsIcEEEENS_9allocatorISE_EEEESE_RKNS_13unordered_mapINS_12basic_stringIcSD_NSF_IcEEEET_NS_4hashISL_EENS_8equal_toISL_EENSF_INS_4pairIKSL_SM_EEEEEEmEUlRKZNS4_IS9_EESH_SE_SX_mE9dist_infoS10_E_PSY_EEvT1_S14_T0_
@@ -241,7 +182,6 @@ Symbols:
 + __ZNSt3__116__variant_detail12__visitation6__base12__dispatcherIJLm1EEE10__dispatchB9fqe220106IONS1_9__variant15__value_visitorIZZNK12LoggerModule20printAccessorByRegexENS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEESE_bENK3$_0clIK8LogEntryINS_7variantIJfdNS_13unordered_mapISE_dNS_4hashISE_EENS_8equal_toISE_EENSC_INS_4pairIKSE_dEEEEEEEEE10PropertiesEEEDaRT_EUlRKSY_E_EEJRNS0_6__baseILNS0_6_TraitE1EJfdSS_EEEEEEDcSY_DpT0_
 + __ZNSt3__116__variant_detail12__visitation6__base12__dispatcherIJLm1EEE10__dispatchB9fqe220106IOZNS0_6__dtorINS0_8__traitsIJfdNS_13unordered_mapINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEdNS_4hashISE_EENS_8equal_toISE_EENSC_INS_4pairIKSE_dEEEEEEEEELNS0_6_TraitE1EE9__destroyB9fqe220106EvEUlRT_E_JRNS0_6__baseILSP_1EJfdSN_EEEEEEDcSR_DpT0_
 + __ZNSt3__116__variant_detail12__visitation6__base12__dispatcherIJLm2EEE10__dispatchB9fqe220106IONS1_9__variant15__value_visitorIZ14getDoubleValueRKNS_7variantIJfdNS_13unordered_mapINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEdNS_4hashISF_EENS_8equal_toISF_EENSD_INS_4pairIKSF_dEEEEEEEEEEUlOT_E_EEJRKNS0_6__baseILNS0_6_TraitE1EJfdSO_EEEEEEDcSS_DpT0_
-+ __ZNSt3__116__variant_detail12__visitation6__base12__dispatcherIJLm2EEE10__dispatchB9fqe220106IONS1_9__variant15__value_visitorIZ14getDoubleValueRKNS_7variantIJfdNS_13unordered_mapINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEdNS_4hashISF_EENS_8equal_toISF_EENSD_INS_4pairIKSF_dEEEEEEEEEEUlOT_E_EEJRKNS0_6__baseILNS0_6_TraitE1EJfdSO_EEEEEEDcSS_DpT0_.cold.1
 + __ZNSt3__116__variant_detail12__visitation6__base12__dispatcherIJLm2EEE10__dispatchB9fqe220106IONS1_9__variant15__value_visitorIZZN10BaseLogger21getItemsByActiveStateENS8_11ActiveStateEENK3$_0clERK8LogEntryINS_7variantIJfdNS_13unordered_mapINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEdNS_4hashISJ_EENS_8equal_toISJ_EENSH_INS_4pairIKSJ_dEEEEEEEEE10PropertiesEEUlRKT_E_EEJRNS0_6__baseILNS0_6_TraitE1EJfdSS_EEEEEEDcSY_DpT0_
 + __ZNSt3__116__variant_detail12__visitation6__base12__dispatcherIJLm2EEE10__dispatchB9fqe220106IONS1_9__variant15__value_visitorIZZN12LoggerModule15getEntryByRegexENS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEESE_ENK3$_0clIK8LogEntryINS_7variantIJfdNS_13unordered_mapISE_dNS_4hashISE_EENS_8equal_toISE_EENSC_INS_4pairIKSE_dEEEEEEEEE10PropertiesEEEDaRT_EUlRKSY_E_EEJRNS0_6__baseILNS0_6_TraitE1EJfdSS_EEEEEEDcSY_DpT0_
 + __ZNSt3__116__variant_detail12__visitation6__base12__dispatcherIJLm2EEE10__dispatchB9fqe220106IONS1_9__variant15__value_visitorIZZN12LoggerModule18getAccessorByRegexENS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEESE_ENK3$_0clIK8LogEntryINS_7variantIJfdNS_13unordered_mapISE_dNS_4hashISE_EENS_8equal_toISE_EENSC_INS_4pairIKSE_dEEEEEEEEE10PropertiesEEEDaRT_EUlRKSY_E_EEJRNS0_6__baseILNS0_6_TraitE1EJfdSS_EEEEEEDcSY_DpT0_
@@ -252,7 +192,6 @@ Symbols:
 + __ZNSt3__117__floyd_sift_downB9fqe220106INS_17_ClassicAlgPolicyERNS_6__lessIvvEEPNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEET1_SC_OT0_NS_15iterator_traitsISC_E15difference_typeE
 + __ZNSt3__117__floyd_sift_downB9fqe220106INS_17_ClassicAlgPolicyERPFbRKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES9_EPS7_EET1_SE_OT0_NS_15iterator_traitsISE_E15difference_typeE
 + __ZNSt3__118__match_char_icaseIcNS_12regex_traitsIcEEEC2B9fqe220106ERKS2_cPNS_6__nodeIcEE
-+ __ZNSt3__118__match_char_icaseIcNS_12regex_traitsIcEEEC2B9fqe220106ERKS2_cPNS_6__nodeIcEE.cold.1
 + __ZNSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B9fqe220106Ev
 + __ZNSt3__119__allocate_at_leastB9fqe220106INS_9allocatorI16SmartBatteryDataEENS_16allocator_traitsIS3_EEEENS_19__allocation_resultINT0_7pointerENS7_9size_typeEEERT_m
 + __ZNSt3__119__allocate_at_leastB9fqe220106INS_9allocatorI7OBCDataEENS_16allocator_traitsIS3_EEEENS_19__allocation_resultINT0_7pointerENS7_9size_typeEEERT_m
@@ -578,7 +517,6 @@ Symbols:
 - __ZNSt3__110__function6__funcIZNK12LoggerModule20printAccessorByRegexENS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES8_bE3$_0FvRK8LogEntryINS_7variantIJfdNS_13unordered_mapIS8_dNS_4hashIS8_EENS_8equal_toIS8_EENS6_INS_4pairIKS8_dEEEEEEEEE10PropertiesEEEC1B9fqe220100ERKS9_
 - __ZNSt3__110shared_ptrINS_13__empty_stateIcEEE5resetB9fqe220100IS2_Li0EEEvPT_
 - __ZNSt3__110shared_ptrINS_13__empty_stateIcEEEC2B9fqe220100IS2_Li0EEEPT_
-- __ZNSt3__110shared_ptrINS_13__empty_stateIcEEEC2B9fqe220100IS2_Li0EEEPT_.cold.1
 - __ZNSt3__110unique_ptrI8LogEntryINS_7variantIJfdNS_13unordered_mapINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEdNS_4hashIS9_EENS_8equal_toIS9_EENS7_INS_4pairIKS9_dEEEEEEEEE10PropertiesENS_14default_deleteISL_EEE5resetB9fqe220100EPSL_
 - __ZNSt3__110unique_ptrIN16TypeErasedConfig5EntryENS_14default_deleteIS2_EEED1B9fqe220100Ev
 - __ZNSt3__110unique_ptrIN16TypeErasedConfig6ModuleENS_14default_deleteIS2_EEED1B9fqe220100Ev
@@ -631,17 +569,11 @@ Symbols:
 - __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B9fqe220100ERKNS_12basic_stringIcS2_S4_EEj
 - __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B9fqe220100Ej
 - __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorIN25AugmentedBatteryHealthLib14ACAMWeeklyDataENS_9allocatorIS3_EEE12emplace_backIJRKS3_EEERS3_DpOT_EUlvE_ZNS7_IJS9_EEESA_SD_EUlvE0_EEvbT_T0_
-- __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorIN25AugmentedBatteryHealthLib14ACAMWeeklyDataENS_9allocatorIS3_EEE12emplace_backIJRKS3_EEERS3_DpOT_EUlvE_ZNS7_IJS9_EEESA_SD_EUlvE0_EEvbT_T0_.cold.1
 - __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorIN25AugmentedBatteryHealthLib9BDCWeeklyENS_9allocatorIS3_EEE12emplace_backIJRKS3_EEERS3_DpOT_EUlvE_ZNS7_IJS9_EEESA_SD_EUlvE0_EEvbT_T0_
-- __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorIN25AugmentedBatteryHealthLib9BDCWeeklyENS_9allocatorIS3_EEE12emplace_backIJRKS3_EEERS3_DpOT_EUlvE_ZNS7_IJS9_EEESA_SD_EUlvE0_EEvbT_T0_.cold.1
 - __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorINS1_INS1_IdNS_9allocatorIdEEEENS2_IS4_EEEENS2_IS6_EEE12emplace_backIJRKS6_EEERS6_DpOT_EUlvE_ZNS9_IJSB_EEESC_SF_EUlvE0_EEvbT_T0_
-- __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorINS1_INS1_IdNS_9allocatorIdEEEENS2_IS4_EEEENS2_IS6_EEE12emplace_backIJRKS6_EEERS6_DpOT_EUlvE_ZNS9_IJSB_EEESC_SF_EUlvE0_EEvbT_T0_.cold.1
 - __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorINS1_IdNS_9allocatorIdEEEENS2_IS4_EEE12emplace_backIJRKS4_EEERS4_DpOT_EUlvE_ZNS7_IJS9_EEESA_SD_EUlvE0_EEvbT_T0_
-- __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorINS1_IdNS_9allocatorIdEEEENS2_IS4_EEE12emplace_backIJRKS4_EEERS4_DpOT_EUlvE_ZNS7_IJS9_EEESA_SD_EUlvE0_EEvbT_T0_.cold.1
 - __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSC_EEESD_SG_EUlvE0_EEvbT_T0_
-- __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSC_EEESD_SG_EUlvE0_EEvbT_T0_.cold.1
 - __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRS7_EEESB_DpOT_EUlvE_ZNSA_IJSB_EEESB_SE_EUlvE0_EEvbT_T0_
-- __ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRS7_EEESB_DpOT_EUlvE_ZNSA_IJSB_EEESB_SE_EUlvE0_EEvbT_T0_.cold.1
 - __ZNSt3__116__insertion_sortB9fqe220100INS_17_ClassicAlgPolicyERNS_6__lessIvvEEPNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEvT1_SC_T0_
 - __ZNSt3__116__insertion_sortB9fqe220100INS_17_ClassicAlgPolicyERPFbRKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES9_EPS7_EEvT1_SE_T0_
 - __ZNSt3__116__insertion_sortB9fqe220100INS_17_ClassicAlgPolicyERZN16TypeErasedConfig7utility15findBestMatchesINS_10unique_ptrINS2_5EntryENS_14default_deleteIS6_EEEEEENS_6vectorINS_17basic_string_viewIcNS_11char_traitsIcEEEENS_9allocatorISE_EEEESE_RKNS_13unordered_mapINS_12basic_stringIcSD_NSF_IcEEEET_NS_4hashISL_EENS_8equal_toISL_EENSF_INS_4pairIKSL_SM_EEEEEEmEUlRKZNS4_IS9_EESH_SE_SX_mE9dist_infoS10_E_PSY_EEvT1_S14_T0_
@@ -660,7 +592,6 @@ Symbols:
 - __ZNSt3__116__variant_detail12__visitation6__base12__dispatcherIJLm1EEE10__dispatchB9fqe220100IONS1_9__variant15__value_visitorIZZNK12LoggerModule20printAccessorByRegexENS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEESE_bENK3$_0clIK8LogEntryINS_7variantIJfdNS_13unordered_mapISE_dNS_4hashISE_EENS_8equal_toISE_EENSC_INS_4pairIKSE_dEEEEEEEEE10PropertiesEEEDaRT_EUlRKSY_E_EEJRNS0_6__baseILNS0_6_TraitE1EJfdSS_EEEEEEDcSY_DpT0_
 - __ZNSt3__116__variant_detail12__visitation6__base12__dispatcherIJLm1EEE10__dispatchB9fqe220100IOZNS0_6__dtorINS0_8__traitsIJfdNS_13unordered_mapINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEdNS_4hashISE_EENS_8equal_toISE_EENSC_INS_4pairIKSE_dEEEEEEEEELNS0_6_TraitE1EE9__destroyB9fqe220100EvEUlRT_E_JRNS0_6__baseILSP_1EJfdSN_EEEEEEDcSR_DpT0_
 - __ZNSt3__116__variant_detail12__visitation6__base12__dispatcherIJLm2EEE10__dispatchB9fqe220100IONS1_9__variant15__value_visitorIZ14getDoubleValueRKNS_7variantIJfdNS_13unordered_mapINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEdNS_4hashISF_EENS_8equal_toISF_EENSD_INS_4pairIKSF_dEEEEEEEEEEUlOT_E_EEJRKNS0_6__baseILNS0_6_TraitE1EJfdSO_EEEEEEDcSS_DpT0_
-- __ZNSt3__116__variant_detail12__visitation6__base12__dispatcherIJLm2EEE10__dispatchB9fqe220100IONS1_9__variant15__value_visitorIZ14getDoubleValueRKNS_7variantIJfdNS_13unordered_mapINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEdNS_4hashISF_EENS_8equal_toISF_EENSD_INS_4pairIKSF_dEEEEEEEEEEUlOT_E_EEJRKNS0_6__baseILNS0_6_TraitE1EJfdSO_EEEEEEDcSS_DpT0_.cold.1
 - __ZNSt3__116__variant_detail12__visitation6__base12__dispatcherIJLm2EEE10__dispatchB9fqe220100IONS1_9__variant15__value_visitorIZZN10BaseLogger21getItemsByActiveStateENS8_11ActiveStateEENK3$_0clERK8LogEntryINS_7variantIJfdNS_13unordered_mapINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEdNS_4hashISJ_EENS_8equal_toISJ_EENSH_INS_4pairIKSJ_dEEEEEEEEE10PropertiesEEUlRKT_E_EEJRNS0_6__baseILNS0_6_TraitE1EJfdSS_EEEEEEDcSY_DpT0_
 - __ZNSt3__116__variant_detail12__visitation6__base12__dispatcherIJLm2EEE10__dispatchB9fqe220100IONS1_9__variant15__value_visitorIZZN12LoggerModule15getEntryByRegexENS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEESE_ENK3$_0clIK8LogEntryINS_7variantIJfdNS_13unordered_mapISE_dNS_4hashISE_EENS_8equal_toISE_EENSC_INS_4pairIKSE_dEEEEEEEEE10PropertiesEEEDaRT_EUlRKSY_E_EEJRNS0_6__baseILNS0_6_TraitE1EJfdSS_EEEEEEDcSY_DpT0_
 - __ZNSt3__116__variant_detail12__visitation6__base12__dispatcherIJLm2EEE10__dispatchB9fqe220100IONS1_9__variant15__value_visitorIZZN12LoggerModule18getAccessorByRegexENS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEESE_ENK3$_0clIK8LogEntryINS_7variantIJfdNS_13unordered_mapISE_dNS_4hashISE_EENS_8equal_toISE_EENSC_INS_4pairIKSE_dEEEEEEEEE10PropertiesEEEDaRT_EUlRKSY_E_EEJRNS0_6__baseILNS0_6_TraitE1EJfdSS_EEEEEEDcSY_DpT0_
@@ -671,7 +602,6 @@ Symbols:
 - __ZNSt3__117__floyd_sift_downB9fqe220100INS_17_ClassicAlgPolicyERNS_6__lessIvvEEPNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEET1_SC_OT0_NS_15iterator_traitsISC_E15difference_typeE
 - __ZNSt3__117__floyd_sift_downB9fqe220100INS_17_ClassicAlgPolicyERPFbRKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES9_EPS7_EET1_SE_OT0_NS_15iterator_traitsISE_E15difference_typeE
 - __ZNSt3__118__match_char_icaseIcNS_12regex_traitsIcEEEC2B9fqe220100ERKS2_cPNS_6__nodeIcEE
-- __ZNSt3__118__match_char_icaseIcNS_12regex_traitsIcEEEC2B9fqe220100ERKS2_cPNS_6__nodeIcEE.cold.1
 - __ZNSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B9fqe220100Ev
 - __ZNSt3__119__allocate_at_leastB9fqe220100INS_9allocatorI16SmartBatteryDataEENS_16allocator_traitsIS3_EEEENS_19__allocation_resultINT0_7pointerENS7_9size_typeEEERT_m
 - __ZNSt3__119__allocate_at_leastB9fqe220100INS_9allocatorI7OBCDataEENS_16allocator_traitsIS3_EEEENS_19__allocation_resultINT0_7pointerENS7_9size_typeEEERT_m
@@ -953,5 +883,4 @@ CStrings:
 - "\n{\n  \"Lifetime\": {\n    \"controller\": {\n      \"Ki\": 8e-10,\n      \"Kp\": 0.0005,\n      \"u_max\": 1,\n      \"u_min\": 0\n    },\n    \"settings\": {\n      \"shape\": {\n        \"a\": 0,\n        \"b\": 5.7519e-05,\n        \"c\": 2.9304e+03\n      }\n    },\n    \"enable\": 1,\n    \"interval\": 86400\n  },\n  \"ProjectedLifetime\": {\n    \"controller\": {\n      \"Ki\": 0,\n      \"Kp\": 2.00e-03,\n      \"u_max\": 1,\n      \"u_min\": 0\n    },\n    \"settings\": {\n      \"epsilon\": 0.000694444,\n      \"lambda\": 0.85\n    },\n    \"enable\": 0,\n    \"interval\": 86400\n  },\n  \"SafeHarbor\": {\n    \"aged_target\": {\n      \"debounce_time\": 8,\n      \"socv\": 3.2\n    },\n    \"swell_target\": {\n      \"debounce_time\": 8,\n      \"socv\": 3.2\n    }\n  },\n  \"Weekly\": {\n    \"controller\": {\n      \"Ki\": 0,\n      \"Kp\": 3.33e-02,\n      \"u_max\": 1,\n      \"u_min\": 0\n    },\n    \"settings\": {\n      \"shape\": {\n        \"a\": 0,\n        \"b\": 0,\n        \"c\": 46.15384615\n      }\n    },\n    \"enable\": 0,\n    \"interval\": 604800\n  },\n  \"control_effort_table\": {\n    \"control_effort\": [0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1],\n    \"debounce_time\": [8,8,8,8,8,8,8,8,8,8,8],\n    \"socv\": [3,3.1,3.12,3.13,3.14,3.15,3.16,3.17,3.18,3.19,3.2]\n  },\n  \"final_budget_target\": 12000,\n  \"final_time\": 157680000,\n  \"grace_period\": 1209600,\n  \"grace_period_budget_target\": 3000,\n  \"control_effort_slew_rate\": 0.1,\n  \"weights\": [[[1,1,1],[1,1,1],[1,1,1]],[[1,1,1],[1,1,1],[1,1,1]],[[0,0,0],[0,0,0],[0,0,0]]]\n}\n"
 - "control_effort_slew_rate"
 - "v8@?0"
-
 ```

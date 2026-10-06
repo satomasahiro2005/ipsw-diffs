@@ -2,121 +2,63 @@
 
 > `/System/Library/PrivateFrameworks/SearchOnDeviceAnalytics.framework/SearchOnDeviceAnalytics`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x171604` | `0x1773c0` | **`+0x5dbc`** |
+| `__TEXT.__eh_frame` | `0xd264` | `0xd60c` | **`+0x3a8`** |
+| `__TEXT.__oslogstring` | `0xb71` | `0xdf1` | **`+0x280`** |
+| `__TEXT.__const` | `0x28210` | `0x28430` | **`+0x220`** |
+| `__DATA.__bss` | `0x272c0` | `0x27440` | **`+0x180`** |
+| `__AUTH.__data` | `0x9640` | `0x9780` | **`+0x140`** |
+| `__AUTH_CONST.__objc_const` | `0x5a78` | `0x5b90` | **`+0x118`** |
+| `__TEXT.__unwind_info` | `0x88e0` | `0x89f8` | **`+0x118`** |
+| `__AUTH_CONST.__const` | `0xc708` | `0xc818` | **`+0x110`** |
+| `__TEXT.__swift5_typeref` | `0x4219` | `0x42db` | **`+0xc2`** |
+| `__TEXT.__swift5_reflstr` | `0xaf22` | `0xafc2` | **`+0xa0`** |
+| `__TEXT.__swift5_fieldmd` | `0x91f4` | `0x9290` | **`+0x9c`** |
+| `__TEXT.__constg_swiftt` | `0x6da4` | `0x6e24` | **`+0x80`** |
+| `__TEXT.__cstring` | `0x5f54` | `0x5fd4` | **`+0x80`** |
+| `__AUTH_CONST.__auth_got` | `0x1890` | `0x18e8` | **`+0x58`** |
+| `__DATA.__data` | `0x5940` | `0x5990` | **`+0x50`** |
+| `__DATA_CONST.__const` | `0x1dc0` | `0x1df8` | **`+0x38`** |
+| `__TEXT.__swift5_capture` | `0xabc` | `0xaec` | **`+0x30`** |
+| `__DATA.__common` | `0x259` | `0x269` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0xb08` | `0xb18` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x14c0` | `0x14cc` | **`+0xc`** |
+| `__TEXT.__swift5_types` | `0x534` | `0x540` | **`+0xc`** |
+| `__TEXT.__swift_as_cont` | `0x6c` | `0x78` | **`+0xc`** |
+| `__TEXT.__swift_as_entry` | `0x44` | `0x50` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `0x40` | `0x4c` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x198` | `0x1a0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.56.26.11.2
--  __TEXT.__text: 0x16946c
 +3605.21.1.1.1
-+  __TEXT.__text: 0x16ee88
-   __TEXT.__objc_methlist: 0x1d8
--  __TEXT.__const: 0x28210
--  __TEXT.__swift5_typeref: 0x4219
--  __TEXT.__swift5_fieldmd: 0x91f4
--  __TEXT.__constg_swiftt: 0x6da4
--  __TEXT.__swift5_reflstr: 0xaf22
-+  __TEXT.__const: 0x28430
-+  __TEXT.__swift5_typeref: 0x42db
-+  __TEXT.__constg_swiftt: 0x6e24
-+  __TEXT.__swift5_fieldmd: 0x9290
-   __TEXT.__swift5_builtin: 0x208
--  __TEXT.__cstring: 0x5f54
-+  __TEXT.__swift5_reflstr: 0xafc2
-   __TEXT.__swift5_assocty: 0xec8
-+  __TEXT.__swift5_proto: 0x14cc
-+  __TEXT.__swift5_types: 0x540
-+  __TEXT.__swift5_capture: 0xaec
-+  __TEXT.__cstring: 0x5fd4
-+  __TEXT.__swift_as_entry: 0x50
-+  __TEXT.__swift_as_ret: 0x4c
-+  __TEXT.__swift_as_cont: 0x78
-   __TEXT.__swift5_protos: 0xa4
--  __TEXT.__swift5_proto: 0x14c0
--  __TEXT.__swift5_types: 0x534
--  __TEXT.__swift5_capture: 0xabc
--  __TEXT.__swift_as_entry: 0x44
--  __TEXT.__swift_as_ret: 0x40
--  __TEXT.__swift_as_cont: 0x6c
--  __TEXT.__oslogstring: 0xb71
-+  __TEXT.__oslogstring: 0xdf1
-   __TEXT.__swift5_mpenum: 0xf4
--  __TEXT.__unwind_info: 0xa9c8
--  __TEXT.__eh_frame: 0xd26c
-+  __TEXT.__unwind_info: 0xab18
-+  __TEXT.__eh_frame: 0xd614
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1dc0
--  __DATA_CONST.__objc_classlist: 0x198
-+  __DATA_CONST.__const: 0x1df8
-+  __DATA_CONST.__objc_classlist: 0x1a0
-   __DATA_CONST.__objc_protolist: 0x58
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x2b8
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xc708
--  __AUTH_CONST.__objc_const: 0x5a78
--  __AUTH_CONST.__auth_got: 0x1890
-+  __AUTH_CONST.__const: 0xc818
-+  __AUTH_CONST.__objc_const: 0x5b90
-+  __AUTH_CONST.__auth_got: 0x18e8
-   __AUTH.__objc_data: 0x978
--  __AUTH.__data: 0x9640
--  __DATA.__data: 0x5940
--  __DATA.__common: 0x259
-+  __AUTH.__data: 0x9780
-+  __DATA.__data: 0x5990
-+  __DATA.__common: 0x269
-   __DATA_DIRTY.__objc_data: 0xa0
--  __DATA_DIRTY.__data: 0xb08
-+  __DATA_DIRTY.__data: 0xb18
-   __DATA_DIRTY.__common: 0x80
-   __DATA_DIRTY.__bss: 0xc00
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf
-   - /System/Library/PrivateFrameworks/PegasusConfiguration.framework/PegasusConfiguration
-   - /System/Library/PrivateFrameworks/PegasusPersistence.framework/PegasusPersistence
 +  - /System/Library/PrivateFrameworks/PoirotAnalytics.framework/PoirotAnalytics
-   - /System/Library/PrivateFrameworks/PoirotBlocks.framework/PoirotBlocks
-   - /System/Library/PrivateFrameworks/PoirotSQLite.framework/PoirotSQLite
-   - /System/Library/PrivateFrameworks/PoirotSchematizer.framework/PoirotSchematizer
 
-   - /System/Library/PrivateFrameworks/SearchFoundation.framework/SearchFoundation
-   - /System/Library/PrivateFrameworks/SymptomDiagnosticReporter.framework/SymptomDiagnosticReporter
-   - /System/Library/PrivateFrameworks/UnifiedAssetFramework.framework/UnifiedAssetFramework
 -  - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
+
 +  - /usr/lib/swift/libswiftAccelerate.dylib
-   - /usr/lib/swift/libswiftAppleArchive.dylib
-   - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
+
 +  - /usr/lib/swift/libswiftMetal.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
+
 +  - /usr/lib/swift/libswiftQuartzCore.dylib
-   - /usr/lib/swift/libswiftSynchronization.dylib
+
 +  - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
+
 -  Functions: 15405
--  Symbols:   3460
+-  Symbols:   3407
 -  CStrings:  629
 +  - /usr/lib/swift/libswiftsimd.dylib
 +  Functions: 15515
-+  Symbols:   3483
++  Symbols:   3430
 +  CStrings:  637
- 
 Symbols:
 + __DATA__TtC23SearchOnDeviceAnalytics21SAWTimeWindowBookmark
 + __IVARS__TtC23SearchOnDeviceAnalytics21SAWTimeWindowBookmark

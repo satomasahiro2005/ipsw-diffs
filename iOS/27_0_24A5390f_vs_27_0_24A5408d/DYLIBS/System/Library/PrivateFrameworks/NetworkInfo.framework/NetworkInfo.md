@@ -2,15 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/NetworkInfo.framework/NetworkInfo`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe1708` | `0xe171c` | **`+0x14`** |
+
+### Other Changes
+
 ```diff
 
 -220.0.0.0.0
--  __TEXT.__text: 0xe1708
 +224.0.0.0.0
-+  __TEXT.__text: 0xe171c
-   __TEXT.__objc_methlist: 0x8d4
-   __TEXT.__const: 0x35e0
-   __TEXT.__cstring: 0x4024
 Functions:
-~ sub_2931f05dc -> sub_292d725dc : 2336 -> 2356
+~ sub_2930865dc -> sub_292c805dc : 2336 -> 2356
 ```

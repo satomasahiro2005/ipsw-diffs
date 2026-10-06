@@ -2,25 +2,19 @@
 
 > `/System/Library/Frameworks/PHASE.framework/PHASE`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x252a50` | `0x252c08` | **`+0x1b8`** |
+| `__TEXT.__realtime` | `0x17138` | `0x17140` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 400.0.0.0.0
--  __TEXT.__text: 0x252a50
--  __TEXT.__realtime: 0x17138
-+  __TEXT.__text: 0x252c08
-+  __TEXT.__realtime: 0x17140
-   __TEXT.__objc_methlist: 0x5084
-   __TEXT.__const: 0x47b1c
-   __TEXT.__dlopen_cstrs: 0x5a
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 9894
 +  Functions: 9893
-   Symbols:   14476
-   CStrings:  4595
- 
 Functions:
 ~ __ZNSt3__110__function6__funcINS_6__bindIMN5Phase32ActionTreeServerCommandProcessorEFvPKvEJPS4_RKNS_12placeholders4__phILi1EEEEEEFvS6_EEclEOS6_ : 76 -> 80
 ~ __ZNSt3__16vectorIPvNS_9allocatorIS1_EEE6resizeEm : 284 -> 288

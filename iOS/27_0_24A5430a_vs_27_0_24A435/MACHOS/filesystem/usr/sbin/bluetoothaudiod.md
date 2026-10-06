@@ -2,85 +2,51 @@
 
 > `/usr/sbin/bluetoothaudiod`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6a8c8` | `0x7bcd4` | **`+0x1140c`** |
+| `__TEXT.__objc_methname` | `0x11602` | `0x139a5` | **`+0x23a3`** |
+| `__TEXT.__cstring` | `0x6b04` | `0x86f0` | **`+0x1bec`** |
+| `__DATA.__objc_const` | `0xa6a8` | `0xb968` | **`+0x12c0`** |
+| `__TEXT.__objc_stubs` | `0xb060` | `0xc1e0` | **`+0x1180`** |
+| `__TEXT.__objc_methlist` | `0x6680` | `0x7540` | **`+0xec0`** |
+| `__TEXT.__oslogstring` | `0xb10b` | `0xbf94` | **`+0xe89`** |
+| `__DATA_CONST.__cfstring` | `0x6180` | `0x6f80` | **`+0xe00`** |
+| `__DATA.__objc_selrefs` | `0x3a10` | `0x4138` | **`+0x728`** |
+| `__TEXT.__objc_methtype` | `0x20ec` | `0x2464` | **`+0x378`** |
+| `__DATA.__objc_data` | `0xe60` | `0x1130` | **`+0x2d0`** |
+| `__TEXT.__unwind_info` | `0x1228` | `0x14a0` | **`+0x278`** |
+| `__DATA_CONST.__objc_arraydata` | `0x228` | `0x418` | **`+0x1f0`** |
+| `__DATA_CONST.__const` | `0x1860` | `0x1a30` | **`+0x1d0`** |
+| `__DATA.__objc_ivar` | `0x77c` | `0x894` | **`+0x118`** |
+| `__TEXT.__const` | `0x9c0` | `0xacc` | **`+0x10c`** |
+| `__DATA_CONST.__objc_arrayobj` | `0x90` | `0x150` | **`+0xc0`** |
+| `__TEXT.__objc_classname` | `0x43e` | `0x4d4` | **`+0x96`** |
+| `__DATA_CONST.__objc_intobj` | `0x138` | `0x1c8` | **`+0x90`** |
+| `__DATA.__data` | `0x708` | `0x778` | **`+0x70`** |
+| `__TEXT.__gcc_except_tab` | `0xd54` | `0xdb4` | **`+0x60`** |
+| `__DATA_CONST.__objc_classlist` | `0x170` | `0x1b8` | **`+0x48`** |
+| `__DATA_CONST.__objc_superrefs` | `0x138` | `0x170` | **`+0x38`** |
+| `__DATA_CONST.__got` | `0x538` | `0x548` | **`+0x10`** |
+
+### Same-size Content Changes
 
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_dictobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_dictobj`
+
+### Other Changes
 
 ```diff
 
- 2700.39.0.0.0
--  __TEXT.__text: 0x6a8c8
-+  __TEXT.__text: 0x7bcd4
-   __TEXT.__auth_stubs: 0x900
--  __TEXT.__objc_stubs: 0xb060
--  __TEXT.__objc_methlist: 0x6680
--  __TEXT.__const: 0x9c0
--  __TEXT.__objc_methname: 0x11602
--  __TEXT.__oslogstring: 0xb10b
--  __TEXT.__cstring: 0x6b04
--  __TEXT.__objc_classname: 0x43e
--  __TEXT.__objc_methtype: 0x20ec
--  __TEXT.__gcc_except_tab: 0xd54
--  __TEXT.__unwind_info: 0x1228
--  __DATA_CONST.__const: 0x1860
--  __DATA_CONST.__cfstring: 0x6180
--  __DATA_CONST.__objc_classlist: 0x170
-+  __TEXT.__objc_stubs: 0xc1e0
-+  __TEXT.__objc_methlist: 0x7540
-+  __TEXT.__const: 0xacc
-+  __TEXT.__objc_methname: 0x139a5
-+  __TEXT.__oslogstring: 0xbf94
-+  __TEXT.__cstring: 0x86f0
-+  __TEXT.__objc_classname: 0x4d4
-+  __TEXT.__objc_methtype: 0x2464
-+  __TEXT.__gcc_except_tab: 0xdb4
-+  __TEXT.__unwind_info: 0x14a0
-+  __DATA_CONST.__const: 0x1a30
-+  __DATA_CONST.__cfstring: 0x6f80
-+  __DATA_CONST.__objc_classlist: 0x1b8
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__objc_superrefs: 0x138
--  __DATA_CONST.__objc_arraydata: 0x228
--  __DATA_CONST.__objc_arrayobj: 0x90
--  __DATA_CONST.__objc_intobj: 0x138
-+  __DATA_CONST.__objc_superrefs: 0x170
-+  __DATA_CONST.__objc_arraydata: 0x418
-+  __DATA_CONST.__objc_arrayobj: 0x150
-+  __DATA_CONST.__objc_intobj: 0x1c8
-   __DATA_CONST.__objc_dictobj: 0xa0
-   __DATA_CONST.__auth_got: 0x490
--  __DATA_CONST.__got: 0x538
-+  __DATA_CONST.__got: 0x548
-   __DATA_CONST.__auth_ptr: 0x8
--  __DATA.__objc_const: 0xa6a8
--  __DATA.__objc_selrefs: 0x3a10
--  __DATA.__objc_ivar: 0x77c
--  __DATA.__objc_data: 0xe60
--  __DATA.__data: 0x708
-+  __DATA.__objc_const: 0xb968
-+  __DATA.__objc_selrefs: 0x4138
-+  __DATA.__objc_ivar: 0x894
-+  __DATA.__objc_data: 0x1130
-+  __DATA.__data: 0x778
-   __DATA.__common: 0x28
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2469
 +  Functions: 2888
-   Symbols:   311
+
 -  CStrings:  5013
 +  CStrings:  5624
- 
 CStrings:
 + "\r"
 + " %s: Error unsubscribing central %@ to characteristic \"%@\""

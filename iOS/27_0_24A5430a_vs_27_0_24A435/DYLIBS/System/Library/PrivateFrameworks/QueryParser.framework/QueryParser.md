@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/QueryParser.framework/QueryParser`
 
-```diff
+### Section Size Changes
 
- 3600.31.21.11.1
--  __TEXT.__text: 0x11766c
-+  __TEXT.__text: 0x117670
-   __TEXT.__objc_methlist: 0x2a94
-   __TEXT.__const: 0x2d28
-   __TEXT.__gcc_except_tab: 0x13798
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x11766c` | `0x117670` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _OUTLINED_FUNCTION_8 : 12 -> 24
 ~ _OUTLINED_FUNCTION_9 : 24 -> 12

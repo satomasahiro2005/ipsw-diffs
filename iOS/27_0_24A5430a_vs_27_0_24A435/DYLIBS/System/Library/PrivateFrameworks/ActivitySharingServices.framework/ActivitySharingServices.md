@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ActivitySharingServices.framework/ActivitySharingServices`
 
-```diff
+### Section Size Changes
 
- 2027.0.13.0.0
--  __TEXT.__text: 0x146910
-+  __TEXT.__text: 0x146944
-   __TEXT.__objc_methlist: 0x984
-   __TEXT.__const: 0x8c08
-   __TEXT.__swift5_typeref: 0x355c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x146910` | `0x146944` | **`+0x34`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_2261ef454 -> sub_226a35454 : 680 -> 684
 ~ sub_2261f484c -> sub_226a3a850 : 652 -> 656

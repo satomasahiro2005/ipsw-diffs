@@ -2,34 +2,28 @@
 
 > `/System/Library/PrivateFrameworks/MTLCompiler.framework/Versions/32023/MTLCompiler`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbab1c` | `0xbad3c` | **`+0x220`** |
+| `__TEXT.__unwind_info` | `0x30b8` | `0x30c8` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x9bc8` | `0x9bd0` | **`+0x8`** |
+| `__TEXT.__cstring` | `0x85bd` | `0x85c4` | **`+0x7`** |
+
+### Other Changes
+
 ```diff
 
 -382.5.0.0.0
--  __TEXT.__text: 0xbab1c
--  __TEXT.__gcc_except_tab: 0x9bc8
 +382.5.3.0.0
-+  __TEXT.__text: 0xbad3c
-+  __TEXT.__gcc_except_tab: 0x9bd0
-   __TEXT.__const: 0x10e8
--  __TEXT.__cstring: 0x85bd
-+  __TEXT.__cstring: 0x85c4
-   __TEXT.__oslogstring: 0x4e7
--  __TEXT.__unwind_info: 0x30b8
-+  __TEXT.__unwind_info: 0x30c8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2259
--  Symbols:   3637
+-  Symbols:   3607
 -  CStrings:  1413
 +  Functions: 2260
-+  Symbols:   3638
++  Symbols:   3608
 +  CStrings:  1414
- 
 Symbols:
 + __Z19getOrInsertFunctionIJRA27_KcRPN4llvm4TypeEPNS3_11PointerTypeES6_S6_S6_S6_S6_EEPNS3_8FunctionERNS3_6ModuleEDpOT_
 + __Z19getOrInsertFunctionIJRA28_KcRPN4llvm4TypeEPNS3_11PointerTypeES6_S6_S6_S6_S6_EEPNS3_8FunctionERNS3_6ModuleEDpOT_

@@ -2,82 +2,51 @@
 
 > `/System/Library/HIDPlugins/ServicePlugins/HSTouchHIDService.plugin/HSTouchHIDService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__unwind_info`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcfc38` | `0xcfca0` | **`+0x68`** |
+| `__TEXT.__oslogstring` | `0x4c64` | `0x4caa` | **`+0x46`** |
+| `__DATA_CONST.__cfstring` | `0x7720` | `0x7760` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x1e18` | `0x1dd8` | **`-0x40`** |
+| `__TEXT.__objc_stubs` | `0x7ae0` | `0x7b20` | **`+0x40`** |
+| `__DATA_CONST.__objc_dictobj` | `0x258` | `0x230` | **`-0x28`** |
+| `__TEXT.__objc_methname` | `0x908a` | `0x90a9` | **`+0x1f`** |
+| `__DATA_CONST.__objc_intobj` | `0x6c0` | `0x6a8` | **`-0x18`** |
+| `__TEXT.__cstring` | `0xc1d9` | `0xc1f1` | **`+0x18`** |
+| `__DATA.__objc_selrefs` | `0x2430` | `0x2440` | **`+0x10`** |
+| `__DATA_CONST.__objc_arraydata` | `0x518` | `0x508` | **`-0x10`** |
+| `__TEXT.__gcc_except_tab` | `0xead0` | `0xead8` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x4908` | `0x4900` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_const`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__const`
+- `__TEXT.__init_offsets`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
 -10100.44.0.0.0
--  __TEXT.__text: 0xcd9f4
 +10110.3.0.0.0
-+  __TEXT.__text: 0xcda5c
-   __TEXT.__auth_stubs: 0x1920
--  __TEXT.__objc_stubs: 0x7ae0
-+  __TEXT.__objc_stubs: 0x7b20
-   __TEXT.__init_offsets: 0x150c
-   __TEXT.__objc_methlist: 0x5558
-   __TEXT.__const: 0x3e7e
--  __TEXT.__gcc_except_tab: 0xead0
--  __TEXT.__cstring: 0xc1d9
--  __TEXT.__oslogstring: 0x4c64
--  __TEXT.__objc_methname: 0x908a
-+  __TEXT.__gcc_except_tab: 0xead8
-+  __TEXT.__cstring: 0xc1f1
-+  __TEXT.__oslogstring: 0x4caa
-+  __TEXT.__objc_methname: 0x90a9
-   __TEXT.__objc_classname: 0xbb0
-   __TEXT.__objc_methtype: 0x58b1
-   __TEXT.__unwind_info: 0x6b08
--  __DATA_CONST.__const: 0x1e18
--  __DATA_CONST.__cfstring: 0x7720
-+  __DATA_CONST.__const: 0x1dd8
-+  __DATA_CONST.__cfstring: 0x7760
-   __DATA_CONST.__objc_classlist: 0x3c8
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x2d0
--  __DATA_CONST.__objc_intobj: 0x6c0
-+  __DATA_CONST.__objc_intobj: 0x6a8
-   __DATA_CONST.__objc_doubleobj: 0xc0
--  __DATA_CONST.__objc_arraydata: 0x518
-+  __DATA_CONST.__objc_arraydata: 0x508
-   __DATA_CONST.__objc_arrayobj: 0x168
-   __DATA_CONST.__objc_floatobj: 0x20
--  __DATA_CONST.__objc_dictobj: 0x258
-+  __DATA_CONST.__objc_dictobj: 0x230
-   __DATA_CONST.__auth_got: 0xca0
-   __DATA_CONST.__got: 0x2c8
-   __DATA.__objc_const: 0x9eb0
--  __DATA.__objc_selrefs: 0x2430
-+  __DATA.__objc_selrefs: 0x2440
-   __DATA.__objc_ivar: 0x730
-   __DATA.__objc_data: 0x25d0
-   __DATA.__data: 0x1610
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 5286
 +  Functions: 5285
-   Symbols:   7773
+
 -  CStrings:  4199
 +  CStrings:  4203
- 
 Symbols:
 + _objc_msgSend$boolForKey:
 + _objc_msgSend$initWithSuiteName:

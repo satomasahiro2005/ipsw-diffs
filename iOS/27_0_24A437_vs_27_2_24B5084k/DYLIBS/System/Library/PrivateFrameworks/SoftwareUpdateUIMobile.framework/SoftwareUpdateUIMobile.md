@@ -2,58 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/SoftwareUpdateUIMobile.framework/SoftwareUpdateUIMobile`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7ccdc` | `0x7f0d0` | **`+0x23f4`** |
+| `__TEXT.__cstring` | `0x4a27` | `0x52f7` | **`+0x8d0`** |
+| `__TEXT.__oslogstring` | `0x8418` | `0x8558` | **`+0x140`** |
+| `__DATA_CONST.__const` | `0x9300` | `0x93a0` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0xeb0` | `0xef0` | **`+0x40`** |
+| `__TEXT.__gcc_except_tab` | `0x1464` | `0x149c` | **`+0x38`** |
+| `__DATA_CONST.__objc_selrefs` | `0x18f8` | `0x1910` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x2864` | `0x287c` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
 -772.0.20.0.0
--  __TEXT.__text: 0x7c568
--  __TEXT.__objc_methlist: 0x2864
 +772.40.11.0.0
-+  __TEXT.__text: 0x7e95c
-+  __TEXT.__objc_methlist: 0x287c
-   __TEXT.__const: 0x450
--  __TEXT.__cstring: 0x4a27
--  __TEXT.__oslogstring: 0x8418
--  __TEXT.__gcc_except_tab: 0x1464
-+  __TEXT.__cstring: 0x52f7
-+  __TEXT.__oslogstring: 0x8558
-+  __TEXT.__gcc_except_tab: 0x149c
-   __TEXT.__constg_swiftt: 0xf0
-   __TEXT.__swift5_typeref: 0x235
-   __TEXT.__swift5_builtin: 0x14
 
-   __TEXT.__swift_as_entry: 0x14
-   __TEXT.__swift_as_ret: 0x8
-   __TEXT.__swift_as_cont: 0xc
--  __TEXT.__unwind_info: 0x1560
-+  __TEXT.__unwind_info: 0x15a0
-   __TEXT.__eh_frame: 0x388
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9300
-+  __DATA_CONST.__const: 0x93a0
-   __DATA_CONST.__objc_classlist: 0x120
-   __DATA_CONST.__objc_catlist: 0x38
-   __DATA_CONST.__objc_protolist: 0xd8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x18f8
-+  __DATA_CONST.__objc_selrefs: 0x1910
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__objc_superrefs: 0xd8
-   __DATA_CONST.__got: 0x918
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1160
--  Symbols:   2604
+-  Symbols:   2022
 -  CStrings:  693
 +  Functions: 1168
-+  Symbols:   2620
++  Symbols:   2035
 +  CStrings:  772
- 
 Symbols:
 + -[SUUIMobileScanOperation useCachedScanResultsIfAvailableForEventInfo:activity:completion:]
 + -[SUUIMobileScanOperation waitForControllerIdleThenScanForEventInfo:activity:]
@@ -87,9 +61,6 @@ Symbols:
 + ___block_descriptor_80_e8_32s40s48bs56w_e8_v12?0B8lw56l8s48l8s32l8s40l8
 + ___os_log_helper_16_2_3_8_32_8_32_8_66
 + ___os_log_helper_16_2_3_8_32_8_66_8_34
-+ _objc_msgSend$isDownloadOnly
-+ _objc_msgSend$useCachedScanResultsIfAvailableForEventInfo:activity:completion:
-+ _objc_msgSend$waitForControllerIdleThenScanForEventInfo:activity:
 - GCC_except_table111
 - GCC_except_table113
 - GCC_except_table115

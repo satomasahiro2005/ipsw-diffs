@@ -2,76 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/SiriCloudSettings.framework/SiriCloudSettings`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x24f2c` | `0x28214` | **`+0x32e8`** |
+| `__TEXT.__cstring` | `0x113d` | `0x158d` | **`+0x450`** |
+| `__AUTH.__data` | `0x300` | `0x398` | **`+0x98`** |
+| `__AUTH_CONST.__objc_const` | `0x440` | `0x4d0` | **`+0x90`** |
+| `__TEXT.__constg_swiftt` | `0xad8` | `0xb38` | **`+0x60`** |
+| `__TEXT.__const` | `0x1852` | `0x18a8` | **`+0x56`** |
+| `__AUTH_CONST.__const` | `0xd68` | `0xd88` | **`+0x20`** |
+| `__DATA.__data` | `0x790` | `0x7b0` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x38c` | `0x3ac` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x7b0` | `0x7c0` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0x1c22` | `0x1c2e` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x20` | `0x28` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x68` | `0x70` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.62.36.1.1
--  __TEXT.__text: 0x24f2c
 +3600.62.43.1.7
-+  __TEXT.__text: 0x28214
-   __TEXT.__objc_methlist: 0x15c
--  __TEXT.__const: 0x1852
--  __TEXT.__cstring: 0x113d
--  __TEXT.__constg_swiftt: 0xad8
--  __TEXT.__swift5_typeref: 0x1c22
-+  __TEXT.__const: 0x18a8
-+  __TEXT.__cstring: 0x158d
-+  __TEXT.__constg_swiftt: 0xb38
-+  __TEXT.__swift5_typeref: 0x1c2e
-   __TEXT.__swift5_reflstr: 0x32d
-   __TEXT.__swift5_assocty: 0x1b8
-   __TEXT.__swift5_builtin: 0x50
--  __TEXT.__swift5_fieldmd: 0x38c
-+  __TEXT.__swift5_fieldmd: 0x3ac
-   __TEXT.__swift5_proto: 0xac
--  __TEXT.__swift5_types: 0x68
-+  __TEXT.__swift5_types: 0x70
-   __TEXT.__swift5_capture: 0x250
-   __TEXT.__swift_as_entry: 0x30
-   __TEXT.__swift_as_cont: 0x28
 
-   __TEXT.__swift_as_ret: 0x18
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x7b0
-+  __TEXT.__unwind_info: 0x7c0
-   __TEXT.__eh_frame: 0x634
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x198
--  __DATA_CONST.__objc_classlist: 0x20
-+  __DATA_CONST.__objc_classlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x178
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xd68
--  __AUTH_CONST.__objc_const: 0x440
-+  __AUTH_CONST.__const: 0xd88
-+  __AUTH_CONST.__objc_const: 0x4d0
-   __AUTH_CONST.__auth_got: 0x908
-   __AUTH.__objc_data: 0x268
--  __AUTH.__data: 0x300
--  __DATA.__data: 0x790
-+  __AUTH.__data: 0x398
-+  __DATA.__data: 0x7b0
-   __DATA.__bss: 0x1618
-   __DATA.__common: 0x68
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 819
--  Symbols:   2416
+-  Symbols:   2393
 -  CStrings:  139
 +  Functions: 847
-+  Symbols:   2485
++  Symbols:   2462
 +  CStrings:  165
- 
 Symbols:
 + _$s10Foundation23LocalizedStringResourceV17SiriCloudSettingsE011LocalizableG0O09assistantG22NavigationTitleChinaAiACvgZ
 + _$s10Foundation23LocalizedStringResourceV17SiriCloudSettingsE011LocalizableG0O09assistantG22NavigationTitleChinaAiACvpZMV

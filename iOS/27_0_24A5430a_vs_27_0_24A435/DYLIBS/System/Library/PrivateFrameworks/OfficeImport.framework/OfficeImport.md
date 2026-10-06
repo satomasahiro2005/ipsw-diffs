@@ -2,18 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/OfficeImport.framework/OfficeImport`
 
-```diff
+### Section Size Changes
 
- 322.0.0.0.0
--  __TEXT.__text: 0x41f674
-+  __TEXT.__text: 0x41f52c
-   __TEXT.__objc_methlist: 0x3741c
-   __TEXT.__const: 0x168ea
--  __TEXT.__gcc_except_tab: 0x51f78
-+  __TEXT.__gcc_except_tab: 0x51f8c
-   __TEXT.__cstring: 0x27232
-   __TEXT.__ustring: 0x9f8
-   __TEXT.__unwind_info: 0x1cfc8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x41f674` | `0x41f52c` | **`-0x148`** |
+| `__TEXT.__gcc_except_tab` | `0x51f78` | `0x51f8c` | **`+0x14`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _propertyGetInfo : 88 -> 92
 ~ __ZNK23WrdFileInformationBlock8getFCLCBEt : 44 -> 48

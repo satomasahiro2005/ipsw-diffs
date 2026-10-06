@@ -2,115 +2,38 @@
 
 > `/System/Library/Frameworks/CoreText.framework/CoreText`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__dof_CoreText`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__objc_dataobj`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15c9f8` | `0x15d970` | **`+0xf78`** |
+| `__TEXT.__const` | `0x51ca4` | `0x51fa4` | **`+0x300`** |
+| `__DATA_DIRTY.__bss` | `0xb70` | `0xe60` | **`+0x2f0`** |
+| `__DATA.__bss` | `0x2518` | `0x2238` | **`-0x2e0`** |
+| `__AUTH_CONST.__cfstring` | `0x18280` | `0x18420` | **`+0x1a0`** |
+| `__DATA_CONST.__const` | `0xa668` | `0xa7d8` | **`+0x170`** |
+| `__TEXT.__cstring` | `0xf9a0` | `0xfab3` | **`+0x113`** |
+| `__DATA_CONST.__objc_arraydata` | `0x18468` | `0x18528` | **`+0xc0`** |
+| `__AUTH_CONST.__objc_dictobj` | `0x3908` | `0x3930` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0x410` | `0x428` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x5498` | `0x54b0` | **`+0x18`** |
+| `__DATA_DIRTY.__data` | `0x460` | `0x470` | **`+0x10`** |
+| `__DATA.__common` | `0x4ac` | `0x4a4` | **`-0x8`** |
+| `__DATA_DIRTY.__common` | `0xd0` | `0xd8` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -899.0.0.0.0
--  __TEXT.__text: 0x15c9f8
 +900.0.0.0.0
-+  __TEXT.__text: 0x15d970
-   __TEXT.__delay_helper: 0x264
-   __TEXT.__objc_methlist: 0xdd4
--  __TEXT.__const: 0x51ca4
-+  __TEXT.__const: 0x51fa4
-   __TEXT.__objc_databytes: 0x3a70c
-   __TEXT.__dlopen_cstrs: 0x22a
--  __TEXT.__cstring: 0xf9a0
-+  __TEXT.__cstring: 0xfab3
-   __TEXT.__swift5_typeref: 0x385
-   __TEXT.__swift5_reflstr: 0xc4
-   __TEXT.__swift5_assocty: 0x48
 
-   __TEXT.__ustring: 0x1954
-   __TEXT.__gcc_except_tab: 0x248
-   __TEXT.__dof_CoreText: 0x1629
--  __TEXT.__unwind_info: 0x5498
-+  __TEXT.__unwind_info: 0x54b0
-   __TEXT.__eh_frame: 0x2b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xa668
-+  __DATA_CONST.__const: 0xa7d8
-   __DATA_CONST.__objc_classlist: 0x98
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xcd0
-   __DATA_CONST.__objc_superrefs: 0x78
--  __DATA_CONST.__objc_arraydata: 0x18468
--  __DATA_CONST.__got: 0x410
-+  __DATA_CONST.__objc_arraydata: 0x18528
-+  __DATA_CONST.__got: 0x428
-   __AUTH_CONST.__const: 0x6040
--  __AUTH_CONST.__cfstring: 0x18280
-+  __AUTH_CONST.__cfstring: 0x18420
-   __AUTH_CONST.__objc_const: 0x1a20
-   __AUTH_CONST.__weak_auth_got: 0x38
--  __AUTH_CONST.__objc_dictobj: 0x3908
-+  __AUTH_CONST.__objc_dictobj: 0x3930
-   __AUTH_CONST.__objc_intobj: 0x3fd8
-   __AUTH_CONST.__objc_arrayobj: 0xbb68
-   __AUTH_CONST.__objc_doubleobj: 0x25e0
-
-   __AUTH.__data: 0x98
-   __DATA.__objc_ivar: 0x104
-   __DATA.__data: 0x6b8
--  __DATA.__bss: 0x2518
--  __DATA.__common: 0x4ac
-+  __DATA.__bss: 0x2238
-+  __DATA.__common: 0x4a4
-   __DATA_DIRTY.__objc_ivar: 0x44
-   __DATA_DIRTY.__objc_data: 0x2d0
--  __DATA_DIRTY.__data: 0x460
--  __DATA_DIRTY.__bss: 0xb70
--  __DATA_DIRTY.__common: 0xd0
-+  __DATA_DIRTY.__data: 0x470
-+  __DATA_DIRTY.__bss: 0xe60
-+  __DATA_DIRTY.__common: 0xd8
-   __FONT_DATA.__LastResort: 0x930
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 5439
--  Symbols:   8004
+-  Symbols:   7691
 -  CStrings:  3334
 +  Functions: 5444
-+  Symbols:   8007
++  Symbols:   7694
 +  CStrings:  3349
- 
 Symbols:
 + __Z11TCFBase_NEWI16CTFontDescriptorJRPK9TBaseFont4$_29EE6TCFRefINT_7cf_typeEEDpOT0_
 + __ZL16RegisterFontFilePK10__CFString

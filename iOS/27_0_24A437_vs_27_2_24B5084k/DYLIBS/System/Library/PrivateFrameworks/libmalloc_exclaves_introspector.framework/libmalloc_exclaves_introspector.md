@@ -2,21 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/libmalloc_exclaves_introspector.framework/libmalloc_exclaves_introspector`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4528` | `0x45ac` | **`+0x84`** |
+| `__TEXT.__cstring` | `0x2191` | `0x218f` | **`-0x2`** |
+
+### Other Changes
+
 ```diff
 
 -886.0.8.0.0
--  __TEXT.__text: 0x449c
 +886.40.15.0.0
-+  __TEXT.__text: 0x451c
-   __TEXT.__const: 0x7b
--  __TEXT.__cstring: 0x2191
-+  __TEXT.__cstring: 0x218f
-   __TEXT.__unwind_info: 0x118
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x2a0
 Functions:
-~ _xzm_segment_group_segment_foreach_span : 440 -> 464
-~ _xzm_print_task : 5092 -> 5116
+~ _xzm_segment_group_segment_foreach_span : 452 -> 476
+~ _xzm_print_task : 5092 -> 5120
 ~ __xzm_introspect_enumerate : 852 -> 868
 ~ ____xzm_introspect_enumerate_block_invoke : 516 -> 560
 ~ ___xzm_print_block_invoke_4 : 1464 -> 1484

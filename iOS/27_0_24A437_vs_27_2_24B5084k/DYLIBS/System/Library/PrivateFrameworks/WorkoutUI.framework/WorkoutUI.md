@@ -2,115 +2,60 @@
 
 > `/System/Library/PrivateFrameworks/WorkoutUI.framework/WorkoutUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5f357c` | `0x611234` | **`+0x1dcb8`** |
+| `__TEXT.__swift5_typeref` | `0xb5ab8` | `0xb7fb2` | **`+0x24fa`** |
+| `__TEXT.__const` | `0x40624` | `0x41ee4` | **`+0x18c0`** |
+| `__AUTH_CONST.__const` | `0x629e0` | `0x63948` | **`+0xf68`** |
+| `__DATA.__bss` | `0x20ed0` | `0x21dd0` | **`+0xf00`** |
+| `__DATA.__data` | `0x18348` | `0x18c58` | **`+0x910`** |
+| `__TEXT.__swift5_reflstr` | `0x12064` | `0x127b4` | **`+0x750`** |
+| `__TEXT.__constg_swiftt` | `0x12878` | `0x12ea0` | **`+0x628`** |
+| `__TEXT.__swift5_fieldmd` | `0xdbf8` | `0xe1f0` | **`+0x5f8`** |
+| `__TEXT.__oslogstring` | `0x99c2` | `0x9f42` | **`+0x580`** |
+| `__TEXT.__unwind_info` | `0x10770` | `0x10c50` | **`+0x4e0`** |
+| `__AUTH.__data` | `0xb0f0` | `0xb510` | **`+0x420`** |
+| `__TEXT.__swift5_capture` | `0x7670` | `0x7a2c` | **`+0x3bc`** |
+| `__TEXT.__eh_frame` | `0x9a88` | `0x9cc8` | **`+0x240`** |
+| `__TEXT.__cstring` | `0x364dd` | `0x366ad` | **`+0x1d0`** |
+| `__TEXT.__swift5_assocty` | `0x3d68` | `0x3ed8` | **`+0x170`** |
+| `__AUTH_CONST.__objc_const` | `0xcae0` | `0xcc08` | **`+0x128`** |
+| `__DATA_DIRTY.__data` | `0x4938` | `0x4828` | **`-0x110`** |
+| `__AUTH_CONST.__auth_got` | `0x6c38` | `0x6d18` | **`+0xe0`** |
+| `__DATA_CONST.__got` | `0x3608` | `0x36d0` | **`+0xc8`** |
+| `__AUTH.__objc_data` | `0x5220` | `0x52c0` | **`+0xa0`** |
+| `__TEXT.__swift5_proto` | `0x10d8` | `0x1148` | **`+0x70`** |
+| `__DATA_CONST.__objc_selrefs` | `0x29c0` | `0x2a28` | **`+0x68`** |
+| `__TEXT.__swift5_types` | `0xe58` | `0xea8` | **`+0x50`** |
+| `__DATA.__common` | `0x560` | `0x5a8` | **`+0x48`** |
+| `__TEXT.__swift5_builtin` | `0x44c` | `0x488` | **`+0x3c`** |
+| `__DATA_CONST.__const` | `0x1068` | `0x1088` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x464` | `0x47c` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x3530` | `0x3540` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x5d8` | `0x5e0` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x40` | `0x48` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x224` | `0x22c` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x6c` | `0x70` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x1c0` | `0x1c4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.152.1.2
--  __TEXT.__text: 0x5c8024
--  __TEXT.__objc_methlist: 0x3530
--  __TEXT.__const: 0x40624
--  __TEXT.__cstring: 0x364dd
--  __TEXT.__oslogstring: 0x99c2
 +2027.1.48.0.0
-+  __TEXT.__text: 0x5e4f78
-+  __TEXT.__objc_methlist: 0x3540
-+  __TEXT.__const: 0x41ee4
-+  __TEXT.__cstring: 0x366ad
-+  __TEXT.__oslogstring: 0x9f42
-   __TEXT.__gcc_except_tab: 0x230
--  __TEXT.__swift5_typeref: 0xb5ab8
--  __TEXT.__swift5_capture: 0x7670
--  __TEXT.__constg_swiftt: 0x12878
--  __TEXT.__swift5_reflstr: 0x12064
--  __TEXT.__swift5_assocty: 0x3d68
--  __TEXT.__swift5_fieldmd: 0xdbf8
--  __TEXT.__swift5_builtin: 0x44c
--  __TEXT.__swift5_proto: 0x10d8
--  __TEXT.__swift5_types: 0xe58
--  __TEXT.__swift_as_entry: 0x224
--  __TEXT.__swift_as_cont: 0x464
--  __TEXT.__swift_as_ret: 0x1c0
--  __TEXT.__swift5_mpenum: 0x40
--  __TEXT.__swift5_protos: 0x6c
--  __TEXT.__unwind_info: 0x16898
--  __TEXT.__eh_frame: 0x9a98
-+  __TEXT.__swift5_typeref: 0xb7fb2
-+  __TEXT.__swift5_capture: 0x7a2c
-+  __TEXT.__constg_swiftt: 0x12ea0
-+  __TEXT.__swift5_reflstr: 0x127b4
-+  __TEXT.__swift5_assocty: 0x3ed8
-+  __TEXT.__swift5_fieldmd: 0xe1f0
-+  __TEXT.__swift5_builtin: 0x488
-+  __TEXT.__swift5_proto: 0x1148
-+  __TEXT.__swift5_types: 0xea8
-+  __TEXT.__swift_as_entry: 0x22c
-+  __TEXT.__swift_as_cont: 0x47c
-+  __TEXT.__swift_as_ret: 0x1c4
-+  __TEXT.__swift5_mpenum: 0x48
-+  __TEXT.__swift5_protos: 0x70
-+  __TEXT.__unwind_info: 0x16f88
-+  __TEXT.__eh_frame: 0x9ce0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1068
--  __DATA_CONST.__objc_classlist: 0x5d8
-+  __DATA_CONST.__const: 0x1088
-+  __DATA_CONST.__objc_classlist: 0x5e0
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_catlist2: 0x8
-   __DATA_CONST.__objc_protolist: 0x2a8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x29c0
-+  __DATA_CONST.__objc_selrefs: 0x2a28
-   __DATA_CONST.__objc_protorefs: 0x150
-   __DATA_CONST.__objc_superrefs: 0xc8
--  __DATA_CONST.__got: 0x3608
--  __AUTH_CONST.__const: 0x629e0
-+  __DATA_CONST.__got: 0x36d0
-+  __AUTH_CONST.__const: 0x63948
-   __AUTH_CONST.__cfstring: 0x7a0
--  __AUTH_CONST.__objc_const: 0xcae0
-+  __AUTH_CONST.__objc_const: 0xcc08
-   __AUTH_CONST.__objc_intobj: 0x48
--  __AUTH_CONST.__auth_got: 0x6c38
--  __AUTH.__objc_data: 0x5220
--  __AUTH.__data: 0xb0f0
-+  __AUTH_CONST.__auth_got: 0x6d18
-+  __AUTH.__objc_data: 0x52c0
-+  __AUTH.__data: 0xb510
-   __DATA.__objc_ivar: 0x154
--  __DATA.__data: 0x18348
-+  __DATA.__data: 0x18c58
-   __DATA.__objc_stublist: 0x8
--  __DATA.__common: 0x560
-+  __DATA.__common: 0x5a8
-   __DATA_DIRTY.__objc_data: 0x17a8
--  __DATA_DIRTY.__data: 0x4938
-+  __DATA_DIRTY.__data: 0x4828
-   __DATA_DIRTY.__bss: 0x32b0
-   __DATA_DIRTY.__common: 0xe0
-   - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
 
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/Fitness.framework/Fitness
 +  - /System/Library/PrivateFrameworks/FitnessCoreUI.framework/FitnessCoreUI
-   - /System/Library/PrivateFrameworks/FitnessIntelligence.framework/FitnessIntelligence
-   - /System/Library/PrivateFrameworks/FitnessUI.framework/FitnessUI
-   - /System/Library/PrivateFrameworks/HealthAppServices.framework/HealthAppServices
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 32018
--  Symbols:   73985
+-  Symbols:   72955
 -  CStrings:  3614
 +  Functions: 32754
-+  Symbols:   75342
++  Symbols:   74300
 +  CStrings:  3635
- 
 Symbols:
 + _$s10Foundation16AttributedStringVACSQAAWl
 + _$s10Foundation4DataVSgIegHo_SgWOe
@@ -3582,18 +3527,6 @@ Symbols:
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE5sheet11isPresented9onDismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAA6ButtonVy07WorkoutB027AdaptiveLeadingAccessoryRowVyAA15ModifiedContentVyAA5ImageVAA24_ForegroundStyleModifierVyAA5ColorVGGARyAA4TextVAA022_EnvironmentKeyWritingV0VyAXSgGGAA012_ConditionalR0VyA7_yARyAA5GroupVyAA05TupleR0VyARyARyARyATA2_yAT5ScaleOGGAA17_FlipForRTLEffectVGAA023AccessibilityAttachmentV0VG_A0_QPGGAYGARyA9_yA11_yARyARyA15_A2_yAA19SymbolRenderingModeVSgGGA20_G_A0_QPGGAYGGARyARyARyA9_yA11_yA0__ARyATA20_GQPGGA14_GAVyAA017HierarchicalShapeU0VGGA4_GGGG_AN016EffortNavigationC0VQo_HO
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE5sheet11isPresented0D7Dismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAA15ModifiedContentVyAPyAA5ColorVAA25_AllowsHitTestingModifierVGAA017_AppearanceActionT0VG_AcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE5alert_AH7actions7messageQrqd___AMqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAcAEAY_AhZA_Qrqd___AMqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___SbyyctSQRd__lFQOyAcAEAdeF_Qrqd___SbyyctSQRd__lFQOyAcAE22presentationBackgroundyQrqd__AA10ShapeStyleRd__lFQOyAcAE0Z17CompactAdaptationyQrAA22PresentationAdaptationVFQOyAcAE0Z12CornerRadiusyQr12CoreGraphics7CGFloatVSgFQOyAcAE0Z21BackgroundInteractionyQrAA33PresentationBackgroundInteractionVFQOyAcAE0Z6SizingyQrqd__AA18PresentationSizingRd__lFQOyAcAE0Z13DragIndicatoryQrAA10VisibilityOFQOyAcAE0Z7Detents_9selectionQrShyAA18PresentationDetentVG_ALyA21_GtFQOyAcAE011interactiveK8DisabledyQrSbFQOyAPyAPyAPy07WorkoutB020SessionControlsSheetVAA16_FlexFrameLayoutVGAA12_FrameLayoutVGAA011_BackgroundT0VyA25_22SheetLayoutInvalidator33_D8A72A2C2EDF133638DB217431B7F9D6LLVGG_Qo__Qo__Qo__AAA14_PAAE6fitted10horizontal8verticalQrSb_SbtFQOyAA22FormPresentationSizingV_Qo_Qo__Qo__Qo__Qo__ARQo__SbQo__SiQo__11WorkoutCore26WorkoutBuddyStatePublisherC5StateOQo__So21NLWorkoutPausedReasonVQo__SSAPyAA6ButtonVyAA4TextVGAA023AccessibilityAttachmentT0VGA70_Qo__SSAA05TupleO0VyA74__A74_QPGA70_Qo__SbQo_Qo__SbQo__A25_014SessionCurrentC0OQo_HO
 + _get_witness_table qd0__7SwiftUI4ViewHD4_AaBPAAE5sheet4item9onDismiss7contentQrAA7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lFQOyAcAE18navigationBarTitleyQrqd__SyRd__lFQOyAA06ScrollC0VyAcAE12scenePaddingyQrAA4EdgeO3SetVFQOyAA10LazyVStackVyAA12TupleContentVyAA08ModifiedV0VyAA4TextVAA16_FlexFrameLayoutVG_AA0C8ThatFitsVyAYyAA4GridVyAA7ForEachVySaySaySo23FIUIWorkoutActivityTypeCGGA13_AA7GridRowVyA10_yA13_A12_07WorkoutB018GymKitActivityCardVSgGGGG_A24_QPGGQPGG_Qo_G_SSQo__A17_22PresentedActivitySheetOAA012_ConditionalV0VyAA15NavigationStackVyAA14NavigationPathVA17_22MediaConfigurationRoomVGAcAE11environmentyQrAJRld__C11Observation10ObservableRd__lFQOyA17_29WorkoutBuddyConfigurationRoomV_11WorkoutCore32WorkoutVoiceAvailabilityProviderCQo_GQo_HO
-+ _objc_msgSend$_setMarqueeMinimumScaleFactor:
-+ _objc_msgSend$accessibilityContrast
-+ _objc_msgSend$addTimer:forMode:
-+ _objc_msgSend$animateChanges:
-+ _objc_msgSend$initWithDynamicProvider:
-+ _objc_msgSend$mainRunLoop
-+ _objc_msgSend$setAttributedText:
-+ _objc_msgSend$setMarqueeEnabled:
-+ _objc_msgSend$setMarqueeRepeatCount:
-+ _objc_msgSend$setMarqueeRunning:
-+ _objc_msgSend$timerWithTimeInterval:repeats:block:
-+ _objc_msgSend$userInterfaceStyle
 + _swift_task_getMainExecutor
 + _swift_task_isCurrentExecutor
 + _symbolic $s9WorkoutUI22CycleAnalysisProvidingP

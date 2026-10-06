@@ -2,116 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/ChronoCore.framework/ChronoCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4159fc` | `0x41c8d4` | **`+0x6ed8`** |
+| `__DATA_DIRTY.__data` | `0xf548` | `0x105c8` | **`+0x1080`** |
+| `__DATA_DIRTY.__bss` | `0x8db0` | `0x9c30` | **`+0xe80`** |
+| `__DATA.__bss` | `0x8210` | `0x7630` | **`-0xbe0`** |
+| `__AUTH.__data` | `0x1eb8` | `0x16d8` | **`-0x7e0`** |
+| `__DATA.__data` | `0x3920` | `0x32d0` | **`-0x650`** |
+| `__TEXT.__const` | `0x14388` | `0x146b8` | **`+0x330`** |
+| `__AUTH.__objc_data` | `0x1330` | `0x1138` | **`-0x1f8`** |
+| `__AUTH_CONST.__objc_const` | `0x18528` | `0x18720` | **`+0x1f8`** |
+| `__DATA_DIRTY.__objc_data` | `0x37e0` | `0x39d8` | **`+0x1f8`** |
+| `__TEXT.__swift5_reflstr` | `0xa783` | `0xa943` | **`+0x1c0`** |
+| `__TEXT.__swift5_typeref` | `0xc18d` | `0xc339` | **`+0x1ac`** |
+| `__TEXT.__constg_swiftt` | `0xbaac` | `0xbc2c` | **`+0x180`** |
+| `__AUTH_CONST.__const` | `0x135c8` | `0x13740` | **`+0x178`** |
+| `__TEXT.__unwind_info` | `0x7518` | `0x7690` | **`+0x178`** |
+| `__TEXT.__oslogstring` | `0x15887` | `0x159a7` | **`+0x120`** |
+| `__TEXT.__swift5_fieldmd` | `0x7dcc` | `0x7ed0` | **`+0x104`** |
+| `__TEXT.__cstring` | `0x6d9b` | `0x6e0b` | **`+0x70`** |
+| `__TEXT.__eh_frame` | `0xc488` | `0xc420` | **`-0x68`** |
+| `__TEXT.__swift5_capture` | `0x551c` | `0x5548` | **`+0x2c`** |
+| `__DATA_DIRTY.__common` | `0x8f8` | `0x918` | **`+0x20`** |
+| `__TEXT.__swift5_proto` | `0xb38` | `0xb54` | **`+0x1c`** |
+| `__TEXT.__swift5_assocty` | `0x6b8` | `0x6d0` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x1a4` | `0x1b8` | **`+0x14`** |
+| `__AUTH_CONST.__auth_got` | `0x44d0` | `0x44c0` | **`-0x10`** |
+| `__DATA.__common` | `0xe0` | `0xd0` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x1db8` | `0x1dc8` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1938` | `0x1948` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x66c` | `0x67c` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x5f8` | `0x600` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x228` | `0x230` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x4159fc
-+  __TEXT.__text: 0x41c8d4
-   __TEXT.__objc_methlist: 0x1f10
--  __TEXT.__const: 0x14388
--  __TEXT.__cstring: 0x6d9b
--  __TEXT.__oslogstring: 0x15887
-+  __TEXT.__const: 0x146b8
-+  __TEXT.__cstring: 0x6e0b
-+  __TEXT.__oslogstring: 0x159a7
-   __TEXT.__gcc_except_tab: 0x70
-   __TEXT.__dlopen_cstrs: 0x7a
--  __TEXT.__constg_swiftt: 0xbaac
--  __TEXT.__swift5_typeref: 0xc18d
--  __TEXT.__swift5_reflstr: 0xa783
--  __TEXT.__swift5_fieldmd: 0x7dcc
--  __TEXT.__swift5_builtin: 0x1a4
--  __TEXT.__swift5_assocty: 0x6b8
--  __TEXT.__swift5_proto: 0xb38
--  __TEXT.__swift5_types: 0x66c
--  __TEXT.__swift5_protos: 0x228
--  __TEXT.__swift5_capture: 0x551c
-+  __TEXT.__constg_swiftt: 0xbc2c
-+  __TEXT.__swift5_typeref: 0xc339
-+  __TEXT.__swift5_reflstr: 0xa943
-+  __TEXT.__swift5_fieldmd: 0x7ed0
-+  __TEXT.__swift5_builtin: 0x1b8
-+  __TEXT.__swift5_assocty: 0x6d0
-+  __TEXT.__swift5_proto: 0xb54
-+  __TEXT.__swift5_types: 0x67c
-+  __TEXT.__swift5_protos: 0x230
-+  __TEXT.__swift5_capture: 0x5548
-   __TEXT.__swift_as_entry: 0x180
-   __TEXT.__swift_as_ret: 0x16c
-   __TEXT.__swift_as_cont: 0x33c
-   __TEXT.__swift5_mpenum: 0x30
--  __TEXT.__unwind_info: 0x7518
--  __TEXT.__eh_frame: 0xc488
-+  __TEXT.__unwind_info: 0x7690
-+  __TEXT.__eh_frame: 0xc420
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x1c0
--  __DATA_CONST.__objc_classlist: 0x5f8
-+  __DATA_CONST.__objc_classlist: 0x600
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x2c8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1938
-+  __DATA_CONST.__objc_selrefs: 0x1948
-   __DATA_CONST.__objc_protorefs: 0x178
-   __DATA_CONST.__objc_superrefs: 0x10
--  __DATA_CONST.__got: 0x1db8
--  __AUTH_CONST.__const: 0x135c8
-+  __DATA_CONST.__got: 0x1dc8
-+  __AUTH_CONST.__const: 0x13740
-   __AUTH_CONST.__cfstring: 0x60
--  __AUTH_CONST.__objc_const: 0x18528
--  __AUTH_CONST.__auth_got: 0x44d0
--  __AUTH.__objc_data: 0x1330
--  __AUTH.__data: 0x1eb8
-+  __AUTH_CONST.__objc_const: 0x18720
-+  __AUTH_CONST.__auth_got: 0x44c0
-+  __AUTH.__objc_data: 0x1138
-+  __AUTH.__data: 0x16d8
-   __DATA.__objc_ivar: 0x14
--  __DATA.__data: 0x3920
--  __DATA.__bss: 0x8210
--  __DATA.__common: 0xe0
--  __DATA_DIRTY.__objc_data: 0x37e0
--  __DATA_DIRTY.__data: 0xf548
--  __DATA_DIRTY.__bss: 0x8db0
--  __DATA_DIRTY.__common: 0x8f8
-+  __DATA.__data: 0x32d0
-+  __DATA.__bss: 0x7630
-+  __DATA.__common: 0xd0
-+  __DATA_DIRTY.__objc_data: 0x39d8
-+  __DATA_DIRTY.__data: 0x105c8
-+  __DATA_DIRTY.__bss: 0x9c30
-+  __DATA_DIRTY.__common: 0x918
-   - /System/Library/Frameworks/AccessoryLiveActivities.framework/AccessoryLiveActivities
-   - /System/Library/Frameworks/AccessoryNotifications.framework/AccessoryNotifications
-   - /System/Library/Frameworks/Accounts.framework/Accounts
+-727.0.0.0.0
++734.0.0.0.0
 
-   - /usr/lib/swift/libswift_DarwinFoundation3.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10895
--  Symbols:   9126
--  CStrings:  1978
+-  Symbols:   4449
+-  CStrings:  1974
 +  Functions: 10985
-+  Symbols:   9162
-+  CStrings:  1986
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
++  Symbols:   4481
++  CStrings:  1982
 Symbols:
 + __DATA__TtC10ChronoCore30PlaceholderReplicationProvider
 + __IVARS__TtC10ChronoCore30PlaceholderReplicationProvider
@@ -121,10 +60,6 @@ Symbols:
 + ___swift_closure_destructor.35Tm
 + ___swift_closure_destructor.96Tm
 + _associated conformance 10ChronoCore28PlaceholderArchiveReplicatorC0C8RecordIDVSHAASQ
-+ _objc_msgSend$chs_allowsContentPreferredColorSchemes
-+ _objc_msgSend$isOnceStrategy
-+ _objc_msgSend$preventsEagerPlaceholderGeneration
-+ _objc_msgSend$setChs_allowsContentPreferredColorSchemes:
 + _symbolic $s10ChronoCore29PlaceholderArchiveReplicatingP
 + _symbolic $s10ChronoCore29WidgetRefreshStrategyProviderP
 + _symbolic SDy__________G 9ChronoKit11TimelineKeyV 0A4Core06MobileC7ServiceC19ReloadBehaviorState33_FA00F2730F9D79EF75DE399C5A05AFB0LLV
@@ -160,8 +95,6 @@ Symbols:
 - _OBJC_CLASS_$_CHSColorSchemePolicy
 - ___swift_closure_destructor.113Tm
 - ___swift_closure_destructor.118Tm
-- _objc_msgSend$setSupportedColorSchemePolicies:
-- _objc_msgSend$supportedColorSchemePolicies
 - _symbolic SaySo20CHSColorSchemePolicyCG
 - _symbolic Say_____G 7SwiftUI11ColorSchemeO
 - _symbolic _____ 9WidgetKit25ResolvedColorSchemePolicyV
@@ -190,5 +123,4 @@ CStrings:
 - "Reload completed for %{public}s"
 - "Using color scheme policy: %{public}s for key: %{public}s, modifiers: %{public}s"
 - "com.apple.chronod.remoteHost"
-
 ```

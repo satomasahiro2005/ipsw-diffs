@@ -2,33 +2,22 @@
 
 > `/System/Library/Frameworks/MultipeerConnectivity.framework/MultipeerConnectivity`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2e6f0` | `0x2e72c` | **`+0x3c`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2e6f0
-+  __TEXT.__text: 0x2e72c
-   __TEXT.__objc_methlist: 0x2088
-   __TEXT.__const: 0x4f4
-   __TEXT.__cstring: 0x1dbc
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__objc_ivar : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+-179.600.3.0.0
++180.100.1.0.0
 Functions:
 ~ _micro -> _TracePrintNodes : 68 -> 692
 ~ _TracePrintNodes -> _micro : 692 -> 68
@@ -47,5 +36,4 @@ CStrings:
 - "19:17:20"
 - "19:17:32"
 - "Jun  9 2026"
-
 ```

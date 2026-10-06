@@ -2,85 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/HomeAI.framework/HomeAI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17b54c` | `0x17f344` | **`+0x3df8`** |
+| `__AUTH_CONST.__objc_const` | `0x15ce0` | `0x16420` | **`+0x740`** |
+| `__TEXT.__objc_methlist` | `0xa25c` | `0xa67c` | **`+0x420`** |
+| `__TEXT.__oslogstring` | `0xe4cc` | `0xe87d` | **`+0x3b1`** |
+| `__AUTH.__objc_data` | `0x41f0` | `0x42e0` | **`+0xf0`** |
+| `__DATA_CONST.__objc_arraydata` | `0x618` | `0x6e8` | **`+0xd0`** |
+| `__AUTH_CONST.__cfstring` | `0x8a60` | `0x8ae0` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x5088` | `0x5108` | **`+0x80`** |
+| `__DATA.__objc_ivar` | `0xcf8` | `0xd64` | **`+0x6c`** |
+| `__TEXT.__cstring` | `0xd9f1` | `0xda5c` | **`+0x6b`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x360` | `0x390` | **`+0x30`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x1b0` | `0x180` | **`-0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4800` | `0x4820` | **`+0x20`** |
+| `__TEXT.__const` | `0x495d` | `0x497d` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x700` | `0x718` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x5f8` | `0x610` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0xe90` | `0xe98` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -378.0.0.0.0
--  __TEXT.__text: 0x176c70
 +381.0.0.0.0
-+  __TEXT.__text: 0x17a9e4
-   __TEXT.__init_offsets: 0x10
--  __TEXT.__objc_methlist: 0xa25c
--  __TEXT.__const: 0x495d
--  __TEXT.__cstring: 0xd9f1
-+  __TEXT.__objc_methlist: 0xa67c
-+  __TEXT.__const: 0x497d
-+  __TEXT.__cstring: 0xda5c
-   __TEXT.__gcc_except_tab: 0xc210
--  __TEXT.__oslogstring: 0xe4cc
-+  __TEXT.__oslogstring: 0xe87d
-   __TEXT.__dlopen_cstrs: 0x16e
-   __TEXT.__swift5_typeref: 0x21
-   __TEXT.__constg_swiftt: 0x28
-   __TEXT.__swift5_reflstr: 0x74
-   __TEXT.__swift5_fieldmd: 0x4c
-   __TEXT.__swift5_types: 0x4
--  __TEXT.__unwind_info: 0x5ae0
-+  __TEXT.__unwind_info: 0x5b70
-   __TEXT.__eh_frame: 0x50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x3998
--  __DATA_CONST.__objc_classlist: 0x700
-+  __DATA_CONST.__objc_classlist: 0x718
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x110
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x4800
-+  __DATA_CONST.__objc_selrefs: 0x4820
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x5f8
--  __DATA_CONST.__objc_arraydata: 0x618
-+  __DATA_CONST.__objc_superrefs: 0x610
-+  __DATA_CONST.__objc_arraydata: 0x6e8
-   __DATA_CONST.__got: 0xc48
-   __AUTH_CONST.__const: 0x48b0
--  __AUTH_CONST.__cfstring: 0x8a60
--  __AUTH_CONST.__objc_const: 0x15ce0
-+  __AUTH_CONST.__cfstring: 0x8ae0
-+  __AUTH_CONST.__objc_const: 0x16420
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x588
--  __AUTH_CONST.__objc_arrayobj: 0x360
--  __AUTH_CONST.__objc_doubleobj: 0x1b0
-+  __AUTH_CONST.__objc_arrayobj: 0x390
-+  __AUTH_CONST.__objc_doubleobj: 0x180
-   __AUTH_CONST.__objc_dictobj: 0x1b8
-   __AUTH_CONST.__objc_floatobj: 0x70
--  __AUTH_CONST.__auth_got: 0xe90
--  __AUTH.__objc_data: 0x41f0
-+  __AUTH_CONST.__auth_got: 0xe98
-+  __AUTH.__objc_data: 0x42e0
-   __AUTH.__data: 0x350
--  __DATA.__objc_ivar: 0xcf8
-+  __DATA.__objc_ivar: 0xd64
-   __DATA.__data: 0xd3c
-   __DATA_DIRTY.__objc_data: 0x410
-   __DATA_DIRTY.__bss: 0x2d8
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5428
--  Symbols:   12051
+-  Symbols:   10124
 -  CStrings:  3199
 +  Functions: 5516
-+  Symbols:   12195
++  Symbols:   10264
 +  CStrings:  3222
- 
 Symbols:
 + +[NSError(HMIError) hmiPrivateErrorWithCode:reason:]
 + +[SignificantActivityYolo URLOfModelInThisBundle]
@@ -222,10 +178,6 @@ Symbols:
 + ___76-[SignificantActivityYolo predictionFromFeatures:options:completionHandler:]_block_invoke
 + ___77+[SignificantActivityYolo loadContentsOfURL:configuration:completionHandler:]_block_invoke
 + __os_feature_enabled_impl
-+ _objc_msgSend$canReadLength:
-+ _objc_msgSend$failReadOfLength:
-+ _objc_msgSend$hmiPrivateErrorWithCode:reason:
-+ _objc_msgSend$remainingLength
 CStrings:
 + "CameraSignificantActivityModelV2"
 + "Could not load SignificantActivityYolo.mlmodelc in the bundle resource"

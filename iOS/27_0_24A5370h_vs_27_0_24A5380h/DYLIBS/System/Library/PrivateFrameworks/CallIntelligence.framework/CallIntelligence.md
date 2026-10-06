@@ -2,109 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/CallIntelligence.framework/CallIntelligence`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xdfa8c` | `0xe2944` | **`+0x2eb8`** |
+| `__DATA_DIRTY.__data` | `0x1350` | `0x34e0` | **`+0x2190`** |
+| `__AUTH.__data` | `0x2328` | `0x6b0` | **`-0x1c78`** |
+| `__AUTH.__objc_data` | `0x5c0` | `0x90` | **`-0x530`** |
+| `__DATA_DIRTY.__objc_data` | `0x50` | `0x580` | **`+0x530`** |
+| `__DATA.__data` | `0x26c8` | `0x22b0` | **`-0x418`** |
+| `__AUTH_CONST.__const` | `0x7d08` | `0x7eb0` | **`+0x1a8`** |
+| `__TEXT.__oslogstring` | `0x3753` | `0x38f3` | **`+0x1a0`** |
+| `__TEXT.__const` | `0xe590` | `0xe6d0` | **`+0x140`** |
+| `__TEXT.__cstring` | `0x2571` | `0x2691` | **`+0x120`** |
+| `__TEXT.__eh_frame` | `0x7fb0` | `0x80d0` | **`+0x120`** |
+| `__DATA.__bss` | `0x13650` | `0x13550` | **`-0x100`** |
+| `__DATA_DIRTY.__bss` | `0x2f00` | `0x3000` | **`+0x100`** |
+| `__AUTH_CONST.__objc_const` | `0x8218` | `0x82f0` | **`+0xd8`** |
+| `__DATA.__common` | `0x138` | `0x68` | **`-0xd0`** |
+| `__DATA_DIRTY.__common` | `0xb8` | `0x188` | **`+0xd0`** |
+| `__TEXT.__swift5_capture` | `0xafc` | `0xb94` | **`+0x98`** |
+| `__TEXT.__unwind_info` | `0x3950` | `0x39e0` | **`+0x90`** |
+| `__TEXT.__constg_swiftt` | `0x2f34` | `0x2f8c` | **`+0x58`** |
+| `__TEXT.__swift5_fieldmd` | `0x3580` | `0x35d0` | **`+0x50`** |
+| `__TEXT.__swift5_reflstr` | `0x2bc8` | `0x2c18` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0xe70` | `0xeb0` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x1388` | `0x13b8` | **`+0x30`** |
+| `__TEXT.__swift5_typeref` | `0x3ab5` | `0x3ae3` | **`+0x2e`** |
+| `__DATA_CONST.__got` | `0xa48` | `0xa60` | **`+0x18`** |
+| `__TEXT.__swift_as_cont` | `0x4ac` | `0x4c4` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0xee4` | `0xef0` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x120` | `0x128` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x3fc` | `0x404` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x280` | `0x288` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0xb78` | `0xb7c` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0x2a4` | `0x2a8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xdfa8c
--  __TEXT.__objc_methlist: 0xee4
--  __TEXT.__const: 0xe590
--  __TEXT.__constg_swiftt: 0x2f34
--  __TEXT.__swift5_typeref: 0x3ab5
-+  __TEXT.__text: 0xe2944
-+  __TEXT.__objc_methlist: 0xef0
-+  __TEXT.__const: 0xe6d0
-+  __TEXT.__constg_swiftt: 0x2f8c
-+  __TEXT.__swift5_typeref: 0x3ae3
-   __TEXT.__swift5_builtin: 0x118
--  __TEXT.__swift5_reflstr: 0x2bc8
--  __TEXT.__swift5_fieldmd: 0x3580
-+  __TEXT.__swift5_reflstr: 0x2c18
-+  __TEXT.__swift5_fieldmd: 0x35d0
-   __TEXT.__swift5_assocty: 0x5d0
--  __TEXT.__swift5_proto: 0xb78
--  __TEXT.__swift5_types: 0x3fc
--  __TEXT.__cstring: 0x2571
--  __TEXT.__swift_as_entry: 0x2a4
--  __TEXT.__swift_as_ret: 0x280
--  __TEXT.__swift_as_cont: 0x4ac
-+  __TEXT.__swift5_proto: 0xb7c
-+  __TEXT.__swift5_types: 0x404
-+  __TEXT.__cstring: 0x2691
-+  __TEXT.__swift_as_entry: 0x2a8
-+  __TEXT.__swift_as_ret: 0x288
-+  __TEXT.__swift_as_cont: 0x4c4
-   __TEXT.__swift5_mpenum: 0x38
--  __TEXT.__oslogstring: 0x3753
--  __TEXT.__swift5_capture: 0xafc
-+  __TEXT.__oslogstring: 0x38f3
-+  __TEXT.__swift5_capture: 0xb94
-   __TEXT.__swift5_protos: 0x4c
--  __TEXT.__unwind_info: 0x3950
--  __TEXT.__eh_frame: 0x7fb0
-+  __TEXT.__unwind_info: 0x39e0
-+  __TEXT.__eh_frame: 0x80d0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x120
--  __DATA_CONST.__objc_classlist: 0x120
-+  __DATA_CONST.__objc_classlist: 0x128
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xe70
-+  __DATA_CONST.__objc_selrefs: 0xeb0
-   __DATA_CONST.__objc_protorefs: 0x38
--  __DATA_CONST.__got: 0xa48
--  __AUTH_CONST.__const: 0x7d08
--  __AUTH_CONST.__objc_const: 0x8218
--  __AUTH_CONST.__auth_got: 0x1388
--  __AUTH.__objc_data: 0x5c0
--  __AUTH.__data: 0x2328
--  __DATA.__data: 0x26c8
--  __DATA.__bss: 0x13650
--  __DATA.__common: 0x138
--  __DATA_DIRTY.__objc_data: 0x50
--  __DATA_DIRTY.__data: 0x1350
--  __DATA_DIRTY.__common: 0xb8
--  __DATA_DIRTY.__bss: 0x2f00
-+  __DATA_CONST.__got: 0xa60
-+  __AUTH_CONST.__const: 0x7eb0
-+  __AUTH_CONST.__objc_const: 0x82f0
-+  __AUTH_CONST.__auth_got: 0x13b8
-+  __AUTH.__objc_data: 0x90
-+  __AUTH.__data: 0x6b0
-+  __DATA.__data: 0x22b0
-+  __DATA.__bss: 0x13550
-+  __DATA.__common: 0x68
-+  __DATA_DIRTY.__objc_data: 0x580
-+  __DATA_DIRTY.__data: 0x34e0
-+  __DATA_DIRTY.__bss: 0x3000
-+  __DATA_DIRTY.__common: 0x188
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreML.framework/CoreML
+-143.100.11.2.1
++145.100.7.2.1
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4453
--  Symbols:   2800
+-  Symbols:   2005
 -  CStrings:  471
 +  Functions: 4502
-+  Symbols:   2839
++  Symbols:   2015
 +  CStrings:  483
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
 Symbols:
 + _MDItemBundleID
 + _MDItemDateAdded
@@ -116,13 +63,6 @@ Symbols:
 + ___swift_closure_destructor.82Tm
 + ___swift_closure_destructor.91Tm
 + ___swift_memcpy18_8
-+ _objc_msgSend$boolForKey:
-+ _objc_msgSend$contentCreationDate
-+ _objc_msgSend$eventCarrierName
-+ _objc_msgSend$eventGroupIdentifier
-+ _objc_msgSend$hotelReservationForTelephone
-+ _objc_msgSend$setBool:forKey:
-+ _objc_msgSend$subject
 + _symbolic SS_So8NSObjectCt
 + _symbolic ShySSG
 + _symbolic _____ 16CallIntelligence0A25ContextCardsSettingsEventV
@@ -154,5 +94,4 @@ CStrings:
 + "runQuery(queryString:atTime:disableMinimumFieldRequirements:queryContainsName:searchedBusinessNames:)"
 - "Received context cars testing overrides: %s"
 - "runQuery(queryString:atTime:disableMinimumFieldRequirements:queryContainsName:)"
-
 ```

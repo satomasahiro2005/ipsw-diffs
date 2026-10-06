@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/AnalyticsAgentFramework.framework/AnalyticsAgentFramework`
 
-```diff
+### Section Size Changes
 
- 569.0.5.0.0
--  __TEXT.__text: 0x1e93c
-+  __TEXT.__text: 0x1e944
-   __TEXT.__objc_methlist: 0xd84
-   __TEXT.__const: 0x808
-   __TEXT.__gcc_except_tab: 0xc60
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e93c` | `0x1e944` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2c5d76edc -> sub_2c6c81edc : 356 -> 360
-~ sub_2c5d7b1f8 -> sub_2c6c861fc : 692 -> 696
+~ sub_2c5c86edc -> sub_2c6babedc : 356 -> 360
+~ sub_2c5c8b1f8 -> sub_2c6bb01fc : 692 -> 696
 ```

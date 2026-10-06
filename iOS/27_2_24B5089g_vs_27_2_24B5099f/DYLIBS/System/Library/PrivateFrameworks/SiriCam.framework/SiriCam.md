@@ -2,35 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/SiriCam.framework/SiriCam`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x91460` | `0x91510` | **`+0xb0`** |
+| `__TEXT.__eh_frame` | `0x33c0` | `0x33e8` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x1ce8` | `0x1cf8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
- 3605.3.1.0.0
--  __TEXT.__text: 0x8d518
-+  __TEXT.__text: 0x8d5c8
-   __TEXT.__objc_methlist: 0x38
-   __TEXT.__const: 0x5220
-   __TEXT.__constg_swiftt: 0x1d94
-
-   __TEXT.__swift_as_entry: 0xc
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x10
--  __TEXT.__unwind_info: 0x2210
--  __TEXT.__eh_frame: 0x33d8
-+  __TEXT.__unwind_info: 0x2220
-+  __TEXT.__eh_frame: 0x3400
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3528
 -  Symbols:   6410
 +  Functions: 3530
 +  Symbols:   6412
-   CStrings:  552
- 
 Symbols:
 + _$sSdySdSgxcSyRzlufcSbSpySdGXEfU_SbSPys4Int8VGXEfU_
 + _$sSdySdSgxcSyRzlufcSbSpySdGXEfU_SbSPys4Int8VGXEfU_TA

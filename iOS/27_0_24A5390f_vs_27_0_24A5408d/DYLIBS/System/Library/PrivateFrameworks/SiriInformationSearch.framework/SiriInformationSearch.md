@@ -2,99 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/SiriInformationSearch.framework/SiriInformationSearch`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x266b28` | `0x26a8f4` | **`+0x3dcc`** |
+| `__DATA.__bss` | `0x4b20` | `0x5220` | **`+0x700`** |
+| `__TEXT.__const` | `0xac4c` | `0xb05c` | **`+0x410`** |
+| `__TEXT.__cstring` | `0x6961` | `0x6cb1` | **`+0x350`** |
+| `__AUTH_CONST.__const` | `0xab01` | `0xad61` | **`+0x260`** |
+| `__TEXT.__unwind_info` | `0x5338` | `0x54f0` | **`+0x1b8`** |
+| `__DATA.__data` | `0x19f0` | `0x1b40` | **`+0x150`** |
+| `__DATA.__common` | `0x218` | `0x350` | **`+0x138`** |
+| `__TEXT.__swift5_fieldmd` | `0x4310` | `0x4430` | **`+0x120`** |
+| `__AUTH.__data` | `0x1d50` | `0x1e60` | **`+0x110`** |
+| `__AUTH_CONST.__objc_const` | `0xecc8` | `0xedd0` | **`+0x108`** |
+| `__TEXT.__swift5_typeref` | `0x4158` | `0x4238` | **`+0xe0`** |
+| `__TEXT.__swift5_capture` | `0x11b0` | `0x124c` | **`+0x9c`** |
+| `__TEXT.__constg_swiftt` | `0x5ec4` | `0x5f50` | **`+0x8c`** |
+| `__TEXT.__eh_frame` | `0x7770` | `0x77e8` | **`+0x78`** |
+| `__AUTH_CONST.__auth_got` | `0x4dc0` | `0x4e30` | **`+0x70`** |
+| `__TEXT.__swift5_proto` | `0x42c` | `0x464` | **`+0x38`** |
+| `__TEXT.__oslogstring` | `0x129eb` | `0x12a1b` | **`+0x30`** |
+| `__TEXT.__swift5_reflstr` | `0x482a` | `0x485a` | **`+0x30`** |
+| `__DATA_DIRTY.__data` | `0x7df0` | `0x7e10` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1498` | `0x14b0` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x498` | `0x4b0` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x884` | `0x894` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x3e4` | `0x3f0` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
 -3600.38.7.0.0
--  __TEXT.__text: 0x266b28
--  __TEXT.__objc_methlist: 0x884
--  __TEXT.__const: 0xac4c
--  __TEXT.__cstring: 0x6961
--  __TEXT.__swift5_typeref: 0x4158
--  __TEXT.__swift5_fieldmd: 0x4310
--  __TEXT.__constg_swiftt: 0x5ec4
 +3600.38.8.1.1
-+  __TEXT.__text: 0x26a8f4
-+  __TEXT.__objc_methlist: 0x894
-+  __TEXT.__const: 0xb05c
-+  __TEXT.__cstring: 0x6cb1
-+  __TEXT.__swift5_typeref: 0x4238
-+  __TEXT.__swift5_fieldmd: 0x4430
-+  __TEXT.__constg_swiftt: 0x5f50
-   __TEXT.__swift5_builtin: 0x17c
--  __TEXT.__swift5_reflstr: 0x482a
--  __TEXT.__swift5_assocty: 0x498
-+  __TEXT.__swift5_reflstr: 0x485a
-+  __TEXT.__swift5_assocty: 0x4b0
-   __TEXT.__swift5_protos: 0xa4
--  __TEXT.__swift5_proto: 0x42c
--  __TEXT.__swift5_types: 0x3e4
--  __TEXT.__oslogstring: 0x129eb
--  __TEXT.__swift5_capture: 0x11b0
-+  __TEXT.__swift5_proto: 0x464
-+  __TEXT.__swift5_types: 0x3f0
-+  __TEXT.__oslogstring: 0x12a1b
-+  __TEXT.__swift5_capture: 0x124c
-   __TEXT.__swift_as_entry: 0x14c
-   __TEXT.__swift_as_ret: 0x12c
-   __TEXT.__swift_as_cont: 0x2f4
-   __TEXT.__swift5_mpenum: 0x28
--  __TEXT.__unwind_info: 0x5338
--  __TEXT.__eh_frame: 0x7770
-+  __TEXT.__unwind_info: 0x54f0
-+  __TEXT.__eh_frame: 0x77e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x350
-   __DATA_CONST.__objc_protolist: 0x108
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1498
-+  __DATA_CONST.__objc_selrefs: 0x14b0
-   __DATA_CONST.__objc_protorefs: 0x88
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xab01
--  __AUTH_CONST.__objc_const: 0xecc8
--  __AUTH_CONST.__auth_got: 0x4dc0
-+  __AUTH_CONST.__const: 0xad61
-+  __AUTH_CONST.__objc_const: 0xedd0
-+  __AUTH_CONST.__auth_got: 0x4e30
-   __AUTH.__objc_data: 0x768
--  __AUTH.__data: 0x1d50
-+  __AUTH.__data: 0x1e60
-   __DATA.__objc_ivar: 0x4
--  __DATA.__data: 0x19f0
--  __DATA.__bss: 0x4b20
--  __DATA.__common: 0x218
-+  __DATA.__data: 0x1b40
-+  __DATA.__bss: 0x5220
-+  __DATA.__common: 0x350
-   __DATA_DIRTY.__objc_data: 0xcb0
--  __DATA_DIRTY.__data: 0x7df0
-+  __DATA_DIRTY.__data: 0x7e10
-   __DATA_DIRTY.__bss: 0x1380
-   __DATA_DIRTY.__common: 0x328
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-
-   - /System/Library/PrivateFrameworks/GenerativeAssistantSettings.framework/GenerativeAssistantSettings
-   - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
-   - /System/Library/PrivateFrameworks/InfoQueryPersonalizationFeatures.framework/InfoQueryPersonalizationFeatures
 +  - /System/Library/PrivateFrameworks/IntelligenceFlowErrorTypes.framework/IntelligenceFlowErrorTypes
-   - /System/Library/PrivateFrameworks/IntelligenceFlowShared.framework/IntelligenceFlowShared
-   - /System/Library/PrivateFrameworks/IntelligencePlatform.framework/IntelligencePlatform
-   - /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8441
--  Symbols:   21755
+-  Symbols:   21188
 -  CStrings:  1789
 +  Functions: 8583
-+  Symbols:   22079
++  Symbols:   21510
 +  CStrings:  1809
- 
 Symbols:
 + _$s10Foundation14LocalizedErrorMp
 + _$s10Foundation14LocalizedErrorP10helpAnchorSSSgvgTq
@@ -465,8 +416,6 @@ Symbols:
 + _associated conformance 21SiriInformationSearch22PegasusStructuredErrorV16IntelligenceFlow0eF0AASE
 + _associated conformance 21SiriInformationSearch22PegasusStructuredErrorV16IntelligenceFlow0eF0AASQ
 + _associated conformance 21SiriInformationSearch22PegasusStructuredErrorV16IntelligenceFlow0eF0AASe
-+ _objc_msgSend$currentOrchestrationMode
-+ _objc_msgSend$fromPreferences
 + _symbolic SS_______pt 16IntelligenceFlow28StructuredErrorUserInfoValueP
 + _symbolic Say_____G 16IntelligenceFlow29StructuredErrorClassificationO
 + _symbolic _____ 21SiriInformationSearch22PegasusStructuredErrorV

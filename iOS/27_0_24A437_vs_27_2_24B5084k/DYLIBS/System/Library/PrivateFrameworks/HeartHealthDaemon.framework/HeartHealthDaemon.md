@@ -2,102 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/HeartHealthDaemon.framework/HeartHealthDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x67ecc` | `0x66c28` | **`-0x12a4`** |
+| `__TEXT.__oslogstring` | `0xca8f` | `0xc53e` | **`-0x551`** |
+| `__DATA.__bss` | `0x1c0` | `0x4c0` | **`+0x300`** |
+| `__TEXT.__objc_methlist` | `0x5104` | `0x4ee4` | **`-0x220`** |
+| `__TEXT.__const` | `0x3ca` | `0x5e4` | **`+0x21a`** |
+| `__AUTH_CONST.__objc_const` | `0x9c10` | `0x9a28` | **`-0x1e8`** |
+| `__AUTH_CONST.__cfstring` | `0x4820` | `0x4680` | **`-0x1a0`** |
+| `__DATA.__data` | `0x1d60` | `0x1eb0` | **`+0x150`** |
+| `__TEXT.__cstring` | `0x59e2` | `0x5892` | **`-0x150`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3610` | `0x3538` | **`-0xd8`** |
+| `__AUTH_CONST.__auth_got` | `0x8a0` | `0x960` | **`+0xc0`** |
+| `__DATA_CONST.__const` | `0x19e0` | `0x1970` | **`-0x70`** |
+| `__TEXT.__gcc_except_tab` | `0xb4c` | `0xae4` | **`-0x68`** |
+| `__TEXT.__swift5_typeref` | `0x47` | `0x99` | **`+0x52`** |
+| `__TEXT.__eh_frame` | `0x78` | `0xc0` | **`+0x48`** |
+| `__DATA_CONST.__objc_protolist` | `0x270` | `0x2a8` | **`+0x38`** |
+| `__DATA.__objc_ivar` | `0x64c` | `0x618` | **`-0x34`** |
+| `__TEXT.__swift5_assocty` | `—` | `0x30` | **`+0x30`** |
+| `__TEXT.__constg_swiftt` | `0x9c` | `0xc8` | **`+0x2c`** |
+| `__AUTH_CONST.__const` | `0x620` | `0x648` | **`+0x28`** |
+| `__TEXT.__swift5_reflstr` | `0x17` | `0x3a` | **`+0x23`** |
+| `__DATA_CONST.__objc_protorefs` | `0x40` | `0x60` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x1748` | `0x1728` | **`-0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x38` | `0x54` | **`+0x1c`** |
+| `__AUTH_CONST.__objc_intobj` | `0xdc8` | `0xdb0` | **`-0x18`** |
+| `__TEXT.__swift5_proto` | `0xc` | `0x24` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `—` | `0x14` | **`+0x14`** |
+| `__DATA_CONST.__got` | `0xee8` | `0xef0` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x290` | `0x288` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0x8` | `0xc` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.0.72.2.7
--  __TEXT.__text: 0x65f6c
--  __TEXT.__objc_methlist: 0x5104
--  __TEXT.__const: 0x3ca
--  __TEXT.__gcc_except_tab: 0xb4c
--  __TEXT.__cstring: 0x59e2
--  __TEXT.__oslogstring: 0xca8f
 +7027.1.36.2.7
-+  __TEXT.__text: 0x64e08
-+  __TEXT.__objc_methlist: 0x4ee4
-+  __TEXT.__const: 0x5e4
-+  __TEXT.__gcc_except_tab: 0xae4
-+  __TEXT.__cstring: 0x5892
-+  __TEXT.__oslogstring: 0xc53e
-   __TEXT.__ustring: 0x86
--  __TEXT.__swift5_typeref: 0x47
-+  __TEXT.__constg_swiftt: 0xc8
-+  __TEXT.__swift5_typeref: 0x99
-+  __TEXT.__swift5_builtin: 0x14
-+  __TEXT.__swift5_reflstr: 0x3a
-+  __TEXT.__swift5_fieldmd: 0x54
-+  __TEXT.__swift5_assocty: 0x30
-+  __TEXT.__swift5_proto: 0x24
-+  __TEXT.__swift5_types: 0xc
-   __TEXT.__swift5_capture: 0x30
--  __TEXT.__constg_swiftt: 0x9c
--  __TEXT.__swift5_reflstr: 0x17
--  __TEXT.__swift5_fieldmd: 0x38
--  __TEXT.__swift5_proto: 0xc
--  __TEXT.__swift5_types: 0x8
--  __TEXT.__unwind_info: 0x1fa8
--  __TEXT.__eh_frame: 0x78
-+  __TEXT.__unwind_info: 0x1f88
-+  __TEXT.__eh_frame: 0xc0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x19e0
-+  __DATA_CONST.__const: 0x1970
-   __DATA_CONST.__objc_classlist: 0x308
-   __DATA_CONST.__objc_catlist: 0x80
--  __DATA_CONST.__objc_protolist: 0x270
-+  __DATA_CONST.__objc_protolist: 0x2a8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3610
--  __DATA_CONST.__objc_protorefs: 0x40
--  __DATA_CONST.__objc_superrefs: 0x290
-+  __DATA_CONST.__objc_selrefs: 0x3538
-+  __DATA_CONST.__objc_protorefs: 0x60
-+  __DATA_CONST.__objc_superrefs: 0x288
-   __DATA_CONST.__objc_arraydata: 0x538
--  __DATA_CONST.__got: 0xee8
--  __AUTH_CONST.__const: 0x620
--  __AUTH_CONST.__cfstring: 0x4820
--  __AUTH_CONST.__objc_const: 0x9c10
--  __AUTH_CONST.__objc_intobj: 0xdc8
-+  __DATA_CONST.__got: 0xef0
-+  __AUTH_CONST.__const: 0x648
-+  __AUTH_CONST.__cfstring: 0x4680
-+  __AUTH_CONST.__objc_const: 0x9a28
-+  __AUTH_CONST.__objc_intobj: 0xdb0
-   __AUTH_CONST.__objc_doubleobj: 0x3d0
-   __AUTH_CONST.__objc_arrayobj: 0x138
--  __AUTH_CONST.__auth_got: 0x8a0
-+  __AUTH_CONST.__auth_got: 0x960
-   __AUTH.__objc_data: 0x868
--  __DATA.__objc_ivar: 0x64c
--  __DATA.__data: 0x1d60
-+  __DATA.__objc_ivar: 0x618
-+  __DATA.__data: 0x1eb0
-   __DATA_DIRTY.__objc_data: 0x1690
-   __DATA_DIRTY.__data: 0x58
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/PrivateFrameworks/HeartHealth.framework/HeartHealth
-   - /System/Library/PrivateFrameworks/NanoRegistry.framework/NanoRegistry
-   - /System/Library/PrivateFrameworks/ToneLibrary.framework/ToneLibrary
 +  - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2153
--  Symbols:   5582
+-  Symbols:   4123
 -  CStrings:  1365
 +  Functions: 2145
-+  Symbols:   5509
++  Symbols:   4067
 +  CStrings:  1332
- 
 Symbols:
 + -[HDHRHypertensionMeasurementAnalyzer sendAnalyticsEventWithDateInterval:additionalPayload:]
 + -[HDHRHypertensionNotificationManager _sendAnalyticsEventWithType:algorithmVersion:]
@@ -135,12 +89,6 @@ Symbols:
 + _associated conformance So28HKFeatureAvailabilityContextaSHSCSQ
 + _associated conformance So28HKFeatureAvailabilityContextas20_SwiftNewtypeWrapperSCSY
 + _associated conformance So28HKFeatureAvailabilityContextas20_SwiftNewtypeWrapperSCs35_HasCustomAnyHashableRepresentation
-+ _objc_msgSend$_onboardedCountryCodeSupportedStateWithError:
-+ _objc_msgSend$_sendAnalyticsEventWithType:
-+ _objc_msgSend$hkhr_bloodPressureJournalRequirementSet
-+ _objc_msgSend$hkhr_heartRateNotificationsRequirementSetForFeatureWithIdentifier:
-+ _objc_msgSend$hkhr_irregularRhythmNotificationsV2RequirementSet
-+ _objc_msgSend$initWithDatabase:aFibBurdenFeatureStatusManager:irregularRhythmNotificationsFeatureStatusManager:
 + _objc_retain_x9
 + _swift_arrayDestroy
 + _swift_arrayInitWithCopy
@@ -271,29 +219,6 @@ Symbols:
 - _kHLPowerLogBundleIdentifierKey
 - _kHLPowerLogEvent
 - _kHLPowerLogPIDKey
-- _objc_msgSend$_localDeviceSource
-- _objc_msgSend$_queue_createHealthLiteManager
-- _objc_msgSend$_queue_privacyPreferencesDidChange
-- _objc_msgSend$_queue_updateAllCollectionTypes
-- _objc_msgSend$_queue_updateBradycardiaCollectionType
-- _objc_msgSend$_queue_updateTachycardiaCollectionType
-- _objc_msgSend$aggregatorForType:
-- _objc_msgSend$bloodPressureJournalFeatureAvailabilityRequirementSet
-- _objc_msgSend$cloneWithNewType:
-- _objc_msgSend$collectionType
-- _objc_msgSend$dataCollectionManager
-- _objc_msgSend$dataCollector:didChangeState:
-- _objc_msgSend$dataCollector:didCollectSensorData:device:options:
-- _objc_msgSend$earliestDateLowestOnboardingVersionCompletedWithError:
-- _objc_msgSend$heartNotificationsUserDefaults
-- _objc_msgSend$initWithFeatureAvailabilityProviding:healthDataSource:countryCodeSource:
-- _objc_msgSend$initWithIdentifier:dateInterval:heartRateThreshold:associatedSampleUUIDs:resumeContext:
-- _objc_msgSend$initWithProfile:aFibBurdenFeatureStatusManager:irregularRhythmNotificationsFeatureStatusManager:heartNotificationsUserDefaults:
-- _objc_msgSend$isCurrentOnboardingVersionCompletedWithCompletion:
-- _objc_msgSend$isCurrentOnboardingVersionCompletedWithError:
-- _objc_msgSend$onboardedCountryCodeSupportedStateWithError:
-- _objc_msgSend$registerDataCollector:state:
-- _objc_msgSend$unregisterDataCollector:
 CStrings:
 + "Initial v2"
 + "Repeat v2"

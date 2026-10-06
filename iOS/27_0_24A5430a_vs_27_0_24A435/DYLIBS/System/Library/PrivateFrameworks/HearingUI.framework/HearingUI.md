@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/HearingUI.framework/HearingUI`
 
-```diff
+### Section Size Changes
 
- 539.1.1.0.0
--  __TEXT.__text: 0x5aa3c
-+  __TEXT.__text: 0x5aa44
-   __TEXT.__objc_methlist: 0x38cc
-   __TEXT.__const: 0x2658
-   __TEXT.__dlopen_cstrs: 0xb1
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5aa3c` | `0x5aa44` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_282e34c14 -> sub_283b68c14 : 532 -> 536
-~ sub_282e3e9cc -> sub_283b729d0 : 496 -> 500
+~ sub_282d25c14 -> sub_283a37c14 : 532 -> 536
+~ sub_282d2f9cc -> sub_283a419d0 : 496 -> 500
 ```

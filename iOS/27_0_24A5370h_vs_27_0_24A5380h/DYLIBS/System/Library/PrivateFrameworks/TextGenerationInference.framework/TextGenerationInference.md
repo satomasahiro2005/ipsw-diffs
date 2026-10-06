@@ -2,36 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/TextGenerationInference.framework/TextGenerationInference`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x84028
-+  __TEXT.__text: 0x8354c
-   __TEXT.__objc_methlist: 0x4c0
-   __TEXT.__const: 0x2b67
--  __TEXT.__gcc_except_tab: 0x9154
-+  __TEXT.__gcc_except_tab: 0x9150
-   __TEXT.__cstring: 0x66fb
-   __TEXT.__oslogstring: 0x2fb
-   __TEXT.__unwind_info: 0x3ae8
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x84028` | `0x8354c` | **`-0xadc`** |
+| `__TEXT.__gcc_except_tab` | `0x9154` | `0x9150` | **`-0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[TGITextGenerationInferenceRunner run] : 4820 -> 4796
 ~ __ZNKSt3__121__murmur2_or_cityhashImLm64EEclB9fqe220106EPKvm : 532 -> 520
@@ -151,5 +131,4 @@ Functions:
 ~ __ZN6google8protobuf8internal14WireFormatLite22WriteGroupMaybeToArrayEiRKNS0_11MessageLiteEPNS0_2io17CodedOutputStreamE : 388 -> 368
 ~ __ZN13sentencepiece5error5AbortEv.cold.1 : 76 -> 68
 ~ __ZN6google8protobuf8internal16ReadSizeFallbackEPKcj : 120 -> 124
-
 ```

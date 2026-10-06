@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/VisualUnderstanding.framework/VisualUnderstanding`
 
-```diff
+### Section Size Changes
 
- 80.1.0.0.0
--  __TEXT.__text: 0xce6c4
-+  __TEXT.__text: 0xce728
-   __TEXT.__objc_methlist: 0x9b4
-   __TEXT.__const: 0x34c8
-   __TEXT.__cstring: 0x1f57
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xce6c4` | `0xce728` | **`+0x64`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1cb0f00b8 -> sub_1cb6050b8 : 2912 -> 2920
 ~ sub_1cb0fe8b4 -> sub_1cb6138bc : 344 -> 340

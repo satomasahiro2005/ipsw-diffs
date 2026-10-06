@@ -2,22 +2,21 @@
 
 > `com.apple.security.AppleImage4`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x23fdc` | `0x2401c` | **`+0x40`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
 
-```diff
+### Other Changes
 
- 374.0.0.0.0
-   __TEXT.__const: 0xe830
-   __TEXT.__cstring: 0x642b
--  __TEXT_EXEC.__text: 0x23fdc
-+  __TEXT_EXEC.__text: 0x2401c
-   __TEXT_EXEC.__auth_stubs: 0x7b0
-   __DATA.__data: 0x738
-   __DATA.__bss: 0x2ce
+```diff
 Functions:
-~ sub_fffffe00090100b4 -> sub_fffffe0009017204 : 372 -> 436
+~ sub_fffffff00902bdb4 -> sub_fffffff009032e84 : 372 -> 436
 CStrings:
 + "@(#)VERSION:Darwin Image4 Extension Version 7.0.0: Wed Aug  5 21:45:34 PDT 2026; root:AppleImage4-374~13653/AppleImage4/RELEASE_ARM64E"
 + "Darwin Image4 Extension Version 7.0.0: Wed Aug  5 21:45:34 PDT 2026; root:AppleImage4-374~13653/AppleImage4/RELEASE_ARM64E"

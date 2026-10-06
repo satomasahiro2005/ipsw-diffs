@@ -2,85 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/CAFCombine.framework/CAFCombine`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x135878` | `0x138aa0` | **`+0x3228`** |
+| `__AUTH_CONST.__objc_const` | `0x2c468` | `0x2ce90` | **`+0xa28`** |
+| `__TEXT.__const` | `0x1ba84` | `0x1beb4` | **`+0x430`** |
+| `__DATA.__bss` | `0x16190` | `0x164f0` | **`+0x360`** |
+| `__AUTH.__objc_data` | `0xe0f0` | `0xe3d8` | **`+0x2e8`** |
+| `__TEXT.__swift5_reflstr` | `0x88bc` | `0x8a9c` | **`+0x1e0`** |
+| `__DATA.__data` | `0xb9c0` | `0xbb90` | **`+0x1d0`** |
+| `__TEXT.__constg_swiftt` | `0x8c80` | `0x8e08` | **`+0x188`** |
+| `__TEXT.__objc_methlist` | `0x78f4` | `0x7a6c` | **`+0x178`** |
+| `__TEXT.__swift5_typeref` | `0xa770` | `0xa8c0` | **`+0x150`** |
+| `__TEXT.__unwind_info` | `0x7be8` | `0x7d30` | **`+0x148`** |
+| `__AUTH.__data` | `0x40a8` | `0x41a8` | **`+0x100`** |
+| `__TEXT.__cstring` | `0x5e5a` | `0x5f4a` | **`+0xf0`** |
+| `__TEXT.__swift5_fieldmd` | `0x4308` | `0x43c4` | **`+0xbc`** |
+| `__TEXT.__swift5_assocty` | `0x2f00` | `0x2f90` | **`+0x90`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2fb0` | `0x3008` | **`+0x58`** |
+| `__DATA_CONST.__const` | `0x1618` | `0x1648` | **`+0x30`** |
+| `__DATA_CONST.__objc_protolist` | `0x880` | `0x8a0` | **`+0x20`** |
+| `__TEXT.__swift5_proto` | `0x9d8` | `0x9f0` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x3f8` | `0x408` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x440` | `0x450` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x314` | `0x31c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -540.1.0.0.0
--  __TEXT.__text: 0x135878
--  __TEXT.__objc_methlist: 0x78f4
--  __TEXT.__const: 0x1ba84
--  __TEXT.__swift5_typeref: 0xa770
--  __TEXT.__cstring: 0x5e5a
 +542.7.0.0.0
-+  __TEXT.__text: 0x138aa0
-+  __TEXT.__objc_methlist: 0x7a6c
-+  __TEXT.__const: 0x1beb4
-+  __TEXT.__swift5_typeref: 0xa8c0
-+  __TEXT.__cstring: 0x5f4a
-   __TEXT.__swift5_capture: 0x240
--  __TEXT.__constg_swiftt: 0x8c80
-+  __TEXT.__constg_swiftt: 0x8e08
-   __TEXT.__swift5_builtin: 0x49c
--  __TEXT.__swift5_reflstr: 0x88bc
--  __TEXT.__swift5_fieldmd: 0x4308
--  __TEXT.__swift5_assocty: 0x2f00
--  __TEXT.__swift5_proto: 0x9d8
--  __TEXT.__swift5_types: 0x314
-+  __TEXT.__swift5_reflstr: 0x8a9c
-+  __TEXT.__swift5_fieldmd: 0x43c4
-+  __TEXT.__swift5_assocty: 0x2f90
-+  __TEXT.__swift5_proto: 0x9f0
-+  __TEXT.__swift5_types: 0x31c
-   __TEXT.__swift_as_entry: 0xc
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x18
-   __TEXT.__swift5_protos: 0x14
-   __TEXT.__oslogstring: 0xc
--  __TEXT.__unwind_info: 0x7be8
-+  __TEXT.__unwind_info: 0x7d30
-   __TEXT.__eh_frame: 0x688
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1618
--  __DATA_CONST.__objc_classlist: 0x3f8
--  __DATA_CONST.__objc_protolist: 0x880
-+  __DATA_CONST.__const: 0x1648
-+  __DATA_CONST.__objc_classlist: 0x408
-+  __DATA_CONST.__objc_protolist: 0x8a0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2fb0
--  __DATA_CONST.__objc_protorefs: 0x440
-+  __DATA_CONST.__objc_selrefs: 0x3008
-+  __DATA_CONST.__objc_protorefs: 0x450
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x2670
--  __AUTH_CONST.__objc_const: 0x2c468
-+  __AUTH_CONST.__objc_const: 0x2ce90
-   __AUTH_CONST.__auth_got: 0xaa0
--  __AUTH.__objc_data: 0xe0f0
--  __AUTH.__data: 0x40a8
--  __DATA.__data: 0xb9c0
--  __DATA.__bss: 0x16190
-+  __AUTH.__objc_data: 0xe3d8
-+  __AUTH.__data: 0x41a8
-+  __DATA.__data: 0xbb90
-+  __DATA.__bss: 0x164f0
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0x100
-   __DATA_DIRTY.__data: 0xa0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 17135
--  Symbols:   34837
+-  Symbols:   34005
 -  CStrings:  591
 +  Functions: 17298
-+  Symbols:   35162
++  Symbols:   34326
 +  CStrings:  596
- 
 Symbols:
 + _$s10CAFCombine13CAFObservablePAAE12notifyChangeyyFAA29CAFEqualizerPresetsObservableC_Tg5
 + _$s10CAFCombine13CAFObservablePAAE12notifyChangeyyFAA37CAFSoundDistributionPresetsObservableC_Tg5
@@ -392,10 +353,6 @@ Symbols:
 + _associated conformance So27CAFSoundDistributionPresetsC10CAFCombine11CAFObservedAC10ObservableAcDP_AC13CAFObservable
 + _keypath_get_selector_elapsedTime
 + _keypath_get_selector_presetLabel
-+ _objc_msgSend$elapsedTime
-+ _objc_msgSend$presetLabel
-+ _objc_msgSend$registeredForElapsedTime
-+ _objc_msgSend$registeredForPresetLabel
 + _symbolic So19CAFEqualizerPresetsC
 + _symbolic So27CAFSoundDistributionPresetsC
 + _symbolic _____ 10CAFCombine29CAFEqualizerPresetsObservableC

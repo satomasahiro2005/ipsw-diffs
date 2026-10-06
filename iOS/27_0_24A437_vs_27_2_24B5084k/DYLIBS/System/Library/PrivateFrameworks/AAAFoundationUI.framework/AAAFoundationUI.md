@@ -2,98 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/AAAFoundationUI.framework/AAAFoundationUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1b3d0` | `0x1fbe8` | **`+0x4818`** |
+| `__TEXT.__eh_frame` | `0x1448` | `0x1c20` | **`+0x7d8`** |
+| `__AUTH_CONST.__objc_const` | `0x450` | `0x950` | **`+0x500`** |
+| `__TEXT.__const` | `0x1cb6` | `0x20a6` | **`+0x3f0`** |
+| `__AUTH.__data` | `0x70` | `0x408` | **`+0x398`** |
+| `__TEXT.__unwind_info` | `0xa08` | `0xc70` | **`+0x268`** |
+| `__AUTH_CONST.__const` | `0x16c0` | `0x18d0` | **`+0x210`** |
+| `__TEXT.__constg_swiftt` | `0xe10` | `0x1000` | **`+0x1f0`** |
+| `__TEXT.__oslogstring` | `0x464` | `0x60a` | **`+0x1a6`** |
+| `__DATA.__bss` | `0x1f80` | `0x2100` | **`+0x180`** |
+| `__TEXT.__swift5_fieldmd` | `0x568` | `0x6c4` | **`+0x15c`** |
+| `__TEXT.__swift5_typeref` | `0xafa` | `0xc2e` | **`+0x134`** |
+| `__TEXT.__swift5_reflstr` | `0x37f` | `0x4aa` | **`+0x12b`** |
+| `__AUTH.__objc_data` | `—` | `0x118` | **`+0x118`** |
+| `__AUTH_CONST.__auth_got` | `0x810` | `0x920` | **`+0x110`** |
+| `__TEXT.__cstring` | `0x3d9` | `0x309` | **`-0xd0`** |
+| `__TEXT.__swift_as_cont` | `0xb8` | `0x138` | **`+0x80`** |
+| `__TEXT.__swift5_capture` | `0x428` | `0x48c` | **`+0x64`** |
+| `__TEXT.__swift_as_ret` | `0x78` | `0xd8` | **`+0x60`** |
+| `__TEXT.__swift_as_entry` | `0x74` | `0xcc` | **`+0x58`** |
+| `__DATA.__data` | `0xeb8` | `0xee8` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `—` | `0x30` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x1bc` | `0x1ec` | **`+0x30`** |
+| `__TEXT.__swift5_assocty` | `0x168` | `0x188` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x84` | `0xa4` | **`+0x20`** |
+| `__DATA.__common` | `0x10` | `0x28` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0x110` | `0x11c` | **`+0xc`** |
+| `__DATA_CONST.__objc_selrefs` | `0x168` | `0x170` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x24` | `0x28` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -117.0.0.0.0
--  __TEXT.__text: 0x196e4
--  __TEXT.__objc_methlist: 0x1bc
--  __TEXT.__const: 0x1cb6
--  __TEXT.__swift5_typeref: 0xafa
--  __TEXT.__swift5_capture: 0x428
--  __TEXT.__swift5_fieldmd: 0x568
--  __TEXT.__constg_swiftt: 0xe10
 +117.125.3.0.0
-+  __TEXT.__text: 0x1d830
-+  __TEXT.__objc_methlist: 0x1ec
-+  __TEXT.__const: 0x20a6
-+  __TEXT.__swift5_typeref: 0xc2e
-+  __TEXT.__swift5_capture: 0x48c
-+  __TEXT.__swift5_fieldmd: 0x6c4
-+  __TEXT.__constg_swiftt: 0x1000
-   __TEXT.__swift5_builtin: 0x14
--  __TEXT.__swift5_reflstr: 0x37f
--  __TEXT.__swift5_protos: 0x24
--  __TEXT.__swift5_types: 0x84
--  __TEXT.__oslogstring: 0x464
--  __TEXT.__swift5_assocty: 0x168
--  __TEXT.__cstring: 0x3d9
--  __TEXT.__swift5_proto: 0x110
--  __TEXT.__swift_as_entry: 0x74
--  __TEXT.__swift_as_ret: 0x78
--  __TEXT.__swift_as_cont: 0xb8
--  __TEXT.__unwind_info: 0xb88
--  __TEXT.__eh_frame: 0x1448
-+  __TEXT.__swift5_reflstr: 0x4aa
-+  __TEXT.__swift5_protos: 0x28
-+  __TEXT.__swift5_types: 0xa4
-+  __TEXT.__oslogstring: 0x60a
-+  __TEXT.__swift5_assocty: 0x188
-+  __TEXT.__swift5_proto: 0x11c
-+  __TEXT.__swift_as_entry: 0xcc
-+  __TEXT.__swift_as_ret: 0xd8
-+  __TEXT.__swift_as_cont: 0x138
-+  __TEXT.__cstring: 0x309
-+  __TEXT.__unwind_info: 0xe08
-+  __TEXT.__eh_frame: 0x1c20
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x1b8
-+  __DATA_CONST.__objc_classlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x168
-+  __DATA_CONST.__objc_selrefs: 0x170
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x16c0
--  __AUTH_CONST.__objc_const: 0x450
--  __AUTH_CONST.__auth_got: 0x810
--  __AUTH.__data: 0x70
--  __DATA.__data: 0xeb8
--  __DATA.__common: 0x10
-+  __AUTH_CONST.__const: 0x18d0
-+  __AUTH_CONST.__objc_const: 0x950
-+  __AUTH_CONST.__auth_got: 0x920
-+  __AUTH.__objc_data: 0x118
-+  __AUTH.__data: 0x408
-+  __DATA.__data: 0xee8
-+  __DATA.__common: 0x28
-   - /System/Library/Frameworks/Combine.framework/Combine
--  - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation
-   - /System/Library/Frameworks/ExtensionKit.framework/ExtensionKit
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/swift/libswiftObservation.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
-   - /usr/lib/swift/libswiftSpatial.dylib
+-  - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+
 +  - /usr/lib/swift/libswiftSynchronization.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 739
--  Symbols:   489
+-  Symbols:   469
 -  CStrings:  48
 +  Functions: 859
-+  Symbols:   552
++  Symbols:   531
 +  CStrings:  51
- 
 Symbols:
 + _OBJC_CLASS_$_NSObject
 + _OBJC_CLASS_$__EXExtensionIdentity
@@ -131,10 +90,6 @@ Symbols:
 + _associated conformance 15AAAFoundationUI31_AAFNonUIClientMessageTransport33_95842DF33093BC60133C216C0E6A3B6DLLV0A5Swift05AsynceF0AaE0eF0
 + _associated conformance 15AAAFoundationUI32AAFExtensionHostLifecycleManagerCyxq_G0A5Swift21AsyncMessageTransportAaE0iJ0
 + _associated conformance 15AAAFoundationUI33_AAFExtensionHostMessageTransport33_6560A2F5489914F751C60E166FD59270LLV0A5Swift05AsynceF0AaE0eF0
-+ _objc_msgSend$bundleIdentifier
-+ _objc_msgSend$executeQuery:completionHandler:
-+ _objc_msgSend$initWithExtensionPointIdentifier:
-+ _objc_msgSend$sendMessageWithData:completionHandler:
 + _objc_retain_x25
 + _objc_retain_x9
 + _swift_continuation_resume
@@ -198,9 +153,6 @@ Symbols:
 - _associated conformance 15AAAFoundationUI20AAFExtensionXPCErrorO22InvalidReplyCodingKeys33_87360C072271F36946BB004095677F5DLLOs0G3KeyAAs28CustomDebugStringConvertible
 - _associated conformance 15AAAFoundationUI20AAFExtensionXPCErrorO27ProxyNotAvailableCodingKeys33_87360C072271F36946BB004095677F5DLLOs0H3KeyAAs23CustomStringConvertible
 - _associated conformance 15AAAFoundationUI20AAFExtensionXPCErrorO27ProxyNotAvailableCodingKeys33_87360C072271F36946BB004095677F5DLLOs0H3KeyAAs28CustomDebugStringConvertible
-- _objc_msgSend$initWithArray:
-- _objc_msgSend$sendMessageWithData:reply:
-- _objc_msgSend$setClasses:forSelector:argumentIndex:ofReply:
 - _swift_getDynamicType
 - _swift_retain_x24
 - _symbolic So6NSDataCSgSo7NSErrorCSgIeyBhyy_

@@ -2,82 +2,40 @@
 
 > `/usr/lib/usd/libusd_ms.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x274dfe4` | `0x275174c` | **`+0x3768`** |
+| `__TEXT.__unwind_info` | `0x111790` | `0x112ad8` | **`+0x1348`** |
+| `__DATA.__bss` | `0x26d6f0` | `0x26e4f0` | **`+0xe00`** |
+| `__TEXT.__const` | `0x62bfd0` | `0x62cae0` | **`+0xb10`** |
+| `__TEXT.__swift5_assocty` | `0x5738` | `0x5ba0` | **`+0x468`** |
+| `__DATA.__data` | `0x54e38` | `0x550d8` | **`+0x2a0`** |
+| `__TEXT.__swift5_typeref` | `0x5c72` | `0x5f12` | **`+0x2a0`** |
+| `__TEXT.__gcc_except_tab` | `0x25cf5c` | `0x25d008` | **`+0xac`** |
+| `__TEXT.__swift5_reflstr` | `0x4a79` | `0x4af9` | **`+0x80`** |
+| `__TEXT.__swift5_proto` | `0x2558` | `0x25d0` | **`+0x78`** |
+| `__TEXT.__eh_frame` | `0x3cb28` | `0x3cb88` | **`+0x60`** |
+| `__TEXT.__cstring` | `0x2b1dfc` | `0x2b1e3c` | **`+0x40`** |
+| `__TEXT.__oslogstring` | `0x1ef9a` | `0x1efba` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x8c0` | `0x8d8` | **`+0x18`** |
+| `__TEXT.__constg_swiftt` | `0x7974` | `0x7980` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x1b50` | `0x1b48` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -24.1.26.0.0
--  __TEXT.__text: 0x274dfe4
--  __TEXT.__gcc_except_tab: 0x25cf5c
--  __TEXT.__const: 0x62bfd0
--  __TEXT.__cstring: 0x2b1dfc
--  __TEXT.__oslogstring: 0x1ef9a
--  __TEXT.__swift5_typeref: 0x5c72
--  __TEXT.__constg_swiftt: 0x7974
--  __TEXT.__swift5_reflstr: 0x4a79
--  __TEXT.__swift5_assocty: 0x5738
 +24.1.30.0.0
-+  __TEXT.__text: 0x275174c
-+  __TEXT.__gcc_except_tab: 0x25d008
-+  __TEXT.__const: 0x62cae0
-+  __TEXT.__cstring: 0x2b1e3c
-+  __TEXT.__oslogstring: 0x1efba
-+  __TEXT.__swift5_typeref: 0x5f12
-+  __TEXT.__constg_swiftt: 0x7980
-+  __TEXT.__swift5_reflstr: 0x4af9
-+  __TEXT.__swift5_assocty: 0x5ba0
-   __TEXT.__swift5_fieldmd: 0x6c44
-   __TEXT.__swift5_builtin: 0x3480
--  __TEXT.__swift5_proto: 0x2558
-+  __TEXT.__swift5_proto: 0x25d0
-   __TEXT.__swift5_types: 0x1a24
-   __TEXT.__swift5_protos: 0xb0
-   __TEXT.__swift5_types2: 0x1c
-   __TEXT.__swift5_capture: 0x18c
--  __TEXT.__unwind_info: 0x111790
--  __TEXT.__eh_frame: 0x3cb28
-+  __TEXT.__unwind_info: 0x112ad8
-+  __TEXT.__eh_frame: 0x3cb88
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__weak_got: 0x1ef0
-   __DATA_CONST.__objc_selrefs: 0x888
-   __DATA_CONST.__objc_arraydata: 0x10
--  __DATA_CONST.__got: 0x8c0
-+  __DATA_CONST.__got: 0x8d8
-   __AUTH_CONST.__const: 0x1306d0
-   __AUTH_CONST.__cfstring: 0x540
-   __AUTH_CONST.__objc_const: 0x670
-   __AUTH_CONST.__weak_auth_got: 0xb228
-   __AUTH_CONST.__objc_intobj: 0x210
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x1b50
-+  __AUTH_CONST.__auth_got: 0x1b48
-   __AUTH.__data: 0x5f48
-   __AUTH.__mtlx_registry: 0x2c0
-   __AUTH.pxrctor: 0x40
-
-   __AUTH.__thread_vars: 0x2d0
-   __AUTH.__thread_data: 0x4
-   __AUTH.__thread_bss: 0x44150
--  __DATA.__data: 0x54e38
--  __DATA.__bss: 0x26d6f0
-+  __DATA.__data: 0x550d8
-+  __DATA.__bss: 0x26e4f0
-   __DATA.__common: 0x5ff8
-   __DATA_DIRTY.__mtlx_registry: 0x0
-   __DATA_DIRTY.__tf_func: 0x0
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_errno.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 200816
 -  Symbols:   54411
 -  CStrings:  31344
 +  Functions: 200981
 +  Symbols:   54423
 +  CStrings:  31346
- 
 Symbols:
 + _$s11RawIterator3Cxx0C8IterablePTl
 + _$s17BorrowingIterator3Cxx0C8IterablePTl
@@ -133,7 +91,9 @@ Symbols:
 - _$ss25BorrowingIteratorProtocolP8nextSpan12maximumCounts0E0Vy7ElementQzGSi_tFTq
 CStrings:
 + "22:35:51)"
++ "Aug  3 2026"
 + "Could not allocate asset buffer"
 + "PointInstancer sparse binding handler failed after pre-validation: <%s>"
 - "00:37:45)"
+- "Jul 11 2026"
 ```

@@ -2,62 +2,45 @@
 
 > `/System/Library/PreferenceBundles/ClarityUIPhoneFaceTimeSettings.bundle/ClarityUIPhoneFaceTimeSettings`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2ed4` | `0x300c` | **`+0x138`** |
+| `__TEXT.__objc_methname` | `0x13ad` | `0x1422` | **`+0x75`** |
+| `__TEXT.__objc_stubs` | `0xee0` | `0xf40` | **`+0x60`** |
+| `__TEXT.__auth_stubs` | `0x270` | `0x2c0` | **`+0x50`** |
+| `__DATA_CONST.__auth_got` | `0x140` | `0x170` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0xb0` | `0xd8` | **`+0x28`** |
+| `__TEXT.__gcc_except_tab` | `—` | `0x20` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x108` | `0x128` | **`+0x20`** |
+| `__DATA.__objc_selrefs` | `0x598` | `0x5b0` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x128` | `0x130` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x59c` | `0x5a4` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_superrefs`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2ed4
--  __TEXT.__auth_stubs: 0x270
--  __TEXT.__objc_stubs: 0xee0
--  __TEXT.__objc_methlist: 0x59c
-+  __TEXT.__text: 0x300c
-+  __TEXT.__auth_stubs: 0x2c0
-+  __TEXT.__objc_stubs: 0xf40
-+  __TEXT.__objc_methlist: 0x5a4
-   __TEXT.__const: 0x28
--  __TEXT.__objc_methname: 0x13ad
-+  __TEXT.__gcc_except_tab: 0x20
-+  __TEXT.__objc_methname: 0x1422
-   __TEXT.__cstring: 0x28f
-   __TEXT.__objc_classname: 0x97
-   __TEXT.__objc_methtype: 0x363
-   __TEXT.__oslogstring: 0x33a
--  __TEXT.__unwind_info: 0x108
--  __DATA_CONST.__const: 0xb0
-+  __TEXT.__unwind_info: 0x128
-+  __DATA_CONST.__const: 0xd8
-   __DATA_CONST.__cfstring: 0x340
-   __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x18
--  __DATA_CONST.__auth_got: 0x140
--  __DATA_CONST.__got: 0x128
-+  __DATA_CONST.__auth_got: 0x170
-+  __DATA_CONST.__got: 0x130
-   __DATA.__objc_const: 0x620
--  __DATA.__objc_selrefs: 0x598
-+  __DATA.__objc_selrefs: 0x5b0
-   __DATA.__objc_ivar: 0x28
-   __DATA.__objc_data: 0xf0
-   __DATA.__data: 0x120
+-1851.0.0.0.0
++1854.0.0.0.0
 
-   - /System/Library/PrivateFrameworks/VoiceTrigger.framework/VoiceTrigger
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 86
 -  Symbols:   341
--  CStrings:  322
+-  CStrings:  296
 +  Functions: 88
 +  Symbols:   354
-+  CStrings:  325
- 
-Sections:
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
++  CStrings:  299
 Symbols:
 + -[CLPHController _didUpdateOutgoingCommunicationLimit]
 + GCC_except_table23
@@ -82,5 +65,4 @@ CStrings:
 + "_didUpdateOutgoingCommunicationLimit"
 + "registerUpdateBlock:forRetrieveSelector:withListener:"
 + "reloadSpecifier:animated:"
-
 ```

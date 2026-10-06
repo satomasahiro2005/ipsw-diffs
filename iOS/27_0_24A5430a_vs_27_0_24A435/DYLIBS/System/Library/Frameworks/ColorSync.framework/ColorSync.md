@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/ColorSync.framework/ColorSync`
 
-```diff
+### Section Size Changes
 
- 3929.0.0.0.0
--  __TEXT.__text: 0x68ab4
-+  __TEXT.__text: 0x68abc
-   __TEXT.__const: 0x122910
-   __TEXT.__constg_swiftt: 0x204
-   __TEXT.__swift5_typeref: 0x156
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x68ab4` | `0x68abc` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _ColorSyncProfileCreateWithName : 268 -> 284
 ~ _ColorSyncCreateSignatureFromFourCharCode : 248 -> 264

@@ -2,22 +2,23 @@
 
 > `/System/Library/ExtensionKit/Extensions/RepackagingWorker.appex/RepackagingWorker`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x11274` | `0x11278` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__const`
 - `__TEXT.__constg_swiftt`
 - `__TEXT.__swift5_typeref`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA.__data`
 
-```diff
+### Other Changes
 
- 2.4.5.0.0
--  __TEXT.__text: 0x11274
-+  __TEXT.__text: 0x11278
-   __TEXT.__auth_stubs: 0xca0
-   __TEXT.__objc_stubs: 0x480
-   __TEXT.__const: 0xeb8
+```text
 Functions:
 ~ sub_10000dfac : 660 -> 664
 ```

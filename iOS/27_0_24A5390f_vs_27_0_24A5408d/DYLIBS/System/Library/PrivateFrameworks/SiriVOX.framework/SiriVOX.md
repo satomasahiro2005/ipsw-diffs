@@ -2,67 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/SiriVOX.framework/SiriVOX`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8430c` | `0x84414` | **`+0x108`** |
+| `__AUTH_CONST.__objc_const` | `0x13598` | `0x13688` | **`+0xf0`** |
+| `__AUTH.__objc_data` | `0x4060` | `0x40b0` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x8b20` | `0x8b58` | **`+0x38`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3d60` | `0x3d70` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0xca0` | `0xca8` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x660` | `0x668` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x490` | `0x498` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x23c0` | `0x23c8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.52.4.0.0
--  __TEXT.__text: 0x8430c
--  __TEXT.__objc_methlist: 0x8b20
 +3600.52.7.0.0
-+  __TEXT.__text: 0x84414
-+  __TEXT.__objc_methlist: 0x8b58
-   __TEXT.__const: 0x124
-   __TEXT.__constg_swiftt: 0x8c
-   __TEXT.__swift5_typeref: 0x97
 
-   __TEXT.__gcc_except_tab: 0x57c
-   __TEXT.__oslogstring: 0x89be
-   __TEXT.__dlopen_cstrs: 0xda
--  __TEXT.__unwind_info: 0x23c0
-+  __TEXT.__unwind_info: 0x23c8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x2be8
--  __DATA_CONST.__objc_classlist: 0x660
-+  __DATA_CONST.__objc_classlist: 0x668
-   __DATA_CONST.__objc_catlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x2d8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3d60
-+  __DATA_CONST.__objc_selrefs: 0x3d70
-   __DATA_CONST.__objc_protorefs: 0x48
--  __DATA_CONST.__objc_superrefs: 0x490
-+  __DATA_CONST.__objc_superrefs: 0x498
-   __DATA_CONST.__objc_arraydata: 0x980
-   __DATA_CONST.__got: 0x788
-   __AUTH_CONST.__const: 0xc28
-   __AUTH_CONST.__cfstring: 0x5fe0
--  __AUTH_CONST.__objc_const: 0x13598
-+  __AUTH_CONST.__objc_const: 0x13688
-   __AUTH_CONST.__objc_arrayobj: 0x78
-   __AUTH_CONST.__objc_intobj: 0xe58
-   __AUTH_CONST.__objc_dictobj: 0x348
-   __AUTH_CONST.__auth_got: 0x6d8
--  __AUTH.__objc_data: 0x4060
-+  __AUTH.__objc_data: 0x40b0
-   __AUTH.__data: 0x38
--  __DATA.__objc_ivar: 0xca0
-+  __DATA.__objc_ivar: 0xca8
-   __DATA.__data: 0x2260
-   __DATA.__bss: 0x268
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3138
--  Symbols:   8300
+-  Symbols:   6662
 +  Functions: 3142
-+  Symbols:   8313
-   CStrings:  2252
- 
++  Symbols:   6675
 Symbols:
 + -[SVXOdeonSequenceValidator init]
 + -[SVXOdeonSequenceValidator lastSeen]

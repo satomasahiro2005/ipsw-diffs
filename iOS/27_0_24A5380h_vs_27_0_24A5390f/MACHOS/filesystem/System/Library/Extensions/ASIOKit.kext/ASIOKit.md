@@ -2,24 +2,25 @@
 
 > `/System/Library/Extensions/ASIOKit.kext/ASIOKit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x3966c` | `0x396bc` | **`+0x50`** |
+
+### Same-size Content Changes
 
 - `__DATA.__data`
+- `__DATA_CONST.__const`
 - `__DATA_CONST.__mod_init_func`
 - `__DATA_CONST.__mod_term_func`
-- `__DATA_CONST.__const`
+
+### Other Changes
 
 ```diff
 
 -27.0.21.0.0
 +27.0.23.0.0
-   __TEXT.__cstring: 0x261
-   __TEXT.__const: 0x8570
--  __TEXT_EXEC.__text: 0x3966c
-+  __TEXT_EXEC.__text: 0x396bc
-   __TEXT_EXEC.__auth_stubs: 0x210
-   __DATA.__data: 0x158
-   __DATA.__common: 0x60
 Functions:
 ~ __Z16mapAppleSSEErrori : 476 -> 536
 ~ sub_d9c4 -> sub_da00 : 80 -> 100

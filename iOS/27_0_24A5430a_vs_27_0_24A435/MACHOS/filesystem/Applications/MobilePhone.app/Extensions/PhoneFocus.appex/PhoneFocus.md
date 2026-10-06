@@ -2,21 +2,22 @@
 
 > `/Applications/MobilePhone.app/Extensions/PhoneFocus.appex/PhoneFocus`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__unwind_info`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9fb0` | `0x9fb4` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_data`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 3072.100.1.2.5
--  __TEXT.__text: 0x9fb0
-+  __TEXT.__text: 0x9fb4
-   __TEXT.__auth_stubs: 0xb50
-   __TEXT.__objc_stubs: 0x220
-   __TEXT.__objc_methlist: 0x20
+```text
 Functions:
 ~ sub_10000ad70 : 444 -> 448
 ```

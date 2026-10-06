@@ -2,133 +2,59 @@
 
 > `/System/Library/PrivateFrameworks/PassKitCore.framework/PassKitCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8e06dc` | `0x8e3394` | **`+0x2cb8`** |
+| `__TEXT.__oslogstring` | `0x39d55` | `0x3a920` | **`+0xbcb`** |
+| `__TEXT.__eh_frame` | `0x7cb8` | `0x8718` | **`+0xa60`** |
+| `__TEXT.__cstring` | `0x7246d` | `0x71b3b` | **`-0x932`** |
+| `__AUTH.__data` | `0x4c40` | `0x5250` | **`+0x610`** |
+| `__AUTH_CONST.__objc_const` | `0xcece0` | `0xcf2a0` | **`+0x5c0`** |
+| `__TEXT.__swift5_reflstr` | `0x5f0d` | `0x629d` | **`+0x390`** |
+| `__TEXT.__swift5_fieldmd` | `0x7680` | `0x79d8` | **`+0x358`** |
+| `__TEXT.__unwind_info` | `0x1f418` | `0x1f710` | **`+0x2f8`** |
+| `__TEXT.__constg_swiftt` | `0x6e3c` | `0x70d8` | **`+0x29c`** |
+| `__AUTH_CONST.__const` | `0x25278` | `0x254c8` | **`+0x250`** |
+| `__TEXT.__const` | `0x2c730` | `0x2c950` | **`+0x220`** |
+| `__TEXT.__swift5_typeref` | `0x86ec` | `0x852c` | **`-0x1c0`** |
+| `__TEXT.__swift5_capture` | `0x49dc` | `0x4aec` | **`+0x110`** |
+| `__AUTH_CONST.__cfstring` | `0x779c0` | `0x77ac0` | **`+0x100`** |
+| `__DATA_CONST.__const` | `0x22ab8` | `0x22b88` | **`+0xd0`** |
+| `__TEXT.__swift_as_cont` | `0x32c` | `0x3b0` | **`+0x84`** |
+| `__DATA.__bss` | `0x25958` | `0x259c8` | **`+0x70`** |
+| `__DATA_CONST.__objc_selrefs` | `0x24f18` | `0x24ec0` | **`-0x58`** |
+| `__AUTH.__objc_data` | `0x22890` | `0x228e0` | **`+0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x5820` | `0x57d0` | **`-0x50`** |
+| `__DATA_CONST.__got` | `0x5350` | `0x5310` | **`-0x40`** |
+| `__TEXT.__swift5_types` | `0x76c` | `0x7a0` | **`+0x34`** |
+| `__TEXT.__swift_as_ret` | `0x17c` | `0x1ac` | **`+0x30`** |
+| `__TEXT.__swift_as_entry` | `0x15c` | `0x188` | **`+0x2c`** |
+| `__DATA.__data` | `0x9ea8` | `0x9e88` | **`-0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x3dc8` | `0x3de8` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x6a18` | `0x6a00` | **`-0x18`** |
+| `__TEXT.__objc_methlist` | `0x72040` | `0x72028` | **`-0x18`** |
+| `__TEXT.__swift5_assocty` | `0xd80` | `0xd98` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x7280` | `0x7294` | **`+0x14`** |
+| `__DATA_DIRTY.__objc_ivar` | `0x1f0c` | `0x1f20` | **`+0x14`** |
+| `__TEXT.__swift5_builtin` | `0x49c` | `0x4b0` | **`+0x14`** |
+| `__AUTH_CONST.__auth_got` | `0x2ec8` | `0x2eb8` | **`-0x10`** |
+| `__TEXT.__swift5_proto` | `0x1374` | `0x1378` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1677.4.0.0.0
--  __TEXT.__text: 0x8e06dc sha256:460c5811be4a9e5f544b6ba9b8e7f74a50100bec25865ac8a5f3727a9e41f12d
--  __TEXT.__objc_methlist: 0x72040 sha256:9a7bd6de1f91fb0fa91f39ec6e25edd0358be3b4df01a8d7a57d409c1c108ad5
--  __TEXT.__const: 0x2c730 sha256:846b86af5d309257669b3b94b74b13bc4ef6341a3f7c4112f153c6d31d68f1e1
--  __TEXT.__swift5_typeref: 0x86ec sha256:18eb3d57a4b7c07259b5718accfa63c3240e40fde5f543df757d62c1d1bef8f4
--  __TEXT.__cstring: 0x7246d sha256:1093b7d3eb0d26e5e44ea5996ea6e0f0b9ff86ceab6120a6854dbdd63c6a1633
--  __TEXT.__constg_swiftt: 0x6e3c sha256:70e634a0fe442b143288c243f0f066259903ca0e52df46abc463ebfc9e235da7
--  __TEXT.__swift5_reflstr: 0x5f0d sha256:9126bdff9191a02b5b1de3cb6d925205261f6f5bb2cdaea10edc7845c00df6b2
--  __TEXT.__swift5_fieldmd: 0x7680 sha256:3f724818e97a1bd050630e68c286b978cda822ae9760169a14d0f3d01412b8af
--  __TEXT.__swift5_builtin: 0x49c sha256:3262a25588bd91e83375551aeeeec425a6c761d0d316e8fbbbe5923086971273
--  __TEXT.__swift5_assocty: 0xd80 sha256:7f3134750a4912f74fd8062266a00dc91bc2cd2e8aabc8fad0242e02f657f9b4
--  __TEXT.__swift5_proto: 0x1374 sha256:fd210a05592efb188742821e88e3959457243eac283c446e88be17bdd71a4b44
--  __TEXT.__swift5_types: 0x76c sha256:d6ea77e59da0ac2e3a1ce48981b12db7f8ddc61fadc1eb40e70158b00645420b
--  __TEXT.__swift5_capture: 0x49dc sha256:47066796ea91ee31e693e114df35505486de5bcabf235c17073e74c437a71500
--  __TEXT.__oslogstring: 0x39d55 sha256:c5171392f96172510dceb8d78b2dce2b9a031619b7e941a43d2b711c82889f89
--  __TEXT.__swift_as_entry: 0x15c sha256:718447533d6dbe157c03b8dcc5d5b009a8cd497fa3f71218234aa3094b77f17f
--  __TEXT.__swift_as_ret: 0x17c sha256:9e634f8caa705284e241b81544b93addc7638043728bab5e0bdc12546c8e3017
--  __TEXT.__swift_as_cont: 0x32c sha256:4ef2beec6cf4eab75195af3978e7b42e51a64fe2c2fdec3d834291eddd07bbb5
--  __TEXT.__swift5_protos: 0x6c sha256:1247f1f1ccdfa12518e542c90c6f8d6b8be9515de6e4dd266de03991fcfab4e7
--  __TEXT.__swift5_mpenum: 0x128 sha256:39dc23057b3eecb2d9e59ccce149972b3302add3e57e5a176133b53650fbf323
--  __TEXT.__swift5_types2: 0x4 sha256:b740c2b9f652aa3cf5d16709fcab2a8e65bffbd4adf34494316750846237f7fb
--  __TEXT.__gcc_except_tab: 0x6a18 sha256:04605250245c426de7604dc3881450b96c00653a81965bb427d9fdc3a027b4fe
 +1682.1.0.0.0
-+  __TEXT.__text: 0x8e3394 sha256:e2f152dc47aefda6df71d26d7fac2bbec6234715594441dff1ec3fe6104af03b
-+  __TEXT.__objc_methlist: 0x72028 sha256:6558d6f435ee65c4a0544538293eb77d7180c3c694589c28d833f83d8a4663c7
-+  __TEXT.__const: 0x2c950 sha256:398730b963159aee0e7cbc60543e838c3bfb36a0c0203b1b1afbcd9db6510ec2
-+  __TEXT.__swift5_typeref: 0x852c sha256:a5d22617bc6e5f10ccd84312c1dc1859283b6bf5ef0e7f55c51f9476402a418f
-+  __TEXT.__cstring: 0x71b3b sha256:d31a18a1a55da88d5f4c3eed38e58e4496f7dcfe37e7149dca7d382f3cab9a8e
-+  __TEXT.__constg_swiftt: 0x70d8 sha256:c340d747663bd5e342a90175a4c55c64be8f5cd27bf36f3598ba7ca5696c0bc3
-+  __TEXT.__swift5_reflstr: 0x629d sha256:c2d1f52e25657dcd5c3c2e716e13b8f01b2f2732211c155aac8d2251e541f8cb
-+  __TEXT.__swift5_fieldmd: 0x79d8 sha256:214f8e553dde058a178e2cb6fe603aa83e09dacd5fb29f4220efb7d6eed21d40
-+  __TEXT.__swift5_builtin: 0x4b0 sha256:29d733a3e56202b556d2ebfba901051436900ed3e62765140be341709e012c47
-+  __TEXT.__swift5_assocty: 0xd98 sha256:fcca98ded1ce11eb448cc308edb226b10634661c55c3651d525b44c6a70916d6
-+  __TEXT.__swift5_proto: 0x1378 sha256:92c3f684fd5c39b0b1af61e1e3c15b26af5e7110d8dc4b12b749081039c14b3e
-+  __TEXT.__swift5_types: 0x7a0 sha256:cc7dcecf8b503496a032ae3a64f2fe4d1173256b77d55bd70310060cce85cacf
-+  __TEXT.__swift5_capture: 0x4aec sha256:755a6a13e6d256250eedbfa21006ce566dcad4028d6b3b41f6498244e379a3ec
-+  __TEXT.__oslogstring: 0x3a920 sha256:1b3672d36d6f796a80c157a9d55adcd1db7c894af03d7b6588f47ce2e5a04d22
-+  __TEXT.__swift_as_entry: 0x188 sha256:4ea0713603f7ce4c49f306526a0afa60ed059acaeb1acac77a92e52ea336c6e1
-+  __TEXT.__swift_as_ret: 0x1ac sha256:b2a7952d7be4c2dec42f541866bd66c3caaab05fd55088adc1ccf5c594005afc
-+  __TEXT.__swift_as_cont: 0x3b0 sha256:ae99f10d8c53198c4c6c2a15da4d9c90bea9fe48d0995a7e0c8865aa867e9994
-+  __TEXT.__swift5_protos: 0x6c sha256:dd9b47cb338ef9ffdc9b80bb3ef491a06e6849042a88c09ff26a2a6c09605786
-+  __TEXT.__swift5_mpenum: 0x128 sha256:40ad121d5d2319666a931d42eac30bba49d2dec609f34c0891f66cf94132bf96
-+  __TEXT.__swift5_types2: 0x4 sha256:198482f9463cf01c39f65edaa897350156998ca6e6082993eab315762f9ed057
-+  __TEXT.__gcc_except_tab: 0x6a00 sha256:a64b3c8dc446c1f335092768fa36ced413521a649961380b85b93bdbbd2ef749
-   __TEXT.__ustring: 0x1e6c sha256:f442afc868c80ef461dfe213eefc54a16d48e7b9b5ef5a49049a483b2d0a98f4
--  __TEXT.__unwind_info: 0x1f418 sha256:0c705c5402dc69efb9cd23faa201e4fd7508b42d9541ab9ab793f8e1fd030cab
--  __TEXT.__eh_frame: 0x7cb8 sha256:794486ff58cdc6233e41a208cbd42887fb5ddfc2acf721644a09a76cdda5a187
-+  __TEXT.__unwind_info: 0x1f710 sha256:504226a052895cde2eab1f909c996f89b402c799b4225ceeb5beadaad710957e
-+  __TEXT.__eh_frame: 0x8718 sha256:878c60505c768922cbb63120f5b6db81cbf5667384261848dc1e4a24e1de9dc6
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x22ab8 sha256:dbf516960e1ba48cd32671c74adaacb9045989ac003c943e8a7abd36f4e0ea82
--  __DATA_CONST.__objc_classlist: 0x3dc8 sha256:e1ccee3584bdfb9d230a8bfdaad1c96c02310a9263b1f9b70ff5c443a267c6de
--  __DATA_CONST.__objc_catlist: 0x110 sha256:79ce1c756169796906cc1a7895dd0d7d0888c82d23b9ffc8db564280852767c6
--  __DATA_CONST.__objc_protolist: 0x5c8 sha256:989bfdb5aa44e6d54bd9ae3755cecd3c86f119fc8d752cb80e82dfa0e88d3a86
-+  __DATA_CONST.__const: 0x22b88 sha256:2de226e1cf49edcb2b3531793947910ca15641231b84df8c0a12d4e22979cf79
-+  __DATA_CONST.__objc_classlist: 0x3de8 sha256:347c785d5d105a609d448ee202282a6048fb6ca5ce8b294a502d9eda56fd7a76
-+  __DATA_CONST.__objc_catlist: 0x110 sha256:d390ce901c81e1d9b3a1712bc1a002f1d9411dd2a29598a1c8fe3f3c4a50bdaf
-+  __DATA_CONST.__objc_protolist: 0x5c8 sha256:e8edbc13b2d3ed5f1ce9809765a0f0ba14054c988dd58a3b1438895c2b63f43d
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0x24f18 sha256:f71cb561fa12005075ad6e2edbdfc63e8b5b2bc12fe19b2c70122b1b03337e18
--  __DATA_CONST.__objc_protorefs: 0x260 sha256:c811a54aa807b46c25d6a359658feef364ac01d793193aaed674f6d676d85786
--  __DATA_CONST.__objc_superrefs: 0x3148 sha256:429a39e7f976aa6b7889e4b4a5f29cf40fec982f28f58953e98c445b5a8abe1d
--  __DATA_CONST.__objc_arraydata: 0x2810 sha256:7c7a275c81f9b761aef0c87d231d107d2194689895c1bfc7a4cdba6a5858862a
--  __DATA_CONST.__got: 0x5350 sha256:dafda37040c83a5674ae633acc4a17f344100eb3eb3312eec6684ee105d373d0
--  __AUTH_CONST.__const: 0x25278 sha256:b76d6deddd23e914b58627f4bd8a9cfd0d9e0833e64ae0103f62caa4b9eefd43
--  __AUTH_CONST.__cfstring: 0x779c0 sha256:19480e3473a37a0dd97a5a9befb00d8eb6eb120b2aaa41557a73bea94adcbc52
--  __AUTH_CONST.__objc_const: 0xcece0 sha256:022141d9a8f3fd0810e32ad7b74a64dc93e9f396c394afeef6a3e76166613d05
--  __AUTH_CONST.__objc_arrayobj: 0xd20 sha256:aa7fb94891c8d69b882d3f75bcec8c3a269d188c6f630ddec28515c6f25359c2
--  __AUTH_CONST.__objc_intobj: 0x11a0 sha256:2802133132deff8ec655173ab842ed31f105369918279f5ed48925f5114cd07c
--  __AUTH_CONST.__objc_dictobj: 0x15b8 sha256:17affcff2106bac433099b1c628cd26275e30ef8a28495e1a7bf98c2c356c942
--  __AUTH_CONST.__objc_doubleobj: 0x2b0 sha256:806125cfc14651dd5f546a54ac6e5b65ffc35c3781aa44cf4f4df5800c570e42
--  __AUTH_CONST.__auth_got: 0x2ec8 sha256:738edab154500850fa77e13e23e3798d3b1605953a7f189af5f44c42cea0b027
--  __AUTH.__objc_data: 0x22890 sha256:de9982e16ad948a82fd0297b0eee097f652af03750c9ed94ef059f3030498453
--  __AUTH.__data: 0x4c40 sha256:a29c13fa60567f8fc7bf6be73b26f0dde3d74e53cce70412213dec564661a68f
--  __AUTH.__thread_vars: 0x18 sha256:3e909c5a41cb55ccd97e499b142835c1f1cd8a766bd046e4ba7c671c85d4dc4f
-+  __DATA_CONST.__objc_selrefs: 0x24ec0 sha256:11ad6f78d9f3cdfc640255cba5f6ca1d04e4eb10672b92bd5f55aade5b663c26
-+  __DATA_CONST.__objc_protorefs: 0x260 sha256:383413938a4f0d1a4226013624b663eedd2b20d16c5b6a1c13be66d462c3144e
-+  __DATA_CONST.__objc_superrefs: 0x3148 sha256:8825eeb75de6493b306b537e46107642da8b0cb52a53bffd0a548e1f17c88066
-+  __DATA_CONST.__objc_arraydata: 0x2810 sha256:225a3d9fef57c283c7fb03c34e7f9dcf203ffa42f51006f65e3115b5432ad4e1
-+  __DATA_CONST.__got: 0x5310 sha256:1fbde11ff1f772878734fe53ffb33d5dcb2a2097867062d110a4fd7acc7b9ebe
-+  __AUTH_CONST.__const: 0x254c8 sha256:9ef77bf365f869d3b0f5ce0385de22305e706a25e0510dc7347225b83e152563
-+  __AUTH_CONST.__cfstring: 0x77ac0 sha256:f01813b466b66a2814ec29127810cec138fff24a8c234240a12ba5901dfb6bf7
-+  __AUTH_CONST.__objc_const: 0xcf2a0 sha256:a62bbf5661d9f3753c1986362dfe997489ac56f6d0f5102703a28d186bc85ef0
-+  __AUTH_CONST.__objc_arrayobj: 0xd20 sha256:cc4ef80950be8da3ab6bae1ef82534a918ae7e7a9b715e610192bc872d96cc45
-+  __AUTH_CONST.__objc_intobj: 0x11a0 sha256:d4e340748d64740fb52785c62e1402c040603ecf215ab756976333d4788c32ef
-+  __AUTH_CONST.__objc_dictobj: 0x15b8 sha256:b6ba42bfdd321f6a48028a9548a0da9047d96d98bdb6699524e5edb2ebc531cd
-+  __AUTH_CONST.__objc_doubleobj: 0x2b0 sha256:f938819866d10c4cdedf887ba671ec56cfa0eb668b161b68ece4b0327a1260f5
-+  __AUTH_CONST.__auth_got: 0x2eb8 sha256:25b9f735f9c70ba748aa59c6abf08fe5167c3780af49ced9ba7822af0cfcfaaf
-+  __AUTH.__objc_data: 0x228e0 sha256:df3fa4f4d1988ea298c1e143193036713cddd43eb20a75579dc028878972a469
-+  __AUTH.__data: 0x5250 sha256:1628e636020fbd38b14fe34b018f62cc785dc76f0a7dd54a2443509bae1109b1
-+  __AUTH.__thread_vars: 0x18 sha256:734fd72ba19f4517b0af6d70464c5681521bd4c63dcb33bb4f0d3c5e1e4411e8
-   __AUTH.__thread_bss: 0x8 sha256:af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc
--  __DATA.__objc_ivar: 0x7280 sha256:40aa6c4bcadfd63a498ecb2f69df4c855b1a233abe0dfd86a9f342ce8843b22d
--  __DATA.__data: 0x9ea8 sha256:1e76cc2f7feb6e1ad4f05f4c19f8d706def734a7e79a3cac1d3ab3955477018b
--  __DATA.__bss: 0x25958 sha256:ab9626f26693968821fb8b2b225aab6c72e044964b81b9c2cdfd0aca240e0692
-+  __DATA.__objc_ivar: 0x7294 sha256:3c8133978aa8a81cbc19abcdb9b188c475b49ff9dc16e0444ee39612972de268
-+  __DATA.__data: 0x9e88 sha256:c586edec54832d213df0c73213a28fbae27a9b2abc545228099705f0bdd82664
-+  __DATA.__bss: 0x259c8 sha256:4b65b5e1d8c0c1c58f7aca35fc7c6e29643365279194481844fbd93d0fb65bc3
-   __DATA.__common: 0xc39 sha256:e9dffe46def3da1a000bdd44f70d176aedb97e6b67ead1cc4b968e73caf2ae64
--  __DATA_DIRTY.__objc_ivar: 0x1f0c sha256:431d5c7965a18b977082aa13c3d695c2da5beae97fd7f0e6c93975ed984ef8c5
--  __DATA_DIRTY.__objc_data: 0x5820 sha256:70d8773c927eb2a728330522c035df96476cad923e29e5b41e234ef716608a48
--  __DATA_DIRTY.__data: 0x188 sha256:98bb6181d751fb9c823336f8df46c1aaa8c335a327a1a59bb92e0ea5e2bab3e9
-+  __DATA_DIRTY.__objc_ivar: 0x1f20 sha256:79702d349ff9c810543b0af91301e5822a58299c82a18eadf5f789c54da8f9bd
-+  __DATA_DIRTY.__objc_data: 0x57d0 sha256:aecac2fca606e0df1f97c32c561a49ca8aee7541e693f7b5358a534ac9cad2c2
-+  __DATA_DIRTY.__data: 0x188 sha256:34789c5564cec3914428b2f980ccb94db27128ae6e38c590eb84f136965b833d
-   __DATA_DIRTY.__bss: 0x12e8 sha256:246a12aee4c9465050bc1ef66367b04366590f4c35564b3283b0d979f25621f9
-   __DATA_DIRTY.__common: 0x40 sha256:f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: 4E9CD933-CB57-3039-865A-47D52D9717F6
 -  Functions: 54855
--  Symbols:   138084
--  CStrings:  36619
-+  UUID: 9C9F6BAE-6C40-3B51-97FD-1016AD5B03B0
+-  Symbols:   78385
+-  CStrings:  21325
 +  Functions: 55024
-+  Symbols:   138167
-+  CStrings:  36624
- 
++  Symbols:   78461
++  CStrings:  21323
 Symbols:
 + +[PKAccountServiceUnavailablePeriod supportsSecureCoding]
 + +[PKAnalyticsReporter(AppleCash) reportSplitBillLineItemEventWithPageTag:eventType:buttonTag:p2pContext:messagesContext:billSplitContext:]
@@ -227,20 +153,6 @@ Symbols:
 + GCC_except_table81
 + GCC_except_table85
 + GCC_except_table891
-+ _.str.1690
-+ _.str.250
-+ _.str.256
-+ _.str.258
-+ _.str.261
-+ _.str.276
-+ _.str.277
-+ _.str.282
-+ _.str.283
-+ _.str.292
-+ _.str.298
-+ _.str.303
-+ _.str.304
-+ _.str.883
 + _OBJC_CLASS_$_PKAccountServiceUnavailablePeriod
 + _OBJC_IVAR_$_PKAccount._serviceUnavailablePeriod
 + _OBJC_IVAR_$_PKAccountServiceUnavailablePeriod._reason
@@ -348,325 +260,31 @@ Symbols:
 + __OBJC_METACLASS_RO_$_PKAccountServiceUnavailablePeriod
 + __ResolveDetailImage
 + ___100-[PKAppletSubcredentialSharingSession getPretrackRequestForInvitationWithIdentifier:withCompletion:]_block_invoke
-+ ___100-[PKPaymentService submitUserConfirmation:forTransactionIdentifier:sessionExchangeToken:completion:]_block_invoke.334
-+ ___102-[PKPaymentWebServiceTargetDevice paymentWebService:handlePotentialExpressPass:withCompletionHandler:]_block_invoke.101
-+ ___102-[PKPaymentWebServiceTargetDevice paymentWebService:handlePotentialExpressPass:withCompletionHandler:]_block_invoke.102
-+ ___102-[PKPaymentWebServiceTargetDevice paymentWebService:handlePotentialExpressPass:withCompletionHandler:]_block_invoke.103
-+ ___102-[PKPaymentWebServiceTargetDevice paymentWebService:handlePotentialExpressPass:withCompletionHandler:]_block_invoke.81
-+ ___102-[PKPaymentWebServiceTargetDevice paymentWebService:handlePotentialExpressPass:withCompletionHandler:]_block_invoke.82
-+ ___102-[PKPaymentWebServiceTargetDevice paymentWebService:handlePotentialExpressPass:withCompletionHandler:]_block_invoke.95
-+ ___103-[PKPaymentService submitTransactionSignatureForTransactionIdentifier:sessionExchangeToken:completion:]_block_invoke.337
-+ ___103-[PKPaymentWebServiceTargetDevice _paymentWebService:pass:withExpressConfig:hasDisqualifyingConflicts:]_block_invoke.105
-+ ___104-[PKMobileAssetManager dynamicAssetWithIdentifier:mappedIdentifierPrefix:parameters:timeout:completion:]_block_invoke.481
-+ ___104-[PKMobileAssetManager dynamicAssetWithIdentifier:mappedIdentifierPrefix:parameters:timeout:completion:]_block_invoke.482
-+ ___104-[PKPaymentService storeMerchant:forPassUniqueIdentifier:withSource:parentIdentifier:completionHandler:]_block_invoke.301
-+ ___106-[PKPaymentService deleteMerchantsForPassUniqueIdentifier:withSource:parentIdentifiers:completionHandler:]_block_invoke.303
-+ ___106-[PKPaymentService submitBarcodePaymentEvent:forPassUniqueIdentifier:sessionExchangeToken:withCompletion:]_block_invoke.339
-+ ___107-[PKPaymentService fetchMerchantForPassUniqueIdentifier:withSource:parentIdentifier:cacheKey:replyHandler:]_block_invoke.300
-+ ___107-[PKPaymentService registerAuxiliaryCapabilityForPassUniqueIdentifier:sessionExchangeToken:withCompletion:]_block_invoke.321
-+ ___107-[PKPaymentService retrieveDecryptedBarcodeCredentialForPassUniqueIdentifier:authorization:withCompletion:]_block_invoke.325
-+ ___108-[PKMobileAssetManager _downloadPrefetchableAssetsForType:catalogExpirationDays:isDiscretionary:completion:]_block_invoke.517
-+ ___108-[PKMobileAssetManager _downloadPrefetchableAssetsForType:catalogExpirationDays:isDiscretionary:completion:]_block_invoke.518
-+ ___108-[PKMobileAssetManager _downloadPrefetchableAssetsForType:catalogExpirationDays:isDiscretionary:completion:]_block_invoke.519
 + ___109-[PKAppletSubcredentialSharingSession getProductPlanIdentifierRequestForInvitationWithIdentifier:completion:]_block_invoke
-+ ___112-[PKPaymentService retrievePINEncryptionCertificateForPassUniqueIdentifier:sessionExchangeToken:withCompletion:]_block_invoke.329
-+ ___113-[PKPaymentService storeMerchant:forPassUniqueIdentifier:withSource:parentIdentifier:cacheKey:completionHandler:]_block_invoke.302
-+ ___114-[PKPaymentWebServiceTargetDevice generateIdentityProvisioningAttestationsWithISOCredential:pairingID:completion:]_block_invoke.144
-+ ___121-[PKPaymentService notifyToContinueRemoteNetworkPaymentForSession:remoteLinkToken:paymentType:fromDeviceName:completion:]_block_invoke.313
 + ___123-[PKExistingCardAuthorizationRequestMessage initWithGroupsBySessionIdentifier:destinationDeviceType:destinationDeviceName:]_block_invoke
 + ___123-[PKPaymentService augmentedProductForInstallmentConfiguration:experimentDetails:feature:productIdentifier:withCompletion:]_block_invoke
-+ ___123-[PKPaymentService augmentedProductForInstallmentConfiguration:experimentDetails:feature:productIdentifier:withCompletion:]_block_invoke.353
-+ ___128-[PKPaymentService retrieveDecryptedBarcodeCredentialForPassUniqueIdentifier:authorization:sessionExchangeToken:withCompletion:]_block_invoke.327
-+ ___140-[PKPaymentService rangingSuspensionReasonForAppletSubcredentialIdentifier:paymentApplicationIdentifier:secureElementIdentifier:completion:]_block_invoke.294
-+ ___142-[PKMobileAssetManager _retrieveAssetWithQuery:maxCompatibleVersion:isDiscretionary:sortDescriptors:timeout:catalogExpirationDays:completion:]_block_invoke.541
-+ ___142-[PKMobileAssetManager _retrieveAssetWithQuery:maxCompatibleVersion:isDiscretionary:sortDescriptors:timeout:catalogExpirationDays:completion:]_block_invoke.543
-+ ___142-[PKMobileAssetManager _retrieveAssetWithQuery:maxCompatibleVersion:isDiscretionary:sortDescriptors:timeout:catalogExpirationDays:completion:]_block_invoke.545
-+ ___142-[PKMobileAssetManager _retrieveAssetWithQuery:maxCompatibleVersion:isDiscretionary:sortDescriptors:timeout:catalogExpirationDays:completion:]_block_invoke.546
-+ ___142-[PKMobileAssetManager _retrieveAssetWithQuery:maxCompatibleVersion:isDiscretionary:sortDescriptors:timeout:catalogExpirationDays:completion:]_block_invoke_2.542
-+ ___142-[PKMobileAssetManager _retrieveAssetWithQuery:maxCompatibleVersion:isDiscretionary:sortDescriptors:timeout:catalogExpirationDays:completion:]_block_invoke_2.544
-+ ___36-[PKPaymentService consistencyCheck]_block_invoke.268
-+ ___43-[PKPaymentService productsWithCompletion:]_block_invoke.369
-+ ___45-[PKPaymentService insertUserLegalAgreement:]_block_invoke.412
-+ ___48-[PKMobileAssetManager _purgeAssets:completion:]_block_invoke.548
-+ ___49-[PKPaymentService currentSecureElementSnapshot:]_block_invoke.400
-+ ___49-[PKPaymentService deleteReservation:completion:]_block_invoke.404
-+ ___50-[PKPaymentService sharedPaymentWebServiceContext]_block_invoke.287
-+ ___50-[PKPaymentService submitApplyRequest:completion:]_block_invoke.357
-+ ___50-[PKPaymentService submitTermsRequest:completion:]_block_invoke.361
-+ ___51-[PKPaymentService productsWithRequest:completion:]_block_invoke.367
-+ ___51-[PKPaymentService submitDeleteRequest:completion:]_block_invoke.362
-+ ___53-[PKPaymentService submitDocumentRequest:completion:]_block_invoke.359
-+ ___54-[PKContactlessInterfaceSession _sessionDidExitField:]_block_invoke.229
-+ ___54-[PKPaymentService featureApplicationsWithCompletion:]_block_invoke.355
-+ ___54-[PKPaymentService regionsWithIdentifiers:completion:]_block_invoke.297
-+ ___55-[PKPaymentService performDeviceCheckInWithCompletion:]_block_invoke.366
-+ ___55-[PKPaymentService pushProvisioningSharingIdentifiers:]_block_invoke.387
-+ ___56-[PKPaymentService credentialWithIdentifier:completion:]_block_invoke.383
-+ ___57-[PKPaymentService regionsMatchingName:types:completion:]_block_invoke.298
-+ ___57-[PKPaymentService submitVerificationRequest:completion:]_block_invoke.360
-+ ___58-[PKDAManager deleteCredentialsForIdentifiers:completion:]_block_invoke.186
-+ ___58-[PKPaymentService familyMembersIgnoringCache:completion:]_block_invoke.340
-+ ___59-[PKDAManager getPretrackShareDataForShare:withCompletion:]_block_invoke.209
-+ ___59-[PKPaymentService memberTypeForCurrentUserWithCompletion:]_block_invoke.341
-+ ___59-[PKPaymentService performProductActionRequest:completion:]_block_invoke.370
-+ ___59-[PKPaymentService requiresUpgradedPasscodeWithCompletion:]_block_invoke.319
-+ ___59-[PKPaymentService storeTransactionReceiptData:completion:]_block_invoke.408
-+ ___59-[PKPaymentService subcredentialInvitationsWithCompletion:]_block_invoke.377
-+ ___60-[PKContactlessInterfaceSession _sessionDidEndUnexpectedly:]_block_invoke.239
-+ ___61-[PKPaymentService changePasscodeFrom:toPasscode:completion:]_block_invoke.320
-+ ___61-[PKPaymentService fetchRestrictionsProfileWithReplyHandler:]_block_invoke.415
-+ ___61-[PKPaymentService statusForShareableCredentials:completion:]_block_invoke.390
-+ ___62-[PKDAManager immobilizerTokensCountForCredential:completion:]_block_invoke.154
-+ ___62-[PKPaymentService addRemoteDevicePendingProvisioningReceipt:]_block_invoke.307
-+ ___62-[PKPaymentService generateUnderlyingKeyReportWithCompletion:]_block_invoke.315
-+ ___62-[PKPaymentService transactionReceiptWithUniqueID:completion:]_block_invoke.405
-+ ___63-[PKPaymentService currentPasscodeMeetsUpgradedPasscodePolicy:]_block_invoke.318
-+ ___63-[PKPaymentService photosForFamilyMembersWithDSIDs:completion:]_block_invoke.344
-+ ___63-[PKPaymentService refreshMerchantTokenMetadataWithCompletion:]_block_invoke.305
-+ ___64-[PKDAManager deleteCredentialsForReaderIdentifiers:completion:]_block_invoke.188
-+ ___64-[PKPaymentService enforceUpgradedPasscodePolicyWithCompletion:]_block_invoke.317
-+ ___64-[PKPaymentService featureApplicationWithIdentifier:completion:]_block_invoke.356
-+ ___64-[PKPaymentService passOwnershipTokenWithIdentifier:completion:]_block_invoke.371
-+ ___64-[PKPaymentService redeemPaymentShareableCredential:completion:]_block_invoke.396
-+ ___64-[PKPaymentService revokeCredentialsWithIdentifiers:completion:]_block_invoke.381
-+ ___64-[PKPaymentWebServiceLocalProxyTargetDevice initWithConnection:]_block_invoke.305
 + ___65-[PKDAManager startShareAcceptanceFlowWithInvitation:completion:]_block_invoke
-+ ___65-[PKDAManager startShareAcceptanceFlowWithInvitation:completion:]_block_invoke.211
-+ ___65-[PKPaymentService notifyForFPANCardImportConsentWithCompletion:]_block_invoke.309
-+ ___65-[PKPaymentService passSharesForCredentialIdentifier:completion:]_block_invoke.385
-+ ___65-[PKPaymentService pendingFamilyMembersIgnoringCache:completion:]_block_invoke.343
-+ ___65-[PKPaymentService revokeMerchantTokenWithIdentifier:completion:]_block_invoke.306
-+ ___65-[PKPaymentService sharedPaymentWebServiceContextWithCompletion:]_block_invoke.289
-+ ___65-[PKPaymentWebService _applePayTrustPublicKeyHashWithCompletion:]_block_invoke.1033
-+ ___66-[PKPaymentService defaultPaymentPassIngestionSpecificIdentifier:]_block_invoke.345
-+ ___66-[PKPaymentService registerCredentialsWithIdentifiers:completion:]_block_invoke.379
-+ ___66-[PKPaymentService(Sharing) processSharingCLICommands:completion:]_block_invoke.43
-+ ___67-[PKPaymentService addPlaceholderPassWithConfiguration:completion:]_block_invoke.375
-+ ___67-[PKPaymentService clearFPANCardImportNotificationsWithCompletion:]_block_invoke.311
-+ ___67-[PKPaymentService deleteRestrictionsProfileWithCompletionHandler:]_block_invoke.418
-+ ___67-[PKPaymentService redeemProvisioningSharingIdentifier:completion:]_block_invoke.398
-+ ___67-[PKPaymentService requestNotificationAuthorizationWithCompletion:]_block_invoke.272
-+ ___67-[PKPaymentService storeRestrictionsProfile:withCompletionHandler:]_block_invoke.417
-+ ___68-[PKMobileAssetManager updateCashStickersIfNecessaryWithCompletion:]_block_invoke.503
-+ ___68-[PKPaymentService deleteTransactionReceiptWithUniqueID:completion:]_block_invoke.409
-+ ___68-[PKPaymentService updateAllMapsBrandAndMerchantDataWithCompletion:]_block_invoke.290
 + ___69-[PKMobileAssetManager cachedStringsBundleWithIdentifier:completion:]_block_invoke
-+ ___69-[PKPaymentService featureApplicationsForProvisioningWithCompletion:]_block_invoke.349
-+ ___69-[PKPaymentService reserveStorageForAppletTypes:metadata:completion:]_block_invoke.402
-+ ___70-[PKContactlessInterfaceSession stsSessionRequestHandoffConfirmation:]_block_invoke.224
-+ ___70-[PKPaymentService accountAttestationAnonymizationSaltWithCompletion:]_block_invoke.372
-+ ___70-[PKPaymentService revokeCredentialsWithReaderIdentifiers:completion:]_block_invoke.382
-+ ___70-[PKPaymentService suggestPaymentFPANCredentialImport:withCompletion:]_block_invoke.308
-+ ___70-[PKPaymentService updateReviewStateForProfile:withCompletionHandler:]_block_invoke.419
-+ ___70-[PKPaymentWebService _handlePassListDownloadTask:data:fromPushTopic:]_block_invoke.996
-+ ___71-[PKDAManager statusForSentSharingInvitationWithIdentifier:completion:]_block_invoke.157
-+ ___71-[PKPaymentService featureApplicationsForAccountIdentifier:completion:]_block_invoke.346
-+ ___72-[PKContactlessInterfaceSession _session:didExpireTransactionForApplet:]_block_invoke.234
 + ___73-[PKDAManager handleInitiatorMessage:forInvitationIdentifier:completion:]_block_invoke
-+ ___73-[PKDAManager handleInitiatorMessage:forInvitationIdentifier:completion:]_block_invoke.219
-+ ___73-[PKDAManager handleRecipientMessage:forInvitationIdentifier:completion:]_block_invoke.218
-+ ___73-[PKMobileAssetManager updateUGPassBackgroundsIfNecessaryWithCompletion:]_block_invoke.505
-+ ___73-[PKMobileAssetManager updateUGPassBackgroundsIfNecessaryWithCompletion:]_block_invoke.507
-+ ___73-[PKMobileAssetManager updateUGPassBackgroundsIfNecessaryWithCompletion:]_block_invoke.509
 + ___73-[PKMobileAssetManager updateUGPassBackgroundsIfNecessaryWithCompletion:]_block_invoke_2
-+ ___73-[PKPaymentService ambiguousTransactionWithServiceIdentifier:completion:]_block_invoke.411
-+ ___73-[PKPaymentService clearFPANCardImportNotificationHistoryWithCompletion:]_block_invoke.312
-+ ___73-[PKPaymentService featureApplicationWithReferenceIdentifier:completion:]_block_invoke.351
-+ ___74-[PKMobileAssetManager _downloadAsset:isDiscretionary:timeout:completion:]_block_invoke.553
-+ ___74-[PKPaymentService notifyForFPANCardImportWithCredentials:withCompletion:]_block_invoke.310
-+ ___74-[PKPaymentService setAccountAttestationAnonymizationSalt:withCompletion:]_block_invoke.374
-+ ___75-[PKDAManager statusForReceivedSharingInvitationWithIdentifier:completion:]_block_invoke.158
-+ ___75-[PKPaymentService prepareProvisioningTarget:checkFamilyCircle:completion:]_block_invoke.393
-+ ___75-[PKPaymentService submitEncryptedPIN:forTransactionIdentifier:completion:]_block_invoke.335
-+ ___75-[PKPaymentService transactionTagsForTransactionWithIdentifier:completion:]_block_invoke.410
 + ___76-[PKDAManager getPretrackRequestForInvitationWithIdentifier:withCompletion:]_block_invoke
 + ___76-[PKDAManager getPretrackRequestForInvitationWithIdentifier:withCompletion:]_block_invoke_2
-+ ___76-[PKPaymentWebServiceRemoteProxyTargetDevice initWithWebService:connection:]_block_invoke.662
-+ ___77-[PKPaymentService sendDeviceSharingCapabilitiesRequestForHandle:completion:]_block_invoke.413
-+ ___77-[PKPaymentService updateFeatureApplicationsForAccountIdentifier:completion:]_block_invoke.347
-+ ___77-[PKPaymentService updateMetadataOnPassWithIdentifier:credential:completion:]_block_invoke.378
 + ___77-[PKProvisioningAssetManager preloadProvisioningStringsBundleWithCompletion:]_block_invoke
-+ ___78-[PKPaymentService categoryVisualizationMagnitudesForPassUniqueID:completion:]_block_invoke.365
-+ ___78-[PKPaymentService featureApplicationsForAccountUserInvitationWithCompletion:]_block_invoke.350
-+ ___78-[PKPaymentService requestNotificationAuthorizationIfNecessaryWithCompletion:]_block_invoke.271
-+ ___79-[PKContactlessInterfaceSession _session:didExpressModeStateChange:withObject:]_block_invoke.252
 + ___79-[PKDAManager routingInformationForInvitationWithIdentifier:completionHandler:]_block_invoke
 + ___79-[PKDAManager routingInformationForInvitationWithIdentifier:completionHandler:]_block_invoke_2
-+ ___79-[PKPaymentService submitUserConfirmation:forTransactionIdentifier:completion:]_block_invoke.332
-+ ___80-[PKMobileAssetManager performScheduledActivityWithIdentifier:activityCriteria:]_block_invoke.528
-+ ___80-[PKMobileAssetManager performScheduledActivityWithIdentifier:activityCriteria:]_block_invoke.531
-+ ___80-[PKPaymentWebService _registerIfNeededWithResponse:task:isRedirect:completion:]_block_invoke.1032
-+ ___82-[PKPaymentService markAuthenticationCompleteForTransactionIdentifier:completion:]_block_invoke.331
 + ___83-[PKContactlessInterfaceSession stsSession:didReceive18013Requests:readerAuthInfo:]_block_invoke_2
-+ ___83-[PKPaymentService mapsMerchantWithIdentifier:resultProviderIdentifier:completion:]_block_invoke.291
-+ ___83-[PKPaymentService saveProvisioningSupportData:forPassUniqueIdentifier:completion:]_block_invoke.388
-+ ___83-[PKPaymentService transactionsRequiringReviewForAccountWithIdentifier:completion:]_block_invoke.364
 + ___85-[PKDAManager getProductPlanIdentifierRequestForInvitationWithIdentifier:completion:]_block_invoke
 + ___85-[PKDAManager getProductPlanIdentifierRequestForInvitationWithIdentifier:completion:]_block_invoke_2
-+ ___85-[PKPaymentService submitBarcodePaymentEvent:forPassUniqueIdentifier:withCompletion:]_block_invoke.338
-+ ___86-[PKPaymentService userNotificationActionPerformed:notificationIdentifier:completion:]_block_invoke.274
-+ ___87-[PKPaymentService transitStateWithPassUniqueIdentifier:paymentApplication:completion:]_block_invoke.254
-+ ___87-[PKPaymentWebService _handleRetryAfterRegisterWithRequest:response:completionHandler:]_block_invoke.1002
-+ ___88-[PKPaymentService removeContinueRemoteNetworkPaymentNotificationForSession:completion:]_block_invoke.314
-+ ___89-[PKPaymentService processedAuthenticationMechanism:forTransactionIdentifier:completion:]_block_invoke.330
-+ ___89-[PKPaymentService submitTransactionAnswerForTransaction:questionType:answer:completion:]_block_invoke.363
-+ ___90-[PKPaymentService clearProvisioningSupportDataOfType:forPassUniqueIdentifier:completion:]_block_invoke.389
-+ ___91-[PKPaymentService retrievePINEncryptionCertificateForPassUniqueIdentifier:withCompletion:]_block_invoke.328
-+ ___93-[PKPaymentService fetchBarcodesForPassUniqueIdentifier:sessionExchangeToken:withCompletion:]_block_invoke.323
-+ ___94-[PKAppletSubcredentialManagementSession accountAttestationRequestForManufacturer:completion:]_block_invoke.33
-+ ___94-[PKPaymentService sharingInvitationWasInvalidated:withCredentialIdentifier:error:completion:]_block_invoke.386
-+ ___96-[PKPaymentService invalidateAuxiliaryCapabilityCertificatesForPassUniqueIdentifier:completion:]_block_invoke.322
-+ ___96-[PKPaymentService merchantForPassUniqueIdentifier:withAuxiliaryPassInformationItem:completion:]_block_invoke.304
-+ ___96-[PKPaymentService provideEncryptedPushProvisioningTarget:sharingInstanceIdentifier:completion:]_block_invoke.392
-+ ___96-[PKPaymentService submitEncryptedPIN:forTransactionIdentifier:sessionExchangeToken:completion:]_block_invoke.336
-+ ___96-[PKPaymentService transactionReceiptForTransactionWithIdentifier:updateIfNecessary:completion:]_block_invoke.407
-+ ___96-[PKPaymentWebService _backgroundDownloadCloudStoreAssetsForItem:cloudStoreCoordinatorDelegate:]_block_invoke.989
-+ ___96-[PKPaymentWebService _backgroundDownloadCloudStoreAssetsForItem:cloudStoreCoordinatorDelegate:]_block_invoke_2.988
-+ ___96-[PKPaymentWebService _backgroundDownloadCloudStoreAssetsForItem:cloudStoreCoordinatorDelegate:]_block_invoke_2.992
-+ ___97-[PKDAManager createInviteForShare:forCredential:analyticsUpdateConfig:authorization:completion:]_block_invoke.204
-+ ___97-[PKDAManager createInviteForShare:forCredential:analyticsUpdateConfig:authorization:completion:]_block_invoke_2.207
-+ ___98-[PKPaymentService fetchMerchantForPassUniqueIdentifier:withSource:parentIdentifier:replyHandler:]_block_invoke.299
 + ___98-[PKPaymentWebServiceTargetDevice carKeyGetPretrackRequestForInvitationWithIdentifier:completion:]_block_invoke
-+ ___99-[PKPaymentService userNotificationActionPerformed:applicationMessageContentIdentifier:completion:]_block_invoke.273
-+ ___PKPeerPaymentRemoveRecurringPaymentRecentMemoIcon_block_invoke.1203
-+ ___PKRequestContactAccessWithCompletion_block_invoke.314
 + ___block_descriptor_48_e8_32bs40bs_e32_v16?0"DAShareInitiatorResult"8ls32l8s40l8
 + ___block_descriptor_56_e8_32s40s48bs_e18_v16?0"NSBundle"8ls32l8s40l8s48l8
 + ___block_descriptor_56_e8_32s40s48bs_e8_v16?0q8ls48l8s32l8s40l8
 + ___block_descriptor_57_e8_32s40bs_e8_v12?0B8ls40l8s32l8
 + ___block_descriptor_65_e8_32s40s48s56bs_e8_v16?0q8ls32l8s56l8s40l8s48l8
-+ ___block_literal_global.1000
-+ ___block_literal_global.1003
-+ ___block_literal_global.1012
-+ ___block_literal_global.1020
-+ ___block_literal_global.1025
-+ ___block_literal_global.1034
-+ ___block_literal_global.1045
-+ ___block_literal_global.1048
-+ ___block_literal_global.1076
-+ ___block_literal_global.1081
-+ ___block_literal_global.1088
-+ ___block_literal_global.1093
-+ ___block_literal_global.1098
-+ ___block_literal_global.1103
-+ ___block_literal_global.1108
-+ ___block_literal_global.1113
-+ ___block_literal_global.1123
-+ ___block_literal_global.1133
-+ ___block_literal_global.1169
-+ ___block_literal_global.1202
-+ ___block_literal_global.1253
-+ ___block_literal_global.1254
-+ ___block_literal_global.1257
-+ ___block_literal_global.1260
-+ ___block_literal_global.1263
-+ ___block_literal_global.1272
-+ ___block_literal_global.1277
-+ ___block_literal_global.1286
-+ ___block_literal_global.1392
-+ ___block_literal_global.1395
-+ ___block_literal_global.141
-+ ___block_literal_global.1444
-+ ___block_literal_global.1449
-+ ___block_literal_global.1700
-+ ___block_literal_global.1706
-+ ___block_literal_global.1709
-+ ___block_literal_global.1712
-+ ___block_literal_global.1715
-+ ___block_literal_global.1718
-+ ___block_literal_global.1721
-+ ___block_literal_global.1724
-+ ___block_literal_global.1727
-+ ___block_literal_global.1730
-+ ___block_literal_global.1733
-+ ___block_literal_global.1736
-+ ___block_literal_global.1739
-+ ___block_literal_global.1742
-+ ___block_literal_global.1745
-+ ___block_literal_global.1752
-+ ___block_literal_global.1759
-+ ___block_literal_global.1773
-+ ___block_literal_global.1779
-+ ___block_literal_global.1782
-+ ___block_literal_global.1795
-+ ___block_literal_global.241
-+ ___block_literal_global.253
-+ ___block_literal_global.260
-+ ___block_literal_global.262
-+ ___block_literal_global.270
-+ ___block_literal_global.285
-+ ___block_literal_global.296
-+ ___block_literal_global.320
-+ ___block_literal_global.325
-+ ___block_literal_global.386
-+ ___block_literal_global.422
-+ ___block_literal_global.427
-+ ___block_literal_global.495
-+ ___block_literal_global.530
-+ ___block_literal_global.532
-+ ___block_literal_global.533
-+ ___block_literal_global.535
-+ ___block_literal_global.565
-+ ___block_literal_global.579
-+ ___block_literal_global.693
-+ ___block_literal_global.704
-+ ___block_literal_global.709
-+ ___block_literal_global.739
-+ ___block_literal_global.782
-+ ___block_literal_global.938
-+ ___block_literal_global.953
-+ ___block_literal_global.991
-+ ___block_literal_global.994
-+ ___block_literal_global.995
-+ ___swift__destructor.107
-+ ___swift__destructor.133
-+ ___swift__destructor.83
 + ___swift_memcpy416_8
-+ _block_copy_helper.88
-+ _block_copy_helper.94
-+ _block_descriptor.90
-+ _block_descriptor.96
-+ _block_destroy_helper.89
-+ _block_destroy_helper.95
 + _kSecAttrIsInvisible
 + _kSecAttrSyncViewHint
 + _kSecAttrViewHintLimitedPeersAllowed
-+ _objc_msgSend$_defaultSelectedPaymentApplicationForPaymentApplications:issuerCountryCode:
-+ _objc_msgSend$_passLocalizedStringForKey:preferredLanguages:
-+ _objc_msgSend$_recomputeEffectiveSubtitles
-+ _objc_msgSend$augmentedProductForInstallmentConfiguration:experimentDetails:feature:productIdentifier:withCompletion:
-+ _objc_msgSend$automatedPairingConsented
-+ _objc_msgSend$cachedStringsBundleWithIdentifier:completion:
-+ _objc_msgSend$carKeyGetPretrackRequestForInvitationWithIdentifier:completion:
-+ _objc_msgSend$createSharingInvitationsForKeyIdentifier:friendIdentifier:auth:ourBindingAttestation:config:completionHandler:
-+ _objc_msgSend$familyMembersByAltDSID
-+ _objc_msgSend$getPreTrackRequestForInvitationWithIdentifier:completionHandler:
-+ _objc_msgSend$getPretrackRequestForInvitationWithIdentifier:withCompletion:
-+ _objc_msgSend$getProductPlanIdentifierRequestForInvitationWithIdentifier:completion:
-+ _objc_msgSend$handleInitiatorMessage:forInvitationIdentifier:completion:
-+ _objc_msgSend$handleInitiatorMessage:forInvitationIdentifier:completionHandler:
-+ _objc_msgSend$initWithGroupsBySessionIdentifier:destinationDeviceType:destinationDeviceName:
-+ _objc_msgSend$isEqualToAccountServiceUnavailablePeriod:
-+ _objc_msgSend$isParticipantAccountLockedByOwner
-+ _objc_msgSend$needsConsent
-+ _objc_msgSend$paymentWebService:didFailToDownloadRemoteCloudStoreAssetWithLocalURL:forPassWithUniqueID:error:
-+ _objc_msgSend$ppidRequestForInvitationWithIdentifier:completionHandler:
-+ _objc_msgSend$presentPhysicalCardReplacementForPass:presentationStyle:reason:
-+ _objc_msgSend$readerInformationForInvitationWithIdentifier:completionHandler:
-+ _objc_msgSend$remoteNetworkRequestHostApplicationIdentifier
-+ _objc_msgSend$remoteNetworkRequestHostApplicationName
-+ _objc_msgSend$remoteNetworkRequestHostBundleIdentifier
-+ _objc_msgSend$routingInformationForInvitationWithIdentifier:completionHandler:
-+ _objc_msgSend$setIsAutomatedPairing:
-+ _objc_msgSend$setNeedsConsent:
-+ _objc_msgSend$setRemoteNetworkRequestHostApplicationIdentifier:
-+ _objc_msgSend$setRemoteNetworkRequestHostApplicationName:
-+ _objc_msgSend$setRemoteNetworkRequestHostBundleIdentifier:
-+ _objc_msgSend$setSupportsAutomatedPairing:
-+ _objc_msgSend$setSyncedToKeychain:
-+ _objc_msgSend$startShareAcceptanceFlowWithInvitation:completion:
-+ _objc_msgSend$startShareAcceptanceFlowWithInvitation:completionHandler:
-+ _objc_msgSend$supportsGraduationWhileAssociatedAccountLocked
 + _swift_release_x10
 + _symbolic 6Output_____Qz 18AppIntentsServices0A20IntentRepresentationP
 + _symbolic SDy__________y___________ySbGGG 10Foundation4UUIDV 18AppIntentsServices0dE0O12ProgressTaskV AF08DispatchF0O AD0C19IntentSuccessResultV
@@ -825,20 +443,6 @@ Symbols:
 - GCC_except_table742
 - GCC_except_table778
 - GCC_except_table896
-- _.str.1692
-- _.str.252
-- _.str.257
-- _.str.262
-- _.str.263
-- _.str.280
-- _.str.281
-- _.str.285
-- _.str.286
-- _.str.294
-- _.str.295
-- _.str.301
-- _.str.307
-- _.str.885
 - _CFStringConvertEncodingToIANACharSetName
 - _OBJC_CLASS_$_DAKeyInvitationRequestConfig
 - _OBJC_CLASS_$_PKPassFeaturedActionTileBuilder
@@ -873,199 +477,34 @@ Symbols:
 - __OBJC_CLASS_RO_$_PKPassSharePendingActivation
 - __OBJC_METACLASS_RO_$_PKPassFeaturedActionTileBuilder
 - __OBJC_METACLASS_RO_$_PKPassSharePendingActivation
-- ___100-[PKPaymentService submitUserConfirmation:forTransactionIdentifier:sessionExchangeToken:completion:]_block_invoke.335
 - ___101-[PKAppletSubcredentialManagementSession signData:auth:bundleIdentifier:nonce:credential:completion:]_block_invoke
 - ___101-[PKDAManager routingInformationForInvitationWithIdentifier:fromMailboxIdentifier:completionHandler:]_block_invoke
 - ___101-[PKDAManager routingInformationForInvitationWithIdentifier:fromMailboxIdentifier:completionHandler:]_block_invoke_2
 - ___101-[PKPaymentWebServiceTargetDevice carKeyGetPretrackRequestForKeyWithInvitationIdentifier:completion:]_block_invoke
 - ___102-[PKPaymentService recordPaymentApplicationUsageForPassUniqueIdentifier:paymentApplicationIdentifier:]_block_invoke
-- ___102-[PKPaymentService recordPaymentApplicationUsageForPassUniqueIdentifier:paymentApplicationIdentifier:]_block_invoke.252
-- ___102-[PKPaymentWebServiceTargetDevice paymentWebService:handlePotentialExpressPass:withCompletionHandler:]_block_invoke.69
-- ___102-[PKPaymentWebServiceTargetDevice paymentWebService:handlePotentialExpressPass:withCompletionHandler:]_block_invoke.70
-- ___102-[PKPaymentWebServiceTargetDevice paymentWebService:handlePotentialExpressPass:withCompletionHandler:]_block_invoke.78
-- ___102-[PKPaymentWebServiceTargetDevice paymentWebService:handlePotentialExpressPass:withCompletionHandler:]_block_invoke.83
-- ___102-[PKPaymentWebServiceTargetDevice paymentWebService:handlePotentialExpressPass:withCompletionHandler:]_block_invoke.89
-- ___102-[PKPaymentWebServiceTargetDevice paymentWebService:handlePotentialExpressPass:withCompletionHandler:]_block_invoke.91
-- ___103-[PKPaymentService submitTransactionSignatureForTransactionIdentifier:sessionExchangeToken:completion:]_block_invoke.338
-- ___103-[PKPaymentWebServiceTargetDevice _paymentWebService:pass:withExpressConfig:hasDisqualifyingConflicts:]_block_invoke.93
-- ___104-[PKMobileAssetManager dynamicAssetWithIdentifier:mappedIdentifierPrefix:parameters:timeout:completion:]_block_invoke.478
-- ___104-[PKMobileAssetManager dynamicAssetWithIdentifier:mappedIdentifierPrefix:parameters:timeout:completion:]_block_invoke.479
 - ___104-[PKPassLibrary hasProvisioningExtensionsWithSupportedNetworks:merchantCapabilities:issuerCountryCodes:]_block_invoke
-- ___104-[PKPaymentService storeMerchant:forPassUniqueIdentifier:withSource:parentIdentifier:completionHandler:]_block_invoke.302
 - ___105-[PKPaymentService augmentedProductForInstallmentConfiguration:experimentDetails:feature:withCompletion:]_block_invoke
-- ___105-[PKPaymentService augmentedProductForInstallmentConfiguration:experimentDetails:feature:withCompletion:]_block_invoke.354
-- ___106-[PKPaymentService deleteMerchantsForPassUniqueIdentifier:withSource:parentIdentifiers:completionHandler:]_block_invoke.304
-- ___106-[PKPaymentService submitBarcodePaymentEvent:forPassUniqueIdentifier:sessionExchangeToken:withCompletion:]_block_invoke.340
 - ___107-[PKDAManager getProductPlanIdentifierRequestForInvitationWithIdentifier:fromMailboxIdentifier:completion:]_block_invoke
 - ___107-[PKDAManager getProductPlanIdentifierRequestForInvitationWithIdentifier:fromMailboxIdentifier:completion:]_block_invoke_2
-- ___107-[PKPaymentService fetchMerchantForPassUniqueIdentifier:withSource:parentIdentifier:cacheKey:replyHandler:]_block_invoke.301
-- ___107-[PKPaymentService registerAuxiliaryCapabilityForPassUniqueIdentifier:sessionExchangeToken:withCompletion:]_block_invoke.322
-- ___107-[PKPaymentService retrieveDecryptedBarcodeCredentialForPassUniqueIdentifier:authorization:withCompletion:]_block_invoke.326
 - ___108-[PKAppletSubcredentialSharingSession retryActivationCodeForCredentialIdentifier:activationCode:completion:]_block_invoke
-- ___108-[PKMobileAssetManager _downloadPrefetchableAssetsForType:catalogExpirationDays:isDiscretionary:completion:]_block_invoke.508
-- ___108-[PKMobileAssetManager _downloadPrefetchableAssetsForType:catalogExpirationDays:isDiscretionary:completion:]_block_invoke.510
-- ___108-[PKMobileAssetManager _downloadPrefetchableAssetsForType:catalogExpirationDays:isDiscretionary:completion:]_block_invoke.512
-- ___112-[PKPaymentService retrievePINEncryptionCertificateForPassUniqueIdentifier:sessionExchangeToken:withCompletion:]_block_invoke.330
-- ___113-[PKPaymentService storeMerchant:forPassUniqueIdentifier:withSource:parentIdentifier:cacheKey:completionHandler:]_block_invoke.303
-- ___114-[PKPaymentWebServiceTargetDevice generateIdentityProvisioningAttestationsWithISOCredential:pairingID:completion:]_block_invoke.132
 - ___121-[PKDAManager handleOutstandingMessage:subcredentialIdentifier:credentialShareIdentifier:transportIdentifier:completion:]_block_invoke
-- ___121-[PKPaymentService notifyToContinueRemoteNetworkPaymentForSession:remoteLinkToken:paymentType:fromDeviceName:completion:]_block_invoke.314
-- ___128-[PKPaymentService retrieveDecryptedBarcodeCredentialForPassUniqueIdentifier:authorization:sessionExchangeToken:withCompletion:]_block_invoke.328
 - ___131-[PKAppletSubcredentialSharingSession getProductPlanIdentifierRequestForInvitationWithIdentifier:fromMailboxIdentifier:completion:]_block_invoke
-- ___140-[PKPaymentService rangingSuspensionReasonForAppletSubcredentialIdentifier:paymentApplicationIdentifier:secureElementIdentifier:completion:]_block_invoke.295
-- ___142-[PKMobileAssetManager _retrieveAssetWithQuery:maxCompatibleVersion:isDiscretionary:sortDescriptors:timeout:catalogExpirationDays:completion:]_block_invoke.535
-- ___142-[PKMobileAssetManager _retrieveAssetWithQuery:maxCompatibleVersion:isDiscretionary:sortDescriptors:timeout:catalogExpirationDays:completion:]_block_invoke.537
-- ___142-[PKMobileAssetManager _retrieveAssetWithQuery:maxCompatibleVersion:isDiscretionary:sortDescriptors:timeout:catalogExpirationDays:completion:]_block_invoke.539
-- ___142-[PKMobileAssetManager _retrieveAssetWithQuery:maxCompatibleVersion:isDiscretionary:sortDescriptors:timeout:catalogExpirationDays:completion:]_block_invoke.540
-- ___142-[PKMobileAssetManager _retrieveAssetWithQuery:maxCompatibleVersion:isDiscretionary:sortDescriptors:timeout:catalogExpirationDays:completion:]_block_invoke_2.536
-- ___142-[PKMobileAssetManager _retrieveAssetWithQuery:maxCompatibleVersion:isDiscretionary:sortDescriptors:timeout:catalogExpirationDays:completion:]_block_invoke_2.538
 - ___152-[PKDAManager acceptCrossPlatformInvitationWithIdentifier:transportChannelIdentifier:activationCode:encryptedProductPlanIdentifierContainer:completion:]_block_invoke
 - ___152-[PKDAManager acceptCrossPlatformInvitationWithIdentifier:transportChannelIdentifier:activationCode:encryptedProductPlanIdentifierContainer:completion:]_block_invoke_2
 - ___152-[PKDAManager acceptCrossPlatformInvitationWithIdentifier:transportChannelIdentifier:activationCode:encryptedProductPlanIdentifierContainer:completion:]_block_invoke_3
 - ___176-[PKAppletSubcredentialSharingSession acceptCrossPlatformInvitationWithIdentifier:transportChannelIdentifier:activationCode:encryptedProductPlanIdentifierContainer:completion:]_block_invoke
-- ___36-[PKPaymentService consistencyCheck]_block_invoke.269
-- ___43-[PKPaymentService productsWithCompletion:]_block_invoke.370
-- ___45-[PKPaymentService insertUserLegalAgreement:]_block_invoke.413
-- ___48-[PKMobileAssetManager _purgeAssets:completion:]_block_invoke.542
-- ___49-[PKPaymentService currentSecureElementSnapshot:]_block_invoke.401
-- ___49-[PKPaymentService deleteReservation:completion:]_block_invoke.405
-- ___50-[PKPaymentService sharedPaymentWebServiceContext]_block_invoke.288
-- ___50-[PKPaymentService submitApplyRequest:completion:]_block_invoke.358
-- ___50-[PKPaymentService submitTermsRequest:completion:]_block_invoke.362
-- ___51-[PKPaymentService productsWithRequest:completion:]_block_invoke.368
-- ___51-[PKPaymentService submitDeleteRequest:completion:]_block_invoke.363
-- ___53-[PKPaymentService submitDocumentRequest:completion:]_block_invoke.360
-- ___54-[PKContactlessInterfaceSession _sessionDidExitField:]_block_invoke.230
-- ___54-[PKPaymentService featureApplicationsWithCompletion:]_block_invoke.356
-- ___54-[PKPaymentService regionsWithIdentifiers:completion:]_block_invoke.298
 - ___55-[PKPaymentService allPaymentApplicationUsageSummaries]_block_invoke
-- ___55-[PKPaymentService performDeviceCheckInWithCompletion:]_block_invoke.367
-- ___55-[PKPaymentService pushProvisioningSharingIdentifiers:]_block_invoke.388
-- ___56-[PKPaymentService credentialWithIdentifier:completion:]_block_invoke.384
-- ___57-[PKPaymentService regionsMatchingName:types:completion:]_block_invoke.299
-- ___57-[PKPaymentService submitVerificationRequest:completion:]_block_invoke.361
-- ___58-[PKDAManager deleteCredentialsForIdentifiers:completion:]_block_invoke.187
-- ___58-[PKPaymentService familyMembersIgnoringCache:completion:]_block_invoke.341
-- ___59-[PKDAManager getPretrackShareDataForShare:withCompletion:]_block_invoke.210
 - ___59-[PKPassLibrary signData:withSecureElementPass:completion:]_block_invoke
-- ___59-[PKPaymentService memberTypeForCurrentUserWithCompletion:]_block_invoke.342
-- ___59-[PKPaymentService performProductActionRequest:completion:]_block_invoke.371
-- ___59-[PKPaymentService requiresUpgradedPasscodeWithCompletion:]_block_invoke.320
-- ___59-[PKPaymentService storeTransactionReceiptData:completion:]_block_invoke.409
-- ___59-[PKPaymentService subcredentialInvitationsWithCompletion:]_block_invoke.378
-- ___60-[PKContactlessInterfaceSession _sessionDidEndUnexpectedly:]_block_invoke.240
-- ___61-[PKPaymentService changePasscodeFrom:toPasscode:completion:]_block_invoke.321
-- ___61-[PKPaymentService fetchRestrictionsProfileWithReplyHandler:]_block_invoke.416
-- ___61-[PKPaymentService statusForShareableCredentials:completion:]_block_invoke.391
-- ___62-[PKDAManager immobilizerTokensCountForCredential:completion:]_block_invoke.155
-- ___62-[PKPaymentService addRemoteDevicePendingProvisioningReceipt:]_block_invoke.308
-- ___62-[PKPaymentService generateUnderlyingKeyReportWithCompletion:]_block_invoke.316
-- ___62-[PKPaymentService transactionReceiptWithUniqueID:completion:]_block_invoke.406
-- ___63-[PKPaymentService currentPasscodeMeetsUpgradedPasscodePolicy:]_block_invoke.319
-- ___63-[PKPaymentService photosForFamilyMembersWithDSIDs:completion:]_block_invoke.345
-- ___63-[PKPaymentService refreshMerchantTokenMetadataWithCompletion:]_block_invoke.306
-- ___64-[PKDAManager deleteCredentialsForReaderIdentifiers:completion:]_block_invoke.189
-- ___64-[PKPaymentService enforceUpgradedPasscodePolicyWithCompletion:]_block_invoke.318
-- ___64-[PKPaymentService featureApplicationWithIdentifier:completion:]_block_invoke.357
-- ___64-[PKPaymentService passOwnershipTokenWithIdentifier:completion:]_block_invoke.372
-- ___64-[PKPaymentService redeemPaymentShareableCredential:completion:]_block_invoke.397
-- ___64-[PKPaymentService revokeCredentialsWithIdentifiers:completion:]_block_invoke.382
-- ___64-[PKPaymentWebServiceLocalProxyTargetDevice initWithConnection:]_block_invoke.306
-- ___65-[PKPaymentService notifyForFPANCardImportConsentWithCompletion:]_block_invoke.310
-- ___65-[PKPaymentService passSharesForCredentialIdentifier:completion:]_block_invoke.386
-- ___65-[PKPaymentService pendingFamilyMembersIgnoringCache:completion:]_block_invoke.344
-- ___65-[PKPaymentService revokeMerchantTokenWithIdentifier:completion:]_block_invoke.307
-- ___65-[PKPaymentService sharedPaymentWebServiceContextWithCompletion:]_block_invoke.290
-- ___65-[PKPaymentWebService _applePayTrustPublicKeyHashWithCompletion:]_block_invoke.1031
-- ___66-[PKPaymentService defaultPaymentPassIngestionSpecificIdentifier:]_block_invoke.346
-- ___66-[PKPaymentService registerCredentialsWithIdentifiers:completion:]_block_invoke.380
-- ___66-[PKPaymentService(Sharing) processSharingCLICommands:completion:]_block_invoke.45
-- ___67-[PKPaymentService addPlaceholderPassWithConfiguration:completion:]_block_invoke.376
-- ___67-[PKPaymentService clearFPANCardImportNotificationsWithCompletion:]_block_invoke.312
-- ___67-[PKPaymentService deleteRestrictionsProfileWithCompletionHandler:]_block_invoke.419
-- ___67-[PKPaymentService redeemProvisioningSharingIdentifier:completion:]_block_invoke.399
-- ___67-[PKPaymentService requestNotificationAuthorizationWithCompletion:]_block_invoke.273
-- ___67-[PKPaymentService storeRestrictionsProfile:withCompletionHandler:]_block_invoke.418
-- ___68-[PKMobileAssetManager updateCashStickersIfNecessaryWithCompletion:]_block_invoke.500
-- ___68-[PKPaymentService deleteTransactionReceiptWithUniqueID:completion:]_block_invoke.410
-- ___68-[PKPaymentService updateAllMapsBrandAndMerchantDataWithCompletion:]_block_invoke.291
-- ___69-[PKPaymentService featureApplicationsForProvisioningWithCompletion:]_block_invoke.350
-- ___69-[PKPaymentService reserveStorageForAppletTypes:metadata:completion:]_block_invoke.403
-- ___70-[PKContactlessInterfaceSession stsSessionRequestHandoffConfirmation:]_block_invoke.225
-- ___70-[PKPaymentService accountAttestationAnonymizationSaltWithCompletion:]_block_invoke.373
-- ___70-[PKPaymentService revokeCredentialsWithReaderIdentifiers:completion:]_block_invoke.383
-- ___70-[PKPaymentService suggestPaymentFPANCredentialImport:withCompletion:]_block_invoke.309
-- ___70-[PKPaymentService updateReviewStateForProfile:withCompletionHandler:]_block_invoke.420
-- ___70-[PKPaymentWebService _handlePassListDownloadTask:data:fromPushTopic:]_block_invoke.994
-- ___71-[PKDAManager statusForSentSharingInvitationWithIdentifier:completion:]_block_invoke.158
-- ___71-[PKPaymentService featureApplicationsForAccountIdentifier:completion:]_block_invoke.347
-- ___72-[PKContactlessInterfaceSession _session:didExpireTransactionForApplet:]_block_invoke.235
-- ___73-[PKDAManager handleRecipientMessage:forInvitationIdentifier:completion:]_block_invoke.221
-- ___73-[PKPaymentService ambiguousTransactionWithServiceIdentifier:completion:]_block_invoke.412
-- ___73-[PKPaymentService clearFPANCardImportNotificationHistoryWithCompletion:]_block_invoke.313
-- ___73-[PKPaymentService featureApplicationWithReferenceIdentifier:completion:]_block_invoke.352
 - ___74-[PKDAManager signData:auth:bundleIdentifier:nonce:credential:completion:]_block_invoke
 - ___74-[PKDAManager signData:auth:bundleIdentifier:nonce:credential:completion:]_block_invoke_2
-- ___74-[PKMobileAssetManager _downloadAsset:isDiscretionary:timeout:completion:]_block_invoke.547
-- ___74-[PKPaymentService notifyForFPANCardImportWithCredentials:withCompletion:]_block_invoke.311
-- ___74-[PKPaymentService setAccountAttestationAnonymizationSalt:withCompletion:]_block_invoke.375
-- ___75-[PKDAManager statusForReceivedSharingInvitationWithIdentifier:completion:]_block_invoke.159
-- ___75-[PKPaymentService prepareProvisioningTarget:checkFamilyCircle:completion:]_block_invoke.394
-- ___75-[PKPaymentService submitEncryptedPIN:forTransactionIdentifier:completion:]_block_invoke.336
-- ___75-[PKPaymentService transactionTagsForTransactionWithIdentifier:completion:]_block_invoke.411
-- ___76-[PKPaymentWebServiceRemoteProxyTargetDevice initWithWebService:connection:]_block_invoke.664
-- ___77-[PKPaymentService sendDeviceSharingCapabilitiesRequestForHandle:completion:]_block_invoke.414
-- ___77-[PKPaymentService updateFeatureApplicationsForAccountIdentifier:completion:]_block_invoke.348
-- ___77-[PKPaymentService updateMetadataOnPassWithIdentifier:credential:completion:]_block_invoke.379
-- ___78-[PKPaymentService categoryVisualizationMagnitudesForPassUniqueID:completion:]_block_invoke.366
-- ___78-[PKPaymentService featureApplicationsForAccountUserInvitationWithCompletion:]_block_invoke.351
-- ___78-[PKPaymentService requestNotificationAuthorizationIfNecessaryWithCompletion:]_block_invoke.272
-- ___79-[PKContactlessInterfaceSession _session:didExpressModeStateChange:withObject:]_block_invoke.253
 - ___79-[PKExistingCardAuthorizationRequestMessage initWithGroupsBySessionIdentifier:]_block_invoke
-- ___79-[PKPaymentService submitUserConfirmation:forTransactionIdentifier:completion:]_block_invoke.333
-- ___80-[PKMobileAssetManager performScheduledActivityWithIdentifier:activityCriteria:]_block_invoke.522
-- ___80-[PKMobileAssetManager performScheduledActivityWithIdentifier:activityCriteria:]_block_invoke.525
-- ___80-[PKPaymentWebService _registerIfNeededWithResponse:task:isRedirect:completion:]_block_invoke.1028
 - ___80-[PKPaymentWebServiceLocalProxyTargetDevice allPaymentApplicationUsageSummaries]_block_invoke
 - ___81-[PKPaymentService(Sharing) pendingShareActivationForShareIdentifier:completion:]_block_invoke
-- ___81-[PKPaymentService(Sharing) pendingShareActivationForShareIdentifier:completion:]_block_invoke.40
-- ___82-[PKPaymentService markAuthenticationCompleteForTransactionIdentifier:completion:]_block_invoke.332
-- ___83-[PKContactlessInterfaceSession stsSession:didReceive18013Requests:readerAuthInfo:]_block_invoke.222
-- ___83-[PKPaymentService mapsMerchantWithIdentifier:resultProviderIdentifier:completion:]_block_invoke.292
-- ___83-[PKPaymentService saveProvisioningSupportData:forPassUniqueIdentifier:completion:]_block_invoke.389
-- ___83-[PKPaymentService transactionsRequiringReviewForAccountWithIdentifier:completion:]_block_invoke.365
 - ___84-[PKDAManager retryActivationCodeForCredentialIdentifier:activationCode:completion:]_block_invoke
 - ___84-[PKDAManager retryActivationCodeForCredentialIdentifier:activationCode:completion:]_block_invoke_2
-- ___85-[PKPaymentService submitBarcodePaymentEvent:forPassUniqueIdentifier:withCompletion:]_block_invoke.339
-- ___86-[PKPaymentService userNotificationActionPerformed:notificationIdentifier:completion:]_block_invoke.275
 - ___87-[PKDAManager startShareAcceptanceFlowWithInvitation:fromMailboxIdentifier:completion:]_block_invoke
-- ___87-[PKDAManager startShareAcceptanceFlowWithInvitation:fromMailboxIdentifier:completion:]_block_invoke.212
-- ___87-[PKPaymentService transitStateWithPassUniqueIdentifier:paymentApplication:completion:]_block_invoke.255
-- ___87-[PKPaymentWebService _handleRetryAfterRegisterWithRequest:response:completionHandler:]_block_invoke.1000
-- ___88-[PKPaymentService removeContinueRemoteNetworkPaymentNotificationForSession:completion:]_block_invoke.315
 - ___89-[PKDAManager setTransportChannelIdentifier:forCredential:forCredentialShare:completion:]_block_invoke
 - ___89-[PKDAManager setTransportChannelIdentifier:forCredential:forCredentialShare:completion:]_block_invoke_2
-- ___89-[PKPaymentService processedAuthenticationMechanism:forTransactionIdentifier:completion:]_block_invoke.331
-- ___89-[PKPaymentService submitTransactionAnswerForTransaction:questionType:answer:completion:]_block_invoke.364
-- ___90-[PKPaymentService clearProvisioningSupportDataOfType:forPassUniqueIdentifier:completion:]_block_invoke.390
-- ___91-[PKPaymentService retrievePINEncryptionCertificateForPassUniqueIdentifier:withCompletion:]_block_invoke.329
-- ___93-[PKPaymentService fetchBarcodesForPassUniqueIdentifier:sessionExchangeToken:withCompletion:]_block_invoke.324
-- ___94-[PKAppletSubcredentialManagementSession accountAttestationRequestForManufacturer:completion:]_block_invoke.34
-- ___94-[PKPaymentService sharingInvitationWasInvalidated:withCredentialIdentifier:error:completion:]_block_invoke.387
-- ___96-[PKPaymentService invalidateAuxiliaryCapabilityCertificatesForPassUniqueIdentifier:completion:]_block_invoke.323
-- ___96-[PKPaymentService merchantForPassUniqueIdentifier:withAuxiliaryPassInformationItem:completion:]_block_invoke.305
-- ___96-[PKPaymentService provideEncryptedPushProvisioningTarget:sharingInstanceIdentifier:completion:]_block_invoke.393
-- ___96-[PKPaymentService submitEncryptedPIN:forTransactionIdentifier:sessionExchangeToken:completion:]_block_invoke.337
-- ___96-[PKPaymentService transactionReceiptForTransactionWithIdentifier:updateIfNecessary:completion:]_block_invoke.408
-- ___96-[PKPaymentWebService _backgroundDownloadCloudStoreAssetsForItem:cloudStoreCoordinatorDelegate:]_block_invoke.985
-- ___96-[PKPaymentWebService _backgroundDownloadCloudStoreAssetsForItem:cloudStoreCoordinatorDelegate:]_block_invoke_2.986
-- ___96-[PKPaymentWebService _backgroundDownloadCloudStoreAssetsForItem:cloudStoreCoordinatorDelegate:]_block_invoke_2.990
-- ___97-[PKDAManager createInviteForShare:forCredential:analyticsUpdateConfig:authorization:completion:]_block_invoke.205
-- ___97-[PKDAManager createInviteForShare:forCredential:analyticsUpdateConfig:authorization:completion:]_block_invoke_2.208
-- ___98-[PKPaymentService fetchMerchantForPassUniqueIdentifier:withSource:parentIdentifier:replyHandler:]_block_invoke.300
-- ___99-[PKPaymentService userNotificationActionPerformed:applicationMessageContentIdentifier:completion:]_block_invoke.274
-- ___PKPeerPaymentRemoveRecurringPaymentRecentMemoIcon_block_invoke.1194
-- ___PKRequestContactAccessWithCompletion_block_invoke.316
 - ___block_descriptor_40_e8_32bs_e39_v32?0"NSData"8"NSData"16"NSError"24ls32l8
 - ___block_descriptor_48_e8_32bs40bs_e39_v32?0"NSData"8"NSData"16"NSError"24ls32l8s40l8
 - ___block_descriptor_48_e8_32s40bs_e38_v16?0"PKPassSharePendingActivation"8ls40l8s32l8
@@ -1076,189 +515,8 @@ Symbols:
 - ___block_descriptor_64_e8_32s40s48s56bs_e54_v24?0"PKAppletSubcredentialSharingSession"8?<v?>16ls56l8s32l8s40l8s48l8
 - ___block_descriptor_65_e8_32s40s48s56bs_e8_v16?0q8ls32l8s40l8s48l8s56l8
 - ___block_descriptor_80_e8_32s40s48s56s64s72bs_e57_v24?0"PKAppletSubcredentialManagementSession"8?<v?>16ls32l8s40l8s48l8s56l8s64l8s72l8
-- ___block_literal_global.1005
-- ___block_literal_global.1014
-- ___block_literal_global.1017
-- ___block_literal_global.1031
-- ___block_literal_global.1036
-- ___block_literal_global.1041
-- ___block_literal_global.1078
-- ___block_literal_global.1085
-- ___block_literal_global.1090
-- ___block_literal_global.1095
-- ___block_literal_global.1100
-- ___block_literal_global.1105
-- ___block_literal_global.1110
-- ___block_literal_global.1115
-- ___block_literal_global.1127
-- ___block_literal_global.1135
-- ___block_literal_global.1171
-- ___block_literal_global.1193
-- ___block_literal_global.1245
-- ___block_literal_global.1250
-- ___block_literal_global.1255
-- ___block_literal_global.1259
-- ___block_literal_global.1262
-- ___block_literal_global.1265
-- ___block_literal_global.1274
-- ___block_literal_global.1288
-- ___block_literal_global.135
-- ___block_literal_global.1390
-- ___block_literal_global.1393
-- ___block_literal_global.1448
-- ___block_literal_global.1451
-- ___block_literal_global.1704
-- ___block_literal_global.1708
-- ___block_literal_global.1711
-- ___block_literal_global.1714
-- ___block_literal_global.1717
-- ___block_literal_global.1720
-- ___block_literal_global.1723
-- ___block_literal_global.1726
-- ___block_literal_global.1729
-- ___block_literal_global.1732
-- ___block_literal_global.1735
-- ___block_literal_global.1738
-- ___block_literal_global.174
-- ___block_literal_global.1741
-- ___block_literal_global.1744
-- ___block_literal_global.1747
-- ___block_literal_global.1756
-- ___block_literal_global.1761
-- ___block_literal_global.1775
-- ___block_literal_global.178
-- ___block_literal_global.1781
-- ___block_literal_global.1794
-- ___block_literal_global.1797
-- ___block_literal_global.182
-- ___block_literal_global.199
-- ___block_literal_global.202
-- ___block_literal_global.246
-- ___block_literal_global.254
-- ___block_literal_global.263
-- ___block_literal_global.271
-- ___block_literal_global.279
-- ___block_literal_global.286
-- ___block_literal_global.303
-- ___block_literal_global.322
-- ___block_literal_global.327
-- ___block_literal_global.332
-- ___block_literal_global.388
-- ___block_literal_global.424
-- ___block_literal_global.429
-- ___block_literal_global.432
-- ___block_literal_global.475
-- ___block_literal_global.499
-- ___block_literal_global.521
-- ___block_literal_global.524
-- ___block_literal_global.529
-- ___block_literal_global.536
-- ___block_literal_global.567
-- ___block_literal_global.571
-- ___block_literal_global.695
-- ___block_literal_global.700
-- ___block_literal_global.706
-- ___block_literal_global.711
-- ___block_literal_global.716
-- ___block_literal_global.721
-- ___block_literal_global.726
-- ___block_literal_global.731
-- ___block_literal_global.735
-- ___block_literal_global.736
-- ___block_literal_global.743
-- ___block_literal_global.772
-- ___block_literal_global.776
-- ___block_literal_global.781
-- ___block_literal_global.786
-- ___block_literal_global.940
-- ___block_literal_global.957
-- ___block_literal_global.972
-- ___block_literal_global.986
-- ___block_literal_global.992
-- ___block_literal_global.996
-- ___block_literal_global.999
-- ___swift__destructor.106
-- ___swift__destructor.132
-- ___swift__destructor.86
-- ___swift_closure_destructor.111
-- ___swift_closure_destructor.119
-- ___swift_closure_destructor.85
 - ___swift_closure_destructor.85Tm
 - ___swift_memcpy400_8
-- _block_copy_helper.107
-- _block_copy_helper.113
-- _block_copy_helper.81
-- _block_copy_helper.82
-- _block_copy_helper.87
-- _block_copy_helper.97
-- _block_descriptor.109
-- _block_descriptor.115
-- _block_descriptor.83
-- _block_descriptor.84
-- _block_descriptor.89
-- _block_descriptor.99
-- _block_destroy_helper.108
-- _block_destroy_helper.114
-- _block_destroy_helper.82
-- _block_destroy_helper.83
-- _block_destroy_helper.88
-- _block_destroy_helper.98
-- _objc_msgSend$__swift_setObject:forKeyedSubscript:
-- _objc_msgSend$_createTileFromFeaturedAction:
-- _objc_msgSend$_defaultSelectedPaymentApplicationForPaymentApplications:
-- _objc_msgSend$_initWithExternalURL:title:
-- _objc_msgSend$_wrapperWithType:forIdentifier:
-- _objc_msgSend$acceptCrossPlatformInvitationWithIdentifier:passcode:productPlanIdentifier:completionHandler:
-- _objc_msgSend$acceptCrossPlatformInvitationWithIdentifier:transportChannelIdentifier:activationCode:encryptedProductPlanIdentifierContainer:completion:
-- _objc_msgSend$allPaymentApplicationUsageSummaries
-- _objc_msgSend$allPaymentApplicationUsageSummariesWithCompletion:
-- _objc_msgSend$augmentedProductForInstallmentConfiguration:experimentDetails:feature:withCompletion:
-- _objc_msgSend$carKeyGetPretrackRequestForKeyWithInvitationIdentifier:completion:
-- _objc_msgSend$createSharingInvitationsForKeyIdentifier:friendIdentifier:auth:config:completionHandler:
-- _objc_msgSend$createWithContent:
-- _objc_msgSend$createWithSymbolName:tintColor:
-- _objc_msgSend$customGlyphName
-- _objc_msgSend$deviceCredentialForIdentifier:completion:
-- _objc_msgSend$getProductPlanIdentifierRequestForInvitationWithIdentifier:fromMailboxIdentifier:completion:
-- _objc_msgSend$glyphPointSize
-- _objc_msgSend$glyphWeight
-- _objc_msgSend$handleSharingMessage:forInvitationIdentifier:fromMailboxIdentifier:completionHandler:
-- _objc_msgSend$hasProvisioningExtensionsWithSupportedNetworks:merchantCapabilities:issuerCountryCodes:
-- _objc_msgSend$hasProvisioningExtensionsWithSupportedNetworks:merchantCapabilities:issuerCountryCodes:withHandler:
-- _objc_msgSend$initWithGroupsBySessionIdentifier:
-- _objc_msgSend$initWithProfile:displayName:metaData:targetDeviceType:
-- _objc_msgSend$initWithSharingSessionIdentifier:ownerIdsIdentifier:
-- _objc_msgSend$isEqualToPassSharePendingActivation:
-- _objc_msgSend$messageEncoding
-- _objc_msgSend$pendingShareActivationForShareIdentifier:completion:
-- _objc_msgSend$placeIdentifier
-- _objc_msgSend$ppidRequestForInvitationWithIdentifier:fromMailboxIdentifier:completionHandler:
-- _objc_msgSend$readerInformationForInvitationWithIdentifier:fromMailboxIdentifier:completionHandler:
-- _objc_msgSend$recordPaymentApplicationUsageForPassUniqueIdentifier:paymentApplicationIdentifier:
-- _objc_msgSend$resourceURL
-- _objc_msgSend$retryActivationCodeForCredentialIdentifier:activationCode:completion:
-- _objc_msgSend$retryPasscode:forKeyIdentifier:completionHandler:
-- _objc_msgSend$routingInformationForInvitationWithIdentifier:fromMailboxIdentifier:completionHandler:
-- _objc_msgSend$setCustomGlyphName:
-- _objc_msgSend$setFooter:
-- _objc_msgSend$setFormat:
-- _objc_msgSend$setGlyphPointSize:
-- _objc_msgSend$setGlyphWeight:
-- _objc_msgSend$setGroupStyle:
-- _objc_msgSend$setMailboxIdentifier:forOwnerKeyIdentifier:forInvitationIdentifier:completionHandler:
-- _objc_msgSend$setMessageEncoding:
-- _objc_msgSend$setPreferredStyle:
-- _objc_msgSend$setShowDeviceGlyph:
-- _objc_msgSend$setShowInPrearm:
-- _objc_msgSend$setTrackingReceipt:vehicleMobilizationData:forKeyWithIdentifier:
-- _objc_msgSend$setTransportChannelIdentifier:forCredential:forCredentialShare:completion:
-- _objc_msgSend$showDeviceGlyph
-- _objc_msgSend$signAppData:appBundleIdentifier:nonce:auth:keyIdentifier:callback:
-- _objc_msgSend$signData:auth:bundleIdentifier:nonce:credential:completion:
-- _objc_msgSend$signData:forPassUniqueID:completion:
-- _objc_msgSend$startShareAcceptanceFlowWithInvitation:fromMailboxIdentifier:completion:
-- _objc_msgSend$startShareAcceptanceFlowWithInvitation:fromMailboxIdentifier:completionHandler:
-- _objc_msgSend$supportsAutomatedPairing
 - _symbolic SDy_____ypGSg s11AnyHashableV
 - _symbolic SSSg8deviceId______Sg6resultt 11PassKitCore37PaymentCapabilityResultRepresentationO
 - _symbolic SSSg8deviceId______Sg6resulttIeAgHr_ 11PassKitCore37PaymentCapabilityResultRepresentationO
@@ -1593,5 +851,4 @@ CStrings:
 - "waveform.circle.fill"
 - "yyyy-MM-dd HH:mm:ss"
 - "yyyy-MM-dd'T'HH:mm:ss"
-
 ```

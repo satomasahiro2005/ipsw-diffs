@@ -2,32 +2,29 @@
 
 > `/System/Library/Filesystems/apfs.fs/slurpAPFSMeta`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x37c14` | `0x37e18` | **`+0x204`** |
+| `__TEXT.__cstring` | `0x903f` | `0x911a` | **`+0xdb`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -3283.0.9.502.1
--  __TEXT.__text: 0x37c14
 +3283.0.13.0.0
-+  __TEXT.__text: 0x37e18
-   __TEXT.__auth_stubs: 0x830
--  __TEXT.__cstring: 0x903f
-+  __TEXT.__cstring: 0x911a
-   __TEXT.__const: 0x1b0
-   __TEXT.__unwind_info: 0x6a8
-   __DATA_CONST.__const: 0x470
 
-   - /usr/lib/libSystem.B.dylib
-   Functions: 534
-   Symbols:   144
 -  CStrings:  774
 +  CStrings:  778
- 
 Functions:
 ~ sub_1000097c0 : 596 -> 640
 ~ sub_10001bbdc -> sub_10001bc08 : 632 -> 636

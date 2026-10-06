@@ -2,5 +2,14 @@
 
 > `/System/Library/DataClassMigrators/MobileAsset.migrator/MobileAsset`
 
-Sections:
-~ __TEXT.__const : content changed
+### Same-size Content Changes
+
+- `__TEXT.__const`
+
+### Other Changes
+
+```diff
+
+-2215.0.4.0.0
++2215.0.13.0.0
+```

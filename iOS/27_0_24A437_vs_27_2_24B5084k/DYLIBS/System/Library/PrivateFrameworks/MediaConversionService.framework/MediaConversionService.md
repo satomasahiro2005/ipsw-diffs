@@ -2,68 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/MediaConversionService.framework/MediaConversionService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e05c` | `0x1ec24` | **`+0xbc8`** |
+| `__TEXT.__cstring` | `0x5970` | `0x5ae4` | **`+0x174`** |
+| `__AUTH_CONST.__objc_const` | `0x2f88` | `0x30d8` | **`+0x150`** |
+| `__TEXT.__objc_methlist` | `0x1eec` | `0x1ff4` | **`+0x108`** |
+| `__AUTH_CONST.__cfstring` | `0x3460` | `0x3520` | **`+0xc0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1638` | `0x16f0` | **`+0xb8`** |
+| `__TEXT.__oslogstring` | `0x28ca` | `0x292c` | **`+0x62`** |
+| `__TEXT.__unwind_info` | `0x778` | `0x7b0` | **`+0x38`** |
+| `__DATA_CONST.__objc_arraydata` | `0x578` | `0x5a8` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0xcd8` | `0xcf8` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x5a0` | `0x5c0` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x250` | `0x26c` | **`+0x1c`** |
+| `__DATA_CONST.__got` | `0x3b8` | `0x3d0` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.235.0.0
--  __TEXT.__text: 0x1d838
--  __TEXT.__objc_methlist: 0x1eec
 +916.40.110.0.0
-+  __TEXT.__text: 0x1e3e8
-+  __TEXT.__objc_methlist: 0x1ff4
-   __TEXT.__const: 0xc0
--  __TEXT.__gcc_except_tab: 0x5a0
--  __TEXT.__cstring: 0x5970
--  __TEXT.__oslogstring: 0x28ca
--  __TEXT.__unwind_info: 0x8c8
-+  __TEXT.__gcc_except_tab: 0x5c0
-+  __TEXT.__cstring: 0x5ae4
-+  __TEXT.__oslogstring: 0x292c
-+  __TEXT.__unwind_info: 0x910
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xcd8
-+  __DATA_CONST.__const: 0xcf8
-   __DATA_CONST.__objc_classlist: 0xc8
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1638
-+  __DATA_CONST.__objc_selrefs: 0x16f0
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x60
--  __DATA_CONST.__objc_arraydata: 0x578
--  __DATA_CONST.__got: 0x3b8
-+  __DATA_CONST.__objc_arraydata: 0x5a8
-+  __DATA_CONST.__got: 0x3d0
-   __AUTH_CONST.__const: 0x140
--  __AUTH_CONST.__cfstring: 0x3460
--  __AUTH_CONST.__objc_const: 0x2f88
-+  __AUTH_CONST.__cfstring: 0x3520
-+  __AUTH_CONST.__objc_const: 0x30d8
-   __AUTH_CONST.__objc_intobj: 0x198
-   __AUTH_CONST.__objc_arrayobj: 0xc0
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0xa0
--  __DATA.__objc_ivar: 0x250
-+  __DATA.__objc_ivar: 0x26c
-   __DATA.__data: 0x4a8
-   __DATA_DIRTY.__objc_data: 0x730
-   __DATA_DIRTY.__bss: 0x20
 
-   - /System/Library/PrivateFrameworks/PhotosFormats.framework/PhotosFormats
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 708
--  Symbols:   2066
+-  Symbols:   1496
 -  CStrings:  623
 +  Functions: 732
-+  Symbols:   2128
++  Symbols:   1536
 +  CStrings:  631
- 
 Symbols:
 + -[PAMediaConversionServiceContentProvenanceValidationResult certificateChainDERData]
 + -[PAMediaConversionServiceContentProvenanceValidationResult setCertificateChainDERData:]
@@ -128,28 +97,6 @@ Symbols:
 + _PAMediaConversionServiceProvenanceCertificateChainDataKey
 + ___70-[PHMediaFormatConversionCompositeRequest requiresTitleMetadataChange]_block_invoke
 + ___75-[PHMediaFormatConversionCompositeRequest requiresStarRatingMetadataChange]_block_invoke
-+ _objc_msgSend$checkForKeywordsData
-+ _objc_msgSend$checkForStarRatingData
-+ _objc_msgSend$checkForTitleData
-+ _objc_msgSend$markStarRatingMetadataAsCheckedWithStatus:
-+ _objc_msgSend$markTitleMetadataAsCheckedWithStatus:
-+ _objc_msgSend$policyWithKeywords:
-+ _objc_msgSend$policyWithStarRating:
-+ _objc_msgSend$policyWithTitle:
-+ _objc_msgSend$requiresStarRatingMetadataChange
-+ _objc_msgSend$requiresTitleMetadataChange
-+ _objc_msgSend$setCertificateChainDERData:
-+ _objc_msgSend$setStarRatingMetadataBehavior:withStarRating:
-+ _objc_msgSend$setTitleMetadataBehavior:withTitle:
-+ _objc_msgSend$sourceKeywordsMetadataStatus
-+ _objc_msgSend$sourceStarRatingMetadataStatus
-+ _objc_msgSend$sourceTitleMetadataStatus
-+ _objc_msgSend$starRating
-+ _objc_msgSend$starRatingMetadataBehavior
-+ _objc_msgSend$starRatingMetadataStatus
-+ _objc_msgSend$title
-+ _objc_msgSend$titleMetadataBehavior
-+ _objc_msgSend$titleMetadataStatus
 - GCC_except_table137
 - GCC_except_table152
 - GCC_except_table159

@@ -2,38 +2,33 @@
 
 > `/System/Library/HIDPlugins/ServicePlugins/HSTouchHIDService.plugin/HSTouchHIDService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcfbcc` | `0xcfc38` | **`+0x6c`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_ivar`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__gcc_except_tab`
 - `__TEXT.__init_offsets`
 - `__TEXT.__objc_methlist`
-- `__TEXT.__gcc_except_tab`
 - `__TEXT.__objc_methtype`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_ivar`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
- 10100.44.0.0.0
--  __TEXT.__text: 0xcfbcc
-+  __TEXT.__text: 0xcfc38
-   __TEXT.__auth_stubs: 0x1920
-   __TEXT.__objc_stubs: 0x7ae0
-   __TEXT.__init_offsets: 0x150c
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 5287
 +  Functions: 5286
-   Symbols:   7773
-   CStrings:  4199
- 
 Functions:
 ~ __ZNSt3__16vectorIN6HSUtil7Encoder8KeyStateENS_9allocatorIS3_EEE6resizeEm : 284 -> 288
 - _OUTLINED_FUNCTION_0

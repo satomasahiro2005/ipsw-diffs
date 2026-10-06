@@ -2,29 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/NSPredicateSecurityPolicy.framework/NSPredicateSecurityPolicy`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa2c` | `0xa8c` | **`+0x60`** |
+| `__TEXT.__cstring` | `0x13c` | `0x198` | **`+0x5c`** |
+| `__TEXT.__unwind_info` | `0x80` | `0x78` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -10.0.1.0.0
--  __TEXT.__text: 0xa20
 +10.40.2.0.0
-+  __TEXT.__text: 0xa80
-   __TEXT.__const: 0x8cb0
--  __TEXT.__cstring: 0x13c
-+  __TEXT.__cstring: 0x198
-   __TEXT.__unwind_info: 0x80
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x9e40
 
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 9
 -  Symbols:   317
 -  CStrings:  14
 +  Functions: 10
 +  Symbols:   322
 +  CStrings:  18
- 
 Symbols:
 + _RTPredicateSecurityPolicyRaiseException
 + _RTShouldApplyNSPredicateSecurityPolicy.entitlementState

@@ -2,95 +2,59 @@
 
 > `/System/Library/FlowTools/SnippetService/ResponsePlugins/SiriPhoneSnippetProviderPlugin.bundle/SiriPhoneSnippetProviderPlugin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_mpenum`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe5c64` | `0xe3c80` | **`-0x1fe4`** |
+| `__DATA_CONST.__const` | `0x9318` | `0x9048` | **`-0x2d0`** |
+| `__TEXT.__eh_frame` | `0x7e94` | `0x7cfc` | **`-0x198`** |
+| `__TEXT.__oslogstring` | `0x74be` | `0x735e` | **`-0x160`** |
+| `__TEXT.__swift5_capture` | `0xac4` | `0x9a4` | **`-0x120`** |
+| `__TEXT.__unwind_info` | `0x4180` | `0x4108` | **`-0x78`** |
+| `__TEXT.__auth_stubs` | `0x31d0` | `0x3200` | **`+0x30`** |
+| `__DATA_CONST.__auth_got` | `0x18f0` | `0x1908` | **`+0x18`** |
+| `__TEXT.__swift_as_cont` | `0x5d0` | `0x5b8` | **`-0x18`** |
+| `__TEXT.__const` | `0xbb44` | `0xbb54` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0x2abe` | `0x2aae` | **`-0x10`** |
+| `__DATA_CONST.__auth_ptr` | `0xd38` | `0xd40` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x4b4` | `0x4ac` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
 - `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
-- `__DATA.__bss`
-- `__DATA.__common`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_entry`
+
+### Other Changes
 
 ```diff
 
 -3600.38.13.0.0
--  __TEXT.__text: 0xe5c64
--  __TEXT.__auth_stubs: 0x31d0
 +3600.38.16.0.0
-+  __TEXT.__text: 0xe3c80
-+  __TEXT.__auth_stubs: 0x3200
-   __TEXT.__objc_stubs: 0x16c0
-   __TEXT.__objc_methlist: 0x154
--  __TEXT.__const: 0xbb44
-+  __TEXT.__const: 0xbb54
-   __TEXT.__cstring: 0x24a6
--  __TEXT.__swift5_typeref: 0x2abe
--  __TEXT.__swift5_capture: 0xac4
-+  __TEXT.__swift5_typeref: 0x2aae
-+  __TEXT.__swift5_capture: 0x9a4
-   __TEXT.__swift5_reflstr: 0x2c8b
-   __TEXT.__swift5_assocty: 0xc50
-   __TEXT.__constg_swiftt: 0x2760
 
-   __TEXT.__swift5_proto: 0x824
-   __TEXT.__swift5_types: 0x384
-   __TEXT.__swift_as_entry: 0x440
--  __TEXT.__swift_as_ret: 0x4b4
--  __TEXT.__swift_as_cont: 0x5d0
-+  __TEXT.__swift_as_ret: 0x4ac
-+  __TEXT.__swift_as_cont: 0x5b8
-   __TEXT.__swift5_protos: 0x70
--  __TEXT.__oslogstring: 0x74be
-+  __TEXT.__oslogstring: 0x735e
-   __TEXT.__objc_methtype: 0x179
-   __TEXT.__swift5_builtin: 0xa0
-   __TEXT.__swift5_mpenum: 0x8c
-   __TEXT.__objc_methname: 0x13a6
--  __TEXT.__unwind_info: 0x4180
--  __TEXT.__eh_frame: 0x7e94
--  __DATA_CONST.__const: 0x9318
-+  __TEXT.__unwind_info: 0x4108
-+  __TEXT.__eh_frame: 0x7cfc
-+  __DATA_CONST.__const: 0x9048
-   __DATA_CONST.__cfstring: 0xc0
-   __DATA_CONST.__objc_classlist: 0xd8
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x28
--  __DATA_CONST.__auth_got: 0x18f0
-+  __DATA_CONST.__auth_got: 0x1908
-   __DATA_CONST.__got: 0xd98
--  __DATA_CONST.__auth_ptr: 0xd38
-+  __DATA_CONST.__auth_ptr: 0xd40
-   __DATA.__objc_const: 0x19c8
-   __DATA.__objc_selrefs: 0x660
-   __DATA.__objc_data: 0xd8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6651
 -  Symbols:   14851
 -  CStrings:  1003
 +  Functions: 6595
 +  Symbols:   14838
 +  CStrings:  998
- 
 Symbols:
 + _$s10AppIntents11EntityQueryP22displayRepresentations3forSDy0C0_2IDQZAA21DisplayRepresentationVGSayAHG_tYaKFTq
 + _$s10AppIntents11EntityQueryPAAE22displayRepresentations3forSDy0C0_2IDQZAA21DisplayRepresentationVGSayAHG_tYaKF

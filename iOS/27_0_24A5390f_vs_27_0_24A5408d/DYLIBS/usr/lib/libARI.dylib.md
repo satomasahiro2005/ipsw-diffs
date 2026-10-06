@@ -2,43 +2,31 @@
 
 > `/usr/lib/libARI.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x206a84` | `0x2072b4` | **`+0x830`** |
+| `__DATA_CONST.__const` | `0x46718` | `0x46888` | **`+0x170`** |
+| `__AUTH_CONST.__const` | `0x2a3b0` | `0x2a450` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0x3e38b` | `0x3e41a` | **`+0x8f`** |
+| `__TEXT.__const` | `0x15290` | `0x15300` | **`+0x70`** |
+| `__TEXT.__gcc_except_tab` | `0x1ab64` | `0x1abd4` | **`+0x70`** |
+| `__TEXT.__unwind_info` | `0xdb68` | `0xdbb0` | **`+0x48`** |
+
+### Other Changes
+
 ```diff
 
 -1638.0.0.0.0
--  __TEXT.__text: 0x206a84
 +1640.0.0.0.0
-+  __TEXT.__text: 0x2072b4
-   __TEXT.__init_offsets: 0x8
--  __TEXT.__const: 0x15290
--  __TEXT.__gcc_except_tab: 0x1ab64
--  __TEXT.__cstring: 0x3e38b
-+  __TEXT.__const: 0x15300
-+  __TEXT.__gcc_except_tab: 0x1abd4
-+  __TEXT.__cstring: 0x3e41a
-   __TEXT.__oslogstring: 0x4499
--  __TEXT.__unwind_info: 0xdb68
-+  __TEXT.__unwind_info: 0xdbb0
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x46718
-+  __DATA_CONST.__const: 0x46888
-   __DATA_CONST.__weak_got: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2a3b0
-+  __AUTH_CONST.__const: 0x2a450
-   __AUTH_CONST.__cfstring: 0x20
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__auth_got: 0x0
 
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 17218
 -  Symbols:   24239
 -  CStrings:  9462
 +  Functions: 17238
 +  Symbols:   24271
 +  CStrings:  9468
- 
 Symbols:
 + GCC_except_table319
 + GCC_except_table329

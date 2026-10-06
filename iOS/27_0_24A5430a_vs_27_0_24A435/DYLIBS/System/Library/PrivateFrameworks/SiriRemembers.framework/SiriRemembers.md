@@ -2,24 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/SiriRemembers.framework/SiriRemembers`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb4f3c` | `0xb4f78` | **`+0x3c`** |
+
+### Other Changes
+
 ```diff
 
- 3600.34.21.0.0
--  __TEXT.__text: 0xb4f3c
-+  __TEXT.__text: 0xb4f78
-   __TEXT.__objc_methlist: 0x224
-   __TEXT.__const: 0x9b54
-   __TEXT.__cstring: 0x3401
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5107
--  Symbols:   1814
+-  Symbols:   1618
 +  Functions: 5132
-+  Symbols:   1820
-   CStrings:  549
- 
++  Symbols:   1624
 Symbols:
 + _OUTLINED_FUNCTION_261
 + _OUTLINED_FUNCTION_262

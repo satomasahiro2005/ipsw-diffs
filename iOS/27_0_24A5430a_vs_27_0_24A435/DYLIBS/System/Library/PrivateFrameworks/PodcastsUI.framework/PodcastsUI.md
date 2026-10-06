@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/PodcastsUI.framework/PodcastsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x13a69c` | `0x13a760` | **`+0xc4`** |
+| `__AUTH_CONST.__auth_got` | `0x3680` | `0x3678` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 4027.110.2.0.0
--  __TEXT.__text: 0x13a69c
-+  __TEXT.__text: 0x13a760
-   __TEXT.__objc_methlist: 0x47ec
-   __TEXT.__const: 0xa780
-   __TEXT.__cstring: 0x4656
-
-   __AUTH_CONST.__objc_doubleobj: 0x50
-   __AUTH_CONST.__objc_arrayobj: 0xa8
-   __AUTH_CONST.__objc_intobj: 0x30
--  __AUTH_CONST.__auth_got: 0x3680
-+  __AUTH_CONST.__auth_got: 0x3678
-   __AUTH.__objc_data: 0xa78
-   __AUTH.__data: 0x5c0
-   __DATA.__objc_ivar: 0x3cc
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 7007
--  Symbols:   6545
-+  Symbols:   6544
-   CStrings:  851
- 
+-  Symbols:   4961
++  Symbols:   4960
 Symbols:
 - _objc_retain_x10
 Functions:

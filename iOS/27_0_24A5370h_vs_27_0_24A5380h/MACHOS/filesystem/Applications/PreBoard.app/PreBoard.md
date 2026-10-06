@@ -2,15 +2,16 @@
 
 > `/Applications/PreBoard.app/PreBoard`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x330` | `0x338` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_arrayobj: 0x48
-   __DATA_CONST.__objc_dictobj: 0x28
-   __DATA_CONST.__auth_got: 0x338
--  __DATA_CONST.__got: 0x330
-+  __DATA_CONST.__got: 0x338
-   __DATA.__objc_const: 0x36b8
-   __DATA.__objc_selrefs: 0x1390
-   __DATA.__objc_ivar: 0x138
-
+-4621.0.0.0.0
++4626.103.0.0.0
 ```

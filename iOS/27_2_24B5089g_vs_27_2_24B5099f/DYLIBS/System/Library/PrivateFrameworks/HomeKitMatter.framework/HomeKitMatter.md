@@ -2,79 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/HomeKitMatter.framework/HomeKitMatter`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x18404c` | `0x185390` | **`+0x1344`** |
+| `__AUTH_CONST.__objc_const` | `0x10330` | `0x10640` | **`+0x310`** |
+| `__TEXT.__oslogstring` | `0x502d8` | `0x50502` | **`+0x22a`** |
+| `__AUTH_CONST.__cfstring` | `0x6dc0` | `0x6ee0` | **`+0x120`** |
+| `__TEXT.__objc_methlist` | `0xae04` | `0xaf1c` | **`+0x118`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7160` | `0x71c8` | **`+0x68`** |
+| `__AUTH.__objc_data` | `0x1e50` | `0x1ea0` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x3198` | `0x31d8` | **`+0x40`** |
+| `__DATA.__objc_ivar` | `0xb78` | `0xbac` | **`+0x34`** |
+| `__DATA_CONST.__const` | `0x4960` | `0x4938` | **`-0x28`** |
+| `__AUTH_CONST.__const` | `0x1160` | `0x1180` | **`+0x20`** |
+| `__TEXT.__const` | `0x2a8` | `0x2c8` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x7033` | `0x704f` | **`+0x1c`** |
+| `__DATA_CONST.__got` | `0x9f8` | `0xa08` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0xa0` | `0xb0` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x458` | `0x460` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x310` | `0x318` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x30a8` | `0x30b0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1516.0.0.0.0
--  __TEXT.__text: 0x18030c
--  __TEXT.__objc_methlist: 0xae04
--  __TEXT.__const: 0x2a8
 +1520.2.3.0.2
-+  __TEXT.__text: 0x1815fc
-+  __TEXT.__objc_methlist: 0xaf1c
-+  __TEXT.__const: 0x2c8
-   __TEXT.__dlopen_cstrs: 0x58
--  __TEXT.__gcc_except_tab: 0x30a8
--  __TEXT.__cstring: 0x7033
--  __TEXT.__oslogstring: 0x502d8
-+  __TEXT.__gcc_except_tab: 0x30b0
-+  __TEXT.__cstring: 0x704f
-+  __TEXT.__oslogstring: 0x50502
-   __TEXT.__ustring: 0x68
--  __TEXT.__unwind_info: 0x3ce8
-+  __TEXT.__unwind_info: 0x3d28
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4960
--  __DATA_CONST.__objc_classlist: 0x458
-+  __DATA_CONST.__const: 0x4938
-+  __DATA_CONST.__objc_classlist: 0x460
-   __DATA_CONST.__objc_catlist: 0x50
-   __DATA_CONST.__objc_protolist: 0x138
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7160
-+  __DATA_CONST.__objc_selrefs: 0x71c8
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__objc_superrefs: 0x310
-+  __DATA_CONST.__objc_superrefs: 0x318
-   __DATA_CONST.__objc_arraydata: 0x240
--  __DATA_CONST.__got: 0x9f8
--  __AUTH_CONST.__const: 0x1160
--  __AUTH_CONST.__cfstring: 0x6dc0
--  __AUTH_CONST.__objc_const: 0x10330
-+  __DATA_CONST.__got: 0xa08
-+  __AUTH_CONST.__const: 0x1180
-+  __AUTH_CONST.__cfstring: 0x6ee0
-+  __AUTH_CONST.__objc_const: 0x10640
-   __AUTH_CONST.__objc_intobj: 0x1740
-   __AUTH_CONST.__objc_arrayobj: 0x168
-   __AUTH_CONST.__objc_doubleobj: 0x60
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x1e50
--  __DATA.__objc_ivar: 0xb78
-+  __AUTH.__objc_data: 0x1ea0
-+  __DATA.__objc_ivar: 0xbac
-   __DATA.__data: 0xea0
-   __DATA_DIRTY.__objc_data: 0xd20
--  __DATA_DIRTY.__bss: 0xa0
-+  __DATA_DIRTY.__bss: 0xb0
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /System/Library/PrivateFrameworks/UARPKit.framework/UARPKit
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 4508
 -  Symbols:   7381
 -  CStrings:  5818
 +  Functions: 4537
 +  Symbols:   7430
 +  CStrings:  5832
- 
 Symbols:
 + +[HMMTRAsyncMutex logCategory]
 + -[HMMTRAccessoryServerBrowser _makeAccessoryServerFactory]

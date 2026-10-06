@@ -2,36 +2,26 @@
 
 > `/usr/lib/system/libdyld.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c7cc` | `0x1ce38` | **`+0x66c`** |
+| `__TEXT.__cstring` | `0x4be0` | `0x4cb5` | **`+0xd5`** |
+| `__TEXT.__unwind_info` | `0xda0` | `0xd98` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1c7cc
-+  __TEXT.__text: 0x1ce38
-   __TEXT.__const: 0x32c
--  __TEXT.__cstring: 0x4be0
-+  __TEXT.__cstring: 0x4cb5
-   __TEXT.__gcc_except_tab: 0x20
--  __TEXT.__unwind_info: 0xda0
-+  __TEXT.__unwind_info: 0xd98
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x1990
-   __DATA_CONST.__helper: 0x8
+-27056.0.0.0.0
++27059.3.0.0.0
 
-   - /usr/lib/system/libsystem_pthread.dylib
-   - /usr/lib/system/libunwind.dylib
-   - /usr/lib/system/libxpc.dylib
 -  Functions: 853
 +  Functions: 852
-   Symbols:   2221
+
 -  CStrings:  536
 +  CStrings:  540
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__helper : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __DATA.__data : content changed
 Symbols:
 + __ZNK6mach_o6Policy26enforceSegmentSectionNamesEv
 - __ZN6mach_o12read_uleb128ENSt3__14spanIKhLm18446744073709551615EEERmRb
@@ -58,5 +48,4 @@ CStrings:
 + "section '%s' segment name '%s' does not match containing segment's name '%s'"
 + "section in segment '%s' has an empty section name"
 + "segment load command has an empty segment name"
-
 ```

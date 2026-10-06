@@ -2,90 +2,60 @@
 
 > `/System/Library/PrivateFrameworks/CoreEmbeddedSpeechRecognition.framework/speechmaintenanced`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3d848` | `0x3ee2c` | **`+0x15e4`** |
+| `__TEXT.__oslogstring` | `0x224e` | `0x247e` | **`+0x230`** |
+| `__TEXT.__swift5_capture` | `0x40c` | `0x470` | **`+0x64`** |
+| `__TEXT.__eh_frame` | `0x20e0` | `0x2140` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0xf58` | `0xfa8` | **`+0x50`** |
+| `__TEXT.__cstring` | `0x3d5` | `0x3b5` | **`-0x20`** |
+| `__TEXT.__objc_stubs` | `0x9a0` | `0x9c0` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x2e0` | `0x2c8` | **`-0x18`** |
+| `__TEXT.__auth_stubs` | `0x1770` | `0x1780` | **`+0x10`** |
+| `__TEXT.__objc_methname` | `0xde1` | `0xdf1` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0xa10` | `0xa20` | **`+0x10`** |
+| `__DATA.__objc_selrefs` | `0x360` | `0x368` | **`+0x8`** |
+| `__DATA_CONST.__auth_got` | `0xbc0` | `0xbc8` | **`+0x8`** |
+| `__TEXT.__const` | `0xbf8` | `0xc00` | **`+0x8`** |
+| `__TEXT.__constg_swiftt` | `0x4d0` | `0x4d8` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x150` | `0x154` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0x98` | `0x9c` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0xb4` | `0xb8` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_reflstr`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift5_types`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x3d848
--  __TEXT.__auth_stubs: 0x1770
--  __TEXT.__objc_stubs: 0x9a0
-+  __TEXT.__text: 0x3ee2c
-+  __TEXT.__auth_stubs: 0x1780
-+  __TEXT.__objc_stubs: 0x9c0
-   __TEXT.__objc_methlist: 0x260
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__swift5_typeref: 0x82b
--  __TEXT.__const: 0xbf8
-+  __TEXT.__const: 0xc00
-   __TEXT.__objc_classname: 0x2c7
--  __TEXT.__objc_methname: 0xde1
-+  __TEXT.__objc_methname: 0xdf1
-   __TEXT.__objc_methtype: 0x331
-   __TEXT.__swift5_fieldmd: 0x4c8
--  __TEXT.__constg_swiftt: 0x4d0
-+  __TEXT.__constg_swiftt: 0x4d8
-   __TEXT.__swift5_reflstr: 0x67c
--  __TEXT.__swift5_capture: 0x40c
--  __TEXT.__oslogstring: 0x224e
-+  __TEXT.__swift5_capture: 0x470
-+  __TEXT.__oslogstring: 0x247e
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift5_proto: 0x3c
-   __TEXT.__swift5_types: 0x44
--  __TEXT.__swift_as_entry: 0x98
--  __TEXT.__swift_as_ret: 0xb4
--  __TEXT.__swift_as_cont: 0x150
--  __TEXT.__cstring: 0x3d5
--  __TEXT.__unwind_info: 0xa10
--  __TEXT.__eh_frame: 0x20e0
--  __DATA_CONST.__const: 0xf58
-+  __TEXT.__swift_as_entry: 0x9c
-+  __TEXT.__swift_as_ret: 0xb8
-+  __TEXT.__swift_as_cont: 0x154
-+  __TEXT.__cstring: 0x3b5
-+  __TEXT.__unwind_info: 0xa20
-+  __TEXT.__eh_frame: 0x2140
-+  __DATA_CONST.__const: 0xfa8
-   __DATA_CONST.__objc_classlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x98
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x50
--  __DATA_CONST.__auth_got: 0xbc0
--  __DATA_CONST.__got: 0x2e0
-+  __DATA_CONST.__auth_got: 0xbc8
-+  __DATA_CONST.__got: 0x2c8
-   __DATA_CONST.__auth_ptr: 0x1c0
-   __DATA.__objc_const: 0xc30
--  __DATA.__objc_selrefs: 0x360
-+  __DATA.__objc_selrefs: 0x368
-   __DATA.__objc_data: 0xb0
-   __DATA.__data: 0xd80
-   __DATA.__bss: 0x580
+-3600.70.8.0.0
++3600.70.20.1.1
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 638
 -  Symbols:   547
 -  CStrings:  366
 +  Functions: 644
 +  Symbols:   545
 +  CStrings:  375
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_entry : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_reflstr : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
 Symbols:
 + _$s10Foundation6LocaleV10identifierACSS_tcfC
 + _$s10Foundation6LocaleVMa
@@ -121,5 +91,4 @@ CStrings:
 - "Sandbox: confstr(_CS_DARWIN_USER_TEMP_DIR) failed"
 - "cascadeSetChangeListener"
 - "com.apple.speechmaintenanced"
-
 ```

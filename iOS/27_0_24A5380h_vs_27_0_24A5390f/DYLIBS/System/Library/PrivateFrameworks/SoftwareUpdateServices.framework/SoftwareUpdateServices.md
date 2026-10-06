@@ -2,116 +2,64 @@
 
 > `/System/Library/PrivateFrameworks/SoftwareUpdateServices.framework/SoftwareUpdateServices`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5d3d4` | `0x6aa9c` | **`+0xd6c8`** |
+| `__TEXT.__eh_frame` | `—` | `0xc18` | **`+0xc18`** |
+| `__TEXT.__cstring` | `0x15dcc` | `0x15431` | **`-0x99b`** |
+| `__TEXT.__oslogstring` | `0xb` | `0x93c` | **`+0x931`** |
+| `__AUTH_CONST.__auth_got` | `0x0` | `0x8b0` | **`+0x8b0`** |
+| `__AUTH_CONST.__const` | `0x540` | `0x990` | **`+0x450`** |
+| `__TEXT.__const` | `0x1b0` | `0x5aa` | **`+0x3fa`** |
+| `__AUTH_CONST.__cfstring` | `0xe320` | `0xdf40` | **`-0x3e0`** |
+| `__TEXT.__unwind_info` | `0x1be0` | `0x1f08` | **`+0x328`** |
+| `__DATA.__bss` | `0x90` | `0x350` | **`+0x2c0`** |
+| `__TEXT.__swift5_typeref` | `—` | `0x205` | **`+0x205`** |
+| `__DATA_CONST.__const` | `0x19c8` | `0x17c8` | **`-0x200`** |
+| `__TEXT.__constg_swiftt` | `—` | `0x1d0` | **`+0x1d0`** |
+| `__AUTH_CONST.__objc_const` | `0xddc0` | `0xdf18` | **`+0x158`** |
+| `__AUTH.__data` | `—` | `0x128` | **`+0x128`** |
+| `__TEXT.__swift5_capture` | `—` | `0x124` | **`+0x124`** |
+| `__AUTH.__objc_data` | `0xed8` | `0xfd0` | **`+0xf8`** |
+| `__TEXT.__swift_as_cont` | `—` | `0xa0` | **`+0xa0`** |
+| `__DATA.__data` | `0x984` | `0xa14` | **`+0x90`** |
+| `__TEXT.__swift_as_ret` | `—` | `0x84` | **`+0x84`** |
+| `__TEXT.__gcc_except_tab` | `0xca0` | `0xc34` | **`-0x6c`** |
+| `__TEXT.__swift5_assocty` | `—` | `0x60` | **`+0x60`** |
+| `__TEXT.__swift5_fieldmd` | `—` | `0x58` | **`+0x58`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x58` | **`+0x58`** |
+| `__TEXT.__swift5_reflstr` | `—` | `0x45` | **`+0x45`** |
+| `__DATA_CONST.__got` | `0x788` | `0x7c8` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4058` | `0x4038` | **`-0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0xe40` | `0xe58` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `—` | `0x18` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `—` | `0x14` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x2d8` | `0x2e8` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `—` | `0xc` | **`+0xc`** |
+| `__DATA.__common` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x705c` | `0x7064` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x6c8` | `0x6cc` | **`+0x4`** |
+| `__TEXT.__swift5_protos` | `—` | `0x4` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__objc_imageinfo`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__lazy_load_got`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__DATA_DIRTY.__objc_data`
+
+### Other Changes
 
 ```diff
 
 -1107.0.0.0.0
--  __TEXT.__text: 0x5d3d4
 +1112.0.1.0.0
-+  __TEXT.__text: 0x6aa9c
-   __TEXT.__lazy_helpers: 0xa8
--  __TEXT.__objc_methlist: 0x705c
--  __TEXT.__const: 0x1b0
--  __TEXT.__gcc_except_tab: 0xca0
--  __TEXT.__cstring: 0x15dcc
--  __TEXT.__oslogstring: 0xb
--  __TEXT.__unwind_info: 0x1be0
-+  __TEXT.__objc_methlist: 0x7064
-+  __TEXT.__const: 0x5aa
-+  __TEXT.__gcc_except_tab: 0xc34
-+  __TEXT.__cstring: 0x15431
-+  __TEXT.__oslogstring: 0x93c
-+  __TEXT.__swift5_typeref: 0x205
-+  __TEXT.__swift5_capture: 0x124
-+  __TEXT.__swift5_fieldmd: 0x58
-+  __TEXT.__constg_swiftt: 0x1d0
-+  __TEXT.__swift5_reflstr: 0x45
-+  __TEXT.__swift5_builtin: 0x14
-+  __TEXT.__swift5_assocty: 0x60
-+  __TEXT.__swift5_protos: 0x4
-+  __TEXT.__swift5_proto: 0x18
-+  __TEXT.__swift5_types: 0xc
-+  __TEXT.__swift_as_entry: 0x58
-+  __TEXT.__swift_as_ret: 0x84
-+  __TEXT.__swift_as_cont: 0xa0
-+  __TEXT.__unwind_info: 0x1f08
-+  __TEXT.__eh_frame: 0xc18
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x19c8
--  __DATA_CONST.__objc_classlist: 0x2d8
-+  __DATA_CONST.__const: 0x17c8
-+  __DATA_CONST.__objc_classlist: 0x2e8
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0xc8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4058
-+  __DATA_CONST.__objc_selrefs: 0x4038
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x260
-   __DATA_CONST.__objc_arraydata: 0x10
--  __DATA_CONST.__got: 0x788
--  __AUTH_CONST.__const: 0x540
--  __AUTH_CONST.__cfstring: 0xe320
--  __AUTH_CONST.__objc_const: 0xddc0
-+  __DATA_CONST.__got: 0x7c8
-+  __AUTH_CONST.__const: 0x990
-+  __AUTH_CONST.__cfstring: 0xdf40
-+  __AUTH_CONST.__objc_const: 0xdf18
-   __AUTH_CONST.__lazy_load_got: 0x10
--  __AUTH_CONST.__objc_intobj: 0xe40
-+  __AUTH_CONST.__objc_intobj: 0xe58
-   __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0xed8
--  __DATA.__objc_ivar: 0x6c8
--  __DATA.__data: 0x984
--  __DATA.__bss: 0x90
-+  __AUTH_CONST.__auth_got: 0x8b0
-+  __AUTH.__objc_data: 0xfd0
-+  __AUTH.__data: 0x128
-+  __DATA.__objc_ivar: 0x6cc
-+  __DATA.__data: 0xa14
-+  __DATA.__bss: 0x350
-+  __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0xd98
-   __DATA_DIRTY.__bss: 0x1d8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-   - /System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication
-   - /System/Library/Frameworks/Network.framework/Network
 +  - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/PrivateFrameworks/AirTraffic.framework/AirTraffic
-   - /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard
-   - /System/Library/PrivateFrameworks/CacheDelete.framework/CacheDelete
-   - /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet
-   - /System/Library/PrivateFrameworks/CoreDuetContext.framework/CoreDuetContext
-   - /System/Library/PrivateFrameworks/CoreFollowUp.framework/CoreFollowUp
--  - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
-   - /System/Library/PrivateFrameworks/LockdownMode.framework/LockdownMode
-   - /System/Library/PrivateFrameworks/MDMClientLibrary.framework/MDMClientLibrary
-   - /System/Library/PrivateFrameworks/MSUDataAccessor.framework/MSUDataAccessor
 
-   - /usr/lib/libauthinstall.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
+-  - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
+
 -  Functions: 2688
--  Symbols:   6259
+-  Symbols:   4674
 -  CStrings:  2230
 +  - /usr/lib/swift/libswiftCore.dylib
 +  - /usr/lib/swift/libswiftCoreFoundation.dylib
@@ -130,9 +78,8 @@
 +  - /usr/lib/swift/libswiftos.dylib
 +  - /usr/lib/swift/libswiftsimd.dylib
 +  Functions: 2907
-+  Symbols:   6376
++  Symbols:   4796
 +  CStrings:  2221
- 
 Symbols:
 + +[SUSpace hasUnentitledSpaceSet]
 + +[SUSpace isOffloadUnusedAppsOn]
@@ -240,19 +187,6 @@ Symbols:
 + _memcpy
 + _memmove
 + _objc_allocWithZone
-+ _objc_msgSend$autoInstallSecurityResponseForceOff
-+ _objc_msgSend$autoInstallSecurityResponseForceOn
-+ _objc_msgSend$autoUpdateForceOff
-+ _objc_msgSend$autoUpdateForceOn
-+ _objc_msgSend$cspnStateHistory
-+ _objc_msgSend$hasSufficientSpaceWithOptions:completion:
-+ _objc_msgSend$hasUnentitledSpaceSet
-+ _objc_msgSend$isDescriptorAutoUpdatable:
-+ _objc_msgSend$isOffloadUnusedAppsOn
-+ _objc_msgSend$loadCSPNStateHistory
-+ _objc_msgSend$makeRoomForUpdateWithOptions:downloadOptions:completion:
-+ _objc_msgSend$queue_addCSPNStateChange:
-+ _objc_msgSend$setCSPNStateHistory:
 + _objc_opt_self
 + _swift_allocBox
 + _swift_allocObject
@@ -401,24 +335,6 @@ Symbols:
 - ___block_descriptor_72_e8_32s40s48bs56r_e17_v16?0"NSError"8ls48l8s32l8r56l8s40l8
 - ___block_descriptor_72_e8_32s40s48bs56r_e41_v24?0"SUSpaceCheckResults"8"NSError"16ls32l8s40l8s48l8r56l8
 - ___block_descriptor_80_e8_32s40s48bs56r64r_e23_v28?0B8Q12"NSError"20ls32l8r56l8s48l8r64l8s40l8
-- _objc_msgSend$_checkPurgeResultForPhase:neededBytes:haveEnoushSpace:availableBytes:error:
-- _objc_msgSend$_checkPurgeableAppOffload:results:completion:
-- _objc_msgSend$_checkPurgeableCacheDelete:results:completion:
-- _objc_msgSend$_checkPurgeableMASuspend:results:completion:
-- _objc_msgSend$_hasUnentitledSpaceSet
-- _objc_msgSend$_isOffloadUnusedAppsOn
-- _objc_msgSend$_performCacheDeleteForOptionalPSUS:downloadOptions:completion:
-- _objc_msgSend$_processForPhase:results:neededBytes:haveEnoushSpace:availableBytes:error:
-- _objc_msgSend$_purgeAppOffloadIfNeeded:neededBytes:urgency:completion:
-- _objc_msgSend$_purgeCacheDeleteIfNeeded:criticalModeNeeded:neededBytes:urgency:completion:
-- _objc_msgSend$_purgeMASuspendIfNeeded:neededBytes:completion:
-- _objc_msgSend$_runGetOffTestingIfNecessary:handler:
-- _objc_msgSend$_showPurgingAlertIfNecessary:results:completion:
-- _objc_msgSend$isSUCoreInsufficientSpace
-- _objc_msgSend$requiresAnyPurging
-- _objc_msgSend$requiresUserConsent
-- _objc_msgSend$sleepForTimeInterval:
-- _objc_msgSend$wasEverAvailable
 - _objc_retain_x5
 - _objc_retain_x6
 CStrings:

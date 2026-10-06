@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/UserFS.framework/PlugIns/livefiles_exfat.dylib`
 
-```diff
+### Section Size Changes
 
- 561.0.3.0.0
--  __TEXT.__text: 0x1c0c8
-+  __TEXT.__text: 0x1c0e4
-   __TEXT.__const: 0x4b78
-   __TEXT.__oslogstring: 0x47f5
-   __TEXT.__cstring: 0x70d
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c0c8` | `0x1c0e4` | **`+0x1c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _CONV_UTF8ToUnistr255 : 1368 -> 1372
 ~ _priortysort : 148 -> 156

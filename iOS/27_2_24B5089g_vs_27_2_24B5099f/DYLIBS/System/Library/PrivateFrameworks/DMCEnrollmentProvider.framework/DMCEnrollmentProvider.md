@@ -2,93 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/DMCEnrollmentProvider.framework/DMCEnrollmentProvider`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x50444` | `0x51a84` | **`+0x1640`** |
+| `__AUTH_CONST.__objc_const` | `0x114a0` | `0x11fa0` | **`+0xb00`** |
+| `__TEXT.__objc_methlist` | `0x7254` | `0x73e4` | **`+0x190`** |
+| `__TEXT.__oslogstring` | `0x24cf` | `0x25ef` | **`+0x120`** |
+| `__TEXT.__cstring` | `0x2f98` | `0x3098` | **`+0x100`** |
+| `__AUTH.__objc_data` | `0x1b00` | `0x1bf0` | **`+0xf0`** |
+| `__AUTH_CONST.__cfstring` | `0x30c0` | `0x31a0` | **`+0xe0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x49c8` | `0x4a98` | **`+0xd0`** |
+| `__TEXT.__gcc_except_tab` | `0x7b4` | `0x83c` | **`+0x88`** |
+| `__TEXT.__unwind_info` | `0x15b8` | `0x1638` | **`+0x80`** |
+| `__DATA.__data` | `0x1458` | `0x14b8` | **`+0x60`** |
+| `__DATA_CONST.__got` | `0xef8` | `0xf28` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x1218` | `0x1240` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x4a0` | `0x4c0` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x5f8` | `0x614` | **`+0x1c`** |
+| `__DATA_CONST.__objc_classlist` | `0x310` | `0x328` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x250` | `0x268` | **`+0x18`** |
+| `__TEXT.__const` | `0x504` | `0x514` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x7c8` | `0x7c0` | **`-0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x1a0` | `0x1a8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -113.40.17.0.0
--  __TEXT.__text: 0x4e0d0
--  __TEXT.__objc_methlist: 0x7254
--  __TEXT.__const: 0x504
--  __TEXT.__oslogstring: 0x24cf
--  __TEXT.__cstring: 0x2f98
--  __TEXT.__gcc_except_tab: 0x7b4
 +113.40.20.0.0
-+  __TEXT.__text: 0x4f668
-+  __TEXT.__objc_methlist: 0x73e4
-+  __TEXT.__const: 0x514
-+  __TEXT.__oslogstring: 0x25ef
-+  __TEXT.__cstring: 0x3098
-+  __TEXT.__gcc_except_tab: 0x83c
-   __TEXT.__ustring: 0xa4
-   __TEXT.__dlopen_cstrs: 0x66
-   __TEXT.__swift5_typeref: 0x1b6
 
-   __TEXT.__swift5_fieldmd: 0x54
-   __TEXT.__swift5_proto: 0x10
-   __TEXT.__swift5_types: 0xc
--  __TEXT.__unwind_info: 0x1b10
-+  __TEXT.__unwind_info: 0x1b98
-   __TEXT.__eh_frame: 0x430
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1218
--  __DATA_CONST.__objc_classlist: 0x310
-+  __DATA_CONST.__const: 0x1240
-+  __DATA_CONST.__objc_classlist: 0x328
-   __DATA_CONST.__objc_catlist: 0x40
--  __DATA_CONST.__objc_protolist: 0x1a0
-+  __DATA_CONST.__objc_protolist: 0x1a8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x49c8
-+  __DATA_CONST.__objc_selrefs: 0x4a98
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x250
-+  __DATA_CONST.__objc_superrefs: 0x268
-   __DATA_CONST.__objc_arraydata: 0x90
--  __DATA_CONST.__got: 0xef8
--  __AUTH_CONST.__const: 0x4a0
--  __AUTH_CONST.__cfstring: 0x30c0
--  __AUTH_CONST.__objc_const: 0x114a0
-+  __DATA_CONST.__got: 0xf28
-+  __AUTH_CONST.__const: 0x4c0
-+  __AUTH_CONST.__cfstring: 0x31a0
-+  __AUTH_CONST.__objc_const: 0x11fa0
-   __AUTH_CONST.__objc_arrayobj: 0xa8
-   __AUTH_CONST.__objc_intobj: 0x138
-   __AUTH_CONST.__objc_floatobj: 0x30
--  __AUTH_CONST.__auth_got: 0x7c8
--  __AUTH.__objc_data: 0x1b00
-+  __AUTH_CONST.__auth_got: 0x7c0
-+  __AUTH.__objc_data: 0x1bf0
-   __AUTH.__data: 0xc0
--  __DATA.__objc_ivar: 0x5f8
--  __DATA.__data: 0x1458
-+  __DATA.__objc_ivar: 0x614
-+  __DATA.__data: 0x14b8
-   __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0x370
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /System/Library/PrivateFrameworks/DMCTools.framework/DMCTools
-   - /System/Library/PrivateFrameworks/DMCUtilities.framework/DMCUtilities
-   - /System/Library/PrivateFrameworks/EmbeddedDataReset.framework/EmbeddedDataReset
 +  - /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
-   - /System/Library/PrivateFrameworks/IconServices.framework/IconServices
-   - /System/Library/PrivateFrameworks/MDMClientLibrary.framework/MDMClientLibrary
-   - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2221
 -  Symbols:   4256
 -  CStrings:  634
 +  Functions: 2258
 +  Symbols:   4332
 +  CStrings:  647
- 
 Symbols:
 + -[DMCBYODEnrollmentFlowUIPresenter _appNetworkAccessItemForBundleID:]
 + -[DMCBYODEnrollmentFlowUIPresenter _appNetworkAccessItemsForCapabilities:]

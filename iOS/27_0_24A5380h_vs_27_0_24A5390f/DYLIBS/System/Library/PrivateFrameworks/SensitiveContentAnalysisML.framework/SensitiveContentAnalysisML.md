@@ -2,126 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/SensitiveContentAnalysisML.framework/SensitiveContentAnalysisML`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf7f30` | `0xf75b8` | **`-0x978`** |
+| `__TEXT.__gcc_except_tab` | `0x461c` | `0x4460` | **`-0x1bc`** |
+| `__TEXT.__eh_frame` | `0x8b78` | `0x8c98` | **`+0x120`** |
+| `__AUTH_CONST.__const` | `0xa3c8` | `0xa2f8` | **`-0xd0`** |
+| `__TEXT.__oslogstring` | `0x1e93` | `0x1ee3` | **`+0x50`** |
+| `__TEXT.__swift5_capture` | `0x484` | `0x43c` | **`-0x48`** |
+| `__DATA.__data` | `0x2810` | `0x27d0` | **`-0x40`** |
+| `__DATA_DIRTY.__data` | `0x1f30` | `0x1f68` | **`+0x38`** |
+| `__AUTH_CONST.__objc_const` | `0x5658` | `0x5628` | **`-0x30`** |
+| `__TEXT.__constg_swiftt` | `0x2bec` | `0x2bbc` | **`-0x30`** |
+| `__TEXT.__cstring` | `0x3d46` | `0x3d76` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x1e7c` | `0x1e4c` | **`-0x30`** |
+| `__AUTH_CONST.__cfstring` | `0x1b20` | `0x1b00` | **`-0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x258c` | `0x2570` | **`-0x1c`** |
+| `__TEXT.__swift_as_cont` | `0x55c` | `0x574` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x1980` | `0x1990` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x8f0` | `0x8e0` | **`-0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1178` | `0x1168` | **`-0x10`** |
+| `__TEXT.__const` | `0x1157c` | `0x1156c` | **`-0x10`** |
+| `__TEXT.__swift_as_ret` | `0x21c` | `0x228` | **`+0xc`** |
+| `__TEXT.__unwind_info` | `0x50c0` | `0x50b8` | **`-0x8`** |
+| `__TEXT.__swift5_reflstr` | `0x114f` | `0x1149` | **`-0x6`** |
+| `__DATA.__objc_ivar` | `0x2f8` | `0x2f4` | **`-0x4`** |
+| `__TEXT.__swift5_types` | `0x424` | `0x420` | **`-0x4`** |
+| `__TEXT.__swift_as_entry` | `0x18c` | `0x190` | **`+0x4`** |
+| `__TEXT.__swift5_typeref` | `0x29a9` | `0x29a7` | **`-0x2`** |
+
+### Other Changes
 
 ```diff
 
 -163.0.0.0.0
--  __TEXT.__text: 0xf7f30
--  __TEXT.__objc_methlist: 0x1e7c
--  __TEXT.__const: 0x1157c
--  __TEXT.__gcc_except_tab: 0x461c
--  __TEXT.__cstring: 0x3d46
--  __TEXT.__oslogstring: 0x1e93
 +165.0.0.0.0
-+  __TEXT.__text: 0xf75b8
-+  __TEXT.__objc_methlist: 0x1e4c
-+  __TEXT.__const: 0x1156c
-+  __TEXT.__gcc_except_tab: 0x4460
-+  __TEXT.__cstring: 0x3d76
-+  __TEXT.__oslogstring: 0x1ee3
-   __TEXT.__dlopen_cstrs: 0xb0
--  __TEXT.__swift5_typeref: 0x29a9
--  __TEXT.__swift5_fieldmd: 0x258c
--  __TEXT.__constg_swiftt: 0x2bec
--  __TEXT.__swift5_reflstr: 0x114f
-+  __TEXT.__swift5_typeref: 0x29a7
-+  __TEXT.__swift5_fieldmd: 0x2570
-+  __TEXT.__constg_swiftt: 0x2bbc
-+  __TEXT.__swift5_reflstr: 0x1149
-   __TEXT.__swift5_builtin: 0xb4
-   __TEXT.__swift5_assocty: 0x4c8
-   __TEXT.__swift5_protos: 0x20
-   __TEXT.__swift5_proto: 0x1010
--  __TEXT.__swift5_types: 0x424
--  __TEXT.__swift_as_entry: 0x18c
--  __TEXT.__swift_as_ret: 0x21c
--  __TEXT.__swift_as_cont: 0x55c
--  __TEXT.__swift5_capture: 0x484
-+  __TEXT.__swift5_types: 0x420
-+  __TEXT.__swift_as_entry: 0x190
-+  __TEXT.__swift_as_ret: 0x228
-+  __TEXT.__swift_as_cont: 0x574
-+  __TEXT.__swift5_capture: 0x43c
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x50c0
--  __TEXT.__eh_frame: 0x8b78
-+  __TEXT.__unwind_info: 0x50b8
-+  __TEXT.__eh_frame: 0x8c98
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x1178
-+  __DATA_CONST.__objc_selrefs: 0x1168
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x120
-   __DATA_CONST.__objc_arraydata: 0x1f8
--  __DATA_CONST.__got: 0x8f0
--  __AUTH_CONST.__const: 0xa3c8
--  __AUTH_CONST.__cfstring: 0x1b20
--  __AUTH_CONST.__objc_const: 0x5658
-+  __DATA_CONST.__got: 0x8e0
-+  __AUTH_CONST.__const: 0xa2f8
-+  __AUTH_CONST.__cfstring: 0x1b00
-+  __AUTH_CONST.__objc_const: 0x5628
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x138
-   __AUTH_CONST.__objc_arrayobj: 0xf0
--  __AUTH_CONST.__auth_got: 0x1980
-+  __AUTH_CONST.__auth_got: 0x1990
-   __AUTH.__objc_data: 0x2d0
-   __AUTH.__data: 0x4a8
--  __DATA.__objc_ivar: 0x2f8
--  __DATA.__data: 0x2810
-+  __DATA.__objc_ivar: 0x2f4
-+  __DATA.__data: 0x27d0
-   __DATA.__bss: 0x1e6f0
-   __DATA.__common: 0x98
-   __DATA_DIRTY.__objc_data: 0x1740
--  __DATA_DIRTY.__data: 0x1f30
-+  __DATA_DIRTY.__data: 0x1f68
-   __DATA_DIRTY.__bss: 0x16f0
-   __DATA_DIRTY.__common: 0xb0
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6251
--  Symbols:   4342
+-  Symbols:   3894
 -  CStrings:  792
 +  Functions: 6248
-+  Symbols:   4331
++  Symbols:   3885
 +  CStrings:  795
- 
 Symbols:
 + -[SCMLImageModelThresholds _goreViolenceThresholdForLabel:error:]
-+ _objc_msgSend$_goreViolenceThresholdForLabel:error:
-+ _objc_msgSend$goreThresholdForRevision:
-+ _objc_msgSend$violenceThresholdForRevision:
 + _symbolic Say______pG 12ModelCatalog19AssetBackedResourceP
 + _symbolic ScCySDySSSfG______pG s5ErrorP
 + _symbolic ScCy______p______pG So9CSUBufferP s5ErrorP
@@ -134,11 +60,6 @@ Symbols:
 - _OBJC_IVAR_$_SCMLImageModelThresholds.__safetyNetThresholdDict
 - __ZN12_GLOBAL__N_114checkedConvertI8NSNumberEEPT_P11objc_objectPU15__autoreleasingP7NSError
 - __ZN12_GLOBAL__N_121GetImageModelVersionsEv
-- _objc_msgSend$_createSafetyNetThresholdDictionaryWithError:
-- _objc_msgSend$_safetyNetThresholdDict
-- _objc_msgSend$_validateSafetyNetScoreThresholdsJson:error:
-- _objc_msgSend$safetyNetThresholdForLabel:classificationMode:modelVersion:error:
-- _objc_msgSend$set_safetyNetThresholdDict:
 - _symbolic SDySSSfGz_Xx
 - _symbolic _____ 26SensitiveContentAnalysisML17UncheckedSendableV
 - _symbolic ______pSg So9CSUBufferP

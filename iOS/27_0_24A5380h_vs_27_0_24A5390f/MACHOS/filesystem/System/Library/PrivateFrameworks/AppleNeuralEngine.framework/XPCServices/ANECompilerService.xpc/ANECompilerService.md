@@ -2,80 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/AppleNeuralEngine.framework/XPCServices/ANECompilerService.xpc/ANECompilerService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1819c` | `0x18b64` | **`+0x9c8`** |
+| `__TEXT.__oslogstring` | `0x20e8` | `0x224c` | **`+0x164`** |
+| `__TEXT.__objc_methname` | `0x246d` | `0x24e1` | **`+0x74`** |
+| `__TEXT.__objc_stubs` | `0x2160` | `0x21c0` | **`+0x60`** |
+| `__DATA_CONST.__cfstring` | `0x1880` | `0x18c0` | **`+0x40`** |
+| `__TEXT.__gcc_except_tab` | `0x1210` | `0x1248` | **`+0x38`** |
+| `__TEXT.__cstring` | `0x1255` | `0x1277` | **`+0x22`** |
+| `__TEXT.__auth_stubs` | `0x7d0` | `0x7f0` | **`+0x20`** |
+| `__DATA.__objc_selrefs` | `0xa40` | `0xa58` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x954` | `0x96c` | **`+0x18`** |
+| `__TEXT.__objc_methtype` | `0x601` | `0x615` | **`+0x14`** |
+| `__DATA_CONST.__auth_got` | `0x400` | `0x410` | **`+0x10`** |
+| `__TEXT.__const` | `0x100` | `0x110` | **`+0x10`** |
+| `__DATA.__data` | `0x3f0` | `0x3f8` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x428` | `0x430` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
 - `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_const`
-- `__DATA.__objc_data`
+
+### Other Changes
 
 ```diff
 
 -382.11.0.0.0
--  __TEXT.__text: 0x1819c
--  __TEXT.__auth_stubs: 0x7d0
--  __TEXT.__objc_stubs: 0x2160
--  __TEXT.__objc_methlist: 0x954
--  __TEXT.__const: 0x100
--  __TEXT.__cstring: 0x1255
--  __TEXT.__oslogstring: 0x20e8
 +382.12.0.0.0
-+  __TEXT.__text: 0x18b64
-+  __TEXT.__auth_stubs: 0x7f0
-+  __TEXT.__objc_stubs: 0x21c0
-+  __TEXT.__objc_methlist: 0x96c
-+  __TEXT.__const: 0x110
-+  __TEXT.__cstring: 0x1277
-+  __TEXT.__oslogstring: 0x224c
-   __TEXT.__objc_classname: 0x19e
--  __TEXT.__objc_methname: 0x246d
--  __TEXT.__objc_methtype: 0x601
--  __TEXT.__gcc_except_tab: 0x1210
--  __TEXT.__unwind_info: 0x428
-+  __TEXT.__objc_methname: 0x24e1
-+  __TEXT.__objc_methtype: 0x615
-+  __TEXT.__gcc_except_tab: 0x1248
-+  __TEXT.__unwind_info: 0x430
-   __DATA_CONST.__const: 0x320
--  __DATA_CONST.__cfstring: 0x1880
-+  __DATA_CONST.__cfstring: 0x18c0
-   __DATA_CONST.__objc_classlist: 0x80
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x28
 
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x20
-   __DATA_CONST.__objc_intobj: 0x60
--  __DATA_CONST.__auth_got: 0x400
-+  __DATA_CONST.__auth_got: 0x410
-   __DATA_CONST.__got: 0x1b8
-   __DATA.__objc_const: 0xd20
--  __DATA.__objc_selrefs: 0xa40
-+  __DATA.__objc_selrefs: 0xa58
-   __DATA.__objc_ivar: 0x24
-   __DATA.__objc_data: 0x500
--  __DATA.__data: 0x3f0
-+  __DATA.__data: 0x3f8
-   __DATA.__bss: 0x88
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsandbox.1.dylib
 -  Functions: 291
 -  Symbols:   933
 -  CStrings:  842
 +  Functions: 295
 +  Symbols:   940
 +  CStrings:  853
- 
 Symbols:
 + +[_ANEStorageHelper isPath:safelyWithinDirectory:]
 + -[_ANEModelCacheManager scanAllPartitionsForModel:csIdentity:expunge:allowProcessModelShare:]

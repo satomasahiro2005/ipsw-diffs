@@ -2,30 +2,19 @@
 
 > `/usr/lib/libATCommandStudioDynamic.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__cstring`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__weak_got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__weak_auth_got`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__oslogstring` | `0x2525` | `0x259d` | **`+0x78`** |
+| `__TEXT.__const` | `0x1b00` | `0x1b20` | **`+0x20`** |
+
+### Other Changes
 
 ```diff
 
 -1576.0.0.0.0
 +1580.0.0.0.0
-   __TEXT.__text: 0x55b7c
-   __TEXT.__init_offsets: 0x10
--  __TEXT.__const: 0x1b00
-+  __TEXT.__const: 0x1b20
-   __TEXT.__gcc_except_tab: 0x58bc
-   __TEXT.__cstring: 0x2032
--  __TEXT.__oslogstring: 0x2525
-+  __TEXT.__oslogstring: 0x259d
-   __TEXT.__unwind_info: 0x2308
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0xa80
 CStrings:
 + "Client: [%{public}s], invalid fTransport at time of initialization"
 + "Client: [%{public}s], invalid fTransport when handling indication"

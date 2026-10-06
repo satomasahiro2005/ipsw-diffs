@@ -2,47 +2,30 @@
 
 > `/System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4744` | `0x4870` | **`+0x12c`** |
+| `__TEXT.__unwind_info` | `0x2a8` | `0x2b8` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__gcc_except_tab`
+
+### Other Changes
+
 ```diff
 
- 381.0.0.0.0
--  __TEXT.__text: 0x4744 sha256:9e002f2fa99b5a3efb3a3e2cdb4b7a66295b904037f05be6df32ecfdc98d86d8
--  __TEXT.__auth_stubs: 0x670 sha256:24ccd902e6ba60b555ccc94ceb55e9a923b4093c4c14632bb1962c8d89b3ef51
--  __TEXT.__gcc_except_tab: 0x320 sha256:a7b8ee3d9a080906064121054efbda0e076dc104ccff8ddd56f0ef9a72d0a5b2
-+  __TEXT.__text: 0x4870 sha256:6a83cee4b1e0c962e017111b88c2968bcbde5c45ca4b02393c642706faa04784
-+  __TEXT.__auth_stubs: 0x670 sha256:f7b37ca921ac9fd88e562e592ba2eb71293002dfa5a7ad6e3276ec202fb3109d
-+  __TEXT.__gcc_except_tab: 0x320 sha256:eca37a8d6d2b2d13b3e04d9b1791a4b346a12d6bf4a40010d7d70dc8720f5192
-   __TEXT.__const: 0x90 sha256:a7b2f0fbc2f19687544845e30ca6d9a149e9d04ebf53b95bb32eec00ed44a07d
-   __TEXT.__oslogstring: 0x457 sha256:67d5bf08b0d1eace1b6fa8dc30f83f1bc4f509e0df4e148cbbe09e2efa21cbb0
-   __TEXT.__cstring: 0x544 sha256:e853687f323e4ee02f1bea7e6075b069bccc3a4cd43a0759eab84626d96dcac7
--  __TEXT.__unwind_info: 0x2a8 sha256:63f3b5689c9b7f12627cfe5ec61a36822df9d4e33ae1904a566ba76b225c3972
--  __DATA_CONST.__const: 0x190 sha256:06561f882d7c4869049007c2d54d01a1a583c2a9a339fa41a96f959339be8a40
--  __DATA_CONST.__cfstring: 0x20 sha256:8b8c45f91d2769a53c51d5bdeadb30f7c68a13c6a3e0de11b26c57ceaff7c1f1
-+  __TEXT.__unwind_info: 0x2b8 sha256:63072c4039adafff4a16bb55d0785a1d98b57866b0569f47e16efdbf0bc937fa
-+  __DATA_CONST.__const: 0x190 sha256:c3aed1fb60b09a390d647e826133262945395ab63545bdfabce4e9c280828b66
-+  __DATA_CONST.__cfstring: 0x20 sha256:12007a1bc4115e54bbdf17436c302fa56b0c76c90218f75a23d7199b2c70f2b2
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:1fa65ffcccc24c72d5d7f804a2be05ae57dfbb8769ffb33c4272ed6795b7e61c
-   __DATA_CONST.__auth_got: 0x340 sha256:8603adf94a9a1aa7fe24d3ce74c0984121a886fd263acd7c7e2087b25a46a5fb
-   __DATA_CONST.__got: 0xb8 sha256:d38212d1e9c8e0678844cc33293b5f8e86d8f3ecc3c704ee06b4c7c690e9d55a
-
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
--  UUID: E6E4BE98-188C-3011-ACEE-AC84A213A2A9
 -  Functions: 127
--  Symbols:   876
-+  UUID: 2C409A80-822E-39D4-A127-B3C7C240D47E
+-  Symbols:   325
 +  Functions: 129
-+  Symbols:   886
-   CStrings:  79
- 
++  Symbols:   326
 Symbols:
-+ /Library/Caches/com.apple.xbs/088B7E15-734D-4D37-8F67-F52D640B7707/TemporaryDirectory.DagCaJ/Binaries/Metal/install/TempContent/Objects/Metal.build/MTLCompilerService.build/Objects-normal/arm64e/MTLCompilerService.o
-+ /Library/Caches/com.apple.xbs/088B7E15-734D-4D37-8F67-F52D640B7707/TemporaryDirectory.DagCaJ/Binaries/Metal/install/TempContent/Objects/Metal.build/MTLCompilerService.build/Objects-normal/arm64e/MTLCompilerServiceMain.o
-+ /Library/Caches/com.apple.xbs/088B7E15-734D-4D37-8F67-F52D640B7707/TemporaryDirectory.DagCaJ/Binaries/Metal/install/TempContent/Objects/Metal.build/MTLCompilerService.build/Objects-normal/arm64e/MTLCompilerServiceTimer.o
-+ /Library/Caches/com.apple.xbs/088B7E15-734D-4D37-8F67-F52D640B7707/TemporaryDirectory.DagCaJ/Binaries/Metal/install/TempContent/Objects/Metal.build/MTLCompilerService.build/Objects-normal/arm64e/MTLSandboxExtensionContainer.o
-+ /Library/Caches/com.apple.xbs/088B7E15-734D-4D37-8F67-F52D640B7707/TemporaryDirectory.DagCaJ/Sources/Metal/CompilerService/XPCService/
-+ _ZN18MTLCompilerServiceI23CompilerPluginInterfaceEC2Ev.cold.1
-+ _ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRPKcEEERS7_DpOT_EUlvE_ZNSA_IJSD_EEESE_SH_EUlvE0_EEvbT_T0_.cold.1
++ _ZN18MTLCompilerServiceI23CompilerPluginInterfaceEC2Ev
++ _ZNSt3__116__if_likely_elseB9fqe220106IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRPKcEEERS7_DpOT_EUlvE_ZNSA_IJSD_EEESE_SH_EUlvE0_EEvbT_T0_
 + __ZNSt12length_errorC1B9fqe220106EPKc
 + __ZNSt12out_of_rangeC1B9fqe220106EPKc
 + __ZNSt3__110unique_ptrI16MTLConnectionCtxI23CompilerPluginInterfaceENS_14default_deleteIS3_EEE5resetB9fqe220106EPS3_
@@ -73,12 +56,7 @@ Symbols:
 + __ZNSt3__16vectorIyNS_9allocatorIyEEE20__throw_length_errorB9fqe220106Ev
 + __ZSt28__throw_bad_array_new_lengthB9fqe220106v
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeIxNS_5arrayINS_10unique_ptrI16MTLConnectionCtxI23CompilerPluginInterfaceENS_14default_deleteIS6_EEEELm64EEEEENS_22__unordered_map_hasherIxNS_4pairIKxSA_EENS_4hashIxEENS_8equal_toIxEEEENS_21__unordered_map_equalIxSF_SJ_SH_EENS_9allocatorISF_EEE16__emplace_uniqueB9fqe220106IJRKNS_21piecewise_construct_tENS_5tupleIJOxEEENSU_IJEEEEEENSD_INS_15__hash_iteratorIPNS_11__hash_nodeISB_PvEEEEbEEDpOT_ENKUlRSE_ST_OSW_OSX_E_clES18_ST_S19_S1A_
-- /Library/Caches/com.apple.xbs/D6FBC0C6-3C38-41F9-9E92-B235546317EE/TemporaryDirectory.fJO59L/Binaries/Metal/install/TempContent/Objects/Metal.build/MTLCompilerService.build/Objects-normal/arm64e/MTLCompilerService.o
-- /Library/Caches/com.apple.xbs/D6FBC0C6-3C38-41F9-9E92-B235546317EE/TemporaryDirectory.fJO59L/Binaries/Metal/install/TempContent/Objects/Metal.build/MTLCompilerService.build/Objects-normal/arm64e/MTLCompilerServiceMain.o
-- /Library/Caches/com.apple.xbs/D6FBC0C6-3C38-41F9-9E92-B235546317EE/TemporaryDirectory.fJO59L/Binaries/Metal/install/TempContent/Objects/Metal.build/MTLCompilerService.build/Objects-normal/arm64e/MTLCompilerServiceTimer.o
-- /Library/Caches/com.apple.xbs/D6FBC0C6-3C38-41F9-9E92-B235546317EE/TemporaryDirectory.fJO59L/Binaries/Metal/install/TempContent/Objects/Metal.build/MTLCompilerService.build/Objects-normal/arm64e/MTLSandboxExtensionContainer.o
-- /Library/Caches/com.apple.xbs/D6FBC0C6-3C38-41F9-9E92-B235546317EE/TemporaryDirectory.fJO59L/Sources/Metal/CompilerService/XPCService/
-- _ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRPKcEEERS7_DpOT_EUlvE_ZNSA_IJSD_EEESE_SH_EUlvE0_EEvbT_T0_.cold.1
+- _ZNSt3__116__if_likely_elseB9fqe220100IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRPKcEEERS7_DpOT_EUlvE_ZNSA_IJSD_EEESE_SH_EUlvE0_EEvbT_T0_
 - __ZNSt12length_errorC1B9fqe220100EPKc
 - __ZNSt12out_of_rangeC1B9fqe220100EPKc
 - __ZNSt3__110unique_ptrI16MTLConnectionCtxI23CompilerPluginInterfaceENS_14default_deleteIS3_EEE5resetB9fqe220100EPS3_
@@ -109,5 +87,4 @@ Symbols:
 - __ZNSt3__16vectorIyNS_9allocatorIyEEE20__throw_length_errorB9fqe220100Ev
 - __ZSt28__throw_bad_array_new_lengthB9fqe220100v
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeIxNS_5arrayINS_10unique_ptrI16MTLConnectionCtxI23CompilerPluginInterfaceENS_14default_deleteIS6_EEEELm64EEEEENS_22__unordered_map_hasherIxNS_4pairIKxSA_EENS_4hashIxEENS_8equal_toIxEEEENS_21__unordered_map_equalIxSF_SJ_SH_EENS_9allocatorISF_EEE16__emplace_uniqueB9fqe220100IJRKNS_21piecewise_construct_tENS_5tupleIJOxEEENSU_IJEEEEEENSD_INS_15__hash_iteratorIPNS_11__hash_nodeISB_PvEEEEbEEDpOT_ENKUlRSE_ST_OSW_OSX_E_clES18_ST_S19_S1A_
-
 ```

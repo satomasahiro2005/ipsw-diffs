@@ -2,92 +2,35 @@
 
 > `/System/Library/Frameworks/CoreServices.framework/CoreServices`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__lazy_load_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c63f8` | `0x1c6f38` | **`+0xb40`** |
+| `__TEXT.__oslogstring` | `0x16286` | `0x1650f` | **`+0x289`** |
+| `__TEXT.__gcc_except_tab` | `0x29414` | `0x2955c` | **`+0x148`** |
+| `__AUTH_CONST.__objc_const` | `0x15660` | `0x156e0` | **`+0x80`** |
+| `__TEXT.__objc_methlist` | `0xe16c` | `0xe1d4` | **`+0x68`** |
+| `__AUTH_CONST.__cfstring` | `0x179c0` | `0x17a00` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x28c92` | `0x28cce` | **`+0x3c`** |
+| `__TEXT.__unwind_info` | `0xc598` | `0xc5d0` | **`+0x38`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6510` | `0x6540` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x1960` | `0x1968` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0xbe8` | `0xbf0` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -1507.0.0.0.0
--  __TEXT.__text: 0x1c63f8
 +1512.0.0.0.0
-+  __TEXT.__text: 0x1c6f38
-   __TEXT.__delay_helper: 0x1b8
-   __TEXT.__lazy_helpers: 0xa8
--  __TEXT.__objc_methlist: 0xe16c
-+  __TEXT.__objc_methlist: 0xe1d4
-   __TEXT.__const: 0x990
--  __TEXT.__cstring: 0x28c92
--  __TEXT.__oslogstring: 0x16286
--  __TEXT.__gcc_except_tab: 0x29414
-+  __TEXT.__cstring: 0x28cce
-+  __TEXT.__oslogstring: 0x1650f
-+  __TEXT.__gcc_except_tab: 0x2955c
-   __TEXT.__ustring: 0x23c
--  __TEXT.__unwind_info: 0xc598
-+  __TEXT.__unwind_info: 0xc5d0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x78
-   __DATA_CONST.__objc_protolist: 0x180
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6510
-+  __DATA_CONST.__objc_selrefs: 0x6540
-   __DATA_CONST.__objc_protorefs: 0x90
-   __DATA_CONST.__objc_superrefs: 0x640
-   __DATA_CONST.__objc_arraydata: 0x990
-   __DATA_CONST.__got: 0xbb8
-   __AUTH_CONST.__const: 0x3b90
--  __AUTH_CONST.__cfstring: 0x179c0
--  __AUTH_CONST.__objc_const: 0x15660
-+  __AUTH_CONST.__cfstring: 0x17a00
-+  __AUTH_CONST.__objc_const: 0x156e0
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__lazy_load_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x7f8
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_arrayobj: 0x150
--  __AUTH_CONST.__auth_got: 0x1960
-+  __AUTH_CONST.__auth_got: 0x1968
-   __AUTH.__objc_data: 0x33b8
-   __AUTH.__data: 0x318
--  __DATA.__objc_ivar: 0xbe8
-+  __DATA.__objc_ivar: 0xbf0
-   __DATA.__data: 0x15c4
-   __DATA.__bss: 0xf30
-   __DATA.__common: 0x40
-
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 9514
--  Symbols:   16458
+-  Symbols:   14216
 -  CStrings:  6019
 +  Functions: 9533
-+  Symbols:   16473
++  Symbols:   14229
 +  CStrings:  6034
- 
 Symbols:
 + -[LSApplicationRecord(MobileInstall) _LSRecord_resolve_installBuildVersion]
 + -[LSApplicationRecord(MobileInstall) _LSRecord_resolve_originalInstallDate]
@@ -129,8 +72,6 @@ Symbols:
 + ___block_descriptor_72_ea8_32s40s48r_e374_v28?0I8r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIIIICCIII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIIC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}II{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IQQQIIIIIIIIIIQIIQQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[1I]II{LSAppClipFields=I}iIIIIIIIiII}12*20ls32l8s40l8r48l8
 + ___block_descriptor_80_e8_32s40s48s56s64n6_8_8_s0_e387_v28?0"_LSDatabase"8I16r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIIIICCIII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIIC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}II{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IQQQIIIIIIIIIIQIIQQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[1I]II{LSAppClipFields=I}iIIIIIIIiII}20l
 + _copyProcessNameString
-+ _objc_msgSend$installBuildVersion
-+ _objc_msgSend$originalInstallDate
 + _proc_name
 + _processNameString
 - GCC_except_table353

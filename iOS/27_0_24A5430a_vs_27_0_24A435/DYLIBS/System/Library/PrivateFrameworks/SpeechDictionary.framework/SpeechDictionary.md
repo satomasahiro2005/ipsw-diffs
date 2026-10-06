@@ -2,23 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/SpeechDictionary.framework/SpeechDictionary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6375c` | `0x637a8` | **`+0x4c`** |
+
+### Other Changes
+
 ```diff
 
- 22.0.0.0.0
--  __TEXT.__text: 0x6375c
-+  __TEXT.__text: 0x637a8
-   __TEXT.__gcc_except_tab: 0x1bb8
-   __TEXT.__cstring: 0xf808
-   __TEXT.__const: 0x5508
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 849
 +  Functions: 848
-   Symbols:   1331
-   CStrings:  4467
- 
 Functions:
 ~ __ZN10SLCartDictC2EPv : 448 -> 452
 ~ __ZN12SLPrefixDict6LookupEPKcmP13SLWordBuilderP12SLDictionary : 376 -> 380

@@ -2,64 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x306670` | `0x306f30` | **`+0x8c0`** |
+| `__TEXT.__gcc_except_tab` | `0x26e80` | `0x26f24` | **`+0xa4`** |
+| `__TEXT.__realtime` | `0x3910c` | `0x39178` | **`+0x6c`** |
+| `__TEXT.__oslogstring` | `0x1565e` | `0x156be` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x90b0` | `0x90e0` | **`+0x30`** |
+| `__AUTH_CONST.__cfstring` | `0x8680` | `0x86a0` | **`+0x20`** |
+| `__AUTH_CONST.__const` | `0x1bae8` | `0x1bb08` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x21367` | `0x21378` | **`+0x11`** |
+| `__TEXT.__unwind_info` | `0xe638` | `0xe648` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1cf8` | `0x1d00` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1638.208.0.0.0
--  __TEXT.__text: 0x2fe900
--  __TEXT.__realtime: 0x38be8
 +1638.209.1.0.0
-+  __TEXT.__text: 0x2ff1b4
-+  __TEXT.__realtime: 0x38c48
-   __TEXT.__objc_methlist: 0x3c94
-   __TEXT.__const: 0x2462a
-   __TEXT.__dlopen_cstrs: 0x50a
--  __TEXT.__gcc_except_tab: 0x26e80
--  __TEXT.__cstring: 0x21367
--  __TEXT.__oslogstring: 0x1565e
-+  __TEXT.__gcc_except_tab: 0x26f24
-+  __TEXT.__cstring: 0x21378
-+  __TEXT.__oslogstring: 0x156be
-   __TEXT.__dof_AudioTool: 0x4f1
-   __TEXT.__dof_AUHosting: 0x432
-   __TEXT.__dof_AudioConv: 0x129e
-   __TEXT.__dof_AUHostin0: 0x4a9
-   __TEXT.__dof_IPCAudioU: 0x582
--  __TEXT.__unwind_info: 0xf800
-+  __TEXT.__unwind_info: 0xf808
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x90b0
-+  __DATA_CONST.__const: 0x90e0
-   __DATA_CONST.__objc_classlist: 0x228
-   __DATA_CONST.__objc_protolist: 0xc8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1cf8
-+  __DATA_CONST.__objc_selrefs: 0x1d00
-   __DATA_CONST.__objc_protorefs: 0x70
-   __DATA_CONST.__objc_superrefs: 0x1e0
-   __DATA_CONST.__objc_arraydata: 0x70
-   __DATA_CONST.__got: 0x5d8
--  __AUTH_CONST.__const: 0x1bae8
--  __AUTH_CONST.__cfstring: 0x8680
-+  __AUTH_CONST.__const: 0x1bb08
-+  __AUTH_CONST.__cfstring: 0x86a0
-   __AUTH_CONST.__objc_const: 0x6980
-   __AUTH_CONST.__weak_auth_got: 0x40
-   __AUTH_CONST.__objc_arrayobj: 0x60
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libxml2.2.dylib
 -  Functions: 12166
--  Symbols:   20188
+-  Symbols:   19458
 -  CStrings:  6770
 +  Functions: 12167
-+  Symbols:   20192
++  Symbols:   19461
 +  CStrings:  6772
- 
 Symbols:
 + GCC_except_table10000
 + GCC_except_table10009
@@ -985,7 +955,6 @@ Symbols:
 + __Z25AudioConverterNewInternalPK27AudioStreamBasicDescriptionS1_jPK21AudioClassDescriptionPP20OpaqueAudioConverterPFP17AudioConverterAPIS1_S1_jS4_jEjNSt3__18optionalIjEEb
 + _kLoudnessInfoDictionary_ContentTypeKey
 + _kLoudnessInfoDictionary_LibraryLoudnessKey
-+ _objc_msgSend$beginExtensionRequestWithOptions:inputItems:error:
 - GCC_except_table10007
 - GCC_except_table10010
 - GCC_except_table10019

@@ -2,90 +2,43 @@
 
 > `/System/Library/VideoProcessors/NRFV4.bundle/NRFV4`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2d6e08` | `0x2e1444` | **`+0xa63c`** |
+| `__TEXT.__cstring` | `0x5d201` | `0x5ec62` | **`+0x1a61`** |
+| `__AUTH_CONST.__objc_const` | `0x3a068` | `0x3b168` | **`+0x1100`** |
+| `__DATA_CONST.__got` | `0x0` | `0xf00` | **`+0xf00`** |
+| `__AUTH_CONST.__cfstring` | `0x13a40` | `0x148c0` | **`+0xe80`** |
+| `__TEXT.__objc_methlist` | `0x128e8` | `0x12e78` | **`+0x590`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6c20` | `0x6f00` | **`+0x2e0`** |
+| `__DATA_DIRTY.__objc_data` | `0x81b0` | `0x83e0` | **`+0x230`** |
+| `__DATA.__objc_ivar` | `0x3db4` | `0x3f38` | **`+0x184`** |
+| `__AUTH.__objc_data` | `0xa50` | `0x910` | **`-0x140`** |
+| `__TEXT.__unwind_info` | `0x55e0` | `0x5708` | **`+0x128`** |
+| `__TEXT.__oslogstring` | `0x4424f` | `0x442ad` | **`+0x5e`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0xc60` | `0xc30` | **`-0x30`** |
+| `__TEXT.__const` | `0x1031a8` | `0x1031d8` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0x980` | `0x9a0` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0xe00` | `0xe18` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0xad0` | `0xae8` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x868` | `0x860` | **`-0x8`** |
+| `__DATA_CONST.__const` | `0x14e8` | `0x14f0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2d6e08
--  __TEXT.__objc_methlist: 0x128e8
--  __TEXT.__const: 0x1031a8
--  __TEXT.__cstring: 0x5d201
-+  __TEXT.__text: 0x2e1444
-+  __TEXT.__objc_methlist: 0x12e78
-+  __TEXT.__const: 0x1031d8
-+  __TEXT.__cstring: 0x5ec62
-   __TEXT.__gcc_except_tab: 0x1cd8
--  __TEXT.__oslogstring: 0x4424f
-+  __TEXT.__oslogstring: 0x442ad
-   __TEXT.__dlopen_cstrs: 0x10c
--  __TEXT.__unwind_info: 0x55e0
-+  __TEXT.__unwind_info: 0x5708
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x14e8
--  __DATA_CONST.__objc_classlist: 0xe00
-+  __DATA_CONST.__const: 0x14f0
-+  __DATA_CONST.__objc_classlist: 0xe18
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x108
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6c20
-+  __DATA_CONST.__objc_selrefs: 0x6f00
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0xad0
-+  __DATA_CONST.__objc_superrefs: 0xae8
-   __DATA_CONST.__objc_arraydata: 0xf08
--  __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x980
--  __AUTH_CONST.__cfstring: 0x13a40
--  __AUTH_CONST.__objc_const: 0x3a068
-+  __DATA_CONST.__got: 0xf00
-+  __AUTH_CONST.__const: 0x9a0
-+  __AUTH_CONST.__cfstring: 0x148c0
-+  __AUTH_CONST.__objc_const: 0x3b168
-   __AUTH_CONST.__objc_doubleobj: 0xa0
--  __AUTH_CONST.__objc_arrayobj: 0xc60
-+  __AUTH_CONST.__objc_arrayobj: 0xc30
-   __AUTH_CONST.__objc_intobj: 0xa08
-   __AUTH_CONST.__objc_floatobj: 0x90
-   __AUTH_CONST.__objc_dictobj: 0x500
--  __AUTH_CONST.__auth_got: 0x868
--  __AUTH.__objc_data: 0xa50
--  __DATA.__objc_ivar: 0x3db4
-+  __AUTH_CONST.__auth_got: 0x860
-+  __AUTH.__objc_data: 0x910
-+  __DATA.__objc_ivar: 0x3f38
-   __DATA.__data: 0xc68
-   __DATA.__common: 0x50
-   __DATA.__bss: 0x28
--  __DATA_DIRTY.__objc_data: 0x81b0
-+  __DATA_DIRTY.__objc_data: 0x83e0
-   __DATA_DIRTY.__bss: 0x178
-   __DATA_DIRTY.__common: 0x128
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+-753.0.0.122.3
++758.0.0.122.2
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 15301
--  Symbols:   45849
--  CStrings:  16496
+-  Symbols:   14397
+-  CStrings:  13983
 +  Functions: 15543
-+  Symbols:   46543
-+  CStrings:  16834
- 
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __DATA.__data : content changed
++  Symbols:   14627
++  CStrings:  14205
 Symbols:
 + +[CMIRawNightModeLKTFlow _computeScalingFactor:dst_tex:scale_xy_inv:coeff:]
 + -[CMIRawNightModeLKTBlending .cxx_destruct]
@@ -331,89 +284,6 @@ Symbols:
 + __OBJC_METACLASS_RO_$_CMIRawNightModeLKTRegistrationTuningParams
 + ___114-[CMIRawNightModeRegistrationStage processRegWarpLKTNonReference:reference:nonRefLumaTex:shiftMap:blendingWeight:]_block_invoke
 + _kNRF_LFType_LF12
-+ _objc_msgSend$_allocateGuidePyramidIfNeeded
-+ _objc_msgSend$_allocateTransientStorage
-+ _objc_msgSend$_computeFeaturesDerivativesWithCommandBuffer:in_tex:out_tex:
-+ _objc_msgSend$_computeFeaturesWithCommandBuffer:in_tex:out_tex:
-+ _objc_msgSend$_computeOpticalFlowBidirectional
-+ _objc_msgSend$_computeScalingFactor:dst_tex:scale_xy_inv:coeff:
-+ _objc_msgSend$_createGuidePyramidWithCommandBuffer:in_tex:J_idx:
-+ _objc_msgSend$_createImagePyramidWithCommandBuffer:in_tex:I_idx:
-+ _objc_msgSend$_doSolverWithCommandBuffer:scale:in_uv_tex:in_G0_tex:in_G1_tex:in_C0_tex:in_C1_tex:out_uv_tex:out_w_tex:
-+ _objc_msgSend$_downscale2XWithCommandBuffer:in_tex:out_tex:
-+ _objc_msgSend$_encodeApplyLTMLumaEdgeGuideOnCmdBuffer:inLuma:outLuma:ltc:gtcFinal:ltmROI:ccm:scaleInput:ltmHardGain:
-+ _objc_msgSend$_encodeBlendingDecisionBilateralOnCmdBuffer:nccG:nccD:guide:out:denseThreshold:smoothstepLow:smoothstepHigh:sigmaSpatial:sigmaRange:halfWindow:
-+ _objc_msgSend$_encodeBlendingDecisionOnCmdBuffer:nccG:nccD:out:denseThreshold:smoothstepLow:smoothstepHigh:
-+ _objc_msgSend$_encodeBoxDownscaleOnCmdBuffer:inTex:outTex:
-+ _objc_msgSend$_encodeFlowToResidualShiftOnCmdBuffer:inFlow:outShift:homography:fullSize:
-+ _objc_msgSend$_encodePatchNCCOnCmdBuffer:texA:texB:outNCC:
-+ _objc_msgSend$_encodeWarpByFlowOnCmdBuffer:inLuma:inFlow:outLuma:
-+ _objc_msgSend$_encodeWarpByHomographyOnCmdBuffer:inLuma:hom:outLuma:
-+ _objc_msgSend$_enqueueFlowConsistencyWithCommandBuffer:in_uv0_tex:in_uv1_tex:out_uv_tex:
-+ _objc_msgSend$_enqueueFlowPostFilterWithCommandBuffer:in_flow:in_conf:in_guide:out_flow:
-+ _objc_msgSend$_enqueueFlowPostFilterYUVWithCommandBuffer:in_flow:in_conf:in_guide:out_flow:
-+ _objc_msgSend$_getUseNominalCCMFromPreviewEnabledForFrame:enabled:
-+ _objc_msgSend$_newAllocatorTextureWithLabel:width:height:pixelFormat:
-+ _objc_msgSend$_newScratchTextureWithLabel:width:height:pixelFormat:
-+ _objc_msgSend$_processReferenceForHybridLKT:gain:
-+ _objc_msgSend$_releaseGuidePyramid
-+ _objc_msgSend$_releaseInternalScratches
-+ _objc_msgSend$_releaseUserRefOutputs
-+ _objc_msgSend$_resolveSizesFromInput:height:
-+ _objc_msgSend$_setDefaultParameters
-+ _objc_msgSend$_setupPipelines
-+ _objc_msgSend$_zeroFlowWithCommandBuffer:uv_tex:
-+ _objc_msgSend$applyLTMToEdgeGuide
-+ _objc_msgSend$blackSpotMaskEnabled
-+ _objc_msgSend$correctDefectPixels
-+ _objc_msgSend$encodeGammaPrepassOnCmdBuffer:inLuma:outLuma:gamma:
-+ _objc_msgSend$encodeGammaPrepassRGBOnCmdBuffer:inRGB:outRGB:gamma:
-+ _objc_msgSend$encodeLCBDemosaicYRGBOnCmdBuffer:inBayer:firstPixel:outYRGB:
-+ _objc_msgSend$encodeRGBToYUVAOnCmdBuffer:inRGB:outYUVA:
-+ _objc_msgSend$encodeRevertLSCOnCmdBuffer:inLuma:lscGains:lscParams:outLuma:
-+ _objc_msgSend$encodeRevertLSCRGBOnCmdBuffer:inRGB:lscGains:lscParams:outRGB:
-+ _objc_msgSend$encodeYRGBToRGBAOnCmdBuffer:inYRGB:outRGBA:gain:
-+ _objc_msgSend$estimateFlowFromReference:target:
-+ _objc_msgSend$estimateFlowFromReference:target:refGuide:targetGuide:
-+ _objc_msgSend$extractLSCMetadataFromFrame:
-+ _objc_msgSend$filterType
-+ _objc_msgSend$flowPostFilterEnabled
-+ _objc_msgSend$flowPostFilterSigmaChroma
-+ _objc_msgSend$flowPostFilterSigmaColor
-+ _objc_msgSend$flowPostFilterSigmaConf
-+ _objc_msgSend$flowPostFilterUseLCBDemosaic
-+ _objc_msgSend$flowPostFilterYUVEnabled
-+ _objc_msgSend$lastPathComponent
-+ _objc_msgSend$lastScale
-+ _objc_msgSend$lumaGamma
-+ _objc_msgSend$lumaGammaEnabled
-+ _objc_msgSend$nccBand
-+ _objc_msgSend$nccDenseThreshold
-+ _objc_msgSend$nscales
-+ _objc_msgSend$nwarpings
-+ _objc_msgSend$processRegWarpLKTNonReference:reference:nonRefLumaTex:shiftMap:blendingWeight:
-+ _objc_msgSend$revertLSC
-+ _objc_msgSend$runFallbackBlendingOnCommandBuffer:shiftMap:blendingWeight:
-+ _objc_msgSend$runWithCommandBuffer:refLuma:nonRefLuma:lktFlow:homography:fullSize:nccBand:nccDenseThreshold:smoothstepLow:smoothstepHigh:filterType:sigmaSpatial:sigmaRange:toneMappingCurves:ltmROI:ccm:scaleInput:ltmHardGain:shiftMap:blendingWeight:
-+ _objc_msgSend$scanInteger:
-+ _objc_msgSend$scanString:intoString:
-+ _objc_msgSend$setBlackSpotMaskEnabled:
-+ _objc_msgSend$setCorrectDefectPixels:
-+ _objc_msgSend$setFlowPostFilterEnabled:
-+ _objc_msgSend$setFlowPostFilterSigmaChroma:
-+ _objc_msgSend$setFlowPostFilterSigmaColor:
-+ _objc_msgSend$setFlowPostFilterSigmaConf:
-+ _objc_msgSend$setFlowPostFilterYUVEnabled:
-+ _objc_msgSend$setLastScale:
-+ _objc_msgSend$setLfType:
-+ _objc_msgSend$setLktTuningParams:
-+ _objc_msgSend$setNscales:
-+ _objc_msgSend$setNwarpings:
-+ _objc_msgSend$sigmaRange
-+ _objc_msgSend$sigmaSpatial
-+ _objc_msgSend$smoothstepHigh
-+ _objc_msgSend$smoothstepLow
-+ _objc_msgSend$uv_fwd
 - -[LearnedDemosaicNetworkShared recoveryYUVImage]
 - -[LearnedDemosaicNetworkShared setRecoveryYUVImage:]
 - -[LearnedDemosaicNetworkStage defectCorrectionEITRatio]
@@ -427,11 +297,6 @@ Symbols:
 - _OBJC_IVAR_$_LearnedDemosaicNetworkStage._recoveryYUVImage
 - _OBJC_IVAR_$_LearnedFusionProcessor._proxySyntheticReferenceTextureYUV
 - _kFigCaptureSampleBufferAttachmentKey_SyntheticReferencePixelBuffer
-- _objc_msgSend$defectCorrectionEITRatio
-- _objc_msgSend$extractLSCMetadataFromReferenceFrame:
-- _objc_msgSend$recoveryYUVImage
-- _objc_msgSend$setDefectCorrectionEITRatio:
-- _objc_msgSend$setRecoveryYUVImage:
 - _objc_release_x11
 CStrings:
 + "(dst_tex.width == src_tex.width) && (dst_tex.height == src_tex.height)"
@@ -692,5 +557,4 @@ CStrings:
 - "referenceFrame.lscGainsTex"
 - "referenceFrame.lscGainsTex is NULL"
 - "\xf0\xf0\xf0q"
-
 ```

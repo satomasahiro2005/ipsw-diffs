@@ -2,6 +2,8 @@
 
 > `/System/Library/PreferenceBundles/AccountSettings/icloudCalendarSettings.bundle/icloudCalendarSettings`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_3 : 28 -> 12

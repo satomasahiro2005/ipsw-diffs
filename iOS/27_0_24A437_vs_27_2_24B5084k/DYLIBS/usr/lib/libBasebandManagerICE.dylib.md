@@ -2,80 +2,42 @@
 
 > `/usr/lib/libBasebandManagerICE.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x28ff40` | `0x29b18c` | **`+0xb24c`** |
+| `__TEXT.__gcc_except_tab` | `0x3c038` | `0x3d134` | **`+0x10fc`** |
+| `__TEXT.__cstring` | `0x8ae2` | `0x8e5a` | **`+0x378`** |
+| `__TEXT.__oslogstring` | `0x102fb` | `0x10524` | **`+0x229`** |
+| `__TEXT.__unwind_info` | `0xb160` | `0xb2e0` | **`+0x180`** |
+| `__TEXT.__const` | `0x148c0` | `0x149d0` | **`+0x110`** |
+| `__DATA_CONST.__const` | `0x2238` | `0x22b8` | **`+0x80`** |
+| `__AUTH_CONST.__const` | `0x11698` | `0x11708` | **`+0x70`** |
+| `__AUTH_CONST.__auth_got` | `0x1c38` | `0x1c90` | **`+0x58`** |
+| `__DATA_DIRTY.__data` | `0x5e0` | `0x638` | **`+0x58`** |
+| `__DATA.__data` | `0x604` | `0x658` | **`+0x54`** |
+| `__AUTH_CONST.__cfstring` | `0xb20` | `0xb60` | **`+0x40`** |
+| `__DATA.__common` | `0x9` | `0x49` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x2350` | `0x2380` | **`+0x30`** |
+| `__DATA_DIRTY.__bss` | `0x16a2` | `0x16d2` | **`+0x30`** |
+| `__TEXT.__init_offsets` | `0x168` | `0x17c` | **`+0x14`** |
+| `__DATA_CONST.__weak_got` | `0x158` | `0x168` | **`+0x10`** |
+| `__DATA_DIRTY.__common` | `0xd0` | `0xd8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1585.0.0.0.0
--  __TEXT.__text: 0x28ad94
 +1594.0.0.0.0
-+  __TEXT.__text: 0x295e3c
-   __TEXT.__lazy_helpers: 0x63c
--  __TEXT.__init_offsets: 0x168
-+  __TEXT.__init_offsets: 0x17c
-   __TEXT.__objc_methlist: 0x95c
--  __TEXT.__const: 0x148c0
-+  __TEXT.__const: 0x149d0
-   __TEXT.__dlopen_cstrs: 0x52
--  __TEXT.__gcc_except_tab: 0x3c038
--  __TEXT.__oslogstring: 0x102fb
--  __TEXT.__cstring: 0x8ae2
--  __TEXT.__unwind_info: 0xb9b8
-+  __TEXT.__gcc_except_tab: 0x3d134
-+  __TEXT.__oslogstring: 0x10524
-+  __TEXT.__cstring: 0x8e5a
-+  __TEXT.__unwind_info: 0xbb30
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2238
-+  __DATA_CONST.__const: 0x22b8
-   __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__weak_got: 0x158
-+  __DATA_CONST.__weak_got: 0x168
-   __DATA_CONST.__objc_selrefs: 0xa00
-   __DATA_CONST.__objc_superrefs: 0x48
--  __DATA_CONST.__got: 0x2350
--  __AUTH_CONST.__const: 0x11698
--  __AUTH_CONST.__cfstring: 0xb20
-+  __DATA_CONST.__got: 0x2380
-+  __AUTH_CONST.__const: 0x11708
-+  __AUTH_CONST.__cfstring: 0xb60
-   __AUTH_CONST.__objc_const: 0x13a0
-   __AUTH_CONST.__weak_auth_got: 0x20
-   __AUTH_CONST.__lazy_load_got: 0x98
-   __AUTH_CONST.__objc_intobj: 0x18
--  __AUTH_CONST.__auth_got: 0x1c38
-+  __AUTH_CONST.__auth_got: 0x1c90
-   __AUTH.__objc_data: 0x280
-   __DATA.__objc_ivar: 0x100
--  __DATA.__data: 0x604
--  __DATA.__common: 0x9
-+  __DATA.__data: 0x658
-+  __DATA.__common: 0x49
-   __DATA_DIRTY.__objc_data: 0xf0
--  __DATA_DIRTY.__data: 0x5e0
--  __DATA_DIRTY.__common: 0xd0
--  __DATA_DIRTY.__bss: 0x16a2
-+  __DATA_DIRTY.__data: 0x638
-+  __DATA_DIRTY.__common: 0xd8
-+  __DATA_DIRTY.__bss: 0x16d2
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CallKit.framework/CallKit
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libprotobuf-lite.dylib
-   - /usr/lib/libprotobuf.dylib
 -  Functions: 7140
--  Symbols:   12707
+-  Symbols:   12452
 -  CStrings:  2942
 +  Functions: 7167
-+  Symbols:   12762
++  Symbols:   12507
 +  CStrings:  2988
- 
 Symbols:
 + GCC_except_table282
 + GCC_except_table316

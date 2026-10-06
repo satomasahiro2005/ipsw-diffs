@@ -2,115 +2,73 @@
 
 > `/System/Library/AccessibilityBundles/ZoomWindow.axuiservice/ZoomWindow`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_reflstr`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__gcc_except_tab`
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6bcdc` | `0x6cacc` | **`+0xdf0`** |
+| `__TEXT.__swift5_typeref` | `0x2da0` | `0x30ea` | **`+0x34a`** |
+| `__TEXT.__oslogstring` | `0x975` | `0xb4c` | **`+0x1d7`** |
+| `__TEXT.__const` | `0x1fc0` | `0x20d0` | **`+0x110`** |
+| `__DATA.__bss` | `0xf30` | `0x1030` | **`+0x100`** |
+| `__TEXT.__cstring` | `0x2617` | `0x26d8` | **`+0xc1`** |
+| `__TEXT.__objc_methname` | `0x1149b` | `0x1153b` | **`+0xa0`** |
+| `__TEXT.__objc_stubs` | `0xbd20` | `0xbdc0` | **`+0xa0`** |
+| `__DATA_CONST.__cfstring` | `0x1880` | `0x1900` | **`+0x80`** |
+| `__TEXT.__auth_stubs` | `0x2260` | `0x22d0` | **`+0x70`** |
+| `__TEXT.__objc_methlist` | `0x4d90` | `0x4de8` | **`+0x58`** |
+| `__DATA_CONST.__const` | `0x1820` | `0x1870` | **`+0x50`** |
+| `__DATA_CONST.__auth_got` | `0x1140` | `0x1178` | **`+0x38`** |
+| `__DATA.__objc_selrefs` | `0x3890` | `0x38b8` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x1a80` | `0x1aa8` | **`+0x28`** |
+| `__TEXT.__objc_methtype` | `0x3a81` | `0x3a5a` | **`-0x27`** |
+| `__TEXT.__swift5_assocty` | `0x188` | `0x1a0` | **`+0x18`** |
+| `__DATA.__data` | `0x1b10` | `0x1b20` | **`+0x10`** |
+| `__DATA.__objc_const` | `0x79e0` | `0x79f0` | **`+0x10`** |
+| `__DATA_CONST.__auth_ptr` | `0x630` | `0x640` | **`+0x10`** |
+| `__TEXT.__constg_swiftt` | `0xd50` | `0xd5c` | **`+0xc`** |
+| `__TEXT.__eh_frame` | `0x420` | `0x418` | **`-0x8`** |
+| `__TEXT.__swift5_proto` | `0x64` | `0x6c` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA.__objc_ivar`
+- `__DATA.__objc_stublist`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_ivar`
-- `__DATA.__objc_data`
-- `__DATA.__objc_stublist`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_reflstr`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -909.1.0.0.0
--  __TEXT.__text: 0x69a84
--  __TEXT.__auth_stubs: 0x2260
--  __TEXT.__objc_stubs: 0xbd20
--  __TEXT.__objc_methlist: 0x4d90
--  __TEXT.__const: 0x1fc0
--  __TEXT.__objc_methname: 0x1149b
 +913.3.0.0.0
-+  __TEXT.__text: 0x6a838
-+  __TEXT.__auth_stubs: 0x22d0
-+  __TEXT.__objc_stubs: 0xbdc0
-+  __TEXT.__objc_methlist: 0x4de8
-+  __TEXT.__const: 0x20d0
-+  __TEXT.__objc_methname: 0x1153b
-   __TEXT.__objc_classname: 0x93a
--  __TEXT.__objc_methtype: 0x3a81
--  __TEXT.__constg_swiftt: 0xd50
--  __TEXT.__swift5_typeref: 0x2da0
-+  __TEXT.__objc_methtype: 0x3a5a
-+  __TEXT.__constg_swiftt: 0xd5c
-+  __TEXT.__swift5_typeref: 0x30ea
-   __TEXT.__swift5_fieldmd: 0x5f8
-   __TEXT.__swift5_reflstr: 0x632
-   __TEXT.__swift5_builtin: 0x64
--  __TEXT.__swift5_assocty: 0x188
--  __TEXT.__oslogstring: 0x975
--  __TEXT.__cstring: 0x2617
-+  __TEXT.__swift5_assocty: 0x1a0
-+  __TEXT.__oslogstring: 0xb4c
-+  __TEXT.__cstring: 0x26d8
-   __TEXT.__swift5_capture: 0x240
--  __TEXT.__swift5_proto: 0x64
-+  __TEXT.__swift5_proto: 0x6c
-   __TEXT.__swift5_types: 0x74
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift_as_entry: 0xc
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x10
-   __TEXT.__gcc_except_tab: 0x8c0
--  __TEXT.__unwind_info: 0x1f30
--  __TEXT.__eh_frame: 0x420
--  __DATA_CONST.__const: 0x1820
--  __DATA_CONST.__cfstring: 0x1880
-+  __TEXT.__unwind_info: 0x1f50
-+  __TEXT.__eh_frame: 0x418
-+  __DATA_CONST.__const: 0x1870
-+  __DATA_CONST.__cfstring: 0x1900
-   __DATA_CONST.__objc_classlist: 0x178
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x118
 
-   __DATA_CONST.__objc_arrayobj: 0xd8
-   __DATA_CONST.__objc_dictobj: 0x50
-   __DATA_CONST.__objc_doubleobj: 0x30
--  __DATA_CONST.__auth_got: 0x1140
-+  __DATA_CONST.__auth_got: 0x1178
-   __DATA_CONST.__got: 0x960
--  __DATA_CONST.__auth_ptr: 0x630
--  __DATA.__objc_const: 0x79e0
--  __DATA.__objc_selrefs: 0x3890
-+  __DATA_CONST.__auth_ptr: 0x640
-+  __DATA.__objc_const: 0x79f0
-+  __DATA.__objc_selrefs: 0x38b8
-   __DATA.__objc_ivar: 0x6a4
-   __DATA.__objc_data: 0x19d0
--  __DATA.__data: 0x1b10
-+  __DATA.__data: 0x1b20
-   __DATA.__objc_stublist: 0x10
-   __DATA.__common: 0x28
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2548
 -  Symbols:   5007
 -  CStrings:  3290
 +  Functions: 2562
 +  Symbols:   5028
 +  CStrings:  3307
- 
 Symbols:
 + -[ZOTFullscreenEventHandler currentDisplayID]
 + -[ZOTFullscreenEventHandler setCurrentDisplayID:]

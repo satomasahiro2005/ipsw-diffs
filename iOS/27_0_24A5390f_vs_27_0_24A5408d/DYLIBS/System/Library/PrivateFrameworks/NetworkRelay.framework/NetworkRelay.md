@@ -2,69 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/NetworkRelay.framework/NetworkRelay`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x79568` | `0x7b824` | **`+0x22bc`** |
+| `__TEXT.__cstring` | `0x10178` | `0x104d4` | **`+0x35c`** |
+| `__AUTH_CONST.__cfstring` | `0x5140` | `0x51e0` | **`+0xa0`** |
+| `__AUTH_CONST.__objc_const` | `0x5170` | `0x5200` | **`+0x90`** |
+| `__TEXT.__objc_methlist` | `0x1f64` | `0x1fc4` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0xd18` | `0xd70` | **`+0x58`** |
+| `__DATA_CONST.__objc_selrefs` | `0x10b8` | `0x10e0` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x9f8` | `0xa10` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x554` | `0x560` | **`+0xc`** |
+| `__DATA.__bss` | `0x268` | `0x270` | **`+0x8`** |
+| `__DATA_DIRTY.__bss` | `0xf8` | `0xf0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -914.0.22.0.1
--  __TEXT.__text: 0x79568
--  __TEXT.__objc_methlist: 0x1f64
 +914.0.34.0.4
-+  __TEXT.__text: 0x7b824
-+  __TEXT.__objc_methlist: 0x1fc4
-   __TEXT.__const: 0x240
-   __TEXT.__gcc_except_tab: 0xb60
--  __TEXT.__cstring: 0x10178
-+  __TEXT.__cstring: 0x104d4
-   __TEXT.__oslogstring: 0x13a9
--  __TEXT.__unwind_info: 0x9f8
-+  __TEXT.__unwind_info: 0xa10
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xd18
-+  __DATA_CONST.__const: 0xd70
-   __DATA_CONST.__objc_classlist: 0x130
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x10b8
-+  __DATA_CONST.__objc_selrefs: 0x10e0
-   __DATA_CONST.__objc_superrefs: 0x130
-   __DATA_CONST.__objc_arraydata: 0x1f8
-   __DATA_CONST.__got: 0x280
-   __AUTH_CONST.__const: 0x630
--  __AUTH_CONST.__cfstring: 0x5140
--  __AUTH_CONST.__objc_const: 0x5170
-+  __AUTH_CONST.__cfstring: 0x51e0
-+  __AUTH_CONST.__objc_const: 0x5200
-   __AUTH_CONST.__objc_intobj: 0x2d0
-   __AUTH_CONST.__objc_arrayobj: 0x120
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__auth_got: 0x7a0
--  __DATA.__objc_ivar: 0x554
-+  __DATA.__objc_ivar: 0x560
-   __DATA.__data: 0x1f8
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x268
-+  __DATA.__bss: 0x270
-   __DATA_DIRTY.__objc_data: 0xbe0
-   __DATA_DIRTY.__data: 0x20
--  __DATA_DIRTY.__bss: 0xf8
-+  __DATA_DIRTY.__bss: 0xf0
-   __DATA_DIRTY.__common: 0x2
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /System/Library/PrivateFrameworks/CoreWiFi.framework/CoreWiFi
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1048
--  Symbols:   2647
+-  Symbols:   2265
 -  CStrings:  1974
 +  Functions: 1064
-+  Symbols:   2673
++  Symbols:   2287
 +  CStrings:  1997
- 
 Symbols:
 + -[NRDeviceInfo deviceType]
 + -[NRDeviceInfo isEnabled]
@@ -112,10 +78,6 @@ Symbols:
 + _nrXPCKeyAllDevices
 + _nrXPCRegisterMesh
 + _nrXPCUnregisterMesh
-+ _objc_msgSend$dataWithBytes:length:
-+ _objc_msgSend$setIsEnabled:
-+ _objc_msgSend$unarchivedObjectOfClasses:fromData:error:
-+ _objc_msgSend$unregisterMesh:queue:completionBlock:
 - GCC_except_table450
 - GCC_except_table461
 - GCC_except_table697

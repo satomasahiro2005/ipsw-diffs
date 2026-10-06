@@ -2,46 +2,35 @@
 
 > `com.apple.driver.AppleSmartBatteryManagerEmbedded`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x303ec` | `0x301dc` | **`-0x210`** |
+| `__TEXT.__cstring` | `0x7d34` | `0x7b68` | **`-0x1cc`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__cstring: 0x7d34
-+  __TEXT.__cstring: 0x7b68
-   __TEXT.__const: 0x2410
-   __TEXT.__os_log: 0x2937
--  __TEXT_EXEC.__text: 0x303ec
-+  __TEXT_EXEC.__text: 0x301dc
-   __TEXT_EXEC.__auth_stubs: 0x7a0
-   __DATA.__data: 0x1f0
-   __DATA.__common: 0x3c0
+-2041.0.0.502.1
++2043.0.13.502.1
 
-   __DATA_CONST.__got: 0x100
-   Functions: 689
-   Symbols:   0
 -  CStrings:  1253
 +  CStrings:  1247
- 
-Sections:
-~ __DATA.__data : content changed
-~ __DATA_CONST.__mod_init_func : content changed
-~ __DATA_CONST.__mod_term_func : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__kalloc_type : content changed
-~ __DATA_CONST.__kalloc_var : content changed
-~ __DATA_CONST.__auth_got : content changed
-~ __DATA_CONST.__got : content changed
 Functions:
-~ sub_fffffe0009723c4c -> sub_fffffe0009723fbc : 328 -> 164
-~ sub_fffffe0009723d94 -> sub_fffffe0009724060 : 328 -> 164
-~ sub_fffffe00097264c4 -> sub_fffffe00097266ec : 168 -> 176
-~ sub_fffffe0009729e98 -> sub_fffffe000972a0c8 : 932 -> 940
-~ sub_fffffe000972d2e0 -> sub_fffffe000972d518 : 396 -> 444
-~ sub_fffffe0009730840 -> sub_fffffe0009730aa8 : 2112 -> 2120
-~ sub_fffffe000973f4b0 -> sub_fffffe000973f720 : 344 -> 336
-~ sub_fffffe000974afbc -> sub_fffffe000974b224 : 344 -> 176
-~ sub_fffffe000974caf0 -> sub_fffffe000974ccb0 : 180 -> 188
-~ sub_fffffe000974cdb0 -> sub_fffffe000974cf78 : 328 -> 164
-~ sub_fffffe000974d25c -> sub_fffffe000974d380 : 804 -> 860
-~ sub_fffffe000974d7cc -> sub_fffffe000974d928 : 132 -> 136
+~ sub_fffffff009722f4c -> sub_fffffff0097239dc : 328 -> 164
+~ sub_fffffff009723094 -> sub_fffffff009723a80 : 328 -> 164
+~ sub_fffffff0097257c4 -> sub_fffffff00972610c : 168 -> 176
+~ sub_fffffff009729198 -> sub_fffffff009729ae8 : 932 -> 940
+~ sub_fffffff00972c5e0 -> sub_fffffff00972cf38 : 396 -> 444
+~ sub_fffffff00972fb40 -> sub_fffffff0097304c8 : 2112 -> 2120
+~ sub_fffffff00973e7b0 -> sub_fffffff00973f140 : 344 -> 336
+~ sub_fffffff00974a2bc -> sub_fffffff00974ac44 : 344 -> 176
+~ sub_fffffff00974bdf0 -> sub_fffffff00974c6d0 : 180 -> 188
+~ sub_fffffff00974c0b0 -> sub_fffffff00974c998 : 328 -> 164
+~ sub_fffffff00974c55c -> sub_fffffff00974cda0 : 804 -> 860
+~ sub_fffffff00974cacc -> sub_fffffff00974d348 : 132 -> 136
 CStrings:
 + "1211111212221212112121212"
 - "121111121222121211212112"
@@ -51,5 +40,4 @@ CStrings:
 - "AppleSmartBatteryPack: DBG: ID: %d WriteSMCKey attempt %lu/%u"
 - "AppleSmartBatteryPack: ID: %d failed to read key '%c%c%c%c' retry:%zu rc:%#x=%s\n"
 - "AppleSmartBatteryPack: ID: %d failed to write key '%c%c%c%c', retry:%zu\n"
-
 ```

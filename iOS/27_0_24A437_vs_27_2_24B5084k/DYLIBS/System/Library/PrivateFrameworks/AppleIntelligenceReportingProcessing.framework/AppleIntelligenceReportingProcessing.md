@@ -2,96 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/AppleIntelligenceReportingProcessing.framework/AppleIntelligenceReportingProcessing`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x100524` | `0x119278` | **`+0x18d54`** |
+| `__DATA.__bss` | `0x6830` | `0x8130` | **`+0x1900`** |
+| `__AUTH_CONST.__const` | `0x9298` | `0xa9d0` | **`+0x1738`** |
+| `__TEXT.__const` | `0x8278` | `0x9446` | **`+0x11ce`** |
+| `__TEXT.__eh_frame` | `0x5c60` | `0x6cb8` | **`+0x1058`** |
+| `__TEXT.__oslogstring` | `0x511e` | `0x603e` | **`+0xf20`** |
+| `__TEXT.__unwind_info` | `0x37d8` | `0x3da8` | **`+0x5d0`** |
+| `__TEXT.__swift5_fieldmd` | `0x3130` | `0x36c0` | **`+0x590`** |
+| `__TEXT.__swift5_capture` | `0x236c` | `0x283c` | **`+0x4d0`** |
+| `__TEXT.__swift5_typeref` | `0x28a6` | `0x2cc3` | **`+0x41d`** |
+| `__TEXT.__constg_swiftt` | `0x20a0` | `0x243c` | **`+0x39c`** |
+| `__TEXT.__swift5_reflstr` | `0x2de5` | `0x313d` | **`+0x358`** |
+| `__AUTH_CONST.__cfstring` | `0x7e0` | `0xb20` | **`+0x340`** |
+| `__TEXT.__cstring` | `0x4e93` | `0x5173` | **`+0x2e0`** |
+| `__AUTH.__data` | `0x1110` | `0x13a0` | **`+0x290`** |
+| `__DATA.__data` | `0x1120` | `0x1388` | **`+0x268`** |
+| `__AUTH_CONST.__objc_const` | `0x1820` | `0x19a0` | **`+0x180`** |
+| `__TEXT.__swift5_proto` | `0x3e8` | `0x4bc` | **`+0xd4`** |
+| `__AUTH_CONST.__auth_got` | `0x1a48` | `0x1b00` | **`+0xb8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa00` | `0xaa8` | **`+0xa8`** |
+| `__TEXT.__swift_as_cont` | `0x204` | `0x294` | **`+0x90`** |
+| `__TEXT.__swift_as_ret` | `0x134` | `0x1a4` | **`+0x70`** |
+| `__TEXT.__swift_as_entry` | `0xec` | `0x154` | **`+0x68`** |
+| `__TEXT.__swift5_types` | `0x1dc` | `0x238` | **`+0x5c`** |
+| `__TEXT.__swift5_assocty` | `0x1c8` | `0x1f8` | **`+0x30`** |
+| `__TEXT.__swift5_builtin` | `0x28` | `0x3c` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x90` | `0xa0` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `0x48` | `0x54` | **`+0xc`** |
+| `__TEXT.__swift5_mpenum` | `0x8` | `0x10` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -232.2.1.0.0
--  __TEXT.__text: 0xf6f8c
--  __TEXT.__const: 0x8278
--  __TEXT.__swift5_typeref: 0x28a6
--  __TEXT.__cstring: 0x4e93
--  __TEXT.__oslogstring: 0x511e
--  __TEXT.__swift5_reflstr: 0x2de5
--  __TEXT.__swift5_assocty: 0x1c8
--  __TEXT.__swift5_fieldmd: 0x3130
--  __TEXT.__constg_swiftt: 0x20a0
--  __TEXT.__swift5_builtin: 0x28
--  __TEXT.__swift5_protos: 0x48
--  __TEXT.__swift5_proto: 0x3e8
--  __TEXT.__swift5_types: 0x1dc
--  __TEXT.__swift_as_entry: 0xec
--  __TEXT.__swift_as_ret: 0x134
--  __TEXT.__swift_as_cont: 0x204
--  __TEXT.__swift5_capture: 0x236c
--  __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x4530
--  __TEXT.__eh_frame: 0x5c68
 +232.40.11.0.0
-+  __TEXT.__text: 0x10eb98
-+  __TEXT.__const: 0x9446
-+  __TEXT.__swift5_typeref: 0x2cc3
-+  __TEXT.__cstring: 0x5173
-+  __TEXT.__oslogstring: 0x603e
-+  __TEXT.__swift5_reflstr: 0x313d
-+  __TEXT.__swift5_assocty: 0x1f8
-+  __TEXT.__swift5_fieldmd: 0x36c0
-+  __TEXT.__constg_swiftt: 0x243c
-+  __TEXT.__swift5_builtin: 0x3c
-+  __TEXT.__swift5_protos: 0x54
-+  __TEXT.__swift5_proto: 0x4bc
-+  __TEXT.__swift5_types: 0x238
-+  __TEXT.__swift_as_entry: 0x154
-+  __TEXT.__swift_as_ret: 0x1a4
-+  __TEXT.__swift_as_cont: 0x294
-+  __TEXT.__swift5_mpenum: 0x10
-+  __TEXT.__swift5_capture: 0x283c
-+  __TEXT.__unwind_info: 0x4c50
-+  __TEXT.__eh_frame: 0x6cc0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x778
--  __DATA_CONST.__objc_classlist: 0x90
-+  __DATA_CONST.__objc_classlist: 0xa0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa00
-+  __DATA_CONST.__objc_selrefs: 0xaa8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x9298
--  __AUTH_CONST.__cfstring: 0x7e0
--  __AUTH_CONST.__objc_const: 0x1820
--  __AUTH_CONST.__auth_got: 0x1a48
--  __AUTH.__data: 0x1110
--  __DATA.__data: 0x1120
-+  __AUTH_CONST.__const: 0xa9d0
-+  __AUTH_CONST.__cfstring: 0xb20
-+  __AUTH_CONST.__objc_const: 0x19a0
-+  __AUTH_CONST.__auth_got: 0x1b00
-+  __AUTH.__data: 0x13a0
-+  __DATA.__data: 0x1388
-   __DATA.__common: 0xc0
-   __DATA_DIRTY.__objc_data: 0xf0
-   __DATA_DIRTY.__data: 0x1ae0
 
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/IntelligencePlatformLibrary.framework/IntelligencePlatformLibrary
-   - /System/Library/PrivateFrameworks/IntelligencePlatformLibrary_AppleInternal.framework/IntelligencePlatformLibrary_AppleInternal
 +  - /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset
-   - /System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog
-   - /System/Library/PrivateFrameworks/SiriAnalytics.framework/SiriAnalytics
-   - /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7708
--  Symbols:   11814
+-  Symbols:   11494
 -  CStrings:  856
 +  Functions: 8393
-+  Symbols:   13040
++  Symbols:   12699
 +  CStrings:  921
- 
 Symbols:
 + _$s10Foundation4DateV026timeIntervalSinceReferenceB0ACSd_tcfC
 + _$s10Foundation4DateV11descriptionSSvg
@@ -1494,27 +1453,6 @@ Symbols:
 + _associated conformance 36AppleIntelligenceReportingProcessing29UAFAssetSetAlterActivityEventV10CodingKeys33_47FF8F7C31E16C2BE7FB0362EC4A0584LLOs0J3KeyAAs28CustomDebugStringConvertible
 + _get_enum_tag_for_layout_string 36AppleIntelligenceReportingProcessing26BiomeStoreEnumerationErrorO
 + _objc_autorelease
-+ _objc_msgSend$AssetSetAlterActivity
-+ _objc_msgSend$AssetSetStatus
-+ _objc_msgSend$addedAssets
-+ _objc_msgSend$availableForUseErrorCode
-+ _objc_msgSend$configuredAssets
-+ _objc_msgSend$eliminatedAssets
-+ _objc_msgSend$failedMigratedAssetInfo
-+ _objc_msgSend$hasAvailableForUseErrorCode
-+ _objc_msgSend$hasNewerVersionErrorCode
-+ _objc_msgSend$localizedDescription
-+ _objc_msgSend$migrationError
-+ _objc_msgSend$newerVersionErrorCode
-+ _objc_msgSend$performSelector:
-+ _objc_msgSend$preinstalledAssetMigrationResults:
-+ _objc_msgSend$setupErrors
-+ _objc_msgSend$sleepForTimeInterval:
-+ _objc_msgSend$successfullyMigratedAssetInfo
-+ _objc_msgSend$timestamp
-+ _objc_msgSend$uafAssetSet
-+ _objc_msgSend$userInfo
-+ _objc_msgSend$vendedConfiguredAssets
 + _objc_retain_x21
 + _symbolic $s36AppleIntelligenceReportingProcessing011MobileAssetC0P
 + _symbolic $s36AppleIntelligenceReportingProcessing24UAFAssetSetStatusReadingP

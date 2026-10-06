@@ -2,114 +2,69 @@
 
 > `/System/Library/PreferenceBundles/SiriSettings.bundle/SiriSettings`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xaccc` | `0xe4e8` | **`+0x381c`** |
+| `__DATA_CONST.__const` | `0x588` | `0x7a0` | **`+0x218`** |
+| `__TEXT.__eh_frame` | `0x440` | `0x5f8` | **`+0x1b8`** |
+| `__TEXT.__const` | `0x638` | `0x7c8` | **`+0x190`** |
+| `__DATA.__bss` | `0x690` | `0x810` | **`+0x180`** |
+| `__TEXT.__objc_stubs` | `0x460` | `0x580` | **`+0x120`** |
+| `__TEXT.__swift5_typeref` | `0x197` | `0x2a3` | **`+0x10c`** |
+| `__TEXT.__auth_stubs` | `0xb50` | `0xc40` | **`+0xf0`** |
+| `__TEXT.__objc_methname` | `0x595` | `0x685` | **`+0xf0`** |
+| `__TEXT.__unwind_info` | `0x340` | `0x430` | **`+0xf0`** |
+| `__TEXT.__cstring` | `0x2cf` | `0x38f` | **`+0xc0`** |
+| `__TEXT.__oslogstring` | `0xb3` | `0x172` | **`+0xbf`** |
+| `__DATA.__data` | `0x4c8` | `0x548` | **`+0x80`** |
+| `__DATA_CONST.__auth_got` | `0x5b0` | `0x628` | **`+0x78`** |
+| `__TEXT.__constg_swiftt` | `0x2c8` | `0x31c` | **`+0x54`** |
+| `__DATA.__objc_selrefs` | `0x1c0` | `0x208` | **`+0x48`** |
+| `__TEXT.__objc_methtype` | `0x155` | `0x199` | **`+0x44`** |
+| `__TEXT.__swift5_fieldmd` | `0x134` | `0x178` | **`+0x44`** |
+| `__TEXT.__swift5_capture` | `0x64` | `0xa4` | **`+0x40`** |
+| `__TEXT.__swift5_reflstr` | `0x126` | `0x166` | **`+0x40`** |
+| `__DATA_CONST.__auth_ptr` | `0x1e0` | `0x218` | **`+0x38`** |
+| `__DATA.__objc_const` | `0x4b0` | `0x4d0` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x128` | `0x148` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x10` | `0x2c` | **`+0x1c`** |
+| `__TEXT.__swift_as_entry` | `0x14` | `0x2c` | **`+0x18`** |
+| `__TEXT.__swift_as_ret` | `0x10` | `0x28` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `—` | `0x14` | **`+0x14`** |
+| `__TEXT.__swift5_proto` | `0x34` | `0x40` | **`+0xc`** |
+| `__TEXT.__swift5_types` | `0x2c` | `0x34` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xaccc
--  __TEXT.__auth_stubs: 0xb50
--  __TEXT.__objc_stubs: 0x460
-+  __TEXT.__text: 0xe4e8
-+  __TEXT.__auth_stubs: 0xc40
-+  __TEXT.__objc_stubs: 0x580
-   __TEXT.__objc_methlist: 0x15c
--  __TEXT.__const: 0x638
--  __TEXT.__objc_methname: 0x595
-+  __TEXT.__const: 0x7c8
-+  __TEXT.__objc_methname: 0x685
-   __TEXT.__objc_classname: 0xec
--  __TEXT.__objc_methtype: 0x155
--  __TEXT.__cstring: 0x2cf
--  __TEXT.__swift5_typeref: 0x197
--  __TEXT.__swift5_capture: 0x64
--  __TEXT.__constg_swiftt: 0x2c8
--  __TEXT.__swift5_reflstr: 0x126
--  __TEXT.__swift5_fieldmd: 0x134
--  __TEXT.__swift5_proto: 0x34
--  __TEXT.__swift5_types: 0x2c
--  __TEXT.__swift_as_entry: 0x14
--  __TEXT.__swift_as_ret: 0x10
--  __TEXT.__swift_as_cont: 0x10
--  __TEXT.__oslogstring: 0xb3
-+  __TEXT.__objc_methtype: 0x199
-+  __TEXT.__cstring: 0x38f
-+  __TEXT.__swift5_typeref: 0x2a3
-+  __TEXT.__swift5_capture: 0xa4
-+  __TEXT.__constg_swiftt: 0x31c
-+  __TEXT.__swift5_reflstr: 0x166
-+  __TEXT.__swift5_fieldmd: 0x178
-+  __TEXT.__swift5_builtin: 0x14
-+  __TEXT.__swift5_proto: 0x40
-+  __TEXT.__swift5_types: 0x34
-+  __TEXT.__swift_as_entry: 0x2c
-+  __TEXT.__swift_as_ret: 0x28
-+  __TEXT.__swift_as_cont: 0x2c
-+  __TEXT.__oslogstring: 0x172
-   __TEXT.__swift5_assocty: 0x30
--  __TEXT.__unwind_info: 0x340
--  __TEXT.__eh_frame: 0x440
--  __DATA_CONST.__const: 0x588
-+  __TEXT.__unwind_info: 0x430
-+  __TEXT.__eh_frame: 0x5f8
-+  __DATA_CONST.__const: 0x7a0
-   __DATA_CONST.__cfstring: 0x60
-   __DATA_CONST.__objc_classlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__auth_got: 0x5b0
--  __DATA_CONST.__got: 0x128
--  __DATA_CONST.__auth_ptr: 0x1e0
--  __DATA.__objc_const: 0x4b0
--  __DATA.__objc_selrefs: 0x1c0
-+  __DATA_CONST.__auth_got: 0x628
-+  __DATA_CONST.__got: 0x148
-+  __DATA_CONST.__auth_ptr: 0x218
-+  __DATA.__objc_const: 0x4d0
-+  __DATA.__objc_selrefs: 0x208
-   __DATA.__objc_ivar: 0x4
-   __DATA.__objc_data: 0x50
--  __DATA.__data: 0x4c8
--  __DATA.__bss: 0x690
-+  __DATA.__data: 0x548
-+  __DATA.__bss: 0x810
-   __DATA.__common: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
+-3600.62.13.1.1
++3600.62.27.1.1
 
-   - /System/Library/Frameworks/Intents.framework/Intents
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/PrivateFrameworks/AAAFoundationSwift.framework/AAAFoundationSwift
 +  - /System/Library/PrivateFrameworks/AppConduit.framework/AppConduit
-   - /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
-   - /System/Library/PrivateFrameworks/BulletinBoard.framework/BulletinBoard
-   - /System/Library/PrivateFrameworks/CoreSuggestions.framework/CoreSuggestions
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog
+
 +  - /System/Library/PrivateFrameworks/NanoRegistry.framework/NanoRegistry
 +  - /System/Library/PrivateFrameworks/NanoResourceGrabber.framework/NanoResourceGrabber
-   - /System/Library/PrivateFrameworks/Preferences.framework/Preferences
-   - /System/Library/PrivateFrameworks/Settings.framework/Settings
-   - /System/Library/PrivateFrameworks/SiriSetup.framework/SiriSetup
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 273
--  Symbols:   2322
--  CStrings:  124
+-  Symbols:   945
+-  CStrings:  121
 +  Functions: 348
-+  Symbols:   2868
-+  CStrings:  146
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA.__objc_data : content changed
++  Symbols:   1127
++  CStrings:  143
 Symbols:
 + _$s10Foundation4DataV15_RepresentationOWOe
 + _$s10Foundation4DataV15_RepresentationOWOy
@@ -332,5 +287,4 @@ CStrings:
 + "sharedInstance"
 + "v16@?0@\"UIImage\"8"
 + "watchOnlyApps(iosBundleIDs:)"
-
 ```

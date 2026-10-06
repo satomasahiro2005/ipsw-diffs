@@ -2,35 +2,28 @@
 
 > `/usr/lib/libAppleEXR.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa02ec` | `0xa16fc` | **`+0x1410`** |
+| `__TEXT.__cstring` | `0x456f` | `0x469c` | **`+0x12d`** |
+| `__TEXT.__unwind_info` | `0x828` | `0x830` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x4e0` | `0x4e4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1006.0.0.0.0
--  __TEXT.__text: 0x9f644
 +1010.0.0.0.0
-+  __TEXT.__text: 0xa0a30
-   __TEXT.__objc_methlist: 0x254
-   __TEXT.__const: 0x211bc
--  __TEXT.__gcc_except_tab: 0x4e0
--  __TEXT.__cstring: 0x456f
-+  __TEXT.__gcc_except_tab: 0x4e4
-+  __TEXT.__cstring: 0x469c
-   __TEXT.__oslogstring: 0x3
--  __TEXT.__unwind_info: 0xbe8
-+  __TEXT.__unwind_info: 0xc00
-   __TEXT.__eh_frame: 0x138
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 730
--  Symbols:   946
+-  Symbols:   936
 -  CStrings:  450
 +  Functions: 733
-+  Symbols:   949
++  Symbols:   939
 +  CStrings:  452
- 
 Symbols:
 + __ZN14AXRChunkHeader11GetMipLevelE11ChunkLayout
 + __ZN4Part11InitOffsetsEPKvmRmm11axr_flags_t

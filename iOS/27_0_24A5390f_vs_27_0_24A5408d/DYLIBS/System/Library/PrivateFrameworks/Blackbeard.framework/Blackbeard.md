@@ -2,95 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/Blackbeard.framework/Blackbeard`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__swift5_typeref` | `0x775d2` | `0x7253c` | **`-0x5096`** |
+| `__TEXT.__text` | `0x7bf598` | `0x7c0088` | **`+0xaf0`** |
+| `__AUTH_CONST.__const` | `0x27680` | `0x27320` | **`-0x360`** |
+| `__TEXT.__swift5_capture` | `0xe5a4` | `0xe3d8` | **`-0x1cc`** |
+| `__TEXT.__eh_frame` | `0x3ef70` | `0x3f050` | **`+0xe0`** |
+| `__DATA.__data` | `0x87d8` | `0x8758` | **`-0x80`** |
+| `__TEXT.__cstring` | `0x914b` | `0x91cb` | **`+0x80`** |
+| `__TEXT.__swift5_reflstr` | `0x801d` | `0x808d` | **`+0x70`** |
+| `__TEXT.__swift5_fieldmd` | `0x75d8` | `0x7620` | **`+0x48`** |
+| `__DATA_DIRTY.__data` | `0x9e58` | `0x9e98` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x167b0` | `0x16788` | **`-0x28`** |
+| `__DATA_CONST.__const` | `0x1ab0` | `0x1ad0` | **`+0x20`** |
+| `__TEXT.__const` | `0x27684` | `0x27674` | **`-0x10`** |
+| `__TEXT.__swift_as_cont` | `0x4da4` | `0x4db0` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x88c8` | `0x88d0` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xfd0` | `0xfc8` | **`-0x8`** |
+| `__TEXT.__swift_as_entry` | `0x1b40` | `0x1b3c` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.134.0.0
--  __TEXT.__text: 0x7bf598
 +2027.0.146.0.2
-+  __TEXT.__text: 0x7c0088
-   __TEXT.__objc_methlist: 0xde4
--  __TEXT.__const: 0x27684
--  __TEXT.__cstring: 0x914b
-+  __TEXT.__const: 0x27674
-+  __TEXT.__cstring: 0x91cb
-   __TEXT.__constg_swiftt: 0x71ac
--  __TEXT.__swift5_typeref: 0x775d2
-+  __TEXT.__swift5_typeref: 0x7253c
-   __TEXT.__swift5_builtin: 0x2bc
--  __TEXT.__swift5_reflstr: 0x801d
--  __TEXT.__swift5_fieldmd: 0x75d8
-+  __TEXT.__swift5_reflstr: 0x808d
-+  __TEXT.__swift5_fieldmd: 0x7620
-   __TEXT.__swift5_assocty: 0x540
-   __TEXT.__swift5_proto: 0x1468
-   __TEXT.__swift5_types: 0x818
-   __TEXT.__swift5_mpenum: 0x90
-   __TEXT.__oslogstring: 0x447b
--  __TEXT.__swift5_capture: 0xe5a4
--  __TEXT.__swift_as_entry: 0x1b40
-+  __TEXT.__swift5_capture: 0xe3d8
-+  __TEXT.__swift_as_entry: 0x1b3c
-   __TEXT.__swift_as_ret: 0x194c
--  __TEXT.__swift_as_cont: 0x4da4
-+  __TEXT.__swift_as_cont: 0x4db0
-   __TEXT.__swift5_protos: 0x48
--  __TEXT.__unwind_info: 0x167b0
--  __TEXT.__eh_frame: 0x3ef70
-+  __TEXT.__unwind_info: 0x16788
-+  __TEXT.__eh_frame: 0x3f050
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1ab0
-+  __DATA_CONST.__const: 0x1ad0
-   __DATA_CONST.__objc_classlist: 0x308
-   __DATA_CONST.__objc_protolist: 0x118
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xfd0
-+  __DATA_CONST.__objc_selrefs: 0xfc8
-   __DATA_CONST.__objc_protorefs: 0x88
-   __DATA_CONST.__objc_superrefs: 0x10
-   __DATA_CONST.__got: 0x4dc8
--  __AUTH_CONST.__const: 0x27680
-+  __AUTH_CONST.__const: 0x27320
-   __AUTH_CONST.__cfstring: 0x20
-   __AUTH_CONST.__objc_const: 0x63f0
--  __AUTH_CONST.__auth_got: 0x88c8
-+  __AUTH_CONST.__auth_got: 0x88d0
-   __AUTH.__objc_data: 0x750
-   __AUTH.__data: 0x2440
-   __DATA.__objc_ivar: 0x20
--  __DATA.__data: 0x87d8
-+  __DATA.__data: 0x8758
-   __DATA.__bss: 0x167f0
-   __DATA.__common: 0x620
-   __DATA_DIRTY.__objc_data: 0xce0
--  __DATA_DIRTY.__data: 0x9e58
-+  __DATA_DIRTY.__data: 0x9e98
-   __DATA_DIRTY.__bss: 0x11430
-   __DATA_DIRTY.__common: 0x330
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/Combine.framework/Combine
 -  - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 23259
--  Symbols:   7385
+-  Symbols:   7000
 -  CStrings:  1079
 +  Functions: 23215
-+  Symbols:   7375
++  Symbols:   6991
 +  CStrings:  1081
- 
 Symbols:
 + ___swift_closure_destructor.170Tm
 + ___swift_closure_destructor.173Tm
@@ -142,7 +90,6 @@ Symbols:
 - ___swift_closure_destructor.313Tm
 - ___swift_closure_destructor.99Tm
 - ___swift_memcpy145_8
-- _objc_msgSend$descriptorForRequiredKeys
 - _symbolic _____ 14FitnessActions24AccountButtonEnvironmentV
 - _symbolic ___________pSgSo6UIViewCSgAF_____So0A10ControllerCIegngggno_ 10Blackbeard8RootItemO 010FitnessAppB019ScrollViewObservingP AA34NavigationControllerRoutingContextV
 - _symbolic _____yAAy_____yAAyAByABy_____y_____y_____yAAyAAy_____yABy_____yAAyAAyAAy__________y__________GGAAy_____AAyA2JGGGAAy_____AAy__________GGGG_____yAAyAAy__________y_____yAByAAyAAy_____yAByABy_____yAByABy__________GA0_G______y_____GQo______y_____GG_____y_____GG______AByA14______y_____GGAByA14_A16_y_____GGQo_ABy_____yAByAByAByAByABy_____yA__A5_Qo______yAIGGA0_GA0_GA9_GA13_G_A15_AByA31_A18_GAByA31_A21_GQo______GGAXGA0_G______AByAAyAAyABy_____yAByAByAByABy_____yAByAByA_A11_y_____GGA11_y_____SgGG_A5_Qo_A26_GA0_GA9_GA13_G_A15_AByA52_A18_GAByA52_A21_GQo_A35_GAByAByAByA24_A42_G_____GA35_GGAXGA0_GQPGGGAXGGGAAyAAyAAyAAyAAyAJ_____y_____y___________Qo_______Qo_GAAy_____y______A73_Qo______y_____yA_G_A15_AByA79_A11_y_____GGQo_GGAAyAAy_____y__________y_____y_Qo__Qo_G_____y_____yA90______y_____y_____ySSG_A15_AByA93_A81_GQo__SSQo_A2XG______yA71_GQo_GAAy_____yA79_______Qo______y_____yA78_y_____yA15_AYyAZyAByA_A11_y_____GG_A_AByAByABy_____A46_GA42_GA25_y_____GGQPGGA_GG_A15_AByA117_A11_y_____SgGGQo__Qo_GGGAAy_____y_____yA78_y_____yA_A108_GG______Qo__Qo______yABy_____y_____yAByAByAByA109_A11_yAISgGG_____G_____yAHGG_A5_Qo_AZy_____yAXA91_yAXA93_A2XGAXG_A144_yAxZy___________QPGAXGA144_yAxZy_____y__________yA152_GA154_A154_AXG_A151_yA152_AX_____yA152_GSgA157_A157_GSgQPGAXG_____yA152_GQPGG_____y_____GG_____y______y______y______ySSGQo______yA152_GQo______yA152_GQo_GGGAAyA79_AXGGA184_G_____yA69_A184_A184_GG_____GAAyAAy_____yA184______y_____yA184__Qo_Qo_G_____yA184_A193_GGA189_GAAyAAyAByAAyAByABy_____y_____y_____A69_AAyAAyAAyAJ_____yAF_____GGAAy_____AAyAAy__________GA206_GGGAAyAAy_____yA200______A69______y______y______y_____y______y______yAAyAAyAZyA146_______yA150_AXGA162_A144_yAXA164_AXGQPGAZyA146__A150_A144_yAXA155_AXGQPGGA189_G_____y______y_A179_Qo_Qo______yA69_GGQo_Qo______y______yA223_A225_GQo_GQo_Qo_G_____yA69_GGAAy_____yA90_AByAJA138_GGA198_GGG_________________________G_Qo______GA254_GA252_G_____GAByAAyAByABy_____y_____yA200_A69_A246_A247_A248_A249_A250_A251_G_Qo_A254_GA254_GA261_GA258_GGA189_GG______Qo__Qo_A254_GA254_GA271_GA258_GAByAAyAByABy_____y_____y_____yA190_A198_A268_G_A270_Qo__Qo_A254_GA254_GA279_GA258_GGA189_G 7SwiftUI19_ConditionalContentV AA08ModifiedD0V AA4ViewP011_JetEngine_aB0E11pageMetrics_8pipeline7tracker26clickLocationConfigurationQr0gH004PageJ0VSg_AM0J8PipelineVAM18ImpressionsTracker_pSgAH05ClicknO0VSgtFQO AG14FitnessActionsE15createPlanAlert5store0wxyF7BuilderQr8DataFlow5StoreCyAX06CreatexY7FeatureVGyc_qd__AX06Createx7HandoffY9IconStateOctAaFRd__lFQO 0u7WorkoutX0012WorkoutPlansF0V A8_013ActiveWorkoutx7WorkoutF0V AA5GroupV 0U6Awards010AwardImageF0V AA06_ShapeF0V AA9RectangleV AA5ColorV 0U5Asset017DynamicImageAssetF0V A24_012ArtworkAssetF0V 07SeymourB007Workoutx7ArtworkF2V2V 10Blackbeard07Workoutx7ArtworkF13RepresentableV AA16_OverlayModifierV AA05EmptyF0V AA6HStackV AA05TupleD0V AgAE8staticIf_4then4elseQrqd___qd_0_xXEqd_1_xXEtAA0F14InputPredicateRd__AaFRd_0_AaFRd_1_r1_lFQO AgAE15dynamicTypeSizeyQrqd__SXRd__AA15DynamicTypeSizeO5BoundRtd__lFQO AA4TextV AA14_PaddingLayoutV s19PartialRangeThroughV A49_ AA24_BackgroundStyleModifierV AA8MaterialV AA30_EnvironmentKeyWritingModifierV AA11ColorSchemeO AA8SolariumV AA11_ClipEffectV AA7CapsuleV AA16RoundedRectangleV AgAEA43__A44_A45_Qrqd___qd_0_xXEqd_1_xXEtAAA46_Rd__AaFRd_0_AaFRd_1_r1_lFQO AgAEA47_yQrqd__SXRd__A49_A51_RSlFQO AA24_ForegroundStyleModifierV AA31AccessibilityAttachmentModifierV AA6SpacerV AgAEA43__A44_A45_Qrqd___qd_0_xXEqd_1_xXEtAAA46_Rd__AaFRd_0_AaFRd_1_r1_lFQO AgAEA47_yQrqd__SXRd__A49_A51_RSlFQO AA5ImageV5ScaleO AA4FontV AA13_ShadowEffectV AgAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQO AgAE10labelStyleyQrqd__AA10LabelStyleRd__lFQO A8_013CreateWorkoutx6ButtonF0V AA19TitleOnlyLabelStyleV A32_05BuildX11ButtonStyleV AgAEA88_yQrqd__AAA89_Rd__lFQO A8_025CreatePersonalizedWorkoutx6ButtonF0V AgAEA43__A44_Qrqd___qd_0_xXEtAAA46_Rd__AaFRd_0_r0_lFQO AA6ButtonV AA17ButtonBorderShapeV 0U9Marketing15MarketingButtonV 0U14RemoteBrowsing019SubscriptionHandoffF0V AgHE14impressionable_13configuration8position20definesParentContextQrAM010ImpressionJ0VSg_AM0R10CalculatorC0O0VSiSgSbtFQO A104_20MarketingButtonStyleO010actionItemF7Builder4item5index6layout8platform7triggerQrA104_19MarketingActionItemV_SiA104_21MarketingButtonLayoutVA104_17MarketingPlatformOyyctFQO AgAEA90_yQrqd__AAA91_Rd__lFQO AX019DynamicStartWorkoutF0V AgXE29startWorkoutModalPresentationAZQrA2_yAX25StartWorkoutButtonFeatureVyqd__GGyc_tSeRd__SERd__SHRd__lFQO AgAEA43__A44_Qrqd___qd_0_xXEtAAA46_Rd__AaFRd_0_r0_lFQO AX18StartWorkoutButtonV AX20ExpandableLabelStyleV AgAEA88_yQrqd__AAA89_Rd__lFQO A32_0F22CatalogItemButtonStyleV AG0u4CoreB0E30fitnessAccessibilityIdentifieryQrSSd_tFQO AgAEA43__A44_Qrqd___qd_0_xXEtAAA46_Rd__AaFRd_0_r0_lFQO AA8StaticIfV AA13TextAlignmentO A81_ AA22HierarchicalShapeStyleV AA13AnyShapeStyleV AgHEA110__A111_A112_A113_QrA116__A120_A121_SbtFQO AgAEA88_yQrqd__AAA89_Rd__lFQO AA5LabelV A32_0fX11ButtonStyleV A32_04MenuF0V AA4MenuV AgAEA47_yQrqd__SXRd__A49_A51_RSlFQO AA16_FlexFrameLayoutV AA01_D13ShapeModifierV AA7SectionV AX11StackButtonV AX0F11StackButtonV AX20DynamicLibraryButtonV A32_20ActionItemIdentifierO AX14BookmarkButtonV AX14DownloadButtonV AX13SharingButtonV AA21_TraitWritingModifierV AA22LayoutPriorityTraitKeyV 0u6CanvasB00F15ModifierBuilderO17buildPartialBlock11accumulated4nextQrx_q_tAA0F8ModifierRzAAA197_R_r0_lFZQO A193_A194_A195_A196_Qrx_q_tAAA197_RzAAA197_R_r0_lFZQO A193_A194_5firstQrx_tAAA197_RzlFZQO AX29StartWorkoutModalPresentationV AX35RemoveLibraryItemConfirmationDialogV AX15ShareLinkPickerV A8_015TVActiveWorkoutx7WorkoutF0V s5NeverO A8_024PersonalizedWorkoutPlansF0V A149_04withU18AccessibilityScope_7contentQrSSd_xyXEtAaFRzlFQO AGA149_EA150_yQrSSd_tFQO A8_026TVPersonalizedWorkoutPlansF0V AgHEAI_AjkLQrAP_ArtWtFQO A8_020ArchivedWorkoutPlansF0V A32_17ArtworkDescriptorV A15_011AwardLockupF0V A15_013AwardProgressF0V A104_09BubbleTipF0V A8_07Regularf11PlansBannerF0V A8_07Compactf11PlansBannerF0V 0U8Browsing014NewAndFeaturedF0V 11SeymourCore24CatalogLockupPlaceholderV A193_A194_A198_Qrx_tAAA197_RzlFZQO A193_A194_A198_Qrx_tAAA197_RzlFZQO A191_0cF8ModifierV A193_A194_A198_Qrx_tAAA197_RzlFZQO A193_A194_A198_Qrx_tAAA197_RzlFZQO A32_018ContextMenuPreviewF8Modifier33_C03BD6DB7C28032FF47D110A411CF47DLLV 0U7AppRoot07Dynamicd9ContainerF0V A193_A194_A198_Qrx_tAAA197_RzlFZQO A193_A194_A198_Qrx_tAAA197_RzlFZQO 0U13ProductDetail025WorkoutContextMenuPreviewF0V A193_A194_A198_Qrx_tAAA197_RzlFZQO A32_011ContextMenuF8ModifierA238_LLV A8_08Previousx6LockupF0V A104_015MarketingInlineF0V A32_04ItemJ0V A32_17AppSectionDensityO A32_07SectionJ0V A32_12AppSizeClassO A32_0F10DescriptorO AA25_AppearanceActionModifierV A32_0G20SceneSessionModifier33_E7F4EE45C15B3873A95F92DF9170D698LLV AgHEAI_AjkLQrAP_ArtWtFQO A8_022TVArchivedWorkoutPlansF0V A32_06Createx7HandoffF13RepresentableV AgHEAI_AjkLQrAP_ArtWtFQO AgXEAyZA_QrA5_yc_qd__A7_ctAaFRd__lFQO A8_014TVWorkoutPlansF0V

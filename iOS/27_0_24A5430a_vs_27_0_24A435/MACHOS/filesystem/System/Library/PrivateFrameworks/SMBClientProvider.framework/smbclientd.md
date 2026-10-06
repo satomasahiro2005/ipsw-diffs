@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/SMBClientProvider.framework/smbclientd`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_100029e94 : 12 -> 20

@@ -2,77 +2,25 @@
 
 > `/System/Library/PrivateFrameworks/SafariSafeBrowsing.framework/SafariSafeBrowsing`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x84028` | `0x83e8c` | **`-0x19c`** |
+| `__AUTH.__objc_data` | `0x3b8` | `0x548` | **`+0x190`** |
+| `__DATA_DIRTY.__objc_data` | `0x410` | `0x280` | **`-0x190`** |
+| `__DATA_DIRTY.__bss` | `0x3c8` | `0x370` | **`-0x58`** |
+| `__DATA.__bss` | `0x150` | `0x1a0` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x300` | `0x310` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x4018` | `0x4008` | **`-0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x8ba8` | `0x8ba4` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x84028
-+  __TEXT.__text: 0x83e8c
-   __TEXT.__objc_methlist: 0x103c
--  __TEXT.__gcc_except_tab: 0x8ba8
-+  __TEXT.__gcc_except_tab: 0x8ba4
-   __TEXT.__cstring: 0x2013
-   __TEXT.__const: 0x56a
-   __TEXT.__oslogstring: 0x2c04
-
-   __TEXT.__swift_as_entry: 0x40
-   __TEXT.__swift_as_ret: 0x3c
-   __TEXT.__swift_as_cont: 0x50
--  __TEXT.__unwind_info: 0x4018
-+  __TEXT.__unwind_info: 0x4008
-   __TEXT.__eh_frame: 0x1b08
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0xd68
-   __DATA_CONST.__objc_superrefs: 0x60
-   __DATA_CONST.__objc_arraydata: 0x30
--  __DATA_CONST.__got: 0x300
-+  __DATA_CONST.__got: 0x310
-   __AUTH_CONST.__const: 0x30e8
-   __AUTH_CONST.__cfstring: 0x17e0
-   __AUTH_CONST.__objc_const: 0x2220
-
-   __AUTH_CONST.__objc_intobj: 0x30
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__auth_got: 0xc90
--  __AUTH.__objc_data: 0x3b8
-+  __AUTH.__objc_data: 0x548
-   __AUTH.__data: 0x260
-   __DATA.__objc_ivar: 0xa4
-   __DATA.__data: 0x498
--  __DATA.__bss: 0x150
-+  __DATA.__bss: 0x1a0
-   __DATA.__common: 0x30
--  __DATA_DIRTY.__objc_data: 0x410
--  __DATA_DIRTY.__bss: 0x3c8
-+  __DATA_DIRTY.__objc_data: 0x280
-+  __DATA_DIRTY.__bss: 0x370
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
+-625.1.20.10.3
++625.1.22.10.3
 Functions:
 ~ __ZN7Backend6Google16computePathPartsENSt3__111__wrap_iterIPKhEES5_S5_S5_ : 488 -> 476
 ~ __ZN7Backend6Google20computeHostNamePartsENSt3__111__wrap_iterIPKhEES5_b : 676 -> 668
@@ -100,7 +48,6 @@ Functions:
 ~ __ZN12SafeBrowsing7Service25initializeDatabaseManagerERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEERKNS1_6vectorIS7_NS5_IS7_EEEEN7Backend6Google21DatabaseConfigurationE : 1364 -> 1340
 ~ __ZN12SafeBrowsing7Service22handleGetServiceStatusEPU24objcproto13OS_xpc_object8NSObject : 708 -> 696
 ~ __ZNKSt3__121__murmur2_or_cityhashImLm64EEclB9sqn220106EPKvm : 532 -> 520
-~ sub_29af3ad38 -> sub_291c94bac : 624 -> 616
-~ sub_29af3afa8 -> sub_291c94e14 : 800 -> 792
-
+~ sub_29adfed38 -> sub_291b55bac : 624 -> 616
+~ sub_29adfefa8 -> sub_291b55e14 : 800 -> 792
 ```

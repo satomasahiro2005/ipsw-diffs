@@ -2,43 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/SiriTTS.framework/SiriTTS`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x834dc8` | `0x8350a0` | **`+0x2d8`** |
+| `__TEXT.__gcc_except_tab` | `0x3c2dc` | `0x3c31c` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x18658` | `0x18670` | **`+0x18`** |
+| `__AUTH_CONST.__const` | `0x35428` | `0x35438` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3605.23.1.0.0
--  __TEXT.__text: 0x828a90
 +3605.25.1.0.0
-+  __TEXT.__text: 0x828d5c
-   __TEXT.__objc_methlist: 0x20
-   __TEXT.__const: 0xe45f4
-   __TEXT.__cstring: 0x6ee2f
--  __TEXT.__gcc_except_tab: 0x3c2dc
-+  __TEXT.__gcc_except_tab: 0x3c31c
-   __TEXT.__oslogstring: 0xa47b
-   __TEXT.__ustring: 0x494
--  __TEXT.__unwind_info: 0x19c40
-+  __TEXT.__unwind_info: 0x19c58
-   __TEXT.__eh_frame: 0x210
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0x90
-   __DATA_CONST.__objc_arraydata: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x35428
-+  __AUTH_CONST.__const: 0x35438
-   __AUTH_CONST.__cfstring: 0x1e0
-   __AUTH_CONST.__objc_const: 0x40
-   __AUTH_CONST.__weak_auth_got: 0x38
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libxml2.2.dylib
--  Functions: 22436
--  Symbols:   33926
-+  Functions: 22438
-+  Symbols:   33930
-   CStrings:  17088
- 
+-  Functions: 22435
+-  Symbols:   33909
++  Functions: 22437
++  Symbols:   33913
 Symbols:
 + GCC_except_table8517
 + GCC_except_table8522

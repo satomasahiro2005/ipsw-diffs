@@ -2,16 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/FindingUI.framework/FindingUI`
 
-```diff
+### Section Size Changes
 
- 104.30.6.14.23
--  __TEXT.__text: 0x1a65c
-+  __TEXT.__text: 0x1a670
-   __TEXT.__objc_methlist: 0xe4
-   __TEXT.__swift5_typeref: 0x9da
-   __TEXT.__const: 0x29c8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a65c` | `0x1a670` | **`+0x14`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_26297da14 -> sub_263685a14 : 708 -> 720
-~ sub_26297e944 -> sub_263686950 : 364 -> 368
-~ sub_26297eab0 -> sub_263686ac0 : 756 -> 760
+~ sub_26285fa14 -> sub_263561a14 : 708 -> 720
+~ sub_262860944 -> sub_263562950 : 364 -> 368
+~ sub_262860ab0 -> sub_263562ac0 : 756 -> 760
 ```

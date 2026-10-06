@@ -2,75 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/FitnessForYou.framework/FitnessForYou`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6d040` | `0x6edec` | **`+0x1dac`** |
+| `__TEXT.__eh_frame` | `0x4260` | `0x4500` | **`+0x2a0`** |
+| `__TEXT.__swift5_reflstr` | `0x1b13` | `0x1c53` | **`+0x140`** |
+| `__AUTH_CONST.__const` | `0x45b0` | `0x46e0` | **`+0x130`** |
+| `__TEXT.__cstring` | `0xa41` | `0xae1` | **`+0xa0`** |
+| `__TEXT.__oslogstring` | `0x585` | `0x625` | **`+0xa0`** |
+| `__TEXT.__swift5_fieldmd` | `0x1f14` | `0x1fb0` | **`+0x9c`** |
+| `__TEXT.__unwind_info` | `0x1ef8` | `0x1f90` | **`+0x98`** |
+| `__TEXT.__const` | `0x9dd4` | `0x9e44` | **`+0x70`** |
+| `__TEXT.__swift5_typeref` | `0x3da2` | `0x3d32` | **`-0x70`** |
+| `__DATA.__data` | `0x1f70` | `0x1fd0` | **`+0x60`** |
+| `__DATA_DIRTY.__data` | `0x9d0` | `0x988` | **`-0x48`** |
+| `__TEXT.__swift5_capture` | `0x680` | `0x6a0` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x228` | `0x244` | **`+0x1c`** |
+| `__TEXT.__swift_as_ret` | `0x1d4` | `0x1ec` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x558` | `0x568` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xc98` | `0xca0` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0xac` | `0xb4` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.146.1.4
--  __TEXT.__text: 0x67a78
--  __TEXT.__const: 0x9dd4
--  __TEXT.__swift5_typeref: 0x3da2
--  __TEXT.__cstring: 0xa41
 +2027.1.50.0.1
-+  __TEXT.__text: 0x69594
-+  __TEXT.__const: 0x9e44
-+  __TEXT.__swift5_typeref: 0x3d32
-+  __TEXT.__cstring: 0xae1
-   __TEXT.__constg_swiftt: 0x1b5c
--  __TEXT.__swift5_reflstr: 0x1b13
--  __TEXT.__swift5_fieldmd: 0x1f14
-+  __TEXT.__swift5_reflstr: 0x1c53
-+  __TEXT.__swift5_fieldmd: 0x1fb0
-   __TEXT.__swift5_builtin: 0x78
-   __TEXT.__swift5_proto: 0x89c
-   __TEXT.__swift5_types: 0x264
-   __TEXT.__swift5_assocty: 0x138
-   __TEXT.__swift5_mpenum: 0x28
--  __TEXT.__swift5_capture: 0x680
--  __TEXT.__oslogstring: 0x585
--  __TEXT.__swift_as_entry: 0xac
--  __TEXT.__swift_as_ret: 0x1d4
--  __TEXT.__swift_as_cont: 0x228
--  __TEXT.__unwind_info: 0x26c0
--  __TEXT.__eh_frame: 0x4268
-+  __TEXT.__swift5_capture: 0x6a0
-+  __TEXT.__oslogstring: 0x625
-+  __TEXT.__swift_as_entry: 0xb4
-+  __TEXT.__swift_as_ret: 0x1ec
-+  __TEXT.__swift_as_cont: 0x244
-+  __TEXT.__unwind_info: 0x2758
-+  __TEXT.__eh_frame: 0x4508
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x8
--  __DATA_CONST.__got: 0x558
--  __AUTH_CONST.__const: 0x45b0
-+  __DATA_CONST.__got: 0x568
-+  __AUTH_CONST.__const: 0x46e0
-   __AUTH_CONST.__objc_const: 0x240
--  __AUTH_CONST.__auth_got: 0xc98
-+  __AUTH_CONST.__auth_got: 0xca0
-   __AUTH.__data: 0x1b0
--  __DATA.__data: 0x1f70
--  __DATA_DIRTY.__data: 0x9d0
-+  __DATA.__data: 0x1fd0
-+  __DATA_DIRTY.__data: 0x988
-   __DATA_DIRTY.__bss: 0x4200
-   __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2555
--  Symbols:   1076
+-  Symbols:   1075
 -  CStrings:  121
 +  Functions: 2579
-+  Symbols:   1078
++  Symbols:   1077
 +  CStrings:  133
- 
 Symbols:
 + ___swift_memcpy384_8
 + _get_witness_table 7SwiftUI4ViewRzAaBR_r0_lAA15ModifiedContentVyAA5GroupVyAA012_ConditionalE0VyAA14GeometryReaderVyADyAaBPAAE14contentMargins__3forQrAA4EdgeO3SetV_12CoreGraphics7CGFloatVSgAA0E15MarginPlacementVtFQOyAkAE20scrollBounceBehavior_4axesQrAA06ScrolluV0V_AA4AxisOAPVtFQOyAA0xC0VyADyADyADyq_AA30_EnvironmentKeyWritingModifierVyAA0M6InsetsVGGA6_ySo6CGSizeVSgGGA14_GG_Qo__Qo_AA30_SafeAreaRegionsIgnoringLayoutVGGAHyAHyxAHyAHyAA0e11UnavailableC0VyAA4TextVAA05TupleE0VyA27__A27_SgQPGAA6ButtonVyA27_GSgGAkAE9focusableyQrSbFQOyA25_yAHyAHyAHyAA5LabelVyA27_AA5ImageVGA42_GAHyAA5ColorVA45_GGA42_GAHyAHyAHyA27_A27_GA46_GA27_GAA05EmptyC0VG_Qo_GAHy07FitnessoB0014DelayedLoadingC0VA25_yA39_yA27_ADyA41_AA24_ForegroundStyleModifierVyA45_GGGA27_A35_GGGGA59_GGGAA25_AppearanceActionModifierVGAaBHPA71_AaBHPA70_AaBHPA23_AaBHPyHC_A69_AaBHPA68_AaBHPxAaBHD1__A67_AaBHPA56_AaBHPA36_AaBHPyHC_qd__AaBHD2_A55_HOHC_A66_AaBHPA59_AaBHPyHC_A65_AaBHPyHCHCHCHC_A59_AaBHPyHCHCHC_HC_A73_AA0C8ModifierHPyHCHC

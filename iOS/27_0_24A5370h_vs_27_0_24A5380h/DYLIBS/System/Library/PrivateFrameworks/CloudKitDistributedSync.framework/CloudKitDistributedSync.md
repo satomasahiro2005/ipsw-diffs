@@ -2,59 +2,24 @@
 
 > `/System/Library/PrivateFrameworks/CloudKitDistributedSync.framework/CloudKitDistributedSync`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xdefc4` | `0xdec34` | **`-0x390`** |
+| `__AUTH_CONST.__cfstring` | `0x18e0` | `0x1900` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x4e32` | `0x4e4f` | **`+0x1d`** |
+| `__DATA_CONST.__got` | `0x2f8` | `0x300` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xdefc4
-+  __TEXT.__text: 0xdec34
-   __TEXT.__init_offsets: 0x8
-   __TEXT.__objc_methlist: 0x1bcc
-   __TEXT.__const: 0x7190
-   __TEXT.__gcc_except_tab: 0x7370
--  __TEXT.__cstring: 0x4e32
-+  __TEXT.__cstring: 0x4e4f
-   __TEXT.__oslogstring: 0x4ec
-   __TEXT.__unwind_info: 0x3dd0
-   __TEXT.__eh_frame: 0xf0
+-2710.112.0.0.0
++2710.114.0.0.0
 
-   __DATA_CONST.__weak_got: 0x18
-   __DATA_CONST.__objc_selrefs: 0xe48
-   __DATA_CONST.__objc_superrefs: 0xd8
--  __DATA_CONST.__got: 0x2f8
-+  __DATA_CONST.__got: 0x300
-   __AUTH_CONST.__const: 0x55f8
--  __AUTH_CONST.__cfstring: 0x18e0
-+  __AUTH_CONST.__cfstring: 0x1900
-   __AUTH_CONST.__objc_const: 0x3050
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__auth_got: 0x5b8
-
-   - /usr/lib/swift/libswiftos.dylib
-   Functions: 3234
-   Symbols:   360
--  CStrings:  894
-+  CStrings:  896
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
+-  CStrings:  696
++  CStrings:  697
 Functions:
 ~ sub_22570dc0c -> sub_229fbdc0c : 144 -> 136
 ~ sub_22570e6f0 -> sub_229fbe6e8 : 144 -> 136
@@ -104,5 +69,4 @@ CStrings:
 + "Call %@ before reading data"
 + "Incorrect rows loaded: row %llu does not fit in range %llu->%llu"
 - "Incorrect rows loaded: row %llu does not fit in range %llu->llu"
-
 ```

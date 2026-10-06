@@ -2,94 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/ActionKit.framework/ActionKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x40ad5c` | `0x40da38` | **`+0x2cdc`** |
+| `__TEXT.__cstring` | `0x53d64` | `0x54077` | **`+0x313`** |
+| `__TEXT.__oslogstring` | `0x6781` | `0x6a00` | **`+0x27f`** |
+| `__AUTH_CONST.__cfstring` | `0x2ba80` | `0x2bc40` | **`+0x1c0`** |
+| `__TEXT.__ustring` | `0x41d8` | `0x4352` | **`+0x17a`** |
+| `__TEXT.__objc_methlist` | `0x21a2c` | `0x21b44` | **`+0x118`** |
+| `__TEXT.__gcc_except_tab` | `0x3d48` | `0x3e18` | **`+0xd0`** |
+| `__AUTH_CONST.__auth_got` | `0x3598` | `0x3628` | **`+0x90`** |
+| `__DATA_CONST.__objc_selrefs` | `0xf768` | `0xf7e8` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0xe5d8` | `0xe650` | **`+0x78`** |
+| `__DATA.__data` | `0xb568` | `0xb5d8` | **`+0x70`** |
+| `__TEXT.__eh_frame` | `0x9ef0` | `0x9f38` | **`+0x48`** |
+| `__DATA_CONST.__got` | `0x4778` | `0x47b0` | **`+0x38`** |
+| `__AUTH_CONST.__objc_const` | `0x3e5a0` | `0x3e5c8` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x11220` | `0x11240` | **`+0x20`** |
+| `__TEXT.__swift5_typeref` | `0x3e67` | `0x3e85` | **`+0x1e`** |
+| `__DATA.__bss` | `0xa1d8` | `0xa1e8` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0xc78` | `0xc88` | **`+0x10`** |
+| `__TEXT.__const` | `0x2a9c8` | `0x2a9d8` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x548` | `0x550` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x1e0` | `0x1e8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -5034.0.12.100.0
--  __TEXT.__text: 0x40ad5c
--  __TEXT.__objc_methlist: 0x21a2c
--  __TEXT.__const: 0x2a9c8
 +5037.103.100.0.0
-+  __TEXT.__text: 0x40da38
-+  __TEXT.__objc_methlist: 0x21b44
-+  __TEXT.__const: 0x2a9d8
-   __TEXT.__dlopen_cstrs: 0x27a3
--  __TEXT.__cstring: 0x53d64
-+  __TEXT.__cstring: 0x54077
-   __TEXT.__constg_swiftt: 0x1ec8
--  __TEXT.__swift5_typeref: 0x3e67
-+  __TEXT.__swift5_typeref: 0x3e85
-   __TEXT.__swift5_builtin: 0x21c
-   __TEXT.__swift5_reflstr: 0x151b
-   __TEXT.__swift5_fieldmd: 0x12a4
 
-   __TEXT.__swift_as_cont: 0x848
-   __TEXT.__swift5_capture: 0xc14
-   __TEXT.__swift5_protos: 0x1c
--  __TEXT.__oslogstring: 0x6781
-+  __TEXT.__oslogstring: 0x6a00
-   __TEXT.__swift5_mpenum: 0x24
--  __TEXT.__gcc_except_tab: 0x3d48
--  __TEXT.__ustring: 0x41d8
--  __TEXT.__unwind_info: 0xe5d8
--  __TEXT.__eh_frame: 0x9ef0
-+  __TEXT.__gcc_except_tab: 0x3e18
-+  __TEXT.__ustring: 0x4352
-+  __TEXT.__unwind_info: 0xe650
-+  __TEXT.__eh_frame: 0x9f38
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x1ac8
-   __DATA_CONST.__objc_nlclslist: 0x8
-   __DATA_CONST.__objc_catlist: 0x108
--  __DATA_CONST.__objc_protolist: 0x548
-+  __DATA_CONST.__objc_protolist: 0x550
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xf768
--  __DATA_CONST.__objc_protorefs: 0x1e0
--  __DATA_CONST.__objc_superrefs: 0xc78
-+  __DATA_CONST.__objc_selrefs: 0xf7e8
-+  __DATA_CONST.__objc_protorefs: 0x1e8
-+  __DATA_CONST.__objc_superrefs: 0xc88
-   __DATA_CONST.__objc_arraydata: 0xd88
--  __DATA_CONST.__got: 0x4778
--  __AUTH_CONST.__const: 0x11220
--  __AUTH_CONST.__cfstring: 0x2ba80
--  __AUTH_CONST.__objc_const: 0x3e5a0
-+  __DATA_CONST.__got: 0x47b0
-+  __AUTH_CONST.__const: 0x11240
-+  __AUTH_CONST.__cfstring: 0x2bc40
-+  __AUTH_CONST.__objc_const: 0x3e5c8
-   __AUTH_CONST.__weak_auth_got: 0x8
-   __AUTH_CONST.__objc_intobj: 0x1bc0
-   __AUTH_CONST.__objc_arrayobj: 0x498
-   __AUTH_CONST.__objc_dictobj: 0xc8
-   __AUTH_CONST.__objc_floatobj: 0x30
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x3598
-+  __AUTH_CONST.__auth_got: 0x3628
-   __AUTH.__objc_data: 0x8000
-   __AUTH.__data: 0xd70
-   __DATA.__objc_ivar: 0x1d5c
--  __DATA.__data: 0xb568
--  __DATA.__bss: 0xa1d8
-+  __DATA.__data: 0xb5d8
-+  __DATA.__bss: 0xa1e8
-   __DATA.__common: 0xf8
-   __DATA_DIRTY.__objc_data: 0x9b20
-   __DATA_DIRTY.__data: 0x1698
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 23969
--  Symbols:   38083
+-  Symbols:   32297
 -  CStrings:  13205
 +  Functions: 24015
-+  Symbols:   38154
++  Symbols:   32357
 +  CStrings:  13237
- 
 Symbols:
 + +[WFHealthKitAccessResource userInterfaceClasses]
 + +[WFHealthKitAccessResource userInterfaceProtocol]
@@ -484,18 +435,6 @@ Symbols:
 + ___getAVSystemController_IsSystemSoundsAndHapticsVolumeFollowingRingtoneVolumeAttributeSymbolLoc_block_invoke
 + _getAVSystemController_IsAlarmVolumeFollowingRingtoneVolumeAttributeSymbolLoc.ptr
 + _getAVSystemController_IsSystemSoundsAndHapticsVolumeFollowingRingtoneVolumeAttributeSymbolLoc.ptr
-+ _objc_msgSend$areWebContentRestrictionsEnabled
-+ _objc_msgSend$fileArchivingLocation
-+ _objc_msgSend$isRateLimitedDeviceDetail
-+ _objc_msgSend$linkValueFromParameterState:action:forUseCase:
-+ _objc_msgSend$missingLocationErrorWithMissingOrigin:missingDestination:
-+ _objc_msgSend$requestHealthKitAuthorizationWithCompletionHandler:
-+ _objc_msgSend$requestHealthKitAuthorizationWithResourceDefinition:completionHandler:
-+ _objc_msgSend$setAlarmsAndTimersVolume:
-+ _objc_msgSend$setAlertsAndSystemSoundsVolume:
-+ _objc_msgSend$setAttribute:forKey:error:
-+ _objc_msgSend$setRenderAsMarkdown:
-+ _objc_msgSend$wf_contentItemClassUsingOwnEntityMetadata
 + _symbolic _____Sg 12ModelCatalog17UseCaseIdentifierV
 + _symbolic _____Sg_ABt 10ContentKit21WFGenerativeModelNameO
 + _symbolic ______pSg 24GenerativePartnerService11LLMProviderP
@@ -835,7 +774,6 @@ Symbols:
 - __OBJC_$_INSTANCE_METHODS_WFAskLLMAction(ActionKit|ActionKit1)
 - ___78-[WFHealthKitAccessResource makeAvailableWithUserInterface:completionHandler:]_block_invoke
 - ___78-[WFHealthKitAccessResource makeAvailableWithUserInterface:completionHandler:]_block_invoke_2
-- _objc_msgSend$linkValueFromParameterState:action:
 CStrings:
 + "%s Failed to set alarm volume coupling attribute: %@"
 + "%s Failed to set system sounds volume coupling attribute: %@"

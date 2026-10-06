@@ -2,33 +2,36 @@
 
 > `/System/Library/PreferenceBundles/AppManagedFeaturesSettings.bundle/AppManagedFeaturesSettings`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__cstring`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9c84` | `0x9d64` | **`+0xe0`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__cstring`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -46.0.7.0.0
--  __TEXT.__text: 0x9c84
 +46.0.15.0.0
-+  __TEXT.__text: 0x9d64
-   __TEXT.__auth_stubs: 0xbf0
-   __TEXT.__objc_stubs: 0xc0
-   __TEXT.__const: 0x584
 Functions:
 ~ sub_3238 : 2556 -> 2812
 ~ sub_4a54 -> sub_4b54 : 700 -> 668

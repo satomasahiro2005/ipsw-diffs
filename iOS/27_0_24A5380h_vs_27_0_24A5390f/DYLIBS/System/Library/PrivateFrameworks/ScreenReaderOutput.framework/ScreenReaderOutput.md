@@ -2,110 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/ScreenReaderOutput.framework/ScreenReaderOutput`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__oslogstring`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_arrayobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x2070` | `0x360` | **`-0x1d10`** |
+| `__DATA_DIRTY.__objc_data` | `—` | `0x1d10` | **`+0x1d10`** |
+| `__DATA_DIRTY.__data` | `—` | `0xc20` | **`+0xc20`** |
+| `__AUTH.__data` | `0xc40` | `0x80` | **`-0xbc0`** |
+| `__TEXT.__text` | `0x9c314` | `0x9c970` | **`+0x65c`** |
+| `__DATA_DIRTY.__bss` | `—` | `0x148` | **`+0x148`** |
+| `__DATA.__bss` | `0x1208` | `0x1100` | **`-0x108`** |
+| `__AUTH_CONST.__objc_const` | `0xbbe0` | `0xbc58` | **`+0x78`** |
+| `__TEXT.__cstring` | `0x59c1` | `0x5a33` | **`+0x72`** |
+| `__AUTH_CONST.__cfstring` | `0x5460` | `0x54c0` | **`+0x60`** |
+| `__DATA.__data` | `0x16e0` | `0x1680` | **`-0x60`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4728` | `0x4770` | **`+0x48`** |
+| `__TEXT.__objc_methlist` | `0x8fc0` | `0x9000` | **`+0x40`** |
+| `__TEXT.__const` | `0x184c` | `0x183c` | **`-0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x192c` | `0x193c` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x28a8` | `0x28b8` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x8bc` | `0x8c8` | **`+0xc`** |
+
+### Other Changes
 
 ```diff
 
 -460.0.0.0.0
--  __TEXT.__text: 0x9c314
--  __TEXT.__objc_methlist: 0x8fc0
--  __TEXT.__const: 0x184c
--  __TEXT.__cstring: 0x59c1
 +462.0.0.0.0
-+  __TEXT.__text: 0x9c970
-+  __TEXT.__objc_methlist: 0x9000
-+  __TEXT.__const: 0x183c
-+  __TEXT.__cstring: 0x5a33
-   __TEXT.__swift5_typeref: 0xeec
-   __TEXT.__constg_swiftt: 0x960
-   __TEXT.__swift5_builtin: 0xb4
 
-   __TEXT.__swift_as_ret: 0x5c
-   __TEXT.__swift_as_cont: 0x9c
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__gcc_except_tab: 0x192c
-+  __TEXT.__gcc_except_tab: 0x193c
-   __TEXT.__ustring: 0x9e
--  __TEXT.__unwind_info: 0x28a8
-+  __TEXT.__unwind_info: 0x28b8
-   __TEXT.__eh_frame: 0xa30
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x140
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4728
-+  __DATA_CONST.__objc_selrefs: 0x4770
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_superrefs: 0x210
-   __DATA_CONST.__objc_arraydata: 0x380
-   __DATA_CONST.__got: 0x790
-   __AUTH_CONST.__const: 0x32a0
--  __AUTH_CONST.__cfstring: 0x5460
--  __AUTH_CONST.__objc_const: 0xbbe0
-+  __AUTH_CONST.__cfstring: 0x54c0
-+  __AUTH_CONST.__objc_const: 0xbc58
-   __AUTH_CONST.__objc_intobj: 0xa38
-   __AUTH_CONST.__objc_dictobj: 0xa0
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__auth_got: 0x1098
--  __AUTH.__objc_data: 0x2070
--  __AUTH.__data: 0xc40
--  __DATA.__objc_ivar: 0x8bc
--  __DATA.__data: 0x16e0
--  __DATA.__bss: 0x1208
-+  __AUTH.__objc_data: 0x360
-+  __AUTH.__data: 0x80
-+  __DATA.__objc_ivar: 0x8c8
-+  __DATA.__data: 0x1680
-+  __DATA.__bss: 0x1100
-   __DATA.__common: 0x20
-+  __DATA_DIRTY.__objc_data: 0x1d10
-+  __DATA_DIRTY.__data: 0xc20
-+  __DATA_DIRTY.__bss: 0x148
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3967
--  Symbols:   7758
+-  Symbols:   5758
 -  CStrings:  1059
 +  Functions: 3973
-+  Symbols:   7775
++  Symbols:   5768
 +  CStrings:  1062
- 
 Symbols:
 + -[SCRO2DBrailleCanvas brailleCellData]
 + -[SCROBrailleDisplay releaseImageLock]
@@ -187,13 +118,6 @@ Symbols:
 + _OBJC_IVAR_$_SCROBrailleUIBrailleAreaView._captionOverride
 + ___38-[SCROBrailleDisplay releaseImageLock]_block_invoke
 + _kSCROBrailleDisplayModelIdentifierForPlist
-+ _objc_msgSend$captionOverride
-+ _objc_msgSend$dataWithLength:
-+ _objc_msgSend$loadContent:cursor:caption:
-+ _objc_msgSend$modelIdentifierForPlist
-+ _objc_msgSend$mutableBytes
-+ _objc_msgSend$releaseImageLock
-+ _objc_msgSend$setSharedSurfaceImageLock:
 - GCC_except_table1060
 - GCC_except_table1128
 - GCC_except_table1156

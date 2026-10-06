@@ -2,110 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/PhotoImaging.framework/PhotoImaging`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x27cc3c` | `0x29bdd0` | **`+0x1f194`** |
+| `__TEXT.__cstring` | `0x46f77` | `0x4a6de` | **`+0x3767`** |
+| `__AUTH_CONST.__cfstring` | `0x26e40` | `0x29bc0` | **`+0x2d80`** |
+| `__AUTH_CONST.__objc_const` | `0x286f0` | `0x29ad0` | **`+0x13e0`** |
+| `__TEXT.__oslogstring` | `0x6cef` | `0x7d58` | **`+0x1069`** |
+| `__TEXT.__objc_methlist` | `0x165e0` | `0x173c8` | **`+0xde8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb5d0` | `0xbca0` | **`+0x6d0`** |
+| `__AUTH.__objc_data` | `0x378` | `0x968` | **`+0x5f0`** |
+| `__DATA.__bss` | `0x1600` | `0x1a80` | **`+0x480`** |
+| `__DATA_CONST.__objc_arraydata` | `0x9350` | `0x9718` | **`+0x3c8`** |
+| `__TEXT.__unwind_info` | `0x5898` | `0x5c58` | **`+0x3c0`** |
+| `__DATA_CONST.__const` | `0x4128` | `0x44d0` | **`+0x3a8`** |
+| `__TEXT.__gcc_except_tab` | `0x4b6c` | `0x4ee0` | **`+0x374`** |
+| `__AUTH_CONST.__const` | `0x5320` | `0x5648` | **`+0x328`** |
+| `__TEXT.__const` | `0x8a7c` | `0x8d04` | **`+0x288`** |
+| `__DATA_CONST.__got` | `0x25c0` | `0x2830` | **`+0x270`** |
+| `__AUTH_CONST.__objc_intobj` | `0x1488` | `0x1668` | **`+0x1e0`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x558` | `0x6c0` | **`+0x168`** |
+| `__AUTH_CONST.__objc_dictobj` | `0x5b18` | `0x5c58` | **`+0x140`** |
+| `__DATA.__data` | `0x16f0` | `0x17f8` | **`+0x108`** |
+| `__DATA_DIRTY.__objc_data` | `0xa7a0` | `0xa890` | **`+0xf0`** |
+| `__DATA_CONST.__objc_classlist` | `0x10f0` | `0x11a0` | **`+0xb0`** |
+| `__DATA.__objc_ivar` | `0x1594` | `0x1600` | **`+0x6c`** |
+| `__TEXT.__eh_frame` | `0x9f0` | `0xa50` | **`+0x60`** |
+| `__TEXT.__swift5_assocty` | `0x48` | `0x90` | **`+0x48`** |
+| `__DATA_CONST.__objc_superrefs` | `0x710` | `0x750` | **`+0x40`** |
+| `__TEXT.__swift5_typeref` | `0x299` | `0x2d8` | **`+0x3f`** |
+| `__TEXT.__swift5_proto` | `0x7c` | `0xa0` | **`+0x24`** |
+| `__TEXT.__constg_swiftt` | `0x210` | `0x230` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x3b8` | `0x3d4` | **`+0x1c`** |
+| `__TEXT.__swift5_builtin` | `0x64` | `0x78` | **`+0x14`** |
+| `__AUTH_CONST.__auth_got` | `0x14f8` | `0x1508` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x190` | `0x1a0` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x34` | `0x38` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.234.0.0
--  __TEXT.__text: 0x27cc3c
 +912.0.235.0.0
-+  __TEXT.__text: 0x29bdd0
-   __TEXT.__delay_helper: 0x1f4
--  __TEXT.__objc_methlist: 0x165e0
--  __TEXT.__const: 0x8a7c
-+  __TEXT.__objc_methlist: 0x173c8
-+  __TEXT.__const: 0x8d04
-   __TEXT.__dlopen_cstrs: 0x2a2
--  __TEXT.__swift5_typeref: 0x299
--  __TEXT.__cstring: 0x46f77
--  __TEXT.__constg_swiftt: 0x210
-+  __TEXT.__swift5_typeref: 0x2d8
-+  __TEXT.__cstring: 0x4a6de
-+  __TEXT.__constg_swiftt: 0x230
-   __TEXT.__swift5_reflstr: 0x35f
--  __TEXT.__swift5_fieldmd: 0x3b8
--  __TEXT.__swift5_builtin: 0x64
-+  __TEXT.__swift5_fieldmd: 0x3d4
-+  __TEXT.__swift5_builtin: 0x78
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__swift5_assocty: 0x48
--  __TEXT.__oslogstring: 0x6cef
--  __TEXT.__swift5_proto: 0x7c
--  __TEXT.__swift5_types: 0x34
-+  __TEXT.__swift5_assocty: 0x90
-+  __TEXT.__oslogstring: 0x7d58
-+  __TEXT.__swift5_proto: 0xa0
-+  __TEXT.__swift5_types: 0x38
-   __TEXT.__swift_as_entry: 0x14
-   __TEXT.__swift_as_ret: 0x14
-   __TEXT.__swift_as_cont: 0x28
-   __TEXT.__swift5_capture: 0x50
--  __TEXT.__gcc_except_tab: 0x4b6c
--  __TEXT.__unwind_info: 0x5898
--  __TEXT.__eh_frame: 0x9f0
-+  __TEXT.__gcc_except_tab: 0x4ee0
-+  __TEXT.__unwind_info: 0x5c58
-+  __TEXT.__eh_frame: 0xa50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4128
--  __DATA_CONST.__objc_classlist: 0x10f0
-+  __DATA_CONST.__const: 0x44d0
-+  __DATA_CONST.__objc_classlist: 0x11a0
-   __DATA_CONST.__objc_catlist: 0x48
--  __DATA_CONST.__objc_protolist: 0x190
-+  __DATA_CONST.__objc_protolist: 0x1a0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb5d0
-+  __DATA_CONST.__objc_selrefs: 0xbca0
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__objc_superrefs: 0x710
--  __DATA_CONST.__objc_arraydata: 0x9350
--  __DATA_CONST.__got: 0x25c0
--  __AUTH_CONST.__const: 0x5320
--  __AUTH_CONST.__cfstring: 0x26e40
--  __AUTH_CONST.__objc_const: 0x286f0
-+  __DATA_CONST.__objc_superrefs: 0x750
-+  __DATA_CONST.__objc_arraydata: 0x9718
-+  __DATA_CONST.__got: 0x2830
-+  __AUTH_CONST.__const: 0x5648
-+  __AUTH_CONST.__cfstring: 0x29bc0
-+  __AUTH_CONST.__objc_const: 0x29ad0
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__objc_intobj: 0x1488
--  __AUTH_CONST.__objc_dictobj: 0x5b18
-+  __AUTH_CONST.__objc_intobj: 0x1668
-+  __AUTH_CONST.__objc_dictobj: 0x5c58
-   __AUTH_CONST.__objc_doubleobj: 0xe10
--  __AUTH_CONST.__objc_arrayobj: 0x558
-+  __AUTH_CONST.__objc_arrayobj: 0x6c0
-   __AUTH_CONST.__objc_floatobj: 0xd0
--  __AUTH_CONST.__auth_got: 0x14f8
--  __AUTH.__objc_data: 0x378
--  __DATA.__objc_ivar: 0x1594
--  __DATA.__data: 0x16f0
--  __DATA_DIRTY.__objc_data: 0xa7a0
-+  __AUTH_CONST.__auth_got: 0x1508
-+  __AUTH.__objc_data: 0x968
-+  __DATA.__objc_ivar: 0x1600
-+  __DATA.__data: 0x17f8
-+  __DATA_DIRTY.__objc_data: 0xa890
-   __DATA_DIRTY.__data: 0x178
-   __DATA_DIRTY.__bss: 0x258
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9139
--  Symbols:   20628
+-  Symbols:   15832
 -  CStrings:  7103
 +  Functions: 9495
-+  Symbols:   21410
++  Symbols:   16415
 +  CStrings:  7578
- 
 Symbols:
 + +[PICinematicVideoComputeDisparityGenerator usingSharedDisparityProviderForQuality:size:globalRenderingMetadata:perform:error:]
 + +[PICinematicVideoRefinementProcessor requiredPreRollDuration]
@@ -884,206 +832,6 @@ Symbols:
 + _kCMITextureStyleTuningBlendThreshold_Key
 + _kCMITextureStyleTuningFilmGrainEffect_Key
 + _kCMITextureStyleTuningGrainSourcePreset_Key
-+ _objc_msgSend$_buildPreviewPipeline:primary:adjustment:cinematography:highQuality:error:
-+ _objc_msgSend$_buildRefinedPipeline:primary:adjustment:cinematography:highQuality:error:
-+ _objc_msgSend$_buildTextureStylesPipeline:input:error:
-+ _objc_msgSend$_focusDisparityFromMetadataItems:disparityBuffer:renderTime:focusDisparity:error:
-+ _objc_msgSend$_generationOfDictionaryRepresentation:
-+ _objc_msgSend$_snapshot
-+ _objc_msgSend$accumulatedStateDescriptor
-+ _objc_msgSend$addDetectionAndStartTrackingRect:time:colorBuffer:
-+ _objc_msgSend$addDetectionForNextFrameAt:colorBuffer:
-+ _objc_msgSend$addPhotographicStyleApplyV2ToPipeline:options:primaryInput:styleInput:adjustmentInput:assetMedia:error:
-+ _objc_msgSend$addPhotographicStyleLearnV2ToPipeline:options:primaryInput:adjustmentInput:assetMedia:error:
-+ _objc_msgSend$addPixelBuffer:forTime:
-+ _objc_msgSend$addTextureStyleToPipeline:options:name:primaryInput:adjustmentInput:error:
-+ _objc_msgSend$addTextureStyleToPipeline:options:name:primaryInput:adjustmentInput:linearThumbnailInput:error:
-+ _objc_msgSend$addTextureStyleToPipeline:options:name:primaryInput:adjustmentInput:semanticStyleAdjustmentExpression:linearThumbnailInput:error:
-+ _objc_msgSend$adjustmentInfoDescriptor
-+ _objc_msgSend$allowedEffectTypesForUsage:
-+ _objc_msgSend$arrayWithObject:
-+ _objc_msgSend$avMetadataItems
-+ _objc_msgSend$blendedTuningFrom:to:intensity:blendThreshold:effectiveIntensityOut:
-+ _objc_msgSend$bloomConfiguration
-+ _objc_msgSend$captureMode
-+ _objc_msgSend$captureType
-+ _objc_msgSend$cinematicVideoHighQuality
-+ _objc_msgSend$cinematicVideoUseRefinedCinematography
-+ _objc_msgSend$cinematographyFrameFromMetadataItems:error:
-+ _objc_msgSend$computeMinimumInputRegionInFullImageCoords:
-+ _objc_msgSend$connectPhotographicStyleV2ToPipeline:name:primaryInput:adjustmentInput:assetMedia:isVideo:
-+ _objc_msgSend$controlDataWithPortraitVideoV2Adjustment:
-+ _objc_msgSend$createMemoryResource
-+ _objc_msgSend$debugEnableTextureStyleTiledRendering
-+ _objc_msgSend$decodeIntegerForKey:
-+ _objc_msgSend$defaultEffectOrderForPreset:
-+ _objc_msgSend$defaultStyleForCastType:smartStyleRenderingVersion:
-+ _objc_msgSend$defaultTextureStyleDictionaryForCast:
-+ _objc_msgSend$defaultTextureStyleDictionaryForPreset:
-+ _objc_msgSend$defaultTextureStyleForPresetName:
-+ _objc_msgSend$defaultTextureStyleForSmartStyleCastType:
-+ _objc_msgSend$descriptorForBloomWithTuningDictionary:
-+ _objc_msgSend$descriptorForDiffusionWithTuningDictionary:
-+ _objc_msgSend$descriptorForEffectName:tuningDictionary:semanticStyleProperties:semanticStyleInfo:
-+ _objc_msgSend$descriptorForFilmGrainWithTuningDictionary:semanticStyleInfo:
-+ _objc_msgSend$descriptorForGlowWithTuningDictionary:semanticStyleProperties:semanticStyleInfo:
-+ _objc_msgSend$descriptorForHalationWithTuningDictionary:semanticStyleInfo:
-+ _objc_msgSend$descriptorForMattifyWithTuningDictionary:
-+ _objc_msgSend$descriptorForSkinSmoothingWithTuningDictionary:
-+ _objc_msgSend$descriptorForUnderEyeBrighteningWithTuningDictionary:
-+ _objc_msgSend$deserializeState:error:
-+ _objc_msgSend$diffusionConfiguration
-+ _objc_msgSend$disparity16h
-+ _objc_msgSend$disparityBufferCache
-+ _objc_msgSend$disparityForColorBuffer:timedRenderingMetadata:time:outputBuffer:
-+ _objc_msgSend$disparityPixelFormat
-+ _objc_msgSend$disparityProvider
-+ _objc_msgSend$disparitySizeForSettings:
-+ _objc_msgSend$effectDescriptorsForPreset:grainIntensity:tuningDictionary:usage:semanticStyleProperties:semanticStyleInfo:
-+ _objc_msgSend$effectTypeToEffectName:
-+ _objc_msgSend$embedProvenanceData
-+ _objc_msgSend$enableCinematicEverywhere
-+ _objc_msgSend$encodeInteger:forKey:
-+ _objc_msgSend$endInputs
-+ _objc_msgSend$exchangeObjectAtIndex:withObjectAtIndex:
-+ _objc_msgSend$expectedInputTime
-+ _objc_msgSend$extendedDisplayP3ColorSpace
-+ _objc_msgSend$extendedLinearGrayColorSpace
-+ _objc_msgSend$faceROI
-+ _objc_msgSend$filmGrainConfiguration
-+ _objc_msgSend$filmGrainSeed
-+ _objc_msgSend$focusDisparityForFrame:disparityBuffer:
-+ _objc_msgSend$focusDistance
-+ _objc_msgSend$focusDistanceAtTime:disparityBuffer:
-+ _objc_msgSend$generation
-+ _objc_msgSend$getRequiredMemorySize
-+ _objc_msgSend$globalToneCurveUInt16Data
-+ _objc_msgSend$glowConfiguration
-+ _objc_msgSend$grain
-+ _objc_msgSend$grainIntensityKey
-+ _objc_msgSend$halationChroma
-+ _objc_msgSend$halationConfiguration
-+ _objc_msgSend$hardwareModel
-+ _objc_msgSend$initWithGeneration:
-+ _objc_msgSend$initWithImageMediaType:temporality:
-+ _objc_msgSend$initWithOptionalMetalCommandQueue:
-+ _objc_msgSend$initWithQuality:globalMetadata:inputSize:
-+ _objc_msgSend$initWithRequiredChannels:optionalChannels:personData:
-+ _objc_msgSend$initWithScript:
-+ _objc_msgSend$initWithSettings:
-+ _objc_msgSend$initWithSize:quality:
-+ _objc_msgSend$initWithTexture:regionInFullImageCoords:
-+ _objc_msgSend$initWithTuningDictionary:
-+ _objc_msgSend$initWithUsage:
-+ _objc_msgSend$initWithUsage:metalCommandQueue:
-+ _objc_msgSend$initWithValue:format:
-+ _objc_msgSend$initWithtype:parameters:
-+ _objc_msgSend$inputChannels:
-+ _objc_msgSend$inputConfigurationForEffectType:isVideo:
-+ _objc_msgSend$inputLinearImage
-+ _objc_msgSend$inputMasks
-+ _objc_msgSend$inputNames
-+ _objc_msgSend$inputRequirementsForUsage:
-+ _objc_msgSend$instanceMaskReferenceKey
-+ _objc_msgSend$isAvailable
-+ _objc_msgSend$isAvailableForTesting
-+ _objc_msgSend$isChannelRequired:
-+ _objc_msgSend$isEqualToConfiguration:
-+ _objc_msgSend$isInitialized
-+ _objc_msgSend$isNextFrameAvailable
-+ _objc_msgSend$isUsageVideo:
-+ _objc_msgSend$linearHighKey
-+ _objc_msgSend$linearMixForBG:linearMixForSkin:saturation:forStyle:
-+ _objc_msgSend$linearThumbnailChannel
-+ _objc_msgSend$loadCinematographyScriptWithVideoURLString:changesDictionary:error:
-+ _objc_msgSend$maskTypeFromIndex:
-+ _objc_msgSend$matchesUsage:metalCommandQueue:
-+ _objc_msgSend$mattifyConfiguration:
-+ _objc_msgSend$maximumLookaheadDuration
-+ _objc_msgSend$numberOfPersons
-+ _objc_msgSend$numberWithUnsignedInt:
-+ _objc_msgSend$opaquePersonInfo
-+ _objc_msgSend$optionalChannels
-+ _objc_msgSend$personDataFromDictionary:
-+ _objc_msgSend$personInputDataArrayFromLivePhotoMetadataAndStatsTracks:faceAttitudesMetadataTrack:effectsStatsTrack:effectsToRender:
-+ _objc_msgSend$personInputDataFromStillProperties:
-+ _objc_msgSend$personInputDataFromVideoProperties:effectDescriptors:
-+ _objc_msgSend$personInstances
-+ _objc_msgSend$personInstancesChannel
-+ _objc_msgSend$photographicStyleV2Capable
-+ _objc_msgSend$portType
-+ _objc_msgSend$prepareForConfiguration:controlData:error:
-+ _objc_msgSend$preset
-+ _objc_msgSend$presetKey
-+ _objc_msgSend$processNextDisparityBuffer:
-+ _objc_msgSend$processorUsage
-+ _objc_msgSend$purgeResources
-+ _objc_msgSend$refinement
-+ _objc_msgSend$regionInFullImageCoords
-+ _objc_msgSend$regionToRender
-+ _objc_msgSend$removePixelBufferForTime:
-+ _objc_msgSend$renderScaleForInput:geometry:outputScale:
-+ _objc_msgSend$requiredChannels
-+ _objc_msgSend$requiredPreRollDuration
-+ _objc_msgSend$requiresPersonData
-+ _objc_msgSend$resourceStatusForSettings:
-+ _objc_msgSend$script
-+ _objc_msgSend$semanticStyleCastChannel
-+ _objc_msgSend$semanticStyleColorChannel
-+ _objc_msgSend$semanticStylePropertiesFromVideoMetadata:keyTime:error:
-+ _objc_msgSend$serializeState:
-+ _objc_msgSend$setAllocatorBackend:
-+ _objc_msgSend$setCastType:
-+ _objc_msgSend$setCinematicVideoUseRefinedCinematography:
-+ _objc_msgSend$setColorBias:
-+ _objc_msgSend$setCscYCCConversionEnabled:
-+ _objc_msgSend$setDisparityBufferCache:
-+ _objc_msgSend$setDisparityProvider:
-+ _objc_msgSend$setEffectsToRender:
-+ _objc_msgSend$setEmbedProvenanceData:
-+ _objc_msgSend$setEnableCinematicEverywhere:
-+ _objc_msgSend$setEnableSkinSmoothingMultiPersonBlending:
-+ _objc_msgSend$setEnforceImmediateDealloc:
-+ _objc_msgSend$setExternalMemoryResource:
-+ _objc_msgSend$setFullImageSize:
-+ _objc_msgSend$setGrainIntensity:
-+ _objc_msgSend$setHalationChroma:
-+ _objc_msgSend$setInputLinearImage:
-+ _objc_msgSend$setInputLinearImageMetadata:
-+ _objc_msgSend$setInputMasks:
-+ _objc_msgSend$setInputPersonData:
-+ _objc_msgSend$setInputSkinSmoothingFaceDetections:
-+ _objc_msgSend$setInstanceMask:
-+ _objc_msgSend$setIsInitialized:
-+ _objc_msgSend$setLinearImageHighKey:
-+ _objc_msgSend$setLinearMixForBG:
-+ _objc_msgSend$setLinearMixForSkin:
-+ _objc_msgSend$setObject:atIndexedSubscript:
-+ _objc_msgSend$setPreset:
-+ _objc_msgSend$setRefinement:
-+ _objc_msgSend$setRegionToRender:
-+ _objc_msgSend$setSaturationFromSmartStyle:
-+ _objc_msgSend$setScript:
-+ _objc_msgSend$setStreamingMode:
-+ _objc_msgSend$setTextureStyleIntensity:
-+ _objc_msgSend$setToneBias:
-+ _objc_msgSend$setYccMatrixType:
-+ _objc_msgSend$setupProcessor
-+ _objc_msgSend$skinMatteCorrupted
-+ _objc_msgSend$skinSmoothingConfiguration:
-+ _objc_msgSend$textureStyleProperties
-+ _objc_msgSend$textureStyleSchema
-+ _objc_msgSend$textureStyleVideoPropertiesFromTextureStyleData:faceInfoData:error:
-+ _objc_msgSend$timedRenderingMetadataFromCinematographyMetadataItems:globalRenderingData:error:
-+ _objc_msgSend$tuningDictionary:withFilmGrainFromTuning:
-+ _objc_msgSend$tuningDictionaryForHardwareModel:portType:captureMode:preset:captureType:
-+ _objc_msgSend$underEyeBrighteningConfiguration:
-+ _objc_msgSend$usage
-+ _objc_msgSend$usingSharedCinematographyScriptSnapshotForDictionaryRepresentation:perform:
-+ _objc_msgSend$usingSharedDisparityProviderForQuality:size:globalRenderingMetadata:perform:error:
-+ _objc_msgSend$usingSharedProcessorWithUsage:isVideo:commandQueue:perform:
-+ _objc_msgSend$videoFacesInfoData
-+ _objc_msgSend$videoOpaquePersonsInfo
 + _symbolic Say_____G So20PITextureStylePreseta
 + _symbolic _____ So20PITextureStylePreseta
 + _symbolic _____y_____G s23_ContiguousArrayStorageC So20PITextureStylePreseta
@@ -1285,7 +1033,6 @@ Symbols:
 - GCC_except_table8456
 - GCC_except_table859
 - GCC_except_table862
-- _objc_msgSend$defaultStyleForCastType:
 - _type_layout_string So19PISemanticStyleCasta
 CStrings:
 + "#"

@@ -2,73 +2,38 @@
 
 > `/usr/lib/libBasebandManagerDAL.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ed3ec` | `0x1e2418` | **`-0xafd4`** |
+| `__TEXT.__gcc_except_tab` | `0x2abd4` | `0x29b08` | **`-0x10cc`** |
+| `__TEXT.__cstring` | `0x5ed7` | `0x5b2d` | **`-0x3aa`** |
+| `__TEXT.__oslogstring` | `0xaa80` | `0xa882` | **`-0x1fe`** |
+| `__TEXT.__unwind_info` | `0x8350` | `0x8208` | **`-0x148`** |
+| `__TEXT.__const` | `0xedd8` | `0xeca8` | **`-0x130`** |
+| `__DATA.__data` | `0xa1c` | `0x978` | **`-0xa4`** |
+| `__DATA_CONST.__const` | `0x1970` | `0x18f0` | **`-0x80`** |
+| `__AUTH_CONST.__const` | `0xc940` | `0xc8d0` | **`-0x70`** |
+| `__AUTH_CONST.__auth_got` | `0x1818` | `0x17c8` | **`-0x50`** |
+| `__DATA.__common` | `0x110` | `0xc8` | **`-0x48`** |
+| `__AUTH_CONST.__cfstring` | `0x700` | `0x6c0` | **`-0x40`** |
+| `__DATA.__bss` | `0x16d0` | `0x16a0` | **`-0x30`** |
+| `__DATA_CONST.__got` | `0x1868` | `0x1838` | **`-0x30`** |
+| `__TEXT.__init_offsets` | `0x14c` | `0x138` | **`-0x14`** |
+| `__DATA_CONST.__weak_got` | `0x168` | `0x158` | **`-0x10`** |
+| `__DATA_DIRTY.__data` | `0x90` | `0x88` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 1585.0.0.0.0
--  __TEXT.__text: 0x1ed3ec
--  __TEXT.__init_offsets: 0x14c
-+  __TEXT.__text: 0x1e2418
-+  __TEXT.__init_offsets: 0x138
-   __TEXT.__objc_methlist: 0x3d4
--  __TEXT.__const: 0xedd8
-+  __TEXT.__const: 0xeca8
-   __TEXT.__dlopen_cstrs: 0x52
--  __TEXT.__gcc_except_tab: 0x2abd4
--  __TEXT.__oslogstring: 0xaa80
--  __TEXT.__cstring: 0x5ed7
--  __TEXT.__unwind_info: 0x8350
-+  __TEXT.__gcc_except_tab: 0x29b08
-+  __TEXT.__oslogstring: 0xa882
-+  __TEXT.__cstring: 0x5b2d
-+  __TEXT.__unwind_info: 0x8208
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1970
-+  __DATA_CONST.__const: 0x18f0
-   __DATA_CONST.__objc_classlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__weak_got: 0x168
-+  __DATA_CONST.__weak_got: 0x158
-   __DATA_CONST.__objc_selrefs: 0x4c0
-   __DATA_CONST.__objc_superrefs: 0x20
--  __DATA_CONST.__got: 0x1868
--  __AUTH_CONST.__const: 0xc940
--  __AUTH_CONST.__cfstring: 0x700
-+  __DATA_CONST.__got: 0x1838
-+  __AUTH_CONST.__const: 0xc8d0
-+  __AUTH_CONST.__cfstring: 0x6c0
-   __AUTH_CONST.__objc_const: 0x838
-   __AUTH_CONST.__weak_auth_got: 0x20
--  __AUTH_CONST.__auth_got: 0x1818
-+  __AUTH_CONST.__auth_got: 0x17c8
-   __AUTH.__objc_data: 0x1e0
-   __DATA.__objc_ivar: 0x3c
--  __DATA.__data: 0xa1c
--  __DATA.__bss: 0x16d0
--  __DATA.__common: 0x110
--  __DATA_DIRTY.__data: 0x90
-+  __DATA.__data: 0x978
-+  __DATA.__bss: 0x16a0
-+  __DATA.__common: 0xc8
-+  __DATA_DIRTY.__data: 0x88
-   __DATA_DIRTY.__common: 0x18
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CallKit.framework/CallKit
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libprotobuf-lite.dylib
-   - /usr/lib/libprotobuf.dylib
 -  Functions: 5241
--  Symbols:   9181
+-  Symbols:   9064
 -  CStrings:  2036
 +  Functions: 5219
-+  Symbols:   9132
++  Symbols:   9015
 +  CStrings:  1990
- 
 Symbols:
 + GCC_except_table263
 + GCC_except_table270

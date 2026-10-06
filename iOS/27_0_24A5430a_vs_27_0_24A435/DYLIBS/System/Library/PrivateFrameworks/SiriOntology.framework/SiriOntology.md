@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/SiriOntology.framework/SiriOntology`
 
+### Other Changes
+
 ```text
 Functions:
 ~ __ZNK4siri8ontology13UsoEntityNode27isValidSetSuccessorWithEdgeERKNS0_12UsoGraphNodeERKNS0_12UsoGraphEdgeEbb : 892 -> 900

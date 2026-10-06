@@ -2,91 +2,46 @@
 
 > `/System/Library/Frameworks/_RealityKit_ComputeGraph.framework/_RealityKit_ComputeGraph`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x51e80` | `0x5b628` | **`+0x97a8`** |
+| `__AUTH.__data` | `0xea0` | `0x1100` | **`+0x260`** |
+| `__TEXT.__const` | `0x1ee8` | `0x20f8` | **`+0x210`** |
+| `__TEXT.__eh_frame` | `0x2790` | `0x2960` | **`+0x1d0`** |
+| `__AUTH_CONST.__auth_got` | `0x1610` | `0x17c8` | **`+0x1b8`** |
+| `__DATA.__bss` | `0x1588` | `0x1740` | **`+0x1b8`** |
+| `__TEXT.__swift5_typeref` | `0xbc2` | `0xd64` | **`+0x1a2`** |
+| `__TEXT.__oslogstring` | `0x12c` | `0x25c` | **`+0x130`** |
+| `__DATA.__data` | `0xa90` | `0xbb0` | **`+0x120`** |
+| `__TEXT.__swift5_fieldmd` | `0xb0c` | `0xbe4` | **`+0xd8`** |
+| `__TEXT.__swift5_reflstr` | `0x76e` | `0x842` | **`+0xd4`** |
+| `__TEXT.__constg_swiftt` | `0x978` | `0xa44` | **`+0xcc`** |
+| `__TEXT.__unwind_info` | `0x11c0` | `0x1280` | **`+0xc0`** |
+| `__AUTH.__objc_data` | `0x260` | `0x300` | **`+0xa0`** |
+| `__AUTH_CONST.__objc_const` | `0x1a50` | `0x1ad8` | **`+0x88`** |
+| `__AUTH_CONST.__const` | `0x11f8` | `0x1240` | **`+0x48`** |
+| `__DATA.__common` | `0x1f8` | `0x1b0` | **`-0x48`** |
+| `__TEXT.__cstring` | `0xc05` | `0xc45` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x490` | `0x4a0` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0xa4` | `0xb0` | **`+0xc`** |
+| `__TEXT.__swift5_types` | `0xdc` | `0xe8` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x50` | `0x58` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -27.0.0.0.0
--  __TEXT.__text: 0x51e80
 +30.0.0.0.0
-+  __TEXT.__text: 0x5b628
-   __TEXT.__objc_methlist: 0xea4
--  __TEXT.__const: 0x1ee8
--  __TEXT.__cstring: 0xc05
--  __TEXT.__swift5_typeref: 0xbc2
-+  __TEXT.__const: 0x20f8
-+  __TEXT.__cstring: 0xc45
-+  __TEXT.__swift5_typeref: 0xd64
-   __TEXT.__swift5_capture: 0x1b8
--  __TEXT.__constg_swiftt: 0x978
--  __TEXT.__swift5_reflstr: 0x76e
--  __TEXT.__swift5_fieldmd: 0xb0c
--  __TEXT.__swift5_proto: 0xa4
--  __TEXT.__swift5_types: 0xdc
-+  __TEXT.__constg_swiftt: 0xa44
-+  __TEXT.__swift5_reflstr: 0x842
-+  __TEXT.__swift5_fieldmd: 0xbe4
-+  __TEXT.__swift5_proto: 0xb0
-+  __TEXT.__swift5_types: 0xe8
-   __TEXT.__swift5_types2: 0x8
-   __TEXT.__swift_as_entry: 0xd8
-   __TEXT.__swift_as_ret: 0xd8
-   __TEXT.__swift_as_cont: 0x32c
--  __TEXT.__oslogstring: 0x12c
-+  __TEXT.__oslogstring: 0x25c
-   __TEXT.__swift5_assocty: 0x60
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__unwind_info: 0x11c0
--  __TEXT.__eh_frame: 0x2790
-+  __TEXT.__unwind_info: 0x1280
-+  __TEXT.__eh_frame: 0x2960
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x158
--  __DATA_CONST.__objc_classlist: 0x50
-+  __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x90
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x968
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__got: 0x490
--  __AUTH_CONST.__const: 0x11f8
--  __AUTH_CONST.__objc_const: 0x1a50
--  __AUTH_CONST.__auth_got: 0x1610
--  __AUTH.__objc_data: 0x260
--  __AUTH.__data: 0xea0
-+  __DATA_CONST.__got: 0x4a0
-+  __AUTH_CONST.__const: 0x1240
-+  __AUTH_CONST.__objc_const: 0x1ad8
-+  __AUTH_CONST.__auth_got: 0x17c8
-+  __AUTH.__objc_data: 0x300
-+  __AUTH.__data: 0x1100
-   __DATA.__objc_ivar: 0x4
--  __DATA.__data: 0xa90
-+  __DATA.__data: 0xbb0
-   __DATA.__objc_stublist: 0x8
--  __DATA.__common: 0x1f8
--  __DATA.__bss: 0x1588
-+  __DATA.__common: 0x1b0
-+  __DATA.__bss: 0x1740
-   - /System/Library/Frameworks/ComputeGraph.framework/ComputeGraph
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/Metal.framework/Metal
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1243
--  Symbols:   3753
+-  Symbols:   3736
 -  CStrings:  45
 +  Functions: 1301
-+  Symbols:   4012
++  Symbols:   3994
 +  CStrings:  49
- 
 Symbols:
 + _$s10RealityKit10__AssetRefVSgWOh
 + _$s10RealityKit12MeshResourceC01_aB13_ComputeGraphE18flattenedPartCountSivg
@@ -370,7 +325,6 @@ Symbols:
 + __IVARS__TtCC24_RealityKit_ComputeGraph23OutputLowLevelInstances15BufferToTexture
 + __METACLASS_DATA__TtCC24_RealityKit_ComputeGraph23OutputLowLevelInstances15BufferToTexture
 + _associated conformance 24_RealityKit_ComputeGraph12RuntimeErrorOSHAASQ
-+ _objc_msgSend$supportsFamily:
 + _symbolic _____ 10RealityKit15TextureResourceC
 + _symbolic _____ 12ComputeGraph23BufferToTexturePipelineV
 + _symbolic _____ 17RealityFoundation11EntityQueryV

@@ -2,24 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/SonicAudioUnits.framework/SonicAudioUnits`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x44484` | `0x445f8` | **`+0x174`** |
+| `__DATA.__data` | `0x4cc` | `0x4d0` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -26100.26.26.301.0
--  __TEXT.__text: 0x44484
 +26110.26.36.301.0
-+  __TEXT.__text: 0x445f8
-   __TEXT.__objc_methlist: 0x2c
-   __TEXT.__const: 0x3d20
-   __TEXT.__gcc_except_tab: 0x1cfc
-
-   __AUTH.__objc_data: 0x50
-   __AUTH.__data: 0x8
-   __DATA.__objc_ivar: 0x4
--  __DATA.__data: 0x4cc
-+  __DATA.__data: 0x4d0
-   __DATA.__common: 0x6a258
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
 Functions:
 ~ __ZNK5ausdk9AUElement12GetParameterEj : 232 -> 236
 ~ __ZN5ausdk9AUElement12SetParameterEjfb : 300 -> 308

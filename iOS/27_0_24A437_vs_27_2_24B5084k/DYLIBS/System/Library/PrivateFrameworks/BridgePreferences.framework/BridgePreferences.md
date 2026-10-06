@@ -2,102 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/BridgePreferences.framework/BridgePreferences`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x397c0` | `0x3bd30` | **`+0x2570`** |
+| `__TEXT.__const` | `0x1954` | `0x1bb4` | **`+0x260`** |
+| `__AUTH_CONST.__objc_const` | `0x4f80` | `0x5180` | **`+0x200`** |
+| `__TEXT.__oslogstring` | `0x2018` | `0x21c8` | **`+0x1b0`** |
+| `__DATA.__bss` | `0x4e8` | `0x688` | **`+0x1a0`** |
+| `__AUTH_CONST.__const` | `0xb40` | `0xc50` | **`+0x110`** |
+| `__TEXT.__constg_swiftt` | `0x6bc` | `0x778` | **`+0xbc`** |
+| `__AUTH_CONST.__auth_got` | `0xa48` | `0xb00` | **`+0xb8`** |
+| `__TEXT.__unwind_info` | `0xdf0` | `0xea8` | **`+0xb8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2a88` | `0x2b30` | **`+0xa8`** |
+| `__AUTH.__data` | `0x400` | `0x4a0` | **`+0xa0`** |
+| `__TEXT.__objc_methlist` | `0x32a8` | `0x3348` | **`+0xa0`** |
+| `__TEXT.__swift5_fieldmd` | `0x374` | `0x410` | **`+0x9c`** |
+| `__DATA.__data` | `0x640` | `0x6d0` | **`+0x90`** |
+| `__TEXT.__swift5_reflstr` | `0x2ee` | `0x37e` | **`+0x90`** |
+| `__TEXT.__swift5_typeref` | `0x356` | `0x3d8` | **`+0x82`** |
+| `__AUTH.__objc_data` | `0x1578` | `0x15e8` | **`+0x70`** |
+| `__TEXT.__swift5_assocty` | `0x18` | `0x68` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x7d0` | `0x800` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0xf00` | `0xf28` | **`+0x28`** |
+| `__DATA.__common` | `0x30` | `0x48` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x1c0` | `0x1d0` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x78` | `0x88` | **`+0x10`** |
+| `__TEXT.__cstring` | `0x4782` | `0x4792` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x18` | `0x24` | **`+0xc`** |
+| `__TEXT.__swift5_types` | `0x50` | `0x5c` | **`+0xc`** |
+| `__DATA.__objc_ivar` | `0x2dc` | `0x2e4` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x18` | `0x20` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0xc8` | `0xd0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1359.9.0.0.0
--  __TEXT.__text: 0x382e0
--  __TEXT.__objc_methlist: 0x32a8
--  __TEXT.__const: 0x1954
 +1370.0.0.0.0
-+  __TEXT.__text: 0x3a778
-+  __TEXT.__objc_methlist: 0x3348
-+  __TEXT.__const: 0x1bb4
-   __TEXT.__gcc_except_tab: 0x4a4
--  __TEXT.__cstring: 0x4782
--  __TEXT.__oslogstring: 0x2018
-+  __TEXT.__cstring: 0x4792
-+  __TEXT.__oslogstring: 0x21c8
-   __TEXT.__dlopen_cstrs: 0x390
-   __TEXT.__ustring: 0x46
--  __TEXT.__swift5_typeref: 0x356
--  __TEXT.__constg_swiftt: 0x6bc
--  __TEXT.__swift5_types: 0x50
--  __TEXT.__swift5_reflstr: 0x2ee
--  __TEXT.__swift5_fieldmd: 0x374
-+  __TEXT.__swift5_typeref: 0x3d8
-+  __TEXT.__constg_swiftt: 0x778
-+  __TEXT.__swift5_types: 0x5c
-+  __TEXT.__swift5_reflstr: 0x37e
-+  __TEXT.__swift5_fieldmd: 0x410
-   __TEXT.__swift5_capture: 0x10c
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__swift5_proto: 0x18
-+  __TEXT.__swift5_proto: 0x24
-   __TEXT.__swift_as_entry: 0x8
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x14
--  __TEXT.__swift5_assocty: 0x18
--  __TEXT.__unwind_info: 0x1140
-+  __TEXT.__swift5_assocty: 0x68
-+  __TEXT.__unwind_info: 0x1240
-   __TEXT.__eh_frame: 0x310
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xf00
--  __DATA_CONST.__objc_classlist: 0x1c0
--  __DATA_CONST.__objc_protolist: 0x78
-+  __DATA_CONST.__const: 0xf28
-+  __DATA_CONST.__objc_classlist: 0x1d0
-+  __DATA_CONST.__objc_protolist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2a88
--  __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__objc_superrefs: 0xc8
-+  __DATA_CONST.__objc_selrefs: 0x2b30
-+  __DATA_CONST.__objc_protorefs: 0x20
-+  __DATA_CONST.__objc_superrefs: 0xd0
-   __DATA_CONST.__objc_arraydata: 0x140
--  __DATA_CONST.__got: 0x7d0
--  __AUTH_CONST.__const: 0xb40
-+  __DATA_CONST.__got: 0x800
-+  __AUTH_CONST.__const: 0xc50
-   __AUTH_CONST.__cfstring: 0x44a0
--  __AUTH_CONST.__objc_const: 0x4f80
-+  __AUTH_CONST.__objc_const: 0x5180
-   __AUTH_CONST.__objc_intobj: 0x90
-   __AUTH_CONST.__objc_doubleobj: 0x40
-   __AUTH_CONST.__objc_arrayobj: 0x30
-   __AUTH_CONST.__objc_dictobj: 0x50
--  __AUTH_CONST.__auth_got: 0xa48
--  __AUTH.__objc_data: 0x1578
--  __AUTH.__data: 0x400
--  __DATA.__objc_ivar: 0x2dc
--  __DATA.__data: 0x640
--  __DATA.__common: 0x30
-+  __AUTH_CONST.__auth_got: 0xb00
-+  __AUTH.__objc_data: 0x15e8
-+  __AUTH.__data: 0x4a0
-+  __DATA.__objc_ivar: 0x2e4
-+  __DATA.__data: 0x6d0
-+  __DATA.__common: 0x48
-   __DATA_DIRTY.__objc_data: 0xf0
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AccessoryNotifications.framework/AccessoryNotifications
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1422
--  Symbols:   3498
+-  Symbols:   2572
 -  CStrings:  855
 +  Functions: 1488
-+  Symbols:   3566
++  Symbols:   2626
 +  CStrings:  861
- 
 Symbols:
 + +[BPSFollowUpController removeSkippedPaneClassNamed:forDevice:]
 + +[BPSFollowUpController removeSkippedPaneClassNamedForCurrentDevice:]
@@ -142,27 +93,6 @@ Symbols:
 + _associated conformance 17BridgePreferences21StatefulAnimationViewV7SwiftUI0E0AA4BodyAdEP_AdE
 + _get_enum_tag_for_layout_string SSSgIegg_Sg
 + _get_witness_table 17BridgePreferences11PackageView33_A443055DC2E2A0F3E9C0C39948F24998LLV7SwiftUI0D0HPyHC
-+ _objc_msgSend$activePresentationController
-+ _objc_msgSend$animationForKey:
-+ _objc_msgSend$animationKeys
-+ _objc_msgSend$backdropView
-+ _objc_msgSend$beginTime
-+ _objc_msgSend$fromValue
-+ _objc_msgSend$hostViewController
-+ _objc_msgSend$isBeingDismissed
-+ _objc_msgSend$isCancelled
-+ _objc_msgSend$keyPath
-+ _objc_msgSend$mask
-+ _objc_msgSend$removeAnimationForKey:
-+ _objc_msgSend$removeSkippedPaneClassNamed:forDevice:
-+ _objc_msgSend$sendSubviewToBack:
-+ _objc_msgSend$setAlpha:
-+ _objc_msgSend$setBackdropView:
-+ _objc_msgSend$states
-+ _objc_msgSend$sublayers
-+ _objc_msgSend$superlayer
-+ _objc_msgSend$toState
-+ _objc_msgSend$toValue
 + _swift_bridgeObjectRelease_n
 + _swift_dynamicCastObjCClass
 + _swift_release_x1
@@ -182,13 +112,6 @@ Symbols:
 - -[BPSWelcomeOptinViewController viewIsAppearing:]
 - GCC_except_table61
 - __INSTANCE_METHODS__TtC17BridgePreferences20AnimationHostingView
-- _objc_msgSend$forceSingleColumnLayout
-- _objc_msgSend$isTwoColumnLayoutEnabled
-- _objc_msgSend$isViewSizeEligibleForTwoColumnLayout:safeAreaInsets:traitCollection:
-- _objc_msgSend$revalidateColumnLayoutIfNeeded
-- _objc_msgSend$safeAreaInsets
-- _objc_msgSend$setForceSingleColumnLayout:
-- _objc_msgSend$traitCollection
 CStrings:
 + "+[BPSFollowUpController removeSkippedPaneClassNamed:forDevice:]"
 + "Could not load animation archive '%{public}s'"

@@ -2,65 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/PhotosUIPrivate.framework/PhotosUIPrivate`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x58abe4` | `0x58aec4` | **`+0x2e0`** |
+| `__AUTH_CONST.__objc_const` | `0x858c0` | `0x858f0` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x34b5d` | `0x34b80` | **`+0x23`** |
+| `__AUTH_CONST.__cfstring` | `0x26980` | `0x269a0` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x50564` | `0x5057c` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2a6d0` | `0x2a6e0` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x5cdc` | `0x5ce0` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.111.0.0
--  __TEXT.__text: 0x58abe4
--  __TEXT.__objc_methlist: 0x50564
 +912.0.232.0.0
-+  __TEXT.__text: 0x58aec4
-+  __TEXT.__objc_methlist: 0x5057c
-   __TEXT.__const: 0x19740
-   __TEXT.__dlopen_cstrs: 0x69b
-   __TEXT.__swift5_typeref: 0x16768
 
-   __TEXT.__swift5_proto: 0xc04
-   __TEXT.__swift5_types: 0x774
-   __TEXT.__oslogstring: 0x14e37
--  __TEXT.__cstring: 0x34b5d
-+  __TEXT.__cstring: 0x34b80
-   __TEXT.__swift_as_entry: 0x264
-   __TEXT.__swift_as_ret: 0x264
-   __TEXT.__swift_as_cont: 0x588
-
-   __DATA_CONST.__objc_catlist2: 0x10
-   __DATA_CONST.__objc_protolist: 0x1428
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2a6d0
-+  __DATA_CONST.__objc_selrefs: 0x2a6e0
-   __DATA_CONST.__objc_protorefs: 0x508
-   __DATA_CONST.__objc_superrefs: 0x10f0
-   __DATA_CONST.__vfx_script_tbl: 0x10
-   __DATA_CONST.__objc_arraydata: 0x15f8
-   __DATA_CONST.__got: 0x5760
-   __AUTH_CONST.__const: 0x17a10
--  __AUTH_CONST.__cfstring: 0x26980
--  __AUTH_CONST.__objc_const: 0x858c0
-+  __AUTH_CONST.__cfstring: 0x269a0
-+  __AUTH_CONST.__objc_const: 0x858f0
-   __AUTH_CONST.__objc_arrayobj: 0xed0
-   __AUTH_CONST.__objc_intobj: 0x1638
-   __AUTH_CONST.__objc_dictobj: 0x398
-
-   __AUTH_CONST.__auth_got: 0x54d8
-   __AUTH.__objc_data: 0x19180
-   __AUTH.__data: 0x4fb8
--  __DATA.__objc_ivar: 0x5cdc
-+  __DATA.__objc_ivar: 0x5ce0
-   __DATA.__data: 0x14268
-   __DATA.__objc_stublist: 0x28
-   __DATA.__bss: 0x18110
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 41798
--  Symbols:   67614
+-  Symbols:   49114
 -  CStrings:  8029
 +  Functions: 41801
-+  Symbols:   67619
++  Symbols:   49117
 +  CStrings:  8030
- 
 Symbols:
 + -[PUOneUpSettings resetsAdoptedTilingViewGeometry]
 + -[PUOneUpSettings setResetsAdoptedTilingViewGeometry:]
@@ -333,8 +299,6 @@ Symbols:
 + GCC_except_table24905
 + GCC_except_table24921
 + _OBJC_IVAR_$_PUOneUpSettings._resetsAdoptedTilingViewGeometry
-+ _objc_msgSend$resetsAdoptedTilingViewGeometry
-+ _objc_msgSend$setResetsAdoptedTilingViewGeometry:
 - GCC_except_table12145
 - GCC_except_table12146
 - GCC_except_table12197

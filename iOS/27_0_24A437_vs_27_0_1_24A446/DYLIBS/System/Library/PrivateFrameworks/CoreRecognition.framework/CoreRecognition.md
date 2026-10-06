@@ -2,44 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/CoreRecognition.framework/CoreRecognition`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5b334` | `0x5b36c` | **`+0x38`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2078` | `0x2080` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x87a4` | `0x879c` | **`-0x8`** |
+| `__TEXT.__objc_methlist` | `0x23ec` | `0x23f4` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x14f0` | `0x14f8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -446.13.100.0.0
--  __TEXT.__text: 0x5a380
--  __TEXT.__objc_methlist: 0x23ec
 +446.13.102.0.0
-+  __TEXT.__text: 0x5a3b8
-+  __TEXT.__objc_methlist: 0x23f4
-   __TEXT.__const: 0x744
-   __TEXT.__cstring: 0x4b5f
-   __TEXT.__ustring: 0x1282
--  __TEXT.__gcc_except_tab: 0x87a4
-+  __TEXT.__gcc_except_tab: 0x879c
-   __TEXT.__oslogstring: 0x3d6
--  __TEXT.__unwind_info: 0x1658
-+  __TEXT.__unwind_info: 0x1660
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2078
-+  __DATA_CONST.__objc_selrefs: 0x2080
-   __DATA_CONST.__objc_superrefs: 0x60
-   __DATA_CONST.__objc_arraydata: 0x3dc0
-   __DATA_CONST.__got: 0x5a0
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1122
 -  Symbols:   2330
 +  Functions: 1123
 +  Symbols:   2333
-   CStrings:  2127
- 
 Symbols:
 + -[CRCameraReader previewInputOrientation]
 + GCC_except_table100

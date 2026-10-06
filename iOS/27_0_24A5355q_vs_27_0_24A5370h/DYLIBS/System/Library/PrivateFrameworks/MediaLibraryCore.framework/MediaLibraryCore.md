@@ -2,43 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/MediaLibraryCore.framework/MediaLibraryCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3a3d34` | `0x3a35f0` | **`-0x744`** |
+| `__TEXT.__unwind_info` | `0x8630` | `0x8648` | **`+0x18`** |
+| `__TEXT.__gcc_except_tab` | `0x2a670` | `0x2a684` | **`+0x14`** |
+
+### Other Changes
+
 ```diff
 
 -4026.100.61.0.0
--  __TEXT.__text: 0x3a3d34 sha256:309875b9b08d77f3048a2fe13dfbb234afa8000dbee4a5a2c7bed6b72063a42b
 +4026.100.67.0.0
-+  __TEXT.__text: 0x3a35f0 sha256:e537281ba6a946941f6fc64abd62199d452a3fdef1fdb277f3665578944dca3a
-   __TEXT.__const: 0xd282 sha256:a9dda2b442da8ee5d77b89413b3250a2fc86e7a24d13e5a38ebf5c7577cdcf80
--  __TEXT.__gcc_except_tab: 0x2a670 sha256:c3e7c9c1e7ba8978d1785651f2f94759fa07e723d02647390ab5bff249c551cb
-+  __TEXT.__gcc_except_tab: 0x2a684 sha256:a77a0a6539a3b0304c67a075bbb4f6cc145150aaec9e369d1ffe8b992aa78e38
-   __TEXT.__cstring: 0x5aae sha256:12984ddc80d46b2920afe258e9af85c65e63c1829128bfc92c582e8acde3eb2c
--  __TEXT.__unwind_info: 0x8630 sha256:e833610c850da19efa91cb27ed58c76ad56a662e20b0f4e2562853ff4d3b48e0
-+  __TEXT.__unwind_info: 0x8648 sha256:a109d9c65f936c0d5ae25809625a56c5e144a3fa071fd9d34c32c84b280d3224
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x140 sha256:ccf610874d226d01b384412081f35e0340f9cac2fdcba5f8ad1bd530c0c3a553
--  __DATA_CONST.__weak_got: 0x120 sha256:eaccd15af9d6001d2612070cccbd1ca439ab22d102d1dbaae71341b376b858d4
--  __DATA_CONST.__got: 0x170 sha256:822486231f41c0168a530589229df1e78159b7084883adaf1cd5bb512658b8b2
--  __AUTH_CONST.__const: 0xdbe0 sha256:18cd3492c710952ab568a3792c81323b13c26274a3dd60410c0cf1766cc7bf73
--  __AUTH_CONST.__cfstring: 0xea0 sha256:c0dfbab9f50e7f8d410f11ffccbe5784e3d4161fdd1d0e4ba8c17b9758d0ac4d
--  __AUTH_CONST.__weak_auth_got: 0xd8 sha256:f4bc101862d84c3520eae16d6179dd5588fe02663aa218f5939bba37264d0c6e
-+  __DATA_CONST.__const: 0x140 sha256:cf98f488ea74f4aa62d15746f89d8ecdc79fd02a2422fe0b6604e86a1b797ca0
-+  __DATA_CONST.__weak_got: 0x120 sha256:9e029e60dad6065834b4ea66523e4ef8dddb6669895e9d29486941987e34a6b8
-+  __DATA_CONST.__got: 0x170 sha256:e65bba03fc574ddce00bfcab3e75129dde1c65a47ddf08e4b968f2e602609d6c
-+  __AUTH_CONST.__const: 0xdbe0 sha256:5352f832c9a4eef877ab04f5be856f0ef4e1c6abfa79659ccd2b234456ff0fb0
-+  __AUTH_CONST.__cfstring: 0xea0 sha256:f8c3b38d374ceece170aec465d855acff346c17dee61ea675d56fd39e0b7156f
-+  __AUTH_CONST.__weak_auth_got: 0xd8 sha256:7dd3a57c51f86d731fe40de98356f1dc5bf147e7536419aeded827c37d757115
-   __AUTH_CONST.__auth_got: 0x9b0 sha256:c9cc6ae8ae17ff14722a908a090e626ec569f3af5128d258571f7a948ab14ed4
-   __DATA.__bss: 0xc38 sha256:fe0f2c317b7dbaa60890c3467501974169d4e69e03d16855347e6506c81f7534
-   __DATA_DIRTY.__bss: 0x1e48 sha256:a2f1c43f1589cd0ed3fa45e88cf9035daa47abb7a10aa1090d0331caba524262
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libsqlite3.dylib
--  UUID: 01CFC321-EAC9-34BC-8A1F-B2D48BDBBA75
-+  UUID: D779382D-3D17-3D44-A280-04F62E1A21DA
-   Functions: 7179
-   Symbols:   17049
-   CStrings:  1264
 Symbols:
 + __ZNKSt3__111__copy_implclB9fqe220106IPNS_10shared_ptrIKN13mediaplatform13SQLExpressionEEES7_S7_Li0EEENS_4pairIT_T1_EES9_T0_SA_
 + __ZNKSt3__111__copy_implclB9fqe220106IPNS_10shared_ptrIKN13mediaplatform15SQLOrderingTermEEES7_S7_Li0EEENS_4pairIT_T1_EES9_T0_SA_
@@ -2028,5 +2005,4 @@ Symbols:
 - __ZZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE16__emplace_uniqueB9fqe220100IJRKiEEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIiPvEEEEbEEDpOT_ENKUlSA_SA_E_clESA_SA_
 - __ZZNSt3__112__hash_tableImNS_4hashImEENS_8equal_toImEENS_9allocatorImEEE16__emplace_uniqueB9fqe220100IJRKmEEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeImPvEEEEbEEDpOT_ENKUlSA_SA_E_clESA_SA_
 - __ZZSt29__make_exception_ptr_explicitB9fqe220100INSt3__112future_errorEESt13exception_ptrRT_ENUlPvE_8__invokeES5_
-
 ```

@@ -2,59 +2,33 @@
 
 > `/usr/lib/libmecabra.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x26ca88` | `0x26d218` | **`+0x790`** |
+| `__TEXT.__cstring` | `0x16b15` | `0x16ca3` | **`+0x18e`** |
+| `__TEXT.__gcc_except_tab` | `0x1a848` | `0x1a908` | **`+0xc0`** |
+| `__TEXT.__const` | `0x3004c` | `0x2ffdc` | **`-0x70`** |
+| `__AUTH_CONST.__const` | `0x43620` | `0x435d0` | **`-0x50`** |
+| `__TEXT.__unwind_info` | `0xce90` | `0xcea8` | **`+0x18`** |
+| `__TEXT.__oslogstring` | `0x4a59` | `0x4a70` | **`+0x17`** |
+| `__AUTH_CONST.__auth_got` | `0x13f8` | `0x13e8` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x440` | `0x438` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1159.0.0.0.0
--  __TEXT.__text: 0x264cc0
 +1160.1.3.0.0
-+  __TEXT.__text: 0x265450
-   __TEXT.__lazy_helpers: 0xfc
-   __TEXT.__objc_methlist: 0x3e4
--  __TEXT.__const: 0x3004c
-+  __TEXT.__const: 0x2ffdc
-   __TEXT.__dlopen_cstrs: 0x152
--  __TEXT.__cstring: 0x16b15
--  __TEXT.__gcc_except_tab: 0x1a848
-+  __TEXT.__cstring: 0x16ca3
-+  __TEXT.__gcc_except_tab: 0x1a908
-   __TEXT.__ustring: 0x32cc
--  __TEXT.__oslogstring: 0x4a59
--  __TEXT.__unwind_info: 0xe010
-+  __TEXT.__oslogstring: 0x4a70
-+  __TEXT.__unwind_info: 0xe028
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0x798
-   __DATA_CONST.__objc_superrefs: 0x18
-   __DATA_CONST.__objc_arraydata: 0x348
--  __DATA_CONST.__got: 0x440
--  __AUTH_CONST.__const: 0x43620
-+  __DATA_CONST.__got: 0x438
-+  __AUTH_CONST.__const: 0x435d0
-   __AUTH_CONST.__cfstring: 0x9240
-   __AUTH_CONST.__objc_const: 0x3c0
-   __AUTH_CONST.__weak_auth_got: 0x60
-   __AUTH_CONST.__lazy_load_got: 0x18
-   __AUTH_CONST.__objc_arrayobj: 0x210
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x13f8
-+  __AUTH_CONST.__auth_got: 0x13e8
-   __AUTH.__data: 0x1e0
-   __AUTH.__thread_vars: 0x438
-   __AUTH.__thread_bss: 0x618
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 11150
 -  Symbols:   1095
 -  CStrings:  4429
 +  Functions: 11151
 +  Symbols:   1092
 +  CStrings:  4439
- 
 Symbols:
 - _host_statistics
 - _mach_host_self

@@ -2,38 +2,23 @@
 
 > `/System/Library/PrivateFrameworks/SwiftUITracingSupport.framework/SwiftUITracingSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x367e74` | `0x368b10` | **`+0xc9c`** |
+| `__TEXT.__eh_frame` | `0xbdc4` | `0xbe4c` | **`+0x88`** |
+| `__TEXT.__const` | `0x1cc78` | `0x1cca8` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x9670` | `0x96a0` | **`+0x30`** |
+
+### Other Changes
+
 ```diff
 
- 87.0.0.0.0
--  __TEXT.__text: 0x35fcd0
-+  __TEXT.__text: 0x360948
-   __TEXT.__objc_methlist: 0x144
--  __TEXT.__const: 0x1cc78
-+  __TEXT.__const: 0x1cca8
-   __TEXT.__swift5_typeref: 0xa1f4
-   __TEXT.__swift5_capture: 0x1aac
-   __TEXT.__constg_swiftt: 0x8330
-
-   __TEXT.__swift5_mpenum: 0x13c
-   __TEXT.__swift5_protos: 0x144
-   __TEXT.__oslogstring: 0x6db
--  __TEXT.__unwind_info: 0xbd00
--  __TEXT.__eh_frame: 0xbdd4
-+  __TEXT.__unwind_info: 0xbd50
-+  __TEXT.__eh_frame: 0xbe5c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 19253
 -  Symbols:   44335
 +  Functions: 19275
 +  Symbols:   44359
-   CStrings:  1217
- 
 Symbols:
 + _$s21SwiftUITracingSupport10UnsafeTreeV4sortyySbAA0dE7NodeRefV5TypedVy_xq_G_AiCyxq_GztXEFAA09AggregateE7ElementOyAA04ViewE0V8TElementOG_AA9MergeOnceVyAA05EventE5StatsVGTg504$s21ab8Support9j14PAAE4sortyySb5q15Qz_AFtXEFSbAA17degh2V5i6Vy_0H7kv28AFG_AmA0gH0VyAlFGztXEfU_AA04L7H0V_TG5xq_SbRi_zRi0_zRi__Ri0__r0_lyA2VIsgnnd_Tf1cn_n
 + _$s21SwiftUITracingSupport10UnsafeTreeV4sortyySbAA0dE7NodeRefV5TypedVy_xq_G_AiCyxq_GztXEFAA09AggregateE7ElementOyAA04ViewE0V8TElementOG_AA9MergeOnceVyAA05EventE5StatsVGTg504$s21ab8Support9j23PAAE4sortyys7KeyPathCy5q21Qzqd__GSzRd__lFSbAA17degh2V5i6Vy_0J7k30QzAHG_ApA0iJ0VyAoHGztXEfU_AA04L9J0V_SiTG5s0uV0CyAVSiGTf1cn_n

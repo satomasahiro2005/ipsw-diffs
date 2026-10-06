@@ -2,22 +2,26 @@
 
 > `/System/Library/Video/Plug-Ins/AppleMCTF.bundle/AppleMCTF`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x85ea4
-+  __TEXT.__text: 0x85e20
-   __TEXT.__auth_stubs: 0xd70
-   __TEXT.__objc_stubs: 0x20
-   __TEXT.__init_offsets: 0x4
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x85ea4` | `0x85e20` | **`-0x84`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__cstring`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__init_offsets`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
+```diff
 Functions:
 ~ sub_18fc0 : 2236 -> 2216
 ~ sub_25aa0 -> sub_25a8c : 1100 -> 1108
@@ -40,5 +44,4 @@ CStrings:
 + "Jun 29 2026"
 - "19:43:30"
 - "Jun 18 2026"
-
 ```

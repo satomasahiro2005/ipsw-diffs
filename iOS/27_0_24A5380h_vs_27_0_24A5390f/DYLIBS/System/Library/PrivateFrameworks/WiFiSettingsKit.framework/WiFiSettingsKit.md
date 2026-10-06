@@ -2,123 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/WiFiSettingsKit.framework/WiFiSettingsKit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x20e9dc` | `0x216040` | **`+0x7664`** |
+| `__TEXT.__cstring` | `0x18925` | `0x18e25` | **`+0x500`** |
+| `__TEXT.__swift5_typeref` | `0x1a90e` | `0x1a548` | **`-0x3c6`** |
+| `__AUTH_CONST.__const` | `0xeec0` | `0xf128` | **`+0x268`** |
+| `__AUTH_CONST.__objc_const` | `0x9128` | `0x9328` | **`+0x200`** |
+| `__TEXT.__eh_frame` | `0xb510` | `0xb6d0` | **`+0x1c0`** |
+| `__DATA.__data` | `0x4948` | `0x4ad0` | **`+0x188`** |
+| `__TEXT.__swift5_reflstr` | `0x5522` | `0x5672` | **`+0x150`** |
+| `__DATA.__bss` | `0xbb38` | `0xbc38` | **`+0x100`** |
+| `__TEXT.__swift5_capture` | `0x4174` | `0x4268` | **`+0xf4`** |
+| `__TEXT.__const` | `0x13553` | `0x13643` | **`+0xf0`** |
+| `__AUTH.__objc_data` | `0x1cb0` | `0x1d70` | **`+0xc0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1518` | `0x15d8` | **`+0xc0`** |
+| `__TEXT.__unwind_info` | `0x6808` | `0x68c8` | **`+0xc0`** |
+| `__TEXT.__objc_methlist` | `0x17e4` | `0x1894` | **`+0xb0`** |
+| `__TEXT.__swift5_fieldmd` | `0x48bc` | `0x4950` | **`+0x94`** |
+| `__AUTH.__data` | `0x3d10` | `0x3d90` | **`+0x80`** |
+| `__DATA_DIRTY.__data` | `0x4a50` | `0x49d0` | **`-0x80`** |
+| `__AUTH_CONST.__auth_got` | `0x2120` | `0x2178` | **`+0x58`** |
+| `__DATA_CONST.__got` | `0xee8` | `0xf38` | **`+0x50`** |
+| `__TEXT.__oslogstring` | `0x603` | `0x653` | **`+0x50`** |
+| `__AUTH_CONST.__cfstring` | `0x500` | `0x540` | **`+0x40`** |
+| `__DATA.__common` | `0x1530` | `0x1568` | **`+0x38`** |
+| `__TEXT.__swift5_assocty` | `0xf50` | `0xf88` | **`+0x38`** |
+| `__DATA_CONST.__const` | `0xdb0` | `0xdd8` | **`+0x28`** |
+| `__TEXT.__constg_swiftt` | `0x76b0` | `0x76d8` | **`+0x28`** |
+| `__TEXT.__swift_as_cont` | `0xa08` | `0xa24` | **`+0x1c`** |
+| `__DATA_CONST.__objc_classlist` | `0x2d0` | `0x2e0` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x38` | `0x48` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x5c` | `0x68` | **`+0xc`** |
+| `__DATA_DIRTY.__objc_data` | `0x658` | `0x660` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x718` | `0x720` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x3b8` | `0x3c0` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x424` | `0x428` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -1205.63.4.1.0
--  __TEXT.__text: 0x20e9dc
--  __TEXT.__objc_methlist: 0x17e4
--  __TEXT.__const: 0x13553
--  __TEXT.__cstring: 0x18925
--  __TEXT.__oslogstring: 0x603
 +1205.70.0.0.0
-+  __TEXT.__text: 0x216040
-+  __TEXT.__objc_methlist: 0x1894
-+  __TEXT.__const: 0x13643
-+  __TEXT.__cstring: 0x18e25
-+  __TEXT.__oslogstring: 0x653
-   __TEXT.__gcc_except_tab: 0x30
-   __TEXT.__dlopen_cstrs: 0x62
--  __TEXT.__constg_swiftt: 0x76b0
--  __TEXT.__swift5_typeref: 0x1a90e
--  __TEXT.__swift5_fieldmd: 0x48bc
-+  __TEXT.__constg_swiftt: 0x76d8
-+  __TEXT.__swift5_typeref: 0x1a548
-+  __TEXT.__swift5_fieldmd: 0x4950
-   __TEXT.__swift5_builtin: 0x17c
--  __TEXT.__swift5_reflstr: 0x5522
--  __TEXT.__swift5_assocty: 0xf50
-+  __TEXT.__swift5_reflstr: 0x5672
-+  __TEXT.__swift5_assocty: 0xf88
-   __TEXT.__swift5_protos: 0xb8
--  __TEXT.__swift5_proto: 0x718
--  __TEXT.__swift5_types: 0x424
--  __TEXT.__swift5_capture: 0x4174
--  __TEXT.__swift_as_entry: 0x3b8
--  __TEXT.__swift_as_cont: 0xa08
-+  __TEXT.__swift5_proto: 0x720
-+  __TEXT.__swift5_types: 0x428
-+  __TEXT.__swift5_capture: 0x4268
-+  __TEXT.__swift_as_entry: 0x3c0
-+  __TEXT.__swift_as_cont: 0xa24
-   __TEXT.__swift_as_ret: 0x264
-   __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__unwind_info: 0x6808
--  __TEXT.__eh_frame: 0xb510
-+  __TEXT.__unwind_info: 0x68c8
-+  __TEXT.__eh_frame: 0xb6d0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xdb0
--  __DATA_CONST.__objc_classlist: 0x2d0
-+  __DATA_CONST.__const: 0xdd8
-+  __DATA_CONST.__objc_classlist: 0x2e0
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0xe8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1518
-+  __DATA_CONST.__objc_selrefs: 0x15d8
-   __DATA_CONST.__objc_protorefs: 0x80
--  __DATA_CONST.__objc_superrefs: 0x38
-+  __DATA_CONST.__objc_superrefs: 0x48
-   __DATA_CONST.__objc_arraydata: 0x30
--  __DATA_CONST.__got: 0xee8
--  __AUTH_CONST.__const: 0xeec0
--  __AUTH_CONST.__cfstring: 0x500
--  __AUTH_CONST.__objc_const: 0x9128
-+  __DATA_CONST.__got: 0xf38
-+  __AUTH_CONST.__const: 0xf128
-+  __AUTH_CONST.__cfstring: 0x540
-+  __AUTH_CONST.__objc_const: 0x9328
-   __AUTH_CONST.__objc_intobj: 0x78
-   __AUTH_CONST.__objc_arrayobj: 0x60
--  __AUTH_CONST.__auth_got: 0x2120
--  __AUTH.__objc_data: 0x1cb0
--  __AUTH.__data: 0x3d10
--  __DATA.__objc_ivar: 0x5c
--  __DATA.__data: 0x4948
--  __DATA.__bss: 0xbb38
--  __DATA.__common: 0x1530
--  __DATA_DIRTY.__objc_data: 0x658
--  __DATA_DIRTY.__data: 0x4a50
-+  __AUTH_CONST.__auth_got: 0x2178
-+  __AUTH.__objc_data: 0x1d70
-+  __AUTH.__data: 0x3d90
-+  __DATA.__objc_ivar: 0x68
-+  __DATA.__data: 0x4ad0
-+  __DATA.__bss: 0xbc38
-+  __DATA.__common: 0x1568
-+  __DATA_DIRTY.__objc_data: 0x660
-+  __DATA_DIRTY.__data: 0x49d0
-   __DATA_DIRTY.__bss: 0x21c0
-   __DATA_DIRTY.__common: 0x2a8
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9692
--  Symbols:   4171
+-  Symbols:   3702
 -  CStrings:  2184
 +  Functions: 9742
-+  Symbols:   4232
++  Symbols:   3741
 +  CStrings:  2212
- 
 Symbols:
 + -[HotspotBatteryUIView .cxx_destruct]
 + -[HotspotBatteryUIView init]
@@ -170,28 +105,6 @@ Symbols:
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAcAE29navigationBarBackButtonHiddenyQrSbFQOyAcAE0H5TitleyQrqd__SyRd__lFQOyAcAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAA08ModifiedG0VyAMyAMyAA4FormVyAA05TupleG0VyAA7ForEachVySay15WiFiSettingsKit13DNSConfigModeOGAvA0K0VyAA6HStackVyAQyAA4TextV_AA6SpacerVAcAE10fontWeightyQrAA4FontV6WeightVSgFQOyAA5ImageV_Qo_SgQPGGGG_AA7SectionVyA1_AQyAMyAMyASySayAT9DNSServerCGSOAMyAMyAcAE0N6SubmitAJ_QrAA14SubmitTriggersV_yyctFQOyAcAE7focused_6equalsQrAA10FocusStateV7BindingVyqd___G_qd__tSHRd__lFQOyAT18DNSServerTextFieldV_AT8DNSFieldOSgQo__Qo_AA32_EnvironmentKeyTransformModifierVySbGGAA25_AlignmentWritingModifierVGGAA21_TraitWritingModifierVyAA16OnDeleteTraitKeyVGGA49_yAA24IsDeleteDisabledTraitKeyVGG_AMyAMyAYyAMyAMyAA5LabelVyA1_A11_GAA30_EnvironmentKeyWritingModifierVyAA19SymbolRenderingModeVSgGGAA14_PaddingLayoutVGGA42_GA45_GSgQPGAA05EmptyC0VGA19_yA1_AQyAMyAMyASySayAT9DNSDomainCGSOAMyAMyAcAEA23_AJ_QrA25__yyctFQOyAcAEA26__A27_QrA32__qd__tSHRd__lFQOyAT18DNSDomainTextFieldV_A37_Qo__Qo_A42_GA45_GGA52_GA56_G_A74_QPGA77_GQPGGA62_yAAA30_VyAA8EditModeOGSgGGAA25_AppearanceActionModifierVGA103_G_AVQo__SSQo__Qo__AA0F4ItemVyytAA012_ConditionalG0VyAA08ProgressC0VyA77_A77_GAcAE4boldyQrSbFQOyAMyAYyA1_GA42_G_Qo_GGQo_HO
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE4task2id4name8priority4file4line_Qrqd___SSSgScPSSSiyyYaYAcntSQRd__lFQOyAcAE21navigationDestination11isPresented11destinationQrAA7BindingVySbG_qd__yXEtAaBRd__lFQOyAA6HStackVyAA12TupleContentVyAA08ModifiedV0VyAYyAYyAYyAA5ImageVAA31AccessibilityAttachmentModifierVGAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA14_OpacityEffectVGA1_G_AA012_ConditionalV0VyA15_yA9_A9_GAWyA15_yAYyA9_A1_GA17_G_A9_SgQPGGAcAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyAA6ButtonVyAYyAYyAYyAYyA_AA24_ForegroundStyleModifierVyAA5ColorVGGA4_yA_5ScaleOGGA1_GAA14_PaddingLayoutVGG_AA21BorderlessButtonStyleVQo_QPGG_A15_yAYyAcAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQOy15WiFiSettingsKit014NavigationLazyC0VyA50_014CarPlayDetailsC0VG_A50_012NetworksListC5ModelCQo_AA25_AppearanceActionModifierVGAYyAcAEA46_yQrA47_Rld__CA48_A49_Rd__lFQOyA52_yA50_014NetworkDetailsC0VG_A57_Qo_A60_GGQo__SSQo__AA10ScenePhaseOQo_HO
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVyAcAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAA6HStackVyAA05TupleI0VyAHyAA6SpacerVAA16_FlexFrameLayoutVGSg_AHyAA4TextVAA0M18AttachmentModifierVGArHyAHyAA5ImageVAZGAA022_EnvironmentKeyWritingX0VyAA4FontVSgGGSgAcAE21navigationDestination11isPresented11destinationQrAA7BindingVySbG_qd__yXEtAaBRd__lFQOyAcAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyAA6ButtonVyAHyAHyAHyAHyA1_AA016_ForegroundStyleX0VyAA5ColorVGGA4_yA1_5ScaleOGGAZGAA08_PaddingU0VGG_AA21BorderlessButtonStyleVQo__AHy15WiFiSettingsKit014NavigationLazyC0VyA39_014NetworkDetailsC0VGAA017_AppearanceActionX0VGQo_SgQPGG_Qo_AZG_SbQo__AA10ScenePhaseOQo_HO
-+ _objc_msgSend$NAIRealmNameList
-+ _objc_msgSend$animateAlongsideTransition:completion:
-+ _objc_msgSend$arrayWithObjects:count:
-+ _objc_msgSend$copyStartDateOfCellularDataUsageRecordsWithCompletion:
-+ _objc_msgSend$intrinsicContentSize
-+ _objc_msgSend$isConnectivityAssistEnabled
-+ _objc_msgSend$labelColor
-+ _objc_msgSend$setActiveColor:
-+ _objc_msgSend$setConnectivityAssistEnabled:
-+ _objc_msgSend$setInactiveColor:
-+ _objc_msgSend$setInlinePredictionType:
-+ _objc_msgSend$setNumberOfActiveBars:
-+ _objc_msgSend$setNumberOfActiveBars:totalBars:
-+ _objc_msgSend$setNumberOfBars:
-+ _objc_msgSend$setRounded:
-+ _objc_msgSend$setSignalMode:
-+ _objc_msgSend$setSmartDashesType:
-+ _objc_msgSend$setSmartQuotesType:
-+ _objc_msgSend$setSpellCheckingType:
-+ _objc_msgSend$systemLayoutSizeFittingSize:
-+ _objc_msgSend$tertiaryLabelColor
-+ _objc_msgSend$transitionCoordinator
 + _symbolic So20HotspotBatteryUIViewC
 + _symbolic So27HotspotCellularSignalUIViewC
 + _symbolic _____ 15WiFiSettingsKit18CellularSignalViewV

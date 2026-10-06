@@ -2,88 +2,38 @@
 
 > `/System/Library/VideoProcessors/NRFV4.bundle/NRFV4`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_floatobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2e1444` | `0x2e5618` | **`+0x41d4`** |
+| `__AUTH_CONST.__objc_const` | `0x3b168` | `0x3b9e0` | **`+0x878`** |
+| `__TEXT.__cstring` | `0x5ec62` | `0x5f250` | **`+0x5ee`** |
+| `__TEXT.__oslogstring` | `0x442ad` | `0x447da` | **`+0x52d`** |
+| `__TEXT.__objc_methlist` | `0x12e78` | `0x130f8` | **`+0x280`** |
+| `__AUTH.__objc_data` | `0x910` | `0xa50` | **`+0x140`** |
+| `__AUTH_CONST.__cfstring` | `0x148c0` | `0x149c0` | **`+0x100`** |
+| `__TEXT.__unwind_info` | `0x5708` | `0x57a8` | **`+0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6f00` | `0x6f88` | **`+0x88`** |
+| `__DATA.__objc_ivar` | `0x3f38` | `0x3f94` | **`+0x5c`** |
+| `__DATA_CONST.__objc_classlist` | `0xe18` | `0xe38` | **`+0x20`** |
+| `__DATA_CONST.__objc_superrefs` | `0xae8` | `0xb08` | **`+0x20`** |
+| `__TEXT.__const` | `0x1031d8` | `0x1031f8` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0xa08` | `0xa20` | **`+0x18`** |
+
+### Other Changes
 
 ```diff
 
 -758.0.0.122.2
--  __TEXT.__text: 0x2e1444
--  __TEXT.__objc_methlist: 0x12e78
--  __TEXT.__const: 0x1031d8
--  __TEXT.__cstring: 0x5ec62
 +761.0.0.0.3
-+  __TEXT.__text: 0x2e5618
-+  __TEXT.__objc_methlist: 0x130f8
-+  __TEXT.__const: 0x1031f8
-+  __TEXT.__cstring: 0x5f250
-   __TEXT.__gcc_except_tab: 0x1cd8
--  __TEXT.__oslogstring: 0x442ad
-+  __TEXT.__oslogstring: 0x447da
-   __TEXT.__dlopen_cstrs: 0x10c
--  __TEXT.__unwind_info: 0x5708
-+  __TEXT.__unwind_info: 0x57a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x14f0
--  __DATA_CONST.__objc_classlist: 0xe18
-+  __DATA_CONST.__objc_classlist: 0xe38
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x108
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6f00
-+  __DATA_CONST.__objc_selrefs: 0x6f88
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0xae8
-+  __DATA_CONST.__objc_superrefs: 0xb08
-   __DATA_CONST.__objc_arraydata: 0xf08
-   __DATA_CONST.__got: 0xf00
-   __AUTH_CONST.__const: 0x9a0
--  __AUTH_CONST.__cfstring: 0x148c0
--  __AUTH_CONST.__objc_const: 0x3b168
-+  __AUTH_CONST.__cfstring: 0x149c0
-+  __AUTH_CONST.__objc_const: 0x3b9e0
-   __AUTH_CONST.__objc_doubleobj: 0xa0
-   __AUTH_CONST.__objc_arrayobj: 0xc30
--  __AUTH_CONST.__objc_intobj: 0xa08
-+  __AUTH_CONST.__objc_intobj: 0xa20
-   __AUTH_CONST.__objc_floatobj: 0x90
-   __AUTH_CONST.__objc_dictobj: 0x500
-   __AUTH_CONST.__auth_got: 0x860
--  __AUTH.__objc_data: 0x910
--  __DATA.__objc_ivar: 0x3f38
-+  __AUTH.__objc_data: 0xa50
-+  __DATA.__objc_ivar: 0x3f94
-   __DATA.__data: 0xc68
-   __DATA.__common: 0x50
-   __DATA.__bss: 0x28
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 15543
--  Symbols:   17708
+-  Symbols:   14627
 -  CStrings:  14205
 +  Functions: 15641
-+  Symbols:   17824
++  Symbols:   14728
 +  CStrings:  14262
- 
 Symbols:
 + -[CMIPostConfig enableSRL]
 + -[CMIPostConfig setEnableSRL:]
@@ -188,25 +138,8 @@ Symbols:
 + __OBJC_METACLASS_RO_$_SoftISPCalibrationShaders
 + __OBJC_METACLASS_RO_$_SoftISPCalibrationStage
 + __OBJC_METACLASS_RO_$_SoftISPCalibrationStageArgs
-+ _objc_msgSend$_computeProxyGainMapWithInput:secondInput:outputTexture:referenceFrame:darkestFrame:delegate:
-+ _objc_msgSend$appendBytes:length:
-+ _objc_msgSend$appendFocusPixelPositionsForInputFrame:to:
-+ _objc_msgSend$awbGainsForInputFrame:
-+ _objc_msgSend$clearSkipMask
-+ _objc_msgSend$downsample
-+ _objc_msgSend$downscaleFactor
-+ _objc_msgSend$enableSRL
-+ _objc_msgSend$ensureSkipMaskForWidth:height:cfaLayout:needsRebuildOut:
-+ _objc_msgSend$isCalcGlobalHistOnROIEnabled:
-+ _objc_msgSend$markSkipPositions
-+ _objc_msgSend$producesOutputPixelBuffer
-+ _objc_msgSend$runToneMapping:bilateralGrid:bilateralGridHomography:tmPlist:darkestFrameMetadata:ev0FrameMetadata:scaleInput:colorCorrection:hasChromaBias:quality:enableSRL:gridScaleFactor:inputIsLinear:stfAllowed:isLowLight:
-+ _objc_msgSend$setEnableSRL:
-+ _objc_msgSend$setProducesOutputPixelBuffer:
-+ _objc_msgSend$skipPositionsForInputFrame:
 - -[LearnedHRNRProcessor(Tuning) prepareTuning:]
 - -[ToneMappingStage runToneMapping:bilateralGrid:bilateralGridHomography:tmPlist:darkestFrameMetadata:ev0FrameMetadata:scaleInput:colorCorrection:hasChromaBias:quality:gridScaleFactor:inputIsLinear:stfAllowed:isLowLight:]
-- _objc_msgSend$runToneMapping:bilateralGrid:bilateralGridHomography:tmPlist:darkestFrameMetadata:ev0FrameMetadata:scaleInput:colorCorrection:hasChromaBias:quality:gridScaleFactor:inputIsLinear:stfAllowed:isLowLight:
 CStrings:
 + "%@(inputPixelFormat=%c%c%c%c, maximumWidth=%u, maximumHeight=%u, downscaleFactor=%u)"
 + "-[LearnedHRNRProcessor(Tuning) prepareTuning:processingTypes:]"

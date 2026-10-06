@@ -2,24 +2,25 @@
 
 > `/System/Library/PrivateFrameworks/CalendarWidget.framework/PlugIns/IntentsExtension.appex/IntentsExtension`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6b10` | `0x6b14` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA_CONST.__const`
 - `__TEXT.__const`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
 - `__TEXT.__swift5_typeref`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA.__objc_data`
 
-```diff
+### Other Changes
 
- 415.0.100.0.0
--  __TEXT.__text: 0x6b10
-+  __TEXT.__text: 0x6b14
-   __TEXT.__auth_stubs: 0x610
-   __TEXT.__objc_stubs: 0x600
-   __TEXT.__objc_methlist: 0x510
+```text
 Functions:
 ~ sub_1000045c4 : 356 -> 360
 ```

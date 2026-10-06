@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/ODDIFramework.framework/ODDIFramework`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x52798` | `0x527a4` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0xa58` | `0xa60` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 3600.49.21.11.1
--  __TEXT.__text: 0x52798
-+  __TEXT.__text: 0x527a4
-   __TEXT.__objc_methlist: 0xc8
-   __TEXT.__const: 0x7808
-   __TEXT.__swift5_typeref: 0x2a6f
-
-   __AUTH_CONST.__const: 0x3bf0
-   __AUTH_CONST.__cfstring: 0x2f20
-   __AUTH_CONST.__objc_const: 0x1660
--  __AUTH_CONST.__auth_got: 0xa58
-+  __AUTH_CONST.__auth_got: 0xa60
-   __AUTH.__objc_data: 0x50
-   __AUTH.__data: 0x1f90
-   __DATA.__data: 0x1610
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 2910
--  Symbols:   1233
-+  Symbols:   1234
-   CStrings:  521
- 
+-  Symbols:   1085
++  Symbols:   1086
 Symbols:
 + _swift_release_x9
 Functions:

@@ -2,24 +2,24 @@
 
 > `com.apple.kext.AppleMatch`
 
-```diff
+### Section Size Changes
 
- 50.0.1.0.0
-   __TEXT.__cstring: 0x5f
--  __TEXT_EXEC.__text: 0x25b0
-+  __TEXT_EXEC.__text: 0x25d8
-   __TEXT_EXEC.__auth_stubs: 0xb0
-   __DATA.__data: 0xdc
-   __DATA_CONST.__kalloc_type: 0x180
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x25b0` | `0x25d8` | **`+0x28`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_fffffe0009179b80 -> sub_fffffe00091dfec0 : 128 -> 132
-~ sub_fffffe0009179cb0 -> sub_fffffe00091dfff4 : 212 -> 216
-~ sub_fffffe0009179e0c -> sub_fffffe00091e0154 : 4680 -> 4684
-~ sub_fffffe000917b27c -> sub_fffffe00091e15c8 : 308 -> 312
-~ sub_fffffe000917b3b0 -> sub_fffffe00091e1700 : 456 -> 460
-~ sub_fffffe000917b59c -> sub_fffffe00091e18f0 : 960 -> 964
-~ sub_fffffe000917ba1c -> sub_fffffe00091e1d74 : 120 -> 124
-~ sub_fffffe000917bc10 -> sub_fffffe00091e1f6c : 116 -> 120
-~ sub_fffffe000917bc84 -> sub_fffffe00091e1fe4 : 308 -> 312
-~ sub_fffffe000917bdb8 -> sub_fffffe00091e211c : 216 -> 220
+~ sub_fffffff00915b300 -> sub_fffffff0091bd450 : 128 -> 132
+~ sub_fffffff00915b430 -> sub_fffffff0091bd584 : 212 -> 216
+~ sub_fffffff00915b58c -> sub_fffffff0091bd6e4 : 4680 -> 4684
+~ sub_fffffff00915c9fc -> sub_fffffff0091beb58 : 308 -> 312
+~ sub_fffffff00915cb30 -> sub_fffffff0091bec90 : 456 -> 460
+~ sub_fffffff00915cd1c -> sub_fffffff0091bee80 : 960 -> 964
+~ sub_fffffff00915d19c -> sub_fffffff0091bf304 : 120 -> 124
+~ sub_fffffff00915d390 -> sub_fffffff0091bf4fc : 116 -> 120
+~ sub_fffffff00915d404 -> sub_fffffff0091bf574 : 308 -> 312
+~ sub_fffffff00915d538 -> sub_fffffff0091bf6ac : 216 -> 220
 ```

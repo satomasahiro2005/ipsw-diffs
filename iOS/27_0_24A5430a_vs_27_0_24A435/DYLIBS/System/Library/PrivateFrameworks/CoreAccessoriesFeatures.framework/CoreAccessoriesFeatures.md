@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/CoreAccessoriesFeatures.framework/CoreAccessoriesFeatures`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_2 : 20 -> 12

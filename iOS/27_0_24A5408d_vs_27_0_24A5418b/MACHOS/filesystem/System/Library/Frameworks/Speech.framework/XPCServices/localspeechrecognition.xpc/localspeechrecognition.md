@@ -2,6 +2,8 @@
 
 > `/System/Library/Frameworks/Speech.framework/XPCServices/localspeechrecognition.xpc/localspeechrecognition`
 
+### Other Changes
+
 ```diff
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/SpeechFramework/install/TempContent/Objects/SpeechRecognition.build/localspeechrecognition.build/Objects-normal/arm64e/LSRUtilities-e2e8b603c6029286de019034299fa543.o

@@ -2,52 +2,40 @@
 
 > `/usr/libexec/eligibilityd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x43a14` | `0x43ab4` | **`+0xa0`** |
+| `__TEXT.__auth_stubs` | `0x1a60` | `0x1a50` | **`-0x10`** |
+| `__DATA_CONST.__auth_got` | `0xd40` | `0xd38` | **`-0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__cstring`
+- `__TEXT.__eh_frame`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
- 446.2.3.0.0
--  __TEXT.__text: 0x43a14
--  __TEXT.__auth_stubs: 0x1a60
-+  __TEXT.__text: 0x43ab4
-+  __TEXT.__auth_stubs: 0x1a50
-   __TEXT.__objc_stubs: 0x2a40
-   __TEXT.__objc_methlist: 0x1f34
-   __TEXT.__const: 0x2720
-
-   __DATA_CONST.__objc_arraydata: 0xc690
-   __DATA_CONST.__objc_arrayobj: 0x3030
-   __DATA_CONST.__objc_dictobj: 0xb400
--  __DATA_CONST.__auth_got: 0xd40
-+  __DATA_CONST.__auth_got: 0xd38
-   __DATA_CONST.__got: 0x3a8
-   __DATA_CONST.__auth_ptr: 0x368
-   __DATA.__objc_const: 0x3760
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   Functions: 1402
 -  Symbols:   644
 +  Symbols:   643
-   CStrings:  2019
- 
 Symbols:
 - _swift_release_x13
 Functions:
@@ -77,4 +65,7 @@ Functions:
 ~ sub_100042c94 -> sub_100042d24 : 1488 -> 1492
 ~ sub_100043530 -> sub_1000435c4 : 940 -> 944
 ~ sub_100044334 -> sub_1000443cc : 788 -> 796
+CStrings:
++ "21:03:58"
+- "23:22:02"
 ```

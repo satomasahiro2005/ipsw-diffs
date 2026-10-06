@@ -2,49 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/SettingsServices.framework/SettingsServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x0` | `0x1764` | **`+0x1764`** |
+| `__TEXT.__eh_frame` | `—` | `0x180` | **`+0x180`** |
+| `__AUTH_CONST.__auth_got` | `—` | `0x168` | **`+0x168`** |
+| `__AUTH.__data` | `—` | `0x118` | **`+0x118`** |
+| `__TEXT.__unwind_info` | `—` | `0x110` | **`+0x110`** |
+| `__TEXT.__const` | `0x52` | `0x142` | **`+0xf0`** |
+| `__AUTH_CONST.__const` | `—` | `0xb8` | **`+0xb8`** |
+| `__AUTH_CONST.__objc_const` | `—` | `0x90` | **`+0x90`** |
+| `__TEXT.__constg_swiftt` | `—` | `0x8c` | **`+0x8c`** |
+| `__DATA.__data` | `—` | `0x68` | **`+0x68`** |
+| `__TEXT.__swift5_fieldmd` | `—` | `0x3c` | **`+0x3c`** |
+| `__TEXT.__swift5_typeref` | `—` | `0x3c` | **`+0x3c`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x20` | **`+0x20`** |
+| `__TEXT.__cstring` | `—` | `0x1a` | **`+0x1a`** |
+| `__TEXT.__swift5_capture` | `—` | `0x10` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x10` | **`+0x10`** |
+| `__TEXT.__swift_as_ret` | `—` | `0x10` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `—` | `0xd` | **`+0xd`** |
+| `__TEXT.__swift5_types` | `—` | `0xc` | **`+0xc`** |
+| `__DATA_CONST.__const` | `0x30` | `0x38` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `—` | `0x8` | **`+0x8`** |
+| `__DATA_CONST.__got` | `—` | `0x0` | **`+0x0`** |
+| `__TEXT.__auth_stubs` | `—` | `0x0` | **`+0x0`** |
+| `__TEXT.__objc_classname` | `—` | `0x0` | **`+0x0`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.1.0.0
--  __TEXT.__text: 0x0
--  __TEXT.__const: 0x52
--  __DATA_CONST.__const: 0x30
 +2027.0.2.0.0
-+  __TEXT.__text: 0x1764
-+  __TEXT.__const: 0x142
-+  __TEXT.__cstring: 0x1a
-+  __TEXT.__constg_swiftt: 0x8c
-+  __TEXT.__swift5_typeref: 0x3c
-+  __TEXT.__swift5_fieldmd: 0x3c
-+  __TEXT.__swift5_reflstr: 0xd
-+  __TEXT.__swift5_capture: 0x10
-+  __TEXT.__swift5_types: 0xc
-+  __TEXT.__swift_as_entry: 0x10
-+  __TEXT.__swift_as_ret: 0x10
-+  __TEXT.__swift_as_cont: 0x20
-+  __TEXT.__unwind_info: 0x110
-+  __TEXT.__eh_frame: 0x180
-+  __TEXT.__auth_stubs: 0x0
-+  __TEXT.__objc_classname: 0x0
-+  __DATA_CONST.__const: 0x38
-+  __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
-+  __DATA_CONST.__got: 0x0
-+  __AUTH_CONST.__const: 0xb8
-+  __AUTH_CONST.__objc_const: 0x90
-+  __AUTH_CONST.__auth_got: 0x168
-+  __AUTH.__data: 0x118
-+  __DATA.__data: 0x68
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+
 +  - /System/Library/PrivateFrameworks/SettingsServicesXPC.framework/SettingsServicesXPC
 +  - /System/Library/PrivateFrameworks/XPCDistributed.framework/XPCDistributed
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
+
 +  - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
+
 -  Functions: 0
 -  Symbols:   15
 -  CStrings:  0
@@ -53,7 +51,6 @@
 +  Functions: 49
 +  Symbols:   76
 +  CStrings:  1
- 
 Symbols:
 + <redacted>
 + _OBJC_CLASS_$__TtCs12_SwiftObject

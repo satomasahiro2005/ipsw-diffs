@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ShazamEvents.framework/ShazamEvents`
 
-```diff
+### Section Size Changes
 
- 427.0.9.0.0
--  __TEXT.__text: 0x114244
-+  __TEXT.__text: 0x114284
-   __TEXT.__const: 0x139b8
-   __TEXT.__constg_swiftt: 0x36f0
-   __TEXT.__swift5_typeref: 0x4725
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x114244` | `0x114284` | **`+0x40`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_23f353800 -> sub_23fc8f800 : 5020 -> 5004
 ~ sub_23f35f1b8 -> sub_23fc9b1a8 : 4868 -> 4864

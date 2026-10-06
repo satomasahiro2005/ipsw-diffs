@@ -2,107 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/AppIntentsServices.framework/AppIntentsServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2b8b1c` | `0x2bea20` | **`+0x5f04`** |
+| `__DATA_DIRTY.__data` | `0x3de8` | `0x4ab0` | **`+0xcc8`** |
+| `__AUTH.__data` | `0x5d68` | `0x5488` | **`-0x8e0`** |
+| `__TEXT.__eh_frame` | `0x279c8` | `0x27390` | **`-0x638`** |
+| `__AUTH_CONST.__const` | `0x1d160` | `0x1d650` | **`+0x4f0`** |
+| `__DATA.__bss` | `0x288c0` | `0x28440` | **`-0x480`** |
+| `__DATA_DIRTY.__bss` | `0xa80` | `0xf00` | **`+0x480`** |
+| `__DATA.__data` | `0x6240` | `0x5eb8` | **`-0x388`** |
+| `__TEXT.__swift5_capture` | `0x79a8` | `0x7be8` | **`+0x240`** |
+| `__TEXT.__const` | `0x26060` | `0x25f10` | **`-0x150`** |
+| `__TEXT.__swift_as_cont` | `0x174c` | `0x1864` | **`+0x118`** |
+| `__AUTH.__objc_data` | `0x180` | `0x90` | **`-0xf0`** |
+| `__DATA_DIRTY.__objc_data` | `0x840` | `0x930` | **`+0xf0`** |
+| `__DATA.__common` | `0x1bd0` | `0x1b08` | **`-0xc8`** |
+| `__DATA_DIRTY.__common` | `0x2b0` | `0x378` | **`+0xc8`** |
+| `__TEXT.__oslogstring` | `0x3a29` | `0x3ab9` | **`+0x90`** |
+| `__TEXT.__swift5_typeref` | `0x880f` | `0x8851` | **`+0x42`** |
+| `__TEXT.__cstring` | `0x558a` | `0x55ca` | **`+0x40`** |
+| `__TEXT.__swift5_reflstr` | `0x4a6c` | `0x4a3c` | **`-0x30`** |
+| `__TEXT.__unwind_info` | `0xe948` | `0xe928` | **`-0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x1a48` | `0x1a58` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0xe50` | `0xe58` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0xc2c` | `0xc24` | **`-0x8`** |
+| `__TEXT.__swift_as_ret` | `0xd74` | `0xd6c` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2b8b1c
-+  __TEXT.__text: 0x2bea20
-   __TEXT.__objc_methlist: 0x59c
--  __TEXT.__cstring: 0x558a
--  __TEXT.__const: 0x26060
--  __TEXT.__swift5_typeref: 0x880f
-+  __TEXT.__cstring: 0x55ca
-+  __TEXT.__const: 0x25f10
-+  __TEXT.__swift5_typeref: 0x8851
-   __TEXT.__constg_swiftt: 0x73dc
--  __TEXT.__swift5_reflstr: 0x4a6c
-+  __TEXT.__swift5_reflstr: 0x4a3c
-   __TEXT.__swift5_fieldmd: 0x7190
-   __TEXT.__swift5_builtin: 0x44c
-   __TEXT.__swift5_assocty: 0xce8
-   __TEXT.__swift5_proto: 0x180c
-   __TEXT.__swift5_types: 0x834
--  __TEXT.__oslogstring: 0x3a29
-+  __TEXT.__oslogstring: 0x3ab9
-   __TEXT.__swift5_protos: 0x154
--  __TEXT.__swift5_capture: 0x79a8
--  __TEXT.__swift_as_entry: 0xc2c
--  __TEXT.__swift_as_ret: 0xd74
--  __TEXT.__swift_as_cont: 0x174c
-+  __TEXT.__swift5_capture: 0x7be8
-+  __TEXT.__swift_as_entry: 0xc24
-+  __TEXT.__swift_as_ret: 0xd6c
-+  __TEXT.__swift_as_cont: 0x1864
-   __TEXT.__swift5_types2: 0xc
-   __TEXT.__swift5_acfuncs: 0x5a0
-   __TEXT.__swift5_mpenum: 0x160
--  __TEXT.__unwind_info: 0xe948
--  __TEXT.__eh_frame: 0x279c8
-+  __TEXT.__unwind_info: 0xe928
-+  __TEXT.__eh_frame: 0x27390
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-41.0.42.6.0
++41.0.43.7.0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xb60
-   __DATA_CONST.__objc_protorefs: 0x40
--  __DATA_CONST.__got: 0xe50
--  __AUTH_CONST.__const: 0x1d160
-+  __DATA_CONST.__got: 0xe58
-+  __AUTH_CONST.__const: 0x1d650
-   __AUTH_CONST.__objc_const: 0x3ac0
--  __AUTH_CONST.__auth_got: 0x1a48
--  __AUTH.__objc_data: 0x180
--  __AUTH.__data: 0x5d68
--  __DATA.__data: 0x6240
--  __DATA.__bss: 0x288c0
--  __DATA.__common: 0x1bd0
--  __DATA_DIRTY.__objc_data: 0x840
--  __DATA_DIRTY.__data: 0x3de8
--  __DATA_DIRTY.__common: 0x2b0
--  __DATA_DIRTY.__bss: 0xa80
-+  __AUTH_CONST.__auth_got: 0x1a58
-+  __AUTH.__objc_data: 0x90
-+  __AUTH.__data: 0x5488
-+  __DATA.__data: 0x5eb8
-+  __DATA.__bss: 0x28440
-+  __DATA.__common: 0x1b08
-+  __DATA_DIRTY.__objc_data: 0x930
-+  __DATA_DIRTY.__data: 0x4ab0
-+  __DATA_DIRTY.__bss: 0xf00
-+  __DATA_DIRTY.__common: 0x378
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 20221
--  Symbols:   17963
+-  Symbols:   4377
 -  CStrings:  842
 +  Functions: 20412
-+  Symbols:   18406
++  Symbols:   4376
 +  CStrings:  846
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_types2 : content changed
-~ __TEXT.__swift5_acfuncs : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__objc_const : content changed
 Symbols:
 + _LNEntityIdentifierInvalidSentinel
 + _OUTLINED_FUNCTION_748
@@ -238,5 +179,4 @@ CStrings:
 + "confirmationCondition: "
 - "[%s] <%s#%ld> Retrying after backoff"
 - "[%s] Retrying after backoff (attempt %ld)"
-
 ```

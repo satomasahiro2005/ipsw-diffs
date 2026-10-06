@@ -2,127 +2,67 @@
 
 > `/System/Library/PrivateFrameworks/PodcastsFoundation.framework/PodcastsFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4e0ec0` | `0x4cbcc4` | **`-0x151fc`** |
+| `__DATA.__bss` | `0x32318` | `0x30d98` | **`-0x1580`** |
+| `__TEXT.__oslogstring` | `0x12a60` | `0x11870` | **`-0x11f0`** |
+| `__AUTH_CONST.__const` | `0x2fa20` | `0x2e8c0` | **`-0x1160`** |
+| `__AUTH_CONST.__objc_const` | `0x1ca70` | `0x1bc08` | **`-0xe68`** |
+| `__DATA_DIRTY.__bss` | `0x1ae68` | `0x1b658` | **`+0x7f0`** |
+| `__TEXT.__const` | `0x3c110` | `0x3ba60` | **`-0x6b0`** |
+| `__TEXT.__objc_methlist` | `0xba8c` | `0xb424` | **`-0x668`** |
+| `__DATA.__data` | `0x6d38` | `0x67c8` | **`-0x570`** |
+| `__AUTH.__objc_data` | `0x3ca0` | `0x3798` | **`-0x508`** |
+| `__TEXT.__swift5_capture` | `0x6dc0` | `0x68d0` | **`-0x4f0`** |
+| `__DATA_DIRTY.__data` | `0x10d00` | `0x111a0` | **`+0x4a0`** |
+| `__TEXT.__unwind_info` | `0x124a8` | `0x120b0` | **`-0x3f8`** |
+| `__AUTH.__data` | `0x30e8` | `0x2d70` | **`-0x378`** |
+| `__TEXT.__swift5_typeref` | `0x19036` | `0x18cbe` | **`-0x378`** |
+| `__TEXT.__cstring` | `0x1099d` | `0x1064d` | **`-0x350`** |
+| `__DATA_CONST.__const` | `0x3d88` | `0x3a60` | **`-0x328`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6c48` | `0x6920` | **`-0x328`** |
+| `__TEXT.__constg_swiftt` | `0xff70` | `0xfc78` | **`-0x2f8`** |
+| `__TEXT.__swift5_fieldmd` | `0xf604` | `0xf354` | **`-0x2b0`** |
+| `__TEXT.__eh_frame` | `0x14980` | `0x14bdc` | **`+0x25c`** |
+| `__DATA_DIRTY.__objc_data` | `0x5670` | `0x5428` | **`-0x248`** |
+| `__AUTH_CONST.__cfstring` | `0xa2a0` | `0xa0c0` | **`-0x1e0`** |
+| `__TEXT.__swift5_reflstr` | `0xc6db` | `0xc5fb` | **`-0xe0`** |
+| `__TEXT.__swift5_assocty` | `0x1f78` | `0x1f00` | **`-0x78`** |
+| `__TEXT.__swift5_proto` | `0x299c` | `0x2930` | **`-0x6c`** |
+| `__DATA_CONST.__objc_classlist` | `0xaf8` | `0xaa0` | **`-0x58`** |
+| `__DATA.__objc_ivar` | `0x4d0` | `0x484` | **`-0x4c`** |
+| `__TEXT.__swift_as_cont` | `0x6f8` | `0x740` | **`+0x48`** |
+| `__TEXT.__swift5_types` | `0x113c` | `0x1108` | **`-0x34`** |
+| `__AUTH_CONST.__auth_got` | `0x2b30` | `0x2b60` | **`+0x30`** |
+| `__DATA.__common` | `0x80` | `0x58` | **`-0x28`** |
+| `__TEXT.__swift5_builtin` | `0x5dc` | `0x5b4` | **`-0x28`** |
+| `__TEXT.__gcc_except_tab` | `0xbd8` | `0xbfc` | **`+0x24`** |
+| `__DATA_CONST.__objc_protolist` | `0x3b8` | `0x398` | **`-0x20`** |
+| `__TEXT.__swift_as_entry` | `0x308` | `0x328` | **`+0x20`** |
+| `__TEXT.__swift_as_ret` | `0x31c` | `0x338` | **`+0x1c`** |
+| `__DATA_CONST.__objc_protorefs` | `0x208` | `0x1f0` | **`-0x18`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x50` | `0x40` | **`-0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1c0` | `0x1b0` | **`-0x10`** |
+| `__TEXT.__swift5_mpenum` | `0x1e0` | `0x1ec` | **`+0xc`** |
+| `__DATA_CONST.__got` | `0x16c8` | `0x16c0` | **`-0x8`** |
+| `__TEXT.__swift5_protos` | `0x1a8` | `0x1ac` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x4e0ec0
--  __TEXT.__objc_methlist: 0xba8c
--  __TEXT.__const: 0x3c110
--  __TEXT.__cstring: 0x1099d
--  __TEXT.__oslogstring: 0x12a60
--  __TEXT.__gcc_except_tab: 0xbd8
-+  __TEXT.__text: 0x4cbcc4
-+  __TEXT.__objc_methlist: 0xb424
-+  __TEXT.__const: 0x3ba60
-+  __TEXT.__cstring: 0x1064d
-+  __TEXT.__oslogstring: 0x11870
-+  __TEXT.__gcc_except_tab: 0xbfc
-   __TEXT.__ustring: 0x38
-   __TEXT.__dlopen_cstrs: 0xca
--  __TEXT.__swift5_typeref: 0x19036
--  __TEXT.__swift5_fieldmd: 0xf604
--  __TEXT.__constg_swiftt: 0xff70
--  __TEXT.__swift5_builtin: 0x5dc
--  __TEXT.__swift5_reflstr: 0xc6db
--  __TEXT.__swift5_assocty: 0x1f78
--  __TEXT.__swift5_protos: 0x1a8
--  __TEXT.__swift5_proto: 0x299c
--  __TEXT.__swift5_types: 0x113c
--  __TEXT.__swift5_capture: 0x6dc0
--  __TEXT.__swift_as_entry: 0x308
--  __TEXT.__swift_as_ret: 0x31c
--  __TEXT.__swift_as_cont: 0x6f8
--  __TEXT.__swift5_mpenum: 0x1e0
--  __TEXT.__unwind_info: 0x124a8
--  __TEXT.__eh_frame: 0x14980
-+  __TEXT.__swift5_typeref: 0x18cbe
-+  __TEXT.__swift5_fieldmd: 0xf354
-+  __TEXT.__constg_swiftt: 0xfc78
-+  __TEXT.__swift5_builtin: 0x5b4
-+  __TEXT.__swift5_reflstr: 0xc5fb
-+  __TEXT.__swift5_assocty: 0x1f00
-+  __TEXT.__swift5_protos: 0x1ac
-+  __TEXT.__swift5_proto: 0x2930
-+  __TEXT.__swift5_types: 0x1108
-+  __TEXT.__swift5_capture: 0x68d0
-+  __TEXT.__swift_as_entry: 0x328
-+  __TEXT.__swift_as_ret: 0x338
-+  __TEXT.__swift_as_cont: 0x740
-+  __TEXT.__swift5_mpenum: 0x1ec
-+  __TEXT.__unwind_info: 0x120b0
-+  __TEXT.__eh_frame: 0x14bdc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3d88
--  __DATA_CONST.__objc_classlist: 0xaf8
-+  __DATA_CONST.__const: 0x3a60
-+  __DATA_CONST.__objc_classlist: 0xaa0
-   __DATA_CONST.__objc_catlist: 0xc8
--  __DATA_CONST.__objc_protolist: 0x3b8
-+  __DATA_CONST.__objc_protolist: 0x398
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6c48
--  __DATA_CONST.__objc_protorefs: 0x208
--  __DATA_CONST.__objc_superrefs: 0x1c0
-+  __DATA_CONST.__objc_selrefs: 0x6920
-+  __DATA_CONST.__objc_protorefs: 0x1f0
-+  __DATA_CONST.__objc_superrefs: 0x1b0
-   __DATA_CONST.__objc_arraydata: 0x80
--  __DATA_CONST.__got: 0x16c8
--  __AUTH_CONST.__const: 0x2fa20
--  __AUTH_CONST.__cfstring: 0xa2a0
--  __AUTH_CONST.__objc_const: 0x1ca70
-+  __DATA_CONST.__got: 0x16c0
-+  __AUTH_CONST.__const: 0x2e8c0
-+  __AUTH_CONST.__cfstring: 0xa0c0
-+  __AUTH_CONST.__objc_const: 0x1bc08
-   __AUTH_CONST.__objc_intobj: 0xba0
-   __AUTH_CONST.__objc_arrayobj: 0xc0
-   __AUTH_CONST.__objc_floatobj: 0x10
--  __AUTH_CONST.__objc_doubleobj: 0x50
--  __AUTH_CONST.__auth_got: 0x2b30
--  __AUTH.__objc_data: 0x3ca0
--  __AUTH.__data: 0x30e8
--  __DATA.__objc_ivar: 0x4d0
--  __DATA.__data: 0x6d38
--  __DATA.__bss: 0x32318
--  __DATA.__common: 0x80
--  __DATA_DIRTY.__objc_data: 0x5670
--  __DATA_DIRTY.__data: 0x10d00
--  __DATA_DIRTY.__bss: 0x1ae68
-+  __AUTH_CONST.__objc_doubleobj: 0x40
-+  __AUTH_CONST.__auth_got: 0x2b60
-+  __AUTH.__objc_data: 0x3798
-+  __AUTH.__data: 0x2d70
-+  __DATA.__objc_ivar: 0x484
-+  __DATA.__data: 0x67c8
-+  __DATA.__bss: 0x30d98
-+  __DATA.__common: 0x58
-+  __DATA_DIRTY.__objc_data: 0x5428
-+  __DATA_DIRTY.__data: 0x111a0
-+  __DATA_DIRTY.__bss: 0x1b658
-   __DATA_DIRTY.__common: 0x130
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
+-4027.100.70.0.0
++4027.100.75.0.0
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 28028
--  Symbols:   22862
--  CStrings:  5081
+-  Symbols:   12704
+-  CStrings:  3782
 +  Functions: 27506
-+  Symbols:   22094
-+  CStrings:  4972
- 
-Sections:
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
++  Symbols:   12418
++  CStrings:  3687
 Symbols:
 + GCC_except_table13
 + _PFAnalyticsEventNameLibrarySyncEnabled
@@ -135,10 +75,6 @@ Symbols:
 + _associated conformance 18PodcastsFoundation17MigrationSignpostOSHAASQ
 + _get_enum_tag_for_layout_string 18PodcastsFoundation15FeedUpdateErrorO
 + _get_enum_tag_for_layout_string 18PodcastsFoundation16FeedUpdateResultO
-+ _objc_msgSend$downloadedURL
-+ _objc_msgSend$initWithLibrarySyncEnabled:
-+ _objc_msgSend$initWithName:payload:
-+ _objc_msgSend$isStagedMigrationRunning
 + _swift_task_addCancellationHandler
 + _swift_task_removeCancellationHandler
 + _symbolic $s18PodcastsFoundation18LibraryFeedUpdaterP
@@ -405,101 +341,6 @@ Symbols:
 - _kOfflineKeyDataUuid
 - _keypath_get_selector_fairPlayMigrationRetryCount
 - _keypath_get_selector_localURL
-- _objc_msgSend$_isOfflineAsset
-- _objc_msgSend$account
-- _objc_msgSend$adamId
-- _objc_msgSend$addContentKeyRecipient:
-- _objc_msgSend$cancelPreviousPerformRequestsWithTarget:selector:object:
-- _objc_msgSend$cleanupAfterContentKeyRequestForOfflineRenewal:withError:
-- _objc_msgSend$cleanupAfterContentKeyRequestWithError:
-- _objc_msgSend$contentAdamId
-- _objc_msgSend$contentKeyRequestDidFailWithError:
-- _objc_msgSend$contentKeyResponseWithFairPlayStreamingKeyResponseData:renewalDate:
-- _objc_msgSend$contentKeySession
-- _objc_msgSend$contentKeySessionWithKeySystem:
-- _objc_msgSend$copyWith:
-- _objc_msgSend$fairPlayMigrationRetryCount
-- _objc_msgSend$finishContentKeyRequest:forOfflineRenewal:withResponse:
-- _objc_msgSend$finishContentKeyRequest:withResponse:
-- _objc_msgSend$initFrom:adamId:requestType:offlineRequest:
-- _objc_msgSend$initWithKeyIdentifier:adamId:requestType:offlineRequest:secureInvalidationDsid:
-- _objc_msgSend$initWithRecipient:useCase:account:urlProtocolDelegate:
-- _objc_msgSend$initWithRequest:error:
-- _objc_msgSend$initWithRequest:keyData:renewalDate:error:
-- _objc_msgSend$invalidatePersistableContentKey:options:completionHandler:
-- _objc_msgSend$isFileURL
-- _objc_msgSend$isRenewal
-- _objc_msgSend$keyData
-- _objc_msgSend$keyExistsInStorageFor:
-- _objc_msgSend$keyIdentifier
-- _objc_msgSend$keyIdentifiersFrom:completion:
-- _objc_msgSend$keyLoaderQueue
-- _objc_msgSend$keyUri
-- _objc_msgSend$loadCertificateDataWithCompletion:
-- _objc_msgSend$loadKeyDataFor:account:completion:
-- _objc_msgSend$loadValuesAsynchronouslyForKeys:completionHandler:
-- _objc_msgSend$localURL
-- _objc_msgSend$makeStreamingContentKeyRequestDataForApp:contentIdentifier:options:completionHandler:
-- _objc_msgSend$markOfflineKeyFor:pendingDeletion:
-- _objc_msgSend$pendingCompletion
-- _objc_msgSend$performDataRequest:account:callback:
-- _objc_msgSend$performSelector:withObject:afterDelay:
-- _objc_msgSend$persistableContentKeyFromKeyVendorResponse:options:error:
-- _objc_msgSend$podcastsLicenseCert
-- _objc_msgSend$podcastsLicenseOfflineRenew
-- _objc_msgSend$podcastsLicenseOfflineStart
-- _objc_msgSend$podcastsLicenseOfflineStop
-- _objc_msgSend$podcastsLicenseOfflineStopNonce
-- _objc_msgSend$podcastsLicenseStreamingRenew
-- _objc_msgSend$podcastsLicenseStreamingStart
-- _objc_msgSend$podcastsLicenseStreamingStop
-- _objc_msgSend$processContentKeyRequestWithIdentifier:initializationData:options:
-- _objc_msgSend$processContentKeyResponse:
-- _objc_msgSend$processContentKeyResponseError:
-- _objc_msgSend$recipient
-- _objc_msgSend$removeContentKeyRecipient:
-- _objc_msgSend$removeKeyDataFor:
-- _objc_msgSend$removeKeyDataForStoreTrackID:
-- _objc_msgSend$reportMissingFairPlayOfflineKey
-- _objc_msgSend$request
-- _objc_msgSend$requestKeyResponseFromContentKeyRequest:requestType:completion:
-- _objc_msgSend$respondByRequestingPersistableContentKeyRequestAndReturnError:
-- _objc_msgSend$retrieveKeyDataFor:
-- _objc_msgSend$saveKeyDataFor:
-- _objc_msgSend$savedRequestDataToUseForStopping
-- _objc_msgSend$savedRequestToUseForStopping
-- _objc_msgSend$secureInvalidationDsid
-- _objc_msgSend$secureKeyRequestHandler
-- _objc_msgSend$secureKeyRequestStorage
-- _objc_msgSend$securelyInvalidateOfflineDataForRequests:completion:
-- _objc_msgSend$setContentAdamId:
-- _objc_msgSend$setContentKeySession:
-- _objc_msgSend$setDelegate:queue:
-- _objc_msgSend$setError:
-- _objc_msgSend$setExpirationDate:
-- _objc_msgSend$setFairPlayMigrationRetryCount:
-- _objc_msgSend$setIsRenewal:
-- _objc_msgSend$setKeyData:
-- _objc_msgSend$setKeyIdentifier:
-- _objc_msgSend$setKeyLoaderQueue:
-- _objc_msgSend$setKeyUri:
-- _objc_msgSend$setLastRenewedDate:
-- _objc_msgSend$setLocalURL:
-- _objc_msgSend$setPendingCompletion:
-- _objc_msgSend$setPendingDeletion:
-- _objc_msgSend$setRecipient:
-- _objc_msgSend$setRequestData:
-- _objc_msgSend$setSavedRequestDataToUseForStopping:
-- _objc_msgSend$setSavedRequestToUseForStopping:
-- _objc_msgSend$setSecureInvalidationDsid:
-- _objc_msgSend$setSecureKeyRequestHandler:
-- _objc_msgSend$setSecureKeyRequestStorage:
-- _objc_msgSend$setUrlProtocolDelegate:
-- _objc_msgSend$setUseCase:
-- _objc_msgSend$startKeyLoadingProcessWithKeyIdentifier:contentAdamId:isRenewal:completion:
-- _objc_msgSend$statusOfValueForKey:error:
-- _objc_msgSend$urlProtocolDelegate
-- _objc_msgSend$useCase
 - _swift_dynamicCastObjCClassUnconditional
 - _symbolic $s18PodcastsFoundation23SecureKeyRequestHandlerP
 - _symbolic $s18PodcastsFoundation23SecureKeyRequestStorageP
@@ -729,5 +570,4 @@ CStrings:
 - "v24@?0@\"NSData\"8@\"NSError\"16"
 - "🔑 Content key request succeeded for %@"
 - "🔑🚨 Content key request failed for %@ with error: %@"
-
 ```

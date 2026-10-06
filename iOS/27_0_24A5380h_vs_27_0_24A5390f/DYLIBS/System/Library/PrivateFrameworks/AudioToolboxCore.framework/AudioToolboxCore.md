@@ -2,82 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__cstring`
-- `__TEXT.__dof_AudioTool`
-- `__TEXT.__dof_AUHosting`
-- `__TEXT.__dof_AudioConv`
-- `__TEXT.__dof_AUHostin0`
-- `__TEXT.__dof_IPCAudioU`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__objc_ivar`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x305570` | `0x3052fc` | **`-0x274`** |
+| `__TEXT.__realtime` | `0x38e50` | `0x38e00` | **`-0x50`** |
+| `__TEXT.__oslogstring` | `0x155cd` | `0x155fd` | **`+0x30`** |
+| `__TEXT.__gcc_except_tab` | `0x26d0c` | `0x26d38` | **`+0x2c`** |
+| `__TEXT.__objc_methlist` | `0x3c8c` | `0x3c7c` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0xe5d8` | `0xe5e8` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1d00` | `0x1cf8` | **`-0x8`** |
+
+### Other Changes
 
 ```diff
 
 -1633.1.0.0.0
--  __TEXT.__text: 0x305570
--  __TEXT.__realtime: 0x38e50
--  __TEXT.__objc_methlist: 0x3c8c
 +1638.0.0.0.0
-+  __TEXT.__text: 0x3052fc
-+  __TEXT.__realtime: 0x38e00
-+  __TEXT.__objc_methlist: 0x3c7c
-   __TEXT.__const: 0x2462a
-   __TEXT.__dlopen_cstrs: 0x50a
--  __TEXT.__gcc_except_tab: 0x26d0c
-+  __TEXT.__gcc_except_tab: 0x26d38
-   __TEXT.__cstring: 0x212ea
--  __TEXT.__oslogstring: 0x155cd
-+  __TEXT.__oslogstring: 0x155fd
-   __TEXT.__dof_AudioTool: 0x4f1
-   __TEXT.__dof_AUHosting: 0x432
-   __TEXT.__dof_AudioConv: 0x129e
-   __TEXT.__dof_AUHostin0: 0x4a9
-   __TEXT.__dof_IPCAudioU: 0x582
--  __TEXT.__unwind_info: 0xe5d8
-+  __TEXT.__unwind_info: 0xe5e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x228
-   __DATA_CONST.__objc_protolist: 0xc8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1d00
-+  __DATA_CONST.__objc_selrefs: 0x1cf8
-   __DATA_CONST.__objc_protorefs: 0x70
-   __DATA_CONST.__objc_superrefs: 0x1e0
-   __DATA_CONST.__objc_arraydata: 0x70
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libxml2.2.dylib
 -  Functions: 12156
--  Symbols:   20169
--  CStrings:  6763
 +  Functions: 12155
-+  Symbols:   20168
+
+-  CStrings:  6763
 +  CStrings:  6764
- 
 Symbols:
 + GCC_except_table10000
 + GCC_except_table10003
@@ -1191,7 +1139,6 @@ Symbols:
 - ___block_descriptor_64_ea8_32c144_ZTSNSt3__110shared_ptrIN5caulk12synchronizedIN22AUHostingServiceClient11SharedStateENS_15recursive_mutexENS1_22empty_atomic_interfaceIS4_EEEEEE48c75_ZTSKZN22AUHostingServiceClientC1EP6NSUUIDP8NSStringP15NSXPCConnectionE3$_0_e5_v8?0l
 - ___copy_helper_block_ea8_32c144_ZTSNSt3__110shared_ptrIN5caulk12synchronizedIN22AUHostingServiceClient11SharedStateENS_15recursive_mutexENS1_22empty_atomic_interfaceIS4_EEEEEE48c75_ZTSKZN22AUHostingServiceClientC1EP6NSUUIDP8NSStringP15NSXPCConnectionE3$_0
 - ___destroy_helper_block_ea8_32c144_ZTSNSt3__110shared_ptrIN5caulk12synchronizedIN22AUHostingServiceClient11SharedStateENS_15recursive_mutexENS1_22empty_atomic_interfaceIS4_EEEEEE48c75_ZTSKZN22AUHostingServiceClientC1EP6NSUUIDP8NSStringP15NSXPCConnectionE3$_0
-- _objc_msgSend$resolveComponent
 CStrings:
 + "%25s:%-5d  WritePackets: packet count too large"
 ```

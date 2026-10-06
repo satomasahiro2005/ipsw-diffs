@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/AppleMediaServices.framework/PlugIns/AMSFollowUpExtension.appex/AMSFollowUpExtension`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x98` | `0xa0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_arraydata: 0x30
-   __DATA_CONST.__objc_dictobj: 0x50
-   __DATA_CONST.__auth_got: 0x1a0
--  __DATA_CONST.__got: 0x98
-+  __DATA_CONST.__got: 0xa0
-   __DATA.__objc_const: 0x358
-   __DATA.__objc_selrefs: 0x380
-   __DATA.__objc_ivar: 0x1c
-
+-8.0.38.0.0
++8.0.43.0.0
 ```

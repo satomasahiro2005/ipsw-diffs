@@ -2,37 +2,30 @@
 
 > `/usr/lib/system/libsystem_containermanager.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x300b8` | `0x30d74` | **`+0xcbc`** |
+| `__TEXT.__oslogstring` | `0x59cf` | `0x5ca9` | **`+0x2da`** |
+| `__TEXT.__cstring` | `0x3c49` | `0x3d98` | **`+0x14f`** |
+| `__DATA_CONST.__const` | `0x1d08` | `0x1d50` | **`+0x48`** |
+| `__TEXT.__const` | `0x434` | `0x424` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x708` | `0x718` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -833.0.8.0.1
--  __TEXT.__text: 0x2fde0
--  __TEXT.__const: 0x434
--  __TEXT.__cstring: 0x3c49
--  __TEXT.__oslogstring: 0x59cf
--  __TEXT.__unwind_info: 0x998
 +833.40.14.0.0
-+  __TEXT.__text: 0x30a78
-+  __TEXT.__const: 0x424
-+  __TEXT.__cstring: 0x3d98
-+  __TEXT.__oslogstring: 0x5ca9
-+  __TEXT.__unwind_info: 0x9b0
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x1d08
-+  __DATA_CONST.__const: 0x1d50
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x220
-   __AUTH_CONST.__auth_got: 0x0
 
-   - /usr/lib/system/libsystem_sandbox.dylib
-   - /usr/lib/system/libsystem_trace.dylib
-   - /usr/lib/system/libxpc.dylib
 -  Functions: 626
 -  Symbols:   1009
 -  CStrings:  905
 +  Functions: 632
 +  Symbols:   1017
 +  CStrings:  926
- 
 Symbols:
 + ___container_operation_copy_superseded_block_invoke
 + __container_serialize_copy_deserialized_reference

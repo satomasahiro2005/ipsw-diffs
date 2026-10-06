@@ -2,25 +2,26 @@
 
 > `/System/Library/ExtensionKit/Extensions/FinanceDiagnosticExtension.appex/FinanceDiagnosticExtension`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2ce0` | `0x2ce4` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
 - `__TEXT.__swift5_typeref`
 - `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
 
-```diff
+### Other Changes
 
- 376.0.1.0.0
--  __TEXT.__text: 0x2ce0
-+  __TEXT.__text: 0x2ce4
-   __TEXT.__auth_stubs: 0x650
-   __TEXT.__objc_stubs: 0xa0
-   __TEXT.__objc_methlist: 0x2c
+```text
 Functions:
 ~ sub_100003060 : 548 -> 552
 ```

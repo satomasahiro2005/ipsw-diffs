@@ -2,32 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/SILManager.framework/SILManager`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5f390` | `0x5f644` | **`+0x2b4`** |
+| `__TEXT.__unwind_info` | `0x1398` | `0x1390` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 67.14.0.0.0
--  __TEXT.__text: 0x5f390
-+  __TEXT.__text: 0x5f644
-   __TEXT.__objc_methlist: 0x738
-   __TEXT.__const: 0x4c4c
-   __TEXT.__cstring: 0x2507
-
-   __TEXT.__swift5_proto: 0x184
-   __TEXT.__swift5_types: 0x150
-   __TEXT.__swift5_protos: 0x14
--  __TEXT.__unwind_info: 0x1398
-+  __TEXT.__unwind_info: 0x1390
-   __TEXT.__eh_frame: 0x1560
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1682
 +  Functions: 1683
-   Symbols:   4201
-   CStrings:  477
- 
 Functions:
 ~ _sil_argb8888_to_b3a8 : 552 -> 556
 ~ _sil_a8_to_argb8888_multiply_opacity_and_fill_opaque_color : 224 -> 228

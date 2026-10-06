@@ -2,44 +2,27 @@
 
 > `com.apple.filesystems.apfs`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x150aa8` | `0x150f10` | **`+0x468`** |
+| `__TEXT.__cstring` | `0x4f8b7` | `0x4fc39` | **`+0x382`** |
+| `__DATA_CONST.__kalloc_type` | `0x54c0` | `0x5440` | **`-0x80`** |
+| `__TEXT_EXEC.__auth_stubs` | `0x22f0` | `0x2330` | **`+0x40`** |
+| `__DATA_CONST.__auth_got` | `0x1178` | `0x1198` | **`+0x20`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__const: 0x94c
--  __TEXT.__cstring: 0x4f8b7
--  __TEXT_EXEC.__text: 0x150aa8
--  __TEXT_EXEC.__auth_stubs: 0x22f0
-+  __TEXT.__cstring: 0x4fc39
-+  __TEXT_EXEC.__text: 0x150f10
-+  __TEXT_EXEC.__auth_stubs: 0x2330
-   __DATA.__data: 0x75c
-   __DATA.__bss: 0xd80
-   __DATA_CONST.__mod_init_func: 0x10
-   __DATA_CONST.__mod_term_func: 0x10
-   __DATA_CONST.__const: 0x6890
--  __DATA_CONST.__kalloc_type: 0x54c0
-+  __DATA_CONST.__kalloc_type: 0x5440
-   __DATA_CONST.__kalloc_var: 0x2bc0
-   __DATA_CONST.__assert: 0x14
--  __DATA_CONST.__auth_got: 0x1178
-+  __DATA_CONST.__auth_got: 0x1198
-   __DATA_CONST.__got: 0x158
-   __DATA_CONST.__auth_ptr: 0x8
+-3283.0.0.0.0
 -  Functions: 2390
++3283.0.9.502.1
 +  Functions: 2399
-   Symbols:   0
+
 -  CStrings:  6926
 +  CStrings:  6946
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __DATA.__data : content changed
-~ __DATA_CONST.__mod_init_func : content changed
-~ __DATA_CONST.__mod_term_func : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__kalloc_var : content changed
-~ __DATA_CONST.__assert : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA_CONST.__auth_ptr : content changed
 CStrings:
 + "!\"crypto key pool is not supported for class\\n\""
 + "%s:%d: %s Grafting %s which is a clone of %s, share its blockmap lut\n"
@@ -145,5 +128,4 @@ CStrings:
 - "extent_update_range_to_evict"
 - "nx_keybag_lookup_vek"
 - "site.struct aks_fv_data_s"
-
 ```

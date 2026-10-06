@@ -2,17 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/SafariShared.framework/SafariShared`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -625.1.29.10.3
 +625.1.29.10.25
-   __TEXT.__text: 0x2a8e40
-   __TEXT.__objc_methlist: 0x15fe4
-   __TEXT.__const: 0x9afa4
 CStrings:
 + "8625.1.29.10.25"
 - "8625.1.29.10.3"

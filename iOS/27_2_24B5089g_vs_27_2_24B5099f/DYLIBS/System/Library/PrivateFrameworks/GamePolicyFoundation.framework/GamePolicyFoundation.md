@@ -2,31 +2,21 @@
 
 > `/System/Library/PrivateFrameworks/GamePolicyFoundation.framework/GamePolicyFoundation`
 
-```diff
+### Section Size Changes
 
- 4.1.2.0.0
--  __TEXT.__text: 0x3b6f0
-+  __TEXT.__text: 0x3b6fc
-   __TEXT.__objc_methlist: 0x6a8
-   __TEXT.__const: 0x20f0
-   __TEXT.__cstring: 0x1a0a
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__data` | `0xdf8` | `0x1ef8` | **`+0x1100`** |
+| `__AUTH.__data` | `0xf80` | `—` | **`-0xf80`** |
+| `__AUTH.__objc_data` | `0xaf8` | `—` | **`-0xaf8`** |
+| `__DATA_DIRTY.__objc_data` | `0xa18` | `0x1510` | **`+0xaf8`** |
+| `__DATA.__data` | `0x690` | `0x5b0` | **`-0xe0`** |
+| `__TEXT.__text` | `0x3cb84` | `0x3cb90` | **`+0xc`** |
 
-   __AUTH_CONST.__cfstring: 0x60
-   __AUTH_CONST.__objc_const: 0x2968
-   __AUTH_CONST.__auth_got: 0x8b8
--  __AUTH.__objc_data: 0xaf8
--  __AUTH.__data: 0xf80
--  __DATA.__data: 0x690
-+  __DATA.__data: 0x5b0
-   __DATA.__common: 0x8
--  __DATA_DIRTY.__objc_data: 0xa18
--  __DATA_DIRTY.__data: 0xdf8
-+  __DATA_DIRTY.__objc_data: 0x1510
-+  __DATA_DIRTY.__data: 0x1ef8
-   __DATA_DIRTY.__bss: 0x90
-   __DATA_DIRTY.__common: 0x210
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+### Other Changes
+
+```text
 Functions:
-~ sub_280a222ec -> sub_2678d3204 : 124 -> 128
-~ sub_280a283f8 -> sub_2678d9314 : 284 -> 292
+~ sub_2838629d0 -> sub_282b998e8 : 124 -> 128
+~ sub_283868f98 -> sub_282b9feb4 : 284 -> 292
 ```

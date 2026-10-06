@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CoreReporting.framework/CoreReporting`
 
-```diff
+### Section Size Changes
 
- 13.0.0.0.0
--  __TEXT.__text: 0x2e4f0
-+  __TEXT.__text: 0x2e4d8
-   __TEXT.__objc_methlist: 0x25c
-   __TEXT.__const: 0x2d50
-   __TEXT.__swift5_typeref: 0x926
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2fa84` | `0x2fa6c` | **`-0x18`** |
+
+### Other Changes
+
+```text
 Functions:
-~ _$s13CoreReporting11SubmittablePAAE21validateForSubmission6config7routingAA16RetirementReasonOSgSo21OSAProxyConfigurationC_AA7RoutingOtF : 16160 -> 16136
+~ _$s13CoreReporting11SubmittablePAAE21validateForSubmission6config7routingAA16RetirementReasonOSgSo21OSAProxyConfigurationC_AA7RoutingOtF : 16260 -> 16236
 ```

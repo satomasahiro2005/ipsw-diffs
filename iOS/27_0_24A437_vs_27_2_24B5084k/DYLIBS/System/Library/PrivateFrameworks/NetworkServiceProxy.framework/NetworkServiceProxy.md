@@ -2,70 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/NetworkServiceProxy.framework/NetworkServiceProxy`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x63570` | `0x67310` | **`+0x3da0`** |
+| `__AUTH_CONST.__objc_const` | `0x80e0` | `0x8660` | **`+0x580`** |
+| `__TEXT.__objc_methlist` | `0x601c` | `0x654c` | **`+0x530`** |
+| `__AUTH_CONST.__cfstring` | `0x51c0` | `0x5340` | **`+0x180`** |
+| `__AUTH.__objc_data` | `0x1450` | `0x1590` | **`+0x140`** |
+| `__DATA_CONST.__objc_selrefs` | `0x29f8` | `0x2b20` | **`+0x128`** |
+| `__TEXT.__unwind_info` | `0x1228` | `0x1328` | **`+0x100`** |
+| `__TEXT.__cstring` | `0x5ae2` | `0x5b9c` | **`+0xba`** |
+| `__DATA_CONST.__const` | `0xc90` | `0xcd0` | **`+0x40`** |
+| `__DATA_DIRTY.__objc_ivar` | `0x2dc` | `0x310` | **`+0x34`** |
+| `__DATA_CONST.__objc_classlist` | `0x220` | `0x240` | **`+0x20`** |
+| `__DATA_CONST.__objc_superrefs` | `0x208` | `0x228` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x468` | `0x478` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x6d0` | `0x6c8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -985.0.0.0.0
--  __TEXT.__text: 0x62118
--  __TEXT.__objc_methlist: 0x601c
 +990.0.0.0.0
-+  __TEXT.__text: 0x65d8c
-+  __TEXT.__objc_methlist: 0x654c
-   __TEXT.__const: 0x370
-   __TEXT.__gcc_except_tab: 0x64
--  __TEXT.__cstring: 0x5ae2
-+  __TEXT.__cstring: 0x5b9c
-   __TEXT.__oslogstring: 0x32c4
--  __TEXT.__unwind_info: 0x14b8
-+  __TEXT.__unwind_info: 0x15c8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xc90
--  __DATA_CONST.__objc_classlist: 0x220
-+  __DATA_CONST.__const: 0xcd0
-+  __DATA_CONST.__objc_classlist: 0x240
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x29f8
--  __DATA_CONST.__objc_superrefs: 0x208
-+  __DATA_CONST.__objc_selrefs: 0x2b20
-+  __DATA_CONST.__objc_superrefs: 0x228
-   __DATA_CONST.__objc_arraydata: 0x48
--  __DATA_CONST.__got: 0x468
-+  __DATA_CONST.__got: 0x478
-   __AUTH_CONST.__const: 0x160
--  __AUTH_CONST.__cfstring: 0x51c0
--  __AUTH_CONST.__objc_const: 0x80e0
-+  __AUTH_CONST.__cfstring: 0x5340
-+  __AUTH_CONST.__objc_const: 0x8660
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__objc_intobj: 0x60
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x6d0
--  __AUTH.__objc_data: 0x1450
-+  __AUTH_CONST.__auth_got: 0x6c8
-+  __AUTH.__objc_data: 0x1590
-   __DATA.__objc_ivar: 0x334
-   __DATA.__data: 0x268
-   __DATA.__common: 0x1
--  __DATA_DIRTY.__objc_ivar: 0x2dc
-+  __DATA_DIRTY.__objc_ivar: 0x310
-   __DATA_DIRTY.__objc_data: 0xf0
-   __DATA_DIRTY.__bss: 0x98
-   __DATA_DIRTY.__common: 0x20
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2128
--  Symbols:   4062
+-  Symbols:   3303
 -  CStrings:  1223
 +  Functions: 2236
-+  Symbols:   4223
++  Symbols:   3446
 +  CStrings:  1235
- 
 Symbols:
 + +[NSPPrivacyProxyDenominationResult tokenResponsesType]
 + +[NSPPrivacyProxyFailedExpiringTokens privacyPassTokensType]
@@ -211,24 +179,6 @@ Symbols:
 + __OBJC_METACLASS_RO_$_NSPPrivacyProxyFailedExpiringTokens
 + __OBJC_METACLASS_RO_$_NSPPrivacyProxyTokenRefundRequest
 + __OBJC_METACLASS_RO_$_NSPPrivacyProxyTokenRefundResponse
-+ _objc_msgSend$addDenominationRequests:
-+ _objc_msgSend$addFailed:
-+ _objc_msgSend$addPrivacyPassTokens:
-+ _objc_msgSend$addResults:
-+ _objc_msgSend$clearDenominationRequests
-+ _objc_msgSend$clearFaileds
-+ _objc_msgSend$clearPrivacyPassTokens
-+ _objc_msgSend$clearResults
-+ _objc_msgSend$denominationRequestsAtIndex:
-+ _objc_msgSend$denominationRequestsCount
-+ _objc_msgSend$failedAtIndex:
-+ _objc_msgSend$failedsCount
-+ _objc_msgSend$privacyPassTokensAtIndex:
-+ _objc_msgSend$privacyPassTokensCount
-+ _objc_msgSend$resultsAtIndex:
-+ _objc_msgSend$resultsCount
-+ _objc_msgSend$setDenominationIssuer:
-+ _objc_msgSend$setExpiringTokenIssuerName:
 - _os_variant_has_internal_content
 CStrings:
 + "DENOMINATION_TOO_SMALL"

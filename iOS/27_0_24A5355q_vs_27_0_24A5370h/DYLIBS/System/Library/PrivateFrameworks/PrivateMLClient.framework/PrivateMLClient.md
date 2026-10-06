@@ -2,387 +2,65 @@
 
 > `/System/Library/PrivateFrameworks/PrivateMLClient.framework/PrivateMLClient`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3c5130` | `0x405cf8` | **`+0x40bc8`** |
+| `__DATA.__bss` | `0x47080` | `0x4ad80` | **`+0x3d00`** |
+| `__TEXT.__const` | `0x2e228` | `0x306e8` | **`+0x24c0`** |
+| `__TEXT.__eh_frame` | `0x17ab8` | `0x19230` | **`+0x1778`** |
+| `__AUTH_CONST.__const` | `0xaae0` | `0xb9b8` | **`+0xed8`** |
+| `__TEXT.__unwind_info` | `0x103d8` | `0x110f0` | **`+0xd18`** |
+| `__AUTH.__data` | `0x5020` | `0x5cb8` | **`+0xc98`** |
+| `__DATA.__data` | `0x8eb0` | `0x98e0` | **`+0xa30`** |
+| `__TEXT.__oslogstring` | `0x6efd` | `0x78a0` | **`+0x9a3`** |
+| `__TEXT.__cstring` | `0xaa2e` | `0xb315` | **`+0x8e7`** |
+| `__TEXT.__swift5_fieldmd` | `0x9344` | `0x9ab8` | **`+0x774`** |
+| `__TEXT.__swift5_reflstr` | `0x78a5` | `0x7ea5` | **`+0x600`** |
+| `__TEXT.__constg_swiftt` | `0x6f64` | `0x7464` | **`+0x500`** |
+| `__TEXT.__swift5_typeref` | `0x6bea` | `0x70e6` | **`+0x4fc`** |
+| `__TEXT.__swift5_capture` | `0x21ac` | `0x2670` | **`+0x4c4`** |
+| `__DATA_CONST.__const` | `0x4840` | `0x4b00` | **`+0x2c0`** |
+| `__AUTH_CONST.__objc_const` | `0x2f98` | `0x31b0` | **`+0x218`** |
+| `__TEXT.__swift5_proto` | `0x27e4` | `0x29cc` | **`+0x1e8`** |
+| `__AUTH_CONST.__auth_got` | `0x1570` | `0x1680` | **`+0x110`** |
+| `__DATA_DIRTY.__data` | `0xfe58` | `0xff30` | **`+0xd8`** |
+| `__TEXT.__swift_as_cont` | `0x444` | `0x4f8` | **`+0xb4`** |
+| `__TEXT.__swift5_types` | `0x8c4` | `0x930` | **`+0x6c`** |
+| `__TEXT.__swift5_assocty` | `0xaa0` | `0xad0` | **`+0x30`** |
+| `__TEXT.__swift_as_ret` | `0x190` | `0x1c0` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa0` | `0xc8` | **`+0x28`** |
+| `__TEXT.__swift5_builtin` | `0x168` | `0x190` | **`+0x28`** |
+| `__TEXT.__swift_as_entry` | `0x148` | `0x160` | **`+0x18`** |
+| `__TEXT.__swift5_mpenum` | `0xb0` | `0xc0` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x108` | `0x110` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -201.0.2.0.0
--  __TEXT.__text: 0x3c5130 sha256:8705e7ea3a2601354dde152ca689e0f39b26e28a0512eee4bb3b381229d3d91d
--  __TEXT.__const: 0x2e228 sha256:4833d30f33d969eab25a0492200b558aab4d07fc268f4b1304e4ba15af2b944e
--  __TEXT.__swift5_typeref: 0x6bea sha256:44660a4d3cc1be2fe16208c7e6bf7d889cea33955f8746c4169d6d95cd19333d
--  __TEXT.__oslogstring: 0x6efd sha256:1f291493e104d40f6e50a2353cd83fa25a7b99e41e510d5e0ef01c9d16fa2b5a
--  __TEXT.__cstring: 0xaa2e sha256:16cae881eaed0eb8733d0c6922e159c8cf7daa43d256b234792feac288313445
--  __TEXT.__constg_swiftt: 0x6f64 sha256:25bdb4d77d65608300c834a24b39137e94962a7fa2f653993f5c22ad970c558b
--  __TEXT.__swift5_builtin: 0x168 sha256:0ad8d42021901199ebc4e3a8f1188af9fed0137281242a6cfc0e65a028ed5142
--  __TEXT.__swift5_reflstr: 0x78a5 sha256:aa99c83f3b881479cb333733a178df43659f21981f19837e7bbc253c465dc998
--  __TEXT.__swift5_fieldmd: 0x9344 sha256:9f0681967ef4c05a5d77f0f440b6bb109df233acd7fdda3bd091ad12b289f910
--  __TEXT.__swift5_capture: 0x21ac sha256:2a6a08ac5eda2a4b9c53cad17a49767f69debd68f86b3e124c98e1ec2d52ee12
--  __TEXT.__swift5_proto: 0x27e4 sha256:11929313d7745c4cd78f83b648273f9d01941920dc3635a345d471b69f7ef1d0
--  __TEXT.__swift5_types: 0x8c4 sha256:2afdb9424ac992a1a7434ae571814e2e527d8b5b9745c1d86bc3a40599a3e455
--  __TEXT.__swift5_assocty: 0xaa0 sha256:f6a1c1655229faf0b1aa3171897d164504057b535574b68fceba35c5de6957bf
--  __TEXT.__swift5_mpenum: 0xb0 sha256:9942136db58ec9c67eda2750bc885abc3ffebcd0a2c283d8db8a556f36e2987f
--  __TEXT.__swift_as_entry: 0x148 sha256:c27c1e9575d5c0484d1bbd51bdcacdd2238ad7975e33939a905eca2c4c9d2787
--  __TEXT.__swift_as_ret: 0x190 sha256:5dcfd6d138b731c3ab93f80c5c1727be03e2f60034e35dfa1d6ee2159e527bfc
--  __TEXT.__swift_as_cont: 0x444 sha256:bc72aa068e034772ddbeb8e9a5035b43c08bddc33bbfa8b34b6c9fdfdf29fd72
--  __TEXT.__swift5_protos: 0x18 sha256:e7381b887ca59dbf6585ae8d6d9cfe9669e13684d9fedd0ddb89140b1142b573
--  __TEXT.__unwind_info: 0x103d8 sha256:4586422a405e0e18935a18d32e7a07f9bfba187c71cc9620bd8aeac797821f6f
--  __TEXT.__eh_frame: 0x17ab8 sha256:16ec7b0da23054aa0e8d4f72eccc7f88b33507db1ba417cc0f79988029b63ff4
 +204.0.2.0.0
-+  __TEXT.__text: 0x405cf8 sha256:da6df3c6bb2b14abbd9eae3f5407b23961c3e201c56f8e5b4fd137a3e96c7212
-+  __TEXT.__const: 0x306e8 sha256:cdeda919e2a59fe0a81ee82585520ebbea5b8e6a7dd70cedc06499349d0e8c64
-+  __TEXT.__swift5_typeref: 0x70e6 sha256:4715b6ac08a063495f0a5a7bf0bdd798ae76b38787f3c2ebe81c045c09df576e
-+  __TEXT.__oslogstring: 0x78a0 sha256:f0e74f7258d9bdc1227daa73ae79e46f6955d3eb58888ff91943cc4a6c91184d
-+  __TEXT.__cstring: 0xb315 sha256:041b5c5d9bc294acefa3175f96e0b1a9e1e65bfc6c1aa16754fb2c6b4c49c85a
-+  __TEXT.__constg_swiftt: 0x7464 sha256:dfadb27aaac0448e6d40339585b7c181a0290820f90f17c6e325a37bd0f1d7b4
-+  __TEXT.__swift5_builtin: 0x190 sha256:de3ddd753270f2a2ecf14fe2accf70f4aee9d879b30a144988a1dd609100ede4
-+  __TEXT.__swift5_reflstr: 0x7ea5 sha256:28790234a950192c96cc91d1b456c5e11ece80163adedd43fc63dddd46021dff
-+  __TEXT.__swift5_fieldmd: 0x9ab8 sha256:d0297b11622461bd8791203eb6c4a6776db3bce535d7b80c741aa3fd98c01d6c
-+  __TEXT.__swift5_capture: 0x2670 sha256:2aa89f6793eab459df5425d2a936eb849862a6d9512f117e47c28fdbbfb5b51f
-+  __TEXT.__swift5_proto: 0x29cc sha256:1cca2f9edc3e6ac97e06346bf4974b5ae95e97fc1b2934a60f2ba8807bca28b9
-+  __TEXT.__swift5_types: 0x930 sha256:d3bca969125225a3a3971229f3d4646003e1c907a39d2020f774268aab0a1505
-+  __TEXT.__swift5_assocty: 0xad0 sha256:fae7e0b516eb411828b3aa036ca5ce17466940e90093bdcc79813446bd6e906a
-+  __TEXT.__swift5_mpenum: 0xc0 sha256:cfb8892453b9c6d3856186f0da867911acace44e70de02d9ee2f61a020cf97eb
-+  __TEXT.__swift_as_entry: 0x160 sha256:34da2f7a6d06376a3dad08b8dea59e09493f25a5ad4f1935bb715bb68c51cdde
-+  __TEXT.__swift_as_ret: 0x1c0 sha256:555f376262901d182bc4e7c62b7418309b9ffe73e2b2fc21c01143a36b9ce997
-+  __TEXT.__swift_as_cont: 0x4f8 sha256:54a5e6bec2811bab056a79c027b238dbfe6281998279fb097a19cde210497f13
-+  __TEXT.__swift5_protos: 0x18 sha256:187acc6867d35d5d0851f93f535ac7752c06679181be50c3f334dfccef8c2136
-+  __TEXT.__unwind_info: 0x110f0 sha256:c605f79c9a3eb4879e2599706a69b68b9e42c04915b68a0c887f75e69df2b6df
-+  __TEXT.__eh_frame: 0x19230 sha256:f4d647392152b898d8d1694fe1fbd1b30668a6eb32505a514d4b175f419455a9
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4840 sha256:6775df7a4315319958f48981943f79998097cb8914fa54ba80f60754ce6ba4fe
--  __DATA_CONST.__objc_classlist: 0x108 sha256:bb0ada1faa1c5e45d5930a30d5a26bd1308e0b919ed89ab7618004dbe63dabf0
-+  __DATA_CONST.__const: 0x4b00 sha256:2b1cc32245328ab3d213fc6f1fccf76870658b436c8aaa7360d6118a4e03c782
-+  __DATA_CONST.__objc_classlist: 0x110 sha256:204ffd0d933a96fe74965c26cf5e0a8138328e04fbc8078f36799153cfa1ce92
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0xa0 sha256:2216585454c72e7ca2f95965d3a1bff81c0450489b51089bce8483b89060707b
-+  __DATA_CONST.__objc_selrefs: 0xc8 sha256:9c1e14dccdb3f0eebb8769c98db0888a967f398a446adea5421bc66bb6eb8792
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xaae0 sha256:12f8e7bc789ac8210a8a6812773a46c974226c445efcd4f13f161acb7e6eda03
--  __AUTH_CONST.__objc_const: 0x2f98 sha256:b7beb5277f9658c9d21f2c49d9c52922f48c6e64f3db4e82a6b19a8ab10769ae
--  __AUTH_CONST.__auth_got: 0x1570 sha256:1dfd030cba9544202ffa3b1402e496443211a1ffafc714ebe7acb33b5f67b859
--  __AUTH.__objc_data: 0x2d0 sha256:4db6d65c7460239a85ab89c77546bcb2ec57a05e6efe9fe5036c2a176890fa26
--  __AUTH.__data: 0x5020 sha256:2496f08bd0f28d0024496aad85dab4da3119a20dec394cef467f2286d78839ad
--  __DATA.__data: 0x8eb0 sha256:969314bc9a7689e2f44f8cb673e87b0d7f8aae5e37decc33524357b5b1e06c3f
--  __DATA.__bss: 0x47080 sha256:da0f008435083d9720b57802ac7a1af81853f26f1c80e3766f84ead5888bf454
-+  __AUTH_CONST.__const: 0xb9b8 sha256:75839afefca6c5a0956144a224c762403b877470db896fb507135439c7fd0176
-+  __AUTH_CONST.__objc_const: 0x31b0 sha256:12942bc72c6280b4765398d3d6ffb414dcd1459fc954fca855e433bdf5ac0031
-+  __AUTH_CONST.__auth_got: 0x1680 sha256:32ead73abab870ab0c7ba67a2337215e63ae49394d3c22dbf133e7ce1c7a2a0a
-+  __AUTH.__objc_data: 0x2d0 sha256:990482c1c467c4b3b28dc33cdbc443890d958f45d00eab65c2ef10973e947cfa
-+  __AUTH.__data: 0x5cb8 sha256:6e2af6b8dd40cbaae2638126b34ae089cd011a16cea05080e645e8a7a270453e
-+  __DATA.__data: 0x98e0 sha256:84d52e9557e583900ca05323433a51d24df0ada22b5a94867993c73fdf870114
-+  __DATA.__bss: 0x4ad80 sha256:7006144454fe6a75ed4817946b71e92b76e04005412d7b289dea92744f2a6fac
-   __DATA.__common: 0x40 sha256:f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b
--  __DATA_DIRTY.__objc_data: 0x5f0 sha256:ab60e57c0f03e97e8b95cb8f875cbd4cf790440422e7ed84f6aabead7cbee472
--  __DATA_DIRTY.__data: 0xfe58 sha256:9ba833e5416d5d16ea587c0f5154e38cd4b6573b78d4a6f74dbfc9e552bff5f0
-+  __DATA_DIRTY.__objc_data: 0x5f0 sha256:2b57967c41cffb89a203f4d03c7e168235eb48f7cc836b6bdfa9ff9d78157d1e
-+  __DATA_DIRTY.__data: 0xff30 sha256:0080eba3fa5d994afbd378404cac174fcaefc8a1693e0f450c3792573c9e3bca
-   __DATA_DIRTY.__bss: 0x8480 sha256:f1205c3087e39320c854aa9f4c4aa653138813173f9551b9b285d19edfdade58
-   __DATA_DIRTY.__common: 0x18 sha256:9d908ecfb6b256def8b49a7c504e6c889c4b0e41fe6ce3e01863dd7b61a20aa0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices
-   - /System/Library/PrivateFrameworks/TokenGenerationCore.framework/TokenGenerationCore
-   - /usr/lib/libSystem.B.dylib
 +  - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
-   - /usr/lib/swift/libswiftCore.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: 73A4F40F-71F3-3AD3-BAE8-6A870FFB2E74
 -  Functions: 26449
--  Symbols:   5141
--  CStrings:  1925
-+  UUID: 01FBD70D-A6D9-3AB9-8DD1-02A28073E7C8
+-  Symbols:   3803
+-  CStrings:  1918
 +  Functions: 27826
-+  Symbols:   5473
-+  CStrings:  2033
- 
++  Symbols:   3970
++  CStrings:  2026
 Symbols:
 + __DATA__TtC15PrivateMLClient23SessionCompressionState
 + __IVARS__TtC15PrivateMLClient23SessionCompressionState
 + __METACLASS_DATA__TtC15PrivateMLClient23SessionCompressionState
-+ ___swift__destructor.196
-+ ___swift__destructor.201
-+ ___swift__destructor.205
-+ ___swift__destructor.65
-+ ___swift_closure_destructor.100
-+ ___swift_closure_destructor.1001
-+ ___swift_closure_destructor.1005
-+ ___swift_closure_destructor.1011
-+ ___swift_closure_destructor.1023
-+ ___swift_closure_destructor.1027
-+ ___swift_closure_destructor.103
-+ ___swift_closure_destructor.1031
-+ ___swift_closure_destructor.1035
-+ ___swift_closure_destructor.1042
-+ ___swift_closure_destructor.1057
-+ ___swift_closure_destructor.1061
-+ ___swift_closure_destructor.1064
-+ ___swift_closure_destructor.1068
-+ ___swift_closure_destructor.1072
-+ ___swift_closure_destructor.1077
-+ ___swift_closure_destructor.1080
-+ ___swift_closure_destructor.1084
-+ ___swift_closure_destructor.1088
-+ ___swift_closure_destructor.1092
-+ ___swift_closure_destructor.1095
-+ ___swift_closure_destructor.1099
-+ ___swift_closure_destructor.110
-+ ___swift_closure_destructor.1103
-+ ___swift_closure_destructor.1126
-+ ___swift_closure_destructor.1133
-+ ___swift_closure_destructor.1137
-+ ___swift_closure_destructor.1141
-+ ___swift_closure_destructor.1144
-+ ___swift_closure_destructor.1148
-+ ___swift_closure_destructor.1151
-+ ___swift_closure_destructor.1155
-+ ___swift_closure_destructor.1159
-+ ___swift_closure_destructor.1163
-+ ___swift_closure_destructor.1185
-+ ___swift_closure_destructor.1189
-+ ___swift_closure_destructor.1192
-+ ___swift_closure_destructor.1196
-+ ___swift_closure_destructor.1200
-+ ___swift_closure_destructor.1211
-+ ___swift_closure_destructor.1215
-+ ___swift_closure_destructor.1218
-+ ___swift_closure_destructor.1222
-+ ___swift_closure_destructor.1226
-+ ___swift_closure_destructor.1236
-+ ___swift_closure_destructor.1239
-+ ___swift_closure_destructor.124
-+ ___swift_closure_destructor.1243
-+ ___swift_closure_destructor.1247
-+ ___swift_closure_destructor.1251
-+ ___swift_closure_destructor.1254
-+ ___swift_closure_destructor.1258
-+ ___swift_closure_destructor.1261
-+ ___swift_closure_destructor.1265
-+ ___swift_closure_destructor.1269
-+ ___swift_closure_destructor.1272
-+ ___swift_closure_destructor.1278
-+ ___swift_closure_destructor.1281
-+ ___swift_closure_destructor.1285
-+ ___swift_closure_destructor.1289
-+ ___swift_closure_destructor.1299
-+ ___swift_closure_destructor.1303
-+ ___swift_closure_destructor.1307
-+ ___swift_closure_destructor.1311
-+ ___swift_closure_destructor.1315
-+ ___swift_closure_destructor.1319
-+ ___swift_closure_destructor.1326
-+ ___swift_closure_destructor.1352
-+ ___swift_closure_destructor.1356
-+ ___swift_closure_destructor.1359
-+ ___swift_closure_destructor.136
-+ ___swift_closure_destructor.1363
-+ ___swift_closure_destructor.1371
-+ ___swift_closure_destructor.1375
-+ ___swift_closure_destructor.1385
-+ ___swift_closure_destructor.1388
-+ ___swift_closure_destructor.1392
-+ ___swift_closure_destructor.1396
-+ ___swift_closure_destructor.1400
-+ ___swift_closure_destructor.1404
-+ ___swift_closure_destructor.1408
-+ ___swift_closure_destructor.1412
-+ ___swift_closure_destructor.1415
-+ ___swift_closure_destructor.1419
-+ ___swift_closure_destructor.1422
-+ ___swift_closure_destructor.1425
-+ ___swift_closure_destructor.1429
-+ ___swift_closure_destructor.1433
-+ ___swift_closure_destructor.1437
-+ ___swift_closure_destructor.1441
-+ ___swift_closure_destructor.1445
-+ ___swift_closure_destructor.1449
-+ ___swift_closure_destructor.1452
-+ ___swift_closure_destructor.1456
-+ ___swift_closure_destructor.1459
-+ ___swift_closure_destructor.1462
-+ ___swift_closure_destructor.1466
-+ ___swift_closure_destructor.1470
-+ ___swift_closure_destructor.1474
-+ ___swift_closure_destructor.1478
-+ ___swift_closure_destructor.1482
-+ ___swift_closure_destructor.1486
-+ ___swift_closure_destructor.1489
-+ ___swift_closure_destructor.1493
-+ ___swift_closure_destructor.1496
-+ ___swift_closure_destructor.1499
-+ ___swift_closure_destructor.1503
-+ ___swift_closure_destructor.1507
-+ ___swift_closure_destructor.1511
-+ ___swift_closure_destructor.1515
-+ ___swift_closure_destructor.1519
-+ ___swift_closure_destructor.161
-+ ___swift_closure_destructor.1690
-+ ___swift_closure_destructor.1693
-+ ___swift_closure_destructor.1700
 + ___swift_closure_destructor.1700Tm
-+ ___swift_closure_destructor.1704
-+ ___swift_closure_destructor.1712
-+ ___swift_closure_destructor.1716
 + ___swift_closure_destructor.173Tm
-+ ___swift_closure_destructor.176
-+ ___swift_closure_destructor.180
-+ ___swift_closure_destructor.195
 + ___swift_closure_destructor.20Tm
-+ ___swift_closure_destructor.210
-+ ___swift_closure_destructor.24
-+ ___swift_closure_destructor.240
 + ___swift_closure_destructor.24Tm
-+ ___swift_closure_destructor.255
-+ ___swift_closure_destructor.267
-+ ___swift_closure_destructor.292
-+ ___swift_closure_destructor.296
-+ ___swift_closure_destructor.311
-+ ___swift_closure_destructor.326
-+ ___swift_closure_destructor.341
-+ ___swift_closure_destructor.356
-+ ___swift_closure_destructor.371
-+ ___swift_closure_destructor.386
-+ ___swift_closure_destructor.39
-+ ___swift_closure_destructor.401
-+ ___swift_closure_destructor.413
-+ ___swift_closure_destructor.428
-+ ___swift_closure_destructor.431
-+ ___swift_closure_destructor.435
 + ___swift_closure_destructor.435Tm
-+ ___swift_closure_destructor.438
-+ ___swift_closure_destructor.442
-+ ___swift_closure_destructor.446
-+ ___swift_closure_destructor.450
-+ ___swift_closure_destructor.462
-+ ___swift_closure_destructor.466
-+ ___swift_closure_destructor.471
-+ ___swift_closure_destructor.474
-+ ___swift_closure_destructor.478
-+ ___swift_closure_destructor.481
-+ ___swift_closure_destructor.487
-+ ___swift_closure_destructor.490
-+ ___swift_closure_destructor.502
-+ ___swift_closure_destructor.514
-+ ___swift_closure_destructor.520
-+ ___swift_closure_destructor.524
-+ ___swift_closure_destructor.529
-+ ___swift_closure_destructor.532
-+ ___swift_closure_destructor.536
 + ___swift_closure_destructor.536Tm
-+ ___swift_closure_destructor.539
-+ ___swift_closure_destructor.542
-+ ___swift_closure_destructor.545
-+ ___swift_closure_destructor.548
-+ ___swift_closure_destructor.55
-+ ___swift_closure_destructor.551
-+ ___swift_closure_destructor.554
-+ ___swift_closure_destructor.558
-+ ___swift_closure_destructor.562
-+ ___swift_closure_destructor.566
-+ ___swift_closure_destructor.57
-+ ___swift_closure_destructor.570
-+ ___swift_closure_destructor.574
-+ ___swift_closure_destructor.578
-+ ___swift_closure_destructor.581
-+ ___swift_closure_destructor.584
-+ ___swift_closure_destructor.588
-+ ___swift_closure_destructor.592
-+ ___swift_closure_destructor.596
-+ ___swift_closure_destructor.604
-+ ___swift_closure_destructor.608
-+ ___swift_closure_destructor.61
-+ ___swift_closure_destructor.612
-+ ___swift_closure_destructor.617
-+ ___swift_closure_destructor.620
-+ ___swift_closure_destructor.624
-+ ___swift_closure_destructor.631
-+ ___swift_closure_destructor.635
-+ ___swift_closure_destructor.639
-+ ___swift_closure_destructor.644
-+ ___swift_closure_destructor.647
-+ ___swift_closure_destructor.651
-+ ___swift_closure_destructor.660
-+ ___swift_closure_destructor.663
-+ ___swift_closure_destructor.667
-+ ___swift_closure_destructor.670
-+ ___swift_closure_destructor.674
-+ ___swift_closure_destructor.678
-+ ___swift_closure_destructor.682
-+ ___swift_closure_destructor.687
-+ ___swift_closure_destructor.69
-+ ___swift_closure_destructor.690
-+ ___swift_closure_destructor.694
-+ ___swift_closure_destructor.697
-+ ___swift_closure_destructor.701
-+ ___swift_closure_destructor.705
-+ ___swift_closure_destructor.709
-+ ___swift_closure_destructor.714
-+ ___swift_closure_destructor.717
-+ ___swift_closure_destructor.721
-+ ___swift_closure_destructor.724
-+ ___swift_closure_destructor.728
-+ ___swift_closure_destructor.73
-+ ___swift_closure_destructor.732
-+ ___swift_closure_destructor.736
-+ ___swift_closure_destructor.744
-+ ___swift_closure_destructor.748
-+ ___swift_closure_destructor.759
-+ ___swift_closure_destructor.76
-+ ___swift_closure_destructor.762
-+ ___swift_closure_destructor.766
-+ ___swift_closure_destructor.769
-+ ___swift_closure_destructor.772
-+ ___swift_closure_destructor.775
-+ ___swift_closure_destructor.79
-+ ___swift_closure_destructor.790
-+ ___swift_closure_destructor.814
-+ ___swift_closure_destructor.818
-+ ___swift_closure_destructor.821
-+ ___swift_closure_destructor.825
-+ ___swift_closure_destructor.836
-+ ___swift_closure_destructor.840
-+ ___swift_closure_destructor.844
-+ ___swift_closure_destructor.848
-+ ___swift_closure_destructor.851
-+ ___swift_closure_destructor.855
-+ ___swift_closure_destructor.859
-+ ___swift_closure_destructor.863
-+ ___swift_closure_destructor.866
-+ ___swift_closure_destructor.87
-+ ___swift_closure_destructor.870
-+ ___swift_closure_destructor.874
-+ ___swift_closure_destructor.878
-+ ___swift_closure_destructor.881
-+ ___swift_closure_destructor.885
-+ ___swift_closure_destructor.889
-+ ___swift_closure_destructor.893
-+ ___swift_closure_destructor.896
-+ ___swift_closure_destructor.900
-+ ___swift_closure_destructor.903
-+ ___swift_closure_destructor.907
-+ ___swift_closure_destructor.91
-+ ___swift_closure_destructor.911
-+ ___swift_closure_destructor.915
-+ ___swift_closure_destructor.923
-+ ___swift_closure_destructor.927
-+ ___swift_closure_destructor.931
-+ ___swift_closure_destructor.942
-+ ___swift_closure_destructor.946
-+ ___swift_closure_destructor.949
-+ ___swift_closure_destructor.952
-+ ___swift_closure_destructor.958
-+ ___swift_closure_destructor.962
-+ ___swift_closure_destructor.982
-+ ___swift_closure_destructor.986
-+ ___swift_closure_destructor.990
-+ ___swift_closure_destructor.994
-+ ___swift_closure_destructor.998
 + ___swift_get_extra_inhabitant_index.1106Tm
 + ___swift_get_extra_inhabitant_index.1115Tm
 + ___swift_get_extra_inhabitant_index.151Tm
@@ -528,7 +206,6 @@ Symbols:
 + _compression_encode_scratch_buffer_size
 + _get_enum_tag_for_layout_string 15PrivateMLClient35TieHksvProcessing_HKSVPropertyValueV06OneOf_G0O
 + _get_enum_tag_for_layout_string 15PrivateMLClient9PMLCSDataO
-+ _get_type_metadata 15Synchronization5MutexVy10Foundation4DataVSgG noncopyable.1544
 + _keypath_get.1204Tm
 + _keypath_get.1208Tm
 + _keypath_get.1342Tm
@@ -604,11 +281,6 @@ Symbols:
 + _keypath_set.87Tm
 + _keypath_set.889Tm
 + _keypath_set.963Tm
-+ _objc_msgSend$baseAddress
-+ _objc_msgSend$bytesPerRow
-+ _objc_msgSend$lockWithOptions:seed:
-+ _objc_msgSend$surfaceID
-+ _objc_msgSend$unlockWithOptions:seed:
 + _objc_retainAutorelease
 + _symbolic SDySS_____G 15PrivateMLClient35TieHksvProcessing_HKSVPropertyValueV
 + _symbolic SDy_____ShySSGG 10Foundation4UUIDV
@@ -688,235 +360,9 @@ Symbols:
 + _symbolic _____y______pG s23_ContiguousArrayStorageC s7CVarArgP
 + _type_layout_string 15PrivateMLClient35TieHksvProcessing_HKSVPropertyValueV06OneOf_G0O
 + _type_layout_string 15PrivateMLClient9PMLCSDataO
-- ___swift__destructor.35
-- ___swift__destructor.80
-- ___swift__destructor.85
-- ___swift__destructor.89
-- ___swift_closure_destructor.1000
-- ___swift_closure_destructor.1004
-- ___swift_closure_destructor.1012
-- ___swift_closure_destructor.1022
-- ___swift_closure_destructor.1026
-- ___swift_closure_destructor.1030
-- ___swift_closure_destructor.1034
-- ___swift_closure_destructor.1041
-- ___swift_closure_destructor.1056
-- ___swift_closure_destructor.1060
-- ___swift_closure_destructor.1063
-- ___swift_closure_destructor.1067
-- ___swift_closure_destructor.1071
-- ___swift_closure_destructor.1075
-- ___swift_closure_destructor.1079
-- ___swift_closure_destructor.1082
-- ___swift_closure_destructor.1086
-- ___swift_closure_destructor.1089
-- ___swift_closure_destructor.1093
-- ___swift_closure_destructor.1097
-- ___swift_closure_destructor.1101
-- ___swift_closure_destructor.1125
-- ___swift_closure_destructor.1132
-- ___swift_closure_destructor.1136
-- ___swift_closure_destructor.1140
-- ___swift_closure_destructor.1143
-- ___swift_closure_destructor.1146
-- ___swift_closure_destructor.1149
-- ___swift_closure_destructor.1152
-- ___swift_closure_destructor.1156
-- ___swift_closure_destructor.1160
-- ___swift_closure_destructor.1164
-- ___swift_closure_destructor.1186
-- ___swift_closure_destructor.1190
-- ___swift_closure_destructor.1194
-- ___swift_closure_destructor.1197
-- ___swift_closure_destructor.1201
-- ___swift_closure_destructor.1212
-- ___swift_closure_destructor.1216
-- ___swift_closure_destructor.1220
-- ___swift_closure_destructor.1223
-- ___swift_closure_destructor.1227
-- ___swift_closure_destructor.1234
-- ___swift_closure_destructor.1238
-- ___swift_closure_destructor.1242
-- ___swift_closure_destructor.1246
-- ___swift_closure_destructor.1249
-- ___swift_closure_destructor.1253
-- ___swift_closure_destructor.1256
-- ___swift_closure_destructor.1259
-- ___swift_closure_destructor.1263
-- ___swift_closure_destructor.1267
-- ___swift_closure_destructor.1271
-- ___swift_closure_destructor.1279
-- ___swift_closure_destructor.1283
-- ___swift_closure_destructor.1286
-- ___swift_closure_destructor.1290
-- ___swift_closure_destructor.1300
-- ___swift_closure_destructor.1304
-- ___swift_closure_destructor.1308
-- ___swift_closure_destructor.1312
-- ___swift_closure_destructor.1316
-- ___swift_closure_destructor.1320
-- ___swift_closure_destructor.1327
-- ___swift_closure_destructor.1353
-- ___swift_closure_destructor.1357
-- ___swift_closure_destructor.1360
-- ___swift_closure_destructor.1364
-- ___swift_closure_destructor.1370
-- ___swift_closure_destructor.1374
-- ___swift_closure_destructor.1386
-- ___swift_closure_destructor.1390
-- ___swift_closure_destructor.1561
-- ___swift_closure_destructor.1564
-- ___swift_closure_destructor.1571
 - ___swift_closure_destructor.1571Tm
-- ___swift_closure_destructor.1575
-- ___swift_closure_destructor.1583
-- ___swift_closure_destructor.1587
-- ___swift_closure_destructor.16
-- ___swift_closure_destructor.177
-- ___swift_closure_destructor.181
-- ___swift_closure_destructor.19
-- ___swift_closure_destructor.196
-- ___swift_closure_destructor.211
-- ___swift_closure_destructor.22
-- ___swift_closure_destructor.226
-- ___swift_closure_destructor.256
-- ___swift_closure_destructor.266
 - ___swift_closure_destructor.26Tm
-- ___swift_closure_destructor.31
-- ___swift_closure_destructor.312
-- ___swift_closure_destructor.327
-- ___swift_closure_destructor.342
-- ___swift_closure_destructor.357
-- ___swift_closure_destructor.372
-- ___swift_closure_destructor.387
-- ___swift_closure_destructor.40
-- ___swift_closure_destructor.402
 - ___swift_closure_destructor.409Tm
-- ___swift_closure_destructor.412
-- ___swift_closure_destructor.429
-- ___swift_closure_destructor.432
-- ___swift_closure_destructor.436
-- ___swift_closure_destructor.440
-- ___swift_closure_destructor.445
-- ___swift_closure_destructor.448
-- ___swift_closure_destructor.452
-- ___swift_closure_destructor.46
-- ___swift_closure_destructor.461
-- ___swift_closure_destructor.464
-- ___swift_closure_destructor.468
-- ___swift_closure_destructor.472
-- ___swift_closure_destructor.476
-- ___swift_closure_destructor.480
-- ___swift_closure_destructor.488
-- ___swift_closure_destructor.491
-- ___swift_closure_destructor.503
-- ___swift_closure_destructor.513
-- ___swift_closure_destructor.521
-- ___swift_closure_destructor.525
-- ___swift_closure_destructor.530
-- ___swift_closure_destructor.533
-- ___swift_closure_destructor.537
-- ___swift_closure_destructor.541
-- ___swift_closure_destructor.546
-- ___swift_closure_destructor.549
-- ___swift_closure_destructor.553
-- ___swift_closure_destructor.556
-- ___swift_closure_destructor.560
-- ___swift_closure_destructor.564
-- ___swift_closure_destructor.568
-- ___swift_closure_destructor.573
-- ___swift_closure_destructor.576
-- ___swift_closure_destructor.580
-- ___swift_closure_destructor.583
-- ___swift_closure_destructor.587
-- ___swift_closure_destructor.591
-- ___swift_closure_destructor.595
-- ___swift_closure_destructor.603
-- ___swift_closure_destructor.607
-- ___swift_closure_destructor.610
-- ___swift_closure_destructor.614
-- ___swift_closure_destructor.618
-- ___swift_closure_destructor.622
-- ___swift_closure_destructor.630
-- ___swift_closure_destructor.634
-- ___swift_closure_destructor.638
-- ___swift_closure_destructor.645
-- ___swift_closure_destructor.648
-- ___swift_closure_destructor.652
-- ___swift_closure_destructor.658
-- ___swift_closure_destructor.66
-- ___swift_closure_destructor.661
-- ___swift_closure_destructor.664
-- ___swift_closure_destructor.668
-- ___swift_closure_destructor.672
-- ___swift_closure_destructor.676
-- ___swift_closure_destructor.680
-- ___swift_closure_destructor.684
-- ___swift_closure_destructor.688
-- ___swift_closure_destructor.692
-- ___swift_closure_destructor.696
-- ___swift_closure_destructor.70
-- ___swift_closure_destructor.700
-- ___swift_closure_destructor.704
-- ___swift_closure_destructor.707
-- ___swift_closure_destructor.711
-- ___swift_closure_destructor.715
-- ___swift_closure_destructor.719
-- ___swift_closure_destructor.722
-- ___swift_closure_destructor.726
-- ___swift_closure_destructor.730
-- ___swift_closure_destructor.734
-- ___swift_closure_destructor.737
-- ___swift_closure_destructor.745
-- ___swift_closure_destructor.749
-- ___swift_closure_destructor.756
-- ___swift_closure_destructor.760
-- ___swift_closure_destructor.764
-- ___swift_closure_destructor.767
-- ___swift_closure_destructor.771
-- ___swift_closure_destructor.774
-- ___swift_closure_destructor.791
-- ___swift_closure_destructor.813
-- ___swift_closure_destructor.817
-- ___swift_closure_destructor.820
-- ___swift_closure_destructor.823
-- ___swift_closure_destructor.826
-- ___swift_closure_destructor.837
-- ___swift_closure_destructor.841
-- ___swift_closure_destructor.845
-- ___swift_closure_destructor.849
-- ___swift_closure_destructor.853
-- ___swift_closure_destructor.857
-- ___swift_closure_destructor.861
-- ___swift_closure_destructor.865
-- ___swift_closure_destructor.869
-- ___swift_closure_destructor.872
-- ___swift_closure_destructor.876
-- ___swift_closure_destructor.879
-- ___swift_closure_destructor.882
-- ___swift_closure_destructor.886
-- ___swift_closure_destructor.890
-- ___swift_closure_destructor.894
-- ___swift_closure_destructor.898
-- ___swift_closure_destructor.9
-- ___swift_closure_destructor.902
-- ___swift_closure_destructor.906
-- ___swift_closure_destructor.909
-- ___swift_closure_destructor.913
-- ___swift_closure_destructor.916
-- ___swift_closure_destructor.924
-- ___swift_closure_destructor.928
-- ___swift_closure_destructor.932
-- ___swift_closure_destructor.943
-- ___swift_closure_destructor.948
-- ___swift_closure_destructor.951
-- ___swift_closure_destructor.959
-- ___swift_closure_destructor.963
-- ___swift_closure_destructor.981
-- ___swift_closure_destructor.985
-- ___swift_closure_destructor.989
-- ___swift_closure_destructor.993
-- ___swift_closure_destructor.997
 - ___swift_get_extra_inhabitant_index.1085Tm
 - ___swift_get_extra_inhabitant_index.1094Tm
 - ___swift_get_extra_inhabitant_index.1570Tm
@@ -977,7 +423,6 @@ Symbols:
 - ___swift_store_extra_inhabitant_index.83Tm
 - ___swift_store_extra_inhabitant_index.897Tm
 - ___swift_store_extra_inhabitant_index.924Tm
-- _get_type_metadata 15Synchronization5MutexVy10Foundation4DataVSgG noncopyable.1415
 - _keypath_get.1173Tm
 - _keypath_get.1177Tm
 - _keypath_get.128Tm
@@ -1171,5 +616,4 @@ CStrings:
 - "%s received asset cached response (unsupported)"
 - "PMLCSDM: removeKVCacheMetaData End %s - %s"
 - "PMLCSM: release rbAssertion. %s"
-
 ```

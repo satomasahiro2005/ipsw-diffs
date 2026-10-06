@@ -2,56 +2,30 @@
 
 > `/usr/lib/libBBUpdaterDynamic.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1878d0` | `0x182cec` | **`-0x4be4`** |
+| `__TEXT.__cstring` | `0x29e44` | `0x281da` | **`-0x1c6a`** |
+| `__TEXT.__gcc_except_tab` | `0x14c50` | `0x147a4` | **`-0x4ac`** |
+| `__TEXT.__const` | `0xab40` | `0xaa20` | **`-0x120`** |
+| `__AUTH_CONST.__const` | `0x7f80` | `0x7ed0` | **`-0xb0`** |
+| `__TEXT.__unwind_info` | `0x4928` | `0x4890` | **`-0x98`** |
+| `__AUTH_CONST.__auth_got` | `0x1b90` | `0x1b20` | **`-0x70`** |
+| `__DATA_CONST.__const` | `0x1520` | `0x1500` | **`-0x20`** |
+| `__DATA_DIRTY.__common` | `0x48` | `0x38` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
- 1594.0.0.0.0
--  __TEXT.__text: 0x1845a0
-+  __TEXT.__text: 0x17fa3c
-   __TEXT.__init_offsets: 0x164
--  __TEXT.__const: 0xab40
--  __TEXT.__cstring: 0x29e44
-+  __TEXT.__const: 0xaa20
-+  __TEXT.__cstring: 0x281da
-   __TEXT.__oslogstring: 0xf4d4
--  __TEXT.__gcc_except_tab: 0x14c50
--  __TEXT.__unwind_info: 0x4ea0
-+  __TEXT.__gcc_except_tab: 0x147a4
-+  __TEXT.__unwind_info: 0x4e10
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0x1520
-+  __DATA_CONST.__const: 0x1500
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x18
-   __DATA_CONST.__objc_selrefs: 0x70
-   __DATA_CONST.__got: 0x280
--  __AUTH_CONST.__const: 0x7f80
-+  __AUTH_CONST.__const: 0x7ed0
-   __AUTH_CONST.__cfstring: 0x3060
-   __AUTH_CONST.__weak_auth_got: 0x20
--  __AUTH_CONST.__auth_got: 0x1b90
-+  __AUTH_CONST.__auth_got: 0x1b20
-   __DATA.__data: 0x768
-   __DATA.__common: 0x90
-   __DATA_DIRTY.__data: 0x260
-   __DATA_DIRTY.__bss: 0x59a0
--  __DATA_DIRTY.__common: 0x48
-+  __DATA_DIRTY.__common: 0x38
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 3257
 -  Symbols:   5850
 -  CStrings:  4784
 +  Functions: 3237
 +  Symbols:   5804
 +  CStrings:  4536
- 
 Symbols:
 + GCC_except_table348
 + GCC_except_table361

@@ -2,102 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/CopresenceCore.framework/CopresenceCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__data` | `0x2c60` | `0x6428` | **`+0x37c8`** |
+| `__AUTH.__data` | `0x62e8` | `0x32b0` | **`-0x3038`** |
+| `__AUTH.__objc_data` | `0x2100` | `0x970` | **`-0x1790`** |
+| `__DATA_DIRTY.__objc_data` | `0x2460` | `0x3bf0` | **`+0x1790`** |
+| `__DATA.__data` | `0x6da0` | `0x65f8` | **`-0x7a8`** |
+| `__DATA.__common` | `0x1040` | `0xc68` | **`-0x3d8`** |
+| `__DATA_DIRTY.__common` | `0xd0` | `0x4a8` | **`+0x3d8`** |
+| `__TEXT.__text` | `0x2ef57c` | `0x2ef420` | **`-0x15c`** |
+| `__TEXT.__cstring` | `0x6663` | `0x6633` | **`-0x30`** |
+| `__TEXT.__swift5_typeref` | `0x7e2c` | `0x7e00` | **`-0x2c`** |
+| `__TEXT.__eh_frame` | `0xdd08` | `0xdd20` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0xa160` | `0xa148` | **`-0x18`** |
+| `__DATA_CONST.__got` | `0xe18` | `0xe08` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1e58` | `0x1e60` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x6fc` | `0x6f4` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2ef57c
-+  __TEXT.__text: 0x2ef420
-   __TEXT.__objc_methlist: 0x341c
-   __TEXT.__const: 0x16104
-   __TEXT.__oslogstring: 0xff95
--  __TEXT.__cstring: 0x6663
-+  __TEXT.__cstring: 0x6633
-   __TEXT.__gcc_except_tab: 0x40
-   __TEXT.__dlopen_cstrs: 0x66
--  __TEXT.__swift5_typeref: 0x7e2c
-+  __TEXT.__swift5_typeref: 0x7e00
-   __TEXT.__swift5_capture: 0x41b8
-   __TEXT.__swift5_reflstr: 0x6210
-   __TEXT.__swift5_assocty: 0x858
+-298.100.1.0.0
++300.100.1.0.0
 
-   __TEXT.__swift5_types: 0x63c
-   __TEXT.__swift_as_entry: 0x318
-   __TEXT.__swift_as_ret: 0x308
--  __TEXT.__swift_as_cont: 0x6fc
-+  __TEXT.__swift_as_cont: 0x6f4
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0xa160
--  __TEXT.__eh_frame: 0xdd08
-+  __TEXT.__unwind_info: 0xa148
-+  __TEXT.__eh_frame: 0xdd20
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0x1e78
-   __DATA_CONST.__objc_protorefs: 0x1b8
-   __DATA_CONST.__objc_superrefs: 0x28
--  __DATA_CONST.__got: 0xe18
-+  __DATA_CONST.__got: 0xe08
-   __AUTH_CONST.__const: 0x115b0
-   __AUTH_CONST.__cfstring: 0x920
-   __AUTH_CONST.__objc_const: 0xad48
--  __AUTH_CONST.__auth_got: 0x1e58
--  __AUTH.__objc_data: 0x2100
--  __AUTH.__data: 0x62e8
-+  __AUTH_CONST.__auth_got: 0x1e60
-+  __AUTH.__objc_data: 0x970
-+  __AUTH.__data: 0x32b0
-   __DATA.__objc_ivar: 0x60
--  __DATA.__data: 0x6da0
-+  __DATA.__data: 0x65f8
-   __DATA.__objc_stublist: 0x50
-   __DATA.__bss: 0x1b0e0
--  __DATA.__common: 0x1040
--  __DATA_DIRTY.__objc_data: 0x2460
--  __DATA_DIRTY.__data: 0x2c60
--  __DATA_DIRTY.__common: 0xd0
-+  __DATA.__common: 0xc68
-+  __DATA_DIRTY.__objc_data: 0x3bf0
-+  __DATA_DIRTY.__data: 0x6428
-+  __DATA_DIRTY.__common: 0x4a8
-   __DATA_DIRTY.__bss: 0x280
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 16528
--  Symbols:   48101
--  CStrings:  1890
+-  Symbols:   32766
+-  CStrings:  1816
 +  Functions: 16518
-+  Symbols:   48078
-+  CStrings:  1889
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift5_types2 : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __DATA.__objc_stublist : content changed
++  Symbols:   32741
++  CStrings:  1815
 Symbols:
 + _$s14CopresenceCore16AsyncSerialQueueV8priority15bufferingPolicyACScPSg_ScS12ContinuationV09BufferingH0OyyyYaYbc__GtcfcyyYacfU0_yyYaXEfU_TQ0_
 + _$s14CopresenceCore16AsyncSerialQueueV8priority15bufferingPolicyACScPSg_ScS12ContinuationV09BufferingH0OyyyYaYbc__GtcfcyyYacfU0_yyYaXEfU_TQ2_
@@ -182,5 +119,4 @@ Symbols:
 - _swift_runtimeSupportsNoncopyableTypes
 CStrings:
 - "CopresenceCore/AsyncSerialQueue.swift"
-
 ```

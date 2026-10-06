@@ -2,27 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/UserFS.framework/PlugIns/livefiles_msdos.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x19250` | `0x193c0` | **`+0x170`** |
+| `__TEXT.__oslogstring` | `0x45d9` | `0x4736` | **`+0x15d`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x19250
-+  __TEXT.__text: 0x193c0
-   __TEXT.__const: 0x4da0
--  __TEXT.__oslogstring: 0x45d9
-+  __TEXT.__oslogstring: 0x4736
-   __TEXT.__cstring: 0x71f
-   __TEXT.__unwind_info: 0x258
-   __TEXT.__objc_stubs: 0x0
+-845.0.0.0.0
++845.0.2.0.0
 
-   - /usr/lib/libobjc.A.dylib
-   Functions: 186
-   Symbols:   350
 -  CStrings:  422
 +  CStrings:  426
- 
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH.__data : content changed
 Functions:
 ~ _msdosfs_dos2unicodefn : 276 -> 272
 ~ _msdosfs_unicode_to_dos_name : 984 -> 940
@@ -38,5 +33,4 @@ CStrings:
 + "FSOPS_InitReadBootSectorAndSetFATType: cluster offset overflows\n"
 + "FSOPS_InitReadBootSectorAndSetFATType: device reported zero bytes-per-sector\n"
 + "FSOPS_InitReadBootSectorAndSetFATType: root directory block overflows (FATs=%u, fat_sectors=%u, res_sectors=%u)\n"
-
 ```

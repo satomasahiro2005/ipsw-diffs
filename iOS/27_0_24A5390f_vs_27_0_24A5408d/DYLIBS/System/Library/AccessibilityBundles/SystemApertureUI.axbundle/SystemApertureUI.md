@@ -2,58 +2,34 @@
 
 > `/System/Library/AccessibilityBundles/SystemApertureUI.axbundle/SystemApertureUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x270c` | `0x2950` | **`+0x244`** |
+| `__AUTH_CONST.__cfstring` | `0x740` | `0x700` | **`-0x40`** |
+| `__AUTH_CONST.__const` | `0x100` | `0xc0` | **`-0x40`** |
+| `__TEXT.__objc_methlist` | `0x3d4` | `0x3fc` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x208` | `0x1e8` | **`-0x20`** |
+| `__TEXT.__cstring` | `0x5de` | `0x5be` | **`-0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3a8` | `0x3c0` | **`+0x18`** |
+| `__DATA.__data` | `0x180` | `0x190` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x150` | `0x160` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0xb8` | `0xb0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3045.0.0.0.0
--  __TEXT.__text: 0x270c
--  __TEXT.__objc_methlist: 0x3d4
 +3048.0.0.0.0
-+  __TEXT.__text: 0x2950
-+  __TEXT.__objc_methlist: 0x3fc
-   __TEXT.__const: 0x10
-   __TEXT.__gcc_except_tab: 0x70
--  __TEXT.__cstring: 0x5de
--  __TEXT.__unwind_info: 0x150
-+  __TEXT.__cstring: 0x5be
-+  __TEXT.__unwind_info: 0x160
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x208
-+  __DATA_CONST.__const: 0x1e8
-   __DATA_CONST.__objc_classlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3a8
-+  __DATA_CONST.__objc_selrefs: 0x3c0
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x18
--  __DATA_CONST.__got: 0xb8
--  __AUTH_CONST.__const: 0x100
--  __AUTH_CONST.__cfstring: 0x740
-+  __DATA_CONST.__got: 0xb0
-+  __AUTH_CONST.__const: 0xc0
-+  __AUTH_CONST.__cfstring: 0x700
-   __AUTH_CONST.__objc_const: 0x5f0
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__data: 0x180
-+  __DATA.__data: 0x190
-   __DATA.__bss: 0x8
-   __DATA_DIRTY.__objc_data: 0x230
-   __DATA_DIRTY.__bss: 0x10
 
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 68
--  Symbols:   318
+-  Symbols:   246
 -  CStrings:  71
 +  Functions: 71
-+  Symbols:   325
++  Symbols:   252
 +  CStrings:  69
- 
 Symbols:
 + -[SAUIElementViewControllerAccessibility _accessibilityShouldPostScreenChangedOnPresentation]
 + -[SAUIElementViewControllerAccessibility _axAnnounceLiveActivityContent]
@@ -67,11 +43,6 @@ Symbols:
 + ___93-[SAUIElementViewControllerAccessibility viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke
 + __axAnnounceLiveActivityContent.kLastAnnounceTimeKey
 + _objc_getAssociatedObject
-+ _objc_msgSend$_accessibilityViewIsVisible
-+ _objc_msgSend$_axAnnounceLiveActivityContent
-+ _objc_msgSend$axAttributedStringWithString:
-+ _objc_msgSend$doubleValue
-+ _objc_msgSend$numberWithDouble:
 + _objc_release_x28
 + _objc_setAssociatedObject
 - _AXImageExplorerGenerativeModelsAvailable
@@ -82,10 +53,6 @@ Symbols:
 - ___block_descriptor_32_e37_B16?0"UIAccessibilityCustomAction"8l
 - _kVOTEventCommandActivateScreenExplorer
 - _kVOTEventCommandAskAboutScreen
-- _objc_msgSend$imageExplorerAskAboutScreenDynamicIslandActionEnabled
-- _objc_msgSend$imageExplorerScreenExplorerDynamicIslandActionEnabled
-- _objc_msgSend$server
-- _objc_msgSend$triggerEventCommand:
 CStrings:
 - "ask.about.screen"
 - "explore.screen"

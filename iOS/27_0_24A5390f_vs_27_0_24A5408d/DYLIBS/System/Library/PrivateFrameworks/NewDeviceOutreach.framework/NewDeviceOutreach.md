@@ -2,65 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/NewDeviceOutreach.framework/NewDeviceOutreach`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x155d8` | `0x16578` | **`+0xfa0`** |
+| `__TEXT.__oslogstring` | `0xae4` | `0xca4` | **`+0x1c0`** |
+| `__TEXT.__cstring` | `0xf90` | `0x10a8` | **`+0x118`** |
+| `__AUTH_CONST.__cfstring` | `0xd40` | `0xda0` | **`+0x60`** |
+| `__DATA.__data` | `0x4d0` | `0x500` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x6e8` | `0x700` | **`+0x18`** |
+| `__TEXT.__const` | `0xa84` | `0xa94` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x638` | `0x648` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x38` | `0x3c` | **`+0x4`** |
+| `__TEXT.__swift5_typeref` | `0x2a6` | `0x2aa` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -624.0.4.0.0
--  __TEXT.__text: 0x155d8
 +624.0.13.0.0
-+  __TEXT.__text: 0x16578
-   __TEXT.__objc_methlist: 0xc34
--  __TEXT.__const: 0xa84
--  __TEXT.__cstring: 0xf90
--  __TEXT.__oslogstring: 0xae4
-+  __TEXT.__const: 0xa94
-+  __TEXT.__cstring: 0x10a8
-+  __TEXT.__oslogstring: 0xca4
-   __TEXT.__gcc_except_tab: 0x108
--  __TEXT.__swift5_typeref: 0x2a6
-+  __TEXT.__swift5_typeref: 0x2aa
-   __TEXT.__constg_swiftt: 0x22c
-   __TEXT.__swift5_reflstr: 0x15e
-   __TEXT.__swift5_fieldmd: 0x274
-   __TEXT.__swift5_proto: 0x74
-   __TEXT.__swift5_types: 0x34
--  __TEXT.__swift5_capture: 0x38
-+  __TEXT.__swift5_capture: 0x3c
-   __TEXT.__swift5_assocty: 0x18
--  __TEXT.__unwind_info: 0x638
-+  __TEXT.__unwind_info: 0x648
-   __TEXT.__eh_frame: 0x170
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_arraydata: 0x8
-   __DATA_CONST.__got: 0x308
-   __AUTH_CONST.__const: 0x480
--  __AUTH_CONST.__cfstring: 0xd40
-+  __AUTH_CONST.__cfstring: 0xda0
-   __AUTH_CONST.__objc_const: 0x1a78
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__objc_intobj: 0x30
--  __AUTH_CONST.__auth_got: 0x6e8
-+  __AUTH_CONST.__auth_got: 0x700
-   __AUTH.__objc_data: 0x370
-   __AUTH.__data: 0x260
-   __DATA.__objc_ivar: 0x58
--  __DATA.__data: 0x4d0
-+  __DATA.__data: 0x500
-   __DATA.__bss: 0xb00
-   __DATA_DIRTY.__objc_data: 0x410
-   __DATA_DIRTY.__data: 0x398
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 559
--  Symbols:   902
+-  Symbols:   699
 -  CStrings:  261
 +  Functions: 562
-+  Symbols:   904
++  Symbols:   701
 +  CStrings:  278
- 
 Symbols:
 + _CFAbsoluteTimeGetCurrent
 + _symbolic Sd

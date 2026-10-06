@@ -2,122 +2,62 @@
 
 > `/System/Library/PrivateFrameworks/CoreEmbeddedSpeechRecognition.framework/CoreEmbeddedSpeechRecognition`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3265bc` | `0x33147c` | **`+0xaec0`** |
+| `__AUTH_CONST.__const` | `0x227c8` | `0x23330` | **`+0xb68`** |
+| `__TEXT.__cstring` | `0xdbf4` | `0xe069` | **`+0x475`** |
+| `__TEXT.__swift5_capture` | `0xc68c` | `0xcafc` | **`+0x470`** |
+| `__TEXT.__unwind_info` | `0x4658` | `0x4920` | **`+0x2c8`** |
+| `__TEXT.__oslogstring` | `0xcb3d` | `0xcdd5` | **`+0x298`** |
+| `__AUTH_CONST.__objc_const` | `0xb380` | `0xb550` | **`+0x1d0`** |
+| `__TEXT.__eh_frame` | `0x5944` | `0x5a6c` | **`+0x128`** |
+| `__TEXT.__objc_methlist` | `0x4a10` | `0x4b28` | **`+0x118`** |
+| `__AUTH_CONST.__objc_intobj` | `0xdb0` | `0xea0` | **`+0xf0`** |
+| `__AUTH_CONST.__cfstring` | `0x4e40` | `0x4f20` | **`+0xe0`** |
+| `__TEXT.__swift5_typeref` | `0x4385` | `0x42bc` | **`-0xc9`** |
+| `__DATA.__data` | `0x23c0` | `0x2478` | **`+0xb8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3620` | `0x36d8` | **`+0xb8`** |
+| `__TEXT.__gcc_except_tab` | `0xbdc` | `0xc88` | **`+0xac`** |
+| `__TEXT.__swift5_reflstr` | `0x26b2` | `0x2753` | **`+0xa1`** |
+| `__AUTH.__data` | `0xaf0` | `0xb88` | **`+0x98`** |
+| `__TEXT.__dlopen_cstrs` | `0x6c` | `0xdc` | **`+0x70`** |
+| `__DATA_CONST.__const` | `0x19d0` | `0x1a38` | **`+0x68`** |
+| `__TEXT.__const` | `0x8458` | `0x84c0` | **`+0x68`** |
+| `__TEXT.__swift5_fieldmd` | `0x2550` | `0x25a8` | **`+0x58`** |
+| `__AUTH.__objc_data` | `0x1090` | `0x10e0` | **`+0x50`** |
+| `__DATA.__bss` | `0x5948` | `0x5998` | **`+0x50`** |
+| `__DATA_DIRTY.__data` | `0x3e80` | `0x3e30` | **`-0x50`** |
+| `__TEXT.__constg_swiftt` | `0x263c` | `0x2688` | **`+0x4c`** |
+| `__DATA.__common` | `0x148` | `0x168` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x6d0` | `0x6e8` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x504` | `0x514` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x1a70` | `0x1a80` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x420` | `0x430` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x258` | `0x264` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x22c8` | `0x22d0` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x200` | `0x208` | **`+0x8`** |
+| `__DATA_DIRTY.__objc_data` | `0x1bb8` | `0x1bc0` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x2d0` | `0x2d8` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x288` | `0x28c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3600.70.32.0.0
--  __TEXT.__text: 0x3265bc
--  __TEXT.__objc_methlist: 0x4a10
--  __TEXT.__const: 0x8458
--  __TEXT.__dlopen_cstrs: 0x6c
--  __TEXT.__swift5_typeref: 0x4385
--  __TEXT.__cstring: 0xdbf4
--  __TEXT.__constg_swiftt: 0x263c
--  __TEXT.__swift5_reflstr: 0x26b2
--  __TEXT.__swift5_fieldmd: 0x2550
 +3600.70.47.0.0
-+  __TEXT.__text: 0x33147c
-+  __TEXT.__objc_methlist: 0x4b28
-+  __TEXT.__const: 0x84c0
-+  __TEXT.__dlopen_cstrs: 0xdc
-+  __TEXT.__swift5_typeref: 0x42bc
-+  __TEXT.__cstring: 0xe069
-+  __TEXT.__constg_swiftt: 0x2688
-+  __TEXT.__swift5_reflstr: 0x2753
-+  __TEXT.__swift5_fieldmd: 0x25a8
-   __TEXT.__swift5_builtin: 0x230
-   __TEXT.__swift5_assocty: 0x510
-   __TEXT.__swift5_proto: 0x4dc
--  __TEXT.__swift5_types: 0x288
--  __TEXT.__oslogstring: 0xcb3d
--  __TEXT.__swift5_capture: 0xc68c
-+  __TEXT.__swift5_types: 0x28c
-+  __TEXT.__oslogstring: 0xcdd5
-+  __TEXT.__swift5_capture: 0xcafc
-   __TEXT.__swift5_protos: 0x20
--  __TEXT.__swift_as_entry: 0x258
--  __TEXT.__swift_as_ret: 0x2d0
--  __TEXT.__swift_as_cont: 0x6d0
-+  __TEXT.__swift_as_entry: 0x264
-+  __TEXT.__swift_as_ret: 0x2d8
-+  __TEXT.__swift_as_cont: 0x6e8
-   __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__gcc_except_tab: 0xbdc
-+  __TEXT.__gcc_except_tab: 0xc88
-   __TEXT.__ustring: 0x4
--  __TEXT.__unwind_info: 0x4658
--  __TEXT.__eh_frame: 0x5944
-+  __TEXT.__unwind_info: 0x4920
-+  __TEXT.__eh_frame: 0x5a6c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x19d0
--  __DATA_CONST.__objc_classlist: 0x420
-+  __DATA_CONST.__const: 0x1a38
-+  __DATA_CONST.__objc_classlist: 0x430
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x148
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3620
-+  __DATA_CONST.__objc_selrefs: 0x36d8
-   __DATA_CONST.__objc_protorefs: 0x98
--  __DATA_CONST.__objc_superrefs: 0x200
-+  __DATA_CONST.__objc_superrefs: 0x208
-   __DATA_CONST.__objc_arraydata: 0x470
--  __DATA_CONST.__got: 0x1a70
--  __AUTH_CONST.__const: 0x227c8
--  __AUTH_CONST.__cfstring: 0x4e40
--  __AUTH_CONST.__objc_const: 0xb380
--  __AUTH_CONST.__objc_intobj: 0xdb0
-+  __DATA_CONST.__got: 0x1a80
-+  __AUTH_CONST.__const: 0x23330
-+  __AUTH_CONST.__cfstring: 0x4f20
-+  __AUTH_CONST.__objc_const: 0xb550
-+  __AUTH_CONST.__objc_intobj: 0xea0
-   __AUTH_CONST.__objc_arrayobj: 0x2a0
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x22c8
--  __AUTH.__objc_data: 0x1090
--  __AUTH.__data: 0xaf0
--  __DATA.__objc_ivar: 0x504
--  __DATA.__data: 0x23c0
--  __DATA.__bss: 0x5948
--  __DATA.__common: 0x148
--  __DATA_DIRTY.__objc_data: 0x1bb8
--  __DATA_DIRTY.__data: 0x3e80
-+  __AUTH_CONST.__auth_got: 0x22d0
-+  __AUTH.__objc_data: 0x10e0
-+  __AUTH.__data: 0xb88
-+  __DATA.__objc_ivar: 0x514
-+  __DATA.__data: 0x2478
-+  __DATA.__bss: 0x5998
-+  __DATA.__common: 0x168
-+  __DATA_DIRTY.__objc_data: 0x1bc0
-+  __DATA_DIRTY.__data: 0x3e30
-   __DATA_DIRTY.__bss: 0x3f18
-   __DATA_DIRTY.__common: 0x248
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
 
-   - /System/Library/PrivateFrameworks/CacheDelete.framework/CacheDelete
-   - /System/Library/PrivateFrameworks/CascadeSets.framework/CascadeSets
-   - /System/Library/PrivateFrameworks/CollectionsInternal.framework/CollectionsInternal
 +  - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet
-   - /System/Library/PrivateFrameworks/CoreRoutine.framework/CoreRoutine
-   - /System/Library/PrivateFrameworks/CoreSpeechFoundation.framework/CoreSpeechFoundation
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10426
--  Symbols:   6148
+-  Symbols:   4738
 -  CStrings:  2407
 +  Functions: 10611
-+  Symbols:   6235
++  Symbols:   4805
 +  CStrings:  2445
- 
 Symbols:
 + +[CESRDiagnosticReporter sharedInstance]
 + +[CESRSpeechItemRanker_ASRRankedEntityTerm getRank:forItem:]
@@ -237,37 +177,6 @@ Symbols:
 + _kCESRDiagnosticReporterASRTypeKey
 + _kCESRDiagnosticReporterCancelPreviousRecognitionTimeout
 + _kCESRDiagnosticReporterDomainKey
-+ _objc_msgSend$_cascadeEntitySourcesFromEnrolledCounts:
-+ _objc_msgSend$_localeIdentifier
-+ _objc_msgSend$_rebuildAllSites:trigger:
-+ _objc_msgSend$_rebuildSiteAtURL:shouldDefer:trigger:
-+ _objc_msgSend$_resetAndRebuildAllSitesWithTrigger:
-+ _objc_msgSend$_speechProfileSiteURL
-+ _objc_msgSend$_submitASRIssueReport:withContext:
-+ _objc_msgSend$_updateReasonForTrigger:
-+ _objc_msgSend$addEnrolledEntitiesCount:forCascadeFieldType:
-+ _objc_msgSend$beginWithCategoriesAndVersions:trigger:completion:
-+ _objc_msgSend$beginWithCategoriesAndVersions:trigger:error:
-+ _objc_msgSend$getRank:forItem:
-+ _objc_msgSend$initWithSpeechProfileSiteURL:localeIdentifier:
-+ _objc_msgSend$logASRSpeechProfileUpdateEndedWithTotalNumEntitiesReceived:entityMetrics:entityCleanupMetrics:entityExtractionMetrics:cascadeEntitySources:speechProfileSize:
-+ _objc_msgSend$numEnrolledEntitiesPerCascadeFieldType
-+ _objc_msgSend$predicateWithFieldType:equalsStringValue:error:
-+ _objc_msgSend$processName
-+ _objc_msgSend$queue
-+ _objc_msgSend$rebuildCategoryGroup:withSets:version:trigger:totalItems:error:
-+ _objc_msgSend$rebuildRequiredProfileInstances:trigger:
-+ _objc_msgSend$reporter
-+ _objc_msgSend$setCascadeEntitySources:
-+ _objc_msgSend$setCascadeFieldType:
-+ _objc_msgSend$setNumCandidateInteractions:
-+ _objc_msgSend$setNumEnrolledEntities:
-+ _objc_msgSend$setSpeechProfileSize:
-+ _objc_msgSend$setSpeechProfileUpdateReason:
-+ _objc_msgSend$signatureWithDomain:type:subType:detectedProcess:triggerThresholdValues:
-+ _objc_msgSend$snapshotWithSignature:duration:event:payload:reply:
-+ _objc_msgSend$speechProfileSize
-+ _objc_msgSend$submitASRIssueReport:withContext:
 + _sharedInstance.sharedReporter
 + _symbolic SDySS_____G 29CoreEmbeddedSpeechRecognition24CESREntityRankingMetricsV22DonatedAppEntityMetricV
 + _symbolic SDySS_____G 29CoreEmbeddedSpeechRecognition24CESREntityRankingMetricsV23AcceptedAppEntityMetricV
@@ -336,17 +245,6 @@ Symbols:
 - ___block_descriptor_48_e8_32s40bs_e15_B16?0"NSURL"8ls32l8s40l8
 - ___block_descriptor_56_e8_32s40bs48r_e39_B32?0"CCSharedItem"8"NSString"16^24ls32l8r48l8s40l8
 - ___swift_memcpy12_4
-- _objc_msgSend$_allCodepathsDetected
-- _objc_msgSend$_rebuildAllSites:
-- _objc_msgSend$_rebuildSiteAtURL:shouldDefer:
-- _objc_msgSend$_resetAndRebuildAllSites
-- _objc_msgSend$beginWithCategoriesAndVersions:completion:
-- _objc_msgSend$beginWithCategoriesAndVersions:error:
-- _objc_msgSend$generateABCSnapshotForType:subType:context:
-- _objc_msgSend$initWithSpeechProfileSiteURL:locale:
-- _objc_msgSend$logASRSpeechProfileUpdateEndedWithTotalNumEntitiesReceived:entityMetrics:entityCleanupMetrics:entityExtractionMetrics:
-- _objc_msgSend$rebuildCategoryGroup:withSets:version:totalItems:error:
-- _objc_msgSend$rebuildRequiredProfileInstances:
 - _symbolic SDySSSaySo12CCSharedItemCGG
 - _symbolic SDySSSaySo12CCSharedItemCy______So13CCItemMessageCXcGGG So13CCItemContentP
 - _symbolic SDySSSo12CCSharedItemCy______So13CCItemMessageCXcGG So13CCItemContentP

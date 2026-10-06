@@ -2,19 +2,20 @@
 
 > `/usr/sbin/aslmanager`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x50` | `0x58` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__DATA_CONST.__const`
+
+### Other Changes
 
 ```diff
 
 -409.0.0.0.0
 +409.40.3.0.0
-   __TEXT.__text: 0x6d94
-   __TEXT.__auth_stubs: 0x780
--  __TEXT.__const: 0x50
-+  __TEXT.__const: 0x58
-   __TEXT.__cstring: 0xd77
-   __TEXT.__unwind_info: 0x190
-   __DATA_CONST.__const: 0xe0
 ```

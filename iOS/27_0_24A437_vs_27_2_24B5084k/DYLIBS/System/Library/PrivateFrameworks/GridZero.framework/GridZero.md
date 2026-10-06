@@ -2,93 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/GridZero.framework/GridZero`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x93aec` | `0x9456c` | **`+0xa80`** |
+| `__AUTH_CONST.__objc_const` | `0x18b20` | `0x18d18` | **`+0x1f8`** |
+| `__TEXT.__objc_methlist` | `0xcfc8` | `0xd0c8` | **`+0x100`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7508` | `0x75a0` | **`+0x98`** |
+| `__TEXT.__constg_swiftt` | `0x1884` | `0x18e4` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x2a10` | `0x2a68` | **`+0x58`** |
+| `__AUTH.__objc_data` | `0x21d0` | `0x2220` | **`+0x50`** |
+| `__DATA_CONST.__const` | `0x23f0` | `0x2438` | **`+0x48`** |
+| `__AUTH_CONST.__cfstring` | `0x26e0` | `0x2720` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x549f` | `0x54dd` | **`+0x3e`** |
+| `__TEXT.__swift5_reflstr` | `0x10c8` | `0x10f8` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0x31d0` | `0x31f0` | **`+0x20`** |
+| `__TEXT.__const` | `0x3078` | `0x3098` | **`+0x20`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x138` | `0x120` | **`-0x18`** |
+| `__DATA.__objc_ivar` | `0x14b8` | `0x14cc` | **`+0x14`** |
+| `__TEXT.__swift5_builtin` | `0x244` | `0x258` | **`+0x14`** |
+| `__DATA.__data` | `0x31b8` | `0x31c8` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x10ec` | `0x10f8` | **`+0xc`** |
+| `__DATA_CONST.__objc_arraydata` | `0x210` | `0x208` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x2f0` | `0x2f8` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1e0` | `0x1e8` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0x18ae` | `0x18b4` | **`+0x6`** |
+| `__TEXT.__swift5_types` | `0x14c` | `0x150` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.235.0.0
--  __TEXT.__text: 0x8fbcc
--  __TEXT.__objc_methlist: 0xcfc8
--  __TEXT.__const: 0x3078
--  __TEXT.__swift5_typeref: 0x18ae
--  __TEXT.__constg_swiftt: 0x1884
--  __TEXT.__swift5_reflstr: 0x10c8
--  __TEXT.__swift5_fieldmd: 0x10ec
--  __TEXT.__swift5_builtin: 0x244
 +916.40.110.0.0
-+  __TEXT.__text: 0x905c8
-+  __TEXT.__objc_methlist: 0xd0c8
-+  __TEXT.__const: 0x3098
-+  __TEXT.__swift5_typeref: 0x18b4
-+  __TEXT.__constg_swiftt: 0x18e4
-+  __TEXT.__swift5_reflstr: 0x10f8
-+  __TEXT.__swift5_fieldmd: 0x10f8
-+  __TEXT.__swift5_builtin: 0x258
-   __TEXT.__swift5_proto: 0x110
--  __TEXT.__swift5_types: 0x14c
--  __TEXT.__cstring: 0x549f
-+  __TEXT.__swift5_types: 0x150
-+  __TEXT.__cstring: 0x54dd
-   __TEXT.__swift5_capture: 0x4a8
-   __TEXT.__swift5_assocty: 0x308
-   __TEXT.__oslogstring: 0x1574
 
-   __TEXT.__swift_as_cont: 0x18
-   __TEXT.__gcc_except_tab: 0x6ac
-   __TEXT.__ustring: 0x1c
--  __TEXT.__unwind_info: 0x33a0
-+  __TEXT.__unwind_info: 0x3418
-   __TEXT.__eh_frame: 0x470
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x23f0
--  __DATA_CONST.__objc_classlist: 0x2f0
-+  __DATA_CONST.__const: 0x2438
-+  __DATA_CONST.__objc_classlist: 0x2f8
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x3a8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7508
-+  __DATA_CONST.__objc_selrefs: 0x75a0
-   __DATA_CONST.__objc_protorefs: 0xb0
--  __DATA_CONST.__objc_superrefs: 0x1e0
--  __DATA_CONST.__objc_arraydata: 0x210
-+  __DATA_CONST.__objc_superrefs: 0x1e8
-+  __DATA_CONST.__objc_arraydata: 0x208
-   __DATA_CONST.__got: 0xb78
--  __AUTH_CONST.__const: 0x31d0
--  __AUTH_CONST.__cfstring: 0x26e0
--  __AUTH_CONST.__objc_const: 0x18b20
-+  __AUTH_CONST.__const: 0x31f0
-+  __AUTH_CONST.__cfstring: 0x2720
-+  __AUTH_CONST.__objc_const: 0x18d18
-   __AUTH_CONST.__objc_intobj: 0x210
--  __AUTH_CONST.__objc_arrayobj: 0x138
-+  __AUTH_CONST.__objc_arrayobj: 0x120
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__auth_got: 0x11a8
--  __AUTH.__objc_data: 0x21d0
-+  __AUTH.__objc_data: 0x2220
-   __AUTH.__data: 0xc70
--  __DATA.__objc_ivar: 0x14b8
--  __DATA.__data: 0x31b8
-+  __DATA.__objc_ivar: 0x14cc
-+  __DATA.__data: 0x31c8
-   __DATA.__common: 0x30
-   __DATA_DIRTY.__objc_data: 0xf0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5352
--  Symbols:   10431
+-  Symbols:   7645
 -  CStrings:  664
 +  Functions: 5403
-+  Symbols:   10476
++  Symbols:   7677
 +  CStrings:  666
- 
 Symbols:
 + -[PXAssetsSectionLayout customMediaProviderForDisplayAssetsInLayout:]
 + -[PXAssetsSectionLayout overrideMediaProvider]
@@ -167,22 +121,6 @@ Symbols:
 + __OBJC_CLASS_RO_$_PXPhotosViewBannerControllerRegistration
 + __OBJC_METACLASS_RO_$_PXPhotosViewBannerControllerRegistration
 + ___39-[PXZoomablePhotosLayout _updateLayers]_block_invoke_3
-+ _objc_msgSend$_updateAdditionalDecorationsInLayers
-+ _objc_msgSend$_updateTopLeadingCornerDecorations
-+ _objc_msgSend$bannerControllerRegistrations
-+ _objc_msgSend$focusRingThickness
-+ _objc_msgSend$focusRingThicknessForDecorationSource:
-+ _objc_msgSend$noThumbnailPlaceholderConfiguration
-+ _objc_msgSend$overrideMediaProvider
-+ _objc_msgSend$px_isMemory
-+ _objc_msgSend$removeActiveDecorations:
-+ _objc_msgSend$selectionDecorationStyleOverrideForDecorationSource:
-+ _objc_msgSend$setBannerControllerRegistrations:
-+ _objc_msgSend$setFocusRingThickness:
-+ _objc_msgSend$setNoThumbnailPlaceholderConfiguration:
-+ _objc_msgSend$updateActiveDecorationsInDecoratingLayout:
-+ _objc_msgSend$wantsLivePhotoBadges
-+ _objc_msgSend$wantsTopLeadingCornerDecorations
 + _symbolic _____ So27PXGSelectionDecorationStyleV
 - -[PXPhotosViewConfiguration bannerControllerProvider]
 - -[PXPhotosViewConfiguration setBannerControllerProvider:]
@@ -230,9 +168,6 @@ Symbols:
 - _OBJC_IVAR_$_PXPhotosViewConfiguration._bannerControllerProvider
 - _OBJC_IVAR_$_PXPhotosViewModel._bannerControllerProvider
 - _OBJC_IVAR_$_PXZoomablePhotosLayout._layersHaveTopLeadingCornerDecoration
-- _objc_msgSend$_wantsTopLeadingCornerDecoration
-- _objc_msgSend$bannerControllerProvider
-- _objc_msgSend$setBannerControllerProvider:
 CStrings:
 + "PXPhotosViewBannerPositionTitle"
 + "PXPhotosViewBannerPositionTop"

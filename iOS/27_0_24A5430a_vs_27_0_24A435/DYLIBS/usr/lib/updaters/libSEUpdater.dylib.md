@@ -2,44 +2,25 @@
 
 > `/usr/lib/updaters/libSEUpdater.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x72608` | `0x72dd0` | **`+0x7c8`** |
+| `__TEXT.__const` | `0xa5dc` | `0xaa0c` | **`+0x430`** |
+| `__AUTH_CONST.__const` | `0x4588` | `0x4690` | **`+0x108`** |
+| `__TEXT.__gcc_except_tab` | `0x857c` | `0x8614` | **`+0x98`** |
+| `__TEXT.__unwind_info` | `0x1d18` | `0x1d70` | **`+0x58`** |
+| `__TEXT.__cstring` | `0x8eab` | `0x8ed8` | **`+0x2d`** |
+
+### Other Changes
+
 ```diff
 
- 58.0.45.0.0
--  __TEXT.__text: 0x72608
-+  __TEXT.__text: 0x72dd0
-   __TEXT.__init_offsets: 0x20
-   __TEXT.__objc_methlist: 0x654
--  __TEXT.__const: 0xa5dc
-+  __TEXT.__const: 0xaa0c
-   __TEXT.__oslogstring: 0x5e
--  __TEXT.__cstring: 0x8eab
--  __TEXT.__gcc_except_tab: 0x857c
--  __TEXT.__unwind_info: 0x1d18
-+  __TEXT.__cstring: 0x8ed8
-+  __TEXT.__gcc_except_tab: 0x8614
-+  __TEXT.__unwind_info: 0x1d70
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0x620
-   __DATA_CONST.__objc_superrefs: 0x18
-   __DATA_CONST.__got: 0x208
--  __AUTH_CONST.__const: 0x4588
-+  __AUTH_CONST.__const: 0x4690
-   __AUTH_CONST.__cfstring: 0x2320
-   __AUTH_CONST.__objc_const: 0x8f0
-   __AUTH_CONST.__weak_auth_got: 0x28
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libnfrestore.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1577
--  Symbols:   3032
+-  Symbols:   2902
 +  Functions: 1591
-+  Symbols:   3058
-   CStrings:  1282
- 
++  Symbols:   2928
 Symbols:
 + GCC_except_table198
 + GCC_except_table199

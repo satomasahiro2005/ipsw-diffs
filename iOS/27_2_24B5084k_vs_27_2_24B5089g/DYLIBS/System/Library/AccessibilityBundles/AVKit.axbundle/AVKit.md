@@ -2,59 +2,34 @@
 
 > `/System/Library/AccessibilityBundles/AVKit.axbundle/AVKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc184` | `0xc730` | **`+0x5ac`** |
+| `__AUTH.__objc_data` | `0xbe0` | `0xb40` | **`-0xa0`** |
+| `__AUTH_CONST.__cfstring` | `0x3120` | `0x31c0` | **`+0xa0`** |
+| `__DATA_DIRTY.__objc_data` | `0x1450` | `0x14f0` | **`+0xa0`** |
+| `__AUTH_CONST.__const` | `0x240` | `0x260` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7a0` | `0x7c0` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x1350` | `0x1370` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x2781` | `0x279d` | **`+0x1c`** |
+| `__TEXT.__unwind_info` | `0x540` | `0x550` | **`+0x10`** |
+| `__TEXT.__ustring` | `0x4` | `0xc` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3050.3.0.0.0
--  __TEXT.__text: 0xbca4
--  __TEXT.__objc_methlist: 0x1350
 +3050.3.1.0.0
-+  __TEXT.__text: 0xc220
-+  __TEXT.__objc_methlist: 0x1370
-   __TEXT.__const: 0x30
-   __TEXT.__gcc_except_tab: 0x414
--  __TEXT.__cstring: 0x2781
--  __TEXT.__ustring: 0x4
--  __TEXT.__unwind_info: 0x610
-+  __TEXT.__cstring: 0x279d
-+  __TEXT.__ustring: 0xc
-+  __TEXT.__unwind_info: 0x628
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__const: 0x380
-   __DATA_CONST.__objc_classlist: 0x338
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7a0
-+  __DATA_CONST.__objc_selrefs: 0x7c0
-   __DATA_CONST.__objc_superrefs: 0x150
-   __DATA_CONST.__got: 0x180
--  __AUTH_CONST.__const: 0x240
--  __AUTH_CONST.__cfstring: 0x3120
-+  __AUTH_CONST.__const: 0x260
-+  __AUTH_CONST.__cfstring: 0x31c0
-   __AUTH_CONST.__objc_const: 0x39f0
-   __AUTH_CONST.__objc_intobj: 0x18
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0xbe0
-+  __AUTH.__objc_data: 0xb40
-   __DATA.__data: 0x18
--  __DATA_DIRTY.__objc_data: 0x1450
-+  __DATA_DIRTY.__objc_data: 0x14f0
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AVKit.framework/AVKit
-
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 390
--  Symbols:   1270
+-  Symbols:   1095
 -  CStrings:  423
 +  Functions: 396
-+  Symbols:   1279
++  Symbols:   1101
 +  CStrings:  428
- 
 Symbols:
 + -[AVNowPlayingTransportBarAccessibility _axSpokenRemainingTime]
 + -[AVPlayerLayerViewAccessibility _axPlayerViewController]
@@ -77,9 +52,6 @@ Symbols:
 + _AXAVKitSpokenDurationForTimeText
 + _AXAVKitTransportBarDisplaysDates
 + ___57-[AVPlayerLayerViewAccessibility _axPlayerViewController]_block_invoke
-+ _objc_msgSend$_axPlayerViewController
-+ _objc_msgSend$_axSpokenRemainingTime
-+ _objc_msgSend$characterSetWithCharactersInString:
 - GCC_except_table104
 - GCC_except_table149
 - GCC_except_table162

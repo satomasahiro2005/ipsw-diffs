@@ -2,98 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/AssistiveTouchUI.framework/AssistiveTouchUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7caf4` | `0x8422c` | **`+0x7738`** |
+| `__TEXT.__const` | `0x3bb0` | `0x40c0` | **`+0x510`** |
+| `__TEXT.__eh_frame` | `0x3bdc` | `0x406c` | **`+0x490`** |
+| `__AUTH_CONST.__const` | `0x21f0` | `0x2568` | **`+0x378`** |
+| `__TEXT.__swift5_typeref` | `0x3cf8` | `0x3f9e` | **`+0x2a6`** |
+| `__TEXT.__unwind_info` | `0x1d18` | `0x1f50` | **`+0x238`** |
+| `__DATA.__bss` | `0x1dd8` | `0x1fd8` | **`+0x200`** |
+| `__AUTH_CONST.__objc_const` | `0x16f0` | `0x18a0` | **`+0x1b0`** |
+| `__TEXT.__constg_swiftt` | `0x1388` | `0x14ec` | **`+0x164`** |
+| `__AUTH.__objc_data` | `0xdf0` | `0xf48` | **`+0x158`** |
+| `__AUTH_CONST.__auth_got` | `0x17e8` | `0x1938` | **`+0x150`** |
+| `__TEXT.__swift5_reflstr` | `0xc44` | `0xd74` | **`+0x130`** |
+| `__DATA.__data` | `0x1870` | `0x1990` | **`+0x120`** |
+| `__TEXT.__swift5_capture` | `0xa7c` | `0xb94` | **`+0x118`** |
+| `__TEXT.__swift5_fieldmd` | `0xbb0` | `0xcb4` | **`+0x104`** |
+| `__AUTH.__data` | `0xda8` | `0xea8` | **`+0x100`** |
+| `__DATA_CONST.__got` | `0xcd8` | `0xd20` | **`+0x48`** |
+| `__TEXT.__swift5_assocty` | `0x240` | `0x278` | **`+0x38`** |
+| `__TEXT.__swift_as_cont` | `0x288` | `0x2bc` | **`+0x34`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8d8` | `0x908` | **`+0x30`** |
+| `__TEXT.__swift_as_entry` | `0x258` | `0x274` | **`+0x1c`** |
+| `__TEXT.__swift5_types` | `0xbc` | `0xd0` | **`+0x14`** |
+| `__DATA_CONST.__const` | `0x3b0` | `0x3c0` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0xe4` | `0xf4` | **`+0x10`** |
+| `__TEXT.__swift_as_ret` | `0xfc` | `0x108` | **`+0xc`** |
+| `__DATA.__common` | `0x18` | `0x20` | **`+0x8`** |
+| `__DATA.__objc_stublist` | `—` | `0x8` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0xa0` | `0xa8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3237.1.0.0.0
--  __TEXT.__text: 0x7caf4
 +3240.3.0.0.0
-+  __TEXT.__text: 0x8422c
-   __TEXT.__objc_methlist: 0x91c
--  __TEXT.__const: 0x3bb0
--  __TEXT.__constg_swiftt: 0x1388
--  __TEXT.__swift5_typeref: 0x3cf8
-+  __TEXT.__const: 0x40c0
-+  __TEXT.__constg_swiftt: 0x14ec
-+  __TEXT.__swift5_typeref: 0x3f9e
-   __TEXT.__swift5_builtin: 0x64
--  __TEXT.__swift5_reflstr: 0xc44
--  __TEXT.__swift5_fieldmd: 0xbb0
--  __TEXT.__swift5_assocty: 0x240
--  __TEXT.__swift5_capture: 0xa7c
-+  __TEXT.__swift5_reflstr: 0xd74
-+  __TEXT.__swift5_fieldmd: 0xcb4
-+  __TEXT.__swift5_assocty: 0x278
-+  __TEXT.__swift5_capture: 0xb94
-   __TEXT.__cstring: 0x775
--  __TEXT.__swift5_proto: 0xe4
--  __TEXT.__swift5_types: 0xbc
-+  __TEXT.__swift5_proto: 0xf4
-+  __TEXT.__swift5_types: 0xd0
-   __TEXT.__swift5_protos: 0x1c
-   __TEXT.__oslogstring: 0x22b
--  __TEXT.__swift_as_entry: 0x258
--  __TEXT.__swift_as_ret: 0xfc
--  __TEXT.__swift_as_cont: 0x288
-+  __TEXT.__swift_as_entry: 0x274
-+  __TEXT.__swift_as_ret: 0x108
-+  __TEXT.__swift_as_cont: 0x2bc
-   __TEXT.__gcc_except_tab: 0xd0
--  __TEXT.__unwind_info: 0x1d18
--  __TEXT.__eh_frame: 0x3bdc
-+  __TEXT.__unwind_info: 0x1f50
-+  __TEXT.__eh_frame: 0x406c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3b0
--  __DATA_CONST.__objc_classlist: 0xa0
-+  __DATA_CONST.__const: 0x3c0
-+  __DATA_CONST.__objc_classlist: 0xa8
-   __DATA_CONST.__objc_protolist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8d8
-+  __DATA_CONST.__objc_selrefs: 0x908
-   __DATA_CONST.__objc_protorefs: 0x40
-   __DATA_CONST.__objc_superrefs: 0x20
-   __DATA_CONST.__objc_arraydata: 0x88
--  __DATA_CONST.__got: 0xcd8
--  __AUTH_CONST.__const: 0x21f0
-+  __DATA_CONST.__got: 0xd20
-+  __AUTH_CONST.__const: 0x2568
-   __AUTH_CONST.__cfstring: 0x1c0
--  __AUTH_CONST.__objc_const: 0x16f0
-+  __AUTH_CONST.__objc_const: 0x18a0
-   __AUTH_CONST.__objc_intobj: 0x30
-   __AUTH_CONST.__objc_arrayobj: 0x48
--  __AUTH_CONST.__auth_got: 0x17e8
--  __AUTH.__objc_data: 0xdf0
--  __AUTH.__data: 0xda8
-+  __AUTH_CONST.__auth_got: 0x1938
-+  __AUTH.__objc_data: 0xf48
-+  __AUTH.__data: 0xea8
-   __DATA.__objc_ivar: 0x2c
--  __DATA.__data: 0x1870
--  __DATA.__bss: 0x1dd8
--  __DATA.__common: 0x18
-+  __DATA.__data: 0x1990
-+  __DATA.__objc_stublist: 0x8
-+  __DATA.__bss: 0x1fd8
-+  __DATA.__common: 0x20
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/Combine.framework/Combine
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2099
--  Symbols:   1383
+-  Symbols:   1168
 +  Functions: 2261
-+  Symbols:   1440
-   CStrings:  75
- 
++  Symbols:   1219
 Symbols:
 + _AXSSArrangementScreenRegion
 + _AX_CGRectBySubtractingRect
@@ -126,14 +78,6 @@ Symbols:
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBP28AccessibilitySharedUISupportE14axsuiReadFrame15coordinateSpace8onChangeQrAA010CoordinateK0O_ySo6CGRectVctFQOyAA15ModifiedContentVyAA6ZStackVyAA05TupleQ0Vy014AssistiveTouchB00u18HandlingBackgroundC0V_AMyAMyAcAEAG2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAguV_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAD0d19FloatingUIContainerC0VyAcAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQOyAcDEAefGQrAI_yAKctFQOyAD0dZ9UIContentVyAR0d10MenuButtontU0VAR0tU12ExpandedMenuVG_Qo__AR0tU9MenuStateCQo_G_0dE7Support0dZ10UIPositionOQo__AD0dZ7UIStateC15AvoidanceRegionVSgQo_AA25_AppearanceActionModifierVGAA30_EnvironmentKeyWritingModifierVyAA11ColorSchemeOGGQPGGAA30_SafeAreaRegionsIgnoringLayoutVG_Qo_HO
 + _keypath_set.7Tm
 + _objc_class_stubs
-+ _objc_msgSend$activeApplicationOrientation
-+ _objc_msgSend$defaultActivationDelay
-+ _objc_msgSend$dismissHUD
-+ _objc_msgSend$presentHUDWithTitle:image:
-+ _objc_msgSend$setOverrideUserInterfaceStyle:
-+ _objc_msgSend$setUserInteractionEnabled:
-+ _objc_msgSend$shouldShowLargeContentViewer
-+ _objc_msgSend$systemImageNamed:
 + _objc_retain_x28
 + _swift_initClassMetadata2
 + _swift_retain_x28
@@ -181,8 +125,6 @@ Symbols:
 - _get_witness_table 7SwiftUI4ViewRzlqd0__AaBHD3_AaBPAAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAcAE4task2id4name8priority4file4line_Qrqd___SSSgScPSSSiyyYaYAcntSQRd__lFQOyAA15ModifiedContentVyAOyAOyAOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAdeF_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE19simultaneousGesture_9includingQrqd___AA0Q4MaskVtAA0Q0Rd__lFQOyAOyAOyAOyAA09_VariadicC0O4TreeVy_AA11_LayoutRootVy014AssistiveTouchB00xy4MenuV0VGAA7ForEachVys18EnumeratedSequenceVySay22AccessibilityUtilities0xyZ12ItemLocationO8location_A_0xyZ4ItemV4itemtGGSiAC28AccessibilitySharedUISupportE14axsuiReadFrame15coordinateSpaceADQrAA15CoordinateSpaceO_ySo6CGRectVctFQOyAOyAOyAA012_ConditionalO0VyxA24_yAcAE20accessibilityFocused_6equalsQrAA23AccessibilityFocusStateV7BindingVyqd___G_qd__tSHRd__lFQOyAOyA_0xyZ6ButtonVAA14_OpacityEffectVG_A9_SgQo_A36_GGAA21_TraitWritingModifierVyAA01_V5TraitVyA_0xyz12ItemLocationV8ValueKey33_57A219D8A3AE91DAFD8A8EAE585AE16CLLVGGGA42_yAA18TransitionTraitKeyVGG_Qo_GGAA24_CoordinateSpaceModifierVySSGGAA16_OverlayModifierVyAOyAOyAOyAOyA_0xY9VolumeBarVAA06_FrameV0VGAA25_AllowsHitTestingModifierVGAA31AccessibilityAttachmentModifierVGA53_GSgGGAA01_O13ShapeModifierVyAA9RectangleVGG_AA06_EndedQ0VyAA08_ChangedQ0VyAA0q5StateQ0VyAA04DragQ0VSbGGGQo__SbQo__AA9UnitPointVSgQo_AA25_AppearanceActionModifierVGA103_GA35_GA53_G_SbQo__A_013AccessibilityZ4PageVQo_HO
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBP28AccessibilitySharedUISupportE14axsuiReadFrame15coordinateSpace8onChangeQrAA010CoordinateK0O_ySo6CGRectVctFQOyAA15ModifiedContentVyAA6ZStackVyAA05TupleQ0Vy014AssistiveTouchB00u18HandlingBackgroundC0V_AMyAcAEAG2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAguV_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAD0d19FloatingUIContainerC0VyAcAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQOyAcDEAefGQrAI_yAKctFQOyAD0dZ9UIContentVyAR0d10MenuButtontU0VAR0tU12ExpandedMenuVG_Qo__AR0tU9MenuStateCQo_G_0dE7Support0dZ10UIPositionOQo__SbQo_AA30_EnvironmentKeyWritingModifierVyAA11ColorSchemeOGGQPGGAA30_SafeAreaRegionsIgnoringLayoutVG_Qo_HO
 - _keypath_set.3Tm
-- _objc_msgSend$currentDevice
-- _objc_msgSend$orientation
 - _symbolic ___________y_____y_____y_____y_____y_____y_____y__________G_Qo_______Qo_G______Qo__SbQo______y_____GGt 16AssistiveTouchUI0B22HandlingBackgroundViewV 05SwiftC015ModifiedContentV AD0F0PADE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQO AhDEAijK_Qrqd___Sbyqd___qd__tctSQRd__lFQO 28AccessibilitySharedUISupport0n19FloatingUIContainerF0V AhDE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQO AhLE14axsuiReadFrame15coordinateSpaceAIQrAD010CoordinateZ0O_ySo6CGRectVctFQO AL0nQ9UIContentV AA0n10MenuButtonaB0V AA0aB12ExpandedMenuV AA0aB9MenuStateC 0nO7Support0nQ10UIPositionO AD30_EnvironmentKeyWritingModifierV AD11ColorSchemeO
 - _symbolic _____y_____GSg 7SwiftUI14_UIHostingViewC 014AssistiveTouchB0011CalibrationD0V
 - _symbolic _____y___________y___________y_____y_____y_____y_____y_____y_____y__________G_Qo_______Qo_G______Qo__SbQo______y_____GGQPGG 7SwiftUI13_VariadicViewO4TreeV AA13_ZStackLayoutV AA12TupleContentV 014AssistiveTouchB00k18HandlingBackgroundD0V AA08ModifiedI0V AA0D0PAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQO ApAEAqrS_Qrqd___Sbyqd___qd__tctSQRd__lFQO 28AccessibilitySharedUISupport0s19FloatingUIContainerD0V ApAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQO ApTE14axsuiReadFrame15coordinateSpaceAQQrAA15CoordinateSpaceO_ySo6CGRectVctFQO AT0sV9UIContentV AJ0s10MenuButtonjK0V AJ0jK12ExpandedMenuV AJ0jK9MenuStateC 0sT7Support0sV10UIPositionO AA30_EnvironmentKeyWritingModifierV AA11ColorSchemeO

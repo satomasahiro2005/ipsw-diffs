@@ -2,17 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/CoreIDCred.framework/CoreIDCred`
 
-```diff
+### Section Size Changes
 
- 9.42.0.0.0
--  __TEXT.__text: 0x3e7f8
-+  __TEXT.__text: 0x3e80c
-   __TEXT.__objc_methlist: 0x20ec
-   __TEXT.__const: 0x3680
-   __TEXT.__cstring: 0x229b
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3e7f8` | `0x3e80c` | **`+0x14`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_25b095258 -> sub_25bd74258 : 732 -> 736
-~ sub_25b09939c -> sub_25bd783a0 : 1388 -> 1392
-~ sub_25b09ef58 -> sub_25bd7df60 : 664 -> 668
-~ sub_25b09f1f0 -> sub_25bd7e1fc : 660 -> 668
+~ sub_25af64258 -> sub_25bc58258 : 732 -> 736
+~ sub_25af6839c -> sub_25bc5c3a0 : 1388 -> 1392
+~ sub_25af6df58 -> sub_25bc61f60 : 664 -> 668
+~ sub_25af6e1f0 -> sub_25bc621fc : 660 -> 668
 ```

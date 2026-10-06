@@ -2,130 +2,60 @@
 
 > `/System/Library/PrivateFrameworks/NewsPersonalization.framework/NewsPersonalization`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x248a98` | `0x23b944` | **`-0xd154`** |
+| `__AUTH_CONST.__const` | `0xc618` | `0xb998` | **`-0xc80`** |
+| `__TEXT.__eh_frame` | `0xf6b8` | `0xeac0` | **`-0xbf8`** |
+| `__TEXT.__swift5_typeref` | `0x4bd1` | `0x4497` | **`-0x73a`** |
+| `__DATA_DIRTY.__data` | `0xa4a8` | `0xa028` | **`-0x480`** |
+| `__TEXT.__swift5_capture` | `0x1318` | `0xea0` | **`-0x478`** |
+| `__TEXT.__unwind_info` | `0x8808` | `0x8430` | **`-0x3d8`** |
+| `__TEXT.__const` | `0x19e80` | `0x19ad0` | **`-0x3b0`** |
+| `__TEXT.__constg_swiftt` | `0x55c4` | `0x534c` | **`-0x278`** |
+| `__TEXT.__oslogstring` | `0x57e` | `0x30e` | **`-0x270`** |
+| `__DATA.__bss` | `0x21710` | `0x21510` | **`-0x200`** |
+| `__DATA_DIRTY.__bss` | `0x5f10` | `0x6090` | **`+0x180`** |
+| `__TEXT.__swift5_fieldmd` | `0x5f98` | `0x5e40` | **`-0x158`** |
+| `__TEXT.__swift5_reflstr` | `0x4f75` | `0x4e65` | **`-0x110`** |
+| `__DATA.__data` | `0x4c78` | `0x4b88` | **`-0xf0`** |
+| `__AUTH_CONST.__objc_const` | `0xbe20` | `0xbd40` | **`-0xe0`** |
+| `__AUTH_CONST.__auth_got` | `0x2db8` | `0x2d20` | **`-0x98`** |
+| `__TEXT.__swift_as_cont` | `0x1b0` | `0x154` | **`-0x5c`** |
+| `__TEXT.__swift_as_ret` | `0x11c` | `0xf0` | **`-0x2c`** |
+| `__DATA_CONST.__const` | `0xb48` | `0xb20` | **`-0x28`** |
+| `__TEXT.__swift_as_entry` | `0x108` | `0xe0` | **`-0x28`** |
+| `__TEXT.__swift5_types` | `0x6b8` | `0x698` | **`-0x20`** |
+| `__DATA.__common` | `0x118` | `0x130` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x1f4` | `0x1e0` | **`-0x14`** |
+| `__TEXT.__objc_methlist` | `0x3c58` | `0x3c48` | **`-0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x320` | `0x318` | **`-0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x198` | `0x190` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x36f0` | `0x36f8` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x138` | `0x130` | **`-0x8`** |
+| `__TEXT.__swift5_proto` | `0x1490` | `0x148c` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x248a98
--  __TEXT.__objc_methlist: 0x3c58
--  __TEXT.__const: 0x19e80
-+  __TEXT.__text: 0x23b944
-+  __TEXT.__objc_methlist: 0x3c48
-+  __TEXT.__const: 0x19ad0
-   __TEXT.__cstring: 0x106a1
--  __TEXT.__constg_swiftt: 0x55c4
--  __TEXT.__swift5_typeref: 0x4bd1
--  __TEXT.__swift5_fieldmd: 0x5f98
--  __TEXT.__swift5_builtin: 0x1f4
--  __TEXT.__swift5_reflstr: 0x4f75
-+  __TEXT.__constg_swiftt: 0x534c
-+  __TEXT.__swift5_typeref: 0x4497
-+  __TEXT.__swift5_fieldmd: 0x5e40
-+  __TEXT.__swift5_builtin: 0x1e0
-+  __TEXT.__swift5_reflstr: 0x4e65
-   __TEXT.__swift5_assocty: 0x708
--  __TEXT.__swift5_capture: 0x1318
--  __TEXT.__swift5_proto: 0x1490
--  __TEXT.__swift5_types: 0x6b8
-+  __TEXT.__swift5_capture: 0xea0
-+  __TEXT.__swift5_proto: 0x148c
-+  __TEXT.__swift5_types: 0x698
-   __TEXT.__swift5_protos: 0xe0
--  __TEXT.__swift5_mpenum: 0x138
--  __TEXT.__oslogstring: 0x57e
--  __TEXT.__swift_as_entry: 0x108
--  __TEXT.__swift_as_ret: 0x11c
--  __TEXT.__swift_as_cont: 0x1b0
--  __TEXT.__unwind_info: 0x8808
--  __TEXT.__eh_frame: 0xf6b8
-+  __TEXT.__swift5_mpenum: 0x130
-+  __TEXT.__oslogstring: 0x30e
-+  __TEXT.__swift_as_entry: 0xe0
-+  __TEXT.__swift_as_ret: 0xf0
-+  __TEXT.__swift_as_cont: 0x154
-+  __TEXT.__unwind_info: 0x8430
-+  __TEXT.__eh_frame: 0xeac0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xb48
-+  __DATA_CONST.__const: 0xb20
-   __DATA_CONST.__objc_classlist: 0x2d0
--  __DATA_CONST.__objc_protolist: 0x320
-+  __DATA_CONST.__objc_protolist: 0x318
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x36f0
--  __DATA_CONST.__objc_protorefs: 0x198
-+  __DATA_CONST.__objc_selrefs: 0x36f8
-+  __DATA_CONST.__objc_protorefs: 0x190
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xc618
-+  __AUTH_CONST.__const: 0xb998
-   __AUTH_CONST.__cfstring: 0x20
--  __AUTH_CONST.__objc_const: 0xbe20
--  __AUTH_CONST.__auth_got: 0x2db8
-+  __AUTH_CONST.__objc_const: 0xbd40
-+  __AUTH_CONST.__auth_got: 0x2d20
-   __AUTH.__objc_data: 0x4a8
-   __AUTH.__data: 0xe58
--  __DATA.__data: 0x4c78
-+  __DATA.__data: 0x4b88
-   __DATA.__objc_stublist: 0x8
--  __DATA.__bss: 0x21710
--  __DATA.__common: 0x118
-+  __DATA.__bss: 0x21510
-+  __DATA.__common: 0x130
-   __DATA_DIRTY.__objc_data: 0xa78
--  __DATA_DIRTY.__data: 0xa4a8
--  __DATA_DIRTY.__bss: 0x5f10
-+  __DATA_DIRTY.__data: 0xa028
-+  __DATA_DIRTY.__bss: 0x6090
-   __DATA_DIRTY.__common: 0x140
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+-5920.0.0.0.0
++5923.0.0.0.0
 
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/Frameworks/_LocationEssentials.framework/_LocationEssentials
-   - /System/Library/PrivateFrameworks/AppAnalytics.framework/AppAnalytics
 +  - /System/Library/PrivateFrameworks/AppUserEvents.framework/AppUserEvents
-   - /System/Library/PrivateFrameworks/ComputationalGraph.framework/ComputationalGraph
-   - /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf
-   - /System/Library/PrivateFrameworks/NewsAds.framework/NewsAds
 
-   - /System/Library/PrivateFrameworks/NewsFoundation.framework/NewsFoundation
-   - /System/Library/PrivateFrameworks/NewsServicesInternal.framework/NewsServicesInternal
-   - /System/Library/PrivateFrameworks/NewsTransport.framework/NewsTransport
 -  - /System/Library/PrivateFrameworks/NewsUserEvents.framework/NewsUserEvents
-   - /System/Library/PrivateFrameworks/TeaDB.framework/TeaDB
-   - /System/Library/PrivateFrameworks/TeaFoundation.framework/TeaFoundation
-   - /System/Library/PrivateFrameworks/TeaSettings.framework/TeaSettings
-   - /System/Library/PrivateFrameworks/TeaUI.framework/TeaUI
-   - /System/Library/PrivateFrameworks/XavierNews.framework/XavierNews
-+  - /System/Library/PrivateFrameworks/_AppUserEvents_AppAnalytics.framework/_AppUserEvents_AppAnalytics
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/PrivateFrameworks/_AppUserEvents_AppAnalytics.framework/_AppUserEvents_AppAnalytics
+
 -  Functions: 11735
--  Symbols:   4404
--  CStrings:  1145
+-  Symbols:   2772
+-  CStrings:  1144
 +  Functions: 11417
-+  Symbols:   4185
-+  CStrings:  1137
- 
-Sections:
-~ __TEXT.__cstring : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__objc_stublist : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   2682
++  CStrings:  1136
 Symbols:
 + _associated conformance 19NewsPersonalization010Com_Apple_a1_B14_RecipeSessionV13AppUserEvents0h5EventF0AA0J0AdEP_AD0hJ0
 + _associated conformance 19NewsPersonalization010Com_Apple_a1_B8_SessionV13AppUserEvents0g5EventE0AA0I0AdEP_AD0gI0
@@ -138,7 +68,6 @@ Symbols:
 + _get_witness_table 19NewsPersonalization010Com_Apple_a1_B13_SessionEventVRszlqd0__STHD2_13AppUserEvents0hF7HistoryC8sessions2as5order5limitQrqd__m_AD0hF5OrderOAD0hF5LimitOtK0F0Qyd__RszAD0hfE0Rd__lFQOyAC_AA0c1_d1_a1_b1_E0VQo_HO
 + _get_witness_table 19NewsPersonalization010Com_Apple_a1_B19_RecipeSessionEventVRszlqd0__STHD2_13AppUserEvents0iG7HistoryC8sessions2as5order5limitQrqd__m_AD0iG5OrderOAD0iG5LimitOtK0G0Qyd__RszAD0igF0Rd__lFQOyAC_AA0c1_d1_a1_b1_eF0VQo_HO
 + _get_witness_table 19NewsPersonalization30BridgedUserEventFastSerializerRz03AppD6Events0dE7StorageR_7SessionQy_AERtzr0_lxAaBHD1_AgC0deK0HA2_
-+ _objc_msgSend$baseFileURL
 + _symbolic $s13AppUserEvents0B12EventSessionP
 + _symbolic $s13AppUserEvents0B12EventStorageP
 + _symbolic 5Event_____Qy_ 13AppUserEvents0B12EventStorageP
@@ -285,5 +214,4 @@ CStrings:
 - "Failed to submit translated event to write stream, error=%{public}@, originalEvent=%{public}s"
 - "Failed to submit translated event to write stream, error=%{public}@, translatedEvent=%{public}s"
 - "Failed to translate analytics event to user event, error=%{public}@, event=%{public}s"
-
 ```

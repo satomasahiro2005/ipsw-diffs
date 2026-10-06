@@ -2,40 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/PolarisRuntime.framework/PolarisRuntime`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__auth_got` | `0x5e8` | `0x5f0` | **`+0x8`** |
+| `__TEXT.__eh_frame` | `0x9c0` | `0x9c8` | **`+0x8`** |
+| `__TEXT.__text` | `0x25888` | `0x25884` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
- 256.0.5.0.0
--  __TEXT.__text: 0x25888
-+  __TEXT.__text: 0x25884
-   __TEXT.__const: 0x3f4c
-   __TEXT.__constg_swiftt: 0x14c4
-   __TEXT.__swift5_typeref: 0xf2c
-
-   __TEXT.__swift5_assocty: 0x30
-   __TEXT.__oslogstring: 0x6
-   __TEXT.__unwind_info: 0xc20
--  __TEXT.__eh_frame: 0x9c0
-+  __TEXT.__eh_frame: 0x9c8
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x32c0
-   __AUTH_CONST.__objc_const: 0xe98
--  __AUTH_CONST.__auth_got: 0x5e8
-+  __AUTH_CONST.__auth_got: 0x5f0
-   __AUTH.__data: 0xa0
-   __DATA.__data: 0x898
-   __DATA_DIRTY.__data: 0xc98
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   Functions: 1477
 -  Symbols:   3994
 +  Symbols:   3995
-   CStrings:  68
- 
 Symbols:
 + _swift_release_x26
 Functions:

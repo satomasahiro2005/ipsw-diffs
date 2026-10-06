@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CallsAppUI.framework/CallsAppUI`
 
-```diff
+### Section Size Changes
 
- 153.100.1.2.29
--  __TEXT.__text: 0xfce58
-+  __TEXT.__text: 0xfce6c
-   __TEXT.__objc_methlist: 0x1360
-   __TEXT.__const: 0x8c14
-   __TEXT.__constg_swiftt: 0x412c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfce58` | `0xfce6c` | **`+0x14`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_21562d514 -> sub_215e0b514 : 336 -> 344
 ~ sub_215634038 -> sub_215e12040 : 3744 -> 3736

@@ -2,18 +2,19 @@
 
 > `/usr/lib/libBacktraceRecording.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5998` | `0x599c` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 64578.57.1.0.0
--  __TEXT.__text: 0x5998
-+  __TEXT.__text: 0x599c
-   __TEXT.__auth_stubs: 0x3a0
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__const: 0x70
+```text
 Functions:
 ~ _get_and_print_backtrace : 280 -> 284
 ```

@@ -2,90 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/CryptexServer.framework/CryptexServer`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x57b00` | `0x571e8` | **`-0x918`** |
+| `__TEXT.__eh_frame` | `0x3e48` | `0x3d20` | **`-0x128`** |
+| `__TEXT.__unwind_info` | `0x1508` | `0x14a8` | **`-0x60`** |
+| `__TEXT.__swift_as_cont` | `0x318` | `0x2f4` | **`-0x24`** |
+| `__TEXT.__oslogstring` | `0x15ea` | `0x15ca` | **`-0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x1148` | `0x1138` | **`-0x10`** |
+| `__DATA.__data` | `0x678` | `0x688` | **`+0x10`** |
+| `__TEXT.__const` | `0x11a0` | `0x1190` | **`-0x10`** |
+| `__TEXT.__swift5_capture` | `0x1fc` | `0x1ec` | **`-0x10`** |
+| `__TEXT.__constg_swiftt` | `0x850` | `0x848` | **`-0x8`** |
+| `__TEXT.__swift5_typeref` | `0x7be` | `0x7c6` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0xc0` | `0xb8` | **`-0x8`** |
+| `__TEXT.__swift_as_ret` | `0x74` | `0x70` | **`-0x4`** |
+
+### Same-size Content Changes
+
 - `__TEXT.__cstring`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_builtin`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+
+### Other Changes
 
 ```diff
 
 -761.0.1.0.0
--  __TEXT.__text: 0x57b00
 +761.0.15.0.0
-+  __TEXT.__text: 0x571e8
-   __TEXT.__objc_methlist: 0x104
--  __TEXT.__const: 0x11a0
-+  __TEXT.__const: 0x1190
-   __TEXT.__cstring: 0xca5
--  __TEXT.__swift5_typeref: 0x7be
--  __TEXT.__oslogstring: 0x15ea
-+  __TEXT.__swift5_typeref: 0x7c6
-+  __TEXT.__oslogstring: 0x15ca
-   __TEXT.__swift5_reflstr: 0x284
-   __TEXT.__swift5_assocty: 0xd8
--  __TEXT.__constg_swiftt: 0x850
-+  __TEXT.__constg_swiftt: 0x848
-   __TEXT.__swift5_fieldmd: 0x49c
--  __TEXT.__swift5_capture: 0x1fc
-+  __TEXT.__swift5_capture: 0x1ec
-   __TEXT.__swift5_proto: 0x6c
-   __TEXT.__swift5_types: 0x64
--  __TEXT.__swift_as_entry: 0xc0
--  __TEXT.__swift_as_ret: 0x74
--  __TEXT.__swift_as_cont: 0x318
-+  __TEXT.__swift_as_entry: 0xb8
-+  __TEXT.__swift_as_ret: 0x70
-+  __TEXT.__swift_as_cont: 0x2f4
-   __TEXT.__swift5_protos: 0xc
-   __TEXT.__swift5_builtin: 0x50
--  __TEXT.__unwind_info: 0x1508
--  __TEXT.__eh_frame: 0x3e48
-+  __TEXT.__unwind_info: 0x14a8
-+  __TEXT.__eh_frame: 0x3d20
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0xb50
-   __AUTH_CONST.__objc_const: 0x7a0
--  __AUTH_CONST.__auth_got: 0x1148
-+  __AUTH_CONST.__auth_got: 0x1138
-   __AUTH.__objc_data: 0x50
-   __AUTH.__data: 0x5e8
--  __DATA.__data: 0x678
-+  __DATA.__data: 0x688
-   __DATA.__bss: 0xc30
-   __DATA.__common: 0x20
-   __DATA_DIRTY.__objc_data: 0xf0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 1059
--  Symbols:   2950
+-  Symbols:   2936
 -  CStrings:  237
 +  Functions: 1040
-+  Symbols:   2928
++  Symbols:   2914
 +  CStrings:  236
- 
 Symbols:
 + _$s10CryptexKit19PkgInvQueryResponseV5indexAcA0C5IndexV_tcfC
 + _$s10CryptexKit8PkgIndexV12makeIteratorAC0F0VyF

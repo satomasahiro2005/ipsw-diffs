@@ -2,74 +2,38 @@
 
 > `/System/Library/Frameworks/EnergyKit.framework/EnergyKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc8ab4` | `0xc8ee0` | **`+0x42c`** |
+| `__AUTH.__objc_data` | `0xcf0` | `0xc88` | **`-0x68`** |
+| `__DATA_DIRTY.__objc_data` | `0x190` | `0x1f8` | **`+0x68`** |
+| `__TEXT.__eh_frame` | `0x70cc` | `0x711c` | **`+0x50`** |
+| `__TEXT.__constg_swiftt` | `0x29a0` | `0x29e0` | **`+0x40`** |
+| `__DATA_DIRTY.__data` | `0x710` | `0x740` | **`+0x30`** |
+| `__AUTH.__data` | `0x2200` | `0x21e0` | **`-0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xd58` | `0xd78` | **`+0x20`** |
+| `__DATA.__data` | `0x2680` | `0x26a0` | **`+0x20`** |
+| `__TEXT.__const` | `0xc068` | `0xc088` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x1974` | `0x1984` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x38d8` | `0x38e8` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x2d90` | `0x2d9c` | **`+0xc`** |
+| `__TEXT.__swift5_typeref` | `0x2b1c` | `0x2b20` | **`+0x4`** |
+| `__TEXT.__swift_as_cont` | `0x5d0` | `0x5cc` | **`-0x4`** |
+| `__TEXT.__swift_as_entry` | `0x248` | `0x24c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -506.0.0.0.0
--  __TEXT.__text: 0xbd9e8
 +510.0.0.0.0
-+  __TEXT.__text: 0xbddcc
-   __TEXT.__objc_methlist: 0x7b0
--  __TEXT.__const: 0xc068
-+  __TEXT.__const: 0xc088
-   __TEXT.__cstring: 0x1629
--  __TEXT.__swift5_typeref: 0x2b1c
--  __TEXT.__swift5_fieldmd: 0x2d90
--  __TEXT.__constg_swiftt: 0x29a0
-+  __TEXT.__swift5_typeref: 0x2b20
-+  __TEXT.__swift5_fieldmd: 0x2d9c
-+  __TEXT.__constg_swiftt: 0x29e0
-   __TEXT.__swift5_protos: 0x14
--  __TEXT.__swift5_reflstr: 0x1974
-+  __TEXT.__swift5_reflstr: 0x1984
-   __TEXT.__swift5_proto: 0xa5c
-   __TEXT.__swift5_types: 0x398
--  __TEXT.__swift_as_entry: 0x248
--  __TEXT.__swift_as_cont: 0x5d0
-+  __TEXT.__swift_as_entry: 0x24c
-+  __TEXT.__swift_as_cont: 0x5cc
-   __TEXT.__swift5_assocty: 0x330
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_mpenum: 0x10
-   __TEXT.__swift_as_ret: 0x2e0
-   __TEXT.__swift5_capture: 0x13f4
-   __TEXT.__oslogstring: 0xcfc
--  __TEXT.__unwind_info: 0x45c8
--  __TEXT.__eh_frame: 0x70ec
-+  __TEXT.__unwind_info: 0x45e0
-+  __TEXT.__eh_frame: 0x713c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x7348
-   __AUTH_CONST.__objc_const: 0x3188
--  __AUTH_CONST.__auth_got: 0xd58
--  __AUTH.__objc_data: 0xcf0
--  __AUTH.__data: 0x2200
--  __DATA.__data: 0x2680
-+  __AUTH_CONST.__auth_got: 0xd78
-+  __AUTH.__objc_data: 0xc88
-+  __AUTH.__data: 0x21e0
-+  __DATA.__data: 0x26a0
-   __DATA.__common: 0xb0
--  __DATA_DIRTY.__objc_data: 0x190
--  __DATA_DIRTY.__data: 0x710
-+  __DATA_DIRTY.__objc_data: 0x1f8
-+  __DATA_DIRTY.__data: 0x740
-   __DATA_DIRTY.__bss: 0x580
-   __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4920
 -  Symbols:   12315
 +  Functions: 4921
 +  Symbols:   12333
-   CStrings:  183
- 
 Symbols:
 + _$s10Foundation4DateV2geoiySbAC_ACtFZ
 + _$s10Foundation4DateV2leoiySbAC_ACtFZ

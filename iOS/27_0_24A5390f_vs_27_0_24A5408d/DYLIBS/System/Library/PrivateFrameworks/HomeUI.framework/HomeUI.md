@@ -2,141 +2,71 @@
 
 > `/System/Library/PrivateFrameworks/HomeUI.framework/HomeUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7f24dc` | `0x80a518` | **`+0x1803c`** |
+| `__TEXT.__eh_frame` | `0x134ac` | `0x14670` | **`+0x11c4`** |
+| `__AUTH_CONST.__const` | `0x1a9d8` | `0x1b3a8` | **`+0x9d0`** |
+| `__TEXT.__oslogstring` | `0x2ec17` | `0x2f4c7` | **`+0x8b0`** |
+| `__TEXT.__const` | `0x1b6f4` | `0x1bea4` | **`+0x7b0`** |
+| `__TEXT.__swift5_typeref` | `0x1b652` | `0x1bd46` | **`+0x6f4`** |
+| `__TEXT.__unwind_info` | `0x1bc88` | `0x1c1f8` | **`+0x570`** |
+| `__TEXT.__constg_swiftt` | `0xd9c8` | `0xded8` | **`+0x510`** |
+| `__DATA.__data` | `0x150d0` | `0x15590` | **`+0x4c0`** |
+| `__AUTH.__data` | `0x5e38` | `0x59b8` | **`-0x480`** |
+| `__TEXT.__swift5_capture` | `0x4938` | `0x4bbc` | **`+0x284`** |
+| `__TEXT.__cstring` | `0x42a95` | `0x42d03` | **`+0x26e`** |
+| `__TEXT.__swift5_reflstr` | `0x7947` | `0x7b37` | **`+0x1f0`** |
+| `__TEXT.__swift5_fieldmd` | `0x73c4` | `0x7574` | **`+0x1b0`** |
+| `__DATA.__bss` | `0x13708` | `0x13828` | **`+0x120`** |
+| `__AUTH_CONST.__objc_const` | `0x91078` | `0x91180` | **`+0x108`** |
+| `__AUTH.__objc_data` | `0x1c9a0` | `0x1c8c0` | **`-0xe0`** |
+| `__TEXT.__swift_as_cont` | `0xd74` | `0xe40` | **`+0xcc`** |
+| `__AUTH_CONST.__auth_got` | `0x4f78` | `0x5030` | **`+0xb8`** |
+| `__TEXT.__objc_methlist` | `0x505a4` | `0x50644` | **`+0xa0`** |
+| `__TEXT.__gcc_except_tab` | `0x8b98` | `0x8c10` | **`+0x78`** |
+| `__TEXT.__swift_as_ret` | `0x624` | `0x688` | **`+0x64`** |
+| `__DATA_CONST.__got` | `0x7048` | `0x70a8` | **`+0x60`** |
+| `__TEXT.__swift_as_entry` | `0x5f8` | `0x640` | **`+0x48`** |
+| `__DATA_CONST.__const` | `0xf530` | `0xf568` | **`+0x38`** |
+| `__DATA_CONST.__objc_selrefs` | `0x22390` | `0x223b0` | **`+0x20`** |
+| `__TEXT.__swift5_assocty` | `0x13b8` | `0x13d8` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x1bf0` | `0x1bd8` | **`-0x18`** |
+| `__DATA.__common` | `0x3c0` | `0x3a8` | **`-0x18`** |
+| `__TEXT.__swift5_types` | `0x870` | `0x888` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x2940` | `0x2930` | **`-0x10`** |
+| `__DATA_DIRTY.__data` | `0x1a08` | `0x1a18` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0xa94` | `0xaa4` | **`+0x10`** |
+| `__DATA.__objc_stublist` | `0x80` | `0x78` | **`-0x8`** |
+| `__DATA_CONST.__objc_arraydata` | `0x9b0` | `0x9a8` | **`-0x8`** |
+| `__DATA_CONST.__objc_catlist2` | `0x18` | `0x10` | **`-0x8`** |
+| `__TEXT.__swift5_protos` | `0x84` | `0x8c` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x194c` | `0x1950` | **`+0x4`** |
+| `__DATA_DIRTY.__objc_ivar` | `0x3b28` | `0x3b2c` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__ustring`
+
+### Other Changes
 
 ```diff
 
 -1238.0.0.0.0
--  __TEXT.__text: 0x7f24dc
--  __TEXT.__objc_methlist: 0x505a4
--  __TEXT.__const: 0x1b6f4
 +1241.1.7.1.2
-+  __TEXT.__text: 0x80a518
-+  __TEXT.__objc_methlist: 0x50644
-+  __TEXT.__const: 0x1bea4
-   __TEXT.__dlopen_cstrs: 0x344
--  __TEXT.__constg_swiftt: 0xd9c8
--  __TEXT.__swift5_typeref: 0x1b652
--  __TEXT.__swift5_reflstr: 0x7947
--  __TEXT.__swift5_fieldmd: 0x73c4
-+  __TEXT.__constg_swiftt: 0xded8
-+  __TEXT.__swift5_typeref: 0x1bd46
-+  __TEXT.__swift5_reflstr: 0x7b37
-+  __TEXT.__swift5_fieldmd: 0x7574
-   __TEXT.__swift5_builtin: 0x618
--  __TEXT.__swift5_assocty: 0x13b8
--  __TEXT.__swift5_proto: 0xa94
--  __TEXT.__swift5_types: 0x870
--  __TEXT.__swift5_capture: 0x4938
--  __TEXT.__oslogstring: 0x2ec17
--  __TEXT.__cstring: 0x42a95
--  __TEXT.__swift5_protos: 0x84
--  __TEXT.__swift_as_entry: 0x5f8
--  __TEXT.__swift_as_cont: 0xd74
--  __TEXT.__swift_as_ret: 0x624
-+  __TEXT.__swift5_assocty: 0x13d8
-+  __TEXT.__cstring: 0x42d03
-+  __TEXT.__swift5_proto: 0xaa4
-+  __TEXT.__swift5_types: 0x888
-+  __TEXT.__swift5_capture: 0x4bbc
-+  __TEXT.__oslogstring: 0x2f4c7
-+  __TEXT.__swift5_protos: 0x8c
-+  __TEXT.__swift_as_entry: 0x640
-+  __TEXT.__swift_as_ret: 0x688
-+  __TEXT.__swift_as_cont: 0xe40
-   __TEXT.__swift5_mpenum: 0x90
--  __TEXT.__gcc_except_tab: 0x8b98
-+  __TEXT.__gcc_except_tab: 0x8c10
-   __TEXT.__ustring: 0x7e
--  __TEXT.__unwind_info: 0x1bc88
--  __TEXT.__eh_frame: 0x134ac
-+  __TEXT.__unwind_info: 0x1c1f8
-+  __TEXT.__eh_frame: 0x14670
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xf530
--  __DATA_CONST.__objc_classlist: 0x2940
-+  __DATA_CONST.__const: 0xf568
-+  __DATA_CONST.__objc_classlist: 0x2930
-   __DATA_CONST.__objc_catlist: 0x208
--  __DATA_CONST.__objc_catlist2: 0x18
-+  __DATA_CONST.__objc_catlist2: 0x10
-   __DATA_CONST.__objc_protolist: 0x1260
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x22390
-+  __DATA_CONST.__objc_selrefs: 0x223b0
-   __DATA_CONST.__objc_protorefs: 0x6c8
-   __DATA_CONST.__objc_superrefs: 0x1f00
--  __DATA_CONST.__objc_arraydata: 0x9b0
--  __DATA_CONST.__got: 0x7048
--  __AUTH_CONST.__const: 0x1a9d8
-+  __DATA_CONST.__objc_arraydata: 0x9a8
-+  __DATA_CONST.__got: 0x70a8
-+  __AUTH_CONST.__const: 0x1b3a8
-   __AUTH_CONST.__cfstring: 0x22a40
--  __AUTH_CONST.__objc_const: 0x91078
--  __AUTH_CONST.__objc_intobj: 0x1bf0
-+  __AUTH_CONST.__objc_const: 0x91180
-+  __AUTH_CONST.__objc_intobj: 0x1bd8
-   __AUTH_CONST.__objc_arrayobj: 0x540
--  __AUTH_CONST.__objc_doubleobj: 0x540
-   __AUTH_CONST.__objc_dictobj: 0x578
-+  __AUTH_CONST.__objc_doubleobj: 0x540
-   __AUTH_CONST.__objc_floatobj: 0x40
--  __AUTH_CONST.__auth_got: 0x4f78
--  __AUTH.__objc_data: 0x1c9a0
--  __AUTH.__data: 0x5e38
--  __DATA.__objc_ivar: 0x194c
--  __DATA.__data: 0x150d0
--  __DATA.__objc_stublist: 0x80
--  __DATA.__bss: 0x13708
--  __DATA.__common: 0x3c0
--  __DATA_DIRTY.__objc_ivar: 0x3b28
-+  __AUTH_CONST.__auth_got: 0x5030
-+  __AUTH.__objc_data: 0x1c8c0
-+  __AUTH.__data: 0x59b8
-+  __DATA.__objc_ivar: 0x1950
-+  __DATA.__data: 0x15590
-+  __DATA.__objc_stublist: 0x78
-+  __DATA.__bss: 0x13828
-+  __DATA.__common: 0x3a8
-+  __DATA_DIRTY.__objc_ivar: 0x3b2c
-   __DATA_DIRTY.__objc_data: 0x82c0
--  __DATA_DIRTY.__data: 0x1a08
--  __DATA_DIRTY.__bss: 0x1650
-+  __DATA_DIRTY.__data: 0x1a18
-   __DATA_DIRTY.__common: 0xb8
-+  __DATA_DIRTY.__bss: 0x1650
-   - /System/Library/Frameworks/ARKit.framework/ARKit
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/CoreText.framework/CoreText
 +  - /System/Library/Frameworks/CoreVideo.framework/CoreVideo
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/HomeKit.framework/HomeKit
-+  - /System/Library/Frameworks/ImageIO.framework/ImageIO
-   - /System/Library/Frameworks/Intents.framework/Intents
-   - /System/Library/Frameworks/LinkPresentation.framework/LinkPresentation
-   - /System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/Frameworks/ImageIO.framework/ImageIO
+
 -  Functions: 43782
--  Symbols:   61746
+-  Symbols:   47200
 -  CStrings:  9660
 +  Functions: 44095
-+  Symbols:   61799
++  Symbols:   47250
 +  CStrings:  9701
- 
 Symbols:
 + +[HUAppleIntelligenceDurationItemProvider availableDurationOptions]
 + -[HUCameraActivityZoneView _updateHeightForAspectRatio:]
@@ -187,14 +117,6 @@ Symbols:
 + _get_witness_table 7SwiftUI14GeometryReaderVyAA19_ConditionalContentVyAA4ViewPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA6ZStackVyAA05TupleF0VyAA5ColorV_7HomeUI210CameraCellV7prefers_7factors8location8priorityQr0O9DataModel0Q0O4ModeO_AQ21MultiFactorVisibilityV7FactorsVAQ0qG9RegistrarC8LocationOSgA6_8PriorityOtFQOy_Qo_QPGG_SdSgQo_APGGAaFHPyHC
 + _keypath_get.177Tm
 + _keypath_set.178Tm
-+ _objc_msgSend$_updateHeightForAspectRatio:
-+ _objc_msgSend$availableDurationOptions
-+ _objc_msgSend$makeHostingControllerWithCameraProfileID:onAspectRatioResolved:
-+ _objc_msgSend$presentedWhileAppBackgrounded
-+ _objc_msgSend$previewHeightConstraint
-+ _objc_msgSend$prewarmStream
-+ _objc_msgSend$setPresentedWhileAppBackgrounded:
-+ _objc_msgSend$supportsOnDeviceCaptionPlayback
 + _swift_asyncLet_begin
 + _swift_asyncLet_finish
 + _swift_asyncLet_get
@@ -343,11 +265,6 @@ Symbols:
 - _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA4ListVys5NeverOAA05TupleD0VyAA7SectionVyAA4TextVAA7ForEachVySay13HomeDataModel19StaticCameraProfileVG10Foundation4UUIDVACyACyAA6ToggleVyAA6HStackVyAIy0lB017SnapshotThumbnail33_6A020151FA6C63C86827D1A374889D51LLV_AA6VStackVyAIyAM_AMSgQPGGQPGGGAA32_EnvironmentKeyTransformModifierVySbGGAA31AccessibilityAttachmentModifierVGGAA9EmptyViewVG_AKyA20_ACyACyAA6ButtonVyAZyAIyAM_AA6SpacerVA5_ACyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA24_ForegroundStyleModifierVyAA22HierarchicalShapeStyleVGGQPGGGA29_yAA5ColorVSgGGA16_GA20_GQPGGA16_GAA25_AppearanceActionModifierVGA55_GAA4ViewHPA56_AAA58_HPA53_AAA58_HPA52_AAA58_HPyHC_A16_AA12ViewModifierHPyHCHC_A55_AAA59_HPyHCHC_A55_AAA59_HPyHCHC
 - _keypath_get.198Tm
 - _keypath_set.199Tm
-- _objc_msgSend$closeButtonTrailingConstraint
-- _objc_msgSend$closeButtonVisualEffectView
-- _objc_msgSend$hu_closeButtonImage
-- _objc_msgSend$makeHostingControllerWithCameraProfileID:
-- _objc_msgSend$stringFromInteger:
 - _symbolic 7Service_____Qz 13HomeDataModel17AccessoryProtocolP
 - _symbolic _____3key_ScTyyt_____G5valuet 10Foundation4UUIDV s5NeverO
 - _symbolic _____3key_So7UIImageC5valuet 10Foundation4UUIDV

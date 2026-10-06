@@ -2,104 +2,68 @@
 
 > `/usr/libexec/locationd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ad5990` | `0x1ab9b38` | **`-0x1be58`** |
+| `__TEXT.__cstring` | `0x20a616` | `0x205e79` | **`-0x479d`** |
+| `__TEXT.__oslogstring` | `0x283b60` | `0x2853c0` | **`+0x1860`** |
+| `__TEXT.__gcc_except_tab` | `0xd724c` | `0xd7818` | **`+0x5cc`** |
+| `__TEXT.__objc_methname` | `0x5b13f` | `0x5b56f` | **`+0x430`** |
+| `__DATA_CONST.__const` | `0xbf3c0` | `0xbf620` | **`+0x260`** |
+| `__TEXT.__unwind_info` | `0x75f50` | `0x75d08` | **`-0x248`** |
+| `__DATA_CONST.__got` | `0x2368` | `0x2580` | **`+0x218`** |
+| `__TEXT.__objc_stubs` | `0x3d360` | `0x3d4e0` | **`+0x180`** |
+| `__TEXT.__const` | `0x168370` | `0x168490` | **`+0x120`** |
+| `__DATA.__objc_const` | `0x4e520` | `0x4e638` | **`+0x118`** |
+| `__DATA_CONST.__cfstring` | `0x41f20` | `0x41fe0` | **`+0xc0`** |
+| `__TEXT.__objc_methtype` | `0x389b8` | `0x38a78` | **`+0xc0`** |
+| `__TEXT.__objc_methlist` | `0x2dc88` | `0x2dd40` | **`+0xb8`** |
+| `__DATA.__objc_selrefs` | `0x13638` | `0x136b8` | **`+0x80`** |
+| `__DATA.__common` | `0x21ff0` | `0x22028` | **`+0x38`** |
+| `__DATA.__bss` | `0x12778` | `0x127a8` | **`+0x30`** |
+| `__DATA.__objc_ivar` | `0x3ac4` | `0x3adc` | **`+0x18`** |
+| `__DATA.__data` | `0x62e98` | `0x62ea8` | **`+0x10`** |
+| `__TEXT.__auth_stubs` | `0x6470` | `0x6460` | **`-0x10`** |
+| `__DATA_CONST.__auth_got` | `0x3258` | `0x3250` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__init_offsets`
+- `__TEXT.__objc_classname`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1ad5990
--  __TEXT.__auth_stubs: 0x6470
--  __TEXT.__objc_stubs: 0x3d360
-+  __TEXT.__text: 0x1ab9b38
-+  __TEXT.__auth_stubs: 0x6460
-+  __TEXT.__objc_stubs: 0x3d4e0
-   __TEXT.__init_offsets: 0xbe0
--  __TEXT.__objc_methlist: 0x2dc88
--  __TEXT.__const: 0x168370
--  __TEXT.__gcc_except_tab: 0xd724c
--  __TEXT.__oslogstring: 0x283b60
--  __TEXT.__cstring: 0x20a616
--  __TEXT.__objc_methname: 0x5b13f
-+  __TEXT.__objc_methlist: 0x2dd40
-+  __TEXT.__const: 0x168490
-+  __TEXT.__gcc_except_tab: 0xd7818
-+  __TEXT.__oslogstring: 0x2853c0
-+  __TEXT.__cstring: 0x205e79
-+  __TEXT.__objc_methname: 0x5b56f
-   __TEXT.__objc_classname: 0x7ff7
--  __TEXT.__objc_methtype: 0x389b8
-+  __TEXT.__objc_methtype: 0x38a78
-   __TEXT.__dlopen_cstrs: 0x4a
-   __TEXT.__ustring: 0xa5e
-   __TEXT.__constg_swiftt: 0x5e4
+-3169.4.0.0.0
++3176.0.0.0.0
 
-   __TEXT.__swift_as_cont: 0x18
-   __TEXT.__swift5_proto: 0x4c
-   __TEXT.__swift5_assocty: 0x30
--  __TEXT.__unwind_info: 0x75f50
-+  __TEXT.__unwind_info: 0x75d08
-   __TEXT.__eh_frame: 0xec8
--  __DATA_CONST.__const: 0xbf3c0
--  __DATA_CONST.__cfstring: 0x41f20
-+  __DATA_CONST.__const: 0xbf620
-+  __DATA_CONST.__cfstring: 0x41fe0
-   __DATA_CONST.__objc_classlist: 0x1488
-   __DATA_CONST.__objc_catlist: 0xc0
-   __DATA_CONST.__objc_protolist: 0xe48
-
-   __DATA_CONST.__objc_arrayobj: 0x978
-   __DATA_CONST.__objc_floatobj: 0x80
-   __DATA_CONST.__linkguard: 0x15
--  __DATA_CONST.__auth_got: 0x3258
--  __DATA_CONST.__got: 0x2368
-+  __DATA_CONST.__auth_got: 0x3250
-+  __DATA_CONST.__got: 0x2580
-   __DATA_CONST.__auth_ptr: 0x698
--  __DATA.__objc_const: 0x4e520
--  __DATA.__objc_selrefs: 0x13638
--  __DATA.__objc_ivar: 0x3ac4
-+  __DATA.__objc_const: 0x4e638
-+  __DATA.__objc_selrefs: 0x136b8
-+  __DATA.__objc_ivar: 0x3adc
-   __DATA.__objc_data: 0xd2f0
--  __DATA.__data: 0x62e98
--  __DATA.__common: 0x21ff0
--  __DATA.__bss: 0x12778
-+  __DATA.__data: 0x62ea8
-+  __DATA.__common: 0x22028
-+  __DATA.__bss: 0x127a8
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 112326
 -  Symbols:   2893
--  CStrings:  92857
+-  CStrings:  83504
 +  Functions: 112346
 +  Symbols:   2892
-+  CStrings:  92926
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__objc_classname : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_data : content changed
++  CStrings:  83566
 Symbols:
 + _IOHIDEventGetEventWithOptions
 - __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE2atEm
@@ -513,5 +477,4 @@ CStrings:
 - "{CLDaemonLocationPrivate=dddddfffBi{?=dd}diiB{?=ddBBidqddd}{?={?=iddddd{?=dd}dd}iQiiiidB}{?=dd}if{?=dd}ddiBddddddddBB{?=dd}diddddddB{shared_ptr<const CLDaemonLocationPrivate::AboveHorizonSatelliteVisibilityReport>=^{AboveHorizonSatelliteVisibilityReport}^{__shared_weak_count}}i{AltitudeInfo=dddi}CdddCCBii{?=I}{?=if}iiBffffd{?=dddffffff}}16@0:8"
 - "{CLTrackingAvoidanceMetrics=\"state\"{CLTaMetricState=\"uniqueIds\"{set<std::string, std::less<std::string>, std::allocator<std::string>>=\"__tree_\"{__tree<std::string, std::less<std::string>, std::allocator<std::string>>=\"__begin_node_\"^v\"\"{?=\"__end_node_\"{__tree_end_node<std::__tree_node_base<void *> *>=\"__left_\"^v}}\"\"{?=\"__size_\"Q}}}\"detectedIds\"{map<std::string, int, std::less<std::string>, std::allocator<std::pair<const std::string, int>>>=\"__tree_\"{__tree<std::__value_type<std::string, int>, std::__map_value_compare<std::string, std::pair<const std::string, int>, std::less<std::string>>, std::allocator<std::pair<const std::string, int>>>=\"__begin_node_\"^v\"\"{?=\"__end_node_\"{__tree_end_node<std::__tree_node_base<void *> *>=\"__left_\"^v}}\"\"{?=\"__size_\"Q}}}\"suspiciousVisits\"i\"suspiciousGeneral\"i\"suspiciousOther\"i\"timeNextSent\"d\"sendHour\"i\"unitTest\"B\"nextWeeklySubmissionTime\"d\"weeklyCountOfSuspiciousDevices\"I\"nextMonthlySubmissionTime\"d\"monthlyCountOfSuspiciousDevices\"I}\"signalEnvironment\"i\"lastLocation\"{CLDaemonLocation=\"suitability\"i\"coordinate\"{?=\"latitude\"d\"longitude\"d}\"horizontalAccuracy\"d\"altitude\"d\"verticalAccuracy\"d\"speed\"d\"speedAccuracy\"d\"course\"d\"courseAccuracy\"d\"timestamp\"d\"confidence\"i\"lifespan\"d\"type\"i\"rawCoordinate\"{?=\"latitude\"d\"longitude\"d}\"rawCourse\"d\"floor\"i\"integrity\"I\"referenceFrame\"i\"rawReferenceFrame\"i\"signalEnvironmentType\"i\"ellipsoidalAltitude\"d\"fromSimulationController\"B}\"lastLocationPrivate\"{CLDaemonLocationPrivate=\"odometer\"d\"deltaDistance\"d\"deltaDistanceAccuracy\"d\"timestampGps\"d\"machtime\"d\"horzUncSemiMaj\"f\"horzUncSemiMin\"f\"horzUncSemiMajAz\"f\"isFitnessMatch\"B\"matchQuality\"i\"matchCoordinate\"{?=\"latitude\"d\"longitude\"d}\"matchCourse\"d\"matchFormOfWay\"i\"matchRoadClass\"i\"matchShifted\"B\"mapMatcherData\"{?=\"rawUnmodifiedCourse\"d\"rawUnmodifiedCourseUnc\"d\"isStatic\"B\"isMounted\"B\"estimatedLane\"i\"estimatedLaneProbability\"d\"estimatedLaneFeatureID\"q\"flowlineSnapLat\"d\"flowlineSnapLon\"d\"flowlineSnapCourse\"d}\"trackRunData\"{?=\"lapInformation\"{?=\"lapCount\"i\"currentLapStartTime\"d\"currentLapDurationInSeconds\"d\"currentLapDistanceInMeters\"d\"previousLapDurationInSeconds\"d\"previousLapDistanceInMeters\"d\"previousLapPositionAtCompletionInDegrees\"{?=\"latitude\"d\"longitude\"d}\"currentTrackRunSessionDurationInSeconds\"d\"currentTrackRunSessionDistanceInMeters\"d}\"laneNumber\"i\"trackId\"Q\"estimatedLaneNumber\"i\"laneCount\"i\"estimatedLaneConfidence\"i\"trackProximity\"i\"distanceToTrackMeters\"d\"odometerHasBeenCorrected\"B}\"pressure\"{?=\"value\"d\"std\"d}\"undulationModel\"i\"undulation\"f\"specialCoordinate\"{?=\"latitude\"d\"longitude\"d}\"specialHorizontalAccuracy\"d\"machContinuousTime\"d\"originDevice\"i\"isMatcherPropagatedCoordinates\"B\"slope\"d\"maxAbsSlope\"d\"groundAltitude\"d\"groundAltitudeUncertainty\"d\"rawHorizontalAccuracy\"d\"preFusingAltitude\"d\"preFusingVerticalAccuracy\"d\"rawCourseAccuracy\"d\"isCoordinateFused\"B\"isCoordinateFusedWithVL\"B\"fusedCoordinate\"{?=\"latitude\"d\"longitude\"d}\"fusedHorizontalAccuracy\"d\"fusedReferenceFrame\"i\"fusedAltitude\"d\"fusedVerticalAccuracy\"d\"fusedCourse\"d\"fusedCourseAccuracy\"d\"smoothedGPSAltitude\"d\"smoothedGPSAltitudeUncertainty\"d\"isSimulatedOrSpoofed\"B\"satelliteVisibilityReport\"{shared_ptr<const CLDaemonLocationPrivate::AboveHorizonSatelliteVisibilityReport>=\"__ptr_\"^{AboveHorizonSatelliteVisibilityReport}\"__cntrl_\"^{__shared_weak_count}}\"gnssContent\"i\"rawAltitude\"{AltitudeInfo=\"altitude\"d\"verticalAccuracy\"d\"undulation\"d\"undulationModel\"i}\"estimatedPositionContextState\"C\"estimatedPositionContextStateProbabilityIndoor\"d\"estimatedPositionContextStateProbabilityOutdoor\"d\"estimatedWorstCaseError\"d\"wifiFixType\"C\"mapMatcherType\"C\"isRouteHintsTriggeredMapMatching\"B\"loiLocationSourceAccuracy\"i\"batchedLocationFixType\"i\"wifiZaxisData\"{?=\"numberOfZaxisSlamApsUsed\"I}\"demFlatnessMetricData\"{?=\"demNumContiguousFlatPoints\"i\"confidence\"f}\"accessoryLocationType\"i\"gnssEstimatorSource\"i\"isTrustedForTimeZone\"B\"attitude_ECEF2Device_Q1\"f\"attitude_ECEF2Device_Q2\"f\"attitude_ECEF2Device_Q3\"f\"attitude_ECEF2Device_Q4\"f\"deviceAttitudeApplicabilityTimeMctSec\"d\"wirelessClientInfo\"{?=\"latitudeDegrees\"d\"longitudeDegrees\"d\"mslAltitudeMeters\"d\"horizontalAccuracyMeters\"f\"verticalAccuracyMeters\"f\"speedMetersPerSecond\"f\"speedAccuracyMetersPerSecond\"f\"courseDegrees\"f\"courseAccuracyDegrees\"f}}}"
 - "{DaemonLocation={CLDaemonLocation=i{?=dd}ddddddddidi{?=dd}diIiiidB}{CLDaemonLocationPrivate=dddddfffBi{?=dd}diiB{?=ddBBidqddd}{?={?=iddddd{?=dd}dd}iQiiiidB}{?=dd}if{?=dd}ddiBddddddddBB{?=dd}diddddddB{shared_ptr<const CLDaemonLocationPrivate::AboveHorizonSatelliteVisibilityReport>=^{AboveHorizonSatelliteVisibilityReport}^{__shared_weak_count}}i{AltitudeInfo=dddi}CdddCCBii{?=I}{?=if}iiBffffd{?=dddffffff}}}8@?0"
-
 ```

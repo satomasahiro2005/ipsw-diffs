@@ -2,136 +2,62 @@
 
 > `/System/Library/PrivateFrameworks/RemindersUICore.framework/RemindersUICore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb7ac50` | `0xb7fda8` | **`+0x5158`** |
+| `__TEXT.__swift5_typeref` | `0x2858c` | `0x29030` | **`+0xaa4`** |
+| `__TEXT.__cstring` | `0x27ad0` | `0x27fa0` | **`+0x4d0`** |
+| `__TEXT.__const` | `0x40934` | `0x40de4` | **`+0x4b0`** |
+| `__AUTH.__data` | `0x172a0` | `0x17650` | **`+0x3b0`** |
+| `__DATA.__bss` | `0x27a90` | `0x27e10` | **`+0x380`** |
+| `__TEXT.__swift5_reflstr` | `0x19ded` | `0x1a06d` | **`+0x280`** |
+| `__TEXT.__oslogstring` | `0x18b77` | `0x18da7` | **`+0x230`** |
+| `__AUTH_CONST.__objc_const` | `0x2b230` | `0x2b408` | **`+0x1d8`** |
+| `__DATA.__data` | `0x10ef8` | `0x110a8` | **`+0x1b0`** |
+| `__TEXT.__swift5_fieldmd` | `0x1aeec` | `0x1b058` | **`+0x16c`** |
+| `__AUTH_CONST.__const` | `0x4d928` | `0x4da80` | **`+0x158`** |
+| `__AUTH.__objc_data` | `0xa690` | `0xa598` | **`-0xf8`** |
+| `__TEXT.__swift5_capture` | `0xd7e4` | `0xd888` | **`+0xa4`** |
+| `__TEXT.__unwind_info` | `0x1ca28` | `0x1cac0` | **`+0x98`** |
+| `__TEXT.__eh_frame` | `0x1585c` | `0x157e4` | **`-0x78`** |
+| `__AUTH_CONST.__auth_got` | `0x5238` | `0x5290` | **`+0x58`** |
+| `__DATA_CONST.__const` | `0x3070` | `0x3028` | **`-0x48`** |
+| `__TEXT.__constg_swiftt` | `0x220d4` | `0x2211c` | **`+0x48`** |
+| `__TEXT.__swift5_assocty` | `0x2680` | `0x26b0` | **`+0x30`** |
+| `__TEXT.__swift5_proto` | `0x232c` | `0x235c` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x3368` | `0x3388` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5da8` | `0x5dc8` | **`+0x20`** |
+| `__DATA_DIRTY.__data` | `0x13e38` | `0x13e28` | **`-0x10`** |
+| `__DATA_DIRTY.__objc_data` | `0x4e80` | `0x4e90` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x7a70` | `0x7a60` | **`-0x10`** |
+| `__TEXT.__swift5_types` | `0x1db8` | `0x1dc4` | **`+0xc`** |
+| `__DATA.__common` | `0x3d8` | `0x3e0` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0xac0` | `0xac8` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x598` | `0x590` | **`-0x8`** |
+| `__TEXT.__swift5_protos` | `0x8bc` | `0x8c0` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -4043.0.0.0.0
--  __TEXT.__text: 0xb7ac50
--  __TEXT.__objc_methlist: 0x7a70
--  __TEXT.__const: 0x40934
 +4046.11.0.0.0
-+  __TEXT.__text: 0xb7fda8
-+  __TEXT.__objc_methlist: 0x7a60
-+  __TEXT.__const: 0x40de4
-   __TEXT.__gcc_except_tab: 0x88
--  __TEXT.__cstring: 0x27ad0
--  __TEXT.__oslogstring: 0x18b77
-+  __TEXT.__cstring: 0x27fa0
-+  __TEXT.__oslogstring: 0x18da7
-   __TEXT.__ustring: 0x10
--  __TEXT.__constg_swiftt: 0x220d4
--  __TEXT.__swift5_typeref: 0x2858c
-+  __TEXT.__constg_swiftt: 0x2211c
-+  __TEXT.__swift5_typeref: 0x29030
-   __TEXT.__swift5_builtin: 0xb18
--  __TEXT.__swift5_reflstr: 0x19ded
--  __TEXT.__swift5_fieldmd: 0x1aeec
--  __TEXT.__swift5_assocty: 0x2680
--  __TEXT.__swift5_proto: 0x232c
--  __TEXT.__swift5_types: 0x1db8
--  __TEXT.__swift5_capture: 0xd7e4
-+  __TEXT.__swift5_reflstr: 0x1a06d
-+  __TEXT.__swift5_fieldmd: 0x1b058
-+  __TEXT.__swift5_assocty: 0x26b0
-+  __TEXT.__swift5_proto: 0x235c
-+  __TEXT.__swift5_types: 0x1dc4
-+  __TEXT.__swift5_capture: 0xd888
-   __TEXT.__swift5_mpenum: 0x388
--  __TEXT.__swift5_protos: 0x8bc
-+  __TEXT.__swift5_protos: 0x8c0
-   __TEXT.__swift_as_entry: 0x4e4
--  __TEXT.__swift_as_ret: 0x598
--  __TEXT.__swift_as_cont: 0xac0
--  __TEXT.__unwind_info: 0x1ca28
--  __TEXT.__eh_frame: 0x1585c
-+  __TEXT.__swift_as_ret: 0x590
-+  __TEXT.__swift_as_cont: 0xac8
-+  __TEXT.__unwind_info: 0x1cac0
-+  __TEXT.__eh_frame: 0x157e4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3070
-+  __DATA_CONST.__const: 0x3028
-   __DATA_CONST.__objc_classlist: 0x1230
-   __DATA_CONST.__objc_catlist: 0xe8
-   __DATA_CONST.__objc_protolist: 0x4a8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5da8
-+  __DATA_CONST.__objc_selrefs: 0x5dc8
-   __DATA_CONST.__objc_protorefs: 0x238
-   __DATA_CONST.__objc_superrefs: 0xd0
-   __DATA_CONST.__objc_arraydata: 0xb0
--  __DATA_CONST.__got: 0x3368
--  __AUTH_CONST.__const: 0x4d928
-+  __DATA_CONST.__got: 0x3388
-+  __AUTH_CONST.__const: 0x4da80
-   __AUTH_CONST.__cfstring: 0xaa0
--  __AUTH_CONST.__objc_const: 0x2b230
-+  __AUTH_CONST.__objc_const: 0x2b408
-   __AUTH_CONST.__objc_intobj: 0x1f8
-   __AUTH_CONST.__objc_arrayobj: 0xf0
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_floatobj: 0x10
--  __AUTH_CONST.__auth_got: 0x5238
--  __AUTH.__objc_data: 0xa690
--  __AUTH.__data: 0x172a0
-+  __AUTH_CONST.__auth_got: 0x5290
-+  __AUTH.__objc_data: 0xa598
-+  __AUTH.__data: 0x17650
-   __AUTH.__thread_vars: 0x18
-   __AUTH.__thread_bss: 0x8
-   __DATA.__objc_ivar: 0x1c4
--  __DATA.__data: 0x10ef8
-+  __DATA.__data: 0x110a8
-   __DATA.__objc_stublist: 0x1d8
--  __DATA.__bss: 0x27a90
--  __DATA.__common: 0x3d8
--  __DATA_DIRTY.__objc_data: 0x4e80
--  __DATA_DIRTY.__data: 0x13e38
-+  __DATA.__bss: 0x27e10
-+  __DATA.__common: 0x3e0
-+  __DATA_DIRTY.__objc_data: 0x4e90
-+  __DATA_DIRTY.__data: 0x13e28
-   __DATA_DIRTY.__bss: 0x7bc0
-   __DATA_DIRTY.__common: 0x318
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
 
-   - /System/Library/Frameworks/_AppIntents_SwiftUI.framework/_AppIntents_SwiftUI
-   - /System/Library/Frameworks/_AppIntents_UIKit.framework/_AppIntents_UIKit
-   - /System/Library/Frameworks/_LocationEssentials.framework/_LocationEssentials
 -  - /System/Library/PrivateFrameworks/AXCoreUtilities.framework/AXCoreUtilities
-   - /System/Library/PrivateFrameworks/AXRuntime.framework/AXRuntime
-   - /System/Library/PrivateFrameworks/AccessibilityUIUtilities.framework/AccessibilityUIUtilities
-   - /System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities
 
-   - /System/Library/PrivateFrameworks/ReminderKitInternal.framework/ReminderKitInternal
-   - /System/Library/PrivateFrameworks/UIAccessibility.framework/UIAccessibility
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
 +  - /System/Library/PrivateFrameworks/UnifiedMessagingKit.framework/UnifiedMessagingKit
 +  - /System/Library/PrivateFrameworks/_JetEngine_SwiftUI.framework/_JetEngine_SwiftUI
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
-+  - /usr/lib/swift/libswiftAppleArchive.dylib
-   - /usr/lib/swift/libswiftCallKit.dylib
-   - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /usr/lib/swift/libswiftAppleArchive.dylib
+
 -  Functions: 48626
--  Symbols:   15420
+-  Symbols:   13114
 -  CStrings:  4400
 +  Functions: 48695
-+  Symbols:   15450
++  Symbols:   13142
 +  CStrings:  4423
- 
 Symbols:
 + _OBJC_CLASS_$_NSLock
 + _OBJC_CLASS_$__TtC15RemindersUICore33TTRIQuickBarMarginAlignmentHelper
@@ -167,14 +93,6 @@ Symbols:
 + _associated conformance 15RemindersUICore30TTRTipGroceryAssetsDownloadingV6TipKit0G0AAs12Identifiable
 + _associated conformance 15RemindersUICore30TTRTipGroceryAssetsDownloadingVs12IdentifiableAA2IDsADP_SH
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA4ViewPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAeAEAfgH_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAeAEAfgH_Qrqd___Sbyqd___qd__tctSQRd__lFQOyACyACyAA6VStackVyAA05TupleD0VyACyACyACyAeAE7focusedyQrAA10FocusStateV7BindingVySb_GFQOy13CalendarUIKit24MagicComposePromptEditorVys5NeverOG_Qo_AA14_PaddingLayoutVGAA16_OverlayModifierVyACyACyACyACyACyACyACyACyACyACyAA5ImageVAA022_EnvironmentKeyWritingZ0VyAA4FontVSgGGAA016_ForegroundStyleZ0VyAA22HierarchicalShapeStyleVGGAA06_FrameX0VGAA13_OffsetEffectVGA_GAA023AccessibilityAttachmentZ0VGAA14_OpacityEffectVGAA12_ScaleEffectVGAA017_AllowsHitTestingZ0VGAA010_AnimationZ0VySbGGGGA2_yACyACyACyAeAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyAA6ButtonVyACyACyACyACyACyAA6HStackVyALyA4__AA4TextVQPGGA10_GA16_GA_GAA010_FlexFrameX0VGAA01_d5ShapeZ0VyAA9RectangleVGGG_AA16PlainButtonStyleVQo_A29_GA35_GA26_GGG_ACyACyACyACyAeAE0F10TapGesture5count7performQrSi_yyctFQOyACyACyACyAA6ZStackVyALyACyA48_yALyACyACyA50_AA010_FixedSizeX0VGA26_GSg_AeAEAfgH_Qrqd___Sbyqd___qd__tctSQRd__lFQOyACyACy15RemindersUICore09TTRIMagicS17PlatterTitleFieldVA_GA2_yACyA50_A35_GSgGG_SbQo_QPGGA57_G_ACyAeAEA43_yQrqd__AAA44_Rd__lFQOyA46_yACyA4_A16_GG_A67_Qo_A26_GSgQPGGA_GAA011_BackgroundZ0VyAA06_ShapeE0VyAA16RoundedRectangleVAA5ColorVGGGA60_yA109_GG_Qo_A29_GA35_GA26_GAA013_TraitWritingZ0VyAA18TransitionTraitKeyVGGSgQPGGA_GA113_G_SbQo__SbQo__SbQo_AA017_AppearanceActionZ0VGA136_GA26_GAaDHPA138_AaDHPA137_AaDHPqd0__AaDHD3_A134_HO_A136_AA0eZ0HPyHCHC_A136_AAA140_HPyHCHC_A26_AAA140_HPyHCHC
-+ _objc_msgSend$configurationWithWeight:
-+ _objc_msgSend$edgesInsettingLayoutMarginsFromSafeArea
-+ _objc_msgSend$isSaved
-+ _objc_msgSend$lock
-+ _objc_msgSend$requestPrewarmGroceryCategorizationModel
-+ _objc_msgSend$setEdgesInsettingLayoutMarginsFromSafeArea:
-+ _objc_msgSend$setGrammarCheckingType:
-+ _objc_msgSend$unlock
 + _symbolic $s15RemindersUICore31TTRSaveRequestTrackedChangeItemP
 + _symbolic ScCy_____Sg_____G 15RemindersUICore23TTRPrivacyAlertResponseO s5NeverO
 + _symbolic So16UIViewControllerCSg
@@ -250,12 +168,6 @@ Symbols:
 - ___swift_get_extra_inhabitant_index.14Tm
 - ___swift_store_extra_inhabitant_index.15Tm
 - _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA4ViewPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAeAEAfgH_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAeAEAfgH_Qrqd___Sbyqd___qd__tctSQRd__lFQOyACyACyAA6VStackVyAA05TupleD0VyACyACyAeAE7focusedyQrAA10FocusStateV7BindingVySb_GFQOy13CalendarUIKit24MagicComposePromptEditorVys5NeverOG_Qo_AA14_PaddingLayoutVGAA16_OverlayModifierVyACyACyACyACyACyACyACyACyACyAA5ImageVAA022_EnvironmentKeyWritingZ0VyAA4FontVSgGGAA016_ForegroundStyleZ0VyAA22HierarchicalShapeStyleVGGAA06_FrameX0VGA_GAA023AccessibilityAttachmentZ0VGAA14_OpacityEffectVGAA12_ScaleEffectVGAA017_AllowsHitTestingZ0VGAA010_AnimationZ0VySbGGGG_ACyACyACyACyAeAE0F10TapGesture5count7performQrSi_yyctFQOyACyACyACyAA6ZStackVyALyACyAA6HStackVyALyACyACyAA4TextVAA010_FixedSizeX0VGA23_GSg_AeAEAfgH_Qrqd___Sbyqd___qd__tctSQRd__lFQOyACyACy15RemindersUICore09TTRIMagicS17PlatterTitleFieldVA_GA2_yACyA48_A32_GSgGG_SbQo_QPGGAA010_FlexFrameX0VG_ACyAeAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyAA6ButtonVyACyA4_A16_GG_AA16PlainButtonStyleVQo_A23_GSgQPGGA_GAA011_BackgroundZ0VyAA06_ShapeE0VyAA16RoundedRectangleVAA5ColorVGGGAA01_d5ShapeZ0VyA87_GG_Qo_A26_GA32_GA23_GAA013_TraitWritingZ0VyAA18TransitionTraitKeyVGGSgQPGGA_GA91_G_SbQo__SbQo__SbQo_AA017_AppearanceActionZ0VGA116_GA23_GAaDHPA118_AaDHPA117_AaDHPqd0__AaDHD3_A114_HO_A116_AA0eZ0HPyHCHC_A116_AAA120_HPyHCHC_A23_AAA120_HPyHCHC
-- _objc_msgSend$constraintGreaterThanOrEqualToAnchor:constant:
-- _objc_msgSend$constraintGreaterThanOrEqualToSystemSpacingBelowAnchor:multiplier:
-- _objc_msgSend$firstBaselineAnchor
-- _objc_msgSend$isKeyWindow
-- _objc_msgSend$lastBaselineAnchor
-- _objc_msgSend$windows
 - _symbolic SaySo18NSLayoutConstraintCSgG
 - _symbolic SaySo8UIWindowCG
 - _symbolic So12UIScrollViewCSg

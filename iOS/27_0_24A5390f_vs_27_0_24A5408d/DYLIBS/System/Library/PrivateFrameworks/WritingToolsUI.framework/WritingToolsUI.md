@@ -2,101 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/WritingToolsUI.framework/WritingToolsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__swift5_typeref` | `0xe070` | `0xde2c` | **`-0x244`** |
+| `__TEXT.__text` | `0x6c2d8` | `0x6c19c` | **`-0x13c`** |
+| `__TEXT.__cstring` | `0x3647` | `0x3737` | **`+0xf0`** |
+| `__TEXT.__objc_methlist` | `0x4c3c` | `0x4ccc` | **`+0x90`** |
+| `__DATA.__bss` | `0x3590` | `0x3510` | **`-0x80`** |
+| `__TEXT.__const` | `0x3124` | `0x30a4` | **`-0x80`** |
+| `__AUTH_CONST.__objc_const` | `0x6950` | `0x69c8` | **`+0x78`** |
+| `__AUTH_CONST.__cfstring` | `0xf80` | `0xfe0` | **`+0x60`** |
+| `__DATA.__data` | `0x1f30` | `0x1ee0` | **`-0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3098` | `0x30d8` | **`+0x40`** |
+| `__TEXT.__constg_swiftt` | `0x1020` | `0xfec` | **`-0x34`** |
+| `__AUTH_CONST.__const` | `0x2120` | `0x20f0` | **`-0x30`** |
+| `__DATA_CONST.__got` | `0xa70` | `0xa40` | **`-0x30`** |
+| `__TEXT.__oslogstring` | `0x1efd` | `0x1f2d` | **`+0x30`** |
+| `__TEXT.__swift5_reflstr` | `0xe0c` | `0xe3c` | **`+0x30`** |
+| `__AUTH.__objc_data` | `0x1490` | `0x14b0` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xf78` | `0xf60` | **`-0x18`** |
+| `__AUTH_CONST.__objc_intobj` | `0x558` | `0x570` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x2a8` | `0x290` | **`-0x18`** |
+| `__DATA_CONST.__const` | `0xe00` | `0xe10` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x46c` | `0x45c` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x1cc8` | `0x1cb8` | **`-0x10`** |
+| `__DATA.__common` | `0x110` | `0x118` | **`+0x8`** |
+| `__TEXT.__swift5_fieldmd` | `0xcb4` | `0xcbc` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x388` | `0x38c` | **`+0x4`** |
+| `__TEXT.__swift5_proto` | `0x198` | `0x194` | **`-0x4`** |
+| `__TEXT.__swift5_types` | `0xc4` | `0xc0` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -143.0.0.0.0
--  __TEXT.__text: 0x6c2d8
--  __TEXT.__objc_methlist: 0x4c3c
--  __TEXT.__const: 0x3124
--  __TEXT.__cstring: 0x3647
--  __TEXT.__oslogstring: 0x1efd
 +149.104.0.0.0
-+  __TEXT.__text: 0x6c19c
-+  __TEXT.__objc_methlist: 0x4ccc
-+  __TEXT.__const: 0x30a4
-+  __TEXT.__cstring: 0x3737
-+  __TEXT.__oslogstring: 0x1f2d
-   __TEXT.__gcc_except_tab: 0xd6c
-   __TEXT.__dlopen_cstrs: 0xb4
--  __TEXT.__swift5_typeref: 0xe070
--  __TEXT.__swift5_capture: 0x46c
--  __TEXT.__swift5_reflstr: 0xe0c
--  __TEXT.__swift5_assocty: 0x2a8
--  __TEXT.__constg_swiftt: 0x1020
--  __TEXT.__swift5_fieldmd: 0xcb4
-+  __TEXT.__swift5_typeref: 0xde2c
-+  __TEXT.__swift5_capture: 0x45c
-+  __TEXT.__swift5_reflstr: 0xe3c
-+  __TEXT.__swift5_assocty: 0x290
-+  __TEXT.__constg_swiftt: 0xfec
-+  __TEXT.__swift5_fieldmd: 0xcbc
-   __TEXT.__swift5_builtin: 0x104
--  __TEXT.__swift5_proto: 0x198
--  __TEXT.__swift5_types: 0xc4
-+  __TEXT.__swift5_proto: 0x194
-+  __TEXT.__swift5_types: 0xc0
-   __TEXT.__swift_as_entry: 0x40
-   __TEXT.__swift_as_ret: 0x1c
-   __TEXT.__swift_as_cont: 0x20
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0x1cc8
-+  __TEXT.__unwind_info: 0x1cb8
-   __TEXT.__eh_frame: 0x8c8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xe00
-+  __DATA_CONST.__const: 0xe10
-   __DATA_CONST.__objc_classlist: 0x178
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0xf8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3098
-+  __DATA_CONST.__objc_selrefs: 0x30d8
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0xd0
-   __DATA_CONST.__objc_arraydata: 0x70
--  __DATA_CONST.__got: 0xa70
--  __AUTH_CONST.__const: 0x2120
--  __AUTH_CONST.__cfstring: 0xf80
--  __AUTH_CONST.__objc_const: 0x6950
--  __AUTH_CONST.__objc_intobj: 0x558
-+  __DATA_CONST.__got: 0xa40
-+  __AUTH_CONST.__const: 0x20f0
-+  __AUTH_CONST.__cfstring: 0xfe0
-+  __AUTH_CONST.__objc_const: 0x69c8
-+  __AUTH_CONST.__objc_intobj: 0x570
-   __AUTH_CONST.__objc_doubleobj: 0x70
-   __AUTH_CONST.__objc_arrayobj: 0x60
--  __AUTH_CONST.__auth_got: 0xf78
--  __AUTH.__objc_data: 0x1490
-+  __AUTH_CONST.__auth_got: 0xf60
-+  __AUTH.__objc_data: 0x14b0
-   __AUTH.__data: 0x900
--  __DATA.__objc_ivar: 0x388
--  __DATA.__data: 0x1f30
--  __DATA.__bss: 0x3590
--  __DATA.__common: 0x110
-+  __DATA.__objc_ivar: 0x38c
-+  __DATA.__data: 0x1ee0
-+  __DATA.__bss: 0x3510
-+  __DATA.__common: 0x118
-   __DATA_DIRTY.__objc_data: 0xf0
-   __DATA_DIRTY.__data: 0x8
-   __DATA_DIRTY.__bss: 0x90
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2999
--  Symbols:   4326
--  CStrings:  546
 +  Functions: 3002
-+  Symbols:   4332
+
+-  CStrings:  546
 +  CStrings:  553
- 
 Symbols:
 + +[WTUIActionClientToHost actionForSetShouldEndWritingToolsOnSourceResign:]
 + -[WTFullScreenContainerViewController setShouldEndWritingToolsOnSourceResign:]
@@ -121,12 +70,6 @@ Symbols:
 + _keypath_get.39Tm
 + _keypath_get.51Tm
 + _keypath_set.32Tm
-+ _objc_msgSend$_applyContentHeadroomToFill:colors:count:
-+ _objc_msgSend$isInternalBuild
-+ _objc_msgSend$precomputedResultReplacesExisting
-+ _objc_msgSend$setHeadroom:
-+ _objc_msgSend$setPrecomputedResultReplacesExisting:
-+ _objc_msgSend$setShouldEndWritingToolsOnSourceResign:
 + _symbolic _____yAAy_____y_____yAAyAAyAAyAAyAAyAByACyAAy_____yACy_____y_____AFG______QPGG_____yADyACyAH_AEy_____y_____yAAyAAyAAyAAyAAy_____yAGG_____y_____SgGG_____y_____GG_____GAXG_____yAU_____GGG______Qo______yALyAAyAAyAAyAfXGAXGA1_GG_A4_Qo_GSgQPGGGG_AAyAH_____GADyACyAF_AFSgQPGGAAyAAyAAyAAyAAyAfOy_____GGAOySiSgGGAOy_____GG_____GAXGSgQPGGAXGAXG_____y_____GG_____GAXG_AAyAAyAAyAAyAAy_____AXG_____G_____ySbGGA41_G_____GAAyAAyAAyAAyAAyAAyA38______yAUSgGGA51_GA41_GA43_GA54_GAKy_____y_____AU_____GSgGGQPGG_____GAXG_AAy_____y_____yAAyAAy_____y_____yACyAAy_____yA66_AAy_____yALyAEyAEy_____yAG_____GA80_GA80_GG_A4_Qo______GA66_G_____y_____GGSg_AAyA77_yA66_ACyA86__A86_SgQPGA66_GA90_GAAyA77_yA66_AAy_____yALyA78_yAFA79_GG_A4_Qo_A85_GA66_GA90_GAAyAAyA77_yA66_AEyAAyADyACyAH_AAy_____yA100__A4_Qo_AVGAHQPGGAXGADyACyAAyAAyAAyAAy_____yALyAAyA79______GG_A4_Qo_ARGAVGAXGA1_G_A115_QPGGGA66_GA88_y_____GGA90_GQPGG_Qo_A88_y_____GGAOy_____SgGG_Qo__Qo_AVGt 7SwiftUI15ModifiedContentV AA6VStackV AA05TupleD0V AA6HStackV AA012_ConditionalD0V AA4TextV AA6SpacerV AA16_OverlayModifierV AA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonO0Rd__lFQO AA0Q0V AA5GroupV AA022_EnvironmentKeyWritingL0V AA4FontV AA011_ForegroundoL0V AA5ColorV AA14_PaddingLayoutV AA026_InsettableBackgroundShapeL0V AA7CapsuleV AA010BorderlessqO0V AsAEATyQrqd__AaURd__lFQO AA06_FrameZ0V 12CoreGraphics7CGFloatV AA0I9AlignmentO AA010_FixedSizeZ0V AA01_d5ShapeL0V AA9RectangleV 0u5ToolsB0012TouchDownTapL033_307A59342D234FEA7D5506526C741E19LLV AA7DividerV AA14_OpacityEffectV AA010_AnimationL0V AA012_HoverRegionL0V AA011_BackgroundL0V AA011StrokeShapeM0V AA16RoundedRectangleV AA05EmptyM0V A27_010Comparisonm10BackgroundL0A29_LLV AsAE06scrollD10BackgroundyQrAA10VisibilityOFQO AsAE14scrollDisabledyQrSbFQO AsAE04listY0yQrAA4EdgeO3SetV_A18_tFQO AA4FormV AA7SectionV AsAEATyQrqd__AaURd__lFQO AA5LabelV AA5ImageV A27_016ContextMenuLabeloL0A29_LLV AA06_TraituL0V AA022ListRowBackgroundTraitT0V AsAEATyQrqd__AaURd__lFQO AsAEATyQrqd__AaURd__lFQO AsAEATyQrqd__AaURd__lFQO AA010_FlexFrameZ0V AA018ListRowInsetsTraitT0V AA023ListSectionSpacingTraitT0V AA18ListSectionSpacingV
 + _symbolic _____yAAy_____y_____y_____yAAy_____y_____AAy_____y_____y_____yAGy_____yAGy_____AIG_____GALGALGG______Qo______GAEG_____y_____GGSg_AAyADyAeCyAS_ASSgQPGAEGAWGAAyADyAeAy_____yAFyAHyAiKGG_APQo_ARGAEGAWGAAyAAyADyAeGyAAy_____yACy______AAy_____yA5__APQo______y_____GGA9_QPGG_____GA8_yACyAAyAAyAAyAAy_____yAFyAAyAK_____GG_APQo______y_____SgGGA13_GA17_G_____yA12______GG_A33_QPGGGAEGAUy_____GGAWGQPGG_Qo_AUy_____GGA23_y_____SgGG 7SwiftUI15ModifiedContentV AA4ViewPAAE11listPaddingyQrAA4EdgeO3SetV_12CoreGraphics7CGFloatVtFQO AA4FormV AA05TupleD0V AA7SectionV AA05EmptyE0V AeAE11buttonStyleyQrqd__AA015PrimitiveButtonR0Rd__lFQO AA0T0V AA012_ConditionalD0V AA5LabelV AA4TextV AA5ImageV AA010BorderlesstR0V 012WritingToolsB0011ContextMenuvR8Modifier33_307A59342D234FEA7D5506526C741E19LLV AA06_TraitZ8ModifierV AA25ListRowBackgroundTraitKeyV AeAEAVyQrqd__AaWRd__lFQO AA6HStackV AA6SpacerV AeAEAVyQrqd__AaWRd__lFQO AA011_ForegroundR8ModifierV AA5ColorV AA01_G6LayoutV AeAEAVyQrqd__AaWRd__lFQO AA16_FlexFrameLayoutV AA015_EnvironmentKeyZ8ModifierV AA4FontV AA34_InsettableBackgroundShapeModifierV AA7CapsuleV AA21ListRowInsetsTraitKeyV AA04ListO15SpacingTraitKeyV AA04ListO7SpacingV
 + _symbolic _____y___________y_____yADy_____yACyADyADyADyADyADyAEyACyADy_____yACy_____y_____AHG______QPGG_____yAFyACyAJ_AGy_____y_____yADyADyADyADyADy_____yAIG_____y_____SgGG_____y_____GG_____GAZG_____yAW_____GGG______Qo______yANyADyADyADyAhZGAZGA3_GG_A6_Qo_GSgQPGGGG_ADyAJ_____GAFyACyAH_AHSgQPGGADyADyADyADyADyAhQy_____GGAQySiSgGGAQy_____GG_____GAZGSgQPGGAZGAZG_____y_____GG_____GAZG_ADyADyADyADyADy_____AZG_____G_____ySbGGA43_G_____GADyADyADyADyADyADyA40______yAWSgGGA53_GA43_GA45_GA56_GAMy_____y_____AW_____GSgGGQPGG_____GAZG_ADy_____y_____yADyADy_____y_____yACyADy_____yA68_ADy_____yANyAGyAGy_____yAI_____GA82_GA82_GG_A6_Qo______GA68_G_____y_____GGSg_ADyA79_yA68_ACyA88__A88_SgQPGA68_GA92_GADyA79_yA68_ADy_____yANyA80_yAHA81_GG_A6_Qo_A87_GA68_GA92_GADyADyA79_yA68_AGyADyAFyACyAJ_ADy_____yA102__A6_Qo_AXGAJQPGGAZGAFyACyADyADyADyADy_____yANyADyA81______GG_A6_Qo_ATGAXGAZGA3_G_A117_QPGGGA68_GA90_y_____GGA92_GQPGG_Qo_A90_y_____GGAQy_____SgGG_Qo__Qo_AXGQPGG 7SwiftUI13_VariadicViewO4TreeV AA13_VStackLayoutV AA12TupleContentV AA08ModifiedI0V AA0F0V AA6HStackV AA012_ConditionalI0V AA4TextV AA6SpacerV AA16_OverlayModifierV AA0D0PAAE11buttonStyleyQrqd__AA015PrimitiveButtonR0Rd__lFQO AA0T0V AA5GroupV AA022_EnvironmentKeyWritingP0V AA4FontV AA011_ForegroundrP0V AA5ColorV AA08_PaddingG0V AA026_InsettableBackgroundShapeP0V AA7CapsuleV AA010BorderlesstR0V AyAEAZyQrqd__AAA_Rd__lFQO AA06_FrameG0V 12CoreGraphics7CGFloatV AA0M9AlignmentO AA010_FixedSizeG0V AA01_i5ShapeP0V AA9RectangleV 0x5ToolsB0012TouchDownTapP033_307A59342D234FEA7D5506526C741E19LLV AA7DividerV AA14_OpacityEffectV AA010_AnimationP0V AA012_HoverRegionP0V AA011_BackgroundP0V AA011StrokeShapeD0V AA16RoundedRectangleV AA05EmptyD0V A33_010Comparisond10BackgroundP0A35_LLV AyAE06scrollI10BackgroundyQrAA10VisibilityOFQO AyAE14scrollDisabledyQrSbFQO AyAE11listPaddingyQrAA4EdgeO3SetV_A24_tFQO AA4FormV AA7SectionV AyAEAZyQrqd__AAA_Rd__lFQO AA5LabelV AA5ImageV A33_016ContextMenuLabelrP0A35_LLV AA06_TraitxP0V AA022ListRowBackgroundTraitW0V AyAEAZyQrqd__AAA_Rd__lFQO AyAEAZyQrqd__AAA_Rd__lFQO AyAEAZyQrqd__AAA_Rd__lFQO AA010_FlexFrameG0V AA018ListRowInsetsTraitW0V AA023ListSectionSpacingTraitW0V AA18ListSectionSpacingV

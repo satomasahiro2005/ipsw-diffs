@@ -2,36 +2,25 @@
 
 > `/System/Library/AccessibilityBundles/HomeUI.axbundle/HomeUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x13418` | `0x134e0` | **`+0xc8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xae0` | `0xaf0` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x2818` | `0x2828` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3045.0.0.0.0
--  __TEXT.__text: 0x13418
--  __TEXT.__objc_methlist: 0x2818
 +3048.0.0.0.0
-+  __TEXT.__text: 0x134e0
-+  __TEXT.__objc_methlist: 0x2828
-   __TEXT.__const: 0x58
-   __TEXT.__gcc_except_tab: 0x304
-   __TEXT.__cstring: 0x44b6
 
-   __DATA_CONST.__objc_classlist: 0x698
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xae0
-+  __DATA_CONST.__objc_selrefs: 0xaf0
-   __DATA_CONST.__objc_superrefs: 0x220
-   __DATA_CONST.__got: 0x2d8
-   __AUTH_CONST.__const: 0x240
-
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 751
--  Symbols:   2310
+-  Symbols:   2038
 +  Functions: 752
-+  Symbols:   2313
-   CStrings:  733
- 
++  Symbols:   2040
 Symbols:
 + -[HUCameraEventRecordingCellAccessibility accessibilityAttributedValue]
 + GCC_except_table427
@@ -42,7 +31,6 @@ Symbols:
 + GCC_except_table641
 + GCC_except_table688
 + _AXCompactDurationStringForDuration
-+ _objc_msgSend$attributedString
 - GCC_except_table426
 - GCC_except_table451
 - GCC_except_table498

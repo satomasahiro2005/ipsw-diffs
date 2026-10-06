@@ -2,32 +2,28 @@
 
 > `/System/Library/PrivateFrameworks/DesktopServicesPriv.framework/DesktopServicesHelper`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x82cf8` | `0x82db0` | **`+0xb8`** |
+| `__TEXT.__gcc_except_tab` | `0xa778` | `0xa77c` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
 - `__TEXT.__init_offsets`
 - `__TEXT.__objc_methlist`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__data`
 
-```diff
+### Other Changes
 
- 1857.0.0.0.0
--  __TEXT.__text: 0x82cf8
-+  __TEXT.__text: 0x82db0
-   __TEXT.__auth_stubs: 0x1910
-   __TEXT.__objc_stubs: 0x1ea0
-   __TEXT.__init_offsets: 0x8
-   __TEXT.__objc_methlist: 0x924
--  __TEXT.__gcc_except_tab: 0xa778
-+  __TEXT.__gcc_except_tab: 0xa77c
-   __TEXT.__const: 0x3460
-   __TEXT.__objc_methname: 0x1e19
-   __TEXT.__objc_classname: 0x14c
+```text
 Functions:
 ~ sub_10000beb0 : 308 -> 312
 ~ sub_10004f9b8 -> sub_10004f9bc : 284 -> 288

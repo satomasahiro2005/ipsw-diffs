@@ -2,43 +2,14 @@
 
 > `/System/Library/PrivateFrameworks/SiriDialogEngine.framework/SiriDialogEngine`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-
-```diff
-
-   __AUTH_CONST.__cfstring: 0xc0
-   __AUTH_CONST.__objc_const: 0x4ed0
-   __AUTH_CONST.__auth_got: 0xd88
--  __AUTH.__objc_data: 0x180
--  __AUTH.__data: 0x3a10
--  __DATA.__data: 0xc08
--  __DATA.__bss: 0x7d20
-+  __AUTH.__objc_data: 0xe0
-+  __AUTH.__data: 0x3048
-+  __DATA.__data: 0xb70
-+  __DATA.__bss: 0x7720
-   __DATA.__common: 0x10
--  __DATA_DIRTY.__objc_data: 0x2d0
--  __DATA_DIRTY.__data: 0x2de8
-+  __DATA_DIRTY.__objc_data: 0x370
-+  __DATA_DIRTY.__data: 0x3848
-+  __DATA_DIRTY.__bss: 0x1c00
-   __DATA_DIRTY.__common: 0x98
--  __DATA_DIRTY.__bss: 0x1600
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/Intents.framework/Intents
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__data` | `0x2de8` | `0x3848` | **`+0xa60`** |
+| `__AUTH.__data` | `0x3a10` | `0x3048` | **`-0x9c8`** |
+| `__DATA.__bss` | `0x7d20` | `0x7720` | **`-0x600`** |
+| `__DATA_DIRTY.__bss` | `0x1600` | `0x1c00` | **`+0x600`** |
+| `__AUTH.__objc_data` | `0x180` | `0xe0` | **`-0xa0`** |
+| `__DATA_DIRTY.__objc_data` | `0x2d0` | `0x370` | **`+0xa0`** |
+| `__DATA.__data` | `0xc08` | `0xb70` | **`-0x98`** |

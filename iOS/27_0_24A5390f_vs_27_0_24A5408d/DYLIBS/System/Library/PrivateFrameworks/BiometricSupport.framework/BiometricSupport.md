@@ -2,43 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/BiometricSupport.framework/BiometricSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4ebc8` | `0x4ed98` | **`+0x1d0`** |
+| `__DATA_CONST.__const` | `0x1ae8` | `0x1b10` | **`+0x28`** |
+| `__TEXT.__gcc_except_tab` | `0x1048` | `0x1060` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x1058` | `0x1070` | **`+0x18`** |
+| `__TEXT.__cstring` | `0x6fcf` | `0x6fdc` | **`+0xd`** |
+| `__TEXT.__oslogstring` | `0x3734` | `0x3735` | **`+0x1`** |
+
+### Other Changes
+
 ```diff
 
 -576.0.0.0.0
--  __TEXT.__text: 0x4ebc8
 +577.0.0.0.0
-+  __TEXT.__text: 0x4ed98
-   __TEXT.__objc_methlist: 0x291c
-   __TEXT.__const: 0x13ec
--  __TEXT.__cstring: 0x6fcf
--  __TEXT.__oslogstring: 0x3734
--  __TEXT.__gcc_except_tab: 0x1048
--  __TEXT.__unwind_info: 0x1058
-+  __TEXT.__cstring: 0x6fdc
-+  __TEXT.__oslogstring: 0x3735
-+  __TEXT.__gcc_except_tab: 0x1060
-+  __TEXT.__unwind_info: 0x1070
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1ae8
-+  __DATA_CONST.__const: 0x1b10
-   __DATA_CONST.__objc_classlist: 0xe8
-   __DATA_CONST.__objc_protolist: 0x38
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2018
--  Symbols:   3383
+-  Symbols:   2756
 -  CStrings:  1235
 +  Functions: 2020
-+  Symbols:   3386
++  Symbols:   2759
 +  CStrings:  1236
- 
 Symbols:
 + GCC_except_table114
 + ___72-[BiometricKitXPCExportedObject enableMatchAutoRetry:client:replyBlock:]_block_invoke

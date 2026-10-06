@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MessageSecurity.framework/MessageSecurity`
 
-```diff
+### Section Size Changes
 
- 341.0.17.0.0
--  __TEXT.__text: 0x4c3c8
-+  __TEXT.__text: 0x4c438
-   __TEXT.__objc_methlist: 0x2434
-   __TEXT.__const: 0x14a4
-   __TEXT.__gcc_except_tab: 0x78c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4c3c8` | `0x4c438` | **`+0x70`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _OUTLINED_FUNCTION_3 : 36 -> 12
 ~ _OUTLINED_FUNCTION_4 : 12 -> 36

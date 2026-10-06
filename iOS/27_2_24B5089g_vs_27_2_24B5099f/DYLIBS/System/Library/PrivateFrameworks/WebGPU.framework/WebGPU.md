@@ -2,57 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/WebGPU.framework/WebGPU`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x244778` | `0x24573c` | **`+0xfc4`** |
+| `__TEXT.__cstring` | `0x3e1fc` | `0x3e44c` | **`+0x250`** |
+| `__TEXT.__gcc_except_tab` | `0xa918` | `0xa9b8` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x43e0` | `0x4420` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0x4ce0` | `0x4d18` | **`+0x38`** |
+| `__AUTH_CONST.__cfstring` | `0x3a40` | `0x3a60` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xa08` | `0xa20` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
 -625.2.5.10.1
--  __TEXT.__text: 0x240fd8
 +625.2.7.1.0
-+  __TEXT.__text: 0x241f50
-   __TEXT.__objc_methlist: 0x200
-   __TEXT.__const: 0x1f94
--  __TEXT.__gcc_except_tab: 0xa918
-+  __TEXT.__gcc_except_tab: 0xa9b8
-   __TEXT.__swift5_typeref: 0x7d8
--  __TEXT.__cstring: 0x3e1fc
-+  __TEXT.__cstring: 0x3e44c
-   __TEXT.__constg_swiftt: 0xb7c
-   __TEXT.__swift5_fieldmd: 0x400
-   __TEXT.__swift5_builtin: 0xdc
 
-   __TEXT.__swift5_types: 0x4c
-   __TEXT.__swift5_protos: 0x50
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0x4720
-+  __TEXT.__unwind_info: 0x4768
-   __TEXT.__eh_frame: 0xfe8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0xb08
-   __DATA_CONST.__objc_superrefs: 0x18
-   __DATA_CONST.__got: 0x2d0
--  __AUTH_CONST.__const: 0x4ce0
--  __AUTH_CONST.__cfstring: 0x3a40
-+  __AUTH_CONST.__const: 0x4d18
-+  __AUTH_CONST.__cfstring: 0x3a60
-   __AUTH_CONST.__objc_const: 0x658
-   __AUTH_CONST.__weak_auth_got: 0x10
--  __AUTH_CONST.__auth_got: 0xa08
-+  __AUTH_CONST.__auth_got: 0xa20
-   __AUTH.__objc_data: 0xf0
-   __AUTH.__data: 0x108
-   __DATA.__objc_ivar: 0x60
-
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 3640
 -  Symbols:   4095
 -  CStrings:  2752
 +  Functions: 3649
 +  Symbols:   4108
 +  CStrings:  2757
- 
 Symbols:
 + GCC_except_table46
 + __ZN3WTF3BoxINSt3__16atomicIbEEED1Ev

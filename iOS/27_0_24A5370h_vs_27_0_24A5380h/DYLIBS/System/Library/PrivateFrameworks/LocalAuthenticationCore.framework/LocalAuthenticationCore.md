@@ -2,114 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/LocalAuthenticationCore.framework/LocalAuthenticationCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x4800` | `0x76c0` | **`+0x2ec0`** |
+| `__DATA_DIRTY.__objc_data` | `0x3cf0` | `0xe38` | **`-0x2eb8`** |
+| `__AUTH.__data` | `0x2f08` | `0x24b0` | **`-0xa58`** |
+| `__DATA_DIRTY.__data` | `0xf10` | `0x1938` | **`+0xa28`** |
+| `__TEXT.__text` | `0x194d1c` | `0x194f2c` | **`+0x210`** |
+| `__TEXT.__oslogstring` | `0xaf85` | `0xb0a5` | **`+0x120`** |
+| `__TEXT.__cstring` | `0x1085c` | `0x1093a` | **`+0xde`** |
+| `__DATA.__bss` | `0x7279` | `0x71a1` | **`-0xd8`** |
+| `__AUTH_CONST.__cfstring` | `0x75a0` | `0x7660` | **`+0xc0`** |
+| `__TEXT.__const` | `0xae44` | `0xade4` | **`-0x60`** |
+| `__TEXT.__objc_methlist` | `0xd378` | `0xd3d8` | **`+0x60`** |
+| `__TEXT.__swift5_fieldmd` | `0x2888` | `0x282c` | **`-0x5c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x49a0` | `0x49e8` | **`+0x48`** |
+| `__TEXT.__constg_swiftt` | `0x2eec` | `0x2eb8` | **`-0x34`** |
+| `__AUTH_CONST.__const` | `0x89c8` | `0x8998` | **`-0x30`** |
+| `__DATA_CONST.__const` | `0x55c8` | `0x55f0` | **`+0x28`** |
+| `__DATA.__common` | `0x58` | `0x38` | **`-0x20`** |
+| `__DATA.__data` | `0x7718` | `0x76f8` | **`-0x20`** |
+| `__DATA_DIRTY.__common` | `0x60` | `0x80` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x208e` | `0x206e` | **`-0x20`** |
+| `__TEXT.__swift5_typeref` | `0x4114` | `0x40f8` | **`-0x1c`** |
+| `__AUTH_CONST.__auth_got` | `0x1568` | `0x1578` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x208` | `0x218` | **`+0x10`** |
+| `__AUTH_CONST.__objc_const` | `0x590c8` | `0x590d0` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0xd30` | `0xd28` | **`-0x8`** |
+| `__TEXT.__swift5_proto` | `0x44c` | `0x444` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0x2c8` | `0x2c0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x194d1c
--  __TEXT.__objc_methlist: 0xd378
--  __TEXT.__const: 0xae44
-+  __TEXT.__text: 0x194f2c
-+  __TEXT.__objc_methlist: 0xd3d8
-+  __TEXT.__const: 0xade4
-   __TEXT.__gcc_except_tab: 0x1790
--  __TEXT.__oslogstring: 0xaf85
--  __TEXT.__cstring: 0x1085c
-+  __TEXT.__oslogstring: 0xb0a5
-+  __TEXT.__cstring: 0x1093a
-   __TEXT.__dlopen_cstrs: 0x705
--  __TEXT.__swift5_typeref: 0x4114
--  __TEXT.__swift5_reflstr: 0x208e
-+  __TEXT.__swift5_typeref: 0x40f8
-+  __TEXT.__swift5_reflstr: 0x206e
-   __TEXT.__swift5_assocty: 0x600
--  __TEXT.__constg_swiftt: 0x2eec
--  __TEXT.__swift5_fieldmd: 0x2888
-+  __TEXT.__constg_swiftt: 0x2eb8
-+  __TEXT.__swift5_fieldmd: 0x282c
-   __TEXT.__swift5_builtin: 0x258
-   __TEXT.__swift5_protos: 0xc0
--  __TEXT.__swift5_proto: 0x44c
--  __TEXT.__swift5_types: 0x2c8
-+  __TEXT.__swift5_proto: 0x444
-+  __TEXT.__swift5_types: 0x2c0
-   __TEXT.__swift5_capture: 0x1ad0
-   __TEXT.__swift_as_entry: 0x144
-   __TEXT.__swift_as_cont: 0x1f0
+-2319.0.16.502.1
++2319.0.33.0.1
 
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x55c8
-+  __DATA_CONST.__const: 0x55f0
-   __DATA_CONST.__objc_classlist: 0xc28
-   __DATA_CONST.__objc_protolist: 0xa50
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x49a0
-+  __DATA_CONST.__objc_selrefs: 0x49e8
-   __DATA_CONST.__objc_protorefs: 0x4d0
-   __DATA_CONST.__objc_superrefs: 0x528
-   __DATA_CONST.__objc_arraydata: 0x40
--  __DATA_CONST.__got: 0xd30
--  __AUTH_CONST.__const: 0x89c8
--  __AUTH_CONST.__cfstring: 0x75a0
--  __AUTH_CONST.__objc_const: 0x590c8
-+  __DATA_CONST.__got: 0xd28
-+  __AUTH_CONST.__const: 0x8998
-+  __AUTH_CONST.__cfstring: 0x7660
-+  __AUTH_CONST.__objc_const: 0x590d0
-   __AUTH_CONST.__objc_intobj: 0x360
-   __AUTH_CONST.__objc_arrayobj: 0x78
--  __AUTH_CONST.__auth_got: 0x1568
--  __AUTH.__objc_data: 0x4800
--  __AUTH.__data: 0x2f08
-+  __AUTH_CONST.__auth_got: 0x1578
-+  __AUTH.__objc_data: 0x76c0
-+  __AUTH.__data: 0x24b0
-   __DATA.__objc_ivar: 0x8ac
--  __DATA.__data: 0x7718
--  __DATA.__bss: 0x7279
--  __DATA.__common: 0x58
--  __DATA_DIRTY.__objc_data: 0x3cf0
--  __DATA_DIRTY.__data: 0xf10
--  __DATA_DIRTY.__bss: 0x208
--  __DATA_DIRTY.__common: 0x60
-+  __DATA.__data: 0x76f8
-+  __DATA.__bss: 0x71a1
-+  __DATA.__common: 0x38
-+  __DATA_DIRTY.__objc_data: 0xe38
-+  __DATA_DIRTY.__data: 0x1938
-+  __DATA_DIRTY.__bss: 0x218
-+  __DATA_DIRTY.__common: 0x80
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   Functions: 10884
--  Symbols:   36882
--  CStrings:  4049
-+  Symbols:   36886
-+  CStrings:  4068
- 
-Sections:
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __DATA.__objc_ivar : content changed
+-  Symbols:   21975
+-  CStrings:  3104
++  Symbols:   21944
++  CStrings:  3117
 Symbols:
 + +[LACACMHelper createContext:]
 + +[LACACMHelper createContextWithExternalForm:]
@@ -176,17 +111,6 @@ Symbols:
 + _kAKSInternalInfoGroupSeedWrappingType
 + _kAKSInternalInfoGroupUserCount
 + _kAKSInternalInfoVolumeBagVEKCacheStatus
-+ _objc_msgSend$allowsAuthenticationFallbacksForOptions:
-+ _objc_msgSend$createContext:
-+ _objc_msgSend$createContextWithExternalForm:
-+ _objc_msgSend$createContextWithFlags:contextRef:
-+ _objc_msgSend$deviceHasSecureDoublePressHW
-+ _objc_msgSend$deviceSupportsSecureDoubleClick
-+ _objc_msgSend$initWithIsRunning:time:threshold:
-+ _objc_msgSend$reportAnomaly:
-+ _objc_msgSend$reportContextCreationRetryWithOriginalError:retryError:
-+ _objc_msgSend$threshold
-+ _objc_msgSend$watchdogForOptions:
 + _pdk_generate
 + _symbolic _____yxG 15Synchronization5MutexVAARi_zrlE
 - -[LACDTOBiometryWatchdog initWithIsRunning:time:minThreshold:maxThreshold:]
@@ -283,10 +207,6 @@ Symbols:
 - _associated conformance 23LocalAuthenticationCore9LACLoggerV5LevelOSHAASQ
 - _get_type_metadata 15Synchronization5MutexVyytG noncopyable
 - _get_type_metadata l15Synchronization5MutexVyxG noncopyable
-- _objc_msgSend$allowsAuthenticationFallbacks
-- _objc_msgSend$initWithIsRunning:time:minThreshold:maxThreshold:
-- _objc_msgSend$isPastBarkingPeriod
-- _objc_msgSend$minThreshold
 - _swift_runtimeSupportsNoncopyableTypes
 - _symbolic _____ 23LocalAuthenticationCore9LACLoggerV
 - _symbolic _____ 23LocalAuthenticationCore9LACLoggerV5LevelO
@@ -311,5 +231,4 @@ CStrings:
 - "Unable to create ACM context with status: %d"
 - "maxThreshold: %.2f"
 - "minThreshold: %.2f"
-
 ```

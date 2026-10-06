@@ -2,95 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/ServicesIntelligence.framework/ServicesIntelligence`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21c0d0` | `0x222478` | **`+0x63a8`** |
+| `__TEXT.__unwind_info` | `0x9ec8` | `0xa498` | **`+0x5d0`** |
+| `__TEXT.__eh_frame` | `0x1bab4` | `0x1bd68` | **`+0x2b4`** |
+| `__TEXT.__oslogstring` | `0xa2b0` | `0xa43f` | **`+0x18f`** |
+| `__TEXT.__const` | `0x21dec` | `0x21f48` | **`+0x15c`** |
+| `__TEXT.__cstring` | `0x4e53` | `0x4d23` | **`-0x130`** |
+| `__AUTH_CONST.__const` | `0x12938` | `0x12a58` | **`+0x120`** |
+| `__DATA.__bss` | `0x2eca8` | `0x2ed80` | **`+0xd8`** |
+| `__TEXT.__swift5_typeref` | `0x5ac5` | `0x5b53` | **`+0x8e`** |
+| `__TEXT.__swift_as_cont` | `0x1ac8` | `0x1b28` | **`+0x60`** |
+| `__TEXT.__swift5_capture` | `0x4a4` | `0x4f8` | **`+0x54`** |
+| `__AUTH_CONST.__auth_got` | `0x1400` | `0x13b0` | **`-0x50`** |
+| `__DATA.__data` | `0x4750` | `0x4790` | **`+0x40`** |
+| `__DATA_DIRTY.__data` | `0x2b70` | `0x2b40` | **`-0x30`** |
+| `__TEXT.__swift5_reflstr` | `0x3df4` | `0x3e23` | **`+0x2f`** |
+| `__TEXT.__swift5_fieldmd` | `0x6b78` | `0x6ba0` | **`+0x28`** |
+| `__TEXT.__swift_as_ret` | `0xca0` | `0xcc8` | **`+0x28`** |
+| `__TEXT.__constg_swiftt` | `0x4ea0` | `0x4ebc` | **`+0x1c`** |
+| `__TEXT.__swift_as_entry` | `0x678` | `0x684` | **`+0xc`** |
+| `__DATA_CONST.__const` | `0x1b0` | `0x1b8` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x1b48` | `0x1b50` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x7ec` | `0x7f0` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1.77.0.0.0
--  __TEXT.__text: 0x203710
 +1.78.0.0.0
-+  __TEXT.__text: 0x209710
-   __TEXT.__objc_methlist: 0x2ec
--  __TEXT.__const: 0x21dec
--  __TEXT.__swift5_typeref: 0x5ac5
--  __TEXT.__constg_swiftt: 0x4ea0
--  __TEXT.__swift5_reflstr: 0x3df4
--  __TEXT.__swift5_fieldmd: 0x6b78
-+  __TEXT.__const: 0x21f48
-+  __TEXT.__swift5_typeref: 0x5b53
-+  __TEXT.__constg_swiftt: 0x4ebc
-+  __TEXT.__swift5_reflstr: 0x3e23
-+  __TEXT.__swift5_fieldmd: 0x6ba0
-   __TEXT.__swift5_builtin: 0x1a4
-   __TEXT.__swift5_assocty: 0x620
--  __TEXT.__cstring: 0x4e53
--  __TEXT.__swift5_proto: 0x1b48
--  __TEXT.__swift5_types: 0x7ec
--  __TEXT.__oslogstring: 0xa2b0
--  __TEXT.__swift_as_entry: 0x678
--  __TEXT.__swift_as_ret: 0xca0
--  __TEXT.__swift_as_cont: 0x1ac8
-+  __TEXT.__cstring: 0x4d23
-+  __TEXT.__swift5_proto: 0x1b50
-+  __TEXT.__swift5_types: 0x7f0
-+  __TEXT.__oslogstring: 0xa43f
-+  __TEXT.__swift_as_entry: 0x684
-+  __TEXT.__swift_as_ret: 0xcc8
-+  __TEXT.__swift_as_cont: 0x1b28
-   __TEXT.__swift5_protos: 0x38
--  __TEXT.__swift5_capture: 0x4a4
-+  __TEXT.__swift5_capture: 0x4f8
-   __TEXT.__swift5_mpenum: 0xe8
--  __TEXT.__unwind_info: 0xb760
--  __TEXT.__eh_frame: 0x1bb8c
-+  __TEXT.__unwind_info: 0xbd20
-+  __TEXT.__eh_frame: 0x1be40
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1b0
-+  __DATA_CONST.__const: 0x1b8
-   __DATA_CONST.__objc_classlist: 0xf0
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x420
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x12938
-+  __AUTH_CONST.__const: 0x12a58
-   __AUTH_CONST.__objc_const: 0x1820
--  __AUTH_CONST.__auth_got: 0x1400
-+  __AUTH_CONST.__auth_got: 0x13b0
-   __AUTH.__objc_data: 0x228
-   __AUTH.__data: 0xae8
--  __DATA.__data: 0x4750
-+  __DATA.__data: 0x4790
-   __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0x540
--  __DATA_DIRTY.__data: 0x2b70
-+  __DATA_DIRTY.__data: 0x2b40
-   __DATA_DIRTY.__bss: 0x6e80
-   __DATA_DIRTY.__common: 0x120
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 
-   - /usr/lib/swift/libswiftCoreAudio.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftCoreLocation.dylib
 +  - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
-   - /usr/lib/swift/libswiftIntents.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10917
--  Symbols:   2921
+-  Symbols:   2842
 -  CStrings:  1194
 +  Functions: 10945
-+  Symbols:   2920
++  Symbols:   2841
 +  CStrings:  1185
- 
 Symbols:
 + ___swift_closure_destructor.42Tm
 + __swift_FORCE_LOAD_$_swiftCoreMIDI

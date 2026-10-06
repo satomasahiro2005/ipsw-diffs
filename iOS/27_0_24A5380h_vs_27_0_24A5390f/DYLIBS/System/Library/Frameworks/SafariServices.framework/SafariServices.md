@@ -2,121 +2,56 @@
 
 > `/System/Library/Frameworks/SafariServices.framework/SafariServices`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x181134` | `0x1838e4` | **`+0x27b0`** |
+| `__DATA.__bss` | `0x710` | `0xb90` | **`+0x480`** |
+| `__TEXT.__const` | `0x2b74` | `0x2eb4` | **`+0x340`** |
+| `__AUTH_CONST.__objc_const` | `0x2c4c0` | `0x2c618` | **`+0x158`** |
+| `__TEXT.__objc_methlist` | `0x1bb44` | `0x1bc9c` | **`+0x158`** |
+| `__AUTH_CONST.__cfstring` | `0xc2e0` | `0xc400` | **`+0x120`** |
+| `__TEXT.__unwind_info` | `0x90c8` | `0x91e8` | **`+0x120`** |
+| `__TEXT.__oslogstring` | `0x80c7` | `0x81d7` | **`+0x110`** |
+| `__TEXT.__swift5_typeref` | `0x5b8` | `0x6ac` | **`+0xf4`** |
+| `__AUTH_CONST.__const` | `0x2110` | `0x2200` | **`+0xf0`** |
+| `__TEXT.__ustring` | `0x36f6` | `0x37d2` | **`+0xdc`** |
+| `__DATA_CONST.__objc_selrefs` | `0x121c0` | `0x12290` | **`+0xd0`** |
+| `__TEXT.__eh_frame` | `0x1138` | `0x1208` | **`+0xd0`** |
+| `__TEXT.__gcc_except_tab` | `0xfb74` | `0xfc30` | **`+0xbc`** |
+| `__TEXT.__constg_swiftt` | `0x1a4` | `0x218` | **`+0x74`** |
+| `__DATA.__data` | `0x6948` | `0x69b0` | **`+0x68`** |
+| `__AUTH_CONST.__auth_got` | `0x1428` | `0x1488` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x7780` | `0x77d0` | **`+0x50`** |
+| `__TEXT.__cstring` | `0xd400` | `0xd450` | **`+0x50`** |
+| `__TEXT.__swift5_assocty` | `—` | `0x48` | **`+0x48`** |
+| `__TEXT.__swift5_capture` | `0x440` | `0x47c` | **`+0x3c`** |
+| `__AUTH_CONST.__objc_intobj` | `0xc78` | `0xca8` | **`+0x30`** |
+| `__TEXT.__swift5_reflstr` | `0xd8` | `0x108` | **`+0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0x120` | `0x148` | **`+0x28`** |
+| `__TEXT.__swift5_proto` | `0x4` | `0x28` | **`+0x24`** |
+| `__DATA.__objc_ivar` | `0x1f0c` | `0x1f24` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `—` | `0x14` | **`+0x14`** |
+| `__AUTH.__objc_data` | `0x5e88` | `0x5e98` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0xf0` | `0xfc` | **`+0xc`** |
+| `__TEXT.__swift_as_entry` | `0x64` | `0x70` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `0x70` | `0x7c` | **`+0xc`** |
+| `__TEXT.__swift5_types` | `0x1c` | `0x24` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -625.1.22.10.3
--  __TEXT.__text: 0x181134
--  __TEXT.__objc_methlist: 0x1bb44
--  __TEXT.__const: 0x2b74
--  __TEXT.__cstring: 0xd400
--  __TEXT.__gcc_except_tab: 0xfb74
 +625.1.24.10.1
-+  __TEXT.__text: 0x1838e4
-+  __TEXT.__objc_methlist: 0x1bc9c
-+  __TEXT.__const: 0x2eb4
-+  __TEXT.__cstring: 0xd450
-+  __TEXT.__gcc_except_tab: 0xfc30
-   __TEXT.__dlopen_cstrs: 0xb7f
--  __TEXT.__oslogstring: 0x80c7
--  __TEXT.__ustring: 0x36f6
--  __TEXT.__swift5_typeref: 0x5b8
--  __TEXT.__swift5_capture: 0x440
--  __TEXT.__swift_as_entry: 0x64
--  __TEXT.__swift_as_ret: 0x70
--  __TEXT.__swift_as_cont: 0xf0
--  __TEXT.__constg_swiftt: 0x1a4
--  __TEXT.__swift5_reflstr: 0xd8
--  __TEXT.__swift5_fieldmd: 0x120
--  __TEXT.__swift5_types: 0x1c
--  __TEXT.__swift5_proto: 0x4
--  __TEXT.__unwind_info: 0x90c8
--  __TEXT.__eh_frame: 0x1138
-+  __TEXT.__oslogstring: 0x81d7
-+  __TEXT.__ustring: 0x37d2
-+  __TEXT.__swift5_typeref: 0x6ac
-+  __TEXT.__swift5_capture: 0x47c
-+  __TEXT.__constg_swiftt: 0x218
-+  __TEXT.__swift5_reflstr: 0x108
-+  __TEXT.__swift5_fieldmd: 0x148
-+  __TEXT.__swift5_assocty: 0x48
-+  __TEXT.__swift5_builtin: 0x14
-+  __TEXT.__swift5_proto: 0x28
-+  __TEXT.__swift5_types: 0x24
-+  __TEXT.__swift_as_entry: 0x70
-+  __TEXT.__swift_as_ret: 0x7c
-+  __TEXT.__swift_as_cont: 0xfc
-+  __TEXT.__unwind_info: 0x91e8
-+  __TEXT.__eh_frame: 0x1208
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7780
-+  __DATA_CONST.__const: 0x77d0
-   __DATA_CONST.__objc_classlist: 0xa50
-   __DATA_CONST.__objc_catlist: 0x100
-   __DATA_CONST.__objc_protolist: 0x8e8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x121c0
-+  __DATA_CONST.__objc_selrefs: 0x12290
-   __DATA_CONST.__objc_protorefs: 0x160
-   __DATA_CONST.__objc_superrefs: 0x858
-   __DATA_CONST.__objc_arraydata: 0x588
-   __DATA_CONST.__got: 0x2708
--  __AUTH_CONST.__const: 0x2110
--  __AUTH_CONST.__cfstring: 0xc2e0
--  __AUTH_CONST.__objc_const: 0x2c4c0
-+  __AUTH_CONST.__const: 0x2200
-+  __AUTH_CONST.__cfstring: 0xc400
-+  __AUTH_CONST.__objc_const: 0x2c618
-   __AUTH_CONST.__weak_auth_got: 0x10
--  __AUTH_CONST.__objc_intobj: 0xc78
-+  __AUTH_CONST.__objc_intobj: 0xca8
-   __AUTH_CONST.__objc_arrayobj: 0x4f8
-   __AUTH_CONST.__objc_doubleobj: 0xc0
-   __AUTH_CONST.__objc_dictobj: 0xa0
--  __AUTH_CONST.__auth_got: 0x1428
--  __AUTH.__objc_data: 0x5e88
-+  __AUTH_CONST.__auth_got: 0x1488
-+  __AUTH.__objc_data: 0x5e98
-   __AUTH.__data: 0x2e0
--  __DATA.__objc_ivar: 0x1f0c
--  __DATA.__data: 0x6948
--  __DATA.__bss: 0x710
-+  __DATA.__objc_ivar: 0x1f24
-+  __DATA.__data: 0x69b0
-+  __DATA.__bss: 0xb90
-   __DATA_DIRTY.__objc_data: 0xb40
-   __DATA_DIRTY.__bss: 0x10
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9188
--  Symbols:   24379
+-  Symbols:   17444
 -  CStrings:  2536
 +  Functions: 9273
-+  Symbols:   24455
++  Symbols:   17504
 +  CStrings:  2549
- 
 Symbols:
 + -[SFBarRegistration pageFormatCustomView]
 + -[SFBarRegistration setPageFormatCustomView:]
@@ -268,32 +203,6 @@ Symbols:
 + _associated conformance So21ASCAuthorizationErrorV10Foundation01_B12CodeProtocolSC01_B4TypeAcDP_AC21_BridgedStoredNSError
 + _associated conformance So21ASCAuthorizationErrorV10Foundation01_B12CodeProtocolSCSQ
 + _classificationTokenForESimDataType
-+ _objc_msgSend$_URLWillOpenHostApp:
-+ _objc_msgSend$_completeFillWithPassword:
-+ _objc_msgSend$_dismissGuidedBrowsingActionBlockedNoticeIfNecessary
-+ _objc_msgSend$_fillOneTimeCode:
-+ _objc_msgSend$_openURLInHostAppIfPossible:
-+ _objc_msgSend$_systemImageNamed:withConfiguration:
-+ _objc_msgSend$_textSuggestionForESimDataType:
-+ _objc_msgSend$addGeneratedPassword:forProtectionSpace:displayName:serviceIdentifierType:inPrivateBrowsingSession:completionHandler:
-+ _objc_msgSend$compareForAutoFill:
-+ _objc_msgSend$credential
-+ _objc_msgSend$didCommitLoadForMainFrame:
-+ _objc_msgSend$didCommitNavigation:
-+ _objc_msgSend$getSafariPasswordAutoFillSettingWithCompletionHandler:
-+ _objc_msgSend$iconForMenuActionWithTab:
-+ _objc_msgSend$initWithMessage:
-+ _objc_msgSend$initWithServiceIdentifier:credential:sessionID:event:passwordKind:
-+ _objc_msgSend$openInNewTabActionForURL:withTabOrder:preActionHandler:openToSide:
-+ _objc_msgSend$passwordSavingSessionIDFromHostAuditToken:
-+ _objc_msgSend$protectionSpaceForAppID:
-+ _objc_msgSend$readerController:didRequestSummaryFeedbackWithActionType:readerTextUsedForSummarization:
-+ _objc_msgSend$reportSummaryFeedback:
-+ _objc_msgSend$returnPageFormatButton
-+ _objc_msgSend$setInsetsBackground:
-+ _objc_msgSend$showGuidedBrowsingActionBlockedNoticeWithMessage:
-+ _objc_msgSend$showGuidedBrowsingNewWindowBlockedNotice
-+ _objc_msgSend$toolbarLayout
 + _swift_getForeignTypeMetadata
 + _symbolic $s10Foundation18_ErrorCodeProtocolP
 + _symbolic $s10Foundation21_BridgedStoredNSErrorP
@@ -408,16 +317,6 @@ Symbols:
 - _OBJC_IVAR_$__SFWebAppServiceViewController._guidedBrowsingNavigationBlockedNoticeViewController
 - ___79-[_SFLinkPreviewHelper openInNewTabActionForURL:withTabOrder:preActionHandler:]_block_invoke
 - ___swift_closure_destructor.8Tm
-- _objc_msgSend$_checkSearchURLTemplateStringInFrame:autoFillFrame:autoFillNode:controller:
-- _objc_msgSend$_dismissGuidedBrowsingNavigationBlockedNoticeIfNecessary
-- _objc_msgSend$_showGuidedBrowsingNavigationBlockedNotice
-- _objc_msgSend$_willURLOpenHostApp:
-- _objc_msgSend$compareForQuickTypeBar:
-- _objc_msgSend$didFindSearchURLTemplateString:inFrame:pageController:
-- _objc_msgSend$formSubmissionURLStringForSearchTextField:inFrame:useStrictDetection:
-- _objc_msgSend$isHTMLInputElementUserEdited
-- _objc_msgSend$retrieveDeviceIdentifier:error:
-- _objc_msgSend$visibleNonEmptyTextFieldsInForm:inFrame:
 CStrings:
 + "Could not load NSExtension %{public}@ for generated-password-filled save request: %{public}@"
 + "Device identifier from CoreTelephony was empty, not showing a suggestion."

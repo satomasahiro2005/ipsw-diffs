@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/_Intents_TipKit.framework/_Intents_TipKit`
 
-```diff
+### Section Size Changes
 
- 4016.0.51.1.102
--  __TEXT.__text: 0x3960
-+  __TEXT.__text: 0x3964
-   __TEXT.__const: 0xf4
-   __TEXT.__swift5_typeref: 0x8c
-   __TEXT.__oslogstring: 0x114
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3960` | `0x3964` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_24d6a1d10 -> sub_24e0a5d10 : 648 -> 652
+~ sub_24d54ed10 -> sub_24df59d10 : 648 -> 652
 ```

@@ -2,74 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/IPTelephony.framework/Support/libIPTelephony.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4aabd0` | `0x4aafb0` | **`+0x3e0`** |
+| `__TEXT.__oslogstring` | `0x4caba` | `0x4cd41` | **`+0x287`** |
+| `__DATA.__bss` | `0x144` | `0x14` | **`-0x130`** |
+| `__DATA_DIRTY.__bss` | `0xc78` | `0xda8` | **`+0x130`** |
+| `__DATA.__data` | `0x378` | `0x268` | **`-0x110`** |
+| `__DATA_DIRTY.__data` | `0x1c0` | `0x2d0` | **`+0x110`** |
+| `__DATA.__common` | `0x108` | `0xa8` | **`-0x60`** |
+| `__TEXT.__cstring` | `0x140b5` | `0x1410f` | **`+0x5a`** |
+| `__DATA_DIRTY.__common` | `0x888` | `0x8e0` | **`+0x58`** |
+| `__TEXT.__gcc_except_tab` | `0x41e34` | `0x41e80` | **`+0x4c`** |
+| `__DATA_CONST.__const` | `0x3da8` | `0x3d98` | **`-0x10`** |
+| `__TEXT.__const` | `0x1f83c` | `0x1f84c` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x4aabd0
-+  __TEXT.__text: 0x4aafb0
-   __TEXT.__init_offsets: 0x1a4
-   __TEXT.__objc_methlist: 0x674
--  __TEXT.__const: 0x1f83c
--  __TEXT.__gcc_except_tab: 0x41e34
--  __TEXT.__cstring: 0x140b5
--  __TEXT.__oslogstring: 0x4caba
-+  __TEXT.__const: 0x1f84c
-+  __TEXT.__gcc_except_tab: 0x41e80
-+  __TEXT.__cstring: 0x1410f
-+  __TEXT.__oslogstring: 0x4cd41
-   __TEXT.__unwind_info: 0x18168
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3da8
-+  __DATA_CONST.__const: 0x3d98
-   __DATA_CONST.__objc_classlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
+-2756.0.0.0.0
++2761.1.0.0.0
 
-   __AUTH_CONST.__auth_got: 0x16a0
-   __AUTH.__objc_data: 0xf0
-   __DATA.__objc_ivar: 0x48
--  __DATA.__data: 0x378
--  __DATA.__bss: 0x144
--  __DATA.__common: 0x108
-+  __DATA.__data: 0x268
-+  __DATA.__common: 0xa8
-+  __DATA.__bss: 0x14
-   __DATA_DIRTY.__objc_data: 0xf0
--  __DATA_DIRTY.__data: 0x1c0
--  __DATA_DIRTY.__common: 0x888
--  __DATA_DIRTY.__bss: 0xc78
-+  __DATA_DIRTY.__data: 0x2d0
-+  __DATA_DIRTY.__bss: 0xda8
-+  __DATA_DIRTY.__common: 0x8e0
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreLocation.framework/CoreLocation
-
-   - /usr/lib/libxml2.2.dylib
-   Functions: 16405
-   Symbols:   49547
--  CStrings:  9004
-+  CStrings:  9017
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+-  CStrings:  8692
++  CStrings:  8705
 Symbols:
 + GCC_except_table501
 + GCC_except_table503
@@ -129,5 +87,4 @@ CStrings:
 + "RCSChatbot"
 + "SkipReRegisterUponRatChangeWhenThereIsNoConnectivity"
 - "%{private, mask.hash}sSipTcpConnection::processDataFromSocket hasPartial=%{bool}d crlfInFlight=%{bool}d"
-
 ```

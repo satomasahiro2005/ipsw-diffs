@@ -2,6 +2,8 @@
 
 > `/System/Library/Health/Plugins/HealthBluetoothPeripheral.bundle/HealthBluetoothPeripheral`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_b7e8 : 12 -> 20

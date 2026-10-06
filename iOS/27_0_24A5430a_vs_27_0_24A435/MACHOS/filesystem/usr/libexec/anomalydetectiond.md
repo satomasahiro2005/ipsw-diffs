@@ -2,92 +2,56 @@
 
 > `/usr/libexec/anomalydetectiond`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x373ca0` | `0x3797b0` | **`+0x5b10`** |
+| `__DATA_CONST.__const` | `0x28848` | `0x29230` | **`+0x9e8`** |
+| `__TEXT.__oslogstring` | `0x11c3b` | `0x12537` | **`+0x8fc`** |
+| `__TEXT.__gcc_except_tab` | `0x105bc` | `0x10b50` | **`+0x594`** |
+| `__TEXT.__const` | `0xfcde` | `0xffb6` | **`+0x2d8`** |
+| `__TEXT.__unwind_info` | `0xc858` | `0xca20` | **`+0x1c8`** |
+| `__DATA.__objc_const` | `0x10660` | `0x10760` | **`+0x100`** |
+| `__TEXT.__objc_methtype` | `0x601d` | `0x60f1` | **`+0xd4`** |
+| `__TEXT.__objc_methlist` | `0x8d98` | `0x8e10` | **`+0x78`** |
+| `__TEXT.__objc_stubs` | `0x9480` | `0x94e0` | **`+0x60`** |
+| `__DATA.__objc_data` | `0x2fd0` | `0x3020` | **`+0x50`** |
+| `__TEXT.__objc_methname` | `0xc220` | `0xc263` | **`+0x43`** |
+| `__TEXT.__cstring` | `0x1cb71` | `0x1cba4` | **`+0x33`** |
+| `__DATA.__objc_selrefs` | `0x3050` | `0x3068` | **`+0x18`** |
+| `__TEXT.__auth_stubs` | `0x1840` | `0x1850` | **`+0x10`** |
+| `__TEXT.__objc_classname` | `0x1070` | `0x1079` | **`+0x9`** |
+| `__DATA_CONST.__auth_got` | `0xc38` | `0xc40` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x4c8` | `0x4d0` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x448` | `0x450` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x94c` | `0x950` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_arraydata`
 - `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
 - `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__data`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__eh_frame`
+
+### Other Changes
 
 ```diff
 
- 174.0.0.0.0
--  __TEXT.__text: 0x373ca0
--  __TEXT.__auth_stubs: 0x1840
--  __TEXT.__objc_stubs: 0x9480
--  __TEXT.__objc_methlist: 0x8d98
--  __TEXT.__gcc_except_tab: 0x105bc
--  __TEXT.__const: 0xfcde
--  __TEXT.__cstring: 0x1cb71
--  __TEXT.__oslogstring: 0x11c3b
--  __TEXT.__objc_classname: 0x1070
--  __TEXT.__objc_methtype: 0x601d
--  __TEXT.__objc_methname: 0xc220
-+  __TEXT.__text: 0x3797b0
-+  __TEXT.__auth_stubs: 0x1850
-+  __TEXT.__objc_stubs: 0x94e0
-+  __TEXT.__objc_methlist: 0x8e10
-+  __TEXT.__gcc_except_tab: 0x10b50
-+  __TEXT.__const: 0xffb6
-+  __TEXT.__cstring: 0x1cba4
-+  __TEXT.__oslogstring: 0x12537
-+  __TEXT.__objc_classname: 0x1079
-+  __TEXT.__objc_methtype: 0x60f1
-+  __TEXT.__objc_methname: 0xc263
-   __TEXT.__ustring: 0x10ae
--  __TEXT.__unwind_info: 0xc858
-+  __TEXT.__unwind_info: 0xca20
-   __TEXT.__eh_frame: 0x670
--  __DATA_CONST.__const: 0x28848
-+  __DATA_CONST.__const: 0x29230
-   __DATA_CONST.__cfstring: 0x6a00
--  __DATA_CONST.__objc_classlist: 0x4c8
-+  __DATA_CONST.__objc_classlist: 0x4d0
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x128
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x30
--  __DATA_CONST.__objc_superrefs: 0x448
-+  __DATA_CONST.__objc_superrefs: 0x450
-   __DATA_CONST.__objc_intobj: 0x1a88
-   __DATA_CONST.__objc_arraydata: 0x240
-   __DATA_CONST.__objc_arrayobj: 0x30
-   __DATA_CONST.__objc_dictobj: 0x320
-   __DATA_CONST.__objc_doubleobj: 0x10
--  __DATA_CONST.__auth_got: 0xc38
-+  __DATA_CONST.__auth_got: 0xc40
-   __DATA_CONST.__got: 0x678
-   __DATA_CONST.__auth_ptr: 0x50
--  __DATA.__objc_const: 0x10660
--  __DATA.__objc_selrefs: 0x3050
--  __DATA.__objc_ivar: 0x94c
--  __DATA.__objc_data: 0x2fd0
-+  __DATA.__objc_const: 0x10760
-+  __DATA.__objc_selrefs: 0x3068
-+  __DATA.__objc_ivar: 0x950
-+  __DATA.__objc_data: 0x3020
-   __DATA.__data: 0x2020
-   __DATA.__common: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 17223
 -  Symbols:   608
 -  CStrings:  9381
 +  Functions: 17293
 +  Symbols:   609
 +  CStrings:  9424
- 
 Symbols:
 + __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE21__grow_by_and_replaceEmmmmmmPKc
 CStrings:

@@ -2,6 +2,8 @@
 
 > `/Applications/Text Message Filter.app/PlugIns/extensionFilter.appex/extensionFilter`
 
+### Other Changes
+
 ```diff
 Symbols:
 + _$s15extensionFilter07MessageB9ExtensionC6handle_7context10completionySo09ILMessageB24CapabilitiesQueryRequestC_So0hbD7ContextCySo0hbiJ8ResponseCctF06$sSo40hbijM16CIeyBy_ABIegg_TRALIeyBy_Tf1nnEn_nTf4dddn_n

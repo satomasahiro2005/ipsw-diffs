@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation`
 
-```diff
+### Section Size Changes
 
- 1427.100.1.0.0
--  __TEXT.__text: 0x9c20c
-+  __TEXT.__text: 0x9c220
-   __TEXT.__objc_methlist: 0xab5c
-   __TEXT.__cstring: 0x7224
-   __TEXT.__const: 0x1370
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9c20c` | `0x9c220` | **`+0x14`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_19f35ef24 -> sub_19f43ef24 : 648 -> 652
 ~ sub_19f36b9f8 -> sub_19f44b9fc : 968 -> 972

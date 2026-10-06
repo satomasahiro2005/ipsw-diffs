@@ -2,34 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/ProVideo.framework/ProVideo`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa20958` | `0xa22d60` | **`+0x2408`** |
+| `__TEXT.__eh_frame` | `0x90` | `0x130` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x35560` | `0x35558` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 612.0.1.0.0
--  __TEXT.__text: 0xa20958
-+  __TEXT.__text: 0xa22d60
-   __TEXT.__init_offsets: 0x18
-   __TEXT.__objc_methlist: 0x16584
-   __TEXT.__const: 0x5168fd
-
-   __TEXT.__oslogstring: 0x236
-   __TEXT.__ustring: 0x252
-   __TEXT.__dof_Helium: 0xa17f
--  __TEXT.__unwind_info: 0x35560
--  __TEXT.__eh_frame: 0x90
-+  __TEXT.__unwind_info: 0x35558
-+  __TEXT.__eh_frame: 0x130
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libxml2.2.dylib
 -  Functions: 42917
 +  Functions: 42915
-   Symbols:   72780
-   CStrings:  13401
- 
 Functions:
 ~ __ZN13HGFormatUtils12rowBytesHintE8HGFormatj : 296 -> 300
 ~ __ZN11PVPerfStats14CalculateStatsEv : 3928 -> 3956

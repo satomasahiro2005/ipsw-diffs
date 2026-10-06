@@ -2,94 +2,42 @@
 
 > `/System/Library/Frameworks/WebKit.framework/WebKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x21cbbd` | `0x21e98d` | **`+0x1dd0`** |
+| `__TEXT.__oslogstring` | `0x64e9b` | `0x66244` | **`+0x13a9`** |
+| `__TEXT.__text` | `0x14a1e18` | `0x14a0db4` | **`-0x1064`** |
+| `__TEXT.__unwind_info` | `0x57198` | `0x56a40` | **`-0x758`** |
+| `__AUTH_CONST.__const` | `0x70e18` | `0x71000` | **`+0x1e8`** |
+| `__TEXT.__const` | `0x9a64` | `0x9b24` | **`+0xc0`** |
+| `__AUTH_CONST.__objc_const` | `0x2a968` | `0x2a8b0` | **`-0xb8`** |
+| `__DATA_CONST.__const` | `0x232e8` | `0x23360` | **`+0x78`** |
+| `__AUTH_CONST.__auth_got` | `0xd998` | `0xda08` | **`+0x70`** |
+| `__TEXT.__gcc_except_tab` | `0x87e90` | `0x87ef0` | **`+0x60`** |
+| `__DATA.__data` | `0x41bc` | `0x416c` | **`-0x50`** |
+| `__TEXT.__objc_methlist` | `0x1b5b8` | `0x1b570` | **`-0x48`** |
+| `__TEXT.__swift5_typeref` | `0x1c0a` | `0x1c1a` | **`+0x10`** |
+| `__DATA.__common` | `0x13f8` | `0x1400` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x478` | `0x470` | **`-0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0xa8` | `0xa0` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x119c0` | `0x119b8` | **`-0x8`** |
+| `__TEXT.__eh_frame` | `0xa4f8` | `0xa500` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -625.2.5.10.1
--  __TEXT.__text: 0x1453718
 +625.2.7.1.0
-+  __TEXT.__text: 0x1452ec4
-   __TEXT.__delay_helper: 0xdc
--  __TEXT.__objc_methlist: 0x1b5b8
-+  __TEXT.__objc_methlist: 0x1b570
-   __TEXT.__dlsym_cstr: 0xb98
-   __TEXT.__getClass_cstr: 0xcbb
--  __TEXT.__const: 0x9a64
--  __TEXT.__gcc_except_tab: 0x87e90
--  __TEXT.__cstring: 0x21cbbd
--  __TEXT.__swift5_typeref: 0x1c0a
-+  __TEXT.__const: 0x9b24
-+  __TEXT.__gcc_except_tab: 0x87ef0
-+  __TEXT.__cstring: 0x21e98d
-+  __TEXT.__swift5_typeref: 0x1c1a
-   __TEXT.__constg_swiftt: 0x1c28
-   __TEXT.__swift5_reflstr: 0xbd8
-   __TEXT.__swift5_fieldmd: 0xe9c
 
-   __TEXT.__swift_as_ret: 0x174
-   __TEXT.__swift_as_cont: 0x24c
-   __TEXT.__swift5_types2: 0x8
--  __TEXT.__oslogstring: 0x64e9b
-+  __TEXT.__oslogstring: 0x66244
-   __TEXT.__ustring: 0xddc
--  __TEXT.__unwind_info: 0x5f528
--  __TEXT.__eh_frame: 0xa7b0
-+  __TEXT.__unwind_info: 0x5ed88
-+  __TEXT.__eh_frame: 0xa7b8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x232e8
-+  __DATA_CONST.__const: 0x23360
-   __DATA_CONST.__objc_classlist: 0xce8
-   __DATA_CONST.__objc_catlist: 0x58
--  __DATA_CONST.__objc_protolist: 0x478
-+  __DATA_CONST.__objc_protolist: 0x470
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x119c0
--  __DATA_CONST.__objc_protorefs: 0xa8
-+  __DATA_CONST.__objc_selrefs: 0x119b8
-+  __DATA_CONST.__objc_protorefs: 0xa0
-   __DATA_CONST.__objc_superrefs: 0xa08
-   __DATA_CONST.__objc_arraydata: 0x660
-   __DATA_CONST.__got: 0x24e8
--  __AUTH_CONST.__const: 0x70e18
-+  __AUTH_CONST.__const: 0x71000
-   __AUTH_CONST.__cfstring: 0x13c40
--  __AUTH_CONST.__objc_const: 0x2a968
-+  __AUTH_CONST.__objc_const: 0x2a8b0
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x618
-   __AUTH_CONST.__objc_dictobj: 0x140
-   __AUTH_CONST.__objc_arrayobj: 0x108
-   __AUTH_CONST.__objc_doubleobj: 0x20
--  __AUTH_CONST.__auth_got: 0xd998
-+  __AUTH_CONST.__auth_got: 0xda08
-   __AUTH.__objc_data: 0x6278
-   __AUTH.__data: 0xd58
-   __AUTH.__thread_vars: 0x60
-   __AUTH.__thread_bss: 0x20
-   __DATA.__objc_ivar: 0x1140
--  __DATA.__data: 0x41bc
--  __DATA.__common: 0x13f8
-+  __DATA.__data: 0x416c
-+  __DATA.__common: 0x1400
-   __DATA_DIRTY.__objc_ivar: 0x4fc
-   __DATA_DIRTY.__objc_data: 0x2198
-   __DATA_DIRTY.__data: 0x54c8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 77073
 -  Symbols:   108227
 -  CStrings:  19659
 +  Functions: 76970
 +  Symbols:   108154
 +  CStrings:  19704
- 
 Symbols:
 + -[WKWebView(WKTesting) _startMonitoringWheelEventsForTestingWithCompletionHandler:]
 + -[WKWebView(WKTesting) _waitForWheelEventsAndMomentumToCompleteForTestingWithCompletionHandler:]

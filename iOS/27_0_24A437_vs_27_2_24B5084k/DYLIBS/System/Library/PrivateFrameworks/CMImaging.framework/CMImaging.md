@@ -2,77 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/CMImaging.framework/CMImaging`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1f422c` | `0x2318c0` | **`+0x3d694`** |
+| `__TEXT.__cstring` | `0x2330a` | `0x3cd6a` | **`+0x19a60`** |
+| `__TEXT.__oslogstring` | `0x4caa` | `0x1c0e3` | **`+0x17439`** |
+| `__AUTH_CONST.__cfstring` | `0x8da0` | `0x94c0` | **`+0x720`** |
+| `__TEXT.__gcc_except_tab` | `0x14a8` | `0x17f4` | **`+0x34c`** |
+| `__TEXT.__unwind_info` | `0x3aa0` | `0x3cc8` | **`+0x228`** |
+| `__DATA.__common` | `0x1e0` | `0x360` | **`+0x180`** |
+| `__DATA_DIRTY.__common` | `0x120` | `0x1e0` | **`+0xc0`** |
+| `__TEXT.__const` | `0x7140` | `0x70c0` | **`-0x80`** |
+| `__AUTH_CONST.__objc_const` | `0x27a78` | `0x27ad8` | **`+0x60`** |
+| `__TEXT.__objc_methlist` | `0x112a4` | `0x112e4` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7858` | `0x7890` | **`+0x38`** |
+| `__AUTH_CONST.__auth_got` | `0xc40` | `0xc60` | **`+0x20`** |
+| `__AUTH_CONST.__objc_floatobj` | `0xe0` | `0xd0` | **`-0x10`** |
+| `__DATA.__bss` | `0xe8` | `0xf8` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x1e8` | `0x1f8` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x2030` | `0x2038` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -764.22.13.0.0
--  __TEXT.__text: 0x1ee8dc
--  __TEXT.__objc_methlist: 0x112a4
--  __TEXT.__cstring: 0x2330a
--  __TEXT.__const: 0x7140
--  __TEXT.__gcc_except_tab: 0x14a8
--  __TEXT.__oslogstring: 0x4caa
 +764.40.4.122.1
-+  __TEXT.__text: 0x22bfac
-+  __TEXT.__objc_methlist: 0x112e4
-+  __TEXT.__const: 0x70c0
-+  __TEXT.__oslogstring: 0x1c0e3
-+  __TEXT.__cstring: 0x3cd6a
-+  __TEXT.__gcc_except_tab: 0x17f4
-   __TEXT.__dlopen_cstrs: 0x50
--  __TEXT.__unwind_info: 0x68b8
-+  __TEXT.__unwind_info: 0x6b28
-   __TEXT.__eh_frame: 0x700
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x1d8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7858
-+  __DATA_CONST.__objc_selrefs: 0x7890
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__objc_superrefs: 0x5d0
-   __DATA_CONST.__objc_arraydata: 0x6a8
-   __DATA_CONST.__got: 0xe78
-   __AUTH_CONST.__const: 0xc30
--  __AUTH_CONST.__cfstring: 0x8da0
--  __AUTH_CONST.__objc_const: 0x27a78
-+  __AUTH_CONST.__cfstring: 0x94c0
-+  __AUTH_CONST.__objc_const: 0x27ad8
-   __AUTH_CONST.__objc_intobj: 0xfc0
-   __AUTH_CONST.__objc_arrayobj: 0x138
--  __AUTH_CONST.__objc_floatobj: 0xe0
-+  __AUTH_CONST.__objc_floatobj: 0xd0
-   __AUTH_CONST.__objc_dictobj: 0xa0
-   __AUTH_CONST.__objc_doubleobj: 0x1300
--  __AUTH_CONST.__auth_got: 0xc40
-+  __AUTH_CONST.__auth_got: 0xc60
-   __AUTH.__objc_data: 0xcd0
-   __AUTH.__data: 0x8
--  __DATA.__objc_ivar: 0x2030
-+  __DATA.__objc_ivar: 0x2038
-   __DATA.__data: 0x12f98
--  __DATA.__common: 0x1e0
-+  __DATA.__common: 0x360
-   __DATA_DIRTY.__objc_data: 0x3d40
--  __DATA_DIRTY.__common: 0x120
--  __DATA_DIRTY.__bss: 0x1e8
-+  __DATA_DIRTY.__common: 0x1e0
-+  __DATA_DIRTY.__bss: 0x1f8
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  Functions: 9564
--  Symbols:   13418
+-  Functions: 9565
+-  Symbols:   11324
 -  CStrings:  4339
-+  Functions: 10056
-+  Symbols:   13507
++  Functions: 10057
++  Symbols:   11401
 +  CStrings:  7078
- 
 Symbols:
 + -[CMILCBDatabase databaseVersion]
 + -[CMILCBEntry blemishType]
@@ -164,20 +128,6 @@ Symbols:
 + _getMachElapsedTimeMs
 + _getMachElapsedTimeMs.machTimeToMS
 + _mach_timebase_info
-+ _objc_msgSend$blemishType
-+ _objc_msgSend$containsValueForKey:
-+ _objc_msgSend$correctionPatch
-+ _objc_msgSend$decodeCommonFieldsWithCoder:
-+ _objc_msgSend$decodeCorrectionFeaturesWithCoder:
-+ _objc_msgSend$decodeV4FieldsWithCoder:
-+ _objc_msgSend$decodeV5FieldsWithCoder:
-+ _objc_msgSend$getConnections
-+ _objc_msgSend$getFragmentCount
-+ _objc_msgSend$initWithKey:position:radius:defocusRadius:particleDistance:apertureRatio:focusLensPosition:oisShift:opticalCenter:detectionCount:blemishType:lastDetectionGravityVector:lastDetectionTimeStamp:shouldCorrect:correctionFeatures:correctionPatch:
-+ _objc_msgSend$kernelEndTime
-+ _objc_msgSend$kernelStartTime
-+ _objc_msgSend$profilingResults
-+ _objc_msgSend$setProfilingEnabled:
 + _stringForPixelFormat
 - -[CMILCBEntry initWithKey:position:radius:defocusRadius:particleDistance:apertureRatio:focusLensPosition:oisShift:opticalCenter:detectionCount:relativeToLens:lastDetectionGravityVector:lastDetectionTimeStamp:shouldCorrect:correctionFeatures:]
 - -[CMILCBEntry relativeToLens]
@@ -193,8 +143,6 @@ Symbols:
 - _loadExperimentsConfig.processTexture
 - _loadExperimentsConfig.waitUntilCompleted
 - _loadExperimentsConfig.waitUntilScheduled
-- _objc_msgSend$initWithKey:position:radius:defocusRadius:particleDistance:apertureRatio:focusLensPosition:oisShift:opticalCenter:detectionCount:relativeToLens:lastDetectionGravityVector:lastDetectionTimeStamp:shouldCorrect:correctionFeatures:
-- _objc_msgSend$relativeToLens
 CStrings:
 + "  "
 + " '_inputLTMGainMapTextureMappedRegion' !=  input LTM Gain map image size"

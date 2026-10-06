@@ -2,33 +2,29 @@
 
 > `/usr/lib/libaxis.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x544c90` | `0x5572f4` | **`+0x12664`** |
+| `__TEXT.__gcc_except_tab` | `0x47194` | `0x48268` | **`+0x10d4`** |
+| `__TEXT.__cstring` | `0x16b08` | `0x17928` | **`+0xe20`** |
+| `__TEXT.__unwind_info` | `0x116c0` | `0x11960` | **`+0x2a0`** |
+| `__TEXT.__const` | `0xf874` | `0xf8a4` | **`+0x30`** |
+| `__DATA.__bss` | `0x13ea8` | `0x13eb8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -8.1.13.0.0
--  __TEXT.__text: 0x53cf68
--  __TEXT.__const: 0xf874
--  __TEXT.__gcc_except_tab: 0x47194
--  __TEXT.__cstring: 0x16b08
--  __TEXT.__unwind_info: 0x12300
 +8.1.15.0.0
-+  __TEXT.__text: 0x54f480
-+  __TEXT.__const: 0xf8a4
-+  __TEXT.__gcc_except_tab: 0x48268
-+  __TEXT.__cstring: 0x17928
-+  __TEXT.__unwind_info: 0x12598
-   __TEXT.__eh_frame: 0x88
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0xc0
 
-   __DATA.__common: 0x8
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 9906
 +  Functions: 9983
-   Symbols:   2776
+
 -  CStrings:  1961
 +  CStrings:  2079
- 
 Symbols:
 + __ZN5terra13GeoTIFFReader11read_memoryEPKhm
 - __ZN5terra13GeoTIFFReader11read_memoryEPKh

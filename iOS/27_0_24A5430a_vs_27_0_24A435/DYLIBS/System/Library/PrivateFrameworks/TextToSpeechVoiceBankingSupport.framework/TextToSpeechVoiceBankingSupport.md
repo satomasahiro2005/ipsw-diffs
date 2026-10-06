@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/TextToSpeechVoiceBankingSupport.framework/TextToSpeechVoiceBankingSupport`
 
-```diff
+### Section Size Changes
 
- 723.3.0.0.0
--  __TEXT.__text: 0x1745c0
-+  __TEXT.__text: 0x174670
-   __TEXT.__objc_methlist: 0xcd8
-   __TEXT.__const: 0x13e68
-   __TEXT.__swift5_typeref: 0x461c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1745c0` | `0x174670` | **`+0xb0`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_229fc2cd0 -> sub_22a82bcd0 : 1920 -> 1928
 ~ sub_229ff8e30 -> sub_22a861e38 : 856 -> 864

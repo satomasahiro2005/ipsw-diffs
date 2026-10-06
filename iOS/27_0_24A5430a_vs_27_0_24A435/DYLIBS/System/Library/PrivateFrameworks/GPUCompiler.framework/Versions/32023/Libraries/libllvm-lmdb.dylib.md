@@ -2,19 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/32023/Libraries/libllvm-lmdb.dylib`
 
-```diff
+### Section Size Changes
 
- 32023.921.6.0.0
--  __TEXT.__text: 0xc9c8
-+  __TEXT.__text: 0xc9e0
-   __TEXT.__cstring: 0x59a
-   __TEXT.__const: 0x60
-   __TEXT.__unwind_info: 0x1c0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc9c8` | `0xc9e0` | **`+0x18`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_265e80f14 -> sub_266b9df14 : 956 -> 960
-~ sub_265e81660 -> sub_266b9e664 : 608 -> 612
+~ sub_265d62f14 -> sub_266a79f14 : 956 -> 960
+~ sub_265d63660 -> sub_266a7a664 : 608 -> 612
 ~ _mdb_txn_commit : 3376 -> 3380
-~ sub_265e82754 -> sub_266b9f760 : 152 -> 156
-~ sub_265e83608 -> sub_266ba0618 : 876 -> 880
+~ sub_265d64754 -> sub_266a7b760 : 152 -> 156
+~ sub_265d65608 -> sub_266a7c618 : 876 -> 880
 ~ _mdb_env_open : 804 -> 808
 ```

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/PromotedContentPrediction.framework/PromotedContentPrediction`
 
-```diff
+### Section Size Changes
 
- 102.4.0.0.0
--  __TEXT.__text: 0x2ab44
-+  __TEXT.__text: 0x2ab40
-   __TEXT.__objc_methlist: 0x29dc
-   __TEXT.__const: 0x530
-   __TEXT.__cstring: 0x17b1
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2ab44` | `0x2ab40` | **`-0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_29a8c5ad4 -> sub_29b651ad4 : 344 -> 340
+~ sub_29a7aaad4 -> sub_29b534ad4 : 344 -> 340
 ```

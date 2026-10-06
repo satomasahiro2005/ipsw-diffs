@@ -2,20 +2,21 @@
 
 > `/usr/libexec/thermalmonitord`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5256c` | `0x52564` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__const`
 - `__TEXT.__objc_methlist`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
 
-```diff
+### Other Changes
 
- 2083.0.0.0.0
--  __TEXT.__text: 0x5256c
-+  __TEXT.__text: 0x52564
-   __TEXT.__auth_stubs: 0x13d0
-   __TEXT.__objc_stubs: 0x4f00
-   __TEXT.__objc_methlist: 0x4014
+```text
 Functions:
 ~ sub_10000e0dc : 476 -> 472
 ~ sub_10001a7bc -> sub_10001a7b8 : 476 -> 472

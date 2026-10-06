@@ -2,32 +2,15 @@
 
 > `/usr/lib/libmarisa.dylib`
 
-```diff
+### Section Size Changes
 
- 28.0.0.0.0
--  __TEXT.__text: 0xffb4 sha256:5e67d4a59000c6312ba966df95be920354b4b2edf2469bd211177549c7ec7a2c
--  __TEXT.__gcc_except_tab: 0x768 sha256:5b1e9efc049248e9e542713734dcebb416f4802fa566c34f717d6032c35c548b
--  __TEXT.__cstring: 0x59eb sha256:742d9989bc8ac03a8d6e2bf3d734c7b18e6f9a1e453e66a6bbd844980346e60a
-+  __TEXT.__text: 0x10110 sha256:39a3468ff94a43e007dd41bff9af25034b5d10e5425e93f33eb878976f4e8ea8
-+  __TEXT.__gcc_except_tab: 0x768 sha256:62e31a46b68e4e29d413fd1f42705aa5a0b2cc1a0cbd8682d3381fd140a974af
-+  __TEXT.__cstring: 0x59eb sha256:70e6b62aad5befde352b61db255b53ac9b5c2725d8b7f2713fbb5096ee1ec57b
-   __TEXT.__const: 0x8e0 sha256:a9da3209ff75870fe385e81845cea159381f67613ea6617b5310c1c4fedd59c5
--  __TEXT.__unwind_info: 0x688 sha256:688ded0fae81ae71f7354e3c6abe5f70e6262f243d759a07121d47763e92fdc7
-+  __TEXT.__unwind_info: 0x688 sha256:b6032106bc730e08b8009d215767e826c88892f4c9d0cad7ce84322a978e39c5
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x40 sha256:010ccd17d46782cf71ac72bc939c1e1dacdc4cad3b5f5b2b5aee43c4615d0066
--  __AUTH_CONST.__weak_auth_got: 0x38 sha256:1bf45060a491ae3549b4f3d0bf721ea9b004aa9e3c624fc3e41c51ed3e57dccf
-+  __AUTH_CONST.__const: 0x40 sha256:d9747d61925ee6609d2606e2bec9a76d7ed4b41436e67c129211bb04bb6d807d
-+  __AUTH_CONST.__weak_auth_got: 0x38 sha256:9a614c9a27b063f5e09c09d0c11027d3d36197ee3b27bfb2f7b4cddf4e3fd9f7
-   __AUTH_CONST.__auth_got: 0x0
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
--  UUID: BE0BE1CA-6597-3B6C-9FBA-BDE4BC52F108
-+  UUID: C00E9965-F57C-304C-8077-3561CCDDB7D7
-   Functions: 425
-   Symbols:   989
-   CStrings:  131
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xffb4` | `0x10110` | **`+0x15c`** |
+
+### Other Changes
+
+```diff
 Symbols:
 + __ZNSt3__111__sift_downB9fqe220106INS_17_ClassicAlgPolicyELb0ERNS_6__lessIvvEEPNS_4pairIjjEEEEvT2_OT1_NS_15iterator_traitsIS8_E15difference_typeESD_
 + __ZNSt3__116__insertion_sortB9fqe220106INS_17_ClassicAlgPolicyERNS_6__lessIvvEEPNS_4pairIjjEEEEvT1_S8_T0_
@@ -75,5 +58,4 @@ Symbols:
 - __ZNSt3__18__rotateB9fqe220100INS_17_ClassicAlgPolicyEPN6marisa8grimoire4trie13WeightedRangeES6_EENS_4pairIT0_S8_EES8_S8_T1_
 - __ZNSt3__19__sift_upB9fqe220100INS_17_ClassicAlgPolicyERNS_6__lessIvvEEPNS_4pairIjjEEEEvT1_S8_OT0_NS_15iterator_traitsIS8_E15difference_typeE
 - __ZSt28__throw_bad_array_new_lengthB9fqe220100v
-
 ```

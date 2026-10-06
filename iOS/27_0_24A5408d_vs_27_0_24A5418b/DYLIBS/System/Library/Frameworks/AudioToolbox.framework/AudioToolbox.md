@@ -2,46 +2,28 @@
 
 > `/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x26e274` | `0x26e38c` | **`+0x118`** |
+| `__TEXT.__oslogstring` | `0x379b8` | `0x37a40` | **`+0x88`** |
+| `__TEXT.__realtime` | `0x29b20` | `0x29b38` | **`+0x18`** |
+| `__AUTH_CONST.__const` | `0x116f0` | `0x11700` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -1638.104.1.0.0
--  __TEXT.__text: 0x26e274
--  __TEXT.__realtime: 0x29b20
 +1638.104.3.0.0
-+  __TEXT.__text: 0x26e38c
-+  __TEXT.__realtime: 0x29b38
-   __TEXT.__delay_stubs: 0x100
-   __TEXT.__delay_helper: 0x148
-   __TEXT.__objc_methlist: 0x205c
 
-   __TEXT.__dlopen_cstrs: 0x84f
-   __TEXT.__gcc_except_tab: 0x23068
-   __TEXT.__cstring: 0x22b8d
--  __TEXT.__oslogstring: 0x379b8
-+  __TEXT.__oslogstring: 0x37a40
-   __TEXT.__unwind_info: 0xcab8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_superrefs: 0xb8
-   __DATA_CONST.__objc_arraydata: 0x3a8
-   __DATA_CONST.__got: 0xdd0
--  __AUTH_CONST.__const: 0x116f0
-+  __AUTH_CONST.__const: 0x11700
-   __AUTH_CONST.__cfstring: 0x5dc0
-   __AUTH_CONST.__objc_const: 0x30f0
-   __AUTH_CONST.__weak_auth_got: 0x38
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 9941
--  Symbols:   16855
+-  Symbols:   16325
 -  CStrings:  7343
 +  Functions: 9943
-+  Symbols:   16857
++  Symbols:   16327
 +  CStrings:  7344
- 
 Symbols:
 + GCC_except_table10003
 + GCC_except_table10064

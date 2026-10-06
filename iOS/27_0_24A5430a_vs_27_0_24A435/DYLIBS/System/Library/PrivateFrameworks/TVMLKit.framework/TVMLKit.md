@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/TVMLKit.framework/TVMLKit`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_3 : 12 -> 20

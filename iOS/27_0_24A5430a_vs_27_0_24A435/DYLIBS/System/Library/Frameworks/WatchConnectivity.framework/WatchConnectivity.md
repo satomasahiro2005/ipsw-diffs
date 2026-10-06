@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/WatchConnectivity.framework/WatchConnectivity`
 
-```diff
+### Section Size Changes
 
- 224.100.1.0.0
--  __TEXT.__text: 0x2712c
-+  __TEXT.__text: 0x27128
-   __TEXT.__objc_methlist: 0x1f80
-   __TEXT.__const: 0x158
-   __TEXT.__cstring: 0x3534
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2712c` | `0x27128` | **`-0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _LZ4_compress_destSize_generic : 1404 -> 1412
 ~ _OUTLINED_FUNCTION_2 -> _OUTLINED_FUNCTION_15 : 24 -> 16

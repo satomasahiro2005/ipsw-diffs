@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/HealthAppHealthDaemon.framework/HealthAppHealthDaemon`
 
-```diff
+### Section Size Changes
 
- 7027.0.72.2.7
--  __TEXT.__text: 0x45d8c
-+  __TEXT.__text: 0x45da8
-   __TEXT.__objc_methlist: 0x1ddc
-   __TEXT.__const: 0x2180
-   __TEXT.__gcc_except_tab: 0x114
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x45d8c` | `0x45da8` | **`+0x1c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_22f40d2c8 -> sub_22fd1d2c8 : 1940 -> 1952
 ~ sub_22f418070 -> sub_22fd2807c : 576 -> 584

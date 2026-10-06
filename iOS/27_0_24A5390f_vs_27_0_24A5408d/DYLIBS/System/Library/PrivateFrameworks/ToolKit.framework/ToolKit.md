@@ -2,101 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/ToolKit.framework/ToolKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4d47b8` | `0x4e5350` | **`+0x10b98`** |
+| `__AUTH_CONST.__const` | `0x2bdf0` | `0x2c5c8` | **`+0x7d8`** |
+| `__TEXT.__eh_frame` | `0x32ab8` | `0x33178` | **`+0x6c0`** |
+| `__TEXT.__const` | `0x7ade8` | `0x7b1e8` | **`+0x400`** |
+| `__DATA.__bss` | `0x93840` | `0x93bd0` | **`+0x390`** |
+| `__TEXT.__unwind_info` | `0x1abc8` | `0x1af08` | **`+0x340`** |
+| `__AUTH.__data` | `0x2950` | `0x2c40` | **`+0x2f0`** |
+| `__TEXT.__oslogstring` | `0x42bc` | `0x456c` | **`+0x2b0`** |
+| `__TEXT.__swift5_fieldmd` | `0x13d84` | `0x13fb4` | **`+0x230`** |
+| `__TEXT.__constg_swiftt` | `0xeee0` | `0xf08c` | **`+0x1ac`** |
+| `__TEXT.__swift5_typeref` | `0x14730` | `0x148d0` | **`+0x1a0`** |
+| `__AUTH_CONST.__objc_const` | `0x1c70` | `0x1df8` | **`+0x188`** |
+| `__TEXT.__swift5_capture` | `0x3574` | `0x36f8` | **`+0x184`** |
+| `__DATA.__data` | `0xfc40` | `0xfdb0` | **`+0x170`** |
+| `__TEXT.__swift5_reflstr` | `0x9417` | `0x9537` | **`+0x120`** |
+| `__TEXT.__cstring` | `0x93a4` | `0x9494` | **`+0xf0`** |
+| `__DATA_CONST.__objc_selrefs` | `0xd40` | `0xda0` | **`+0x60`** |
+| `__AUTH_CONST.__auth_got` | `0x27b8` | `0x2808` | **`+0x50`** |
+| `__DATA_CONST.__const` | `0x300` | `0x330` | **`+0x30`** |
+| `__TEXT.__swift5_assocty` | `0x29a0` | `0x29d0` | **`+0x30`** |
+| `__TEXT.__swift5_types` | `0x186c` | `0x1894` | **`+0x28`** |
+| `__DATA.__common` | `0x920` | `0x940` | **`+0x20`** |
+| `__TEXT.__swift5_proto` | `0x6ec0` | `0x6ee0` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0xa80` | `0xa9c` | **`+0x1c`** |
+| `__TEXT.__swift_as_ret` | `0x6dc` | `0x6f0` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0xc8` | `0xd8` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x5d0` | `0x5e0` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `0x8c` | `0x90` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -5034.0.12.100.0
--  __TEXT.__text: 0x4d47b8
 +5037.103.100.0.0
-+  __TEXT.__text: 0x4e5350
-   __TEXT.__objc_methlist: 0x240
--  __TEXT.__const: 0x7ade8
--  __TEXT.__swift5_typeref: 0x14730
--  __TEXT.__constg_swiftt: 0xeee0
-+  __TEXT.__const: 0x7b1e8
-+  __TEXT.__swift5_typeref: 0x148d0
-+  __TEXT.__constg_swiftt: 0xf08c
-   __TEXT.__swift5_builtin: 0x5a0
--  __TEXT.__swift5_reflstr: 0x9417
--  __TEXT.__swift5_fieldmd: 0x13d84
--  __TEXT.__swift5_assocty: 0x29a0
--  __TEXT.__cstring: 0x93a4
--  __TEXT.__swift5_proto: 0x6ec0
--  __TEXT.__swift5_types: 0x186c
--  __TEXT.__swift5_capture: 0x3574
-+  __TEXT.__swift5_reflstr: 0x9537
-+  __TEXT.__swift5_fieldmd: 0x13fb4
-+  __TEXT.__swift5_assocty: 0x29d0
-+  __TEXT.__cstring: 0x9494
-+  __TEXT.__swift5_proto: 0x6ee0
-+  __TEXT.__swift5_types: 0x1894
-+  __TEXT.__swift5_capture: 0x36f8
-   __TEXT.__swift5_mpenum: 0x328
--  __TEXT.__swift5_protos: 0x8c
--  __TEXT.__swift_as_entry: 0x5d0
--  __TEXT.__swift_as_ret: 0x6dc
--  __TEXT.__swift_as_cont: 0xa80
--  __TEXT.__oslogstring: 0x42bc
--  __TEXT.__unwind_info: 0x1abc8
--  __TEXT.__eh_frame: 0x32ab8
-+  __TEXT.__swift5_protos: 0x90
-+  __TEXT.__swift_as_entry: 0x5e0
-+  __TEXT.__swift_as_ret: 0x6f0
-+  __TEXT.__swift_as_cont: 0xa9c
-+  __TEXT.__oslogstring: 0x456c
-+  __TEXT.__unwind_info: 0x1af08
-+  __TEXT.__eh_frame: 0x33178
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x300
--  __DATA_CONST.__objc_classlist: 0xc8
-+  __DATA_CONST.__const: 0x330
-+  __DATA_CONST.__objc_classlist: 0xd8
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xd40
-+  __DATA_CONST.__objc_selrefs: 0xda0
-   __DATA_CONST.__objc_protorefs: 0x40
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2bdf0
--  __AUTH_CONST.__objc_const: 0x1c70
--  __AUTH_CONST.__auth_got: 0x27b8
-+  __AUTH_CONST.__const: 0x2c5c8
-+  __AUTH_CONST.__objc_const: 0x1df8
-+  __AUTH_CONST.__auth_got: 0x2808
-   __AUTH.__objc_data: 0x48
--  __AUTH.__data: 0x2950
--  __DATA.__data: 0xfc40
--  __DATA.__bss: 0x93840
--  __DATA.__common: 0x920
-+  __AUTH.__data: 0x2c40
-+  __DATA.__data: 0xfdb0
-+  __DATA.__bss: 0x93bd0
-+  __DATA.__common: 0x940
-   __DATA_DIRTY.__objc_data: 0x3b8
-   __DATA_DIRTY.__data: 0x12c78
-   __DATA_DIRTY.__bss: 0x47380
 
-   - /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf
-   - /System/Library/PrivateFrameworks/LinkMetadata.framework/LinkMetadata
-   - /System/Library/PrivateFrameworks/LinkServices.framework/LinkServices
 +  - /System/Library/PrivateFrameworks/PowerLog.framework/PowerLog
-   - /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices
-   - /System/Library/PrivateFrameworks/VoiceShortcutClient.framework/VoiceShortcutClient
-   - /usr/lib/libMobileGestalt.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 44732
--  Symbols:   10692
+-  Symbols:   10300
 -  CStrings:  1728
 +  Functions: 45121
-+  Symbols:   10753
++  Symbols:   10349
 +  CStrings:  1744
- 
 Symbols:
 + _OBJC_CLASS_$_NSProcessInfo
 + _OUTLINED_FUNCTION_591
@@ -162,18 +115,6 @@ Symbols:
 + _associated conformance 7ToolKit15AutomationStoreC5ErrorOSHAASQ
 + _associated conformance 7ToolKit17IndexingTelemetryO5StageOSHAASQ
 + _associated conformance 7ToolKit17IndexingTelemetryO6ReasonOSHAASQ
-+ _objc_msgSend$alternateNames
-+ _objc_msgSend$fileWithFileURL:filename:typeIdentifier:
-+ _objc_msgSend$integerForKey:
-+ _objc_msgSend$mangledTypeName
-+ _objc_msgSend$metadata
-+ _objc_msgSend$processInfo
-+ _objc_msgSend$processName
-+ _objc_msgSend$setAlternateNames:
-+ _objc_msgSend$setLocale:
-+ _objc_msgSend$setTimeZone:
-+ _objc_msgSend$standardUserDefaults
-+ _objc_msgSend$systemUptime
 + _symbolic $s7ToolKit21IndexingTelemetrySinkP
 + _symbolic SDy_____ypG s11AnyHashableV
 + _symbolic SS3key______5valuet 7ToolKit17IndexingTelemetryO13BundleAccrual33_27AB0BD7097C6579EE10855A2F341946LLV

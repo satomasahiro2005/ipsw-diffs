@@ -2,132 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/CDMFoundation.framework/CDMFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x270dd0` | `0x274b10` | **`+0x3d40`** |
+| `__DATA_DIRTY.__bss` | `0x84e8` | `0x8808` | **`+0x320`** |
+| `__DATA.__bss` | `0x9da0` | `0x9ab0` | **`-0x2f0`** |
+| `__TEXT.__cstring` | `0x1b882` | `0x1ba02` | **`+0x180`** |
+| `__TEXT.__oslogstring` | `0x1dbe3` | `0x1dcdf` | **`+0xfc`** |
+| `__AUTH_CONST.__cfstring` | `0x8080` | `0x8160` | **`+0xe0`** |
+| `__TEXT.__objc_methlist` | `0x859c` | `0x8654` | **`+0xb8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5350` | `0x53f0` | **`+0xa0`** |
+| `__AUTH_CONST.__objc_intobj` | `0x5d0` | `0x660` | **`+0x90`** |
+| `__DATA.__data` | `0x1cf8` | `0x1c68` | **`-0x90`** |
+| `__DATA_DIRTY.__data` | `0x4920` | `0x49a0` | **`+0x80`** |
+| `__TEXT.__gcc_except_tab` | `0xb440` | `0xb4ac` | **`+0x6c`** |
+| `__TEXT.__eh_frame` | `0x7a74` | `0x7a10` | **`-0x64`** |
+| `__AUTH_CONST.__objc_const` | `0x12860` | `0x128c0` | **`+0x60`** |
+| `__DATA_CONST.__objc_arraydata` | `0x1c0` | `0x220` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x1e28` | `0x1e80` | **`+0x58`** |
+| `__AUTH.__objc_data` | `0x11b8` | `0x1168` | **`-0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x49b0` | `0x4a00` | **`+0x50`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x60` | `0xa8` | **`+0x48`** |
+| `__AUTH_CONST.__const` | `0xc840` | `0xc880` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x7e58` | `0x7e80` | **`+0x28`** |
+| `__TEXT.__swift5_typeref` | `0x421e` | `0x423c` | **`+0x1e`** |
+| `__DATA_CONST.__got` | `0x26b0` | `0x26c8` | **`+0x18`** |
+| `__TEXT.__const` | `0xd360` | `0xd370` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x4e50` | `0x4e58` | **`+0x8`** |
+| `__DATA.__common` | `0x380` | `0x378` | **`-0x8`** |
+| `__DATA.__objc_ivar` | `0x7a4` | `0x7ac` | **`+0x8`** |
+| `__DATA_DIRTY.__common` | `0x4a8` | `0x4b0` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x434` | `0x42c` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x270dd0
--  __TEXT.__objc_methlist: 0x859c
--  __TEXT.__const: 0xd360
--  __TEXT.__swift5_typeref: 0x421e
-+  __TEXT.__text: 0x274b10
-+  __TEXT.__objc_methlist: 0x8654
-+  __TEXT.__const: 0xd370
-+  __TEXT.__swift5_typeref: 0x423c
-   __TEXT.__swift5_fieldmd: 0x3d80
-   __TEXT.__constg_swiftt: 0x55d4
-   __TEXT.__swift5_protos: 0x98
--  __TEXT.__cstring: 0x1b882
-+  __TEXT.__cstring: 0x1ba02
-   __TEXT.__swift5_types: 0x574
-   __TEXT.__swift5_proto: 0x9ac
-   __TEXT.__swift5_reflstr: 0x306a
--  __TEXT.__oslogstring: 0x1dbe3
-+  __TEXT.__oslogstring: 0x1dcdf
-   __TEXT.__swift5_assocty: 0x438
-   __TEXT.__swift5_capture: 0x196c
-   __TEXT.__swift5_builtin: 0xf0
-   __TEXT.__swift5_mpenum: 0x3c
-   __TEXT.__swift_as_entry: 0x23c
-   __TEXT.__swift_as_ret: 0x270
--  __TEXT.__swift_as_cont: 0x434
--  __TEXT.__gcc_except_tab: 0xb440
-+  __TEXT.__swift_as_cont: 0x42c
-+  __TEXT.__gcc_except_tab: 0xb4ac
-   __TEXT.__ustring: 0x17c
--  __TEXT.__unwind_info: 0x7e58
--  __TEXT.__eh_frame: 0x7a74
-+  __TEXT.__unwind_info: 0x7e80
-+  __TEXT.__eh_frame: 0x7a10
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1e28
-+  __DATA_CONST.__const: 0x1e80
-   __DATA_CONST.__objc_classlist: 0x8d0
-   __DATA_CONST.__objc_catlist: 0x50
-   __DATA_CONST.__objc_protolist: 0x148
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5350
-+  __DATA_CONST.__objc_selrefs: 0x53f0
-   __DATA_CONST.__objc_protorefs: 0x88
-   __DATA_CONST.__objc_superrefs: 0x408
--  __DATA_CONST.__objc_arraydata: 0x1c0
--  __DATA_CONST.__got: 0x26b0
--  __AUTH_CONST.__const: 0xc840
--  __AUTH_CONST.__cfstring: 0x8080
--  __AUTH_CONST.__objc_const: 0x12860
-+  __DATA_CONST.__objc_arraydata: 0x220
-+  __DATA_CONST.__got: 0x26c8
-+  __AUTH_CONST.__const: 0xc880
-+  __AUTH_CONST.__cfstring: 0x8160
-+  __AUTH_CONST.__objc_const: 0x128c0
-   __AUTH_CONST.__weak_auth_got: 0x28
--  __AUTH_CONST.__objc_arrayobj: 0x60
--  __AUTH_CONST.__objc_intobj: 0x5d0
-+  __AUTH_CONST.__objc_arrayobj: 0xa8
-+  __AUTH_CONST.__objc_intobj: 0x660
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__objc_floatobj: 0x20
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x4e50
--  __AUTH.__objc_data: 0x11b8
-+  __AUTH_CONST.__auth_got: 0x4e58
-+  __AUTH.__objc_data: 0x1168
-   __AUTH.__data: 0x1090
--  __DATA.__objc_ivar: 0x7a4
--  __DATA.__data: 0x1cf8
--  __DATA.__bss: 0x9da0
--  __DATA.__common: 0x380
--  __DATA_DIRTY.__objc_data: 0x49b0
--  __DATA_DIRTY.__data: 0x4920
--  __DATA_DIRTY.__bss: 0x84e8
--  __DATA_DIRTY.__common: 0x4a8
-+  __DATA.__objc_ivar: 0x7ac
-+  __DATA.__data: 0x1c68
-+  __DATA.__bss: 0x9ab0
-+  __DATA.__common: 0x378
-+  __DATA_DIRTY.__objc_data: 0x4a00
-+  __DATA_DIRTY.__data: 0x49a0
-+  __DATA_DIRTY.__bss: 0x8808
-+  __DATA_DIRTY.__common: 0x4b0
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+-3600.31.3.0.0
++3600.31.8.0.0
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12808
--  Symbols:   25319
--  CStrings:  5594
+-  Symbols:   8832
+-  CStrings:  4575
 +  Functions: 12838
-+  Symbols:   25415
-+  CStrings:  5613
- 
-Sections:
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH.__data : content changed
++  Symbols:   8865
++  CStrings:  4587
 Symbols:
 + +[CDMAssetsManager getAssetSetsInCacheForGraphName:locale:]
 + +[CDMAssetsManager getHashKeyForCDMAssetsInfo:locale:]
@@ -429,28 +350,6 @@ Symbols:
 + _dataDetectorWrapperAllowList.onceToken
 + _kCDMMagicComposeSentinelCreateEvent
 + _kCDMMagicComposeSentinelCreateReminder
-+ _objc_msgSend$addIndex:
-+ _objc_msgSend$annotationAttachmentPriorityForElementId:
-+ _objc_msgSend$appendOverrideIds
-+ _objc_msgSend$attachOverrideIdentifier:overrideId:
-+ _objc_msgSend$charRange:to:hasOnlyNonSignificantTokensIn:
-+ _objc_msgSend$computeDescendantAlignmentRange:nodeIndex:outStart:outEnd:
-+ _objc_msgSend$copyDataDetectorWrapperAlignments:entitySpans:fromMatchingSpans:toParseGraph:
-+ _objc_msgSend$copyVocPrepositionEntitySpans:fromMatchingSpans:toParseGraph:tokenChain:
-+ _objc_msgSend$environment
-+ _objc_msgSend$getAssetSetsInCacheForGraphName:locale:
-+ _objc_msgSend$getHashKeyForCDMAssetsInfo:locale:
-+ _objc_msgSend$initWithParsesForReplacement:parsesForAppending:replaceOverrideId:appendOverrideIds:
-+ _objc_msgSend$keyWithoutBugFixSuffix:
-+ _objc_msgSend$matchOverride:shouldAppend:replaceOverrideId:appendOverrideIds:
-+ _objc_msgSend$matchWithInputs:shouldAppend:replaceOverrideId:appendOverrideIds:
-+ _objc_msgSend$removeFromLocal:andFromList:predicate:
-+ _objc_msgSend$removeObjectsAtIndexes:
-+ _objc_msgSend$replaceOverrideId
-+ _objc_msgSend$runCcqrService:nluRequest:tokenResponse:previousTurnTokenizationResponseCommand:rdResponse:requestLink:locale:inferenceRan:
-+ _objc_msgSend$setEndUnicodeScalarIndex:
-+ _objc_msgSend$setIdentifiers:
-+ _objc_msgSend$setStartUnicodeScalarIndex:
 + _objc_setProperty_nonatomic_copy
 + _symbolic Si6offset______7elementt 12SiriNLUTypes0A23_Nlu_External_UserParseV
 + _symbolic _____yypG s23_ContiguousArrayStorageC
@@ -726,11 +625,6 @@ Symbols:
 - __INSTANCE_METHODS_SiriNLUOverrideProxy
 - ___block_descriptor_96_e8_32s40s48s56s64r72r80r88r_e29_v16?0"CDMServiceGraphNode"8lr64l8s32l8s40l8r72l8r80l8r88l8s48l8s56l8
 - _get_type_metadata 15Synchronization5MutexVySbG noncopyable
-- _objc_msgSend$arguments
-- _objc_msgSend$getAssetSetsInCacheForGraphName:
-- _objc_msgSend$getHashKeyForCDMAssetsInfo:
-- _objc_msgSend$matchWithInputs:shouldAppend:
-- _objc_msgSend$runCcqrService:nluRequest:tokenResponse:previousTurnTokenizationResponseCommand:rdResponse:requestLink:locale:
 - _swift_runtimeSupportsNoncopyableTypes
 - _swift_willThrowTypedImpl
 CStrings:
@@ -758,5 +652,4 @@ CStrings:
 - "+[CDMAssetsManager getAssetSetsInCacheForGraphName:]"
 - "+[CDMServiceGraphUtil runCcqrService:nluRequest:tokenResponse:previousTurnTokenizationResponseCommand:rdResponse:requestLink:locale:]"
 - "/System/Developer/usr/local/bin/xctest"
-
 ```

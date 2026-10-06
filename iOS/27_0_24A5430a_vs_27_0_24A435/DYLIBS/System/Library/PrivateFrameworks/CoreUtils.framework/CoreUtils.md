@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CoreUtils.framework/CoreUtils`
 
-```diff
+### Section Size Changes
 
- 900.58.0.0.0
--  __TEXT.__text: 0x11758c
-+  __TEXT.__text: 0x117568
-   __TEXT.__objc_methlist: 0xa040
-   __TEXT.__cstring: 0x1d6f7
-   __TEXT.__const: 0x229c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x11758c` | `0x117568` | **`-0x24`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[CUBluetoothScalablePipe _prepareWriteRequest:error:] : 672 -> 664
 ~ -[CUBluetoothScalablePipe _writeIOArray:ioCount:] : 160 -> 148

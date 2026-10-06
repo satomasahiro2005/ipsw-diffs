@@ -2,64 +2,33 @@
 
 > `/usr/lib/swift/libswiftCore.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4aff2c` | `0x4b01e0` | **`+0x2b4`** |
+| `__DATA.__bss` | `0xf178` | `0xf068` | **`-0x110`** |
+| `__DATA_DIRTY.__bss` | `0x179e0` | `0x17ac0` | **`+0xe0`** |
+| `__TEXT.__eh_frame` | `0x8840` | `0x8770` | **`-0xd0`** |
+| `__AUTH_CONST.__const` | `0x16468` | `0x16520` | **`+0xb8`** |
+| `__TEXT.__cstring` | `0x12e25` | `0x12e65` | **`+0x40`** |
+| `__TEXT.__objc_methlist` | `0x1e1c` | `0x1e54` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0xbd00` | `0xbd20` | **`+0x20`** |
+| `__DATA.__data` | `0xba4` | `0xb9c` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -6.4.0.34.1
--  __TEXT.__text: 0x4833b0
 +6.4.2.1.7
-+  __TEXT.__text: 0x483654
-   __TEXT.__lazy_helpers: 0x348
-   __TEXT.__init_offsets: 0x18
--  __TEXT.__objc_methlist: 0x1e1c
--  __TEXT.__cstring: 0x12e25
-+  __TEXT.__objc_methlist: 0x1e54
-+  __TEXT.__cstring: 0x12e65
-   __TEXT.__const: 0xbb65b
-   __TEXT.__oslogstring: 0xb7
-   __TEXT.__gcc_except_tab: 0xd8
 
-   __TEXT.__swift5_proto: 0x1558
-   __TEXT.__swift5_types: 0x948
-   __TEXT.__swift5_types2: 0x28
--  __TEXT.__unwind_info: 0xf080
--  __TEXT.__eh_frame: 0x8868
-+  __TEXT.__unwind_info: 0xf0b8
-+  __TEXT.__eh_frame: 0x8798
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_protorefs: 0x58
-   __DATA_CONST.__objc_superrefs: 0x40
-   __DATA_CONST.__got: 0x58
--  __AUTH_CONST.__const: 0x16468
-+  __AUTH_CONST.__const: 0x16520
-   __AUTH_CONST.__objc_const: 0x4b30
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__lazy_load_got: 0x48
-
-   __AUTH.__data: 0xe760
-   __DATA.__objc_ivar: 0x38
-   __DATA.__crash_info: 0x40
--  __DATA.__data: 0xba4
-+  __DATA.__data: 0xb9c
-   __DATA.__common: 0xb0
-   __DATA_DIRTY.__objc_data: 0xe08
-   __DATA_DIRTY.__data: 0x33f8
--  __DATA_DIRTY.__bss: 0x179e0
-+  __DATA_DIRTY.__bss: 0x17ac0
-   __DATA_DIRTY.__common: 0x58
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libswiftPrespecialized.dylib
--  Functions: 23245
--  Symbols:   40197
+-  Functions: 23237
+-  Symbols:   40195
 -  CStrings:  2772
-+  Functions: 23282
-+  Symbols:   40235
++  Functions: 23278
++  Symbols:   40233
 +  CStrings:  2773
- 
 Symbols:
 + +[__SwiftNativeNSArrayBase allocWithZone:]
 + +[__SwiftNativeNSDictionaryBase allocWithZone:]

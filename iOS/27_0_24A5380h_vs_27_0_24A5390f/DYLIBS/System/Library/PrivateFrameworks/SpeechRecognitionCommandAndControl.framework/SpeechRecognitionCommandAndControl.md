@@ -2,122 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/SpeechRecognitionCommandAndControl.framework/SpeechRecognitionCommandAndControl`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1215cc` | `0x122c48` | **`+0x167c`** |
+| `__TEXT.__swift5_typeref` | `0x8eaa` | `0x92d6` | **`+0x42c`** |
+| `__TEXT.__oslogstring` | `0x40ca` | `0x41da` | **`+0x110`** |
+| `__AUTH_CONST.__objc_const` | `0x118e0` | `0x119e8` | **`+0x108`** |
+| `__TEXT.__objc_methlist` | `0xbf14` | `0xc004` | **`+0xf0`** |
+| `__DATA.__data` | `0x3270` | `0x32f0` | **`+0x80`** |
+| `__TEXT.__const` | `0x47d4` | `0x4854` | **`+0x80`** |
+| `__AUTH_CONST.__const` | `0x4f30` | `0x4eb8` | **`-0x78`** |
+| `__AUTH.__objc_data` | `0x4788` | `0x47f0` | **`+0x68`** |
+| `__TEXT.__unwind_info` | `0x4358` | `0x43b8` | **`+0x60`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7e78` | `0x7ed0` | **`+0x58`** |
+| `__TEXT.__cstring` | `0x95c7` | `0x9617` | **`+0x50`** |
+| `__AUTH_CONST.__cfstring` | `0x9860` | `0x98a0` | **`+0x40`** |
+| `__AUTH_CONST.__objc_intobj` | `0x3c0` | `0x390` | **`-0x30`** |
+| `__TEXT.__swift5_capture` | `0xaf8` | `0xac8` | **`-0x30`** |
+| `__TEXT.__gcc_except_tab` | `0x2440` | `0x2468` | **`+0x28`** |
+| `__AUTH_CONST.__auth_got` | `0x1f50` | `0x1f30` | **`-0x20`** |
+| `__DATA.__common` | `0x2a8` | `0x298` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x1558` | `0x1548` | **`-0x10`** |
+| `__TEXT.__constg_swiftt` | `0x20d0` | `0x20e0` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x1014` | `0x1020` | **`+0xc`** |
+| `__DATA.__objc_ivar` | `0xaa8` | `0xab0` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x538` | `0x540` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x2a8` | `0x2b0` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__TEXT.__swift5_reflstr`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH.__data`
-- `__DATA.__objc_stublist`
+
+### Other Changes
 
 ```diff
 
 -183.0.0.0.0
--  __TEXT.__text: 0x1215cc
--  __TEXT.__objc_methlist: 0xbf14
--  __TEXT.__const: 0x47d4
--  __TEXT.__oslogstring: 0x40ca
--  __TEXT.__cstring: 0x95c7
--  __TEXT.__gcc_except_tab: 0x2440
 +185.0.0.0.0
-+  __TEXT.__text: 0x122c48
-+  __TEXT.__objc_methlist: 0xc004
-+  __TEXT.__const: 0x4854
-+  __TEXT.__oslogstring: 0x41da
-+  __TEXT.__cstring: 0x9617
-+  __TEXT.__gcc_except_tab: 0x2468
-   __TEXT.__ustring: 0x96
-   __TEXT.__dlopen_cstrs: 0x5e
--  __TEXT.__constg_swiftt: 0x20d0
--  __TEXT.__swift5_typeref: 0x8eaa
-+  __TEXT.__constg_swiftt: 0x20e0
-+  __TEXT.__swift5_typeref: 0x92d6
-   __TEXT.__swift5_builtin: 0x104
-   __TEXT.__swift5_reflstr: 0xdb8
--  __TEXT.__swift5_fieldmd: 0x1014
-+  __TEXT.__swift5_fieldmd: 0x1020
-   __TEXT.__swift5_assocty: 0x458
--  __TEXT.__swift5_capture: 0xaf8
-+  __TEXT.__swift5_capture: 0xac8
-   __TEXT.__swift5_proto: 0x164
-   __TEXT.__swift5_types: 0x158
-   __TEXT.__swift_as_entry: 0x3c
-   __TEXT.__swift_as_ret: 0x4c
-   __TEXT.__swift_as_cont: 0x74
--  __TEXT.__unwind_info: 0x4358
-+  __TEXT.__unwind_info: 0x43b8
-   __TEXT.__eh_frame: 0x1220
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x22f8
--  __DATA_CONST.__objc_classlist: 0x538
-+  __DATA_CONST.__objc_classlist: 0x540
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x1d8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7e78
-+  __DATA_CONST.__objc_selrefs: 0x7ed0
-   __DATA_CONST.__objc_protorefs: 0x30
--  __DATA_CONST.__objc_superrefs: 0x2a8
-+  __DATA_CONST.__objc_superrefs: 0x2b0
-   __DATA_CONST.__objc_arraydata: 0x8a0
--  __DATA_CONST.__got: 0x1558
--  __AUTH_CONST.__const: 0x4f30
--  __AUTH_CONST.__cfstring: 0x9860
--  __AUTH_CONST.__objc_const: 0x118e0
--  __AUTH_CONST.__objc_intobj: 0x3c0
-+  __DATA_CONST.__got: 0x1548
-+  __AUTH_CONST.__const: 0x4eb8
-+  __AUTH_CONST.__cfstring: 0x98a0
-+  __AUTH_CONST.__objc_const: 0x119e8
-+  __AUTH_CONST.__objc_intobj: 0x390
-   __AUTH_CONST.__objc_doubleobj: 0x70
-   __AUTH_CONST.__objc_arrayobj: 0x120
-   __AUTH_CONST.__objc_dictobj: 0xf0
--  __AUTH_CONST.__auth_got: 0x1f50
--  __AUTH.__objc_data: 0x4788
-+  __AUTH_CONST.__auth_got: 0x1f30
-+  __AUTH.__objc_data: 0x47f0
-   __AUTH.__data: 0x1710
--  __DATA.__objc_ivar: 0xaa8
--  __DATA.__data: 0x3270
-+  __DATA.__objc_ivar: 0xab0
-+  __DATA.__data: 0x32f0
-   __DATA.__objc_stublist: 0x10
-   __DATA.__bss: 0x32f0
--  __DATA.__common: 0x2a8
-+  __DATA.__common: 0x298
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7313
--  Symbols:   17596
+-  Symbols:   14741
 -  CStrings:  1843
 +  Functions: 7339
-+  Symbols:   17688
++  Symbols:   14820
 +  CStrings:  1848
- 
 Symbols:
 + +[CACSpokenCommandManager doesEvaluatorKey:matchValue:cache:]
 + -[CACCommandRecognizer isAppropriateForContextWithEvaluatorCache:]
@@ -269,27 +199,6 @@ Symbols:
 + ___swift_closure_destructor.201Tm
 + _get_witness_table 7SwiftUI6ZStackVyAA12TupleContentVyAA08ModifiedE0VyAGyAGyACyAEyAA7ForEachVySay34SpeechRecognitionCommandAndControl19CACDebugOverlayRectVG10Foundation4UUIDVAGyAGyAA15StrokeShapeViewVyAA16RoundedRectangleVAA5ColorVAA05EmptyU0VGAA12_FrameLayoutVGAA15_PositionLayoutVGG_A4_AIyAmpGyAGyARyAT6_InsetVAvXGA_GA2_GGQPGGAA23_CompositingGroupEffectVGAA14_OpacityEffectVGAA30_SafeAreaRegionsIgnoringLayoutVG_AA6VStackVyAEyAGyAGyAA6HStackVyAEyAJ19AudioInputIndicator33_8370FA84EC49A4B69B5523418F65F539LLV_AJ12VCIIndicatorA27_LLVAJ13RootIndicatorA27_LLVSgAA6SpacerVAJ18GroundingIndicatorA27_LLVAJ16RefreshIndicatorA27_LLVQPGGAA14_PaddingLayoutVGA43_G_AGyAGyAJ07CaptionU0A27_LLVA43_GA43_GSgA35_QPGGQPGGAA0U0HPyHC
 + _kSRUISyncReasonAutomationChanged_block_invoke.sDelayLeadingTextCalcUntilReferenceDate
-+ _objc_msgSend$_currentShellApplications
-+ _objc_msgSend$_processScrollViews:
-+ _objc_msgSend$accessibilitySenderID
-+ _objc_msgSend$allDirectlyScrollableViews
-+ _objc_msgSend$confirmationAlertWindow
-+ _objc_msgSend$defaultSystemShellCurrentApplications
-+ _objc_msgSend$doesEvaluatorKey:matchValue:cache:
-+ _objc_msgSend$fadeGroundingIndicator
-+ _objc_msgSend$flashRefreshIndicators
-+ _objc_msgSend$forceSynchronizeRecognizersForBuiltInLMIdentifiers:
-+ _objc_msgSend$initWithScene:
-+ _objc_msgSend$isAppropriateForContextWithEvaluatorCache:
-+ _objc_msgSend$matchResultForEvaluatorKey:evaluatorValue:
-+ _objc_msgSend$removeAllScrollElements
-+ _objc_msgSend$screenElementsForScrolling
-+ _objc_msgSend$setDebuggingScrollViews:
-+ _objc_msgSend$setMatchResult:forEvaluatorKey:evaluatorValue:
-+ _objc_msgSend$showGroundingIndicator
-+ _objc_msgSend$synchronizeWithReason:evaluatorCache:
-+ _objc_msgSend$systemShellCurrentApplications
-+ _objc_msgSend$untrackModalAlertAndRefreshIfNecessary:
 + _sCACAXMainThreadCallbackBracketLock
 + _symbolic _____yAAyAAy_____y_____y_____ySay_____G_____AAyAAy_____y_______________G_____G_____GG_AqDyAfgAyAAyAHy_____AjKGAMGAOGGQPGG_____G_____G_____G 7SwiftUI15ModifiedContentV AA6ZStackV AA05TupleD0V AA7ForEachV 34SpeechRecognitionCommandAndControl19CACDebugOverlayRectV 10Foundation4UUIDV AA15StrokeShapeViewV AA16RoundedRectangleV AA5ColorV AA05EmptyU0V AA12_FrameLayoutV AA15_PositionLayoutV AS6_InsetV AA23_CompositingGroupEffectV AA14_OpacityEffectV AA30_SafeAreaRegionsIgnoringLayoutV
 + _symbolic _____yAAyAAy_____y_____y_____ySay_____G_____AAyAAy_____y_______________G_____G_____GG_AqDyAfgAyAAyAHy_____AjKGAMGAOGGQPGG_____G_____G_____G______yACyAAyAAy_____yACy________________Sg_______________QPGG_____GA14_G_AAyAAy_____A14_GA14_GSgA9_QPGGt 7SwiftUI15ModifiedContentV AA6ZStackV AA05TupleD0V AA7ForEachV 34SpeechRecognitionCommandAndControl19CACDebugOverlayRectV 10Foundation4UUIDV AA15StrokeShapeViewV AA16RoundedRectangleV AA5ColorV AA05EmptyU0V AA12_FrameLayoutV AA15_PositionLayoutV AS6_InsetV AA23_CompositingGroupEffectV AA14_OpacityEffectV AA30_SafeAreaRegionsIgnoringLayoutV AA6VStackV AA6HStackV AJ19AudioInputIndicator33_8370FA84EC49A4B69B5523418F65F539LLV AJ12VCIIndicatorA13_LLV AJ13RootIndicatorA13_LLV AA6SpacerV AJ18GroundingIndicatorA13_LLV AJ16RefreshIndicatorA13_LLV AA14_PaddingLayoutV AJ07CaptionU0A13_LLV
@@ -390,14 +299,6 @@ Symbols:
 - ___65-[CACSpokenCommandManager allAncestorAndDescendantScrollElements]_block_invoke
 - ___swift_closure_destructor.210Tm
 - _get_witness_table 7SwiftUI6ZStackVyAA12TupleContentVyAA08ModifiedE0VyACyAEyAGyAA6CanvasVyAA9EmptyViewVGAA14_OpacityEffectVG_A2OQPGGAA30_SafeAreaRegionsIgnoringLayoutVG_AA6VStackVyAEyAGyAGyAA6HStackVyAEy34SpeechRecognitionCommandAndControl19AudioInputIndicator33_8370FA84EC49A4B69B5523418F65F539LLV_AY12VCIIndicatorA_LLVAY04RootZ0A_LLVSgAA6SpacerVAY09GroundingZ0A_LLVAY07RefreshZ0A_LLVQPGGAA08_PaddingP0VGA15_G_AGyAGyAY07CaptionI0A_LLVA15_GA15_GSgA7_QPGGQPGGAA0I0HPyHC
-- _objc_msgSend$_allScrollViews
-- _objc_msgSend$_processScrollViews:horizontalScrollViews:verticalScrollViews:excludeParentElement:
-- _objc_msgSend$allAncestorAndDescendantScrollElements
-- _objc_msgSend$currentApplications
-- _objc_msgSend$elementFrame
-- _objc_msgSend$scrollViewsForAutoScroll
-- _objc_msgSend$senderID
-- _objc_msgSend$synchronizeWithReason:
 - _sEvaluatorResultCache
 - _sEvaluatorResultCache_block_invoke.sDelayLeadingTextCalcUntilReferenceDate
 - _sEvaluatorValueCache

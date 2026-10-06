@@ -2,27 +2,28 @@
 
 > `/usr/lib/libMTLHud.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__objc_methlist`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x317d8` | `0x3181c` | **`+0x44`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__init_offsets`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 5.0.24.0.0
--  __TEXT.__text: 0x317d8
-+  __TEXT.__text: 0x3181c
-   __TEXT.__auth_stubs: 0xcc0
-   __TEXT.__objc_stubs: 0x3ba0
-   __TEXT.__init_offsets: 0x4
+```text
 Functions:
 ~ __ZNSt3__16vectorI29HUDUISimpleTimelineTrackChunkNS_9allocatorIS1_EEE6resizeEm : 284 -> 288
 ~ __ZNSt3__16vectorI24HUDUISimpleTimelineTrackNS_9allocatorIS1_EEE6resizeEm : 372 -> 376

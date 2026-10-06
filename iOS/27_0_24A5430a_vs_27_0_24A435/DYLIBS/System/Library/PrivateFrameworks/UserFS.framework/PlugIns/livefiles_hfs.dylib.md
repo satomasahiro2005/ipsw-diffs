@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/UserFS.framework/PlugIns/livefiles_hfs.dylib`
 
-```diff
+### Section Size Changes
 
- 751.0.0.0.0
--  __TEXT.__text: 0x3d480
-+  __TEXT.__text: 0x3d4d8
-   __TEXT.__const: 0x4e60
-   __TEXT.__oslogstring: 0x5ed7
-   __TEXT.__cstring: 0x270a
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3d480` | `0x3d4d8` | **`+0x58`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _utf8_decodestr : 1592 -> 1596
 ~ _priortysort : 156 -> 164

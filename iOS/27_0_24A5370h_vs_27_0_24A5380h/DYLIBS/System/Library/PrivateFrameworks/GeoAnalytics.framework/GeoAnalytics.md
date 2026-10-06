@@ -2,100 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/GeoAnalytics.framework/GeoAnalytics`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8f750` | `0x92dc4` | **`+0x3674`** |
+| `__DATA_CONST.__const` | `0x6448` | `0x68d8` | **`+0x490`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3e20` | `0x4090` | **`+0x270`** |
+| `__TEXT.__cstring` | `0xe196` | `0xe3b4` | **`+0x21e`** |
+| `__AUTH_CONST.__const` | `0x2cd8` | `0x2ed8` | **`+0x200`** |
+| `__DATA_DIRTY.__objc_data` | `0x780` | `0x960` | **`+0x1e0`** |
+| `__AUTH_CONST.__cfstring` | `0x13b20` | `0x13ce0` | **`+0x1c0`** |
+| `__AUTH.__objc_data` | `0x1e0` | `0x50` | **`-0x190`** |
+| `__AUTH_CONST.__objc_const` | `0x28d0` | `0x2960` | **`+0x90`** |
+| `__DATA_CONST.__got` | `0x628` | `0x698` | **`+0x70`** |
+| `__TEXT.__objc_methlist` | `0x231c` | `0x237c` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0xf88` | `0xfe8` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0xa88` | `0xae0` | **`+0x58`** |
+| `__AUTH_CONST.__objc_intobj` | `0x1c50` | `0x1c68` | **`+0x18`** |
+| `__DATA.__bss` | `0xf8` | `0x110` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0xf0` | `0xf8` | **`+0x8`** |
+| `__DATA_DIRTY.__bss` | `0x170` | `0x178` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x8f750
--  __TEXT.__objc_methlist: 0x231c
-+  __TEXT.__text: 0x92dc4
-+  __TEXT.__objc_methlist: 0x237c
-   __TEXT.__const: 0x74c
-   __TEXT.__dlopen_cstrs: 0x126
-   __TEXT.__swift5_typeref: 0x4e
+-2073.30.6.5.1
++2075.30.6.12.3
 
-   __TEXT.__swift5_fieldmd: 0x44
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_types: 0x8
--  __TEXT.__gcc_except_tab: 0xa88
--  __TEXT.__cstring: 0xe196
-+  __TEXT.__gcc_except_tab: 0xae0
-+  __TEXT.__cstring: 0xe3b4
-   __TEXT.__oslogstring: 0x1035
--  __TEXT.__unwind_info: 0xf88
-+  __TEXT.__unwind_info: 0xfe8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x6448
--  __DATA_CONST.__objc_classlist: 0xf0
-+  __DATA_CONST.__const: 0x68d8
-+  __DATA_CONST.__objc_classlist: 0xf8
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3e20
-+  __DATA_CONST.__objc_selrefs: 0x4090
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x98
-   __DATA_CONST.__objc_arraydata: 0xe78
--  __DATA_CONST.__got: 0x628
--  __AUTH_CONST.__const: 0x2cd8
--  __AUTH_CONST.__cfstring: 0x13b20
--  __AUTH_CONST.__objc_const: 0x28d0
--  __AUTH_CONST.__objc_intobj: 0x1c50
-+  __DATA_CONST.__got: 0x698
-+  __AUTH_CONST.__const: 0x2ed8
-+  __AUTH_CONST.__cfstring: 0x13ce0
-+  __AUTH_CONST.__objc_const: 0x2960
-+  __AUTH_CONST.__objc_intobj: 0x1c68
-   __AUTH_CONST.__objc_dictobj: 0x4b0
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__objc_arrayobj: 0x300
-   __AUTH_CONST.__auth_got: 0x4e8
--  __AUTH.__objc_data: 0x1e0
-+  __AUTH.__objc_data: 0x50
-   __AUTH.__data: 0x40
-   __DATA.__objc_ivar: 0x1b0
-   __DATA.__data: 0x310
--  __DATA.__bss: 0xf8
-+  __DATA.__bss: 0x110
-   __DATA.__common: 0x8
--  __DATA_DIRTY.__objc_data: 0x780
-+  __DATA_DIRTY.__objc_data: 0x960
-   __DATA_DIRTY.__data: 0x10
--  __DATA_DIRTY.__bss: 0x170
-+  __DATA_DIRTY.__bss: 0x178
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 1449
--  Symbols:   6388
--  CStrings:  5231
+-  Symbols:   2887
+-  CStrings:  2709
 +  Functions: 1484
-+  Symbols:   6605
-+  CStrings:  5262
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__objc_ivar : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   2971
++  CStrings:  2726
 Symbols:
 + +[GEOAPFMPortal captureACSNFinderDecisionWithOutcome_outcome:outcome_publishPolicy:outcome_timeSinceLastPublishBucket:env_densityBucket:env_effectiveDensityBucket:env_finderCountBucket:env_beaconCountBucket:env_nearOwnerFractionBucket:content_observationCountBucket:qual_compositeQualityScore:qual_accuracyScore:qual_recencyScore:qual_motionScore:qual_publishLocationAccuracyBucket:qual_publishLocationRecencyBucket:GEOFMBudget_budgetTotalDaily:decision_electionWeight:decision_timeSinceLocationChange:decision_timeSinceLastPublishRaw:decision_atKnownLocation:cfg_configVersion:cfg_experimentGroup:ctxt_deviceCategory:ctxt_powerMode:ctxt_onBattery:ctxt_onWifi:ctxt_motionState:ctxt_geoCoarse:completion:]
 + +[GEOAPFMPortal captureACSNFinderDensityWithSample_sampleWindowSeconds:sample_densityBucket:sample_effectiveDensityBucket:sample_finderCountBucket:sample_beaconCountBucket:sample_nearOwnerFractionBucket:sample_scanCoverageFraction:cfg_configVersion:cfg_experimentGroup:ctxt_deviceCategory:ctxt_powerMode:ctxt_onBattery:ctxt_onWifi:ctxt_motionState:ctxt_geoCoarse:completion:]
@@ -373,80 +314,6 @@ Symbols:
 + ___block_descriptor_48_e8_32r40r_e61_v84?0d8{GEOSessionID=QQ}16d32d40I48{GEOSessionID=QQ}52d68d76lr32l8r40l8
 + ___block_descriptor_56_e8_32r40r48r_e39_v60?0d8{GEOSessionID=QQ}16d32d40I48Q52lr32l8r40l8r48l8
 + ___block_descriptor_56_e8_32s40r48r_e30_v28?0"GEOLogMsgState"8I16Q20ls32l8r40l8r48l8
-+ _objc_msgSend$acsnFinderSessionValues:
-+ _objc_msgSend$budget
-+ _objc_msgSend$content
-+ _objc_msgSend$context
-+ _objc_msgSend$densitySample
-+ _objc_msgSend$finderDensity
-+ _objc_msgSend$finderDensityConfig
-+ _objc_msgSend$hasMapUiLayoutSize
-+ _objc_msgSend$instantQuality
-+ _objc_msgSend$layoutSizeAsGEOLayoutSize
-+ _objc_msgSend$mapUiLayoutSize
-+ _objc_msgSend$outcome
-+ _objc_msgSend$publishOutcome
-+ _objc_msgSend$publishedDecision
-+ _objc_msgSend$reportLogMsgEvent:uploadBatchId:
-+ _objc_msgSend$serverGuidance
-+ _objc_msgSend$sessionId
-+ _objc_msgSend$setAccuracyScore:
-+ _objc_msgSend$setAtKnownLocation:
-+ _objc_msgSend$setBeaconCountBucket:
-+ _objc_msgSend$setBudget:
-+ _objc_msgSend$setBudgetTotalDaily:
-+ _objc_msgSend$setCompositeQualityScore:
-+ _objc_msgSend$setConfigVersion:
-+ _objc_msgSend$setContent:
-+ _objc_msgSend$setContext:
-+ _objc_msgSend$setDensityBucket:
-+ _objc_msgSend$setDensitySample:
-+ _objc_msgSend$setDeviceCategory:
-+ _objc_msgSend$setEffectiveDensityBucket:
-+ _objc_msgSend$setElectionWeight:
-+ _objc_msgSend$setEnvironment:
-+ _objc_msgSend$setErrorCode:
-+ _objc_msgSend$setErrorDomain:
-+ _objc_msgSend$setExperimentGroup:
-+ _objc_msgSend$setFinderCountBucket:
-+ _objc_msgSend$setFinderDensity:
-+ _objc_msgSend$setFinderDensityConfig:
-+ _objc_msgSend$setGeoCoarse:
-+ _objc_msgSend$setGuidanceConflict:
-+ _objc_msgSend$setInstantQuality:
-+ _objc_msgSend$setLayoutSize:
-+ _objc_msgSend$setLocalDensityBucket:
-+ _objc_msgSend$setMotionScore:
-+ _objc_msgSend$setMotionState:
-+ _objc_msgSend$setNearOwnerFractionBucket:
-+ _objc_msgSend$setObservationCountBucket:
-+ _objc_msgSend$setOnBattery:
-+ _objc_msgSend$setOnWifi:
-+ _objc_msgSend$setOutcome:
-+ _objc_msgSend$setPayloadCountBucket:
-+ _objc_msgSend$setPowerMode:
-+ _objc_msgSend$setPublishLocationAccuracyBucket:
-+ _objc_msgSend$setPublishLocationRecencyBucket:
-+ _objc_msgSend$setPublishOutcome:
-+ _objc_msgSend$setPublishPolicy:
-+ _objc_msgSend$setPublishedDecision:
-+ _objc_msgSend$setRecencyScore:
-+ _objc_msgSend$setRejectedPayloadCount:
-+ _objc_msgSend$setRejectionStatus400Count:
-+ _objc_msgSend$setRejectionStatus403Count:
-+ _objc_msgSend$setRejectionStatus429Count:
-+ _objc_msgSend$setRequestBodySizeBucket:
-+ _objc_msgSend$setRequestDurationBucket:
-+ _objc_msgSend$setSampleWindowSeconds:
-+ _objc_msgSend$setScanCoverageFraction:
-+ _objc_msgSend$setServerAction:
-+ _objc_msgSend$setServerDurationSecondsBucket:
-+ _objc_msgSend$setServerGuidance:
-+ _objc_msgSend$setServerStanding:
-+ _objc_msgSend$setTimeSinceLastPublishBucket:
-+ _objc_msgSend$setTimeSinceLastPublishRaw:
-+ _objc_msgSend$setTimeSinceLocationChange:
-+ _objc_msgSend$setWasSuccess:
 - GCC_except_table1017
 - GCC_except_table1019
 - GCC_except_table1037
@@ -657,5 +524,4 @@ CStrings:
 + "GEOAPFMPortal"
 + "v20@?0B8@\"NSUUID\"12"
 + "v52@?0d8B16{GEOSessionID=QQ}20d36d44"
-
 ```

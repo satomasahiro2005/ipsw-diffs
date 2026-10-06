@@ -2,22 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/ImageGenerationServices.framework/ImageGenerationServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x91b08` | `0x91b80` | **`+0x78`** |
+
+### Other Changes
+
 ```diff
 
- 198.1.102.0.0
--  __TEXT.__text: 0x91b08
-+  __TEXT.__text: 0x91b80
-   __TEXT.__const: 0x6ded
-   __TEXT.__gcc_except_tab: 0x7b4
-   __TEXT.__cstring: 0x7f62
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 2655
--  Symbols:   1584
-+  Symbols:   1585
-   CStrings:  389
- 
+-  Symbols:   1531
++  Symbols:   1532
 Symbols:
 + _OUTLINED_FUNCTION_3
 Functions:

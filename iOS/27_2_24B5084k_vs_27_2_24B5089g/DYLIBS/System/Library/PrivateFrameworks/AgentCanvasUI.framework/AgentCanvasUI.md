@@ -2,90 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/AgentCanvasUI.framework/AgentCanvasUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x64e0` | `0x4de0` | **`-0x1700`** |
+| `__DATA_DIRTY.__bss` | `0x3f30` | `0x5630` | **`+0x1700`** |
+| `__TEXT.__text` | `0x18f674` | `0x190a78` | **`+0x1404`** |
+| `__DATA_DIRTY.__data` | `0x5840` | `0x69c0` | **`+0x1180`** |
+| `__DATA.__data` | `0x36b8` | `0x2d28` | **`-0x990`** |
+| `__AUTH.__data` | `0x1f30` | `0x1760` | **`-0x7d0`** |
+| `__TEXT.__swift5_typeref` | `0xd218` | `0xd508` | **`+0x2f0`** |
+| `__DATA_DIRTY.__objc_data` | `0x800` | `0x8f8` | **`+0xf8`** |
+| `__AUTH.__objc_data` | `0x488` | `0x398` | **`-0xf0`** |
+| `__TEXT.__const` | `0xe924` | `0xe9a4` | **`+0x80`** |
+| `__AUTH_CONST.__const` | `0x7d78` | `0x7dc8` | **`+0x50`** |
+| `__TEXT.__swift5_reflstr` | `0x3f5e` | `0x3fae` | **`+0x50`** |
+| `__DATA.__common` | `0x78` | `0x38` | **`-0x40`** |
+| `__DATA_DIRTY.__common` | `0x90` | `0xd0` | **`+0x40`** |
+| `__TEXT.__swift5_capture` | `0x1f0c` | `0x1f30` | **`+0x24`** |
+| `__TEXT.__swift5_fieldmd` | `0x3a58` | `0x3a7c` | **`+0x24`** |
+| `__AUTH_CONST.__auth_got` | `0x3e30` | `0x3e50` | **`+0x20`** |
+| `__AUTH_CONST.__objc_const` | `0x34f0` | `0x3510` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x5998` | `0x59b0` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x2100` | `0x2108` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xcc0` | `0xcc8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3605.1.1.1.5
--  __TEXT.__text: 0x17c538
 +3605.3.4.0.0
-+  __TEXT.__text: 0x17d8ec
-   __TEXT.__objc_methlist: 0xb38
--  __TEXT.__const: 0xe924
-+  __TEXT.__const: 0xe9a4
-   __TEXT.__constg_swiftt: 0x4c70
--  __TEXT.__swift5_typeref: 0xd218
-+  __TEXT.__swift5_typeref: 0xd508
-   __TEXT.__swift5_builtin: 0x154
--  __TEXT.__swift5_reflstr: 0x3f5e
--  __TEXT.__swift5_fieldmd: 0x3a58
-+  __TEXT.__swift5_reflstr: 0x3fae
-+  __TEXT.__swift5_fieldmd: 0x3a7c
-   __TEXT.__swift5_assocty: 0xf18
-   __TEXT.__swift5_proto: 0x4fc
-   __TEXT.__swift5_types: 0x424
--  __TEXT.__cstring: 0x44af
--  __TEXT.__swift5_capture: 0x1f0c
-+  __TEXT.__swift5_capture: 0x1f30
-   __TEXT.__swift_as_entry: 0x2c8
-   __TEXT.__swift_as_ret: 0x2b0
-   __TEXT.__swift_as_cont: 0x348
-   __TEXT.__swift5_protos: 0x24
-+  __TEXT.__cstring: 0x44af
-   __TEXT.__oslogstring: 0x2baf
-   __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__unwind_info: 0x6be0
-+  __TEXT.__unwind_info: 0x6c00
-   __TEXT.__eh_frame: 0x847c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x158
-   __DATA_CONST.__objc_protolist: 0x118
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xcc0
-+  __DATA_CONST.__objc_selrefs: 0xcc8
-   __DATA_CONST.__objc_protorefs: 0x90
--  __DATA_CONST.__got: 0x2100
--  __AUTH_CONST.__const: 0x7d78
--  __AUTH_CONST.__objc_const: 0x34f0
--  __AUTH_CONST.__auth_got: 0x3e30
--  __AUTH.__objc_data: 0x488
--  __AUTH.__data: 0x1f30
--  __DATA.__data: 0x36b8
--  __DATA.__common: 0x78
--  __DATA_DIRTY.__objc_data: 0x800
--  __DATA_DIRTY.__data: 0x5840
--  __DATA_DIRTY.__common: 0x90
--  __DATA_DIRTY.__bss: 0x3f30
-+  __DATA_CONST.__got: 0x2108
-+  __AUTH_CONST.__const: 0x7dc8
-+  __AUTH_CONST.__objc_const: 0x3510
-+  __AUTH_CONST.__auth_got: 0x3e50
-+  __AUTH.__objc_data: 0x398
-+  __AUTH.__data: 0x1760
-+  __DATA.__data: 0x2d28
-+  __DATA.__common: 0x38
-+  __DATA_DIRTY.__objc_data: 0x8f8
-+  __DATA_DIRTY.__data: 0x69c0
-+  __DATA_DIRTY.__bss: 0x5630
-+  __DATA_DIRTY.__common: 0xd0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreHaptics.framework/CoreHaptics
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8650
--  Symbols:   3364
+-  Symbols:   3107
 +  Functions: 8667
-+  Symbols:   3373
-   CStrings:  599
- 
++  Symbols:   3115
 Symbols:
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVyAHyAHyAHyAHyAA08TimelineC0VyAA09AnimationJ8ScheduleVAHyAHyAHyAHyAHyAA012_ConditionalI0VyAHy17AgentCanvasUICore11MarqueeTextVAA21_TraitWritingModifierVyAA010TransitionS3KeyVGGAA6HStackVyAA7ForEachVySay0noB0023IslandHorizontalLoadingR9TokenizerO8WordItemVGSSAHyAHyA0_011SlidingWordR033_59F03ACAD974DA1BEC5EF44AD0CC68B6LLVAA14_PaddingLayoutVGAVGGGGAA012_EnvironmentwtU0VyAA4FontVSgGGAA016_ForegroundStyleU0VyAA22HierarchicalShapeStyleVGGAA14_OpacityEffectVGAA11_BlurEffectVGAA16_BlendModeEffectVGGAA011_BackgroundU0VyAHyAHyAHyAA0R0VAA16_FixedSizeLayoutVGAA07_HiddenU0VGAA015_GeometryActionU0Vy12CoreGraphics7CGFloatVGGGGA40_yAHyAcAE22containerRelativeFrame_9alignmentQrAA4AxisO3SetV_AA9AlignmentVtFQOyAA5ColorV_Qo_A54_GGGAA20_GeometryGroupEffectVGA10_GAA017_AppearanceActionU0VG_SSQo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBP17AgentCanvasUICoreE13snippetBorder_12cornerRadiusQrSb_12CoreGraphics7CGFloatVtFQOyAA15ModifiedContentVyAKyAA01_c9Modifier_O0Vy0deB0019SnippetPlatterStylecP0VGAA11_ClipEffectVyAA16RoundedRectangleVGGAA011_BackgroundP0VyAA012_ConditionalO0VyAKyAA06_ShapeC0VyAuA03AnyzS0VGAA022_EnvironmentKeyWritingP0VyAA11ColorSchemeOGGA4_GGG_Qo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBP17AgentCanvasUICoreE17campoDebugOverlay_14additionalInfo5color9alignment8isActiveQrSSyXK_SSSgAA5ColorVAA9AlignmentVSbtFQOyAA15ModifiedContentVyAPyAPyAPyAA6VStackVyAA05TupleS0VyAPyAA4TextVAA14_PaddingLayoutVGSg_AA7ForEachVySaySi6offset_So12SAUIListItemC7elementtGSiAcAE11buttonStyleyQrqd__AA11ButtonStyleRd__lFQOyAA6ButtonVyAA6HStackVyATyAPy0deB0014ProfileArtworkC033_4CF2B3DED22D3969374EE8A6B8D927B1LLVAXGSg_ARyATyAV_AVSgQPGGAA6SpacerVQPGGG_A12_28DisambiguationRowButtonStyleA14_LLVQo_GQPGGAXGAXGAA010_FixedSizeX0VGAA32_EnvironmentKeyTransformModifierVySbGG_Qo_HO
-+ _objc_msgSend$sharing_disabled
 + _symbolic SaySi6offset_So12SAUIListItemC7elementtG
 + _symbolic Si6offset_So12SAUIListItemC7elementt
 + _symbolic SiSo12SAUIListItemC_____y_____y_____y_____y_____y__________GSg______yAEy______ALSgQPGG_____QPGGG______Qo_Iegygr_ 7SwiftUI4ViewPAAE11buttonStyleyQrqd__AA06ButtonE0Rd__lFQO AA0F0V AA6HStackV AA12TupleContentV AA08ModifiedI0V 011AgentCanvasB0014ProfileArtworkC033_4CF2B3DED22D3969374EE8A6B8D927B1LLV AA14_PaddingLayoutV AA6VStackV AA4TextV AA6SpacerV AN017DisambiguationRowfE0APLLV

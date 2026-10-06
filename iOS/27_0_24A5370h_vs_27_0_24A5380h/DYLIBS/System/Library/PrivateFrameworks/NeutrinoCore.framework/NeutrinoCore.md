@@ -2,105 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/NeutrinoCore.framework/NeutrinoCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x9b0` | `—` | **`-0x9b0`** |
+| `__DATA_DIRTY.__objc_data` | `0xcf30` | `0xd8e0` | **`+0x9b0`** |
+| `__TEXT.__text` | `0x30b6a4` | `0x30bb98` | **`+0x4f4`** |
+| `__TEXT.__cstring` | `0x3d642` | `0x3d68a` | **`+0x48`** |
+| `__AUTH_CONST.__cfstring` | `0x1c840` | `0x1c880` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x3ed0` | `0x3f10` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0x4e58` | `0x4e78` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x201dc` | `0x201fc` | **`+0x20`** |
+| `__DATA.__bss` | `0xe90` | `0xe80` | **`-0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb280` | `0xb290` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x1e8` | `0x1f0` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x83f8` | `0x8400` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x30b6a4
--  __TEXT.__objc_methlist: 0x201dc
-+  __TEXT.__text: 0x30bb98
-+  __TEXT.__objc_methlist: 0x201fc
-   __TEXT.__const: 0x2708
-   __TEXT.__constg_swiftt: 0x158
-   __TEXT.__swift5_typeref: 0x395
+-910.21.101.0.0
++910.27.103.0.0
 
-   __TEXT.__swift5_assocty: 0x60
-   __TEXT.__swift5_proto: 0x5c
-   __TEXT.__swift5_types: 0x28
--  __TEXT.__cstring: 0x3d642
-+  __TEXT.__cstring: 0x3d68a
-   __TEXT.__swift5_capture: 0x210
-   __TEXT.__gcc_except_tab: 0x7e84
-   __TEXT.__oslogstring: 0x537e
-   __TEXT.__ustring: 0x2e
--  __TEXT.__unwind_info: 0x83f8
-+  __TEXT.__unwind_info: 0x8400
-   __TEXT.__eh_frame: 0x448
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3ed0
-+  __DATA_CONST.__const: 0x3f10
-   __DATA_CONST.__objc_classlist: 0x15b0
-   __DATA_CONST.__objc_catlist: 0xa8
-   __DATA_CONST.__objc_protolist: 0x4f0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb280
-+  __DATA_CONST.__objc_selrefs: 0xb290
-   __DATA_CONST.__objc_protorefs: 0x98
-   __DATA_CONST.__objc_superrefs: 0xfe0
-   __DATA_CONST.__objc_arraydata: 0xae0
-   __DATA_CONST.__got: 0x21f0
--  __AUTH_CONST.__const: 0x4e58
--  __AUTH_CONST.__cfstring: 0x1c840
-+  __AUTH_CONST.__const: 0x4e78
-+  __AUTH_CONST.__cfstring: 0x1c880
-   __AUTH_CONST.__objc_const: 0x35f28
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x8d0
-
-   __AUTH_CONST.__objc_floatobj: 0x70
-   __AUTH_CONST.__objc_arrayobj: 0xf0
-   __AUTH_CONST.__auth_got: 0x10b8
--  __AUTH.__objc_data: 0x9b0
-   __DATA.__objc_ivar: 0x1964
-   __DATA.__data: 0x3838
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0xe90
--  __DATA_DIRTY.__objc_data: 0xcf30
-+  __DATA.__bss: 0xe80
-+  __DATA_DIRTY.__objc_data: 0xd8e0
-   __DATA_DIRTY.__data: 0x8
--  __DATA_DIRTY.__bss: 0x1e8
-+  __DATA_DIRTY.__bss: 0x1f0
-   __DATA_DIRTY.__common: 0x40
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11635
--  Symbols:   37258
--  CStrings:  10801
+-  Symbols:   20365
+-  CStrings:  7145
 +  Functions: 11639
-+  Symbols:   37272
-+  CStrings:  10806
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __DATA.__data : content changed
++  Symbols:   20372
++  CStrings:  7148
 Symbols:
 + +[NUOptionalDescriptor booleanWithDefault:]
 + -[NUChannelControlFormat descriptor:canAcceptSetting:]
@@ -376,9 +307,6 @@ Symbols:
 + ___block_descriptor_32_e32_B16?0"_NURateChangeTransform"8l
 + ___block_descriptor_80_e22_B16?0"NSDictionary"8l
 + _method_getTypeEncoding
-+ _objc_msgSend$descriptor:canAcceptSetting:
-+ _objc_msgSend$optionalWithDefaultValue:
-+ _objc_msgSend$setting:canAcceptDescriptor:
 - -[NUChannelControlFormat canDescriptor:acceptSetting:]
 - GCC_except_table10119
 - GCC_except_table10120
@@ -646,10 +574,8 @@ Symbols:
 - GCC_except_table9904
 - ___50-[NUChannelControlFormat canAcceptDataWithFormat:]_block_invoke
 - _method_getDescription
-- _objc_msgSend$canDescriptor:acceptSetting:
 CStrings:
 + "B16@?0@\"_NURateChangeTransform\"8"
 + "Failed to clone compute processor"
 + "face"
-
 ```

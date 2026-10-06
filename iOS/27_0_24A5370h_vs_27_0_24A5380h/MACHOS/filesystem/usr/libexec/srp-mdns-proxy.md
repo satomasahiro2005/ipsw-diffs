@@ -2,62 +2,47 @@
 
 > `/usr/libexec/srp-mdns-proxy`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x89034` | `0x8b3bc` | **`+0x2388`** |
+| `__TEXT.__oslogstring` | `0x13763` | `0x1411d` | **`+0x9ba`** |
+| `__TEXT.__cstring` | `0x8914` | `0x8e75` | **`+0x561`** |
+| `__TEXT.__auth_stubs` | `0x15e0` | `0x15f0` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0xaf8` | `0xb00` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x630` | `0x638` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__const`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x89034
--  __TEXT.__auth_stubs: 0x15e0
-+  __TEXT.__text: 0x8b3bc
-+  __TEXT.__auth_stubs: 0x15f0
-   __TEXT.__objc_stubs: 0x180
-   __TEXT.__objc_methlist: 0x22c
-   __TEXT.__const: 0x2d5
--  __TEXT.__cstring: 0x8914
--  __TEXT.__oslogstring: 0x13763
-+  __TEXT.__cstring: 0x8e75
-+  __TEXT.__oslogstring: 0x1411d
-   __TEXT.__objc_methname: 0x506
-   __TEXT.__objc_classname: 0x35
-   __TEXT.__objc_methtype: 0x237
--  __TEXT.__unwind_info: 0x630
-+  __TEXT.__unwind_info: 0x638
-   __TEXT.__eh_frame: 0x7c
-   __DATA_CONST.__const: 0x958
-   __DATA_CONST.__cfstring: 0x140
+-3085.0.0.0.1
++3089.0.0.0.1
 
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__auth_got: 0xaf8
-+  __DATA_CONST.__auth_got: 0xb00
-   __DATA_CONST.__got: 0x218
-   __DATA_CONST.__auth_ptr: 0x18
-   __DATA.__objc_const: 0x2d0
-
-   - /usr/lib/libmrc.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 487
--  Symbols:   1218
--  CStrings:  2657
+-  Symbols:   1181
+-  CStrings:  2647
 +  Functions: 489
-+  Symbols:   1221
-+  CStrings:  2708
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
++  Symbols:   1184
++  CStrings:  2698
 Symbols:
 + _dnssd_hints_find_host_name_conflict
 + _dnssd_hints_finish_name_conflict_check
@@ -118,5 +103,4 @@ CStrings:
 + "dnssd_hints_sqlite_message_update"
 - "22:13:39"
 - "Jun  9 2026"
-
 ```

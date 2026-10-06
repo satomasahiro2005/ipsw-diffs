@@ -2,15 +2,14 @@
 
 > `/System/Library/Frameworks/CFNetwork.framework/CFNetworkAgent`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -3892.100.1.0.0
 +3896.100.1.2.1
-   __TEXT.__text: 0x81d4
-   __TEXT.__auth_stubs: 0xc10
-   __TEXT.__objc_stubs: 0x420
 ```

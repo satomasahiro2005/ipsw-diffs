@@ -2,76 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/DeviceRecovery.framework/DeviceRecovery`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1fbc8` | `0xf0f0` | **`-0x10ad8`** |
+| `__TEXT.__cstring` | `0x452a` | `0x273a` | **`-0x1df0`** |
+| `__AUTH_CONST.__auth_got` | `0x360` | `0x0` | **`-0x360`** |
+| `__TEXT.__unwind_info` | `0x6c0` | `0x410` | **`-0x2b0`** |
+| `__TEXT.__oslogstring` | `0x12d5` | `0x1145` | **`-0x190`** |
+| `__TEXT.__const` | `0x1a0` | `0xa0` | **`-0x100`** |
+| `__TEXT.__gcc_except_tab` | `0x248` | `0x1c0` | **`-0x88`** |
+| `__AUTH_CONST.__cfstring` | `0xfc0` | `0xf40` | **`-0x80`** |
+| `__DATA_CONST.__const` | `0x530` | `0x4e0` | **`-0x50`** |
+| `__DATA.__bss` | `0x58` | `0x30` | **`-0x28`** |
+| `__DATA_CONST.__got` | `0xb0` | `0x98` | **`-0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x510` | `0x500` | **`-0x10`** |
+| `__DATA.__data` | `0x18a` | `0x188` | **`-0x2`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1fbc8
-+  __TEXT.__text: 0xf0f0
-   __TEXT.__objc_methlist: 0x700
--  __TEXT.__const: 0x1a0
--  __TEXT.__oslogstring: 0x12d5
--  __TEXT.__cstring: 0x452a
--  __TEXT.__gcc_except_tab: 0x248
--  __TEXT.__unwind_info: 0x6c0
-+  __TEXT.__const: 0xa0
-+  __TEXT.__oslogstring: 0x1145
-+  __TEXT.__cstring: 0x273a
-+  __TEXT.__gcc_except_tab: 0x1c0
-+  __TEXT.__unwind_info: 0x410
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x530
-+  __DATA_CONST.__const: 0x4e0
-   __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x510
-+  __DATA_CONST.__objc_selrefs: 0x500
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x18
--  __DATA_CONST.__got: 0xb0
-+  __DATA_CONST.__got: 0x98
-   __AUTH_CONST.__const: 0x1c0
--  __AUTH_CONST.__cfstring: 0xfc0
-+  __AUTH_CONST.__cfstring: 0xf40
-   __AUTH_CONST.__objc_const: 0x820
-   __AUTH_CONST.__objc_intobj: 0x48
--  __AUTH_CONST.__auth_got: 0x360
-+  __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0xa0
-   __DATA.__objc_ivar: 0x60
--  __DATA.__data: 0x18a
--  __DATA.__bss: 0x58
-+  __DATA.__data: 0x188
-+  __DATA.__bss: 0x30
-   __DATA_DIRTY.__objc_data: 0x50
-   __DATA_DIRTY.__data: 0x8
-   __DATA_DIRTY.__bss: 0x8
+-144.0.0.0.0
++148.0.0.0.0
 
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 929
--  Symbols:   2092
--  CStrings:  672
+-  Symbols:   813
+-  CStrings:  544
 +  Functions: 498
-+  Symbols:   1417
-+  CStrings:  432
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   493
++  CStrings:  311
 Symbols:
 + _objc_retain_x25
 - GCC_except_table18
@@ -382,8 +343,6 @@ Symbols:
 - _memcmp
 - _memcpy
 - _memset_s
-- _objc_msgSend$UTF8String
-- _objc_msgSend$dataWithBytes:length:
 - _objc_release_x27
 - _objc_retain_x26
 - _performCommand
@@ -635,5 +594,4 @@ CStrings:
 - "v24@?0r^v8Q16"
 - "verifyAclConstraintForOperationCommandInternal"
 - "verifyAclConstraintInternal"
-
 ```

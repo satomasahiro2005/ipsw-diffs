@@ -2,112 +2,69 @@
 
 > `/private/var/staged_system_apps/Music.app/Frameworks/MusicApplication.framework/MusicApplication`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa9601c` | `0xa9996c` | **`+0x3950`** |
+| `__DATA_CONST.__const` | `0x6a998` | `0x6adc8` | **`+0x430`** |
+| `__DATA.__bss` | `0x4a390` | `0x4a7a0` | **`+0x410`** |
+| `__TEXT.__swift5_typeref` | `0x31060` | `0x31384` | **`+0x324`** |
+| `__TEXT.__const` | `0x53692` | `0x53912` | **`+0x280`** |
+| `__DATA.__data` | `0x42310` | `0x424a0` | **`+0x190`** |
+| `__TEXT.__swift5_reflstr` | `0x295a5` | `0x29715` | **`+0x170`** |
+| `__TEXT.__constg_swiftt` | `0x31f54` | `0x32068` | **`+0x114`** |
+| `__TEXT.__unwind_info` | `0x21df0` | `0x21ee8` | **`+0xf8`** |
+| `__TEXT.__swift5_fieldmd` | `0x230a4` | `0x2317c` | **`+0xd8`** |
+| `__DATA.__objc_data` | `0x40020` | `0x400e0` | **`+0xc0`** |
+| `__TEXT.__objc_methname` | `0x305c5` | `0x30675` | **`+0xb0`** |
+| `__TEXT.__oslogstring` | `0xdd1a` | `0xddca` | **`+0xb0`** |
+| `__TEXT.__objc_stubs` | `0x16e00` | `0x16ea0` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0x5852e` | `0x585ae` | **`+0x80`** |
+| `__DATA.__objc_const` | `0x3b828` | `0x3b8a0` | **`+0x78`** |
+| `__DATA.__common` | `0x59e8` | `0x5a28` | **`+0x40`** |
+| `__TEXT.__objc_methlist` | `0xfd24` | `0xfd5c` | **`+0x38`** |
+| `__TEXT.__swift5_assocty` | `0x4c68` | `0x4c98` | **`+0x30`** |
+| `__DATA.__objc_selrefs` | `0x8170` | `0x8198` | **`+0x28`** |
+| `__DATA_CONST.__auth_ptr` | `0x9f28` | `0x9f48` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x49c8` | `0x49e8` | **`+0x20`** |
+| `__TEXT.__auth_stubs` | `0xb000` | `0xb020` | **`+0x20`** |
+| `__TEXT.__eh_frame` | `0x1ae48` | `0x1ae28` | **`-0x20`** |
+| `__TEXT.__swift5_proto` | `0x32cc` | `0x32ec` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0x5810` | `0x5820` | **`+0x10`** |
+| `__TEXT.__objc_methtype` | `0x8a58` | `0x8a68` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x163a4` | `0x16394` | **`-0x10`** |
+| `__TEXT.__swift5_types` | `0x222c` | `0x2238` | **`+0xc`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_stublist`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xa9601c
--  __TEXT.__auth_stubs: 0xb000
--  __TEXT.__objc_stubs: 0x16e00
--  __TEXT.__objc_methlist: 0xfd24
-+  __TEXT.__text: 0xa9996c
-+  __TEXT.__auth_stubs: 0xb020
-+  __TEXT.__objc_stubs: 0x16ea0
-+  __TEXT.__objc_methlist: 0xfd5c
-   __TEXT.__objc_classname: 0xbe85
--  __TEXT.__objc_methname: 0x305c5
--  __TEXT.__const: 0x53692
--  __TEXT.__cstring: 0x5852e
-+  __TEXT.__objc_methname: 0x30675
-+  __TEXT.__const: 0x53912
-+  __TEXT.__cstring: 0x585ae
-   __TEXT.__ustring: 0x2a2
--  __TEXT.__objc_methtype: 0x8a58
-+  __TEXT.__objc_methtype: 0x8a68
-   __TEXT.__gcc_except_tab: 0x23c
--  __TEXT.__oslogstring: 0xdd1a
--  __TEXT.__swift5_typeref: 0x31060
--  __TEXT.__constg_swiftt: 0x31f54
-+  __TEXT.__oslogstring: 0xddca
-+  __TEXT.__swift5_typeref: 0x31384
-+  __TEXT.__constg_swiftt: 0x32068
-   __TEXT.__swift5_builtin: 0x134c
--  __TEXT.__swift5_reflstr: 0x295a5
--  __TEXT.__swift5_fieldmd: 0x230a4
--  __TEXT.__swift5_assocty: 0x4c68
--  __TEXT.__swift5_proto: 0x32cc
--  __TEXT.__swift5_types: 0x222c
--  __TEXT.__swift5_capture: 0x163a4
-+  __TEXT.__swift5_reflstr: 0x29715
-+  __TEXT.__swift5_fieldmd: 0x2317c
-+  __TEXT.__swift5_assocty: 0x4c98
-+  __TEXT.__swift5_proto: 0x32ec
-+  __TEXT.__swift5_types: 0x2238
-+  __TEXT.__swift5_capture: 0x16394
-   __TEXT.__swift5_protos: 0x3ac
-   __TEXT.__swift_as_entry: 0x9a8
-   __TEXT.__swift_as_ret: 0x8f0
-   __TEXT.__swift_as_cont: 0x127c
-   __TEXT.__swift5_mpenum: 0x3c4
--  __TEXT.__unwind_info: 0x21df0
--  __TEXT.__eh_frame: 0x1ae48
--  __DATA_CONST.__const: 0x6a998
-+  __TEXT.__unwind_info: 0x21ee8
-+  __TEXT.__eh_frame: 0x1ae28
-+  __DATA_CONST.__const: 0x6adc8
-   __DATA_CONST.__cfstring: 0xcc0
-   __DATA_CONST.__objc_classlist: 0x1698
-   __DATA_CONST.__objc_catlist: 0x130
+-4026.100.69.0.0
++4026.100.73.0.0
 
-   __DATA_CONST.__objc_protorefs: 0x418
-   __DATA_CONST.__objc_superrefs: 0x58
-   __DATA_CONST.__objc_doubleobj: 0x20
--  __DATA_CONST.__auth_got: 0x5810
--  __DATA_CONST.__got: 0x49c8
--  __DATA_CONST.__auth_ptr: 0x9f28
--  __DATA.__objc_const: 0x3b828
--  __DATA.__objc_selrefs: 0x8170
-+  __DATA_CONST.__auth_got: 0x5820
-+  __DATA_CONST.__got: 0x49e8
-+  __DATA_CONST.__auth_ptr: 0x9f48
-+  __DATA.__objc_const: 0x3b8a0
-+  __DATA.__objc_selrefs: 0x8198
-   __DATA.__objc_ivar: 0x104
--  __DATA.__objc_data: 0x40020
--  __DATA.__data: 0x42310
-+  __DATA.__objc_data: 0x400e0
-+  __DATA.__data: 0x424a0
-   __DATA.__objc_stublist: 0x150
--  __DATA.__bss: 0x4a390
--  __DATA.__common: 0x59e8
-+  __DATA.__bss: 0x4a7a0
-+  __DATA.__common: 0x5a28
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 51365
--  Symbols:   29247
--  CStrings:  12808
+-  Symbols:   20153
+-  CStrings:  12514
 +  Functions: 51444
-+  Symbols:   29272
-+  CStrings:  12821
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA.__objc_stublist : content changed
++  Symbols:   20176
++  CStrings:  12527
 Symbols:
 + _OBJC_CLASS_$_CAPortalLayer
 + _OBJC_CLASS_$_UIGlassEffect
@@ -226,5 +183,4 @@ CStrings:
 - "TransitionCoordinator %{public}s completed ongoing animations. Now attemptying to re-present %{public}s"
 - "blurEffect"
 - "packageView"
-
 ```

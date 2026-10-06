@@ -2,108 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/HearingTestUI.framework/HearingTestUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa803c` | `0xa9224` | **`+0x11e8`** |
+| `__TEXT.__cstring` | `0x4a00` | `0x4fa0` | **`+0x5a0`** |
+| `__TEXT.__const` | `0x49b4` | `0x4884` | **`-0x130`** |
+| `__AUTH_CONST.__const` | `0x4448` | `0x44f8` | **`+0xb0`** |
+| `__TEXT.__swift5_typeref` | `0x1a98` | `0x1a46` | **`-0x52`** |
+| `__DATA.__bss` | `0x3f78` | `0x3f28` | **`-0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x1720` | `0x1758` | **`+0x38`** |
+| `__DATA.__data` | `0x1cf8` | `0x1cc8` | **`-0x30`** |
+| `__TEXT.__swift5_assocty` | `0x3a8` | `0x378` | **`-0x30`** |
+| `__TEXT.__swift5_capture` | `0xb54` | `0xb84` | **`+0x30`** |
+| `__TEXT.__constg_swiftt` | `0x3248` | `0x326c` | **`+0x24`** |
+| `__DATA_CONST.__const` | `0x220` | `0x240` | **`+0x20`** |
+| `__DATA_CONST.__vfx_script_tby` | `—` | `0x20` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x20a8` | `0x20c8` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x2170` | `0x2158` | **`-0x18`** |
+| `__TEXT.__swift5_builtin` | `0xdc` | `0xc8` | **`-0x14`** |
+| `__TEXT.__swift5_proto` | `0x294` | `0x280` | **`-0x14`** |
+| `__AUTH.__data` | `0x21b8` | `0x21c8` | **`+0x10`** |
+| `__DATA_CONST.__vfx_script_tbl` | `0x10` | `—` | **`-0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x2bd9` | `0x2bc9` | **`-0x10`** |
+| `__DATA_DIRTY.__objc_data` | `0xee8` | `0xef0` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x5c` | `0x60` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0x1c0` | `0x1bc` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.0.72.2.7
--  __TEXT.__text: 0xa3d3c
 +7027.1.36.2.7
-+  __TEXT.__text: 0xa4f48
-   __TEXT.__objc_methlist: 0xe3c
--  __TEXT.__const: 0x49b4
--  __TEXT.__cstring: 0x4a00
--  __TEXT.__constg_swiftt: 0x3248
--  __TEXT.__swift5_typeref: 0x1a98
--  __TEXT.__swift5_fieldmd: 0x2170
--  __TEXT.__swift5_reflstr: 0x2bd9
--  __TEXT.__swift5_builtin: 0xdc
--  __TEXT.__swift5_assocty: 0x3a8
-+  __TEXT.__const: 0x4884
-+  __TEXT.__cstring: 0x4fa0
-+  __TEXT.__constg_swiftt: 0x326c
-+  __TEXT.__swift5_typeref: 0x1a46
-+  __TEXT.__swift5_fieldmd: 0x2158
-+  __TEXT.__swift5_reflstr: 0x2bc9
-+  __TEXT.__swift5_builtin: 0xc8
-   __TEXT.__oslogstring: 0x3b0b
--  __TEXT.__swift5_protos: 0x5c
--  __TEXT.__swift5_proto: 0x294
--  __TEXT.__swift5_types: 0x1c0
-+  __TEXT.__swift5_assocty: 0x378
-+  __TEXT.__swift5_protos: 0x60
-+  __TEXT.__swift5_proto: 0x280
-+  __TEXT.__swift5_types: 0x1bc
-   __TEXT.__swift_as_entry: 0xa0
-   __TEXT.__swift_as_ret: 0x90
-   __TEXT.__swift_as_cont: 0x100
--  __TEXT.__swift5_capture: 0xb54
-+  __TEXT.__swift5_capture: 0xb84
-   __TEXT.__swift5_mpenum: 0x28
-   __TEXT.__swift5_types2: 0x8
--  __TEXT.__unwind_info: 0x2a10
-+  __TEXT.__unwind_info: 0x2a28
-   __TEXT.__eh_frame: 0x1dec
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x220
-+  __DATA_CONST.__const: 0x240
-   __DATA_CONST.__objc_classlist: 0x158
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0xb0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xff8
-   __DATA_CONST.__objc_protorefs: 0x60
--  __DATA_CONST.__vfx_script_tbl: 0x10
-+  __DATA_CONST.__vfx_script_tby: 0x20
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x4448
-+  __AUTH_CONST.__const: 0x44f8
-   __AUTH_CONST.__objc_const: 0x3cf8
--  __AUTH_CONST.__auth_got: 0x1720
-+  __AUTH_CONST.__auth_got: 0x1758
-   __AUTH.__objc_data: 0x17f0
--  __AUTH.__data: 0x21b8
--  __DATA.__data: 0x1cf8
-+  __AUTH.__data: 0x21c8
-+  __DATA.__data: 0x1cc8
-   __DATA.__common: 0x2a8
--  __DATA_DIRTY.__objc_data: 0xee8
-+  __DATA_DIRTY.__objc_data: 0xef0
-   __DATA_DIRTY.__data: 0x508
-   __DATA_DIRTY.__common: 0x10
-   - /System/Library/Frameworks/Combine.framework/Combine
 
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-   - /System/Library/Frameworks/Symbols.framework/Symbols
-   - /System/Library/Frameworks/UIKit.framework/UIKit
 +  - /System/Library/PrivateFrameworks/HealthAppServices.framework/HealthAppServices
-   - /System/Library/PrivateFrameworks/HealthExperienceUI.framework/HealthExperienceUI
-   - /System/Library/PrivateFrameworks/HealthFeatures.framework/HealthFeatures
+
 -  - /System/Library/PrivateFrameworks/HealthFoundationUI.framework/HealthFoundationUI
-   - /System/Library/PrivateFrameworks/HealthHearing.framework/HealthHearing
-   - /System/Library/PrivateFrameworks/HealthKitAdditions.framework/HealthKitAdditions
-   - /System/Library/PrivateFrameworks/HealthPlatform.framework/HealthPlatform
 
-   - /System/Library/PrivateFrameworks/HearingTest.framework/HearingTest
-   - /System/Library/PrivateFrameworks/MediaExperience.framework/MediaExperience
-   - /System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit
 -  - /System/Library/PrivateFrameworks/SpringBoardUIServices.framework/SpringBoardUIServices
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-   - /System/Library/PrivateFrameworks/VFX.framework/VFX
-   - /usr/lib/libSystem.B.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3061
--  Symbols:   1558
+-  Symbols:   1200
 -  CStrings:  712
 +  Functions: 3075
-+  Symbols:   1648
++  Symbols:   1290
 +  CStrings:  798
- 
 Symbols:
 + _OUTLINED_FUNCTION_0
 + __NSConcreteGlobalBlock
@@ -201,8 +146,6 @@ Symbols:
 + __simd_pow_f4
 + _dispatch_once
 + _objc_lookUpClass
-+ _objc_msgSend$hk_asyncOpenURL:
-+ _objc_msgSend$isIdleTimerDisabled
 + _sel_registerName
 + _symbolic $s13HearingTestUI0aB11ApplicationP
 + _symbolic ScM
@@ -214,8 +157,6 @@ Symbols:
 - _associated conformance So38UIApplicationOpenExternalURLOptionsKeyaSHSCSQ
 - _associated conformance So38UIApplicationOpenExternalURLOptionsKeyas20_SwiftNewtypeWrapperSCSY
 - _associated conformance So38UIApplicationOpenExternalURLOptionsKeyas20_SwiftNewtypeWrapperSCs35_HasCustomAnyHashableRepresentation
-- _objc_msgSend$areAllRequirementsSatisfied
-- _objc_msgSend$openURL:options:completionHandler:
 - _symbolic So13UIApplicationC
 - _symbolic So13UIApplicationCSgXw
 - _symbolic So15HMServiceClientCSgXw

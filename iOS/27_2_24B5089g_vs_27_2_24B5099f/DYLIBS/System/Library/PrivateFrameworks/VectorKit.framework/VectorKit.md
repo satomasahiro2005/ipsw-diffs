@@ -2,33 +2,23 @@
 
 > `/System/Library/PrivateFrameworks/VectorKit.framework/VectorKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1221a4c` | `0x1221d28` | **`+0x2dc`** |
+| `__TEXT.__gcc_except_tab` | `0x7616c` | `0x76180` | **`+0x14`** |
+| `__TEXT.__unwind_info` | `0x33c70` | `0x33c80` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -2044.31.6.17.11
--  __TEXT.__text: 0x11f8254
 +2044.31.9.18.4
-+  __TEXT.__text: 0x11f8524
-   __TEXT.__objc_methlist: 0x110d4
-   __TEXT.__const: 0x79318
--  __TEXT.__gcc_except_tab: 0x7616c
-+  __TEXT.__gcc_except_tab: 0x76180
-   __TEXT.__oslogstring: 0x11543
-   __TEXT.__cstring: 0x9af18
-   __TEXT.__ustring: 0xf8
--  __TEXT.__unwind_info: 0x3a328
-+  __TEXT.__unwind_info: 0x3a338
-   __TEXT.__eh_frame: 0x1d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libxml2.2.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 59029
 +  Functions: 59028
-   Symbols:   97944
-   CStrings:  22187
- 
 Symbols:
 + GCC_except_table23460
 + GCC_except_table23469
@@ -4624,9 +4614,9 @@ Symbols:
 - __ZNSt3__113unordered_mapItNS_10shared_ptrIN3ggl15DeviceDataTypedINS2_13FlyoverCommon11SplatOrdersEEEEENS_4hashItEENS_8equal_toItEENS_9allocatorINS_4pairIKtS7_EEEEE5eraseB9fqn220106ERSE_
 Functions:
 ~ __ZN2md19MeshRenderableLogic29runBeforeLayoutAtVariableRateERKNS_13LayoutContextERKNS_17LogicDependenciesIJN3gdc8TypeListIJNS_15MaterialContextENS_12AssetContextENS_17StyleLogicContextENS_15RegistryContextENS_17SceneQueryContextENS_13CameraContextENS_14DrapingContextENS_25IdentifiedResourceContextENS_11PuckContextEEEENS6_IJEEEEE20ResolvedDependenciesERNS_21MeshRenderableContextE : 3320 -> 3436
-~ __ZN2md19MeshRenderableLogic5resetEv : 304 -> 156
-~ __ZN2md19MeshRenderableLogic5pruneENS_10PruneLevelE : 28 -> 1300
-~ __ZN2md27RouteAnnotationLabelFeature11newRootPartEPNS_12LabelManagerEPNS_5LabelEPNS_10LabelStyleERNS_24LabelPartCreationOptionsE : 5364 -> 6496
+~ __ZN2md19MeshRenderableLogic5resetEv : 304 -> 168
+~ __ZN2md19MeshRenderableLogic5pruneENS_10PruneLevelE : 28 -> 1320
+~ __ZN2md27RouteAnnotationLabelFeature11newRootPartEPNS_12LabelManagerEPNS_5LabelEPNS_10LabelStyleERNS_24LabelPartCreationOptionsE : 5368 -> 6500
 - __ZNSt3__113unordered_mapItNS_10shared_ptrIN3ggl15DeviceDataTypedINS2_13FlyoverCommon11SplatOrdersEEEEENS_4hashItEENS_8equal_toItEENS_9allocatorINS_4pairIKtS7_EEEEE5eraseB9fqn220106ERSE_
-~ __ZZZN2md19MeshRenderableLogic28updateStaticNonBatchedMeshesERKNS_13CameraContextERKNS_15MaterialContextEENK3$_0clEPN3gdc8RegistryEENKUlNS8_6EntityERNS_10components18SplatsMeshInstanceERNSC_19ResolvedSplatsOrderEE_clESB_SE_SG_ : 3584 -> 2484
+~ __ZZZN2md19MeshRenderableLogic28updateStaticNonBatchedMeshesERKNS_13CameraContextERKNS_15MaterialContextEENK3$_0clEPN3gdc8RegistryEENKUlNS8_6EntityERNS_10components18SplatsMeshInstanceERNSC_19ResolvedSplatsOrderEE_clESB_SE_SG_ : 3596 -> 2488
 ```

@@ -2,67 +2,34 @@
 
 > `/System/Library/Frameworks/CoreText.framework/CoreText`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15d970` | `0x15ed2c` | **`+0x13bc`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0xbb68` | `0xb9d0` | **`-0x198`** |
+| `__DATA_CONST.__objc_arraydata` | `0x18528` | `0x18400` | **`-0x128`** |
+| `__AUTH_CONST.__objc_intobj` | `0x3fd8` | `0x40c8` | **`+0xf0`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0x25e0` | `0x2660` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x54b0` | `0x54f8` | **`+0x48`** |
+| `__AUTH_CONST.__weak_auth_got` | `0x38` | `0x48` | **`+0x10`** |
+| `__TEXT.__const` | `0x51fa4` | `0x51f94` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1808` | `0x1810` | **`+0x8`** |
+| `__TEXT.__cstring` | `0xfab3` | `0xfaad` | **`-0x6`** |
+
+### Other Changes
+
 ```diff
 
 -900.0.0.0.0
--  __TEXT.__text: 0x15d970
 +904.0.0.0.0
-+  __TEXT.__text: 0x15ed2c
-   __TEXT.__delay_helper: 0x264
-   __TEXT.__objc_methlist: 0xdd4
--  __TEXT.__const: 0x51fa4
-+  __TEXT.__const: 0x51f94
-   __TEXT.__objc_databytes: 0x3a70c
-   __TEXT.__dlopen_cstrs: 0x22a
--  __TEXT.__cstring: 0xfab3
-+  __TEXT.__cstring: 0xfaad
-   __TEXT.__swift5_typeref: 0x385
-   __TEXT.__swift5_reflstr: 0xc4
-   __TEXT.__swift5_assocty: 0x48
 
-   __TEXT.__ustring: 0x1954
-   __TEXT.__gcc_except_tab: 0x248
-   __TEXT.__dof_CoreText: 0x1629
--  __TEXT.__unwind_info: 0x54b0
-+  __TEXT.__unwind_info: 0x54f8
-   __TEXT.__eh_frame: 0x2b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xcd0
-   __DATA_CONST.__objc_superrefs: 0x78
--  __DATA_CONST.__objc_arraydata: 0x18528
-+  __DATA_CONST.__objc_arraydata: 0x18400
-   __DATA_CONST.__got: 0x428
-   __AUTH_CONST.__const: 0x6040
-   __AUTH_CONST.__cfstring: 0x18420
-   __AUTH_CONST.__objc_const: 0x1a20
--  __AUTH_CONST.__weak_auth_got: 0x38
-+  __AUTH_CONST.__weak_auth_got: 0x48
-   __AUTH_CONST.__objc_dictobj: 0x3930
--  __AUTH_CONST.__objc_intobj: 0x3fd8
--  __AUTH_CONST.__objc_arrayobj: 0xbb68
--  __AUTH_CONST.__objc_doubleobj: 0x25e0
--  __AUTH_CONST.__auth_got: 0x1808
-+  __AUTH_CONST.__objc_intobj: 0x40c8
-+  __AUTH_CONST.__objc_arrayobj: 0xb9d0
-+  __AUTH_CONST.__objc_doubleobj: 0x2660
-+  __AUTH_CONST.__auth_got: 0x1810
-   __AUTH.__objc_data: 0x380
-   __AUTH.__objc_dataobj: 0x2a0
-   __AUTH.__data: 0x98
-
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 5444
--  Symbols:   8007
+-  Symbols:   7694
 -  CStrings:  3349
 +  Functions: 5463
-+  Symbols:   8025
++  Symbols:   7712
 +  CStrings:  3347
- 
 Symbols:
 + _CGColorRelease
 + _CGFloatNearlyEqualToFloatWithTolerance

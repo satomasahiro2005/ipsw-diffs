@@ -2,112 +2,39 @@
 
 > `/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x38c174` | `0x38cbb4` | **`+0xa40`** |
+| `__AUTH.__objc_data` | `0xc0f0` | `0xc348` | **`+0x258`** |
+| `__DATA_DIRTY.__objc_data` | `0x11d0` | `0xf78` | **`-0x258`** |
+| `__TEXT.__cstring` | `0x31872` | `0x319fa` | **`+0x188`** |
+| `__DATA_CONST.__const` | `0xd838` | `0xd8e0` | **`+0xa8`** |
+| `__AUTH_CONST.__cfstring` | `0x27480` | `0x27520` | **`+0xa0`** |
+| `__DATA_CONST.__got` | `0x3010` | `0x30b0` | **`+0xa0`** |
+| `__TEXT.__objc_methlist` | `0x28a7c` | `0x28b04` | **`+0x88`** |
+| `__AUTH_CONST.__const` | `0xe7f8` | `0xe858` | **`+0x60`** |
+| `__DATA_CONST.__objc_selrefs` | `0x13928` | `0x13988` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0xd1a0` | `0xd1d8` | **`+0x38`** |
+| `__AUTH_CONST.__objc_const` | `0x45c90` | `0x45cb0` | **`+0x20`** |
+| `__DATA.__bss` | `0xe70` | `0xe90` | **`+0x20`** |
+| `__DATA_DIRTY.__bss` | `0x170` | `0x158` | **`-0x18`** |
+| `__TEXT.__gcc_except_tab` | `0x1c40c` | `0x1c41c` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x38c174
--  __TEXT.__objc_methlist: 0x28a7c
-+  __TEXT.__text: 0x38cbb4
-+  __TEXT.__objc_methlist: 0x28b04
-   __TEXT.__dlopen_cstrs: 0x4bd
-   __TEXT.__const: 0x14fc0
-   __TEXT.__swift5_typeref: 0x18a
+-4026.100.65.0.0
++4026.100.76.0.0
 
-   __TEXT.__swift_as_entry: 0x1c
-   __TEXT.__swift_as_ret: 0x1c
-   __TEXT.__swift_as_cont: 0x8
--  __TEXT.__cstring: 0x31872
-+  __TEXT.__cstring: 0x319fa
-   __TEXT.__swift5_proto: 0x14
--  __TEXT.__gcc_except_tab: 0x1c40c
-+  __TEXT.__gcc_except_tab: 0x1c41c
-   __TEXT.__oslogstring: 0x1a1d5
-   __TEXT.__ustring: 0x1ca
--  __TEXT.__unwind_info: 0xd1a0
-+  __TEXT.__unwind_info: 0xd1d8
-   __TEXT.__eh_frame: 0x3c0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xd838
-+  __DATA_CONST.__const: 0xd8e0
-   __DATA_CONST.__objc_classlist: 0x1510
-   __DATA_CONST.__objc_catlist: 0x108
-   __DATA_CONST.__objc_protolist: 0x428
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x13928
-+  __DATA_CONST.__objc_selrefs: 0x13988
-   __DATA_CONST.__objc_protorefs: 0xe0
-   __DATA_CONST.__objc_superrefs: 0xdb0
-   __DATA_CONST.__objc_arraydata: 0x8d8
--  __DATA_CONST.__got: 0x3010
--  __AUTH_CONST.__const: 0xe7f8
--  __AUTH_CONST.__cfstring: 0x27480
--  __AUTH_CONST.__objc_const: 0x45c90
-+  __DATA_CONST.__got: 0x30b0
-+  __AUTH_CONST.__const: 0xe858
-+  __AUTH_CONST.__cfstring: 0x27520
-+  __AUTH_CONST.__objc_const: 0x45cb0
-   __AUTH_CONST.__weak_auth_got: 0x60
-   __AUTH_CONST.__objc_intobj: 0x8a0
-   __AUTH_CONST.__objc_arrayobj: 0xf78
-   __AUTH_CONST.__objc_doubleobj: 0x60
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__auth_got: 0x2b38
--  __AUTH.__objc_data: 0xc0f0
-+  __AUTH.__objc_data: 0xc348
-   __AUTH.__data: 0x100
-   __DATA.__objc_ivar: 0x2d6c
-   __DATA.__data: 0x3af8
--  __DATA.__bss: 0xe70
-+  __DATA.__bss: 0xe90
-   __DATA.__common: 0xab8
--  __DATA_DIRTY.__objc_data: 0x11d0
-+  __DATA_DIRTY.__objc_data: 0xf78
-   __DATA_DIRTY.__data: 0x8
--  __DATA_DIRTY.__bss: 0x170
-+  __DATA_DIRTY.__bss: 0x158
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AVRouting.framework/AVRouting
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 17136
--  Symbols:   57389
--  CStrings:  12404
+-  Symbols:   32324
+-  CStrings:  7408
 +  Functions: 17156
-+  Symbols:   57447
-+  CStrings:  12418
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__objc_ivar : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   32350
++  CStrings:  7417
 Symbols:
 + +[MPModelAlbum __MPModelPropertyAlbumEditorialArtworks__MAPPING_MISSING__]
 + +[MPModelAlbum __editorialArtworksBlock_KEY]
@@ -874,14 +801,6 @@ Symbols:
 + ___block_descriptor_40_e8_32s_e53_v32?0"NSString"8"MPStoreArtworkRequestToken"16^B24ls32l8
 + _kMRMediaRemoteNowPlayingInfoContentType
 + _kMRMediaRemoteNowPlayingInfoStrictMediaType
-+ _objc_msgSend$_fetchValueFromAllSourcesForKey:
-+ _objc_msgSend$_initCommon
-+ _objc_msgSend$_onAccessQueue_setEndpointWrapper:
-+ _objc_msgSend$editorialArtworksBlock
-+ _objc_msgSend$editorialArtworksRequestTokens
-+ _objc_msgSend$initWithEndpointFactory:
-+ _objc_msgSend$representsUGLSender
-+ _objc_msgSend$setEditorialArtworksBlock:
 - GCC_except_table10103
 - GCC_except_table10104
 - GCC_except_table10105
@@ -1631,5 +1550,4 @@ CStrings:
 + "Translator was missing mapping for MPModelPropertyPlaylistEditorialArtworks"
 + "factory"
 + "v32@?0@\"NSString\"8@\"MPStoreArtworkRequestToken\"16^B24"
-
 ```

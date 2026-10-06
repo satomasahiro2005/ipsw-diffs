@@ -2,62 +2,33 @@
 
 > `/System/Library/Frameworks/CoreMIDI.framework/CoreMIDI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa6270` | `0xa68a0` | **`+0x630`** |
+| `__AUTH_CONST.__objc_const` | `0x2680` | `0x2740` | **`+0xc0`** |
+| `__AUTH_CONST.__const` | `0x3a30` | `0x3aa0` | **`+0x70`** |
+| `__TEXT.__cstring` | `0x4563` | `0x45d2` | **`+0x6f`** |
+| `__TEXT.__gcc_except_tab` | `0xe164` | `0xe1bc` | **`+0x58`** |
+| `__DATA_CONST.__const` | `0x4c8` | `0x498` | **`-0x30`** |
+| `__TEXT.__unwind_info` | `0x40f0` | `0x4120` | **`+0x30`** |
+| `__DATA.__objc_ivar` | `0x20c` | `0x224` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0xea8` | `0xeb8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -333.201.0.0.0
--  __TEXT.__text: 0xa4c04
 +333.202.1.0.0
-+  __TEXT.__text: 0xa521c
-   __TEXT.__realtime: 0x1810
-   __TEXT.__objc_methlist: 0x15c0
-   __TEXT.__const: 0xa48
-   __TEXT.__dlopen_cstrs: 0x4e
--  __TEXT.__gcc_except_tab: 0xe164
--  __TEXT.__cstring: 0x4563
-+  __TEXT.__gcc_except_tab: 0xe1bc
-+  __TEXT.__cstring: 0x45d2
-   __TEXT.__oslogstring: 0x2db0
--  __TEXT.__unwind_info: 0x4508
-+  __TEXT.__unwind_info: 0x4528
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4c8
-+  __DATA_CONST.__const: 0x498
-   __DATA_CONST.__objc_classlist: 0xb0
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xc10
-   __DATA_CONST.__objc_superrefs: 0x98
-   __DATA_CONST.__got: 0x320
--  __AUTH_CONST.__const: 0x3a30
-+  __AUTH_CONST.__const: 0x3aa0
-   __AUTH_CONST.__cfstring: 0x1aa0
--  __AUTH_CONST.__objc_const: 0x2680
-+  __AUTH_CONST.__objc_const: 0x2740
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__objc_intobj: 0x60
--  __AUTH_CONST.__auth_got: 0xea8
-+  __AUTH_CONST.__auth_got: 0xeb8
-   __AUTH.__data: 0x68
--  __DATA.__objc_ivar: 0x20c
-+  __DATA.__objc_ivar: 0x224
-   __DATA.__data: 0x1e0
-   __DATA.__common: 0x190
-   __DATA_DIRTY.__objc_data: 0x6e0
 
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2699
--  Symbols:   5387
+-  Symbols:   5116
 -  CStrings:  1011
 +  Functions: 2707
-+  Symbols:   5407
++  Symbols:   5136
 +  CStrings:  1014
- 
 Symbols:
 + -[MIDICIMutableDevice handleProfileSpecificData:fromDevice:view:lock:]
 + GCC_except_table1006
@@ -627,7 +598,6 @@ Symbols:
 + ___block_descriptor_74_ea8_32s40s48s56c27_ZTSNSt3__110shared_ptrIbEE_e5_v8?0l
 + ___copy_helper_block_ea8_56c27_ZTSNSt3__110shared_ptrIbEE
 + ___destroy_helper_block_ea8_56c27_ZTSNSt3__110shared_ptrIbEE
-+ _objc_msgSend$handleProfileSpecificData:fromDevice:view:lock:
 + _objc_retain_x10
 - -[MIDICIMutableDevice handleProfileSpecificData:fromDevice:view:]
 - GCC_except_table1001
@@ -1178,7 +1148,6 @@ Symbols:
 - ___65-[MIDICIMutableDevice handleProfileSpecificData:fromDevice:view:]_block_invoke
 - ___block_descriptor_56_ea8_32bs_e59_v24?0r^{MIDIEventList=iI[1{MIDIEventPacket=QI[64I]}]}8^v16ls32l8
 - ___block_descriptor_81_ea8_32s40s48s56r_e5_v8?0lr56l8s32l8s40l8s48l8
-- _objc_msgSend$handleProfileSpecificData:fromDevice:view:
 CStrings:
 + "#\x91"
 + "unique_lock::lock: already locked"

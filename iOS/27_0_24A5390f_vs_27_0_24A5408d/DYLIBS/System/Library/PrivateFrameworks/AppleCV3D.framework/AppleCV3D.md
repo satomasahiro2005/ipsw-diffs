@@ -2,64 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/AppleCV3D.framework/AppleCV3D`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ec328c` | `0x1ece274` | **`+0xafe8`** |
+| `__TEXT.__cstring` | `0xb7822` | `0xb83f2` | **`+0xbd0`** |
+| `__TEXT.__const` | `0x16a160` | `0x1696a0` | **`-0xac0`** |
+| `__AUTH_CONST.__const` | `0x7c1e8` | `0x7c8e8` | **`+0x700`** |
+| `__TEXT.__gcc_except_tab` | `0x107d70` | `0x108394` | **`+0x624`** |
+| `__TEXT.__unwind_info` | `0x41c90` | `0x41f60` | **`+0x2d0`** |
+| `__TEXT.__oslogstring` | `0x12c9b` | `0x12e9b` | **`+0x200`** |
+| `__DATA_CONST.__const` | `0x3590` | `0x3650` | **`+0xc0`** |
+| `__DATA.__bss` | `0x14138` | `0x141e8` | **`+0xb0`** |
+| `__DATA.__data` | `0x8a28` | `0x8aa8` | **`+0x80`** |
+| `__TEXT.__eh_frame` | `0x16d8` | `0x1728` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x1ca0` | `0x1cc0` | **`+0x20`** |
+| `__DATA.__common` | `0x2378` | `0x2368` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -9.26.6.16.5
--  __TEXT.__text: 0x1ec328c
 +9.26.7.9.0
-+  __TEXT.__text: 0x1ece274
-   __TEXT.__init_offsets: 0x8
--  __TEXT.__const: 0x16a160
--  __TEXT.__gcc_except_tab: 0x107d70
--  __TEXT.__cstring: 0xb7822
--  __TEXT.__oslogstring: 0x12c9b
--  __TEXT.__unwind_info: 0x41c90
--  __TEXT.__eh_frame: 0x16d8
-+  __TEXT.__const: 0x1696a0
-+  __TEXT.__gcc_except_tab: 0x108394
-+  __TEXT.__cstring: 0xb83f2
-+  __TEXT.__oslogstring: 0x12e9b
-+  __TEXT.__unwind_info: 0x41f60
-+  __TEXT.__eh_frame: 0x1728
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0x3590
-+  __DATA_CONST.__const: 0x3650
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x28
-   __DATA_CONST.__objc_selrefs: 0x2e8
-   __DATA_CONST.__got: 0x5d8
--  __AUTH_CONST.__const: 0x7c1e8
-+  __AUTH_CONST.__const: 0x7c8e8
-   __AUTH_CONST.__cfstring: 0x1980
-   __AUTH_CONST.__weak_auth_got: 0x60
--  __AUTH_CONST.__auth_got: 0x1ca0
-+  __AUTH_CONST.__auth_got: 0x1cc0
-   __AUTH.__data: 0x28
-   __AUTH.__thread_vars: 0x60
-   __AUTH.__thread_bss: 0x40
--  __DATA.__data: 0x8a28
-+  __DATA.__data: 0x8aa8
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x14138
--  __DATA.__common: 0x2378
-+  __DATA.__bss: 0x141e8
-+  __DATA.__common: 0x2368
-   __DATA_DIRTY.__data: 0x18
-   __DATA_DIRTY.__bss: 0x18
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 49604
 -  Symbols:   2068
 -  CStrings:  13772
 +  Functions: 49712
 +  Symbols:   2087
 +  CStrings:  13822
- 
 Symbols:
 + __SparseGetOptionsFromNumericFactor_Double
 + __SparseRefactorLU_Double

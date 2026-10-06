@@ -2,107 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/AssistantIslandClient.framework/AssistantIslandClient`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x50e40` | `0x4e494` | **`-0x29ac`** |
+| `__TEXT.__const` | `0x8544` | `0x8064` | **`-0x4e0`** |
+| `__AUTH_CONST.__objc_const` | `0x2f20` | `0x2c60` | **`-0x2c0`** |
+| `__DATA_DIRTY.__data` | `0x1460` | `0x11e0` | **`-0x280`** |
+| `__TEXT.__constg_swiftt` | `0x2684` | `0x2424` | **`-0x260`** |
+| `__DATA_DIRTY.__bss` | `0xf80` | `0xd80` | **`-0x200`** |
+| `__AUTH_CONST.__const` | `0x50d0` | `0x4f18` | **`-0x1b8`** |
+| `__DATA.__bss` | `0xd758` | `0xd5a8` | **`-0x1b0`** |
+| `__AUTH.__objc_data` | `0x1780` | `0x15e8` | **`-0x198`** |
+| `__TEXT.__objc_methlist` | `0x19d8` | `0x18b0` | **`-0x128`** |
+| `__TEXT.__unwind_info` | `0x2520` | `0x2420` | **`-0x100`** |
+| `__TEXT.__swift5_typeref` | `0x24b0` | `0x23d0` | **`-0xe0`** |
+| `__TEXT.__swift5_fieldmd` | `0x1898` | `0x17cc` | **`-0xcc`** |
+| `__DATA_DIRTY.__objc_data` | `0x1560` | `0x14a8` | **`-0xb8`** |
+| `__TEXT.__swift5_assocty` | `0x2b0` | `0x218` | **`-0x98`** |
+| `__TEXT.__swift5_reflstr` | `0xc8f` | `0xc08` | **`-0x87`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb20` | `0xaa8` | **`-0x78`** |
+| `__TEXT.__swift5_capture` | `0x860` | `0x7f4` | **`-0x6c`** |
+| `__AUTH.__data` | `0x758` | `0x700` | **`-0x58`** |
+| `__TEXT.__eh_frame` | `0x1b28` | `0x1ad0` | **`-0x58`** |
+| `__DATA_CONST.__objc_classlist` | `0x1e0` | `0x1c0` | **`-0x20`** |
+| `__TEXT.__cstring` | `0x1066` | `0x1046` | **`-0x20`** |
+| `__TEXT.__swift5_proto` | `0x740` | `0x724` | **`-0x1c`** |
+| `__TEXT.__swift5_types` | `0x304` | `0x2e8` | **`-0x1c`** |
+| `__AUTH_CONST.__auth_got` | `0xcd0` | `0xcc0` | **`-0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x180` | `0x170` | **`-0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0xf0` | `0xe0` | **`-0x10`** |
+| `__DATA.__data` | `0x1ba0` | `0x1ba8` | **`+0x8`** |
+| `__DATA_CONST.__const` | `0x3b0` | `0x3a8` | **`-0x8`** |
+| `__DATA_DIRTY.__common` | `0x70` | `0x68` | **`-0x8`** |
+
+### Other Changes
 
 ```diff
 
 -73.0.5.102.0
--  __TEXT.__text: 0x50e40
--  __TEXT.__objc_methlist: 0x19d8
--  __TEXT.__swift5_typeref: 0x24b0
--  __TEXT.__swift5_fieldmd: 0x1898
--  __TEXT.__const: 0x8544
--  __TEXT.__constg_swiftt: 0x2684
 +73.0.12.0.0
-+  __TEXT.__text: 0x4e494
-+  __TEXT.__objc_methlist: 0x18b0
-+  __TEXT.__const: 0x8064
-+  __TEXT.__constg_swiftt: 0x2424
-+  __TEXT.__swift5_typeref: 0x23d0
-   __TEXT.__swift5_builtin: 0x8c
--  __TEXT.__swift5_reflstr: 0xc8f
-+  __TEXT.__swift5_reflstr: 0xc08
-+  __TEXT.__swift5_fieldmd: 0x17cc
-+  __TEXT.__swift5_types: 0x2e8
-   __TEXT.__swift5_protos: 0x14
--  __TEXT.__swift5_types: 0x304
--  __TEXT.__swift5_assocty: 0x2b0
--  __TEXT.__swift5_proto: 0x740
-+  __TEXT.__swift5_assocty: 0x218
-+  __TEXT.__swift5_proto: 0x724
-   __TEXT.__swift5_mpenum: 0x1c
--  __TEXT.__cstring: 0x1066
-+  __TEXT.__cstring: 0x1046
-   __TEXT.__oslogstring: 0x85e
--  __TEXT.__swift5_capture: 0x860
-+  __TEXT.__swift5_capture: 0x7f4
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x14
--  __TEXT.__unwind_info: 0x2520
--  __TEXT.__eh_frame: 0x1b28
-+  __TEXT.__unwind_info: 0x2420
-+  __TEXT.__eh_frame: 0x1ad0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3b0
--  __DATA_CONST.__objc_classlist: 0x1e0
--  __DATA_CONST.__objc_protolist: 0x180
-+  __DATA_CONST.__const: 0x3a8
-+  __DATA_CONST.__objc_classlist: 0x1c0
-+  __DATA_CONST.__objc_protolist: 0x170
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb20
--  __DATA_CONST.__objc_protorefs: 0xf0
-+  __DATA_CONST.__objc_selrefs: 0xaa8
-+  __DATA_CONST.__objc_protorefs: 0xe0
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x50d0
--  __AUTH_CONST.__objc_const: 0x2f20
--  __AUTH_CONST.__auth_got: 0xcd0
--  __AUTH.__objc_data: 0x1780
--  __AUTH.__data: 0x758
--  __DATA.__data: 0x1ba0
--  __DATA.__bss: 0xd758
-+  __AUTH_CONST.__const: 0x4f18
-+  __AUTH_CONST.__objc_const: 0x2c60
-+  __AUTH_CONST.__auth_got: 0xcc0
-+  __AUTH.__objc_data: 0x15e8
-+  __AUTH.__data: 0x700
-+  __DATA.__data: 0x1ba8
-+  __DATA.__bss: 0xd5a8
-   __DATA.__common: 0x8
--  __DATA_DIRTY.__objc_data: 0x1560
--  __DATA_DIRTY.__data: 0x1460
--  __DATA_DIRTY.__bss: 0xf80
--  __DATA_DIRTY.__common: 0x70
-+  __DATA_DIRTY.__objc_data: 0x14a8
-+  __DATA_DIRTY.__data: 0x11e0
-+  __DATA_DIRTY.__bss: 0xd80
-+  __DATA_DIRTY.__common: 0x68
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3986
--  Symbols:   1944
+-  Symbols:   1716
 +  Functions: 3873
-+  Symbols:   1879
-   CStrings:  122
- 
++  Symbols:   1668
 Symbols:
 + _OBJC_CLASS_$__TtC21AssistantIslandClient34ObscuredFromScreenshotUpdateAction
 + _OBJC_METACLASS_$__TtC21AssistantIslandClient34ObscuredFromScreenshotUpdateAction
@@ -112,9 +57,6 @@ Symbols:
 + __METACLASS_DATA__TtC21AssistantIslandClient34ObscuredFromScreenshotUpdateAction
 + __PROPERTIES__TtC21AssistantIslandClient25UISecureHostingController
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyAA6ButtonVyACyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA016_ForegroundStyleJ0VyAA5ColorVGGGAA01_d9ShapeKindJ0VyAA06_SizedO0VyAA9RectangleVGGGAWyA_GGAA4ViewHPA2_AAA5_HPAuAA5_HPyHC_A1_AA0sJ0HPyHCHC_A3_AAA6_HPyHCHC
-+ _objc_msgSend$setSiriIsThinking:
-+ _objc_msgSend$siriIsThinking
-+ _objc_msgSend$superview
 + _objc_retain_x28
 + _symbolic _____ 21AssistantIslandClient16AudioPowerMetersO
 + _symbolic _____ 21AssistantIslandClient34ObscuredFromScreenshotUpdateActionC
@@ -160,26 +102,6 @@ Symbols:
 - _get_witness_table 7SwiftUI15ModifiedContentVyACy21AssistantIslandClient22VoiceScenePresentation33_8898E8EEB6BFE17E5EE08E064017BD33LLVAA16_FlexFrameLayoutVGAA25_AppearanceActionModifierVGAA4ViewHPAjaNHPAgaNHPyHC_AiA0xW0HPyHCHC_AlaOHPyHCHC
 - _get_witness_table 7SwiftUI4ViewRzlqd__AA5SceneHD2_AaCPAAE19restorationBehavioryQrAA0d11RestorationF0VFQOyAdAE19allowsSecureDrawingyQrSbFQOyAdAE16safeAreaDisabledQryFQOyAA14UISceneAdaptorVy21AssistantIslandClient0pqr5VoiceD5GroupV0S19PresentationWrapper33_DC2B966D5C67F837660B7AB78FFC0878LLVyx_xGG_Qo__Qo__Qo_HO
 - _objc_getAssociatedObject
-- _objc_msgSend$activatedIslandStateRawValue
-- _objc_msgSend$audioMetersBands
-- _objc_msgSend$audioPowerLevel
-- _objc_msgSend$chatInputContentContextId
-- _objc_msgSend$chatInputContentRenderId
-- _objc_msgSend$floatValue
-- _objc_msgSend$floatingContentContextId
-- _objc_msgSend$floatingContentHeight
-- _objc_msgSend$floatingContentRenderId
-- _objc_msgSend$floatingContentWidth
-- _objc_msgSend$initWithFloat:
-- _objc_msgSend$setAudioMetersBands:
-- _objc_msgSend$setAudioPowerLevel:
-- _objc_msgSend$setChatInputContentContextId:
-- _objc_msgSend$setChatInputContentRenderId:
-- _objc_msgSend$setFloatingContentContextId:
-- _objc_msgSend$setFloatingContentHeight:
-- _objc_msgSend$setFloatingContentRenderId:
-- _objc_msgSend$setFloatingContentWidth:
-- _objc_msgSend$updateCollapseState:withAppBundleIdentifiers:
 - _objc_setAssociatedObject
 - _symbolic $s21AssistantIslandClient010VoiceSceneC8SettingsP
 - _symbolic $s21AssistantIslandClient18VoiceSceneSettingsP

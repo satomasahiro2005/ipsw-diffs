@@ -2,105 +2,51 @@
 
 > `/System/Library/Frameworks/ContactsUI.framework/ContactsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3853e4` | `0x387e14` | **`+0x2a30`** |
+| `__TEXT.__oslogstring` | `0xaf50` | `0xb29d` | **`+0x34d`** |
+| `__TEXT.__objc_methlist` | `0x39594` | `0x397ec` | **`+0x258`** |
+| `__AUTH_CONST.__objc_const` | `0x59520` | `0x59740` | **`+0x220`** |
+| `__DATA_CONST.__objc_selrefs` | `0x18610` | `0x187d0` | **`+0x1c0`** |
+| `__AUTH_CONST.__const` | `0xa438` | `0xa5b0` | **`+0x178`** |
+| `__DATA.__bss` | `0xa468` | `0xa588` | **`+0x120`** |
+| `__TEXT.__swift5_reflstr` | `0x3901` | `0x3a11` | **`+0x110`** |
+| `__TEXT.__const` | `0xc470` | `0xc550` | **`+0xe0`** |
+| `__DATA.__data` | `0xad28` | `0xadc8` | **`+0xa0`** |
+| `__TEXT.__constg_swiftt` | `0x5588` | `0x5620` | **`+0x98`** |
+| `__TEXT.__unwind_info` | `0xdd10` | `0xdda8` | **`+0x98`** |
+| `__AUTH.__objc_data` | `0xfa38` | `0xfab8` | **`+0x80`** |
+| `__TEXT.__swift5_fieldmd` | `0x357c` | `0x35f0` | **`+0x74`** |
+| `__DATA_CONST.__const` | `0x6818` | `0x6840` | **`+0x28`** |
+| `__TEXT.__cstring` | `0x1393b` | `0x13960` | **`+0x25`** |
+| `__DATA.__objc_ivar` | `0x3c60` | `0x3c84` | **`+0x24`** |
+| `__AUTH_CONST.__cfstring` | `0xba60` | `0xba80` | **`+0x20`** |
+| `__TEXT.__swift5_capture` | `0x1594` | `0x15b4` | **`+0x20`** |
+| `__TEXT.__swift5_typeref` | `0xefd2` | `0xeff2` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x32f8` | `0x330c` | **`+0x14`** |
+| `__DATA_DIRTY.__bss` | `0x158` | `0x148` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x2cd0` | `0x2cd8` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x2b50` | `0x2b58` | **`+0x8`** |
+| `__DATA_DIRTY.__data` | `0xd8` | `0xe0` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x454` | `0x45c` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x3cc` | `0x3d4` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1461.100.1.0.0
--  __TEXT.__text: 0x36b8d8
--  __TEXT.__objc_methlist: 0x39594
 +1463.200.41.0.0
-+  __TEXT.__text: 0x36e264
-+  __TEXT.__objc_methlist: 0x397ec
-   __TEXT.__dlopen_cstrs: 0x183b
--  __TEXT.__const: 0xc470
--  __TEXT.__oslogstring: 0xaf50
--  __TEXT.__swift5_typeref: 0xefd2
--  __TEXT.__cstring: 0x1393b
--  __TEXT.__constg_swiftt: 0x5588
--  __TEXT.__swift5_reflstr: 0x3901
--  __TEXT.__swift5_fieldmd: 0x357c
-+  __TEXT.__const: 0xc550
-+  __TEXT.__oslogstring: 0xb29d
-+  __TEXT.__swift5_typeref: 0xeff2
-+  __TEXT.__cstring: 0x13960
-+  __TEXT.__constg_swiftt: 0x5620
-+  __TEXT.__swift5_reflstr: 0x3a11
-+  __TEXT.__swift5_fieldmd: 0x35f0
-   __TEXT.__swift5_builtin: 0x230
-   __TEXT.__swift5_assocty: 0xeb8
--  __TEXT.__swift5_capture: 0x1594
--  __TEXT.__swift5_proto: 0x454
--  __TEXT.__swift5_types: 0x3cc
-+  __TEXT.__swift5_capture: 0x15b4
-+  __TEXT.__swift5_proto: 0x45c
-+  __TEXT.__swift5_types: 0x3d4
-   __TEXT.__swift_as_entry: 0xa8
-   __TEXT.__swift_as_ret: 0xac
-   __TEXT.__swift_as_cont: 0x1e8
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_protos: 0x18
--  __TEXT.__gcc_except_tab: 0x32f8
-+  __TEXT.__gcc_except_tab: 0x330c
-   __TEXT.__ustring: 0x79a
--  __TEXT.__unwind_info: 0x111a0
-+  __TEXT.__unwind_info: 0x11250
-   __TEXT.__eh_frame: 0x260c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x6818
-+  __DATA_CONST.__const: 0x6840
-   __DATA_CONST.__objc_classlist: 0x1778
-   __DATA_CONST.__objc_catlist: 0x130
-   __DATA_CONST.__objc_protolist: 0x980
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x18610
-+  __DATA_CONST.__objc_selrefs: 0x187d0
-   __DATA_CONST.__objc_protorefs: 0x1a8
-   __DATA_CONST.__objc_superrefs: 0xf38
-   __DATA_CONST.__objc_arraydata: 0x5f0
--  __DATA_CONST.__got: 0x2b50
--  __AUTH_CONST.__const: 0xa438
--  __AUTH_CONST.__cfstring: 0xba60
--  __AUTH_CONST.__objc_const: 0x59520
-+  __DATA_CONST.__got: 0x2b58
-+  __AUTH_CONST.__const: 0xa5b0
-+  __AUTH_CONST.__cfstring: 0xba80
-+  __AUTH_CONST.__objc_const: 0x59740
-   __AUTH_CONST.__objc_doubleobj: 0xd0
-   __AUTH_CONST.__objc_intobj: 0x498
-   __AUTH_CONST.__objc_arrayobj: 0x2b8
-   __AUTH_CONST.__objc_dictobj: 0x78
--  __AUTH_CONST.__auth_got: 0x2cd0
--  __AUTH.__objc_data: 0xfa38
-+  __AUTH_CONST.__auth_got: 0x2cd8
-+  __AUTH.__objc_data: 0xfab8
-   __AUTH.__data: 0x35f0
--  __DATA.__objc_ivar: 0x3c60
--  __DATA.__data: 0xad28
-+  __DATA.__objc_ivar: 0x3c84
-+  __DATA.__data: 0xadc8
-   __DATA.__common: 0x358
-   __DATA_DIRTY.__objc_data: 0x2318
--  __DATA_DIRTY.__data: 0xd8
--  __DATA_DIRTY.__bss: 0x158
-+  __DATA_DIRTY.__data: 0xe0
-+  __DATA_DIRTY.__bss: 0x148
-   __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 24397
--  Symbols:   44655
+-  Symbols:   34139
 -  CStrings:  3236
 +  Functions: 24470
-+  Symbols:   44774
++  Symbols:   34220
 +  CStrings:  3249
- 
 Symbols:
 + +[CNContactListStyleApplier subtitleNumberOfLinesForAccessibilityContentSizeCategory:]
 + +[CNContactListViewController collectionViewLayoutWithFloatingHeaderViews:contactListStyleApplier:trailingSwipeActionsProvider:shouldDisplaySupplementaryHeaderItemForSection:shouldShowSeparatorsForSection:directionalLayoutMargins:safeAreaInsets:collectionViewIsShowingIndexBar:numberOfItemsInSection:contentUnavailable:collectionViewIsSelectingIndexPath:]
@@ -443,67 +389,6 @@ Symbols:
 + _log.cn_once_token_23
 + _log.cn_once_token_24
 + _log.cn_once_token_5
-+ _objc_msgSend$_installScrollPocketBarInteractionIfNeeded
-+ _objc_msgSend$_setEdgeVisibility:
-+ _objc_msgSend$actionsControllerForType:
-+ _objc_msgSend$actionsControllersByType
-+ _objc_msgSend$actionsControllersContact
-+ _objc_msgSend$afterDelay:performBlock:delayTolerance:qualityOfService:
-+ _objc_msgSend$allowsFullSwipeToDeleteContact:
-+ _objc_msgSend$applyContactListDirectionalLayoutMargins:toLayoutSection:listAppearance:safeAreaInsets:collectionViewIsShowingIndexBar:
-+ _objc_msgSend$applyContactListStyleToHeaderFooter:withTitle:
-+ _objc_msgSend$applySearchExcerptToContentConfiguration:withSubtitleText:
-+ _objc_msgSend$avatarEditingSourceContactForHeaderView:
-+ _objc_msgSend$avatarLeadingLayoutMarginForListAppearance:
-+ _objc_msgSend$boundsForImageSize:normalizedVisibleRect:
-+ _objc_msgSend$cachedShouldHideSharedProfileMenu
-+ _objc_msgSend$canShowDeleteActionForContacts:
-+ _objc_msgSend$cardEditingFamilySharingGroup
-+ _objc_msgSend$cnui_directionalSafeAreaInsets
-+ _objc_msgSend$cnui_setScrollPocketContributionSuppressed:
-+ _objc_msgSend$collectionViewLayoutWithFloatingHeaderViews:contactListStyleApplier:trailingSwipeActionsProvider:shouldDisplaySupplementaryHeaderItemForSection:shouldShowSeparatorsForSection:directionalLayoutMargins:safeAreaInsets:collectionViewIsShowingIndexBar:numberOfItemsInSection:contentUnavailable:collectionViewIsSelectingIndexPath:
-+ _objc_msgSend$configurationState
-+ _objc_msgSend$confirmationDismissalHandler
-+ _objc_msgSend$contactForVisualIdentityEditingFromContact:
-+ _objc_msgSend$copyFullExtentPreviewImage
-+ _objc_msgSend$deleteContacts:offeringRemovalFromList:dismissalHandler:
-+ _objc_msgSend$editConfiguration
-+ _objc_msgSend$extent
-+ _objc_msgSend$finishConfirmationWithOutcome:
-+ _objc_msgSend$groupNameForRemovalOption
-+ _objc_msgSend$hardStyle
-+ _objc_msgSend$imageFromMetadata:size:minimumHorizontalMargin:completionHandler:
-+ _objc_msgSend$imageWithCVPixelBuffer:
-+ _objc_msgSend$interactions
-+ _objc_msgSend$invalidateActionsControllersIfNeeded
-+ _objc_msgSend$labelsLeadingInset
-+ _objc_msgSend$layoutSectionForLayoutConfiguration:layoutEnvironment:section:contactListStyleApplier:shouldDisplaySupplementaryHeaderItemForSection:headerViewsFloat:directionalLayoutMargins:listAppearance:safeAreaInsets:collectionViewIsShowingIndexBar:contentUnavailable:
-+ _objc_msgSend$makeActionsControllerForActionType:
-+ _objc_msgSend$meCardAvatarEditingSourceContact
-+ _objc_msgSend$normalizedFaceRect
-+ _objc_msgSend$normalizedVisibleFrame
-+ _objc_msgSend$normalizedVisibleRect
-+ _objc_msgSend$offersRemoveFromGroup
-+ _objc_msgSend$persistedLinkedContacts
-+ _objc_msgSend$removeFromGroupHandler
-+ _objc_msgSend$renderedBasicMonogramForContact:scope:prohibitedSources:
-+ _objc_msgSend$selectionLeadingInsetForListAppearance:
-+ _objc_msgSend$selectionTrailingInsetForListAppearance:
-+ _objc_msgSend$setActionsControllersContact:
-+ _objc_msgSend$setCachedShouldHideSharedProfileMenu:
-+ _objc_msgSend$setConfirmationDismissalHandler:
-+ _objc_msgSend$setGroupNameForRemovalOption:
-+ _objc_msgSend$setMeCardAvatarEditingSourceContact:
-+ _objc_msgSend$setRemoveFromGroupHandler:
-+ _objc_msgSend$setTextToSecondaryTextVerticalPadding:
-+ _objc_msgSend$shouldHideSharedProfileMenu
-+ _objc_msgSend$shouldHideSharedProfileMenuInContacts
-+ _objc_msgSend$shouldPresentDisambiguationUIForActionType:
-+ _objc_msgSend$standardPreferences
-+ _objc_msgSend$subtitleNumberOfLinesForAccessibilityContentSizeCategory:
-+ _objc_msgSend$updateAvatarLeadingConstraint
-+ _objc_msgSend$updateLabelsLeadingInset
-+ _objc_msgSend$userHasOptedInToPreference:
 + _symbolic ScM
 + _symbolic _____ 10ContactsUI30ScrollRevealThresholdEvaluatorV
 + _symbolic _____ 10ContactsUI30ScrollRevealThresholdEvaluatorV0C6ActionO
@@ -774,29 +659,6 @@ Symbols:
 - _log.cn_once_token_21
 - _log.cn_once_token_22
 - _log.cn_once_token_3
-- _objc_msgSend$actionsControllerByType
-- _objc_msgSend$applyContactListDirectionalLayoutMargins:toLayoutSection:collectionViewIsShowingIndexBar:
-- _objc_msgSend$applyContactListStyleToHeaderFooter:withTitle:isRTL:listAppearance:superviewDirectionalLayoutMargins:
-- _objc_msgSend$applySubtitleTextColorsToSearchCellContentConfiguration:withSubtitleText:forSelectedState:
-- _objc_msgSend$blueSelectionSecondaryTextColor
-- _objc_msgSend$cellBlueSelectionSecondaryTextColor
-- _objc_msgSend$cellSearchResultTextDisabledColor
-- _objc_msgSend$collectionViewLayoutWithFloatingHeaderViews:contactListStyleApplier:trailingSwipeActionsProvider:shouldDisplaySupplementaryHeaderItemForSection:shouldShowSeparatorsForSection:directionalLayoutMargins:collectionViewIsShowingIndexBar:numberOfItemsInSection:contentUnavailable:collectionViewIsSelectingIndexPath:
-- _objc_msgSend$contactListBannerFootnoteFontPrimary
-- _objc_msgSend$contactListBannerFootnoteFontSecondary
-- _objc_msgSend$contactListBannerFootnoteTextColorPrimary
-- _objc_msgSend$contactListBannerFootnoteTextColorSecondary
-- _objc_msgSend$contactListBannerTitleFontPrimary
-- _objc_msgSend$downtimeWhitelistUIEnabled
-- _objc_msgSend$imageFromMetadata:size:completionHandler:
-- _objc_msgSend$layoutSectionForLayoutConfiguration:layoutEnvironment:section:contactListStyleApplier:shouldDisplaySupplementaryHeaderItemForSection:headerViewsFloat:directionalLayoutMargins:collectionViewIsShowingIndexBar:contentUnavailable:
-- _objc_msgSend$meBannerAvatarLeadingInsetForListAppearance:
-- _objc_msgSend$metricsForTextStyle:
-- _objc_msgSend$secondaryAttributedText
-- _objc_msgSend$sectionHeaderFooterLeadingLayoutMargin
-- _objc_msgSend$setActionsControllerByType:
-- _objc_msgSend$softStyle
-- _objc_msgSend$tableCellDefaultSelectionTintColor
 CStrings:
 + "CARD_ACTION_DELETE_MESSAGE"
 + "CNContactsButtonAlwaysShowUndeterminedContactsAccessUI"

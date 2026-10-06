@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SeymourServerProtocol.framework/SeymourServerProtocol`
 
-```diff
+### Section Size Changes
 
- 2027.0.146.1.4
--  __TEXT.__text: 0x1f5e0
-+  __TEXT.__text: 0x1f5e4
-   __TEXT.__const: 0x3150
-   __TEXT.__swift5_typeref: 0x60c
-   __TEXT.__cstring: 0x3f3
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1f5e0` | `0x1f5e4` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2a30fd5d8 -> sub_2a3eb25d8 : 392 -> 396
+~ sub_2a2ff35d8 -> sub_2a3da45d8 : 392 -> 396
 ```

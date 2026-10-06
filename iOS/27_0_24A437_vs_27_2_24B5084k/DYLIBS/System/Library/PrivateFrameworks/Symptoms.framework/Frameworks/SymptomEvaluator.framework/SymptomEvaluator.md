@@ -2,101 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/Symptoms.framework/Frameworks/SymptomEvaluator.framework/SymptomEvaluator`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2a1080` | `0x2a4538` | **`+0x34b8`** |
+| `__AUTH_CONST.__objc_const` | `0x41b80` | `0x42298` | **`+0x718`** |
+| `__AUTH_CONST.__cfstring` | `0x1f560` | `0x1fbc0` | **`+0x660`** |
+| `__TEXT.__cstring` | `0x27970` | `0x27c00` | **`+0x290`** |
+| `__DATA_CONST.__objc_selrefs` | `0xd548` | `0xd750` | **`+0x208`** |
+| `__TEXT.__objc_methlist` | `0x18cf8` | `0x18ee0` | **`+0x1e8`** |
+| `__TEXT.__oslogstring` | `0x47eb5` | `0x47fc5` | **`+0x110`** |
+| `__DATA_DIRTY.__bss` | `0x18d0` | `0x1800` | **`-0xd0`** |
+| `__TEXT.__unwind_info` | `0x7ab0` | `0x7b70` | **`+0xc0`** |
+| `__TEXT.__gcc_except_tab` | `0x52c8` | `0x5378` | **`+0xb0`** |
+| `__AUTH.__objc_data` | `0x11c8` | `0x1268` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x7058` | `0x70e8` | **`+0x90`** |
+| `__TEXT.__const` | `0x1268` | `0x12f8` | **`+0x90`** |
+| `__DATA_DIRTY.__objc_data` | `0x4588` | `0x4538` | **`-0x50`** |
+| `__DATA.__objc_ivar` | `0x31b8` | `0x31f4` | **`+0x3c`** |
+| `__AUTH_CONST.__auth_got` | `0x1790` | `0x17c8` | **`+0x38`** |
+| `__DATA_CONST.__got` | `0x10c0` | `0x10e8` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x3230` | `0x3250` | **`+0x20`** |
+| `__DATA.__bss` | `0xee8` | `0xf08` | **`+0x20`** |
+| `__DATA_CONST.__objc_superrefs` | `0x5d8` | `0x5e8` | **`+0x10`** |
+| `__TEXT.symptoms_clp` | `0x6000` | `0x6010` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x8b8` | `0x8c0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2394.0.4.0.0
--  __TEXT.__text: 0x299a4c
--  __TEXT.__objc_methlist: 0x18cf8
--  __TEXT.__cstring: 0x27970
--  __TEXT.__const: 0x1268
--  __TEXT.__oslogstring: 0x47eb5
--  __TEXT.__gcc_except_tab: 0x52c8
 +2394.40.15.0.0
-+  __TEXT.__text: 0x29ce68
-+  __TEXT.__objc_methlist: 0x18ee0
-+  __TEXT.__cstring: 0x27c00
-+  __TEXT.__const: 0x12f8
-+  __TEXT.__oslogstring: 0x47fc5
-+  __TEXT.__gcc_except_tab: 0x5378
-   __TEXT.__dlopen_cstrs: 0x56
-   __TEXT.__swift5_typeref: 0x38d
-   __TEXT.__swift5_capture: 0x518
 
-   __TEXT.__swift_as_cont: 0x78
-   __TEXT.evaluator_cfg: 0x6532
-   __TEXT.default_clp: 0x2fe0
--  __TEXT.symptoms_clp: 0x6000
-+  __TEXT.symptoms_clp: 0x6010
-   __TEXT.network_clp: 0x4bb0
-   __TEXT.baseband_clp: 0xed50
-   __TEXT.bb_MAV_clp: 0x89e0
-   __TEXT.bb_INT_clp: 0x6d20
-   __TEXT.modules_clp: 0x16e0
--  __TEXT.__unwind_info: 0x92e0
-+  __TEXT.__unwind_info: 0x93b8
-   __TEXT.__eh_frame: 0x7d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7058
--  __DATA_CONST.__objc_classlist: 0x8b8
-+  __DATA_CONST.__const: 0x70e8
-+  __DATA_CONST.__objc_classlist: 0x8c0
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x1c0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0xd548
-+  __DATA_CONST.__objc_selrefs: 0xd750
-   __DATA_CONST.__objc_protorefs: 0x30
--  __DATA_CONST.__objc_superrefs: 0x5d8
-+  __DATA_CONST.__objc_superrefs: 0x5e8
-   __DATA_CONST.__objc_arraydata: 0x980
--  __DATA_CONST.__got: 0x10c0
--  __AUTH_CONST.__const: 0x3230
--  __AUTH_CONST.__cfstring: 0x1f560
--  __AUTH_CONST.__objc_const: 0x41b80
-+  __DATA_CONST.__got: 0x10e8
-+  __AUTH_CONST.__const: 0x3250
-+  __AUTH_CONST.__cfstring: 0x1fbc0
-+  __AUTH_CONST.__objc_const: 0x42298
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x1c8
-   __AUTH_CONST.__objc_dictobj: 0xa00
-   __AUTH_CONST.__objc_intobj: 0x9f0
-   __AUTH_CONST.__objc_doubleobj: 0x50
-   __AUTH_CONST.__objc_floatobj: 0x30
--  __AUTH_CONST.__auth_got: 0x1790
--  __AUTH.__objc_data: 0x11c8
-+  __AUTH_CONST.__auth_got: 0x17c8
-+  __AUTH.__objc_data: 0x1268
-   __AUTH.__data: 0xc8
--  __DATA.__objc_ivar: 0x31b8
-+  __DATA.__objc_ivar: 0x31f4
-   __DATA.__data: 0x1f20
-   __DATA.__crash_info: 0x148
-   __DATA.__common: 0xa8
--  __DATA_DIRTY.__objc_data: 0x4588
-+  __DATA_DIRTY.__objc_data: 0x4538
-   __DATA_DIRTY.__data: 0x1f0
--  __DATA_DIRTY.__bss: 0x18d0
-+  __DATA_DIRTY.__bss: 0x1800
-   __DATA_DIRTY.__common: 0x1a8
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 12241
--  Symbols:   25126
+-  Symbols:   20044
 -  CStrings:  12231
 +  Functions: 12302
-+  Symbols:   25255
++  Symbols:   20121
 +  CStrings:  12269
- 
 Symbols:
 + -[CellFallbackHandler _dataStallRefreshSecsForTesting]
 + -[CellFallbackHandler _polledScoreSampleCountForTesting]
@@ -229,68 +174,6 @@ Symbols:
 + _nw_activity_set_reporting_strategy
 + _nw_settings_copy_activity_opentelemetry_collector_url
 + _nw_settings_copy_honeycomb_team_key
-+ _objc_msgSend$URL
-+ _objc_msgSend$_enqueueSpanBytes:serviceName:
-+ _objc_msgSend$_flushPendingSpans
-+ _objc_msgSend$_lookupTraceIDForActivityUUID:
-+ _objc_msgSend$_registerPolledFlowObserver
-+ _objc_msgSend$_resolveTraceIDForActivityUUID:parent:
-+ _objc_msgSend$_sendPayload:retryCount:
-+ _objc_msgSend$_unregisterPolledFlowObserver
-+ _objc_msgSend$activityTraceIDCache
-+ _objc_msgSend$allHeaderFields
-+ _objc_msgSend$authenticationMethod
-+ _objc_msgSend$buildPlatform
-+ _objc_msgSend$clientAttributesCache
-+ _objc_msgSend$clientMetric
-+ _objc_msgSend$clientMetricName
-+ _objc_msgSend$collectorURL
-+ _objc_msgSend$completionReason
-+ _objc_msgSend$componentsWithURL:resolvingAgainstBaseURL:
-+ _objc_msgSend$consecutiveFailures
-+ _objc_msgSend$credentialForTrust:
-+ _objc_msgSend$dataForKey:
-+ _objc_msgSend$durationMsecs
-+ _objc_msgSend$endTimeUnixNano
-+ _objc_msgSend$exportActivityEpilogue:externalUUID:externalParentUUID:
-+ _objc_msgSend$exportActivityStart:externalUUID:externalParentUUID:
-+ _objc_msgSend$exportFragmentWithUUID:fragmentType:attributes:
-+ _objc_msgSend$externallyVisibleNwActivity
-+ _objc_msgSend$grpcCollectorURL
-+ _objc_msgSend$initWithCollectorURL:teamKey:
-+ _objc_msgSend$initWithSpanBytes:serviceName:
-+ _objc_msgSend$initWithURL:cachePolicy:timeoutInterval:
-+ _objc_msgSend$invalidateAndCancel
-+ _objc_msgSend$lastFailureBackoffTime
-+ _objc_msgSend$objCType
-+ _objc_msgSend$observeSetupAssistantFinished
-+ _objc_msgSend$openTelemetryExporter
-+ _objc_msgSend$pendingSpans
-+ _objc_msgSend$productType
-+ _objc_msgSend$protectionSpace
-+ _objc_msgSend$requireUserNotification
-+ _objc_msgSend$scopeBytes
-+ _objc_msgSend$serverTrust
-+ _objc_msgSend$serviceName
-+ _objc_msgSend$setConsecutiveFailures:
-+ _objc_msgSend$setCountLimit:
-+ _objc_msgSend$setHTTPBody:
-+ _objc_msgSend$setHTTPMethod:
-+ _objc_msgSend$setLastFailureBackoffTime:
-+ _objc_msgSend$setPath:
-+ _objc_msgSend$setSpanCounter:
-+ _objc_msgSend$setTimeoutIntervalForRequest:
-+ _objc_msgSend$setTimeoutIntervalForResource:
-+ _objc_msgSend$set_nw_activity:
-+ _objc_msgSend$spanBytes
-+ _objc_msgSend$spanCounter
-+ _objc_msgSend$startTimeUnixNano
-+ _objc_msgSend$staticResourceAttributesBytes
-+ _objc_msgSend$statusCode
-+ _objc_msgSend$teamKey
-+ _objc_msgSend$underlyingErrorCode
-+ _objc_msgSend$underlyingErrorDomainString
-+ _objc_msgSend$urlSession
 + _sUUIDSalt
 + _sUUIDSaltOnce
 + _uname
@@ -350,16 +233,6 @@ Symbols:
 - _numMissedLookupsNWActivityFromWiFiArray
 - _numMissedLookupsNWActivityParent
 - _numPrunes
-- _objc_msgSend$_pruneOldMappings
-- _objc_msgSend$externalUUID
-- _objc_msgSend$lastAccessDate
-- _objc_msgSend$mappedMetrics
-- _objc_msgSend$mapperForUUID:reason:
-- _objc_msgSend$nullUUIDMapper
-- _objc_msgSend$setExternalUUID:
-- _objc_msgSend$setLastAccessDate:
-- _objc_msgSend$setUsageFlags:
-- _objc_msgSend$usageFlags
 - _totalAgeAtEviction
 CStrings:
 + "%@.%lu"

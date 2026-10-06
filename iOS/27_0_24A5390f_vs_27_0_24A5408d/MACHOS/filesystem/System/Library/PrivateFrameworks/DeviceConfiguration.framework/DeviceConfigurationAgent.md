@@ -2,56 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/DeviceConfiguration.framework/DeviceConfigurationAgent`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3c` | `0x5b0` | **`+0x574`** |
+| `__TEXT.__auth_stubs` | `0x50` | `0x230` | **`+0x1e0`** |
+| `__DATA_CONST.__auth_got` | `0x28` | `0x118` | **`+0xf0`** |
+| `__DATA_CONST.__got` | `—` | `0x38` | **`+0x38`** |
+| `__DATA.__data` | `—` | `0x28` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x38` | `0x60` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x58` | `0x80` | **`+0x28`** |
+| `__TEXT.__cstring` | `—` | `0x24` | **`+0x24`** |
+| `__DATA_CONST.__auth_ptr` | `—` | `0x10` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `—` | `0xa` | **`+0xa`** |
+| `__DATA.__common` | `0x8` | `0x10` | **`+0x8`** |
+| `__TEXT.__const` | `0x52` | `0x5a` | **`+0x8`** |
+| `__TEXT.__objc_methtype` | `—` | `0x6` | **`+0x6`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__swift5_entry`
+
+### Other Changes
 
 ```diff
 
 -27.0.0.0.0
--  __TEXT.__text: 0x3c
--  __TEXT.__auth_stubs: 0x50
--  __TEXT.__const: 0x52
 +29.2.6.0.0
-+  __TEXT.__text: 0x5b0
-+  __TEXT.__auth_stubs: 0x230
-+  __TEXT.__const: 0x5a
-+  __TEXT.__objc_methtype: 0x6
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__unwind_info: 0x58
--  __DATA_CONST.__const: 0x38
-+  __TEXT.__swift5_typeref: 0xa
-+  __TEXT.__cstring: 0x24
-+  __TEXT.__unwind_info: 0x80
-+  __DATA_CONST.__const: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x28
--  __DATA.__common: 0x8
-+  __DATA_CONST.__auth_got: 0x118
-+  __DATA_CONST.__got: 0x38
-+  __DATA_CONST.__auth_ptr: 0x10
-+  __DATA.__data: 0x28
-+  __DATA.__common: 0x10
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/DeviceConfiguration.framework/DeviceConfiguration
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
+
 +  - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
+
 +  - /usr/lib/swift/libswift_Concurrency.dylib
 +  - /usr/lib/swift/libswift_DarwinFoundation3.dylib
-   - /usr/lib/swift/libswiftos.dylib
+
 -  Functions: 1
 -  Symbols:   14
 -  CStrings:  0
 +  Functions: 11
 +  Symbols:   53
 +  CStrings:  2
- 
 Symbols:
 + _$s19DeviceConfiguration11UserManagerV014registerAsANewC8IfNeededyyFZ
 + _$s19DeviceConfiguration7ServiceC4stopyyF

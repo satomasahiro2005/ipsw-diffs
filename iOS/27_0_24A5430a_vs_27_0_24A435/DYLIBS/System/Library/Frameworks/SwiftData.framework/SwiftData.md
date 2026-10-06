@@ -2,31 +2,19 @@
 
 > `/System/Library/Frameworks/SwiftData.framework/SwiftData`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x171328` | `0x1714d0` | **`+0x1a8`** |
+| `__AUTH_CONST.__auth_got` | `0x19f0` | `0x19f8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 180.0.0.0.0
--  __TEXT.__text: 0x171328
-+  __TEXT.__text: 0x1714d0
-   __TEXT.__objc_methlist: 0x284
-   __TEXT.__cstring: 0x6d6d
-   __TEXT.__const: 0xbb18
-
-   __DATA_CONST.__got: 0xe80
-   __AUTH_CONST.__const: 0x66c0
-   __AUTH_CONST.__objc_const: 0x47c0
--  __AUTH_CONST.__auth_got: 0x19f0
-+  __AUTH_CONST.__auth_got: 0x19f8
-   __AUTH.__objc_data: 0x2c8
-   __AUTH.__data: 0xbb0
-   __DATA.__data: 0x1f18
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   Functions: 6841
--  Symbols:   2137
-+  Symbols:   2138
-   CStrings:  645
- 
+-  Symbols:   1885
++  Symbols:   1886
 Symbols:
 + _objc_retain_x10
 Functions:

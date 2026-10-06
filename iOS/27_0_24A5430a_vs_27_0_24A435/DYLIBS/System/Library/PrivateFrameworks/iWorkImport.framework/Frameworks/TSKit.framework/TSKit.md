@@ -2,19 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/TSKit.framework/TSKit`
 
-```diff
+### Section Size Changes
 
- 488.0.0.0.0
--  __TEXT.__text: 0xa4210
-+  __TEXT.__text: 0xa4234
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__objc_methlist: 0x6058
-   __TEXT.__const: 0xb024
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa4210` | `0xa4234` | **`+0x24`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2ba135aa8 -> sub_2baf97aa8 : 20 -> 24
-~ sub_2ba13ed1c -> sub_2bafa0d20 : 284 -> 288
-~ sub_2ba13f860 -> sub_2bafa1868 : 536 -> 552
-~ sub_2ba19c948 -> sub_2baffe960 : 228 -> 232
-~ sub_2ba19d2f8 -> sub_2bafff314 : 228 -> 232
-~ sub_2ba1b8514 -> sub_2bb01a534 : 968 -> 972
+~ sub_2ba021aa8 -> sub_2bae72aa8 : 20 -> 24
+~ sub_2ba02ad1c -> sub_2bae7bd20 : 284 -> 288
+~ sub_2ba02b860 -> sub_2bae7c868 : 536 -> 552
+~ sub_2ba088948 -> sub_2baed9960 : 228 -> 232
+~ sub_2ba0892f8 -> sub_2baeda314 : 228 -> 232
+~ sub_2ba0a4514 -> sub_2baef5534 : 968 -> 972
 ```

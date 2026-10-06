@@ -2,75 +2,38 @@
 
 > `/System/Library/AccessibilityBundles/VideosUIFramework.axbundle/VideosUIFramework`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15f4c` | `0x15104` | **`-0xe48`** |
+| `__AUTH_CONST.__objc_const` | `0x6b70` | `0x6390` | **`-0x7e0`** |
+| `__AUTH_CONST.__cfstring` | `0x4c20` | `0x48a0` | **`-0x380`** |
+| `__DATA_DIRTY.__objc_data` | `0x2c10` | `0x28f0` | **`-0x320`** |
+| `__TEXT.__objc_methlist` | `0x242c` | `0x21bc` | **`-0x270`** |
+| `__TEXT.__cstring` | `0x3e3b` | `0x3bec` | **`-0x24f`** |
+| `__AUTH.__objc_data` | `0xfa0` | `0xe60` | **`-0x140`** |
+| `__DATA_CONST.__objc_classlist` | `0x5f8` | `0x588` | **`-0x70`** |
+| `__TEXT.__unwind_info` | `0x8b0` | `0x848` | **`-0x68`** |
+| `__DATA_CONST.__const` | `0x770` | `0x728` | **`-0x48`** |
+| `__AUTH_CONST.__const` | `0x840` | `0x800` | **`-0x40`** |
+| `__DATA_CONST.__objc_superrefs` | `0x218` | `0x1f8` | **`-0x20`** |
+| `__DATA_CONST.__got` | `0x1e0` | `0x1d8` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa20` | `0xa28` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -3042.0.0.0.0
--  __TEXT.__text: 0x15f4c
--  __TEXT.__objc_methlist: 0x242c
 +3045.0.0.0.0
-+  __TEXT.__text: 0x15104
-+  __TEXT.__objc_methlist: 0x21bc
-   __TEXT.__const: 0x38
-   __TEXT.__gcc_except_tab: 0x3e8
--  __TEXT.__cstring: 0x3e3b
-+  __TEXT.__cstring: 0x3bec
-   __TEXT.__ustring: 0x22
-   __TEXT.__oslogstring: 0x90
--  __TEXT.__unwind_info: 0x8b0
-+  __TEXT.__unwind_info: 0x848
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x770
--  __DATA_CONST.__objc_classlist: 0x5f8
-+  __DATA_CONST.__const: 0x728
-+  __DATA_CONST.__objc_classlist: 0x588
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa20
--  __DATA_CONST.__objc_superrefs: 0x218
-+  __DATA_CONST.__objc_selrefs: 0xa28
-+  __DATA_CONST.__objc_superrefs: 0x1f8
-   __DATA_CONST.__objc_arraydata: 0x148
--  __DATA_CONST.__got: 0x1e0
--  __AUTH_CONST.__const: 0x840
--  __AUTH_CONST.__cfstring: 0x4c20
--  __AUTH_CONST.__objc_const: 0x6b70
-+  __DATA_CONST.__got: 0x1d8
-+  __AUTH_CONST.__const: 0x800
-+  __AUTH_CONST.__cfstring: 0x48a0
-+  __AUTH_CONST.__objc_const: 0x6390
-   __AUTH_CONST.__objc_dictobj: 0xa0
-   __AUTH_CONST.__objc_arrayobj: 0x30
-   __AUTH_CONST.__objc_intobj: 0x18
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0xfa0
-+  __AUTH.__objc_data: 0xe60
-   __DATA.__bss: 0x80
--  __DATA_DIRTY.__objc_data: 0x2c10
-+  __DATA_DIRTY.__objc_data: 0x28f0
-   __DATA_DIRTY.__common: 0x8
-   __DATA_DIRTY.__bss: 0x80
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
 
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 724
--  Symbols:   2209
+-  Symbols:   1931
 -  CStrings:  690
 +  Functions: 682
-+  Symbols:   2096
++  Symbols:   1817
 +  CStrings:  665
- 
 Symbols:
 + +[MediaShelfViewControllerAccessibility _accessibilityPerformValidations:]
 + +[MediaShelfViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
@@ -101,7 +64,6 @@ Symbols:
 + __OBJC_METACLASS_RO_$_MediaShelfViewControllerAccessibility
 + __OBJC_METACLASS_RO_$___MediaShelfViewControllerAccessibility_super
 + ___55-[MediaShelfViewControllerAccessibility viewDidAppear:]_block_invoke
-+ _objc_msgSend$_axIsFollowingSportsButton
 - +[EpicShowcaseViewControllerAccessibility _accessibilityPerformValidations:]
 - +[EpicShowcaseViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
 - +[EpicShowcaseViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]

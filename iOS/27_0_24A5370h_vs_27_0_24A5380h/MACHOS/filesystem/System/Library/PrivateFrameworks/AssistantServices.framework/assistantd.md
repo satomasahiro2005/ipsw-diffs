@@ -2,103 +2,62 @@
 
 > `/System/Library/PrivateFrameworks/AssistantServices.framework/assistantd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__oslogstring` | `0x45166` | `0x4575a` | **`+0x5f4`** |
+| `__TEXT.__text` | `0x36ecc4` | `0x36e7c0` | **`-0x504`** |
+| `__TEXT.__objc_methname` | `0x612cd` | `0x61552` | **`+0x285`** |
+| `__DATA_CONST.__got` | `0x3cd8` | `0x3e80` | **`+0x1a8`** |
+| `__TEXT.__objc_stubs` | `0x46fe0` | `0x47140` | **`+0x160`** |
+| `__DATA.__objc_const` | `0x34c28` | `0x34b48` | **`-0xe0`** |
+| `__TEXT.__objc_methtype` | `0xfe2f` | `0xfed8` | **`+0xa9`** |
+| `__DATA.__objc_selrefs` | `0x15440` | `0x154a8` | **`+0x68`** |
+| `__DATA.__objc_data` | `0x84d0` | `0x8480` | **`-0x50`** |
+| `__DATA_CONST.__const` | `0x142f8` | `0x14338` | **`+0x40`** |
+| `__TEXT.__auth_stubs` | `0x37a0` | `0x37d0` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0xa498` | `0xa468` | **`-0x30`** |
+| `__DATA_CONST.__auth_got` | `0x1be0` | `0x1bf8` | **`+0x18`** |
+| `__DATA_CONST.__objc_arrayobj` | `0x180` | `0x198` | **`+0x18`** |
+| `__DATA_CONST.__objc_intobj` | `0x8d0` | `0x8b8` | **`-0x18`** |
+| `__DATA.__bss` | `0xdc0` | `0xdb0` | **`-0x10`** |
+| `__TEXT.__objc_classname` | `0x5209` | `0x51f9` | **`-0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x3a7c` | `0x3a70` | **`-0xc`** |
+| `__DATA_CONST.__objc_arraydata` | `0x478` | `0x480` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0xd48` | `0xd40` | **`-0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0xb18` | `0xb10` | **`-0x8`** |
+| `__TEXT.__cstring` | `0x528d6` | `0x528d7` | **`+0x1`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_ivar`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__const`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x36ecc4
--  __TEXT.__auth_stubs: 0x37a0
--  __TEXT.__objc_stubs: 0x46fe0
-+  __TEXT.__text: 0x36e7c0
-+  __TEXT.__auth_stubs: 0x37d0
-+  __TEXT.__objc_stubs: 0x47140
-   __TEXT.__objc_methlist: 0x234f8
-   __TEXT.__const: 0xed40
-   __TEXT.__dlopen_cstrs: 0x99d
--  __TEXT.__gcc_except_tab: 0x3a7c
--  __TEXT.__cstring: 0x528d6
--  __TEXT.__oslogstring: 0x45166
--  __TEXT.__objc_classname: 0x5209
--  __TEXT.__objc_methname: 0x612cd
--  __TEXT.__objc_methtype: 0xfe2f
-+  __TEXT.__gcc_except_tab: 0x3a70
-+  __TEXT.__cstring: 0x528d7
-+  __TEXT.__oslogstring: 0x4575a
-+  __TEXT.__objc_classname: 0x51f9
-+  __TEXT.__objc_methname: 0x61552
-+  __TEXT.__objc_methtype: 0xfed8
-   __TEXT.__ustring: 0x32
--  __TEXT.__unwind_info: 0xa498
-+  __TEXT.__unwind_info: 0xa468
-   __TEXT.__eh_frame: 0x48
--  __DATA_CONST.__const: 0x142f8
-+  __DATA_CONST.__const: 0x14338
-   __DATA_CONST.__cfstring: 0x12240
--  __DATA_CONST.__objc_classlist: 0xd48
-+  __DATA_CONST.__objc_classlist: 0xd40
-   __DATA_CONST.__objc_catlist: 0x630
-   __DATA_CONST.__objc_protolist: 0x730
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x98
--  __DATA_CONST.__objc_superrefs: 0xb18
--  __DATA_CONST.__objc_arraydata: 0x478
--  __DATA_CONST.__objc_arrayobj: 0x180
--  __DATA_CONST.__objc_intobj: 0x8d0
-+  __DATA_CONST.__objc_superrefs: 0xb10
-+  __DATA_CONST.__objc_arraydata: 0x480
-+  __DATA_CONST.__objc_arrayobj: 0x198
-+  __DATA_CONST.__objc_intobj: 0x8b8
-   __DATA_CONST.__objc_dictobj: 0x2f8
-   __DATA_CONST.__objc_doubleobj: 0x30
-   __DATA_CONST.__objc_floatobj: 0x30
--  __DATA_CONST.__auth_got: 0x1be0
--  __DATA_CONST.__got: 0x3cd8
-+  __DATA_CONST.__auth_got: 0x1bf8
-+  __DATA_CONST.__got: 0x3e80
-   __DATA_CONST.__auth_ptr: 0x20
--  __DATA.__objc_const: 0x34c28
--  __DATA.__objc_selrefs: 0x15440
-+  __DATA.__objc_const: 0x34b48
-+  __DATA.__objc_selrefs: 0x154a8
-   __DATA.__objc_ivar: 0x2670
--  __DATA.__objc_data: 0x84d0
-+  __DATA.__objc_data: 0x8480
-   __DATA.__data: 0x5da0
--  __DATA.__bss: 0xdc0
-+  __DATA.__bss: 0xdb0
-   __DATA.__common: 0xa18
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
+-3600.68.16.1.1
++3600.68.39.1.1
 
-   - /System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams
-   - /System/Library/PrivateFrameworks/CDMFoundation.framework/CDMFoundation
-   - /System/Library/PrivateFrameworks/CascadeSets.framework/CascadeSets
 +  - /System/Library/PrivateFrameworks/ChronoServices.framework/ChronoServices
-   - /System/Library/PrivateFrameworks/CloudSubscriptionFeatures.framework/CloudSubscriptionFeatures
-   - /System/Library/PrivateFrameworks/ContactsAssistantServices.framework/ContactsAssistantServices
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libresolv.9.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 14573
 -  Symbols:   2994
--  CStrings:  30385
+-  CStrings:  27763
 +  Functions: 14562
 +  Symbols:   2998
-+  CStrings:  30406
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_ivar : content changed
-~ __DATA.__data : content changed
-~ __DATA.__common : content changed
++  CStrings:  27784
 Symbols:
 + _AFIsIPad
 + _AFIsLinwoodEnabledAndWasEverAvailable
@@ -270,5 +229,4 @@ CStrings:
 - "v64@0:8{ADSiriCapabilitiesState=QQQQ@Q}16"
 - "{ADSiriCapabilitiesState=\"orchestrationMode\"Q\"siriXFullUnderstandingOnDeviceCapabilities\"Q\"siriXHybridUnderstandingOnDeviceCapabilities\"Q\"siriSystemAssistantExperienceCapabilities\"Q\"siriAvailability\"@\"AFSiriAvailability\"\"siriLinwoodCapabilities\"Q}"
 - "{ADSiriCapabilitiesState=QQQQ@Q}16@0:8"
-
 ```

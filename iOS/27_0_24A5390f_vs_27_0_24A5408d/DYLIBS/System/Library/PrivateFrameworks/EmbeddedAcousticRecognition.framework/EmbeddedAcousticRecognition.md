@@ -2,71 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/EmbeddedAcousticRecognition.framework/EmbeddedAcousticRecognition`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb82720` | `0xb82ee0` | **`+0x7c0`** |
+| `__TEXT.__unwind_info` | `0x3c068` | `0x3c4a0` | **`+0x438`** |
+| `__TEXT.__const` | `0x5e9d8` | `0x5ec28` | **`+0x250`** |
+| `__AUTH_CONST.__const` | `0x4ab58` | `0x4ac58` | **`+0x100`** |
+| `__TEXT.__gcc_except_tab` | `0xc2c6c` | `0xc2cf8` | **`+0x8c`** |
+| `__AUTH_CONST.__objc_const` | `0xeb58` | `0xebb8` | **`+0x60`** |
+| `__AUTH_CONST.__cfstring` | `0x3740` | `0x3780` | **`+0x40`** |
+| `__AUTH_CONST.__objc_intobj` | `0x2a0` | `0x2d0` | **`+0x30`** |
+| `__DATA_CONST.__objc_arraydata` | `0x108` | `0x128` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x80267` | `0x80287` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0xa64` | `0xa70` | **`+0xc`** |
+| `__TEXT.__objc_methlist` | `0x6e6c` | `0x6e74` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.71.1.0.0
--  __TEXT.__text: 0xb82720
--  __TEXT.__objc_methlist: 0x6e6c
--  __TEXT.__const: 0x5e9d8
--  __TEXT.__gcc_except_tab: 0xc2c6c
--  __TEXT.__cstring: 0x80267
 +3600.73.1.0.0
-+  __TEXT.__text: 0xb82ee0
-+  __TEXT.__objc_methlist: 0x6e74
-+  __TEXT.__const: 0x5ec28
-+  __TEXT.__gcc_except_tab: 0xc2cf8
-+  __TEXT.__cstring: 0x80287
-   __TEXT.__oslogstring: 0x3b41
-   __TEXT.__ustring: 0xa8
-   __TEXT.__dlopen_cstrs: 0xc8
 
-   __TEXT.__swift_as_ret: 0x4c
-   __TEXT.__swift_as_cont: 0x6c
-   __TEXT.__swift5_capture: 0x154
--  __TEXT.__unwind_info: 0x3c068
-+  __TEXT.__unwind_info: 0x3c4a0
-   __TEXT.__eh_frame: 0xa90
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0x3840
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x400
--  __DATA_CONST.__objc_arraydata: 0x108
-+  __DATA_CONST.__objc_arraydata: 0x128
-   __DATA_CONST.__got: 0x818
--  __AUTH_CONST.__const: 0x4ab58
--  __AUTH_CONST.__cfstring: 0x3740
--  __AUTH_CONST.__objc_const: 0xeb58
-+  __AUTH_CONST.__const: 0x4ac58
-+  __AUTH_CONST.__cfstring: 0x3780
-+  __AUTH_CONST.__objc_const: 0xebb8
-   __AUTH_CONST.__weak_auth_got: 0x60
--  __AUTH_CONST.__objc_intobj: 0x2a0
-+  __AUTH_CONST.__objc_intobj: 0x2d0
-   __AUTH_CONST.__objc_arrayobj: 0x78
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_floatobj: 0x10
-
-   __AUTH.__data: 0x28
-   __AUTH.__thread_vars: 0x378
-   __AUTH.__thread_bss: 0xae8
--  __DATA.__objc_ivar: 0xa64
-+  __DATA.__objc_ivar: 0xa70
-   __DATA.__data: 0x1760
-   __DATA.__bss: 0x28c8
-   __DATA.__common: 0x185
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 40367
--  Symbols:   61755
+-  Symbols:   60576
 -  CStrings:  20118
 +  Functions: 40387
-+  Symbols:   61787
++  Symbols:   60608
 +  CStrings:  20120
- 
 Symbols:
 + -[_EARTokenPostProcessor dealloc]
 + GCC_except_table862

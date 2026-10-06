@@ -2,55 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/BatteryAlgorithms.framework/BatteryAlgorithms`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__data` | `0x7ba230` | `0xc22ca8` | **`+0x468a78`** |
+| `__TEXT.__text` | `0x806d0` | `0x8426c` | **`+0x3b9c`** |
+| `__TEXT.__cstring` | `0x3ed8` | `0x572e` | **`+0x1856`** |
+| `__AUTH_CONST.__objc_intobj` | `0x77a0` | `0x7d10` | **`+0x570`** |
+| `__AUTH_CONST.__cfstring` | `0x3200` | `0x34c0` | **`+0x2c0`** |
+| `__TEXT.__gcc_except_tab` | `0x8798` | `0x8984` | **`+0x1ec`** |
+| `__TEXT.__const` | `0xa9c0` | `0xab40` | **`+0x180`** |
+| `__AUTH_CONST.__auth_got` | `0x428` | `0x430` | **`+0x8`** |
+| `__DATA.__common` | `0xe` | `0x14` | **`+0x6`** |
+
+### Other Changes
+
 ```diff
 
- 152.2.1.0.0
--  __TEXT.__text: 0x806d0
-+  __TEXT.__text: 0x8426c
-   __TEXT.__objc_methlist: 0xb04
--  __TEXT.__const: 0xa9c0
--  __TEXT.__cstring: 0x3ed8
--  __TEXT.__gcc_except_tab: 0x8798
-+  __TEXT.__const: 0xab40
-+  __TEXT.__cstring: 0x572e
-+  __TEXT.__gcc_except_tab: 0x8984
-   __TEXT.__oslogstring: 0xc5
-   __TEXT.__unwind_info: 0x2928
-   __TEXT.__objc_stubs: 0x0
-
-   __DATA_CONST.__objc_arraydata: 0x6b0
-   __DATA_CONST.__got: 0x1d0
-   __AUTH_CONST.__const: 0x3210
--  __AUTH_CONST.__cfstring: 0x3200
-+  __AUTH_CONST.__cfstring: 0x34c0
-   __AUTH_CONST.__objc_const: 0x1690
-   __AUTH_CONST.__weak_auth_got: 0x58
--  __AUTH_CONST.__objc_intobj: 0x77a0
-+  __AUTH_CONST.__objc_intobj: 0x7d10
-   __AUTH_CONST.__objc_dictobj: 0x168
-   __AUTH_CONST.__objc_arrayobj: 0x4f8
-   __AUTH_CONST.__objc_doubleobj: 0x1d0
--  __AUTH_CONST.__auth_got: 0x428
-+  __AUTH_CONST.__auth_got: 0x430
-   __AUTH.__objc_data: 0x50
-   __DATA.__objc_ivar: 0x13c
--  __DATA.__data: 0x7ba230
--  __DATA.__common: 0xe
-+  __DATA.__data: 0xc22ca8
-+  __DATA.__common: 0x14
-   __DATA_DIRTY.__objc_data: 0x190
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2106
--  Symbols:   4222
+-  Symbols:   4111
 -  CStrings:  619
 +  Functions: 2112
-+  Symbols:   4550
++  Symbols:   4439
 +  CStrings:  643
- 
 Symbols:
 + GCC_except_table112
 + GCC_except_table119

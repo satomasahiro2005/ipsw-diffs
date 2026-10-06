@@ -2,122 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/CoreBrightness.framework/CoreBrightness`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_floatobj`
-- `__AUTH.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__data` | `0x2eb78` | `0x34fb8` | **`+0x6440`** |
+| `__TEXT.__text` | `0x16a888` | `0x16c570` | **`+0x1ce8`** |
+| `__AUTH_CONST.__objc_const` | `0x334e0` | `0x33890` | **`+0x3b0`** |
+| `__TEXT.__oslogstring` | `0x1963d` | `0x1990d` | **`+0x2d0`** |
+| `__AUTH_CONST.__cfstring` | `0xe380` | `0xe5c0` | **`+0x240`** |
+| `__TEXT.__cstring` | `0xcb1a` | `0xcd15` | **`+0x1fb`** |
+| `__TEXT.__objc_methlist` | `0xd08c` | `0xd1f4` | **`+0x168`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5898` | `0x5958` | **`+0xc0`** |
+| `__DATA_CONST.__const` | `0x2ec0` | `0x2f60` | **`+0xa0`** |
+| `__TEXT.__gcc_except_tab` | `0x2768` | `0x2804` | **`+0x9c`** |
+| `__TEXT.__unwind_info` | `0x5580` | `0x55d8` | **`+0x58`** |
+| `__AUTH.__objc_data` | `0x2630` | `0x2680` | **`+0x50`** |
+| `__DATA.__objc_ivar` | `0x16e0` | `0x1718` | **`+0x38`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x3d8` | `0x408` | **`+0x30`** |
+| `__AUTH_CONST.__objc_intobj` | `0xd80` | `0xdb0` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x7c0` | `0x7b0` | **`-0x10`** |
+| `__DATA_CONST.__objc_arraydata` | `0xcb8` | `0xcc8` | **`+0x10`** |
+| `__TEXT.__const` | `0x169f8` | `0x16a08` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0xa44` | `0xa4e` | **`+0xa`** |
+| `__DATA_CONST.__objc_catlist` | `0x10` | `0x18` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x6f0` | `0x6f8` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x5b8` | `0x5c0` | **`+0x8`** |
+| `__TEXT.__constg_swiftt` | `0xc2c` | `0xc34` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0xeb0` | `0xeaf` | **`-0x1`** |
+
+### Other Changes
 
 ```diff
 
 -2300.0.10.0.1
--  __TEXT.__text: 0x16a888
--  __TEXT.__objc_methlist: 0xd08c
--  __TEXT.__cstring: 0xcb1a
--  __TEXT.__const: 0x169f8
--  __TEXT.__oslogstring: 0x1963d
--  __TEXT.__gcc_except_tab: 0x2768
 +2300.0.18.502.1
-+  __TEXT.__text: 0x16c570
-+  __TEXT.__objc_methlist: 0xd1f4
-+  __TEXT.__cstring: 0xcd15
-+  __TEXT.__const: 0x16a08
-+  __TEXT.__oslogstring: 0x1990d
-+  __TEXT.__gcc_except_tab: 0x2804
-   __TEXT.__dlopen_cstrs: 0x1d5
--  __TEXT.__swift5_typeref: 0xeb0
--  __TEXT.__constg_swiftt: 0xc2c
-+  __TEXT.__swift5_typeref: 0xeaf
-+  __TEXT.__constg_swiftt: 0xc34
-   __TEXT.__swift5_builtin: 0xdc
--  __TEXT.__swift5_reflstr: 0xa44
-+  __TEXT.__swift5_reflstr: 0xa4e
-   __TEXT.__swift5_fieldmd: 0x1018
-   __TEXT.__swift5_assocty: 0x288
-   __TEXT.__swift5_proto: 0x308
 
-   __TEXT.__swift5_capture: 0x3d0
-   __TEXT.__swift5_mpenum: 0x28
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__unwind_info: 0x5580
-+  __TEXT.__unwind_info: 0x55d8
-   __TEXT.__eh_frame: 0xb90
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2ec0
--  __DATA_CONST.__objc_classlist: 0x6f0
--  __DATA_CONST.__objc_catlist: 0x10
-+  __DATA_CONST.__const: 0x2f60
-+  __DATA_CONST.__objc_classlist: 0x6f8
-+  __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x368
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x5898
-+  __DATA_CONST.__objc_selrefs: 0x5958
-   __DATA_CONST.__objc_protorefs: 0x138
--  __DATA_CONST.__objc_superrefs: 0x5b8
--  __DATA_CONST.__objc_arraydata: 0xcb8
--  __DATA_CONST.__got: 0x7c0
-+  __DATA_CONST.__objc_superrefs: 0x5c0
-+  __DATA_CONST.__objc_arraydata: 0xcc8
-+  __DATA_CONST.__got: 0x7b0
-   __AUTH_CONST.__const: 0x3dc8
--  __AUTH_CONST.__cfstring: 0xe380
--  __AUTH_CONST.__objc_const: 0x334e0
-+  __AUTH_CONST.__cfstring: 0xe5c0
-+  __AUTH_CONST.__objc_const: 0x33890
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_doubleobj: 0x70
--  __AUTH_CONST.__objc_intobj: 0xd80
--  __AUTH_CONST.__objc_arrayobj: 0x3d8
--  __AUTH_CONST.__objc_dictobj: 0x550
-+  __AUTH_CONST.__objc_intobj: 0xdb0
-+  __AUTH_CONST.__objc_arrayobj: 0x408
-   __AUTH_CONST.__objc_floatobj: 0x1a0
-+  __AUTH_CONST.__objc_dictobj: 0x550
-   __AUTH_CONST.__auth_got: 0x1370
--  __AUTH.__objc_data: 0x2630
-+  __AUTH.__objc_data: 0x2680
-   __AUTH.__data: 0x640
--  __DATA.__objc_ivar: 0x16e0
--  __DATA.__data: 0x2eb78
-+  __DATA.__objc_ivar: 0x1718
-+  __DATA.__data: 0x34fb8
-   __DATA.__bss: 0x66c0
-   __DATA.__common: 0x10
-   __DATA_DIRTY.__objc_data: 0x2238
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8675
--  Symbols:   12460
+-  Symbols:   10075
 -  CStrings:  4670
 +  Functions: 8711
-+  Symbols:   12544
++  Symbols:   10139
 +  CStrings:  4696
- 
 Symbols:
 + +[NSError(BacklightdExportedObj) exportedObjError:]
 + -[BacklightdExportedObj wasDisconnected]
@@ -203,37 +129,6 @@ Symbols:
 + _kCBSPITransactionOnCommit
 + _kCBSPITransactionProperty
 + _kCBSPITransactionUUID
-+ _objc_msgSend$_completeWithError:
-+ _objc_msgSend$_queue
-+ _objc_msgSend$_setBrightness:withError:
-+ _objc_msgSend$alsNode
-+ _objc_msgSend$applyFixedLuxThresholdsForLux:dimTarget:brightenTarget:
-+ _objc_msgSend$ceConfidenceThreshold
-+ _objc_msgSend$ceModelID
-+ _objc_msgSend$ceModule
-+ _objc_msgSend$complete
-+ _objc_msgSend$enableMitigationsForALSNode:
-+ _objc_msgSend$exportedObjError:
-+ _objc_msgSend$fixedLuxBrightenThresholds
-+ _objc_msgSend$fixedLuxDimThresholds
-+ _objc_msgSend$forceSILOff
-+ _objc_msgSend$indexOfObject:
-+ _objc_msgSend$initWithClient:andHandle:commitType:timeout:
-+ _objc_msgSend$initWithID:serviceID:
-+ _objc_msgSend$initWithQueue:displayID:andAODState:
-+ _objc_msgSend$isColorMitigationTriggered
-+ _objc_msgSend$isHighLuminanceAODActive
-+ _objc_msgSend$policyFilter
-+ _objc_msgSend$replaceEvent:withFilteredEvent:
-+ _objc_msgSend$setAlsNode:
-+ _objc_msgSend$setCeConfidenceThreshold:
-+ _objc_msgSend$setCeModelID:
-+ _objc_msgSend$setCeModule:
-+ _objc_msgSend$setPolicyFilter:
-+ _objc_msgSend$setProperties:
-+ _objc_msgSend$setStats:
-+ _objc_msgSend$stats
-+ _objc_msgSend$wasDisconnected
 - -[CBABModuleiOS shouldMitigateHarmony:]
 - -[CBAODThresholdModule initWithQueue:andAODState:]
 - -[CBBrightnessTransaction initWithClient:andHandle:commitType:]
@@ -254,17 +149,6 @@ Symbols:
 - __OBJC_LABEL_PROTOCOL_$_ColorMitigationSupportProtocol
 - __OBJC_PROTOCOL_$_ColorMitigationSupportProtocol
 - ___41-[CBColorModuleShared enableMitigations:]_block_invoke
-- _objc_msgSend$boostBrightness:forLux:
-- _objc_msgSend$enableMitigations:
-- _objc_msgSend$initWithClient:andHandle:commitType:
-- _objc_msgSend$initWithID:
-- _objc_msgSend$initWithQueue:andAODState:
-- _objc_msgSend$removeObjectsInArray:
-- _objc_msgSend$setBrightness:withCommitType:andError:
-- _objc_msgSend$setColorMitigations
-- _objc_msgSend$setFloatValue:forKey:
-- _objc_msgSend$shortcutRamp
-- _objc_msgSend$shouldMitigateHarmony:
 CStrings:
 + "-[CBAODThresholdModule initWithQueue:displayID:andAODState:]"
 + "ALS event with orientation %d discarded by color filter."

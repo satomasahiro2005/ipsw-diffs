@@ -2,53 +2,28 @@
 
 > `/System/Library/Extensions/AppleMultitouchSPI.kext/PlugIns/MultitouchHID.plugin/MultitouchHID`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x53340` | `0x510a4` | **`-0x229c`** |
+| `__TEXT.__cstring` | `0x6f2a` | `0x53b0` | **`-0x1b7a`** |
+| `__TEXT.__const` | `0x18a1` | `0x18f1` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x15b8` | `0x1588` | **`-0x30`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x53340
-+  __TEXT.__text: 0x510a4
-   __TEXT.__objc_methlist: 0x1e4
--  __TEXT.__const: 0x18a1
--  __TEXT.__cstring: 0x6f2a
-+  __TEXT.__const: 0x18f1
-+  __TEXT.__cstring: 0x53b0
-   __TEXT.__gcc_except_tab: 0xc84
-   __TEXT.__oslogstring: 0x361a
--  __TEXT.__unwind_info: 0x15b8
-+  __TEXT.__unwind_info: 0x1588
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-10100.39.0.0.0
++10100.40.0.0.0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1599
--  Symbols:   2972
--  CStrings:  2055
+-  Symbols:   2338
+-  CStrings:  1310
 +  Functions: 1598
-+  Symbols:   2969
-+  CStrings:  2035
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   2337
++  CStrings:  1290
 Symbols:
 + GCC_except_table102
 + GCC_except_table104
@@ -336,5 +311,4 @@ CStrings:
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:446: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:509: libc++ Hardening assertion !empty() failed: vector::pop_back called on an empty vector\n"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/list:1394: libc++ Hardening assertion !empty() failed: list::pop_front() called with empty list\n"
-
 ```

@@ -2,23 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/Haptics.framework/Haptics`
 
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+
+-36.0.0.0.0
++37.0.0.0.0
 CStrings:
 + "@@ Strips Jun 23 2026 02:55:37"
 - "@@ Strips Jun  9 2026 17:40:33"
-
 ```

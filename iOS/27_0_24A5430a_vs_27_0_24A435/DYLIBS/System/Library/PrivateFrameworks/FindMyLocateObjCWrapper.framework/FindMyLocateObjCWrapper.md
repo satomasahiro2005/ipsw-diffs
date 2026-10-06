@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/FindMyLocateObjCWrapper.framework/FindMyLocateObjCWrapper`
 
-```diff
+### Section Size Changes
 
- 141.30.6.14.13
--  __TEXT.__text: 0x2c76c
-+  __TEXT.__text: 0x2c770
-   __TEXT.__objc_methlist: 0x85c
-   __TEXT.__cstring: 0x4e2
-   __TEXT.__swift5_typeref: 0x688
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2c76c` | `0x2c770` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2621e5868 -> sub_262eed868 : 648 -> 652
+~ sub_2620c7868 -> sub_262dc9868 : 648 -> 652
 ```

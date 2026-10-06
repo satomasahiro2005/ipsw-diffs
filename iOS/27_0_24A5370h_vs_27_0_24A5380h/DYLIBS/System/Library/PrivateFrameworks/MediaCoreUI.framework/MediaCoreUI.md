@@ -2,117 +2,59 @@
 
 > `/System/Library/PrivateFrameworks/MediaCoreUI.framework/MediaCoreUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x303150` | `0x2fb45c` | **`-0x7cf4`** |
+| `__DATA_DIRTY.__data` | `0xd7c8` | `0xe7f0` | **`+0x1028`** |
+| `__DATA_DIRTY.__bss` | `0x118b0` | `0x12830` | **`+0xf80`** |
+| `__DATA.__bss` | `0xd100` | `0xc340` | **`-0xdc0`** |
+| `__AUTH.__data` | `0x3f90` | `0x34c0` | **`-0xad0`** |
+| `__DATA.__data` | `0xae88` | `0xa630` | **`-0x858`** |
+| `__TEXT.__eh_frame` | `0x757c` | `0x7284` | **`-0x2f8`** |
+| `__DATA_DIRTY.__objc_data` | `0x2340` | `0x24b8` | **`+0x178`** |
+| `__TEXT.__const` | `0x2de04` | `0x2dca4` | **`-0x160`** |
+| `__TEXT.__unwind_info` | `0xa278` | `0xa138` | **`-0x140`** |
+| `__TEXT.__swift5_capture` | `0x3c64` | `0x3b6c` | **`-0xf8`** |
+| `__TEXT.__swift5_typeref` | `0x19484` | `0x193aa` | **`-0xda`** |
+| `__TEXT.__constg_swiftt` | `0x15920` | `0x1584c` | **`-0xd4`** |
+| `__AUTH.__objc_data` | `0x2cc0` | `0x2bf0` | **`-0xd0`** |
+| `__TEXT.__oslogstring` | `0x5b6c` | `0x5abc` | **`-0xb0`** |
+| `__TEXT.__swift_as_cont` | `0x524` | `0x498` | **`-0x8c`** |
+| `__TEXT.__cstring` | `0x4db8` | `0x4e38` | **`+0x80`** |
+| `__TEXT.__swift5_reflstr` | `0x99a6` | `0x9926` | **`-0x80`** |
+| `__AUTH_CONST.__const` | `0x1e080` | `0x1e010` | **`-0x70`** |
+| `__TEXT.__objc_methlist` | `0x2c7c` | `0x2ce4` | **`+0x68`** |
+| `__DATA_CONST.__const` | `0xa08` | `0x9c0` | **`-0x48`** |
+| `__TEXT.__swift5_fieldmd` | `0xb800` | `0xb7b8` | **`-0x48`** |
+| `__DATA.__common` | `0x5c0` | `0x580` | **`-0x40`** |
+| `__DATA_DIRTY.__common` | `0x558` | `0x590` | **`+0x38`** |
+| `__AUTH_CONST.__objc_const` | `0xc350` | `0xc380` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2230` | `0x2248` | **`+0x18`** |
+| `__TEXT.__swift_as_ret` | `0x178` | `0x164` | **`-0x14`** |
+| `__AUTH_CONST.__auth_got` | `0x3458` | `0x3448` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x1d88` | `0x1d78` | **`-0x10`** |
+| `__TEXT.__swift5_proto` | `0xf00` | `0xf10` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x4d8` | `0x4e0` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x1e8` | `0x1e0` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0xe7c` | `0xe78` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x303150
--  __TEXT.__objc_methlist: 0x2c7c
--  __TEXT.__const: 0x2de04
--  __TEXT.__swift5_typeref: 0x19484
--  __TEXT.__constg_swiftt: 0x15920
-+  __TEXT.__text: 0x2fb45c
-+  __TEXT.__objc_methlist: 0x2ce4
-+  __TEXT.__const: 0x2dca4
-+  __TEXT.__swift5_typeref: 0x193aa
-+  __TEXT.__constg_swiftt: 0x1584c
-   __TEXT.__swift5_builtin: 0x53c
--  __TEXT.__swift5_reflstr: 0x99a6
--  __TEXT.__swift5_fieldmd: 0xb800
-+  __TEXT.__swift5_reflstr: 0x9926
-+  __TEXT.__swift5_fieldmd: 0xb7b8
-   __TEXT.__swift5_assocty: 0x3108
--  __TEXT.__swift5_proto: 0xf00
--  __TEXT.__swift5_types: 0xe7c
--  __TEXT.__swift5_capture: 0x3c64
--  __TEXT.__cstring: 0x4db8
--  __TEXT.__oslogstring: 0x5b6c
--  __TEXT.__swift_as_entry: 0x1e8
--  __TEXT.__swift_as_cont: 0x524
-+  __TEXT.__swift5_proto: 0xf10
-+  __TEXT.__swift5_types: 0xe78
-+  __TEXT.__swift5_capture: 0x3b6c
-+  __TEXT.__cstring: 0x4e38
-+  __TEXT.__oslogstring: 0x5abc
-+  __TEXT.__swift_as_entry: 0x1e0
-+  __TEXT.__swift_as_cont: 0x498
-   __TEXT.__swift5_protos: 0x68
--  __TEXT.__swift_as_ret: 0x178
-+  __TEXT.__swift_as_ret: 0x164
-   __TEXT.__swift5_mpenum: 0x15c
--  __TEXT.__unwind_info: 0xa278
--  __TEXT.__eh_frame: 0x757c
-+  __TEXT.__unwind_info: 0xa138
-+  __TEXT.__eh_frame: 0x7284
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xa08
--  __DATA_CONST.__objc_classlist: 0x4d8
-+  __DATA_CONST.__const: 0x9c0
-+  __DATA_CONST.__objc_classlist: 0x4e0
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x1f0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2230
-+  __DATA_CONST.__objc_selrefs: 0x2248
-   __DATA_CONST.__objc_protorefs: 0xf8
--  __DATA_CONST.__got: 0x1d88
--  __AUTH_CONST.__const: 0x1e080
--  __AUTH_CONST.__objc_const: 0xc350
--  __AUTH_CONST.__auth_got: 0x3458
--  __AUTH.__objc_data: 0x2cc0
--  __AUTH.__data: 0x3f90
--  __DATA.__data: 0xae88
--  __DATA.__bss: 0xd100
--  __DATA.__common: 0x5c0
--  __DATA_DIRTY.__objc_data: 0x2340
--  __DATA_DIRTY.__data: 0xd7c8
--  __DATA_DIRTY.__bss: 0x118b0
--  __DATA_DIRTY.__common: 0x558
-+  __DATA_CONST.__got: 0x1d78
-+  __AUTH_CONST.__const: 0x1e010
-+  __AUTH_CONST.__objc_const: 0xc380
-+  __AUTH_CONST.__auth_got: 0x3448
-+  __AUTH.__objc_data: 0x2bf0
-+  __AUTH.__data: 0x34c0
-+  __DATA.__data: 0xa630
-+  __DATA.__bss: 0xc340
-+  __DATA.__common: 0x580
-+  __DATA_DIRTY.__objc_data: 0x24b8
-+  __DATA_DIRTY.__data: 0xe7f0
-+  __DATA_DIRTY.__bss: 0x12830
-+  __DATA_DIRTY.__common: 0x590
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AVKit.framework/AVKit
+-4026.100.48.0.0
++4026.100.54.0.0
 
-   - /System/Library/Frameworks/_AppIntents_SwiftUI.framework/_AppIntents_SwiftUI
-   - /System/Library/PrivateFrameworks/AXRuntime.framework/AXRuntime
-   - /System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities
 -  - /System/Library/PrivateFrameworks/AsyncAlgorithmsInternal.framework/AsyncAlgorithmsInternal
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/MediaPlaybackCore.framework/MediaPlaybackCore
-   - /System/Library/PrivateFrameworks/MediaRemote.framework/MediaRemote
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 16134
--  Symbols:   9317
+-  Symbols:   6507
 -  CStrings:  805
 +  Functions: 16006
-+  Symbols:   9292
++  Symbols:   6508
 +  CStrings:  806
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
 Symbols:
 + _OBJC_METACLASS_$__TtC11MediaCoreUIP33_683D27D5EA5FC88F5EC872E839F708489BlurLayer
 + __CATEGORY_CLASS_METHODS_NSUserDefaults_$_MediaCoreUI
@@ -155,10 +97,6 @@ Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyAA014_ViewModifier_D0Vy09MediaCoreB0014ArtworkPaddingF033_1B546EF8ABFA0B370BA4AABEF5D453FCLLVGAA01_J6LayoutVGALGAA0E0HPAmaOHPAjaOHPyHC_AlA0eF0HPyHCHC_AlaPHPyHCHC
 + _kCAFilterGaussianBlur
 + _keypath_get_selector_mcuiMotionModeRawValue
-+ _objc_msgSend$connectionType
-+ _objc_msgSend$filters
-+ _objc_msgSend$mcuiMotionModeRawValue
-+ _objc_msgSend$setNeedsStatusBarAppearanceUpdate
 + _swift_task_getMainExecutor
 + _symbolic Say_____G So25CAMediaTimingFunctionNamea
 + _symbolic So20NSNotificationCenterC6center______4namet So18NSNotificationNamea
@@ -226,8 +164,6 @@ Symbols:
 - _get_witness_table 7SwiftUI15ModifiedContentVyACyAA014_ViewModifier_D0Vy09MediaCoreB021HoveringHeaderPadding33_F9332246B6179A9B3C5B9D04F10106EFLLVGAA01_K6LayoutVGALGAA0E0HPAmaOHPAjaOHPyHC_AlA0eF0HPyHCHC_AlaPHPyHCHC
 - _get_witness_table 7SwiftUI15ModifiedContentVyACyACyACyAA014_ViewModifier_D0Vy09MediaCoreB0014ArtworkPaddingF033_1B546EF8ABFA0B370BA4AABEF5D453FCLLVGAA01_J6LayoutVGALGALGAA015_GeometryActionF0Vy0H8Graphics7CGFloatVGGAA0E0HPAoaWHPAnaWHPAmaWHPAjaWHPyHC_AlA0eF0HPyHCHC_AlaXHPyHCHC_AlaXHPyHCHC_AuaXHPyHCHC
 - _keypath_get_selector_motionMode
-- _objc_msgSend$motionMode
-- _objc_msgSend$setPopoverLayoutMargins:
 - _symbolic SaySo21CAMediaTimingFunctionCG
 - _symbolic _____ 11MediaCoreUI17SafeAreaInsetsKey33_FCBCA672760454B2B9FEA9BC2EB28C01LLV
 - _symbolic _____ 11MediaCoreUI21HoveringHeaderPadding33_F9332246B6179A9B3C5B9D04F10106EFLLV
@@ -277,5 +213,4 @@ CStrings:
 - "Selecting hosted content when resizing to regular extended. content=%{public}s"
 - "com.apple.amp.MediaCoreUI.nowPlayingShowContentOnRegularExtendedPresentation"
 - "leading trailing "
-
 ```

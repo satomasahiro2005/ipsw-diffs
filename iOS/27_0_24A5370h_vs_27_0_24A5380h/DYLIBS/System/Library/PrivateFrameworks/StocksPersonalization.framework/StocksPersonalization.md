@@ -2,118 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/StocksPersonalization.framework/StocksPersonalization`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x604a4` | `0x5fe38` | **`-0x66c`** |
+| `__AUTH.__data` | `0x1d8` | `0x140` | **`-0x98`** |
+| `__DATA.__bss` | `0x3080` | `0x3000` | **`-0x80`** |
+| `__DATA_DIRTY.__bss` | `0x2d00` | `0x2d80` | **`+0x80`** |
+| `__AUTH_CONST.__const` | `0x2d10` | `0x2c98` | **`-0x78`** |
+| `__DATA_DIRTY.__data` | `0x2610` | `0x2670` | **`+0x60`** |
+| `__AUTH_CONST.__auth_got` | `0x12f8` | `0x12d0` | **`-0x28`** |
+| `__TEXT.__swift5_capture` | `0xad4` | `0xab4` | **`-0x20`** |
+| `__AUTH_CONST.__objc_const` | `0x2638` | `0x2650` | **`+0x18`** |
+| `__TEXT.__swift5_typeref` | `0xbf2` | `0xbe0` | **`-0x12`** |
+| `__TEXT.__objc_methlist` | `0xd34` | `0xd44` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x1690` | `0x1688` | **`-0x8`** |
+| `__TEXT.__cstring` | `0x2564` | `0x2566` | **`+0x2`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x604a4
--  __TEXT.__objc_methlist: 0xd34
-+  __TEXT.__text: 0x5fe38
-+  __TEXT.__objc_methlist: 0xd44
-   __TEXT.__const: 0x3d90
-   __TEXT.__constg_swiftt: 0xf50
--  __TEXT.__swift5_typeref: 0xbf2
-+  __TEXT.__swift5_typeref: 0xbe0
-   __TEXT.__swift5_reflstr: 0xef8
-   __TEXT.__swift5_fieldmd: 0xff8
-   __TEXT.__swift5_builtin: 0x50
--  __TEXT.__cstring: 0x2564
-+  __TEXT.__cstring: 0x2566
-   __TEXT.__swift5_assocty: 0x1f0
-   __TEXT.__swift5_proto: 0x310
-   __TEXT.__swift5_types: 0x120
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__swift5_capture: 0xad4
-+  __TEXT.__swift5_capture: 0xab4
-   __TEXT.__swift5_protos: 0x24
-   __TEXT.__swift_as_entry: 0x44
-   __TEXT.__swift_as_ret: 0x48
-   __TEXT.__swift_as_cont: 0x8c
--  __TEXT.__unwind_info: 0x1690
-+  __TEXT.__unwind_info: 0x1688
-   __TEXT.__eh_frame: 0x23e4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+-2018.0.0.0.0
++2020.0.0.0.0
 
-   __DATA_CONST.__objc_selrefs: 0x7f8
-   __DATA_CONST.__objc_protorefs: 0x60
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2d10
--  __AUTH_CONST.__objc_const: 0x2638
--  __AUTH_CONST.__auth_got: 0x12f8
-+  __AUTH_CONST.__const: 0x2c98
-+  __AUTH_CONST.__objc_const: 0x2650
-+  __AUTH_CONST.__auth_got: 0x12d0
-   __AUTH.__objc_data: 0xf0
--  __AUTH.__data: 0x1d8
-+  __AUTH.__data: 0x140
-   __DATA.__data: 0x960
-   __DATA.__objc_stublist: 0x8
--  __DATA.__bss: 0x3080
-+  __DATA.__bss: 0x3000
-   __DATA_DIRTY.__objc_data: 0x1e8
--  __DATA_DIRTY.__data: 0x2610
--  __DATA_DIRTY.__bss: 0x2d00
-+  __DATA_DIRTY.__data: 0x2670
-+  __DATA_DIRTY.__bss: 0x2d80
-   __DATA_DIRTY.__common: 0x50
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/PrivateFrameworks/AppAnalytics.framework/AppAnalytics
 +  - /System/Library/PrivateFrameworks/AppUserEvents.framework/AppUserEvents
-   - /System/Library/PrivateFrameworks/ComputationalGraph.framework/ComputationalGraph
-   - /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf
-   - /System/Library/PrivateFrameworks/NewsAnalytics.framework/NewsAnalytics
-   - /System/Library/PrivateFrameworks/NewsCore.framework/NewsCore
-   - /System/Library/PrivateFrameworks/NewsFeed.framework/NewsFeed
-   - /System/Library/PrivateFrameworks/NewsPersonalization.framework/NewsPersonalization
--  - /System/Library/PrivateFrameworks/NewsUserEvents.framework/NewsUserEvents
-   - /System/Library/PrivateFrameworks/StocksAnalytics.framework/StocksAnalytics
-   - /System/Library/PrivateFrameworks/StocksCore.framework/StocksCore
-   - /System/Library/PrivateFrameworks/TeaFoundation.framework/TeaFoundation
-   - /System/Library/PrivateFrameworks/TeaSettings.framework/TeaSettings
-   - /System/Library/PrivateFrameworks/TeaUI.framework/TeaUI
-+  - /System/Library/PrivateFrameworks/_AppUserEvents_AppAnalytics.framework/_AppUserEvents_AppAnalytics
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+-  - /System/Library/PrivateFrameworks/NewsUserEvents.framework/NewsUserEvents
+
++  - /System/Library/PrivateFrameworks/_AppUserEvents_AppAnalytics.framework/_AppUserEvents_AppAnalytics
+
 -  Functions: 2134
--  Symbols:   1102
+-  Symbols:   675
 +  Functions: 2126
-+  Symbols:   1085
-   CStrings:  229
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
-~ __DATA.__objc_stublist : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   665
 Symbols:
 + _associated conformance 21StocksPersonalization010Com_Apple_a1_B8_SessionV13AppUserEvents0g5EventE0AA0I0AdEP_AD0gI0
 + _associated conformance 21StocksPersonalization0A19UserEventSerializerC04NewsB007BridgedcdE0AA7SessionAdEP_03AppC6Events0cdH0
-+ _objc_msgSend$zipForExportWithFilename:error:
 + _symbolic $s13AppUserEvents0B12EventSessionP
 + _symbolic _____y_____G 13AppUserEvents0B12EventHistoryC 21StocksPersonalization010Com_Apple_f1_g8_SessionD0V
 - __Block_copy
@@ -124,8 +50,6 @@ Symbols:
 - _block_copy_helper
 - _block_descriptor
 - _block_destroy_helper
-- _objc_msgSend$copyItemAtURL:toURL:error:
-- _objc_msgSend$readBaseDirectoryWithAccessor:
 - _swift_isEscapingClosureAtFileLocation
 - _swift_retain_x2
 - _symbolic $s14NewsUserEvents0B12EventSessionP
@@ -137,5 +61,4 @@ CStrings:
 + "stocks-user-event-history.zip"
 - "Failed to copy stocks user event history for radar attachment with error=%{public}@"
 - "stocks-user-event-history-"
-
 ```

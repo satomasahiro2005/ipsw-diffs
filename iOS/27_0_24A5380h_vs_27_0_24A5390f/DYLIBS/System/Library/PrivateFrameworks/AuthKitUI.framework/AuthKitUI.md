@@ -2,122 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/AuthKitUI.framework/AuthKitUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__dlopen_cstrs`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xdc3dc` | `0xddc04` | **`+0x1828`** |
+| `__DATA.__bss` | `0x1998` | `0x1ca8` | **`+0x310`** |
+| `__TEXT.__const` | `0x12e4` | `0x1514` | **`+0x230`** |
+| `__AUTH_CONST.__const` | `0x758` | `0x898` | **`+0x140`** |
+| `__AUTH.__objc_data` | `0x2320` | `0x23d0` | **`+0xb0`** |
+| `__TEXT.__swift5_typeref` | `0xd1a` | `0xdc2` | **`+0xa8`** |
+| `__AUTH_CONST.__auth_got` | `0xd28` | `0xdc0` | **`+0x98`** |
+| `__TEXT.__constg_swiftt` | `0x37c` | `0x3f4` | **`+0x78`** |
+| `__AUTH_CONST.__objc_const` | `0x18670` | `0x186d8` | **`+0x68`** |
+| `__TEXT.__unwind_info` | `0x1c20` | `0x1c88` | **`+0x68`** |
+| `__DATA.__data` | `0x1fb8` | `0x2018` | **`+0x60`** |
+| `__TEXT.__objc_methlist` | `0x8814` | `0x886c` | **`+0x58`** |
+| `__TEXT.__swift5_fieldmd` | `0x220` | `0x274` | **`+0x54`** |
+| `__TEXT.__oslogstring` | `0x58f9` | `0x5949` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5fc0` | `0x6008` | **`+0x48`** |
+| `__TEXT.__swift5_assocty` | `0x198` | `0x1c8` | **`+0x30`** |
+| `__TEXT.__swift5_reflstr` | `0x1aa` | `0x1da` | **`+0x30`** |
+| `__TEXT.__swift5_capture` | `0x88` | `0xb4` | **`+0x2c`** |
+| `__TEXT.__swift5_builtin` | `0x50` | `0x78` | **`+0x28`** |
+| `__AUTH.__data` | `0x250` | `0x270` | **`+0x20`** |
+| `__AUTH_CONST.__cfstring` | `0x50c0` | `0x50e0` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x57bd` | `0x57dd` | **`+0x20`** |
+| `__TEXT.__swift5_proto` | `0xbc` | `0xd4` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0xeb0` | `0xec0` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x40` | `0x4c` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x3e0` | `0x3e8` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x764` | `0x768` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -554.0.0.0.0
--  __TEXT.__text: 0xdc3dc
--  __TEXT.__objc_methlist: 0x8814
--  __TEXT.__const: 0x12e4
 +555.0.0.0.0
-+  __TEXT.__text: 0xddc04
-+  __TEXT.__objc_methlist: 0x886c
-+  __TEXT.__const: 0x1514
-+  __TEXT.__cstring: 0x57dd
-+  __TEXT.__oslogstring: 0x5949
-   __TEXT.__gcc_except_tab: 0x1118
--  __TEXT.__cstring: 0x57bd
--  __TEXT.__dlopen_cstrs: 0x179
--  __TEXT.__oslogstring: 0x58f9
-   __TEXT.__ustring: 0x2c
--  __TEXT.__constg_swiftt: 0x37c
--  __TEXT.__swift5_typeref: 0xd1a
--  __TEXT.__swift5_builtin: 0x50
--  __TEXT.__swift5_reflstr: 0x1aa
--  __TEXT.__swift5_fieldmd: 0x220
--  __TEXT.__swift5_assocty: 0x198
--  __TEXT.__swift5_proto: 0xbc
--  __TEXT.__swift5_types: 0x40
--  __TEXT.__swift5_capture: 0x88
-+  __TEXT.__dlopen_cstrs: 0x179
-+  __TEXT.__constg_swiftt: 0x3f4
-+  __TEXT.__swift5_typeref: 0xdc2
-+  __TEXT.__swift5_builtin: 0x78
-+  __TEXT.__swift5_reflstr: 0x1da
-+  __TEXT.__swift5_fieldmd: 0x274
-+  __TEXT.__swift5_assocty: 0x1c8
-+  __TEXT.__swift5_proto: 0xd4
-+  __TEXT.__swift5_types: 0x4c
-+  __TEXT.__swift5_capture: 0xb4
-   __TEXT.__swift_as_entry: 0x3c
-   __TEXT.__swift_as_ret: 0x40
-   __TEXT.__swift_as_cont: 0x90
--  __TEXT.__unwind_info: 0x1c20
-+  __TEXT.__unwind_info: 0x1c88
-   __TEXT.__eh_frame: 0xb18
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x2f48
--  __DATA_CONST.__objc_classlist: 0x3e0
-+  __DATA_CONST.__objc_classlist: 0x3e8
-   __DATA_CONST.__objc_catlist: 0x60
-   __DATA_CONST.__objc_protolist: 0x240
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5fc0
-+  __DATA_CONST.__objc_selrefs: 0x6008
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__objc_superrefs: 0x2c0
-   __DATA_CONST.__objc_arraydata: 0x2b8
--  __DATA_CONST.__got: 0xeb0
--  __AUTH_CONST.__const: 0x758
--  __AUTH_CONST.__cfstring: 0x50c0
--  __AUTH_CONST.__objc_const: 0x18670
-+  __DATA_CONST.__got: 0xec0
-+  __AUTH_CONST.__const: 0x898
-+  __AUTH_CONST.__cfstring: 0x50e0
-+  __AUTH_CONST.__objc_const: 0x186d8
-   __AUTH_CONST.__objc_doubleobj: 0x40
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__objc_intobj: 0x2a0
-   __AUTH_CONST.__objc_arrayobj: 0x90
--  __AUTH_CONST.__auth_got: 0xd28
--  __AUTH.__objc_data: 0x2320
--  __AUTH.__data: 0x250
--  __DATA.__objc_ivar: 0x764
--  __DATA.__data: 0x1fb8
--  __DATA.__bss: 0x1998
-+  __AUTH_CONST.__auth_got: 0xdc0
-+  __AUTH.__objc_data: 0x23d0
-+  __AUTH.__data: 0x270
-+  __DATA.__objc_ivar: 0x768
-+  __DATA.__data: 0x2018
-+  __DATA.__bss: 0x1ca8
-   __DATA.__common: 0x30
-   __DATA_DIRTY.__objc_data: 0x410
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3324
--  Symbols:   8195
+-  Symbols:   5776
 -  CStrings:  1309
 +  Functions: 3368
-+  Symbols:   8243
++  Symbols:   5815
 +  CStrings:  1311
- 
 Symbols:
 + +[AKIcon monogramWithAppName:size:]
 + -[AKAuthorizationInputPaneViewController _handleRequestedAuthorization:error:completionHandler:]
@@ -141,15 +70,6 @@ Symbols:
 + _associated conformance So21NSAttributedStringKeyaSHSCSQ
 + _associated conformance So21NSAttributedStringKeyas20_SwiftNewtypeWrapperSCSY
 + _associated conformance So21NSAttributedStringKeyas20_SwiftNewtypeWrapperSCs35_HasCustomAnyHashableRepresentation
-+ _objc_msgSend$_handleRequestedAuthorization:error:completionHandler:
-+ _objc_msgSend$_initWithSynthesizedImage:
-+ _objc_msgSend$bezierPathWithRoundedRect:cornerRadius:
-+ _objc_msgSend$fontDescriptor
-+ _objc_msgSend$fontDescriptorWithDesign:
-+ _objc_msgSend$monogramImageForTitle:size:
-+ _objc_msgSend$monogramWithAppName:size:
-+ _objc_msgSend$processInfo
-+ _objc_msgSend$processName
 + _objc_retain_x1
 + _objc_retain_x24
 + _objc_retain_x27

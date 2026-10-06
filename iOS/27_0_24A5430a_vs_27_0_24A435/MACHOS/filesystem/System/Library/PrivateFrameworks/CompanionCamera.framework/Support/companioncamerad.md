@@ -2,78 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/CompanionCamera.framework/Support/companioncamerad`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x24064` | `0x27c68` | **`+0x3c04`** |
+| `__TEXT.__objc_methname` | `0x3870` | `0x3ff2` | **`+0x782`** |
+| `__DATA.__objc_const` | `0x4df8` | `0x5550` | **`+0x758`** |
+| `__TEXT.__objc_methlist` | `0x30a4` | `0x3574` | **`+0x4d0`** |
+| `__TEXT.__cstring` | `0x14e8` | `0x1934` | **`+0x44c`** |
+| `__DATA_CONST.__cfstring` | `0x1020` | `0x13c0` | **`+0x3a0`** |
+| `__TEXT.__objc_stubs` | `0x20c0` | `0x2320` | **`+0x260`** |
+| `__DATA.__objc_data` | `0xe60` | `0xff0` | **`+0x190`** |
+| `__DATA.__objc_selrefs` | `0xfd0` | `0x1160` | **`+0x190`** |
+| `__TEXT.__unwind_info` | `0x8f0` | `0x9f8` | **`+0x108`** |
+| `__TEXT.__objc_methtype` | `0x1301` | `0x13db` | **`+0xda`** |
+| `__TEXT.__oslogstring` | `0x7bd` | `0x891` | **`+0xd4`** |
+| `__TEXT.__objc_classname` | `0x4c1` | `0x57f` | **`+0xbe`** |
+| `__DATA_CONST.__const` | `0xc78` | `0xd28` | **`+0xb0`** |
+| `__DATA_CONST.__objc_intobj` | `0x18` | `0xc0` | **`+0xa8`** |
+| `__TEXT.__gcc_except_tab` | `0xc4` | `0x164` | **`+0xa0`** |
+| `__DATA.__objc_ivar` | `0x2a4` | `0x2ec` | **`+0x48`** |
+| `__TEXT.__auth_stubs` | `0x740` | `0x780` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x138` | `0x160` | **`+0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x170` | `0x198` | **`+0x28`** |
+| `__DATA_CONST.__objc_superrefs` | `0x150` | `0x178` | **`+0x28`** |
+| `__DATA_CONST.__auth_got` | `0x3b0` | `0x3d0` | **`+0x20`** |
+| `__DATA.__bss` | `0x60` | `0x70` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
- 2024.100.18.0.0
--  __TEXT.__text: 0x24064
--  __TEXT.__auth_stubs: 0x740
--  __TEXT.__objc_stubs: 0x20c0
--  __TEXT.__objc_methlist: 0x30a4
-+  __TEXT.__text: 0x27c68
-+  __TEXT.__auth_stubs: 0x780
-+  __TEXT.__objc_stubs: 0x2320
-+  __TEXT.__objc_methlist: 0x3574
-   __TEXT.__const: 0x120
--  __TEXT.__gcc_except_tab: 0xc4
--  __TEXT.__cstring: 0x14e8
--  __TEXT.__oslogstring: 0x7bd
--  __TEXT.__objc_methname: 0x3870
--  __TEXT.__objc_classname: 0x4c1
--  __TEXT.__objc_methtype: 0x1301
-+  __TEXT.__gcc_except_tab: 0x164
-+  __TEXT.__cstring: 0x1934
-+  __TEXT.__oslogstring: 0x891
-+  __TEXT.__objc_methname: 0x3ff2
-+  __TEXT.__objc_classname: 0x57f
-+  __TEXT.__objc_methtype: 0x13db
-   __TEXT.__dlopen_cstrs: 0x4f
--  __TEXT.__unwind_info: 0x8f0
--  __DATA_CONST.__const: 0xc78
--  __DATA_CONST.__cfstring: 0x1020
--  __DATA_CONST.__objc_classlist: 0x170
-+  __TEXT.__unwind_info: 0x9f8
-+  __DATA_CONST.__const: 0xd28
-+  __DATA_CONST.__cfstring: 0x13c0
-+  __DATA_CONST.__objc_classlist: 0x198
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x150
--  __DATA_CONST.__objc_intobj: 0x18
--  __DATA_CONST.__auth_got: 0x3b0
--  __DATA_CONST.__got: 0x138
--  __DATA.__objc_const: 0x4df8
--  __DATA.__objc_selrefs: 0xfd0
--  __DATA.__objc_ivar: 0x2a4
--  __DATA.__objc_data: 0xe60
-+  __DATA_CONST.__objc_superrefs: 0x178
-+  __DATA_CONST.__objc_intobj: 0xc0
-+  __DATA_CONST.__auth_got: 0x3d0
-+  __DATA_CONST.__got: 0x160
-+  __DATA.__objc_const: 0x5550
-+  __DATA.__objc_selrefs: 0x1160
-+  __DATA.__objc_ivar: 0x2ec
-+  __DATA.__objc_data: 0xff0
-   __DATA.__data: 0x300
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1041
 -  Symbols:   168
 -  CStrings:  1095
 +  Functions: 1146
 +  Symbols:   176
 +  CStrings:  1203
- 
 Symbols:
 + _CFPreferencesGetAppBooleanValue
 + _OBJC_CLASS_$_NSCountedSet

@@ -2,19 +2,18 @@
 
 > `/usr/lib/libAppleArchive.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x832a0` | `0x832cc` | **`+0x2c`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x832a0
-+  __TEXT.__text: 0x832cc
-   __TEXT.__cstring: 0x13398
-   __TEXT.__const: 0x920
-   __TEXT.__oslogstring: 0x31
-Sections:
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
+-465.0.0.0.0
++467.0.0.0.0
 Functions:
 ~ _rawimg_get_digests : 3192 -> 3172
 ~ _AEAAuthDataGetEntry : 344 -> 348
@@ -31,5 +30,4 @@ Functions:
 ~ _loadAndDecodeHeader_Ustar : 4476 -> 4504
 ~ _isZero : 112 -> 100
 ~ _writerProc : 1208 -> 1220
-
 ```

@@ -2,83 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/MediaControls.framework/MediaControls`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2257d4` | `0x2264e8` | **`+0xd14`** |
+| `__AUTH_CONST.__const` | `0xaa80` | `0xab98` | **`+0x118`** |
+| `__TEXT.__objc_methlist` | `0x15d1c` | `0x15d94` | **`+0x78`** |
+| `__TEXT.__swift5_capture` | `0x141c` | `0x148c` | **`+0x70`** |
+| `__AUTH_CONST.__objc_const` | `0x44730` | `0x44780` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x1548` | `0x1598` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa788` | `0xa7c8` | **`+0x40`** |
+| `__TEXT.__const` | `0xbd04` | `0xbcd4` | **`-0x30`** |
+| `__TEXT.__unwind_info` | `0x8960` | `0x8990` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x1898` | `0x18a8` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x18cc` | `0x18d4` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -4026.110.4.0.0
--  __TEXT.__text: 0x217264
--  __TEXT.__objc_methlist: 0x15d1c
 +4026.200.11.0.0
-+  __TEXT.__text: 0x217f30
-+  __TEXT.__objc_methlist: 0x15d94
-   __TEXT.__cstring: 0x6f64
-   __TEXT.__ustring: 0x28
--  __TEXT.__const: 0xbd04
--  __TEXT.__gcc_except_tab: 0x1548
-+  __TEXT.__const: 0xbcd4
-+  __TEXT.__gcc_except_tab: 0x1598
-   __TEXT.__oslogstring: 0x86d9
-   __TEXT.__dlopen_cstrs: 0x64
-   __TEXT.__constg_swiftt: 0x77fc
 
-   __TEXT.__swift5_reflstr: 0x4bcd
-   __TEXT.__swift5_fieldmd: 0x4c14
-   __TEXT.__swift5_types: 0x614
--  __TEXT.__swift5_capture: 0x141c
-+  __TEXT.__swift5_capture: 0x148c
-   __TEXT.__swift5_protos: 0xb8
-   __TEXT.__swift5_proto: 0x5fc
-   __TEXT.__swift5_builtin: 0x348
-
-   __TEXT.__swift_as_ret: 0x34
-   __TEXT.__swift_as_cont: 0x6c
-   __TEXT.__swift5_assocty: 0x390
--  __TEXT.__unwind_info: 0xa9e0
-+  __TEXT.__unwind_info: 0xaa10
-   __TEXT.__eh_frame: 0x18b8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0xa8
-   __DATA_CONST.__objc_protolist: 0x480
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa788
-+  __DATA_CONST.__objc_selrefs: 0xa7c8
-   __DATA_CONST.__objc_protorefs: 0xa8
-   __DATA_CONST.__objc_superrefs: 0x608
-   __DATA_CONST.__objc_arraydata: 0x1e8
--  __DATA_CONST.__got: 0x1898
--  __AUTH_CONST.__const: 0xaa80
-+  __DATA_CONST.__got: 0x18a8
-+  __AUTH_CONST.__const: 0xab98
-   __AUTH_CONST.__cfstring: 0x51e0
--  __AUTH_CONST.__objc_const: 0x44730
-+  __AUTH_CONST.__objc_const: 0x44780
-   __AUTH_CONST.__objc_intobj: 0x2b8
-   __AUTH_CONST.__objc_arrayobj: 0x138
-   __AUTH_CONST.__objc_doubleobj: 0xf0
-
-   __AUTH_CONST.__auth_got: 0x2028
-   __AUTH.__objc_data: 0x3880
-   __AUTH.__data: 0x1238
--  __DATA.__objc_ivar: 0x18cc
-+  __DATA.__objc_ivar: 0x18d4
-   __DATA.__data: 0x4218
-   __DATA.__common: 0x8b0
-   __DATA_DIRTY.__objc_data: 0x72c8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 14440
--  Symbols:   17623
+-  Symbols:   13857
 +  Functions: 14458
-+  Symbols:   17647
-   CStrings:  1623
- 
++  Symbols:   13872
 Symbols:
 + +[UIFont(MRUDefaults) mru_ambientRouteFont]
 + -[MRUAmbientNowPlayingView layoutAxis]
@@ -104,15 +58,6 @@ Symbols:
 + _UIFontTextStyleTitle3
 + ___42-[MRUAmbientNowPlayingView initWithFrame:]_block_invoke
 + ___swift_closure_destructor.37Tm
-+ _objc_msgSend$_updateIsPhoneCallActive
-+ _objc_msgSend$layoutAxis
-+ _objc_msgSend$mru_ambientRouteFont
-+ _objc_msgSend$routingButtonSymbolConfigurationForLayoutAxis:wideGlyph:
-+ _objc_msgSend$setVisibilityDidUpdateHandler:
-+ _objc_msgSend$updateAxisDependentConfiguration
-+ _objc_msgSend$updateRouteLabelFont
-+ _objc_msgSend$updateRouteLabelVisibilityForSliderExpanded:
-+ _objc_msgSend$updateRoutingButtonAsset
 - -[MRUAmbientNowPlayingView setShadowView:]
 - -[MRUAmbientNowPlayingView shadowView]
 - -[MRUSystemOutputDeviceRouteControllerControlCenterEndpointDataSource routeDidChangeNotification:]

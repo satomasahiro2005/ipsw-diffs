@@ -2,59 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/TipsUI.framework/TipsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf1214` | `0xf13c8` | **`+0x1b4`** |
+| `__DATA.__bss` | `0x4f88` | `0x4e08` | **`-0x180`** |
+| `__DATA_DIRTY.__bss` | `0x2c90` | `0x2e10` | **`+0x180`** |
+| `__TEXT.__swift5_typeref` | `0x168a6` | `0x16882` | **`-0x24`** |
+| `__DATA.__data` | `0x3260` | `0x3278` | **`+0x18`** |
+| `__DATA_DIRTY.__data` | `0x2f58` | `0x2f68` | **`+0x10`** |
+| `__TEXT.__const` | `0xb8e4` | `0xb8f4` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x3928` | `0x3930` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -866.2.2.0.0
--  __TEXT.__text: 0xe9a58
 +866.2.3.0.0
-+  __TEXT.__text: 0xe9c0c
-   __TEXT.__objc_methlist: 0x151c
--  __TEXT.__const: 0xb8e4
-+  __TEXT.__const: 0xb8f4
-   __TEXT.__gcc_except_tab: 0x170
-   __TEXT.__cstring: 0x2619
-   __TEXT.__oslogstring: 0x1f5
-   __TEXT.__constg_swiftt: 0x46b8
--  __TEXT.__swift5_typeref: 0x168a6
-+  __TEXT.__swift5_typeref: 0x16882
-   __TEXT.__swift5_builtin: 0x1cc
-   __TEXT.__swift5_reflstr: 0x2aa7
-   __TEXT.__swift5_fieldmd: 0x2530
 
-   __TEXT.__swift_as_ret: 0x94
-   __TEXT.__swift5_mpenum: 0x34
-   __TEXT.__swift5_protos: 0x18
--  __TEXT.__unwind_info: 0x4960
-+  __TEXT.__unwind_info: 0x4968
-   __TEXT.__eh_frame: 0x235c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __AUTH.__objc_data: 0xc80
-   __AUTH.__data: 0x13c8
-   __DATA.__objc_ivar: 0x114
--  __DATA.__data: 0x3260
-+  __DATA.__data: 0x3278
-   __DATA.__objc_stublist: 0x8
-   __DATA.__common: 0xc0
-   __DATA_DIRTY.__objc_data: 0x2070
--  __DATA_DIRTY.__data: 0x2f58
--  __DATA_DIRTY.__bss: 0x2c90
-+  __DATA_DIRTY.__data: 0x2f68
-+  __DATA_DIRTY.__bss: 0x2e10
-   __DATA_DIRTY.__common: 0x200
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6197
 -  Symbols:   2663
 +  Functions: 6198
 +  Symbols:   2665
-   CStrings:  288
- 
 Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyAA6ZStackVyAA05TupleD0VyACyACyACyAA5ImageVAA12_FrameLayoutVGAA21_TraitWritingModifierVyAA010TransitionJ3KeyVGGAA023AccessibilityAttachmentL0VG_ACyAA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonS0Rd__lFQOyAA0U0VyAwAE15dynamicTypeSizeyQrqd__SXRd__AA07DynamicwX0O5BoundRtd__lFQOyACyAwAE10fontWeightyQrAA4FontV6WeightVSgFQOyAA5LabelVyAA4TextVAIG_Qo_AA012_EnvironmentnkL0VyAI5ScaleOGG_SNyA2_GQo_G_AA05GlassuS0VQo_ATGQPGGAA017_AppearanceActionL0VGAQGSgAaVHpA35_AaVHPA34_AaVHPA31_AaVHPyHC_A33_AA0qL0HPyHCHC_AqAA37_HPyHCHC_HC
 + _symbolic _____yAAyAAy__________G_____y_____GG_____G 7SwiftUI15ModifiedContentV AA5ImageV AA12_FrameLayoutV AA21_TraitWritingModifierV AA010TransitionH3KeyV AA023AccessibilityAttachmentJ0V

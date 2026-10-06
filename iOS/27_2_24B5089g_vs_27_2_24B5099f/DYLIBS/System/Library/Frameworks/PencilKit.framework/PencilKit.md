@@ -2,100 +2,45 @@
 
 > `/System/Library/Frameworks/PencilKit.framework/PencilKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3575a4` | `0x356fd0` | **`-0x5d4`** |
+| `__AUTH_CONST.__objc_const` | `0x49260` | `0x490c0` | **`-0x1a0`** |
+| `__TEXT.__gcc_except_tab` | `0x254f8` | `0x2559c` | **`+0xa4`** |
+| `__TEXT.__objc_methlist` | `0x2620c` | `0x26184` | **`-0x88`** |
+| `__TEXT.__oslogstring` | `0xee56` | `0xedff` | **`-0x57`** |
+| `__AUTH.__objc_data` | `0xa6d0` | `0xa680` | **`-0x50`** |
+| `__AUTH_CONST.__cfstring` | `0xe780` | `0xe7c0` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x13688` | `0x13648` | **`-0x40`** |
+| `__DATA_CONST.__objc_arraydata` | `0x920` | `0x958` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0x107e8` | `0x107b0` | **`-0x38`** |
+| `__AUTH_CONST.__objc_dictobj` | `0x460` | `0x488` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x7010` | `0x6fe8` | **`-0x28`** |
+| `__AUTH_CONST.__const` | `0x8648` | `0x8668` | **`+0x20`** |
+| `__DATA_DIRTY.__bss` | `0x7c0` | `0x7e0` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x2cec` | `0x2cd0` | **`-0x1c`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x6c0` | `0x6d8` | **`+0x18`** |
+| `__TEXT.__cstring` | `0xf959` | `0xf96b` | **`+0x12`** |
+| `__TEXT.__const` | `0x8f54` | `0x8f64` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x1190` | `0x1188` | **`-0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0xdb8` | `0xdb0` | **`-0x8`** |
+| `__DATA_DIRTY.__objc_ivar` | `0x116c` | `0x1170` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -621.0.0.0.0
--  __TEXT.__text: 0x346338
--  __TEXT.__objc_methlist: 0x2620c
--  __TEXT.__const: 0x8f54
 +622.1.1.0.0
-+  __TEXT.__text: 0x345d50
-+  __TEXT.__objc_methlist: 0x26184
-+  __TEXT.__const: 0x8f64
-   __TEXT.__dlopen_cstrs: 0x563
-   __TEXT.__constg_swiftt: 0x1f2c
-   __TEXT.__swift5_typeref: 0x1f06
 
-   __TEXT.__swift5_proto: 0x398
-   __TEXT.__swift5_types: 0x1dc
-   __TEXT.__swift5_capture: 0xacc
--  __TEXT.__cstring: 0xf959
--  __TEXT.__oslogstring: 0xee56
-+  __TEXT.__cstring: 0xf96b
-+  __TEXT.__oslogstring: 0xedff
-   __TEXT.__swift_as_entry: 0xf0
-   __TEXT.__swift_as_cont: 0x218
-   __TEXT.__swift_as_ret: 0xac
-   __TEXT.__swift5_protos: 0xc
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__gcc_except_tab: 0x254f8
-+  __TEXT.__gcc_except_tab: 0x2559c
-   __TEXT.__ustring: 0x23a
--  __TEXT.__unwind_info: 0x12948
-+  __TEXT.__unwind_info: 0x12910
-   __TEXT.__eh_frame: 0x2af8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7010
--  __DATA_CONST.__objc_classlist: 0x1190
-+  __DATA_CONST.__const: 0x6fe8
-+  __DATA_CONST.__objc_classlist: 0x1188
-   __DATA_CONST.__objc_catlist: 0x80
-   __DATA_CONST.__objc_protolist: 0x7e8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x13688
-+  __DATA_CONST.__objc_selrefs: 0x13648
-   __DATA_CONST.__objc_protorefs: 0x118
--  __DATA_CONST.__objc_superrefs: 0xdb8
--  __DATA_CONST.__objc_arraydata: 0x920
-+  __DATA_CONST.__objc_superrefs: 0xdb0
-+  __DATA_CONST.__objc_arraydata: 0x958
-   __DATA_CONST.__got: 0x22c8
--  __AUTH_CONST.__const: 0x8648
--  __AUTH_CONST.__cfstring: 0xe780
--  __AUTH_CONST.__objc_const: 0x49260
-+  __AUTH_CONST.__const: 0x8668
-+  __AUTH_CONST.__cfstring: 0xe7c0
-+  __AUTH_CONST.__objc_const: 0x490c0
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__objc_intobj: 0x918
--  __AUTH_CONST.__objc_arrayobj: 0x6c0
--  __AUTH_CONST.__objc_dictobj: 0x460
-+  __AUTH_CONST.__objc_arrayobj: 0x6d8
-+  __AUTH_CONST.__objc_dictobj: 0x488
-   __AUTH_CONST.__objc_doubleobj: 0xb0
-   __AUTH_CONST.__auth_got: 0x1e30
--  __AUTH.__objc_data: 0xa6d0
-+  __AUTH.__objc_data: 0xa680
-   __AUTH.__data: 0xbf8
--  __DATA.__objc_ivar: 0x2cec
-+  __DATA.__objc_ivar: 0x2cd0
-   __DATA.__data: 0x6d90
-   __DATA.__common: 0x160
--  __DATA_DIRTY.__objc_ivar: 0x116c
-+  __DATA_DIRTY.__objc_ivar: 0x1170
-   __DATA_DIRTY.__objc_data: 0x1878
-   __DATA_DIRTY.__data: 0x78
--  __DATA_DIRTY.__bss: 0x7c0
-+  __DATA_DIRTY.__bss: 0x7e0
-   __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 18501
 -  Symbols:   33163
 -  CStrings:  3600
 +  Functions: 18484
 +  Symbols:   33130
 +  CStrings:  3599
- 
 Symbols:
 + +[PKTextInputLanguageSelectionController _scriptQualifiedLocaleIdentifiers]
 + +[PKTextInputLanguageSelectionController _transliterationInputModeRules]

@@ -2,32 +2,19 @@
 
 > `/System/Library/Frameworks/CoreText.framework/CoreText`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15ed2c` | `0x15f0fc` | **`+0x3d0`** |
+| `__TEXT.__unwind_info` | `0x54f8` | `0x54f0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 904.0.0.0.0
--  __TEXT.__text: 0x15ed2c
-+  __TEXT.__text: 0x15f0fc
-   __TEXT.__delay_helper: 0x264
-   __TEXT.__objc_methlist: 0xdd4
-   __TEXT.__const: 0x51f94
-
-   __TEXT.__ustring: 0x1954
-   __TEXT.__gcc_except_tab: 0x248
-   __TEXT.__dof_CoreText: 0x1629
--  __TEXT.__unwind_info: 0x54f8
-+  __TEXT.__unwind_info: 0x54f0
-   __TEXT.__eh_frame: 0x2b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 5463
 +  Functions: 5462
-   Symbols:   8025
-   CStrings:  3347
- 
 Functions:
 ~ __ZN7TCFBaseI5TFontE9ClassHashEPKv : 76 -> 80
 ~ __ZNK8TRunGlue17DetermineCoverageEPh : 404 -> 400

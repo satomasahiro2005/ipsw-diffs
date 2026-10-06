@@ -2,95 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/LocalFederatedSearch.framework/LocalFederatedSearch`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb90f0` | `0xd0b98` | **`+0x17aa8`** |
+| `__AUTH_CONST.__const` | `0x9438` | `0xa6e8` | **`+0x12b0`** |
+| `__TEXT.__eh_frame` | `0x5e98` | `0x6bf0` | **`+0xd58`** |
+| `__TEXT.__const` | `0x4028` | `0x4c90` | **`+0xc68`** |
+| `__DATA.__bss` | `0x2080` | `0x2880` | **`+0x800`** |
+| `__TEXT.__unwind_info` | `0x2a28` | `0x2fe8` | **`+0x5c0`** |
+| `__TEXT.__cstring` | `0x49d3` | `0x4e83` | **`+0x4b0`** |
+| `__TEXT.__swift5_reflstr` | `0x1aa3` | `0x1f23` | **`+0x480`** |
+| `__TEXT.__swift5_fieldmd` | `0x19f8` | `0x1e58` | **`+0x460`** |
+| `__TEXT.__swift5_typeref` | `0x1438` | `0x1706` | **`+0x2ce`** |
+| `__TEXT.__constg_swiftt` | `0xcd0` | `0xf80` | **`+0x2b0`** |
+| `__DATA.__data` | `0xcb8` | `0xef8` | **`+0x240`** |
+| `__TEXT.__swift5_capture` | `0x1898` | `0x1aac` | **`+0x214`** |
+| `__AUTH.__data` | `0x838` | `0x970` | **`+0x138`** |
+| `__AUTH_CONST.__auth_got` | `0xeb8` | `0xfd8` | **`+0x120`** |
+| `__TEXT.__swift_as_entry` | `0x350` | `0x454` | **`+0x104`** |
+| `__TEXT.__swift_as_cont` | `0x498` | `0x564` | **`+0xcc`** |
+| `__AUTH_CONST.__objc_const` | `0x458` | `0x510` | **`+0xb8`** |
+| `__TEXT.__swift_as_ret` | `0x310` | `0x3bc` | **`+0xac`** |
+| `__DATA_CONST.__objc_selrefs` | `0x278` | `0x310` | **`+0x98`** |
+| `__TEXT.__swift5_assocty` | `0x198` | `0x210` | **`+0x78`** |
+| `__TEXT.__swift5_types` | `0x170` | `0x1bc` | **`+0x4c`** |
+| `__TEXT.__swift5_proto` | `0x174` | `0x1bc` | **`+0x48`** |
+| `__TEXT.__swift5_builtin` | `0x14` | `0x3c` | **`+0x28`** |
+| `__DATA.__common` | `0x118` | `0x128` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x198` | `0x1a8` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x28` | `0x30` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0xc` | `0x10` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3605.23.1.1.2
--  __TEXT.__text: 0xb118c
 +3605.25.3.1.1
-+  __TEXT.__text: 0xc7cb8
-   __TEXT.__objc_methlist: 0x2c
--  __TEXT.__const: 0x4028
--  __TEXT.__cstring: 0x49d3
--  __TEXT.__swift5_typeref: 0x1438
--  __TEXT.__swift5_reflstr: 0x1aa3
--  __TEXT.__swift5_assocty: 0x198
--  __TEXT.__constg_swiftt: 0xcd0
--  __TEXT.__swift5_fieldmd: 0x19f8
--  __TEXT.__swift5_proto: 0x174
--  __TEXT.__swift5_types: 0x170
--  __TEXT.__swift5_protos: 0xc
--  __TEXT.__swift5_capture: 0x1898
-+  __TEXT.__const: 0x4c90
-+  __TEXT.__cstring: 0x4e83
-+  __TEXT.__swift5_typeref: 0x1706
-+  __TEXT.__swift5_reflstr: 0x1f23
-+  __TEXT.__swift5_assocty: 0x210
-+  __TEXT.__constg_swiftt: 0xf80
-+  __TEXT.__swift5_fieldmd: 0x1e58
-+  __TEXT.__swift5_builtin: 0x3c
-+  __TEXT.__swift5_proto: 0x1bc
-+  __TEXT.__swift5_types: 0x1bc
-+  __TEXT.__swift5_protos: 0x10
-+  __TEXT.__swift5_capture: 0x1aac
-   __TEXT.__oslogstring: 0x15
--  __TEXT.__swift_as_entry: 0x350
--  __TEXT.__swift_as_ret: 0x310
--  __TEXT.__swift_as_cont: 0x498
--  __TEXT.__swift5_builtin: 0x14
-+  __TEXT.__swift_as_entry: 0x454
-+  __TEXT.__swift_as_ret: 0x3bc
-+  __TEXT.__swift_as_cont: 0x564
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x2f60
--  __TEXT.__eh_frame: 0x5e98
-+  __TEXT.__unwind_info: 0x3618
-+  __TEXT.__eh_frame: 0x6bf0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x198
--  __DATA_CONST.__objc_classlist: 0x28
-+  __DATA_CONST.__const: 0x1a8
-+  __DATA_CONST.__objc_classlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x278
-+  __DATA_CONST.__objc_selrefs: 0x310
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x9438
--  __AUTH_CONST.__objc_const: 0x458
--  __AUTH_CONST.__auth_got: 0xeb8
--  __AUTH.__data: 0x838
--  __DATA.__data: 0xcb8
--  __DATA.__common: 0x118
-+  __AUTH_CONST.__const: 0xa6e8
-+  __AUTH_CONST.__objc_const: 0x510
-+  __AUTH_CONST.__auth_got: 0xfd8
-+  __AUTH.__data: 0x970
-+  __DATA.__data: 0xef8
-+  __DATA.__common: 0x128
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication
-+  - /System/Library/Frameworks/Photos.framework/Photos
-   - /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
-   - /System/Library/PrivateFrameworks/HybridSearch.framework/HybridSearch
-   - /System/Library/PrivateFrameworks/HybridSearchAdapter.framework/HybridSearchAdapter
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 5070
--  Symbols:   7570
++  - /System/Library/Frameworks/Photos.framework/Photos
+
+-  Functions: 5071
+-  Symbols:   7493
 -  CStrings:  543
-+  Functions: 5723
-+  Symbols:   8862
++  Functions: 5724
++  Symbols:   8766
 +  CStrings:  582
- 
 Symbols:
 + _$s10Foundation14DateComponentsV19_bridgeToObjectiveCSo06NSDateC0CyF
 + _$s10Foundation14DateComponentsV5start_AC3endtMR
@@ -1539,25 +1498,6 @@ Symbols:
 + _associated conformance So21NSAttributedStringKeyaSHSCSQ
 + _associated conformance So21NSAttributedStringKeyas20_SwiftNewtypeWrapperSCSY
 + _associated conformance So21NSAttributedStringKeyas20_SwiftNewtypeWrapperSCs35_HasCustomAnyHashableRepresentation
-+ _objc_msgSend$appendAttributedString:
-+ _objc_msgSend$initWithAttributedString:
-+ _objc_msgSend$initWithKey:ascending:
-+ _objc_msgSend$initWithPersonUUIDs:
-+ _objc_msgSend$initWithStartDateComponents:endDateComponents:
-+ _objc_msgSend$initWithString:
-+ _objc_msgSend$initWithString:attributes:
-+ _objc_msgSend$initWithUniqueIdentifier:domainIdentifier:attributeSet:
-+ _objc_msgSend$length
-+ _objc_msgSend$performIntentSearch:searchOptions:resultsHandler:
-+ _objc_msgSend$rankedSearchResults
-+ _objc_msgSend$setBundleID:
-+ _objc_msgSend$setContentType:
-+ _objc_msgSend$setMaxRankedSearchResults:
-+ _objc_msgSend$setQueryType:
-+ _objc_msgSend$setSearchQueryResultTypes:
-+ _objc_msgSend$setSortDescriptors:
-+ _objc_msgSend$string
-+ _objc_msgSend$uuid
 + _swift_getErrorValue
 + _swift_getForeignTypeMetadata
 + _swift_release_x12

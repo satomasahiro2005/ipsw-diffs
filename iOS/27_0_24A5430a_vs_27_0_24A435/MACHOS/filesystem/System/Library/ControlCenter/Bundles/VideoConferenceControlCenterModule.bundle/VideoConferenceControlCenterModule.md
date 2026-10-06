@@ -2,108 +2,63 @@
 
 > `/System/Library/ControlCenter/Bundles/VideoConferenceControlCenterModule.bundle/VideoConferenceControlCenterModule`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_proto`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x22e94` | `0x27534` | **`+0x46a0`** |
+| `__TEXT.__oslogstring` | `0xd4f` | `0x143f` | **`+0x6f0`** |
+| `__TEXT.__cstring` | `0x13c4` | `0x18c4` | **`+0x500`** |
+| `__TEXT.__objc_methname` | `0x28b5` | `0x2d18` | **`+0x463`** |
+| `__TEXT.__objc_stubs` | `0x1a20` | `0x1d20` | **`+0x300`** |
+| `__DATA.__objc_const` | `0x2410` | `0x2650` | **`+0x240`** |
+| `__TEXT.__swift5_reflstr` | `0xc11` | `0xe31` | **`+0x220`** |
+| `__TEXT.__objc_methlist` | `0x9f4` | `0xb14` | **`+0x120`** |
+| `__TEXT.__swift5_fieldmd` | `0x774` | `0x870` | **`+0xfc`** |
+| `__DATA.__objc_selrefs` | `0x9f0` | `0xae0` | **`+0xf0`** |
+| `__DATA_CONST.__const` | `0x1048` | `0x1118` | **`+0xd0`** |
+| `__DATA.__objc_data` | `0xa28` | `0xae8` | **`+0xc0`** |
+| `__TEXT.__unwind_info` | `0x8b0` | `0x960` | **`+0xb0`** |
+| `__TEXT.__auth_stubs` | `0x1030` | `0x10d0` | **`+0xa0`** |
+| `__DATA.__common` | `0x2e8` | `0x378` | **`+0x90`** |
+| `__DATA_CONST.__auth_got` | `0x828` | `0x878` | **`+0x50`** |
+| `__DATA.__data` | `0x988` | `0x9c0` | **`+0x38`** |
+| `__TEXT.__constg_swiftt` | `0x838` | `0x870` | **`+0x38`** |
+| `__DATA.__bss` | `0xdd0` | `0xdf0` | **`+0x20`** |
+| `__TEXT.__const` | `0x10c8` | `0x10e8` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x290` | `0x2a8` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x64` | `0x74` | **`+0x10`** |
+| `__TEXT.__objc_classname` | `0x341` | `0x351` | **`+0x10`** |
+| `__TEXT.__objc_methtype` | `0x734` | `0x744` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0x5de` | `0x5ec` | **`+0xe`** |
+| `__DATA_CONST.__objc_classlist` | `0x68` | `0x70` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x28` | `0x30` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__auth_ptr`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_types`
+
+### Other Changes
 
 ```diff
 
- 740.63.1.2.0
--  __TEXT.__text: 0x22e94
--  __TEXT.__auth_stubs: 0x1030
--  __TEXT.__objc_stubs: 0x1a20
--  __TEXT.__objc_methlist: 0x9f4
--  __TEXT.__const: 0x10c8
--  __TEXT.__objc_methname: 0x28b5
--  __TEXT.__objc_classname: 0x341
--  __TEXT.__objc_methtype: 0x734
--  __TEXT.__cstring: 0x13c4
--  __TEXT.__oslogstring: 0xd4f
-+  __TEXT.__text: 0x27534
-+  __TEXT.__auth_stubs: 0x10d0
-+  __TEXT.__objc_stubs: 0x1d20
-+  __TEXT.__objc_methlist: 0xb14
-+  __TEXT.__const: 0x10e8
-+  __TEXT.__objc_methname: 0x2d18
-+  __TEXT.__objc_classname: 0x351
-+  __TEXT.__objc_methtype: 0x744
-+  __TEXT.__cstring: 0x18c4
-+  __TEXT.__oslogstring: 0x143f
-   __TEXT.__gcc_except_tab: 0x40
--  __TEXT.__constg_swiftt: 0x838
--  __TEXT.__swift5_typeref: 0x5de
--  __TEXT.__swift5_reflstr: 0xc11
--  __TEXT.__swift5_fieldmd: 0x774
-+  __TEXT.__constg_swiftt: 0x870
-+  __TEXT.__swift5_typeref: 0x5ec
-+  __TEXT.__swift5_reflstr: 0xe31
-+  __TEXT.__swift5_fieldmd: 0x870
-   __TEXT.__swift5_types: 0x60
-   __TEXT.__swift5_capture: 0x154
-   __TEXT.__swift5_assocty: 0xc0
-   __TEXT.__swift5_builtin: 0x78
-   __TEXT.__swift5_proto: 0x60
--  __TEXT.__unwind_info: 0x8b0
--  __DATA_CONST.__const: 0x1048
-+  __TEXT.__unwind_info: 0x960
-+  __DATA_CONST.__const: 0x1118
-   __DATA_CONST.__cfstring: 0x340
--  __DATA_CONST.__objc_classlist: 0x68
-+  __DATA_CONST.__objc_classlist: 0x70
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x28
--  __DATA_CONST.__objc_superrefs: 0x28
-+  __DATA_CONST.__objc_superrefs: 0x30
-   __DATA_CONST.__objc_intobj: 0x78
--  __DATA_CONST.__auth_got: 0x828
--  __DATA_CONST.__got: 0x290
-+  __DATA_CONST.__auth_got: 0x878
-+  __DATA_CONST.__got: 0x2a8
-   __DATA_CONST.__auth_ptr: 0x190
--  __DATA.__objc_const: 0x2410
--  __DATA.__objc_selrefs: 0x9f0
--  __DATA.__objc_ivar: 0x64
--  __DATA.__objc_data: 0xa28
--  __DATA.__data: 0x988
--  __DATA.__common: 0x2e8
-+  __DATA.__objc_const: 0x2650
-+  __DATA.__objc_selrefs: 0xae0
-+  __DATA.__objc_ivar: 0x74
-+  __DATA.__objc_data: 0xae8
-+  __DATA.__data: 0x9c0
-+  __DATA.__common: 0x378
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
 +  - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 872
 -  Symbols:   268
 -  CStrings:  721
 +  Functions: 942
 +  Symbols:   282
 +  CStrings:  818
- 
 Symbols:
 + _AVControlCenterVideoEffectRingLight
 + _AVControlCenterVideoEffectsModuleGetRingLightActiveForBundleID

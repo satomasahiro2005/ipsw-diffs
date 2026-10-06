@@ -2,18 +2,17 @@
 
 > `/Applications/MobilePhone.app/MobilePhone`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
-- `__DATA.__objc_data`
 - `__DATA.__data`
+- `__DATA.__objc_data`
+
+### Other Changes
 
 ```diff
 
 -3072.100.1.2.2
 +3072.100.1.2.5
-   __TEXT.__text: 0x1f910c
-   __TEXT.__auth_stubs: 0x50f0
-   __TEXT.__objc_stubs: 0x1c000
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/MobilePhone/install/TempContent/Objects/MobilePhone.build/MobilePhone.build/Objects-normal/arm64e/MPRTTTranscriptionMessage-3b036336c66381abd288b029bf895f65.o
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/MobilePhone/install/TempContent/Objects/MobilePhone.build/MobilePhone.build/Objects-normal/arm64e/MPRecentsTableViewController-2c263830a363df5e662b05115e04ecfa.o

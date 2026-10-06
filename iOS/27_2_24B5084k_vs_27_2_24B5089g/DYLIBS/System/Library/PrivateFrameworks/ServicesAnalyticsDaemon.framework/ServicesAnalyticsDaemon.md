@@ -2,106 +2,61 @@
 
 > `/System/Library/PrivateFrameworks/ServicesAnalyticsDaemon.framework/ServicesAnalyticsDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x179294` | `0x17efd0` | **`+0x5d3c`** |
+| `__DATA.__bss` | `0x23170` | `0x20c50` | **`-0x2520`** |
+| `__DATA_DIRTY.__bss` | `0x80` | `0x2580` | **`+0x2500`** |
+| `__DATA_DIRTY.__data` | `0x3c8` | `0x1688` | **`+0x12c0`** |
+| `__AUTH.__data` | `0x2238` | `0x1718` | **`-0xb20`** |
+| `__DATA.__data` | `0x5038` | `0x48e0` | **`-0x758`** |
+| `__AUTH_CONST.__const` | `0xd528` | `0xdb08` | **`+0x5e0`** |
+| `__TEXT.__eh_frame` | `0x135d8` | `0x13940` | **`+0x368`** |
+| `__TEXT.__cstring` | `0x3f8d` | `0x423d` | **`+0x2b0`** |
+| `__TEXT.__const` | `0x1ec14` | `0x1eea4` | **`+0x290`** |
+| `__AUTH.__objc_data` | `0x460` | `0x280` | **`-0x1e0`** |
+| `__DATA_DIRTY.__objc_data` | `—` | `0x1e0` | **`+0x1e0`** |
+| `__TEXT.__swift5_reflstr` | `0x31a3` | `0x3343` | **`+0x1a0`** |
+| `__TEXT.__swift5_typeref` | `0x5a4d` | `0x5bdd` | **`+0x190`** |
+| `__TEXT.__swift5_capture` | `0x10bc` | `0x120c` | **`+0x150`** |
+| `__TEXT.__swift5_fieldmd` | `0x50cc` | `0x51fc` | **`+0x130`** |
+| `__TEXT.__unwind_info` | `0x6ed8` | `0x6ff8` | **`+0x120`** |
+| `__TEXT.__oslogstring` | `0x154b` | `0x15fb` | **`+0xb0`** |
+| `__AUTH_CONST.__auth_got` | `0x1ca8` | `0x1d48` | **`+0xa0`** |
+| `__TEXT.__constg_swiftt` | `0x4c28` | `0x4cc4` | **`+0x9c`** |
+| `__AUTH_CONST.__objc_const` | `0x1b50` | `0x1ab8` | **`-0x98`** |
+| `__DATA_CONST.__got` | `0xbc8` | `0xbf8` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4d8` | `0x508` | **`+0x30`** |
+| `__TEXT.__swift5_builtin` | `0x12c` | `0x154` | **`+0x28`** |
+| `__TEXT.__swift5_assocty` | `0x1318` | `0x1300` | **`-0x18`** |
+| `__DATA_CONST.__const` | `0x3d0` | `0x3e0` | **`+0x10`** |
+| `__TEXT.__swift5_mpenum` | `0x70` | `0x80` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x1224` | `0x1234` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0xc0` | `0xb8` | **`-0x8`** |
+| `__DATA_DIRTY.__common` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0xcc` | `0xd4` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x7d4` | `0x7dc` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x634` | `0x638` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0x4bc` | `0x4b8` | **`-0x4`** |
+| `__TEXT.__swift_as_ret` | `0x92c` | `0x930` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3.1.10.0.0
--  __TEXT.__text: 0x167858
--  __TEXT.__const: 0x1ec14
--  __TEXT.__cstring: 0x3f8d
--  __TEXT.__swift5_typeref: 0x5a4d
--  __TEXT.__constg_swiftt: 0x4c28
--  __TEXT.__swift5_fieldmd: 0x50cc
--  __TEXT.__swift5_reflstr: 0x31a3
--  __TEXT.__swift5_capture: 0x10bc
--  __TEXT.__oslogstring: 0x154b
--  __TEXT.__swift5_builtin: 0x12c
--  __TEXT.__swift5_assocty: 0x1318
--  __TEXT.__swift5_proto: 0x1224
--  __TEXT.__swift5_types: 0x634
--  __TEXT.__swift_as_entry: 0x4bc
--  __TEXT.__swift_as_ret: 0x92c
--  __TEXT.__swift_as_cont: 0x7d4
--  __TEXT.__swift5_protos: 0xcc
--  __TEXT.__swift5_mpenum: 0x70
 +3.1.12.0.0
-+  __TEXT.__text: 0x16d368
-+  __TEXT.__const: 0x1eea4
-+  __TEXT.__cstring: 0x423d
-+  __TEXT.__swift5_typeref: 0x5bdd
-+  __TEXT.__constg_swiftt: 0x4cc4
-+  __TEXT.__swift5_fieldmd: 0x51fc
-+  __TEXT.__swift5_reflstr: 0x3343
-+  __TEXT.__swift5_capture: 0x120c
-+  __TEXT.__oslogstring: 0x15fb
-+  __TEXT.__swift5_builtin: 0x154
-+  __TEXT.__swift5_assocty: 0x1300
-+  __TEXT.__swift5_proto: 0x1234
-+  __TEXT.__swift5_types: 0x638
-+  __TEXT.__swift_as_entry: 0x4b8
-+  __TEXT.__swift_as_ret: 0x930
-+  __TEXT.__swift_as_cont: 0x7dc
-+  __TEXT.__swift5_protos: 0xd4
-+  __TEXT.__swift5_mpenum: 0x80
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0x8630
--  __TEXT.__eh_frame: 0x135f0
-+  __TEXT.__unwind_info: 0x86f8
-+  __TEXT.__eh_frame: 0x13958
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3d0
--  __DATA_CONST.__objc_classlist: 0xc0
-+  __DATA_CONST.__const: 0x3e0
-+  __DATA_CONST.__objc_classlist: 0xb8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4d8
--  __DATA_CONST.__got: 0xbc8
--  __AUTH_CONST.__const: 0xd528
--  __AUTH_CONST.__objc_const: 0x1b50
--  __AUTH_CONST.__auth_got: 0x1ca8
--  __AUTH.__objc_data: 0x460
--  __AUTH.__data: 0x2238
--  __DATA.__data: 0x5038
-+  __DATA_CONST.__objc_selrefs: 0x508
-+  __DATA_CONST.__got: 0xbf8
-+  __AUTH_CONST.__const: 0xdb08
-+  __AUTH_CONST.__objc_const: 0x1ab8
-+  __AUTH_CONST.__auth_got: 0x1d48
-+  __AUTH.__objc_data: 0x280
-+  __AUTH.__data: 0x1718
-+  __DATA.__data: 0x48e0
-   __DATA.__common: 0xc8
--  __DATA_DIRTY.__data: 0x3c8
--  __DATA_DIRTY.__bss: 0x80
-+  __DATA_DIRTY.__objc_data: 0x1e0
-+  __DATA_DIRTY.__data: 0x1688
-+  __DATA_DIRTY.__bss: 0x2580
-+  __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/Frameworks/SwiftData.framework/SwiftData
-   - /System/Library/PrivateFrameworks/AppleMediaServices.framework/AppleMediaServices
-   - /System/Library/PrivateFrameworks/BackgroundSystemTasks.framework/BackgroundSystemTasks
 +  - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/JetEngine.framework/JetEngine
-   - /System/Library/PrivateFrameworks/OnDeviceDaemon.framework/OnDeviceDaemon
-   - /System/Library/PrivateFrameworks/OnDeviceFoundation.framework/OnDeviceFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7739
--  Symbols:   2463
+-  Symbols:   2308
 -  CStrings:  593
 +  Functions: 7820
-+  Symbols:   2500
++  Symbols:   2339
 +  CStrings:  615
- 
 Symbols:
 + _AnalyticsSendEventLazy
 + _CFBooleanGetTypeID
@@ -123,12 +78,6 @@ Symbols:
 + _get_enum_tag_for_layout_string 23ServicesAnalyticsDaemon30DiagnosticValueValidationErrorO
 + _kCFAllocatorDefault
 + _objc_autoreleaseReturnValue
-+ _objc_msgSend$dataWithPropertyList:format:options:error:
-+ _objc_msgSend$initWithCapacity:
-+ _objc_msgSend$longLongValue
-+ _objc_msgSend$propertyListWithData:options:format:error:
-+ _objc_msgSend$removeItemAtURL:error:
-+ _objc_msgSend$setObject:forKeyedSubscript:
 + _objc_release_x9
 + _objc_retain_x26
 + _symbolic $s23ServicesAnalyticsDaemon20DiagnosticReportableP

@@ -2,72 +2,50 @@
 
 > `/Applications/ContinuitySingShieldUI.app/ContinuitySingShieldUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__objc_methname` | `0x374b` | `0x378c` | **`+0x41`** |
+| `__DATA_CONST.__cfstring` | `0xa20` | `0xa60` | **`+0x40`** |
+| `__TEXT.__objc_stubs` | `0x27e0` | `0x2800` | **`+0x20`** |
+| `__DATA_CONST.__objc_arrayobj` | `—` | `0x18` | **`+0x18`** |
+| `__TEXT.__cstring` | `0x17da` | `0x17f0` | **`+0x16`** |
+| `__TEXT.__text` | `0xae2c` | `0xae40` | **`+0x14`** |
+| `__DATA.__objc_selrefs` | `0xe78` | `0xe88` | **`+0x10`** |
+| `__TEXT.__auth_stubs` | `0x470` | `0x480` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0xec4` | `0xed4` | **`+0x10`** |
+| `__DATA.__objc_const` | `0x1730` | `0x1738` | **`+0x8`** |
+| `__DATA_CONST.__auth_got` | `0x248` | `0x250` | **`+0x8`** |
+| `__DATA_CONST.__objc_arraydata` | `—` | `0x8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
 - `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -764.22.13.0.0
--  __TEXT.__text: 0xab8c
--  __TEXT.__auth_stubs: 0x470
--  __TEXT.__objc_stubs: 0x27e0
--  __TEXT.__objc_methlist: 0xec4
--  __TEXT.__cstring: 0x17da
--  __TEXT.__objc_methname: 0x374b
 +764.40.4.122.1
-+  __TEXT.__text: 0xaba0
-+  __TEXT.__auth_stubs: 0x480
-+  __TEXT.__objc_stubs: 0x2800
-+  __TEXT.__objc_methlist: 0xed4
-+  __TEXT.__cstring: 0x17f0
-+  __TEXT.__objc_methname: 0x378c
-   __TEXT.__objc_classname: 0x333
-   __TEXT.__objc_methtype: 0x1185
-   __TEXT.__const: 0x78
 
-   __TEXT.__oslogstring: 0xab7
-   __TEXT.__unwind_info: 0x3d8
-   __DATA_CONST.__const: 0x3f8
--  __DATA_CONST.__cfstring: 0xa20
-+  __DATA_CONST.__cfstring: 0xa60
-   __DATA_CONST.__objc_classlist: 0x78
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x58
--  __DATA_CONST.__auth_got: 0x248
-+  __DATA_CONST.__objc_arraydata: 0x8
-+  __DATA_CONST.__objc_arrayobj: 0x18
-+  __DATA_CONST.__auth_got: 0x250
-   __DATA_CONST.__got: 0x290
--  __DATA.__objc_const: 0x1730
--  __DATA.__objc_selrefs: 0xe78
-+  __DATA.__objc_const: 0x1738
-+  __DATA.__objc_selrefs: 0xe88
-   __DATA.__objc_ivar: 0xc0
-   __DATA.__objc_data: 0x4b0
-   __DATA.__data: 0x300
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 231
 -  Symbols:   166
 -  CStrings:  915
 +  Symbols:   168
 +  CStrings:  919
- 
 Symbols:
 + _FigCaptureGetModelSpecificName
 + _OBJC_CLASS_$_NSConstantArray
 Functions:
-~ sub_10000765c -> sub_1000076fc : 1180 -> 1200
+~ sub_1000077dc -> sub_10000787c : 1180 -> 1200
 CStrings:
 + "V68"
 + "containsObject:"

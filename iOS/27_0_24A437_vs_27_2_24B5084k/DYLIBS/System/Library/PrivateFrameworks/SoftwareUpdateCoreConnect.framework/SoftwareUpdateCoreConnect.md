@@ -2,61 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/SoftwareUpdateCoreConnect.framework/SoftwareUpdateCoreConnect`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa778` | `0xb0dc` | **`+0x964`** |
+| `__AUTH_CONST.__objc_const` | `0x1238` | `0x1450` | **`+0x218`** |
+| `__TEXT.__objc_methlist` | `0x9c8` | `0xb20` | **`+0x158`** |
+| `__TEXT.__cstring` | `0xb0a` | `0xc03` | **`+0xf9`** |
+| `__AUTH_CONST.__cfstring` | `0x920` | `0x9e0` | **`+0xc0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x678` | `0x710` | **`+0x98`** |
+| `__DATA.__data` | `0x360` | `0x3c0` | **`+0x60`** |
+| `__DATA.__objc_ivar` | `0xb4` | `0xdc` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x358` | `0x370` | **`+0x18`** |
+| `__DATA_CONST.__objc_protolist` | `0x48` | `0x50` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2718.0.18.0.0
--  __TEXT.__text: 0xa454
--  __TEXT.__objc_methlist: 0x9c8
 +2718.40.13.0.0
-+  __TEXT.__text: 0xadac
-+  __TEXT.__objc_methlist: 0xb20
-   __TEXT.__const: 0x40
-   __TEXT.__gcc_except_tab: 0x290
--  __TEXT.__cstring: 0xb0a
-+  __TEXT.__cstring: 0xc03
-   __TEXT.__oslogstring: 0x1de0
--  __TEXT.__unwind_info: 0x400
-+  __TEXT.__unwind_info: 0x428
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x330
-   __DATA_CONST.__objc_classlist: 0x48
--  __DATA_CONST.__objc_protolist: 0x48
-+  __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x678
-+  __DATA_CONST.__objc_selrefs: 0x710
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x40
-   __DATA_CONST.__got: 0xf8
-   __AUTH_CONST.__const: 0xe0
--  __AUTH_CONST.__cfstring: 0x920
--  __AUTH_CONST.__objc_const: 0x1238
-+  __AUTH_CONST.__cfstring: 0x9e0
-+  __AUTH_CONST.__objc_const: 0x1450
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0x50
--  __DATA.__objc_ivar: 0xb4
--  __DATA.__data: 0x360
-+  __DATA.__objc_ivar: 0xdc
-+  __DATA.__data: 0x3c0
-   __DATA_DIRTY.__objc_data: 0x280
-   __DATA_DIRTY.__bss: 0x38
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /System/Library/PrivateFrameworks/SoftwareUpdateCoreSupport.framework/SoftwareUpdateCoreSupport
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 257
--  Symbols:   665
+-  Symbols:   516
 -  CStrings:  152
 +  Functions: 286
-+  Symbols:   723
++  Symbols:   561
 +  CStrings:  159
- 
 Symbols:
 + -[SUCoreConnectClientPolicy conciseLoggingMessages]
 + -[SUCoreConnectClientPolicy debugLoggingMessages]
@@ -101,25 +74,8 @@ Symbols:
 + __OBJC_LABEL_PROTOCOL_$_SUCoreConnectMessageLoggingPolicy
 + __OBJC_PROTOCOL_$_SUCoreConnectMessageLoggingPolicy
 + __os_log_debug_impl
-+ _objc_msgSend$appendFormat:
-+ _objc_msgSend$appendString:
-+ _objc_msgSend$componentsJoinedByString:
-+ _objc_msgSend$conciseLoggingMessages
-+ _objc_msgSend$debugLoggingMessages
-+ _objc_msgSend$decodeBoolForKey:
-+ _objc_msgSend$encodeBool:forKey:
-+ _objc_msgSend$loggableDescriptionForPolicy:
-+ _objc_msgSend$loggableLogTypeForPolicy:
-+ _objc_msgSend$usesConciseLogging
-+ _objc_msgSend$usesConciseLoggingForMessageName:
-+ _objc_msgSend$usesConciseMessageLogging
-+ _objc_msgSend$usesDebugLogging
-+ _objc_msgSend$usesDebugLoggingForMessageName:
-+ _objc_msgSend$usesDebugMessageLogging
 + _objc_retain_x27
 + _objc_setProperty_atomic_copy
-- _objc_msgSend$stringByAppendingFormat:
-- _objc_msgSend$stringByAppendingString:
 CStrings:
 + ""
 + "%@"

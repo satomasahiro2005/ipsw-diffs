@@ -2,107 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/SafariSharedUI.framework/SafariSharedUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x525a4` | `0x53f24` | **`+0x1980`** |
+| `__TEXT.__text` | `0x4696d0` | `0x46a7e4` | **`+0x1114`** |
+| `__TEXT.__cstring` | `0x349b9` | `0x34d79` | **`+0x3c0`** |
+| `__DATA.__bss` | `0x205b0` | `0x20220` | **`-0x390`** |
+| `__TEXT.__oslogstring` | `0x11c6d` | `0x11d9d` | **`+0x130`** |
+| `__TEXT.__gcc_except_tab` | `0xf3e8` | `0xf2e8` | **`-0x100`** |
+| `__TEXT.__swift5_typeref` | `0x25710` | `0x257de` | **`+0xce`** |
+| `__TEXT.__eh_frame` | `0x20dec` | `0x20eac` | **`+0xc0`** |
+| `__AUTH_CONST.__cfstring` | `0x11560` | `0x11600` | **`+0xa0`** |
+| `__TEXT.__swift5_reflstr` | `0x77b5` | `0x7735` | **`-0x80`** |
+| `__TEXT.__unwind_info` | `0x14710` | `0x14690` | **`-0x80`** |
+| `__AUTH_CONST.__objc_const` | `0x1f0f0` | `0x1f160` | **`+0x70`** |
+| `__TEXT.__swift5_fieldmd` | `0x716c` | `0x7100` | **`-0x6c`** |
+| `__AUTH.__data` | `0x68b8` | `0x6918` | **`+0x60`** |
+| `__TEXT.__swift5_capture` | `0x3d08` | `0x3d68` | **`+0x60`** |
+| `__AUTH_CONST.__const` | `0x1b458` | `0x1b408` | **`-0x50`** |
+| `__DATA_CONST.__got` | `0x2e10` | `0x2e48` | **`+0x38`** |
+| `__AUTH_CONST.__auth_got` | `0x3ff8` | `0x4020` | **`+0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0xabc8` | `0xabf0` | **`+0x28`** |
+| `__TEXT.__swift5_assocty` | `0x1210` | `0x11f0` | **`-0x20`** |
+| `__TEXT.__swift5_proto` | `0xff0` | `0xfd4` | **`-0x1c`** |
+| `__DATA_CONST.__const` | `0x8030` | `0x8048` | **`+0x18`** |
+| `__DATA.__data` | `0xaed4` | `0xaee4` | **`+0x10`** |
+| `__TEXT.__constg_swiftt` | `0x768c` | `0x7698` | **`+0xc`** |
+| `__TEXT.__swift5_types` | `0x764` | `0x758` | **`-0xc`** |
+| `__TEXT.__swift_as_entry` | `0x8f0` | `0x8e4` | **`-0xc`** |
+| `__DATA.__common` | `0x490` | `0x488` | **`-0x8`** |
+| `__TEXT.__objc_methlist` | `0xf6e4` | `0xf6ec` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0xc84` | `0xc7c` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -625.1.29.10.29
--  __TEXT.__text: 0x43f738
 +625.2.4.1.0
-+  __TEXT.__text: 0x440a54
-   __TEXT.__delay_stubs: 0x80
-   __TEXT.__delay_helper: 0x14c
--  __TEXT.__objc_methlist: 0xf6e4
--  __TEXT.__const: 0x525a4
--  __TEXT.__gcc_except_tab: 0xf3e8
--  __TEXT.__cstring: 0x349b9
--  __TEXT.__oslogstring: 0x11c6d
-+  __TEXT.__objc_methlist: 0xf6ec
-+  __TEXT.__const: 0x53f24
-+  __TEXT.__gcc_except_tab: 0xf2e8
-+  __TEXT.__cstring: 0x34d79
-+  __TEXT.__oslogstring: 0x11d9d
-   __TEXT.__ustring: 0x1fc2
-   __TEXT.__dlopen_cstrs: 0x363
--  __TEXT.__constg_swiftt: 0x768c
--  __TEXT.__swift5_typeref: 0x25710
--  __TEXT.__swift5_fieldmd: 0x716c
-+  __TEXT.__constg_swiftt: 0x7698
-+  __TEXT.__swift5_typeref: 0x257de
-+  __TEXT.__swift5_fieldmd: 0x7100
-   __TEXT.__swift5_builtin: 0x2e4
--  __TEXT.__swift5_reflstr: 0x77b5
--  __TEXT.__swift5_assocty: 0x1210
--  __TEXT.__swift5_proto: 0xff0
--  __TEXT.__swift5_types: 0x764
--  __TEXT.__swift_as_entry: 0x8f0
--  __TEXT.__swift_as_ret: 0xc84
-+  __TEXT.__swift5_reflstr: 0x7735
-+  __TEXT.__swift5_assocty: 0x11f0
-+  __TEXT.__swift5_proto: 0xfd4
-+  __TEXT.__swift5_types: 0x758
-+  __TEXT.__swift_as_entry: 0x8e4
-+  __TEXT.__swift_as_ret: 0xc7c
-   __TEXT.__swift_as_cont: 0x1a20
-   __TEXT.__swift5_protos: 0x48
-   __TEXT.__swift5_mpenum: 0x64
--  __TEXT.__swift5_capture: 0x3d08
--  __TEXT.__unwind_info: 0x17460
--  __TEXT.__eh_frame: 0x20e14
-+  __TEXT.__swift5_capture: 0x3d68
-+  __TEXT.__unwind_info: 0x17948
-+  __TEXT.__eh_frame: 0x20ed4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x8030
-+  __DATA_CONST.__const: 0x8048
-   __DATA_CONST.__objc_classlist: 0x988
-   __DATA_CONST.__objc_catlist: 0x180
-   __DATA_CONST.__objc_protolist: 0x390
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xabc8
-+  __DATA_CONST.__objc_selrefs: 0xabf0
-   __DATA_CONST.__objc_protorefs: 0xf0
-   __DATA_CONST.__objc_superrefs: 0x4f8
-   __DATA_CONST.__objc_arraydata: 0x1a88
--  __DATA_CONST.__got: 0x2e10
--  __AUTH_CONST.__const: 0x1b458
--  __AUTH_CONST.__cfstring: 0x11560
--  __AUTH_CONST.__objc_const: 0x1f0f0
-+  __DATA_CONST.__got: 0x2e48
-+  __AUTH_CONST.__const: 0x1b408
-+  __AUTH_CONST.__cfstring: 0x11600
-+  __AUTH_CONST.__objc_const: 0x1f160
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x6f0
-   __AUTH_CONST.__objc_doubleobj: 0x50
-   __AUTH_CONST.__objc_arrayobj: 0x7e0
-   __AUTH_CONST.__objc_dictobj: 0x208
--  __AUTH_CONST.__auth_got: 0x3ff8
-+  __AUTH_CONST.__auth_got: 0x4020
-   __AUTH.__objc_data: 0x6668
--  __AUTH.__data: 0x68b8
-+  __AUTH.__data: 0x6918
-   __DATA.__objc_ivar: 0x10ac
--  __DATA.__data: 0xaed4
--  __DATA.__common: 0x490
-+  __DATA.__data: 0xaee4
-+  __DATA.__common: 0x488
-   __DATA_DIRTY.__objc_data: 0x140
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 20227
--  Symbols:   19467
+-  Symbols:   15306
 -  CStrings:  5301
 +  Functions: 20231
-+  Symbols:   19469
++  Symbols:   15305
 +  CStrings:  5307
- 
 Symbols:
 + -[WBSSearchSuggestionsFetcher updateSuggestionsRequestWithSearchTerms:previousQuery:userAgentString:completionHandler:]
 + -[WBSSiteMetadataManager activeRequestTokens]
@@ -120,16 +66,6 @@ Symbols:
 + _keypath_get.55Tm
 + _keypath_get.69Tm
 + _keypath_set.48Tm
-+ _objc_msgSend$_sceneUserResizability
-+ _objc_msgSend$donateAutoFillWithCategory:fieldCount:
-+ _objc_msgSend$donateNotifyMeCreated
-+ _objc_msgSend$donateNotifyMeEdited
-+ _objc_msgSend$needsPortraitOrientationLockWithPresentingViewController:
-+ _objc_msgSend$pm_defaults
-+ _objc_msgSend$searchProviderIdentifier
-+ _objc_msgSend$suspectedProvenanceOfOneTimeCode
-+ _objc_msgSend$updateSuggestionsRequestWithSearchTerms:previousQuery:suggestionsURLTemplate:userAgentString:completionHandler:
-+ _objc_msgSend$userNameForTesting
 + _oneTimeCodeAuthenticatorAppProvenanceKeywords
 + _oneTimeCodeEmailProvenanceKeywords
 + _oneTimeCodeTextMessageProvenanceKeywords
@@ -171,13 +107,6 @@ Symbols:
 - _keypath_get.54Tm
 - _keypath_get.64Tm
 - _keypath_set.47Tm
-- _objc_msgSend$_excludeOutliersBasedOnScoreForFrequentlyVisited:
-- _objc_msgSend$_isKeybagLocked
-- _objc_msgSend$_median:
-- _objc_msgSend$isDropOutliersInFrequentlyVisitedEnabled
-- _objc_msgSend$lowerBoundForExcludingOutliersFromSortedCandidateScores:
-- _objc_msgSend$numberWithFloat:
-- _objc_msgSend$updateSuggestionsRequestWithSearchTerms:suggestionsURLTemplate:userAgentString:completionHandler:
 - _symbolic Say_____G 12SafariShared13WBSAgentToolsO0aB2UIE18EvaluateJavaScriptV16FunctionArgumentV
 - _symbolic Say_____GSg 12SafariShared13WBSAgentToolsO0aB2UIE18EvaluateJavaScriptV16FunctionArgumentV
 - _symbolic SiIegd_

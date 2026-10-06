@@ -2,76 +2,43 @@
 
 > `/usr/lib/libBasebandManagerICE.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x268780` | `0x28ff40` | **`+0x277c0`** |
+| `__TEXT.__gcc_except_tab` | `0x38858` | `0x3c038` | **`+0x37e0`** |
+| `__TEXT.__oslogstring` | `0xcd9a` | `0x102fb` | **`+0x3561`** |
+| `__TEXT.__const` | `0x13bf0` | `0x148c0` | **`+0xcd0`** |
+| `__AUTH_CONST.__objc_const` | `0xa98` | `0x13a0` | **`+0x908`** |
+| `__AUTH_CONST.__const` | `0x10e58` | `0x11698` | **`+0x840`** |
+| `__TEXT.__cstring` | `0x82b2` | `0x8ae2` | **`+0x830`** |
+| `__TEXT.__unwind_info` | `0xab18` | `0xb160` | **`+0x648`** |
+| `__TEXT.__lazy_helpers` | `—` | `0x63c` | **`+0x63c`** |
+| `__TEXT.__objc_methlist` | `0x544` | `0x95c` | **`+0x418`** |
+| `__DATA_CONST.__objc_selrefs` | `0x690` | `0xa00` | **`+0x370`** |
+| `__DATA_CONST.__const` | `0x1ed8` | `0x2238` | **`+0x360`** |
+| `__AUTH.__objc_data` | `0x140` | `0x280` | **`+0x140`** |
+| `__AUTH_CONST.__auth_got` | `0x1b10` | `0x1c38` | **`+0x128`** |
+| `__DATA.__data` | `0x538` | `0x604` | **`+0xcc`** |
+| `__DATA.__objc_ivar` | `0x50` | `0x100` | **`+0xb0`** |
+| `__AUTH_CONST.__lazy_load_got` | `—` | `0x98` | **`+0x98`** |
+| `__DATA_CONST.__got` | `0x22d0` | `0x2350` | **`+0x80`** |
+| `__AUTH_CONST.__cfstring` | `0xb00` | `0xb20` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x38` | `0x58` | **`+0x20`** |
+| `__DATA_CONST.__objc_superrefs` | `0x28` | `0x48` | **`+0x20`** |
+| `__DATA_CONST.__objc_protolist` | `0x30` | `0x40` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
- 1585.0.0.0.0
--  __TEXT.__text: 0x268780
-+  __TEXT.__text: 0x28ff40
-+  __TEXT.__lazy_helpers: 0x63c
-   __TEXT.__init_offsets: 0x168
--  __TEXT.__objc_methlist: 0x544
--  __TEXT.__const: 0x13bf0
-+  __TEXT.__objc_methlist: 0x95c
-+  __TEXT.__const: 0x148c0
-   __TEXT.__dlopen_cstrs: 0x52
--  __TEXT.__gcc_except_tab: 0x38858
--  __TEXT.__oslogstring: 0xcd9a
--  __TEXT.__cstring: 0x82b2
--  __TEXT.__unwind_info: 0xab18
-+  __TEXT.__gcc_except_tab: 0x3c038
-+  __TEXT.__oslogstring: 0x102fb
-+  __TEXT.__cstring: 0x8ae2
-+  __TEXT.__unwind_info: 0xb160
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1ed8
--  __DATA_CONST.__objc_classlist: 0x38
--  __DATA_CONST.__objc_protolist: 0x30
-+  __DATA_CONST.__const: 0x2238
-+  __DATA_CONST.__objc_classlist: 0x58
-+  __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x158
--  __DATA_CONST.__objc_selrefs: 0x690
--  __DATA_CONST.__objc_superrefs: 0x28
--  __DATA_CONST.__got: 0x22d0
--  __AUTH_CONST.__const: 0x10e58
--  __AUTH_CONST.__cfstring: 0xb00
--  __AUTH_CONST.__objc_const: 0xa98
-+  __DATA_CONST.__objc_selrefs: 0xa00
-+  __DATA_CONST.__objc_superrefs: 0x48
-+  __DATA_CONST.__got: 0x2350
-+  __AUTH_CONST.__const: 0x11698
-+  __AUTH_CONST.__cfstring: 0xb20
-+  __AUTH_CONST.__objc_const: 0x13a0
-   __AUTH_CONST.__weak_auth_got: 0x20
-+  __AUTH_CONST.__lazy_load_got: 0x98
-   __AUTH_CONST.__objc_intobj: 0x18
--  __AUTH_CONST.__auth_got: 0x1b10
--  __AUTH.__objc_data: 0x140
--  __DATA.__objc_ivar: 0x50
--  __DATA.__data: 0x538
-+  __AUTH_CONST.__auth_got: 0x1c38
-+  __AUTH.__objc_data: 0x280
-+  __DATA.__objc_ivar: 0x100
-+  __DATA.__data: 0x604
-   __DATA.__common: 0x9
-   __DATA_DIRTY.__objc_data: 0xf0
-   __DATA_DIRTY.__data: 0x5e0
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libprotobuf-lite.dylib
-   - /usr/lib/libprotobuf.dylib
 -  Functions: 6809
--  Symbols:   11901
+-  Symbols:   11747
 -  CStrings:  2553
 +  Functions: 7140
-+  Symbols:   12707
++  Symbols:   12452
 +  CStrings:  2942
- 
 Symbols:
 + -[FaceDetectionANSTRGBObserverImpl .cxx_construct]
 + -[FaceDetectionANSTRGBObserverImpl .cxx_destruct]
@@ -784,107 +751,6 @@ Symbols:
 + _objc_destroyWeak
 + _objc_initWeak
 + _objc_loadWeakRetained
-+ _objc_msgSend$addInput:
-+ _objc_msgSend$addObserver:
-+ _objc_msgSend$addObserver:forKeyPath:options:context:
-+ _objc_msgSend$addObserverForName:object:queue:usingBlock:
-+ _objc_msgSend$addOutput:
-+ _objc_msgSend$allKeys
-+ _objc_msgSend$angleDegrees
-+ _objc_msgSend$attitude
-+ _objc_msgSend$availableMetadataObjectTypes
-+ _objc_msgSend$backlightState
-+ _objc_msgSend$cameraTypeFromPort:
-+ _objc_msgSend$canAddInput:
-+ _objc_msgSend$canAddOutput:
-+ _objc_msgSend$computeDistanceDeltaBucket:threshold:
-+ _objc_msgSend$computeIMUSensingAnalytics:pitchDeg:rollDeg:gz:
-+ _objc_msgSend$containsObject:
-+ _objc_msgSend$date
-+ _objc_msgSend$defaultCenter
-+ _objc_msgSend$defaultDeviceWithDeviceType:mediaType:position:
-+ _objc_msgSend$distance
-+ _objc_msgSend$endpointPID
-+ _objc_msgSend$endpointUniqueID
-+ _objc_msgSend$formatDescription
-+ _objc_msgSend$formats
-+ _objc_msgSend$getAngleDelta:g2:
-+ _objc_msgSend$getCurrentDistance
-+ _objc_msgSend$getFaceDetectionDistanceMaxForCamera:
-+ _objc_msgSend$getFaceDetectionDistanceMinForCamera:
-+ _objc_msgSend$getOsirisState1MaxThreshold
-+ _objc_msgSend$getOsirisState1MinThreshold
-+ _objc_msgSend$getOsirisState2MaxThreshold
-+ _objc_msgSend$getOsirisState2MinThreshold
-+ _objc_msgSend$getOsirisState3MaxThreshold
-+ _objc_msgSend$getOsirisState3MinThreshold
-+ _objc_msgSend$getPitchMaxThreshold
-+ _objc_msgSend$getPitchMinThreshold
-+ _objc_msgSend$getRollMaxThreshold
-+ _objc_msgSend$getRollMinThreshold
-+ _objc_msgSend$getThresholdLandscapeLeft
-+ _objc_msgSend$getThresholdLandscapeRight
-+ _objc_msgSend$getThresholdPortraitUpright
-+ _objc_msgSend$getThresholdPortraitUpsideDown
-+ _objc_msgSend$getTunerThreshold
-+ _objc_msgSend$gravity
-+ _objc_msgSend$handleNewFrameSenderEndpoints:
-+ _objc_msgSend$handleScreenState:
-+ _objc_msgSend$hasDistance
-+ _objc_msgSend$initWithDevice:error:
-+ _objc_msgSend$initWithFrameSenderServerEndpoint:frameReceiverHandler:
-+ _objc_msgSend$isAngleValid
-+ _objc_msgSend$isAvailable
-+ _objc_msgSend$isDeviceMotionActive
-+ _objc_msgSend$isRunning
-+ _objc_msgSend$lockForConfiguration:
-+ _objc_msgSend$notifyClient:frontCameraOn:sourceFromCMCapture:camera:
-+ _objc_msgSend$objectAtIndexedSubscript:
-+ _objc_msgSend$pitch
-+ _objc_msgSend$referenceForAggregateDisplay
-+ _objc_msgSend$registerCallback:
-+ _objc_msgSend$removeObserver:
-+ _objc_msgSend$removeObserver:forKeyPath:
-+ _objc_msgSend$roll
-+ _objc_msgSend$setActiveFormat:
-+ _objc_msgSend$setActiveVideoMaxFrameDuration:
-+ _objc_msgSend$setActiveVideoMinFrameDuration:
-+ _objc_msgSend$setDeviceMotionUpdateInterval:
-+ _objc_msgSend$setFaceDetectionDistanceMax:forCamera:
-+ _objc_msgSend$setFaceDetectionDistanceMin:forCamera:
-+ _objc_msgSend$setMetadataObjectTypes:
-+ _objc_msgSend$setMetadataObjectsDelegate:queue:
-+ _objc_msgSend$setOsirisState1MaxThreshold:
-+ _objc_msgSend$setOsirisState1MinThreshold:
-+ _objc_msgSend$setOsirisState2MaxThreshold:
-+ _objc_msgSend$setOsirisState2MinThreshold:
-+ _objc_msgSend$setOsirisState3MaxThreshold:
-+ _objc_msgSend$setOsirisState3MinThreshold:
-+ _objc_msgSend$setPitchMaxThreshold:
-+ _objc_msgSend$setPitchMinThreshold:
-+ _objc_msgSend$setRectOfInterest:
-+ _objc_msgSend$setRollMaxThreshold:
-+ _objc_msgSend$setRollMinThreshold:
-+ _objc_msgSend$setSynchronizationEnabled:
-+ _objc_msgSend$setThresholdLandscapeLeft:
-+ _objc_msgSend$setThresholdLandscapeRight:
-+ _objc_msgSend$setThresholdPortraitUpright:
-+ _objc_msgSend$setThresholdPortraitUpsideDown:
-+ _objc_msgSend$setTunerThreshold:
-+ _objc_msgSend$setUnderlyingQueue:
-+ _objc_msgSend$sharedBacklightForDisplay:
-+ _objc_msgSend$startAngleUpdatesToQueue:handler:
-+ _objc_msgSend$startDeviceMotionUpdatesToQueue:withHandler:
-+ _objc_msgSend$startDeviceMotionUpdatesUsingReferenceFrame:
-+ _objc_msgSend$startRunning
-+ _objc_msgSend$stopAngleUpdates
-+ _objc_msgSend$stopDeviceMotionUpdates
-+ _objc_msgSend$stopRunning
-+ _objc_msgSend$thresholdForCamera:
-+ _objc_msgSend$timeIntervalSinceDate:
-+ _objc_msgSend$type
-+ _objc_msgSend$unlockForConfiguration
-+ _objc_msgSend$userInfo
 + _objc_opt_isKindOfClass
 + _objc_release_x2
 + _objc_retain_x27

@@ -2,22 +2,23 @@
 
 > `/Applications/Sidecar.app/PlugIns/ContinuityMarkup.appex/ContinuityMarkup`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5b64` | `0x5b68` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_data`
+- `__DATA_CONST.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 400.42.0.0.0
--  __TEXT.__text: 0x5b64
-+  __TEXT.__text: 0x5b68
-   __TEXT.__auth_stubs: 0x750
-   __TEXT.__objc_stubs: 0x580
-   __TEXT.__objc_methlist: 0x274
+```text
 Functions:
 ~ sub_100003540 : 100 -> 104
 ```

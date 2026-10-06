@@ -2,113 +2,50 @@
 
 > `/System/Library/Frameworks/NetworkExtension.framework/NetworkExtension`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2078fc` | `0x20f6d0` | **`+0x7dd4`** |
+| `__AUTH.__objc_data` | `0x15c8` | `0x3bc0` | **`+0x25f8`** |
+| `__DATA_DIRTY.__objc_data` | `0x6040` | `0x3a98` | **`-0x25a8`** |
+| `__DATA_DIRTY.__data` | `—` | `0xc20` | **`+0xc20`** |
+| `__AUTH.__data` | `0xc68` | `0x128` | **`-0xb40`** |
+| `__AUTH_CONST.__objc_const` | `0x23210` | `0x233e8` | **`+0x1d8`** |
+| `__TEXT.__objc_methlist` | `0xf2e8` | `0xf4b8` | **`+0x1d0`** |
+| `__AUTH_CONST.__cfstring` | `0x190a0` | `0x19220` | **`+0x180`** |
+| `__TEXT.__cstring` | `0x194c0` | `0x19606` | **`+0x146`** |
+| `__TEXT.__oslogstring` | `0x24b23` | `0x24c2d` | **`+0x10a`** |
+| `__TEXT.__unwind_info` | `0x5640` | `0x56d0` | **`+0x90`** |
+| `__DATA.__data` | `0x1ef0` | `0x1e70` | **`-0x80`** |
+| `__DATA_CONST.__const` | `0x63f0` | `0x6448` | **`+0x58`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5338` | `0x5378` | **`+0x40`** |
+| `__TEXT.__eh_frame` | `0x2b88` | `0x2bc0` | **`+0x38`** |
+| `__TEXT.__const` | `0x367c` | `0x36a4` | **`+0x28`** |
+| `__DATA.__bss` | `0x1668` | `0x1650` | **`-0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x24b0` | `0x24c0` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x68` | `0x78` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x1c3c` | `0x1c48` | **`+0xc`** |
+| `__DATA.__common` | `0x188` | `0x180` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0xb38` | `0xb40` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x260` | `0x268` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x720` | `0x728` | **`+0x8`** |
+| `__DATA_DIRTY.__common` | `0x30` | `0x38` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x4ff8` | `0x4ff4` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2078fc
--  __TEXT.__objc_methlist: 0xf2e8
--  __TEXT.__const: 0x367c
-+  __TEXT.__text: 0x20f6d0
-+  __TEXT.__objc_methlist: 0xf4b8
-+  __TEXT.__const: 0x36a4
-   __TEXT.__swift5_typeref: 0xdda
-   __TEXT.__swift5_capture: 0x1010
-   __TEXT.__constg_swiftt: 0xc7c
+-2315.0.0.0.2
++2322.0.0.0.1
 
-   __TEXT.__swift_as_cont: 0x1f4
-   __TEXT.__swift5_fieldmd: 0x680
-   __TEXT.__swift5_protos: 0x14
--  __TEXT.__cstring: 0x194c0
--  __TEXT.__oslogstring: 0x24b23
--  __TEXT.__gcc_except_tab: 0x4ff8
--  __TEXT.__unwind_info: 0x5640
--  __TEXT.__eh_frame: 0x2b88
-+  __TEXT.__cstring: 0x19606
-+  __TEXT.__oslogstring: 0x24c2d
-+  __TEXT.__gcc_except_tab: 0x4ff4
-+  __TEXT.__unwind_info: 0x56d0
-+  __TEXT.__eh_frame: 0x2bc0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x63f0
--  __DATA_CONST.__objc_classlist: 0xb38
-+  __DATA_CONST.__const: 0x6448
-+  __DATA_CONST.__objc_classlist: 0xb40
-   __DATA_CONST.__objc_catlist: 0x10
--  __DATA_CONST.__objc_protolist: 0x260
-+  __DATA_CONST.__objc_protolist: 0x268
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5338
-+  __DATA_CONST.__objc_selrefs: 0x5378
-   __DATA_CONST.__objc_protorefs: 0x158
--  __DATA_CONST.__objc_superrefs: 0x720
-+  __DATA_CONST.__objc_superrefs: 0x728
-   __DATA_CONST.__objc_arraydata: 0x138
-   __DATA_CONST.__got: 0x17f0
-   __AUTH_CONST.__const: 0x4a00
--  __AUTH_CONST.__cfstring: 0x190a0
--  __AUTH_CONST.__objc_const: 0x23210
-+  __AUTH_CONST.__cfstring: 0x19220
-+  __AUTH_CONST.__objc_const: 0x233e8
-   __AUTH_CONST.__objc_intobj: 0x3a8
-   __AUTH_CONST.__objc_arrayobj: 0x168
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x24b0
--  __AUTH.__objc_data: 0x15c8
--  __AUTH.__data: 0xc68
--  __DATA.__objc_ivar: 0x1c3c
--  __DATA.__data: 0x1ef0
--  __DATA.__bss: 0x1668
--  __DATA.__common: 0x188
--  __DATA_DIRTY.__objc_data: 0x6040
--  __DATA_DIRTY.__bss: 0x68
--  __DATA_DIRTY.__common: 0x30
-+  __AUTH_CONST.__auth_got: 0x24c0
-+  __AUTH.__objc_data: 0x3bc0
-+  __AUTH.__data: 0x128
-+  __DATA.__objc_ivar: 0x1c48
-+  __DATA.__data: 0x1e70
-+  __DATA.__bss: 0x1650
-+  __DATA.__common: 0x180
-+  __DATA_DIRTY.__objc_data: 0x3a98
-+  __DATA_DIRTY.__data: 0xc20
-+  __DATA_DIRTY.__bss: 0x78
-+  __DATA_DIRTY.__common: 0x38
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8250
--  Symbols:   24151
--  CStrings:  10452
+-  Symbols:   14327
+-  CStrings:  7198
 +  Functions: 8302
-+  Symbols:   24271
-+  CStrings:  10481
- 
-Sections:
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
++  Symbols:   14390
++  CStrings:  7213
 Symbols:
 + -[NEAOVPN dictionaryRepresentation]
 + -[NEAOVPNException dictionaryRepresentation]
@@ -419,13 +356,6 @@ Symbols:
 + ___block_descriptor_48_e8_32s40s_e15_v32?0816^B24ls32l8s40l8
 + ___block_descriptor_60_e8_32s40s48bs_e5_v8?0ls32l8s48l8s40l8
 + ___block_descriptor_68_e8_32s40s48s56bs_e72_v40?0"NSString"8"NSDictionary"16"NEConfiguration"24"NSDictionary"32ls32l8s40l8s48l8s56l8
-+ _objc_msgSend$JSONStringForConfiguration:
-+ _objc_msgSend$dictionaryRepresentation
-+ _objc_msgSend$numberWithDouble:
-+ _objc_msgSend$objCType
-+ _objc_msgSend$stringFromDate:timeZone:formatOptions:
-+ _objc_msgSend$timeZoneWithAbbreviation:
-+ _objc_msgSend$whitespaceCharacterSet
 + _symbolic _____Sg 9CryptoKit8MLKEM768O17OneTimePrivateKeyV
 + _symbolic _____Sg 9CryptoKit9MLKEM1024O17OneTimePrivateKeyV
 - -[NEIKEv2Session installRekeyedChildSA:andReturnIPsecSAsToDelete:]
@@ -708,5 +638,4 @@ CStrings:
 - "%s called with null sasToDelete"
 - "-[NEIKEv2Session installRekeyedChildSA:andReturnIPsecSAsToDelete:]"
 - "-[NEIKEv2Session uninstallOldRekeyedChildSA:andDeleteIPsecSAs:]"
-
 ```

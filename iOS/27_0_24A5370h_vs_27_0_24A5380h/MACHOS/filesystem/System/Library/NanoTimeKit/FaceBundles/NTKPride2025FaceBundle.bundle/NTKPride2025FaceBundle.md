@@ -2,19 +2,25 @@
 
 > `/System/Library/NanoTimeKit/FaceBundles/NTKPride2025FaceBundle.bundle/NTKPride2025FaceBundle`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10170` | `0x10168` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x10170
-+  __TEXT.__text: 0x10168
-   __TEXT.__auth_stubs: 0xba0
-   __TEXT.__objc_stubs: 0xe00
-   __TEXT.__objc_methlist: 0x548
-Sections:
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA.__data : content changed
+-2483.493.1.0.0
++2483.503.0.0.0
 Functions:
 ~ sub_ecb0 : 412 -> 408
 ~ sub_ee4c -> sub_ee48 : 412 -> 408
-
 ```

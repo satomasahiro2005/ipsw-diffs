@@ -2,61 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/WebCore.framework/Frameworks/libANGLE-shared.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x252c3c` | `0x259160` | **`+0x6524`** |
+| `__TEXT.__const` | `0x839c0` | `0x83f40` | **`+0x580`** |
+| `__TEXT.__cstring` | `0x43b89` | `0x43cce` | **`+0x145`** |
+| `__AUTH_CONST.__const` | `0x15d70` | `0x15df0` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x92b8` | `0x92f8` | **`+0x40`** |
+| `__TEXT.__gcc_except_tab` | `0x2b40` | `0x2b58` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
 -625.1.18.10.4
--  __TEXT.__text: 0x252c3c sha256:690f9034e3290c56da38b47f737140d1d20b0838e1a476abf089e8efc4d021f8
--  __TEXT.__const: 0x839c0 sha256:329e964808c1fe7a152ca898aa789120263f84721701a365707e6edae604c615
--  __TEXT.__cstring: 0x43b89 sha256:67629b314fd8b38a1ae8cda187536a6d448c3c125df6c3db97c89ead258a1ff0
--  __TEXT.__gcc_except_tab: 0x2b40 sha256:ae4f0bdde473d1bfa6bfd3be741bed47f94d7cea463de71b9da575183a5f43df
 +625.1.20.10.3
-+  __TEXT.__text: 0x259160 sha256:1a0bc689a9e3853bb59cbadb6b0cd82733d880589de10a8aa5742405abd9f515
-+  __TEXT.__const: 0x83f40 sha256:71ba21e37c38b9a5fc0250f08b38cc5ce9a28be83b44144b8158a29718766dfd
-+  __TEXT.__cstring: 0x43cce sha256:dc3303256107b727384eda5c6df56afe8fe049271596658f9269b5a71ad75d56
-+  __TEXT.__gcc_except_tab: 0x2b58 sha256:ac6a7403d9e5cee47c6eaba6c86d7f6e3a9a5ade38acffc7079aa4aec5980f7a
-   __TEXT.__oslogstring: 0xf sha256:344cc4068ef7f0a84f95ce0e67214def1775f6b5eb01e1c61ed615caa3bf7f26
--  __TEXT.__unwind_info: 0x92b8 sha256:123b9a9cbd76451643837e034b51b5b6fe8fe49816577ecca1c3a7e19e7b57e3
-+  __TEXT.__unwind_info: 0x92f8 sha256:a4dea8f7fb33da1233c972bf76034d39713ca82246349d3a243a1f7a4258137e
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0x12fd8 sha256:4b8c0c8ff28748212024fb9945acb36c20706d35d81dbedaff0ba6d8a75d937f
-+  __DATA_CONST.__const: 0x12fd8 sha256:54464935762492b164c763e4ffedbfe5dfefe8c4cb84428256162a7a906cb6a4
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__objc_selrefs: 0x7c8 sha256:abfc1b1a62a5a0055a32d1c49c0803454dff89af243bf83f53a91b19e26d7d75
-+  __DATA_CONST.__objc_selrefs: 0x7c8 sha256:2a024cd53c89a6ade2db128240479a15839914caaa25868761f1604e29904d9d
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x15d70 sha256:28ea87b2dbe0589df4a62e88dd3c40969c31f5b676a2fc990916d8841e09b6f4
--  __AUTH_CONST.__cfstring: 0x9c0 sha256:4625d831c196529d01d033d1fdabbc675f95db4a5b03db29a3790e7bb56c81f2
--  __AUTH_CONST.__weak_auth_got: 0x30 sha256:f47ffa20ac9e78b5122078e28893bc99a0ef71db5473c0dfc5c7721393855761
-+  __AUTH_CONST.__const: 0x15df0 sha256:85b000fd5803797fedce299480c439330537f028b079f59be4b57067edcfb464
-+  __AUTH_CONST.__cfstring: 0x9c0 sha256:afa58f8ab5510262dc3745798ad4a3f2e0bbba3f8d140797f5eff2e01a894130
-+  __AUTH_CONST.__weak_auth_got: 0x30 sha256:bc7032a9550ec8aa8a80bef9f815c3e35a4f8ae9488dc768ff0fa3d704d59a49
-   __AUTH_CONST.__auth_got: 0x6c0 sha256:7636c9f8da9a82f9a9fcd804a25795a9c900e1c7e19f7442a7b113c8ccd64eb2
--  __DATA.__data: 0x26050 sha256:aa54c34ba7f6192c97bc6b03bf856d22e817e078997c81cbbc42aa567a345d35
-+  __DATA.__data: 0x26050 sha256:d1f1aa3af7b8332724874d164e4251bd37a0482056c9fff5bb555668326d896b
-   __DATA.__bss: 0x24 sha256:6db65fd59fd356f6729140571b5bcd6bb3b83492a16e1bf0a3884442fc3c8a0e
-   __DATA.__common: 0x35c sha256:be0b1f2bcf1812a1b42727bb64413764b2b9e904fcbc64ce0d4b8dc49719ff04
--  __DATA_DIRTY.__data: 0xc70 sha256:b2e36504bf3d10a0ab525dc791a69a035257f26241e2a3d9f6ecc6dcb8679da1
-+  __DATA_DIRTY.__data: 0xc70 sha256:0727c19192cbcd6aceae6f982580cd92ef0ba6611d2b5fda5a2202bc513be850
-   __DATA_DIRTY.__bss: 0x1a0 sha256:4cc7e6272db6b1ad7581f76c63c694e926e20698e9b02223d5041a55960463f2
-   __DATA_DIRTY.__common: 0x4f8 sha256:fbb4fa31c3fa0c14ccb3fe426e39dcad529b17e379309c0adbe27fcc93feba50
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
--  UUID: B1C8CD69-C3B6-3994-8218-03AAADBC5449
 -  Functions: 9070
--  Symbols:   25622
--  CStrings:  7048
-+  UUID: EE3573DD-E996-353C-A871-9B6FC9D3700A
+-  Symbols:   13236
+-  CStrings:  6970
 +  Functions: 9089
-+  Symbols:   25650
-+  CStrings:  7052
- 
++  Symbols:   13252
++  CStrings:  6974
 Symbols:
-+ _.str.88
 + _XXH3_len_1to3_64b
 + __ZN2gl11Framebuffer10invalidateEPKNS_7ContextEmPKj
 + __ZN2gl11Framebuffer13invalidateSubEPKNS_7ContextEmPKjRKNS_13RectangleImplIiEE
@@ -889,7 +859,6 @@ Symbols:
 + __ZZNSt3__16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEN2gl14ProgramBindingEEENS_19__map_value_compareIS7_NS_4pairIKS7_S9_EENS_4lessIS7_EEEENS5_ISE_EEE21__insert_range_uniqueB9sqn220106INS_25__hash_map_const_iteratorINS_21__hash_const_iteratorIPNS_11__hash_nodeINS_17__hash_value_typeIS7_S9_EEPvEEEEEESU_EEvT_T0_ENKUlRSD_RKSE_E_clESX_SZ_
 + __ZZNSt3__16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEjEENS_19__map_value_compareIS7_NS_4pairIKS7_jEENS_4lessIS7_EEEENS5_ISC_EEE21__insert_range_uniqueB9sqn220106INS_25__hash_map_const_iteratorINS_21__hash_const_iteratorIPNS_11__hash_nodeINS_17__hash_value_typeIS7_jEEPvEEEEEESS_EEvT_T0_ENKUlRSB_RKSC_E_clESV_SX_
 - GCC_except_table82
-- _.str.132
 - __ZN2gl11Framebuffer21partialClearNeedsInitEPKNS_7ContextEN5angle7BitSetTILm8EhmEEbb
 - __ZN2gl11Framebuffer27partialBufferClearNeedsInitEPKNS_7ContextEjN5angle7BitSetTILm8EhmEE
 - __ZN2gl11SyncManager10createSyncEPN2rx13GLImplFactoryEPNS_6SyncIDE
@@ -1723,5 +1692,4 @@ CStrings:
 - "GL_NV_depth_buffer_float2"
 - "imageSize is too small."
 - "imageSize must be 0 if no texture data is provided."
-
 ```

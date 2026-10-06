@@ -2,34 +2,35 @@
 
 > `/System/ExclaveKit/System/Library/PrivateFrameworks/TokenGenerationInference.framework/TokenGenerationInference`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__auth_ptr`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9ebec` | `0x9ec08` | **`+0x1c`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_data`
-- `__DATA.__data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_selrefs`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 301.6.0.5.102
--  __TEXT.__text: 0x9ebec
-+  __TEXT.__text: 0x9ec08
-   __TEXT.__auth_stubs: 0x2220
-   __TEXT.__objc_stubs: 0x5e0
-   __TEXT.__objc_methlist: 0x2f4
+```text
 Functions:
 ~ _$s24TokenGenerationInference08OnDeviceC8ProviderC14executeOneShot10clientData13configuration27ModelManagerExclaveServices0ocK0OAI_AG0ocF20RequestConfigurationVtYaAG0oC5ErrorOYKFTY0_ : 9688 -> 9692
 ~ _$s24TokenGenerationInference08OnDeviceC8ProviderC04loadA5Table33_12AC0F606DC9AE65B00A5060F55D0238LL5usingSDy9PromptKit07SpecialA0VypG19EXMobileAssetLoader08EXMAssetW0C_t27ModelManagerExclaveServices07ExclaveC5ErrorOYKF : 3640 -> 3648

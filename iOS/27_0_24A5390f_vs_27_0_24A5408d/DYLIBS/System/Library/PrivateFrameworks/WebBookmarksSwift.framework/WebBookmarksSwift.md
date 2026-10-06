@@ -2,108 +2,94 @@
 
 > `/System/Library/PrivateFrameworks/WebBookmarksSwift.framework/WebBookmarksSwift`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x493ac` | `0x310` | **`-0x4909c`** |
+| `__TEXT.__eh_frame` | `0x3d68` | `—` | **`-0x3d68`** |
+| `__TEXT.__const` | `0x1dd8` | `0x72` | **`-0x1d66`** |
+| `__DATA.__bss` | `0x1d00` | `—` | **`-0x1d00`** |
+| `__AUTH_CONST.__const` | `0x1c08` | `—` | **`-0x1c08`** |
+| `__TEXT.__oslogstring` | `0x13fc` | `—` | **`-0x13fc`** |
+| `__TEXT.__unwind_info` | `0x1298` | `0x88` | **`-0x1210`** |
+| `__TEXT.__swift5_typeref` | `0xf82` | `0x9` | **`-0xf79`** |
+| `__DATA.__data` | `0xa58` | `—` | **`-0xa58`** |
+| `__TEXT.__constg_swiftt` | `0xaa0` | `0x60` | **`-0xa40`** |
+| `__AUTH_CONST.__auth_got` | `0x998` | `0x0` | **`-0x998`** |
+| `__AUTH_CONST.__objc_const` | `0x968` | `0x148` | **`-0x820`** |
+| `__TEXT.__swift5_capture` | `0x7bc` | `—` | **`-0x7bc`** |
+| `__TEXT.__swift5_fieldmd` | `0x5b8` | `0x1c` | **`-0x59c`** |
+| `__TEXT.__swift5_reflstr` | `0x5b0` | `0x1d` | **`-0x593`** |
+| `__DATA_DIRTY.__data` | `0x478` | `—` | **`-0x478`** |
+| `__TEXT.__swift_as_cont` | `0x43c` | `—` | **`-0x43c`** |
+| `__TEXT.__cstring` | `0x420` | `—` | **`-0x420`** |
+| `__DATA_CONST.__const` | `0x2a8` | `0x40` | **`-0x268`** |
+| `__TEXT.__objc_methlist` | `0x200` | `—` | **`-0x200`** |
+| `__TEXT.__swift_as_ret` | `0x198` | `—` | **`-0x198`** |
+| `__TEXT.__swift_as_entry` | `0x184` | `—` | **`-0x184`** |
+| `__DATA_CONST.__objc_selrefs` | `0x148` | `—` | **`-0x148`** |
+| `__TEXT.__swift5_proto` | `0xe8` | `—` | **`-0xe8`** |
+| `__DATA_DIRTY.__objc_data` | `0x120` | `0x50` | **`-0xd0`** |
+| `__AUTH.__data` | `—` | `0xb8` | **`+0xb8`** |
+| `__TEXT.__swift5_assocty` | `0xa0` | `—` | **`-0xa0`** |
+| `__TEXT.__swift5_types` | `0x68` | `0x4` | **`-0x64`** |
+| `__AUTH.__objc_data` | `0x48` | `—` | **`-0x48`** |
+| `__TEXT.__swift5_builtin` | `0x3c` | `—` | **`-0x3c`** |
+| `__DATA_CONST.__objc_classlist` | `0x30` | `0x10` | **`-0x20`** |
+| `__TEXT.__swift5_mpenum` | `0x1c` | `—` | **`-0x1c`** |
+| `__DATA_CONST.__objc_protolist` | `0x10` | `—` | **`-0x10`** |
+| `__DATA.__objc_ivar` | `0x8` | `—` | **`-0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x8` | `—` | **`-0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x8` | `—` | **`-0x8`** |
+| `__TEXT.__swift5_protos` | `0x8` | `—` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x0` | `—` | **`-0x0`** |
+| `__TEXT.__objc_stubs` | `0x0` | `—` | **`-0x0`** |
+
+### Other Changes
+
 ```diff
 
 -7625.1.24.10.1
--  __TEXT.__text: 0x493ac
--  __TEXT.__objc_methlist: 0x200
--  __TEXT.__const: 0x1dd8
--  __TEXT.__cstring: 0x420
--  __TEXT.__swift5_typeref: 0xf82
--  __TEXT.__swift5_reflstr: 0x5b0
--  __TEXT.__swift5_assocty: 0xa0
--  __TEXT.__constg_swiftt: 0xaa0
--  __TEXT.__swift5_fieldmd: 0x5b8
--  __TEXT.__swift5_builtin: 0x3c
--  __TEXT.__swift5_proto: 0xe8
--  __TEXT.__swift5_types: 0x68
--  __TEXT.__swift_as_entry: 0x184
--  __TEXT.__swift5_protos: 0x8
--  __TEXT.__swift5_mpenum: 0x1c
--  __TEXT.__oslogstring: 0x13fc
--  __TEXT.__swift5_capture: 0x7bc
--  __TEXT.__swift_as_ret: 0x198
--  __TEXT.__swift_as_cont: 0x43c
--  __TEXT.__unwind_info: 0x1298
--  __TEXT.__eh_frame: 0x3d68
--  __TEXT.__objc_stubs: 0x0
-+7625.1.29.10.3
-+  __TEXT.__text: 0x310
-+  __TEXT.__const: 0x72
-+  __TEXT.__constg_swiftt: 0x60
-+  __TEXT.__swift5_typeref: 0x9
-+  __TEXT.__swift5_reflstr: 0x1d
-+  __TEXT.__swift5_fieldmd: 0x1c
-+  __TEXT.__swift5_types: 0x4
-+  __TEXT.__unwind_info: 0x88
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2a8
--  __DATA_CONST.__objc_classlist: 0x30
--  __DATA_CONST.__objc_protolist: 0x10
-+  __DATA_CONST.__const: 0x40
-+  __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x148
--  __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1c08
--  __AUTH_CONST.__objc_const: 0x968
--  __AUTH_CONST.__auth_got: 0x998
--  __AUTH.__objc_data: 0x48
--  __DATA.__objc_ivar: 0x8
--  __DATA.__data: 0xa58
--  __DATA.__bss: 0x1d00
--  __DATA_DIRTY.__objc_data: 0x120
--  __DATA_DIRTY.__data: 0x478
 -  - /System/Library/Frameworks/CloudKit.framework/CloudKit
 -  - /System/Library/Frameworks/Combine.framework/Combine
-+  __AUTH_CONST.__objc_const: 0x148
-+  __AUTH_CONST.__auth_got: 0x0
-+  __AUTH.__data: 0xb8
-+  __DATA_DIRTY.__objc_data: 0x50
-   - /System/Library/Frameworks/Foundation.framework/Foundation
++7625.1.29.10.3
+
 -  - /System/Library/Frameworks/GroupActivities.framework/GroupActivities
 -  - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/PrivateFrameworks/SafariCore.framework/SafariCore
+
 -  - /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
+
 -  - /usr/lib/swift/libswiftAVFoundation.dylib
 -  - /usr/lib/swift/libswiftAccelerate.dylib
 -  - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
+
 -  - /usr/lib/swift/libswiftCoreAudio.dylib
 -  - /usr/lib/swift/libswiftCoreAudio_Private.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
+
 -  - /usr/lib/swift/libswiftCoreImage.dylib
 -  - /usr/lib/swift/libswiftCoreLocation.dylib
 -  - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
+
 -  - /usr/lib/swift/libswiftIntents.dylib
 -  - /usr/lib/swift/libswiftMLCompute.dylib
 -  - /usr/lib/swift/libswiftMetal.dylib
 -  - /usr/lib/swift/libswiftNaturalLanguage.dylib
 -  - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
+
 -  - /usr/lib/swift/libswiftQuartzCore.dylib
 -  - /usr/lib/swift/libswiftSpatial.dylib
 -  - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
+
 -  - /usr/lib/swift/libswift_Concurrency.dylib
 -  - /usr/lib/swift/libswiftos.dylib
 -  - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1234
--  Symbols:   3067
+-  Symbols:   3031
 -  CStrings:  99
 +  Functions: 16
 +  Symbols:   66
 +  CStrings:  0
- 
 Symbols:
 + _$s17WebBookmarksSwift023SymbolOfALongGonePastInabC0C017goodbyeToTheWorldE9YesterdaySSvM
 + _$s17WebBookmarksSwift023SymbolOfALongGonePastInabC0C017goodbyeToTheWorldE9YesterdaySSvM.resume
@@ -2780,42 +2766,6 @@ Symbols:
 - _objc_destroyWeak
 - _objc_loadWeakRetained
 - _objc_msgSend
-- _objc_msgSend$acceptanceStatus
-- _objc_msgSend$beginCollaborationForShare:
-- _objc_msgSend$beginDeviceCoordination
-- _objc_msgSend$ckShortDescription
-- _objc_msgSend$currentUserParticipant
-- _objc_msgSend$emailAddress
-- _objc_msgSend$endCollaborationForShare:
-- _objc_msgSend$endDeviceCoordination
-- _objc_msgSend$getActiveParticipantsInTabGroupWithIdentifier:completionHandler:
-- _objc_msgSend$getActiveParticipantsInTabWithIdentifier:completionHandler:
-- _objc_msgSend$getCurrentConnectionStateWithCompletionHandler:
-- _objc_msgSend$getCurrentLocationIdentifiersForParticipantIdentifier:completionHandler:
-- _objc_msgSend$getTabGroupIdentifierForParticipantIdentifier:completionHandler:
-- _objc_msgSend$getTabIdentifierForParticipantIdentifier:completionHandler:
-- _objc_msgSend$init
-- _objc_msgSend$isCurrentUser
-- _objc_msgSend$length
-- _objc_msgSend$lookupInfo
-- _objc_msgSend$moveCurrentParticipantToTabIdentifier:inTabGroupIdentifier:withDeviceIdentifier:
-- _objc_msgSend$normalizedEmailAddressHandleForValue:
-- _objc_msgSend$normalizedPhoneNumberHandleForValue:isoCountryCode:
-- _objc_msgSend$normalizedValue
-- _objc_msgSend$participantPresenceCoordinator:didUpdateActiveParticipants:inTabGroupWithIdentifier:
-- _objc_msgSend$participantPresenceCoordinator:didUpdateActiveParticipants:inTabWithIdentifier:
-- _objc_msgSend$participants
-- _objc_msgSend$phoneNumber
-- _objc_msgSend$recordID
-- _objc_msgSend$recordName
-- _objc_msgSend$safari_tabGroupRootRecordName
-- _objc_msgSend$setDelegate:
-- _objc_msgSend$shareDidUpdate:
-- _objc_msgSend$userIdentity
-- _objc_msgSend$userRecordID
-- _objc_msgSend$value
-- _objc_msgSend$zoneID
-- _objc_msgSend$zoneName
 - _objc_msgSendSuper2
 - _objc_opt_respondsToSelector
 - _objc_release

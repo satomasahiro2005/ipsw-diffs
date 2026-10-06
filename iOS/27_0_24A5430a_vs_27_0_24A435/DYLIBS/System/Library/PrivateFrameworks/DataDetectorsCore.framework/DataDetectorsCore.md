@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/DataDetectorsCore.framework/DataDetectorsCore`
 
-```diff
+### Section Size Changes
 
- 847.1.0.0.0
--  __TEXT.__text: 0x37b8c
-+  __TEXT.__text: 0x37bb8
-   __TEXT.__lazy_helpers: 0x498
-   __TEXT.__objc_methlist: 0xaf4
-   __TEXT.__const: 0x458
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x37b8c` | `0x37bb8` | **`+0x2c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _DDTokenCacheGetTokenOrSubtokenAfterPosition : 560 -> 564
 ~ __DDScannerHandleState : 1916 -> 1940

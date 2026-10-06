@@ -2,46 +2,21 @@
 
 > `/System/Library/PrivateFrameworks/ClothPhysics.framework/ClothPhysics`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc1274` | `0xc1048` | **`-0x22c`** |
+| `__AUTH.__objc_data` | `—` | `0x50` | **`+0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x50` | `—` | **`-0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x5b30` | `0x5b2c` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xc1274
-+  __TEXT.__text: 0xc1048
-   __TEXT.__objc_methlist: 0x238
-   __TEXT.__const: 0x2bc0
-   __TEXT.__oslogstring: 0x4ff5
-   __TEXT.__cstring: 0x91b1
--  __TEXT.__gcc_except_tab: 0x5b30
-+  __TEXT.__gcc_except_tab: 0x5b2c
-   __TEXT.__unwind_info: 0x3610
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __AUTH_CONST.__objc_const: 0x2c8
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__auth_got: 0x4c8
-+  __AUTH.__objc_data: 0x50
-   __DATA.__objc_ivar: 0x4
-   __DATA.__data: 0xf0
-   __DATA.__bss: 0x1a0
-   __DATA.__common: 0x19
--  __DATA_DIRTY.__objc_data: 0x50
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/Metal.framework/Metal
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA.__data : content changed
+-21.0.1.0.0
++21.0.2.0.0
 Functions:
 ~ __ZN5cloth25FormattedBufferedPropertyINS_10CapsuleGPUEE24materializeSourceIndicesEv : 172 -> 160
 ~ __ZNK5cloth17SphereMeshBuilder17InputVertexRegionplERKS1_ : 212 -> 204
@@ -82,5 +57,4 @@ Functions:
 ~ __ZN5cloth14PickingVolumes4pickEjPNS_14ComputeEncoderE : 748 -> 760
 ~ __ZN5cloth5Graph16initMetalBuffersERNS_12MetalManagerE : 592 -> 576
 ~ __ZN5cloth25FormattedBufferedPropertyINS_9SphereGPUEE24materializeSourceIndicesEv : 180 -> 168
-
 ```

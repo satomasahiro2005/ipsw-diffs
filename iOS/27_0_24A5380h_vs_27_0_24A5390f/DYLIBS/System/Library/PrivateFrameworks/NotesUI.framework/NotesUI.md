@@ -2,140 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/NotesUI.framework/NotesUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_catlist2`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__DATA.__objc_stublist`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2b5914` | `0x2bb898` | **`+0x5f84`** |
+| `__AUTH_CONST.__objc_const` | `0x24898` | `0x242b0` | **`-0x5e8`** |
+| `__AUTH_CONST.__const` | `0x9d68` | `0xa2e0` | **`+0x578`** |
+| `__TEXT.__objc_methlist` | `0x17428` | `0x16ff8` | **`-0x430`** |
+| `__TEXT.__const` | `0x9d54` | `0x9ff4` | **`+0x2a0`** |
+| `__TEXT.__swift5_reflstr` | `0x2047` | `0x2284` | **`+0x23d`** |
+| `__AUTH_CONST.__cfstring` | `0xc3c0` | `0xc1a0` | **`-0x220`** |
+| `__TEXT.__swift5_fieldmd` | `0x2344` | `0x2560` | **`+0x21c`** |
+| `__DATA.__bss` | `0x3f50` | `0x4160` | **`+0x210`** |
+| `__DATA_CONST.__objc_selrefs` | `0x10168` | `0xff68` | **`-0x200`** |
+| `__TEXT.__ustring` | `0x13a84` | `0x13896` | **`-0x1ee`** |
+| `__TEXT.__swift5_typeref` | `0xc6ec` | `0xc8c4` | **`+0x1d8`** |
+| `__TEXT.__constg_swiftt` | `0x3a00` | `0x3b78` | **`+0x178`** |
+| `__AUTH_CONST.__auth_got` | `0x31d0` | `0x3320` | **`+0x150`** |
+| `__TEXT.__swift5_capture` | `0x1edc` | `0x202c` | **`+0x150`** |
+| `__DATA.__data` | `0x561c` | `0x56e4` | **`+0xc8`** |
+| `__TEXT.__cstring` | `0x13f37` | `0x13ffd` | **`+0xc6`** |
+| `__AUTH.__objc_data` | `0x4008` | `0x40c8` | **`+0xc0`** |
+| `__AUTH.__data` | `0x1bb0` | `0x1c48` | **`+0x98`** |
+| `__DATA.__objc_ivar` | `0x124c` | `0x11d0` | **`-0x7c`** |
+| `__DATA_CONST.__got` | `0x2ea0` | `0x2ee8` | **`+0x48`** |
+| `__AUTH_CONST.__objc_intobj` | `0x630` | `0x660` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x64d8` | `0x6508` | **`+0x30`** |
+| `__TEXT.__swift5_builtin` | `0x258` | `0x280` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x9bd0` | `0x9bf8` | **`+0x28`** |
+| `__DATA_DIRTY.__data` | `0x2600` | `0x25e0` | **`-0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x4944` | `0x4924` | **`-0x20`** |
+| `__TEXT.__swift5_types` | `0x2ec` | `0x30c` | **`+0x20`** |
+| `__DATA_CONST.__objc_superrefs` | `0x6b8` | `0x6a0` | **`-0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0xad8` | `0xac8` | **`-0x10`** |
+| `__TEXT.__swift5_proto` | `0x3f4` | `0x404` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x170` | `0x178` | **`+0x8`** |
+| `__TEXT.__eh_frame` | `0x46f0` | `0x46e8` | **`-0x8`** |
+| `__TEXT.__oslogstring` | `0xa152` | `0xa155` | **`+0x3`** |
+
+### Other Changes
 
 ```diff
 
 -2996.0.0.0.0
--  __TEXT.__text: 0x2b5914
 +2998.0.0.0.0
-+  __TEXT.__text: 0x2bb898
-   __TEXT.__delay_stubs: 0x40
-   __TEXT.__delay_helper: 0x6ec
-   __TEXT.__init_offsets: 0x4
--  __TEXT.__objc_methlist: 0x17428
--  __TEXT.__const: 0x9d54
--  __TEXT.__cstring: 0x13f37
--  __TEXT.__gcc_except_tab: 0x4944
--  __TEXT.__oslogstring: 0xa152
--  __TEXT.__ustring: 0x13a84
--  __TEXT.__swift5_typeref: 0xc6ec
--  __TEXT.__constg_swiftt: 0x3a00
--  __TEXT.__swift5_builtin: 0x258
--  __TEXT.__swift5_reflstr: 0x2047
--  __TEXT.__swift5_fieldmd: 0x2344
-+  __TEXT.__objc_methlist: 0x16ff8
-+  __TEXT.__const: 0x9ff4
-+  __TEXT.__cstring: 0x13ffd
-+  __TEXT.__gcc_except_tab: 0x4924
-+  __TEXT.__oslogstring: 0xa155
-+  __TEXT.__ustring: 0x13896
-+  __TEXT.__swift5_typeref: 0xc8c4
-+  __TEXT.__constg_swiftt: 0x3b78
-+  __TEXT.__swift5_reflstr: 0x2284
-+  __TEXT.__swift5_fieldmd: 0x2560
-+  __TEXT.__swift5_builtin: 0x280
-   __TEXT.__swift5_assocty: 0x7f0
--  __TEXT.__swift5_proto: 0x3f4
--  __TEXT.__swift5_types: 0x2ec
--  __TEXT.__swift5_capture: 0x1edc
-+  __TEXT.__swift5_proto: 0x404
-+  __TEXT.__swift5_types: 0x30c
-+  __TEXT.__swift5_capture: 0x202c
-   __TEXT.__swift5_protos: 0x24
-   __TEXT.__swift_as_entry: 0xf8
-   __TEXT.__swift_as_ret: 0x108
-   __TEXT.__swift_as_cont: 0x1e0
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x9bd0
--  __TEXT.__eh_frame: 0x46f0
-+  __TEXT.__unwind_info: 0x9bf8
-+  __TEXT.__eh_frame: 0x46e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x64d8
--  __DATA_CONST.__objc_classlist: 0xad8
-+  __DATA_CONST.__const: 0x6508
-+  __DATA_CONST.__objc_classlist: 0xac8
-   __DATA_CONST.__objc_catlist: 0x2c8
-   __DATA_CONST.__objc_catlist2: 0x10
-   __DATA_CONST.__objc_protolist: 0x3c0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x10168
--  __DATA_CONST.__objc_protorefs: 0x170
--  __DATA_CONST.__objc_superrefs: 0x6b8
-+  __DATA_CONST.__objc_selrefs: 0xff68
-+  __DATA_CONST.__objc_protorefs: 0x178
-+  __DATA_CONST.__objc_superrefs: 0x6a0
-   __DATA_CONST.__objc_arraydata: 0x328
--  __DATA_CONST.__got: 0x2ea0
--  __AUTH_CONST.__const: 0x9d68
--  __AUTH_CONST.__cfstring: 0xc3c0
--  __AUTH_CONST.__objc_const: 0x24898
-+  __DATA_CONST.__got: 0x2ee8
-+  __AUTH_CONST.__const: 0xa2e0
-+  __AUTH_CONST.__cfstring: 0xc1a0
-+  __AUTH_CONST.__objc_const: 0x242b0
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_arrayobj: 0x1e0
--  __AUTH_CONST.__objc_intobj: 0x630
-+  __AUTH_CONST.__objc_intobj: 0x660
-   __AUTH_CONST.__objc_doubleobj: 0x120
-   __AUTH_CONST.__objc_dictobj: 0x50
--  __AUTH_CONST.__auth_got: 0x31d0
--  __AUTH.__objc_data: 0x4008
--  __AUTH.__data: 0x1bb0
--  __DATA.__objc_ivar: 0x124c
--  __DATA.__data: 0x561c
-+  __AUTH_CONST.__auth_got: 0x3320
-+  __AUTH.__objc_data: 0x40c8
-+  __AUTH.__data: 0x1c48
-+  __DATA.__objc_ivar: 0x11d0
-+  __DATA.__data: 0x56e4
-   __DATA.__objc_stublist: 0x28
--  __DATA.__bss: 0x3f50
-+  __DATA.__bss: 0x4160
-   __DATA.__common: 0x70
-   __DATA_DIRTY.__objc_data: 0x40c8
--  __DATA_DIRTY.__data: 0x2600
-+  __DATA_DIRTY.__data: 0x25e0
-   __DATA_DIRTY.__bss: 0x4550
-   __DATA_DIRTY.__common: 0x60
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 14844
--  Symbols:   22240
+-  Symbols:   15995
 -  CStrings:  3252
 +  Functions: 14892
-+  Symbols:   22085
++  Symbols:   15883
 +  CStrings:  3246
- 
 Symbols:
 + +[ICPasswordChangePresenter viewControllerForAddingPasswordWithAccount:completion:]
 + +[ICPasswordChangePresenter viewControllerForChangingPasswordWithAccount:didAuthenticateWithBiometrics:completion:]
@@ -189,29 +107,6 @@ Symbols:
 + _associated conformance 7NotesUI28PasswordChangeViewControllerC3Row33_063C9B0EE5701E98F450560DEF660F10LLOSHAASQ
 + _associated conformance 7NotesUI28PasswordChangeViewControllerC7Section33_063C9B0EE5701E98F450560DEF660F10LLOSHAASQ
 + _keypath_get.134Tm
-+ _objc_msgSend$addTarget:action:forControlEvents:
-+ _objc_msgSend$allowsAccessRequests
-+ _objc_msgSend$constraintGreaterThanOrEqualToAnchor:
-+ _objc_msgSend$constraintGreaterThanOrEqualToConstant:
-+ _objc_msgSend$constraintLessThanOrEqualToAnchor:
-+ _objc_msgSend$ic_containsAttribute:
-+ _objc_msgSend$imageActivityItemProvider
-+ _objc_msgSend$initForAddingPasswordWithAccount:completion:
-+ _objc_msgSend$initForChangingPasswordWithAccount:didAuthenticateWithBiometrics:completion:
-+ _objc_msgSend$initWithFrame:collectionViewLayout:
-+ _objc_msgSend$initWithSectionProvider:
-+ _objc_msgSend$linkedNoteIsPasswordProtectedAndLocked
-+ _objc_msgSend$performWithTitle:contents:pinned:stylesTitle:error:
-+ _objc_msgSend$predicateForNotesWithIdentifier:
-+ _objc_msgSend$scrollToItemAtIndexPath:atScrollPosition:animated:
-+ _objc_msgSend$setAllowsAnimations:
-+ _objc_msgSend$setAllowsSelection:
-+ _objc_msgSend$setKeyboardDismissMode:
-+ _objc_msgSend$setReturnKeyType:
-+ _objc_msgSend$stylesTitle
-+ _objc_msgSend$useAILabeling
-+ _objc_msgSend$viewControllerForAddingPasswordWithAccount:completion:
-+ _objc_msgSend$viewControllerForChangingPasswordWithAccount:didAuthenticateWithBiometrics:completion:
 + _symbolic Sb29didAuthenticateWithBiometrics_t
 + _symbolic So11UIStackViewC
 + _symbolic So11UITextFieldC
@@ -438,72 +333,6 @@ Symbols:
 - ___block_descriptor_32_e28_B32?0"UITextField"8Q16^B24l
 - ___block_descriptor_65_e8_32s40s48r56r_e5_v8?0ls32l8r48l8s40l8r56l8
 - _keypath_get.124Tm
-- _objc_msgSend$accessibilityTraits
-- _objc_msgSend$addSizeConstraint
-- _objc_msgSend$alternateConstraintsForAXLargerTextSizes
-- _objc_msgSend$cancelButton
-- _objc_msgSend$completionHandler
-- _objc_msgSend$defaultConstraints
-- _objc_msgSend$didAttemptToSubmitWithoutHint
-- _objc_msgSend$didAuthenticateWithBiometrics
-- _objc_msgSend$dismissKeyboardIfNeeded
-- _objc_msgSend$dismissWithResult:
-- _objc_msgSend$doneButton
-- _objc_msgSend$doneButtonPressed:
-- _objc_msgSend$findSizeLayoutConstraintIfExists
-- _objc_msgSend$firstAttribute
-- _objc_msgSend$firstResponderTextField
-- _objc_msgSend$hasSetUpSizeConstraint
-- _objc_msgSend$headerLabel
-- _objc_msgSend$hintLabel
-- _objc_msgSend$hintTextField
-- _objc_msgSend$ic_displayScale
-- _objc_msgSend$ic_safeAreaDistanceFromBottom
-- _objc_msgSend$imageWithContentsOfFile:
-- _objc_msgSend$incorrectPasswordAttempts
-- _objc_msgSend$initWithCompletionHandler:
-- _objc_msgSend$isSetupForChangePassword
-- _objc_msgSend$newNoteWithAttributedString:inFolder:error:
-- _objc_msgSend$oldPasswordHeightConstraint
-- _objc_msgSend$oldPasswordLabel
-- _objc_msgSend$oldPasswordTextField
-- _objc_msgSend$orderedTextFields
-- _objc_msgSend$passphraseManager
-- _objc_msgSend$passwordAndVerifyTextFieldsMatch
-- _objc_msgSend$passwordLabel
-- _objc_msgSend$passwordTextField
-- _objc_msgSend$performWithTitle:contents:pinned:error:
-- _objc_msgSend$precomposedStringWithCanonicalMapping
-- _objc_msgSend$redColor
-- _objc_msgSend$resetTextFields
-- _objc_msgSend$scrollViewResizer
-- _objc_msgSend$separatorColor
-- _objc_msgSend$setCompletionHandler:
-- _objc_msgSend$setContentInsetAdjustmentBehavior:
-- _objc_msgSend$setDidAttemptToSubmitWithoutHint:
-- _objc_msgSend$setDidAuthenticateWithBiometrics:
-- _objc_msgSend$setDisableActions:
-- _objc_msgSend$setHasSetUpSizeConstraint:
-- _objc_msgSend$setIncorrectPasswordAttempts:
-- _objc_msgSend$setIsSetupForChangePassword:
-- _objc_msgSend$setOrderedTextFields:
-- _objc_msgSend$setPassphraseManager:
-- _objc_msgSend$setScrollViewResizer:
-- _objc_msgSend$setUpForAddingPasswordWithAccount:
-- _objc_msgSend$setUpForChangePasswordWithAccount:didAuthenticateWithBiometrics:
-- _objc_msgSend$setUpNavigationBar
-- _objc_msgSend$setUpSizeConstraintIfNecessary
-- _objc_msgSend$setUsingLargerAXSizes:
-- _objc_msgSend$setupAccessibility
-- _objc_msgSend$sizeLayoutAttribute
-- _objc_msgSend$startAutoResizing
-- _objc_msgSend$stopAutoResizing
-- _objc_msgSend$textBackgroundViews
-- _objc_msgSend$updateFonts
-- _objc_msgSend$validateInput
-- _objc_msgSend$verifyLabel
-- _objc_msgSend$verifyTextField
-- _objc_msgSend$warningLabel
 CStrings:
 + "AIGC=1;src=writingTools"
 + "Change this account’s locked notes password."

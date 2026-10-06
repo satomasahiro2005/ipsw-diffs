@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/NewsArticles.framework/NewsArticles`
 
-```diff
+### Section Size Changes
 
- 5934.3.0.0.0
--  __TEXT.__text: 0x39e070
-+  __TEXT.__text: 0x39e10c
-   __TEXT.__objc_methlist: 0x8b0c
-   __TEXT.__const: 0x2bff4
-   __TEXT.__cstring: 0x10d83
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x39e070` | `0x39e10c` | **`+0x9c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1dd8ad6ec -> sub_1ddf286ec : 868 -> 860
 ~ sub_1dd8b1360 -> sub_1ddf2c358 : 776 -> 760

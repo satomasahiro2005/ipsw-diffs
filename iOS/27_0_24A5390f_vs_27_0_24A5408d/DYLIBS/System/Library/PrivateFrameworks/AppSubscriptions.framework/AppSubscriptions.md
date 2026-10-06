@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/AppSubscriptions.framework/AppSubscriptions`
 
-```diff
+### Section Size Changes
 
- 63.2.0.0.0
--  __TEXT.__text: 0x1d979c
-+  __TEXT.__text: 0x1d978c
-   __TEXT.__objc_methlist: 0x254
-   __TEXT.__const: 0x1ab7e
-   __TEXT.__constg_swiftt: 0x674c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1d979c` | `0x1d978c` | **`-0x10`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2534a0e3c -> sub_252ed5e3c : 1144 -> 1136
-~ sub_2534a12f0 -> sub_252ed62e8 : 1444 -> 1436
+~ sub_253350e3c -> sub_252dcce3c : 1144 -> 1136
+~ sub_2533512f0 -> sub_252dcd2e8 : 1444 -> 1436
 ```

@@ -2,92 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/FitnessIntelligence.framework/FitnessIntelligence`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x3d602` | `0x3e822` | **`+0x1220`** |
+| `__TEXT.__text` | `0x3ddd04` | `0x3de6bc` | **`+0x9b8`** |
+| `__TEXT.__swift5_reflstr` | `0xb45e` | `0xb4be` | **`+0x60`** |
+| `__AUTH_CONST.__const` | `0x1a2c8` | `0x1a288` | **`-0x40`** |
+| `__TEXT.__const` | `0x36f20` | `0x36f50` | **`+0x30`** |
+| `__TEXT.__eh_frame` | `0x20894` | `0x208c4` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x10548` | `0x10568` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0xb4f4` | `0xb50c` | **`+0x18`** |
+| `__DATA_CONST.__const` | `0x1500` | `0x1510` | **`+0x10`** |
+
+### Other Changes
 
 ```diff
 
 -2027.0.71.0.0
--  __TEXT.__text: 0x3ddd04
 +2027.0.74.0.0
-+  __TEXT.__text: 0x3de6bc
-   __TEXT.__objc_methlist: 0x2f4
--  __TEXT.__const: 0x36f20
--  __TEXT.__cstring: 0x3d602
-+  __TEXT.__const: 0x36f50
-+  __TEXT.__cstring: 0x3e822
-   __TEXT.__swift5_typeref: 0xb627
--  __TEXT.__swift5_reflstr: 0xb45e
-+  __TEXT.__swift5_reflstr: 0xb4be
-   __TEXT.__swift5_assocty: 0x3498
-   __TEXT.__constg_swiftt: 0x940c
--  __TEXT.__swift5_fieldmd: 0xb4f4
-+  __TEXT.__swift5_fieldmd: 0xb50c
-   __TEXT.__swift5_builtin: 0x168
-   __TEXT.__swift5_proto: 0x2f30
-   __TEXT.__swift5_types: 0xd04
 
-   __TEXT.__swift_as_cont: 0x758
-   __TEXT.__swift5_protos: 0xe0
-   __TEXT.__swift5_mpenum: 0x40
--  __TEXT.__unwind_info: 0x10548
--  __TEXT.__eh_frame: 0x20894
-+  __TEXT.__unwind_info: 0x10568
-+  __TEXT.__eh_frame: 0x208c4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1500
-+  __DATA_CONST.__const: 0x1510
-   __DATA_CONST.__objc_classlist: 0xa8
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
-
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__objc_superrefs: 0x10
-   __DATA_CONST.__got: 0x8f8
--  __AUTH_CONST.__const: 0x1a2c8
-+  __AUTH_CONST.__const: 0x1a288
-   __AUTH_CONST.__objc_const: 0x1720
-   __AUTH_CONST.__auth_got: 0x1578
-   __AUTH.__objc_data: 0x510
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 23062
 +  Functions: 23074
-   Symbols:   5094
+
 -  CStrings:  1153
 +  CStrings:  1154
- 
 Symbols:
 + ___swift_get_extra_inhabitant_index.150Tm
 + ___swift_get_extra_inhabitant_index.177Tm

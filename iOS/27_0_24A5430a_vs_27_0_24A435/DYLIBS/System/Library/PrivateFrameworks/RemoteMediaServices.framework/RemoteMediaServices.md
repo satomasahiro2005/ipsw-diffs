@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/RemoteMediaServices.framework/RemoteMediaServices`
 
-```diff
+### Section Size Changes
 
- 2024.100.6.0.0
--  __TEXT.__text: 0x8aed4
-+  __TEXT.__text: 0x8aed0
-   __TEXT.__objc_methlist: 0x4e58
-   __TEXT.__const: 0x19b00
-   __TEXT.__gcc_except_tab: 0x404
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8aed4` | `0x8aed0` | **`-0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[RMSDAAPParser enumerateDAAPChunksInBytes:length:usingBlock:] : 120 -> 116
 ```

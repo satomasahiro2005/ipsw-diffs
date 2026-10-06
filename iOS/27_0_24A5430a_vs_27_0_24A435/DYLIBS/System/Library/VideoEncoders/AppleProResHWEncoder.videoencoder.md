@@ -2,25 +2,19 @@
 
 > `/System/Library/VideoEncoders/AppleProResHWEncoder.videoencoder`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x203c4` | `0x204b0` | **`+0xec`** |
+| `__TEXT.__cstring` | `0x1491` | `0x14ac` | **`+0x1b`** |
+
+### Other Changes
+
 ```diff
 
- 600.53.0.0.0
--  __TEXT.__text: 0x203c4
-+  __TEXT.__text: 0x204b0
-   __TEXT.__const: 0x746f0
-   __TEXT.__gcc_except_tab: 0x310
--  __TEXT.__cstring: 0x1491
-+  __TEXT.__cstring: 0x14ac
-   __TEXT.__oslogstring: 0x4140
-   __TEXT.__unwind_info: 0x440
-   __TEXT.__auth_stubs: 0x0
-
-   - /usr/lib/libc++.1.dylib
-   Functions: 496
-   Symbols:   593
 -  CStrings:  414
 +  CStrings:  417
- 
 Functions:
 ~ __Z26interchange_compress_planePKvPhS1_jjjbj : 1440 -> 1456
 ~ __Z28interchange_decompress_planePKhS0_Pvjjjbj : 1512 -> 1516

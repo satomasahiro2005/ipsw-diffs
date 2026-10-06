@@ -2,82 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/IntelligencePlatformLibrary.framework/IntelligencePlatformLibrary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x72fc6c` | `0x73218c` | **`+0x2520`** |
+| `__AUTH.__objc_data` | `0xb428` | `0xad48` | **`-0x6e0`** |
+| `__DATA_DIRTY.__objc_data` | `0xc30` | `0x1310` | **`+0x6e0`** |
+| `__DATA.__bss` | `0x719a0` | `0x71ea0` | **`+0x500`** |
+| `__AUTH_CONST.__const` | `0x41880` | `0x41b50` | **`+0x2d0`** |
+| `__TEXT.__cstring` | `0x7a842` | `0x7aa7e` | **`+0x23c`** |
+| `__TEXT.__eh_frame` | `0x21dac` | `0x21fcc` | **`+0x220`** |
+| `__TEXT.__const` | `0x5ccb0` | `0x5ce90` | **`+0x1e0`** |
+| `__TEXT.__unwind_info` | `0x1f1a0` | `0x1f298` | **`+0xf8`** |
+| `__DATA_DIRTY.__data` | `0x5f20` | `0x5fe8` | **`+0xc8`** |
+| `__TEXT.__constg_swiftt` | `0xa2f4` | `0xa380` | **`+0x8c`** |
+| `__DATA_DIRTY.__bss` | `0xa6b0` | `0xa730` | **`+0x80`** |
+| `__TEXT.__swift5_assocty` | `0x4520` | `0x4580` | **`+0x60`** |
+| `__DATA.__data` | `0xb0d0` | `0xb120` | **`+0x50`** |
+| `__TEXT.__swift5_fieldmd` | `0x175e4` | `0x17634` | **`+0x50`** |
+| `__TEXT.__swift5_typeref` | `0xaa84` | `0xaac2` | **`+0x3e`** |
+| `__TEXT.__swift5_reflstr` | `0x16052` | `0x1607a` | **`+0x28`** |
+| `__TEXT.__swift5_proto` | `0x6748` | `0x6768` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x14c4` | `0x14d8` | **`+0x14`** |
+| `__AUTH.__data` | `0x3be0` | `0x3bd8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -441.22.0.1.0
--  __TEXT.__text: 0x7130f0
 +441.25.0.0.0
-+  __TEXT.__text: 0x7155e4
-   __TEXT.__objc_methlist: 0x24ccc
--  __TEXT.__const: 0x5ccb0
--  __TEXT.__constg_swiftt: 0xa2f4
--  __TEXT.__swift5_typeref: 0xaa84
--  __TEXT.__swift5_fieldmd: 0x175e4
--  __TEXT.__swift5_types: 0x14c4
--  __TEXT.__swift5_reflstr: 0x16052
--  __TEXT.__swift5_assocty: 0x4520
-+  __TEXT.__const: 0x5ce90
-+  __TEXT.__constg_swiftt: 0xa380
-+  __TEXT.__swift5_typeref: 0xaac2
-+  __TEXT.__swift5_fieldmd: 0x17634
-+  __TEXT.__swift5_types: 0x14d8
-+  __TEXT.__swift5_reflstr: 0x1607a
-+  __TEXT.__swift5_assocty: 0x4580
-   __TEXT.__oslogstring: 0x1f4
-   __TEXT.__swift5_capture: 0x38d0
--  __TEXT.__swift5_proto: 0x6748
-+  __TEXT.__swift5_proto: 0x6768
-   __TEXT.__swift5_protos: 0x40
--  __TEXT.__cstring: 0x7a842
-+  __TEXT.__cstring: 0x7aa7e
-   __TEXT.__swift5_builtin: 0x640
-   __TEXT.__swift5_mpenum: 0x608
-   __TEXT.__gcc_except_tab: 0x3c
--  __TEXT.__unwind_info: 0x28838
--  __TEXT.__eh_frame: 0x21ddc
-+  __TEXT.__unwind_info: 0x28960
-+  __TEXT.__eh_frame: 0x21ffc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x88
-   __DATA_CONST.__got: 0x1738
--  __AUTH_CONST.__const: 0x41880
-+  __AUTH_CONST.__const: 0x41b50
-   __AUTH_CONST.__cfstring: 0x251e0
-   __AUTH_CONST.__objc_const: 0x3db18
-   __AUTH_CONST.__objc_intobj: 0x60
-   __AUTH_CONST.__auth_got: 0xe28
--  __AUTH.__objc_data: 0xb428
--  __AUTH.__data: 0x3be0
-+  __AUTH.__objc_data: 0xad48
-+  __AUTH.__data: 0x3bd8
-   __DATA.__objc_ivar: 0x30fc
--  __DATA.__data: 0xb0d0
-+  __DATA.__data: 0xb120
-   __DATA.__common: 0x6758
--  __DATA_DIRTY.__objc_data: 0xc30
--  __DATA_DIRTY.__data: 0x5f20
--  __DATA_DIRTY.__bss: 0xa6b0
-+  __DATA_DIRTY.__objc_data: 0x1310
-+  __DATA_DIRTY.__data: 0x5fe8
-+  __DATA_DIRTY.__bss: 0xa730
-   __DATA_DIRTY.__common: 0x18
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
--  Functions: 62137
--  Symbols:   29201
+-  Functions: 62139
+-  Symbols:   26730
 -  CStrings:  10985
-+  Functions: 62258
-+  Symbols:   29210
++  Functions: 62260
++  Symbols:   26739
 +  CStrings:  10997
- 
 Symbols:
 + _associated conformance 27IntelligencePlatformLibrary0C0O7StreamsO6UnilogO13SafariFeatureO11AggregationOAA14StreamResourceAA9EventTypeAaLP_AA0I4Data
 + _associated conformance 27IntelligencePlatformLibrary0C0O7StreamsO6UnilogO13SafariFeatureO21LongTermAggregationIdOAA14StreamResourceAA9EventTypeAaLP_AA0L4Data

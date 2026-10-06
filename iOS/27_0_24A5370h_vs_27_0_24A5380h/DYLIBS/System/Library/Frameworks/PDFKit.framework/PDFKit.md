@@ -2,86 +2,31 @@
 
 > `/System/Library/Frameworks/PDFKit.framework/PDFKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x7694` | `0x72b4` | **`-0x3e0`** |
+| `__TEXT.__text` | `0xbd068` | `0xbcd68` | **`-0x300`** |
+| `__DATA_CONST.__got` | `0xa90` | `0xb10` | **`+0x80`** |
+| `__AUTH.__objc_data` | `0x25d0` | `0x2580` | **`-0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x230` | `0x280` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x70f8` | `0x70e8` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1798` | `0x1790` | **`-0x8`** |
+| `__TEXT.__objc_methlist` | `0xb01c` | `0xb014` | **`-0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x6464` | `0x6468` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xbd068
--  __TEXT.__objc_methlist: 0xb01c
-+  __TEXT.__text: 0xbcd68
-+  __TEXT.__objc_methlist: 0xb014
-   __TEXT.__const: 0x964
--  __TEXT.__cstring: 0x7694
--  __TEXT.__gcc_except_tab: 0x6464
-+  __TEXT.__cstring: 0x72b4
-+  __TEXT.__gcc_except_tab: 0x6468
-   __TEXT.__dlopen_cstrs: 0x201
-   __TEXT.__ustring: 0xb4
-   __TEXT.__oslogstring: 0x1a
+-1530.0.0.0.0
++1532.0.0.0.0
 
-   __DATA_CONST.__objc_protolist: 0x198
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x70f8
-+  __DATA_CONST.__objc_selrefs: 0x70e8
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x2b0
-   __DATA_CONST.__objc_arraydata: 0xe8
--  __DATA_CONST.__got: 0xa90
-+  __DATA_CONST.__got: 0xb10
-   __AUTH_CONST.__const: 0x9d8
-   __AUTH_CONST.__cfstring: 0x7680
-   __AUTH_CONST.__objc_const: 0xf0d0
-
-   __AUTH_CONST.__objc_intobj: 0x2e8
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_doubleobj: 0xe0
--  __AUTH_CONST.__auth_got: 0x1798
--  __AUTH.__objc_data: 0x25d0
-+  __AUTH_CONST.__auth_got: 0x1790
-+  __AUTH.__objc_data: 0x2580
-   __AUTH.__data: 0x98
-   __DATA.__objc_ivar: 0xc78
-   __DATA.__data: 0x13c8
-   __DATA.__bss: 0x870
--  __DATA_DIRTY.__objc_data: 0x230
-+  __DATA_DIRTY.__objc_data: 0x280
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreText.framework/CoreText
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 3748
--  Symbols:   14288
--  CStrings:  2178
-+  Symbols:   14287
-+  CStrings:  2175
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__objc_ivar : content changed
-~ __DATA.__data : content changed
+-  Symbols:   7399
+-  CStrings:  1273
++  Symbols:   7397
++  CStrings:  1270
 Symbols:
 + GCC_except_table144
 + GCC_except_table326
@@ -209,5 +154,4 @@ CStrings:
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__utility/is_pointer_in_range.h:38: libc++ Hardening assertion std::__is_valid_range(__begin, __end) failed: [__begin, __end) is not a valid range\n"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:1171: libc++ Hardening assertion __first <= __last failed: vector::erase(first, last) called with invalid range\n"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:414: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
-
 ```

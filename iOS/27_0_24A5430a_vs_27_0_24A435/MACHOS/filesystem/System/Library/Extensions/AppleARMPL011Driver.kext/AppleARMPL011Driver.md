@@ -2,22 +2,22 @@
 
 > `/System/Library/Extensions/AppleARMPL011Driver.kext/AppleARMPL011Driver`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0xa20` | `0xa54` | **`+0x34`** |
+
+### Same-size Content Changes
 
 - `__DATA.__data`
+- `__DATA_CONST.__const`
 - `__DATA_CONST.__mod_init_func`
 - `__DATA_CONST.__mod_term_func`
-- `__DATA_CONST.__const`
 
-```diff
+### Other Changes
 
- 1.0.0.0.0
-   __TEXT.__cstring: 0x48
--  __TEXT_EXEC.__text: 0xa20
-+  __TEXT_EXEC.__text: 0xa54
-   __TEXT_EXEC.__auth_stubs: 0xc0
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x38
+```text
 Functions:
 ~ __ZN19AppleARMPL011Driver9MetaClassC1Ev : 72 -> 76
 ~ __ZN19AppleARMPL011DriverC2EPK11OSMetaClass : 56 -> 60

@@ -2,21 +2,24 @@
 
 > `/System/Library/PrivateFrameworks/BusinessServicesUI.framework/BusinessServicesUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcd70` | `0xcd90` | **`+0x20`** |
+
+### Other Changes
+
 ```diff
 
 -30123.30.6.2.1
--  __TEXT.__text: 0xc890
 +30123.31.8.11.3
-+  __TEXT.__text: 0xc8b0
-   __TEXT.__objc_methlist: 0x308
-   __TEXT.__const: 0xc70
-   __TEXT.__constg_swiftt: 0x384
 Functions:
-~ sub_253f8a1d0 -> sub_25797c1d0 : 1060 -> 1092
-~ sub_253f8e160 -> sub_257980180 : 64 -> 128
-~ sub_253f8e1a0 -> sub_257980200 : 52 -> 64
-~ sub_253f8e1d4 -> sub_257980240 : 36 -> 52
-~ sub_253f8e1f8 -> sub_257980274 : 608 -> 36
-~ sub_253f8e458 -> sub_257980298 : 96 -> 608
-~ sub_253f8e4b8 -> sub_2579804f8 : 128 -> 96
+~ sub_25686d414 -> sub_25a812414 : 1060 -> 1092
+~ sub_256871484 -> sub_25a8164a4 : 64 -> 128
+~ sub_2568714c4 -> sub_25a816524 : 52 -> 64
+~ sub_2568714f8 -> sub_25a816564 : 36 -> 52
+~ sub_25687151c -> sub_25a816598 : 648 -> 36
+~ sub_2568717a4 -> sub_25a8165bc : 96 -> 648
+~ sub_256871804 -> sub_25a816844 : 128 -> 96
 ```

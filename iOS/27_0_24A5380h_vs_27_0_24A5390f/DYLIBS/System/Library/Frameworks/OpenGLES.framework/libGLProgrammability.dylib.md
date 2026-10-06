@@ -2,14 +2,11 @@
 
 > `/System/Library/Frameworks/OpenGLES.framework/libGLProgrammability.dylib`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
-- `__DATA_CONST.__const`
-- `__AUTH_CONST.__const`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__data`
+
+### Other Changes
 
 ```diff
 CStrings:

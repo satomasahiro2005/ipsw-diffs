@@ -2,99 +2,46 @@
 
 > `/System/Library/Frameworks/Photos.framework/Photos`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2d9bd0` | `0x2dbfe0` | **`+0x2410`** |
+| `__AUTH_CONST.__objc_const` | `0x420c0` | `0x42310` | **`+0x250`** |
+| `__TEXT.__objc_methlist` | `0x26b3c` | `0x26d04` | **`+0x1c8`** |
+| `__TEXT.__oslogstring` | `0x23415` | `0x23567` | **`+0x152`** |
+| `__TEXT.__gcc_except_tab` | `0x95bc` | `0x96a8` | **`+0xec`** |
+| `__TEXT.__cstring` | `0x3270e` | `0x327f6` | **`+0xe8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x14620` | `0x146f0` | **`+0xd0`** |
+| `__AUTH_CONST.__cfstring` | `0x2d5c0` | `0x2d660` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x8f40` | `0x8fb8` | **`+0x78`** |
+| `__TEXT.__unwind_info` | `0x9668` | `0x96e0` | **`+0x78`** |
+| `__DATA.__data` | `0x2b68` | `0x2bc8` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0x7d98` | `0x7de8` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x2990` | `0x29c8` | **`+0x38`** |
+| `__AUTH_CONST.__objc_dictobj` | `0xc8` | `0xf0` | **`+0x28`** |
+| `__DATA_CONST.__objc_arraydata` | `0x900` | `0x920` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x18b8` | `0x18c8` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x35f0` | `0x35fc` | **`+0xc`** |
+| `__DATA_CONST.__objc_catlist` | `0x68` | `0x70` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0xf28` | `0xf30` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x2f8` | `0x300` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -910.33.102.0.0
--  __TEXT.__text: 0x2d9bd0
--  __TEXT.__objc_methlist: 0x26b3c
 +912.0.111.0.0
-+  __TEXT.__text: 0x2dbfe0
-+  __TEXT.__objc_methlist: 0x26d04
-   __TEXT.__const: 0x1778
-   __TEXT.__dlopen_cstrs: 0x280
-   __TEXT.__constg_swiftt: 0x544
 
-   __TEXT.__swift5_proto: 0x4c
-   __TEXT.__swift5_types: 0x34
-   __TEXT.__swift5_capture: 0x198
--  __TEXT.__cstring: 0x3270e
-+  __TEXT.__cstring: 0x327f6
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0x18
--  __TEXT.__oslogstring: 0x23415
-+  __TEXT.__oslogstring: 0x23567
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__gcc_except_tab: 0x95bc
-+  __TEXT.__gcc_except_tab: 0x96a8
-   __TEXT.__ustring: 0x1e
--  __TEXT.__unwind_info: 0x9668
-+  __TEXT.__unwind_info: 0x96e0
-   __TEXT.__eh_frame: 0x4a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x8f40
--  __DATA_CONST.__objc_classlist: 0xf28
--  __DATA_CONST.__objc_catlist: 0x68
--  __DATA_CONST.__objc_protolist: 0x2f8
-+  __DATA_CONST.__const: 0x8fb8
-+  __DATA_CONST.__objc_classlist: 0xf30
-+  __DATA_CONST.__objc_catlist: 0x70
-+  __DATA_CONST.__objc_protolist: 0x300
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x14620
-+  __DATA_CONST.__objc_selrefs: 0x146f0
-   __DATA_CONST.__objc_protorefs: 0x40
-   __DATA_CONST.__objc_superrefs: 0xc60
--  __DATA_CONST.__objc_arraydata: 0x900
--  __DATA_CONST.__got: 0x2990
-+  __DATA_CONST.__objc_arraydata: 0x920
-+  __DATA_CONST.__got: 0x29c8
-   __AUTH_CONST.__const: 0x46d8
--  __AUTH_CONST.__cfstring: 0x2d5c0
--  __AUTH_CONST.__objc_const: 0x420c0
-+  __AUTH_CONST.__cfstring: 0x2d660
-+  __AUTH_CONST.__objc_const: 0x42310
-   __AUTH_CONST.__objc_intobj: 0x23e8
-   __AUTH_CONST.__objc_arrayobj: 0x798
-   __AUTH_CONST.__objc_doubleobj: 0x130
--  __AUTH_CONST.__objc_dictobj: 0xc8
-+  __AUTH_CONST.__objc_dictobj: 0xf0
-   __AUTH_CONST.__objc_floatobj: 0x10
--  __AUTH_CONST.__auth_got: 0x18b8
--  __AUTH.__objc_data: 0x7d98
-+  __AUTH_CONST.__auth_got: 0x18c8
-+  __AUTH.__objc_data: 0x7de8
-   __AUTH.__data: 0x180
--  __DATA.__objc_ivar: 0x35f0
--  __DATA.__data: 0x2b68
-+  __DATA.__objc_ivar: 0x35fc
-+  __DATA.__data: 0x2bc8
-   __DATA.__crash_info: 0x148
-   __DATA.__bss: 0x1a68
-   __DATA.__common: 0x55
-
-   - /System/Library/PrivateFrameworks/PhotosFormats.framework/PhotosFormats
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices
 +  - /System/Library/PrivateFrameworks/TCC.framework/TCC
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libarchive.2.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 14868
--  Symbols:   33959
+-  Symbols:   25878
 -  CStrings:  8854
 +  Functions: 14909
-+  Symbols:   34053
++  Symbols:   25949
 +  CStrings:  8866
- 
 Symbols:
 + +[PHAsset predicateForResourcesForOsMigrationForResourceTypes:assetIDs:includeLocalOnly:iCPLEnabled:includeFullSizeRenders:]
 + +[PHAssetResourceUploadJobOptions ph_optionsWithDictionary:]
@@ -647,36 +594,6 @@ Symbols:
 + ___block_descriptor_40_e8_32s_e33_v32?0"NSSortDescriptor"8Q16^B24ls32l8
 + ___block_descriptor_40_e8_32s_e43_v24?0"NSArray"8"PHSearchIntentQUToken"16ls32l8
 + ___block_descriptor_96_e8_32s40s48r56r64r72r80r_e56_v48?0"NSArray"8"NSArray"16"NSArray"24Q32"NSError"40ls32l8r48l8r56l8r64l8r72l8r80l8s40l8
-+ _objc_msgSend$_createUploadJobExtensionConfigurationWithOptions:error:
-+ _objc_msgSend$_deleteUploadJobExtensionConfigurationWithError:
-+ _objc_msgSend$_entitledClientSkipsUUIDValidation
-+ _objc_msgSend$_fetchVisibleAssetUUIDsForResults:inLibrary:
-+ _objc_msgSend$_filterResults:withValidAssetUUIDs:
-+ _objc_msgSend$_performIntentSearchForLibrary:searchText:searchOptions:allowedBundleIdentifiers:maximumSearchResults:allowUnattributedQuery:completion:
-+ _objc_msgSend$_sendSingleChangesRequest:onExecutionContext:withInstrumentation:reply:
-+ _objc_msgSend$_setUploadJobExtensionEnabled:options:error:
-+ _objc_msgSend$addAssetsToCPLShare:creationOptionsPerAsset:withMomentSharePreview:withBatchCommentText:outKeyAssetIdentifier:outContainsEPPAssets:outCreatedSharePostPlaceholder:skipSharePost:
-+ _objc_msgSend$addAssetsToCollectionShareByCopyingSourceAssets:creationOptionsMappedToSourceAssets:withBatchCommentText:outCreatedSharePostPlaceholder:skipSharePost:
-+ _objc_msgSend$bundleIdentifiersAllowedForSiriSearch
-+ _objc_msgSend$changeRequestForAssetResourceUploadJobConfiguration:
-+ _objc_msgSend$commitTransactionWithChangesRequest:onExecutionContext:withInstrumentation:retryCount:reply:
-+ _objc_msgSend$disableUploadJobExtensionWithError:
-+ _objc_msgSend$dispatchRetryOnQueue:block:
-+ _objc_msgSend$hiddenAppBundleIdentifiers
-+ _objc_msgSend$initWithQueue:priority:clientProvider:
-+ _objc_msgSend$leoSortDescriptorsFromSortDescriptors:
-+ _objc_msgSend$lockedAppBundleIdentifiers
-+ _objc_msgSend$osMigrationTransferableResourcePredicate
-+ _objc_msgSend$ph_dictionaryRepresentation
-+ _objc_msgSend$ph_optionsDictionary
-+ _objc_msgSend$ph_optionsWithDictionary:
-+ _objc_msgSend$ph_setOptionsDictionary:
-+ _objc_msgSend$photoKitClientForAccessLevel:
-+ _objc_msgSend$predicateForResourcesForOsMigrationForResourceTypes:assetIDs:includeLocalOnly:iCPLEnabled:includeFullSizeRenders:
-+ _objc_msgSend$preventsExpensiveNetworkAccess
-+ _objc_msgSend$searchIntentsAttributedStringFromWhoValues:whatValues:whereValues:whenValues:
-+ _objc_msgSend$setPreventsExpensiveNetworkAccess:
-+ _objc_msgSend$spotlightTextLinesFromDocumentObservation:withTextFound:
 + _sharedLazyPhotoLibraryForCMM.pl_once_object_46
 + _sharedLazyPhotoLibraryForCMM.pl_once_token_46
 - +[PHSearchQueryManager _performIntentSearchForLibrary:searchText:searchOptions:maximumSearchResults:allowUnattributedQuery:completion:]
@@ -1159,13 +1076,6 @@ Symbols:
 - ___53-[PHPhotoLibrary setUploadJobExtensionEnabled:error:]_block_invoke_2
 - ___83-[PHPhotoLibrary _sendChangesRequest:onExecutionContext:withInstrumentation:reply:]_block_invoke
 - ___block_descriptor_80_e8_32s40r48r56r64r72r_e56_v48?0"NSArray"8"NSArray"16"NSArray"24Q32"NSError"40lr40l8r48l8r56l8r64l8r72l8s32l8
-- _objc_msgSend$_clientForAccessLevel:
-- _objc_msgSend$_performIntentSearchForLibrary:searchText:searchOptions:maximumSearchResults:allowUnattributedQuery:completion:
-- _objc_msgSend$_sendChangesRequest:onExecutionContext:withInstrumentation:reply:
-- _objc_msgSend$addAssetsToCPLShare:creationOptionsPerAsset:withMomentSharePreview:withBatchCommentText:outKeyAssetIdentifier:outContainsEPPAssets:outCreatedSharePostPlaceholder:
-- _objc_msgSend$flattenLivePhotoToStillIfNeeded
-- _objc_msgSend$initWithQueue:priority:
-- _objc_msgSend$spotlightTextLinesFromDocumentObservation:
 - _sharedLazyPhotoLibraryForCMM.pl_once_object_44
 - _sharedLazyPhotoLibraryForCMM.pl_once_token_44
 CStrings:

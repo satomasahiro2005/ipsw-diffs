@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/HMFoundation.framework/HMFoundation`
 
-```diff
+### Section Size Changes
 
- 1493.1.5.1.1
--  __TEXT.__text: 0x98a74
-+  __TEXT.__text: 0x98a7c
-   __TEXT.__delay_stubs: 0x400
-   __TEXT.__delay_helper: 0x294
-   __TEXT.__objc_methlist: 0x79c4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x98a74` | `0x98a7c` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1cd658f20 -> sub_1cdc24f20 : 1504 -> 1512
 ```

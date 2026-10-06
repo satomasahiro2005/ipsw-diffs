@@ -2,66 +2,45 @@
 
 > `/usr/sbin/mDNSResponder`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10a26c` | `0x10aa28` | **`+0x7bc`** |
+| `__TEXT.__oslogstring` | `0x20ef8` | `0x210d6` | **`+0x1de`** |
+| `__TEXT.__const` | `0x14bc` | `0x14f4` | **`+0x38`** |
+| `__TEXT.__cstring` | `0x17aea` | `0x17ab8` | **`-0x32`** |
+| `__TEXT.__auth_stubs` | `0x2fb0` | `0x2fc0` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x17e8` | `0x17f0` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x16d0` | `0x16d8` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
-- `__DATA.__bss`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
 -3089.0.0.0.1
--  __TEXT.__text: 0x10a26c
--  __TEXT.__auth_stubs: 0x2fb0
 +3109.0.0.0.0
-+  __TEXT.__text: 0x10aa28
-+  __TEXT.__auth_stubs: 0x2fc0
-   __TEXT.__objc_stubs: 0x20c0
-   __TEXT.__objc_methlist: 0x694
--  __TEXT.__cstring: 0x17aea
--  __TEXT.__const: 0x14bc
-+  __TEXT.__cstring: 0x17ab8
-+  __TEXT.__const: 0x14f4
-   __TEXT.__gcc_except_tab: 0x37c
--  __TEXT.__oslogstring: 0x20ef8
-+  __TEXT.__oslogstring: 0x210d6
-   __TEXT.__objc_classname: 0x646
-   __TEXT.__objc_methname: 0x1e32
-   __TEXT.__objc_methtype: 0x64d
--  __TEXT.__unwind_info: 0x16d0
-+  __TEXT.__unwind_info: 0x16d8
-   __TEXT.__eh_frame: 0x7c
-   __DATA_CONST.__const: 0x6238
-   __DATA_CONST.__cfstring: 0x1200
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x20
-   __DATA_CONST.__objc_intobj: 0x60
--  __DATA_CONST.__auth_got: 0x17e8
-+  __DATA_CONST.__auth_got: 0x17f0
-   __DATA_CONST.__got: 0x400
-   __DATA_CONST.__auth_ptr: 0x78
-   __DATA.__objc_const: 0x4188
-
-   - /usr/lib/libnetworkextension.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libxml2.2.dylib
 -  Functions: 1869
 -  Symbols:   4149
 -  CStrings:  4774
 +  Functions: 1870
 +  Symbols:   4151
 +  CStrings:  4777
- 
 Symbols:
 + GCC_except_table1249
 + GCC_except_table1255

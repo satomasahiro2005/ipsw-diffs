@@ -2,14 +2,8 @@
 
 > `com.apple.filesystems.tmpfs`
 
-```diff
+### Section Size Changes
 
-   __TEXT.__cstring: 0x4b7
-   __TEXT.__const: 0x40
-   __TEXT.__os_log: 0x20a
--  __TEXT_EXEC.__text: 0x960c
-+  __TEXT_EXEC.__text: 0x97a0
-   __TEXT_EXEC.__auth_stubs: 0x630
-   __DATA.__data: 0x180
-   __DATA.__common: 0x420
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x960c` | `0x97a0` | **`+0x194`** |

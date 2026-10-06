@@ -2,95 +2,43 @@
 
 > `/System/Library/Frameworks/Photos.framework/Photos`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2e3c10` | `0x2e682c` | **`+0x2c1c`** |
+| `__TEXT.__cstring` | `0x33122` | `0x33883` | **`+0x761`** |
+| `__TEXT.__oslogstring` | `0x24831` | `0x24df7` | **`+0x5c6`** |
+| `__AUTH_CONST.__objc_const` | `0x42728` | `0x42c60` | **`+0x538`** |
+| `__TEXT.__objc_methlist` | `0x26f6c` | `0x27154` | **`+0x1e8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x14900` | `0x14a30` | **`+0x130`** |
+| `__AUTH.__objc_data` | `0x7e38` | `0x7f28` | **`+0xf0`** |
+| `__TEXT.__unwind_info` | `0x97e0` | `0x9868` | **`+0x88`** |
+| `__DATA_CONST.__got` | `0x2a40` | `0x2a98` | **`+0x58`** |
+| `__TEXT.__gcc_except_tab` | `0x985c` | `0x980c` | **`-0x50`** |
+| `__DATA.__objc_ivar` | `0x3638` | `0x3664` | **`+0x2c`** |
+| `__DATA_CONST.__const` | `0x90f0` | `0x9118` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x2da60` | `0x2da80` | **`+0x20`** |
+| `__DATA.__bss` | `0x1a68` | `0x1a88` | **`+0x20`** |
+| `__DATA_DIRTY.__bss` | `0x120` | `0x100` | **`-0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0xf40` | `0xf58` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0xc60` | `0xc70` | **`+0x10`** |
+| `__TEXT.__const` | `0x17e0` | `0x17f0` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1918` | `0x1920` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.235.0.0
--  __TEXT.__text: 0x2d484c
--  __TEXT.__objc_methlist: 0x26f6c
--  __TEXT.__const: 0x17e0
 +916.40.110.0.0
-+  __TEXT.__text: 0x2d73c0
-+  __TEXT.__objc_methlist: 0x27154
-+  __TEXT.__const: 0x17f0
-   __TEXT.__dlopen_cstrs: 0x280
-   __TEXT.__constg_swiftt: 0x67c
-   __TEXT.__swift5_typeref: 0x547
 
-   __TEXT.__swift5_proto: 0x4c
-   __TEXT.__swift5_types: 0x44
-   __TEXT.__swift5_capture: 0x198
--  __TEXT.__cstring: 0x33122
-+  __TEXT.__cstring: 0x33883
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0x18
--  __TEXT.__oslogstring: 0x24831
-+  __TEXT.__oslogstring: 0x24df7
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__gcc_except_tab: 0x985c
-+  __TEXT.__gcc_except_tab: 0x980c
-   __TEXT.__ustring: 0x1e
--  __TEXT.__unwind_info: 0xba18
-+  __TEXT.__unwind_info: 0xbac8
-   __TEXT.__eh_frame: 0x4d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x90f0
--  __DATA_CONST.__objc_classlist: 0xf40
-+  __DATA_CONST.__const: 0x9118
-+  __DATA_CONST.__objc_classlist: 0xf58
-   __DATA_CONST.__objc_catlist: 0x70
-   __DATA_CONST.__objc_protolist: 0x300
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x14900
-+  __DATA_CONST.__objc_selrefs: 0x14a30
-   __DATA_CONST.__objc_protorefs: 0x40
--  __DATA_CONST.__objc_superrefs: 0xc60
-+  __DATA_CONST.__objc_superrefs: 0xc70
-   __DATA_CONST.__objc_arraydata: 0x940
--  __DATA_CONST.__got: 0x2a40
-+  __DATA_CONST.__got: 0x2a98
-   __AUTH_CONST.__const: 0x4778
--  __AUTH_CONST.__cfstring: 0x2da60
--  __AUTH_CONST.__objc_const: 0x42728
-+  __AUTH_CONST.__cfstring: 0x2da80
-+  __AUTH_CONST.__objc_const: 0x42c60
-   __AUTH_CONST.__objc_intobj: 0x24f0
-   __AUTH_CONST.__objc_arrayobj: 0x7b0
-   __AUTH_CONST.__objc_doubleobj: 0x140
-   __AUTH_CONST.__objc_dictobj: 0xf0
-   __AUTH_CONST.__objc_floatobj: 0x10
--  __AUTH_CONST.__auth_got: 0x1918
--  __AUTH.__objc_data: 0x7e38
-+  __AUTH_CONST.__auth_got: 0x1920
-+  __AUTH.__objc_data: 0x7f28
-   __AUTH.__data: 0x3c0
--  __DATA.__objc_ivar: 0x3638
-+  __DATA.__objc_ivar: 0x3664
-   __DATA.__data: 0x2c18
-   __DATA.__crash_info: 0x148
-   __DATA.__common: 0x55
-   __DATA_DIRTY.__objc_data: 0x1a60
-   __DATA_DIRTY.__data: 0x148
--  __DATA_DIRTY.__bss: 0x120
-+  __DATA_DIRTY.__bss: 0x100
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15026
--  Symbols:   34248
+-  Symbols:   26084
 -  CStrings:  8957
 +  Functions: 15078
-+  Symbols:   34378
++  Symbols:   26178
 +  CStrings:  8987
- 
 Symbols:
 + +[PHAssetResource _publicMediaDerivativeResourcesFromResources:]
 + +[PHCloudFeedEntry fetchEntriesInCollectionShare:filter:earliestDate:options:]
@@ -676,50 +624,6 @@ Symbols:
 + _kPLImageWriterPreviewImageRef
 + _kPLImageWriterReplayedCameraJob
 + _kPLImageWriterVideoDestinationPath
-+ _objc_msgSend$_directUploadShareAssetAfterResourceDownloadInPhotoLibrary:
-+ _objc_msgSend$_newProgressWithReplyOnCancellation:
-+ _objc_msgSend$_publicMediaDerivativeResourcesFromResources:
-+ _objc_msgSend$_resetCPLStatus
-+ _objc_msgSend$_shouldCopyLocationDataFromSourceAsset
-+ _objc_msgSend$_shouldStashCameraJobs
-+ _objc_msgSend$_startObservingCloudPauseNotificationIfNecessary
-+ _objc_msgSend$_stashBatchCameraJobIfNeeded:
-+ _objc_msgSend$_stashCameraJobIfNeeded:
-+ _objc_msgSend$_stopObservingCloudPauseNotification
-+ _objc_msgSend$addOwnerWritePermissionIfNecessaryToFileAtPath:
-+ _objc_msgSend$cancelVisionOperationWithId:
-+ _objc_msgSend$conformsToImage
-+ _objc_msgSend$conformsToRawImage
-+ _objc_msgSend$copyJobContentsToHoldingDirectoryWithUUID:incomingPath:job:
-+ _objc_msgSend$deliverOnce:
-+ _objc_msgSend$fetchProcessedProvenanceAssetWithOriginatingAssetIdentifier:options:
-+ _objc_msgSend$forceRatingMetadataBaking
-+ _objc_msgSend$hasDelivered
-+ _objc_msgSend$initWithScopeIdentifier:identifier:
-+ _objc_msgSend$isNonRawImage
-+ _objc_msgSend$isPlaceholderAsset
-+ _objc_msgSend$lastEditedDate
-+ _objc_msgSend$predicateForPostsFromOthersCreatedAfterSubscriptionSinceDate:
-+ _objc_msgSend$queryForEntriesInCollectionShare:filter:earliestDate:options:
-+ _objc_msgSend$registerObserver:
-+ _objc_msgSend$representsNonRawImage
-+ _objc_msgSend$setCustomStarRating:
-+ _objc_msgSend$setShouldStripRating:
-+ _objc_msgSend$setShouldStripTitle:
-+ _objc_msgSend$setStarRating:
-+ _objc_msgSend$setStarRatingMetadataBehavior:withStarRating:
-+ _objc_msgSend$setTitleMetadataBehavior:withTitle:
-+ _objc_msgSend$setupPlaceholderAssetWithRequiredPropertiesFromSourceAsset:placeholderAssetUUID:bundleScope:share:importSessionID:bakeInAdjustmentsFromSourceAsset:flattenLivePhoto:copyTitleDescriptionAndKeywords:copyCameraProcessingAdjustmentResources:copyLocationData:copyProvenanceData:isCurrentUser:library:
-+ _objc_msgSend$sharePost
-+ _objc_msgSend$shouldExportTitle
-+ _objc_msgSend$shouldStripRating
-+ _objc_msgSend$shouldStripTitle
-+ _objc_msgSend$starRating
-+ _objc_msgSend$stringRepresentation
-+ _objc_msgSend$unregisterObserver:
-+ _objc_msgSend$updateCaption:
-+ _objc_msgSend$updateCommentText:
-+ _objc_msgSend$wasInvalidated
 + _sharedLazyPhotoLibraryForCMM.pl_once_object_44
 + _sharedLazyPhotoLibraryForCMM.pl_once_token_44
 + _uniqueObjectIDCache.pl_once_object_69
@@ -1214,14 +1118,6 @@ Symbols:
 - _allowedEntities.pl_once_token_75
 - _imagePickerPhotoLibrary
 - _imagePickerPhotoLibraryLock
-- _objc_msgSend$_addCloudStatusObservers:authorizationStatus:
-- _objc_msgSend$_cachedCloudStatus
-- _objc_msgSend$_removeCloudStatusObserver:
-- _objc_msgSend$_safeReply:
-- _objc_msgSend$_setCachedCloudStatus:
-- _objc_msgSend$queryForEntriesInCollectionShare:filter:options:
-- _objc_msgSend$setAttributes:ofItemAtPath:error:
-- _objc_msgSend$setupPlaceholderAssetWithRequiredPropertiesFromSourceAsset:placeholderAssetUUID:bundleScope:share:importSessionID:bakeInAdjustmentsFromSourceAsset:flattenLivePhoto:copyTitleDescriptionAndKeywords:copyCameraProcessingAdjustmentResources:copyProvenanceData:isCurrentUser:library:
 - _sharedLazyPhotoLibraryForCMM.pl_once_object_46
 - _sharedLazyPhotoLibraryForCMM.pl_once_token_46
 - _uniqueObjectIDCache.pl_once_object_73

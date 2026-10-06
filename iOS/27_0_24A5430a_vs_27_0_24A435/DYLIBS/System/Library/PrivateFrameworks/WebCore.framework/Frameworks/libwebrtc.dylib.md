@@ -2,23 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/WebCore.framework/Frameworks/libwebrtc.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xaaca98` | `0xaafae0` | **`+0x3048`** |
+| `__TEXT.__eh_frame` | `0xc38` | `0xbf0` | **`-0x48`** |
+| `__TEXT.__unwind_info` | `0x10dc8` | `0x10dc0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -625.1.29.10.28
--  __TEXT.__text: 0xaaca98
 +625.1.29.10.29
-+  __TEXT.__text: 0xaafae0
-   __TEXT.__objc_methlist: 0x14cc
-   __TEXT.__const: 0x6fef8
-   __TEXT.__cstring: 0x55fae
-   __TEXT.__gcc_except_tab: 0x1888
--  __TEXT.__unwind_info: 0x10dc8
--  __TEXT.__eh_frame: 0xc38
-+  __TEXT.__unwind_info: 0x10dc0
-+  __TEXT.__eh_frame: 0xbf0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 Functions:
 ~ __ZNSt3__16vectorItNS_9allocatorItEEE6resizeEm : 392 -> 412
 ~ __ZNSt3__16vectorIN6webrtc9IPAddressENS_9allocatorIS2_EEE24__emplace_back_slow_pathIJRKS2_EEEPS2_DpOT_ : 380 -> 384

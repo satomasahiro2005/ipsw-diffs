@@ -2,14 +2,15 @@
 
 > `/usr/lib/system/libsystem_sanitizers.dylib`
 
-```diff
+### Section Size Changes
 
- 32.0.0.0.0
--  __TEXT.__text: 0x7bb8
-+  __TEXT.__text: 0x7bc0
-   __TEXT.__const: 0x160
-   __TEXT.__cstring: 0x101a
-   __TEXT.__auth_stubs: 0x0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7bb8` | `0x7bc0` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNK4asan19GlobalsRegistryImpl12getGlobalVarEm : 104 -> 100
 ~ __ZNK10ASanShadow16regionIsPoisonedEmm : 264 -> 268

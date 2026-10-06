@@ -2,40 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/PodcastsFoundation.framework/PodcastsFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4dd4a4` | `0x4dd714` | **`+0x270`** |
+| `__TEXT.__unwind_info` | `0x123c8` | `0x123b8` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x2bd0` | `0x2bc8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 4027.110.2.0.0
--  __TEXT.__text: 0x4dd4a4
-+  __TEXT.__text: 0x4dd714
-   __TEXT.__objc_methlist: 0xb4d4
-   __TEXT.__const: 0x3c770
-   __TEXT.__cstring: 0x108cd
-
-   __TEXT.__swift_as_ret: 0x338
-   __TEXT.__swift_as_cont: 0x740
-   __TEXT.__swift5_mpenum: 0x1f4
--  __TEXT.__unwind_info: 0x123c8
-+  __TEXT.__unwind_info: 0x123b8
-   __TEXT.__eh_frame: 0x14ebc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __AUTH_CONST.__objc_arrayobj: 0xa8
-   __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__objc_doubleobj: 0x40
--  __AUTH_CONST.__auth_got: 0x2bd0
-+  __AUTH_CONST.__auth_got: 0x2bc8
-   __AUTH.__objc_data: 0x3920
-   __AUTH.__data: 0x2ff0
-   __DATA.__objc_ivar: 0x488
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 27790
--  Symbols:   14817
-+  Symbols:   14816
-   CStrings:  3712
- 
+-  Symbols:   12506
++  Symbols:   12505
 Symbols:
 - _objc_retain_x12
 Functions:

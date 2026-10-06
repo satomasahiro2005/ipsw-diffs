@@ -2,90 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/GPUToolsCapture.framework/GPUToolsCapture`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__gcc_except_tab`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__thread_bss` | `0x101010` | `0x201010` | **`+0x100000`** |
+| `__TEXT.__text` | `0x297fc0` | `0x299088` | **`+0x10c8`** |
+| `__TEXT.__cstring` | `0x308b8` | `0x309d9` | **`+0x121`** |
+| `__TEXT.__oslogstring` | `0x2418` | `0x251a` | **`+0x102`** |
+| `__DATA.__objc_const` | `0x1b5f8` | `0x1b658` | **`+0x60`** |
+| `__TEXT.__objc_methname` | `0x1baf0` | `0x1bb44` | **`+0x54`** |
+| `__DATA_CONST.__cfstring` | `0x4980` | `0x49c0` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x2198` | `0x21d8` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x4c80` | `0x4cb0` | **`+0x30`** |
+| `__DATA.__bss` | `0x4698` | `0x46b8` | **`+0x20`** |
+| `__TEXT.__objc_stubs` | `0x18640` | `0x18660` | **`+0x20`** |
+| `__TEXT.__const` | `0xa090` | `0xa0a0` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0xba4` | `0xbb0` | **`+0xc`** |
+| `__DATA.__common` | `0x75` | `0x7d` | **`+0x8`** |
+| `__DATA.__objc_selrefs` | `0x70d0` | `0x70d8` | **`+0x8`** |
+| `__DATA_CONST.__auth_ptr` | `0x48` | `0x50` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x13634` | `0x1363c` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_got`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__auth_got`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__init_offsets`
+
+### Other Changes
 
 ```diff
 
 -2027.0.37.0.0
--  __TEXT.__text: 0x290e84
 +2027.0.44.0.0
-+  __TEXT.__text: 0x291f04
-   __TEXT.__auth_stubs: 0x1920
--  __TEXT.__objc_stubs: 0x18640
-+  __TEXT.__objc_stubs: 0x18660
-   __TEXT.__init_offsets: 0x4
--  __TEXT.__objc_methlist: 0x13634
--  __TEXT.__const: 0xa090
--  __TEXT.__cstring: 0x308b8
--  __TEXT.__oslogstring: 0x2418
-+  __TEXT.__objc_methlist: 0x1363c
-+  __TEXT.__const: 0xa0a0
-+  __TEXT.__cstring: 0x309d9
-+  __TEXT.__oslogstring: 0x251a
-   __TEXT.__gcc_except_tab: 0x1634
--  __TEXT.__objc_methname: 0x1baf0
-+  __TEXT.__objc_methname: 0x1bb44
-   __TEXT.__objc_classname: 0x15da
-   __TEXT.__objc_methtype: 0xafc9
-   __TEXT.__ustring: 0x20a
--  __TEXT.__unwind_info: 0x8208
--  __DATA_CONST.__const: 0x2198
--  __DATA_CONST.__cfstring: 0x4980
-+  __TEXT.__unwind_info: 0x8240
-+  __DATA_CONST.__const: 0x21d8
-+  __DATA_CONST.__cfstring: 0x49c0
-   __DATA_CONST.__objc_classlist: 0x358
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x430
 
-   __DATA_CONST.__objc_arrayobj: 0x30
-   __DATA_CONST.__auth_got: 0xca8
-   __DATA_CONST.__got: 0x868
--  __DATA_CONST.__auth_ptr: 0x48
-+  __DATA_CONST.__auth_ptr: 0x50
-   __AUTH_CONST.__interpose: 0x50
--  __DATA.__objc_const: 0x1b5f8
--  __DATA.__objc_selrefs: 0x70d0
--  __DATA.__objc_ivar: 0xba4
-+  __DATA.__objc_const: 0x1b658
-+  __DATA.__objc_selrefs: 0x70d8
-+  __DATA.__objc_ivar: 0xbb0
-   __DATA.__objc_data: 0x2170
-   __DATA.__data: 0x3530
-   __DATA.__thread_vars: 0x48
--  __DATA.__thread_bss: 0x101010
--  __DATA.__common: 0x75
-+  __DATA.__thread_bss: 0x201010
-+  __DATA.__common: 0x7d
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 9839
 -  Symbols:   16280
 -  CStrings:  9444
 +  Functions: 9854
 +  Symbols:   16301
 +  CStrings:  9463
- 
 Symbols:
 + -[CaptureMTLIOCommandBuffer _recordBlockStartWithFunctionIndex:]
 + GCC_except_table1412

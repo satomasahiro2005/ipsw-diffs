@@ -2,44 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/WebPrivacy.framework/webprivacyd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x12b98` | `0x12cec` | **`+0x154`** |
+| `__TEXT.__gcc_except_tab` | `0x15a0` | `0x1580` | **`-0x20`** |
+| `__TEXT.__oslogstring` | `0xc42` | `0xc60` | **`+0x1e`** |
+| `__TEXT.__cstring` | `0x4e9` | `0x4dc` | **`-0xd`** |
+| `__TEXT.__const` | `0x19d` | `0x195` | **`-0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -57.0.0.0.0
--  __TEXT.__text: 0x12b98
 +58.0.0.0.0
-+  __TEXT.__text: 0x12cec
-   __TEXT.__auth_stubs: 0x970
-   __TEXT.__objc_stubs: 0x740
--  __TEXT.__const: 0x19d
--  __TEXT.__gcc_except_tab: 0x15a0
--  __TEXT.__cstring: 0x4e9
--  __TEXT.__oslogstring: 0xc42
-+  __TEXT.__const: 0x195
-+  __TEXT.__gcc_except_tab: 0x1580
-+  __TEXT.__cstring: 0x4dc
-+  __TEXT.__oslogstring: 0xc60
-   __TEXT.__objc_methname: 0x497
-   __TEXT.__unwind_info: 0x980
-   __DATA_CONST.__const: 0x920
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 456
 -  Symbols:   901
 -  CStrings:  206
 +  Functions: 462
 +  Symbols:   903
 +  CStrings:  205
- 
 Symbols:
 + GCC_except_table104
 + GCC_except_table108

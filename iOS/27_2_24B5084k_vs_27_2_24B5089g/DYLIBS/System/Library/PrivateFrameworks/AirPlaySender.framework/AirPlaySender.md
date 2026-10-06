@@ -2,58 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/AirPlaySender.framework/AirPlaySender`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2463d4` | `0x246784` | **`+0x3b0`** |
+| `__TEXT.__cstring` | `0x8f88f` | `0x8f9e4` | **`+0x155`** |
+| `__DATA.__data` | `0x18690` | `0x18620` | **`-0x70`** |
+| `__DATA_DIRTY.__data` | `0xf78` | `0xfe8` | **`+0x70`** |
+| `__TEXT.__const` | `0x61f0` | `0x6190` | **`-0x60`** |
+| `__AUTH_CONST.__const` | `0x7780` | `0x77b0` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x58f0` | `0x5908` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
 -1005.7.1.0.0
--  __TEXT.__text: 0x239660
 +1005.8.1.0.0
-+  __TEXT.__text: 0x2399f0
-   __TEXT.__objc_methlist: 0x7ec
--  __TEXT.__cstring: 0x8f88f
--  __TEXT.__const: 0x61f0
-+  __TEXT.__cstring: 0x8f9e4
-+  __TEXT.__const: 0x6190
-   __TEXT.__gcc_except_tab: 0xaa4
-   __TEXT.__dlopen_cstrs: 0x61a
-   __TEXT.__oslogstring: 0x1009
--  __TEXT.__unwind_info: 0x9220
-+  __TEXT.__unwind_info: 0x9230
-   __TEXT.__eh_frame: 0x48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_superrefs: 0x38
-   __DATA_CONST.__objc_arraydata: 0x170
-   __DATA_CONST.__got: 0x23b0
--  __AUTH_CONST.__const: 0x7780
-+  __AUTH_CONST.__const: 0x77b0
-   __AUTH_CONST.__cfstring: 0x149e0
-   __AUTH_CONST.__objc_const: 0xed0
-   __AUTH_CONST.__objc_dictobj: 0x1b8
-
-   __AUTH.__objc_data: 0x190
-   __AUTH.__data: 0x878
-   __DATA.__objc_ivar: 0x88
--  __DATA.__data: 0x18690
-+  __DATA.__data: 0x18620
-   __DATA.__common: 0xa04
-   __DATA_DIRTY.__objc_data: 0xa0
--  __DATA_DIRTY.__data: 0xf78
-+  __DATA_DIRTY.__data: 0xfe8
-   __DATA_DIRTY.__bss: 0x788
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CoreAudio.framework/CoreAudio
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
--  Functions: 11452
--  Symbols:   8952
+-  Functions: 11457
+-  Symbols:   8671
 -  CStrings:  11654
-+  Functions: 11460
-+  Symbols:   8958
++  Functions: 11465
++  Symbols:   8677
 +  CStrings:  11659
- 
 Symbols:
 + GCC_except_table128
 + GCC_except_table50

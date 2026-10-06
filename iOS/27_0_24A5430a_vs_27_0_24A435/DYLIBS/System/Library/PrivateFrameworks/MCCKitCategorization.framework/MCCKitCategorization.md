@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MCCKitCategorization.framework/MCCKitCategorization`
 
-```diff
+### Section Size Changes
 
- 2027.0.5.0.0
--  __TEXT.__text: 0x57548
-+  __TEXT.__text: 0x57574
-   __TEXT.__const: 0x3140
-   __TEXT.__cstring: 0x187b
-   __TEXT.__swift5_typeref: 0x98a
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x57548` | `0x57574` | **`+0x2c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$ss17_NativeDictionaryV4copyyyFSS_SiTg5 : 352 -> 356
 ~ _$ss17_NativeDictionaryV4copyyyFSS_SdTg5 : 352 -> 356

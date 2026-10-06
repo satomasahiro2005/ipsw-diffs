@@ -2,80 +2,30 @@
 
 > `/usr/lib/swift/libswiftAVFoundation.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__data` | `0xb68` | `0xfe0` | **`+0x478`** |
+| `__DATA.__bss` | `0x2c68` | `0x28e8` | **`-0x380`** |
+| `__DATA_DIRTY.__bss` | `0x100` | `0x480` | **`+0x380`** |
+| `__AUTH.__data` | `0x780` | `0x4b0` | **`-0x2d0`** |
+| `__DATA.__data` | `0x11d0` | `0x1020` | **`-0x1b0`** |
+| `__TEXT.__text` | `0x3f150` | `0x3f2a0` | **`+0x150`** |
+| `__AUTH.__objc_data` | `0x50` | `—` | **`-0x50`** |
+| `__DATA_DIRTY.__objc_data` | `—` | `0x50` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x1340` | `0x1338` | **`-0x8`** |
+| `__TEXT.__swift5_capture` | `0x3e8` | `0x3ec` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x3f150
-+  __TEXT.__text: 0x3f2a0
-   __TEXT.__objc_methlist: 0x27c
-   __TEXT.__const: 0x39a4
-   __TEXT.__swift5_typeref: 0x18a2
+-2450.63.2.0.0
++2450.67.3.0.0
 
-   __TEXT.__swift5_builtin: 0x258
-   __TEXT.__swift5_proto: 0x17c
-   __TEXT.__swift5_types: 0x17c
--  __TEXT.__swift5_capture: 0x3e8
-+  __TEXT.__swift5_capture: 0x3ec
-   __TEXT.__cstring: 0xa5d
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift_as_entry: 0x128
-   __TEXT.__swift_as_ret: 0x124
-   __TEXT.__swift_as_cont: 0x184
-   __TEXT.__swift5_mpenum: 0x30
--  __TEXT.__unwind_info: 0x1340
-+  __TEXT.__unwind_info: 0x1338
-   __TEXT.__eh_frame: 0x24e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __AUTH_CONST.__const: 0x2e10
-   __AUTH_CONST.__objc_const: 0x2368
-   __AUTH_CONST.__auth_got: 0x9b8
--  __AUTH.__objc_data: 0x50
--  __AUTH.__data: 0x780
--  __DATA.__data: 0x11d0
--  __DATA.__bss: 0x2c68
-+  __AUTH.__data: 0x4b0
-+  __DATA.__data: 0x1020
-+  __DATA.__bss: 0x28e8
-   __DATA.__common: 0x9
--  __DATA_DIRTY.__data: 0xb68
--  __DATA_DIRTY.__bss: 0x100
-+  __DATA_DIRTY.__objc_data: 0x50
-+  __DATA_DIRTY.__data: 0xfe0
-+  __DATA_DIRTY.__bss: 0x480
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 1796
--  Symbols:   6381
-+  Symbols:   6384
-   CStrings:  64
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
+-  Symbols:   4452
++  Symbols:   4454
 Symbols:
 + _$sSo27AVSampleBufferVideoRendererC12AVFoundationE8ReceiverC13EnqueueResultO027cancelledDueToFlushRequiredK6ResumeyAGs5Error_pcAGmFWC
 + _$sSo27AVSampleBufferVideoRendererC12AVFoundationE8ReceiverC14RenderingEventO29requiresFlushToResumeDecodingyAGs5Error_pcAGmFWC
@@ -99,5 +49,4 @@ Symbols:
 - _get_type_metadata s8SendableRzl15Synchronization5MutexVyxG noncopyable
 - _swift_runtimeSupportsNoncopyableTypes
 - _symbolic ______pSg s5ErrorP
-
 ```

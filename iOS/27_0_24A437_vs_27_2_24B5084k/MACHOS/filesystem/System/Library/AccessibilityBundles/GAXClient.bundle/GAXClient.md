@@ -2,71 +2,45 @@
 
 > `/System/Library/AccessibilityBundles/GAXClient.bundle/GAXClient`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__gcc_except_tab`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa284` | `0xa7a0` | **`+0x51c`** |
+| `__TEXT.__cstring` | `0x2aa6` | `0x2c51` | **`+0x1ab`** |
+| `__DATA_CONST.__cfstring` | `0x2a00` | `0x2b40` | **`+0x140`** |
+| `__DATA.__objc_const` | `0x2248` | `0x2368` | **`+0x120`** |
+| `__DATA.__objc_data` | `0x11d0` | `0x1270` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0xcd0` | `0xd40` | **`+0x70`** |
+| `__TEXT.__objc_methname` | `0x1c7f` | `0x1ce0` | **`+0x61`** |
+| `__TEXT.__objc_classname` | `0x897` | `0x8ef` | **`+0x58`** |
+| `__TEXT.__objc_methlist` | `0xa4c` | `0xa8c` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x398` | `0x3b8` | **`+0x20`** |
+| `__TEXT.__objc_methtype` | `0x3b6` | `0x3c8` | **`+0x12`** |
+| `__DATA.__objc_selrefs` | `0x868` | `0x878` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x1c8` | `0x1d8` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0xc0` | `0xc8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_catlist`
 - `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__got`
+- `__TEXT.__gcc_except_tab`
+
+### Other Changes
 
 ```diff
 
 -1064.0.0.0.0
--  __TEXT.__text: 0x9fc0
 +1067.3.0.0.0
-+  __TEXT.__text: 0xa4b8
-   __TEXT.__auth_stubs: 0x640
-   __TEXT.__objc_stubs: 0x19e0
--  __TEXT.__objc_methlist: 0xa4c
-+  __TEXT.__objc_methlist: 0xa8c
-   __TEXT.__const: 0x80
-   __TEXT.__gcc_except_tab: 0xa0
-   __TEXT.__oslogstring: 0xb20
--  __TEXT.__cstring: 0x2aa6
--  __TEXT.__objc_methname: 0x1c7f
--  __TEXT.__objc_classname: 0x897
--  __TEXT.__objc_methtype: 0x3b6
--  __TEXT.__unwind_info: 0x3f0
--  __DATA_CONST.__const: 0xcd0
--  __DATA_CONST.__cfstring: 0x2a00
--  __DATA_CONST.__objc_classlist: 0x1c8
-+  __TEXT.__cstring: 0x2c51
-+  __TEXT.__objc_methname: 0x1ce0
-+  __TEXT.__objc_classname: 0x8ef
-+  __TEXT.__objc_methtype: 0x3c8
-+  __TEXT.__unwind_info: 0x410
-+  __DATA_CONST.__const: 0xd40
-+  __DATA_CONST.__cfstring: 0x2b40
-+  __DATA_CONST.__objc_classlist: 0x1d8
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_superrefs: 0xc0
-+  __DATA_CONST.__objc_superrefs: 0xc8
-   __DATA_CONST.__objc_intobj: 0xc0
-   __DATA_CONST.__objc_doubleobj: 0x10
-   __DATA_CONST.__auth_got: 0x330
-   __DATA_CONST.__got: 0x210
--  __DATA.__objc_const: 0x2248
--  __DATA.__objc_selrefs: 0x868
-+  __DATA.__objc_const: 0x2368
-+  __DATA.__objc_selrefs: 0x878
-   __DATA.__objc_ivar: 0x20
--  __DATA.__objc_data: 0x11d0
-+  __DATA.__objc_data: 0x1270
-   __DATA.__data: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 253
 -  Symbols:   468
 -  CStrings:  761
 +  Functions: 262
 +  Symbols:   476
 +  CStrings:  775
- 
 Symbols:
 + _GAXIPCPayloadKeyHostedApplicationCornerRadii
 + _GAXProfileOverridesFromConfigurationDictionary

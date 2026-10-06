@@ -2,94 +2,61 @@
 
 > `/System/Library/FlowTools/Tools/SiriMailFlowTools.flowtool/SiriMailFlowTools`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_protos`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x49f58` | `0x4b4e0` | **`+0x1588`** |
+| `__TEXT.__objc_methname` | `0x411` | `0x62a` | **`+0x219`** |
+| `__DATA.__data` | `0xa90` | `0xc88` | **`+0x1f8`** |
+| `__DATA.__objc_const` | `0xad8` | `0xc38` | **`+0x160`** |
+| `__TEXT.__objc_methlist` | `—` | `0x154` | **`+0x154`** |
+| `__TEXT.__objc_methtype` | `0x1` | `0x101` | **`+0x100`** |
+| `__DATA.__objc_selrefs` | `0x118` | `0x200` | **`+0xe8`** |
+| `__TEXT.__oslogstring` | `0x13da` | `0x14aa` | **`+0xd0`** |
+| `__TEXT.__objc_stubs` | `0x460` | `0x500` | **`+0xa0`** |
+| `__TEXT.__auth_stubs` | `0x1480` | `0x1500` | **`+0x80`** |
+| `__TEXT.__eh_frame` | `0x3d98` | `0x3e00` | **`+0x68`** |
+| `__DATA_CONST.__objc_protolist` | `—` | `0x50` | **`+0x50`** |
+| `__DATA_CONST.__auth_got` | `0xa48` | `0xa88` | **`+0x40`** |
+| `__TEXT.__objc_classname` | `0xed` | `0x12d` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x1420` | `0x1450` | **`+0x30`** |
+| `__TEXT.__swift5_typeref` | `0x6b8` | `0x6e2` | **`+0x2a`** |
+| `__DATA_CONST.__got` | `0x378` | `0x3a0` | **`+0x28`** |
+| `__DATA_CONST.__objc_protorefs` | `—` | `0x28` | **`+0x28`** |
+| `__TEXT.__const` | `0x16c0` | `0x16d0` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x3c8` | `0x3d0` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x218` | `0x21c` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__const`
 - `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__auth_ptr`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_entry`
+
+### Other Changes
 
 ```diff
 
 -3600.23.14.0.0
--  __TEXT.__text: 0x49f58
--  __TEXT.__auth_stubs: 0x1480
--  __TEXT.__objc_stubs: 0x460
--  __TEXT.__const: 0x16c0
 +3600.23.24.0.0
-+  __TEXT.__text: 0x4b4e0
-+  __TEXT.__auth_stubs: 0x1500
-+  __TEXT.__objc_stubs: 0x500
-+  __TEXT.__objc_methlist: 0x154
-+  __TEXT.__const: 0x16d0
-   __TEXT.__constg_swiftt: 0x3d4
--  __TEXT.__swift5_typeref: 0x6b8
-+  __TEXT.__swift5_typeref: 0x6e2
-   __TEXT.__swift5_reflstr: 0x5c9
-   __TEXT.__swift5_fieldmd: 0x608
-   __TEXT.__swift5_assocty: 0x78
-   __TEXT.__cstring: 0x2a4
--  __TEXT.__oslogstring: 0x13da
-+  __TEXT.__oslogstring: 0x14aa
-   __TEXT.__swift5_proto: 0xb0
-   __TEXT.__swift5_types: 0x3c
-+  __TEXT.__objc_classname: 0x12d
-+  __TEXT.__objc_methname: 0x62a
-+  __TEXT.__objc_methtype: 0x101
-   __TEXT.__swift_as_entry: 0xe4
--  __TEXT.__swift_as_ret: 0x218
--  __TEXT.__swift_as_cont: 0x3c8
-+  __TEXT.__swift_as_ret: 0x21c
-+  __TEXT.__swift_as_cont: 0x3d0
-   __TEXT.__swift5_capture: 0xf0
--  __TEXT.__objc_classname: 0xed
--  __TEXT.__objc_methname: 0x411
--  __TEXT.__objc_methtype: 0x1
-   __TEXT.__swift5_protos: 0x14
--  __TEXT.__unwind_info: 0x1420
--  __TEXT.__eh_frame: 0x3d98
-+  __TEXT.__unwind_info: 0x1450
-+  __TEXT.__eh_frame: 0x3e00
-   __DATA_CONST.__const: 0xba8
-   __DATA_CONST.__objc_classlist: 0x28
-+  __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0xa48
--  __DATA_CONST.__got: 0x378
-+  __DATA_CONST.__objc_protorefs: 0x28
-+  __DATA_CONST.__auth_got: 0xa88
-+  __DATA_CONST.__got: 0x3a0
-   __DATA_CONST.__auth_ptr: 0x780
--  __DATA.__objc_const: 0xad8
--  __DATA.__objc_selrefs: 0x118
--  __DATA.__data: 0xa90
-+  __DATA.__objc_const: 0xc38
-+  __DATA.__objc_selrefs: 0x200
-+  __DATA.__data: 0xc88
-   __DATA.__bss: 0x1520
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-+  - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/Speech.framework/Speech
-   - /System/Library/Frameworks/UIKit.framework/UIKit
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/Frameworks/Contacts.framework/Contacts
+
 -  Functions: 1557
 -  Symbols:   157
 -  CStrings:  132
 +  Functions: 1575
 +  Symbols:   165
 +  CStrings:  192
- 
 Symbols:
 + _CNContactIdentifierKey
 + _OBJC_CLASS_$_CNContact

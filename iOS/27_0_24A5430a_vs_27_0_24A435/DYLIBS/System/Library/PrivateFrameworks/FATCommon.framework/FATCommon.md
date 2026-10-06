@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/FATCommon.framework/FATCommon`
 
-```diff
+### Section Size Changes
 
- 845.0.3.0.1
--  __TEXT.__text: 0x1d0b8
-+  __TEXT.__text: 0x1d0bc
-   __TEXT.__objc_methlist: 0x174c
-   __TEXT.__const: 0xa8
-   __TEXT.__cstring: 0x1a78
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1d0b8` | `0x1d0bc` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[NameCacheBucket removeEntryAtIndex:] : 120 -> 124
 ```

@@ -2,36 +2,23 @@
 
 > `/System/Library/PrivateFrameworks/iCloudSubscriptionOptimizerDaemon.framework/iCloudSubscriptionOptimizerDaemon`
 
-```diff
+### Section Size Changes
 
- 74.0.0.0.0
--  __TEXT.__text: 0x82720
-+  __TEXT.__text: 0x82734
-   __TEXT.__objc_methlist: 0x2ac
-   __TEXT.__const: 0x4c20
-   __TEXT.__cstring: 0x5c76
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__data` | `0x2420` | `0x2450` | **`+0x30`** |
+| `__AUTH.__data` | `0x4460` | `0x4438` | **`-0x28`** |
+| `__TEXT.__text` | `0x84e88` | `0x84e9c` | **`+0x14`** |
+| `__DATA.__common` | `0x238` | `0x228` | **`-0x10`** |
+| `__DATA_DIRTY.__common` | `0x10` | `0x20` | **`+0x10`** |
 
-   __AUTH_CONST.__objc_const: 0x5218
-   __AUTH_CONST.__auth_got: 0x1688
-   __AUTH.__objc_data: 0x2c8
--  __AUTH.__data: 0x4460
-+  __AUTH.__data: 0x4438
-   __DATA.__data: 0x1378
--  __DATA.__common: 0x238
-+  __DATA.__common: 0x228
-   __DATA_DIRTY.__objc_data: 0xc0
--  __DATA_DIRTY.__data: 0x2420
-+  __DATA_DIRTY.__data: 0x2450
-+  __DATA_DIRTY.__common: 0x20
-   __DATA_DIRTY.__bss: 0x100
--  __DATA_DIRTY.__common: 0x10
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreML.framework/CoreML
+### Other Changes
+
+```text
 Functions:
-~ sub_2356219d0 -> sub_2349259d0 : 108 -> 112
-~ sub_235623750 -> sub_234927754 : 264 -> 268
-~ sub_235643b64 -> sub_234947b6c : 276 -> 272
-~ sub_235659658 -> sub_23495d65c : 548 -> 552
-~ sub_235663b04 -> sub_234967b0c : 292 -> 304
+~ sub_237d4a800 -> sub_23704a800 : 108 -> 112
+~ sub_237d4c5c8 -> sub_23704c5cc : 264 -> 268
+~ sub_237d6d2f4 -> sub_23706d2fc : 276 -> 272
+~ sub_237d83210 -> sub_237083214 : 548 -> 552
+~ sub_237d8d88c -> sub_23708d894 : 292 -> 304
 ```

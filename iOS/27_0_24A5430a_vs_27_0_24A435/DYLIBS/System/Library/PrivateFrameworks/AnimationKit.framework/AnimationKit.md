@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AnimationKit.framework/AnimationKit`
 
-```diff
+### Section Size Changes
 
- 9127.0.84.1.116
--  __TEXT.__text: 0xb15bc
-+  __TEXT.__text: 0xb15dc
-   __TEXT.__objc_methlist: 0xc64
-   __TEXT.__const: 0x5b78
-   __TEXT.__constg_swiftt: 0x3a3c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb15bc` | `0xb15dc` | **`+0x20`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_19f05bb38 -> sub_19f13bb38 : 780 -> 784
 ~ sub_19f05f7ec -> sub_19f13f7f0 : 812 -> 824

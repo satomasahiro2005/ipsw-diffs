@@ -2,19 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/CloudRecommendationUI.framework/CloudRecommendationUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xaa654` | `0xaa620` | **`-0x34`** |
+
+### Other Changes
+
 ```diff
 
 -301.24.0.4.0
--  __TEXT.__text: 0xaa654
 +301.24.0.5.0
-+  __TEXT.__text: 0xaa620
-   __TEXT.__objc_methlist: 0x8b4
-   __TEXT.__const: 0x72e4
-   __TEXT.__gcc_except_tab: 0x64
 Functions:
-~ sub_2586adefc -> sub_257c86efc : 1996 -> 1984
-~ sub_2586e5f78 -> sub_257cbef6c : 2220 -> 2212
-~ sub_25874e450 -> sub_257d2743c : 796 -> 784
-~ sub_25874e8bc -> sub_257d2789c : 1476 -> 1464
-~ sub_25874f30c -> sub_257d282e0 : 1444 -> 1436
+~ sub_258564efc -> sub_257b7defc : 1996 -> 1984
+~ sub_25859cf78 -> sub_257bb5f6c : 2220 -> 2212
+~ sub_258605450 -> sub_257c1e43c : 796 -> 784
+~ sub_2586058bc -> sub_257c1e89c : 1476 -> 1464
+~ sub_25860630c -> sub_257c1f2e0 : 1444 -> 1436
 ```

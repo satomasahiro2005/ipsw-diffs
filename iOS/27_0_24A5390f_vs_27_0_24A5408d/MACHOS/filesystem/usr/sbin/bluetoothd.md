@@ -2,91 +2,62 @@
 
 > `/usr/sbin/bluetoothd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__objc_arrayobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x903818` | `0x903084` | **`-0x794`** |
+| `__TEXT.__oslogstring` | `0xc0a74` | `0xc0bca` | **`+0x156`** |
+| `__TEXT.__gcc_except_tab` | `0x70a84` | `0x70994` | **`-0xf0`** |
+| `__DATA_CONST.__const` | `0x342b8` | `0x34228` | **`-0x90`** |
+| `__TEXT.__unwind_info` | `0x26288` | `0x26228` | **`-0x60`** |
+| `__DATA_CONST.__cfstring` | `0x27800` | `0x27840` | **`+0x40`** |
+| `__TEXT.__objc_stubs` | `0x19a40` | `0x19a20` | **`-0x20`** |
+| `__TEXT.__cstring` | `0xc7e3e` | `0xc7e2b` | **`-0x13`** |
+| `__DATA.__bss` | `0x76c92` | `0x76c82` | **`-0x10`** |
+| `__TEXT.__const` | `0x25e10` | `0x25e00` | **`-0x10`** |
+| `__TEXT.__objc_methtype` | `0x5a2b` | `0x5a3b` | **`+0x10`** |
+| `__TEXT.__objc_methname` | `0x1f4be` | `0x1f4bf` | **`+0x1`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
 - `__DATA_CONST.__auth_got`
 - `__DATA_CONST.__got`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__init_offsets`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -2700.46.1.1.0
--  __TEXT.__text: 0x903818
 +2700.51.1.1.0
-+  __TEXT.__text: 0x903084
-   __TEXT.__auth_stubs: 0x5260
--  __TEXT.__objc_stubs: 0x19a40
-+  __TEXT.__objc_stubs: 0x19a20
-   __TEXT.__init_offsets: 0x6c
-   __TEXT.__objc_methlist: 0x9b64
--  __TEXT.__const: 0x25e10
--  __TEXT.__gcc_except_tab: 0x70a84
--  __TEXT.__cstring: 0xc7e3e
-+  __TEXT.__const: 0x25e00
-+  __TEXT.__gcc_except_tab: 0x70994
-+  __TEXT.__cstring: 0xc7e2b
-   __TEXT.__objc_classname: 0xa32
--  __TEXT.__objc_methname: 0x1f4be
--  __TEXT.__objc_methtype: 0x5a2b
--  __TEXT.__oslogstring: 0xc0a74
-+  __TEXT.__objc_methname: 0x1f4bf
-+  __TEXT.__objc_methtype: 0x5a3b
-+  __TEXT.__oslogstring: 0xc0bca
-   __TEXT.__swift5_typeref: 0x152
-   __TEXT.__swift5_capture: 0xd0
-   __TEXT.__constg_swiftt: 0x50
 
-   __TEXT.__swift_as_cont: 0x18
-   __TEXT.__ustring: 0x34
-   __TEXT.__dlopen_cstrs: 0xd4
--  __TEXT.__unwind_info: 0x26288
-+  __TEXT.__unwind_info: 0x26228
-   __TEXT.__eh_frame: 0x2b0
--  __DATA_CONST.__const: 0x342b8
--  __DATA_CONST.__cfstring: 0x27800
-+  __DATA_CONST.__const: 0x34228
-+  __DATA_CONST.__cfstring: 0x27840
-   __DATA_CONST.__objc_classlist: 0x2f8
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0xe8
-
-   __DATA.__objc_data: 0x1e20
-   __DATA.__data: 0x4f28
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x76c92
-+  __DATA.__bss: 0x76c82
-   __DATA.__common: 0x17c78
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 37368
 +  Functions: 37354
-   Symbols:   1801
--  CStrings:  43024
-+  CStrings:  43026
- 
+
+-  CStrings:  43025
++  CStrings:  43027
 CStrings:
++ "22:14:55"
++ "Aug  5 2026"
 + "BandSwitchManager: HRB band change for device %{public}s failed status:%d. Current band is still %d"
 + "BandSwitchManager: Ignoring the current band %d"
 + "BandSwitchManager: No Usable Band Found, Switching to ISM2.4"
@@ -115,8 +86,10 @@ CStrings:
 + "v32@0:8^{_OI_HCI_CONNECTION={?=SCI^?SsSSCBBSBCB^{_OI_HCI_CONNECTION}}(?={?={?=[6C]}CI^{_OI_HCI_CONNECTION}I^{?}^{?}^v^{_ESCO_SETUP_PARAMS}^{?}^{?}^{?}SSSSCiCCC^{_L2CAP_RECV_DATA}^{_L2CAP_RECV_DATA}I{?=iSSSS}BBBBBBBBB{?=is}BB^vBBBCB[4C][8C]IIIBB{?=[8C]}{?=[8C]}SCCBIICCBC{?=ICCCCSS}B^viSSBBBBBB}{?=^{_OI_HCI_CONNECTION}CCCCCC}{LE_CONNECTION_RECORD={LE_Address=C{?=[6C]}}B{LE_Address=C{?=[6C]}}{LE_Address=C{?=[6C]}}C^{_OI_HCI_CONNECTION}SSSSSSSSSSSSSSSSSSSC[5C]CBBBBBiiiiiBBB{?=SSSSSSB}CCCC{?=[8C]}{?=[32C]}II^{_L2CAP_RECV_DATA}IiBIIB^{s_linkedListHolder}BBi^v{?=CIIS}BBBQBSSSSBBC{?=CSCCCCCCCCSSCSSSSSCC}{?=CSCCCCCCCCSSCSSSSSCCSCCCC}BBC{?=is}IB}{LE_CIS_RECORD=^{_OI_HCI_CONNECTION}CCCC{LE_ISO_DATA=SSII{LE_ISO_RECV_DATA=*SS}}{LE_CIS_EST_DATA=SIIIICCCCCCCSSS}i}{LE_BIS_RECORD=CC{LE_ISO_DATA=SSII{LE_ISO_RECV_DATA=*SS}}i}{OTHER_CONNECTION_RECORD=^{_OI_HCI_CONNECTION}IC^{_L2CAP_RECV_DATA}})}16i24c28"
 + "v36@0:8I16i20^{_OI_HCI_CONNECTION={?=SCI^?SsSSCBBSBCB^{_OI_HCI_CONNECTION}}(?={?={?=[6C]}CI^{_OI_HCI_CONNECTION}I^{?}^{?}^v^{_ESCO_SETUP_PARAMS}^{?}^{?}^{?}SSSSCiCCC^{_L2CAP_RECV_DATA}^{_L2CAP_RECV_DATA}I{?=iSSSS}BBBBBBBBB{?=is}BB^vBBBCB[4C][8C]IIIBB{?=[8C]}{?=[8C]}SCCBIICCBC{?=ICCCCSS}B^viSSBBBBBB}{?=^{_OI_HCI_CONNECTION}CCCCCC}{LE_CONNECTION_RECORD={LE_Address=C{?=[6C]}}B{LE_Address=C{?=[6C]}}{LE_Address=C{?=[6C]}}C^{_OI_HCI_CONNECTION}SSSSSSSSSSSSSSSSSSSC[5C]CBBBBBiiiiiBBB{?=SSSSSSB}CCCC{?=[8C]}{?=[32C]}II^{_L2CAP_RECV_DATA}IiBIIB^{s_linkedListHolder}BBi^v{?=CIIS}BBBQBSSSSBBC{?=CSCCCCCCCCSSCSSSSSCC}{?=CSCCCCCCCCSSCSSSSSCCSCCCC}BBC{?=is}IB}{LE_CIS_RECORD=^{_OI_HCI_CONNECTION}CCCC{LE_ISO_DATA=SSII{LE_ISO_RECV_DATA=*SS}}{LE_CIS_EST_DATA=SIIIICCCCCCCSSS}i}{LE_BIS_RECORD=CC{LE_ISO_DATA=SSII{LE_ISO_RECV_DATA=*SS}}i}{OTHER_CONNECTION_RECORD=^{_OI_HCI_CONNECTION}IC^{_L2CAP_RECV_DATA}})}24c32"
 - " - Thread ON"
+- "20:42:58"
 - "BandSwitchManager: HRB band change for device %{public}s failed status:%d. Current band is still %s"
 - "Creation of WRMXPCMsg failed"
+- "Jul 16 2026"
 - "ManagerStateWatchdog %s %llu ms Armed!"
 - "ManagerStateWatchdog %s destroyed!"
 - "ManagerStateWatchdog %s timer expired"

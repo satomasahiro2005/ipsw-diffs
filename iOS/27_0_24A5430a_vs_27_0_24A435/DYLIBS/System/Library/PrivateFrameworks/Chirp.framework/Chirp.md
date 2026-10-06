@@ -2,16 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/Chirp.framework/Chirp`
 
-```diff
+### Section Size Changes
 
- 383.2.1.0.0
--  __TEXT.__text: 0x14964
-+  __TEXT.__text: 0x14958
-   __TEXT.__const: 0x1212
-   __TEXT.__constg_swiftt: 0x854
-   __TEXT.__swift5_typeref: 0x7ae
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14964` | `0x14958` | **`-0xc`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2574c8238 -> sub_2585d5238 : 1116 -> 1108
-~ sub_2574c8694 -> sub_2585d568c : 1340 -> 1332
-~ sub_2574cde9c -> sub_2585dae8c : 672 -> 676
+~ sub_257392238 -> sub_257f2a238 : 1116 -> 1108
+~ sub_257392694 -> sub_257f2a68c : 1340 -> 1332
+~ sub_257397e9c -> sub_257f2fe8c : 672 -> 676
 ```

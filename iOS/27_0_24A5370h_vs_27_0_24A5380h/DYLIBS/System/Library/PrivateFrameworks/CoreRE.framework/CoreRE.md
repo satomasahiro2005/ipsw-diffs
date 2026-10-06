@@ -2,106 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/CoreRE.framework/CoreRE`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x16680f8` | `0x1664a04` | **`-0x36f4`** |
+| `__DATA_DIRTY.__bss` | `0x59a90` | `0x5a870` | **`+0xde0`** |
+| `__DATA.__bss` | `0x7108` | `0x6678` | **`-0xa90`** |
+| `__TEXT.__oslogstring` | `0x51c00` | `0x52278` | **`+0x678`** |
+| `__TEXT.__const` | `0x106e34` | `0x107244` | **`+0x410`** |
+| `__AUTH_CONST.__const` | `0x9d5b0` | `0x9d890` | **`+0x2e0`** |
+| `__DATA_DIRTY.__data` | `0x4250` | `0x44d8` | **`+0x288`** |
+| `__DATA.__data` | `0x246c0` | `0x24480` | **`-0x240`** |
+| `__TEXT.__cstring` | `0xb4908` | `0xb46e6` | **`-0x222`** |
+| `__DATA_DIRTY.__common` | `0x3978` | `0x3ad0` | **`+0x158`** |
+| `__DATA.__common` | `0x60e0` | `0x5fa0` | **`-0x140`** |
+| `__TEXT.__unwind_info` | `0x54fe0` | `0x550d8` | **`+0xf8`** |
+| `__AUTH_CONST.__cfstring` | `0xb620` | `0xb680` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0x50` | `—` | **`-0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x14f0` | `0x1540` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0xe058` | `0xe094` | **`+0x3c`** |
+| `__AUTH_CONST.__auth_got` | `0x3be8` | `0x3c20` | **`+0x38`** |
+| `__DATA_CONST.__got` | `0x1038` | `0x1070` | **`+0x38`** |
+| `__AUTH_CONST.__objc_const` | `0x7c58` | `0x7c78` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4730` | `0x4750` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x41e8` | `0x4208` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x444` | `0x448` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x16680f8
--  __TEXT.__objc_methlist: 0x41e8
--  __TEXT.__const: 0x106e34
-+  __TEXT.__text: 0x1664a04
-+  __TEXT.__objc_methlist: 0x4208
-+  __TEXT.__const: 0x107244
-   __TEXT.__constg_swiftt: 0x44
-   __TEXT.__swift5_typeref: 0x2f
-   __TEXT.__swift5_fieldmd: 0x44
-   __TEXT.__swift5_reflstr: 0x1f
-   __TEXT.__swift5_types: 0x8
--  __TEXT.__cstring: 0xb4908
--  __TEXT.__gcc_except_tab: 0xe058
--  __TEXT.__oslogstring: 0x51c00
-+  __TEXT.__cstring: 0xb46e6
-+  __TEXT.__gcc_except_tab: 0xe094
-+  __TEXT.__oslogstring: 0x52278
-   __TEXT.__ustring: 0x1a
--  __TEXT.__unwind_info: 0x54fe0
-+  __TEXT.__unwind_info: 0x550d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-453.0.2.0.5
++453.0.4.0.2
 
-   __DATA_CONST.__objc_protolist: 0xc8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x4730
-+  __DATA_CONST.__objc_selrefs: 0x4750
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_superrefs: 0x1c0
-   __DATA_CONST.__objc_arraydata: 0x10
--  __DATA_CONST.__got: 0x1038
--  __AUTH_CONST.__const: 0x9d5b0
--  __AUTH_CONST.__cfstring: 0xb620
--  __AUTH_CONST.__objc_const: 0x7c58
-+  __DATA_CONST.__got: 0x1070
-+  __AUTH_CONST.__const: 0x9d890
-+  __AUTH_CONST.__cfstring: 0xb680
-+  __AUTH_CONST.__objc_const: 0x7c78
-   __AUTH_CONST.__weak_auth_got: 0x48
-   __AUTH_CONST.__objc_intobj: 0x108
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x3be8
--  __AUTH.__objc_data: 0x50
-+  __AUTH_CONST.__auth_got: 0x3c20
-   __AUTH.__data: 0x1698
-   __AUTH.__thread_vars: 0xc0
-   __AUTH.__thread_bss: 0x310
--  __DATA.__objc_ivar: 0x444
--  __DATA.__data: 0x246c0
--  __DATA.__bss: 0x7108
--  __DATA.__common: 0x60e0
-+  __DATA.__objc_ivar: 0x448
-+  __DATA.__data: 0x24480
-+  __DATA.__bss: 0x6678
-+  __DATA.__common: 0x5fa0
-   __DATA_DIRTY.__objc_ivar: 0x128
--  __DATA_DIRTY.__objc_data: 0x14f0
--  __DATA_DIRTY.__data: 0x4250
--  __DATA_DIRTY.__bss: 0x59a90
--  __DATA_DIRTY.__common: 0x3978
-+  __DATA_DIRTY.__objc_data: 0x1540
-+  __DATA_DIRTY.__data: 0x44d8
-+  __DATA_DIRTY.__bss: 0x5a870
-+  __DATA_DIRTY.__common: 0x3ad0
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-
-   - /usr/lib/swift/libswiftObservation.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 86196
--  Symbols:   212330
--  CStrings:  24626
+-  Symbols:   121275
+-  CStrings:  23133
 +  Functions: 86258
-+  Symbols:   212523
-+  CStrings:  24652
- 
-Sections:
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__thread_vars : content changed
++  Symbols:   121389
++  CStrings:  23156
 Symbols:
 + -[VFXREDrawCallContextImpl .cxx_destruct]
 + -[VFXREDrawCallContextImpl reset]
@@ -390,10 +330,6 @@ Symbols:
 + ____ZN2re18AudioManager_PHASE19removeMixGroupStateEyyNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE_block_invoke
 + ___block_descriptor_65_a8_48c63_ZTSN2re6ResultINS_21SharedResourcePayloadENS_12WrappedErrorEEE_e5_v8?0l
 + _kCTForegroundColorAttributeName
-+ _objc_msgSend$CGColor
-+ _objc_msgSend$rangeOfString:
-+ _objc_msgSend$reset
-+ _objc_msgSend$unregisterFromEngine
 - GCC_except_table113
 - GCC_except_table146
 - GCC_except_table159
@@ -627,5 +563,4 @@ CStrings:
 - "m_navMeshLabel"
 - "serializeComponentAsEmbeddedJSON"
 - "serializeComponentAsJSON"
-
 ```

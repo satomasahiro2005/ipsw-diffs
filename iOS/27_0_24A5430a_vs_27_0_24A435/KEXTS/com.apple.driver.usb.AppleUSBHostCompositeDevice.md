@@ -2,14 +2,8 @@
 
 > `com.apple.driver.usb.AppleUSBHostCompositeDevice`
 
-```diff
+### Section Size Changes
 
- 1617.0.12.0.0
-   __TEXT.__cstring: 0x439
-   __TEXT.__os_log: 0x206
--  __TEXT_EXEC.__text: 0x3238
-+  __TEXT_EXEC.__text: 0x32d4
-   __TEXT_EXEC.__auth_stubs: 0x1a0
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x88
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x3238` | `0x32d4` | **`+0x9c`** |

@@ -2,85 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/HealthOntologyDaemonPlugin.framework/HealthOntologyDaemonPlugin`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e198` | `0x2082c` | **`+0x2694`** |
+| `__DATA.__bss` | `0x480` | `0x900` | **`+0x480`** |
+| `__TEXT.__const` | `0xbd8` | `0xdf8` | **`+0x220`** |
+| `__AUTH.__data` | `0x50` | `0x170` | **`+0x120`** |
+| `__TEXT.__swift5_fieldmd` | `0x3f8` | `0x4c4` | **`+0xcc`** |
+| `__TEXT.__swift5_reflstr` | `0x3e1` | `0x481` | **`+0xa0`** |
+| `__AUTH_CONST.__const` | `0x7e1` | `0x871` | **`+0x90`** |
+| `__TEXT.__constg_swiftt` | `0x84c` | `0x8c0` | **`+0x74`** |
+| `__TEXT.__unwind_info` | `0x618` | `0x670` | **`+0x58`** |
+| `__TEXT.__swift5_typeref` | `0x530` | `0x580` | **`+0x50`** |
+| `__AUTH_CONST.__objc_const` | `0xfd8` | `0x1018` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x900` | `0x928` | **`+0x28`** |
+| `__DATA_DIRTY.__data` | `0xc18` | `0xc40` | **`+0x28`** |
+| `__TEXT.__swift5_proto` | `0x5c` | `0x80` | **`+0x24`** |
+| `__DATA.__data` | `0x6a0` | `0x6c0` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x629` | `0x649` | **`+0x20`** |
+| `__DATA.__common` | `—` | `0x10` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x50` | `0x5c` | **`+0xc`** |
+| `__TEXT.__eh_frame` | `0xb74` | `0xb70` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1e198
-+  __TEXT.__text: 0x2082c
-   __TEXT.__objc_methlist: 0x4a4
--  __TEXT.__const: 0xbd8
--  __TEXT.__constg_swiftt: 0x84c
--  __TEXT.__swift5_typeref: 0x530
--  __TEXT.__swift5_reflstr: 0x3e1
--  __TEXT.__swift5_fieldmd: 0x3f8
-+  __TEXT.__const: 0xdf8
-+  __TEXT.__constg_swiftt: 0x8c0
-+  __TEXT.__swift5_typeref: 0x580
-+  __TEXT.__swift5_reflstr: 0x481
-+  __TEXT.__swift5_fieldmd: 0x4c4
-   __TEXT.__swift5_assocty: 0x78
--  __TEXT.__swift5_proto: 0x5c
--  __TEXT.__swift5_types: 0x50
-+  __TEXT.__swift5_proto: 0x80
-+  __TEXT.__swift5_types: 0x5c
-   __TEXT.__swift5_capture: 0x138
-   __TEXT.__swift5_protos: 0x18
--  __TEXT.__cstring: 0x629
-+  __TEXT.__cstring: 0x649
-   __TEXT.__oslogstring: 0x8d
--  __TEXT.__unwind_info: 0x618
--  __TEXT.__eh_frame: 0xb74
-+  __TEXT.__unwind_info: 0x670
-+  __TEXT.__eh_frame: 0xb70
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-7027.0.60.2.2
++7027.0.64.0.0
 
-   __DATA_CONST.__objc_selrefs: 0x258
-   __DATA_CONST.__objc_protorefs: 0x58
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x7e1
--  __AUTH_CONST.__objc_const: 0xfd8
--  __AUTH_CONST.__auth_got: 0x900
-+  __AUTH_CONST.__const: 0x871
-+  __AUTH_CONST.__objc_const: 0x1018
-+  __AUTH_CONST.__auth_got: 0x928
-   __AUTH.__objc_data: 0x120
--  __AUTH.__data: 0x50
--  __DATA.__data: 0x6a0
--  __DATA.__bss: 0x480
-+  __AUTH.__data: 0x170
-+  __DATA.__data: 0x6c0
-+  __DATA.__bss: 0x900
-+  __DATA.__common: 0x10
-   __DATA_DIRTY.__objc_data: 0x358
--  __DATA_DIRTY.__data: 0xc18
-+  __DATA_DIRTY.__data: 0xc40
-   __DATA_DIRTY.__bss: 0x400
-   __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 503
--  Symbols:   500
+-  Symbols:   421
 +  Functions: 548
-+  Symbols:   514
-   CStrings:  37
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__common : content changed
++  Symbols:   434
 Symbols:
 + ___swift_memcpy25_8
 + ___swift_memcpy9_8
@@ -110,5 +66,4 @@ Symbols:
 CStrings:
 + "Failed to parse triple chain: no traversal steps found"
 - "Failed to parse triple chain"
-
 ```

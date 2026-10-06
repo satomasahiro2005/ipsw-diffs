@@ -2,15 +2,8 @@
 
 > `/usr/bin/hpmdiagnose`
 
-```diff
+### Section Size Changes
 
-   __DATA_CONST.__objc_arrayobj: 0x348
-   __DATA_CONST.__objc_dictobj: 0xed8
-   __DATA_CONST.__auth_got: 0x248
--  __DATA_CONST.__got: 0x78
-+  __DATA_CONST.__got: 0x80
-   __DATA.__objc_const: 0xc88
-   __DATA.__objc_selrefs: 0x948
-   __DATA.__objc_ivar: 0x98
-
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x78` | `0x80` | **`+0x8`** |

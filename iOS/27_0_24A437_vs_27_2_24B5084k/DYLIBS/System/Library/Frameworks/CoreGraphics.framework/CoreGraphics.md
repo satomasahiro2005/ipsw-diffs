@@ -2,80 +2,36 @@
 
 > `/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5677c8` | `0x568918` | **`+0x1150`** |
+| `__TEXT.__cstring` | `0x43754` | `0x4393f` | **`+0x1eb`** |
+| `__TEXT.__gcc_except_tab` | `0xa634` | `0xa7e0` | **`+0x1ac`** |
+| `__DATA_CONST.__const` | `0x303e8` | `0x30578` | **`+0x190`** |
+| `__AUTH_CONST.__cfstring` | `0x9c20` | `0x9d40` | **`+0x120`** |
+| `__AUTH_CONST.__const` | `0x13b48` | `0x13c18` | **`+0xd0`** |
+| `__DATA.__bss` | `0x7a88` | `0x7b30` | **`+0xa8`** |
+| `__TEXT.__const` | `0x1dffa0` | `0x1e0020` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0xb030` | `0xb0b0` | **`+0x80`** |
+| `__DATA_DIRTY.__bss` | `0x2790` | `0x2748` | **`-0x48`** |
+| `__TEXT.__objc_stubs` | `0x7180` | `0x7160` | **`-0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2580` | `0x2578` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2050.0.0.0.0
--  __TEXT.__text: 0x55bc1c
 +2050.1.4.0.0
-+  __TEXT.__text: 0x55cd50
-   __TEXT.__resolver_help: 0xd8
-   __TEXT.__delay_helper: 0x1f4
-   __TEXT.__objc_methlist: 0x42a0
--  __TEXT.__const: 0x1dffa0
--  __TEXT.__cstring: 0x43754
-+  __TEXT.__const: 0x1e0020
-+  __TEXT.__cstring: 0x4393f
-   __TEXT.__dlopen_cstrs: 0xd5
-   __TEXT.__constg_swiftt: 0x1918
-   __TEXT.__swift5_typeref: 0x1a60
 
-   __TEXT.__swift5_capture: 0x5c8
-   __TEXT.__swift5_protos: 0x3c
-   __TEXT.__swift5_mpenum: 0x5c
--  __TEXT.__gcc_except_tab: 0xa634
-+  __TEXT.__gcc_except_tab: 0xa7e0
-   __TEXT.__oslogstring: 0x15
-   __TEXT.__ustring: 0x1c
--  __TEXT.__unwind_info: 0xd630
-+  __TEXT.__unwind_info: 0xd6b8
-   __TEXT.__eh_frame: 0x4ff8
--  __TEXT.__objc_stubs: 0x7180
-+  __TEXT.__objc_stubs: 0x7160
-   __TEXT.__stubs: 0x18
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x303e8
-+  __DATA_CONST.__const: 0x30578
-   __DATA_CONST.__objc_classlist: 0x280
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x98
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0xe8
--  __DATA_CONST.__objc_selrefs: 0x2580
-+  __DATA_CONST.__objc_selrefs: 0x2578
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__objc_superrefs: 0x1e0
-   __DATA_CONST.__objc_arraydata: 0x170
-   __DATA_CONST.__got: 0x908
--  __AUTH_CONST.__const: 0x13b48
--  __AUTH_CONST.__cfstring: 0x9c20
-+  __AUTH_CONST.__const: 0x13c18
-+  __AUTH_CONST.__cfstring: 0x9d40
-   __AUTH_CONST.__objc_const: 0x6c30
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__objc_dictobj: 0x50
-
-   __DATA_DIRTY.__la_resolver: 0x10
-   __DATA_DIRTY.__data: 0xfb8
-   __DATA_DIRTY.__crash_info: 0x148
--  __DATA_DIRTY.__bss: 0x2790
-+  __DATA_DIRTY.__bss: 0x2748
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 14379
 -  Symbols:   18809
 -  CStrings:  11513
 +  Functions: 14403
 +  Symbols:   18851
 +  CStrings:  11528
- 
 Symbols:
 + GCC_except_table10053
 + GCC_except_table1010

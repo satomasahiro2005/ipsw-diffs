@@ -2,20 +2,21 @@
 
 > `/Applications/HashtagImages.app/HashtagImages`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9bfc` | `0x9c08` | **`+0xc`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__const`
 - `__TEXT.__objc_methlist`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
 
-```diff
+### Other Changes
 
- 3400.1.6.30.0
--  __TEXT.__text: 0x9bfc
-+  __TEXT.__text: 0x9c08
-   __TEXT.__auth_stubs: 0x900
-   __TEXT.__objc_stubs: 0xc60
-   __TEXT.__objc_methlist: 0x63c
+```text
 Functions:
 ~ sub_1000068c4 : 380 -> 392
 ```

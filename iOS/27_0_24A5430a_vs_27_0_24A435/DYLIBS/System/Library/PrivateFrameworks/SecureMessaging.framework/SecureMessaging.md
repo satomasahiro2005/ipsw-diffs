@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SecureMessaging.framework/SecureMessaging`
 
-```diff
+### Section Size Changes
 
- 59.100.1.0.0
--  __TEXT.__text: 0x3ca0c0
-+  __TEXT.__text: 0x3ca260
-   __TEXT.__objc_methlist: 0x2e0
-   __TEXT.__const: 0x535a0
-   __TEXT.__swift5_typeref: 0x8ea0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3ca0c0` | `0x3ca260` | **`+0x1a0`** |
+
+### Other Changes
+
+```diff
 Symbols:
 + _swift_release_x13
 - _swift_retain_x11

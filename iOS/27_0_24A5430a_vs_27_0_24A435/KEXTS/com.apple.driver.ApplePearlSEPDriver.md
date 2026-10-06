@@ -2,35 +2,26 @@
 
 > `com.apple.driver.ApplePearlSEPDriver`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x3f478` | `0x40b64` | **`+0x16ec`** |
+| `__TEXT.__cstring` | `0xaf58` | `0xb369` | **`+0x411`** |
+| `__DATA_CONST.__const` | `0x2428` | `0x25a8` | **`+0x180`** |
+| `__TEXT.__os_log` | `0x4d0d` | `0x4e19` | **`+0x10c`** |
+| `__DATA_CONST.__kalloc_type` | `0x600` | `0x640` | **`+0x40`** |
+| `__DATA.__common` | `0x238` | `0x260` | **`+0x28`** |
+
+### Other Changes
+
 ```diff
 
- 980.0.26.0.0
-   __TEXT.__const: 0x318
--  __TEXT.__cstring: 0xaf58
--  __TEXT.__os_log: 0x4d0d
--  __TEXT_EXEC.__text: 0x3f478
-+  __TEXT.__cstring: 0xb369
-+  __TEXT.__os_log: 0x4e19
-+  __TEXT_EXEC.__text: 0x40b64
-   __TEXT_EXEC.__auth_stubs: 0xba0
-   __DATA.__data: 0xcd
--  __DATA.__common: 0x238
-+  __DATA.__common: 0x260
-   __DATA_CONST.__mod_init_func: 0x20
-   __DATA_CONST.__mod_term_func: 0x20
--  __DATA_CONST.__const: 0x2428
--  __DATA_CONST.__kalloc_type: 0x600
-+  __DATA_CONST.__const: 0x25a8
-+  __DATA_CONST.__kalloc_type: 0x640
-   __DATA_CONST.__kalloc_var: 0xa0
-   __DATA_CONST.__auth_got: 0x5d0
-   __DATA_CONST.__got: 0x150
 -  Functions: 720
 +  Functions: 751
-   Symbols:   0
+
 -  CStrings:  1718
 +  CStrings:  1743
- 
 CStrings:
 + "%s: ANE1 power function%s found\n"
 + "(_hasMirage == kBoolFalse) || (_summervilleFWCertInSEP == kBoolTrue)"

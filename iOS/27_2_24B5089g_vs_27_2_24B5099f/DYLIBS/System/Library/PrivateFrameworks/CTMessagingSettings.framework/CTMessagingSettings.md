@@ -2,69 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/CTMessagingSettings.framework/CTMessagingSettings`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x255ec` | `0x2af2c` | **`+0x5940`** |
+| `__TEXT.__oslogstring` | `0x44b` | `0x114b` | **`+0xd00`** |
+| `__TEXT.__cstring` | `0x1071` | `0x11b1` | **`+0x140`** |
+| `__TEXT.__swift5_typeref` | `0x1666` | `0x170e` | **`+0xa8`** |
+| `__TEXT.__eh_frame` | `0x4c0` | `0x530` | **`+0x70`** |
+| `__TEXT.__const` | `0xe94` | `0xee4` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x6c0` | `0x6f0` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0x9b0` | `0x9d8` | **`+0x28`** |
+| `__DATA.__data` | `0x7b0` | `0x7d0` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x468` | `0x480` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x8f0` | `0x8e0` | **`-0x10`** |
+| `__TEXT.__swift5_capture` | `0x318` | `0x328` | **`+0x10`** |
+| `__AUTH.__data` | `0x318` | `0x320` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -13496.3.0.0.0
--  __TEXT.__text: 0x24838
 +13498.0.0.0.0
-+  __TEXT.__text: 0x29fdc
-   __TEXT.__objc_methlist: 0x3f4
--  __TEXT.__const: 0xe94
--  __TEXT.__cstring: 0x1071
--  __TEXT.__swift5_typeref: 0x1666
--  __TEXT.__swift5_capture: 0x318
--  __TEXT.__oslogstring: 0x44b
-+  __TEXT.__const: 0xee4
-+  __TEXT.__cstring: 0x11b1
-+  __TEXT.__swift5_typeref: 0x170e
-+  __TEXT.__swift5_capture: 0x328
-+  __TEXT.__oslogstring: 0x114b
-   __TEXT.__constg_swiftt: 0x464
-   __TEXT.__swift5_reflstr: 0x316
-   __TEXT.__swift5_fieldmd: 0x2ec
 
-   __TEXT.__swift_as_entry: 0x14
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0x24
--  __TEXT.__unwind_info: 0x878
--  __TEXT.__eh_frame: 0x4c0
-+  __TEXT.__unwind_info: 0x8c8
-+  __TEXT.__eh_frame: 0x530
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x468
-+  __DATA_CONST.__objc_selrefs: 0x480
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__got: 0x300
--  __AUTH_CONST.__const: 0x9b0
-+  __AUTH_CONST.__const: 0x9d8
-   __AUTH_CONST.__objc_const: 0x608
--  __AUTH_CONST.__auth_got: 0x8f0
-+  __AUTH_CONST.__auth_got: 0x8e0
-   __AUTH.__objc_data: 0x3f8
--  __AUTH.__data: 0x318
--  __DATA.__data: 0x7b0
-+  __AUTH.__data: 0x320
-+  __DATA.__data: 0x7d0
-   __DATA.__common: 0x30
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 575
 -  Symbols:   467
 -  CStrings:  106
 +  Functions: 595
 +  Symbols:   469
 +  CStrings:  152
- 
 Symbols:
 + ___swift_closure_destructor.76Tm
 + ___swift_destroy_boxed_opaque_existential_0

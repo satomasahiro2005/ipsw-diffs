@@ -2,5 +2,6 @@
 
 > `/System/Library/PrivateFrameworks/CameraUI.framework/ShutterLiquid.metallib`
 
-Sections:
-~ __TEXT.__metallib : content changed
+### Same-size Content Changes
+
+- `__TEXT.__metallib`

@@ -2,65 +2,46 @@
 
 > `/System/Library/VideoProcessors/GenIEV1.bundle/GenIEV1`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10d70` | `0xa634` | **`-0x673c`** |
+| `__TEXT.__oslogstring` | `0x25fa` | `0x4ea` | **`-0x2110`** |
+| `__TEXT.__cstring` | `0x11d6` | `0xc13` | **`-0x5c3`** |
+| `__TEXT.__gcc_except_tab` | `0xdbc` | `0x980` | **`-0x43c`** |
+| `__TEXT.__unwind_info` | `0x370` | `0x338` | **`-0x38`** |
+| `__TEXT.__auth_stubs` | `0x3b0` | `0x3a0` | **`-0x10`** |
+| `__TEXT.__const` | `0xa0` | `0x90` | **`-0x10`** |
+| `__DATA_CONST.__auth_got` | `0x1e8` | `0x1e0` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
 - `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
 -761.0.0.0.3
--  __TEXT.__text: 0x10d70
--  __TEXT.__auth_stubs: 0x3b0
 +764.22.5.122.2
-+  __TEXT.__text: 0xa634
-+  __TEXT.__auth_stubs: 0x3a0
-   __TEXT.__objc_stubs: 0x1560
-   __TEXT.__objc_methlist: 0xc2c
--  __TEXT.__const: 0xa0
--  __TEXT.__gcc_except_tab: 0xdbc
--  __TEXT.__cstring: 0x11d6
--  __TEXT.__oslogstring: 0x25fa
-+  __TEXT.__gcc_except_tab: 0x980
-+  __TEXT.__const: 0x90
-+  __TEXT.__cstring: 0xc13
-   __TEXT.__objc_classname: 0x20d
-   __TEXT.__objc_methname: 0x1c5a
-   __TEXT.__objc_methtype: 0x9c0
--  __TEXT.__unwind_info: 0x370
-+  __TEXT.__oslogstring: 0x4ea
-+  __TEXT.__unwind_info: 0x338
-   __DATA_CONST.__const: 0x148
-   __DATA_CONST.__cfstring: 0x660
-   __DATA_CONST.__objc_classlist: 0xa8
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x98
--  __DATA_CONST.__auth_got: 0x1e8
-+  __DATA_CONST.__auth_got: 0x1e0
-   __DATA_CONST.__got: 0x78
-   __DATA.__objc_const: 0x2330
-   __DATA.__objc_selrefs: 0x730
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 257
 -  Symbols:   754
 -  CStrings:  765
 +  Functions: 245
 +  Symbols:   759
 +  CStrings:  621
- 
 Symbols:
 + _FigSignalErrorAtGM
 + _OUTLINED_FUNCTION_10

@@ -2,18 +2,12 @@
 
 > `/System/Library/PrivateFrameworks/PeriodicSystemMetricsCore.framework/PeriodicSystemMetricsCore`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0xd0` | `0xf8` | **`+0x28`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__gcc_except_tab`
-
-```diff
-
-   __DATA_CONST.__objc_arraydata: 0x250
-   __DATA_CONST.__objc_dictobj: 0x28
-   __DATA_CONST.__auth_got: 0x370
--  __DATA_CONST.__got: 0xd0
-+  __DATA_CONST.__got: 0xf8
-   __DATA.__objc_const: 0x2ed8
-   __DATA.__objc_ivar: 0x1d4
-   __DATA.__objc_data: 0xc80
-```

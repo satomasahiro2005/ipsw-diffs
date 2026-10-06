@@ -2,80 +2,53 @@
 
 > `/usr/libexec/corerepaird`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x127c` | `0x91b4` | **`+0x7f38`** |
+| `__DATA.__objc_const` | `0x7f0` | `0x1910` | **`+0x1120`** |
+| `__TEXT.__objc_stubs` | `0x380` | `0x1240` | **`+0xec0`** |
+| `__TEXT.__objc_methname` | `0x7e9` | `0x14ff` | **`+0xd16`** |
+| `__DATA_CONST.__cfstring` | `0x120` | `0xdc0` | **`+0xca0`** |
+| `__TEXT.__cstring` | `0x1ed` | `0xb2e` | **`+0x941`** |
+| `__TEXT.__objc_methlist` | `0x3d4` | `0xb1c` | **`+0x748`** |
+| `__DATA.__objc_data` | `0x190` | `0x8c0` | **`+0x730`** |
+| `__DATA.__objc_selrefs` | `0x288` | `0x630` | **`+0x3a8`** |
+| `__DATA_CONST.__objc_intobj` | `—` | `0x390` | **`+0x390`** |
+| `__TEXT.__oslogstring` | `0x1dd` | `0x537` | **`+0x35a`** |
+| `__TEXT.__objc_methtype` | `0x3e0` | `0x5db` | **`+0x1fb`** |
+| `__TEXT.__auth_stubs` | `0x1b0` | `0x350` | **`+0x1a0`** |
+| `__TEXT.__objc_classname` | `0xdc` | `0x232` | **`+0x156`** |
+| `__TEXT.__unwind_info` | `0xa0` | `0x1d8` | **`+0x138`** |
+| `__DATA.__data` | `0x268` | `0x388` | **`+0x120`** |
+| `__DATA_CONST.__auth_got` | `0xe0` | `0x1b8` | **`+0xd8`** |
+| `__DATA_CONST.__objc_classlist` | `0x28` | `0xe0` | **`+0xb8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x10` | `0xc8` | **`+0xb8`** |
+| `__DATA_CONST.__got` | `0x88` | `0x128` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x40` | `0xb8` | **`+0x78`** |
+| `__TEXT.__gcc_except_tab` | `—` | `0x58` | **`+0x58`** |
+| `__DATA_CONST.__objc_arraydata` | `—` | `0x50` | **`+0x50`** |
+| `__DATA_CONST.__objc_arrayobj` | `—` | `0x48` | **`+0x48`** |
+| `__DATA.__objc_ivar` | `0x30` | `0x74` | **`+0x44`** |
+| `__TEXT.__const` | `0x50` | `0x78` | **`+0x28`** |
+| `__DATA_CONST.__objc_doubleobj` | `—` | `0x20` | **`+0x20`** |
+| `__DATA_CONST.__objc_protolist` | `0x30` | `0x48` | **`+0x18`** |
+
+### Same-size Content Changes
 
 - `__DATA_CONST.__objc_protorefs`
 
+### Other Changes
+
 ```diff
 
- 1307.2.4.0.0
--  __TEXT.__text: 0x127c
--  __TEXT.__auth_stubs: 0x1b0
--  __TEXT.__objc_stubs: 0x380
--  __TEXT.__objc_methlist: 0x3d4
--  __TEXT.__const: 0x50
--  __TEXT.__objc_methname: 0x7e9
--  __TEXT.__cstring: 0x1ed
--  __TEXT.__objc_classname: 0xdc
--  __TEXT.__objc_methtype: 0x3e0
--  __TEXT.__oslogstring: 0x1dd
--  __TEXT.__unwind_info: 0xa0
--  __DATA_CONST.__const: 0x40
--  __DATA_CONST.__cfstring: 0x120
--  __DATA_CONST.__objc_classlist: 0x28
--  __DATA_CONST.__objc_protolist: 0x30
-+  __TEXT.__text: 0x91b4
-+  __TEXT.__auth_stubs: 0x350
-+  __TEXT.__objc_stubs: 0x1240
-+  __TEXT.__objc_methlist: 0xb1c
-+  __TEXT.__const: 0x78
-+  __TEXT.__objc_methname: 0x14ff
-+  __TEXT.__cstring: 0xb2e
-+  __TEXT.__oslogstring: 0x537
-+  __TEXT.__objc_classname: 0x232
-+  __TEXT.__objc_methtype: 0x5db
-+  __TEXT.__gcc_except_tab: 0x58
-+  __TEXT.__unwind_info: 0x1d8
-+  __DATA_CONST.__const: 0xb8
-+  __DATA_CONST.__cfstring: 0xdc0
-+  __DATA_CONST.__objc_classlist: 0xe0
-+  __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__objc_superrefs: 0x10
--  __DATA_CONST.__auth_got: 0xe0
--  __DATA_CONST.__got: 0x88
--  __DATA.__objc_const: 0x7f0
--  __DATA.__objc_selrefs: 0x288
--  __DATA.__objc_ivar: 0x30
--  __DATA.__objc_data: 0x190
--  __DATA.__data: 0x268
-+  __DATA_CONST.__objc_superrefs: 0xc8
-+  __DATA_CONST.__objc_intobj: 0x390
-+  __DATA_CONST.__objc_arraydata: 0x50
-+  __DATA_CONST.__objc_arrayobj: 0x48
-+  __DATA_CONST.__objc_doubleobj: 0x20
-+  __DATA_CONST.__auth_got: 0x1b8
-+  __DATA_CONST.__got: 0x128
-+  __DATA.__objc_const: 0x1910
-+  __DATA.__objc_selrefs: 0x630
-+  __DATA.__objc_ivar: 0x74
-+  __DATA.__objc_data: 0x8c0
-+  __DATA.__data: 0x388
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/libz.1.dylib
-   - /usr/lib/updaters/libSavageRestoreInfo_iOS.dylib
-   - /usr/lib/updaters/libSavageUpdater_iOS.dylib
 -  Functions: 41
 -  Symbols:   53
 -  CStrings:  188
 +  Functions: 180
 +  Symbols:   102
 +  CStrings:  519
- 
 Symbols:
 + _MGGetBoolAnswer
 + _MGGetProductType

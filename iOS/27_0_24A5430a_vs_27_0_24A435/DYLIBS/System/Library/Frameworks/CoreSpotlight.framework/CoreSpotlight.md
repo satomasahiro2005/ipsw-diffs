@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight`
 
-```diff
+### Section Size Changes
 
- 2459.105.0.0.0
--  __TEXT.__text: 0x17c894
-+  __TEXT.__text: 0x17c888
-   __TEXT.__objc_methlist: 0x14400
-   __TEXT.__const: 0xef8
-   __TEXT.__gcc_except_tab: 0x9480
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17c894` | `0x17c888` | **`-0xc`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _OUTLINED_FUNCTION_0 : 20 -> 24
 ~ _OUTLINED_FUNCTION_0 : 24 -> 32

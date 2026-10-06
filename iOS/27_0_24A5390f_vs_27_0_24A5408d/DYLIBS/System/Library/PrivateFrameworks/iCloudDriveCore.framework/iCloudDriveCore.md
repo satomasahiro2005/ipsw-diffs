@@ -2,73 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/iCloudDriveCore.framework/iCloudDriveCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3070a8` | `0x3089b0` | **`+0x1908`** |
+| `__TEXT.__cstring` | `0x82516` | `0x829d8` | **`+0x4c2`** |
+| `__TEXT.__oslogstring` | `0x3dc85` | `0x3de76` | **`+0x1f1`** |
+| `__TEXT.__gcc_except_tab` | `0x176c8` | `0x17800` | **`+0x138`** |
+| `__AUTH_CONST.__cfstring` | `0x23520` | `0x23640` | **`+0x120`** |
+| `__DATA_CONST.__const` | `0x9e48` | `0x9ed0` | **`+0x88`** |
+| `__AUTH_CONST.__const` | `0x2ca8` | `0x2cf8` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0xf128` | `0xf170` | **`+0x48`** |
+| `__TEXT.__unwind_info` | `0xa400` | `0xa438` | **`+0x38`** |
+| `__AUTH_CONST.__objc_const` | `0x41a20` | `0x41a50` | **`+0x30`** |
+| `__AUTH_CONST.__objc_intobj` | `0xc30` | `0xc18` | **`-0x18`** |
+| `__DATA_CONST.__got` | `0x17a8` | `0x17c0` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x1be40` | `0x1be50` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xd98` | `0xda0` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x202c` | `0x2030` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -5168.0.5.0.2
--  __TEXT.__text: 0x3070a8
--  __TEXT.__objc_methlist: 0x1be40
 +5168.0.55.0.0
-+  __TEXT.__text: 0x3089b0
-+  __TEXT.__objc_methlist: 0x1be50
-   __TEXT.__const: 0x4f0
--  __TEXT.__cstring: 0x82516
--  __TEXT.__oslogstring: 0x3dc85
--  __TEXT.__gcc_except_tab: 0x176c8
-+  __TEXT.__cstring: 0x829d8
-+  __TEXT.__oslogstring: 0x3de76
-+  __TEXT.__gcc_except_tab: 0x17800
-   __TEXT.__ustring: 0x36
--  __TEXT.__unwind_info: 0xa400
-+  __TEXT.__unwind_info: 0xa438
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9e48
-+  __DATA_CONST.__const: 0x9ed0
-   __DATA_CONST.__objc_classlist: 0xab0
-   __DATA_CONST.__objc_catlist: 0xd8
-   __DATA_CONST.__objc_protolist: 0x2c0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xf128
-+  __DATA_CONST.__objc_selrefs: 0xf170
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x960
-   __DATA_CONST.__objc_arraydata: 0xeb8
--  __DATA_CONST.__got: 0x17a8
--  __AUTH_CONST.__const: 0x2ca8
--  __AUTH_CONST.__cfstring: 0x23520
--  __AUTH_CONST.__objc_const: 0x41a20
--  __AUTH_CONST.__objc_intobj: 0xc30
-+  __DATA_CONST.__got: 0x17c0
-+  __AUTH_CONST.__const: 0x2cf8
-+  __AUTH_CONST.__cfstring: 0x23640
-+  __AUTH_CONST.__objc_const: 0x41a50
-+  __AUTH_CONST.__objc_intobj: 0xc18
-   __AUTH_CONST.__objc_arrayobj: 0x2b8
-   __AUTH_CONST.__objc_dictobj: 0xf0
-   __AUTH_CONST.__objc_doubleobj: 0x50
--  __AUTH_CONST.__auth_got: 0xd98
-+  __AUTH_CONST.__auth_got: 0xda0
-   __AUTH.__objc_data: 0x2558
-   __AUTH.__data: 0x18
--  __DATA.__objc_ivar: 0x202c
-+  __DATA.__objc_ivar: 0x2030
-   __DATA.__data: 0x29f0
-   __DATA.__bss: 0x200
-   __DATA_DIRTY.__objc_data: 0x4588
 
-   - /usr/lib/libprequelite.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 14206
--  Symbols:   24524
+-  Symbols:   18241
 -  CStrings:  12125
 +  Functions: 14225
-+  Symbols:   24561
++  Symbols:   18270
 +  CStrings:  12153
- 
 Symbols:
 + -[BRCDiskSpaceReclaimer autovacuumQOSClass]
 + -[BRCDiskSpaceReclaimer setAutovacuumQOSClass:]
@@ -171,17 +137,6 @@ Symbols:
 + ___br_sendUserAlertWithError_block_invoke_7
 + _br_sendUserAlertWithError
 + _br_update_tables_34_104
-+ _objc_msgSend$_openSharedSideFaultFileOrFallback:
-+ _objc_msgSend$_signalReadOnlyShareUploadErrorsResolved
-+ _objc_msgSend$_ubiquityTokenForDSID:salt:appIdentifier:installUUID:
-+ _objc_msgSend$autovacuumQOSClass
-+ _objc_msgSend$brc_errorOrphanUploadJob
-+ _objc_msgSend$bundleRecordWithApplicationIdentifier:error:
-+ _objc_msgSend$dataWithContentsOfFile:options:error:
-+ _objc_msgSend$originalInstallDate
-+ _objc_msgSend$ubiquityTokenEnhancedPrivacy
-+ _objc_msgSend$withSystemDataContainerForIdentifier:block:
-+ _objc_msgSend$writeToFile:options:error:
 + _voucher_process_can_use_arbitrary_personas
 - -[BRCClientZoneActiveState setTaskTracker:]
 - -[BRCClientZoneActiveState taskTracker]
@@ -256,9 +211,6 @@ Symbols:
 - ___block_descriptor_48_e8_32s40s_e34_v24?0"NSDictionary"8"NSError"16ls32l8s40l8
 - ___block_descriptor_56_e8_32s40bs48w_e5_v8?0lw48l8s40l8s32l8
 - ___block_descriptor_56_e8_32s40s48s_e20_v24?08"NSError"16ls32l8s40l8s48l8
-- _objc_msgSend$_sendUserAlertWithError:type:
-- _objc_msgSend$cleanupStagedSyncUpWithID:
-- _objc_msgSend$processCanUseArbitraryPersonas
 CStrings:
 + "-[BRCServerZone _markItemDeadForRecordID:]_block_invoke"
 + "-[BRCServerZone _saveEditedShareRecord:error:]_block_invoke"

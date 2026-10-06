@@ -2,16 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/NanoHomeIntents.framework/NanoHomeIntents`
 
-```diff
+### Section Size Changes
 
- 957.0.0.0.0
--  __TEXT.__text: 0x5baa8
-+  __TEXT.__text: 0x5baac
-   __TEXT.__objc_methlist: 0x6f4
-   __TEXT.__const: 0x3698
-   __TEXT.__cstring: 0x1613
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5baa8` | `0x5baac` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_29259a9b0 -> sub_2932ff9b0 : 2496 -> 2492
-~ sub_2925d3d68 -> sub_293338d64 : 564 -> 568
-~ sub_2925d3f9c -> sub_293338f9c : 556 -> 560
+~ sub_2924809b0 -> sub_2931d39b0 : 2496 -> 2492
+~ sub_2924b9d68 -> sub_29320cd64 : 564 -> 568
+~ sub_2924b9f9c -> sub_29320cf9c : 556 -> 560
 ```

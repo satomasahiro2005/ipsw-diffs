@@ -2,94 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/SoftwareUpdateUIFoundation.framework/SoftwareUpdateUIFoundation`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xaaa2c` | `0xad484` | **`+0x2a58`** |
+| `__TEXT.__oslogstring` | `0xa757` | `0xaab7` | **`+0x360`** |
+| `__TEXT.__cstring` | `0x6a48` | `0x6d48` | **`+0x300`** |
+| `__TEXT.__gcc_except_tab` | `0x2394` | `0x2500` | **`+0x16c`** |
+| `__AUTH_CONST.__cfstring` | `0x3e00` | `0x3f40` | **`+0x140`** |
+| `__TEXT.__const` | `0x2300` | `0x23c0` | **`+0xc0`** |
+| `__DATA_CONST.__const` | `0x23a8` | `0x2448` | **`+0xa0`** |
+| `__DATA.__bss` | `0x35e0` | `0x3670` | **`+0x90`** |
+| `__AUTH_CONST.__objc_const` | `0x69c0` | `0x6a10` | **`+0x50`** |
+| `__DATA.__data` | `0xdf0` | `0xe40` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x22cc` | `0x22f4` | **`+0x28`** |
+| `__TEXT.__swift5_typeref` | `0x75d` | `0x785` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x11d8` | `0x1200` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x1770` | `0x1790` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x8f8` | `0x910` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x468` | `0x480` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1568` | `0x1578` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x458` | `0x460` | **`+0x8`** |
+| `__DATA_CONST.__objc_catlist` | `0x8` | `0x10` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x1a4` | `0x1a8` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__swift5_reflstr`
+
+### Other Changes
 
 ```diff
 
 -772.0.10.0.0
--  __TEXT.__text: 0xaaa2c
--  __TEXT.__objc_methlist: 0x22cc
--  __TEXT.__cstring: 0x6a48
--  __TEXT.__gcc_except_tab: 0x2394
--  __TEXT.__oslogstring: 0xa757
--  __TEXT.__const: 0x2300
--  __TEXT.__swift5_typeref: 0x75d
 +772.0.20.0.0
-+  __TEXT.__text: 0xad484
-+  __TEXT.__objc_methlist: 0x22f4
-+  __TEXT.__const: 0x23c0
-+  __TEXT.__cstring: 0x6d48
-+  __TEXT.__gcc_except_tab: 0x2500
-+  __TEXT.__oslogstring: 0xaab7
-+  __TEXT.__swift5_typeref: 0x785
-   __TEXT.__swift5_reflstr: 0x61e
--  __TEXT.__swift5_assocty: 0x468
-+  __TEXT.__swift5_assocty: 0x480
-   __TEXT.__constg_swiftt: 0x502
-   __TEXT.__swift5_builtin: 0xc8
-   __TEXT.__swift5_fieldmd: 0x418
--  __TEXT.__swift5_proto: 0x1a4
-+  __TEXT.__swift5_proto: 0x1a8
-   __TEXT.__swift5_types: 0x70
-   __TEXT.__swift5_protos: 0xc
-   __TEXT.__swift5_capture: 0x328
 
-   __TEXT.__swift_as_ret: 0x38
-   __TEXT.__swift_as_cont: 0x48
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0x11d8
-+  __TEXT.__unwind_info: 0x1200
-   __TEXT.__eh_frame: 0xb00
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x23a8
-+  __DATA_CONST.__const: 0x2448
-   __DATA_CONST.__objc_classlist: 0x198
--  __DATA_CONST.__objc_catlist: 0x8
-+  __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1568
-+  __DATA_CONST.__objc_selrefs: 0x1578
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x110
--  __DATA_CONST.__got: 0x458
--  __AUTH_CONST.__const: 0x1770
--  __AUTH_CONST.__cfstring: 0x3e00
--  __AUTH_CONST.__objc_const: 0x69c0
-+  __DATA_CONST.__got: 0x460
-+  __AUTH_CONST.__const: 0x1790
-+  __AUTH_CONST.__cfstring: 0x3f40
-+  __AUTH_CONST.__objc_const: 0x6a10
-   __AUTH_CONST.__objc_intobj: 0xd8
--  __AUTH_CONST.__auth_got: 0x8f8
-+  __AUTH_CONST.__auth_got: 0x910
-   __AUTH.__objc_data: 0xff0
-   __AUTH.__data: 0x40
-   __DATA.__objc_ivar: 0x300
--  __DATA.__data: 0xdf0
--  __DATA.__bss: 0x35e0
-+  __DATA.__data: 0xe40
-+  __DATA.__bss: 0x3670
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2071
--  Symbols:   2756
+-  Symbols:   2282
 -  CStrings:  948
 +  Functions: 2096
-+  Symbols:   2785
++  Symbols:   2307
 +  CStrings:  967
- 
 Symbols:
 + +[SUUIRetryConfiguration(Presets) betaProgramsFetchConfiguration]
 + -[SDBetaManager(SUUIRetry) queryProgramsForSystemAccountsWithPlatforms:retryConfiguration:identifier:completion:]
@@ -153,10 +107,6 @@ Symbols:
 + _kSU_E_UpdateOpPromoteToUserInitiated
 + _kSU_S_PromotingDownload
 + _kSU_S_QueryingManagerState
-+ _objc_msgSend$betaProgramsFetchConfiguration
-+ _objc_msgSend$executeOperation:completion:
-+ _objc_msgSend$initWithConfiguration:identifier:
-+ _objc_msgSend$queryProgramsForSystemAccountsWithPlatforms:retryConfiguration:identifier:completion:
 + _objc_unsafeClaimAutoreleasedReturnValue
 + _symbolic SDySS_____G 26SoftwareUpdateUIFoundation20SUUIDeviceDescriptorV12OSIdentifierV
 + _symbolic SS______t 26SoftwareUpdateUIFoundation20SUUIDeviceDescriptorV12OSIdentifierV

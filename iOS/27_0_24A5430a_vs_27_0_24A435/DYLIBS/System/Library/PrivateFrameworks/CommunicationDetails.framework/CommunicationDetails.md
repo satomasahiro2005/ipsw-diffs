@@ -2,15 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/CommunicationDetails.framework/CommunicationDetails`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xaa2b4` | `0xaa300` | **`+0x4c`** |
+
+### Other Changes
+
 ```diff
 
 -1491.100.1.2.23
--  __TEXT.__text: 0xaa2b4
 +1491.100.1.2.25
-+  __TEXT.__text: 0xaa300
-   __TEXT.__objc_methlist: 0x1748
-   __TEXT.__const: 0x849c
-   __TEXT.__constg_swiftt: 0x4274
 Functions:
 ~ _$ss20_ArrayBufferProtocolPsE15replaceSubrange_4with10elementsOfySnySiG_Siqd__ntSlRd__7ElementQyd__AGRtzlFs01_aB0Vy12CoreGraphics7CGFloatVG_s010CollectionH3OneVyANGTg5 : 244 -> 248
 ~ _$ss20_ArrayBufferProtocolPsE15replaceSubrange_4with10elementsOfySnySiG_Siqd__ntSlRd__7ElementQyd__AGRtzlFs01_aB0Vy20CommunicationDetails0K3TabVG_s010CollectionH3OneVyANGTB5Tf4nngn_n : 372 -> 380

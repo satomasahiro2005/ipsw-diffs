@@ -2,70 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/DialogEngine.framework/DialogEngine`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x46036c` | `0x460ca0` | **`+0x934`** |
+| `__TEXT.__gcc_except_tab` | `0x390f8` | `0x391e0` | **`+0xe8`** |
+| `__TEXT.__cstring` | `0x691cd` | `0x6922f` | **`+0x62`** |
+| `__TEXT.__unwind_info` | `0x142d0` | `0x14318` | **`+0x48`** |
+| `__DATA.__bss` | `0x2d98` | `0x2dc8` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0x12f00` | `0x12f20` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x3394` | `0x33b4` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xf40` | `0xf58` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1970` | `0x1988` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x5c0` | `0x5c8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.23.6.0.0
--  __TEXT.__text: 0x46036c
 +3600.23.9.0.0
-+  __TEXT.__text: 0x460ca0
-   __TEXT.__init_offsets: 0x28
--  __TEXT.__objc_methlist: 0x3394
-+  __TEXT.__objc_methlist: 0x33b4
-   __TEXT.__const: 0x1c888
--  __TEXT.__cstring: 0x691cd
--  __TEXT.__gcc_except_tab: 0x390f8
-+  __TEXT.__cstring: 0x6922f
-+  __TEXT.__gcc_except_tab: 0x391e0
-   __TEXT.__oslogstring: 0x303
-   __TEXT.__ustring: 0xca
--  __TEXT.__unwind_info: 0x142d0
-+  __TEXT.__unwind_info: 0x14318
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x20
--  __DATA_CONST.__objc_selrefs: 0x1970
-+  __DATA_CONST.__objc_selrefs: 0x1988
-   __DATA_CONST.__objc_superrefs: 0x170
-   __DATA_CONST.__objc_arraydata: 0x188
--  __DATA_CONST.__got: 0x5c0
--  __AUTH_CONST.__const: 0x12f00
-+  __DATA_CONST.__got: 0x5c8
-+  __AUTH_CONST.__const: 0x12f20
-   __AUTH_CONST.__cfstring: 0x1b80
-   __AUTH_CONST.__objc_const: 0x6248
-   __AUTH_CONST.__weak_auth_got: 0x158
-   __AUTH_CONST.__objc_arrayobj: 0x1f8
-   __AUTH_CONST.__objc_intobj: 0x60
-   __AUTH_CONST.__objc_dictobj: 0x50
--  __AUTH_CONST.__auth_got: 0xf40
-+  __AUTH_CONST.__auth_got: 0xf58
-   __AUTH.__objc_data: 0x18b0
-   __AUTH.__data: 0x940
-   __AUTH.__thread_vars: 0x18
-
-   __DATA.__objc_ivar: 0x3b8
-   __DATA.__data: 0x4ec
-   __DATA.__common: 0x1399
--  __DATA.__bss: 0x2d98
-+  __DATA.__bss: 0x2dc8
-   __DATA_DIRTY.__objc_data: 0xf0
-   __DATA_DIRTY.__data: 0x1840
-   __DATA_DIRTY.__common: 0x29b8
-
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libxml2.2.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 15887
--  Symbols:   25872
+-  Symbols:   25324
 -  CStrings:  25591
 +  Functions: 15899
-+  Symbols:   25910
++  Symbols:   25361
 +  CStrings:  25593
- 
 Symbols:
 + +[CAT flushDialogStatePersistence]
 + +[CATCommonApi seedDialogStateUsageCount:forCatId:]
@@ -2038,7 +2002,6 @@ Symbols:
 + ____ZN4siri12dialogengine27FlushDialogStatePersistenceEv_block_invoke
 + ____ZN4siri12dialogengineL17CommitDialogStateEP8NSStringP12NSDictionary_block_invoke
 + _dispatch_sync
-+ _objc_msgSend$null
 + _os_unfair_lock_lock
 + _os_unfair_lock_unlock
 - GCC_except_table10001

@@ -2,82 +2,52 @@
 
 > `/System/Library/Frameworks/CallKit.framework/XPCServices/com.apple.CallKit.CallDirectoryMaintenance.xpc/com.apple.CallKit.CallDirectoryMaintenance`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21f9c` | `0x21b00` | **`-0x49c`** |
+| `__TEXT.__objc_stubs` | `0x2a20` | `0x2920` | **`-0x100`** |
+| `__TEXT.__objc_methname` | `0x40d9` | `0x4041` | **`-0x98`** |
+| `__TEXT.__cstring` | `0x84b` | `0x823` | **`-0x28`** |
+| `__DATA.__objc_selrefs` | `0xda8` | `0xd88` | **`-0x20`** |
+| `__TEXT.__auth_stubs` | `0x10d0` | `0x10b0` | **`-0x20`** |
+| `__DATA_CONST.__auth_got` | `0x878` | `0x868` | **`-0x10`** |
+| `__DATA.__data` | `0x7a8` | `0x7a0` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x1e0` | `0x1d8` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x768` | `0x770` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_data`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -145.100.7.2.1
--  __TEXT.__text: 0x21f9c
--  __TEXT.__auth_stubs: 0x10d0
--  __TEXT.__objc_stubs: 0x2a20
 +147.100.5.2.1
-+  __TEXT.__text: 0x21b00
-+  __TEXT.__auth_stubs: 0x10b0
-+  __TEXT.__objc_stubs: 0x2920
-   __TEXT.__objc_methlist: 0x1744
-   __TEXT.__const: 0x440
--  __TEXT.__cstring: 0x84b
--  __TEXT.__objc_methname: 0x40d9
-+  __TEXT.__cstring: 0x823
-+  __TEXT.__objc_methname: 0x4041
-   __TEXT.__objc_classname: 0x517
-   __TEXT.__objc_methtype: 0xf0b
-   __TEXT.__gcc_except_tab: 0x2f4
 
-   __TEXT.__swift_as_entry: 0x28
-   __TEXT.__swift_as_ret: 0x28
-   __TEXT.__swift_as_cont: 0x2c
--  __TEXT.__unwind_info: 0x768
-+  __TEXT.__unwind_info: 0x770
-   __TEXT.__eh_frame: 0x560
-   __DATA_CONST.__const: 0xb50
-   __DATA_CONST.__cfstring: 0x340
-
-   __DATA_CONST.__objc_superrefs: 0x80
-   __DATA_CONST.__objc_arraydata: 0x10
-   __DATA_CONST.__objc_arrayobj: 0x18
--  __DATA_CONST.__auth_got: 0x878
--  __DATA_CONST.__got: 0x1e0
-+  __DATA_CONST.__auth_got: 0x868
-+  __DATA_CONST.__got: 0x1d8
-   __DATA_CONST.__auth_ptr: 0x90
-   __DATA.__objc_const: 0x2968
--  __DATA.__objc_selrefs: 0xda8
-+  __DATA.__objc_selrefs: 0xd88
-   __DATA.__objc_ivar: 0x140
-   __DATA.__objc_data: 0x840
--  __DATA.__data: 0x7a8
-+  __DATA.__data: 0x7a0
-   __DATA.__bss: 0x110
-   __DATA.__common: 0x18
-   - /System/Library/Frameworks/CallKit.framework/CallKit
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 754
 -  Symbols:   248
 -  CStrings:  1013
 +  Symbols:   246
 +  CStrings:  1008
- 
 Symbols:
 + _swift_release_x24
 - _OBJC_CLASS_$_NSUserDefaults

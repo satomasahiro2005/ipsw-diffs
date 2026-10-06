@@ -2,12 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/MailUI.framework/MailUI`
 
-```diff
+### Section Size Changes
 
- 3901.100.1.2.14
--  __TEXT.__text: 0x358700
-+  __TEXT.__text: 0x358924
-   __TEXT.__objc_methlist: 0x9f1c
-   __TEXT.__cstring: 0xeaf9
-   __TEXT.__const: 0x11484
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x358700` | `0x358924` | **`+0x224`** |

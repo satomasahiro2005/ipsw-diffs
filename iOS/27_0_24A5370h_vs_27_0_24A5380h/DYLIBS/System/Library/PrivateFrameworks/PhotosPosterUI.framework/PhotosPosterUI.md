@@ -2,118 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/PhotosPosterUI.framework/PhotosPosterUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__const` | `0x3388` | `0x3260` | **`-0x128`** |
+| `__TEXT.__oslogstring` | `0x4934` | `0x4a2a` | **`+0xf6`** |
+| `__TEXT.__text` | `0xc4834` | `0xc48c4` | **`+0x90`** |
+| `__TEXT.__cstring` | `0x6e73` | `0x6e18` | **`-0x5b`** |
+| `__DATA_CONST.__got` | `0x11a8` | `0x11f8` | **`+0x50`** |
+| `__TEXT.__swift5_capture` | `0x910` | `0x8cc` | **`-0x44`** |
+| `__DATA.__data` | `0x2c28` | `0x2c58` | **`+0x30`** |
+| `__TEXT.__constg_swiftt` | `0x1784` | `0x1754` | **`-0x30`** |
+| `__TEXT.__swift5_typeref` | `0x50ec` | `0x50c2` | **`-0x2a`** |
+| `__AUTH_CONST.__objc_const` | `0x11898` | `0x118c0` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x2ca0` | `0x2cc8` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x5020` | `0x5000` | **`-0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x72a8` | `0x72c8` | **`+0x20`** |
+| `__TEXT.__const` | `0x2ee0` | `0x2ec0` | **`-0x20`** |
+| `__TEXT.__unwind_info` | `0x3138` | `0x3118` | **`-0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x1ae8` | `0x1b00` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0xa52c` | `0xa534` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0xbc` | `0xb8` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xc4834
--  __TEXT.__objc_methlist: 0xa52c
-+  __TEXT.__text: 0xc48c4
-+  __TEXT.__objc_methlist: 0xa534
-   __TEXT.__dlopen_cstrs: 0x64
--  __TEXT.__const: 0x2ee0
--  __TEXT.__constg_swiftt: 0x1784
--  __TEXT.__swift5_typeref: 0x50ec
-+  __TEXT.__const: 0x2ec0
-+  __TEXT.__constg_swiftt: 0x1754
-+  __TEXT.__swift5_typeref: 0x50c2
-   __TEXT.__swift5_builtin: 0xdc
-   __TEXT.__swift5_reflstr: 0xf71
-   __TEXT.__swift5_fieldmd: 0xb78
-   __TEXT.__swift5_assocty: 0x2d8
-   __TEXT.__swift5_proto: 0xd0
--  __TEXT.__swift5_types: 0xbc
--  __TEXT.__cstring: 0x6e73
--  __TEXT.__swift5_capture: 0x910
--  __TEXT.__oslogstring: 0x4934
-+  __TEXT.__swift5_types: 0xb8
-+  __TEXT.__cstring: 0x6e18
-+  __TEXT.__swift5_capture: 0x8cc
-+  __TEXT.__oslogstring: 0x4a2a
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x10
-   __TEXT.__gcc_except_tab: 0x1928
-   __TEXT.__ustring: 0xdc
--  __TEXT.__unwind_info: 0x3138
-+  __TEXT.__unwind_info: 0x3118
-   __TEXT.__eh_frame: 0x4dc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2ca0
-+  __DATA_CONST.__const: 0x2cc8
-   __DATA_CONST.__objc_classlist: 0x340
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x268
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x72a8
-+  __DATA_CONST.__objc_selrefs: 0x72c8
-   __DATA_CONST.__objc_protorefs: 0x88
-   __DATA_CONST.__objc_superrefs: 0x268
-   __DATA_CONST.__objc_arraydata: 0x60
--  __DATA_CONST.__got: 0x11a8
--  __AUTH_CONST.__const: 0x3388
--  __AUTH_CONST.__cfstring: 0x5020
--  __AUTH_CONST.__objc_const: 0x11898
-+  __DATA_CONST.__got: 0x11f8
-+  __AUTH_CONST.__const: 0x3260
-+  __AUTH_CONST.__cfstring: 0x5000
-+  __AUTH_CONST.__objc_const: 0x118c0
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__objc_doubleobj: 0x60
-   __AUTH_CONST.__objc_intobj: 0xf0
--  __AUTH_CONST.__auth_got: 0x1ae8
-+  __AUTH_CONST.__auth_got: 0x1b00
-   __AUTH.__objc_data: 0x3058
-   __AUTH.__data: 0x9b8
-   __DATA.__objc_ivar: 0xa7c
--  __DATA.__data: 0x2c28
-+  __DATA.__data: 0x2c58
-   __DATA.__bss: 0x1dd0
-   __DATA.__common: 0x1a0
-   __DATA_DIRTY.__objc_data: 0xa0
+-910.21.101.0.0
++910.27.103.0.0
 
-   - /System/Library/PrivateFrameworks/ShareSheet.framework/ShareSheet
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
 -  - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5301
--  Symbols:   14645
+-  Symbols:   7075
+-  CStrings:  1240
 +  Functions: 5288
-+  Symbols:   14644
-   CStrings:  1876
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__objc_ivar : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   7081
++  CStrings:  1241
 Symbols:
 + -[PUParallaxLayerStackViewModelUpdater renderOutfillRevealImageForViewModel:completion:]
 + GCC_except_table1894
@@ -188,12 +114,6 @@ Symbols:
 + _kCFAllocatorDefault
 + _kCGColorSpaceSRGB
 + _kCVPixelBufferIOSurfacePropertiesKey
-+ _objc_msgSend$imageByApplyingTransform:
-+ _objc_msgSend$imageByCompositingOverImage:
-+ _objc_msgSend$imageFromImageLayer:
-+ _objc_msgSend$initWithOptions:
-+ _objc_msgSend$render:toCVPixelBuffer:bounds:colorSpace:
-+ _objc_msgSend$renderOutfillRevealImageForViewModel:completion:
 - GCC_except_table1893
 - GCC_except_table1904
 - GCC_except_table1908
@@ -257,9 +177,6 @@ Symbols:
 - ___swift_closure_destructor.11Tm
 - ___swift_closure_destructor.2Tm
 - _get_type_metadata 15Synchronization6AtomicVySbG noncopyable
-- _objc_msgSend$CVPixelBuffer
-- _objc_msgSend$buffer
-- _objc_msgSend$renderRevealImageWithCompletion:
 - _swift_runtimeSupportsNoncopyableTypes
 - _symbolic _____Sg So11CVBufferRefa
 - _symbolic _____SgIegg_ So11CVBufferRefa
@@ -272,5 +189,4 @@ CStrings:
 - "PHOTOS_WALLPAPER_EDITOR_OUTFILL_FAILED_NETWORK_MESSAGE"
 - "PHOTOS_WALLPAPER_EDITOR_OUTFILL_FAILED_NETWORK_WLAN_MESSAGE"
 - "wapi"
-
 ```

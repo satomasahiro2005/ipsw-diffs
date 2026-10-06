@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ActivityAchievementsUI.framework/ActivityAchievementsUI`
 
-```diff
+### Section Size Changes
 
- 2027.0.22.0.0
--  __TEXT.__text: 0x35a4c
-+  __TEXT.__text: 0x35a44
-   __TEXT.__objc_methlist: 0x18c0
-   __TEXT.__const: 0x840
-   __TEXT.__cstring: 0x101a
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x35a4c` | `0x35a44` | **`-0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_212580ab4 -> sub_212d54ab4 : 3664 -> 3660
 ~ -[AAUIBadgeImageFactory _availableAchievementsForStackType:andAchievements:] : 304 -> 308

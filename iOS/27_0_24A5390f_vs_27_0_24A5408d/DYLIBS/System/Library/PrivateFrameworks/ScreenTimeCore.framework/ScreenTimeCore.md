@@ -2,109 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/ScreenTimeCore.framework/ScreenTimeCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf3a7c` | `0xfb294` | **`+0x7818`** |
+| `__TEXT.__oslogstring` | `0xbafa` | `0xbfea` | **`+0x4f0`** |
+| `__AUTH_CONST.__objc_const` | `0x13178` | `0x13588` | **`+0x410`** |
+| `__TEXT.__cstring` | `0xa52c` | `0xa84c` | **`+0x320`** |
+| `__AUTH_CONST.__const` | `0x3308` | `0x35f8` | **`+0x2f0`** |
+| `__TEXT.__eh_frame` | `0x3d90` | `0x4078` | **`+0x2e8`** |
+| `__AUTH_CONST.__cfstring` | `0x97e0` | `0x9a80` | **`+0x2a0`** |
+| `__TEXT.__objc_methlist` | `0xa140` | `0xa388` | **`+0x248`** |
+| `__TEXT.__const` | `0x32a8` | `0x3458` | **`+0x1b0`** |
+| `__AUTH_CONST.__auth_got` | `0x1190` | `0x1328` | **`+0x198`** |
+| `__TEXT.__unwind_info` | `0x3df8` | `0x3f40` | **`+0x148`** |
+| `__DATA_CONST.__objc_selrefs` | `0x53d8` | `0x54c8` | **`+0xf0`** |
+| `__TEXT.__constg_swiftt` | `0xd0c` | `0xde8` | **`+0xdc`** |
+| `__AUTH.__objc_data` | `0x31a8` | `0x3248` | **`+0xa0`** |
+| `__TEXT.__swift5_capture` | `0xa84` | `0xb08` | **`+0x84`** |
+| `__TEXT.__swift5_typeref` | `0x14cc` | `0x1544` | **`+0x78`** |
+| `__DATA.__data` | `0x21b0` | `0x2200` | **`+0x50`** |
+| `__DATA_CONST.__const` | `0x1d48` | `0x1d98` | **`+0x50`** |
+| `__TEXT.__swift5_fieldmd` | `0x9b4` | `0xa00` | **`+0x4c`** |
+| `__DATA_CONST.__got` | `0xe90` | `0xed8` | **`+0x48`** |
+| `__DATA_DIRTY.__objc_data` | `0x1f18` | `0x1f40` | **`+0x28`** |
+| `__DATA.__objc_ivar` | `0x7bc` | `0x7e0` | **`+0x24`** |
+| `__TEXT.__swift5_reflstr` | `0x7be` | `0x7de` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x180` | `0x198` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x6e0` | `0x6f0` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x4c0` | `0x4d0` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0xe8` | `0xf4` | **`+0xc`** |
+| `__TEXT.__swift_as_entry` | `0x158` | `0x164` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `0x188` | `0x194` | **`+0xc`** |
+| `__TEXT.__swift_as_cont` | `0x220` | `0x228` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x1b30` | `0x1b2c` | **`-0x4`** |
+| `__TEXT.__swift5_proto` | `0x210` | `0x214` | **`+0x4`** |
+| `__TEXT.__swift5_protos` | `0x10` | `0x14` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -649.0.0.0.0
--  __TEXT.__text: 0xf3a7c
--  __TEXT.__objc_methlist: 0xa140
--  __TEXT.__const: 0x32a8
--  __TEXT.__cstring: 0xa52c
--  __TEXT.__oslogstring: 0xbafa
--  __TEXT.__gcc_except_tab: 0x1b30
--  __TEXT.__swift5_typeref: 0x14cc
--  __TEXT.__constg_swiftt: 0xd0c
 +655.0.101.0.0
-+  __TEXT.__text: 0xfb294
-+  __TEXT.__objc_methlist: 0xa388
-+  __TEXT.__const: 0x3458
-+  __TEXT.__cstring: 0xa84c
-+  __TEXT.__oslogstring: 0xbfea
-+  __TEXT.__gcc_except_tab: 0x1b2c
-+  __TEXT.__swift5_typeref: 0x1544
-+  __TEXT.__constg_swiftt: 0xde8
-   __TEXT.__swift5_builtin: 0xf0
--  __TEXT.__swift5_reflstr: 0x7be
--  __TEXT.__swift5_fieldmd: 0x9b4
-+  __TEXT.__swift5_reflstr: 0x7de
-+  __TEXT.__swift5_fieldmd: 0xa00
-   __TEXT.__swift5_assocty: 0x138
--  __TEXT.__swift5_proto: 0x210
--  __TEXT.__swift5_types: 0xe8
--  __TEXT.__swift5_capture: 0xa84
--  __TEXT.__swift5_protos: 0x10
--  __TEXT.__swift_as_entry: 0x158
--  __TEXT.__swift_as_ret: 0x188
--  __TEXT.__swift_as_cont: 0x220
-+  __TEXT.__swift5_proto: 0x214
-+  __TEXT.__swift5_types: 0xf4
-+  __TEXT.__swift5_capture: 0xb08
-+  __TEXT.__swift5_protos: 0x14
-+  __TEXT.__swift_as_entry: 0x164
-+  __TEXT.__swift_as_ret: 0x194
-+  __TEXT.__swift_as_cont: 0x228
-   __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__unwind_info: 0x3df8
--  __TEXT.__eh_frame: 0x3d90
-+  __TEXT.__unwind_info: 0x3f40
-+  __TEXT.__eh_frame: 0x4078
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1d48
--  __DATA_CONST.__objc_classlist: 0x6e0
-+  __DATA_CONST.__const: 0x1d98
-+  __DATA_CONST.__objc_classlist: 0x6f0
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x240
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x53d8
-+  __DATA_CONST.__objc_selrefs: 0x54c8
-   __DATA_CONST.__objc_protorefs: 0x138
--  __DATA_CONST.__objc_superrefs: 0x4c0
-+  __DATA_CONST.__objc_superrefs: 0x4d0
-   __DATA_CONST.__objc_arraydata: 0x260
--  __DATA_CONST.__got: 0xe90
--  __AUTH_CONST.__const: 0x3308
--  __AUTH_CONST.__cfstring: 0x97e0
--  __AUTH_CONST.__objc_const: 0x13178
--  __AUTH_CONST.__objc_intobj: 0x180
-+  __DATA_CONST.__got: 0xed8
-+  __AUTH_CONST.__const: 0x35f8
-+  __AUTH_CONST.__cfstring: 0x9a80
-+  __AUTH_CONST.__objc_const: 0x13588
-+  __AUTH_CONST.__objc_intobj: 0x198
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__objc_arrayobj: 0x180
-   __AUTH_CONST.__objc_dictobj: 0xf0
--  __AUTH_CONST.__auth_got: 0x1190
--  __AUTH.__objc_data: 0x31a8
-+  __AUTH_CONST.__auth_got: 0x1328
-+  __AUTH.__objc_data: 0x3248
-   __AUTH.__data: 0x500
--  __DATA.__objc_ivar: 0x7bc
--  __DATA.__data: 0x21b0
-+  __DATA.__objc_ivar: 0x7e0
-+  __DATA.__data: 0x2200
-   __DATA.__bss: 0x3f80
-   __DATA.__common: 0xd0
--  __DATA_DIRTY.__objc_data: 0x1f18
-+  __DATA_DIRTY.__objc_data: 0x1f40
-   __DATA_DIRTY.__data: 0x278
-   __DATA_DIRTY.__bss: 0x1c0
-   __DATA_DIRTY.__common: 0x30
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5840
--  Symbols:   8650
+-  Symbols:   6742
 -  CStrings:  2237
 +  Functions: 5958
-+  Symbols:   8752
++  Symbols:   6815
 +  CStrings:  2279
- 
 Symbols:
 + +[STCoreOrganizationSettings keyPathsForValuesAffectingContentPrivacyAccessibilityAskRestriction]
 + +[STCoreUser(UnmodeledInternal) keyPathsForValuesAffectingContentPrivacyAccessibilityAskRestriction]
@@ -190,35 +138,6 @@ Symbols:
 + ___swift_closure_destructor.129Tm
 + ___swift_closure_destructor.32Tm
 + ___swift_closure_destructor.36Tm
-+ _objc_msgSend$URLByAppendingPathComponent:
-+ _objc_msgSend$allowChangesToShareMyLocationForDSID:completion:
-+ _objc_msgSend$applyExpressIntroductionSettingsDefaults:error:
-+ _objc_msgSend$childAccounts
-+ _objc_msgSend$communicationSafetyHasStrictPolicy
-+ _objc_msgSend$communicationSafetyIsEnabled
-+ _objc_msgSend$contentPrivacyAccessibilityAskRestriction
-+ _objc_msgSend$contentRestrictionsHasStrictPolicy
-+ _objc_msgSend$contentRestrictionsIsEnabled
-+ _objc_msgSend$contentRestrictionsValueByKey
-+ _objc_msgSend$familyAccount
-+ _objc_msgSend$familyAccountType
-+ _objc_msgSend$isEurekaEnabled
-+ _objc_msgSend$migrationEligible
-+ _objc_msgSend$migrationOutcome
-+ _objc_msgSend$migrationSelection
-+ _objc_msgSend$migrationStatus
-+ _objc_msgSend$migrationType
-+ _objc_msgSend$recordMigrationUpdateForAltDSID:update:completionHandler:
-+ _objc_msgSend$restrictionsImmutableCopy
-+ _objc_msgSend$restrictionsWithIsEnabled:valueByAgePresetKey:
-+ _objc_msgSend$screenDistanceHasStrictPolicy
-+ _objc_msgSend$screenDistanceIsEnabled
-+ _objc_msgSend$setAllowChangesToShareMyLocation:forDSID:completion:
-+ _objc_msgSend$setAllowedSiriVersionFooterHidden:
-+ _objc_msgSend$setCommunicationSafetyEnabled:error:
-+ _objc_msgSend$setContentPrivacyAccessibilityAskRestriction:
-+ _objc_msgSend$setSiriAIIsHidden:
-+ _objc_msgSend$setWebFilterState:error:
 + _symbolic $s14ScreenTimeCore019ExpressIntroductionaB16SettingsApplyingP
 + _symbolic _____ 14ScreenTimeCore0aB30SettingsRestrictionsTranslatorO
 + _symbolic _____ 14ScreenTimeCore0aB32SettingsServiceClientTranslationO

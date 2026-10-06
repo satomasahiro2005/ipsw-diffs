@@ -2,130 +2,71 @@
 
 > `/System/Library/PrivateFrameworks/AgentCanvasUICore.framework/AgentCanvasUICore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5b51ac` | `0x517c44` | **`-0x9d568`** |
+| `__TEXT.__const` | `0x45a14` | `0x3de14` | **`-0x7c00`** |
+| `__DATA.__bss` | `0x32b70` | `0x2b330` | **`-0x7840`** |
+| `__AUTH_CONST.__const` | `0x2c938` | `0x26668` | **`-0x62d0`** |
+| `__DATA_DIRTY.__data` | `0x10de8` | `0xe088` | **`-0x2d60`** |
+| `__DATA_DIRTY.__bss` | `0xe0b0` | `0xb530` | **`-0x2b80`** |
+| `__TEXT.__cstring` | `0x12ffc` | `0x1074c` | **`-0x28b0`** |
+| `__TEXT.__swift5_typeref` | `0x3ff7e` | `0x3d6d6` | **`-0x28a8`** |
+| `__TEXT.__unwind_info` | `0x15d98` | `0x13978` | **`-0x2420`** |
+| `__TEXT.__swift5_fieldmd` | `0x125c4` | `0x101c4` | **`-0x2400`** |
+| `__TEXT.__constg_swiftt` | `0x16548` | `0x14bd0` | **`-0x1978`** |
+| `__TEXT.__swift5_reflstr` | `0x10ea5` | `0xf5d1` | **`-0x18d4`** |
+| `__TEXT.__swift5_capture` | `0x7d64` | `0x6aac` | **`-0x12b8`** |
+| `__TEXT.__eh_frame` | `0x157ec` | `0x147e4` | **`-0x1008`** |
+| `__AUTH_CONST.__auth_got` | `0x43f0` | `0x4c70` | **`+0x880`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1ce8` | `0x1540` | **`-0x7a8`** |
+| `__AUTH_CONST.__objc_const` | `0xaf30` | `0xa828` | **`-0x708`** |
+| `__TEXT.__swift5_assocty` | `0x4698` | `0x4048` | **`-0x650`** |
+| `__TEXT.__swift5_proto` | `0x2144` | `0x1b70` | **`-0x5d4`** |
+| `__TEXT.__oslogstring` | `0x3983` | `0x3523` | **`-0x460`** |
+| `__DATA_CONST.__got` | `0x2440` | `0x27a0` | **`+0x360`** |
+| `__AUTH.__data` | `0x85c0` | `0x88b0` | **`+0x2f0`** |
+| `__TEXT.__swift5_types` | `0x157c` | `0x12f4` | **`-0x288`** |
+| `__DATA.__data` | `0xfa88` | `0xf838` | **`-0x250`** |
+| `__DATA_DIRTY.__objc_data` | `0xfe8` | `0xe08` | **`-0x1e0`** |
+| `__DATA.__common` | `0x11a8` | `0x1008` | **`-0x1a0`** |
+| `__DATA_DIRTY.__common` | `0x321` | `0x289` | **`-0x98`** |
+| `__TEXT.__objc_methlist` | `0x1554` | `0x14d4` | **`-0x80`** |
+| `__TEXT.__swift5_builtin` | `0x334` | `0x2d0` | **`-0x64`** |
+| `__DATA_CONST.__const` | `0x9f0` | `0x990` | **`-0x60`** |
+| `__DATA_CONST.__objc_classlist` | `0x488` | `0x450` | **`-0x38`** |
+| `__AUTH.__objc_data` | `0x1570` | `0x15a0` | **`+0x30`** |
+| `__TEXT.__swift5_protos` | `0x11c` | `0xec` | **`-0x30`** |
+| `__TEXT.__swift_as_cont` | `0x9b0` | `0x984` | **`-0x2c`** |
+| `__TEXT.__swift_as_entry` | `0x534` | `0x518` | **`-0x1c`** |
+| `__TEXT.__swift5_mpenum` | `0x110` | `0xfc` | **`-0x14`** |
+| `__DATA_CONST.__objc_protolist` | `0x100` | `0xf0` | **`-0x10`** |
+| `__TEXT.__swift_as_ret` | `0x528` | `0x518` | **`-0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x80` | `0x78` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -73.0.24.109.0
--  __TEXT.__text: 0x57d1c0
--  __TEXT.__objc_methlist: 0x1554
--  __TEXT.__const: 0x45a14
--  __TEXT.__constg_swiftt: 0x16548
--  __TEXT.__swift5_typeref: 0x3ff7e
--  __TEXT.__swift5_builtin: 0x334
--  __TEXT.__swift5_reflstr: 0x10ea5
--  __TEXT.__swift5_fieldmd: 0x125c4
--  __TEXT.__swift5_assocty: 0x4698
--  __TEXT.__swift5_proto: 0x2144
--  __TEXT.__swift5_types: 0x157c
--  __TEXT.__cstring: 0x12ffc
--  __TEXT.__swift5_capture: 0x7d64
--  __TEXT.__swift5_protos: 0x11c
--  __TEXT.__swift_as_entry: 0x534
--  __TEXT.__swift_as_ret: 0x528
--  __TEXT.__swift_as_cont: 0x9b0
--  __TEXT.__oslogstring: 0x3983
--  __TEXT.__swift5_mpenum: 0x110
--  __TEXT.__unwind_info: 0x1abc0
--  __TEXT.__eh_frame: 0x15824
 +3605.1.1.1.5
-+  __TEXT.__text: 0x4e15dc
-+  __TEXT.__objc_methlist: 0x14d4
-+  __TEXT.__const: 0x3de14
-+  __TEXT.__constg_swiftt: 0x14bd0
-+  __TEXT.__swift5_typeref: 0x3d6d6
-+  __TEXT.__swift5_builtin: 0x2d0
-+  __TEXT.__swift5_reflstr: 0xf5d1
-+  __TEXT.__swift5_fieldmd: 0x101c4
-+  __TEXT.__swift5_assocty: 0x4048
-+  __TEXT.__swift5_proto: 0x1b70
-+  __TEXT.__swift5_types: 0x12f4
-+  __TEXT.__swift5_capture: 0x6aac
-+  __TEXT.__cstring: 0x1074c
-+  __TEXT.__swift_as_entry: 0x518
-+  __TEXT.__swift_as_ret: 0x518
-+  __TEXT.__swift_as_cont: 0x984
-+  __TEXT.__swift5_protos: 0xec
-+  __TEXT.__oslogstring: 0x3523
-+  __TEXT.__swift5_mpenum: 0xfc
-+  __TEXT.__unwind_info: 0x18020
-+  __TEXT.__eh_frame: 0x1481c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9f0
--  __DATA_CONST.__objc_classlist: 0x488
-+  __DATA_CONST.__const: 0x990
-+  __DATA_CONST.__objc_classlist: 0x450
-   __DATA_CONST.__objc_catlist: 0x8
--  __DATA_CONST.__objc_protolist: 0x100
-+  __DATA_CONST.__objc_protolist: 0xf0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1ce8
--  __DATA_CONST.__objc_protorefs: 0x80
--  __DATA_CONST.__got: 0x2440
--  __AUTH_CONST.__const: 0x2c938
--  __AUTH_CONST.__objc_const: 0xaf30
--  __AUTH_CONST.__auth_got: 0x43f0
--  __AUTH.__objc_data: 0x1570
--  __AUTH.__data: 0x85c0
--  __DATA.__data: 0xfa88
--  __DATA.__common: 0x11a8
--  __DATA_DIRTY.__objc_data: 0xfe8
--  __DATA_DIRTY.__data: 0x10de8
--  __DATA_DIRTY.__bss: 0xe0b0
--  __DATA_DIRTY.__common: 0x321
-+  __DATA_CONST.__objc_selrefs: 0x1540
-+  __DATA_CONST.__objc_protorefs: 0x78
-+  __DATA_CONST.__got: 0x27a0
-+  __AUTH_CONST.__const: 0x26668
-+  __AUTH_CONST.__objc_const: 0xa828
-+  __AUTH_CONST.__auth_got: 0x4c70
-+  __AUTH.__objc_data: 0x15a0
-+  __AUTH.__data: 0x88b0
-+  __DATA.__data: 0xf838
-+  __DATA.__common: 0x1008
-+  __DATA_DIRTY.__objc_data: 0xe08
-+  __DATA_DIRTY.__data: 0xe088
-+  __DATA_DIRTY.__bss: 0xb530
-+  __DATA_DIRTY.__common: 0x289
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /System/Library/Frameworks/WebKit.framework/WebKit
-   - /System/Library/Frameworks/_DataDetection_SwiftUI.framework/_DataDetection_SwiftUI
-   - /System/Library/PrivateFrameworks/AgentCanvasFoundation.framework/AgentCanvasFoundation
 +  - /System/Library/PrivateFrameworks/AgentCanvasModel.framework/AgentCanvasModel
-   - /System/Library/PrivateFrameworks/AgentCanvasUIFoundation.framework/AgentCanvasUIFoundation
-   - /System/Library/PrivateFrameworks/AssistantUICore.framework/AssistantUICore
-   - /System/Library/PrivateFrameworks/BubbleKit.framework/BubbleKit
+
 -  - /System/Library/PrivateFrameworks/CampoMarkdown.framework/CampoMarkdown
-   - /System/Library/PrivateFrameworks/CoreSVG.framework/CoreSVG
-   - /System/Library/PrivateFrameworks/MathTypesetting.framework/MathTypesetting
+
 -  - /System/Library/PrivateFrameworks/RenderBox.framework/RenderBox
-   - /System/Library/PrivateFrameworks/ShareSheet.framework/ShareSheet
-   - /System/Library/PrivateFrameworks/SiriAppIntents.framework/SiriAppIntents
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
 -  - /usr/lib/swift/libswiftCallKit.dylib
-   - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 37208
--  Symbols:   10874
+-  Symbols:   10078
 -  CStrings:  1808
 +  Functions: 32780
-+  Symbols:   9974
++  Symbols:   9420
 +  CStrings:  1460
- 
 Symbols:
 + _CGBitmapContextCreate
 + _CGBitmapContextCreateImage
@@ -316,14 +257,6 @@ Symbols:
 + _get_witness_table s12IdentifiableRzl7SwiftUI12TupleContentVy17AgentCanvasUICore18TapToRadarMenuViewVSg_AB0L0VyAB5LabelVyAB4TextVAB5ImageVGADyAE014InternalCopyAsL0VSg_AB6ButtonVyAQGAWSgAWQPGGQPGAB0M0HPAhBA0_HpAgBA0_HPyHC_HC_AzBA0_HPyHCHX_HC
 + _keypath_get_selector_enableStickyTableHeaders
 + _keypath_get_selector_forceSharingDisabled
-+ _objc_msgSend$_enableStickyTableHeaders
-+ _objc_msgSend$_forceSharingDisabled
-+ _objc_msgSend$enableStickyTableHeaders
-+ _objc_msgSend$forceSharingDisabled
-+ _objc_msgSend$setEnableStickyTableHeaders:
-+ _objc_msgSend$setForceSharingDisabled:
-+ _objc_msgSend$set_enableStickyTableHeaders:
-+ _objc_msgSend$set_forceSharingDisabled:
 + _swift_projectBox
 + _swift_release_x3
 + _symbolic $s16AgentCanvasModel10ProcessingP
@@ -1496,256 +1429,6 @@ Symbols:
 - _keypath_get_selector_enableTextCustomVerticalOffset
 - _keypath_get_selector_hideCoreResponseHeadingLikeElementsInIsland
 - _log10
-- _objc_msgSend$_enableTextCustomVerticalOffset
-- _objc_msgSend$_hideCoreResponseHeadingLikeElementsInIsland
-- _objc_msgSend$_setAllowsTapToLoad:
-- _objc_msgSend$_setApplyCornerRadius:
-- _objc_msgSend$_setDisableAnimations:
-- _objc_msgSend$_setDisableTapGesture:
-- _objc_msgSend$_setUsesDeferredLayout:
-- _objc_msgSend$acreFeet
-- _objc_msgSend$acres
-- _objc_msgSend$ampereHours
-- _objc_msgSend$amperes
-- _objc_msgSend$arcMinutes
-- _objc_msgSend$arcSeconds
-- _objc_msgSend$ares
-- _objc_msgSend$astronomicalUnits
-- _objc_msgSend$bars
-- _objc_msgSend$bits
-- _objc_msgSend$blueColor
-- _objc_msgSend$boolValue
-- _objc_msgSend$boundingRectWithSize:options:context:
-- _objc_msgSend$bushels
-- _objc_msgSend$bytes
-- _objc_msgSend$calories
-- _objc_msgSend$carats
-- _objc_msgSend$caseSensitive
-- _objc_msgSend$celsius
-- _objc_msgSend$centigrams
-- _objc_msgSend$centiliters
-- _objc_msgSend$centimeters
-- _objc_msgSend$charactersToBeSkipped
-- _objc_msgSend$coulombs
-- _objc_msgSend$cubicCentimeters
-- _objc_msgSend$cubicDecimeters
-- _objc_msgSend$cubicFeet
-- _objc_msgSend$cubicInches
-- _objc_msgSend$cubicKilometers
-- _objc_msgSend$cubicMeters
-- _objc_msgSend$cubicMiles
-- _objc_msgSend$cubicMillimeters
-- _objc_msgSend$cubicYards
-- _objc_msgSend$cups
-- _objc_msgSend$dateFromString:
-- _objc_msgSend$decameters
-- _objc_msgSend$decigrams
-- _objc_msgSend$deciliters
-- _objc_msgSend$decimalSeparator
-- _objc_msgSend$decimeters
-- _objc_msgSend$degrees
-- _objc_msgSend$description
-- _objc_msgSend$doubleValue
-- _objc_msgSend$enableTextCustomVerticalOffset
-- _objc_msgSend$escapedPatternForString:
-- _objc_msgSend$exabits
-- _objc_msgSend$exabytes
-- _objc_msgSend$exbibits
-- _objc_msgSend$exbibytes
-- _objc_msgSend$fahrenheit
-- _objc_msgSend$fathoms
-- _objc_msgSend$feet
-- _objc_msgSend$femtowatts
-- _objc_msgSend$fluidOunces
-- _objc_msgSend$framesPerSecond
-- _objc_msgSend$furlongs
-- _objc_msgSend$gallons
-- _objc_msgSend$gibibits
-- _objc_msgSend$gibibytes
-- _objc_msgSend$gigabits
-- _objc_msgSend$gigabytes
-- _objc_msgSend$gigahertz
-- _objc_msgSend$gigapascals
-- _objc_msgSend$gigawatts
-- _objc_msgSend$gradians
-- _objc_msgSend$grams
-- _objc_msgSend$gramsPerLiter
-- _objc_msgSend$gravity
-- _objc_msgSend$greenColor
-- _objc_msgSend$hectares
-- _objc_msgSend$hectometers
-- _objc_msgSend$hectopascals
-- _objc_msgSend$hertz
-- _objc_msgSend$hideCoreResponseHeadingLikeElementsInIsland
-- _objc_msgSend$horsepower
-- _objc_msgSend$hours
-- _objc_msgSend$imperialFluidOunces
-- _objc_msgSend$imperialGallons
-- _objc_msgSend$imperialPints
-- _objc_msgSend$imperialQuarts
-- _objc_msgSend$imperialTablespoons
-- _objc_msgSend$imperialTeaspoons
-- _objc_msgSend$inches
-- _objc_msgSend$inchesOfMercury
-- _objc_msgSend$initWithMetadata:
-- _objc_msgSend$initWithObject:
-- _objc_msgSend$initWithURL:
-- _objc_msgSend$integerValue
-- _objc_msgSend$isAtEnd
-- _objc_msgSend$isSubclassOfClass:
-- _objc_msgSend$joules
-- _objc_msgSend$kelvin
-- _objc_msgSend$kibibits
-- _objc_msgSend$kibibytes
-- _objc_msgSend$kiloampereHours
-- _objc_msgSend$kiloamperes
-- _objc_msgSend$kilobits
-- _objc_msgSend$kilobytes
-- _objc_msgSend$kilocalories
-- _objc_msgSend$kilograms
-- _objc_msgSend$kilohertz
-- _objc_msgSend$kilojoules
-- _objc_msgSend$kiloliters
-- _objc_msgSend$kilometers
-- _objc_msgSend$kilometersPerHour
-- _objc_msgSend$kiloohms
-- _objc_msgSend$kilopascals
-- _objc_msgSend$kilovolts
-- _objc_msgSend$kilowattHours
-- _objc_msgSend$kilowatts
-- _objc_msgSend$knots
-- _objc_msgSend$lightyears
-- _objc_msgSend$liters
-- _objc_msgSend$litersPer100Kilometers
-- _objc_msgSend$lux
-- _objc_msgSend$mebibits
-- _objc_msgSend$mebibytes
-- _objc_msgSend$megaampereHours
-- _objc_msgSend$megaamperes
-- _objc_msgSend$megabits
-- _objc_msgSend$megabytes
-- _objc_msgSend$megahertz
-- _objc_msgSend$megaliters
-- _objc_msgSend$megameters
-- _objc_msgSend$megaohms
-- _objc_msgSend$megapascals
-- _objc_msgSend$megavolts
-- _objc_msgSend$megawatts
-- _objc_msgSend$meters
-- _objc_msgSend$metersPerSecond
-- _objc_msgSend$metersPerSecondSquared
-- _objc_msgSend$metricCups
-- _objc_msgSend$metricTons
-- _objc_msgSend$microampereHours
-- _objc_msgSend$microamperes
-- _objc_msgSend$micrograms
-- _objc_msgSend$microhertz
-- _objc_msgSend$micrometers
-- _objc_msgSend$microohms
-- _objc_msgSend$microseconds
-- _objc_msgSend$microvolts
-- _objc_msgSend$microwatts
-- _objc_msgSend$miles
-- _objc_msgSend$milesPerGallon
-- _objc_msgSend$milesPerHour
-- _objc_msgSend$milesPerImperialGallon
-- _objc_msgSend$milliampereHours
-- _objc_msgSend$milliamperes
-- _objc_msgSend$millibars
-- _objc_msgSend$milligrams
-- _objc_msgSend$milligramsPerDeciliter
-- _objc_msgSend$millihertz
-- _objc_msgSend$milliliters
-- _objc_msgSend$millimeters
-- _objc_msgSend$millimetersOfMercury
-- _objc_msgSend$milliohms
-- _objc_msgSend$milliseconds
-- _objc_msgSend$millivolts
-- _objc_msgSend$milliwatts
-- _objc_msgSend$minutes
-- _objc_msgSend$nanograms
-- _objc_msgSend$nanohertz
-- _objc_msgSend$nanometers
-- _objc_msgSend$nanoseconds
-- _objc_msgSend$nanowatts
-- _objc_msgSend$nauticalMiles
-- _objc_msgSend$newtonsPerMetersSquared
-- _objc_msgSend$nibbles
-- _objc_msgSend$numberFromString:
-- _objc_msgSend$numberStyle
-- _objc_msgSend$ohms
-- _objc_msgSend$ounces
-- _objc_msgSend$ouncesTroy
-- _objc_msgSend$parsecs
-- _objc_msgSend$partsPerMillion
-- _objc_msgSend$pebibits
-- _objc_msgSend$pebibytes
-- _objc_msgSend$petabits
-- _objc_msgSend$petabytes
-- _objc_msgSend$picograms
-- _objc_msgSend$picometers
-- _objc_msgSend$picoseconds
-- _objc_msgSend$picowatts
-- _objc_msgSend$pints
-- _objc_msgSend$poundsForcePerSquareInch
-- _objc_msgSend$poundsMass
-- _objc_msgSend$quarts
-- _objc_msgSend$radians
-- _objc_msgSend$redColor
-- _objc_msgSend$revolutions
-- _objc_msgSend$scandinavianMiles
-- _objc_msgSend$seconds
-- _objc_msgSend$setCaseSensitive:
-- _objc_msgSend$setClipsToBounds:
-- _objc_msgSend$setCornerRadius:
-- _objc_msgSend$setEnableTextCustomVerticalOffset:
-- _objc_msgSend$setHideCoreResponseHeadingLikeElementsInIsland:
-- _objc_msgSend$setLocale:
-- _objc_msgSend$setLocalizedDateFormatFromTemplate:
-- _objc_msgSend$setMaximumFractionDigits:
-- _objc_msgSend$setMinimumFractionDigits:
-- _objc_msgSend$setNumberFormatter:
-- _objc_msgSend$setNumberStyle:
-- _objc_msgSend$setTitle:
-- _objc_msgSend$setURL:
-- _objc_msgSend$setUnitOptions:
-- _objc_msgSend$setUnitStyle:
-- _objc_msgSend$set_enableTextCustomVerticalOffset:
-- _objc_msgSend$set_hideCoreResponseHeadingLikeElementsInIsland:
-- _objc_msgSend$shortTons
-- _objc_msgSend$slugs
-- _objc_msgSend$squareCentimeters
-- _objc_msgSend$squareFeet
-- _objc_msgSend$squareInches
-- _objc_msgSend$squareKilometers
-- _objc_msgSend$squareMegameters
-- _objc_msgSend$squareMeters
-- _objc_msgSend$squareMicrometers
-- _objc_msgSend$squareMiles
-- _objc_msgSend$squareMillimeters
-- _objc_msgSend$squareNanometers
-- _objc_msgSend$squareYards
-- _objc_msgSend$stones
-- _objc_msgSend$stringFromNumber:
-- _objc_msgSend$tablespoons
-- _objc_msgSend$teaspoons
-- _objc_msgSend$tebibits
-- _objc_msgSend$tebibytes
-- _objc_msgSend$terabits
-- _objc_msgSend$terabytes
-- _objc_msgSend$terahertz
-- _objc_msgSend$terawatts
-- _objc_msgSend$volts
-- _objc_msgSend$watts
-- _objc_msgSend$yards
-- _objc_msgSend$yobibits
-- _objc_msgSend$yobibytes
-- _objc_msgSend$yottabits
-- _objc_msgSend$yottabytes
-- _objc_msgSend$zebibits
-- _objc_msgSend$zebibytes
-- _objc_msgSend$zettabits
-- _objc_msgSend$zettabytes
 - _objc_release_x1
 - _objc_retain_x9
 - _os_variant_has_internal_ui

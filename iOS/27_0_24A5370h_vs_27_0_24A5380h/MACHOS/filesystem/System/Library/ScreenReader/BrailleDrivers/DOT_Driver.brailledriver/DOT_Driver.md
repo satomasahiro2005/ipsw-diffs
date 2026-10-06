@@ -2,17 +2,23 @@
 
 > `/System/Library/ScreenReader/BrailleDrivers/DOT Driver.brailledriver/DOT Driver`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2b30` | `0x2b40` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2b30
-+  __TEXT.__text: 0x2b40
-   __TEXT.__auth_stubs: 0x2d0
-   __TEXT.__objc_stubs: 0xc20
-   __TEXT.__objc_methlist: 0x71c
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__unwind_info : content changed
+-458.0.0.0.0
++460.0.0.0.0
 Functions:
 ~ sub_26e8 : 1512 -> 1528
-
 ```

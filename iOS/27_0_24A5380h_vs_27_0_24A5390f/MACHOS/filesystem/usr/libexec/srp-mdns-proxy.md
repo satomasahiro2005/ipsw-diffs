@@ -2,42 +2,35 @@
 
 > `/usr/libexec/srp-mdns-proxy`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__cstring`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8b3bc` | `0x8b4f4` | **`+0x138`** |
+| `__TEXT.__oslogstring` | `0x1411d` | `0x141ca` | **`+0xad`** |
+| `__TEXT.__const` | `0x2d5` | `0x2e5` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__cstring`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -3089.0.0.0.1
--  __TEXT.__text: 0x8b3bc
 +3109.0.0.0.0
-+  __TEXT.__text: 0x8b4f4
-   __TEXT.__auth_stubs: 0x15f0
-   __TEXT.__objc_stubs: 0x180
-   __TEXT.__objc_methlist: 0x22c
--  __TEXT.__const: 0x2d5
-+  __TEXT.__const: 0x2e5
-   __TEXT.__cstring: 0x8e75
--  __TEXT.__oslogstring: 0x1411d
-+  __TEXT.__oslogstring: 0x141ca
-   __TEXT.__objc_methname: 0x506
-   __TEXT.__objc_classname: 0x35
-   __TEXT.__objc_methtype: 0x237
 
-   - /usr/lib/libsqlite3.dylib
-   Functions: 489
-   Symbols:   1184
 -  CStrings:  2698
 +  CStrings:  2700
- 
 Functions:
 ~ _dso_state_create : 536 -> 556
 ~ _dns_proxy_input_for_server : 9384 -> 9620

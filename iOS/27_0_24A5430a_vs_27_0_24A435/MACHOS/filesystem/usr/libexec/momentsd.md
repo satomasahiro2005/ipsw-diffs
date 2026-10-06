@@ -2,91 +2,59 @@
 
 > `/usr/libexec/momentsd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x262534` | `0x263d48` | **`+0x1814`** |
+| `__DATA_CONST.__cfstring` | `0x26820` | `0x27240` | **`+0xa20`** |
+| `__TEXT.__oslogstring` | `0x336eb` | `0x33ebb` | **`+0x7d0`** |
+| `__TEXT.__cstring` | `0x2797e` | `0x2805e` | **`+0x6e0`** |
+| `__TEXT.__gcc_except_tab` | `0x82f4` | `0x83cc` | **`+0xd8`** |
+| `__DATA_CONST.__const` | `0xc148` | `0xc1a8` | **`+0x60`** |
+| `__TEXT.__objc_methname` | `0x39b38` | `0x39b78` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x5548` | `0x5560` | **`+0x18`** |
+| `__TEXT.__auth_stubs` | `0x1d00` | `0x1cf0` | **`-0x10`** |
+| `__TEXT.__const` | `0x1480` | `0x1470` | **`-0x10`** |
+| `__DATA_CONST.__auth_got` | `0xe98` | `0xe90` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
- 417.0.0.0.0
--  __TEXT.__text: 0x262534
--  __TEXT.__auth_stubs: 0x1d00
-+  __TEXT.__text: 0x263d48
-+  __TEXT.__auth_stubs: 0x1cf0
-   __TEXT.__objc_stubs: 0x1e960
-   __TEXT.__objc_methlist: 0x11e84
--  __TEXT.__cstring: 0x2797e
-+  __TEXT.__cstring: 0x2805e
-   __TEXT.__objc_classname: 0x1e55
-   __TEXT.__objc_methtype: 0x368e
--  __TEXT.__objc_methname: 0x39b38
--  __TEXT.__oslogstring: 0x336eb
--  __TEXT.__const: 0x1480
--  __TEXT.__gcc_except_tab: 0x82f4
-+  __TEXT.__objc_methname: 0x39b78
-+  __TEXT.__oslogstring: 0x33ebb
-+  __TEXT.__const: 0x1470
-+  __TEXT.__gcc_except_tab: 0x83cc
-   __TEXT.__ustring: 0x4
-   __TEXT.__dlopen_cstrs: 0x51
-   __TEXT.__constg_swiftt: 0x628
-
-   __TEXT.__swift_as_cont: 0x70
-   __TEXT.__swift5_reflstr: 0x14a
-   __TEXT.__swift5_proto: 0xc
--  __TEXT.__unwind_info: 0x5548
-+  __TEXT.__unwind_info: 0x5560
-   __TEXT.__eh_frame: 0xb28
--  __DATA_CONST.__const: 0xc148
--  __DATA_CONST.__cfstring: 0x26820
-+  __DATA_CONST.__const: 0xc1a8
-+  __DATA_CONST.__cfstring: 0x27240
-   __DATA_CONST.__objc_classlist: 0x810
-   __DATA_CONST.__objc_catlist: 0x70
-   __DATA_CONST.__objc_protolist: 0x128
-
-   __DATA_CONST.__objc_doubleobj: 0x5c0
-   __DATA_CONST.__objc_dictobj: 0x140
-   __DATA_CONST.__objc_floatobj: 0x260
--  __DATA_CONST.__auth_got: 0xe98
-+  __DATA_CONST.__auth_got: 0xe90
-   __DATA_CONST.__got: 0xe40
-   __DATA_CONST.__auth_ptr: 0x178
-   __DATA.__objc_const: 0x1e710
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8959
 -  Symbols:   20142
 -  CStrings:  15945
 +  Functions: 8967
 +  Symbols:   20143
 +  CStrings:  16067
- 
 Symbols:
 + -[MOEventBundleRankingInput peopleCountMaxNormalized]
 + -[MOEventBundleRankingInput peopleCountWeightedAverageNormalized]

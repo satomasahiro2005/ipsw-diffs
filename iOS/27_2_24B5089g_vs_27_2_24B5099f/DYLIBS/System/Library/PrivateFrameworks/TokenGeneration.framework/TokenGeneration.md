@@ -2,45 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/TokenGeneration.framework/TokenGeneration`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1706d0` | `0x170934` | **`+0x264`** |
+| `__TEXT.__eh_frame` | `0xf858` | `0xf8e0` | **`+0x88`** |
+| `__TEXT.__unwind_info` | `0x5278` | `0x5290` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x2bc0` | `0x2bc8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -307.8.0.2.0
--  __TEXT.__text: 0x15e248
 +307.12.0.1.2
-+  __TEXT.__text: 0x15e484
-   __TEXT.__objc_methlist: 0x104
-   __TEXT.__const: 0xaea0
-   __TEXT.__swift5_typeref: 0x3813
 
-   __TEXT.__swift5_assocty: 0x780
-   __TEXT.__swift5_protos: 0x28
-   __TEXT.__swift5_types2: 0x8
--  __TEXT.__unwind_info: 0x6360
--  __TEXT.__eh_frame: 0xf8a8
-+  __TEXT.__unwind_info: 0x6370
-+  __TEXT.__eh_frame: 0xf930
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x4360
-   __AUTH_CONST.__objc_const: 0xcf0
--  __AUTH_CONST.__auth_got: 0x2bc0
-+  __AUTH_CONST.__auth_got: 0x2bc8
-   __DATA.__data: 0x2408
-   __DATA.__common: 0x28
-   __DATA_DIRTY.__objc_data: 0x370
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5574
 -  Symbols:   14469
 +  Functions: 5577
 +  Symbols:   14473
-   CStrings:  441
- 
 Symbols:
 + _$s9PromptKit0A7RequestV13containsImageSbvg
 + _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVy15TokenGeneration6PromptV0fG16NonStringContentOG_Tg5

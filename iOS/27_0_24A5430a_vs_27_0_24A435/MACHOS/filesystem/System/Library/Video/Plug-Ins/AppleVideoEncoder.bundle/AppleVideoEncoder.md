@@ -2,24 +2,25 @@
 
 > `/System/Library/Video/Plug-Ins/AppleVideoEncoder.bundle/AppleVideoEncoder`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__cstring`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA.__objc_selrefs`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1944b8` | `0x194460` | **`-0x58`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__cstring`
+- `__TEXT.__init_offsets`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
-
- 913.43.1.0.0
--  __TEXT.__text: 0x1944b8
-+  __TEXT.__text: 0x194460
-   __TEXT.__auth_stubs: 0x1050
-   __TEXT.__objc_stubs: 0x20
-   __TEXT.__init_offsets: 0xc
 Functions:
 ~ sub_1f10 : 500 -> 536
 ~ sub_25ef8 -> sub_25f1c : 6988 -> 7004
@@ -40,4 +41,11 @@ Functions:
 ~ sub_191cd4 -> sub_191c24 : 4068 -> 4108
 ~ sub_193bec -> sub_193b64 : 1880 -> 1920
 ~ sub_194344 -> sub_1942e4 : 304 -> 312
+CStrings:
++ "21:35:36"
++ "21:35:38"
++ "21:35:39"
+- "22:23:05"
+- "22:23:08"
+- "22:23:09"
 ```

@@ -2,114 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/PrivateCloudComputeDaemon.framework/PrivateCloudComputeDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x253438` | `0x256060` | **`+0x2c28`** |
+| `__DATA.__bss` | `0x10790` | `0xff90` | **`-0x800`** |
+| `__DATA_DIRTY.__bss` | `0x9300` | `0x9b00` | **`+0x800`** |
+| `__DATA_DIRTY.__data` | `0x8d80` | `0x9550` | **`+0x7d0`** |
+| `__DATA.__data` | `0x2640` | `0x2128` | **`-0x518`** |
+| `__TEXT.__eh_frame` | `0x11524` | `0x1198c` | **`+0x468`** |
+| `__AUTH.__data` | `0x13a8` | `0x11a8` | **`-0x200`** |
+| `__TEXT.__const` | `0x156b8` | `0x158b8` | **`+0x200`** |
+| `__TEXT.__swift5_typeref` | `0x65e0` | `0x674c` | **`+0x16c`** |
+| `__TEXT.__oslogstring` | `0x75d9` | `0x7729` | **`+0x150`** |
+| `__TEXT.__swift5_reflstr` | `0x62a8` | `0x63a8` | **`+0x100`** |
+| `__TEXT.__unwind_info` | `0x7490` | `0x7558` | **`+0xc8`** |
+| `__DATA_DIRTY.__objc_data` | `0x6f0` | `0x798` | **`+0xa8`** |
+| `__AUTH.__objc_data` | `0x140` | `0xa0` | **`-0xa0`** |
+| `__TEXT.__swift5_fieldmd` | `0x59f8` | `0x5a78` | **`+0x80`** |
+| `__TEXT.__cstring` | `0x6141` | `0x61b1` | **`+0x70`** |
+| `__AUTH_CONST.__objc_const` | `0x3d88` | `0x3de8` | **`+0x60`** |
+| `__TEXT.__constg_swiftt` | `0x5594` | `0x55f0` | **`+0x5c`** |
+| `__TEXT.__swift5_capture` | `0x1144` | `0x119c` | **`+0x58`** |
+| `__TEXT.__swift_as_entry` | `0x508` | `0x554` | **`+0x4c`** |
+| `__TEXT.__swift_as_ret` | `0x59c` | `0x5e8` | **`+0x4c`** |
+| `__DATA_DIRTY.__common` | `0x220` | `0x258` | **`+0x38`** |
+| `__DATA.__common` | `0xc8` | `0x98` | **`-0x30`** |
+| `__DATA_CONST.__got` | `0x1228` | `0x1258` | **`+0x30`** |
+| `__TEXT.__swift_as_cont` | `0xbd4` | `0xbbc` | **`-0x18`** |
+| `__AUTH_CONST.__const` | `0x9e80` | `0x9e90` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x718` | `0x728` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x398` | `0x3a8` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0xd58` | `0xd5c` | **`+0x4`** |
+| `__TEXT.__swift5_protos` | `0xa0` | `0xa4` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0x514` | `0x518` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x253438
-+  __TEXT.__text: 0x256060
-   __TEXT.__objc_methlist: 0x3c8
--  __TEXT.__const: 0x156b8
--  __TEXT.__constg_swiftt: 0x5594
--  __TEXT.__swift5_typeref: 0x65e0
--  __TEXT.__swift5_reflstr: 0x62a8
--  __TEXT.__swift5_fieldmd: 0x59f8
--  __TEXT.__oslogstring: 0x75d9
--  __TEXT.__cstring: 0x6141
-+  __TEXT.__const: 0x158b8
-+  __TEXT.__constg_swiftt: 0x55f0
-+  __TEXT.__swift5_typeref: 0x674c
-+  __TEXT.__swift5_reflstr: 0x63a8
-+  __TEXT.__swift5_fieldmd: 0x5a78
-+  __TEXT.__oslogstring: 0x7729
-+  __TEXT.__cstring: 0x61b1
-   __TEXT.__swift5_builtin: 0x118
-   __TEXT.__swift5_assocty: 0x950
--  __TEXT.__swift5_proto: 0xd58
--  __TEXT.__swift5_types: 0x514
--  __TEXT.__swift_as_entry: 0x508
--  __TEXT.__swift_as_ret: 0x59c
--  __TEXT.__swift_as_cont: 0xbd4
--  __TEXT.__swift5_capture: 0x1144
--  __TEXT.__swift5_protos: 0xa0
-+  __TEXT.__swift5_proto: 0xd5c
-+  __TEXT.__swift5_types: 0x518
-+  __TEXT.__swift_as_entry: 0x554
-+  __TEXT.__swift_as_ret: 0x5e8
-+  __TEXT.__swift_as_cont: 0xbbc
-+  __TEXT.__swift5_capture: 0x119c
-+  __TEXT.__swift5_protos: 0xa4
-   __TEXT.__swift5_mpenum: 0x7c
--  __TEXT.__unwind_info: 0x7490
--  __TEXT.__eh_frame: 0x11524
-+  __TEXT.__unwind_info: 0x7558
-+  __TEXT.__eh_frame: 0x1198c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x718
-+  __DATA_CONST.__const: 0x728
-   __DATA_CONST.__objc_classlist: 0xf0
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x398
-+  __DATA_CONST.__objc_selrefs: 0x3a8
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__got: 0x1228
--  __AUTH_CONST.__const: 0x9e80
--  __AUTH_CONST.__objc_const: 0x3d88
-+  __DATA_CONST.__got: 0x1258
-+  __AUTH_CONST.__const: 0x9e90
-+  __AUTH_CONST.__objc_const: 0x3de8
-   __AUTH_CONST.__auth_got: 0x2530
--  __AUTH.__objc_data: 0x140
--  __AUTH.__data: 0x13a8
--  __DATA.__data: 0x2640
--  __DATA.__bss: 0x10790
--  __DATA.__common: 0xc8
--  __DATA_DIRTY.__objc_data: 0x6f0
--  __DATA_DIRTY.__data: 0x8d80
--  __DATA_DIRTY.__bss: 0x9300
--  __DATA_DIRTY.__common: 0x220
-+  __AUTH.__objc_data: 0xa0
-+  __AUTH.__data: 0x11a8
-+  __DATA.__data: 0x2128
-+  __DATA.__bss: 0xff90
-+  __DATA.__common: 0x98
-+  __DATA_DIRTY.__objc_data: 0x798
-+  __DATA_DIRTY.__data: 0x9550
-+  __DATA_DIRTY.__bss: 0x9b00
-+  __DATA_DIRTY.__common: 0x258
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
+-2570.0.5.0.0
++2570.0.12.0.0
 
-   - /System/Library/PrivateFrameworks/GenerativeFunctionsInstrumentation.framework/GenerativeFunctionsInstrumentation
-   - /System/Library/PrivateFrameworks/IntelligencePlatformLibrary.framework/IntelligencePlatformLibrary
-   - /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf
 +  - /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
-   - /System/Library/PrivateFrameworks/NetworkServiceProxy.framework/NetworkServiceProxy
-   - /System/Library/PrivateFrameworks/OSAnalytics.framework/OSAnalytics
-   - /System/Library/PrivateFrameworks/PrivateCloudCompute.framework/PrivateCloudCompute
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9269
--  Symbols:   3241
+-  Symbols:   2475
 -  CStrings:  1148
 +  Functions: 9330
-+  Symbols:   3240
++  Symbols:   2476
 +  CStrings:  1155
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
 Symbols:
 + _MKBDeviceUnlockedSinceBoot
 + ___swift_closure_destructor.202Tm
@@ -120,8 +63,6 @@ Symbols:
 + ___swift_closure_destructor.285Tm
 + ___swift_closure_destructor.5Tm
 + ___swift_exist.box.addr_destructor.187Tm
-+ _objc_msgSend$optInApple
-+ _objc_msgSend$sharedInstance
 + _swift_release_x3
 + _symbolic $s25PrivateCloudComputeDaemon19DeviceStateProtocolP
 + _symbolic G1R1_
@@ -210,5 +151,4 @@ CStrings:
 - "%s attestation validation did not return a unique device id for attestation: %s"
 - "%s unique identifier for attestation %s missing"
 - "missing validatedAttestation.udid"
-
 ```

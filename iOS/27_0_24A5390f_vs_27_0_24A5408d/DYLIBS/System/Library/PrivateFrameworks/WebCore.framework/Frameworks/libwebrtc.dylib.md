@@ -2,34 +2,28 @@
 
 > `/System/Library/PrivateFrameworks/WebCore.framework/Frameworks/libwebrtc.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xaac6a4` | `0xaaca98` | **`+0x3f4`** |
+| `__TEXT.__cstring` | `0x55f47` | `0x55fae` | **`+0x67`** |
+| `__TEXT.__unwind_info` | `0x10db0` | `0x10dc8` | **`+0x18`** |
+| `__TEXT.__gcc_except_tab` | `0x1880` | `0x1888` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -625.1.24.10.1
--  __TEXT.__text: 0xaac6a4
 +625.1.29.10.3
-+  __TEXT.__text: 0xaaca98
-   __TEXT.__objc_methlist: 0x14cc
-   __TEXT.__const: 0x6fef8
--  __TEXT.__cstring: 0x55f47
--  __TEXT.__gcc_except_tab: 0x1880
--  __TEXT.__unwind_info: 0x10db0
-+  __TEXT.__cstring: 0x55fae
-+  __TEXT.__gcc_except_tab: 0x1888
-+  __TEXT.__unwind_info: 0x10dc8
-   __TEXT.__eh_frame: 0xc38
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 18368
--  Symbols:   23808
+-  Symbols:   23603
 -  CStrings:  9078
 +  Functions: 18374
-+  Symbols:   23814
++  Symbols:   23609
 +  CStrings:  9080
- 
 Symbols:
 + _CFDictionaryGetValueIfPresent
 + __ZN4absl22internal_any_invocable12LocalInvokerILb0EbRZN6webrtc25WebRtcVideoReceiveChannel16OnPacketReceivedENS2_17RtpPacketReceivedEE3$_0JRKS4_EEET0_PNS0_15TypeErasedStateEDpNS0_18ForwardedParameterIT2_E4typeE

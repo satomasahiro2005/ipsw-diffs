@@ -2,26 +2,27 @@
 
 > `/usr/libexec/audioanalyticsd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3e4c0` | `0x3e4c8` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 300.0.0.0.0
--  __TEXT.__text: 0x3e4c0
-+  __TEXT.__text: 0x3e4c8
-   __TEXT.__auth_stubs: 0x1980
-   __TEXT.__objc_stubs: 0x6a0
-   __TEXT.__objc_methlist: 0x2d4
+```text
 Functions:
 ~ sub_100004a30 : 732 -> 736
 ~ sub_100011974 -> sub_100011978 : 788 -> 784

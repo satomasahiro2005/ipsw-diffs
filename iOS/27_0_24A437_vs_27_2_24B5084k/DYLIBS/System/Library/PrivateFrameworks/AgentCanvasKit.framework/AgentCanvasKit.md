@@ -2,115 +2,61 @@
 
 > `/System/Library/PrivateFrameworks/AgentCanvasKit.framework/AgentCanvasKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe3d90` | `0xef5d4` | **`+0xb844`** |
+| `__DATA.__bss` | `0x57a0` | `0x6420` | **`+0xc80`** |
+| `__TEXT.__eh_frame` | `0x8518` | `0x8e08` | **`+0x8f0`** |
+| `__TEXT.__const` | `0x7dd0` | `0x8570` | **`+0x7a0`** |
+| `__TEXT.__unwind_info` | `0x43b0` | `0x46d8` | **`+0x328`** |
+| `__AUTH_CONST.__const` | `0x69e8` | `0x6c90` | **`+0x2a8`** |
+| `__AUTH.__data` | `0x1328` | `0x1568` | **`+0x240`** |
+| `__TEXT.__constg_swiftt` | `0x2a68` | `0x2c68` | **`+0x200`** |
+| `__TEXT.__cstring` | `0x2181` | `0x2371` | **`+0x1f0`** |
+| `__DATA.__data` | `0x13d8` | `0x15c0` | **`+0x1e8`** |
+| `__TEXT.__swift5_typeref` | `0x2dfe` | `0x2f7a` | **`+0x17c`** |
+| `__TEXT.__swift5_fieldmd` | `0x2750` | `0x28bc` | **`+0x16c`** |
+| `__AUTH_CONST.__objc_const` | `0x2288` | `0x23d8` | **`+0x150`** |
+| `__TEXT.__swift5_reflstr` | `0x2a5f` | `0x2b7f` | **`+0x120`** |
+| `__AUTH_CONST.__auth_got` | `0x12c8` | `0x1398` | **`+0xd0`** |
+| `__TEXT.__oslogstring` | `0x13bb` | `0x148b` | **`+0xd0`** |
+| `__DATA_DIRTY.__bss` | `0x1f00` | `0x1e80` | **`-0x80`** |
+| `__TEXT.__swift5_capture` | `0x1574` | `0x15e8` | **`+0x74`** |
+| `__TEXT.__swift5_proto` | `0x43c` | `0x4a4` | **`+0x68`** |
+| `__TEXT.__swift_as_ret` | `0x550` | `0x5b4` | **`+0x64`** |
+| `__TEXT.__swift5_assocty` | `0x358` | `0x3b8` | **`+0x60`** |
+| `__TEXT.__swift_as_entry` | `0x530` | `0x584` | **`+0x54`** |
+| `__AUTH.__objc_data` | `0x1e0` | `0x230` | **`+0x50`** |
+| `__DATA_DIRTY.__data` | `0x30c8` | `0x3118` | **`+0x50`** |
+| `__TEXT.__swift_as_cont` | `0x490` | `0x4dc` | **`+0x4c`** |
+| `__DATA_CONST.__got` | `0x910` | `0x940` | **`+0x30`** |
+| `__DATA.__common` | `0xa8` | `0xd0` | **`+0x28`** |
+| `__TEXT.__swift5_types` | `0x244` | `0x25c` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4e0` | `0x4d0` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0xb0` | `0xb8` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x84` | `0x88` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -73.0.24.109.0
--  __TEXT.__text: 0xd6bf0
 +3605.1.1.1.5
-+  __TEXT.__text: 0xe1844
-   __TEXT.__objc_methlist: 0x2ac
--  __TEXT.__const: 0x7dd0
--  __TEXT.__constg_swiftt: 0x2a68
--  __TEXT.__swift5_typeref: 0x2dfe
-+  __TEXT.__const: 0x8570
-+  __TEXT.__constg_swiftt: 0x2c68
-+  __TEXT.__swift5_typeref: 0x2f7a
-   __TEXT.__swift5_builtin: 0x8c
--  __TEXT.__swift5_reflstr: 0x2a5f
--  __TEXT.__swift5_fieldmd: 0x2750
--  __TEXT.__swift5_assocty: 0x358
--  __TEXT.__swift5_proto: 0x43c
--  __TEXT.__swift5_types: 0x244
--  __TEXT.__swift5_protos: 0x84
--  __TEXT.__swift_as_entry: 0x530
--  __TEXT.__swift_as_ret: 0x550
--  __TEXT.__swift5_capture: 0x1574
--  __TEXT.__swift_as_cont: 0x490
--  __TEXT.__cstring: 0x2181
--  __TEXT.__oslogstring: 0x13bb
-+  __TEXT.__swift5_reflstr: 0x2b7f
-+  __TEXT.__swift5_fieldmd: 0x28bc
-+  __TEXT.__swift5_assocty: 0x3b8
-+  __TEXT.__swift5_proto: 0x4a4
-+  __TEXT.__swift5_types: 0x25c
-+  __TEXT.__swift5_protos: 0x88
-+  __TEXT.__swift_as_entry: 0x584
-+  __TEXT.__swift_as_ret: 0x5b4
-+  __TEXT.__swift5_capture: 0x15e8
-+  __TEXT.__oslogstring: 0x148b
-+  __TEXT.__swift_as_cont: 0x4dc
-+  __TEXT.__cstring: 0x2371
-   __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__unwind_info: 0x4cf0
--  __TEXT.__eh_frame: 0x8518
-+  __TEXT.__unwind_info: 0x5070
-+  __TEXT.__eh_frame: 0x8e08
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x240
--  __DATA_CONST.__objc_classlist: 0xb0
-+  __DATA_CONST.__objc_classlist: 0xb8
-   __DATA_CONST.__objc_protolist: 0xb0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4e0
-+  __DATA_CONST.__objc_selrefs: 0x4d0
-   __DATA_CONST.__objc_protorefs: 0x58
--  __DATA_CONST.__got: 0x910
--  __AUTH_CONST.__const: 0x69e8
--  __AUTH_CONST.__objc_const: 0x2288
--  __AUTH_CONST.__auth_got: 0x12c8
--  __AUTH.__objc_data: 0x1e0
--  __AUTH.__data: 0x1328
--  __DATA.__data: 0x13d8
--  __DATA.__common: 0xa8
-+  __DATA_CONST.__got: 0x940
-+  __AUTH_CONST.__const: 0x6c90
-+  __AUTH_CONST.__objc_const: 0x23d8
-+  __AUTH_CONST.__auth_got: 0x1398
-+  __AUTH.__objc_data: 0x230
-+  __AUTH.__data: 0x1568
-+  __DATA.__data: 0x15c0
-+  __DATA.__common: 0xd0
-   __DATA_DIRTY.__objc_data: 0x1e0
--  __DATA_DIRTY.__data: 0x30c8
--  __DATA_DIRTY.__bss: 0x1f00
-+  __DATA_DIRTY.__data: 0x3118
-+  __DATA_DIRTY.__bss: 0x1e80
-   __DATA_DIRTY.__common: 0x70
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
 
-   - /System/Library/PrivateFrameworks/AgentCanvasFoundation.framework/AgentCanvasFoundation
-   - /System/Library/PrivateFrameworks/AgentCanvasPersistence.framework/AgentCanvasPersistence
-   - /System/Library/PrivateFrameworks/AgentSessionKit.framework/AgentSessionKit
 +  - /System/Library/PrivateFrameworks/AppIntentsServices.framework/AppIntentsServices
-   - /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
-   - /System/Library/PrivateFrameworks/AssistantUICore.framework/AssistantUICore
-   - /System/Library/PrivateFrameworks/FlowToolsSnippetService.framework/FlowToolsSnippetService
 
-   - /System/Library/PrivateFrameworks/IntelligenceFlow.framework/IntelligenceFlow
-   - /System/Library/PrivateFrameworks/IntelligenceFlowPlannerSupport.framework/IntelligenceFlowPlannerSupport
-   - /System/Library/PrivateFrameworks/LinkMetadata.framework/LinkMetadata
 +  - /System/Library/PrivateFrameworks/LinkServices.framework/LinkServices
-   - /System/Library/PrivateFrameworks/SAObjects.framework/SAObjects
--  - /System/Library/PrivateFrameworks/SearchFoundation.framework/SearchFoundation
-   - /System/Library/PrivateFrameworks/SiriUIFoundation.framework/SiriUIFoundation
-   - /System/Library/PrivateFrameworks/SnippetKit.framework/SnippetKit
-   - /System/Library/PrivateFrameworks/ToolKit.framework/ToolKit
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 6558
--  Symbols:   1957
+-  - /System/Library/PrivateFrameworks/SearchFoundation.framework/SearchFoundation
+
+-  Functions: 6557
+-  Symbols:   1838
 -  CStrings:  298
-+  Functions: 6873
-+  Symbols:   2078
++  Functions: 6872
++  Symbols:   1961
 +  CStrings:  313
- 
 Symbols:
 + _OBJC_CLASS_$_AVAudioPCMBuffer
 + _OBJC_CLASS_$_LNEnvironment
@@ -237,7 +183,6 @@ Symbols:
 + _associated conformance 14AgentCanvasKit24ChatRequestConfigurationV4KindO12VoiceOptionsVs9OptionSetAASY
 + _associated conformance 14AgentCanvasKit24ChatRequestConfigurationV4KindO12VoiceOptionsVs9OptionSetAAs0K7Algebra
 + _get_enum_tag_for_layout_string 14AgentCanvasKit011ChatServiceA11DestinationO
-+ _objc_msgSend$defaultEnvironment
 + _objc_retain_x28
 + _swift_retain_x9
 + _symbolic $s14AgentCanvasKit28SiriChatConnectionDataSourceP
@@ -293,9 +238,6 @@ Symbols:
 - _associated conformance 14AgentCanvasKit19ChatMarkdownCommandV22ThirdPartyProviderInfoV10CodingKeys33_F3A7F82919F433AE0CD30D14D0B9F27CLLOs0K3KeyAAs23CustomStringConvertible
 - _associated conformance 14AgentCanvasKit19ChatMarkdownCommandV22ThirdPartyProviderInfoV10CodingKeys33_F3A7F82919F433AE0CD30D14D0B9F27CLLOs0K3KeyAAs28CustomDebugStringConvertible
 - _get_enum_tag_for_layout_string 14AgentCanvasKit21ReportConcernMetadataVSg
-- _objc_msgSend$installTapOnBus:bufferSize:format:block:
-- _objc_msgSend$preferredOpenableURL
-- _objc_msgSend$punchout
 - _symbolic SS8bundleID_t
 - _symbolic _____ 14AgentCanvasKit19ChatMarkdownCommandV22ThirdPartyProviderInfoV
 - _symbolic _____ 14AgentCanvasKit19ChatMarkdownCommandV22ThirdPartyProviderInfoV10CodingKeys33_F3A7F82919F433AE0CD30D14D0B9F27CLLO

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/InputAccessoriesSettings.framework/InputAccessoriesSettings`
 
-```diff
+### Section Size Changes
 
- 2027.0.1.0.0
--  __TEXT.__text: 0x229c0
-+  __TEXT.__text: 0x22a00
-   __TEXT.__const: 0xbd0
-   __TEXT.__swift5_typeref: 0x794
-   __TEXT.__constg_swiftt: 0x208
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x229c0` | `0x22a00` | **`+0x40`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _OUTLINED_FUNCTION_8 : 8 -> 12
 ~ _OUTLINED_FUNCTION_9 : 12 -> 28

@@ -2,32 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/EmailAddressing.framework/EmailAddressing`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6888` | `0x6880` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x6888
-+  __TEXT.__text: 0x6880
-   __TEXT.__objc_methlist: 0x55c
-   __TEXT.__gcc_except_tab: 0xb00
-   __TEXT.__cstring: 0x26b
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+-3893.100.7.0.0
++3895.100.17.2.1
 Functions:
 ~ -[NSString(EmailAddressingAdditions) ea_uncommentedAddress] : 1164 -> 1156
-
 ```

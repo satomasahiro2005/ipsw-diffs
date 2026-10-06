@@ -2,23 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/SeymourClient.framework/SeymourClient`
 
-```diff
+### Section Size Changes
 
- 2027.0.146.1.4
--  __TEXT.__text: 0x1e5f54
-+  __TEXT.__text: 0x1e5fdc
-   __TEXT.__objc_methlist: 0x3f4
-   __TEXT.__const: 0xf56c
-   __TEXT.__cstring: 0x759d
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e5f54` | `0x1e5fdc` | **`+0x88`** |
+| `__TEXT.__unwind_info` | `0x8f70` | `0x8f78` | **`+0x8`** |
 
-   __TEXT.__swift_as_ret: 0xaf8
-   __TEXT.__swift_as_cont: 0x2308
-   __TEXT.__swift5_assocty: 0x168
--  __TEXT.__unwind_info: 0x8f70
-+  __TEXT.__unwind_info: 0x8f78
-   __TEXT.__eh_frame: 0x1a318
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+### Other Changes
+
+```text
 Functions:
 ~ sub_21236baf4 -> sub_212b3faf4 : 148 -> 152
 ~ sub_212433930 -> sub_212c07934 : 768 -> 776

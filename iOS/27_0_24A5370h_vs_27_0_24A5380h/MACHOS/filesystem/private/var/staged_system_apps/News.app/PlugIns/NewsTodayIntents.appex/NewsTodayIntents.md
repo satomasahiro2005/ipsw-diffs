@@ -2,115 +2,71 @@
 
 > `/private/var/staged_system_apps/News.app/PlugIns/NewsTodayIntents.appex/NewsTodayIntents`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcd24` | `0xe9b4` | **`+0x1c90`** |
+| `__DATA.__objc_const` | `0x5a00` | `0x5db0` | **`+0x3b0`** |
+| `__DATA.__data` | `0xfd8` | `0x1310` | **`+0x338`** |
+| `__DATA.__bss` | `0x780` | `0xa80` | **`+0x300`** |
+| `__TEXT.__const` | `0x8c4` | `0xae4` | **`+0x220`** |
+| `__DATA_CONST.__const` | `0x640` | `0x838` | **`+0x1f8`** |
+| `__TEXT.__objc_methlist` | `0x3040` | `0x31b8` | **`+0x178`** |
+| `__TEXT.__objc_methtype` | `0x1beb` | `0x1d44` | **`+0x159`** |
+| `__TEXT.__swift5_typeref` | `0x702` | `0x850` | **`+0x14e`** |
+| `__TEXT.__objc_classname` | `0x4e4` | `0x624` | **`+0x140`** |
+| `__TEXT.__constg_swiftt` | `0x4b0` | `0x5bc` | **`+0x10c`** |
+| `__TEXT.__objc_methname` | `0x9bd5` | `0x9ca5` | **`+0xd0`** |
+| `__DATA.__objc_data` | `0x6c8` | `0x790` | **`+0xc8`** |
+| `__TEXT.__auth_stubs` | `0xce0` | `0xda0` | **`+0xc0`** |
+| `__TEXT.__unwind_info` | `0x438` | `0x4f0` | **`+0xb8`** |
+| `__TEXT.__swift5_capture` | `0xfc` | `0x190` | **`+0x94`** |
+| `__TEXT.__swift5_fieldmd` | `0x1e8` | `0x274` | **`+0x8c`** |
+| `__DATA_CONST.__auth_got` | `0x678` | `0x6d8` | **`+0x60`** |
+| `__TEXT.__swift5_reflstr` | `0x168` | `0x1c8` | **`+0x60`** |
+| `__DATA_CONST.__auth_ptr` | `0x1d0` | `0x220` | **`+0x50`** |
+| `__TEXT.__eh_frame` | `0x1e0` | `0x218` | **`+0x38`** |
+| `__DATA.__objc_selrefs` | `0x1f60` | `0x1f90` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x127` | `0x157` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0x68` | `0x88` | **`+0x20`** |
+| `__DATA_CONST.__objc_protolist` | `0x188` | `0x1a8` | **`+0x20`** |
+| `__TEXT.__objc_stubs` | `0xdc0` | `0xda0` | **`-0x20`** |
+| `__DATA_CONST.__got` | `0x280` | `0x298` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0x50` | `0x68` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0x44` | `0x58` | **`+0x14`** |
+| `__DATA_CONST.__objc_protorefs` | `0xd0` | `0xe0` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `—` | `0xc` | **`+0xc`** |
+| `__TEXT.__swift_as_entry` | `—` | `0xc` | **`+0xc`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_protos`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xcd24
--  __TEXT.__auth_stubs: 0xce0
--  __TEXT.__objc_stubs: 0xdc0
--  __TEXT.__objc_methlist: 0x3040
--  __TEXT.__cstring: 0x127
--  __TEXT.__objc_classname: 0x4e4
--  __TEXT.__objc_methname: 0x9bd5
--  __TEXT.__objc_methtype: 0x1beb
--  __TEXT.__const: 0x8c4
--  __TEXT.__swift5_typeref: 0x702
--  __TEXT.__swift5_fieldmd: 0x1e8
--  __TEXT.__constg_swiftt: 0x4b0
-+  __TEXT.__text: 0xe9b4
-+  __TEXT.__auth_stubs: 0xda0
-+  __TEXT.__objc_stubs: 0xda0
-+  __TEXT.__objc_methlist: 0x31b8
-+  __TEXT.__cstring: 0x157
-+  __TEXT.__objc_classname: 0x624
-+  __TEXT.__objc_methname: 0x9ca5
-+  __TEXT.__objc_methtype: 0x1d44
-+  __TEXT.__const: 0xae4
-+  __TEXT.__swift5_typeref: 0x850
-+  __TEXT.__swift5_fieldmd: 0x274
-+  __TEXT.__constg_swiftt: 0x5bc
-   __TEXT.__swift5_builtin: 0x3c
--  __TEXT.__swift5_reflstr: 0x168
-+  __TEXT.__swift5_reflstr: 0x1c8
-   __TEXT.__swift5_assocty: 0x48
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__swift5_proto: 0x50
--  __TEXT.__swift5_types: 0x44
--  __TEXT.__swift5_capture: 0xfc
--  __TEXT.__unwind_info: 0x438
--  __TEXT.__eh_frame: 0x1e0
--  __DATA_CONST.__const: 0x640
-+  __TEXT.__swift5_proto: 0x68
-+  __TEXT.__swift5_types: 0x58
-+  __TEXT.__swift_as_entry: 0xc
-+  __TEXT.__swift_as_cont: 0xc
-+  __TEXT.__swift5_capture: 0x190
-+  __TEXT.__unwind_info: 0x4f0
-+  __TEXT.__eh_frame: 0x218
-+  __DATA_CONST.__const: 0x838
-   __DATA_CONST.__cfstring: 0x2e0
--  __DATA_CONST.__objc_classlist: 0x68
-+  __DATA_CONST.__objc_classlist: 0x88
-   __DATA_CONST.__objc_catlist: 0x18
--  __DATA_CONST.__objc_protolist: 0x188
-+  __DATA_CONST.__objc_protolist: 0x1a8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_protorefs: 0xd0
-+  __DATA_CONST.__objc_protorefs: 0xe0
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__objc_intobj: 0x18
-   __DATA_CONST.__objc_arraydata: 0x20
-   __DATA_CONST.__objc_arrayobj: 0x18
--  __DATA_CONST.__auth_got: 0x678
--  __DATA_CONST.__got: 0x280
--  __DATA_CONST.__auth_ptr: 0x1d0
--  __DATA.__objc_const: 0x5a00
--  __DATA.__objc_selrefs: 0x1f60
-+  __DATA_CONST.__auth_got: 0x6d8
-+  __DATA_CONST.__got: 0x298
-+  __DATA_CONST.__auth_ptr: 0x220
-+  __DATA.__objc_const: 0x5db0
-+  __DATA.__objc_selrefs: 0x1f90
-   __DATA.__objc_ivar: 0x4
--  __DATA.__objc_data: 0x6c8
--  __DATA.__data: 0xfd8
--  __DATA.__bss: 0x780
-+  __DATA.__objc_data: 0x790
-+  __DATA.__data: 0x1310
-+  __DATA.__bss: 0xa80
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/Intents.framework/Intents
+-5920.0.0.0.0
++5923.0.0.0.0
 
-   - /System/Library/PrivateFrameworks/NewsFoundation.framework/NewsFoundation
-   - /System/Library/PrivateFrameworks/NewsPersonalization.framework/NewsPersonalization
-   - /System/Library/PrivateFrameworks/NewsServicesInternal.framework/NewsServicesInternal
 -  - /System/Library/PrivateFrameworks/NewsUI.framework/NewsUI
-   - /System/Library/PrivateFrameworks/NewsUI2.framework/NewsUI2
-   - /System/Library/PrivateFrameworks/TeaFoundation.framework/TeaFoundation
-   - /System/Library/PrivateFrameworks/TeaSettings.framework/TeaSettings
 
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 +  - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 362
 -  Symbols:   211
--  CStrings:  1444
+-  CStrings:  1421
 +  Functions: 419
 +  Symbols:   215
-+  CStrings:  1468
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
++  CStrings:  1445
 Symbols:
 + _OBJC_CLASS_$_FCLocalAreasManager
 + _OBJC_CLASS_$_FCSubscribedTags
@@ -173,5 +129,4 @@ CStrings:
 - "purchaseController"
 - "subscriptionController"
 - "userInfo"
-
 ```

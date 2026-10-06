@@ -2,127 +2,63 @@
 
 > `/System/Library/PrivateFrameworks/CalendarUIKit.framework/CalendarUIKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x430e40` | `0x44db8c` | **`+0x1cd4c`** |
+| `__DATA_DIRTY.__data` | `0xc28` | `0x75e0` | **`+0x69b8`** |
+| `__AUTH.__data` | `0x8ab0` | `0x2fd8` | **`-0x5ad8`** |
+| `__DATA_DIRTY.__objc_data` | `0x1418` | `0x4cd8` | **`+0x38c0`** |
+| `__AUTH.__objc_data` | `0x3e00` | `0x768` | **`-0x3698`** |
+| `__TEXT.__swift5_typeref` | `0x3fc9e` | `0x4250e` | **`+0x2870`** |
+| `__AUTH_CONST.__const` | `0x13228` | `0x13ee8` | **`+0xcc0`** |
+| `__TEXT.__const` | `0x20d54` | `0x216a4` | **`+0x950`** |
+| `__DATA.__data` | `0xc8b0` | `0xbfc0` | **`-0x8f0`** |
+| `__TEXT.__cstring` | `0x27cc9` | `0x284e9` | **`+0x820`** |
+| `__TEXT.__eh_frame` | `0xb870` | `0xbf10` | **`+0x6a0`** |
+| `__AUTH_CONST.__objc_const` | `0x135b8` | `0x13ad8` | **`+0x520`** |
+| `__TEXT.__unwind_info` | `0xbe40` | `0xc2e8` | **`+0x4a8`** |
+| `__TEXT.__swift5_capture` | `0x407c` | `0x449c` | **`+0x420`** |
+| `__TEXT.__swift5_reflstr` | `0x79f9` | `0x7de9` | **`+0x3f0`** |
+| `__TEXT.__constg_swiftt` | `0xa240` | `0xa5bc` | **`+0x37c`** |
+| `__DATA_DIRTY.__bss` | `0xde8` | `0x1130` | **`+0x348`** |
+| `__TEXT.__swift5_fieldmd` | `0x7f90` | `0x8238` | **`+0x2a8`** |
+| `__DATA_DIRTY.__common` | `—` | `0x1c8` | **`+0x1c8`** |
+| `__DATA.__common` | `0xd18` | `0xb68` | **`-0x1b0`** |
+| `__TEXT.__objc_methlist` | `0xa540` | `0xa660` | **`+0x120`** |
+| `__DATA_CONST.__objc_selrefs` | `0x82f8` | `0x83b0` | **`+0xb8`** |
+| `__DATA_CONST.__const` | `0x2408` | `0x2458` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x23d0` | `0x2420` | **`+0x50`** |
+| `__TEXT.__swift_as_cont` | `0x55c` | `0x5ac` | **`+0x50`** |
+| `__DATA.__bss` | `0x1e820` | `0x1e860` | **`+0x40`** |
+| `__TEXT.__gcc_except_tab` | `0xe3c` | `0xe74` | **`+0x38`** |
+| `__TEXT.__swift5_assocty` | `0x18c8` | `0x1900` | **`+0x38`** |
+| `__AUTH_CONST.__auth_got` | `0x3518` | `0x3540` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x8d60` | `0x8d80` | **`+0x20`** |
+| `__TEXT.__swift_as_entry` | `0x264` | `0x284` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x7a0` | `0x7bc` | **`+0x1c`** |
+| `__TEXT.__swift5_proto` | `0xf78` | `0xf94` | **`+0x1c`** |
+| `__TEXT.__swift5_types` | `0x6e8` | `0x704` | **`+0x1c`** |
+| `__TEXT.__swift_as_ret` | `0x214` | `0x230` | **`+0x1c`** |
+| `__DATA_CONST.__objc_classlist` | `0x630` | `0x648` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x280` | `0x298` | **`+0x18`** |
+| `__TEXT.__ustring` | `0x2050` | `0x204a` | **`-0x6`** |
+| `__TEXT.__swift5_protos` | `0x90` | `0x94` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x430e40
--  __TEXT.__objc_methlist: 0xa540
--  __TEXT.__const: 0x20d54
--  __TEXT.__cstring: 0x27cc9
-+  __TEXT.__text: 0x44db8c
-+  __TEXT.__objc_methlist: 0xa660
-+  __TEXT.__const: 0x216a4
-+  __TEXT.__cstring: 0x284e9
-   __TEXT.__oslogstring: 0x4c08
--  __TEXT.__gcc_except_tab: 0xe3c
--  __TEXT.__ustring: 0x2050
-+  __TEXT.__gcc_except_tab: 0xe74
-+  __TEXT.__ustring: 0x204a
-   __TEXT.__dlopen_cstrs: 0x138
--  __TEXT.__constg_swiftt: 0xa240
--  __TEXT.__swift5_typeref: 0x3fc9e
-+  __TEXT.__constg_swiftt: 0xa5bc
-+  __TEXT.__swift5_typeref: 0x4250e
-   __TEXT.__swift5_builtin: 0x3c0
--  __TEXT.__swift5_reflstr: 0x79f9
--  __TEXT.__swift5_fieldmd: 0x7f90
--  __TEXT.__swift5_assocty: 0x18c8
--  __TEXT.__swift5_proto: 0xf78
--  __TEXT.__swift5_types: 0x6e8
--  __TEXT.__swift5_capture: 0x407c
--  __TEXT.__swift5_protos: 0x90
--  __TEXT.__swift_as_entry: 0x264
--  __TEXT.__swift_as_ret: 0x214
--  __TEXT.__swift_as_cont: 0x55c
-+  __TEXT.__swift5_reflstr: 0x7de9
-+  __TEXT.__swift5_fieldmd: 0x8238
-+  __TEXT.__swift5_assocty: 0x1900
-+  __TEXT.__swift5_proto: 0xf94
-+  __TEXT.__swift5_types: 0x704
-+  __TEXT.__swift5_capture: 0x449c
-+  __TEXT.__swift5_protos: 0x94
-+  __TEXT.__swift_as_entry: 0x284
-+  __TEXT.__swift_as_ret: 0x230
-+  __TEXT.__swift_as_cont: 0x5ac
-   __TEXT.__swift5_mpenum: 0x28
--  __TEXT.__unwind_info: 0xbe40
--  __TEXT.__eh_frame: 0xb870
-+  __TEXT.__unwind_info: 0xc2e8
-+  __TEXT.__eh_frame: 0xbf10
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2408
--  __DATA_CONST.__objc_classlist: 0x630
-+  __DATA_CONST.__const: 0x2458
-+  __DATA_CONST.__objc_classlist: 0x648
-   __DATA_CONST.__objc_catlist: 0xd8
-   __DATA_CONST.__objc_protolist: 0x298
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x82f8
-+  __DATA_CONST.__objc_selrefs: 0x83b0
-   __DATA_CONST.__objc_protorefs: 0x130
--  __DATA_CONST.__objc_superrefs: 0x280
-+  __DATA_CONST.__objc_superrefs: 0x298
-   __DATA_CONST.__objc_arraydata: 0x1d0
--  __DATA_CONST.__got: 0x23d0
--  __AUTH_CONST.__const: 0x13228
--  __AUTH_CONST.__cfstring: 0x8d60
--  __AUTH_CONST.__objc_const: 0x135b8
-+  __DATA_CONST.__got: 0x2420
-+  __AUTH_CONST.__const: 0x13ee8
-+  __AUTH_CONST.__cfstring: 0x8d80
-+  __AUTH_CONST.__objc_const: 0x13ad8
-   __AUTH_CONST.__objc_intobj: 0x450
-   __AUTH_CONST.__objc_arrayobj: 0xa8
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x3518
--  __AUTH.__objc_data: 0x3e00
--  __AUTH.__data: 0x8ab0
--  __DATA.__objc_ivar: 0x7a0
--  __DATA.__data: 0xc8b0
--  __DATA.__bss: 0x1e820
--  __DATA.__common: 0xd18
--  __DATA_DIRTY.__objc_data: 0x1418
--  __DATA_DIRTY.__data: 0xc28
--  __DATA_DIRTY.__bss: 0xde8
-+  __AUTH_CONST.__auth_got: 0x3540
-+  __AUTH.__objc_data: 0x768
-+  __AUTH.__data: 0x2fd8
-+  __DATA.__objc_ivar: 0x7bc
-+  __DATA.__data: 0xbfc0
-+  __DATA.__bss: 0x1e860
-+  __DATA.__common: 0xb68
-+  __DATA_DIRTY.__objc_data: 0x4cd8
-+  __DATA_DIRTY.__data: 0x75e0
-+  __DATA_DIRTY.__bss: 0x1130
-+  __DATA_DIRTY.__common: 0x1c8
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/Contacts.framework/Contacts
+-1318.0.0.0.0
++1320.0.0.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 19172
--  Symbols:   20019
--  CStrings:  3396
+-  Symbols:   10830
+-  CStrings:  2399
 +  Functions: 19611
-+  Symbols:   20355
-+  CStrings:  3427
- 
-Sections:
-~ __TEXT.__oslogstring : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
++  Symbols:   10985
++  CStrings:  2428
 Symbols:
 + +[CUIKCachingContactNameSearch _keyForEmail:]
 + +[CUIKCachingContactNameSearch _keyForPhoneNumber:]
@@ -253,36 +189,6 @@ Symbols:
 + _keypath_set.197Tm
 + _keypath_set.375Tm
 + _keypath_set.730Tm
-+ _objc_msgSend$_firstUnquotedDesignatorCharInPattern:
-+ _objc_msgSend$_keyForEmail:
-+ _objc_msgSend$_keyForPhoneNumber:
-+ _objc_msgSend$_rangeOfDesignatorInAnnotatedTime:forFormatter:date:
-+ _objc_msgSend$activeInstance
-+ _objc_msgSend$createLocationChooserViewControllerWithDismissHandler:selection:
-+ _objc_msgSend$dataWithContacts:error:
-+ _objc_msgSend$emailAddresses
-+ _objc_msgSend$initWithDelegate:isEditing:allowsEditing:
-+ _objc_msgSend$initWithKey:fullName:firstName:lastName:
-+ _objc_msgSend$initWithResult:
-+ _objc_msgSend$isDifferentFromCommittedEventAndHasUnscheduledAttendees
-+ _objc_msgSend$isDifferentFromCommittedEventAndRequiresRSVP
-+ _objc_msgSend$isDifferentFromCommittedEventAndRequiresReschedule
-+ _objc_msgSend$isExpired
-+ _objc_msgSend$isLeapMonth
-+ _objc_msgSend$navigationItem
-+ _objc_msgSend$overlayYearStringForDate:inCalendar:
-+ _objc_msgSend$phoneNumbers
-+ _objc_msgSend$removeAutocorrection
-+ _objc_msgSend$removeRecentSearchResult:
-+ _objc_msgSend$requestLocationSheetPresentationWithEvent:selection:
-+ _objc_msgSend$resultForEmail:
-+ _objc_msgSend$resultForPhoneNumber:
-+ _objc_msgSend$setDisableGlassPlatter:
-+ _objc_msgSend$setLeftBarButtonItem:
-+ _objc_msgSend$setupWithCompletionHandler:
-+ _objc_msgSend$stringValue
-+ _objc_msgSend$temporaryDirectory
-+ _objc_msgSend$updateMagicComposeReportAConcernAction:
 + _symbolic $s13CalendarUIKit27MagicComposeParticipantInfoP
 + _symbolic SDyS2SSgG
 + _symbolic SDySSypG
@@ -719,14 +625,6 @@ Symbols:
 - _keypath_set.195Tm
 - _keypath_set.379Tm
 - _keypath_set.691Tm
-- _objc_msgSend$_adjustContactName:
-- _objc_msgSend$_rangeOfDesignatorInAnnotatedTime:
-- _objc_msgSend$createLocationChooserViewControllerWithDismissHandler:
-- _objc_msgSend$hasSuffix:
-- _objc_msgSend$initWithDelegate:isEditing:allowsEditing:needsInlineEditButton:
-- _objc_msgSend$requestLocationSheetPresentationWithEvent:
-- _objc_msgSend$setupWithDisambiguateManually:completionHandler:
-- _objc_msgSend$updateNeedsInlineEditButton:
 - _swift_willThrowTypedImpl
 - _symbolic ___________yAByAByAByAByABy_____yACy_____y_____GSg_____yAEGG_____yAEGG_____y_____SgGG_____GASG_____yABy__________y_____GGGGANyAWSgGG_____GAAt 7SwiftUI6SpacerV AA15ModifiedContentV AA012_ConditionalE0V 13CalendarUIKit23DeleteEventConfirmationV AA4TextV AH011UnsubscribejK0V AA6ButtonV AA30_EnvironmentKeyWritingModifierV AA4FontV AA14_PaddingLayoutV AA011_BackgroundR0V AA5ColorV AA11_ClipEffectV AA7CapsuleV AA023AccessibilityAttachmentR0V
 - _symbolic ___________y_____y_____y_____G_Qo_______Qo_t 7SwiftUI7DividerV AA4ViewPAAE15datePickerStyleyQrqd__AA04DatefG0Rd__lFQO AeAE12labelsHiddenQryFQO AA0hF0V AA4TextV AA09GraphicalhfG0V
@@ -1049,5 +947,4 @@ CStrings:
 - "Label for confirming a Magic Compose location based trigger for a reminder, leavig home"
 - "None option in alarm picker, to remove alarm"
 - "’s"
-
 ```

@@ -2,46 +2,33 @@
 
 > `/System/Library/Frameworks/CoreTelephony.framework/Support/libSystemDetermination.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6fef8` | `0x72158` | **`+0x2260`** |
+| `__TEXT.__oslogstring` | `0x9dfe` | `0xa4a0` | **`+0x6a2`** |
+| `__TEXT.__const` | `0x3f09` | `0x4289` | **`+0x380`** |
+| `__AUTH_CONST.__const` | `0x4a90` | `0x4cc8` | **`+0x238`** |
+| `__TEXT.__gcc_except_tab` | `0x5a2c` | `0x5bc0` | **`+0x194`** |
+| `__TEXT.__unwind_info` | `0x2458` | `0x2510` | **`+0xb8`** |
+| `__AUTH_CONST.__cfstring` | `0x940` | `0x960` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x36e0` | `0x36ea` | **`+0xa`** |
+| `__DATA_CONST.__const` | `0xdf8` | `0xe00` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -13487.7.0.0.0
--  __TEXT.__text: 0x6e6a4
--  __TEXT.__const: 0x3f09
--  __TEXT.__gcc_except_tab: 0x5a2c
--  __TEXT.__cstring: 0x36e0
--  __TEXT.__oslogstring: 0x9dfe
--  __TEXT.__unwind_info: 0x2758
 +13494.0.0.0.0
-+  __TEXT.__text: 0x7093c
-+  __TEXT.__const: 0x4289
-+  __TEXT.__gcc_except_tab: 0x5bc0
-+  __TEXT.__cstring: 0x36ea
-+  __TEXT.__oslogstring: 0xa4a0
-+  __TEXT.__unwind_info: 0x2830
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0xdf8
-+  __DATA_CONST.__const: 0xe00
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x4a90
--  __AUTH_CONST.__cfstring: 0x940
-+  __AUTH_CONST.__const: 0x4cc8
-+  __AUTH_CONST.__cfstring: 0x960
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA_DIRTY.__data: 0x8
 
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1804
 -  Symbols:   2970
 -  CStrings:  1453
 +  Functions: 1856
 +  Symbols:   3065
 +  CStrings:  1485
- 
 Symbols:
 + GCC_except_table104
 + GCC_except_table105

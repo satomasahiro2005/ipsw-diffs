@@ -2,105 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/FitnessMachineServices.framework/FitnessMachineServices`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__oslogstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4e8ec` | `0x4f7ac` | **`+0xec0`** |
+| `__TEXT.__swift5_typeref` | `0x306c` | `0x33ea` | **`+0x37e`** |
+| `__AUTH_CONST.__const` | `0x23d0` | `0x2560` | **`+0x190`** |
+| `__DATA.__data` | `0x11b8` | `0x1238` | **`+0x80`** |
+| `__TEXT.__swift5_capture` | `0x844` | `0x8c4` | **`+0x80`** |
+| `__TEXT.__const` | `0x3548` | `0x35b8` | **`+0x70`** |
+| `__AUTH_CONST.__auth_got` | `0x12b8` | `0x1310` | **`+0x58`** |
+| `__TEXT.__constg_swiftt` | `0x11b4` | `0x1200` | **`+0x4c`** |
+| `__DATA_CONST.__objc_selrefs` | `0xdb8` | `0xd80` | **`-0x38`** |
+| `__AUTH_CONST.__objc_const` | `0x2800` | `0x2820` | **`+0x20`** |
+| `__AUTH.__data` | `0x908` | `0x8f8` | **`-0x10`** |
+| `__DATA.__bss` | `0x21a0` | `0x21b0` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x658` | `0x668` | **`+0x10`** |
+| `__TEXT.__cstring` | `0x1fdb` | `0x1feb` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x1548` | `0x1538` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x1530` | `0x1540` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0xa48` | `0xa3c` | **`-0xc`** |
+
+### Same-size Content Changes
+
 - `__TEXT.__swift5_reflstr`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH.__objc_data`
+
+### Other Changes
 
 ```diff
 
 -2027.0.132.0.0
--  __TEXT.__text: 0x4e8ec
--  __TEXT.__objc_methlist: 0x1548
--  __TEXT.__const: 0x3548
--  __TEXT.__cstring: 0x1fdb
 +2027.0.137.0.0
-+  __TEXT.__text: 0x4f7ac
-+  __TEXT.__objc_methlist: 0x1538
-+  __TEXT.__const: 0x35b8
-+  __TEXT.__cstring: 0x1feb
-   __TEXT.__gcc_except_tab: 0x458
-   __TEXT.__oslogstring: 0x1b00
--  __TEXT.__swift5_typeref: 0x306c
--  __TEXT.__swift5_capture: 0x844
--  __TEXT.__constg_swiftt: 0x11b4
-+  __TEXT.__swift5_typeref: 0x33ea
-+  __TEXT.__swift5_capture: 0x8c4
-+  __TEXT.__constg_swiftt: 0x1200
-   __TEXT.__swift5_reflstr: 0xcea
-   __TEXT.__swift5_assocty: 0x2b0
--  __TEXT.__swift5_fieldmd: 0xa48
-+  __TEXT.__swift5_fieldmd: 0xa3c
-   __TEXT.__swift5_builtin: 0x12c
-   __TEXT.__swift5_proto: 0x10c
-   __TEXT.__swift5_types: 0x124
 
-   __TEXT.__swift_as_cont: 0x28
-   __TEXT.__swift5_protos: 0xc
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x1530
-+  __TEXT.__unwind_info: 0x1540
-   __TEXT.__eh_frame: 0xa64
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x120
-   __DATA_CONST.__objc_protolist: 0xe8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xdb8
-+  __DATA_CONST.__objc_selrefs: 0xd80
-   __DATA_CONST.__objc_protorefs: 0x88
-   __DATA_CONST.__objc_superrefs: 0x30
--  __DATA_CONST.__got: 0x658
--  __AUTH_CONST.__const: 0x23d0
-+  __DATA_CONST.__got: 0x668
-+  __AUTH_CONST.__const: 0x2560
-   __AUTH_CONST.__cfstring: 0x8c0
--  __AUTH_CONST.__objc_const: 0x2800
-+  __AUTH_CONST.__objc_const: 0x2820
-   __AUTH_CONST.__objc_intobj: 0x18
--  __AUTH_CONST.__auth_got: 0x12b8
-+  __AUTH_CONST.__auth_got: 0x1310
-   __AUTH.__objc_data: 0x15a8
--  __AUTH.__data: 0x908
-+  __AUTH.__data: 0x8f8
-   __DATA.__objc_ivar: 0xd4
--  __DATA.__data: 0x11b8
--  __DATA.__bss: 0x21a0
-+  __DATA.__data: 0x1238
-+  __DATA.__bss: 0x21b0
-   __DATA.__common: 0x60
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2190
--  Symbols:   5624
+-  Symbols:   5310
 -  CStrings:  325
 +  Functions: 2216
-+  Symbols:   5677
++  Symbols:   5369
 +  CStrings:  324
- 
 Symbols:
 + _$s22FitnessMachineServices04$s22ab12Services0035B107PairingIntentViewswift_IgGGkfMX335_0_33_1DF4A5DC906E290B45C9215F45954BAFLl7PreviewfMf_15PreviewRegistryfMu_V04makeV021DeveloperToolsSupport0V0VyKFZ
 + _$s22FitnessMachineServices04$s22ab12Services0035B107PairingIntentViewswift_IgGGkfMX335_0_33_1DF4A5DC906E290B45C9215F45954BAFLl7PreviewfMf_15PreviewRegistryfMu_V04makeV021DeveloperToolsSupport0V0VyKFZSo16UIViewControllerCyScMYccfU_
@@ -565,12 +505,6 @@ Symbols:
 - _get_witness_table 7SwiftUI14GeometryReaderVyAA4ViewPAAE16scrollIndicators_4axesQrAA25ScrollIndicatorVisibilityV_AA4AxisO3SetVtFQOyAeAE0F14BounceBehavior_AGQrAA0inO0V_AMtFQOyAA0iE0VyAA15ModifiedContentVyAeAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyATyAA6VStackVyAA05TupleQ0VyAA6SpacerV_ATy22FitnessMachineServices018MachinePairingLogoE0VAA16_FixedSizeLayoutVGATyAA6IDViewVyATyATyAA4TextVAA21_TraitWritingModifierVyAA18TransitionTraitKeyVGGAA30_EnvironmentKeyWritingModifierVyAA13TextAlignmentOGGSSGAA31AccessibilityAttachmentModifierVGA2_yA0_yAA012_ConditionalQ0VyA32_yA32_yATyAeAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQOyA5_28WorkoutMachineActivityButtonV_11WorkoutCore32WorkoutVoiceAvailabilityProviderCQo_A29_GSgA43_GA2_yATyATyA42_AA14_PaddingLayoutVGA29_G_A43_QPGGs5NeverOGG_ATyATyA14_A25_GAA24_ForegroundStyleModifierVyAA22HierarchicalShapeStyleVGGQPGSgA4_QPGGA47_G_Qo_AA16_FlexFrameLayoutVGG_Qo__Qo_GAaDHPyHC
 - _get_witness_table 7SwiftUI15ModifiedContentVyAA4ViewPAAE7toolbar7contentQrqd__yXE_tAA07ToolbarD0Rd__lFQOy22FitnessMachineServices017OnboardingConsentE0V_AA0H4ItemVyytACyAA6ButtonVyAA5ImageVGAA30_EnvironmentKeyWritingModifierVyAA13AnyShapeStyleVSgGGGQo_AXGSgAaDHpA0_AaDHPqd0__AaDHD3_A_HO_AxA0eT0HPyHCHC_HC
 - _get_witness_table 7SwiftUI6VStackVyAA12TupleContentVyAA6SpacerV_AA08ModifiedE0VyAIyAIyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA016_ForegroundStyleL0VyAA5ColorVGGAA023AccessibilityAttachmentL0VGAIyAA4TextVAMyAA0S9AlignmentOGGAA6ButtonVyA1_GAGQPGGAA4ViewHPyHC
-- _objc_msgSend$_setBackgroundColor:
-- _objc_msgSend$addSectionWithHeader:content:
-- _objc_msgSend$initWithTitle:
-- _objc_msgSend$setTitleColor:forState:
-- _objc_msgSend$systemBlueColor
-- _objc_msgSend$systemWhiteColor
 - _symbolic So23OBTextWelcomeControllerC
 - _symbolic _____ 22FitnessMachineServices04$s22ab12Services0035B107PairingIntentViewswift_IgGGkfMX332_0_33_1DF4A5DC906E290B45C9215F45954BAFLl7PreviewfMf_15PreviewRegistryfMu_V
 - _symbolic _____ 22FitnessMachineServices04$s22ab12Services0035B108PairingIntentViewswift_IgGGkfMX336_0_33_1DF4A5DC906E290B45C9215F45954BAFLl7PreviewfMf0_15PreviewRegistryfMu_V

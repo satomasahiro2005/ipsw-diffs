@@ -2,83 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__objc_const` | `0x260a8` | `0x279a8` | **`+0x1900`** |
+| `__TEXT.__text` | `0x7b5fc` | `0x7caec` | **`+0x14f0`** |
+| `__TEXT.__objc_methlist` | `0x8b58` | `0x8e58` | **`+0x300`** |
+| `__TEXT.__oslogstring` | `0x490e` | `0x4b4a` | **`+0x23c`** |
+| `__AUTH.__objc_data` | `0x3ac0` | `0x3ca0` | **`+0x1e0`** |
+| `__DATA.__data` | `0x2210` | `0x2390` | **`+0x180`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3490` | `0x35a8` | **`+0x118`** |
+| `__TEXT.__cstring` | `0xde60` | `0xdf69` | **`+0x109`** |
+| `__DATA_CONST.__const` | `0x3908` | `0x3978` | **`+0x70`** |
+| `__TEXT.__unwind_info` | `0x29f8` | `0x2a60` | **`+0x68`** |
+| `__AUTH_CONST.__cfstring` | `0xaea0` | `0xaee0` | **`+0x40`** |
+| `__TEXT.__gcc_except_tab` | `0xcbc` | `0xcf8` | **`+0x3c`** |
+| `__DATA_CONST.__objc_classlist` | `0x6d0` | `0x700` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x8c0` | `0x8e8` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x2908` | `0x2928` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x874` | `0x894` | **`+0x20`** |
+| `__DATA_CONST.__objc_protolist` | `0x2c0` | `0x2e0` | **`+0x20`** |
+| `__DATA_CONST.__objc_protorefs` | `0x1b8` | `0x1d0` | **`+0x18`** |
+| `__DATA.__bss` | `0x900` | `0x910` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x488` | `0x498` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x268` | `0x278` | **`+0x10`** |
+| `__DATA_CONST.__objc_catlist` | `0x20` | `0x28` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -4630.1.102.0.0
--  __TEXT.__text: 0x7b5fc
--  __TEXT.__objc_methlist: 0x8b58
--  __TEXT.__cstring: 0xde60
 +4636.102.1.0.0
-+  __TEXT.__text: 0x7caec
-+  __TEXT.__objc_methlist: 0x8e58
-+  __TEXT.__cstring: 0xdf69
-   __TEXT.__const: 0x768
--  __TEXT.__oslogstring: 0x490e
--  __TEXT.__gcc_except_tab: 0xcbc
-+  __TEXT.__oslogstring: 0x4b4a
-+  __TEXT.__gcc_except_tab: 0xcf8
-   __TEXT.__dlopen_cstrs: 0x170
-   __TEXT.__ustring: 0x58
--  __TEXT.__unwind_info: 0x29f8
-+  __TEXT.__unwind_info: 0x2a60
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3908
--  __DATA_CONST.__objc_classlist: 0x6d0
--  __DATA_CONST.__objc_catlist: 0x20
--  __DATA_CONST.__objc_protolist: 0x2c0
-+  __DATA_CONST.__const: 0x3978
-+  __DATA_CONST.__objc_classlist: 0x700
-+  __DATA_CONST.__objc_catlist: 0x28
-+  __DATA_CONST.__objc_protolist: 0x2e0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3490
--  __DATA_CONST.__objc_protorefs: 0x1b8
--  __DATA_CONST.__objc_superrefs: 0x488
-+  __DATA_CONST.__objc_selrefs: 0x35a8
-+  __DATA_CONST.__objc_protorefs: 0x1d0
-+  __DATA_CONST.__objc_superrefs: 0x498
-   __DATA_CONST.__objc_arraydata: 0x18
--  __DATA_CONST.__got: 0x8c0
--  __AUTH_CONST.__const: 0x2908
--  __AUTH_CONST.__cfstring: 0xaea0
--  __AUTH_CONST.__objc_const: 0x260a8
-+  __DATA_CONST.__got: 0x8e8
-+  __AUTH_CONST.__const: 0x2928
-+  __AUTH_CONST.__cfstring: 0xaee0
-+  __AUTH_CONST.__objc_const: 0x279a8
-   __AUTH_CONST.__objc_intobj: 0xc0
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__auth_got: 0x830
--  __AUTH.__objc_data: 0x3ac0
--  __DATA.__objc_ivar: 0x874
--  __DATA.__data: 0x2210
--  __DATA.__bss: 0x900
-+  __AUTH.__objc_data: 0x3ca0
-+  __DATA.__objc_ivar: 0x894
-+  __DATA.__data: 0x2390
-+  __DATA.__bss: 0x910
-   __DATA_DIRTY.__objc_data: 0x960
-   __DATA_DIRTY.__data: 0x40
--  __DATA_DIRTY.__bss: 0x268
-+  __DATA_DIRTY.__bss: 0x278
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 4302
--  Symbols:   9101
+-  Symbols:   7921
 -  CStrings:  2126
 +  Functions: 4359
-+  Symbols:   9256
++  Symbols:   8055
 +  CStrings:  2137
- 
 Symbols:
 + +[SBSFDIDeviceControlClientSettingsExtension protocol]
 + +[SBSFDIDeviceControlSceneExtension clientComponents]
@@ -214,31 +177,6 @@ Symbols:
 + ___block_descriptor_33_e69_v24?0"FBSMutableSceneClientSettings"8"FBSSceneTransitionContext"16l
 + ___block_descriptor_40_e8_32s_e57_v16?0"BSServiceConnection<BSServiceConnectionContext>"8ls32l8
 + ___block_descriptor_56_e8_32s40s48w_e42_v16?0"<BSServiceConnectionConfiguring>"8ls32l8s40l8w48l8
-+ _objc_msgSend$_clientSettings
-+ _objc_msgSend$_sendCurrentStyle
-+ _objc_msgSend$abort
-+ _objc_msgSend$applyFDIDeviceControlClientSettings:
-+ _objc_msgSend$canSwapApplicationIconsInProminentPositionsWithBundleIdentifier:withApplicationIconsWithBundleIdentifier:
-+ _objc_msgSend$clientScene
-+ _objc_msgSend$clientSettings
-+ _objc_msgSend$componentForExtension:ofClass:
-+ _objc_msgSend$containsProperty:
-+ _objc_msgSend$disablesLiftToWake
-+ _objc_msgSend$disablesTapToWake
-+ _objc_msgSend$hostScene
-+ _objc_msgSend$replaceApplicationIconsWithBundleIdentifier:withApplicationIconsWithBundleIdentifier:
-+ _objc_msgSend$restrictsToConfigurationA
-+ _objc_msgSend$setDeviceCanBeTreatedAsEffectivelyLocked:
-+ _objc_msgSend$setDisablesLiftToWake:
-+ _objc_msgSend$setDisablesTapToWake:
-+ _objc_msgSend$setElevationStyleNum:
-+ _objc_msgSend$setRestrictsToConfigurationA:
-+ _objc_msgSend$settingsDiff
-+ _objc_msgSend$swapApplicationIconsInProminentPositionsWithBundleIdentifier:withApplicationIconsWithBundleIdentifier:
-+ _objc_msgSend$tearDownAndResetRootIconLists
-+ _objc_msgSend$updateClientSettings:
-- _objc_msgSend$canSwapApplicationIconsInProminentPositionsWithBundleIdentifier:withApplicationIconsWithWithBundleIdentifier:
-- _objc_msgSend$swapApplicationIconsInProminentPositionsWithBundleIdentifier:withApplicationIconsWithWithBundleIdentifier:
 CStrings:
 + "FDIDeviceControl"
 + "SBSFDIDeviceControlHostComponent: client settings changed (liftToWake=%{BOOL}u tapToWake=%{BOOL}u configurationA=%{BOOL}u); updating"

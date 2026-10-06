@@ -2,110 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/MigrationKit.framework/MigrationKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x769228` | `0x78b120` | **`+0x21ef8`** |
+| `__TEXT.__eh_frame` | `0x49284` | `0x4ade0` | **`+0x1b5c`** |
+| `__DATA.__bss` | `0x3fd30` | `0x40df0` | **`+0x10c0`** |
+| `__AUTH_CONST.__const` | `0x1c200` | `0x1cf68` | **`+0xd68`** |
+| `__TEXT.__const` | `0x3af30` | `0x3baf8` | **`+0xbc8`** |
+| `__TEXT.__unwind_info` | `0x19c10` | `0x1a5e8` | **`+0x9d8`** |
+| `__AUTH.__data` | `0x17650` | `0x17af0` | **`+0x4a0`** |
+| `__TEXT.__swift5_capture` | `0x3fc0` | `0x4388` | **`+0x3c8`** |
+| `__TEXT.__swift5_typeref` | `0xc847` | `0xcbd3` | **`+0x38c`** |
+| `__TEXT.__oslogstring` | `0x1061c` | `0x1098c` | **`+0x370`** |
+| `__TEXT.__swift5_fieldmd` | `0xe4d4` | `0xe7ec` | **`+0x318`** |
+| `__TEXT.__swift5_reflstr` | `0xd192` | `0xd482` | **`+0x2f0`** |
+| `__TEXT.__constg_swiftt` | `0xf6bc` | `0xf98c` | **`+0x2d0`** |
+| `__TEXT.__cstring` | `0x1ace1` | `0x1af21` | **`+0x240`** |
+| `__AUTH_CONST.__objc_const` | `0x1c4f0` | `0x1c6a8` | **`+0x1b8`** |
+| `__TEXT.__swift_as_cont` | `0x40dc` | `0x4270` | **`+0x194`** |
+| `__DATA.__data` | `0xe908` | `0xe9f8` | **`+0xf0`** |
+| `__TEXT.__swift5_proto` | `0x2478` | `0x24e0` | **`+0x68`** |
+| `__DATA_CONST.__const` | `0xb68` | `0xbb0` | **`+0x48`** |
+| `__TEXT.__swift_as_entry` | `0x1794` | `0x17dc` | **`+0x48`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4d28` | `0x4d68` | **`+0x40`** |
+| `__TEXT.__swift_as_ret` | `0x1cd0` | `0x1d0c` | **`+0x3c`** |
+| `__AUTH_CONST.__auth_got` | `0x3568` | `0x35a0` | **`+0x38`** |
+| `__DATA.__common` | `0x1b78` | `0x1bb0` | **`+0x38`** |
+| `__AUTH.__objc_data` | `0x7d10` | `0x7d40` | **`+0x30`** |
+| `__TEXT.__swift5_builtin` | `0x348` | `0x370` | **`+0x28`** |
+| `__TEXT.__swift5_types` | `0xd78` | `0xda0` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0x23c8` | `0x23e8` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x169c` | `0x16b8` | **`+0x1c`** |
+| `__DATA_CONST.__objc_protolist` | `0x2c8` | `0x2b8` | **`-0x10`** |
+| `__TEXT.__objc_methlist` | `0x6fcc` | `0x6fdc` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x128` | `0x120` | **`-0x8`** |
+| `__TEXT.__swift5_mpenum` | `0xe0` | `0xdc` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1426.0.0.0.0
--  __TEXT.__text: 0x769228
--  __TEXT.__objc_methlist: 0x6fcc
--  __TEXT.__const: 0x3af30
--  __TEXT.__oslogstring: 0x1061c
--  __TEXT.__cstring: 0x1ace1
--  __TEXT.__gcc_except_tab: 0x169c
--  __TEXT.__constg_swiftt: 0xf6bc
--  __TEXT.__swift5_typeref: 0xc847
--  __TEXT.__swift5_builtin: 0x348
--  __TEXT.__swift5_reflstr: 0xd192
--  __TEXT.__swift5_fieldmd: 0xe4d4
 +1428.0.3.0.0
-+  __TEXT.__text: 0x78b120
-+  __TEXT.__objc_methlist: 0x6fdc
-+  __TEXT.__const: 0x3baf8
-+  __TEXT.__oslogstring: 0x1098c
-+  __TEXT.__cstring: 0x1af21
-+  __TEXT.__gcc_except_tab: 0x16b8
-+  __TEXT.__constg_swiftt: 0xf98c
-+  __TEXT.__swift5_typeref: 0xcbd3
-+  __TEXT.__swift5_builtin: 0x370
-+  __TEXT.__swift5_reflstr: 0xd482
-+  __TEXT.__swift5_fieldmd: 0xe7ec
-   __TEXT.__swift5_assocty: 0x2410
--  __TEXT.__swift5_proto: 0x2478
--  __TEXT.__swift5_types: 0xd78
--  __TEXT.__swift_as_entry: 0x1794
--  __TEXT.__swift_as_ret: 0x1cd0
--  __TEXT.__swift_as_cont: 0x40dc
--  __TEXT.__swift5_capture: 0x3fc0
-+  __TEXT.__swift5_proto: 0x24e0
-+  __TEXT.__swift5_types: 0xda0
-+  __TEXT.__swift_as_entry: 0x17dc
-+  __TEXT.__swift_as_ret: 0x1d0c
-+  __TEXT.__swift_as_cont: 0x4270
-+  __TEXT.__swift5_capture: 0x4388
-   __TEXT.__swift5_protos: 0x158
--  __TEXT.__swift5_mpenum: 0xe0
-+  __TEXT.__swift5_mpenum: 0xdc
-   __TEXT.__swift5_types2: 0x8
--  __TEXT.__unwind_info: 0x19c10
--  __TEXT.__eh_frame: 0x49284
-+  __TEXT.__unwind_info: 0x1a5e8
-+  __TEXT.__eh_frame: 0x4ade0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xb68
-+  __DATA_CONST.__const: 0xbb0
-   __DATA_CONST.__objc_classlist: 0xc68
-   __DATA_CONST.__objc_catlist: 0x20
--  __DATA_CONST.__objc_protolist: 0x2c8
-+  __DATA_CONST.__objc_protolist: 0x2b8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4d28
--  __DATA_CONST.__objc_protorefs: 0x128
-+  __DATA_CONST.__objc_selrefs: 0x4d68
-+  __DATA_CONST.__objc_protorefs: 0x120
-   __DATA_CONST.__objc_superrefs: 0x340
-   __DATA_CONST.__objc_arraydata: 0x488
--  __DATA_CONST.__got: 0x23c8
--  __AUTH_CONST.__const: 0x1c200
-+  __DATA_CONST.__got: 0x23e8
-+  __AUTH_CONST.__const: 0x1cf68
-   __AUTH_CONST.__cfstring: 0x5780
--  __AUTH_CONST.__objc_const: 0x1c4f0
-+  __AUTH_CONST.__objc_const: 0x1c6a8
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0xcc0
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_arrayobj: 0x210
--  __AUTH_CONST.__auth_got: 0x3568
--  __AUTH.__objc_data: 0x7d10
--  __AUTH.__data: 0x17650
-+  __AUTH_CONST.__auth_got: 0x35a0
-+  __AUTH.__objc_data: 0x7d40
-+  __AUTH.__data: 0x17af0
-   __DATA.__objc_ivar: 0x7ec
--  __DATA.__data: 0xe908
--  __DATA.__bss: 0x3fd30
--  __DATA.__common: 0x1b78
-+  __DATA.__data: 0xe9f8
-+  __DATA.__bss: 0x40df0
-+  __DATA.__common: 0x1bb0
-   __DATA_DIRTY.__objc_data: 0x50
-   __DATA_DIRTY.__bss: 0x10
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 25807
--  Symbols:   12410
+-  Symbols:   10357
 -  CStrings:  4426
 +  Functions: 26222
-+  Symbols:   12491
++  Symbols:   10424
 +  CStrings:  4454
- 
 Symbols:
 + _OBJC_CLASS_$_EKCalendarItem
 + _OBJC_CLASS_$_WiFiAwareDataSessionConfig
@@ -147,28 +94,6 @@ Symbols:
 + _associated conformance 12MigrationKit24AppContentImportProgressV10CodingKeys33_5CFEF590F937534BCDAD402684A4DA00LLOs0G3KeyAAs28CustomDebugStringConvertible
 + _associated conformance 12MigrationKit31OSMigrationDisconnectionRequestV0D6ReasonO10Foundation13CustomNSErrorAAs5Error
 + _get_enum_tag_for_layout_string 12MigrationKit20DeferredEraseManagerV5PhaseO
-+ _objc_msgSend$activatePairingModeWithConfig:delegate:completionHandler:
-+ _objc_msgSend$deactivate
-+ _objc_msgSend$deactivatePairingMode
-+ _objc_msgSend$defaultItemOffer
-+ _objc_msgSend$detachedItems
-+ _objc_msgSend$eventsMatchingPredicate:
-+ _objc_msgSend$exceptionDates
-+ _objc_msgSend$generateVoucherForPairingMode:completionHandler:
-+ _objc_msgSend$initSecureConnectionWithPairedDevice:configuration:
-+ _objc_msgSend$initWithPairingConfig:delegate:
-+ _objc_msgSend$initWithPairingConfiguration:usingPairingDelegate:
-+ _objc_msgSend$initWithPairingMode:pairingMetadata:
-+ _objc_msgSend$initWithServiceType:
-+ _objc_msgSend$pairSetupRequired
-+ _objc_msgSend$pairWithDiscoveryResult:
-+ _objc_msgSend$predicateForEventsWithStartDate:endDate:calendars:
-+ _objc_msgSend$removeEvent:span:commit:error:
-+ _objc_msgSend$removeObserver:forKeyPath:
-+ _objc_msgSend$runWithClient:scheme:originatingUIFlow:
-+ _objc_msgSend$setAlarms:
-+ _objc_msgSend$setPasswordVoucherToken:
-+ _objc_msgSend$token
 + _symbolic SDySSypG______pIeghHrzo_ s5ErrorP
 + _symbolic SS______SgABt 10Foundation4DateV
 + _symbolic ScCySo31WiFiAwarePairingPasswordVoucherC______pG s5ErrorP
@@ -272,14 +197,6 @@ Symbols:
 - ___swift_store_extra_inhabitant_index.201Tm
 - _get_enum_tag_for_layout_string 12MigrationKit14DatabaseHandleC5State022_5F5479FF8FD2B9769B8C9J9E51353C2ALLO
 - _get_enum_tag_for_layout_string xRi_zRi0_zlyxIseghHn_Sg
-- _objc_msgSend$fileHandleForReading
-- _objc_msgSend$fileHandleForWriting
-- _objc_msgSend$initWithDiscoveryResult:serviceType:serviceSpecificInfo:
-- _objc_msgSend$initWithPairingConfiguration:usingPairingDelegate:usingPairingPassphrase:
-- _objc_msgSend$runWithClient:scheme:
-- _objc_msgSend$setConnectionMode:
-- _objc_msgSend$setPairingDelegate:
-- _objc_msgSend$setPairingMethod:
 - _symbolic ScCy______AAtSg_____G s6UInt64V s5NeverO
 - _symbolic ScTy_____Sg______pG 12MigrationKit36OSMigrationTargetToSourceFlowControlV06OneOf_defgH0O s5ErrorP
 - _symbolic ScTyx______pG s5ErrorP

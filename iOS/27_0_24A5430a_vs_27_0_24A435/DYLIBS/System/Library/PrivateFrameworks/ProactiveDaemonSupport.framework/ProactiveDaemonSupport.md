@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ProactiveDaemonSupport.framework/ProactiveDaemonSupport`
 
-```diff
+### Section Size Changes
 
- 3600.156.4.501.4
--  __TEXT.__text: 0x21a78
-+  __TEXT.__text: 0x21a84
-   __TEXT.__objc_methlist: 0x17c
-   __TEXT.__const: 0x1890
-   __TEXT.__cstring: 0x487
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21a78` | `0x21a84` | **`+0xc`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1c20af560 -> sub_1c2594560 : 40 -> 16
 ~ sub_1c20b0f38 -> sub_1c2595f20 : 16 -> 12

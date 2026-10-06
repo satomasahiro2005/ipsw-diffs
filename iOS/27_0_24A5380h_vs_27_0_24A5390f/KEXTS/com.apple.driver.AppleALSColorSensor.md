@@ -2,43 +2,28 @@
 
 > `com.apple.driver.AppleALSColorSensor`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA.__data`
-- `__DATA_CONST.__mod_init_func`
-- `__DATA_CONST.__mod_term_func`
-- `__DATA_CONST.__kalloc_type`
-- `__DATA_CONST.__got`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x1546c` | `0x1d928` | **`+0x84bc`** |
+| `__TEXT.__cstring` | `0x3844` | `0x490a` | **`+0x10c6`** |
+| `__DATA_CONST.__const` | `0x7248` | `0x76d8` | **`+0x490`** |
+| `__TEXT_EXEC.__auth_stubs` | `0x330` | `0x690` | **`+0x360`** |
+| `__DATA_CONST.__auth_got` | `0x198` | `0x348` | **`+0x1b0`** |
+| `__TEXT.__const` | `0x118` | `0x148` | **`+0x30`** |
+
+### Other Changes
 
 ```diff
 
 -2300.0.10.0.1
--  __TEXT.__const: 0x118
--  __TEXT.__cstring: 0x3844
-+2300.0.18.502.1
-+  __TEXT.__const: 0x148
-+  __TEXT.__cstring: 0x490a
-   __TEXT.__os_log: 0x96
--  __TEXT_EXEC.__text: 0x1546c
--  __TEXT_EXEC.__auth_stubs: 0x330
-+  __TEXT_EXEC.__text: 0x1d928
-+  __TEXT_EXEC.__auth_stubs: 0x690
-   __DATA.__data: 0x188
-   __DATA.__common: 0x220
-   __DATA_CONST.__mod_init_func: 0x68
-   __DATA_CONST.__mod_term_func: 0x68
--  __DATA_CONST.__const: 0x7248
-+  __DATA_CONST.__const: 0x76d8
-   __DATA_CONST.__kalloc_type: 0x4c0
--  __DATA_CONST.__auth_got: 0x198
-+  __DATA_CONST.__auth_got: 0x348
-   __DATA_CONST.__got: 0xb0
 -  Functions: 415
++2300.0.18.502.1
 +  Functions: 645
-   Symbols:   0
+
 -  CStrings:  411
 +  CStrings:  451
- 
 CStrings:
 + "\"TB_ASSERT: \" \"(alsdefines_alsreport__decode(msg, &report) == TB_ERROR_SUCCESS) && \\\"failed to decode type: ALSDefines.ALSReport\\\"\" \", \" \"\\b\\b\" \" (%s:%d)\" @%s:%d"
 + "\"TB_ASSERT: \" \"(calibrationbufferelement__v_decode(msg, &calib) == TB_ERROR_SUCCESS) && \\\"failed to decode type: ALSDefines.CalibrationBufferElement (aka. UInt8)\\\"\" \", \" \"\\b\\b\" \" (%s:%d)\" @%s:%d"

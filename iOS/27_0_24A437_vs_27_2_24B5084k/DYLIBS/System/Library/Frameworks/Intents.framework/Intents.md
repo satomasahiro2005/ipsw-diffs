@@ -2,81 +2,42 @@
 
 > `/System/Library/Frameworks/Intents.framework/Intents`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x460578` | `0x461570` | **`+0xff8`** |
+| `__AUTH_CONST.__objc_const` | `0xb4da8` | `0xb4578` | **`-0x830`** |
+| `__TEXT.__oslogstring` | `0x617f` | `0x657d` | **`+0x3fe`** |
+| `__TEXT.__cstring` | `0x47beb` | `0x47cf6` | **`+0x10b`** |
+| `__AUTH_CONST.__cfstring` | `0x42a40` | `0x42ac0` | **`+0x80`** |
+| `__DATA.__data` | `0x12f98` | `0x12f38` | **`-0x60`** |
+| `__TEXT.__objc_methlist` | `0x78c6c` | `0x78cb4` | **`+0x48`** |
+| `__DATA_CONST.__objc_selrefs` | `0x154d0` | `0x154f8` | **`+0x28`** |
+| `__TEXT.__gcc_except_tab` | `0x2194` | `0x21bc` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x11a68` | `0x11a90` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0xb850` | `0xb870` | **`+0x20`** |
+| `__TEXT.__const` | `0x1d28` | `0x1d48` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x858` | `0x868` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x3d54` | `0x3d5c` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x28d0` | `0x28d8` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x1940` | `0x1938` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -4016.0.51.1.102
--  __TEXT.__text: 0x444290
--  __TEXT.__objc_methlist: 0x78c6c
--  __TEXT.__const: 0x1d28
 +4016.1.8.0.0
-+  __TEXT.__text: 0x44524c
-+  __TEXT.__objc_methlist: 0x78cb4
-+  __TEXT.__const: 0x1d48
-   __TEXT.__dlopen_cstrs: 0xce9
--  __TEXT.__gcc_except_tab: 0x2194
--  __TEXT.__cstring: 0x47beb
--  __TEXT.__oslogstring: 0x617f
-+  __TEXT.__gcc_except_tab: 0x21bc
-+  __TEXT.__cstring: 0x47cf6
-+  __TEXT.__oslogstring: 0x657d
-   __TEXT.__ustring: 0x512
--  __TEXT.__unwind_info: 0x14c40
-+  __TEXT.__unwind_info: 0x14c68
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xb850
-+  __DATA_CONST.__const: 0xb870
-   __DATA_CONST.__objc_classlist: 0x2930
-   __DATA_CONST.__objc_catlist: 0x100
--  __DATA_CONST.__objc_protolist: 0x1940
-+  __DATA_CONST.__objc_protolist: 0x1938
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x154d0
-+  __DATA_CONST.__objc_selrefs: 0x154f8
-   __DATA_CONST.__objc_protorefs: 0x90
-   __DATA_CONST.__objc_superrefs: 0x1398
-   __DATA_CONST.__objc_arraydata: 0xc820
--  __DATA_CONST.__got: 0x28d0
-+  __DATA_CONST.__got: 0x28d8
-   __AUTH_CONST.__const: 0x17c0
--  __AUTH_CONST.__cfstring: 0x42a40
--  __AUTH_CONST.__objc_const: 0xb4da8
-+  __AUTH_CONST.__cfstring: 0x42ac0
-+  __AUTH_CONST.__objc_const: 0xb4578
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x828
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__objc_arrayobj: 0x4dd0
-   __AUTH_CONST.__objc_dictobj: 0x3b60
--  __AUTH_CONST.__auth_got: 0x858
-+  __AUTH_CONST.__auth_got: 0x868
-   __AUTH.__objc_data: 0x16a80
--  __DATA.__objc_ivar: 0x3d54
--  __DATA.__data: 0x12f98
-+  __DATA.__objc_ivar: 0x3d5c
-+  __DATA.__data: 0x12f38
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0x3160
-   __DATA_DIRTY.__bss: 0x1a0
 
-   - /System/Library/PrivateFrameworks/TCC.framework/TCC
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
 +  - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libmis.dylib
-   - /usr/lib/libobjc.A.dylib
+
 -  Functions: 30712
--  Symbols:   58488
+-  Symbols:   51850
 -  CStrings:  9706
 +  Functions: 30722
-+  Symbols:   58507
++  Symbols:   51865
 +  CStrings:  9726
- 
 Symbols:
 + -[INFile _setUnverifiedFileURL:securityScope:]
 + -[INFile _unverifiedFileURL]
@@ -221,10 +182,6 @@ Symbols:
 + ____INCanonicalPathForFileURL_block_invoke
 + _audit_token_to_pid
 + _getpid
-+ _objc_msgSend$_in_outgoingSecurityScope
-+ _objc_msgSend$_in_setOutgoingSecurityScope:
-+ _objc_msgSend$_setUnverifiedFileURL:securityScope:
-+ _objc_msgSend$_unverifiedFileURL
 - GCC_except_table10141
 - GCC_except_table10151
 - GCC_except_table10153

@@ -2,15 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/HeadphoneCommonUIKit.framework/HeadphoneCommonUIKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbe97c` | `0xbea0c` | **`+0x90`** |
+
+### Other Changes
+
 ```diff
 
 -40.41.1.1.7
--  __TEXT.__text: 0xbe97c
 +40.41.1.1.10
-+  __TEXT.__text: 0xbea0c
-   __TEXT.__objc_methlist: 0x1334
-   __TEXT.__const: 0x4754
-   __TEXT.__gcc_except_tab: 0x104
 Functions:
 ~ sub_1d7d7d880 -> sub_1d7bfd880 : 668 -> 672
 ~ sub_1d7d7db1c -> sub_1d7bfdb20 : 660 -> 664

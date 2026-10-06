@@ -2,17 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/SMBClientProvider.framework/smbclientd`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x59b74
-+  __TEXT.__text: 0x59b6c
-   __TEXT.__auth_stubs: 0x850
-   __TEXT.__objc_stubs: 0x5400
-   __TEXT.__objc_methlist: 0x2170
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__unwind_info : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x59b74` | `0x59b6c` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_100032524 : 472 -> 464
-
 ```

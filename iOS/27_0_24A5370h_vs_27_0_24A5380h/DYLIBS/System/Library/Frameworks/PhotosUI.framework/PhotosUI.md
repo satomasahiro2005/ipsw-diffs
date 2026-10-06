@@ -2,123 +2,64 @@
 
 > `/System/Library/Frameworks/PhotosUI.framework/PhotosUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x491b4` | `0x41874` | **`-0x7940`** |
+| `__AUTH_CONST.__const` | `0x2868` | `0x20f0` | **`-0x778`** |
+| `__AUTH_CONST.__objc_const` | `0x7398` | `0x6e38` | **`-0x560`** |
+| `__TEXT.__eh_frame` | `0xc5c` | `0x73c` | **`-0x520`** |
+| `__TEXT.__const` | `0x32a8` | `0x2e68` | **`-0x440`** |
+| `__AUTH.__objc_data` | `0x2400` | `0x1fd8` | **`-0x428`** |
+| `__DATA.__data` | `0x1e88` | `0x1ac8` | **`-0x3c0`** |
+| `__DATA.__bss` | `0x33a0` | `0x30a0` | **`-0x300`** |
+| `__TEXT.__unwind_info` | `0x1b90` | `0x18e8` | **`-0x2a8`** |
+| `__TEXT.__swift5_typeref` | `0xe2c` | `0xb92` | **`-0x29a`** |
+| `__TEXT.__constg_swiftt` | `0xf2c` | `0xd04` | **`-0x228`** |
+| `__TEXT.__swift5_fieldmd` | `0xda0` | `0xba4` | **`-0x1fc`** |
+| `__TEXT.__swift5_capture` | `0x684` | `0x4b8` | **`-0x1cc`** |
+| `__TEXT.__swift5_reflstr` | `0xc75` | `0xaf1` | **`-0x184`** |
+| `__AUTH.__data` | `0x758` | `0x678` | **`-0xe0`** |
+| `__TEXT.__oslogstring` | `0x12e1` | `0x120c` | **`-0xd5`** |
+| `__AUTH_CONST.__cfstring` | `0x2180` | `0x2220` | **`+0xa0`** |
+| `__AUTH_CONST.__auth_got` | `0xa70` | `0xa00` | **`-0x70`** |
+| `__TEXT.__objc_methlist` | `0x3e04` | `0x3db4` | **`-0x50`** |
+| `__DATA_CONST.__const` | `0xd98` | `0xd60` | **`-0x38`** |
+| `__DATA_CONST.__objc_protolist` | `0x250` | `0x218` | **`-0x38`** |
+| `__DATA_CONST.__objc_protorefs` | `0x120` | `0xf0` | **`-0x30`** |
+| `__DATA.__common` | `0x270` | `0x241` | **`-0x2f`** |
+| `__TEXT.__swift_as_cont` | `0x54` | `0x28` | **`-0x2c`** |
+| `__DATA_CONST.__got` | `0x620` | `0x5f8` | **`-0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x240` | `0x220` | **`-0x20`** |
+| `__TEXT.__swift_as_entry` | `0x4c` | `0x2c` | **`-0x20`** |
+| `__TEXT.__swift5_types` | `0x130` | `0x114` | **`-0x1c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x20d0` | `0x20e8` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0x1ac` | `0x194` | **`-0x18`** |
+| `__DATA.__objc_ivar` | `0x308` | `0x31c` | **`+0x14`** |
+| `__TEXT.__swift5_builtin` | `0x154` | `0x168` | **`+0x14`** |
+| `__DATA_CONST.__objc_superrefs` | `0xf0` | `0xf8` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0xc` | `0x4` | **`-0x8`** |
+| `__TEXT.__swift5_protos` | `0x10` | `0xc` | **`-0x4`** |
+| `__TEXT.__cstring` | `0x4b7e` | `0x4b7b` | **`-0x3`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x491b4
--  __TEXT.__objc_methlist: 0x3e04
--  __TEXT.__const: 0x32a8
--  __TEXT.__swift5_typeref: 0xe2c
--  __TEXT.__swift5_fieldmd: 0xda0
--  __TEXT.__constg_swiftt: 0xf2c
--  __TEXT.__swift5_builtin: 0x154
--  __TEXT.__swift5_reflstr: 0xc75
-+  __TEXT.__text: 0x41874
-+  __TEXT.__objc_methlist: 0x3db4
-+  __TEXT.__const: 0x2e68
-+  __TEXT.__constg_swiftt: 0xd04
-+  __TEXT.__swift5_typeref: 0xb92
-+  __TEXT.__swift5_reflstr: 0xaf1
-+  __TEXT.__swift5_fieldmd: 0xba4
-+  __TEXT.__swift5_builtin: 0x168
-   __TEXT.__swift5_assocty: 0x330
--  __TEXT.__swift5_protos: 0x10
--  __TEXT.__swift5_proto: 0x1ac
--  __TEXT.__swift5_types: 0x130
--  __TEXT.__cstring: 0x4b7e
--  __TEXT.__oslogstring: 0x12e1
--  __TEXT.__swift5_capture: 0x684
--  __TEXT.__swift_as_entry: 0x4c
--  __TEXT.__swift_as_cont: 0x54
--  __TEXT.__swift_as_ret: 0xc
-+  __TEXT.__cstring: 0x4b7b
-+  __TEXT.__oslogstring: 0x120c
-+  __TEXT.__swift5_capture: 0x4b8
-+  __TEXT.__swift5_proto: 0x194
-+  __TEXT.__swift5_types: 0x114
-+  __TEXT.__swift_as_entry: 0x2c
-+  __TEXT.__swift_as_cont: 0x28
-+  __TEXT.__swift5_protos: 0xc
-+  __TEXT.__swift5_mpenum: 0x8
-+  __TEXT.__swift_as_ret: 0x4
-   __TEXT.__gcc_except_tab: 0x290
--  __TEXT.__unwind_info: 0x1b90
--  __TEXT.__eh_frame: 0xc5c
-+  __TEXT.__unwind_info: 0x18e8
-+  __TEXT.__eh_frame: 0x73c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xd98
--  __DATA_CONST.__objc_classlist: 0x240
-+  __DATA_CONST.__const: 0xd60
-+  __DATA_CONST.__objc_classlist: 0x220
-   __DATA_CONST.__objc_catlist: 0x18
--  __DATA_CONST.__objc_protolist: 0x250
-+  __DATA_CONST.__objc_protolist: 0x218
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x20d0
--  __DATA_CONST.__objc_protorefs: 0x120
--  __DATA_CONST.__objc_superrefs: 0xf0
-+  __DATA_CONST.__objc_selrefs: 0x20e8
-+  __DATA_CONST.__objc_protorefs: 0xf0
-+  __DATA_CONST.__objc_superrefs: 0xf8
-   __DATA_CONST.__objc_arraydata: 0x20
--  __DATA_CONST.__got: 0x620
--  __AUTH_CONST.__const: 0x2868
--  __AUTH_CONST.__cfstring: 0x2180
--  __AUTH_CONST.__objc_const: 0x7398
-+  __DATA_CONST.__got: 0x5f8
-+  __AUTH_CONST.__const: 0x20f0
-+  __AUTH_CONST.__cfstring: 0x2220
-+  __AUTH_CONST.__objc_const: 0x6e38
-   __AUTH_CONST.__objc_intobj: 0x60
-   __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__auth_got: 0xa70
--  __AUTH.__objc_data: 0x2400
--  __AUTH.__data: 0x758
--  __DATA.__objc_ivar: 0x308
--  __DATA.__data: 0x1e88
--  __DATA.__common: 0x270
--  __DATA.__bss: 0x33a0
-+  __AUTH_CONST.__auth_got: 0xa00
-+  __AUTH.__objc_data: 0x1fd8
-+  __AUTH.__data: 0x678
-+  __DATA.__objc_ivar: 0x31c
-+  __DATA.__data: 0x1ac8
-+  __DATA.__common: 0x241
-+  __DATA.__bss: 0x30a0
-   __DATA_DIRTY.__objc_data: 0xf0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreLocation.framework/CoreLocation
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
+-910.21.101.0.0
++910.27.103.0.0
+
 -  - /System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation
 -  - /System/Library/Frameworks/ExtensionKit.framework/ExtensionKit
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/ImageIO.framework/ImageIO
-   - /System/Library/Frameworks/Photos.framework/Photos
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3145
--  Symbols:   5548
--  CStrings:  828
+-  Symbols:   2955
+-  CStrings:  561
 +  Functions: 2928
-+  Symbols:   5297
-+  CStrings:  823
- 
-Sections:
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   2901
++  CStrings:  551
 Symbols:
 + +[PHPickerFilter _groupsPeopleQuantityFilterWithMinimumMemberCount:maximumMemberCount:]
 + +[PUPickerGroupsPeopleQuantityFilter supportsSecureCoding]
@@ -180,17 +121,6 @@ Symbols:
 + __OBJC_CLASS_RO_$_PUPickerGroupsPeopleQuantityFilter
 + __OBJC_METACLASS_RO_$_PUPickerGroupsPeopleQuantityFilter
 + ___swift_memcpy17_8
-+ _objc_msgSend$_groupsPeopleQuantityFilterWithMinimumMemberCount:maximumMemberCount:
-+ _objc_msgSend$_initWithSuggestions:defaultSuggestionIndex:isForWallpaper:defaultsToFaceMode:hasPinnedSuggestionItems:
-+ _objc_msgSend$_setCustomKeyAssetIdentifiers:
-+ _objc_msgSend$generatedMaximumSocialGroupMemberCount
-+ _objc_msgSend$generatedMinimumSocialGroupMemberCount
-+ _objc_msgSend$imagePlaygroundSuggestionGroupWithPinnedItemIdentifiers:defaultsToFaceMode:
-+ _objc_msgSend$initWithMinimumMemberCount:maximumMemberCount:
-+ _objc_msgSend$initWithPinnedItemIdentifiers:
-+ _objc_msgSend$maximumMemberCount
-+ _objc_msgSend$minimumMemberCount
-+ _objc_msgSend$openPhotoLibraryWithWellKnownIdentifier:error:
 + _swift_getDynamicType
 + _symbolic SDyS2SG
 + _symbolic SNySiG
@@ -288,15 +218,6 @@ Symbols:
 - _flat unique 8PhotosUI21PVSPostAssetsProtocol_p
 - _flat unique 8PhotosUI33PVSCreateSharedCollectionProtocol_p
 - _flat unique 8PhotosUI36PVSCustomizeSharedCollectionProtocol_p
-- _objc_msgSend$_initWithSuggestions:defaultSuggestionIndex:isForWallpaper:
-- _objc_msgSend$makeXPCConnectionWithError:
-- _objc_msgSend$provideWithAssetCollectionLocalIdentifier:requestUUID:wantsSheetPresentation:didDismiss:
-- _objc_msgSend$provideWithAssetLocalIdentifiers:targetCollectionLocalIdentifier:requestUUID:wantsSheetPresentation:didDismissBlock:
-- _objc_msgSend$provideWithDefaultTitle:defaultSharingPolicy:wantsSheetPresentation:requestUUID:didDismiss:
-- _objc_msgSend$provideWithHeaderWasDismissed:
-- _objc_msgSend$provideWithLocalizedHostName:requestUUID:completion:
-- _objc_msgSend$provideWithRequestUUID:album:hasHeaderEverBeenDismissed:completion:
-- _objc_msgSend$superview
 - _swift_allocateGenericClassMetadata
 - _swift_getEnumTagSinglePayloadGeneric
 - _swift_initClassMetadata2
@@ -401,5 +322,4 @@ CStrings:
 - "PhotosUI/PVSSyncNowHostDelegate.swift"
 - "PhotosUI/PVSUtilities.swift"
 - "PhotosUI/PVSViewController.swift"
-
 ```

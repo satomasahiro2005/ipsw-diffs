@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/DeepThoughtBiomeFoundation.framework/DeepThoughtBiomeFoundation`
 
-```diff
+### Section Size Changes
 
- 6.0.7.0.0
--  __TEXT.__text: 0x70b84
-+  __TEXT.__text: 0x70c20
-   __TEXT.__objc_methlist: 0x910
-   __TEXT.__const: 0x3b48
-   __TEXT.__oslogstring: 0x1386
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x70b84` | `0x70c20` | **`+0x9c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_2237b5ba8 -> sub_223fe5ba8 : 244 -> 248
 ~ sub_2237b626c -> sub_223fe6270 : 480 -> 484

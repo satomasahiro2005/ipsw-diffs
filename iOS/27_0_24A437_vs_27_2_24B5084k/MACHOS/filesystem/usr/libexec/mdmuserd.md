@@ -2,15 +2,14 @@
 
 > `/usr/libexec/mdmuserd`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__DATA.__objc_selrefs`
+
+### Other Changes
 
 ```diff
 
 -113.2.5.0.0
 +113.40.17.0.0
-   __TEXT.__text: 0x208
-   __TEXT.__auth_stubs: 0x100
-   __TEXT.__objc_stubs: 0x140
 ```

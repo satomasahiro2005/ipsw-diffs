@@ -2,39 +2,24 @@
 
 > `/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x292ee4` | `0x2aab10` | **`+0x17c2c`** |
+| `__TEXT.__eh_frame` | `0x1ed8` | `0x26b8` | **`+0x7e0`** |
+| `__TEXT.__const` | `0x99ef0` | `0x9a330` | **`+0x440`** |
+| `__TEXT.__unwind_info` | `0x2430` | `0x2500` | **`+0xd0`** |
+| `__AUTH_CONST.__auth_got` | `0x328` | `0x330` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 650.0.1.0.0
--  __TEXT.__text: 0x292ee4
-+  __TEXT.__text: 0x2aab10
-   __TEXT.__delay_stubs: 0x780
-   __TEXT.__delay_helper: 0x5a4
--  __TEXT.__const: 0x99ef0
-+  __TEXT.__const: 0x9a330
-   __TEXT.__cstring: 0x6acb
--  __TEXT.__unwind_info: 0x2430
--  __TEXT.__eh_frame: 0x1ed8
-+  __TEXT.__unwind_info: 0x2500
-+  __TEXT.__eh_frame: 0x26b8
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x2f20
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0xbf88
--  __AUTH_CONST.__auth_got: 0x328
-+  __AUTH_CONST.__auth_got: 0x330
-   __DATA.__data: 0x50
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__data: 0x118
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libcompression.dylib
 -  Functions: 3409
 -  Symbols:   4342
 +  Functions: 3446
 +  Symbols:   4385
-   CStrings:  404
- 
 Symbols:
 + ___sme_memset
 + _tbl_tile0

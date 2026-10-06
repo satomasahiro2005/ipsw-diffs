@@ -2,127 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/NanoTimeKit.framework/NanoTimeKit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_protos`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_floatobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2fa24c` | `0x2fd464` | **`+0x3218`** |
+| `__AUTH_CONST.__objc_const` | `0x53880` | `0x53a00` | **`+0x180`** |
+| `__TEXT.__eh_frame` | `0x1c38` | `0x1d70` | **`+0x138`** |
+| `__TEXT.__oslogstring` | `0x1530e` | `0x1542e` | **`+0x120`** |
+| `__TEXT.__objc_methlist` | `0x2fef8` | `0x2fff8` | **`+0x100`** |
+| `__AUTH_CONST.__const` | `0x5d08` | `0x5da8` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0x1dc0e` | `0x1dc9e` | **`+0x90`** |
+| `__TEXT.__unwind_info` | `0xd400` | `0xd488` | **`+0x88`** |
+| `__DATA_CONST.__objc_selrefs` | `0x14ca0` | `0x14d10` | **`+0x70`** |
+| `__TEXT.__const` | `0x5dc4` | `0x5e34` | **`+0x70`** |
+| `__TEXT.__swift5_capture` | `0x584` | `0x5e4` | **`+0x60`** |
+| `__TEXT.__swift5_reflstr` | `0x805` | `0x865` | **`+0x60`** |
+| `__AUTH_CONST.__auth_got` | `0x2068` | `0x20c0` | **`+0x58`** |
+| `__AUTH.__objc_data` | `0xa1f0` | `0xa240` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x5954` | `0x59a0` | **`+0x4c`** |
+| `__AUTH_CONST.__cfstring` | `0x20b60` | `0x20ba0` | **`+0x40`** |
+| `__TEXT.__swift5_typeref` | `0x154e` | `0x158e` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x3258` | `0x3290` | **`+0x38`** |
+| `__DATA.__data` | `0x5050` | `0x5080` | **`+0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0xd2c` | `0xd50` | **`+0x24`** |
+| `__DATA_DIRTY.__data` | `0x1368` | `0x1348` | **`-0x20`** |
+| `__TEXT.__swift_as_cont` | `0xe4` | `0x100` | **`+0x1c`** |
+| `__DATA.__common` | `0x70` | `0x88` | **`+0x18`** |
+| `__AUTH.__data` | `0x340` | `0x350` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x88` | `0x94` | **`+0xc`** |
+| `__DATA.__objc_ivar` | `0x39a0` | `0x39a8` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x1b50` | `0x1b58` | **`+0x8`** |
+| `__DATA_DIRTY.__objc_data` | `0x7318` | `0x7320` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x80` | `0x88` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -2483.503.0.0.0
--  __TEXT.__text: 0x2fa24c
--  __TEXT.__objc_methlist: 0x2fef8
--  __TEXT.__const: 0x5dc4
--  __TEXT.__gcc_except_tab: 0x5954
--  __TEXT.__cstring: 0x1dc0e
--  __TEXT.__oslogstring: 0x1530e
 +2483.512.0.0.0
-+  __TEXT.__text: 0x2fd464
-+  __TEXT.__objc_methlist: 0x2fff8
-+  __TEXT.__const: 0x5e34
-+  __TEXT.__gcc_except_tab: 0x59a0
-+  __TEXT.__cstring: 0x1dc9e
-+  __TEXT.__oslogstring: 0x1542e
-   __TEXT.__ustring: 0x43a
--  __TEXT.__swift5_typeref: 0x154e
--  __TEXT.__swift5_reflstr: 0x805
-+  __TEXT.__swift5_typeref: 0x158e
-+  __TEXT.__swift5_reflstr: 0x865
-   __TEXT.__swift5_assocty: 0x228
-   __TEXT.__constg_swiftt: 0xd74
--  __TEXT.__swift5_fieldmd: 0xd2c
-+  __TEXT.__swift5_fieldmd: 0xd50
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_proto: 0x290
-   __TEXT.__swift5_types: 0x110
--  __TEXT.__swift5_capture: 0x584
--  __TEXT.__swift_as_entry: 0x88
--  __TEXT.__swift_as_ret: 0x80
--  __TEXT.__swift_as_cont: 0xe4
-+  __TEXT.__swift5_capture: 0x5e4
-+  __TEXT.__swift_as_entry: 0x94
-+  __TEXT.__swift_as_ret: 0x88
-+  __TEXT.__swift_as_cont: 0x100
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__unwind_info: 0xd400
--  __TEXT.__eh_frame: 0x1c38
-+  __TEXT.__unwind_info: 0xd488
-+  __TEXT.__eh_frame: 0x1d70
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xbe18
--  __DATA_CONST.__objc_classlist: 0x1b50
-+  __DATA_CONST.__objc_classlist: 0x1b58
-   __DATA_CONST.__objc_catlist: 0xd0
-   __DATA_CONST.__objc_protolist: 0x670
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x14ca0
-+  __DATA_CONST.__objc_selrefs: 0x14d10
-   __DATA_CONST.__objc_protorefs: 0x120
-   __DATA_CONST.__objc_superrefs: 0x1510
-   __DATA_CONST.__objc_arraydata: 0x28e0
--  __DATA_CONST.__got: 0x3258
--  __AUTH_CONST.__const: 0x5d08
--  __AUTH_CONST.__cfstring: 0x20b60
--  __AUTH_CONST.__objc_const: 0x53880
-+  __DATA_CONST.__got: 0x3290
-+  __AUTH_CONST.__const: 0x5da8
-+  __AUTH_CONST.__cfstring: 0x20ba0
-+  __AUTH_CONST.__objc_const: 0x53a00
-   __AUTH_CONST.__objc_intobj: 0x4b00
-   __AUTH_CONST.__objc_doubleobj: 0x33b0
-   __AUTH_CONST.__objc_dictobj: 0x4d8
-   __AUTH_CONST.__objc_arrayobj: 0x19f8
-   __AUTH_CONST.__objc_floatobj: 0x10
--  __AUTH_CONST.__auth_got: 0x2068
--  __AUTH.__objc_data: 0xa1f0
--  __AUTH.__data: 0x340
--  __DATA.__objc_ivar: 0x39a0
--  __DATA.__data: 0x5050
-+  __AUTH_CONST.__auth_got: 0x20c0
-+  __AUTH.__objc_data: 0xa240
-+  __AUTH.__data: 0x350
-+  __DATA.__objc_ivar: 0x39a8
-+  __DATA.__data: 0x5080
-   __DATA.__bss: 0x5b50
--  __DATA.__common: 0x70
--  __DATA_DIRTY.__objc_data: 0x7318
--  __DATA_DIRTY.__data: 0x1368
-+  __DATA.__common: 0x88
-+  __DATA_DIRTY.__objc_data: 0x7320
-+  __DATA_DIRTY.__data: 0x1348
-   __DATA_DIRTY.__bss: 0x4b60
-   __DATA_DIRTY.__common: 0x50
-   __FONT_DATA.__VictoryFont1: 0x13d0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 20270
--  Symbols:   42210
+-  Symbols:   33989
 -  CStrings:  6388
 +  Functions: 20308
-+  Symbols:   42250
++  Symbols:   34018
 +  CStrings:  6396
- 
 Symbols:
 + +[NTKComplication(Defines) sleepScoreComplication]
 + -[NTKComplicationController _notifyTouchObserverTouchCancelled:]
@@ -168,20 +94,6 @@ Symbols:
 + ___block_descriptor_56_e8_32s40s48s_e32_v24?0"CHSWidgetExtension"8^B16ls32l8s40l8s48l8
 + ___swift_closure_destructor.132Tm
 + ___swift_closure_destructor.168Tm
-+ _objc_msgSend$_accessibilityEditOptionDescription
-+ _objc_msgSend$_applyStyleIfPossibleWithTransitionContext:
-+ _objc_msgSend$_applyStyleToDisplay:withTransitionContext:
-+ _objc_msgSend$_batchingUpdatesToDisplay:withTransitionContext:updates:
-+ _objc_msgSend$_complicationTouchObserverForSlot:
-+ _objc_msgSend$animationCompletion
-+ _objc_msgSend$animationSettings
-+ _objc_msgSend$complicationController:touchCancelledForDisplayWrapper:
-+ _objc_msgSend$deviceIdentifier
-+ _objc_msgSend$relationshipIDForPairingID:
-+ _objc_msgSend$secondarySystemFillColor
-+ _objc_msgSend$setAnimationSettings:
-+ _objc_msgSend$setStyle:withTransitionContext:
-+ _objc_msgSend$widgetComplicationDeviceProviderPairedDevicesChanged:
 + _symbolic SDy_____AAG 10Foundation4UUIDV
 + _symbolic _____ s8DurationV
 + _symbolic ______AAt 10Foundation4UUIDV
@@ -207,9 +119,6 @@ Symbols:
 - ___block_descriptor_48_e8_32s40r_e32_v24?0"CHSWidgetExtension"8^B16ls32l8r40l8
 - ___swift_closure_destructor.133Tm
 - ___swift_closure_destructor.146Tm
-- _objc_msgSend$_applyStyleIfPossible:
-- _objc_msgSend$_applyStyleToDisplay:animationCompletion:
-- _objc_msgSend$_batchingUpdatesToDisplay:animationCompletion:updates:
 CStrings:
 + "Paired devices changed"
 + "Reconnect already in flight - ignoring duplicate request…"

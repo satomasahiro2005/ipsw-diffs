@@ -2,9 +2,11 @@
 
 > `/System/Library/Frameworks/ModelIO.framework/ModelIO`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 CStrings:

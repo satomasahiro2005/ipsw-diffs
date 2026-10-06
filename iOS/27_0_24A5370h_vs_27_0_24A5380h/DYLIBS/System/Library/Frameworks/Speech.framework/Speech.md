@@ -2,117 +2,45 @@
 
 > `/System/Library/Frameworks/Speech.framework/Speech`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x229fbc` | `0x22b844` | **`+0x1888`** |
+| `__DATA_DIRTY.__data` | `0x5278` | `0x61b8` | **`+0xf40`** |
+| `__AUTH.__data` | `0x1998` | `0xd00` | **`-0xc98`** |
+| `__AUTH.__objc_data` | `0x1078` | `0x510` | **`-0xb68`** |
+| `__DATA_DIRTY.__objc_data` | `0x1aa8` | `0x2610` | **`+0xb68`** |
+| `__DATA.__bss` | `0xe790` | `0xe010` | **`-0x780`** |
+| `__DATA_DIRTY.__bss` | `0x19b0` | `0x2130` | **`+0x780`** |
+| `__DATA.__data` | `0x3688` | `0x3368` | **`-0x320`** |
+| `__TEXT.__cstring` | `0x982f` | `0x9a5f` | **`+0x230`** |
+| `__DATA.__common` | `0x100` | `0x68` | **`-0x98`** |
+| `__DATA_DIRTY.__common` | `0x340` | `0x3d8` | **`+0x98`** |
+| `__TEXT.__swift5_typeref` | `0x6d70` | `0x6d0a` | **`-0x66`** |
+| `__TEXT.__const` | `0xfa70` | `0xfa20` | **`-0x50`** |
+| `__TEXT.__unwind_info` | `0x9ab8` | `0x9ae8` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0x11208` | `0x111e0` | **`-0x28`** |
+| `__TEXT.__eh_frame` | `0x14104` | `0x14124` | **`+0x20`** |
+| `__TEXT.__oslogstring` | `0x5005` | `0x4ff5` | **`-0x10`** |
+| `__TEXT.__swift5_capture` | `0x41cc` | `0x41bc` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1c00` | `0x1c08` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0xf60` | `0xf68` | **`+0x8`** |
+| `__TEXT.__constg_swiftt` | `0x4b30` | `0x4b38` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x229fbc
-+  __TEXT.__text: 0x22b844
-   __TEXT.__objc_methlist: 0x4ffc
--  __TEXT.__const: 0xfa70
--  __TEXT.__swift5_typeref: 0x6d70
--  __TEXT.__constg_swiftt: 0x4b30
-+  __TEXT.__const: 0xfa20
-+  __TEXT.__swift5_typeref: 0x6d0a
-+  __TEXT.__constg_swiftt: 0x4b38
-   __TEXT.__swift5_reflstr: 0x51ab
-   __TEXT.__swift5_fieldmd: 0x4200
-   __TEXT.__swift5_builtin: 0x104
-   __TEXT.__swift5_assocty: 0xa88
--  __TEXT.__cstring: 0x982f
-+  __TEXT.__cstring: 0x9a5f
-   __TEXT.__swift5_proto: 0x988
-   __TEXT.__swift5_types: 0x3d0
--  __TEXT.__oslogstring: 0x5005
--  __TEXT.__swift5_capture: 0x41cc
-+  __TEXT.__oslogstring: 0x4ff5
-+  __TEXT.__swift5_capture: 0x41bc
-   __TEXT.__swift5_acfuncs: 0x5a0
-   __TEXT.__swift_as_entry: 0xac8
-   __TEXT.__swift_as_ret: 0xb1c
+-3600.58.1.0.0
++3600.66.1.0.0
 
-   __TEXT.__swift5_protos: 0x68
-   __TEXT.__swift5_mpenum: 0x10
-   __TEXT.__gcc_except_tab: 0x8d4
--  __TEXT.__unwind_info: 0x9ab8
--  __TEXT.__eh_frame: 0x14104
-+  __TEXT.__unwind_info: 0x9ae8
-+  __TEXT.__eh_frame: 0x14124
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_protorefs: 0xf8
-   __DATA_CONST.__objc_superrefs: 0x238
-   __DATA_CONST.__objc_arraydata: 0x118
--  __DATA_CONST.__got: 0xf60
--  __AUTH_CONST.__const: 0x11208
-+  __DATA_CONST.__got: 0xf68
-+  __AUTH_CONST.__const: 0x111e0
-   __AUTH_CONST.__cfstring: 0x47e0
-   __AUTH_CONST.__objc_const: 0xe6a0
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__objc_intobj: 0xf0
--  __AUTH_CONST.__auth_got: 0x1c00
--  __AUTH.__objc_data: 0x1078
--  __AUTH.__data: 0x1998
-+  __AUTH_CONST.__auth_got: 0x1c08
-+  __AUTH.__objc_data: 0x510
-+  __AUTH.__data: 0xd00
-   __DATA.__objc_ivar: 0x628
--  __DATA.__data: 0x3688
--  __DATA.__common: 0x100
--  __DATA.__bss: 0xe790
--  __DATA_DIRTY.__objc_data: 0x1aa8
--  __DATA_DIRTY.__data: 0x5278
--  __DATA_DIRTY.__bss: 0x19b0
--  __DATA_DIRTY.__common: 0x340
-+  __DATA.__data: 0x3368
-+  __DATA.__common: 0x68
-+  __DATA.__bss: 0xe010
-+  __DATA_DIRTY.__objc_data: 0x2610
-+  __DATA_DIRTY.__data: 0x61b8
-+  __DATA_DIRTY.__bss: 0x2130
-+  __DATA_DIRTY.__common: 0x3d8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15329
--  Symbols:   49906
--  CStrings:  2026
+-  Symbols:   26186
+-  CStrings:  1451
 +  Functions: 15349
-+  Symbols:   49941
-+  CStrings:  2040
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_acfuncs : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
++  Symbols:   26162
++  CStrings:  1465
 Symbols:
 + _$s6Speech12NCBVQProfileC5resetyyF
 + _$s6Speech12NCBVQProfileC5resetyyFTj
@@ -192,7 +120,6 @@ Symbols:
 + ___swift_closure_destructor.53Tm
 + ___swift_closure_destructor.634Tm
 + ___swift_closure_destructor.89Tm
-+ _objc_msgSend$isBypassed
 - _$s15Synchronization5MutexVy6Speech0C16RecognizerWorkerC16PerfMeasurementsVGMR
 - _$s15Synchronization5MutexVy6Speech0C16RecognizerWorkerC16PerfMeasurementsVGMd
 - _$s15Synchronization5MutexVy6Speech0C16RecognizerWorkerCSg6worker_Sb015hasModuleLockedE6BeforetGMR
@@ -314,5 +241,4 @@ CStrings:
 + "Transcriber: Final transcription "
 - "TTAW%ld: %s"
 - "TTAW: %s"
-
 ```

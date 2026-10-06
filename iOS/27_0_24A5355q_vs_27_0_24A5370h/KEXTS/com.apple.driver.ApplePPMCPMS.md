@@ -2,50 +2,35 @@
 
 > `com.apple.driver.ApplePPMCPMS`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x4e184` | `0x52528` | **`+0x43a4`** |
+| `__TEXT.__cstring` | `0xe5bb` | `0xf5ef` | **`+0x1034`** |
+| `__TEXT.__os_log` | `0x319b` | `0x3d65` | **`+0xbca`** |
+| `__TEXT_EXEC.__auth_stubs` | `0x0` | `0x7b0` | **`+0x7b0`** |
+| `__DATA_CONST.__const` | `0x5538` | `0x5a78` | **`+0x540`** |
+| `__DATA_CONST.__kalloc_type` | `0x8c0` | `0x900` | **`+0x40`** |
+| `__DATA.__common` | `0x4d0` | `0x500` | **`+0x30`** |
+| `__TEXT.__const` | `0x1150` | `0x1130` | **`-0x20`** |
+| `__DATA_CONST.__auth_got` | `0x3c0` | `0x3d8` | **`+0x18`** |
+| `__DATA.__bss` | `0x1b8` | `0x1c8` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0xd0` | `0xe0` | **`+0x10`** |
+| `__DATA_CONST.__mod_init_func` | `0xd8` | `0xe0` | **`+0x8`** |
+| `__DATA_CONST.__mod_term_func` | `0xa8` | `0xb0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1177.0.0.502.4
--  __TEXT.__const: 0x1150 sha256:4638a7a75d211a2c7792af389bc4eb49a089b0601aa5688146beaf4b8214f480
--  __TEXT.__cstring: 0xe5bb sha256:9fbd384f30adcbedf98921e4c66e5aaa8c227f953317a9bfee205fd5353874c5
--  __TEXT.__os_log: 0x319b sha256:3a78f9c3769d8471389e55631ab72d39d105c76d38c7e20b8f34ffdffa63223d
--  __TEXT_EXEC.__text: 0x4e184 sha256:d5f17fd7141bfb896cf085e11a7af5090463ee29d4304aa4e65fced63d554bb8
--  __TEXT_EXEC.__auth_stubs: 0x0
--  __DATA.__data: 0x164 sha256:06c258fab8a27eedef9514317ceb0f282875e67ee639b4b1c9a1ef051c2f1c34
--  __DATA.__common: 0x4d0 sha256:0abe90866c4fbc89ae5b4512dde9df1c441a2f5923ee3e7932cf34532a6bf773
--  __DATA.__bss: 0x1b8 sha256:360d579dbd14759b41afdf7fb5e80c0101e15150ae401d59f92a1e32d129f7cb
--  __DATA_CONST.__mod_init_func: 0xd8 sha256:52d0a0452283667122acb2cf77da05c28a2009b8c964f33c34f3f8535bafc5f6
--  __DATA_CONST.__mod_term_func: 0xa8 sha256:a31cc364c03a1603440aba9ee6b9548576b82ddde817a3983cd20b3eecfdcaa7
--  __DATA_CONST.__const: 0x5538 sha256:25a5554717f9a5555718a13c9468a8d36bd6d82801d1238eb53bec82d5756241
--  __DATA_CONST.__kalloc_type: 0x8c0 sha256:c695df741be1fa66230a322fc477e1175355fd9f997e25ee9f7f922e6b795f5a
--  __DATA_CONST.__kalloc_var: 0x140 sha256:25372d46912cc50989d135b947cf168c27ce3d43a9ac4bb09f10deb904f75634
--  __DATA_CONST.__auth_got: 0x3c0 sha256:825c544514b41628571b9b4a15d158b4779d157a77d5b80a2483b18e580c221f
--  __DATA_CONST.__got: 0xd0 sha256:21880424bd5202eca23905e7800366f788779e1449346850e7927bafe26dfd38
--  __DATA_CONST.__auth_ptr: 0x8 sha256:655ff882208a9a0da85791375cfc99325d9003edb71db879846dfc750bd79fa7
--  UUID: BE285BF9-157B-3C29-9ED9-1C7AEB293AFC
 -  Functions: 2043
 +1191.0.4.502.1
-+  __TEXT.__const: 0x1130 sha256:915b73339bcd3079104b63424be74f8beb45280763e572149d9c5b6ddf6f0121
-+  __TEXT.__cstring: 0xf5ef sha256:9a3e832269d36ba0f6af99bdd026f7617850ef1e8b52e5c879a50caddc56fd5f
-+  __TEXT.__os_log: 0x3d65 sha256:c1ccee66ebf8c491035b6e782be6f49cded401f93ac6c1154a3569021b8fc4e6
-+  __TEXT_EXEC.__text: 0x52528 sha256:3f388f038c70b2ea0627f8cf9e54e247f352533771505ba23f84d6df99e6d936
-+  __TEXT_EXEC.__auth_stubs: 0x7b0 sha256:dade4bcf024bd9aee43c43456693fe5085692279fbc938b0ed4e70fd9fe78369
-+  __DATA.__data: 0x164 sha256:4c61a00a1df367b37802e959ef5af47e2268a4ad3e00e36a2b92ea4cde5639d9
-+  __DATA.__common: 0x500 sha256:bfe492baf731a0dbf6e1e050f5bc3fe8c1b049383194dcdf82f023bfa409f462
-+  __DATA.__bss: 0x1c8 sha256:b960fb5cb94682dfc4a873035d65f8befdcb9bed0e7db0feb905f0dcf437b38c
-+  __DATA_CONST.__mod_init_func: 0xe0 sha256:7a32347a6a7de23e5ef03fbd6f05c637d7ba5a5296fc5fd5d1142d9e896f3c67
-+  __DATA_CONST.__mod_term_func: 0xb0 sha256:97176bb15e664693dfd39c2cc3e38539ee335d67295b4fae81ce7a189da56db0
-+  __DATA_CONST.__const: 0x5a78 sha256:b435b06b99fd2b9876e367a978007e78bdef0c6523679b9d14da6464d12b733f
-+  __DATA_CONST.__kalloc_type: 0x900 sha256:87e27c998926545be35569294dada7921c189a78d073d9701d783def89e04d41
-+  __DATA_CONST.__kalloc_var: 0x140 sha256:96d520c1f6aa1dd630717e45bbae2dda0a86c6a6f30a5618ab591e1c94e518c5
-+  __DATA_CONST.__auth_got: 0x3d8 sha256:1d948c7c2cbfae1778c6e07db0b9ce692704abaed2e386e5c8226a644495713a
-+  __DATA_CONST.__got: 0xe0 sha256:02b8176bb022e7e531bd13ec4b40774fe857a599651a6d67ecfa6b0c5fd36170
-+  __DATA_CONST.__auth_ptr: 0x8 sha256:d0aecc1d8018c1adff30419c355dd0fb42d6192fffbbb581729bbf3c511fa7b4
-+  UUID: B539C266-5F6F-3330-ABEC-05C03C65938E
 +  Functions: 2163
-   Symbols:   0
+
 -  CStrings:  1697
 +  CStrings:  1837
- 
 CStrings:
 + "%s: Failed to allocate ApplePPMDaemonIPC, disabling UTF telemetry\n"
 + "%s: Failed to initialize shared data queue, disabling UTF telemetry\n"
@@ -227,5 +212,4 @@ CStrings:
 - "_triggerPLFetchCallbackEvent"
 - "enable-utf-telemetry"
 - "null IsCharging Key"
-
 ```

@@ -2,90 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/Gestures.framework/Gestures`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4c7158` | `0x4f69f8` | **`+0x2f8a0`** |
+| `__TEXT.__swift5_typeref` | `0x25a64` | `0x27aec` | **`+0x2088`** |
+| `__DATA.__bss` | `0x34cd0` | `0x34750` | **`-0x580`** |
+| `__TEXT.__cstring` | `0x13d24` | `0x13874` | **`-0x4b0`** |
+| `__AUTH.__data` | `0x5338` | `0x4f28` | **`-0x410`** |
+| `__TEXT.__constg_swiftt` | `0x9e82` | `0x9b06` | **`-0x37c`** |
+| `__TEXT.__eh_frame` | `0x381cc` | `0x37eac` | **`-0x320`** |
+| `__AUTH_CONST.__objc_const` | `0x3950` | `0x3b80` | **`+0x230`** |
+| `__TEXT.__swift5_capture` | `0x1bb8` | `0x1a94` | **`-0x124`** |
+| `__TEXT.__swift5_assocty` | `0x2808` | `0x2700` | **`-0x108`** |
+| `__TEXT.__unwind_info` | `0x11358` | `0x112a0` | **`-0xb8`** |
+| `__DATA_DIRTY.__data` | `0x15b8` | `0x1668` | **`+0xb0`** |
+| `__TEXT.__const` | `0x229b8` | `0x22a38` | **`+0x80`** |
+| `__TEXT.__swift5_proto` | `0x2cfc` | `0x2ca4` | **`-0x58`** |
+| `__DATA.__data` | `0xac80` | `0xac38` | **`-0x48`** |
+| `__TEXT.__swift5_fieldmd` | `0x7670` | `0x76b8` | **`+0x48`** |
+| `__TEXT.__swift5_reflstr` | `0x527e` | `0x523e` | **`-0x40`** |
+| `__AUTH_CONST.__const` | `0x1cea8` | `0x1ced0` | **`+0x28`** |
+| `__AUTH_CONST.__auth_got` | `0x1288` | `0x12a8` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x2b0` | `0x290` | **`-0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x170` | `0x180` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x588` | `0x580` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -9127.1.5.0.0
--  __TEXT.__text: 0x4b4718
 +9127.1.7.2.101
-+  __TEXT.__text: 0x4e3be0
-   __TEXT.__objc_methlist: 0x614
--  __TEXT.__const: 0x229b8
-+  __TEXT.__const: 0x22a38
-   __TEXT.__gcc_except_tab: 0x10
--  __TEXT.__cstring: 0x13d24
-+  __TEXT.__cstring: 0x13874
-   __TEXT.__dlopen_cstrs: 0x6d
--  __TEXT.__constg_swiftt: 0x9e82
--  __TEXT.__swift5_typeref: 0x25a64
-+  __TEXT.__constg_swiftt: 0x9b06
-+  __TEXT.__swift5_typeref: 0x27aec
-   __TEXT.__swift5_builtin: 0x26c
--  __TEXT.__swift5_reflstr: 0x527e
--  __TEXT.__swift5_fieldmd: 0x7670
-+  __TEXT.__swift5_reflstr: 0x523e
-+  __TEXT.__swift5_fieldmd: 0x76b8
-   __TEXT.__swift5_types: 0xa2c
--  __TEXT.__swift5_assocty: 0x2808
--  __TEXT.__swift5_proto: 0x2cfc
--  __TEXT.__swift5_capture: 0x1bb8
-+  __TEXT.__swift5_assocty: 0x2700
-+  __TEXT.__swift5_proto: 0x2ca4
-+  __TEXT.__swift5_capture: 0x1a94
-   __TEXT.__swift5_protos: 0x150
-   __TEXT.__swift5_mpenum: 0xec
-   __TEXT.__oslogstring: 0x15a0
 
-   __TEXT.__swift_as_ret: 0x20
-   __TEXT.__swift_as_cont: 0x34
-   __TEXT.__swift5_types2: 0xc
--  __TEXT.__unwind_info: 0x163c0
--  __TEXT.__eh_frame: 0x3826c
-+  __TEXT.__unwind_info: 0x16120
-+  __TEXT.__eh_frame: 0x37f4c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2b0
--  __DATA_CONST.__objc_classlist: 0x170
-+  __DATA_CONST.__const: 0x290
-+  __DATA_CONST.__objc_classlist: 0x180
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x2b8
-   __DATA_CONST.__objc_protorefs: 0x38
--  __DATA_CONST.__got: 0x588
--  __AUTH_CONST.__const: 0x1cea8
--  __AUTH_CONST.__objc_const: 0x3950
--  __AUTH_CONST.__auth_got: 0x1288
-+  __DATA_CONST.__got: 0x580
-+  __AUTH_CONST.__const: 0x1ced0
-+  __AUTH_CONST.__objc_const: 0x3b80
-+  __AUTH_CONST.__auth_got: 0x12a8
-   __AUTH.__objc_data: 0x90
--  __AUTH.__data: 0x5338
--  __DATA.__data: 0xac80
-+  __AUTH.__data: 0x4f28
-+  __DATA.__data: 0xac38
-   __DATA.__common: 0x48
-   __DATA_DIRTY.__objc_data: 0x228
--  __DATA_DIRTY.__data: 0x15b8
-+  __DATA_DIRTY.__data: 0x1668
-   __DATA_DIRTY.__bss: 0x1200
-   __DATA_DIRTY.__common: 0x44
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 19668
--  Symbols:   4414
+-  Symbols:   4387
 -  CStrings:  590
 +  Functions: 19774
-+  Symbols:   4450
++  Symbols:   4423
 +  CStrings:  589
- 
 Symbols:
 + __DATA__TtC8Gestures20ServerCommandHandler
 + __DATA__TtC8Gestures26ServerRemoteGestureStorage

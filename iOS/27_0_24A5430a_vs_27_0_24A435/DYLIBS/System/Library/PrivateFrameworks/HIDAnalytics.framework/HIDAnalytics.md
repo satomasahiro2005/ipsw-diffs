@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/HIDAnalytics.framework/HIDAnalytics`
 
-```diff
+### Section Size Changes
 
- 2360.2.2.0.0
--  __TEXT.__text: 0x2370
-+  __TEXT.__text: 0x2374
-   __TEXT.__objc_methlist: 0x3f4
-   __TEXT.__const: 0x58
-   __TEXT.__cstring: 0xd3
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2370` | `0x2374` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[HIDAnalyticsHistogramEventField setIntegerValue:] : 196 -> 200
 ```

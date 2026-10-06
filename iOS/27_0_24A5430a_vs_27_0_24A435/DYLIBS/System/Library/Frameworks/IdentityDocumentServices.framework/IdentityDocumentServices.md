@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/IdentityDocumentServices.framework/IdentityDocumentServices`
 
-```diff
+### Section Size Changes
 
- 9.42.0.0.0
--  __TEXT.__text: 0xb80c
-+  __TEXT.__text: 0xb808
-   __TEXT.__const: 0xb2c
-   __TEXT.__swift5_typeref: 0x32a
-   __TEXT.__cstring: 0x9b
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb80c` | `0xb808` | **`-0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_24909cb34 -> sub_249a81b34 : 3920 -> 3916
+~ sub_248f49b34 -> sub_249935b34 : 3920 -> 3916
 ```

@@ -2,122 +2,75 @@
 
 > `/usr/libexec/seserviced`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4630ac` | `0x47f7f8` | **`+0x1c74c`** |
+| `__DATA.__bss` | `0x10e90` | `0x13d80` | **`+0x2ef0`** |
+| `__TEXT.__const` | `0x13218` | `0x14c88` | **`+0x1a70`** |
+| `__DATA_CONST.__const` | `0x14b18` | `0x158c8` | **`+0xdb0`** |
+| `__DATA.__data` | `0xdb74` | `0xe2e4` | **`+0x770`** |
+| `__TEXT.__oslogstring` | `0x310b6` | `0x31761` | **`+0x6ab`** |
+| `__DATA.__objc_const` | `0x18bc8` | `0x19160` | **`+0x598`** |
+| `__TEXT.__swift5_typeref` | `0x5358` | `0x58a2` | **`+0x54a`** |
+| `__TEXT.__swift5_fieldmd` | `0x5e10` | `0x6314` | **`+0x504`** |
+| `__TEXT.__cstring` | `0x22033` | `0x2252c` | **`+0x4f9`** |
+| `__TEXT.__constg_swiftt` | `0x5994` | `0x5e2c` | **`+0x498`** |
+| `__TEXT.__unwind_info` | `0xa5d8` | `0xa9d8` | **`+0x400`** |
+| `__TEXT.__objc_methname` | `0x1924d` | `0x1953d` | **`+0x2f0`** |
+| `__TEXT.__swift5_reflstr` | `0x619a` | `0x640a` | **`+0x270`** |
+| `__TEXT.__eh_frame` | `0x159e8` | `0x15c20` | **`+0x238`** |
+| `__TEXT.__objc_methtype` | `0x7d7d` | `0x7f37` | **`+0x1ba`** |
+| `__TEXT.__objc_classname` | `0x2fc8` | `0x3158` | **`+0x190`** |
+| `__TEXT.__swift5_proto` | `0x954` | `0xacc` | **`+0x178`** |
+| `__DATA_CONST.__got` | `0x1fd8` | `0x2110` | **`+0x138`** |
+| `__TEXT.__objc_stubs` | `0xe680` | `0xe780` | **`+0x100`** |
+| `__DATA.__common` | `0x768` | `0x848` | **`+0xe0`** |
+| `__DATA.__objc_data` | `0x6b38` | `0x6c00` | **`+0xc8`** |
+| `__TEXT.__objc_methlist` | `0x70c4` | `0x7184` | **`+0xc0`** |
+| `__TEXT.__swift5_capture` | `0x328c` | `0x3318` | **`+0x8c`** |
+| `__TEXT.__swift5_types` | `0x5e4` | `0x654` | **`+0x70`** |
+| `__DATA_CONST.__auth_ptr` | `0xf50` | `0xfb8` | **`+0x68`** |
+| `__DATA.__objc_selrefs` | `0x4a88` | `0x4ae8` | **`+0x60`** |
+| `__TEXT.__auth_stubs` | `0x50f0` | `0x5130` | **`+0x40`** |
+| `__DATA_CONST.__objc_classlist` | `0x860` | `0x888` | **`+0x28`** |
+| `__TEXT.__swift5_builtin` | `0x3ac` | `0x3d4` | **`+0x28`** |
+| `__DATA_CONST.__auth_got` | `0x2890` | `0x28b0` | **`+0x20`** |
+| `__DATA_CONST.__cfstring` | `0x87e0` | `0x8800` | **`+0x20`** |
+| `__TEXT.__swift5_mpenum` | `0xa4` | `0xc4` | **`+0x20`** |
+| `__DATA_CONST.__objc_intobj` | `0x858` | `0x870` | **`+0x18`** |
+| `__DATA_CONST.__objc_protolist` | `0x460` | `0x470` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0xce0` | `0xcec` | **`+0xc`** |
+| `__TEXT.__gcc_except_tab` | `0x31f0` | `0x31fc` | **`+0xc`** |
+| `__DATA_CONST.__objc_protorefs` | `0x1c0` | `0x1c8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x4630ac
--  __TEXT.__auth_stubs: 0x50f0
-+  __TEXT.__text: 0x47f7f8
-+  __TEXT.__auth_stubs: 0x5130
-   __TEXT.__delay_stubs: 0x40
-   __TEXT.__delay_helper: 0x33c
--  __TEXT.__objc_stubs: 0xe680
--  __TEXT.__objc_methlist: 0x70c4
--  __TEXT.__const: 0x13218
--  __TEXT.__gcc_except_tab: 0x31f0
--  __TEXT.__objc_methname: 0x1924d
--  __TEXT.__oslogstring: 0x310b6
--  __TEXT.__cstring: 0x22033
--  __TEXT.__objc_classname: 0x2fc8
--  __TEXT.__objc_methtype: 0x7d7d
--  __TEXT.__swift5_typeref: 0x5358
--  __TEXT.__constg_swiftt: 0x5994
--  __TEXT.__swift5_builtin: 0x3ac
--  __TEXT.__swift5_reflstr: 0x619a
--  __TEXT.__swift5_fieldmd: 0x5e10
-+  __TEXT.__objc_stubs: 0xe780
-+  __TEXT.__objc_methlist: 0x7184
-+  __TEXT.__const: 0x14c88
-+  __TEXT.__gcc_except_tab: 0x31fc
-+  __TEXT.__objc_methname: 0x1953d
-+  __TEXT.__oslogstring: 0x31761
-+  __TEXT.__cstring: 0x2252c
-+  __TEXT.__objc_classname: 0x3158
-+  __TEXT.__objc_methtype: 0x7f37
-+  __TEXT.__swift5_typeref: 0x58a2
-+  __TEXT.__constg_swiftt: 0x5e2c
-+  __TEXT.__swift5_builtin: 0x3d4
-+  __TEXT.__swift5_reflstr: 0x640a
-+  __TEXT.__swift5_fieldmd: 0x6314
-   __TEXT.__swift5_assocty: 0x828
--  __TEXT.__swift5_proto: 0x954
--  __TEXT.__swift5_types: 0x5e4
-+  __TEXT.__swift5_proto: 0xacc
-+  __TEXT.__swift5_types: 0x654
-   __TEXT.__swift_as_entry: 0x4ec
-   __TEXT.__swift_as_cont: 0xedc
--  __TEXT.__swift5_capture: 0x328c
-+  __TEXT.__swift5_capture: 0x3318
-   __TEXT.__swift_as_ret: 0x5f0
-   __TEXT.__swift5_protos: 0x68
--  __TEXT.__swift5_mpenum: 0xa4
--  __TEXT.__unwind_info: 0xa5d8
--  __TEXT.__eh_frame: 0x159e8
--  __DATA_CONST.__const: 0x14b18
--  __DATA_CONST.__cfstring: 0x87e0
--  __DATA_CONST.__objc_classlist: 0x860
-+  __TEXT.__swift5_mpenum: 0xc4
-+  __TEXT.__unwind_info: 0xa9d8
-+  __TEXT.__eh_frame: 0x15c20
-+  __DATA_CONST.__const: 0x158c8
-+  __DATA_CONST.__cfstring: 0x8800
-+  __DATA_CONST.__objc_classlist: 0x888
-   __DATA_CONST.__objc_catlist: 0x18
--  __DATA_CONST.__objc_protolist: 0x460
-+  __DATA_CONST.__objc_protolist: 0x470
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_protorefs: 0x1c0
-+  __DATA_CONST.__objc_protorefs: 0x1c8
-   __DATA_CONST.__objc_superrefs: 0x268
-   __DATA_CONST.__objc_arraydata: 0x358
-   __DATA_CONST.__objc_arrayobj: 0x1e0
-   __DATA_CONST.__objc_dictobj: 0xc8
--  __DATA_CONST.__objc_intobj: 0x858
--  __DATA_CONST.__auth_got: 0x2890
--  __DATA_CONST.__got: 0x1fd8
--  __DATA_CONST.__auth_ptr: 0xf50
--  __DATA.__objc_const: 0x18bc8
--  __DATA.__objc_selrefs: 0x4a88
--  __DATA.__objc_ivar: 0xce0
--  __DATA.__objc_data: 0x6b38
--  __DATA.__data: 0xdb74
--  __DATA.__bss: 0x10e90
--  __DATA.__common: 0x768
-+  __DATA_CONST.__objc_intobj: 0x870
-+  __DATA_CONST.__auth_got: 0x28b0
-+  __DATA_CONST.__got: 0x2110
-+  __DATA_CONST.__auth_ptr: 0xfb8
-+  __DATA.__objc_const: 0x19160
-+  __DATA.__objc_selrefs: 0x4ae8
-+  __DATA.__objc_ivar: 0xcec
-+  __DATA.__objc_data: 0x6c00
-+  __DATA.__data: 0xe2e4
-+  __DATA.__bss: 0x13d80
-+  __DATA.__common: 0x848
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-   - /System/Library/Frameworks/CoreData.framework/CoreData
+-70.34.0.0.0
++70.35.1.0.0
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12670
 -  Symbols:   2541
--  CStrings:  12734
+-  CStrings:  11464
 +  Functions: 13044
 +  Symbols:   2554
-+  CStrings:  12832
- 
-Sections:
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
++  CStrings:  11558
 Symbols:
 + _$s10Foundation10NSNotFoundSivg
 + _$s10Foundation14LocalizedErrorMp
@@ -261,5 +214,4 @@ CStrings:
 - "present(sceneIdentifier:clientPid:credentialName:)"
 - "withSEID:casdCertificate:casdCertificateRSA:isProd:isSkyOrLater:secureElementType:csn:chipID:"
 - "\xf0\xf0a"
-
 ```

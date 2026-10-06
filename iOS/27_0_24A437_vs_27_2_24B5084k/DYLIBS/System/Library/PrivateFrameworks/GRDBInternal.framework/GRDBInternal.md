@@ -2,18 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/GRDBInternal.framework/GRDBInternal`
 
-```diff
+### Section Size Changes
 
- 19.0.0.0.0
--  __TEXT.__text: 0x1267d4
-+  __TEXT.__text: 0x1267fc
-   __TEXT.__objc_methlist: 0x40
-   __TEXT.__const: 0x18968
-   __TEXT.__constg_swiftt: 0x50d0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x12e238` | `0x12e260` | **`+0x28`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_1ad6ee030 -> sub_1ae27e030 : 560 -> 568
-~ sub_1ad7051f4 -> sub_1ae2951fc : 88 -> 96
-~ sub_1ad705fc4 -> sub_1ae295fd4 : 420 -> 428
-~ sub_1ad773190 -> sub_1ae3031a8 : 660 -> 668
-~ sub_1ad773db4 -> sub_1ae303dd4 : 800 -> 808
+~ sub_1ae06914c -> sub_1aec2314c : 560 -> 568
+~ sub_1ae081d94 -> sub_1aec3bd9c : 88 -> 96
+~ sub_1ae082c70 -> sub_1aec3cc80 : 420 -> 428
+~ sub_1ae0f1d1c -> sub_1aecabd34 : 660 -> 668
+~ sub_1ae0f299c -> sub_1aecac9bc : 800 -> 808
 ```

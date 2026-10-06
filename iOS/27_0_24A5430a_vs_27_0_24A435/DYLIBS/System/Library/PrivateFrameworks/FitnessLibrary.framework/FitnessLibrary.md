@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/FitnessLibrary.framework/FitnessLibrary`
 
-```diff
+### Section Size Changes
 
- 2027.0.146.1.4
--  __TEXT.__text: 0x54af4
-+  __TEXT.__text: 0x54acc
-   __TEXT.__const: 0x7e04
-   __TEXT.__constg_swiftt: 0x1df8
-   __TEXT.__swift5_typeref: 0x4676
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x54af4` | `0x54acc` | **`-0x28`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_212be56c8 -> sub_2133b96c8 : 880 -> 876
 ~ sub_212c290ac -> sub_2133fd0a8 : 1360 -> 1292

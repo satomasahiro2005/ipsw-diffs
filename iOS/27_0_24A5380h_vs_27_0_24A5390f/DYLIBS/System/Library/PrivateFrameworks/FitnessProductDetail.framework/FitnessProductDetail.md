@@ -2,92 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/FitnessProductDetail.framework/FitnessProductDetail`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb1494` | `0xbc568` | **`+0xb0d4`** |
+| `__DATA.__bss` | `0x16ad0` | `0x18770` | **`+0x1ca0`** |
+| `__TEXT.__const` | `0xd104` | `0xe444` | **`+0x1340`** |
+| `__AUTH_CONST.__const` | `0x4c68` | `0x54d0` | **`+0x868`** |
+| `__DATA_DIRTY.__bss` | `0x880` | `0xd80` | **`+0x500`** |
+| `__TEXT.__swift5_typeref` | `0x6694` | `0x6b4c` | **`+0x4b8`** |
+| `__TEXT.__eh_frame` | `0x23c8` | `0x2798` | **`+0x3d0`** |
+| `__TEXT.__swift5_fieldmd` | `0x2628` | `0x2990` | **`+0x368`** |
+| `__TEXT.__constg_swiftt` | `0x1f68` | `0x2298` | **`+0x330`** |
+| `__DATA_DIRTY.__data` | `0xdc8` | `0x10f0` | **`+0x328`** |
+| `__TEXT.__unwind_info` | `0x2430` | `0x2750` | **`+0x320`** |
+| `__TEXT.__swift5_reflstr` | `0x1518` | `0x17b8` | **`+0x2a0`** |
+| `__DATA.__data` | `0x2d40` | `0x2fc0` | **`+0x280`** |
+| `__TEXT.__swift5_proto` | `0xb90` | `0xc9c` | **`+0x10c`** |
+| `__TEXT.__swift5_capture` | `0x6a4` | `0x700` | **`+0x5c`** |
+| `__TEXT.__swift5_types` | `0x348` | `0x398` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0xe50` | `0xe90` | **`+0x40`** |
+| `__TEXT.__swift5_assocty` | `0x238` | `0x278` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x798` | `0x7b8` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0xa8` | `0xb0` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x44` | `0x48` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x60` | `0x64` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -2027.0.124.0.3
--  __TEXT.__text: 0xb1494
--  __TEXT.__const: 0xd104
--  __TEXT.__swift5_typeref: 0x6694
--  __TEXT.__swift5_reflstr: 0x1518
--  __TEXT.__swift5_assocty: 0x238
--  __TEXT.__constg_swiftt: 0x1f68
--  __TEXT.__swift5_fieldmd: 0x2628
--  __TEXT.__cstring: 0x798
 +2027.0.134.0.0
-+  __TEXT.__text: 0xbc568
-+  __TEXT.__const: 0xe444
-+  __TEXT.__swift5_typeref: 0x6b4c
-+  __TEXT.__swift5_reflstr: 0x17b8
-+  __TEXT.__swift5_assocty: 0x278
-+  __TEXT.__constg_swiftt: 0x2298
-+  __TEXT.__swift5_fieldmd: 0x2990
-+  __TEXT.__cstring: 0x7b8
-   __TEXT.__swift5_builtin: 0x28
--  __TEXT.__swift5_proto: 0xb90
--  __TEXT.__swift5_types: 0x348
--  __TEXT.__swift5_capture: 0x6a4
--  __TEXT.__swift_as_entry: 0x44
--  __TEXT.__swift_as_ret: 0x60
--  __TEXT.__swift_as_cont: 0xa8
-+  __TEXT.__swift5_proto: 0xc9c
-+  __TEXT.__swift5_types: 0x398
-+  __TEXT.__swift5_capture: 0x700
-+  __TEXT.__swift_as_entry: 0x48
-+  __TEXT.__swift_as_ret: 0x64
-+  __TEXT.__swift_as_cont: 0xb0
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__oslogstring: 0xb9
--  __TEXT.__unwind_info: 0x2430
--  __TEXT.__eh_frame: 0x23c8
-+  __TEXT.__unwind_info: 0x2750
-+  __TEXT.__eh_frame: 0x2798
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x20
-   __DATA_CONST.__got: 0x6f8
--  __AUTH_CONST.__const: 0x4c68
-+  __AUTH_CONST.__const: 0x54d0
-   __AUTH_CONST.__objc_const: 0x120
--  __AUTH_CONST.__auth_got: 0xe50
-+  __AUTH_CONST.__auth_got: 0xe90
-   __AUTH.__data: 0x660
--  __DATA.__data: 0x2d40
--  __DATA.__bss: 0x16ad0
-+  __DATA.__data: 0x2fc0
-+  __DATA.__bss: 0x18770
-   __DATA.__common: 0x18
--  __DATA_DIRTY.__data: 0xdc8
--  __DATA_DIRTY.__bss: 0x880
-+  __DATA_DIRTY.__data: 0x10f0
-+  __DATA_DIRTY.__bss: 0xd80
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3382
--  Symbols:   1510
+-  Symbols:   1506
 -  CStrings:  60
 +  Functions: 3670
-+  Symbols:   1615
++  Symbols:   1611
 +  CStrings:  61
- 
 Symbols:
 + ___swift_instantiateGenericMetadata
 + ___swift_memcpy2_1

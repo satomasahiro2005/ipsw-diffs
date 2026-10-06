@@ -2,15 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/TCCAuthorizationService.framework/TCCAuthorizationService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x16970` | `0x16a78` | **`+0x108`** |
+
+### Other Changes
+
 ```diff
 
 -910.0.0.0.0
--  __TEXT.__text: 0x16970
 +913.0.0.0.0
-+  __TEXT.__text: 0x16a78
-   __TEXT.__objc_methlist: 0x2dc
-   __TEXT.__const: 0x11a0
-   __TEXT.__cstring: 0xfe7
 Functions:
-~ sub_2adbc5228 -> sub_2ad9c8228 : 1312 -> 1576
+~ sub_2ada50228 -> sub_2ad8c5228 : 1312 -> 1576
 ```

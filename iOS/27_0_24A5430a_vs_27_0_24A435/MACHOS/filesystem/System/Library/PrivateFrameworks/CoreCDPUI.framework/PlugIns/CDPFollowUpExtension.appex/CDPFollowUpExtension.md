@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/CoreCDPUI.framework/PlugIns/CDPFollowUpExtension.appex/CDPFollowUpExtension`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_100006914 : 12 -> 16

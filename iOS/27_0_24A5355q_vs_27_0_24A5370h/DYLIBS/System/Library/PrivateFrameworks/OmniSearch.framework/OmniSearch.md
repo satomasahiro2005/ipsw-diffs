@@ -2,129 +2,65 @@
 
 > `/System/Library/PrivateFrameworks/OmniSearch.framework/OmniSearch`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x61716c` | `0x61f0c4` | **`+0x7f58`** |
+| `__AUTH_CONST.__const` | `0x359b1` | `0x376e9` | **`+0x1d38`** |
+| `__TEXT.__cstring` | `0x1d170` | `0x1c3f0` | **`-0xd80`** |
+| `__TEXT.__swift5_capture` | `0x9f04` | `0xabb8` | **`+0xcb4`** |
+| `__DATA_DIRTY.__bss` | `0x1d480` | `0x1cd00` | **`-0x780`** |
+| `__DATA_DIRTY.__data` | `0xb508` | `0xb008` | **`-0x500`** |
+| `__TEXT.__eh_frame` | `0x26054` | `0x25c10` | **`-0x444`** |
+| `__TEXT.__const` | `0x3a8cc` | `0x3a4cc` | **`-0x400`** |
+| `__AUTH_CONST.__objc_const` | `0x7518` | `0x7120` | **`-0x3f8`** |
+| `__TEXT.__constg_swiftt` | `0xa85c` | `0xa634` | **`-0x228`** |
+| `__TEXT.__swift5_reflstr` | `0xa61f` | `0xa48f` | **`-0x190`** |
+| `__TEXT.__swift5_fieldmd` | `0xe1e4` | `0xe05c` | **`-0x188`** |
+| `__DATA.__bss` | `0x39a80` | `0x39910` | **`-0x170`** |
+| `__DATA_DIRTY.__objc_data` | `0x6a0` | `0x5a8` | **`-0xf8`** |
+| `__AUTH_CONST.__auth_got` | `0x67e8` | `0x68d8` | **`+0xf0`** |
+| `__TEXT.__unwind_info` | `0x174a0` | `0x173b8` | **`-0xe8`** |
+| `__AUTH.__data` | `0x4310` | `0x43e0` | **`+0xd0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2928` | `0x29f0` | **`+0xc8`** |
+| `__DATA_DIRTY.__common` | `0x8a8` | `0x7e8` | **`-0xc0`** |
+| `__TEXT.__oslogstring` | `0x1c155` | `0x1c095` | **`-0xc0`** |
+| `__DATA.__data` | `0x90c8` | `0x9140` | **`+0x78`** |
+| `__DATA_CONST.__const` | `0x3cb8` | `0x3c50` | **`-0x68`** |
+| `__TEXT.__swift5_assocty` | `0x2828` | `0x27c0` | **`-0x68`** |
+| `__TEXT.__swift5_proto` | `0x2e54` | `0x2e08` | **`-0x4c`** |
+| `__AUTH.__objc_data` | `0x370` | `0x328` | **`-0x48`** |
+| `__TEXT.__swift5_typeref` | `0xeeb3` | `0xeef7` | **`+0x44`** |
+| `__DATA_CONST.__got` | `0x3bd0` | `0x3c00` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0x2f0` | `0x2c8` | **`-0x28`** |
+| `__TEXT.__swift5_builtin` | `0x2a8` | `0x2d0` | **`+0x28`** |
+| `__TEXT.__objc_methlist` | `0x1040` | `0x1020` | **`-0x20`** |
+| `__TEXT.__swift_as_ret` | `0xca0` | `0xc84` | **`-0x1c`** |
+| `__TEXT.__swift_as_cont` | `0x1548` | `0x1538` | **`-0x10`** |
+| `__TEXT.__swift_as_entry` | `0xb08` | `0xb18` | **`+0x10`** |
+| `__DATA.__common` | `0x720` | `0x728` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0xcdc` | `0xcd4` | **`-0x8`** |
+| `__TEXT.__swift5_protos` | `0x174` | `0x170` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3600.54.16.1.5
--  __TEXT.__text: 0x61716c sha256:bf17610887598458ef41f6f8dab20015d5f24238c49877221a394e32173b6d74
--  __TEXT.__objc_methlist: 0x1040 sha256:c66307d20e97aeaf70bfe2967e256798ab024cf1388efaf25c56bb67741b016e
--  __TEXT.__const: 0x3a8cc sha256:943dca0d0b0e11620b997c0b2f9d81b00a00adc3f05507f044d1831798b2fd04
--  __TEXT.__swift5_typeref: 0xeeb3 sha256:ba99797c75827a14a49e24aaebfcf0b6eb4ecfe31dce263bfad72fc3454c0d63
--  __TEXT.__cstring: 0x1d170 sha256:9082b76d1c62e15254473f9aa33f3a9dbafb22ed372dca31f2f977f20f0e0a15
--  __TEXT.__oslogstring: 0x1c155 sha256:f7a7ac69750ea0b80551cc6dd1d184b1a7e7ae1acff0605e5d3fe706a48ae7ec
--  __TEXT.__swift5_capture: 0x9f04 sha256:4a9ea09f7729c3591135cd34e153fa168b13a61250d5be1e491559d6d29a512b
--  __TEXT.__swift5_fieldmd: 0xe1e4 sha256:35fd08be7869fa849e46f6ce7454df8a5e186871f5aaf5f943a1d79c68932de9
--  __TEXT.__constg_swiftt: 0xa85c sha256:660459a9de195b1c9a5ad478fe2a0d7b0d311ceb8267e12ed1266800385bf18a
--  __TEXT.__swift5_reflstr: 0xa61f sha256:14cbedcbb20a3d5bde11268ab9258f5d33be683a8d20e46342af4e3396acc956
--  __TEXT.__swift5_builtin: 0x2a8 sha256:63d6e0f173ed32c708136ab5e3dd3193515e072b1a79896ec584b51ad7146bf8
--  __TEXT.__swift5_assocty: 0x2828 sha256:87d9b863cf7c9ac56b0f0f571b473ff5064e9942dee9ae9bfa91187d585eb1cb
--  __TEXT.__swift5_protos: 0x174 sha256:0dc87ff1e10172900ace4b7d414da9a7437f8cfa15cd39ad197ce18629c8dfcf
--  __TEXT.__swift5_proto: 0x2e54 sha256:d1c132764afe259028a8d938811423ea246b46de319d1068390de3b0c4f6bf52
--  __TEXT.__swift5_types: 0xcdc sha256:1f9dadacc512a1405d6f21ac4638766ecd9b39706edd91281b95cd22db70ead0
--  __TEXT.__swift_as_entry: 0xb08 sha256:de078f04f1edc12387bb054754167e49633c2c9d5f4bcd6323e6ec80b792ab52
--  __TEXT.__swift_as_ret: 0xca0 sha256:1406e96e1d7daefc4be96096c5ae367a764bbb2d1293267a44e3d54ad3ef6a32
--  __TEXT.__swift_as_cont: 0x1548 sha256:4aac557dc385ea3a6d152b6d8d110d0447c22047907557d2081e48082c8dd7c6
--  __TEXT.__swift5_mpenum: 0xec sha256:cfdc71c4c404cca2cde8e764b361b3edf982da14451a5833bd020cc399ad91db
--  __TEXT.__unwind_info: 0x174a0 sha256:a4fdc36582561516c08b4e57d128a5d5dc0f6f3ce7aed9f383c7c733f6ec9cad
--  __TEXT.__eh_frame: 0x26054 sha256:4f7e345e7bcd280cda92cafa1b1d543a6827114f8ca0b955ba66ca3a0a56ecc7
 +3600.56.11.0.0
-+  __TEXT.__text: 0x61f0c4 sha256:ba7e20887b8d8440ce2c58a6b3b0cd877e4d2b0d6c4821d081763e98331295e8
-+  __TEXT.__objc_methlist: 0x1020 sha256:3974b6ebf2db17f8cc1a571ce6784583280e054076ca4697e89880f49430e64e
-+  __TEXT.__const: 0x3a4cc sha256:f3e2d643c69d0de49e766f17ddda3acd2e265bac2534bb991cc06395717ebadc
-+  __TEXT.__swift5_typeref: 0xeef7 sha256:74cb0f72d2305bb06594e67818e03d874478c7529c7055bb63574121c1eff02a
-+  __TEXT.__cstring: 0x1c3f0 sha256:25e93be97530b9b3c644e265789ee83bfa55e9d52871f04d7339e9af68913059
-+  __TEXT.__oslogstring: 0x1c095 sha256:7930ccee26a2d13318cff7746a9bc18a2e4e0ba8468d0d96bddde1eddb8e1b0b
-+  __TEXT.__swift5_capture: 0xabb8 sha256:b93539d298e6ce19ea9d75aa529ccf9668184fb60f8accdd3e0d32ea55bedec7
-+  __TEXT.__swift5_fieldmd: 0xe05c sha256:7e122b8f4c8940e2e2db9d1f7ac5d0f46b9a452934b08243d06b391cbe3c443a
-+  __TEXT.__constg_swiftt: 0xa634 sha256:44df5362a093f1f9712b3a07cf995e0a7ed18edc6fa8d8bed9919f4c545c0a29
-+  __TEXT.__swift5_reflstr: 0xa48f sha256:6c7e74370ece5ade3094f196405ddcca9d421741dbeeded6a4302e0e586a826c
-+  __TEXT.__swift5_builtin: 0x2d0 sha256:56abe1be6fbbb03e79c54df5e6e1bd07b0c7f695a7c0d3550f6086f521030bb9
-+  __TEXT.__swift5_assocty: 0x27c0 sha256:62d821843f433af88a72c74a8463fca7ed4f7ab50af9a40b4275f8fda32242f3
-+  __TEXT.__swift5_protos: 0x170 sha256:f78237d3f4a93e1f2f155ded7718d59722a514402fc5b064b9970e4f3fa83526
-+  __TEXT.__swift5_proto: 0x2e08 sha256:fb79a05555db9a17b8cd8e17a0c62d786a39627b594606ed00c52e52f4054cdf
-+  __TEXT.__swift5_types: 0xcd4 sha256:936dcf77dbc0eaa051c9c1f40162d0ed5c7bc90a129251a7adbaf3fef2cbce34
-+  __TEXT.__swift_as_entry: 0xb18 sha256:d3a38f36377ac2b4e35e1c2e9fafd132a27abef5c55935eb32fc1a8ce1945aa0
-+  __TEXT.__swift_as_ret: 0xc84 sha256:2782e5245abbc72f074ded315af7f5662fb1f960b9d07c0422c642376473c975
-+  __TEXT.__swift_as_cont: 0x1538 sha256:1018d266a04bd3c3d02a9b648200e7e2e3bfb12d9b8da3c8d4fd81c3f90543fa
-+  __TEXT.__swift5_mpenum: 0xec sha256:905976d376b2524efdbcb24e738ac75a62eaf4d574bc03fa1b2ec01a8f9c36cb
-+  __TEXT.__unwind_info: 0x173b8 sha256:efea5a6b86dcfedaebb075e8362e0226db9b647081858b7c622da52fcf4e1ab5
-+  __TEXT.__eh_frame: 0x25c10 sha256:15f589fa5d47e499d64893fcac533f94cdf93c2e62ad7aeced334ce6065f7a5e
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3cb8 sha256:854fb5dc87d71b151501b57adba7feab1151c04901164113c3aa68937277f3c0
--  __DATA_CONST.__objc_classlist: 0x2f0 sha256:a3a331092fb9834005d93f1542c5bec98b66f145c92a40a405ed1382a29938a2
--  __DATA_CONST.__objc_catlist: 0x38 sha256:b8c372013ea6dd2a23e8d271d4dba3bf956ece12dc2d52ce167f98b8364ce3a8
--  __DATA_CONST.__objc_protolist: 0x140 sha256:476fe6009ab8d2f54c994969d55bb3b5069b23b67cfa4973c258826e94a80e7c
-+  __DATA_CONST.__const: 0x3c50 sha256:21afce7c956cfb610797b71d58bac2ccb77a3e26e33ce4b766e0c2b418cd339a
-+  __DATA_CONST.__objc_classlist: 0x2c8 sha256:4f33b09184fe087616509b050f12586dee65b8547117eef39305c711529e3c83
-+  __DATA_CONST.__objc_catlist: 0x38 sha256:fb04ea279dda63f772ff0ad27ed1b72c3cc2618d873f1738409130a7b18bcb9a
-+  __DATA_CONST.__objc_protolist: 0x140 sha256:7faac9b64f658b341cdf7dea24e56d7b972672e38580e2de47716513e09cd2d5
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0x2928 sha256:a5a3545a1d02e12ac99fa9a1d2ab9f96884c93f4e939d3a2a9400750c7eea402
--  __DATA_CONST.__objc_protorefs: 0xa8 sha256:0941ea87fa10e5a0686aea8789710ab3d8d5f3c0549c93410193cc558f381ad9
--  __DATA_CONST.__got: 0x3bd0 sha256:f1ff7425ddf062f8d00be7a0e86c3b1901eed1f9538ee833991eaff0f4909c43
--  __AUTH_CONST.__const: 0x359b1 sha256:3816c4209e373db4a39130bec8431889654ebc8eb9e24b52d554c3ce2b9fad18
--  __AUTH_CONST.__objc_const: 0x7518 sha256:12df10aa803d0da17152660c9b22acedc217c770e09ed49b69d079073c0ad722
--  __AUTH_CONST.__auth_got: 0x67e8 sha256:43953f8c8c576de567dbbecb1761b6454ae9b60e302e048b597de0e899ed5079
--  __AUTH.__objc_data: 0x370 sha256:34f0ae41cd463377546613e863c08b84d483468acf12f64fc4703ed784931288
--  __AUTH.__data: 0x4310 sha256:db2d92537e17e0b373ef09aef7b2a154e03be88bb9ac5c16922d6f6039f68ae1
--  __DATA.__data: 0x90c8 sha256:d68bb70764bf2aa2be6d4b8abad29682b3e0eef4d2674553ae4231bc53513f6a
--  __DATA.__bss: 0x39a80 sha256:30fe0eba5567f1feeb72876275562ca84cee4b2bb9df9ab0e47478c553570a6d
--  __DATA.__common: 0x720 sha256:d68334e72457a9eefb367b20fe21b635debd92b6f131fb7f8776652021fd5e6c
--  __DATA_DIRTY.__objc_data: 0x6a0 sha256:fb0e7f3db0fb0d76fb6afa6248c9f382812db3fb22018cb476fc65a53287bd2a
--  __DATA_DIRTY.__data: 0xb508 sha256:da8ff2f6cafc69c4e45c2a870e42fc18706e78b889c11b891d38cc4fb4aa5023
--  __DATA_DIRTY.__bss: 0x1d480 sha256:d5dad207f25df182cd686a138552eae619140bf390d8054f255f65c2f174970a
--  __DATA_DIRTY.__common: 0x8a8 sha256:4e7a8c59942ff527ff680aa88cc66bb8c8e7b6c02a018bc85ba36794e278670f
-+  __DATA_CONST.__objc_selrefs: 0x29f0 sha256:fb3a888ed5d7b479ffc955e9b76c0bca055f211dbd33396210b268f3f74ac070
-+  __DATA_CONST.__objc_protorefs: 0xa8 sha256:a1acf769b975d13b4fd9f2f0e238794e835424beddab4ac55bd8737541f4cfd6
-+  __DATA_CONST.__got: 0x3c00 sha256:a1ef207755890f8d8864e84f7673e7130077fc7e165501143ddb5cf28f87178d
-+  __AUTH_CONST.__const: 0x376e9 sha256:cf3ee208c620edb5db54e09efcb15b0ee08f16876b07af176ccb9749ce2bd228
-+  __AUTH_CONST.__objc_const: 0x7120 sha256:e1aa710c91198f195b0f9dc50ae5fbb47aae3209077e0a7ab045e8feb5dde596
-+  __AUTH_CONST.__auth_got: 0x68d8 sha256:58ed69aaf5e7536e9e2296f686bcb233f1aaedd538514e0cef6cf4bb7e12419c
-+  __AUTH.__objc_data: 0x328 sha256:044f74c8a00e60d7b891078371c124678c60730e8bb2e9130d4c863113d0c527
-+  __AUTH.__data: 0x43e0 sha256:0ad244b2f001f950d6f268e3bb0d25e6c88b56975353d8272f3c87fbd275a8a8
-+  __DATA.__data: 0x9140 sha256:194e9e22e14b63e96bee337ef3e39873f0bf94a28e4aed5e31b53567ed54691c
-+  __DATA.__bss: 0x39910 sha256:3d474379e26d04a7ebbd9705b5241c418761720b801e4110534a472fd6fdee47
-+  __DATA.__common: 0x728 sha256:97ae2e60f46fd4ea1f401c93a38e0323222d290665bfebbfc9a11dc05503e58f
-+  __DATA_DIRTY.__objc_data: 0x5a8 sha256:f52060b6ed4dfc287ae34d72274afa04f156aff9dad8b98d12610b68ec5a8b6b
-+  __DATA_DIRTY.__data: 0xb008 sha256:a6063896589488691268bac5a4cd08347a9d06f5a101bcca706fde79a5dab9d3
-+  __DATA_DIRTY.__bss: 0x1cd00 sha256:f488b8f607e37354da5ce6dee446aee667635e7959f628f9a0a69e9409d56edf
-+  __DATA_DIRTY.__common: 0x7e8 sha256:6a9dbfdcc8a54ad6287bb2e7bac4a6542e5d98f649058ef3723e52920f543ab7
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/Contacts.framework/Contacts
 
-   - /System/Library/PrivateFrameworks/GenerativeFunctionsFoundation.framework/GenerativeFunctionsFoundation
-   - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
-   - /System/Library/PrivateFrameworks/GenerativeModelsFoundation.framework/GenerativeModelsFoundation
 +  - /System/Library/PrivateFrameworks/GenerativeSearch.framework/GenerativeSearch
 +  - /System/Library/PrivateFrameworks/GenerativeSearchAdapter.framework/GenerativeSearchAdapter
-   - /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
-   - /System/Library/PrivateFrameworks/IMCore.framework/IMCore
-   - /System/Library/PrivateFrameworks/IMDPersistence.framework/IMDPersistence
 
-   - /System/Library/PrivateFrameworks/MediaAnalysisServices.framework/MediaAnalysisServices
-   - /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
-   - /System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog
 -  - /System/Library/PrivateFrameworks/ModelManagerServices.framework/ModelManagerServices
-   - /System/Library/PrivateFrameworks/OmniSearchTypes.framework/OmniSearchTypes
-   - /System/Library/PrivateFrameworks/PegasusAPI.framework/PegasusAPI
-   - /System/Library/PrivateFrameworks/PegasusKit.framework/PegasusKit
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: 53F38621-68BC-3E6E-8B32-EC91CAEE3378
 -  Functions: 44534
--  Symbols:   141698
--  CStrings:  3920
-+  UUID: CCA6145C-7121-3E97-AF14-DAE9C0713AD4
+-  Symbols:   74389
+-  CStrings:  3915
 +  Functions: 44725
-+  Symbols:   142306
-+  CStrings:  3856
- 
++  Symbols:   74108
++  CStrings:  3851
 Symbols:
 + _$s10AppIntents14EntityPropertyCAASS9ValueTypeRtzrlEACyxGycfC
 + _$s10AppIntents14EntityPropertyCySay10OmniSearch7PassageVGGACyxGSEAASeRzSERzrlWl
@@ -291,7 +227,6 @@ Symbols:
 + _$s10OmniSearch06GlobalB6ClientC22combineMessageHandlers33_CBFB0104A61350AC63CE0898BEF4DA38LLyy21InternalSwiftProtobuf0F0_p_SSSgSDyS2SGSgtYbcSgAK_AKtFZyAfG_p_AhJtYbcfU_TA
 + _$s10OmniSearch06GlobalB6ClientC26makeSelfBatchStartedWriter33_CBFB0104A61350AC63CE0898BEF4DA38LL12searchToolId5items8queryIDsy21InternalSwiftProtobuf7Message_p_SSSgSDyS2SGSgtYbcSgAK_Say0aB5Types0gB4ItemVGSay10Foundation4UUIDVGtFZyAiJ_p_AkMtYbcfU_
 + _$s10OmniSearch06GlobalB6ClientC26makeSelfBatchStartedWriter33_CBFB0104A61350AC63CE0898BEF4DA38LL12searchToolId5items8queryIDsy21InternalSwiftProtobuf7Message_p_SSSgSDyS2SGSgtYbcSgAK_Say0aB5Types0gB4ItemVGSay10Foundation4UUIDVGtFZyAiJ_p_AkMtYbcfU_TA
-+ _$s10OmniSearch08PhotoKitB7ServiceV019constructAttributedB6String3for10ecrResults13groundingInfo7optionsSo012NSAttributedH0CAA9UserQueryV_SDyS2SGSgSDySSSDySo0oH3KeyaypGGSgAA0aB7OptionsVSgtYaFyAQ_So8_NSRangeVSpy10ObjectiveC8ObjCBoolVGtXEfU_TA.41
 + _$s10OmniSearch08PhotoKitB7ServiceV6search5query7sources15typeConstraints0F7OptionsAA0bE6ResultVAA9UserQueryV_AA0B7SourcesVSayAA0B20EntityTypeConstraintOGAA0abK0VtYaKFSSycfu1_
 + _$s10OmniSearch08PhotoKitB7ServiceV6search5query7sources15typeConstraints0F7OptionsAA0bE6ResultVAA9UserQueryV_AA0B7SourcesVSayAA0B20EntityTypeConstraintOGAA0abK0VtYaKFSSycfu1_TA
 + _$s10OmniSearch08PhotoKitB7ServiceV6search5query7sources15typeConstraints0F7OptionsAA0bE6ResultVAA9UserQueryV_AA0B7SourcesVSayAA0B20EntityTypeConstraintOGAA0abK0VtYaKFSbycfu_
@@ -300,35 +235,35 @@ Symbols:
 + _$s10OmniSearch0B13ServiceResultVSgWOy
 + _$s10OmniSearch0B13ServiceResultVWOh
 + _$s10OmniSearch0B16ResultFileEntityV10fileItemIDSSSgvM
-+ _$s10OmniSearch0B16ResultFileEntityV10fileItemIDSSSgvM.resume.0
++ _$s10OmniSearch0B16ResultFileEntityV10fileItemIDSSSgvM.resume
 + _$s10OmniSearch0B16ResultFileEntityV10fileItemIDSSSgvg
 + _$s10OmniSearch0B16ResultFileEntityV10fileItemIDSSSgvpMV
 + _$s10OmniSearch0B16ResultFileEntityV10fileItemIDSSSgvs
 + _$s10OmniSearch0B16ResultFileEntityV11$fileItemID10AppIntents0E8PropertyCySSSgGvg
 + _$s10OmniSearch0B16ResultFileEntityV11$fileItemID10AppIntents0E8PropertyCySSSgGvpMV
 + _$s10OmniSearch0B16ResultFileEntityV14fileProviderIDSSSgvM
-+ _$s10OmniSearch0B16ResultFileEntityV14fileProviderIDSSSgvM.resume.0
++ _$s10OmniSearch0B16ResultFileEntityV14fileProviderIDSSSgvM.resume
 + _$s10OmniSearch0B16ResultFileEntityV14fileProviderIDSSSgvg
 + _$s10OmniSearch0B16ResultFileEntityV14fileProviderIDSSSgvpMV
 + _$s10OmniSearch0B16ResultFileEntityV14fileProviderIDSSSgvs
 + _$s10OmniSearch0B16ResultFileEntityV15$fileProviderID10AppIntents0E8PropertyCySSSgGvg
 + _$s10OmniSearch0B16ResultFileEntityV15$fileProviderID10AppIntents0E8PropertyCySSSgGvpMV
 + _$s10OmniSearch0B16ResultFileEntityV20fileUniqueIdentifierSSSgvM
-+ _$s10OmniSearch0B16ResultFileEntityV20fileUniqueIdentifierSSSgvM.resume.0
++ _$s10OmniSearch0B16ResultFileEntityV20fileUniqueIdentifierSSSgvM.resume
 + _$s10OmniSearch0B16ResultFileEntityV20fileUniqueIdentifierSSSgvg
 + _$s10OmniSearch0B16ResultFileEntityV20fileUniqueIdentifierSSSgvpMV
 + _$s10OmniSearch0B16ResultFileEntityV20fileUniqueIdentifierSSSgvs
 + _$s10OmniSearch0B16ResultFileEntityV21$fileUniqueIdentifier10AppIntents0E8PropertyCySSSgGvg
 + _$s10OmniSearch0B16ResultFileEntityV21$fileUniqueIdentifier10AppIntents0E8PropertyCySSSgGvpMV
 + _$s10OmniSearch0B16ResultFileEntityV28fileProviderDomainIdentifierSSSgvM
-+ _$s10OmniSearch0B16ResultFileEntityV28fileProviderDomainIdentifierSSSgvM.resume.0
++ _$s10OmniSearch0B16ResultFileEntityV28fileProviderDomainIdentifierSSSgvM.resume
 + _$s10OmniSearch0B16ResultFileEntityV28fileProviderDomainIdentifierSSSgvg
 + _$s10OmniSearch0B16ResultFileEntityV28fileProviderDomainIdentifierSSSgvpMV
 + _$s10OmniSearch0B16ResultFileEntityV28fileProviderDomainIdentifierSSSgvs
 + _$s10OmniSearch0B16ResultFileEntityV29$fileProviderDomainIdentifier10AppIntents0E8PropertyCySSSgGvg
 + _$s10OmniSearch0B16ResultFileEntityV29$fileProviderDomainIdentifier10AppIntents0E8PropertyCySSSgGvpMV
 + _$s10OmniSearch0B16ResultFileEntityV2idSSvM
-+ _$s10OmniSearch0B16ResultFileEntityV2idSSvM.resume.0
++ _$s10OmniSearch0B16ResultFileEntityV2idSSvM.resume
 + _$s10OmniSearch0B16ResultFileEntityV2idSSvM.resume.0Tm
 + _$s10OmniSearch0B16ResultFileEntityV2idSSvg
 + _$s10OmniSearch0B16ResultFileEntityV2idSSvpACTk
@@ -360,7 +295,7 @@ Symbols:
 + _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV05clearE2IDyyF
 + _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV13decodeMessage7decoderyxz_tK21InternalSwiftProtobuf7DecoderRzlF
 + _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM
-+ _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume.0
++ _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvM.resume
 + _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvg
 + _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvpMV
 + _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV13unknownFields21InternalSwiftProtobuf14UnknownStorageVvs
@@ -384,7 +319,7 @@ Symbols:
 + _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV21InternalSwiftProtobuf7MessageAadEP06decodeK07decoderyqd__z_tKAD7DecoderRd__lFTW
 + _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV21InternalSwiftProtobuf7MessageAadEP13isInitializedSbvgTW
 + _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW
-+ _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume.0
++ _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvMTW.resume
 + _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvgTW
 + _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV21InternalSwiftProtobuf7MessageAadEP13unknownFieldsAD14UnknownStorageVvsTW
 + _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV21InternalSwiftProtobuf7MessageAadEP4hash4intoys6HasherVz_tFTW
@@ -393,7 +328,7 @@ Symbols:
 + _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV21InternalSwiftProtobuf7MessageAadEPxycfCTW
 + _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV2eeoiySbAC_ACtFZ
 + _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV7queryIDs6UInt64VvM
-+ _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV7queryIDs6UInt64VvM.resume.0
++ _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV7queryIDs6UInt64VvM.resume
 + _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV7queryIDs6UInt64Vvg
 + _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV7queryIDs6UInt64VvpMV
 + _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV7queryIDs6UInt64Vvs
@@ -402,7 +337,7 @@ Symbols:
 + _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV9hashValueSivg
 + _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV9hashValueSivpMV
 + _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV9sessionIDSSvM
-+ _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV9sessionIDSSvM.resume.0
++ _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV9sessionIDSSvM.resume
 + _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV9sessionIDSSvg
 + _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV9sessionIDSSvpACTk
 + _$s10OmniSearch0aB26ProtoSessionQueryLinkEventV9sessionIDSSvpMV
@@ -439,7 +374,7 @@ Symbols:
 + _$s10OmniSearch0aB26ProtoSessionQueryLinkEventVwet
 + _$s10OmniSearch0aB26ProtoSessionQueryLinkEventVwst
 + _$s10OmniSearch0aB7OptionsV07agenticB11InvocationsSay0aB5Types07AgenticB10InvocationCGvM
-+ _$s10OmniSearch0aB7OptionsV07agenticB11InvocationsSay0aB5Types07AgenticB10InvocationCGvM.resume.0
++ _$s10OmniSearch0aB7OptionsV07agenticB11InvocationsSay0aB5Types07AgenticB10InvocationCGvM.resume
 + _$s10OmniSearch0aB7OptionsV07agenticB11InvocationsSay0aB5Types07AgenticB10InvocationCGvg
 + _$s10OmniSearch0aB7OptionsV07agenticB11InvocationsSay0aB5Types07AgenticB10InvocationCGvpMV
 + _$s10OmniSearch0aB7OptionsV07agenticB11InvocationsSay0aB5Types07AgenticB10InvocationCGvs
@@ -487,7 +422,7 @@ Symbols:
 + _$s10OmniSearch0aB7ServiceC14searchInternal33_07BE347A879194015ACD41574A0B76AALL5query15typeConstraints15matchedEntities7sources7options19requestedProperties18siriRequestContext012usingAgenticB0AA0aB8ResponseC_Scs8IteratorVy0aB5Types0B16StreamingMessageVyAOGs5Error_p_GSgtAA9UserQueryV_SayAA0B20EntityTypeConstraintOGSayAA11EntityMatchVGAA0B7SourcesVAA0aB7OptionsVSayAA0b8PropertyV0VG22IntelligenceFlowShared010StructuredW0V04SirivW0VSgSbtYaKFTY19_
 + _$s10OmniSearch0aB7ServiceC14searchInternal33_07BE347A879194015ACD41574A0B76AALL5query15typeConstraints15matchedEntities7sources7options19requestedProperties18siriRequestContext012usingAgenticB0AA0aB8ResponseC_Scs8IteratorVy0aB5Types0B16StreamingMessageVyAOGs5Error_p_GSgtAA9UserQueryV_SayAA0B20EntityTypeConstraintOGSayAA11EntityMatchVGAA0B7SourcesVAA0aB7OptionsVSayAA0b8PropertyV0VG22IntelligenceFlowShared010StructuredW0V04SirivW0VSgSbtYaKFTY7_
 + _$s10OmniSearch0ab5ProtoaB19InstrumentableEventV016sessionQueryLinkE0AA0abc7SessionghE0VvM
-+ _$s10OmniSearch0ab5ProtoaB19InstrumentableEventV016sessionQueryLinkE0AA0abc7SessionghE0VvM.resume.0
++ _$s10OmniSearch0ab5ProtoaB19InstrumentableEventV016sessionQueryLinkE0AA0abc7SessionghE0VvM.resume
 + _$s10OmniSearch0ab5ProtoaB19InstrumentableEventV016sessionQueryLinkE0AA0abc7SessionghE0Vvg
 + _$s10OmniSearch0ab5ProtoaB19InstrumentableEventV016sessionQueryLinkE0AA0abc7SessionghE0VvpMV
 + _$s10OmniSearch0ab5ProtoaB19InstrumentableEventV016sessionQueryLinkE0AA0abc7SessionghE0Vvs
@@ -496,7 +431,7 @@ Symbols:
 + _$s10OmniSearch0ab5ProtoaB19InstrumentableEventV8traverse7visitoryxz_tK21InternalSwiftProtobuf7VisitorRzlFyyKXEfU11_
 + _$s10OmniSearch11EvalLoggingV03logC4Info__6loggerySS_AA0cF9Providing_p2os6LoggerVtFZfA1_Tm
 + _$s10OmniSearch11EventEntityV2idSSvM
-+ _$s10OmniSearch11EventEntityV2idSSvM.resume.0
++ _$s10OmniSearch11EventEntityV2idSSvM.resume
 + _$s10OmniSearch11EventEntityV2idSSvM.resume.0Tm
 + _$s10OmniSearch11EventEntityV2idSSvg
 + _$s10OmniSearch11EventEntityV2idSSvpACTk
@@ -668,11 +603,6 @@ Symbols:
 + _$s10OmniSearch13MetricsLoggerC09logGlobalB5Ended12searchToolId03samB8Response23responsePayloadSizeInKbySSSg_10PegasusAPI034Apple_Parsec_Sam_V1alpha_SAMSearchL0VSgSdSgtFTq
 + _$s10OmniSearch13MetricsLoggerC09logGlobalB5Ended12searchToolId03samB8Response23responsePayloadSizeInKbySSSg_10PegasusAPI034Apple_Parsec_Sam_V1alpha_SAMSearchL0VSgSdSgtFySo15STSchemaSTEventCXEfU_
 + _$s10OmniSearch13MetricsLoggerC09logGlobalB5Ended12searchToolId03samB8Response23responsePayloadSizeInKbySSSg_10PegasusAPI034Apple_Parsec_Sam_V1alpha_SAMSearchL0VSgSdSgtFySo15STSchemaSTEventCXEfU_TA
-+ _$s10OmniSearch13MetricsLoggerC09logGlobalB5Ended12searchToolId03samB8Response23responsePayloadSizeInKbySSSg_10PegasusAPI034Apple_Parsec_Sam_V1alpha_SAMSearchL0VSgSdSgtFySo15STSchemaSTEventCXEfU_TA.181
-+ _$s10OmniSearch13MetricsLoggerC09logGlobalB5Ended12searchToolId03samB8Response23responsePayloadSizeInKbySSSg_10PegasusAPI034Apple_Parsec_Sam_V1alpha_SAMSearchL0VSgSdSgtFySo15STSchemaSTEventCXEfU_TA.231
-+ _$s10OmniSearch13MetricsLoggerC09logGlobalB5Ended12searchToolId03samB8Response23responsePayloadSizeInKbySSSg_10PegasusAPI034Apple_Parsec_Sam_V1alpha_SAMSearchL0VSgSdSgtFySo15STSchemaSTEventCXEfU_TA.27
-+ _$s10OmniSearch13MetricsLoggerC09logGlobalB5Ended12searchToolId03samB8Response23responsePayloadSizeInKbySSSg_10PegasusAPI034Apple_Parsec_Sam_V1alpha_SAMSearchL0VSgSdSgtFySo15STSchemaSTEventCXEfU_TA.351
-+ _$s10OmniSearch13MetricsLoggerC09logGlobalB5Ended12searchToolId03samB8Response23responsePayloadSizeInKbySSSg_10PegasusAPI034Apple_Parsec_Sam_V1alpha_SAMSearchL0VSgSdSgtFySo15STSchemaSTEventCXEfU_TA.77
 + _$s10OmniSearch13MetricsLoggerC09logGlobalB7Started12searchToolId22requestPayloadSizeInKbySSSg_SdSgtF
 + _$s10OmniSearch13MetricsLoggerC09logGlobalB7Started12searchToolId22requestPayloadSizeInKbySSSg_SdSgtFTj
 + _$s10OmniSearch13MetricsLoggerC09logGlobalB7Started12searchToolId22requestPayloadSizeInKbySSSg_SdSgtFTq
@@ -848,7 +778,7 @@ Symbols:
 + _$s10OmniSearch18GenericEventEntityV2id9attendees12businessName4cost8duration11endDateTime9eventLink0oI00O4Type0o3SubQ08location0sI09organizer11phoneNumber05startmN0ACSS_Say10AppIntents12IntentPersonVGSSSgAW10Foundation0M10ComponentsVSgA_AX3URLVSgA5wUSgAWA_tcfC
 + _$s10OmniSearch18GenericEventEntityV2id9attendees12businessName4cost8duration11endDateTime9eventLink0oI00O4Type0o3SubQ08location0sI09organizer11phoneNumber05startmN0ACSS_Say10AppIntents12IntentPersonVGSSSgAW10Foundation0M10ComponentsVSgA_AX3URLVSgA5wUSgAWA_tcfcfA0_
 + _$s10OmniSearch18GenericEventEntityV2idSSvM
-+ _$s10OmniSearch18GenericEventEntityV2idSSvM.resume.0
++ _$s10OmniSearch18GenericEventEntityV2idSSvM.resume
 + _$s10OmniSearch18GenericEventEntityV2idSSvg
 + _$s10OmniSearch18GenericEventEntityV2idSSvpACTk
 + _$s10OmniSearch18GenericEventEntityV2idSSvpMV
@@ -857,7 +787,7 @@ Symbols:
 + _$s10OmniSearch18GenericEventEntityV3$id10AppIntents0E8PropertyCySSGvpMV
 + _$s10OmniSearch18TicketedShowEntityV2id13reservationId8provider13customerNames12locationName7address11seatNumbers8duration10ticketType0R3Url4cost13startDateTime03endwX008eventSubS0ACSS_SSSgARSaySSGSgA2rT10Foundation0W10ComponentsVSgArU3URLVSgAr2xRtcfC
 + _$s10OmniSearch18TicketedShowEntityV2idSSvM
-+ _$s10OmniSearch18TicketedShowEntityV2idSSvM.resume.0
++ _$s10OmniSearch18TicketedShowEntityV2idSSvM.resume
 + _$s10OmniSearch18TicketedShowEntityV2idSSvg
 + _$s10OmniSearch18TicketedShowEntityV2idSSvpACTk
 + _$s10OmniSearch18TicketedShowEntityV2idSSvpMV
@@ -865,7 +795,7 @@ Symbols:
 + _$s10OmniSearch18TicketedShowEntityV3$id10AppIntents0E8PropertyCySSGvg
 + _$s10OmniSearch18TicketedShowEntityV3$id10AppIntents0E8PropertyCySSGvpMV
 + _$s10OmniSearch19ApplessGlobalEntityV12samRequestIdSSSgvM
-+ _$s10OmniSearch19ApplessGlobalEntityV12samRequestIdSSSgvM.resume.0
++ _$s10OmniSearch19ApplessGlobalEntityV12samRequestIdSSSgvM.resume
 + _$s10OmniSearch19ApplessGlobalEntityV12samRequestIdSSSgvg
 + _$s10OmniSearch19ApplessGlobalEntityV12samRequestIdSSSgvpACTk
 + _$s10OmniSearch19ApplessGlobalEntityV12samRequestIdSSSgvpMV
@@ -878,7 +808,7 @@ Symbols:
 + _$s10OmniSearch19ItemFetcherProtocolP14glpMailEnabledSbvgTq
 + _$s10OmniSearch19ShippingOrderEntityV2id9eventName7subType6status14shippingStatus9orderDate0N6Number0N11TrackingURL0N4Cost08merchantH00L11PersonNames0l8LocationH00L7Address0l5PhoneP009recipientV00zwH00zX00zyP008customerV008customerX008customeryP007carrierH008trackingP00lO008deliveryO0022estimatedDeliveryStartO0020estimatedDeliveryEndO0ACSS_SSSgA3_A3_A3_10Foundation0O0VSgA3_A4_0R0VSgSdSgA3_SaySSGSgA3_A3_A3_A13_A3_A3_A3_A13_A13_A13_A3_A3_A7_A7_A7_A7_tcfC
 + _$s10OmniSearch19ShippingOrderEntityV2idSSvM
-+ _$s10OmniSearch19ShippingOrderEntityV2idSSvM.resume.0
++ _$s10OmniSearch19ShippingOrderEntityV2idSSvM.resume
 + _$s10OmniSearch19ShippingOrderEntityV2idSSvg
 + _$s10OmniSearch19ShippingOrderEntityV2idSSvpACTk
 + _$s10OmniSearch19ShippingOrderEntityV2idSSvpMV
@@ -941,7 +871,7 @@ Symbols:
 + _$s10OmniSearch21SpotlightIndexRequestV9userQuery13targetMatches9spQUParse15typeConstraints19toolParameterTuples6locale9isCarPlay11offlineMode11entityTypes4apps0R14ReadingPurpose24maxResultsCountPerBundle13excludePhotos19currentTimeOverride07agenticB11InvocationsACSS_SiSgSo9SPQUParseCSgSayAA0B20EntityTypeConstraintOGSayAA04ToolO5TupleVGSSSgS2bSaySSGA2_SbASSb10Foundation4DateVSgSay0abX007AgenticB10InvocationCGtcfcfA9_
 + _$s10OmniSearch22HotelReservationEntityV2id18confirmationNumber5guest15bookingProvider12businessName11roomNumbers7address15checkInDateTime0q3OutsT005phoneH03urlACSS_SSSgA3OSaySSGAO10Foundation0S10ComponentsVSgAtoQ3URLVSgtcfC
 + _$s10OmniSearch22HotelReservationEntityV2idSSvM
-+ _$s10OmniSearch22HotelReservationEntityV2idSSvM.resume.0
++ _$s10OmniSearch22HotelReservationEntityV2idSSvM.resume
 + _$s10OmniSearch22HotelReservationEntityV2idSSvg
 + _$s10OmniSearch22HotelReservationEntityV2idSSvgTm
 + _$s10OmniSearch22HotelReservationEntityV2idSSvpMV
@@ -950,7 +880,7 @@ Symbols:
 + _$s10OmniSearch22HotelReservationEntityV3$id10AppIntents0E8PropertyCySSGvpMV
 + _$s10OmniSearch23FlightReservationEntityV2id18arrivalAirportCode0gH4Name0G8DateTime0G4Gate0G8Terminal08boardingkL015bookingProvider7carrier10checkInUrl18confirmationNumber09departurehI00xhJ00xkL00xM00xN010designator06flightW014passengerNames11seatNumbers6status4cost13totalDurationACSS_SSSgA_10Foundation0K10ComponentsVA_A_A2_SgA_A_A0_3URLVSgA_A_A_A2_A_A_A_A_SaySSGA7_SS10AppIntents20IntentCurrencyAmountVSgSdSgtcfC
 + _$s10OmniSearch23FlightReservationEntityV2idSSvM
-+ _$s10OmniSearch23FlightReservationEntityV2idSSvM.resume.0
++ _$s10OmniSearch23FlightReservationEntityV2idSSvM.resume
 + _$s10OmniSearch23FlightReservationEntityV2idSSvg
 + _$s10OmniSearch23FlightReservationEntityV2idSSvpACTk
 + _$s10OmniSearch23FlightReservationEntityV2idSSvpMV
@@ -959,7 +889,7 @@ Symbols:
 + _$s10OmniSearch23FlightReservationEntityV3$id10AppIntents0E8PropertyCySSGvpMV
 + _$s10OmniSearch24VehicleReservationEntityV2id15bookingProvider4cost14dropOffAddress0jK12BusinessName0jK8DateTime0jK11PhoneNumber8duration06pickUpL00tumN00tuoP00tuqR006renterN06status12vehicleClass012confirmationR0ACSS_SSSgA3T10Foundation0O10ComponentsVSgAtx2tx5TtcfC
 + _$s10OmniSearch24VehicleReservationEntityV2idSSvM
-+ _$s10OmniSearch24VehicleReservationEntityV2idSSvM.resume.0
++ _$s10OmniSearch24VehicleReservationEntityV2idSSvM.resume
 + _$s10OmniSearch24VehicleReservationEntityV2idSSvg
 + _$s10OmniSearch24VehicleReservationEntityV2idSSvpACTk
 + _$s10OmniSearch24VehicleReservationEntityV2idSSvpMV
@@ -986,7 +916,7 @@ Symbols:
 + _$s10OmniSearch26ContactSELFSearchTermsRuleVwst
 + _$s10OmniSearch27RestaurantReservationEntityV2id18confirmationNumber20reservationUnderName13customerNames9partySize15bookingProvider08businessK07address05phoneH013startDateTime8mealType6status5guestACSS_SSSgAQSaySSGSgSiSgA4Q10Foundation0V10ComponentsVSgA3QtcfC
 + _$s10OmniSearch27RestaurantReservationEntityV2idSSvM
-+ _$s10OmniSearch27RestaurantReservationEntityV2idSSvM.resume.0
++ _$s10OmniSearch27RestaurantReservationEntityV2idSSvM.resume
 + _$s10OmniSearch27RestaurantReservationEntityV2idSSvg
 + _$s10OmniSearch27RestaurantReservationEntityV2idSSvpMV
 + _$s10OmniSearch27RestaurantReservationEntityV2idSSvs
@@ -1113,7 +1043,7 @@ Symbols:
 + _$s10OmniSearch28PipelineCompletenessFetching_pMF
 + _$s10OmniSearch28TicketedTransportationEntityV2id18arrivalStationName0gH7Address0G8DateTime09departurehI00mhJ00mkL08duration12eventSubType14passengerNames11seatNumbersACSS_SSSgAO10Foundation0K10ComponentsVSgA2o2sOSaySSGATtcfC
 + _$s10OmniSearch28TicketedTransportationEntityV2idSSvM
-+ _$s10OmniSearch28TicketedTransportationEntityV2idSSvM.resume.0
++ _$s10OmniSearch28TicketedTransportationEntityV2idSSvM.resume
 + _$s10OmniSearch28TicketedTransportationEntityV2idSSvg
 + _$s10OmniSearch28TicketedTransportationEntityV2idSSvpACTk
 + _$s10OmniSearch28TicketedTransportationEntityV2idSSvpMV
@@ -1383,297 +1313,11 @@ Symbols:
 + _$s23GenerativeSearchAdapter04MailB6ClientVMa
 + _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_07$s2os18b203InterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_194$s10OmniSearch16LocalIndexClientC30handleSelectItemsByContentType_20spotlightRankingItem011eventSourceH3MapSb_N88B6ResultVSgtSo012CSSearchableN0C_0aB5Types09SpotlightmN0VSDySSSayAKGGtFZSSycfu16_Tf3pf_nTf3nnnnpf_n
 + _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_07$s2os18b203InterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_194$s10OmniSearch16LocalIndexClientC30handleSelectItemsByContentType_20spotlightRankingItem011eventSourceH3MapSb_N88B6ResultVSgtSo012CSSearchableN0C_0aB5Types09SpotlightmN0VSDySSSayAKGGtFZSSycfu20_Tf3pf_nTf3nnnnpf_n
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.103
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.109
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.123
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.145
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.159
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.167
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.181
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.189
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.195
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.197
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.205
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.208
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.212
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.213
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.221
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.225
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.229
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.232
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.246
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.254
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.260
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.262
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.273
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.281
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.284
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.292
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.296
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.300
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.312
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.314
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.325
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.330
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.332
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.340
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.341
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.342
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.350
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.352
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.374
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.380
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.408
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.409
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.420
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.424
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.480
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.506
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.514
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.529
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.563
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.574
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.594
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.653
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.670
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.678
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.686
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.694
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.702
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.722
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.730
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.746
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.75
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.760
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.768
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.779
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.783
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.790
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.791
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.805
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.810
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.813
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.824
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.844
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.877
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.888
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.902
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.928
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.936
 + _$s2os14OSLogArgumentsV6appendyySdycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_07$s2os18b78InterpolationV06appendC0_6format5align7privacyySdyXA_AA0B15FloatFormattingVAA0o15StringAlignmentr32B7PrivacyVtFSdycfu_07$s2os18bc46ij2_6k3Sfym1_n20B15hi4VAA0tjku2B7l30wX249_0164$s10OmniSearch0av107ServiceC05localB05query15typeConstraints7sources7options19requestedPropertiesAA0aB8ResponseCSg_AA9UserQueryw6AN_Says57B20EntityTypeConstraintOGAA0p12SourcesVAA0aP48OptionsVSaysT38PropertyRequestVGtYaKFSfycfu28_Tf3pf_nTf3pf_nTf3nnnnpf_n
-+ _$s2os14OSLogArgumentsV6appendyySdycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.288
-+ _$s2os14OSLogArgumentsV6appendyySdycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.300
-+ _$s2os14OSLogArgumentsV6appendyySo8NSObjectCSgycFySpys5UInt8VGz_SpyAGGSgzSpyypGSgztcfU_TA.197
-+ _$s2os14OSLogArgumentsV6appendyySo8NSObjectCSgycFySpys5UInt8VGz_SpyAGGSgzSpyypGSgztcfU_TA.271
-+ _$s2os14OSLogArgumentsV6appendyySo8NSObjectCSgycFySpys5UInt8VGz_SpyAGGSgzSpyypGSgztcfU_TA.510
-+ _$s2os14OSLogArgumentsV6appendyySo8NSObjectCSgycFySpys5UInt8VGz_SpyAGGSgzSpyypGSgztcfU_TA.541
-+ _$s2os14OSLogArgumentsV6appendyySo8NSObjectCSgycFySpys5UInt8VGz_SpyAGGSgzSpyypGSgztcfU_TA.625
-+ _$s2os14OSLogArgumentsV6appendyySo8NSObjectCSgycFySpys5UInt8VGz_SpyAGGSgzSpyypGSgztcfU_TA.636
-+ _$s2os14OSLogArgumentsV6appendyySo8NSObjectCSgycFySpys5UInt8VGz_SpyAGGSgzSpyypGSgztcfU_TA.640
-+ _$s2os14OSLogArgumentsV6appendyySo8NSObjectCSgycFySpys5UInt8VGz_SpyAGGSgzSpyypGSgztcfU_TA.84
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.1016
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.1024
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.105
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.1059
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.1067
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.1075
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.111
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.119
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.136
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.144
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.152
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.167
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.271
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.288
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.296
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.364
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.371
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.372
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.391
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.399
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.414
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.422
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.439
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.444
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.45
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.452
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.455
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.460
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.468
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.498
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.599
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.605
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.613
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.624
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.772
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.83
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.858
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.866
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.910
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.97
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA.1040
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA.127
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA.143
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA.159
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA.265
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA.328
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA.344
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA.363
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA.401
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA.50
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA.533
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA.552
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA.571
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA.675
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA.691
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA.707
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA.723
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA.745
-+ _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA.761
 + _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s6UInt32V_Tg504$ss6J259VIegd_ABIegr_TR0164$s10OmniSearch0aB7ServiceC05localB05query15typeConstraints7sources7options19requestedPropertiesAA0aB8ResponseCSg_AA9UserQueryVtAN_SayAA0B20EntityTypeConstraintOGAA0e12SourcesVAA0ae11OptionsVSayu27B15PropertyRequestVGtYaKFs6A7Vycfu6_Tf3npf_nTf3nnnnpf_n
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.105
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.119
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.141
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.155
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.163
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.177
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.185
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.191
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.193
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.201
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.204
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.208
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.209
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.217
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.221
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.225
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.228
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.242
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.250
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.256
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.258
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.269
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.277
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.280
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.288
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.292
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.296
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.308
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.310
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.321
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.326
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.328
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.336
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.337
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.338
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.346
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.348
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.370
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.376
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.404
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.405
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.416
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.420
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.476
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.502
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.510
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.525
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.559
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.570
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.590
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.649
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.666
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.674
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.682
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.690
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.698
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.71
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.718
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.726
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.742
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.756
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.764
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.775
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.779
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.786
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.787
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.801
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.806
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.809
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.820
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.840
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.873
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.884
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.898
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.924
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.932
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.99
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyyxyXA_AA0B15StringAlignmentVAA0B7PrivacyVts06CustomG11ConvertibleRzlFSSycfu_SDySSSiG_Tg5TA.797
 + _$s2os18OSLogInterpolationV06appendC0_5align7privacyyxyXA_AA0B15StringAlignmentVAA0B7PrivacyVts06CustomG11ConvertibleRzlFSSycfu_Say10OmniSearch0M4TypeOG_Tg5
 + _$s2os18OSLogInterpolationV06appendC0_5align7privacyyxyXA_AA0B15StringAlignmentVAA0B7PrivacyVts06CustomG11ConvertibleRzlFSSycfu_Say10OmniSearch0M4TypeOG_Tg5TA
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyyxyXA_AA0B15StringAlignmentVAA0B7PrivacyVts06CustomG11ConvertibleRzlFSSycfu_SaySSG_Tg5TA.120
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyyxyXA_AA0B15StringAlignmentVAA0B7PrivacyVts06CustomG11ConvertibleRzlFSSycfu_SaySSG_Tg5TA.31
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyyxyXA_AA0B15StringAlignmentVAA0B7PrivacyVts06CustomG11ConvertibleRzlFSSycfu_SaySSG_Tg5TA.38
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyyxyXA_AA0B15StringAlignmentVAA0B7PrivacyVts06CustomG11ConvertibleRzlFSSycfu_SaySSG_Tg5TA.45
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyyxyXA_AA0B15StringAlignmentVAA0B7PrivacyVts06CustomG11ConvertibleRzlFSSycfu_SaySSG_Tg5TA.920
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyyxyXA_AA0B15StringAlignmentVAA0B7PrivacyVts06CustomG11ConvertibleRzlFSSycfu_Ss_Tg5TA.385
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyyxyXA_AA0B15StringAlignmentVAA0B7PrivacyVts06CustomG11ConvertibleRzlFSSycfu_Ss_Tg5TA.84
-+ _$s2os18OSLogInterpolationV06appendC0_6format5align7privacyySdyXA_AA0B15FloatFormattingVAA0B15StringAlignmentVAA0B7PrivacyVtFSdycfu_TA.284
-+ _$s2os18OSLogInterpolationV06appendC0_6format5align7privacyySdyXA_AA0B15FloatFormattingVAA0B15StringAlignmentVAA0B7PrivacyVtFSdycfu_TA.296
-+ _$s2os18OSLogInterpolationV06appendC0_6format5align7privacyySfyXA_AA0B15FloatFormattingVAA0B15StringAlignmentVAA0B7PrivacyVtFSdycfu_TA.280
-+ _$s2os18OSLogInterpolationV06appendC0_6format5align7privacyySfyXA_AA0B15FloatFormattingVAA0B15StringAlignmentVAA0B7PrivacyVtFSdycfu_TA.292
 + _$s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_0339$s10OmniSearch0aB7ServiceC14searchInternal33_07BE347A879194015ACD41574A0B76AALL5query15typeConstraints15matchedEntities7sources7options19requestedProperties18siriRequestContext012usingAgenticB0AA0aB8ResponseC_Scs8IteratorVy0aB5Types0B16StreamingMessageVyAOGs5Error_p_GSgtAA9UserQueryV_SayAA0B20EntityTypeConstraintOGSayAA11EntityMatchVGAA0n12SourcesVAA0aN95OptionsVSayAA0b8PropertyV0VG22IntelligenceFlowShared010StructuredW0V04SirivW0VSgSbtYaKFSbycfu0_Tf3pf_n
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_TA.1028
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_TA.115
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_TA.131
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_TA.147
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_TA.253
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_TA.316
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_TA.332
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_TA.351
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_TA.38
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_TA.389
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_TA.521
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_TA.540
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_TA.559
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_TA.679
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_TA.695
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_TA.711
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_TA.733
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_TA.749
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA.1032
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA.119
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA.135
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA.151
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA.257
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA.320
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA.336
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA.355
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA.393
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA.42
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA.525
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA.544
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA.563
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA.667
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA.683
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA.699
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA.715
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA.737
-+ _$s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA.753
-+ _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesySo8NSObjectCyXA_AA0B7PrivacyVSStFAHSgycfu_TA.193
-+ _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesySo8NSObjectCyXA_AA0B7PrivacyVSStFAHSgycfu_TA.267
-+ _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesySo8NSObjectCyXA_AA0B7PrivacyVSStFAHSgycfu_TA.506
-+ _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesySo8NSObjectCyXA_AA0B7PrivacyVSStFAHSgycfu_TA.537
-+ _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesySo8NSObjectCyXA_AA0B7PrivacyVSStFAHSgycfu_TA.636
-+ _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesySo8NSObjectCyXA_AA0B7PrivacyVSStFAHSgycfu_TA.80
-+ _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesys5Error_pyXA_AA0B7PrivacyVSStFSo8NSObjectCycfu_TA.189
-+ _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesys5Error_pyXA_AA0B7PrivacyVSStFSo8NSObjectCycfu_TA.263
-+ _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesys5Error_pyXA_AA0B7PrivacyVSStFSo8NSObjectCycfu_TA.502
-+ _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesys5Error_pyXA_AA0B7PrivacyVSStFSo8NSObjectCycfu_TA.533
-+ _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesys5Error_pyXA_AA0B7PrivacyVSStFSo8NSObjectCycfu_TA.632
-+ _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesys5Error_pyXA_AA0B7PrivacyVSStFSo8NSObjectCycfu_TA.76
-+ _$s2os18OSLogInterpolationV06appendC0_7privacyySo8NSObjectCyXA_AA0B7PrivacyVtFAGSgycfu_TA.621
-+ _$s2os18OSLogInterpolationV06appendC0_7privacyySo8NSObjectCyXA_AA0B7PrivacyVtFAGSgycfu_TA.632
 + _$s8Dispatch0A3QoSV0B6SClassO7utilityyA2EmFWC
 + _$sSD5merge_16uniquingKeysWithySDyxq_Gn_q_q__q_tqd__YKXEtqd__YKs5ErrorRd__lFx_q_tx_q_tcfU_SS_SaySo16CSSearchableItemCGs5NeverOTg5
 + _$sSD7merging_16uniquingKeysWithSDyxq_GACn_q_q__q_tqd__YKXEtqd__YKs5ErrorRd__lFSS_SaySo16CSSearchableItemCGs5NeverOTg5016$s10OmniSearch11g42FetcherC15fetchSourceCSSI3forSDySSSaySo012F24C0CGGAH_tYaFA2H_AHtXEfU_Tf1ncn_nTm
@@ -1681,7 +1325,6 @@ Symbols:
 + _$sSDySSSaySo16CSSearchableItemCGGMd
 + _$sSDySSSaySo28CSPipelineCompletenessReportCGGMR
 + _$sSDySSSaySo28CSPipelineCompletenessReportCGGMd
-+ _$sSDySo21NSAttributedStringKeyaypGSo8_NSRangeVSpy10ObjectiveC8ObjCBoolVGIggyy_AceIIeggyy_TRTA.45
 + _$sSS6bundle_SS4nameSay10OmniSearch0D6ResultVG7resultstMR
 + _$sSS6bundle_SS4nameSay10OmniSearch0D6ResultVG7resultstMd
 + _$sSS_SaySo28CSPipelineCompletenessReportCGtMR
@@ -1755,46 +1398,6 @@ Symbols:
 + _$sSi5known_Si7needingtMd
 + _$sSi6offset_15OmniSearchTypes05BatchC4ItemV7elementtMR
 + _$sSi6offset_15OmniSearchTypes05BatchC4ItemV7elementtMd
-+ _$sSiIegd_SiIegr_TRTA.101
-+ _$sSiIegd_SiIegr_TRTA.1012
-+ _$sSiIegd_SiIegr_TRTA.1020
-+ _$sSiIegd_SiIegr_TRTA.1055
-+ _$sSiIegd_SiIegr_TRTA.1063
-+ _$sSiIegd_SiIegr_TRTA.107
-+ _$sSiIegd_SiIegr_TRTA.1071
-+ _$sSiIegd_SiIegr_TRTA.115
-+ _$sSiIegd_SiIegr_TRTA.132
-+ _$sSiIegd_SiIegr_TRTA.140
-+ _$sSiIegd_SiIegr_TRTA.148
-+ _$sSiIegd_SiIegr_TRTA.163
-+ _$sSiIegd_SiIegr_TRTA.267
-+ _$sSiIegd_SiIegr_TRTA.284
-+ _$sSiIegd_SiIegr_TRTA.292
-+ _$sSiIegd_SiIegr_TRTA.360
-+ _$sSiIegd_SiIegr_TRTA.367
-+ _$sSiIegd_SiIegr_TRTA.368
-+ _$sSiIegd_SiIegr_TRTA.387
-+ _$sSiIegd_SiIegr_TRTA.395
-+ _$sSiIegd_SiIegr_TRTA.41
-+ _$sSiIegd_SiIegr_TRTA.410
-+ _$sSiIegd_SiIegr_TRTA.418
-+ _$sSiIegd_SiIegr_TRTA.435
-+ _$sSiIegd_SiIegr_TRTA.440
-+ _$sSiIegd_SiIegr_TRTA.448
-+ _$sSiIegd_SiIegr_TRTA.451
-+ _$sSiIegd_SiIegr_TRTA.456
-+ _$sSiIegd_SiIegr_TRTA.464
-+ _$sSiIegd_SiIegr_TRTA.494
-+ _$sSiIegd_SiIegr_TRTA.595
-+ _$sSiIegd_SiIegr_TRTA.601
-+ _$sSiIegd_SiIegr_TRTA.609
-+ _$sSiIegd_SiIegr_TRTA.620
-+ _$sSiIegd_SiIegr_TRTA.768
-+ _$sSiIegd_SiIegr_TRTA.79
-+ _$sSiIegd_SiIegr_TRTA.854
-+ _$sSiIegd_SiIegr_TRTA.862
-+ _$sSiIegd_SiIegr_TRTA.906
-+ _$sSiIegd_SiIegr_TRTA.93
 + _$sSiIgd_SiIegr_TR0164$s10OmniSearch0aB7ServiceC05localB05query15typeConstraints7sources7options19requestedPropertiesAA0aB8ResponseCSg_AA9UserQueryVtAN_SayAA0B20EntityTypeConstraintOGAA0d12SourcesVAA0ad11OptionsVSayT35B15PropertyRequestVGtYaKFSiyXEfu20_Tf3npf_n
 + _$sSiIgd_SiIegr_TR0339$s10OmniSearch0aB7ServiceC14searchInternal33_07BE347A879194015ACD41574A0B76AALL5query15typeConstraints15matchedEntities7sources7options19requestedProperties18siriRequestContext012usingAgenticB0AA0aB8ResponseC_Scs8IteratorVy0aB5Types0B16StreamingMessageVyAOGs5Error_p_GSgtAA9UserQueryV_SayAA0B20EntityTypeConstraintOGSayAA11EntityMatchVGAA0d12SourcesVAA0aD97OptionsVSayAA0b8PropertyV0VG22IntelligenceFlowShared010StructuredW0V04SirivW0VSgSbtYaKFSiyXEfu22_Tf3npf_n
 + _$sSlsE3mapySayqd__Gqd__7ElementQzqd_0_YKXEqd_0_YKs5ErrorRd_0_r0_lFSay10OmniSearch19ChildAttachmentInfoVG_SSs5NeverOTg504$s15de229Types15LLMSearchResultV0aB0E06searchE012toolDatabase06entityC04apps15typeConstraints13visualContextACSgAD0bE0V_7ToolKit0oH0CSgSaySSGARSayAD0B20EntityTypeConstraintOGAD0bq6VisualN0CtYac33_33502D4E8B2A1AFC285785940C04AED0LlfcSSAD19fgH55Vcfu6_33_5663009776bf3fe502108fa802b32bfeAZSSTf3nnnpk_nTf1cn_n
@@ -1809,7 +1412,7 @@ Symbols:
 + _$sSo14NSUserDefaultsC10OmniSearchE010_localFindD6Method029_392571FD93D9AFA715E0DBA2B163I2C1LL_WZ
 + _$sSo14NSUserDefaultsC10OmniSearchE010_localFindD6Method029_392571FD93D9AFA715E0DBA2B163I2C1LL_Wz
 + _$sSo14NSUserDefaultsC10OmniSearchE09localFindD6MethodSSvMZ
-+ _$sSo14NSUserDefaultsC10OmniSearchE09localFindD6MethodSSvMZ.resume.0
++ _$sSo14NSUserDefaultsC10OmniSearchE09localFindD6MethodSSvMZ.resume
 + _$sSo14NSUserDefaultsC10OmniSearchE09localFindD6MethodSSvgZ
 + _$sSo14NSUserDefaultsC10OmniSearchE09localFindD6MethodSSvpZABmTk
 + _$sSo14NSUserDefaultsC10OmniSearchE09localFindD6MethodSSvpZMV
@@ -1942,25 +1545,6 @@ Symbols:
 + _$ss23_ContiguousArrayStorageCySS6bundle_SS4nameSay10OmniSearch0G6ResultVG7resultstGMd
 + _$ss2eeoiySbx_xtSYRzSQ8RawValueRpzlFSo27STSchemaSTSpotlightBundleIdV_Tgq5
 + _$ss2eeoiySbx_xtSYRzSQ8RawValueRpzlFSo37STSchemaSTSpotlightProcessingPipelineV_Tgq5
-+ _$ss5Int32VIegd_ABIegr_TRTA.1036
-+ _$ss5Int32VIegd_ABIegr_TRTA.123
-+ _$ss5Int32VIegd_ABIegr_TRTA.139
-+ _$ss5Int32VIegd_ABIegr_TRTA.155
-+ _$ss5Int32VIegd_ABIegr_TRTA.261
-+ _$ss5Int32VIegd_ABIegr_TRTA.324
-+ _$ss5Int32VIegd_ABIegr_TRTA.340
-+ _$ss5Int32VIegd_ABIegr_TRTA.359
-+ _$ss5Int32VIegd_ABIegr_TRTA.397
-+ _$ss5Int32VIegd_ABIegr_TRTA.46
-+ _$ss5Int32VIegd_ABIegr_TRTA.529
-+ _$ss5Int32VIegd_ABIegr_TRTA.548
-+ _$ss5Int32VIegd_ABIegr_TRTA.567
-+ _$ss5Int32VIegd_ABIegr_TRTA.671
-+ _$ss5Int32VIegd_ABIegr_TRTA.687
-+ _$ss5Int32VIegd_ABIegr_TRTA.703
-+ _$ss5Int32VIegd_ABIegr_TRTA.719
-+ _$ss5Int32VIegd_ABIegr_TRTA.741
-+ _$ss5Int32VIegd_ABIegr_TRTA.757
 + _$ss6HasherV8_combineyys6UInt32VF
 + _$ss6UInt64VSgML
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTR10Foundation4UUIDVSg2id_Say10OmniSearch0G6ResultVG7resultst_Tg5
@@ -1971,14 +1555,12 @@ Symbols:
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTR10Foundation4UUIDVSg2id_Say10OmniSearch0G6ResultVG7resultst_Tg5Tu
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSS_SaySo28CSPipelineCompletenessReportCGt_TG5
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSS_SaySo28CSPipelineCompletenessReportCGt_TG5TA
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSS_SaySo28CSPipelineCompletenessReportCGt_TG5TA.37
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSS_SaySo28CSPipelineCompletenessReportCGt_TG5TA.37TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSS_SaySo28CSPipelineCompletenessReportCGt_TG5TA.37Tu
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSS_SaySo28CSPipelineCompletenessReportCGt_TG5TATQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSS_SaySo28CSPipelineCompletenessReportCGt_TG5TATu
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSS_SaySo28CSPipelineCompletenessReportCGt_TG5TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSS_SaySo28CSPipelineCompletenessReportCGt_TG5Tu
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSi_10OmniSearch0D6ResultVt_Tg5TA.122
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSi_10OmniSearch0D6ResultVt_Tg5TA.122TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSi_10OmniSearch0D6ResultVt_Tg5TA.122Tu
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTR15OmniSearchTypes28IndexingPipelineCompletenessVSg_Tg5
@@ -1993,7 +1575,6 @@ Symbols:
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRSDySSSaySo28CSPipelineCompletenessReportCGG_TG5TATu
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRSDySSSaySo28CSPipelineCompletenessReportCGG_TG5TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRSDySSSaySo28CSPipelineCompletenessReportCGG_TG5Tu
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.349
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.349TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.349Tu
 + _$sxRi_zRi0_zlySdIsegr_SgWOe
@@ -2018,193 +1599,21 @@ Symbols:
 + _OUTLINED_FUNCTION_859
 + _SSGenerativeSearchBackendEnabled
 + __IVARS__TtC10OmniSearch11ItemFetcher
-+ ___swift__destructor.107
-+ ___swift__destructor.127
-+ ___swift__destructor.138
-+ ___swift__destructor.169
-+ ___swift__destructor.183
-+ ___swift__destructor.32
-+ ___swift__destructor.328
-+ ___swift__destructor.582
-+ ___swift__destructor.763
 + ___swift_assignWithCopy_strong
 + ___swift_assignWithTake_strong
-+ ___swift_closure_destructor.1001
-+ ___swift_closure_destructor.1004
-+ ___swift_closure_destructor.1010
-+ ___swift_closure_destructor.1014
-+ ___swift_closure_destructor.1018
-+ ___swift_closure_destructor.1022
-+ ___swift_closure_destructor.1026
-+ ___swift_closure_destructor.1030
-+ ___swift_closure_destructor.1034
-+ ___swift_closure_destructor.1038
-+ ___swift_closure_destructor.1044
-+ ___swift_closure_destructor.1050
-+ ___swift_closure_destructor.1053
-+ ___swift_closure_destructor.1057
-+ ___swift_closure_destructor.1061
-+ ___swift_closure_destructor.1065
-+ ___swift_closure_destructor.1069
-+ ___swift_closure_destructor.1073
 + ___swift_closure_destructor.159Tm
 + ___swift_closure_destructor.169Tm
 + ___swift_closure_destructor.18Tm
 + ___swift_closure_destructor.214Tm
 + ___swift_closure_destructor.234Tm
 + ___swift_closure_destructor.245Tm
-+ ___swift_closure_destructor.260
-+ ___swift_closure_destructor.264
-+ ___swift_closure_destructor.275
-+ ___swift_closure_destructor.279
-+ ___swift_closure_destructor.305
 + ___swift_closure_destructor.308Tm
 + ___swift_closure_destructor.310Tm
-+ ___swift_closure_destructor.311
-+ ___swift_closure_destructor.314
-+ ___swift_closure_destructor.318
-+ ___swift_closure_destructor.322
-+ ___swift_closure_destructor.324
-+ ___swift_closure_destructor.327
-+ ___swift_closure_destructor.336
-+ ___swift_closure_destructor.339
-+ ___swift_closure_destructor.343
-+ ___swift_closure_destructor.347
-+ ___swift_closure_destructor.348
-+ ___swift_closure_destructor.355
-+ ___swift_closure_destructor.362
-+ ___swift_closure_destructor.366
-+ ___swift_closure_destructor.370
-+ ___swift_closure_destructor.374
-+ ___swift_closure_destructor.383
 + ___swift_closure_destructor.390Tm
-+ ___swift_closure_destructor.391
-+ ___swift_closure_destructor.395
-+ ___swift_closure_destructor.397
-+ ___swift_closure_destructor.402
-+ ___swift_closure_destructor.405
-+ ___swift_closure_destructor.422
-+ ___swift_closure_destructor.432
-+ ___swift_closure_destructor.442
-+ ___swift_closure_destructor.446
-+ ___swift_closure_destructor.450
-+ ___swift_closure_destructor.453
-+ ___swift_closure_destructor.454
-+ ___swift_closure_destructor.462
-+ ___swift_closure_destructor.466
-+ ___swift_closure_destructor.478
-+ ___swift_closure_destructor.496
-+ ___swift_closure_destructor.500
-+ ___swift_closure_destructor.504
-+ ___swift_closure_destructor.512
-+ ___swift_closure_destructor.514
-+ ___swift_closure_destructor.565
-+ ___swift_closure_destructor.569
-+ ___swift_closure_destructor.572
-+ ___swift_closure_destructor.573
-+ ___swift_closure_destructor.576
-+ ___swift_closure_destructor.582
-+ ___swift_closure_destructor.590
-+ ___swift_closure_destructor.593
-+ ___swift_closure_destructor.597
-+ ___swift_closure_destructor.599
-+ ___swift_closure_destructor.603
-+ ___swift_closure_destructor.607
-+ ___swift_closure_destructor.611
-+ ___swift_closure_destructor.616
-+ ___swift_closure_destructor.619
-+ ___swift_closure_destructor.622
-+ ___swift_closure_destructor.630
-+ ___swift_closure_destructor.634
-+ ___swift_closure_destructor.644
 + ___swift_closure_destructor.644Tm
-+ ___swift_closure_destructor.655
-+ ___swift_closure_destructor.658
-+ ___swift_closure_destructor.662
-+ ___swift_closure_destructor.665
-+ ___swift_closure_destructor.668
-+ ___swift_closure_destructor.669
-+ ___swift_closure_destructor.672
-+ ___swift_closure_destructor.673
-+ ___swift_closure_destructor.676
-+ ___swift_closure_destructor.680
-+ ___swift_closure_destructor.684
-+ ___swift_closure_destructor.685
-+ ___swift_closure_destructor.688
-+ ___swift_closure_destructor.693
-+ ___swift_closure_destructor.697
-+ ___swift_closure_destructor.701
-+ ___swift_closure_destructor.704
-+ ___swift_closure_destructor.705
-+ ___swift_closure_destructor.709
-+ ___swift_closure_destructor.710
-+ ___swift_closure_destructor.713
-+ ___swift_closure_destructor.716
-+ ___swift_closure_destructor.717
 + ___swift_closure_destructor.71Tm
-+ ___swift_closure_destructor.720
-+ ___swift_closure_destructor.721
-+ ___swift_closure_destructor.724
-+ ___swift_closure_destructor.725
-+ ___swift_closure_destructor.728
-+ ___swift_closure_destructor.735
-+ ___swift_closure_destructor.740
-+ ___swift_closure_destructor.744
-+ ___swift_closure_destructor.748
-+ ___swift_closure_destructor.754
-+ ___swift_closure_destructor.755
-+ ___swift_closure_destructor.758
-+ ___swift_closure_destructor.762
-+ ___swift_closure_destructor.766
-+ ___swift_closure_destructor.770
-+ ___swift_closure_destructor.773
-+ ___swift_closure_destructor.774
-+ ___swift_closure_destructor.777
-+ ___swift_closure_destructor.781
-+ ___swift_closure_destructor.784
-+ ___swift_closure_destructor.785
-+ ___swift_closure_destructor.788
-+ ___swift_closure_destructor.789
-+ ___swift_closure_destructor.801
-+ ___swift_closure_destructor.804
-+ ___swift_closure_destructor.808
-+ ___swift_closure_destructor.812
-+ ___swift_closure_destructor.815
-+ ___swift_closure_destructor.818
-+ ___swift_closure_destructor.820
-+ ___swift_closure_destructor.822
-+ ___swift_closure_destructor.824
-+ ___swift_closure_destructor.838
-+ ___swift_closure_destructor.842
-+ ___swift_closure_destructor.846
-+ ___swift_closure_destructor.849
-+ ___swift_closure_destructor.852
-+ ___swift_closure_destructor.856
-+ ___swift_closure_destructor.860
-+ ___swift_closure_destructor.864
-+ ___swift_closure_destructor.868
 + ___swift_closure_destructor.868Tm
-+ ___swift_closure_destructor.882
-+ ___swift_closure_destructor.886
-+ ___swift_closure_destructor.890
-+ ___swift_closure_destructor.893
-+ ___swift_closure_destructor.896
-+ ___swift_closure_destructor.900
-+ ___swift_closure_destructor.904
-+ ___swift_closure_destructor.908
-+ ___swift_closure_destructor.912
-+ ___swift_closure_destructor.915
-+ ___swift_closure_destructor.918
-+ ___swift_closure_destructor.922
-+ ___swift_closure_destructor.926
-+ ___swift_closure_destructor.930
-+ ___swift_closure_destructor.934
-+ ___swift_closure_destructor.980
-+ ___swift_closure_destructor.989
-+ ___swift_closure_destructor.993
 + ___swift_destroy_strong
-+ ___swift_exist.box.addr_destructor.102
-+ ___swift_exist.box.addr_destructor.423
 + ___swift_get_extra_inhabitant_index.196Tm
 + ___swift_get_extra_inhabitant_index.223Tm
 + ___swift_get_extra_inhabitant_index.232Tm
@@ -2223,67 +1632,6 @@ Symbols:
 + _associated conformance 10OmniSearch13MetricsLoggerC9aggregate15pipelineReportsSaySo40STSchemaSTSpotlightIndexProcessingMetricCGSDySSSaySo28CSPipelineCompletenessReportCGG_tFZ08PipelineO3KeyL_VSHAASQ
 + _associated conformance So27STSchemaSTSpotlightBundleIdVSHSCSQ
 + _associated conformance So37STSchemaSTSpotlightProcessingPipelineVSHSCSQ
-+ _block_copy_helper.15
-+ _block_copy_helper.46
-+ _block_copy_helper.78
-+ _block_copy_helper.86
-+ _block_copy_helper.976
-+ _block_copy_helper.982
-+ _block_copy_helper.996
-+ _block_descriptor.17
-+ _block_descriptor.48
-+ _block_descriptor.80
-+ _block_descriptor.88
-+ _block_descriptor.978
-+ _block_descriptor.984
-+ _block_descriptor.998
-+ _block_destroy_helper.16
-+ _block_destroy_helper.47
-+ _block_destroy_helper.79
-+ _block_destroy_helper.87
-+ _block_destroy_helper.977
-+ _block_destroy_helper.983
-+ _block_destroy_helper.997
-+ _get_witness_table 10AppIntents21IntentResultContainerVySbs5NeverOA2EGAA12ReturnsValueHPyHC.9
-+ _objc_msgSend$allKnownItems
-+ _objc_msgSend$donationProgress
-+ _objc_msgSend$eligibleItems
-+ _objc_msgSend$fetchCompletenessReportsForPipeline:completionHandler:
-+ _objc_msgSend$fetchDonationProgressForBundles:completionHandler:
-+ _objc_msgSend$fetchPossibleTerritoriesForLocation:responseQueue:responseBlock:
-+ _objc_msgSend$fileItemID
-+ _objc_msgSend$fileProviderDomainIdentifier
-+ _objc_msgSend$fileProviderID
-+ _objc_msgSend$flightArrivalTimeZone
-+ _objc_msgSend$flightDepartureTimeZone
-+ _objc_msgSend$horizontalAccuracy
-+ _objc_msgSend$hotelTimeZone
-+ _objc_msgSend$initWithKey:ascending:
-+ _objc_msgSend$initWithPipelineName:bundleID:eligibleItems:pipelineCompleteness:pipelineCompletenessHeuristicScore:pipelineCompletenessFirstTimeBucket:pipelineCompletenessSecondBucket:pipelineCompletenessThirdBucket:
-+ _objc_msgSend$iso3166CountryCode2
-+ _objc_msgSend$itemsNeedingDonation
-+ _objc_msgSend$queryIdent
-+ _objc_msgSend$relatedUniqueIdentifier
-+ _objc_msgSend$setCanceled:
-+ _objc_msgSend$setFilterType:
-+ _objc_msgSend$setGeoSubSearchId:
-+ _objc_msgSend$setHorizontalAccuracy:
-+ _objc_msgSend$setHotelTimeZone:
-+ _objc_msgSend$setIndexProcessingMetrics:
-+ _objc_msgSend$setIsLocationAvailable:
-+ _objc_msgSend$setIsLocationSharingReprompt:
-+ _objc_msgSend$setIsSearchAlongRoute:
-+ _objc_msgSend$setPipeline:
-+ _objc_msgSend$setProcessCompleteness:
-+ _objc_msgSend$setRequestPayloadSizeInKb:
-+ _objc_msgSend$setResponsePayloadSizeInKb:
-+ _objc_msgSend$setSearchQueryResultTypes:
-+ _objc_msgSend$setSortDescriptors:
-+ _objc_msgSend$setStGeoServicesSearchContext:
-+ _objc_msgSend$setSubSearchResults:
-+ _objc_msgSend$setSubSearches:
-+ _objc_msgSend$setTotalResultCount:
-+ _objc_msgSend$status
 + _swift_asyncLet_begin
 + _swift_asyncLet_finish
 + _swift_asyncLet_get
@@ -2461,13 +1809,12 @@ Symbols:
 - _$s10OmniSearch05LocalB7ServiceV6search5query7sources15typeConstraints0E7OptionsAA0bD6ResultVAA9UserQueryV_AA0B7SourcesVSayAA0B20EntityTypeConstraintOGAA0abJ0VtYaKFyyYacfU0_Tu
 - _$s10OmniSearch06GlobalB6ClientC05batchB05items13searchOptions20SiriInformationTypes19PommesBatchResponseVSay0abK00mB4ItemVG_AA0abH0VtYaKFSiycfu0_TA
 - _$s10OmniSearch06GlobalB6ClientC07agenticB05query7sources15typeConstraints13searchOptions18siriRequestContext0aB5Types0B17StreamingResponseVyAA0abQ0CGAA9UserQueryV_AA0B7SourcesVSayAA0B20EntityTypeConstraintOGAA0abK0V22IntelligenceFlowShared010StructuredN0V04SirimN0VSgtYaKFyyYacfU_TY18_
-- _$s10OmniSearch08PhotoKitB7ServiceV019constructAttributedB6String3for10ecrResults13groundingInfo7optionsSo012NSAttributedH0CAA9UserQueryV_SDyS2SGSgSDySSSDySo0oH3KeyaypGGSgAA0aB7OptionsVSgtYaFyAQ_So8_NSRangeVSpy10ObjectiveC8ObjCBoolVGtXEfU_TA.26
 - _$s10OmniSearch08PhotoKitB7ServiceV6search5query7sources15typeConstraints0F7OptionsAA0bE6ResultVAA9UserQueryV_AA0B7SourcesVSayAA0B20EntityTypeConstraintOGAA0abK0VtYaKFSSycfu_
 - _$s10OmniSearch08PhotoKitB7ServiceV6search5query7sources15typeConstraints0F7OptionsAA0bE6ResultVAA9UserQueryV_AA0B7SourcesVSayAA0B20EntityTypeConstraintOGAA0abK0VtYaKFSSycfu_TA
 - _$s10OmniSearch0B11ToolControlV10$useMiniMC10AppIntents15IntentParameterCySbSgGvg
 - _$s10OmniSearch0B11ToolControlV10$useMiniMC10AppIntents15IntentParameterCySbSgGvpMV
 - _$s10OmniSearch0B11ToolControlV13originatorPIDSiSgvM
-- _$s10OmniSearch0B11ToolControlV13originatorPIDSiSgvM.resume.0
+- _$s10OmniSearch0B11ToolControlV13originatorPIDSiSgvM.resume
 - _$s10OmniSearch0B11ToolControlV13originatorPIDSiSgvg
 - _$s10OmniSearch0B11ToolControlV13originatorPIDSiSgvpACTK
 - _$s10OmniSearch0B11ToolControlV13originatorPIDSiSgvpACTk
@@ -2477,7 +1824,7 @@ Symbols:
 - _$s10OmniSearch0B11ToolControlV14$originatorPID10AppIntents15IntentParameterCySiSgGvpMV
 - _$s10OmniSearch0B11ToolControlV7commandSSvM.resume.0Tm
 - _$s10OmniSearch0B11ToolControlV9useMiniMCSbSgvM
-- _$s10OmniSearch0B11ToolControlV9useMiniMCSbSgvM.resume.0
+- _$s10OmniSearch0B11ToolControlV9useMiniMCSbSgvM.resume
 - _$s10OmniSearch0B11ToolControlV9useMiniMCSbSgvg
 - _$s10OmniSearch0B11ToolControlV9useMiniMCSbSgvpACTK
 - _$s10OmniSearch0B11ToolControlV9useMiniMCSbSgvpMV
@@ -2509,7 +1856,7 @@ Symbols:
 - _$s10OmniSearch0B15ToolMCGroundingV10AppIntents24PersistentlyIdentifiableAAMcMK
 - _$s10OmniSearch0B15ToolMCGroundingV10AppIntents24PersistentlyIdentifiableAadEP20persistentIdentifierSSvgZTW
 - _$s10OmniSearch0B15ToolMCGroundingV10rawQueriesSaySSGvM
-- _$s10OmniSearch0B15ToolMCGroundingV10rawQueriesSaySSGvM.resume.0
+- _$s10OmniSearch0B15ToolMCGroundingV10rawQueriesSaySSGvM.resume
 - _$s10OmniSearch0B15ToolMCGroundingV10rawQueriesSaySSGvM.resume.0Tm
 - _$s10OmniSearch0B15ToolMCGroundingV10rawQueriesSaySSGvg
 - _$s10OmniSearch0B15ToolMCGroundingV10rawQueriesSaySSGvpACTK
@@ -2519,7 +1866,7 @@ Symbols:
 - _$s10OmniSearch0B15ToolMCGroundingV11$rawQueries10AppIntents15IntentParameterCySaySSGGvg
 - _$s10OmniSearch0B15ToolMCGroundingV11$rawQueries10AppIntents15IntentParameterCySaySSGGvpMV
 - _$s10OmniSearch0B15ToolMCGroundingV11description10AppIntents17IntentDescriptionVvMZ
-- _$s10OmniSearch0B15ToolMCGroundingV11description10AppIntents17IntentDescriptionVvMZ.resume.0
+- _$s10OmniSearch0B15ToolMCGroundingV11description10AppIntents17IntentDescriptionVvMZ.resume
 - _$s10OmniSearch0B15ToolMCGroundingV11description10AppIntents17IntentDescriptionVvau
 - _$s10OmniSearch0B15ToolMCGroundingV11description10AppIntents17IntentDescriptionVvgZ
 - _$s10OmniSearch0B15ToolMCGroundingV11description10AppIntents17IntentDescriptionVvpZ
@@ -2530,7 +1877,7 @@ Symbols:
 - _$s10OmniSearch0B15ToolMCGroundingV11description_WZ
 - _$s10OmniSearch0B15ToolMCGroundingV11description_Wz
 - _$s10OmniSearch0B15ToolMCGroundingV14isDiscoverableSbvMZ
-- _$s10OmniSearch0B15ToolMCGroundingV14isDiscoverableSbvMZ.resume.0
+- _$s10OmniSearch0B15ToolMCGroundingV14isDiscoverableSbvMZ.resume
 - _$s10OmniSearch0B15ToolMCGroundingV14isDiscoverableSbvgZ
 - _$s10OmniSearch0B15ToolMCGroundingV14isDiscoverableSbvpZ
 - _$s10OmniSearch0B15ToolMCGroundingV14isDiscoverableSbvpZACmTK
@@ -2552,7 +1899,7 @@ Symbols:
 - _$s10OmniSearch0B15ToolMCGroundingV7performQryYaKFTY3_
 - _$s10OmniSearch0B15ToolMCGroundingV7performQryYaKFTu
 - _$s10OmniSearch0B15ToolMCGroundingV8quParsesSaySSGvM
-- _$s10OmniSearch0B15ToolMCGroundingV8quParsesSaySSGvM.resume.0
+- _$s10OmniSearch0B15ToolMCGroundingV8quParsesSaySSGvM.resume
 - _$s10OmniSearch0B15ToolMCGroundingV8quParsesSaySSGvg
 - _$s10OmniSearch0B15ToolMCGroundingV8quParsesSaySSGvpACTK
 - _$s10OmniSearch0B15ToolMCGroundingV8quParsesSaySSGvpACTk
@@ -2610,14 +1957,14 @@ Symbols:
 - _$s10OmniSearch0B8ToolMCQUV10AppIntents24PersistentlyIdentifiableAAMcMK
 - _$s10OmniSearch0B8ToolMCQUV10AppIntents24PersistentlyIdentifiableAadEP20persistentIdentifierSSvgZTW
 - _$s10OmniSearch0B8ToolMCQUV11currentTimeSSSgvM
-- _$s10OmniSearch0B8ToolMCQUV11currentTimeSSSgvM.resume.0
+- _$s10OmniSearch0B8ToolMCQUV11currentTimeSSSgvM.resume
 - _$s10OmniSearch0B8ToolMCQUV11currentTimeSSSgvg
 - _$s10OmniSearch0B8ToolMCQUV11currentTimeSSSgvpACTK
 - _$s10OmniSearch0B8ToolMCQUV11currentTimeSSSgvpACTk
 - _$s10OmniSearch0B8ToolMCQUV11currentTimeSSSgvpMV
 - _$s10OmniSearch0B8ToolMCQUV11currentTimeSSSgvs
 - _$s10OmniSearch0B8ToolMCQUV11description10AppIntents17IntentDescriptionVvMZ
-- _$s10OmniSearch0B8ToolMCQUV11description10AppIntents17IntentDescriptionVvMZ.resume.0
+- _$s10OmniSearch0B8ToolMCQUV11description10AppIntents17IntentDescriptionVvMZ.resume
 - _$s10OmniSearch0B8ToolMCQUV11description10AppIntents17IntentDescriptionVvau
 - _$s10OmniSearch0B8ToolMCQUV11description10AppIntents17IntentDescriptionVvgZ
 - _$s10OmniSearch0B8ToolMCQUV11description10AppIntents17IntentDescriptionVvpZ
@@ -2628,7 +1975,7 @@ Symbols:
 - _$s10OmniSearch0B8ToolMCQUV11description_WZ
 - _$s10OmniSearch0B8ToolMCQUV11description_Wz
 - _$s10OmniSearch0B8ToolMCQUV11personNamesSaySSGSgvM
-- _$s10OmniSearch0B8ToolMCQUV11personNamesSaySSGSgvM.resume.0
+- _$s10OmniSearch0B8ToolMCQUV11personNamesSaySSGSgvM.resume
 - _$s10OmniSearch0B8ToolMCQUV11personNamesSaySSGSgvg
 - _$s10OmniSearch0B8ToolMCQUV11personNamesSaySSGSgvpACTKTm
 - _$s10OmniSearch0B8ToolMCQUV11personNamesSaySSGSgvpACTk
@@ -2639,7 +1986,7 @@ Symbols:
 - _$s10OmniSearch0B8ToolMCQUV12$personNames10AppIntents15IntentParameterCySaySSGSgGvg
 - _$s10OmniSearch0B8ToolMCQUV12$personNames10AppIntents15IntentParameterCySaySSGSgGvpMV
 - _$s10OmniSearch0B8ToolMCQUV13originatorPIDSivM
-- _$s10OmniSearch0B8ToolMCQUV13originatorPIDSivM.resume.0
+- _$s10OmniSearch0B8ToolMCQUV13originatorPIDSivM.resume
 - _$s10OmniSearch0B8ToolMCQUV13originatorPIDSivg
 - _$s10OmniSearch0B8ToolMCQUV13originatorPIDSivpACTK
 - _$s10OmniSearch0B8ToolMCQUV13originatorPIDSivpMV
@@ -2647,7 +1994,7 @@ Symbols:
 - _$s10OmniSearch0B8ToolMCQUV14$originatorPID10AppIntents15IntentParameterCySiGvg
 - _$s10OmniSearch0B8ToolMCQUV14$originatorPID10AppIntents15IntentParameterCySiGvpMV
 - _$s10OmniSearch0B8ToolMCQUV14isDiscoverableSbvMZ
-- _$s10OmniSearch0B8ToolMCQUV14isDiscoverableSbvMZ.resume.0
+- _$s10OmniSearch0B8ToolMCQUV14isDiscoverableSbvMZ.resume
 - _$s10OmniSearch0B8ToolMCQUV14isDiscoverableSbvgZ
 - _$s10OmniSearch0B8ToolMCQUV14isDiscoverableSbvpZ
 - _$s10OmniSearch0B8ToolMCQUV14isDiscoverableSbvpZACmTK
@@ -2657,7 +2004,7 @@ Symbols:
 - _$s10OmniSearch0B8ToolMCQUV14openAppWhenRunSbvgZ
 - _$s10OmniSearch0B8ToolMCQUV14openAppWhenRunSbvpZMV
 - _$s10OmniSearch0B8ToolMCQUV5querySSvM
-- _$s10OmniSearch0B8ToolMCQUV5querySSvM.resume.0
+- _$s10OmniSearch0B8ToolMCQUV5querySSvM.resume
 - _$s10OmniSearch0B8ToolMCQUV5querySSvM.resume.0Tm
 - _$s10OmniSearch0B8ToolMCQUV5querySSvg
 - _$s10OmniSearch0B8ToolMCQUV5querySSvpACTK
@@ -2679,7 +2026,7 @@ Symbols:
 - _$s10OmniSearch0B8ToolMCQUV7performQryYaKFTY3_
 - _$s10OmniSearch0B8ToolMCQUV7performQryYaKFTu
 - _$s10OmniSearch0B8ToolMCQUV8petNamesSaySSGSgvM
-- _$s10OmniSearch0B8ToolMCQUV8petNamesSaySSGSgvM.resume.0
+- _$s10OmniSearch0B8ToolMCQUV8petNamesSaySSGSgvM.resume
 - _$s10OmniSearch0B8ToolMCQUV8petNamesSaySSGSgvg
 - _$s10OmniSearch0B8ToolMCQUV8petNamesSaySSGSgvpACTk
 - _$s10OmniSearch0B8ToolMCQUV8petNamesSaySSGSgvpMV
@@ -2687,13 +2034,13 @@ Symbols:
 - _$s10OmniSearch0B8ToolMCQUV9$petNames10AppIntents15IntentParameterCySaySSGSgGvg
 - _$s10OmniSearch0B8ToolMCQUV9$petNames10AppIntents15IntentParameterCySaySSGSgGvpMV
 - _$s10OmniSearch0B8ToolMCQUV9locationsSaySSGSgvM
-- _$s10OmniSearch0B8ToolMCQUV9locationsSaySSGSgvM.resume.0
+- _$s10OmniSearch0B8ToolMCQUV9locationsSaySSGSgvM.resume
 - _$s10OmniSearch0B8ToolMCQUV9locationsSaySSGSgvg
 - _$s10OmniSearch0B8ToolMCQUV9locationsSaySSGSgvpACTk
 - _$s10OmniSearch0B8ToolMCQUV9locationsSaySSGSgvpMV
 - _$s10OmniSearch0B8ToolMCQUV9locationsSaySSGSgvs
 - _$s10OmniSearch0B8ToolMCQUV9useMiniMCSbSgvM
-- _$s10OmniSearch0B8ToolMCQUV9useMiniMCSbSgvM.resume.0
+- _$s10OmniSearch0B8ToolMCQUV9useMiniMCSbSgvM.resume
 - _$s10OmniSearch0B8ToolMCQUV9useMiniMCSbSgvg
 - _$s10OmniSearch0B8ToolMCQUV9useMiniMCSbSgvpACTK
 - _$s10OmniSearch0B8ToolMCQUV9useMiniMCSbSgvpMV
@@ -2885,7 +2232,6 @@ Symbols:
 - _$s10OmniSearch13MetricsLoggerC014logBatchGlobalB5Ended12searchToolId13batchResponseySSSg_10PegasusAPI033Apple_Parsec_Sam_V1alpha_SAMBatchbM0VSgtFTq
 - _$s10OmniSearch13MetricsLoggerC014logBatchGlobalB5Ended12searchToolId13batchResponseySSSg_10PegasusAPI033Apple_Parsec_Sam_V1alpha_SAMBatchbM0VSgtFySo15STSchemaSTEventCXEfU_
 - _$s10OmniSearch13MetricsLoggerC014logBatchGlobalB5Ended12searchToolId13batchResponseySSSg_10PegasusAPI033Apple_Parsec_Sam_V1alpha_SAMBatchbM0VSgtFySo15STSchemaSTEventCXEfU_TA
-- _$s10OmniSearch13MetricsLoggerC014logBatchGlobalB5Ended12searchToolId13batchResponseySSSg_10PegasusAPI033Apple_Parsec_Sam_V1alpha_SAMBatchbM0VSgtFySo15STSchemaSTEventCXEfU_TA.288
 - _$s10OmniSearch13MetricsLoggerC014logBatchGlobalB7Started12searchToolId5items8queryIDsySSSg_Say0aB5Types0fB4ItemVGSay10Foundation4UUIDVGtF
 - _$s10OmniSearch13MetricsLoggerC014logBatchGlobalB7Started12searchToolId5items8queryIDsySSSg_Say0aB5Types0fB4ItemVGSay10Foundation4UUIDVGtFTj
 - _$s10OmniSearch13MetricsLoggerC014logBatchGlobalB7Started12searchToolId5items8queryIDsySSSg_Say0aB5Types0fB4ItemVGSay10Foundation4UUIDVGtFTq
@@ -2895,11 +2241,6 @@ Symbols:
 - _$s10OmniSearch13MetricsLoggerC09logGlobalB5Ended12searchToolId03samB8ResponseySSSg_10PegasusAPI034Apple_Parsec_Sam_V1alpha_SAMSearchL0VSgtFTq
 - _$s10OmniSearch13MetricsLoggerC09logGlobalB5Ended12searchToolId03samB8ResponseySSSg_10PegasusAPI034Apple_Parsec_Sam_V1alpha_SAMSearchL0VSgtFySo15STSchemaSTEventCXEfU_
 - _$s10OmniSearch13MetricsLoggerC09logGlobalB5Ended12searchToolId03samB8ResponseySSSg_10PegasusAPI034Apple_Parsec_Sam_V1alpha_SAMSearchL0VSgtFySo15STSchemaSTEventCXEfU_TA
-- _$s10OmniSearch13MetricsLoggerC09logGlobalB5Ended12searchToolId03samB8ResponseySSSg_10PegasusAPI034Apple_Parsec_Sam_V1alpha_SAMSearchL0VSgtFySo15STSchemaSTEventCXEfU_TA.181
-- _$s10OmniSearch13MetricsLoggerC09logGlobalB5Ended12searchToolId03samB8ResponseySSSg_10PegasusAPI034Apple_Parsec_Sam_V1alpha_SAMSearchL0VSgtFySo15STSchemaSTEventCXEfU_TA.231
-- _$s10OmniSearch13MetricsLoggerC09logGlobalB5Ended12searchToolId03samB8ResponseySSSg_10PegasusAPI034Apple_Parsec_Sam_V1alpha_SAMSearchL0VSgtFySo15STSchemaSTEventCXEfU_TA.242
-- _$s10OmniSearch13MetricsLoggerC09logGlobalB5Ended12searchToolId03samB8ResponseySSSg_10PegasusAPI034Apple_Parsec_Sam_V1alpha_SAMSearchL0VSgtFySo15STSchemaSTEventCXEfU_TA.27
-- _$s10OmniSearch13MetricsLoggerC09logGlobalB5Ended12searchToolId03samB8ResponseySSSg_10PegasusAPI034Apple_Parsec_Sam_V1alpha_SAMSearchL0VSgtFySo15STSchemaSTEventCXEfU_TA.77
 - _$s10OmniSearch13MetricsLoggerC09logGlobalB7Started12searchToolIdySSSg_tF
 - _$s10OmniSearch13MetricsLoggerC09logGlobalB7Started12searchToolIdySSSg_tFTj
 - _$s10OmniSearch13MetricsLoggerC09logGlobalB7Started12searchToolIdySSSg_tFTq
@@ -2983,12 +2324,12 @@ Symbols:
 - _$s10OmniSearch21SpotlightIndexRequestV9userQuery13targetMatches9spQUParse15typeConstraints19toolParameterTuples6locale9isCarPlay11offlineMode11entityTypes4apps0R14ReadingPurpose24maxResultsCountPerBundle13excludePhotos19currentTimeOverrideACSS_SiSgSo9SPQUParseCSgSayAA0B20EntityTypeConstraintOGSayAA04ToolO5TupleVGSSSgS2bSaySSGA1_SbARSb10Foundation4DateVSgtcfcfA9_
 - _$s10OmniSearch22HotelReservationEntityV18confirmationNumber5guest15bookingProvider12businessName11roomNumbers7address15checkInDateTime0p3OutrS005phoneG03urlACSSSg_A3NSaySSGAN10Foundation0R10ComponentsVSgAsnP3URLVSgtcfC
 - _$s10OmniSearch22MemoryCreationQUResultV07encodedcD20QUPerformanceMetrics10AppIntents10IntentFileVSgvM
-- _$s10OmniSearch22MemoryCreationQUResultV07encodedcD20QUPerformanceMetrics10AppIntents10IntentFileVSgvM.resume.0
+- _$s10OmniSearch22MemoryCreationQUResultV07encodedcD20QUPerformanceMetrics10AppIntents10IntentFileVSgvM.resume
 - _$s10OmniSearch22MemoryCreationQUResultV07encodedcD20QUPerformanceMetrics10AppIntents10IntentFileVSgvg
 - _$s10OmniSearch22MemoryCreationQUResultV07encodedcD20QUPerformanceMetrics10AppIntents10IntentFileVSgvpMV
 - _$s10OmniSearch22MemoryCreationQUResultV07encodedcD20QUPerformanceMetrics10AppIntents10IntentFileVSgvs
 - _$s10OmniSearch22MemoryCreationQUResultV07encodedcD7QUParse10AppIntents10IntentFileVSgvM
-- _$s10OmniSearch22MemoryCreationQUResultV07encodedcD7QUParse10AppIntents10IntentFileVSgvM.resume.0
+- _$s10OmniSearch22MemoryCreationQUResultV07encodedcD7QUParse10AppIntents10IntentFileVSgvM.resume
 - _$s10OmniSearch22MemoryCreationQUResultV07encodedcD7QUParse10AppIntents10IntentFileVSgvg
 - _$s10OmniSearch22MemoryCreationQUResultV07encodedcD7QUParse10AppIntents10IntentFileVSgvpACTkTm
 - _$s10OmniSearch22MemoryCreationQUResultV07encodedcD7QUParse10AppIntents10IntentFileVSgvpMV
@@ -3043,12 +2384,12 @@ Symbols:
 - _$s10OmniSearch22MemoryCreationQUResultV10Foundation40CustomLocalizedStringResourceConvertibleAAMcMK
 - _$s10OmniSearch22MemoryCreationQUResultV10Foundation40CustomLocalizedStringResourceConvertibleAadEP09localizediJ0AD0hiJ0VvgTW
 - _$s10OmniSearch22MemoryCreationQUResultV21displayRepresentation10AppIntents07DisplayG0VvM
-- _$s10OmniSearch22MemoryCreationQUResultV21displayRepresentation10AppIntents07DisplayG0VvM.resume.0
+- _$s10OmniSearch22MemoryCreationQUResultV21displayRepresentation10AppIntents07DisplayG0VvM.resume
 - _$s10OmniSearch22MemoryCreationQUResultV21displayRepresentation10AppIntents07DisplayG0Vvg
 - _$s10OmniSearch22MemoryCreationQUResultV21displayRepresentation10AppIntents07DisplayG0VvpMV
 - _$s10OmniSearch22MemoryCreationQUResultV21displayRepresentation10AppIntents07DisplayG0Vvs
 - _$s10OmniSearch22MemoryCreationQUResultV25typeDisplayRepresentation10AppIntents04TypegH0VvMZ
-- _$s10OmniSearch22MemoryCreationQUResultV25typeDisplayRepresentation10AppIntents04TypegH0VvMZ.resume.0
+- _$s10OmniSearch22MemoryCreationQUResultV25typeDisplayRepresentation10AppIntents04TypegH0VvMZ.resume
 - _$s10OmniSearch22MemoryCreationQUResultV25typeDisplayRepresentation10AppIntents04TypegH0Vvau
 - _$s10OmniSearch22MemoryCreationQUResultV25typeDisplayRepresentation10AppIntents04TypegH0VvgZ
 - _$s10OmniSearch22MemoryCreationQUResultV25typeDisplayRepresentation10AppIntents04TypegH0VvpZ
@@ -3060,7 +2401,7 @@ Symbols:
 - _$s10OmniSearch22MemoryCreationQUResultV25typeDisplayRepresentation_Wz
 - _$s10OmniSearch22MemoryCreationQUResultV5parse18performanceMetricsACSg0aB5Types0cD7QUParseC_AG0cd13QUPerformanceH0CtcfC
 - _$s10OmniSearch22MemoryCreationQUResultV7versionSivM
-- _$s10OmniSearch22MemoryCreationQUResultV7versionSivM.resume.0
+- _$s10OmniSearch22MemoryCreationQUResultV7versionSivM.resume
 - _$s10OmniSearch22MemoryCreationQUResultV7versionSivM.resume.0Tm
 - _$s10OmniSearch22MemoryCreationQUResultV7versionSivg
 - _$s10OmniSearch22MemoryCreationQUResultV7versionSivpMV
@@ -3135,7 +2476,7 @@ Symbols:
 - _$s10OmniSearch25MemoryCreationQueryParserCfD
 - _$s10OmniSearch25MemoryCreationQueryParserCfd
 - _$s10OmniSearch26MemoryCreationQUControllerC11queryParserAA014SpotlightQueryG8Protocol_pvM
-- _$s10OmniSearch26MemoryCreationQUControllerC11queryParserAA014SpotlightQueryG8Protocol_pvM.resume.0
+- _$s10OmniSearch26MemoryCreationQUControllerC11queryParserAA014SpotlightQueryG8Protocol_pvM.resume
 - _$s10OmniSearch26MemoryCreationQUControllerC11queryParserAA014SpotlightQueryG8Protocol_pvMTj
 - _$s10OmniSearch26MemoryCreationQUControllerC11queryParserAA014SpotlightQueryG8Protocol_pvMTq
 - _$s10OmniSearch26MemoryCreationQUControllerC11queryParserAA014SpotlightQueryG8Protocol_pvg
@@ -3186,7 +2527,7 @@ Symbols:
 - _$s10OmniSearch26MemoryCreationQUControllerC19llmQUNetworkService9ecrClient11queryParserAcA0cdgH8Protocol_p_AA09ECRClientM0_pSgAA014SpotlightQuerylM0_ptcfcfA1_
 - _$s10OmniSearch26MemoryCreationQUControllerC19llmQUNetworkService9ecrClient11queryParserAcA0cdgH8Protocol_p_AA09ECRClientM0_pSgAA014SpotlightQuerylM0_ptcfcfA_
 - _$s10OmniSearch26MemoryCreationQUControllerC19llmQUNetworkServiceAA0cdgH8Protocol_pvM
-- _$s10OmniSearch26MemoryCreationQUControllerC19llmQUNetworkServiceAA0cdgH8Protocol_pvM.resume.0
+- _$s10OmniSearch26MemoryCreationQUControllerC19llmQUNetworkServiceAA0cdgH8Protocol_pvM.resume
 - _$s10OmniSearch26MemoryCreationQUControllerC19llmQUNetworkServiceAA0cdgH8Protocol_pvMTj
 - _$s10OmniSearch26MemoryCreationQUControllerC19llmQUNetworkServiceAA0cdgH8Protocol_pvMTq
 - _$s10OmniSearch26MemoryCreationQUControllerC19llmQUNetworkServiceAA0cdgH8Protocol_pvg
@@ -3251,7 +2592,7 @@ Symbols:
 - _$s10OmniSearch26MemoryCreationQUControllerC7prewarm13originatorPID9modelTypeySi_0aB5Types0cd5ModelJ0OSgtFTj
 - _$s10OmniSearch26MemoryCreationQUControllerC7prewarm13originatorPID9modelTypeySi_0aB5Types0cd5ModelJ0OSgtFTq
 - _$s10OmniSearch26MemoryCreationQUControllerC9ecrClientAA17ECRClientProtocol_pSgvM
-- _$s10OmniSearch26MemoryCreationQUControllerC9ecrClientAA17ECRClientProtocol_pSgvM.resume.0
+- _$s10OmniSearch26MemoryCreationQUControllerC9ecrClientAA17ECRClientProtocol_pSgvM.resume
 - _$s10OmniSearch26MemoryCreationQUControllerC9ecrClientAA17ECRClientProtocol_pSgvMTj
 - _$s10OmniSearch26MemoryCreationQUControllerC9ecrClientAA17ECRClientProtocol_pSgvMTq
 - _$s10OmniSearch26MemoryCreationQUControllerC9ecrClientAA17ECRClientProtocol_pSgvg
@@ -3341,7 +2682,7 @@ Symbols:
 - _$s10OmniSearch29MemoryCreationQUModelResponseV10CodingKeys33_9A21FF80BB8A4E7A5E6AA404E0FBDFAFLLOwup
 - _$s10OmniSearch29MemoryCreationQUModelResponseV10jsonStringACSS_tKcfC
 - _$s10OmniSearch29MemoryCreationQUModelResponseV10sort_orderSDySSSaySSGGvM
-- _$s10OmniSearch29MemoryCreationQUModelResponseV10sort_orderSDySSSaySSGGvM.resume.0
+- _$s10OmniSearch29MemoryCreationQUModelResponseV10sort_orderSDySSSaySSGGvM.resume
 - _$s10OmniSearch29MemoryCreationQUModelResponseV10sort_orderSDySSSaySSGGvg
 - _$s10OmniSearch29MemoryCreationQUModelResponseV10sort_orderSDySSSaySSGGvpMV
 - _$s10OmniSearch29MemoryCreationQUModelResponseV10sort_orderSDySSSaySSGGvs
@@ -3361,39 +2702,39 @@ Symbols:
 - _$s10OmniSearch29MemoryCreationQUModelResponseV3who4what4when5where5music4mood10sort_order4trip8all_timeACSDySSSaySSGG_A3nA0cdeF5MusicVA2NS2StcfcfA7_
 - _$s10OmniSearch29MemoryCreationQUModelResponseV3who4what4when5where5music4mood10sort_order4trip8all_timeACSDySSSaySSGG_A3nA0cdeF5MusicVA2NS2StcfcfA_
 - _$s10OmniSearch29MemoryCreationQUModelResponseV3whoSDySSSaySSGGvM
-- _$s10OmniSearch29MemoryCreationQUModelResponseV3whoSDySSSaySSGGvM.resume.0
+- _$s10OmniSearch29MemoryCreationQUModelResponseV3whoSDySSSaySSGGvM.resume
 - _$s10OmniSearch29MemoryCreationQUModelResponseV3whoSDySSSaySSGGvg
 - _$s10OmniSearch29MemoryCreationQUModelResponseV3whoSDySSSaySSGGvpMV
 - _$s10OmniSearch29MemoryCreationQUModelResponseV3whoSDySSSaySSGGvs
 - _$s10OmniSearch29MemoryCreationQUModelResponseV4fromAC29GenerativeFunctionsFoundation15GeneratedValuesV_tKcfC
 - _$s10OmniSearch29MemoryCreationQUModelResponseV4fromACs7Decoder_p_tKcfC
 - _$s10OmniSearch29MemoryCreationQUModelResponseV4moodSDySSSaySSGGvM
-- _$s10OmniSearch29MemoryCreationQUModelResponseV4moodSDySSSaySSGGvM.resume.0
+- _$s10OmniSearch29MemoryCreationQUModelResponseV4moodSDySSSaySSGGvM.resume
 - _$s10OmniSearch29MemoryCreationQUModelResponseV4moodSDySSSaySSGGvg
 - _$s10OmniSearch29MemoryCreationQUModelResponseV4moodSDySSSaySSGGvpMV
 - _$s10OmniSearch29MemoryCreationQUModelResponseV4moodSDySSSaySSGGvs
 - _$s10OmniSearch29MemoryCreationQUModelResponseV4tripSSvM
-- _$s10OmniSearch29MemoryCreationQUModelResponseV4tripSSvM.resume.0
+- _$s10OmniSearch29MemoryCreationQUModelResponseV4tripSSvM.resume
 - _$s10OmniSearch29MemoryCreationQUModelResponseV4tripSSvg
 - _$s10OmniSearch29MemoryCreationQUModelResponseV4tripSSvpMV
 - _$s10OmniSearch29MemoryCreationQUModelResponseV4tripSSvs
 - _$s10OmniSearch29MemoryCreationQUModelResponseV4whatSDySSSaySSGGvM
-- _$s10OmniSearch29MemoryCreationQUModelResponseV4whatSDySSSaySSGGvM.resume.0
+- _$s10OmniSearch29MemoryCreationQUModelResponseV4whatSDySSSaySSGGvM.resume
 - _$s10OmniSearch29MemoryCreationQUModelResponseV4whatSDySSSaySSGGvg
 - _$s10OmniSearch29MemoryCreationQUModelResponseV4whatSDySSSaySSGGvpMV
 - _$s10OmniSearch29MemoryCreationQUModelResponseV4whatSDySSSaySSGGvs
 - _$s10OmniSearch29MemoryCreationQUModelResponseV4whenSDySSSaySSGGvM
-- _$s10OmniSearch29MemoryCreationQUModelResponseV4whenSDySSSaySSGGvM.resume.0
+- _$s10OmniSearch29MemoryCreationQUModelResponseV4whenSDySSSaySSGGvM.resume
 - _$s10OmniSearch29MemoryCreationQUModelResponseV4whenSDySSSaySSGGvg
 - _$s10OmniSearch29MemoryCreationQUModelResponseV4whenSDySSSaySSGGvpMV
 - _$s10OmniSearch29MemoryCreationQUModelResponseV4whenSDySSSaySSGGvs
 - _$s10OmniSearch29MemoryCreationQUModelResponseV5musicAA0cdeF5MusicVvM
-- _$s10OmniSearch29MemoryCreationQUModelResponseV5musicAA0cdeF5MusicVvM.resume.0
+- _$s10OmniSearch29MemoryCreationQUModelResponseV5musicAA0cdeF5MusicVvM.resume
 - _$s10OmniSearch29MemoryCreationQUModelResponseV5musicAA0cdeF5MusicVvg
 - _$s10OmniSearch29MemoryCreationQUModelResponseV5musicAA0cdeF5MusicVvpMV
 - _$s10OmniSearch29MemoryCreationQUModelResponseV5musicAA0cdeF5MusicVvs
 - _$s10OmniSearch29MemoryCreationQUModelResponseV5whereSDySSSaySSGGvM
-- _$s10OmniSearch29MemoryCreationQUModelResponseV5whereSDySSSaySSGGvM.resume.0
+- _$s10OmniSearch29MemoryCreationQUModelResponseV5whereSDySSSaySSGGvM.resume
 - _$s10OmniSearch29MemoryCreationQUModelResponseV5whereSDySSSaySSGGvg
 - _$s10OmniSearch29MemoryCreationQUModelResponseV5whereSDySSSaySSGGvpMV
 - _$s10OmniSearch29MemoryCreationQUModelResponseV5whereSDySSSaySSGGvs
@@ -3406,7 +2747,7 @@ Symbols:
 - _$s10OmniSearch29MemoryCreationQUModelResponseV6schema_WZ
 - _$s10OmniSearch29MemoryCreationQUModelResponseV6schema_Wz
 - _$s10OmniSearch29MemoryCreationQUModelResponseV8all_timeSSvM
-- _$s10OmniSearch29MemoryCreationQUModelResponseV8all_timeSSvM.resume.0
+- _$s10OmniSearch29MemoryCreationQUModelResponseV8all_timeSSvM.resume
 - _$s10OmniSearch29MemoryCreationQUModelResponseV8all_timeSSvg
 - _$s10OmniSearch29MemoryCreationQUModelResponseV8all_timeSSvpMV
 - _$s10OmniSearch29MemoryCreationQUModelResponseV8all_timeSSvs
@@ -3431,7 +2772,7 @@ Symbols:
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC011featureFlagF0AA07FeaturehF0CvpMV
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC011featureFlagF0AA07FeaturehF0CvpWvd
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC11cachedModel15TokenGeneration0I9GeneratorCSgvM
-- _$s10OmniSearch30MemoryCreationQUNetworkServiceC11cachedModel15TokenGeneration0I9GeneratorCSgvM.resume.0
+- _$s10OmniSearch30MemoryCreationQUNetworkServiceC11cachedModel15TokenGeneration0I9GeneratorCSgvM.resume
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC11cachedModel15TokenGeneration0I9GeneratorCSgvg
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC11cachedModel15TokenGeneration0I9GeneratorCSgvpMV
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC11cachedModel15TokenGeneration0I9GeneratorCSgvpWvd
@@ -3479,14 +2820,14 @@ Symbols:
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC14parseWithLLMQU6prompt7quModelS2S_15TokenGeneration0M9GeneratorCtYaKFTQ0_
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC14parseWithLLMQU6prompt7quModelS2S_15TokenGeneration0M9GeneratorCtYaKFTu
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC15cachedModelType0aB5Types0cdhI0OSgvM
-- _$s10OmniSearch30MemoryCreationQUNetworkServiceC15cachedModelType0aB5Types0cdhI0OSgvM.resume.0
+- _$s10OmniSearch30MemoryCreationQUNetworkServiceC15cachedModelType0aB5Types0cdhI0OSgvM.resume
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC15cachedModelType0aB5Types0cdhI0OSgvg
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC15cachedModelType0aB5Types0cdhI0OSgvpMV
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC15cachedModelType0aB5Types0cdhI0OSgvpWvd
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC15cachedModelType0aB5Types0cdhI0OSgvs
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC15formatLocations9locationsSSSaySSG_tF
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC16promptTemplateIDSSvM
-- _$s10OmniSearch30MemoryCreationQUNetworkServiceC16promptTemplateIDSSvM.resume.0
+- _$s10OmniSearch30MemoryCreationQUNetworkServiceC16promptTemplateIDSSvM.resume
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC16promptTemplateIDSSvg
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC16promptTemplateIDSSvpMV
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC16promptTemplateIDSSvpWvd
@@ -3522,7 +2863,7 @@ Symbols:
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC23renderedPromptSanitizer_WZ
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC23renderedPromptSanitizer_Wz
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC24cachedModelOnBehalfOfPIDSiSgvM
-- _$s10OmniSearch30MemoryCreationQUNetworkServiceC24cachedModelOnBehalfOfPIDSiSgvM.resume.0
+- _$s10OmniSearch30MemoryCreationQUNetworkServiceC24cachedModelOnBehalfOfPIDSiSgvM.resume
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC24cachedModelOnBehalfOfPIDSiSgvg
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC24cachedModelOnBehalfOfPIDSiSgvpMV
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC24cachedModelOnBehalfOfPIDSiSgvpWvd
@@ -3593,7 +2934,7 @@ Symbols:
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC9maxiModel13onBehalfOfPID15TokenGeneration0M9GeneratorCSi_tF
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC9miniModel13onBehalfOfPID15TokenGeneration0M9GeneratorCSgSi_tKF
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC9modelType0aB5Types0cd5ModelH0OSgvM
-- _$s10OmniSearch30MemoryCreationQUNetworkServiceC9modelType0aB5Types0cd5ModelH0OSgvM.resume.0
+- _$s10OmniSearch30MemoryCreationQUNetworkServiceC9modelType0aB5Types0cd5ModelH0OSgvM.resume
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC9modelType0aB5Types0cd5ModelH0OSgvg
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC9modelType0aB5Types0cd5ModelH0OSgvgTm
 - _$s10OmniSearch30MemoryCreationQUNetworkServiceC9modelType0aB5Types0cd5ModelH0OSgvpMV
@@ -3693,12 +3034,12 @@ Symbols:
 - _$s10OmniSearch34MemoryCreationQUModelResponseMusicV4fromAC29GenerativeFunctionsFoundation15GeneratedValuesV_tKcfC
 - _$s10OmniSearch34MemoryCreationQUModelResponseMusicV4fromACs7Decoder_p_tKcfC
 - _$s10OmniSearch34MemoryCreationQUModelResponseMusicV4songSDySSSaySSGGvM
-- _$s10OmniSearch34MemoryCreationQUModelResponseMusicV4songSDySSSaySSGGvM.resume.0
+- _$s10OmniSearch34MemoryCreationQUModelResponseMusicV4songSDySSSaySSGGvM.resume
 - _$s10OmniSearch34MemoryCreationQUModelResponseMusicV4songSDySSSaySSGGvg
 - _$s10OmniSearch34MemoryCreationQUModelResponseMusicV4songSDySSSaySSGGvpMV
 - _$s10OmniSearch34MemoryCreationQUModelResponseMusicV4songSDySSSaySSGGvs
 - _$s10OmniSearch34MemoryCreationQUModelResponseMusicV5genreSDySSSaySSGGvM
-- _$s10OmniSearch34MemoryCreationQUModelResponseMusicV5genreSDySSSaySSGGvM.resume.0
+- _$s10OmniSearch34MemoryCreationQUModelResponseMusicV5genreSDySSSaySSGGvM.resume
 - _$s10OmniSearch34MemoryCreationQUModelResponseMusicV5genreSDySSSaySSGGvg
 - _$s10OmniSearch34MemoryCreationQUModelResponseMusicV5genreSDySSSaySSGGvpMV
 - _$s10OmniSearch34MemoryCreationQUModelResponseMusicV5genreSDySSSaySSGGvs
@@ -3707,7 +3048,7 @@ Symbols:
 - _$s10OmniSearch34MemoryCreationQUModelResponseMusicV6artist5genre4songACSDySSSaySSGG_A2HtcfcfA1_
 - _$s10OmniSearch34MemoryCreationQUModelResponseMusicV6artist5genre4songACSDySSSaySSGG_A2HtcfcfA_
 - _$s10OmniSearch34MemoryCreationQUModelResponseMusicV6artistSDySSSaySSGGvM
-- _$s10OmniSearch34MemoryCreationQUModelResponseMusicV6artistSDySSSaySSGGvM.resume.0
+- _$s10OmniSearch34MemoryCreationQUModelResponseMusicV6artistSDySSSaySSGGvM.resume
 - _$s10OmniSearch34MemoryCreationQUModelResponseMusicV6artistSDySSSaySSGGvg
 - _$s10OmniSearch34MemoryCreationQUModelResponseMusicV6artistSDySSSaySSGGvpMV
 - _$s10OmniSearch34MemoryCreationQUModelResponseMusicV6artistSDySSSaySSGGvs
@@ -3986,209 +3327,11 @@ Symbols:
 - _$s26GenerativeModelsFoundation14PromptTemplateVAC0D3Kit012ChatMessagesD11ConvertibleAAWL
 - _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_07$s2os18b203InterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_193$s10OmniSearch16LocalIndexClientC30handleSelectItemsByContentType_20spotlightRankingItem011eventSourceH3MapSb_N87B6ResultVSgtSo012CSSearchableN0C_0aB5Types09SpotlightmN0VSDySSSayAKGGtFZSSycfu8_Tf3pf_nTf3nnnnpf_n
 - _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_07$s2os18b203InterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_194$s10OmniSearch16LocalIndexClientC30handleSelectItemsByContentType_20spotlightRankingItem011eventSourceH3MapSb_N88B6ResultVSgtSo012CSSearchableN0C_0aB5Types09SpotlightmN0VSDySSSayAKGGtFZSSycfu12_Tf3pf_nTf3nnnnpf_n
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.105
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.116
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.138
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.140
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.147
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.148
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.149
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.158
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.173
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.193
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.206
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.214
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.224
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.241
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.248
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.255
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.261
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.283
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.286
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.291
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.297
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.299
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.315
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.348
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.351
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.356
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.370
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.436
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.478
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.484
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.488
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.492
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.501
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.503
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.509
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.517
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.525
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.533
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.537
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.544
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.552
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.555
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.566
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.580
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.593
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.604
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.626
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.637
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.651
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.658
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.677
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.685
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.766
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.774
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.788
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.796
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.81
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.95
 - _$s2os14OSLogArgumentsV6appendyySdycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_07$s2os18b78InterpolationV06appendC0_6format5align7privacyySdyXA_AA0B15FloatFormattingVAA0o15StringAlignmentr32B7PrivacyVtFSdycfu_07$s2os18bc46ij2_6k3Sfym1_n20B15hi4VAA0tjku2B7l30wX249_0164$s10OmniSearch0av107ServiceC05localB05query15typeConstraints7sources7options19requestedPropertiesAA0aB8ResponseCSg_AA9UserQueryw6AN_Says57B20EntityTypeConstraintOGAA0p12SourcesVAA0aP48OptionsVSaysT38PropertyRequestVGtYaKFSfycfu26_Tf3pf_nTf3pf_nTf3nnnnpf_n
-- _$s2os14OSLogArgumentsV6appendyySdycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.280
-- _$s2os14OSLogArgumentsV6appendyySdycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.292
-- _$s2os14OSLogArgumentsV6appendyySo8NSObjectCSgycFySpys5UInt8VGz_SpyAGGSgzSpyypGSgztcfU_TA.166
-- _$s2os14OSLogArgumentsV6appendyySo8NSObjectCSgycFySpys5UInt8VGz_SpyAGGSgzSpyypGSgztcfU_TA.263
-- _$s2os14OSLogArgumentsV6appendyySo8NSObjectCSgycFySpys5UInt8VGz_SpyAGGSgzSpyypGSgztcfU_TA.467
-- _$s2os14OSLogArgumentsV6appendyySo8NSObjectCSgycFySpys5UInt8VGz_SpyAGGSgzSpyypGSgztcfU_TA.585
-- _$s2os14OSLogArgumentsV6appendyySo8NSObjectCSgycFySpys5UInt8VGz_SpyAGGSgzSpyypGSgztcfU_TA.616
-- _$s2os14OSLogArgumentsV6appendyySo8NSObjectCSgycFySpys5UInt8VGz_SpyAGGSgzSpyypGSgztcfU_TA.725
-- _$s2os14OSLogArgumentsV6appendyySo8NSObjectCSgycFySpys5UInt8VGz_SpyAGGSgzSpyypGSgztcfU_TA.81
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.100
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.114
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.117
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.156
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.159
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.204
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.217
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.23
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.253
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.278
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.310
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.340
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.387
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.395
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.410
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.418
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.43
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.435
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.443
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.451
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.515
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.529
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.573
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.607
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.615
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.659
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.683
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.698
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.709
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.73
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.755
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_Si_Tg5TA.89
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA.114
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA.196
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA.234
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA.375
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA.394
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s5Int32V_Tg5TA.413
-- _$s2os14OSLogArgumentsV6appendyyxycs17FixedWidthIntegerRzlFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_s6UInt32V_Tg5TA.311
 - _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_0155$s10OmniSearch0aB7ServiceC023handleShortCircuitPhotoB033_07BE347A879194015ACD41574A0B76AALL3for7options15typeConstraintsAA0aB8ResponseCSgAA9UserQueryV_AA0aM51OptionsVSayAA0B20EntityTypeConstraintOGtYaKFSSycfu_Tf3pf_n
 - _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_0155$s10OmniSearch0aB7ServiceC023handleShortCircuitPhotoB033_07BE347A879194015ACD41574A0B76AALL3for7options15typeConstraintsAA0aB8ResponseCSgAA9UserQueryV_AA0aM52OptionsVSayAA0B20EntityTypeConstraintOGtYaKFSSycfu0_Tf3pf_n
 - _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_0155$s10OmniSearch0aB7ServiceC023handleShortCircuitPhotoB033_07BE347A879194015ACD41574A0B76AALL3for7options15typeConstraintsAA0aB8ResponseCSgAA9UserQueryV_AA0aM52OptionsVSayAA0B20EntityTypeConstraintOGtYaKFSSycfu1_Tf3pf_n
 - _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_0155$s10OmniSearch0aB7ServiceC023handleShortCircuitPhotoB033_07BE347A879194015ACD41574A0B76AALL3for7options15typeConstraintsAA0aB8ResponseCSgAA9UserQueryV_AA0aM52OptionsVSayAA0B20EntityTypeConstraintOGtYaKFSSycfu1_Tf3pf_nTm
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.101
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.112
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.134
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.136
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.143
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.144
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.145
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.154
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.169
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.189
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.202
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.210
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.220
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.237
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.244
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.251
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.257
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.279
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.28
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.282
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.287
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.293
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.295
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.311
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.339
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.344
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.347
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.352
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.366
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.432
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.474
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.497
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.499
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.505
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.513
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.521
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.529
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.533
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.540
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.548
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.551
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.562
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.576
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.589
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.600
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.622
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.633
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.647
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.654
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.673
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.681
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.762
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.77
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.770
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.784
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.792
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.91
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyyxyXA_AA0B15StringAlignmentVAA0B7PrivacyVts06CustomG11ConvertibleRzlFSSycfu_SDySSSaySiGG_Tg5TA.34
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyyxyXA_AA0B15StringAlignmentVAA0B7PrivacyVts06CustomG11ConvertibleRzlFSSycfu_SDySSSiG_Tg5TA.780
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyyxyXA_AA0B15StringAlignmentVAA0B7PrivacyVts06CustomG11ConvertibleRzlFSSycfu_SaySSG_Tg5TA.121
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyyxyXA_AA0B15StringAlignmentVAA0B7PrivacyVts06CustomG11ConvertibleRzlFSSycfu_SaySSG_Tg5TA.669
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyyxyXA_AA0B15StringAlignmentVAA0B7PrivacyVts06CustomG11ConvertibleRzlFSSycfu_Ss_Tg5TA.218
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyyxyXA_AA0B15StringAlignmentVAA0B7PrivacyVts06CustomG11ConvertibleRzlFSSycfu_Ss_Tg5TA.62
-- _$s2os18OSLogInterpolationV06appendC0_6format5align7privacyySdyXA_AA0B15FloatFormattingVAA0B15StringAlignmentVAA0B7PrivacyVtFSdycfu_TA.276
-- _$s2os18OSLogInterpolationV06appendC0_6format5align7privacyySdyXA_AA0B15FloatFormattingVAA0B15StringAlignmentVAA0B7PrivacyVtFSdycfu_TA.288
-- _$s2os18OSLogInterpolationV06appendC0_6format5align7privacyySfyXA_AA0B15FloatFormattingVAA0B15StringAlignmentVAA0B7PrivacyVtFSdycfu_TA.272
-- _$s2os18OSLogInterpolationV06appendC0_6format5align7privacyySfyXA_AA0B15FloatFormattingVAA0B15StringAlignmentVAA0B7PrivacyVtFSdycfu_TA.284
-- _$s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_TA.102
-- _$s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_TA.184
-- _$s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_TA.222
-- _$s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_TA.363
-- _$s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_TA.382
-- _$s2os18OSLogInterpolationV06appendC0_6format7privacyySbyXA_AA0B10BoolFormatOAA0B7PrivacyVtFs5Int32Vycfu_TA.401
-- _$s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA.106
-- _$s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA.188
-- _$s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA.226
-- _$s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA.367
-- _$s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA.386
-- _$s2os18OSLogInterpolationV06appendC0_6format7privacyys5Int32VyXA_AA0bG14ExtendedFormatOAA0B7PrivacyVtFAHycfu_TA.405
-- _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesySo8NSObjectCyXA_AA0B7PrivacyVSStFAHSgycfu_TA.162
-- _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesySo8NSObjectCyXA_AA0B7PrivacyVSStFAHSgycfu_TA.259
-- _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesySo8NSObjectCyXA_AA0B7PrivacyVSStFAHSgycfu_TA.581
-- _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesySo8NSObjectCyXA_AA0B7PrivacyVSStFAHSgycfu_TA.612
-- _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesySo8NSObjectCyXA_AA0B7PrivacyVSStFAHSgycfu_TA.721
-- _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesySo8NSObjectCyXA_AA0B7PrivacyVSStFAHSgycfu_TA.77
-- _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesys5Error_pyXA_AA0B7PrivacyVSStFSo8NSObjectCycfu_TA.158
-- _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesys5Error_pyXA_AA0B7PrivacyVSStFSo8NSObjectCycfu_TA.255
-- _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesys5Error_pyXA_AA0B7PrivacyVSStFSo8NSObjectCycfu_TA.577
-- _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesys5Error_pyXA_AA0B7PrivacyVSStFSo8NSObjectCycfu_TA.608
-- _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesys5Error_pyXA_AA0B7PrivacyVSStFSo8NSObjectCycfu_TA.717
-- _$s2os18OSLogInterpolationV06appendC0_7privacy10attributesys5Error_pyXA_AA0B7PrivacyVSStFSo8NSObjectCycfu_TA.73
-- _$s2os18OSLogInterpolationV06appendC0_7privacyySo8NSObjectCyXA_AA0B7PrivacyVtFAGSgycfu_TA.463
 - _$s9PromptKit012ChatMessagesA11ConvertibleMp
 - _$s9PromptKit012ChatMessagesA11Convertible_pMR
 - _$s9PromptKit012ChatMessagesA11Convertible_pMd
@@ -4205,7 +3348,6 @@ Symbols:
 - _$s9PromptKit31GenerativeConfigurationProtocolP0C6ModelsE18samplingParametersyxAA08BindableD0VF
 - _$sSDySSSaySSGGSDyxq_G29GenerativeFunctionsFoundation9GenerableADSSRszAdER_rlWL
 - _$sSDySSSaySSGGSDyxq_G29GenerativeFunctionsFoundation9GenerableADSSRszAdER_rlWl
-- _$sSDySo21NSAttributedStringKeyaypGSo8_NSRangeVSpy10ObjectiveC8ObjCBoolVGIggyy_AceIIeggyy_TRTA.30
 - _$sSDyq_SgxcigSS_10OmniSearch39MemoryCreationQUDateGroundingHeuristicsC6Season33_8733BF20952240FB787F1C1DF7D899F5LLOTg5
 - _$sSDys11AnyHashableVypGSpy10ObjectiveC8ObjCBoolVGIeggy_So12NSDictionaryCAGIeyByy_TR
 - _$sSDyxq_G29GenerativeFunctionsFoundation9GenerableABSSRszAbCR_rlMc
@@ -4250,7 +3392,7 @@ Symbols:
 - _$sSaySo46CSIndexingPipelineOverallCompletenessForBundleCGSgMd
 - _$sSaySo46CSIndexingPipelineOverallCompletenessForBundleCGSgs5Error_pSgIeghgg_So7NSArrayCSgSo7NSErrorCSgIeyBhyy_TR
 - _$sSayxGSlsSly7ElementQz5IndexQzcirTW15OmniSearchTypes31MemoryCreationQUParseAttributesC_Tg5
-- _$sSayxGSlsSly7ElementQz5IndexQzcirTW15OmniSearchTypes31MemoryCreationQUParseAttributesC_Tg5.resume.0
+- _$sSayxGSlsSly7ElementQz5IndexQzcirTW15OmniSearchTypes31MemoryCreationQUParseAttributesC_Tg5.resume
 - _$sScCySaySSGs5NeverOGMR
 - _$sScCySaySSGs5NeverOGMd
 - _$sScCySaySo46CSIndexingPipelineOverallCompletenessForBundleCGSgs5Error_pGMR
@@ -4258,38 +3400,6 @@ Symbols:
 - _$sScG7addTask8priority9operationyScPSg_xyYaYAcntFSay10OmniSearch0F6ResultVG_Tg5
 - _$sScG8IteratorVySay10OmniSearch0C6ResultVG_GMR
 - _$sScG8IteratorVySay10OmniSearch0C6ResultVG_GMd
-- _$sSiIegd_SiIegr_TRTA.110
-- _$sSiIegd_SiIegr_TRTA.113
-- _$sSiIegd_SiIegr_TRTA.152
-- _$sSiIegd_SiIegr_TRTA.155
-- _$sSiIegd_SiIegr_TRTA.19
-- _$sSiIegd_SiIegr_TRTA.200
-- _$sSiIegd_SiIegr_TRTA.213
-- _$sSiIegd_SiIegr_TRTA.249
-- _$sSiIegd_SiIegr_TRTA.274
-- _$sSiIegd_SiIegr_TRTA.306
-- _$sSiIegd_SiIegr_TRTA.336
-- _$sSiIegd_SiIegr_TRTA.383
-- _$sSiIegd_SiIegr_TRTA.39
-- _$sSiIegd_SiIegr_TRTA.391
-- _$sSiIegd_SiIegr_TRTA.406
-- _$sSiIegd_SiIegr_TRTA.414
-- _$sSiIegd_SiIegr_TRTA.431
-- _$sSiIegd_SiIegr_TRTA.439
-- _$sSiIegd_SiIegr_TRTA.447
-- _$sSiIegd_SiIegr_TRTA.511
-- _$sSiIegd_SiIegr_TRTA.525
-- _$sSiIegd_SiIegr_TRTA.569
-- _$sSiIegd_SiIegr_TRTA.603
-- _$sSiIegd_SiIegr_TRTA.611
-- _$sSiIegd_SiIegr_TRTA.655
-- _$sSiIegd_SiIegr_TRTA.679
-- _$sSiIegd_SiIegr_TRTA.69
-- _$sSiIegd_SiIegr_TRTA.694
-- _$sSiIegd_SiIegr_TRTA.705
-- _$sSiIegd_SiIegr_TRTA.751
-- _$sSiIegd_SiIegr_TRTA.85
-- _$sSiIegd_SiIegr_TRTA.96
 - _$sSiIgd_SiIegr_TR0164$s10OmniSearch0aB7ServiceC05localB05query15typeConstraints7sources7options19requestedPropertiesAA0aB8ResponseCSg_AA9UserQueryVtAN_SayAA0B20EntityTypeConstraintOGAA0d12SourcesVAA0ad11OptionsVSayT35B15PropertyRequestVGtYaKFSiyXEfu18_Tf3npf_n
 - _$sSiIgd_SiIegr_TR0339$s10OmniSearch0aB7ServiceC14searchInternal33_07BE347A879194015ACD41574A0B76AALL5query15typeConstraints15matchedEntities7sources7options19requestedProperties18siriRequestContext012usingAgenticB0AA0aB8ResponseC_Scs8IteratorVy0aB5Types0B16StreamingMessageVyAOGs5Error_p_GSgtAA9UserQueryV_SayAA0B20EntityTypeConstraintOGSayAA11EntityMatchVGAA0d12SourcesVAA0aD97OptionsVSayAA0b8PropertyV0VG22IntelligenceFlowShared010StructuredW0V04SirivW0VSgSbtYaKFSiyXEfu16_Tf3npf_n
 - _$sSlsE3mapySayqd__Gqd__7ElementQzqd_0_YKXEqd_0_YKs5ErrorRd_0_r0_lFSay15OmniSearchTypes15StructuredQueryV10FilterTypeOG_AHs5NeverOTg504$s10d93Search18CerberusResolutionC31structuredQueriesFromSingleTool8toolName9argumentsSay0aB5Types15gh38VGSSSg_SDys11AnyHashableVAMGSgtFZA2I10iJ6OXEfU_0dE00nO0CXMTSSTf1cn_n
@@ -4299,7 +3409,7 @@ Symbols:
 - _$sSo11NLTokenizerC15NaturalLanguageE15enumerateTokens2in5usingySnySS5IndexVG_SbAI_So0A10AttributesVtXEtF
 - _$sSo11NLTokenizerC6stringSSSgvsToTembgnn_
 - _$sSo14NSUserDefaultsC10OmniSearchE06photosD4EvalSbvMZ
-- _$sSo14NSUserDefaultsC10OmniSearchE06photosD4EvalSbvMZ.resume.0
+- _$sSo14NSUserDefaultsC10OmniSearchE06photosD4EvalSbvMZ.resume
 - _$sSo14NSUserDefaultsC10OmniSearchE06photosD4EvalSbvgZ
 - _$sSo14NSUserDefaultsC10OmniSearchE06photosD4EvalSbvpZMV
 - _$sSo14NSUserDefaultsC10OmniSearchE06photosD4EvalSbvsZ
@@ -4359,23 +3469,15 @@ Symbols:
 - _$ss23_ContiguousArrayStorageCySS_s12StaticStringVtGMd
 - _$ss23_ContiguousArrayStorageCySo8_NSRangeVGMR
 - _$ss23_ContiguousArrayStorageCySo8_NSRangeVGMd
-- _$ss5Int32VIegd_ABIegr_TRTA.110
-- _$ss5Int32VIegd_ABIegr_TRTA.192
-- _$ss5Int32VIegd_ABIegr_TRTA.230
-- _$ss5Int32VIegd_ABIegr_TRTA.371
-- _$ss5Int32VIegd_ABIegr_TRTA.390
-- _$ss5Int32VIegd_ABIegr_TRTA.409
 - _$ss6UInt32VIegd_ABIegr_TR0164$s10OmniSearch0aB7ServiceC05localB05query15typeConstraints7sources7options19requestedPropertiesAA0aB8ResponseCSg_AA9UserQueryVtAN_SayAA0B20EntityTypeConstraintOGAA0e12SourcesVAA0ae11OptionsVSayu27B15PropertyRequestVGtYaKFs6A7Vycfu6_Tf3npf_n
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSay10OmniSearch0D6ResultVG_TG5
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSay10OmniSearch0D6ResultVG_TG5TA
-- _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSay10OmniSearch0D6ResultVG_TG5TA.44
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSay10OmniSearch0D6ResultVG_TG5TA.44TQ0_
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSay10OmniSearch0D6ResultVG_TG5TA.44Tu
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSay10OmniSearch0D6ResultVG_TG5TATQ0_
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSay10OmniSearch0D6ResultVG_TG5TATu
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSay10OmniSearch0D6ResultVG_TG5TQ0_
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSay10OmniSearch0D6ResultVG_TG5Tu
-- _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSi_10OmniSearch0D6ResultVt_Tg5TA.121
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSi_10OmniSearch0D6ResultVt_Tg5TA.121TQ0_
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSi_10OmniSearch0D6ResultVt_Tg5TA.121Tu
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTR15OmniSearchTypes28IndexingPipelineCompletenessVSg_SDySSAGGt_Tg5
@@ -4415,114 +3517,16 @@ Symbols:
 - __METACLASS_DATA__TtC10OmniSearch26MemoryCreationQUController
 - __METACLASS_DATA__TtC10OmniSearch30MemoryCreationQUNetworkService
 - __METACLASS_DATA__TtC10OmniSearch39MemoryCreationQUDateGroundingHeuristics
-- ___swift__destructor.119
-- ___swift__destructor.130
-- ___swift__destructor.141
-- ___swift__destructor.161
-- ___swift__destructor.175
-- ___swift__destructor.44
-- ___swift__destructor.666
-- ___swift__destructor.746
 - ___swift_closure_destructor.130Tm
-- ___swift_closure_destructor.160
-- ___swift_closure_destructor.164
-- ___swift_closure_destructor.208
 - ___swift_closure_destructor.235Tm
 - ___swift_closure_destructor.265Tm
 - ___swift_closure_destructor.266Tm
-- ___swift_closure_destructor.268
-- ___swift_closure_destructor.274
-- ___swift_closure_destructor.285
-- ___swift_closure_destructor.289
 - ___swift_closure_destructor.291Tm
-- ___swift_closure_destructor.293
-- ___swift_closure_destructor.299
-- ___swift_closure_destructor.301
-- ___swift_closure_destructor.325
-- ___swift_closure_destructor.388
-- ___swift_closure_destructor.392
-- ___swift_closure_destructor.401
-- ___swift_closure_destructor.404
-- ___swift_closure_destructor.421
-- ___swift_closure_destructor.455
-- ___swift_closure_destructor.461
-- ___swift_closure_destructor.465
-- ___swift_closure_destructor.469
-- ___swift_closure_destructor.472
-- ___swift_closure_destructor.476
-- ___swift_closure_destructor.480
-- ___swift_closure_destructor.490
-- ___swift_closure_destructor.494
-- ___swift_closure_destructor.495
-- ___swift_closure_destructor.499
-- ___swift_closure_destructor.501
-- ___swift_closure_destructor.503
-- ___swift_closure_destructor.506
-- ___swift_closure_destructor.507
-- ___swift_closure_destructor.509
-- ___swift_closure_destructor.511
-- ___swift_closure_destructor.513
-- ___swift_closure_destructor.515
 - ___swift_closure_destructor.51Tm
-- ___swift_closure_destructor.540
-- ___swift_closure_destructor.549
-- ___swift_closure_destructor.553
 - ___swift_closure_destructor.557Tm
-- ___swift_closure_destructor.560
-- ___swift_closure_destructor.564
-- ___swift_closure_destructor.567
-- ___swift_closure_destructor.571
-- ___swift_closure_destructor.575
-- ___swift_closure_destructor.578
-- ___swift_closure_destructor.583
-- ___swift_closure_destructor.584
-- ___swift_closure_destructor.587
-- ___swift_closure_destructor.589
-- ___swift_closure_destructor.591
-- ___swift_closure_destructor.595
-- ___swift_closure_destructor.598
-- ___swift_closure_destructor.601
-- ___swift_closure_destructor.602
-- ___swift_closure_destructor.605
-- ___swift_closure_destructor.606
-- ___swift_closure_destructor.609
-- ___swift_closure_destructor.614
-- ___swift_closure_destructor.617
 - ___swift_closure_destructor.617Tm
-- ___swift_closure_destructor.620
-- ___swift_closure_destructor.621
-- ___swift_closure_destructor.624
-- ___swift_closure_destructor.626
-- ___swift_closure_destructor.628
-- ___swift_closure_destructor.631
-- ___swift_closure_destructor.632
-- ___swift_closure_destructor.642
-- ___swift_closure_destructor.653
-- ___swift_closure_destructor.657
-- ___swift_closure_destructor.660
-- ___swift_closure_destructor.674
-- ___swift_closure_destructor.675
 - ___swift_closure_destructor.68Tm
-- ___swift_closure_destructor.712
-- ___swift_closure_destructor.723
-- ___swift_closure_destructor.729
-- ___swift_closure_destructor.733
-- ___swift_closure_destructor.742
-- ___swift_closure_destructor.749
-- ___swift_closure_destructor.753
-- ___swift_closure_destructor.757
-- ___swift_closure_destructor.760
-- ___swift_closure_destructor.764
-- ___swift_closure_destructor.768
-- ___swift_closure_destructor.772
-- ___swift_closure_destructor.778
-- ___swift_closure_destructor.782
-- ___swift_closure_destructor.786
-- ___swift_closure_destructor.790
-- ___swift_closure_destructor.794
 - ___swift_closure_destructor.82Tm
-- ___swift_exist.box.addr_destructor.101
-- ___swift_exist.box.addr_destructor.256
 - ___swift_get_extra_inhabitant_index.190Tm
 - ___swift_get_extra_inhabitant_index.217Tm
 - ___swift_get_extra_inhabitant_index.226Tm
@@ -4564,45 +3568,9 @@ Symbols:
 - _associated conformance 10OmniSearch34MemoryCreationQUModelResponseMusicV10CodingKeys33_9A21FF80BB8A4E7A5E6AA404E0FBDFAFLLOs0H3KeyAAs23CustomStringConvertible
 - _associated conformance 10OmniSearch34MemoryCreationQUModelResponseMusicV10CodingKeys33_9A21FF80BB8A4E7A5E6AA404E0FBDFAFLLOs0H3KeyAAs28CustomDebugStringConvertible
 - _associated conformance 10OmniSearch39MemoryCreationQUDateGroundingHeuristicsC6Season33_8733BF20952240FB787F1C1DF7D899F5LLOSHAASQ
-- _block_copy_helper.18
-- _block_copy_helper.31
-- _block_copy_helper.628
-- _block_copy_helper.634
-- _block_copy_helper.719
-- _block_copy_helper.725
-- _block_copy_helper.736
-- _block_descriptor.20
-- _block_descriptor.33
-- _block_descriptor.630
-- _block_descriptor.636
-- _block_descriptor.721
-- _block_descriptor.727
-- _block_descriptor.738
-- _block_destroy_helper.19
-- _block_destroy_helper.32
-- _block_destroy_helper.629
-- _block_destroy_helper.635
-- _block_destroy_helper.720
-- _block_destroy_helper.726
-- _block_destroy_helper.737
 - _get_enum_tag_for_layout_string 21SiriInformationSearch21RouteContextProviding_pSg
-- _get_witness_table 10AppIntents21IntentResultContainerVy10OmniSearch22MemoryCreationQUResultVSgs5NeverOA2IGAA12ReturnsValueHPyHC.22
-- _get_witness_table 10AppIntents21IntentResultContainerVySay10OmniSearch22MemoryCreationQUResultVGs5NeverOA2IGAA12ReturnsValueHPyHC.10
-- _get_witness_table 10AppIntents21IntentResultContainerVySbs5NeverOA2EGAA12ReturnsValueHPyHC.12
-- _objc_msgSend$earlierDate:
-- _objc_msgSend$enumerateSpotlightResultsForString:options:withBlock:
-- _objc_msgSend$fetchIndexingPipelineCompleteness:forBundles:completionHandler:
-- _objc_msgSend$initWithPhotoLibrary:
-- _objc_msgSend$initWithPhotoLibraryURL:
-- _objc_msgSend$initWithUnit:
-- _objc_msgSend$numberFromString:
-- _objc_msgSend$performSearch:resultsHandler:
-- _objc_msgSend$setBundleIndexCompleteness:
-- _objc_msgSend$setPerBundleIndexCompleteness:
-- _objc_msgSend$spotlightManager
-- _objc_msgSend$stringByReplacingCharactersInRange:withString:
-- _objc_msgSend$stringForKey:
-- _objc_msgSend$systemPhotoLibraryURL
+- _get_witness_table 10AppIntents21IntentResultContainerVy10OmniSearch22MemoryCreationQUResultVSgs5NeverOA2IGAA12ReturnsValueHPyHC
+- _get_witness_table 10AppIntents21IntentResultContainerVySay10OmniSearch22MemoryCreationQUResultVGs5NeverOA2IGAA12ReturnsValueHPyHC
 - _symbolic $s10OmniSearch34MemoryCreationQUControllerProtocolP
 - _symbolic $s10OmniSearch38MemoryCreationQUNetworkServiceProtocolP
 - _symbolic SS3key______5valuet 15OmniSearchTypes28IndexingPipelineCompletenessV
@@ -4926,5 +3894,4 @@ CStrings:
 - "wPKqjaMTBSM6Zp5fJB6S-PiySBo."
 - "yyyy-MM-dd'T'HH:mm:ss"
 - "{{ specialToken.chat.role.system }}You are an expert in query understanding for a photo library. Your task is to transform the given natural language prompt into a structured JSON format. You must follow the instructions below:<n> - Ensure music artist names are specifically marked as a music artist, not simply as a \"who\".<n> - Identify named locations like landmarks, business addresses, cities, and countries, and tag them as a \"where\" rather than a \"what\".<n> - Annotate any mention of a holiday or festival name immediately followed by a year as a \"when\".<n> - Restrict \"what\" categories to only the following options: Anniversary, Birthday, Breakfast, Concert, Dinner, Diving, Hiking, Holiday Event, Lunch, Wedding.<n> - Please treat all queries as case-insensitive and provide the same response if the meaning of the queries is the same.<n> - The photo library contains a list of names for reference: [{{ names }}]. The query may include names that are not in this list.{{ specialToken.chat.component.turnEnd }}{{ specialToken.chat.role.user }}{{ userPrompt }}{{ specialToken.chat.component.turnEnd }}{{ specialToken.chat.role.assistant }}"
-
 ```

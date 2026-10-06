@@ -2,51 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/AXMediaUtilities.framework/AXMediaUtilities`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd6f80` | `0xd6cbc` | **`-0x2c4`** |
+| `__DATA_CONST.__const` | `0x2640` | `0x2668` | **`+0x28`** |
+| `__TEXT.__objc_methlist` | `0xb644` | `0xb654` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x35b8` | `0x35c8` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6340` | `0x6348` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -187.2.1.0.0
--  __TEXT.__text: 0xd3364
--  __TEXT.__objc_methlist: 0xb644
 +187.2.3.0.0
-+  __TEXT.__text: 0xd30c4
-+  __TEXT.__objc_methlist: 0xb654
-   __TEXT.__const: 0x169c
-   __TEXT.__dlopen_cstrs: 0xc72
-   __TEXT.__swift5_typeref: 0x2f0
 
-   __TEXT.__gcc_except_tab: 0x5960
-   __TEXT.__oslogstring: 0x5678
-   __TEXT.__ustring: 0x422
--  __TEXT.__unwind_info: 0x4078
-+  __TEXT.__unwind_info: 0x4070
-   __TEXT.__eh_frame: 0x390
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2640
-+  __DATA_CONST.__const: 0x2668
-   __DATA_CONST.__objc_classlist: 0x610
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0xd0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6340
-+  __DATA_CONST.__objc_selrefs: 0x6348
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x428
-   __DATA_CONST.__objc_arraydata: 0x6b8
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4772
 -  Symbols:   8783
 +  Functions: 4769
 +  Symbols:   8782
-   CStrings:  2522
- 
 Symbols:
 + -[AXMDataSonifier _updatePanningForPlayheadPosition]
 + GCC_except_table2398

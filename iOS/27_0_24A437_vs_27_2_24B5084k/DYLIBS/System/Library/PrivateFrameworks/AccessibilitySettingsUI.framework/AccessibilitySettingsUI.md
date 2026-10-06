@@ -2,90 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/AccessibilitySettingsUI.framework/AccessibilitySettingsUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14a174` | `0x152758` | **`+0x85e4`** |
+| `__TEXT.__const` | `0xcf28` | `0xd598` | **`+0x670`** |
+| `__TEXT.__swift5_typeref` | `0x1843c` | `0x18a2c` | **`+0x5f0`** |
+| `__DATA.__bss` | `0x6c18` | `0x7098` | **`+0x480`** |
+| `__AUTH_CONST.__const` | `0x6808` | `0x6b10` | **`+0x308`** |
+| `__TEXT.__constg_swiftt` | `0x4148` | `0x43f8` | **`+0x2b0`** |
+| `__AUTH.__data` | `0x33a0` | `0x35a0` | **`+0x200`** |
+| `__DATA.__data` | `0x5b60` | `0x5cf8` | **`+0x198`** |
+| `__TEXT.__unwind_info` | `0x3958` | `0x3ab8` | **`+0x160`** |
+| `__TEXT.__swift5_fieldmd` | `0x2568` | `0x26a8` | **`+0x140`** |
+| `__TEXT.__swift5_reflstr` | `0x29e4` | `0x2b04` | **`+0x120`** |
+| `__TEXT.__swift5_capture` | `0x1d60` | `0x1e3c` | **`+0xdc`** |
+| `__AUTH_CONST.__objc_const` | `0x18a0` | `0x1940` | **`+0xa0`** |
+| `__TEXT.__swift5_assocty` | `0xd98` | `0xe10` | **`+0x78`** |
+| `__TEXT.__eh_frame` | `0x33bc` | `0x3424` | **`+0x68`** |
+| `__AUTH_CONST.__auth_got` | `0x29b0` | `0x2a00` | **`+0x50`** |
+| `__TEXT.__swift5_proto` | `0x2f8` | `0x318` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x27c` | `0x290` | **`+0x14`** |
+| `__DATA_CONST.__got` | `0x1410` | `0x1418` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x998` | `0x990` | **`-0x8`** |
+| `__TEXT.__objc_methlist` | `0x824` | `0x81c` | **`-0x8`** |
+| `__TEXT.__swift_as_cont` | `0x1ec` | `0x1f0` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0xcc` | `0xd0` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -3240.9.0.0.0
--  __TEXT.__text: 0x13d1d0
--  __TEXT.__objc_methlist: 0x824
--  __TEXT.__const: 0xcf28
--  __TEXT.__constg_swiftt: 0x4148
--  __TEXT.__swift5_typeref: 0x1843c
 +3245.7.1.0.0
-+  __TEXT.__text: 0x1453f0
-+  __TEXT.__objc_methlist: 0x81c
-+  __TEXT.__const: 0xd598
-+  __TEXT.__constg_swiftt: 0x43f8
-+  __TEXT.__swift5_typeref: 0x18a2c
-   __TEXT.__swift5_builtin: 0xa0
--  __TEXT.__swift5_reflstr: 0x29e4
--  __TEXT.__swift5_fieldmd: 0x2568
--  __TEXT.__swift5_assocty: 0xd98
--  __TEXT.__swift5_proto: 0x2f8
--  __TEXT.__swift5_types: 0x27c
-+  __TEXT.__swift5_reflstr: 0x2b04
-+  __TEXT.__swift5_fieldmd: 0x26a8
-+  __TEXT.__swift5_assocty: 0xe10
-+  __TEXT.__swift5_proto: 0x318
-+  __TEXT.__swift5_types: 0x290
-   __TEXT.__cstring: 0x331c
--  __TEXT.__swift5_capture: 0x1d60
--  __TEXT.__swift_as_entry: 0xcc
-+  __TEXT.__swift5_capture: 0x1e3c
-+  __TEXT.__swift_as_entry: 0xd0
-   __TEXT.__swift_as_ret: 0xa8
--  __TEXT.__swift_as_cont: 0x1ec
-+  __TEXT.__swift_as_cont: 0x1f0
-   __TEXT.__oslogstring: 0x673
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__gcc_except_tab: 0x28
--  __TEXT.__unwind_info: 0x4a00
--  __TEXT.__eh_frame: 0x33bc
-+  __TEXT.__unwind_info: 0x4b98
-+  __TEXT.__eh_frame: 0x3424
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x998
-+  __DATA_CONST.__objc_selrefs: 0x990
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__objc_superrefs: 0x10
--  __DATA_CONST.__got: 0x1410
--  __AUTH_CONST.__const: 0x6808
-+  __DATA_CONST.__got: 0x1418
-+  __AUTH_CONST.__const: 0x6b10
-   __AUTH_CONST.__cfstring: 0x3a0
--  __AUTH_CONST.__objc_const: 0x18a0
--  __AUTH_CONST.__auth_got: 0x29b0
-+  __AUTH_CONST.__objc_const: 0x1940
-+  __AUTH_CONST.__auth_got: 0x2a00
-   __AUTH.__objc_data: 0xab0
--  __AUTH.__data: 0x33a0
-+  __AUTH.__data: 0x35a0
-   __DATA.__objc_ivar: 0x2c
--  __DATA.__data: 0x5b60
-+  __DATA.__data: 0x5cf8
-   __DATA.__objc_stublist: 0x8
-   __DATA.__common: 0x90
-   __DATA_DIRTY.__objc_data: 0x50
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5595
--  Symbols:   2869
+-  Symbols:   2680
 +  Functions: 5745
-+  Symbols:   2919
-   CStrings:  396
- 
++  Symbols:   2730
 Symbols:
 + ___swift_closure_destructor.62Tm
 + ___swift_closure_destructor.66Tm
@@ -119,7 +78,6 @@ Symbols:
 + _get_witness_table qd0__7SwiftUI4ViewHD5_AaBPAAE5alert_11isPresented7actions7messageQrqd___AA7BindingVySbGqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAA15ModifiedContentVyALyALy021AccessibilitySettingsB0011AXRSettingsC0V12PlatformList33_9275D5309E8A4441488D751722CF28BCLLVy_AA05TupleK0VyAA7SectionVyAA6SpacerVAcAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA6ToggleVyALyAA4TextVAM22AXSUISpecifierModifierVGG_SbQo_A3_G_AVyAA05EmptyC0VA7_A11_GAVyA11_A7_A3_GSgQPGGAA30_EnvironmentKeyWritingModifierVy12CoreGraphics7CGFloatVSgGGAA25_AppearanceActionModifierVGA26_G_SSATyAA6ButtonVyA3_G_A31_QPGA3_Qo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA15ModifiedContentVy021AccessibilitySettingsB0021AXSUIPlatformFormListC0VyAA05TupleJ0VyAA7SectionVyAA05EmptyC0VAKyAA6ToggleVyAA4TextVGAA0K18AttachmentModifierVGAXG_ARyAtKyAL18AXSUISpecifierLinkVyAxcAE15navigationTitleyQrqd__SyRd__lFQOyAL025LiveSpeechCategoryManagerC0V_SSQo_GA_GAXGAA012_ConditionalJ0VyARyAxPyAL024LiveSpeechPreferredVoiceoC0V_AKyAA6ButtonVyAXGA_GQPGAXGARyAxA7ForEachVySayAL010LiveSpeechlC0V8Keyboard33_F84BBF99126A77109326AAF4AB19F15ALLVGSSA24_012KeyboardItemC0A26_LLVGAXGGQPGGAL13PlatformSheetVyAL032LiveSpeechAddPreferredVoiceSheetC0VGG_Qo_HO
 + _keypath_set.26Tm
-+ _objc_msgSend$setHasLocalizableName:
 + _objc_retain_x25
 + _symbolic ShySiG
 + _symbolic _____ 23AccessibilitySettingsUI16FingerFadeVectorV
@@ -269,7 +227,6 @@ Symbols:
 - _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAcAE29navigationBarTitleDisplayModeyQrAA010NavigationI4ItemV0jkL0OFQOyAcAE0hJ0yQrqd__SyRd__lFQOyAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA4ListVys5NeverOAA05TupleG0VyAA7SectionVyAA05EmptyC0VAA6HStackVyAXyAA08ModifiedG0VyAA4TextVAA14_PaddingLayoutVG_A4_yAcAE14textFieldStyleyQrqd__AA14TextFieldStyleRd__lFQOyAA9TextFieldVyA6_G_AA19PlainTextFieldStyleVQo_AA31AccessibilityAttachmentModifierVGQPGGA4_yA6_AA14_OpacityEffectVGG_AZyA6_AA7ForEachVySay10Foundation6LocaleV12LanguageCodeVGA33_AA6ButtonVyA2_yAXyA4_yA9_AA30_EnvironmentKeyWritingModifierVyAA4FontVSgGG_AXyAA6SpacerV_AcAE10fontWeightyQrA40_6WeightVSgFQOyAA5ImageV_Qo_QPGSgQPGGGGA0_GAZyA6_A28_ySaySo18LiveSpeechCategoryCGSSA4_yA36_yA2_yAXyA4_yA4_yA4_yA51_AA18_AspectRatioLayoutVGAA12_FrameLayoutVGAA24_ForegroundStyleModifierVyAA5ColorVGG_A43_A54_QPGGGA19_GGSgA0_GAZyA0_A4_yA36_yA6_GA19_GA0_GSgQPGG_Qo__SSQo__Qo__AA0fN0VyytA4_yA4_yA82_AA32_EnvironmentKeyTransformModifierVySbGGA19_GGQo_HO
 - _get_witness_table qd0__7SwiftUI4ViewHD5_AaBPAAE5alert_11isPresented7actions7messageQrqd___AA7BindingVySbGqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAA15ModifiedContentVyALyALy021AccessibilitySettingsB0011AXRSettingsC0V12PlatformList33_9275D5309E8A4441488D751722CF28BCLLVy_AA05TupleK0VyAA7SectionVyAA6SpacerVAcAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA6ToggleVyALyALyAA4TextVAM22AXSUISpecifierModifierVGAA0L18AttachmentModifierVGG_SbQo_A3_G_AVyAA05EmptyC0VA10_A14_GAVyA14_A10_A3_GSgQPGGAA30_EnvironmentKeyWritingModifierVy12CoreGraphics7CGFloatVSgGGAA25_AppearanceActionModifierVGA29_G_SSATyAA6ButtonVyA3_G_A34_QPGA3_Qo_HO
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA15ModifiedContentVy021AccessibilitySettingsB0021AXSUIPlatformFormListC0VyAA05TupleJ0VyAA7SectionVyAA05EmptyC0VAKyAA6ToggleVyAA4TextVGAA0K18AttachmentModifierVGAXG_ARyAtL18AXSUISpecifierLinkVyAxcAE15navigationTitleyQrqd__SyRd__lFQOyAL025LiveSpeechCategoryManagerC0V_SSQo_GAXGAA012_ConditionalJ0VyARyAxPyAL024LiveSpeechPreferredVoiceoC0V_AKyAA6ButtonVyAXGA_GQPGAXGARyAxA7ForEachVySayAL010LiveSpeechlC0V8Keyboard33_F84BBF99126A77109326AAF4AB19F15ALLVGSSA23_012KeyboardItemC0A25_LLVGAXGGQPGGAL13PlatformSheetVyAL032LiveSpeechAddPreferredVoiceSheetC0VGG_Qo_HO
-- _objc_msgSend$cancelPreviousPerformRequestsWithTarget:selector:object:
 - _symbolic ___________y_____yAA_____G______Qo_t 7SwiftUI4TextV AA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonF0Rd__lFQO AA9ModalLinkV 021AccessibilitySettingsB033AssistiveTouchGameControllerSheetV AA05PlainhF0V
 - _symbolic ___________y_____y_____yAA_____G______Qo______GSgt 7SwiftUI4TextV AA15ModifiedContentV AA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonH0Rd__lFQO AA9ModalLinkV 021AccessibilitySettingsB027AssistiveTouchWhatsNewSheetV AA05PlainjH0V AA0M18AttachmentModifierV
 - _symbolic _____yAAyAAyAAy_____y_____y_____ACG______Qo______G_____G_____ySdGG_____G_AAyAAy_____AGG_____y_____GGAAy_____y_____yAAyAAy_____y_____G_____ySbGGAIG______A2_QPGGAGGt 7SwiftUI15ModifiedContentV AA4ViewPAAE08progressE5StyleyQrqd__AA08ProgresseG0Rd__lFQO AA0hE0V AA05EmptyE0V AA06LinearheG0V AA12_FrameLayoutV AA08_PaddingL0V AA18_AnimationModifierV AA023AccessibilityAttachmentO0V AA7DividerV AA011_BackgroundgO0V AA5ColorV AA6HStackV AA05TupleD0V AA6ButtonV AA4TextV AA024_EnvironmentKeyTransformO0V AA6SpacerV

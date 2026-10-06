@@ -2,76 +2,40 @@
 
 > `/System/Library/Frameworks/_RealityKit_ComputeGraph.framework/_RealityKit_ComputeGraph`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5b650` | `0x5af4c` | **`-0x704`** |
+| `__AUTH.__data` | `0x1100` | `0x1070` | **`-0x90`** |
+| `__TEXT.__const` | `0x20f8` | `0x2088` | **`-0x70`** |
+| `__TEXT.__constg_swiftt` | `0xa44` | `0x9ec` | **`-0x58`** |
+| `__TEXT.__swift5_typeref` | `0xd64` | `0xd12` | **`-0x52`** |
+| `__AUTH_CONST.__objc_const` | `0x1af0` | `0x1b30` | **`+0x40`** |
+| `__TEXT.__swift5_fieldmd` | `0xbe4` | `0xbac` | **`-0x38`** |
+| `__DATA.__common` | `0x1b0` | `0x1d0` | **`+0x20`** |
+| `__DATA.__data` | `0xbb0` | `0xb90` | **`-0x20`** |
+| `__TEXT.__unwind_info` | `0x1280` | `0x1260` | **`-0x20`** |
+| `__AUTH_CONST.__const` | `0x1240` | `0x1230` | **`-0x10`** |
+| `__DATA.__bss` | `0x1740` | `0x1730` | **`-0x10`** |
+| `__TEXT.__cstring` | `0xc45` | `0xc35` | **`-0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x842` | `0x832` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x17c8` | `0x17d0` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0xb0` | `0xac` | **`-0x4`** |
+| `__TEXT.__swift5_protos` | `0x8` | `0x4` | **`-0x4`** |
+| `__TEXT.__swift5_types` | `0xe8` | `0xe4` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -30.0.0.0.0
--  __TEXT.__text: 0x56dfc
 +30.40.1.0.0
-+  __TEXT.__text: 0x56784
-   __TEXT.__objc_methlist: 0xeac
--  __TEXT.__const: 0x20f8
--  __TEXT.__cstring: 0xc45
--  __TEXT.__swift5_typeref: 0xd64
-+  __TEXT.__const: 0x2088
-+  __TEXT.__cstring: 0xc35
-+  __TEXT.__swift5_typeref: 0xd12
-   __TEXT.__swift5_capture: 0x1b8
--  __TEXT.__constg_swiftt: 0xa44
--  __TEXT.__swift5_reflstr: 0x842
--  __TEXT.__swift5_fieldmd: 0xbe4
--  __TEXT.__swift5_proto: 0xb0
--  __TEXT.__swift5_types: 0xe8
-+  __TEXT.__constg_swiftt: 0x9ec
-+  __TEXT.__swift5_reflstr: 0x832
-+  __TEXT.__swift5_fieldmd: 0xbac
-+  __TEXT.__swift5_proto: 0xac
-+  __TEXT.__swift5_types: 0xe4
-   __TEXT.__swift5_types2: 0x8
-   __TEXT.__swift_as_entry: 0xd8
-   __TEXT.__swift_as_ret: 0xd8
 
-   __TEXT.__swift5_assocty: 0x60
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__swift5_protos: 0x8
--  __TEXT.__unwind_info: 0x1600
-+  __TEXT.__swift5_protos: 0x4
-+  __TEXT.__unwind_info: 0x15c0
-   __TEXT.__eh_frame: 0x2960
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__got: 0x4a0
--  __AUTH_CONST.__const: 0x1240
--  __AUTH_CONST.__objc_const: 0x1af0
--  __AUTH_CONST.__auth_got: 0x17c8
-+  __AUTH_CONST.__const: 0x1230
-+  __AUTH_CONST.__objc_const: 0x1b30
-+  __AUTH_CONST.__auth_got: 0x17d0
-   __AUTH.__objc_data: 0x300
--  __AUTH.__data: 0x1100
-+  __AUTH.__data: 0x1070
-   __DATA.__objc_ivar: 0x4
--  __DATA.__data: 0xbb0
-+  __DATA.__data: 0xb90
-   __DATA.__objc_stublist: 0x8
--  __DATA.__common: 0x1b0
-+  __DATA.__common: 0x1d0
-   - /System/Library/Frameworks/ComputeGraph.framework/ComputeGraph
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/Metal.framework/Metal
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1301
--  Symbols:   4012
+-  Symbols:   3994
 +  Functions: 1284
-+  Symbols:   3976
-   CStrings:  49
- 
++  Symbols:   3958
 Symbols:
 + _$s10RealityKit11BoundingBoxV14boundingRadiusSfvg
 + _$s12ComputeGraph0B10DefinitionV10OutputInfoV21effectiveSubdivisionsSivg

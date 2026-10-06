@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/SplashBoard.framework/SplashBoard`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_14 : 12 -> 28

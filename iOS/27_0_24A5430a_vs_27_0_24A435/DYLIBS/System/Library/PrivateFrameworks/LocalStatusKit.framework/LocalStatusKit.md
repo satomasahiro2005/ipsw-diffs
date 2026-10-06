@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/LocalStatusKit.framework/LocalStatusKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4114c` | `0x4115c` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x9a0` | `0x9a8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 154.100.1.0.0
--  __TEXT.__text: 0x4114c
-+  __TEXT.__text: 0x4115c
-   __TEXT.__const: 0x4530
-   __TEXT.__swift5_typeref: 0x15e4
-   __TEXT.__cstring: 0x4fa
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x17d8
-   __AUTH_CONST.__objc_const: 0x7f0
--  __AUTH_CONST.__auth_got: 0x9a0
-+  __AUTH_CONST.__auth_got: 0x9a8
-   __DATA.__data: 0x380
-   __DATA_DIRTY.__objc_data: 0x190
-   __DATA_DIRTY.__data: 0x13b8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   Functions: 1402
--  Symbols:   4084
-+  Symbols:   4085
-   CStrings:  58
- 
+-  Symbols:   4074
++  Symbols:   4075
 Symbols:
 + _swift_release_x27
 Functions:

@@ -2,93 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/ComplicationDisplay.framework/ComplicationDisplay`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4072c` | `0x469bc` | **`+0x6290`** |
+| `__AUTH.__data` | `0x138` | `0x420` | **`+0x2e8`** |
+| `__TEXT.__swift5_typeref` | `0x1672` | `0x18ca` | **`+0x258`** |
+| `__AUTH_CONST.__const` | `0x1ba0` | `0x1de0` | **`+0x240`** |
+| `__TEXT.__swift5_capture` | `0x224` | `0x384` | **`+0x160`** |
+| `__DATA.__bss` | `0x1ca8` | `0x1dd8` | **`+0x130`** |
+| `__TEXT.__const` | `0x3646` | `0x3776` | **`+0x130`** |
+| `__TEXT.__unwind_info` | `0x13b0` | `0x14c8` | **`+0x118`** |
+| `__DATA.__data` | `0xed0` | `0xfd8` | **`+0x108`** |
+| `__TEXT.__swift5_fieldmd` | `0xccc` | `0xd4c` | **`+0x80`** |
+| `__TEXT.__constg_swiftt` | `0x12b0` | `0x1324` | **`+0x74`** |
+| `__DATA_CONST.__got` | `0x650` | `0x6c0` | **`+0x70`** |
+| `__TEXT.__swift5_reflstr` | `0xc76` | `0xcd6` | **`+0x60`** |
+| `__AUTH_CONST.__auth_got` | `0xf30` | `0xf88` | **`+0x58`** |
+| `__DATA.__common` | `0x21` | `0x40` | **`+0x1f`** |
+| `__TEXT.__swift5_assocty` | `0x3e8` | `0x400` | **`+0x18`** |
+| `__DATA_CONST.__const` | `0x630` | `0x640` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x11d0` | `0x11e0` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0xb58` | `0xb48` | **`-0x10`** |
+| `__TEXT.__swift5_proto` | `0x100` | `0x108` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0xf8` | `0x100` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2483.512.0.0.0
--  __TEXT.__text: 0x4072c
 +2483.523.0.4.0
-+  __TEXT.__text: 0x469bc
-   __TEXT.__objc_methlist: 0x20f4
--  __TEXT.__const: 0x3646
-+  __TEXT.__const: 0x3776
-   __TEXT.__cstring: 0x666
-   __TEXT.__gcc_except_tab: 0x170
-   __TEXT.__oslogstring: 0x175
-   __TEXT.__ustring: 0x4
--  __TEXT.__swift5_typeref: 0x1672
--  __TEXT.__constg_swiftt: 0x12b0
--  __TEXT.__swift5_fieldmd: 0xccc
--  __TEXT.__swift5_reflstr: 0xc76
-+  __TEXT.__swift5_typeref: 0x18ca
-+  __TEXT.__constg_swiftt: 0x1324
-+  __TEXT.__swift5_fieldmd: 0xd4c
-+  __TEXT.__swift5_reflstr: 0xcd6
-   __TEXT.__swift5_builtin: 0xdc
--  __TEXT.__swift5_assocty: 0x3e8
--  __TEXT.__swift5_capture: 0x224
--  __TEXT.__swift5_proto: 0x100
--  __TEXT.__swift5_types: 0xf8
-+  __TEXT.__swift5_assocty: 0x400
-+  __TEXT.__swift5_capture: 0x384
-+  __TEXT.__swift5_proto: 0x108
-+  __TEXT.__swift5_types: 0x100
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x13b0
-+  __TEXT.__unwind_info: 0x14c8
-   __TEXT.__eh_frame: 0x158
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x630
-+  __DATA_CONST.__const: 0x640
-   __DATA_CONST.__objc_classlist: 0x188
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0xb0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x11d0
-+  __DATA_CONST.__objc_selrefs: 0x11e0
-   __DATA_CONST.__objc_protorefs: 0x58
-   __DATA_CONST.__objc_superrefs: 0xd0
-   __DATA_CONST.__objc_arraydata: 0x30
--  __DATA_CONST.__got: 0x650
--  __AUTH_CONST.__const: 0x1ba0
-+  __DATA_CONST.__got: 0x6c0
-+  __AUTH_CONST.__const: 0x1de0
-   __AUTH_CONST.__cfstring: 0x2e0
-   __AUTH_CONST.__objc_const: 0x4008
-   __AUTH_CONST.__objc_intobj: 0x468
-   __AUTH_CONST.__objc_doubleobj: 0x520
-   __AUTH_CONST.__objc_arrayobj: 0x30
--  __AUTH_CONST.__auth_got: 0xf30
-+  __AUTH_CONST.__auth_got: 0xf88
-   __AUTH.__objc_data: 0x240
--  __AUTH.__data: 0x138
-+  __AUTH.__data: 0x420
-   __DATA.__objc_ivar: 0x20c
--  __DATA.__data: 0xed0
--  __DATA.__bss: 0x1ca8
--  __DATA.__common: 0x21
-+  __DATA.__data: 0xfd8
-+  __DATA.__bss: 0x1dd8
-+  __DATA.__common: 0x40
-   __DATA_DIRTY.__objc_data: 0x15a8
--  __DATA_DIRTY.__data: 0xb58
-+  __DATA_DIRTY.__data: 0xb48
-   __DATA_DIRTY.__bss: 0xcc8
-   __DATA_DIRTY.__common: 0x40
-   - /System/Library/Frameworks/ClockKit.framework/ClockKit
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1982
--  Symbols:   2583
+-  Symbols:   2124
 +  Functions: 2118
-+  Symbols:   2611
-   CStrings:  75
- 
++  Symbols:   2148
 Symbols:
 + _OBJC_CLASS_$_CLKCurrentTimeTextProvider
 + _OBJC_CLASS_$_CLKDateTextProvider
@@ -101,10 +51,6 @@ Symbols:
 + _fmod
 + _get_witness_table 7SwiftUI4ViewRzlAA19_ConditionalContentVyADyAA08TimelineC0VyAA08PeriodicF8ScheduleVAA08ModifiedE0VyAJyADy19ComplicationDisplay0j10CurvedTextC13RepresentableVAK0jlmC0VGAK0jlm17MetricsObservableC8ModifierVGAK0jl5Labelce5ShapeQ0VGGAWGAVGAaBHPAxaBHPAwaBHPAvaBHPAsaBHPApaBHPAmaBHPyHC_AoaBHPyHCHC_ArA0cQ0HPyHCHC_AuaZHPyHCHC_HC_AwaBHPAvaBHPAsaBHPApaBHPAmaBHPyHC_AoaBHPyHCHC_AraZHPyHCHC_AuaZHPyHCHC_HCHC_AvaBHPAsaBHPApaBHPAmaBHPyHC_AoaBHPyHCHC_AraZHPyHCHC_AuaZHPyHCHCHC
 + _get_witness_table 7SwiftUI4ViewRzlAA19_ConditionalContentVyADyAA08TimelineC0VyAA08PeriodicF8ScheduleVAA14GeometryReaderVyAA08ModifiedE0VyALyALyALyADyADy19ComplicationDisplay0l14CornerCircularC0VyxGADyAM0ln11StackedTextC0VAM0lnqC0VyxGGGADyAM0lnp5GaugeC0VAM0lnrC0VyxGGGAA01_E17ShapeKindModifierVyAA4PathVGGA7_GAM0l9ContainervU0VGAA023AccessibilityAttachmentU0VGGGA17_GA16_GAaBHPA18_AaBHPA17_AaBHPA16_AaBHPyHC_HC_A17_AaBHPA16_AaBHPyHC_HCHC_A16_AaBHPyHCHC
-+ _objc_msgSend$calendarUnits
-+ _objc_msgSend$leftLabel
-+ _objc_msgSend$rightLabel
-+ _objc_msgSend$updateFrequency
 + _objc_retain_x10
 + _swift_cvw_initEnumMetadataSinglePayloadWithLayoutString
 + _swift_cvw_singlePayloadEnumGeneric_destructiveInjectEnumTag

@@ -2,153 +2,79 @@
 
 > `/System/Library/PrivateFrameworks/HealthExperienceUI.framework/HealthExperienceUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x617e60` | `0x6c04b4` | **`+0xa8654`** |
+| `__DATA.__bss` | `0x2a688` | `0x38538` | **`+0xdeb0`** |
+| `__TEXT.__const` | `0x32eb4` | `0x38ca4` | **`+0x5df0`** |
+| `__TEXT.__cstring` | `0x1b881` | `0x20311` | **`+0x4a90`** |
+| `__AUTH_CONST.__const` | `0x2b878` | `0x2fb40` | **`+0x42c8`** |
+| `__TEXT.__eh_frame` | `0xcaac` | `0xf82c` | **`+0x2d80`** |
+| `__AUTH.__data` | `0x21240` | `0x23490` | **`+0x2250`** |
+| `__DATA.__data` | `0x119e8` | `0x13708` | **`+0x1d20`** |
+| `__TEXT.__unwind_info` | `0x15ed8` | `0x17858` | **`+0x1980`** |
+| `__TEXT.__objc_methlist` | `0x8a3c` | `0x752c` | **`-0x1510`** |
+| `__TEXT.__constg_swiftt` | `0x2241c` | `0x23918` | **`+0x14fc`** |
+| `__TEXT.__swift5_typeref` | `0xffd8` | `0x114a0` | **`+0x14c8`** |
+| `__AUTH_CONST.__objc_const` | `0x22f50` | `0x21b00` | **`-0x1450`** |
+| `__TEXT.__swift5_fieldmd` | `0x120e0` | `0x131a8` | **`+0x10c8`** |
+| `__DATA_CONST.__got` | `0x3270` | `0x4088` | **`+0xe18`** |
+| `__AUTH.__objc_data` | `0x1b188` | `0x1bf78` | **`+0xdf0`** |
+| `__AUTH_CONST.__auth_got` | `0x5208` | `0x5fd8` | **`+0xdd0`** |
+| `__TEXT.__swift5_reflstr` | `0x12f31` | `0x13cd1` | **`+0xda0`** |
+| `__AUTH_CONST.__cfstring` | `0x1600` | `0xce0` | **`-0x920`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5480` | `0x4cc0` | **`-0x7c0`** |
+| `__TEXT.__swift5_capture` | `0x5adc` | `0x6248` | **`+0x76c`** |
+| `__TEXT.__swift5_proto` | `0x2790` | `0x2eb4` | **`+0x724`** |
+| `__TEXT.__swift5_assocty` | `0x2308` | `0x28e0` | **`+0x5d8`** |
+| `__TEXT.__oslogstring` | `0xcbd4` | `0xd054` | **`+0x480`** |
+| `__DATA_CONST.__const` | `0x31b8` | `0x3028` | **`-0x190`** |
+| `__DATA.__objc_ivar` | `0x2e8` | `0x17c` | **`-0x16c`** |
+| `__TEXT.__swift5_types` | `0x14a0` | `0x1604` | **`+0x164`** |
+| `__TEXT.__swift_as_cont` | `0x328` | `0x448` | **`+0x120`** |
+| `__DATA_CONST.__objc_superrefs` | `0x100` | `0x20` | **`-0xe0`** |
+| `__TEXT.__gcc_except_tab` | `0x1e0` | `0x134` | **`-0xac`** |
+| `__TEXT.__swift_as_entry` | `0x210` | `0x2a0` | **`+0x90`** |
+| `__DATA.__common` | `0xb88` | `0xc00` | **`+0x78`** |
+| `__TEXT.__swift_as_ret` | `0x184` | `0x1e4` | **`+0x60`** |
+| `__DATA_DIRTY.__data` | `0x4250` | `0x4200` | **`-0x50`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x300` | `0x2b8` | **`-0x48`** |
+| `__AUTH_CONST.__objc_intobj` | `0x270` | `0x228` | **`-0x48`** |
+| `__DATA_CONST.__objc_classlist` | `0x1110` | `0x10c8` | **`-0x48`** |
+| `__DATA_DIRTY.__objc_data` | `0x4eb8` | `0x4e78` | **`-0x40`** |
+| `__TEXT.__swift5_builtin` | `0x71c` | `0x758` | **`+0x3c`** |
+| `__TEXT.__swift5_protos` | `0x4d0` | `0x4ec` | **`+0x1c`** |
+| `__DATA.__objc_stublist` | `0xd0` | `0xd8` | **`+0x8`** |
+| `__DATA_CONST.__objc_arraydata` | `0x260` | `0x258` | **`-0x8`** |
+| `__DATA_CONST.__objc_catlist` | `0x40` | `0x48` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x490` | `0x488` | **`-0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x238` | `0x240` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x120` | `0x128` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -7027.0.72.2.7
--  __TEXT.__text: 0x5f0df4
--  __TEXT.__objc_methlist: 0x8a3c
--  __TEXT.__const: 0x32eb4
--  __TEXT.__gcc_except_tab: 0x1e0
--  __TEXT.__cstring: 0x1b881
--  __TEXT.__oslogstring: 0xcbd4
--  __TEXT.__constg_swiftt: 0x2241c
--  __TEXT.__swift5_typeref: 0xffd8
--  __TEXT.__swift5_reflstr: 0x12f31
--  __TEXT.__swift5_fieldmd: 0x120e0
--  __TEXT.__swift5_builtin: 0x71c
--  __TEXT.__swift5_assocty: 0x2308
--  __TEXT.__swift5_proto: 0x2790
--  __TEXT.__swift5_types: 0x14a0
--  __TEXT.__swift5_capture: 0x5adc
--  __TEXT.__swift5_protos: 0x4d0
--  __TEXT.__swift5_mpenum: 0x120
--  __TEXT.__swift_as_entry: 0x210
--  __TEXT.__swift_as_ret: 0x184
--  __TEXT.__swift_as_cont: 0x328
--  __TEXT.__unwind_info: 0x1ce08
--  __TEXT.__eh_frame: 0xcad4
 +7027.1.36.2.7
-+  __TEXT.__text: 0x694e80
-+  __TEXT.__objc_methlist: 0x752c
-+  __TEXT.__const: 0x38ca4
-+  __TEXT.__gcc_except_tab: 0x134
-+  __TEXT.__cstring: 0x20311
-+  __TEXT.__oslogstring: 0xd054
-+  __TEXT.__constg_swiftt: 0x23918
-+  __TEXT.__swift5_typeref: 0x114a0
-+  __TEXT.__swift5_reflstr: 0x13cd1
-+  __TEXT.__swift5_fieldmd: 0x131a8
-+  __TEXT.__swift5_builtin: 0x758
-+  __TEXT.__swift5_assocty: 0x28e0
-+  __TEXT.__swift5_proto: 0x2eb4
-+  __TEXT.__swift5_types: 0x1604
-+  __TEXT.__swift5_capture: 0x6248
-+  __TEXT.__swift5_protos: 0x4ec
-+  __TEXT.__swift5_mpenum: 0x128
-+  __TEXT.__swift_as_entry: 0x2a0
-+  __TEXT.__swift_as_cont: 0x448
-+  __TEXT.__swift_as_ret: 0x1e4
-+  __TEXT.__unwind_info: 0x1f4d0
-+  __TEXT.__eh_frame: 0xf84c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x31b8
--  __DATA_CONST.__objc_classlist: 0x1110
--  __DATA_CONST.__objc_catlist: 0x40
--  __DATA_CONST.__objc_protolist: 0x490
-+  __DATA_CONST.__const: 0x3028
-+  __DATA_CONST.__objc_classlist: 0x10c8
-+  __DATA_CONST.__objc_catlist: 0x48
-+  __DATA_CONST.__objc_protolist: 0x488
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5480
--  __DATA_CONST.__objc_protorefs: 0x238
--  __DATA_CONST.__objc_superrefs: 0x100
--  __DATA_CONST.__objc_arraydata: 0x260
--  __DATA_CONST.__got: 0x3270
--  __AUTH_CONST.__const: 0x2b878
--  __AUTH_CONST.__cfstring: 0x1600
--  __AUTH_CONST.__objc_const: 0x22f50
--  __AUTH_CONST.__objc_intobj: 0x270
--  __AUTH_CONST.__objc_arrayobj: 0x300
--  __AUTH_CONST.__auth_got: 0x5208
--  __AUTH.__objc_data: 0x1b188
--  __AUTH.__data: 0x21240
--  __DATA.__objc_ivar: 0x2e8
--  __DATA.__data: 0x119e8
--  __DATA.__objc_stublist: 0xd0
--  __DATA.__common: 0xb88
--  __DATA_DIRTY.__objc_data: 0x4eb8
--  __DATA_DIRTY.__data: 0x4250
-+  __DATA_CONST.__objc_selrefs: 0x4cc0
-+  __DATA_CONST.__objc_protorefs: 0x240
-+  __DATA_CONST.__objc_superrefs: 0x20
-+  __DATA_CONST.__objc_arraydata: 0x258
-+  __DATA_CONST.__got: 0x4088
-+  __AUTH_CONST.__const: 0x2fb40
-+  __AUTH_CONST.__cfstring: 0xce0
-+  __AUTH_CONST.__objc_const: 0x21b00
-+  __AUTH_CONST.__objc_intobj: 0x228
-+  __AUTH_CONST.__objc_arrayobj: 0x2b8
-+  __AUTH_CONST.__auth_got: 0x5fd8
-+  __AUTH.__objc_data: 0x1bf78
-+  __AUTH.__data: 0x23490
-+  __DATA.__objc_ivar: 0x17c
-+  __DATA.__data: 0x13708
-+  __DATA.__objc_stublist: 0xd8
-+  __DATA.__common: 0xc00
-+  __DATA_DIRTY.__objc_data: 0x4e78
-+  __DATA_DIRTY.__data: 0x4200
-   __DATA_DIRTY.__bss: 0x7000
-   __DATA_DIRTY.__common: 0x170
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 +  - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight
-   - /System/Library/Frameworks/CoreTelephony.framework/CoreTelephony
 
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/Frameworks/UserNotifications.framework/UserNotifications
-   - /System/Library/Frameworks/VisionKit.framework/VisionKit
 -  - /System/Library/PrivateFrameworks/AppSupport.framework/AppSupport
-   - /System/Library/PrivateFrameworks/AppleAccountUI.framework/AppleAccountUI
-   - /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard
-   - /System/Library/PrivateFrameworks/BiomeLibrary.framework/BiomeLibrary
 
-   - /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
-   - /System/Library/PrivateFrameworks/HealthAppHealthDaemonSupport.framework/HealthAppHealthDaemonSupport
-   - /System/Library/PrivateFrameworks/HealthAppServices.framework/HealthAppServices
 +  - /System/Library/PrivateFrameworks/HealthContent.framework/HealthContent
 +  - /System/Library/PrivateFrameworks/HealthContentUI.framework/HealthContentUI
-   - /System/Library/PrivateFrameworks/HealthDomains.framework/HealthDomains
-   - /System/Library/PrivateFrameworks/HealthDomainsUI.framework/HealthDomainsUI
-   - /System/Library/PrivateFrameworks/HealthExperience.framework/HealthExperience
 
-   - /System/Library/PrivateFrameworks/HealthFoundationUI.framework/HealthFoundationUI
-   - /System/Library/PrivateFrameworks/HealthKitAdditions.framework/HealthKitAdditions
-   - /System/Library/PrivateFrameworks/HealthMenstrualCycles.framework/HealthMenstrualCycles
 -  - /System/Library/PrivateFrameworks/HealthOntologyKit.framework/HealthOntologyKit
-   - /System/Library/PrivateFrameworks/HealthOrchestration.framework/HealthOrchestration
-   - /System/Library/PrivateFrameworks/HealthPlatform.framework/HealthPlatform
-   - /System/Library/PrivateFrameworks/HealthPlatformCore.framework/HealthPlatformCore
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 35748
--  Symbols:   12066
+-  Symbols:   9996
 -  CStrings:  3280
 +  Functions: 38324
-+  Symbols:   11615
++  Symbols:   9707
 +  CStrings:  3563
- 
 Symbols:
 + +[ProfileCharacteristicsViewController orderedRowIdentifiersBySectionIdentifierWithNameRowsHidden:pregnancySectionHidden:cardioFitnessMedicationsSectionHidden:workoutZonesSectionHidden:referenceSexSectionHidden:]
 + +[ProfileCharacteristicsViewController orderedSectionIdentifiersWithPregnancySectionHidden:cardioFitnessMedicationsSectionHidden:workoutZonesSectionHidden:referenceSexSectionHidden:]
@@ -476,62 +402,6 @@ Symbols:
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA5GroupVyAA19_ConditionalContentVyAMyAA08ModifiedK0VyAA6VStackVyAA05TupleK0VyAA6SpacerV_AA08ProgressC0VyAA05EmptyC0VAYGAUQPGGAA16_FlexFrameLayoutVGAOyAQyASyAU_AOyAOyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA016_ForegroundStyleY0VyAA22HierarchicalShapeStyleVGGAA4TextVAOyA20_A7_yAA13TextAlignmentOGGAUQPGGAA08_PaddingT0VGG016HealthExperienceB008ReceiptsC0VyA31_22ReceiptsSupportSectionVA31_19ReceiptsListSectionVyAA7ForEachVySayA31_11ReceiptItemVGSSA31_011ReceiptItemC0VGGGGSgG_Qo_HO
 + _kCMTimeZero
 + _keypath_get.7Tm
-+ _objc_msgSend$_clearEditingChromeForSelectedCell
-+ _objc_msgSend$_displayStringForReferenceSex:
-+ _objc_msgSend$_displayStringForSexRow
-+ _objc_msgSend$_fetchReferenceSexFromHealthStore
-+ _objc_msgSend$_referenceSexWithCompletion:
-+ _objc_msgSend$_referenceSexWithError:
-+ _objc_msgSend$_setReferenceSex:error:
-+ _objc_msgSend$absoluteRangeForQuantityType:
-+ _objc_msgSend$absoluteRangeForWorkoutMetric:
-+ _objc_msgSend$activationState
-+ _objc_msgSend$arrayWithObject:
-+ _objc_msgSend$chartPointWithColor:radius:style:
-+ _objc_msgSend$configurationPreferringMonochrome
-+ _objc_msgSend$confirmationRangeForQuantityType:
-+ _objc_msgSend$confirmationRangeForWorkoutMetric:
-+ _objc_msgSend$constant
-+ _objc_msgSend$currentClassificationGuidelinesWithCompletionHandler:
-+ _objc_msgSend$defaultValueForDataEntry
-+ _objc_msgSend$deleteObjectsWithUUIDs:options:completion:
-+ _objc_msgSend$disableLooping
-+ _objc_msgSend$fractionalHeightDimension:
-+ _objc_msgSend$hearingAidOSEligibilityFallback
-+ _objc_msgSend$hk_bilateralLeftSideColor
-+ _objc_msgSend$initWithAsset:
-+ _objc_msgSend$initWithURL:
-+ _objc_msgSend$initWithURL:options:
-+ _objc_msgSend$isMinimumDurationRestricted
-+ _objc_msgSend$itemIdentifiers
-+ _objc_msgSend$loadTracksWithMediaType:completionHandler:
-+ _objc_msgSend$maximum
-+ _objc_msgSend$minimum
-+ _objc_msgSend$minimumAllowedDuration
-+ _objc_msgSend$mulberry
-+ _objc_msgSend$omakase
-+ _objc_msgSend$orderedRowIdentifiersBySectionIdentifierWithNameRowsHidden:pregnancySectionHidden:cardioFitnessMedicationsSectionHidden:workoutZonesSectionHidden:referenceSexSectionHidden:
-+ _objc_msgSend$orderedSectionIdentifiersWithPregnancySectionHidden:cardioFitnessMedicationsSectionHidden:workoutZonesSectionHidden:referenceSexSectionHidden:
-+ _objc_msgSend$pause
-+ _objc_msgSend$play
-+ _objc_msgSend$playerLooperWithPlayer:templateItem:
-+ _objc_msgSend$predicateWithValue:
-+ _objc_msgSend$rate
-+ _objc_msgSend$referenceSex
-+ _objc_msgSend$replaceCurrentItemWithPlayerItem:
-+ _objc_msgSend$seekToTime:toleranceBefore:toleranceAfter:
-+ _objc_msgSend$setAllowsExternalPlayback:
-+ _objc_msgSend$setAutomaticallyUpdatesBackgroundConfiguration:
-+ _objc_msgSend$setDescriptionText:
-+ _objc_msgSend$setMuted:
-+ _objc_msgSend$setPlayer:
-+ _objc_msgSend$setPreventsDisplaySleepDuringVideoPlayback:
-+ _objc_msgSend$setVideoGravity:
-+ _objc_msgSend$setViewRespectsSystemMinimumLayoutMargins:
-+ _objc_msgSend$startObserving:
-+ _objc_msgSend$stopObserving:
-+ _objc_msgSend$valueOrderForDataEntry
-+ _objc_msgSend$viewIfLoaded
 + _swift_task_deinitOnExecutor
 + _swift_task_reportUnexpectedExecutor
 + _symbolic $s18HealthExperienceUI20PendingRouteConsumerP
@@ -1775,224 +1645,6 @@ Symbols:
 - _get_witness_table 7SwiftUI19_ConditionalContentVyAA08ModifiedD0VyAA14LinearGradientV016HealthExperienceB024PlatformCellCornerRadiusVGAH0jK14BackgroundViewVGAA0O0HPAkaOHPAgaOHPyHC_AjA0O8ModifierHPyHCHC_AmaOHPyHCHC
 - _keypath_get.13Tm
 - _keypath_set.4Tm
-- _objc_msgSend$UUIDString
-- _objc_msgSend$_actionWithTitle:image:style:handler:shouldDismissHandler:
-- _objc_msgSend$_activeEnergyDisplayName
-- _objc_msgSend$_activityTypeDescriptionForIndex:
-- _objc_msgSend$_activityTypeForIndex:
-- _objc_msgSend$_cells
-- _objc_msgSend$_contentLabelFrame
-- _objc_msgSend$_createEntryItems
-- _objc_msgSend$_createHXUIInlineDatePickerTableViewCellWithTitle:datePickerMode:maxDate:
-- _objc_msgSend$_createHXUIInlinePickerTableViewCellWithTitle:
-- _objc_msgSend$_createUITableViewCell
-- _objc_msgSend$_createWDManualDataEntryTableViewCellWithDisplayName:unitName:entryType:highlightWhenEditing:
-- _objc_msgSend$_dataValidated
-- _objc_msgSend$_datePickerDidChange:
-- _objc_msgSend$_defaultSelectedIndex
-- _objc_msgSend$_didUpdateValue
-- _objc_msgSend$_disambiguateDateComponents:withCompletion:
-- _objc_msgSend$_displayTypeForDistanceType:
-- _objc_msgSend$_displayTypeForIdentifier:
-- _objc_msgSend$_distanceDisplayName
-- _objc_msgSend$_endItemDidChange
-- _objc_msgSend$_feetUnitString
-- _objc_msgSend$_generateSortedActivityTypes
-- _objc_msgSend$_generateValue:
-- _objc_msgSend$_hasCategoryValueEntryItem
-- _objc_msgSend$_inchUnitString
-- _objc_msgSend$_indexOfActivityType:
-- _objc_msgSend$_inputUnitIsFeetWithDisplayType:unitController:
-- _objc_msgSend$_isExcludedActivityType:
-- _objc_msgSend$_orderedTitlesForCategoryValuePicker
-- _objc_msgSend$_pickerFrame
-- _objc_msgSend$_quantityFromEntryItem:unit:
-- _objc_msgSend$_quantityWithBeatsPerMinute:
-- _objc_msgSend$_removeDecimalSeparatorsFromText:
-- _objc_msgSend$_sanitizedTextFieldText:
-- _objc_msgSend$_saveDisambiguatedDate:
-- _objc_msgSend$_sectionHeaderView
-- _objc_msgSend$_sectionsForDistanceType:
-- _objc_msgSend$_selectedActivityType
-- _objc_msgSend$_setDefaultValuesIfNecessary
-- _objc_msgSend$_setSymptomsStatus:
-- _objc_msgSend$_setupConstraints
-- _objc_msgSend$_setupEntryItems
-- _objc_msgSend$_setupIntegerNumberFormatterIfNeeded
-- _objc_msgSend$_setupTableViewCells
-- _objc_msgSend$_setupUIWithDisplayName:unitName:
-- _objc_msgSend$_showValidationConfirmAlertWithErrorString:
-- _objc_msgSend$_showValidationErrorAlertWithErrorString:
-- _objc_msgSend$_startItemDidChange
-- _objc_msgSend$_systolicAndDiastolicHaveValues
-- _objc_msgSend$_timePickerDidChange:
-- _objc_msgSend$_totalDistance
-- _objc_msgSend$_totalEnergyBurned
-- _objc_msgSend$_unitForDistanceType:
-- _objc_msgSend$_updateCellLabels
-- _objc_msgSend$_updateCurrentDistanceTypeWithActivityType:
-- _objc_msgSend$_updateDecimalSeparator
-- _objc_msgSend$_updateDisplayNameLabelConstraints
-- _objc_msgSend$_updateFont
-- _objc_msgSend$_updateManualEntryItemWithCurrentBMI:
-- _objc_msgSend$_updateMargins
-- _objc_msgSend$_updateMarginsForWidthDesignation:
-- _objc_msgSend$_updateTableViewCell
-- _objc_msgSend$_updateTableViewCellValue
-- _objc_msgSend$_wd_deliveryReason
-- _objc_msgSend$_workoutWithActivityType:startDate:endDate:workoutEvents:totalEnergyBurned:totalDistance:device:metadata:
-- _objc_msgSend$accessibilityLabel
-- _objc_msgSend$accessoryType
-- _objc_msgSend$addAverageHeartRate:
-- _objc_msgSend$addClassification:
-- _objc_msgSend$addConstraints:
-- _objc_msgSend$addObjectsFromArray:
-- _objc_msgSend$addSamples:toWorkout:completion:
-- _objc_msgSend$arrayWithArray:
-- _objc_msgSend$bodyFont
-- _objc_msgSend$builderFromDataFile:startDate:
-- _objc_msgSend$calculateBMIWithCompletion:
-- _objc_msgSend$categorySampleWithType:value:startDate:endDate:device:metadata:
-- _objc_msgSend$categoryTypeForIdentifier:
-- _objc_msgSend$categoryValueEntryItem
-- _objc_msgSend$cellAtIndex:
-- _objc_msgSend$cellForItemTapped:
-- _objc_msgSend$characterDirectionForLanguage:
-- _objc_msgSend$commandWithTitle:image:action:input:modifierFlags:propertyList:
-- _objc_msgSend$components:fromDate:
-- _objc_msgSend$componentsJoinedByString:
-- _objc_msgSend$componentsSeparatedByString:
-- _objc_msgSend$conformsToProtocol:
-- _objc_msgSend$constraintsWithVisualFormat:options:metrics:views:
-- _objc_msgSend$contentLabelHeightForBoundsSize:
-- _objc_msgSend$copy
-- _objc_msgSend$correlationTypeForIdentifier:
-- _objc_msgSend$createValueFieldManualEntryItem
-- _objc_msgSend$dataWithContentsOfURL:
-- _objc_msgSend$dateByAddingTimeInterval:
-- _objc_msgSend$dateCache
-- _objc_msgSend$dateEntryItem
-- _objc_msgSend$datePicker
-- _objc_msgSend$dateTimeEntryItem
-- _objc_msgSend$dateTimeItemWithMaximumDate:displayName:
-- _objc_msgSend$dateTimeItemWithMaximumDate:highlightWhenEditing:displayName:
-- _objc_msgSend$decimalSeparator
-- _objc_msgSend$defaultEditingItem
-- _objc_msgSend$defaultMetadata
-- _objc_msgSend$deliveryReasonEntryItem
-- _objc_msgSend$displayNameKey
-- _objc_msgSend$durationItemWithMaximumDate:
-- _objc_msgSend$endEditing
-- _objc_msgSend$endOfDayMidnight
-- _objc_msgSend$enumerateObjectsUsingBlock:
-- _objc_msgSend$era
-- _objc_msgSend$expanded
-- _objc_msgSend$expandedHeight
-- _objc_msgSend$finishWithDevice:metadata:
-- _objc_msgSend$firstObject
-- _objc_msgSend$generateHKObjects
-- _objc_msgSend$generateValue
-- _objc_msgSend$getLabelFramesForSize:titleFrame:detailFrame:
-- _objc_msgSend$heightPickerItemWithFeetUnitString:inchUnitString:
-- _objc_msgSend$hk_addConstraintsWithFormat:options:views:
-- _objc_msgSend$hk_dateWithTruncatedSecond
-- _objc_msgSend$hk_disambiguatedDSTDatesForComponents:
-- _objc_msgSend$hk_heartRhythmDefaults
-- _objc_msgSend$hk_map:
-- _objc_msgSend$hour
-- _objc_msgSend$indexPathsForVisibleRows
-- _objc_msgSend$initWithDisplayName:
-- _objc_msgSend$initWithDisplayName:unitName:dataEntryType:
-- _objc_msgSend$initWithDisplayType:healthStore:unitController:initialStartDate:dateCache:
-- _objc_msgSend$initWithMaximumDate:
-- _objc_msgSend$initWithMaximumDate:highlightWhenEditing:datePickerMode:displayName:
-- _objc_msgSend$initWithMaximumEndDate:
-- _objc_msgSend$initWithSections:
-- _objc_msgSend$initWithTitle:
-- _objc_msgSend$initWithTitle:datePickerMode:maxDate:
-- _objc_msgSend$inputView
-- _objc_msgSend$isPinnedInBrowse
-- _objc_msgSend$itemForCell:
-- _objc_msgSend$localizedCaseInsensitiveCompare:
-- _objc_msgSend$localizedLongDisplayNameForDisplayType:
-- _objc_msgSend$lumberjack
-- _objc_msgSend$manualDataEntryTableViewCell:valueDidChangeToValue:
-- _objc_msgSend$manualEntryItemDidUpdate:
-- _objc_msgSend$manualEntryItemsForSection:
-- _objc_msgSend$manualEntrySpinner:titleForRow:
-- _objc_msgSend$mealTimeEntryItem
-- _objc_msgSend$minute
-- _objc_msgSend$multiSelectItemWithEntries:selectedIndex:
-- _objc_msgSend$newBuilderWithStartDate:
-- _objc_msgSend$numberOfCells
-- _objc_msgSend$numberOfLines
-- _objc_msgSend$numberOfRowsInManualEntrySpinner:
-- _objc_msgSend$numberOfRowsInSection:
-- _objc_msgSend$numberOfSections
-- _objc_msgSend$numberWithBool:
-- _objc_msgSend$numberWithUnsignedInteger:
-- _objc_msgSend$numericItemWithManualEntryType:numberFormatter:
-- _objc_msgSend$oneMinuteBeforeEndOfDayMidnight
-- _objc_msgSend$orderedRowIdentifiersBySectionIdentifierWithNameRowsHidden:pregnancySectionHidden:cardioFitnessMedicationsSectionHidden:workoutZonesSectionHidden:
-- _objc_msgSend$orderedSectionIdentifiersWithPregnancySectionHidden:cardioFitnessMedicationsSectionHidden:workoutZonesSectionHidden:
-- _objc_msgSend$pickerView
-- _objc_msgSend$pickerView:maxWidthForComponent:
-- _objc_msgSend$profile
-- _objc_msgSend$quantitySampleWithType:quantity:startDate:endDate:
-- _objc_msgSend$registerForTraitChanges:withHandler:
-- _objc_msgSend$reloadContent
-- _objc_msgSend$reloadManualEntryItemsAndReloadTableView:
-- _objc_msgSend$removeConstraints:
-- _objc_msgSend$saveHKObjectWithCompletion:
-- _objc_msgSend$saveObjects:deleteObjects:associations:completion:
-- _objc_msgSend$secondaryLabel
-- _objc_msgSend$selectedDateRange
-- _objc_msgSend$setDetailTextColor:
-- _objc_msgSend$setEra:
-- _objc_msgSend$setExpanded:
-- _objc_msgSend$setFeetUnitString:
-- _objc_msgSend$setHour:
-- _objc_msgSend$setInchUnitString:
-- _objc_msgSend$setManualEntryType:
-- _objc_msgSend$setMinute:
-- _objc_msgSend$setNumberFormatter:
-- _objc_msgSend$setPreferredContentSize:
-- _objc_msgSend$setSavingEnabled:
-- _objc_msgSend$setSecondaryLabel:
-- _objc_msgSend$setSelectedIndex:
-- _objc_msgSend$setSensitive:
-- _objc_msgSend$setShouldHighlightWhenEditing:
-- _objc_msgSend$setTitles:
-- _objc_msgSend$setWithObjects:
-- _objc_msgSend$set_wd_deliveryReason:
-- _objc_msgSend$setupConstraints
-- _objc_msgSend$sharingInBrowse
-- _objc_msgSend$sortUsingComparator:
-- _objc_msgSend$stringByReplacingOccurrencesOfString:withString:
-- _objc_msgSend$symptomSamplesForElectrocardiogram:
-- _objc_msgSend$tableViewCells
-- _objc_msgSend$textColor
-- _objc_msgSend$timeIntervalSinceDate:
-- _objc_msgSend$timeZone
-- _objc_msgSend$twoPartDateRangeItemWithMaximumEndDate:
-- _objc_msgSend$twoPartDateTimeItemWithMaximumDate:
-- _objc_msgSend$unitController
-- _objc_msgSend$updatePreferredContentSize
-- _objc_msgSend$updateSavingEnabled
-- _objc_msgSend$useDuration
-- _objc_msgSend$useSingleStartAndEndDate
-- _objc_msgSend$validateDataWithCompletion:
-- _objc_msgSend$validateMaximumAllowedDurationFor:endDate:competion:
-- _objc_msgSend$validateWorkoutDistance:
-- _objc_msgSend$validateWorkoutEnergyBurned:
-- _objc_msgSend$valueFieldManualEntryItem
-- _objc_msgSend$valueRangeWithMinValue:maxValue:
-- _objc_msgSend$wd_addDataViewControllerClass
-- _objc_msgSend$wd_addDataViewControllerWithHealthStore:healthToolBox:initialStartDate:
-- _objc_msgSend$wd_addDataViewControllerWithHealthStore:unitController:initialStartDate:dateCache:
-- _objc_msgSend$wd_defaultValueForAddDataViewController
-- _objc_msgSend$wd_outOfRangeAlertDisplayName
-- _objc_msgSend$wd_valueOrderForAddDataViewController
 - _objc_retain_x5
 - _objc_unsafeClaimAutoreleasedReturnValue
 - _swift_continuation_throwingResume

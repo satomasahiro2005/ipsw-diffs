@@ -2,56 +2,21 @@
 
 > `/System/Library/Frameworks/SceneKit.framework/SceneKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x393de0` | `0x393ccc` | **`-0x114`** |
+| `__AUTH.__objc_data` | `0x4290` | `0x4380` | **`+0xf0`** |
+| `__DATA_DIRTY.__objc_data` | `0x230` | `0x140` | **`-0xf0`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__oslogstring`
+
+### Other Changes
+
 ```diff
-
--  __TEXT.__text: 0x393de0
-+  __TEXT.__text: 0x393ccc
-   __TEXT.__objc_methlist: 0x1793c
-   __TEXT.__const: 0x26298
-   __TEXT.__oslogstring: 0x167ad
-
-   __AUTH_CONST.__objc_dictobj: 0xf0
-   __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__auth_got: 0x1758
--  __AUTH.__objc_data: 0x4290
-+  __AUTH.__objc_data: 0x4380
-   __AUTH.__data: 0x4d70
-   __DATA.__objc_ivar: 0x1c94
-   __DATA.__data: 0x293c
-   __DATA.__bss: 0x2eb8
-   __DATA.__common: 0x1d1
--  __DATA_DIRTY.__objc_data: 0x230
-+  __DATA_DIRTY.__objc_data: 0x140
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__oslogstring : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__objc_ivar : content changed
-~ __DATA.__data : content changed
 Functions:
 ~ _C3DMeshElementConvertStripToTriangleList : 404 -> 400
 ~ ___MergeRendererElementsSharingSameMaterial : 1060 -> 1080
@@ -132,5 +97,4 @@ Functions:
 CStrings:
 + "Welcome to SceneKit 611 (Jun 23 2026 04:45:12)"
 - "Welcome to SceneKit 611 (Jun  9 2026 19:20:56)"
-
 ```

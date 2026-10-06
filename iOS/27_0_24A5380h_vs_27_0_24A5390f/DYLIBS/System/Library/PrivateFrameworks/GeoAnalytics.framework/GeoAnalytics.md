@@ -2,101 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/GeoAnalytics.framework/GeoAnalytics`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x92dc4` | `0x94754` | **`+0x1990`** |
+| `__AUTH_CONST.__objc_const` | `0x2960` | `0x2e88` | **`+0x528`** |
+| `__TEXT.__gcc_except_tab` | `0xae0` | `0x680` | **`-0x460`** |
+| `__TEXT.__objc_methlist` | `0x237c` | `0x2504` | **`+0x188`** |
+| `__DATA.__data` | `0x310` | `0x490` | **`+0x180`** |
+| `__AUTH.__objc_data` | `0x50` | `0x140` | **`+0xf0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4090` | `0x4130` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0xfe8` | `0x1078` | **`+0x90`** |
+| `__TEXT.__oslogstring` | `0x1035` | `0x10be` | **`+0x89`** |
+| `__TEXT.__cstring` | `0xe3b4` | `0xe42a` | **`+0x76`** |
+| `__AUTH_CONST.__cfstring` | `0x13ce0` | `0x13d40` | **`+0x60`** |
+| `__AUTH_CONST.__const` | `0x2ed8` | `0x2ef8` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x1b0` | `0x1d0` | **`+0x20`** |
+| `__DATA_CONST.__objc_protolist` | `0x40` | `0x60` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x4e8` | `0x500` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0xf8` | `0x110` | **`+0x18`** |
+| `__DATA.__bss` | `0x110` | `0x120` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x698` | `0x6a8` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x98` | `0xa0` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -2075.30.6.12.3
--  __TEXT.__text: 0x92dc4
--  __TEXT.__objc_methlist: 0x237c
 +2075.30.6.12.8
-+  __TEXT.__text: 0x94754
-+  __TEXT.__objc_methlist: 0x2504
-   __TEXT.__const: 0x74c
-   __TEXT.__dlopen_cstrs: 0x126
-   __TEXT.__swift5_typeref: 0x4e
 
-   __TEXT.__swift5_fieldmd: 0x44
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_types: 0x8
--  __TEXT.__gcc_except_tab: 0xae0
--  __TEXT.__cstring: 0xe3b4
--  __TEXT.__oslogstring: 0x1035
--  __TEXT.__unwind_info: 0xfe8
-+  __TEXT.__gcc_except_tab: 0x680
-+  __TEXT.__cstring: 0xe42a
-+  __TEXT.__oslogstring: 0x10be
-+  __TEXT.__unwind_info: 0x1078
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x68d8
--  __DATA_CONST.__objc_classlist: 0xf8
-+  __DATA_CONST.__objc_classlist: 0x110
-   __DATA_CONST.__objc_catlist: 0x8
--  __DATA_CONST.__objc_protolist: 0x40
-+  __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4090
-+  __DATA_CONST.__objc_selrefs: 0x4130
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__objc_superrefs: 0x98
-+  __DATA_CONST.__objc_superrefs: 0xa0
-   __DATA_CONST.__objc_arraydata: 0xe78
--  __DATA_CONST.__got: 0x698
--  __AUTH_CONST.__const: 0x2ed8
--  __AUTH_CONST.__cfstring: 0x13ce0
--  __AUTH_CONST.__objc_const: 0x2960
-+  __DATA_CONST.__got: 0x6a8
-+  __AUTH_CONST.__const: 0x2ef8
-+  __AUTH_CONST.__cfstring: 0x13d40
-+  __AUTH_CONST.__objc_const: 0x2e88
-   __AUTH_CONST.__objc_intobj: 0x1c68
-   __AUTH_CONST.__objc_dictobj: 0x4b0
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__objc_arrayobj: 0x300
--  __AUTH_CONST.__auth_got: 0x4e8
--  __AUTH.__objc_data: 0x50
-+  __AUTH_CONST.__auth_got: 0x500
-+  __AUTH.__objc_data: 0x140
-   __AUTH.__data: 0x40
--  __DATA.__objc_ivar: 0x1b0
--  __DATA.__data: 0x310
--  __DATA.__bss: 0x110
-+  __DATA.__objc_ivar: 0x1d0
-+  __DATA.__data: 0x490
-+  __DATA.__bss: 0x120
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0x960
-   __DATA_DIRTY.__data: 0x10
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 1484
--  Symbols:   4765
+-  Symbols:   2971
 -  CStrings:  2726
 +  Functions: 1544
-+  Symbols:   4899
++  Symbols:   3089
 +  CStrings:  2735
- 
 Symbols:
 + -[GEOAPFinderSession .cxx_destruct]
 + -[GEOAPFinderSession _clearTimer]
@@ -264,22 +206,6 @@ Symbols:
 + ___block_descriptor_56_e8_32s40s48r_e5_v8?0lr48l8s32l8s40l8
 + _createStateWithType
 + _dispatch_assert_queue$V2
-+ _objc_msgSend$_clearTimer
-+ _objc_msgSend$_handleExpiration
-+ _objc_msgSend$_isValidSession:
-+ _objc_msgSend$_updateSessionData
-+ _objc_msgSend$bestReferenceTime
-+ _objc_msgSend$createTime
-+ _objc_msgSend$deregisterForChange:
-+ _objc_msgSend$finderSessionData
-+ _objc_msgSend$finderSessionDataChanged
-+ _objc_msgSend$hasRotated
-+ _objc_msgSend$initWithMonitor:timeProvider:sessionDataProvider:
-+ _objc_msgSend$isEqual:
-+ _objc_msgSend$now
-+ _objc_msgSend$registerForChange:onQueue:
-+ _objc_msgSend$session:didExpireAt:
-+ _objc_msgSend$sessionDuration
 + _objc_storeWeak
 - GCC_except_table1026
 - GCC_except_table1051

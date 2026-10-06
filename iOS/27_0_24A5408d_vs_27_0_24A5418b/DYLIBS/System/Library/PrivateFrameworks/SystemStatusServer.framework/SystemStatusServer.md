@@ -2,75 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/SystemStatusServer.framework/SystemStatusServer`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21038` | `0x1fc7c` | **`-0x13bc`** |
+| `__TEXT.__oslogstring` | `0x1001` | `0xaee` | **`-0x513`** |
+| `__AUTH_CONST.__objc_const` | `0x4528` | `0x4260` | **`-0x2c8`** |
+| `__TEXT.__objc_methlist` | `0x1ef8` | `0x1d90` | **`-0x168`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1490` | `0x1370` | **`-0x120`** |
+| `__TEXT.__cstring` | `0x1dd5` | `0x1cde` | **`-0xf7`** |
+| `__AUTH_CONST.__cfstring` | `0x1840` | `0x1780` | **`-0xc0`** |
+| `__AUTH_CONST.__const` | `0x2e0` | `0x280` | **`-0x60`** |
+| `__TEXT.__unwind_info` | `0x8c8` | `0x870` | **`-0x58`** |
+| `__AUTH.__objc_data` | `0x50` | `—` | **`-0x50`** |
+| `__DATA_CONST.__got` | `0x450` | `0x418` | **`-0x38`** |
+| `__TEXT.__gcc_except_tab` | `0x35c` | `0x328` | **`-0x34`** |
+| `__DATA.__objc_ivar` | `0x2cc` | `0x2a4` | **`-0x28`** |
+| `__DATA_CONST.__const` | `0xe28` | `0xe00` | **`-0x28`** |
+| `__DATA_DIRTY.__bss` | `0x80` | `0x60` | **`-0x20`** |
+| `__TEXT.__const` | `0xe0` | `0xd0` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x130` | `0x128` | **`-0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x110` | `0x108` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -286.101.0.0.0
--  __TEXT.__text: 0x21038
--  __TEXT.__objc_methlist: 0x1ef8
--  __TEXT.__const: 0xe0
 +286.104.0.0.0
-+  __TEXT.__text: 0x1fc7c
-+  __TEXT.__objc_methlist: 0x1d90
-+  __TEXT.__const: 0xd0
-   __TEXT.__dlopen_cstrs: 0x52
--  __TEXT.__cstring: 0x1dd5
--  __TEXT.__gcc_except_tab: 0x35c
--  __TEXT.__oslogstring: 0x1001
--  __TEXT.__unwind_info: 0x8c8
-+  __TEXT.__cstring: 0x1cde
-+  __TEXT.__gcc_except_tab: 0x328
-+  __TEXT.__oslogstring: 0xaee
-+  __TEXT.__unwind_info: 0x870
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xe28
--  __DATA_CONST.__objc_classlist: 0x130
-+  __DATA_CONST.__const: 0xe00
-+  __DATA_CONST.__objc_classlist: 0x128
-   __DATA_CONST.__objc_protolist: 0xf8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1490
--  __DATA_CONST.__objc_superrefs: 0x110
--  __DATA_CONST.__got: 0x450
--  __AUTH_CONST.__const: 0x2e0
--  __AUTH_CONST.__cfstring: 0x1840
--  __AUTH_CONST.__objc_const: 0x4528
-+  __DATA_CONST.__objc_selrefs: 0x1370
-+  __DATA_CONST.__objc_superrefs: 0x108
-+  __DATA_CONST.__got: 0x418
-+  __AUTH_CONST.__const: 0x280
-+  __AUTH_CONST.__cfstring: 0x1780
-+  __AUTH_CONST.__objc_const: 0x4260
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x50
--  __DATA.__objc_ivar: 0x2cc
-+  __DATA.__objc_ivar: 0x2a4
-   __DATA.__data: 0xba0
-   __DATA_DIRTY.__objc_ivar: 0x8
-   __DATA_DIRTY.__objc_data: 0xb90
--  __DATA_DIRTY.__bss: 0x80
-+  __DATA_DIRTY.__bss: 0x60
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/CoreTelephony.framework/CoreTelephony
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 777
--  Symbols:   2261
+-  Symbols:   1735
 -  CStrings:  314
 +  Functions: 741
-+  Symbols:   2173
++  Symbols:   1671
 +  CStrings:  288
- 
 Symbols:
 + _BSDispatchQueueCreateSerialWithQoS
-+ _objc_msgSend$_setQueue:
-+ _objc_msgSend$remoteObjectProxy
 - +[STStatusDomainXPCClientWakeUpAssertion _watchdogQueue]
 - -[STStatusDomainXPCClientWakeUpAssertion .cxx_destruct]
 - -[STStatusDomainXPCClientWakeUpAssertion _acquireNewHandleMessageAssertion]
@@ -136,32 +105,6 @@ Symbols:
 - ___73-[STStatusDomainXPCClientHandle observeData:forDomain:withChangeContext:]_block_invoke_5
 - ___STSystemStatusLogClientWakeUp_block_invoke
 - ___block_descriptor_40_e8_32w_e31_v16?0"BSContinuousMachTimer"8lw32l8
-- _objc_msgSend$_acquireNewHandleMessageAssertion
-- _objc_msgSend$_cancelWatchdogTimer
-- _objc_msgSend$_invalidateHandleMessageAssertion
-- _objc_msgSend$_startNewWatchdogTimer
-- _objc_msgSend$_terminateClient
-- _objc_msgSend$_watchdogQueue
-- _objc_msgSend$_watchdogQueue_cancelWatchdogTimer
-- _objc_msgSend$acquire
-- _objc_msgSend$acquireWithError:
-- _objc_msgSend$attributeWithDomain:name:
-- _objc_msgSend$clientPID
-- _objc_msgSend$execute:
-- _objc_msgSend$initWithClientAuditToken:queue:
-- _objc_msgSend$initWithExplanation:
-- _objc_msgSend$initWithExplanation:target:attributes:
-- _objc_msgSend$initWithPredicate:context:
-- _objc_msgSend$isApplication
-- _objc_msgSend$localizedDescription
-- _objc_msgSend$predicateMatching:
-- _objc_msgSend$relinquish
-- _objc_msgSend$setExceptionCode:
-- _objc_msgSend$setInvalidateHandleMessageAssertionTimer:
-- _objc_msgSend$setMaximumTerminationResistance:
-- _objc_msgSend$setReportType:
-- _objc_msgSend$setWatchdogTimer:
-- _objc_msgSend$targetWithPid:
 CStrings:
 + "com.apple.systemstatus.publisher.xpcconnectionqueue.client-%d"
 - "ClientWakeUp"

@@ -2,204 +2,80 @@
 
 > `/System/Library/PrivateFrameworks/WeatherMaps.framework/WeatherMaps`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c06e0` | `0x1c4efc` | **`+0x481c`** |
+| `__DATA.__bss` | `0xef20` | `0xd010` | **`-0x1f10`** |
+| `__DATA_DIRTY.__data` | `0x6bc0` | `0x7ba0` | **`+0xfe0`** |
+| `__TEXT.__const` | `0x15954` | `0x149d4` | **`-0xf80`** |
+| `__TEXT.__unwind_info` | `0x7a98` | `0x6fa8` | **`-0xaf0`** |
+| `__DATA.__data` | `0x2cb0` | `0x36b0` | **`+0xa00`** |
+| `__DATA_DIRTY.__bss` | `0x7530` | `0x6c80` | **`-0x8b0`** |
+| `__AUTH_CONST.__const` | `0x126e8` | `0x120a1` | **`-0x647`** |
+| `__TEXT.__swift5_fieldmd` | `0x8c70` | `0x8734` | **`-0x53c`** |
+| `__TEXT.__swift5_reflstr` | `0x8b58` | `0x86ae` | **`-0x4aa`** |
+| `__TEXT.__cstring` | `0x68f1` | `0x64c1` | **`-0x430`** |
+| `__TEXT.__swift5_capture` | `0x3180` | `0x3508` | **`+0x388`** |
+| `__TEXT.__constg_swiftt` | `0x8378` | `0x802c` | **`-0x34c`** |
+| `__TEXT.__swift5_typeref` | `0x9390` | `0x906e` | **`-0x322`** |
+| `__TEXT.__swift5_types` | `0xa64` | `0x794` | **`-0x2d0`** |
+| `__TEXT.__oslogstring` | `0x6b0d` | `0x695d` | **`-0x1b0`** |
+| `__TEXT.__swift5_proto` | `0xc88` | `0xba0` | **`-0xe8`** |
+| `__AUTH_CONST.__objc_const` | `0xeda0` | `0xed00` | **`-0xa0`** |
+| `__TEXT.__swift_as_entry` | `0x2a4` | `0x210` | **`-0x94`** |
+| `__TEXT.__swift5_assocty` | `0x788` | `0x710` | **`-0x78`** |
+| `__TEXT.__objc_methlist` | `0x3148` | `0x30d8` | **`-0x70`** |
+| `__TEXT.__swift_as_ret` | `0x23c` | `0x1cc` | **`-0x70`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2658` | `0x2608` | **`-0x50`** |
+| `__DATA_CONST.__const` | `0x308` | `0x2c8` | **`-0x40`** |
+| `__TEXT.__eh_frame` | `0x8bd0` | `0x8bac` | **`-0x24`** |
+| `__TEXT.__swift_as_cont` | `0x5b8` | `0x594` | **`-0x24`** |
+| `__DATA_CONST.__objc_protolist` | `0x1d8` | `0x1b8` | **`-0x20`** |
+| `__AUTH.__data` | `0x3990` | `0x39a8` | **`+0x18`** |
+| `__DATA.__common` | `0x1b8` | `0x1a8` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x1058` | `0x1048` | **`-0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0xf0` | `0xe0` | **`-0x10`** |
+| `__DATA_DIRTY.__objc_data` | `0x17b0` | `0x17c0` | **`+0x10`** |
+| `__AUTH.__objc_data` | `0x2718` | `0x2710` | **`-0x8`** |
+| `__AUTH_CONST.__auth_got` | `0x2930` | `0x2928` | **`-0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x284` | `0x27c` | **`-0x8`** |
+| `__TEXT.__swift5_protos` | `0x1bc` | `0x1b8` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1431.1.0.0.0
--  __TEXT.__text: 0x1c06e0 sha256:7ea02579f0f9e938c84ed0c3675e0c51c4c578c1f5bbbba24a23e1a0ab957f5e
--  __TEXT.__objc_methlist: 0x3148 sha256:5b406f43293942dffdeb543638c906f749791a091eb25bb46659b1cfa0b513eb
--  __TEXT.__const: 0x15954 sha256:6f653e5df15ad4025ce54cb288f1ca82b20c60ab14ef99c19a6e20be44fa5b2a
 +1435.0.0.0.0
-+  __TEXT.__text: 0x1c4efc sha256:36ac3cd17a01a861ac6deefacef16a2f4e40eebf434c8d59eaae628aa2a86296
-+  __TEXT.__objc_methlist: 0x30d8 sha256:a74ee1ff41c6b55b62339e6b85e2d8ac3358453bb174cbcef854bf0558d1fb84
-+  __TEXT.__const: 0x149d4 sha256:b37d1d5caf0d77ae32f91d988f4d438d990239cc36214f010fbede2fd8ef3acb
-   __TEXT.__gcc_except_tab: 0x30 sha256:2993105b8db25d7508996437d526afe13742f3086d8e71e9d4807ea3950278ca
--  __TEXT.__constg_swiftt: 0x8378 sha256:a368dbea0adcc11d093ea1f4d359a645e9e3785e7ad68f1ca64757c80745fd61
--  __TEXT.__swift5_typeref: 0x9390 sha256:8539b600b111ab4fc84a56cfdf9f29bb03cffc79413c83c5e19afa5fe90df218
--  __TEXT.__swift5_builtin: 0x488 sha256:bf39ddeb7aeefc356dad3c86319b41494999f2c5ac6adbb04b5c81a7398dfc6a
--  __TEXT.__swift5_mpenum: 0x284 sha256:9305dca8bfe158b50ad94605ca171831bed9404d87aeb3058a9f89e343e8017d
--  __TEXT.__swift5_reflstr: 0x8b58 sha256:3e6cc19c349888efb472f2de21d9f8074d6f1d26d65b21fac30950aa7c4c6bf5
--  __TEXT.__swift5_fieldmd: 0x8c70 sha256:0dc6056a32fd408902ee8c34f25d5a4daff0c6c414e51ee2002ef40d9f7f2e68
--  __TEXT.__swift5_types: 0xa64 sha256:cb8f70963b887bd31002b3b1643ed71203f9b686155eefb176f0edf3cb59c8cc
--  __TEXT.__swift5_proto: 0xc88 sha256:b2dd3559637dadc34e33cb87ecdc6bbde0b681f78fa6b77b2f1542aac6da466e
--  __TEXT.__swift5_capture: 0x3180 sha256:8284f5e6dc6f3a4b792a06e68cbfff536a42d084def5b5b1733fdbfb55375be5
--  __TEXT.__cstring: 0x68f1 sha256:800e7ba8f47cd2079c36b882480529d3ee59d5819cae1f04aec05a6e8789d10c
--  __TEXT.__swift5_protos: 0x1bc sha256:32efd6e1829a2e887dc95a3eabac0c3e24355cadcc02def6157848d4f94bbd82
--  __TEXT.__oslogstring: 0x6b0d sha256:6eadb631881064714122983e42d105845fa10bddddd29a84a1e18928151b5458
--  __TEXT.__swift5_assocty: 0x788 sha256:4f8029a7eb1b8fa793f1fa59dc71fbf03f23b0a53be9c08a3e9ac1f5fb812bc6
--  __TEXT.__swift_as_entry: 0x2a4 sha256:240e01c65d8b9b8da688dcf301b0a028deaf8ff690d6bae70a1a2bfd030b7f8e
--  __TEXT.__swift_as_ret: 0x23c sha256:a350f1d4b147673518a7e6a0ff2947d217c2010dafa9c81ab32475b288bb6bd8
--  __TEXT.__swift_as_cont: 0x5b8 sha256:75ef2c83bec044a54d7d81012b3c057e52c4e47bfa94b0479ee2e3a06e6f886e
--  __TEXT.__unwind_info: 0x7a98 sha256:8ec1ea8dc6225d454c958ec67177eae8aebf4341f3b93b1453520a8c35464d5e
--  __TEXT.__eh_frame: 0x8bd0 sha256:c5e6cbaf888339300c55ae2ab2de9972693a63886ee6cc8c46de2444bf216a9d
-+  __TEXT.__constg_swiftt: 0x802c sha256:11405600c1c9bd3e69f1aa705e7956590b708f7a084d9e802c177c0d00eb4403
-+  __TEXT.__swift5_typeref: 0x906e sha256:58b985311f74a71b5b17044960dba36bea87d6db6506a54208ca99524581a3f4
-+  __TEXT.__swift5_builtin: 0x488 sha256:48ede06cbb6530c07f2228a4bee83d2340ef7acd02ae6a29c66f7f088c60c448
-+  __TEXT.__swift5_reflstr: 0x86ae sha256:6f279273caebc7dd5667073e96e28bb90231428db2ed514cf9fd015ab71e1937
-+  __TEXT.__swift5_fieldmd: 0x8734 sha256:4dbb241352df5f16dbaf2c181e2cb47285722c8f17b2cba9fc643fe31587124c
-+  __TEXT.__swift5_assocty: 0x710 sha256:0cda27b8041e856c4a01b5ee2e4883ba421170fafab2c023aa81dc7ce0d6ec99
-+  __TEXT.__swift5_mpenum: 0x27c sha256:8d27811a09ed3e7553f038c3f88e46f08d66a0ea665661ae335db06cb9fc6345
-+  __TEXT.__swift5_proto: 0xba0 sha256:795115caeb583da0046ca328043ce38038fabead644f7fbd896f23e79777ab23
-+  __TEXT.__swift5_types: 0x794 sha256:b166eba29debd5da3b7c7632f016e7e10a1c8479bdd8932272d373747de1839e
-+  __TEXT.__swift5_capture: 0x3508 sha256:60bd0016ce17df9222863f0f09bdaccca4f11c5b382f341dad251cbf174a0fcd
-+  __TEXT.__cstring: 0x64c1 sha256:dfc5a9298e61b2efaf8dd6a75bc3ba6d202c03b81002ec00ad21204ebb643ceb
-+  __TEXT.__swift5_protos: 0x1b8 sha256:a26ae6223cc1c27de79c1283e392e22f0c76b5c21ab83cf8cf80abd53ba8a3ec
-+  __TEXT.__oslogstring: 0x695d sha256:8ce0e85667eec2b065e96c90d98b3c7da70324eaa6bada3ebce330bf848b03c2
-+  __TEXT.__swift_as_entry: 0x210 sha256:2785b343a36ba184005a2b9e7527ceca758b7feafaf67a1c34c742528b5de38d
-+  __TEXT.__swift_as_cont: 0x594 sha256:0f60c556f61d5a5ae9c52a8d1f5409f810184dcb3d7abebf362bf3fe0f56dd1e
-+  __TEXT.__swift_as_ret: 0x1cc sha256:4d1fca189ee389f611ad8d2976107940f2a142a6abc349dde67ecbe779fc8ab6
-+  __TEXT.__unwind_info: 0x6fa8 sha256:374f45f335bba7473c546d0324a087dcd4afc3daee67190647b7641a2ecf012e
-+  __TEXT.__eh_frame: 0x8bac sha256:d8930758372fa86b38befcfb9e9a5898e9d2e361d90e0abf06d340351e6588a2
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x308 sha256:754caa449aae5bf83f80f59b94a8eb39b9f12d32bf4864aef7426e6a08d57b84
--  __DATA_CONST.__objc_classlist: 0x510 sha256:d83a2514d52f77fd3981349d69d975709c5c08fa405531922c8c853256171137
--  __DATA_CONST.__objc_catlist: 0x10 sha256:5ab5da52d82d288c3ea755a4aa6f936dc059ca5d3a99492a2fb212b547baee43
--  __DATA_CONST.__objc_protolist: 0x1d8 sha256:a5a430bbf8714653651ecc5e665f1d52d477001617998cd4b1bb21fcf4741eb9
-+  __DATA_CONST.__const: 0x2c8 sha256:a106bb256cfc784f9bfe12ef3e49b963d971badb405a82f6fc5b63119e943cee
-+  __DATA_CONST.__objc_classlist: 0x510 sha256:7ee4fb5fdd0e3a236bf473418442aa900d14b174ade6ea431bc4f0278ba78838
-+  __DATA_CONST.__objc_catlist: 0x10 sha256:de7d860d273cd84fcb41527800cc7d960b57046bd3e48e7137b174d0b17ad9c9
-+  __DATA_CONST.__objc_protolist: 0x1b8 sha256:863ee76b54f0a5d0b30071fb85b6a723fbbad06622cac4b8c622a8c30eef7aec
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0x2658 sha256:880d8683eb2a344d255d25f10e4e3974e8e11c7fe1c2f0e2df4cd465590525c3
--  __DATA_CONST.__objc_protorefs: 0xf0 sha256:9dee6ab93db1d396e1f35eb828fe12d9601b5930f570698241056be56cff145f
--  __DATA_CONST.__got: 0x1058 sha256:fe568632fbf0a0c60bacb86ea319dc79ee28e1dcb601de1053e5fd5ad4f12d30
--  __AUTH_CONST.__const: 0x126e8 sha256:83e899195a0362c09c8b2c63d536941b5ce604eb6327b5dde758de95dea8b5c8
--  __AUTH_CONST.__objc_const: 0xeda0 sha256:72910242eb4a2ef38236a8569c62d472972b7ca28b7e2c4fed959f5d8793720f
--  __AUTH_CONST.__auth_got: 0x2930 sha256:21634d5ecb9a208e5192112b48c7f533c90f8fb668787a01660a883efdcd485d
--  __AUTH.__objc_data: 0x2718 sha256:21a4256a2e5cea2d4ee136d909c5b3e171c79554d960e25388ca9d3c0b98a589
--  __AUTH.__data: 0x3990 sha256:a7893b60ef987cb7214ca978f066cbf47f2063500a6d038d03707c266e44e4de
--  __DATA.__data: 0x2cb0 sha256:756639dcc0908fcdd48a5c7ddb0d29d47e269f842784c239e17e40f67d3ffb90
--  __DATA.__bss: 0xef20 sha256:810c224d9bb9c57e072ce77b577ffc29324c37f16065f39e7df16c7f4b863d03
--  __DATA.__common: 0x1b8 sha256:fed88bb8efe3787fc9b8e95d48448a2c83846b8524c1f82fd31f5164864cc495
--  __DATA_DIRTY.__objc_data: 0x17b0 sha256:834449aa5e664d01f949cfc881ded415a60ef58be113aff2ea870aa893a51479
--  __DATA_DIRTY.__data: 0x6bc0 sha256:2a0b861e4d766d66da55a2d6900eb9f7188d9d102a99d8d4a44316dfb0602ca8
--  __DATA_DIRTY.__bss: 0x7530 sha256:a88f0f9c8cfd90107c5e8f72ecc72c25af63cb5b62ca0f3dbb93f09d3d953ae3
-+  __DATA_CONST.__objc_selrefs: 0x2608 sha256:5d4fa1d0860e6d43f3035c1aa6f1c63eeccf63205cbfd512e739bddc84c78486
-+  __DATA_CONST.__objc_protorefs: 0xe0 sha256:818bbe930947159d3fe8d0b56bcc5a01588d9edb8084454ea4ebd4a955cf1746
-+  __DATA_CONST.__got: 0x1048 sha256:796b38490453f20541c5db4fdaa58377ffc0635306ef57f7c9ddb0d4e8b6dc04
-+  __AUTH_CONST.__const: 0x120a1 sha256:656415a718ca2c48a991c7613b4195e36d2819f98d3c6e9914dfbf0e716f2521
-+  __AUTH_CONST.__objc_const: 0xed00 sha256:2290145a9d4d0b2d95cc9216ec86784d7d5926c1643aa178178f51a5f65e3ea8
-+  __AUTH_CONST.__auth_got: 0x2928 sha256:b52b836285b28a2751d535ffd6c8e7184a59c28d044d867552e0c5fc96527ba5
-+  __AUTH.__objc_data: 0x2710 sha256:a02118e080c05a564779aad350138d2af45311346210b2cdc24b46987759bee4
-+  __AUTH.__data: 0x39a8 sha256:89f828d78b09b0528a85ff4bed07bbaa551dd432d38af8823187e917d5658b36
-+  __DATA.__data: 0x36b0 sha256:7022ba825a435c1f098cb9b1347a474b1a481c9f4fa717e6ffcdbb5964b4bd19
-+  __DATA.__bss: 0xd010 sha256:b73e23beca0701b35f7df8045852ffab9fc1f77b49213eb9df2833ccdbca7706
-+  __DATA.__common: 0x1a8 sha256:ee11cbd5c480f026f8a25dde69788f115bfcf1cc67306df258a973c52e1d2353
-+  __DATA_DIRTY.__objc_data: 0x17c0 sha256:29ec3c6f3e11be3482aa859f4b53156d73d527bbb638e92d28486a7edcfefa4d
-+  __DATA_DIRTY.__data: 0x7ba0 sha256:934c0ce7e221bf170b92874f606b2fc870a5f480a2bf49f36fa9a77ac07c4db6
-+  __DATA_DIRTY.__bss: 0x6c80 sha256:ce6635a0b75e72f7d72163814e13de69b70c9d985d81bb97370b468acb938a83
-   __DATA_DIRTY.__common: 0x2b0 sha256:b35df6b264c3eb27cdda03803f51a2311fa163e6c958f7ff0ec44c10caff1a17
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreLocation.framework/CoreLocation
 -  - /System/Library/Frameworks/DeveloperToolsSupport.framework/DeveloperToolsSupport
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOSurface.framework/IOSurface
-   - /System/Library/Frameworks/MapKit.framework/MapKit
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: AB33A2E6-2AB8-3547-9CAA-1DF0A7302DFF
 -  Functions: 13689
--  Symbols:   16971
+-  Symbols:   4086
 -  CStrings:  889
-+  UUID: B8340374-30AC-35B0-96FA-28DE47EFB19F
 +  Functions: 11570
-+  Symbols:   12016
++  Symbols:   3886
 +  CStrings:  856
- 
 Symbols:
-+ __PROTOCOLS__TtCC11WeatherMaps25InteractiveViewControllerP33_4CD550CE80831422DBECBBA9FEF1D81723OnCoreAnimationDidStart.5
-+ ___swift__destructor.11
-+ ___swift__destructor.129
-+ ___swift__destructor.151
-+ ___swift__destructor.162
-+ ___swift__destructor.168
-+ ___swift__destructor.30
-+ ___swift__destructor.31
-+ ___swift__destructor.36
-+ ___swift__destructor.4
-+ ___swift__destructor.41
-+ ___swift__destructor.92
 + ___swift_closure_destructor.104Tm
-+ ___swift_closure_destructor.118
 + ___swift_closure_destructor.120Tm
-+ ___swift_closure_destructor.121
-+ ___swift_closure_destructor.125
-+ ___swift_closure_destructor.132
 + ___swift_closure_destructor.135Tm
-+ ___swift_closure_destructor.136
-+ ___swift_closure_destructor.138
-+ ___swift_closure_destructor.141
-+ ___swift_closure_destructor.146
-+ ___swift_closure_destructor.147
-+ ___swift_closure_destructor.150
-+ ___swift_closure_destructor.153
 + ___swift_closure_destructor.153Tm
-+ ___swift_closure_destructor.154
-+ ___swift_closure_destructor.157
-+ ___swift_closure_destructor.167
-+ ___swift_closure_destructor.173
 + ___swift_closure_destructor.173Tm
 + ___swift_closure_destructor.17Tm
-+ ___swift_closure_destructor.186
-+ ___swift_closure_destructor.190
-+ ___swift_closure_destructor.193
-+ ___swift_closure_destructor.194
-+ ___swift_closure_destructor.197
 + ___swift_closure_destructor.19Tm
-+ ___swift_closure_destructor.204
-+ ___swift_closure_destructor.206
-+ ___swift_closure_destructor.208
-+ ___swift_closure_destructor.210
-+ ___swift_closure_destructor.212
-+ ___swift_closure_destructor.214
-+ ___swift_closure_destructor.216
 + ___swift_closure_destructor.21Tm
-+ ___swift_closure_destructor.225
-+ ___swift_closure_destructor.228
-+ ___swift_closure_destructor.23
-+ ___swift_closure_destructor.234
-+ ___swift_closure_destructor.237
-+ ___swift_closure_destructor.240
-+ ___swift_closure_destructor.248
-+ ___swift_closure_destructor.252
-+ ___swift_closure_destructor.256
-+ ___swift_closure_destructor.260
-+ ___swift_closure_destructor.266
-+ ___swift_closure_destructor.274
-+ ___swift_closure_destructor.278
 + ___swift_closure_destructor.27Tm
-+ ___swift_closure_destructor.282
-+ ___swift_closure_destructor.286
-+ ___swift_closure_destructor.292
-+ ___swift_closure_destructor.300
-+ ___swift_closure_destructor.304
-+ ___swift_closure_destructor.308
 + ___swift_closure_destructor.30Tm
-+ ___swift_closure_destructor.312
 + ___swift_closure_destructor.34Tm
-+ ___swift_closure_destructor.40
-+ ___swift_closure_destructor.50
 + ___swift_closure_destructor.53Tm
-+ ___swift_closure_destructor.56
-+ ___swift_closure_destructor.60
-+ ___swift_closure_destructor.66
 + ___swift_closure_destructor.67Tm
-+ ___swift_closure_destructor.72
 + ___swift_closure_destructor.76Tm
 + ___swift_closure_destructor.82Tm
 + ___swift_closure_destructor.86Tm
 + ___swift_closure_destructor.94Tm
-+ ___swift_exist.box.addr_destructor.23
-+ ___swift_exist.box.addr_destructor.78
 + ___swift_project_boxed_opaque_existential_0Tm
 + ___unnamed_1
 + ___unnamed_5
@@ -210,108 +86,7 @@ Symbols:
 + _associated conformance So15UIFontTextStyleaSHSCSQ
 + _associated conformance So15UIFontTextStyleas20_SwiftNewtypeWrapperSCSY
 + _associated conformance So15UIFontTextStyleas20_SwiftNewtypeWrapperSCs35_HasCustomAnyHashableRepresentation
-+ _block_copy_helper.100
-+ _block_copy_helper.101
-+ _block_copy_helper.107
-+ _block_copy_helper.109
-+ _block_copy_helper.119
-+ _block_copy_helper.121
-+ _block_copy_helper.127
-+ _block_copy_helper.135
-+ _block_copy_helper.145
-+ _block_copy_helper.150
-+ _block_copy_helper.151
-+ _block_copy_helper.152
-+ _block_copy_helper.157
-+ _block_copy_helper.158
-+ _block_copy_helper.170
-+ _block_copy_helper.180
-+ _block_copy_helper.186
-+ _block_copy_helper.188
-+ _block_copy_helper.29
-+ _block_copy_helper.32
-+ _block_copy_helper.320
-+ _block_copy_helper.324
-+ _block_copy_helper.328
-+ _block_copy_helper.39
-+ _block_copy_helper.53
-+ _block_copy_helper.57
-+ _block_copy_helper.59
-+ _block_copy_helper.65
-+ _block_copy_helper.71
-+ _block_copy_helper.82
-+ _block_copy_helper.95
-+ _block_descriptor.102
-+ _block_descriptor.103
-+ _block_descriptor.109
-+ _block_descriptor.111
-+ _block_descriptor.121
-+ _block_descriptor.123
-+ _block_descriptor.129
-+ _block_descriptor.137
-+ _block_descriptor.147
-+ _block_descriptor.152
-+ _block_descriptor.153
-+ _block_descriptor.154
-+ _block_descriptor.159
-+ _block_descriptor.160
-+ _block_descriptor.172
-+ _block_descriptor.182
-+ _block_descriptor.188
-+ _block_descriptor.190
-+ _block_descriptor.31
-+ _block_descriptor.322
-+ _block_descriptor.326
-+ _block_descriptor.330
-+ _block_descriptor.34
-+ _block_descriptor.41
-+ _block_descriptor.55
-+ _block_descriptor.59
-+ _block_descriptor.61
-+ _block_descriptor.67
-+ _block_descriptor.73
-+ _block_descriptor.84
-+ _block_descriptor.97
-+ _block_destroy_helper.101
-+ _block_destroy_helper.102
-+ _block_destroy_helper.108
-+ _block_destroy_helper.110
-+ _block_destroy_helper.120
-+ _block_destroy_helper.122
-+ _block_destroy_helper.128
-+ _block_destroy_helper.136
-+ _block_destroy_helper.146
-+ _block_destroy_helper.151
-+ _block_destroy_helper.152
-+ _block_destroy_helper.153
-+ _block_destroy_helper.158
-+ _block_destroy_helper.159
-+ _block_destroy_helper.171
-+ _block_destroy_helper.181
-+ _block_destroy_helper.187
-+ _block_destroy_helper.189
-+ _block_destroy_helper.30
-+ _block_destroy_helper.321
-+ _block_destroy_helper.325
-+ _block_destroy_helper.329
-+ _block_destroy_helper.33
-+ _block_destroy_helper.40
-+ _block_destroy_helper.54
-+ _block_destroy_helper.58
-+ _block_destroy_helper.60
-+ _block_destroy_helper.66
-+ _block_destroy_helper.72
-+ _block_destroy_helper.83
-+ _block_destroy_helper.96
-+ _get_type_metadata 15Synchronization5MutexVySbG noncopyable.3
-+ _get_witness_table 7SwiftUI15ModifiedContentVyAA014_ViewModifier_D0Vy11WeatherMaps07ButtonsF0VGAA024_EnvironmentKeyTransformF0VySDyAF0G14MapDisplayModeOSayAF11ButtonGroupVGGGGAA0E0HPAiaTHPyHC_ArA0eF0HPyHCHC.20
-+ _get_witness_table 7SwiftUI15ModifiedContentVyAA014_ViewModifier_D0Vy11WeatherMaps08DelegateF0VGAA022_EnvironmentKeyWritingF0VyAF0g3MapI0_pSgGGAA0E0HPAiaPHPyHC_AnA0eF0HPyHCHC.21
-+ _get_witness_table 7SwiftUI15ModifiedContentVyAA014_ViewModifier_D0Vy11WeatherMaps0g28MapPerformanceTestConditionsF0VGAA022_EnvironmentKeyWritingF0VyAF0gijkL0VSgGGAA0E0HPAiaQHPyHC_AoA0eF0HPyHCHC.12
-+ _get_witness_table 7SwiftUI15NavigationStackVyAA0C4PathVAA4ViewPAAE11toolbarRoleyQrAA07ToolbarH0VFQOyAgAE0G07contentQrqd__yXE_tAA0I7ContentRd__lFQOyAgAE29navigationBarTitleDisplayModeyQrAA0cM4ItemV0noP0OFQOyAgAE19containerBackground_3forQrqd___AA09ContainerS9PlacementVtAA10ShapeStyleRd__lFQOyAA6VStackVyAA08ModifiedK0VyAgAE04listX0yQrqd__AA04ListX0Rd__lFQOyAgAE11listPadding3top6bottomQr12CoreGraphics7CGFloatVSg_A8_tFQOyAA4ListVys5NeverOAA7SectionVyAA05EmptyF0VAA7ForEachVySay11WeatherMaps014LocationPickerF5ModelV3RowVGSSAA6ButtonVyA_yAA6HStackVyAA012_ConditionalK0VyA30_yAA05TupleK0VyAA4TextV_AA6SpacerVA30_yA_yAYyA_yAgAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyA_yA_yA_yAA5ImageVAA30_EnvironmentKeyWritingModifierVyA42_5ScaleOGGA44_yAA4FontVSgGGA44_yAA5ColorVSgGG_Qo_AA31AccessibilityAttachmentModifierVGGAA12_FrameLayoutVGA34_GQPGA32_yAYyA32_yA34__A_yAA27_TextBaselineRelativeSpacerVA65_GSgA34_QPGG_A36_A30_yA_yA_yA42_A52_GA57_GA34_GQPGGA30_yA32_yA34__A36_A34_QPGA30_yAYyA32_yA34__A72_A34_A28_yA32_yA_yA34_A61_GSg_A_yA_yA_yA34_AA16_FixedSizeLayoutVGA65_GA61_GQPGGQPGGA32_yA74__A36_A82_A87_QPGGGGGA57_GGGA16_GG_Qo__AA016InsetGroupedListX0VQo_A44_yA7_GGG_A55_Qo__Qo__A32_yAA0iQ0VyytAgAE12barPocket_v15styleQrAA0m11MagicPocketX0V_tFQOyAgAE023accessibilityShowsLargeK6VieweryQrqd__yXEAaFRd__lFQOyAYyA28_yA32_yA_yA_yA30_yA30_yA_yA76_A47_GA_yA118_AA13_OffsetEffectVGGA118_GAA16_FlexFrameLayoutVGA61_G_AYyA32_yAgAE15dynamicTypeSizeyQrqd__SXRd__AA15DynamicTypeSizeO5BoundRtd__lFQOyA34__s19PartialRangeThroughVyA130_GQo__A136_QPGGQPGGG_A32_yA42__A34_QPGQo__Qo_G_A112_yytAgAEA117_yQrqd__yXEAaFRd__lFQOyA26_yA42_G_AA5LabelVyA34_A42_GQo_GQPGQo__Qo_GAaFHPyHC.28
-+ _get_witness_table 7SwiftUI4ViewRzlAA15ModifiedContentVyx11WeatherMaps0F36MapPerformanceTestConditionsModifierVGAaBHPxAaBHD1__AgA0cL0HPyHCHC.2
-+ _get_witness_table 7SwiftUI4ViewRzlAA15ModifiedContentVyx11WeatherMaps15ButtonsModifierVGAaBHPxAaBHD1__AgA0cI0HPyHCHC.5
-+ _get_witness_table 7SwiftUI4ViewRzlAA15ModifiedContentVyx11WeatherMaps16DelegateModifierVGAaBHPxAaBHD1__AgA0cI0HPyHCHC.6
-+ _objc_msgSend$horizontalSizeClass
++ _get_witness_table 7SwiftUI15NavigationStackVyAA0C4PathVAA4ViewPAAE11toolbarRoleyQrAA07ToolbarH0VFQOyAgAE0G07contentQrqd__yXE_tAA0I7ContentRd__lFQOyAgAE29navigationBarTitleDisplayModeyQrAA0cM4ItemV0noP0OFQOyAgAE19containerBackground_3forQrqd___AA09ContainerS9PlacementVtAA10ShapeStyleRd__lFQOyAA6VStackVyAA08ModifiedK0VyAgAE04listX0yQrqd__AA04ListX0Rd__lFQOyAgAE11listPadding3top6bottomQr12CoreGraphics7CGFloatVSg_A8_tFQOyAA4ListVys5NeverOAA7SectionVyAA05EmptyF0VAA7ForEachVySay11WeatherMaps014LocationPickerF5ModelV3RowVGSSAA6ButtonVyA_yAA6HStackVyAA012_ConditionalK0VyA30_yAA05TupleK0VyAA4TextV_AA6SpacerVA30_yA_yAYyA_yAgAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyA_yA_yA_yAA5ImageVAA30_EnvironmentKeyWritingModifierVyA42_5ScaleOGGA44_yAA4FontVSgGGA44_yAA5ColorVSgGG_Qo_AA31AccessibilityAttachmentModifierVGGAA12_FrameLayoutVGA34_GQPGA32_yAYyA32_yA34__A_yAA27_TextBaselineRelativeSpacerVA65_GSgA34_QPGG_A36_A30_yA_yA_yA42_A52_GA57_GA34_GQPGGA30_yA32_yA34__A36_A34_QPGA30_yAYyA32_yA34__A72_A34_A28_yA32_yA_yA34_A61_GSg_A_yA_yA_yA34_AA16_FixedSizeLayoutVGA65_GA61_GQPGGQPGGA32_yA74__A36_A82_A87_QPGGGGGA57_GGGA16_GG_Qo__AA016InsetGroupedListX0VQo_A44_yA7_GGG_A55_Qo__Qo__A32_yAA0iQ0VyytAgAE12barPocket_v15styleQrAA0m11MagicPocketX0V_tFQOyAgAE023accessibilityShowsLargeK6VieweryQrqd__yXEAaFRd__lFQOyAYyA28_yA32_yA_yA_yA30_yA30_yA_yA76_A47_GA_yA118_AA13_OffsetEffectVGGA118_GAA16_FlexFrameLayoutVGA61_G_AYyA32_yAgAE15dynamicTypeSizeyQrqd__SXRd__AA15DynamicTypeSizeO5BoundRtd__lFQOyA34__s19PartialRangeThroughVyA130_GQo__A136_QPGGQPGGG_A32_yA42__A34_QPGQo__Qo_G_A112_yytAgAEA117_yQrqd__yXEAaFRd__lFQOyA26_yA42_G_AA5LabelVyA34_A42_GQo_GQPGQo__Qo_GAaFHPyHC
 + _objc_release_x1
 + _swift_deletedAsyncMethodErrorTu
 + _swift_release_x10
@@ -441,15 +216,6 @@ Symbols:
 - _OUTLINED_FUNCTION_299
 - _OUTLINED_FUNCTION_300
 - _OUTLINED_FUNCTION_301
-- __MergedGlobals.1
-- __MergedGlobals.114
-- __MergedGlobals.115
-- __MergedGlobals.116
-- __MergedGlobals.170
-- __MergedGlobals.18
-- __MergedGlobals.337
-- __MergedGlobals.364
-- __MergedGlobals.6
 - __OBJC_$_PROP_LIST_CAMetalDrawable
 - __OBJC_$_PROP_LIST_MTLDrawable
 - __OBJC_$_PROTOCOL_INSTANCE_METHODS_CAMetalDrawable
@@ -462,65 +228,20 @@ Symbols:
 - __OBJC_LABEL_PROTOCOL_$_MTLDrawable
 - __OBJC_PROTOCOL_$_CAMetalDrawable
 - __OBJC_PROTOCOL_$_MTLDrawable
-- __PROTOCOLS__TtCC11WeatherMaps25InteractiveViewControllerP33_4CD550CE80831422DBECBBA9FEF1D81723OnCoreAnimationDidStart.124
-- ___swift__destructor.40
-- ___swift__destructor.44
-- ___swift__destructor.5
-- ___swift__destructor.52
-- ___swift__destructor.58
-- ___swift__destructor.6
 - ___swift_closure_destructor.102Tm
 - ___swift_closure_destructor.108Tm
-- ___swift_closure_destructor.127
 - ___swift_closure_destructor.133Tm
 - ___swift_closure_destructor.148Tm
-- ___swift_closure_destructor.152
-- ___swift_closure_destructor.163
 - ___swift_closure_destructor.163Tm
-- ___swift_closure_destructor.166
 - ___swift_closure_destructor.171Tm
-- ___swift_closure_destructor.183
-- ___swift_closure_destructor.195
-- ___swift_closure_destructor.199
-- ___swift_closure_destructor.201
-- ___swift_closure_destructor.203
-- ___swift_closure_destructor.205
-- ___swift_closure_destructor.207
-- ___swift_closure_destructor.209
-- ___swift_closure_destructor.211
-- ___swift_closure_destructor.213
-- ___swift_closure_destructor.221
-- ___swift_closure_destructor.227
-- ___swift_closure_destructor.235
-- ___swift_closure_destructor.238
-- ___swift_closure_destructor.241
-- ___swift_closure_destructor.247
 - ___swift_closure_destructor.24Tm
-- ___swift_closure_destructor.251
-- ___swift_closure_destructor.255
-- ___swift_closure_destructor.259
-- ___swift_closure_destructor.267
-- ___swift_closure_destructor.273
-- ___swift_closure_destructor.277
-- ___swift_closure_destructor.281
-- ___swift_closure_destructor.285
-- ___swift_closure_destructor.293
-- ___swift_closure_destructor.299
-- ___swift_closure_destructor.303
-- ___swift_closure_destructor.307
-- ___swift_closure_destructor.311
-- ___swift_closure_destructor.315
-- ___swift_closure_destructor.319
 - ___swift_closure_destructor.39Tm
 - ___swift_closure_destructor.42Tm
 - ___swift_closure_destructor.47Tm
 - ___swift_closure_destructor.58Tm
 - ___swift_closure_destructor.68Tm
-- ___swift_closure_destructor.71
 - ___swift_closure_destructor.7Tm
 - ___swift_closure_destructor.80Tm
-- ___swift_exist.box.addr_destructor.2
-- ___swift_exist.box.addr_destructor.29
 - ___swift_memcpy16_4
 - ___swift_memcpy64_4
 - ___unnamed_16
@@ -541,101 +262,11 @@ Symbols:
 - _associated conformance 11WeatherMaps39MapKitDynamicTileOverlayRendererOptionsVs10SetAlgebraAAs25ExpressibleByArrayLiteral
 - _associated conformance 11WeatherMaps39MapKitDynamicTileOverlayRendererOptionsVs9OptionSetAASY
 - _associated conformance 11WeatherMaps39MapKitDynamicTileOverlayRendererOptionsVs9OptionSetAAs0K7Algebra
-- _block_copy_helper.110
-- _block_copy_helper.118
-- _block_copy_helper.125
-- _block_copy_helper.14
-- _block_copy_helper.171
-- _block_copy_helper.183
-- _block_copy_helper.2
-- _block_copy_helper.205
-- _block_copy_helper.207
-- _block_copy_helper.22
-- _block_copy_helper.24
-- _block_copy_helper.30
-- _block_copy_helper.31
-- _block_copy_helper.35
-- _block_copy_helper.40
-- _block_copy_helper.41
-- _block_copy_helper.44
-- _block_copy_helper.47
-- _block_copy_helper.50
-- _block_copy_helper.60
-- _block_copy_helper.69
-- _block_copy_helper.8
-- _block_copy_helper.81
-- _block_copy_helper.85
-- _block_copy_helper.91
-- _block_copy_helper.94
-- _block_descriptor.10
-- _block_descriptor.112
-- _block_descriptor.120
-- _block_descriptor.127
-- _block_descriptor.16
-- _block_descriptor.173
-- _block_descriptor.185
-- _block_descriptor.207
-- _block_descriptor.209
-- _block_descriptor.24
-- _block_descriptor.26
-- _block_descriptor.32
-- _block_descriptor.33
-- _block_descriptor.37
-- _block_descriptor.4
-- _block_descriptor.42
-- _block_descriptor.43
-- _block_descriptor.46
-- _block_descriptor.49
-- _block_descriptor.52
-- _block_descriptor.62
-- _block_descriptor.71
-- _block_descriptor.83
-- _block_descriptor.87
-- _block_descriptor.93
-- _block_descriptor.96
-- _block_destroy_helper.111
-- _block_destroy_helper.119
-- _block_destroy_helper.126
-- _block_destroy_helper.15
-- _block_destroy_helper.172
-- _block_destroy_helper.184
-- _block_destroy_helper.206
-- _block_destroy_helper.208
-- _block_destroy_helper.23
-- _block_destroy_helper.25
-- _block_destroy_helper.3
-- _block_destroy_helper.31
-- _block_destroy_helper.32
-- _block_destroy_helper.36
-- _block_destroy_helper.41
-- _block_destroy_helper.42
-- _block_destroy_helper.45
-- _block_destroy_helper.48
-- _block_destroy_helper.51
-- _block_destroy_helper.61
-- _block_destroy_helper.70
-- _block_destroy_helper.82
-- _block_destroy_helper.86
-- _block_destroy_helper.9
-- _block_destroy_helper.92
-- _block_destroy_helper.95
 - _flat unique So15CAMetalDrawable_p
 - _get_enum_tag_for_layout_string 11WeatherMaps0A19MapOverlayDataErrorO
 - _get_enum_tag_for_layout_string 11WeatherMaps0A34MapSnapshotPrepareTileRendererType_pSg
 - _get_enum_tag_for_layout_string 11WeatherMaps21OverlayRendererTargetO
-- _get_type_metadata 15Synchronization5MutexVySbG noncopyable.16
-- _get_witness_table 7SwiftUI15ModifiedContentVyAA014_ViewModifier_D0Vy11WeatherMaps07ButtonsF0VGAA024_EnvironmentKeyTransformF0VySDyAF0G14MapDisplayModeOSayAF11ButtonGroupVGGGGAA0E0HPAiaTHPyHC_ArA0eF0HPyHCHC.10
-- _get_witness_table 7SwiftUI15ModifiedContentVyAA014_ViewModifier_D0Vy11WeatherMaps08DelegateF0VGAA022_EnvironmentKeyWritingF0VyAF0g3MapI0_pSgGGAA0E0HPAiaPHPyHC_AnA0eF0HPyHCHC.11
-- _get_witness_table 7SwiftUI15ModifiedContentVyAA014_ViewModifier_D0Vy11WeatherMaps0g28MapPerformanceTestConditionsF0VGAA022_EnvironmentKeyWritingF0VyAF0gijkL0VSgGGAA0E0HPAiaQHPyHC_AoA0eF0HPyHCHC.11
-- _get_witness_table 7SwiftUI15NavigationStackVyAA0C4PathVAA4ViewPAAE11toolbarRoleyQrAA07ToolbarH0VFQOyAgAE0G07contentQrqd__yXE_tAA0I7ContentRd__lFQOyAgAE29navigationBarTitleDisplayModeyQrAA0cM4ItemV0noP0OFQOyAgAE19containerBackground_3forQrqd___AA09ContainerS9PlacementVtAA10ShapeStyleRd__lFQOyAA6VStackVyAA08ModifiedK0VyAgAE04listX0yQrqd__AA04ListX0Rd__lFQOyAgAE11listPadding3top6bottomQr12CoreGraphics7CGFloatVSg_A8_tFQOyAA4ListVys5NeverOAA7SectionVyAA05EmptyF0VAA7ForEachVySay11WeatherMaps014LocationPickerF5ModelV3RowVGSSAA6ButtonVyA_yAA6HStackVyAA012_ConditionalK0VyA30_yAA05TupleK0VyAA4TextV_AA6SpacerVA30_yA_yAYyA_yAgAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyA_yA_yA_yAA5ImageVAA30_EnvironmentKeyWritingModifierVyA42_5ScaleOGGA44_yAA4FontVSgGGA44_yAA5ColorVSgGG_Qo_AA31AccessibilityAttachmentModifierVGGAA12_FrameLayoutVGA34_GQPGA32_yAYyA32_yA34__A_yAA27_TextBaselineRelativeSpacerVA65_GSgA34_QPGG_A36_A30_yA_yA_yA42_A52_GA57_GA34_GQPGGA30_yA32_yA34__A36_A34_QPGA30_yAYyA32_yA34__A72_A34_A28_yA32_yA_yA34_A61_GSg_A_yA_yA_yA34_AA16_FixedSizeLayoutVGA65_GA61_GQPGGQPGGA32_yA74__A36_A82_A87_QPGGGGGA57_GGGA16_GG_Qo__AA016InsetGroupedListX0VQo_A44_yA7_GGG_A55_Qo__Qo__A32_yAA0iQ0VyytAgAE12barPocket_v15styleQrAA0m11MagicPocketX0V_tFQOyA_yA_yAgAE023accessibilityShowsLargeK6VieweryQrqd__yXEAaFRd__lFQOyAYyA28_yA32_yA_yA_yA30_yA30_yA_yA76_A47_GA_yA118_AA13_OffsetEffectVGGA118_GAA16_FlexFrameLayoutVGA61_G_AYyA32_yAgAE15dynamicTypeSizeyQrqd__SXRd__AA15DynamicTypeSizeO5BoundRtd__lFQOyA34__s19PartialRangeThroughVyA130_GQo__A136_QPGGQPGGG_A32_yA42__A34_QPGQo_AA14_PaddingLayoutVGA125_G_Qo_G_A112_yytAgAEA117_yQrqd__yXEAaFRd__lFQOyA26_yA42_G_AA5LabelVyA34_A42_GQo_GQPGQo__Qo_GAaFHPyHC.6
-- _get_witness_table 7SwiftUI4ViewRzlAA15ModifiedContentVyx11WeatherMaps0F36MapPerformanceTestConditionsModifierVGAaBHPxAaBHD1__AgA0cL0HPyHCHC.12
-- _get_witness_table 7SwiftUI4ViewRzlAA15ModifiedContentVyx11WeatherMaps15ButtonsModifierVGAaBHPxAaBHD1__AgA0cI0HPyHCHC.8
-- _get_witness_table 7SwiftUI4ViewRzlAA15ModifiedContentVyx11WeatherMaps16DelegateModifierVGAaBHPxAaBHD1__AgA0cI0HPyHCHC.9
-- _objc_msgSend$_coordinateForPoint:
-- _objc_msgSend$newTextureWithContentsOfURL:options:error:
-- _objc_msgSend$preferredFrameRateRange
-- _objc_msgSend$setCenterCoordinate:animated:
-- _objc_msgSend$size
+- _get_witness_table 7SwiftUI15NavigationStackVyAA0C4PathVAA4ViewPAAE11toolbarRoleyQrAA07ToolbarH0VFQOyAgAE0G07contentQrqd__yXE_tAA0I7ContentRd__lFQOyAgAE29navigationBarTitleDisplayModeyQrAA0cM4ItemV0noP0OFQOyAgAE19containerBackground_3forQrqd___AA09ContainerS9PlacementVtAA10ShapeStyleRd__lFQOyAA6VStackVyAA08ModifiedK0VyAgAE04listX0yQrqd__AA04ListX0Rd__lFQOyAgAE11listPadding3top6bottomQr12CoreGraphics7CGFloatVSg_A8_tFQOyAA4ListVys5NeverOAA7SectionVyAA05EmptyF0VAA7ForEachVySay11WeatherMaps014LocationPickerF5ModelV3RowVGSSAA6ButtonVyA_yAA6HStackVyAA012_ConditionalK0VyA30_yAA05TupleK0VyAA4TextV_AA6SpacerVA30_yA_yAYyA_yAgAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyA_yA_yA_yAA5ImageVAA30_EnvironmentKeyWritingModifierVyA42_5ScaleOGGA44_yAA4FontVSgGGA44_yAA5ColorVSgGG_Qo_AA31AccessibilityAttachmentModifierVGGAA12_FrameLayoutVGA34_GQPGA32_yAYyA32_yA34__A_yAA27_TextBaselineRelativeSpacerVA65_GSgA34_QPGG_A36_A30_yA_yA_yA42_A52_GA57_GA34_GQPGGA30_yA32_yA34__A36_A34_QPGA30_yAYyA32_yA34__A72_A34_A28_yA32_yA_yA34_A61_GSg_A_yA_yA_yA34_AA16_FixedSizeLayoutVGA65_GA61_GQPGGQPGGA32_yA74__A36_A82_A87_QPGGGGGA57_GGGA16_GG_Qo__AA016InsetGroupedListX0VQo_A44_yA7_GGG_A55_Qo__Qo__A32_yAA0iQ0VyytAgAE12barPocket_v15styleQrAA0m11MagicPocketX0V_tFQOyA_yA_yAgAE023accessibilityShowsLargeK6VieweryQrqd__yXEAaFRd__lFQOyAYyA28_yA32_yA_yA_yA30_yA30_yA_yA76_A47_GA_yA118_AA13_OffsetEffectVGGA118_GAA16_FlexFrameLayoutVGA61_G_AYyA32_yAgAE15dynamicTypeSizeyQrqd__SXRd__AA15DynamicTypeSizeO5BoundRtd__lFQOyA34__s19PartialRangeThroughVyA130_GQo__A136_QPGGQPGGG_A32_yA42__A34_QPGQo_AA14_PaddingLayoutVGA125_G_Qo_G_A112_yytAgAEA117_yQrqd__yXEAaFRd__lFQOyA26_yA42_G_AA5LabelVyA34_A42_GQo_GQPGQo__Qo_GAaFHPyHC
 - _symbolic $s11WeatherMaps16ControlsDelegateP
 - _symbolic $ss12CaseIterableP
 - _symbolic SaySfG
@@ -758,5 +389,4 @@ CStrings:
 - "west"
 - "westNorthwest"
 - "westSouthwest"
-
 ```

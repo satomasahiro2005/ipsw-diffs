@@ -2,26 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/EventMetaDataExtractor.framework/PlugIns/EventMetaDataExtractorPlugin.appex/EventMetaDataExtractorPlugin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__objc_methlist`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8b44c` | `0x8b52c` | **`+0xe0`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__init_offsets`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 17.0.1.2.0
--  __TEXT.__text: 0x8b44c
-+  __TEXT.__text: 0x8b52c
-   __TEXT.__auth_stubs: 0xe20
-   __TEXT.__objc_stubs: 0x1300
-   __TEXT.__init_offsets: 0x4
+```text
 Functions:
 ~ sub_100002c40 : 1696 -> 1700
 ~ sub_1000032e0 -> sub_1000032e4 : 100 -> 96

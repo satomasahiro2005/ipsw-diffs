@@ -2,106 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/CMCapture.framework/CMCapture`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8c0df8` | `0x8c4fc0` | **`+0x41c8`** |
+| `__TEXT.__oslogstring` | `0x1651cd` | `0x16645a` | **`+0x128d`** |
+| `__TEXT.__cstring` | `0xfe485` | `0xff0b4` | **`+0xc2f`** |
+| `__DATA_DIRTY.__objc_data` | `0xf410` | `0xfaa0` | **`+0x690`** |
+| `__AUTH.__objc_data` | `0x4150` | `0x3b10` | **`-0x640`** |
+| `__AUTH_CONST.__objc_const` | `0xa6388` | `0xa67d0` | **`+0x448`** |
+| `__AUTH_CONST.__cfstring` | `0x58da0` | `0x590a0` | **`+0x300`** |
+| `__DATA_CONST.__got` | `0x6db8` | `0x7058` | **`+0x2a0`** |
+| `__AUTH.__data` | `—` | `0x110` | **`+0x110`** |
+| `__TEXT.__gcc_except_tab` | `0x4988` | `0x4a94` | **`+0x10c`** |
+| `__TEXT.__objc_methlist` | `0x3a488` | `0x3a578` | **`+0xf0`** |
+| `__DATA_DIRTY.__data` | `0x1080` | `0xf98` | **`-0xe8`** |
+| `__DATA_CONST.__const` | `0x11270` | `0x11328` | **`+0xb8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x17478` | `0x174f0` | **`+0x78`** |
+| `__DATA.__objc_ivar` | `0xbd4c` | `0xbdb0` | **`+0x64`** |
+| `__TEXT.__unwind_info` | `0x11e60` | `0x11eb0` | **`+0x50`** |
+| `__DATA.__common` | `0x2c70` | `0x2c40` | **`-0x30`** |
+| `__DATA_DIRTY.__bss` | `0x1558` | `0x1588` | **`+0x30`** |
+| `__DATA_DIRTY.__common` | `0x1b0` | `0x1e0` | **`+0x30`** |
+| `__DATA.__data` | `0x5980` | `0x5958` | **`-0x28`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x2c58` | `0x2c70` | **`+0x18`** |
+| `__AUTH_CONST.__objc_intobj` | `0x6558` | `0x6540` | **`-0x18`** |
+| `__DATA.__bss` | `0x2e08` | `0x2df8` | **`-0x10`** |
+| `__DATA_CONST.__objc_arraydata` | `0x3bb8` | `0x3bc8` | **`+0x10`** |
+| `__TEXT.__const` | `0x151780` | `0x151770` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x2da8` | `0x2db0` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x1ef0` | `0x1ef8` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1d08` | `0x1d10` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x8c0df8
--  __TEXT.__objc_methlist: 0x3a488
--  __TEXT.__const: 0x151780
--  __TEXT.__cstring: 0xfe485
--  __TEXT.__oslogstring: 0x1651cd
--  __TEXT.__gcc_except_tab: 0x4988
-+  __TEXT.__text: 0x8c4fc0
-+  __TEXT.__objc_methlist: 0x3a578
-+  __TEXT.__const: 0x151770
-+  __TEXT.__cstring: 0xff0b4
-+  __TEXT.__oslogstring: 0x16645a
-+  __TEXT.__gcc_except_tab: 0x4a94
-   __TEXT.__dlopen_cstrs: 0x7ad
-   __TEXT.__ustring: 0x10
--  __TEXT.__unwind_info: 0x11e60
-+  __TEXT.__unwind_info: 0x11eb0
-   __TEXT.__eh_frame: 0x38
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x11270
--  __DATA_CONST.__objc_classlist: 0x1ef0
-+  __DATA_CONST.__const: 0x11328
-+  __DATA_CONST.__objc_classlist: 0x1ef8
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x628
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x17478
-+  __DATA_CONST.__objc_selrefs: 0x174f0
-   __DATA_CONST.__objc_protorefs: 0x78
--  __DATA_CONST.__objc_superrefs: 0x1d08
--  __DATA_CONST.__objc_arraydata: 0x3bb8
--  __DATA_CONST.__got: 0x6db8
-+  __DATA_CONST.__objc_superrefs: 0x1d10
-+  __DATA_CONST.__objc_arraydata: 0x3bc8
-+  __DATA_CONST.__got: 0x7058
-   __AUTH_CONST.__const: 0x4a58
--  __AUTH_CONST.__cfstring: 0x58da0
--  __AUTH_CONST.__objc_const: 0xa6388
-+  __AUTH_CONST.__cfstring: 0x590a0
-+  __AUTH_CONST.__objc_const: 0xa67d0
-   __AUTH_CONST.__weak_auth_got: 0x10
--  __AUTH_CONST.__objc_intobj: 0x6558
--  __AUTH_CONST.__objc_arrayobj: 0x2c58
-+  __AUTH_CONST.__objc_intobj: 0x6540
-+  __AUTH_CONST.__objc_arrayobj: 0x2c70
-   __AUTH_CONST.__objc_floatobj: 0x270
-   __AUTH_CONST.__objc_dictobj: 0x1798
-   __AUTH_CONST.__objc_doubleobj: 0xab0
--  __AUTH_CONST.__auth_got: 0x2da8
--  __AUTH.__objc_data: 0x4150
--  __DATA.__objc_ivar: 0xbd4c
--  __DATA.__data: 0x5980
-+  __AUTH_CONST.__auth_got: 0x2db0
-+  __AUTH.__objc_data: 0x3b10
-+  __AUTH.__data: 0x110
-+  __DATA.__objc_ivar: 0xbdb0
-+  __DATA.__data: 0x5958
-   __DATA.__crash_info: 0x148
--  __DATA.__common: 0x2c70
--  __DATA.__bss: 0x2e08
--  __DATA_DIRTY.__objc_data: 0xf410
--  __DATA_DIRTY.__data: 0x1080
--  __DATA_DIRTY.__common: 0x1b0
--  __DATA_DIRTY.__bss: 0x1558
-+  __DATA.__common: 0x2c40
-+  __DATA.__bss: 0x2df8
-+  __DATA_DIRTY.__objc_data: 0xfaa0
-+  __DATA_DIRTY.__data: 0xf98
-+  __DATA_DIRTY.__common: 0x1e0
-+  __DATA_DIRTY.__bss: 0x1588
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+-753.0.0.122.3
++758.0.0.122.2
 
-   - /usr/lib/liblockdown.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libtailspin.dylib
 -  Functions: 41492
--  Symbols:   137217
--  CStrings:  50105
+-  Symbols:   56375
+-  CStrings:  38731
 +  Functions: 41535
-+  Symbols:   137388
-+  CStrings:  50211
- 
-Sections:
-~ __TEXT.__dlopen_cstrs : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
++  Symbols:   56434
++  CStrings:  38813
 Symbols:
 + +[FigCaptureCustomExposureConfiguration exposureConfigurationWithExposureDuration:minFrameRate:maxFrameRate:ISO:useSpotMetering:requestID:]
 + -[BWDeferredBufferIntermediate compressionCropRect]
@@ -237,30 +183,6 @@ Symbols:
 + _kFigVirtualCaptureCardSetCapacityOption_ReplenishMode
 + _kFigVirtualCaptureCardXPCMsgParam_SetCapacityOptions
 + _mscsn_shouldReflectStillSampleBufferOnStreamingOutputs
-+ _objc_msgSend$_initWithExposureDuration:minFrameRate:maxFrameRate:ISO:useSpotMetering:requestID:
-+ _objc_msgSend$blendWithAlphaMaskFilter
-+ _objc_msgSend$commitBuffer:tag:bufferType:captureFrameFlags:compressionProfile:compressionCropRect:metadataTag:portType:
-+ _objc_msgSend$commitBuffer:tag:bufferType:captureFrameFlags:compressionProfile:compressionCropRect:metadataTag:rawThumbnailsBufferTag:rawThumbnailsMetadataTag:mainRawThumbnailBufferTag:mainRawThumbnailMetadataTag:sifrRawThumbnailBufferTag:sifrRawThumbnailMetadataTag:hueMapBufferTag:hueMapMetadataTag:portType:
-+ _objc_msgSend$digitalFlashAvailableNormalizedSNRHysteresisLag
-+ _objc_msgSend$digitalFlashAvailableNormalizedSNRThreshold
-+ _objc_msgSend$digitalFlashRecommendedNormalizedSNRHysteresisLag
-+ _objc_msgSend$digitalFlashRecommendedNormalizedSNRThreshold
-+ _objc_msgSend$initWithBuffer:tag:bufferType:captureFrameFlags:metadataTag:rawThumbnailsBufferTag:rawThumbnailsMetadataTag:mainRawThumbnailBufferTag:mainRawThumbnailMetadataTag:sifrRawThumbnailBufferTag:sifrRawThumbnailMetadataTag:hueMapBufferTag:hueMapMetadataTag:portType:compressionProfile:compressionCropRect:URL:
-+ _objc_msgSend$initWithNumberOfVideoInputs:numberOfAudioInputs:numberOfMetadataInputs:numberOfActionOnlyOutputs:overCaptureEnabled:cinematicAudioEnabled:allowLowLatencyWhenPossible:useTrueVideoFileRecordingStaging:motionDataTimeMachine:videoRecordingPrimingQueueLimit:
-+ _objc_msgSend$initWithSinkID:captureDevice:inferenceScheduler:camGazeInferenceType:
-+ _objc_msgSend$inputForStillImageSettings:portType:portraitAdjustedImage:optionalSampleBuffer:piecemealEncodingMode:
-+ _objc_msgSend$lastZoomFactorFormatIndexIgnoringZoomFactorAndQuadraSubPixelSceneMonitoring
-+ _objc_msgSend$lastZoomFactorQuadraSubPixelSwitchingSupported
-+ _objc_msgSend$makeOutputsLiveWithWillBeStoppedImmediately:
-+ _objc_msgSend$maximumHeight
-+ _objc_msgSend$maximumWidth
-+ _objc_msgSend$setExposureModeCustomWithConfiguration:normalizedRectOfInterest:
-+ _objc_msgSend$setShouldServiceBeforeGraphStop:
-+ _objc_msgSend$shouldServiceBeforeGraphStop
-+ _objc_msgSend$stationaryDigitalFlashRecommendedNormalizedSNRHysteresisLag
-+ _objc_msgSend$stationaryDigitalFlashRecommendedNormalizedSNRThreshold
-+ _objc_msgSend$transitionStateForMakeOutputsLiveWithWillBeStoppedImmediately:
-+ _objc_msgSend$waitForStartOrCommitToCompleteWithWillBeStoppedImmediately:
 + _vcc_copyMaximumCapacityComponents
 + _vcc_postBusyFlagsNotification
 - +[FigCaptureCustomExposureConfiguration exposureConfigurationWithExposureDuration:minFrameRate:maxFrameRate:ISO:useSpotMetering:normalizedRectOfInterest:requestID:]
@@ -338,17 +260,6 @@ Symbols:
 - _kFigImageControlSampleBufferProcessorProperty_SpotMeteredExposureAreaOfInterest
 - _kFigVideoStabilizationSampleBufferAttachmentKey_GPUTransformsParameters
 - _kFigVirtualCaptureCardProperty_MaximumCapacity
-- _objc_msgSend$_initWithExposureDuration:minFrameRate:maxFrameRate:ISO:useSpotMetering:normalizedRectOfInterest:requestID:
-- _objc_msgSend$blendWithMaskFilter
-- _objc_msgSend$commitBuffer:tag:bufferType:captureFrameFlags:compressionProfile:metadataTag:portType:
-- _objc_msgSend$commitBuffer:tag:bufferType:captureFrameFlags:compressionProfile:metadataTag:rawThumbnailsBufferTag:rawThumbnailsMetadataTag:mainRawThumbnailBufferTag:mainRawThumbnailMetadataTag:sifrRawThumbnailBufferTag:sifrRawThumbnailMetadataTag:hueMapBufferTag:hueMapMetadataTag:portType:
-- _objc_msgSend$initWithBuffer:tag:bufferType:captureFrameFlags:metadataTag:rawThumbnailsBufferTag:rawThumbnailsMetadataTag:mainRawThumbnailBufferTag:mainRawThumbnailMetadataTag:sifrRawThumbnailBufferTag:sifrRawThumbnailMetadataTag:hueMapBufferTag:hueMapMetadataTag:portType:compressionProfile:URL:
-- _objc_msgSend$initWithNumberOfVideoInputs:numberOfAudioInputs:numberOfMetadataInputs:numberOfActionOnlyOutputs:overCaptureEnabled:allowLowLatencyWhenPossible:useTrueVideoFileRecordingStaging:motionDataTimeMachine:videoRecordingPrimingQueueLimit:
-- _objc_msgSend$initWithSinkID:captureDevice:inferenceScheduler:
-- _objc_msgSend$inputForStillImageSettings:portType:portraitAdjustedImage:optionalSampleBuffer:forEarlyEncoding:
-- _objc_msgSend$setExposureModeCustomWithConfiguration:
-- _objc_msgSend$transitionStateForMakeOutputsLiveIfNeeded
-- _objc_msgSend$waitForStartOrCommitToComplete
 - _vcc_getMaximumCapacity
 - _vcc_getSystemReserveSpace
 CStrings:
@@ -1390,5 +1301,4 @@ CStrings:
 - "vcc_getSystemReserveSpace"
 - "|___ fsbp_Autofocus ___| %s: Update spot metered exposure area = {%.3f/%.3f %.3fx%.3f}"
 - "\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xa1\xf0\xf0!"
-
 ```

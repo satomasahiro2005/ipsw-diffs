@@ -2,21 +2,22 @@
 
 > `/System/Library/Filesystems/hfs.fs/fsck_hfs`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x34ba8` | `0x34bbc` | **`+0x14`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 751.0.0.0.0
--  __TEXT.__text: 0x34ba8
-+  __TEXT.__text: 0x34bbc
-   __TEXT.__auth_stubs: 0x7b0
-   __TEXT.__const: 0x10b4
-   __TEXT.__cstring: 0x6e74
+```text
 Functions:
 ~ sub_100005314 : 852 -> 816
 ~ sub_100008fec -> sub_100008fc8 : 1000 -> 1004

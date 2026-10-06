@@ -2,107 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/MapsUI.framework/MapsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a8ff4` | `0x1ab4fc` | **`+0x2508`** |
+| `__AUTH_CONST.__cfstring` | `0x15620` | `0x15a40` | **`+0x420`** |
+| `__TEXT.__cstring` | `0x1241c` | `0x125e0` | **`+0x1c4`** |
+| `__TEXT.__oslogstring` | `0x4571` | `0x46e7` | **`+0x176`** |
+| `__AUTH_CONST.__const` | `0x6c50` | `0x6d78` | **`+0x128`** |
+| `__DATA_CONST.__const` | `0x3cf0` | `0x3df8` | **`+0x108`** |
+| `__TEXT.__const` | `0x8118` | `0x8218` | **`+0x100`** |
+| `__TEXT.__constg_swiftt` | `0x3e8c` | `0x3f5c` | **`+0xd0`** |
+| `__AUTH_CONST.__objc_const` | `0x2be90` | `0x2bf48` | **`+0xb8`** |
+| `__TEXT.__eh_frame` | `0x112c` | `0x11e4` | **`+0xb8`** |
+| `__TEXT.__swift5_typeref` | `0x2f74` | `0x3022` | **`+0xae`** |
+| `__DATA.__bss` | `0x5f18` | `0x5fa8` | **`+0x90`** |
+| `__TEXT.__swift5_reflstr` | `0x3037` | `0x30b7` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x6718` | `0x6798` | **`+0x80`** |
+| `__TEXT.__objc_methlist` | `0x1598c` | `0x15a04` | **`+0x78`** |
+| `__TEXT.__swift5_fieldmd` | `0x3640` | `0x36b0` | **`+0x70`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa578` | `0xa5d8` | **`+0x60`** |
+| `__TEXT.__swift5_capture` | `0x754` | `0x798` | **`+0x44`** |
+| `__AUTH.__objc_data` | `0xbdc8` | `0xbe08` | **`+0x40`** |
+| `__TEXT.__gcc_except_tab` | `0x2218` | `0x2248` | **`+0x30`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x198` | `0x180` | **`-0x18`** |
+| `__DATA.__data` | `0x5940` | `0x5950` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x1568` | `0x1578` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x16ac` | `0x16b8` | **`+0xc`** |
+| `__TEXT.__swift5_proto` | `0x45c` | `0x468` | **`+0xc`** |
+| `__TEXT.__swift5_protos` | `0x4c` | `0x58` | **`+0xc`** |
+| `__TEXT.__swift5_types` | `0x4c0` | `0x4cc` | **`+0xc`** |
+| `__DATA_CONST.__objc_arraydata` | `0x180` | `0x178` | **`-0x8`** |
+| `__TEXT.__swift_as_entry` | `0x38` | `0x34` | **`-0x4`** |
+| `__TEXT.__swift_as_ret` | `0x30` | `0x2c` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -286.30.6.12.13
--  __TEXT.__text: 0x19fe34
 +286.31.6.17.9
-+  __TEXT.__text: 0x1a2268
-   __TEXT.__delay_stubs: 0x1c0
-   __TEXT.__delay_helper: 0xdc
--  __TEXT.__objc_methlist: 0x1598c
--  __TEXT.__const: 0x8118
--  __TEXT.__swift5_typeref: 0x2f74
--  __TEXT.__swift5_capture: 0x754
--  __TEXT.__cstring: 0x1241c
--  __TEXT.__swift5_fieldmd: 0x3640
--  __TEXT.__constg_swiftt: 0x3e8c
--  __TEXT.__swift5_reflstr: 0x3037
--  __TEXT.__swift5_types: 0x4c0
-+  __TEXT.__objc_methlist: 0x15a04
-+  __TEXT.__const: 0x8218
-+  __TEXT.__swift5_typeref: 0x3022
-+  __TEXT.__swift5_capture: 0x798
-+  __TEXT.__cstring: 0x125e0
-+  __TEXT.__swift5_fieldmd: 0x36b0
-+  __TEXT.__constg_swiftt: 0x3f5c
-+  __TEXT.__swift5_reflstr: 0x30b7
-+  __TEXT.__swift5_types: 0x4cc
-   __TEXT.__swift5_builtin: 0x398
-   __TEXT.__swift5_mpenum: 0xc0
--  __TEXT.__oslogstring: 0x4571
--  __TEXT.__swift5_proto: 0x45c
--  __TEXT.__swift_as_entry: 0x38
--  __TEXT.__swift_as_ret: 0x30
--  __TEXT.__swift_as_cont: 0x70
-+  __TEXT.__oslogstring: 0x46e7
-+  __TEXT.__swift5_proto: 0x468
-   __TEXT.__swift5_assocty: 0x438
--  __TEXT.__swift5_protos: 0x4c
--  __TEXT.__gcc_except_tab: 0x2218
-+  __TEXT.__swift5_protos: 0x58
-+  __TEXT.__swift_as_entry: 0x34
-+  __TEXT.__swift_as_cont: 0x70
-+  __TEXT.__swift_as_ret: 0x2c
-+  __TEXT.__gcc_except_tab: 0x2248
-   __TEXT.__ustring: 0x9c
--  __TEXT.__unwind_info: 0x7ea8
--  __TEXT.__eh_frame: 0x1134
-+  __TEXT.__unwind_info: 0x7f58
-+  __TEXT.__eh_frame: 0x11ec
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3cf0
-+  __DATA_CONST.__const: 0x3df8
-   __DATA_CONST.__objc_classlist: 0xda0
-   __DATA_CONST.__objc_catlist: 0x110
-   __DATA_CONST.__objc_protolist: 0x738
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa578
-+  __DATA_CONST.__objc_selrefs: 0xa5d8
-   __DATA_CONST.__objc_protorefs: 0x1e0
-   __DATA_CONST.__objc_superrefs: 0x750
--  __DATA_CONST.__objc_arraydata: 0x180
--  __DATA_CONST.__got: 0x1568
--  __AUTH_CONST.__const: 0x6c50
--  __AUTH_CONST.__cfstring: 0x15620
--  __AUTH_CONST.__objc_const: 0x2be90
-+  __DATA_CONST.__objc_arraydata: 0x178
-+  __DATA_CONST.__got: 0x1578
-+  __AUTH_CONST.__const: 0x6d78
-+  __AUTH_CONST.__cfstring: 0x15a40
-+  __AUTH_CONST.__objc_const: 0x2bf48
-   __AUTH_CONST.__objc_intobj: 0x828
-   __AUTH_CONST.__objc_doubleobj: 0x100
--  __AUTH_CONST.__objc_arrayobj: 0x198
-+  __AUTH_CONST.__objc_arrayobj: 0x180
-   __AUTH_CONST.__objc_floatobj: 0x30
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__auth_got: 0x14d8
--  __AUTH.__objc_data: 0xbdc8
-+  __AUTH.__objc_data: 0xbe08
-   __AUTH.__data: 0x21d0
--  __DATA.__objc_ivar: 0x16ac
--  __DATA.__data: 0x5940
-+  __DATA.__objc_ivar: 0x16b8
-+  __DATA.__data: 0x5950
-   __DATA.__common: 0xa8
-   __DATA_DIRTY.__objc_data: 0x6e0
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10233
--  Symbols:   17974
+-  Symbols:   13688
 -  CStrings:  3431
 +  Functions: 10284
-+  Symbols:   18029
++  Symbols:   13730
 +  CStrings:  3472
- 
 Symbols:
 + -[MUPlaceEnrichmentAPIController _receivedEntities:containRequestedEnrichmentInfo:]
 + -[MUPlaceEnrichmentSectionController _adamIdForAppCategory:]
@@ -330,21 +277,6 @@ Symbols:
 + ___block_descriptor_40_e8_32s_e32_v32?0"NSString"8?<v?>16^B24ls32l8
 + ___block_descriptor_40_e8_32w_e8_v16?08lw32l8
 + ___swift_closure_destructor.21Tm
-+ _objc_msgSend$_adamIdForAppCategory:
-+ _objc_msgSend$_applyHostMessageHandlers
-+ _objc_msgSend$_captureShowcaseRevealWithParameter:
-+ _objc_msgSend$_captureShowcaseSuppressionWithParameter:
-+ _objc_msgSend$_captureShowcaseSwipeWithParameter:
-+ _objc_msgSend$_captureShowcaseTapWithParameter:
-+ _objc_msgSend$_handleShowcaseAnalytics:
-+ _objc_msgSend$_indexShowcaseIdEventValueFromParameter:
-+ _objc_msgSend$_receivedEntities:containRequestedEnrichmentInfo:
-+ _objc_msgSend$captureShowcaseSuppressionEventWithBusinessId:localSearchProviderID:showcaseId:adamId:suppressionReason:multipleShowcaseMetadata:
-+ _objc_msgSend$enumerateKeysAndObjectsUsingBlock:
-+ _objc_msgSend$registerMessageHandler:forMethod:
-+ _objc_msgSend$setInitialDelay:
-+ _objc_msgSend$setInitializationInfoValue:forKey:
-+ _objc_msgSend$setSuppressionReason:
 + _symbolic $s6MapsUI19DonationSerializingP
 + _symbolic $s6MapsUI22AdsEligibilityCheckingP
 + _symbolic $s6MapsUI27DonationEligibilityCheckingP
@@ -554,8 +486,6 @@ Symbols:
 - _MapsUIConfig_VendFullURLToShortcutsWorkflowForSharing_Metadata_block_invoke_41
 - _OBJC_IVAR_$_MUActivityDataProvider._resolvedShareURL
 - ___swift_closure_destructor.18Tm
-- _objc_msgSend$initWithObjects:forKeys:
-- _objc_msgSend$resolvedShareURL
 - _symbolic _____Sg 17AdPlatformsCommon11PlaceActionV
 CStrings:
 + "%@, %@"

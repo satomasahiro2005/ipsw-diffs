@@ -2,14 +2,15 @@
 
 > `/System/Library/Health/FeedItemPlugins/HearingAppPlugin.healthplugin/HearingAppPlugin`
 
-```diff
+### Section Size Changes
 
- 7027.0.72.2.7
--  __TEXT.__text: 0x81fe0
-+  __TEXT.__text: 0x81ffc
-   __TEXT.__objc_methlist: 0x2e4
-   __TEXT.__const: 0x4534
-   __TEXT.__constg_swiftt: 0x221c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x81fe0` | `0x81ffc` | **`+0x1c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_22e6ab578 -> sub_22ef50578 : 196 -> 200
 ~ sub_22e6ab63c -> sub_22ef50640 : 204 -> 208

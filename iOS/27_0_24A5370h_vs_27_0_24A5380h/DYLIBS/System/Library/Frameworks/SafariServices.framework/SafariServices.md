@@ -2,107 +2,43 @@
 
 > `/System/Library/Frameworks/SafariServices.framework/SafariServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x180ce0` | `0x181134` | **`+0x454`** |
+| `__DATA_CONST.__got` | `0x2618` | `0x2708` | **`+0xf0`** |
+| `__TEXT.__oslogstring` | `0x8027` | `0x80c7` | **`+0xa0`** |
+| `__TEXT.__gcc_except_tab` | `0xfae0` | `0xfb74` | **`+0x94`** |
+| `__AUTH_CONST.__cfstring` | `0xc280` | `0xc2e0` | **`+0x60`** |
+| `__TEXT.__objc_methlist` | `0x1bae4` | `0x1bb44` | **`+0x60`** |
+| `__TEXT.__dlopen_cstrs` | `0xbd3` | `0xb7f` | **`-0x54`** |
+| `__AUTH.__objc_data` | `0x5ed8` | `0x5e88` | **`-0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0xaf0` | `0xb40` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x12180` | `0x121c0` | **`+0x40`** |
+| `__DATA.__bss` | `0x730` | `0x710` | **`-0x20`** |
+| `__TEXT.__cstring` | `0xd3e0` | `0xd400` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x90a8` | `0x90c8` | **`+0x20`** |
+| `__AUTH.__data` | `0x2d0` | `0x2e0` | **`+0x10`** |
+| `__AUTH_CONST.__objc_const` | `0x2c4d0` | `0x2c4c0` | **`-0x10`** |
+| `__DATA.__data` | `0x6938` | `0x6948` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x7770` | `0x7780` | **`+0x10`** |
+| `__TEXT.__const` | `0x2b64` | `0x2b74` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x1f10` | `0x1f0c` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x180ce0
--  __TEXT.__objc_methlist: 0x1bae4
--  __TEXT.__const: 0x2b64
--  __TEXT.__cstring: 0xd3e0
--  __TEXT.__gcc_except_tab: 0xfae0
--  __TEXT.__dlopen_cstrs: 0xbd3
--  __TEXT.__oslogstring: 0x8027
-+  __TEXT.__text: 0x181134
-+  __TEXT.__objc_methlist: 0x1bb44
-+  __TEXT.__const: 0x2b74
-+  __TEXT.__cstring: 0xd400
-+  __TEXT.__gcc_except_tab: 0xfb74
-+  __TEXT.__dlopen_cstrs: 0xb7f
-+  __TEXT.__oslogstring: 0x80c7
-   __TEXT.__ustring: 0x36f6
-   __TEXT.__swift5_typeref: 0x5b8
-   __TEXT.__swift5_capture: 0x440
+-625.1.20.10.3
++625.1.22.10.3
 
-   __TEXT.__swift5_fieldmd: 0x120
-   __TEXT.__swift5_types: 0x1c
-   __TEXT.__swift5_proto: 0x4
--  __TEXT.__unwind_info: 0x90a8
-+  __TEXT.__unwind_info: 0x90c8
-   __TEXT.__eh_frame: 0x1138
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7770
-+  __DATA_CONST.__const: 0x7780
-   __DATA_CONST.__objc_classlist: 0xa50
-   __DATA_CONST.__objc_catlist: 0x100
-   __DATA_CONST.__objc_protolist: 0x8e8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x12180
-+  __DATA_CONST.__objc_selrefs: 0x121c0
-   __DATA_CONST.__objc_protorefs: 0x160
-   __DATA_CONST.__objc_superrefs: 0x858
-   __DATA_CONST.__objc_arraydata: 0x588
--  __DATA_CONST.__got: 0x2618
-+  __DATA_CONST.__got: 0x2708
-   __AUTH_CONST.__const: 0x2110
--  __AUTH_CONST.__cfstring: 0xc280
--  __AUTH_CONST.__objc_const: 0x2c4d0
-+  __AUTH_CONST.__cfstring: 0xc2e0
-+  __AUTH_CONST.__objc_const: 0x2c4c0
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0xc78
-   __AUTH_CONST.__objc_arrayobj: 0x4f8
-   __AUTH_CONST.__objc_doubleobj: 0xc0
-   __AUTH_CONST.__objc_dictobj: 0xa0
-   __AUTH_CONST.__auth_got: 0x1428
--  __AUTH.__objc_data: 0x5ed8
--  __AUTH.__data: 0x2d0
--  __DATA.__objc_ivar: 0x1f10
--  __DATA.__data: 0x6938
--  __DATA.__bss: 0x730
--  __DATA_DIRTY.__objc_data: 0xaf0
-+  __AUTH.__objc_data: 0x5e88
-+  __AUTH.__data: 0x2e0
-+  __DATA.__objc_ivar: 0x1f0c
-+  __DATA.__data: 0x6948
-+  __DATA.__bss: 0x710
-+  __DATA_DIRTY.__objc_data: 0xb40
-   __DATA_DIRTY.__bss: 0x10
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9184
--  Symbols:   35021
--  CStrings:  3972
+-  Symbols:   17446
+-  CStrings:  2535
 +  Functions: 9188
-+  Symbols:   35029
-+  CStrings:  3976
- 
-Sections:
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
++  Symbols:   17444
++  CStrings:  2536
 Symbols:
 + -[SFPrivacyReportExplanationDetailItemView groupStyle]
 + -[SFPrivacyReportExplanationDetailItemView setGroupStyle:]
@@ -235,32 +171,6 @@ Symbols:
 + ___block_descriptor_48_ea8_32s40w_e15_v16?0"NSURL"8lw40l8s32l8
 + ___block_descriptor_57_ea8_32s40s48w_e8_v16?0q8lw48l8s32l8s40l8
 + ___block_descriptor_65_ea8_32s40s48w_e5_v8?0lw48l8s32l8s40l8
-+ _objc_msgSend$_lockWebViewSafeAreaInsetTopForNavigationSnapshot
-+ _objc_msgSend$_shouldUseScreenTime
-+ _objc_msgSend$addPassesArchiveAtFileURL:completionHandler:
-+ _objc_msgSend$addPassesWithData:completionHandler:
-+ _objc_msgSend$collectFormMetadataForVisibleFormMatching
-+ _objc_msgSend$collectFormMetadataForVisibleFormMatchingAtURL:
-+ _objc_msgSend$controlIsCandidateForAdditionalClassifications
-+ _objc_msgSend$deferLoadOfURL:loadResolvedURL:
-+ _objc_msgSend$didCollectFormMetadataForVisibleFormMatching:atURL:
-+ _objc_msgSend$didFinishLoad
-+ _objc_msgSend$externalExtensionBundleID
-+ _objc_msgSend$fallbackURLForProvisionalNavigationFailure
-+ _objc_msgSend$fallbackURLForResponse:
-+ _objc_msgSend$firstVisibleFormMatchingPredicate:completionHandler:
-+ _objc_msgSend$initWithPassesArchiveAtFileURL:
-+ _objc_msgSend$initWithPassesData:
-+ _objc_msgSend$isCandidateForAdditionalClassifications
-+ _objc_msgSend$isVisible
-+ _objc_msgSend$recordTextDidChangeInFieldThatIsCandidateForAdditionalClassifications:
-+ _objc_msgSend$reportFocusedFieldIsCandidateForAdditionalClassification
-+ _objc_msgSend$reportTextDidChangeInFieldThatIsCandidateForAdditionalClassifications:
-+ _objc_msgSend$setGroupStyle:
-+ _objc_msgSend$setItemsUseContentSafeAreaLayoutMargins:
-+ _objc_msgSend$setTimeBasedEvictionMode:
-+ _objc_msgSend$usesInsetStyle
-+ _objc_msgSend$webViewController:willSnapshotBackForwardListItem:
 - -[SFPrivacyReportExplanationDetailItemView setUsesInsetStyle:]
 - -[SFPrivacyReportExplanationDetailView setUsesInsetStyle:]
 - -[SFPrivacyReportExplanationDetailView usesInsetStyle]
@@ -394,26 +304,6 @@ Symbols:
 - ____ZL28getPKPassesXPCContainerClassv_block_invoke
 - ___block_descriptor_40_ea8_32s_e36_v40?0"PKPass"8Q16"NSString"24^B32ls32l8
 - ___block_descriptor_56_ea8_32s40w_e5_v8?0lw40l8s32l8
-- _objc_msgSend$_fallbackURLForWellKnownChangePasswordURL:
-- _objc_msgSend$_fallbackURLForWellKnownChangePasswordURLFromQuirks:
-- _objc_msgSend$_homePageURLToUseAsFallbackWhenTryingToChangePassword:
-- _objc_msgSend$_personaShouldUseScreenTime
-- _objc_msgSend$_showPassBookControllerForPasses:
-- _objc_msgSend$canAutoFillNewPasswordOnPageWithCompletionHandler:
-- _objc_msgSend$canFillNewPassword
-- _objc_msgSend$changePasswordURLForHighLevelDomain:
-- _objc_msgSend$changePasswordURLManager
-- _objc_msgSend$checkReliabilityWithCompletion:
-- _objc_msgSend$collectFormMetadataForChangePasswordFormDetection
-- _objc_msgSend$collectFormMetadataForChangePasswordFormDetectionAtURL:
-- _objc_msgSend$createWithData:warnings:error:
-- _objc_msgSend$didCollectFormMetadataForChangePasswordFormDetection:atURL:
-- _objc_msgSend$initWithFileURL:
-- _objc_msgSend$safari_URLByRemovingUserPasswordPathQueryAndFragment
-- _objc_msgSend$safari_isWellKnownChangePasswordURL
-- _objc_msgSend$safari_statusCodeGroup
-- _objc_msgSend$setUsesInsetStyle:
-- _objc_msgSend$unarchivePassesWithBlock:
 CStrings:
 + "Article web view deallocated before reader rendering."
 + "Article web view was deallocated before reader rendering could start."
@@ -426,5 +316,4 @@ CStrings:
 - "softlink:r:path:/System/Library/PrivateFrameworks/PassKitCore.framework/PassKitCore"
 - "v40@?0@\"PKPass\"8Q16@\"NSString\"24^B32"
 - "\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xe1"
-
 ```

@@ -2,42 +2,30 @@
 
 > `/usr/lib/libMIPCSdk.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x378c48` | `0x37b7e4` | **`+0x2b9c`** |
+| `__AUTH_CONST.__const` | `0x2ce90` | `0x2d100` | **`+0x270`** |
+| `__TEXT.__gcc_except_tab` | `0x1e240` | `0x1e3b4` | **`+0x174`** |
+| `__TEXT.__const` | `0x14840` | `0x14970` | **`+0x130`** |
+| `__TEXT.__unwind_info` | `0xc400` | `0xc4a8` | **`+0xa8`** |
+| `__TEXT.__cstring` | `0x14513` | `0x145a7` | **`+0x94`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x378c48
--  __TEXT.__const: 0x14840
--  __TEXT.__gcc_except_tab: 0x1e240
--  __TEXT.__cstring: 0x14513
--  __TEXT.__unwind_info: 0xc400
-+  __TEXT.__text: 0x37b7e4
-+  __TEXT.__const: 0x14970
-+  __TEXT.__gcc_except_tab: 0x1e3b4
-+  __TEXT.__cstring: 0x145a7
-+  __TEXT.__unwind_info: 0xc4a8
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x78
-   __DATA_CONST.__weak_got: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2ce90
-+  __AUTH_CONST.__const: 0x2d100
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__auth_got: 0x158
-   __AUTH.__data: 0x10
-   __DATA.__bss: 0x60
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
+-175.0.0.0.0
++176.0.0.0.0
+
 -  Functions: 11117
--  Symbols:   22576
+-  Symbols:   18916
 -  CStrings:  2017
 +  Functions: 11154
-+  Symbols:   22649
++  Symbols:   18975
 +  CStrings:  2021
- 
-Sections:
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__data : content changed
 Symbols:
 + __ZN4mipc12ConfirmationILt63488EED0Ev
 + __ZN4mipc12ConfirmationILt63488EED1Ev
@@ -103,5 +91,4 @@ CStrings:
 + "dale_skpr_v2::Test_Defer_Afmic_Req"
 + "dale_skpr_v2::Test_Override_Config_Cnf"
 + "dale_skpr_v2::Test_Override_Config_Req"
-
 ```

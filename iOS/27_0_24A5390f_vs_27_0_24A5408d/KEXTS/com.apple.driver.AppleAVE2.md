@@ -2,31 +2,26 @@
 
 > `com.apple.driver.AppleAVE2`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x1cd2a0` | `0x1cdec0` | **`+0xc20`** |
+| `__TEXT.__os_log` | `0x5c7be` | `0x5cabd` | **`+0x2ff`** |
+| `__TEXT.__cstring` | `0x47f24` | `0x4804a` | **`+0x126`** |
+| `__TEXT.__const` | `0x4b680` | `0x4b6f0` | **`+0x70`** |
+
+### Other Changes
+
 ```diff
 
 -913.29.1.0.0
--  __TEXT.__const: 0x4b680
--  __TEXT.__cstring: 0x47f24
--  __TEXT.__os_log: 0x5c7be
--  __TEXT_EXEC.__text: 0x1cd2a0
-+913.43.1.0.0
-+  __TEXT.__const: 0x4b6f0
-+  __TEXT.__cstring: 0x4804a
-+  __TEXT.__os_log: 0x5cabd
-+  __TEXT_EXEC.__text: 0x1cdec0
-   __TEXT_EXEC.__auth_stubs: 0x7b0
-   __DATA.__data: 0x2c8
-   __DATA.__common: 0x130
-
-   __DATA_CONST.__auth_got: 0x3d8
-   __DATA_CONST.__got: 0xe8
-   __DATA_CONST.__auth_ptr: 0x8
 -  Functions: 2994
++913.43.1.0.0
 +  Functions: 2995
-   Symbols:   0
--  CStrings:  9846
-+  CStrings:  9866
- 
+
+-  CStrings:  9847
++  CStrings:  9867
 CStrings:
 + "%lld %d AVE %s: %p %lld MCTFGatingType %d"
 + "%lld %d AVE %s: %p %lld MCTFGatingType %d\n"
@@ -48,8 +43,12 @@ CStrings:
 + "%p MCTFGatingType %d\n"
 + "%p MCTFPreFiltAdjType %d"
 + "%p MCTFPreFiltAdjType %d\n"
++ "21:52:03"
 + "913.43.1"
 + "AVE_SVESched_ClearOrder"
++ "Aug  5 2026"
+- "21:36:33"
 - "913.29.1"
+- "Jul 14 2026"
 - "pCHM != nullptr && pSurface != nullptr && pSize != nullptr && psCBufInfo != nullptr"
 ```

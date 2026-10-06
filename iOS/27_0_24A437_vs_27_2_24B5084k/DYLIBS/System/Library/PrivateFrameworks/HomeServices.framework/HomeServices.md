@@ -2,71 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/HomeServices.framework/HomeServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8f3ac` | `0x90704` | **`+0x1358`** |
+| `__TEXT.__eh_frame` | `0x3d70` | `0x3e68` | **`+0xf8`** |
+| `__TEXT.__oslogstring` | `0x25c1` | `0x2671` | **`+0xb0`** |
+| `__AUTH_CONST.__objc_const` | `0x1058` | `0x10b8` | **`+0x60`** |
+| `__TEXT.__const` | `0x61d0` | `0x6230` | **`+0x60`** |
+| `__TEXT.__swift5_reflstr` | `0xde6` | `0xe46` | **`+0x60`** |
+| `__AUTH_CONST.__const` | `0x4718` | `0x4758` | **`+0x40`** |
+| `__TEXT.__swift5_fieldmd` | `0x16d8` | `0x1714` | **`+0x3c`** |
+| `__TEXT.__unwind_info` | `0x1ba0` | `0x1bd8` | **`+0x38`** |
+| `__AUTH.__data` | `0x840` | `0x870` | **`+0x30`** |
+| `__TEXT.__constg_swiftt` | `0x13d0` | `0x13e8` | **`+0x18`** |
+| `__TEXT.__swift5_typeref` | `0x12c3` | `0x12d7` | **`+0x14`** |
+| `__TEXT.__cstring` | `0x1b8b` | `0x1b7b` | **`-0x10`** |
+| `__TEXT.__swift_as_ret` | `0xe4` | `0xdc` | **`-0x8`** |
+| `__TEXT.__swift_as_cont` | `0x1ec` | `0x1f0` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -490.1.4.0.0
--  __TEXT.__text: 0x8ad0c
 +504.0.0.0.0
-+  __TEXT.__text: 0x8c09c
-   __TEXT.__objc_methlist: 0x154
--  __TEXT.__const: 0x61d0
--  __TEXT.__constg_swiftt: 0x13d0
--  __TEXT.__swift5_typeref: 0x12c3
--  __TEXT.__swift5_fieldmd: 0x16d8
--  __TEXT.__cstring: 0x1b8b
-+  __TEXT.__const: 0x6230
-+  __TEXT.__constg_swiftt: 0x13e8
-+  __TEXT.__swift5_typeref: 0x12d7
-+  __TEXT.__swift5_fieldmd: 0x1714
-+  __TEXT.__cstring: 0x1b7b
-   __TEXT.__swift5_proto: 0x534
-   __TEXT.__swift5_types: 0x1d8
--  __TEXT.__swift5_reflstr: 0xde6
-+  __TEXT.__swift5_reflstr: 0xe46
-   __TEXT.__swift5_assocty: 0x288
--  __TEXT.__oslogstring: 0x25c1
-+  __TEXT.__oslogstring: 0x2671
-   __TEXT.__swift_as_entry: 0xb4
--  __TEXT.__swift_as_ret: 0xe4
--  __TEXT.__swift_as_cont: 0x1ec
-+  __TEXT.__swift_as_ret: 0xdc
-+  __TEXT.__swift_as_cont: 0x1f0
-   __TEXT.__swift5_protos: 0xc
-   __TEXT.__swift5_capture: 0x48
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x2190
--  __TEXT.__eh_frame: 0x3d70
-+  __TEXT.__unwind_info: 0x21b8
-+  __TEXT.__eh_frame: 0x3e68
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0x2c0
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x4718
--  __AUTH_CONST.__objc_const: 0x1058
-+  __AUTH_CONST.__const: 0x4758
-+  __AUTH_CONST.__objc_const: 0x10b8
-   __AUTH_CONST.__auth_got: 0x1048
--  __AUTH.__data: 0x840
-+  __AUTH.__data: 0x870
-   __DATA.__data: 0xb30
-   __DATA.__common: 0x188
-   __DATA_DIRTY.__objc_data: 0x140
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2128
--  Symbols:   912
+-  Symbols:   849
 -  CStrings:  348
 +  Functions: 2134
-+  Symbols:   915
++  Symbols:   852
 +  CStrings:  354
- 
 Symbols:
 + _get_enum_tag_for_layout_string 12HomeServices21AccessKeyManagerErrorO
 + _kSecAttrAccessible

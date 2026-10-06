@@ -2,32 +2,28 @@
 
 > `/System/Library/Frameworks/AppTrackingTransparency.framework/AppTrackingTransparency`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x4c5` | `0x4cc` | **`+0x7`** |
+| `__TEXT.__oslogstring` | `0x835` | `0x838` | **`+0x3`** |
+
+### Other Changes
+
 ```diff
 
 -106.3.1.0.0
 +106.3.2.0.0
-   __TEXT.__text: 0x29b0
-   __TEXT.__objc_methlist: 0x184
-   __TEXT.__const: 0x80
-   __TEXT.__gcc_except_tab: 0xe8
--  __TEXT.__cstring: 0x4c5
--  __TEXT.__oslogstring: 0x835
-+  __TEXT.__cstring: 0x4cc
-+  __TEXT.__oslogstring: 0x838
-   __TEXT.__unwind_info: 0x160
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 Symbols:
 + +[ATTrackingManager _performTCCAccessRequestPreferExpandedInterface:displayAdditionalInfo:completion:]
 + +[ATTrackingManager requestTrackingAuthorizationPreferExpandedInterface:additionalInformationAction:completionHandler:]
 + ___102+[ATTrackingManager _performTCCAccessRequestPreferExpandedInterface:displayAdditionalInfo:completion:]_block_invoke
 + ___119+[ATTrackingManager requestTrackingAuthorizationPreferExpandedInterface:additionalInformationAction:completionHandler:]_block_invoke
-+ _objc_msgSend$_performTCCAccessRequestPreferExpandedInterface:displayAdditionalInfo:completion:
 - +[ATTrackingManager _performTCCAccessRequestUsingExpandedInterface:displayAdditionalInfo:completion:]
 - +[ATTrackingManager requestTrackingAuthorizationUsingExpandedInterface:additionalInformationAction:completionHandler:]
 - ___101+[ATTrackingManager _performTCCAccessRequestUsingExpandedInterface:displayAdditionalInfo:completion:]_block_invoke
 - ___118+[ATTrackingManager requestTrackingAuthorizationUsingExpandedInterface:additionalInformationAction:completionHandler:]_block_invoke
-- _objc_msgSend$_performTCCAccessRequestUsingExpandedInterface:displayAdditionalInfo:completion:
 CStrings:
 + "[%@] requestTrackingAuthorizationPreferExpandedInterface API call failed due to missing completion."
 + "[%@] requestTrackingAuthorizationPreferExpandedInterface API call invoked, preferExpandedInterface=%d, displayAdditionalInfo=%d."

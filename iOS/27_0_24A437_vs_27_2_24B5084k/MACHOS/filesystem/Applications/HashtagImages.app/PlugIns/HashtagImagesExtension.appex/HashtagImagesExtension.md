@@ -2,108 +2,73 @@
 
 > `/Applications/HashtagImages.app/PlugIns/HashtagImagesExtension.appex/HashtagImagesExtension`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift_as_ret`
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc4c8` | `0xa1e4` | **`-0x22e4`** |
+| `__DATA.__objc_const` | `0xa28` | `0x278` | **`-0x7b0`** |
+| `__TEXT.__objc_methname` | `0x10b6` | `0xa43` | **`-0x673`** |
+| `__TEXT.__objc_stubs` | `0xec0` | `0xaa0` | **`-0x420`** |
+| `__DATA.__data` | `0x418` | `0x128` | **`-0x2f0`** |
+| `__TEXT.__objc_methtype` | `0x496` | `0x1bd` | **`-0x2d9`** |
+| `__DATA_CONST.__const` | `0x6a0` | `0x3f8` | **`-0x2a8`** |
+| `__TEXT.__objc_methlist` | `0x46c` | `0x1e8` | **`-0x284`** |
+| `__TEXT.__auth_stubs` | `0x920` | `0xb60` | **`+0x240`** |
+| `__DATA.__objc_selrefs` | `0x578` | `0x360` | **`-0x218`** |
+| `__TEXT.__swift5_capture` | `0x2ac` | `0x16c` | **`-0x140`** |
+| `__DATA_CONST.__auth_got` | `0x498` | `0x5b8` | **`+0x120`** |
+| `__DATA.__bss` | `0x100` | `—` | **`-0x100`** |
+| `__TEXT.__swift5_typeref` | `0x2ae` | `0x1ff` | **`-0xaf`** |
+| `__TEXT.__swift5_reflstr` | `0x11a` | `0x73` | **`-0xa7`** |
+| `__TEXT.__unwind_info` | `0x3b8` | `0x318` | **`-0xa0`** |
+| `__TEXT.__eh_frame` | `0x178` | `0x208` | **`+0x90`** |
+| `__TEXT.__cstring` | `0x399` | `0x320` | **`-0x79`** |
+| `__TEXT.__swift5_fieldmd` | `0xd8` | `0x68` | **`-0x70`** |
+| `__TEXT.__const` | `0x210` | `0x1a8` | **`-0x68`** |
+| `__TEXT.__objc_classname` | `0x132` | `0xcf` | **`-0x63`** |
+| `__DATA_CONST.__objc_protolist` | `0x60` | `0x10` | **`-0x50`** |
+| `__DATA.__objc_data` | `0x1c0` | `0x190` | **`-0x30`** |
+| `__DATA_CONST.__auth_ptr` | `0x80` | `0x60` | **`-0x20`** |
+| `__DATA_CONST.__objc_protorefs` | `0x30` | `0x10` | **`-0x20`** |
+| `__TEXT.__constg_swiftt` | `0x80` | `0x64` | **`-0x1c`** |
+| `__TEXT.__swift5_proto` | `0x8` | `—` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0xc` | `0x8` | **`-0x4`** |
+| `__TEXT.__swift_as_cont` | `0x8` | `0xc` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `0x10` | `0x14` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_classlist`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -3400.1.6.30.0
--  __TEXT.__text: 0xbfd8
--  __TEXT.__auth_stubs: 0x920
--  __TEXT.__objc_stubs: 0xec0
--  __TEXT.__objc_methlist: 0x46c
--  __TEXT.__const: 0x210
--  __TEXT.__cstring: 0x399
--  __TEXT.__objc_methname: 0x10b6
--  __TEXT.__swift5_typeref: 0x2ae
--  __TEXT.__swift5_capture: 0x2ac
--  __TEXT.__objc_methtype: 0x496
--  __TEXT.__objc_classname: 0x132
--  __TEXT.__constg_swiftt: 0x80
--  __TEXT.__swift5_reflstr: 0x11a
--  __TEXT.__swift5_fieldmd: 0xd8
--  __TEXT.__swift5_proto: 0x8
--  __TEXT.__swift5_types: 0xc
--  __TEXT.__swift_as_entry: 0x10
-+3400.1.6.36.0
-+  __TEXT.__text: 0x9d2c
-+  __TEXT.__auth_stubs: 0xb60
-+  __TEXT.__objc_stubs: 0xaa0
-+  __TEXT.__objc_methlist: 0x1e8
-+  __TEXT.__const: 0x1a8
-+  __TEXT.__cstring: 0x320
-+  __TEXT.__objc_methname: 0xa43
-+  __TEXT.__objc_classname: 0xcf
-+  __TEXT.__objc_methtype: 0x1bd
-+  __TEXT.__constg_swiftt: 0x64
-+  __TEXT.__swift5_typeref: 0x1ff
-+  __TEXT.__swift5_reflstr: 0x73
-+  __TEXT.__swift5_fieldmd: 0x68
-+  __TEXT.__swift5_capture: 0x16c
-+  __TEXT.__swift5_types: 0x8
-+  __TEXT.__swift_as_entry: 0x14
-   __TEXT.__swift_as_ret: 0x8
--  __TEXT.__swift_as_cont: 0x8
--  __TEXT.__unwind_info: 0x460
--  __TEXT.__eh_frame: 0x178
--  __DATA_CONST.__const: 0x6a0
-+  __TEXT.__swift_as_cont: 0xc
-+  __TEXT.__unwind_info: 0x380
-+  __TEXT.__eh_frame: 0x210
-+  __DATA_CONST.__const: 0x3f8
-   __DATA_CONST.__objc_classlist: 0x10
--  __DATA_CONST.__objc_protolist: 0x60
-+  __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_protorefs: 0x30
--  __DATA_CONST.__auth_got: 0x498
-+  __DATA_CONST.__objc_protorefs: 0x10
-+  __DATA_CONST.__auth_got: 0x5b8
-   __DATA_CONST.__got: 0x128
--  __DATA_CONST.__auth_ptr: 0x80
--  __DATA.__objc_const: 0xa28
--  __DATA.__objc_selrefs: 0x578
--  __DATA.__objc_data: 0x1c0
--  __DATA.__data: 0x418
 -  - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-+  __DATA_CONST.__auth_ptr: 0x60
-+  __DATA.__objc_const: 0x278
-+  __DATA.__objc_selrefs: 0x360
-+  __DATA.__objc_data: 0x190
-+  __DATA.__data: 0x128
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
++3400.1.6.36.0
+
 -  - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 -  - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
 -  - /System/Library/Frameworks/CoreVideo.framework/CoreVideo
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOSurface.framework/IOSurface
--  - /System/Library/Frameworks/ImageIO.framework/ImageIO
-   - /System/Library/Frameworks/MessageUI.framework/MessageUI
-   - /System/Library/Frameworks/Messages.framework/Messages
--  - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
-   - /System/Library/Frameworks/UIKit.framework/UIKit
--  - /System/Library/PrivateFrameworks/AggregateDictionary.framework/AggregateDictionary
-   - /System/Library/PrivateFrameworks/CoreParsec.framework/CoreParsec
-   - /System/Library/PrivateFrameworks/SearchFoundation.framework/SearchFoundation
-   - /System/Library/PrivateFrameworks/SearchToShareCore.framework/SearchToShareCore
--  - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftCompression.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+-  - /System/Library/Frameworks/ImageIO.framework/ImageIO
+
+-  - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
+
+-  - /System/Library/PrivateFrameworks/AggregateDictionary.framework/AggregateDictionary
+
+-  - /usr/lib/libMobileGestalt.dylib
+
 -  Functions: 301
 -  Symbols:   150
 -  CStrings:  269
 +  Functions: 207
 +  Symbols:   154
 +  CStrings:  156
- 
 Symbols:
 + _NSLocalizedDescriptionKey
 + _NSSearchPathForDirectoriesInDomains

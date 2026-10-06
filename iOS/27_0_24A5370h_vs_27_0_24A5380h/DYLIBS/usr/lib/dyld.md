@@ -2,41 +2,29 @@
 
 > `/usr/lib/dyld`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9e104` | `0x9e8bc` | **`+0x7b8`** |
+| `__TEXT.__cstring` | `0x12295` | `0x12497` | **`+0x202`** |
+| `__DATA_CONST.__const` | `0x5540` | `0x5590` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x3590` | `0x35b0` | **`+0x20`** |
+| `__DATA.__data` | `0x1c8` | `0x1c0` | **`-0x8`** |
+| `__DATA_DIRTY.__data` | `0x64` | `0x6c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x9e104
-+  __TEXT.__text: 0x9e8bc
-   __TEXT.__const: 0x1978
--  __TEXT.__cstring: 0x12295
--  __TEXT.__unwind_info: 0x3590
--  __DATA_CONST.__const: 0x5540
-+  __TEXT.__cstring: 0x12497
-+  __TEXT.__unwind_info: 0x35b0
-+  __DATA_CONST.__const: 0x5590
-   __AUTH_CONST.__const: 0x2758
--  __DATA.__data: 0x1c8
-+  __DATA.__data: 0x1c0
-   __DATA.__crash_info: 0x148
-   __DATA.__common: 0x8f0
-   __DATA.__bss: 0x508
-+  __DATA_DIRTY.__data: 0x6c
-   __DATA_DIRTY.__all_image_info: 0x170
--  __DATA_DIRTY.__data: 0x64
-   __DATA_DIRTY.__common: 0x1160
-   __DATA_DIRTY.__bss: 0x1bc0
-   __TPRO_CONST.__data: 0xe1
-   __TPRO_CONST.__allocator: 0x20000
+-27056.0.0.0.0
 -  Functions: 3414
--  Symbols:   8574
+-  Symbols:   3262
 -  CStrings:  2227
++27059.3.0.0.0
 +  Functions: 3421
-+  Symbols:   8578
++  Symbols:   3268
 +  CStrings:  2243
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __AUTH_CONST.__const : content changed
-~ __DATA_DIRTY.__all_image_info : content changed
 Symbols:
 + __ZN5dyld3L18preflightCacheFileERKNS_18SharedCacheOptionsEPNS_19SharedCacheLoadInfoEPNS_9CacheInfoEiPNSt3__15arrayIA32_cLm128EEEPKS3_
 + __ZN5dyld3L21preflightSubCacheFileERKNS_18SharedCacheOptionsEPNS_19SharedCacheLoadInfoEPNS_9CacheInfoEPcPKcPKS3_
@@ -97,5 +85,4 @@ CStrings:
 - "27056"
 - "@(#)VERSION:Darwin Ignition Sequence Version 1.0.0: Thu Jun 18 19:34:31 PDT 2026; root:libignition-64~7581/libignition_core/RELEASE_ARM64E"
 - "Darwin Ignition Sequence Version 1.0.0: Thu Jun 18 19:34:31 PDT 2026; root:libignition-64~7581/libignition_core/RELEASE_ARM64E"
-
 ```

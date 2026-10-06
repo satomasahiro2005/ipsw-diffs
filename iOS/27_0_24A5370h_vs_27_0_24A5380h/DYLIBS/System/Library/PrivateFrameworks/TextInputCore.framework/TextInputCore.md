@@ -2,99 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/TextInputCore.framework/TextInputCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x220b74` | `0x2221c8` | **`+0x1654`** |
+| `__AUTH_CONST.__cfstring` | `0x137a0` | `0x13d60` | **`+0x5c0`** |
+| `__TEXT.__ustring` | `0x51e` | `0x7d8` | **`+0x2ba`** |
+| `__TEXT.__cstring` | `0x1c6fc` | `0x1c939` | **`+0x23d`** |
+| `__AUTH.__objc_data` | `0x2210` | `0x2080` | **`-0x190`** |
+| `__DATA_DIRTY.__objc_data` | `0x3160` | `0x32f0` | **`+0x190`** |
+| `__AUTH_CONST.__const` | `0x8748` | `0x8850` | **`+0x108`** |
+| `__AUTH_CONST.__objc_const` | `0x1a540` | `0x1a610` | **`+0xd0`** |
+| `__DATA_CONST.__got` | `0x17a0` | `0x1868` | **`+0xc8`** |
+| `__DATA_DIRTY.__bss` | `0xb98` | `0xc50` | **`+0xb8`** |
+| `__TEXT.__unwind_info` | `0x6588` | `0x65f8` | **`+0x70`** |
+| `__DATA_CONST.__const` | `0x4ef0` | `0x4f58` | **`+0x68`** |
+| `__DATA_CONST.__objc_selrefs` | `0x9ff8` | `0xa048` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x10a58` | `0x10aa0` | **`+0x48`** |
+| `__DATA.__bss` | `0x1f10` | `0x1ed0` | **`-0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x1ae0` | `0x1b00` | **`+0x20`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x390` | `0x3a8` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x12a8` | `0x12c0` | **`+0x18`** |
+| `__DATA_CONST.__objc_arraydata` | `0x1038` | `0x1050` | **`+0x18`** |
+| `__TEXT.__oslogstring` | `0x43e7` | `0x43e8` | **`+0x1`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x220b74
-+  __TEXT.__text: 0x2221c8
-   __TEXT.__init_offsets: 0xc0
--  __TEXT.__objc_methlist: 0x10a58
-+  __TEXT.__objc_methlist: 0x10aa0
-   __TEXT.__dlopen_cstrs: 0x781
-   __TEXT.__const: 0x2e60
--  __TEXT.__cstring: 0x1c6fc
--  __TEXT.__oslogstring: 0x43e7
--  __TEXT.__ustring: 0x51e
--  __TEXT.__unwind_info: 0x6588
-+  __TEXT.__cstring: 0x1c939
-+  __TEXT.__oslogstring: 0x43e8
-+  __TEXT.__ustring: 0x7d8
-+  __TEXT.__unwind_info: 0x65f8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4ef0
-+  __DATA_CONST.__const: 0x4f58
-   __DATA_CONST.__objc_classlist: 0x858
-   __DATA_CONST.__objc_catlist: 0x60
-   __DATA_CONST.__objc_protolist: 0x190
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x9ff8
-+  __DATA_CONST.__objc_selrefs: 0xa048
-   __DATA_CONST.__objc_superrefs: 0x728
--  __DATA_CONST.__objc_arraydata: 0x1038
--  __DATA_CONST.__got: 0x17a0
--  __AUTH_CONST.__const: 0x8748
--  __AUTH_CONST.__cfstring: 0x137a0
--  __AUTH_CONST.__objc_const: 0x1a540
-+  __DATA_CONST.__objc_arraydata: 0x1050
-+  __DATA_CONST.__got: 0x1868
-+  __AUTH_CONST.__const: 0x8850
-+  __AUTH_CONST.__cfstring: 0x13d60
-+  __AUTH_CONST.__objc_const: 0x1a610
-   __AUTH_CONST.__weak_auth_got: 0x30
--  __AUTH_CONST.__objc_arrayobj: 0x390
-+  __AUTH_CONST.__objc_arrayobj: 0x3a8
-   __AUTH_CONST.__objc_intobj: 0x6c0
-   __AUTH_CONST.__objc_dictobj: 0x118
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x1ae0
--  __AUTH.__objc_data: 0x2210
-+  __AUTH_CONST.__auth_got: 0x1b00
-+  __AUTH.__objc_data: 0x2080
-   __AUTH.__data: 0x18
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x20
--  __DATA.__objc_ivar: 0x12a8
-+  __DATA.__objc_ivar: 0x12c0
-   __DATA.__data: 0x22a8
--  __DATA.__bss: 0x1f10
-+  __DATA.__bss: 0x1ed0
-   __DATA.__common: 0x408
--  __DATA_DIRTY.__objc_data: 0x3160
-+  __DATA_DIRTY.__objc_data: 0x32f0
-   __DATA_DIRTY.__data: 0xb0
--  __DATA_DIRTY.__bss: 0xb98
-+  __DATA_DIRTY.__bss: 0xc50
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+-3557.15.100.0.0
++3559.100.0.0.0
 
-   - /usr/lib/libmecabra.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 10494
--  Symbols:   31531
--  CStrings:  6353
+-  Symbols:   17339
+-  CStrings:  4025
 +  Functions: 10533
-+  Symbols:   31665
-+  CStrings:  6420
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
++  Symbols:   17412
++  CStrings:  4076
 Symbols:
 + -[TIKeyboardInputManager(ZephyrEngineSpecializations) _publishDebugChargeForKeyCode:touchLocation:]
 + -[TIKeyboardInputManagerMecabra contextBeforeWithDesiredLength:]
@@ -171,16 +116,6 @@ Symbols:
 + _clock_gettime_nsec_np
 + _notify_post
 + _notify_set_state
-+ _objc_msgSend$_publishDebugChargeForKeyCode:touchLocation:
-+ _objc_msgSend$dataDetectorWithTypes:error:
-+ _objc_msgSend$didFocusOneTimeCodeField
-+ _objc_msgSend$onScreenContext
-+ _objc_msgSend$onScreenContextForCandidates
-+ _objc_msgSend$range
-+ _objc_msgSend$replaceMatchesInString:options:range:withTemplate:
-+ _objc_msgSend$replaceOccurrencesOfString:withString:options:range:
-+ _objc_msgSend$setOnScreenContext:
-+ _objc_msgSend$setOnScreenStringContext:
 - __ZN2TI8Favonius10BeamSearch20choose_hit_test_nodeERKN3WTF6RefPtrINS0_10SearchNodeEEERKNS3_INS0_8KeyMatchEEES7_S7_
 - ___block_descriptor_48_8_32r_e5_v8?0lr32l8
 CStrings:
@@ -247,5 +182,4 @@ CStrings:
 - "accessibilityLabel:\\s*\"([^\"]+)\""
 - "on_screen_context_for_candidates_predictions"
 - "\xf0\xf0!"
-
 ```

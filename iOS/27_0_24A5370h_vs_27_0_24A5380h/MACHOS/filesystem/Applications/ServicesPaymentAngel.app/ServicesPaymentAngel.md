@@ -2,99 +2,63 @@
 
 > `/Applications/ServicesPaymentAngel.app/ServicesPaymentAngel`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x24ce8` | `0x25608` | **`+0x920`** |
+| `__DATA.__objc_const` | `0x3f90` | `0x42f0` | **`+0x360`** |
+| `__TEXT.__oslogstring` | `0x1a8f` | `0x1b8f` | **`+0x100`** |
+| `__TEXT.__objc_methname` | `0x2a2d` | `0x2b1d` | **`+0xf0`** |
+| `__DATA.__data` | `0x15c8` | `0x1658` | **`+0x90`** |
+| `__TEXT.__constg_swiftt` | `0xf28` | `0xfb0` | **`+0x88`** |
+| `__TEXT.__const` | `0x1204` | `0x1264` | **`+0x60`** |
+| `__TEXT.__swift5_reflstr` | `0x834` | `0x894` | **`+0x60`** |
+| `__DATA.__objc_data` | `0x1128` | `0x1168` | **`+0x40`** |
+| `__TEXT.__objc_stubs` | `0x1360` | `0x13a0` | **`+0x40`** |
+| `__TEXT.__swift5_fieldmd` | `0x718` | `0x73c` | **`+0x24`** |
+| `__DATA.__objc_selrefs` | `0x950` | `0x970` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0xa8c` | `0xaa4` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x948` | `0x960` | **`+0x18`** |
+| `__DATA_CONST.__const` | `0x1850` | `0x1860` | **`+0x10`** |
+| `__TEXT.__auth_stubs` | `0x1120` | `0x1130` | **`+0x10`** |
+| `__TEXT.__objc_methtype` | `0x142a` | `0x141a` | **`-0x10`** |
+| `__TEXT.__swift5_typeref` | `0x9da` | `0x9e6` | **`+0xc`** |
+| `__DATA.__common` | `0xe0` | `0xe8` | **`+0x8`** |
+| `__DATA_CONST.__auth_got` | `0x898` | `0x8a0` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x24ce8
--  __TEXT.__auth_stubs: 0x1120
--  __TEXT.__objc_stubs: 0x1360
--  __TEXT.__objc_methlist: 0xa8c
--  __TEXT.__const: 0x1204
--  __TEXT.__swift5_typeref: 0x9da
--  __TEXT.__swift5_fieldmd: 0x718
--  __TEXT.__constg_swiftt: 0xf28
-+  __TEXT.__text: 0x25608
-+  __TEXT.__auth_stubs: 0x1130
-+  __TEXT.__objc_stubs: 0x13a0
-+  __TEXT.__objc_methlist: 0xaa4
-+  __TEXT.__const: 0x1264
-+  __TEXT.__swift5_typeref: 0x9e6
-+  __TEXT.__swift5_fieldmd: 0x73c
-+  __TEXT.__constg_swiftt: 0xfb0
-   __TEXT.__swift5_builtin: 0x3c
--  __TEXT.__swift5_reflstr: 0x834
-+  __TEXT.__swift5_reflstr: 0x894
-   __TEXT.__swift5_assocty: 0x90
-   __TEXT.__swift5_proto: 0x54
-   __TEXT.__swift5_types: 0x70
-   __TEXT.__objc_classname: 0x684
--  __TEXT.__objc_methname: 0x2a2d
--  __TEXT.__objc_methtype: 0x142a
-+  __TEXT.__objc_methtype: 0x141a
-   __TEXT.__cstring: 0x881
--  __TEXT.__oslogstring: 0x1a8f
-+  __TEXT.__objc_methname: 0x2b1d
-+  __TEXT.__oslogstring: 0x1b8f
-   __TEXT.__swift5_protos: 0x10
-   __TEXT.__swift5_capture: 0x8dc
-   __TEXT.__swift_as_entry: 0x40
-   __TEXT.__swift_as_ret: 0x3c
-   __TEXT.__swift_as_cont: 0x78
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__unwind_info: 0x948
-+  __TEXT.__unwind_info: 0x960
-   __TEXT.__eh_frame: 0xa70
--  __DATA_CONST.__const: 0x1850
-+  __DATA_CONST.__const: 0x1860
-   __DATA_CONST.__objc_classlist: 0x90
-   __DATA_CONST.__objc_protolist: 0xd0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x70
--  __DATA_CONST.__auth_got: 0x898
-+  __DATA_CONST.__auth_got: 0x8a0
-   __DATA_CONST.__got: 0x2b8
-   __DATA_CONST.__auth_ptr: 0x368
--  __DATA.__objc_const: 0x3f90
--  __DATA.__objc_selrefs: 0x950
--  __DATA.__objc_data: 0x1128
--  __DATA.__data: 0x15c8
-+  __DATA.__objc_const: 0x42f0
-+  __DATA.__objc_selrefs: 0x970
-+  __DATA.__objc_data: 0x1168
-+  __DATA.__data: 0x1658
-   __DATA.__bss: 0x800
--  __DATA.__common: 0xe0
-+  __DATA.__common: 0xe8
-   - /AppleInternal/Library/Frameworks/TapToRadarKit.framework/TapToRadarKit
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+-1.0.17.0.0
++1.0.22.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 839
--  Symbols:   6949
--  CStrings:  697
+-  Symbols:   2340
+-  CStrings:  696
 +  Functions: 849
-+  Symbols:   7036
-+  CStrings:  709
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_entry : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA_CONST.__auth_ptr : content changed
++  Symbols:   2367
++  CStrings:  708
 Symbols:
 + _$s20ServicesPaymentAngel0B18SheetServerHandlerC14clientNotifierAA23ClientInterfaceProtocol_pSgvg
 + _$s20ServicesPaymentAngel0B18SheetServerHandlerC14clientNotifierAA23ClientInterfaceProtocol_pSgvgTq
@@ -148,5 +112,4 @@ CStrings:
 + "setRequiresFullscreenPresentation:"
 + "supportsMultipleScenes"
 - "Dismissal triggered from PaymentSheetView with success"
-
 ```

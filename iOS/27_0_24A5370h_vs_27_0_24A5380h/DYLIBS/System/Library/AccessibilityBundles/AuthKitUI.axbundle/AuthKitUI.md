@@ -2,61 +2,32 @@
 
 > `/System/Library/AccessibilityBundles/AuthKitUI.axbundle/AuthKitUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__objc_data` | `0x4b0` | `0x5f0` | **`+0x140`** |
+| `__AUTH_CONST.__objc_const` | `0xab0` | `0xbd0` | **`+0x120`** |
+| `__AUTH.__objc_data` | `0x140` | `0xa0` | **`-0xa0`** |
+| `__TEXT.__objc_methlist` | `0x370` | `0x3c0` | **`+0x50`** |
+| `__AUTH_CONST.__cfstring` | `0x6e0` | `0x720` | **`+0x40`** |
+| `__TEXT.__text` | `0x1530` | `0x156c` | **`+0x3c`** |
+| `__TEXT.__cstring` | `0x5f1` | `0x624` | **`+0x33`** |
+| `__DATA_CONST.__objc_classlist` | `0x98` | `0xa8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1530
--  __TEXT.__objc_methlist: 0x370
-+  __TEXT.__text: 0x156c
-+  __TEXT.__objc_methlist: 0x3c0
-   __TEXT.__const: 0x8
-   __TEXT.__gcc_except_tab: 0x44
--  __TEXT.__cstring: 0x5f1
-+  __TEXT.__cstring: 0x624
-   __TEXT.__unwind_info: 0x128
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+-3039.1.0.0.0
++3042.0.0.0.0
 
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xd8
--  __DATA_CONST.__objc_classlist: 0x98
-+  __DATA_CONST.__objc_classlist: 0xa8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x1c0
-   __DATA_CONST.__objc_superrefs: 0x48
-   __DATA_CONST.__got: 0xb0
-   __AUTH_CONST.__const: 0x80
--  __AUTH_CONST.__cfstring: 0x6e0
--  __AUTH_CONST.__objc_const: 0xab0
-+  __AUTH_CONST.__cfstring: 0x720
-+  __AUTH_CONST.__objc_const: 0xbd0
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x140
-+  __AUTH.__objc_data: 0xa0
-   __DATA.__bss: 0x8
--  __DATA_DIRTY.__objc_data: 0x4b0
-+  __DATA_DIRTY.__objc_data: 0x5f0
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 64
--  Symbols:   334
--  CStrings:  120
+-  Symbols:   229
+-  CStrings:  66
 +  Functions: 69
-+  Symbols:   355
-+  CStrings:  124
- 
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
++  Symbols:   245
++  CStrings:  68
 Symbols:
 + +[AKUIUserAvatarViewAccessibility _accessibilityPerformValidations:]
 + +[AKUIUserAvatarViewAccessibility(SafeCategory) safeCategoryBaseClass]
@@ -79,5 +50,4 @@ Functions:
 CStrings:
 + "AKUIUserAvatarView"
 + "AKUIUserAvatarViewAccessibility"
-
 ```

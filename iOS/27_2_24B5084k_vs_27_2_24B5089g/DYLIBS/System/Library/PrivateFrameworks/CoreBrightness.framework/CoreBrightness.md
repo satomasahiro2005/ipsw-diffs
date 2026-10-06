@@ -2,46 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/CoreBrightness.framework/CoreBrightness`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17d0dc` | `0x17d528` | **`+0x44c`** |
+| `__TEXT.__oslogstring` | `0x1aded` | `0x1aefd` | **`+0x110`** |
+| `__AUTH_CONST.__cfstring` | `0xed80` | `0xedc0` | **`+0x40`** |
+| `__TEXT.__const` | `0x1b6c0` | `0x1b6e0` | **`+0x20`** |
+| `__DATA.__bss` | `0x6b40` | `0x6b50` | **`+0x10`** |
+| `__TEXT.__cstring` | `0xd335` | `0xd345` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x5960` | `0x5968` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2300.40.37.0.0
--  __TEXT.__text: 0x1793bc
 +2300.40.39.0.0
-+  __TEXT.__text: 0x179808
-   __TEXT.__objc_methlist: 0xde50
--  __TEXT.__cstring: 0xd335
--  __TEXT.__const: 0x1b6c0
--  __TEXT.__oslogstring: 0x1aded
-+  __TEXT.__cstring: 0xd345
-+  __TEXT.__const: 0x1b6e0
-+  __TEXT.__oslogstring: 0x1aefd
-   __TEXT.__gcc_except_tab: 0x28e8
-   __TEXT.__dlopen_cstrs: 0x218
-   __TEXT.__swift5_typeref: 0xf3b
 
-   __DATA_CONST.__objc_arraydata: 0xcf8
-   __DATA_CONST.__got: 0x7e8
-   __AUTH_CONST.__const: 0x3fc0
--  __AUTH_CONST.__cfstring: 0xed80
-+  __AUTH_CONST.__cfstring: 0xedc0
-   __AUTH_CONST.__objc_const: 0x392c0
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_doubleobj: 0x80
-
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 9094
-   Symbols:   13256
 -  CStrings:  4871
 +  CStrings:  4877
- 
 Symbols:
 + _OBJC_IVAR_$_CBCPMSModule._currentHDRNits
 - _OBJC_IVAR_$_CBCPMSModule._currentSDRNits
 Functions:
 ~ __ZN4AABC20setPropertyForClientEPK10__CFStringPKvS4_ : 13556 -> 13560
 ~ ___DisplaySetProperty_block_invoke : 19892 -> 20208
-~ __ZN4AABC11handleEventEPU26objcproto15CBEventProtocol11objc_object : 932 -> 936
-~ __ZN4AABC14HandleALSEventEPU49objcproto18CBALSEventProtocol18CBHIDEventProtocol11objc_object : 7412 -> 7408
+~ __ZN4AABC11handleEventEPU26objcproto15CBEventProtocol11objc_object : 1032 -> 1036
+~ __ZN4AABC14HandleALSEventEPU49objcproto18CBALSEventProtocol18CBHIDEventProtocol11objc_object : 7420 -> 7416
 ~ -[CBCPMSModule handleNotificationForKey:withProperty:] : 112 -> 304
 ~ ___DisplayFadeCallback : 4260 -> 4272
 ~ ___DisplaySetLogicalBrightnessInternal : 7016 -> 7048

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SafetyMonitorUI.framework/SafetyMonitorUI`
 
-```diff
+### Section Size Changes
 
- 1122.0.0.0.0
--  __TEXT.__text: 0x174058
-+  __TEXT.__text: 0x174088
-   __TEXT.__objc_methlist: 0xb84
-   __TEXT.__const: 0xbc44
-   __TEXT.__swift5_typeref: 0x1c610
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x174058` | `0x174088` | **`+0x30`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_212757988 -> sub_212f2b988 : 1476 -> 1484
 ~ sub_212772420 -> sub_212f46428 : 4856 -> 4864

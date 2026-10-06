@@ -2,15 +2,14 @@
 
 > `/System/Library/UserEventPlugins/com.apple.cfnotification.plugin/com.apple.cfnotification`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -358.0.0.0.0
 +359.0.0.0.0
-   __TEXT.__text: 0x5cc
-   __TEXT.__auth_stubs: 0x1a0
-   __TEXT.__const: 0x58
 ```

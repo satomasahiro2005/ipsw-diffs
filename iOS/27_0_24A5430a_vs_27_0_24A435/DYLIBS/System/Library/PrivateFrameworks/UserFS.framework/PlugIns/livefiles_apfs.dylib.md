@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/UserFS.framework/PlugIns/livefiles_apfs.dylib`
 
-```diff
+### Section Size Changes
 
- 3288.2.1.0.0
--  __TEXT.__text: 0xb1a28
-+  __TEXT.__text: 0xb1d10
-   __TEXT.__const: 0x86b0
-   __TEXT.__oslogstring: 0x16438
-   __TEXT.__cstring: 0x5c35
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb1a28` | `0xb1d10` | **`+0x2e8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _nextBaseAndAnyMarks : 1980 -> 2108
 ~ _btree_node_check : 19456 -> 19464

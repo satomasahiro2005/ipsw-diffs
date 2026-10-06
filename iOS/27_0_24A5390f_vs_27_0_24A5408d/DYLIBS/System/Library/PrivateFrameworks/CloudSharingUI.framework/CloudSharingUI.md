@@ -2,105 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/CloudSharingUI.framework/CloudSharingUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4f4ac` | `0x5184c` | **`+0x23a0`** |
+| `__DATA.__bss` | `0x2408` | `0x2d08` | **`+0x900`** |
+| `__TEXT.__const` | `0x429e` | `0x47be` | **`+0x520`** |
+| `__TEXT.__cstring` | `0x1361` | `0x1681` | **`+0x320`** |
+| `__TEXT.__swift5_typeref` | `0x501c` | `0x51a2` | **`+0x186`** |
+| `__TEXT.__constg_swiftt` | `0x1648` | `0x176c` | **`+0x124`** |
+| `__DATA.__data` | `0x17a8` | `0x18b8` | **`+0x110`** |
+| `__AUTH.__data` | `0x1620` | `0x16d8` | **`+0xb8`** |
+| `__AUTH_CONST.__auth_got` | `0xf90` | `0x1040` | **`+0xb0`** |
+| `__TEXT.__unwind_info` | `0x1330` | `0x13d0` | **`+0xa0`** |
+| `__AUTH_CONST.__const` | `0x1c40` | `0x1cd0` | **`+0x90`** |
+| `__AUTH_CONST.__objc_const` | `0x1dd0` | `0x1e60` | **`+0x90`** |
+| `__TEXT.__swift5_assocty` | `0x370` | `0x400` | **`+0x90`** |
+| `__TEXT.__swift5_fieldmd` | `0xc70` | `0xcd4` | **`+0x64`** |
+| `__TEXT.__swift5_proto` | `0xfc` | `0x144` | **`+0x48`** |
+| `__DATA_CONST.__got` | `0x708` | `0x730` | **`+0x28`** |
+| `__TEXT.__swift5_builtin` | `0x8c` | `0xb4` | **`+0x28`** |
+| `__TEXT.__swift5_reflstr` | `0xc64` | `0xc84` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0xd0` | `0xe4` | **`+0x14`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8b0` | `0x8c0` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0xb0` | `0xb8` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x4` | `0x8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -236.0.0.0.0
--  __TEXT.__text: 0x4f4ac
 +240.0.0.0.0
-+  __TEXT.__text: 0x5184c
-   __TEXT.__objc_methlist: 0xa1c
--  __TEXT.__const: 0x429e
-+  __TEXT.__const: 0x47be
-   __TEXT.__oslogstring: 0xda3
--  __TEXT.__cstring: 0x1361
-+  __TEXT.__cstring: 0x1681
-   __TEXT.__gcc_except_tab: 0x58
--  __TEXT.__swift5_typeref: 0x501c
-+  __TEXT.__swift5_typeref: 0x51a2
-   __TEXT.__swift5_capture: 0x674
--  __TEXT.__constg_swiftt: 0x1648
--  __TEXT.__swift5_reflstr: 0xc64
--  __TEXT.__swift5_fieldmd: 0xc70
--  __TEXT.__swift5_builtin: 0x8c
--  __TEXT.__swift5_assocty: 0x370
--  __TEXT.__swift5_proto: 0xfc
--  __TEXT.__swift5_types: 0xd0
-+  __TEXT.__constg_swiftt: 0x176c
-+  __TEXT.__swift5_reflstr: 0xc84
-+  __TEXT.__swift5_fieldmd: 0xcd4
-+  __TEXT.__swift5_builtin: 0xb4
-+  __TEXT.__swift5_assocty: 0x400
-+  __TEXT.__swift5_proto: 0x144
-+  __TEXT.__swift5_types: 0xe4
-   __TEXT.__swift_as_entry: 0x4c
-   __TEXT.__swift_as_ret: 0x2c
-   __TEXT.__swift_as_cont: 0x70
--  __TEXT.__swift5_protos: 0x4
-+  __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__unwind_info: 0x1330
-+  __TEXT.__unwind_info: 0x13d0
-   __TEXT.__eh_frame: 0xbdc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x420
--  __DATA_CONST.__objc_classlist: 0xb0
-+  __DATA_CONST.__objc_classlist: 0xb8
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8b0
-+  __DATA_CONST.__objc_selrefs: 0x8c0
-   __DATA_CONST.__objc_protorefs: 0x40
-   __DATA_CONST.__objc_superrefs: 0x30
--  __DATA_CONST.__got: 0x708
--  __AUTH_CONST.__const: 0x1c40
-+  __DATA_CONST.__got: 0x730
-+  __AUTH_CONST.__const: 0x1cd0
-   __AUTH_CONST.__cfstring: 0x1a0
--  __AUTH_CONST.__objc_const: 0x1dd0
--  __AUTH_CONST.__auth_got: 0xf90
-+  __AUTH_CONST.__objc_const: 0x1e60
-+  __AUTH_CONST.__auth_got: 0x1040
-   __AUTH.__objc_data: 0xc88
--  __AUTH.__data: 0x1620
-+  __AUTH.__data: 0x16d8
-   __DATA.__objc_ivar: 0x70
--  __DATA.__data: 0x17a8
--  __DATA.__bss: 0x2408
-+  __DATA.__data: 0x18b8
-+  __DATA.__bss: 0x2d08
-   __DATA.__common: 0x180
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /System/Library/Frameworks/ContactsUI.framework/ContactsUI
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 +  - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/FileProvider.framework/FileProvider
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
-   - /System/Library/Frameworks/SharedWithYouCore.framework/SharedWithYouCore
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-+  - /System/Library/PrivateFrameworks/CloudDocs.framework/CloudDocs
-   - /System/Library/PrivateFrameworks/CloudSharing.framework/CloudSharing
-   - /System/Library/PrivateFrameworks/ContactsAutocompleteUI.framework/ContactsAutocompleteUI
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/PrivateFrameworks/CloudDocs.framework/CloudDocs
+
 -  Functions: 1935
--  Symbols:   1409
+-  Symbols:   1203
 -  CStrings:  176
 +  Functions: 2004
-+  Symbols:   1450
++  Symbols:   1242
 +  CStrings:  187
- 
 Symbols:
 + _BRCloudDocsErrorDomain
 + _CKUnderlyingErrorDomain
@@ -132,9 +77,6 @@ Symbols:
 + _associated conformance So11CKErrorCodeV10Foundation06_ErrorB8ProtocolSC01_D4TypeAcDP_AC21_BridgedStoredNSError
 + _associated conformance So11CKErrorCodeV10Foundation06_ErrorB8ProtocolSCSQ
 + _get_witness_table qd0__7SwiftUI4ViewHD5_AaBPAAE5alert_11isPresented7actions7messageQrqd___AA7BindingVySbGqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAA01_C16Modifier_ContentVy012CloudSharingB005Alertc5ModelN0VG_SSAA7ForEachVySayAM0ncO6ButtonVG10Foundation4UUIDVAcAE16keyboardShortcutyQrAA08KeyboardV0VSgFQOyAA0R0VyAA4TextVG_Qo_GSgA4_SgQo_HO
-+ _objc_msgSend$defaultWorkspace
-+ _objc_msgSend$openSensitiveURL:withOptions:
-+ _objc_msgSend$underlyingErrors
 + _symbolic $s10Foundation18_ErrorCodeProtocolP
 + _symbolic $s10Foundation21_BridgedStoredNSErrorP
 + _symbolic $s14CloudSharingUI11ErrorDetailP
@@ -153,7 +95,6 @@ Symbols:
 - ___swift_closure_destructor.127Tm
 - ___swift_closure_destructor.172Tm
 - _get_witness_table qd0__7SwiftUI4ViewHD5_AaBPAAE5alert_11isPresented7actions7messageQrqd___AA7BindingVySbGqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAA01_C16Modifier_ContentVy012CloudSharingB005Alertc5ModelN0VG_SSAA7ForEachVySayAM0ncO6ButtonVG10Foundation4UUIDVAA0R0VyAA4TextVGGSgA0_SgQo_HO
-- _objc_msgSend$mainBundle
 - _symbolic _____ySay_____G__________y_____GG 7SwiftUI7ForEachV 012CloudSharingB020AlertViewModelButtonV 10Foundation4UUIDV AA0J0V AA4TextV
 - _symbolic _____ySay_____G__________y_____GGSg 7SwiftUI7ForEachV 012CloudSharingB020AlertViewModelButtonV 10Foundation4UUIDV AA0J0V AA4TextV
 - _symbolic _____y_____y_____G_SS_____ySay_____G__________y_____GGSgAISgQo_ 7SwiftUI4ViewPAAE5alert_11isPresented7actions7messageQrqd___AA7BindingVySbGqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQO AA01_C16Modifier_ContentV 012CloudSharingB005Alertc5ModelN0V AA7ForEachV AM0ncO6ButtonV 10Foundation4UUIDV AA0R0V AA4TextV

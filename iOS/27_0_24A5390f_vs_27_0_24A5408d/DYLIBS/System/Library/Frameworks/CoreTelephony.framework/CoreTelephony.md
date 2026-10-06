@@ -2,61 +2,33 @@
 
 > `/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1d3220` | `0x1d38d4` | **`+0x6b4`** |
+| `__TEXT.__gcc_except_tab` | `0x258a0` | `0x25910` | **`+0x70`** |
+| `__TEXT.__unwind_info` | `0x10fd8` | `0x11020` | **`+0x48`** |
+| `__TEXT.__objc_methlist` | `0x1faac` | `0x1facc` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x168` | `0x15c` | **`-0xc`** |
+| `__DATA_CONST.__objc_selrefs` | `0x88b8` | `0x88c0` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
 - `__TEXT.__swift5_reflstr`
 
+### Other Changes
+
 ```diff
 
 -13482.1.0.0.0
--  __TEXT.__text: 0x1d3220
--  __TEXT.__objc_methlist: 0x1faac
 +13487.3.0.0.0
-+  __TEXT.__text: 0x1d38d4
-+  __TEXT.__objc_methlist: 0x1facc
-   __TEXT.__const: 0x1736
--  __TEXT.__gcc_except_tab: 0x258a0
-+  __TEXT.__gcc_except_tab: 0x25910
-   __TEXT.__cstring: 0x21fe8
-   __TEXT.__oslogstring: 0x54c6
-   __TEXT.__swift5_typeref: 0x2b4
 
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_reflstr: 0x142
--  __TEXT.__swift5_fieldmd: 0x168
-+  __TEXT.__swift5_fieldmd: 0x15c
-   __TEXT.__swift5_types: 0x20
-   __TEXT.__swift5_assocty: 0x78
-   __TEXT.__swift5_proto: 0x30
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0x30
--  __TEXT.__unwind_info: 0x10fd8
-+  __TEXT.__unwind_info: 0x11020
-   __TEXT.__eh_frame: 0x370
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x288
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x88b8
-+  __DATA_CONST.__objc_selrefs: 0x88c0
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_superrefs: 0x1d58
-   __DATA_CONST.__objc_arraydata: 0x30
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 13084
--  Symbols:   27472
+-  Symbols:   24164
 +  Functions: 13094
-+  Symbols:   27482
-   CStrings:  6527
- 
++  Symbols:   24174
 Symbols:
 + -[CTQuickSwitchInfo .cxx_destruct]
 + -[CoreTelephonyClient(QuickSwitch) isQuickSwitchPendingTwinningWithError:]

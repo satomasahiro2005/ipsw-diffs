@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/IntelligentRoutingDaemon.framework/IntelligentRoutingDaemon`
 
-```diff
+### Section Size Changes
 
- 125.0.13.0.0
--  __TEXT.__text: 0xbaac0
-+  __TEXT.__text: 0xbab04
-   __TEXT.__objc_methlist: 0x77a4
-   __TEXT.__const: 0x3670
-   __TEXT.__cstring: 0xafad
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbaac0` | `0xbab04` | **`+0x44`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$sSa24IntelligentRoutingDaemonAA4RoomCRszlE09accessoryD11ClassLookupSDyS2SGvg : 704 -> 700
 ~ _$s24IntelligentRoutingDaemon13HomeSuggesterC34calculateSameSpaceRoomClassAnchors4from20anchorRatioThreshold18minimumAnchorCountSDySSSiG0m8CountsByiJ0_Si05totalghK0tSayAA20MicroLocationMapItemVyAA0vwijQ0VGG_SdSitFZTf4nnnd_n : 3168 -> 3176

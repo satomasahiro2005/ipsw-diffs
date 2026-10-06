@@ -2,18 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/SoftwareUpdateSettingsUI.framework/SoftwareUpdateSettingsUI`
 
-```diff
+### Section Size Changes
 
- 772.0.20.0.0
--  __TEXT.__text: 0x1059a0
-+  __TEXT.__text: 0x1059b4
-   __TEXT.__objc_methlist: 0x4b48
-   __TEXT.__gcc_except_tab: 0x2b38
-   __TEXT.__cstring: 0xa1de
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1059a0` | `0x1059b4` | **`+0x14`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2ab8fa7fc -> sub_2ac6dc7fc : 3440 -> 3444
-~ sub_2ab8fb6a0 -> sub_2ac6dd6a4 : 256 -> 260
-~ sub_2ab8fc0a8 -> sub_2ac6de0b0 : 260 -> 264
-~ sub_2ab8fc2f8 -> sub_2ac6de304 : 256 -> 260
-~ sub_2ab8fc5dc -> sub_2ac6de5ec : 256 -> 260
+~ sub_2ab7e67fc -> sub_2ac5c67fc : 3440 -> 3444
+~ sub_2ab7e76a0 -> sub_2ac5c76a4 : 256 -> 260
+~ sub_2ab7e80a8 -> sub_2ac5c80b0 : 260 -> 264
+~ sub_2ab7e82f8 -> sub_2ac5c8304 : 256 -> 260
+~ sub_2ab7e85dc -> sub_2ac5c85ec : 256 -> 260
 ```

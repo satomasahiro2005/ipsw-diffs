@@ -2,17 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/GameControllerFoundation.framework/XPCServices/GameControllerConfigService.xpc/GameControllerConfigService`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -14.0.21.0.0
 +14.0.24.0.0
-   __TEXT.__text: 0x8408
-   __TEXT.__auth_stubs: 0x500
-   __TEXT.__objc_stubs: 0xf40
 Functions:
 ~ sub_100007588 : 16 -> 28
 ~ sub_100007598 -> sub_1000075a4 : 28 -> 16

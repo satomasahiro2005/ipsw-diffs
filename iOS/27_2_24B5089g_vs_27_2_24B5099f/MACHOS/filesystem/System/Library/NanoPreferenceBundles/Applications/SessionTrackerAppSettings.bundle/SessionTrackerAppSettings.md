@@ -2,101 +2,63 @@
 
 > `/System/Library/NanoPreferenceBundles/Applications/SessionTrackerAppSettings.bundle/SessionTrackerAppSettings`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x23294` | `0x23bb8` | **`+0x924`** |
+| `__DATA_CONST.__cfstring` | `0x2aa0` | `0x2c00` | **`+0x160`** |
+| `__TEXT.__cstring` | `0x3203` | `0x3323` | **`+0x120`** |
+| `__TEXT.__objc_methname` | `0x4611` | `0x46d1` | **`+0xc0`** |
+| `__DATA.__objc_const` | `0x26a8` | `0x2760` | **`+0xb8`** |
+| `__TEXT.__objc_methlist` | `0x1cac` | `0x1d5c` | **`+0xb0`** |
+| `__TEXT.__objc_stubs` | `0x3c60` | `0x3ce0` | **`+0x80`** |
+| `__TEXT.__dlopen_cstrs` | `0x54` | `0xa8` | **`+0x54`** |
+| `__DATA.__objc_data` | `0x1418` | `0x1468` | **`+0x50`** |
+| `__DATA.__objc_selrefs` | `0x1380` | `0x13b8` | **`+0x38`** |
+| `__TEXT.__objc_classname` | `0x755` | `0x775` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0xa10` | `0xa30` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0xc0` | `0xd4` | **`+0x14`** |
+| `__DATA.__bss` | `0x4e0` | `0x4f0` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x12b8` | `0x12a8` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x508` | `0x510` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x120` | `0x128` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x90` | `0x98` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x148` | `0x14c` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__objc_arraydata`
 - `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__data`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift5_types`
+
+### Other Changes
 
 ```diff
 
 -2027.1.36.0.0
--  __TEXT.__text: 0x22078
 +2027.1.45.0.0
-+  __TEXT.__text: 0x2296c
-   __TEXT.__auth_stubs: 0x1420
--  __TEXT.__objc_stubs: 0x3c60
--  __TEXT.__objc_methlist: 0x1cac
--  __TEXT.__objc_methname: 0x4611
--  __TEXT.__cstring: 0x3203
--  __TEXT.__objc_classname: 0x755
-+  __TEXT.__objc_stubs: 0x3ce0
-+  __TEXT.__objc_methlist: 0x1d5c
-+  __TEXT.__objc_methname: 0x46d1
-+  __TEXT.__cstring: 0x3323
-+  __TEXT.__objc_classname: 0x775
-   __TEXT.__objc_methtype: 0x83e
-   __TEXT.__const: 0x7f8
--  __TEXT.__gcc_except_tab: 0xc0
-+  __TEXT.__gcc_except_tab: 0xd4
-   __TEXT.__oslogstring: 0xb9e
--  __TEXT.__dlopen_cstrs: 0x54
-+  __TEXT.__dlopen_cstrs: 0xa8
-   __TEXT.__constg_swiftt: 0x590
-   __TEXT.__swift5_typeref: 0x488
-   __TEXT.__swift5_reflstr: 0x1b3
 
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_proto: 0x24
-   __TEXT.__swift5_capture: 0x430
--  __TEXT.__unwind_info: 0xcc0
-+  __TEXT.__unwind_info: 0xd00
-   __TEXT.__eh_frame: 0x110
--  __DATA_CONST.__const: 0x12b8
--  __DATA_CONST.__cfstring: 0x2aa0
--  __DATA_CONST.__objc_classlist: 0x120
-+  __DATA_CONST.__const: 0x12a8
-+  __DATA_CONST.__cfstring: 0x2c00
-+  __DATA_CONST.__objc_classlist: 0x128
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x90
-+  __DATA_CONST.__objc_superrefs: 0x98
-   __DATA_CONST.__objc_intobj: 0x78
-   __DATA_CONST.__objc_arraydata: 0x58
-   __DATA_CONST.__objc_arrayobj: 0x60
-   __DATA_CONST.__auth_got: 0xa20
--  __DATA_CONST.__got: 0x508
-+  __DATA_CONST.__got: 0x510
-   __DATA_CONST.__auth_ptr: 0x168
--  __DATA.__objc_const: 0x26a8
--  __DATA.__objc_selrefs: 0x1380
--  __DATA.__objc_ivar: 0x148
--  __DATA.__objc_data: 0x1418
-+  __DATA.__objc_const: 0x2760
-+  __DATA.__objc_selrefs: 0x13b8
-+  __DATA.__objc_ivar: 0x14c
-+  __DATA.__objc_data: 0x1468
-   __DATA.__data: 0x710
-   __DATA.__common: 0x20
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 924
 -  Symbols:   433
 -  CStrings:  1314
 +  Functions: 940
 +  Symbols:   435
 +  CStrings:  1333
- 
 Symbols:
 + _FISetWorkoutGymKitDetectionMode
 + _FIWorkoutGymKitDetectionModeForPairedWatch

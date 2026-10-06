@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MediaControls.framework/MediaControls`
 
-```diff
+### Section Size Changes
 
- 4026.110.4.0.0
--  __TEXT.__text: 0x2257a0
-+  __TEXT.__text: 0x2257d4
-   __TEXT.__objc_methlist: 0x15d1c
-   __TEXT.__cstring: 0x6f64
-   __TEXT.__ustring: 0x28
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2257a0` | `0x2257d4` | **`+0x34`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1bd0b2d70 -> sub_1bd468d70 : 1052 -> 1032
 ~ sub_1bd0d4180 -> sub_1bd48a16c : 208 -> 212

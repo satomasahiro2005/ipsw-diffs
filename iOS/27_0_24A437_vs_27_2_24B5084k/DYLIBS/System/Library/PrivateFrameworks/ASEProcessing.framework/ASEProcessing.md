@@ -2,60 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/ASEProcessing.framework/ASEProcessing`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x18758` | `0x8eb0` | **`-0xf8a8`** |
+| `__TEXT.__oslogstring` | `0x5c1c` | `0x2bd` | **`-0x595f`** |
+| `__TEXT.__cstring` | `0x152d` | `0x448` | **`-0x10e5`** |
+| `__AUTH_CONST.__cfstring` | `0x4a0` | `0x160` | **`-0x340`** |
+| `__TEXT.__const` | `0x6568` | `0x63bc` | **`-0x1ac`** |
+| `__DATA_CONST.__const` | `0x228` | `0x2a8` | **`+0x80`** |
+| `__TEXT.__objc_methlist` | `0x35c` | `0x2dc` | **`-0x80`** |
+| `__AUTH_CONST.__auth_got` | `0x1d0` | `0x160` | **`-0x70`** |
+| `__TEXT.__unwind_info` | `0x1e0` | `0x178` | **`-0x68`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1e0` | `0x180` | **`-0x60`** |
+| `__DATA.__data` | `0x19754` | `0x1972c` | **`-0x28`** |
+| `__DATA.__common` | `0x1c` | `0x8` | **`-0x14`** |
+| `__DATA_CONST.__got` | `0x50` | `0x40` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
- 1.59.0.0.0
--  __TEXT.__text: 0x18620
--  __TEXT.__objc_methlist: 0x35c
--  __TEXT.__const: 0x6568
--  __TEXT.__oslogstring: 0x5c1c
--  __TEXT.__cstring: 0x152d
--  __TEXT.__unwind_info: 0x2d8
-+  __TEXT.__text: 0x8dbc
-+  __TEXT.__objc_methlist: 0x2dc
-+  __TEXT.__const: 0x63bc
-+  __TEXT.__cstring: 0x448
-+  __TEXT.__oslogstring: 0x2bd
-+  __TEXT.__unwind_info: 0x198
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x228
-+  __DATA_CONST.__const: 0x2a8
-   __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1e0
-+  __DATA_CONST.__objc_selrefs: 0x180
-   __DATA_CONST.__objc_superrefs: 0x10
--  __DATA_CONST.__got: 0x50
-+  __DATA_CONST.__got: 0x40
-   __AUTH_CONST.__const: 0x20
--  __AUTH_CONST.__cfstring: 0x4a0
-+  __AUTH_CONST.__cfstring: 0x160
-   __AUTH_CONST.__objc_const: 0x570
--  __AUTH_CONST.__auth_got: 0x1d0
-+  __AUTH_CONST.__auth_got: 0x160
-   __DATA.__objc_ivar: 0x6c
--  __DATA.__data: 0x19754
--  __DATA.__common: 0x1c
-+  __DATA.__data: 0x1972c
-+  __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0xf0
-   __DATA_DIRTY.__bss: 0x8
-   __DATA_DIRTY.__common: 0x10
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 189
--  Symbols:   775
+-  Symbols:   723
 -  CStrings:  422
 +  Functions: 123
-+  Symbols:   713
++  Symbols:   674
 +  CStrings:  61
- 
 Symbols:
 + _objc_release
 - -[ASEProcessingT0 DumpOutputHcus:]
@@ -89,19 +63,6 @@ Symbols:
 - _hideHcu
 - _maxFGLevel
 - _minFGLevel
-- _objc_msgSend$DumpAnnotatedOutputHcus:Hcu:Size:
-- _objc_msgSend$DumpArray:type:array:count:numberPerRow:
-- _objc_msgSend$DumpFloatArray:array:count:numberPerRow:
-- _objc_msgSend$DumpIntArray:array:count:numberPerRow:
-- _objc_msgSend$DumpOutputHcuHeaders:
-- _objc_msgSend$DumpOutputHcus:
-- _objc_msgSend$DumpPiecewiseLinearCurveV3:curve:
-- _objc_msgSend$DumpRawOutputHcus:Hcu:Size:
-- _objc_msgSend$DumpUintArray:array:count:numberPerRow:
-- _objc_msgSend$bytes
-- _objc_msgSend$length
-- _objc_msgSend$parseHcuDataIntoArray:Hcu:Size:
-- _objc_msgSend$shouldEnhanceWidth:height:destinationWidth:destinationHeight:
 - _objc_release_x21
 - _objc_release_x23
 - _objc_retain_x19

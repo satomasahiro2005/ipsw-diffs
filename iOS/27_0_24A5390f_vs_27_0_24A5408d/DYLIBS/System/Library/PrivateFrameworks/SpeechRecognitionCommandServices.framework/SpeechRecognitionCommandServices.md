@@ -2,53 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/SpeechRecognitionCommandServices.framework/SpeechRecognitionCommandServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x11adf8` | `0x11b130` | **`+0x338`** |
+| `__TEXT.__cstring` | `0x266fc` | `0x267ec` | **`+0xf0`** |
+| `__AUTH_CONST.__const` | `0x1e668` | `0x1e6e8` | **`+0x80`** |
+| `__TEXT.__swift5_reflstr` | `0xad6` | `0xb16` | **`+0x40`** |
+| `__TEXT.__swift5_fieldmd` | `0xb9c` | `0xbb4` | **`+0x18`** |
+| `__TEXT.__const` | `0x79bb` | `0x79cb` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -34.0.0.0.0
--  __TEXT.__text: 0x11adf8
 +35.0.0.0.0
-+  __TEXT.__text: 0x11b130
-   __TEXT.__objc_methlist: 0xe9c
--  __TEXT.__const: 0x79bb
--  __TEXT.__cstring: 0x266fc
-+  __TEXT.__const: 0x79cb
-+  __TEXT.__cstring: 0x267ec
-   __TEXT.__gcc_except_tab: 0x5af4
-   __TEXT.__oslogstring: 0x470
-   __TEXT.__ustring: 0x13c
-   __TEXT.__swift5_typeref: 0x7e6
-   __TEXT.__constg_swiftt: 0xca0
--  __TEXT.__swift5_fieldmd: 0xb9c
--  __TEXT.__swift5_reflstr: 0xad6
-+  __TEXT.__swift5_fieldmd: 0xbb4
-+  __TEXT.__swift5_reflstr: 0xb16
-   __TEXT.__swift5_proto: 0x2b0
-   __TEXT.__swift5_types: 0xa0
-   __TEXT.__swift5_capture: 0x48
 
-   __DATA_CONST.__objc_superrefs: 0x58
-   __DATA_CONST.__objc_arraydata: 0x198
-   __DATA_CONST.__got: 0x3b8
--  __AUTH_CONST.__const: 0x1e668
-+  __AUTH_CONST.__const: 0x1e6e8
-   __AUTH_CONST.__cfstring: 0x24e0
-   __AUTH_CONST.__objc_const: 0x11f0
-   __AUTH_CONST.__weak_auth_got: 0x28
-
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 2821
-   Symbols:   4360
 -  CStrings:  3451
 +  CStrings:  3458
- 
 Functions:
-~ sub_2ac4ff504 -> sub_2ac395504 : 25896 -> 25880
-~ sub_2ac50c1e0 -> sub_2ac3a21d0 : 71480 -> 72344
-~ sub_2ac554fa4 -> sub_2ac3eb2f4 : 107056 -> 106972
-~ sub_2ac57bab4 -> sub_2ac411db0 : 736 -> 768
-~ sub_2ac580598 -> sub_2ac4168b4 : 1196 -> 1220
-~ sub_2ac580a44 -> sub_2ac416d78 : 208 -> 216
-~ sub_2ac593490 -> sub_2ac4297cc : 55656 -> 55652
+~ sub_2ac38a504 -> sub_2ac292504 : 25896 -> 25880
+~ sub_2ac3971e0 -> sub_2ac29f1d0 : 71480 -> 72344
+~ sub_2ac3dffa4 -> sub_2ac2e82f4 : 107056 -> 106972
+~ sub_2ac406ab4 -> sub_2ac30edb0 : 736 -> 768
+~ sub_2ac40b598 -> sub_2ac3138b4 : 1196 -> 1220
+~ sub_2ac40ba44 -> sub_2ac313d78 : 208 -> 216
+~ sub_2ac41e490 -> sub_2ac3267cc : 55656 -> 55652
 CStrings:
 + "If multiple items have the same name, say the number next to the item you want to use. If you don’t want to choose a number, say any other command to continue."
 + "Insert [today’s] date"

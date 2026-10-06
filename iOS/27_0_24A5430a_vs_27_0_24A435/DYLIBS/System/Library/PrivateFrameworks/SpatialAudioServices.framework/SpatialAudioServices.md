@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SpatialAudioServices.framework/SpatialAudioServices`
 
-```diff
+### Section Size Changes
 
- 23.0.3.0.0
--  __TEXT.__text: 0x4b658
-+  __TEXT.__text: 0x4b664
-   __TEXT.__lazy_helpers: 0x24c
-   __TEXT.__objc_methlist: 0x2474
-   __TEXT.__const: 0x396c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4b658` | `0x4b664` | **`+0xc`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__114__split_bufferIP20AASAudioAnchorStatusNS_9allocatorIS2_EEE12emplace_backIJS2_EEEvDpOT_ : 264 -> 268
 ~ __ZNSt3__114__split_bufferIP20AASAudioAnchorStatusRNS_9allocatorIS2_EEE12emplace_backIJS2_EEEvDpOT_ : 264 -> 268

@@ -2,21 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/QuickLookThumbnailingDaemon.framework/QuickLookThumbnailingDaemon`
 
-```diff
+### Section Size Changes
 
- 218.0.0.0.0
--  __TEXT.__text: 0x545f4
-+  __TEXT.__text: 0x5460c
-   __TEXT.__objc_methlist: 0x3204
-   __TEXT.__const: 0x1004
-   __TEXT.__gcc_except_tab: 0xc80
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x545f4` | `0x5460c` | **`+0x18`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_29b0cdcfc -> sub_29be5acfc : 680 -> 684
-~ sub_29b0cf404 -> sub_29be5c408 : 992 -> 984
-~ sub_29b0cf7e4 -> sub_29be5c7e0 : 992 -> 984
-~ sub_29b0d0c2c -> sub_29be5dc20 : 676 -> 680
-~ sub_29b0d1c90 -> sub_29be5ec88 : 436 -> 444
-~ sub_29b0d1e44 -> sub_29be5ee44 : 420 -> 428
-~ sub_29b0d1fe8 -> sub_29be5eff0 : 420 -> 428
-~ sub_29b0d218c -> sub_29be5f19c : 424 -> 432
+~ sub_29afb2cfc -> sub_29bd3dcfc : 680 -> 684
+~ sub_29afb4404 -> sub_29bd3f408 : 992 -> 984
+~ sub_29afb47e4 -> sub_29bd3f7e0 : 992 -> 984
+~ sub_29afb5c2c -> sub_29bd40c20 : 676 -> 680
+~ sub_29afb6c90 -> sub_29bd41c88 : 436 -> 444
+~ sub_29afb6e44 -> sub_29bd41e44 : 420 -> 428
+~ sub_29afb6fe8 -> sub_29bd41ff0 : 420 -> 428
+~ sub_29afb718c -> sub_29bd4219c : 424 -> 432
 ```

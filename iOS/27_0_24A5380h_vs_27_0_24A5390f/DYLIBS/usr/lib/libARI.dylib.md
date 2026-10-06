@@ -2,42 +2,24 @@
 
 > `/usr/lib/libARI.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__weak_got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2067d4` | `0x206a84` | **`+0x2b0`** |
+| `__DATA_CONST.__const` | `0x46698` | `0x46718` | **`+0x80`** |
+| `__TEXT.__cstring` | `0x3e32b` | `0x3e38b` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0x1ab20` | `0x1ab64` | **`+0x44`** |
+
+### Other Changes
 
 ```diff
 
 -1636.0.0.0.0
--  __TEXT.__text: 0x2067d4
 +1638.0.0.0.0
-+  __TEXT.__text: 0x206a84
-   __TEXT.__init_offsets: 0x8
-   __TEXT.__const: 0x15290
--  __TEXT.__gcc_except_tab: 0x1ab20
--  __TEXT.__cstring: 0x3e32b
-+  __TEXT.__gcc_except_tab: 0x1ab64
-+  __TEXT.__cstring: 0x3e38b
-   __TEXT.__oslogstring: 0x4499
-   __TEXT.__unwind_info: 0xdb68
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x46698
-+  __DATA_CONST.__const: 0x46718
-   __DATA_CONST.__weak_got: 0x10
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x2a3b0
 
-   - /usr/lib/libc++.1.dylib
-   Functions: 17218
-   Symbols:   24239
 -  CStrings:  9458
 +  CStrings:  9462
- 
 Functions:
 ~ __ZN6AriSdk38ARI_IBICallPsLTEAttachApnConfigReq_SDKD2Ev : 1924 -> 2004
 ~ __ZN6AriSdk38ARI_IBICallPsLTEAttachApnConfigReq_SDK4packEPP6AriMsg : 3136 -> 3264

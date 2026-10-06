@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ANEServices.framework/ANEServices`
 
-```diff
+### Section Size Changes
 
- 10.19.6.0.0
--  __TEXT.__text: 0x497b8
-+  __TEXT.__text: 0x49800
-   __TEXT.__objc_methlist: 0x38
-   __TEXT.__gcc_except_tab: 0x1964
-   __TEXT.__const: 0x279d
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x497b8` | `0x49800` | **`+0x48`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZL26ANEServicesFrameProcDirectPvPN3ANE25ANERequestReceiverRequestE : 3028 -> 3032
 ~ __ZN3ANE18ANERequestReceiver9FrameDoneEPviPyi : 1112 -> 1120

@@ -2,23 +2,23 @@
 
 > `/System/Library/Extensions/AppleThunderboltSAT.kext/AppleThunderboltSAT`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x23fe0` | `0x24530` | **`+0x550`** |
+
+### Same-size Content Changes
 
 - `__DATA.__data`
+- `__DATA_CONST.__const`
 - `__DATA_CONST.__mod_init_func`
 - `__DATA_CONST.__mod_term_func`
-- `__DATA_CONST.__const`
+- `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
-
- 113.0.0.0.0
-   __TEXT.__cstring: 0x10dcf
-   __TEXT.__const: 0x50
--  __TEXT_EXEC.__text: 0x23fe0
-+  __TEXT_EXEC.__text: 0x24530
-   __TEXT_EXEC.__auth_stubs: 0x570
-   __DATA.__data: 0x7f0
-   __DATA.__common: 0x589
 Functions:
 ~ __ZN34AppleThunderboltSATClientDataQueue9MetaClassC1Ev : 72 -> 76
 ~ __ZN34AppleThunderboltSATClientDataQueueC2EPK11OSMetaClass : 88 -> 92
@@ -360,4 +360,7 @@ Functions:
 ~ _ZN28AppleThunderboltSATTracePort4readEiP3uioi.cold.1 : 88 -> 92
 ~ _ZN29AppleThunderboltSATLinkDevice16activateInternalEP28IOThunderboltDispatchContext.cold.1 : 44 -> 48
 ~ _ZN29AppleThunderboltSATLinkDevice16activateInternalEP28IOThunderboltDispatchContext.cold.2 : 44 -> 48
+CStrings:
++ "21:31:19"
+- "22:17:07"
 ```

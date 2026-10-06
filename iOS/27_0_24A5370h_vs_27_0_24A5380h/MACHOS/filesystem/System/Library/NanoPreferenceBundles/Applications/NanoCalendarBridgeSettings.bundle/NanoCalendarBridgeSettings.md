@@ -2,18 +2,22 @@
 
 > `/System/Library/NanoPreferenceBundles/Applications/NanoCalendarBridgeSettings.bundle/NanoCalendarBridgeSettings`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x1d8` | `0x1e0` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__oslogstring`
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_superrefs: 0x28
-   __DATA_CONST.__objc_intobj: 0x18
-   __DATA_CONST.__auth_got: 0x1d8
--  __DATA_CONST.__got: 0x1d8
-+  __DATA_CONST.__got: 0x1e0
-   __DATA.__objc_const: 0x868
-   __DATA.__objc_selrefs: 0x7b0
-   __DATA.__objc_ivar: 0x18
-Sections:
-~ __TEXT.__oslogstring : content changed
+-744.0.0.0.0
++745.0.0.0.0
 CStrings:
 + "==> alerts_ttl [Jun 24 2026 00:36:56]"
 + "==> always_on_display [Jun 24 2026 00:36:56]"
@@ -61,5 +65,4 @@ CStrings:
 - "==> user_data_change [Jun 13 2026 02:04:14]"
 - "==> user_interaction [Jun 13 2026 02:04:14]"
 - "==> utility [Jun 13 2026 02:04:14]"
-
 ```

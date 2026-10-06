@@ -2,43 +2,31 @@
 
 > `/System/Library/VideoDecoders/JPEGH1.videodecoder`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x43b0` | `0x2ea0` | **`-0x1510`** |
+| `__TEXT.__oslogstring` | `0x630` | `—` | **`-0x630`** |
+| `__TEXT.__cstring` | `0x67c` | `0xe7` | **`-0x595`** |
+| `__AUTH_CONST.__cfstring` | `0xa0` | `0x60` | **`-0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x390` | `0x368` | **`-0x28`** |
+| `__TEXT.__const` | `0x54` | `0x34` | **`-0x20`** |
+| `__DATA_DIRTY.__common` | `0x10` | `—` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3350.71.2.11.1
--  __TEXT.__text: 0x43b0
--  __TEXT.__const: 0x54
--  __TEXT.__cstring: 0x67c
--  __TEXT.__oslogstring: 0x630
 +3350.75.2.0.0
-+  __TEXT.__text: 0x2ea0
-+  __TEXT.__const: 0x34
-+  __TEXT.__cstring: 0xe7
-   __TEXT.__unwind_info: 0xe0
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x40
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0xd8
--  __AUTH_CONST.__cfstring: 0xa0
--  __AUTH_CONST.__auth_got: 0x390
-+  __AUTH_CONST.__cfstring: 0x60
-+  __AUTH_CONST.__auth_got: 0x368
-   __DATA.__bss: 0x48
-   __DATA_DIRTY.__data: 0x30
--  __DATA_DIRTY.__common: 0x10
-   __DATA_DIRTY.__bss: 0x28
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
 
-   - /System/Library/Frameworks/IOSurface.framework/IOSurface
-   - /System/Library/Frameworks/VideoToolbox.framework/VideoToolbox
-   - /usr/lib/libSystem.B.dylib
 -  Functions: 58
 -  Symbols:   225
 -  CStrings:  77
 +  Functions: 41
 +  Symbols:   203
 +  CStrings:  11
- 
 Symbols:
 + _FigSignalErrorAtGM
 + _fig_log_get_emitter

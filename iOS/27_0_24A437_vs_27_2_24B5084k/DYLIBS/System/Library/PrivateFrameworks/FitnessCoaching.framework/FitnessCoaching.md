@@ -2,112 +2,62 @@
 
 > `/System/Library/PrivateFrameworks/FitnessCoaching.framework/FitnessCoaching`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x590e0` | `0x6b504` | **`+0x12424`** |
+| `__DATA.__bss` | `0x6780` | `0x8180` | **`+0x1a00`** |
+| `__TEXT.__const` | `0x55c0` | `0x6f08` | **`+0x1948`** |
+| `__AUTH_CONST.__const` | `0x2e18` | `0x41f0` | **`+0x13d8`** |
+| `__TEXT.__cstring` | `0x169b` | `0x2a1a` | **`+0x137f`** |
+| `__TEXT.__eh_frame` | `0x3f50` | `0x4d44` | **`+0xdf4`** |
+| `__TEXT.__unwind_info` | `0x1e20` | `0x2480` | **`+0x660`** |
+| `__AUTH.__data` | `0xd50` | `0x1398` | **`+0x648`** |
+| `__TEXT.__swift5_fieldmd` | `0x109c` | `0x1540` | **`+0x4a4`** |
+| `__TEXT.__swift5_reflstr` | `0x12b9` | `0x16b9` | **`+0x400`** |
+| `__DATA.__data` | `0xd18` | `0x1080` | **`+0x368`** |
+| `__TEXT.__constg_swiftt` | `0x10e4` | `0x1430` | **`+0x34c`** |
+| `__TEXT.__swift5_typeref` | `0x119e` | `0x14ca` | **`+0x32c`** |
+| `__TEXT.__oslogstring` | `0x478` | `0x6e8` | **`+0x270`** |
+| `__AUTH_CONST.__objc_const` | `0x1070` | `0x1270` | **`+0x200`** |
+| `__TEXT.__swift5_proto` | `0x430` | `0x520` | **`+0xf0`** |
+| `__DATA_DIRTY.__data` | `0x8b0` | `0x800` | **`-0xb0`** |
+| `__TEXT.__swift5_assocty` | `0x450` | `0x4f8` | **`+0xa8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3f0` | `0x468` | **`+0x78`** |
+| `__AUTH_CONST.__auth_got` | `0xb38` | `0xb98` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x1a8` | `0x200` | **`+0x58`** |
+| `__TEXT.__swift5_types` | `0x148` | `0x1a0` | **`+0x58`** |
+| `__TEXT.__swift5_builtin` | `0xa0` | `0xc8` | **`+0x28`** |
+| `__TEXT.__swift_as_cont` | `0x1f8` | `0x220` | **`+0x28`** |
+| `__TEXT.__swift5_capture` | `0x2e0` | `0x300` | **`+0x20`** |
+| `__TEXT.__swift_as_entry` | `0x128` | `0x140` | **`+0x18`** |
+| `__TEXT.__swift_as_ret` | `0xf4` | `0x108` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x50` | `0x58` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x3c` | `0x40` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.13.0.0
--  __TEXT.__text: 0x554a4
 +2027.1.14.0.0
-+  __TEXT.__text: 0x67290
-   __TEXT.__objc_methlist: 0x1d4
--  __TEXT.__const: 0x55c0
--  __TEXT.__cstring: 0x169b
--  __TEXT.__constg_swiftt: 0x10e4
--  __TEXT.__swift5_typeref: 0x119e
--  __TEXT.__swift5_reflstr: 0x12b9
--  __TEXT.__swift5_fieldmd: 0x109c
--  __TEXT.__swift5_builtin: 0xa0
--  __TEXT.__swift5_assocty: 0x450
--  __TEXT.__swift5_proto: 0x430
--  __TEXT.__swift5_types: 0x148
--  __TEXT.__swift_as_entry: 0x128
--  __TEXT.__swift_as_ret: 0xf4
--  __TEXT.__swift_as_cont: 0x1f8
--  __TEXT.__swift5_protos: 0x3c
--  __TEXT.__oslogstring: 0x478
--  __TEXT.__swift5_capture: 0x2e0
-+  __TEXT.__const: 0x6f08
-+  __TEXT.__cstring: 0x2a1a
-+  __TEXT.__constg_swiftt: 0x1430
-+  __TEXT.__swift5_typeref: 0x14ca
-+  __TEXT.__swift5_reflstr: 0x16b9
-+  __TEXT.__swift5_fieldmd: 0x1540
-+  __TEXT.__swift5_builtin: 0xc8
-+  __TEXT.__swift5_assocty: 0x4f8
-+  __TEXT.__swift5_proto: 0x520
-+  __TEXT.__swift5_types: 0x1a0
-+  __TEXT.__swift_as_entry: 0x140
-+  __TEXT.__swift_as_ret: 0x108
-+  __TEXT.__swift_as_cont: 0x220
-+  __TEXT.__swift5_protos: 0x40
-+  __TEXT.__oslogstring: 0x6e8
-+  __TEXT.__swift5_capture: 0x300
-   __TEXT.__swift5_mpenum: 0x14
--  __TEXT.__unwind_info: 0x2468
--  __TEXT.__eh_frame: 0x3f78
-+  __TEXT.__unwind_info: 0x2bf8
-+  __TEXT.__eh_frame: 0x4d64
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1a8
--  __DATA_CONST.__objc_classlist: 0x50
-+  __DATA_CONST.__const: 0x200
-+  __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3f0
-+  __DATA_CONST.__objc_selrefs: 0x468
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2e18
--  __AUTH_CONST.__objc_const: 0x1070
--  __AUTH_CONST.__auth_got: 0xb38
-+  __AUTH_CONST.__const: 0x41f0
-+  __AUTH_CONST.__objc_const: 0x1270
-+  __AUTH_CONST.__auth_got: 0xb98
-   __AUTH.__objc_data: 0x138
--  __AUTH.__data: 0xd50
--  __DATA.__data: 0xd18
-+  __AUTH.__data: 0x1398
-+  __DATA.__data: 0x1080
-   __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0xf8
--  __DATA_DIRTY.__data: 0x8b0
-+  __DATA_DIRTY.__data: 0x800
-   __DATA_DIRTY.__bss: 0x780
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftCoreImage.dylib
-   - /usr/lib/swift/libswiftCoreLocation.dylib
 +  - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
+
 +  - /usr/lib/swift/libswiftGLKit.dylib
-   - /usr/lib/swift/libswiftIntents.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
+
 +  - /usr/lib/swift/libswiftMetalKit.dylib
 +  - /usr/lib/swift/libswiftModelIO.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
-+  - /usr/lib/swift/libswiftSceneKit.dylib
-   - /usr/lib/swift/libswiftSpatial.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /usr/lib/swift/libswiftSceneKit.dylib
+
 -  Functions: 2396
--  Symbols:   860
+-  Symbols:   758
 -  CStrings:  188
 +  Functions: 2935
-+  Symbols:   986
++  Symbols:   869
 +  CStrings:  265
- 
 Symbols:
 + _OBJC_CLASS_$_NSMeasurementFormatter
 + _OBJC_CLASS_$_NSUnitDuration
@@ -171,21 +121,6 @@ Symbols:
 + _associated conformance 15FitnessCoaching33HealthAppDashboardContentProtobufVSHAASQ
 + _associated conformance So15FIDailyGoalTypeVSHSCSQ
 + _kHKDailyStatisticsIntervalInMinutes
-+ _objc_msgSend$appleStandHourResults
-+ _objc_msgSend$calories
-+ _objc_msgSend$initWithStartDate:endDate:moveIntervalComponents:exerciseIntervalComponents:initialQueryResultsHandler:
-+ _objc_msgSend$initWithURL:
-+ _objc_msgSend$jouleUnitWithMetricPrefix:
-+ _objc_msgSend$joules
-+ _objc_msgSend$kilocalories
-+ _objc_msgSend$kilojoules
-+ _objc_msgSend$largeCalorieUnit
-+ _objc_msgSend$localizationBundleURL
-+ _objc_msgSend$minutes
-+ _objc_msgSend$numberFormatter
-+ _objc_msgSend$setMaximumFractionDigits:
-+ _objc_msgSend$setUnitOptions:
-+ _objc_msgSend$smallCalorieUnit
 + _symbolic $s15FitnessCoaching27StandHourStatisticsQueryingP
 + _symbolic SDyS2SG
 + _symbolic SSSg

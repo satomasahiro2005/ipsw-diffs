@@ -2,79 +2,37 @@
 
 > `/System/Library/Frameworks/MapKit.framework/MapKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x290f18` | `0x291300` | **`+0x3e8`** |
+| `__TEXT.__gcc_except_tab` | `0x6204` | `0x6298` | **`+0x94`** |
+| `__AUTH.__objc_data` | `0x8810` | `0x87c0` | **`-0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x14b70` | `0x14bc0` | **`+0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x25f8` | `0x2648` | **`+0x50`** |
+| `__AUTH_CONST.__objc_const` | `0x45eb8` | `0x45ee8` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x26c44` | `0x26c74` | **`+0x30`** |
+| `__AUTH_CONST.__cfstring` | `0x1bca0` | `0x1bcc0` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x17bd5` | `0x17beb` | **`+0x16`** |
+| `__TEXT.__unwind_info` | `0xa818` | `0xa828` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x2090` | `0x2098` | **`+0x8`** |
+| `__DATA.__bss` | `0x4718` | `0x4720` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x3238` | `0x323c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2552.31.6.17.8
--  __TEXT.__text: 0x26bd1c
--  __TEXT.__objc_methlist: 0x26c44
 +2552.31.6.17.11
-+  __TEXT.__text: 0x26c0ec
-+  __TEXT.__objc_methlist: 0x26c74
-   __TEXT.__const: 0x6920
-   __TEXT.__dlopen_cstrs: 0xbc
--  __TEXT.__cstring: 0x17bd5
-+  __TEXT.__cstring: 0x17beb
-   __TEXT.__swift5_typeref: 0x15fc
-   __TEXT.__swift5_reflstr: 0x1460
-   __TEXT.__swift5_assocty: 0x1e8
 
-   __TEXT.__swift_as_entry: 0x13c
-   __TEXT.__swift_as_ret: 0x134
-   __TEXT.__swift_as_cont: 0x1cc
--  __TEXT.__gcc_except_tab: 0x6204
-+  __TEXT.__gcc_except_tab: 0x6298
-   __TEXT.__ustring: 0x19c
--  __TEXT.__unwind_info: 0xc4d0
-+  __TEXT.__unwind_info: 0xc4e0
-   __TEXT.__eh_frame: 0x2424
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_protolist: 0x660
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x14b70
-+  __DATA_CONST.__objc_selrefs: 0x14bc0
-   __DATA_CONST.__objc_protorefs: 0xe8
-   __DATA_CONST.__objc_superrefs: 0xda0
-   __DATA_CONST.__objc_arraydata: 0x6b0
-   __DATA_CONST.__got: 0x2498
-   __AUTH_CONST.__const: 0x6878
--  __AUTH_CONST.__cfstring: 0x1bca0
--  __AUTH_CONST.__objc_const: 0x45eb8
-+  __AUTH_CONST.__cfstring: 0x1bcc0
-+  __AUTH_CONST.__objc_const: 0x45ee8
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_doubleobj: 0x220
-   __AUTH_CONST.__objc_intobj: 0xf18
-   __AUTH_CONST.__objc_dictobj: 0x1b8
-   __AUTH_CONST.__objc_arrayobj: 0x480
-   __AUTH_CONST.__objc_floatobj: 0x70
--  __AUTH_CONST.__auth_got: 0x2090
--  __AUTH.__objc_data: 0x8810
-+  __AUTH_CONST.__auth_got: 0x2098
-+  __AUTH.__objc_data: 0x87c0
-   __AUTH.__data: 0x2d48
--  __DATA.__objc_ivar: 0x3238
-+  __DATA.__objc_ivar: 0x323c
-   __DATA.__data: 0x5608
-   __DATA.__common: 0x70
--  __DATA_DIRTY.__objc_data: 0x25f8
-+  __DATA_DIRTY.__objc_data: 0x2648
-   __DATA_DIRTY.__data: 0x18
-   __DATA_DIRTY.__bss: 0xd8
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15074
--  Symbols:   33571
+-  Symbols:   25332
 -  CStrings:  4615
 +  Functions: 15078
-+  Symbols:   33587
++  Symbols:   25339
 +  CStrings:  4616
- 
 Symbols:
 + -[MKMapSnapshotOptions _setShowsRouteAnnotations:]
 + -[MKMapSnapshotOptions _showsRouteAnnotations]
@@ -321,15 +279,6 @@ Symbols:
 + GCC_except_table9995
 + _GEOStringForDuration
 + _OBJC_IVAR_$_MKMapSnapshotOptions._showsRouteAnnotations
-+ _objc_msgSend$_populateEtaDescriptionForRouteInfo:
-+ _objc_msgSend$_showsRouteAnnotations
-+ _objc_msgSend$buildRouteContextForRoutes:selectedRouteIndex:populateEtaDescriptions:
-+ _objc_msgSend$detailTextAction
-+ _objc_msgSend$isFamiliarRoute
-+ _objc_msgSend$routeLabelAction
-+ _objc_msgSend$routeLabelArtwork
-+ _objc_msgSend$routeLabelDescriptionString
-+ _objc_msgSend$travelAndChargingDuration
 - GCC_except_table10016
 - GCC_except_table10022
 - GCC_except_table10431

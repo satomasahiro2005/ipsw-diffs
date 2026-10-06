@@ -2,142 +2,89 @@
 
 > `/System/Library/PrivateFrameworks/HealthRecordServices.framework/HealthRecordServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x86d94` | `0x137ef8` | **`+0xb1164`** |
+| `__DATA.__bss` | `0xfd80` | `0x2b8a0` | **`+0x1bb20`** |
+| `__TEXT.__const` | `0x801c` | `0x15f2e` | **`+0xdf12`** |
+| `__AUTH_CONST.__const` | `0x3ec8` | `0xcea8` | **`+0x8fe0`** |
+| `__TEXT.__eh_frame` | `0x1d28` | `0x8d20` | **`+0x6ff8`** |
+| `__TEXT.__unwind_info` | `0x2c20` | `0x6a08` | **`+0x3de8`** |
+| `__TEXT.__swift5_fieldmd` | `0x1780` | `0x5308` | **`+0x3b88`** |
+| `__TEXT.__constg_swiftt` | `0x15dc` | `0x3eb0` | **`+0x28d4`** |
+| `__DATA.__data` | `0x2280` | `0x4960` | **`+0x26e0`** |
+| `__TEXT.__swift5_typeref` | `0xe98` | `0x28ad` | **`+0x1a15`** |
+| `__AUTH.__data` | `0xc40` | `0x24e0` | **`+0x18a0`** |
+| `__TEXT.__cstring` | `0x47b9` | `0x603a` | **`+0x1881`** |
+| `__AUTH.__objc_data` | `0x1270` | `0x2918` | **`+0x16a8`** |
+| `__TEXT.__swift5_reflstr` | `0xa46` | `0x1fe9` | **`+0x15a3`** |
+| `__AUTH_CONST.__objc_const` | `0xa9d8` | `0xbea8` | **`+0x14d0`** |
+| `__AUTH_CONST.__cfstring` | `0x4ac0` | `0x5940` | **`+0xe80`** |
+| `__TEXT.__swift5_proto` | `0x818` | `0x15f0` | **`+0xdd8`** |
+| `__TEXT.__objc_methlist` | `0x576c` | `0x604c` | **`+0x8e0`** |
+| `__TEXT.__swift5_capture` | `0xe0` | `0x84c` | **`+0x76c`** |
+| `__AUTH_CONST.__auth_got` | `0xbb0` | `0x1050` | **`+0x4a0`** |
+| `__TEXT.__swift5_types` | `0x238` | `0x64c` | **`+0x414`** |
+| `__TEXT.__swift5_assocty` | `0x168` | `0x530` | **`+0x3c8`** |
+| `__DATA_CONST.__objc_arraydata` | `0x20` | `0x3c8` | **`+0x3a8`** |
+| `__TEXT.__swift_as_cont` | `0x48` | `0x36c` | **`+0x324`** |
+| `__DATA_DIRTY.__data` | `0x2b8` | `0x570` | **`+0x2b8`** |
+| `__DATA_CONST.__got` | `0x7a0` | `0x998` | **`+0x1f8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x21c8` | `0x2388` | **`+0x1c0`** |
+| `__TEXT.__swift_as_entry` | `0x20` | `0x140` | **`+0x120`** |
+| `__TEXT.__swift_as_ret` | `0x1c` | `0x138` | **`+0x11c`** |
+| `__DATA_CONST.__objc_classlist` | `0x368` | `0x460` | **`+0xf8`** |
+| `__TEXT.__oslogstring` | `0xc2b` | `0xd03` | **`+0xd8`** |
+| `__DATA_DIRTY.__objc_data` | `0x1040` | `0xfa0` | **`-0xa0`** |
+| `__TEXT.__swift5_builtin` | `0x64` | `0xc8` | **`+0x64`** |
+| `__DATA.__common` | `0x18` | `0x48` | **`+0x30`** |
+| `__TEXT.__swift5_acfuncs` | `—` | `0x28` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0x1658` | `0x1678` | **`+0x20`** |
+| `__TEXT.__swift5_mpenum` | `0x10` | `0x30` | **`+0x20`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x18` | `0x30` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x5b4` | `0x5a0` | **`-0x14`** |
+| `__DATA_CONST.__objc_superrefs` | `0x2c8` | `0x2b8` | **`-0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x100` | `0xf8` | **`-0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0xc0` | `0xb8` | **`-0x8`** |
+| `__TEXT.__swift5_protos` | `0xc` | `0x14` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -7027.0.72.2.7
--  __TEXT.__text: 0x83264
--  __TEXT.__objc_methlist: 0x576c
--  __TEXT.__const: 0x801c
--  __TEXT.__cstring: 0x47b9
--  __TEXT.__oslogstring: 0xc2b
 +7027.1.36.2.7
-+  __TEXT.__text: 0x12dc78
-+  __TEXT.__objc_methlist: 0x604c
-+  __TEXT.__const: 0x15f2e
-+  __TEXT.__cstring: 0x603a
-+  __TEXT.__oslogstring: 0xd03
-   __TEXT.__gcc_except_tab: 0x164
-   __TEXT.__ustring: 0x10c
--  __TEXT.__swift5_typeref: 0xe98
--  __TEXT.__constg_swiftt: 0x15dc
--  __TEXT.__swift5_reflstr: 0xa46
--  __TEXT.__swift5_fieldmd: 0x1780
--  __TEXT.__swift5_builtin: 0x64
--  __TEXT.__swift5_assocty: 0x168
--  __TEXT.__swift5_proto: 0x818
--  __TEXT.__swift5_types: 0x238
--  __TEXT.__swift5_protos: 0xc
--  __TEXT.__swift_as_entry: 0x20
--  __TEXT.__swift_as_cont: 0x48
--  __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__swift5_capture: 0xe0
--  __TEXT.__swift_as_ret: 0x1c
--  __TEXT.__unwind_info: 0x35f0
--  __TEXT.__eh_frame: 0x1d28
-+  __TEXT.__swift5_typeref: 0x28ad
-+  __TEXT.__constg_swiftt: 0x3eb0
-+  __TEXT.__swift5_reflstr: 0x1fe9
-+  __TEXT.__swift5_fieldmd: 0x5308
-+  __TEXT.__swift5_builtin: 0xc8
-+  __TEXT.__swift5_assocty: 0x530
-+  __TEXT.__swift5_proto: 0x15f0
-+  __TEXT.__swift5_types: 0x64c
-+  __TEXT.__swift5_protos: 0x14
-+  __TEXT.__swift_as_entry: 0x140
-+  __TEXT.__swift_as_cont: 0x36c
-+  __TEXT.__swift5_mpenum: 0x30
-+  __TEXT.__swift5_capture: 0x84c
-+  __TEXT.__swift_as_ret: 0x138
-+  __TEXT.__swift5_acfuncs: 0x28
-+  __TEXT.__unwind_info: 0x8258
-+  __TEXT.__eh_frame: 0x8d20
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1658
--  __DATA_CONST.__objc_classlist: 0x368
-+  __DATA_CONST.__const: 0x1678
-+  __DATA_CONST.__objc_classlist: 0x460
-   __DATA_CONST.__objc_catlist: 0x48
--  __DATA_CONST.__objc_protolist: 0x100
-+  __DATA_CONST.__objc_protolist: 0xf8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x21c8
--  __DATA_CONST.__objc_protorefs: 0xc0
--  __DATA_CONST.__objc_superrefs: 0x2c8
--  __DATA_CONST.__objc_arraydata: 0x20
--  __DATA_CONST.__got: 0x7a0
--  __AUTH_CONST.__const: 0x3ec8
--  __AUTH_CONST.__cfstring: 0x4ac0
--  __AUTH_CONST.__objc_const: 0xa9d8
-+  __DATA_CONST.__objc_selrefs: 0x2388
-+  __DATA_CONST.__objc_protorefs: 0xb8
-+  __DATA_CONST.__objc_superrefs: 0x2b8
-+  __DATA_CONST.__objc_arraydata: 0x3c8
-+  __DATA_CONST.__got: 0x998
-+  __AUTH_CONST.__const: 0xcea8
-+  __AUTH_CONST.__cfstring: 0x5940
-+  __AUTH_CONST.__objc_const: 0xbea8
-+  __AUTH_CONST.__objc_arrayobj: 0x30
-   __AUTH_CONST.__objc_intobj: 0x90
--  __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__auth_got: 0xbb0
--  __AUTH.__objc_data: 0x1270
--  __AUTH.__data: 0xc40
--  __DATA.__objc_ivar: 0x5b4
--  __DATA.__data: 0x2280
--  __DATA.__common: 0x18
--  __DATA_DIRTY.__objc_data: 0x1040
--  __DATA_DIRTY.__data: 0x2b8
-+  __AUTH_CONST.__auth_got: 0x1050
-+  __AUTH.__objc_data: 0x2918
-+  __AUTH.__data: 0x24e0
-+  __DATA.__objc_ivar: 0x5a0
-+  __DATA.__data: 0x4960
-+  __DATA.__common: 0x48
-+  __DATA_DIRTY.__objc_data: 0xfa0
-+  __DATA_DIRTY.__data: 0x570
-   __DATA_DIRTY.__bss: 0x220
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libxml2.2.dylib
-   - /usr/lib/libz.1.dylib
 +  - /usr/lib/swift/libswiftAVFoundation.dylib
 +  - /usr/lib/swift/libswiftAccelerate.dylib
 +  - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
+
 +  - /usr/lib/swift/libswiftCoreAudio.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
+
 +  - /usr/lib/swift/libswiftCoreImage.dylib
-   - /usr/lib/swift/libswiftCoreLocation.dylib
+
 +  - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
+
 +  - /usr/lib/swift/libswiftDistributed.dylib
 +  - /usr/lib/swift/libswiftIntents.dylib
 +  - /usr/lib/swift/libswiftMLCompute.dylib
 +  - /usr/lib/swift/libswiftMetal.dylib
 +  - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
+
 +  - /usr/lib/swift/libswiftQuartzCore.dylib
 +  - /usr/lib/swift/libswiftRegexBuilder.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
+
 +  - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
+
 -  Functions: 4129
--  Symbols:   5180
+-  Symbols:   4389
 -  CStrings:  837
 +  - /usr/lib/swift/libswiftsimd.dylib
 +  Functions: 9380
-+  Symbols:   6362
++  Symbols:   5507
 +  CStrings:  1148
- 
 Symbols:
 + +[HKClinicalDocumentIndexingUtilities stringContainsHTMLMarkup:]
 + +[HKClinicalDocumentIndexingUtilities stringEscapingNonMarkupLessThan:]
@@ -926,86 +873,6 @@ Symbols:
 + _get_enum_tag_for_layout_string 20HealthRecordServices19PaymentMethodParamsV4CardVSg
 + _get_enum_tag_for_layout_string 20HealthRecordServices21AssemblerServiceErrorO
 + _kHKSMARTHealthLinkQRCodePrefix
-+ _objc_msgSend$authenticationMethod
-+ _objc_msgSend$billingContact
-+ _objc_msgSend$characterSetWithCharactersInString:
-+ _objc_msgSend$city
-+ _objc_msgSend$clientQueueDoubleBoolFailableHandlerWithCompletion:
-+ _objc_msgSend$clinicalAccountStoreDidReconnect:
-+ _objc_msgSend$clinicalHealthLink
-+ _objc_msgSend$codingSystem
-+ _objc_msgSend$dateFromString:
-+ _objc_msgSend$displayString
-+ _objc_msgSend$emailAddress
-+ _objc_msgSend$fallbackDisplayString
-+ _objc_msgSend$fetchShouldShowHealthRecordsSectionWithCompletion:
-+ _objc_msgSend$firstMatchInString:options:range:
-+ _objc_msgSend$hk_isRewrittenHealthLinkQRCodeURL
-+ _objc_msgSend$initWithHost:clinicalHealthLink:label:FHIRResources:
-+ _objc_msgSend$initWithLinkData:
-+ _objc_msgSend$initWithSMARTHealthLink:
-+ _objc_msgSend$label
-+ _objc_msgSend$linkData
-+ _objc_msgSend$localizedPreferredName
-+ _objc_msgSend$localizedStringFromPersonNameComponents:style:options:
-+ _objc_msgSend$lowercaseString
-+ _objc_msgSend$medicalRecordCodings
-+ _objc_msgSend$objCType
-+ _objc_msgSend$postalAddress
-+ _objc_msgSend$postalCode
-+ _objc_msgSend$preferredLocalizationsFromArray:forPreferences:
-+ _objc_msgSend$primaryConcept
-+ _objc_msgSend$range
-+ _objc_msgSend$rangeAtIndex:
-+ _objc_msgSend$rangeOfCharacterFromSet:
-+ _objc_msgSend$regularExpressionWithPattern:options:error:
-+ _objc_msgSend$remote_cancelOrderWithInternalOrderId:completionHandler:
-+ _objc_msgSend$remote_confirmAppointmentWithRequest:completionHandler:
-+ _objc_msgSend$remote_confirmOrderWithRequest:internalOrderId:completionHandler:
-+ _objc_msgSend$remote_createAppointmentWithRequest:completionHandler:
-+ _objc_msgSend$remote_createOrderIntentWithRequest:completionHandler:
-+ _objc_msgSend$remote_createOrderWithRequest:completionHandler:
-+ _objc_msgSend$remote_createPaymentIntentWithRequest:completionHandler:
-+ _objc_msgSend$remote_decodeManifestOnContext:completion:
-+ _objc_msgSend$remote_fetchAppointmentWithAppointmentId:completionHandler:
-+ _objc_msgSend$remote_fetchOrderReceiptWithRequest:completionHandler:
-+ _objc_msgSend$remote_fetchOrderWithInternalOrderId:completionHandler:
-+ _objc_msgSend$remote_fetchPolicyDocumentWithRequest:completionHandler:
-+ _objc_msgSend$remote_fetchRemoteGatewaysWithBatchID:completion:
-+ _objc_msgSend$remote_fetchTermsOfServicesWithRequest:completionHandler:
-+ _objc_msgSend$remote_generateBAARequestHeaderFor:completionHandler:
-+ _objc_msgSend$remote_getAvailableAppointmentsFor:scheduleId:calendar:timeZone:startDate:endDate:partnerId:completionHandler:
-+ _objc_msgSend$remote_getLabPartnerSKUsWithPartnerId:locale:completionHandler:
-+ _objc_msgSend$remote_getLabServiceStatusWithCompletionHandler:
-+ _objc_msgSend$remote_holdAppointmentWithRequest:completionHandler:
-+ _objc_msgSend$remote_markCredentialAsBadAndRefresh:forAccountWithIdentifier:completion:
-+ _objc_msgSend$remote_preprocessSMARTHealthLink:options:completion:
-+ _objc_msgSend$remote_processJWEManifestFilesOnContext:completion:
-+ _objc_msgSend$remote_processStripePaymentIntent:completionHandler:
-+ _objc_msgSend$remote_registerOrderDeviceTokenWithInternalOrderId:deviceToken:completionHandler:
-+ _objc_msgSend$remote_reportOrderErrorStateWithInternalOrderId:operation:completionHandler:
-+ _objc_msgSend$remote_rescheduleAppointmentWithAppointmentId:request:completionHandler:
-+ _objc_msgSend$remote_searchServiceCenterWith:lng:partnerId:completionHandler:
-+ _objc_msgSend$resources
-+ _objc_msgSend$setCity:
-+ _objc_msgSend$setCurrencySymbol:
-+ _objc_msgSend$setDateFormat:
-+ _objc_msgSend$setNumberStyle:
-+ _objc_msgSend$setPostalCode:
-+ _objc_msgSend$setState:
-+ _objc_msgSend$setStreet:
-+ _objc_msgSend$shippingContact
-+ _objc_msgSend$singleLineStringFromPostalAddress:addCountryName:
-+ _objc_msgSend$smartHealthLink
-+ _objc_msgSend$street
-+ _objc_msgSend$stringEscapingNonMarkupLessThan:
-+ _objc_msgSend$stringForObjectValue:
-+ _objc_msgSend$stringFromDate:
-+ _objc_msgSend$stringFromPostalAddress:style:
-+ _objc_msgSend$stringValue
-+ _objc_msgSend$stringWithCapacity:
-+ _objc_msgSend$substringWithRange:
-+ _objc_msgSend$textSystem
 + _objc_opt_respondsToSelector
 + _object_getClass
 + _swift_bridgeObjectRelease_n
@@ -1604,22 +1471,6 @@ Symbols:
 - ___block_descriptor_56_e8_32s40bs48r_e11_v16?0B8B12ls32l8s40l8r48l8
 - ___block_descriptor_64_e8_32s40bs_e44_v16?0"<HKClinicalSharingServerInterface>"8ls32l8s40l8
 - ___swift_closure_destructor.23Tm
-- _objc_msgSend$accountID
-- _objc_msgSend$clientQueueDoubleBoolHandlerWithCompletion:
-- _objc_msgSend$clinicalSharingSyncObserver:syncDidFinishWithError:
-- _objc_msgSend$clinicalSharingSyncObserver:syncDidStartWithInfo:
-- _objc_msgSend$delegate
-- _objc_msgSend$initWithAccountID:lookupInfo:error:
-- _objc_msgSend$initWithConnection:delegateQueue:
-- _objc_msgSend$initWithStartDate:accountIdentifiers:
-- _objc_msgSend$lookupInfo
-- _objc_msgSend$remote_scheduleSharingHealthDataWithReason:completion:
-- _objc_msgSend$remote_shareHealthDataWithOptions:reason:date:completion:
-- _objc_msgSend$remote_startObservingSyncStatusWithCompletion:
-- _objc_msgSend$remote_submitDailyAnalyticsWithCompletion:
-- _objc_msgSend$remote_submitOnboardingAnalyticsForStepIdentifier:context:completion:
-- _objc_msgSend$resumeWithCompletion:
-- _objc_msgSend$shareHealthDataWithOptions:reason:date:completion:
 - _xpc_dictionary_create_empty
 - _xpc_dictionary_set_bool
 - _xpc_dictionary_set_string

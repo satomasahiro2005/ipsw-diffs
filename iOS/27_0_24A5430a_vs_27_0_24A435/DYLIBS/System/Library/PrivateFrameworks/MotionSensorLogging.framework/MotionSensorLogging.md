@@ -2,20 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/MotionSensorLogging.framework/MotionSensorLogging`
 
-```diff
+### Section Size Changes
 
- 3185.0.6.0.3
--  __TEXT.__text: 0x26c158
-+  __TEXT.__text: 0x26c1b0
-   __TEXT.__objc_methlist: 0x14
-   __TEXT.__const: 0x493a
-   __TEXT.__gcc_except_tab: 0x3cac
-   __TEXT.__oslogstring: 0x450
--  __TEXT.__cstring: 0x12aba
-+  __TEXT.__cstring: 0x12abf
-   __TEXT.__unwind_info: 0x68c8
-   __TEXT.__eh_frame: 0x670
-   __TEXT.__objc_stubs: 0x0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x26c158` | `0x26c1b0` | **`+0x58`** |
+| `__TEXT.__cstring` | `0x12aba` | `0x12abf` | **`+0x5`** |
+
+### Other Changes
+
+```diff
 Symbols:
 + __ZN5CMMsl11DeviceState8readFromERN2PB6ReaderE
 + __ZN5CMMsl11DeviceStateC1EOS0_

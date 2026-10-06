@@ -2,93 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/NeutrinoCore.framework/NeutrinoCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__data` | `0x3938` | `0x1c0` | **`-0x3778`** |
+| `__DATA_DIRTY.__data` | `0x8` | `0x3780` | **`+0x3778`** |
+| `__TEXT.__text` | `0x31de10` | `0x320450` | **`+0x2640`** |
+| `__TEXT.__cstring` | `0x3e92e` | `0x3ec2e` | **`+0x300`** |
+| `__DATA_DIRTY.__objc_data` | `0xd8e0` | `0xdbb0` | **`+0x2d0`** |
+| `__AUTH_CONST.__objc_const` | `0x37770` | `0x37a10` | **`+0x2a0`** |
+| `__AUTH.__objc_data` | `0x2d0` | `0x50` | **`-0x280`** |
+| `__TEXT.__objc_methlist` | `0x20f14` | `0x21104` | **`+0x1f0`** |
+| `__AUTH_CONST.__const` | `0x4f50` | `0x4e60` | **`-0xf0`** |
+| `__DATA.__bss` | `0xf90` | `0x1020` | **`+0x90`** |
+| `__DATA_DIRTY.__bss` | `0x1f8` | `0x168` | **`-0x90`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb6b0` | `0xb718` | **`+0x68`** |
+| `__TEXT.__eh_frame` | `0x478` | `0x418` | **`-0x60`** |
+| `__TEXT.__unwind_info` | `0x8680` | `0x86d8` | **`+0x58`** |
+| `__AUTH_CONST.__cfstring` | `0x1d060` | `0x1d020` | **`-0x40`** |
+| `__DATA_CONST.__const` | `0x4050` | `0x4010` | **`-0x40`** |
+| `__TEXT.__swift5_capture` | `0x230` | `0x1f0` | **`-0x40`** |
+| `__DATA.__objc_ivar` | `0x1a50` | `0x1a7c` | **`+0x2c`** |
+| `__TEXT.__gcc_except_tab` | `0x8150` | `0x813c` | **`-0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x15f8` | `0x1600` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1010` | `0x1018` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -916.40.110.0.0
--  __TEXT.__text: 0x313370
--  __TEXT.__objc_methlist: 0x20f14
 +916.45.110.0.0
-+  __TEXT.__text: 0x3159a4
-+  __TEXT.__objc_methlist: 0x21104
-   __TEXT.__const: 0x2798
-   __TEXT.__dlopen_cstrs: 0x45
-   __TEXT.__swift5_typeref: 0x3c9
 
-   __TEXT.__swift5_fieldmd: 0x15c
-   __TEXT.__swift5_proto: 0x64
-   __TEXT.__swift5_types: 0x28
--  __TEXT.__cstring: 0x3e92e
--  __TEXT.__swift5_capture: 0x230
--  __TEXT.__gcc_except_tab: 0x8150
-+  __TEXT.__cstring: 0x3ec2e
-+  __TEXT.__swift5_capture: 0x1f0
-+  __TEXT.__gcc_except_tab: 0x813c
-   __TEXT.__oslogstring: 0x58ae
-   __TEXT.__ustring: 0x2e
--  __TEXT.__unwind_info: 0xa1d0
--  __TEXT.__eh_frame: 0x478
-+  __TEXT.__unwind_info: 0xa238
-+  __TEXT.__eh_frame: 0x418
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4050
--  __DATA_CONST.__objc_classlist: 0x15f8
-+  __DATA_CONST.__const: 0x4010
-+  __DATA_CONST.__objc_classlist: 0x1600
-   __DATA_CONST.__objc_catlist: 0xa8
-   __DATA_CONST.__objc_protolist: 0x4d8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb6b0
-+  __DATA_CONST.__objc_selrefs: 0xb718
-   __DATA_CONST.__objc_protorefs: 0x68
--  __DATA_CONST.__objc_superrefs: 0x1010
-+  __DATA_CONST.__objc_superrefs: 0x1018
-   __DATA_CONST.__objc_arraydata: 0xae0
-   __DATA_CONST.__got: 0x2270
--  __AUTH_CONST.__const: 0x4f50
--  __AUTH_CONST.__cfstring: 0x1d060
--  __AUTH_CONST.__objc_const: 0x37770
-+  __AUTH_CONST.__const: 0x4e60
-+  __AUTH_CONST.__cfstring: 0x1d020
-+  __AUTH_CONST.__objc_const: 0x37a10
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x8e8
-   __AUTH_CONST.__objc_dictobj: 0x348
-
-   __AUTH_CONST.__objc_floatobj: 0x70
-   __AUTH_CONST.__objc_arrayobj: 0xf0
-   __AUTH_CONST.__auth_got: 0x10c8
--  __AUTH.__objc_data: 0x2d0
--  __DATA.__objc_ivar: 0x1a50
--  __DATA.__data: 0x3938
-+  __AUTH.__objc_data: 0x50
-+  __DATA.__objc_ivar: 0x1a7c
-+  __DATA.__data: 0x1c0
-   __DATA.__crash_info: 0x148
--  __DATA_DIRTY.__objc_data: 0xd8e0
--  __DATA_DIRTY.__data: 0x8
--  __DATA_DIRTY.__bss: 0x1f8
-+  __DATA_DIRTY.__objc_data: 0xdbb0
-+  __DATA_DIRTY.__data: 0x3780
-+  __DATA_DIRTY.__bss: 0x168
-   __DATA_DIRTY.__common: 0x40
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11910
--  Symbols:   25634
+-  Symbols:   20811
 -  CStrings:  7288
 +  Functions: 11937
-+  Symbols:   25704
++  Symbols:   20870
 +  CStrings:  7304
- 
 Symbols:
 + +[NUPipelineFactory buildPipelineWithBuilder:]
 + +[NUPipelineFactory computePipelineWithProcessorName:bundleIdentifier:error:]
@@ -545,22 +497,6 @@ Symbols:
 + __OBJC_METACLASS_RO_$_NUChannelOptionalFormat
 + ___64+[NUPipelineProcessor processorWithName:bundleIdentifier:error:]_block_invoke
 + ___82-[NUPipelineProcessorCache processorForConfiguration:processor:controlData:error:]_block_invoke
-+ _objc_msgSend$accumulatorInputPort
-+ _objc_msgSend$accumulatorOutputPort
-+ _objc_msgSend$addElementOutputChannel:
-+ _objc_msgSend$addPipelineWithBuilder:error:
-+ _objc_msgSend$canAcceptDataWithNonOptionalDescriptor:
-+ _objc_msgSend$elementInputPort
-+ _objc_msgSend$initWithArrayChannel:
-+ _objc_msgSend$initWithArrayChannel:accumulatorChannel:
-+ _objc_msgSend$initWithDescriptor:validatedDefaultValue:
-+ _objc_msgSend$initWithWrappedFormat:
-+ _objc_msgSend$isEqualToOptionalFormat:
-+ _objc_msgSend$nonOptionalDescriptor
-+ _objc_msgSend$nonOptionalFormat
-+ _objc_msgSend$processorForConfiguration:processor:controlData:error:
-+ _objc_msgSend$processorWithName:bundleIdentifier:error:
-+ _objc_msgSend$wrappedFormat
 - +[NUPipelineFactory computePipelineWithProcessorIdentifier:error:]
 - +[NUPipelineFactory metadataPipelineWithProcessorIdentifier:error:]
 - +[NUPipelineFactory renderPipelineWithProcessorIdentifier:error:]
@@ -957,11 +893,6 @@ Symbols:
 - ___83-[NUPipelineProcessorCache processorForConfiguration:identifier:controlData:error:]_block_invoke
 - ___block_descriptor_56_e8_32s40bs48r_e25_B24?0"_NUPipeline"8^16ls32l8s40l8r48l8
 - ___block_descriptor_56_e8_32s40s48bs_e25_B24?0"_NUPipeline"8^16ls32l8s40l8s48l8
-- _objc_msgSend$addMapPipeline:error:
-- _objc_msgSend$addReducePipeline:error:
-- _objc_msgSend$arrayChannel:
-- _objc_msgSend$processorForConfiguration:identifier:controlData:error:
-- _objc_msgSend$processorWithIdentifier:error:
 CStrings:
 + "+[NUPipelineFactory buildPipelineWithBuilder:]"
 + "+[NUPipelineFactory colorVolumePipeline]"

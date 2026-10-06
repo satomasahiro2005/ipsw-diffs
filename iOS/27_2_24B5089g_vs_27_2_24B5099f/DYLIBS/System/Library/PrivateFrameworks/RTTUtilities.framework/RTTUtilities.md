@@ -2,58 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/RTTUtilities.framework/RTTUtilities`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x29df8` | `0x2a000` | **`+0x208`** |
+| `__TEXT.__oslogstring` | `0x38ec` | `0x3994` | **`+0xa8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1a58` | `0x1a68` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x1ec8` | `0x1ed8` | **`+0x10`** |
+| `__DATA.__bss` | `0xf0` | `0xf8` | **`+0x8`** |
+| `__DATA_DIRTY.__bss` | `0xe0` | `0xd8` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0xb48` | `0xb50` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -543.2.1.0.0
--  __TEXT.__text: 0x2916c
--  __TEXT.__objc_methlist: 0x1ec8
 +543.2.3.0.0
-+  __TEXT.__text: 0x29374
-+  __TEXT.__objc_methlist: 0x1ed8
-   __TEXT.__const: 0x250
-   __TEXT.__dlopen_cstrs: 0x2cf
-   __TEXT.__cstring: 0x1a1d
 
-   __TEXT.__swift_as_ret: 0x14
-   __TEXT.__swift_as_cont: 0x8
-   __TEXT.__gcc_except_tab: 0xd98
--  __TEXT.__oslogstring: 0x38ec
-+  __TEXT.__oslogstring: 0x3994
-   __TEXT.__ustring: 0x4
--  __TEXT.__unwind_info: 0xdb0
-+  __TEXT.__unwind_info: 0xdb8
-   __TEXT.__eh_frame: 0x1f8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1a58
-+  __DATA_CONST.__objc_selrefs: 0x1a68
-   __DATA_CONST.__objc_superrefs: 0x78
-   __DATA_CONST.__objc_arraydata: 0x118
-   __DATA_CONST.__got: 0x3b0
-
-   __DATA.__data: 0x530
-   __DATA_DIRTY.__objc_data: 0x6c0
-   __DATA_DIRTY.__data: 0x90
--  __DATA_DIRTY.__bss: 0xe0
-+  __DATA_DIRTY.__bss: 0xd8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 843
 -  Symbols:   1608
 -  CStrings:  615
 +  Functions: 845
 +  Symbols:   1610
 +  CStrings:  617
- 
 Symbols:
 + -[RTTTelephonyUtilities simIsPresentForContext:]
 + GCC_except_table152

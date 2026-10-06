@@ -2,66 +2,48 @@
 
 > `/System/Library/Frameworks/CoreGraphics.framework/XPCServices/CGPDFService.xpc/CGPDFService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x22cc` | `0x26d0` | **`+0x404`** |
+| `__TEXT.__cstring` | `0x34e` | `0x408` | **`+0xba`** |
+| `__TEXT.__gcc_except_tab` | `0x4a8` | `0x52c` | **`+0x84`** |
+| `__TEXT.__objc_methname` | `0x47b` | `0x4e8` | **`+0x6d`** |
+| `__TEXT.__objc_methtype` | `0x42f` | `0x475` | **`+0x46`** |
+| `__DATA_CONST.__cfstring` | `0x80` | `0xc0` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x130` | `0x170` | **`+0x40`** |
+| `__TEXT.__auth_stubs` | `0x420` | `0x460` | **`+0x40`** |
+| `__TEXT.__objc_stubs` | `0x2e0` | `0x320` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x88` | `0xb0` | **`+0x28`** |
+| `__DATA_CONST.__auth_got` | `0x220` | `0x240` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x230` | `0x250` | **`+0x20`** |
+| `__DATA.__objc_selrefs` | `0x1e8` | `0x200` | **`+0x18`** |
+| `__TEXT.__const` | `0x58` | `0x70` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x364` | `0x374` | **`+0x10`** |
+| `__DATA.__objc_const` | `0x6c0` | `0x6c8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_superrefs`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x22cc
--  __TEXT.__auth_stubs: 0x420
--  __TEXT.__objc_stubs: 0x2e0
--  __TEXT.__objc_methlist: 0x364
--  __TEXT.__const: 0x58
--  __TEXT.__objc_methname: 0x47b
--  __TEXT.__cstring: 0x34e
-+  __TEXT.__text: 0x26d0
-+  __TEXT.__auth_stubs: 0x460
-+  __TEXT.__objc_stubs: 0x320
-+  __TEXT.__objc_methlist: 0x374
-+  __TEXT.__const: 0x70
-+  __TEXT.__cstring: 0x408
-+  __TEXT.__objc_methname: 0x4e8
-   __TEXT.__objc_classname: 0xb0
--  __TEXT.__objc_methtype: 0x42f
--  __TEXT.__gcc_except_tab: 0x4a8
-+  __TEXT.__objc_methtype: 0x475
-+  __TEXT.__gcc_except_tab: 0x52c
-   __TEXT.__oslogstring: 0x25
--  __TEXT.__unwind_info: 0x230
--  __DATA_CONST.__const: 0x130
--  __DATA_CONST.__cfstring: 0x80
-+  __TEXT.__unwind_info: 0x250
-+  __DATA_CONST.__const: 0x170
-+  __DATA_CONST.__cfstring: 0xc0
-   __DATA_CONST.__objc_classlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x20
--  __DATA_CONST.__auth_got: 0x220
--  __DATA_CONST.__got: 0x88
--  __DATA.__objc_const: 0x6c0
--  __DATA.__objc_selrefs: 0x1e8
-+  __DATA_CONST.__auth_got: 0x240
-+  __DATA_CONST.__got: 0xb0
-+  __DATA.__objc_const: 0x6c8
-+  __DATA.__objc_selrefs: 0x200
-   __DATA.__objc_ivar: 0x24
-   __DATA.__objc_data: 0x140
-   __DATA.__data: 0x1e0
+-2043.0.0.0.0
++2045.0.0.0.0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 56
--  Symbols:   279
--  CStrings:  154
+-  Symbols:   267
+-  CStrings:  150
 +  Functions: 60
-+  Symbols:   300
-+  CStrings:  164
- 
-Sections:
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
++  Symbols:   285
++  CStrings:  158
 Symbols:
 + -[CGPDFService newPDFDocumentWithData:withReplyOrError:]
 + GCC_except_table17
@@ -100,5 +82,4 @@ CStrings:
 + "v32@0:8@\"NSData\"16@?<v@?@\"<CGRemotePDFDocumentProtocol>\"@\"NSError\">24"
 - "Failed to create CGDataProvoder"
 - "Failed to create CGPDFDocument"
-
 ```

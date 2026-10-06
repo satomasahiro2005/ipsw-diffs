@@ -2,93 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/WebCore.framework/Frameworks/libwebrtc.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa93450` | `0xacca9c` | **`+0x3964c`** |
+| `__DATA.__bss` | `0x30d8c` | `0x3176c` | **`+0x9e0`** |
+| `__DATA_DIRTY.__bss` | `0x2a70` | `0x20c0` | **`-0x9b0`** |
+| `__AUTH_CONST.__const` | `0x1fe18` | `0x20750` | **`+0x938`** |
+| `__TEXT.__const` | `0xa6d40` | `0xa7440` | **`+0x700`** |
+| `__TEXT.__cstring` | `0x55fc8` | `0x5655a` | **`+0x592`** |
+| `__TEXT.__unwind_info` | `0x109d0` | `0x10cf0` | **`+0x320`** |
+| `__DATA_CONST.__got` | `0x0` | `0x2c0` | **`+0x2c0`** |
+| `__TEXT.__eh_frame` | `0xc28` | `0xd00` | **`+0xd8`** |
+| `__DATA_CONST.__const` | `0x15cf8` | `0x15da8` | **`+0xb0`** |
+| `__DATA_DIRTY.__data` | `0x1a0` | `0xf8` | **`-0xa8`** |
+| `__AUTH.__data` | `0x10` | `0x98` | **`+0x88`** |
+| `__DATA.__data` | `0x1dd0` | `0x1df0` | **`+0x20`** |
+| `__DATA.__common` | `0x1ed00` | `0x1ed10` | **`+0x10`** |
+| `__AUTH.__thread_bss` | `0x20` | `0x18` | **`-0x8`** |
+| `__DATA_DIRTY.__common` | `0x470` | `0x468` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xa93450
-+  __TEXT.__text: 0xacca9c
-   __TEXT.__objc_methlist: 0x14e4
--  __TEXT.__const: 0xa6d40
--  __TEXT.__cstring: 0x55fc8
-+  __TEXT.__const: 0xa7440
-+  __TEXT.__cstring: 0x5655a
-   __TEXT.__gcc_except_tab: 0x1898
--  __TEXT.__unwind_info: 0x109d0
--  __TEXT.__eh_frame: 0xc28
-+  __TEXT.__unwind_info: 0x10cf0
-+  __TEXT.__eh_frame: 0xd00
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x15cf8
-+  __DATA_CONST.__const: 0x15da8
-   __DATA_CONST.__objc_classlist: 0x108
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x60
+-625.1.20.10.3
++625.1.22.10.3
 
-   __DATA_CONST.__objc_selrefs: 0x888
-   __DATA_CONST.__objc_superrefs: 0xa8
-   __DATA_CONST.__objc_arraydata: 0x40
--  __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1fe18
-+  __DATA_CONST.__got: 0x2c0
-+  __AUTH_CONST.__const: 0x20750
-   __AUTH_CONST.__cfstring: 0x360
-   __AUTH_CONST.__objc_const: 0x35d8
-   __AUTH_CONST.__weak_auth_got: 0x48
-   __AUTH_CONST.__objc_intobj: 0x78
-   __AUTH_CONST.__objc_dictobj: 0xa0
-   __AUTH_CONST.__auth_got: 0xa50
--  __AUTH.__data: 0x10
-+  __AUTH.__data: 0x98
-   __AUTH.__thread_vars: 0x60
--  __AUTH.__thread_bss: 0x20
-+  __AUTH.__thread_bss: 0x18
-   __DATA.__objc_ivar: 0x250
--  __DATA.__data: 0x1dd0
--  __DATA.__bss: 0x30d8c
--  __DATA.__common: 0x1ed00
-+  __DATA.__data: 0x1df0
-+  __DATA.__bss: 0x3176c
-+  __DATA.__common: 0x1ed10
-   __DATA_DIRTY.__objc_data: 0xa50
--  __DATA_DIRTY.__data: 0x1a0
--  __DATA_DIRTY.__bss: 0x2a70
--  __DATA_DIRTY.__common: 0x470
-+  __DATA_DIRTY.__data: 0xf8
-+  __DATA_DIRTY.__bss: 0x20c0
-+  __DATA_DIRTY.__common: 0x468
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 18292
--  Symbols:   44690
--  CStrings:  9101
+-  Symbols:   23389
+-  CStrings:  9074
 +  Functions: 18488
-+  Symbols:   45112
-+  CStrings:  9116
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   23612
++  CStrings:  9089
 Symbols:
 + _ARGB1555ToUVMatrixRow_C
 + _ARGB1555ToUVMatrixRow_NEON
@@ -1569,5 +1516,4 @@ CStrings:
 - "PKCS #7 SIGNED DATA"
 - "TRUSTED CERTIFICATE"
 - "X509 CERTIFICATE"
-
 ```

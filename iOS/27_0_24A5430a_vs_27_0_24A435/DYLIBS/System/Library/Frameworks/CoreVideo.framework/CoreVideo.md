@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/CoreVideo.framework/CoreVideo`
 
-```diff
+### Section Size Changes
 
- 758.27.0.0.0
--  __TEXT.__text: 0x6eed4
-+  __TEXT.__text: 0x6ef04
-   __TEXT.__const: 0x5ca8
-   __TEXT.__cstring: 0xc53c
-   __TEXT.__oslogstring: 0x2e3
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6eed4` | `0x6ef04` | **`+0x30`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _OUTLINED_FUNCTION_1 : 16 -> 40
 ~ __ZN20CVPixelBufferBacking61performStandardMemoryLayoutAndCopyIOSurfaceCreationPropertiesEPvhPK13__CFAllocatorPK14__CFDictionaryS6_S6_S6_mmmmmmmmmmPS0_PmS8_S8_S8_S8_PP11__IOSurfaceSA_P10__CVBufferPjS8_S7_PS6_ : 11268 -> 11304

@@ -2,5 +2,14 @@
 
 > `/System/Library/PrivateFrameworks/homerecommendationutil`
 
-Sections:
-~ __TEXT.__const : content changed
+### Same-size Content Changes
+
+- `__TEXT.__const`
+
+### Other Changes
+
+```diff
+
+-1227.0.0.0.1
++1232.3.0.0.0
+```

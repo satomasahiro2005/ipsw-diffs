@@ -2,31 +2,19 @@
 
 > `/System/Library/Frameworks/CoreData.framework/CoreData`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x33173c` | `0x3318bc` | **`+0x180`** |
+| `__AUTH_CONST.__auth_got` | `0x17e0` | `0x17d8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 1629.1.0.0.0
--  __TEXT.__text: 0x33173c
-+  __TEXT.__text: 0x3318bc
-   __TEXT.__objc_methlist: 0x108f8
-   __TEXT.__const: 0x2e30
-   __TEXT.__constg_swiftt: 0x9d8
-
-   __AUTH_CONST.__objc_intobj: 0x570
-   __AUTH_CONST.__objc_arrayobj: 0x8f88
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x17e0
-+  __AUTH_CONST.__auth_got: 0x17d8
-   __AUTH.__objc_data: 0x32d8
-   __AUTH.__data: 0x238
-   __DATA.__objc_ivar: 0x189c
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   Functions: 9344
--  Symbols:   20144
-+  Symbols:   20143
-   CStrings:  8340
- 
+-  Symbols:   17623
++  Symbols:   17622
 Symbols:
 - _swift_release_x11
 Functions:

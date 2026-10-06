@@ -2,75 +2,50 @@
 
 > `/usr/libexec/inboxupdaterd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x85ec4` | `0x861cc` | **`+0x308`** |
+| `__TEXT.__cstring` | `0x4ee9` | `0x4f8d` | **`+0xa4`** |
+| `__DATA_CONST.__got` | `0x470` | `0x4e0` | **`+0x70`** |
+| `__DATA_CONST.__cfstring` | `0x46c0` | `0x4720` | **`+0x60`** |
+| `__TEXT.__const` | `0xce13` | `0xce73` | **`+0x60`** |
+| `__TEXT.__oslogstring` | `0xa07d` | `0xa0cc` | **`+0x4f`** |
+| `__DATA.__data` | `0x1da8` | `0x1dd8` | **`+0x30`** |
+| `__TEXT.__objc_methtype` | `0x15bb` | `0x159f` | **`-0x1c`** |
+| `__DATA_CONST.__const` | `0xe7d8` | `0xe7f0` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x3cf4` | `0x3d04` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x1db8` | `0x1dc8` | **`+0x10`** |
+| `__TEXT.__objc_methname` | `0x83d5` | `0x83ca` | **`-0xb`** |
+| `__DATA.__objc_const` | `0x88c0` | `0x88c8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x85ec4
-+  __TEXT.__text: 0x861cc
-   __TEXT.__auth_stubs: 0x14e0
-   __TEXT.__objc_stubs: 0x8080
--  __TEXT.__objc_methlist: 0x3cf4
--  __TEXT.__cstring: 0x4ee9
--  __TEXT.__objc_methname: 0x83d5
-+  __TEXT.__objc_methlist: 0x3d04
-+  __TEXT.__cstring: 0x4f8d
-+  __TEXT.__objc_methname: 0x83ca
-   __TEXT.__objc_classname: 0x5e7
--  __TEXT.__objc_methtype: 0x15bb
--  __TEXT.__const: 0xce13
--  __TEXT.__oslogstring: 0xa07d
-+  __TEXT.__objc_methtype: 0x159f
-+  __TEXT.__const: 0xce73
-+  __TEXT.__oslogstring: 0xa0cc
-   __TEXT.__gcc_except_tab: 0x156c
-   __TEXT.__dlopen_cstrs: 0x5a
--  __TEXT.__unwind_info: 0x1db8
--  __DATA_CONST.__const: 0xe7d8
--  __DATA_CONST.__cfstring: 0x46c0
-+  __TEXT.__unwind_info: 0x1dc8
-+  __DATA_CONST.__const: 0xe7f0
-+  __DATA_CONST.__cfstring: 0x4720
-   __DATA_CONST.__objc_classlist: 0x168
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0xc0
+-266.0.0.0.0
++274.0.0.0.0
 
-   __DATA_CONST.__objc_arrayobj: 0x600
-   __DATA_CONST.__objc_dictobj: 0x28
-   __DATA_CONST.__auth_got: 0xa80
--  __DATA_CONST.__got: 0x470
-+  __DATA_CONST.__got: 0x4e0
-   __DATA_CONST.__auth_ptr: 0x28
--  __DATA.__objc_const: 0x88c0
-+  __DATA.__objc_const: 0x88c8
-   __DATA.__objc_selrefs: 0x24f8
-   __DATA.__objc_ivar: 0x3d8
-   __DATA.__objc_data: 0xe10
--  __DATA.__data: 0x1da8
-+  __DATA.__data: 0x1dd8
-   __DATA.__bss: 0x140
-   __DATA.__common: 0x28
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-
-   - /usr/lib/libarchive.2.dylib
-   - /usr/lib/libauthinstall.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 4050
 +  Functions: 4058
-   Symbols:   484
--  CStrings:  4150
-+  CStrings:  4157
- 
-Sections:
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__objc_data : content changed
+
+-  CStrings:  3538
++  CStrings:  3542
 CStrings:
 + "MobileAssetAssetAudience-com.apple.MobileAsset.MobileSoftwareUpdate.UpdateBrain"
 + "MobileAssetAssetAudience-com.apple.MobileAsset.SoftwareUpdate"
@@ -88,5 +63,4 @@ CStrings:
 - "installDidStartForUpdate:forRetry:"
 - "stopMulticast"
 - "v28@0:8@\"SUDescriptor\"16B24"
-
 ```

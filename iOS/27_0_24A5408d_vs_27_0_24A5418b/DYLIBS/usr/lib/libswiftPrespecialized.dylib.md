@@ -2,23 +2,18 @@
 
 > `/usr/lib/libswiftPrespecialized.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__const` | `0x3c0fd8` | `0x3c10a0` | **`+0xc8`** |
+
+### Other Changes
+
 ```diff
 
- 0.0.0.0.0
-   __TEXT.__text: 0x0
-   __TEXT.__lldb_no_nlist: 0x0
--  __DATA_CONST.__const: 0x3c0fd8
-+  __DATA_CONST.__const: 0x3c10a0
-   __DATA_CONST.__ptrhashtab: 0x1eca8
-   __DATA_CONST.__ptrhashtabkey: 0x325d0
-   __AUTH_CONST.__const: 0x74088
-   __AUTH.__data: 0xd4590
-   - /usr/lib/libSystem.B.dylib
-   Functions: 0
 -  Symbols:   190790
 +  Symbols:   190792
-   CStrings:  0
- 
 Symbols:
 + _$s10NowPlaying25MediaContentRepresentableP5genreSSSgvMTq
 + _$s11TextInputUI0B29CandidateClientViewControllerC18candidateThrottler_10didReceiveySo012TUICandidateI0C_So20TIAutocorrectionListCtFTq

@@ -2,24 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MentalHealthUI.framework/archive.metallib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__reflection`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__compute` | `0xc840` | `0xcb10` | **`+0x2d0`** |
+| `__TEXT.__metallib` | `0x8f4c0` | `0x8f600` | **`+0x140`** |
+| `__TEXT.__fragment` | `0x5d70` | `0x5dd0` | **`+0x60`** |
+| `__TEXT.__vertex` | `0x8f30` | `0x8f90` | **`+0x60`** |
+
+### Same-size Content Changes
+
 - `__TEXT.__descriptor`
-
-```diff
-
-   __TEXT.__reflection: 0x6e80
--  __TEXT.__vertex: 0x8fc0
--  __TEXT.__fragment: 0x5db0
--  __TEXT.__compute: 0xc460
-+  __TEXT.__vertex: 0x9020
-+  __TEXT.__fragment: 0x5e50
-+  __TEXT.__compute: 0xc770
-   __TEXT.__descriptor: 0x960
--  __TEXT.__metallib: 0x8f4c0
-+  __TEXT.__metallib: 0x8f600
-   Functions: 0
-   Symbols:   0
-   CStrings:  0
-```

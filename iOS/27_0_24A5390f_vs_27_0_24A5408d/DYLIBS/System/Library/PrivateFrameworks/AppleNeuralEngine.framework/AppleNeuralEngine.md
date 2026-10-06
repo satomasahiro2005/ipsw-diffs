@@ -2,78 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/AppleNeuralEngine.framework/AppleNeuralEngine`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x57ec0` | `0x59574` | **`+0x16b4`** |
+| `__TEXT.__ustring` | `—` | `0xb76` | **`+0xb76`** |
+| `__AUTH_CONST.__cfstring` | `0x4a80` | `0x4fe0` | **`+0x560`** |
+| `__TEXT.__gcc_except_tab` | `0x67d0` | `0x6b7c` | **`+0x3ac`** |
+| `__TEXT.__unwind_info` | `0x1418` | `0x1620` | **`+0x208`** |
+| `__TEXT.__oslogstring` | `0xb883` | `0xba7b` | **`+0x1f8`** |
+| `__TEXT.__cstring` | `0x3893` | `0x3a6d` | **`+0x1da`** |
+| `__DATA_CONST.__const` | `0x978` | `0xad0` | **`+0x158`** |
+| `__AUTH_CONST.__objc_const` | `0x3cd0` | `0x3d88` | **`+0xb8`** |
+| `__TEXT.__objc_methlist` | `0x2b94` | `0x2c3c` | **`+0xa8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1a28` | `0x1a88` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0x4b0` | `0x500` | **`+0x50`** |
+| `__AUTH_CONST.__const` | `0x4d0` | `0x4f0` | **`+0x20`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x60` | `0x78` | **`+0x18`** |
+| `__DATA.__bss` | `0x180` | `0x190` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x680` | `0x688` | **`+0x8`** |
+| `__DATA.__data` | `0x718` | `0x720` | **`+0x8`** |
+| `__DATA_CONST.__objc_arraydata` | `0x120` | `0x128` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x130` | `0x138` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -382.12.0.0.0
--  __TEXT.__text: 0x57ec0
--  __TEXT.__objc_methlist: 0x2b94
 +382.15.1.0.0
-+  __TEXT.__text: 0x59574
-+  __TEXT.__objc_methlist: 0x2c3c
-   __TEXT.__const: 0x2b8
--  __TEXT.__oslogstring: 0xb883
--  __TEXT.__cstring: 0x3893
--  __TEXT.__gcc_except_tab: 0x67d0
--  __TEXT.__unwind_info: 0x1418
-+  __TEXT.__oslogstring: 0xba7b
-+  __TEXT.__cstring: 0x3a6d
-+  __TEXT.__gcc_except_tab: 0x6b7c
-+  __TEXT.__ustring: 0xb76
-+  __TEXT.__unwind_info: 0x1620
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x978
--  __DATA_CONST.__objc_classlist: 0x130
-+  __DATA_CONST.__const: 0xad0
-+  __DATA_CONST.__objc_classlist: 0x138
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x1a28
-+  __DATA_CONST.__objc_selrefs: 0x1a88
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0xd8
--  __DATA_CONST.__objc_arraydata: 0x120
-+  __DATA_CONST.__objc_arraydata: 0x128
-   __DATA_CONST.__got: 0x2f8
--  __AUTH_CONST.__const: 0x4d0
--  __AUTH_CONST.__cfstring: 0x4a80
--  __AUTH_CONST.__objc_const: 0x3cd0
-+  __AUTH_CONST.__const: 0x4f0
-+  __AUTH_CONST.__cfstring: 0x4fe0
-+  __AUTH_CONST.__objc_const: 0x3d88
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_intobj: 0x30
--  __AUTH_CONST.__objc_arrayobj: 0x60
--  __AUTH_CONST.__auth_got: 0x680
--  __AUTH.__objc_data: 0x4b0
-+  __AUTH_CONST.__objc_arrayobj: 0x78
-+  __AUTH_CONST.__auth_got: 0x688
-+  __AUTH.__objc_data: 0x500
-   __DATA.__objc_ivar: 0x23c
--  __DATA.__data: 0x718
--  __DATA.__bss: 0x180
-+  __DATA.__data: 0x720
-+  __DATA.__bss: 0x190
-   __DATA_DIRTY.__objc_data: 0x730
-   __DATA_DIRTY.__data: 0x10
-   __DATA_DIRTY.__bss: 0xf8
 
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsandbox.1.dylib
 -  Functions: 1726
--  Symbols:   2899
+-  Symbols:   2250
 -  CStrings:  1433
 +  Functions: 1751
-+  Symbols:   2945
++  Symbols:   2289
 +  CStrings:  1483
- 
 Symbols:
 + +[_ANECompileFlavorPolicy nonBondedCsIdentities]
 + +[_ANECompileFlavorPolicy shouldDisableBondedForCsIdentity:]
@@ -122,16 +87,6 @@ Symbols:
 + _kANEFDisableBondedNetworksKey
 + _nonBondedCsIdentities.list
 + _nonBondedCsIdentities.once
-+ _objc_msgSend$compiledModelExistsInCacheFor:limitToCurrentProcess:
-+ _objc_msgSend$compiledModelExistsInCacheFor:limitToCurrentProcess:withReply:
-+ _objc_msgSend$errorForCode:method:underlyingCode:
-+ _objc_msgSend$errorForCode:method:underlyingCode:additionalUserInfo:
-+ _objc_msgSend$inferenceErrorForStatus:method:
-+ _objc_msgSend$nonBondedCsIdentities
-+ _objc_msgSend$notSupportedErrorForMethod:
-+ _objc_msgSend$programTooLargeErrorForMethod:
-+ _objc_msgSend$stringForCode:
-+ _objc_msgSend$updateCachedModelLocationForModelTrackedByHash:toAppGroup:withReply:
 - -[_ANEDaemonConnection compiledModelExistsInCacheFor:withReply:]
 - GCC_except_table64
 - GCC_except_table67
@@ -140,9 +95,6 @@ Symbols:
 - ___64-[_ANEDaemonConnection compiledModelExistsInCacheFor:withReply:]_block_invoke
 - ___block_descriptor_64_e8_32s40s48r_e5_v8?0ls32l8s40l8r48l8
 - ___block_descriptor_96_e8_32s40s48s56r64r_e5_v8?0lr56l8s32l8s40l8s48l8r64l8
-- _objc_msgSend$compiledModelExistsInCacheFor:withReply:
-- _objc_msgSend$programIOSurfacesMapErrorForMethod:code:
-- _objc_msgSend$programIOSurfacesUnmapErrorForMethod:code:
 CStrings:
 + "%@: %@"
 + "%@: %@ (underlying=0x%lX)"

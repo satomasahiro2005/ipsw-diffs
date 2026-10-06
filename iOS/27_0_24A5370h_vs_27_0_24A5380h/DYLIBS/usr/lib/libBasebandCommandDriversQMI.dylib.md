@@ -2,29 +2,23 @@
 
 > `/usr/lib/libBasebandCommandDriversQMI.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1053c8` | `0x104fd0` | **`-0x3f8`** |
+| `__TEXT.__gcc_except_tab` | `0x13828` | `0x13818` | **`-0x10`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1053c8
-+  __TEXT.__text: 0x104fd0
-   __TEXT.__init_offsets: 0x14
-   __TEXT.__const: 0x7a30
--  __TEXT.__gcc_except_tab: 0x13828
-+  __TEXT.__gcc_except_tab: 0x13818
-   __TEXT.__cstring: 0x3f86
-   __TEXT.__oslogstring: 0x248c
-   __TEXT.__unwind_info: 0x6f10
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA.__data : content changed
+-1570.0.0.0.0
++1576.0.0.0.0
 Functions:
 ~ __ZN3tlv6parseVIN3nas3tlv3abm14BBNeighborListEEET_RPKhi : 248 -> 224
 ~ __ZNSt3__111basic_regexIcNS_12regex_traitsIcEEE23__parse_expression_termIPKcEET_S7_S7_PNS_20__bracket_expressionIcS2_EE : 1380 -> 1332
@@ -84,5 +78,4 @@ Functions:
 CStrings:
 + "AppleBasebandManager-AppleBasebandServices_Manager-1576"
 - "AppleBasebandManager-AppleBasebandServices_Manager-1570"
-
 ```

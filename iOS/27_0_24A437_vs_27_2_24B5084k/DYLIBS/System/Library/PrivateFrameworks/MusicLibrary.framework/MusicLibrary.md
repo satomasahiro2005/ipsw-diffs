@@ -2,79 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/MusicLibrary.framework/MusicLibrary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3b4ee0` | `0x3b8454` | **`+0x3574`** |
+| `__TEXT.__oslogstring` | `0x1d6d0` | `0x1e205` | **`+0xb35`** |
+| `__TEXT.__gcc_except_tab` | `0x14594` | `0x14924` | **`+0x390`** |
+| `__TEXT.__cstring` | `0x74e6f` | `0x750c3` | **`+0x254`** |
+| `__AUTH_CONST.__objc_const` | `0x159f0` | `0x15c28` | **`+0x238`** |
+| `__AUTH_CONST.__cfstring` | `0x287a0` | `0x288c0` | **`+0x120`** |
+| `__TEXT.__objc_methlist` | `0xe714` | `0xe834` | **`+0x120`** |
+| `__TEXT.__dlopen_cstrs` | `0x2d1` | `0x399` | **`+0xc8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7008` | `0x70b8` | **`+0xb0`** |
+| `__AUTH.__objc_data` | `0x19f0` | `0x1a90` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x72e0` | `0x7378` | **`+0x98`** |
+| `__DATA_CONST.__const` | `0x9dd8` | `0x9e60` | **`+0x88`** |
+| `__DATA.__bss` | `0xe40` | `0xea0` | **`+0x60`** |
+| `__AUTH_CONST.__objc_intobj` | `0x2130` | `0x2148` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0xf2c` | `0xf40` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x708` | `0x718` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0xb38` | `0xb40` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x520` | `0x528` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -4026.100.84.0.0
--  __TEXT.__text: 0x3adf6c
--  __TEXT.__objc_methlist: 0xe714
 +4026.200.14.0.0
-+  __TEXT.__text: 0x3b1490
-+  __TEXT.__objc_methlist: 0xe834
-   __TEXT.__const: 0x25d54
--  __TEXT.__dlopen_cstrs: 0x2d1
--  __TEXT.__gcc_except_tab: 0x14594
--  __TEXT.__cstring: 0x74e6f
--  __TEXT.__oslogstring: 0x1d6d0
-+  __TEXT.__dlopen_cstrs: 0x399
-+  __TEXT.__gcc_except_tab: 0x14924
-+  __TEXT.__cstring: 0x750c3
-+  __TEXT.__oslogstring: 0x1e205
-   __TEXT.__ustring: 0x210
--  __TEXT.__unwind_info: 0x8428
-+  __TEXT.__unwind_info: 0x84e8
-   __TEXT.__eh_frame: 0x50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9dd8
--  __DATA_CONST.__objc_classlist: 0x708
-+  __DATA_CONST.__const: 0x9e60
-+  __DATA_CONST.__objc_classlist: 0x718
-   __DATA_CONST.__objc_catlist: 0x50
-   __DATA_CONST.__objc_protolist: 0xa8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x18
--  __DATA_CONST.__objc_selrefs: 0x7008
-+  __DATA_CONST.__objc_selrefs: 0x70b8
-   __DATA_CONST.__objc_protorefs: 0x30
--  __DATA_CONST.__objc_superrefs: 0x520
-+  __DATA_CONST.__objc_superrefs: 0x528
-   __DATA_CONST.__objc_arraydata: 0x1420
--  __DATA_CONST.__got: 0xb38
-+  __DATA_CONST.__got: 0xb40
-   __AUTH_CONST.__const: 0x19420
--  __AUTH_CONST.__cfstring: 0x287a0
--  __AUTH_CONST.__objc_const: 0x159f0
-+  __AUTH_CONST.__cfstring: 0x288c0
-+  __AUTH_CONST.__objc_const: 0x15c28
-   __AUTH_CONST.__weak_auth_got: 0x20
-   __AUTH_CONST.__objc_arrayobj: 0x22c8
--  __AUTH_CONST.__objc_intobj: 0x2130
-+  __AUTH_CONST.__objc_intobj: 0x2148
-   __AUTH_CONST.__objc_dictobj: 0xf0
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__auth_got: 0xff0
--  __AUTH.__objc_data: 0x19f0
-+  __AUTH.__objc_data: 0x1a90
-   __AUTH.__data: 0x118
--  __DATA.__objc_ivar: 0xf2c
-+  __DATA.__objc_ivar: 0xf40
-   __DATA.__data: 0x1710
-   __DATA.__common: 0xb20
-   __DATA_DIRTY.__objc_data: 0x2c60
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 8470
--  Symbols:   17473
+-  Symbols:   14718
 -  CStrings:  7533
 +  Functions: 8507
-+  Symbols:   17553
++  Symbols:   14778
 +  CStrings:  7578
- 
 Symbols:
 + -[ML3DAAPImportOperation _importDAAPPayloadFromFile:entityType:isDeferredItemUpdate:]
 + -[ML3DAAPImportOperation _preprocessDAAPPayloadFromFile:entityType:isDeferredItemUpdate:]
@@ -699,28 +662,6 @@ Symbols:
 + _getCCMediaSharedPlaylistContentClass.softClass
 + _getCCMediaSharedPlaylistMetaContentClass.softClass
 + _getCCSetDescriptorClass.softClass
-+ _objc_msgSend$_accountIdentifierForLibrary:
-+ _objc_msgSend$_createDonationItemForPlaylistWithPersistentID:library:
-+ _objc_msgSend$_importDAAPPayloadFromFile:entityType:isDeferredItemUpdate:
-+ _objc_msgSend$_performFullIndexOfLibrary:toRevision:withDonation:
-+ _objc_msgSend$_performIncrementalIndexOfLibrary:fromRevision:toRevision:withDonation:
-+ _objc_msgSend$_platformSupportsSiriSharedPlaylistIndexing
-+ _objc_msgSend$_preprocessDAAPPayloadFromFile:entityType:isDeferredItemUpdate:
-+ _objc_msgSend$_removeDonationsForAccountIdentifiers:withDonation:
-+ _objc_msgSend$albumCloudChannelID
-+ _objc_msgSend$allDonationRevisions
-+ _objc_msgSend$initWithDictionaryRepresentation:
-+ _objc_msgSend$initWithKey:value:error:
-+ _objc_msgSend$initWithLibraryPath:trackData:playlistData:albumArtistData:albumData:libraryPinsData:albumCloudChannelID:isDeferredItemUpdateImport:clientIdentity:
-+ _objc_msgSend$initWithPlaylistName:contributingUserDSID:error:
-+ _objc_msgSend$initWithSourceItemIdentifier:error:
-+ _objc_msgSend$isDeferredItemUpdateImport
-+ _objc_msgSend$jaliscoAccountID
-+ _objc_msgSend$lastDonationRevisionForAccountIdentifier:
-+ _objc_msgSend$predicateWithFieldType:equalsStringValue:error:
-+ _objc_msgSend$removeItemsMatchingPredicate:error:
-+ _objc_msgSend$setLastDonationRevision:forAccountIdentifier:
-+ _objc_msgSend$validityValue
 - -[ML3DAAPImportOperation _importDAAPPayloadFromFile:entityType:]
 - -[ML3DAAPImportOperation _preprocessDAAPPayloadFromFile:entityType:]
 - GCC_except_table2213
@@ -1284,8 +1225,6 @@ Symbols:
 - __ZN16ML3ImportSessionC1EP15ML3MusicLibraryP21ML3DatabaseConnectionib
 - __ZN18DAAPParserDelegateC2EP22ML3DAAPImportOperationNSt3__110shared_ptrIN6ML3CPP6ParserEEE32ML3DAAPImportOperationEntityTypeb
 - __ZNSt3__19allocatorI18DAAPParserDelegateE9constructB9fqe220106IS1_JRU8__strongKP22ML3DAAPImportOperationRNS_10shared_ptrIN6ML3CPP6ParserEEER32ML3DAAPImportOperationEntityTypebEEEvPT_DpOT0_
-- _objc_msgSend$_importDAAPPayloadFromFile:entityType:
-- _objc_msgSend$_preprocessDAAPPayloadFromFile:entityType:
 CStrings:
 + "%@-%lu"
 + "<%@ %p libraryOwnedTracks=%@ libraryOwnedPlaylists=%@ pendingMatch=%@ _clientInitiatedReset=%@ pairedDeviceCanProcessStandaloneCollections=%@ _isDeferredItemUpdateImport=%@ libraryPath=\"%@\">"

@@ -2,80 +2,40 @@
 
 > `/System/Library/VideoProcessors/NRFV4.bundle/NRFV4`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2e5618` | `0x25b75c` | **`-0x89ebc`** |
+| `__TEXT.__cstring` | `0x5f250` | `0x3460c` | **`-0x2ac44`** |
+| `__TEXT.__oslogstring` | `0x447da` | `0x209f4` | **`-0x23de6`** |
+| `__TEXT.__unwind_info` | `0x57a8` | `0x5128` | **`-0x680`** |
+| `__TEXT.__gcc_except_tab` | `0x1cd8` | `0x1680` | **`-0x658`** |
+| `__AUTH_CONST.__cfstring` | `0x149c0` | `0x146c0` | **`-0x300`** |
+| `__DATA_CONST.__const` | `0x14f0` | `0x1490` | **`-0x60`** |
+| `__DATA_DIRTY.__common` | `0x128` | `0xf8` | **`-0x30`** |
+| `__AUTH_CONST.__objc_const` | `0x3b9e0` | `0x3b9c0` | **`-0x20`** |
+| `__TEXT.__const` | `0x1031f8` | `0x1031e0` | **`-0x18`** |
+| `__TEXT.__objc_methlist` | `0x130f8` | `0x13110` | **`+0x18`** |
+| `__DATA.__common` | `0x50` | `0x40` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x860` | `0x868` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x3f94` | `0x3f8c` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0xf00` | `0xf08` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6f88` | `0x6f80` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -761.0.0.0.3
--  __TEXT.__text: 0x2e5618
--  __TEXT.__objc_methlist: 0x130f8
--  __TEXT.__const: 0x1031f8
--  __TEXT.__cstring: 0x5f250
--  __TEXT.__gcc_except_tab: 0x1cd8
--  __TEXT.__oslogstring: 0x447da
 +764.22.5.122.2
-+  __TEXT.__text: 0x25b75c
-+  __TEXT.__objc_methlist: 0x13110
-+  __TEXT.__const: 0x1031e0
-+  __TEXT.__cstring: 0x3460c
-+  __TEXT.__gcc_except_tab: 0x1680
-+  __TEXT.__oslogstring: 0x209f4
-   __TEXT.__dlopen_cstrs: 0x10c
--  __TEXT.__unwind_info: 0x57a8
-+  __TEXT.__unwind_info: 0x5128
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x14f0
-+  __DATA_CONST.__const: 0x1490
-   __DATA_CONST.__objc_classlist: 0xe38
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x108
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6f88
-+  __DATA_CONST.__objc_selrefs: 0x6f80
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0xb08
-   __DATA_CONST.__objc_arraydata: 0xf08
--  __DATA_CONST.__got: 0xf00
-+  __DATA_CONST.__got: 0xf08
-   __AUTH_CONST.__const: 0x9a0
--  __AUTH_CONST.__cfstring: 0x149c0
--  __AUTH_CONST.__objc_const: 0x3b9e0
-+  __AUTH_CONST.__cfstring: 0x146c0
-+  __AUTH_CONST.__objc_const: 0x3b9c0
-   __AUTH_CONST.__objc_doubleobj: 0xa0
-   __AUTH_CONST.__objc_arrayobj: 0xc30
-   __AUTH_CONST.__objc_intobj: 0xa20
-   __AUTH_CONST.__objc_floatobj: 0x90
-   __AUTH_CONST.__objc_dictobj: 0x500
--  __AUTH_CONST.__auth_got: 0x860
-+  __AUTH_CONST.__auth_got: 0x868
-   __AUTH.__objc_data: 0xa50
--  __DATA.__objc_ivar: 0x3f94
-+  __DATA.__objc_ivar: 0x3f8c
-   __DATA.__data: 0xc68
--  __DATA.__common: 0x50
-+  __DATA.__common: 0x40
-   __DATA.__bss: 0x28
-   __DATA_DIRTY.__objc_data: 0x83e0
-   __DATA_DIRTY.__bss: 0x178
--  __DATA_DIRTY.__common: 0x128
-+  __DATA_DIRTY.__common: 0xf8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 15641
--  Symbols:   17824
+-  Symbols:   14728
 -  CStrings:  14262
 +  Functions: 14435
-+  Symbols:   17849
++  Symbols:   14758
 +  CStrings:  8543
- 
 Symbols:
 + -[SoftISPCalibrationShaders debugConvertYRGBToRGBY]
 + -[SoftISPCalibrationShaders expandSkipMaskForDebug]
@@ -121,8 +81,6 @@ Symbols:
 + ___84-[H13FastRawScaleStage(Vision) runFaceDetectionOnPixelBuffer:withInputFrame:config:]_block_invoke_3
 + ___84-[H13FastRawScaleStage(Vision) runFaceDetectionOnPixelBuffer:withInputFrame:config:]_block_invoke_4
 + ___98-[DefringeStage defringePyramid:outputPyramid:chromaScratch:quadraBinningFactor:tuningParameters:]_block_invoke_2
-+ _objc_msgSend$createSkipMaskWithWidth:height:
-+ _objc_msgSend$setPreserveExposureBias:
 + _objc_release_x11
 + _objc_release_x4
 - -[CMISoftwareFlashRenderingProcessorV2 requiredMetalAllocatorMemorySize]
@@ -141,13 +99,6 @@ Symbols:
 - _gNightModeTripodPreFusionTrace
 - _getFloatValue
 - _getIntParameter
-- _objc_msgSend$doRegistration
-- _objc_msgSend$ensureSkipMaskForWidth:height:cfaLayout:needsRebuildOut:
-- _objc_msgSend$largestOccupiedOffset
-- _objc_msgSend$localizedFailureReason
-- _objc_msgSend$registrationPolicy
-- _objc_msgSend$shareIntermediates
-- _objc_msgSend$staticThreadgroupMemoryLength
 CStrings:
 + "%s signalled err=%d at <>:%d"
 + "SoftISPCalibration::convertYRGBToRGBYForDebug"

@@ -2,116 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/WritingToolsUI.framework/WritingToolsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x698fc` | `0x6bbb4` | **`+0x22b8`** |
+| `__TEXT.__swift5_typeref` | `0xd762` | `0xe070` | **`+0x90e`** |
+| `__AUTH_CONST.__objc_const` | `0x67d0` | `0x6930` | **`+0x160`** |
+| `__TEXT.__objc_methlist` | `0x4acc` | `0x4c04` | **`+0x138`** |
+| `__AUTH_CONST.__const` | `0x2010` | `0x2120` | **`+0x110`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2f68` | `0x3040` | **`+0xd8`** |
+| `__TEXT.__swift5_reflstr` | `0xd7c` | `0xe2c` | **`+0xb0`** |
+| `__TEXT.__unwind_info` | `0x1c18` | `0x1cb0` | **`+0x98`** |
+| `__AUTH.__objc_data` | `0x1410` | `0x1490` | **`+0x80`** |
+| `__TEXT.__cstring` | `0x34f7` | `0x3577` | **`+0x80`** |
+| `__TEXT.__swift5_fieldmd` | `0xc48` | `0xcc0` | **`+0x78`** |
+| `__DATA_CONST.__const` | `0xd70` | `0xdd8` | **`+0x68`** |
+| `__DATA.__data` | `0x1ed0` | `0x1f30` | **`+0x60`** |
+| `__TEXT.__constg_swiftt` | `0xfc0` | `0x1020` | **`+0x60`** |
+| `__TEXT.__oslogstring` | `0x1ead` | `0x1efd` | **`+0x50`** |
+| `__TEXT.__const` | `0x30d4` | `0x3114` | **`+0x40`** |
+| `__AUTH_CONST.__objc_intobj` | `0x528` | `0x558` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0xa28` | `0xa50` | **`+0x28`** |
+| `__TEXT.__swift5_capture` | `0x448` | `0x46c` | **`+0x24`** |
+| `__DATA.__common` | `0xf0` | `0x110` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x37c` | `0x388` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0xf68` | `0xf70` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x698fc
--  __TEXT.__objc_methlist: 0x4acc
--  __TEXT.__const: 0x30d4
--  __TEXT.__cstring: 0x34f7
--  __TEXT.__oslogstring: 0x1ead
-+  __TEXT.__text: 0x6bbb4
-+  __TEXT.__objc_methlist: 0x4c04
-+  __TEXT.__const: 0x3114
-+  __TEXT.__cstring: 0x3577
-+  __TEXT.__oslogstring: 0x1efd
-   __TEXT.__gcc_except_tab: 0xd60
-   __TEXT.__dlopen_cstrs: 0xb4
--  __TEXT.__swift5_typeref: 0xd762
--  __TEXT.__swift5_reflstr: 0xd7c
-+  __TEXT.__swift5_typeref: 0xe070
-+  __TEXT.__swift5_capture: 0x46c
-+  __TEXT.__swift5_reflstr: 0xe2c
-   __TEXT.__swift5_assocty: 0x2a8
--  __TEXT.__constg_swiftt: 0xfc0
--  __TEXT.__swift5_fieldmd: 0xc48
-+  __TEXT.__constg_swiftt: 0x1020
-+  __TEXT.__swift5_fieldmd: 0xcc0
-   __TEXT.__swift5_builtin: 0x104
--  __TEXT.__swift5_capture: 0x448
-   __TEXT.__swift5_proto: 0x198
-   __TEXT.__swift5_types: 0xc4
-   __TEXT.__swift_as_entry: 0x3c
-   __TEXT.__swift_as_ret: 0x18
-   __TEXT.__swift_as_cont: 0x20
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0x1c18
-+  __TEXT.__unwind_info: 0x1cb0
-   __TEXT.__eh_frame: 0x8a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xd70
-+  __DATA_CONST.__const: 0xdd8
-   __DATA_CONST.__objc_classlist: 0x178
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0xf8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2f68
-+  __DATA_CONST.__objc_selrefs: 0x3040
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0xd0
-   __DATA_CONST.__objc_arraydata: 0x48
--  __DATA_CONST.__got: 0xa28
--  __AUTH_CONST.__const: 0x2010
-+  __DATA_CONST.__got: 0xa50
-+  __AUTH_CONST.__const: 0x2120
-   __AUTH_CONST.__cfstring: 0xe60
--  __AUTH_CONST.__objc_const: 0x67d0
--  __AUTH_CONST.__objc_intobj: 0x528
-+  __AUTH_CONST.__objc_const: 0x6930
-+  __AUTH_CONST.__objc_intobj: 0x558
-   __AUTH_CONST.__objc_doubleobj: 0x70
-   __AUTH_CONST.__objc_arrayobj: 0x48
--  __AUTH_CONST.__auth_got: 0xf68
--  __AUTH.__objc_data: 0x1410
-+  __AUTH_CONST.__auth_got: 0xf70
-+  __AUTH.__objc_data: 0x1490
-   __AUTH.__data: 0x900
--  __DATA.__objc_ivar: 0x37c
--  __DATA.__data: 0x1ed0
-+  __DATA.__objc_ivar: 0x388
-+  __DATA.__data: 0x1f30
-   __DATA.__bss: 0x3590
--  __DATA.__common: 0xf0
-+  __DATA.__common: 0x110
-   __DATA_DIRTY.__objc_data: 0xf0
-   __DATA_DIRTY.__data: 0x8
-   __DATA_DIRTY.__bss: 0x90
+-134.0.0.0.0
++139.0.0.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2918
--  Symbols:   6005
--  CStrings:  645
+-  Symbols:   3165
+-  CStrings:  531
 +  Functions: 2994
-+  Symbols:   6090
-+  CStrings:  651
- 
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   3197
++  CStrings:  537
 Symbols:
 + +[WTUIActionClientToHost actionForLaunchCampoWithContextOverride:]
 + +[WTUIActionClientToHost actionForSetInputAccessoryViewHidden:]
@@ -163,34 +93,6 @@ Symbols:
 + _keypath_get.38Tm
 + _keypath_get.50Tm
 + _keypath_set.31Tm
-+ _objc_msgSend$_launchCampoWithContextOverride:
-+ _objc_msgSend$_refreshAlwaysOnAnchorForSuggestionWithUUID:
-+ _objc_msgSend$allObjects
-+ _objc_msgSend$inputAccessoryView
-+ _objc_msgSend$inputAccessoryViewController
-+ _objc_msgSend$inputAccessoryViewWasHidden
-+ _objc_msgSend$isHidden
-+ _objc_msgSend$launchCampoWithContextOverride:
-+ _objc_msgSend$notificationObserverIsAdded
-+ _objc_msgSend$precomputedCitationsJSON
-+ _objc_msgSend$precomputedContentAdvisoriesJSON
-+ _objc_msgSend$primaryRecipientIdentifiers
-+ _objc_msgSend$removeObserver:
-+ _objc_msgSend$sendKeyboardTrackingNotifications
-+ _objc_msgSend$setConversationIdentifier:
-+ _objc_msgSend$setHidden:
-+ _objc_msgSend$setInputAccessoryViewHidden:
-+ _objc_msgSend$setInputAccessoryViewWasHidden:
-+ _objc_msgSend$setNotificationObserverIsAdded:
-+ _objc_msgSend$setPrecomputedCitationsJSON:
-+ _objc_msgSend$setPrecomputedContentAdvisoriesJSON:
-+ _objc_msgSend$setRecipientIdentifiers:
-+ _objc_msgSend$sourceDataOwnerForCopy
-+ _objc_msgSend$sourceDataOwnerForDrag
-+ _objc_msgSend$sourceDataOwnerForDrop
-+ _objc_msgSend$sourceDataOwnerForPaste
-+ _objc_msgSend$textInputTraits
-+ _objc_msgSend$tiInputContextHistory
 + _swift_retain_x27
 + _symbolic SaySSGSg
 + _symbolic _____y_____G 7SwiftUI9LazyStateV 12CoreGraphics7CGFloatV
@@ -230,5 +132,4 @@ CStrings:
 + "precomputedCitationsJSON"
 + "precomputedContentAdvisoriesJSON"
 + "recipientIdentifiers"
-
 ```

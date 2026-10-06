@@ -2,16 +2,17 @@
 
 > `/System/Library/Frameworks/DeveloperToolsSupport.framework/DeveloperToolsSupport`
 
-```diff
+### Section Size Changes
 
- 24.0.24.0.0
--  __TEXT.__text: 0x11148
-+  __TEXT.__text: 0x11158
-   __TEXT.__const: 0x168c
-   __TEXT.__constg_swiftt: 0x858
-   __TEXT.__swift5_typeref: 0x672
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x11148` | `0x11158` | **`+0x10`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_247e1a9f0 -> sub_2491829f0 : 788 -> 792
-~ sub_247e1aea8 -> sub_249182eac : 648 -> 656
-~ sub_247e24a44 -> sub_24918ca50 : 564 -> 568
+~ sub_247f1a9f0 -> sub_2490369f0 : 788 -> 792
+~ sub_247f1aea8 -> sub_249036eac : 648 -> 656
+~ sub_247f24a44 -> sub_249040a50 : 564 -> 568
 ```

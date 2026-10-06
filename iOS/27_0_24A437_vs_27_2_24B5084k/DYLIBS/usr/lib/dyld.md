@@ -2,36 +2,29 @@
 
 > `/usr/lib/dyld`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9eda4` | `0x9f00c` | **`+0x268`** |
+| `__DATA_CONST.__const` | `0x55f0` | `0x5618` | **`+0x28`** |
+| `__TEXT.__const` | `0x1978` | `0x1998` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x12573` | `0x12587` | **`+0x14`** |
+| `__TEXT.__unwind_info` | `0x35b0` | `0x35c0` | **`+0x10`** |
+| `__AUTH_CONST.__const` | `0x2758` | `0x2760` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -27062.0.0.0.0
--  __TEXT.__text: 0x9a3c4
--  __TEXT.__const: 0x1978
--  __TEXT.__cstring: 0x12573
--  __TEXT.__unwind_info: 0x3648
--  __DATA_CONST.__const: 0x55f0
--  __AUTH_CONST.__const: 0x2758
-+27102.0.0.0.0
-+  __TEXT.__text: 0x9a61c
-+  __TEXT.__const: 0x1998
-+  __TEXT.__cstring: 0x12587
-+  __TEXT.__unwind_info: 0x3650
-+  __DATA_CONST.__const: 0x5618
-+  __AUTH_CONST.__const: 0x2760
-   __DATA.__data: 0x1c0
-   __DATA.__crash_info: 0x148
-   __DATA.__common: 0x8f0
-
-   __DATA_DIRTY.__bss: 0x1bc0
-   __TPRO_CONST.__data: 0xe1
-   __TPRO_CONST.__allocator: 0x20000
 -  Functions: 3422
 -  Symbols:   3273
 -  CStrings:  2255
++27102.0.0.0.0
 +  Functions: 3425
 +  Symbols:   3277
 +  CStrings:  2256
- 
 Symbols:
 + __ZN5dyld44APIs28_dyld_with_active_atlas_PRIVEPvPFvS1_PKvmE
 + __ZNK6mach_o5Image19maxAuthRebaseOffsetEv

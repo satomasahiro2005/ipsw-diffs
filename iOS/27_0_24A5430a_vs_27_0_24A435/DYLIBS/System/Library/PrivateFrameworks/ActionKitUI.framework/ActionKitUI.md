@@ -2,16 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/ActionKitUI.framework/ActionKitUI`
 
-```diff
+### Section Size Changes
 
- 5037.109.0.0.0
--  __TEXT.__text: 0x6b868
-+  __TEXT.__text: 0x6b850
-   __TEXT.__objc_methlist: 0x4e44
-   __TEXT.__const: 0x28d4
-   __TEXT.__dlopen_cstrs: 0x4b9
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6b868` | `0x6b850` | **`-0x18`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2507411b8 -> sub_2511901b8 : 100 -> 104
-~ sub_250746810 -> sub_251195814 : 440 -> 436
-~ sub_2507472b4 -> sub_2511962b4 : 644 -> 620
+~ sub_25060b1b8 -> sub_2510591b8 : 100 -> 104
+~ sub_250610810 -> sub_25105e814 : 440 -> 436
+~ sub_2506112b4 -> sub_25105f2b4 : 644 -> 620
 ```

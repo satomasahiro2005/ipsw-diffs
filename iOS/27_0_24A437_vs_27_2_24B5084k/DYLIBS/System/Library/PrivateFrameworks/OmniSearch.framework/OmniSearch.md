@@ -2,155 +2,77 @@
 
 > `/System/Library/PrivateFrameworks/OmniSearch.framework/OmniSearch`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5808b4` | `0x64671c` | **`+0xc5e68`** |
+| `__TEXT.__eh_frame` | `0x1e9e0` | `0x2477c` | **`+0x5d9c`** |
+| `__DATA.__bss` | `0x33c40` | `0x370b0` | **`+0x3470`** |
+| `__AUTH_CONST.__const` | `0x33ee9` | `0x371c1` | **`+0x32d8`** |
+| `__TEXT.__const` | `0x37a18` | `0x3acac` | **`+0x3294`** |
+| `__TEXT.__oslogstring` | `0x18043` | `0x1a7ae` | **`+0x276b`** |
+| `__TEXT.__unwind_info` | `0x15a50` | `0x17b68` | **`+0x2118`** |
+| `__TEXT.__swift5_typeref` | `0xe45d` | `0xfe31` | **`+0x19d4`** |
+| `__TEXT.__cstring` | `0x17f67` | `0x19400` | **`+0x1499`** |
+| `__DATA.__data` | `0x7730` | `0x8b58` | **`+0x1428`** |
+| `__TEXT.__swift5_fieldmd` | `0xcfbc` | `0xe0dc` | **`+0x1120`** |
+| `__AUTH.__data` | `0x3318` | `0x4070` | **`+0xd58`** |
+| `__DATA_CONST.__got` | `0x3a90` | `0x47a8` | **`+0xd18`** |
+| `__TEXT.__constg_swiftt` | `0x9838` | `0xa368` | **`+0xb30`** |
+| `__TEXT.__swift5_reflstr` | `0x936f` | `0x9e2f` | **`+0xac0`** |
+| `__AUTH_CONST.__auth_got` | `0x6678` | `0x6f80` | **`+0x908`** |
+| `__DATA_DIRTY.__data` | `0xbc60` | `0xb690` | **`-0x5d0`** |
+| `__TEXT.__swift5_capture` | `0xa16c` | `0xa70c` | **`+0x5a0`** |
+| `__DATA_CONST.__const` | `0x3a48` | `0x3f28` | **`+0x4e0`** |
+| `__DATA_DIRTY.__common` | `0x7e8` | `0x328` | **`-0x4c0`** |
+| `__TEXT.__swift_as_cont` | `0x1048` | `0x14c8` | **`+0x480`** |
+| `__TEXT.__swift_as_ret` | `0x9ec` | `0xc64` | **`+0x278`** |
+| `__TEXT.__swift_as_entry` | `0x900` | `0xb34` | **`+0x234`** |
+| `__TEXT.__swift5_proto` | `0x2cbc` | `0x2e68` | **`+0x1ac`** |
+| `__DATA_DIRTY.__bss` | `0x20580` | `0x20400` | **`-0x180`** |
+| `__TEXT.__swift5_types` | `0xbbc` | `0xd08` | **`+0x14c`** |
+| `__TEXT.__swift5_assocty` | `0x2590` | `0x2698` | **`+0x108`** |
+| `__AUTH_CONST.__objc_const` | `0x6710` | `0x6800` | **`+0xf0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2970` | `0x2a00` | **`+0x90`** |
+| `__AUTH_CONST.__cfstring` | `0x60` | `—` | **`-0x60`** |
+| `__TEXT.__swift5_builtin` | `0x244` | `0x294` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x1068` | `0x1020` | **`-0x48`** |
+| `__TEXT.__swift5_mpenum` | `0xb8` | `0xdc` | **`+0x24`** |
+| `__DATA.__common` | `0x658` | `0x668` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x270` | `0x278` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x8` | `—` | **`-0x8`** |
+| `__DATA_DIRTY.__objc_data` | `0x588` | `0x590` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x170` | `0x168` | **`-0x8`** |
+| `__DATA.__objc_ivar` | `0x4` | `—` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3600.56.32.11.5
--  __TEXT.__text: 0x54c910
--  __TEXT.__objc_methlist: 0x1068
--  __TEXT.__const: 0x37a18
--  __TEXT.__oslogstring: 0x18043
--  __TEXT.__swift5_typeref: 0xe45d
--  __TEXT.__swift5_capture: 0xa16c
--  __TEXT.__cstring: 0x17f67
--  __TEXT.__swift5_fieldmd: 0xcfbc
--  __TEXT.__constg_swiftt: 0x9838
--  __TEXT.__swift5_reflstr: 0x936f
--  __TEXT.__swift5_builtin: 0x244
--  __TEXT.__swift5_assocty: 0x2590
--  __TEXT.__swift5_protos: 0x170
--  __TEXT.__swift5_proto: 0x2cbc
--  __TEXT.__swift5_types: 0xbbc
--  __TEXT.__swift_as_entry: 0x900
--  __TEXT.__swift_as_ret: 0x9ec
--  __TEXT.__swift_as_cont: 0x1048
--  __TEXT.__swift5_mpenum: 0xb8
--  __TEXT.__unwind_info: 0x1abf0
--  __TEXT.__eh_frame: 0x1e9f8
 +3605.23.1.1.2
-+  __TEXT.__text: 0x609b68
-+  __TEXT.__objc_methlist: 0x1020
-+  __TEXT.__const: 0x3acac
-+  __TEXT.__swift5_typeref: 0xfe31
-+  __TEXT.__swift5_capture: 0xa70c
-+  __TEXT.__cstring: 0x19400
-+  __TEXT.__constg_swiftt: 0xa368
-+  __TEXT.__swift5_fieldmd: 0xe0dc
-+  __TEXT.__swift5_builtin: 0x294
-+  __TEXT.__swift5_reflstr: 0x9e2f
-+  __TEXT.__swift5_assocty: 0x2698
-+  __TEXT.__swift5_proto: 0x2e68
-+  __TEXT.__swift5_types: 0xd08
-+  __TEXT.__swift_as_entry: 0xb34
-+  __TEXT.__swift_as_ret: 0xc64
-+  __TEXT.__oslogstring: 0x1a7ae
-+  __TEXT.__swift_as_cont: 0x14c8
-+  __TEXT.__swift5_protos: 0x168
-+  __TEXT.__swift5_mpenum: 0xdc
-+  __TEXT.__unwind_info: 0x1d238
-+  __TEXT.__eh_frame: 0x247d4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3a48
--  __DATA_CONST.__objc_classlist: 0x270
-+  __DATA_CONST.__const: 0x3f28
-+  __DATA_CONST.__objc_classlist: 0x278
-   __DATA_CONST.__objc_catlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x140
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2970
-+  __DATA_CONST.__objc_selrefs: 0x2a00
-   __DATA_CONST.__objc_protorefs: 0xa8
--  __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__got: 0x3a90
--  __AUTH_CONST.__const: 0x33ee9
--  __AUTH_CONST.__cfstring: 0x60
--  __AUTH_CONST.__objc_const: 0x6710
--  __AUTH_CONST.__auth_got: 0x6678
-+  __DATA_CONST.__got: 0x47a8
-+  __AUTH_CONST.__const: 0x371c1
-+  __AUTH_CONST.__objc_const: 0x6800
-+  __AUTH_CONST.__auth_got: 0x6f80
-   __AUTH.__objc_data: 0x198
--  __AUTH.__data: 0x3318
--  __DATA.__objc_ivar: 0x4
--  __DATA.__data: 0x7730
--  __DATA.__common: 0x658
--  __DATA_DIRTY.__objc_data: 0x588
--  __DATA_DIRTY.__data: 0xbc60
--  __DATA_DIRTY.__bss: 0x20580
--  __DATA_DIRTY.__common: 0x7e8
-+  __AUTH.__data: 0x4070
-+  __DATA.__data: 0x8b58
-+  __DATA.__common: 0x668
-+  __DATA_DIRTY.__objc_data: 0x590
-+  __DATA_DIRTY.__data: 0xb690
-+  __DATA_DIRTY.__bss: 0x20400
-+  __DATA_DIRTY.__common: 0x328
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/Frameworks/EventKit.framework/EventKit
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/GeoToolbox.framework/GeoToolbox
 +  - /System/Library/Frameworks/HealthKit.framework/HealthKit
-   - /System/Library/Frameworks/Intents.framework/Intents
-   - /System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication
-   - /System/Library/Frameworks/MediaIntents.framework/MediaIntents
 
-   - /System/Library/Frameworks/_MediaIntents_AppIntents.framework/_MediaIntents_AppIntents
-   - /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
-   - /System/Library/PrivateFrameworks/AsyncAlgorithmsInternal.framework/AsyncAlgorithmsInternal
 +  - /System/Library/PrivateFrameworks/BackgroundSystemTasks.framework/BackgroundSystemTasks
-   - /System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams
+
 +  - /System/Library/PrivateFrameworks/CDMFoundation.framework/CDMFoundation
-   - /System/Library/PrivateFrameworks/CascadeSets.framework/CascadeSets
-   - /System/Library/PrivateFrameworks/CollectionsInternal.framework/CollectionsInternal
-   - /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation
 
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/FeatureStore.framework/FeatureStore
-   - /System/Library/PrivateFrameworks/FileBrowsingServices.framework/FileBrowsingServices
 +  - /System/Library/PrivateFrameworks/FitnessIntelligence.framework/FitnessIntelligence
-   - /System/Library/PrivateFrameworks/FlowToolsSnippetService.framework/FlowToolsSnippetService
-   - /System/Library/PrivateFrameworks/GenerativeAgents.framework/GenerativeAgents
-   - /System/Library/PrivateFrameworks/GenerativeFunctions.framework/GenerativeFunctions
 
-   - /System/Library/PrivateFrameworks/SiriNLUTypes.framework/SiriNLUTypes
-   - /System/Library/PrivateFrameworks/SiriOntology.framework/SiriOntology
-   - /System/Library/PrivateFrameworks/SiriUtilities.framework/SiriUtilities
 +  - /System/Library/PrivateFrameworks/SleepHealth.framework/SleepHealth
-   - /System/Library/PrivateFrameworks/SnippetKit.framework/SnippetKit
-   - /System/Library/PrivateFrameworks/Spotlight.framework/Spotlight
-   - /System/Library/PrivateFrameworks/SpotlightResources.framework/SpotlightResources
-   - /System/Library/PrivateFrameworks/SpotlightServices.framework/SpotlightServices
-   - /System/Library/PrivateFrameworks/SpotlightUIServices.framework/SpotlightUIServices
+
 -  - /System/Library/PrivateFrameworks/TCC.framework/TCC
-   - /System/Library/PrivateFrameworks/TokenGeneration.framework/TokenGeneration
-   - /System/Library/PrivateFrameworks/TokenGenerationCore.framework/TokenGenerationCore
-   - /System/Library/PrivateFrameworks/ToolKit.framework/ToolKit
 
-   - /usr/lib/swift/libswiftRegexBuilder.dylib
-   - /usr/lib/swift/libswiftSceneKit.dylib
-   - /usr/lib/swift/libswiftSpatial.dylib
 +  - /usr/lib/swift/libswiftSynchronization.dylib
-   - /usr/lib/swift/libswiftSystem.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 41430
--  Symbols:   70900
+-  Functions: 41431
+-  Symbols:   69846
 -  CStrings:  3392
-+  Functions: 44951
-+  Symbols:   76762
++  Functions: 44953
++  Symbols:   75690
 +  CStrings:  3666
- 
 Symbols:
 + _$s10AppIntents09_ExternalA4EnumMp
 + _$s10AppIntents09_ExternalA4EnumP30underlyingPersistentIdentifierSSvgZTq
@@ -7806,122 +7728,6 @@ Symbols:
 + _generic environment l
 + _get_enum_tag_for_layout_string 10OmniSearch13HealthMeasureO
 + _get_witness_table STRz10OmniSearch14WorkoutDetailsV7ElementRtzls18LazyFilterSequenceVyxGSTHPyHC
-+ _objc_msgSend$UUID
-+ _objc_msgSend$activeEnergyBurned
-+ _objc_msgSend$activeEnergyBurnedGoal
-+ _objc_msgSend$activityMoveMode
-+ _objc_msgSend$addEntriesFromDictionary:
-+ _objc_msgSend$aggregationStyle
-+ _objc_msgSend$andPredicateWithSubpredicates:
-+ _objc_msgSend$appleEffortScoreUnit
-+ _objc_msgSend$appleExerciseTime
-+ _objc_msgSend$appleMoveTime
-+ _objc_msgSend$appleMoveTimeGoal
-+ _objc_msgSend$appleStandHours
-+ _objc_msgSend$array
-+ _objc_msgSend$averageQuantity
-+ _objc_msgSend$backingResultSet
-+ _objc_msgSend$canonicalUnit
-+ _objc_msgSend$celsius
-+ _objc_msgSend$configurationByApplyingConfiguration:
-+ _objc_msgSend$configurationWithPaletteColors:
-+ _objc_msgSend$configurationWithPointSize:weight:
-+ _objc_msgSend$countUnit
-+ _objc_msgSend$dataCount
-+ _objc_msgSend$dateComponentsForCalendar:
-+ _objc_msgSend$dateInterval
-+ _objc_msgSend$degreeCelsiusUnit
-+ _objc_msgSend$degreeFahrenheitUnit
-+ _objc_msgSend$doubleValueForUnit:
-+ _objc_msgSend$dynamicCompactStringFromDate:
-+ _objc_msgSend$emitMessage:timestamp:
-+ _objc_msgSend$enumerateStatisticsFromDate:toDate:withBlock:
-+ _objc_msgSend$executeQuery:
-+ _objc_msgSend$exerciseTimeGoal
-+ _objc_msgSend$fahrenheit
-+ _objc_msgSend$feet
-+ _objc_msgSend$fetchAttributes
-+ _objc_msgSend$hasInput
-+ _objc_msgSend$hasLabel
-+ _objc_msgSend$hasUsoGraph
-+ _objc_msgSend$hasValue
-+ _objc_msgSend$identifiers
-+ _objc_msgSend$identifiersCount
-+ _objc_msgSend$initWithIdentifier:taskName:qos:workloadCategory:expectedMetricValue:itemsCompleted:totalItemCount:
-+ _objc_msgSend$initWithRed:green:blue:alpha:
-+ _objc_msgSend$initWithSampleType:predicate:limit:sortDescriptors:resultsHandler:
-+ _objc_msgSend$input
-+ _objc_msgSend$isPaused
-+ _objc_msgSend$kilocalorieUnit
-+ _objc_msgSend$kilocalories
-+ _objc_msgSend$kilometers
-+ _objc_msgSend$largeCalorieUnit
-+ _objc_msgSend$maximumQuantity
-+ _objc_msgSend$metadata
-+ _objc_msgSend$meterUnit
-+ _objc_msgSend$meters
-+ _objc_msgSend$metersPerSecond
-+ _objc_msgSend$miles
-+ _objc_msgSend$minimumQuantity
-+ _objc_msgSend$minuteUnit
-+ _objc_msgSend$minutes
-+ _objc_msgSend$mostRecentQuantity
-+ _objc_msgSend$objectAtIndexedSubscript:
-+ _objc_msgSend$orPredicateWithSubpredicates:
-+ _objc_msgSend$percentUnit
-+ _objc_msgSend$predicateForActivitySummariesBetweenStartDateComponents:endDateComponents:
-+ _objc_msgSend$predicateForObjectsWithUUIDs:
-+ _objc_msgSend$predicateForSamplesWithStartDate:endDate:options:
-+ _objc_msgSend$predicateForSamplesWithinDateInterval:options:
-+ _objc_msgSend$predicateForWorkoutsWithWorkoutActivityType:
-+ _objc_msgSend$reportProgressMetrics:error:
-+ _objc_msgSend$requestDatabaseAccessibilityAssertionForOwnerIdentifier:contextType:completion:
-+ _objc_msgSend$richTrailingTopText
-+ _objc_msgSend$screens
-+ _objc_msgSend$secondUnit
-+ _objc_msgSend$seconds
-+ _objc_msgSend$setAttributeSet:
-+ _objc_msgSend$setCalendar:
-+ _objc_msgSend$setCascadeDomainMetrics:
-+ _objc_msgSend$setCascadeItemType:
-+ _objc_msgSend$setCascadeSetCount:
-+ _objc_msgSend$setConnectionId:
-+ _objc_msgSend$setDomainId:
-+ _objc_msgSend$setFormatOptions:
-+ _objc_msgSend$setFormattedTextPieces:
-+ _objc_msgSend$setFuzzyMatchScore:
-+ _objc_msgSend$setIdA:
-+ _objc_msgSend$setIsEmphasized:
-+ _objc_msgSend$setItemsEnumeratedCount:
-+ _objc_msgSend$setLocalizedDateFormatFromTemplate:
-+ _objc_msgSend$setMatchedField:
-+ _objc_msgSend$setMaximumFractionDigits:
-+ _objc_msgSend$setRelatedAppBundleIdentifier:
-+ _objc_msgSend$setResultCount:
-+ _objc_msgSend$setStHybridLocalSearchContext:
-+ _objc_msgSend$setStringMatchStrategy:
-+ _objc_msgSend$setSymbolName:
-+ _objc_msgSend$setTrailingTopText:
-+ _objc_msgSend$sharedScheduler
-+ _objc_msgSend$shortMonthSymbols
-+ _objc_msgSend$standHoursGoal
-+ _objc_msgSend$statisticsForType:
-+ _objc_msgSend$sumQuantity
-+ _objc_msgSend$symbol
-+ _objc_msgSend$systemImageNamed:withConfiguration:
-+ _objc_msgSend$totalDistance
-+ _objc_msgSend$trailingTopText
-+ _objc_msgSend$unitDividedByUnit:
-+ _objc_msgSend$unitForObjectType:
-+ _objc_msgSend$unitPreferenceControllerWithHealthStore:completion:
-+ _objc_msgSend$unitString
-+ _objc_msgSend$usoGraph
-+ _objc_msgSend$wattUnit
-+ _objc_msgSend$watts
-+ _objc_msgSend$weekdaySymbols
-+ _objc_msgSend$workoutActivityType
-+ _objc_msgSend$workoutEvents
-+ _objc_msgSend$yards
 + _objc_retain_x9
 + _swift_asyncLet_get_throwing
 + _symbolic $s10OmniSearch07WorkoutB9ProvidingP
@@ -10663,104 +10469,6 @@ Symbols:
 - _notify_register_check
 - _objc_alloc
 - _objc_claimAutoreleasedReturnValue
-- _objc_msgSend$UTF8String
-- _objc_msgSend$_initRegistering
-- _objc_msgSend$additionalRecipients
-- _objc_msgSend$addresses
-- _objc_msgSend$alarmRecurrenceRule
-- _objc_msgSend$alarmTime
-- _objc_msgSend$alternateTitles
-- _objc_msgSend$authors
-- _objc_msgSend$canSnooze
-- _objc_msgSend$composer
-- _objc_msgSend$contactIdentifier
-- _objc_msgSend$containerTitle
-- _objc_msgSend$contentCatalog
-- _objc_msgSend$contributors
-- _objc_msgSend$copyReconstructedAdditionalRecipients
-- _objc_msgSend$copyReconstructedAuthors
-- _objc_msgSend$copyReconstructedHiddenAdditionalRecipients
-- _objc_msgSend$copyReconstructedPrimaryRecipients
-- _objc_msgSend$daysOfTheWeek
-- _objc_msgSend$didFire
-- _objc_msgSend$director
-- _objc_msgSend$fullyFormattedAddress
-- _objc_msgSend$genre
-- _objc_msgSend$hasSuggestedEdits
-- _objc_msgSend$hashtags
-- _objc_msgSend$hiddenAdditionalRecipients
-- _objc_msgSend$initWithHandle:displayName:contactIdentifier:
-- _objc_msgSend$isAlarmEnabled
-- _objc_msgSend$isCompleted
-- _objc_msgSend$isFavorited
-- _objc_msgSend$isFlagged
-- _objc_msgSend$isRead
-- _objc_msgSend$isUserHidden
-- _objc_msgSend$isUserPrivate
-- _objc_msgSend$latitude
-- _objc_msgSend$longitude
-- _objc_msgSend$messageRead
-- _objc_msgSend$observerToken
-- _objc_msgSend$organizations
-- _objc_msgSend$performers
-- _objc_msgSend$photosLocationKeywords
-- _objc_msgSend$photosMediaTypes
-- _objc_msgSend$photosPeople
-- _objc_msgSend$place
-- _objc_msgSend$postalAddressFromString:
-- _objc_msgSend$primaryRecipients
-- _objc_msgSend$publishers
-- _objc_msgSend$purchasedDate
-- _objc_msgSend$ratingDescription
-- _objc_msgSend$receivedDate
-- _objc_msgSend$releasedDate
-- _objc_msgSend$sentDate
-- _objc_msgSend$setAdditionalRecipients:
-- _objc_msgSend$setAlarmEnabled:
-- _objc_msgSend$setAlarmRecurrenceRule:
-- _objc_msgSend$setAlarmTime:
-- _objc_msgSend$setAlternateTitles:
-- _objc_msgSend$setAuthors:
-- _objc_msgSend$setComment:
-- _objc_msgSend$setCompleted:
-- _objc_msgSend$setCompletionDate:
-- _objc_msgSend$setComposer:
-- _objc_msgSend$setContainerTitle:
-- _objc_msgSend$setContentCatalog:
-- _objc_msgSend$setContributors:
-- _objc_msgSend$setCreator:
-- _objc_msgSend$setDirector:
-- _objc_msgSend$setDueDate:
-- _objc_msgSend$setFavorited:
-- _objc_msgSend$setFlagged:
-- _objc_msgSend$setGenre:
-- _objc_msgSend$setHashtags:
-- _objc_msgSend$setHiddenAdditionalRecipients:
-- _objc_msgSend$setMessageRead:
-- _objc_msgSend$setPerformers:
-- _objc_msgSend$setPhotosLocationKeywords:
-- _objc_msgSend$setPhotosMediaTypes:
-- _objc_msgSend$setPhotosPeople:
-- _objc_msgSend$setPlace:
-- _objc_msgSend$setPrimaryRecipients:
-- _objc_msgSend$setPublishers:
-- _objc_msgSend$setPurchasedDate:
-- _objc_msgSend$setRatingDescription:
-- _objc_msgSend$setRead:
-- _objc_msgSend$setReceivedDate:
-- _objc_msgSend$setRecipientNames:
-- _objc_msgSend$setReleasedDate:
-- _objc_msgSend$setSentDate:
-- _objc_msgSend$setSnooze:
-- _objc_msgSend$setSubject:
-- _objc_msgSend$setSuggestedEdits:
-- _objc_msgSend$setThreadIdentifier:
-- _objc_msgSend$setTriggerState:
-- _objc_msgSend$setUserHidden:
-- _objc_msgSend$setUserPrivate:
-- _objc_msgSend$stringWithFormat:
-- _objc_msgSend$threadIdentifier
-- _objc_msgSend$triggerState
 - _objc_retainAutorelease
 - _objc_retainAutoreleaseReturnValue
 - _os_log_create

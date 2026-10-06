@@ -2,14 +2,20 @@
 
 > `com.apple.driver.AppleMobileFileIntegrity`
 
-```diff
+### Section Size Changes
 
-   __TEXT.__cstring: 0xb8fb
-   __TEXT.__const: 0x1568
-   __TEXT.__os_log: 0x3a5
--  __TEXT_EXEC.__text: 0x29df8
-+  __TEXT_EXEC.__text: 0x2a748
-   __TEXT_EXEC.__auth_stubs: 0x10c0
-   __DATA.__data: 0x4f2
-   __DATA.__common: 0xf0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x29df8` | `0x2a748` | **`+0x950`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
+```diff
+CStrings:
++ "21:26:02"
+- "22:12:05"
 ```

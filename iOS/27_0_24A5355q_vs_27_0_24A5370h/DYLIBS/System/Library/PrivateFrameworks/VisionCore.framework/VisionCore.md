@@ -2,98 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/VisionCore.framework/VisionCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x40cb4` | `0x40d70` | **`+0xbc`** |
+| `__TEXT.__unwind_info` | `0x1740` | `0x1720` | **`-0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x405c` | `0x4060` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -10.0.33.0.0
--  __TEXT.__text: 0x40cb4 sha256:42726b8e6351a93c052faf2aba7f0aebd1e29ff4678d683c9c04f557ee2d0972
--  __TEXT.__objc_methlist: 0x326c sha256:c55d89f231037918d2be12d37498c24a149d09e0c0e248c8bfabadf5db34c167
--  __TEXT.__const: 0x420 sha256:1f640ae9704ea44f992ec27f470d6ae7723e8633962fa6e595221c2f99a26ca9
 +10.0.34.0.0
-+  __TEXT.__text: 0x40d70 sha256:4a9afe182bf239bfa61ea43e7a64fa00a2f9bf3f2496283d406526bac07ba382
-+  __TEXT.__objc_methlist: 0x326c sha256:4f725e43007ba12b86bbd9b4163dde9e621925a7d4e293009ae3d36c1eed63b3
-+  __TEXT.__const: 0x420 sha256:71d971fec0687c8468a1bcd5d2bde430c05ea5ac5c2fd94136fd9e6c57720032
-   __TEXT.__dlopen_cstrs: 0x228 sha256:e8a559f8ec529dddeec83ef3e3f24d032ab4b1deb9741bff7e5bf19814f05f2a
--  __TEXT.__constg_swiftt: 0x184 sha256:872dce87dc0f0d427374aeafb19cdd304cb12bfa61ed850073f59623472a4ad7
--  __TEXT.__swift5_typeref: 0x9a sha256:f808f6d73284686712b5965a19f74a453b32933315e48c9f4c4fb2c9a0ea7c90
-+  __TEXT.__constg_swiftt: 0x184 sha256:454ae212cf0146ec2d405c283e41f7d3ca1ec825b146c82f153b6475543bfbca
-+  __TEXT.__swift5_typeref: 0x9a sha256:b121b273fd91913da45a8b3f1332c113f9915f2d06c9bc1c3cf68eea7b379152
-   __TEXT.__swift5_reflstr: 0x51 sha256:e548570f47e694a855466b353a93abd3dcff2d13d986220cbbc7f0858a5008f5
-   __TEXT.__swift5_fieldmd: 0xac sha256:8344b6b77caa37f114edce667483dab77b4fd7095e9092c03d6ee9c4d9846618
-   __TEXT.__swift5_proto: 0xc sha256:b6d8f357f4729373844c0b38e572508b2dbf36e0f214f0c989cd84e487eb7db7
-   __TEXT.__swift5_types: 0x20 sha256:c9820772edd87f064ae3dc185fed65d4f72722433a0ba7439b21f410bdb5ce43
-   __TEXT.__swift5_builtin: 0x14 sha256:f91d70abfe4b8f0ec5f896f49814e1bf12de929d9166681c801ac7a053f210a1
-   __TEXT.__swift5_protos: 0x4 sha256:8a33adeb1d80c91f3281215a07f6ab18e7ea0f0bc1c33337dad2143775005765
--  __TEXT.__gcc_except_tab: 0x405c sha256:f14919de7862de9725364c7d19d2bbf29623fa72e0cfc1a2769f00ec1d489a69
--  __TEXT.__cstring: 0x5865 sha256:19fe5bfbde474aba0358ba006764ae5ea8d019f0fd5b402d2ff87e26ff6dd75f
-+  __TEXT.__gcc_except_tab: 0x4060 sha256:8cab345e4be9581a8dfbd1a37868eee04a51b1bcc78fb5d40b1555d427eaf557
-+  __TEXT.__cstring: 0x5865 sha256:cd8abdc350853d9835e5f540211a7c52fea6cf2d76fffaebe8e29e1b034e2cc1
-   __TEXT.__oslogstring: 0x1d5 sha256:73e9c940ec58466148cbc1746f71d2551810910416d2f5237a91b23d079007a8
--  __TEXT.__unwind_info: 0x1740 sha256:132a341d39f56b5077a0280072ce40b4a35b1a302b496101abdf7d00ed9df68b
--  __TEXT.__eh_frame: 0x78 sha256:e4f8449188d509b15a5f666e82f2efc5992b6837d59b474f2214f273c4f24585
-+  __TEXT.__unwind_info: 0x1720 sha256:f53c91a1afb6fd42c663c60790329715a6e0ec56aa609d7f63a39e1d300a8956
-+  __TEXT.__eh_frame: 0x78 sha256:ad416ebb88b07649e5421a40cc56f32f3b4307df6ed432f0c75316d047306acc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9c8 sha256:6a972b7da7f534a188283d9d0f53f8d07d691d34e96fe863547779b29dcca2bd
--  __DATA_CONST.__objc_classlist: 0x298 sha256:c946861e91799ba251b3f39f2616ab3125111faf825c929152abd7f76ffd9d73
--  __DATA_CONST.__objc_catlist: 0x30 sha256:460059c5be84271cfef042ce03deee8b8f2da08ab23bd0d072b99fe5655fac01
--  __DATA_CONST.__objc_protolist: 0x50 sha256:0f08438a5cdb9dde4d78090f84b4ebf2c9db4675cb5ad1e3d46352421472f22c
-+  __DATA_CONST.__const: 0x9c8 sha256:fc377dbba6f3112c7a04329feeb31375e50206d80f4684872fd04da4dacfa854
-+  __DATA_CONST.__objc_classlist: 0x298 sha256:1aa389dfe6babbe50246dd27b5f06dae688e87477fc46977ac5ddfee99698c5d
-+  __DATA_CONST.__objc_catlist: 0x30 sha256:aba85947b7240815219350bbde7462f6963999a99a0f968dd287bcf844a4f1bd
-+  __DATA_CONST.__objc_protolist: 0x50 sha256:55866d85c2f1e6fff2974874f8d3e2f824882ebbb04e500bcdbceec91ea23fd8
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__weak_got: 0x10 sha256:db089a9946ee2f440f1454b6bd081bc906524b106b3b9bd5745c567d00425fed
--  __DATA_CONST.__objc_selrefs: 0x1d20 sha256:d4659a60aa8e5c99716147b77958f1565c74fbce3779fc4178c126ceed854b27
--  __DATA_CONST.__objc_superrefs: 0x200 sha256:2bf1970407ce8b57154c3bd560757f1147a34d7cc0e5bf0adde190941d4dbbf4
--  __DATA_CONST.__objc_arraydata: 0x158 sha256:99bc781a0b4274a786eceb76c0d0aac86dc6cdeef7490245d4d40251d1a30bae
--  __DATA_CONST.__got: 0x5e0 sha256:5735f0716633b12ed658d37e76497c5f80a19e690227edc7e0a14a40930ff79d
--  __AUTH_CONST.__const: 0x580 sha256:3d9c89997584e1060019f47767fb1a569df1abe2b1f23a76d89793a2a66f8951
--  __AUTH_CONST.__cfstring: 0x47e0 sha256:427d2ecd8566f87382f2d90f954fe0e32ecdea18a1d13f282b6dd0fc1b9fa58a
--  __AUTH_CONST.__objc_const: 0x6978 sha256:861f83d1ca1240f4addcc247d808da23db4580f7301ddb96195857530ba7d428
--  __AUTH_CONST.__weak_auth_got: 0x18 sha256:9301580f2a4c506b3a281d68e0e22bffb435cbb497ce8c36f9bdbf987996a481
--  __AUTH_CONST.__objc_arrayobj: 0xa8 sha256:c4bf692909352374589090cf5ea645276c02ed29c2a737e262059d7dd53e8cab
--  __AUTH_CONST.__objc_intobj: 0x4e0 sha256:21cac18bf8a483d3e699530a1801678f16d26e7c8868da45402e7dddd7a83b2a
--  __AUTH_CONST.__objc_dictobj: 0x78 sha256:1f9fe6cba42d40c8e65a3406e4a2d178a4a763812ffdb2429404fd4e2a48073f
-+  __DATA_CONST.__weak_got: 0x10 sha256:c9b00cf8e5fdc159d5e0657836ccec0cbd1eddc62a50f4b3c9f634c56153dbb7
-+  __DATA_CONST.__objc_selrefs: 0x1d20 sha256:ca4e12ce38ddaa2213cb84efa6abdb6ff31f74e27be24ca16adc33b8cab0b3b8
-+  __DATA_CONST.__objc_superrefs: 0x200 sha256:ead61086db991b0acc90714e7db652536019082bf007304902851becdd0a729f
-+  __DATA_CONST.__objc_arraydata: 0x158 sha256:d58a7fc1cb94d41131e4856e9bef2a8610d15661c9155ade48b01b23f2a06034
-+  __DATA_CONST.__got: 0x5e0 sha256:35c23b37e7b6b2e213316ecedae7c9a1d25eb164c720315accedbf685eedce08
-+  __AUTH_CONST.__const: 0x580 sha256:9dbce502a80aea39a64c54def63cbf5e867817fbf6e6e9d4c59ed0fbcb3c436f
-+  __AUTH_CONST.__cfstring: 0x47e0 sha256:50950f3983f6166afe8bd4f89fbf619a50d643ec450c477a671302daab49a25e
-+  __AUTH_CONST.__objc_const: 0x6978 sha256:4a9459152890d0694a42dcde91e28f2091d690381699bb121e2e0e118daf1851
-+  __AUTH_CONST.__weak_auth_got: 0x18 sha256:29088a447bd737ef9fbfae413fb96a052bde0411bc28166e36dc698bd3ad3621
-+  __AUTH_CONST.__objc_intobj: 0x4e0 sha256:268104689e7d084ef3b702770797147155dd76c12a98f4bc17da22e530bcde79
-+  __AUTH_CONST.__objc_arrayobj: 0xa8 sha256:f31f7bc59a22c642aecf2932c75ab6e084f808a821d1807d883100ae58b499de
-+  __AUTH_CONST.__objc_dictobj: 0x78 sha256:bd1da3c47840a8ed9ea9f215f8eb5aea8d0967cda56d3f03579c1161913f02ab
-   __AUTH_CONST.__auth_got: 0xbb8 sha256:c81ca5eda5947c7826ad046fdbdc2a25a846b835a6c34c237cc8b3afbe9ec6cc
--  __AUTH.__objc_data: 0x500 sha256:fcff68106b822109a8279ca13f4815d33de5aa9cf824f7ae72e29d73f330ee94
--  __AUTH.__data: 0x118 sha256:df2b11bac2e2e73f996450f105a6138247e96c9224c48edc0136a1d57043ad8b
--  __DATA.__objc_ivar: 0x41c sha256:17adda661100a441b91ad4cc4b0f08d9ec580964e6e7339124fc53dde1ef8db3
--  __DATA.__data: 0x400 sha256:594df3b125b0637e33ae1e85deef48a0fd7ef57a7fea7b4c138f58f2b95cd752
-+  __AUTH.__objc_data: 0x500 sha256:21bdfe876462405bf0cd17efef30910ddb2036031ac6c30e6e47e31ff94ae75b
-+  __AUTH.__data: 0x118 sha256:7c61c0d015d7c998b84350f9dc16ef556f24d4daed68a56ad6a2d9b3aaf69894
-+  __DATA.__objc_ivar: 0x41c sha256:3cbc74373d73ca9ecb506957624547c4ea6a40005b9ae526248d0c0a8b74e596
-+  __DATA.__data: 0x400 sha256:011285b6f555279b892f426733b8f93aa914a1c2a5e8b1bac5664c8ebadddf77
-   __DATA.__bss: 0x2a0 sha256:f792b7f860bb94e55760c0daa727d58d13ba96276a2b52f29a645c8e08e73ec1
--  __DATA_DIRTY.__objc_data: 0x14f0 sha256:6b90c69624ce6a296e6a247555b3e80d7422fcf7ebc41e6d66044b00ad39faf8
-+  __DATA_DIRTY.__objc_data: 0x14f0 sha256:f958ed6b555b17e7d407ab2f15be1f804422b906f29dca86884e0c04e8e66d71
-   __DATA_DIRTY.__data: 0x8 sha256:12a3ae445661ce5dee78d0650d33362dec29c4f82af05e7e57fb595bbbacf0ca
-   __DATA_DIRTY.__bss: 0xb8 sha256:d81bfb50e59a9abbe66f6ae0c6b45c7b9c0bc6eead2cf982118ac4d62b6ffeda
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: 8DAB425F-202C-398C-BC45-97735D606E28
-+  UUID: C3FA7D5B-0BE8-3D72-9B01-BA43B3491952
-   Functions: 1281
-   Symbols:   5079
-   CStrings:  1285
 Symbols:
 + GCC_except_table1
 + GCC_except_table1006
@@ -274,16 +196,6 @@ Symbols:
 + GCC_except_table986
 + GCC_except_table988
 + GCC_except_table992
-+ _ANSTKitLibrary.1305
-+ _ANSTKitLibrary.1476
-+ _ANSTKitLibrary.2503
-+ _ANSTKitLibrary.2595
-+ _ANSTKitLibrary.3072
-+ _ANSTKitLibraryCore.frameworkLibrary.1308
-+ _ANSTKitLibraryCore.frameworkLibrary.1479
-+ _ANSTKitLibraryCore.frameworkLibrary.2506
-+ _ANSTKitLibraryCore.frameworkLibrary.2598
-+ _ANSTKitLibraryCore.frameworkLibrary.3075
 + __ZNKSt3__111__copy_implclB9fqe220106IPDhS2_NS_20back_insert_iteratorINS_6vectorIDhNS_9allocatorIDhEEEEEELi0EEENS_4pairIT_T1_EESA_T0_SB_
 + __ZNKSt3__111__copy_implclB9fqe220106IPmS2_NS_20back_insert_iteratorINS_6vectorImNS_9allocatorImEEEEEELi0EEENS_4pairIT_T1_EESA_T0_SB_
 + __ZNSt12length_errorC1B9fqe220106EPKc
@@ -333,48 +245,6 @@ Symbols:
 + __ZNSt3__16vectorImNS_9allocatorImEEE20__throw_out_of_rangeB9fqe220106Ev
 + __ZNSt3__17__sort5B9fqe220106INS_17_ClassicAlgPolicyERZ57-[VisionCoreValueConfidenceCurve _finalizeInitialization]E3$_0P30VisionCoreValueConfidencePointLi0EEEvT1_S6_S6_S6_S6_T0_
 + __ZSt28__throw_bad_array_new_lengthB9fqe220106v
-+ ___ANSTKitLibraryCore_block_invoke.1309
-+ ___ANSTKitLibraryCore_block_invoke.1480
-+ ___ANSTKitLibraryCore_block_invoke.2507
-+ ___ANSTKitLibraryCore_block_invoke.2599
-+ ___ANSTKitLibraryCore_block_invoke.3076
-+ ___Block_byref_object_copy_.3531
-+ ___Block_byref_object_dispose_.3532
-+ ___block_literal_global.1045
-+ ___block_literal_global.1247
-+ ___block_literal_global.1390
-+ ___block_literal_global.1550
-+ ___block_literal_global.1685
-+ ___block_literal_global.209
-+ ___block_literal_global.2102
-+ ___block_literal_global.2159
-+ ___block_literal_global.222
-+ ___block_literal_global.2457
-+ ___block_literal_global.2780
-+ ___block_literal_global.3147
-+ ___block_literal_global.3384
-+ ___block_literal_global.3547
-+ ___block_literal_global.3589
-+ ___block_literal_global.4243
-+ ___block_literal_global.4326
-+ ___block_literal_global.4400
-+ ___block_literal_global.4409
-+ ___block_literal_global.527
-+ ___getANSTViSegHQInferenceConfigurationClass_block_invoke.2636
-+ ___getANSTViSegHQInitialFrameInferenceDescriptorClass_block_invoke.2607
-+ ___getANSTViSegHQRegularFrameInferenceDescriptorClass_block_invoke.2604
-+ ___getANSTViSegHQUpdateFrameInferenceDescriptorClass_block_invoke.2594
-+ _audit_stringANSTKit.1312
-+ _audit_stringANSTKit.1483
-+ _audit_stringANSTKit.2510
-+ _audit_stringANSTKit.2602
-+ _audit_stringANSTKit.3079
-+ _getANSTViSegHQInferenceConfigurationClass.softClass.2635
-+ _getANSTViSegHQInitialFrameInferenceDescriptorClass.softClass.2606
-+ _getANSTViSegHQRegularFrameInferenceDescriptorClass.2587
-+ _getANSTViSegHQRegularFrameInferenceDescriptorClass.softClass.2603
-+ _getANSTViSegHQUpdateFrameInferenceDescriptorClass.2588
-+ _getANSTViSegHQUpdateFrameInferenceDescriptorClass.softClass.2593
 - GCC_except_table10
 - GCC_except_table1000
 - GCC_except_table1001
@@ -554,16 +424,6 @@ Symbols:
 - GCC_except_table990
 - GCC_except_table991
 - GCC_except_table998
-- _ANSTKitLibrary.1014
-- _ANSTKitLibrary.1378
-- _ANSTKitLibrary.1551
-- _ANSTKitLibrary.2980
-- _ANSTKitLibrary.3533
-- _ANSTKitLibraryCore.frameworkLibrary.1015
-- _ANSTKitLibraryCore.frameworkLibrary.1381
-- _ANSTKitLibraryCore.frameworkLibrary.1554
-- _ANSTKitLibraryCore.frameworkLibrary.2983
-- _ANSTKitLibraryCore.frameworkLibrary.3536
 - __ZNKSt3__111__copy_implclB9fqe220100IPDhS2_NS_20back_insert_iteratorINS_6vectorIDhNS_9allocatorIDhEEEEEELi0EEENS_4pairIT_T1_EESA_T0_SB_
 - __ZNKSt3__111__copy_implclB9fqe220100IPmS2_NS_20back_insert_iteratorINS_6vectorImNS_9allocatorImEEEEEELi0EEENS_4pairIT_T1_EESA_T0_SB_
 - __ZNSt12length_errorC1B9fqe220100EPKc
@@ -613,47 +473,4 @@ Symbols:
 - __ZNSt3__16vectorImNS_9allocatorImEEE20__throw_out_of_rangeB9fqe220100Ev
 - __ZNSt3__17__sort5B9fqe220100INS_17_ClassicAlgPolicyERZ57-[VisionCoreValueConfidenceCurve _finalizeInitialization]E3$_0P30VisionCoreValueConfidencePointLi0EEEvT1_S6_S6_S6_S6_T0_
 - __ZSt28__throw_bad_array_new_lengthB9fqe220100v
-- ___ANSTKitLibraryCore_block_invoke.1016
-- ___ANSTKitLibraryCore_block_invoke.1382
-- ___ANSTKitLibraryCore_block_invoke.1555
-- ___ANSTKitLibraryCore_block_invoke.2984
-- ___ANSTKitLibraryCore_block_invoke.3537
-- ___Block_byref_object_copy_.3434
-- ___Block_byref_object_dispose_.3435
-- ___block_literal_global.1114
-- ___block_literal_global.1318
-- ___block_literal_global.1465
-- ___block_literal_global.1625
-- ___block_literal_global.1761
-- ___block_literal_global.2181
-- ___block_literal_global.2238
-- ___block_literal_global.2537
-- ___block_literal_global.258
-- ___block_literal_global.2681
-- ___block_literal_global.271
-- ___block_literal_global.3055
-- ___block_literal_global.3291
-- ___block_literal_global.3449
-- ___block_literal_global.3491
-- ___block_literal_global.4230
-- ___block_literal_global.4313
-- ___block_literal_global.4387
-- ___block_literal_global.4396
-- ___block_literal_global.586
-- ___getANSTViSegHQInferenceConfigurationClass_block_invoke.3574
-- ___getANSTViSegHQInitialFrameInferenceDescriptorClass_block_invoke.3545
-- ___getANSTViSegHQRegularFrameInferenceDescriptorClass_block_invoke.3542
-- ___getANSTViSegHQUpdateFrameInferenceDescriptorClass_block_invoke.3532
-- _audit_stringANSTKit.1018
-- _audit_stringANSTKit.1385
-- _audit_stringANSTKit.1558
-- _audit_stringANSTKit.2987
-- _audit_stringANSTKit.3540
-- _getANSTViSegHQInferenceConfigurationClass.softClass.3573
-- _getANSTViSegHQInitialFrameInferenceDescriptorClass.softClass.3544
-- _getANSTViSegHQRegularFrameInferenceDescriptorClass.3525
-- _getANSTViSegHQRegularFrameInferenceDescriptorClass.softClass.3541
-- _getANSTViSegHQUpdateFrameInferenceDescriptorClass.3526
-- _getANSTViSegHQUpdateFrameInferenceDescriptorClass.softClass.3531
-
 ```

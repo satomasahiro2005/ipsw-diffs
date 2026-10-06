@@ -2,91 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/CDMFoundation.framework/CDMFoundation`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_floatobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x274b10` | `0x274fcc` | **`+0x4bc`** |
+| `__TEXT.__oslogstring` | `0x1dcdf` | `0x1dd56` | **`+0x77`** |
+| `__TEXT.__cstring` | `0x1ba02` | `0x1ba45` | **`+0x43`** |
+| `__TEXT.__objc_methlist` | `0x8654` | `0x8664` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x53f0` | `0x53f8` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -3600.31.8.0.0
--  __TEXT.__text: 0x274b10
--  __TEXT.__objc_methlist: 0x8654
 +3600.31.10.0.0
-+  __TEXT.__text: 0x274fcc
-+  __TEXT.__objc_methlist: 0x8664
-   __TEXT.__const: 0xd370
-   __TEXT.__swift5_typeref: 0x423c
-   __TEXT.__swift5_fieldmd: 0x3d80
-   __TEXT.__constg_swiftt: 0x55d4
-   __TEXT.__swift5_protos: 0x98
--  __TEXT.__cstring: 0x1ba02
-+  __TEXT.__cstring: 0x1ba45
-   __TEXT.__swift5_types: 0x574
-   __TEXT.__swift5_proto: 0x9ac
-   __TEXT.__swift5_reflstr: 0x306a
--  __TEXT.__oslogstring: 0x1dcdf
-+  __TEXT.__oslogstring: 0x1dd56
-   __TEXT.__swift5_assocty: 0x438
-   __TEXT.__swift5_capture: 0x196c
-   __TEXT.__swift5_builtin: 0xf0
 
-   __DATA_CONST.__objc_protolist: 0x148
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x53f0
-+  __DATA_CONST.__objc_selrefs: 0x53f8
-   __DATA_CONST.__objc_protorefs: 0x88
-   __DATA_CONST.__objc_superrefs: 0x408
-   __DATA_CONST.__objc_arraydata: 0x220
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12838
--  Symbols:   11203
+-  Symbols:   8865
 -  CStrings:  4587
 +  Functions: 12839
-+  Symbols:   11206
++  Symbols:   8866
 +  CStrings:  4589
- 
 Symbols:
 + +[CDMBaseSpanMatchService trimTokenizerResponses:toMaxCharacters:]
 + GCC_except_table1056
@@ -185,8 +123,6 @@ Symbols:
 + GCC_except_table928
 + GCC_except_table932
 + GCC_except_table987
-+ _objc_msgSend$setResponses:
-+ _objc_msgSend$trimTokenizerResponses:toMaxCharacters:
 - GCC_except_table1055
 - GCC_except_table1058
 - GCC_except_table1064

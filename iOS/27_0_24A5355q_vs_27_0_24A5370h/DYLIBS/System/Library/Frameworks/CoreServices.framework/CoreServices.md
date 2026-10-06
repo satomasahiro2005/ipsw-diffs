@@ -2,104 +2,44 @@
 
 > `/System/Library/Frameworks/CoreServices.framework/CoreServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c2910` | `0x1c52fc` | **`+0x29ec`** |
+| `__TEXT.__cstring` | `0x28615` | `0x28bea` | **`+0x5d5`** |
+| `__TEXT.__oslogstring` | `0x15cdf` | `0x16208` | **`+0x529`** |
+| `__TEXT.__gcc_except_tab` | `0x28c28` | `0x29128` | **`+0x500`** |
+| `__AUTH_CONST.__cfstring` | `0x17760` | `0x178c0` | **`+0x160`** |
+| `__TEXT.__unwind_info` | `0xc418` | `0xc560` | **`+0x148`** |
+| `__TEXT.__objc_methlist` | `0xe00c` | `0xe13c` | **`+0x130`** |
+| `__AUTH_CONST.__objc_const` | `0x154a0` | `0x155b8` | **`+0x118`** |
+| `__AUTH_CONST.__const` | `0x3ad0` | `0x3b90` | **`+0xc0`** |
+| `__DATA_CONST.__const` | `0x7370` | `0x73f0` | **`+0x80`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6478` | `0x64f8` | **`+0x80`** |
+| `__DATA.__bss` | `0xf50` | `0xfb0` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0x33e0` | `0x3430` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x1930` | `0x1960` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0xaf8` | `0xb10` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0xbcc` | `0xbd8` | **`+0xc`** |
+| `__AUTH.__data` | `0x320` | `0x328` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x7a8` | `0x7b0` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x638` | `0x640` | **`+0x8`** |
+| `__DATA_DIRTY.__bss` | `0x8d0` | `0x8c8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1498.0.0.0.0
--  __TEXT.__text: 0x1c2910 sha256:4052a89dc12f64c81a30223c4294641e29d2541eb670b1ab974e7738a08e2d57
--  __TEXT.__delay_helper: 0x1b8 sha256:4e1f1841c24b909a71118d660854965cb8fde12da728f760f4f863aa4856de29
--  __TEXT.__lazy_helpers: 0xa8 sha256:9e61c6614501dd0e73c37db64f7ab0d4823996d998aff637136574064282fb32
--  __TEXT.__objc_methlist: 0xe00c sha256:4d34c85514bd969b852542819ad613663140ffa0a5c92a0258ca9a035df44653
 +1504.0.0.0.0
-+  __TEXT.__text: 0x1c52fc sha256:d2736f7d4f8f1b5cea91eac44e1c2f7db30c1ee775b5e53f7ac6322115aa7dde
-+  __TEXT.__delay_helper: 0x1b8 sha256:8bf42bce98b803740ad16c4f96a03c97dd0ab73291637549c64f0ab9ee98257f
-+  __TEXT.__lazy_helpers: 0xa8 sha256:bd4c0110962108e173c91ed815f9d212e805e9f1dc5678488d14b43350d3c569
-+  __TEXT.__objc_methlist: 0xe13c sha256:cb221165531040e58735d4198ad33d25f9c7eaa5a6846244ef0de8c4471517a4
-   __TEXT.__const: 0x950 sha256:9a8474dc0edf2b8db9f064f72c18e2677289a9a52081dcb37ea9fe34f9c7be0d
--  __TEXT.__cstring: 0x28615 sha256:f474b9a7156aa1153d597652ae4bf277c8210fc522af10d00fbb28c702cb930f
--  __TEXT.__oslogstring: 0x15cdf sha256:a3655e762d832888a684b8791b36ada0a6d8b7575980a51b2e0d100beebe769a
--  __TEXT.__gcc_except_tab: 0x28c28 sha256:7a657f6a1432c16a5555c40aba775c1ae460e1c2cd88c2d6380b1879c8eaf9a6
-+  __TEXT.__cstring: 0x28bea sha256:d07abf4b6df83c04de8dd83d4a1a7d362f9e72899391114d1d8898e0fd5caae2
-+  __TEXT.__oslogstring: 0x16208 sha256:af4fa11e48e517f2c40d9214e25a7926d811374db4562e80506c6aadba72c6b1
-+  __TEXT.__gcc_except_tab: 0x29128 sha256:36ec61621103b131f5a28122a91f4efa25a5b10d0ef8de618944c1d61c9a1be3
-   __TEXT.__ustring: 0x23c sha256:e7df193c71fe7537aacf45ede999d4bf43223dcf4483e88976519b4d708ce42f
--  __TEXT.__unwind_info: 0xc418 sha256:d5d1168f52bc1599b850cf0281238e8be91ccd03e9eb33b1fc4cd8ead42db655
-+  __TEXT.__unwind_info: 0xc560 sha256:0ee799b4c4eca8e2ffd4dc6d8612b12d8a64ea10cdf003e436ab76018877a8f7
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7370 sha256:41168b7dc667da7e614e576171b40bfbd85b938e5c6b8912feb0adddaf670ac0
--  __DATA_CONST.__objc_classlist: 0x7a8 sha256:f79dece16e58b13e8a40db078a41685ba6c99a4b392f86069964bb8a46fd3040
--  __DATA_CONST.__objc_catlist: 0x78 sha256:e206349dbc4d9b03e161c433ccb5972e13cf21d55d87d645dde9f54bf34ab69a
--  __DATA_CONST.__objc_protolist: 0x180 sha256:f5919cb5560423c492f83f8ff05011c81869f8aff71055dc45b0dd121cea7686
-+  __DATA_CONST.__const: 0x73f0 sha256:e868f7a00cc7b7dd70323658ededa51810b0195d0e764fd60038e089c2b0cb52
-+  __DATA_CONST.__objc_classlist: 0x7b0 sha256:5e849b256074b68b36fd5d551a03d244ef3507878858bb19302915fd44fde4a4
-+  __DATA_CONST.__objc_catlist: 0x78 sha256:e65e3c8fb83009c2fc9f0627b471a8b026d222f0024932731958749d32720ba1
-+  __DATA_CONST.__objc_protolist: 0x180 sha256:7018206fe4ee2d5651fb11028e95bb8d48767ce7fbb34f259a7c35c36c6c0074
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__objc_selrefs: 0x6478 sha256:d6b84ba7a84c258b8d17812e0a3f1a73b0ac374abaad2b5722d05e87d2b219ab
--  __DATA_CONST.__objc_protorefs: 0x90 sha256:b46480f38401e388a181c91f580fd85f34b363e9ef7f29c8749a34ada355d439
--  __DATA_CONST.__objc_superrefs: 0x638 sha256:b8e7aea9418737aa069d13180feba6f562c641b70ef4028d692200810057502d
--  __DATA_CONST.__objc_arraydata: 0x990 sha256:1dd3adc92c1d451402c9b3d2db6d5666b1b724e02c4a5649bb8f294907635546
--  __DATA_CONST.__got: 0xaf8 sha256:b268f4e681833b2cbb074cedb97aa4afd6b8f20b12e7d5cdbb05ed1343ef1e0e
--  __AUTH_CONST.__const: 0x3ad0 sha256:1b2159dec42e096a8e127500a1a5dea5e004e612e798fe7ae1b2f69c0a07b015
--  __AUTH_CONST.__cfstring: 0x17760 sha256:e3c1410f110c06fa7343ac5cb522e8af09f2667327714d6c47b4ee9ef55bf153
--  __AUTH_CONST.__objc_const: 0x154a0 sha256:6ed96afb57304ca6903c3627ededd1d78be1abf7a36cb89e391515a9a36634ac
--  __AUTH_CONST.__weak_auth_got: 0x18 sha256:9301580f2a4c506b3a281d68e0e22bffb435cbb497ce8c36f9bdbf987996a481
--  __AUTH_CONST.__lazy_load_got: 0x10 sha256:4a8d00ded9ee7ed4774c955a43008e8585172dc97d6de973df004e850bb9a38c
--  __AUTH_CONST.__objc_intobj: 0x7f8 sha256:49d04dff189dcd7d34bae7ae093e295355c567f009aca48b0c66eb04a17f2603
--  __AUTH_CONST.__objc_dictobj: 0x50 sha256:8415bcd9c3d20f8446728124615e19af17c7acd6bac938feb0372cce87919c7f
--  __AUTH_CONST.__objc_arrayobj: 0x150 sha256:7192391a231dccfe7e02ae358e8d71f1627c7610b18ba572be1f7234453564f6
--  __AUTH_CONST.__auth_got: 0x1930 sha256:40d1649ed3f8471c82774639e4d4dcbcd731a609c63c4e833edfa4d515c167bc
--  __AUTH.__objc_data: 0x33e0 sha256:2ca6bd5606c4d89be0aa1245144b1ee40d232907b7c7f0fa3721ff0b96d37b8a
--  __AUTH.__data: 0x320 sha256:60ec9e0cd3f89ae69070e35abe36d00ea3abf8c25c2b2f4a47e66001acf67f07
--  __DATA.__objc_ivar: 0xbcc sha256:014ef478e9c77fdf3064a52b7d7a02bd003545ef031dd7656d6b451778f08604
--  __DATA.__data: 0x15c8 sha256:00704dbd89811f5369f59149a36359aa851e24ef277ad930c3746a2152945836
--  __DATA.__bss: 0xf50 sha256:68759c7aeaec08736341a86049846fad33738a8fe44bda6057f5f5d4a9730901
-+  __DATA_CONST.__objc_selrefs: 0x64f8 sha256:1b4b675011e2e13c14aed8ed690b891db26c65234d573397a53d1a095db9fbb7
-+  __DATA_CONST.__objc_protorefs: 0x90 sha256:a23f8aa85483d2da6c4f9e801750a569696c146f0f4f744208041c66849595d7
-+  __DATA_CONST.__objc_superrefs: 0x640 sha256:8dd228f6394d1e796f663e795e4b16c5bd5811ff1f934742eb5f1ecd9876c238
-+  __DATA_CONST.__objc_arraydata: 0x990 sha256:4065820982edfad7c4cb84b2d44cace01a00476ca8a167067a238fb160c2ba77
-+  __DATA_CONST.__got: 0xb10 sha256:64d90708adc020e112f4362d2de6f07ba9e1b198135285ab561731ab94f45ccf
-+  __AUTH_CONST.__const: 0x3b90 sha256:cb9ccf44b8bb041c098d8fef2bc7497de066a9b1fa5afc65ce559ce287c8e656
-+  __AUTH_CONST.__cfstring: 0x178c0 sha256:c3e15553bca30f68987706db1a9ec8c38cdedf7166b9cca8d427670bdb275d16
-+  __AUTH_CONST.__objc_const: 0x155b8 sha256:d9764c334b21fbbcfb0280f8a28b60332ed6d867e5c1c6dd302e7b48ff17b0cb
-+  __AUTH_CONST.__weak_auth_got: 0x18 sha256:29088a447bd737ef9fbfae413fb96a052bde0411bc28166e36dc698bd3ad3621
-+  __AUTH_CONST.__lazy_load_got: 0x10 sha256:31369c404bcd697b92011a94006c8d461a1531011b4ccd4fd7281f7b3ee30120
-+  __AUTH_CONST.__objc_intobj: 0x7f8 sha256:d82eaf68f8cd2b008b26468179c6e4a257adc1766826e58a3144863cd5f751b3
-+  __AUTH_CONST.__objc_dictobj: 0x50 sha256:2635d64894dab0c7076b77766df71f2d58e1051ce4f58aba6c477c424e8e6375
-+  __AUTH_CONST.__objc_arrayobj: 0x150 sha256:c1e78456bd3e9b4cb2dc7b94a8e00d2e136e9dd10888395f15697c1d8d98142f
-+  __AUTH_CONST.__auth_got: 0x1960 sha256:30a4d082fb9b6a9c8872ee1ab8cb8d05b85c9c7b139cdf6c5cc94926bcc2d6de
-+  __AUTH.__objc_data: 0x3430 sha256:404efc5df502ee17e965d383f1aa4b0b317211db67523d7adf79a4feb7dfca9d
-+  __AUTH.__data: 0x328 sha256:306f708d94e1ce254f376f117117bd4aee1ec16fc058cf1210e58c562eed23dc
-+  __DATA.__objc_ivar: 0xbd8 sha256:09da70b6ccdd9720da2cd8d637988d9a7618315f78507a946da577794794aaec
-+  __DATA.__data: 0x15c8 sha256:c79e675c5f0e8a32616bacb7a34d8a79c1351bdeebde7ba4c358f65ab23b5aae
-+  __DATA.__bss: 0xfb0 sha256:8bf4f911e5c9732bfc534b1ddfe999ec6f82365e1e99ef10817eb7899f3e93f7
-   __DATA.__common: 0x40 sha256:f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b
--  __DATA_DIRTY.__objc_data: 0x18b0 sha256:62529a0b1c036c27f3d20d32acc49b363f5c51e0fa82e848eb85f89df855ddc2
--  __DATA_DIRTY.__data: 0x48 sha256:57b8cb965ad0523b8bbd4cd03a9e7fb498b529d4bd2bd30da11042dd08fd5bb4
-+  __DATA_DIRTY.__objc_data: 0x18b0 sha256:0db5e472b8caadda83c76b7129d36f6db0017a65f9af2a49ce84f7ec5a411fe9
-+  __DATA_DIRTY.__data: 0x48 sha256:9b29367e5e20e942ed4051ca349fe19e5c91bb10870727b475d2b656e17914d1
-   __DATA_DIRTY.__crash_info: 0x148 sha256:6da6349e97370e8d430272961ce52dff296ff7c22208bd465045a16f557b12e4
--  __DATA_DIRTY.__bss: 0x8d0 sha256:641088987f5f2c244a4a925160ff63e443cd935518f89d1526949d9d65cd953a
-+  __DATA_DIRTY.__bss: 0x8c8 sha256:f8fed6523296f9aef29a2f4fdde6b60b0e1adc7affaa4e722969cd4d135df659
-   __DATA_DIRTY.__common: 0x8 sha256:af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
--  UUID: 648F31F1-E506-384A-97D9-339880DC312C
 -  Functions: 9445
--  Symbols:   30693
--  CStrings:  8960
-+  UUID: 52E9FAE1-EA57-3645-A260-2B3CC6435C69
+-  Symbols:   14129
+-  CStrings:  5958
 +  Functions: 9506
-+  Symbols:   30895
-+  CStrings:  9022
- 
++  Symbols:   14204
++  CStrings:  6009
 Symbols:
 + +[UTTypeRecord _setForcesServerLookupForTesting:]
 + +[_LSUnregisteredTypeTelemetry sharedInstance]
@@ -116,16 +56,10 @@ Symbols:
 + -[_LSUnregisteredTypeTelemetry clearRecordedTypes]
 + -[_LSUnregisteredTypeTelemetry copyRecordedTypeIdentifiersForTesting]
 + -[_LSUnregisteredTypeTelemetry databaseWithLock:]
-+ -[_LSUnregisteredTypeTelemetry databaseWithLock:].cold.1
-+ -[_LSUnregisteredTypeTelemetry databaseWithLock:].cold.2
-+ -[_LSUnregisteredTypeTelemetry databaseWithLock:].cold.3
-+ -[_LSUnregisteredTypeTelemetry databaseWithLock:].cold.4
 + -[_LSUnregisteredTypeTelemetry deleteAllRowsWithDatabase:lock:]
-+ -[_LSUnregisteredTypeTelemetry deleteAllRowsWithDatabase:lock:].cold.1
 + -[_LSUnregisteredTypeTelemetry initPrivate]
 + -[_LSUnregisteredTypeTelemetry lockRef]
 + -[_LSUnregisteredTypeTelemetry noteUnregisteredType:requestedByBundle:]
-+ -[_LSUnregisteredTypeTelemetry noteUnregisteredType:requestedByBundle:].cold.1
 + -[_LSUnregisteredTypeTelemetry performStartupMaintenance]
 + -[_LSUnregisteredTypeTelemetry sendReportAndReset]
 + -[_LSUnregisteredTypeTelemetry startDailyReporting]
@@ -163,38 +97,29 @@ Symbols:
 + _OBJC_METACLASS_$__LSUnregisteredTypeTelemetry
 + _XPC_ACTIVITY_INTERVAL_1_DAY
 + _XPC_ACTIVITY_PRIORITY_MAINTENANCE
-+ __LSBindingListGetEntryAtIndex.cold.1
 + __LSBundleBaseDataGetModTime
 + __LSBundleBaseDataSetModTime
 + __LSCopyBundleIdentifierForNSXPCConnection
 + __LSLazyLoadObjectWithLockAndReason
 + __LSRestrictionsLog
-+ __LSRestrictionsLog.cold.1
 + __LSRestrictionsLog.once
 + __LSRestrictionsLog.result
 + __LSTelemetryLog
-+ __LSTelemetryLog.cold.1
 + __LSTelemetryLog.once
 + __LSTelemetryLog.result
 + __LSUpdateContainerData
 + __LSUpdateContainerStateAsync
-+ __LSUpdateContainerStateAsync.cold.1
 + __OBJC_$_CLASS_METHODS__LSUnregisteredTypeTelemetry
 + __OBJC_$_INSTANCE_METHODS__LSUnregisteredTypeTelemetry
 + __OBJC_$_INSTANCE_VARIABLES__LSUnregisteredTypeTelemetry
 + __OBJC_CLASS_RO_$__LSUnregisteredTypeTelemetry
 + __OBJC_METACLASS_RO_$__LSUnregisteredTypeTelemetry
-+ __ZL33gForcesServerTypeLookupForTesting.0
-+ __ZL7addUUIDPK11mach_headerP14__CFDictionary.cold.1
-+ __ZL7addUUIDPK11mach_headerP14__CFDictionary.cold.2
++ __ZL33gForcesServerTypeLookupForTesting
 + __ZL9GetTimingv
-+ __ZL9GetTimingv.cold.1
 + __ZN14LaunchServices10Containers37_LSGetUpdatedContainerDataIfNecessaryEP11_LSDatabasejPK15LSContainerDatab
-+ __ZN14LaunchServices10Containers37_LSGetUpdatedContainerDataIfNecessaryEP11_LSDatabasejPK15LSContainerDatab.cold.1
 + __ZN14LaunchServices24UnregisteredTypeTracking14LockedDatabaseC2EPU49objcproto38LSLockedDeferredCloseDatabaseProviding11objc_object
 + __ZN14LaunchServices24UnregisteredTypeTracking30LockedDatabaseArmingCloseTimerD2Ev
 + __ZNK14LaunchServices24UnregisteredTypeTracking19sqlite_handle_closeclEP7sqlite3
-+ __ZNK14LaunchServices24UnregisteredTypeTracking19sqlite_handle_closeclEP7sqlite3.cold.1
 + __ZNKSt3__111__copy_implclB9fqn220106IPKN14LaunchServices17BindingEvaluation15ExtendedBindingES6_PS4_Li0EEENS_4pairIT_T1_EES9_T0_SA_
 + __ZNKSt3__111__copy_implclB9fqn220106IPKjS3_NS_20back_insert_iteratorINS_6vectorIjNS_9allocatorIjEEEEEELi0EEENS_4pairIT_T1_EESB_T0_SC_
 + __ZNKSt3__111__copy_implclB9fqn220106IPN14LaunchServices17BindingEvaluation15ExtendedBindingES5_S5_Li0EEENS_4pairIT_T1_EES7_T0_S8_
@@ -254,13 +179,9 @@ Symbols:
 + __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEE15__init_buf_ptrsB9fqn220106Ev
 + __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B9fqn220106Ej
 + __ZNSt3__116__if_likely_elseB9fqn220106IZNS_6vectorINS_4pairIP13objc_selectorPFvP11objc_objectS4_EEENS_9allocatorIS9_EEE12emplace_backIJRS4_S8_EEERS9_DpOT_EUlvE_ZNSD_IJSE_S8_EEESF_SI_EUlvE0_EEvbT_T0_
-+ __ZNSt3__116__if_likely_elseB9fqn220106IZNS_6vectorINS_4pairIP13objc_selectorPFvP11objc_objectS4_EEENS_9allocatorIS9_EEE12emplace_backIJRS4_S8_EEERS9_DpOT_EUlvE_ZNSD_IJSE_S8_EEESF_SI_EUlvE0_EEvbT_T0_.cold.1
 + __ZNSt3__116__if_likely_elseB9fqn220106IZNS_6vectorINS_4pairIjPK12LSBundleDataEENS_9allocatorIS6_EEE12emplace_backIJRjRS5_EEERS6_DpOT_EUlvE_ZNSA_IJSB_SC_EEESD_SG_EUlvE0_EEvbT_T0_
-+ __ZNSt3__116__if_likely_elseB9fqn220106IZNS_6vectorINS_4pairIjPK12LSBundleDataEENS_9allocatorIS6_EEE12emplace_backIJRjRS5_EEERS6_DpOT_EUlvE_ZNSA_IJSB_SC_EEESD_SG_EUlvE0_EEvbT_T0_.cold.1
 + __ZNSt3__116__if_likely_elseB9fqn220106IZNS_6vectorINS_4pairIjU8__strongP6NSUUIDEENS_9allocatorIS6_EEE12emplace_backIJS6_EEERS6_DpOT_EUlvE_ZNSA_IJS6_EEESB_SE_EUlvE0_EEvbT_T0_
-+ __ZNSt3__116__if_likely_elseB9fqn220106IZNS_6vectorINS_4pairIjU8__strongP6NSUUIDEENS_9allocatorIS6_EEE12emplace_backIJS6_EEERS6_DpOT_EUlvE_ZNSA_IJS6_EEESB_SE_EUlvE0_EEvbT_T0_.cold.1
 + __ZNSt3__116__if_likely_elseB9fqn220106IZNS_6vectorINS_5tupleIJU8__strongP8NSStringjEEENS_9allocatorIS6_EEE12emplace_backIJS6_EEERS6_DpOT_EUlvE_ZNSA_IJS6_EEESB_SE_EUlvE0_EEvbT_T0_
-+ __ZNSt3__116__if_likely_elseB9fqn220106IZNS_6vectorINS_5tupleIJU8__strongP8NSStringjEEENS_9allocatorIS6_EEE12emplace_backIJS6_EEERS6_DpOT_EUlvE_ZNSA_IJS6_EEESB_SE_EUlvE0_EEvbT_T0_.cold.1
 + __ZNSt3__116__pad_and_outputB9fqn220106IcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_
 + __ZNSt3__116__variant_detail12__assignmentINS0_8__traitsIJjU8__strongP5NSURLU8__strongP7NSErrorEEEE12__assign_altB9fqn220106ILm1ES5_RU8__strongKS4_EEvRNS0_5__altIXT_ET0_EEOT1_
 + __ZNSt3__116__variant_detail12__assignmentINS0_8__traitsIJjU8__strongP5NSURLU8__strongP7NSErrorEEEE12__assign_altB9fqn220106ILm2ES8_RU8__strongKS7_EEvRNS0_5__altIXT_ET0_EEOT1_
@@ -474,8 +395,7 @@ Symbols:
 + __ZZ46+[_LSUnregisteredTypeTelemetry sharedInstance]E4once
 + __ZZ46+[_LSUnregisteredTypeTelemetry sharedInstance]E8instance
 + __ZZL9GetTimingvE4once
-+ __ZZL9GetTimingvE6timing.0
-+ __ZZL9GetTimingvE6timing.1
++ __ZZL9GetTimingvE6timing
 + __ZZNSt3__112__hash_tableINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_4hashIS6_EENS_8equal_toIS6_EENS4_IS6_EEE16__emplace_uniqueB9fqn220106IJS6_EEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIS6_PvEEEEbEEDpOT_ENKUlRKS6_OS6_E_clESQ_SR_
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeI12LSSessionKey31LSQuickSessionAvailabilityStateEENS_22__unordered_map_hasherIS2_NS_4pairIKS2_S3_EE18LSSessionKeyHasher22LSSessionKeyComparatorEENS_21__unordered_map_equalIS2_S8_SA_S9_EENS_9allocatorIS8_EEE16__emplace_uniqueB9fqn220106IJRKNS_21piecewise_construct_tENS_5tupleIJOS2_EEENSL_IJEEEEEENS6_INS_15__hash_iteratorIPNS_11__hash_nodeIS4_PvEEEEbEEDpOT_ENKUlRS7_SK_OSN_OSO_E_clESZ_SK_S10_S11_
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeI12LSSessionKeyP9LSSessionEENS_22__unordered_map_hasherIS2_NS_4pairIKS2_S4_EE18LSSessionKeyHasher22LSSessionKeyComparatorEENS_21__unordered_map_equalIS2_S9_SB_SA_EENS_9allocatorIS9_EEE16__emplace_uniqueB9fqn220106IJRKNS_21piecewise_construct_tENS_5tupleIJRS8_EEENSM_IJEEEEEENS7_INS_15__hash_iteratorIPNS_11__hash_nodeIS5_PvEEEEbEEDpOT_ENKUlSN_SL_OSO_OSP_E_clESN_SL_S10_S11_
@@ -505,75 +425,20 @@ Symbols:
 + __ZZNSt3__112__hash_tableIjNS_4hashIjEENS_8equal_toIjEENS_9allocatorIjEEE16__emplace_uniqueB9fqn220106IJRKjEEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIjPvEEEEbEEDpOT_ENKUlSA_SA_E_clESA_SA_
 + __ZZNSt3__112__hash_tableIjNS_4hashIjEENS_8equal_toIjEENS_9allocatorIjEEE16__emplace_uniqueB9fqn220106IJRjEEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIjPvEEEEbEEDpOT_ENKUlRKjS9_E_clESM_S9_
 + ___116-[LSApplicationRestrictionsManager _lazyLoadRestrictionsIdentifierSet:identifiersAreNullable:context:reason:getter:]_block_invoke
-+ ___116-[LSApplicationRestrictionsManager _lazyLoadRestrictionsIdentifierSet:identifiersAreNullable:context:reason:getter:]_block_invoke.112
 + ___116-[LSApplicationRestrictionsManager _lazyLoadRestrictionsIdentifierSet:identifiersAreNullable:context:reason:getter:]_block_invoke_2
 + ___116-[LSApplicationRestrictionsManager _lazyLoadRestrictionsIdentifierSet:identifiersAreNullable:context:reason:getter:]_block_invoke_3
-+ ___116-[LSApplicationRestrictionsManager _lazyLoadRestrictionsIdentifierSet:identifiersAreNullable:context:reason:getter:]_block_invoke_3.cold.1
-+ ___121-[_LSDModifyClient performUpdateOfPersonasOfBundleIDs:toPersonaUniqueStrings:bundlePersonaRecordMap:operationUUID:reply:]_block_invoke.299
-+ ___158-[_LSDModifyClient setContainersForApplicationsWithBundleIdentifiers:unbundledExtensionsWithBundleIdentifiers:fromBundlePersonaRecordMap:operationUUID:reply:]_block_invoke.303
 + ___46+[_LSUnregisteredTypeTelemetry sharedInstance]_block_invoke
-+ ___49-[LSApplicationRestrictionsManager maximumRating]_block_invoke.cold.1
 + ___51-[_LSUnregisteredTypeTelemetry startDailyReporting]_block_invoke
 + ___54-[_LSUnregisteredTypeTelemetry armCloseTimerWithLock:]_block_invoke
 + ___56-[LSApplicationWorkspace clearUnregisteredTypeTelemetry]_block_invoke
 + ___56-[LSApplicationWorkspace clearUnregisteredTypeTelemetry]_block_invoke_2
-+ ___58-[LSApplicationRestrictionsManager _LSResolveIdentifiers:]_block_invoke.108
-+ ___59-[_LSDModifyClient requestLSDExitSafely:completionHandler:]_block_invoke.311
-+ ___60-[LSApplicationRestrictionsManager beginListeningForChanges]_block_invoke.132
-+ ___68-[LSApplicationRestrictionsManager handleMCEffectiveSettingsChanged]_block_invoke.140
-+ ___68-[LSApplicationRestrictionsManager handleMCEffectiveSettingsChanged]_block_invoke.141
-+ ___68-[LSApplicationWorkspaceRemoteObserver applicationInstallsDidStart:]_block_invoke.767
-+ ___73-[LSApplicationRestrictionsManager _pruneObsoleteTrustedSignerIdentities]_block_invoke.142
-+ ___75-[_LSDModifyClient unregisterApplicationsAtMountPoint:operationUUID:reply:]_block_invoke.257
-+ ___75-[_LSDModifyClient unregisterApplicationsAtMountPoint:operationUUID:reply:]_block_invoke.262
-+ ___82-[_LSDModifyClient removeReferencesToPersonaWithUniqueString:operationUUID:reply:]_block_invoke.301
 + ___84-[LSApplicationWorkspace unregisteredTypeTelemetryRecordedTypeIdentifiersForTesting]_block_invoke
 + ___84-[LSApplicationWorkspace unregisteredTypeTelemetryRecordedTypeIdentifiersForTesting]_block_invoke_2
-+ ___84-[_LSDModifyClient setPreferenceValue:forKey:forApplicationAtURL:completionHandler:]_block_invoke.290
-+ ___89-[LSApplicationRestrictionsManager scanForMissedNotificationsForImportantAppsIfNecessary]_block_invoke.131
-+ ___98-[_LSDModifyClient registerItemInfo:alias:diskImageAlias:bundleURL:installInfo:completionHandler:]_block_invoke.176
-+ ___Block_byref_object_copy_.1022
-+ ___Block_byref_object_copy_.1200
-+ ___Block_byref_object_copy_.166
-+ ___Block_byref_object_copy_.170
-+ ___Block_byref_object_copy_.173
-+ ___Block_byref_object_copy_.269
-+ ___Block_byref_object_copy_.35
-+ ___Block_byref_object_copy_.370
-+ ___Block_byref_object_dispose_.1023
-+ ___Block_byref_object_dispose_.1201
-+ ___Block_byref_object_dispose_.167
-+ ___Block_byref_object_dispose_.171
-+ ___Block_byref_object_dispose_.174
-+ ___Block_byref_object_dispose_.270
-+ ___Block_byref_object_dispose_.36
-+ ___Block_byref_object_dispose_.371
 + ____LSLazyLoadObjectWithLockAndReason_block_invoke
 + ____LSRestrictionsLog_block_invoke
-+ ____LSServer_CleanSystemContentDatabaseForMainDatabaseUse_block_invoke.966
-+ ____LSServer_LSEnumerateAndRegisterAllBundles_block_invoke.958
-+ ____LSServer_LSEnumerateAndRegisterAllBundles_block_invoke.958.cold.1
-+ ____LSServer_LSEnumerateAndRegisterAllBundles_block_invoke.958.cold.2
-+ ____LSServer_LSEnumerateAndRegisterAllBundles_block_invoke.961
-+ ____LSServer_LSEnumerateAndRegisterAllBundles_block_invoke.961.cold.1
-+ ____LSServer_LSEnumerateAndRegisterAllBundles_block_invoke.963
-+ ____LSServer_LSEnumerateAndRegisterAllBundles_block_invoke.964
-+ ____LSServer_LSEnumerateAndRegisterAllBundles_block_invoke_2.956
-+ ____LSServer_LSEnumerateAndRegisterAllBundles_block_invoke_2.962
-+ ____LSServer_SyncWithMobileInstallation_block_invoke.1024
-+ ____LSServer_SyncWithMobileInstallation_block_invoke.1025
-+ ____LSServer_SyncWithMobileInstallation_block_invoke_2.1026
-+ ____LSServer_SyncWithMobileInstallation_block_invoke_2.1026.cold.1
-+ ____LSServer_SyncWithMobileInstallation_block_invoke_2.1026.cold.2
 + ____LSTelemetryLog_block_invoke
-+ ____LSUnregisterBundle_block_invoke.157
 + ____LSUpdateContainerStateAsync_block_invoke
-+ ____LSUpdateContainerStateAsync_block_invoke.169
 + ____LSUpdateContainerStateAsync_block_invoke_2
-+ ____LSUpdateContainerStateAsync_block_invoke_2.170
-+ ____ZL15_LSContainerAddP9LSContextP6FSNodeP6NSDataS2_S4_tyhU13block_pointerFvjP7NSErrorE_block_invoke.51
-+ ____ZL15_LSContainerAddP9LSContextP6FSNodeP6NSDataS2_S4_tyhU13block_pointerFvjP7NSErrorE_block_invoke.52
-+ ____ZL15_LSContainerAddP9LSContextP6FSNodeP6NSDataS2_S4_tyhU13block_pointerFvjP7NSErrorE_block_invoke.54
 + ____ZL9GetTimingv_block_invoke
 + ___block_descriptor_32_e383_B28?0^{LSContext=}8I16r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIIIICCIII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIIC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}II{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IQQQIIIIIIIIIIQIIQQQQIQQIIIQIQIIQIIIIIIIIIIIIIIIICCC[1I]II{LSAppClipFields=I}iIIIIIIII}20l
 + ___block_descriptor_40_e8_32r_e17_v16?0"NSArray"8lr32l8
@@ -594,58 +459,9 @@ Symbols:
 + ___block_descriptor_72_e8_32bs40r48r_e370_v28?0I8r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIIIICCIII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIIC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}II{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IQQQIIIIIIIIIIQIIQQQQIQQIIIQIQIIQIIIIIIIIIIIIIIIICCC[1I]II{LSAppClipFields=I}iIIIIIIII}12*20ls32l8r40l8r48l8
 + ___block_descriptor_72_ea8_32s40s48r_e370_v28?0I8r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIIIICCIII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIIC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}II{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IQQQIIIIIIIIIIQIIQQQQIQQIIIQIQIIQIIIIIIIIIIIIIIIICCC[1I]II{LSAppClipFields=I}iIIIIIIII}12*20ls32l8s40l8r48l8
 + ___block_descriptor_80_e8_32s40s48s56s64n6_8_8_s0_e383_v28?0"_LSDatabase"8I16r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIIIICCIII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIIC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}II{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IQQQIIIIIIIIIIQIIQQQQIQQIIIQIQIIQIIIIIIIIIIIIIIIICCC[1I]II{LSAppClipFields=I}iIIIIIIII}20l
-+ ___block_literal_global.100
-+ ___block_literal_global.1101
-+ ___block_literal_global.1124
-+ ___block_literal_global.1147
-+ ___block_literal_global.1150
-+ ___block_literal_global.1185
-+ ___block_literal_global.197
-+ ___block_literal_global.256
-+ ___block_literal_global.267
-+ ___block_literal_global.277
-+ ___block_literal_global.283
-+ ___block_literal_global.313
-+ ___block_literal_global.331
-+ ___block_literal_global.39
-+ ___block_literal_global.405
-+ ___block_literal_global.408
-+ ___block_literal_global.410
-+ ___block_literal_global.46
-+ ___block_literal_global.503
-+ ___block_literal_global.506
-+ ___block_literal_global.508
-+ ___block_literal_global.566
-+ ___block_literal_global.64
-+ ___block_literal_global.651
-+ ___block_literal_global.666
-+ ___block_literal_global.683
-+ ___block_literal_global.685
-+ ___block_literal_global.70
-+ ___block_literal_global.934
-+ ___block_literal_global.960
-+ ___block_literal_global.968
-+ ___listenForSigterm_block_invoke.8
-+ ___listenForSigterm_block_invoke.8.cold.1
-+ ___listenForSigterm_block_invoke.8.cold.2
 + _getiopolicy_np
 + _kCFPreferencesCurrentHost
 + _kLSCanAccessUnregisteredTypeInfoEntitlement
-+ _objc_msgSend$armCloseTimerWithLock:
-+ _objc_msgSend$clearRecordedTypes
-+ _objc_msgSend$clearUnregisteredTypeTelemetryWithCompletionHandler:
-+ _objc_msgSend$copyRecordedTypeIdentifiersForTesting
-+ _objc_msgSend$databaseWithLock:
-+ _objc_msgSend$deleteAllRowsWithDatabase:lock:
-+ _objc_msgSend$getUnregisteredTypeTelemetryTypeIdentifiersForTestingWithCompletionHandler:
-+ _objc_msgSend$isDynamic
-+ _objc_msgSend$lockRef
-+ _objc_msgSend$noteUnregisteredType:requestedByBundle:
-+ _objc_msgSend$performStartupMaintenance
-+ _objc_msgSend$sendReportAndReset
-+ _objc_msgSend$startDailyReporting
-+ _objc_msgSend$unregisteredTypeTelemetryDatabaseURL
-+ _preferredLocalizations.once.254
 + _sqlite3_close_v2
 + _sqlite3_column_int64
 + _sqlite3_column_text
@@ -739,13 +555,9 @@ Symbols:
 - __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEE15__init_buf_ptrsB9fqn220100Ev
 - __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B9fqn220100Ej
 - __ZNSt3__116__if_likely_elseB9fqn220100IZNS_6vectorINS_4pairIP13objc_selectorPFvP11objc_objectS4_EEENS_9allocatorIS9_EEE12emplace_backIJRS4_S8_EEERS9_DpOT_EUlvE_ZNSD_IJSE_S8_EEESF_SI_EUlvE0_EEvbT_T0_
-- __ZNSt3__116__if_likely_elseB9fqn220100IZNS_6vectorINS_4pairIP13objc_selectorPFvP11objc_objectS4_EEENS_9allocatorIS9_EEE12emplace_backIJRS4_S8_EEERS9_DpOT_EUlvE_ZNSD_IJSE_S8_EEESF_SI_EUlvE0_EEvbT_T0_.cold.1
 - __ZNSt3__116__if_likely_elseB9fqn220100IZNS_6vectorINS_4pairIjPK12LSBundleDataEENS_9allocatorIS6_EEE12emplace_backIJRjRS5_EEERS6_DpOT_EUlvE_ZNSA_IJSB_SC_EEESD_SG_EUlvE0_EEvbT_T0_
-- __ZNSt3__116__if_likely_elseB9fqn220100IZNS_6vectorINS_4pairIjPK12LSBundleDataEENS_9allocatorIS6_EEE12emplace_backIJRjRS5_EEERS6_DpOT_EUlvE_ZNSA_IJSB_SC_EEESD_SG_EUlvE0_EEvbT_T0_.cold.1
 - __ZNSt3__116__if_likely_elseB9fqn220100IZNS_6vectorINS_4pairIjU8__strongP6NSUUIDEENS_9allocatorIS6_EEE12emplace_backIJS6_EEERS6_DpOT_EUlvE_ZNSA_IJS6_EEESB_SE_EUlvE0_EEvbT_T0_
-- __ZNSt3__116__if_likely_elseB9fqn220100IZNS_6vectorINS_4pairIjU8__strongP6NSUUIDEENS_9allocatorIS6_EEE12emplace_backIJS6_EEERS6_DpOT_EUlvE_ZNSA_IJS6_EEESB_SE_EUlvE0_EEvbT_T0_.cold.1
 - __ZNSt3__116__if_likely_elseB9fqn220100IZNS_6vectorINS_5tupleIJU8__strongP8NSStringjEEENS_9allocatorIS6_EEE12emplace_backIJS6_EEERS6_DpOT_EUlvE_ZNSA_IJS6_EEESB_SE_EUlvE0_EEvbT_T0_
-- __ZNSt3__116__if_likely_elseB9fqn220100IZNS_6vectorINS_5tupleIJU8__strongP8NSStringjEEENS_9allocatorIS6_EEE12emplace_backIJS6_EEERS6_DpOT_EUlvE_ZNSA_IJS6_EEESB_SE_EUlvE0_EEvbT_T0_.cold.1
 - __ZNSt3__116__pad_and_outputB9fqn220100IcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_
 - __ZNSt3__116__variant_detail12__assignmentINS0_8__traitsIJjU8__strongP5NSURLU8__strongP7NSErrorEEEE12__assign_altB9fqn220100ILm1ES5_RU8__strongKS4_EEvRNS0_5__altIXT_ET0_EEOT1_
 - __ZNSt3__116__variant_detail12__assignmentINS0_8__traitsIJjU8__strongP5NSURLU8__strongP7NSErrorEEEE12__assign_altB9fqn220100ILm2ES8_RU8__strongKS7_EEvRNS0_5__altIXT_ET0_EEOT1_
@@ -984,62 +796,12 @@ Symbols:
 - __ZZNSt3__112__hash_tableIjNS_4hashIjEENS_8equal_toIjEENS_9allocatorIjEEE16__emplace_uniqueB9fqn220100IJRKjEEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIjPvEEEEbEEDpOT_ENKUlSA_SA_E_clESA_SA_
 - __ZZNSt3__112__hash_tableIjNS_4hashIjEENS_8equal_toIjEENS_9allocatorIjEEE16__emplace_uniqueB9fqn220100IJRjEEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIjPvEEEEbEEDpOT_ENKUlRKjS9_E_clESM_S9_
 - ___109-[LSApplicationRestrictionsManager _lazyLoadRestrictionsIdentifierSet:identifiersAreNullable:context:getter:]_block_invoke
-- ___109-[LSApplicationRestrictionsManager _lazyLoadRestrictionsIdentifierSet:identifiersAreNullable:context:getter:]_block_invoke.110
 - ___109-[LSApplicationRestrictionsManager _lazyLoadRestrictionsIdentifierSet:identifiersAreNullable:context:getter:]_block_invoke_2
 - ___109-[LSApplicationRestrictionsManager _lazyLoadRestrictionsIdentifierSet:identifiersAreNullable:context:getter:]_block_invoke_3
-- ___109-[LSApplicationRestrictionsManager _lazyLoadRestrictionsIdentifierSet:identifiersAreNullable:context:getter:]_block_invoke_3.cold.1
-- ___121-[_LSDModifyClient performUpdateOfPersonasOfBundleIDs:toPersonaUniqueStrings:bundlePersonaRecordMap:operationUUID:reply:]_block_invoke.297
-- ___158-[_LSDModifyClient setContainersForApplicationsWithBundleIdentifiers:unbundledExtensionsWithBundleIdentifiers:fromBundlePersonaRecordMap:operationUUID:reply:]_block_invoke.301
-- ___58-[LSApplicationRestrictionsManager _LSResolveIdentifiers:]_block_invoke.106
-- ___59-[_LSDModifyClient requestLSDExitSafely:completionHandler:]_block_invoke.302
-- ___60-[LSApplicationRestrictionsManager beginListeningForChanges]_block_invoke.125
-- ___68-[LSApplicationRestrictionsManager handleMCEffectiveSettingsChanged]_block_invoke.133
-- ___68-[LSApplicationRestrictionsManager handleMCEffectiveSettingsChanged]_block_invoke.134
-- ___68-[LSApplicationWorkspaceRemoteObserver applicationInstallsDidStart:]_block_invoke.758
-- ___73-[LSApplicationRestrictionsManager _pruneObsoleteTrustedSignerIdentities]_block_invoke.135
-- ___75-[_LSDModifyClient unregisterApplicationsAtMountPoint:operationUUID:reply:]_block_invoke.255
-- ___75-[_LSDModifyClient unregisterApplicationsAtMountPoint:operationUUID:reply:]_block_invoke.260
-- ___82-[_LSDModifyClient removeReferencesToPersonaWithUniqueString:operationUUID:reply:]_block_invoke.299
-- ___84-[_LSDModifyClient setPreferenceValue:forKey:forApplicationAtURL:completionHandler:]_block_invoke.288
-- ___89-[LSApplicationRestrictionsManager scanForMissedNotificationsForImportantAppsIfNecessary]_block_invoke.124
-- ___98-[_LSDModifyClient registerItemInfo:alias:diskImageAlias:bundleURL:installInfo:completionHandler:]_block_invoke.174
-- ___Block_byref_object_copy_.1013
-- ___Block_byref_object_copy_.1191
-- ___Block_byref_object_copy_.163
-- ___Block_byref_object_copy_.168
-- ___Block_byref_object_copy_.171
-- ___Block_byref_object_copy_.267
-- ___Block_byref_object_copy_.32
-- ___Block_byref_object_dispose_.1014
-- ___Block_byref_object_dispose_.1192
-- ___Block_byref_object_dispose_.164
-- ___Block_byref_object_dispose_.169
-- ___Block_byref_object_dispose_.172
-- ___Block_byref_object_dispose_.268
-- ___Block_byref_object_dispose_.33
-- ____LSServer_CleanSystemContentDatabaseForMainDatabaseUse_block_invoke.957
-- ____LSServer_LSEnumerateAndRegisterAllBundles_block_invoke.945
-- ____LSServer_LSEnumerateAndRegisterAllBundles_block_invoke.949
-- ____LSServer_LSEnumerateAndRegisterAllBundles_block_invoke.949.cold.1
-- ____LSServer_LSEnumerateAndRegisterAllBundles_block_invoke.949.cold.2
-- ____LSServer_LSEnumerateAndRegisterAllBundles_block_invoke.952
-- ____LSServer_LSEnumerateAndRegisterAllBundles_block_invoke.952.cold.1
-- ____LSServer_LSEnumerateAndRegisterAllBundles_block_invoke.955
-- ____LSServer_LSEnumerateAndRegisterAllBundles_block_invoke_2.947
-- ____LSServer_LSEnumerateAndRegisterAllBundles_block_invoke_2.953
-- ____LSServer_SyncWithMobileInstallation_block_invoke.1015
-- ____LSServer_SyncWithMobileInstallation_block_invoke.1016
-- ____LSServer_SyncWithMobileInstallation_block_invoke_2.1017
-- ____LSServer_SyncWithMobileInstallation_block_invoke_2.1017.cold.1
-- ____LSServer_SyncWithMobileInstallation_block_invoke_2.1017.cold.2
-- ____LSUnregisterBundle_block_invoke.154
 - ____LSUpdateContainerState_block_invoke
 - ____LSUpdateContainerState_block_invoke_2
 - ____LSUpdateContainerState_block_invoke_3
 - ____LSUpdateContainerState_block_invoke_4
-- ____ZL15_LSContainerAddP9LSContextP6FSNodeP6NSDataS2_S4_tyhU13block_pointerFvjP7NSErrorE_block_invoke.39
-- ____ZL15_LSContainerAddP9LSContextP6FSNodeP6NSDataS2_S4_tyhU13block_pointerFvjP7NSErrorE_block_invoke.40
-- ____ZL15_LSContainerAddP9LSContextP6FSNodeP6NSDataS2_S4_tyhU13block_pointerFvjP7NSErrorE_block_invoke.42
 - ___block_descriptor_32_e383_B28?0^{LSContext=}8I16r^{LSBundleData={LSBundleBaseData=IIIIIIIi{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIIIICCIII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIIC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IiI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IQQQIIIIIIIIIIQIIQQQQIQQIIIQIQIIQIIIIIIIIIIIIIIIICCC[1I]II{LSAppClipFields=I}iIIIIIIII}20l
 - ___block_descriptor_40_ea8_32s_e383_B28?0"_LSDatabase"8I16r^{LSBundleData={LSBundleBaseData=IIIIIIIi{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIIIICCIII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIIC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IiI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IQQQIIIIIIIIIIQIIQQQQIQQIIIQIQIIQIIIIIIIIIIIIIIIICCC[1I]II{LSAppClipFields=I}iIIIIIIII}20ls32l8
 - ___block_descriptor_40_ea8_32s_e383_B28?0^{LSContext=}8I16r^{LSBundleData={LSBundleBaseData=IIIIIIIi{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIIIICCIII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIIC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IiI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IQQQIIIIIIIIIIQIIQQQQIQQIIIQIQIIQIIIIIIIIIIIIIIIICCC[1I]II{LSAppClipFields=I}iIIIIIIII}20ls32l8
@@ -1056,37 +818,6 @@ Symbols:
 - ___block_descriptor_72_e8_32bs40r48r_e370_v28?0I8r^{LSBundleData={LSBundleBaseData=IIIIIIIi{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIIIICCIII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIIC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IiI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IQQQIIIIIIIIIIQIIQQQQIQQIIIQIQIIQIIIIIIIIIIIIIIIICCC[1I]II{LSAppClipFields=I}iIIIIIIII}12*20ls32l8r40l8r48l8
 - ___block_descriptor_72_ea8_32s40s48r_e370_v28?0I8r^{LSBundleData={LSBundleBaseData=IIIIIIIi{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIIIICCIII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIIC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IiI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IQQQIIIIIIIIIIQIIQQQQIQQIIIQIQIIQIIIIIIIIIIIIIIIICCC[1I]II{LSAppClipFields=I}iIIIIIIII}12*20ls32l8s40l8r48l8
 - ___block_descriptor_80_e8_32s40s48s56s64n6_8_8_s0_e383_v28?0"_LSDatabase"8I16r^{LSBundleData={LSBundleBaseData=IIIIIIIi{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIIIICCIII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIIC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IiI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IQQQIIIIIIIIIIQIIQQQQIQQIIIQIQIIQIIIIIIIIIIIIIIIICCC[1I]II{LSAppClipFields=I}iIIIIIIII}20l
-- ___block_literal_global.1092
-- ___block_literal_global.1115
-- ___block_literal_global.1138
-- ___block_literal_global.1141
-- ___block_literal_global.1176
-- ___block_literal_global.190
-- ___block_literal_global.236
-- ___block_literal_global.262
-- ___block_literal_global.274
-- ___block_literal_global.280
-- ___block_literal_global.304
-- ___block_literal_global.328
-- ___block_literal_global.45
-- ___block_literal_global.497
-- ___block_literal_global.500
-- ___block_literal_global.502
-- ___block_literal_global.548
-- ___block_literal_global.569
-- ___block_literal_global.57
-- ___block_literal_global.642
-- ___block_literal_global.657
-- ___block_literal_global.674
-- ___block_literal_global.676
-- ___block_literal_global.91
-- ___block_literal_global.925
-- ___block_literal_global.951
-- ___block_literal_global.959
-- ___listenForSigterm_block_invoke.7
-- ___listenForSigterm_block_invoke.7.cold.1
-- ___listenForSigterm_block_invoke.7.cold.2
-- _preferredLocalizations.once.251
 CStrings:
 + "#LSAppRestrictionsManager  Parental controls restricted list changed to %@, affected identifiers: %@"
 + "#LSAppRestrictionsManager  settings changed, state changed apps %@"
@@ -1147,14 +878,13 @@ CStrings:
 + "restrictions"
 + "sending unregistered type telemetry"
 + "sqlite3_close failed: %s"
-+ "static NSInteger LaunchServices::PrefsStorage::_GetIndexOfValueInPrefsArrayWithPredicate(NSArray *__strong, const Pred &) [Pred = (lambda at /Library/Caches/com.apple.xbs/C708BB1A-159F-483F-92E8-3AD716F5F92B/TemporaryDirectory.vuVP1G/Sources/CoreServices/LaunchServices.subprj/Source/LaunchServices/Info/LSPrefs.mm:1498:63)]"
++ "static NSInteger LaunchServices::PrefsStorage::_GetIndexOfValueInPrefsArrayWithPredicate(NSArray *__strong, const Pred &) [Pred = (lambda at /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CoreServices/LaunchServices.subprj/Source/LaunchServices/Info/LSPrefs.mm:1498:63)]"
 + "std::expected<std::optional<LSContainerData>, NSError *> LaunchServices::_LSGetUpdatedContainerDataIfNecessary(__strong LSDatabaseRef, LSContainerID, const LSContainerData *, BOOL)"
 + "telemetry"
 + "v28@?0@\"NSString\"8I16r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIIIICCIII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIIC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}II{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IQQQIIIIIIIIIIQIIQQQQIQQIIIQIQIIQIIIIIIIIIIIIIIIICCC[1I]II{LSAppClipFields=I}iIIIIIIII}20"
 + "v28@?0@\"NSString\"8I16r^{LSPluginData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIIIICCIII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IIIII{LSVersionNumber=[32C]}IIII}20"
 + "v28@?0@\"_LSDatabase\"8I16r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIIIICCIII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIIC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}II{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IQQQIIIIIIIIIIQIIQQQQIQQIIIQIQIIQIIIIIIIIIIIIIIIICCC[1I]II{LSAppClipFields=I}iIIIIIIII}20"
 + "v28@?0I8r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIIIICCIII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIIC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}II{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IQQQIIIIIIIIIIQIIQQQQIQQIIIQIQIIQIIIIIIIIIIIIIIIICCC[1I]II{LSAppClipFields=I}iIIIIIIII}12*20"
-+ "void LaunchServices::UTTypeEnumerateFlavoredDisplayNames(__strong LSDatabaseRef, const _UTTypeData *, const F &) [F = (lambda at /Library/Caches/com.apple.xbs/C708BB1A-159F-483F-92E8-3AD716F5F92B/TemporaryDirectory.vuVP1G/Sources/CoreServices/LaunchServices.subprj/Source/LaunchServices/Database/UTTypeCore.mm:159:55)]"
 - "-[LSApplicationRestrictionsManager _lazyLoadRestrictionsIdentifierSet:identifiersAreNullable:context:getter:]_block_invoke"
 - "B28@?0@\"_LSDatabase\"8I16r^{LSBundleData={LSBundleBaseData=IIIIIIIi{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIIIICCIII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIIC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IiI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IQQQIIIIIIIIIIQIIQQQQIQQIIIQIQIIQIIIIIIIIIIIIIIIICCC[1I]II{LSAppClipFields=I}iIIIIIIII}20"
 - "B28@?0^{LSContext=@}8I16r^{LSBundleData={LSBundleBaseData=IIIIIIIi{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIIIICCIII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIIC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IiI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IQQQIIIIIIIIIIQIIQQQQIQQIIIQIQIIQIIIIIIIIIIIIIIIICCC[1I]II{LSAppClipFields=I}iIIIIIIII}20"
@@ -1165,11 +895,9 @@ CStrings:
 - "OSStatus _LSUpdateContainerState(__strong LSDatabaseRef, LSContainerID, LSContainerData *)"
 - "Parental controls restricted list changed to %@, affected identifiers: %@"
 - "Rating rank exceptions list changed to %@, affected identifiers: %@"
-- "static NSInteger LaunchServices::PrefsStorage::_GetIndexOfValueInPrefsArrayWithPredicate(NSArray *__strong, const Pred &) [Pred = (lambda at /Library/Caches/com.apple.xbs/E6FADEB6-4B69-4DE2-AB24-1EBF9D5B330C/TemporaryDirectory.isfGeA/Sources/CoreServices/LaunchServices.subprj/Source/LaunchServices/Info/LSPrefs.mm:1477:63)]"
+- "static NSInteger LaunchServices::PrefsStorage::_GetIndexOfValueInPrefsArrayWithPredicate(NSArray *__strong, const Pred &) [Pred = (lambda at /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CoreServices/LaunchServices.subprj/Source/LaunchServices/Info/LSPrefs.mm:1477:63)]"
 - "v28@?0@\"NSString\"8I16r^{LSBundleData={LSBundleBaseData=IIIIIIIi{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIIIICCIII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIIC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IiI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IQQQIIIIIIIIIIQIIQQQQIQQIIIQIQIIQIIIIIIIIIIIIIIIICCC[1I]II{LSAppClipFields=I}iIIIIIIII}20"
 - "v28@?0@\"NSString\"8I16r^{LSPluginData={LSBundleBaseData=IIIIIIIi{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIIIICCIII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IIIII{LSVersionNumber=[32C]}IIII}20"
 - "v28@?0@\"_LSDatabase\"8I16r^{LSBundleData={LSBundleBaseData=IIIIIIIi{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIIIICCIII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIIC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IiI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IQQQIIIIIIIIIIQIIQQQQIQQIIIQIQIIQIIIIIIIIIIIIIIIICCC[1I]II{LSAppClipFields=I}iIIIIIIII}20"
 - "v28@?0I8r^{LSBundleData={LSBundleBaseData=IIIIIIIi{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIIIICCIII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIIC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IiI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IQQQIIIIIIIIIIQIIQQQQIQQIIIQIQIIQIIIIIIIIIIIIIIIICCC[1I]II{LSAppClipFields=I}iIIIIIIII}12*20"
-- "void LaunchServices::UTTypeEnumerateFlavoredDisplayNames(__strong LSDatabaseRef, const _UTTypeData *, const F &) [F = (lambda at /Library/Caches/com.apple.xbs/E6FADEB6-4B69-4DE2-AB24-1EBF9D5B330C/TemporaryDirectory.isfGeA/Sources/CoreServices/LaunchServices.subprj/Source/LaunchServices/Database/UTTypeCore.mm:159:55)]"
-
 ```

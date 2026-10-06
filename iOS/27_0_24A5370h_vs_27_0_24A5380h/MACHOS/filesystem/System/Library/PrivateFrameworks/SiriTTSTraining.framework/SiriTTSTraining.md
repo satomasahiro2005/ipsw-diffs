@@ -2,40 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/SiriTTSTraining.framework/SiriTTSTraining`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x23520c
-+  __TEXT.__text: 0x234ab8
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__objc_methlist: 0x7a4
-   __TEXT.__const: 0x10cb0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x23520c` | `0x234ab8` | **`-0x754`** |
+| `__TEXT.__unwind_info` | `0xb750` | `0xb738` | **`-0x18`** |
+| `__TEXT.__gcc_except_tab` | `0x1fed8` | `0x1fed0` | **`-0x8`** |
 
-   __TEXT.__swift5_proto: 0x18
-   __TEXT.__swift5_types: 0x10
-   __TEXT.__swift5_capture: 0x30
--  __TEXT.__gcc_except_tab: 0x1fed8
-+  __TEXT.__gcc_except_tab: 0x1fed0
-   __TEXT.__oslogstring: 0x1a3f
--  __TEXT.__unwind_info: 0xb750
-+  __TEXT.__unwind_info: 0xb738
-   __TEXT.__eh_frame: 0x70
-   __TEXT.__objc_stubs: 0xb00
-   __TEXT.__auth_stubs: 0x1b90
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
+### Same-size Content Changes
+
+- `__AUTH.__data`
+- `__AUTH_CONST.__cfstring`
+- `__AUTH_CONST.__const`
+- `__AUTH_CONST.__objc_const`
+- `__DATA.__data`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_selrefs`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__init_offsets`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__16vectorINS_4pairIiN5kaldi6VectorIfEEEENS_9allocatorIS5_EEE22__base_destruct_at_endB9foe220106EPS5_ : 80 -> 84
 ~ __ZNSt3__134__uninitialized_allocator_relocateB9foe220106INS_9allocatorINS_4pairIiN5kaldi6VectorIfEEEEEEPS6_EEvRT_T0_SB_SB_ : 232 -> 228
@@ -177,5 +170,4 @@ Functions:
 ~ _ZNSt3__134__uninitialized_allocator_relocateB9foe220106INS_9allocatorIN5kaldi8CuMatrixIfEEEEPS4_EEvRT_T0_S9_S9_.cold.1 : 92 -> 76
 ~ _ZNSt3__135__uninitialized_allocator_copy_implB9foe220106INS_9allocatorIN5kaldi8CuMatrixIfEEEEPS4_S6_S6_EET2_RT_T0_T1_S7_.cold.1 : 88 -> 72
 ~ _ZNSt3__135__uninitialized_allocator_copy_implB9foe220106INS_9allocatorIN5kaldi8CuVectorIfEEEEPS4_S6_S6_EET2_RT_T0_T1_S7_.cold.1 : 88 -> 72
-
 ```

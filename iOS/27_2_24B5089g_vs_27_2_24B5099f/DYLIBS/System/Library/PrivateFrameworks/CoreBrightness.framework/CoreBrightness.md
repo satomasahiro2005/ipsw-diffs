@@ -2,87 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/CoreBrightness.framework/CoreBrightness`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17d528` | `0x17f5a8` | **`+0x2080`** |
+| `__TEXT.__oslogstring` | `0x1aefd` | `0x1b59d` | **`+0x6a0`** |
+| `__AUTH_CONST.__objc_const` | `0x392c0` | `0x394c0` | **`+0x200`** |
+| `__TEXT.__gcc_except_tab` | `0x28e8` | `0x2a40` | **`+0x158`** |
+| `__TEXT.__objc_methlist` | `0xde50` | `0xdf50` | **`+0x100`** |
+| `__AUTH_CONST.__cfstring` | `0xedc0` | `0xee80` | **`+0xc0`** |
+| `__TEXT.__cstring` | `0xd345` | `0xd3d5` | **`+0x90`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5d70` | `0x5de8` | **`+0x78`** |
+| `__TEXT.__unwind_info` | `0x5968` | `0x59c8` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x3220` | `0x3270` | **`+0x50`** |
+| `__DATA.__objc_ivar` | `0x1888` | `0x18b4` | **`+0x2c`** |
+| `__TEXT.__const` | `0x1b6e0` | `0x1b6c8` | **`-0x18`** |
+| `__DATA_CONST.__got` | `0x7e8` | `0x7f8` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0xade` | `0xace` | **`-0x10`** |
+| `__DATA_CONST.__objc_catlist` | `0x18` | `0x20` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2300.40.39.0.0
--  __TEXT.__text: 0x179808
--  __TEXT.__objc_methlist: 0xde50
--  __TEXT.__cstring: 0xd345
--  __TEXT.__const: 0x1b6e0
--  __TEXT.__oslogstring: 0x1aefd
--  __TEXT.__gcc_except_tab: 0x28e8
 +2300.40.47.0.4
-+  __TEXT.__text: 0x17b894
-+  __TEXT.__objc_methlist: 0xdf50
-+  __TEXT.__cstring: 0xd3d5
-+  __TEXT.__const: 0x1b6c8
-+  __TEXT.__oslogstring: 0x1b59d
-+  __TEXT.__gcc_except_tab: 0x2a40
-   __TEXT.__dlopen_cstrs: 0x218
-   __TEXT.__swift5_typeref: 0xf3b
-   __TEXT.__constg_swiftt: 0xd64
-   __TEXT.__swift5_builtin: 0x118
--  __TEXT.__swift5_reflstr: 0xade
-+  __TEXT.__swift5_reflstr: 0xace
-   __TEXT.__swift5_fieldmd: 0x10e8
-   __TEXT.__swift5_assocty: 0x288
-   __TEXT.__swift5_proto: 0x328
-   __TEXT.__swift5_types: 0x138
-+  __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift5_capture: 0x3d0
-   __TEXT.__swift5_mpenum: 0x28
--  __TEXT.__swift5_protos: 0x8
--  __TEXT.__unwind_info: 0x7a78
-+  __TEXT.__unwind_info: 0x7b38
-   __TEXT.__eh_frame: 0xb98
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3220
-+  __DATA_CONST.__const: 0x3270
-   __DATA_CONST.__objc_classlist: 0x7a0
--  __DATA_CONST.__objc_catlist: 0x18
-+  __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x3a0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x5d70
-+  __DATA_CONST.__objc_selrefs: 0x5de8
-   __DATA_CONST.__objc_protorefs: 0x158
-   __DATA_CONST.__objc_superrefs: 0x640
-   __DATA_CONST.__objc_arraydata: 0xcf8
--  __DATA_CONST.__got: 0x7e8
-+  __DATA_CONST.__got: 0x7f8
-   __AUTH_CONST.__const: 0x3fc0
--  __AUTH_CONST.__cfstring: 0xedc0
--  __AUTH_CONST.__objc_const: 0x392c0
-+  __AUTH_CONST.__cfstring: 0xee80
-+  __AUTH_CONST.__objc_const: 0x394c0
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_doubleobj: 0x80
-   __AUTH_CONST.__objc_intobj: 0xd98
 
-   __AUTH_CONST.__auth_got: 0x13b0
-   __AUTH.__objc_data: 0x2d30
-   __AUTH.__data: 0x788
--  __DATA.__objc_ivar: 0x1888
-+  __DATA.__objc_ivar: 0x18b4
-   __DATA.__data: 0x351c0
-   __DATA.__common: 0x10
-   __DATA_DIRTY.__objc_data: 0x2238
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9094
 -  Symbols:   10737
 -  CStrings:  4877
 +  Functions: 9138
 +  Symbols:   10779
 +  CStrings:  4916
- 
 Symbols:
 + -[BrightnessSystemClient observerSlug:]
 + -[BrightnessSystemClient refreshKeys]

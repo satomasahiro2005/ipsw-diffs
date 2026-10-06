@@ -2,22 +2,25 @@
 
 > `/System/Library/ScreenReader/BrailleTables/LiblouisBrailleTranslator.brailletable/LiblouisBrailleTranslator`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x1ec0c
-+  __TEXT.__text: 0x1ec28
-   __TEXT.__auth_stubs: 0x560
-   __TEXT.__objc_stubs: 0x700
-   __TEXT.__objc_methlist: 0x354
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__data : content changed
-~ __DATA.__bss : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ec0c` | `0x1ec28` | **`+0x1c`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
+```text
 Functions:
 ~ __lou_defaultTableResolver : 1136 -> 1112
 ~ sub_5cd8 -> sub_5cc0 : 480 -> 484
@@ -33,5 +36,4 @@ Functions:
 ~ _lou_indexTables : 300 -> 292
 ~ sub_1c90c -> sub_1c930 : 1592 -> 1600
 ~ __lou_charToFallbackDots : 96 -> 80
-
 ```

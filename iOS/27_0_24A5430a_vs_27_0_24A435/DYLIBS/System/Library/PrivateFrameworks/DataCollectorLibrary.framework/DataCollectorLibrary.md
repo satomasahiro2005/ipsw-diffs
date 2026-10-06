@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/DataCollectorLibrary.framework/DataCollectorLibrary`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_10 : 16 -> 20

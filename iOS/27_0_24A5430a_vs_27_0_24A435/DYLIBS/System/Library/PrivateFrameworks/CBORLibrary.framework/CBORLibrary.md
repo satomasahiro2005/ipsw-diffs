@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CBORLibrary.framework/CBORLibrary`
 
-```diff
+### Section Size Changes
 
- 6.0.5.0.0
--  __TEXT.__text: 0x2b444
-+  __TEXT.__text: 0x2b43c
-   __TEXT.__objc_methlist: 0x604
-   __TEXT.__const: 0x1878
-   __TEXT.__cstring: 0xc6d
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2b444` | `0x2b43c` | **`-0x8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_25612eae8 -> sub_256cc7ae8 : 1648 -> 1640
+~ sub_255ff8ae8 -> sub_256b90ae8 : 1648 -> 1640
 ```

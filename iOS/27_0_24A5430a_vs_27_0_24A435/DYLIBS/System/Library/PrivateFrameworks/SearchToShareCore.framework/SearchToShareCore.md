@@ -2,23 +2,24 @@
 
 > `/System/Library/PrivateFrameworks/SearchToShareCore.framework/SearchToShareCore`
 
-```diff
+### Section Size Changes
 
- 3400.1.6.30.0
--  __TEXT.__text: 0x93d58
-+  __TEXT.__text: 0x93d6c
-   __TEXT.__objc_methlist: 0x4a1c
-   __TEXT.__const: 0x4f84
-   __TEXT.__cstring: 0x22e1
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x93d58` | `0x93d6c` | **`+0x14`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2a1d3d590 -> sub_2a2af0590 : 860 -> 872
-~ sub_2a1d4a5d0 -> sub_2a2afd5dc : 272 -> 280
-~ sub_2a1d4c15c -> sub_2a2aff170 : 1288 -> 1292
-~ sub_2a1d4dfec -> sub_2a2b01004 : 640 -> 644
-~ sub_2a1d4e2f8 -> sub_2a2b01314 : 788 -> 784
-~ sub_2a1d4ebc4 -> sub_2a2b01bdc : 648 -> 652
-~ sub_2a1d4f00c -> sub_2a2b02028 : 2096 -> 2092
-~ sub_2a1d59a24 -> sub_2a2b0ca3c : 764 -> 756
-~ sub_2a1d5a56c -> sub_2a2b0d57c : 312 -> 324
-~ sub_2a1d827c0 -> sub_2a2b357dc : 500 -> 492
+~ sub_2a1c33590 -> sub_2a29ee590 : 860 -> 872
+~ sub_2a1c405d0 -> sub_2a29fb5dc : 272 -> 280
+~ sub_2a1c4215c -> sub_2a29fd170 : 1288 -> 1292
+~ sub_2a1c43fec -> sub_2a29ff004 : 640 -> 644
+~ sub_2a1c442f8 -> sub_2a29ff314 : 788 -> 784
+~ sub_2a1c44bc4 -> sub_2a29ffbdc : 648 -> 652
+~ sub_2a1c4500c -> sub_2a2a00028 : 2096 -> 2092
+~ sub_2a1c4fa24 -> sub_2a2a0aa3c : 764 -> 756
+~ sub_2a1c5056c -> sub_2a2a0b57c : 312 -> 324
+~ sub_2a1c787c0 -> sub_2a2a337dc : 500 -> 492
 ```

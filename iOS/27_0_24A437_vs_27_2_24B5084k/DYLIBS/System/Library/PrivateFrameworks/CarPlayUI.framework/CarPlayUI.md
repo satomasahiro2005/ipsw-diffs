@@ -2,92 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/CarPlayUI.framework/CarPlayUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x11e408` | `0x12255c` | **`+0x4154`** |
+| `__TEXT.__swift5_typeref` | `0x1ad98` | `0x1c68e` | **`+0x18f6`** |
+| `__TEXT.__const` | `0xdcf4` | `0xe0d4` | **`+0x3e0`** |
+| `__DATA.__data` | `0x63b0` | `0x6578` | **`+0x1c8`** |
+| `__DATA.__bss` | `0x9b38` | `0x9cd8` | **`+0x1a0`** |
+| `__AUTH_CONST.__const` | `0x7448` | `0x75d0` | **`+0x188`** |
+| `__TEXT.__swift5_fieldmd` | `0x2eb0` | `0x2f94` | **`+0xe4`** |
+| `__AUTH_CONST.__objc_const` | `0xedd0` | `0xee90` | **`+0xc0`** |
+| `__TEXT.__constg_swiftt` | `0x5930` | `0x59e8` | **`+0xb8`** |
+| `__TEXT.__objc_methlist` | `0x5b98` | `0x5bf8` | **`+0x60`** |
+| `__TEXT.__swift5_capture` | `0xe14` | `0xe74` | **`+0x60`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3848` | `0x3890` | **`+0x48`** |
+| `__AUTH.__data` | `0x31e0` | `0x3220` | **`+0x40`** |
+| `__TEXT.__swift5_reflstr` | `0x1f2b` | `0x1f6b` | **`+0x40`** |
+| `__TEXT.__swift5_assocty` | `0x11a0` | `0x11d0` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x3ec8` | `0x3ef8` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x1c88` | `0x1ca8` | **`+0x20`** |
+| `__TEXT.__swift5_proto` | `0x49c` | `0x4a8` | **`+0xc`** |
+| `__TEXT.__swift5_types` | `0x42c` | `0x438` | **`+0xc`** |
+| `__DATA.__objc_ivar` | `0x5a8` | `0x5b0` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x13b0` | `0x13a8` | **`-0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -542.7.0.0.0
--  __TEXT.__text: 0x117b48
--  __TEXT.__objc_methlist: 0x5b98
--  __TEXT.__const: 0xdcf4
 +552.3.0.0.0
-+  __TEXT.__text: 0x11bc44
-+  __TEXT.__objc_methlist: 0x5bf8
-+  __TEXT.__const: 0xe0d4
-   __TEXT.__cstring: 0x1bed
-   __TEXT.__gcc_except_tab: 0x90
-   __TEXT.__ustring: 0x12
-   __TEXT.__oslogstring: 0x87d
--  __TEXT.__swift5_typeref: 0x1ad98
--  __TEXT.__swift5_reflstr: 0x1f2b
--  __TEXT.__swift5_assocty: 0x11a0
--  __TEXT.__constg_swiftt: 0x5930
-+  __TEXT.__swift5_typeref: 0x1c68e
-+  __TEXT.__swift5_reflstr: 0x1f6b
-+  __TEXT.__swift5_assocty: 0x11d0
-+  __TEXT.__constg_swiftt: 0x59e8
-   __TEXT.__swift5_builtin: 0x1f4
-   __TEXT.__swift5_mpenum: 0x80
--  __TEXT.__swift5_fieldmd: 0x2eb0
--  __TEXT.__swift5_proto: 0x49c
--  __TEXT.__swift5_types: 0x42c
-+  __TEXT.__swift5_fieldmd: 0x2f94
-+  __TEXT.__swift5_proto: 0x4a8
-+  __TEXT.__swift5_types: 0x438
-   __TEXT.__swift5_protos: 0x30
--  __TEXT.__swift5_capture: 0xe14
-+  __TEXT.__swift5_capture: 0xe74
-   __TEXT.__swift_as_entry: 0x28
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x2c
--  __TEXT.__unwind_info: 0x50b0
-+  __TEXT.__unwind_info: 0x50e8
-   __TEXT.__eh_frame: 0xf20
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0xe8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3848
-+  __DATA_CONST.__objc_selrefs: 0x3890
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__objc_superrefs: 0x180
-   __DATA_CONST.__objc_arraydata: 0xd8
--  __DATA_CONST.__got: 0x13b0
--  __AUTH_CONST.__const: 0x7448
-+  __DATA_CONST.__got: 0x13a8
-+  __AUTH_CONST.__const: 0x75d0
-   __AUTH_CONST.__cfstring: 0x15e0
--  __AUTH_CONST.__objc_const: 0xedd0
-+  __AUTH_CONST.__objc_const: 0xee90
-   __AUTH_CONST.__objc_intobj: 0x270
-   __AUTH_CONST.__objc_arrayobj: 0x120
-   __AUTH_CONST.__objc_doubleobj: 0x80
--  __AUTH_CONST.__auth_got: 0x1c88
-+  __AUTH_CONST.__auth_got: 0x1ca8
-   __AUTH.__objc_data: 0x3378
--  __AUTH.__data: 0x31e0
--  __DATA.__objc_ivar: 0x5a8
--  __DATA.__data: 0x63b0
-+  __AUTH.__data: 0x3220
-+  __DATA.__objc_ivar: 0x5b0
-+  __DATA.__data: 0x6578
-   __DATA.__common: 0x228
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AVRouting.framework/AVRouting
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7113
--  Symbols:   20262
+-  Symbols:   18912
 +  Functions: 7160
-+  Symbols:   20515
-   CStrings:  338
- 
++  Symbols:   19157
 Symbols:
 + -[CPUIGridTemplateCollectionViewFlowLayout lastPreparedHeight]
 + -[CPUIGridTemplateCollectionViewFlowLayout setLastPreparedHeight:]
@@ -601,17 +556,6 @@ Symbols:
 + _get_witness_table 7SwiftUI19_ConditionalContentVyAA08ModifiedD0VyAEyAEyAA6VStackVyAA05TupleD0VyAEyAA6HStackVyAIyAEyAEyAEyAA4ViewPAAE9focusableyQrSbFQOyAEyAEy07CarPlayB004GridI0C4HeroO4CellVAA18_AspectRatioLayoutVGAA06_FrameR0VG_Qo_AO22InnerHighlightModifier33_72839E0F9B593DB3362A42CA7E21E962LLVyAA5ColorVGGAO011InsetShadowV033_D2A691051D5D1080C156B8A9FDB2D9F3LLVGA10_GSg_AEyAEyAGyAIyAEyAEyAEyAA4TextVAO015CPUIPrimaryTextV0VGAO8Vibrancy33_098ACECF7CFAA1C6C001869F7330DA6BLLO0iV0VGAA022_EnvironmentKeyWritingV0VySiSgGGSg_AEyAEyAEyA15_AO017CPUISecondaryTextV0VGA23_GA28_GSgQPGGAZGAA05_FlexsR0VGQPGGAZG_AEyAKyAIyAA7ForEachVySaySi6offset_So17CPUIDetailsButtonC7elementtGSiACyACyAEyAEyAmAE11buttonStyleyQrqd__AA11ButtonStyleRd__lFQOyAA6ButtonVyACyAEyAEyAEyAEyAEyAKyAIyAEyAEyAA5ImageVAZGAA013_TraitWritingV0VyAA0R16PriorityTraitKeyVGGSg_AEyAEyAmAE08progressI5StyleyQrqd__AA08ProgressI5StyleRd__lFQOyAA08ProgressI0VyAA05EmptyI0VA72_G_AO30CPUISwiftUIButtonConfigurationO016PlaybackProgressI5StyleVQo_AZGA64_GSgAEyA15_A64_GQPGGA26_yAA4FontVSgGGAA08_PaddingR0VGA91_GAZGA64_GAEyAEyAEyAEyA15_A91_GA91_GAZGA64_GGG_A75_25ListHeaderTextButtonStyleVQo_AZGAA01_d5ShapeV0VyAA7CapsuleVGGAEyAEyAmAEA53_yQrqd__AAA54_Rd__lFQOyA56_yAEyAEyAEyA58_A88_GA91_GAZGSgG_A75_32ListHeaderSymbolImageButtonStyleVQo_AZGA110_GGAEyAEyAmAEA53_yQrqd__AAA54_Rd__lFQOyA56_yAEyAEyAEyA58_AWGAZGAA11_ClipEffectVyAA6CircleVGGG_A75_26ListHeaderImageButtonStyleVQo_AZGA110_GGG_AA6SpacerVQPGGAZGSgQPGGAA024_SafeAreaRegionsIgnoringR0VGAZGA91_GAEyAEyAKyAIyA13__AEyAGyAIyAIyA29__AEyA140_AZGQPGSg_AIyA35__A152_QPGSgA30_AIyA140__A142_QPGSgQPGGA41_GQPGGA148_GAZGGAaLHPA151_AaLHPA150_AaLHPA149_AaLHPA146_AaLHPyHC_A148_AAA22_HPyHCHC_AzAA22_HPyHCHC_A91_AAA22_HPyHCHC_A165_AaLHPA164_AaLHPA163_AaLHPyHC_A148_AAA22_HPyHCHC_AzAA22_HPyHCHCHC
 + _get_witness_table 7SwiftUI5GroupVyAA19_ConditionalContentVyAEyAA08ModifiedE0VyAA12ViewThatFitsVyAA6VStackVyAA05TupleE0VyAEyAEyAGyAGyAA4TextVAA30_EnvironmentKeyWritingModifierVySiSgGGAQyAA0L9AlignmentOGGAXGAXGSg_AGyAA6SpacerVAA12_FrameLayoutVGAA6HStackVyAMyAGyAGyAA5ImageVAQyA8_5ScaleOGGAA06_TraitoP0VyAA0t8PriorityxN0VGGSg_AGyAGyAA08ProgressG0VyAA05EmptyG0VA23_GAA05_FlexsT0VG07CarPlayB08Vibrancy33_098ACECF7CFAA1C6C001869F7330DA6BLLO0gP0VGSgAEyAGyAOA17_GA36_GSgQPGGQPGGGA26_GAGyAKyAMyAO_A6_yAMyA19__A35_A36_AMyA36__A38_QPGSgQPGGQPGGA26_GGAGyA6_yAMyA19__A35_AMyA36__A36_SgQPGSgA38_QPGGA26_GGGAA0G0HPA59_AAA61_HPA52_AAA61_HPA44_AAA61_HPA43_AAA61_HPyHC_A26_AAA32_HPyHCHC_A51_AAA61_HPA50_AAA61_HPyHC_A26_AAA32_HPyHCHCHC_A58_AAA61_HPA57_AAA61_HPyHC_A26_AAA32_HPyHCHCHC_HC
 + _get_witness_table 9CarPlayUI30CPUISwiftUIButtonConfigurationO20GridPanelButtonStyleV0ghiJ4View33_79D14A66A7AF83F48B30F64F503B0B1ELLV05SwiftC00K0HPyHC
-+ _objc_msgSend$_glassButtonImage
-+ _objc_msgSend$_resolvedRenderingMode
-+ _objc_msgSend$audioFormatController
-+ _objc_msgSend$collapsible
-+ _objc_msgSend$initWithAspectRatio:hasThumbnail:useAlternateStyling:
-+ _objc_msgSend$initWithIdentifier:title:image:collapsible:handler:
-+ _objc_msgSend$setPriority:
-+ _objc_msgSend$setWidthConstraint:
-+ _objc_msgSend$symbolConfiguration
-+ _objc_msgSend$useAlternateStyling
-+ _objc_msgSend$widthConstraint
 + _symbolic SuSg28maximumNumberOfLinesOverride______11aspectRatioSb12hasThumbnailSb19useAlternateStylingt 12CoreGraphics7CGFloatV
 + _symbolic _____ 9CarPlayUI30CPUISwiftUIButtonConfigurationO20GridPanelButtonStyleV
 + _symbolic _____ 9CarPlayUI30CPUISwiftUIButtonConfigurationO20GridPanelButtonStyleV0ghiJ4View33_79D14A66A7AF83F48B30F64F503B0B1ELLV
@@ -1090,9 +1034,6 @@ Symbols:
 - _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA6VStackVyAA05TupleD0VyACyAA24ButtonStyleConfigurationV5LabelVAA30_EnvironmentKeyWritingModifierVySbGG_ACyACyACyACyACyACyAA4TextVAMySiSgGGAMyAA0O9AlignmentOGGAA011_ForegroundhN0VyAA5ColorVGGAA14_PaddingLayoutVGA4_GAA010_FixedSizeT0VGSgQPGGAA010_FlexFrameT0VGA4_GAA011_BackgroundN0VyAA10_ShapeViewVyAA16RoundedRectangleVA0_GGGAA4ViewHPA16_AAA26_HPA15_AAA26_HPA12_AAA26_HPyHC_A14_AA04ViewN0HPyHCHC_A4_AAA27_HPyHCHC_A24_AAA27_HPyHCHC
 - _get_witness_table 7SwiftUI19_ConditionalContentVyAA08ModifiedD0VyAEyAEyAA6VStackVyAA05TupleD0VyAEyAA6HStackVyAIyAA4ViewPAAE9focusableyQrSbFQOyAEyAEy07CarPlayB004GridI0C4HeroO4CellVAA18_AspectRatioLayoutVGAA06_FrameR0VG_Qo_Sg_AEyAEyAGyAIyAEyAA4TextVAA30_EnvironmentKeyWritingModifierVySiSgGGSg_A9_QPGGAZGAA05_FlexsR0VGQPGGAZG_AEyAKyAIyAA7ForEachVySaySi6offset_So17CPUIDetailsButtonC7elementtGSiACyACyAEyAEyAmAE11buttonStyleyQrqd__AA11ButtonStyleRd__lFQOyAA6ButtonVyACyAEyAEyAEyAEyAEyAKyAIyAEyAEyAA5ImageVAZGAA06_TraitwX0VyAA0r13PriorityTraitV0VGGSg_AEyAEyAmAE08progressI5StyleyQrqd__AA08ProgressI5StyleRd__lFQOyAA08ProgressI0VyAA05EmptyI0VA45_G_AO30CPUISwiftUIButtonConfigurationO016PlaybackProgressI5StyleVQo_AZGA37_GSgAEyA3_A37_GQPGGA5_yAA4FontVSgGGAA08_PaddingR0VGA64_GAZGA37_GAEyAEyAEyAEyA3_A64_GA64_GAZGA37_GGG_A48_010ListHeaderT11ButtonStyleVQo_AZGAA01_d5ShapeX0VyAA7CapsuleVGGAEyAEyAmAEA26_yQrqd__AAA27_Rd__lFQOyA29_yAEyAEyAEyA31_A61_GA64_GAZGSgG_A48_32ListHeaderSymbolImageButtonStyleVQo_AZGA83_GGAEyAEyAmAEA26_yQrqd__AAA27_Rd__lFQOyA29_yAEyAEyAEyA31_AWGAZGAA11_ClipEffectVyAA6CircleVGGG_A48_26ListHeaderImageButtonStyleVQo_AZGA83_GGG_AA6SpacerVQPGGAZGSgQPGGAA024_SafeAreaRegionsIgnoringR0VGAZGA64_GAEyAEyAKyAIyA1__AEyAGyAIyAIyA8__AEyA113_AZGQPGSg_A127_A9_AIyA113__A115_QPGSgQPGGA14_GQPGGA121_GAZGGAaLHPA124_AaLHPA123_AaLHPA122_AaLHPA119_AaLHPyHC_A121_AA0iX0HPyHCHC_AzAA138_HPyHCHC_A64_AAA138_HPyHCHC_A136_AaLHPA135_AaLHPA134_AaLHPyHC_A121_AAA138_HPyHCHC_AzAA138_HPyHCHCHC
 - _get_witness_table 7SwiftUI5GroupVyAA19_ConditionalContentVyAEyAA08ModifiedE0VyAA12ViewThatFitsVyAA05TupleE0VyAA6VStackVyAKyAGyAA4TextVAA30_EnvironmentKeyWritingModifierVySiSgGGSg_AuGyAA6SpacerVAA12_FrameLayoutVGAA6HStackVyAKyAGyAGyAA5ImageVAQyA2_5ScaleOGGAA06_TraitoP0VyAA0s8PrioritywN0VGGSg_AGyAGyAGyAA08ProgressG0VyAA05EmptyG0VA17_GAYGA11_G07CarPlayB08Vibrancy33_098ACECF7CFAA1C6C001869F7330DA6BLLO0gP0VGSgAEyA2OGSgQPGGQPGG_AMyAKyAU_AZA32_QPGGQPGGAA05_FlexrS0VGAGyAMyAKyAO_A0_yAKyA13__A28_AGyAOA11_GAKyAO_A30_QPGSgQPGGQPGGA40_GGAGyA0_yAKyA13__A28_AKyA42__AOSgQPGSgA30_QPGGA40_GGGAA0G0HPA57_AAA59_HPA50_AAA59_HPA41_AAA59_HPA38_AAA59_HPyHC_A40_AAA25_HPyHCHC_A49_AAA59_HPA48_AAA59_HPyHC_A40_AAA25_HPyHCHCHC_A56_AAA59_HPA55_AAA59_HPyHC_A40_AAA25_HPyHCHCHC_HC
-- _objc_msgSend$_setHyphenationFactor:
-- _objc_msgSend$initWithAspectRatio:hasThumbnail:
-- _objc_msgSend$initWithIdentifier:title:image:handler:
 - _symbolic SuSg28maximumNumberOfLinesOverride______11aspectRatioSbSg12hasThumbnailt 12CoreGraphics7CGFloatV
 - _symbolic ___________y_____y_____yADy__________y_____GG_____y_____GGSg_ADyADyADy_____y_____APG_____GALG_____GSgADyAaLGACyAA______yA2AGSgQPGSgQPGGt 7SwiftUI4TextV AA6HStackV AA12TupleContentV AA08ModifiedF0V AA5ImageV AA30_EnvironmentKeyWritingModifierV AK5ScaleO AA06_TraitkL0V AA014LayoutPrioritynJ0V AA12ProgressViewV AA05EmptyR0V AA06_FrameO0V 07CarPlayB08Vibrancy33_098ACECF7CFAA1C6C001869F7330DA6BLLO0rL0V AA012_ConditionalF0V
 - _symbolic _____yAAyAAyAAyAAyAAy__________ySiSgGGACy_____GG_____y_____GG_____GANG_____GSg 7SwiftUI15ModifiedContentV AA4TextV AA30_EnvironmentKeyWritingModifierV AA0E9AlignmentO AA016_ForegroundStyleI0V AA5ColorV AA14_PaddingLayoutV AA010_FixedSizeO0V

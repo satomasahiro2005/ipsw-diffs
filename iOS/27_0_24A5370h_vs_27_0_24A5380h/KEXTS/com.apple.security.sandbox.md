@@ -2,36 +2,30 @@
 
 > `com.apple.security.sandbox`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x1eab69` | `0x1ed021` | **`+0x24b8`** |
+| `__TEXT_EXEC.__text` | `0x38f4c` | `0x38ee0` | **`-0x6c`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__os_log: 0x1d58
--  __TEXT.__const: 0x1eab69
-+  __TEXT.__const: 0x1ed021
-   __TEXT.__cstring: 0x6f50
--  __TEXT_EXEC.__text: 0x38f4c
-+  __TEXT_EXEC.__text: 0x38ee0
-   __TEXT_EXEC.__auth_stubs: 0x1090
-   __DATA.__data: 0x220
-   __DATA.__bss: 0x15300
-Sections:
-~ __DATA.__data : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__kalloc_type : content changed
-~ __DATA_CONST.__kalloc_var : content changed
-~ __DATA_CONST.__auth_got : content changed
-~ __DATA_CONST.__got : content changed
+-3051.0.18.0.3
++3051.0.30.0.0
 Functions:
-~ sub_fffffe000a873be0 -> sub_fffffe000a874b80 : 452 -> 444
+~ sub_fffffff00a871a60 -> sub_fffffff00a872a00 : 452 -> 444
 ~ ___hook_iokit_check_set_properties_block_invoke : 1580 -> 1560
 ~ _hook_policy_init : 5600 -> 5584
-~ sub_fffffe000a889efc -> sub_fffffe000a88ae70 : 224 -> 212
-~ sub_fffffe000a88a10c -> sub_fffffe000a88b074 : 432 -> 420
+~ sub_fffffff00a887d7c -> sub_fffffff00a888cf0 : 224 -> 212
+~ sub_fffffff00a887f8c -> sub_fffffff00a888ef4 : 432 -> 420
 ~ _syscall_reference_retain : 876 -> 872
-~ sub_fffffe000a88a628 -> sub_fffffe000a88b580 : 480 -> 468
+~ sub_fffffff00a8884a8 -> sub_fffffff00a889400 : 480 -> 468
 ~ _populate_event_context : 4488 -> 4500
 ~ _hook_cred_label_update_execve : 5392 -> 5372
-~ _sandbox_create_for_executable -> sub_fffffe000a899fd0 : 1056 -> 1048
-~ sub_fffffe000a8a1864 -> sub_fffffe000a8a27a0 : 748 -> 752
+~ sub_fffffff00a896f0c -> sub_fffffff00a897e50 : 1056 -> 1048
+~ sub_fffffff00a89f6e4 -> sub_fffffff00a8a0620 : 748 -> 752
 ~ _syscall_check_sandbox : 4092 -> 4080
-
 ```

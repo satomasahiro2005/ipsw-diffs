@@ -2,110 +2,54 @@
 
 > `/System/Library/Frameworks/HealthKit.framework/HealthKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x174bbc` | `0xd491c` | **`-0xa02a0`** |
+| `__TEXT.__text` | `0x428120` | `0x42bdbc` | **`+0x3c9c`** |
+| `__TEXT.__cstring` | `0x396a2` | `0x38892` | **`-0xe10`** |
+| `__DATA_CONST.__const` | `0x109a8` | `0xffc0` | **`-0x9e8`** |
+| `__DATA.__bss` | `0x341b0` | `0x347a0` | **`+0x5f0`** |
+| `__TEXT.__eh_frame` | `0x8820` | `0x8be8` | **`+0x3c8`** |
+| `__AUTH_CONST.__const` | `0x14c29` | `0x14d81` | **`+0x158`** |
+| `__TEXT.__unwind_info` | `0x140d0` | `0x14228` | **`+0x158`** |
+| `__TEXT.__oslogstring` | `0xdc23` | `0xdb53` | **`-0xd0`** |
+| `__AUTH_CONST.__cfstring` | `0x344e0` | `0x345a0` | **`+0xc0`** |
+| `__TEXT.__constg_swiftt` | `0x6144` | `0x61f0` | **`+0xac`** |
+| `__TEXT.__swift5_typeref` | `0x58db` | `0x595b` | **`+0x80`** |
+| `__AUTH.__objc_data` | `0xfea8` | `0xfe30` | **`-0x78`** |
+| `__DATA_DIRTY.__objc_data` | `0x2798` | `0x2810` | **`+0x78`** |
+| `__AUTH.__data` | `0x3928` | `0x3990` | **`+0x68`** |
+| `__TEXT.__swift5_fieldmd` | `0x5888` | `0x58e8` | **`+0x60`** |
+| `__DATA.__data` | `0x102e0` | `0x10330` | **`+0x50`** |
+| `__TEXT.__swift5_assocty` | `0x16a8` | `0x16f0` | **`+0x48`** |
+| `__DATA_DIRTY.__data` | `0x2d8` | `0x318` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x2070` | `0x20a8` | **`+0x38`** |
+| `__AUTH_CONST.__objc_const` | `0x567c0` | `0x567f0` | **`+0x30`** |
+| `__TEXT.__swift5_proto` | `0x1a38` | `0x1a68` | **`+0x30`** |
+| `__TEXT.__swift5_reflstr` | `0x3c4b` | `0x3c7b` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x32f94` | `0x32fb4` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x40bc` | `0x40d8` | **`+0x1c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x124e8` | `0x124f8` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0xd68` | `0xd78` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x794` | `0x79c` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x3168` | `0x316c` | **`+0x4`** |
+| `__TEXT.__swift5_protos` | `0xe0` | `0xe4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.36.2.7
--  __TEXT.__text: 0x409df0
--  __TEXT.__objc_methlist: 0x32f94
--  __TEXT.__cstring: 0x396a2
--  __TEXT.__const: 0x174bbc
--  __TEXT.__oslogstring: 0xdc23
--  __TEXT.__gcc_except_tab: 0x40bc
 +7027.1.45.2.4
-+  __TEXT.__text: 0x40d970
-+  __TEXT.__objc_methlist: 0x32fb4
-+  __TEXT.__cstring: 0x38892
-+  __TEXT.__const: 0xd491c
-+  __TEXT.__oslogstring: 0xdb53
-+  __TEXT.__gcc_except_tab: 0x40d8
-   __TEXT.__dlopen_cstrs: 0x644
-   __TEXT.__ustring: 0x1d0
--  __TEXT.__constg_swiftt: 0x6144
--  __TEXT.__swift5_typeref: 0x58db
-+  __TEXT.__constg_swiftt: 0x61f0
-+  __TEXT.__swift5_typeref: 0x595b
-   __TEXT.__swift5_builtin: 0x564
--  __TEXT.__swift5_reflstr: 0x3c4b
--  __TEXT.__swift5_fieldmd: 0x5888
--  __TEXT.__swift5_assocty: 0x16a8
--  __TEXT.__swift5_proto: 0x1a38
--  __TEXT.__swift5_types: 0x794
--  __TEXT.__swift5_protos: 0xe0
-+  __TEXT.__swift5_reflstr: 0x3c7b
-+  __TEXT.__swift5_fieldmd: 0x58e8
-+  __TEXT.__swift5_assocty: 0x16f0
-+  __TEXT.__swift5_proto: 0x1a68
-+  __TEXT.__swift5_types: 0x79c
-+  __TEXT.__swift5_protos: 0xe4
-   __TEXT.__swift_as_entry: 0x1fc
-   __TEXT.__swift_as_ret: 0x204
-   __TEXT.__swift_as_cont: 0x40c
-   __TEXT.__swift5_capture: 0x1098
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x19060
--  __TEXT.__eh_frame: 0x8838
-+  __TEXT.__unwind_info: 0x191b8
-+  __TEXT.__eh_frame: 0x8c00
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x109a8
-+  __DATA_CONST.__const: 0xffc0
-   __DATA_CONST.__objc_classlist: 0x1d10
-   __DATA_CONST.__objc_catlist: 0x1b8
-   __DATA_CONST.__objc_protolist: 0x848
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x124e8
-+  __DATA_CONST.__objc_selrefs: 0x124f8
-   __DATA_CONST.__objc_protorefs: 0x650
-   __DATA_CONST.__objc_superrefs: 0x18c8
-   __DATA_CONST.__objc_arraydata: 0x69d8
-   __DATA_CONST.__got: 0x1f00
--  __AUTH_CONST.__const: 0x14c29
--  __AUTH_CONST.__cfstring: 0x344e0
--  __AUTH_CONST.__objc_const: 0x567c0
-+  __AUTH_CONST.__const: 0x14d81
-+  __AUTH_CONST.__cfstring: 0x345a0
-+  __AUTH_CONST.__objc_const: 0x567f0
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x4a58
-   __AUTH_CONST.__objc_arrayobj: 0x3f0
-   __AUTH_CONST.__objc_dictobj: 0x488
-   __AUTH_CONST.__objc_doubleobj: 0x160
--  __AUTH_CONST.__auth_got: 0x2070
--  __AUTH.__objc_data: 0xfea8
--  __AUTH.__data: 0x3928
--  __DATA.__objc_ivar: 0x3168
--  __DATA.__data: 0x102e0
-+  __AUTH_CONST.__auth_got: 0x20a8
-+  __AUTH.__objc_data: 0xfe30
-+  __AUTH.__data: 0x3990
-+  __DATA.__objc_ivar: 0x316c
-+  __DATA.__data: 0x10330
-   __DATA.__common: 0xa00
--  __DATA_DIRTY.__objc_data: 0x2798
--  __DATA_DIRTY.__data: 0x2d8
--  __DATA_DIRTY.__bss: 0xd68
-+  __DATA_DIRTY.__objc_data: 0x2810
-+  __DATA_DIRTY.__data: 0x318
-+  __DATA_DIRTY.__bss: 0xd78
-   __DATA_DIRTY.__common: 0x98
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 30777
--  Symbols:   43055
+-  Symbols:   37007
 -  CStrings:  9339
 +  Functions: 30859
-+  Symbols:   43077
++  Symbols:   37030
 +  CStrings:  9024
- 
 Symbols:
 + +[HKFHIRIdentifier scopedResourceID:inHealthLinkNamespace:fullURL:]
 + -[HKImportExclusionDeviceDataSource isHKFeatureIdentifierOxygenSaturationRecordingCompanionAnalysisImportAllowedForActiveWatchWithDeviceType:serialNumber:]
@@ -131,7 +75,6 @@ Symbols:
 + _kHKMedicalIDFollowUpClientIdentifier
 + _kHKMedicalIDFollowUpReviewActionIdentifier
 + _kHKMedicalIDFollowUpUniqueIdentifier
-+ _objc_msgSend$isHKFeatureIdentifierOxygenSaturationRecordingCompanionAnalysisImportAllowedForActiveWatchWithDeviceType:serialNumber:
 + _symbolic $s9HealthKit24SleepPercentageProvidingP
 + _symbolic 16DurationProvider_____Qz 9HealthKit24SleepPercentageProvidingP
 + _symbolic _____ 9HealthKit12SleepMetricsV11PercentagesV
@@ -143,8 +86,6 @@ Symbols:
 - __OBJC_$_CLASS_METHODS_HKImportExclusionDeviceDataSource(HKFeatureIdentifierOxygenSaturationRecordingAllowedDeviceSerialNumbers|HKFeatureIdentifierOxygenSaturationRecordingAllowedDeviceSerialNumbersTIB|HKFeatureIdentifierOxygenSaturationRecordingAllowedDeviceTypes|HKFeatureIdentifierOxygenSaturationRecordingCompanionAnalysisAllowedDeviceSerialNumbers)
 - ___swift_memcpy449_8
 - ___swift_memcpy489_8
-- _objc_msgSend$isDeviceSerialNumberOnAllowedListForHKFeatureIdentifierOxygenSaturationRecordingCompanionAnalysis:
-- _objc_msgSend$isHKFeatureIdentifierOxygenSaturationRecordingCompanionAnalysisImportAllowedForActiveWatchWithSerialNumber:
 CStrings:
 + "%@%@%@%@"
 + "ConnectedGymNFCDetectionMode"

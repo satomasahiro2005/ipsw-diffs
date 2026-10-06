@@ -2,69 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/SiriContactsCommon.framework/SiriContactsCommon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x22f74` | `0x238e4` | **`+0x970`** |
+| `__DATA.__bss` | `0x7480` | `0x7a00` | **`+0x580`** |
+| `__TEXT.__const` | `0x4170` | `0x43f8` | **`+0x288`** |
+| `__AUTH_CONST.__const` | `0x1eb9` | `0x1fe1` | **`+0x128`** |
+| `__TEXT.__swift5_typeref` | `0xe06` | `0xe88` | **`+0x82`** |
+| `__DATA.__data` | `0xd08` | `0xd70` | **`+0x68`** |
+| `__TEXT.__constg_swiftt` | `0x998` | `0x9fc` | **`+0x64`** |
+| `__TEXT.__eh_frame` | `0x1098` | `0x10f0` | **`+0x58`** |
+| `__TEXT.__swift5_fieldmd` | `0xbf8` | `0xc4c` | **`+0x54`** |
+| `__TEXT.__unwind_info` | `0xe58` | `0xea0` | **`+0x48`** |
+| `__TEXT.__swift5_proto` | `0x3b0` | `0x3dc` | **`+0x2c`** |
+| `__TEXT.__swift5_reflstr` | `0x5c1` | `0x5d1` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0xfc` | `0x108` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
 -3605.5.1.0.0
--  __TEXT.__text: 0x21708
 +3605.6.1.0.0
-+  __TEXT.__text: 0x22000
-   __TEXT.__objc_methlist: 0x44
--  __TEXT.__const: 0x4170
-+  __TEXT.__const: 0x43f8
-   __TEXT.__oslogstring: 0x722
--  __TEXT.__swift5_typeref: 0xe06
-+  __TEXT.__swift5_typeref: 0xe88
-   __TEXT.__cstring: 0x79e
--  __TEXT.__swift5_reflstr: 0x5c1
-+  __TEXT.__swift5_reflstr: 0x5d1
-   __TEXT.__swift5_assocty: 0x138
--  __TEXT.__constg_swiftt: 0x998
--  __TEXT.__swift5_fieldmd: 0xbf8
--  __TEXT.__swift5_proto: 0x3b0
--  __TEXT.__swift5_types: 0xfc
-+  __TEXT.__constg_swiftt: 0x9fc
-+  __TEXT.__swift5_fieldmd: 0xc4c
-+  __TEXT.__swift5_proto: 0x3dc
-+  __TEXT.__swift5_types: 0x108
-   __TEXT.__swift5_capture: 0xe8
-   __TEXT.__swift5_protos: 0xc
-   __TEXT.__swift_as_entry: 0x44
 
-   __TEXT.__swift_as_cont: 0x5c
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x1208
--  __TEXT.__eh_frame: 0x1098
-+  __TEXT.__unwind_info: 0x1270
-+  __TEXT.__eh_frame: 0x10f0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x178
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1eb9
-+  __AUTH_CONST.__const: 0x1fe1
-   __AUTH_CONST.__objc_const: 0x1c0
-   __AUTH_CONST.__auth_got: 0x928
-   __AUTH.__objc_data: 0x110
-   __AUTH.__data: 0x290
--  __DATA.__data: 0xd08
-+  __DATA.__data: 0xd70
-   __DATA.__common: 0x28
-   __DATA_DIRTY.__objc_data: 0x48
-   __DATA_DIRTY.__data: 0x38
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1548
--  Symbols:   4193
+-  Symbols:   4151
 +  Functions: 1584
-+  Symbols:   4319
-   CStrings:  90
- 
++  Symbols:   4277
 Symbols:
 + _$s18SiriContactsCommon0B18SnippetPluginModelO12emptyContactyAcA05EmptyhdF0V_tcACmFWC
 + _$s18SiriContactsCommon0B18SnippetPluginModelO22EmptyContactCodingKeys33_177E55D66B4B3431CB612B735686642ELLO11stringValueAFSgSS_tcfCTm

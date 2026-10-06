@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CoreSVG.framework/CoreSVG`
 
-```diff
+### Section Size Changes
 
- 362.0.0.0.0
--  __TEXT.__text: 0x35440
-+  __TEXT.__text: 0x35458
-   __TEXT.__const: 0x2e8
-   __TEXT.__cstring: 0x21ca
-   __TEXT.__gcc_except_tab: 0x3254
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x35440` | `0x35458` | **`+0x18`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__111__introsortINS_17_ClassicAlgPolicyERZNK15SVGAttributeMap6sortedEbE3$_0P13AttributeInfoLb0EEEvT1_S7_T0_NS_15iterator_traitsIS7_E15difference_typeEb : 4980 -> 4976
 ~ __ZNSt3__13mapINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEj25CaseInsensitiveStringLessNS4_INS_4pairIKS6_jEEEEEC2B9fqe220106ESt16initializer_listISA_ERKS7_ : 84 -> 88

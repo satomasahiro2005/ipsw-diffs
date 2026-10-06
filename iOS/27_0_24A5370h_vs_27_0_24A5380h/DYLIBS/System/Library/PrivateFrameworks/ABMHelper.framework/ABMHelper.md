@@ -2,51 +2,25 @@
 
 > `/System/Library/PrivateFrameworks/ABMHelper.framework/ABMHelper`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1cf5c8` | `0x1cf444` | **`-0x184`** |
+| `__TEXT.__gcc_except_tab` | `0x21858` | `0x21888` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x7108` | `0x7118` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1cf5c8
-+  __TEXT.__text: 0x1cf444
-   __TEXT.__init_offsets: 0x16c
-   __TEXT.__objc_methlist: 0x14
-   __TEXT.__const: 0x7220
--  __TEXT.__gcc_except_tab: 0x21858
-+  __TEXT.__gcc_except_tab: 0x21888
-   __TEXT.__cstring: 0x88c2
-   __TEXT.__oslogstring: 0xdb4d
--  __TEXT.__unwind_info: 0x7108
-+  __TEXT.__unwind_info: 0x7118
-   __TEXT.__eh_frame: 0x138
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+-1570.0.0.0.0
++1576.0.0.0.0
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsysdiagnose.dylib
 -  Functions: 4312
--  Symbols:   12324
+-  Symbols:   6797
 +  Functions: 4314
-+  Symbols:   12328
-   CStrings:  2881
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   6799
 Symbols:
 + __ZN6config2hw9deviceNEDEv
 + __ZNSt3__16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_4pairIP17dispatch_source_sNS_8functionIFviEEEEEEENS_19__map_value_compareIS7_NS8_IKS7_SE_EENS_4lessIS7_EEEENS5_ISI_EEE5eraseENS_21__tree_const_iteratorISF_PNS_11__tree_nodeISF_PvEElEE
@@ -97,5 +71,4 @@ Functions:
 ~ __ZN4diag16DIAGProtocolHDLC14handleReadDataEPKhj : 732 -> 728
 ~ ____ZN9ResetInfo23readResetReasonPatternsEv_block_invoke : 2264 -> 2236
 ~ __ZN3tlv6parseVIN3bsp3tlv3abm12CapabilitiesEEET_RPKhi : 388 -> 380
-
 ```

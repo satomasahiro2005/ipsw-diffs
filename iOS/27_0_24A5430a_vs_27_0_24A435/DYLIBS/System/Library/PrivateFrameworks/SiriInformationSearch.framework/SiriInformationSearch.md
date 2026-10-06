@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SiriInformationSearch.framework/SiriInformationSearch`
 
-```diff
+### Section Size Changes
 
- 3600.38.8.11.2
--  __TEXT.__text: 0x26a8f4
-+  __TEXT.__text: 0x26a914
-   __TEXT.__objc_methlist: 0x894
-   __TEXT.__const: 0xb05c
-   __TEXT.__cstring: 0x6cb1
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x26a8f4` | `0x26a914` | **`+0x20`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s21SiriInformationSearch27PommesPhoneCallStateManagerC013fetchIsUserOneF09requestId10completionySS_ySbctFySaySo22AFServiceDeviceContextCGSgYbcfU_ : 1064 -> 1068
 ~ _$ss20_ArrayBufferProtocolPsE15replaceSubrange_4with10elementsOfySnySiG_Siqd__ntSlRd__7ElementQyd__AGRtzlFs01_aB0Vy21SiriInformationSearch18AudioItemCandidateCG_s15EmptyCollectionVyANGTg5Tf4nndn_n : 256 -> 264

@@ -2,119 +2,46 @@
 
 > `/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1d135c` | `0x1d1c4c` | **`+0x8f0`** |
+| `__TEXT.__oslogstring` | `0x5276` | `0x5426` | **`+0x1b0`** |
+| `__TEXT.__cstring` | `0x22648` | `0x22778` | **`+0x130`** |
+| `__AUTH_CONST.__cfstring` | `0x209a0` | `0x20a20` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x10ef0` | `0x10f70` | **`+0x80`** |
+| `__DATA_CONST.__const` | `0x7880` | `0x78c0` | **`+0x40`** |
+| `__AUTH_CONST.__objc_const` | `0x373f8` | `0x37430` | **`+0x38`** |
+| `__AUTH_CONST.__auth_got` | `0xf70` | `0xf90` | **`+0x20`** |
+| `__AUTH_CONST.__const` | `0x26f8` | `0x26d8` | **`-0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x256b4` | `0x25698` | **`-0x1c`** |
+| `__TEXT.__objc_methlist` | `0x1f97c` | `0x1f994` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1d68` | `0x1d70` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__swift5_reflstr`
+
+### Other Changes
+
 ```diff
 
 -13466.3.0.0.0
--  __TEXT.__text: 0x1d135c sha256:7f773c6026695c96c173759ddf8fc985951721082feb8d7b7965deca673249a1
--  __TEXT.__objc_methlist: 0x1f97c sha256:1ab3056252d75bd9a9270de223b7e37b0fa1af9052be413b716829491ef67fe1
--  __TEXT.__const: 0x1726 sha256:a62eee0dd52362f11d9c8e230d3d7b0fe00617470b4b9c0afa53a6082efceff7
--  __TEXT.__gcc_except_tab: 0x256b4 sha256:263eec2d3df889652e66a3ee832ac3f69fd9f1e743651e24706397547cf852aa
--  __TEXT.__cstring: 0x22648 sha256:496564c93fbeb25ffaaef1d814ed7584c5052547aa35f4f73bd36ed6ed37b1a0
--  __TEXT.__oslogstring: 0x5276 sha256:5d041a7e4a48142bfc3cdfb936f33b6fd141e04e11d45edd6395c936b3ab2b18
--  __TEXT.__swift5_typeref: 0x2b4 sha256:e31a19ef3165e8508288fd5a4335c498f17c5874c7d570d57e0cfd36704ebfbe
--  __TEXT.__constg_swiftt: 0x140 sha256:e4008cf11c46ad6d1b6811732372c2ccbcb53314b42ef74a11318fed3a6832d9
 +13473.1.0.0.0
-+  __TEXT.__text: 0x1d1c4c sha256:6df521998904daa87d85340f63e6a629773d90b5978dbf35b1a60e2c84185f98
-+  __TEXT.__objc_methlist: 0x1f994 sha256:44e12867168e863bcc4759d6a86057c1ae2d699b4e70fc2ba58dde700f3e6a21
-+  __TEXT.__const: 0x1726 sha256:154b065b63e615012a4648b3bdd6b801e73cd9e1cd181ec8cae27d649a4ad54d
-+  __TEXT.__gcc_except_tab: 0x25698 sha256:94769501cf6a3f5d370eead300f9649579c58bdb8bf621228ccc012737c59587
-+  __TEXT.__cstring: 0x22778 sha256:cd8323dc50e88a35e297b1bc71bf8f71f82b9274e7a8610f861cc58c815a0a1d
-+  __TEXT.__oslogstring: 0x5426 sha256:6572e0fe4d9bf586438429ca8b872ffb9791fd88030a996da6c5fcd71856c04a
-+  __TEXT.__swift5_typeref: 0x2b4 sha256:c48184392c8550a7d468804e3509d7e48362938f20d6cb4d505de68e356d5226
-+  __TEXT.__constg_swiftt: 0x140 sha256:345307511eca007c60d4b716a1e59c898fe81d865dccfdd490f28c1a7d98583a
-   __TEXT.__swift5_builtin: 0x3c sha256:55b867b65558212f1d7d30edf18eb6cd30fb3c1cc2fc2410a35889a4ec4ae684
-   __TEXT.__swift5_mpenum: 0x8 sha256:f023eecb5a9ac53385fb8986dc17844002fda35f2428c97dda0a6b72293a5d10
--  __TEXT.__swift5_reflstr: 0x142 sha256:aa2c21a8f3819df7d5a7651cb107ffeea608c49b0fe544cb206b72ac8496a6f2
--  __TEXT.__swift5_fieldmd: 0x168 sha256:0b63832204d1e3b91d6735c9743be8fde831db7a2682a9f0d0fdcfb8c85f52dc
-+  __TEXT.__swift5_reflstr: 0x142 sha256:54c570405deda34e8d756ba64bcb468d97da282dd0fa3f0e00dc404516c59092
-+  __TEXT.__swift5_fieldmd: 0x168 sha256:4978975bc44cf9a6254c42079d99bd1ad1432de1bae6e0d3679c010e6eb260ec
-   __TEXT.__swift5_types: 0x20 sha256:3e4428f2c11b4325d7a580ffd20115d4a93a088cc97945ef0ea03e3989d9a7fd
-   __TEXT.__swift5_assocty: 0x78 sha256:437f7d14e4111ce2c25576511236e81a68f3622e8a519bc9da9d57937f0655ab
--  __TEXT.__swift5_proto: 0x30 sha256:db6285cdc3d8e5c9c518612f44ad48db8f22b734c1d42b01fc8c92f110797ee7
--  __TEXT.__swift_as_entry: 0x10 sha256:b68bf211ede1bc87afb9ab1ead7656a72e5ec27d3e1db7e3d91901e0f14acb17
--  __TEXT.__swift_as_ret: 0x10 sha256:38f04288a7dc84878421859dfbc5e26ecc5fed62bf470d25658978abf5b12042
--  __TEXT.__swift_as_cont: 0x30 sha256:adb65b554d59a0c4a0147655b339eb92d09acdc8a7cb76c02c47fac74e2bde42
--  __TEXT.__unwind_info: 0x10ef0 sha256:ccd8da62b0ec3ddc322c2315c604ec91173c9459d3974054249cc594ad15695b
--  __TEXT.__eh_frame: 0x370 sha256:87151c3bcce97d024ee3d2446c6a2e5ffe4f40c11ab6b97fbb48ff5d47713c91
-+  __TEXT.__swift5_proto: 0x30 sha256:866f436869fe5835e823dd06ee6ea6aeb5e971f02290d12c3ddea84a5b1686ac
-+  __TEXT.__swift_as_entry: 0x10 sha256:231da427e514c6eb366dbb156e9167fefb72c20a25b0ac89f15ef87d6c797859
-+  __TEXT.__swift_as_ret: 0x10 sha256:b8fe126aa9f38210408791672efeea56d2422516d1b1b1b202e66c1fa7fa5dce
-+  __TEXT.__swift_as_cont: 0x30 sha256:b40f6bb1b76f7c8e73248ae702d11c73acbbc68556faff6a72d652a87ecd3d2c
-+  __TEXT.__unwind_info: 0x10f70 sha256:d15e7982cbd4a70b99d0d388cecba5788611c302569349bf659a0e25652a5680
-+  __TEXT.__eh_frame: 0x370 sha256:8b438adb1d269e9690462f6779091a4c78fda00be9629e3c307da5e40bea9cca
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7880 sha256:11bd701c821a273675794443098f1f6df5b54b1c163c540c3bd6c8486f1f8462
--  __DATA_CONST.__objc_classlist: 0x1978 sha256:3d3a9fe4b00004826ddfbb2fbbbf33c068e859818f2404c2cfef512724cfba4f
--  __DATA_CONST.__objc_catlist: 0x8 sha256:cf4e762b410ad2703d32eb05ffe2e2eed0d5ef85ca5c662152af071f93267d69
--  __DATA_CONST.__objc_protolist: 0x288 sha256:4488f9d4bf6eb2cd41a5f361b7eabacfaff1b165302fbec48f407692e23c592a
-+  __DATA_CONST.__const: 0x78c0 sha256:554eb0adeaa098c2fa5c03bbcb95e26a5880a11b60242ea8cbd059bbde090eb0
-+  __DATA_CONST.__objc_classlist: 0x1978 sha256:45fb0bce34d6d933cbdf0297d841e2740b18d2f94e90fa8ae3644bbfa3a0657c
-+  __DATA_CONST.__objc_catlist: 0x8 sha256:1e1837d44bd3f5479f247b6898c9d7ac6ead556bc96a801ca5a2d0e215957915
-+  __DATA_CONST.__objc_protolist: 0x288 sha256:f7ed1dd66b0f94615ee42e6c3ebaa94ebd029525250dc44134978cd5e14abd3a
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0x8800 sha256:694e0a4a80197e4e3d4ad30abff215e6b9d92f7994341b724fd3f0a3c84c844a
--  __DATA_CONST.__objc_protorefs: 0x48 sha256:451f48a3dad2dccd5ded5b82d12ed2729b590c863323b1ce68fb04fe5287a527
--  __DATA_CONST.__objc_superrefs: 0x1d68 sha256:a2458572757c5f502a4e119f42a60d920608f97121f022609dae3e472f985937
--  __DATA_CONST.__objc_arraydata: 0x20 sha256:9e0a9226569eb518b5381f959ca279732f84343817a5f99ef9afb2598826fe69
--  __DATA_CONST.__got: 0xc50 sha256:1b9db945916e6da6fe2ea60a53ef5c6f10a6e17a8759bc0b01a4dcccf5948306
--  __AUTH_CONST.__const: 0x26f8 sha256:b89dc0178c12912ec4fca20042962483d220300b50c71dd89305983f1528da55
--  __AUTH_CONST.__cfstring: 0x209a0 sha256:e260df8152040864f58ad5d087bfbd2f3e8353cae48ba243d3e65ea7d03f2c3d
--  __AUTH_CONST.__objc_const: 0x373f8 sha256:9f622aefd56fd5a22c7b5e38da30eb50ff2809bd343d9c4b4a8fa6d164d103ed
--  __AUTH_CONST.__weak_auth_got: 0x28 sha256:4a7d5a6862c5431b2249d57b76660013b16903a5dadf666d8b652501384c4219
--  __AUTH_CONST.__objc_intobj: 0x30 sha256:31edd4e71882987f579aa6c311f05a6c3e2abdd9a9e30876ebcc69a0520e84c7
--  __AUTH_CONST.__objc_arrayobj: 0x30 sha256:8d4875ac8cff9596936c4de7cd99e032a6578b5c0ff693db81332f640b6ae3b6
--  __AUTH_CONST.__auth_got: 0xf70 sha256:e4cbebfa02ab4cd20e14ce3e7ea773e1413d10ea7a0f1870b010edae93b86ff5
--  __AUTH.__objc_data: 0xd200 sha256:5a554a9f8a891bc9521b01539e8c257bdf5073774a6e0387860c44a4b7b7b952
--  __AUTH.__data: 0xb0 sha256:bde064d667f378eace1a7a01ea621368efbeed6d3cead8a5a025a80349f46758
-+  __DATA_CONST.__objc_selrefs: 0x8800 sha256:6103e40e4f3fb79a91dcd2c06c8be05c7f42f1afbe5bf41c8aba0332b5b06af5
-+  __DATA_CONST.__objc_protorefs: 0x48 sha256:066f418aa2370e91ef5dcd87214071bf05228bf551d9c87992af7c4a0498ef94
-+  __DATA_CONST.__objc_superrefs: 0x1d70 sha256:1f314f8b34723431e3e51b2f85fd02b43fd594ce9fa0d2b455d371998c04835b
-+  __DATA_CONST.__objc_arraydata: 0x20 sha256:0504376dca384f7eccaf8fa0cb0fa87e4c9a029f65f78a7916336bfa09b7404e
-+  __DATA_CONST.__got: 0xc50 sha256:5ea9faeede812b35f01f00241af05246611a83e67e92fde9b56600c5a221c0df
-+  __AUTH_CONST.__const: 0x26d8 sha256:5e7df05d82e00421892f6a18bd2219596bd78f590d4a27c523e40e7fdc6ad591
-+  __AUTH_CONST.__cfstring: 0x20a20 sha256:996f122685331a0db4409a133a99cc9aeae563d4f6b33878438a334b34c545d3
-+  __AUTH_CONST.__objc_const: 0x37430 sha256:8bd7436781083ce592b0a3ba4bce8f206f94c9abd481d5166731527cfa9be216
-+  __AUTH_CONST.__weak_auth_got: 0x28 sha256:ce730ac904d7ee375ed02cc55451c60f1221ea40d155b3549317863900e04169
-+  __AUTH_CONST.__objc_intobj: 0x30 sha256:6f8fdbeaf9c1b6c88b64bdceb8a06681d820f1186a827e64a6ebb7dd1f3682b6
-+  __AUTH_CONST.__objc_arrayobj: 0x30 sha256:a154154a598d9df1ea1a4e4a2c6f6ecf111059c68d84305479331b18a2014716
-+  __AUTH_CONST.__auth_got: 0xf90 sha256:c195416a9c6fa4a9f6e10321c90c1a1a3ad347b847a366f85c2759ece36edfdc
-+  __AUTH.__objc_data: 0xd200 sha256:606d6daaed97c60530572d820f3754f7ea846d84103f9a6553b7962f0e930c0c
-+  __AUTH.__data: 0xb0 sha256:906aed4b39502648a6abf0547a8ffbec12b1d65ccc08115589d04275b539bd4c
-   __DATA.__objc_ivar: 0x16a0 sha256:c95f18ca9300d76f90c758bc42097f0acf8f2b0f78575a9fc75312a8e663291c
--  __DATA.__data: 0x2360 sha256:aac79c029b0f4022d3f3100f29567f751a7f2201148c4bc615cf652abe5c723b
-+  __DATA.__data: 0x2360 sha256:55e7e1c7cfa6e643f35f41e2080cce0152ffb4fe08aa28cc48aa1eec8e6072e7
-   __DATA.__bss: 0x800 sha256:e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad
-   __DATA.__common: 0x10 sha256:374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb
--  __DATA_DIRTY.__objc_data: 0x2c60 sha256:43706652fa4bca253941525951064dcd9629a8898e9536dab0c0f05ece901116
-+  __DATA_DIRTY.__objc_data: 0x2c60 sha256:09abf40fababbf7e9b42c05aa875c93f2bc7d3c77dc4a0b5e71a549d354e4c8e
-   __DATA_DIRTY.__data: 0x90 sha256:0e036f51689d771aa5e785a3030f6b45cba496f94f73c3f041e889670dde9bf3
-   __DATA_DIRTY.__bss: 0x12e0 sha256:8036ca59129074eb2f8c0678e91f52b83f87b42333302af54d9213addf92f614
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
--  UUID: 39B6901B-8E32-3935-9424-99FE49E91F77
 -  Functions: 13039
--  Symbols:   43835
--  CStrings:  10667
-+  UUID: EF1A6541-A497-3A91-A337-11314E286F51
+-  Symbols:   24100
+-  CStrings:  6495
 +  Functions: 13046
-+  Symbols:   43853
-+  CStrings:  10691
- 
++  Symbols:   24120
++  CStrings:  6515
 Symbols:
 + +[CTCellularPlanStatus getAuthorizationStatusForPhoneNumber:completion:]
 + +[CTCellularPlanStatus getStatusHintForPhoneNumber:completion:]
 + +[CTCellularPlanStatus requestAuthorizationForPhoneNumber:completion:]
 + +[CTQuickSwitchManager registerForLaunchOnQuickSwitchStateEvents:]
-+ +[CTQuickSwitchManager registerForLaunchOnQuickSwitchStateEvents:].cold.1
 + +[CTQuickSwitchManager unregisterForLaunchOnQuickSwitchStateEvents:]
-+ +[CTQuickSwitchManager unregisterForLaunchOnQuickSwitchStateEvents:].cold.1
 + +[CTXPCGetAllQuickSwitchCarrierContextsResponse allowedClassesForArguments]
 + +[CTXPCGetDeviceStateValueRequest allowedClassesForArguments]
 + +[CTXPCGetDeviceStateValueResponse allowedClassesForArguments]
@@ -124,8 +51,6 @@ Symbols:
 + +[CTXPCSetQuickSwitchManualConfigEnabledForIccidRequest allowedClassesForArguments]
 + -[CTQuickSwitchCarrierContext carrierName]
 + -[CTQuickSwitchCarrierContext formattedMdn]
-+ -[CTQuickSwitchManager getDeviceState:].cold.1
-+ -[CTQuickSwitchManager getPhoneNumberStateForSuffix:completion:].cold.3
 + -[CTXPCClearManuallyConfiguredQuickSwitchRoleForIccidRequest ct_shortName]
 + -[CTXPCClearManuallyConfiguredQuickSwitchRoleForIccidRequest performRequestWithHandler:completionHandler:]
 + -[CTXPCClearManuallyConfiguredQuickSwitchRoleForIccidRequest requiredEntitlement]
@@ -357,23 +282,15 @@ Symbols:
 + __ZNSt3__120__optional_copy_baseIN6Lazuli14CustomMetaDataELb0EEC2B9fon220106ERKS3_
 + __ZNSt3__120__optional_copy_baseIN6Lazuli16ChatBotCardMediaELb0EEC2B9fon220106ERKS3_
 + __ZNSt3__120__optional_copy_baseIN6Lazuli16ChatBotCardTitleELb0EEC2B9fon220106ERKS3_
-+ __ZNSt3__120__optional_copy_baseIN6Lazuli16ChatBotCardTitleELb0EEC2B9fon220106ERKS3_.cold.1
 + __ZNSt3__120__optional_copy_baseIN6Lazuli16GroupChatSubjectELb0EEC2B9fon220106ERKS3_
-+ __ZNSt3__120__optional_copy_baseIN6Lazuli16GroupChatSubjectELb0EEC2B9fon220106ERKS3_.cold.1
 + __ZNSt3__120__optional_copy_baseIN6Lazuli19ChatBotPostbackDataELb0EEC2B9fon220106ERKS3_
-+ __ZNSt3__120__optional_copy_baseIN6Lazuli19ChatBotPostbackDataELb0EEC2B9fon220106ERKS3_.cold.1
 + __ZNSt3__120__optional_copy_baseIN6Lazuli22ChatBotCardDescriptionELb0EEC2B9fon220106ERKS3_
-+ __ZNSt3__120__optional_copy_baseIN6Lazuli22ChatBotCardDescriptionELb0EEC2B9fon220106ERKS3_.cold.1
 + __ZNSt3__120__optional_copy_baseIN6Lazuli23MessageChatBotCardStyleELb0EEC2B9fon220106ERKS3_
-+ __ZNSt3__120__optional_copy_baseIN6Lazuli23MessageChatBotCardStyleELb0EEC2B9fon220106ERKS3_.cold.1
 + __ZNSt3__120__optional_copy_baseIN6Lazuli24ChatBotSuggestedChipListELb0EEC2B9fon220106ERKS3_
 + __ZNSt3__120__optional_copy_baseIN6Lazuli24FileThumbnailInformationELb0EEC2B9fon220106ERKS3_
 + __ZNSt3__120__optional_copy_baseIN6Lazuli24SuggestedActionShowQueryELb0EEC2B9fon220106ERKS3_
-+ __ZNSt3__120__optional_copy_baseIN6Lazuli24SuggestedActionShowQueryELb0EEC2B9fon220106ERKS3_.cold.1
 + __ZNSt3__120__optional_copy_baseINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEELb0EEC2B9fon220106ERKS7_
-+ __ZNSt3__120__optional_copy_baseINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEELb0EEC2B9fon220106ERKS7_.cold.1
 + __ZNSt3__120__optional_copy_baseINS_6vectorIhNS_9allocatorIhEEEELb0EEC2B9fon220106ERKS5_
-+ __ZNSt3__120__optional_copy_baseINS_6vectorIhNS_9allocatorIhEEEELb0EEC2B9fon220106ERKS5_.cold.1
 + __ZNSt3__121__murmur2_or_cityhashImLm64EE18__hash_len_0_to_16B9fon220106EPKcm
 + __ZNSt3__121__murmur2_or_cityhashImLm64EE19__hash_len_17_to_32B9fon220106EPKcm
 + __ZNSt3__121__murmur2_or_cityhashImLm64EE19__hash_len_33_to_64B9fon220106EPKcm
@@ -538,31 +455,6 @@ Symbols:
 + ___98-[CoreTelephonyClient(QuickSwitchInternal) setQuickSwitchManualConfigEnabled:forIccid:completion:]_block_invoke
 + ___98-[CoreTelephonyClient(QuickSwitchInternal) setQuickSwitchManualConfigEnabled:forIccid:completion:]_block_invoke_2
 + ___block_descriptor_48_ea8_32s40bs_e20_v24?0Q8"NSError"16ls32l8s40l8
-+ _block_copy_helper.12
-+ _block_copy_helper.4
-+ _block_copy_helper.8
-+ _block_descriptor.10
-+ _block_descriptor.14
-+ _block_descriptor.6
-+ _block_destroy_helper.13
-+ _block_destroy_helper.5
-+ _block_destroy_helper.9
-+ _objc_msgSend$clearManuallyConfiguredQuickSwitchRoleForIccid:completion:
-+ _objc_msgSend$contexts
-+ _objc_msgSend$formattedMdn
-+ _objc_msgSend$getAllQuickSwitchCarrierContexts:
-+ _objc_msgSend$getDeviceStateValueWithCompletion:
-+ _objc_msgSend$getManuallyConfiguredCompanionIccidForIccid:completion:
-+ _objc_msgSend$getManuallyConfiguredQuickSwitchRoleForIccid:completion:
-+ _objc_msgSend$getQuickSwitchManualConfigEnabledForIccid:completion:
-+ _objc_msgSend$initWithContexts:
-+ _objc_msgSend$initWithIccid:companionIccid:
-+ _objc_msgSend$initWithIccid:enabled:
-+ _objc_msgSend$initWithIccid:role:
-+ _objc_msgSend$requestCellularPlanAuthorizationForPhoneNumber:completion:
-+ _objc_msgSend$setManuallyConfiguredCompanionIccid:forIccid:completion:
-+ _objc_msgSend$setManuallyConfiguredQuickSwitchRole:forIccid:completion:
-+ _objc_msgSend$setQuickSwitchManualConfigEnabled:forIccid:completion:
 - +[CTXPCGetManuallyConfiguredQuickSwitchLifecycleStateResponse allowedClassesForArguments]
 - +[CTXPCResolveQuickSwitchWebsheetIncomplete allowedClassesForArguments]
 - +[CTXPCSetManuallyConfiguredCompanionIccidRequest allowedClassesForArguments]
@@ -789,23 +681,15 @@ Symbols:
 - __ZNSt3__120__optional_copy_baseIN6Lazuli14CustomMetaDataELb0EEC2B9fon220100ERKS3_
 - __ZNSt3__120__optional_copy_baseIN6Lazuli16ChatBotCardMediaELb0EEC2B9fon220100ERKS3_
 - __ZNSt3__120__optional_copy_baseIN6Lazuli16ChatBotCardTitleELb0EEC2B9fon220100ERKS3_
-- __ZNSt3__120__optional_copy_baseIN6Lazuli16ChatBotCardTitleELb0EEC2B9fon220100ERKS3_.cold.1
 - __ZNSt3__120__optional_copy_baseIN6Lazuli16GroupChatSubjectELb0EEC2B9fon220100ERKS3_
-- __ZNSt3__120__optional_copy_baseIN6Lazuli16GroupChatSubjectELb0EEC2B9fon220100ERKS3_.cold.1
 - __ZNSt3__120__optional_copy_baseIN6Lazuli19ChatBotPostbackDataELb0EEC2B9fon220100ERKS3_
-- __ZNSt3__120__optional_copy_baseIN6Lazuli19ChatBotPostbackDataELb0EEC2B9fon220100ERKS3_.cold.1
 - __ZNSt3__120__optional_copy_baseIN6Lazuli22ChatBotCardDescriptionELb0EEC2B9fon220100ERKS3_
-- __ZNSt3__120__optional_copy_baseIN6Lazuli22ChatBotCardDescriptionELb0EEC2B9fon220100ERKS3_.cold.1
 - __ZNSt3__120__optional_copy_baseIN6Lazuli23MessageChatBotCardStyleELb0EEC2B9fon220100ERKS3_
-- __ZNSt3__120__optional_copy_baseIN6Lazuli23MessageChatBotCardStyleELb0EEC2B9fon220100ERKS3_.cold.1
 - __ZNSt3__120__optional_copy_baseIN6Lazuli24ChatBotSuggestedChipListELb0EEC2B9fon220100ERKS3_
 - __ZNSt3__120__optional_copy_baseIN6Lazuli24FileThumbnailInformationELb0EEC2B9fon220100ERKS3_
 - __ZNSt3__120__optional_copy_baseIN6Lazuli24SuggestedActionShowQueryELb0EEC2B9fon220100ERKS3_
-- __ZNSt3__120__optional_copy_baseIN6Lazuli24SuggestedActionShowQueryELb0EEC2B9fon220100ERKS3_.cold.1
 - __ZNSt3__120__optional_copy_baseINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEELb0EEC2B9fon220100ERKS7_
-- __ZNSt3__120__optional_copy_baseINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEELb0EEC2B9fon220100ERKS7_.cold.1
 - __ZNSt3__120__optional_copy_baseINS_6vectorIhNS_9allocatorIhEEEELb0EEC2B9fon220100ERKS5_
-- __ZNSt3__120__optional_copy_baseINS_6vectorIhNS_9allocatorIhEEEELb0EEC2B9fon220100ERKS5_.cold.1
 - __ZNSt3__121__murmur2_or_cityhashImLm64EE18__hash_len_0_to_16B9fon220100EPKcm
 - __ZNSt3__121__murmur2_or_cityhashImLm64EE19__hash_len_17_to_32B9fon220100EPKcm
 - __ZNSt3__121__murmur2_or_cityhashImLm64EE19__hash_len_33_to_64B9fon220100EPKcm
@@ -969,42 +853,9 @@ Symbols:
 - ___97-[CoreTelephonyClient(QuickSwitchInternal) getManuallyConfiguredQuickSwitchLifecycleState:error:]_block_invoke_2
 - ___98-[CTXPCClearManuallyConfiguredQuickSwitchRoleRequest performRequestWithHandler:completionHandler:]_block_invoke
 - ___block_descriptor_48_ea8_32s40bs_e29_v24?0"NSArray"8"NSError"16ls40l8s32l8
-- _block_copy_helper.11
-- _block_copy_helper.3
-- _block_copy_helper.7
-- _block_descriptor.13
-- _block_descriptor.5
-- _block_descriptor.9
-- _block_destroy_helper.12
-- _block_destroy_helper.4
-- _block_destroy_helper.8
-- _objc_msgSend$clearManuallyConfiguredQuickSwitchLifecycleState:completion:
-- _objc_msgSend$clearManuallyConfiguredQuickSwitchRole:completion:
-- _objc_msgSend$componentsJoinedByString:
-- _objc_msgSend$getManuallyConfiguredCompanionIccid:completion:
-- _objc_msgSend$getManuallyConfiguredQuickSwitchLifecycleState:completion:
-- _objc_msgSend$getManuallyConfiguredQuickSwitchRole:completion:
-- _objc_msgSend$getMessageForQuickSwitchImpact:companionSecondaries:
-- _objc_msgSend$getQuickSwitchManualConfigEnabled:completion:
-- _objc_msgSend$initWithContext:companionIccid:
-- _objc_msgSend$initWithContext:enabled:
-- _objc_msgSend$initWithContext:lifecycleState:
-- _objc_msgSend$initWithContext:role:
-- _objc_msgSend$initWithLifecycleState:
-- _objc_msgSend$initWithPrimaryIccid:followup:
-- _objc_msgSend$resolveQuickSwitchWebsheetIncomplete:followup:completion:
-- _objc_msgSend$setManuallyConfiguredCompanionIccid:forContext:completion:
-- _objc_msgSend$setManuallyConfiguredQuickSwitchLifecycleState:forContext:completion:
-- _objc_msgSend$setManuallyConfiguredQuickSwitchRole:forContext:completion:
-- _objc_msgSend$setQuickSwitchManualConfigEnabled:forContext:completion:
 CStrings:
-+ "/AppleInternal/Library/BuildRoots/4~CRt3ugB_8msvLR5jdY6gDGnBLfjisOJXWMyDORc/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:414: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRt3ugB_8msvLR5jdY6gDGnBLfjisOJXWMyDORc/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:419: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRt3ugB_8msvLR5jdY6gDGnBLfjisOJXWMyDORc/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/optional:1130: libc++ Hardening assertion this->has_value() failed: optional operator* called on a disengaged value\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRt3ugB_8msvLR5jdY6gDGnBLfjisOJXWMyDORc/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:1362: libc++ Hardening assertion __pos <= size() failed: string index out of bounds\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRt3ugB_8msvLR5jdY6gDGnBLfjisOJXWMyDORc/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:1371: libc++ Hardening assertion __pos <= size() failed: string index out of bounds\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRt3ugB_8msvLR5jdY6gDGnBLfjisOJXWMyDORc/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:1507: libc++ Hardening assertion !empty() failed: string::back(): string is empty\n"
-+ "/AppleInternal/Library/BuildRoots/4~CRt3ugB_8msvLR5jdY6gDGnBLfjisOJXWMyDORc/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string_view:343: libc++ Hardening assertion (__end - __begin) >= 0 failed: std::string_view::string_view(iterator, sentinel) received invalid range\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:414: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
++ "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:419: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
 + "13473.1"
 + "13473.1~70"
 + "ClearManuallyConfiguredQuickSwitchRoleForIccidRequest"
@@ -1043,13 +894,8 @@ CStrings:
 + "rcs.Vendor-Reaction-Type"
 + "requestAuthorizationForPhoneNumber completed with status %ld, error %@"
 + "user-declined"
-- "/AppleInternal/Library/BuildRoots/4~CRG1ugAgz3DEb1qrXQ7GbkMYlmaKVJv8yhqPSEw/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:413: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
-- "/AppleInternal/Library/BuildRoots/4~CRG1ugAgz3DEb1qrXQ7GbkMYlmaKVJv8yhqPSEw/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:418: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
-- "/AppleInternal/Library/BuildRoots/4~CRG1ugAgz3DEb1qrXQ7GbkMYlmaKVJv8yhqPSEw/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/optional:1130: libc++ Hardening assertion this->has_value() failed: optional operator* called on a disengaged value\n"
-- "/AppleInternal/Library/BuildRoots/4~CRG1ugAgz3DEb1qrXQ7GbkMYlmaKVJv8yhqPSEw/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:1362: libc++ Hardening assertion __pos <= size() failed: string index out of bounds\n"
-- "/AppleInternal/Library/BuildRoots/4~CRG1ugAgz3DEb1qrXQ7GbkMYlmaKVJv8yhqPSEw/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:1371: libc++ Hardening assertion __pos <= size() failed: string index out of bounds\n"
-- "/AppleInternal/Library/BuildRoots/4~CRG1ugAgz3DEb1qrXQ7GbkMYlmaKVJv8yhqPSEw/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:1507: libc++ Hardening assertion !empty() failed: string::back(): string is empty\n"
-- "/AppleInternal/Library/BuildRoots/4~CRG1ugAgz3DEb1qrXQ7GbkMYlmaKVJv8yhqPSEw/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string_view:343: libc++ Hardening assertion (__end - __begin) >= 0 failed: std::string_view::string_view(iterator, sentinel) received invalid range\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:413: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
+- "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:418: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
 - "13466.3"
 - "13466.3~1"
 - "ClearManuallyConfiguredQuickSwitchLifecycleStateRequest"
@@ -1068,5 +914,4 @@ CStrings:
 - "THIS_IPHONE"
 - "followup"
 - "iphone.on.iphone"
-
 ```

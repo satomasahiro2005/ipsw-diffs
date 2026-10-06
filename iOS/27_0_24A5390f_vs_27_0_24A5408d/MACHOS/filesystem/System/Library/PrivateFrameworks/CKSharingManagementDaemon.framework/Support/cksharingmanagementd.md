@@ -2,65 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/CKSharingManagementDaemon.framework/Support/cksharingmanagementd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_entry`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_protos`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__auth_ptr`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4c0` | `0x720` | **`+0x260`** |
+| `__TEXT.__auth_stubs` | `0x1e0` | `0x2a0` | **`+0xc0`** |
+| `__DATA_CONST.__auth_got` | `0xf8` | `0x158` | **`+0x60`** |
+| `__TEXT.__const` | `0x46` | `0x56` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x10` | `0x18` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x70` | `0x78` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x4` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x4` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `—` | `0x4` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+
+### Other Changes
 
 ```diff
 
 -23.0.0.0.0
--  __TEXT.__text: 0x4c0
--  __TEXT.__auth_stubs: 0x1e0
 +26.0.0.0.0
-+  __TEXT.__text: 0x720
-+  __TEXT.__auth_stubs: 0x2a0
-   __TEXT.__objc_stubs: 0x40
-   __TEXT.__cstring: 0xc4
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__objc_classname: 0x22
--  __TEXT.__const: 0x46
-+  __TEXT.__const: 0x56
-   __TEXT.__constg_swiftt: 0x68
-   __TEXT.__swift5_typeref: 0x31
-   __TEXT.__swift5_fieldmd: 0x20
-   __TEXT.__oslogstring: 0x76
-   __TEXT.__swift5_types: 0x4
-+  __TEXT.__swift_as_entry: 0x4
-+  __TEXT.__swift_as_ret: 0x4
-+  __TEXT.__swift_as_cont: 0x4
-   __TEXT.__swift5_proto: 0x4
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__objc_methname: 0x13
--  __TEXT.__unwind_info: 0x70
-+  __TEXT.__unwind_info: 0x78
-   __DATA_CONST.__const: 0x68
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0xf8
--  __DATA_CONST.__got: 0x10
-+  __DATA_CONST.__auth_got: 0x158
-+  __DATA_CONST.__got: 0x18
-   __DATA_CONST.__auth_ptr: 0x18
-   __DATA.__objc_const: 0x90
-   __DATA.__objc_selrefs: 0x10
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 4
 -  Symbols:   52
 +  Functions: 8
 +  Symbols:   65
-   CStrings:  12
- 
 Symbols:
 + _$s25CKSharingManagementDaemon21CKShareManagerServiceC6sharedACvgZ
 + _$s25CKSharingManagementDaemon21CKShareManagerServiceC9bootstrapyyYaF

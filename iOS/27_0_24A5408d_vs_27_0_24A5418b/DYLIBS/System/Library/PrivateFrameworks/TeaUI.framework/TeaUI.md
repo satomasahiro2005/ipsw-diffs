@@ -2,88 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/TeaUI.framework/TeaUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x366988` | `0x369bdc` | **`+0x3254`** |
+| `__AUTH_CONST.__objc_const` | `0x1bce0` | `0x1bee0` | **`+0x200`** |
+| `__AUTH.__objc_data` | `0x4438` | `0x45c8` | **`+0x190`** |
+| `__AUTH_CONST.__const` | `0x2d5b8` | `0x2d738` | **`+0x180`** |
+| `__TEXT.__swift5_reflstr` | `0xcedf` | `0xd02f` | **`+0x150`** |
+| `__TEXT.__const` | `0x282a4` | `0x283d4` | **`+0x130`** |
+| `__TEXT.__swift5_fieldmd` | `0xf97c` | `0xfaa0` | **`+0x124`** |
+| `__TEXT.__swift5_capture` | `0x9098` | `0x9148` | **`+0xb0`** |
+| `__TEXT.__eh_frame` | `0x9b68` | `0x9c10` | **`+0xa8`** |
+| `__TEXT.__constg_swiftt` | `0x13ccc` | `0x13d5c` | **`+0x90`** |
+| `__TEXT.__unwind_info` | `0x10ff8` | `0x11088` | **`+0x90`** |
+| `__TEXT.__swift5_typeref` | `0xd9ea` | `0xda6a` | **`+0x80`** |
+| `__TEXT.__objc_methlist` | `0x83e0` | `0x8448` | **`+0x68`** |
+| `__AUTH.__data` | `0x23a0` | `0x2400` | **`+0x60`** |
+| `__DATA.__data` | `0x5f50` | `0x5fb0` | **`+0x60`** |
+| `__TEXT.__cstring` | `0x9ca1` | `0x9d01` | **`+0x60`** |
+| `__DATA_CONST.__objc_classlist` | `0xb80` | `0xb90` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x46b8` | `0x46c8` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x1160` | `0x1170` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x1a58` | `0x1a60` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1478.0.0.0.0
--  __TEXT.__text: 0x366988
--  __TEXT.__objc_methlist: 0x83e0
--  __TEXT.__const: 0x282a4
--  __TEXT.__cstring: 0x9ca1
 +1478.1.0.0.0
-+  __TEXT.__text: 0x369bdc
-+  __TEXT.__objc_methlist: 0x8448
-+  __TEXT.__const: 0x283d4
-+  __TEXT.__cstring: 0x9d01
-   __TEXT.__gcc_except_tab: 0xb4
-   __TEXT.__oslogstring: 0x3ab5
--  __TEXT.__constg_swiftt: 0x13ccc
--  __TEXT.__swift5_typeref: 0xd9ea
-+  __TEXT.__constg_swiftt: 0x13d5c
-+  __TEXT.__swift5_typeref: 0xda6a
-   __TEXT.__swift5_builtin: 0x99c
--  __TEXT.__swift5_reflstr: 0xcedf
--  __TEXT.__swift5_fieldmd: 0xf97c
-+  __TEXT.__swift5_reflstr: 0xd02f
-+  __TEXT.__swift5_fieldmd: 0xfaa0
-   __TEXT.__swift5_assocty: 0x1618
-   __TEXT.__swift5_proto: 0x1670
--  __TEXT.__swift5_types: 0x1160
--  __TEXT.__swift5_capture: 0x9098
-+  __TEXT.__swift5_types: 0x1170
-+  __TEXT.__swift5_capture: 0x9148
-   __TEXT.__swift5_mpenum: 0x36c
-   __TEXT.__swift5_protos: 0x548
-   __TEXT.__swift_as_entry: 0x1d8
-   __TEXT.__swift_as_ret: 0x1b8
-   __TEXT.__swift_as_cont: 0x300
--  __TEXT.__unwind_info: 0x10ff8
--  __TEXT.__eh_frame: 0x9b68
-+  __TEXT.__unwind_info: 0x11088
-+  __TEXT.__eh_frame: 0x9c10
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x25b0
--  __DATA_CONST.__objc_classlist: 0xb80
-+  __DATA_CONST.__objc_classlist: 0xb90
-   __DATA_CONST.__objc_catlist: 0x118
-   __DATA_CONST.__objc_protolist: 0x3f0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x46b8
-+  __DATA_CONST.__objc_selrefs: 0x46c8
-   __DATA_CONST.__objc_protorefs: 0x268
-   __DATA_CONST.__objc_superrefs: 0xa8
--  __DATA_CONST.__got: 0x1a58
--  __AUTH_CONST.__const: 0x2d5b8
-+  __DATA_CONST.__got: 0x1a60
-+  __AUTH_CONST.__const: 0x2d738
-   __AUTH_CONST.__cfstring: 0x6e0
--  __AUTH_CONST.__objc_const: 0x1bce0
-+  __AUTH_CONST.__objc_const: 0x1bee0
-   __AUTH_CONST.__auth_got: 0x2e20
--  __AUTH.__objc_data: 0x4438
--  __AUTH.__data: 0x23a0
-+  __AUTH.__objc_data: 0x45c8
-+  __AUTH.__data: 0x2400
-   __DATA.__objc_ivar: 0x1a8
--  __DATA.__data: 0x5f50
-+  __DATA.__data: 0x5fb0
-   __DATA.__objc_stublist: 0x8
-   __DATA.__bss: 0x19d00
-   __DATA.__common: 0x98
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 31797
--  Symbols:   9783
+-  Symbols:   8251
 -  CStrings:  1109
 +  Functions: 31872
-+  Symbols:   9807
++  Symbols:   8273
 +  CStrings:  1111
- 
 Symbols:
 + _OBJC_CLASS_$__TtC5TeaUI31BlueprintViewScrollViewObserver
 + _OBJC_CLASS_$__TtC5TeaUI35BlueprintImpressionManagerDebugView
@@ -101,8 +57,6 @@ Symbols:
 + __PROTOCOLS__TtC5TeaUI31BlueprintViewScrollViewObserver
 + ___unnamed_33
 + ___unnamed_40
-+ _objc_msgSend$_isScrollViewScrollObserver:
-+ _objc_msgSend$systemGreenColor
 + _symbolic SaySo6UIViewCG
 + _symbolic SaySo7UILabelCG
 + _symbolic Say_____G 5TeaUI40BlueprintImpressionManagerDebugViewModelV11ItemOverlayV

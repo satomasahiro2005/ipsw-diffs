@@ -2,41 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/TelephonyXPCServer.framework/TelephonyXPCServer`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb60c` | `0xb610` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -6554.0.0.0.0
--  __TEXT.__text: 0xb60c sha256:0ec48c017467efc8bf60bcc304fbde00fc56bec4836fedba9e7d58d34c218210
 +6559.0.0.0.0
-+  __TEXT.__text: 0xb610 sha256:605ef1fc46e1fc05f5b871ca4ddae42546279c1028790becee0300faf693b378
-   __TEXT.__const: 0x7e0 sha256:6f0b504ea322b02369085809b564403819ac05e43b05b8dcc4773bc3b27d8168
--  __TEXT.__gcc_except_tab: 0x12d0 sha256:203fd7573cd3d1b079da0949d2ed2cbdf4d2bbae49b5a945a94a1347da13f716
-+  __TEXT.__gcc_except_tab: 0x12d0 sha256:bb950e8d57b969e35d9397feec4e7fca73ee07c26682afb9e8d8e322870ac2d2
-   __TEXT.__cstring: 0x45f sha256:b453e822175efd775d7747651548940873dce48a7bed0caf63b96334fad3833e
-   __TEXT.__oslogstring: 0x25e sha256:a0aa192900c36fa593258637471199a7658cdec02e4723f6d59e1cefdb750ca6
--  __TEXT.__unwind_info: 0x6b8 sha256:0734609d6aed24a42f6beb4fc5a018668448185cc94921340b6f6e2b3c95eb7e
-+  __TEXT.__unwind_info: 0x6b8 sha256:bdfc47d6f537bca754fc0d7d44085544c77fd77f84b34b65ba1b1e26d4e95775
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x278 sha256:fad22c08f7d841f1a89e0687d14110621cf38007b81b5fa5d198cb90170ded08
--  __DATA_CONST.__weak_got: 0x8 sha256:da3ea4930ce2512dfcd99eb2937657161b1931f775a59d3a01496544e24fea4a
-+  __DATA_CONST.__const: 0x278 sha256:4d9419d5fb630c09eab7754ef18c0f37c71c69b3105a3a7d3864fd5921355572
-+  __DATA_CONST.__weak_got: 0x8 sha256:e070db17ff90291850f1ade0ab9d1651a510b1b77d3355bcf0be19d2262bc15a
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x830 sha256:8dd4d9ff7fd1369b7b57c70bcb5503ed92188909e4d855a63ea678c5c9815da1
--  __AUTH_CONST.__weak_auth_got: 0x10 sha256:eea02642beb18481e7c20f71accafc70bde0c2fbe6d247660b04514b5f07518f
-+  __AUTH_CONST.__const: 0x830 sha256:574e05c72a24cb599458686bda4402e37714f0662363a519172c48a682c62ec7
-+  __AUTH_CONST.__weak_auth_got: 0x10 sha256:2f053c8f7ae2d3be9c474895041cbe7a14dbee64dce28f717cce8078e8bd92f8
-   __AUTH_CONST.__auth_got: 0x0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /usr/lib/libSystem.B.dylib
-
-   - /usr/lib/libTelephonyIOKitDynamic.dylib
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
--  UUID: 6B8A4B30-ECD5-3E59-B241-2D3246F4037C
-+  UUID: 3C09E6FC-C2AB-3803-A4D8-8EDB6FC860EC
-   Functions: 233
-   Symbols:   836
-   CStrings:  87
 Symbols:
 + __ZNKSt3__114default_deleteIN12TelephonyXPC17ServerClientState5StateEEclB9nqe220106EPS3_
 + __ZNKSt9type_infoeqB9nqe220106ERKS_
@@ -118,5 +95,4 @@ Symbols:
 - __ZNSt3__16__treeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_4lessIS6_EENS4_IS6_EEE14__tree_deleterclB9nqe220100EPNS_11__tree_nodeIS6_PvEE
 - __ZNSt3__16__treeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_4lessIS6_EENS4_IS6_EEE18__assign_from_treeB9nqe220100IZNSA_18__copy_assign_treeB9nqe220100EPNS_11__tree_nodeIS6_PvEESF_EUlRS6_RKS6_E_ZNSA_18__copy_assign_treeB9nqe220100ESF_SF_EUlSF_E_EESF_SF_SF_T_T0_
 - __ZNSt3__16__treeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_4lessIS6_EENS4_IS6_EEE21__construct_from_treeB9nqe220100IZNSA_21__copy_construct_treeB9nqe220100EPNS_11__tree_nodeIS6_PvEEEUlRKS6_E_EESF_SF_T_
-
 ```

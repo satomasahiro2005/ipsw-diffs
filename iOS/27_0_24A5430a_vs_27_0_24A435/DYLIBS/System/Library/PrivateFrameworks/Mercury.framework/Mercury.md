@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/Mercury.framework/Mercury`
 
-```diff
+### Section Size Changes
 
- 78.0.0.0.0
--  __TEXT.__text: 0x5eccc
-+  __TEXT.__text: 0x5ed30
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__objc_methlist: 0x19c
-   __TEXT.__const: 0x3bf0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5eccc` | `0x5ed30` | **`+0x64`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_23e46241c -> sub_23ed9e41c : 376 -> 380
 ~ sub_23e466e84 -> sub_23eda2e88 : 2880 -> 2896

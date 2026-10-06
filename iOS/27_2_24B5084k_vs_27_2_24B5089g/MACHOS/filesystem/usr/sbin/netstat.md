@@ -2,35 +2,30 @@
 
 > `/usr/sbin/netstat`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0xf8c1` | `0xf9da` | **`+0x119`** |
+| `__TEXT.__text` | `0x1b728` | `0x1b7a8` | **`+0x80`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
- 757.0.0.0.0
--  __TEXT.__text: 0x1b6b0
-+  __TEXT.__text: 0x1b730
-   __TEXT.__auth_stubs: 0x4e0
--  __TEXT.__cstring: 0xf8c1
-+  __TEXT.__cstring: 0xf9da
-   __TEXT.__const: 0x3d8
-   __TEXT.__unwind_info: 0x268
-   __DATA_CONST.__const: 0x14b8
-
-   - /usr/lib/libpcap.A.dylib
-   Functions: 125
-   Symbols:   272
 -  CStrings:  2434
 +  CStrings:  2442
- 
 Functions:
 ~ _print_droptap_stats : 4600 -> 4648
-~ sub_100019d98 -> sub_100019dc8 : 88 -> 104
+~ sub_100019e04 -> sub_100019e34 : 88 -> 104
 ~ _drop_description_str : 5440 -> 5488
-~ sub_10001b700 -> sub_10001b770 : 88 -> 104
+~ sub_10001b76c -> sub_10001b7dc : 88 -> 104
 CStrings:
 + "DROP_REASON_FSW_TX_FLOW_AOP_OFFLOAD"
 + "DROP_REASON_FSW_TX_FLOW_BAD_ID"

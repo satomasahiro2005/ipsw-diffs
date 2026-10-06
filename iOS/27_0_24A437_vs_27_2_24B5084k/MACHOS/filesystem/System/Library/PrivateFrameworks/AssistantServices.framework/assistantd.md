@@ -2,108 +2,66 @@
 
 > `/System/Library/PrivateFrameworks/AssistantServices.framework/assistantd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__dlopen_cstrs`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_catlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x372e38` | `0x380df4` | **`+0xdfbc`** |
+| `__TEXT.__oslogstring` | `0x45eeb` | `0x491a6` | **`+0x32bb`** |
+| `__TEXT.__cstring` | `0x52f49` | `0x54ba5` | **`+0x1c5c`** |
+| `__TEXT.__objc_methname` | `0x61dac` | `0x6388e` | **`+0x1ae2`** |
+| `__TEXT.__objc_stubs` | `0x47540` | `0x48400` | **`+0xec0`** |
+| `__DATA.__objc_const` | `0x34cf0` | `0x35708` | **`+0xa18`** |
+| `__DATA_CONST.__cfstring` | `0x123e0` | `0x12ca0` | **`+0x8c0`** |
+| `__TEXT.__objc_methlist` | `0x23798` | `0x24040` | **`+0x8a8`** |
+| `__DATA.__objc_selrefs` | `0x15638` | `0x15ab0` | **`+0x478`** |
+| `__TEXT.__unwind_info` | `0xa548` | `0xa800` | **`+0x2b8`** |
+| `__DATA_CONST.__const` | `0x14400` | `0x146a0` | **`+0x2a0`** |
+| `__TEXT.__objc_methtype` | `0xffaf` | `0x1021b` | **`+0x26c`** |
+| `__DATA.__objc_data` | `0x8480` | `0x85c0` | **`+0x140`** |
+| `__TEXT.__gcc_except_tab` | `0x3ae4` | `0x3c14` | **`+0x130`** |
+| `__DATA.__objc_ivar` | `0x26a0` | `0x2760` | **`+0xc0`** |
+| `__TEXT.__const` | `0xed40` | `0xede0` | **`+0xa0`** |
+| `__TEXT.__objc_classname` | `0x51d5` | `0x5273` | **`+0x9e`** |
+| `__TEXT.__auth_stubs` | `0x3870` | `0x3900` | **`+0x90`** |
+| `__TEXT.__ustring` | `0x32` | `0x98` | **`+0x66`** |
+| `__DATA.__bss` | `0xde0` | `0xe40` | **`+0x60`** |
+| `__DATA.__data` | `0x5d60` | `0x5db8` | **`+0x58`** |
+| `__DATA_CONST.__auth_got` | `0x1c48` | `0x1c90` | **`+0x48`** |
+| `__DATA_CONST.__got` | `0x3e78` | `0x3ea0` | **`+0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0xd40` | `0xd60` | **`+0x20`** |
+| `__DATA_CONST.__objc_superrefs` | `0xb10` | `0xb30` | **`+0x20`** |
+| `__DATA_CONST.__objc_intobj` | `0x8d0` | `0x8e8` | **`+0x18`** |
+| `__DATA_CONST.__objc_protolist` | `0x728` | `0x730` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x98` | `0xa0` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__objc_arraydata`
 - `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
 - `__DATA_CONST.__objc_dictobj`
 - `__DATA_CONST.__objc_doubleobj`
 - `__DATA_CONST.__objc_floatobj`
-- `__DATA_CONST.__auth_ptr`
+- `__TEXT.__dlopen_cstrs`
+- `__TEXT.__eh_frame`
+
+### Other Changes
 
 ```diff
 
 -3600.68.61.11.11
--  __TEXT.__text: 0x3677e4
--  __TEXT.__auth_stubs: 0x3870
--  __TEXT.__objc_stubs: 0x47540
--  __TEXT.__objc_methlist: 0x23798
--  __TEXT.__const: 0xed40
 +3605.23.1.1.1
-+  __TEXT.__text: 0x375518
-+  __TEXT.__auth_stubs: 0x3900
-+  __TEXT.__objc_stubs: 0x48400
-+  __TEXT.__objc_methlist: 0x24040
-+  __TEXT.__const: 0xede0
-   __TEXT.__dlopen_cstrs: 0x9e9
--  __TEXT.__gcc_except_tab: 0x3ae4
--  __TEXT.__cstring: 0x52f49
--  __TEXT.__oslogstring: 0x45eeb
--  __TEXT.__objc_classname: 0x51d5
--  __TEXT.__objc_methname: 0x61dac
--  __TEXT.__objc_methtype: 0xffaf
--  __TEXT.__ustring: 0x32
--  __TEXT.__unwind_info: 0xcd30
-+  __TEXT.__gcc_except_tab: 0x3c14
-+  __TEXT.__cstring: 0x54ba5
-+  __TEXT.__oslogstring: 0x491a6
-+  __TEXT.__objc_classname: 0x5273
-+  __TEXT.__objc_methname: 0x6388e
-+  __TEXT.__objc_methtype: 0x1021b
-+  __TEXT.__ustring: 0x98
-+  __TEXT.__unwind_info: 0xd080
-   __TEXT.__eh_frame: 0x48
--  __DATA_CONST.__const: 0x14400
--  __DATA_CONST.__cfstring: 0x123e0
--  __DATA_CONST.__objc_classlist: 0xd40
-+  __DATA_CONST.__const: 0x146a0
-+  __DATA_CONST.__cfstring: 0x12ca0
-+  __DATA_CONST.__objc_classlist: 0xd60
-   __DATA_CONST.__objc_catlist: 0x630
--  __DATA_CONST.__objc_protolist: 0x728
-+  __DATA_CONST.__objc_protolist: 0x730
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_protorefs: 0x98
--  __DATA_CONST.__objc_superrefs: 0xb10
-+  __DATA_CONST.__objc_protorefs: 0xa0
-+  __DATA_CONST.__objc_superrefs: 0xb30
-   __DATA_CONST.__objc_arraydata: 0x480
-   __DATA_CONST.__objc_arrayobj: 0x198
--  __DATA_CONST.__objc_intobj: 0x8d0
-+  __DATA_CONST.__objc_intobj: 0x8e8
-   __DATA_CONST.__objc_dictobj: 0x2f8
-   __DATA_CONST.__objc_doubleobj: 0x30
-   __DATA_CONST.__objc_floatobj: 0x30
--  __DATA_CONST.__auth_got: 0x1c48
--  __DATA_CONST.__got: 0x3e78
-+  __DATA_CONST.__auth_got: 0x1c90
-+  __DATA_CONST.__got: 0x3ea0
-   __DATA_CONST.__auth_ptr: 0x28
--  __DATA.__objc_const: 0x34cf0
--  __DATA.__objc_selrefs: 0x15638
--  __DATA.__objc_ivar: 0x26a0
--  __DATA.__objc_data: 0x8480
--  __DATA.__data: 0x5d60
-+  __DATA.__objc_const: 0x35708
-+  __DATA.__objc_selrefs: 0x15ab0
-+  __DATA.__objc_ivar: 0x2760
-+  __DATA.__objc_data: 0x85c0
-+  __DATA.__data: 0x5db8
-   __DATA.__common: 0xa18
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /System/Library/PrivateFrameworks/CoreSpeechFoundation.framework/CoreSpeechFoundation
-   - /System/Library/PrivateFrameworks/CoreUtils.framework/CoreUtils
-   - /System/Library/PrivateFrameworks/CrashReporterSupport.framework/CrashReporterSupport
 +  - /System/Library/PrivateFrameworks/DeviceConfiguration.framework/DeviceConfiguration
-   - /System/Library/PrivateFrameworks/DialogEngine.framework/DialogEngine
-   - /System/Library/PrivateFrameworks/FeatureStore.framework/FeatureStore
-   - /System/Library/PrivateFrameworks/FeedbackLogger.framework/FeedbackLogger
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libresolv.9.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 14642
 -  Symbols:   3007
 -  CStrings:  27910
 +  Functions: 14866
 +  Symbols:   3022
 +  CStrings:  28469
- 
 Symbols:
 + _AFDaemonIsExitingCleanly
 + _AFDaemonWillExitCleanlyNotification

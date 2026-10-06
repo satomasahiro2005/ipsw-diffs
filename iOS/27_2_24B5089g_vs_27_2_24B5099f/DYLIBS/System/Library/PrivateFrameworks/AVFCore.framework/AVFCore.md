@@ -2,90 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/AVFCore.framework/AVFCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21f668` | `0x1ca4ec` | **`-0x5517c`** |
+| `__TEXT.__oslogstring` | `0x20bd4` | `0x50ad` | **`-0x1bb27`** |
+| `__TEXT.__cstring` | `0x35993` | `0x26f53` | **`-0xea40`** |
+| `__TEXT.__gcc_except_tab` | `0xb444` | `0xa02c` | **`-0x1418`** |
+| `__AUTH_CONST.__cfstring` | `0x1ab60` | `0x1a6a0` | **`-0x4c0`** |
+| `__DATA.__common` | `0x450` | `0x1e0` | **`-0x270`** |
+| `__TEXT.__unwind_info` | `0xa7b8` | `0xa578` | **`-0x240`** |
+| `__DATA_DIRTY.__common` | `0x2e0` | `0x1e0` | **`-0x100`** |
+| `__TEXT.__const` | `0x1f38` | `0x1e48` | **`-0xf0`** |
+| `__TEXT.__objc_methlist` | `0x1c244` | `0x1c2f4` | **`+0xb0`** |
+| `__DATA_CONST.__const` | `0x5c20` | `0x5bb8` | **`-0x68`** |
+| `__AUTH_CONST.__objc_const` | `0x32b88` | `0x32bd8` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x2078` | `0x2040` | **`-0x38`** |
+| `__DATA.__bss` | `0x13e0` | `0x1410` | **`+0x30`** |
+| `__DATA_DIRTY.__bss` | `0x219` | `0x1e9` | **`-0x30`** |
+| `__DATA.__data` | `0x186c` | `0x184c` | **`-0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb690` | `0xb6b0` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x27f4` | `0x27fc` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x4858` | `0x4850` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2475.8.1.0.0
--  __TEXT.__text: 0x212524
 +2475.12.1.0.0
-+  __TEXT.__text: 0x1bd1f8
-   __TEXT.__delay_helper: 0x1bc
--  __TEXT.__objc_methlist: 0x1c244
--  __TEXT.__cstring: 0x35993
--  __TEXT.__const: 0x1f38
--  __TEXT.__gcc_except_tab: 0xb444
--  __TEXT.__oslogstring: 0x20bd4
-+  __TEXT.__objc_methlist: 0x1c2f4
-+  __TEXT.__cstring: 0x26f53
-+  __TEXT.__gcc_except_tab: 0xa02c
-+  __TEXT.__const: 0x1e48
-+  __TEXT.__oslogstring: 0x50ad
-   __TEXT.__ustring: 0x18
-   __TEXT.__dlopen_cstrs: 0x56
-   __TEXT.__swift5_typeref: 0x40d
 
-   __TEXT.__swift5_proto: 0x6c
-   __TEXT.__swift5_types: 0x48
-   __TEXT.__swift5_capture: 0x60
--  __TEXT.__unwind_info: 0xc788
-+  __TEXT.__unwind_info: 0xc500
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x5c20
-+  __DATA_CONST.__const: 0x5bb8
-   __DATA_CONST.__objc_classlist: 0x1240
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x1e0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb690
-+  __DATA_CONST.__objc_selrefs: 0xb6b0
-   __DATA_CONST.__objc_protorefs: 0x60
-   __DATA_CONST.__objc_superrefs: 0xd70
-   __DATA_CONST.__objc_arraydata: 0x310
--  __DATA_CONST.__got: 0x4858
-+  __DATA_CONST.__got: 0x4850
-   __AUTH_CONST.__const: 0x1258
--  __AUTH_CONST.__cfstring: 0x1ab60
--  __AUTH_CONST.__objc_const: 0x32b88
-+  __AUTH_CONST.__cfstring: 0x1a6a0
-+  __AUTH_CONST.__objc_const: 0x32bd8
-   __AUTH_CONST.__objc_intobj: 0x288
-   __AUTH_CONST.__objc_arrayobj: 0x360
-   __AUTH_CONST.__objc_doubleobj: 0x30
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x2078
-+  __AUTH_CONST.__auth_got: 0x2040
-   __AUTH.__objc_data: 0x81e0
-   __AUTH.__data: 0x1e8
--  __DATA.__objc_ivar: 0x27f4
--  __DATA.__data: 0x186c
-+  __DATA.__objc_ivar: 0x27fc
-+  __DATA.__data: 0x184c
-   __DATA.__crash_info: 0x148
--  __DATA.__common: 0x450
-+  __DATA.__common: 0x1e0
-   __DATA_DIRTY.__objc_data: 0x3520
-   __DATA_DIRTY.__data: 0x8
--  __DATA_DIRTY.__common: 0x2e0
--  __DATA_DIRTY.__bss: 0x219
-+  __DATA_DIRTY.__common: 0x1e0
-+  __DATA_DIRTY.__bss: 0x1e9
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVRouting.framework/AVRouting
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12665
 -  Symbols:   24018
 -  CStrings:  6527
 +  Functions: 12121
 +  Symbols:   23982
 +  CStrings:  4303
- 
 Symbols:
 + -[AVAsset _availableMediaCharacteristicsFromMediaSelectionGroupDictionaries:]
 + -[AVAsset _mediaSelectionGroupDictionariesIncludingExtendedOptions:]

@@ -2,14 +2,15 @@
 
 > `/usr/lib/libexpat.1.dylib`
 
-```diff
+### Section Size Changes
 
- 47.0.0.0.0
--  __TEXT.__text: 0x18b7c
-+  __TEXT.__text: 0x18bbc
-   __TEXT.__const: 0xa08
-   __TEXT.__cstring: 0xfa7
-   __TEXT.__unwind_info: 0x308
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x18b7c` | `0x18bbc` | **`+0x40`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _doProlog : 6200 -> 6208
 ~ _storeAtts : 2572 -> 2620

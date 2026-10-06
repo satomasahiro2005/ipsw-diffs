@@ -2,18 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CoreIK.framework/CoreIK`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x6ef04
-+  __TEXT.__text: 0x6ec60
-   __TEXT.__const: 0x2138
-   __TEXT.__cstring: 0x28392
-   __TEXT.__oslogstring: 0x112c
-Sections:
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6ef04` | `0x6ec60` | **`-0x2a4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNK9rapidjson12GenericValueINS_4UTF8IcEENS_19MemoryPoolAllocatorINS_12CrtAllocatorEEEE6AcceptINS_12PrettyWriterINS_19GenericStringBufferIS2_S4_EES2_S2_S4_Lj0EEEEEbRT_ : 824 -> 820
 ~ __ZN9rapidjson13GenericReaderINS_4UTF8IcEES2_NS_12CrtAllocatorEE25SkipWhitespaceAndCommentsILj0ENS_18EncodedInputStreamIS2_NS_12MemoryStreamEEEEEvRT0_ : 244 -> 260
@@ -69,5 +66,4 @@ Functions:
 ~ __ZNSt3__111__introsortINS_17_ClassicAlgPolicyERZN12_GLOBAL__N_115reorderRigBonesERN3FIK8MoCapRigEE3$_1PNS3_11RigBoneBaseELb0EEEvT1_SA_T0_NS_15iterator_traitsISA_E15difference_typeEb : 5404 -> 5388
 ~ __ZNSt3__127__insertion_sort_incompleteB9fqn220106INS_17_ClassicAlgPolicyERZN12_GLOBAL__N_115reorderRigBonesERN3FIK8MoCapRigEE3$_1PNS3_11RigBoneBaseEEEbT1_SA_T0_ : 1108 -> 1124
 ~ __ZN12_GLOBAL__N_111findIndexOfINSt3__117basic_string_viewIcNS1_11char_traitsIcEEEEEEmT_N3FIK11IKArrayViewIKS6_EE : 160 -> 140
-
 ```

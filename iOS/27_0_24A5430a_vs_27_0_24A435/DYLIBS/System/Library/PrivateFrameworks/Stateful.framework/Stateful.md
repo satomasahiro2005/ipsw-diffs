@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/Stateful.framework/Stateful`
 
-```diff
+### Section Size Changes
 
- 196.0.6.0.0
--  __TEXT.__text: 0xc570
-+  __TEXT.__text: 0xc574
-   __TEXT.__objc_methlist: 0x20
-   __TEXT.__const: 0x8f8
-   __TEXT.__swift5_typeref: 0x5d2
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc570` | `0xc574` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2ac5a3e2c -> sub_2ad386e2c : 356 -> 360
+~ sub_2ac48fe2c -> sub_2ad270e2c : 356 -> 360
 ```

@@ -2,75 +2,50 @@
 
 > `/sbin/launchd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x16a2c` | `0x168c4` | **`-0x168`** |
+| `__TEXT.__text` | `0x5b82c` | `0x5b8d0` | **`+0xa4`** |
+| `__DATA_CONST.__const` | `0x5a68` | `0x59e0` | **`-0x88`** |
+| `__TEXT.__gcc_except_tab` | `0xc0` | `0xf8` | **`+0x38`** |
+| `__TEXT.__auth_stubs` | `0x2700` | `0x2710` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x1150` | `0x1140` | **`-0x10`** |
+| `__DATA_CONST.__auth_got` | `0x1388` | `0x1390` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA.__os_assumes_log`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__got`
 - `__TEXT.__const`
 - `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_capture`
 - `__TEXT.__dof_launchd`
 - `__TEXT.__eh_frame`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
-- `__DATA.__os_assumes_log`
+- `__TEXT.__init_offsets`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+
+### Other Changes
 
 ```diff
 
 -3298.2.1.0.0
--  __TEXT.__text: 0x5a88c
--  __TEXT.__auth_stubs: 0x2700
 +3298.40.20.0.0
-+  __TEXT.__text: 0x5a93c
-+  __TEXT.__auth_stubs: 0x2710
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__objc_methlist: 0x20c
-   __TEXT.__const: 0x500
 
-   __TEXT.__swift5_fieldmd: 0x60
-   __TEXT.__swift5_proto: 0x8
-   __TEXT.__swift5_types: 0xc
--  __TEXT.__cstring: 0x16a2c
-+  __TEXT.__cstring: 0x168c4
-   __TEXT.__swift5_capture: 0x14
-   __TEXT.__objc_methtype: 0xf
-   __TEXT.__objc_classname: 0x212
-   __TEXT.__objc_methname: 0x1c
--  __TEXT.__gcc_except_tab: 0xc0
-+  __TEXT.__gcc_except_tab: 0xf8
-   __TEXT.__oslogstring: 0xd5
-   __TEXT.__config: 0x2a71
-   __TEXT.__dof_launchd: 0x67c
--  __TEXT.__unwind_info: 0x1780
-+  __TEXT.__unwind_info: 0x1778
-   __TEXT.__eh_frame: 0x210
--  __DATA_CONST.__const: 0x5a68
-+  __DATA_CONST.__const: 0x59e0
-   __DATA_CONST.__objc_classlist: 0xc0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0xb0
--  __DATA_CONST.__auth_got: 0x1388
-+  __DATA_CONST.__auth_got: 0x1390
-   __DATA_CONST.__got: 0x210
-   __DATA_CONST.__auth_ptr: 0xa0
-   __DATA.__objc_const: 0xdf0
-
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
 -  Functions: 1489
 -  Symbols:   710
 -  CStrings:  2835
 +  Functions: 1484
 +  Symbols:   711
 +  CStrings:  2830
- 
 Symbols:
 + _objc_release_x26
 + _objc_retain_x22

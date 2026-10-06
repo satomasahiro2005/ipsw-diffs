@@ -8,13 +8,7 @@
 
 ```diff
 
- 	<key>com.apple.security.exception.files.absolute-path.read-only</key>
- 	<array>
- 		<string>/private/var/db/com.apple.countryd/</string>
 +		<string>/AppleInternal/Library/Application Support/com.apple.feedback/</string>
- 	</array>
- 	<key>com.apple.security.exception.files.home-relative-path.read-only</key>
- 	<array>
 
 ```
 ### MediaRemoteUIService
@@ -23,14 +17,8 @@
 
 ```diff
 
- 	<true/>
- 	<key>com.apple.private.coreservices.canmaplsdatabase</key>
- 	<true/>
 +	<key>com.apple.private.menubar.allow-scene-override-associated-apps</key>
 +	<true/>
- 	<key>com.apple.private.security.container-required</key>
- 	<true/>
- 	<key>com.apple.private.sessionkit.custom-platter-target</key>
 
 ```
 ### RemotePaymentPassActionsMessagesExtension
@@ -39,17 +27,11 @@
 
 ```diff
 
- 		<string>com.apple.identityservicesd.embedded.auth</string>
- 		<string>com.apple.passd.payment</string>
- 		<string>com.apple.NanoPassbook.NPKCompanionViewService.connection.server</string>
 +		<string>com.apple.familycircle.agent</string>
 +	</array>
 +	<key>com.apple.security.exception.shared-preference.read-only</key>
 +	<array>
 +		<string>com.apple.nanopassbook</string>
- 	</array>
- 	<key>com.apple.security.personal-information.addressbook</key>
- 	<true/>
 
 ```
 ### CoreServicesUIAgent
@@ -58,22 +40,10 @@
 
 ```diff
 
- 	<true/>
- 	<key>com.apple.security.exception.mach-lookup.global-name</key>
- 	<array>
 +		<string>com.apple.lsd.open</string>
- 		<string>com.apple.appprotectiond.read</string>
- 		<string>com.apple.appprotectiond.guard</string>
- 	</array>
 
- 		<string>IOSurfaceAcceleratorClient</string>
- 		<string>IOSurfaceRootUserClient</string>
- 	</array>
 +	<key>com.apple.springboard.opensensitiveurl</key>
 +	<true/>
- 	<key>com.apple.usermanagerd.persona.fetch</key>
- 	<true/>
- </dict>
 
 ```
 ### SpringBoard
@@ -82,14 +52,8 @@
 
 ```diff
 
- 	<true/>
- 	<key>com.apple.private.iokit.dominoservice</key>
- 	<true/>
 +	<key>com.apple.private.iokit.powermanagement.read-assertions</key>
 +	<true/>
- 	<key>com.apple.private.iokit.powersource-control</key>
- 	<true/>
- 	<key>com.apple.private.iokit.preventSystemSleepSecurityIndicator</key>
 
 ```
 
@@ -116,14 +80,8 @@
 
 ```diff
 
- 	<true/>
- 	<key>com.apple.appprotectiond.write.access</key>
- 	<true/>
 +	<key>com.apple.private.accounts.allaccounts</key>
 +	<true/>
- 	<key>com.apple.private.coreservices.canmaplsdatabase</key>
- 	<true/>
- 	<key>com.apple.security.app-sandbox</key>
 
 ```
 
@@ -198,33 +156,15 @@
 
 ```diff
 
- 		<!-- Grants access to override assets - deny lists and disabled use case list -->
- 		<string>com.apple.MobileAsset.UAF.FM.Overrides</string>
-         <string>com.apple.MobileAsset.UAF.CoreMotion.Overrides</string>
 -		<!-- grants access to anomaly fm assets -->
 -        <string>com.apple.MobileAsset.UAF.MotionAnomalyFM</string>
- 	</array>
- 
- 
 
- 		<!-- Grants access to model assets -->
- 		<string>/private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_UAF_FM_GenerativeModels/purpose_auto/</string>
- 		<string>/private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_UAF_CoreMotion_IMUFoundationModel/purpose_auto/</string>
 -		<!-- Grants access to anomaly fm assets -->
 -		<string>/private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_UAF_MotionAnomalyFM/purpose_auto/</string>
- 		<!-- Grants access to override assets - deny lists and disabled use case list -->
- 		<string>/private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_UAF_FM_Overrides/purpose_auto/</string>
- 		<string>/private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_UAF_CoreMotion_IMUFoundationModel_Overrides/purpose_auto/</string>
 
- 		<string>/private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_UAF_CoreMotion_IMUFoundationModel/</string>
- 		<string>/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_UAF_CoreMotion_IMUFoundationModel/</string>
- 
 -		<string>/private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_UAF_MotionAnomalyFM/</string>
 -		<string>/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_UAF_MotionAnomalyFM/</string>
 -
- 		<!-- Grants access to override assets - deny lists and disabled use case list -->
- 		<string>/private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_UAF_FM_Overrides/</string>
- 		<string>/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_UAF_FM_Overrides/</string>
 
 ```
 ### CoreServicesAppReplacementExtension
@@ -233,9 +173,6 @@
 
 ```diff
 
- 	<true/>
- 	<key>com.apple.security.app-sandbox</key>
- 	<true/>
 +	<key>com.apple.security.exception.mach-lookup.global-name</key>
 +	<array>
 +		<string>com.apple.appprotectiond.read</string>
@@ -244,9 +181,6 @@
 +	</array>
 +	<key>com.apple.usermanagerd.persona.fetch</key>
 +	<true/>
- </dict>
- </plist>
- 
 
 ```
 ### FedAutoEvalPlugin
@@ -255,18 +189,12 @@
 
 ```diff
 
- 		<string>com.apple.UnifiedAssetFramework</string>
- 		<string>com.apple.modelcatalog.ajax</string>
- 	</array>
 +	<key>com.apple.security.exception.shared-preference.read-write</key>
 +	<array>
 +		<string>com.apple.priml.crashrecords</string>
 +		<string>com.apple.priml.participations</string>
 +		<string>com.apple.priml.submissioncooldown</string>
 +	</array>
- 	<key>com.apple.security.temporary-exception.mach-lookup.global-name</key>
- 	<array>
- 		<string>com.apple.spotlight.IndexAgent</string>
 
 ```
 
@@ -288,22 +216,10 @@
 
 ```diff
 
- <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
- <plist version="1.0">
- <dict>
 +	<key>com.apple.CoreRoutine.LearnedRoute</key>
 +	<true/>
- 	<key>com.apple.locationd.dynamic_accuracy_reduction</key>
- 	<true/>
- 	<key>com.apple.locationd.effective_bundle</key>
 
- 	<array>
- 		<string>com.apple.Maps.MapsSync.store</string>
- 		<string>com.apple.Maps.MapsSync.service</string>
 +		<string>com.apple.routined.registration</string>
- 	</array>
- </dict>
- </plist>
 
 ```
 
@@ -689,26 +605,15 @@
 
 ```diff
 
- 		<string>com.apple.feedbacklogger</string>
- 		<string>com.apple.aiml.siri.OLEOrchestrator</string>
- 	</array>
 +	<key>com.apple.security.exception.shared-preference.read-write</key>
 +	<array>
 +		<string>com.apple.siri.analytics.assistant</string>
 +	</array>
- 	<key>com.apple.security.temporary-exception.mach-lookup.global-name</key>
- 	<array>
- 		<string>com.apple.siri.analytics.assistant</string>
- 		<string>com.apple.feedbacklogger</string>
- 		<string>com.apple.aiml.siri.OLEOrchestrator</string>
- 	</array>
+
 +	<key>com.apple.security.temporary-exception.shared-preference.read-write</key>
 +	<array>
 +		<string>com.apple.siri.analytics.assistant</string>
 +	</array>
- 	<key>com.apple.siri.analytics.assistant</key>
- 	<array>
- 		<string>runtime.host</string>
 
 ```
 ### SiriSuggestionsLightHousePlugin
@@ -717,21 +622,9 @@
 
 ```diff
 
- 	<key>com.apple.security.exception.shared-preference.read-only</key>
- 	<array>
- 		<string>com.apple.assistant.backedup</string>
 +		<string>com.apple.assistant.public</string>
- 		<string>com.apple.assistant.settings</string>
- 		<string>com.apple.ironwood.support</string>
- 	</array>
 
- 	<key>com.apple.security.temporary-exception.shared-preference.read-only</key>
- 	<array>
- 		<string>com.apple.assistant.backedup</string>
 +		<string>com.apple.assistant.public</string>
- 	</array>
- 	<key>com.apple.siri.VoiceShortcuts.xpc</key>
- 	<true/>
 
 ```
 
@@ -777,48 +670,24 @@
 
 ```diff
 
- 	</array>
- 	<key>com.apple.developer.ubiquity-kvstore-identifier</key>
- 	<string>com.apple.priml.pfl.plugins</string>
 +	<key>com.apple.mediaanalysisd.client</key>
 +	<true/>
- 	<key>com.apple.priml.pfl.Morpheus.allowed</key>
- 	<true/>
- 	<key>com.apple.private.appleaccount.app-hidden-from-icloud-settings</key>
- 	<true/>
+
 +	<key>com.apple.private.assets.accessible-asset-types</key>
 +	<array>
 +		<string>com.apple.MobileAsset.UAF.FM.GenerativeModels</string>
 +		<string>com.apple.MobileAsset.UAF.FM.Overrides</string>
 +	</array>
- 	<key>com.apple.private.biome.writer</key>
- 	<array>
- 		<string>Lighthouse.Ledger.TaskCustomEvent</string>
 
- 	<true/>
- 	<key>com.apple.private.cloudkit.systemService</key>
- 	<true/>
 +	<key>com.apple.private.coreservices.canmaplsdatabase</key>
 +	<true/>
- 	<key>com.apple.private.dprivacyd.allow</key>
- 	<true/>
- 	<key>com.apple.private.dprivacyd.metadata.allow</key>
- 	<true/>
+
 +	<key>com.apple.private.imcore.imdpersistence.database-access</key>
 +	<true/>
- 	<key>com.apple.private.intelligenceplatform.use-cases</key>
- 	<dict>
- 		<key>MLHostTelemetry</key>
 
- 			</array>
- 		</dict>
- 	</dict>
 +	<key>com.apple.private.security.storage.MobileAssetGenerativeModels</key>
 +	<true/>
- 	<key>com.apple.private.tcc.allow</key>
- 	<array>
- 		<string>kTCCServiceLiverpool</string>
- 	</array>
+
 +	<key>com.apple.security.exception.files.absolute-path.read-only</key>
 +	<array>
 +		<string>/private/var/MobileAsset/AssetsV2/locks/com.apple.UnifiedAssetFramework/</string>
@@ -830,14 +699,8 @@
 +		<string>/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_UAF_FM_Overrides/</string>
 +		<string>/private/var/mobile/Library/com.apple.modelcatalog/sideload/</string>
 +	</array>
- 	<key>com.apple.security.exception.mach-lookup.global-name</key>
- 	<array>
- 		<string>com.apple.mlhostd.xpc</string>
- 		<string>com.apple.cloudd</string>
+
 +		<string>com.apple.imdpersistence.IMDPersistenceAgent</string>
- 	</array>
- 	<key>com.apple.security.exception.shared-preference.read-write</key>
- 	<array>
 
 ```
 
@@ -852,22 +715,10 @@
 
 ```diff
 
- 	<true/>
- 	<key>com.apple.private.screen-time</key>
- 	<true/>
 +	<key>com.apple.private.screen-time-settings</key>
 +	<true/>
- 	<key>com.apple.private.screentime-communication</key>
- 	<true/>
- 	<key>com.apple.private.security.storage.CallHistory</key>
 
- 		<string>com.apple.biome.access.user</string>
- 		<string>com.apple.biome.compute.source</string>
- 		<string>com.apple.ScreenTimeAgent.communication</string>
 +		<string>com.apple.ScreenTimeSettingsAgent.private</string>
- 		<string>com.apple.appprotectiond.read</string>
- 		<string>com.apple.Archetype.personalContext</string>
- 		<string>com.apple.familycircle.agent</string>
 
 ```
 ### ContactsViewService
@@ -876,22 +727,10 @@
 
 ```diff
 
- 	<true/>
- 	<key>com.apple.private.screen-time</key>
- 	<true/>
 +	<key>com.apple.private.screen-time-settings</key>
 +	<true/>
- 	<key>com.apple.private.screentime-communication</key>
- 	<true/>
- 	<key>com.apple.private.security.storage.CallHistory</key>
 
- 		<string>com.apple.biome.access.user</string>
- 		<string>com.apple.biome.compute.source</string>
- 		<string>com.apple.ScreenTimeAgent.communication</string>
 +		<string>com.apple.ScreenTimeSettingsAgent.private</string>
- 		<string>com.apple.appprotectiond.read</string>
- 		<string>com.apple.Archetype.personalContext</string>
- 		<string>com.apple.familycircle.agent</string>
 
 ```
 ### spotlightknowledged
@@ -900,13 +739,7 @@
 
 ```diff
 
- 	<key>com.apple.trial.client</key>
- 	<array>
- 		<string>333</string>
 +		<string>336</string>
- 	</array>
- </dict>
- </plist>
 
 ```
 ### fileproviderd
@@ -915,14 +748,8 @@
 
 ```diff
 
- 	<true/>
- 	<key>com.apple.fileprovider.extension-host</key>
- 	<true/>
 +	<key>com.apple.fileprovider.fpck-service</key>
 +	<true/>
- 	<key>com.apple.fileprovider.import-cookie</key>
- 	<true/>
- 	<key>com.apple.fileprovider.resolver</key>
 
 ```
 
@@ -937,14 +764,8 @@
 
 ```diff
 
- 	<true/>
- 	<key>com.apple.private.appstorecomponents</key>
- 	<true/>
 +	<key>com.apple.private.appstorecomponents.small-offer-button</key>
 +	<true/>
- 	<key>com.apple.private.appstored</key>
- 	<array>
- 		<string>Library</string>
 
 ```
 ### callintelligenced
@@ -953,22 +774,10 @@
 
 ```diff
 
- 	<true/>
- 	<key>com.apple.coretelephony.Identity.get</key>
- 	<true/>
 +	<key>com.apple.duet.activityscheduler.allow</key>
 +	<true/>
- 	<key>com.apple.facetimemessagestored.service</key>
- 	<array>
- 		<string>access-facetime-messaging</string>
 
- 		<string>com.apple.PerfPowerTelemetryClientRegistrationService</string>
- 		<string>com.apple.TextUnderstanding.process</string>
- 		<string>com.apple.generativeexperiences.agentSessionStore</string>
 +		<string>com.apple.duetactivityscheduler</string>
- 	</array>
- 	<key>com.apple.security.exception.mach-lookup.xpc-service-name</key>
- 	<array>
 
 ```
 ### accessoryd
@@ -977,14 +786,8 @@
 
 ```diff
 
- 	</array>
- 	<key>com.apple.private.ZhuGeSupport.CopyValue</key>
- 	<true/>
 +	<key>com.apple.private.accessories.transport-client</key>
 +	<true/>
- 	<key>com.apple.private.applecredentialmanager.allow</key>
- 	<true/>
- 	<key>com.apple.private.applecredentialmanager.devicerestrictedmode.allow</key>
 
 ```
 ### parsecd
@@ -993,14 +796,8 @@
 
 ```diff
 
- 	<true/>
- 	<key>com.apple.managedconfiguration.profiled-access</key>
- 	<true/>
 +	<key>com.apple.nano.nanoregistry.generalaccess</key>
 +	<true/>
- 	<key>com.apple.private.MobileGestalt.AllowedProtectedKeys</key>
- 	<array>
- 		<string>RegionCode</string>
 
 ```
 ### DraftingExtension-iOS
@@ -1009,13 +806,7 @@
 
 ```diff
 
- 	<key>com.apple.security.exception.files.absolute-path.read-only</key>
- 	<array>
- 		<string>/private/var/db/com.apple.countryd/</string>
 +		<string>/AppleInternal/Library/Application Support/com.apple.feedback/</string>
- 	</array>
- 	<key>com.apple.security.exception.files.home-relative-path.read-only</key>
- 	<array>
 
 ```
 ### generativeexperiencesd
@@ -1024,14 +815,8 @@
 
 ```diff
 
- 		<string>/private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_UAF_FM_Overrides/</string>
- 		<string>/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_UAF_FM_Overrides/</string>
- 		<string>/private/var/db/com.apple.countryd/</string>
 -		<string>/private/var/db/assetsubscriptiond/UAFAssetSubscriptions.db</string>
 +		<string>/private/var/db/assetsubscriptiond/</string>
- 		<string>/private/var/db/os_eligibility/eligibility.plist</string>
- 		<string>/private/var/installd/Library/MobileInstallation/</string>
- 	</array>
 
 ```
 ### HealthPlansDiagnosticExtension
@@ -1040,18 +825,12 @@
 
 ```diff
 
- <dict>
- 	<key>com.apple.DiagnosticExtensions.extension</key>
- 	<true/>
 +	<key>com.apple.private.health.control</key>
 +	<array>
 +		<string>arbiter</string>
 +	</array>
 +	<key>com.apple.private.healthkit</key>
 +	<true/>
- </dict>
- </plist>
- 
 
 ```
 
@@ -1097,16 +876,10 @@
 
 ```diff
 
- 		<string>kTCCServicePhotos</string>
- 		<string>kTCCServiceWillow</string>
- 	</array>
 +	<key>com.apple.private.tcc.manager.access.read</key>
 +	<array>
 +		<string>kTCCServiceSiriAccess</string>
 +	</array>
- 	<key>com.apple.private.usage-tracking</key>
- 	<true/>
- 	<key>com.apple.proactive.eventtracker</key>
 
 ```
 ### knowledgeconstructiond
@@ -1115,16 +888,10 @@
 
 ```diff
 
- 		<string>kTCCServicePhotos</string>
- 		<string>kTCCServiceWillow</string>
- 	</array>
 +	<key>com.apple.private.tcc.manager.access.read</key>
 +	<array>
 +		<string>kTCCServiceSiriAccess</string>
 +	</array>
- 	<key>com.apple.private.usage-tracking</key>
- 	<true/>
- 	<key>com.apple.proactive.PersonalizationPortrait.Contact</key>
 
 ```
 ### navd
@@ -1133,16 +900,10 @@
 
 ```diff
 
- 	<array>
- 		<string>maps.parkedCar</string>
- 	</array>
 +	<key>com.apple.private.assets.accessible-asset-types</key>
 +	<array>
 +		<string>com.apple.MobileAsset.UAF.Siri.TextToSpeech</string>
 +	</array>
- 	<key>com.apple.private.attribution.implicitly-assumed-identity</key>
- 	<dict>
- 		<key>type</key>
 
 ```
 ### com.apple.photos.VideoConversionService
@@ -1151,9 +912,6 @@
 
 ```diff
 
- 	<true/>
- 	<key>com.apple.private.security.storage.PhotosLibraries</key>
- 	<true/>
 +	<key>com.apple.security.exception.files.absolute-path.read-only</key>
 +	<array>
 +		<string>/private/var/MobileAsset/AssetsV2/locks/com.apple.UnifiedAssetFramework/</string>
@@ -1174,9 +932,6 @@
 +		<string>com.apple.UnifiedAssetFramework</string>
 +		<string>com.apple.AppleDepth</string>
 +	</array>
- 	<key>com.apple.security.hardened-process</key>
- 	<true/>
- 	<key>com.apple.security.hardened-process.checked-allocations</key>
 
 ```
 ### PersonalizedSensingService
@@ -1185,16 +940,10 @@
 
 ```diff
 
- 	<true/>
- 	<key>com.apple.private.sandbox.profile:embedded</key>
- 	<string>temporary-sandbox</string>
 +	<key>com.apple.private.tcc.manager.access.read</key>
 +	<array>
 +		<string>kTCCServiceSiriAccess</string>
 +	</array>
- 	<key>com.apple.security.exception.files.home-relative-path.read-write</key>
- 	<array>
- 		<string>/Library/Caches/com.apple.momentsd/</string>
 
 ```
 ### SeymourMetricsService
@@ -1203,23 +952,11 @@
 
 ```diff
 
- 	<string>690470489</string>
- 	<key>application-identifier</key>
- 	<string>com.apple.Seymour.Metrics.xpc</string>
 +	<key>com.apple.accounts.appleaccount.fullaccess</key>
 +	<true/>
- 	<key>com.apple.application-identifier</key>
- 	<string>com.apple.Seymour.Metrics.xpc</string>
- 	<key>com.apple.fitcore</key>
 
- 	<array>
- 		<string>Library/Caches/com.apple.AppleMediaServices</string>
- 	</array>
 +	<key>com.apple.private.accounts.allaccounts</key>
 +	<true/>
- 	<key>com.apple.private.applemediaservices</key>
- 	<true/>
- 	<key>com.apple.runningboard.jetengine</key>
 
 ```
 ### SiriSuggestionsBookkeepingService
@@ -1228,13 +965,7 @@
 
 ```diff
 
- 		<string>com.apple.assistant.settings</string>
- 		<string>com.apple.assistant.backedup</string>
- 		<string>com.apple.suggestions</string>
 +		<string>com.apple.assistant.public</string>
- 	</array>
- 	<key>com.apple.security.exception.shared-preference.read-write</key>
- 	<array>
 
 ```
 ### tccd
@@ -1243,14 +974,8 @@
 
 ```diff
 
- 	<array>
- 		<string>reset</string>
- 	</array>
 +	<key>com.apple.private.healthkit.data-access-report</key>
 +	<true/>
- 	<key>com.apple.private.ids.messaging</key>
- 	<array>
- 		<string>com.apple.private.alloy.tccd.sync</string>
 
 ```
 
@@ -1265,22 +990,10 @@
 
 ```diff
 
- 	<true/>
- 	<key>com.apple.private.screen-time</key>
- 	<true/>
 +	<key>com.apple.private.screen-time-settings</key>
 +	<true/>
- 	<key>com.apple.private.screentime-communication</key>
- 	<true/>
- 	<key>com.apple.private.security.container-required</key>
 
- 		<string>com.apple.biome.access.user</string>
- 		<string>com.apple.biome.compute.source</string>
- 		<string>com.apple.ScreenTimeAgent.communication</string>
 +		<string>com.apple.ScreenTimeSettingsAgent.private</string>
- 		<string>com.apple.appprotectiond.read</string>
- 		<string>com.apple.familycircle.agent</string>
- 		<string>com.apple.safetycheckd</string>
 
 ```
 
@@ -1338,13 +1051,7 @@
 
 ```diff
 
- 	<key>com.apple.private.assets.accessible-asset-types</key>
- 	<array>
- 		<string>com.apple.MobileAsset.GeoPolygonDataAssets</string>
 +		<string>com.apple.MobileAsset.UAF.Siri.TextToSpeech</string>
- 	</array>
- 	<key>com.apple.private.avatar.store</key>
- 	<true/>
 
 ```
 ### MobileSMS
@@ -1353,13 +1060,7 @@
 
 ```diff
 
- 		<string>com.apple.intelligenceplatform.View</string>
- 		<string>com.apple.intelligenceplatform.EntityResolution</string>
- 		<string>com.apple.imagent.EnhancedLinkSecurityStore</string>
 +		<string>com.apple.internal.SpotlightAutomationTester</string>
- 	</array>
- 	<key>com.apple.security.exception.shared-preference.read-only</key>
- 	<array>
 
 ```
 ### ASPCarryLog
@@ -1368,17 +1069,11 @@
 
 ```diff
 
- 		<string>vm.pagesize</string>
- 		<string>kern.osrevision</string>
- 		<string>hw.memsize</string>
 +		<string>vm.compressor.swapper.swapouts_pressure</string>
 +		<string>vm.compressor.swapper.swapouts_freezer</string>
 +		<string>vm.compressor.swapper.swapouts_donate</string>
 +		<string>vm.compressor.swapper.swapouts_scavenger</string>
 +		<string>vm.compressor.swapper.swapouts_darkwake</string>
- 	</array>
- 	<key>com.apple.storage-data</key>
- 	<true/>
 
 ```
 ### airplayd
@@ -1387,14 +1082,8 @@
 
 ```diff
 
- 		<string>SerialNumber</string>
- 		<string>UniqueDeviceID</string>
- 	</array>
 +	<key>com.apple.private.accessories.transport-client</key>
 +	<true/>
- 	<key>com.apple.private.applemediaservices</key>
- 	<true/>
- 	<key>com.apple.private.audio.driver.extrinsic.registration</key>
 
 ```
 ### feedbackd
@@ -1403,13 +1092,7 @@
 
 ```diff
 
- 	<key>com.apple.security.exception.files.absolute-path.read-only</key>
- 	<array>
- 		<string>/private/var/db/com.apple.countryd/</string>
 +		<string>/AppleInternal/Library/Application Support/com.apple.feedback/</string>
- 	</array>
- 	<key>com.apple.security.exception.files.home-relative-path.read-write</key>
- 	<array>
 
 ```
 ### inputanalyticsd
@@ -1418,13 +1101,7 @@
 
 ```diff
 
- 		<string>com.apple.audioanalyticsd</string>
- 		<string>com.apple.audio.AudioSession</string>
- 		<string>com.apple.backboard.display.services</string>
 +		<string>com.apple.server.bluetooth.le.att.xpc</string>
- 	</array>
- 	<key>com.apple.security.exception.shared-preference.read-only</key>
- 	<array>
 
 ```
 ### modelmanagerd
@@ -1433,29 +1110,11 @@
 
 ```diff
 
- 		<string>com.apple.MobileAsset.UAF.FM.Overrides</string>
- 		<string>com.apple.MobileAsset.UAF.FM.Visual</string>
- 		<string>com.apple.MobileAsset.UAF.IF.Planner</string>
 +		<string>com.apple.MobileAsset.UAF.MotionAnomalyFM</string>
- 		<string>com.apple.MobileAsset.UAF.Music.ConcertsRanking</string>
- 		<string>com.apple.MobileAsset.UAF.Photos.SpatialPhotosRelive</string>
- 		<string>com.apple.MobileAsset.UAF.Translation.Assets</string>
 
- 		<string>/private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_UAF_Photos_SpatialPhotosRelive/</string>
- 		<string>/private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_UAF_IF_Planner/</string>
- 		<string>/private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_UAF_IF_PlannerOverrides/</string>
 +		<string>/private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_UAF_MotionAnomalyFM/</string>
- 		<string>/private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_UAF_Music_ConcertsRanking/</string>
- 		<string>/private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_UAF_Siri_DialogAssets/</string>
- 		<string>/private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_UAF_Siri_FindMyConfigurationFiles/</string>
 
- 		<string>/private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_UAF_Photos_SpatialPhotosRelive/</string>
- 		<string>/private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_UAF_IF_Planner/</string>
- 		<string>/private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_UAF_IF_PlannerOverrides/</string>
 +		<string>/private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_UAF_MotionAnomalyFM/</string>
- 		<string>/private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_UAF_Music_ConcertsRanking/</string>
- 		<string>/private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_UAF_Siri_DialogAssets/</string>
- 		<string>/private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_UAF_Siri_FindMyConfigurationFiles/</string>
 
 ```
 ### rapportd
@@ -1464,14 +1123,8 @@
 
 ```diff
 
- 	</array>
- 	<key>com.apple.private.homekit</key>
- 	<true/>
 +	<key>com.apple.private.homekit.home-location</key>
 +	<true/>
- 	<key>com.apple.private.homekit.pairing-identity</key>
- 	<true/>
- 	<key>com.apple.private.homekit.pairing-identity.private</key>
 
 ```
 ### spotlightknowledged.graph
@@ -1480,13 +1133,7 @@
 
 ```diff
 
- 	<key>com.apple.trial.client</key>
- 	<array>
- 		<string>333</string>
 +		<string>336</string>
- 	</array>
- </dict>
- </plist>
 
 ```
 ### spotlightknowledged.updater
@@ -1495,13 +1142,7 @@
 
 ```diff
 
- 	<key>com.apple.trial.client</key>
- 	<array>
- 		<string>333</string>
 +		<string>336</string>
- 	</array>
- </dict>
- </plist>
 
 ```
 

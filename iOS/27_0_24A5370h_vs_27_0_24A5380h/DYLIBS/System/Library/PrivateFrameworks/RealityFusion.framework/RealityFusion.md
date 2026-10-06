@@ -2,35 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/RealityFusion.framework/RealityFusion`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb184c` | `0xb15d0` | **`-0x27c`** |
+| `__TEXT.__gcc_except_tab` | `0x9c3c` | `0x9c38` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xb184c
-+  __TEXT.__text: 0xb15d0
-   __TEXT.__objc_methlist: 0x34c
-   __TEXT.__const: 0x93c0
-   __TEXT.__cstring: 0x40e5
--  __TEXT.__gcc_except_tab: 0x9c3c
-+  __TEXT.__gcc_except_tab: 0x9c38
-   __TEXT.__oslogstring: 0x36ed
-   __TEXT.__ustring: 0x72
-   __TEXT.__unwind_info: 0x3798
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+-453.0.2.0.5
++453.0.4.0.2
 Functions:
 ~ __ZNSt3__111__introsortINS_17_ClassicAlgPolicyERZN2rf25getEligibleCeilingAnchorsERKNS_13unordered_mapINS2_9data_flow6RFUUIDENS_7variantIJNS4_12CustomAnchorENS4_11PlaneAnchorENS4_11ImageAnchorENS4_12ObjectAnchorENS4_10FaceAnchorENS4_10BodyAnchorEEEENS5_4HashENS5_8EqualityENS_9allocatorINS_4pairIKS5_SD_EEEEEERKN2re7Vector3IfEEfRKNS2_18CeilingQueryParamsEE3$_0PS8_Lb0EEEvT1_SZ_T0_NS_15iterator_traitsISZ_E15difference_typeEb : 7756 -> 7624
 ~ __ZNSt3__127__insertion_sort_incompleteB9fqe220106INS_17_ClassicAlgPolicyERZN2rf25getEligibleCeilingAnchorsERKNS_13unordered_mapINS2_9data_flow6RFUUIDENS_7variantIJNS4_12CustomAnchorENS4_11PlaneAnchorENS4_11ImageAnchorENS4_12ObjectAnchorENS4_10FaceAnchorENS4_10BodyAnchorEEEENS5_4HashENS5_8EqualityENS_9allocatorINS_4pairIKS5_SD_EEEEEERKN2re7Vector3IfEEfRKNS2_18CeilingQueryParamsEE3$_0PS8_EEbT1_SZ_T0_ : 1192 -> 1112
@@ -60,5 +44,4 @@ Functions:
 ~ __ZNSt3__127__insertion_sort_incompleteB9fqe220106INS_17_ClassicAlgPolicyERZN2rf9data_flow8consumer31EnvironmentProbeConsumerUtility34computeSceneMeshAABBClusterIslandsERKNS_6vectorINS2_4AABBENS_9allocatorIS7_EEEEiffE3$_1PS7_EEbT1_SG_T0_ : 2000 -> 1988
 ~ __ZNSt3__111__introsortINS_15_RangeAlgPolicyERZN2rf9data_flow8consumer24AnchorManagementConsumer14matchingAnchorEP7RESceneP11REComponentRKNS2_11ARStateDataEE3$_6PNS_4pairINS_7variantIJNS3_12CustomAnchorENS3_11PlaneAnchorENS3_11ImageAnchorENS3_12ObjectAnchorENS3_10FaceAnchorENS3_10BodyAnchorEEEENS_8optionalIfEEEELb0EEEvT1_SS_T0_NS_15iterator_traitsISS_E15difference_typeEb : 3320 -> 3280
 ~ __ZNSt3__127__insertion_sort_incompleteB9fqe220106INS_15_RangeAlgPolicyERZN2rf9data_flow8consumer24AnchorManagementConsumer14matchingAnchorEP7RESceneP11REComponentRKNS2_11ARStateDataEE3$_6PNS_4pairINS_7variantIJNS3_12CustomAnchorENS3_11PlaneAnchorENS3_11ImageAnchorENS3_12ObjectAnchorENS3_10FaceAnchorENS3_10BodyAnchorEEEENS_8optionalIfEEEEEEbT1_SS_T0_ : 716 -> 680
-
 ```

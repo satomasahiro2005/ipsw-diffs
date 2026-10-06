@@ -2,27 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/CoreSVG.framework/CoreSVG`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x35568
-+  __TEXT.__text: 0x353d0
-   __TEXT.__const: 0x2e8
-   __TEXT.__cstring: 0x21ca
-   __TEXT.__gcc_except_tab: 0x323c
--  __TEXT.__unwind_info: 0x1b98
-+  __TEXT.__unwind_info: 0x1b88
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x35568` | `0x353d0` | **`-0x198`** |
+| `__TEXT.__unwind_info` | `0x1b98` | `0x1b88` | **`-0x10`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN12SVGAttribute15resolveAsFloatsEv : 932 -> 912
 ~ __ZN9SVGParser30StripLeadingTrailingWhitespaceEPKcmPcm : 268 -> 284
@@ -46,5 +35,4 @@ Functions:
 ~ __ZNSt3__16vectorINS_10unique_ptrI12FilterResultNS_14default_deleteIS2_EEEENS_9allocatorIS5_EEE22__base_destruct_at_endB9fqe220106EPS5_ : 96 -> 84
 ~ __ZN9SVGWriter17writeAttributeMapEP15SVGAttributeMap : 216 -> 196
 ~ __ZN9SVGWriter10writeStyleEv : 904 -> 892
-
 ```

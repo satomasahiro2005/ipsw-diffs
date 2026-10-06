@@ -2,20 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/AudioDSPGraph.framework/AudioDSPGraph`
 
-```diff
+### Section Size Changes
 
- 73.101.0.0.0
--  __TEXT.__text: 0xbc6c8
--  __TEXT.__realtime: 0xc470
-+  __TEXT.__text: 0xbc768
-+  __TEXT.__realtime: 0xc474
-   __TEXT.__objc_methlist: 0x1bb8
-   __TEXT.__const: 0x4588
--  __TEXT.__gcc_except_tab: 0xcd54
-+  __TEXT.__gcc_except_tab: 0xcd5c
-   __TEXT.__oslogstring: 0x1d95
-   __TEXT.__cstring: 0x9cdc
-   __TEXT.__unwind_info: 0x4f58
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbc6c8` | `0xbc768` | **`+0xa0`** |
+| `__TEXT.__gcc_except_tab` | `0xcd54` | `0xcd5c` | **`+0x8`** |
+| `__TEXT.__realtime` | `0xc470` | `0xc474` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN13AudioDSPGraph8Language2V112Preprocessor10preprocessERKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEb : 11812 -> 11828
 ~ __ZN13AudioDSPGraph5Boxes5AUBox10initializeEv : 1068 -> 1076

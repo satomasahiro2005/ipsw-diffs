@@ -2,104 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/SiriMessageBus.framework/SiriMessageBus`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10c6c0` | `0x119f28` | **`+0xd868`** |
+| `__TEXT.__eh_frame` | `0x9ab0` | `0xa568` | **`+0xab8`** |
+| `__TEXT.__oslogstring` | `0x8f53` | `0x9953` | **`+0xa00`** |
+| `__TEXT.__unwind_info` | `0x3e38` | `0x45b8` | **`+0x780`** |
+| `__AUTH_CONST.__const` | `0x65f8` | `0x6c08` | **`+0x610`** |
+| `__TEXT.__const` | `0x5740` | `0x5bd0` | **`+0x490`** |
+| `__AUTH_CONST.__objc_const` | `0xbb20` | `0xbf08` | **`+0x3e8`** |
+| `__TEXT.__cstring` | `0x3a8a` | `0x3cda` | **`+0x250`** |
+| `__DATA.__bss` | `0x2f10` | `0x3110` | **`+0x200`** |
+| `__TEXT.__swift5_typeref` | `0x2349` | `0x2549` | **`+0x200`** |
+| `__TEXT.__constg_swiftt` | `0x23ac` | `0x25a8` | **`+0x1fc`** |
+| `__TEXT.__swift5_capture` | `0x19c4` | `0x1bb8` | **`+0x1f4`** |
+| `__AUTH.__data` | `0x5a0` | `0x6f0` | **`+0x150`** |
+| `__DATA.__data` | `0x11a8` | `0x1298` | **`+0xf0`** |
+| `__AUTH_CONST.__auth_got` | `0x2680` | `0x2768` | **`+0xe8`** |
+| `__TEXT.__swift5_reflstr` | `0x193f` | `0x1a1f` | **`+0xe0`** |
+| `__TEXT.__swift5_fieldmd` | `0x138c` | `0x1454` | **`+0xc8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xef8` | `0xfa0` | **`+0xa8`** |
+| `__TEXT.__swift_as_ret` | `0x488` | `0x514` | **`+0x8c`** |
+| `__DATA_CONST.__got` | `0x1568` | `0x15f0` | **`+0x88`** |
+| `__TEXT.__swift_as_cont` | `0x794` | `0x810` | **`+0x7c`** |
+| `__TEXT.__swift_as_entry` | `0x2ec` | `0x34c` | **`+0x60`** |
+| `__DATA_DIRTY.__data` | `0x2e38` | `0x2e88` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x14ac` | `0x14dc` | **`+0x30`** |
+| `__TEXT.__swift5_proto` | `0x344` | `0x35c` | **`+0x18`** |
+| `__DATA_CONST.__const` | `0x2b8` | `0x2c8` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0xf8` | `0x108` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x14c` | `0x15c` | **`+0x10`** |
+| `__TEXT.__swift5_assocty` | `0x1d0` | `0x1d8` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x68` | `0x6c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3600.54.24.11.1
--  __TEXT.__text: 0xfcf94
--  __TEXT.__objc_methlist: 0x14ac
--  __TEXT.__const: 0x5740
--  __TEXT.__swift5_typeref: 0x2349
--  __TEXT.__swift5_fieldmd: 0x138c
--  __TEXT.__constg_swiftt: 0x23ac
--  __TEXT.__swift5_reflstr: 0x193f
--  __TEXT.__oslogstring: 0x8f53
--  __TEXT.__cstring: 0x3a8a
 +3605.18.1.0.0
-+  __TEXT.__text: 0x1095f4
-+  __TEXT.__objc_methlist: 0x14dc
-+  __TEXT.__const: 0x5bd0
-+  __TEXT.__cstring: 0x3cda
-+  __TEXT.__swift5_typeref: 0x2549
-+  __TEXT.__constg_swiftt: 0x25a8
-+  __TEXT.__swift5_reflstr: 0x1a1f
-+  __TEXT.__swift5_fieldmd: 0x1454
-   __TEXT.__swift5_builtin: 0xf0
--  __TEXT.__swift5_assocty: 0x1d0
--  __TEXT.__swift5_protos: 0x68
--  __TEXT.__swift5_proto: 0x344
--  __TEXT.__swift5_types: 0x14c
--  __TEXT.__swift5_capture: 0x19c4
--  __TEXT.__swift_as_entry: 0x2ec
--  __TEXT.__swift_as_ret: 0x488
--  __TEXT.__swift_as_cont: 0x794
-+  __TEXT.__swift5_assocty: 0x1d8
-+  __TEXT.__swift5_proto: 0x35c
-+  __TEXT.__swift5_types: 0x15c
-+  __TEXT.__oslogstring: 0x9953
-+  __TEXT.__swift5_protos: 0x6c
-+  __TEXT.__swift5_capture: 0x1bb8
-+  __TEXT.__swift_as_entry: 0x34c
-+  __TEXT.__swift_as_ret: 0x514
-+  __TEXT.__swift_as_cont: 0x810
-   __TEXT.__swift5_mpenum: 0x14
--  __TEXT.__unwind_info: 0x48b0
--  __TEXT.__eh_frame: 0x9ab0
-+  __TEXT.__unwind_info: 0x4c88
-+  __TEXT.__eh_frame: 0xa568
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2b8
--  __DATA_CONST.__objc_classlist: 0xf8
-+  __DATA_CONST.__const: 0x2c8
-+  __DATA_CONST.__objc_classlist: 0x108
-   __DATA_CONST.__objc_protolist: 0x180
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xef8
-+  __DATA_CONST.__objc_selrefs: 0xfa0
-   __DATA_CONST.__objc_protorefs: 0xc8
--  __DATA_CONST.__got: 0x1568
--  __AUTH_CONST.__const: 0x65f8
-+  __DATA_CONST.__got: 0x15f0
-+  __AUTH_CONST.__const: 0x6c08
-   __AUTH_CONST.__cfstring: 0x20
--  __AUTH_CONST.__objc_const: 0xbb20
--  __AUTH_CONST.__auth_got: 0x2680
-+  __AUTH_CONST.__objc_const: 0xbf08
-+  __AUTH_CONST.__auth_got: 0x2768
-   __AUTH.__objc_data: 0x120
--  __AUTH.__data: 0x5a0
--  __DATA.__data: 0x11a8
-+  __AUTH.__data: 0x6f0
-+  __DATA.__data: 0x1298
-   __DATA.__common: 0x20
-   __DATA_DIRTY.__objc_data: 0x600
--  __DATA_DIRTY.__data: 0x2e38
-+  __DATA_DIRTY.__data: 0x2e88
-   __DATA_DIRTY.__common: 0x1d8
-   __DATA_DIRTY.__bss: 0xa80
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/PrivateFrameworks/AppleIntelligenceReporting.framework/AppleIntelligenceReporting
-   - /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
-   - /System/Library/PrivateFrameworks/CDMFoundation.framework/CDMFoundation
 +  - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/FlowToolsSnippetService.framework/FlowToolsSnippetService
-   - /System/Library/PrivateFrameworks/IntelligenceFlow.framework/IntelligenceFlow
-   - /System/Library/PrivateFrameworks/IntelligenceFlowErrorTypes.framework/IntelligenceFlowErrorTypes
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6073
--  Symbols:   2199
+-  Symbols:   1869
 -  CStrings:  783
 +  Functions: 6350
-+  Symbols:   2270
++  Symbols:   1920
 +  CStrings:  816
- 
 Symbols:
 + _OBJC_CLASS_$_AFVoiceIdScoreCard
 + _OBJC_CLASS_$_AceObject
@@ -119,26 +71,6 @@ Symbols:
 + ___unnamed_23
 + _associated conformance 14SiriMessageBus0A25DeviceRoutingFeatureFlagsOSHAASQ
 + _associated conformance 14SiriMessageBus37IntelligenceFlowProxyProductionTraitsOAA0defH0AA19MultiUserControllerAaDP_AA0ijK8Protocol
-+ _objc_msgSend$aceObjectWithGenericCommand:
-+ _objc_msgSend$candidatesFromResults:
-+ _objc_msgSend$consumeElectionData
-+ _objc_msgSend$deviceClass
-+ _objc_msgSend$deviceGroup
-+ _objc_msgSend$deviceName
-+ _objc_msgSend$dialogs
-+ _objc_msgSend$electionParticipationForDeviceClass:
-+ _objc_msgSend$goodnessScore
-+ _objc_msgSend$idsIdentifier
-+ _objc_msgSend$isLocalDevice
-+ _objc_msgSend$isLocalEligibleRoutingTargetInCandidates:
-+ _objc_msgSend$isWinner
-+ _objc_msgSend$needsUserInput
-+ _objc_msgSend$pHash
-+ _objc_msgSend$productType
-+ _objc_msgSend$selectsAll
-+ _objc_msgSend$userClassified
-+ _objc_msgSend$userConfidence
-+ _objc_msgSend$userIdentityClassification
 + _symbolic $s14SiriMessageBus27MultiUserControllerProtocolP
 + _symbolic 19MultiUserController_____Qz 14SiriMessageBus27IntelligenceFlowProxyTraitsP
 + _symbolic 19MultiUserController_____QzSg 14SiriMessageBus27IntelligenceFlowProxyTraitsP

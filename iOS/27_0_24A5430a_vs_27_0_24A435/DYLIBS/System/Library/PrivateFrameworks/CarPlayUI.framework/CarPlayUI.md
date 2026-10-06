@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CarPlayUI.framework/CarPlayUI`
 
-```diff
+### Section Size Changes
 
- 542.7.0.0.0
--  __TEXT.__text: 0x11e3f4
-+  __TEXT.__text: 0x11e408
-   __TEXT.__objc_methlist: 0x5b98
-   __TEXT.__const: 0xdcf4
-   __TEXT.__cstring: 0x1bed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x11e3f4` | `0x11e408` | **`+0x14`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s9CarPlayUI14CPUIMiniPlayerO4ViewVwet : 1024 -> 1036
 ~ _$s9CarPlayUI14CPUIMiniPlayerO4ViewVwst : 1244 -> 1256

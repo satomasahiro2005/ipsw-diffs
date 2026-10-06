@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/FindMyPairing.framework/FindMyPairing`
 
-```diff
+### Section Size Changes
 
- 106.30.6.14.10
--  __TEXT.__text: 0xd3250
-+  __TEXT.__text: 0xd3248
-   __TEXT.__const: 0x37f6
-   __TEXT.__swift5_typeref: 0x13dd
-   __TEXT.__oslogstring: 0x26eb
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd3250` | `0xd3248` | **`-0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s13FindMyPairing0C7ServiceC14_configuration33_47FACCC5A7E7DEFB858184558C5EFD22LL3forAA0C13ConfigurationOSayAA9Accessory_pG_tYaKFTY0_ : 3800 -> 3772
 ~ _$s13FindMyPairing0C7ServiceC12dependencies3forAA25BaseAccessoryDependencies_pSg10Foundation4UUIDV_tYaKFAGyYaYbcfU_TY2_ : 1248 -> 1252

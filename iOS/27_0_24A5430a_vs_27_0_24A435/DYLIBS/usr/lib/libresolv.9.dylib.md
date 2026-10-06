@@ -2,14 +2,15 @@
 
 > `/usr/lib/libresolv.9.dylib`
 
-```diff
+### Section Size Changes
 
- 96.0.0.0.0
--  __TEXT.__text: 0x18a6c
-+  __TEXT.__text: 0x18ab0
-   __TEXT.__const: 0x3fa
-   __TEXT.__cstring: 0x21c7
-   __TEXT.__unwind_info: 0x328
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x18a6c` | `0x18ab0` | **`+0x44`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _res_9_vinit : 5196 -> 5212
 ~ _satisfy : 296 -> 304

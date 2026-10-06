@@ -2,63 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/AGXCompilerCore.framework/AGXCompilerCore`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_selrefs`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH.__data`
-- `__AUTH.__thread_vars`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x4540` | `0x5098` | **`+0xb58`** |
+| `__AUTH_CONST.__const` | `0x77988` | `0x78040` | **`+0x6b8`** |
+| `__TEXT.__text` | `0x268ae8` | `0x268f04` | **`+0x41c`** |
+| `__TEXT.__cstring` | `0x1c4c2` | `0x1c6e2` | **`+0x220`** |
+| `__TEXT.__unwind_info` | `0x4758` | `0x47a0` | **`+0x48`** |
+| `__AUTH_CONST.__auth_got` | `0x13a0` | `0x13d0` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x7b98` | `0x7bb0` | **`+0x18`** |
+| `__TEXT.__const` | `0x3a408` | `0x3a418` | **`+0x10`** |
+
+### Other Changes
 
 ```diff
 
 -360.31.1.0.0
--  __TEXT.__text: 0x268ae8
--  __TEXT.__const: 0x3a408
--  __TEXT.__cstring: 0x1c4c2
 +360.32.0.0.0
-+  __TEXT.__text: 0x268f04
-+  __TEXT.__const: 0x3a418
-+  __TEXT.__cstring: 0x1c6e2
-   __TEXT.__oslogstring: 0x5fc
--  __TEXT.__unwind_info: 0x4758
-+  __TEXT.__unwind_info: 0x47a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0x7b98
-+  __DATA_CONST.__const: 0x7bb0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
-   __DATA_CONST.__objc_selrefs: 0x40
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x77988
-+  __AUTH_CONST.__const: 0x78040
-   __AUTH_CONST.__cfstring: 0xa0
-   __AUTH_CONST.__weak_auth_got: 0xe8
--  __AUTH_CONST.__auth_got: 0x13a0
-+  __AUTH_CONST.__auth_got: 0x13d0
-   __AUTH.__data: 0x50
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x30
-   __DATA.__data: 0x80
--  __DATA.__bss: 0x4540
-+  __DATA.__bss: 0x5098
-   __DATA_DIRTY.__bss: 0xc00
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 8169
--  Symbols:   11061
+-  Symbols:   11053
 -  CStrings:  4668
 +  Functions: 8182
-+  Symbols:   11081
++  Symbols:   11073
 +  CStrings:  4686
- 
 Symbols:
 + __ZGVZN28AGCPerThreadPerTargetContext13createLLVMCtxERK19AGCLLVMTargetConfigRK19AGCCompilerFeaturesE21agx_extra_llvm_attrib
 + __ZL11loadRuntimeRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPKcPN4llvm6ModuleE

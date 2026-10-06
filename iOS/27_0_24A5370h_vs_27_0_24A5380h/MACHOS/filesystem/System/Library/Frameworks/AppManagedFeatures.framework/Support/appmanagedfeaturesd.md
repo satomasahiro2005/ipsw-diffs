@@ -2,109 +2,66 @@
 
 > `/System/Library/Frameworks/AppManagedFeatures.framework/Support/appmanagedfeaturesd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6f770` | `0x7681c` | **`+0x70ac`** |
+| `__TEXT.__oslogstring` | `0x3d43` | `0x42f3` | **`+0x5b0`** |
+| `__TEXT.__eh_frame` | `0x58f8` | `0x5c20` | **`+0x328`** |
+| `__TEXT.__cstring` | `0x1071` | `0x1281` | **`+0x210`** |
+| `__TEXT.__unwind_info` | `0x1858` | `0x1958` | **`+0x100`** |
+| `__DATA.__data` | `0x13c8` | `0x14a0` | **`+0xd8`** |
+| `__TEXT.__objc_methname` | `0x12cd` | `0x138d` | **`+0xc0`** |
+| `__TEXT.__auth_stubs` | `0x1f40` | `0x1fd0` | **`+0x90`** |
+| `__TEXT.__const` | `0x2eac` | `0x2f3c` | **`+0x90`** |
+| `__DATA_CONST.__got` | `0x750` | `0x7a8` | **`+0x58`** |
+| `__DATA_CONST.__const` | `0x17e0` | `0x1790` | **`-0x50`** |
+| `__DATA_CONST.__auth_got` | `0xfa8` | `0xff0` | **`+0x48`** |
+| `__TEXT.__objc_stubs` | `0x1140` | `0x1180` | **`+0x40`** |
+| `__TEXT.__swift5_capture` | `0x578` | `0x5b8` | **`+0x40`** |
+| `__TEXT.__swift5_typeref` | `0xb3f` | `0xb6f` | **`+0x30`** |
+| `__TEXT.__constg_swiftt` | `0x844` | `0x868` | **`+0x24`** |
+| `__DATA.__common` | `0x50` | `0x70` | **`+0x20`** |
+| `__DATA.__objc_const` | `0x9e0` | `0xa00` | **`+0x20`** |
+| `__DATA.__objc_data` | `0x458` | `0x478` | **`+0x20`** |
+| `__DATA_CONST.__auth_ptr` | `0x6e0` | `0x700` | **`+0x20`** |
+| `__TEXT.__objc_methtype` | `0x596` | `0x5b6` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x4d4` | `0x4ec` | **`+0x18`** |
+| `__DATA.__objc_selrefs` | `0x568` | `0x578` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x4f7` | `0x4e7` | **`-0x10`** |
+| `__TEXT.__swift_as_ret` | `0x2f4` | `0x300` | **`+0xc`** |
+| `__TEXT.__swift_as_entry` | `0x2a0` | `0x2a8` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x70` | `0x74` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_acfuncs`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x6f770
--  __TEXT.__auth_stubs: 0x1f40
--  __TEXT.__objc_stubs: 0x1140
-+  __TEXT.__text: 0x7681c
-+  __TEXT.__auth_stubs: 0x1fd0
-+  __TEXT.__objc_stubs: 0x1180
-   __TEXT.__objc_methlist: 0x26c
--  __TEXT.__const: 0x2eac
--  __TEXT.__oslogstring: 0x3d43
--  __TEXT.__swift5_typeref: 0xb3f
--  __TEXT.__cstring: 0x1071
--  __TEXT.__objc_methtype: 0x596
--  __TEXT.__constg_swiftt: 0x844
-+  __TEXT.__const: 0x2f3c
-+  __TEXT.__swift5_typeref: 0xb6f
-+  __TEXT.__oslogstring: 0x42f3
-+  __TEXT.__swift5_capture: 0x5b8
-+  __TEXT.__objc_methtype: 0x5b6
-+  __TEXT.__constg_swiftt: 0x868
-   __TEXT.__swift5_builtin: 0x28
--  __TEXT.__swift5_reflstr: 0x4f7
-+  __TEXT.__swift5_reflstr: 0x4e7
-   __TEXT.__swift5_fieldmd: 0x4fc
-   __TEXT.__swift5_assocty: 0x120
-   __TEXT.__swift5_proto: 0xf4
--  __TEXT.__swift5_types: 0x70
--  __TEXT.__swift_as_entry: 0x2a0
--  __TEXT.__swift_as_ret: 0x2f4
--  __TEXT.__swift_as_cont: 0x4d4
-+  __TEXT.__swift5_types: 0x74
-+  __TEXT.__cstring: 0x1281
-+  __TEXT.__swift_as_entry: 0x2a8
-+  __TEXT.__swift_as_ret: 0x300
-+  __TEXT.__swift_as_cont: 0x4ec
-   __TEXT.__objc_classname: 0x27a
--  __TEXT.__objc_methname: 0x12cd
--  __TEXT.__swift5_capture: 0x578
-+  __TEXT.__objc_methname: 0x138d
-   __TEXT.__swift5_acfuncs: 0x230
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__unwind_info: 0x1858
--  __TEXT.__eh_frame: 0x58f8
--  __DATA_CONST.__const: 0x17e0
-+  __TEXT.__unwind_info: 0x1958
-+  __TEXT.__eh_frame: 0x5c20
-+  __DATA_CONST.__const: 0x1790
-   __DATA_CONST.__objc_classlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x38
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__auth_got: 0xfa8
--  __DATA_CONST.__got: 0x750
--  __DATA_CONST.__auth_ptr: 0x6e0
--  __DATA.__objc_const: 0x9e0
--  __DATA.__objc_selrefs: 0x568
--  __DATA.__objc_data: 0x458
--  __DATA.__data: 0x13c8
-+  __DATA_CONST.__auth_got: 0xff0
-+  __DATA_CONST.__got: 0x7a8
-+  __DATA_CONST.__auth_ptr: 0x700
-+  __DATA.__objc_const: 0xa00
-+  __DATA.__objc_selrefs: 0x578
-+  __DATA.__objc_data: 0x478
-+  __DATA.__data: 0x14a0
-   __DATA.__bss: 0x1e80
--  __DATA.__common: 0x50
-+  __DATA.__common: 0x70
-   - /System/Library/Frameworks/AppManagedFeatures.framework/AppManagedFeatures
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
+-46.0.1.0.0
++46.0.5.0.0
 
-   - /System/Library/PrivateFrameworks/SoftwareUpdateServices.framework/SoftwareUpdateServices
-   - /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices
-   - /System/Library/PrivateFrameworks/StorageContainersPrivate.framework/StorageContainersPrivate
 +  - /System/Library/PrivateFrameworks/SymptomDiagnosticReporter.framework/SymptomDiagnosticReporter
-   - /System/Library/PrivateFrameworks/XPCDistributed.framework/XPCDistributed
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
 
-   - /usr/lib/swift/libswift_DarwinFoundation3.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1352
 -  Symbols:   927
--  CStrings:  635
+-  CStrings:  634
 +  Functions: 1389
 +  Symbols:   947
-+  CStrings:  676
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_acfuncs : content changed
-~ __TEXT.__swift5_entry : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA.__bss : content changed
++  CStrings:  675
 Symbols:
 + _$s10Foundation8CalendarV10IdentifierO7iso8601yA2EmFWC
 + _$s10Foundation8CalendarV10IdentifierOMa
@@ -194,5 +151,4 @@ CStrings:
 - "com.apple.appmanagedfeatures.state-transition"
 - "com.apple.safefinancing.lock"
 - "userInfo"
-
 ```

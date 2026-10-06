@@ -2,72 +2,36 @@
 
 > `/System/Library/Frameworks/CoreServices.framework/CoreServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c6f38` | `0x1c7980` | **`+0xa48`** |
+| `__TEXT.__oslogstring` | `0x1650f` | `0x1667b` | **`+0x16c`** |
+| `__TEXT.__gcc_except_tab` | `0x2955c` | `0x29618` | **`+0xbc`** |
+| `__DATA_CONST.__const` | `0x7418` | `0x7478` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0xc5d0` | `0xc628` | **`+0x58`** |
+| `__TEXT.__cstring` | `0x28cce` | `0x28c7d` | **`-0x51`** |
+| `__TEXT.__objc_methlist` | `0xe1d4` | `0xe1fc` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x17a00` | `0x17a20` | **`+0x20`** |
+| `__AUTH_CONST.__const` | `0x3b90` | `0x3bb0` | **`+0x20`** |
+| `__DATA.__bss` | `0xf30` | `0xf40` | **`+0x10`** |
+| `__AUTH_CONST.__objc_const` | `0x156e0` | `0x156e8` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6540` | `0x6548` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1512.0.0.0.0
--  __TEXT.__text: 0x1c6f38
 +1517.0.1.0.0
-+  __TEXT.__text: 0x1c7980
-   __TEXT.__delay_helper: 0x1b8
-   __TEXT.__lazy_helpers: 0xa8
--  __TEXT.__objc_methlist: 0xe1d4
-+  __TEXT.__objc_methlist: 0xe1fc
-   __TEXT.__const: 0x990
--  __TEXT.__cstring: 0x28cce
--  __TEXT.__oslogstring: 0x1650f
--  __TEXT.__gcc_except_tab: 0x2955c
-+  __TEXT.__cstring: 0x28c7d
-+  __TEXT.__oslogstring: 0x1667b
-+  __TEXT.__gcc_except_tab: 0x29618
-   __TEXT.__ustring: 0x23c
--  __TEXT.__unwind_info: 0xc5d0
-+  __TEXT.__unwind_info: 0xc628
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7418
-+  __DATA_CONST.__const: 0x7478
-   __DATA_CONST.__objc_classlist: 0x7b0
-   __DATA_CONST.__objc_catlist: 0x78
-   __DATA_CONST.__objc_protolist: 0x180
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6540
-+  __DATA_CONST.__objc_selrefs: 0x6548
-   __DATA_CONST.__objc_protorefs: 0x90
-   __DATA_CONST.__objc_superrefs: 0x640
-   __DATA_CONST.__objc_arraydata: 0x990
-   __DATA_CONST.__got: 0xbb8
--  __AUTH_CONST.__const: 0x3b90
--  __AUTH_CONST.__cfstring: 0x17a00
--  __AUTH_CONST.__objc_const: 0x156e0
-+  __AUTH_CONST.__const: 0x3bb0
-+  __AUTH_CONST.__cfstring: 0x17a20
-+  __AUTH_CONST.__objc_const: 0x156e8
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__lazy_load_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x7f8
 
-   __AUTH.__data: 0x318
-   __DATA.__objc_ivar: 0xbf0
-   __DATA.__data: 0x15c4
--  __DATA.__bss: 0xf30
-+  __DATA.__bss: 0xf40
-   __DATA.__common: 0x40
-   __DATA_DIRTY.__objc_data: 0x1928
-   __DATA_DIRTY.__data: 0x58
-
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 9533
--  Symbols:   16473
+-  Symbols:   14229
 -  CStrings:  6034
 +  Functions: 9545
-+  Symbols:   16488
++  Symbols:   14243
 +  CStrings:  6048
- 
 Symbols:
 + -[FSMimic bundleInfoDictionaryWithError:]
 + -[FSMimicPopulator populateBundleInfoDictionaryWithError:]
@@ -85,7 +49,6 @@ Symbols:
 + ___block_descriptor_48_ea8_32bs_e9_v16?0r*8ls32l8
 + __kLSURLIsHiddenBySystemChangedNotificationsKey
 + __kLSURLIsHiddenBySystemKey
-+ _objc_msgSend$populateBundleInfoDictionaryWithError:
 - __ZL19_LSBundleCreateNodeP11_LSDatabasejbPbPU15__autoreleasingP7NSError
 - __ZL24_LSBundleCopyOrCheckNodeP11_LSDatabasejjhPU8__strongP6FSNode
 CStrings:

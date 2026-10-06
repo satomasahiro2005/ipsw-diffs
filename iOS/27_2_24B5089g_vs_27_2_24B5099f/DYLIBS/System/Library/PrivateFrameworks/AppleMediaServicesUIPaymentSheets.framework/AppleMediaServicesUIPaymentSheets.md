@@ -2,79 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/AppleMediaServicesUIPaymentSheets.framework/AppleMediaServicesUIPaymentSheets`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2c224` | `0x2e048` | **`+0x1e24`** |
+| `__TEXT.__eh_frame` | `0x93c` | `0xb0c` | **`+0x1d0`** |
+| `__TEXT.__swift5_typeref` | `0x5b00` | `0x5c4e` | **`+0x14e`** |
+| `__AUTH_CONST.__const` | `0x2348` | `0x23e8` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0x990` | `0xa30` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0xcf0` | `0xd80` | **`+0x90`** |
+| `__TEXT.__const` | `0x31d4` | `0x3244` | **`+0x70`** |
+| `__DATA.__data` | `0x868` | `0x8a8` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1a8` | `0x1d0` | **`+0x28`** |
+| `__TEXT.__swift5_capture` | `0x43c` | `0x464` | **`+0x28`** |
+| `__TEXT.__swift5_reflstr` | `0x90f` | `0x92f` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x80` | `0x98` | **`+0x18`** |
+| `__DATA_DIRTY.__data` | `0x11d8` | `0x11c8` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x6f0` | `0x6f8` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x30` | `0x38` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x30` | `0x38` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -8.1.15.0.0
--  __TEXT.__text: 0x2aaa4
 +8.1.20.0.0
-+  __TEXT.__text: 0x2c678
-   __TEXT.__objc_methlist: 0x20
--  __TEXT.__const: 0x31d4
-+  __TEXT.__const: 0x3244
-   __TEXT.__constg_swiftt: 0xf2c
--  __TEXT.__swift5_typeref: 0x5b00
-+  __TEXT.__swift5_typeref: 0x5c4e
-   __TEXT.__swift5_builtin: 0x64
--  __TEXT.__swift5_reflstr: 0x90f
-+  __TEXT.__swift5_reflstr: 0x92f
-   __TEXT.__swift5_fieldmd: 0xbd8
-   __TEXT.__swift5_assocty: 0x3c0
-   __TEXT.__swift5_proto: 0x13c
-   __TEXT.__swift5_types: 0xf4
--  __TEXT.__swift5_capture: 0x43c
--  __TEXT.__cstring: 0x990
--  __TEXT.__swift_as_entry: 0x30
--  __TEXT.__swift_as_ret: 0x30
--  __TEXT.__swift_as_cont: 0x80
-+  __TEXT.__swift5_capture: 0x464
-+  __TEXT.__cstring: 0xa30
-+  __TEXT.__swift_as_entry: 0x38
-+  __TEXT.__swift_as_ret: 0x38
-+  __TEXT.__swift_as_cont: 0x98
-   __TEXT.__swift5_mpenum: 0x14
-   __TEXT.__oslogstring: 0x85
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__unwind_info: 0x1068
--  __TEXT.__eh_frame: 0x93c
-+  __TEXT.__unwind_info: 0x1100
-+  __TEXT.__eh_frame: 0xb0c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__const: 0x168
-   __DATA_CONST.__objc_classlist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1a8
--  __DATA_CONST.__got: 0x6f0
--  __AUTH_CONST.__const: 0x2348
-+  __DATA_CONST.__objc_selrefs: 0x1d0
-+  __DATA_CONST.__got: 0x6f8
-+  __AUTH_CONST.__const: 0x23e8
-   __AUTH_CONST.__objc_const: 0x708
-   __AUTH_CONST.__auth_got: 0xe58
-   __AUTH.__objc_data: 0x48
-   __AUTH.__data: 0x170
--  __DATA.__data: 0x868
-+  __DATA.__data: 0x8a8
-   __DATA.__common: 0x10
-   __DATA_DIRTY.__objc_data: 0x1e0
--  __DATA_DIRTY.__data: 0x11d8
-+  __DATA_DIRTY.__data: 0x11c8
-   __DATA_DIRTY.__bss: 0x14b0
-   __DATA_DIRTY.__common: 0x28
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1474
 -  Symbols:   932
 -  CStrings:  58
 +  Functions: 1505
 +  Symbols:   941
 +  CStrings:  60
- 
 Symbols:
 + _OBJC_CLASS_$_AMSProcessInfo
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA15ModifiedContentVyAKyAA6VStackVy33AppleMediaServicesUIPaymentSheets08FlexListC0VSgGAA30_EnvironmentKeyWritingModifierVyAA15LayoutDirectionOGGATy10Foundation6LocaleVGG_Qo_HO

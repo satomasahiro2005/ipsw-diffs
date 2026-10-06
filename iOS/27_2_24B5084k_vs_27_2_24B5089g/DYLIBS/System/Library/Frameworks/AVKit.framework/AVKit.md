@@ -2,88 +2,40 @@
 
 > `/System/Library/Frameworks/AVKit.framework/AVKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x26c0a0` | `0x26aedc` | **`-0x11c4`** |
+| `__AUTH_CONST.__objc_const` | `0x38b08` | `0x38688` | **`-0x480`** |
+| `__TEXT.__objc_methlist` | `0x1f05c` | `0x1eedc` | **`-0x180`** |
+| `__TEXT.__cstring` | `0x13314` | `0x131b9` | **`-0x15b`** |
+| `__AUTH.__objc_data` | `0x69c8` | `0x68d8` | **`-0xf0`** |
+| `__TEXT.__oslogstring` | `0xc276` | `0xc1db` | **`-0x9b`** |
+| `__AUTH_CONST.__cfstring` | `0x99c0` | `0x9940` | **`-0x80`** |
+| `__DATA_CONST.__objc_selrefs` | `0xd550` | `0xd4d8` | **`-0x78`** |
+| `__TEXT.__unwind_info` | `0xa3f0` | `0xa3a8` | **`-0x48`** |
+| `__DATA.__objc_ivar` | `0x30b0` | `0x306c` | **`-0x44`** |
+| `__AUTH_CONST.__const` | `0x8a78` | `0x8a58` | **`-0x20`** |
+| `__DATA_CONST.__got` | `0x18c8` | `0x18a8` | **`-0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0xb10` | `0xaf8` | **`-0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x820` | `0x808` | **`-0x18`** |
+| `__DATA.__bss` | `0x5e68` | `0x5e58` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1fb8` | `0x1fb0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1385.6.1.11.1
--  __TEXT.__text: 0x256e64
--  __TEXT.__objc_methlist: 0x1f05c
 +1385.7.1.0.0
-+  __TEXT.__text: 0x255d24
-+  __TEXT.__objc_methlist: 0x1eedc
-   __TEXT.__const: 0x84b8
-   __TEXT.__constg_swiftt: 0x2cdc
-   __TEXT.__swift5_typeref: 0x831c
 
-   __TEXT.__swift5_fieldmd: 0x1e58
-   __TEXT.__swift5_assocty: 0x870
-   __TEXT.__swift5_capture: 0x192c
--  __TEXT.__cstring: 0x13314
-+  __TEXT.__cstring: 0x131b9
-   __TEXT.__swift5_proto: 0x2d4
-   __TEXT.__swift5_types: 0x250
-   __TEXT.__swift5_protos: 0x54
-   __TEXT.__swift_as_entry: 0x2e8
-   __TEXT.__swift_as_ret: 0x444
-   __TEXT.__swift_as_cont: 0x86c
--  __TEXT.__oslogstring: 0xc276
-+  __TEXT.__oslogstring: 0xc1db
-   __TEXT.__swift5_mpenum: 0x18
-   __TEXT.__gcc_except_tab: 0x4284
-   __TEXT.__dlopen_cstrs: 0x1ef
-   __TEXT.__ustring: 0x10c
--  __TEXT.__unwind_info: 0xcad8
-+  __TEXT.__unwind_info: 0xcaa0
-   __TEXT.__eh_frame: 0x7a34
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x33b0
--  __DATA_CONST.__objc_classlist: 0xb10
-+  __DATA_CONST.__objc_classlist: 0xaf8
-   __DATA_CONST.__objc_catlist: 0xd8
-   __DATA_CONST.__objc_protolist: 0x4e8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xd550
-+  __DATA_CONST.__objc_selrefs: 0xd4d8
-   __DATA_CONST.__objc_protorefs: 0xa0
--  __DATA_CONST.__objc_superrefs: 0x820
-+  __DATA_CONST.__objc_superrefs: 0x808
-   __DATA_CONST.__objc_arraydata: 0x6c0
--  __DATA_CONST.__got: 0x18c8
--  __AUTH_CONST.__const: 0x8a78
--  __AUTH_CONST.__cfstring: 0x99c0
--  __AUTH_CONST.__objc_const: 0x38b08
-+  __DATA_CONST.__got: 0x18a8
-+  __AUTH_CONST.__const: 0x8a58
-+  __AUTH_CONST.__cfstring: 0x9940
-+  __AUTH_CONST.__objc_const: 0x38688
-   __AUTH_CONST.__objc_arrayobj: 0x330
-   __AUTH_CONST.__objc_intobj: 0x6c0
-   __AUTH_CONST.__objc_doubleobj: 0x280
-   __AUTH_CONST.__objc_dictobj: 0xf0
--  __AUTH_CONST.__auth_got: 0x1fb8
--  __AUTH.__objc_data: 0x69c8
-+  __AUTH_CONST.__auth_got: 0x1fb0
-+  __AUTH.__objc_data: 0x68d8
-   __AUTH.__data: 0x2148
--  __DATA.__objc_ivar: 0x30b0
-+  __DATA.__objc_ivar: 0x306c
-   __DATA.__data: 0x5ca8
-   __DATA.__common: 0x1c8
-   __DATA_DIRTY.__objc_data: 0x12e0
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 14942
--  Symbols:   25838
+-  Symbols:   20260
 -  CStrings:  3008
 +  Functions: 14913
-+  Symbols:   25751
++  Symbols:   20186
 +  CStrings:  2999
- 
 Symbols:
 + -[AVMobileGlassContentTabsView _updateContentTabsChildMarginsIfNeeded]
 + -[AVMobileGlassControlsStyleSheet contentTabsAdditionalRightInset]
@@ -283,7 +235,6 @@ Symbols:
 + GCC_except_table9838
 + _OBJC_IVAR_$_AVMobileGlassControlsStyleSheet._contentTabsAdditionalRightInset
 + ___block_descriptor_48_e8_32s40w_e5_v8?0lw40l8s32l8
-+ _objc_msgSend$contentTabsAdditionalRightInset
 - +[AVCaptureDeviceDescriptor descriptorWithStateDescriptor:]
 - +[AVCaptureDeviceDirectionCoordinator _buildDefaultMapWithUtilities:]
 - +[AVCaptureDeviceDirectionCoordinator _isLegacyDevice]
@@ -556,20 +507,6 @@ Symbols:
 - ___block_descriptor_48_e8_32s40w_e5_v8?0ls32l8w40l8
 - __isLegacyDevice.isLegacyDevice
 - __isLegacyDevice.onceToken
-- _objc_msgSend$_buildDefaultMapWithUtilities:
-- _objc_msgSend$_initWithForwardFacingDeviceDescriptors:backwardFacingDeviceDescriptors:
-- _objc_msgSend$_initWithStateDescriptor:
-- _objc_msgSend$_isLegacyDevice
-- _objc_msgSend$_updateCurrentMap
-- _objc_msgSend$backwardFacingDeviceDescriptors
-- _objc_msgSend$contentTabSelectionAdditionalRightInset
-- _objc_msgSend$descriptorWithStateDescriptor:
-- _objc_msgSend$forwardFacingDeviceDescriptors
-- _objc_msgSend$initWithTypes:
-- _objc_msgSend$mapWithForwardFacingDeviceDescriptors:backwardFacingDeviceDescriptors:
-- _objc_msgSend$mediaTypes
-- _objc_msgSend$stateAForPosition:deviceAngle:
-- _objc_msgSend$stateBForPosition:deviceAngle:
 CStrings:
 + "\xfb"
 - "%s Initialized AVCaptureDeviceDirectionCoordinator for UIView: %@"

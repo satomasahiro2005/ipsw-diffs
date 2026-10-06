@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AccelerateOpt.framework/libipopt.dylib`
 
-```diff
+### Section Size Changes
 
- 7.0.0.0.0
--  __TEXT.__text: 0x14c1d0
-+  __TEXT.__text: 0x14c20c
-   __TEXT.__gcc_except_tab: 0x155dc
-   __TEXT.__const: 0x197b
-   __TEXT.__cstring: 0x1fd4f
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14c1d0` | `0x14c20c` | **`+0x3c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__16vectorIdNS_9allocatorIdEEE6resizeEm : 284 -> 288
 ~ __ZN5Ipopt11TNLPAdapter9GetSpacesERNS_8SmartPtrIKNS_11VectorSpaceEEES5_S5_S5_RNS1_IKNS_11MatrixSpaceEEES5_S9_S5_S9_S5_S9_S9_S9_RNS1_IKNS_14SymMatrixSpaceEEE : 16916 -> 16920

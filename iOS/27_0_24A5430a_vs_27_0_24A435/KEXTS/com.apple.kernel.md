@@ -2,69 +2,34 @@
 
 > `com.apple.kernel`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x8e94f0` | `0x8d6fb8` | **`-0x12538`** |
+| `__TEXT.__cstring` | `0x8e371` | `0x8ad00` | **`-0x3671`** |
+| `__DATA_CONST.__const` | `0xb7818` | `0xb8078` | **`+0x860`** |
+| `__DATA_CONST.__kalloc_type` | `0x15300` | `0x14fc0` | **`-0x340`** |
+| `__DATA.__common` | `0x68f28` | `0x68d48` | **`-0x1e0`** |
+| `__BOOTDATA.__init_entry_set` | `0x14028` | `0x141d8` | **`+0x1b0`** |
+| `__TEXT_BOOT_EXEC.__bootcode` | `0x6960` | `0x6a90` | **`+0x130`** |
+| `__BOOTDATA.__static_if` | `0xfa0` | `0x1070` | **`+0xd0`** |
+| `__DATA.__lock_grp` | `0x5dd8` | `0x5d28` | **`-0xb0`** |
+| `__DATA.__bss` | `0xa5000` | `0xa50a0` | **`+0xa0`** |
+| `__TEXT.__const` | `0x36ee0` | `0x36e70` | **`-0x70`** |
+| `__DATA.__data` | `0x18229` | `0x181e9` | **`-0x40`** |
+| `__KLDDATA.__const` | `0x3c38` | `0x3c08` | **`-0x30`** |
+| `__DATA_CONST.__kern_brk_desc` | `0x78` | `0x60` | **`-0x18`** |
+
+### Other Changes
+
 ```diff
 
- 13432.2.10.0.0
--  __TEXT.__const: 0x37120
-+  __TEXT.__const: 0x370b0
-   __TEXT.__copyio_vectors: 0x2c0
--  __TEXT.__cstring: 0x900d8
-+  __TEXT.__cstring: 0x8ca67
-   __TEXT.__os_log: 0x41afb
-   __TEXT.__eh_frame: 0x7e0
-   __DATA_CONST.__hib_const: 0x120
--  __DATA_CONST.__const: 0x120ef8
--  __DATA_CONST.__kalloc_type: 0x15300
-+  __DATA_CONST.__const: 0x121758
-+  __DATA_CONST.__kalloc_type: 0x14fc0
-   __DATA_CONST.__assert: 0x148c
-   __DATA_CONST.__kalloc_var: 0x7e90
-   __DATA_CONST.__exclaves_bt: 0xc0
--  __DATA_CONST.__kern_brk_desc: 0x78
-+  __DATA_CONST.__kern_brk_desc: 0x60
-   __DATA_CONST.__mod_init_func: 0x2d8
-   __DATA_CONST.__auth_ptr: 0x8
-   __DATA_SPTM.__const: 0x4c000
-   __TEXT_EXEC.__exc: 0x1000
--  __TEXT_EXEC.__text: 0x90bb68
-+  __TEXT_EXEC.__text: 0x8f92f4
-   __TEXT_EXEC.__hib_text: 0x10d8
--  __TEXT_BOOT_EXEC.__bootcode: 0x69bc
-+  __TEXT_BOOT_EXEC.__bootcode: 0x6aec
-   __KLD.__text: 0x173c
-   __LASTDATA_CONST.__mod_init_func: 0x8
-   __LAST.__pinst: 0x8
-   __LAST.__last: 0x0
-   __KLDDATA.__cstring: 0x6e1
--  __KLDDATA.__const: 0x3e90
-+  __KLDDATA.__const: 0x3e60
-   __KLDDATA.__mod_init_func: 0x8
-   __KLDDATA.__mod_term_func: 0x8
-   __KLDDATA.__bss: 0x1
-   __DATA.__data: 0x18269
--  __DATA.__lock_grp: 0x5d80
-+  __DATA.__lock_grp: 0x5cd0
-   __DATA.__percpu: 0x78b0
--  __DATA.__common: 0x7b8a8
-+  __DATA.__common: 0x7b6c8
-   __BOOTDATA.__data: 0x18000
--  __BOOTDATA.__static_if: 0x1030
--  __BOOTDATA.__init_entry_set: 0x14af0
-+  __BOOTDATA.__static_if: 0x1100
-+  __BOOTDATA.__init_entry_set: 0x14ca0
-   __BOOTDATA.__init: 0x178b8
-   __BOOTDATA.__static_ifinit: 0x20
-   __PRELINK_TEXT.__text: 0x0
+-  Functions: 21892
++  Functions: 21692
 
-   __PLK_LLVM_COV.__llvm_covmap: 0x0
-   __PLK_LINKEDIT.__data: 0x0
-   __LINKINFO.__symbolsets: 0x48d28
--  Functions: 21993
-+  Functions: 21793
-   Symbols:   0
--  CStrings:  21382
-+  CStrings:  21103
- 
+-  CStrings:  21162
++  CStrings:  20883
 CStrings:
 + "Bitmap of other perflevels sharing L2 cache"
 + "Currently active logical CPUs in perflevel2"

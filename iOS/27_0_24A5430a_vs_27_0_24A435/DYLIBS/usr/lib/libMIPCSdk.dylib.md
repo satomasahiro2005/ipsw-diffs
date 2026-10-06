@@ -2,17 +2,16 @@
 
 > `/usr/lib/libMIPCSdk.dylib`
 
-```diff
+### Section Size Changes
 
- 177.0.0.0.0
--  __TEXT.__text: 0x37c488
-+  __TEXT.__text: 0x37c4f8
-   __TEXT.__const: 0x14a00
--  __TEXT.__gcc_except_tab: 0x1e450
-+  __TEXT.__gcc_except_tab: 0x1e458
-   __TEXT.__cstring: 0x145f5
-   __TEXT.__unwind_info: 0xc4f0
-   __TEXT.__auth_stubs: 0x0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x37c488` | `0x37c4f8` | **`+0x70`** |
+| `__TEXT.__gcc_except_tab` | `0x1e450` | `0x1e458` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNK4mipc7Message12serializeTlvINS_13mipc_string_tILm22ELb0EEELb0EEENS_5ErrorERKNS_3tlvIT_XT0_EEEtRNSt3__111__wrap_iterIPhEE : 456 -> 460
 ~ __ZNK4mipc7Message12serializeTlvINS_13mipc_string_tILm16ELb0EEELb1EEENS_5ErrorERKNS_3tlvIT_XT0_EEEtRNSt3__111__wrap_iterIPhEE : 480 -> 484

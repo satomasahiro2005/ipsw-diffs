@@ -2,24 +2,24 @@
 
 > `com.apple.driver.AppleM2ScalerCSCDriver`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x13ba50` | `0x13bbe0` | **`+0x190`** |
+
+### Other Changes
+
 ```diff
 
 -200.62.1.0.0
-+200.62.4.0.0
-   __TEXT.__const: 0xc3090
-   __TEXT.__cstring: 0x2515b
--  __TEXT_EXEC.__text: 0x13ba50
-+  __TEXT_EXEC.__text: 0x13bbe0
-   __TEXT_EXEC.__auth_stubs: 0xbd0
-   __DATA.__data: 0x22388
-   __DATA.__common: 0x2738
-
-   __DATA_CONST.__auth_got: 0x5e8
-   __DATA_CONST.__got: 0xb0
-   __DATA_CONST.__auth_ptr: 0x88
 -  Functions: 10261
++200.62.4.0.0
 +  Functions: 10262
-   Symbols:   0
-   CStrings:  3704
- 
+Functions:
+~ __ZN24AppleM2ScalerCSCHalMSR2739tearDownMsrMessageBoxLinks_gatedContextEv : 288 -> 624
+~ __ZN24AppleM2ScalerCSCHalMSR2726interruptOccurredMsrApMboxEP22IOInterruptEventSourcei.cold.1 : 116 -> 108
+~ __ZN24AppleM2ScalerCSCHalMSR2926interruptOccurredMsrApMboxEP22IOInterruptEventSourcei.cold.3 : 96 -> 88
+~ __ZN24AppleM2ScalerCSCHalMSR2739tearDownMsrMessageBoxLinks_gatedContextEv.cold.1 : 48 -> 72
++ sub_fffffff00911f578
 ```

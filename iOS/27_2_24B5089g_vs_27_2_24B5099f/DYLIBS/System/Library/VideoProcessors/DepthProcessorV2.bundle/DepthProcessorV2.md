@@ -2,61 +2,34 @@
 
 > `/System/Library/VideoProcessors/DepthProcessorV2.bundle/DepthProcessorV2`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x25648` | `0x20918` | **`-0x4d30`** |
+| `__TEXT.__cstring` | `0x6e90` | `0x3572` | **`-0x391e`** |
+| `__TEXT.__oslogstring` | `0x17f3` | `0x209` | **`-0x15ea`** |
+| `__TEXT.__gcc_except_tab` | `0x2e0` | `0x1ac` | **`-0x134`** |
+| `__AUTH_CONST.__cfstring` | `0x6a0` | `0x600` | **`-0xa0`** |
+| `__TEXT.__unwind_info` | `0x730` | `0x690` | **`-0xa0`** |
+| `__DATA_DIRTY.__common` | `0x30` | `—` | **`-0x30`** |
+| `__DATA.__common` | `0x20` | `—` | **`-0x20`** |
+| `__TEXT.__const` | `0x99b` | `0x98b` | **`-0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x678` | `0x670` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -764.40.5.0.0
--  __TEXT.__text: 0x25080
 +764.40.7.0.0
-+  __TEXT.__text: 0x200bc
-   __TEXT.__init_offsets: 0x14
-   __TEXT.__objc_methlist: 0xb64
--  __TEXT.__cstring: 0x6e90
--  __TEXT.__const: 0x99b
--  __TEXT.__oslogstring: 0x17f3
--  __TEXT.__gcc_except_tab: 0x2e0
--  __TEXT.__unwind_info: 0xdd0
-+  __TEXT.__cstring: 0x3572
-+  __TEXT.__const: 0x98b
-+  __TEXT.__gcc_except_tab: 0x1ac
-+  __TEXT.__oslogstring: 0x209
-+  __TEXT.__unwind_info: 0xd20
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x678
-+  __DATA_CONST.__objc_selrefs: 0x670
-   __DATA_CONST.__objc_superrefs: 0x58
-   __DATA_CONST.__got: 0x78
-   __AUTH_CONST.__const: 0x6c0
--  __AUTH_CONST.__cfstring: 0x6a0
-+  __AUTH_CONST.__cfstring: 0x600
-   __AUTH_CONST.__objc_const: 0x2248
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0xa0
-   __DATA.__objc_ivar: 0x2bc
-   __DATA.__data: 0x158
--  __DATA.__common: 0x20
-   __DATA_DIRTY.__objc_data: 0x320
--  __DATA_DIRTY.__common: 0x30
-   __DATA_DIRTY.__bss: 0x298
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 980
 -  Symbols:   141
 -  CStrings:  842
 +  Functions: 876
 +  Symbols:   136
 +  CStrings:  432
- 
 Symbols:
 + _FigSignalErrorAtGM
 - _FigSignalErrorAt3

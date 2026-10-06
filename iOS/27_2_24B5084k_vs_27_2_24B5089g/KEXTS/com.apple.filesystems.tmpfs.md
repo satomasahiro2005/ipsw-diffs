@@ -2,20 +2,20 @@
 
 > `com.apple.filesystems.tmpfs`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x97a0` | `0x97f8` | **`+0x58`** |
+
+### Other Changes
+
 ```diff
 
 -94.40.2.0.0
 +94.40.3.0.0
-   __TEXT.__cstring: 0x4b7
-   __TEXT.__const: 0x40
-   __TEXT.__os_log: 0x20a
--  __TEXT_EXEC.__text: 0x96d0
-+  __TEXT_EXEC.__text: 0x9728
-   __TEXT_EXEC.__auth_stubs: 0x630
-   __DATA.__data: 0x180
-   __DATA.__common: 0x420
 Functions:
-~ sub_fffffe000ad1964c -> sub_fffffe000aca525c : 1100 -> 1112
-~ sub_fffffe000ad19a98 -> sub_fffffe000aca56b4 : 644 -> 656
-~ sub_fffffe000ad22908 -> sub_fffffe000acae530 : 280 -> 344
+~ sub_fffffff00abffb4c -> sub_fffffff00ac02edc : 1104 -> 1116
+~ sub_fffffff00abfff9c -> sub_fffffff00ac03338 : 644 -> 656
+~ sub_fffffff00ac08ecc -> sub_fffffff00ac0c274 : 292 -> 356
 ```

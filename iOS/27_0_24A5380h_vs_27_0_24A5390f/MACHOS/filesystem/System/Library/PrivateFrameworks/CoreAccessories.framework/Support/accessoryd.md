@@ -2,64 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/CoreAccessories.framework/Support/accessoryd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x199608` | `0x199db0` | **`+0x7a8`** |
+| `__TEXT.__oslogstring` | `0x37924` | `0x37a9f` | **`+0x17b`** |
+| `__DATA_CONST.__const` | `0x99a0` | `0x99c8` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0xec8` | `0xed8` | **`+0x10`** |
+| `__TEXT.__cstring` | `0xe275` | `0xe269` | **`-0xc`** |
+| `__TEXT.__unwind_info` | `0x4758` | `0x4760` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__cfstring`
 - `__DATA_CONST.__objc_arraydata`
 - `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
 -1203.0.0.0.0
--  __TEXT.__text: 0x199608
 +1210.0.0.502.1
-+  __TEXT.__text: 0x199db0
-   __TEXT.__auth_stubs: 0x1890
-   __TEXT.__objc_stubs: 0x95c0
-   __TEXT.__objc_methlist: 0x6e8c
 
-   __TEXT.__objc_classname: 0xfd3
-   __TEXT.__objc_methname: 0xfeab
-   __TEXT.__objc_methtype: 0x321c
--  __TEXT.__cstring: 0xe275
--  __TEXT.__oslogstring: 0x37924
-+  __TEXT.__cstring: 0xe269
-+  __TEXT.__oslogstring: 0x37a9f
-   __TEXT.__ustring: 0x232
--  __TEXT.__unwind_info: 0x4758
--  __DATA_CONST.__const: 0x99a0
-+  __TEXT.__unwind_info: 0x4760
-+  __DATA_CONST.__const: 0x99c8
-   __DATA_CONST.__cfstring: 0x7340
-   __DATA_CONST.__objc_classlist: 0x318
-   __DATA_CONST.__objc_catlist: 0x10
-
-   __DATA_CONST.__objc_arrayobj: 0xd8
-   __DATA_CONST.__objc_intobj: 0x108
-   __DATA_CONST.__auth_got: 0xc58
--  __DATA_CONST.__got: 0xec8
-+  __DATA_CONST.__got: 0xed8
-   __DATA_CONST.__auth_ptr: 0x98
-   __DATA.__objc_const: 0xb078
-   __DATA.__objc_selrefs: 0x33b8
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libsysdiagnose.dylib
 -  Functions: 8569
 -  Symbols:   11615
 -  CStrings:  8619
 +  Functions: 8570
 +  Symbols:   11623
 +  CStrings:  8625
- 
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/CoreAccessories/install/Symbols/BuiltProducts/libAccessoryCore.a(ccm-decrypt-47d6a152e262e090015295ce3e482e70.o)
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/CoreAccessories/install/Symbols/BuiltProducts/libAccessoryCore.a(ccm-encrypt-efe3a52d910ead1e13e2f3cc4d7b762d.o)

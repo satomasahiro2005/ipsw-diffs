@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/RealityFusion.framework/RealityFusion`
 
-```diff
+### Section Size Changes
 
- 453.2.1.0.0
--  __TEXT.__text: 0xb15d0
-+  __TEXT.__text: 0xb1650
-   __TEXT.__objc_methlist: 0x35c
-   __TEXT.__const: 0x93c0
-   __TEXT.__cstring: 0x40e5
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb15d0` | `0xb1650` | **`+0x80`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__15dequeINS_4pairIiiEENS_9allocatorIS2_EEE9push_backEOS2_ : 1124 -> 1136
 ~ __ZNSt3__114__split_bufferIPNS_4pairIiiEENS_9allocatorIS3_EEE12emplace_backIJRS3_EEEvDpOT_ : 248 -> 252

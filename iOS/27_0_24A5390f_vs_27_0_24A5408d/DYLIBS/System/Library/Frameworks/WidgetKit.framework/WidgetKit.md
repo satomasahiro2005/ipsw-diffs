@@ -2,90 +2,47 @@
 
 > `/System/Library/Frameworks/WidgetKit.framework/WidgetKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x210690` | `0x2131fc` | **`+0x2b6c`** |
+| `__AUTH.__data` | `0x5d78` | `0x5f80` | **`+0x208`** |
+| `__DATA.__bss` | `0x14ff0` | `0x14ea0` | **`-0x150`** |
+| `__AUTH_CONST.__objc_const` | `0x67d8` | `0x68e8` | **`+0x110`** |
+| `__TEXT.__cstring` | `0x5096` | `0x51a6` | **`+0x110`** |
+| `__TEXT.__swift5_typeref` | `0xcb5a` | `0xcc60` | **`+0x106`** |
+| `__TEXT.__constg_swiftt` | `0xc020` | `0xc10c` | **`+0xec`** |
+| `__DATA.__data` | `0x6338` | `0x6408` | **`+0xd0`** |
+| `__TEXT.__const` | `0x217e8` | `0x21738` | **`-0xb0`** |
+| `__TEXT.__swift5_reflstr` | `0x5621` | `0x56c1` | **`+0xa0`** |
+| `__AUTH_CONST.__const` | `0x143c0` | `0x14438` | **`+0x78`** |
+| `__TEXT.__unwind_info` | `0x8db0` | `0x8e10` | **`+0x60`** |
+| `__TEXT.__swift5_fieldmd` | `0x73bc` | `0x7418` | **`+0x5c`** |
+| `__TEXT.__swift5_assocty` | `0x1b20` | `0x1ad8` | **`-0x48`** |
+| `__TEXT.__eh_frame` | `0xe54c` | `0xe51c` | **`-0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x29e0` | `0x2a00` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x840` | `0x850` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x2d14` | `0x2d24` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x15e0` | `0x15d4` | **`-0xc`** |
+| `__DATA.__common` | `0x2a0` | `0x2a8` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x1880` | `0x1888` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x360` | `0x368` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0xa0c` | `0xa14` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -740.0.0.0.0
--  __TEXT.__text: 0x210690
 +749.0.1.0.0
-+  __TEXT.__text: 0x2131fc
-   __TEXT.__objc_methlist: 0xdc8
--  __TEXT.__const: 0x217e8
--  __TEXT.__cstring: 0x5096
--  __TEXT.__swift5_typeref: 0xcb5a
--  __TEXT.__swift5_reflstr: 0x5621
--  __TEXT.__swift5_assocty: 0x1b20
--  __TEXT.__constg_swiftt: 0xc020
--  __TEXT.__swift5_fieldmd: 0x73bc
-+  __TEXT.__const: 0x21738
-+  __TEXT.__cstring: 0x51a6
-+  __TEXT.__swift5_typeref: 0xcc60
-+  __TEXT.__swift5_reflstr: 0x56c1
-+  __TEXT.__swift5_assocty: 0x1ad8
-+  __TEXT.__constg_swiftt: 0xc10c
-+  __TEXT.__swift5_fieldmd: 0x7418
-   __TEXT.__swift5_builtin: 0x294
--  __TEXT.__swift5_proto: 0x15e0
--  __TEXT.__swift5_types: 0xa0c
--  __TEXT.__swift5_capture: 0x2d14
-+  __TEXT.__swift5_proto: 0x15d4
-+  __TEXT.__swift5_types: 0xa14
-+  __TEXT.__swift5_capture: 0x2d24
-   __TEXT.__oslogstring: 0x3306
-   __TEXT.__swift5_mpenum: 0xa8
-   __TEXT.__swift_as_entry: 0x340
-   __TEXT.__swift_as_ret: 0x3dc
-   __TEXT.__swift_as_cont: 0x5e8
-   __TEXT.__swift5_protos: 0x10c
--  __TEXT.__unwind_info: 0x8db0
--  __TEXT.__eh_frame: 0xe54c
-+  __TEXT.__unwind_info: 0x8e10
-+  __TEXT.__eh_frame: 0xe51c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x840
--  __DATA_CONST.__objc_classlist: 0x360
-+  __DATA_CONST.__const: 0x850
-+  __DATA_CONST.__objc_classlist: 0x368
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0xd8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xa30
-   __DATA_CONST.__objc_protorefs: 0x80
--  __DATA_CONST.__got: 0x1880
--  __AUTH_CONST.__const: 0x143c0
-+  __DATA_CONST.__got: 0x1888
-+  __AUTH_CONST.__const: 0x14438
-   __AUTH_CONST.__cfstring: 0xa0
--  __AUTH_CONST.__objc_const: 0x67d8
--  __AUTH_CONST.__auth_got: 0x29e0
-+  __AUTH_CONST.__objc_const: 0x68e8
-+  __AUTH_CONST.__auth_got: 0x2a00
-   __AUTH.__objc_data: 0xce8
--  __AUTH.__data: 0x5d78
--  __DATA.__data: 0x6338
--  __DATA.__bss: 0x14ff0
--  __DATA.__common: 0x2a0
-+  __AUTH.__data: 0x5f80
-+  __DATA.__data: 0x6408
-+  __DATA.__bss: 0x14ea0
-+  __DATA.__common: 0x2a8
-   __DATA_DIRTY.__objc_data: 0xb80
-   __DATA_DIRTY.__data: 0x6050
-   __DATA_DIRTY.__common: 0x5c0
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12521
--  Symbols:   4567
+-  Symbols:   4288
 -  CStrings:  748
 +  Functions: 12555
-+  Symbols:   4568
++  Symbols:   4289
 +  CStrings:  754
- 
 Symbols:
 + __DATA__TtC9WidgetKit40NarrowCompactJindoActivityFontDefinition
 + __METACLASS_DATA__TtC9WidgetKit40NarrowCompactJindoActivityFontDefinition

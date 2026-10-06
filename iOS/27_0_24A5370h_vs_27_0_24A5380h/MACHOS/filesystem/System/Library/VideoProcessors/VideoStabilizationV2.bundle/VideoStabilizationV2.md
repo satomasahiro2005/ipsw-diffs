@@ -2,69 +2,49 @@
 
 > `/System/Library/VideoProcessors/VideoStabilizationV2.bundle/VideoStabilizationV2`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x59308` | `0x59f58` | **`+0xc50`** |
+| `__TEXT.__oslogstring` | `0xf0c3` | `0xf2d4` | **`+0x211`** |
+| `__TEXT.__objc_methname` | `0x5bb7` | `0x5c7f` | **`+0xc8`** |
+| `__DATA.__objc_const` | `0x4508` | `0x4598` | **`+0x90`** |
+| `__TEXT.__cstring` | `0x9725` | `0x9784` | **`+0x5f`** |
+| `__TEXT.__objc_methlist` | `0x1c04` | `0x1c44` | **`+0x40`** |
+| `__TEXT.__objc_stubs` | `0x32c0` | `0x3300` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x898` | `0x8c0` | **`+0x28`** |
+| `__DATA.__objc_selrefs` | `0xff0` | `0x1008` | **`+0x18`** |
+| `__TEXT.__const` | `0x700` | `0x6f0` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x8a8` | `0x8b8` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x4b0` | `0x4bc` | **`+0xc`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__gcc_except_tab`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x59308
-+  __TEXT.__text: 0x59f58
-   __TEXT.__auth_stubs: 0xd60
--  __TEXT.__objc_stubs: 0x32c0
--  __TEXT.__objc_methlist: 0x1c04
--  __TEXT.__const: 0x700
--  __TEXT.__objc_methname: 0x5bb7
-+  __TEXT.__objc_stubs: 0x3300
-+  __TEXT.__objc_methlist: 0x1c44
-+  __TEXT.__const: 0x6f0
-+  __TEXT.__objc_methname: 0x5c7f
-   __TEXT.__objc_classname: 0x1ee
-   __TEXT.__objc_methtype: 0x191a
--  __TEXT.__cstring: 0x9725
--  __TEXT.__oslogstring: 0xf0c3
-+  __TEXT.__cstring: 0x9784
-+  __TEXT.__oslogstring: 0xf2d4
-   __TEXT.__gcc_except_tab: 0x400
--  __TEXT.__unwind_info: 0x8a8
-+  __TEXT.__unwind_info: 0x8b8
-   __DATA_CONST.__const: 0x270
-   __DATA_CONST.__cfstring: 0xa20
-   __DATA_CONST.__objc_classlist: 0x88
+-753.0.0.122.3
++758.0.0.122.2
 
-   __DATA_CONST.__objc_dictobj: 0xc58
-   __DATA_CONST.__objc_arrayobj: 0x2580
-   __DATA_CONST.__auth_got: 0x6c0
--  __DATA_CONST.__got: 0x898
-+  __DATA_CONST.__got: 0x8c0
-   __DATA_CONST.__auth_ptr: 0x8
--  __DATA.__objc_const: 0x4508
--  __DATA.__objc_selrefs: 0xff0
--  __DATA.__objc_ivar: 0x4b0
-+  __DATA.__objc_const: 0x4598
-+  __DATA.__objc_selrefs: 0x1008
-+  __DATA.__objc_ivar: 0x4bc
-   __DATA.__objc_data: 0x550
-   __DATA.__data: 0x300
-   __DATA.__common: 0x60
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1424
--  Symbols:   2921
--  CStrings:  2912
+-  Symbols:   2231
+-  CStrings:  2774
 +  Functions: 1430
-+  Symbols:   2936
-+  CStrings:  2927
- 
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
++  Symbols:   2242
++  CStrings:  2789
 Symbols:
 + -[VISConfigurationV2 setUndistortedOverscanEnabled:]
 + -[VISConfigurationV2 undistortedOverscanEnabled]
@@ -117,5 +97,4 @@ CStrings:
 - "_attachGPUStabilizationParameters"
 - "_extractGPUStabilizationParameters"
 - "storage->tmpGPUXformsParams"
-
 ```

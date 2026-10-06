@@ -2,26 +2,29 @@
 
 > `/usr/libexec/mobileactivationd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__cstring`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x34c2ac` | `0x34c2bc` | **`+0x10`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__const`
+- `__TEXT.__cstring`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -1145.40.4.0.0
--  __TEXT.__text: 0x34acc8
 +1145.40.5.0.0
-+  __TEXT.__text: 0x34acd0
-   __TEXT.__auth_stubs: 0x1240
-   __TEXT.__objc_stubs: 0x3240
-   __TEXT.__objc_methlist: 0x112c
 Functions:
-~ _X509ExtensionParseBasicConstraints : 208 -> 204
+~ _X509ExtensionParseBasicConstraints : 208 -> 212
 ~ _X509ChainBuildPathPartial : 488 -> 500
 CStrings:
 + "1145.40.5"

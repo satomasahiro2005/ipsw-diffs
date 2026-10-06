@@ -2,114 +2,55 @@
 
 > `/System/Library/Frameworks/_USDKit_RealityKit.framework/_USDKit_RealityKit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__weak_got`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH.__objc_data`
-- `__AUTH.__tf_func`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x114820` | `0x113c74` | **`-0xbac`** |
+| `__AUTH.__data` | `0x2b30` | `0x2480` | **`-0x6b0`** |
+| `__TEXT.__const` | `0x6f68` | `0x68c8` | **`-0x6a0`** |
+| `__AUTH_CONST.__const` | `0x5fe8` | `0x5950` | **`-0x698`** |
+| `__DATA.__bss` | `0x3fa8` | `0x3a38` | **`-0x570`** |
+| `__TEXT.__constg_swiftt` | `0x2114` | `0x1c24` | **`-0x4f0`** |
+| `__TEXT.__swift5_fieldmd` | `0x23e4` | `0x1ff4` | **`-0x3f0`** |
+| `__TEXT.__eh_frame` | `0x6020` | `0x63a0` | **`+0x380`** |
+| `__TEXT.__swift5_typeref` | `0x1f1a` | `0x1c0d` | **`-0x30d`** |
+| `__AUTH_CONST.__objc_const` | `0x26e0` | `0x2438` | **`-0x2a8`** |
+| `__AUTH_CONST.__auth_got` | `0x28b8` | `0x2a68` | **`+0x1b0`** |
+| `__TEXT.__unwind_info` | `0x3e40` | `0x3cf0` | **`-0x150`** |
+| `__DATA.__data` | `0x1800` | `0x1700` | **`-0x100`** |
+| `__TEXT.__oslogstring` | `0x1c15` | `0x1ce5` | **`+0xd0`** |
+| `__TEXT.__objc_methlist` | `0x53c` | `0x5b4` | **`+0x78`** |
+| `__TEXT.__gcc_except_tab` | `0x90ec` | `0x9158` | **`+0x6c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4c8` | `0x520` | **`+0x58`** |
+| `__TEXT.__swift5_types` | `0x230` | `0x1e8` | **`-0x48`** |
+| `__TEXT.__swift5_proto` | `0x1f0` | `0x1c0` | **`-0x30`** |
+| `__DATA_CONST.__const` | `0x5f8` | `0x5d0` | **`-0x28`** |
+| `__TEXT.__swift_as_cont` | `0x184` | `0x1ac` | **`+0x28`** |
+| `__TEXT.__cstring` | `0xbd68` | `0xbd8d` | **`+0x25`** |
+| `__DATA_CONST.__objc_classlist` | `0xa8` | `0x88` | **`-0x20`** |
+| `__TEXT.__swift_as_ret` | `0xe0` | `0xf8` | **`+0x18`** |
+| `__DATA_CONST.__objc_protolist` | `0x60` | `0x70` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x20e4` | `0x20ef` | **`+0xb`** |
+| `__DATA.__common` | `0x380` | `0x388` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x30` | `0x38` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x10` | `0x8` | **`-0x8`** |
+| `__TEXT.__swift_as_entry` | `0xa4` | `0xac` | **`+0x8`** |
+| `__TEXT.__swift5_types2` | `0x10` | `0xc` | **`-0x4`** |
+
+### Other Changes
 
 ```diff
 
 -106.0.5.0.1
--  __TEXT.__text: 0x114820
--  __TEXT.__objc_methlist: 0x53c
--  __TEXT.__const: 0x6f68
--  __TEXT.__gcc_except_tab: 0x90ec
--  __TEXT.__constg_swiftt: 0x2114
--  __TEXT.__swift5_typeref: 0x1f1a
 +106.0.7.0.0
-+  __TEXT.__text: 0x113c74
-+  __TEXT.__objc_methlist: 0x5b4
-+  __TEXT.__const: 0x68c8
-+  __TEXT.__gcc_except_tab: 0x9158
-+  __TEXT.__constg_swiftt: 0x1c24
-+  __TEXT.__swift5_typeref: 0x1c0d
-   __TEXT.__swift5_builtin: 0x104
--  __TEXT.__swift5_reflstr: 0x20e4
--  __TEXT.__swift5_fieldmd: 0x23e4
-+  __TEXT.__swift5_reflstr: 0x20ef
-+  __TEXT.__swift5_fieldmd: 0x1ff4
-   __TEXT.__swift5_capture: 0x364
--  __TEXT.__cstring: 0xbd68
--  __TEXT.__swift5_proto: 0x1f0
--  __TEXT.__swift5_types: 0x230
--  __TEXT.__swift5_types2: 0x10
--  __TEXT.__swift_as_entry: 0xa4
--  __TEXT.__swift_as_ret: 0xe0
--  __TEXT.__swift_as_cont: 0x184
--  __TEXT.__oslogstring: 0x1c15
-+  __TEXT.__cstring: 0xbd8d
-+  __TEXT.__swift5_proto: 0x1c0
-+  __TEXT.__swift5_types: 0x1e8
-+  __TEXT.__swift5_types2: 0xc
-+  __TEXT.__swift_as_entry: 0xac
-+  __TEXT.__swift_as_ret: 0xf8
-+  __TEXT.__swift_as_cont: 0x1ac
-+  __TEXT.__oslogstring: 0x1ce5
-   __TEXT.__swift5_assocty: 0x170
--  __TEXT.__swift5_protos: 0x10
-+  __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x3e40
--  __TEXT.__eh_frame: 0x6020
-+  __TEXT.__unwind_info: 0x3cf0
-+  __TEXT.__eh_frame: 0x63a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x5f8
--  __DATA_CONST.__objc_classlist: 0xa8
--  __DATA_CONST.__objc_protolist: 0x60
-+  __DATA_CONST.__const: 0x5d0
-+  __DATA_CONST.__objc_classlist: 0x88
-+  __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x4c8
--  __DATA_CONST.__objc_protorefs: 0x30
-+  __DATA_CONST.__objc_selrefs: 0x520
-+  __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x5fe8
-+  __AUTH_CONST.__const: 0x5950
-   __AUTH_CONST.__cfstring: 0x80
--  __AUTH_CONST.__objc_const: 0x26e0
-+  __AUTH_CONST.__objc_const: 0x2438
-   __AUTH_CONST.__weak_auth_got: 0x50
--  __AUTH_CONST.__auth_got: 0x28b8
-+  __AUTH_CONST.__auth_got: 0x2a68
-   __AUTH.__objc_data: 0x1e0
-   __AUTH.__tf_func: 0xc0
--  __AUTH.__data: 0x2b30
--  __DATA.__data: 0x1800
--  __DATA.__bss: 0x3fa8
--  __DATA.__common: 0x380
-+  __AUTH.__data: 0x2480
-+  __DATA.__data: 0x1700
-+  __DATA.__bss: 0x3a38
-+  __DATA.__common: 0x388
-   __DATA_DIRTY.__tf_func: 0x0
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   - /usr/lib/usd/libusd_ms.dylib
 -  Functions: 4106
--  Symbols:   10712
+-  Symbols:   10641
 -  CStrings:  1018
 +  Functions: 3888
-+  Symbols:   10189
++  Symbols:   10114
 +  CStrings:  1029
- 
 Symbols:
 + GCC_except_table119
 + GCC_except_table131
@@ -503,11 +444,6 @@ Symbols:
 + _associated conformance 18_USDKit_RealityKit17USDStageComponentV18SerializationErrorOSHAASQ
 + _flat unique So9MTLBuffer_p
 + _objc_autorelease
-+ _objc_msgSend$blitCommandEncoder
-+ _objc_msgSend$contents
-+ _objc_msgSend$copyFromBuffer:sourceOffset:toBuffer:destinationOffset:size:
-+ _objc_msgSend$dataWithBytesNoCopy:length:freeWhenDone:
-+ _objc_msgSend$newBufferWithLength:options:
 + _swift_release_x10
 + _swift_retain_x9
 + _symbolic SDySi______pG So9MTLBufferP
@@ -1407,7 +1343,6 @@ Symbols:
 - _associated conformance 18_USDKit_RealityKit25_Proto_UsdStageSession_v1C11FrameUpdateV6ErrorsV9MeshErrorOSHAASQ
 - _get_enum_tag_for_layout_string 18_USDKit_RealityKit9USDPlayerC15DeformationDataV015RenormalizationF0VSg
 - _get_enum_tag_for_layout_string 18_USDKit_RealityKit9USDPlayerC15DeformationDataV08SkinningF0VSg
-- _objc_msgSend$dataWithBytes:length:
 - _objc_retain_x27
 - _symbolic $s12HdRealityKit18CoreRenderDelegateP
 - _symbolic $s18_USDKit_RealityKit25_Proto_UsdStageSession_v1C8DelegateP

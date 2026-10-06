@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ChronoServices.framework/ChronoServices`
 
-```diff
+### Section Size Changes
 
- 749.0.2.0.0
--  __TEXT.__text: 0x101b1c
-+  __TEXT.__text: 0x101af4
-   __TEXT.__objc_methlist: 0x82ec
-   __TEXT.__const: 0x7a48
-   __TEXT.__gcc_except_tab: 0xacc0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x101b1c` | `0x101af4` | **`-0x28`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_18bf94c30 -> sub_18bf98c30 : 960 -> 880
 ~ __ZN5apple4aiml12flatbuffers215vector_downward10reallocateEm : 348 -> 352

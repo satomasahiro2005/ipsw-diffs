@@ -2,16 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/HealthUtilities.framework/HealthUtilities`
 
-```diff
+### Section Size Changes
 
- 7027.0.72.2.7
--  __TEXT.__text: 0xf79c
-+  __TEXT.__text: 0xf7a8
-   __TEXT.__objc_methlist: 0x50
-   __TEXT.__swift5_typeref: 0x606
-   __TEXT.__swift5_capture: 0x80
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf79c` | `0xf7a8` | **`+0xc`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_282b220e0 -> sub_2838560e0 : 844 -> 848
-~ sub_282b23a90 -> sub_283857a94 : 172 -> 176
-~ sub_282b23b3c -> sub_283857b44 : 148 -> 152
+~ sub_282a130e0 -> sub_2837250e0 : 844 -> 848
+~ sub_282a14a90 -> sub_283726a94 : 172 -> 176
+~ sub_282a14b3c -> sub_283726b44 : 148 -> 152
 ```

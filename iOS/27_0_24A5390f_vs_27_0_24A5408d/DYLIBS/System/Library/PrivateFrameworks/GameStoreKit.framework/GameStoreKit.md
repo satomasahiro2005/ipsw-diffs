@@ -2,110 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/GameStoreKit.framework/GameStoreKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14572d8` | `0x1466e60` | **`+0xfb88`** |
+| `__DATA.__bss` | `0x11e600` | `0x11f710` | **`+0x1110`** |
+| `__TEXT.__const` | `0x124304` | `0x125204` | **`+0xf00`** |
+| `__TEXT.__swift5_typeref` | `0x1367e0` | `0x1360c2` | **`-0x71e`** |
+| `__DATA.__data` | `0x3ab78` | `0x3aff8` | **`+0x480`** |
+| `__AUTH_CONST.__const` | `0x982a0` | `0x98658` | **`+0x3b8`** |
+| `__TEXT.__cstring` | `0x3005a` | `0x3036a` | **`+0x310`** |
+| `__AUTH.__data` | `0x38218` | `0x38508` | **`+0x2f0`** |
+| `__TEXT.__swift5_fieldmd` | `0x4cce0` | `0x4cf90` | **`+0x2b0`** |
+| `__TEXT.__eh_frame` | `0x5faa4` | `0x5fc48` | **`+0x1a4`** |
+| `__DATA_DIRTY.__bss` | `0x40ca0` | `0x40b20` | **`-0x180`** |
+| `__TEXT.__swift5_reflstr` | `0x44f65` | `0x450e5` | **`+0x180`** |
+| `__TEXT.__unwind_info` | `0x43d48` | `0x43eb0` | **`+0x168`** |
+| `__DATA_DIRTY.__data` | `0x33798` | `0x33638` | **`-0x160`** |
+| `__TEXT.__swift5_assocty` | `0xf3f0` | `0xf530` | **`+0x140`** |
+| `__AUTH.__objc_data` | `0xab78` | `0xaa58` | **`-0x120`** |
+| `__TEXT.__swift5_capture` | `0x12fd0` | `0x130e4` | **`+0x114`** |
+| `__TEXT.__constg_swiftt` | `0x4a84c` | `0x4a8f0` | **`+0xa4`** |
+| `__AUTH_CONST.__auth_got` | `0x8de8` | `0x8e78` | **`+0x90`** |
+| `__TEXT.__oslogstring` | `0xf39f` | `0xf40f` | **`+0x70`** |
+| `__TEXT.__swift5_proto` | `0xb698` | `0xb708` | **`+0x70`** |
+| `__AUTH_CONST.__objc_const` | `0x38978` | `0x389d8` | **`+0x60`** |
+| `__DATA_CONST.__got` | `0x52f0` | `0x5348` | **`+0x58`** |
+| `__TEXT.__swift5_types` | `0x4dc8` | `0x4e08` | **`+0x40`** |
+| `__TEXT.__swift_as_cont` | `0x37b0` | `0x3784` | **`-0x2c`** |
+| `__DATA_CONST.__const` | `0x4ee8` | `0x4ec0` | **`-0x28`** |
+| `__TEXT.__objc_methlist` | `0x6148` | `0x6130` | **`-0x18`** |
+| `__TEXT.__swift5_builtin` | `0xd84` | `0xd98` | **`+0x14`** |
+| `__DATA_CONST.__objc_selrefs` | `0x56e8` | `0x56d8` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x16d8` | `0x16e0` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x404` | `0x400` | **`-0x4`** |
+| `__TEXT.__swift_as_entry` | `0x1174` | `0x1170` | **`-0x4`** |
+| `__TEXT.__swift_as_ret` | `0x17d0` | `0x17cc` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3.0.35.0.0
--  __TEXT.__text: 0x14572d8
--  __TEXT.__objc_methlist: 0x6148
--  __TEXT.__const: 0x124304
 +3.0.41.2.1
-+  __TEXT.__text: 0x1466e60
-+  __TEXT.__objc_methlist: 0x6130
-+  __TEXT.__const: 0x125204
-   __TEXT.__gcc_except_tab: 0x97c
--  __TEXT.__cstring: 0x3005a
--  __TEXT.__oslogstring: 0xf39f
--  __TEXT.__constg_swiftt: 0x4a84c
--  __TEXT.__swift5_typeref: 0x1367e0
--  __TEXT.__swift5_builtin: 0xd84
--  __TEXT.__swift5_reflstr: 0x44f65
--  __TEXT.__swift5_fieldmd: 0x4cce0
--  __TEXT.__swift5_assocty: 0xf3f0
--  __TEXT.__swift5_capture: 0x12fd0
--  __TEXT.__swift5_proto: 0xb698
--  __TEXT.__swift5_types: 0x4dc8
--  __TEXT.__swift5_protos: 0x404
--  __TEXT.__swift_as_entry: 0x1174
--  __TEXT.__swift_as_ret: 0x17d0
--  __TEXT.__swift_as_cont: 0x37b0
-+  __TEXT.__cstring: 0x3036a
-+  __TEXT.__oslogstring: 0xf40f
-+  __TEXT.__constg_swiftt: 0x4a8f0
-+  __TEXT.__swift5_typeref: 0x1360c2
-+  __TEXT.__swift5_builtin: 0xd98
-+  __TEXT.__swift5_reflstr: 0x450e5
-+  __TEXT.__swift5_fieldmd: 0x4cf90
-+  __TEXT.__swift5_assocty: 0xf530
-+  __TEXT.__swift5_capture: 0x130e4
-+  __TEXT.__swift5_proto: 0xb708
-+  __TEXT.__swift5_types: 0x4e08
-+  __TEXT.__swift5_protos: 0x400
-+  __TEXT.__swift_as_entry: 0x1170
-+  __TEXT.__swift_as_ret: 0x17cc
-+  __TEXT.__swift_as_cont: 0x3784
-   __TEXT.__swift5_mpenum: 0x468
--  __TEXT.__unwind_info: 0x43d48
--  __TEXT.__eh_frame: 0x5faa4
-+  __TEXT.__unwind_info: 0x43eb0
-+  __TEXT.__eh_frame: 0x5fc48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4ee8
--  __DATA_CONST.__objc_classlist: 0x16d8
-+  __DATA_CONST.__const: 0x4ec0
-+  __DATA_CONST.__objc_classlist: 0x16e0
-   __DATA_CONST.__objc_catlist: 0x78
-   __DATA_CONST.__objc_protolist: 0x420
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x56e8
-+  __DATA_CONST.__objc_selrefs: 0x56d8
-   __DATA_CONST.__objc_protorefs: 0x288
-   __DATA_CONST.__objc_superrefs: 0x108
-   __DATA_CONST.__objc_arraydata: 0x120
-   __DATA_CONST.__vfx_script_tbx: 0x18
--  __DATA_CONST.__got: 0x52f0
--  __AUTH_CONST.__const: 0x982a0
-+  __DATA_CONST.__got: 0x5348
-+  __AUTH_CONST.__const: 0x98658
-   __AUTH_CONST.__cfstring: 0x2060
--  __AUTH_CONST.__objc_const: 0x38978
-+  __AUTH_CONST.__objc_const: 0x389d8
-   __AUTH_CONST.__objc_arrayobj: 0x90
-   __AUTH_CONST.__objc_intobj: 0x30
--  __AUTH_CONST.__auth_got: 0x8de8
--  __AUTH.__objc_data: 0xab78
--  __AUTH.__data: 0x38218
-+  __AUTH_CONST.__auth_got: 0x8e78
-+  __AUTH.__objc_data: 0xaa58
-+  __AUTH.__data: 0x38508
-   __DATA.__objc_ivar: 0x198
--  __DATA.__data: 0x3ab78
--  __DATA.__bss: 0x11e600
-+  __DATA.__data: 0x3aff8
-+  __DATA.__bss: 0x11f710
-   __DATA.__common: 0x5438
-   __DATA_DIRTY.__objc_data: 0x5748
--  __DATA_DIRTY.__data: 0x33798
--  __DATA_DIRTY.__bss: 0x40ca0
-+  __DATA_DIRTY.__data: 0x33638
-+  __DATA_DIRTY.__bss: 0x40b20
-   __DATA_DIRTY.__common: 0x10c8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 100021
--  Symbols:   37646
+-  Symbols:   35477
 -  CStrings:  6216
 +  Functions: 100262
-+  Symbols:   37711
++  Symbols:   35539
 +  CStrings:  6238
- 
 Symbols:
 + _LSIncludeAppLinksForCallingApplicationKey
 + _OBJC_CLASS_$_UIAction
@@ -204,23 +151,6 @@ Symbols:
 + _get_witness_table qd0__7SwiftUI4ViewHD4_AaBPAAE8staticIf_4thenQrqd___qd_0_xXEtAA0C14InputPredicateRd__AaBRd_0_r0_lFQOyAcAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAcAE0I16TitleDisplayModeyQrAA0kmnO0VFQOyAcAE0I10Visibility_3forQrAA0P0O_AA0K9PlacementVdtFQOyAcAE010navigationM0yQrqd__SyRd__lFQOyAA08ModifiedL0VyAA01_c9Modifier_L0Vy12GameStoreKit04PagekU0VGAA022_EnvironmentKeyWritingU0VyAX09TransientK13ConfigurationCGG_SSQo__Qo__Qo__AA05TupleL0VyAX0yk9ItemGroupC0VSg_AaIPAAE016sharedBackgroundP0yQrAPFQOyA12__Qo_SgA13_AA0K4ItemVyyt011_JetEngine_aB012ActionButtonVyAA5LabelVyAA05EmptyC0VAA5ImageVGGGSgAA05TuplekL0VyAA0kL7BuilderV10buildBlockyQrxAaIRzlFZQOy_A36_A37_yQrxAaIRzlFZQOy_A14_AAE13platterHiddenyQrSbFQOyA19_yytAX0k13ItemAnimationC033_5FC6BDB18CC86AD0101F21CF2BAAA4F0LLVyAA012_ConditionalL0VyA43_yA43_yAcAE15dynamicTypeSizeyQrAA15DynamicTypeSizeOFQOyAUyAX11LargeButtonVAA16_FixedSizeLayoutVG_Qo_AX0v20IconAndPlayerAvatarsC0VyAX07Defaultv4IconC0VGGA43_yAcAEA44_yQrA46_FQOyAX16LargeOfferButtonV_Qo_AUyAX012PlayerAvatarC0VAA12_FrameLayoutVGGGA43_yA43_yAX09ShareLinkC033_616B0BBD558B038F9BBE4DF98F870460LLVAX22ShareSheetActionButtonA70_LLVGA43_yAA4TextVAA6VStackVyA10_yAUyAcAE4boldyQrSbFQOyA76__Qo_AA016_ForegroundStyleU0VyAA06_BlendO10ShapeStyleVyAA22HierarchicalShapeStyleVGGG_A80_QPGGGGGGG_Qo_Qo_SgQo_Sg_A99_tGSgA103_QPGQo__AaFPAAE1nopyQrxFZQOyAX0v7OverlaycH0V_Qo_AUyA105_AX0k8BehaviorU033_283E1632BF9C269B8CF685FE02358ECCLLVGQo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE21scrollEdgeEffectStyle_3forQrAA06ScrollefG0VSg_AA0E0O3SetVtFQOyAA19_ConditionalContentVyANyANyANyANyANyAC011_JetEngine_aB0E19automationSemanticsyQr0mN0010AutomationP0VFQOy12GameStoreKit04PageL033_82C4FC82398B3F168990E984B75497AELLV_Qo_AXGAT023OverlayNowPlayingStaticuC0VGANyAyT019OverlayArcadeStaticuC0VGGANyANyAyT019OverlaySocialStaticuC0VGAT021OverlaySystemSettingsuC0VGGANyANyAT017OverlayActiveCalluC0VANyAxWGGANyA14_AWGGGAA05EmptyC0VG_Qo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD3_AA15ModifiedContentV011_JetEngine_aB0AaBRzAE018_IntentDispatchingC8ModifierR_rlE19pageResourceMetricsQryFQOyAE0h6ResultC0Vy12GameStoreKit15FlowDestinationOAA08ProgressC0VyAA05EmptyC0VAPGAA012_ConditionalE0VyASyASyASyASyASyAJ010ArcadePageC0VAJ09EditorialxC0VyAJ07GenericxC5ModelCGGAPGASyADyAaBPAEE13popoverOrigin10presentingQrqd__m_t0fG00R11ActionModelRd__s12IdentifiableRd__lFQOyASyASyASyASyAJ07LibraryxC0VAJ018LeaderboardDetailsxC0VGASyAJ014FriendsPlayingxC0VAJ0w7LibraryxC0VGGASyASyAJ0o19DetailsMediaPreviewxC0VAJ07PlayNowxC0VGASyAJ016InternalSettingsw11EntitlementxC0VAJ014AchievementsByoC0VGGGASyASyAJ011OverlayBasexC0VAJ029SocialIntegrationContactsListxC0VGASyAJ04Minio8ActivityxC0VAJ04BasexC0VyAJ04Basex6HeaderC0VAJ07Defaultx7ShelveseC0VGGGG_AJ0R6ActionCQo_AJ020NavigationTransitionJ033_4173A5C0775D2B43AD53AC7298F0BBDFLLVGA1_AEE25flowSheetDoneButtonHiddenyQrSbFQOyA1_AEEA2_A3_Qrqd__m_tA4_A5_Rd__sA6_Rd__lFQOyAJ014AppEventDetailxC0V_A48_Qo__Qo_GGASyASyAJ0x9ContainerC0VAJ06Searchx9ContainerC0VGASyAA4TextVA1_AEEA54_yQrSbFQOyAJ0C17ControllerAdaptorV_Qo_GGGASyASyASyA69_SgA69_GASyA1_AEEA54_yQrSbFQOyAJ019ReportPlayerProblemC0V_Qo_AJ022PickActivityTransitionC0VGGASyASyA1_AEE19automationSemanticsyQrA4_19AutomationSemanticsVFQOyA1_AEE0kM0_8pipeline7tracker26clickLocationConfigurationQrA4_0xM0VSg_A4_0M8PipelineVA4_18ImpressionsTracker_pSgAE26ClickLocationConfigurationVSgtFQOyAJ022ChallengesPlayerPickerC0V_Qo__Qo_A1_AEEA83_yQrA85_FQOyA1_AEEA86__A87_A88_A89_QrA92__A94_A96_A99_tFQOyAJ016ChallengesReviewC0V_Qo__Qo_GASyA1_AEEA54_yQrSbFQOyA1_AEEA83_yQrA85_FQOyA1_AEEA86__A87_A88_A89_QrA92__A94_A96_A99_tFQOyAJ025MultiplayerActivityReviewC0V_Qo__Qo__Qo_AJ019RecordingFullScreenC0VGGGGASyASyASyADyADyAJ021ActivitySharingPromptC0VAJ018PlatformNavigationJ0A51_LLVGAJ026OnboardingImpedimentStylescJ0A51_LLVGADyADyAJ025ContactsIntegrationPromptC0VA123_GA126_GGASyA1_AEEA54_yQrSbFQOyAJ019PlayTogetherWelcomexC0V_Qo_ADyADyAA5GroupVyASyAJ07Welcomeq10OnboardingC0VAJ022GamesOnboardingWelcomeC0VGGA123_GA126_GGGASyASyA1_AAE7toolbar7contentQrqd__yXE_tAA07ToolbarE0Rd__lFQOyAJ018AchievementDetailsxC0V_AJ0x16ToolbarItemGroupC0VSgQo_A1_AEEA54_yQrSbFQOyAJ013ProfileEditorC0V_Qo_GA1_AEEA2_A3_Qrqd__m_tA4_A5_Rd__sA6_Rd__lFQOyAJ013InviteFriendsxC0V_A48_Qo_GGGADyA1_AEE018contentUnavailableC19PresentationContextyQrAE0e11UnavailableC19PresentationContextOFQOyAE0e11UnavailableC0VyA67_A67_AE0E17UnavailableButtonVyA67_GG_Qo_AA16_FlexFrameLayoutVGGA1_AEE8dispatch_4intoADyxQrGqd___AA7BindingVyAE0hN0Vy10ReturnTypeQyd__GGtA4_0H5ModelRd__lFQOyA180__A4_03AnyH5ModelVyALGQo__Qo_HO
-+ _objc_msgSend$_setTitleMinimumMargins:
-+ _objc_msgSend$_titleMinimumMargins
-+ _objc_msgSend$addAction:forControlEvents:
-+ _objc_msgSend$children
-+ _objc_msgSend$configurationWithFont:scale:
-+ _objc_msgSend$disambiguationMenuForActionType:
-+ _objc_msgSend$elementWithUncachedProvider:
-+ _objc_msgSend$imageNamed:inBundle:withConfiguration:
-+ _objc_msgSend$menuByReplacingChildren:
-+ _objc_msgSend$performPrimaryAction
-+ _objc_msgSend$quaternarySystemFillColor
-+ _objc_msgSend$setMenu:
-+ _objc_msgSend$setOverrideUserInterfaceStyle:
-+ _objc_msgSend$setShowsMenuAsPrimaryAction:
-+ _objc_msgSend$setWindowScene:
-+ _objc_msgSend$systemImageNamed:
-+ _objc_msgSend$valueForProperty:
 + _symbolic SDySO_____G 9JetEngine17ImpressionMetricsV
 + _symbolic SO______t 9JetEngine17ImpressionMetricsV
 + _symbolic SS5title_SS15systemImageNamet
@@ -583,20 +513,6 @@ Symbols:
 - _get_witness_table qd0__7SwiftUI4ViewHD4_AaBPAAE8staticIf_4thenQrqd___qd_0_xXEtAA0C14InputPredicateRd__AaBRd_0_r0_lFQOyAcAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAcAE0I16TitleDisplayModeyQrAA0kmnO0VFQOyAcAE0I10Visibility_3forQrAA0P0O_AA0K9PlacementVdtFQOyAcAE010navigationM0yQrqd__SyRd__lFQOyAA08ModifiedL0VyAA01_c9Modifier_L0Vy12GameStoreKit04PagekU0VGAA022_EnvironmentKeyWritingU0VyAX09TransientK13ConfigurationCGG_SSQo__Qo__Qo__AA05TupleL0VyAX0yk9ItemGroupC0VSg_AaIPAAE016sharedBackgroundP0yQrAPFQOyA12__Qo_SgA13_AA0K4ItemVyyt011_JetEngine_aB012ActionButtonVyAA5LabelVyAA05EmptyC0VAA5ImageVGGGSgAA0kL7BuilderV10buildBlockyQrxAaIRzlFZQOy_AA012_ConditionalL0VyAA05TuplekL0VyA34_A35_yQrxAaIRzlFZQOy_A34_A35_yQrxAaIRzlFZQOy_A14_AAE13platterHiddenyQrSbFQOyA19_yytAUyAUyA37_yA37_yA37_yAcAE15dynamicTypeSizeyQrAA15DynamicTypeSizeOFQOyAUyAX11LargeButtonVAA16_FixedSizeLayoutVG_Qo_AX0v20IconAndPlayerAvatarsC0VyAX07Defaultv4IconC0VGGA37_yAcAEA41_yQrA43_FQOyAX16LargeOfferButtonV_Qo_AUyAX012PlayerAvatarC0VAA12_FrameLayoutVGGGA37_yA37_yAX09ShareLinkC033_616B0BBD558B038F9BBE4DF98F870460LLVAX22ShareSheetActionButtonA67_LLVGA37_yAA4TextVAA6VStackVyA10_yAUyAcAE4boldyQrSbFQOyA73__Qo_AA016_ForegroundStyleU0VyAA06_BlendO10ShapeStyleVyAA22HierarchicalShapeStyleVGGG_A77_QPGGGGGAA14_OpacityEffectVGAA010_AnimationU0VySbGGG_Qo_Qo_SgQo_Sg_A102_tGA34_A35_yQrxAaIRzlFZQOy_A19_yytAUyAA6ZStackVyA10_yA94_Sg_A94_QPGGA97_GGQo_GQo_SgA116_QPGQo__AaFPAAE1nopyQrxFZQOyAX0v7OverlaycH0V_Qo_AUyA118_AX0k8BehaviorU033_283E1632BF9C269B8CF685FE02358ECCLLVGQo_HO
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyAA15ModifiedContentVyAIy12GameStoreKit16AXAdaptableStackVyAA012_ConditionalK0VyAA05TupleK0VyAcAE15dynamicTypeSizeyQrqd__SXRd__AA07DynamictU0O5BoundRtd__lFQOyAJ010AnnotationC0V07LeadingC033_F35B1990C93642567E67E3105BA81BFELLV_s19PartialRangeThroughVyASGQo__AW06TitlesC0AYLLVQPGA5_GSgGAA16_FlexFrameLayoutVGAA12_FrameLayoutVG_Qo_HO
 - _get_witness_table qd__7SwiftUI4ViewHD3_AA15ModifiedContentV011_JetEngine_aB0AaBRzAE018_IntentDispatchingC8ModifierR_rlE19pageResourceMetricsQryFQOyAE0h6ResultC0Vy12GameStoreKit15FlowDestinationOAA08ProgressC0VyAA05EmptyC0VAPGAA012_ConditionalE0VyASyASyASyASyASyAJ010ArcadePageC0VAJ09EditorialxC0VyAJ07GenericxC5ModelCGGAPGASyADyAaBPAEE13popoverOrigin10presentingQrqd__m_t0fG00R11ActionModelRd__s12IdentifiableRd__lFQOyASyASyASyASyASyAJ07LibraryxC0VAJ018LeaderboardDetailsxC0VGASyAJ014FriendsPlayingxC0VAJ0w7LibraryxC0VGGASyASyAJ0o19DetailsMediaPreviewxC0VAJ07PlayNowxC0VGASyAJ016InternalSettingsw11EntitlementxC0VAJ021OverlaySystemSettingsxC0VGGGASyASyASyAJ017OverlayActiveCallxC0VAJ014AchievementsByoC0VGASyAJ011OverlayBasexC0VA36_GGASyA37_ASyA36_AJ029SocialIntegrationContactsListxC0VGGGGASyAJ04Minio8ActivityxC0VAJ04BasexC0VyAJ04Basex6HeaderC0VAJ07Defaultx7ShelveseC0VGGG_AJ0R6ActionCQo_AJ020NavigationTransitionJ033_4173A5C0775D2B43AD53AC7298F0BBDFLLVGA1_AEE25flowSheetDoneButtonHiddenyQrSbFQOyA1_AEEA2_A3_Qrqd__m_tA4_A5_Rd__sA6_Rd__lFQOyAJ014AppEventDetailxC0V_A57_Qo__Qo_GGASyASyAJ0x9ContainerC0VAJ06Searchx9ContainerC0VGASyAA4TextVA1_AEEA63_yQrSbFQOyAJ0C17ControllerAdaptorV_Qo_GGGASyASyASyA78_SgA78_GASyA1_AEEA63_yQrSbFQOyAJ019ReportPlayerProblemC0V_Qo_AJ022PickActivityTransitionC0VGGASyASyA1_AEE19automationSemanticsyQrA4_19AutomationSemanticsVFQOyA1_AEE0kM0_8pipeline7tracker26clickLocationConfigurationQrA4_0xM0VSg_A4_0M8PipelineVA4_18ImpressionsTracker_pSgAE26ClickLocationConfigurationVSgtFQOyAJ022ChallengesPlayerPickerC0V_Qo__Qo_A1_AEEA92_yQrA94_FQOyA1_AEEA95__A96_A97_A98_QrA101__A103_A105_A108_tFQOyAJ016ChallengesReviewC0V_Qo__Qo_GASyA1_AEEA63_yQrSbFQOyA1_AEEA92_yQrA94_FQOyA1_AEEA95__A96_A97_A98_QrA101__A103_A105_A108_tFQOyAJ025MultiplayerActivityReviewC0V_Qo__Qo__Qo_AJ019RecordingFullScreenC0VGGGGASyASyASyADyADyAJ021ActivitySharingPromptC0VAJ018PlatformNavigationJ0A60_LLVGAJ026OnboardingImpedimentStylescJ0A60_LLVGADyADyAJ025ContactsIntegrationPromptC0VA132_GA135_GGASyA1_AEEA63_yQrSbFQOyAJ019PlayTogetherWelcomexC0V_Qo_ADyADyAA5GroupVyASyAJ07Welcomeq10OnboardingC0VAJ022GamesOnboardingWelcomeC0VGGA132_GA135_GGGASyASyA1_AAE7toolbar7contentQrqd__yXE_tAA07ToolbarE0Rd__lFQOyAJ018AchievementDetailsxC0V_AJ0x16ToolbarItemGroupC0VSgQo_A1_AEEA63_yQrSbFQOyAJ013ProfileEditorC0V_Qo_GA1_AEEA2_A3_Qrqd__m_tA4_A5_Rd__sA6_Rd__lFQOyAJ013InviteFriendsxC0V_A57_Qo_GGGADyA1_AEE018contentUnavailableC19PresentationContextyQrAE0e11UnavailableC19PresentationContextOFQOyAE0e11UnavailableC0VyA76_A76_AE0E17UnavailableButtonVyA76_GG_Qo_AA16_FlexFrameLayoutVGGA1_AEE8dispatch_4intoADyxQrGqd___AA7BindingVyAE0hN0Vy10ReturnTypeQyd__GGtA4_0H5ModelRd__lFQOyA189__A4_03AnyH5ModelVyALGQo__Qo_HO
-- _objc_msgSend$addArrangedSubview:
-- _objc_msgSend$arrangedSubviews
-- _objc_msgSend$disambiguationViewControllerDismissedExternally:
-- _objc_msgSend$executeLongPressBehaviorForActionType:
-- _objc_msgSend$executeTapBehaviorForActionType:
-- _objc_msgSend$isBeingPresented
-- _objc_msgSend$popoverPresentationController
-- _objc_msgSend$removeArrangedSubview:
-- _objc_msgSend$setAxis:
-- _objc_msgSend$setDistribution:
-- _objc_msgSend$setSourceRect:
-- _objc_msgSend$setSourceView:
-- _objc_msgSend$setSpacing:
-- _objc_msgSend$systemBuildVersion
 - _symbolic $s12GameStoreKit29ProfileQuickActionsControllerP
 - _symbolic SDySSSDy__________ySuSg_GGG 10Foundation4UUIDV ScS12ContinuationV
 - _symbolic SDySSScTyyt_____GG s5NeverO

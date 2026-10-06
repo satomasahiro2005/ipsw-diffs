@@ -2,75 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/TokenGenerationCore.framework/TokenGenerationCore`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x320ba8` | `0x321468` | **`+0x8c0`** |
+| `__TEXT.__const` | `0x3c220` | `0x3c270` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0xd068` | `0xd090` | **`+0x28`** |
+| `__TEXT.__swift5_reflstr` | `0x620c` | `0x622c` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x2f0` | `0x300` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0xc44c` | `0xc458` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x2cc0` | `0x2cc8` | **`+0x8`** |
+| `__DATA.__data` | `0x8128` | `0x8130` | **`+0x8`** |
+| `__TEXT.__eh_frame` | `0x102a4` | `0x102ac` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -307.8.0.2.0
--  __TEXT.__text: 0x30bd88
 +307.12.0.1.2
-+  __TEXT.__text: 0x30c6c8
-   __TEXT.__objc_methlist: 0xd4
--  __TEXT.__const: 0x3c220
-+  __TEXT.__const: 0x3c270
-   __TEXT.__gcc_except_tab: 0x4244
-   __TEXT.__cstring: 0xc32d
-   __TEXT.__oslogstring: 0x2435
-   __TEXT.__swift5_typeref: 0xa872
--  __TEXT.__swift5_fieldmd: 0xc44c
-+  __TEXT.__swift5_fieldmd: 0xc458
-   __TEXT.__constg_swiftt: 0x8690
-   __TEXT.__swift5_builtin: 0x2a8
--  __TEXT.__swift5_reflstr: 0x620c
-+  __TEXT.__swift5_reflstr: 0x622c
-   __TEXT.__swift5_assocty: 0xa40
-   __TEXT.__swift5_mpenum: 0x15c
-   __TEXT.__swift5_protos: 0x74
 
-   __TEXT.__swift_as_cont: 0xa8
-   __TEXT.__swift_as_ret: 0x48
-   __TEXT.__swift5_types2: 0x8
--  __TEXT.__unwind_info: 0xffd8
--  __TEXT.__eh_frame: 0x102a4
-+  __TEXT.__unwind_info: 0xfff8
-+  __TEXT.__eh_frame: 0x102ac
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2f0
-+  __DATA_CONST.__const: 0x300
-   __DATA_CONST.__objc_classlist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
-
-   __AUTH_CONST.__cfstring: 0xa0
-   __AUTH_CONST.__objc_const: 0x1210
-   __AUTH_CONST.__weak_auth_got: 0x48
--  __AUTH_CONST.__auth_got: 0x2cc0
-+  __AUTH_CONST.__auth_got: 0x2cc8
-   __AUTH.__data: 0x1d8
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x10
-   __DATA.__objc_ivar: 0x8
--  __DATA.__data: 0x8128
-+  __DATA.__data: 0x8130
-   __DATA.__common: 0x3cd
-   __DATA_DIRTY.__objc_data: 0xa0
-   __DATA_DIRTY.__data: 0xa6b8
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 18003
 -  Symbols:   50997
 +  Functions: 18012
 +  Symbols:   51005
-   CStrings:  1340
- 
 Symbols:
 + _$s15TokenGeneration6PromptV19StringInterpolationVwetTm
 + _$s15TokenGeneration6PromptV19StringInterpolationVwstTm

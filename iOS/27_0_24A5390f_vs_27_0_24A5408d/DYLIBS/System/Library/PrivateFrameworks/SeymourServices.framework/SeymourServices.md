@@ -2,110 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/SeymourServices.framework/SeymourServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9999d8` | `0x9a66b0` | **`+0xccd8`** |
+| `__TEXT.__oslogstring` | `0x13472` | `0x13e22` | **`+0x9b0`** |
+| `__TEXT.__unwind_info` | `0x23ab8` | `0x23170` | **`-0x948`** |
+| `__TEXT.__eh_frame` | `0x77c7c` | `0x784ac` | **`+0x830`** |
+| `__TEXT.__const` | `0x28df0` | `0x29130` | **`+0x340`** |
+| `__AUTH_CONST.__const` | `0x39f20` | `0x3a200` | **`+0x2e0`** |
+| `__TEXT.__swift5_typeref` | `0x148c8` | `0x14a96` | **`+0x1ce`** |
+| `__DATA.__data` | `0x5c30` | `0x5d40` | **`+0x110`** |
+| `__DATA.__bss` | `0xdec0` | `0xdfc0` | **`+0x100`** |
+| `__TEXT.__swift5_capture` | `0x16ad4` | `0x16bbc` | **`+0xe8`** |
+| `__TEXT.__swift5_fieldmd` | `0x9440` | `0x94fc` | **`+0xbc`** |
+| `__TEXT.__constg_swiftt` | `0xb09c` | `0xb13c` | **`+0xa0`** |
+| `__TEXT.__swift5_reflstr` | `0xbf44` | `0xbfe4` | **`+0xa0`** |
+| `__AUTH.__data` | `0x5580` | `0x5610` | **`+0x90`** |
+| `__TEXT.__swift_as_cont` | `0x8118` | `0x818c` | **`+0x74`** |
+| `__DATA_DIRTY.__data` | `0xf9b8` | `0xfa28` | **`+0x70`** |
+| `__AUTH_CONST.__objc_const` | `0x12688` | `0x126f0` | **`+0x68`** |
+| `__AUTH.__objc_data` | `0x2b78` | `0x2bc8` | **`+0x50`** |
+| `__TEXT.__swift_as_ret` | `0x2720` | `0x2764` | **`+0x44`** |
+| `__TEXT.__cstring` | `0xf645` | `0xf685` | **`+0x40`** |
+| `__TEXT.__swift_as_entry` | `0x1ccc` | `0x1d00` | **`+0x34`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1be0` | `0x1c10` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x1f00` | `0x1f20` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x65b8` | `0x65c0` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x1218` | `0x1220` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x92c` | `0x934` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.134.0.0
--  __TEXT.__text: 0x9999d8
 +2027.0.146.0.2
-+  __TEXT.__text: 0x9a66b0
-   __TEXT.__objc_methlist: 0x13c4
--  __TEXT.__const: 0x28df0
--  __TEXT.__constg_swiftt: 0xb09c
--  __TEXT.__swift5_typeref: 0x148c8
-+  __TEXT.__const: 0x29130
-+  __TEXT.__constg_swiftt: 0xb13c
-+  __TEXT.__swift5_typeref: 0x14a96
-   __TEXT.__swift5_builtin: 0x1b8
--  __TEXT.__swift5_reflstr: 0xbf44
-+  __TEXT.__swift5_reflstr: 0xbfe4
-   __TEXT.__swift5_assocty: 0x2258
--  __TEXT.__swift5_fieldmd: 0x9440
--  __TEXT.__swift5_proto: 0x1218
--  __TEXT.__swift5_types: 0x92c
--  __TEXT.__cstring: 0xf645
--  __TEXT.__swift5_capture: 0x16ad4
--  __TEXT.__oslogstring: 0x13472
-+  __TEXT.__swift5_fieldmd: 0x94fc
-+  __TEXT.__swift5_proto: 0x1220
-+  __TEXT.__swift5_types: 0x934
-+  __TEXT.__cstring: 0xf685
-+  __TEXT.__swift5_capture: 0x16bbc
-+  __TEXT.__oslogstring: 0x13e22
-   __TEXT.__swift5_protos: 0x2a0
--  __TEXT.__swift_as_entry: 0x1ccc
--  __TEXT.__swift_as_ret: 0x2720
--  __TEXT.__swift_as_cont: 0x8118
-+  __TEXT.__swift_as_entry: 0x1d00
-+  __TEXT.__swift_as_ret: 0x2764
-+  __TEXT.__swift_as_cont: 0x818c
-   __TEXT.__swift5_mpenum: 0xc0
--  __TEXT.__unwind_info: 0x23ab8
--  __TEXT.__eh_frame: 0x77c7c
-+  __TEXT.__unwind_info: 0x23170
-+  __TEXT.__eh_frame: 0x784ac
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1f00
-+  __DATA_CONST.__const: 0x1f20
-   __DATA_CONST.__objc_classlist: 0x8c0
-   __DATA_CONST.__objc_protolist: 0xf0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1be0
-+  __DATA_CONST.__objc_selrefs: 0x1c10
-   __DATA_CONST.__objc_protorefs: 0x88
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x39f20
--  __AUTH_CONST.__objc_const: 0x12688
--  __AUTH_CONST.__auth_got: 0x65b8
--  __AUTH.__objc_data: 0x2b78
--  __AUTH.__data: 0x5580
--  __DATA.__data: 0x5c30
-+  __AUTH_CONST.__const: 0x3a200
-+  __AUTH_CONST.__objc_const: 0x126f0
-+  __AUTH_CONST.__auth_got: 0x65c0
-+  __AUTH.__objc_data: 0x2bc8
-+  __AUTH.__data: 0x5610
-+  __DATA.__data: 0x5d40
-   __DATA.__objc_stublist: 0x40
--  __DATA.__bss: 0xdec0
-+  __DATA.__bss: 0xdfc0
-   __DATA.__common: 0x1a0
-   __DATA_DIRTY.__objc_data: 0x42d0
--  __DATA_DIRTY.__data: 0xf9b8
-+  __DATA_DIRTY.__data: 0xfa28
-   __DATA_DIRTY.__bss: 0x10d80
-   __DATA_DIRTY.__common: 0x670
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-   - /System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore
-   - /System/Library/Frameworks/Security.framework/Security
 +  - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/Frameworks/UserNotifications.framework/UserNotifications
-   - /System/Library/PrivateFrameworks/ActivityAchievements.framework/ActivityAchievements
-   - /System/Library/PrivateFrameworks/ActivityAwardsClient.framework/ActivityAwardsClient
 
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
 +  - /usr/lib/swift/libswiftSpatial.dylib
-   - /usr/lib/swift/libswiftSystem.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 34577
--  Symbols:   8377
+-  Symbols:   7578
 -  CStrings:  2880
 +  Functions: 34741
-+  Symbols:   8415
++  Symbols:   7610
 +  CStrings:  2904
- 
 Symbols:
 + _OBJC_CLASS_$_AMSEphemeralDefaults
 + ___swift_memcpy18_8
@@ -115,14 +59,6 @@ Symbols:
 + __swift_FORCE_LOAD_$_swiftUIKit_$_SeymourServices
 + _keypath_get_selector_approvedVersion
 + _keypath_get_selector_catalogStoreSplit
-+ _objc_msgSend$approvedVersion
-+ _objc_msgSend$catalogStoreSplit
-+ _objc_msgSend$configurations
-+ _objc_msgSend$entitiesForConfiguration:
-+ _objc_msgSend$isReadOnly
-+ _objc_msgSend$setApprovedVersion:
-+ _objc_msgSend$setCatalogStoreSplit:
-+ _objc_msgSend$setForceLoadUrlMetrics:
 + _symbolic SDy___________pG 11SeymourCore8ZoneNameO s5ErrorP
 + _symbolic SDy_____y__________G_____yAbCGG 15SeymourServices23PersistenceModelVersionV AA013CatalogSchemaE0O AA0f4DataE0O AA0cD13MigrationStepV
 + _symbolic SayScCy___________pGG 9JetEngine0A9PackAssetV s5ErrorP
@@ -153,8 +89,6 @@ Symbols:
 + _symbolic _____y______pG s23_ContiguousArrayStorageC s5ErrorP
 + _type_layout_string 15SeymourServices21ServerSyncCoordinatorC17ZoneApplyFailures33_2B13447E8CEB087C1E2D706689E78A7FLLV
 - _keypath_get_selector_approvedAppVersion
-- _objc_msgSend$approvedAppVersion
-- _objc_msgSend$setApprovedAppVersion:
 - _symbolic Say______p______tG 15SeymourServices26ServerSyncZoneCoordinatingP AA0dE9ChangesetV
 - _symbolic ______p______t 15SeymourServices26ServerSyncZoneCoordinatingP AA0dE9ChangesetV
 - _symbolic _____y_____G_SS_____t 21SeymourCoreFoundation12PortableEnumO 0aB025SignificantChangeApprovalV7VersionO 0C04DateV

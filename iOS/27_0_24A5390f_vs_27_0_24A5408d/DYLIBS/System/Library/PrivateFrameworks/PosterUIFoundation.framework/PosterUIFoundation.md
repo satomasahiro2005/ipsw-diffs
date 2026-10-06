@@ -2,89 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/PosterUIFoundation.framework/PosterUIFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x93db0` | `0x94d08` | **`+0xf58`** |
+| `__TEXT.__oslogstring` | `0x38a1` | `0x3a21` | **`+0x180`** |
+| `__TEXT.__gcc_except_tab` | `0x1674` | `0x17ac` | **`+0x138`** |
+| `__TEXT.__cstring` | `0x6663` | `0x6783` | **`+0x120`** |
+| `__AUTH_CONST.__cfstring` | `0x7f20` | `0x7fc0` | **`+0xa0`** |
+| `__TEXT.__constg_swiftt` | `0x69c` | `0x708` | **`+0x6c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x58c8` | `0x5910` | **`+0x48`** |
+| `__AUTH_CONST.__const` | `0x10c0` | `0x1100` | **`+0x40`** |
+| `__DATA.__bss` | `0x8c0` | `0x900` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x1090` | `0x10c0` | **`+0x30`** |
+| `__AUTH_CONST.__objc_const` | `0x1ef80` | `0x1efb0` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x26f8` | `0x2720` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0xf90` | `0xfb8` | **`+0x28`** |
+| `__TEXT.__objc_methlist` | `0xab64` | `0xab7c` | **`+0x18`** |
+| `__TEXT.__swift5_typeref` | `0x7f2` | `0x80a` | **`+0x18`** |
+| `__TEXT.__const` | `0xdb4` | `0xdc4` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x29d0` | `0x29e0` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0xbdc` | `0xbe0` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -350.1.100.0.0
--  __TEXT.__text: 0x93db0
--  __TEXT.__objc_methlist: 0xab64
--  __TEXT.__const: 0xdb4
--  __TEXT.__oslogstring: 0x38a1
--  __TEXT.__cstring: 0x6663
--  __TEXT.__gcc_except_tab: 0x1674
 +355.0.5.0.0
-+  __TEXT.__text: 0x94d08
-+  __TEXT.__objc_methlist: 0xab7c
-+  __TEXT.__const: 0xdc4
-+  __TEXT.__oslogstring: 0x3a21
-+  __TEXT.__cstring: 0x6783
-+  __TEXT.__gcc_except_tab: 0x17ac
-   __TEXT.__dlopen_cstrs: 0x216
--  __TEXT.__swift5_typeref: 0x7f2
--  __TEXT.__constg_swiftt: 0x69c
-+  __TEXT.__swift5_typeref: 0x80a
-+  __TEXT.__constg_swiftt: 0x708
-   __TEXT.__swift5_reflstr: 0x113
-   __TEXT.__swift5_fieldmd: 0x194
-   __TEXT.__swift5_builtin: 0x64
 
-   __TEXT.__swift5_proto: 0x28
-   __TEXT.__swift5_types: 0x2c
-   __TEXT.__swift5_capture: 0x30
--  __TEXT.__unwind_info: 0x29d0
-+  __TEXT.__unwind_info: 0x29e0
-   __TEXT.__eh_frame: 0x40
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x26f8
-+  __DATA_CONST.__const: 0x2720
-   __DATA_CONST.__objc_classlist: 0x500
-   __DATA_CONST.__objc_catlist: 0xe0
-   __DATA_CONST.__objc_protolist: 0x1c0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x58c8
-+  __DATA_CONST.__objc_selrefs: 0x5910
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x410
-   __DATA_CONST.__objc_arraydata: 0x18e0
--  __DATA_CONST.__got: 0xf90
--  __AUTH_CONST.__const: 0x10c0
--  __AUTH_CONST.__cfstring: 0x7f20
--  __AUTH_CONST.__objc_const: 0x1ef80
-+  __DATA_CONST.__got: 0xfb8
-+  __AUTH_CONST.__const: 0x1100
-+  __AUTH_CONST.__cfstring: 0x7fc0
-+  __AUTH_CONST.__objc_const: 0x1efb0
-   __AUTH_CONST.__objc_dictobj: 0xcf8
-   __AUTH_CONST.__objc_intobj: 0xdb0
-   __AUTH_CONST.__objc_doubleobj: 0x2b0
-   __AUTH_CONST.__objc_arrayobj: 0xa8
-   __AUTH_CONST.__objc_floatobj: 0x10
--  __AUTH_CONST.__auth_got: 0x1090
-+  __AUTH_CONST.__auth_got: 0x10c0
-   __AUTH.__objc_data: 0x2410
-   __AUTH.__data: 0x1a0
--  __DATA.__objc_ivar: 0xbdc
-+  __DATA.__objc_ivar: 0xbe0
-   __DATA.__data: 0x17a8
--  __DATA.__bss: 0x8c0
-+  __DATA.__bss: 0x900
-   __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0xdc0
-   __DATA_DIRTY.__bss: 0xe0
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4136
--  Symbols:   9640
+-  Symbols:   7395
 -  CStrings:  1489
 +  Functions: 4155
-+  Symbols:   9678
++  Symbols:   7425
 +  CStrings:  1504
- 
 Symbols:
 + -[PUIPosterSnapshotHostConfigurationDescriptor abortsIfBacklightNotFull]
 + -[PUIPosterSnapshotHostConfigurationDescriptor copyWithAbortsIfBacklightNotFull:]
@@ -116,14 +69,6 @@ Symbols:
 + _objc_begin_catch
 + _objc_end_catch
 + _objc_exception_rethrow
-+ _objc_msgSend$abortsIfBacklightNotFull
-+ _objc_msgSend$acquireWithInvalidationHandler:
-+ _objc_msgSend$adjustedLuminance
-+ _objc_msgSend$bls_visualState
-+ _objc_msgSend$conformsToType:
-+ _objc_msgSend$currentProcess
-+ _objc_msgSend$pf_prewarmRuntimeAssertionForReason:target:invalidationHandler:
-+ _objc_msgSend$stringWithFileSystemRepresentation:length:
 + _symbolic _____yx_qd__Qo_ 7SwiftUI4ViewPAAE5sheet11isPresented9onDismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQO
 - -[PUIPosterSnapshotHostConfigurationDescriptor initWithHostWorkQueue:waitUntilReady:inProcessSnapshot:]
 CStrings:

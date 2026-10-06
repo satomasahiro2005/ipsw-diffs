@@ -2,36 +2,23 @@
 
 > `/System/Library/PrivateFrameworks/Moments.framework/Moments`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__cfstring` | `0x106e0` | `0x10920` | **`+0x240`** |
+| `__TEXT.__cstring` | `0xe22f` | `0xe38f` | **`+0x160`** |
+| `__TEXT.__text` | `0x75b34` | `0x75b4c` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
- 417.0.0.0.0
--  __TEXT.__text: 0x75b34
-+  __TEXT.__text: 0x75b4c
-   __TEXT.__objc_methlist: 0x682c
--  __TEXT.__cstring: 0xe22f
-+  __TEXT.__cstring: 0xe38f
-   __TEXT.__const: 0xfe8
-   __TEXT.__oslogstring: 0x55ce
-   __TEXT.__gcc_except_tab: 0x430
-
-   __DATA_CONST.__objc_arraydata: 0x470
-   __DATA_CONST.__got: 0x840
-   __AUTH_CONST.__const: 0x7e0
--  __AUTH_CONST.__cfstring: 0x106e0
-+  __AUTH_CONST.__cfstring: 0x10920
-   __AUTH_CONST.__objc_const: 0xaec0
-   __AUTH_CONST.__objc_arrayobj: 0xd8
-   __AUTH_CONST.__objc_intobj: 0x570
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2925
 +  Functions: 2924
-   Symbols:   7583
+
 -  CStrings:  2627
 +  CStrings:  2645
- 
 Symbols:
 + _swift_release_x27
 - _swift_release_x25

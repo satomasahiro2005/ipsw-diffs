@@ -2,23 +2,22 @@
 
 > `/System/Library/Extensions/AppleGameControllerPersonality.kext/AppleGameControllerPersonality_development`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x2820` | `0x28b0` | **`+0x90`** |
+
+### Same-size Content Changes
 
 - `__DATA.__data`
+- `__DATA_CONST.__const`
 - `__DATA_CONST.__mod_init_func`
 - `__DATA_CONST.__mod_term_func`
-- `__DATA_CONST.__const`
 
-```diff
+### Other Changes
 
- 14.0.24.0.0
-   __TEXT.__cstring: 0x2dc
-   __TEXT.__os_log: 0x3a1
--  __TEXT_EXEC.__text: 0x2820
-+  __TEXT_EXEC.__text: 0x28b0
-   __TEXT_EXEC.__auth_stubs: 0x150
-   __DATA.__data: 0xc8
-   __DATA.__common: 0xb0
+```text
 Functions:
 ~ __ZN32AppleGCHIDProviderPropertyMerger9MetaClassC1Ev : 72 -> 76
 ~ __ZN32AppleGCHIDProviderPropertyMergerC2EPK11OSMetaClass : 52 -> 56

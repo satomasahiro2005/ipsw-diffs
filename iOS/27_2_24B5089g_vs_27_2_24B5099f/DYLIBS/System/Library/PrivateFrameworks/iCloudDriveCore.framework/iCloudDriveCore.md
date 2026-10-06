@@ -2,69 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/iCloudDriveCore.framework/iCloudDriveCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x845e9` | `0x849ab` | **`+0x3c2`** |
+| `__DATA_CONST.__const` | `0xa150` | `0xa1f8` | **`+0xa8`** |
+| `__AUTH_CONST.__cfstring` | `0x23b00` | `0x23b20` | **`+0x20`** |
+| `__AUTH_CONST.__objc_const` | `0x42388` | `0x423a8` | **`+0x20`** |
+| `__TEXT.__text` | `0x30a0e8` | `0x30a0cc` | **`-0x1c`** |
+| `__TEXT.__objc_methlist` | `0x1c21c` | `0x1c204` | **`-0x18`** |
+| `__TEXT.__oslogstring` | `0x3ee91` | `0x3ee7b` | **`-0x16`** |
+| `__DATA_CONST.__objc_selrefs` | `0xf318` | `0xf310` | **`-0x8`** |
+| `__DATA.__objc_ivar` | `0x2050` | `0x2054` | **`+0x4`** |
+| `__TEXT.__gcc_except_tab` | `0x17ad8` | `0x17adc` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -5168.40.149.0.1
--  __TEXT.__text: 0x302560
--  __TEXT.__objc_methlist: 0x1c21c
 +5168.40.162.0.0
-+  __TEXT.__text: 0x30255c
-+  __TEXT.__objc_methlist: 0x1c204
-   __TEXT.__const: 0x4f0
--  __TEXT.__cstring: 0x845e9
--  __TEXT.__oslogstring: 0x3ee91
--  __TEXT.__gcc_except_tab: 0x17ad8
-+  __TEXT.__cstring: 0x849ab
-+  __TEXT.__oslogstring: 0x3ee7b
-+  __TEXT.__gcc_except_tab: 0x17adc
-   __TEXT.__ustring: 0x36
--  __TEXT.__unwind_info: 0xd568
-+  __TEXT.__unwind_info: 0xd570
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xa150
-+  __DATA_CONST.__const: 0xa1f8
-   __DATA_CONST.__objc_classlist: 0xad0
-   __DATA_CONST.__objc_catlist: 0xd8
-   __DATA_CONST.__objc_protolist: 0x2d0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xf318
-+  __DATA_CONST.__objc_selrefs: 0xf310
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x968
-   __DATA_CONST.__objc_arraydata: 0xeb8
-   __DATA_CONST.__got: 0x17b8
-   __AUTH_CONST.__const: 0x2d28
--  __AUTH_CONST.__cfstring: 0x23b00
--  __AUTH_CONST.__objc_const: 0x42388
-+  __AUTH_CONST.__cfstring: 0x23b20
-+  __AUTH_CONST.__objc_const: 0x423a8
-   __AUTH_CONST.__objc_intobj: 0xc18
-   __AUTH_CONST.__objc_arrayobj: 0x2b8
-   __AUTH_CONST.__objc_dictobj: 0xf0
 
-   __AUTH_CONST.__auth_got: 0xda0
-   __AUTH.__objc_data: 0x2698
-   __AUTH.__data: 0x18
--  __DATA.__objc_ivar: 0x2050
-+  __DATA.__objc_ivar: 0x2054
-   __DATA.__data: 0x2ab0
-   __DATA_DIRTY.__objc_data: 0x4588
-   __DATA_DIRTY.__data: 0xd0
-
-   - /usr/lib/libprequelite.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 14323
 -  Symbols:   18399
 -  CStrings:  12261
 +  Functions: 14324
 +  Symbols:   18404
 +  CStrings:  12267
- 
 Symbols:
 + -[BRCFetchRecordSubResourcesHandler saveChangedRecords:deletedRecordIDs:deletedShareRecordIDs:clientChangeToken:serverChangeToken:caughtUp:pendingChanges:shareIDsFromDeltaSync:]
 + -[BRCFetchRecordSubResourcesOperation addRecord:fromDeltaSync:]

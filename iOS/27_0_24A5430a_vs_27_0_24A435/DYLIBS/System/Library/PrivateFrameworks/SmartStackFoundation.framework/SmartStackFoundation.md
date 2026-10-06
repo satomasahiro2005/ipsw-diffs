@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/SmartStackFoundation.framework/SmartStackFoundation`
 
-```diff
+### Section Size Changes
 
- 337.0.0.0.0
--  __TEXT.__text: 0x1c144
-+  __TEXT.__text: 0x1c14c
-   __TEXT.__objc_methlist: 0x68
-   __TEXT.__const: 0x1228
-   __TEXT.__cstring: 0x5a1
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c144` | `0x1c14c` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2aaa3b3d0 -> sub_2ab8043d0 : 732 -> 736
-~ sub_2aaa3cc0c -> sub_2ab805c10 : 3152 -> 3156
+~ sub_2aa9273d0 -> sub_2ab6ee3d0 : 732 -> 736
+~ sub_2aa928c0c -> sub_2ab6efc10 : 3152 -> 3156
 ```

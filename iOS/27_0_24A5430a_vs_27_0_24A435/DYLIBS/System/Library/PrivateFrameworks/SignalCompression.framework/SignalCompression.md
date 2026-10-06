@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SignalCompression.framework/SignalCompression`
 
-```diff
+### Section Size Changes
 
- 32.0.0.0.0
--  __TEXT.__text: 0xf230
-+  __TEXT.__text: 0xf26c
-   __TEXT.__objc_methlist: 0x5c
-   __TEXT.__const: 0x1c70
-   __TEXT.__gcc_except_tab: 0x22c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf230` | `0xf26c` | **`+0x3c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__16vectorIiNS_9allocatorIiEEE6resizeEm : 284 -> 288
 ~ __ZN3gcl6motion11EncoderImpl11encodeFrameEPKviNS0_10FormatTypeENS0_9FrameTypeEPhmRmRKNS0_7Encoder18EncodingParametersE : 1000 -> 1004

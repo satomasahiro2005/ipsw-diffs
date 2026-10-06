@@ -2,65 +2,30 @@
 
 > `/System/Library/Frameworks/CoreTelephony.framework/Support/libCommCenterBase.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd2284` | `0xd2180` | **`-0x104`** |
+| `__AUTH_CONST.__const` | `0x143c0` | `0x14478` | **`+0xb8`** |
+| `__TEXT.__cstring` | `0x149aa` | `0x14a0a` | **`+0x60`** |
+| `__TEXT.__const` | `0xd290` | `0xd2d0` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x7658` | `0x7680` | **`+0x28`** |
+| `__TEXT.__gcc_except_tab` | `0x13afc` | `0x13b08` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xd2284
-+  __TEXT.__text: 0xd2180
-   __TEXT.__init_offsets: 0x20
-   __TEXT.__objc_methlist: 0x110
--  __TEXT.__const: 0xd290
--  __TEXT.__cstring: 0x149aa
--  __TEXT.__gcc_except_tab: 0x13afc
-+  __TEXT.__const: 0xd2d0
-+  __TEXT.__cstring: 0x14a0a
-+  __TEXT.__gcc_except_tab: 0x13b08
-   __TEXT.__oslogstring: 0x25d1
-   __TEXT.__unwind_info: 0x4e40
-   __TEXT.__objc_stubs: 0x0
+-13473.1.0.0.0
++13478.3.1.3.0
 
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7658
-+  __DATA_CONST.__const: 0x7680
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-
-   __DATA_CONST.__objc_selrefs: 0x168
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__got: 0x218
--  __AUTH_CONST.__const: 0x143c0
-+  __AUTH_CONST.__const: 0x14478
-   __AUTH_CONST.__cfstring: 0x2c40
-   __AUTH_CONST.__objc_const: 0x200
-   __AUTH_CONST.__weak_auth_got: 0x18
-
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 5751
--  Symbols:   13014
--  CStrings:  4830
+-  Symbols:   9439
+-  CStrings:  4476
 +  Functions: 5759
-+  Symbols:   13030
-+  CStrings:  4833
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   9453
++  CStrings:  4479
 Symbols:
 + __ZN24TARandomizationInterfaceD0Ev
 + __ZN24TARandomizationInterfaceD1Ev
@@ -80,5 +45,4 @@ CStrings:
 + "pending-profile-release"
 + "primary-updating-to-fan-out-without-msg-ref"
 + "transport-activation-failed"
-
 ```

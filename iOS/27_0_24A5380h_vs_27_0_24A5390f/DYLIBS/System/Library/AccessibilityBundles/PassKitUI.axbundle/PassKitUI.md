@@ -2,72 +2,36 @@
 
 > `/System/Library/AccessibilityBundles/PassKitUI.axbundle/PassKitUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_intobj`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x16240` | `0x16a7c` | **`+0x83c`** |
+| `__AUTH_CONST.__objc_const` | `0x8478` | `0x8a18` | **`+0x5a0`** |
+| `__AUTH.__objc_data` | `0x230` | `0x550` | **`+0x320`** |
+| `__AUTH_CONST.__cfstring` | `0x5900` | `0x5b20` | **`+0x220`** |
+| `__TEXT.__objc_methlist` | `0x2d8c` | `0x2f4c` | **`+0x1c0`** |
+| `__TEXT.__cstring` | `0x4417` | `0x45bf` | **`+0x1a8`** |
+| `__DATA_CONST.__objc_classlist` | `0x740` | `0x790` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x8f0` | `0x938` | **`+0x48`** |
+| `__DATA_CONST.__objc_selrefs` | `0xbf0` | `0xc30` | **`+0x40`** |
+| `__DATA_CONST.__objc_superrefs` | `0x250` | `0x270` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x238` | `0x240` | **`+0x8`** |
+| `__TEXT.__const` | `0x28` | `0x30` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -3042.0.0.0.0
--  __TEXT.__text: 0x16240
--  __TEXT.__objc_methlist: 0x2d8c
--  __TEXT.__const: 0x28
 +3045.0.0.0.0
-+  __TEXT.__text: 0x16a7c
-+  __TEXT.__objc_methlist: 0x2f4c
-+  __TEXT.__const: 0x30
-   __TEXT.__gcc_except_tab: 0x258
--  __TEXT.__cstring: 0x4417
-+  __TEXT.__cstring: 0x45bf
-   __TEXT.__ustring: 0x4
--  __TEXT.__unwind_info: 0x8f0
-+  __TEXT.__unwind_info: 0x938
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x640
--  __DATA_CONST.__objc_classlist: 0x740
-+  __DATA_CONST.__objc_classlist: 0x790
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xbf0
-+  __DATA_CONST.__objc_selrefs: 0xc30
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x250
--  __DATA_CONST.__got: 0x238
-+  __DATA_CONST.__objc_superrefs: 0x270
-+  __DATA_CONST.__got: 0x240
-   __AUTH_CONST.__const: 0x320
--  __AUTH_CONST.__cfstring: 0x5900
--  __AUTH_CONST.__objc_const: 0x8478
-+  __AUTH_CONST.__cfstring: 0x5b20
-+  __AUTH_CONST.__objc_const: 0x8a18
-   __AUTH_CONST.__objc_intobj: 0x18
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x230
-+  __AUTH.__objc_data: 0x550
-   __DATA.__objc_ivar: 0x10
-   __DATA.__data: 0xd8
-   __DATA.__bss: 0x11
 
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 817
--  Symbols:   2494
+-  Symbols:   2226
 -  CStrings:  762
 +  Functions: 845
-+  Symbols:   2579
++  Symbols:   2306
 +  CStrings:  779
- 
 Symbols:
 + +[PKBackFieldTableCellAccessibility _accessibilityPerformValidations:]
 + +[PKBackFieldTableCellAccessibility(SafeCategory) safeCategoryBaseClass]
@@ -167,11 +131,6 @@ Symbols:
 + __OBJC_METACLASS_RO_$___PKImageCellAccessibility_super
 + __OBJC_METACLASS_RO_$___PKTextureButtonCollectionViewCellAccessibility_super
 + __OBJC_METACLASS_RO_$___PKUITextFieldAccessibility_super
-+ _objc_msgSend$_accessibilityColorDescription
-+ _objc_msgSend$backgroundColor
-+ _objc_msgSend$bezierPathWithArcCenter:radius:startAngle:endAngle:clockwise:
-+ _objc_msgSend$numberWithBool:
-+ _objc_msgSend$numberWithUnsignedInteger:
 - GCC_except_table119
 - GCC_except_table262
 - GCC_except_table294

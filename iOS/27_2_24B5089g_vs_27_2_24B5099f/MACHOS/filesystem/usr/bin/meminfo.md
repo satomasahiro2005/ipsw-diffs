@@ -2,27 +2,24 @@
 
 > `/usr/bin/meminfo`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x138f0` | `0x138f4` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__const`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 1071.40.9.0.0
--  __TEXT.__text: 0x13598
-+  __TEXT.__text: 0x1359c
-   __TEXT.__auth_stubs: 0xb10
-   __TEXT.__objc_stubs: 0x100
-   __TEXT.__const: 0x9b4
+```text
 Functions:
-~ sub_100009e3c : 108 -> 112
+~ sub_10000a084 : 108 -> 112
 ```

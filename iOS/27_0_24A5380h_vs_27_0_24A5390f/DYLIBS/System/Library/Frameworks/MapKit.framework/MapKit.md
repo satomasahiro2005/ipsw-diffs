@@ -2,108 +2,36 @@
 
 > `/System/Library/Frameworks/MapKit.framework/MapKit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_floatobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x28ebbc` | `0x28fa34` | **`+0xe78`** |
+| `__AUTH_CONST.__objc_const` | `0x45c38` | `0x45d08` | **`+0xd0`** |
+| `__TEXT.__objc_methlist` | `0x26acc` | `0x26b54` | **`+0x88`** |
+| `__AUTH_CONST.__cfstring` | `0x1bb00` | `0x1bb80` | **`+0x80`** |
+| `__DATA_CONST.__objc_selrefs` | `0x14a80` | `0x14af0` | **`+0x70`** |
+| `__TEXT.__cstring` | `0x17a8c` | `0x17aeb` | **`+0x5f`** |
+| `__TEXT.__unwind_info` | `0xa7a8` | `0xa7d0` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x6858` | `0x6878` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x7c80` | `0x7c60` | **`-0x20`** |
+| `__DATA.__objc_ivar` | `0x3210` | `0x3228` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x2080` | `0x2088` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x2488` | `0x2490` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -2552.30.6.12.2
--  __TEXT.__text: 0x28ebbc
--  __TEXT.__objc_methlist: 0x26acc
 +2552.30.6.12.5
-+  __TEXT.__text: 0x28fa34
-+  __TEXT.__objc_methlist: 0x26b54
-   __TEXT.__const: 0x6910
-   __TEXT.__dlopen_cstrs: 0xbc
--  __TEXT.__cstring: 0x17a8c
-+  __TEXT.__cstring: 0x17aeb
-   __TEXT.__swift5_typeref: 0x15f4
-   __TEXT.__swift5_reflstr: 0x1460
-   __TEXT.__swift5_assocty: 0x1e8
 
-   __TEXT.__swift_as_cont: 0x1cc
-   __TEXT.__gcc_except_tab: 0x61bc
-   __TEXT.__ustring: 0x19c
--  __TEXT.__unwind_info: 0xa7a8
-+  __TEXT.__unwind_info: 0xa7d0
-   __TEXT.__eh_frame: 0x241c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7c80
-+  __DATA_CONST.__const: 0x7c60
-   __DATA_CONST.__objc_classlist: 0x11e8
-   __DATA_CONST.__objc_catlist: 0x1f8
-   __DATA_CONST.__objc_protolist: 0x660
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x14a80
-+  __DATA_CONST.__objc_selrefs: 0x14af0
-   __DATA_CONST.__objc_protorefs: 0xe8
-   __DATA_CONST.__objc_superrefs: 0xd98
-   __DATA_CONST.__objc_arraydata: 0x6b0
--  __DATA_CONST.__got: 0x2488
--  __AUTH_CONST.__const: 0x6858
--  __AUTH_CONST.__cfstring: 0x1bb00
--  __AUTH_CONST.__objc_const: 0x45c38
-+  __DATA_CONST.__got: 0x2490
-+  __AUTH_CONST.__const: 0x6878
-+  __AUTH_CONST.__cfstring: 0x1bb80
-+  __AUTH_CONST.__objc_const: 0x45d08
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_doubleobj: 0x220
-   __AUTH_CONST.__objc_intobj: 0xf18
-   __AUTH_CONST.__objc_dictobj: 0x1b8
-   __AUTH_CONST.__objc_arrayobj: 0x480
-   __AUTH_CONST.__objc_floatobj: 0x70
--  __AUTH_CONST.__auth_got: 0x2080
-+  __AUTH_CONST.__auth_got: 0x2088
-   __AUTH.__objc_data: 0x87c0
-   __AUTH.__data: 0x2d48
--  __DATA.__objc_ivar: 0x3210
-+  __DATA.__objc_ivar: 0x3228
-   __DATA.__data: 0x5600
-   __DATA.__bss: 0x4718
-   __DATA.__common: 0x70
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15039
--  Symbols:   33488
+-  Symbols:   25273
 -  CStrings:  4598
 +  Functions: 15053
-+  Symbols:   33518
++  Symbols:   25294
 +  CStrings:  4602
- 
 Symbols:
 + +[MKMapItem(PunchInHintsSPI) _punchInHintsURLWithAppID:query:originalQuery:results:]
 + +[MKMapItem(PunchInHintsSPI) _punchInHintsURLWithAppID:query:originalQuery:results:tappedResult:]
@@ -495,15 +423,6 @@ Symbols:
 + _OBJC_IVAR_$_MKLookAroundView._trailingBarRegion
 + _OBJC_IVAR_$_MKLookAroundView._trailingBarRegionInset
 + __mkCompareMapPointX
-+ _objc_msgSend$_layoutRegionForBarOnDirectionalEdge:extent:
-+ _objc_msgSend$_punchInHintsURLWithAppID:query:originalQuery:results:tappedResult:
-+ _objc_msgSend$_punchInResultHintForMapItem:
-+ _objc_msgSend$_sceneWillEnterForeground
-+ _objc_msgSend$_updateCompassTrailingAnchoring
-+ _objc_msgSend$directionalEdgeInsetsForLayoutRegion:
-+ _objc_msgSend$initWithMUID:name:formattedAddress:latitude:longitude:placeType:
-+ _objc_msgSend$punchInWithAppID:query:originalQuery:resultHints:tappedResultHint:
-+ _objc_msgSend$setSectionInsetReference:
 + _qsort
 - GCC_except_table10399
 - GCC_except_table10464

@@ -2,57 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/MediaControl.framework/MediaControl`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_selrefs`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__oslogstring` | `0x185e` | `0x196e` | **`+0x110`** |
+| `__TEXT.__text` | `0xba8bc` | `0xba804` | **`-0xb8`** |
+| `__TEXT.__const` | `0x17650` | `0x17680` | **`+0x30`** |
+
+### Other Changes
 
 ```diff
 
 -4026.110.75.1.0
--  __TEXT.__text: 0xba8bc
 +4026.100.79.0.0
-+  __TEXT.__text: 0xba804
-   __TEXT.__objc_methlist: 0x84
--  __TEXT.__const: 0x17650
-+  __TEXT.__const: 0x17680
-   __TEXT.__swift5_typeref: 0x2933
-   __TEXT.__swift5_capture: 0x2054
--  __TEXT.__oslogstring: 0x185e
-+  __TEXT.__oslogstring: 0x196e
-   __TEXT.__constg_swiftt: 0x3f90
-   __TEXT.__swift5_reflstr: 0x16f2
-   __TEXT.__swift5_fieldmd: 0x3de0
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8595
 +  Functions: 8600
-   Symbols:   2338
+
 -  CStrings:  290
 +  CStrings:  292
- 
 CStrings:
 + "[%{public}s] updatePendingItems - value: %{public}s"
 + "[%{public}s] updateSnapshot - value: %{public}s"

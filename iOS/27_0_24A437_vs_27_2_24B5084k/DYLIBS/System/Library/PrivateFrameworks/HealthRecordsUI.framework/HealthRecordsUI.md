@@ -2,147 +2,74 @@
 
 > `/System/Library/PrivateFrameworks/HealthRecordsUI.framework/HealthRecordsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3a88b4` | `0x3ff4bc` | **`+0x56c08`** |
+| `__TEXT.__eh_frame` | `0xf848` | `0x123b8` | **`+0x2b70`** |
+| `__TEXT.__const` | `0x19974` | `0x1b764` | **`+0x1df0`** |
+| `__DATA.__bss` | `0x1e468` | `0x1fec8` | **`+0x1a60`** |
+| `__AUTH_CONST.__objc_const` | `0x1de58` | `0x1f358` | **`+0x1500`** |
+| `__TEXT.__unwind_info` | `0xceb0` | `0xe1c8` | **`+0x1318`** |
+| `__TEXT.__constg_swiftt` | `0x10428` | `0x11718` | **`+0x12f0`** |
+| `__TEXT.__cstring` | `0x10a77` | `0x11bc1` | **`+0x114a`** |
+| `__AUTH.__objc_data` | `0xd810` | `0xe948` | **`+0x1138`** |
+| `__AUTH.__data` | `0x9d68` | `0xae40` | **`+0x10d8`** |
+| `__AUTH_CONST.__const` | `0x148a0` | `0x15940` | **`+0x10a0`** |
+| `__DATA.__data` | `0x7cb0` | `0x8c38` | **`+0xf88`** |
+| `__TEXT.__swift5_typeref` | `0x7d7e` | `0x882e` | **`+0xab0`** |
+| `__TEXT.__swift5_fieldmd` | `0x8e20` | `0x97ac` | **`+0x98c`** |
+| `__TEXT.__swift5_reflstr` | `0x8e37` | `0x961f` | **`+0x7e8`** |
+| `__AUTH_CONST.__auth_got` | `0x3228` | `0x3990` | **`+0x768`** |
+| `__DATA_CONST.__got` | `0x1f10` | `0x2460` | **`+0x550`** |
+| `__TEXT.__objc_methlist` | `0x91dc` | `0x94a4` | **`+0x2c8`** |
+| `__TEXT.__swift5_capture` | `0x45cc` | `0x4890` | **`+0x2c4`** |
+| `__TEXT.__swift_as_cont` | `0x874` | `0xa40` | **`+0x1cc`** |
+| `__TEXT.__swift5_assocty` | `0xf10` | `0x10c0` | **`+0x1b0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5e58` | `0x5fe0` | **`+0x188`** |
+| `__TEXT.__swift5_proto` | `0x12f4` | `0x1418` | **`+0x124`** |
+| `__DATA_DIRTY.__data` | `0x4c58` | `0x4d38` | **`+0xe0`** |
+| `__TEXT.__swift5_types` | `0xa14` | `0xad8` | **`+0xc4`** |
+| `__TEXT.__swift_as_ret` | `0x364` | `0x420` | **`+0xbc`** |
+| `__DATA_CONST.__objc_classlist` | `0xbd0` | `0xc78` | **`+0xa8`** |
+| `__TEXT.__swift_as_entry` | `0x33c` | `0x3e4` | **`+0xa8`** |
+| `__DATA_DIRTY.__bss` | `0x2e40` | `0x2dc0` | **`-0x80`** |
+| `__DATA_CONST.__const` | `0x19c8` | `0x1a30` | **`+0x68`** |
+| `__TEXT.__oslogstring` | `0x7995` | `0x79f9` | **`+0x64`** |
+| `__AUTH_CONST.__cfstring` | `0x24c0` | `0x2500` | **`+0x40`** |
+| `__DATA.__common` | `0x5c8` | `0x608` | **`+0x40`** |
+| `__DATA_DIRTY.__objc_data` | `0x30a0` | `0x30d8` | **`+0x38`** |
+| `__TEXT.__swift5_builtin` | `0x5b4` | `0x5c8` | **`+0x14`** |
+| `__DATA.__objc_stublist` | `0x110` | `0x120` | **`+0x10`** |
+| `__DATA_CONST.__objc_catlist` | `0x130` | `0x138` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x154` | `0x15c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -7027.0.72.2.7
--  __TEXT.__text: 0x38eb40
--  __TEXT.__objc_methlist: 0x91dc
--  __TEXT.__const: 0x19974
 +7027.1.36.2.7
-+  __TEXT.__text: 0x3e2788
-+  __TEXT.__objc_methlist: 0x94a4
-+  __TEXT.__const: 0x1b764
-   __TEXT.__gcc_except_tab: 0x4a8
--  __TEXT.__cstring: 0x10a77
--  __TEXT.__oslogstring: 0x7995
--  __TEXT.__constg_swiftt: 0x10428
--  __TEXT.__swift5_typeref: 0x7d7e
--  __TEXT.__swift5_reflstr: 0x8e37
--  __TEXT.__swift5_fieldmd: 0x8e20
--  __TEXT.__swift5_builtin: 0x5b4
--  __TEXT.__swift5_assocty: 0xf10
--  __TEXT.__swift5_capture: 0x45cc
--  __TEXT.__swift5_proto: 0x12f4
--  __TEXT.__swift5_types: 0xa14
--  __TEXT.__swift_as_entry: 0x33c
--  __TEXT.__swift_as_ret: 0x364
--  __TEXT.__swift_as_cont: 0x874
-+  __TEXT.__cstring: 0x11bc1
-+  __TEXT.__oslogstring: 0x79f9
-+  __TEXT.__swift5_typeref: 0x882e
-+  __TEXT.__swift5_capture: 0x4890
-+  __TEXT.__constg_swiftt: 0x11718
-+  __TEXT.__swift5_reflstr: 0x961f
-+  __TEXT.__swift5_fieldmd: 0x97ac
-+  __TEXT.__swift5_builtin: 0x5c8
-+  __TEXT.__swift5_assocty: 0x10c0
-+  __TEXT.__swift5_proto: 0x1418
-+  __TEXT.__swift5_types: 0xad8
-   __TEXT.__swift5_mpenum: 0x98
--  __TEXT.__swift5_protos: 0x154
--  __TEXT.__unwind_info: 0x10028
--  __TEXT.__eh_frame: 0xf870
-+  __TEXT.__swift_as_entry: 0x3e4
-+  __TEXT.__swift_as_ret: 0x420
-+  __TEXT.__swift_as_cont: 0xa40
-+  __TEXT.__swift5_protos: 0x15c
-+  __TEXT.__unwind_info: 0x117c8
-+  __TEXT.__eh_frame: 0x123e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x19c8
--  __DATA_CONST.__objc_classlist: 0xbd0
--  __DATA_CONST.__objc_catlist: 0x130
-+  __DATA_CONST.__const: 0x1a30
-+  __DATA_CONST.__objc_classlist: 0xc78
-+  __DATA_CONST.__objc_catlist: 0x138
-   __DATA_CONST.__objc_catlist2: 0x18
-   __DATA_CONST.__objc_protolist: 0x300
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5e58
-+  __DATA_CONST.__objc_selrefs: 0x5fe0
-   __DATA_CONST.__objc_protorefs: 0x178
-   __DATA_CONST.__objc_superrefs: 0x1f8
-   __DATA_CONST.__objc_arraydata: 0xc0
--  __DATA_CONST.__got: 0x1f10
--  __AUTH_CONST.__const: 0x148a0
--  __AUTH_CONST.__cfstring: 0x24c0
--  __AUTH_CONST.__objc_const: 0x1de58
-+  __DATA_CONST.__got: 0x2460
-+  __AUTH_CONST.__const: 0x15940
-+  __AUTH_CONST.__cfstring: 0x2500
-+  __AUTH_CONST.__objc_const: 0x1f358
-   __AUTH_CONST.__objc_arrayobj: 0x90
-   __AUTH_CONST.__objc_intobj: 0x120
--  __AUTH_CONST.__auth_got: 0x3228
--  __AUTH.__objc_data: 0xd810
--  __AUTH.__data: 0x9d68
-+  __AUTH_CONST.__auth_got: 0x3990
-+  __AUTH.__objc_data: 0xe948
-+  __AUTH.__data: 0xae40
-   __DATA.__objc_ivar: 0x5dc
--  __DATA.__data: 0x7cb0
--  __DATA.__objc_stublist: 0x110
--  __DATA.__common: 0x5c8
--  __DATA_DIRTY.__objc_data: 0x30a0
--  __DATA_DIRTY.__data: 0x4c58
--  __DATA_DIRTY.__bss: 0x2e40
-+  __DATA.__data: 0x8c38
-+  __DATA.__objc_stublist: 0x120
-+  __DATA.__common: 0x608
-+  __DATA_DIRTY.__objc_data: 0x30d8
-+  __DATA_DIRTY.__data: 0x4d38
-+  __DATA_DIRTY.__bss: 0x2dc0
-   __DATA_DIRTY.__common: 0x1c0
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices
 
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/HealthAppHealthDaemonSupport.framework/HealthAppHealthDaemonSupport
-   - /System/Library/PrivateFrameworks/HealthAppServices.framework/HealthAppServices
 +  - /System/Library/PrivateFrameworks/HealthContent.framework/HealthContent
 +  - /System/Library/PrivateFrameworks/HealthDomains.framework/HealthDomains
 +  - /System/Library/PrivateFrameworks/HealthDomainsUI.framework/HealthDomainsUI
-   - /System/Library/PrivateFrameworks/HealthExperience.framework/HealthExperience
-   - /System/Library/PrivateFrameworks/HealthExperienceUI.framework/HealthExperienceUI
-   - /System/Library/PrivateFrameworks/HealthFoundationUI.framework/HealthFoundationUI
+
 +  - /System/Library/PrivateFrameworks/HealthHistory.framework/HealthHistory
-   - /System/Library/PrivateFrameworks/HealthKitAdditions.framework/HealthKitAdditions
-   - /System/Library/PrivateFrameworks/HealthOntologyKit.framework/HealthOntologyKit
-   - /System/Library/PrivateFrameworks/HealthPlatform.framework/HealthPlatform
 
-   - /System/Library/PrivateFrameworks/HealthPluginHost.framework/HealthPluginHost
-   - /System/Library/PrivateFrameworks/HealthRecordServices.framework/HealthRecordServices
-   - /System/Library/PrivateFrameworks/HealthRecordsWalletSupport.framework/HealthRecordsWalletSupport
 +  - /System/Library/PrivateFrameworks/HealthReport.framework/HealthReport
-   - /System/Library/PrivateFrameworks/HealthToolbox.framework/HealthToolbox
-   - /System/Library/PrivateFrameworks/HealthUI.framework/HealthUI
+
 +  - /System/Library/PrivateFrameworks/HealthUtilities.framework/HealthUtilities
-   - /System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit
-   - /System/Library/PrivateFrameworks/PrintKitUI.framework/PrintKitUI
-   - /System/Library/PrivateFrameworks/ShareSheet.framework/ShareSheet
 
-   - /usr/lib/swift/libswiftModelIO.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
 +  - /usr/lib/swift/libswiftObservation.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
-   - /usr/lib/swift/libswiftSpatial.dylib
-   - /usr/lib/swift/libswiftSynchronization.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 18458
--  Symbols:   10550
+-  Symbols:   8170
 -  CStrings:  2079
 +  Functions: 19922
-+  Symbols:   10914
++  Symbols:   8488
 +  CStrings:  2182
- 
 Symbols:
 + -[WDClinicalOnboardingOAuthNavigationViewController _createHealthReportHeaderView]
 + GCC_except_table59
@@ -355,65 +282,6 @@ Symbols:
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA5GroupVyAA19_ConditionalContentVyAA0k11UnavailableC0VyAA5LabelVyAA4TextVAA5ImageVGASSgAA05EmptyC0VGAcAE06scrollK10BackgroundyQrAA10VisibilityOFQOyAcAE9listStyleyQrqd__AA04ListU0Rd__lFQOyAA0V0Vys5NeverOAA7ForEachVySay013HealthRecordsB016PanelDisplayDataVGSiAcAE0T12RowSeparator_5edgesQrA1__AA12VerticalEdgeO3SetVtFQOyAA08ModifiedK0VyA21_yA10_011LabPanelRowC0VAA21_TraitWritingModifierVyAA0V17RowInsetsTraitKeyVGGA25_yAA0v3RowR8TraitKeyVGG_Qo_GG_AA05PlainvU0VQo__Qo_GG_Qo_HO
 + _kCIContextUseSoftwareRenderer
 + _kHKInternalSettingsKeyCHRAllowManualEntry
-+ _objc_msgSend$LOINCCodeSystem
-+ _objc_msgSend$_createHealthReportHeaderView
-+ _objc_msgSend$_rowid
-+ _objc_msgSend$abatementDate
-+ _objc_msgSend$andSelectionWithSubselections:
-+ _objc_msgSend$animateAlongsideTransition:completion:
-+ _objc_msgSend$context
-+ _objc_msgSend$createCGImage:fromRect:
-+ _objc_msgSend$deleteObject:withCompletion:
-+ _objc_msgSend$enteredDate
-+ _objc_msgSend$features
-+ _objc_msgSend$firstAttributeForType:
-+ _objc_msgSend$fontDescriptorWithDesign:
-+ _objc_msgSend$fontDescriptorWithSymbolicTraits:
-+ _objc_msgSend$highValue
-+ _objc_msgSend$hk_isRewrittenHealthLinkQRCodeURL
-+ _objc_msgSend$hrui_presentAlertWhenSafe:
-+ _objc_msgSend$identifierWithNumber:
-+ _objc_msgSend$initWithClinicalAccount:
-+ _objc_msgSend$initWithCodings:quantity:rangeLow:rangeHigh:
-+ _objc_msgSend$initWithLongLong:
-+ _objc_msgSend$localDevice
-+ _objc_msgSend$longLongValue
-+ _objc_msgSend$lowValue
-+ _objc_msgSend$medicalDateFromComponents:originalTimeZoneString:form:error:
-+ _objc_msgSend$medicalHistoryAllergyRecordType
-+ _objc_msgSend$medicalHistoryHealthConcernRecordType
-+ _objc_msgSend$medicalHistoryHealthConcernRecordWithType:device:metadata:primaryConceptIdentifier:enteredDate:notes:asserter:abatementDate:onsetDate:clinicalStatus:severity:bodySiteConceptIdentifiers:verificationStatus:
-+ _objc_msgSend$medicalHistoryImmunizationRecordType
-+ _objc_msgSend$medicalHistoryProcedureRecordType
-+ _objc_msgSend$medicalHistoryQuantitativeLabResultRecordType
-+ _objc_msgSend$medicalHistoryQuantitativeLabResultRecordTypeForIdentifier:
-+ _objc_msgSend$medicalHistoryRecordType
-+ _objc_msgSend$medicalHistoryRecordTypes
-+ _objc_msgSend$mulberry
-+ _objc_msgSend$notes
-+ _objc_msgSend$performedAtLocation
-+ _objc_msgSend$performedDate
-+ _objc_msgSend$predicateForMedicalHistoryRecordsWithPrimaryConceptIdentifier:
-+ _objc_msgSend$predicateForUserDomainConceptsWithOCIs:
-+ _objc_msgSend$primaryConceptIdentifier
-+ _objc_msgSend$referenceRangeIdentifier
-+ _objc_msgSend$removeAccountStateChangeListener:
-+ _objc_msgSend$rootViewController
-+ _objc_msgSend$saveObject:withCompletion:
-+ _objc_msgSend$selectionForNodeWithIdentifier:
-+ _objc_msgSend$selectionForNodesWithAttribute:likeStringValue:
-+ _objc_msgSend$selectionForSubjectsWithRelationship:toObjectSelection:
-+ _objc_msgSend$setAllowedUnits:
-+ _objc_msgSend$setCountStyle:
-+ _objc_msgSend$setCustomHeaderView:
-+ _objc_msgSend$setCustomTitle:
-+ _objc_msgSend$setWithChartableQuantity:date:
-+ _objc_msgSend$stringContainsHTMLMarkup:
-+ _objc_msgSend$stringFromByteCount:
-+ _objc_msgSend$testDate
-+ _objc_msgSend$transitionCoordinator
-+ _objc_msgSend$userConcept
-+ _objc_msgSend$visibleViewController
 + _swift_getFunctionTypeMetadata1
 + _swift_taskGroup_addPending
 + _symbolic $s15HealthRecordsUI24CHRFlowAnalyticsDelegateP
@@ -597,19 +465,6 @@ Symbols:
 - ___swift_exist.box.addr_destructor.60Tm
 - _associated conformance 15HealthRecordsUI11ResultErrorOSHAASQ
 - _associated conformance 15HealthRecordsUI24LabsListViewDataProviderV13makePublisher7Combine03AnyJ0VySayAA017UserDomainConceptfG0VG_AJts5NeverOGyFAJ_AJtAJcfU1_9ItemStateL_OSHAASQ
-- _objc_msgSend$accountID
-- _objc_msgSend$accountIdentifiers
-- _objc_msgSend$animateWithDuration:animations:completion:
-- _objc_msgSend$elementWithUncachedProvider:
-- _objc_msgSend$fallbackDisplayString
-- _objc_msgSend$initWithDelegateQueue:
-- _objc_msgSend$medicalRecordCodings
-- _objc_msgSend$setAdditionalOverflowItems:
-- _objc_msgSend$shareHealthDataWithOptions:reason:completion:
-- _objc_msgSend$submitClinicalSharingOnboardingStepAnalytic:
-- _objc_msgSend$submitOnboardingAnalyticsForStepIdentifier:context:completion:
-- _objc_msgSend$textSystem
-- _objc_msgSend$userInterfaceIdiom
 - _symbolic SaySo30HKMedicalBaseUserDomainConceptCGSo06HKListcdE0CSg_____ySay_____G_____GIegggo_ 7Combine12AnyPublisherV 15HealthRecordsUI25UserDomainConceptViewDataV s5NeverO
 - _symbolic Say_____G 15HealthRecordsUI28RecordCategoryViewControllerC11ModeSegmentO
 - _symbolic Say_____GABIeggg_ 15HealthRecordsUI13UDCRecentItemC

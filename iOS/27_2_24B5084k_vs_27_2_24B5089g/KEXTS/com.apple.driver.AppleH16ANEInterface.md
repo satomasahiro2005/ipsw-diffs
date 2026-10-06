@@ -2,40 +2,30 @@
 
 > `com.apple.driver.AppleH16ANEInterface`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x159814` | `0x15b014` | **`+0x1800`** |
+| `__TEXT.__os_log` | `0x3d5f7` | `0x3dfe8` | **`+0x9f1`** |
+| `__TEXT.__cstring` | `0x11d47` | `0x11ddc` | **`+0x95`** |
+| `__DATA_CONST.__const` | `0x10020` | `0x10058` | **`+0x38`** |
+| `__TEXT_EXEC.__auth_stubs` | `0x1280` | `0x1290` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x940` | `0x948` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x140` | `0x148` | **`+0x8`** |
+| `__DATA.__data` | `0x54f0` | `0x54f4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -10.100.80.0.0
-+10.101.100.0.0
-+  __TEXT.__cstring: 0x11ddc
-+  __TEXT.__os_log: 0x3dfe8
-   __TEXT.__const: 0x1250
--  __TEXT.__cstring: 0x11d47
--  __TEXT.__os_log: 0x3d5f7
--  __TEXT_EXEC.__text: 0x152ba8
--  __TEXT_EXEC.__auth_stubs: 0x1280
--  __DATA.__data: 0x54f0
-+  __TEXT_EXEC.__text: 0x154344
-+  __TEXT_EXEC.__auth_stubs: 0x1290
-+  __DATA.__data: 0x54f4
-   __DATA.__common: 0x7e0
-   __DATA_CONST.__mod_init_func: 0x300
-   __DATA_CONST.__mod_term_func: 0x138
--  __DATA_CONST.__const: 0x10020
--  __DATA_CONST.__kalloc_type: 0x7040
-+  __DATA_CONST.__const: 0x10058
-   __DATA_CONST.__kalloc_var: 0x8c00
--  __DATA_CONST.__auth_got: 0x940
--  __DATA_CONST.__got: 0x140
-+  __DATA_CONST.__kalloc_type: 0x7040
-+  __DATA_CONST.__auth_got: 0x948
-+  __DATA_CONST.__got: 0x148
-   __DATA_CONST.__auth_ptr: 0x8
 -  Functions: 5085
++10.101.100.0.0
 +  Functions: 5091
-   Symbols:   0
+
 -  CStrings:  5411
 +  CStrings:  5447
- 
 CStrings:
 + "%s: %s: ANE Memory remap ack by mailbox offset: 0x%llx size: 0x%llx\n"
 + "%s: %s: ANE driver back-reference not set yet, reporting local max macho size 0x%llx\n"

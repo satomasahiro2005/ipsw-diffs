@@ -2,19 +2,13 @@
 
 > `/System/Library/SubFrameworks/ARKitCore.framework/deflicker-binary.metallib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__metallib` | `0x48e10` | `0x48ea0` | **`+0x90`** |
+| `__TEXT.__compute` | `0x2fc0` | `0x3040` | **`+0x80`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__descriptor`
-
-```diff
-
-   __TEXT.__reflection: 0x1680
--  __TEXT.__compute: 0x2ff0
-+  __TEXT.__compute: 0x3070
-   __TEXT.__descriptor: 0x1b0
--  __TEXT.__metallib: 0x48e10
-+  __TEXT.__metallib: 0x48ea0
-   Functions: 0
-   Symbols:   0
-   CStrings:  0
-```

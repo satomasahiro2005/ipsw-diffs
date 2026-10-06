@@ -2,50 +2,22 @@
 
 > `/usr/lib/libBasebandCommandDrivers.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17298` | `0x1720c` | **`-0x8c`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
 -1563.0.0.0.0
--  __TEXT.__text: 0x17298 sha256:67026fc7c98bf36708945532944e92152f124caf537e484566cf462a432d485c
--  __TEXT.__init_offsets: 0x4 sha256:0d8a405b08987b4cc7480eb29510425f780f589ddc50776e9e5df805294f1fba
 +1570.0.0.0.0
-+  __TEXT.__text: 0x1720c sha256:42819b86bbdc0531e1f0fd9f0a8eeee6103b076ac9a93ad805ff0ad5f0664222
-+  __TEXT.__init_offsets: 0x4 sha256:68a3a7045df9b97bd179b2627dea8d995340b5d2e0c4541fc10950c39f6736c0
-   __TEXT.__const: 0x2a60 sha256:22b40360db7e68b580d395ca0106fddf947184dbd11666ce9122abd4505eee5d
--  __TEXT.__gcc_except_tab: 0x1d9c sha256:36877c9dfa150c737ea09979327b0e90c34b4c5100c634d4bd4da8bc43abe952
--  __TEXT.__cstring: 0x2a82 sha256:25d692bfd6fb1fdcf185e53d6b7ac1abe2e8e1f67bace104fa149a086100cb27
-+  __TEXT.__gcc_except_tab: 0x1d9c sha256:2a048c4901580d04ac89ad67707b55daed5f66fc5000e0adc75344cf89ae556e
-+  __TEXT.__cstring: 0x2a82 sha256:00efd696189af671e2e4ca8e807e35c4f109d5d31f7298ed3f5553c349b4b551
-   __TEXT.__oslogstring: 0x383 sha256:71889b09ec496c75331566385802e7c3f8850bad829e553847b29698d3b2b070
--  __TEXT.__unwind_info: 0xd60 sha256:0d6a552b9f4e8e9b9fde5c71493242102aaec6d85bfb0f29ba4254d1c96d3f48
-+  __TEXT.__unwind_info: 0xd60 sha256:677e9df0b8c547a313c7d4e1311a8c43a407c462ca82fc0ea5b619c5cf67b3ca
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x1128 sha256:1dd6f9b00b373c4853378757c07534f4f0aa8fa10bfad688609913cc1854abdf
-+  __DATA_CONST.__const: 0x1128 sha256:2f2ca74f2bc4ed7e21e143ec22781ee29727a21eb4db17fc201cc3d6a296d448
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x10 sha256:db089a9946ee2f440f1454b6bd081bc906524b106b3b9bd5745c567d00425fed
-+  __DATA_CONST.__weak_got: 0x10 sha256:c9b00cf8e5fdc159d5e0657836ccec0cbd1eddc62a50f4b3c9f634c56153dbb7
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1e18 sha256:0806e3bf68e371a9d0289910ba468862537cbcdd0e1f2358f8ef23d2aeb44c32
--  __AUTH_CONST.__cfstring: 0x2360 sha256:c6ac144f8af09f1ac4fe9f05551362e94b848a56f812843db0ab75eb57b854d8
--  __AUTH_CONST.__weak_auth_got: 0x10 sha256:290149e422ec40b0273600157a594a1152f2acf9916597016a24319850a9d2db
-+  __AUTH_CONST.__const: 0x1e18 sha256:22dcb1757acb84b09e7cc33db7ec42e410a2ff997f9d377a86833da6c4b4a5d6
-+  __AUTH_CONST.__cfstring: 0x2360 sha256:f550f5cbf87476213b445aa32eb219efdf6a272a222168d59ab527aa9d6d2d93
-+  __AUTH_CONST.__weak_auth_got: 0x10 sha256:16d48afe2d513063a6e0119d2076e9337577d960dbdb68166dd7f58bdd236fd1
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__data: 0x28 sha256:fb9daa9e324a0b54977573fbcf0a83108f04b6bda75756eb330b0f454ca4a519
-+  __DATA.__data: 0x28 sha256:a92bf72d41b40b0b93d44eddafecebe93ffe037de834b8f74711b2878aa29f84
-   __DATA_DIRTY.__bss: 0x30 sha256:17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  UUID: D2A0CA17-289B-3051-A0F1-A234DFEF3EC9
-+  UUID: F23D3B3D-2D73-3146-867C-EF9DBDF13BD4
-   Functions: 546
-   Symbols:   2054
-   CStrings:  845
 Symbols:
 + __ZNSt12length_errorC1B9fqe220106EPKc
 + __ZNSt12out_of_rangeC1B9fqe220106EPKc
@@ -136,5 +108,4 @@ Symbols:
 CStrings:
 + "AppleBasebandManager-AppleBasebandServices_Manager-1570"
 - "AppleBasebandManager-AppleBasebandServices_Manager-1563"
-
 ```

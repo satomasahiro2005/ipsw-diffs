@@ -2,56 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/HomeKitMatter.framework/HomeKitMatter`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x184130` | `0x18404c` | **`-0xe4`** |
+| `__TEXT.__cstring` | `0x6fc3` | `0x7033` | **`+0x70`** |
+| `__AUTH_CONST.__const` | `0x1140` | `0x1160` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x4940` | `0x4960` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7158` | `0x7160` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0xadfc` | `0xae04` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1514.0.0.0.1
--  __TEXT.__text: 0x1803f0
--  __TEXT.__objc_methlist: 0xadfc
 +1516.0.0.0.0
-+  __TEXT.__text: 0x18030c
-+  __TEXT.__objc_methlist: 0xae04
-   __TEXT.__const: 0x2a8
-   __TEXT.__dlopen_cstrs: 0x58
-   __TEXT.__gcc_except_tab: 0x30a8
--  __TEXT.__cstring: 0x6fc3
-+  __TEXT.__cstring: 0x7033
-   __TEXT.__oslogstring: 0x502d8
-   __TEXT.__ustring: 0x68
--  __TEXT.__unwind_info: 0x3ce0
-+  __TEXT.__unwind_info: 0x3ce8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4940
-+  __DATA_CONST.__const: 0x4960
-   __DATA_CONST.__objc_classlist: 0x458
-   __DATA_CONST.__objc_catlist: 0x50
-   __DATA_CONST.__objc_protolist: 0x138
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7158
-+  __DATA_CONST.__objc_selrefs: 0x7160
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x310
-   __DATA_CONST.__objc_arraydata: 0x240
-   __DATA_CONST.__got: 0x9f8
--  __AUTH_CONST.__const: 0x1140
-+  __AUTH_CONST.__const: 0x1160
-   __AUTH_CONST.__cfstring: 0x6dc0
-   __AUTH_CONST.__objc_const: 0x10330
-   __AUTH_CONST.__objc_intobj: 0x1740
 
-   - /System/Library/PrivateFrameworks/UARPKit.framework/UARPKit
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 4506
--  Symbols:   10370
+-  Symbols:   7378
 -  CStrings:  5817
 +  Functions: 4508
-+  Symbols:   10374
++  Symbols:   7381
 +  CStrings:  5818
- 
 Symbols:
 + +[HMMTRMultiFabricDataStoreQuery v2FabricDataItemPreferenceComparator]
 + GCC_except_table2175
@@ -137,7 +111,6 @@ Symbols:
 + GCC_except_table4488
 + ___70+[HMMTRMultiFabricDataStoreQuery v2FabricDataItemPreferenceComparator]_block_invoke
 + ___block_descriptor_32_e111_q24?0"<HMMTRMultiFabricDataStoreQueryV2FabricDataItem>"8"<HMMTRMultiFabricDataStoreQueryV2FabricDataItem>"16l
-+ _objc_msgSend$v2FabricDataItemPreferenceComparator
 - GCC_except_table2171
 - GCC_except_table2203
 - GCC_except_table2211

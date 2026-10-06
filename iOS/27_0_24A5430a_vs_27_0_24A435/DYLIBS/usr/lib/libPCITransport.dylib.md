@@ -2,14 +2,15 @@
 
 > `/usr/lib/libPCITransport.dylib`
 
-```diff
+### Section Size Changes
 
- 1159.0.0.0.0
--  __TEXT.__text: 0x1b50c
-+  __TEXT.__text: 0x1b528
-   __TEXT.__gcc_except_tab: 0x1c90
-   __TEXT.__const: 0xe14
-   __TEXT.__cstring: 0x245a
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1b50c` | `0x1b528` | **`+0x1c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__13mapIPKcN3pci9transport6kernel7variantENS_4lessIS2_EENS_9allocatorINS_4pairIKS2_S6_EEEEEC2B9fqe220106ESt16initializer_listISC_ERKS8_ : 84 -> 88
 ~ __ZNSt3__13mapI21PCITransportInterfacePKcNS_4lessIS1_EENS_9allocatorINS_4pairIKS1_S3_EEEEEC2B9fqe220106ESt16initializer_listIS9_ERKS5_ : 84 -> 88

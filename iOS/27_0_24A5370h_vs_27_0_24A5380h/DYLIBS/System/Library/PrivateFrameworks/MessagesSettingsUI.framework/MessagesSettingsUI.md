@@ -2,111 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/MessagesSettingsUI.framework/MessagesSettingsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x33884` | `0x36018` | **`+0x2794`** |
+| `__AUTH_CONST.__objc_const` | `0x3170` | `0x33a8` | **`+0x238`** |
+| `__TEXT.__const` | `0x2554` | `0x26f4` | **`+0x1a0`** |
+| `__AUTH.__objc_data` | `0xaa0` | `0xbf0` | **`+0x150`** |
+| `__TEXT.__oslogstring` | `0x925` | `0xa65` | **`+0x140`** |
+| `__TEXT.__unwind_info` | `0xdf8` | `0xf00` | **`+0x108`** |
+| `__TEXT.__cstring` | `0x1fb0` | `0x20b0` | **`+0x100`** |
+| `__TEXT.__eh_frame` | `0xbc` | `0x18c` | **`+0xd0`** |
+| `__AUTH_CONST.__const` | `0xe38` | `0xef8` | **`+0xc0`** |
+| `__DATA.__bss` | `0x2380` | `0x2430` | **`+0xb0`** |
+| `__DATA.__data` | `0xcac` | `0xd4c` | **`+0xa0`** |
+| `__TEXT.__objc_methlist` | `0x163c` | `0x16cc` | **`+0x90`** |
+| `__TEXT.__swift5_reflstr` | `0x906` | `0x986` | **`+0x80`** |
+| `__TEXT.__swift5_typeref` | `0x2e2c` | `0x2e8c` | **`+0x60`** |
+| `__AUTH.__data` | `0x1678` | `0x16d0` | **`+0x58`** |
+| `__TEXT.__constg_swiftt` | `0x11c0` | `0x1218` | **`+0x58`** |
+| `__TEXT.__swift5_fieldmd` | `0x6d0` | `0x71c` | **`+0x4c`** |
+| `__TEXT.__gcc_except_tab` | `0x98c` | `0x9d4` | **`+0x48`** |
+| `__TEXT.__swift5_capture` | `0x164` | `0x198` | **`+0x34`** |
+| `__DATA_CONST.__objc_selrefs` | `0x14e8` | `0x1518` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x6c0` | `0x6e8` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x1540` | `0x1560` | **`+0x20`** |
+| `__DATA.__common` | `0x40` | `0x58` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x28` | `0x3c` | **`+0x14`** |
+| `__AUTH_CONST.__auth_got` | `0xae8` | `0xaf8` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x178` | `0x188` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x20` | `0x30` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `—` | `0x10` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0xb0` | `0xb8` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0xf0` | `0xf4` | **`+0x4`** |
+| `__TEXT.__swift5_proto` | `0x108` | `0x10c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x33884
-+  __TEXT.__text: 0x36018
-   __TEXT.__delay_stubs: 0x40
-   __TEXT.__delay_helper: 0x63c
--  __TEXT.__objc_methlist: 0x163c
--  __TEXT.__const: 0x2554
--  __TEXT.__cstring: 0x1fb0
--  __TEXT.__gcc_except_tab: 0x98c
--  __TEXT.__oslogstring: 0x925
-+  __TEXT.__objc_methlist: 0x16cc
-+  __TEXT.__const: 0x26f4
-+  __TEXT.__cstring: 0x20b0
-+  __TEXT.__gcc_except_tab: 0x9d4
-+  __TEXT.__oslogstring: 0xa65
-   __TEXT.__dlopen_cstrs: 0xb2
--  __TEXT.__constg_swiftt: 0x11c0
--  __TEXT.__swift5_typeref: 0x2e2c
--  __TEXT.__swift5_builtin: 0x28
--  __TEXT.__swift5_reflstr: 0x906
-+  __TEXT.__constg_swiftt: 0x1218
-+  __TEXT.__swift5_typeref: 0x2e8c
-+  __TEXT.__swift5_builtin: 0x3c
-+  __TEXT.__swift5_reflstr: 0x986
-   __TEXT.__swift5_assocty: 0x368
--  __TEXT.__swift5_proto: 0x108
--  __TEXT.__swift5_types: 0xb0
--  __TEXT.__swift5_fieldmd: 0x6d0
--  __TEXT.__swift5_capture: 0x164
-+  __TEXT.__swift5_proto: 0x10c
-+  __TEXT.__swift5_types: 0xb8
-+  __TEXT.__swift5_fieldmd: 0x71c
-+  __TEXT.__swift5_capture: 0x198
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0xdf8
--  __TEXT.__eh_frame: 0xbc
-+  __TEXT.__unwind_info: 0xf00
-+  __TEXT.__eh_frame: 0x18c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x4d8
--  __DATA_CONST.__objc_classlist: 0x178
-+  __DATA_CONST.__objc_classlist: 0x188
-   __DATA_CONST.__objc_catlist: 0x8
--  __DATA_CONST.__objc_protolist: 0x20
-+  __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x14e8
-+  __DATA_CONST.__objc_selrefs: 0x1518
-+  __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x90
-   __DATA_CONST.__objc_arraydata: 0x28
--  __DATA_CONST.__got: 0x6c0
--  __AUTH_CONST.__const: 0xe38
--  __AUTH_CONST.__cfstring: 0x1540
--  __AUTH_CONST.__objc_const: 0x3170
-+  __DATA_CONST.__got: 0x6e8
-+  __AUTH_CONST.__const: 0xef8
-+  __AUTH_CONST.__cfstring: 0x1560
-+  __AUTH_CONST.__objc_const: 0x33a8
-   __AUTH_CONST.__objc_intobj: 0x60
-   __AUTH_CONST.__objc_arrayobj: 0x30
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0xae8
--  __AUTH.__objc_data: 0xaa0
--  __AUTH.__data: 0x1678
--  __DATA.__objc_ivar: 0xf0
--  __DATA.__data: 0xcac
--  __DATA.__bss: 0x2380
--  __DATA.__common: 0x40
-+  __AUTH_CONST.__auth_got: 0xaf8
-+  __AUTH.__objc_data: 0xbf0
-+  __AUTH.__data: 0x16d0
-+  __DATA.__objc_ivar: 0xf4
-+  __DATA.__data: 0xd4c
-+  __DATA.__bss: 0x2430
-+  __DATA.__common: 0x58
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+-1483.100.10.2.4
++1486.100.5.2.1
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1262
--  Symbols:   2582
--  CStrings:  514
+-  Symbols:   1518
+-  CStrings:  345
 +  Functions: 1343
-+  Symbols:   2629
-+  CStrings:  524
- 
-Sections:
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
++  Symbols:   1540
++  CStrings:  354
 Symbols:
 + -[CKiCloudSettingsSyncController assetDownloadPresentableStatus]
 + -[CKiCloudSettingsSyncController cachedAttachmentDuration]
@@ -140,21 +84,6 @@ Symbols:
 + __PROTOCOLS__TtC18MessagesSettingsUI27AttachmentDownloadViewModel
 + ___53-[CKiCloudSettingsViewModel priorAttachmentTimeRange]_block_invoke
 + ___53-[CKiCloudSettingsViewModel priorAttachmentTimeRange]_block_invoke_2
-+ _objc_msgSend$assetDownloadPresentableStatus
-+ _objc_msgSend$cachedAttachmentDuration
-+ _objc_msgSend$cachedSyncState
-+ _objc_msgSend$didFinishDownloadingAttachmentHistory
-+ _objc_msgSend$fetchSyncState
-+ _objc_msgSend$initWithSyncState:timeFrame:
-+ _objc_msgSend$integerForKey:
-+ _objc_msgSend$notifySyncStatusHandlerWithStatusUpdate
-+ _objc_msgSend$phase
-+ _objc_msgSend$priorAttachmentTimeRange
-+ _objc_msgSend$remainingCount
-+ _objc_msgSend$removeEventHandler:
-+ _objc_msgSend$serverAttachmentTotalCount
-+ _objc_msgSend$setCachedAttachmentDuration:
-+ _objc_msgSend$setCachedSyncState:
 + _objc_retain_x27
 + _symbolic So19IMCloudKitSyncStateC
 + _symbolic So42CKAttachmentAssetDownloadPresentableStatusC
@@ -177,14 +106,6 @@ Symbols:
 - _OBJC_IVAR_$_CKiCloudSettingsViewModel._cachedAttachmentDownloadTimeFrame
 - ___80-[CKCloudSettingsViewController(SyncStateSpecifiers) _priorAttachmentTimeRange:]_block_invoke
 - ___80-[CKCloudSettingsViewController(SyncStateSpecifiers) _priorAttachmentTimeRange:]_block_invoke_2
-- _objc_msgSend$_attachmentDownloadTimeFrameDisplayString
-- _objc_msgSend$accountHasiMessageEnabled
-- _objc_msgSend$deselectRowAtIndexPath:animated:
-- _objc_msgSend$earliestKeptAttachmentDuration
-- _objc_msgSend$initWithAccountEnabled:stateDictionary:
-- _objc_msgSend$setCachedAttachmentDownloadTimeFrame:
-- _objc_msgSend$setChecked:
-- _objc_msgSend$setEarliestKeptAttachmentDuration:
 - _swift_dynamicCastObjCClass
 - _symbolic _____SgXwz_Xx 18MessagesSettingsUI38CKDownloadAttachmentsDetailsControllerC
 CStrings:
@@ -201,5 +122,4 @@ CStrings:
 + "iCloudSettings_Messages"
 - "\""
 - "SYNC_BEFORE_N_DAYS"
-
 ```

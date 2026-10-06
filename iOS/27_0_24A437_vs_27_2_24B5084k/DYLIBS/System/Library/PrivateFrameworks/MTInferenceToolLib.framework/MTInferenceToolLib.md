@@ -2,68 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/MTInferenceToolLib.framework/MTInferenceToolLib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c5c8` | `0x185bc` | **`-0x400c`** |
+| `__DATA.__bss` | `0x5690` | `0x4210` | **`-0x1480`** |
+| `__TEXT.__const` | `0x30a8` | `0x2698` | **`-0xa10`** |
+| `__AUTH_CONST.__const` | `0x2780` | `0x1e30` | **`-0x950`** |
+| `__TEXT.__swift5_fieldmd` | `0xf6c` | `0xc50` | **`-0x31c`** |
+| `__TEXT.__swift5_reflstr` | `0xba6` | `0x903` | **`-0x2a3`** |
+| `__TEXT.__cstring` | `0xf07` | `0xc87` | **`-0x280`** |
+| `__TEXT.__eh_frame` | `0x1070` | `0xe00` | **`-0x270`** |
+| `__TEXT.__unwind_info` | `0xa20` | `0x870` | **`-0x1b0`** |
+| `__TEXT.__swift5_typeref` | `0x7e8` | `0x69e` | **`-0x14a`** |
+| `__TEXT.__constg_swiftt` | `0x7c8` | `0x6ac` | **`-0x11c`** |
+| `__DATA.__data` | `0xa60` | `0x950` | **`-0x110`** |
+| `__TEXT.__swift5_assocty` | `0x270` | `0x1c8` | **`-0xa8`** |
+| `__TEXT.__swift5_proto` | `0x2c4` | `0x220` | **`-0xa4`** |
+| `__TEXT.__swift5_types` | `0xd8` | `0xb4` | **`-0x24`** |
+| `__AUTH_CONST.__auth_got` | `0x690` | `0x678` | **`-0x18`** |
+| `__TEXT.__swift5_protos` | `0x10` | `0xc` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -389.1.0.0.0
--  __TEXT.__text: 0x1ba20
--  __TEXT.__const: 0x30a8
--  __TEXT.__constg_swiftt: 0x7c8
--  __TEXT.__swift5_typeref: 0x7e8
--  __TEXT.__swift5_fieldmd: 0xf6c
--  __TEXT.__cstring: 0xf07
 +393.1.0.0.0
-+  __TEXT.__text: 0x17b68
-+  __TEXT.__const: 0x2698
-+  __TEXT.__constg_swiftt: 0x6ac
-+  __TEXT.__swift5_typeref: 0x69e
-+  __TEXT.__swift5_fieldmd: 0xc50
-+  __TEXT.__cstring: 0xc87
-   __TEXT.__swift5_builtin: 0x14
--  __TEXT.__swift5_reflstr: 0xba6
--  __TEXT.__swift5_assocty: 0x270
--  __TEXT.__swift5_proto: 0x2c4
--  __TEXT.__swift5_types: 0xd8
--  __TEXT.__swift5_protos: 0x10
-+  __TEXT.__swift5_reflstr: 0x903
-+  __TEXT.__swift5_assocty: 0x1c8
-+  __TEXT.__swift5_proto: 0x220
-+  __TEXT.__swift5_types: 0xb4
-+  __TEXT.__swift5_protos: 0xc
-   __TEXT.__swift_as_entry: 0x18
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x10
--  __TEXT.__unwind_info: 0xc78
--  __TEXT.__eh_frame: 0x1078
-+  __TEXT.__unwind_info: 0xa60
-+  __TEXT.__eh_frame: 0xe08
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xb8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2780
--  __AUTH_CONST.__auth_got: 0x690
-+  __AUTH_CONST.__const: 0x1e30
-+  __AUTH_CONST.__auth_got: 0x678
-   __AUTH.__data: 0x248
--  __DATA.__data: 0xa60
-+  __DATA.__data: 0x950
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/ArgumentParserInternal.framework/ArgumentParserInternal
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 990
--  Symbols:   429
+-  Symbols:   406
 -  CStrings:  125
 +  Functions: 822
-+  Symbols:   394
++  Symbols:   371
 +  CStrings:  91
- 
 Symbols:
 + _swift_release_x23
 - ___swift_memcpy104_8

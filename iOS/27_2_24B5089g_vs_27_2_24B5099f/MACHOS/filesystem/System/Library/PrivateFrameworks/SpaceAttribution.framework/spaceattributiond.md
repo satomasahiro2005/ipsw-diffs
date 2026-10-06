@@ -2,71 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/SpaceAttribution.framework/spaceattributiond`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__gcc_except_tab`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3fa34` | `0x3fd88` | **`+0x354`** |
+| `__TEXT.__oslogstring` | `0x57e6` | `0x592a` | **`+0x144`** |
+| `__TEXT.__objc_stubs` | `0x7680` | `0x7700` | **`+0x80`** |
+| `__TEXT.__cstring` | `0x35f4` | `0x3636` | **`+0x42`** |
+| `__TEXT.__objc_methname` | `0x8a2a` | `0x8a6b` | **`+0x41`** |
+| `__DATA_CONST.__cfstring` | `0x2dc0` | `0x2e00` | **`+0x40`** |
+| `__DATA.__objc_selrefs` | `0x2320` | `0x2340` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x2f50` | `0x2f60` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
 - `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_const`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -499.40.3.0.0
--  __TEXT.__text: 0x3ed58
 +499.40.4.0.0
-+  __TEXT.__text: 0x3f0ac
-   __TEXT.__auth_stubs: 0xa00
--  __TEXT.__objc_stubs: 0x7680
--  __TEXT.__objc_methlist: 0x2f50
-+  __TEXT.__objc_stubs: 0x7700
-+  __TEXT.__objc_methlist: 0x2f60
-   __TEXT.__const: 0x228
-   __TEXT.__gcc_except_tab: 0x1800
--  __TEXT.__cstring: 0x35f4
--  __TEXT.__oslogstring: 0x57e6
-+  __TEXT.__cstring: 0x3636
-+  __TEXT.__oslogstring: 0x592a
-   __TEXT.__objc_classname: 0x2f4
--  __TEXT.__objc_methname: 0x8a2a
-+  __TEXT.__objc_methname: 0x8a6b
-   __TEXT.__objc_methtype: 0x1192
--  __TEXT.__unwind_info: 0x1410
-+  __TEXT.__unwind_info: 0x1420
-   __DATA_CONST.__const: 0x17e0
--  __DATA_CONST.__cfstring: 0x2dc0
-+  __DATA_CONST.__cfstring: 0x2e00
-   __DATA_CONST.__objc_classlist: 0x158
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   __DATA_CONST.__got: 0x2b0
-   __DATA_CONST.__auth_ptr: 0x8
-   __DATA.__objc_const: 0x45b0
--  __DATA.__objc_selrefs: 0x2320
-+  __DATA.__objc_selrefs: 0x2340
-   __DATA.__objc_ivar: 0x370
-   __DATA.__objc_data: 0xd70
-   __DATA.__data: 0x250
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1471
 +  Functions: 1474
-   Symbols:   246
+
 -  CStrings:  2776
 +  CStrings:  2789
- 
 CStrings:
 + "END: VCC Details"
 + "START: VCC Details"

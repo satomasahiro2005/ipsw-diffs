@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AppleConvergedFirmwareUpdater.framework/AppleConvergedFirmwareUpdater`
 
-```diff
+### Section Size Changes
 
- 468.0.0.0.0
--  __TEXT.__text: 0x4bfac
-+  __TEXT.__text: 0x4bfa0
-   __TEXT.__const: 0xe578
-   __TEXT.__gcc_except_tab: 0x2ef8
-   __TEXT.__cstring: 0x90ff
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4bfac` | `0x4bfa0` | **`-0xc`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _OUTLINED_FUNCTION_1 : 24 -> 20
 ~ _OUTLINED_FUNCTION_2 : 20 -> 24

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/PhotosFace.framework/PhotosFace`
 
-```diff
+### Section Size Changes
 
- 96.0.0.0.0
--  __TEXT.__text: 0xcf204
-+  __TEXT.__text: 0xcf1f4
-   __TEXT.__const: 0x7c18
-   __TEXT.__swift5_typeref: 0x23ad
-   __TEXT.__cstring: 0x400c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcf204` | `0xcf1f4` | **`-0x10`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_23db30ad0 -> sub_23e45fad0 : 1764 -> 1756
 ~ sub_23db484ec -> sub_23e4774e4 : 1236 -> 1220

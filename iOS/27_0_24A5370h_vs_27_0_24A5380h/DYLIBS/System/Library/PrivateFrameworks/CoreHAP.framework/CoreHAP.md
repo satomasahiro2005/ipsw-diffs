@@ -2,119 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/CoreHAP.framework/CoreHAP`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x291238` | `0x2ab5a4` | **`+0x1a36c`** |
+| `__TEXT.__oslogstring` | `0x434f1` | `0x43aea` | **`+0x5f9`** |
+| `__AUTH_CONST.__objc_const` | `0x2aae0` | `0x2afd0` | **`+0x4f0`** |
+| `__TEXT.__objc_methlist` | `0x187d0` | `0x18ad8` | **`+0x308`** |
+| `__TEXT.__eh_frame` | `0xd38` | `0x1000` | **`+0x2c8`** |
+| `__TEXT.__cstring` | `0x14327` | `0x14599` | **`+0x272`** |
+| `__TEXT.__unwind_info` | `0x7580` | `0x7768` | **`+0x1e8`** |
+| `__AUTH_CONST.__const` | `0x1298` | `0x1448` | **`+0x1b0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8070` | `0x8218` | **`+0x1a8`** |
+| `__AUTH.__objc_data` | `0x71c8` | `0x72e8` | **`+0x120`** |
+| `__DATA_CONST.__const` | `0x5900` | `0x59c0` | **`+0xc0`** |
+| `__TEXT.__gcc_except_tab` | `0x5e50` | `0x5ee8` | **`+0x98`** |
+| `__TEXT.__swift5_capture` | `0x204` | `0x278` | **`+0x74`** |
+| `__DATA_CONST.__got` | `0xfc0` | `0x1028` | **`+0x68`** |
+| `__AUTH_CONST.__auth_got` | `0x12d8` | `0x1338` | **`+0x60`** |
+| `__AUTH_CONST.__cfstring` | `0xffc0` | `0x10020` | **`+0x60`** |
+| `__TEXT.__swift5_typeref` | `0x38e` | `0x3e4` | **`+0x56`** |
+| `__DATA_DIRTY.__bss` | `0x58` | `0xa8` | **`+0x50`** |
+| `__TEXT.__constg_swiftt` | `0x8c8` | `0x918` | **`+0x50`** |
+| `__DATA.__bss` | `0xf20` | `0xee0` | **`-0x40`** |
+| `__DATA_DIRTY.__data` | `0x8` | `0x48` | **`+0x40`** |
+| `__DATA.__objc_ivar` | `0x18c4` | `0x18fc` | **`+0x38`** |
+| `__AUTH.__data` | `0xb0` | `0x80` | **`-0x30`** |
+| `__DATA.__data` | `0x2d42` | `0x2d72` | **`+0x30`** |
+| `__DATA_DIRTY.__objc_data` | `0xfa0` | `0xfc8` | **`+0x28`** |
+| `__TEXT.__swift5_reflstr` | `0x404` | `0x424` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0xc00` | `0xc18` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0xa50` | `0xa68` | **`+0x18`** |
+| `__TEXT.__const` | `0x1220` | `0x1230` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x3c0` | `0x3cc` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x291238
--  __TEXT.__objc_methlist: 0x187d0
--  __TEXT.__const: 0x1220
-+  __TEXT.__text: 0x2ab5a4
-+  __TEXT.__objc_methlist: 0x18ad8
-+  __TEXT.__const: 0x1230
-   __TEXT.__dlopen_cstrs: 0x4e
--  __TEXT.__constg_swiftt: 0x8c8
--  __TEXT.__swift5_typeref: 0x38e
-+  __TEXT.__constg_swiftt: 0x918
-+  __TEXT.__swift5_typeref: 0x3e4
-   __TEXT.__swift5_builtin: 0x50
--  __TEXT.__swift5_reflstr: 0x404
--  __TEXT.__swift5_fieldmd: 0x3c0
-+  __TEXT.__swift5_reflstr: 0x424
-+  __TEXT.__swift5_fieldmd: 0x3cc
-   __TEXT.__swift5_assocty: 0xc0
-   __TEXT.__swift5_proto: 0x50
-   __TEXT.__swift5_types: 0x30
--  __TEXT.__cstring: 0x14327
--  __TEXT.__oslogstring: 0x434f1
--  __TEXT.__swift5_capture: 0x204
--  __TEXT.__gcc_except_tab: 0x5e50
--  __TEXT.__unwind_info: 0x7580
--  __TEXT.__eh_frame: 0xd38
-+  __TEXT.__cstring: 0x14599
-+  __TEXT.__oslogstring: 0x43aea
-+  __TEXT.__swift5_capture: 0x278
-+  __TEXT.__gcc_except_tab: 0x5ee8
-+  __TEXT.__unwind_info: 0x7768
-+  __TEXT.__eh_frame: 0x1000
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x5900
--  __DATA_CONST.__objc_classlist: 0xc00
-+  __DATA_CONST.__const: 0x59c0
-+  __DATA_CONST.__objc_classlist: 0xc18
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x3b0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8070
-+  __DATA_CONST.__objc_selrefs: 0x8218
-   __DATA_CONST.__objc_protorefs: 0x100
--  __DATA_CONST.__objc_superrefs: 0xa50
-+  __DATA_CONST.__objc_superrefs: 0xa68
-   __DATA_CONST.__objc_arraydata: 0x200
--  __DATA_CONST.__got: 0xfc0
--  __AUTH_CONST.__const: 0x1298
--  __AUTH_CONST.__cfstring: 0xffc0
--  __AUTH_CONST.__objc_const: 0x2aae0
-+  __DATA_CONST.__got: 0x1028
-+  __AUTH_CONST.__const: 0x1448
-+  __AUTH_CONST.__cfstring: 0x10020
-+  __AUTH_CONST.__objc_const: 0x2afd0
-   __AUTH_CONST.__objc_intobj: 0x738
-   __AUTH_CONST.__objc_floatobj: 0x20
-   __AUTH_CONST.__objc_doubleobj: 0x40
-   __AUTH_CONST.__objc_arrayobj: 0xc0
--  __AUTH_CONST.__auth_got: 0x12d8
--  __AUTH.__objc_data: 0x71c8
--  __AUTH.__data: 0xb0
-+  __AUTH_CONST.__auth_got: 0x1338
-+  __AUTH.__objc_data: 0x72e8
-+  __AUTH.__data: 0x80
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x28
--  __DATA.__objc_ivar: 0x18c4
--  __DATA.__data: 0x2d42
-+  __DATA.__objc_ivar: 0x18fc
-+  __DATA.__data: 0x2d72
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0xf20
-+  __DATA.__bss: 0xee0
-   __DATA.__common: 0x8
--  __DATA_DIRTY.__objc_data: 0xfa0
--  __DATA_DIRTY.__data: 0x8
--  __DATA_DIRTY.__bss: 0x58
-+  __DATA_DIRTY.__objc_data: 0xfc8
-+  __DATA_DIRTY.__data: 0x48
-+  __DATA_DIRTY.__bss: 0xa8
-   __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+-1479.0.0.1.0
++1484.2.0.0.0
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9663
--  Symbols:   29537
--  CStrings:  9115
+-  Symbols:   16340
+-  CStrings:  7055
 +  Functions: 9807
-+  Symbols:   29809
-+  CStrings:  9150
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH.__thread_vars : content changed
++  Symbols:   16467
++  CStrings:  7087
 Symbols:
 + +[HAP2Diagnostics sharedDiagnostics]
 + -[HAP2AccessoryServer _browserFastSetHasDiscoveryAdvertisement:]
@@ -748,48 +683,6 @@ Symbols:
 + _logCategory._hmf_once_v857
 + _mach_continuous_time
 + _mach_timebase_info
-+ _objc_msgSend$_browserFastSetHasDiscoveryAdvertisement:
-+ _objc_msgSend$_evictExpiredRacingRendezvousAtUptime:orphanedHandlers:
-+ _objc_msgSend$_isExpiredRendezvous:atUptime:
-+ _objc_msgSend$_isTransientKeychainError:
-+ _objc_msgSend$_matchedRacingHandlerForRendezvous:forIdentifier:messageID:
-+ _objc_msgSend$_normalizeNFCPairSetupError:
-+ _objc_msgSend$_racingKeyForIdentifier:messageID:
-+ _objc_msgSend$_racingRendezvousForIdentifier:messageID:atUptime:orphanedHandlers:
-+ _objc_msgSend$_stampDiagnosticsOnOperations:
-+ _objc_msgSend$_updateRacingRendezvousForIdentifier:messageID:withBlock:
-+ _objc_msgSend$accessoryServer:promptUncertifiedForMFiRollError:completionHandler:
-+ _objc_msgSend$channelNumber
-+ _objc_msgSend$ecdsaPairingKeyExistsForAccessoryName:
-+ _objc_msgSend$enqueueMachTime
-+ _objc_msgSend$executeStartMachTime
-+ _objc_msgSend$hap2DiagnosticsDidObserveOperationQueueStallWithSnapshot:
-+ _objc_msgSend$initWithInsertUptime:
-+ _objc_msgSend$initWithOperatingClass:channelNumber:bssid:
-+ _objc_msgSend$insertUptime
-+ _objc_msgSend$keysOfEntriesPassingTest:
-+ _objc_msgSend$lastRacingSweepUptime
-+ _objc_msgSend$maxConcurrentOperationCount
-+ _objc_msgSend$notifyOperationQueueStallWithSnapshot:
-+ _objc_msgSend$observer
-+ _objc_msgSend$operatingClass
-+ _objc_msgSend$owningQueue
-+ _objc_msgSend$pairSetupSession:promptUncertifiedForMFiRollError:completionHandler:
-+ _objc_msgSend$qualityOfService
-+ _objc_msgSend$racingRendezvousByKey
-+ _objc_msgSend$racingResult
-+ _objc_msgSend$removeObjectsForKeys:
-+ _objc_msgSend$reportStallSnapshotIfNeeded:waitLatency:
-+ _objc_msgSend$setEnqueueMachTime:
-+ _objc_msgSend$setExecuteStartMachTime:
-+ _objc_msgSend$setLastRacingSweepUptime:
-+ _objc_msgSend$setOwningQueue:
-+ _objc_msgSend$setRacingResult:
-+ _objc_msgSend$setUnfinishedDependencyCount:
-+ _objc_msgSend$sharedDiagnostics
-+ _objc_msgSend$stallSnapshotForWaitLatency:
-+ _objc_msgSend$unfinishedDependencyCount
-+ _objc_msgSend$uptimeProvider
 + _objc_sync_enter
 + _objc_sync_exit
 + _qos_class_self
@@ -1370,5 +1263,4 @@ CStrings:
 - "[%{public}@] Stashing prefetched MFi token (%lu bytes) for parallel validate+roll"
 - "p256NistKdfCmacAes128Sha256 not yet supported"
 - "v32@?0@\"NSData\"8@\"NSString\"16@\"NSError\"24"
-
 ```

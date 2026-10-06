@@ -2,77 +2,37 @@
 
 > `/System/Library/Frameworks/GameSave.framework/GameSave`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x37598` | `0x3b060` | **`+0x3ac8`** |
+| `__TEXT.__eh_frame` | `0x1568` | `0x1848` | **`+0x2e0`** |
+| `__TEXT.__unwind_info` | `0xcb0` | `0xd60` | **`+0xb0`** |
+| `__TEXT.__oslogstring` | `0xa18` | `0xaab` | **`+0x93`** |
+| `__TEXT.__const` | `0x1ad0` | `0x1b50` | **`+0x80`** |
+| `__AUTH_CONST.__const` | `0x1240` | `0x1290` | **`+0x50`** |
+| `__AUTH.__objc_data` | `0xb80` | `0xbb8` | **`+0x38`** |
+| `__TEXT.__swift5_capture` | `0x528` | `0x55c` | **`+0x34`** |
+| `__AUTH_CONST.__auth_got` | `0xc70` | `0xca0` | **`+0x30`** |
+| `__TEXT.__swift_as_cont` | `0xdc` | `0x100` | **`+0x24`** |
+| `__TEXT.__constg_swiftt` | `0xf70` | `0xf90` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x458` | `0x470` | **`+0x18`** |
+| `__TEXT.__swift_as_ret` | `0x88` | `0x9c` | **`+0x14`** |
+| `__AUTH.__data` | `0xde0` | `0xdd0` | **`-0x10`** |
+| `__DATA.__data` | `0xc40` | `0xc50` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x588` | `0x598` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x81a` | `0x82a` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x94` | `0xa4` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
- 1.0.0.0.0
--  __TEXT.__text: 0x3538c
-+  __TEXT.__text: 0x38a84
-   __TEXT.__objc_methlist: 0x700
--  __TEXT.__const: 0x1ad0
-+  __TEXT.__const: 0x1b50
-   __TEXT.__swift5_typeref: 0x14e4
--  __TEXT.__constg_swiftt: 0xf70
--  __TEXT.__swift5_reflstr: 0x81a
--  __TEXT.__swift5_fieldmd: 0x66c
--  __TEXT.__cstring: 0x8b7
-+  __TEXT.__constg_swiftt: 0xf90
-   __TEXT.__swift5_builtin: 0x64
-+  __TEXT.__swift5_reflstr: 0x82a
-+  __TEXT.__swift5_fieldmd: 0x66c
-   __TEXT.__swift5_assocty: 0x1a0
-+  __TEXT.__cstring: 0x8b7
-   __TEXT.__swift5_proto: 0xb4
-   __TEXT.__swift5_types: 0x70
--  __TEXT.__oslogstring: 0xa18
--  __TEXT.__swift5_capture: 0x528
--  __TEXT.__swift_as_entry: 0x94
--  __TEXT.__swift_as_ret: 0x88
--  __TEXT.__swift_as_cont: 0xdc
--  __TEXT.__unwind_info: 0xf60
--  __TEXT.__eh_frame: 0x1568
-+  __TEXT.__oslogstring: 0xaab
-+  __TEXT.__swift5_capture: 0x55c
-+  __TEXT.__swift_as_entry: 0xa4
-+  __TEXT.__swift_as_ret: 0x9c
-+  __TEXT.__swift_as_cont: 0x100
-+  __TEXT.__unwind_info: 0x1000
-+  __TEXT.__eh_frame: 0x1848
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x80
-   __DATA_CONST.__objc_protolist: 0x58
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x588
-+  __DATA_CONST.__objc_selrefs: 0x598
-   __DATA_CONST.__objc_protorefs: 0x30
--  __DATA_CONST.__got: 0x458
--  __AUTH_CONST.__const: 0x1240
-+  __DATA_CONST.__got: 0x470
-+  __AUTH_CONST.__const: 0x1290
-   __AUTH_CONST.__objc_const: 0x1880
--  __AUTH_CONST.__auth_got: 0xc70
--  __AUTH.__objc_data: 0xb80
--  __AUTH.__data: 0xde0
--  __DATA.__data: 0xc40
-+  __AUTH_CONST.__auth_got: 0xca0
-+  __AUTH.__objc_data: 0xbb8
-+  __AUTH.__data: 0xdd0
-+  __DATA.__data: 0xc50
-   __DATA.__common: 0x98
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1032
--  Symbols:   3066
+-  Symbols:   2963
 +  Functions: 1062
-+  Symbols:   3116
-   CStrings:  117
- 
++  Symbols:   3011
 Symbols:
 + _$s10Foundation3URLV4pathSSvg
 + _$s10Foundation3URLV8GameSaveE24maxInnerModificationDate15directoriesOnly16skipsHiddenFilesAA0H0VSgSb_SbtF
@@ -200,8 +160,6 @@ Symbols:
 + ___swift_closure_destructor.21Tm
 + ___swift_closure_destructor.30Tm
 + ___swift_closure_destructor.65Tm
-+ _objc_msgSend$boolValue
-+ _objc_msgSend$fileExistsAtPath:
 + _swift_deallocPartialClassInstance
 + _type_layout_string So16NSURLResourceKeya
 - _$s10Foundation3URLV15fileURLWithPathACSSh_tcfC

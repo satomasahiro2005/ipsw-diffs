@@ -2,22 +2,23 @@
 
 > `Firmware/txm.iphoneos.release.im4p`
 
-```diff
+### Section Size Changes
 
-   __TEXT.__chain_starts: 0x14
-   __DATA_CONST.__const: 0xd198
-   __DATA_CONST.__auth_ptr: 0x70
--  __TEXT_EXEC.__text: 0x49150
-+  __TEXT_EXEC.__text: 0x490b8
-   __TEXT_EXEC.__exc: 0x8a0
-   __TEXT_BOOT_EXEC.__text: 0x4060
-   __TEXT_BOOT_EXEC.__bootcode: 0x278
-Sections:
-~ __TEXT.__cstring : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __TEXT_BOOT_EXEC.__text : content changed
-~ __DATA.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x49150` | `0x490b8` | **`-0x98`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__const`
+- `__TEXT.__cstring`
+- `__TEXT_BOOT_EXEC.__text`
+
+### Other Changes
+
+```diff
 Functions:
 ~ sub_fffffff017035e28 : 228 -> 224
 ~ sub_fffffff0170394a8 -> sub_fffffff0170394a4 : 1800 -> 1788
@@ -51,5 +52,4 @@ CStrings:
 + "Code Signing Monitor Image4 Module Version 7.0.0: Fri Jun 26 21:01:06 PDT 2026; root:AppleImage4_txm-374~2547/libimage4_TXM/RELEASE_ARM64E"
 - "@(#)VERSION:Code Signing Monitor Image4 Module Version 7.0.0: Thu Jun 11 23:44:59 PDT 2026; root:AppleImage4_txm-374~1515/libimage4_TXM/RELEASE_ARM64E"
 - "Code Signing Monitor Image4 Module Version 7.0.0: Thu Jun 11 23:44:59 PDT 2026; root:AppleImage4_txm-374~1515/libimage4_TXM/RELEASE_ARM64E"
-
 ```

@@ -2,37 +2,35 @@
 
 > `/System/Library/Extensions/IOGameControllerFamily.kext/IOGameControllerFamily_development`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x2a5c0` | `0x2a93c` | **`+0x37c`** |
+| `__TEXT.__os_log` | `0x901a` | `0x90fa` | **`+0xe0`** |
+| `__TEXT.__cstring` | `0x279e` | `0x27de` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0xd8` | `0xe0` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__kalloc_type`
+- `__DATA_CONST.__mod_init_func`
+- `__DATA_CONST.__mod_term_func`
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__const: 0x480
--  __TEXT.__cstring: 0x279e
--  __TEXT.__os_log: 0x901a
--  __TEXT_EXEC.__text: 0x2a5c0
-+  __TEXT.__cstring: 0x27de
-+  __TEXT.__os_log: 0x90fa
-+  __TEXT_EXEC.__text: 0x2a93c
-   __TEXT_EXEC.__auth_stubs: 0x540
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x2b8
-
-   __DATA_CONST.__const: 0x62b8
-   __DATA_CONST.__kalloc_type: 0x880
-   __DATA_CONST.__auth_got: 0x2a0
--  __DATA_CONST.__got: 0xd8
+-14.0.17.0.0
 -  Functions: 991
--  Symbols:   2172
+-  Symbols:   1812
 -  CStrings:  614
-+  __DATA_CONST.__got: 0xe0
++14.0.19.0.0
 +  Functions: 993
-+  Symbols:   2178
++  Symbols:   1818
 +  CStrings:  619
- 
-Sections:
-~ __DATA.__data : content changed
-~ __DATA_CONST.__mod_init_func : content changed
-~ __DATA_CONST.__mod_term_func : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__kalloc_type : content changed
 Symbols:
 + _ZN22IOGCDynamicDeviceProbe9preflightEP11IOHIDDevice
 + __ZN17IOHIDEventService9metaClassE
@@ -69,5 +67,4 @@ CStrings:
 - "[%#010llx] IOGCInspectionService::handleOpen(<IOService %#010llx>)"
 - "[%#010llx] IOGCInspectionService::markSupported(<IOService %#010llx>)"
 - "[%#010llx] IOGCInspectionService::markUnsupported(<IOService %#010llx>)"
-
 ```

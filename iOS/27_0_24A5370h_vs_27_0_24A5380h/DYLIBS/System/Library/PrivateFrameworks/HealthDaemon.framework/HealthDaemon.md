@@ -2,137 +2,65 @@
 
 > `/System/Library/PrivateFrameworks/HealthDaemon.framework/HealthDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x956790` | `0x95b22c` | **`+0x4a9c`** |
+| `__DATA_DIRTY.__objc_data` | `0x129d0` | `0x14438` | **`+0x1a68`** |
+| `__AUTH.__objc_data` | `0xa9d8` | `0x9188` | **`-0x1850`** |
+| `__TEXT.__cstring` | `0x83dcc` | `0x84b8d` | **`+0xdc1`** |
+| `__DATA_DIRTY.__data` | `0x36b0` | `0x4090` | **`+0x9e0`** |
+| `__TEXT.__oslogstring` | `0x488a1` | `0x49110` | **`+0x86f`** |
+| `__AUTH_CONST.__cfstring` | `0x3fbe0` | `0x40440` | **`+0x860`** |
+| `__AUTH.__data` | `0x2560` | `0x1dc8` | **`-0x798`** |
+| `__TEXT.__eh_frame` | `0x76a0` | `0x6fb8` | **`-0x6e8`** |
+| `__DATA_DIRTY.__bss` | `0x1b38` | `0x21d8` | **`+0x6a0`** |
+| `__DATA.__bss` | `0x8fb8` | `0x8a10` | **`-0x5a8`** |
+| `__AUTH_CONST.__const` | `0x17cf0` | `0x18270` | **`+0x580`** |
+| `__AUTH_CONST.__objc_const` | `0x83238` | `0x83708` | **`+0x4d0`** |
+| `__TEXT.__objc_methlist` | `0x461ec` | `0x46584` | **`+0x398`** |
+| `__DATA.__data` | `0x9f38` | `0x9bb8` | **`-0x380`** |
+| `__TEXT.__swift5_typeref` | `0x471d` | `0x4a71` | **`+0x354`** |
+| `__TEXT.__gcc_except_tab` | `0x395f4` | `0x397f0` | **`+0x1fc`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1b1f8` | `0x1b3f0` | **`+0x1f8`** |
+| `__TEXT.__swift5_fieldmd` | `0x31cc` | `0x338c` | **`+0x1c0`** |
+| `__DATA_CONST.__got` | `0x5ba0` | `0x5cf0` | **`+0x150`** |
+| `__TEXT.__swift5_reflstr` | `0x3108` | `0x3248` | **`+0x140`** |
+| `__TEXT.__const` | `0x267d0` | `0x268f0` | **`+0x120`** |
+| `__DATA_CONST.__const` | `0x1de60` | `0x1df58` | **`+0xf8`** |
+| `__TEXT.__constg_swiftt` | `0x4324` | `0x4410` | **`+0xec`** |
+| `__TEXT.__swift5_capture` | `0x2568` | `0x2638` | **`+0xd0`** |
+| `__TEXT.__swift_as_cont` | `0x170` | `0xa0` | **`-0xd0`** |
+| `__AUTH_CONST.__auth_got` | `0x3ce0` | `0x3d90` | **`+0xb0`** |
+| `__TEXT.__swift_as_ret` | `0xdc` | `0x70` | **`-0x6c`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x2088` | `0x20e8` | **`+0x60`** |
+| `__AUTH_CONST.__objc_intobj` | `0x3f18` | `0x3f78` | **`+0x60`** |
+| `__DATA_CONST.__objc_arraydata` | `0x88f0` | `0x8948` | **`+0x58`** |
+| `__DATA_DIRTY.__common` | `0x120` | `0x168` | **`+0x48`** |
+| `__TEXT.__swift_as_entry` | `0xd0` | `0x88` | **`-0x48`** |
+| `__DATA.__common` | `0x2e0` | `0x2a8` | **`-0x38`** |
+| `__TEXT.__unwind_info` | `0x21678` | `0x21648` | **`-0x30`** |
+| `__DATA.__objc_ivar` | `0x455c` | `0x4584` | **`+0x28`** |
+| `__TEXT.__swift5_types` | `0x394` | `0x3b0` | **`+0x1c`** |
+| `__DATA_CONST.__objc_classlist` | `0x2c08` | `0x2c18` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1d68` | `0x1d70` | **`+0x8`** |
+| `__DATA_DIRTY.__objc_ivar` | `0xe4c` | `0xe54` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x5dc` | `0x5e4` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x956790
--  __TEXT.__objc_methlist: 0x461ec
--  __TEXT.__const: 0x267d0
-+  __TEXT.__text: 0x95b22c
-+  __TEXT.__objc_methlist: 0x46584
-+  __TEXT.__const: 0x268f0
-   __TEXT.__dlopen_cstrs: 0x15b
--  __TEXT.__constg_swiftt: 0x4324
--  __TEXT.__swift5_typeref: 0x471d
-+  __TEXT.__constg_swiftt: 0x4410
-+  __TEXT.__swift5_typeref: 0x4a71
-   __TEXT.__swift5_builtin: 0x17c
--  __TEXT.__swift5_reflstr: 0x3108
--  __TEXT.__swift5_fieldmd: 0x31cc
-+  __TEXT.__swift5_reflstr: 0x3248
-+  __TEXT.__swift5_fieldmd: 0x338c
-   __TEXT.__swift5_assocty: 0xaa0
--  __TEXT.__swift5_proto: 0x5dc
--  __TEXT.__swift5_types: 0x394
--  __TEXT.__cstring: 0x83dcc
--  __TEXT.__swift5_capture: 0x2568
--  __TEXT.__oslogstring: 0x488a1
-+  __TEXT.__swift5_proto: 0x5e4
-+  __TEXT.__swift5_types: 0x3b0
-+  __TEXT.__cstring: 0x84b8d
-+  __TEXT.__swift5_capture: 0x2638
-+  __TEXT.__oslogstring: 0x49110
-   __TEXT.__swift5_mpenum: 0x18
-   __TEXT.__swift5_protos: 0xc8
--  __TEXT.__swift_as_entry: 0xd0
--  __TEXT.__swift_as_ret: 0xdc
--  __TEXT.__swift_as_cont: 0x170
-+  __TEXT.__swift_as_entry: 0x88
-+  __TEXT.__swift_as_ret: 0x70
-+  __TEXT.__swift_as_cont: 0xa0
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__gcc_except_tab: 0x395f4
-+  __TEXT.__gcc_except_tab: 0x397f0
-   __TEXT.__ustring: 0x70
--  __TEXT.__unwind_info: 0x21678
--  __TEXT.__eh_frame: 0x76a0
-+  __TEXT.__unwind_info: 0x21648
-+  __TEXT.__eh_frame: 0x6fb8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1de60
--  __DATA_CONST.__objc_classlist: 0x2c08
-+  __DATA_CONST.__const: 0x1df58
-+  __DATA_CONST.__objc_classlist: 0x2c18
-   __DATA_CONST.__objc_catlist: 0x4b0
-   __DATA_CONST.__objc_protolist: 0xb68
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x18
--  __DATA_CONST.__objc_selrefs: 0x1b1f8
-+  __DATA_CONST.__objc_selrefs: 0x1b3f0
-   __DATA_CONST.__objc_protorefs: 0x310
--  __DATA_CONST.__objc_superrefs: 0x1d68
--  __DATA_CONST.__objc_arraydata: 0x88f0
--  __DATA_CONST.__got: 0x5ba0
--  __AUTH_CONST.__const: 0x17cf0
--  __AUTH_CONST.__cfstring: 0x3fbe0
--  __AUTH_CONST.__objc_const: 0x83238
-+  __DATA_CONST.__objc_superrefs: 0x1d70
-+  __DATA_CONST.__objc_arraydata: 0x8948
-+  __DATA_CONST.__got: 0x5cf0
-+  __AUTH_CONST.__const: 0x18270
-+  __AUTH_CONST.__cfstring: 0x40440
-+  __AUTH_CONST.__objc_const: 0x83708
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_dictobj: 0x168
--  __AUTH_CONST.__objc_intobj: 0x3f18
--  __AUTH_CONST.__objc_arrayobj: 0x2088
-+  __AUTH_CONST.__objc_intobj: 0x3f78
-+  __AUTH_CONST.__objc_arrayobj: 0x20e8
-   __AUTH_CONST.__objc_doubleobj: 0x3c0
--  __AUTH_CONST.__auth_got: 0x3ce0
--  __AUTH.__objc_data: 0xa9d8
--  __AUTH.__data: 0x2560
--  __DATA.__objc_ivar: 0x455c
--  __DATA.__data: 0x9f38
--  __DATA.__bss: 0x8fb8
--  __DATA.__common: 0x2e0
--  __DATA_DIRTY.__objc_ivar: 0xe4c
--  __DATA_DIRTY.__objc_data: 0x129d0
--  __DATA_DIRTY.__data: 0x36b0
--  __DATA_DIRTY.__bss: 0x1b38
--  __DATA_DIRTY.__common: 0x120
-+  __AUTH_CONST.__auth_got: 0x3d90
-+  __AUTH.__objc_data: 0x9188
-+  __AUTH.__data: 0x1dc8
-+  __DATA.__objc_ivar: 0x4584
-+  __DATA.__data: 0x9bb8
-+  __DATA.__bss: 0x8a10
-+  __DATA.__common: 0x2a8
-+  __DATA_DIRTY.__objc_ivar: 0xe54
-+  __DATA_DIRTY.__objc_data: 0x14438
-+  __DATA_DIRTY.__data: 0x4090
-+  __DATA_DIRTY.__bss: 0x21d8
-+  __DATA_DIRTY.__common: 0x168
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
-   - /System/Library/Frameworks/AddressBook.framework/AddressBook
+-7027.0.60.2.2
++7027.0.64.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 41309
--  Symbols:   110130
--  CStrings:  22364
+-  Symbols:   59956
+-  CStrings:  14196
 +  Functions: 41396
-+  Symbols:   110478
-+  CStrings:  22526
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_types2 : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
++  Symbols:   60105
++  CStrings:  14291
 Symbols:
 + +[HDAuthorizationDailyAnalytics _eventDictionaryForSource:records:profileType:timeBoundedAuthEnabled:]
 + +[HDAuthorizationDailyAnalytics _grantRateNumerator:denominator:]
@@ -409,64 +337,6 @@ Symbols:
 + _kHKDatabasePreferencesDomain
 + _kHKDatabasePreferencesKeyEnableFutureMigrations
 + _kHKDatabasePreferencesKeyEnableOntologyFutureMigrations
-+ _objc_msgSend$_analyticsCacheEntryHits
-+ _objc_msgSend$_analyticsCacheEntryMisses
-+ _objc_msgSend$_buildRelationshipsForWorkouts:effortDataTypes:options:error:
-+ _objc_msgSend$_clearPersistedCacheStatistics
-+ _objc_msgSend$_eventDictionaryForSource:records:profileType:timeBoundedAuthEnabled:
-+ _objc_msgSend$_eventDictionaryForStats:databaseSizeMB:dataCacheSizeMB:databaseShape:isIHAEnabled:
-+ _objc_msgSend$_fetchSamplesFromGroupDataIDs:effortDataTypes:limit:error:
-+ _objc_msgSend$_flushCacheStatistics
-+ _objc_msgSend$_grantRateNumerator:denominator:
-+ _objc_msgSend$_loadPersistedCacheStatistics
-+ _objc_msgSend$_newCoreAnalyticsSubmissionManager
-+ _objc_msgSend$_persistenceDomainForProfile:
-+ _objc_msgSend$_populateAndStampCacheForRequestedRange
-+ _objc_msgSend$_setTrailingDailyAverageQuantity:
-+ _objc_msgSend$_zoneGroupsForWorkoutActivityWithPersistentId:activityUUID:activityType:database:error:
-+ _objc_msgSend$activityNodeTreeWrapperForRootActivity:ownerID:transaction:error:
-+ _objc_msgSend$addDayWithIndex:value:sampleCount:
-+ _objc_msgSend$average
-+ _objc_msgSend$cacheEntryHits
-+ _objc_msgSend$cacheEntryMisses
-+ _objc_msgSend$cachePersistenceDictionary
-+ _objc_msgSend$createZonesBuilderFor:primaryActivity:customConfigurationWrappers:
-+ _objc_msgSend$cyclingPowerWorkoutZoneConfigurationWrapperFor:completionHandler:
-+ _objc_msgSend$dayIndex
-+ _objc_msgSend$daysWithData
-+ _objc_msgSend$detachFromProfile:
-+ _objc_msgSend$initWithLongLong:
-+ _objc_msgSend$initWithTransaction:persistentID:startTime:endTime:sourceID:HFDKey:
-+ _objc_msgSend$initWithWindowLengthInDays:minimumDaysWithData:isCumulative:
-+ _objc_msgSend$inputWatermarkForQueryIdentifier:anchorData:rowExists:healthDatabase:error:
-+ _objc_msgSend$insertOrUpdateManagementFor:creationDate:updatedDate:inputWatermark:healthDatabase:error:
-+ _objc_msgSend$insertOrUpdateManagementForQueryIdentifier:anchorData:creationDate:updatedDate:inputWatermark:healthDatabase:error:
-+ _objc_msgSend$isEnding
-+ _objc_msgSend$mergePersistedCacheDictionary:
-+ _objc_msgSend$minimumDaysWithData
-+ _objc_msgSend$pruneTrainingLoadForDate:healthDatabase:error:
-+ _objc_msgSend$recordQueryCompletionForServer:duration:cacheEntryHits:cacheEntryMisses:
-+ _objc_msgSend$recordQueryWithDuration:boundaryType:dataTypeID:cacheEntryHits:cacheEntryMisses:
-+ _objc_msgSend$sampleCount
-+ _objc_msgSend$setAuthorizationStatuses:authorizationModes:bundleIdentifier:options:modeInfos:profile:completion:
-+ _objc_msgSend$setAuthorizationStatuses:authorizationModes:forBundleIdentifier:options:modeInfos:completion:
-+ _objc_msgSend$setAuthorizationStatuses:authorizationRequests:authorizationModes:sourceEntity:options:modeInfos:sourceManager:syncIdentityManager:healthDatabase:error:
-+ _objc_msgSend$setCyclingPowerWorkoutZoneConfigurationFor:wrapper:error:
-+ _objc_msgSend$setDaysWithDataCount:
-+ _objc_msgSend$setFutureMigrationsEnabled:
-+ _objc_msgSend$setPersistenceProfile:
-+ _objc_msgSend$setSupportsOntologyDatabaseFutureMigrations:
-+ _objc_msgSend$setTypedValuesWithDictionary:domain:category:profile:error:
-+ _objc_msgSend$setTypedValuesWithDictionary:error:
-+ _objc_msgSend$submitRouteSmoothingWorkoutPerformanceAnalyticsWithCoordinator:event:sessionIdentifier:activityType:duration:activityCount:extendedMode:totalLocations:routeSmoothingRetryCount:activityID:failure:isIndoor:
-+ _objc_msgSend$submitWorkoutPerformanceAnalyticsWithCoordinator:event:sessionIdentifier:activityType:duration:activityCount:failure:isIndoor:
-+ _objc_msgSend$timeBoundedAuthorization
-+ _objc_msgSend$trailingDailyAverageConfiguration
-+ _objc_msgSend$unitTest_unregisterFromWorkoutManager
-+ _objc_msgSend$windowLength
-+ _objc_msgSend$windowedResultsFromDay:toDay:
-+ _objc_msgSend$workoutEffortAssociationWatermarkBetween:and:database:
-+ _objc_msgSend$workout_reportEvent:timestamp:sessionID:activityType:sessionDuration:activityCount:extendedMode:totalLocations:routeSmoothingRetryCount:activityID:failure:isIndoor:
 + _symbolic $s12HealthDaemon34HDFunctionalThresholdPowerFetchingP
 + _symbolic Say_____G 12HealthDaemon25TrailingDailyAverageDatumV
 + _symbolic Say_____G6basics_Si16totalSampleCounttSg 12HealthDaemon29HDDatabaseDetailDataCollectorC9TypeBasic33_BBE2356FAC7BECE7957402C2CA67DB70LLV
@@ -673,23 +543,6 @@ Symbols:
 - _get_type_metadata 15Synchronization5MutexVySDySSSo11HDAssertionCGG noncopyable
 - _get_type_metadata 15Synchronization5MutexVySo63STBackgroundActivitiesStatusDomainBackgroundActivityAttributionCSgG noncopyable
 - _get_type_metadata SeRzSERz9HealthKit13ConfigurationO10SampleBaseRz19PredicatedModelKindAC13WithPredicatePQzRs_r0_l15Synchronization5MutexVy0A6Daemon12StateStorageVG noncopyable
-- _objc_msgSend$_eventDictionaryForStats:databaseSizeMB:databaseShape:isIHAEnabled:
-- _objc_msgSend$_newAWDSubmissionManager
-- _objc_msgSend$_zoneGroupsForWorkoutActivityWithPersistentId:activityUUID:database:error:
-- _objc_msgSend$cacheSizeObservationCount
-- _objc_msgSend$createZonesBuilderFor:primaryActivity:customConfigurationWrappers:completionHandler:
-- _objc_msgSend$initWithTransaction:persistentID:startTime:endTime:HFDKey:
-- _objc_msgSend$insertOrUpdateManagementFor:creationDate:updatedDate:healthDatabase:error:
-- _objc_msgSend$insertOrUpdateManagementForQueryIdentifier:anchorData:creationDate:updatedDate:healthDatabase:error:
-- _objc_msgSend$recordQueryCompletionForServer:duration:cacheEntryHits:cacheEntryMisses:cacheSizeMB:
-- _objc_msgSend$recordQueryWithDuration:boundaryType:dataTypeID:cacheEntryHits:cacheEntryMisses:cacheSizeMB:
-- _objc_msgSend$setAuthorizationStatuses:authorizationModes:bundleIdentifier:options:modeInfo:profile:error:
-- _objc_msgSend$setAuthorizationStatuses:authorizationModes:forBundleIdentifier:options:modeInfo:completion:
-- _objc_msgSend$setAuthorizationStatuses:authorizationRequests:authorizationModes:sourceEntity:options:modeInfo:sourceManager:syncIdentityManager:healthDatabase:error:
-- _objc_msgSend$submitRouteSmoothingWorkoutPerformanceAnalyticsWithCoordinator:event:sessionIdentifier:activityType:duration:activityCount:extendedMode:totalLocations:routeSmoothingRetryCount:activityID:failure:
-- _objc_msgSend$submitWorkoutPerformanceAnalyticsWithCoordinator:event:sessionIdentifier:activityType:duration:activityCount:failure:
-- _objc_msgSend$totalCacheSizeMB
-- _objc_msgSend$workout_reportEvent:timestamp:sessionID:activityType:sessionDuration:activityCount:extendedMode:totalLocations:routeSmoothingRetryCount:activityID:failure:
 - _swift_runtimeSupportsNoncopyableTypes
 - _symbolic $s12HealthDaemon39HDCyclingPowerZoneConfigurationProviderP
 - _symbolic SaySay______pG_SiSgtG So20HKDataCacheProvidingP
@@ -864,5 +717,4 @@ CStrings:
 - "v24@?0@\"_TtC12HealthDaemon21HDWorkoutZonesBuilder\"8@\"NSError\"16"
 - "\xf0\xa1"
 - "\xf0\xf0\xb1"
-
 ```

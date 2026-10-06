@@ -2,89 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/CoreSpeechFoundation.framework/CoreSpeechFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcbfc4` | `0xcd774` | **`+0x17b0`** |
+| `__AUTH_CONST.__cfstring` | `0x95e0` | `0x9a40` | **`+0x460`** |
+| `__TEXT.__cstring` | `0x1685c` | `0x16adf` | **`+0x283`** |
+| `__TEXT.__oslogstring` | `0x11a3e` | `0x11bfb` | **`+0x1bd`** |
+| `__AUTH_CONST.__objc_const` | `0x14e50` | `0x14ff8` | **`+0x1a8`** |
+| `__TEXT.__objc_methlist` | `0xd9e8` | `0xdb10` | **`+0x128`** |
+| `__DATA_CONST.__const` | `0x2840` | `0x28c0` | **`+0x80`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7508` | `0x7588` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0x3e08` | `0x3e80` | **`+0x78`** |
+| `__AUTH_CONST.__const` | `0x1ae0` | `0x1b40` | **`+0x60`** |
+| `__DATA.__data` | `0x1a00` | `0x1a60` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0x1c8` | `0x218` | **`+0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x3cec` | `0x3d24` | **`+0x38`** |
+| `__DATA.__bss` | `0x1580` | `0x15b0` | **`+0x30`** |
+| `__DATA.__objc_ivar` | `0xd9c` | `0xdac` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x1038` | `0x1040` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x748` | `0x750` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x220` | `0x228` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x568` | `0x570` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.70.47.11.1
--  __TEXT.__text: 0xc82bc
--  __TEXT.__objc_methlist: 0xd9e8
 +3605.23.1.0.0
-+  __TEXT.__text: 0xc9a48
-+  __TEXT.__objc_methlist: 0xdb10
-   __TEXT.__const: 0xfe8
-   __TEXT.__dlopen_cstrs: 0x24a
-   __TEXT.__constg_swiftt: 0x2cc
-   __TEXT.__swift5_typeref: 0x1dc
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_types: 0x30
--  __TEXT.__cstring: 0x1685c
-+  __TEXT.__cstring: 0x16adf
-   __TEXT.__swift5_reflstr: 0x278
-   __TEXT.__swift5_assocty: 0x78
-   __TEXT.__swift5_fieldmd: 0x250
-   __TEXT.__swift5_proto: 0x74
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__gcc_except_tab: 0x3cec
--  __TEXT.__oslogstring: 0x11a3e
--  __TEXT.__unwind_info: 0x4a50
-+  __TEXT.__gcc_except_tab: 0x3d24
-+  __TEXT.__oslogstring: 0x11bfb
-+  __TEXT.__unwind_info: 0x4ac8
-   __TEXT.__eh_frame: 0x270
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2840
--  __DATA_CONST.__objc_classlist: 0x748
-+  __DATA_CONST.__const: 0x28c0
-+  __DATA_CONST.__objc_classlist: 0x750
-   __DATA_CONST.__objc_catlist: 0x58
--  __DATA_CONST.__objc_protolist: 0x220
-+  __DATA_CONST.__objc_protolist: 0x228
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x18
--  __DATA_CONST.__objc_selrefs: 0x7508
-+  __DATA_CONST.__objc_selrefs: 0x7588
-   __DATA_CONST.__objc_protorefs: 0x30
--  __DATA_CONST.__objc_superrefs: 0x568
-+  __DATA_CONST.__objc_superrefs: 0x570
-   __DATA_CONST.__objc_arraydata: 0x1c8
--  __DATA_CONST.__got: 0x1038
--  __AUTH_CONST.__const: 0x1ae0
--  __AUTH_CONST.__cfstring: 0x95e0
--  __AUTH_CONST.__objc_const: 0x14e50
-+  __DATA_CONST.__got: 0x1040
-+  __AUTH_CONST.__const: 0x1b40
-+  __AUTH_CONST.__cfstring: 0x9a40
-+  __AUTH_CONST.__objc_const: 0x14ff8
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_dictobj: 0x1e0
-   __AUTH_CONST.__objc_intobj: 0x4b0
 
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_floatobj: 0x1a0
-   __AUTH_CONST.__auth_got: 0xfc0
--  __AUTH.__objc_data: 0x1c8
--  __DATA.__objc_ivar: 0xd9c
--  __DATA.__data: 0x1a00
-+  __AUTH.__objc_data: 0x218
-+  __DATA.__objc_ivar: 0xdac
-+  __DATA.__data: 0x1a60
-   __DATA_DIRTY.__objc_data: 0x47c0
-   __DATA_DIRTY.__data: 0x2e8
-   __DATA_DIRTY.__bss: 0x608
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5244
--  Symbols:   12214
+-  Symbols:   9844
 -  CStrings:  3751
 +  Functions: 5275
-+  Symbols:   12281
++  Symbols:   9899
 +  CStrings:  3790
- 
 Symbols:
 + +[CSAudioConsumingStateMonitor sharedInstance]
 + +[CSAudioStartStreamOption getRecordingStartTime:useMachContinuousTime:]
@@ -366,21 +320,6 @@ Symbols:
 + ___block_descriptor_40_e8_32s_e25_q24?0"NSURL"8"NSURL"16ls32l8
 + __ensurePools.onceToken
 + _isContinuousConversationDisabledInSiriX.onceToken
-+ _objc_msgSend$_clearLogFilesInDirectory:matchingPatterns:exceedNumber:outError:
-+ _objc_msgSend$_setAudioConsumingActive:
-+ _objc_msgSend$absoluteHostTimeToContinuousHostTime:
-+ _objc_msgSend$audioConsumingStateMonitor:didChangeActive:
-+ _objc_msgSend$cleanup
-+ _objc_msgSend$clearLogFilesInDirectory:matchingPatterns:exceedNumber:
-+ _objc_msgSend$distantPast
-+ _objc_msgSend$getRecordingStartTime:useMachContinuousTime:isVoiceTriggered:voiceTriggerInfo:useVoiceTriggerStartTime:
-+ _objc_msgSend$isAudioBufferPoolEnabled
-+ _objc_msgSend$isBargeInDisabledForConnectedVehicle
-+ _objc_msgSend$isBargeInSupportEnabled
-+ _objc_msgSend$isCarPlayRecordRoute:
-+ _objc_msgSend$isRequestFromSpokenNotification
-+ _objc_msgSend$setNormalizationEnabled:
-+ _objc_msgSend$skipProcessingRaiseToSpeakAOE:
 + _sLargePool
 + _sSmallPool
 - +[CSUtils isSiriDSPTurnedOn]
@@ -610,9 +549,6 @@ Symbols:
 - GCC_except_table971
 - ___76+[CSUtils(Directory) clearLogFilesInDirectory:matchingPattern:exceedNumber:]_block_invoke
 - _isAudioStreamProvidingEnabled.result
-- _objc_msgSend$clearLogFilesInDirectory:matchingPattern:exceedNumber:
-- _objc_msgSend$connect:to:format:
-- _objc_msgSend$sharedAVSystemController
 CStrings:
 + "%s #output_stream Failed to connect source node to main mixer: %@"
 + "%s Acquiring listening mic indicator lock from : %{public}@ %@"

@@ -2,36 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/DialogEngine.framework/DialogEngine`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x460d44` | `0x460f44` | **`+0x200`** |
+| `__TEXT.__gcc_except_tab` | `0x391e0` | `0x391f8` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x14310` | `0x14320` | **`+0x10`** |
+| `__TEXT.__cstring` | `0x6922f` | `0x69228` | **`-0x7`** |
+
+### Other Changes
+
 ```diff
 
 -3600.23.9.0.0
--  __TEXT.__text: 0x4557cc
 +3605.6.1.0.0
-+  __TEXT.__text: 0x4559cc
-   __TEXT.__init_offsets: 0x28
-   __TEXT.__objc_methlist: 0x33b4
-   __TEXT.__const: 0x1c888
--  __TEXT.__cstring: 0x6922f
--  __TEXT.__gcc_except_tab: 0x391e0
-+  __TEXT.__cstring: 0x69228
-+  __TEXT.__gcc_except_tab: 0x391f8
-   __TEXT.__oslogstring: 0x303
-   __TEXT.__ustring: 0xca
--  __TEXT.__unwind_info: 0x15c10
-+  __TEXT.__unwind_info: 0x15c20
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libxml2.2.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 15899
--  Symbols:   25910
+-  Symbols:   25361
 +  Functions: 15900
-+  Symbols:   25911
-   CStrings:  25593
- 
++  Symbols:   25362
 Symbols:
 + GCC_except_table10005
 + GCC_except_table1001

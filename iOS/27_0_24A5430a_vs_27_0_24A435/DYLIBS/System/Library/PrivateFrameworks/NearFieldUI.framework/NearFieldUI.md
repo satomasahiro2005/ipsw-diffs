@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/NearFieldUI.framework/NearFieldUI`
 
-```diff
+### Section Size Changes
 
- 370.42.1.0.0
--  __TEXT.__text: 0x6c44
-+  __TEXT.__text: 0x6c4c
-   __TEXT.__objc_methlist: 0x30c
-   __TEXT.__const: 0x778
-   __TEXT.__swift5_typeref: 0x430
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6c44` | `0x6c4c` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_292ae373c -> sub_29384873c : 2044 -> 2052
+~ sub_2929c973c -> sub_29371c73c : 2044 -> 2052
 ```

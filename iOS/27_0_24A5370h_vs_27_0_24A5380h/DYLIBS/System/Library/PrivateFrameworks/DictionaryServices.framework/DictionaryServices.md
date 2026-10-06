@@ -2,27 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/DictionaryServices.framework/DictionaryServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3ad00` | `0x3abe8` | **`-0x118`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x3ad00
-+  __TEXT.__text: 0x3abe8
-   __TEXT.__objc_methlist: 0x14
-   __TEXT.__gcc_except_tab: 0x1298
-   __TEXT.__cstring: 0x822e
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+-383.4.0.0.0
++383.5.0.0.0
 Functions:
 ~ __ZN17TrieAccessContext9addRecordEPKtlPKhlPy : 900 -> 888
 ~ __ZN17TrieAccessContext12deleteRecordEPKtlPKhly : 952 -> 944
@@ -40,5 +31,4 @@ Functions:
 ~ __ZNSt3__127__insertion_sort_incompleteB9fqe220106INS_17_ClassicAlgPolicyERNS_6__lessIvvEEPNS_4pairIjjEEEEbT1_S8_T0_ : 684 -> 640
 ~ __ZNK6marisa8grimoire4trie4Tail7restoreERNS_5AgentEm : 152 -> 140
 ~ __ZNK6marisa8grimoire4trie4Tail12prefix_matchERNS_5AgentEm : 372 -> 336
-
 ```

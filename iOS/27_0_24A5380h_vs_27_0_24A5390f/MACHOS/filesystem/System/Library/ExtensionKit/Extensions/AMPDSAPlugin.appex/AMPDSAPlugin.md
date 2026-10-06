@@ -2,89 +2,55 @@
 
 > `/System/Library/ExtensionKit/Extensions/AMPDSAPlugin.appex/AMPDSAPlugin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xae48` | `0xa8cc` | **`-0x57c`** |
+| `__DATA.__bss` | `0xd80` | `0xa80` | **`-0x300`** |
+| `__TEXT.__const` | `0x918` | `0x778` | **`-0x1a0`** |
+| `__DATA_CONST.__const` | `0x618` | `0x520` | **`-0xf8`** |
+| `__TEXT.__eh_frame` | `0x650` | `0x598` | **`-0xb8`** |
+| `__TEXT.__oslogstring` | `0x505` | `0x4b5` | **`-0x50`** |
+| `__TEXT.__unwind_info` | `0x328` | `0x2e0` | **`-0x48`** |
+| `__TEXT.__auth_stubs` | `0xb30` | `0xaf0` | **`-0x40`** |
+| `__TEXT.__constg_swiftt` | `0x114` | `0xd4` | **`-0x40`** |
+| `__DATA.__data` | `0x260` | `0x228` | **`-0x38`** |
+| `__TEXT.__swift5_typeref` | `0x232` | `0x200` | **`-0x32`** |
+| `__TEXT.__cstring` | `0x231` | `0x261` | **`+0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0x1ac` | `0x180` | **`-0x2c`** |
+| `__DATA.__objc_const` | `0xb8` | `0x90` | **`-0x28`** |
+| `__DATA_CONST.__auth_got` | `0x5a0` | `0x580` | **`-0x20`** |
+| `__TEXT.__swift5_proto` | `0x6c` | `0x54` | **`-0x18`** |
+| `__DATA_CONST.__got` | `0x140` | `0x150` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x30` | `0x40` | **`+0x10`** |
+| `__TEXT.__objc_methname` | `0x46` | `0x37` | **`-0xf`** |
+| `__DATA_CONST.__auth_ptr` | `0x210` | `0x218` | **`+0x8`** |
+| `__TEXT.__swift5_reflstr` | `0x215` | `0x20d` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0x20` | `0x18` | **`-0x8`** |
+| `__TEXT.__objc_methtype` | `0x15` | `0x14` | **`-0x1`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__objc_classlist`
 - `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_capture`
 - `__TEXT.__swift5_entry`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift5_capture`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA.__objc_selrefs`
+
+### Other Changes
 
 ```diff
 
 -35.0.0.0.0
--  __TEXT.__text: 0xae48
--  __TEXT.__auth_stubs: 0xb30
 +38.0.0.0.0
-+  __TEXT.__text: 0xa8cc
-+  __TEXT.__auth_stubs: 0xaf0
-   __TEXT.__objc_stubs: 0x40
--  __TEXT.__const: 0x918
--  __TEXT.__constg_swiftt: 0x114
--  __TEXT.__swift5_typeref: 0x232
--  __TEXT.__swift5_reflstr: 0x215
--  __TEXT.__swift5_fieldmd: 0x1ac
-+  __TEXT.__const: 0x778
-+  __TEXT.__constg_swiftt: 0xd4
-+  __TEXT.__swift5_typeref: 0x200
-+  __TEXT.__swift5_reflstr: 0x20d
-+  __TEXT.__swift5_fieldmd: 0x180
-   __TEXT.__swift5_assocty: 0x90
--  __TEXT.__swift5_proto: 0x6c
--  __TEXT.__swift5_types: 0x20
--  __TEXT.__cstring: 0x231
--  __TEXT.__oslogstring: 0x505
-+  __TEXT.__swift5_proto: 0x54
-+  __TEXT.__swift5_types: 0x18
-+  __TEXT.__cstring: 0x261
-+  __TEXT.__oslogstring: 0x4b5
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__objc_methtype: 0x15
-+  __TEXT.__objc_methtype: 0x14
-   __TEXT.__swift_as_entry: 0x30
-   __TEXT.__swift_as_ret: 0x34
--  __TEXT.__swift_as_cont: 0x30
-+  __TEXT.__swift_as_cont: 0x40
-   __TEXT.__objc_classname: 0x28
--  __TEXT.__objc_methname: 0x46
-   __TEXT.__swift5_capture: 0x30
--  __TEXT.__unwind_info: 0x328
--  __TEXT.__eh_frame: 0x650
--  __DATA_CONST.__const: 0x618
-+  __TEXT.__objc_methname: 0x37
-+  __TEXT.__unwind_info: 0x2e0
-+  __TEXT.__eh_frame: 0x598
-+  __DATA_CONST.__const: 0x520
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x5a0
--  __DATA_CONST.__got: 0x140
--  __DATA_CONST.__auth_ptr: 0x210
--  __DATA.__objc_const: 0xb8
-+  __DATA_CONST.__auth_got: 0x580
-+  __DATA_CONST.__got: 0x150
-+  __DATA_CONST.__auth_ptr: 0x218
-+  __DATA.__objc_const: 0x90
-   __DATA.__objc_selrefs: 0x10
--  __DATA.__data: 0x260
--  __DATA.__bss: 0xd80
-+  __DATA.__data: 0x228
-+  __DATA.__bss: 0xa80
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 210
 -  Symbols:   120
 +  Functions: 189
 +  Symbols:   119
-   CStrings:  50
- 
 Symbols:
 - _objc_allocWithZone
 CStrings:

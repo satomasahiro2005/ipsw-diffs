@@ -2,68 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/PersonalAudio.framework/PersonalAudio`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14098` | `0x144fc` | **`+0x464`** |
+| `__TEXT.__oslogstring` | `0xdb8` | `0xe2e` | **`+0x76`** |
+| `__AUTH_CONST.__objc_const` | `0x1078` | `0x10d8` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x6d0` | `0x720` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0xee8` | `0xf30` | **`+0x48`** |
+| `__DATA_CONST.__objc_selrefs` | `0xef0` | `0xf28` | **`+0x38`** |
+| `__DATA.__bss` | `0xa8` | `0xd8` | **`+0x30`** |
+| `__DATA_DIRTY.__bss` | `0xc0` | `0x90` | **`-0x30`** |
+| `__DATA.__objc_ivar` | `0xac` | `0xb4` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x578` | `0x580` | **`+0x8`** |
+| `__TEXT.__cstring` | `0x1283` | `0x1285` | **`+0x2`** |
+
+### Other Changes
+
 ```diff
 
 -543.2.1.0.0
--  __TEXT.__text: 0x1393c
--  __TEXT.__objc_methlist: 0xee8
 +543.2.3.0.0
-+  __TEXT.__text: 0x13d94
-+  __TEXT.__objc_methlist: 0xf30
-   __TEXT.__const: 0x110
-   __TEXT.__dlopen_cstrs: 0x163
-   __TEXT.__gcc_except_tab: 0x39c
--  __TEXT.__cstring: 0x1283
--  __TEXT.__oslogstring: 0xdb8
--  __TEXT.__unwind_info: 0x670
-+  __TEXT.__cstring: 0x1285
-+  __TEXT.__oslogstring: 0xe2e
-+  __TEXT.__unwind_info: 0x680
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x6d0
-+  __DATA_CONST.__const: 0x720
-   __DATA_CONST.__objc_classlist: 0x50
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xef0
-+  __DATA_CONST.__objc_selrefs: 0xf28
-   __DATA_CONST.__objc_superrefs: 0x40
-   __DATA_CONST.__objc_arraydata: 0x40
-   __DATA_CONST.__got: 0x198
-   __AUTH_CONST.__const: 0x300
-   __AUTH_CONST.__cfstring: 0x1520
--  __AUTH_CONST.__objc_const: 0x1078
-+  __AUTH_CONST.__objc_const: 0x10d8
-   __AUTH_CONST.__objc_doubleobj: 0x80
-   __AUTH_CONST.__objc_intobj: 0x48
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__data: 0x18
--  __DATA.__objc_ivar: 0xac
-+  __DATA.__objc_ivar: 0xb4
-   __DATA.__data: 0xc0
-   __DATA_DIRTY.__objc_data: 0x320
-   __DATA_DIRTY.__data: 0x8
--  __DATA_DIRTY.__bss: 0xc0
-+  __DATA_DIRTY.__bss: 0x90
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
 
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 409
 -  Symbols:   751
 -  CStrings:  280
 +  Functions: 418
 +  Symbols:   763
 +  CStrings:  282
- 
 Symbols:
 + -[PAAccessoryManager lastSentTransparencyDataByAddress]
 + -[PAAccessoryManager pseHysteresisTimer]

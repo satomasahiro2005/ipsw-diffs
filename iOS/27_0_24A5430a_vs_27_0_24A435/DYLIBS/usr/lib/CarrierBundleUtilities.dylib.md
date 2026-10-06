@@ -2,44 +2,28 @@
 
 > `/usr/lib/CarrierBundleUtilities.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd50c` | `0xddac` | **`+0x8a0`** |
+| `__TEXT.__gcc_except_tab` | `0x1158` | `0x11ec` | **`+0x94`** |
+| `__TEXT.__oslogstring` | `0x1027` | `0x1081` | **`+0x5a`** |
+| `__TEXT.__unwind_info` | `0x7f8` | `0x828` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x18b` | `0x1b0` | **`+0x25`** |
+| `__AUTH_CONST.__auth_got` | `0x350` | `0x358` | **`+0x8`** |
+| `__TEXT.__const` | `0x5e9` | `0x5ea` | **`+0x1`** |
+
+### Other Changes
+
 ```diff
 
- 106.0.0.0.0
--  __TEXT.__text: 0xd50c
--  __TEXT.__gcc_except_tab: 0x1158
--  __TEXT.__cstring: 0x18b
--  __TEXT.__const: 0x5e9
--  __TEXT.__oslogstring: 0x1027
--  __TEXT.__unwind_info: 0x7f8
-+  __TEXT.__text: 0xddac
-+  __TEXT.__gcc_except_tab: 0x11ec
-+  __TEXT.__cstring: 0x1b0
-+  __TEXT.__const: 0x5ea
-+  __TEXT.__oslogstring: 0x1081
-+  __TEXT.__unwind_info: 0x828
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
-
-   __AUTH_CONST.__const: 0x2e8
-   __AUTH_CONST.__cfstring: 0x160
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__auth_got: 0x350
-+  __AUTH_CONST.__auth_got: 0x358
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/Security.framework/Security
-
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 299
--  Symbols:   579
+-  Symbols:   562
 -  CStrings:  116
 +  Functions: 305
-+  Symbols:   589
++  Symbols:   572
 +  CStrings:  121
- 
 Symbols:
 + GCC_except_table31
 + GCC_except_table34

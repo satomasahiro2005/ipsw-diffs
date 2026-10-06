@@ -2,34 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/AudioSessionServer.framework/AudioSessionServer`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6f484` | `0x6f56c` | **`+0xe8`** |
+| `__TEXT.__oslogstring` | `0x547e` | `0x54e9` | **`+0x6b`** |
+| `__TEXT.__gcc_except_tab` | `0xa638` | `0xa648` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -449.107.0.0.0
--  __TEXT.__text: 0x6e384
 +449.203.0.0.0
-+  __TEXT.__text: 0x6e46c
-   __TEXT.__realtime: 0x49c
-   __TEXT.__objc_methlist: 0xc4c
--  __TEXT.__gcc_except_tab: 0xa638
-+  __TEXT.__gcc_except_tab: 0xa648
-   __TEXT.__const: 0xbd0
-   __TEXT.__cstring: 0x490c
--  __TEXT.__oslogstring: 0x547e
-+  __TEXT.__oslogstring: 0x54e9
-   __TEXT.__dlopen_cstrs: 0x5a
-   __TEXT.__unwind_info: 0x30b8
-   __TEXT.__objc_stubs: 0x0
 
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1673
--  Symbols:   2755
+-  Symbols:   2596
 -  CStrings:  1014
 +  Functions: 1675
-+  Symbols:   2763
++  Symbols:   2604
 +  CStrings:  1015
- 
 Symbols:
 + GCC_except_table114
 + GCC_except_table118

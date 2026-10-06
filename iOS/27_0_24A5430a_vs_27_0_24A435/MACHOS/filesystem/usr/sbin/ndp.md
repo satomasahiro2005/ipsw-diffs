@@ -2,19 +2,20 @@
 
 > `/usr/sbin/ndp`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3c38` | `0x3c54` | **`+0x1c`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 755.0.0.0.0
--  __TEXT.__text: 0x3c38
-+  __TEXT.__text: 0x3c54
-   __TEXT.__auth_stubs: 0x310
-   __TEXT.__const: 0x50
-   __TEXT.__cstring: 0xbfb
+```text
 Functions:
 ~ _main : 6384 -> 6412
 ```

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ContactsUICore.framework/ContactsUICore`
 
-```diff
+### Section Size Changes
 
- 3720.100.1.0.0
--  __TEXT.__text: 0x3e5c1c
-+  __TEXT.__text: 0x3e5c0c
-   __TEXT.__objc_methlist: 0xaeb4
-   __TEXT.__const: 0x31734
-   __TEXT.__oslogstring: 0x871d
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3e5c1c` | `0x3e5c0c` | **`-0x10`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_19f3b4334 -> sub_19f494334 : 728 -> 732
 ~ sub_19f3b8490 -> sub_19f498494 : 2176 -> 2180

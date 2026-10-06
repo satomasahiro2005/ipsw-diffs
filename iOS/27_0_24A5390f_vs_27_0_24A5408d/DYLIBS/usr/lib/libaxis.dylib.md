@@ -2,47 +2,32 @@
 
 > `/usr/lib/libaxis.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5535c8` | `0x55abc8` | **`+0x7600`** |
+| `__TEXT.__gcc_except_tab` | `0x48150` | `0x48888` | **`+0x738`** |
+| `__TEXT.__unwind_info` | `0x11950` | `0x11c00` | **`+0x2b0`** |
+| `__TEXT.__const` | `0xf6b4` | `0xf854` | **`+0x1a0`** |
+| `__DATA.__data` | `0x17f8` | `0x1838` | **`+0x40`** |
+| `__DATA_CONST.__weak_got` | `0x640` | `0x680` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0x9120` | `0x9138` | **`+0x18`** |
+| `__TEXT.__cstring` | `0x16774` | `0x1678a` | **`+0x16`** |
+
+### Other Changes
+
 ```diff
 
 -8.1.9.0.0
--  __TEXT.__text: 0x5535c8
--  __TEXT.__const: 0xf6b4
--  __TEXT.__gcc_except_tab: 0x48150
--  __TEXT.__cstring: 0x16774
--  __TEXT.__unwind_info: 0x11950
 +8.1.11.0.0
-+  __TEXT.__text: 0x55abc8
-+  __TEXT.__const: 0xf854
-+  __TEXT.__gcc_except_tab: 0x48888
-+  __TEXT.__cstring: 0x1678a
-+  __TEXT.__unwind_info: 0x11c00
-   __TEXT.__eh_frame: 0x80
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0xc0
--  __DATA_CONST.__weak_got: 0x640
-+  __DATA_CONST.__weak_got: 0x680
-   __DATA_CONST.__got: 0x1a8
--  __AUTH_CONST.__const: 0x9120
-+  __AUTH_CONST.__const: 0x9138
-   __AUTH_CONST.__weak_auth_got: 0x450
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__data: 0x10
-   __AUTH.__thread_vars: 0x288
-   __AUTH.__thread_data: 0x10
-   __AUTH.__thread_bss: 0x180
--  __DATA.__data: 0x17f8
-+  __DATA.__data: 0x1838
-   __DATA.__bss: 0x13ee8
-   __DATA.__common: 0x8
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
+
 -  Functions: 9972
 -  Symbols:   2755
 -  CStrings:  1931
 +  Functions: 10038
 +  Symbols:   2776
 +  CStrings:  1932
- 
 Symbols:
 + __ZGVZNK4axis16DynamicIndexImpl22find_intersects_workerINS_10Triangle2DEEENSt3__13setIPNS_18DynamicIndexHandleENS3_4lessIS6_EENS3_9allocatorIS6_EEEERKT_E3acc
 + __ZGVZNK4axis16DynamicIndexImpl27find_within_distance_workerINS_10Triangle2DEEENSt3__13mapIPNS_18DynamicIndexHandleEdNS3_4lessIS6_EENS3_9allocatorINS3_4pairIKS6_dEEEEEERKT_dE3acc

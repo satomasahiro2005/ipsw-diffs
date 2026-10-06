@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ServicesIntelligence.framework/ServicesIntelligence`
 
-```diff
+### Section Size Changes
 
- 1.77.0.0.0
--  __TEXT.__text: 0x21bf54
-+  __TEXT.__text: 0x21c0d0
-   __TEXT.__objc_methlist: 0x2ec
-   __TEXT.__const: 0x21dec
-   __TEXT.__swift5_typeref: 0x5ac5
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21bf54` | `0x21c0d0` | **`+0x17c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1c243b714 -> sub_1c2937714 : 696 -> 704
 ~ sub_1c243f2a0 -> sub_1c293b2a8 : 4332 -> 4356

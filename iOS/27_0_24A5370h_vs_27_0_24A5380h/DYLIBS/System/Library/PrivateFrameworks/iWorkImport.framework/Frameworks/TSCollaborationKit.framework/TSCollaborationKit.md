@@ -2,41 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/TSCollaborationKit.framework/TSCollaborationKit`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x431b8
-+  __TEXT.__text: 0x42c60
-   __TEXT.__init_offsets: 0x8
-   __TEXT.__objc_methlist: 0x660
-   __TEXT.__const: 0x4bba
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x431b8` | `0x42c60` | **`-0x558`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNK4TSCK32CollaborationCommandHistoryArray18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 244 -> 236
 ~ __ZNK4TSCK39CollaborationCommandHistoryArraySegment18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 244 -> 236
 ~ __ZNK4TSCK36CollaborationCommandHistory_ItemList18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 452 -> 436
 ~ __ZNK4TSCK27CollaborationCommandHistory18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 572 -> 548
 ~ __ZNK4TSCK31CollaborationCommandHistoryItem18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 768 -> 736
-~ sub_2b7b17aa4 -> sub_2b7f64a4c : 304 -> 292
+~ sub_2b79d2aa4 -> sub_2b7f6ba4c : 304 -> 292
 ~ __ZNK4TSCK42CollaborationCommandHistoryCoalescingGroup18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 352 -> 344
 ~ __ZNK4TSCK46CollaborationCommandHistoryCoalescingGroupNode18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 244 -> 236
 ~ __ZNK4TSCK68CollaborationCommandHistoryOriginatingCommandAcknowledgementObserver18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 408 -> 392
@@ -56,7 +37,7 @@ Functions:
 ~ __ZNK4TSCK50CollaborationAppliedCommandDocumentRevisionMapping18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 904 -> 864
 ~ __ZNK4TSCK62CollaborationDocumentSessionState_AcknowledgementObserverEntry18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 452 -> 436
 ~ __ZNK4TSCK33CollaborationDocumentSessionState18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 3300 -> 3156
-~ sub_2b7b27864 -> sub_2b7f74640 : 304 -> 292
+~ sub_2b79e2864 -> sub_2b7f7b640 : 304 -> 292
 ~ __ZNK4TSCK26OperationStorageEntryArray18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 244 -> 236
 ~ __ZNK4TSCK33OperationStorageEntryArraySegment18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 804 -> 772
 ~ __ZNK4TSCK16OperationStorage18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 1100 -> 1052
@@ -92,10 +73,9 @@ Functions:
 ~ __ZNK4TSCK36ActivityStreamActivityCounterArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 480 -> 464
 ~ __ZNK4TSCK72ActivityStreamRemovedAuthorAuditorPendingStateArchive_DateToAuditAndType18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 392 -> 376
 ~ __ZNK4TSCK53ActivityStreamRemovedAuthorAuditorPendingStateArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 480 -> 464
-~ sub_2b7b4a248 -> sub_2b7f96d20 : 152 -> 144
-~ sub_2b7b4a430 -> sub_2b7f96f00 : 276 -> 268
+~ sub_2b7a05248 -> sub_2b7f9dd20 : 152 -> 144
+~ sub_2b7a05430 -> sub_2b7f9df00 : 276 -> 268
 ~ __ZNK7TSCKSOS30FixCorruptedDataCommandArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 392 -> 384
 ~ __ZNK7TSCKSOS37RemoveAuthorIdentifiersCommandArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 504 -> 488
 ~ __ZNK7TSCKSOS33ResetActivityStreamCommandArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 244 -> 236
-
 ```

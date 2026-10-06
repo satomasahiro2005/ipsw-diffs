@@ -2,66 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/VectorKit.framework/VectorKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x121b2d0` | `0x1221928` | **`+0x6658`** |
+| `__AUTH_CONST.__const` | `0x892d8` | `0x897f8` | **`+0x520`** |
+| `__TEXT.__gcc_except_tab` | `0x75fc8` | `0x76148` | **`+0x180`** |
+| `__AUTH_CONST.__objc_const` | `0x1edc8` | `0x1ee48` | **`+0x80`** |
+| `__TEXT.__objc_methlist` | `0x11074` | `0x110d4` | **`+0x60`** |
+| `__TEXT.__const` | `0x79338` | `0x792e8` | **`-0x50`** |
+| `__TEXT.__unwind_info` | `0x33c20` | `0x33c70` | **`+0x50`** |
+| `__TEXT.__oslogstring` | `0x11516` | `0x1155f` | **`+0x49`** |
+| `__AUTH_CONST.__cfstring` | `0x83c0` | `0x8400` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x9508` | `0x9520` | **`+0x18`** |
+| `__TEXT.__cstring` | `0x9af30` | `0x9af18` | **`-0x18`** |
+| `__DATA.__objc_ivar` | `0x202c` | `0x2038` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
 -2043.30.6.12.19
--  __TEXT.__text: 0x11f1b0c
--  __TEXT.__objc_methlist: 0x11074
--  __TEXT.__const: 0x79338
--  __TEXT.__gcc_except_tab: 0x75fc8
--  __TEXT.__oslogstring: 0x11516
--  __TEXT.__cstring: 0x9af30
 +2043.31.6.17.7
-+  __TEXT.__text: 0x11f8130
-+  __TEXT.__objc_methlist: 0x110d4
-+  __TEXT.__const: 0x792e8
-+  __TEXT.__gcc_except_tab: 0x76148
-+  __TEXT.__oslogstring: 0x1155f
-+  __TEXT.__cstring: 0x9af18
-   __TEXT.__ustring: 0xf8
--  __TEXT.__unwind_info: 0x3a2e0
-+  __TEXT.__unwind_info: 0x3a328
-   __TEXT.__eh_frame: 0x1d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_protolist: 0x140
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x9508
-+  __DATA_CONST.__objc_selrefs: 0x9520
-   __DATA_CONST.__objc_superrefs: 0x500
-   __DATA_CONST.__objc_arraydata: 0x690
-   __DATA_CONST.__got: 0xab8
--  __AUTH_CONST.__const: 0x892d8
--  __AUTH_CONST.__cfstring: 0x83c0
--  __AUTH_CONST.__objc_const: 0x1edc8
-+  __AUTH_CONST.__const: 0x897f8
-+  __AUTH_CONST.__cfstring: 0x8400
-+  __AUTH_CONST.__objc_const: 0x1ee48
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__objc_intobj: 0x4c8
-   __AUTH_CONST.__objc_arrayobj: 0x60
-
-   __AUTH.__thread_vars: 0x270
-   __AUTH.__thread_data: 0x231
-   __AUTH.__thread_bss: 0x180
--  __DATA.__objc_ivar: 0x202c
-+  __DATA.__objc_ivar: 0x2038
-   __DATA.__data: 0x328b8
-   __DATA_DIRTY.__objc_data: 0x1590
-   __DATA_DIRTY.__data: 0x1c
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libxml2.2.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 59002
--  Symbols:   101218
+-  Symbols:   97905
 -  CStrings:  22180
 +  Functions: 59029
-+  Symbols:   101259
++  Symbols:   97944
 +  CStrings:  22187
- 
 Symbols:
 + -[VKPuckAnimator hasAnimation]
 + -[VKRouteAnnotation displayString]
@@ -6484,8 +6454,6 @@ Symbols:
 + __ZTVNSt3__110__function6__funcIZNK4ecs25QueryIJRKN2md2ls16MeshRenderableIDERKNS5_17VisibilityGroupIDERKNS5_17WantsCulledSlicesEPKNS5_6InViewENS2_8WithBitsIRKNS5_15SliceAssignmentENS2_7bitmaskILy2EEEEENS2_10WritesBitsISJ_NSM_ILy128EEEEERSJ_EE28buildBitDirtyNarrowingFilterEvEUlNS2_6EntityEE_FbSU_EEE
 + __ZTVNSt3__110__function6__funcIZNK4ecs25QueryIJRKN2md2ls17VisibilityGroupIDENS2_8WithBitsIRKNS5_15SliceAssignmentENS2_7bitmaskILy258EEEEENS2_10WritesBitsISA_NSD_ILy32EEEEERSA_EE28buildBitDirtyNarrowingFilterEvEUlNS2_6EntityEE_FbSL_EEE
 + __ZThn8_NK2md13MapNavLabeler22routeAnnotationSupportEv
-+ _objc_msgSend$displayString
-+ _objc_msgSend$isGuidanceLandmark
 - GCC_except_table10019
 - GCC_except_table10023
 - GCC_except_table10028

@@ -2,56 +2,31 @@
 
 > `/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2363c24` | `0x235c880` | **`-0x73a4`** |
+| `__TEXT.__jsc_int` | `0x6a5b8` | `0x6bfb8` | **`+0x1a00`** |
+| `__DATA_CONST.__const` | `0x31f00` | `0x31f50` | **`+0x50`** |
+| `__TEXT.__const` | `0xa1014` | `0xa1034` | **`+0x20`** |
+| `__DATA_DIRTY.__bss` | `0xf650` | `0xf638` | **`-0x18`** |
+| `__TEXT.__unwind_info` | `0x201e0` | `0x201d0` | **`-0x10`** |
+| `__TEXT.__cstring` | `0x127838` | `0x12783c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -625.2.5.10.1
--  __TEXT.__text: 0x22e7bd4
--  __TEXT.__jsc_int: 0x6a5b8
 +625.2.7.1.0
-+  __TEXT.__text: 0x22e0700
-+  __TEXT.__jsc_int: 0x6bfb8
-   __TEXT.__objc_methlist: 0xb9c
--  __TEXT.__const: 0xa1014
-+  __TEXT.__const: 0xa1034
-   __TEXT.__dlsym_cstr: 0x34
--  __TEXT.__cstring: 0x127838
-+  __TEXT.__cstring: 0x12783c
-   __TEXT.__oslogstring: 0xa0f
-   __TEXT.__gcc_except_tab: 0x2930
-   __TEXT.__ustring: 0x10
--  __TEXT.__unwind_info: 0x20888
-+  __TEXT.__unwind_info: 0x20878
-   __TEXT.__eh_frame: 0x50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x31f00
-+  __DATA_CONST.__const: 0x31f50
-   __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   __DATA_DIRTY.__data: 0x13ff0
-   __DATA_DIRTY.__wtf_config: 0x4000
-   __DATA_DIRTY.__common: 0x485170
--  __DATA_DIRTY.__bss: 0xf650
-+  __DATA_DIRTY.__bss: 0xf638
-   - /System/Library/Frameworks/BrowserEngineCore.framework/BrowserEngineCore
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 40097
 -  Symbols:   48163
 -  CStrings:  25836
 +  Functions: 40099
 +  Symbols:   48155
 +  CStrings:  25837
- 
 Symbols:
 + __ZN3JSC10InByStatus14visitAggregateERNS_19AbstractSlotVisitorE
 + __ZN3JSC10JSFunction26reifyLazyBoundNameIfNeededERNS_2VMEPNS_14JSGlobalObjectENS_12PropertyNameE

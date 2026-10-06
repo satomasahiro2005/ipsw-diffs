@@ -1,4 +1,4 @@
-## filesystem — NEW (1615)
+## filesystem — NEW (1609)
 
 - `/Applications/CompanionSetup.app/Room.caar`
 - `/Applications/CustomerEngagementUIService.app/AppIcon60x60@2x.png`
@@ -18,8 +18,8 @@
 - `/Library/Application Support/BTServer/countryCodes_regV6.0_sarV1.14.plist`
 - `/Library/Application Support/BTServer/countryCodes_regV6.0_sarV1.15.plist`
 - `/Library/Application Support/BTServer/countryCodes_regV6.0_sarV1.16.plist`
-- `/Library/Audio/Tunings/AID8021/VAD/bottom_mic_lp.propstrip`
-- `/Library/Audio/Tunings/AID8021/VAD/built_in_mic_hardware_lp.propstrip`
+- `/Library/Audio/Tunings/AID8016/VAD/bottom_mic_lp.propstrip`
+- `/Library/Audio/Tunings/AID8016/VAD/built_in_mic_hardware_lp.propstrip`
 - `/Library/Audio/Tunings/Generic/Haptics/Patterns/UIClickPresentationFeedbackGeneratorPresentationDragged.ahap`
 - `/Library/Audio/Tunings/Generic/Haptics/Patterns/UIClickPresentationFeedbackGeneratorPresentationPreview.ahap`
 - `/System/Library/AccessibilityBundles/FilterAsNewCallersSettingsBundle.axbundle/Info.plist`
@@ -43,8 +43,8 @@
 - `/System/Library/Assistant/FlowDelegatePlugins/SocialConversationFlowDelegatePlugin.bundle/Templates/dialog/SocialConversation.catfamily/dalAprilFoolsSiri.cat/en-za.cat.bin`
 - `/System/Library/Assistant/FlowDelegatePlugins/SocialConversationFlowDelegatePlugin.bundle/Templates/dialog/SocialConversation.catfamily/dalAreYouNice.cat/en-in.cat.bin`
 - `/System/Library/Assistant/FlowDelegatePlugins/SocialConversationFlowDelegatePlugin.bundle/Templates/dialog/SocialConversation.catfamily/dalAreYouSerious.cat/en-in.cat.bin`
-- `/System/Library/Audio/Tunings/AID8021/AudioCodecs/Models/agvc/v1/AGVC_d1.0/model.ir`
-- `/System/Library/Audio/Tunings/AID8021/AudioCodecs/Models/agvc/v1/AGVC_e1.0/model.ir`
+- `/System/Library/Audio/Tunings/AID8016/AudioCodecs/Models/agvc/v1/AGVC_d1.0/model.ir`
+- `/System/Library/Audio/Tunings/AID8016/AudioCodecs/Models/agvc/v1/AGVC_e1.0/model.ir`
 - `/System/Library/BridgeManifests/BridgeManifests.bundle/SettingsSearchManifest-com.apple.NanoContactsBridgeSettingsTinker.loctable`
 - `/System/Library/BridgeManifests/BridgeManifests.bundle/SettingsSearchManifest-com.apple.NanoContactsBridgeSettingsTinker.plist`
 - `/System/Library/BridgeManifests/BridgeManifests.bundle/SettingsSearchManifest-com.apple.NanoHealthBalanceBridgeSettings.plist`
@@ -977,10 +977,10 @@
 - `/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_GameController_DB1/3e14ab5dfe8c1a27ceb7c6084eb28598f668c16e.asset/_CodeSignature/CodeRequirements-1`
 - `/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_GameController_DB1/3e14ab5dfe8c1a27ceb7c6084eb28598f668c16e.asset/_CodeSignature/CodeResources`
 - `/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_GameController_DB1/3e14ab5dfe8c1a27ceb7c6084eb28598f668c16e.asset/_CodeSignature/CodeSignature`
-- `/System/Library/PrivateFrameworks/ANSTKit.framework/Models/anst.mlmodelc/model.H18.espresso.hwx`
-- `/System/Library/PrivateFrameworks/ANSTKit.framework/Models/anst.mlmodelc/model.H18.espresso.precompilation_info`
-- `/System/Library/PrivateFrameworks/ANSTKit.framework/Models/anst_v5d4.mlmodelc/model.bundle/H18.bundle/H18.e5`
-- `/System/Library/PrivateFrameworks/ANSTKit.framework/Models/anst_v5d4.mlmodelc/model.bundle/H18.bundle/regular/regular_ane/model.hwx`
+- `/System/Library/PrivateFrameworks/ANSTKit.framework/Models/anst.mlmodelc/model.H17.espresso.hwx`
+- `/System/Library/PrivateFrameworks/ANSTKit.framework/Models/anst.mlmodelc/model.H17.espresso.precompilation_info`
+- `/System/Library/PrivateFrameworks/ANSTKit.framework/Models/anst_v5d4.mlmodelc/model.bundle/H17.bundle/H17.e5`
+- `/System/Library/PrivateFrameworks/ANSTKit.framework/Models/anst_v5d4.mlmodelc/model.bundle/H17.bundle/regular/regular_ane/model.hwx`
 - `/System/Library/PrivateFrameworks/AccessibilitySharedSupport.framework/LoopScanningMagnifier_HapticOnly_ML.ahap`
 - `/System/Library/PrivateFrameworks/AgentCanvasUI.framework/com.apple.AgentCanvasUI.plist`
 - `/System/Library/PrivateFrameworks/AnalyticsAgentFramework.framework/Info.plist`
@@ -990,9 +990,6 @@
 - `/System/Library/PrivateFrameworks/AppleAccountTransparency.framework/Info.plist`
 - `/System/Library/PrivateFrameworks/AppleAccountTransparency.framework/_CodeSignature/CodeResources`
 - `/System/Library/PrivateFrameworks/AppleAccountTransparency.framework/appleaccounttransparencyd`
-- `/System/Library/PrivateFrameworks/AppleDepth.framework/MLModels/CMM-OS26/Compiled-H18-v53-v54-v57/build_config.plist`
-- `/System/Library/PrivateFrameworks/AppleDepth.framework/MLModels/CMM-OS26/Compiled-H18-v53-v54-v57/model.bundle/H18.bundle/H18.e5`
-- `/System/Library/PrivateFrameworks/AppleDepth.framework/MLModels/CMM-OS26/Compiled-H18-v53-v54-v57/model.bundle/H18.bundle/main_height288_width512/main_ane/model.hwx`
 - `/System/Library/PrivateFrameworks/AppleDepth.framework/MLModels/CMM-OS26/model.json`
 - `/System/Library/PrivateFrameworks/AppleMediaServicesUIKitInternal.framework/Localizable.loctable`
 - `/System/Library/PrivateFrameworks/ApplePushService.framework/FakeAPNSServerTests.xctest/FakeAPNSServerTests`
@@ -1076,10 +1073,10 @@
 - `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v130_ane_8bit_combined.mlmodelc/analytics/coremldata.bin`
 - `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v130_ane_8bit_combined.mlmodelc/coremldata.bin`
 - `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v130_ane_8bit_combined.mlmodelc/metadata.json`
-- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v130_ane_8bit_combined.mlmodelc/model.specialization.bundle/H18.bundle/H18.e5`
-- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v130_ane_8bit_combined.mlmodelc/model.specialization.bundle/H18.bundle/ane_compile/multiprocedure/model.hwx`
-- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v130_ane_8bit_combined.mlmodelc/model.specialization.bundle/H18.bundle/main_ctx_128_090f2853/main_ctx_128_bnns/bnns_program.bnnsir`
-- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v130_ane_8bit_combined.mlmodelc/model.specialization.bundle/H18.bundle/main_ctx_512_1fd2fbc1/main_ctx_512_bnns/bnns_program.bnnsir`
+- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v130_ane_8bit_combined.mlmodelc/model.specialization.bundle/H17.bundle/H17.e5`
+- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v130_ane_8bit_combined.mlmodelc/model.specialization.bundle/H17.bundle/ane_compile/multiprocedure/model.hwx`
+- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v130_ane_8bit_combined.mlmodelc/model.specialization.bundle/H17.bundle/main_ctx_128_090f2853/main_ctx_128_bnns/bnns_program.bnnsir`
+- `/System/Library/PrivateFrameworks/EmbeddingCore.framework/cross_encoder_v130_ane_8bit_combined.mlmodelc/model.specialization.bundle/H17.bundle/main_ctx_512_1fd2fbc1/main_ctx_512_bnns/bnns_program.bnnsir`
 - `/System/Library/PrivateFrameworks/EmbeddingCore.framework/nemo_5m_md3_2026-04.vision.mlmodelc/analytics/coremldata.bin`
 - `/System/Library/PrivateFrameworks/EmbeddingCore.framework/nemo_5m_md3_2026-04.vision.mlmodelc/coremldata.bin`
 - `/System/Library/PrivateFrameworks/EmbeddingCore.framework/nemo_5m_md3_2026-04.vision.mlmodelc/metadata.json`
@@ -1096,9 +1093,6 @@
 - `/System/Library/PrivateFrameworks/FileBrowsingServices.framework/XPCServices/FileBrowsingPathResolver.xpc/InfoPlist.loctable`
 - `/System/Library/PrivateFrameworks/FileBrowsingServices.framework/XPCServices/FileBrowsingPathResolver.xpc/_CodeSignature/CodeResources`
 - `/System/Library/PrivateFrameworks/FileBrowsingServices.framework/_CodeSignature/CodeResources`
-- `/System/Library/PrivateFrameworks/FindMyBeaconingSupport.framework/Info.plist`
-- `/System/Library/PrivateFrameworks/FindMyBeaconingSupport.framework/Localizable.loctable`
-- `/System/Library/PrivateFrameworks/FindMyBeaconingSupport.framework/_CodeSignature/CodeResources`
 - `/System/Library/PrivateFrameworks/GenerativeAssistantActions.framework/Templates/dialog/GenerativeAssistantTools.catfamily/partnerSwitching.cat/_params.cat.bin`
 - `/System/Library/PrivateFrameworks/GenerativeAssistantActions.framework/Templates/dialog/GenerativeAssistantTools.catfamily/partnerSwitching.cat/en.cat.bin`
 - `/System/Library/PrivateFrameworks/GenerativeAssistantActions.framework/Templates/dialog/GenerativeAssistantTools.catfamily/yieldConfirmation.cat/de-at.cat.bin`
@@ -1359,8 +1353,8 @@
 - `/System/Library/PrivateFrameworks/UIGrounding.framework/Metadata.generativefunctions/d_CZPF4IRQsSAyupX9-aw8Dl-P4.`
 - `/System/Library/PrivateFrameworks/UnilogSafariUsageLibrary.framework/Info.plist`
 - `/System/Library/PrivateFrameworks/UnilogSafariUsageLibrary.framework/_CodeSignature/CodeResources`
-- `/System/Library/PrivateFrameworks/VisualIntelligenceCore.framework/visualgrounding_md10_v1_x7shu4ydiy_epoch_10_categorynumber32_palettized.bundle/H18.bundle/H18.e5`
-- `/System/Library/PrivateFrameworks/VisualIntelligenceCore.framework/visualgrounding_md10_v1_x7shu4ydiy_epoch_10_categorynumber32_palettized.bundle/H18.bundle/main/main_ane/model.hwx`
+- `/System/Library/PrivateFrameworks/VisualIntelligenceCore.framework/visualgrounding_md10_v1_x7shu4ydiy_epoch_10_categorynumber32_palettized.bundle/H17.bundle/H17.e5`
+- `/System/Library/PrivateFrameworks/VisualIntelligenceCore.framework/visualgrounding_md10_v1_x7shu4ydiy_epoch_10_categorynumber32_palettized.bundle/H17.bundle/main/main_ane/model.hwx`
 - `/System/Library/PrivateFrameworks/VisualIntelligenceCore.framework/visualgrounding_md10_v1_x7shu4ydiy_epoch_10_categorynumber32_palettized_text_feats.bin`
 - `/System/Library/PrivateFrameworks/VoiceServices.framework/TTSResources/PreinstallAssets/en-IN_aman/AssetData/fastspeech2/fastspeech2_decoder.mlmodelc/analytics/coremldata.bin`
 - `/System/Library/PrivateFrameworks/VoiceServices.framework/TTSResources/PreinstallAssets/en-IN_aman/AssetData/fastspeech2/fastspeech2_decoder.mlmodelc/coremldata.bin`
@@ -1612,6 +1606,6 @@
 - `/usr/libexec/ThermalModelParameters.plist`
 - `/usr/libexec/polarisd`
 - `/usr/sbin/bluetoothaudiod`
-- `/usr/share/firmware/bluetooth/BCM4399C2_24.1.232.1331_PCIE_Nepenthes_CLPC_OS_STATS_20260520.bin`
-- `/usr/share/firmware/bluetooth/BCM4399C2_24.1.232.1332_PCIE_Nepenthes_CLPC_OS_USI_20260520.bin`
+- `/usr/share/firmware/bluetooth/BCM4399C2_24.1.232.1329_PCIE_Cephalotus_CLPC_OS_STATS_20260520.bin`
+- `/usr/share/firmware/bluetooth/BCM4399C2_24.1.232.1330_PCIE_Cephalotus_CLPC_OS_USI_20260520.bin`
 - `/usr/standalone/firmware/SLAM/Stockholm91.measurements.der`

@@ -2,86 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/OnDeviceStorageDaemon.framework/OnDeviceStorageDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x159350` | `0x15c8c0` | **`+0x3570`** |
+| `__DATA.__bss` | `0x4750` | `0x5550` | **`+0xe00`** |
+| `__TEXT.__const` | `0x16794` | `0x17134` | **`+0x9a0`** |
+| `__TEXT.__unwind_info` | `0x7608` | `0x7c08` | **`+0x600`** |
+| `__TEXT.__eh_frame` | `0x17280` | `0x1767c` | **`+0x3fc`** |
+| `__TEXT.__swift5_typeref` | `0x20fe` | `0x22a2` | **`+0x1a4`** |
+| `__AUTH_CONST.__const` | `0x3c28` | `0x3da8` | **`+0x180`** |
+| `__DATA.__data` | `0x970` | `0xae8` | **`+0x178`** |
+| `__TEXT.__swift5_assocty` | `0x838` | `0x980` | **`+0x148`** |
+| `__TEXT.__cstring` | `0x797c` | `0x7abc` | **`+0x140`** |
+| `__TEXT.__constg_swiftt` | `0x2160` | `0x21f4` | **`+0x94`** |
+| `__TEXT.__swift5_fieldmd` | `0x1460` | `0x14f4` | **`+0x94`** |
+| `__TEXT.__swift5_capture` | `0x998` | `0x910` | **`-0x88`** |
+| `__TEXT.__gcc_except_tab` | `0x458c` | `0x4518` | **`-0x74`** |
+| `__TEXT.__swift5_proto` | `0x384` | `0x3f4` | **`+0x70`** |
+| `__TEXT.__swift_as_cont` | `0x11a0` | `0x1204` | **`+0x64`** |
+| `__TEXT.__swift5_reflstr` | `0xd18` | `0xd78` | **`+0x60`** |
+| `__TEXT.__swift_as_entry` | `0x340` | `0x39c` | **`+0x5c`** |
+| `__TEXT.__swift_as_ret` | `0x894` | `0x8f0` | **`+0x5c`** |
+| `__AUTH_CONST.__auth_got` | `0x1ea0` | `0x1ee0` | **`+0x40`** |
+| `__TEXT.__swift5_builtin` | `0x1a4` | `0x1b8` | **`+0x14`** |
+| `__TEXT.__swift5_types` | `0x190` | `0x1a0` | **`+0x10`** |
+| `__TEXT.__swift5_mpenum` | `0x10` | `0x18` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3.0.54.0.0
--  __TEXT.__text: 0x159350
 +3.0.59.0.0
-+  __TEXT.__text: 0x15c8c0
-   __TEXT.__objc_methlist: 0x38
--  __TEXT.__const: 0x16794
--  __TEXT.__gcc_except_tab: 0x458c
--  __TEXT.__cstring: 0x797c
--  __TEXT.__constg_swiftt: 0x2160
--  __TEXT.__swift5_typeref: 0x20fe
--  __TEXT.__swift5_fieldmd: 0x1460
--  __TEXT.__swift5_builtin: 0x1a4
--  __TEXT.__swift5_reflstr: 0xd18
--  __TEXT.__swift5_assocty: 0x838
--  __TEXT.__swift5_proto: 0x384
--  __TEXT.__swift5_types: 0x190
-+  __TEXT.__const: 0x17134
-+  __TEXT.__gcc_except_tab: 0x4518
-+  __TEXT.__cstring: 0x7abc
-+  __TEXT.__constg_swiftt: 0x21f4
-+  __TEXT.__swift5_typeref: 0x22a2
-+  __TEXT.__swift5_fieldmd: 0x14f4
-+  __TEXT.__swift5_builtin: 0x1b8
-+  __TEXT.__swift5_reflstr: 0xd78
-+  __TEXT.__swift5_assocty: 0x980
-+  __TEXT.__swift5_proto: 0x3f4
-+  __TEXT.__swift5_types: 0x1a0
-   __TEXT.__swift5_protos: 0xc4
--  __TEXT.__swift5_capture: 0x998
--  __TEXT.__swift_as_entry: 0x340
--  __TEXT.__swift_as_cont: 0x11a0
--  __TEXT.__swift_as_ret: 0x894
--  __TEXT.__swift5_mpenum: 0x10
-+  __TEXT.__swift5_capture: 0x910
-+  __TEXT.__swift_as_entry: 0x39c
-+  __TEXT.__swift_as_cont: 0x1204
-+  __TEXT.__swift_as_ret: 0x8f0
-+  __TEXT.__swift5_mpenum: 0x18
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0x7608
--  __TEXT.__eh_frame: 0x17280
-+  __TEXT.__unwind_info: 0x7c08
-+  __TEXT.__eh_frame: 0x1767c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__weak_got: 0x10
-   __DATA_CONST.__objc_selrefs: 0x150
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x3c28
-+  __AUTH_CONST.__const: 0x3da8
-   __AUTH_CONST.__objc_const: 0x1f20
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__auth_got: 0x1ea0
-+  __AUTH_CONST.__auth_got: 0x1ee0
-   __AUTH.__objc_data: 0x48
-   __AUTH.__data: 0x3b8
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x120
--  __DATA.__data: 0x970
--  __DATA.__bss: 0x4750
-+  __DATA.__data: 0xae8
-+  __DATA.__bss: 0x5550
-   __DATA.__common: 0xe8
-   __DATA_DIRTY.__objc_data: 0x2b8
-   __DATA_DIRTY.__data: 0x2c30
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4634
--  Symbols:   2514
+-  Symbols:   2476
 -  CStrings:  1040
 +  Functions: 4779
-+  Symbols:   2558
++  Symbols:   2520
 +  CStrings:  1048
- 
 Symbols:
 + GCC_except_table197
 + GCC_except_table198

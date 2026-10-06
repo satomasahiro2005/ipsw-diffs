@@ -2,109 +2,69 @@
 
 > `/System/Library/PrivateFrameworks/SmartStackUIServices.framework/SmartStackUIServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2bf8` | `0x16ab4` | **`+0x13ebc`** |
+| `__AUTH_CONST.__objc_const` | `—` | `0x1398` | **`+0x1398`** |
+| `__TEXT.__const` | `0x3f0` | `0x132a` | **`+0xf3a`** |
+| `__TEXT.__swift5_typeref` | `0xbf` | `0xa34` | **`+0x975`** |
+| `__TEXT.__objc_methlist` | `—` | `0x8c0` | **`+0x8c0`** |
+| `__AUTH.__objc_data` | `—` | `0x800` | **`+0x800`** |
+| `__DATA.__data` | `0x98` | `0x890` | **`+0x7f8`** |
+| `__AUTH_CONST.__const` | `0x948` | `0x1078` | **`+0x730`** |
+| `__TEXT.__oslogstring` | `0x52` | `0x725` | **`+0x6d3`** |
+| `__TEXT.__constg_swiftt` | `0xe8` | `0x768` | **`+0x680`** |
+| `__TEXT.__unwind_info` | `0x138` | `0x7b0` | **`+0x678`** |
+| `__AUTH_CONST.__auth_got` | `0x240` | `0x878` | **`+0x638`** |
+| `__TEXT.__swift5_reflstr` | `0x313` | `0x8d5` | **`+0x5c2`** |
+| `__AUTH.__data` | `—` | `0x578` | **`+0x578`** |
+| `__TEXT.__cstring` | `0x99` | `0x5f8` | **`+0x55f`** |
+| `__DATA_CONST.__objc_selrefs` | `0x80` | `0x5d8` | **`+0x558`** |
+| `__DATA.__bss` | `0x380` | `0x870` | **`+0x4f0`** |
+| `__TEXT.__swift5_fieldmd` | `0x18c` | `0x5d4` | **`+0x448`** |
+| `__TEXT.__eh_frame` | `0x48` | `0x368` | **`+0x320`** |
+| `__DATA_CONST.__got` | `0x0` | `0x278` | **`+0x278`** |
+| `__TEXT.__swift5_capture` | `—` | `0x194` | **`+0x194`** |
+| `__DATA_CONST.__const` | `0x98` | `0x1e0` | **`+0x148`** |
+| `__DATA_CONST.__objc_protolist` | `—` | `0xa0` | **`+0xa0`** |
+| `__TEXT.__swift5_assocty` | `0x18` | `0xb0` | **`+0x98`** |
+| `__DATA_CONST.__objc_classlist` | `—` | `0x78` | **`+0x78`** |
+| `__DATA_CONST.__objc_protorefs` | `—` | `0x50` | **`+0x50`** |
+| `__TEXT.__swift5_types` | `0x1c` | `0x5c` | **`+0x40`** |
+| `__TEXT.__swift5_proto` | `0x1c` | `0x4c` | **`+0x30`** |
+| `__AUTH_CONST.__cfstring` | `—` | `0x20` | **`+0x20`** |
+| `__DATA_CONST.__objc_superrefs` | `—` | `0x20` | **`+0x20`** |
+| `__TEXT.__swift5_protos` | `—` | `0x18` | **`+0x18`** |
+| `__DATA.__common` | `—` | `0x10` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `—` | `0x10` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x4` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `—` | `0x4` | **`+0x4`** |
+| `__TEXT.__objc_classname` | `—` | `0x0` | **`+0x0`** |
+| `__TEXT.__objc_methtype` | `—` | `0x0` | **`+0x0`** |
+
+### Other Changes
+
 ```diff
 
- 337.0.0.0.0
--  __TEXT.__text: 0x2bf8
--  __TEXT.__const: 0x3f0
--  __TEXT.__constg_swiftt: 0xe8
--  __TEXT.__swift5_typeref: 0xbf
-+  __TEXT.__text: 0x16ab4
-+  __TEXT.__objc_methlist: 0x8c0
-+  __TEXT.__const: 0x132a
-+  __TEXT.__cstring: 0x5f8
-+  __TEXT.__constg_swiftt: 0x768
-+  __TEXT.__swift5_typeref: 0xa34
-   __TEXT.__swift5_builtin: 0x3c
--  __TEXT.__swift5_reflstr: 0x313
--  __TEXT.__swift5_fieldmd: 0x18c
--  __TEXT.__swift5_assocty: 0x18
--  __TEXT.__swift5_proto: 0x1c
--  __TEXT.__swift5_types: 0x1c
--  __TEXT.__cstring: 0x99
--  __TEXT.__oslogstring: 0x52
--  __TEXT.__unwind_info: 0x138
--  __TEXT.__eh_frame: 0x48
-+  __TEXT.__swift5_reflstr: 0x8d5
-+  __TEXT.__swift5_fieldmd: 0x5d4
-+  __TEXT.__swift5_assocty: 0xb0
-+  __TEXT.__swift5_proto: 0x4c
-+  __TEXT.__swift5_types: 0x5c
-+  __TEXT.__swift5_capture: 0x194
-+  __TEXT.__oslogstring: 0x725
-+  __TEXT.__swift5_protos: 0x18
-+  __TEXT.__swift_as_entry: 0x8
-+  __TEXT.__swift_as_ret: 0x4
-+  __TEXT.__swift_as_cont: 0x4
-+  __TEXT.__unwind_info: 0x7b0
-+  __TEXT.__eh_frame: 0x368
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-+  __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0x98
-+  __TEXT.__objc_methtype: 0x0
-+  __DATA_CONST.__const: 0x1e0
-+  __DATA_CONST.__objc_classlist: 0x78
-+  __DATA_CONST.__objc_protolist: 0xa0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x80
--  __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x948
--  __AUTH_CONST.__auth_got: 0x240
--  __DATA.__data: 0x98
-+  __DATA_CONST.__objc_selrefs: 0x5d8
-+  __DATA_CONST.__objc_protorefs: 0x50
-+  __DATA_CONST.__objc_superrefs: 0x20
-+  __DATA_CONST.__got: 0x278
-+  __AUTH_CONST.__const: 0x1078
-+  __AUTH_CONST.__cfstring: 0x20
-+  __AUTH_CONST.__objc_const: 0x1398
-+  __AUTH_CONST.__auth_got: 0x878
-+  __AUTH.__objc_data: 0x800
-+  __AUTH.__data: 0x578
-+  __DATA.__objc_ivar: 0x10
-+  __DATA.__data: 0x890
-+  __DATA.__common: 0x10
-   - /System/Library/Frameworks/ClockKit.framework/ClockKit
 +  - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/RelevanceKit.framework/RelevanceKit
 
-   - /System/Library/Frameworks/WidgetKit.framework/WidgetKit
-   - /System/Library/PrivateFrameworks/BackBoardServices.framework/BackBoardServices
-   - /System/Library/PrivateFrameworks/BacklightServicesHost.framework/BacklightServicesHost
 +  - /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard
-   - /System/Library/PrivateFrameworks/ChronoServices.framework/ChronoServices
-   - /System/Library/PrivateFrameworks/ClockKitUI.framework/ClockKitUI
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
 
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftCoreImage.dylib
-   - /usr/lib/swift/libswiftCoreLocation.dylib
 +  - /usr/lib/swift/libswiftCoreMIDI.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
-   - /usr/lib/swift/libswiftIntents.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
+
 +  - /usr/lib/swift/libswiftObservation.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
-   - /usr/lib/swift/libswiftSpatial.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
+
 +  - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 129
--  Symbols:   147
+-  Symbols:   131
 -  CStrings:  7
 +  Functions: 722
-+  Symbols:   649
++  Symbols:   568
 +  CStrings:  70
- 
 Symbols:
 + -[SSUICardClientSceneSettingsDiffContext .cxx_destruct]
 + -[SSUICardClientSceneSettingsDiffContext currentSettings]
@@ -342,71 +302,6 @@ Symbols:
 + _keypath_get.12Tm
 + _keypath_set.13Tm
 + _objc_autoreleaseReturnValue
-+ _objc_msgSend$_FBSScene
-+ _objc_msgSend$_contextId
-+ _objc_msgSend$_observeProperty:observer:
-+ _objc_msgSend$addChildViewController:
-+ _objc_msgSend$addObserver:
-+ _objc_msgSend$addSubview:
-+ _objc_msgSend$allowBacklightActiveCardUpdates
-+ _objc_msgSend$allowsHitTesting
-+ _objc_msgSend$backlightSceneHostEnvironment
-+ _objc_msgSend$bounds
-+ _objc_msgSend$cardGlassStyleFraction
-+ _objc_msgSend$cardIndex
-+ _objc_msgSend$cardTintColor
-+ _objc_msgSend$clearColor
-+ _objc_msgSend$clientScene
-+ _objc_msgSend$componentForExtension:ofClass:
-+ _objc_msgSend$contentReadyForDisplay
-+ _objc_msgSend$contextID
-+ _objc_msgSend$currentDevice
-+ _objc_msgSend$currentSettings
-+ _objc_msgSend$endpoint
-+ _objc_msgSend$extensionForProtocol:
-+ _objc_msgSend$hostScene
-+ _objc_msgSend$identityForEmbeddedApplicationIdentifier:
-+ _objc_msgSend$init
-+ _objc_msgSend$initWithCoder:
-+ _objc_msgSend$initWithIdentifier:
-+ _objc_msgSend$initWithNibName:bundle:
-+ _objc_msgSend$initWithPreviousSettings:currentSettings:
-+ _objc_msgSend$initWithProcessIdentity:sceneSpecification:
-+ _objc_msgSend$inspectDiff:withContext:
-+ _objc_msgSend$invalidate
-+ _objc_msgSend$ipc_addPolicy:
-+ _objc_msgSend$layer
-+ _objc_msgSend$layerManager
-+ _objc_msgSend$layers
-+ _objc_msgSend$observeAllowBacklightActiveCardUpdatesWithBlock:
-+ _objc_msgSend$observeCardGlassStyleFractionWithBlock:
-+ _objc_msgSend$observeCardTintColorWithBlock:
-+ _objc_msgSend$observeContentReadyForDisplayWithBlock:
-+ _objc_msgSend$observeProperty:withBlock:
-+ _objc_msgSend$policyRequiringSharingOfTouchesDeliveredToChildContextId:withHostContextId:
-+ _objc_msgSend$previousSettings
-+ _objc_msgSend$respondToActions:forFBScene:
-+ _objc_msgSend$sceneView
-+ _objc_msgSend$sceneViewController
-+ _objc_msgSend$scheduleWithFireInterval:leewayInterval:queue:handler:
-+ _objc_msgSend$setAllowBacklightActiveCardUpdates:
-+ _objc_msgSend$setAllowsHitTesting:
-+ _objc_msgSend$setAlwaysOnEnabledForEnvironment:
-+ _objc_msgSend$setAssertionEndpoint:
-+ _objc_msgSend$setBackgroundColor:
-+ _objc_msgSend$setBounds:
-+ _objc_msgSend$setCardGlassStyleFraction:
-+ _objc_msgSend$setCardIndex:
-+ _objc_msgSend$setCardTintColor:
-+ _objc_msgSend$setContentReadyForDisplay:
-+ _objc_msgSend$setFrame:
-+ _objc_msgSend$setOpaque:
-+ _objc_msgSend$settings
-+ _objc_msgSend$settingsDiff
-+ _objc_msgSend$updateClientSettings:
-+ _objc_msgSend$updateSettingsWithBlock:
-+ _objc_msgSend$view
-+ _objc_msgSend$window
 + _objc_msgSendSuper2
 + _objc_release
 + _objc_release_x1

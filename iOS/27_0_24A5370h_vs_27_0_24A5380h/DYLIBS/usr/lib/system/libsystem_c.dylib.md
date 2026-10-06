@@ -2,45 +2,24 @@
 
 > `/usr/lib/system/libsystem_c.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x798d0` | `0x7911c` | **`-0x7b4`** |
+| `__DATA_DIRTY.__data` | `0x12f8` | `0x1248` | **`-0xb0`** |
+| `__DATA.__data` | `0x4d5` | `0x57d` | **`+0xa8`** |
+| `__AUTH_CONST.__auth_got` | `0x810` | `0x7f8` | **`-0x18`** |
+| `__DATA.__bss` | `0xcb0` | `0xca8` | **`-0x8`** |
+| `__DATA_DIRTY.__bss` | `0x2d8` | `0x2e0` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x1480` | `0x1488` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x798d0
-+  __TEXT.__text: 0x7911c
-   __TEXT.__const: 0x27a0
-   __TEXT.__cstring: 0x3280
-   __TEXT.__oslogstring: 0x5c
--  __TEXT.__unwind_info: 0x1480
-+  __TEXT.__unwind_info: 0x1488
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x1910
-   __DATA_CONST.__weak_got: 0x8
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x100
--  __AUTH_CONST.__auth_got: 0x810
-+  __AUTH_CONST.__auth_got: 0x7f8
-   __AUTH.__data: 0x30
-   __AUTH.__constrw: 0x80
-   __DATA.__crash_info: 0x148
--  __DATA.__data: 0x4d5
-+  __DATA.__data: 0x57d
-   __DATA.__constrw: 0xc88
--  __DATA.__bss: 0xcb0
-+  __DATA.__bss: 0xca8
-   __DATA.__common: 0x88
--  __DATA_DIRTY.__data: 0x12f8
--  __DATA_DIRTY.__bss: 0x2d8
-+  __DATA_DIRTY.__data: 0x1248
-+  __DATA_DIRTY.__bss: 0x2e0
-   __DATA_DIRTY.__common: 0x90
-   - /usr/lib/system/libcompiler_rt.dylib
-   - /usr/lib/system/libcorecrypto.dylib
-Sections:
-~ __TEXT.__const : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__constrw : content changed
+-1786.0.0.0.0
++1786.0.1.0.0
 Functions:
 ~ ___vfprintf : 12160 -> 12252
 ~ ___sfvwrite : 968 -> 956
@@ -178,5 +157,4 @@ Functions:
 ~ __psort : 2544 -> 2432
 ~ __strfmon : 3240 -> 3200
 ~ _regerror : 388 -> 372
-
 ```

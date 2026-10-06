@@ -2,43 +2,43 @@
 
 > `com.apple.driver.AppleFAN53740`
 
-```diff
+### Section Size Changes
 
- 12.0.0.0.0
-   __TEXT.__cstring: 0x186
--  __TEXT_EXEC.__text: 0x14d0
-+  __TEXT_EXEC.__text: 0x1544
-   __TEXT_EXEC.__auth_stubs: 0x100
-   __DATA.__data: 0xd0
-   __DATA.__common: 0x60
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x14d0` | `0x1544` | **`+0x74`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_fffffe0008b35460 -> sub_fffffe0008b87bb0 : 72 -> 76
-~ sub_fffffe0008b354b0 -> sub_fffffe0008b87c04 : 52 -> 56
-~ sub_fffffe0008b354e4 -> sub_fffffe0008b87c3c : 52 -> 56
-~ sub_fffffe0008b35528 -> sub_fffffe0008b87c84 : 68 -> 72
-~ sub_fffffe0008b35594 -> sub_fffffe0008b87cf4 : 72 -> 76
-~ sub_fffffe0008b355dc -> sub_fffffe0008b87d40 : 104 -> 108
-~ sub_fffffe0008b35658 -> sub_fffffe0008b87dc0 : 88 -> 92
-~ sub_fffffe0008b356b0 -> sub_fffffe0008b87e1c : 88 -> 92
-~ sub_fffffe0008b35708 -> sub_fffffe0008b87e78 : 128 -> 132
-~ sub_fffffe0008b35788 -> sub_fffffe0008b87efc : 192 -> 196
-~ sub_fffffe0008b3585c -> sub_fffffe0008b87fd4 : 88 -> 92
-~ sub_fffffe0008b35930 -> sub_fffffe0008b880ac : 92 -> 96
-~ sub_fffffe0008b359fc -> sub_fffffe0008b8817c : 92 -> 96
-~ sub_fffffe0008b35a58 -> sub_fffffe0008b881dc : 72 -> 76
-~ sub_fffffe0008b35aa8 -> sub_fffffe0008b88230 : 52 -> 56
-~ sub_fffffe0008b35adc -> sub_fffffe0008b88268 : 52 -> 56
-~ sub_fffffe0008b35b20 -> sub_fffffe0008b882b0 : 68 -> 72
-~ sub_fffffe0008b35b8c -> sub_fffffe0008b88320 : 72 -> 76
-~ sub_fffffe0008b35bd4 -> sub_fffffe0008b8836c : 104 -> 108
-~ sub_fffffe0008b35c3c -> sub_fffffe0008b883d8 : 88 -> 92
-~ sub_fffffe0008b35ca4 -> sub_fffffe0008b88444 : 140 -> 144
-~ sub_fffffe0008b35d30 -> sub_fffffe0008b884d4 : 56 -> 60
+~ sub_fffffff008b510f0 -> sub_fffffff008ba0a60 : 72 -> 76
+~ sub_fffffff008b51140 -> sub_fffffff008ba0ab4 : 52 -> 56
+~ sub_fffffff008b51174 -> sub_fffffff008ba0aec : 52 -> 56
+~ sub_fffffff008b511b8 -> sub_fffffff008ba0b34 : 68 -> 72
+~ sub_fffffff008b51224 -> sub_fffffff008ba0ba4 : 72 -> 76
+~ sub_fffffff008b5126c -> sub_fffffff008ba0bf0 : 104 -> 108
+~ sub_fffffff008b512e8 -> sub_fffffff008ba0c70 : 88 -> 92
+~ sub_fffffff008b51340 -> sub_fffffff008ba0ccc : 88 -> 92
+~ sub_fffffff008b51398 -> sub_fffffff008ba0d28 : 128 -> 132
+~ sub_fffffff008b51418 -> sub_fffffff008ba0dac : 192 -> 196
+~ sub_fffffff008b514ec -> sub_fffffff008ba0e84 : 88 -> 92
+~ sub_fffffff008b515c0 -> sub_fffffff008ba0f5c : 92 -> 96
+~ sub_fffffff008b5168c -> sub_fffffff008ba102c : 92 -> 96
+~ sub_fffffff008b516e8 -> sub_fffffff008ba108c : 72 -> 76
+~ sub_fffffff008b51738 -> sub_fffffff008ba10e0 : 52 -> 56
+~ sub_fffffff008b5176c -> sub_fffffff008ba1118 : 52 -> 56
+~ sub_fffffff008b517b0 -> sub_fffffff008ba1160 : 68 -> 72
+~ sub_fffffff008b5181c -> sub_fffffff008ba11d0 : 72 -> 76
+~ sub_fffffff008b51864 -> sub_fffffff008ba121c : 104 -> 108
+~ sub_fffffff008b518cc -> sub_fffffff008ba1288 : 88 -> 92
+~ sub_fffffff008b51934 -> sub_fffffff008ba12f4 : 140 -> 144
+~ sub_fffffff008b519c0 -> sub_fffffff008ba1384 : 56 -> 60
 ~ __ZN13AppleFAN537405startEP9IOService : 312 -> 316
-~ sub_fffffe0008b35f58 -> sub_fffffe0008b88704 : 408 -> 412
+~ sub_fffffff008b51be8 -> sub_fffffff008ba15b4 : 408 -> 412
 ~ __ZN13AppleFAN5374020selectOutputLdoGatedEjj : 432 -> 436
 ~ __ZN13AppleFAN5374021selectOutputBuckGatedEjj : 536 -> 540
 ~ __ZN13AppleFAN5374023selectOutputBypassGatedEjj : 312 -> 316
-~ sub_fffffe0008b365f0 -> sub_fffffe0008b88dac : 216 -> 220
-~ sub_fffffe0008b367b0 -> sub_fffffe0008b88f70 : 220 -> 224
+~ sub_fffffff008b52280 -> sub_fffffff008ba1c5c : 216 -> 220
+~ sub_fffffff008b52440 -> sub_fffffff008ba1e20 : 220 -> 224
 ```

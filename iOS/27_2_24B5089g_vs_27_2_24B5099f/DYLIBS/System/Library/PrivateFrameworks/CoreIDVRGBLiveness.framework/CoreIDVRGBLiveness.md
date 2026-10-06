@@ -2,85 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/CoreIDVRGBLiveness.framework/CoreIDVRGBLiveness`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x78844` | `0x7ccb4` | **`+0x4470`** |
+| `__TEXT.__swift5_typeref` | `0x9e4a` | `0xa5f4` | **`+0x7aa`** |
+| `__AUTH_CONST.__const` | `0x2d40` | `0x30d8` | **`+0x398`** |
+| `__TEXT.__const` | `0x4984` | `0x4c94` | **`+0x310`** |
+| `__DATA.__bss` | `0x3370` | `0x35f0` | **`+0x280`** |
+| `__TEXT.__oslogstring` | `0x244e` | `0x262e` | **`+0x1e0`** |
+| `__DATA.__data` | `0x1c58` | `0x1de0` | **`+0x188`** |
+| `__TEXT.__constg_swiftt` | `0x1b64` | `0x1cdc` | **`+0x178`** |
+| `__TEXT.__swift5_reflstr` | `0x2871` | `0x29d1` | **`+0x160`** |
+| `__AUTH_CONST.__objc_const` | `0x25d0` | `0x2700` | **`+0x130`** |
+| `__AUTH.__objc_data` | `0xbe8` | `0xd00` | **`+0x118`** |
+| `__TEXT.__swift5_fieldmd` | `0x1e90` | `0x1fa4` | **`+0x114`** |
+| `__TEXT.__unwind_info` | `0x1740` | `0x1818` | **`+0xd8`** |
+| `__AUTH.__data` | `0x1970` | `0x1a20` | **`+0xb0`** |
+| `__TEXT.__cstring` | `0x3f01` | `0x3f71` | **`+0x70`** |
+| `__TEXT.__objc_methlist` | `0x55c` | `0x5bc` | **`+0x60`** |
+| `__TEXT.__swift5_capture` | `0x7b0` | `0x804` | **`+0x54`** |
+| `__TEXT.__swift5_assocty` | `0x368` | `0x3b8` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x11e8` | `0x1218` | **`+0x30`** |
+| `__TEXT.__swift5_types` | `0x144` | `0x15c` | **`+0x18`** |
+| `__TEXT.__eh_frame` | `0x233c` | `0x2350` | **`+0x14`** |
+| `__TEXT.__swift5_proto` | `0x1a0` | `0x1b4` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0xa8` | `0xb0` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xbb8` | `0xbc0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -9.104.0.0.0
--  __TEXT.__text: 0x74b5c
--  __TEXT.__objc_methlist: 0x55c
--  __TEXT.__const: 0x4984
--  __TEXT.__swift5_typeref: 0x9e4a
--  __TEXT.__swift5_fieldmd: 0x1e90
--  __TEXT.__constg_swiftt: 0x1b64
--  __TEXT.__swift5_reflstr: 0x2871
 +9.107.1.0.0
-+  __TEXT.__text: 0x78de0
-+  __TEXT.__objc_methlist: 0x5bc
-+  __TEXT.__const: 0x4c94
-+  __TEXT.__swift5_typeref: 0xa5f4
-+  __TEXT.__swift5_fieldmd: 0x1fa4
-+  __TEXT.__constg_swiftt: 0x1cdc
-+  __TEXT.__swift5_reflstr: 0x29d1
-   __TEXT.__swift5_builtin: 0x140
--  __TEXT.__swift5_assocty: 0x368
--  __TEXT.__cstring: 0x3f01
--  __TEXT.__oslogstring: 0x244e
--  __TEXT.__swift5_capture: 0x7b0
-+  __TEXT.__swift5_assocty: 0x3b8
-+  __TEXT.__cstring: 0x3f71
-+  __TEXT.__oslogstring: 0x262e
-+  __TEXT.__swift5_capture: 0x804
-   __TEXT.__swift5_protos: 0x1c
--  __TEXT.__swift5_proto: 0x1a0
--  __TEXT.__swift5_types: 0x144
-+  __TEXT.__swift5_proto: 0x1b4
-+  __TEXT.__swift5_types: 0x15c
-   __TEXT.__swift_as_entry: 0x84
-   __TEXT.__swift_as_ret: 0xa0
-   __TEXT.__swift_as_cont: 0x170
--  __TEXT.__unwind_info: 0x1e08
--  __TEXT.__eh_frame: 0x2344
-+  __TEXT.__unwind_info: 0x1f18
-+  __TEXT.__eh_frame: 0x2358
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x260
--  __DATA_CONST.__objc_classlist: 0xa8
-+  __DATA_CONST.__objc_classlist: 0xb0
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xbb8
-+  __DATA_CONST.__objc_selrefs: 0xbc0
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2d40
--  __AUTH_CONST.__objc_const: 0x25d0
--  __AUTH_CONST.__auth_got: 0x11e8
--  __AUTH.__objc_data: 0xbe8
--  __AUTH.__data: 0x1970
--  __DATA.__data: 0x1c58
-+  __AUTH_CONST.__const: 0x30d8
-+  __AUTH_CONST.__objc_const: 0x2700
-+  __AUTH_CONST.__auth_got: 0x1218
-+  __AUTH.__objc_data: 0xd00
-+  __AUTH.__data: 0x1a20
-+  __DATA.__data: 0x1de0
-   __DATA.__common: 0xc8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2301
 -  Symbols:   1127
 -  CStrings:  435
 +  Functions: 2387
 +  Symbols:   1169
 +  CStrings:  442
- 
 Symbols:
 + _CVPixelBufferGetDataSize
 + _CVPixelBufferPoolCreatePixelBufferWithAuxAttributes

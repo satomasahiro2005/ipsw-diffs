@@ -2,26 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/Trial.framework/Trial`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__unwind_info` | `0x21a0` | `0x21e8` | **`+0x48`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -508.0.0.0.0
 +511.0.0.0.0
-   __TEXT.__text: 0x67130
-   __TEXT.__objc_methlist: 0x5bdc
-   __TEXT.__const: 0xe1a
-
-   __TEXT.__oslogstring: 0x434b
-   __TEXT.__gcc_except_tab: 0x5274
-   __TEXT.__ustring: 0x4
--  __TEXT.__unwind_info: 0x21a0
-+  __TEXT.__unwind_info: 0x21e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 Symbols:
 + GCC_except_table273
 + GCC_except_table281

@@ -2,45 +2,28 @@
 
 > `/System/Library/Frameworks/CFNetwork.framework/CFNetwork`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2569c4` | `0x256a9c` | **`+0xd8`** |
+| `__AUTH_CONST.__cfstring` | `0xeb80` | `0xeba0` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x18949` | `0x18957` | **`+0xe`** |
+| `__TEXT.__unwind_info` | `0xb890` | `0xb898` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3896.200.41.0.0
--  __TEXT.__text: 0x24d580
 +3896.200.52.0.0
-+  __TEXT.__text: 0x24d64c
-   __TEXT.__lazy_helpers: 0x2808
-   __TEXT.__objc_methlist: 0x9c94
-   __TEXT.__const: 0xc9c1c
--  __TEXT.__cstring: 0x18949
-+  __TEXT.__cstring: 0x18957
-   __TEXT.__gcc_except_tab: 0x13ed8
-   __TEXT.__oslogstring: 0xfa2d
-   __TEXT.__dof_CFNetwork: 0xf3b
--  __TEXT.__unwind_info: 0xd158
-+  __TEXT.__unwind_info: 0xd160
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_arraydata: 0x68
-   __DATA_CONST.__got: 0xaa8
-   __AUTH_CONST.__const: 0x13418
--  __AUTH_CONST.__cfstring: 0xeb80
-+  __AUTH_CONST.__cfstring: 0xeba0
-   __AUTH_CONST.__objc_const: 0x13ea0
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__lazy_load_got: 0x378
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 12683
 -  Symbols:   21453
 -  CStrings:  4755
 +  Functions: 12685
 +  Symbols:   21455
 +  CStrings:  4756
- 
 Symbols:
 + GCC_except_table10008
 + GCC_except_table10017

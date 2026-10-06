@@ -2,58 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/HealthMenstrualCycles.framework/HealthMenstrualCycles`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x3fe6` | `0x4036` | **`+0x50`** |
+| `__DATA_CONST.__const` | `0xfa8` | `0xfd0` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x33e0` | `0x3400` | **`+0x20`** |
+| `__TEXT.__text` | `0x2debc` | `0x2dec8` | **`+0xc`** |
+| `__DATA_CONST.__got` | `0x5d0` | `0x5c8` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2150` | `0x2148` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -7027.0.67.2.1
--  __TEXT.__text: 0x2debc
 +7027.0.72.2.5
-+  __TEXT.__text: 0x2dec8
-   __TEXT.__objc_methlist: 0x37d4
-   __TEXT.__const: 0x59e
-   __TEXT.__gcc_except_tab: 0x1c0
--  __TEXT.__cstring: 0x3fe6
-+  __TEXT.__cstring: 0x4036
-   __TEXT.__oslogstring: 0x2580
-   __TEXT.__ustring: 0x166
-   __TEXT.__constg_swiftt: 0x70
 
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xfa8
-+  __DATA_CONST.__const: 0xfd0
-   __DATA_CONST.__objc_classlist: 0x180
-   __DATA_CONST.__objc_catlist: 0xd0
-   __DATA_CONST.__objc_protolist: 0xf0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2150
-+  __DATA_CONST.__objc_selrefs: 0x2148
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_superrefs: 0x160
-   __DATA_CONST.__objc_arraydata: 0x58
--  __DATA_CONST.__got: 0x5d0
-+  __DATA_CONST.__got: 0x5c8
-   __AUTH_CONST.__const: 0x3a0
--  __AUTH_CONST.__cfstring: 0x33e0
-+  __AUTH_CONST.__cfstring: 0x3400
-   __AUTH_CONST.__objc_const: 0x68c0
-   __AUTH_CONST.__objc_intobj: 0x2d0
-   __AUTH_CONST.__objc_arrayobj: 0x30
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1337
-+  Functions: 1338
-   Symbols:   3308
+-  Symbols:   2589
 -  CStrings:  606
++  Functions: 1338
++  Symbols:   2590
 +  CStrings:  608
- 
 Symbols:
 + ___62-[HKMCViewModelProvider _queue_runNotifyObserversOperationNow]_block_invoke
 + ___block_descriptor_40_e8_32s_e41_v16?0"<HKMCViewModelProviderObserver>"8ls32l8
 - _OBJC_CLASS_$_NSHashTable
-- _objc_msgSend$weakObjectsHashTable
 Functions:
 ~ -[HKMCViewModelProvider _initWithDataSource:cycleFactorsDataSource:analysisProvider:maximumActiveDuration:minimumBufferDuration:prefetchDuration:shouldFetchCycleFactors:calendarCache:queue:] : 724 -> 744
 ~ -[HKMCViewModelProvider registerObserver:] : 8 -> 100

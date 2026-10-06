@@ -2,87 +2,50 @@
 
 > `/usr/lib/libBKDM2.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7c2d8` | `0x88640` | **`+0xc368`** |
+| `__TEXT.__cstring` | `0x7066` | `0x832a` | **`+0x12c4`** |
+| `__TEXT.__oslogstring` | `0x46ec` | `0x52f7` | **`+0xc0b`** |
+| `__AUTH_CONST.__objc_const` | `0x9a58` | `0xa490` | **`+0xa38`** |
+| `__AUTH_CONST.__cfstring` | `0x65e0` | `0x6c40` | **`+0x660`** |
+| `__TEXT.__objc_methlist` | `0x5d84` | `0x61bc` | **`+0x438`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3d60` | `0x40b0` | **`+0x350`** |
+| `__TEXT.__gcc_except_tab` | `0x17b4` | `0x1a88` | **`+0x2d4`** |
+| `__TEXT.__unwind_info` | `0xe30` | `0x1050` | **`+0x220`** |
+| `__DATA_CONST.__const` | `0x15e8` | `0x16d8` | **`+0xf0`** |
+| `__DATA.__objc_ivar` | `0xacc` | `0xbb4` | **`+0xe8`** |
+| `__TEXT.__lazy_helpers` | `—` | `0xa8` | **`+0xa8`** |
+| `__AUTH.__objc_data` | `0x1e0` | `0x280` | **`+0xa0`** |
+| `__AUTH_CONST.__auth_got` | `0x768` | `0x7d0` | **`+0x68`** |
+| `__DATA_CONST.__got` | `0x448` | `0x4a8` | **`+0x60`** |
+| `__DATA_DIRTY.__objc_data` | `0x6e0` | `0x730` | **`+0x50`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x168` | `0x1b0` | **`+0x48`** |
+| `__AUTH_CONST.__objc_intobj` | `0x3d8` | `0x420` | **`+0x48`** |
+| `__TEXT.__const` | `0xd7b8` | `0xd7f8` | **`+0x40`** |
+| `__DATA_CONST.__objc_arraydata` | `0x4a8` | `0x4d8` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0xc08` | `0xc28` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0xe0` | `0xf8` | **`+0x18`** |
+| `__AUTH_CONST.__lazy_load_got` | `—` | `0x10` | **`+0x10`** |
+| `__DATA.__bss` | `0x49` | `0x59` | **`+0x10`** |
+| `__DATA.__common` | `—` | `0x10` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0xc0` | `0xd0` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0xa0` | `0xaa` | **`+0xa`** |
+| `__DATA_DIRTY.__data` | `0x14` | `0x1c` | **`+0x8`** |
+| `__DATA.__data` | `0x880` | `0x884` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
- 980.0.26.0.0
--  __TEXT.__text: 0x7c2d8
--  __TEXT.__objc_methlist: 0x5d84
--  __TEXT.__const: 0xd7b8
--  __TEXT.__cstring: 0x7066
--  __TEXT.__oslogstring: 0x46ec
--  __TEXT.__gcc_except_tab: 0x17b4
-+  __TEXT.__text: 0x88640
-+  __TEXT.__lazy_helpers: 0xa8
-+  __TEXT.__objc_methlist: 0x61bc
-+  __TEXT.__const: 0xd7f8
-+  __TEXT.__cstring: 0x832a
-+  __TEXT.__oslogstring: 0x52f7
-+  __TEXT.__gcc_except_tab: 0x1a88
-   __TEXT.__ustring: 0x11c
--  __TEXT.__unwind_info: 0xe30
-+  __TEXT.__unwind_info: 0x1050
-   __TEXT.__eh_frame: 0x50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x15e8
--  __DATA_CONST.__objc_classlist: 0xe0
-+  __DATA_CONST.__const: 0x16d8
-+  __DATA_CONST.__objc_classlist: 0xf8
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3d60
--  __DATA_CONST.__objc_superrefs: 0xc0
--  __DATA_CONST.__objc_arraydata: 0x4a8
--  __DATA_CONST.__got: 0x448
--  __AUTH_CONST.__const: 0xc08
--  __AUTH_CONST.__cfstring: 0x65e0
--  __AUTH_CONST.__objc_const: 0x9a58
--  __AUTH_CONST.__objc_intobj: 0x3d8
-+  __DATA_CONST.__objc_selrefs: 0x40b0
-+  __DATA_CONST.__objc_superrefs: 0xd0
-+  __DATA_CONST.__objc_arraydata: 0x4d8
-+  __DATA_CONST.__got: 0x4a8
-+  __AUTH_CONST.__const: 0xc28
-+  __AUTH_CONST.__cfstring: 0x6c40
-+  __AUTH_CONST.__objc_const: 0xa490
-+  __AUTH_CONST.__lazy_load_got: 0x10
-+  __AUTH_CONST.__objc_intobj: 0x420
-   __AUTH_CONST.__objc_dictobj: 0xf0
--  __AUTH_CONST.__objc_arrayobj: 0x168
--  __AUTH_CONST.__auth_got: 0x768
--  __AUTH.__objc_data: 0x1e0
--  __DATA.__objc_ivar: 0xacc
--  __DATA.__data: 0x880
--  __DATA_DIRTY.__objc_data: 0x6e0
--  __DATA_DIRTY.__data: 0x14
-+  __AUTH_CONST.__objc_arrayobj: 0x1b0
-+  __AUTH_CONST.__auth_got: 0x7d0
-+  __AUTH.__objc_data: 0x280
-+  __DATA.__objc_ivar: 0xbb4
-+  __DATA.__data: 0x884
-+  __DATA.__common: 0x10
-+  __DATA_DIRTY.__objc_data: 0x730
-+  __DATA_DIRTY.__data: 0x1c
-   __DATA_DIRTY.__common: 0x40
--  __DATA_DIRTY.__bss: 0xa0
-+  __DATA_DIRTY.__bss: 0xaa
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-
-   - /usr/lib/libSystemHealth.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2905
--  Symbols:   5371
+-  Symbols:   4348
 -  CStrings:  1613
 +  Functions: 3153
-+  Symbols:   5708
++  Symbols:   4576
 +  CStrings:  1828
- 
 Symbols:
 + +[BLHelper stringFromAVFrameType:]
 + +[BLHelper stringFromAVInfraredLightSourceMode:]
@@ -337,115 +300,6 @@ Symbols:
 + _lazyLoadFlag$FaceIDCoreLib_demo
 + _mach_port_deallocate
 + _objc_copyStruct
-+ _objc_msgSend$_dequeue
-+ _objc_msgSend$_enqueue:
-+ _objc_msgSend$addConnection:
-+ _objc_msgSend$addOutputWithNoConnections:
-+ _objc_msgSend$allocateData
-+ _objc_msgSend$analyzeSecureSequenceFrameMeta:requestType:fromCameraID:
-+ _objc_msgSend$arrayByAddingObject:
-+ _objc_msgSend$avcRetryTypeFromSecureFaceDetectRetryType:
-+ _objc_msgSend$cacheMetadataWithPool:sharedBufferPort:
-+ _objc_msgSend$cacheQueuedFrame
-+ _objc_msgSend$cacheQueuedFrames
-+ _objc_msgSend$cacheRawDataWithPool:sharedBufferPort:
-+ _objc_msgSend$cachedMetadata
-+ _objc_msgSend$cachedRawData
-+ _objc_msgSend$cameraID
-+ _objc_msgSend$canAddConnection:
-+ _objc_msgSend$captureFaceIDBracketWithConfiguration:
-+ _objc_msgSend$captureSecureFaceDetectRequestDispatchBlock
-+ _objc_msgSend$checkForPasscodeShortcut
-+ _objc_msgSend$colorBracketEncryptionConfiguration
-+ _objc_msgSend$connectionWithInputPorts:output:
-+ _objc_msgSend$containsFrameID:
-+ _objc_msgSend$contextIndex
-+ _objc_msgSend$copyPathForPersistentData:error:
-+ _objc_msgSend$dataLengthFromFormatDescription:
-+ _objc_msgSend$dequeue
-+ _objc_msgSend$dequeueAllFramesToQueue:
-+ _objc_msgSend$dictionaryFromAlgoData:
-+ _objc_msgSend$dictionaryFromFrameMetadata:
-+ _objc_msgSend$doubleOrder
-+ _objc_msgSend$enqueue:
-+ _objc_msgSend$faceIDObject
-+ _objc_msgSend$formatDescription
-+ _objc_msgSend$frameID
-+ _objc_msgSend$frameIRSharedMemoryMap
-+ _objc_msgSend$frameIRSharedMemoryUnmap
-+ _objc_msgSend$frameIdentifier
-+ _objc_msgSend$frameRGBSharedMemoryMap
-+ _objc_msgSend$frameRGBSharedMemoryUnmap
-+ _objc_msgSend$frameType
-+ _objc_msgSend$infraredBracketEncryptionConfiguration
-+ _objc_msgSend$initWithAVMetadataFaceIDObject:sequenceNumber:cameraID:frameNumber:sessionID:
-+ _objc_msgSend$initWithItemLength:capacity:
-+ _objc_msgSend$initWithName:capacity:releaseWhenFull:
-+ _objc_msgSend$isEmpty
-+ _objc_msgSend$isEqualToFrameID:
-+ _objc_msgSend$isFaceIDInExclavesEnabled
-+ _objc_msgSend$lastAlgoData
-+ _objc_msgSend$lastAlgoDataFrameNumber
-+ _objc_msgSend$lightSourceProjectorMode
-+ _objc_msgSend$loadReferenceFramesInfoRecord
-+ _objc_msgSend$loadSummervilleFWCertificate
-+ _objc_msgSend$logBracketConfiguration:
-+ _objc_msgSend$logFrame:
-+ _objc_msgSend$logPasscodeShortcutRequested:
-+ _objc_msgSend$metadataFrameProxy
-+ _objc_msgSend$metadataLength
-+ _objc_msgSend$metadataObjectTypes
-+ _objc_msgSend$numberOfDoubles
-+ _objc_msgSend$platformHasMirage:
-+ _objc_msgSend$platformHasPinnacles
-+ _objc_msgSend$portsWithMediaType:sourceDeviceType:sourceDevicePosition:
-+ _objc_msgSend$probePatternIndex
-+ _objc_msgSend$probePatternType
-+ _objc_msgSend$processCoachingStatus:frameType:projectorMode:
-+ _objc_msgSend$processFrame:
-+ _objc_msgSend$rawDataLength
-+ _objc_msgSend$rawFrameProxy
-+ _objc_msgSend$referenceDataLength
-+ _objc_msgSend$referenceFrameProxy
-+ _objc_msgSend$releaseAll
-+ _objc_msgSend$releaseCachedMetaData
-+ _objc_msgSend$releaseCachedRawData
-+ _objc_msgSend$releaseFaceIDObject
-+ _objc_msgSend$releaseFrameMessage:
-+ _objc_msgSend$releaseFramesFromQueue:toCount:
-+ _objc_msgSend$removeFrameID:
-+ _objc_msgSend$resetSecureFaceDetectDispatchHandlerBlock
-+ _objc_msgSend$retainFaceIDObject
-+ _objc_msgSend$returnData:
-+ _objc_msgSend$secureFaceDetectRequestDispatchBlock
-+ _objc_msgSend$setAttentionRequired:
-+ _objc_msgSend$setColorBracketEncryptionConfiguration:
-+ _objc_msgSend$setDoubleOrder:
-+ _objc_msgSend$setFaceIDConfiguration:
-+ _objc_msgSend$setFrameMetadataEnabled:
-+ _objc_msgSend$setHostMainKeyIndex:
-+ _objc_msgSend$setInfraredBracketEncryptionConfiguration:
-+ _objc_msgSend$setInitializationVector:
-+ _objc_msgSend$setLastAlgoData:
-+ _objc_msgSend$setLastAlgoDataFrameNumber:
-+ _objc_msgSend$setLinearFeedbackShiftRegisterSeed:
-+ _objc_msgSend$setMode:
-+ _objc_msgSend$setNonce:
-+ _objc_msgSend$setNumberOfDoubles:
-+ _objc_msgSend$setPeriocularEnabled:
-+ _objc_msgSend$setProbePatternIndex:
-+ _objc_msgSend$setProbePatternType:
-+ _objc_msgSend$setRetryType:
-+ _objc_msgSend$setSecureFaceDetectRequestDispatchBlock:
-+ _objc_msgSend$setTransaction:
-+ _objc_msgSend$setUsingExclaves:hasMirage:
-+ _objc_msgSend$sharedMemoryAreaOffset
-+ _objc_msgSend$stringFromAVFrameType:
-+ _objc_msgSend$stringFromAVInfraredLightSourceMode:
-+ _objc_msgSend$timestamp
-+ _objc_msgSend$transaction
-+ _objc_msgSend$updateFrameLoggingState
-+ _objc_msgSend$writeQueuedFrame
 + _objc_unsafeClaimAutoreleasedReturnValue
 + _platformHasMirage:.hasMirage
 + _platformHasPinnacles.onceToken

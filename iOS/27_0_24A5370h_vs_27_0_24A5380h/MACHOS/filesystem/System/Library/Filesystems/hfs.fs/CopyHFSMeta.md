@@ -2,20 +2,25 @@
 
 > `/System/Library/Filesystems/hfs.fs/CopyHFSMeta`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x392c` | `0x3934` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x392c
-+  __TEXT.__text: 0x3934
-   __TEXT.__auth_stubs: 0x3a0
-   __TEXT.__const: 0x48
-   __TEXT.__cstring: 0x1374
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
+-748.0.0.0.0
++749.0.0.0.0
 Functions:
 ~ sub_10000144c : 1132 -> 1140
-
 ```

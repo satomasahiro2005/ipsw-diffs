@@ -2,14 +2,15 @@
 
 > `/usr/lib/libutil.dylib`
 
-```diff
+### Section Size Changes
 
- 76.0.0.0.0
--  __TEXT.__text: 0x2590
-+  __TEXT.__text: 0x2594
-   __TEXT.__const: 0x118
-   __TEXT.__cstring: 0xf9
-   __TEXT.__gcc_except_tab: 0x6c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2590` | `0x2594` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _pidfile_open : 584 -> 588
 ```

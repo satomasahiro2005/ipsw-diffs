@@ -2,55 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/TextAnimationSupport.framework/TextAnimationSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__data` | `0x1d88` | `0x10e0` | **`-0xca8`** |
+| `__DATA_DIRTY.__data` | `0x1318` | `0x1f88` | **`+0xc70`** |
+| `__AUTH.__objc_data` | `0xbd8` | `0x3a8` | **`-0x830`** |
+| `__DATA_DIRTY.__objc_data` | `0x480` | `0xcb0` | **`+0x830`** |
+| `__DATA.__bss` | `0x8cf0` | `0x8ef0` | **`+0x200`** |
+| `__DATA_DIRTY.__bss` | `0xd80` | `0xb80` | **`-0x200`** |
+| `__DATA.__data` | `0x2e40` | `0x2eb0` | **`+0x70`** |
+| `__TEXT.__eh_frame` | `0x1370` | `0x1390` | **`+0x20`** |
+| `__TEXT.__text` | `0xeebe8` | `0xeebfc` | **`+0x14`** |
+| `__TEXT.__unwind_info` | `0x27c0` | `0x27c8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 8.0.31.0.0
--  __TEXT.__text: 0xe9e08
-+  __TEXT.__text: 0xe9e1c
-   __TEXT.__objc_methlist: 0xac8
-   __TEXT.__cstring: 0xb95
-   __TEXT.__const: 0x9580
-
-   __TEXT.__swift5_capture: 0x7dc
-   __TEXT.__swift5_mpenum: 0x98
-   __TEXT.__swift5_protos: 0x24
--  __TEXT.__unwind_info: 0x3408
--  __TEXT.__eh_frame: 0x1388
-+  __TEXT.__unwind_info: 0x3410
-+  __TEXT.__eh_frame: 0x13a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __AUTH_CONST.__const: 0x7870
-   __AUTH_CONST.__objc_const: 0x2410
-   __AUTH_CONST.__auth_got: 0x1470
--  __AUTH.__objc_data: 0xbd8
--  __AUTH.__data: 0x1d88
--  __DATA.__data: 0x2e40
-+  __AUTH.__objc_data: 0x3a8
-+  __AUTH.__data: 0x10e0
-+  __DATA.__data: 0x2eb0
-   __DATA.__common: 0x240
--  __DATA_DIRTY.__objc_data: 0x480
--  __DATA_DIRTY.__data: 0x1318
--  __DATA_DIRTY.__bss: 0xd80
-+  __DATA_DIRTY.__objc_data: 0xcb0
-+  __DATA_DIRTY.__data: 0x1f88
-+  __DATA_DIRTY.__bss: 0xb80
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreText.framework/CoreText
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4210
 -  Symbols:   10943
 +  Functions: 4211
 +  Symbols:   10944
-   CStrings:  75
- 
 Symbols:
 + _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVy7SwiftUI4TextV0H16AnimationSupportE6EffectO18RenderSegmentationV7SegmentOG_Tg506$sSa20hi8Support7f10UI0A0VAAE6k3O18lm2V7N74ORszlE08trailingI033_0FF5E16D097D2A33DA3D3DEA8109D05ELLAJSgvgSbAJ_AJtXEfU_Tf1nnc_n
 + _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVySiG_Tg5

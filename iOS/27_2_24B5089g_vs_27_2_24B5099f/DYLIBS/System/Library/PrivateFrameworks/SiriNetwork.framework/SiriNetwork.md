@@ -2,87 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/SiriNetwork.framework/SiriNetwork`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x13af40` | `0x13f1a8` | **`+0x4268`** |
+| `__AUTH_CONST.__const` | `0xaa48` | `0xb050` | **`+0x608`** |
+| `__DATA.__bss` | `0x5980` | `0x5480` | **`-0x500`** |
+| `__DATA_DIRTY.__bss` | `0x1d30` | `0x2230` | **`+0x500`** |
+| `__TEXT.__eh_frame` | `0x87e8` | `0x8b50` | **`+0x368`** |
+| `__TEXT.__oslogstring` | `0xadc7` | `0xb0f7` | **`+0x330`** |
+| `__TEXT.__swift5_capture` | `0x2c2c` | `0x2ee0` | **`+0x2b4`** |
+| `__DATA_DIRTY.__data` | `0x4e70` | `0x5110` | **`+0x2a0`** |
+| `__TEXT.__unwind_info` | `0x5110` | `0x5258` | **`+0x148`** |
+| `__DATA.__data` | `0x1388` | `0x1258` | **`-0x130`** |
+| `__TEXT.__constg_swiftt` | `0x5804` | `0x5934` | **`+0x130`** |
+| `__AUTH_CONST.__objc_const` | `0xc400` | `0xc4c0` | **`+0xc0`** |
+| `__TEXT.__const` | `0x90d0` | `0x9170` | **`+0xa0`** |
+| `__TEXT.__swift5_reflstr` | `0x4698` | `0x4708` | **`+0x70`** |
+| `__TEXT.__swift5_fieldmd` | `0x372c` | `0x3774` | **`+0x48`** |
+| `__TEXT.__swift_as_cont` | `0x724` | `0x760` | **`+0x3c`** |
+| `__TEXT.__swift5_typeref` | `0x331a` | `0x3336` | **`+0x1c`** |
+| `__DATA_CONST.__got` | `0x988` | `0x9a0` | **`+0x18`** |
+| `__TEXT.__swift_as_entry` | `0x384` | `0x39c` | **`+0x18`** |
+| `__TEXT.__swift_as_ret` | `0x364` | `0x378` | **`+0x14`** |
+| `__AUTH_CONST.__auth_got` | `0x1a18` | `0x1a28` | **`+0x10`** |
+| `__DATA.__common` | `0x10` | `0x18` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3605.6.1.0.0
--  __TEXT.__text: 0x12d6b8
 +3605.7.1.0.0
-+  __TEXT.__text: 0x1315e8
-   __TEXT.__objc_methlist: 0x282c
--  __TEXT.__const: 0x90d0
-+  __TEXT.__const: 0x9170
-   __TEXT.__cstring: 0x1fc3
--  __TEXT.__constg_swiftt: 0x5804
--  __TEXT.__swift5_typeref: 0x331a
--  __TEXT.__swift5_reflstr: 0x4698
--  __TEXT.__swift5_fieldmd: 0x372c
-+  __TEXT.__constg_swiftt: 0x5934
-+  __TEXT.__swift5_typeref: 0x3336
-+  __TEXT.__swift5_reflstr: 0x4708
-+  __TEXT.__swift5_fieldmd: 0x3774
-   __TEXT.__swift5_builtin: 0x168
-   __TEXT.__swift5_assocty: 0x428
--  __TEXT.__swift5_capture: 0x2c2c
--  __TEXT.__oslogstring: 0xadc7
-+  __TEXT.__swift5_capture: 0x2ee0
-+  __TEXT.__oslogstring: 0xb0f7
-   __TEXT.__swift5_proto: 0x450
-   __TEXT.__swift5_types: 0x240
-   __TEXT.__swift5_mpenum: 0x44
-   __TEXT.__swift5_protos: 0xc4
--  __TEXT.__swift_as_entry: 0x384
--  __TEXT.__swift_as_ret: 0x364
--  __TEXT.__swift_as_cont: 0x724
-+  __TEXT.__swift_as_entry: 0x39c
-+  __TEXT.__swift_as_ret: 0x378
-+  __TEXT.__swift_as_cont: 0x760
-   __TEXT.__swift5_acfuncs: 0x14
--  __TEXT.__unwind_info: 0x5e50
--  __TEXT.__eh_frame: 0x87f0
-+  __TEXT.__unwind_info: 0x6400
-+  __TEXT.__eh_frame: 0x8b58
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0x1858
-   __DATA_CONST.__objc_protorefs: 0x88
-   __DATA_CONST.__objc_superrefs: 0x50
--  __DATA_CONST.__got: 0x988
--  __AUTH_CONST.__const: 0xaa48
-+  __DATA_CONST.__got: 0x9a0
-+  __AUTH_CONST.__const: 0xb050
-   __AUTH_CONST.__cfstring: 0x260
--  __AUTH_CONST.__objc_const: 0xc400
--  __AUTH_CONST.__auth_got: 0x1a18
-+  __AUTH_CONST.__objc_const: 0xc4c0
-+  __AUTH_CONST.__auth_got: 0x1a28
-   __AUTH.__objc_data: 0x318
-   __AUTH.__data: 0x7b0
-   __DATA.__objc_ivar: 0x1ac
--  __DATA.__data: 0x1388
--  __DATA.__common: 0x10
-+  __DATA.__data: 0x1258
-+  __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0x1e40
--  __DATA_DIRTY.__data: 0x4e70
--  __DATA_DIRTY.__bss: 0x1d30
-+  __DATA_DIRTY.__data: 0x5110
-+  __DATA_DIRTY.__bss: 0x2230
-   __DATA_DIRTY.__common: 0x300
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9353
 -  Symbols:   15183
 -  CStrings:  845
 +  Functions: 9479
 +  Symbols:   15296
 +  CStrings:  862
- 
 Symbols:
 + _$s11Distributed0A23TargetInvocationDecoderP18decodeNextArgumentqd__yKlFTj
 + _$s11SiriNetwork21MessageCenterListenerC03runbE0yyYaKFyAA0cD18ConnectionProtocol_pYaYbcfU_

@@ -2,33 +2,29 @@
 
 > `/System/Library/Filesystems/apfs.fs/apfs_iosd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x33cf0` | `0x33d38` | **`+0x48`** |
+| `__TEXT.__cstring` | `0x679d` | `0x67af` | **`+0x12`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -3283.0.9.502.1
--  __TEXT.__text: 0x33cf0
 +3283.0.13.0.0
-+  __TEXT.__text: 0x33d38
-   __TEXT.__auth_stubs: 0xa90
-   __TEXT.__const: 0x350
--  __TEXT.__cstring: 0x679d
-+  __TEXT.__cstring: 0x67af
-   __TEXT.__oslogstring: 0x13e0
-   __TEXT.__unwind_info: 0x650
-   __DATA_CONST.__const: 0x708
 
-   - /usr/lib/libutil.dylib
-   Functions: 562
-   Symbols:   197
 -  CStrings:  751
 +  CStrings:  752
- 
 Functions:
 ~ sub_100006ff4 : 596 -> 640
 ~ sub_1000173a8 -> sub_1000173d4 : 520 -> 508

@@ -2,36 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/Search.framework/searchd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__gcc_except_tab`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x61868` | `0x618ac` | **`+0x44`** |
+| `__TEXT.__unwind_info` | `0xee8` | `0xef0` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__const`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
 -2459.102.0.0.0
--  __TEXT.__text: 0x61868
 +2459.105.0.0.0
-+  __TEXT.__text: 0x618ac
-   __TEXT.__auth_stubs: 0x18c0
-   __TEXT.__objc_stubs: 0xa7a0
-   __TEXT.__objc_methlist: 0x2b38
-
-   __TEXT.__objc_methtype: 0x1822
-   __TEXT.__oslogstring: 0x3663
-   __TEXT.__gcc_except_tab: 0x5344
--  __TEXT.__unwind_info: 0xee8
-+  __TEXT.__unwind_info: 0xef0
-   __DATA_CONST.__const: 0x1f88
-   __DATA_CONST.__cfstring: 0x4ae0
-   __DATA_CONST.__objc_classlist: 0x128
 Functions:
 ~ sub_10000334c : 520 -> 552
 ~ sub_1000243f4 -> sub_100024414 : 292 -> 316

@@ -2,69 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/ActionKit.framework/ActionKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x40da38` | `0x40dca8` | **`+0x270`** |
+| `__TEXT.__cstring` | `0x54077` | `0x5401e` | **`-0x59`** |
+| `__DATA_CONST.__const` | `0x1dff0` | `0x1e018` | **`+0x28`** |
+| `__AUTH_CONST.__auth_got` | `0x3628` | `0x3640` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x47b0` | `0x47b8` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0xc88` | `0xc90` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x21b44` | `0x21b4c` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0xe650` | `0xe658` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -5037.103.100.0.0
--  __TEXT.__text: 0x40da38
--  __TEXT.__objc_methlist: 0x21b44
 +5037.109.0.0.0
-+  __TEXT.__text: 0x40dca8
-+  __TEXT.__objc_methlist: 0x21b4c
-   __TEXT.__const: 0x2a9d8
-   __TEXT.__dlopen_cstrs: 0x27a3
--  __TEXT.__cstring: 0x54077
-+  __TEXT.__cstring: 0x5401e
-   __TEXT.__constg_swiftt: 0x1ec8
-   __TEXT.__swift5_typeref: 0x3e85
-   __TEXT.__swift5_builtin: 0x21c
 
-   __TEXT.__swift5_mpenum: 0x24
-   __TEXT.__gcc_except_tab: 0x3e18
-   __TEXT.__ustring: 0x4352
--  __TEXT.__unwind_info: 0xe650
-+  __TEXT.__unwind_info: 0xe658
-   __TEXT.__eh_frame: 0x9f38
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1dff0
-+  __DATA_CONST.__const: 0x1e018
-   __DATA_CONST.__objc_classlist: 0x1ac8
-   __DATA_CONST.__objc_nlclslist: 0x8
-   __DATA_CONST.__objc_catlist: 0x108
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xf7e8
-   __DATA_CONST.__objc_protorefs: 0x1e8
--  __DATA_CONST.__objc_superrefs: 0xc88
-+  __DATA_CONST.__objc_superrefs: 0xc90
-   __DATA_CONST.__objc_arraydata: 0xd88
--  __DATA_CONST.__got: 0x47b0
-+  __DATA_CONST.__got: 0x47b8
-   __AUTH_CONST.__const: 0x11240
-   __AUTH_CONST.__cfstring: 0x2bc40
-   __AUTH_CONST.__objc_const: 0x3e5c8
-
-   __AUTH_CONST.__objc_dictobj: 0xc8
-   __AUTH_CONST.__objc_floatobj: 0x30
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x3628
-+  __AUTH_CONST.__auth_got: 0x3640
-   __AUTH.__objc_data: 0x8000
-   __AUTH.__data: 0xd70
-   __DATA.__objc_ivar: 0x1d5c
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 24015
--  Symbols:   38154
+-  Symbols:   32357
 +  Functions: 24018
-+  Symbols:   38158
-   CStrings:  13237
- 
++  Symbols:   32361
 Symbols:
 + +[WFHealthKitAccessResource userInterfaceXPCInterface]
 + GCC_except_table10026

@@ -2,97 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/IntelligencePlatformLibrary.framework/IntelligencePlatformLibrary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6db36c` | `0x6ed058` | **`+0x11cec`** |
+| `__DATA.__bss` | `0x70330` | `0x70b60` | **`+0x830`** |
+| `__TEXT.__const` | `0x5bd68` | `0x5c310` | **`+0x5a8`** |
+| `__TEXT.__cstring` | `0x75ef0` | `0x76440` | **`+0x550`** |
+| `__AUTH_CONST.__objc_const` | `0x38218` | `0x386c8` | **`+0x4b0`** |
+| `__AUTH_CONST.__const` | `0x410c8` | `0x41398` | **`+0x2d0`** |
+| `__TEXT.__eh_frame` | `0x21a70` | `0x21c5c` | **`+0x1ec`** |
+| `__TEXT.__objc_methlist` | `0x21c7c` | `0x21e5c` | **`+0x1e0`** |
+| `__TEXT.__swift5_fieldmd` | `0x171a8` | `0x17308` | **`+0x160`** |
+| `__TEXT.__swift5_reflstr` | `0x15c66` | `0x15da2` | **`+0x13c`** |
+| `__AUTH_CONST.__cfstring` | `0x216e0` | `0x21800` | **`+0x120`** |
+| `__AUTH.__data` | `0x3a78` | `0x3b48` | **`+0xd0`** |
+| `__TEXT.__unwind_info` | `0x1e8b8` | `0x1e970` | **`+0xb8`** |
+| `__TEXT.__swift5_typeref` | `0xa8cc` | `0xa980` | **`+0xb4`** |
+| `__DATA.__data` | `0xaf08` | `0xafb0` | **`+0xa8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5710` | `0x57a0` | **`+0x90`** |
+| `__DATA.__objc_ivar` | `0x2b94` | `0x2c18` | **`+0x84`** |
+| `__TEXT.__constg_swiftt` | `0xa1c4` | `0xa240` | **`+0x7c`** |
+| `__TEXT.__swift5_assocty` | `0x43e8` | `0x4460` | **`+0x78`** |
+| `__DATA_DIRTY.__bss` | `0xa650` | `0xa6b0` | **`+0x60`** |
+| `__TEXT.__swift5_proto` | `0x6654` | `0x66b4` | **`+0x60`** |
+| `__DATA.__common` | `0x6680` | `0x66c8` | **`+0x48`** |
+| `__DATA_CONST.__const` | `0x73f0` | `0x7418` | **`+0x28`** |
+| `__DATA_DIRTY.__data` | `0x5f10` | `0x5f20` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x149c` | `0x14ac` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x1610` | `0x1618` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -435.0.0.0.0
--  __TEXT.__text: 0x6db36c
--  __TEXT.__objc_methlist: 0x21c7c
--  __TEXT.__const: 0x5bd68
--  __TEXT.__constg_swiftt: 0xa1c4
--  __TEXT.__swift5_typeref: 0xa8cc
--  __TEXT.__swift5_fieldmd: 0x171a8
--  __TEXT.__swift5_types: 0x149c
--  __TEXT.__swift5_reflstr: 0x15c66
--  __TEXT.__swift5_assocty: 0x43e8
 +436.6.0.0.0
-+  __TEXT.__text: 0x6ed058
-+  __TEXT.__objc_methlist: 0x21e5c
-+  __TEXT.__const: 0x5c310
-+  __TEXT.__constg_swiftt: 0xa240
-+  __TEXT.__swift5_typeref: 0xa980
-+  __TEXT.__swift5_fieldmd: 0x17308
-+  __TEXT.__swift5_types: 0x14ac
-+  __TEXT.__swift5_reflstr: 0x15da2
-+  __TEXT.__swift5_assocty: 0x4460
-   __TEXT.__oslogstring: 0x1f4
-   __TEXT.__swift5_capture: 0x38d0
--  __TEXT.__swift5_proto: 0x6654
-+  __TEXT.__swift5_proto: 0x66b4
-   __TEXT.__swift5_protos: 0x40
--  __TEXT.__cstring: 0x75ef0
-+  __TEXT.__cstring: 0x76440
-   __TEXT.__swift5_builtin: 0x640
-   __TEXT.__swift5_mpenum: 0x608
-   __TEXT.__gcc_except_tab: 0x3c
--  __TEXT.__unwind_info: 0x1e8b8
--  __TEXT.__eh_frame: 0x21a70
-+  __TEXT.__unwind_info: 0x1e970
-+  __TEXT.__eh_frame: 0x21c5c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x73f0
-+  __DATA_CONST.__const: 0x7418
-   __DATA_CONST.__objc_classlist: 0x11a8
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5710
-+  __DATA_CONST.__objc_selrefs: 0x57a0
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x88
--  __DATA_CONST.__got: 0x1610
--  __AUTH_CONST.__const: 0x410c8
--  __AUTH_CONST.__cfstring: 0x216e0
--  __AUTH_CONST.__objc_const: 0x38218
-+  __DATA_CONST.__got: 0x1618
-+  __AUTH_CONST.__const: 0x41398
-+  __AUTH_CONST.__cfstring: 0x21800
-+  __AUTH_CONST.__objc_const: 0x386c8
-   __AUTH_CONST.__objc_intobj: 0x60
-   __AUTH_CONST.__auth_got: 0xe08
-   __AUTH.__objc_data: 0xa8e8
--  __AUTH.__data: 0x3a78
--  __DATA.__objc_ivar: 0x2b94
--  __DATA.__data: 0xaf08
--  __DATA.__bss: 0x70330
--  __DATA.__common: 0x6680
-+  __AUTH.__data: 0x3b48
-+  __DATA.__objc_ivar: 0x2c18
-+  __DATA.__data: 0xafb0
-+  __DATA.__bss: 0x70b60
-+  __DATA.__common: 0x66c8
-   __DATA_DIRTY.__objc_data: 0xc30
--  __DATA_DIRTY.__data: 0x5f10
--  __DATA_DIRTY.__bss: 0xa650
-+  __DATA_DIRTY.__data: 0x5f20
-+  __DATA_DIRTY.__bss: 0xa6b0
-   __DATA_DIRTY.__common: 0x18
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 60729
--  Symbols:   27248
+-  Symbols:   25017
 -  CStrings:  10450
 +  Functions: 60937
-+  Symbols:   27355
++  Symbols:   25110
 +  CStrings:  10486
- 
 Symbols:
 + -[CCASRRankedEntityTermContent copyApplyingPatch:deletedFieldTypes:error:]
 + -[CCASRRankedEntityTermMetaContent copyApplyingPatch:deletedFieldTypes:error:]
@@ -712,22 +665,6 @@ Symbols:
 + _associated conformance 27IntelligencePlatformLibrary28PrivateMLClientSafetyMetricsV19AbuseClassificationOs12CaseIterableAA8AllCasessAFP_Sl
 + _associated conformance 27IntelligencePlatformLibrary28PrivateMLClientSafetyMetricsV19AbuseClassificationOs25LosslessStringConvertibleAAs06CustomkL0
 + _associated conformance 27IntelligencePlatformLibrary28PrivateMLClientSafetyMetricsVSHAASQ
-+ _objc_msgSend$_deletedFieldTypesForMergeUnderParent:
-+ _objc_msgSend$addFieldType:
-+ _objc_msgSend$builder
-+ _objc_msgSend$containsFieldType:
-+ _objc_msgSend$copyApplyingPatch:deletedFieldTypes:error:
-+ _objc_msgSend$hasPatternEventCount
-+ _objc_msgSend$hasPlaceRank
-+ _objc_msgSend$hasTotalEventCount
-+ _objc_msgSend$immutableCopy
-+ _objc_msgSend$initWithPatternType:routineMetadata:durationStats:distanceStats:placeRole:placeRank:confidence:patternEventCount:totalEventCount:error:
-+ _objc_msgSend$isEmpty
-+ _objc_msgSend$patternEventCount
-+ _objc_msgSend$placeRank
-+ _objc_msgSend$placeRole
-+ _objc_msgSend$totalEventCount
-+ _objc_msgSend$unionDeletedFieldTypes:
 + _symbolic Say_____G 27IntelligencePlatformLibrary28PrivateMLClientSafetyMetricsV0F14ClassificationO
 + _symbolic Say_____G 27IntelligencePlatformLibrary28PrivateMLClientSafetyMetricsV19AbuseClassificationO
 + _symbolic _____ 27IntelligencePlatformLibrary0C0O7StreamsO15PrivateMLClientO13SafetyMetricsO
@@ -1277,8 +1214,6 @@ Symbols:
 - GCC_except_table7384
 - GCC_except_table7958
 - __OBJC_$_INSTANCE_METHODS_CCSensedUserContextPatternMetadata
-- _objc_msgSend$copyApplyingPatch:error:
-- _objc_msgSend$initWithPatternType:routineMetadata:durationStats:distanceStats:error:
 CStrings:
 + "%"
 + "2F0625EA-2AA8-4E4F-9D74-08DC4B224C2A"

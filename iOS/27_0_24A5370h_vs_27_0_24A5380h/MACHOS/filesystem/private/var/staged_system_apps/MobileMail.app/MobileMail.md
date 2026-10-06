@@ -2,134 +2,81 @@
 
 > `/private/var/staged_system_apps/MobileMail.app/MobileMail`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5b6eb0` | `0x5d6630` | **`+0x1f780`** |
+| `__DATA_CONST.__const` | `0x23f88` | `0x24e20` | **`+0xe98`** |
+| `__TEXT.__const` | `0x13ba0` | `0x14640` | **`+0xaa0`** |
+| `__TEXT.__cstring` | `0x18604` | `0x18e74` | **`+0x870`** |
+| `__TEXT.__swift5_typeref` | `0xb6b8` | `0xbede` | **`+0x826`** |
+| `__DATA.__bss` | `0x154e8` | `0x15b28` | **`+0x640`** |
+| `__DATA.__data` | `0xf8f0` | `0xfde0` | **`+0x4f0`** |
+| `__TEXT.__oslogstring` | `0x19dc4` | `0x1a284` | **`+0x4c0`** |
+| `__TEXT.__gcc_except_tab` | `0x55798` | `0x55c50` | **`+0x4b8`** |
+| `__TEXT.__swift5_capture` | `0x8a10` | `0x8eac` | **`+0x49c`** |
+| `__DATA.__objc_const` | `0x37980` | `0x37d38` | **`+0x3b8`** |
+| `__TEXT.__unwind_info` | `0x1a0d0` | `0x1a458` | **`+0x388`** |
+| `__TEXT.__eh_frame` | `0x52f4` | `0x5624` | **`+0x330`** |
+| `__TEXT.__constg_swiftt` | `0x45d8` | `0x48a0` | **`+0x2c8`** |
+| `__DATA.__objc_data` | `0xc328` | `0xc5c8` | **`+0x2a0`** |
+| `__TEXT.__objc_methname` | `0x68ef7` | `0x69187` | **`+0x290`** |
+| `__TEXT.__auth_stubs` | `0x7770` | `0x79f0` | **`+0x280`** |
+| `__DATA_CONST.__got` | `0x3df8` | `0x4068` | **`+0x270`** |
+| `__TEXT.__objc_stubs` | `0x45e80` | `0x460a0` | **`+0x220`** |
+| `__TEXT.__objc_methlist` | `0x26cdc` | `0x26ee4` | **`+0x208`** |
+| `__TEXT.__objc_classname` | `0x635a` | `0x64fa` | **`+0x1a0`** |
+| `__TEXT.__swift5_reflstr` | `0x394f` | `0x3acf` | **`+0x180`** |
+| `__TEXT.__swift5_fieldmd` | `0x3440` | `0x35b0` | **`+0x170`** |
+| `__DATA_CONST.__auth_got` | `0x3bc8` | `0x3d08` | **`+0x140`** |
+| `__DATA_CONST.__cfstring` | `0xe8a0` | `0xe980` | **`+0xe0`** |
+| `__DATA.__objc_selrefs` | `0x15968` | `0x15a10` | **`+0xa8`** |
+| `__DATA_CONST.__auth_ptr` | `0x1e88` | `0x1f10` | **`+0x88`** |
+| `__TEXT.__swift5_assocty` | `0x1750` | `0x17d8` | **`+0x88`** |
+| `__TEXT.__swift5_proto` | `0xb14` | `0xb54` | **`+0x40`** |
+| `__TEXT.__swift5_types` | `0x544` | `0x57c` | **`+0x38`** |
+| `__TEXT.__ustring` | `0xa7e` | `0xab2` | **`+0x34`** |
+| `__TEXT.__swift_as_cont` | `0x958` | `0x988` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0xe98` | `0xec0` | **`+0x28`** |
+| `__TEXT.__objc_methtype` | `0x12b5b` | `0x12b35` | **`-0x26`** |
+| `__TEXT.__swift_as_ret` | `0x5ac` | `0x5cc` | **`+0x20`** |
+| `__TEXT.__swift_as_entry` | `0x558` | `0x574` | **`+0x1c`** |
+| `__TEXT.__swift5_builtin` | `0x3d4` | `0x3e8` | **`+0x14`** |
+| `__DATA.__common` | `0x958` | `0x968` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_ivar`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_protos`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x5b6eb0
--  __TEXT.__auth_stubs: 0x7770
--  __TEXT.__objc_stubs: 0x45e80
--  __TEXT.__objc_methlist: 0x26cdc
--  __TEXT.__const: 0x13ba0
--  __TEXT.__gcc_except_tab: 0x55798
--  __TEXT.__objc_methname: 0x68ef7
--  __TEXT.__cstring: 0x18604
--  __TEXT.__objc_classname: 0x635a
--  __TEXT.__objc_methtype: 0x12b5b
--  __TEXT.__oslogstring: 0x19dc4
--  __TEXT.__ustring: 0xa7e
-+  __TEXT.__text: 0x5d6630
-+  __TEXT.__auth_stubs: 0x79f0
-+  __TEXT.__objc_stubs: 0x460a0
-+  __TEXT.__objc_methlist: 0x26ee4
-+  __TEXT.__const: 0x14640
-+  __TEXT.__gcc_except_tab: 0x55c50
-+  __TEXT.__objc_methname: 0x69187
-+  __TEXT.__cstring: 0x18e74
-+  __TEXT.__objc_classname: 0x64fa
-+  __TEXT.__objc_methtype: 0x12b35
-+  __TEXT.__oslogstring: 0x1a284
-+  __TEXT.__ustring: 0xab2
-   __TEXT.__dlopen_cstrs: 0x2cc
--  __TEXT.__swift5_typeref: 0xb6b8
--  __TEXT.__swift5_capture: 0x8a10
--  __TEXT.__constg_swiftt: 0x45d8
--  __TEXT.__swift5_reflstr: 0x394f
--  __TEXT.__swift5_assocty: 0x1750
--  __TEXT.__swift5_fieldmd: 0x3440
--  __TEXT.__swift5_builtin: 0x3d4
-+  __TEXT.__swift5_typeref: 0xbede
-+  __TEXT.__swift5_capture: 0x8eac
-+  __TEXT.__constg_swiftt: 0x48a0
-+  __TEXT.__swift5_reflstr: 0x3acf
-+  __TEXT.__swift5_assocty: 0x17d8
-+  __TEXT.__swift5_fieldmd: 0x35b0
-+  __TEXT.__swift5_builtin: 0x3e8
-   __TEXT.__swift5_protos: 0x4c
--  __TEXT.__swift5_proto: 0xb14
--  __TEXT.__swift5_types: 0x544
--  __TEXT.__swift_as_entry: 0x558
--  __TEXT.__swift_as_ret: 0x5ac
--  __TEXT.__swift_as_cont: 0x958
-+  __TEXT.__swift5_proto: 0xb54
-+  __TEXT.__swift5_types: 0x57c
-+  __TEXT.__swift_as_entry: 0x574
-+  __TEXT.__swift_as_ret: 0x5cc
-+  __TEXT.__swift_as_cont: 0x988
-   __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__unwind_info: 0x1a0d0
--  __TEXT.__eh_frame: 0x52f4
--  __DATA_CONST.__const: 0x23f88
--  __DATA_CONST.__cfstring: 0xe8a0
--  __DATA_CONST.__objc_classlist: 0xe98
-+  __TEXT.__unwind_info: 0x1a458
-+  __TEXT.__eh_frame: 0x5624
-+  __DATA_CONST.__const: 0x24e20
-+  __DATA_CONST.__cfstring: 0xe980
-+  __DATA_CONST.__objc_classlist: 0xec0
-   __DATA_CONST.__objc_catlist: 0xf0
-   __DATA_CONST.__objc_protolist: 0xbf8
-   __DATA_CONST.__objc_imageinfo: 0x8
+-3893.100.7.0.0
++3895.100.17.2.1
 
-   __DATA_CONST.__objc_arraydata: 0x500
-   __DATA_CONST.__objc_arrayobj: 0x198
-   __DATA_CONST.__objc_dictobj: 0xa0
--  __DATA_CONST.__auth_got: 0x3bc8
--  __DATA_CONST.__got: 0x3df8
--  __DATA_CONST.__auth_ptr: 0x1e88
--  __DATA.__objc_const: 0x37980
--  __DATA.__objc_selrefs: 0x15968
-+  __DATA_CONST.__auth_got: 0x3d08
-+  __DATA_CONST.__got: 0x4068
-+  __DATA_CONST.__auth_ptr: 0x1f10
-+  __DATA.__objc_const: 0x37d38
-+  __DATA.__objc_selrefs: 0x15a10
-   __DATA.__objc_ivar: 0x1fc0
--  __DATA.__objc_data: 0xc328
--  __DATA.__data: 0xf8f0
--  __DATA.__bss: 0x154e8
--  __DATA.__common: 0x958
-+  __DATA.__objc_data: 0xc5c8
-+  __DATA.__data: 0xfde0
-+  __DATA.__bss: 0x15b28
-+  __DATA.__common: 0x968
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/Charts.framework/Charts
 +  - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/ContactsUI.framework/ContactsUI
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/PrivateFrameworks/GenerativeSearch.framework/GenerativeSearch
-   - /System/Library/PrivateFrameworks/GenerativeSearchAdapter.framework/GenerativeSearchAdapter
-   - /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
 +  - /System/Library/PrivateFrameworks/HybridSearch.framework/HybridSearch
 +  - /System/Library/PrivateFrameworks/HybridSearchAdapter.framework/HybridSearchAdapter
-   - /System/Library/PrivateFrameworks/MIME.framework/MIME
-   - /System/Library/PrivateFrameworks/MailKit.framework/MailKit
-   - /System/Library/PrivateFrameworks/MailServices.framework/MailServices
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 25429
 -  Symbols:   4758
--  CStrings:  24126
+-  CStrings:  22161
 +  Functions: 25856
 +  Symbols:   4815
-+  CStrings:  24226
- 
-Sections:
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
-~ __DATA.__objc_ivar : content changed
++  CStrings:  22254
 Symbols:
 + _$s10AppIntents15IntentParameterC15IntControlStyleO7stepperyAEyx_GAGmAA01_C5ValueRzs8SendableRzlFWC
 + _$s10AppIntents15IntentParameterC15IntControlStyleOMa
@@ -814,5 +761,4 @@ CStrings:
 - "setAppleIntelligenceOnboardingState:"
 - "setMailAppleIntelligenceWelcomeOnboardingViewController:"
 - "v32@?0@\"NSString\"8@\"NSString\"16@\"NSString\"24"
-
 ```

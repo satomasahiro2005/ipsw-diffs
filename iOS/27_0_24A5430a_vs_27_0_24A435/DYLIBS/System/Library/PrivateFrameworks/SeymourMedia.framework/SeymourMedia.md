@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/SeymourMedia.framework/SeymourMedia`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1422a8` | `0x1423b8` | **`+0x110`** |
+| `__AUTH_CONST.__auth_got` | `0x28f8` | `0x28e8` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
- 2027.0.146.1.4
--  __TEXT.__text: 0x1422a8
-+  __TEXT.__text: 0x1423b8
-   __TEXT.__objc_methlist: 0xdbc
-   __TEXT.__const: 0xa074
-   __TEXT.__cstring: 0x1c00
-
-   __AUTH_CONST.__const: 0xd578
-   __AUTH_CONST.__cfstring: 0x20
-   __AUTH_CONST.__objc_const: 0x4de0
--  __AUTH_CONST.__auth_got: 0x28f8
-+  __AUTH_CONST.__auth_got: 0x28e8
-   __AUTH.__objc_data: 0xe60
-   __AUTH.__data: 0x1bc0
-   __DATA.__objc_ivar: 0x28
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 6226
--  Symbols:   2784
-+  Symbols:   2782
-   CStrings:  518
- 
+-  Symbols:   2411
++  Symbols:   2409
 Symbols:
 - _swift_release_x9
 - _swift_retain_x9

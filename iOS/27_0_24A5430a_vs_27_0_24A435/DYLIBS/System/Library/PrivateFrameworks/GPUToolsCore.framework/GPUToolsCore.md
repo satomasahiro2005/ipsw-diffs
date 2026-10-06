@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/GPUToolsCore.framework/GPUToolsCore`
 
-```diff
+### Section Size Changes
 
- 310.8.0.0.0
--  __TEXT.__text: 0x38b4c
-+  __TEXT.__text: 0x38b5c
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__objc_methlist: 0x1c0c
-   __TEXT.__const: 0x380
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x38b4c` | `0x38b5c` | **`+0x10`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNK8GPUTools2FB7Decoder15DecodeArgumentsERNS1_9DecodeJobEPKcjPNS_2FD8ArgumentE : 3308 -> 3312
 ~ __ZNSt3__114__split_bufferIP23dy_polymorphic_vector_tNS_9allocatorIS2_EEE12emplace_backIJS2_EEEvDpOT_ : 264 -> 268

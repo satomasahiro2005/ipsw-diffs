@@ -2,21 +2,16 @@
 
 > `/System/Library/VideoProcessors/STF.bundle/STF`
 
-```diff
+### Section Size Changes
 
- 764.22.13.0.0
--  __TEXT.__text: 0xf1000
-+  __TEXT.__text: 0xf1e68
-   __TEXT.__objc_methlist: 0x1734
-   __TEXT.__const: 0x540
-   __TEXT.__cstring: 0x3f78
-   __TEXT.__gcc_except_tab: 0x1a0
-   __TEXT.__oslogstring: 0x53
--  __TEXT.__unwind_info: 0xdf8
-+  __TEXT.__unwind_info: 0xe18
-   __TEXT.__eh_frame: 0x608
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf1000` | `0xf1e68` | **`+0xe68`** |
+| `__TEXT.__unwind_info` | `0xdf8` | `0xe18` | **`+0x20`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN12_GLOBAL__N_124trsm_blocked_left_kernelIfEEvN3sme4blas8SCALARFPEbbbllT_PKS4_lPS4_lllS7_S7_S7_S7_ : 2240 -> 2224
 ~ _sme_strsm : 680 -> 696

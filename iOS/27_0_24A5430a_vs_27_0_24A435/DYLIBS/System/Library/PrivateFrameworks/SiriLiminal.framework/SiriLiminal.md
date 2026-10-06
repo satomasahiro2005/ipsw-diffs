@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SiriLiminal.framework/SiriLiminal`
 
-```diff
+### Section Size Changes
 
- 3600.70.47.11.1
--  __TEXT.__text: 0x56e74
-+  __TEXT.__text: 0x56ed0
-   __TEXT.__objc_methlist: 0x1310
-   __TEXT.__const: 0xdb0
-   __TEXT.__cstring: 0x58f9
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x56e74` | `0x56ed0` | **`+0x5c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__16vectorIN5Darts15DoubleArrayImplIvvivE16result_pair_typeENS_9allocatorIS4_EEE6resizeEm : 284 -> 288
 ~ __ZNSt3__114__split_bufferIPZNK5Darts15DoubleArrayImplIvvivE16predictiveSearchINS3_16result_pair_typeEEEmPKcPT_mmiE5StateNS_9allocatorISB_EEE12emplace_backIJSB_EEEvDpOT_ : 256 -> 260

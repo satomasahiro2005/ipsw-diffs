@@ -2,101 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/MediaExperience.framework/MediaExperience`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2e5e5c` | `0x2e8944` | **`+0x2ae8`** |
+| `__AUTH.__objc_data` | `0x14a0` | `0x1d10` | **`+0x870`** |
+| `__DATA_DIRTY.__objc_data` | `0x960` | `0x190` | **`-0x7d0`** |
+| `__TEXT.__oslogstring` | `0x77b7f` | `0x782da` | **`+0x75b`** |
+| `__TEXT.__cstring` | `0x4dfab` | `0x4e3ed` | **`+0x442`** |
+| `__AUTH_CONST.__objc_const` | `0xcb60` | `0xce50` | **`+0x2f0`** |
+| `__AUTH_CONST.__cfstring` | `0x1c220` | `0x1c360` | **`+0x140`** |
+| `__TEXT.__objc_methlist` | `0x8628` | `0x8748` | **`+0x120`** |
+| `__DATA_CONST.__got` | `0xc40` | `0xd08` | **`+0xc8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5328` | `0x53a8` | **`+0x80`** |
+| `__DATA_CONST.__const` | `0x72d8` | `0x7330` | **`+0x58`** |
+| `__TEXT.__unwind_info` | `0x6318` | `0x6370` | **`+0x58`** |
+| `__DATA.__objc_ivar` | `0xc40` | `0xc64` | **`+0x24`** |
+| `__AUTH_CONST.__const` | `0x48c8` | `0x48e8` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x518c` | `0x51a8` | **`+0x1c`** |
+| `__DATA.__bss` | `0x1298` | `0x12b0` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x300` | `0x310` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x2d0` | `0x2e0` | **`+0x10`** |
+| `__DATA.__data` | `0x1400` | `0x1408` | **`+0x8`** |
+| `__DATA_DIRTY.__bss` | `0xd98` | `0xd90` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2e5e5c
-+  __TEXT.__text: 0x2e8944
-   __TEXT.__delay_helper: 0x304
-   __TEXT.__lazy_helpers: 0xfc
--  __TEXT.__objc_methlist: 0x8628
--  __TEXT.__cstring: 0x4dfab
-+  __TEXT.__objc_methlist: 0x8748
-+  __TEXT.__cstring: 0x4e3ed
-   __TEXT.__const: 0x1cd8
--  __TEXT.__gcc_except_tab: 0x518c
--  __TEXT.__oslogstring: 0x77b7f
-+  __TEXT.__gcc_except_tab: 0x51a8
-+  __TEXT.__oslogstring: 0x782da
-   __TEXT.__dlopen_cstrs: 0x613
--  __TEXT.__unwind_info: 0x6318
-+  __TEXT.__unwind_info: 0x6370
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x72d8
--  __DATA_CONST.__objc_classlist: 0x300
-+  __DATA_CONST.__const: 0x7330
-+  __DATA_CONST.__objc_classlist: 0x310
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x68
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5328
-+  __DATA_CONST.__objc_selrefs: 0x53a8
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x2d0
-+  __DATA_CONST.__objc_superrefs: 0x2e0
-   __DATA_CONST.__objc_arraydata: 0xf8
--  __DATA_CONST.__got: 0xc40
--  __AUTH_CONST.__const: 0x48c8
--  __AUTH_CONST.__cfstring: 0x1c220
--  __AUTH_CONST.__objc_const: 0xcb60
-+  __DATA_CONST.__got: 0xd08
-+  __AUTH_CONST.__const: 0x48e8
-+  __AUTH_CONST.__cfstring: 0x1c360
-+  __AUTH_CONST.__objc_const: 0xce50
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__lazy_load_got: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x78
+-360.63.1.11.2
++360.66.1.11.1
 
-   __AUTH_CONST.__objc_dictobj: 0x118
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x14a0
-+  __AUTH.__objc_data: 0x1d10
-   __AUTH.__data: 0x5f0
--  __DATA.__objc_ivar: 0xc40
--  __DATA.__data: 0x1400
--  __DATA.__bss: 0x1298
-+  __DATA.__objc_ivar: 0xc64
-+  __DATA.__data: 0x1408
-+  __DATA.__bss: 0x12b0
-   __DATA.__common: 0x680
--  __DATA_DIRTY.__objc_data: 0x960
--  __DATA_DIRTY.__bss: 0xd98
-+  __DATA_DIRTY.__objc_data: 0x190
-+  __DATA_DIRTY.__bss: 0xd90
-   __DATA_DIRTY.__common: 0x90
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/CoreAudio.framework/CoreAudio
-
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 11510
--  Symbols:   37447
--  CStrings:  17728
+-  Symbols:   13648
+-  CStrings:  14129
 +  Functions: 11549
-+  Symbols:   37579
-+  CStrings:  17782
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__dlopen_cstrs : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__lazy_load_got : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH.__data : content changed
++  Symbols:   13712
++  CStrings:  14173
 Symbols:
 + +[MXCustomRoutingSessionController sharedInstance]
 + +[MXSystemController(InternalUse) copyPayloadToPost:notificationPayload:systemController:]
@@ -170,25 +113,6 @@ Symbols:
 + _mxsc_fetchCanInheritApplicationStateFromOtherProcesses
 + _mxsmccs_ClearActiveClientIfMatches
 + _mxsmccs_UpdateActiveClientPlaying
-+ _objc_msgSend$applyProcessAssociation:
-+ _objc_msgSend$archivedDataWithRootObject:requiringSecureCoding:error:
-+ _objc_msgSend$arrayByAddingObject:
-+ _objc_msgSend$clientWantsLegacyRingtoneVolumeScaling
-+ _objc_msgSend$copyPayloadToPost:notificationPayload:systemController:
-+ _objc_msgSend$currentSession
-+ _objc_msgSend$initWithPID:bundleID:
-+ _objc_msgSend$initWithType:
-+ _objc_msgSend$ipv4Strings
-+ _objc_msgSend$ipv6Strings
-+ _objc_msgSend$mBundleID
-+ _objc_msgSend$mPID
-+ _objc_msgSend$pidToInheritAppState
-+ _objc_msgSend$setClientWantsLegacyRingtoneVolumeScaling:
-+ _objc_msgSend$setCurrentSession:
-+ _objc_msgSend$setIpv4Strings:
-+ _objc_msgSend$setIpv6Strings:
-+ _objc_msgSend$setPidToInheritAppState:
-+ _objc_msgSend$setPlaying:
 - -[MXResolvedEndpoint ipv4String]
 - -[MXResolvedEndpoint ipv6String]
 - -[MXResolvedEndpoint setIpv4String:]
@@ -197,10 +121,6 @@ Symbols:
 - GCC_except_table44
 - _OBJC_IVAR_$_MXResolvedEndpoint._ipv4String
 - _OBJC_IVAR_$_MXResolvedEndpoint._ipv6String
-- _objc_msgSend$ipv4String
-- _objc_msgSend$ipv6String
-- _objc_msgSend$setIpv4String:
-- _objc_msgSend$setIpv6String:
 CStrings:
 + "-AVSystemController- %s: Associating %d with %d"
 + "-CMSMUtilities- %s: NOTICE: PIDToInheritAppStateFrom changed from %d to %d."
@@ -264,5 +184,4 @@ CStrings:
 - "Failed to get an NWAddressEndpoint back"
 - "Jun 16 2026"
 - "Updating from old route descriptors: "
-
 ```

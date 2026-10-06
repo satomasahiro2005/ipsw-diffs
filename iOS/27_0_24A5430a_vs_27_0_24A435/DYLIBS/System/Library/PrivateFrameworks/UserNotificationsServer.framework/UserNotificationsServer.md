@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/UserNotificationsServer.framework/UserNotificationsServer`
 
-```diff
+### Section Size Changes
 
- 720.0.0.0.0
--  __TEXT.__text: 0x3c3b0
-+  __TEXT.__text: 0x3c3c0
-   __TEXT.__objc_methlist: 0x24d4
-   __TEXT.__const: 0x4e4
-   __TEXT.__gcc_except_tab: 0x654
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3c3b0` | `0x3c3c0` | **`+0x10`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_225252798 -> sub_225a97798 : 340 -> 344
 ~ sub_2252528ec -> sub_225a978f0 : 344 -> 348

@@ -2,15 +2,14 @@
 
 > `/System/DriverKit/usr/lib/system/libsystem_trace_debug.dylib`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -1966.0.6.0.0
 +1966.2.1.0.0
-   __TEXT.__text: 0xa374
-   __TEXT.__const: 0x58
-   __TEXT.__cstring: 0x407
 ```

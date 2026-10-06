@@ -2,129 +2,63 @@
 
 > `/System/Library/PrivateFrameworks/SpringBoardHome.framework/SpringBoardHome`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__oslogstring` | `0xeb20` | `0xf150` | **`+0x630`** |
+| `__TEXT.__text` | `0x38987c` | `0x389278` | **`-0x604`** |
+| `__AUTH_CONST.__objc_const` | `0x59108` | `0x58cd0` | **`-0x438`** |
+| `__TEXT.__objc_methlist` | `0x3edac` | `0x3eab4` | **`-0x2f8`** |
+| `__DATA.__bss` | `0x3a98` | `0x3838` | **`-0x260`** |
+| `__TEXT.__ustring` | `0x620` | `0x476` | **`-0x1aa`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1cc88` | `0x1cae8` | **`-0x1a0`** |
+| `__TEXT.__cstring` | `0x188e3` | `0x18a83` | **`+0x1a0`** |
+| `__DATA_CONST.__const` | `0x9d40` | `0x9ea8` | **`+0x168`** |
+| `__AUTH_CONST.__cfstring` | `0x16c80` | `0x16da0` | **`+0x120`** |
+| `__TEXT.__const` | `0x7fd4` | `0x7ec4` | **`-0x110`** |
+| `__AUTH.__objc_data` | `0xb930` | `0xb830` | **`-0x100`** |
+| `__TEXT.__unwind_info` | `0xf8d8` | `0xf7e0` | **`-0xf8`** |
+| `__DATA_DIRTY.__objc_data` | `0x14f0` | `0x1590` | **`+0xa0`** |
+| `__AUTH_CONST.__const` | `0x7538` | `0x74a8` | **`-0x90`** |
+| `__DATA.__data` | `0x96d8` | `0x9648` | **`-0x90`** |
+| `__TEXT.__gcc_except_tab` | `0x42c4` | `0x4328` | **`+0x64`** |
+| `__AUTH_CONST.__auth_got` | `0x1d10` | `0x1d68` | **`+0x58`** |
+| `__DATA_CONST.__got` | `0x24d0` | `0x2478` | **`-0x58`** |
+| `__TEXT.__swift5_capture` | `0x15b8` | `0x1564` | **`-0x54`** |
+| `__TEXT.__eh_frame` | `0xc88` | `0xc48` | **`-0x40`** |
+| `__TEXT.__swift5_assocty` | `0x540` | `0x510` | **`-0x30`** |
+| `__TEXT.__swift5_reflstr` | `0xafa` | `0xb2a` | **`+0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0xbe0` | `0xc08` | **`+0x28`** |
+| `__TEXT.__swift5_typeref` | `0x65a0` | `0x657e` | **`-0x22`** |
+| `__DATA.__objc_ivar` | `0x3de0` | `0x3dc0` | **`-0x20`** |
+| `__DATA_DIRTY.__bss` | `0x38` | `0x18` | **`-0x20`** |
+| `__AUTH.__data` | `0xc78` | `0xc60` | **`-0x18`** |
+| `__DATA_CONST.__objc_protolist` | `0xbc0` | `0xba8` | **`-0x18`** |
+| `__TEXT.__swift5_builtin` | `0x1e0` | `0x1cc` | **`-0x14`** |
+| `__TEXT.__swift5_proto` | `0x174` | `0x160` | **`-0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x1328` | `0x1318` | **`-0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x1a8` | `0x198` | **`-0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0xea0` | `0xe98` | **`-0x8`** |
+| `__TEXT.__constg_swiftt` | `0x1270` | `0x126c` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x38987c
--  __TEXT.__objc_methlist: 0x3edac
--  __TEXT.__const: 0x7fd4
--  __TEXT.__cstring: 0x188e3
--  __TEXT.__gcc_except_tab: 0x42c4
--  __TEXT.__oslogstring: 0xeb20
-+  __TEXT.__text: 0x389278
-+  __TEXT.__objc_methlist: 0x3eab4
-+  __TEXT.__const: 0x7ec4
-+  __TEXT.__cstring: 0x18a83
-+  __TEXT.__gcc_except_tab: 0x4328
-+  __TEXT.__oslogstring: 0xf150
-   __TEXT.__dlopen_cstrs: 0xb84
--  __TEXT.__ustring: 0x620
--  __TEXT.__swift5_typeref: 0x65a0
--  __TEXT.__constg_swiftt: 0x1270
--  __TEXT.__swift5_reflstr: 0xafa
--  __TEXT.__swift5_fieldmd: 0xbe0
--  __TEXT.__swift5_builtin: 0x1e0
--  __TEXT.__swift5_assocty: 0x540
--  __TEXT.__swift5_proto: 0x174
-+  __TEXT.__ustring: 0x476
-+  __TEXT.__swift5_typeref: 0x657e
-+  __TEXT.__constg_swiftt: 0x126c
-+  __TEXT.__swift5_reflstr: 0xb2a
-+  __TEXT.__swift5_fieldmd: 0xc08
-+  __TEXT.__swift5_builtin: 0x1cc
-+  __TEXT.__swift5_assocty: 0x510
-+  __TEXT.__swift5_proto: 0x160
-   __TEXT.__swift5_types: 0xfc
--  __TEXT.__swift5_capture: 0x15b8
--  __TEXT.__unwind_info: 0xf8d8
--  __TEXT.__eh_frame: 0xc88
-+  __TEXT.__swift5_capture: 0x1564
-+  __TEXT.__unwind_info: 0xf7e0
-+  __TEXT.__eh_frame: 0xc48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9d40
--  __DATA_CONST.__objc_classlist: 0x1328
-+  __DATA_CONST.__const: 0x9ea8
-+  __DATA_CONST.__objc_classlist: 0x1318
-   __DATA_CONST.__objc_catlist: 0x120
--  __DATA_CONST.__objc_protolist: 0xbc0
-+  __DATA_CONST.__objc_protolist: 0xba8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1cc88
--  __DATA_CONST.__objc_protorefs: 0x1a8
--  __DATA_CONST.__objc_superrefs: 0xea0
-+  __DATA_CONST.__objc_selrefs: 0x1cae8
-+  __DATA_CONST.__objc_protorefs: 0x198
-+  __DATA_CONST.__objc_superrefs: 0xe98
-   __DATA_CONST.__objc_arraydata: 0x6e0
--  __DATA_CONST.__got: 0x24d0
--  __AUTH_CONST.__const: 0x7538
--  __AUTH_CONST.__cfstring: 0x16c80
--  __AUTH_CONST.__objc_const: 0x59108
-+  __DATA_CONST.__got: 0x2478
-+  __AUTH_CONST.__const: 0x74a8
-+  __AUTH_CONST.__cfstring: 0x16da0
-+  __AUTH_CONST.__objc_const: 0x58cd0
-   __AUTH_CONST.__objc_intobj: 0x648
-   __AUTH_CONST.__objc_doubleobj: 0xf0
-   __AUTH_CONST.__objc_arrayobj: 0x258
-   __AUTH_CONST.__objc_dictobj: 0x140
--  __AUTH_CONST.__auth_got: 0x1d10
--  __AUTH.__objc_data: 0xb930
--  __AUTH.__data: 0xc78
--  __DATA.__objc_ivar: 0x3de0
--  __DATA.__data: 0x96d8
--  __DATA.__bss: 0x3a98
-+  __AUTH_CONST.__auth_got: 0x1d68
-+  __AUTH.__objc_data: 0xb830
-+  __AUTH.__data: 0xc60
-+  __DATA.__objc_ivar: 0x3dc0
-+  __DATA.__data: 0x9648
-+  __DATA.__bss: 0x3838
-   __DATA.__common: 0x70
--  __DATA_DIRTY.__objc_data: 0x14f0
-+  __DATA_DIRTY.__objc_data: 0x1590
-   __DATA_DIRTY.__data: 0x60
--  __DATA_DIRTY.__bss: 0x38
-+  __DATA_DIRTY.__bss: 0x18
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
+-217.0.101.0.0
++220.105.0.0.0
 
-   - /System/Library/PrivateFrameworks/DocumentManagerCore.framework/DocumentManagerCore
-   - /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
-   - /System/Library/PrivateFrameworks/IconFoundation.framework/IconFoundation
 -  - /System/Library/PrivateFrameworks/IconRendering.framework/IconRendering
-   - /System/Library/PrivateFrameworks/IconServices.framework/IconServices
-   - /System/Library/PrivateFrameworks/IntlPreferences.framework/IntlPreferences
--  - /System/Library/PrivateFrameworks/LightSourceSupport.framework/LightSourceSupport
-   - /System/Library/PrivateFrameworks/MaterialKit.framework/MaterialKit
-   - /System/Library/PrivateFrameworks/MetadataUtilities.framework/MetadataUtilities
-   - /System/Library/PrivateFrameworks/PeopleUIInternal.framework/PeopleUIInternal
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+-  - /System/Library/PrivateFrameworks/LightSourceSupport.framework/LightSourceSupport
+
 -  Functions: 24673
--  Symbols:   68680
--  CStrings:  7441
+-  Symbols:   33671
+-  CStrings:  4540
 +  Functions: 24643
-+  Symbols:   68550
-+  CStrings:  7478
- 
-Sections:
-~ __TEXT.__swift5_types : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __DATA.__common : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   33627
++  CStrings:  4565
 Symbols:
 + +[NSArray(SBHArrayUtilities) sbh_arrayByCombiningArray:withArray:]
 + +[SBFolderView prefetchingContextForIconListViews:maxPrefetchedCells:scrolling:scrollingDirection:visibleRectProvider:]
@@ -440,77 +374,6 @@ Symbols:
 + ___block_descriptor_65_e8_32s40s_e49_v32?0"SBHWidgetContainerViewController"8Q16^B24ls32l8s40l8
 + __canPoolImage:forIcon:.__poolOptOutCount
 + _kCGColorSpaceExtendedSRGB
-+ _objc_msgSend$_canPoolImage:forIcon:
-+ _objc_msgSend$_didAddList:informObservers:informAncestryChange:
-+ _objc_msgSend$_ensureIconsByIdentifierMapping
-+ _objc_msgSend$_invalidateIconsByIdentifierMapping
-+ _objc_msgSend$_mutateIcons:
-+ _objc_msgSend$_prefetchNextIconIfPossible:
-+ _objc_msgSend$_prefetchingContext
-+ _objc_msgSend$_setDock:informAncestryChange:
-+ _objc_msgSend$_setIgnoredList:informAncestryChange:
-+ _objc_msgSend$_setTodayList:informAncestryChange:
-+ _objc_msgSend$_updateVisibleIconsInCellsPrefetchingNextIconIfPossible:initialPrefetchingContext:
-+ _objc_msgSend$additionalPrecacheInfos
-+ _objc_msgSend$allImageAppearances
-+ _objc_msgSend$areAllIconsLoaded
-+ _objc_msgSend$bundleIdentifiers
-+ _objc_msgSend$cacheForIconImageInfo:imageAppearance:imageOptions:
-+ _objc_msgSend$cacheForIconImageInfo:mitigated:
-+ _objc_msgSend$cachesMitigatedImages
-+ _objc_msgSend$canUseLocalCacheWithInfo:traitCollection:context:options:
-+ _objc_msgSend$disableDataSourceChangeNotifications
-+ _objc_msgSend$enableDataSourceChangeNotifications
-+ _objc_msgSend$enumerateAllIconsWithBaseIndexPath:options:stop:using:
-+ _objc_msgSend$forcesMitigatedAppearance
-+ _objc_msgSend$hasIconContent
-+ _objc_msgSend$iconImagePrecacheInfosForIconManager:
-+ _objc_msgSend$initWithBundleIdentifiers:iconImageInfo:iconImageLoadPriority:
-+ _objc_msgSend$initWithIcon:iconImageInfo:imageGeneration:imageAppearance:imageOptions:
-+ _objc_msgSend$initWithIconIdentifier:iconImageInfo:imageGeneration:imageAppearance:imageOptions:
-+ _objc_msgSend$initWithIconListView:visibleRect:visibleGridCellIndexes:prefetchedGridCellIndexes:prefetchableGridCellIndexes:
-+ _objc_msgSend$initWithLayer:
-+ _objc_msgSend$initWithMaxPrefetchedCells:scrolling:scrollingDirection:prefetchingInfosForFullyVisibleLists:leadingPrefetchingInfosForNotFullyVisibleLists:trailingPrefetchingInfosForNotFullyVisibleLists:
-+ _objc_msgSend$initWithName:
-+ _objc_msgSend$invalidatePrimaryandSecondaryDirections
-+ _objc_msgSend$isFastTintingEnabled
-+ _objc_msgSend$isOnTrailingCustomPage
-+ _objc_msgSend$isPrefetchingSettled
-+ _objc_msgSend$isTemporaryFolderAllowed
-+ _objc_msgSend$maxPrefetchedCells
-+ _objc_msgSend$precacheDataWithIconImageInfo:appearance:priority:options:
-+ _objc_msgSend$prefetchedIcons
-+ _objc_msgSend$prefetchingContextForIconListViews:maxPrefetchedCells:scrolling:scrollingDirection:visibleRectProvider:
-+ _objc_msgSend$prefetchingInfosForFullyVisibleLists
-+ _objc_msgSend$prefetchingInfosForNotFullyVisibleListsInPrimaryDirection
-+ _objc_msgSend$prefetchingInfosForNotFullyVisibleListsInSecondaryDirection
-+ _objc_msgSend$primaryDirection
-+ _objc_msgSend$reloadIconImageForReason:
-+ _objc_msgSend$representitiveIconImageView
-+ _objc_msgSend$representitiveIconLayerView
-+ _objc_msgSend$sbh_arrayByCombiningArray:withArray:
-+ _objc_msgSend$secondaryDirection
-+ _objc_msgSend$setAdditionalPrecacheInfos:
-+ _objc_msgSend$setAllowsColorMatching:
-+ _objc_msgSend$setAllowsPrefetchingIconsWhileSettled:
-+ _objc_msgSend$setBlendedContentsLayer:
-+ _objc_msgSend$setCachesMitigatedImages:
-+ _objc_msgSend$setColorScheme:
-+ _objc_msgSend$setFastTintingEnabled:
-+ _objc_msgSend$setForcesMitigatedAppearance:
-+ _objc_msgSend$setIconImageAppearance:
-+ _objc_msgSend$setIconsFromIconListModel:mutationOptions:
-+ _objc_msgSend$setPrefetchedGridCellIndexes:
-+ _objc_msgSend$setRepresentitiveIconImageView:
-+ _objc_msgSend$setSkipsImageCache:
-+ _objc_msgSend$setTemporaryFolderAllowed:
-+ _objc_msgSend$shouldIgnoreDataSourceChangeNotifications
-+ _objc_msgSend$skipsImageCache
-+ _objc_msgSend$updateIconTintColorFromImageAppearance:
-+ _objc_msgSend$updateIconViewVisibility
-+ _objc_msgSend$updateVisibleCellsPrefetchingNextIconIfPossible:defaultContentVisibility:prefetchingContext:
-+ _objc_msgSend$updateVisibleCellsPrefetchingNextIconIfPossible:visibleRect:effectiveVisibleRect:prefetchingContext:
-+ _objc_msgSend$white
 + _symbolic So22SBHIconImageAppearanceCSg
 + _symbolic So7CALayerCSg
 + _symbolic _____ 15SpringBoardHome14IconImageLayerC
@@ -868,134 +731,6 @@ Symbols:
 - _kCAFilterSoftLightBlendMode
 - _kCGColorSpaceExtendedLinearSRGB
 - _objc_copyStruct
-- _objc_msgSend$ICRIconLayer
-- _objc_msgSend$_allPrefetchableGridCellIndexesForListView:
-- _objc_msgSend$_areAllIconsLoadedInListView:withPrefetchedGridCellIndexes:visibleGridCellIndexes:
-- _objc_msgSend$_canPoolImageForIcon:
-- _objc_msgSend$_didAddLightSourceObserverInView:
-- _objc_msgSend$_isIconPrefetchingComplete
-- _objc_msgSend$_isPrefetchingSettledWithMaxPrefetchedCells:scrolling:notFullyVisibleIconListViewsInPrimaryDirection:visibleIconGridCellsInPrimaryDirection:notFullyVisibleIconListViewsInSecondaryDirection:visibleIconGridCellsInSecondaryDirection:
-- _objc_msgSend$_numberOfPrefetchableCellsInIconListViews:
-- _objc_msgSend$_numberOfPrefetchedCellsInIconListViews:
-- _objc_msgSend$_prefetchNextIconIfPossible
-- _objc_msgSend$_sortAndCategorizeIconListViews:scrolling:scrollingDirection:visibleRectProvider:outFullyVisibleIconListViews:outPrimaryDirection:outNotFullyVisibleIconListViewsInPrimaryDirection:outVisibleIconGridCellsInPrimaryDirection:outSecondaryDirection:outNotFullyVisibleIconListViewsInSecondaryDirection:outVisibleIconGridCellsInSecondaryDirection:
-- _objc_msgSend$_sortedIconListViews:vertical:
-- _objc_msgSend$_updateVisibleCellsPrefetchingNextIconIfPossible:maxPrefetchedCells:scrolling:defaultContentVisibility:fullyVisibleIconListViews:primaryDirection:notFullyVisibleIconListViewsInPrimaryDirection:visibleIconGridCellsInPrimaryDirection:secondaryDirection:notFullyVisibleIconListViewsInSecondaryDirection:visibleIconGridCellsInSecondaryDirection:
-- _objc_msgSend$_updateVisibleCellsPrefetchingNextIconIfPossible:visibleRect:effectiveVisibleRect:scrolling:fullyVisibleIconListViews:primaryDirection:notFullyVisibleIconListViewsInPrimaryDirection:visibleIconGridCellsInPrimaryDirection:secondaryDirection:notFullyVisibleIconListViewsInSecondaryDirection:visibleIconGridCellsInSecondaryDirection:
-- _objc_msgSend$_updateVisibleIconsInCellsPrefetchingNextIconIfPossible:
-- _objc_msgSend$accumulatedDistance
-- _objc_msgSend$activeRefreshRate
-- _objc_msgSend$angle
-- _objc_msgSend$appearanceWithTintColor:
-- _objc_msgSend$areUpdatesDisabled
-- _objc_msgSend$batchUpdateCount
-- _objc_msgSend$blueColor
-- _objc_msgSend$canUpdateIconTintColorFromImageAppearance:toImageAppearance:
-- _objc_msgSend$canUpdateLight
-- _objc_msgSend$clearDisplayedICRIconLayerAfterDelayIfContentHidden
-- _objc_msgSend$currentActivityLevel
-- _objc_msgSend$direction
-- _objc_msgSend$displayIdentity
-- _objc_msgSend$effectiveActivityLevel
-- _objc_msgSend$effectiveLightSourceActivityLevel
-- _objc_msgSend$enumerateCurrentPageIconLayerViewsUsingBlock:
-- _objc_msgSend$evaluateLightAngleUpdates
-- _objc_msgSend$imageLayer
-- _objc_msgSend$initWithColorScheme:allowsContentPreferredColorScheme:
-- _objc_msgSend$initWithIcon:iconImageInfo:imageGeneration:imageAppearance:masked:
-- _objc_msgSend$initWithIconIdentifier:iconImageInfo:imageGeneration:imageAppearance:masked:
-- _objc_msgSend$initWithLightSourceManager:type:reason:
-- _objc_msgSend$initWithLightSourceManager:windowScene:
-- _objc_msgSend$initWithName:caches:
-- _objc_msgSend$initialDistanceThreshold
-- _objc_msgSend$initialLightDirection
-- _objc_msgSend$initialVelocityThreshold
-- _objc_msgSend$intensity
-- _objc_msgSend$invalidateAssertion:
-- _objc_msgSend$invalidateDisableUpdatesAssertion:
-- _objc_msgSend$invalidateReduceUpdateFrequencyAssertion:
-- _objc_msgSend$isMasked
-- _objc_msgSend$isOverlayAllowed
-- _objc_msgSend$label
-- _objc_msgSend$lastBatchUpdateCount
-- _objc_msgSend$lastLightAngle
-- _objc_msgSend$lastLightDirection
-- _objc_msgSend$lastLightDirection2
-- _objc_msgSend$lastLightDirectionCoordinates
-- _objc_msgSend$lastLightIntensity
-- _objc_msgSend$lastLightTimestamp
-- _objc_msgSend$lastLightTimestamp2
-- _objc_msgSend$layerCount
-- _objc_msgSend$lightAngleDebugUIEnabled
-- _objc_msgSend$lightAngleInitialDistanceThreshold
-- _objc_msgSend$lightAngleInitialVelocityThreshold
-- _objc_msgSend$lightAngleRefreshRate
-- _objc_msgSend$lightSourceDisplayLink
-- _objc_msgSend$lightSourceForTargetTime:
-- _objc_msgSend$lightSourceManager
-- _objc_msgSend$lightSourceManager:didUpdateActivityLevel:
-- _objc_msgSend$lightSourceManager:didUpdateLightDirection:intensity:
-- _objc_msgSend$lightSourceSubscription
-- _objc_msgSend$magentaColor
-- _objc_msgSend$managerForScreen:
-- _objc_msgSend$noteLightAngleDidUpdate
-- _objc_msgSend$observerCount
-- _objc_msgSend$overlayManager
-- _objc_msgSend$overlayWindow
-- _objc_msgSend$pauseLightAngleUpdates
-- _objc_msgSend$precacheDataWithIconImageInfo:appearance:priority:
-- _objc_msgSend$preferredFrameRateRange
-- _objc_msgSend$pushLightAngleUpdateWithDirection:intensity:
-- _objc_msgSend$resumeLightAngleUpdates
-- _objc_msgSend$setAccumulatedDistance:
-- _objc_msgSend$setActiveRefreshRate:
-- _objc_msgSend$setBatchUpdateCount:
-- _objc_msgSend$setColorSchemePolicy:
-- _objc_msgSend$setCurrentActivityLevel:
-- _objc_msgSend$setIconTintColor:
-- _objc_msgSend$setImageLayer:
-- _objc_msgSend$setInitialLightDirection:
-- _objc_msgSend$setLastBatchUpdateCount:
-- _objc_msgSend$setLastLightAngle:
-- _objc_msgSend$setLastLightDirection2:
-- _objc_msgSend$setLastLightDirection:
-- _objc_msgSend$setLastLightIntensity:
-- _objc_msgSend$setLastLightTimestamp2:
-- _objc_msgSend$setLastLightTimestamp:
-- _objc_msgSend$setLightDirection:
-- _objc_msgSend$setLightIntensity:
-- _objc_msgSend$setLightSourceDisplayLink:
-- _objc_msgSend$setLightSourceSubscription:
-- _objc_msgSend$setOverlayManager:
-- _objc_msgSend$setSheenEffectDebugUIEnabled:
-- _objc_msgSend$setSheenEffectMinimumMovementToBecomeVisible:
-- _objc_msgSend$setSheenEffectStrength:
-- _objc_msgSend$setUpDisplayLink
-- _objc_msgSend$setUpLightSourceSubscription
-- _objc_msgSend$setUpdatesDisabled:
-- _objc_msgSend$sheenEffectDebugUIEnabled
-- _objc_msgSend$sheenEffectFadeInSettings
-- _objc_msgSend$sheenEffectFadeOutSettings
-- _objc_msgSend$sheenEffectMinimumMovementToBecomeVisible
-- _objc_msgSend$sheenEffectStrength
-- _objc_msgSend$shouldUpdateLight
-- _objc_msgSend$startOrStopUpdatesAsNecessary
-- _objc_msgSend$startUpdates
-- _objc_msgSend$stopUpdates
-- _objc_msgSend$subscribeOnQueue:options:activityLevelChangeHandler:
-- _objc_msgSend$targetTimestamp
-- _objc_msgSend$tearDownDisplayLink
-- _objc_msgSend$tearDownLightSourceSubscription
-- _objc_msgSend$tearDownManager:
-- _objc_msgSend$timerWithTimeInterval:target:selector:userInfo:repeats:
-- _objc_msgSend$updateLightInLayerOutsideOfDisplayLink:
-- _objc_msgSend$updateLightInObserverOutsideOfDisplayLink:
-- _objc_msgSend$updateLightSourceForTargetTimestamp:
-- _objc_msgSend$updateLightSourceRefreshRate
-- _objc_msgSend$updateLightSourceUpdateActivityLevel:
-- _objc_msgSend$updateOverlay
-- _objc_msgSend$updateTimer
-- _objc_msgSend$updateVisibleCellsInIconListViews:prefetchingNextIconIfPossible:maxPrefetchedCells:scrolling:scrollingDirection:visibleRectProvider:
 - _swift_unknownObjectUnownedDestroy
 - _swift_unknownObjectUnownedInit
 - _swift_unknownObjectUnownedLoadStrong
@@ -1121,5 +856,4 @@ CStrings:
 - "v24@?0@\"SBHIconLayerView\"8^B16"
 - "\x84"
 - "\x91!1Q"
-
 ```

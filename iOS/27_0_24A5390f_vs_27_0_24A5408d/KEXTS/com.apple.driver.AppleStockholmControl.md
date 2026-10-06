@@ -2,31 +2,25 @@
 
 > `com.apple.driver.AppleStockholmControl`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x14bd8` | `0x14ccc` | **`+0xf4`** |
+| `__TEXT.__cstring` | `0x478b` | `0x47a9` | **`+0x1e`** |
+
+### Other Changes
+
 ```diff
 
 -370.40.2.0.0
--  __TEXT.__cstring: 0x478b
-+370.42.1.0.0
-+  __TEXT.__cstring: 0x47a9
-   __TEXT.__const: 0x50
--  __TEXT_EXEC.__text: 0x14bd8
-+  __TEXT_EXEC.__text: 0x14ccc
-   __TEXT_EXEC.__auth_stubs: 0x500
-   __DATA.__data: 0x219
-   __DATA.__common: 0x17e
-
-   __DATA_CONST.__kalloc_type: 0x180
-   __DATA_CONST.__auth_got: 0x280
-   __DATA_CONST.__got: 0x80
 -  Functions: 239
++370.42.1.0.0
 +  Functions: 240
-   Symbols:   0
-   CStrings:  465
- 
 Functions:
 ~ __ZN18AppleStockholmSPMI20_setVirtualGPIOGatedEh : 776 -> 844
 ~ __ZN18AppleStockholmSPMI22_setStandbyEnableGatedEb : 768 -> 836
-+ sub_fffffe000976de5c
++ sub_fffffff009775e8c
 CStrings:
 + "ERR: %s::%s:%d failed to write to SPMI[0x%02X]:0x%02x - 0x%x, %d attempts\n"
 + "[%llu] ERR: %s::%s:%d failed to write to SPMI[0x%02X]:0x%02x - 0x%x, %d attempts"

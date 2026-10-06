@@ -2,27 +2,28 @@
 
 > `/System/Library/PrivateFrameworks/SceneIntelligence.framework/SceneIntelligence`
 
-```diff
+### Section Size Changes
 
- 138.5.0.0.0
--  __TEXT.__text: 0xaea14
-+  __TEXT.__text: 0xaea30
-   __TEXT.__objc_methlist: 0x2b44
-   __TEXT.__const: 0xa644
-   __TEXT.__cstring: 0x2f81
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xaea14` | `0xaea30` | **`+0x1c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__16vectorINS_4pairINS1_IiiEEfEENS_9allocatorIS3_EEE6resizeEm : 372 -> 376
 ~ __ZN2si8CropTileIfEEbRKNSt3__14spanIT_Lm18446744073709551615EEERKDv3_mRKDv2_mRS4_S9_ : 1200 -> 1172
 ~ __ZN2si8CropTileIDhEEbRKNSt3__14spanIT_Lm18446744073709551615EEERKDv3_mRKDv2_mRS4_S9_ : 1200 -> 1172
 ~ __ZN2si7AddTileIfEEbRKNSt3__14spanIT_Lm18446744073709551615EEERKDv3_mRS4_S9_RKDv2_m : 892 -> 908
-~ sub_2a0d6ae84 -> sub_29fec1e60 : 3460 -> 3512
-~ sub_2a0d901ac -> sub_29fee71bc : 348 -> 356
-~ sub_2a0d93ec0 -> sub_29feeaed8 : 968 -> 972
-~ sub_2a0db1e24 -> sub_29ff08e40 : 3640 -> 3604
-~ sub_2a0dbe454 -> sub_29ff1544c : 3696 -> 3704
-~ sub_2a0dc1134 -> sub_29ff18134 : 4064 -> 4072
-~ sub_2a0dc299c -> sub_29ff199a4 : 1888 -> 1904
-~ sub_2a0dc47a8 -> sub_29ff1b7c0 : 3744 -> 3760
-~ sub_2a0dc6bbc -> sub_29ff1dbe4 : 7424 -> 7428
-~ sub_2a0dd2318 -> sub_29ff29344 : 3508 -> 3492
+~ sub_2a0c60e84 -> sub_29fda4e60 : 3460 -> 3512
+~ sub_2a0c861ac -> sub_29fdca1bc : 348 -> 356
+~ sub_2a0c89ec0 -> sub_29fdcded8 : 968 -> 972
+~ sub_2a0ca7e24 -> sub_29fdebe40 : 3640 -> 3604
+~ sub_2a0cb4454 -> sub_29fdf844c : 3696 -> 3704
+~ sub_2a0cb7134 -> sub_29fdfb134 : 4064 -> 4072
+~ sub_2a0cb899c -> sub_29fdfc9a4 : 1888 -> 1904
+~ sub_2a0cba7a8 -> sub_29fdfe7c0 : 3744 -> 3760
+~ sub_2a0cbcbbc -> sub_29fe00be4 : 7424 -> 7428
+~ sub_2a0cc8318 -> sub_29fe0c344 : 3508 -> 3492
 ```

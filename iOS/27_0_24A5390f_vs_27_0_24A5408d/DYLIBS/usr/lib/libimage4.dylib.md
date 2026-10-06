@@ -2,34 +2,24 @@
 
 > `/usr/lib/libimage4.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x1ae40` | `0x1f4d0` | **`+0x4690`** |
+| `__DATA_CONST.__const` | `0x9b88` | `0x9fd8` | **`+0x450`** |
+| `__TEXT.__text` | `0x2bc20` | `0x2bc38` | **`+0x18`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
 
+### Other Changes
+
 ```diff
 
- 374.0.0.0.0
--  __TEXT.__text: 0x2bc20
--  __TEXT.__const: 0x1ae40
-+  __TEXT.__text: 0x2bc38
-+  __TEXT.__const: 0x1f4d0
-   __TEXT.__cstring: 0x697c
-   __TEXT.__oslogstring: 0x7e
-   __TEXT.__unwind_info: 0xa10
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x9b88
-+  __DATA_CONST.__const: 0x9fd8
-   __DATA_CONST.__image4_chp: 0x150
-   __DATA_CONST.__image4_coproc: 0x48
-   __DATA_CONST.__got: 0x0
-
-   - /usr/lib/libImage4_V2.dylib
-   - /usr/lib/libSystem.B.dylib
-   Functions: 1145
 -  Symbols:   2681
 +  Symbols:   2702
-   CStrings:  869
- 
 Symbols:
 + _ApplePlatformBootstrapRootCAG1
 + _ApplePlatformBootstrapRootCAG1PublicKey

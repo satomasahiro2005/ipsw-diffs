@@ -2,94 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/BackBoardHIDTouchEventProcessor.framework/BackBoardHIDTouchEventProcessor`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x59e10` | `0x5a880` | **`+0xa70`** |
+| `__TEXT.__oslogstring` | `0x4430` | `0x471e` | **`+0x2ee`** |
+| `__TEXT.__gcc_except_tab` | `0x5320` | `0x5420` | **`+0x100`** |
+| `__AUTH_CONST.__objc_const` | `0xaa68` | `0xa978` | **`-0xf0`** |
+| `__TEXT.__objc_methlist` | `0x3ac0` | `0x39f0` | **`-0xd0`** |
+| `__AUTH_CONST.__cfstring` | `0x3ec0` | `0x3e60` | **`-0x60`** |
+| `__DATA.__data` | `0x1088` | `0x1028` | **`-0x60`** |
+| `__DATA_CONST.__const` | `0x1bb0` | `0x1c00` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x750` | `0x780` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x26a8` | `0x26d8` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x34d2` | `0x34b3` | **`-0x1f`** |
+| `__DATA.__objc_ivar` | `0x950` | `0x944` | **`-0xc`** |
+| `__DATA_CONST.__objc_protolist` | `0x160` | `0x158` | **`-0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x48` | `0x40` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x59e10
--  __TEXT.__objc_methlist: 0x3ac0
-+  __TEXT.__text: 0x5a880
-+  __TEXT.__objc_methlist: 0x39f0
-   __TEXT.__const: 0x480
-   __TEXT.__constg_swiftt: 0x124
-   __TEXT.__swift5_typeref: 0x164
+-866.0.0.0.0
++868.0.0.0.0
 
-   __TEXT.__swift5_fieldmd: 0xf0
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_capture: 0x20
--  __TEXT.__cstring: 0x34d2
-+  __TEXT.__cstring: 0x34b3
-   __TEXT.__swift5_types: 0x14
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__gcc_except_tab: 0x5320
--  __TEXT.__oslogstring: 0x4430
-+  __TEXT.__gcc_except_tab: 0x5420
-+  __TEXT.__oslogstring: 0x471e
-   __TEXT.__ustring: 0xc
-   __TEXT.__unwind_info: 0x1b10
-   __TEXT.__objc_stubs: 0x0
-
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1bb0
-+  __DATA_CONST.__const: 0x1c00
-   __DATA_CONST.__objc_classlist: 0x2f8
-   __DATA_CONST.__objc_catlist: 0x8
--  __DATA_CONST.__objc_protolist: 0x160
-+  __DATA_CONST.__objc_protolist: 0x158
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x26a8
--  __DATA_CONST.__objc_protorefs: 0x48
-+  __DATA_CONST.__objc_selrefs: 0x26d8
-+  __DATA_CONST.__objc_protorefs: 0x40
-   __DATA_CONST.__objc_superrefs: 0x218
-   __DATA_CONST.__objc_arraydata: 0x10
--  __DATA_CONST.__got: 0x750
-+  __DATA_CONST.__got: 0x780
-   __AUTH_CONST.__const: 0x860
--  __AUTH_CONST.__cfstring: 0x3ec0
--  __AUTH_CONST.__objc_const: 0xaa68
-+  __AUTH_CONST.__cfstring: 0x3e60
-+  __AUTH_CONST.__objc_const: 0xa978
-   __AUTH_CONST.__objc_intobj: 0x1f8
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__auth_got: 0x9a0
-   __AUTH.__objc_data: 0xe38
-   __AUTH.__data: 0xb8
--  __DATA.__objc_ivar: 0x950
--  __DATA.__data: 0x1088
-+  __DATA.__objc_ivar: 0x944
-+  __DATA.__data: 0x1028
-   __DATA.__bss: 0x100
-   __DATA.__common: 0x1
-   __DATA_DIRTY.__objc_data: 0xff0
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1588
--  Symbols:   6587
--  CStrings:  1473
+-  Symbols:   3979
+-  CStrings:  973
 +  Functions: 1592
-+  Symbols:   6598
-+  CStrings:  1477
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   3980
++  CStrings:  980
 Symbols:
 + +[BKTouchDestination destinationWithHitTestTargetID:clientTaskName:clientConnectionIdentifier:]
 + -[BKDirectTouchState ensureHitTestDestinationExistsForTargetID:clientTaskName:clientConnectionIdentifier:]
@@ -224,17 +168,6 @@ Symbols:
 + ___95-[BKTouchEventServer acceptIncomingServiceConnection:serviceQueue:clientCalloutContextualizer:]_block_invoke_2
 + ___block_descriptor_72_e8_32bs40bs48r56r64r_e5_8?0ls32l8r48l8s40l8r56l8r64l8
 + ___block_descriptor_72_e8_32s40bs48r56r64r_e8_v16?08lr48l8r56l8s40l8r64l8s32l8
-+ _objc_msgSend$_contextualizerWrappingClientProvidedContextualizer:connection:getCurrent:setCurrent:
-+ _objc_msgSend$acceptConnectionUsingServiceQueue:clientCalloutContextualizer:
-+ _objc_msgSend$clientConnectionIdentifier
-+ _objc_msgSend$contextualizedMappedObjectFetcher
-+ _objc_msgSend$getClientTaskNamePort:clientConnectionIdentifier:forTargetID:displayUUID:
-+ _objc_msgSend$initWithTargetID:clientTaskName:clientConnectionIdentifier:
-+ _objc_msgSend$sendEvent:forTargetID:toClientConnectionIdentifier:
-+ _objc_msgSend$setSetupBlock:
-+ _objc_msgSend$setTeardownBlock:
-+ _objc_msgSend$setupBlock
-+ _objc_msgSend$teardownBlock
 - +[BKTouchDestination destinationWithHitTestTargetID:clientTaskName:]
 - -[BKDirectTouchState ensureHitTestDestinationExistsForTargetID:clientTaskName:]
 - -[BKDirectTouchStateHitTester _addDestinationForTargetID:clientTaskName:toHostingChain:]
@@ -367,13 +300,6 @@ Symbols:
 - __OBJC_LABEL_PROTOCOL_$_BKDisplayRenderSpace
 - __OBJC_PROTOCOL_$_BKDisplayRenderSpace
 - __OBJC_PROTOCOL_REFERENCE_$_BKDisplayRenderSpace
-- _objc_msgSend$_managerForConnection:
-- _objc_msgSend$acceptConnection
-- _objc_msgSend$conformsToProtocol:
-- _objc_msgSend$domainServiceServer
-- _objc_msgSend$initWithTargetID:clientTaskName:
-- _objc_msgSend$setTouchProcessor:
-- _objc_msgSend$touchProcessor
 CStrings:
 + "\""
 + "-[BKTouchEventServer acceptIncomingServiceConnection:serviceQueue:clientCalloutContextualizer:]_block_invoke_2"
@@ -394,5 +320,4 @@ CStrings:
 - "failed to provide touch processor for incoming connection: %@"
 - "post updates:%{public}@ and bg update:@{public}%@ to:%{public}@"
 - "renderSpace != nil"
-
 ```

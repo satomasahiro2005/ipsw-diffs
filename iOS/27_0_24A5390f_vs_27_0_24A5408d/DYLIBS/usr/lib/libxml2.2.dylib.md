@@ -2,36 +2,25 @@
 
 > `/usr/lib/libxml2.2.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc6844` | `0xc6a04` | **`+0x1c0`** |
+| `__AUTH_CONST.__auth_got` | `0x3b0` | `0x3b8` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x1ba0` | `0x1ba8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -39.10.3.0.0
--  __TEXT.__text: 0xc6844
 +40.1.0.0.0
-+  __TEXT.__text: 0xc6a04
-   __TEXT.__cstring: 0x19bae
-   __TEXT.__const: 0x3890
-   __TEXT.__oslogstring: 0xa2
--  __TEXT.__unwind_info: 0x1ba0
-+  __TEXT.__unwind_info: 0x1ba8
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x7b88
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0xac0
--  __AUTH_CONST.__auth_got: 0x3b0
-+  __AUTH_CONST.__auth_got: 0x3b8
-   __AUTH.__data: 0x130
-   __DATA.__data: 0x338
-   __DATA.__bss: 0xba0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 2629
 -  Symbols:   3099
 +  Functions: 2632
 +  Symbols:   3103
-   CStrings:  3986
- 
 Symbols:
 + _strstr
 + _xmlEncodingErr

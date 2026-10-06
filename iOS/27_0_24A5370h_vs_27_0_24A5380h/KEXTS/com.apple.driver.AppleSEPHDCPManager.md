@@ -2,24 +2,18 @@
 
 > `com.apple.driver.AppleSEPHDCPManager`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x4868` | `0x4870` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__cstring: 0x876
-   __TEXT.__os_log: 0x587
--  __TEXT_EXEC.__text: 0x4868
-+  __TEXT_EXEC.__text: 0x4870
-   __TEXT_EXEC.__auth_stubs: 0x220
-   __DATA.__data: 0xc8
-   __DATA.__common: 0xb0
-Sections:
-~ __DATA.__data : content changed
-~ __DATA_CONST.__mod_init_func : content changed
-~ __DATA_CONST.__mod_term_func : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__kalloc_type : content changed
-~ __DATA_CONST.__auth_got : content changed
-~ __DATA_CONST.__got : content changed
+-102.0.0.0.0
++107.0.0.0.0
 Functions:
 ~ __ZN18AppleHDCPInterface18matchPropertyTableEP12OSDictionaryPi : 460 -> 468
-
 ```

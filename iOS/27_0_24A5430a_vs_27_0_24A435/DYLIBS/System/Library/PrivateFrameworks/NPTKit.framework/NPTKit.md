@@ -2,16 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/NPTKit.framework/NPTKit`
 
-```diff
+### Section Size Changes
 
- 202.26.4.1.0
--  __TEXT.__text: 0x52ce4
-+  __TEXT.__text: 0x52d14
-   __TEXT.__objc_methlist: 0x4bd4
-   __TEXT.__const: 0x668
-   __TEXT.__cstring: 0x3fb9
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x52ce4` | `0x52d14` | **`+0x30`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_29225a278 -> sub_292fbe278 : 680 -> 684
-~ sub_29225a520 -> sub_292fbe524 : 732 -> 736
-~ sub_29225bac0 -> sub_292fbfac8 : 5476 -> 5516
+~ sub_292140278 -> sub_292e92278 : 680 -> 684
+~ sub_292140520 -> sub_292e92524 : 732 -> 736
+~ sub_292141ac0 -> sub_292e93ac8 : 5476 -> 5516
 ```

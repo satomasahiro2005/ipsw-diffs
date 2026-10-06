@@ -2,87 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/PhoneSnippetUI.framework/PhoneSnippetUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa9ee8` | `0xaf824` | **`+0x593c`** |
+| `__DATA.__bss` | `0xe660` | `0xef30` | **`+0x8d0`** |
+| `__TEXT.__const` | `0xa468` | `0xab88` | **`+0x720`** |
+| `__TEXT.__swift5_typeref` | `0xa278` | `0xa890` | **`+0x618`** |
+| `__AUTH_CONST.__const` | `0x49a0` | `0x4d58` | **`+0x3b8`** |
+| `__TEXT.__constg_swiftt` | `0x2494` | `0x26cc` | **`+0x238`** |
+| `__DATA.__data` | `0x2f50` | `0x3138` | **`+0x1e8`** |
+| `__TEXT.__swift5_fieldmd` | `0x25a8` | `0x2760` | **`+0x1b8`** |
+| `__AUTH.__data` | `0x21a8` | `0x22d0` | **`+0x128`** |
+| `__TEXT.__unwind_info` | `0x2b80` | `0x2c90` | **`+0x110`** |
+| `__TEXT.__swift5_reflstr` | `0x1e04` | `0x1ede` | **`+0xda`** |
+| `__TEXT.__eh_frame` | `0x1670` | `0x1718` | **`+0xa8`** |
+| `__AUTH_CONST.__auth_got` | `0x13d8` | `0x1420` | **`+0x48`** |
+| `__TEXT.__swift5_assocty` | `0x660` | `0x6a8` | **`+0x48`** |
+| `__TEXT.__swift5_proto` | `0x730` | `0x778` | **`+0x48`** |
+| `__DATA_CONST.__got` | `0x8d8` | `0x918` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x9c0` | `0x9f0` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x14f2` | `0x1512` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x278` | `0x298` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x100` | `0x118` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
 -3605.20.1.0.0
--  __TEXT.__text: 0xa40cc
--  __TEXT.__const: 0xa468
--  __TEXT.__swift5_typeref: 0xa278
 +3605.26.2.0.0
-+  __TEXT.__text: 0xa98d8
-+  __TEXT.__const: 0xab88
-+  __TEXT.__swift5_typeref: 0xa890
-   __TEXT.__swift5_capture: 0x794
--  __TEXT.__swift5_reflstr: 0x1e04
--  __TEXT.__swift5_assocty: 0x660
--  __TEXT.__constg_swiftt: 0x2494
--  __TEXT.__swift5_fieldmd: 0x25a8
-+  __TEXT.__swift5_reflstr: 0x1ede
-+  __TEXT.__swift5_assocty: 0x6a8
-+  __TEXT.__constg_swiftt: 0x26cc
-+  __TEXT.__swift5_fieldmd: 0x2760
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__oslogstring: 0x1bb5
--  __TEXT.__swift5_proto: 0x730
--  __TEXT.__swift5_types: 0x278
--  __TEXT.__cstring: 0x14f2
-+  __TEXT.__swift5_proto: 0x778
-+  __TEXT.__swift5_types: 0x298
-+  __TEXT.__cstring: 0x1512
-   __TEXT.__swift5_protos: 0x18
-   __TEXT.__swift5_mpenum: 0x14
-   __TEXT.__swift_as_entry: 0x4
-   __TEXT.__swift_as_ret: 0x8
-   __TEXT.__swift_as_cont: 0x14
--  __TEXT.__unwind_info: 0x3928
--  __TEXT.__eh_frame: 0x1670
-+  __TEXT.__unwind_info: 0x3ae8
-+  __TEXT.__eh_frame: 0x1718
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9c0
-+  __DATA_CONST.__const: 0x9f0
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x100
--  __DATA_CONST.__got: 0x8d8
--  __AUTH_CONST.__const: 0x49a0
-+  __DATA_CONST.__objc_selrefs: 0x118
-+  __DATA_CONST.__got: 0x918
-+  __AUTH_CONST.__const: 0x4d58
-   __AUTH_CONST.__objc_const: 0x468
--  __AUTH_CONST.__auth_got: 0x13d8
-+  __AUTH_CONST.__auth_got: 0x1420
-   __AUTH.__objc_data: 0x50
--  __AUTH.__data: 0x21a8
--  __DATA.__data: 0x2f50
-+  __AUTH.__data: 0x22d0
-+  __DATA.__data: 0x3138
-   __DATA.__common: 0x1a8
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
-   - /System/Library/PrivateFrameworks/FaceTimeNameUtility.framework/FaceTimeNameUtility
-   - /System/Library/PrivateFrameworks/IntelligenceFlow.framework/IntelligenceFlow
 +  - /System/Library/PrivateFrameworks/IntelligenceFlowShared.framework/IntelligenceFlowShared
-   - /System/Library/PrivateFrameworks/SAObjects.framework/SAObjects
-   - /System/Library/PrivateFrameworks/SiriFlowEnvironment.framework/SiriFlowEnvironment
-   - /System/Library/PrivateFrameworks/SiriKitFlow.framework/SiriKitFlow
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4392
 -  Symbols:   11672
 -  CStrings:  283
 +  Functions: 4534
 +  Symbols:   12107
 +  CStrings:  284
- 
 Symbols:
 + _$s10Foundation20PersonNameComponentsV19_bridgeToObjectiveCSo08NSPersoncD0CyF
 + _$s10Foundation20PersonNameComponentsV36_unconditionallyBridgeFromObjectiveCyACSo08NSPersoncD0CSgFZ

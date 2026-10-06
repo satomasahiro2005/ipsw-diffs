@@ -2,47 +2,21 @@
 
 > `/System/Library/PrivateFrameworks/TuriCore.framework/TuriCore`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x894eec
-+  __TEXT.__text: 0x893370
-   __TEXT.__init_offsets: 0xe54
-   __TEXT.__objc_methlist: 0x3698
--  __TEXT.__gcc_except_tab: 0x82688
-+  __TEXT.__gcc_except_tab: 0x82690
-   __TEXT.__cstring: 0x3a014
-   __TEXT.__const: 0x63a50
-   __TEXT.__oslogstring: 0x31e
--  __TEXT.__unwind_info: 0x2cde0
-+  __TEXT.__unwind_info: 0x2cdd8
-   __TEXT.__eh_frame: 0xa0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x894eec` | `0x893370` | **`-0x1b7c`** |
+| `__TEXT.__gcc_except_tab` | `0x82688` | `0x82690` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x2cde0` | `0x2cdd8` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
+```diff
 Functions:
 ~ __ZNKSt3__121__murmur2_or_cityhashImLm64EEclB9fqe220106EPKvm : 532 -> 520
 ~ __ZNSt3__13mapINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEZ16tc_sarray_reduceE9reduce_opNS_4lessIS6_EENS4_INS_4pairIKS6_S7_EEEEEC1B9fqe220106ESt16initializer_listISC_ERKS9_ : 428 -> 404
@@ -456,5 +430,4 @@ Functions:
 CStrings:
 + "Clang version 21.0.0 (clang-2100.3.25.1) [+internal-os]"
 - "Clang version 21.0.0 (clang-2100.3.23.3) [+internal-os]"
-
 ```

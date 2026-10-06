@@ -2,45 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/BatteryAlgorithms.framework/BatteryAlgorithms`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x80550` | `0x806d0` | **`+0x180`** |
+| `__AUTH_CONST.__cfstring` | `0x3240` | `0x3200` | **`-0x40`** |
+| `__TEXT.__gcc_except_tab` | `0x8770` | `0x8798` | **`+0x28`** |
+| `__TEXT.__cstring` | `0x3ef2` | `0x3ed8` | **`-0x1a`** |
+| `__TEXT.__const` | `0xa9d0` | `0xa9c0` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x2920` | `0x2928` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -146.0.0.0.0
--  __TEXT.__text: 0x80550
 +152.2.1.0.0
-+  __TEXT.__text: 0x806d0
-   __TEXT.__objc_methlist: 0xb04
--  __TEXT.__const: 0xa9d0
--  __TEXT.__cstring: 0x3ef2
--  __TEXT.__gcc_except_tab: 0x8770
-+  __TEXT.__const: 0xa9c0
-+  __TEXT.__cstring: 0x3ed8
-+  __TEXT.__gcc_except_tab: 0x8798
-   __TEXT.__oslogstring: 0xc5
--  __TEXT.__unwind_info: 0x2920
-+  __TEXT.__unwind_info: 0x2928
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_arraydata: 0x6b0
-   __DATA_CONST.__got: 0x1d0
-   __AUTH_CONST.__const: 0x3210
--  __AUTH_CONST.__cfstring: 0x3240
-+  __AUTH_CONST.__cfstring: 0x3200
-   __AUTH_CONST.__objc_const: 0x1690
-   __AUTH_CONST.__weak_auth_got: 0x58
-   __AUTH_CONST.__objc_intobj: 0x77a0
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2104
--  Symbols:   4219
+-  Symbols:   4108
 -  CStrings:  621
 +  Functions: 2106
-+  Symbols:   4222
++  Symbols:   4111
 +  CStrings:  619
- 
 Symbols:
 + GCC_except_table120
 + GCC_except_table135

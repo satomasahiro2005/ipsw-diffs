@@ -2,35 +2,28 @@
 
 > `com.apple.plugin.IOgPTPPlugin`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x71260` | `0x7059c` | **`-0xcc4`** |
+| `__TEXT.__os_log` | `0x1c585` | `0x1c00e` | **`-0x577`** |
+| `__TEXT.__cstring` | `0x6d31` | `0x6bdc` | **`-0x155`** |
+| `__TEXT_EXEC.__auth_stubs` | `0xe40` | `0xdd0` | **`-0x70`** |
+| `__DATA_CONST.__kalloc_type` | `0x980` | `0x940` | **`-0x40`** |
+| `__DATA_CONST.__auth_got` | `0x720` | `0x6e8` | **`-0x38`** |
+
+### Other Changes
+
 ```diff
 
 -1510.7.0.0.0
--  __TEXT.__cstring: 0x6d31
--  __TEXT.__os_log: 0x1c585
-+1510.8.0.0.0
-+  __TEXT.__cstring: 0x6bdc
-+  __TEXT.__os_log: 0x1c00e
-   __TEXT.__const: 0x2d2
--  __TEXT_EXEC.__text: 0x6eae8
--  __TEXT_EXEC.__auth_stubs: 0xe40
-+  __TEXT_EXEC.__text: 0x6de44
-+  __TEXT_EXEC.__auth_stubs: 0xdd0
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x5d8
-   __DATA_CONST.__mod_init_func: 0x110
-   __DATA_CONST.__mod_term_func: 0x110
-   __DATA_CONST.__const: 0xea70
--  __DATA_CONST.__kalloc_type: 0x980
--  __DATA_CONST.__auth_got: 0x720
-+  __DATA_CONST.__kalloc_type: 0x940
-+  __DATA_CONST.__auth_got: 0x6e8
-   __DATA_CONST.__got: 0x1b8
 -  Functions: 1641
++1510.8.0.0.0
 +  Functions: 1619
-   Symbols:   0
+
 -  CStrings:  1577
 +  CStrings:  1555
- 
 CStrings:
 - "2222222222222222221"
 - "IOTimeSyncgPTPManagerDaemonClient::dockReplayTimestamps: fProcessID = %u\n"

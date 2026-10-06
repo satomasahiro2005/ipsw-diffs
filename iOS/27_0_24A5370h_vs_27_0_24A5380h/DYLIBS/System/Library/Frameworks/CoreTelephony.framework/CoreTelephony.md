@@ -2,105 +2,45 @@
 
 > `/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1d1c4c` | `0x1d3204` | **`+0x15b8`** |
+| `__TEXT.__cstring` | `0x22778` | `0x21ff8` | **`-0x780`** |
+| `__TEXT.__gcc_except_tab` | `0x25698` | `0x258a0` | **`+0x208`** |
+| `__AUTH_CONST.__cfstring` | `0x20a20` | `0x20bc0` | **`+0x1a0`** |
+| `__AUTH_CONST.__objc_const` | `0x37430` | `0x37590` | **`+0x160`** |
+| `__AUTH.__objc_data` | `0xd200` | `0xd340` | **`+0x140`** |
+| `__DATA_DIRTY.__objc_data` | `0x2c60` | `0x2b20` | **`-0x140`** |
+| `__TEXT.__objc_methlist` | `0x1f994` | `0x1fa9c` | **`+0x108`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8800` | `0x88b8` | **`+0xb8`** |
+| `__TEXT.__oslogstring` | `0x5426` | `0x54c6` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x10f70` | `0x10fd8` | **`+0x68`** |
+| `__AUTH_CONST.__const` | `0x26d8` | `0x2738` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x78c0` | `0x78f0` | **`+0x30`** |
+| `__DATA.__objc_ivar` | `0x16a0` | `0x16bc` | **`+0x1c`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x30` | `0x48` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1d70` | `0x1d58` | **`-0x18`** |
+| `__DATA_CONST.__objc_arraydata` | `0x20` | `0x30` | **`+0x10`** |
+| `__TEXT.__const` | `0x1726` | `0x1736` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xf90` | `0xf88` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0xc50` | `0xc58` | **`+0x8`** |
+| `__DATA_DIRTY.__bss` | `0x12e0` | `0x12e8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1d1c4c
--  __TEXT.__objc_methlist: 0x1f994
--  __TEXT.__const: 0x1726
--  __TEXT.__gcc_except_tab: 0x25698
--  __TEXT.__cstring: 0x22778
--  __TEXT.__oslogstring: 0x5426
-+  __TEXT.__text: 0x1d3204
-+  __TEXT.__objc_methlist: 0x1fa9c
-+  __TEXT.__const: 0x1736
-+  __TEXT.__gcc_except_tab: 0x258a0
-+  __TEXT.__cstring: 0x21ff8
-+  __TEXT.__oslogstring: 0x54c6
-   __TEXT.__swift5_typeref: 0x2b4
-   __TEXT.__constg_swiftt: 0x140
-   __TEXT.__swift5_builtin: 0x3c
+-13473.1.0.0.0
++13478.3.1.3.0
 
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0x30
--  __TEXT.__unwind_info: 0x10f70
-+  __TEXT.__unwind_info: 0x10fd8
-   __TEXT.__eh_frame: 0x370
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x78c0
-+  __DATA_CONST.__const: 0x78f0
-   __DATA_CONST.__objc_classlist: 0x1978
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x288
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8800
-+  __DATA_CONST.__objc_selrefs: 0x88b8
-   __DATA_CONST.__objc_protorefs: 0x48
--  __DATA_CONST.__objc_superrefs: 0x1d70
--  __DATA_CONST.__objc_arraydata: 0x20
--  __DATA_CONST.__got: 0xc50
--  __AUTH_CONST.__const: 0x26d8
--  __AUTH_CONST.__cfstring: 0x20a20
--  __AUTH_CONST.__objc_const: 0x37430
-+  __DATA_CONST.__objc_superrefs: 0x1d58
-+  __DATA_CONST.__objc_arraydata: 0x30
-+  __DATA_CONST.__got: 0xc58
-+  __AUTH_CONST.__const: 0x2738
-+  __AUTH_CONST.__cfstring: 0x20bc0
-+  __AUTH_CONST.__objc_const: 0x37590
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x30
--  __AUTH_CONST.__objc_arrayobj: 0x30
--  __AUTH_CONST.__auth_got: 0xf90
--  __AUTH.__objc_data: 0xd200
-+  __AUTH_CONST.__objc_arrayobj: 0x48
-+  __AUTH_CONST.__auth_got: 0xf88
-+  __AUTH.__objc_data: 0xd340
-   __AUTH.__data: 0xb0
--  __DATA.__objc_ivar: 0x16a0
-+  __DATA.__objc_ivar: 0x16bc
-   __DATA.__data: 0x2360
-   __DATA.__bss: 0x800
-   __DATA.__common: 0x10
--  __DATA_DIRTY.__objc_data: 0x2c60
-+  __DATA_DIRTY.__objc_data: 0x2b20
-   __DATA_DIRTY.__data: 0x90
--  __DATA_DIRTY.__bss: 0x12e0
-+  __DATA_DIRTY.__bss: 0x12e8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/Network.framework/Network
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 13046
--  Symbols:   43853
--  CStrings:  10691
+-  Symbols:   24120
+-  CStrings:  6515
 +  Functions: 13083
-+  Symbols:   43951
-+  CStrings:  10716
- 
-Sections:
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
++  Symbols:   24163
++  CStrings:  6527
 Symbols:
 + -[CTDeviceIdentifier IMEI1]
 + -[CTDeviceIdentifier IMEI2]
@@ -455,24 +395,6 @@ Symbols:
 + ___90-[CTXPCGetActivateForEsimSetupInBuddyRequest performRequestWithHandler:completionHandler:]_block_invoke
 + ___90-[CTXPCSetActivateForEsimSetupInBuddyRequest performRequestWithHandler:completionHandler:]_block_invoke
 + _kCTPhoneNumberRegistrationRequestIdKey
-+ _objc_msgSend$IMEI1
-+ _objc_msgSend$IMEI2
-+ _objc_msgSend$NAL
-+ _objc_msgSend$clearVoicemailQuickSwitchDataLostStatus:
-+ _objc_msgSend$didSignUpQuickSwitchPlan:secondaryIccid:secondaryEid:secondaryImei:smdp:state:planIdentifier:completion:
-+ _objc_msgSend$didSignUpQuickSwitchPlan:secondaryIccid:secondaryEid:secondaryImei:smdp:state:planIdentifier:error:completion:
-+ _objc_msgSend$getActivateForEsimSetupInBuddy:
-+ _objc_msgSend$getVoicemailQuickSwitchData:
-+ _objc_msgSend$initWithPrimaryIccid:secondaryIccid:secondaryEid:secondaryImei:smdp:state:planIdentifier:error:
-+ _objc_msgSend$planIdentifier
-+ _objc_msgSend$requestID
-+ _objc_msgSend$schemeType
-+ _objc_msgSend$setActivateForEsimSetupInBuddy:
-+ _objc_msgSend$setGid1:
-+ _objc_msgSend$setGid2:
-+ _objc_msgSend$setRequestID:
-+ _objc_msgSend$setSchemeType:
-+ _objc_msgSend$whitespaceCharacterSet
 - +[CTXPCGetDeviceStateRequest allowedClassesForArguments]
 - +[CTXPCGetDeviceStateResponse allowedClassesForArguments]
 - -[CTXPCGetDeviceStateRequest ct_shortName]
@@ -783,9 +705,6 @@ Symbols:
 - ___65-[CoreTelephonyClient(QuickSwitch) getDeviceStateWithCompletion:]_block_invoke_2
 - ___74-[CTXPCGetDeviceStateRequest performRequestWithHandler:completionHandler:]_block_invoke
 - _kCTPhoneNumberRegistrationResponseNotification
-- _objc_msgSend$didSignUpQuickSwitchPlan:secondaryIccid:secondaryEid:secondaryImei:smdp:state:error:completion:
-- _objc_msgSend$getDeviceStateWithCompletion:
-- _objc_msgSend$initWithPrimaryIccid:secondaryIccid:secondaryEid:secondaryImei:smdp:state:error:
 CStrings:
 + " IMEI1=%@"
 + " IMEI2=%@"
@@ -823,5 +742,4 @@ CStrings:
 - "CTPhoneNumberRegistrationResponseNotification"
 - "GetDeviceStateRequest"
 - "GetDeviceStateResponse"
-
 ```

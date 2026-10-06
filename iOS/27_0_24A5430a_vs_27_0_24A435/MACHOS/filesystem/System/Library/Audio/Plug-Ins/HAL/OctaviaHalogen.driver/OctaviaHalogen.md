@@ -2,19 +2,20 @@
 
 > `/System/Library/Audio/Plug-Ins/HAL/OctaviaHalogen.driver/OctaviaHalogen`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x13f58` | `0x13f50` | **`-0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 3350.77.1.6.0
--  __TEXT.__text: 0x13f58
-+  __TEXT.__text: 0x13f50
-   __TEXT.__auth_stubs: 0x1240
-   __TEXT.__objc_stubs: 0x1c0
-   __TEXT.__const: 0x260
+```text
 Functions:
 ~ sub_77c0 : 24 -> 36
 ~ sub_fe08 -> sub_fe14 : 364 -> 380

@@ -2,77 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/PhoneSnippetUI.framework/PhoneSnippetUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa71b0` | `0xa9160` | **`+0x1fb0`** |
+| `__DATA.__bss` | `0xdee0` | `0xe5e0` | **`+0x700`** |
+| `__TEXT.__const` | `0xa098` | `0xa3c8` | **`+0x330`** |
+| `__AUTH_CONST.__const` | `0x4818` | `0x4950` | **`+0x138`** |
+| `__TEXT.__swift5_fieldmd` | `0x2460` | `0x2574` | **`+0x114`** |
+| `__TEXT.__swift5_reflstr` | `0x1cf4` | `0x1dc4` | **`+0xd0`** |
+| `__AUTH.__data` | `0x2088` | `0x2120` | **`+0x98`** |
+| `__TEXT.__unwind_info` | `0x2a98` | `0x2b30` | **`+0x98`** |
+| `__DATA.__data` | `0x2e98` | `0x2f20` | **`+0x88`** |
+| `__TEXT.__swift5_typeref` | `0xa190` | `0xa218` | **`+0x88`** |
+| `__TEXT.__eh_frame` | `0x15f0` | `0x1670` | **`+0x80`** |
+| `__TEXT.__constg_swiftt` | `0x23d4` | `0x2444` | **`+0x70`** |
+| `__TEXT.__cstring` | `0x1492` | `0x14f2` | **`+0x60`** |
+| `__TEXT.__swift5_proto` | `0x6f4` | `0x72c` | **`+0x38`** |
+| `__DATA_CONST.__const` | `0x9a0` | `0x9c0` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x8d0` | `0x8f0` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x268` | `0x274` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x13c8` | `0x13c0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.38.22.11.2
--  __TEXT.__text: 0xa14f8
--  __TEXT.__const: 0xa098
--  __TEXT.__swift5_typeref: 0xa190
 +3605.17.1.1.1
-+  __TEXT.__text: 0xa340c
-+  __TEXT.__const: 0xa3c8
-+  __TEXT.__swift5_typeref: 0xa218
-   __TEXT.__swift5_capture: 0x774
--  __TEXT.__swift5_reflstr: 0x1cf4
-+  __TEXT.__swift5_reflstr: 0x1dc4
-   __TEXT.__swift5_assocty: 0x648
--  __TEXT.__constg_swiftt: 0x23d4
--  __TEXT.__swift5_fieldmd: 0x2460
-+  __TEXT.__constg_swiftt: 0x2444
-+  __TEXT.__swift5_fieldmd: 0x2574
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__oslogstring: 0x1bb5
--  __TEXT.__swift5_proto: 0x6f4
--  __TEXT.__swift5_types: 0x268
--  __TEXT.__cstring: 0x1492
-+  __TEXT.__swift5_proto: 0x72c
-+  __TEXT.__swift5_types: 0x274
-+  __TEXT.__cstring: 0x14f2
-   __TEXT.__swift5_protos: 0x18
-   __TEXT.__swift5_mpenum: 0x14
-   __TEXT.__swift_as_entry: 0x4
-   __TEXT.__swift_as_ret: 0x8
-   __TEXT.__swift_as_cont: 0x14
--  __TEXT.__unwind_info: 0x37e8
--  __TEXT.__eh_frame: 0x15f0
-+  __TEXT.__unwind_info: 0x38c8
-+  __TEXT.__eh_frame: 0x1670
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9a0
-+  __DATA_CONST.__const: 0x9c0
-   __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x100
--  __DATA_CONST.__got: 0x8d0
--  __AUTH_CONST.__const: 0x4818
-+  __DATA_CONST.__got: 0x8f0
-+  __AUTH_CONST.__const: 0x4950
-   __AUTH_CONST.__objc_const: 0x468
--  __AUTH_CONST.__auth_got: 0x13c8
-+  __AUTH_CONST.__auth_got: 0x13c0
-   __AUTH.__objc_data: 0x50
--  __AUTH.__data: 0x2088
--  __DATA.__data: 0x2e98
-+  __AUTH.__data: 0x2120
-+  __DATA.__data: 0x2f20
-   __DATA.__common: 0x1a8
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4306
--  Symbols:   11484
+-  Symbols:   11452
 -  CStrings:  280
 +  Functions: 4368
-+  Symbols:   11657
++  Symbols:   11625
 +  CStrings:  283
- 
 Symbols:
 + _$s14PhoneSnippetUI0aB10DataModelsO21emergencyConfirmationyAcA09EmergencyG5ModelVcACmFWC
 + _$s14PhoneSnippetUI0aB10DataModelsO31EmergencyConfirmationCodingKeys33_374FEEA39292D60DBDB1F10CD6A31427LLOAFSQAAWL

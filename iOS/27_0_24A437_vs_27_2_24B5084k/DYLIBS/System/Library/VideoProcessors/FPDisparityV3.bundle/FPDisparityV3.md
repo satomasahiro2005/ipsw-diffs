@@ -2,59 +2,33 @@
 
 > `/System/Library/VideoProcessors/FPDisparityV3.bundle/FPDisparityV3`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x19104` | `0x1b460` | **`+0x235c`** |
+| `__TEXT.__cstring` | `0x255d` | `0x3de7` | **`+0x188a`** |
+| `__TEXT.__oslogstring` | `0x74` | `0xafd` | **`+0xa89`** |
+| `__AUTH_CONST.__cfstring` | `0xe40` | `0xf00` | **`+0xc0`** |
+| `__TEXT.__unwind_info` | `0x498` | `0x4d0` | **`+0x38`** |
+| `__DATA.__common` | `—` | `0x30` | **`+0x30`** |
+| `__TEXT.__const` | `0xd08` | `0xd30` | **`+0x28`** |
+| `__AUTH_CONST.__auth_got` | `0x260` | `0x280` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0xec8` | `0xed0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -764.22.13.0.0
--  __TEXT.__text: 0x18c54
 +764.40.4.122.1
-+  __TEXT.__text: 0x1afc0
-   __TEXT.__objc_methlist: 0x1544
--  __TEXT.__const: 0xd08
--  __TEXT.__cstring: 0x255d
--  __TEXT.__oslogstring: 0x74
--  __TEXT.__unwind_info: 0x820
-+  __TEXT.__const: 0xd30
-+  __TEXT.__cstring: 0x3de7
-+  __TEXT.__oslogstring: 0xafd
-+  __TEXT.__unwind_info: 0x858
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x90
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xec8
-+  __DATA_CONST.__objc_selrefs: 0xed0
-   __DATA_CONST.__objc_superrefs: 0x40
-   __DATA_CONST.__objc_arraydata: 0x40
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x140
--  __AUTH_CONST.__cfstring: 0xe40
-+  __AUTH_CONST.__cfstring: 0xf00
-   __AUTH_CONST.__objc_const: 0x2ed0
-   __AUTH_CONST.__objc_intobj: 0x60
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x260
-+  __AUTH_CONST.__auth_got: 0x280
-   __AUTH.__objc_data: 0x5a0
-   __DATA.__objc_ivar: 0x34c
-   __DATA.__data: 0xc0
-+  __DATA.__common: 0x30
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-
-   - /System/Library/PrivateFrameworks/CMImaging.framework/CMImaging
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 749
 -  Symbols:   112
 -  CStrings:  389
 +  Functions: 804
 +  Symbols:   116
 +  CStrings:  559
- 
 Symbols:
 + _FigSignalErrorAt3
 + __os_log_send_and_compose_impl

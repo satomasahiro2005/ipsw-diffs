@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/_GroupActivities_UIKit.framework/_GroupActivities_UIKit`
 
-```diff
+### Section Size Changes
 
- 303.100.1.0.0
--  __TEXT.__text: 0x60ef4
-+  __TEXT.__text: 0x60f0c
-   __TEXT.__objc_methlist: 0xacc
-   __TEXT.__const: 0x40b8
-   __TEXT.__swift5_typeref: 0x460a
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x60ef4` | `0x60f0c` | **`+0x18`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$ss30_copySequenceToContiguousArrayys0dE0Vy7ElementQzGxSTRzlFs010EnumeratedB0VySaySSGG_Tg5 : 408 -> 412
 ~ _$s22_GroupActivities_UIKit0A33ActivityAssociationSceneComponentC03addadE11InteractionyyAA0adeI0CF : 544 -> 548

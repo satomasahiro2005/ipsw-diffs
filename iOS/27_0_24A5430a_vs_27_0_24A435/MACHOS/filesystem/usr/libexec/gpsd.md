@@ -2,45 +2,41 @@
 
 > `/usr/libexec/gpsd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__objc_methlist`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__oslogstring`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x177cf4` | `0x177f64` | **`+0x270`** |
+| `__TEXT.__const` | `0xf2d0` | `0xf390` | **`+0xc0`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
 - `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__cstring`
+- `__TEXT.__eh_frame`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__init_offsets`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__oslogstring`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
-
- 365.0.9.0.1
--  __TEXT.__text: 0x177cf4
-+  __TEXT.__text: 0x177f64
-   __TEXT.__auth_stubs: 0x20c0
-   __TEXT.__objc_stubs: 0x860
-   __TEXT.__init_offsets: 0x30
-   __TEXT.__objc_methlist: 0x1b4
-   __TEXT.__gcc_except_tab: 0x9074
--  __TEXT.__const: 0xf2d0
-+  __TEXT.__const: 0xf390
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__constg_swiftt: 0x6a4
-   __TEXT.__swift5_typeref: 0x2f1
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/CoreGPS/install/Symbols/BuiltProducts/libGPSDaemon.a(GpsdClientManager-801c24cfe646fc8b93d2f14fcc3a8608.o)
 - /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/CoreGPS/install/Symbols/BuiltProducts/libGPSDaemon.a(GpsdClientManager-9d1e5c7edfe944d734891dc41347dfa1.o)
@@ -89,5 +85,9 @@ Functions:
 ~ __ZNSt3__114__split_bufferIPNS_6vectorIhNS_9allocatorIhEEEENS2_IS5_EEE12emplace_backIJRS5_EEEvDpOT_ : 248 -> 252
 CStrings:
 + "#version,CoreGPS-365.0.9.0.1,machContSec,%{public}.3f,BuildTime,{Aug 13 2026,21:42:35}"
++ "21:42:30"
++ "21:46:23"
 - "#version,CoreGPS-365.0.9.0.1,machContSec,%{public}.3f,BuildTime,{Aug 13 2026,22:26:38}"
+- "22:26:33"
+- "22:31:07"
 ```

@@ -2,69 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/SpeakerRecognition.framework/SpeakerRecognition`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb8648` | `0xb87f8` | **`+0x1b0`** |
+| `__TEXT.__oslogstring` | `0xedc0` | `0xee31` | **`+0x71`** |
+| `__TEXT.__unwind_info` | `0x21c8` | `0x2230` | **`+0x68`** |
+| `__TEXT.__cstring` | `0x10eca` | `0x10efe` | **`+0x34`** |
+| `__TEXT.__gcc_except_tab` | `0x2964` | `0x297c` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x6d88` | `0x6d98` | **`+0x10`** |
+| `__DATA.__bss` | `0x700` | `0x708` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3f10` | `0x3f18` | **`+0x8`** |
+| `__DATA_DIRTY.__bss` | `0x70` | `0x68` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.70.32.0.0
--  __TEXT.__text: 0xb8648
--  __TEXT.__objc_methlist: 0x6d88
 +3600.70.47.0.0
-+  __TEXT.__text: 0xb87f8
-+  __TEXT.__objc_methlist: 0x6d98
-   __TEXT.__const: 0xf78
-   __TEXT.__dlopen_cstrs: 0xa6
--  __TEXT.__cstring: 0x10eca
-+  __TEXT.__cstring: 0x10efe
-   __TEXT.__swift5_typeref: 0x680
--  __TEXT.__oslogstring: 0xedc0
-+  __TEXT.__oslogstring: 0xee31
-   __TEXT.__swift5_capture: 0x20c
-   __TEXT.__constg_swiftt: 0x8d8
-   __TEXT.__swift5_reflstr: 0x56f
 
-   __TEXT.__swift_as_cont: 0xbc
-   __TEXT.__swift5_assocty: 0x30
-   __TEXT.__swift5_proto: 0x30
--  __TEXT.__gcc_except_tab: 0x2964
--  __TEXT.__unwind_info: 0x21c8
-+  __TEXT.__gcc_except_tab: 0x297c
-+  __TEXT.__unwind_info: 0x2230
-   __TEXT.__eh_frame: 0x1308
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x170
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3f10
-+  __DATA_CONST.__objc_selrefs: 0x3f18
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_superrefs: 0x230
-   __DATA_CONST.__objc_arraydata: 0x3e0
-
-   __AUTH.__data: 0x90
-   __DATA.__objc_ivar: 0x874
-   __DATA.__data: 0x1430
--  __DATA.__bss: 0x700
-+  __DATA.__bss: 0x708
-   __DATA.__common: 0x60
-   __DATA_DIRTY.__objc_data: 0x2640
-   __DATA_DIRTY.__data: 0x580
--  __DATA_DIRTY.__bss: 0x70
-+  __DATA_DIRTY.__bss: 0x68
-   __DATA_DIRTY.__common: 0x60
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3075
--  Symbols:   6425
+-  Symbols:   4993
 -  CStrings:  2644
 +  Functions: 3076
-+  Symbols:   6427
++  Symbols:   4994
 +  CStrings:  2646
- 
 Symbols:
 + -[CSVoiceTriggerUserSelectedPhrase _localeSupportsMultiPhrase]
 + GCC_except_table1004
@@ -152,7 +116,6 @@ Symbols:
 + GCC_except_table902
 + GCC_except_table918
 + GCC_except_table921
-+ _objc_msgSend$_localeSupportsMultiPhrase
 - GCC_except_table1002
 - GCC_except_table1006
 - GCC_except_table1017

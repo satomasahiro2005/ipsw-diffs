@@ -2,107 +2,66 @@
 
 > `/private/var/staged_system_apps/FindMy.app/Frameworks/FindMyAppCore.framework/FindMyAppCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xde0cc` | `0xe3cb0` | **`+0x5be4`** |
+| `__TEXT.__const` | `0xae74` | `0xb1a4` | **`+0x330`** |
+| `__DATA.__bss` | `0x8f98` | `0x9228` | **`+0x290`** |
+| `__DATA.__data` | `0x62c8` | `0x6518` | **`+0x250`** |
+| `__TEXT.__swift5_typeref` | `0xa12c` | `0xa356` | **`+0x22a`** |
+| `__TEXT.__auth_stubs` | `0x29e0` | `0x2bf0` | **`+0x210`** |
+| `__TEXT.__cstring` | `0x42a8` | `0x43b8` | **`+0x110`** |
+| `__DATA_CONST.__auth_got` | `0x14f8` | `0x1600` | **`+0x108`** |
+| `__TEXT.__eh_frame` | `0x3fa0` | `0x40a8` | **`+0x108`** |
+| `__TEXT.__unwind_info` | `0x3538` | `0x3628` | **`+0xf0`** |
+| `__TEXT.__swift5_reflstr` | `0x2eb6` | `0x2f76` | **`+0xc0`** |
+| `__DATA.__objc_const` | `0x2b28` | `0x2bd8` | **`+0xb0`** |
+| `__DATA_CONST.__got` | `0xbd8` | `0xc70` | **`+0x98`** |
+| `__TEXT.__constg_swiftt` | `0x25f8` | `0x2690` | **`+0x98`** |
+| `__DATA_CONST.__auth_ptr` | `0xe70` | `0xee8` | **`+0x78`** |
+| `__TEXT.__swift5_fieldmd` | `0x27bc` | `0x2830` | **`+0x74`** |
+| `__DATA_CONST.__const` | `0x6a80` | `0x6af0` | **`+0x70`** |
+| `__TEXT.__objc_methname` | `0x19b2` | `0x1a12` | **`+0x60`** |
+| `__DATA.__objc_data` | `0x858` | `0x8a8` | **`+0x50`** |
+| `__TEXT.__objc_classname` | `0xb6d` | `0xbad` | **`+0x40`** |
+| `__TEXT.__oslogstring` | `0xcf4` | `0xd34` | **`+0x40`** |
+| `__TEXT.__swift5_assocty` | `0x980` | `0x9b0` | **`+0x30`** |
+| `__TEXT.__swift5_capture` | `0x1570` | `0x1594` | **`+0x24`** |
+| `__TEXT.__objc_stubs` | `0x700` | `0x720` | **`+0x20`** |
+| `__DATA.__common` | `0x160` | `0x178` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0x430` | `0x444` | **`+0x14`** |
+| `__TEXT.__swift_as_cont` | `0x2a0` | `0x2ac` | **`+0xc`** |
+| `__DATA.__objc_selrefs` | `0x320` | `0x328` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x140` | `0x148` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x2f4` | `0x2fc` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x10c` | `0x110` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0xf0` | `0xf4` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_mpenum`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xde0cc
--  __TEXT.__auth_stubs: 0x29e0
--  __TEXT.__objc_stubs: 0x700
-+  __TEXT.__text: 0xe3cb0
-+  __TEXT.__auth_stubs: 0x2bf0
-+  __TEXT.__objc_stubs: 0x720
-   __TEXT.__objc_methlist: 0x304
--  __TEXT.__const: 0xae74
--  __TEXT.__constg_swiftt: 0x25f8
--  __TEXT.__swift5_typeref: 0xa12c
--  __TEXT.__objc_classname: 0xb6d
--  __TEXT.__swift5_fieldmd: 0x27bc
--  __TEXT.__swift5_reflstr: 0x2eb6
-+  __TEXT.__const: 0xb1a4
-+  __TEXT.__constg_swiftt: 0x2690
-+  __TEXT.__swift5_typeref: 0xa356
-+  __TEXT.__objc_classname: 0xbad
-+  __TEXT.__swift5_fieldmd: 0x2830
-+  __TEXT.__swift5_reflstr: 0x2f76
-   __TEXT.__swift5_builtin: 0x50
--  __TEXT.__swift5_assocty: 0x980
--  __TEXT.__swift5_proto: 0x430
--  __TEXT.__swift5_types: 0x2f4
--  __TEXT.__objc_methname: 0x19b2
-+  __TEXT.__swift5_assocty: 0x9b0
-+  __TEXT.__swift5_proto: 0x444
-+  __TEXT.__swift5_types: 0x2fc
-+  __TEXT.__objc_methname: 0x1a12
-   __TEXT.__objc_methtype: 0x5d3
--  __TEXT.__swift5_capture: 0x1570
--  __TEXT.__cstring: 0x42a8
--  __TEXT.__oslogstring: 0xcf4
-+  __TEXT.__swift5_capture: 0x1594
-+  __TEXT.__cstring: 0x43b8
-+  __TEXT.__oslogstring: 0xd34
-   __TEXT.__swift5_mpenum: 0x1c
--  __TEXT.__swift_as_entry: 0x10c
--  __TEXT.__swift_as_ret: 0xf0
--  __TEXT.__swift_as_cont: 0x2a0
--  __TEXT.__unwind_info: 0x3538
--  __TEXT.__eh_frame: 0x3fa0
--  __DATA_CONST.__const: 0x6a80
--  __DATA_CONST.__objc_classlist: 0x140
-+  __TEXT.__swift_as_entry: 0x110
-+  __TEXT.__swift_as_ret: 0xf4
-+  __TEXT.__swift_as_cont: 0x2ac
-+  __TEXT.__unwind_info: 0x3628
-+  __TEXT.__eh_frame: 0x40a8
-+  __DATA_CONST.__const: 0x6af0
-+  __DATA_CONST.__objc_classlist: 0x148
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__auth_got: 0x14f8
--  __DATA_CONST.__got: 0xbd8
--  __DATA_CONST.__auth_ptr: 0xe70
--  __DATA.__objc_const: 0x2b28
--  __DATA.__objc_selrefs: 0x320
--  __DATA.__objc_data: 0x858
--  __DATA.__data: 0x62c8
--  __DATA.__bss: 0x8f98
--  __DATA.__common: 0x160
-+  __DATA_CONST.__auth_got: 0x1600
-+  __DATA_CONST.__got: 0xc70
-+  __DATA_CONST.__auth_ptr: 0xee8
-+  __DATA.__objc_const: 0x2bd8
-+  __DATA.__objc_selrefs: 0x328
-+  __DATA.__objc_data: 0x8a8
-+  __DATA.__data: 0x6518
-+  __DATA.__bss: 0x9228
-+  __DATA.__common: 0x178
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices
-   - /System/Library/Frameworks/Combine.framework/Combine
+-469.30.6.7.4
++470.30.6.14.10
 
-   - /System/Library/PrivateFrameworks/ContactsAutocompleteUI.framework/ContactsAutocompleteUI
-   - /System/Library/PrivateFrameworks/FindMyBase.framework/FindMyBase
-   - /System/Library/PrivateFrameworks/FindMyCore.framework/FindMyCore
 +  - /System/Library/PrivateFrameworks/FindMyFeatureFlags.framework/FindMyFeatureFlags
-   - /System/Library/PrivateFrameworks/FindMyLocate.framework/FindMyLocate
-   - /System/Library/PrivateFrameworks/FindMyUICore.framework/FindMyUICore
-   - /System/Library/PrivateFrameworks/SPOwner.framework/SPOwner
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4662
--  Symbols:   2120
+-  Symbols:   1733
 -  CStrings:  757
 +  Functions: 4734
-+  Symbols:   2153
++  Symbols:   1763
 +  CStrings:  768
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
 Symbols:
 + __DATA__TtC13FindMyAppCore28SharedFromInfoSheetViewModel
 + __IVARS__TtC13FindMyAppCore28SharedFromInfoSheetViewModel
@@ -182,5 +141,4 @@ CStrings:
 + "true-me-illustration"
 - "***MyLocationSharingSectionViewModel ActivePresentation***\nmyLocationSharingOffAlert: "
 - "LOCATION_SHARING_FOOTER_OFF_INACTIVE"
-
 ```

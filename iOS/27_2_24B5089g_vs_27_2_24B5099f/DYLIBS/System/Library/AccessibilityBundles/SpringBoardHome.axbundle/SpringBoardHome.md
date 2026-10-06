@@ -2,54 +2,34 @@
 
 > `/System/Library/AccessibilityBundles/SpringBoardHome.axbundle/SpringBoardHome`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x22310` | `0x2274c` | **`+0x43c`** |
+| `__AUTH_CONST.__cfstring` | `0x5f20` | `0x5f80` | **`+0x60`** |
+| `__TEXT.__cstring` | `0x51ca` | `0x521a` | **`+0x50`** |
+| `__TEXT.__oslogstring` | `0x1f0` | `0x235` | **`+0x45`** |
+| `__TEXT.__gcc_except_tab` | `0xb80` | `0xbac` | **`+0x2c`** |
+| `__AUTH_CONST.__const` | `0x220` | `0x240` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0xb88` | `0xba8` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x2224` | `0x2234` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1030` | `0x1038` | **`+0x8`** |
+| `__TEXT.__const` | `0x58` | `0x60` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3050.3.1.0.0
--  __TEXT.__text: 0x215e4
--  __TEXT.__objc_methlist: 0x2224
 +3050.3.5.0.0
-+  __TEXT.__text: 0x21a20
-+  __TEXT.__objc_methlist: 0x2234
-   __TEXT.__dlopen_cstrs: 0x228
--  __TEXT.__const: 0x58
--  __TEXT.__gcc_except_tab: 0xb80
--  __TEXT.__cstring: 0x51ca
--  __TEXT.__oslogstring: 0x1f0
--  __TEXT.__unwind_info: 0xd78
-+  __TEXT.__const: 0x60
-+  __TEXT.__gcc_except_tab: 0xbac
-+  __TEXT.__cstring: 0x521a
-+  __TEXT.__oslogstring: 0x235
-+  __TEXT.__unwind_info: 0xd98
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__const: 0x7e0
-   __DATA_CONST.__objc_classlist: 0x430
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1030
-+  __DATA_CONST.__objc_selrefs: 0x1038
-   __DATA_CONST.__objc_superrefs: 0x160
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x220
--  __AUTH_CONST.__cfstring: 0x5f20
-+  __AUTH_CONST.__const: 0x240
-+  __AUTH_CONST.__cfstring: 0x5f80
-   __AUTH_CONST.__objc_const: 0x4b60
-   __AUTH_CONST.__objc_intobj: 0x90
-   __AUTH_CONST.__auth_got: 0x0
-
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 850
 -  Symbols:   1876
 -  CStrings:  852
 +  Functions: 855
 +  Symbols:   1884
 +  CStrings:  856
- 
 Symbols:
 + -[SBIconViewAccessibility _axIsRecycledIconView]
 + GCC_except_table311

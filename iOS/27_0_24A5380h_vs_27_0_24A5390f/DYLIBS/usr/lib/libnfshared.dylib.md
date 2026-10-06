@@ -2,70 +2,32 @@
 
 > `/usr/lib/libnfshared.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_superrefs`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH.__objc_data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x24ab4` | `0x24da8` | **`+0x2f4`** |
+| `__AUTH_CONST.__cfstring` | `0x4740` | `0x4780` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x4cb7` | `0x4ceb` | **`+0x34`** |
+| `__TEXT.__objc_methlist` | `0x234c` | `0x2364` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x13f0` | `0x1400` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x1c8` | `0x1d0` | **`+0x8`** |
+| `__DATA_CONST.__objc_arraydata` | `0x658` | `0x660` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x6f8` | `0x700` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -370.38.2.0.0
--  __TEXT.__text: 0x24ab4
 +370.40.2.0.0
-+  __TEXT.__text: 0x24da8
-   __TEXT.__delay_stubs: 0x40
-   __TEXT.__delay_helper: 0xdc
--  __TEXT.__objc_methlist: 0x234c
-+  __TEXT.__objc_methlist: 0x2364
-   __TEXT.__const: 0x220
--  __TEXT.__cstring: 0x4cb7
-+  __TEXT.__cstring: 0x4ceb
-   __TEXT.__oslogstring: 0x18bd
--  __TEXT.__unwind_info: 0x6f8
-+  __TEXT.__unwind_info: 0x700
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x13f0
-+  __DATA_CONST.__objc_selrefs: 0x1400
-   __DATA_CONST.__objc_superrefs: 0xe0
--  __DATA_CONST.__objc_arraydata: 0x658
--  __DATA_CONST.__got: 0x1c8
-+  __DATA_CONST.__objc_arraydata: 0x660
-+  __DATA_CONST.__got: 0x1d0
-   __AUTH_CONST.__const: 0x220
--  __AUTH_CONST.__cfstring: 0x4740
-+  __AUTH_CONST.__cfstring: 0x4780
-   __AUTH_CONST.__objc_const: 0x41e0
-   __AUTH_CONST.__objc_intobj: 0x498
-   __AUTH_CONST.__objc_dictobj: 0x1b8
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 751
 -  Symbols:   403
 -  CStrings:  943
 +  Functions: 753
 +  Symbols:   404
 +  CStrings:  945
- 
 Symbols:
 + ___NSDictionary0__struct
 CStrings:

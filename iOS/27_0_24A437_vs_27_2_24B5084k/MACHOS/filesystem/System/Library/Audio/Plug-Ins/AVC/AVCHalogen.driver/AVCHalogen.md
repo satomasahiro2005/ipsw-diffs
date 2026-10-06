@@ -2,35 +2,32 @@
 
 > `/System/Library/Audio/Plug-Ins/AVC/AVCHalogen.driver/AVCHalogen`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xaa94` | `0xaccc` | **`+0x238`** |
+| `__TEXT.__cstring` | `0x285a` | `0x2a6a` | **`+0x210`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -980.77.1.2.0
--  __TEXT.__text: 0xa5d8
 +1005.7.1.0.0
-+  __TEXT.__text: 0xa804
-   __TEXT.__auth_stubs: 0x8c0
--  __TEXT.__cstring: 0x285a
-+  __TEXT.__cstring: 0x2a6a
-   __TEXT.__const: 0xb0
-   __TEXT.__oslogstring: 0x4b
-   __TEXT.__unwind_info: 0x380
 
-   - /System/Library/PrivateFrameworks/AirPlaySupport.framework/AirPlaySupport
-   - /System/Library/PrivateFrameworks/CoreUtils.framework/CoreUtils
-   - /usr/lib/libSystem.B.dylib
 -  Functions: 219
 +  Functions: 221
-   Symbols:   207
+
 -  CStrings:  201
 +  CStrings:  219
- 
 Symbols:
 + _FigSignalErrorAt3
 - _FigSignalErrorAtGM

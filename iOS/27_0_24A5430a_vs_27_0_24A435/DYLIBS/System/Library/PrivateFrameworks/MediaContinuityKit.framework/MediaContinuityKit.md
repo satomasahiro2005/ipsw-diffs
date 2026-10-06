@@ -2,20 +2,21 @@
 
 > `/System/Library/PrivateFrameworks/MediaContinuityKit.framework/MediaContinuityKit`
 
-```diff
+### Section Size Changes
 
- 100.51.0.0.0
--  __TEXT.__text: 0x128990
-+  __TEXT.__text: 0x1289c0
-   __TEXT.__objc_methlist: 0x850
-   __TEXT.__const: 0xd9a4
-   __TEXT.__constg_swiftt: 0x530c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x128990` | `0x1289c0` | **`+0x30`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_28e35c0b8 -> sub_28f0aa0b8 : 344 -> 348
-~ sub_28e372ae8 -> sub_28f0c0aec : 680 -> 684
-~ sub_28e372d90 -> sub_28f0c0d98 : 732 -> 736
-~ sub_28e37e248 -> sub_28f0cc254 : 3116 -> 3152
-~ sub_28e3c9274 -> sub_28f1172a4 : 356 -> 360
-~ sub_28e3fa190 -> sub_28f1481c4 : 856 -> 860
-~ sub_28e401f20 -> sub_28f14ff58 : 2480 -> 2472
+~ sub_28e2300b8 -> sub_28ef770b8 : 344 -> 348
+~ sub_28e246ae8 -> sub_28ef8daec : 680 -> 684
+~ sub_28e246d90 -> sub_28ef8dd98 : 732 -> 736
+~ sub_28e252248 -> sub_28ef99254 : 3116 -> 3152
+~ sub_28e29d274 -> sub_28efe42a4 : 356 -> 360
+~ sub_28e2ce190 -> sub_28f0151c4 : 856 -> 860
+~ sub_28e2d5f20 -> sub_28f01cf58 : 2480 -> 2472
 ```

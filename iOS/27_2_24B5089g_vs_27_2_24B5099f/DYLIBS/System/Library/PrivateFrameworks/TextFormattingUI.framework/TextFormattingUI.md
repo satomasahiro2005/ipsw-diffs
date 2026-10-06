@@ -2,45 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/TextFormattingUI.framework/TextFormattingUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x66e78` | `0x6717c` | **`+0x304`** |
+| `__TEXT.__swift5_typeref` | `0x8b06` | `0x8cd8` | **`+0x1d2`** |
+| `__AUTH_CONST.__auth_got` | `0x10f8` | `0x1120` | **`+0x28`** |
+| `__TEXT.__const` | `0x5438` | `0x5458` | **`+0x20`** |
+| `__DATA.__data` | `0x23e0` | `0x23f0` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0xae0` | `0xaf0` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -9127.1.7.1.0
--  __TEXT.__text: 0x64cbc
 +9127.1.12.1.101
-+  __TEXT.__text: 0x64f84
-   __TEXT.__objc_methlist: 0x444
--  __TEXT.__const: 0x5438
--  __TEXT.__swift5_typeref: 0x8b06
-+  __TEXT.__const: 0x5458
-+  __TEXT.__swift5_typeref: 0x8cd8
-   __TEXT.__constg_swiftt: 0xfc4
-   __TEXT.__swift5_builtin: 0x78
-   __TEXT.__swift5_reflstr: 0xb82
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x6a0
-   __DATA_CONST.__objc_protorefs: 0x40
--  __DATA_CONST.__got: 0xae0
-+  __DATA_CONST.__got: 0xaf0
-   __AUTH_CONST.__const: 0x1ff0
-   __AUTH_CONST.__objc_const: 0xbb8
--  __AUTH_CONST.__auth_got: 0x10f8
-+  __AUTH_CONST.__auth_got: 0x1120
-   __AUTH.__objc_data: 0x3c0
-   __AUTH.__data: 0x9f0
--  __DATA.__data: 0x23e0
-+  __DATA.__data: 0x23f0
-   __DATA.__common: 0x388
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 1884
 -  Symbols:   1167
 +  Symbols:   1169
-   CStrings:  98
- 
 Symbols:
 + ___swift_closure_destructor.502Tm
 + _get_witness_table 7SwiftUI19_ConditionalContentVyAA08ModifiedD0VyAEy014TextFormattingB011TFComponentVyAEyAA4ViewPAAE9menuStyleyQrqd__AA04MenuK0Rd__lFQOyAA0L0VyAF11TFMenuLabelVyAF8TFSymbolVGAA7ForEachVySaySo06UITextgI10ControllerC5UIKitE0gK0VGSSAA6ToggleVyAA0F0VGGG_AF0mK0VQo_AA32_EnvironmentKeyTransformModifierVySbGGGAA14_PaddingLayoutVGA16_GACyAjAE14contentMargins__3forQrAA4EdgeO3SetV_12CoreGraphics7CGFloatVSgAA0D15MarginPlacementVtFQOyAjAEA19___A20_QrA24__A28_A30_tFQOyAjAE18scrollClipDisabledyQrSbFQOyAEyAjAE14scrollPosition2id6anchorQrAA7BindingVyqd__SgG_AA9UnitPointVSgtSHRd__lFQOyAEyAA06ScrollI0VyAjAE18scrollTargetLayout9isEnabledQrSb_tFQOyAA6HStackVyAUys18EnumeratedSequenceVyA_GSSAEyAEyAjAE06buttonK0yQrqd__AA06ButtonK0Rd__lFQOyAA6ButtonVyAEyAF6TFTextVAF06TFFontY033_E3EB2DC6766E7546A0387CD38A3BADCFLLVGG_AF25TFFormattingStylesControlV012FormatButtonK033_E3C94154172FB4A24F84D6358BD2AF73LLVQo_AA12_FrameLayoutVGAA023AccessibilityAttachmentY0VGGG_Qo_GAA20_GeometryGroupEffectVG_SSQo_AA017_AppearanceActionY0VG_Qo__Qo__Qo_AHyAEyAEyAjAEA19___A20_QrA24__A28_A30_tFQOyAjAEA19___A20_QrA24__A28_A30_tFQOyAjAE19defaultScrollAnchor_A20_QrA41__AA16ScrollAnchorRoleVtFQOyAjAEA88_yQrA41_FQOyA84__Qo__Qo__Qo__Qo_A16_GAF0h10BackgroundY033_765D2D84B42F2E34C8687CE391E4C01FLLVGGGGAaIHPA18_AaIHPA17_AaIHPA14_AaIHPyHC_A16_AA0iY0HPyHCHC_A16_AAA103_HPyHCHC_A101_AaIHPqd__AaIHD2_A87_HO_A100_AaIHPyHCHCHC
@@ -65,12 +46,12 @@ Symbols:
 - _symbolic _____y_____y_____y_____y_____y_____yABy_____y_____y_____y_____y_____ySay_____GGSSAByABy_____y_____yABy__________GG______Qo______G_____GGG_Qo_G_____G_SSQo______G_Qo__Qo__Qo______yAByABy_____y_____yA1__Qo__Qo______G_____GGG 7SwiftUI19_ConditionalContentV AA4ViewPAAE14contentMargins__3forQrAA4EdgeO3SetV_12CoreGraphics7CGFloatVSgAA0D15MarginPlacementVtFQO AeAEAF__AGQrAK_AoQtFQO AeAE18scrollClipDisabledyQrSbFQO AA08ModifiedD0V AeAE0P8Position2id6anchorQrAA7BindingVyqd__SgG_AA9UnitPointVSgtSHRd__lFQO AA06ScrollE0V AeAE0P12TargetLayout9isEnabledQrSb_tFQO AA6HStackV AA7ForEachV s18EnumeratedSequenceV So016UITextFormattingE10ControllerC5UIKitE15FormattingStyleV AeAE11buttonStyleyQrqd__AA11ButtonStyleRd__lFQO AA6ButtonV 014TextFormattingB06TFTextV A22_14TFFontModifier33_E3EB2DC6766E7546A0387CD38A3BADCFLLV A22_25TFFormattingStylesControlV17FormatButtonStyle33_E3C94154172FB4A24F84D6358BD2AF73LLV AA12_FrameLayoutV AA31AccessibilityAttachmentModifierV AA20_GeometryGroupEffectV AA25_AppearanceActionModifierV A22_11TFComponentV AeAEAF__AGQrAK_AoQtFQO AeAEAF__AGQrAK_AoQtFQO AA14_PaddingLayoutV A22_29TFComponentBackgroundModifier33_765D2D84B42F2E34C8687CE391E4C01FLLV
 - _symbolic _____y_____y_____y_____y_____y_____yABy_____y_____y_____y_____y_____ySay_____GGSSAByABy_____y_____yABy__________GG______Qo______G_____GGG_Qo_G_____G_SSQo______G_Qo__Qo__Qo______yAByABy_____y_____yA1__Qo__Qo______G_____GG_G 7SwiftUI19_ConditionalContentV7StorageO AA4ViewPAAE14contentMargins__3forQrAA4EdgeO3SetV_12CoreGraphics7CGFloatVSgAA0D15MarginPlacementVtFQO AgAEAH__AIQrAM_AqStFQO AgAE18scrollClipDisabledyQrSbFQO AA08ModifiedD0V AgAE0Q8Position2id6anchorQrAA7BindingVyqd__SgG_AA9UnitPointVSgtSHRd__lFQO AA06ScrollF0V AgAE0Q12TargetLayout9isEnabledQrSb_tFQO AA6HStackV AA7ForEachV s18EnumeratedSequenceV So016UITextFormattingF10ControllerC5UIKitE15FormattingStyleV AgAE11buttonStyleyQrqd__AA11ButtonStyleRd__lFQO AA6ButtonV 014TextFormattingB06TFTextV A24_14TFFontModifier33_E3EB2DC6766E7546A0387CD38A3BADCFLLV A24_25TFFormattingStylesControlV17FormatButtonStyle33_E3C94154172FB4A24F84D6358BD2AF73LLV AA12_FrameLayoutV AA31AccessibilityAttachmentModifierV AA20_GeometryGroupEffectV AA25_AppearanceActionModifierV A24_11TFComponentV AgAEAH__AIQrAM_AqStFQO AgAEAH__AIQrAM_AqStFQO AA14_PaddingLayoutV A24_29TFComponentBackgroundModifier33_765D2D84B42F2E34C8687CE391E4C01FLLV
 Functions:
-~ sub_2b20ab0d8 -> sub_2b1db80d8 : 4480 -> 4484
-~ sub_2b20aca5c -> sub_2b1db9a60 : 764 -> 768
-~ sub_2b20add28 -> sub_2b1dbad30 : 420 -> 424
-~ sub_2b20b4244 -> sub_2b1dc1250 : 108 -> 112
-~ sub_2b20b42c4 -> sub_2b1dc12d4 : 264 -> 276
-~ sub_2b20b44d0 -> sub_2b1dc14ec : 260 -> 272
-~ sub_2b20c512c -> sub_2b1dd2154 : 1268 -> 1272
-~ sub_2b20ce8b8 -> sub_2b1ddb8e4 : 1524 -> 2192
+~ sub_2b5b270d8 -> sub_2b58d10d8 : 4524 -> 4528
+~ sub_2b5b28a88 -> sub_2b58d2a8c : 764 -> 768
+~ sub_2b5b29d64 -> sub_2b58d3d6c : 420 -> 424
+~ sub_2b5b30484 -> sub_2b58da490 : 108 -> 112
+~ sub_2b5b30504 -> sub_2b58da514 : 264 -> 276
+~ sub_2b5b30710 -> sub_2b58da72c : 260 -> 272
+~ sub_2b5b418e8 -> sub_2b58eb910 : 1272 -> 1276
+~ sub_2b5b4b460 -> sub_2b58f548c : 1584 -> 2312
 ```

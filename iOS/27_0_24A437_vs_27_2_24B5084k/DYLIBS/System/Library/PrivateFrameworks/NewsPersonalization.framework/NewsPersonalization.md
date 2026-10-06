@@ -2,91 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/NewsPersonalization.framework/NewsPersonalization`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x24a7bc` | `0x24f6e0` | **`+0x4f24`** |
+| `__DATA.__bss` | `0x21790` | `0x22010` | **`+0x880`** |
+| `__TEXT.__const` | `0x19e10` | `0x1a450` | **`+0x640`** |
+| `__AUTH_CONST.__const` | `0xbc18` | `0xc158` | **`+0x540`** |
+| `__TEXT.__cstring` | `0x10fd1` | `0x11381` | **`+0x3b0`** |
+| `__DATA.__data` | `0x4d08` | `0x4f80` | **`+0x278`** |
+| `__TEXT.__eh_frame` | `0xeddc` | `0xefd0` | **`+0x1f4`** |
+| `__TEXT.__swift5_typeref` | `0x4593` | `0x475d` | **`+0x1ca`** |
+| `__TEXT.__constg_swiftt` | `0x54c8` | `0x5658` | **`+0x190`** |
+| `__TEXT.__swift5_fieldmd` | `0x5fd8` | `0x613c` | **`+0x164`** |
+| `__TEXT.__unwind_info` | `0x85f8` | `0x8750` | **`+0x158`** |
+| `__AUTH_CONST.__objc_const` | `0xc008` | `0xc138` | **`+0x130`** |
+| `__AUTH.__data` | `0x10f0` | `0x1218` | **`+0x128`** |
+| `__TEXT.__swift5_reflstr` | `0x5045` | `0x5135` | **`+0xf0`** |
+| `__AUTH_CONST.__auth_got` | `0x2e88` | `0x2ee8` | **`+0x60`** |
+| `__TEXT.__swift5_assocty` | `0x708` | `0x768` | **`+0x60`** |
+| `__TEXT.__objc_methlist` | `0x3c48` | `0x3ca0` | **`+0x58`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3740` | `0x3790` | **`+0x50`** |
+| `__TEXT.__swift5_proto` | `0x14a4` | `0x14f4` | **`+0x50`** |
+| `__TEXT.__swift5_capture` | `0xf08` | `0xf40` | **`+0x38`** |
+| `__TEXT.__swift5_types` | `0x6b8` | `0x6dc` | **`+0x24`** |
+| `__TEXT.__swift_as_entry` | `0xe0` | `0xf4` | **`+0x14`** |
+| `__DATA_CONST.__objc_protolist` | `0x318` | `0x328` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x154` | `0x160` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `0xf0` | `0xfc` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x2e8` | `0x2f0` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x190` | `0x198` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0xe4` | `0xec` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -5934.3.0.0.0
--  __TEXT.__text: 0x238cdc
--  __TEXT.__objc_methlist: 0x3c48
--  __TEXT.__const: 0x19e10
--  __TEXT.__cstring: 0x10fd1
--  __TEXT.__constg_swiftt: 0x54c8
--  __TEXT.__swift5_typeref: 0x4593
--  __TEXT.__swift5_fieldmd: 0x5fd8
 +5960.0.0.0.0
-+  __TEXT.__text: 0x23d99c
-+  __TEXT.__objc_methlist: 0x3ca0
-+  __TEXT.__const: 0x1a450
-+  __TEXT.__cstring: 0x11381
-+  __TEXT.__constg_swiftt: 0x5658
-+  __TEXT.__swift5_typeref: 0x475d
-+  __TEXT.__swift5_fieldmd: 0x613c
-   __TEXT.__swift5_builtin: 0x1e0
--  __TEXT.__swift5_reflstr: 0x5045
--  __TEXT.__swift5_assocty: 0x708
--  __TEXT.__swift5_capture: 0xf08
--  __TEXT.__swift5_proto: 0x14a4
--  __TEXT.__swift5_types: 0x6b8
--  __TEXT.__swift5_protos: 0xe4
-+  __TEXT.__swift5_reflstr: 0x5135
-+  __TEXT.__swift5_assocty: 0x768
-+  __TEXT.__swift5_capture: 0xf40
-+  __TEXT.__swift5_proto: 0x14f4
-+  __TEXT.__swift5_types: 0x6dc
-+  __TEXT.__swift5_protos: 0xec
-   __TEXT.__swift5_mpenum: 0x130
-   __TEXT.__oslogstring: 0x30d
--  __TEXT.__swift_as_entry: 0xe0
--  __TEXT.__swift_as_ret: 0xf0
--  __TEXT.__swift_as_cont: 0x154
--  __TEXT.__unwind_info: 0xacd8
--  __TEXT.__eh_frame: 0xedec
-+  __TEXT.__swift_as_entry: 0xf4
-+  __TEXT.__swift_as_ret: 0xfc
-+  __TEXT.__swift_as_cont: 0x160
-+  __TEXT.__unwind_info: 0xaea0
-+  __TEXT.__eh_frame: 0xefe0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xb20
--  __DATA_CONST.__objc_classlist: 0x2e8
--  __DATA_CONST.__objc_protolist: 0x318
-+  __DATA_CONST.__objc_classlist: 0x2f0
-+  __DATA_CONST.__objc_protolist: 0x328
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3740
--  __DATA_CONST.__objc_protorefs: 0x190
-+  __DATA_CONST.__objc_selrefs: 0x3790
-+  __DATA_CONST.__objc_protorefs: 0x198
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xbc18
-+  __AUTH_CONST.__const: 0xc158
-   __AUTH_CONST.__cfstring: 0x20
--  __AUTH_CONST.__objc_const: 0xc008
--  __AUTH_CONST.__auth_got: 0x2e88
-+  __AUTH_CONST.__objc_const: 0xc138
-+  __AUTH_CONST.__auth_got: 0x2ee8
-   __AUTH.__objc_data: 0x4a8
--  __AUTH.__data: 0x10f0
--  __DATA.__data: 0x4d08
-+  __AUTH.__data: 0x1218
-+  __DATA.__data: 0x4f80
-   __DATA.__objc_stublist: 0x8
-   __DATA.__common: 0x158
-   __DATA_DIRTY.__objc_data: 0xa78
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11570
--  Symbols:   3529
+-  Symbols:   2716
 -  CStrings:  1177
 +  Functions: 11732
-+  Symbols:   3579
++  Symbols:   2758
 +  CStrings:  1189
- 
 Symbols:
 + _FCURLForTodayDropbox
 + _OBJC_CLASS_$_FCFileCoordinatedTodayDropbox
@@ -114,16 +75,6 @@ Symbols:
 + _associated conformance 19NewsPersonalization42ComputeServiceGroupFormationBestOfProviderC6ErrorsOSHAASQ
 + _flat unique So22FCSubscriptionListType_p
 + _get_enum_tag_for_layout_string 19NewsPersonalization41UserEventHistoryAggregateStoreFactoryType_pSg
-+ _objc_msgSend$curatedClicks
-+ _objc_msgSend$curatedImpressions
-+ _objc_msgSend$depositWithAccessor:completion:
-+ _objc_msgSend$formGroup:environment:completion:
-+ _objc_msgSend$initWithCuratedClicks:curatedImpressions:personalizedClicks:personalizedImpressions:
-+ _objc_msgSend$initWithFileURL:
-+ _objc_msgSend$personalizedClicks
-+ _objc_msgSend$personalizedImpressions
-+ _objc_msgSend$setGroupFormationScore:
-+ _objc_msgSend$setPublisherGroupEngagement:
 + _symbolic $s19NewsPersonalization23ComputeServiceUnloadingP
 + _symbolic $s19NewsPersonalization28GroupFormationBestOfProviderP
 + _symbolic SDySSSo26FCPublisherGroupEngagementCG
@@ -152,8 +103,6 @@ Symbols:
 - __METACLASS_DATA__TtC19NewsPersonalization28GroupFormationBestOfProvider
 - ___swift_closure_destructor.10Tm
 - _associated conformance 19NewsPersonalization28GroupFormationBestOfProviderC6ErrorsOSHAASQ
-- _objc_msgSend$nonMtBundleOutputConfiguration
-- _objc_msgSend$nonMtNonBundleOutputConfiguration
 - _symbolic _____ 19NewsPersonalization28GroupFormationBestOfProviderC
 - _symbolic _____ 19NewsPersonalization28GroupFormationBestOfProviderC6ErrorsO
 CStrings:

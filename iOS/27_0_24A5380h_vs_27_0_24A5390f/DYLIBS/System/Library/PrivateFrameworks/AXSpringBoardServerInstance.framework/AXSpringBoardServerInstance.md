@@ -2,112 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/AXSpringBoardServerInstance.framework/AXSpringBoardServerInstance`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3bf14` | `0x3d758` | **`+0x1844`** |
+| `__TEXT.__cstring` | `0x63e4` | `0x6691` | **`+0x2ad`** |
+| `__TEXT.__oslogstring` | `0x14d1` | `0x1712` | **`+0x241`** |
+| `__AUTH_CONST.__cfstring` | `0x6880` | `0x6ac0` | **`+0x240`** |
+| `__DATA_CONST.__const` | `0xfa8` | `0x1058` | **`+0xb0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2890` | `0x2910` | **`+0x80`** |
+| `__TEXT.__dlopen_cstrs` | `0x34a` | `0x3ae` | **`+0x64`** |
+| `__AUTH_CONST.__objc_const` | `0x38a8` | `0x3908` | **`+0x60`** |
+| `__TEXT.__objc_methlist` | `0x32f4` | `0x3354` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x1190` | `0x11e0` | **`+0x50`** |
+| `__AUTH_CONST.__objc_intobj` | `0x4e0` | `0x528` | **`+0x48`** |
+| `__AUTH_CONST.__const` | `0xc80` | `0xcc0` | **`+0x40`** |
+| `__TEXT.__gcc_except_tab` | `0xac4` | `0xafc` | **`+0x38`** |
+| `__DATA.__bss` | `0x828` | `0x848` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x840` | `0x860` | **`+0x20`** |
+| `__TEXT.__const` | `0x5a0` | `0x5b0` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x104` | `0x10c` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -3234.5.0.0.0
--  __TEXT.__text: 0x3bf14
--  __TEXT.__objc_methlist: 0x32f4
--  __TEXT.__const: 0x5a0
--  __TEXT.__dlopen_cstrs: 0x34a
 +3237.1.0.0.0
-+  __TEXT.__text: 0x3d758
-+  __TEXT.__objc_methlist: 0x3354
-+  __TEXT.__const: 0x5b0
-+  __TEXT.__dlopen_cstrs: 0x3ae
-   __TEXT.__swift5_typeref: 0x188
-   __TEXT.__constg_swiftt: 0x1e8
-   __TEXT.__swift5_fieldmd: 0xa4
-   __TEXT.__swift5_reflstr: 0x34
-   __TEXT.__swift5_assocty: 0x18
-   __TEXT.__swift5_capture: 0x98
--  __TEXT.__cstring: 0x63e4
--  __TEXT.__oslogstring: 0x14d1
-+  __TEXT.__cstring: 0x6691
-+  __TEXT.__oslogstring: 0x1712
-   __TEXT.__swift5_proto: 0x34
-   __TEXT.__swift5_types: 0x20
-   __TEXT.__swift_as_entry: 0x24
-   __TEXT.__swift_as_ret: 0x24
-   __TEXT.__swift_as_cont: 0x20
--  __TEXT.__gcc_except_tab: 0xac4
--  __TEXT.__unwind_info: 0x1190
-+  __TEXT.__gcc_except_tab: 0xafc
-+  __TEXT.__unwind_info: 0x11e0
-   __TEXT.__eh_frame: 0x320
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xfa8
-+  __DATA_CONST.__const: 0x1058
-   __DATA_CONST.__objc_classlist: 0x1f0
-   __DATA_CONST.__objc_protolist: 0x78
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2890
-+  __DATA_CONST.__objc_selrefs: 0x2910
-   __DATA_CONST.__objc_superrefs: 0xf8
-   __DATA_CONST.__objc_arraydata: 0x120
--  __DATA_CONST.__got: 0x840
--  __AUTH_CONST.__const: 0xc80
--  __AUTH_CONST.__cfstring: 0x6880
--  __AUTH_CONST.__objc_const: 0x38a8
-+  __DATA_CONST.__got: 0x860
-+  __AUTH_CONST.__const: 0xcc0
-+  __AUTH_CONST.__cfstring: 0x6ac0
-+  __AUTH_CONST.__objc_const: 0x3908
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__objc_intobj: 0x4e0
-+  __AUTH_CONST.__objc_intobj: 0x528
-   __AUTH_CONST.__objc_arrayobj: 0x60
-   __AUTH_CONST.__objc_dictobj: 0x190
-   __AUTH_CONST.__auth_got: 0xbe0
-   __AUTH.__objc_data: 0x3e0
-   __AUTH.__data: 0x250
--  __DATA.__objc_ivar: 0x104
-+  __DATA.__objc_ivar: 0x10c
-   __DATA.__data: 0x688
--  __DATA.__bss: 0x828
-+  __DATA.__bss: 0x848
-   __DATA.__common: 0x10
-   __DATA_DIRTY.__objc_data: 0xf50
-   __DATA_DIRTY.__bss: 0xd8
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1338
--  Symbols:   3612
+-  Symbols:   2636
 -  CStrings:  1073
 +  Functions: 1357
-+  Symbols:   3661
++  Symbols:   2670
 +  CStrings:  1110
- 
 Symbols:
 + -[AXSpringBoardServerHelper _configureActionButtonToDescribeScene]
 + -[AXSpringBoardServerHelper _handleActionButtonDescribeScenePromo]
@@ -216,22 +145,6 @@ Symbols:
 + __handleSystemOverlayDisplayLayoutChange:.onceToken
 + _audit_stringVoiceShortcutClient
 + _getVCVoiceShortcutClientClass.softClass
-+ _objc_msgSend$_configureActionButtonToDescribeScene
-+ _objc_msgSend$_handleActionButtonDescribeScenePromo
-+ _objc_msgSend$_handleSystemOverlayDisplayLayoutChange:
-+ _objc_msgSend$_monitorSystemOverlayVisibilityChanges
-+ _objc_msgSend$configurationForDefaultMainDisplayMonitor
-+ _objc_msgSend$configuredStaccatoActionFromTemplate:valuesByParameterKey:completion:
-+ _objc_msgSend$enumerateKeysAndObjectsUsingBlock:
-+ _objc_msgSend$fetchAllValueSectionsForStaccatoParameter:completion:
-+ _objc_msgSend$fetchAvailableStaccatoActions:
-+ _objc_msgSend$isEqualToSet:
-+ _objc_msgSend$presentFloatingDockIfDismissedAnimated:presentationSource:completionHandler:
-+ _objc_msgSend$setSystemOverlayVisibilityMonitor:
-+ _objc_msgSend$setVisibleSystemOverlayIdentifiers:
-+ _objc_msgSend$standardClient
-+ _objc_msgSend$visibleSystemOverlayIdentifiers
-+ _objc_msgSend$zoomCurrentLensEffect
 + _weak_AFIsLinwoodEnabledAndWasEverAvailable
 - GCC_except_table1011
 - GCC_except_table1016
@@ -307,7 +220,6 @@ Symbols:
 - GCC_except_table933
 - GCC_except_table938
 - GCC_except_table940
-- _objc_msgSend$presentFloatingDockIfDismissedAnimated:completionHandler:
 CStrings:
 + "9000"
 + "APPEARED"

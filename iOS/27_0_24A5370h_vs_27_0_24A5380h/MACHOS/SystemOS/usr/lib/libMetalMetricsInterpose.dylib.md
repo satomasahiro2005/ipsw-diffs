@@ -2,57 +2,38 @@
 
 > `/usr/lib/libMetalMetricsInterpose.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x141a4` | `0x1409c` | **`-0x108`** |
+| `__TEXT.__gcc_except_tab` | `0x12dc` | `0x12b8` | **`-0x24`** |
+| `__TEXT.__auth_stubs` | `0x800` | `0x820` | **`+0x20`** |
+| `__TEXT.__objc_methname` | `0xd6d` | `0xd58` | **`-0x15`** |
+| `__DATA_CONST.__auth_got` | `0x410` | `0x420` | **`+0x10`** |
+| `__DATA.__data` | `0x1` | `0x10` | **`+0xf`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA.__thread_vars`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x141a4
--  __TEXT.__auth_stubs: 0x800
-+  __TEXT.__text: 0x1409c
-+  __TEXT.__auth_stubs: 0x820
-   __TEXT.__objc_stubs: 0xec0
-   __TEXT.__objc_methlist: 0xf8
--  __TEXT.__gcc_except_tab: 0x12dc
-+  __TEXT.__gcc_except_tab: 0x12b8
-   __TEXT.__const: 0x4c8
-   __TEXT.__cstring: 0x5bd
--  __TEXT.__objc_methname: 0xd6d
-+  __TEXT.__objc_methname: 0xd58
-   __TEXT.__objc_classname: 0x1e
-   __TEXT.__objc_methtype: 0x3b7
-   __TEXT.__unwind_info: 0x8c0
+-5.0.19.0.0
++5.0.22.0.0
 
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__objc_arraydata: 0x8
-   __DATA_CONST.__objc_arrayobj: 0x18
--  __DATA_CONST.__auth_got: 0x410
-+  __DATA_CONST.__auth_got: 0x420
-   __DATA_CONST.__got: 0x110
-   __DATA.__objc_const: 0x220
-   __DATA.__objc_selrefs: 0x410
-   __DATA.__objc_ivar: 0x2c
-   __DATA.__objc_data: 0x50
--  __DATA.__data: 0x1
-+  __DATA.__data: 0x10
-   __DATA.__thread_vars: 0xa8
-   __DATA.__thread_bss: 0x7
-   __DATA.__common: 0x9
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 381
--  Symbols:   987
-+  Symbols:   990
-   CStrings:  232
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__thread_vars : content changed
+-  Symbols:   967
++  Symbols:   970
 Symbols:
 + __ZL24_EncoderCounterOffsetKey
 + _objc_getAssociatedObject
@@ -72,5 +53,4 @@ Functions:
 CStrings:
 + "numberWithUnsignedLong:"
 - "metalGetEncoderCounterOffset:encoderTraceId:"
-
 ```

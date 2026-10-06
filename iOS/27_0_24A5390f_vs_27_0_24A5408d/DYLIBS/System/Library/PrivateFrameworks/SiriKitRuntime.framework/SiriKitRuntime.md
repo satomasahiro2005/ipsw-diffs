@@ -2,60 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/SiriKitRuntime.framework/SiriKitRuntime`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__unwind_info` | `0xb850` | `0xb950` | **`+0x100`** |
+| `__TEXT.__text` | `0x4740ec` | `0x474040` | **`-0xac`** |
+| `__TEXT.__oslogstring` | `0x2334d` | `0x2338d` | **`+0x40`** |
+| `__TEXT.__eh_frame` | `0x16a50` | `0x16a60` | **`+0x10`** |
+| `__TEXT.__objc_methlist` | `0x16b4` | `0x16c4` | **`+0x10`** |
+| `__AUTH_CONST.__objc_const` | `0xe598` | `0xe5a0` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1878` | `0x1880` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.28.5.1.1
--  __TEXT.__text: 0x4740ec
--  __TEXT.__objc_methlist: 0x16b4
 +3600.28.13.0.0
-+  __TEXT.__text: 0x474040
-+  __TEXT.__objc_methlist: 0x16c4
-   __TEXT.__const: 0x15e54
-   __TEXT.__cstring: 0xe584
-   __TEXT.__swift5_typeref: 0x6ced
 
-   __TEXT.__swift5_builtin: 0x1b8
-   __TEXT.__swift5_reflstr: 0x8817
-   __TEXT.__swift5_assocty: 0x988
--  __TEXT.__oslogstring: 0x2334d
-+  __TEXT.__oslogstring: 0x2338d
-   __TEXT.__swift5_proto: 0xaf4
-   __TEXT.__swift5_types: 0x7cc
-   __TEXT.__swift_as_entry: 0x8d0
-
-   __TEXT.__swift_as_cont: 0x124c
-   __TEXT.__swift5_protos: 0x100
-   __TEXT.__swift5_mpenum: 0x60
--  __TEXT.__unwind_info: 0xb850
--  __TEXT.__eh_frame: 0x16a50
-+  __TEXT.__unwind_info: 0xb950
-+  __TEXT.__eh_frame: 0x16a60
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x5c0
-   __DATA_CONST.__objc_protolist: 0x1c0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1878
-+  __DATA_CONST.__objc_selrefs: 0x1880
-   __DATA_CONST.__objc_protorefs: 0xf0
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x15e70
-   __AUTH_CONST.__cfstring: 0x1560
--  __AUTH_CONST.__objc_const: 0xe598
-+  __AUTH_CONST.__objc_const: 0xe5a0
-   __AUTH_CONST.__auth_got: 0x4be0
-   __AUTH.__objc_data: 0xd88
-   __AUTH.__data: 0x1ca8
-
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 17008
-   Symbols:   38310
 -  CStrings:  3418
 +  CStrings:  3417
- 
 Symbols:
 + _$s14SiriKitRuntime12EncoreEngineC6action022_574785BAD1D8178F3F4D6K9A75E70E1ELL4mode8starting7context10completionyAC10ActionModeO_AA4NodeCyAA15ActingFlowAgentCGSg0abW019ConversationContextVyAC0S7OutcomeOctF04$s14ab9Runtime12de27C14handleExternal022_574785ghijk2L9lmn30ELL5eventyAA0dE5EventO_tFyAC13S13OutcomeOcfU3_ACs6ResultOyAA0Y12CommitResultOs5Error_pGIeghn_Tf1nnnEn_nTf4nnnngg_n
 + _$s14SiriKitRuntime27InsightRequestSummaryLoggerV9emitDebugyys13KeyValuePairsVyAA0defJ0VSSGyXAF04$s14ab109Runtime37ConversationBridgeInstrumentationUtilC23logServerFallbackFailed9errorCode9requestIdys5Int32V_SStFs13jkl7VyAA021deF11Q0VSSGycfu_SSs0Y0VTf1En_n

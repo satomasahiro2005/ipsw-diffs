@@ -2,77 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/AskToUI.framework/AskToUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x97584` | `0x93750` | **`-0x3e34`** |
+| `__DATA.__bss` | `0x56b8` | `0x3e38` | **`-0x1880`** |
+| `__TEXT.__const` | `0x5eb6` | `0x51f8` | **`-0xcbe`** |
+| `__AUTH_CONST.__const` | `0x4258` | `0x3c18` | **`-0x640`** |
+| `__TEXT.__swift5_typeref` | `0x9c2a` | `0x99ee` | **`-0x23c`** |
+| `__TEXT.__swift5_fieldmd` | `0x171c` | `0x1548` | **`-0x1d4`** |
+| `__DATA.__data` | `0x25a0` | `0x23d0` | **`-0x1d0`** |
+| `__TEXT.__eh_frame` | `0x3044` | `0x2e8c` | **`-0x1b8`** |
+| `__TEXT.__constg_swiftt` | `0x1ddc` | `0x1c44` | **`-0x198`** |
+| `__TEXT.__unwind_info` | `0x2048` | `0x1ec0` | **`-0x188`** |
+| `__TEXT.__swift5_proto` | `0x2bc` | `0x1f8` | **`-0xc4`** |
+| `__TEXT.__cstring` | `0x1a09` | `0x1959` | **`-0xb0`** |
+| `__TEXT.__swift5_reflstr` | `0x1672` | `0x15e2` | **`-0x90`** |
+| `__AUTH_CONST.__auth_got` | `0x1978` | `0x1918` | **`-0x60`** |
+| `__TEXT.__swift5_types` | `0x1ac` | `0x17c` | **`-0x30`** |
+| `__TEXT.__swift5_builtin` | `0xa0` | `0x78` | **`-0x28`** |
+| `__TEXT.__swift5_mpenum` | `0x24` | `—` | **`-0x24`** |
+| `__DATA_CONST.__got` | `0x980` | `0x970` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -96.0.0.0.0
--  __TEXT.__text: 0x919bc
 +97.125.4.0.0
-+  __TEXT.__text: 0x8dddc
-   __TEXT.__objc_methlist: 0x4cc
--  __TEXT.__const: 0x5eb6
--  __TEXT.__constg_swiftt: 0x1ddc
--  __TEXT.__swift5_typeref: 0x9c2a
--  __TEXT.__swift5_fieldmd: 0x171c
--  __TEXT.__swift5_builtin: 0xa0
--  __TEXT.__swift5_reflstr: 0x1672
--  __TEXT.__swift5_assocty: 0x468
--  __TEXT.__swift5_protos: 0x30
--  __TEXT.__swift5_proto: 0x2bc
--  __TEXT.__swift5_types: 0x1ac
--  __TEXT.__cstring: 0x1a09
-+  __TEXT.__const: 0x51f8
-+  __TEXT.__constg_swiftt: 0x1c44
-+  __TEXT.__swift5_typeref: 0x99ee
-+  __TEXT.__swift5_builtin: 0x78
-+  __TEXT.__swift5_reflstr: 0x15e2
-+  __TEXT.__swift5_fieldmd: 0x1548
-+  __TEXT.__cstring: 0x1959
-   __TEXT.__swift5_capture: 0xc54
-   __TEXT.__oslogstring: 0x1be3
-+  __TEXT.__swift5_assocty: 0x468
-+  __TEXT.__swift5_proto: 0x1f8
-+  __TEXT.__swift5_types: 0x17c
-   __TEXT.__swift_as_entry: 0xd8
-   __TEXT.__swift_as_ret: 0xb4
-   __TEXT.__swift_as_cont: 0x1d4
--  __TEXT.__swift5_mpenum: 0x24
--  __TEXT.__unwind_info: 0x2650
--  __TEXT.__eh_frame: 0x3044
-+  __TEXT.__swift5_protos: 0x30
-+  __TEXT.__unwind_info: 0x2450
-+  __TEXT.__eh_frame: 0x2e8c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x730
-   __DATA_CONST.__objc_protorefs: 0x50
--  __DATA_CONST.__got: 0x980
--  __AUTH_CONST.__const: 0x4258
-+  __DATA_CONST.__got: 0x970
-+  __AUTH_CONST.__const: 0x3c18
-   __AUTH_CONST.__objc_const: 0x12f8
--  __AUTH_CONST.__auth_got: 0x1978
-+  __AUTH_CONST.__auth_got: 0x1918
-   __AUTH.__objc_data: 0x8d8
-   __AUTH.__data: 0x1380
--  __DATA.__data: 0x25a0
-+  __DATA.__data: 0x23d0
-   __DATA.__objc_stublist: 0x8
-   __DATA.__common: 0x1a0
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2691
--  Symbols:   1635
+-  Symbols:   1461
 -  CStrings:  284
 +  Functions: 2533
-+  Symbols:   1570
++  Symbols:   1396
 +  CStrings:  280
- 
 Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA6VStackVyAA05TupleD0VyAA7DividerV_AA6HStackVyAGyAA4TextV_ACyACyACyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAO5ScaleOGGAQyAA19SymbolRenderingModeVSgGGAA25_ForegroundStyleModifier2VyAA5ColorVA2_GGSgQPGGAMSgQPGGAA14_PaddingLayoutVGAA4ViewHPA10_AAA14_HPyHC_A12_AA0yN0HPyHCHC
 + _get_witness_table qd0__7SwiftUI4ViewHD4_AaBPAAE5sheet4item9onDismiss7contentQrAA7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lFQOyAcAEAD11isPresentedAfGQrAIySbG_ALqd__yctAaBRd__lFQOyAcAEAdefGQrAK_ALqd_0_qd__ctsAMRd__AaBRd_0_r0_lFQOyAcAE5alert_AN10presenting7actions7messageQrAA18LocalizedStringKeyV_AOqd_1_Sgqd__qd_1_XEqd_0_qd_1_XEtAaBRd__AaBRd_0_r1_lFQOyAA012SubscriptionC0VySq7CombineE9PublisherVys6ResultOy9AskToCore10ATResponseCs5Error_pG_GAcAE0F14GeometryChange3for2of6actionQrqd__m_qd__AA13GeometryProxyVcyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVyA15_yA15_yA15_yAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA6VStackVyAA12TupleContentVyAA19_ConditionalContentVyA15_yAA6HStackVyAA5GroupVyA25_y0xyB0028QuestionVisualRepresentationC0V_A27_yA32_012QuestionTextC0VA15_yA36_AA14_PaddingLayoutVGGQPGGGA38_GA23_yA42_GG_A27_yA27_yA32_06StatusC0VA48_GA15_yA27_yA27_yA27_yA27_yA29_yA25_yAA6SpacerV_AcAE11buttonStyleyQrqd__AA11ButtonStyleRd__lFQOyAA6ButtonVyAA4TextVG_A32_25MessagesBubbleButtonStyleVQo_A51_QPGGSgAA05EmptyC0VGA27_yA66_A27_yA27_yA32_22PostAnswerActionButtonVA69_GSgA66_GGGA27_yA27_yA66_A66_GA27_yA27_yA27_yA27_yA61_A48_GA27_yAA4MenuVyA32_27LegacyDisclosureButtonLabelVAA7ForEachVySay0xY014ATAnswerChoiceCGSSA58_GGA27_yA29_yA25_yA15_yA32_20InlineResponseButtonVAA012_EnvironmentS17TransformModifierVySbGG_A94_QPGGA15_yAcAEA52_yQrqd__AAA53_Rd__lFQOyAcAE9menuStyleyQrqd__AA9MenuStyleRd__lFQOyA78_yA29_yA25_yA57__A51_A15_yA15_yA15_yA15_yAA5ImageVAA012_EnvironmentS15WritingModifierVySiSgGGA102_yAA4FontVSgGGA102_yA100_5ScaleOGGA102_yAA5ColorVSgGGQPGGA87_G_AA15ButtonMenuStyleVQo__A60_Qo_A93_GGGGA27_yA15_yA32_23ResponseExtensionButtonVA93_GA29_yA25_yA94__A27_yA15_yA61_A93_GA133_GQPGGGGA72_GGGA66_GA38_GGQPGG_Qo_A38_GA38_GAA19_BackgroundModifierVyA117_GGAA30_SafeAreaRegionsIgnoringLayoutVG_So6CGSizeVA159_SQ0Z8GraphicsyHCg0_Qo_G_A58_A57_A6_Qo__A32_27ResponseExtensionLaunchInfoV013AAAFoundationB0016AAFExtensionHostC0VyA32_24ResponseExtensionContextCA85_GQo__AA03AnyC0VQo__A32_021CommLimitsReviewSheetC5ModelCA32_21CommLimitsReviewSheetVQo_HO

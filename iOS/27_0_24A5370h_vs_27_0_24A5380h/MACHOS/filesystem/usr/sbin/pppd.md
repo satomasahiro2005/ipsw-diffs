@@ -2,20 +2,22 @@
 
 > `/usr/sbin/pppd`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x2d474
-+  __TEXT.__text: 0x2d444
-   __TEXT.__auth_stubs: 0x10c0
-   __TEXT.__const: 0x708
-   __TEXT.__cstring: 0x8db7
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA.__data : content changed
-~ __DATA.__common : content changed
-~ __DATA.__bss : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2d474` | `0x2d444` | **`-0x30`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
+```text
 Functions:
 ~ _ChapMS2 : 1136 -> 1144
 ~ sub_1000072e4 -> sub_1000072ec : 776 -> 768
@@ -33,5 +35,4 @@ Functions:
 ~ _vslprintf : 2784 -> 2792
 ~ _DesEncrypt : 276 -> 260
 ~ _DesDecrypt : 276 -> 260
-
 ```

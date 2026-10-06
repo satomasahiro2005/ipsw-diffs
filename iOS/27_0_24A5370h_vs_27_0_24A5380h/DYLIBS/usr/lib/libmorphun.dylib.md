@@ -2,34 +2,17 @@
 
 > `/usr/lib/libmorphun.dylib`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x103870
-+  __TEXT.__text: 0x102aec
-   __TEXT.__const: 0x10aba0
-   __TEXT.__gcc_except_tab: 0x132e8
-   __TEXT.__cstring: 0x2630
-   __TEXT.__ustring: 0xcc48
-   __TEXT.__oslogstring: 0xa3
--  __TEXT.__unwind_info: 0x5b50
-+  __TEXT.__unwind_info: 0x5b58
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x16808
-   __DATA_CONST.__weak_got: 0x20
-   __DATA_CONST.__got: 0x140
--  __AUTH_CONST.__const: 0x1c740
-+  __AUTH_CONST.__const: 0x1ba58
-   __AUTH_CONST.__cfstring: 0x60
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__auth_got: 0x0
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__cstring : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x103870` | `0x102aec` | **`-0xd84`** |
+| `__AUTH_CONST.__const` | `0x1c740` | `0x1ba58` | **`-0xce8`** |
+| `__TEXT.__unwind_info` | `0x5b50` | `0x5b58` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__111__introsortINS_17_ClassicAlgPolicyERNS_6__lessIvvEEPNS_4pairIjjEELb0EEEvT1_S8_T0_NS_15iterator_traitsIS8_E15difference_typeEb : 3504 -> 3472
 ~ __ZNSt3__127__insertion_sort_incompleteB9sqe220106INS_17_ClassicAlgPolicyERNS_6__lessIvvEEPNS_4pairIjjEEEEbT1_S8_T0_ : 1008 -> 980
@@ -137,5 +120,4 @@ Functions:
 ~ __ZNSt3__16vectorIN7morphun4util7ULocaleENS_9allocatorIS3_EEE24__emplace_back_slow_pathIJS3_EEEPS3_DpOT_ : 460 -> 416
 ~ __ZNSt3__16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_6vectorIN7morphun4util7ULocaleENS5_ISB_EEEEEENS_19__map_value_compareIS7_NS_4pairIKS7_SD_EENS_4lessIS7_EEEENS5_ISI_EEE21__construct_from_treeB9sqe220106IZNSN_21__copy_construct_treeB9sqe220106EPNS_11__tree_nodeISE_PvEEEUlRKSI_E_EESS_SS_T_ : 504 -> 484
 ~ __ZNKSt3__117basic_string_viewIDsNS_11char_traitsIDsEEE4findB9sqe220106ES3_m : 224 -> 204
-
 ```

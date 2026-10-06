@@ -2,28 +2,21 @@
 
 > `/System/Library/Frameworks/_Vision_FoundationModels.framework/_Vision_FoundationModels`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x439` | `0x3f9` | **`-0x40`** |
+| `__DATA.__data` | `0x1e8` | `0x1f0` | **`+0x8`** |
+| `__TEXT.__text` | `0x667c` | `0x6684` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x328` | `0x320` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -10.0.45.0.0
--  __TEXT.__text: 0x6044
 +10.1.7.0.0
-+  __TEXT.__text: 0x604c
-   __TEXT.__const: 0x928
-   __TEXT.__swift5_typeref: 0x264
--  __TEXT.__cstring: 0x439
-+  __TEXT.__cstring: 0x3f9
-   __TEXT.__swift5_reflstr: 0xe3
-   __TEXT.__swift5_assocty: 0x100
-   __TEXT.__constg_swiftt: 0x1dc
-
-   __AUTH_CONST.__const: 0x158
-   __AUTH_CONST.__auth_got: 0x360
-   __AUTH.__data: 0x310
--  __DATA.__data: 0x1e8
-+  __DATA.__data: 0x1f0
-   __DATA.__common: 0x30
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/FoundationModels.framework/FoundationModels
 CStrings:
 + "antiSpoofing.AgeEstimation"
 + "com.apple.fm.language.instruct_server_v2.age_estimation"

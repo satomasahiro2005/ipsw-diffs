@@ -2,79 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/QueryUnderstanding.framework/QueryUnderstanding`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6fcc` | `0x7c58` | **`+0xc8c`** |
+| `__AUTH_CONST.__objc_const` | `0xe78` | `0xfb0` | **`+0x138`** |
+| `__TEXT.__gcc_except_tab` | `0x94c` | `0xa28` | **`+0xdc`** |
+| `__TEXT.__oslogstring` | `0x59a` | `0x655` | **`+0xbb`** |
+| `__DATA_CONST.__const` | `0x6d8` | `0x778` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0xe22` | `0xebd` | **`+0x9b`** |
+| `__TEXT.__objc_methlist` | `0x754` | `0x7ec` | **`+0x98`** |
+| `__TEXT.__unwind_info` | `0x2b0` | `0x340` | **`+0x90`** |
+| `__DATA_CONST.__objc_selrefs` | `0x650` | `0x6d8` | **`+0x88`** |
+| `__AUTH_CONST.__cfstring` | `0x520` | `0x5a0` | **`+0x80`** |
+| `__AUTH.__objc_data` | `—` | `0x50` | **`+0x50`** |
+| `__AUTH_CONST.__const` | `0x80` | `0xc0` | **`+0x40`** |
+| `__DATA.__bss` | `0x8` | `0x28` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x158` | `0x178` | **`+0x20`** |
+| `__TEXT.__const` | `0xa8` | `0xc0` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x80` | `0x94` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x40` | `0x48` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x30` | `0x38` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.31.18.0.0
--  __TEXT.__text: 0x6fcc
--  __TEXT.__objc_methlist: 0x754
--  __TEXT.__const: 0xa8
--  __TEXT.__cstring: 0xe22
--  __TEXT.__oslogstring: 0x59a
--  __TEXT.__gcc_except_tab: 0x94c
--  __TEXT.__unwind_info: 0x2b0
 +3600.31.21.0.0
-+  __TEXT.__text: 0x7c58
-+  __TEXT.__objc_methlist: 0x7ec
-+  __TEXT.__const: 0xc0
-+  __TEXT.__cstring: 0xebd
-+  __TEXT.__oslogstring: 0x655
-+  __TEXT.__gcc_except_tab: 0xa28
-+  __TEXT.__unwind_info: 0x340
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x6d8
--  __DATA_CONST.__objc_classlist: 0x40
-+  __DATA_CONST.__const: 0x778
-+  __DATA_CONST.__objc_classlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x650
--  __DATA_CONST.__objc_superrefs: 0x30
-+  __DATA_CONST.__objc_selrefs: 0x6d8
-+  __DATA_CONST.__objc_superrefs: 0x38
-   __DATA_CONST.__objc_arraydata: 0x60
--  __DATA_CONST.__got: 0x158
--  __AUTH_CONST.__const: 0x80
--  __AUTH_CONST.__cfstring: 0x520
--  __AUTH_CONST.__objc_const: 0xe78
-+  __DATA_CONST.__got: 0x178
-+  __AUTH_CONST.__const: 0xc0
-+  __AUTH_CONST.__cfstring: 0x5a0
-+  __AUTH_CONST.__objc_const: 0xfb0
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x60
-   __AUTH_CONST.__objc_intobj: 0x60
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__objc_ivar: 0x80
-+  __AUTH.__objc_data: 0x50
-+  __DATA.__objc_ivar: 0x94
-   __DATA.__data: 0x180
--  __DATA.__bss: 0x8
-+  __DATA.__bss: 0x28
-   __DATA_DIRTY.__objc_data: 0x280
-   __DATA_DIRTY.__data: 0x1
-   __DATA_DIRTY.__bss: 0x70
 
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/CoreNLP.framework/CoreNLP
-   - /System/Library/PrivateFrameworks/EmbeddingService.framework/EmbeddingService
 +  - /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices
-   - /System/Library/PrivateFrameworks/SpotlightResources.framework/SpotlightResources
-   - /System/Library/PrivateFrameworks/UnifiedAssetFramework.framework/UnifiedAssetFramework
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
+
 -  Functions: 143
--  Symbols:   584
+-  Symbols:   438
 -  CStrings:  254
 +  Functions: 167
-+  Symbols:   654
++  Symbols:   495
 +  CStrings:  261
- 
 Symbols:
 + +[QUAssetHelper log]
 + +[QUAssetHelper sharedHelper]
@@ -134,19 +99,6 @@ Symbols:
 + _objc_begin_catch
 + _objc_end_catch
 + _objc_exception_rethrow
-+ _objc_msgSend$_test_scopedRBSAssertionInvalidateCount
-+ _objc_msgSend$acquireWithError:
-+ _objc_msgSend$attributeWithDomain:name:
-+ _objc_msgSend$currentProcess
-+ _objc_msgSend$filePathsForLocale:
-+ _objc_msgSend$initWithAssetSetManager:
-+ _objc_msgSend$initWithExplanation:target:attributes:
-+ _objc_msgSend$invalidate
-+ _objc_msgSend$invalidateWithQueue:completion:
-+ _objc_msgSend$localizedDescription
-+ _objc_msgSend$sharedHelper
-+ _objc_msgSend$sleepForTimeInterval:
-+ _objc_msgSend$timeIntervalSinceNow
 - GCC_except_table2
 CStrings:
 + "(nil)"

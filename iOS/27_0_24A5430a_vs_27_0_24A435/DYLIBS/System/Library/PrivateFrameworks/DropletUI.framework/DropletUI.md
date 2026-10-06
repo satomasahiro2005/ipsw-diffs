@@ -2,17 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/DropletUI.framework/DropletUI`
 
-```diff
+### Section Size Changes
 
- 104.100.0.0.0
--  __TEXT.__text: 0x34c34
-+  __TEXT.__text: 0x34c44
-   __TEXT.__objc_methlist: 0x1344
-   __TEXT.__const: 0xc48
-   __TEXT.__constg_swiftt: 0xee8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x34c34` | `0x34c44` | **`+0x10`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_25feddf84 -> sub_2618dcf84 : 2516 -> 2520
-~ sub_25fee6c74 -> sub_2618e5c78 : 240 -> 244
-~ sub_25fef3928 -> sub_2618f2930 : 672 -> 676
-~ sub_25fef3d6c -> sub_2618f2d78 : 360 -> 364
+~ sub_25fdacf84 -> sub_2617b8f84 : 2516 -> 2520
+~ sub_25fdb5c74 -> sub_2617c1c78 : 240 -> 244
+~ sub_25fdc2928 -> sub_2617ce930 : 672 -> 676
+~ sub_25fdc2d6c -> sub_2617ced78 : 360 -> 364
 ```

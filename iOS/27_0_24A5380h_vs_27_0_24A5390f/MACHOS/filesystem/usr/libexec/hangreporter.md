@@ -2,51 +2,37 @@
 
 > `/usr/libexec/hangreporter`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__gcc_except_tab`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x25e20` | `0x260d0` | **`+0x2b0`** |
+| `__DATA_CONST.__cfstring` | `0x52a0` | `0x5320` | **`+0x80`** |
+| `__TEXT.__cstring` | `0x42bf` | `0x431b` | **`+0x5c`** |
+| `__DATA_CONST.__const` | `0x1640` | `0x1680` | **`+0x40`** |
+| `__TEXT.__objc_methname` | `0x5c78` | `0x5c82` | **`+0xa`** |
+| `__TEXT.__objc_methtype` | `0x8ef` | `0x8f8` | **`+0x9`** |
+| `__TEXT.__unwind_info` | `0x608` | `0x600` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__const`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
 -421.0.0.0.0
--  __TEXT.__text: 0x25e20
 +424.0.0.0.0
-+  __TEXT.__text: 0x260d0
-   __TEXT.__auth_stubs: 0xf20
-   __TEXT.__objc_stubs: 0x3460
-   __TEXT.__objc_methlist: 0x136c
-   __TEXT.__const: 0x2b0
--  __TEXT.__cstring: 0x42bf
-+  __TEXT.__cstring: 0x431b
-   __TEXT.__oslogstring: 0x4d4f
-   __TEXT.__objc_classname: 0x183
--  __TEXT.__objc_methname: 0x5c78
--  __TEXT.__objc_methtype: 0x8ef
-+  __TEXT.__objc_methname: 0x5c82
-+  __TEXT.__objc_methtype: 0x8f8
-   __TEXT.__gcc_except_tab: 0xc7c
--  __TEXT.__unwind_info: 0x608
--  __DATA_CONST.__const: 0x1640
--  __DATA_CONST.__cfstring: 0x52a0
-+  __TEXT.__unwind_info: 0x600
-+  __DATA_CONST.__const: 0x1680
-+  __DATA_CONST.__cfstring: 0x5320
-   __DATA_CONST.__objc_classlist: 0x88
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x28
 
-   - /usr/lib/libz.1.dylib
-   Functions: 757
-   Symbols:   334
 -  CStrings:  2132
 +  CStrings:  2136
- 
 Functions:
 ~ sub_100006da4 : 240 -> 296
 ~ sub_100006ee4 -> sub_100006f1c : 296 -> 424

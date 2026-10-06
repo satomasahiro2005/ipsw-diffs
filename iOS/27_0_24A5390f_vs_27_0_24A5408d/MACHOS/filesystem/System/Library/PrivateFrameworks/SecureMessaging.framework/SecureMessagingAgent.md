@@ -2,15 +2,14 @@
 
 > `/System/Library/PrivateFrameworks/SecureMessaging.framework/SecureMessagingAgent`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__eh_frame`
+
+### Other Changes
 
 ```diff
 
 -55.100.1.0.0
 +59.100.1.0.0
-   __TEXT.__text: 0x1440
-   __TEXT.__auth_stubs: 0x360
-   __TEXT.__objc_stubs: 0x20
 ```

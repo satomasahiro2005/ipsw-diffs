@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/GroupActivities.framework/GroupActivities`
 
-```diff
+### Section Size Changes
 
- 303.100.1.0.0
--  __TEXT.__text: 0x1cfd40
-+  __TEXT.__text: 0x1cfd64
-   __TEXT.__objc_methlist: 0x698
-   __TEXT.__const: 0x1179c
-   __TEXT.__cstring: 0x29f7
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1cfd40` | `0x1cfd64` | **`+0x24`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s15GroupActivities0A7SessionC26registerPlaybackSyncerLinkyyAC0acefG0Cyx_xGFy10Foundation12NotificationVcfU0_ : 2736 -> 2748
 ~ _$sSD16compactMapValuesySDyxqd__Gqd__Sgq_KXEKlFSS_SDySo46AVPlaybackCoordinationTransportControlStateKeyaypG10Foundation4DataVTg506$sSo21d42CoordinatorC15GroupActivitiesE25getTrackedf24StatesSDySS10Foundation4k8VGyFAGSgu6So0a12e3G15gH12KeyaypGXEfU_Tf1cn_n : 692 -> 696

@@ -2,68 +2,28 @@
 
 > `/System/Library/PrivateFrameworks/PerformanceControlKit.framework/PerformanceControlKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14360` | `0x12b64` | **`-0x17fc`** |
+| `__TEXT.__gcc_except_tab` | `0x1868` | `0x1738` | **`-0x130`** |
+| `__TEXT.__unwind_info` | `0x828` | `0x780` | **`-0xa8`** |
+| `__AUTH_CONST.__objc_const` | `0xe40` | `0xe20` | **`-0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x378` | `0x370` | **`-0x8`** |
+| `__DATA.__objc_ivar` | `0xbc` | `0xb8` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x14360
-+  __TEXT.__text: 0x12b64
-   __TEXT.__objc_methlist: 0x624
-   __TEXT.__cstring: 0xa3a
--  __TEXT.__gcc_except_tab: 0x1868
-+  __TEXT.__gcc_except_tab: 0x1738
-   __TEXT.__const: 0xed0
--  __TEXT.__unwind_info: 0x828
-+  __TEXT.__unwind_info: 0x780
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-1782.0.0.0.3
++1794.0.7.0.2
 
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x18
--  __DATA_CONST.__objc_selrefs: 0x378
-+  __DATA_CONST.__objc_selrefs: 0x370
-   __DATA_CONST.__objc_superrefs: 0x40
-   __DATA_CONST.__objc_arraydata: 0x260
-   __DATA_CONST.__got: 0x138
-   __AUTH_CONST.__const: 0x5d0
-   __AUTH_CONST.__cfstring: 0xc00
--  __AUTH_CONST.__objc_const: 0xe40
-+  __AUTH_CONST.__objc_const: 0xe20
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x1b0
-   __AUTH_CONST.__objc_dictobj: 0x230
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__objc_ivar: 0xbc
-+  __DATA.__objc_ivar: 0xb8
-   __DATA.__data: 0xc0
-   __DATA.__bss: 0x10
-   __DATA_DIRTY.__objc_data: 0x370
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libxml2.2.dylib
 -  Functions: 337
--  Symbols:   1302
+-  Symbols:   863
 +  Functions: 312
-+  Symbols:   1203
-   CStrings:  219
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   807
 Symbols:
 + -[CLPCReportingClient computeTGDiff:prev:]
 + GCC_except_table100
@@ -205,6 +165,4 @@ Symbols:
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeI19CLPCReportingStatIDyEENS_22__unordered_map_hasherIS2_NS_4pairIKS2_yEENS_4hashIS2_EENS_8equal_toIS2_EEEENS_21__unordered_map_equalIS2_S7_SB_S9_EENS_9allocatorIS7_EEE16__emplace_uniqueB9fqe220106IJRKNS_21piecewise_construct_tENS_5tupleIJRS6_EEENSM_IJEEEEEENS5_INS_15__hash_iteratorIPNS_11__hash_nodeIS3_PvEEEEbEEDpOT_ENKUlSN_SL_OSO_OSP_E_clESN_SL_S10_S11_
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeIyNS_13unordered_mapI19CLPCReportingStatIDNS_6vectorIyNS_9allocatorIyEEEENS_4hashIS3_EENS_8equal_toIS3_EENS5_INS_4pairIKS3_S7_EEEEEEEENS_22__unordered_map_hasherIyNSC_IKySG_EENS8_IyEENSA_IyEEEENS_21__unordered_map_equalIySK_SM_SL_EENS5_ISK_EEE16__emplace_uniqueB9fqe220106IJRKNS_21piecewise_construct_tENS_5tupleIJRSJ_EEENSW_IJEEEEEENSC_INS_15__hash_iteratorIPNS_11__hash_nodeISH_PvEEEEbEEDpOT_ENKUlSX_SV_OSY_OSZ_E_clESX_SV_S1A_S1B_
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeIyNS_13unordered_mapI19CLPCReportingStatIDyNS_4hashIS3_EENS_8equal_toIS3_EENS_9allocatorINS_4pairIKS3_yEEEEEEEENS_22__unordered_map_hasherIyNS9_IKySD_EENS4_IyEENS6_IyEEEENS_21__unordered_map_equalIySH_SJ_SI_EENS8_ISH_EEE16__emplace_uniqueB9fqe220106IJRKNS_21piecewise_construct_tENS_5tupleIJRSG_EEENST_IJEEEEEENS9_INS_15__hash_iteratorIPNS_11__hash_nodeISE_PvEEEEbEEDpOT_ENKUlSU_SS_OSV_OSW_E_clESU_SS_S17_S18_
-- _objc_msgSend$getBytes:range:
-
 ```

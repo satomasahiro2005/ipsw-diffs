@@ -2,94 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/CoreRE.framework/CoreRE`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x166aec4` | `0x1681968` | **`+0x16aa4`** |
+| `__DATA.__bss` | `0x6f98` | `0x9768` | **`+0x27d0`** |
+| `__DATA_DIRTY.__bss` | `0x5a080` | `0x57d30` | **`-0x2350`** |
+| `__DATA.__data` | `0x24500` | `0x246e0` | **`+0x1e0`** |
+| `__TEXT.__cstring` | `0xb4934` | `0xb4ab8` | **`+0x184`** |
+| `__AUTH_CONST.__const` | `0x9dc80` | `0x9dd80` | **`+0x100`** |
+| `__TEXT.__oslogstring` | `0x52982` | `0x52893` | **`-0xef`** |
+| `__TEXT.__unwind_info` | `0x55278` | `0x551b0` | **`-0xc8`** |
+| `__AUTH_CONST.__cfstring` | `0xb700` | `0xb780` | **`+0x80`** |
+| `__AUTH_CONST.__objc_const` | `0x7d50` | `0x7dc8` | **`+0x78`** |
+| `__DATA.__common` | `0x5fa0` | `0x5f30` | **`-0x70`** |
+| `__DATA_CONST.__got` | `0x1070` | `0x10d0` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0xe098` | `0xe0ec` | **`+0x54`** |
+| `__DATA_CONST.__const` | `0xd400` | `0xd428` | **`+0x28`** |
+| `__TEXT.__objc_methlist` | `0x4270` | `0x4290` | **`+0x20`** |
+| `__AUTH.__thread_vars` | `0xc0` | `0xd8` | **`+0x18`** |
+| `__AUTH_CONST.__objc_intobj` | `0x108` | `0x120` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x47b8` | `0x47c8` | **`+0x10`** |
+| `__AUTH.__thread_bss` | `0x310` | `0x318` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x448` | `0x450` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -453.0.5.502.1
--  __TEXT.__text: 0x166aec4
--  __TEXT.__objc_methlist: 0x4270
 +453.2.1.0.0
-+  __TEXT.__text: 0x1681968
-+  __TEXT.__objc_methlist: 0x4290
-   __TEXT.__const: 0x1075e4
-   __TEXT.__constg_swiftt: 0x44
-   __TEXT.__swift5_typeref: 0x2f
-   __TEXT.__swift5_fieldmd: 0x44
-   __TEXT.__swift5_reflstr: 0x1f
-   __TEXT.__swift5_types: 0x8
--  __TEXT.__cstring: 0xb4934
--  __TEXT.__gcc_except_tab: 0xe098
--  __TEXT.__oslogstring: 0x52982
-+  __TEXT.__cstring: 0xb4ab8
-+  __TEXT.__gcc_except_tab: 0xe0ec
-+  __TEXT.__oslogstring: 0x52893
-   __TEXT.__ustring: 0x1a
--  __TEXT.__unwind_info: 0x55278
-+  __TEXT.__unwind_info: 0x551b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xd400
-+  __DATA_CONST.__const: 0xd428
-   __DATA_CONST.__objc_classlist: 0x228
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0xc8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x47b8
-+  __DATA_CONST.__objc_selrefs: 0x47c8
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_superrefs: 0x1c0
-   __DATA_CONST.__objc_arraydata: 0x10
--  __DATA_CONST.__got: 0x1070
--  __AUTH_CONST.__const: 0x9dc80
--  __AUTH_CONST.__cfstring: 0xb700
--  __AUTH_CONST.__objc_const: 0x7d50
-+  __DATA_CONST.__got: 0x10d0
-+  __AUTH_CONST.__const: 0x9dd80
-+  __AUTH_CONST.__cfstring: 0xb780
-+  __AUTH_CONST.__objc_const: 0x7dc8
-   __AUTH_CONST.__weak_auth_got: 0x48
--  __AUTH_CONST.__objc_intobj: 0x108
-+  __AUTH_CONST.__objc_intobj: 0x120
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__auth_got: 0x3c20
-   __AUTH.__objc_data: 0x50
-   __AUTH.__data: 0x1698
--  __AUTH.__thread_vars: 0xc0
--  __AUTH.__thread_bss: 0x310
--  __DATA.__objc_ivar: 0x448
--  __DATA.__data: 0x24500
--  __DATA.__bss: 0x6f98
--  __DATA.__common: 0x5fa0
-+  __AUTH.__thread_vars: 0xd8
-+  __AUTH.__thread_bss: 0x318
-+  __DATA.__objc_ivar: 0x450
-+  __DATA.__data: 0x246e0
-+  __DATA.__bss: 0x9768
-+  __DATA.__common: 0x5f30
-   __DATA_DIRTY.__objc_ivar: 0x130
-   __DATA_DIRTY.__objc_data: 0x1540
-   __DATA_DIRTY.__data: 0x4548
--  __DATA_DIRTY.__bss: 0x5a080
-+  __DATA_DIRTY.__bss: 0x57d30
-   __DATA_DIRTY.__common: 0x3ad0
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/swift/libswiftObservation.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 86363
--  Symbols:   123690
+-  Symbols:   121559
 -  CStrings:  23214
 +  Functions: 86318
-+  Symbols:   123738
++  Symbols:   121606
 +  CStrings:  23224
- 
 Symbols:
 + -[REResourceFetchClientObject setShaderGraphsCache:]
 + -[REResourceFetchClientObject shaderGraphsCache]
@@ -364,8 +314,6 @@ Symbols:
 + _kCVImageBufferTransferFunction_ITU_R_709_2
 + _kCVImageBufferYCbCrMatrixKey
 + _kCVImageBufferYCbCrMatrix_ITU_R_709_2
-+ _objc_msgSend$shaderGraphsCache
-+ _objc_msgSend$updateWithTime:
 - __ZGVZN2re10animSchema8internal17GetTypeIDInternalINS_13AnimChannelIDEEENS_6TypeIDEvE7sTypeID
 - __ZGVZN2re10animSchema8internal17GetTypeIDInternalINS_13BlendSample1DEEENS_6TypeIDEvE7sTypeID
 - __ZGVZN2re10animSchema8internal17GetTypeIDInternalINS_16AnimResourceTypeEEENS_6TypeIDEvE7sTypeID
@@ -592,7 +540,6 @@ Symbols:
 - ___block_descriptor_88_a8_32bs80c42_ZTSN2NS9SharedPtrIN3MTL13BinaryArchiveEEE_e5_v8?0l
 - ___copy_helper_block_a8_80c42_ZTSN2NS9SharedPtrIN3MTL13BinaryArchiveEEE
 - ___destroy_helper_block_a8_80c42_ZTSN2NS9SharedPtrIN3MTL13BinaryArchiveEEE
-- _objc_msgSend$dictionaryWithObjectsAndKeys:
 CStrings:
 + "%@CacheFlatMesh: %@\n"
 + "%@ResolvedCurveTheta: %f\n"

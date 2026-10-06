@@ -2,6 +2,6 @@
 
 > `/System/Library/PrivateFrameworks/SMBClientProvider.framework/smbclientTool`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__gcc_except_tab`

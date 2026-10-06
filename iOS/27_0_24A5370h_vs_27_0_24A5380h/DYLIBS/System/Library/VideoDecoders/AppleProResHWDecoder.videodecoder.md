@@ -2,20 +2,15 @@
 
 > `/System/Library/VideoDecoders/AppleProResHWDecoder.videodecoder`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x2214c
-+  __TEXT.__text: 0x220a8
-   __TEXT.__gcc_except_tab: 0x468
-   __TEXT.__const: 0x74460
-   __TEXT.__cstring: 0x1258
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2214c` | `0x220a8` | **`-0xa4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__15dequeIPvNS_9allocatorIS1_EEE19__add_back_capacityEv : 484 -> 472
 ~ __Z18convert32BGRAtoRGBPhjjj : 92 -> 84
@@ -31,5 +26,4 @@ Functions:
 ~ __ZNSt3__119__partial_sort_implB9fqe220106INS_17_ClassicAlgPolicyERNS_6__lessIvvEENS_16reverse_iteratorINS_11__wrap_iterIPNS_4pairIttEEEEEESB_EET1_SC_SC_T2_OT0_ : 428 -> 420
 ~ __ZL29ProResDecoder_GetLargestDCQSSP17ProResFrameHeaderPKhPhj : 372 -> 352
 ~ __ZN19ProResFrameReceiver21PerformAlphaUpscalingEP10__CVBufferPK8S_ImgFmt : 884 -> 880
-
 ```

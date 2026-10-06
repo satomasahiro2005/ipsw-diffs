@@ -2,39 +2,31 @@
 
 > `com.apple.driver.AppleDisplayCrossbar`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x414ac` | `0x44890` | **`+0x33e4`** |
+| `__DATA_CONST.__const` | `0x11838` | `0x124a0` | **`+0xc68`** |
+| `__TEXT.__os_log` | `0x69e8` | `0x6c8a` | **`+0x2a2`** |
+| `__TEXT.__cstring` | `0x515c` | `0x532f` | **`+0x1d3`** |
+| `__DATA_CONST.__kalloc_type` | `0x800` | `0x840` | **`+0x40`** |
+| `__DATA.__common` | `0x510` | `0x538` | **`+0x28`** |
+| `__TEXT.__const` | `0x2b0` | `0x2d0` | **`+0x20`** |
+| `__DATA_CONST.__mod_init_func` | `0xf8` | `0x100` | **`+0x8`** |
+| `__DATA_CONST.__mod_term_func` | `0xf8` | `0x100` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -417.0.4.0.0
--  __TEXT.__const: 0x2b0
--  __TEXT.__cstring: 0x515c
--  __TEXT.__os_log: 0x69e8
--  __TEXT_EXEC.__text: 0x3d6d0
-+417.40.5.0.2
-+  __TEXT.__const: 0x2d0
-+  __TEXT.__cstring: 0x532f
-+  __TEXT.__os_log: 0x6c8a
-+  __TEXT_EXEC.__text: 0x40524
-   __TEXT_EXEC.__auth_stubs: 0x640
-   __DATA.__data: 0xc4
--  __DATA.__common: 0x510
--  __DATA_CONST.__mod_init_func: 0xf8
--  __DATA_CONST.__mod_term_func: 0xf8
--  __DATA_CONST.__const: 0x11838
--  __DATA_CONST.__kalloc_type: 0x800
-+  __DATA.__common: 0x538
-+  __DATA_CONST.__mod_init_func: 0x100
-+  __DATA_CONST.__mod_term_func: 0x100
-+  __DATA_CONST.__const: 0x124a0
-+  __DATA_CONST.__kalloc_type: 0x840
-   __DATA_CONST.__kalloc_var: 0xa0
-   __DATA_CONST.__auth_got: 0x320
-   __DATA_CONST.__got: 0xf8
 -  Functions: 2263
++417.40.5.0.2
 +  Functions: 2369
-   Symbols:   0
+
 -  CStrings:  855
 +  CStrings:  882
- 
 CStrings:
 + "1211111212221212111112222211111111111122222222222222222222222222222222222222222222222222222222222222222211111112121221"
 + "AppleT8132DPTXPort"

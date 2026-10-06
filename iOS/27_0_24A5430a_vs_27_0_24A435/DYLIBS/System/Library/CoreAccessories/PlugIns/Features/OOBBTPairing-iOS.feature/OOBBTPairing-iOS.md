@@ -2,6 +2,8 @@
 
 > `/System/Library/CoreAccessories/PlugIns/Features/OOBBTPairing-iOS.feature/OOBBTPairing-iOS`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_3 : 12 -> 28

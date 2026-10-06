@@ -2,80 +2,50 @@
 
 > `/usr/sbin/WirelessRadioManagerd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x59bf8` | `0x59fd1` | **`+0x3d9`** |
+| `__TEXT.__text` | `0x1709e4` | `0x170d3c` | **`+0x358`** |
+| `__DATA_CONST.__cfstring` | `0x32d60` | `0x32e80` | **`+0x120`** |
+| `__DATA_CONST.__got` | `0x7b8` | `0x8b0` | **`+0xf8`** |
+| `__TEXT.__objc_stubs` | `0x21600` | `0x216e0` | **`+0xe0`** |
+| `__TEXT.__objc_methname` | `0x34567` | `0x34630` | **`+0xc9`** |
+| `__TEXT.__objc_methlist` | `0x11b44` | `0x11bdc` | **`+0x98`** |
+| `__TEXT.__unwind_info` | `0x5088` | `0x50e8` | **`+0x60`** |
+| `__DATA.__objc_selrefs` | `0x9ff0` | `0xa028` | **`+0x38`** |
+| `__DATA_CONST.__objc_arraydata` | `0x10110` | `0x10130` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x6344` | `0x6364` | **`+0x20`** |
+| `__DATA_CONST.__objc_arrayobj` | `0x6768` | `0x6780` | **`+0x18`** |
+| `__TEXT.__objc_methtype` | `0x8b0c` | `0x8afe` | **`-0xe`** |
+| `__DATA.__bss` | `0x7d8` | `0x7e0` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__init_offsets`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1709e4
-+  __TEXT.__text: 0x170d3c
-   __TEXT.__auth_stubs: 0x26e0
--  __TEXT.__objc_stubs: 0x21600
-+  __TEXT.__objc_stubs: 0x216e0
-   __TEXT.__init_offsets: 0xc
--  __TEXT.__objc_methlist: 0x11b44
-+  __TEXT.__objc_methlist: 0x11bdc
-   __TEXT.__const: 0x11e08
--  __TEXT.__gcc_except_tab: 0x6344
--  __TEXT.__cstring: 0x59bf8
--  __TEXT.__objc_methname: 0x34567
-+  __TEXT.__gcc_except_tab: 0x6364
-+  __TEXT.__cstring: 0x59fd1
-+  __TEXT.__objc_methname: 0x34630
-   __TEXT.__objc_classname: 0x11e2
--  __TEXT.__objc_methtype: 0x8b0c
-+  __TEXT.__objc_methtype: 0x8afe
-   __TEXT.__dlopen_cstrs: 0x43e
-   __TEXT.__oslogstring: 0x109
--  __TEXT.__unwind_info: 0x5088
-+  __TEXT.__unwind_info: 0x50e8
-   __DATA_CONST.__const: 0x5858
--  __DATA_CONST.__cfstring: 0x32d60
-+  __DATA_CONST.__cfstring: 0x32e80
-   __DATA_CONST.__objc_classlist: 0x538
-   __DATA_CONST.__objc_protolist: 0x98
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_superrefs: 0x550
-   __DATA_CONST.__objc_intobj: 0x47b8
--  __DATA_CONST.__objc_arraydata: 0x10110
-+  __DATA_CONST.__objc_arraydata: 0x10130
-   __DATA_CONST.__objc_dictobj: 0x848
--  __DATA_CONST.__objc_arrayobj: 0x6768
-+  __DATA_CONST.__objc_arrayobj: 0x6780
-   __DATA_CONST.__objc_doubleobj: 0x10
-   __DATA_CONST.__auth_got: 0x1388
--  __DATA_CONST.__got: 0x7b8
-+  __DATA_CONST.__got: 0x8b0
-   __DATA_CONST.__auth_ptr: 0x8
-   __DATA.__objc_const: 0x1cf18
--  __DATA.__objc_selrefs: 0x9ff0
-+  __DATA.__objc_selrefs: 0xa028
-   __DATA.__objc_ivar: 0x1e7c
-   __DATA.__objc_data: 0x3430
-   __DATA.__data: 0x840
--  __DATA.__bss: 0x7d8
-+  __DATA.__bss: 0x7e0
-   __DATA.__common: 0x642
-   - /System/Library/Frameworks/CallKit.framework/CallKit
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
+-1933.0.0.0.0
++1935.2.0.0.0
 
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 7793
 +  Functions: 7805
-   Symbols:   873
--  CStrings:  23499
-+  CStrings:  23523
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
+
+-  CStrings:  16846
++  CStrings:  16861
 CStrings:
 + "AFH needs update to %@ (force=%d changed=%d)"
 + "BTCS_ %s B40B (UL>2370): blocking BT channels 0-19"
@@ -146,5 +116,4 @@ CStrings:
 - "updateCellTriggerDisconnectMetric: appId: %@, throughputBefore (tx, rx): (%u, %u) Kbps, rttMinBefore: %u, rttAvgBefore: %u, cellScoreBefore: %s, wrmWifiScoreBefore: %s, wifiScoreBefore: %@, dataLQM: %u (%s)"
 - "v28@0:8@16C24"
 - "v28@0:8I16I20B24"
-
 ```

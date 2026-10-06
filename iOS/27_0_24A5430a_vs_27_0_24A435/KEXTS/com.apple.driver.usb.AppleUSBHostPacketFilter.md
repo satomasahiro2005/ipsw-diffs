@@ -2,36 +2,35 @@
 
 > `com.apple.driver.usb.AppleUSBHostPacketFilter`
 
-```diff
+### Section Size Changes
 
-   __TEXT.__const: 0x18
-   __TEXT.__cstring: 0xa5a
-   __TEXT.__os_log: 0xaf
--  __TEXT_EXEC.__text: 0x1c80
-+  __TEXT_EXEC.__text: 0x1cd4
-   __TEXT_EXEC.__auth_stubs: 0x280
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x48
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x1c80` | `0x1cd4` | **`+0x54`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_fffffe000a67d150 -> sub_fffffe000a75fdc0 : 72 -> 76
-~ sub_fffffe000a67d1a0 -> sub_fffffe000a75fe14 : 52 -> 56
-~ sub_fffffe000a67d1d4 -> sub_fffffe000a75fe4c : 52 -> 56
-~ sub_fffffe000a67d218 -> sub_fffffe000a75fe94 : 68 -> 72
-~ sub_fffffe000a67d284 -> sub_fffffe000a75ff04 : 72 -> 76
-~ sub_fffffe000a67d2cc -> sub_fffffe000a75ff50 : 104 -> 108
-~ sub_fffffe000a67d348 -> sub_fffffe000a75ffd0 : 88 -> 92
-~ sub_fffffe000a67d3a0 -> sub_fffffe000a76002c : 88 -> 92
+~ sub_fffffff00a6836d0 -> sub_fffffff00a762780 : 72 -> 76
+~ sub_fffffff00a683720 -> sub_fffffff00a7627d4 : 52 -> 56
+~ sub_fffffff00a683754 -> sub_fffffff00a76280c : 52 -> 56
+~ sub_fffffff00a683798 -> sub_fffffff00a762854 : 68 -> 72
+~ sub_fffffff00a683804 -> sub_fffffff00a7628c4 : 72 -> 76
+~ sub_fffffff00a68384c -> sub_fffffff00a762910 : 104 -> 108
+~ sub_fffffff00a6838c8 -> sub_fffffff00a762990 : 88 -> 92
+~ sub_fffffff00a683920 -> sub_fffffff00a7629ec : 88 -> 92
 ~ __ZN24AppleUSBHostPacketFilter5startEP9IOService : 144 -> 148
 ~ _kextLoad : 284 -> 288
-~ sub_fffffe000a67d5a4 -> sub_fffffe000a76023c : 88 -> 92
-~ sub_fffffe000a67d5fc -> sub_fffffe000a760298 : 288 -> 292
+~ sub_fffffff00a683b24 -> sub_fffffff00a762bfc : 88 -> 92
+~ sub_fffffff00a683b7c -> sub_fffffff00a762c58 : 288 -> 292
 ~ __ZL19controllerPublishedPvS_P9IOServiceP10IONotifier : 900 -> 904
-~ sub_fffffe000a67daa0 -> sub_fffffe000a760744 : 164 -> 168
-~ sub_fffffe000a67dcb0 -> sub_fffffe000a760958 : 220 -> 224
-~ sub_fffffe000a67dd8c -> sub_fffffe000a760a38 : 248 -> 252
+~ sub_fffffff00a684020 -> sub_fffffff00a763104 : 164 -> 168
+~ sub_fffffff00a684230 -> sub_fffffff00a763318 : 220 -> 224
+~ sub_fffffff00a68430c -> sub_fffffff00a7633f8 : 248 -> 252
 ~ __ZL29packetFilterInterfaceAddProtoP7__ifnetjPK16ifnet_demux_descj : 492 -> 496
-~ sub_fffffe000a67e070 -> sub_fffffe000a760d24 : 256 -> 260
-~ sub_fffffe000a67e170 -> sub_fffffe000a760e28 : 520 -> 524
-~ sub_fffffe000a67e398 -> sub_fffffe000a761054 : 2388 -> 2392
-~ sub_fffffe000a67ecec -> sub_fffffe000a7619ac : 80 -> 84
+~ sub_fffffff00a6845f0 -> sub_fffffff00a7636e4 : 256 -> 260
+~ sub_fffffff00a6846f0 -> sub_fffffff00a7637e8 : 520 -> 524
+~ sub_fffffff00a684918 -> sub_fffffff00a763a14 : 2388 -> 2392
+~ sub_fffffff00a68526c -> sub_fffffff00a76436c : 80 -> 84
 ```

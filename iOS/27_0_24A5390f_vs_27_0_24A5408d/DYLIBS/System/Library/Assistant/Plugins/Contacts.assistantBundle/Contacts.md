@@ -2,6 +2,8 @@
 
 > `/System/Library/Assistant/Plugins/Contacts.assistantBundle/Contacts`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_242ca7054 -> sub_24262d054 : 144 -> 196

@@ -2,19 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/AppleCareSupport.framework/AppleCareSupport`
 
-```diff
+### Section Size Changes
 
- 11.0.0.0.0
--  __TEXT.__text: 0x1bf5c
-+  __TEXT.__text: 0x1bf78
-   __TEXT.__objc_methlist: 0x1ec
-   __TEXT.__const: 0x16a8
-   __TEXT.__cstring: 0x574
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1bf5c` | `0x1bf78` | **`+0x1c`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2537af4c4 -> sub_2542104c4 : 596 -> 604
-~ sub_2537b20e4 -> sub_2542130ec : 212 -> 216
-~ sub_2537b2360 -> sub_25421336c : 160 -> 164
-~ sub_2537b2934 -> sub_254213944 : 340 -> 344
-~ sub_2537b61e8 -> sub_2542171fc : 936 -> 940
-~ sub_2537b89a0 -> sub_2542199b8 : 680 -> 684
+~ sub_2536794c4 -> sub_2540d94c4 : 596 -> 604
+~ sub_25367c0e4 -> sub_2540dc0ec : 212 -> 216
+~ sub_25367c360 -> sub_2540dc36c : 160 -> 164
+~ sub_25367c934 -> sub_2540dc944 : 340 -> 344
+~ sub_2536801e8 -> sub_2540e01fc : 936 -> 940
+~ sub_2536829a0 -> sub_2540e29b8 : 680 -> 684
 ```

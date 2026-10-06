@@ -2,6 +2,8 @@
 
 > `/System/Library/Health/FeedItemPlugins/HealthRecords.healthplugin/HealthRecords`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_22e8d9990 -> sub_22f17e990 : 820 -> 812

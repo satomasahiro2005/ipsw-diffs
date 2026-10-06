@@ -2,40 +2,26 @@
 
 > `/usr/lib/system/libsystem_containermanager.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__oslogstring` | `0x59a7` | `0x59cf` | **`+0x28`** |
+| `__TEXT.__const` | `0x424` | `0x434` | **`+0x10`** |
+| `__AUTH.__data` | `0x470` | `0x478` | **`+0x8`** |
+| `__DATA.__bss` | `0x4d8` | `0x4e0` | **`+0x8`** |
+| `__TEXT.__cstring` | `0x3c45` | `0x3c49` | **`+0x4`** |
+| `__TEXT.__text` | `0x300a8` | `0x300a4` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -833.0.3.0.0
--  __TEXT.__text: 0x300a8
--  __TEXT.__const: 0x424
--  __TEXT.__cstring: 0x3c45
--  __TEXT.__oslogstring: 0x59a7
 +833.0.8.0.1
-+  __TEXT.__text: 0x300a4
-+  __TEXT.__const: 0x434
-+  __TEXT.__cstring: 0x3c49
-+  __TEXT.__oslogstring: 0x59cf
-   __TEXT.__unwind_info: 0x708
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x1d08
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x220
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__data: 0x470
-+  __AUTH.__data: 0x478
-   __DATA.__data: 0x60
--  __DATA.__bss: 0x4d8
-+  __DATA.__bss: 0x4e0
-   __DATA_DIRTY.__data: 0x8
-   __DATA_DIRTY.__bss: 0x1a0
-   - /usr/lib/system/libcopyfile.dylib
 
-   - /usr/lib/system/libsystem_trace.dylib
-   - /usr/lib/system/libxpc.dylib
-   Functions: 626
 -  Symbols:   1008
 +  Symbols:   1009
-   CStrings:  905
- 
 Symbols:
 + _setxattr
 Functions:

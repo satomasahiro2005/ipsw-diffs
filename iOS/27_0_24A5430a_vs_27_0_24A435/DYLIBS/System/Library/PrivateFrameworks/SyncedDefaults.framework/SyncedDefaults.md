@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/SyncedDefaults.framework/SyncedDefaults`
 
+### Other Changes
+
 ```text
 Functions:
 ~ ___68-[SYDClientToDaemonConnection synchronizationWithCompletionHandler:]_block_invoke.cold.1 : 140 -> 132

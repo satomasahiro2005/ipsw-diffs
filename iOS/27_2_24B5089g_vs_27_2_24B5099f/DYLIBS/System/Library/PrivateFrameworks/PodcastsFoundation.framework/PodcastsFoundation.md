@@ -2,95 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/PodcastsFoundation.framework/PodcastsFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4e038c` | `0x4e2b04` | **`+0x2778`** |
+| `__TEXT.__oslogstring` | `0x11aa0` | `0x11c40` | **`+0x1a0`** |
+| `__DATA_DIRTY.__data` | `0x11140` | `0x11090` | **`-0xb0`** |
+| `__TEXT.__swift5_reflstr` | `0xc90b` | `0xc9ab` | **`+0xa0`** |
+| `__AUTH.__data` | `0x3110` | `0x31a0` | **`+0x90`** |
+| `__TEXT.__swift5_typeref` | `0x1901e` | `0x190ae` | **`+0x90`** |
+| `__AUTH_CONST.__objc_const` | `0x1be08` | `0x1be88` | **`+0x80`** |
+| `__TEXT.__const` | `0x3cca0` | `0x3cd20` | **`+0x80`** |
+| `__TEXT.__swift5_fieldmd` | `0xfb28` | `0xfb94` | **`+0x6c`** |
+| `__AUTH_CONST.__const` | `0x2f480` | `0x2f4d0` | **`+0x50`** |
+| `__TEXT.__constg_swiftt` | `0x1004c` | `0x1009c` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x12460` | `0x124b0` | **`+0x50`** |
+| `__DATA.__data` | `0x6bf8` | `0x6c28` | **`+0x30`** |
+| `__TEXT.__swift5_capture` | `0x6934` | `0x6964` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x109dd` | `0x109fd` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x2bc8` | `0x2be0` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x16e8` | `0x16d8` | **`-0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x69b0` | `0x69c0` | **`+0x10`** |
+| `__TEXT.__eh_frame` | `0x14f04` | `0x14f14` | **`+0x10`** |
+| `__DATA.__common` | `0x70` | `0x68` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -4027.200.26.0.0
--  __TEXT.__text: 0x4b749c
 +4027.200.32.0.0
-+  __TEXT.__text: 0x4b9be0
-   __TEXT.__objc_methlist: 0xb4dc
--  __TEXT.__const: 0x3cca0
--  __TEXT.__cstring: 0x109dd
--  __TEXT.__oslogstring: 0x11aa0
-+  __TEXT.__const: 0x3cd20
-+  __TEXT.__cstring: 0x109fd
-+  __TEXT.__oslogstring: 0x11c40
-   __TEXT.__gcc_except_tab: 0xbf4
-   __TEXT.__ustring: 0x38
-   __TEXT.__dlopen_cstrs: 0xca
--  __TEXT.__swift5_typeref: 0x1901e
--  __TEXT.__swift5_fieldmd: 0xfb28
--  __TEXT.__constg_swiftt: 0x1004c
-+  __TEXT.__swift5_typeref: 0x190ae
-+  __TEXT.__swift5_fieldmd: 0xfb94
-+  __TEXT.__constg_swiftt: 0x1009c
-   __TEXT.__swift5_builtin: 0x5c8
--  __TEXT.__swift5_reflstr: 0xc90b
-+  __TEXT.__swift5_reflstr: 0xc9ab
-   __TEXT.__swift5_assocty: 0x1f30
-   __TEXT.__swift5_protos: 0x1b4
-   __TEXT.__swift5_proto: 0x2a34
-   __TEXT.__swift5_types: 0x1160
--  __TEXT.__swift5_capture: 0x6934
-+  __TEXT.__swift5_capture: 0x6964
-   __TEXT.__swift_as_entry: 0x328
-   __TEXT.__swift_as_ret: 0x338
-   __TEXT.__swift_as_cont: 0x740
-   __TEXT.__swift5_mpenum: 0x1f4
--  __TEXT.__unwind_info: 0x16db8
--  __TEXT.__eh_frame: 0x14f4c
-+  __TEXT.__unwind_info: 0x16e18
-+  __TEXT.__eh_frame: 0x14f54
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0xc8
-   __DATA_CONST.__objc_protolist: 0x398
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x69b0
-+  __DATA_CONST.__objc_selrefs: 0x69c0
-   __DATA_CONST.__objc_protorefs: 0x1f0
-   __DATA_CONST.__objc_superrefs: 0x1b8
-   __DATA_CONST.__objc_arraydata: 0x70
--  __DATA_CONST.__got: 0x16e8
--  __AUTH_CONST.__const: 0x2f480
-+  __DATA_CONST.__got: 0x16d8
-+  __AUTH_CONST.__const: 0x2f4d0
-   __AUTH_CONST.__cfstring: 0xa0e0
--  __AUTH_CONST.__objc_const: 0x1be08
-+  __AUTH_CONST.__objc_const: 0x1be88
-   __AUTH_CONST.__objc_intobj: 0xba0
-   __AUTH_CONST.__objc_arrayobj: 0xa8
-   __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__objc_doubleobj: 0x40
--  __AUTH_CONST.__auth_got: 0x2bc8
-+  __AUTH_CONST.__auth_got: 0x2be0
-   __AUTH.__objc_data: 0x3920
--  __AUTH.__data: 0x3110
-+  __AUTH.__data: 0x31a0
-   __DATA.__objc_ivar: 0x488
--  __DATA.__data: 0x6bf8
--  __DATA.__common: 0x70
-+  __DATA.__data: 0x6c28
-+  __DATA.__common: 0x68
-   __DATA_DIRTY.__objc_data: 0x5428
--  __DATA_DIRTY.__data: 0x11140
-+  __DATA_DIRTY.__data: 0x11090
-   __DATA_DIRTY.__bss: 0x1b958
-   __DATA_DIRTY.__common: 0x130
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 27868
 -  Symbols:   12526
 -  CStrings:  3722
 +  Functions: 27897
 +  Symbols:   12534
 +  CStrings:  3726
- 
 Symbols:
 + _CFRunLoopSourceInvalidate
 + _generic environment 5StateQy_Rsz18PodcastsFoundation07EpisodeA4RuleR_r0_l

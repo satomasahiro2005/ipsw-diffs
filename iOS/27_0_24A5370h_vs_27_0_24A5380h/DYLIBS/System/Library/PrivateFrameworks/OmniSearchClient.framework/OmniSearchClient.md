@@ -2,94 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/OmniSearchClient.framework/OmniSearchClient`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x44444` | `0x48d40` | **`+0x48fc`** |
+| `__TEXT.__eh_frame` | `0x2320` | `0x2528` | **`+0x208`** |
+| `__DATA_DIRTY.__data` | `0xa88` | `0xbf0` | **`+0x168`** |
+| `__AUTH_CONST.__const` | `0x18a8` | `0x19a0` | **`+0xf8`** |
+| `__DATA.__data` | `0x550` | `0x480` | **`-0xd0`** |
+| `__AUTH_CONST.__auth_got` | `0x1268` | `0x1310` | **`+0xa8`** |
+| `__TEXT.__swift5_typeref` | `0xb2f` | `0xbc5` | **`+0x96`** |
+| `__TEXT.__const` | `0x18d8` | `0x1968` | **`+0x90`** |
+| `__TEXT.__unwind_info` | `0xf20` | `0xfb0` | **`+0x90`** |
+| `__TEXT.__cstring` | `0x5e1` | `0x621` | **`+0x40`** |
+| `__TEXT.__swift5_capture` | `0x69c` | `0x6d8` | **`+0x3c`** |
+| `__TEXT.__swift_as_cont` | `0x1f8` | `0x20c` | **`+0x14`** |
+| `__TEXT.__swift_as_ret` | `0x114` | `0x120` | **`+0xc`** |
+| `__TEXT.__swift_as_entry` | `0xc4` | `0xcc` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x44444
-+  __TEXT.__text: 0x48d40
-   __TEXT.__objc_methlist: 0x38
--  __TEXT.__const: 0x18d8
--  __TEXT.__swift5_typeref: 0xb2f
--  __TEXT.__swift5_capture: 0x69c
-+  __TEXT.__const: 0x1968
-+  __TEXT.__swift5_typeref: 0xbc5
-+  __TEXT.__swift5_capture: 0x6d8
-   __TEXT.__oslogstring: 0x10b7
--  __TEXT.__cstring: 0x5e1
-+  __TEXT.__cstring: 0x621
-   __TEXT.__constg_swiftt: 0x5ec
-   __TEXT.__swift5_reflstr: 0x4d3
-   __TEXT.__swift5_fieldmd: 0x668
-   __TEXT.__swift5_types: 0x58
--  __TEXT.__swift_as_entry: 0xc4
--  __TEXT.__swift_as_ret: 0x114
--  __TEXT.__swift_as_cont: 0x1f8
-+  __TEXT.__swift_as_entry: 0xcc
-+  __TEXT.__swift_as_ret: 0x120
-+  __TEXT.__swift_as_cont: 0x20c
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift5_proto: 0xc8
-   __TEXT.__swift5_assocty: 0xa8
--  __TEXT.__unwind_info: 0xf20
--  __TEXT.__eh_frame: 0x2320
-+  __TEXT.__unwind_info: 0xfb0
-+  __TEXT.__eh_frame: 0x2528
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-3600.56.11.0.0
++3600.56.20.0.0
 
-   __DATA_CONST.__objc_selrefs: 0xb0
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x18a8
-+  __AUTH_CONST.__const: 0x19a0
-   __AUTH_CONST.__objc_const: 0x358
--  __AUTH_CONST.__auth_got: 0x1268
-+  __AUTH_CONST.__auth_got: 0x1310
-   __AUTH.__data: 0x220
--  __DATA.__data: 0x550
-+  __DATA.__data: 0x480
-   __DATA.__bss: 0x1700
-   __DATA.__common: 0x1
--  __DATA_DIRTY.__data: 0xa88
-+  __DATA_DIRTY.__data: 0xbf0
-   __DATA_DIRTY.__common: 0x68
-   __DATA_DIRTY.__bss: 0x180
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 +  - /System/Library/Frameworks/GeoToolbox.framework/GeoToolbox
-   - /System/Library/Frameworks/MediaIntents.framework/MediaIntents
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-+  - /System/Library/Frameworks/_GeoToolbox_AppIntents.framework/_GeoToolbox_AppIntents
-   - /System/Library/Frameworks/_MediaIntents_AppIntents.framework/_MediaIntents_AppIntents
-   - /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
-   - /System/Library/PrivateFrameworks/FlowToolTypes.framework/FlowToolTypes
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/Frameworks/_GeoToolbox_AppIntents.framework/_GeoToolbox_AppIntents
+
 -  Functions: 1846
--  Symbols:   5962
+-  Symbols:   3752
 -  CStrings:  107
 +  Functions: 1927
-+  Symbols:   6202
++  Symbols:   3902
 +  CStrings:  109
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__data : content changed
 Symbols:
 + _$s10GeoToolbox15PlaceDescriptorV01_aB11_AppIntentsE15convertToEntityAD0cdI0VyF
 + _$s10GeoToolbox15PlaceDescriptorVMa
@@ -300,5 +248,4 @@ Symbols:
 CStrings:
 + "MapsLocationRequirement"
 + "com.apple.omnisearch.maps"
-
 ```

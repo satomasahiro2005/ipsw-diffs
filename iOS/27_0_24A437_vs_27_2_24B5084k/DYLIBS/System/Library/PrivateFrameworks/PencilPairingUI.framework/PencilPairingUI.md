@@ -2,112 +2,61 @@
 
 > `/System/Library/PrivateFrameworks/PencilPairingUI.framework/PencilPairingUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x48fb8` | `0x52e8c` | **`+0x9ed4`** |
+| `__AUTH_CONST.__objc_const` | `0xc2f8` | `0xd148` | **`+0xe50`** |
+| `__AUTH.__objc_data` | `0x34c8` | `0x3d68` | **`+0x8a0`** |
+| `__AUTH_CONST.__const` | `0x1088` | `0x1718` | **`+0x690`** |
+| `__TEXT.__const` | `0x11b4` | `0x1744` | **`+0x590`** |
+| `__TEXT.__oslogstring` | `0xe4a` | `0x137a` | **`+0x530`** |
+| `__DATA.__bss` | `0xdc0` | `0x11c0` | **`+0x400`** |
+| `__TEXT.__constg_swiftt` | `0x10f0` | `0x1410` | **`+0x320`** |
+| `__TEXT.__swift5_fieldmd` | `0x684` | `0x910` | **`+0x28c`** |
+| `__DATA.__data` | `0xfd8` | `0x1238` | **`+0x260`** |
+| `__TEXT.__cstring` | `0x1ed5` | `0x2105` | **`+0x230`** |
+| `__TEXT.__unwind_info` | `0x1498` | `0x16c0` | **`+0x228`** |
+| `__TEXT.__swift5_typeref` | `0x734` | `0x93e` | **`+0x20a`** |
+| `__TEXT.__swift5_reflstr` | `0x874` | `0xa64` | **`+0x1f0`** |
+| `__TEXT.__objc_methlist` | `0x3df4` | `0x3fdc` | **`+0x1e8`** |
+| `__TEXT.__eh_frame` | `0x560` | `0x728` | **`+0x1c8`** |
+| `__TEXT.__swift5_capture` | `0x23c` | `0x350` | **`+0x114`** |
+| `__DATA_CONST.__objc_selrefs` | `0x26c0` | `0x27c8` | **`+0x108`** |
+| `__AUTH.__data` | `0x360` | `0x428` | **`+0xc8`** |
+| `__AUTH_CONST.__auth_got` | `0x9e8` | `0xa68` | **`+0x80`** |
+| `__TEXT.__swift5_builtin` | `0xa0` | `0xf0` | **`+0x50`** |
+| `__DATA_CONST.__const` | `0x938` | `0x968` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x678` | `0x6a8` | **`+0x30`** |
+| `__TEXT.__swift5_types` | `0x78` | `0xa8` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0x218` | `0x240` | **`+0x28`** |
+| `__TEXT.__gcc_except_tab` | `0x1bc` | `0x1e4` | **`+0x28`** |
+| `__TEXT.__swift5_proto` | `0x78` | `0x9c` | **`+0x24`** |
+| `__TEXT.__swift5_assocty` | `0xf0` | `0x108` | **`+0x18`** |
+| `__DATA_CONST.__objc_protolist` | `0x148` | `0x158` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x24` | `0x30` | **`+0xc`** |
+| `__TEXT.__swift_as_entry` | `0x20` | `0x2c` | **`+0xc`** |
+| `__DATA.__objc_ivar` | `0x414` | `0x41c` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x68` | `0x70` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0xc` | `0x14` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -221.100.0.0.0
--  __TEXT.__text: 0x46ee4
--  __TEXT.__objc_methlist: 0x3df4
--  __TEXT.__const: 0x11b4
--  __TEXT.__cstring: 0x1ed5
--  __TEXT.__oslogstring: 0xe4a
--  __TEXT.__gcc_except_tab: 0x1bc
--  __TEXT.__swift5_typeref: 0x734
--  __TEXT.__swift5_fieldmd: 0x684
--  __TEXT.__constg_swiftt: 0x10f0
--  __TEXT.__swift5_reflstr: 0x874
--  __TEXT.__swift5_builtin: 0xa0
--  __TEXT.__swift5_assocty: 0xf0
--  __TEXT.__swift5_capture: 0x23c
--  __TEXT.__swift5_protos: 0xc
--  __TEXT.__swift5_proto: 0x78
--  __TEXT.__swift5_types: 0x78
--  __TEXT.__swift_as_entry: 0x20
--  __TEXT.__swift_as_cont: 0x24
 +226.0.0.0.0
-+  __TEXT.__text: 0x50a60
-+  __TEXT.__objc_methlist: 0x3fdc
-+  __TEXT.__const: 0x1744
-+  __TEXT.__cstring: 0x2105
-+  __TEXT.__oslogstring: 0x137a
-+  __TEXT.__gcc_except_tab: 0x1e4
-+  __TEXT.__swift5_typeref: 0x93e
-+  __TEXT.__swift5_fieldmd: 0x910
-+  __TEXT.__constg_swiftt: 0x1410
-+  __TEXT.__swift5_reflstr: 0xa64
-+  __TEXT.__swift5_builtin: 0xf0
-+  __TEXT.__swift5_assocty: 0x108
-+  __TEXT.__swift5_capture: 0x350
-+  __TEXT.__swift5_protos: 0x14
-+  __TEXT.__swift5_proto: 0x9c
-+  __TEXT.__swift5_types: 0xa8
-+  __TEXT.__swift5_mpenum: 0x8
-+  __TEXT.__swift_as_entry: 0x2c
-   __TEXT.__swift_as_ret: 0xc
--  __TEXT.__unwind_info: 0x1950
--  __TEXT.__eh_frame: 0x560
-+  __TEXT.__swift_as_cont: 0x30
-+  __TEXT.__unwind_info: 0x1be8
-+  __TEXT.__eh_frame: 0x728
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x938
--  __DATA_CONST.__objc_classlist: 0x218
-+  __DATA_CONST.__const: 0x968
-+  __DATA_CONST.__objc_classlist: 0x240
-   __DATA_CONST.__objc_catlist: 0x18
--  __DATA_CONST.__objc_protolist: 0x148
-+  __DATA_CONST.__objc_protolist: 0x158
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x26c0
--  __DATA_CONST.__objc_protorefs: 0x68
-+  __DATA_CONST.__objc_selrefs: 0x27c8
-+  __DATA_CONST.__objc_protorefs: 0x70
-   __DATA_CONST.__objc_superrefs: 0x100
-   __DATA_CONST.__objc_arraydata: 0x98
--  __DATA_CONST.__got: 0x678
--  __AUTH_CONST.__const: 0x1088
-+  __DATA_CONST.__got: 0x6a8
-+  __AUTH_CONST.__const: 0x1718
-   __AUTH_CONST.__cfstring: 0x1720
--  __AUTH_CONST.__objc_const: 0xc2f8
-+  __AUTH_CONST.__objc_const: 0xd148
-   __AUTH_CONST.__objc_intobj: 0x228
-   __AUTH_CONST.__objc_arrayobj: 0xa8
--  __AUTH_CONST.__auth_got: 0x9e8
--  __AUTH.__objc_data: 0x34c8
--  __AUTH.__data: 0x360
--  __DATA.__objc_ivar: 0x414
--  __DATA.__data: 0xfd8
-+  __AUTH_CONST.__auth_got: 0xa68
-+  __AUTH.__objc_data: 0x3d68
-+  __AUTH.__data: 0x428
-+  __DATA.__objc_ivar: 0x41c
-+  __DATA.__data: 0x1238
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/PrivateFrameworks/InputToolKitUI.framework/InputToolKitUI
-   - /System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit
-   - /System/Library/PrivateFrameworks/Preferences.framework/Preferences
 +  - /System/Library/PrivateFrameworks/ProxCardKit.framework/ProxCardKit
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1941
--  Symbols:   3670
+-  Symbols:   2687
 -  CStrings:  391
 +  Functions: 2144
-+  Symbols:   3810
++  Symbols:   2797
 +  CStrings:  423
- 
 Symbols:
 + -[PencilEducationElementViewController _alternateLayoutWriteScaleClampedForBaseScale:baseHeight:drawing:]
 + -[PencilEducationElementViewController _setUpAlternateLayoutContentViews]
@@ -179,36 +128,6 @@ Symbols:
 + _kPKAltElementTopSpace
 + _kPKAltSegControlBandHeight
 + _kPKAltTextFieldHeight
-+ _objc_msgSend$_alternateLayoutWriteScaleClampedForBaseScale:baseHeight:drawing:
-+ _objc_msgSend$_setUpAlternateLayoutContentViews
-+ _objc_msgSend$alternateLayout
-+ _objc_msgSend$caretRectForPosition:
-+ _objc_msgSend$currentOnboardingStyle
-+ _objc_msgSend$initForTextStyle:
-+ _objc_msgSend$insertSubview:atIndex:
-+ _objc_msgSend$invalidateIntrinsicContentSize
-+ _objc_msgSend$loadViewIfNeeded
-+ _objc_msgSend$mainContentGuide
-+ _objc_msgSend$presentProxCardFlowWithDelegate:initialViewController:configuration:
-+ _objc_msgSend$presentingViewController
-+ _objc_msgSend$scaledFontForFont:maximumPointSize:
-+ _objc_msgSend$setAccessibilityTraits:
-+ _objc_msgSend$setAdjustsFontForContentSizeCategory:
-+ _objc_msgSend$setAlternateLayout:
-+ _objc_msgSend$setContentOffset:animated:
-+ _objc_msgSend$setContentVerticalAlignment:
-+ _objc_msgSend$setDetailText:
-+ _objc_msgSend$setDismissalType:
-+ _objc_msgSend$setMinimumFontSize:
-+ _objc_msgSend$setPriority:
-+ _objc_msgSend$setRightBarButtonItem:
-+ _objc_msgSend$setShouldMoveHeaderViewTitleToNavigationTitleWhenScrolledOffScreen:
-+ _objc_msgSend$setSupportsDarkMode:
-+ _objc_msgSend$setTitleView:
-+ _objc_msgSend$set_shouldInlineButtontray:
-+ _objc_msgSend$sizeToFit
-+ _objc_msgSend$textRectForBounds:
-+ _objc_msgSend$titleView
 + _swift_bridgeObjectRelease_n
 + _swift_cvw_enumFn_getEnumTag
 + _swift_release_x26

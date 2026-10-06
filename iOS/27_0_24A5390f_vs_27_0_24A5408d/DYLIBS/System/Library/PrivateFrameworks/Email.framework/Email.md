@@ -2,90 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/Email.framework/Email`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd72c4` | `0xda6d0` | **`+0x340c`** |
+| `__TEXT.__gcc_except_tab` | `0x1aef4` | `0x1b088` | **`+0x194`** |
+| `__TEXT.__oslogstring` | `0x67a3` | `0x6913` | **`+0x170`** |
+| `__TEXT.__cstring` | `0xc21f` | `0xc37f` | **`+0x160`** |
+| `__AUTH_CONST.__objc_const` | `0x16e10` | `0x16f60` | **`+0x150`** |
+| `__AUTH_CONST.__cfstring` | `0xa480` | `0xa560` | **`+0xe0`** |
+| `__TEXT.__unwind_info` | `0x8160` | `0x81d0` | **`+0x70`** |
+| `__TEXT.__objc_methlist` | `0xd044` | `0xd0ac` | **`+0x68`** |
+| `__DATA_CONST.__const` | `0x45b8` | `0x4610` | **`+0x58`** |
+| `__TEXT.__dlopen_cstrs` | `0x10a` | `0x160` | **`+0x56`** |
+| `__AUTH.__objc_data` | `0x1b0` | `0x200` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0xb88` | `0xbc8` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0x1e60` | `0x1ea0` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6280` | `0x62b8` | **`+0x38`** |
+| `__TEXT.__swift5_typeref` | `0x486` | `0x4aa` | **`+0x24`** |
+| `__TEXT.__const` | `0x18bc` | `0x18dc` | **`+0x20`** |
+| `__DATA.__data` | `0x2a28` | `0x2a40` | **`+0x18`** |
+| `__DATA.__bss` | `0x23d0` | `0x23e0` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0xc44` | `0xc4c` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x588` | `0x590` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x478` | `0x480` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3897.100.8.2.5
--  __TEXT.__text: 0xd72c4
--  __TEXT.__objc_methlist: 0xd044
--  __TEXT.__gcc_except_tab: 0x1aef4
--  __TEXT.__const: 0x18bc
--  __TEXT.__cstring: 0xc21f
--  __TEXT.__oslogstring: 0x67a3
--  __TEXT.__dlopen_cstrs: 0x10a
 +3901.100.1.2.7
-+  __TEXT.__text: 0xda6d0
-+  __TEXT.__objc_methlist: 0xd0ac
-+  __TEXT.__gcc_except_tab: 0x1b088
-+  __TEXT.__const: 0x18dc
-+  __TEXT.__cstring: 0xc37f
-+  __TEXT.__oslogstring: 0x6913
-+  __TEXT.__dlopen_cstrs: 0x160
-   __TEXT.__ustring: 0x170
--  __TEXT.__swift5_typeref: 0x486
-+  __TEXT.__swift5_typeref: 0x4aa
-   __TEXT.__constg_swiftt: 0x538
-   __TEXT.__swift5_builtin: 0xa0
-   __TEXT.__swift5_reflstr: 0x40f
 
-   __TEXT.__swift5_capture: 0x48
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x8160
-+  __TEXT.__unwind_info: 0x81d0
-   __TEXT.__eh_frame: 0x328
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x45b8
--  __DATA_CONST.__objc_classlist: 0x588
-+  __DATA_CONST.__const: 0x4610
-+  __DATA_CONST.__objc_classlist: 0x590
-   __DATA_CONST.__objc_catlist: 0x78
-   __DATA_CONST.__objc_protolist: 0x340
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6280
-+  __DATA_CONST.__objc_selrefs: 0x62b8
-   __DATA_CONST.__objc_protorefs: 0x118
--  __DATA_CONST.__objc_superrefs: 0x478
-+  __DATA_CONST.__objc_superrefs: 0x480
-   __DATA_CONST.__objc_arraydata: 0x1e8
-   __DATA_CONST.__got: 0xc98
--  __AUTH_CONST.__const: 0x1e60
--  __AUTH_CONST.__cfstring: 0xa480
--  __AUTH_CONST.__objc_const: 0x16e10
-+  __AUTH_CONST.__const: 0x1ea0
-+  __AUTH_CONST.__cfstring: 0xa560
-+  __AUTH_CONST.__objc_const: 0x16f60
-   __AUTH_CONST.__objc_intobj: 0x348
-   __AUTH_CONST.__objc_arrayobj: 0x108
-   __AUTH_CONST.__objc_dictobj: 0x50
--  __AUTH_CONST.__auth_got: 0xb88
--  __AUTH.__objc_data: 0x1b0
-+  __AUTH_CONST.__auth_got: 0xbc8
-+  __AUTH.__objc_data: 0x200
-   __AUTH.__data: 0x158
--  __DATA.__objc_ivar: 0xc44
--  __DATA.__data: 0x2a28
--  __DATA.__bss: 0x23d0
-+  __DATA.__objc_ivar: 0xc4c
-+  __DATA.__data: 0x2a40
-+  __DATA.__bss: 0x23e0
-   __DATA_DIRTY.__objc_data: 0x3808
-   __DATA_DIRTY.__data: 0x250
-   __DATA_DIRTY.__bss: 0xad0
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5140
--  Symbols:   11334
+-  Symbols:   8943
 -  CStrings:  2150
 +  Functions: 5173
-+  Symbols:   11381
++  Symbols:   8986
 +  CStrings:  2166
- 
 Symbols:
 + +[EMServerConfiguration configurationURL]
 + -[CSSearchableItem(SFMailRankingSignals) em_isSemanticMatch]
@@ -129,17 +84,6 @@ Symbols:
 + ___getCloudSharingClass_block_invoke
 + _audit_stringCloudSharing
 + _getCloudSharingClass.softClass
-+ _objc_msgSend$_applyFullCloudMerge:
-+ _objc_msgSend$_scheduleFullCloudMerge
-+ _objc_msgSend$configurationURL
-+ _objc_msgSend$em_isSemanticMatch
-+ _objc_msgSend$em_isSyntacticMatch
-+ _objc_msgSend$forceRefreshIDStatusForDestinations:service:listenerID:queue:completionBlock:
-+ _objc_msgSend$initWithBool:
-+ _objc_msgSend$isChinaRegion
-+ _objc_msgSend$isManagedAppleAccountOwnerForFileOrFolderURL:
-+ _objc_msgSend$isManagedAppleAccountOwnerForShare:containerSetupInfo:
-+ _objc_msgSend$loadOlderItemsForObservationIdentifier:mailboxesToLoad:
 + _swift_arrayInitWithTakeBackToFront
 + _swift_arrayInitWithTakeFrontToBack
 + _swift_deallocClassInstance
@@ -153,13 +97,6 @@ Symbols:
 - _EMIsCurrentUserManagedAppleAccountForShare
 - ___59-[EMUbiquitouslyPersistedDictionary _performFullCloudMerge]_block_invoke
 - ___85-[EMUbiquitouslyPersistedDictionary initWithPlistPath:identifier:encrypted:delegate:]_block_invoke
-- _objc_msgSend$_configurationLocation
-- _objc_msgSend$_performFullCloudMerge
-- _objc_msgSend$aa_appleAccountWithUsername:
-- _objc_msgSend$aa_isManagedAppleID
-- _objc_msgSend$currentUserParticipant
-- _objc_msgSend$loadOlderItemsForObservationIdentifier:
-- _objc_msgSend$phoneNumber
 CStrings:
 + "AllResultsSearchProximityThreshold"
 + "Class getCloudSharingClass(void)_block_invoke"

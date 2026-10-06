@@ -2,83 +2,56 @@
 
 > `/usr/libexec/hangreporter`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x23978` | `0x25e20` | **`+0x24a8`** |
+| `__TEXT.__objc_methname` | `0x5751` | `0x5c78` | **`+0x527`** |
+| `__DATA.__objc_const` | `0x2a10` | `0x2eb8` | **`+0x4a8`** |
+| `__TEXT.__objc_stubs` | `0x30a0` | `0x3460` | **`+0x3c0`** |
+| `__TEXT.__objc_methlist` | `0x1144` | `0x136c` | **`+0x228`** |
+| `__TEXT.__cstring` | `0x4132` | `0x42bf` | **`+0x18d`** |
+| `__DATA.__objc_selrefs` | `0x1178` | `0x1298` | **`+0x120`** |
+| `__DATA_CONST.__const` | `0x1530` | `0x1640` | **`+0x110`** |
+| `__TEXT.__gcc_except_tab` | `0xbb4` | `0xc7c` | **`+0xc8`** |
+| `__DATA.__objc_data` | `0x4b0` | `0x550` | **`+0xa0`** |
+| `__DATA_CONST.__cfstring` | `0x5200` | `0x52a0` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x578` | `0x608` | **`+0x90`** |
+| `__DATA.__objc_ivar` | `0x28c` | `0x2e0` | **`+0x54`** |
+| `__TEXT.__objc_methtype` | `0x89d` | `0x8ef` | **`+0x52`** |
+| `__DATA_CONST.__got` | `0x288` | `0x2c8` | **`+0x40`** |
+| `__TEXT.__auth_stubs` | `0xef0` | `0xf20` | **`+0x30`** |
+| `__TEXT.__objc_classname` | `0x160` | `0x183` | **`+0x23`** |
+| `__DATA_CONST.__auth_got` | `0x788` | `0x7a0` | **`+0x18`** |
+| `__TEXT.__oslogstring` | `0x4d39` | `0x4d4f` | **`+0x16`** |
+| `__DATA.__bss` | `0x208` | `0x218` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x78` | `0x88` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x60` | `0x70` | **`+0x10`** |
+| `__DATA.__common` | `0x10` | `0x18` | **`+0x8`** |
+| `__DATA.__data` | `0x750` | `0x758` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__TEXT.__const`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x23978
--  __TEXT.__auth_stubs: 0xef0
--  __TEXT.__objc_stubs: 0x30a0
--  __TEXT.__objc_methlist: 0x1144
-+  __TEXT.__text: 0x25e20
-+  __TEXT.__auth_stubs: 0xf20
-+  __TEXT.__objc_stubs: 0x3460
-+  __TEXT.__objc_methlist: 0x136c
-   __TEXT.__const: 0x2b0
--  __TEXT.__cstring: 0x4132
--  __TEXT.__oslogstring: 0x4d39
--  __TEXT.__objc_classname: 0x160
--  __TEXT.__objc_methname: 0x5751
--  __TEXT.__objc_methtype: 0x89d
--  __TEXT.__gcc_except_tab: 0xbb4
--  __TEXT.__unwind_info: 0x578
--  __DATA_CONST.__const: 0x1530
--  __DATA_CONST.__cfstring: 0x5200
--  __DATA_CONST.__objc_classlist: 0x78
-+  __TEXT.__cstring: 0x42bf
-+  __TEXT.__oslogstring: 0x4d4f
-+  __TEXT.__objc_classname: 0x183
-+  __TEXT.__objc_methname: 0x5c78
-+  __TEXT.__objc_methtype: 0x8ef
-+  __TEXT.__gcc_except_tab: 0xc7c
-+  __TEXT.__unwind_info: 0x608
-+  __DATA_CONST.__const: 0x1640
-+  __DATA_CONST.__cfstring: 0x52a0
-+  __DATA_CONST.__objc_classlist: 0x88
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_superrefs: 0x60
-+  __DATA_CONST.__objc_superrefs: 0x70
-   __DATA_CONST.__objc_intobj: 0xc0
-   __DATA_CONST.__objc_doubleobj: 0x20
--  __DATA_CONST.__auth_got: 0x788
--  __DATA_CONST.__got: 0x288
-+  __DATA_CONST.__auth_got: 0x7a0
-+  __DATA_CONST.__got: 0x2c8
-   __DATA_CONST.__auth_ptr: 0x10
--  __DATA.__objc_const: 0x2a10
--  __DATA.__objc_selrefs: 0x1178
--  __DATA.__objc_ivar: 0x28c
--  __DATA.__objc_data: 0x4b0
--  __DATA.__data: 0x750
--  __DATA.__bss: 0x208
--  __DATA.__common: 0x10
-+  __DATA.__objc_const: 0x2eb8
-+  __DATA.__objc_selrefs: 0x1298
-+  __DATA.__objc_ivar: 0x2e0
-+  __DATA.__objc_data: 0x550
-+  __DATA.__data: 0x758
-+  __DATA.__bss: 0x218
-+  __DATA.__common: 0x18
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+-415.0.0.0.0
++421.0.0.0.0
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libtailspin.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 684
 -  Symbols:   331
--  CStrings:  2721
+-  CStrings:  2039
 +  Functions: 757
 +  Symbols:   334
-+  CStrings:  2819
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__auth_ptr : content changed
++  CStrings:  2132
 Symbols:
 + _dispatch_sync
 + _os_signpost_id_generate
@@ -199,5 +172,4 @@ CStrings:
 - "Sentry tailspin detected."
 - "TailspinConversionInterval"
 - "hangreporter_tailspin_conversion"
-
 ```

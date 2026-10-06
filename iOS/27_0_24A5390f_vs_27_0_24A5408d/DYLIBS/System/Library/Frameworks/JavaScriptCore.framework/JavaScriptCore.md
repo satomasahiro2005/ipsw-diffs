@@ -2,55 +2,30 @@
 
 > `/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x23a439c` | `0x23cda3c` | **`+0x296a0`** |
+| `__TEXT.__unwind_info` | `0x200d0` | `0x1fd98` | **`-0x338`** |
+| `__DATA_CONST.__const` | `0x31da8` | `0x31e50` | **`+0xa8`** |
+| `__TEXT.__cstring` | `0x126161` | `0x1260fe` | **`-0x63`** |
+| `__TEXT.__const` | `0xa2624` | `0xa2664` | **`+0x40`** |
+| `__DATA_DIRTY.__bss` | `0xf388` | `0xf398` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -625.1.24.10.1
--  __TEXT.__text: 0x23a439c
 +625.1.29.10.3
-+  __TEXT.__text: 0x23cda3c
-   __TEXT.__jsc_int: 0x691b8
-   __TEXT.__objc_methlist: 0xb9c
--  __TEXT.__const: 0xa2624
-+  __TEXT.__const: 0xa2664
-   __TEXT.__dlsym_cstr: 0x34
--  __TEXT.__cstring: 0x126161
-+  __TEXT.__cstring: 0x1260fe
-   __TEXT.__oslogstring: 0xa0f
-   __TEXT.__gcc_except_tab: 0x2964
-   __TEXT.__ustring: 0x10
--  __TEXT.__unwind_info: 0x200d0
-+  __TEXT.__unwind_info: 0x1fd98
-   __TEXT.__eh_frame: 0x50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x31da8
-+  __DATA_CONST.__const: 0x31e50
-   __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   __DATA_DIRTY.__data: 0x14220
-   __DATA_DIRTY.__wtf_config: 0x4000
-   __DATA_DIRTY.__common: 0x485160
--  __DATA_DIRTY.__bss: 0xf388
-+  __DATA_DIRTY.__bss: 0xf398
-   - /System/Library/Frameworks/BrowserEngineCore.framework/BrowserEngineCore
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 39926
--  Symbols:   48193
+-  Symbols:   47983
 -  CStrings:  25795
 +  Functions: 39720
-+  Symbols:   48009
++  Symbols:   47799
 +  CStrings:  25802
- 
 Symbols:
 + GCC_except_table72
 + GCC_except_table88

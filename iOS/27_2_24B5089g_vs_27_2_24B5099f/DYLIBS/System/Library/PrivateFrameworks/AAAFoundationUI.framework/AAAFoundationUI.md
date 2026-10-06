@@ -2,69 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/AAAFoundationUI.framework/AAAFoundationUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1fbe8` | `0x201d4` | **`+0x5ec`** |
+| `__AUTH_CONST.__objc_const` | `0x950` | `0xb90` | **`+0x240`** |
+| `__TEXT.__objc_methlist` | `0x1ec` | `0x294` | **`+0xa8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x170` | `0x208` | **`+0x98`** |
+| `__AUTH.__objc_data` | `0x118` | `0x168` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x920` | `0x968` | **`+0x48`** |
+| `__TEXT.__unwind_info` | `0xc70` | `0xca0` | **`+0x30`** |
+| `__DATA.__objc_ivar` | `—` | `0x2c` | **`+0x2c`** |
+| `__TEXT.__cstring` | `0x309` | `0x319` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x30` | `0x38` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `—` | `0x8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -117.125.3.0.0
--  __TEXT.__text: 0x1d830
--  __TEXT.__objc_methlist: 0x1ec
 +117.125.6.0.0
-+  __TEXT.__text: 0x1ddd4
-+  __TEXT.__objc_methlist: 0x294
-   __TEXT.__const: 0x20a6
-+  __TEXT.__cstring: 0x319
-   __TEXT.__swift5_typeref: 0xc2e
-   __TEXT.__swift5_capture: 0x48c
-   __TEXT.__swift5_fieldmd: 0x6c4
 
-   __TEXT.__swift_as_entry: 0xcc
-   __TEXT.__swift_as_ret: 0xd8
-   __TEXT.__swift_as_cont: 0x138
--  __TEXT.__cstring: 0x309
--  __TEXT.__unwind_info: 0xe08
-+  __TEXT.__unwind_info: 0xe38
-   __TEXT.__eh_frame: 0x1c20
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x1b8
--  __DATA_CONST.__objc_classlist: 0x30
-+  __DATA_CONST.__objc_classlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x170
-+  __DATA_CONST.__objc_selrefs: 0x208
-   __DATA_CONST.__objc_protorefs: 0x18
-+  __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x18d0
--  __AUTH_CONST.__objc_const: 0x950
--  __AUTH_CONST.__auth_got: 0x920
--  __AUTH.__objc_data: 0x118
-+  __AUTH_CONST.__objc_const: 0xb90
-+  __AUTH_CONST.__auth_got: 0x968
-+  __AUTH.__objc_data: 0x168
-   __AUTH.__data: 0x408
-+  __DATA.__objc_ivar: 0x2c
-   __DATA.__data: 0xee8
-   __DATA.__common: 0x28
-   - /System/Library/Frameworks/Combine.framework/Combine
 +  - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation
-   - /System/Library/Frameworks/ExtensionKit.framework/ExtensionKit
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 859
 -  Symbols:   531
 -  CStrings:  51
 +  Functions: 872
 +  Symbols:   573
 +  CStrings:  53
- 
 Symbols:
 + -[AAFInkCoverageTracker .cxx_destruct]
 + -[AAFInkCoverageTracker _checkForCover:]

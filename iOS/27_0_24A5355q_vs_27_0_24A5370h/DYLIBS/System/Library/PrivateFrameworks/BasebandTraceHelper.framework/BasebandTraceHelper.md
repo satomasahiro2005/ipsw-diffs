@@ -2,60 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/BasebandTraceHelper.framework/BasebandTraceHelper`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5b37c` | `0x5bbe4` | **`+0x868`** |
+| `__TEXT.__const` | `0x2ca0` | `0x2e10` | **`+0x170`** |
+| `__AUTH_CONST.__const` | `0x2350` | `0x2468` | **`+0x118`** |
+| `__TEXT.__oslogstring` | `0x35aa` | `0x36a1` | **`+0xf7`** |
+| `__TEXT.__gcc_except_tab` | `0x4ac0` | `0x4ba8` | **`+0xe8`** |
+| `__TEXT.__unwind_info` | `0x1a60` | `0x1ac0` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0xaf8` | `0xab8` | **`-0x40`** |
+| `__TEXT.__cstring` | `0x1388` | `0x13ba` | **`+0x32`** |
+| `__DATA.__data` | `0x340` | `0x348` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1563.0.0.0.0
--  __TEXT.__text: 0x5b37c sha256:98201a43bf86b37d760d64a70062638ac7a635cb8cf3f960c7e58300e3c54b47
--  __TEXT.__init_offsets: 0x38 sha256:2da72dea6d67e7f98a6f631eedf4e66f0e219bd0edd692a15621a45c54b7770f
--  __TEXT.__const: 0x2ca0 sha256:d6193fbdd1387b32b29aa88a09cbd7849462949eca5cb8c4314983dd8c1f37b2
--  __TEXT.__gcc_except_tab: 0x4ac0 sha256:d0dc231d9d3920b0d0db0c309dd838c1a6a095cb63d6348e5ddfdb43a0e62475
--  __TEXT.__oslogstring: 0x35aa sha256:aa1ae4861dd960458bb4d6f8251f9ebe3f6c6e7daadbcaf7e519a95ad91d67de
--  __TEXT.__cstring: 0x1388 sha256:9311fa7b0a7526d7f4755fb08ed0c0c66fb18aef8b32b9c08901e467e5221cf2
--  __TEXT.__unwind_info: 0x1a60 sha256:54a9b49b64e453a71296cb0d7aec0ea69639c5e0a15ec970706698d6bec6039c
 +1570.0.0.0.0
-+  __TEXT.__text: 0x5bbe4 sha256:f6caea027703d9cdc9c8c3843e43f4d5919b7478ffc258c1457c28e4903062a6
-+  __TEXT.__init_offsets: 0x38 sha256:dd09ac1130e8ce0071bcc6f90cfd20eb7f77b8ad739fb62817a54f866ce7edb0
-+  __TEXT.__const: 0x2e10 sha256:f51e88f3b9603702db4f665c24ccc87f8d92006d695cec5b898a80628846510b
-+  __TEXT.__gcc_except_tab: 0x4ba8 sha256:167561bd425b9291a1bbb1b55b3586e3177700a7fca670501e077fe858544a53
-+  __TEXT.__oslogstring: 0x36a1 sha256:c860d384bb5e1b897b740774c3db87062e50e000933d1b8e571e846855155dfc
-+  __TEXT.__cstring: 0x13ba sha256:96d0bfd4260ef320338cca0c073c3f68a617f0c4ad8b639f888f46cad2509804
-+  __TEXT.__unwind_info: 0x1ac0 sha256:e0852a28828d78e3bba277070c51aa25a8412f72bd4fe0670eaa90b04faa0b9e
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0xaf8 sha256:907128b8bb22a66e9f451db480e35d1e15ca6711abcaf7ffe72503245d839784
-+  __DATA_CONST.__const: 0xab8 sha256:66a7623aa52620787672227e58a083053d5faee38b111c4627b5be4be0421596
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x78 sha256:bd40312eeefb962e213cc1a8e210ef5554a7bfb45ec972f3ae14ea1e9e7a58db
--  __DATA_CONST.__objc_selrefs: 0x88 sha256:eea38b8189490b85cb23fa35d66a00f13dcb045723304c17fbff8cb3f9f14c24
-+  __DATA_CONST.__weak_got: 0x78 sha256:d8322293ddb6cbab20c1476336782e024846044dbc6d956e02a8358cbb12cb6c
-+  __DATA_CONST.__objc_selrefs: 0x88 sha256:fc2037e39f1673711a645e5995ba896a918b9fbaf0d8e109e14acaaeac61f3c6
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2350 sha256:8d82968b1711238e236ff786cb8ca3f77701156d9214013dff82bc02800a67a6
--  __AUTH_CONST.__cfstring: 0x20 sha256:3c95ae5acf8fa9511c74ed7e0ecc1a195a2827dfa220bf7367f2d8f5ff343d3e
--  __AUTH_CONST.__weak_auth_got: 0x20 sha256:52c9b9f7054537bcbd1b0015a017ad87fc2d84bd7ab268479e6b5286366dc849
-+  __AUTH_CONST.__const: 0x2468 sha256:585b2e608ab74dc2fd3e205a555f5129437ef717858ccb35d20868570a66ab7d
-+  __AUTH_CONST.__cfstring: 0x20 sha256:4b3a9cdcf01d7119c410446d9455c01a78f941975c45856342907141191e6b2e
-+  __AUTH_CONST.__weak_auth_got: 0x20 sha256:9a19875ee94a4545924efc5e43b8a7cc9a6e9ae6f74f8f241796dbaf9c719f6b
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__data: 0x340 sha256:393369b0e74940b552dca56605c7e8ff763e90be06dfa5b05ca37af666e4dfce
-+  __DATA.__data: 0x348 sha256:e67e3589a5c671f26ceee389118facf56baf9098061a600118597a61ca82854f
-   __DATA.__bss: 0x108 sha256:44b8aa4d28701168922acf61435ea4bb442f97b0b14ad7a2510ed68874ee2a72
-   __DATA_DIRTY.__data: 0xd0 sha256:2e192534c5b5a9f4664ed4a403a69a2e29da1adf387aa992b6bd28f344fd4ddb
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libarchive.2.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  UUID: 60224C04-0476-30B7-B2EE-DAE4D511850C
 -  Functions: 1197
--  Symbols:   3409
--  CStrings:  610
-+  UUID: 92089123-2196-3F48-B21F-C7AD8BE18C01
+-  Symbols:   2184
+-  CStrings:  609
 +  Functions: 1217
-+  Symbols:   3449
-+  CStrings:  617
- 
++  Symbols:   2214
++  CStrings:  616
 Symbols:
 + __ZN19TraceSocketStreamer7forwardEPKhj
 + __ZN21TraceDataRateObserver15forceReportToCAERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEb
@@ -231,11 +204,6 @@ Symbols:
 + __ZZN8dispatch5asyncIZZN3TCP29setLocalSocketReadSource_syncEvEUb_E3$_1EEvP16dispatch_queue_sNSt3__110unique_ptrIT_NS5_14default_deleteIS7_EEEEENUlPvE_8__invokeESB_
 + __ZZN8dispatch5asyncIZZN3TCP29setLocalSocketReadSource_syncEvEUb_E3$_2EEvP16dispatch_queue_sNSt3__110unique_ptrIT_NS5_14default_deleteIS7_EEEEENUlPvE_8__invokeESB_
 + ____ZN19TraceSocketStreamer7forwardEPKhj_block_invoke
-+ ____ZN3TCP29setLocalSocketReadSource_syncEv_block_invoke.12
-+ ___block_descriptor_tmp.30
-+ ___block_descriptor_tmp.31
-+ ___block_descriptor_tmp.52
-+ ___block_literal_global.54
 + _dispatch_source_set_cancel_handler
 - __ZN19TraceSocketStreamer7forwardEPhj
 - __ZN21TraceDataRateObserver15forceReportToCAERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
@@ -382,9 +350,6 @@ Symbols:
 - ____ZN19TraceSocketStreamer7forwardEPhj_block_invoke
 - ____ZNK3ctu20SharedSynchronizableI3TCPE20execute_wrapped_syncIZZNS1_29setLocalSocketReadSource_syncEvEUb_E3$_1EEDTclsr8dispatchE4syncLDnEclsr3stdE7forwardIT_Efp_EEEOS5__block_invoke
 - ____ZNK3ctu20SharedSynchronizableI3TCPE20execute_wrapped_syncIZZNS1_29setLocalSocketReadSource_syncEvEUb_E3$_2EEDTclsr8dispatchE4syncLDnEclsr3stdE7forwardIT_Efp_EEEOS5__block_invoke
-- ___block_descriptor_tmp.26
-- ___block_descriptor_tmp.51
-- ___block_literal_global.53
 CStrings:
 + "Cannot force CA report: data rate observer is not available"
 + "Forwarding forceReportToCA to data rate observer, reason: %s"
@@ -393,5 +358,4 @@ CStrings:
 + "com.apple.bb.liveview.streamer.queue"
 + "error: [server] Failed to drain pending connection: %s"
 + "failed to start trace streamer"
-
 ```

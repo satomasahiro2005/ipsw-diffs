@@ -2,28 +2,20 @@
 
 > `com.apple.driver.AppleSPURose`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x17804` | `0x17814` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__const: 0x30
-   __TEXT.__cstring: 0x23b0
-   __TEXT.__os_log: 0x1d58
--  __TEXT_EXEC.__text: 0x17804
-+  __TEXT_EXEC.__text: 0x17814
-   __TEXT_EXEC.__auth_stubs: 0x500
-   __DATA.__data: 0x248
-   __DATA.__common: 0x268
-Sections:
-~ __TEXT.__cstring : content changed
-~ __DATA.__data : content changed
-~ __DATA_CONST.__mod_init_func : content changed
-~ __DATA_CONST.__mod_term_func : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__kalloc_type : content changed
-~ __DATA_CONST.__auth_got : content changed
-~ __DATA_CONST.__got : content changed
+-1087.0.0.0.0
++1087.0.3.0.0
 Functions:
-~ sub_fffffe000970b964 -> sub_fffffe000970bcc4 : 1008 -> 992
-~ sub_fffffe000970bda8 -> sub_fffffe000970c0f8 : 808 -> 824
-~ sub_fffffe000970c134 -> sub_fffffe000970c494 : 1056 -> 1072
-
+~ sub_fffffff00970ac64 -> sub_fffffff00970b6e4 : 1008 -> 992
+~ sub_fffffff00970b0a8 -> sub_fffffff00970bb18 : 808 -> 824
+~ sub_fffffff00970b434 -> sub_fffffff00970beb4 : 1056 -> 1072
 ```

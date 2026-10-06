@@ -2,21 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/PeriodicSystemMetricsCore.framework/PeriodicSystemMetricsCore`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
-- `__TEXT.__objc_methlist`
 - `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methlist`
 - `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 689
 -  Symbols:   1574
 +  Symbols:   1573
-   CStrings:  572
- 
 Symbols:
 + GCC_except_table10
 + GCC_except_table105

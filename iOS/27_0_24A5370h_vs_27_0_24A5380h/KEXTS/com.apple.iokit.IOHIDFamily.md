@@ -2,27 +2,18 @@
 
 > `com.apple.iokit.IOHIDFamily`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x7994c` | `0x7992c` | **`-0x20`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__cstring: 0x33af
-   __TEXT.__const: 0x1080
-   __TEXT.__os_log: 0x42dd
--  __TEXT_EXEC.__text: 0x7994c
-+  __TEXT_EXEC.__text: 0x7992c
-   __TEXT_EXEC.__auth_stubs: 0xac0
-   __DATA.__data: 0xbcc
-   __DATA.__common: 0xae0
-Sections:
-~ __DATA.__data : content changed
-~ __DATA_CONST.__mod_init_func : content changed
-~ __DATA_CONST.__mod_term_func : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__kalloc_type : content changed
-~ __DATA_CONST.__assert : content changed
-~ __DATA_CONST.__auth_got : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA_CONST.__auth_ptr : content changed
+-2360.0.2.0.0
++2360.0.4.0.0
 Functions:
-~ sub_fffffe000a0e4c58 -> sub_fffffe000a0e4c18 : 236 -> 204
-
+~ sub_fffffff00a0e2ad8 -> sub_fffffff00a0e2a98 : 236 -> 204
 ```

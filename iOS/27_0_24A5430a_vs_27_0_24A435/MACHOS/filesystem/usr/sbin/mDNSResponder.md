@@ -2,23 +2,24 @@
 
 > `/usr/sbin/mDNSResponder`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10abd0` | `0x10abd4` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 3111.0.5.0.1
--  __TEXT.__text: 0x10abd0
-+  __TEXT.__text: 0x10abd4
-   __TEXT.__auth_stubs: 0x2fc0
-   __TEXT.__objc_stubs: 0x20c0
-   __TEXT.__objc_methlist: 0x694
+```text
 Functions:
 ~ _AdvertiseInterface : 1876 -> 1880
 ~ _mDNS_Execute : 25424 -> 25440

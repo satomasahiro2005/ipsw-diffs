@@ -2,92 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/CloudDocs.framework/CloudDocs`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__gcc_except_tab`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7f0c0` | `0x7f248` | **`+0x188`** |
+| `__AUTH.__objc_data` | `0x1770` | `0x16d0` | **`-0xa0`** |
+| `__DATA_DIRTY.__objc_data` | `0x780` | `0x820` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0xb884` | `0xb830` | **`-0x54`** |
+| `__TEXT.__oslogstring` | `0x8d76` | `0x8d46` | **`-0x30`** |
+| `__DATA_CONST.__const` | `0x2478` | `0x24a0` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x5f20` | `0x5f00` | **`-0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4250` | `0x4240` | **`-0x10`** |
+| `__TEXT.__objc_methlist` | `0x66ec` | `0x66dc` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x2640` | `0x2650` | **`+0x10`** |
+
+### Other Changes
 
 ```diff
 
 -5140.0.0.0.2
--  __TEXT.__text: 0x7f0c0
--  __TEXT.__objc_methlist: 0x66ec
 +5168.0.5.0.2
-+  __TEXT.__text: 0x7f248
-+  __TEXT.__objc_methlist: 0x66dc
-   __TEXT.__const: 0x1b0
-   __TEXT.__gcc_except_tab: 0x3bc0
--  __TEXT.__cstring: 0xb884
--  __TEXT.__oslogstring: 0x8d76
-+  __TEXT.__cstring: 0xb830
-+  __TEXT.__oslogstring: 0x8d46
-   __TEXT.__dlopen_cstrs: 0x4c
-   __TEXT.__ustring: 0x8
--  __TEXT.__unwind_info: 0x2640
-+  __TEXT.__unwind_info: 0x2650
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2478
-+  __DATA_CONST.__const: 0x24a0
-   __DATA_CONST.__objc_classlist: 0x318
-   __DATA_CONST.__objc_catlist: 0xe8
-   __DATA_CONST.__objc_protolist: 0x110
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4250
-+  __DATA_CONST.__objc_selrefs: 0x4240
-   __DATA_CONST.__objc_protorefs: 0x68
-   __DATA_CONST.__objc_superrefs: 0x240
-   __DATA_CONST.__objc_arraydata: 0x88
-   __DATA_CONST.__got: 0x8d8
-   __AUTH_CONST.__const: 0x1080
--  __AUTH_CONST.__cfstring: 0x5f20
-+  __AUTH_CONST.__cfstring: 0x5f00
-   __AUTH_CONST.__objc_const: 0xdb30
-   __AUTH_CONST.__objc_arrayobj: 0x60
-   __AUTH_CONST.__objc_intobj: 0x540
-   __AUTH_CONST.__objc_doubleobj: 0x30
-   __AUTH_CONST.__auth_got: 0xa50
--  __AUTH.__objc_data: 0x1770
-+  __AUTH.__objc_data: 0x16d0
-   __AUTH.__data: 0xc8
-   __DATA.__objc_ivar: 0x5e8
-   __DATA.__data: 0xd30
-   __DATA.__bss: 0x428
-   __DATA.__common: 0x8
--  __DATA_DIRTY.__objc_data: 0x780
-+  __DATA_DIRTY.__objc_data: 0x820
-   __DATA_DIRTY.__data: 0x20
-   __DATA_DIRTY.__bss: 0x238
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 3030
--  Symbols:   6513
+-  Symbols:   5110
 -  CStrings:  2202
 +  Functions: 3032
-+  Symbols:   6518
++  Symbols:   5116
 +  CStrings:  2199
- 
 Symbols:
 + -[BRContainer(BRInternalAdditions) deleteAllContentsOnClientAndServer:error:]
 + GCC_except_table100
@@ -153,7 +95,6 @@ Symbols:
 - __OBJC_$_INSTANCE_METHODS_BRContainer(BRXcodeAdditions|BRXcodeInternalAdditions|BRFinderAdditions|BRFinderInternalAdditions|BRInternalAdditions|BRPriorityHinting)
 - ___83-[BRContainer(BRFinderInternalAdditions) deleteAllContentsOnClientAndServer:error:]_block_invoke
 - ___block_descriptor_56_e8_32s40s48bs_e17_v16?0"NSError"8ls32l8s40l8s48l8
-- _objc_msgSend$deleteAllContentsOnClientAndServer:error:
 CStrings:
 + "-[BRContainer(BRInternalAdditions) deleteAllContentsOnClientAndServer:error:]"
 + "-[BRContainer(BRInternalAdditions) deleteAllContentsOnClientAndServer:error:]_block_invoke"

@@ -2,17 +2,15 @@
 
 > `/usr/lib/i18n/libiconv_std.dylib`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x28f0
-+  __TEXT.__text: 0x28f8
-   __TEXT.__cstring: 0x236
-   __TEXT.__const: 0x1c
-   __TEXT.__unwind_info: 0xb0
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __AUTH.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x28f0` | `0x28f8` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __citrus_iconv_std_iconv_convert : 4632 -> 4640
-
 ```

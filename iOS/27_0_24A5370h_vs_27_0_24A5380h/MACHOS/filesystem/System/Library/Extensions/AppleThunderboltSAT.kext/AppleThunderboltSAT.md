@@ -2,41 +2,37 @@
 
 > `/System/Library/Extensions/AppleThunderboltSAT.kext/AppleThunderboltSAT`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x23744` | `0x23fe0` | **`+0x89c`** |
+| `__TEXT.__cstring` | `0x10b31` | `0x10dcf` | **`+0x29e`** |
+| `__TEXT_EXEC.__auth_stubs` | `0x540` | `0x570` | **`+0x30`** |
+| `__DATA_CONST.__auth_got` | `0x2a0` | `0x2b8` | **`+0x18`** |
+| `__DATA.__bss` | `0x28` | `0x3c` | **`+0x14`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__kalloc_type`
+- `__DATA_CONST.__mod_init_func`
+- `__DATA_CONST.__mod_term_func`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__cstring: 0x10b31
-+  __TEXT.__cstring: 0x10dcf
-   __TEXT.__const: 0x50
--  __TEXT_EXEC.__text: 0x23744
--  __TEXT_EXEC.__auth_stubs: 0x540
-+  __TEXT_EXEC.__text: 0x23fe0
-+  __TEXT_EXEC.__auth_stubs: 0x570
-   __DATA.__data: 0x7f0
-   __DATA.__common: 0x589
--  __DATA.__bss: 0x28
-+  __DATA.__bss: 0x3c
-   __DATA_CONST.__mod_init_func: 0x78
-   __DATA_CONST.__mod_term_func: 0x78
-   __DATA_CONST.__const: 0x4c18
-   __DATA_CONST.__kalloc_type: 0x400
-   __DATA_CONST.__kalloc_var: 0x2d0
--  __DATA_CONST.__auth_got: 0x2a0
-+  __DATA_CONST.__auth_got: 0x2b8
-   __DATA_CONST.__got: 0xe8
+-109.0.0.0.1
 -  Functions: 552
--  Symbols:   3501
+-  Symbols:   1106
 -  CStrings:  1019
++112.0.0.0.0
 +  Functions: 557
-+  Symbols:   3535
++  Symbols:   1117
 +  CStrings:  1026
- 
-Sections:
-~ __DATA.__data : content changed
-~ __DATA_CONST.__mod_init_func : content changed
-~ __DATA_CONST.__mod_term_func : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__kalloc_type : content changed
-~ __DATA_CONST.__got : content changed
 Symbols:
 + __Z20sat_push_msg_to_userPKcz
 + __Z22sat_clear_msgs_to_userv
@@ -71,5 +67,4 @@ CStrings:
 - "109.0.0.0.1"
 - "19:38:50"
 - "Jun 18 2026"
-
 ```

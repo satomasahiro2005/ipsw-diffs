@@ -2,41 +2,23 @@
 
 > `/System/Library/PrivateFrameworks/GeoAnalytics.framework/GeoAnalytics`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x99f18` | `0x9c298` | **`+0x2380`** |
+| `__TEXT.__unwind_info` | `0x1100` | `0x1190` | **`+0x90`** |
+| `__DATA_CONST.__got` | `0x6e0` | `0x6e8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2075.34.9.3.1
--  __TEXT.__text: 0x98bb8
 +2076.31.9.18.7
-+  __TEXT.__text: 0x9b118
-   __TEXT.__objc_methlist: 0x272c
-   __TEXT.__const: 0x76c
-   __TEXT.__dlopen_cstrs: 0x126
 
-   __TEXT.__gcc_except_tab: 0x6bc
-   __TEXT.__cstring: 0xef90
-   __TEXT.__oslogstring: 0x10ca
--  __TEXT.__unwind_info: 0x1410
-+  __TEXT.__unwind_info: 0x1408
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0xb8
-   __DATA_CONST.__objc_arraydata: 0xee0
--  __DATA_CONST.__got: 0x6e0
-+  __DATA_CONST.__got: 0x6e8
-   __AUTH_CONST.__const: 0x37d8
-   __AUTH_CONST.__cfstring: 0x14840
-   __AUTH_CONST.__objc_const: 0x33b8
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   Functions: 1656
 -  Symbols:   3401
 +  Symbols:   3402
-   CStrings:  2828
- 
 Symbols:
 + +[GEOAPPortal captureBatchTrafficWithLocationCollection:sessionSnapshot:additionalStates:providedDropRate:completionQueue:completionBlock:]
 + +[GEOAPPortal captureClientACKeypressWithQuery:queryTokens:entries:keypressStatus:responseStatus:GEOModelMetadata_modelVersion:GEOModelMetadata_rolloutId:GEOModelMetadata_rolloutDeploymentId:GEOModelMetadata_rolloutFactorpackId:GEOModelMetadata_rolloutRampId:GEOExperimentMetadata_experimentId:GEOExperimentMetadata_deploymentId:GEOExperimentMetadata_treatmentId:GEOExperimentMetadata_experimentDescription:sessionSnapshot:additionalStates:providedDropRate:completionQueue:completionBlock:]

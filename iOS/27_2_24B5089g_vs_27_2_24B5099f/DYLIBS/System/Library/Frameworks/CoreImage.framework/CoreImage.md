@@ -2,39 +2,28 @@
 
 > `/System/Library/Frameworks/CoreImage.framework/CoreImage`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x34b1fc` | `0x34b9e0` | **`+0x7e4`** |
+| `__TEXT.__cstring` | `0x104bb8` | `0x104b7d` | **`-0x3b`** |
+| `__TEXT.__unwind_info` | `0xa920` | `0xa918` | **`-0x8`** |
+| `__TEXT.__gcc_except_tab` | `0xa8b4` | `0xa8b8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1667.40.5.0.0
--  __TEXT.__text: 0x34396c
 +1667.40.6.0.0
-+  __TEXT.__text: 0x344150
-   __TEXT.__objc_methlist: 0x159f0
-   __TEXT.__const: 0xe198
--  __TEXT.__gcc_except_tab: 0xa8b4
--  __TEXT.__cstring: 0x104bb8
-+  __TEXT.__gcc_except_tab: 0xa8b8
-+  __TEXT.__cstring: 0x104b7d
-   __TEXT.__oslogstring: 0xb37e
-   __TEXT.__dlopen_cstrs: 0x445
-   __TEXT.__runtimeheader: 0x15aa4
-   __TEXT.__cikl2metal_pre: 0x54b
-   __TEXT.__grain: 0x105040
--  __TEXT.__unwind_info: 0xc860
-+  __TEXT.__unwind_info: 0xc868
-   __TEXT.__eh_frame: 0x350
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  Functions: 15193
+-  Functions: 15194
 -  Symbols:   26377
 -  CStrings:  8900
-+  Functions: 15194
++  Functions: 15195
 +  Symbols:   26378
 +  CStrings:  8898
- 
 Symbols:
 + __ZN2CIL22subdivide_program_roisEPNS_7ContextEmPNS_4NodeE6CGRectPNSt3__13mapIPKS2_NS_13useCountDepthENS5_4lessIS8_EENS5_9allocatorINS5_4pairIKS8_S9_EEEEEEbRKNS5_6vectorIS8_NSC_IS8_EEEERNS5_5dequeIPKNS_11ProgramNodeENSC_ISR_EEEERSL_Rm
 + __ZN2CIL29gather_rois_for_program_graphEPNS_7ContextEPKcPNS_11ProgramNodeE6CGRectRKNSt3__16vectorIS6_NS7_9allocatorIS6_EEEERmm

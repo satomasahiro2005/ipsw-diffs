@@ -2,92 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/FileDerivatives.framework/FileDerivatives`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e364` | `0x1ed90` | **`+0xa2c`** |
+| `__AUTH.__data` | `0x110` | `0x228` | **`+0x118`** |
+| `__AUTH_CONST.__objc_const` | `0x17f0` | `0x1880` | **`+0x90`** |
+| `__TEXT.__constg_swiftt` | `0x698` | `0x714` | **`+0x7c`** |
+| `__TEXT.__eh_frame` | `0xa00` | `0xa58` | **`+0x58`** |
+| `__AUTH_CONST.__const` | `0xdc8` | `0xe18` | **`+0x50`** |
+| `__TEXT.__const` | `0xd38` | `0xd88` | **`+0x50`** |
+| `__TEXT.__swift5_fieldmd` | `0x440` | `0x484` | **`+0x44`** |
+| `__AUTH_CONST.__auth_got` | `0x8a8` | `0x8e8` | **`+0x40`** |
+| `__DATA.__data` | `0x658` | `0x698` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x840` | `0x878` | **`+0x38`** |
+| `__TEXT.__swift5_reflstr` | `0x274` | `0x2a7` | **`+0x33`** |
+| `__DATA_DIRTY.__data` | `0x838` | `0x808` | **`-0x30`** |
+| `__TEXT.__swift5_capture` | `0x148` | `0x170` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x1a0` | `0x1c0` | **`+0x20`** |
+| `__TEXT.__cstring` | `0xb8b` | `0xbab` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x268` | `0x278` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0x8ba` | `0x8aa` | **`-0x10`** |
+| `__TEXT.__swift_as_cont` | `0x60` | `0x70` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x190` | `0x198` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x80` | `0x88` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x6c` | `0x74` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x30` | `0x34` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -62.0.0.0.0
--  __TEXT.__text: 0x1d2d4
 +63.40.7.0.0
-+  __TEXT.__text: 0x1dc94
-   __TEXT.__objc_methlist: 0x648
--  __TEXT.__cstring: 0xb8b
--  __TEXT.__const: 0xd38
--  __TEXT.__constg_swiftt: 0x698
--  __TEXT.__swift5_typeref: 0x8ba
--  __TEXT.__swift5_reflstr: 0x274
--  __TEXT.__swift5_fieldmd: 0x440
-+  __TEXT.__cstring: 0xbab
-+  __TEXT.__const: 0xd88
-+  __TEXT.__constg_swiftt: 0x714
-+  __TEXT.__swift5_typeref: 0x8aa
-+  __TEXT.__swift5_reflstr: 0x2a7
-+  __TEXT.__swift5_fieldmd: 0x484
-   __TEXT.__swift5_builtin: 0x78
-   __TEXT.__swift5_assocty: 0x60
-   __TEXT.__oslogstring: 0x27e
-   __TEXT.__swift5_proto: 0x48
--  __TEXT.__swift5_types: 0x6c
--  __TEXT.__swift5_capture: 0x148
--  __TEXT.__swift_as_entry: 0x30
-+  __TEXT.__swift5_types: 0x74
-+  __TEXT.__swift5_capture: 0x170
-+  __TEXT.__swift_as_entry: 0x34
-   __TEXT.__swift_as_ret: 0x24
--  __TEXT.__swift_as_cont: 0x60
-+  __TEXT.__swift_as_cont: 0x70
-   __TEXT.__swift5_mpenum: 0x10
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0xa50
--  __TEXT.__eh_frame: 0xa00
-+  __TEXT.__unwind_info: 0xaa8
-+  __TEXT.__eh_frame: 0xa58
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x190
--  __DATA_CONST.__objc_classlist: 0x80
-+  __DATA_CONST.__const: 0x198
-+  __DATA_CONST.__objc_classlist: 0x88
-   __DATA_CONST.__objc_protolist: 0x68
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x360
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__got: 0x268
--  __AUTH_CONST.__const: 0xdc8
--  __AUTH_CONST.__cfstring: 0x1a0
--  __AUTH_CONST.__objc_const: 0x17f0
--  __AUTH_CONST.__auth_got: 0x8a8
-+  __DATA_CONST.__got: 0x278
-+  __AUTH_CONST.__const: 0xe18
-+  __AUTH_CONST.__cfstring: 0x1c0
-+  __AUTH_CONST.__objc_const: 0x1880
-+  __AUTH_CONST.__auth_got: 0x8e8
-   __AUTH.__objc_data: 0x2a8
--  __AUTH.__data: 0x110
-+  __AUTH.__data: 0x228
-   __DATA.__objc_ivar: 0x8
--  __DATA.__data: 0x658
-+  __DATA.__data: 0x698
-   __DATA_DIRTY.__objc_data: 0x588
--  __DATA_DIRTY.__data: 0x838
-+  __DATA_DIRTY.__data: 0x808
-   __DATA_DIRTY.__bss: 0x280
-   __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 731
--  Symbols:   681
+-  Symbols:   613
 -  CStrings:  88
 +  Functions: 754
-+  Symbols:   693
++  Symbols:   625
 +  CStrings:  89
- 
 Symbols:
 + _FDSErrorDomain
 + _NSLocalizedDescriptionKey

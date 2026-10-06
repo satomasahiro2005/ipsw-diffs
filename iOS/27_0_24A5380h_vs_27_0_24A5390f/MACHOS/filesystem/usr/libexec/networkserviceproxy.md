@@ -2,83 +2,56 @@
 
 > `/usr/libexec/networkserviceproxy`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbcd34` | `0xc17fc` | **`+0x4ac8`** |
+| `__TEXT.__oslogstring` | `0x11036` | `0x11613` | **`+0x5dd`** |
+| `__TEXT.__objc_stubs` | `0xcc80` | `0xd200` | **`+0x580`** |
+| `__TEXT.__objc_methname` | `0xffe0` | `0x103e2` | **`+0x402`** |
+| `__TEXT.__gcc_except_tab` | `0x3554` | `0x3828` | **`+0x2d4`** |
+| `__TEXT.__cstring` | `0xdd4b` | `0xdeda` | **`+0x18f`** |
+| `__DATA.__objc_selrefs` | `0x39d0` | `0x3b28` | **`+0x158`** |
+| `__DATA_CONST.__cfstring` | `0x8ae0` | `0x8ba0` | **`+0xc0`** |
+| `__DATA_CONST.__const` | `0x2250` | `0x22e0` | **`+0x90`** |
+| `__DATA.__objc_const` | `0xb0f8` | `0xb158` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x1968` | `0x19b8` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x810` | `0x848` | **`+0x38`** |
+| `__TEXT.__const` | `0x285` | `0x2a0` | **`+0x1b`** |
+| `__TEXT.__objc_methlist` | `0x5034` | `0x5044` | **`+0x10`** |
+| `__TEXT.__objc_methtype` | `0x2a69` | `0x2a77` | **`+0xe`** |
+| `__DATA.__objc_ivar` | `0x9f0` | `0x9fc` | **`+0xc`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_got`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__auth_got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -976.0.0.0.0
--  __TEXT.__text: 0xbcd34
 +980.0.0.0.0
-+  __TEXT.__text: 0xc17fc
-   __TEXT.__auth_stubs: 0x18e0
--  __TEXT.__objc_stubs: 0xcc80
--  __TEXT.__objc_methlist: 0x5034
--  __TEXT.__const: 0x285
-+  __TEXT.__objc_stubs: 0xd200
-+  __TEXT.__objc_methlist: 0x5044
-+  __TEXT.__const: 0x2a0
-   __TEXT.__dlopen_cstrs: 0x64
--  __TEXT.__gcc_except_tab: 0x3554
--  __TEXT.__oslogstring: 0x11036
--  __TEXT.__cstring: 0xdd4b
--  __TEXT.__objc_methname: 0xffe0
-+  __TEXT.__gcc_except_tab: 0x3828
-+  __TEXT.__oslogstring: 0x11613
-+  __TEXT.__cstring: 0xdeda
-+  __TEXT.__objc_methname: 0x103e2
-   __TEXT.__objc_classname: 0xc2e
--  __TEXT.__objc_methtype: 0x2a69
--  __TEXT.__unwind_info: 0x1968
--  __DATA_CONST.__const: 0x2250
--  __DATA_CONST.__cfstring: 0x8ae0
-+  __TEXT.__objc_methtype: 0x2a77
-+  __TEXT.__unwind_info: 0x19b8
-+  __DATA_CONST.__const: 0x22e0
-+  __DATA_CONST.__cfstring: 0x8ba0
-   __DATA_CONST.__objc_classlist: 0x2d8
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0xf0
 
-   __DATA_CONST.__objc_intobj: 0x6d8
-   __DATA_CONST.__objc_dictobj: 0x28
-   __DATA_CONST.__auth_got: 0xc80
--  __DATA_CONST.__got: 0x810
-+  __DATA_CONST.__got: 0x848
-   __DATA_CONST.__auth_ptr: 0x8
--  __DATA.__objc_const: 0xb0f8
--  __DATA.__objc_selrefs: 0x39d0
--  __DATA.__objc_ivar: 0x9f0
-+  __DATA.__objc_const: 0xb158
-+  __DATA.__objc_selrefs: 0x3b28
-+  __DATA.__objc_ivar: 0x9fc
-   __DATA.__objc_data: 0x1c70
-   __DATA.__data: 0xb48
-   __DATA.__bss: 0x220
-
-   - /usr/lib/libmrc.dylib
-   - /usr/lib/libnetworkextension.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2150
 -  Symbols:   638
 -  CStrings:  6229
 +  Functions: 2161
 +  Symbols:   645
 +  CStrings:  6312
- 
 Symbols:
 + _OBJC_CLASS_$_NSMapTable
 + _OBJC_CLASS_$_NSPJSONWebToken

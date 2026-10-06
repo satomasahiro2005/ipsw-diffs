@@ -2,18 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/CryptexKit.framework/CryptexKit`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x90658` | `0x90808` | **`+0x1b0`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
 
-```diff
+### Other Changes
 
- 761.2.1.0.0
--  __TEXT.__text: 0x90658
-+  __TEXT.__text: 0x90808
-   __TEXT.__objc_methlist: 0x124
-   __TEXT.__const: 0xbaf8
-   __TEXT.__cstring: 0x2296
+```diff
 Functions:
 ~ _$s10CryptexKit0A0C30parseDependenciesFromInfoPlistySayAA0A10DependencyVG10Foundation4DataVKFZ : 1632 -> 1644
 ~ _$sSasSQRzlE2eeoiySbSayxG_ABtFZ10CryptexKit8PkgValueO_Tt1g5 : 900 -> 880

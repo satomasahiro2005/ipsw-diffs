@@ -2,101 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/CoreGPSTest.framework/CoreGPSTest.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5f378` | `0x60904` | **`+0x158c`** |
+| `__TEXT.__cstring` | `0x4d67` | `0x50d0` | **`+0x369`** |
+| `__AUTH_CONST.__const` | `0x4c48` | `0x4fa8` | **`+0x360`** |
+| `__TEXT.__const` | `0x6070` | `0x61b0` | **`+0x140`** |
+| `__TEXT.__oslogstring` | `0xa0d2` | `0x9fef` | **`-0xe3`** |
+| `__TEXT.__gcc_except_tab` | `0x3504` | `0x35a0` | **`+0x9c`** |
+| `__TEXT.__unwind_info` | `0x2538` | `0x25b8` | **`+0x80`** |
+| `__DATA_CONST.__const` | `0x5b0` | `0x600` | **`+0x50`** |
+| `__DATA.__common` | `0x9db20` | `0x9db68` | **`+0x48`** |
+| `__AUTH_CONST.__auth_got` | `0xbb0` | `0xba8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -365.0.3.0.0
--  __TEXT.__text: 0x5f378 sha256:20f74f3352fea05f4cff04be1ce4c276ef5217394d3c73ef1ebf70bc691fd2f9
--  __TEXT.__init_offsets: 0xc sha256:5364237c4699225c620f5bf6f759affae09c5be1b50c05f90a5c7da7f9999c56
--  __TEXT.__objc_methlist: 0x164 sha256:343a53cf730a03a3a30dddab7ea0533b153c80adcb4cfacd9597f23a2d182878
--  __TEXT.__const: 0x6070 sha256:36f6e740a9f0d5b41b24f39fdf25ebad162e8abf786c089c2d1f73c97c18e4ec
--  __TEXT.__gcc_except_tab: 0x3504 sha256:13c5fb99bd8b09e9b9bd989189acb879cee881bbf4b648db8742c567b9c7f1fa
--  __TEXT.__oslogstring: 0xa0d2 sha256:eda1285e9b55e1ee90a1b8a186b6d96b08a705be31815356abfc6410e872ccf3
--  __TEXT.__constg_swiftt: 0x408 sha256:e125885ac47a363e8ceb80a44ecfac246335e2e6042bf39010a9189536eedaac
--  __TEXT.__swift5_typeref: 0x174 sha256:b97a291ff04ab9ef65d2792504b47bca7017f22f37b59922365f9876620512cc
 +365.0.5.0.0
-+  __TEXT.__text: 0x60904 sha256:72f9aa3d9742d27b91eaf68bdd80a2f2f19ab6e55aae5a316d623dc65e00ab8e
-+  __TEXT.__init_offsets: 0xc sha256:7814611bb84660474ffae2e78ca3b95be0ba44cc517ef29c4256e69c30bf039f
-+  __TEXT.__objc_methlist: 0x164 sha256:0312a43e3e202d604506a65563109addf01554f45dc5020b0e0ad981dc4049c2
-+  __TEXT.__const: 0x61b0 sha256:02aac63578b294bdd8dac16752b47991f19ffa8c2121d5ce5b504cb9da93ba6f
-+  __TEXT.__gcc_except_tab: 0x35a0 sha256:953b265fe15f2a3b8cd03c495a8f736bd2e747df73301005c773a571aafe96bc
-+  __TEXT.__oslogstring: 0x9fef sha256:09daedbf5a25dd9d6a815b1875e5a5cfc62fd922e4dae5a6864258745c485ec0
-+  __TEXT.__constg_swiftt: 0x408 sha256:e6f61e996afaff31d09396393f678e79fae59e9a958fd1af1b254961973b2c60
-+  __TEXT.__swift5_typeref: 0x174 sha256:5f50857c793c6666f6ea9842237ec0b74c5a6bd475d5f82f44aaa2f24d936f4d
-   __TEXT.__swift5_reflstr: 0x8f sha256:07d722a7a364689a547a2db8d62f98ffcf1e5cb7b5cd05c2c43e2f3831fd486b
--  __TEXT.__swift5_fieldmd: 0x16c sha256:751f38a27603bcd224592386be944c2da73aa5b3650b9be893fa42e7d210459d
--  __TEXT.__swift5_capture: 0x120 sha256:21341057e63ac40f3da1ea6e642f8208cf6c6cd5394607eacdca03eaf7168634
--  __TEXT.__cstring: 0x4d67 sha256:bc3bbe3c8ff801bcbcd330ac78b27f710bcf8b293c7a3d89fbcdf2e5a32cccd0
--  __TEXT.__swift5_proto: 0xc sha256:009dd2c97c990a8615dfed718105e78ca54425d954bafe393d122849b9736c53
--  __TEXT.__swift5_types: 0x30 sha256:c145ae2b96db2455699d6f7d397afae30bd3fc5f301eb7fb2b761667e600a5a2
--  __TEXT.__swift5_builtin: 0x14 sha256:3c1fc815bf38708f5718f5a53eb2fda498842bfdfc2de6239b54d6cdbd735957
--  __TEXT.__swift5_protos: 0x8 sha256:63cdb4fd6ebd3781af145f351b67fc423263f685a68e0688fb5c8840d63ec489
--  __TEXT.__unwind_info: 0x2538 sha256:962cee4c3f5579cd51bdba191c21584d0dbb07e8c6a4f9a794ea0da2ec82309f
--  __TEXT.__eh_frame: 0x638 sha256:d3452efefb48b04a1e0387ade3dabc581395743df483aad046fcddd95941efaa
-+  __TEXT.__swift5_fieldmd: 0x16c sha256:0d507a89d607f51e8c6e253688e42a50a824f053da272cc3674ab3e1b91f1bd3
-+  __TEXT.__swift5_capture: 0x120 sha256:4fe274bcc74aa74b332630d6c67c4ee7b626d1b6fcf9c837ee7a828fd0d00f56
-+  __TEXT.__cstring: 0x50d0 sha256:0489fbdb3f1852ab0084123fce85f4454c4dd680300dbc4852c054316fcaf353
-+  __TEXT.__swift5_proto: 0xc sha256:4fce316b667938049c1435b61972ccc3b10c1726baea48be46cec167734bdf4b
-+  __TEXT.__swift5_types: 0x30 sha256:3f166b8021a67515f9a655befaee62ec6f06c6d211d362e7c012ab92d2c4a6a6
-+  __TEXT.__swift5_builtin: 0x14 sha256:247f4bb0efc9377657226be8cd27f739754891fe30592a183b0773e9664da161
-+  __TEXT.__swift5_protos: 0x8 sha256:ab0e4b092fcd1ef6ecb2c60a0ef57f755458c3c54cc307cf8e5a416e19f6ac37
-+  __TEXT.__unwind_info: 0x25b8 sha256:d9681e929d43caf556d1a3d6226c51e76366949eb76b4506c29b53e4b0cb177d
-+  __TEXT.__eh_frame: 0x638 sha256:2d8f0d70a06994c91aeb8f8b85f6a4b0e6a50326b472a7e94257021d40cafa8e
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x5b0 sha256:e970c821107c3a7b3b48f34abc282bfa28268b1d254f19031dae3537574d9a88
--  __DATA_CONST.__objc_classlist: 0x68 sha256:c1ef2ff52afb14fb8c459dabc57191a0893610883c1ca971589533410583cfef
-+  __DATA_CONST.__const: 0x600 sha256:f22e80ec49e25f6642ac7aec4b0aa4585b26147b9696b8a166df0d1949efea69
-+  __DATA_CONST.__objc_classlist: 0x68 sha256:41f471923a9138dbf08228e685da38a982727b422a0b99e0ace276ee8457d463
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__weak_got: 0x10 sha256:db089a9946ee2f440f1454b6bd081bc906524b106b3b9bd5745c567d00425fed
--  __DATA_CONST.__objc_selrefs: 0x298 sha256:1e128697b2b727d8813017bc329ec8da2a367b086aedb6f03fd7cf5c49eb0b0a
--  __DATA_CONST.__objc_superrefs: 0x8 sha256:e23cda9489449a7882a6a0dde1cf4ac96cf68d158d2f59eb4e70244dd3004431
--  __DATA_CONST.__got: 0x228 sha256:50750ad3f6a21671fa25a2fae5fe973b86de2c7382efbccf6da1e0fea72b966f
--  __AUTH_CONST.__const: 0x4c48 sha256:16f051253fe699cc0059d484ea99221f2fa69b45d046ff3ec150759ed8a9c8d3
--  __AUTH_CONST.__cfstring: 0x13a0 sha256:6b00991c2915e4df66f44d6193ff0352bf29bcbed6fb469d7b54bef37aba8fa6
--  __AUTH_CONST.__objc_const: 0x958 sha256:f1dab05b35b37675678eb876fa08e65786111f6ea85449cc71d59ea63b16ebfc
--  __AUTH_CONST.__weak_auth_got: 0x20 sha256:00d1c9286ce157a391a15c99d78f96da39609a21d2fc922ba1eb2abb0139baa3
--  __AUTH_CONST.__objc_intobj: 0x108 sha256:b22a52434fa428312d122ad2ecbef625c25a95d513ccefeb4968556ca4ba5612
--  __AUTH_CONST.__objc_doubleobj: 0x20 sha256:38ed0ffa360fb6e2271e0ce3ca8c41d3f8c563ad67384e06e1a4a0a6034e2578
--  __AUTH_CONST.__auth_got: 0xbb0 sha256:cda258b2a722a9336224ca9bb3997f0761213a8dac68d24b5fed88d80f18e2a3
--  __AUTH.__objc_data: 0x170 sha256:4664a71275daa32d99dc8f552be0e01a227001ca1dcf45c1e48dc3d32f94b9de
--  __AUTH.__data: 0x748 sha256:234ad5e61d5cdf990ae10ce586b546d24eab065530653913f75df0b2a147c256
-+  __DATA_CONST.__weak_got: 0x10 sha256:c9b00cf8e5fdc159d5e0657836ccec0cbd1eddc62a50f4b3c9f634c56153dbb7
-+  __DATA_CONST.__objc_selrefs: 0x298 sha256:443a3a63e1e7709254aa8b2f34418ca2b35547b2ceed255a6711e8d66c7a3572
-+  __DATA_CONST.__objc_superrefs: 0x8 sha256:2a5e837e796a5474be77d46d427ecfe7c72dc44b9e5037cf3439739ea5923cd2
-+  __DATA_CONST.__got: 0x228 sha256:ad111fb16ccc82cfbf2817e8a8375316cb2586191f6be846a9797e480443320b
-+  __AUTH_CONST.__const: 0x4fa8 sha256:af0ab0100bbf6e4468b3cbd6888707b61771ca8c15285e3aa83550dee663f075
-+  __AUTH_CONST.__cfstring: 0x13a0 sha256:8d4671bd3387d235567653459809d176ad38d36950aa2354328085a653ac9b19
-+  __AUTH_CONST.__objc_const: 0x958 sha256:9b82b672ce34c03ecb0256a14a72da45ba3cd7bdc7fda272a4c8eff3a884223f
-+  __AUTH_CONST.__weak_auth_got: 0x20 sha256:59e81c9c7f2566e4c4a24a2e1c4486b3098399ceebf08d98055fa9e0819aaa4d
-+  __AUTH_CONST.__objc_intobj: 0x108 sha256:e246e30f8b8ebb5eb89a4ef66c257ab07412f742a7b95ffd2c87cfac886cd9ea
-+  __AUTH_CONST.__objc_doubleobj: 0x20 sha256:ee6199ba6c4f34e38e5a3c57266de4b05533ca70f13021dd8df086a4c426436d
-+  __AUTH_CONST.__auth_got: 0xba8 sha256:e7a8700798fa9cfc104f6a7f314057237b214aef5d3cbd2b1861f662fbc65fd0
-+  __AUTH.__objc_data: 0x170 sha256:89500352cb26f355faa7f504f7dee939384e7c8e4808a8a456226e894560900e
-+  __AUTH.__data: 0x748 sha256:8e2ccc129db4bb992095f7f220199d75d4cfcdbdf62352ebf01ec5f8f67c4e8d
-   __DATA.__objc_ivar: 0x8 sha256:1842d9d60985977543496f68d38a01a5470beb95bdae33af49b8167ada489f83
-   __DATA.__data: 0xd0 sha256:231ab8e947f19a24050dff4424b424de2bf8d4d100ebeba6016d746ed5bedcee
--  __DATA.__common: 0x9db20 sha256:63007b3af5c81ee4e1c3729f1d7fb2e4146cfdf252e22ad79d995814db14ffbf
-+  __DATA.__common: 0x9db68 sha256:91f7e79d24d2605d6fae49af58a10267fd641e6868bde9bc29072ecebf53443c
-   __DATA.__bss: 0x250 sha256:2b73f6b3cd6cd9f97ccbbedc2fa1904331b916b2ace865882f72ddd083c79b04
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
--  UUID: 4803D4D9-1632-3307-83A3-D0701778AE82
 -  Functions: 2516
--  Symbols:   5932
--  CStrings:  1528
-+  UUID: 59894C87-EFD3-3A1B-B036-053FB80A164A
+-  Symbols:   4091
+-  CStrings:  1307
 +  Functions: 2571
-+  Symbols:   6044
-+  CStrings:  1546
- 
++  Symbols:   4168
++  CStrings:  1322
 Symbols:
 + GCC_except_table100
 + GCC_except_table103
@@ -678,9 +611,6 @@ Symbols:
 + ____ZN11GpsdRuntime9delayExitERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEi_block_invoke
 + ____ZN14GnssDeviceMain8instanceEv_block_invoke
 + ____ZN15GnssTimerBounceC2EP11GnssRunLoopS1__block_invoke
-+ ___block_descriptor_tmp.12
-+ ___block_descriptor_tmp.9
-+ ___block_literal_global.14
 - GCC_except_table111
 - GCC_except_table115
 - GCC_except_table118
@@ -1183,9 +1113,6 @@ Symbols:
 - ____ZN14GnssDeviceTask8instanceEv_block_invoke
 - ____ZN17GnssDeviceHandler8instanceEv_block_invoke
 - ____ZN7GnssHal13PlatformTimer8setTimerEib_block_invoke
-- ___block_descriptor_tmp.10
-- ___block_descriptor_tmp.5
-- ___block_descriptor_tmp.6
 - _dispatch_release
 CStrings:
 + "#fifo,%p,clear"
@@ -1200,7 +1127,6 @@ CStrings:
 + "#runtime,delayExit,exitNow"
 + "#runtime,delayExit,reason,%{public}s,delay,%{public}d"
 + "#version,CoreGPS-365.0.5,machContSec,%{public}.3f,BuildTime,{Jun 18 2026,19:48:09}"
-+ "/AppleInternal/Library/BuildRoots/4~CSIGugD2aNW1oeVvUbrD-hJFLIb8lTibSw4O9xI/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/google/protobuf/repeated_field.h"
 + "/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CoreGPS/Sources/Device/GnssDeviceManager.cpp"
 + "/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CoreGPS/Sources/Device/GnssIndicationHandler.cpp"
 + "/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CoreGPS/Sources/Util/GnssTimerBounce.cpp"
@@ -1280,7 +1206,6 @@ CStrings:
 - "#runtime,bounceExit,noDeviceLoop,reason,%{public}s"
 - "#runtime,bounceExit,reason,%{public}s,delay,%{public}d"
 - "#version,CoreGPS-365.0.3,machContSec,%{public}.3f,BuildTime,{Jun  3 2026,21:12:32}"
-- "/AppleInternal/Library/BuildRoots/4~CRCEugC9WN7cibZ8mCgNtQK0h36O_YOfRYjhp6o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/google/protobuf/repeated_field.h"
 - "21:15:10"
 - "GnssCommPassthrough,pushRequest,unknown,type,%d"
 - "GnssDeviceCommon,pushRequest(Request),notImplemented,type,%d"
@@ -1349,5 +1274,4 @@ CStrings:
 - "com.apple.gpsd.main"
 - "createQueue"
 - "false && \"GnssRunLoop,createQueue,queue,null,%{public}s\""
-
 ```

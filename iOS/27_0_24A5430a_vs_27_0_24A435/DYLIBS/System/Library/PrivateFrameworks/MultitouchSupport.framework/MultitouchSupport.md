@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MultitouchSupport.framework/MultitouchSupport`
 
-```diff
+### Section Size Changes
 
- 10100.44.0.0.0
--  __TEXT.__text: 0x1d4b8
-+  __TEXT.__text: 0x1d4bc
-   __TEXT.__objc_methlist: 0x2ec
-   __TEXT.__const: 0x2018
-   __TEXT.__cstring: 0x169d
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1d4b8` | `0x1d4bc` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _MTZephyrGetRowCalibTable : 360 -> 364
 ```

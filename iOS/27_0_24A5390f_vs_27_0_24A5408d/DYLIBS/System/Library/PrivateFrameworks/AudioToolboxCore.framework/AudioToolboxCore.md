@@ -2,52 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3052fc` | `0x3057d0` | **`+0x4d4`** |
+| `__TEXT.__gcc_except_tab` | `0x26d38` | `0x26da4` | **`+0x6c`** |
+| `__TEXT.__oslogstring` | `0x155fd` | `0x1563e` | **`+0x41`** |
+| `__TEXT.__objc_methlist` | `0x3c7c` | `0x3c94` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0xe5e8` | `0xe600` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1cf8` | `0x1d00` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1638.0.0.0.0
--  __TEXT.__text: 0x3052fc
 +1638.104.1.0.0
-+  __TEXT.__text: 0x3057d0
-   __TEXT.__realtime: 0x38e00
--  __TEXT.__objc_methlist: 0x3c7c
-+  __TEXT.__objc_methlist: 0x3c94
-   __TEXT.__const: 0x2462a
-   __TEXT.__dlopen_cstrs: 0x50a
--  __TEXT.__gcc_except_tab: 0x26d38
-+  __TEXT.__gcc_except_tab: 0x26da4
-   __TEXT.__cstring: 0x212ea
--  __TEXT.__oslogstring: 0x155fd
-+  __TEXT.__oslogstring: 0x1563e
-   __TEXT.__dof_AudioTool: 0x4f1
-   __TEXT.__dof_AUHosting: 0x432
-   __TEXT.__dof_AudioConv: 0x129e
-   __TEXT.__dof_AUHostin0: 0x4a9
-   __TEXT.__dof_IPCAudioU: 0x582
--  __TEXT.__unwind_info: 0xe5e8
-+  __TEXT.__unwind_info: 0xe600
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x228
-   __DATA_CONST.__objc_protolist: 0xc8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1cf8
-+  __DATA_CONST.__objc_selrefs: 0x1d00
-   __DATA_CONST.__objc_protorefs: 0x70
-   __DATA_CONST.__objc_superrefs: 0x1e0
-   __DATA_CONST.__objc_arraydata: 0x70
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libxml2.2.dylib
 -  Functions: 12155
--  Symbols:   20168
+-  Symbols:   19438
 -  CStrings:  6764
 +  Functions: 12157
-+  Symbols:   20174
++  Symbols:   19443
 +  CStrings:  6765
- 
 Symbols:
 + -[AUAudioUnit resolveComponent]
 + -[AUV2BridgeBus .cxx_construct]
@@ -889,7 +867,6 @@ Symbols:
 + GCC_except_table9986
 + GCC_except_table9993
 + _OBJC_IVAR_$_AUV2BridgeBus._mutex
-+ _objc_msgSend$resolveComponent
 - GCC_except_table10000
 - GCC_except_table10003
 - GCC_except_table10011

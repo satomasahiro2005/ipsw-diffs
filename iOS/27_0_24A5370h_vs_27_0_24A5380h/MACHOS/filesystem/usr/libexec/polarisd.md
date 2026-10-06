@@ -2,14 +2,16 @@
 
 > `/usr/libexec/polarisd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x40` | `0x38` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__text: 0x4
-   __TEXT.__auth_stubs: 0x10
--  __TEXT.__const: 0x40
-+  __TEXT.__const: 0x38
-   __TEXT.__unwind_info: 0x58
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__auth_got: 0x8
-
+-256.0.2.500.1
++256.0.3.0.0
 ```

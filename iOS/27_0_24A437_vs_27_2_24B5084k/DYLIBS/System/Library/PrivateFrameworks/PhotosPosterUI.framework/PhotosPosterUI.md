@@ -2,96 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/PhotosPosterUI.framework/PhotosPosterUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc5ca4` | `0xc670c` | **`+0xa68`** |
+| `__TEXT.__oslogstring` | `0x49ee` | `0x4cf0` | **`+0x302`** |
+| `__AUTH_CONST.__objc_const` | `0x119a8` | `0x11b38` | **`+0x190`** |
+| `__TEXT.__objc_methlist` | `0xa624` | `0xa72c` | **`+0x108`** |
+| `__TEXT.__swift5_typeref` | `0x50c2` | `0x4ffc` | **`-0xc6`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7370` | `0x7420` | **`+0xb0`** |
+| `__DATA_CONST.__const` | `0x2d18` | `0x2d90` | **`+0x78`** |
+| `__AUTH.__data` | `0x9b0` | `0x950` | **`-0x60`** |
+| `__AUTH_CONST.__cfstring` | `0x5060` | `0x50c0` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0x3088` | `0x30d8` | **`+0x50`** |
+| `__TEXT.__constg_swiftt` | `0x177c` | `0x172c` | **`-0x50`** |
+| `__TEXT.__swift5_reflstr` | `0xf71` | `0xf21` | **`-0x50`** |
+| `__TEXT.__cstring` | `0x6e36` | `0x6e7e` | **`+0x48`** |
+| `__TEXT.__const` | `0x2f18` | `0x2ed8` | **`-0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x1b10` | `0x1b48` | **`+0x38`** |
+| `__DATA.__data` | `0x2c68` | `0x2c38` | **`-0x30`** |
+| `__TEXT.__unwind_info` | `0x3170` | `0x31a0` | **`+0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0xb6c` | `0xb48` | **`-0x24`** |
+| `__AUTH_CONST.__const` | `0x32c0` | `0x32e0` | **`+0x20`** |
+| `__TEXT.__swift5_capture` | `0x8cc` | `0x8dc` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0xa88` | `0xa90` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x1200` | `0x1208` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x340` | `0x348` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x19ac` | `0x19a4` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.235.0.0
--  __TEXT.__text: 0xc0c40
--  __TEXT.__objc_methlist: 0xa624
 +916.40.110.0.0
-+  __TEXT.__text: 0xc16f4
-+  __TEXT.__objc_methlist: 0xa72c
-   __TEXT.__dlopen_cstrs: 0x64
--  __TEXT.__const: 0x2f18
--  __TEXT.__constg_swiftt: 0x177c
--  __TEXT.__swift5_typeref: 0x50c2
-+  __TEXT.__const: 0x2ed8
-+  __TEXT.__constg_swiftt: 0x172c
-+  __TEXT.__swift5_typeref: 0x4ffc
-   __TEXT.__swift5_builtin: 0xdc
--  __TEXT.__swift5_reflstr: 0xf71
--  __TEXT.__swift5_fieldmd: 0xb6c
-+  __TEXT.__swift5_reflstr: 0xf21
-+  __TEXT.__swift5_fieldmd: 0xb48
-   __TEXT.__swift5_assocty: 0x2d8
-   __TEXT.__swift5_proto: 0xd0
-   __TEXT.__swift5_types: 0xb8
--  __TEXT.__cstring: 0x6e36
--  __TEXT.__swift5_capture: 0x8cc
--  __TEXT.__oslogstring: 0x49ee
-+  __TEXT.__cstring: 0x6e7e
-+  __TEXT.__swift5_capture: 0x8dc
-+  __TEXT.__oslogstring: 0x4cf0
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x10
--  __TEXT.__gcc_except_tab: 0x19ac
-+  __TEXT.__gcc_except_tab: 0x19a4
-   __TEXT.__ustring: 0xdc
--  __TEXT.__unwind_info: 0x3c68
-+  __TEXT.__unwind_info: 0x3c80
-   __TEXT.__eh_frame: 0x4dc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2d18
--  __DATA_CONST.__objc_classlist: 0x340
-+  __DATA_CONST.__const: 0x2d90
-+  __DATA_CONST.__objc_classlist: 0x348
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x268
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7370
-+  __DATA_CONST.__objc_selrefs: 0x7420
-   __DATA_CONST.__objc_protorefs: 0x88
-   __DATA_CONST.__objc_superrefs: 0x268
-   __DATA_CONST.__objc_arraydata: 0x60
--  __DATA_CONST.__got: 0x1200
--  __AUTH_CONST.__const: 0x32c0
--  __AUTH_CONST.__cfstring: 0x5060
--  __AUTH_CONST.__objc_const: 0x119a8
-+  __DATA_CONST.__got: 0x1208
-+  __AUTH_CONST.__const: 0x32e0
-+  __AUTH_CONST.__cfstring: 0x50c0
-+  __AUTH_CONST.__objc_const: 0x11b38
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__objc_doubleobj: 0x60
-   __AUTH_CONST.__objc_intobj: 0xf0
--  __AUTH_CONST.__auth_got: 0x1b10
--  __AUTH.__objc_data: 0x3088
--  __AUTH.__data: 0x9b0
--  __DATA.__objc_ivar: 0xa88
--  __DATA.__data: 0x2c68
-+  __AUTH_CONST.__auth_got: 0x1b48
-+  __AUTH.__objc_data: 0x30d8
-+  __AUTH.__data: 0x950
-+  __DATA.__objc_ivar: 0xa90
-+  __DATA.__data: 0x2c38
-   __DATA.__common: 0x1a0
-   __DATA_DIRTY.__objc_data: 0xa0
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5306
--  Symbols:   10166
+-  Symbols:   7126
 -  CStrings:  1245
 +  Functions: 5310
-+  Symbols:   10227
++  Symbols:   7169
 +  CStrings:  1257
- 
 Symbols:
 + +[PUWallpaperPosterDisplayFallback shouldReframeLayerStack:deviceConfiguration:]
 + +[PUWallpaperPosterDisplayFallback substituteLayerStackForWallpaperURL:bakedLayerStack:deviceConfiguration:]
@@ -254,34 +206,6 @@ Symbols:
 + ___swift_closure_destructor.121Tm
 + ___swift_memcpy65_8
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyACy06PhotosA6UICore0E10AsyncImageVyAA012_ConditionalD0VyAHyACyAA0H0VAA18_AspectRatioLayoutVGAA5ColorVGAOGAD0eg5AssetH8ProviderVGAA06_FrameL0VGAA11_ClipEffectVyAA16RoundedRectangleVGGA0_GAA4ViewHPA1_AAA3_HPAwAA3_HPAtAA3_HPyHC_AvA0U8ModifierHPyHCHC_A0_AAA4_HPyHCHC_A0_AAA4_HPyHCHC
-+ _objc_msgSend$_applyReframedLayerStack:style:displayContext:posterMedia:
-+ _objc_msgSend$_compoundLayerStack:matchesDisplayContext:
-+ _objc_msgSend$_createAndSetViewModelForDisplayContext:withLayerStack:segmentationItem:containerSize:
-+ _objc_msgSend$_displayContextForCurrentContainer
-+ _objc_msgSend$_displayContextForSize:
-+ _objc_msgSend$_displayScale
-+ _objc_msgSend$_loadContentForDisplayContext:containerSize:
-+ _objc_msgSend$_reframeLayerStackFromOriginalAssetIfNeeded:wallpaperURL:style:displayContext:posterMedia:
-+ _objc_msgSend$_renderLayerStackForDisplayContext:segmentationItem:containerSize:
-+ _objc_msgSend$_transitionToDisplayContext:containerSize:withCoordinator:
-+ _objc_msgSend$canvasSize
-+ _objc_msgSend$contextLinkingMode
-+ _objc_msgSend$editConfigurationsPerDisplayMergedWith:posterWideConfiguration:
-+ _objc_msgSend$initWithImage:frame:zPosition:identifier:
-+ _objc_msgSend$initWithLayers:layout:depthEnabled:parallaxDisabled:clockAreaLuminance:settlingEffectEnabled:spatialPhotoEnabled:userAdjustedVisibleFrame:
-+ _objc_msgSend$layoutByUpdatingInactiveFrame:
-+ _objc_msgSend$layoutByUpgradingToConfiguration:
-+ _objc_msgSend$loadFromArchiveURL:error:
-+ _objc_msgSend$px_canvasSize
-+ _objc_msgSend$setAccessibilityIdentifier:
-+ _objc_msgSend$setContextLinkingMode:
-+ _objc_msgSend$setPu_contextLinkingMode:
-+ _objc_msgSend$setSupportsLandscapeConfiguration:
-+ _objc_msgSend$setTransitioningContainerSize:
-+ _objc_msgSend$shouldReframeLayerStack:deviceConfiguration:
-+ _objc_msgSend$startTimedProgressWithExpectedDuration:
-+ _objc_msgSend$substituteLayerStackForWallpaperURL:bakedLayerStack:deviceConfiguration:
-+ _objc_msgSend$transitioningContainerSize
 + _symbolic SaySo6UIViewCGz_Xx
 + _symbolic _____yAAyAAy_____y_____yACyAAy__________G_____GAGG_____G_____G_____y_____GGAPG 7SwiftUI15ModifiedContentV 06PhotosA6UICore0E10AsyncImageV AA012_ConditionalD0V AA0H0V AA18_AspectRatioLayoutV AA5ColorV AD0eg5AssetH8ProviderV AA06_FrameL0V AA11_ClipEffectV AA16RoundedRectangleV
 + _symbolic _____yAAy_____y_____yACyAAy__________G_____GAGG_____G_____G_____y_____GG 7SwiftUI15ModifiedContentV 06PhotosA6UICore0E10AsyncImageV AA012_ConditionalD0V AA0H0V AA18_AspectRatioLayoutV AA5ColorV AD0eg5AssetH8ProviderV AA06_FrameL0V AA11_ClipEffectV AA16RoundedRectangleV
@@ -401,16 +325,6 @@ Symbols:
 - ___swift_closure_destructor.128Tm
 - ___swift_memcpy73_8
 - _get_witness_table 7SwiftUI15ModifiedContentVyACyACy06PhotosA6UICore0E10AsyncImageVyAA012_ConditionalD0VyAHyACyACyAA0H0VAA18_AspectRatioLayoutVGAA16_OverlayModifierVyACyAmA06_FrameL0VGSgGGAA5ColorVGAWGAD0eg5AssetH8ProviderVGAQGAA11_ClipEffectVyAA16RoundedRectangleVGGA6_GAA4ViewHPA7_AAA9_HPA1_AAA9_HPA0_AAA9_HPyHC_AqA0wN0HPyHCHC_A6_AAA10_HPyHCHC_A6_AAA10_HPyHCHC
-- _objc_msgSend$_createAndSetViewModelForDisplayContext:withLayerStack:segmentationItem:
-- _objc_msgSend$_currentDisplaySupportsLandscape
-- _objc_msgSend$_detectDisplayContextChangeWithSize:
-- _objc_msgSend$_displayContextFromContainerSize:
-- _objc_msgSend$_loadContentForDisplayContext:
-- _objc_msgSend$_renderLayerStackForDisplayContext:segmentationItem:
-- _objc_msgSend$_transitionToDisplayContext:withCoordinator:
-- _objc_msgSend$currentEditViewModel
-- _objc_msgSend$editConfigurationsPerDisplay
-- _objc_msgSend$startTimedProgressWithExpectedDuration:showText:
 - _symbolic So7UIImageC
 - _symbolic So7UIImageCSg
 - _symbolic _____yAAyAAy_____y_____yACyAAyAAy__________G_____yAAyAF_____GSgGG_____GAMG_____GAHG_____y_____GGAUG 7SwiftUI15ModifiedContentV 06PhotosA6UICore0E10AsyncImageV AA012_ConditionalD0V AA0H0V AA18_AspectRatioLayoutV AA16_OverlayModifierV AA06_FrameL0V AA5ColorV AD0eg5AssetH8ProviderV AA11_ClipEffectV AA16RoundedRectangleV

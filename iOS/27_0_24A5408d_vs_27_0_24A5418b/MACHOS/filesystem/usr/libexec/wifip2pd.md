@@ -2,69 +2,52 @@
 
 > `/usr/libexec/wifip2pd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5e5198` | `0x5e5574` | **`+0x3dc`** |
+| `__TEXT.__oslogstring` | `0x2267c` | `0x226bc` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x1028` | `0x1030` | **`+0x8`** |
+| `__TEXT.__cstring` | `0xfa24` | `0xfa28` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
 - `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_entry`
 - `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_builtin`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
 - `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_builtin`
 - `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_fieldmd`
 - `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
 - `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -885.85.0.0.0
--  __TEXT.__text: 0x5e5198
 +885.85.4.1.0
-+  __TEXT.__text: 0x5e5574
-   __TEXT.__auth_stubs: 0x5240
-   __TEXT.__objc_stubs: 0x4720
-   __TEXT.__objc_methlist: 0x1bf4
-   __TEXT.__const: 0x404b0
-   __TEXT.__swift5_typeref: 0xd367
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__cstring: 0xfa24
--  __TEXT.__oslogstring: 0x2267c
-+  __TEXT.__cstring: 0xfa28
-+  __TEXT.__oslogstring: 0x226bc
-   __TEXT.__constg_swiftt: 0x103f4
-   __TEXT.__swift5_fieldmd: 0x169d8
-   __TEXT.__swift5_types: 0x12e0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x178
-   __DATA_CONST.__auth_got: 0x2928
--  __DATA_CONST.__got: 0x1028
-+  __DATA_CONST.__got: 0x1030
-   __DATA_CONST.__auth_ptr: 0x7950
-   __DATA.__objc_const: 0xac90
-   __DATA.__objc_selrefs: 0x16e0
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 24965
 -  Symbols:   2318
 -  CStrings:  5522
 +  Symbols:   2319
 +  CStrings:  5523
- 
 Symbols:
 + _AWDLTrafficRegistrationServiceAirDrop
 Functions:

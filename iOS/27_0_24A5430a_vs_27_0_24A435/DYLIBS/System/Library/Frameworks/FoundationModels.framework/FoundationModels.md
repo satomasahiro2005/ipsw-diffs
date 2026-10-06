@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/FoundationModels.framework/FoundationModels`
 
-```diff
+### Section Size Changes
 
- 2.0.68.1.101
--  __TEXT.__text: 0x2295a0
-+  __TEXT.__text: 0x22968c
-   __TEXT.__objc_methlist: 0x31c
-   __TEXT.__const: 0x1e338
-   __TEXT.__gcc_except_tab: 0x28
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2295a0` | `0x22968c` | **`+0xec`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1cf0bc118 -> sub_1cf689118 : 1040 -> 1020
 ~ sub_1cf0beb44 -> sub_1cf68bb30 : 736 -> 756

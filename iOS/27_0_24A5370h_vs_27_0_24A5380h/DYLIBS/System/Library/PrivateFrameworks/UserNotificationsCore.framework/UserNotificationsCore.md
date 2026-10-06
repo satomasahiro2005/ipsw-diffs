@@ -2,115 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/UserNotificationsCore.framework/UserNotificationsCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0xfba0` | `0xf480` | **`-0x720`** |
+| `__DATA_DIRTY.__data` | `0x6c50` | `0x72f0` | **`+0x6a0`** |
+| `__DATA_DIRTY.__bss` | `0x7390` | `0x7930` | **`+0x5a0`** |
+| `__DATA.__data` | `0x44e8` | `0x4098` | **`-0x450`** |
+| `__AUTH_CONST.__objc_const` | `0x23400` | `0x23810` | **`+0x410`** |
+| `__AUTH.__data` | `0x37a0` | `0x34c8` | **`-0x2d8`** |
+| `__AUTH_CONST.__const` | `0xdb08` | `0xd9b8` | **`-0x150`** |
+| `__TEXT.__const` | `0x13788` | `0x1363c` | **`-0x14c`** |
+| `__AUTH.__objc_data` | `0x11f0` | `0x1108` | **`-0xe8`** |
+| `__DATA_DIRTY.__objc_data` | `0x2720` | `0x2808` | **`+0xe8`** |
+| `__TEXT.__swift5_typeref` | `0x7848` | `0x77d7` | **`-0x71`** |
+| `__TEXT.__swift5_fieldmd` | `0x51b0` | `0x5164` | **`-0x4c`** |
+| `__TEXT.__text` | `0x231960` | `0x231938` | **`-0x28`** |
+| `__TEXT.__swift5_reflstr` | `0x4767` | `0x474a` | **`-0x1d`** |
+| `__TEXT.__constg_swiftt` | `0x797c` | `0x7960` | **`-0x1c`** |
+| `__TEXT.__eh_frame` | `0x82b8` | `0x82d4` | **`+0x1c`** |
+| `__TEXT.__swift5_assocty` | `0x720` | `0x708` | **`-0x18`** |
+| `__TEXT.__unwind_info` | `0x64d8` | `0x64c0` | **`-0x18`** |
+| `__TEXT.__swift5_capture` | `0x210c` | `0x20f8` | **`-0x14`** |
+| `__TEXT.__oslogstring` | `0x115f7` | `0x1160a` | **`+0x13`** |
+| `__TEXT.__cstring` | `0x90e3` | `0x90d1` | **`-0x12`** |
+| `__TEXT.__objc_methlist` | `0x5f64` | `0x5f74` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0xd84` | `0xd78` | **`-0xc`** |
+| `__DATA_CONST.__got` | `0x1728` | `0x1720` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3e08` | `0x3e10` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x700` | `0x704` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0x5e4` | `0x5e0` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x231960
--  __TEXT.__objc_methlist: 0x5f64
--  __TEXT.__cstring: 0x90e3
--  __TEXT.__const: 0x13788
-+  __TEXT.__text: 0x231938
-+  __TEXT.__objc_methlist: 0x5f74
-+  __TEXT.__const: 0x1363c
-+  __TEXT.__cstring: 0x90d1
-+  __TEXT.__oslogstring: 0x1160a
-   __TEXT.__gcc_except_tab: 0x448
--  __TEXT.__oslogstring: 0x115f7
-   __TEXT.__dlopen_cstrs: 0x60
--  __TEXT.__constg_swiftt: 0x797c
--  __TEXT.__swift5_typeref: 0x7848
--  __TEXT.__swift5_reflstr: 0x4767
--  __TEXT.__swift5_fieldmd: 0x51b0
-+  __TEXT.__constg_swiftt: 0x7960
-+  __TEXT.__swift5_typeref: 0x77d7
-+  __TEXT.__swift5_reflstr: 0x474a
-+  __TEXT.__swift5_fieldmd: 0x5164
-   __TEXT.__swift5_builtin: 0x1f4
--  __TEXT.__swift5_assocty: 0x720
-+  __TEXT.__swift5_assocty: 0x708
-+  __TEXT.__swift5_proto: 0xd78
-+  __TEXT.__swift5_types: 0x5e0
-   __TEXT.__swift5_protos: 0x180
--  __TEXT.__swift5_proto: 0xd84
--  __TEXT.__swift5_types: 0x5e4
-+  __TEXT.__swift5_capture: 0x20f8
-   __TEXT.__swift_as_entry: 0x214
--  __TEXT.__swift_as_cont: 0x3e4
--  __TEXT.__swift5_capture: 0x210c
-   __TEXT.__swift_as_ret: 0x238
-+  __TEXT.__swift_as_cont: 0x3e4
-   __TEXT.__swift5_mpenum: 0x6c
--  __TEXT.__unwind_info: 0x64d8
--  __TEXT.__eh_frame: 0x82b8
-+  __TEXT.__unwind_info: 0x64c0
-+  __TEXT.__eh_frame: 0x82d4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-708.0.0.0.0
++713.0.0.0.0
 
-   __DATA_CONST.__objc_catlist: 0x60
-   __DATA_CONST.__objc_protolist: 0x2f8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3e08
-+  __DATA_CONST.__objc_selrefs: 0x3e10
-   __DATA_CONST.__objc_protorefs: 0x170
-   __DATA_CONST.__objc_superrefs: 0x180
--  __DATA_CONST.__got: 0x1728
--  __AUTH_CONST.__const: 0xdb08
-+  __DATA_CONST.__got: 0x1720
-+  __AUTH_CONST.__const: 0xd9b8
-   __AUTH_CONST.__cfstring: 0x48a0
--  __AUTH_CONST.__objc_const: 0x23400
-+  __AUTH_CONST.__objc_const: 0x23810
-   __AUTH_CONST.__objc_intobj: 0x78
-   __AUTH_CONST.__auth_got: 0x2310
--  __AUTH.__objc_data: 0x11f0
--  __AUTH.__data: 0x37a0
--  __DATA.__objc_ivar: 0x700
--  __DATA.__data: 0x44e8
--  __DATA.__bss: 0xfba0
-+  __AUTH.__objc_data: 0x1108
-+  __AUTH.__data: 0x34c8
-+  __DATA.__objc_ivar: 0x704
-+  __DATA.__data: 0x4098
-+  __DATA.__bss: 0xf480
-   __DATA.__common: 0x1b0
--  __DATA_DIRTY.__objc_data: 0x2720
--  __DATA_DIRTY.__data: 0x6c50
--  __DATA_DIRTY.__bss: 0x7390
-+  __DATA_DIRTY.__objc_data: 0x2808
-+  __DATA_DIRTY.__data: 0x72f0
-+  __DATA_DIRTY.__bss: 0x7930
-   __DATA_DIRTY.__common: 0x3c8
-   - /System/Library/Frameworks/AccessoryLiveActivities.framework/AccessoryLiveActivities
-   - /System/Library/Frameworks/AccessoryNotifications.framework/AccessoryNotifications
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9489
--  Symbols:   12804
--  CStrings:  2778
+-  Symbols:   6452
+-  CStrings:  2197
 +  Functions: 9466
-+  Symbols:   12751
-+  CStrings:  2775
- 
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __DATA_DIRTY.__common : content changed
++  Symbols:   6439
++  CStrings:  2194
 Symbols:
 + -[UNCNotificationRecordMapper _categoriesByIdentifier]
 + _OBJC_IVAR_$_UNCNotificationRecordMapper._cachedCategoriesByIdentifier
@@ -122,8 +58,6 @@ Symbols:
 + ___swift_memcpy160_8
 + ___swift_project_boxed_opaque_existential_2Tm
 + ___unnamed_23
-+ _objc_msgSend$_categoriesByIdentifier
-+ _objc_msgSend$dictionaryWithCapacity:
 + _symbolic _____SgXw 21UserNotificationsCore22AlertCoordinatorClientC
 - __OBJC_$_CATEGORY_NSArray_$_UNSNotificationRecord
 - __OBJC_$_CLASS_METHODS_UNCNotificationSourceDescription(Factory|Testing)
@@ -146,7 +80,6 @@ Symbols:
 - _get_type_metadata 15Synchronization5MutexVySay21UserNotificationsCore26AppleWatchForwardingRecord33_C9A03BC249DD699D896BC7E941311696LLVGG noncopyable
 - _get_type_metadata 15Synchronization5MutexVySayy21UserNotificationsCore16AccessoryMonitorC5EventOYbcGG noncopyable
 - _get_type_metadata 15Synchronization5MutexVySbG noncopyable
-- _objc_msgSend$notificationSourceWithIdentifier:
 - _swift_runtimeSupportsNoncopyableTypes
 - _symbolic So28UNNotificationSourceSettingsCSg
 - _symbolic _____ 21UserNotificationsCore0A36NotificationEntityShowPreviewSettingO
@@ -154,5 +87,4 @@ CStrings:
 - "always"
 - "never"
 - "whenAuthenticated"
-
 ```

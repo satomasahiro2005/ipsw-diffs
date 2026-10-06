@@ -2,68 +2,43 @@
 
 > `/usr/libexec/installd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__got`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x70f48` | `0x70dfc` | **`-0x14c`** |
+| `__TEXT.__cstring` | `0x18723` | `0x18813` | **`+0xf0`** |
+| `__TEXT.__objc_methname` | `0xd567` | `0xd5c7` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0x3c00` | `0x3bb0` | **`-0x50`** |
+| `__DATA_CONST.__const` | `0x1638` | `0x1610` | **`-0x28`** |
+| `__DATA_CONST.__cfstring` | `0xa620` | `0xa600` | **`-0x20`** |
+| `__TEXT.__objc_stubs` | `0x8fe0` | `0x9000` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x390c` | `0x391c` | **`+0x10`** |
+| `__DATA.__objc_selrefs` | `0x28d8` | `0x28e0` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x14f8` | `0x14f0` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_data`
-- `__DATA.__data`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_typeref`
+
+### Other Changes
 
 ```diff
 
 -1673.0.0.0.0
--  __TEXT.__text: 0x70f48
 +1674.2.1.0.0
-+  __TEXT.__text: 0x70dfc
-   __TEXT.__auth_stubs: 0x1760
--  __TEXT.__objc_stubs: 0x8fe0
--  __TEXT.__objc_methlist: 0x390c
-+  __TEXT.__objc_stubs: 0x9000
-+  __TEXT.__objc_methlist: 0x391c
-   __TEXT.__const: 0x1c8
--  __TEXT.__cstring: 0x18723
-+  __TEXT.__cstring: 0x18813
-   __TEXT.__objc_classname: 0x69f
-   __TEXT.__objc_methtype: 0x2405
--  __TEXT.__objc_methname: 0xd567
--  __TEXT.__gcc_except_tab: 0x3c00
-+  __TEXT.__objc_methname: 0xd5c7
-+  __TEXT.__gcc_except_tab: 0x3bb0
-   __TEXT.__oslogstring: 0x14e7
-   __TEXT.__ustring: 0x84
-   __TEXT.__swift5_typeref: 0xe6
-
-   __TEXT.__swift5_fieldmd: 0x10
-   __TEXT.__swift5_types: 0x4
-   __TEXT.__swift5_capture: 0x80
--  __TEXT.__unwind_info: 0x14f8
-+  __TEXT.__unwind_info: 0x14f0
-   __TEXT.__eh_frame: 0x218
--  __DATA_CONST.__const: 0x1638
--  __DATA_CONST.__cfstring: 0xa620
-+  __DATA_CONST.__const: 0x1610
-+  __DATA_CONST.__cfstring: 0xa600
-   __DATA_CONST.__objc_classlist: 0x160
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0xe0
-
-   __DATA_CONST.__got: 0x478
-   __DATA_CONST.__auth_ptr: 0x68
-   __DATA.__objc_const: 0x6348
--  __DATA.__objc_selrefs: 0x28d8
-+  __DATA.__objc_selrefs: 0x28e0
-   __DATA.__objc_ivar: 0x2a4
-   __DATA.__objc_data: 0xe40
-   __DATA.__data: 0xbf8
 Symbols:
 + _MIMachOFileImageSlices
 + _MIMachOHasRunnableSliceSupportingPAC

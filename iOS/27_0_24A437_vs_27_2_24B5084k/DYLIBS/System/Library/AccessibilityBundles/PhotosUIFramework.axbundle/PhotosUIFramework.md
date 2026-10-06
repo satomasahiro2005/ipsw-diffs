@@ -2,64 +2,35 @@
 
 > `/System/Library/AccessibilityBundles/PhotosUIFramework.axbundle/PhotosUIFramework`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x146ac` | `0x141d4` | **`-0x4d8`** |
+| `__AUTH_CONST.__objc_const` | `0x5188` | `0x4e28` | **`-0x360`** |
+| `__AUTH_CONST.__cfstring` | `0x4f80` | `0x4d80` | **`-0x200`** |
+| `__DATA_DIRTY.__objc_data` | `0x27b0` | `0x25d0` | **`-0x1e0`** |
+| `__TEXT.__cstring` | `0x3bc9` | `0x3a7e` | **`-0x14b`** |
+| `__TEXT.__objc_methlist` | `0x21a4` | `0x20ec` | **`-0xb8`** |
+| `__DATA_CONST.__objc_classlist` | `0x430` | `0x400` | **`-0x30`** |
+| `__TEXT.__unwind_info` | `0x7e0` | `0x7c0` | **`-0x20`** |
+| `__DATA_CONST.__got` | `0x258` | `0x248` | **`-0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1d0` | `0x1c0` | **`-0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0xea8` | `0xea0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3048.0.0.0.0
--  __TEXT.__text: 0x13d64
--  __TEXT.__objc_methlist: 0x21a4
 +3050.3.0.0.0
-+  __TEXT.__text: 0x138a4
-+  __TEXT.__objc_methlist: 0x20ec
-   __TEXT.__const: 0x30
-   __TEXT.__gcc_except_tab: 0x438
--  __TEXT.__cstring: 0x3bc9
--  __TEXT.__unwind_info: 0x990
-+  __TEXT.__cstring: 0x3a7e
-+  __TEXT.__unwind_info: 0x968
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x628
--  __DATA_CONST.__objc_classlist: 0x430
-+  __DATA_CONST.__objc_classlist: 0x400
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xea8
-+  __DATA_CONST.__objc_selrefs: 0xea0
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x1d0
--  __DATA_CONST.__got: 0x258
-+  __DATA_CONST.__objc_superrefs: 0x1c0
-+  __DATA_CONST.__got: 0x248
-   __AUTH_CONST.__const: 0x4c0
--  __AUTH_CONST.__cfstring: 0x4f80
--  __AUTH_CONST.__objc_const: 0x5188
-+  __AUTH_CONST.__cfstring: 0x4d80
-+  __AUTH_CONST.__objc_const: 0x4e28
-   __AUTH_CONST.__objc_intobj: 0x18
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0x230
-   __DATA.__objc_ivar: 0x14
-   __DATA.__data: 0x188
--  __DATA_DIRTY.__objc_data: 0x27b0
-+  __DATA_DIRTY.__objc_data: 0x25d0
-   - /System/Library/Frameworks/ContactsUI.framework/ContactsUI
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 669
--  Symbols:   1909
+-  Symbols:   1612
 -  CStrings:  678
 +  Functions: 659
-+  Symbols:   1867
++  Symbols:   1570
 +  CStrings:  663
- 
 Symbols:
 + -[PUOneUpBarsControllerAccessibility _axLoadSpotlightOpenAppButtonAccessibility:]
 + GCC_except_table312
@@ -76,7 +47,6 @@ Symbols:
 + GCC_except_table553
 + GCC_except_table557
 + GCC_except_table643
-+ _objc_msgSend$_axLoadSpotlightOpenAppButtonAccessibility:
 - +[PUPhotoCommentEntryViewAccessibility _accessibilityPerformValidations:]
 - +[PUPhotoCommentEntryViewAccessibility(SafeCategory) safeCategoryBaseClass]
 - +[PUPhotoCommentEntryViewAccessibility(SafeCategory) safeCategoryTargetClassName]
@@ -134,7 +104,6 @@ Symbols:
 - __OBJC_METACLASS_RO_$___PUPhotoPostCommentTextEntryCellAccessibility_super
 - __OBJC_METACLASS_RO_$___UITextViewAccessibility__PhotosUI__UIKit_super
 - _kCFBooleanTrue
-- _objc_msgSend$setAccessibilityContainer:
 CStrings:
 + "currentEditingTool"
 + "photo.spotlight.open.app"

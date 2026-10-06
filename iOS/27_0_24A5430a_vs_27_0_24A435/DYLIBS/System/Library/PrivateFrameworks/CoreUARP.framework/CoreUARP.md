@@ -2,67 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/CoreUARP.framework/CoreUARP`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x893dc` | `0x8a184` | **`+0xda8`** |
+| `__AUTH_CONST.__objc_const` | `0x112a0` | `0x11918` | **`+0x678`** |
+| `__DATA_DIRTY.__objc_data` | `0x1c70` | `0x1f40` | **`+0x2d0`** |
+| `__TEXT.__objc_methlist` | `0x8980` | `0x8c00` | **`+0x280`** |
+| `__AUTH_CONST.__cfstring` | `0x7060` | `0x71c0` | **`+0x160`** |
+| `__TEXT.__unwind_info` | `0x26b8` | `0x2708` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x708` | `0x750` | **`+0x48`** |
+| `__DATA_CONST.__objc_classlist` | `0x618` | `0x660` | **`+0x48`** |
+| `__DATA_CONST.__objc_superrefs` | `0x608` | `0x650` | **`+0x48`** |
+| `__TEXT.__cstring` | `0x7d16` | `0x7d5d` | **`+0x47`** |
+| `__DATA.__objc_ivar` | `0xbbc` | `0xbe0` | **`+0x24`** |
+
+### Other Changes
+
 ```diff
 
- 1587.2.3.0.0
--  __TEXT.__text: 0x893dc
--  __TEXT.__objc_methlist: 0x8980
-+  __TEXT.__text: 0x8a184
-+  __TEXT.__objc_methlist: 0x8c00
-   __TEXT.__const: 0x230
--  __TEXT.__cstring: 0x7d16
-+  __TEXT.__cstring: 0x7d5d
-   __TEXT.__oslogstring: 0x6c43
-   __TEXT.__gcc_except_tab: 0x88c
-   __TEXT.__dlopen_cstrs: 0xa4
--  __TEXT.__unwind_info: 0x26b8
-+  __TEXT.__unwind_info: 0x2708
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x20c8
--  __DATA_CONST.__objc_classlist: 0x618
-+  __DATA_CONST.__objc_classlist: 0x660
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x3258
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x608
-+  __DATA_CONST.__objc_superrefs: 0x650
-   __DATA_CONST.__objc_arraydata: 0x20
--  __DATA_CONST.__got: 0x708
-+  __DATA_CONST.__got: 0x750
-   __AUTH_CONST.__const: 0x260
--  __AUTH_CONST.__cfstring: 0x7060
--  __AUTH_CONST.__objc_const: 0x112a0
-+  __AUTH_CONST.__cfstring: 0x71c0
-+  __AUTH_CONST.__objc_const: 0x11918
-   __AUTH_CONST.__objc_intobj: 0xca8
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__auth_got: 0x520
-   __AUTH.__objc_data: 0x2080
--  __DATA.__objc_ivar: 0xbbc
-+  __DATA.__objc_ivar: 0xbe0
-   __DATA.__data: 0x40d
--  __DATA_DIRTY.__objc_data: 0x1c70
-+  __DATA_DIRTY.__objc_data: 0x1f40
-   __DATA_DIRTY.__bss: 0xe0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libpcap.A.dylib
 -  Functions: 3960
--  Symbols:   7748
+-  Symbols:   6508
 -  CStrings:  2039
 +  Functions: 3999
-+  Symbols:   7860
++  Symbols:   6620
 +  CStrings:  2050
- 
 Symbols:
 + +[UARPSupportedAccessoryA3440 alternativeAppleModelNumbers]
 + +[UARPSupportedAccessoryA3440 appleModelNumber]

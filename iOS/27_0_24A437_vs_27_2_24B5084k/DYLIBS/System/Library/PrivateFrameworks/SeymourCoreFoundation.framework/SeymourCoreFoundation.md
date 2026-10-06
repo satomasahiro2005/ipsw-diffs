@@ -2,71 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/SeymourCoreFoundation.framework/SeymourCoreFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4bca4` | `0x4fdb0` | **`+0x410c`** |
+| `__DATA.__bss` | `0x6980` | `0x7280` | **`+0x900`** |
+| `__TEXT.__const` | `0x4e40` | `0x52f6` | **`+0x4b6`** |
+| `__TEXT.__eh_frame` | `0x4724` | `0x4ae4` | **`+0x3c0`** |
+| `__TEXT.__unwind_info` | `0x1d70` | `0x1f10` | **`+0x1a0`** |
+| `__AUTH.__data` | `0x8a0` | `0xa08` | **`+0x168`** |
+| `__AUTH_CONST.__const` | `0x26a0` | `0x2780` | **`+0xe0`** |
+| `__TEXT.__constg_swiftt` | `0xb48` | `0xc1c` | **`+0xd4`** |
+| `__DATA.__data` | `0xbf0` | `0xcc0` | **`+0xd0`** |
+| `__TEXT.__swift5_fieldmd` | `0xa04` | `0xabc` | **`+0xb8`** |
+| `__TEXT.__swift5_typeref` | `0xe87` | `0xf3e` | **`+0xb7`** |
+| `__TEXT.__swift5_reflstr` | `0x732` | `0x7b2` | **`+0x80`** |
+| `__TEXT.__cstring` | `0x71c` | `0x78c` | **`+0x70`** |
+| `__TEXT.__swift5_proto` | `0x548` | `0x59c` | **`+0x54`** |
+| `__AUTH_CONST.__auth_got` | `0xc00` | `0xc40` | **`+0x40`** |
+| `__TEXT.__swift5_assocty` | `0x430` | `0x448` | **`+0x18`** |
+| `__TEXT.__swift5_types` | `0xd0` | `0xdc` | **`+0xc`** |
+| `__TEXT.__swift5_protos` | `0x2c` | `0x30` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2027.0.146.1.4
--  __TEXT.__text: 0x49c24
--  __TEXT.__const: 0x4e40
--  __TEXT.__swift5_typeref: 0xe87
--  __TEXT.__swift5_fieldmd: 0xa04
--  __TEXT.__constg_swiftt: 0xb48
 +2027.1.50.0.1
-+  __TEXT.__text: 0x4db08
-+  __TEXT.__const: 0x52f6
-+  __TEXT.__swift5_typeref: 0xf3e
-+  __TEXT.__constg_swiftt: 0xc1c
-+  __TEXT.__swift5_reflstr: 0x7b2
-+  __TEXT.__swift5_fieldmd: 0xabc
-   __TEXT.__swift5_builtin: 0x14
--  __TEXT.__swift5_protos: 0x2c
--  __TEXT.__swift5_types: 0xd0
--  __TEXT.__swift5_reflstr: 0x732
--  __TEXT.__swift5_proto: 0x548
--  __TEXT.__cstring: 0x71c
--  __TEXT.__swift5_assocty: 0x430
-+  __TEXT.__swift5_proto: 0x59c
-+  __TEXT.__swift5_types: 0xdc
-+  __TEXT.__swift5_assocty: 0x448
-+  __TEXT.__cstring: 0x78c
-+  __TEXT.__swift5_protos: 0x30
-   __TEXT.__swift5_capture: 0x374
-   __TEXT.__swift_as_entry: 0x4
-   __TEXT.__swift_as_ret: 0x4
-   __TEXT.__swift_as_cont: 0x4
--  __TEXT.__unwind_info: 0x2568
--  __TEXT.__eh_frame: 0x4734
-+  __TEXT.__unwind_info: 0x2760
-+  __TEXT.__eh_frame: 0x4af4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x20
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x26a0
-+  __AUTH_CONST.__const: 0x2780
-   __AUTH_CONST.__objc_const: 0xb8
--  __AUTH_CONST.__auth_got: 0xc00
--  __AUTH.__data: 0x8a0
--  __DATA.__data: 0xbf0
-+  __AUTH_CONST.__auth_got: 0xc40
-+  __AUTH.__data: 0xa08
-+  __DATA.__data: 0xcc0
-   __DATA_DIRTY.__data: 0xa78
-   __DATA_DIRTY.__bss: 0x1d00
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
 -  Functions: 2321
--  Symbols:   536
+-  Symbols:   532
 -  CStrings:  36
 +  Functions: 2435
-+  Symbols:   552
++  Symbols:   548
 +  CStrings:  39
- 
 Symbols:
 + _associated conformance 21SeymourCoreFoundation23AudioLanguagePreferenceV10CodingKeys33_A706B72FFFFC7CB4260FDCE26C6AC481LLOSHAASQ
 + _associated conformance 21SeymourCoreFoundation23AudioLanguagePreferenceV10CodingKeys33_A706B72FFFFC7CB4260FDCE26C6AC481LLOs0G3KeyAAs23CustomStringConvertible

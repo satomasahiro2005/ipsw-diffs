@@ -2,30 +2,31 @@
 
 > `/System/Library/FlowTools/Tools/SiriTimeFlowTools.flowtool/SiriTimeFlowTools`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__auth_ptr`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4dca4` | `0x4dcd4` | **`+0x30`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 3600.26.13.0.0
--  __TEXT.__text: 0x4dca4
-+  __TEXT.__text: 0x4dcd4
-   __TEXT.__auth_stubs: 0x1320
-   __TEXT.__objc_stubs: 0x60
-   __TEXT.__const: 0x1338
+```text
 Functions:
 ~ _$s17SiriTimeFlowTools011CancelTimerC4ToolC36cancelRemoteTimersConfirmationString33_70947FB6C77E43931F27AD11D69C012ELL14forHALContextsSS10FoundationE17LocalizationValueVSDySSAA14HALContextUtilO19HALEntityPropertiesVG_tF : 1088 -> 1096
 ~ _$s17SiriTimeFlowTools0abC4ToolPAAE30shouldConfirmRemoteSuppression14forHALContextsSbSDySSAA14HALContextUtilO19HALEntityPropertiesVG_tF : 344 -> 348

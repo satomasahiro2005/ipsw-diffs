@@ -2,128 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/ServicesPaymentUI.framework/ServicesPaymentUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_protos`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa4504` | `0xa7430` | **`+0x2f2c`** |
+| `__DATA.__bss` | `0xa460` | `0xa660` | **`+0x200`** |
+| `__AUTH_CONST.__const` | `0x46c8` | `0x4888` | **`+0x1c0`** |
+| `__TEXT.__const` | `0x7588` | `0x76e8` | **`+0x160`** |
+| `__AUTH_CONST.__objc_const` | `0x3ae0` | `0x3c20` | **`+0x140`** |
+| `__TEXT.__oslogstring` | `0x2760` | `0x2880` | **`+0x120`** |
+| `__TEXT.__swift5_reflstr` | `0x1ad0` | `0x1b90` | **`+0xc0`** |
+| `__TEXT.__constg_swiftt` | `0x2318` | `0x23d0` | **`+0xb8`** |
+| `__TEXT.__cstring` | `0x1595` | `0x1641` | **`+0xac`** |
+| `__TEXT.__swift5_fieldmd` | `0x1f1c` | `0x1fc0` | **`+0xa4`** |
+| `__DATA_DIRTY.__objc_data` | `0x1150` | `0x11e8` | **`+0x98`** |
+| `__TEXT.__eh_frame` | `0x37d8` | `0x3868` | **`+0x90`** |
+| `__TEXT.__unwind_info` | `0x1fe8` | `0x2068` | **`+0x80`** |
+| `__TEXT.__swift5_typeref` | `0x3682` | `0x36d8` | **`+0x56`** |
+| `__AUTH_CONST.__auth_got` | `0x1770` | `0x17b0` | **`+0x40`** |
+| `__TEXT.__swift5_capture` | `0xc18` | `0xc4c` | **`+0x34`** |
+| `__DATA_CONST.__objc_selrefs` | `0xc78` | `0xca0` | **`+0x28`** |
+| `__DATA.__data` | `0x1f30` | `0x1f50` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x148` | `0x168` | **`+0x20`** |
+| `__DATA.__common` | `0x81` | `0x99` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x9f0` | `0xa00` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x534` | `0x544` | **`+0x10`** |
+| `__AUTH.__data` | `0x14e8` | `0x14f0` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x1fc` | `0x204` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x1ec` | `0x1f4` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0xa0` | `0xa8` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x8c` | `0x90` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -1.0.22.0.0
--  __TEXT.__text: 0xa4504
 +1.0.24.0.0
-+  __TEXT.__text: 0xa7430
-   __TEXT.__objc_methlist: 0xa1c
--  __TEXT.__const: 0x7588
--  __TEXT.__swift5_typeref: 0x3682
--  __TEXT.__swift5_fieldmd: 0x1f1c
--  __TEXT.__constg_swiftt: 0x2318
-+  __TEXT.__const: 0x76e8
-+  __TEXT.__swift5_typeref: 0x36d8
-+  __TEXT.__swift5_fieldmd: 0x1fc0
-+  __TEXT.__constg_swiftt: 0x23d0
-   __TEXT.__swift5_builtin: 0x8c
--  __TEXT.__swift5_reflstr: 0x1ad0
-+  __TEXT.__swift5_reflstr: 0x1b90
-   __TEXT.__swift5_assocty: 0x6b8
--  __TEXT.__swift5_proto: 0x534
--  __TEXT.__swift5_types: 0x1fc
--  __TEXT.__cstring: 0x1595
--  __TEXT.__swift5_capture: 0xc18
--  __TEXT.__swift_as_entry: 0x8c
--  __TEXT.__swift_as_cont: 0x1ec
--  __TEXT.__swift_as_ret: 0xa0
--  __TEXT.__oslogstring: 0x2760
-+  __TEXT.__swift5_proto: 0x544
-+  __TEXT.__swift5_types: 0x204
-+  __TEXT.__cstring: 0x1641
-+  __TEXT.__swift5_capture: 0xc4c
-+  __TEXT.__swift_as_entry: 0x90
-+  __TEXT.__swift_as_cont: 0x1f4
-+  __TEXT.__swift_as_ret: 0xa8
-+  __TEXT.__oslogstring: 0x2880
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__unwind_info: 0x1fe8
--  __TEXT.__eh_frame: 0x37d8
-+  __TEXT.__unwind_info: 0x2068
-+  __TEXT.__eh_frame: 0x3868
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x148
-+  __DATA_CONST.__const: 0x168
-   __DATA_CONST.__objc_classlist: 0xb0
-   __DATA_CONST.__objc_protolist: 0xf8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xc78
-+  __DATA_CONST.__objc_selrefs: 0xca0
-   __DATA_CONST.__objc_protorefs: 0x98
--  __DATA_CONST.__got: 0x9f0
--  __AUTH_CONST.__const: 0x46c8
--  __AUTH_CONST.__objc_const: 0x3ae0
--  __AUTH_CONST.__auth_got: 0x1770
-+  __DATA_CONST.__got: 0xa00
-+  __AUTH_CONST.__const: 0x4888
-+  __AUTH_CONST.__objc_const: 0x3c20
-+  __AUTH_CONST.__auth_got: 0x17b0
-   __AUTH.__objc_data: 0x7e8
--  __AUTH.__data: 0x14e8
--  __DATA.__data: 0x1f30
--  __DATA.__bss: 0xa460
--  __DATA.__common: 0x81
--  __DATA_DIRTY.__objc_data: 0x1150
-+  __AUTH.__data: 0x14f0
-+  __DATA.__data: 0x1f50
-+  __DATA.__bss: 0xa660
-+  __DATA.__common: 0x99
-+  __DATA_DIRTY.__objc_data: 0x11e8
-   __DATA_DIRTY.__data: 0x5e0
-   __DATA_DIRTY.__common: 0x70
-   __DATA_DIRTY.__bss: 0x100
 
-   - /System/Library/Frameworks/Security.framework/Security
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-   - /System/Library/Frameworks/UIKit.framework/UIKit
 +  - /System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities
-   - /System/Library/PrivateFrameworks/AppleMediaServices.framework/AppleMediaServices
-   - /System/Library/PrivateFrameworks/AppleMediaServicesUIPaymentSheets.framework/AppleMediaServicesUIPaymentSheets
-   - /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit
 
-   - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
 +  - /usr/lib/swift/libswiftCoreAudio_Private.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftCoreImage.dylib
-   - /usr/lib/swift/libswiftCoreLocation.dylib
 
-   - /usr/lib/swift/libswiftIntents.dylib
-   - /usr/lib/swift/libswiftMLCompute.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
 +  - /usr/lib/swift/libswiftNaturalLanguage.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftPassKit.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2774
--  Symbols:   8617
+-  Symbols:   8346
 -  CStrings:  335
 +  Functions: 2823
-+  Symbols:   8756
++  Symbols:   8479
 +  CStrings:  345
- 
 Symbols:
 + _$s17ServicesPaymentUI0B19SheetViewControllerC010onPasswordD16OcclusionChangedySbcSgvM
 + _$s17ServicesPaymentUI0B19SheetViewControllerC010onPasswordD16OcclusionChangedySbcSgvM.resume
@@ -302,12 +231,6 @@ Symbols:
 + __swift_FORCE_LOAD_$_swiftNaturalLanguage_$_ServicesPaymentUI
 + _associated conformance 17ServicesPaymentUI0B19SheetViewControllerC11PauseReason33_C6BE8422216CA333FAFA068087384088LLOSHAASQ
 + _associated conformance 17ServicesPaymentUI15UserIntentStyleOSHAASQ
-+ _objc_msgSend$authenticateWithContext:completion:
-+ _objc_msgSend$boolForKey:
-+ _objc_msgSend$isContextEligibleForPasscodeAuth
-+ _objc_msgSend$secureDomainStorage
-+ _objc_msgSend$text
-+ _objc_msgSend$updateRotation
 + _symbolic SbIegy_
 + _symbolic SbytIegnr_
 + _symbolic Shy_____G 17ServicesPaymentUI0B19SheetViewControllerC11PauseReason33_C6BE8422216CA333FAFA068087384088LLO

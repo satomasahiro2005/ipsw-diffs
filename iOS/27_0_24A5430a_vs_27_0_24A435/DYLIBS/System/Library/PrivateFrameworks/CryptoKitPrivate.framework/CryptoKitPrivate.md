@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/CryptoKitPrivate.framework/CryptoKitPrivate`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb2ed4` | `0xb0330` | **`-0x2ba4`** |
+| `__AUTH_CONST.__auth_got` | `0x10d8` | `0x10d0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 383.2.1.0.0
--  __TEXT.__text: 0xb2ed4
-+  __TEXT.__text: 0xb0330
-   __TEXT.__objc_methlist: 0x9e4
-   __TEXT.__const: 0x5d78
-   __TEXT.__cstring: 0x1af3
-
-   __AUTH_CONST.__const: 0x4c68
-   __AUTH_CONST.__cfstring: 0x80
-   __AUTH_CONST.__objc_const: 0x2230
--  __AUTH_CONST.__auth_got: 0x10d8
-+  __AUTH_CONST.__auth_got: 0x10d0
-   __AUTH.__objc_data: 0xdd8
-   __AUTH.__data: 0x628
-   __DATA.__objc_ivar: 0x90
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   Functions: 2460
--  Symbols:   1457
-+  Symbols:   1456
-   CStrings:  146
- 
+-  Symbols:   1365
++  Symbols:   1364
 Symbols:
 - _swift_retain_x26
 Functions:

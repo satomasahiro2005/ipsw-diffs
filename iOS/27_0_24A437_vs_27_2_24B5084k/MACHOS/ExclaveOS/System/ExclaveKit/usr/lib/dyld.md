@@ -2,44 +2,36 @@
 
 > `/System/ExclaveKit/usr/lib/dyld`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5c60c` | `0x5c894` | **`+0x288`** |
+| `__TEXT.__cstring` | `0xe699` | `0xe6f7` | **`+0x5e`** |
+| `__AUTH_CONST.__const` | `0x3ee8` | `0x3f20` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0x1ea8` | `0x1ec0` | **`+0x18`** |
+| `__TEXT.__const` | `0x1c0a8` | `0x1c0ac` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__AUTH.__data`
 - `__DATA.__data`
+- `__DATA_CONST.__const`
 - `__DATA_DIRTY.__all_image_info`
+- `__TEXT.__eh_frame`
+
+### Other Changes
 
 ```diff
 
 -27062.0.0.0.0
--  __TEXT.__text: 0x5c510
--  __TEXT.__const: 0x1c0a8
--  __TEXT.__cstring: 0xe699
--  __TEXT.__unwind_info: 0x2350
-+27102.0.0.0.0
-+  __TEXT.__text: 0x5c798
-+  __TEXT.__const: 0x1c0ac
-+  __TEXT.__cstring: 0xe6f7
-+  __TEXT.__unwind_info: 0x2368
-   __TEXT.__eh_frame: 0x50
-   __DATA_CONST.__const: 0xb50
--  __AUTH_CONST.__const: 0x3ee8
-+  __AUTH_CONST.__const: 0x3f20
-   __AUTH.__data: 0x470
-   __DATA.__data: 0x1448
-   __DATA.__ENDPOINTS: 0x62a
-
-   __DATA.__thread_bss: 0x0
-   __DATA.__common: 0x550
-   __DATA_DIRTY.__all_image_info: 0x170
 -  Functions: 2756
 -  Symbols:   2430
 -  CStrings:  1470
++27102.0.0.0.0
 +  Functions: 2762
 +  Symbols:   2438
 +  CStrings:  1475
- 
 Symbols:
 + __ZN5dyld44APIs28_dyld_with_active_atlas_PRIVEPvPFvS1_PKvmE
 + __ZN6mach_o12ArchitectureC1EPK11mach_header

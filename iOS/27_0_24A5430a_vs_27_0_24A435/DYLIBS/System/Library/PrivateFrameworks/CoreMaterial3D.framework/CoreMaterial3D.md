@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CoreMaterial3D.framework/CoreMaterial3D`
 
-```diff
+### Section Size Changes
 
- 22.0.3.0.0
--  __TEXT.__text: 0x4d030
-+  __TEXT.__text: 0x4d090
-   __TEXT.__objc_methlist: 0xb7c
-   __TEXT.__const: 0x32c8
-   __TEXT.__swift5_typeref: 0xdd2
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4d030` | `0x4d090` | **`+0x60`** |
+
+### Other Changes
+
+```diff
 Symbols:
 + _objc_retain_x10
 - _objc_retain_x11

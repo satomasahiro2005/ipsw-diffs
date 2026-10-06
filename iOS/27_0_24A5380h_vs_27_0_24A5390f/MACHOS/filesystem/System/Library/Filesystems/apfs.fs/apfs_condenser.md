@@ -2,32 +2,29 @@
 
 > `/System/Library/Filesystems/apfs.fs/apfs_condenser`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4cd30` | `0x4cf48` | **`+0x218`** |
+| `__TEXT.__cstring` | `0xf6c8` | `0xf7b1` | **`+0xe9`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -3283.0.9.502.1
--  __TEXT.__text: 0x4cd30
 +3283.0.13.0.0
-+  __TEXT.__text: 0x4cf48
-   __TEXT.__auth_stubs: 0x780
--  __TEXT.__cstring: 0xf6c8
-+  __TEXT.__cstring: 0xf7b1
-   __TEXT.__const: 0x220
-   __TEXT.__unwind_info: 0x828
-   __DATA_CONST.__const: 0x8f8
 
-   - /usr/lib/libutil.dylib
-   Functions: 681
-   Symbols:   134
 -  CStrings:  1261
 +  CStrings:  1265
- 
 Functions:
 ~ sub_100009c28 : 10472 -> 10480
 ~ sub_10000dc40 -> sub_10000dc48 : 596 -> 640

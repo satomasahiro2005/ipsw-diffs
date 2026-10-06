@@ -2,56 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/NLP.framework/NLP`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0xca974
-+  __TEXT.__text: 0xca498
-   __TEXT.__objc_methlist: 0x3cc
-   __TEXT.__const: 0x1f89
-   __TEXT.__cstring: 0x96fb
--  __TEXT.__gcc_except_tab: 0x10548
-+  __TEXT.__gcc_except_tab: 0x10540
-   __TEXT.__ustring: 0x4e6
-   __TEXT.__oslogstring: 0x4c3
-   __TEXT.__dlopen_cstrs: 0x51
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xca974` | `0xca498` | **`-0x4dc`** |
+| `__AUTH.__data` | `—` | `0x2a0` | **`+0x2a0`** |
+| `__DATA_DIRTY.__data` | `0x5a0` | `0x300` | **`-0x2a0`** |
+| `__DATA.__bss` | `0xf0` | `0xe0` | **`-0x10`** |
+| `__DATA_DIRTY.__bss` | `0x60` | `0x70` | **`+0x10`** |
+| `__DATA.__common` | `0x30` | `0x28` | **`-0x8`** |
+| `__DATA_DIRTY.__common` | `0x48` | `0x50` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x10548` | `0x10540` | **`-0x8`** |
 
-   __AUTH_CONST.__objc_const: 0x670
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__auth_got: 0xca8
-+  __AUTH.__data: 0x2a0
-   __DATA.__objc_ivar: 0x20
-   __DATA.__data: 0x320
--  __DATA.__bss: 0xf0
--  __DATA.__common: 0x30
-+  __DATA.__bss: 0xe0
-+  __DATA.__common: 0x28
-   __DATA_DIRTY.__objc_data: 0x140
--  __DATA_DIRTY.__data: 0x5a0
--  __DATA_DIRTY.__common: 0x48
--  __DATA_DIRTY.__bss: 0x60
-+  __DATA_DIRTY.__data: 0x300
-+  __DATA_DIRTY.__common: 0x50
-+  __DATA_DIRTY.__bss: 0x70
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/CoreEmoji.framework/CoreEmoji
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+### Other Changes
+
+```text
 Functions:
 ~ __ZN23NLAbstractTransMappings17addDynamicMappingERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEER16NLExtendedString : 648 -> 656
 ~ __ZNKSt3__121__murmur2_or_cityhashImLm64EEclB9fqe220106EPKvm : 532 -> 520
@@ -119,5 +85,4 @@ Functions:
 ~ __ZNSt3__127__insertion_sort_incompleteB9fqe220106INS_17_ClassicAlgPolicyERPFbRKNS_10unique_ptrI24NLMessageIntentCandidateNS_14default_deleteIS3_EEEES8_EPS6_EEbT1_SD_T0_ : 1040 -> 1016
 ~ __ZN3nlp12BurstTrieAddEPNS_10_BurstTrieEPKhjj : 432 -> 444
 ~ __ZN3nlp15BurstTrieRemoveEPNS_10_BurstTrieEPKhj : 2372 -> 2380
-
 ```

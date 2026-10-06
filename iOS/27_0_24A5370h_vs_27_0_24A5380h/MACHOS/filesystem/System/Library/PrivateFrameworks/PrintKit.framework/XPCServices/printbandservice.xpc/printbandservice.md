@@ -2,22 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/PrintKit.framework/XPCServices/printbandservice.xpc/printbandservice`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x33d7c
-+  __TEXT.__text: 0x33c0c
-   __TEXT.__auth_stubs: 0x2c0
-   __TEXT.__objc_stubs: 0x120
-   __TEXT.__init_offsets: 0x10
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x33d7c` | `0x33c0c` | **`-0x170`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__init_offsets`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_100001774 : 320 -> 324
 ~ sub_1000018b4 -> sub_1000018b8 : 4132 -> 4104
@@ -49,5 +53,4 @@ Functions:
 ~ sub_1000270d0 -> sub_100026f8c : 5920 -> 5896
 ~ sub_100028e28 -> sub_100028ccc : 684 -> 672
 ~ sub_10002b814 -> sub_10002b6ac : 1188 -> 1180
-
 ```

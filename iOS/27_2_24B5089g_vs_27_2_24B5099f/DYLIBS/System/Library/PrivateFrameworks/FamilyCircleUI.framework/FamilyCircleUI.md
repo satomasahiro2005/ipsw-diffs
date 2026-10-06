@@ -2,91 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/FamilyCircleUI.framework/FamilyCircleUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x386168` | `0x389dfc` | **`+0x3c94`** |
+| `__TEXT.__swift5_typeref` | `0x2f02e` | `0x2f66c` | **`+0x63e`** |
+| `__DATA_DIRTY.__bss` | `0x5b68` | `0x5f68` | **`+0x400`** |
+| `__TEXT.__cstring` | `0xecf2` | `0xef32` | **`+0x240`** |
+| `__TEXT.__const` | `0x267b4` | `0x269d4` | **`+0x220`** |
+| `__TEXT.__swift5_reflstr` | `0x8520` | `0x86e0` | **`+0x1c0`** |
+| `__AUTH_CONST.__const` | `0x1ab40` | `0x1ace8` | **`+0x1a8`** |
+| `__TEXT.__oslogstring` | `0xdab4` | `0xdbe4` | **`+0x130`** |
+| `__TEXT.__swift5_fieldmd` | `0x8580` | `0x86a8` | **`+0x128`** |
+| `__DATA.__bss` | `0x19bc8` | `0x19ac8` | **`-0x100`** |
+| `__DATA.__data` | `0xbcb8` | `0xbd78` | **`+0xc0`** |
+| `__TEXT.__unwind_info` | `0xdb50` | `0xdba8` | **`+0x58`** |
+| `__TEXT.__constg_swiftt` | `0xcd94` | `0xcdd4` | **`+0x40`** |
+| `__TEXT.__swift5_assocty` | `0x25d0` | `0x2600` | **`+0x30`** |
+| `__TEXT.__swift5_capture` | `0x4ecc` | `0x4ea0` | **`-0x2c`** |
+| `__DATA_CONST.__got` | `0x23d8` | `0x23b8` | **`-0x20`** |
+| `__TEXT.__eh_frame` | `0x19ac0` | `0x19ae0` | **`+0x20`** |
+| `__TEXT.__swift5_proto` | `0x1078` | `0x1090` | **`+0x18`** |
+| `__DATA_DIRTY.__data` | `0x2fd8` | `0x2fe8` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x3550` | `0x3558` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x934` | `0x93c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -291.125.4.0.0
--  __TEXT.__text: 0x362498
 +291.125.7.0.0
-+  __TEXT.__text: 0x365fdc
-   __TEXT.__objc_methlist: 0x6534
--  __TEXT.__const: 0x267b4
-+  __TEXT.__const: 0x269d4
-   __TEXT.__gcc_except_tab: 0x7a4
--  __TEXT.__cstring: 0xecf2
--  __TEXT.__oslogstring: 0xdab4
-+  __TEXT.__cstring: 0xef32
-+  __TEXT.__oslogstring: 0xdbe4
-   __TEXT.__dlopen_cstrs: 0x6fa
--  __TEXT.__constg_swiftt: 0xcd94
--  __TEXT.__swift5_typeref: 0x2f02e
-+  __TEXT.__constg_swiftt: 0xcdd4
-+  __TEXT.__swift5_typeref: 0x2f66c
-   __TEXT.__swift5_builtin: 0x21c
--  __TEXT.__swift5_reflstr: 0x8520
--  __TEXT.__swift5_fieldmd: 0x8580
--  __TEXT.__swift5_assocty: 0x25d0
--  __TEXT.__swift5_capture: 0x4ecc
--  __TEXT.__swift5_proto: 0x1078
--  __TEXT.__swift5_types: 0x934
-+  __TEXT.__swift5_reflstr: 0x86e0
-+  __TEXT.__swift5_fieldmd: 0x86a8
-+  __TEXT.__swift5_assocty: 0x2600
-+  __TEXT.__swift5_capture: 0x4ea0
-+  __TEXT.__swift5_proto: 0x1090
-+  __TEXT.__swift5_types: 0x93c
-   __TEXT.__swift_as_entry: 0x8fc
-   __TEXT.__swift_as_ret: 0x9a4
-   __TEXT.__swift_as_cont: 0x160c
-   __TEXT.__swift5_protos: 0x138
-   __TEXT.__swift5_mpenum: 0x1c
--  __TEXT.__unwind_info: 0x10748
--  __TEXT.__eh_frame: 0x19ac8
-+  __TEXT.__unwind_info: 0x107c0
-+  __TEXT.__eh_frame: 0x19af0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_protorefs: 0x158
-   __DATA_CONST.__objc_superrefs: 0x1f0
-   __DATA_CONST.__objc_arraydata: 0x30
--  __DATA_CONST.__got: 0x23d8
--  __AUTH_CONST.__const: 0x1ab40
-+  __DATA_CONST.__got: 0x23b8
-+  __AUTH_CONST.__const: 0x1ace8
-   __AUTH_CONST.__cfstring: 0x3120
-   __AUTH_CONST.__objc_const: 0x24738
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_intobj: 0x48
-   __AUTH_CONST.__objc_doubleobj: 0x10
--  __AUTH_CONST.__auth_got: 0x3550
-+  __AUTH_CONST.__auth_got: 0x3558
-   __AUTH.__objc_data: 0x6140
-   __AUTH.__data: 0x94f8
-   __DATA.__objc_ivar: 0x6d8
--  __DATA.__data: 0xbcb8
-+  __DATA.__data: 0xbd78
-   __DATA.__objc_stublist: 0x80
-   __DATA.__common: 0x380
-   __DATA_DIRTY.__objc_data: 0xcb8
--  __DATA_DIRTY.__data: 0x2fd8
--  __DATA_DIRTY.__bss: 0x5b68
-+  __DATA_DIRTY.__data: 0x2fe8
-+  __DATA_DIRTY.__bss: 0x5f68
-   __DATA_DIRTY.__common: 0xf0
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 17919
 -  Symbols:   9604
 -  CStrings:  2616
 +  Functions: 17962
 +  Symbols:   9621
 +  CStrings:  2633
- 
 Symbols:
 + _associated conformance 14FamilyCircleUI25UserNavigationDestinationOSHAASQ
 + _associated conformance 14FamilyCircleUI32ScreenTimeMemberDetailsComponentOSHAASQ

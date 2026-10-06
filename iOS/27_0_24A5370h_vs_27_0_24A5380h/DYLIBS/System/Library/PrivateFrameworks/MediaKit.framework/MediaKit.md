@@ -2,24 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/MediaKit.framework/MediaKit`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x2ceb4
-+  __TEXT.__text: 0x2cd0c
-   __TEXT.__const: 0x61a
-   __TEXT.__cstring: 0x222d
--  __TEXT.__unwind_info: 0x6c0
-+  __TEXT.__unwind_info: 0x6d0
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x18e0
-   __DATA_CONST.__got: 0x0
-Sections:
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2ceb4` | `0x2cd0c` | **`-0x1a8`** |
+| `__TEXT.__unwind_info` | `0x6c0` | `0x6d0` | **`+0x10`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _lookupDESC : 200 -> 168
 ~ _PMSchemeSearch : 76 -> 84
@@ -58,5 +50,4 @@ Functions:
 ~ _ISOCategorize : 64 -> 52
 ~ _ISOCFRecordSections : 944 -> 928
 ~ _MKBSDMountinfo : 168 -> 148
-
 ```

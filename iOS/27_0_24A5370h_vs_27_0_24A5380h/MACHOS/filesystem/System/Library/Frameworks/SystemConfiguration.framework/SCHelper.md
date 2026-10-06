@@ -2,17 +2,23 @@
 
 > `/System/Library/Frameworks/SystemConfiguration.framework/SCHelper`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4bc4` | `0x4bb8` | **`-0xc`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x4bc4
-+  __TEXT.__text: 0x4bb8
-   __TEXT.__auth_stubs: 0x740
-   __TEXT.__const: 0xa0
-   __TEXT.__oslogstring: 0x4d7
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-
+-1438.0.0.0.0
++1441.0.0.0.0
 ```

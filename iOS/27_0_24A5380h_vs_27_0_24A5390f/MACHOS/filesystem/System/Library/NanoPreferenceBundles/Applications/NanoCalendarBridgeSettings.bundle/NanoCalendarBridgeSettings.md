@@ -2,17 +2,16 @@
 
 > `/System/Library/NanoPreferenceBundles/Applications/NanoCalendarBridgeSettings.bundle/NanoCalendarBridgeSettings`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__oslogstring`
+
+### Other Changes
 
 ```diff
 
 -745.0.0.0.0
 +746.0.0.0.0
-   __TEXT.__text: 0x6ed8
-   __TEXT.__auth_stubs: 0x3a0
-   __TEXT.__objc_stubs: 0x15e0
 CStrings:
 + "==> alerts_ttl [Jul  8 2026 08:22:47]"
 + "==> always_on_display [Jul  8 2026 08:22:47]"

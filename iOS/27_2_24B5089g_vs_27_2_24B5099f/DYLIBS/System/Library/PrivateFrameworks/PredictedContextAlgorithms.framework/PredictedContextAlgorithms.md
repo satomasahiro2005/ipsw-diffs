@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/PredictedContextAlgorithms.framework/PredictedContextAlgorithms`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x111c38` | `0x111bb8` | **`-0x80`** |
+| `__AUTH_CONST.__auth_got` | `0xd30` | `0xd38` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 52.0.0.0.0
--  __TEXT.__text: 0x10a170
-+  __TEXT.__text: 0x10a0f0
-   __TEXT.__objc_methlist: 0x6dec
-   __TEXT.__const: 0x5bd8
-   __TEXT.__swift5_typeref: 0x203c
-
-   __AUTH_CONST.__objc_arrayobj: 0x60
-   __AUTH_CONST.__objc_intobj: 0xf0
-   __AUTH_CONST.__objc_dictobj: 0x50
--  __AUTH_CONST.__auth_got: 0xd30
-+  __AUTH_CONST.__auth_got: 0xd38
-   __AUTH.__objc_data: 0x2c0
-   __AUTH.__data: 0xdd8
-   __DATA.__objc_ivar: 0x780
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 5163
 -  Symbols:   11216
 +  Symbols:   11217
-   CStrings:  1162
- 
 Symbols:
 + _$s10Foundation4DateV2geoiySbAC_ACtFZ
 + _$s10Foundation4DateV2leoiySbAC_ACtFZ

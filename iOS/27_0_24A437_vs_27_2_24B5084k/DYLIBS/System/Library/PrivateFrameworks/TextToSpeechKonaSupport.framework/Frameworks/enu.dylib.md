@@ -2,15 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/TextToSpeechKonaSupport.framework/Frameworks/enu.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1616b8` | `0x1616b0` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -681.0.0.0.0
--  __TEXT.__text: 0x15ec74
 +683.2.0.0.0
-+  __TEXT.__text: 0x15ec6c
-   __TEXT.__const: 0xa88a
-   __TEXT.__cstring: 0x10df
-   __TEXT.__gcc_except_tab: 0x438
 Functions:
-~ _sendArrayParameters : 920 -> 912
+~ _sendArrayParameters : 924 -> 916
 ```

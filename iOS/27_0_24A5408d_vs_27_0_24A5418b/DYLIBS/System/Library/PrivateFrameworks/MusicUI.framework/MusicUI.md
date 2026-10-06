@@ -2,73 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/MusicUI.framework/MusicUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9a2eac` | `0x9a3274` | **`+0x3c8`** |
+| `__TEXT.__oslogstring` | `0x96c7` | `0x97c7` | **`+0x100`** |
+| `__TEXT.__swift5_typeref` | `0x94e5c` | `0x94f2c` | **`+0xd0`** |
+| `__TEXT.__eh_frame` | `0x33498` | `0x334c0` | **`+0x28`** |
+| `__AUTH_CONST.__objc_const` | `0x164a0` | `0x164c0` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x1f79f` | `0x1f7bf` | **`+0x20`** |
+| `__DATA_DIRTY.__data` | `0x27fe8` | `0x27ff8` | **`+0x10`** |
+| `__TEXT.__const` | `0x6e924` | `0x6e934` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x1d3ec` | `0x1d3f8` | **`+0xc`** |
+| `__TEXT.__unwind_info` | `0x1f6b0` | `0x1f6a8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -4026.110.3.0.0
--  __TEXT.__text: 0x9a2eac
 +4026.110.5.0.0
-+  __TEXT.__text: 0x9a3274
-   __TEXT.__objc_methlist: 0x2910
--  __TEXT.__const: 0x6e924
-+  __TEXT.__const: 0x6e934
-   __TEXT.__gcc_except_tab: 0x70
-   __TEXT.__cstring: 0xd9de
-   __TEXT.__dlopen_cstrs: 0x5a
-   __TEXT.__constg_swiftt: 0x1f1fc
--  __TEXT.__swift5_typeref: 0x94e5c
-+  __TEXT.__swift5_typeref: 0x94f2c
-   __TEXT.__swift5_builtin: 0x4c4
--  __TEXT.__swift5_reflstr: 0x1f79f
--  __TEXT.__swift5_fieldmd: 0x1d3ec
-+  __TEXT.__swift5_reflstr: 0x1f7bf
-+  __TEXT.__swift5_fieldmd: 0x1d3f8
-   __TEXT.__swift5_assocty: 0x89a0
-   __TEXT.__swift5_proto: 0x3a3c
-   __TEXT.__swift5_types: 0x1e50
-   __TEXT.__swift5_capture: 0xbe50
--  __TEXT.__oslogstring: 0x96c7
-+  __TEXT.__oslogstring: 0x97c7
-   __TEXT.__swift_as_entry: 0x1028
-   __TEXT.__swift_as_ret: 0x1254
-   __TEXT.__swift_as_cont: 0x2630
-   __TEXT.__swift5_protos: 0x210
-   __TEXT.__swift5_mpenum: 0x1b8
--  __TEXT.__unwind_info: 0x1f6b0
--  __TEXT.__eh_frame: 0x33498
-+  __TEXT.__unwind_info: 0x1f6a8
-+  __TEXT.__eh_frame: 0x334c0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__got: 0x3640
-   __AUTH_CONST.__const: 0x3d7f8
-   __AUTH_CONST.__cfstring: 0x20
--  __AUTH_CONST.__objc_const: 0x164a0
-+  __AUTH_CONST.__objc_const: 0x164c0
-   __AUTH_CONST.__auth_got: 0x6198
-   __AUTH.__objc_data: 0x2020
-   __AUTH.__data: 0xdc60
-
-   __DATA.__bss: 0x38e20
-   __DATA.__common: 0x4c8
-   __DATA_DIRTY.__objc_data: 0x2f60
--  __DATA_DIRTY.__data: 0x27fe8
-+  __DATA_DIRTY.__data: 0x27ff8
-   __DATA_DIRTY.__bss: 0x34db0
-   __DATA_DIRTY.__common: 0x518
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 52671
--  Symbols:   17441
+-  Symbols:   16752
 -  CStrings:  2232
 +  Functions: 52669
-+  Symbols:   17443
++  Symbols:   16754
 +  CStrings:  2235
- 
 Symbols:
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE15navigationTitleyQrqd__SyRd__lFQOyAcAE26interactiveDismissDisabledyQrSbFQOyAcAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAcAE11safeAreaBar4edge9alignment7spacingAGQrAA12VerticalEdgeO_AA19HorizontalAlignmentV12CoreGraphics7CGFloatVSgqd__yXEtAaBRd__lFQOyAA5GroupVyAA012_ConditionalL0VyAA06ScrollC0VyAA08ModifiedL0VyA0_yA0_y05MusicB0019OrderedPlaylistListC0VAA30_EnvironmentKeyWritingModifierVyA1_20SocialProfileUpdaterCSgGGAA14_PaddingLayoutVGA12_GGAA6VStackVyAA05TupleL0VyAA6SpacerV_A0_yA0_yAA4TextVA5_yAA04TextV0OGGA12_GA21_QPGGGG_A0_yA0_yA0_yA0_yA1_12ActionButtonVyA0_yA0_yA0_yAVyAXyA0_yAA08ProgressC0VyAA05EmptyC0VA38_GA5_yAA11ControlSizeOGGA23_GGAA16_FlexFrameLayoutVGA12_GAA19_BackgroundModifierVyA1_21ModalButtonBackgroundVGGGAA32_EnvironmentKeyTransformModifierVySbGGA5_ySbGGA12_GA12_GQo__AA0K4ItemVyytAcAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyA34_yA0_yA23_A12_GG_AA16PlainButtonStyleVQo_GSgQo__Qo__SSQo_HO
 + _symbolic _____yAAyAAyAAy_____yAAyAAyAAy_____y_____yAAy_____y_____AFG_____y_____GG_____GG_____G_____G_____y_____GGG_____ySbGGAHySbGGAQGAQG 7SwiftUI15ModifiedContentV 05MusicB012ActionButtonV AA5GroupV AA012_ConditionalD0V AA12ProgressViewV AA05EmptyK0V AA30_EnvironmentKeyWritingModifierV AA11ControlSizeO AA4TextV AA16_FlexFrameLayoutV AA08_PaddingV0V AA011_BackgroundP0V AD05ModalgX0V AA01_mn9TransformP0V

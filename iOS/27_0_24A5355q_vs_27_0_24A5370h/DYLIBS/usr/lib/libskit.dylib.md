@@ -2,53 +2,27 @@
 
 > `/usr/lib/libskit.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x23dc4` | `0x239a4` | **`-0x420`** |
+| `__TEXT.__oslogstring` | `0x2195` | `0x21d5` | **`+0x40`** |
+| `__TEXT.__const` | `0xc51` | `0xc31` | **`-0x20`** |
+| `__TEXT.__unwind_info` | `0x8e8` | `0x8f8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3600.11.1.0.0
--  __TEXT.__text: 0x23dc4 sha256:4cd642ee58c60a26a58a3cd774522e8e073ca8a89a6ecbe2d43bb70811b91b22
--  __TEXT.__const: 0xc51 sha256:be312d9559988a23d5cbda40210b8cf7f11499a0c8c042d9c006da1a517f81ac
--  __TEXT.__gcc_except_tab: 0xd68 sha256:275e48febb1373796ea4e4441215b2a163286f6409d6bf0d1458634490192232
--  __TEXT.__oslogstring: 0x2195 sha256:7ce4fef45e80ffdf4cef8d2fd9726f514ebe4c618c6639db295a05f756fda668
 +3600.15.1.0.0
-+  __TEXT.__text: 0x239a4 sha256:b321050af35f30cbe7bdef6ed9c3a9e127f5ca3ce74ee0dcf3d03df161491532
-+  __TEXT.__const: 0xc31 sha256:38573fe57cf9958ee5241cb494fa6a8babfaee343f41d3d498bd1e34bb1f7045
-+  __TEXT.__gcc_except_tab: 0xd68 sha256:2e9a4b88ead80bafe76e66e5fe71596f196a1def964fe1749137ef2c99cfa53c
-+  __TEXT.__oslogstring: 0x21d5 sha256:465fc6aaf2347c9ec4fd3b8fa9affddd1e3340e6824e91d3226671622fddc4bf
-   __TEXT.__cstring: 0x215 sha256:374d0978c95fd1cc7cfcf9eba0889ec001bf7f5ac65fa7ae631167c25b9104e7
-   __TEXT.__ustring: 0x398 sha256:1635c5914523024d4e1939558a32a5b0bea6c77836985f47b19dd86c29275650
--  __TEXT.__unwind_info: 0x8e8 sha256:a7d358f64e1fbdca49a2fd001c5445d7d1c4c876d9109da83a69ce8616cb5581
-+  __TEXT.__unwind_info: 0x8f8 sha256:e9cef6062681d6e2751ca8c2d49f0c1133317ce39b23410cfeffb5e314cf8022
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0x930 sha256:ee524e7ae85171b8944a0a857c86ecb04076d2346367d2077c49ff2cba3fe133
-+  __DATA_CONST.__const: 0x930 sha256:6f26a7c3a7c0cdc6c697e4214654c23b74526b711c5542f486a1cc9b03ae4884
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x18 sha256:f49db3303d9ec2a0b7500c275d2c1ad1766548adbe7376db0ddd7e74cfec37db
--  __DATA_CONST.__objc_selrefs: 0x8 sha256:9362e536af23d28b2e4fec7f3ebd75493210beccee9af51e7e47ec06779441d3
-+  __DATA_CONST.__weak_got: 0x18 sha256:bae4b6ecc24fffad9adfa351dc5b02e476f65ab4e33b7759a9927fc9ba7485d0
-+  __DATA_CONST.__objc_selrefs: 0x8 sha256:edfedacf648b7e9ecbe96b5386495a8553164f5fe357d3bbc3b6bee8a8239f80
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x390 sha256:9bd87213a1a6c8113cc332e8c0b8c7a40351f46a8d10d75eddba139c43aaff23
--  __AUTH_CONST.__weak_auth_got: 0x50 sha256:cf3fe344343735f6d0c51b82c02d7c165905d80f6b2b23f1c9bc18823f3a7713
-+  __AUTH_CONST.__const: 0x390 sha256:d49a33f18620e9995d98f0967d5961a3456f1de8c3b2dc53be1c528bf8a9d756
-+  __AUTH_CONST.__weak_auth_got: 0x50 sha256:36b9313bca8602509432c769734b9a03f0a22f298a10d2349303659dfcc51755
-   __AUTH_CONST.__auth_got: 0x450 sha256:9688ec46af8fa56e8423a06a9e420db47500eb701e44ba3855faf7984ed1a0a6
-   __DATA.__data: 0x10 sha256:3740cd14ff9ee18d84c723ccd0596c20774af9b3461502ead212f409e11d76a3
-   __DATA_DIRTY.__bss: 0x20 sha256:66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925
 
-   - /usr/lib/libmarisa.dylib
-   - /usr/lib/libmorphun.dylib
-   - /usr/lib/libobjc.A.dylib
--  UUID: 00C7F5A2-651A-394F-B0F4-A5624EF1649C
 -  Functions: 478
--  Symbols:   1111
--  CStrings:  167
-+  UUID: DA59C70A-963F-3BBE-985C-FF77B789C281
 +  Functions: 479
-+  Symbols:   1112
-+  CStrings:  168
- 
+
+-  CStrings:  166
++  CStrings:  167
 Symbols:
 + GCC_except_table150
 + GCC_except_table151
@@ -324,5 +298,4 @@ Symbols:
 - __ZZNK4skit8internal20FieldSpanMatcherImpl21combine_alias_matchesERNS_11SmallVectorIPKNS_10AliasMatchELj8ELb0EEERKNS_11TokenStreamENS_13ExternalAliasERNS2_IS3_Lj2ELb1EEERKSC_E8empty_ts
 CStrings:
 + "normalized_ts.size() > ts.size() — expected at most ts.size()"
-
 ```

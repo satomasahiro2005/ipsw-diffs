@@ -2,55 +2,32 @@
 
 > `/System/Library/VideoProcessors/STF.bundle/STF`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf93d8` | `0xf1000` | **`-0x83d8`** |
+| `__TEXT.__cstring` | `0x84c5` | `0x3f78` | **`-0x454d`** |
+| `__TEXT.__oslogstring` | `0x1cc9` | `0x53` | **`-0x1c76`** |
+| `__TEXT.__unwind_info` | `0xeb0` | `0xdf8` | **`-0xb8`** |
+| `__TEXT.__gcc_except_tab` | `0x24c` | `0x1a0` | **`-0xac`** |
+| `__TEXT.__const` | `0x580` | `0x540` | **`-0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x3c0` | `0x3a0` | **`-0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0xd00` | `0xcf8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -761.0.0.0.3
--  __TEXT.__text: 0xf93d8
 +764.22.5.122.2
-+  __TEXT.__text: 0xf1000
-   __TEXT.__objc_methlist: 0x1734
--  __TEXT.__const: 0x580
--  __TEXT.__oslogstring: 0x1cc9
--  __TEXT.__cstring: 0x84c5
--  __TEXT.__gcc_except_tab: 0x24c
--  __TEXT.__unwind_info: 0xeb0
-+  __TEXT.__const: 0x540
-+  __TEXT.__cstring: 0x3f78
-+  __TEXT.__gcc_except_tab: 0x1a0
-+  __TEXT.__oslogstring: 0x53
-+  __TEXT.__unwind_info: 0xdf8
-   __TEXT.__eh_frame: 0x608
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_classlist: 0xa0
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xd00
-+  __DATA_CONST.__objc_selrefs: 0xcf8
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x70
-   __DATA_CONST.__got: 0x198
-
-   __AUTH_CONST.__cfstring: 0xfa0
-   __AUTH_CONST.__objc_const: 0x3e60
-   __AUTH_CONST.__objc_intobj: 0x30
--  __AUTH_CONST.__auth_got: 0x3c0
-+  __AUTH_CONST.__auth_got: 0x3a0
-   __AUTH.__data: 0x8
-   __DATA.__objc_ivar: 0x478
-   __DATA.__data: 0x3c0
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2138
--  Symbols:   2504
+-  Symbols:   2184
 -  CStrings:  1212
 +  Functions: 2034
-+  Symbols:   2479
++  Symbols:   2161
 +  CStrings:  703
- 
 Symbols:
 + _FigSignalErrorAtGM
 + _fig_log_get_emitter
@@ -79,8 +56,6 @@ Symbols:
 - __os_log_send_and_compose_impl
 - _fig_log_call_emit_and_clean_up_after_send_and_compose
 - _fig_log_emitter_get_os_log_and_send_and_compose_flags_and_os_log_type
-- _objc_msgSend$compressionLevel
-- _objc_msgSend$getErrorMessage:
 CStrings:
 + "%s signalled err=%d at <>:%d"
 - "%s%s%s signalled err=%d (%s) (%s) at %s:%d"

@@ -2,64 +2,27 @@
 
 > `/System/Library/Frameworks/GameplayKit.framework/GameplayKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6cc18` | `0x665e4` | **`-0x6634`** |
+| `__TEXT.__cstring` | `0x27a2` | `0x1083` | **`-0x171f`** |
+| `__TEXT.__unwind_info` | `0x2120` | `0x20d0` | **`-0x50`** |
+| `__TEXT.__const` | `0x558` | `0x588` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x3d0` | `0x3c0` | **`-0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x5498` | `0x54a0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x6cc18
-+  __TEXT.__text: 0x665e4
-   __TEXT.__objc_methlist: 0x32e4
--  __TEXT.__const: 0x558
--  __TEXT.__gcc_except_tab: 0x5498
--  __TEXT.__cstring: 0x27a2
-+  __TEXT.__const: 0x588
-+  __TEXT.__gcc_except_tab: 0x54a0
-+  __TEXT.__cstring: 0x1083
-   __TEXT.__oslogstring: 0x17
--  __TEXT.__unwind_info: 0x2120
-+  __TEXT.__unwind_info: 0x20d0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __AUTH_CONST.__objc_doubleobj: 0x60
-   __AUTH_CONST.__objc_intobj: 0x48
-   __AUTH_CONST.__objc_arrayobj: 0x30
--  __AUTH_CONST.__auth_got: 0x3d0
-+  __AUTH_CONST.__auth_got: 0x3c0
-   __AUTH.__objc_data: 0x19a0
-   __DATA.__objc_ivar: 0x244
-   __DATA.__data: 0x2448
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1638
--  Symbols:   5517
--  CStrings:  334
+-  Symbols:   2948
+-  CStrings:  204
 +  Functions: 1635
-+  Symbols:   5510
-+  CStrings:  317
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA.__data : content changed
++  Symbols:   2943
++  CStrings:  187
 Symbols:
 + GCC_except_table210
 + GCC_except_table211
@@ -374,5 +337,4 @@ CStrings:
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:442: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:509: libc++ Hardening assertion !empty() failed: vector::pop_back called on an empty vector\n"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/list:830: libc++ Hardening assertion !empty() failed: list::front called on empty list\n"
-
 ```

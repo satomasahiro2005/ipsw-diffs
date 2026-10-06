@@ -2,111 +2,68 @@
 
 > `/usr/libexec/locationd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_catlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1b29030` | `0x1b31500` | **`+0x84d0`** |
+| `__TEXT.__oslogstring` | `0x2924c5` | `0x29356c` | **`+0x10a7`** |
+| `__TEXT.__cstring` | `0x210791` | `0x21129e` | **`+0xb0d`** |
+| `__TEXT.__objc_methtype` | `0x39037` | `0x39766` | **`+0x72f`** |
+| `__TEXT.__gcc_except_tab` | `0xda518` | `0xdaafc` | **`+0x5e4`** |
+| `__TEXT.__objc_methname` | `0x5d09f` | `0x5d66f` | **`+0x5d0`** |
+| `__DATA.__objc_const` | `0x4f670` | `0x4fc10` | **`+0x5a0`** |
+| `__TEXT.__objc_stubs` | `0x3e4c0` | `0x3e8a0` | **`+0x3e0`** |
+| `__TEXT.__unwind_info` | `0x778a0` | `0x77b68` | **`+0x2c8`** |
+| `__TEXT.__objc_methlist` | `0x2e700` | `0x2e9b8` | **`+0x2b8`** |
+| `__DATA_CONST.__const` | `0xc1ba8` | `0xc1d38` | **`+0x190`** |
+| `__DATA.__data` | `0x62f08` | `0x63038` | **`+0x130`** |
+| `__TEXT.__const` | `0x166878` | `0x166968` | **`+0xf0`** |
+| `__DATA.__objc_selrefs` | `0x13b98` | `0x13c80` | **`+0xe8`** |
+| `__DATA.__objc_data` | `0xd528` | `0xd5c8` | **`+0xa0`** |
+| `__TEXT.__objc_classname` | `0x8097` | `0x812d` | **`+0x96`** |
+| `__DATA_CONST.__cfstring` | `0x44460` | `0x444e0` | **`+0x80`** |
+| `__DATA.__objc_ivar` | `0x3bf4` | `0x3c48` | **`+0x54`** |
+| `__DATA.__bss` | `0x12f78` | `0x12fa8` | **`+0x30`** |
+| `__TEXT.__auth_stubs` | `0x6550` | `0x6580` | **`+0x30`** |
+| `__DATA_CONST.__auth_got` | `0x32c8` | `0x32e0` | **`+0x18`** |
+| `__DATA_CONST.__objc_protolist` | `0xe48` | `0xe60` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x14c0` | `0x14d0` | **`+0x10`** |
+| `__DATA_CONST.__objc_doubleobj` | `0x150` | `0x160` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0xad0` | `0xae0` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1318` | `0x1328` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x25e0` | `0x25e8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
 - `__DATA_CONST.__objc_dictobj`
 - `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__auth_ptr`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__init_offsets`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -3186.0.17.0.1
--  __TEXT.__text: 0x1aedd44
--  __TEXT.__auth_stubs: 0x6550
--  __TEXT.__objc_stubs: 0x3e4c0
 +3186.0.21.0.0
-+  __TEXT.__text: 0x1af6148
-+  __TEXT.__auth_stubs: 0x6580
-+  __TEXT.__objc_stubs: 0x3e8a0
-   __TEXT.__init_offsets: 0xc08
--  __TEXT.__objc_methlist: 0x2e700
--  __TEXT.__const: 0x166878
--  __TEXT.__gcc_except_tab: 0xda518
--  __TEXT.__oslogstring: 0x2924c5
--  __TEXT.__cstring: 0x210791
--  __TEXT.__objc_methname: 0x5d09f
--  __TEXT.__objc_classname: 0x8097
--  __TEXT.__objc_methtype: 0x39037
-+  __TEXT.__objc_methlist: 0x2e9b8
-+  __TEXT.__const: 0x166968
-+  __TEXT.__gcc_except_tab: 0xdaafc
-+  __TEXT.__oslogstring: 0x29356c
-+  __TEXT.__cstring: 0x21129e
-+  __TEXT.__objc_methname: 0x5d66f
-+  __TEXT.__objc_classname: 0x812d
-+  __TEXT.__objc_methtype: 0x39766
-   __TEXT.__dlopen_cstrs: 0x4a
-   __TEXT.__ustring: 0xa5e
-   __TEXT.__constg_swiftt: 0x5ec
 
-   __TEXT.__swift_as_cont: 0x1c
-   __TEXT.__swift5_proto: 0x4c
-   __TEXT.__swift5_assocty: 0x30
--  __TEXT.__unwind_info: 0x88fd0
-+  __TEXT.__unwind_info: 0x892c0
-   __TEXT.__eh_frame: 0xf38
--  __DATA_CONST.__const: 0xc1ba8
--  __DATA_CONST.__cfstring: 0x44460
--  __DATA_CONST.__objc_classlist: 0x14c0
-+  __DATA_CONST.__const: 0xc1d38
-+  __DATA_CONST.__cfstring: 0x444e0
-+  __DATA_CONST.__objc_classlist: 0x14d0
-   __DATA_CONST.__objc_catlist: 0xc8
--  __DATA_CONST.__objc_protolist: 0xe48
-+  __DATA_CONST.__objc_protolist: 0xe60
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_protorefs: 0xad0
--  __DATA_CONST.__objc_superrefs: 0x1318
-+  __DATA_CONST.__objc_protorefs: 0xae0
-+  __DATA_CONST.__objc_superrefs: 0x1328
-   __DATA_CONST.__objc_arraydata: 0x1bb0
-   __DATA_CONST.__objc_dictobj: 0xb18
-   __DATA_CONST.__objc_intobj: 0x2e68
--  __DATA_CONST.__objc_doubleobj: 0x150
-+  __DATA_CONST.__objc_doubleobj: 0x160
-   __DATA_CONST.__objc_arrayobj: 0x978
-   __DATA_CONST.__objc_floatobj: 0x80
-   __DATA_CONST.__linkguard: 0x15
--  __DATA_CONST.__auth_got: 0x32c8
--  __DATA_CONST.__got: 0x25e0
-+  __DATA_CONST.__auth_got: 0x32e0
-+  __DATA_CONST.__got: 0x25e8
-   __DATA_CONST.__auth_ptr: 0x6a0
--  __DATA.__objc_const: 0x4f670
--  __DATA.__objc_selrefs: 0x13b98
--  __DATA.__objc_ivar: 0x3bf4
--  __DATA.__objc_data: 0xd528
--  __DATA.__data: 0x62f08
-+  __DATA.__objc_const: 0x4fc10
-+  __DATA.__objc_selrefs: 0x13c80
-+  __DATA.__objc_ivar: 0x3c48
-+  __DATA.__objc_data: 0xd5c8
-+  __DATA.__data: 0x63038
-   __DATA.__common: 0x22100
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 113489
+-  Functions: 114089
 -  Symbols:   2915
--  CStrings:  85216
-+  Functions: 113631
+-  CStrings:  85219
++  Functions: 114233
 +  Symbols:   2919
-+  CStrings:  85400
- 
++  CStrings:  85403
 Symbols:
 + __dispatch_source_type_memorypressure
 + _dispatch_source_get_data
@@ -142,6 +99,8 @@ CStrings:
 + "-[CMDeviceStateRelayManager startUpdatesForPhysicalDevice:aopAngle:]_block_invoke"
 + "/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CoreLocation/Shared/Motion/DeviceState/CLDeviceStateRelay.mm"
 + "/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/CoreLocation/Shared/Motion/DeviceState/CMAngleInterpolator.mm"
++ "23:22:01"
++ "23:32:40"
 + "::CLP::LogEntry::PrivateData::OtaEphemerisCrossCheckToFile_IsValid(value)"
 + "<unknown>"
 + "@\"<CLMemoryPressureServiceProtocol>\""
@@ -196,6 +155,8 @@ CStrings:
 + "Physical angle changed to %{public}f, timestamp=%{public}llu, isSimulated=%{public}d"
 + "Quarantined"
 + "Raven: EnableRavenReducedNearbyRoadSegmentsQuery,%{public}d"
++ "Sep 28 2026"
++ "Sep 28 2026 23:27:21"
 + "Skipping %ld empty epochs across gap, from,%lf,to,%lf,phaseCorrection,%lf"
 + "Skipping install check for system client: %{private}@."
 + "Snapping angle to: %f"
@@ -330,12 +291,16 @@ CStrings:
 - "-[CMDeviceStateManager queryDeviceStateWithHandler:]"
 - "-[CMDeviceStateRelayManager _newAngleHIDEventForAngle:]"
 - "-[CMDeviceStateRelayManager startUpdatesForPhysicalDevice:]_block_invoke"
+- "22:38:03"
+- "22:45:38"
 - "@WifiLogic, #warning, airborne register fired but no airborne clients found"
 - "@WifiLogic, entry, register, clientActivityType, airborne"
 - "@WifiLogic, entry, register, clientActivityType, maritime"
 - "@WifiLogic, entry, unregister, clientActivityType, airborne"
 - "@WifiLogic, entry, unregister, clientActivityType, maritime"
 - "NSURL *backupExcludedDirectory()"
+- "Sep 15 2026"
+- "Sep 15 2026 22:41:46"
 - "Skipping %ld empty epochs across gap, from,%lf,to,%lf"
 - "T@\"NSNumber\",&,V_angle"
 - "[CLSPUAngleServiceControl] Failed to write calibration cache: %{public}@"

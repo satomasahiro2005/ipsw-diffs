@@ -2,140 +2,68 @@
 
 > `/System/Library/PrivateFrameworks/HomeUI.framework/HomeUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7e3fbc` | `0x7f34a8` | **`+0xf4ec`** |
+| `__TEXT.__swift5_typeref` | `0x1abf6` | `0x1b3e6` | **`+0x7f0`** |
+| `__TEXT.__const` | `0x1b030` | `0x1b70c` | **`+0x6dc`** |
+| `__AUTH_CONST.__const` | `0x1a4f0` | `0x1ab28` | **`+0x638`** |
+| `__AUTH_CONST.__objc_const` | `0x90c10` | `0x91178` | **`+0x568`** |
+| `__TEXT.__eh_frame` | `0x13120` | `0x1362c` | **`+0x50c`** |
+| `__TEXT.__oslogstring` | `0x2eaad` | `0x2eddb` | **`+0x32e`** |
+| `__TEXT.__constg_swiftt` | `0xd72c` | `0xda4c` | **`+0x320`** |
+| `__TEXT.__unwind_info` | `0x1ba08` | `0x1bd28` | **`+0x320`** |
+| `__DATA_DIRTY.__objc_data` | `0x7fd8` | `0x8290` | **`+0x2b8`** |
+| `__DATA.__data` | `0x14fa0` | `0x15218` | **`+0x278`** |
+| `__TEXT.__objc_methlist` | `0x502d4` | `0x50544` | **`+0x270`** |
+| `__TEXT.__cstring` | `0x428c2` | `0x42b01` | **`+0x23f`** |
+| `__TEXT.__swift5_reflstr` | `0x77e7` | `0x79c7` | **`+0x1e0`** |
+| `__TEXT.__swift5_fieldmd` | `0x725c` | `0x742c` | **`+0x1d0`** |
+| `__DATA.__bss` | `0x133d8` | `0x13598` | **`+0x1c0`** |
+| `__DATA_DIRTY.__bss` | `0x14d0` | `0x1650` | **`+0x180`** |
+| `__TEXT.__swift5_capture` | `0x47f0` | `0x4970` | **`+0x180`** |
+| `__AUTH.__data` | `0x5d48` | `0x5e88` | **`+0x140`** |
+| `__DATA_CONST.__objc_selrefs` | `0x22230` | `0x22370` | **`+0x140`** |
+| `__DATA_DIRTY.__data` | `0x1908` | `0x1a18` | **`+0x110`** |
+| `__AUTH_CONST.__cfstring` | `0x22960` | `0x22a40` | **`+0xe0`** |
+| `__DATA_CONST.__got` | `0x6fd0` | `0x7080` | **`+0xb0`** |
+| `__AUTH_CONST.__auth_got` | `0x4ed8` | `0x4f78` | **`+0xa0`** |
+| `__TEXT.__gcc_except_tab` | `0x8ae0` | `0x8b64` | **`+0x84`** |
+| `__AUTH.__objc_data` | `0x1c9c0` | `0x1c940` | **`-0x80`** |
+| `__TEXT.__swift5_assocty` | `0x1368` | `0x13b8` | **`+0x50`** |
+| `__DATA_CONST.__const` | `0xf4b0` | `0xf4e8` | **`+0x38`** |
+| `__TEXT.__swift_as_cont` | `0xd44` | `0xd7c` | **`+0x38`** |
+| `__TEXT.__swift_as_ret` | `0x608` | `0x630` | **`+0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x2920` | `0x2940` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x854` | `0x874` | **`+0x20`** |
+| `__TEXT.__swift_as_entry` | `0x5e4` | `0x604` | **`+0x20`** |
+| `__DATA.__common` | `0x3f0` | `0x3d8` | **`-0x18`** |
+| `__DATA_DIRTY.__common` | `0xa0` | `0xb8` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0xa74` | `0xa8c` | **`+0x18`** |
+| `__DATA_DIRTY.__objc_ivar` | `0x3b14` | `0x3b28` | **`+0x14`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1ef0` | `0x1f00` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x1940` | `0x1948` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x6c8` | `0x6d0` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__ustring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x7e3fbc
--  __TEXT.__objc_methlist: 0x502d4
--  __TEXT.__const: 0x1b030
-+  __TEXT.__text: 0x7f34a8
-+  __TEXT.__objc_methlist: 0x50544
-+  __TEXT.__const: 0x1b70c
-   __TEXT.__dlopen_cstrs: 0x344
--  __TEXT.__constg_swiftt: 0xd72c
--  __TEXT.__swift5_typeref: 0x1abf6
--  __TEXT.__swift5_reflstr: 0x77e7
--  __TEXT.__swift5_fieldmd: 0x725c
-+  __TEXT.__constg_swiftt: 0xda4c
-+  __TEXT.__swift5_typeref: 0x1b3e6
-+  __TEXT.__swift5_reflstr: 0x79c7
-+  __TEXT.__swift5_fieldmd: 0x742c
-   __TEXT.__swift5_builtin: 0x618
--  __TEXT.__swift5_assocty: 0x1368
--  __TEXT.__swift5_proto: 0xa74
--  __TEXT.__swift5_types: 0x854
--  __TEXT.__swift5_capture: 0x47f0
--  __TEXT.__oslogstring: 0x2eaad
--  __TEXT.__cstring: 0x428c2
-+  __TEXT.__swift5_assocty: 0x13b8
-+  __TEXT.__swift5_proto: 0xa8c
-+  __TEXT.__swift5_types: 0x874
-+  __TEXT.__swift5_capture: 0x4970
-+  __TEXT.__oslogstring: 0x2eddb
-+  __TEXT.__cstring: 0x42b01
-   __TEXT.__swift5_protos: 0x88
--  __TEXT.__swift_as_entry: 0x5e4
--  __TEXT.__swift_as_ret: 0x608
--  __TEXT.__swift_as_cont: 0xd44
-+  __TEXT.__swift_as_entry: 0x604
-+  __TEXT.__swift_as_ret: 0x630
-+  __TEXT.__swift_as_cont: 0xd7c
-   __TEXT.__swift5_mpenum: 0x90
--  __TEXT.__gcc_except_tab: 0x8ae0
-+  __TEXT.__gcc_except_tab: 0x8b64
-   __TEXT.__ustring: 0x7e
--  __TEXT.__unwind_info: 0x1ba08
--  __TEXT.__eh_frame: 0x13120
-+  __TEXT.__unwind_info: 0x1bd28
-+  __TEXT.__eh_frame: 0x1362c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xf4b0
--  __DATA_CONST.__objc_classlist: 0x2920
-+  __DATA_CONST.__const: 0xf4e8
-+  __DATA_CONST.__objc_classlist: 0x2940
-   __DATA_CONST.__objc_catlist: 0x208
-   __DATA_CONST.__objc_catlist2: 0x18
-   __DATA_CONST.__objc_protolist: 0x1260
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x22230
--  __DATA_CONST.__objc_protorefs: 0x6c8
--  __DATA_CONST.__objc_superrefs: 0x1ef0
-+  __DATA_CONST.__objc_selrefs: 0x22370
-+  __DATA_CONST.__objc_protorefs: 0x6d0
-+  __DATA_CONST.__objc_superrefs: 0x1f00
-   __DATA_CONST.__objc_arraydata: 0x9b0
--  __DATA_CONST.__got: 0x6fd0
--  __AUTH_CONST.__const: 0x1a4f0
--  __AUTH_CONST.__cfstring: 0x22960
--  __AUTH_CONST.__objc_const: 0x90c10
-+  __DATA_CONST.__got: 0x7080
-+  __AUTH_CONST.__const: 0x1ab28
-+  __AUTH_CONST.__cfstring: 0x22a40
-+  __AUTH_CONST.__objc_const: 0x91178
-   __AUTH_CONST.__objc_intobj: 0x1bf0
--  __AUTH_CONST.__objc_doubleobj: 0x540
-   __AUTH_CONST.__objc_arrayobj: 0x540
-   __AUTH_CONST.__objc_dictobj: 0x578
-   __AUTH_CONST.__objc_floatobj: 0x40
--  __AUTH_CONST.__auth_got: 0x4ed8
--  __AUTH.__objc_data: 0x1c9c0
--  __AUTH.__data: 0x5d48
--  __DATA.__objc_ivar: 0x1940
--  __DATA.__data: 0x14fa0
-+  __AUTH_CONST.__objc_doubleobj: 0x540
-+  __AUTH_CONST.__auth_got: 0x4f78
-+  __AUTH.__objc_data: 0x1c940
-+  __AUTH.__data: 0x5e88
-+  __DATA.__objc_ivar: 0x1948
-+  __DATA.__data: 0x15218
-   __DATA.__objc_stublist: 0x80
--  __DATA.__bss: 0x133d8
--  __DATA.__common: 0x3f0
--  __DATA_DIRTY.__objc_ivar: 0x3b14
--  __DATA_DIRTY.__objc_data: 0x7fd8
--  __DATA_DIRTY.__data: 0x1908
--  __DATA_DIRTY.__common: 0xa0
--  __DATA_DIRTY.__bss: 0x14d0
-+  __DATA.__bss: 0x13598
-+  __DATA.__common: 0x3d8
-+  __DATA_DIRTY.__objc_ivar: 0x3b28
-+  __DATA_DIRTY.__objc_data: 0x8290
-+  __DATA_DIRTY.__data: 0x1a18
-+  __DATA_DIRTY.__common: 0xb8
-+  __DATA_DIRTY.__bss: 0x1650
-   - /System/Library/Frameworks/ARKit.framework/ARKit
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
+-1227.0.0.0.1
++1232.3.0.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 43504
--  Symbols:   93180
--  CStrings:  14066
+-  Symbols:   47076
+-  CStrings:  9642
 +  Functions: 43803
-+  Symbols:   93438
-+  CStrings:  14103
- 
-Sections:
-~ __TEXT.__dlopen_cstrs : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__ustring : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_catlist2 : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __DATA.__objc_stublist : content changed
++  Symbols:   47197
++  CStrings:  9672
 Symbols:
 + -[HUCameraActivityZoneEditorViewController _logTagForZoneView:]
 + -[HUCameraActivityZoneEditorViewController _userSettingsForZoneView:]
@@ -252,52 +180,6 @@ Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA4ViewP7HomeUI2E19bridgedSceneUpdatesyQryAA0I5PhaseOcFQOyAF21CameraViewerContainerV_Qo_AA30_EnvironmentKeyWritingModifierVyAIGGANySbGGANyAA11ColorSchemeOGGAaDHPAraDHPApaDHPqd__AaDHD2_ALHO_AoA0eR0HPyHCHC_AqaWHPyHCHC_AuaWHPyHCHC
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA4ViewPAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyACyAA6HStackVyAA05TupleD0VyAA012_ConditionalD0VyACy04HomeB009GaugeIconE033_807D4330207489FC36342A9278B02199LLVAA12_FrameLayoutVGACyAP06StatusqE0ARLLVAUGG_AP0dE6LabelsARLLVQPGGAA05_FlexvW0VG_Qo_AA0I18AttachmentModifierVGAA25_AppearanceActionModifierVGA11_GAaDHPA12_AaDHPA9_AaDHPqd__AaDHD2_A6_HO_A8_AA0E8ModifierHPyHCHC_A11_AAA14_HPyHCHC_A11_AAA14_HPyHCHC
 + _get_witness_table 7SwiftUI6VStackVyAA12TupleContentVyAA012_ConditionalE0VyAA08ModifiedE0VyAA4ViewPAAE12onTapGesture5count7performQrSi_yyctFQOyAIyACyAEyAIy04HomeB007PINDotsH033_7257F3026C5AAB2AE4831C86C1A12CFELLVAA16_FlexFrameLayoutVG_AkAE0I6Change2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAkAEAvwX_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAkAEAvwX_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAIyAIyAkAE7focusedyQrAA10FocusStateV7BindingVySb_GFQOyAIyAkAE12keyboardTypeyQrSo14UIKeyboardTypeVFQOyAA9TextFieldVyAA4TextVG_Qo_AA30_EnvironmentKeyWritingModifierVySSSgGG_Qo_AA01_yZ0VGAA14_OpacityEffectVG_SSQo__SSQo__AO14AccessorySetupO010AccessCodeH5ModelC4ModeOQo_QPGGAA01_E13ShapeModifierVyAA9RectangleVGG_Qo_AA25_AppearanceActionModifierVGAIyAIyAIyAIyAO22CustomNumericCodeFieldAQLLVATGAA34_InsettableBackgroundShapeModifierVyAA5ColorVAA16RoundedRectangleVGGAA08_PaddingZ0VGAA31AccessibilityAttachmentModifierVGG_AIyAIyAA6ButtonVyA9_GA60_GATGSgAA6SpacerVQPGGAaJHPyHC
-+ _objc_msgSend$_activityHistoryTopic
-+ _objc_msgSend$_announceTopic
-+ _objc_msgSend$_contentConfigurationForEKAppItemCell:item:
-+ _objc_msgSend$_energyTopic
-+ _objc_msgSend$_logTagForZoneView:
-+ _objc_msgSend$_safetyAndSecurityTopic
-+ _objc_msgSend$_userSettingsForZoneView:
-+ _objc_msgSend$_wireUpZoneView:
-+ _objc_msgSend$aggregatePowerDescriptionFor:
-+ _objc_msgSend$arrangedSubviews
-+ _objc_msgSend$captureCurrentStateForZoneView:
-+ _objc_msgSend$captureInitialStates
-+ _objc_msgSend$deleteAllEventsForCameraProfileID:
-+ _objc_msgSend$displayProgressIndicator
-+ _objc_msgSend$ekAppStatusTextWithHomeID:appBundleID:isHomeOwner:completion:
-+ _objc_msgSend$hasEventsForCameraProfileID:
-+ _objc_msgSend$hf_isAwaitingPostPairingSetup
-+ _objc_msgSend$initWithActivityZones:isInclusionMode:
-+ _objc_msgSend$initWithArray:copyItems:
-+ _objc_msgSend$initWithFrame:cameraProfile:
-+ _objc_msgSend$initialStates
-+ _objc_msgSend$isEqualToState:
-+ _objc_msgSend$isInclusionMode
-+ _objc_msgSend$makeHostingControllerWithCameraProfileID:
-+ _objc_msgSend$null
-+ _objc_msgSend$optimisticEKAppStatusByBundleID
-+ _objc_msgSend$rightBarButtonItems
-+ _objc_msgSend$selectHomeSidebarDestination
-+ _objc_msgSend$setInitialStates:
-+ _objc_msgSend$setOnCleanlinessChange:
-+ _objc_msgSend$setOptimisticEKAppStatus:forAppBundleID:
-+ _objc_msgSend$setOptimisticEKAppStatusByBundleID:
-+ _objc_msgSend$setTutorialLabel:
-+ _objc_msgSend$setZoneViews:
-+ _objc_msgSend$setZonesStackView:
-+ _objc_msgSend$setupNavigationBar
-+ _objc_msgSend$setupScrollView
-+ _objc_msgSend$setupTutorialLabel
-+ _objc_msgSend$setupViews
-+ _objc_msgSend$setupZoneViews
-+ _objc_msgSend$shouldHideEmptyStatusSection
-+ _objc_msgSend$shouldHideMatterAccessoryLikeItem:
-+ _objc_msgSend$streamHostingController
-+ _objc_msgSend$validateAndConvertZones:
-+ _objc_msgSend$zoneViews
-+ _objc_msgSend$zonesStackView
 + _swift_cvw_initEnumMetadataSingleCaseWithLayoutString
 + _symbolic SSSgIegg_
 + _symbolic SaySo15UIBarButtonItemCG
@@ -403,15 +285,6 @@ Symbols:
 - _get_witness_table 7SwiftUI15ModifiedContentVyAA6ZStackVyACyACyAA4ViewP7HomeUI2E41optionalLabelWithTopLeadingLuminanceScrim_12cornerRadius7paddingQrSSSg_12CoreGraphics7CGFloatVAOtFQOyACyAgAE11glassEffect_2inQrAA5GlassV_qd__tAA5ShapeRd__lFQOyAgHE7prefers_3for7factors8location8priorityQr0G9DataModel6CameraO4ModeO_A0_11EnvironmentO5StateCy_AZ21LiveCameraEnvironmentV_GAH21MultiFactorVisibilityV7FactorsVAH06CameraF9RegistrarC8LocationOSgA15_8PriorityOtFQOyAH10CameraCellV_Qo__AA16RoundedRectangleVQo_AA05_ClipW0VyA25_GG_Qo_AA30_SafeAreaRegionsIgnoringLayoutVGAA31AccessibilityAttachmentModifierVGG0gB014AccessorySetupO28CameraStreamVisibilityLogger33_315A2C18A9058D451A4B9CCE27E43430LLVGAaFHPA38_AaFHPyHC_A44_AA0F8ModifierHPyHCHC
 - _get_witness_table 7SwiftUI15ModifiedContentVyACyAA4ViewP7HomeUI2E19bridgedSceneUpdatesyQryAA0I5PhaseOcFQOyAF21CameraViewerContainerV_Qo_AA30_EnvironmentKeyWritingModifierVyAIGGANyAA11ColorSchemeOGGAaDHPApaDHPqd__AaDHD2_ALHO_AoA0eR0HPyHCHC_AsaUHPyHCHC
 - _memset
-- _objc_msgSend$_displayProgressIndicatorWhileLoading
-- _objc_msgSend$_updateViewsForTraitCollection
-- _objc_msgSend$activityZoneCanvas
-- _objc_msgSend$displayActivityZoneState
-- _objc_msgSend$liveStreamViewController
-- _objc_msgSend$powerMeasurementDescriptionFor:
-- _objc_msgSend$setMinimumSize:
-- _objc_msgSend$sizeRestrictions
-- _objc_msgSend$updateAfterVideoBoundsChange
 - _swift_runtimeSupportsNoncopyableTypes
 - _symbolic _____yAAy_____y______Qo______y_____GGADy_____GG 7SwiftUI15ModifiedContentV AA4ViewP7HomeUI2E19bridgedSceneUpdatesyQryAA0I5PhaseOcFQO AF21CameraViewerContainerV AA30_EnvironmentKeyWritingModifierV AI AA11ColorSchemeO
 - _symbolic _____ySS_____G 11Observation12ObservationsV s5NeverO
@@ -498,5 +371,4 @@ CStrings:
 - "Saved activity zones %lu without error."
 - "Weak code dismissed by user, proceeding to confirm"
 - "bolt.fill"
-
 ```

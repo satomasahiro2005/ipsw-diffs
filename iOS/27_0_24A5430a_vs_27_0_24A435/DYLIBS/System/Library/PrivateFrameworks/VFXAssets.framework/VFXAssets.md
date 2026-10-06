@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/VFXAssets.framework/VFXAssets`
 
-```diff
+### Section Size Changes
 
- 45.0.0.0.0
--  __TEXT.__text: 0x3cb8
-+  __TEXT.__text: 0x3cbc
-   __TEXT.__const: 0x142
-   __TEXT.__cstring: 0x6d4
-   __TEXT.__constg_swiftt: 0x4c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3cb8` | `0x3cbc` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2b2981924 -> sub_2b377e924 : 356 -> 360
+~ sub_2b286a924 -> sub_2b3667924 : 356 -> 360
 ```

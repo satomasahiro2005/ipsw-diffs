@@ -2,105 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/PasswordManagerUI.framework/PasswordManagerUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x56105c` | `0x56596c` | **`+0x4910`** |
+| `__DATA.__bss` | `0x1f7f0` | `0x1fd00` | **`+0x510`** |
+| `__TEXT.__const` | `0x37394` | `0x37834` | **`+0x4a0`** |
+| `__AUTH_CONST.__const` | `0x1a440` | `0x1a848` | **`+0x408`** |
+| `__AUTH.__objc_data` | `0x870` | `0x9f0` | **`+0x180`** |
+| `__TEXT.__eh_frame` | `0x12998` | `0x12b10` | **`+0x178`** |
+| `__TEXT.__constg_swiftt` | `0xd450` | `0xd578` | **`+0x128`** |
+| `__TEXT.__swift5_typeref` | `0x77498` | `0x775ae` | **`+0x116`** |
+| `__AUTH_CONST.__objc_const` | `0xb450` | `0xb560` | **`+0x110`** |
+| `__TEXT.__unwind_info` | `0xeb10` | `0xec18` | **`+0x108`** |
+| `__TEXT.__swift5_capture` | `0x67c8` | `0x68c8` | **`+0x100`** |
+| `__TEXT.__swift5_fieldmd` | `0xa794` | `0xa870` | **`+0xdc`** |
+| `__TEXT.__swift5_reflstr` | `0xdcdb` | `0xddab` | **`+0xd0`** |
+| `__DATA_DIRTY.__objc_data` | `0x39f8` | `0x3980` | **`-0x78`** |
+| `__DATA.__data` | `0x11438` | `0x114a8` | **`+0x70`** |
+| `__AUTH.__data` | `0x5e68` | `0x5ec8` | **`+0x60`** |
+| `__TEXT.__objc_methlist` | `0x283c` | `0x288c` | **`+0x50`** |
+| `__TEXT.__oslogstring` | `0x36b9` | `0x3709` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x4250` | `0x4298` | **`+0x48`** |
+| `__DATA_CONST.__objc_selrefs` | `0x32a8` | `0x32f0` | **`+0x48`** |
+| `__TEXT.__swift5_assocty` | `0x29c0` | `0x2a08` | **`+0x48`** |
+| `__DATA_CONST.__got` | `0x2d90` | `0x2dd0` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x1252d` | `0x1256d` | **`+0x40`** |
+| `__TEXT.__swift5_proto` | `0xe7c` | `0xea8` | **`+0x2c`** |
+| `__AUTH_CONST.__cfstring` | `0x420` | `0x440` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0xaa0` | `0xac0` | **`+0x20`** |
+| `__TEXT.__swift5_builtin` | `0x35c` | `0x370` | **`+0x14`** |
+| `__DATA_DIRTY.__data` | `0xb1d8` | `0xb1c8` | **`-0x10`** |
+| `__TEXT.__swift5_types` | `0xa5c` | `0xa6c` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0xd28` | `0xd34` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x418` | `0x420` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x5f8` | `0x600` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x57c` | `0x580` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7625.1.29.10.29
--  __TEXT.__text: 0x52c85c
--  __TEXT.__objc_methlist: 0x283c
--  __TEXT.__cstring: 0x1252d
--  __TEXT.__const: 0x37394
 +7625.2.4.1.0
-+  __TEXT.__text: 0x530f68
-+  __TEXT.__objc_methlist: 0x288c
-+  __TEXT.__cstring: 0x1256d
-+  __TEXT.__const: 0x37834
-   __TEXT.__gcc_except_tab: 0x4c
-   __TEXT.__dlopen_cstrs: 0x9a
--  __TEXT.__oslogstring: 0x36b9
-+  __TEXT.__oslogstring: 0x3709
-   __TEXT.__ustring: 0x76
--  __TEXT.__constg_swiftt: 0xd450
--  __TEXT.__swift5_typeref: 0x77498
--  __TEXT.__swift5_builtin: 0x35c
--  __TEXT.__swift5_reflstr: 0xdcdb
--  __TEXT.__swift5_fieldmd: 0xa794
--  __TEXT.__swift5_assocty: 0x29c0
--  __TEXT.__swift5_capture: 0x67c8
--  __TEXT.__swift5_proto: 0xe7c
--  __TEXT.__swift5_types: 0xa5c
--  __TEXT.__swift_as_entry: 0x57c
--  __TEXT.__swift_as_ret: 0x5f8
--  __TEXT.__swift_as_cont: 0xd28
-+  __TEXT.__constg_swiftt: 0xd578
-+  __TEXT.__swift5_typeref: 0x775ae
-+  __TEXT.__swift5_builtin: 0x370
-+  __TEXT.__swift5_reflstr: 0xddab
-+  __TEXT.__swift5_fieldmd: 0xa870
-+  __TEXT.__swift5_assocty: 0x2a08
-+  __TEXT.__swift5_capture: 0x68c8
-+  __TEXT.__swift5_proto: 0xea8
-+  __TEXT.__swift5_types: 0xa6c
-+  __TEXT.__swift_as_entry: 0x580
-+  __TEXT.__swift_as_ret: 0x600
-+  __TEXT.__swift_as_cont: 0xd34
-   __TEXT.__swift5_mpenum: 0xd4
-   __TEXT.__swift5_protos: 0x70
--  __TEXT.__unwind_info: 0x12a28
--  __TEXT.__eh_frame: 0x129a0
-+  __TEXT.__unwind_info: 0x12b48
-+  __TEXT.__eh_frame: 0x12b10
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xaa0
--  __DATA_CONST.__objc_classlist: 0x418
-+  __DATA_CONST.__const: 0xac0
-+  __DATA_CONST.__objc_classlist: 0x420
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x270
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x32a8
-+  __DATA_CONST.__objc_selrefs: 0x32f0
-   __DATA_CONST.__objc_protorefs: 0x130
-   __DATA_CONST.__objc_superrefs: 0x30
--  __DATA_CONST.__got: 0x2d90
--  __AUTH_CONST.__const: 0x1a440
--  __AUTH_CONST.__cfstring: 0x420
--  __AUTH_CONST.__objc_const: 0xb450
--  __AUTH_CONST.__auth_got: 0x4250
--  __AUTH.__objc_data: 0x870
--  __AUTH.__data: 0x5e68
-+  __DATA_CONST.__got: 0x2dd0
-+  __AUTH_CONST.__const: 0x1a848
-+  __AUTH_CONST.__cfstring: 0x440
-+  __AUTH_CONST.__objc_const: 0xb560
-+  __AUTH_CONST.__auth_got: 0x4298
-+  __AUTH.__objc_data: 0x9f0
-+  __AUTH.__data: 0x5ec8
-   __DATA.__objc_ivar: 0x80
--  __DATA.__data: 0x11438
-+  __DATA.__data: 0x114a8
-   __DATA.__common: 0x118
--  __DATA_DIRTY.__objc_data: 0x39f8
--  __DATA_DIRTY.__data: 0xb1d8
-+  __DATA_DIRTY.__objc_data: 0x3980
-+  __DATA_DIRTY.__data: 0xb1c8
-   __DATA_DIRTY.__bss: 0xb30
-   __DATA_DIRTY.__common: 0x1d8
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 23065
--  Symbols:   10158
+-  Symbols:   8835
 -  CStrings:  1597
 +  Functions: 23165
-+  Symbols:   10197
++  Symbols:   8869
 +  CStrings:  1600
- 
 Symbols:
 + _OBJC_CLASS_$__TtC17PasswordManagerUI21PMAppLifecycleMonitor
 + _OBJC_METACLASS_$__TtC17PasswordManagerUI21PMAppLifecycleMonitor
@@ -130,13 +82,6 @@ Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVy015PasswordManagerB044PMAddGroupMembersViewControllerRepresentable33_94532F36A1EC67F7D94CC2629A6B45F1LLVAA30_SafeAreaRegionsIgnoringLayoutVGAA0J0HPAgaKHPyHC_AiA0J8ModifierHPyHCHC
 + _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE15navigationTitleyQrqd__SyRd__lFQOyAcAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAcAE5sheet4item0F7Dismiss7contentQrAA7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lFQOyAcAEAhijKQrAO_APqd_0_qd__ctsAQRd__AaBRd_0_r0_lFQOyAcAEAhijKQrAO_APqd_0_qd__ctsAQRd__AaBRd_0_r0_lFQOyAcAEAH11isPresentedAjKQrAMySbG_APqd__yctAaBRd__lFQOyAcAE7toolbarAKQrqd__yXE_tAA14ToolbarContentRd__lFQOyAcAEAefG_Qrqd___SbyyctSQRd__lFQOyAcAEAefG_Qrqd___SbyyctSQRd__lFQOyAA08ModifiedT0VyAA5GroupVyAA012_ConditionalT0VyAWyAWyAWyAcAE06scrollT10BackgroundyQrAA10VisibilityOFQOyAcAE9listStyleyQrqd__AA9ListStyleRd__lFQOyAA4ListVySSAA05TupleT0Vy015PasswordManagerB0023PMAppAccountsCollectionC0V_AcAE23matchedTransitionSource2id2inQrqd___AA9NamespaceV2IDVtSHRd__lFQOyA9_36PMGeneratedPasswordsSearchResultsRowV_SSQo_SgQPGG_AA14PlainListStyleVQo__Qo_A9_18PMItemsContextMenuVySSGGA9_31PMItemsDeleteConfirmationDialogVGAA16_OverlayModifierVyAA0t11UnavailableC0VyAA017SearchUnavailableT0V5LabelVA41_11DescriptionVA41_7ActionsVGSgGGAWyAWyAWyA6_yA9_20PMAppSourceListModelC6SourceOA8_yAcAE23listSectionCornerRadiusyQr12CoreGraphics7CGFloatVSgFQOyAA7SectionVyAA05EmptyC0VAWyAWyAWyA9_12PMSourceGridVAA16_FixedSizeLayoutVGAA21_TraitWritingModifierVyAA21ListRowInsetsTraitKeyVGGA71_yAA07ListRowY8TraitKeyVGGA64_G_Qo__A8_yAcAE14sectionActionsAKQrqd__yXE_tAaBRd__lFQOyA62_yAWyAA4TextVAA14_PaddingLayoutVGA8_yAcAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAYyAA8StaticIfVyAA8SolariumVA9_21PMGroupInvitationsRowVAA6HStackVyA8_yAWyA9_26PMGroupInvitationSourceRowVA86_G_AWyAWyAA20_DisclosureIndicatorVA86_GA86_GSgQPGGGG_A55_Qo_Sg_AA7ForEachVySayA9_09PMSharingV0VGSo15WBSSavedAccountC10SafariCoreE0V2IDVA_yAcAEA88__A89_Qrqd___SbtSHRd__lFQOyAYyA91_yA93_A9_10PMGroupRowVA97_yA8_yAWyA123_A86_G_A105_QPGGGG_A55_Qo_A129_GGQPGA64_G_A64_Qo__AWyA9_09PMPlatterC0VyA9_05PMTipC0VGA9_26PMDimsWhenInactiveModifier33_596CBDB339D4A583A572168BE1F188B4LLVGSgQPGSgQPGGAA30_EnvironmentKeyWritingModifierVyA59_GGA150_yA9_16PMSourceRowStyleOGGAA31AccessibilityAttachmentModifierVGGGA9_12PMSearchable33_BE720C7A8B2BD2303B51F85E9EBC6E2DLLVG_SSQo__SSQo__A_yAA05TuplesT0VyAaUPAAEA12_A13_A14_Qrqd___A18_tSHRd__lFQOyAA0S4ItemVyytAA4MenuVyAAA42_VyA84_AA5ImageVGA8_yA62_yA64_A8_yAWyAA6ButtonVyA178_GAA32_EnvironmentKeyTransformModifierVySbGG_A181_AA6ToggleVyA178_GSgQPGA64_G_A62_yA64_A181_A64_GSgQPGGG_SSQo__A_yA169_yAA0sT7BuilderV10buildBlockyQrxAaURzlFZQOy_A170_AAEA12_A13_A14_Qrqd___A18_tSHRd__lFQOyA172_yytAWyA181_A158_GSgG_SSQo_Qo__AA0s4ItemV0VyA8_yAA6SpacerVSg_AA0S11SearchProxyVA210_QPGGA199_A200_yQrxAaURzlFZQOy_A170_AAEA12_A13_A14_Qrqd___A18_tSHRd__lFQOyA172_yytA9_19PMNewPasswordButtonVSgG_SSQo_Qo_tGA199_A200_yQrxAaURzlFZQOy_A205_Qo_GtGA169_yA207_yA8_yA195__A209_QPGG_A199_A200_yQrxAaURzlFZQOy_A220_Qo_SgtGGQo__AcAE0D10TransitionyQrqd__AA20NavigationTransitionRd__lFQOyA9_015PMDebugSettingsC0V_AA24ZoomNavigationTransitionVQo_Qo__A9_05PMNewV7ContextOAcAEA232_yQrqd__AAA233_Rd__lFQOyA9_05PMNewV4FlowV_A237_Qo_Qo__A53_28GeneratedPasswordsTransitionVAcAEA232_yQrqd__AAA233_Rd__lFQOyA9_023PMGeneratedPasswordsLogC0V_A237_Qo_Qo__A9_22PMAppAccountsListModelCAcAEA232_yQrqd__AAA233_Rd__lFQOyA9_024PMExportAccountSelectionC0V_A237_Qo_Qo__SbQo__SSQo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQOyAA15ModifiedContentVyAOyAcAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAA012SubscriptionC0Vy7Combine18PassthroughSubjectCy015PasswordManagerB013PMQuickActionOs5NeverOGAcAEApqR_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEApqR_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEApqR_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE0N20ContinueUserActivity_7performQrSS_ySo14NSUserActivityCctFQOyAcAE0N7OpenURLA3_Qry10Foundation3URLVc_tFQOyAA5GroupVyAcAEAJyQrAKRld__CAlMRd__lFQOyAOyAOyAOyAcAE5alert_11isPresented7actions7messageQrqd___AA7BindingVySbGqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAcAEA12__A13_A14_Qrqd___A18_qd_0_yXEtSyRd__AaBRd_0_r0_lFQOyAOyAOyAcAE5sheetA13_0N7Dismiss7contentQrA18__yycSgqd__yctAaBRd__lFQOyAX019PMAppRootNavigationC0V_AX016PMOnboardingRootC0VQo_AX31PMICloudTermsAndConditionsAlertVGAX29PMBulkOperationProgressDialogVG_SSAA05EmptyC0VQo__SSA35_AA4TextVQo_AX37PMHandleInboundOTPAuthURLViewModifier33_87FD31788397888D0931F9974509D2FELLVGAX39PMHandleInboundTOTPMigrationURLModifier33_1634655A6AF007827D934EFB5AAEA52BLLVGAX030PMHandleInboundSharableAccountC8Modifier33_1264FFAC77FCDBF430B9ED39204C97B9LLVG_AX35PMGlobalAnimationNamespaceContainerCQo_G_Qo__Qo__AX9PMAccountVSgQo__SbQo__SbQo_G_AA10ScenePhaseOQo_AA30_EnvironmentKeyWritingModifierVyyA9_cGGA69_yAX26PMAirDropTransfersObserverCSgGG_AX13PMSearchModelCQo__Qo_HO
-+ _objc_msgSend$emailProviderFraudTargets
-+ _objc_msgSend$getAutomaticStrongPasswordForApplicationIdentifier:passwordRules:confirmPasswordRules:completionHandler:
-+ _objc_msgSend$initForStrongPasswordGenerator:passwordRules:overrideApplicationIdentifier:
-+ _objc_msgSend$isAutomaticPasswordChangeTestFestModeEnabled
-+ _objc_msgSend$setAutomaticPasswordChangeTestFestModeEnabled:
-+ _objc_msgSend$setKeywords:
-+ _objc_msgSend$shouldShowInternalUI
 + _symbolic $s17PasswordManagerUI18PMPausableFetchingP
 + _symbolic Say______pG 17PasswordManagerUI18PMPausableFetchingP
 + _symbolic SayyycG
@@ -201,8 +146,6 @@ Symbols:
 - _associated conformance 17PasswordManagerUI21PMAddGroupMembersViewV05SwiftC029UIViewControllerRepresentableAaD0G0
 - _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE15navigationTitleyQrqd__SyRd__lFQOyAcAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAcAE5sheet4item0F7Dismiss7contentQrAA7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lFQOyAcAEAhijKQrAO_APqd_0_qd__ctsAQRd__AaBRd_0_r0_lFQOyAcAEAhijKQrAO_APqd_0_qd__ctsAQRd__AaBRd_0_r0_lFQOyAcAEAH11isPresentedAjKQrAMySbG_APqd__yctAaBRd__lFQOyAcAE7toolbarAKQrqd__yXE_tAA14ToolbarContentRd__lFQOyAcAEAefG_Qrqd___SbyyctSQRd__lFQOyAcAEAefG_Qrqd___SbyyctSQRd__lFQOyAA08ModifiedT0VyAA5GroupVyAA012_ConditionalT0VyAWyAWyAWyAcAE06scrollT10BackgroundyQrAA10VisibilityOFQOyAcAE9listStyleyQrqd__AA9ListStyleRd__lFQOyAA4ListVySSAA05TupleT0Vy015PasswordManagerB0023PMAppAccountsCollectionC0V_AcAE23matchedTransitionSource2id2inQrqd___AA9NamespaceV2IDVtSHRd__lFQOyA9_36PMGeneratedPasswordsSearchResultsRowV_SSQo_SgQPGG_AA14PlainListStyleVQo__Qo_A9_18PMItemsContextMenuVySSGGA9_31PMItemsDeleteConfirmationDialogVGAA16_OverlayModifierVyAA0t11UnavailableC0VyAA017SearchUnavailableT0V5LabelVA41_11DescriptionVA41_7ActionsVGSgGGAWyAWyAWyA6_yA9_20PMAppSourceListModelC6SourceOA8_yAcAE23listSectionCornerRadiusyQr12CoreGraphics7CGFloatVSgFQOyAA7SectionVyAA05EmptyC0VAWyAWyAWyA9_12PMSourceGridVAA16_FixedSizeLayoutVGAA21_TraitWritingModifierVyAA21ListRowInsetsTraitKeyVGGA71_yAA07ListRowY8TraitKeyVGGA64_G_Qo__A8_yAcAE14sectionActionsAKQrqd__yXE_tAaBRd__lFQOyA62_yAWyAA4TextVAA14_PaddingLayoutVGA8_yAcAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAYyAA8StaticIfVyAA8SolariumVA9_21PMGroupInvitationsRowVAA6HStackVyA8_yAWyA9_26PMGroupInvitationSourceRowVA86_G_AWyAWyAA20_DisclosureIndicatorVA86_GA86_GSgQPGGGG_A55_Qo_Sg_AA7ForEachVySayA9_09PMSharingV0VGSo15WBSSavedAccountC10SafariCoreE0V2IDVA_yAcAEA88__A89_Qrqd___SbtSHRd__lFQOyAYyA91_yA93_A9_10PMGroupRowVA97_yA8_yAWyA123_A86_G_A105_QPGGGG_A55_Qo_A129_GGQPGA64_G_A64_Qo__AWyA9_09PMPlatterC0VyA9_05PMTipC0VGA9_26PMDimsWhenInactiveModifier33_596CBDB339D4A583A572168BE1F188B4LLVGSgQPGSgQPGGAA30_EnvironmentKeyWritingModifierVyA59_GGA150_yA9_16PMSourceRowStyleOGGAA31AccessibilityAttachmentModifierVGGGA9_12PMSearchable33_BE720C7A8B2BD2303B51F85E9EBC6E2DLLVG_SSQo__SSQo__A_yAA05TuplesT0VyAaUPAAEA12_A13_A14_Qrqd___A18_tSHRd__lFQOyAA0S4ItemVyytAA4MenuVyAAA42_VyA84_AA5ImageVGA8_yA62_yA64_A8_yAWyAA6ButtonVyA178_GAA32_EnvironmentKeyTransformModifierVySbGG_A181_QPGA64_G_A62_yA64_A181_A64_GSgQPGGG_SSQo__A_yA169_yAA0sT7BuilderV10buildBlockyQrxAaURzlFZQOy_A170_AAEA12_A13_A14_Qrqd___A18_tSHRd__lFQOyA172_yytAWyA181_A158_GSgG_SSQo_Qo__AA0s4ItemV0VyA8_yAA6SpacerVSg_AA0S11SearchProxyVA206_QPGGA195_A196_yQrxAaURzlFZQOy_A170_AAEA12_A13_A14_Qrqd___A18_tSHRd__lFQOyA172_yytA9_19PMNewPasswordButtonVSgG_SSQo_Qo_tGA195_A196_yQrxAaURzlFZQOy_A201_Qo_GtGA169_yA203_yA8_yA191__A205_QPGG_A195_A196_yQrxAaURzlFZQOy_A216_Qo_SgtGGQo__AcAE0D10TransitionyQrqd__AA20NavigationTransitionRd__lFQOyA9_015PMDebugSettingsC0V_AA24ZoomNavigationTransitionVQo_Qo__A9_05PMNewV7ContextOAcAEA228_yQrqd__AAA229_Rd__lFQOyA9_05PMNewV4FlowV_A233_Qo_Qo__A53_28GeneratedPasswordsTransitionVAcAEA228_yQrqd__AAA229_Rd__lFQOyA9_023PMGeneratedPasswordsLogC0V_A233_Qo_Qo__A9_22PMAppAccountsListModelCAcAEA228_yQrqd__AAA229_Rd__lFQOyA9_024PMExportAccountSelectionC0V_A233_Qo_Qo__SbQo__SSQo_HO
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQOyAA15ModifiedContentVyAOyAcAE8onChange2of7initial_Qrqd___SbyyctSQRd__lFQOyAcAEApqR_Qrqd___SbyyctSQRd__lFQOyAA012SubscriptionC0Vy7Combine18PassthroughSubjectCy015PasswordManagerB013PMQuickActionOs5NeverOGAcAEApqR_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEApqR_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEApqR_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE0N20ContinueUserActivity_7performQrSS_ySo14NSUserActivityCctFQOyAcAE0N7OpenURLA3_Qry10Foundation3URLVc_tFQOyAA5GroupVyAcAEAJyQrAKRld__CAlMRd__lFQOyAOyAOyAOyAcAE5alert_11isPresented7actions7messageQrqd___AA7BindingVySbGqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAcAEA12__A13_A14_Qrqd___A18_qd_0_yXEtSyRd__AaBRd_0_r0_lFQOyAOyAOyAcAE5sheetA13_0N7Dismiss7contentQrA18__yycSgqd__yctAaBRd__lFQOyAX019PMAppRootNavigationC0V_AX016PMOnboardingRootC0VQo_AX31PMICloudTermsAndConditionsAlertVGAX29PMBulkOperationProgressDialogVG_SSAA05EmptyC0VQo__SSA35_AA4TextVQo_AX37PMHandleInboundOTPAuthURLViewModifier33_87FD31788397888D0931F9974509D2FELLVGAX39PMHandleInboundTOTPMigrationURLModifier33_1634655A6AF007827D934EFB5AAEA52BLLVGAX030PMHandleInboundSharableAccountC8Modifier33_1264FFAC77FCDBF430B9ED39204C97B9LLVG_AX35PMGlobalAnimationNamespaceContainerCQo_G_Qo__Qo__AX9PMAccountVSgQo__SbQo__SbQo_G_AA10ScenePhaseOQo__A66_Qo_AA30_EnvironmentKeyWritingModifierVyyA9_cGGA70_yAX26PMAirDropTransfersObserverCSgGG_AX13PMSearchModelCQo__Qo_HO
-- _objc_msgSend$getAutomaticStrongPasswordForAppWithPasswordRules:confirmPasswordRules:overrideApplicationIdentifier:completion:
-- _objc_msgSend$initForAutoFillHelper:passwordRules:overrideApplicationIdentifier:
 - _symbolic $s17PasswordManagerUI011PMAutomaticA25ChangeCompletionReportingP
 - _symbolic _____ 17PasswordManagerUI21PMAddGroupMembersViewV11CoordinatorC
 - _symbolic ______p 17PasswordManagerUI011PMAutomaticA25ChangeCompletionReportingP

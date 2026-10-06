@@ -2,96 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/TranslationDaemon.framework/TranslationDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a6db0` | `0x1a9d1c` | **`+0x2f6c`** |
+| `__TEXT.__oslogstring` | `0xd5e0` | `0xd880` | **`+0x2a0`** |
+| `__AUTH_CONST.__cfstring` | `0x7b20` | `0x7da0` | **`+0x280`** |
+| `__TEXT.__cstring` | `0x627b` | `0x639b` | **`+0x120`** |
+| `__DATA_CONST.__const` | `0x4420` | `0x4510` | **`+0xf0`** |
+| `__TEXT.__objc_methlist` | `0x1a2d8` | `0x1a390` | **`+0xb8`** |
+| `__TEXT.__unwind_info` | `0xf9a8` | `0xfa40` | **`+0x98`** |
+| `__AUTH_CONST.__objc_const` | `0x2d088` | `0x2d118` | **`+0x90`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6b30` | `0x6ba0` | **`+0x70`** |
+| `__DATA.__data` | `0xcb8` | `0xd00` | **`+0x48`** |
+| `__TEXT.__gcc_except_tab` | `0x1b3d4` | `0x1b41c` | **`+0x48`** |
+| `__DATA_CONST.__got` | `0xeb8` | `0xef8` | **`+0x40`** |
+| `__DATA.__bss` | `0x7a0` | `0x7d0` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0x10a8` | `0x10c8` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x2e8` | `0x300` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x11cc` | `0x11e0` | **`+0x14`** |
+| `__DATA_DIRTY.__bss` | `0x380` | `0x370` | **`-0x10`** |
+| `__DATA_DIRTY.__data` | `0x278` | `0x268` | **`-0x10`** |
+| `__TEXT.__swift5_typeref` | `0x342` | `0x34f` | **`+0xd`** |
+| `__AUTH_CONST.__auth_got` | `0xcf8` | `0xd00` | **`+0x8`** |
+| `__TEXT.__const` | `0xa9a` | `0xaa0` | **`+0x6`** |
+
+### Other Changes
+
 ```diff
 
 -385.0.0.0.0
--  __TEXT.__text: 0x1a6db0
--  __TEXT.__objc_methlist: 0x1a2d8
--  __TEXT.__const: 0xa9a
--  __TEXT.__gcc_except_tab: 0x1b3d4
--  __TEXT.__cstring: 0x627b
--  __TEXT.__oslogstring: 0xd5e0
 +388.0.0.0.0
-+  __TEXT.__text: 0x1a9d1c
-+  __TEXT.__objc_methlist: 0x1a390
-+  __TEXT.__const: 0xaa0
-+  __TEXT.__gcc_except_tab: 0x1b41c
-+  __TEXT.__cstring: 0x639b
-+  __TEXT.__oslogstring: 0xd880
-   __TEXT.__dlopen_cstrs: 0xb2
--  __TEXT.__swift5_typeref: 0x342
-+  __TEXT.__swift5_typeref: 0x34f
-   __TEXT.__swift5_capture: 0xe0
-   __TEXT.__constg_swiftt: 0x154
-   __TEXT.__swift5_builtin: 0x14
 
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x10
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0xf9a8
-+  __TEXT.__unwind_info: 0xfa40
-   __TEXT.__eh_frame: 0x388
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4420
-+  __DATA_CONST.__const: 0x4510
-   __DATA_CONST.__objc_classlist: 0x11d8
-   __DATA_CONST.__objc_catlist: 0x140
-   __DATA_CONST.__objc_protolist: 0xf8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6b30
-+  __DATA_CONST.__objc_selrefs: 0x6ba0
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x1120
-   __DATA_CONST.__objc_arraydata: 0x3c8
--  __DATA_CONST.__got: 0xeb8
--  __AUTH_CONST.__const: 0x10a8
--  __AUTH_CONST.__cfstring: 0x7b20
--  __AUTH_CONST.__objc_const: 0x2d088
-+  __DATA_CONST.__got: 0xef8
-+  __AUTH_CONST.__const: 0x10c8
-+  __AUTH_CONST.__cfstring: 0x7da0
-+  __AUTH_CONST.__objc_const: 0x2d118
-   __AUTH_CONST.__weak_auth_got: 0x28
-+  __AUTH_CONST.__objc_intobj: 0x300
-   __AUTH_CONST.__objc_arrayobj: 0x108
--  __AUTH_CONST.__objc_intobj: 0x2e8
-   __AUTH_CONST.__objc_dictobj: 0xc8
-   __AUTH_CONST.__objc_doubleobj: 0x30
--  __AUTH_CONST.__auth_got: 0xcf8
-+  __AUTH_CONST.__auth_got: 0xd00
-   __AUTH.__objc_data: 0xa1c0
-   __AUTH.__data: 0xa0
--  __DATA.__objc_ivar: 0x11cc
--  __DATA.__data: 0xcb8
--  __DATA.__bss: 0x7a0
-+  __DATA.__objc_ivar: 0x11e0
-+  __DATA.__data: 0xd00
-+  __DATA.__bss: 0x7d0
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0x10e0
--  __DATA_DIRTY.__data: 0x278
--  __DATA_DIRTY.__bss: 0x380
-+  __DATA_DIRTY.__data: 0x268
-+  __DATA_DIRTY.__bss: 0x370
-   __DATA_DIRTY.__common: 0x30
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10395
--  Symbols:   21207
+-  Symbols:   18731
 -  CStrings:  2227
 +  Functions: 10429
-+  Symbols:   21259
++  Symbols:   18768
 +  CStrings:  2262
- 
 Symbols:
 + +[MTSchemaMTAppInvocationMetadata(LTTranslationAdditions) lt_initWithTranslateAppContext:resolvedLocalePair:]
 + +[_LTDLanguageAssetService _currentSyncSignatureFromAssets:]
@@ -140,28 +89,6 @@ Symbols:
 + __localesWithVoice
 + __localesWithVoiceLock
 + __startCatalogChangeObservationIfNeeded.onceToken
-+ _objc_msgSend$_applyConnectionTrustToContext:
-+ _objc_msgSend$_catalogLookupThrottleEnabled
-+ _objc_msgSend$_currentSyncSignatureFromAssets:
-+ _objc_msgSend$_registerChangeHandler:
-+ _objc_msgSend$_registerTextActivityForContext:
-+ _objc_msgSend$_scheduleMessagingSessionReset
-+ _objc_msgSend$_sendCommonEventForTask:appIdentifier:contentType:
-+ _objc_msgSend$_startCatalogChangeObservationIfNeeded
-+ _objc_msgSend$_updateCatalogCooldownWithSubscribedCount:resolvedCount:catalog:
-+ _objc_msgSend$beginCommonEventSession:appIdentifier:
-+ _objc_msgSend$beginCommonEventSession:appIdentifier:contentType:
-+ _objc_msgSend$clearCachedValuesForStatusChangeLocked
-+ _objc_msgSend$endCommonEventSession
-+ _objc_msgSend$engineInfo
-+ _objc_msgSend$initWithTranslation:alignments:engineInfo:
-+ _objc_msgSend$lt_initWithTranslateAppContext:resolvedLocalePair:
-+ _objc_msgSend$originatingProcessIdentifier
-+ _objc_msgSend$passthroughResultWithString:sanitizedString:locale:engineInfo:
-+ _objc_msgSend$registerActivity:appIdentifier:
-+ _objc_msgSend$registerActivity:appIdentifier:contentType:
-+ _objc_msgSend$resultWithLocale:translations:engineInfo:
-+ _objc_msgSend$setEngineInfo:
 + _os_unfair_lock_assert_owner
 + _swift_allocError
 + _symbolic _____Sg 20TranslationInference0A9ModelInfoV
@@ -181,13 +108,6 @@ Symbols:
 - ___block_descriptor_40_e28_"NSString"16?0"NSString"8l
 - ___swift_destroy_boxed_opaque_existential_1
 - __cachedTTSAssets
-- _objc_msgSend$availableIdentifiers
-- _objc_msgSend$initWithTranslation:alignments:
-- _objc_msgSend$listAssetsOfTypes:matching:
-- _objc_msgSend$lt_initWithTranslateAppContext:
-- _objc_msgSend$passthroughResultWithString:sanitizedString:locale:
-- _objc_msgSend$registerActivity:
-- _objc_msgSend$resultWithLocale:translations:
 - _swift_retain
 - _symbolic _____ySSG s23_ContiguousArrayStorageC
 - _symbolic _____y__________G 12ModelCatalog0B5AssetV AA016TranslateFMAssetC8MetadataV AA0deC8ContentsV

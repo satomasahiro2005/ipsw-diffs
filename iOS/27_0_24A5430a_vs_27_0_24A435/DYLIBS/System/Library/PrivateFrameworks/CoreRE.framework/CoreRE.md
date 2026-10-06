@@ -2,23 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/CoreRE.framework/CoreRE`
 
-```diff
+### Section Size Changes
 
- 453.2.1.0.0
--  __TEXT.__text: 0x1681968
-+  __TEXT.__text: 0x16824b0
-   __TEXT.__objc_methlist: 0x4290
-   __TEXT.__const: 0x1075e4
-   __TEXT.__constg_swiftt: 0x44
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1681968` | `0x16824b0` | **`+0xb48`** |
+| `__AUTH_CONST.__const` | `0x9dd80` | `0x9dd90` | **`+0x10`** |
 
-   __DATA_CONST.__objc_superrefs: 0x1c0
-   __DATA_CONST.__objc_arraydata: 0x10
-   __DATA_CONST.__got: 0x10d0
--  __AUTH_CONST.__const: 0x9dd80
-+  __AUTH_CONST.__const: 0x9dd90
-   __AUTH_CONST.__cfstring: 0xb780
-   __AUTH_CONST.__objc_const: 0x7dc8
-   __AUTH_CONST.__weak_auth_got: 0x48
+### Other Changes
+
+```text
 Functions:
 ~ __ZN9dtNavMesh15connectExtLinksEP10dtMeshTileS1_i : 1324 -> 1320
 ~ __ZNK9dtNavMesh13getPolyHeightEPK10dtMeshTilePK6dtPolyPKfPf : 824 -> 832

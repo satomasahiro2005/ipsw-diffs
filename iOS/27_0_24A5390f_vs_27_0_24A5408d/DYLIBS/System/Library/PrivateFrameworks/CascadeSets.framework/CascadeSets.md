@@ -2,90 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/CascadeSets.framework/CascadeSets`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa7868` | `0xa9f90` | **`+0x2728`** |
+| `__TEXT.__oslogstring` | `0x4dd0` | `0x5400` | **`+0x630`** |
+| `__TEXT.__cstring` | `0x8997` | `0x8d37` | **`+0x3a0`** |
+| `__AUTH_CONST.__objc_const` | `0x12168` | `0x12428` | **`+0x2c0`** |
+| `__AUTH_CONST.__cfstring` | `0x5b00` | `0x5ce0` | **`+0x1e0`** |
+| `__TEXT.__objc_methlist` | `0x6534` | `0x669c` | **`+0x168`** |
+| `__AUTH.__objc_data` | `0x1188` | `0x1278` | **`+0xf0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3188` | `0x3270` | **`+0xe8`** |
+| `__TEXT.__unwind_info` | `0x31a0` | `0x3220` | **`+0x80`** |
+| `__TEXT.__gcc_except_tab` | `0x1840` | `0x18bc` | **`+0x7c`** |
+| `__DATA_CONST.__const` | `0x1c40` | `0x1ca8` | **`+0x68`** |
+| `__TEXT.__dlopen_cstrs` | `0x37a` | `0x3d8` | **`+0x5e`** |
+| `__AUTH_CONST.__auth_got` | `0xd28` | `0xd68` | **`+0x40`** |
+| `__DATA.__bss` | `0x1d10` | `0x1d40` | **`+0x30`** |
+| `__TEXT.__const` | `0x3c98` | `0x3cc8` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0x38c8` | `0x38e8` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x4f8` | `0x510` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x680` | `0x694` | **`+0x14`** |
+| `__DATA_CONST.__got` | `0x6c8` | `0x6d8` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x358` | `0x360` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -247.0.1.0.0
--  __TEXT.__text: 0xa7868
--  __TEXT.__objc_methlist: 0x6534
--  __TEXT.__const: 0x3c98
--  __TEXT.__gcc_except_tab: 0x1840
--  __TEXT.__cstring: 0x8997
--  __TEXT.__oslogstring: 0x4dd0
--  __TEXT.__dlopen_cstrs: 0x37a
 +250.0.0.1.0
-+  __TEXT.__text: 0xa9f90
-+  __TEXT.__objc_methlist: 0x669c
-+  __TEXT.__const: 0x3cc8
-+  __TEXT.__gcc_except_tab: 0x18bc
-+  __TEXT.__cstring: 0x8d37
-+  __TEXT.__oslogstring: 0x5400
-+  __TEXT.__dlopen_cstrs: 0x3d8
-   __TEXT.__swift5_typeref: 0xe33
-   __TEXT.__constg_swiftt: 0x16bc
-   __TEXT.__swift5_reflstr: 0x1354
 
-   __TEXT.__swift5_capture: 0x1b0
-   __TEXT.__swift5_mpenum: 0xd0
-   __TEXT.__swift5_protos: 0x38
--  __TEXT.__unwind_info: 0x31a0
-+  __TEXT.__unwind_info: 0x3220
-   __TEXT.__eh_frame: 0x2970
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1c40
--  __DATA_CONST.__objc_classlist: 0x4f8
-+  __DATA_CONST.__const: 0x1ca8
-+  __DATA_CONST.__objc_classlist: 0x510
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x1c8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3188
-+  __DATA_CONST.__objc_selrefs: 0x3270
-   __DATA_CONST.__objc_protorefs: 0x98
--  __DATA_CONST.__objc_superrefs: 0x358
-+  __DATA_CONST.__objc_superrefs: 0x360
-   __DATA_CONST.__objc_arraydata: 0x168
--  __DATA_CONST.__got: 0x6c8
--  __AUTH_CONST.__const: 0x38c8
--  __AUTH_CONST.__cfstring: 0x5b00
--  __AUTH_CONST.__objc_const: 0x12168
-+  __DATA_CONST.__got: 0x6d8
-+  __AUTH_CONST.__const: 0x38e8
-+  __AUTH_CONST.__cfstring: 0x5ce0
-+  __AUTH_CONST.__objc_const: 0x12428
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x558
-   __AUTH_CONST.__objc_arrayobj: 0x78
-   __AUTH_CONST.__objc_floatobj: 0x40
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0xd28
--  __AUTH.__objc_data: 0x1188
-+  __AUTH_CONST.__auth_got: 0xd68
-+  __AUTH.__objc_data: 0x1278
-   __AUTH.__data: 0x6d0
--  __DATA.__objc_ivar: 0x680
-+  __DATA.__objc_ivar: 0x694
-   __DATA.__data: 0x1a10
--  __DATA.__bss: 0x1d10
-+  __DATA.__bss: 0x1d40
-   __DATA.__common: 0xa8
-   __DATA_DIRTY.__objc_data: 0x1890
-   __DATA_DIRTY.__data: 0x13f0
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 4558
--  Symbols:   6284
+-  Symbols:   5056
 -  CStrings:  1285
 +  Functions: 4613
-+  Symbols:   6382
++  Symbols:   5129
 +  CStrings:  1324
- 
 Symbols:
 + +[CCCachedDocumentUtilities _documentCachePredicateFromAssociatedSetKeyPrefixedIdentifier:documentCacheSet:error:]
 + +[CCCachedDocumentUtilities documentCachePredicateFromAssociatedSetPredicate:documentCacheSet:error:]
@@ -186,37 +140,6 @@ Symbols:
 + _getSAPathInfoClass.softClass
 + _getSAPathManagerClass.softClass
 + _kCFAllocatorDefault
-+ _objc_msgSend$_checkLocalSequenceCounterRegressionForKey:derivedHighWater:outCorruptionDetected:error:
-+ _objc_msgSend$_compactContiguousTombstonesForDeviceRowId:vectorType:minimumTombstoneAge:shouldDefer:highestSequenceNumber:scanComplete:hasDuplicateSequenceNumbers:error:
-+ _objc_msgSend$_deletedFieldTypesForMergeUnderParent:
-+ _objc_msgSend$_documentCachePredicateFromAssociatedSetKeyPrefixedIdentifier:documentCacheSet:error:
-+ _objc_msgSend$_initEmpty
-+ _objc_msgSend$_tombstoneExpiredItemInstances:error:
-+ _objc_msgSend$_updateTombstoneRowsForDeviceRowId:vectorType:recordsToCompact:sequenceRange:stateSets:skippedEmptyRun:error:
-+ _objc_msgSend$beginWriteTransactionReturningToken:error:
-+ _objc_msgSend$boolForEntitlement:
-+ _objc_msgSend$commitTransactionWithToken:error:
-+ _objc_msgSend$copyApplyingPatch:error:
-+ _objc_msgSend$dataWithCapacity:
-+ _objc_msgSend$deletedFieldTypesByUnioning:with:
-+ _objc_msgSend$empty
-+ _objc_msgSend$enumerateReadableDataResourcesWithIdentifiers:descriptors:resourceOptions:startAfterSet:sorted:error:usingBlock:
-+ _objc_msgSend$hasDuplicateSequenceNumbers
-+ _objc_msgSend$highestSequenceNumber
-+ _objc_msgSend$immutableCopy
-+ _objc_msgSend$initWithIneligibleSequences:eligibleSequences:compactedSequences:highestSequenceNumber:scanComplete:hasDuplicateSequenceNumbers:
-+ _objc_msgSend$initWithSet:sizeInBytes:
-+ _objc_msgSend$initWithURL:
-+ _objc_msgSend$isEmpty
-+ _objc_msgSend$isInternalOrSeedBuild
-+ _objc_msgSend$localDeviceRecord
-+ _objc_msgSend$packedData
-+ _objc_msgSend$predicateForAssociatedInstanceUUID:error:
-+ _objc_msgSend$registerAttributions:
-+ _objc_msgSend$registerPaths:completionHandler:
-+ _objc_msgSend$rollbackTransactionWithToken:error:
-+ _objc_msgSend$scanComplete
-+ _objc_msgSend$setBundleID:
 - +[CCCachedDocumentUtilities documentCachePredicateFromAssociatedSetPredicate:error:]
 - +[CCDataResource enumerateSetPartitionsWithIdentifier:descriptors:container:startAfterSet:sorted:error:usingBlock:]
 - +[CCItemInstancePatch unpackDeletedFieldTypes:usingBlock:]
@@ -243,12 +166,6 @@ Symbols:
 - ___block_descriptor_72_e8_32s40bs48r56r64r_e18_B16?0"NSNumber"8ls40l8r48l8r56l8s32l8r64l8
 - ___block_descriptor_76_e8_32s40s48bs56r64r_e28_v24?0"CCDataResource"8^B16ls32l8r56l8s48l8r64l8s40l8
 - ___block_descriptor_96_e8_32s40s48s56s64s72bs80r_e46_B32?0"NSObject<CCDatabaseValueRow>"8^16^B24ls32l8s40l8r80l8s72l8s48l8s56l8s64l8
-- _objc_msgSend$_compactContiguousTombstonesForDeviceRowId:vectorType:minimumTombstoneAge:shouldDefer:error:
-- _objc_msgSend$_updateTombstoneRowsForDeviceRowId:vectorType:recordsToCompact:sequenceRange:stateSets:error:
-- _objc_msgSend$enumerateSetPartitionsWithIdentifier:descriptors:container:startAfterSet:sorted:error:usingBlock:
-- _objc_msgSend$initWithIneligibleSequences:eligibleSequences:compactedSequences:
-- _objc_msgSend$initWithSet:sharedItemCount:localInstanceCount:sizeInBytes:
-- _objc_msgSend$rollbackUpdate:
 CStrings:
 + "; set will be deleted"
 + "<CCDonationServicePriors v:%llu d:%@ fd:%@ rt:%@ rg:%@ o:%hu>"

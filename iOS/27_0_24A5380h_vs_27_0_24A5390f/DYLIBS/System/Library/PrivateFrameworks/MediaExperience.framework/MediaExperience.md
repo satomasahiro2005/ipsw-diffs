@@ -2,98 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/MediaExperience.framework/MediaExperience`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__lazy_load_got`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2e8944` | `0x2ebccc` | **`+0x3388`** |
+| `__TEXT.__oslogstring` | `0x782da` | `0x790b0` | **`+0xdd6`** |
+| `__TEXT.__cstring` | `0x4e3ed` | `0x4e827` | **`+0x43a`** |
+| `__TEXT.__gcc_except_tab` | `0x51a8` | `0x5248` | **`+0xa0`** |
+| `__TEXT.__objc_methlist` | `0x8748` | `0x87e8` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x6370` | `0x6410` | **`+0xa0`** |
+| `__AUTH_CONST.__cfstring` | `0x1c360` | `0x1c3e0` | **`+0x80`** |
+| `__DATA_CONST.__objc_selrefs` | `0x53a8` | `0x5420` | **`+0x78`** |
+| `__AUTH_CONST.__objc_const` | `0xce50` | `0xcec0` | **`+0x70`** |
+| `__AUTH_CONST.__const` | `0x48e8` | `0x4908` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x7330` | `0x7350` | **`+0x20`** |
+| `__TEXT.__const` | `0x1cd8` | `0x1cf8` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0xc64` | `0xc70` | **`+0xc`** |
+| `__DATA.__bss` | `0x12b0` | `0x12b8` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -360.66.1.11.1
--  __TEXT.__text: 0x2e8944
 +360.70.2.0.0
-+  __TEXT.__text: 0x2ebccc
-   __TEXT.__delay_helper: 0x304
-   __TEXT.__lazy_helpers: 0xfc
--  __TEXT.__objc_methlist: 0x8748
--  __TEXT.__cstring: 0x4e3ed
--  __TEXT.__const: 0x1cd8
--  __TEXT.__gcc_except_tab: 0x51a8
--  __TEXT.__oslogstring: 0x782da
-+  __TEXT.__objc_methlist: 0x87e8
-+  __TEXT.__cstring: 0x4e827
-+  __TEXT.__const: 0x1cf8
-+  __TEXT.__gcc_except_tab: 0x5248
-+  __TEXT.__oslogstring: 0x790b0
-   __TEXT.__dlopen_cstrs: 0x613
--  __TEXT.__unwind_info: 0x6370
-+  __TEXT.__unwind_info: 0x6410
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7330
-+  __DATA_CONST.__const: 0x7350
-   __DATA_CONST.__objc_classlist: 0x310
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x68
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x53a8
-+  __DATA_CONST.__objc_selrefs: 0x5420
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x2e0
-   __DATA_CONST.__objc_arraydata: 0xf8
-   __DATA_CONST.__got: 0xd08
--  __AUTH_CONST.__const: 0x48e8
--  __AUTH_CONST.__cfstring: 0x1c360
--  __AUTH_CONST.__objc_const: 0xce50
-+  __AUTH_CONST.__const: 0x4908
-+  __AUTH_CONST.__cfstring: 0x1c3e0
-+  __AUTH_CONST.__objc_const: 0xcec0
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__lazy_load_got: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x78
 
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0x1d10
-   __AUTH.__data: 0x5f0
--  __DATA.__objc_ivar: 0xc64
-+  __DATA.__objc_ivar: 0xc70
-   __DATA.__data: 0x1408
--  __DATA.__bss: 0x12b0
-+  __DATA.__bss: 0x12b8
-   __DATA.__common: 0x680
-   __DATA_DIRTY.__objc_data: 0x190
-   __DATA_DIRTY.__bss: 0xd90
-
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 11549
--  Symbols:   16110
+-  Symbols:   13712
 -  CStrings:  14173
 +  Functions: 11574
-+  Symbols:   16164
++  Symbols:   13753
 +  CStrings:  14222
- 
 Symbols:
 + -[MXCustomRoutingController currentSystemMirroringRoutes]
 + -[MXCustomRoutingSession releasePlaybackAssertion]
@@ -146,22 +86,6 @@ Symbols:
 + _gMDEDeviceTimerPolicy
 + _kFigEndpointUIAgentPromptInfo_FailureDetails_MediaAppName
 + _kMXSessionAudioCategory_HomeDeviceHourlyChime
-+ _objc_msgSend$canCurrentCustomRoutingSessionBeNowPlaying
-+ _objc_msgSend$copyActiveRoutesOnContextCreationIfAwaitingActivation
-+ _objc_msgSend$currentCustomRoutingSession
-+ _objc_msgSend$currentSystemMirroringRoutes
-+ _objc_msgSend$doesCurrentCustomRoutingSessionEligibleForNowPlayingMatchPID:
-+ _objc_msgSend$handleForSelf
-+ _objc_msgSend$isCurrentCustomRoutingSessionNowPlaying
-+ _objc_msgSend$isVolumeScalableCategory:
-+ _objc_msgSend$localizedName
-+ _objc_msgSend$releasePlaybackAssertion
-+ _objc_msgSend$setCurrentCustomRoutingSession:
-+ _objc_msgSend$synchronizeSessionVolumeWithMediaVolumeIfNeeded:mediaWasPlaying:route:
-+ _objc_msgSend$takePlaybackAssertion
-+ _objc_msgSend$tryToTakeControlFlagsOnDefaultVAD:routingFlagIsNotControlled:
-+ _objc_msgSend$updateActiveRoutesOnContextCreationIfChangedAfterActivationForSession:previousActiveRoutes:
-+ _objc_msgSend$updateCurrentCustomRoutingSession
 + _sCarPlayVideoBannerUUID
 + _updateControlFlagsAfterRouteChange:systemLocalVADState:musicVADState:.sIsUpdatingControlFlagsAfterRouteChange
 + _vaemSuppressVolumeForwardingOnVAD
@@ -178,9 +102,6 @@ Symbols:
 - _cmsutility_getScalingFactorForSessionCategory.onceToken
 - _cmsutility_getScalingFactorForSessionCategory.sAlarmScalingFactors
 - _cmsutility_getScalingFactorForSessionCategory.sVoiceOverScalingFactors
-- _objc_msgSend$isVolumeScalableSession:
-- _objc_msgSend$synchronizeSessionVolumeWithMediaVolumeIfNeeded:
-- _objc_msgSend$tryToTakeControlFlagsOnDefaultVAD:
 CStrings:
 + "-CMSM_CoreServices- %s: Failed to find a localized name for %{public}@"
 + "-CMSUtilities- %s: Mixable voice assistant session interrupting CarPlay video session '%@'"

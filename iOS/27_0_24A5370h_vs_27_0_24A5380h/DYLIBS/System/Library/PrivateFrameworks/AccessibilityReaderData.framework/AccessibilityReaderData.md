@@ -2,104 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/AccessibilityReaderData.framework/AccessibilityReaderData`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x144780` | `0x15b198` | **`+0x16a18`** |
+| `__TEXT.__eh_frame` | `0x51f8` | `0x5cac` | **`+0xab4`** |
+| `__TEXT.__const` | `0xbf48` | `0xc538` | **`+0x5f0`** |
+| `__DATA.__bss` | `0xb0c0` | `0xb630` | **`+0x570`** |
+| `__AUTH.__data` | `0x2de8` | `0x3230` | **`+0x448`** |
+| `__TEXT.__swift5_reflstr` | `0x264b` | `0x29cb` | **`+0x380`** |
+| `__TEXT.__unwind_info` | `0x3ab0` | `0x3e30` | **`+0x380`** |
+| `__TEXT.__swift5_fieldmd` | `0x2508` | `0x2878` | **`+0x370`** |
+| `__TEXT.__constg_swiftt` | `0x2e4c` | `0x305c` | **`+0x210`** |
+| `__TEXT.__oslogstring` | `0x39df` | `0x3baf` | **`+0x1d0`** |
+| `__DATA.__data` | `0x2280` | `0x23f8` | **`+0x178`** |
+| `__AUTH_CONST.__objc_const` | `0x2e88` | `0x2fe8` | **`+0x160`** |
+| `__TEXT.__swift5_typeref` | `0x5882` | `0x59d4` | **`+0x152`** |
+| `__TEXT.__swift5_capture` | `0x10c8` | `0xf8c` | **`-0x13c`** |
+| `__AUTH_CONST.__const` | `0x7060` | `0x6fa8` | **`-0xb8`** |
+| `__TEXT.__swift_as_cont` | `0x3bc` | `0x45c` | **`+0xa0`** |
+| `__AUTH_CONST.__auth_got` | `0x1948` | `0x19d0` | **`+0x88`** |
+| `__AUTH.__objc_data` | `0xdc0` | `0xe30` | **`+0x70`** |
+| `__TEXT.__swift_as_ret` | `0x138` | `0x184` | **`+0x4c`** |
+| `__TEXT.__swift5_assocty` | `0x888` | `0x8d0` | **`+0x48`** |
+| `__DATA_CONST.__got` | `0xd90` | `0xdc0` | **`+0x30`** |
+| `__TEXT.__swift5_proto` | `0x528` | `0x550` | **`+0x28`** |
+| `__TEXT.__swift5_types` | `0x24c` | `0x274` | **`+0x28`** |
+| `__TEXT.__swift_as_entry` | `0xfc` | `0x120` | **`+0x24`** |
+| `__DATA_CONST.__objc_selrefs` | `0xae0` | `0xb00` | **`+0x20`** |
+| `__DATA.__common` | `0x1b0` | `0x1c0` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x108` | `0x118` | **`+0x10`** |
+| `__TEXT.__cstring` | `0x3906` | `0x3916` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x144780
-+  __TEXT.__text: 0x15b198
-   __TEXT.__objc_methlist: 0x3f4
--  __TEXT.__const: 0xbf48
--  __TEXT.__swift5_typeref: 0x5882
--  __TEXT.__swift5_fieldmd: 0x2508
--  __TEXT.__constg_swiftt: 0x2e4c
-+  __TEXT.__const: 0xc538
-+  __TEXT.__swift5_typeref: 0x59d4
-+  __TEXT.__swift5_fieldmd: 0x2878
-+  __TEXT.__constg_swiftt: 0x305c
-   __TEXT.__swift5_builtin: 0x168
--  __TEXT.__swift5_reflstr: 0x264b
--  __TEXT.__swift5_assocty: 0x888
-+  __TEXT.__swift5_reflstr: 0x29cb
-+  __TEXT.__swift5_assocty: 0x8d0
-   __TEXT.__swift5_protos: 0x14
--  __TEXT.__swift5_proto: 0x528
--  __TEXT.__swift5_types: 0x24c
--  __TEXT.__cstring: 0x3906
--  __TEXT.__swift5_capture: 0x10c8
--  __TEXT.__oslogstring: 0x39df
--  __TEXT.__swift_as_entry: 0xfc
--  __TEXT.__swift_as_ret: 0x138
--  __TEXT.__swift_as_cont: 0x3bc
-+  __TEXT.__swift5_proto: 0x550
-+  __TEXT.__swift5_types: 0x274
-+  __TEXT.__cstring: 0x3916
-+  __TEXT.__swift5_capture: 0xf8c
-+  __TEXT.__oslogstring: 0x3baf
-+  __TEXT.__swift_as_entry: 0x120
-+  __TEXT.__swift_as_ret: 0x184
-+  __TEXT.__swift_as_cont: 0x45c
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x3ab0
--  __TEXT.__eh_frame: 0x51f8
-+  __TEXT.__unwind_info: 0x3e30
-+  __TEXT.__eh_frame: 0x5cac
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xd80
--  __DATA_CONST.__objc_classlist: 0x108
-+  __DATA_CONST.__objc_classlist: 0x118
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xae0
-+  __DATA_CONST.__objc_selrefs: 0xb00
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__got: 0xd90
--  __AUTH_CONST.__const: 0x7060
-+  __DATA_CONST.__got: 0xdc0
-+  __AUTH_CONST.__const: 0x6fa8
-   __AUTH_CONST.__cfstring: 0x40
--  __AUTH_CONST.__objc_const: 0x2e88
--  __AUTH_CONST.__auth_got: 0x1948
--  __AUTH.__objc_data: 0xdc0
--  __AUTH.__data: 0x2de8
-+  __AUTH_CONST.__objc_const: 0x2fe8
-+  __AUTH_CONST.__auth_got: 0x19d0
-+  __AUTH.__objc_data: 0xe30
-+  __AUTH.__data: 0x3230
-   __DATA.__objc_ivar: 0x14
--  __DATA.__data: 0x2280
--  __DATA.__bss: 0xb0c0
--  __DATA.__common: 0x1b0
-+  __DATA.__data: 0x23f8
-+  __DATA.__bss: 0xb630
-+  __DATA.__common: 0x1c0
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Combine.framework/Combine
+-3232.3.0.0.0
++3234.5.0.0.0
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5998
--  Symbols:   2781
--  CStrings:  558
+-  Symbols:   1560
+-  CStrings:  556
 +  Functions: 6221
-+  Symbols:   2770
-+  CStrings:  565
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
++  Symbols:   1596
++  CStrings:  563
 Symbols:
 + _OBJC_CLASS_$__LTLocalePair
 + __DATA__TtC23AccessibilityReaderData18AXReaderFetchActor
@@ -116,15 +64,6 @@ Symbols:
 + _associated conformance 23AccessibilityReaderData23AXRTextStylingFormatterC13BlockPosition33_3439F832EA04D935D5C27E32BF8697E7LLOSHAASQ
 + _associated conformance 23AccessibilityReaderData23AXRTextStylingFormatterC21FormattedTextCacheKey33_3439F832EA04D935D5C27E32BF8697E7LLVSHAASQ
 + _associated conformance 23AccessibilityReaderData23AXRTextStylingFormatterC9BlockKind33_3439F832EA04D935D5C27E32BF8697E7LLOSHAASQ
-+ _objc_msgSend$allObjects
-+ _objc_msgSend$availableLocalePairsForTask:completion:
-+ _objc_msgSend$copy
-+ _objc_msgSend$dominantLocale
-+ _objc_msgSend$isMainThread
-+ _objc_msgSend$languagesForText:completion:
-+ _objc_msgSend$sourceLocale
-+ _objc_msgSend$targetLocale
-+ _objc_msgSend$unsupportedLanguageCounts
 + _os_unfair_lock_lock
 + _os_unfair_lock_unlock
 + _swift_initStaticObject
@@ -168,11 +107,6 @@ Symbols:
 + _type_layout_string So16os_unfair_lock_sV
 - _OBJC_CLASS_$_NLLanguageRecognizer
 - _OBJC_CLASS_$__LTLanguageAvailability
-- _objc_msgSend$dominantLanguage
-- _objc_msgSend$processString:
-- _objc_msgSend$sleepForTimeInterval:
-- _objc_msgSend$statusFromLanguage:toLanguage:completion:
-- _objc_msgSend$supportedLanguagesWithCompletion:
 - _swift_continuation_resume
 - _swift_getEnumCaseMultiPayload
 - _swift_willThrowTypedImpl
@@ -231,5 +165,4 @@ CStrings:
 - "fetchContentInOnQueue(direction:bundleID:currentElement:isInitialFetch:)"
 - "fetchContentSync(app:in:using:isInitialFetch:)"
 - "requireSystemApp"
-
 ```

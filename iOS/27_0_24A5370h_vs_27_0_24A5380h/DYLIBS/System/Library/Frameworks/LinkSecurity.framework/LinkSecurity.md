@@ -2,59 +2,59 @@
 
 > `/System/Library/Frameworks/LinkSecurity.framework/LinkSecurity`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x0` | `0x491c` | **`+0x491c`** |
+| `__AUTH_CONST.__objc_const` | `—` | `0x9e8` | **`+0x9e8`** |
+| `__AUTH_CONST.__auth_got` | `—` | `0x340` | **`+0x340`** |
+| `__AUTH_CONST.__const` | `—` | `0x288` | **`+0x288`** |
+| `__TEXT.__const` | `0x42` | `0x298` | **`+0x256`** |
+| `__TEXT.__eh_frame` | `—` | `0x208` | **`+0x208`** |
+| `__TEXT.__unwind_info` | `—` | `0x208` | **`+0x208`** |
+| `__AUTH.__data` | `—` | `0x1f8` | **`+0x1f8`** |
+| `__DATA.__data` | `—` | `0x1f0` | **`+0x1f0`** |
+| `__TEXT.__oslogstring` | `—` | `0x1c0` | **`+0x1c0`** |
+| `__TEXT.__swift5_typeref` | `—` | `0x195` | **`+0x195`** |
+| `__TEXT.__objc_methlist` | `—` | `0x18c` | **`+0x18c`** |
+| `__TEXT.__constg_swiftt` | `—` | `0x180` | **`+0x180`** |
+| `__DATA_CONST.__objc_selrefs` | `—` | `0x138` | **`+0x138`** |
+| `__TEXT.__cstring` | `—` | `0x126` | **`+0x126`** |
+| `__DATA_CONST.__got` | `—` | `0x88` | **`+0x88`** |
+| `__TEXT.__swift5_capture` | `—` | `0x80` | **`+0x80`** |
+| `__TEXT.__swift5_fieldmd` | `—` | `0x80` | **`+0x80`** |
+| `__AUTH.__objc_data` | `—` | `0x70` | **`+0x70`** |
+| `__TEXT.__swift5_reflstr` | `—` | `0x38` | **`+0x38`** |
+| `__DATA_CONST.__objc_protolist` | `—` | `0x20` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `—` | `0x18` | **`+0x18`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x14` | **`+0x14`** |
+| `__TEXT.__swift_as_ret` | `—` | `0x14` | **`+0x14`** |
+| `__DATA_CONST.__objc_protorefs` | `—` | `0x10` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `—` | `0xc` | **`+0xc`** |
+| `__DATA.__common` | `—` | `0x8` | **`+0x8`** |
+| `__DATA_CONST.__const` | `0x30` | `0x38` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__auth_stubs` | `—` | `0x0` | **`+0x0`** |
+| `__TEXT.__objc_classname` | `—` | `0x0` | **`+0x0`** |
+| `__TEXT.__objc_methname` | `—` | `0x0` | **`+0x0`** |
+| `__TEXT.__objc_methtype` | `—` | `0x0` | **`+0x0`** |
+| `__TEXT.__objc_stubs` | `—` | `0x0` | **`+0x0`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x0
--  __TEXT.__const: 0x42
--  __DATA_CONST.__const: 0x30
-+  __TEXT.__text: 0x491c
-+  __TEXT.__objc_methlist: 0x18c
-+  __TEXT.__const: 0x298
-+  __TEXT.__swift5_typeref: 0x195
-+  __TEXT.__swift5_fieldmd: 0x80
-+  __TEXT.__constg_swiftt: 0x180
-+  __TEXT.__swift5_protos: 0x8
-+  __TEXT.__swift5_reflstr: 0x38
-+  __TEXT.__cstring: 0x126
-+  __TEXT.__swift5_capture: 0x80
-+  __TEXT.__oslogstring: 0x1c0
-+  __TEXT.__swift5_proto: 0x8
-+  __TEXT.__swift5_types: 0xc
-+  __TEXT.__swift_as_entry: 0x14
-+  __TEXT.__swift_as_ret: 0x14
-+  __TEXT.__swift_as_cont: 0x8
-+  __TEXT.__unwind_info: 0x208
-+  __TEXT.__eh_frame: 0x208
-+  __TEXT.__objc_stubs: 0x0
-+  __TEXT.__auth_stubs: 0x0
-+  __TEXT.__objc_classname: 0x0
-+  __TEXT.__objc_methname: 0x0
-+  __TEXT.__objc_methtype: 0x0
-+  __DATA_CONST.__const: 0x38
-+  __DATA_CONST.__objc_classlist: 0x18
-+  __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-+  __DATA_CONST.__objc_selrefs: 0x138
-+  __DATA_CONST.__objc_protorefs: 0x10
-+  __DATA_CONST.__got: 0x88
-+  __AUTH_CONST.__const: 0x288
-+  __AUTH_CONST.__objc_const: 0x9e8
-+  __AUTH_CONST.__auth_got: 0x340
-+  __AUTH.__objc_data: 0x70
-+  __AUTH.__data: 0x1f8
-+  __DATA.__data: 0x1f0
-+  __DATA.__common: 0x8
+-1483.100.10.2.4
++1486.100.5.2.1
 +  - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+
 +  - /System/Library/PrivateFrameworks/IMFoundation.framework/IMFoundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
+
 +  - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
+
 -  Functions: 0
 -  Symbols:   6
 -  CStrings:  0
@@ -63,7 +63,6 @@
 +  Functions: 133
 +  Symbols:   100
 +  CStrings:  17
- 
 Symbols:
 + _IMGetDomainBoolForKey
 + _IMGetDomainValueForKey
@@ -177,5 +176,4 @@ CStrings:
 + "com.apple.Messages.EnhancedLinkSecurityStoreConnection.queue"
 + "com.apple.imagent.EnhancedLinkSecurityStore"
 + "com.apple.messages.EnhancedLinkSecurity"
-
 ```

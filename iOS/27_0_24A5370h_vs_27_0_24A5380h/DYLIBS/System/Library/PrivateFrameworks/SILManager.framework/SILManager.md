@@ -2,52 +2,21 @@
 
 > `/System/Library/PrivateFrameworks/SILManager.framework/SILManager`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5cedc` | `0x5d52c` | **`+0x650`** |
+| `__DATA_CONST.__got` | `0x0` | `0x228` | **`+0x228`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x5cedc
-+  __TEXT.__text: 0x5d52c
-   __TEXT.__objc_methlist: 0x728
-   __TEXT.__const: 0x4bbc
-   __TEXT.__cstring: 0x2577
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
-   __DATA_CONST.__objc_selrefs: 0x470
--  __DATA_CONST.__got: 0x0
-+  __DATA_CONST.__got: 0x228
-   __AUTH_CONST.__const: 0x2490
-   __AUTH_CONST.__cfstring: 0xa0
-   __AUTH_CONST.__objc_const: 0x2098
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1666
--  Symbols:   5861
+-  Symbols:   4101
 +  Functions: 1665
-+  Symbols:   5859
-   CStrings:  481
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   4100
 Symbols:
 - _$s9Tightbeam0A7EncoderVSgWOh
 Functions:
@@ -72,5 +41,4 @@ Functions:
 ~ _$s10SILManagerAAC6ServerC8endpoint7handlerAD9Tightbeam0E8EndpointO_xtcAA0A7HandlerRzlufcAG0E7MessageVSgAG0E7DecoderVnSo10tb_error_taYKcfU_ : 6284 -> 7076
 ~ _$s10SILManagerAAC6ServerC8endpoint7handlerADSv_xtcAA0A7HandlerRzlufc9Tightbeam0F7MessageVSgAH0F7DecoderVnSo10tb_error_taYKcfU_ : 6284 -> 7076
 - _$s9Tightbeam0A7EncoderVSgWOh
-
 ```

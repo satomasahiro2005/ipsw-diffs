@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/_SwiftData_SwiftUI.framework/_SwiftData_SwiftUI`
 
-```diff
+### Section Size Changes
 
- 180.0.0.0.0
--  __TEXT.__text: 0x1d578
-+  __TEXT.__text: 0x1d584
-   __TEXT.__const: 0x16d8
-   __TEXT.__cstring: 0x3e9
-   __TEXT.__constg_swiftt: 0xb80
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1d578` | `0x1d584` | **`+0xc`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_24dcdc734 -> sub_24e6ed734 : 2028 -> 2040
+~ sub_24db89734 -> sub_24e5a1734 : 2028 -> 2040
 ```

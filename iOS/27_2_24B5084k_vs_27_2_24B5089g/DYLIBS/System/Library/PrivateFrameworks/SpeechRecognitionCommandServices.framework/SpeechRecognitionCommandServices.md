@@ -2,15 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/SpeechRecognitionCommandServices.framework/SpeechRecognitionCommandServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x11b0c0` | `0x11b09c` | **`-0x24`** |
+
+### Other Changes
+
 ```diff
 
 -35.1.0.0.0
--  __TEXT.__text: 0x118a34
 +35.1.1.0.0
-+  __TEXT.__text: 0x118a10
-   __TEXT.__objc_methlist: 0xe9c
-   __TEXT.__const: 0x79cb
-   __TEXT.__cstring: 0x267ec
 Functions:
-~ sub_2af54838c -> sub_2af91c38c : 55652 -> 55616
+~ sub_2b33ed7fc -> sub_2b372d7fc : 55652 -> 55616
 ```

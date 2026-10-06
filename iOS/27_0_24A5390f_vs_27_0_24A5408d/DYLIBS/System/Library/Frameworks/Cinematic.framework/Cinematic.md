@@ -2,42 +2,28 @@
 
 > `/System/Library/Frameworks/Cinematic.framework/Cinematic`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14238` | `0x142f4` | **`+0xbc`** |
+| `__TEXT.__oslogstring` | `0x927` | `0x98f` | **`+0x68`** |
+| `__TEXT.__gcc_except_tab` | `0x290` | `0x2c0` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x4d8` | `0x4e0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -558.0.0.0.0
--  __TEXT.__text: 0x14238
 +560.22.1.0.0
-+  __TEXT.__text: 0x142f4
-   __TEXT.__objc_methlist: 0xeb4
-   __TEXT.__cstring: 0x369
-   __TEXT.__const: 0x9d8
--  __TEXT.__oslogstring: 0x927
--  __TEXT.__gcc_except_tab: 0x290
-+  __TEXT.__oslogstring: 0x98f
-+  __TEXT.__gcc_except_tab: 0x2c0
-   __TEXT.__constg_swiftt: 0x5b0
-   __TEXT.__swift5_typeref: 0x332
-   __TEXT.__swift5_reflstr: 0x22d
 
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_intobj: 0xc0
--  __AUTH_CONST.__auth_got: 0x4d8
-+  __AUTH_CONST.__auth_got: 0x4e0
-   __AUTH.__objc_data: 0x5f0
-   __AUTH.__data: 0x840
-   __DATA.__objc_ivar: 0x98
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 753
--  Symbols:   1292
+-  Symbols:   977
 -  CStrings:  83
 +  Functions: 755
-+  Symbols:   1293
++  Symbols:   978
 +  CStrings:  84
- 
 Symbols:
 + _objc_retain_x28
 Functions:

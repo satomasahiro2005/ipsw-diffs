@@ -2,20 +2,23 @@
 
 > `/System/Library/Extensions/VTLAdapter.kext/PlugIns/VTL.plugin/VTL`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x74e4
-+  __TEXT.__text: 0x74f4
-   __TEXT.__auth_stubs: 0x490
-   __TEXT.__const: 0xbe
-   __TEXT.__oslogstring: 0x4a3
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x74e4` | `0x74f4` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__const`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_49fc : 860 -> 868
 ~ sub_4fac -> sub_4fb4 : 976 -> 984
-
 ```

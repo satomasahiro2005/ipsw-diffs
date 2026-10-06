@@ -2,56 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/CoreSpeechFoundation.framework/CoreSpeechFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcbf6c` | `0xcbf44` | **`-0x28`** |
+| `__AUTH_CONST.__const` | `0x1b00` | `0x1ae0` | **`-0x20`** |
+| `__DATA.__bss` | `0x1588` | `0x1580` | **`-0x8`** |
+| `__DATA_DIRTY.__bss` | `0x610` | `0x608` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x3e10` | `0x3e08` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.70.47.0.0
--  __TEXT.__text: 0xcbf6c
 +3600.70.47.11.1
-+  __TEXT.__text: 0xcbf44
-   __TEXT.__objc_methlist: 0xd9d8
-   __TEXT.__const: 0xfe8
-   __TEXT.__dlopen_cstrs: 0x24a
 
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__gcc_except_tab: 0x3cec
-   __TEXT.__oslogstring: 0x11a3e
--  __TEXT.__unwind_info: 0x3e10
-+  __TEXT.__unwind_info: 0x3e08
-   __TEXT.__eh_frame: 0x270
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_superrefs: 0x568
-   __DATA_CONST.__objc_arraydata: 0x1c8
-   __DATA_CONST.__got: 0x1038
--  __AUTH_CONST.__const: 0x1b00
-+  __AUTH_CONST.__const: 0x1ae0
-   __AUTH_CONST.__cfstring: 0x95c0
-   __AUTH_CONST.__objc_const: 0x14e50
-   __AUTH_CONST.__weak_auth_got: 0x28
-
-   __AUTH.__objc_data: 0x1c8
-   __DATA.__objc_ivar: 0xd9c
-   __DATA.__data: 0x1a00
--  __DATA.__bss: 0x1588
-+  __DATA.__bss: 0x1580
-   __DATA_DIRTY.__objc_data: 0x47c0
-   __DATA_DIRTY.__data: 0x2e8
--  __DATA_DIRTY.__bss: 0x610
-+  __DATA_DIRTY.__bss: 0x608
-   __DATA_DIRTY.__common: 0x70
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5244
--  Symbols:   12215
+-  Symbols:   9845
 +  Functions: 5243
-+  Symbols:   12213
-   CStrings:  3750
- 
++  Symbols:   9843
 Symbols:
 + GCC_except_table3050
 + GCC_except_table3190

@@ -2,20 +2,21 @@
 
 > `/usr/libexec/inboxupdaterd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8cdcc` | `0x8cdd4` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__const`
 - `__TEXT.__objc_methlist`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
 
-```diff
+### Other Changes
 
- 274.2.2.0.0
--  __TEXT.__text: 0x8cdcc
-+  __TEXT.__text: 0x8cdd4
-   __TEXT.__auth_stubs: 0x1520
-   __TEXT.__objc_stubs: 0x8960
-   __TEXT.__objc_methlist: 0x4164
+```text
 Functions:
 ~ sub_10004da60 : 480 -> 484
 ~ sub_1000656e0 -> sub_1000656e4 : 20 -> 12

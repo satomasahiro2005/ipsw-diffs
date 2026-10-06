@@ -2,51 +2,25 @@
 
 > `/System/Library/PrivateFrameworks/AudioDSPGraph.framework/AudioDSPGraph`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbcaa4` | `0xbc6c8` | **`-0x3dc`** |
+| `__TEXT.__objc_methlist` | `0x1bc0` | `0x1bb8` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x4f60` | `0x4f58` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xbcaa4
-+  __TEXT.__text: 0xbc6c8
-   __TEXT.__realtime: 0xc470
--  __TEXT.__objc_methlist: 0x1bc0
-+  __TEXT.__objc_methlist: 0x1bb8
-   __TEXT.__const: 0x4588
-   __TEXT.__gcc_except_tab: 0xcd54
-   __TEXT.__oslogstring: 0x1d95
-   __TEXT.__cstring: 0x9cdc
--  __TEXT.__unwind_info: 0x4f60
-+  __TEXT.__unwind_info: 0x4f58
-   __TEXT.__eh_frame: 0x258
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+-73.0.0.0.0
++73.101.0.0.0
 
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 3667
--  Symbols:   9845
+-  Symbols:   6328
 +  Functions: 3666
-+  Symbols:   9843
-   CStrings:  1352
- 
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   6327
 Symbols:
 + GCC_except_table1000
 + GCC_except_table1003
@@ -893,5 +867,4 @@ Symbols:
 - GCC_except_table980
 - GCC_except_table987
 - GCC_except_table996
-
 ```

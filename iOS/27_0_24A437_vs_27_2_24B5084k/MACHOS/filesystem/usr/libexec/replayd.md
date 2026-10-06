@@ -2,75 +2,51 @@
 
 > `/usr/libexec/replayd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__gcc_except_tab`
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb929c` | `0xbac1c` | **`+0x1980`** |
+| `__TEXT.__oslogstring` | `0x1634a` | `0x166f4` | **`+0x3aa`** |
+| `__TEXT.__objc_methname` | `0x15d0c` | `0x15f58` | **`+0x24c`** |
+| `__TEXT.__objc_stubs` | `0xf0e0` | `0xf320` | **`+0x240`** |
+| `__TEXT.__cstring` | `0x17b48` | `0x17c86` | **`+0x13e`** |
+| `__TEXT.__objc_methlist` | `0x73c8` | `0x74a0` | **`+0xd8`** |
+| `__DATA.__objc_selrefs` | `0x4690` | `0x4720` | **`+0x90`** |
+| `__DATA.__objc_const` | `0x11310` | `0x11388` | **`+0x78`** |
+| `__TEXT.__unwind_info` | `0x2310` | `0x2370` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0x2ab8` | `0x2b00` | **`+0x48`** |
+| `__DATA_CONST.__cfstring` | `0x5ce0` | `0x5d20` | **`+0x40`** |
+| `__TEXT.__objc_methtype` | `0x4403` | `0x43f5` | **`-0xe`** |
+| `__DATA.__objc_ivar` | `0xd7c` | `0xd84` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__gcc_except_tab`
+
+### Other Changes
 
 ```diff
 
 -740.63.1.2.0
--  __TEXT.__text: 0xb7bb0
 +765.9.1.0.0
-+  __TEXT.__text: 0xb94f4
-   __TEXT.__auth_stubs: 0x1920
--  __TEXT.__objc_stubs: 0xf0e0
--  __TEXT.__objc_methlist: 0x73c8
-+  __TEXT.__objc_stubs: 0xf320
-+  __TEXT.__objc_methlist: 0x74a0
-   __TEXT.__const: 0x3e4
-   __TEXT.__gcc_except_tab: 0xfc8
--  __TEXT.__objc_methname: 0x15d0c
--  __TEXT.__oslogstring: 0x1634a
--  __TEXT.__cstring: 0x17b48
-+  __TEXT.__objc_methname: 0x15f58
-+  __TEXT.__oslogstring: 0x166f4
-+  __TEXT.__cstring: 0x17c86
-   __TEXT.__objc_classname: 0xa44
--  __TEXT.__objc_methtype: 0x4403
--  __TEXT.__unwind_info: 0x3348
--  __DATA_CONST.__const: 0x2ab8
--  __DATA_CONST.__cfstring: 0x5ce0
-+  __TEXT.__objc_methtype: 0x43f5
-+  __TEXT.__unwind_info: 0x33d8
-+  __DATA_CONST.__const: 0x2b00
-+  __DATA_CONST.__cfstring: 0x5d20
-   __DATA_CONST.__objc_classlist: 0x278
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x130
 
-   __DATA_CONST.__auth_got: 0xca0
-   __DATA_CONST.__got: 0xc88
-   __DATA_CONST.__auth_ptr: 0x8
--  __DATA.__objc_const: 0x11310
--  __DATA.__objc_selrefs: 0x4690
--  __DATA.__objc_ivar: 0xd7c
-+  __DATA.__objc_const: 0x11388
-+  __DATA.__objc_selrefs: 0x4720
-+  __DATA.__objc_ivar: 0xd84
-   __DATA.__objc_data: 0x18b0
-   __DATA.__data: 0xe54
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 3639
 +  Functions: 3680
-   Symbols:   802
+
 -  CStrings:  7343
 +  CStrings:  7382
- 
 Symbols:
 + __exit
 - _notify_register_check

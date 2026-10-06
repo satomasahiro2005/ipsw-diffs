@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CoverSheetKit.framework/CoverSheetKit`
 
-```diff
+### Section Size Changes
 
- 159.0.3.0.0
--  __TEXT.__text: 0x3b9a8
-+  __TEXT.__text: 0x3b9ac
-   __TEXT.__objc_methlist: 0x2a8c
-   __TEXT.__const: 0x243c
-   __TEXT.__cstring: 0x867
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3b9a8` | `0x3b9ac` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _OUTLINED_FUNCTION_0 : 20 -> 12
 ~ sub_1b38c0b70 -> sub_1b3bebb68 : 680 -> 676

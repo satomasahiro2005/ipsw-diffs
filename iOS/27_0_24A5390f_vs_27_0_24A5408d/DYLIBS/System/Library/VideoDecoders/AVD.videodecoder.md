@@ -2,35 +2,28 @@
 
 > `/System/Library/VideoDecoders/AVD.videodecoder`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x16ba28` | `0x16bd88` | **`+0x360`** |
+| `__TEXT.__oslogstring` | `0x16210` | `0x16252` | **`+0x42`** |
+| `__TEXT.__unwind_info` | `0x1dc8` | `0x1de0` | **`+0x18`** |
+| `__TEXT.__cstring` | `0x56b6` | `0x56bd` | **`+0x7`** |
+
+### Other Changes
+
 ```diff
 
 -991.0.0.0.0
--  __TEXT.__text: 0x16ba28
 +993.1.0.0.0
-+  __TEXT.__text: 0x16bd88
-   __TEXT.__objc_methlist: 0x1fc
-   __TEXT.__const: 0xc1e3
--  __TEXT.__oslogstring: 0x16210
--  __TEXT.__cstring: 0x56b6
-+  __TEXT.__oslogstring: 0x16252
-+  __TEXT.__cstring: 0x56bd
-   __TEXT.__gcc_except_tab: 0xd4c
--  __TEXT.__unwind_info: 0x1dc8
-+  __TEXT.__unwind_info: 0x1de0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 4120
--  Symbols:   3390
--  CStrings:  2070
+-  Symbols:   3342
+-  CStrings:  2073
 +  Functions: 4124
-+  Symbols:   3393
-+  CStrings:  2072
- 
++  Symbols:   3345
++  CStrings:  2074
 Symbols:
 + __ZN14CAVDAvxDecoder15validateRefBufsEv
 + __ZN14CAVDAvxDecoder18VAUnmapPixelBufferEij
@@ -51,6 +44,13 @@ Functions:
 + __ZN22AppleAVDCommandBuilder15allocRVRAMemoryEjj
 ~ __ZN15CAVDHevcDecoder24decodeGetRenderTargetRefEjPP9_vsurface : 900 -> 916
 CStrings:
++ "21:54:05"
++ "21:54:07"
 + "AppleAVD: INFO: %{public}s(): GUARDED: ref[%u] buf=%p dec_buf=%p\n"
++ "Aug  5 2026"
 + "validateRefBufs"
+- "21:35:53"
+- "21:35:54"
+- "21:35:55"
+- "Jul 14 2026"
 ```

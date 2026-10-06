@@ -2,62 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/PhysicsKit.framework/PhysicsKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3d9e8` | `0x3ade8` | **`-0x2c00`** |
+| `__TEXT.__cstring` | `0x24a2` | `0x1951` | **`-0xb51`** |
+| `__TEXT.__unwind_info` | `0x1830` | `0x1840` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x25a4` | `0x2598` | **`-0xc`** |
+| `__AUTH.__data` | `—` | `0x8` | **`+0x8`** |
+| `__DATA_DIRTY.__data` | `0x20` | `0x18` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x3d9e8
-+  __TEXT.__text: 0x3ade8
-   __TEXT.__objc_methlist: 0x15c4
--  __TEXT.__gcc_except_tab: 0x25a4
-+  __TEXT.__gcc_except_tab: 0x2598
-   __TEXT.__const: 0x1b64
--  __TEXT.__cstring: 0x24a2
--  __TEXT.__unwind_info: 0x1830
-+  __TEXT.__cstring: 0x1951
-+  __TEXT.__unwind_info: 0x1840
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __AUTH_CONST.__objc_const: 0x2260
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__auth_got: 0x0
-+  __AUTH.__data: 0x8
-   __DATA.__objc_ivar: 0x148
-   __DATA.__data: 0x12c
-   __DATA.__bss: 0x30
-   __DATA.__common: 0x1b1
-   __DATA_DIRTY.__objc_data: 0x7d0
--  __DATA_DIRTY.__data: 0x20
-+  __DATA_DIRTY.__data: 0x18
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1539
--  Symbols:   4328
--  CStrings:  460
+-  Symbols:   2258
+-  CStrings:  353
 +  Functions: 1538
-+  Symbols:   4325
-+  CStrings:  451
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   2257
++  CStrings:  344
 Symbols:
 + GCC_except_table56
 + __ZNKSt3__111__move_implINS_17_ClassicAlgPolicyEEclB9fqe220106IPNS_8weak_ptrI8PKCFieldEES7_S7_EENS_4pairIT_T1_EES9_T0_SA_
@@ -276,5 +241,4 @@ CStrings:
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:442: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:446: libc++ Hardening assertion !empty() failed: back() called on an empty vector\n"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:509: libc++ Hardening assertion !empty() failed: vector::pop_back called on an empty vector\n"
-
 ```

@@ -2,19 +2,20 @@
 
 > `/System/Library/Trace/Providers/Required.bundle/Required`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9354` | `0x9358` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__objc_methlist`
 - `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 206.0.0.0.0
--  __TEXT.__text: 0x9354
-+  __TEXT.__text: 0x9358
-   __TEXT.__auth_stubs: 0x7e0
-   __TEXT.__objc_stubs: 0x740
-   __TEXT.__objc_methlist: 0x2dc
+```text
 Functions:
 ~ sub_3c24 : 348 -> 352
 ```

@@ -2,14 +2,15 @@
 
 > `/System/Library/AccessibilityBundles/WebKitLegacy.axbundle/WebKitLegacy`
 
-```diff
+### Section Size Changes
 
- 3048.0.0.0.0
--  __TEXT.__text: 0x4360
-+  __TEXT.__text: 0x436c
-   __TEXT.__objc_methlist: 0x50c
-   __TEXT.__dlopen_cstrs: 0x56
-   __TEXT.__const: 0x28
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4360` | `0x436c` | **`+0xc`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[WebPDFViewAccessibility _accessibilityPages] : 2504 -> 2516
 ```

@@ -2,82 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/AirPlaySupport.framework/AirPlaySupport`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcbf8c` | `0xcc6f4` | **`+0x768`** |
+| `__TEXT.__cstring` | `0x33cc8` | `0x33eb1` | **`+0x1e9`** |
+| `__AUTH_CONST.__cfstring` | `0x7260` | `0x7380` | **`+0x120`** |
+| `__DATA.__bss` | `0xc18` | `0xc10` | **`-0x8`** |
+| `__DATA_CONST.__const` | `0x3068` | `0x3070` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -980.67.2.0.0
--  __TEXT.__text: 0xcbf8c
 +980.71.1.0.0
-+  __TEXT.__text: 0xcc6f4
-   __TEXT.__objc_methlist: 0x38c
-   __TEXT.__const: 0xf18
-   __TEXT.__dlopen_cstrs: 0x158
-   __TEXT.__gcc_except_tab: 0x374
--  __TEXT.__cstring: 0x33cc8
-+  __TEXT.__cstring: 0x33eb1
-   __TEXT.__oslogstring: 0x252
-   __TEXT.__unwind_info: 0x1e08
-   __TEXT.__objc_stubs: 0x0
 
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3068
-+  __DATA_CONST.__const: 0x3070
-   __DATA_CONST.__objc_classlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-
-   __DATA_CONST.__objc_arraydata: 0x60
-   __DATA_CONST.__got: 0x7a8
-   __AUTH_CONST.__const: 0x3c98
--  __AUTH_CONST.__cfstring: 0x7260
-+  __AUTH_CONST.__cfstring: 0x7380
-   __AUTH_CONST.__objc_const: 0x7a8
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x48
-
-   __AUTH.__data: 0x350
-   __DATA.__objc_ivar: 0x2c
-   __DATA.__data: 0x2778
--  __DATA.__bss: 0xc18
-+  __DATA.__bss: 0xc10
-   __DATA_DIRTY.__objc_data: 0x1e0
-   __DATA_DIRTY.__data: 0x8a8
-   __DATA_DIRTY.__bss: 0x5f8
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2627
--  Symbols:   5159
+-  Symbols:   4976
 -  CStrings:  4475
 +  Functions: 2630
-+  Symbols:   5163
++  Symbols:   4980
 +  CStrings:  4488
- 
 Symbols:
 + GCC_except_table1187
 + GCC_except_table1193

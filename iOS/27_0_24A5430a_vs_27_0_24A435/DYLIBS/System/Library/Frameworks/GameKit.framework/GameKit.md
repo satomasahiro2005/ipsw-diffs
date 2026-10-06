@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/GameKit.framework/GameKit`
 
-```diff
+### Section Size Changes
 
- 821.0.25.0.0
--  __TEXT.__text: 0x3566c
-+  __TEXT.__text: 0x35674
-   __TEXT.__objc_methlist: 0x6cc
-   __TEXT.__const: 0xc28
-   __TEXT.__cstring: 0x325
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3566c` | `0x35674` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_248fc2ba0 -> sub_2499a7ba0 : 264 -> 272
+~ sub_248e6fba0 -> sub_24985bba0 : 264 -> 272
 ```

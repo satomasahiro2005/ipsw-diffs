@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/USDKit.framework/USDKit`
 
-```diff
+### Section Size Changes
 
- 106.0.10.0.1
--  __TEXT.__text: 0x2db5c8
-+  __TEXT.__text: 0x2db650
-   __TEXT.__const: 0x2d095
-   __TEXT.__gcc_except_tab: 0x45a1c
-   __TEXT.__cstring: 0x1746a
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2db5c8` | `0x2db650` | **`+0x88`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__16vectorINS_9sub_matchIPKcEENS_9allocatorIS4_EEE6assignEmRKS4_ : 340 -> 336
 ~ __ZNKSt3__111basic_regexIcNS_12regex_traitsIcEEE16__match_at_startINS_9allocatorINS_9sub_matchIPKcEEEEEEbS8_S8_RNS_13match_resultsIS8_T_EENS_15regex_constants15match_flag_typeEb : 4164 -> 4192
@@ -41,9 +42,9 @@ Functions:
 ~ _$ss30_copySequenceToContiguousArrayys0dE0Vy7ElementQzGxSTRzlF6USDKit19UsdPrimSubtreeRangeV_Tg5 : 568 -> 564
 ~ _$ss30_copySequenceToContiguousArrayys0dE0Vy7ElementQzGxSTRzlF6USDKit21SdfPathAncestorsRangeV_Tg5 : 588 -> 580
 ~ _$ss30_copySequenceToContiguousArrayys0dE0Vy7ElementQzGxSTRzlF6USDKit8UsdStageV11UnsafeRangeV_Tg5 : 628 -> 620
-~ sub_24c32eaf8 -> sub_24cd31b5c : 20 -> 24
-~ sub_24c32eb1c -> sub_24cd31b84 : 20 -> 24
-~ sub_24c32eb44 -> sub_24cd31bb0 : 20 -> 24
+~ sub_24c1dbaf8 -> sub_24cbe5b5c : 20 -> 24
+~ sub_24c1dbb1c -> sub_24cbe5b84 : 20 -> 24
+~ sub_24c1dbb44 -> sub_24cbe5bb0 : 20 -> 24
 ~ __ZN16HostedChangeList31SdfChangeListGetEntryChangeInfoERKN32pxrInternal__aapl__pxrReserved__13TfSmallVectorINSt3__14pairINS0_7TfTokenENS3_INS0_7VtValueES5_EEEELj3EEE : 616 -> 624
 ~ __ZN32pxrInternal__aapl__pxrReserved__8TfNotice18_StandardDelivererINS0_20_DelivererWithSenderINS_9TfWeakPtrI19HostedUsdNoticeImplEENS3_INS_8UsdStageEEEMS4_FvRKNS_9UsdNotice14ObjectsChangedERKS7_ES9_EEE19_SendToListenerImplERKS0_RKNS_6TfTypeEPKNS_10TfWeakBaseEPKvRKSt9type_infoRKNSt3__16vectorINS3_INS0_5ProbeEEENSV_9allocatorISY_EEEE : 528 -> 532
 ~ __ZN32pxrInternal__aapl__pxrReserved__8TfNotice18_StandardDelivererINS0_10_DelivererINS_9TfWeakPtrI19HostedUsdNoticeImplEENS3_INS_8UsdStageEEEMS4_FvRKNS_9UsdNotice22StageEditTargetChangedEES9_EEE19_SendToListenerImplERKS0_RKNS_6TfTypeEPKNS_10TfWeakBaseEPKvRKSt9type_infoRKNSt3__16vectorINS3_INS0_5ProbeEEENST_9allocatorISW_EEEE : 352 -> 356

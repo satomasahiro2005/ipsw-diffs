@@ -2,100 +2,47 @@
 
 > `/System/Library/Frameworks/ComputeGraph.framework/ComputeGraph`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x12e240` | `0x1484cc` | **`+0x1a28c`** |
+| `__DATA.__bss` | `0x18170` | `0x21150` | **`+0x8fe0`** |
+| `__TEXT.__const` | `0x190f4` | `0x1eb74` | **`+0x5a80`** |
+| `__AUTH_CONST.__const` | `0xfa00` | `0x11c30` | **`+0x2230`** |
+| `__TEXT.__eh_frame` | `0x88fc` | `0x95cc` | **`+0xcd0`** |
+| `__TEXT.__swift5_typeref` | `0x3ae6` | `0x45ae` | **`+0xac8`** |
+| `__TEXT.__swift5_fieldmd` | `0x5700` | `0x6144` | **`+0xa44`** |
+| `__TEXT.__unwind_info` | `0x48f8` | `0x51a0` | **`+0x8a8`** |
+| `__TEXT.__constg_swiftt` | `0x3b18` | `0x4298` | **`+0x780`** |
+| `__DATA.__data` | `0x24c0` | `0x2aa8` | **`+0x5e8`** |
+| `__TEXT.__swift5_proto` | `0xca8` | `0x1108` | **`+0x460`** |
+| `__TEXT.__swift5_reflstr` | `0x3380` | `0x35b0` | **`+0x230`** |
+| `__TEXT.__cstring` | `0x668c` | `0x685c` | **`+0x1d0`** |
+| `__TEXT.__swift5_assocty` | `0xa68` | `0xb88` | **`+0x120`** |
+| `__TEXT.__swift5_types` | `0x73c` | `0x82c` | **`+0xf0`** |
+| `__DATA.__common` | `0x620` | `0x5a8` | **`-0x78`** |
+| `__AUTH_CONST.__auth_got` | `0x10c0` | `0x1120` | **`+0x60`** |
+| `__AUTH.__data` | `0x1418` | `0x13d8` | **`-0x40`** |
+| `__DATA_CONST.__const` | `0x4a8` | `0x4e8` | **`+0x40`** |
+| `__TEXT.__swift5_capture` | `0x518` | `0x558` | **`+0x40`** |
+| `__TEXT.__swift5_mpenum` | `0x168` | `0x160` | **`-0x8`** |
+| `__TEXT.__swift5_protos` | `0x64` | `0x68` | **`+0x4`** |
+| `__TEXT.__swift5_types2` | `0x10` | `0x14` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -23.0.1.0.0
--  __TEXT.__text: 0x12e240 sha256:d44780cb7bbdf4a8d3f982c129b167a07599b2fead27721c93f923e0e63aff3b
--  __TEXT.__objc_methlist: 0x12ac sha256:09b7172d180799260fffe04f14b4d3149205576cdd2649a3f58ab950ab9030b1
--  __TEXT.__const: 0x190f4 sha256:6f6197ca75278ce32c45e9d00d699626e8d112db3ce2b8343f0dff43d40d3e9d
--  __TEXT.__swift5_typeref: 0x3ae6 sha256:3a6b9748f1b9c1bbb25027ed167214171e6de4bc9fdcb9e268ee246d39657df3
--  __TEXT.__cstring: 0x668c sha256:1c7dcf0b3f2e427dbfeee48568ca5bfb459e02a35eec3f6852d688fe812c1404
--  __TEXT.__swift5_reflstr: 0x3380 sha256:be6affa999f658e70e30a5b6f3fc50e739f35ad0b796355abcb699ddb575e470
--  __TEXT.__swift5_assocty: 0xa68 sha256:a8ae509df28c4180d442c62c6c98eaaa3e812817e620053bdc15eed92dc87abf
--  __TEXT.__constg_swiftt: 0x3b18 sha256:4dbd7bfaad45dceffab2fe8a582569137e94c7547eac4d7a4cadacab52cc8d5f
--  __TEXT.__swift5_fieldmd: 0x5700 sha256:349baa97377c423d149e5e701d228fb7c707c780282f898754df49368ca6d994
--  __TEXT.__swift5_proto: 0xca8 sha256:9aeffb0e5f642809b7fc57dba8681fa81d90a52da41d2c583360c0e4b55c7923
--  __TEXT.__swift5_types: 0x73c sha256:009c3dbb668815241b0d623e635c090c75b8bdcea128b73c912f67127cf863b1
--  __TEXT.__swift5_builtin: 0x410 sha256:784a1c49a5fae9aa2904ad5712447306b1d1c47306f03fcfed887cd00837a363
--  __TEXT.__swift5_protos: 0x64 sha256:c8ae8f73ec742d98aa9fc37843636c4fed08e48fa8856a52bdd9a35bf5483326
--  __TEXT.__swift5_mpenum: 0x168 sha256:01212212babe930a7ef03f675d0496c0fb805f79989ccb8b9832e10a96c4f45f
--  __TEXT.__swift5_capture: 0x518 sha256:20249245a15d9891bcc037181f3d7f08ab464dfecbe7d45fdb830decbb802aa5
--  __TEXT.__swift_as_entry: 0x68 sha256:912a79ce5571b2b65716fd555dd72bf629e068ddf48da0eb26f33a8fe2cac9f4
--  __TEXT.__swift_as_ret: 0x38 sha256:481c4d259828fb029cc112d40437818789ea10614b2f4dcc6347c6580a05b8da
--  __TEXT.__swift_as_cont: 0x338 sha256:5cbf4cb64a3d207ec4a1b7a3161141ec3737d1e8fa682c1b218db8b3d7e55b93
--  __TEXT.__swift5_types2: 0x10 sha256:9d968bf55c944b9b03d3b52180a5e809fb255ff022dff5964f43c285b029bf55
 +25.0.0.0.0
-+  __TEXT.__text: 0x1484cc sha256:5814e369adf1118853b35d3dcb83d396c948e83bc5d65b2783e5f69a8436127b
-+  __TEXT.__objc_methlist: 0x12ac sha256:fa0754d69750d604cd65ed3dbd7baae23ea849f9ca1adfe23572f4eeaa187306
-+  __TEXT.__const: 0x1eb74 sha256:ff35d8eb606be04f9b2fe36217979ad7f91d7a683992ac319a14bbb18b9ff6d6
-+  __TEXT.__swift5_typeref: 0x45ae sha256:c116e88882a61414f3e9994d79caed2fd3f21b98412cf2a52d538a0707dfd60b
-+  __TEXT.__cstring: 0x685c sha256:7f44321bfc4d69a94a8ffb0645cfa455c680d5a6d8acd8cdbfd45b14b04be6e7
-+  __TEXT.__swift5_reflstr: 0x35b0 sha256:9e2b5548eca094dbe41c166d6e8f1394d7e0167aba744fd0c516dc7e3fb13f54
-+  __TEXT.__swift5_assocty: 0xb88 sha256:a4f3d4a442590c492e241bc663135dcb5c2489dc56fd42242102b92770964976
-+  __TEXT.__constg_swiftt: 0x4298 sha256:72e5d877d1377adcb58136541af74e33275a3c767a7d73ee641d56ce704a0e65
-+  __TEXT.__swift5_fieldmd: 0x6144 sha256:586deead062a6ea069f5338232f37c7aa73204129ecb6445d7e63c74cd31cb4f
-+  __TEXT.__swift5_proto: 0x1108 sha256:9cceccb431cef518bb17d6543fbc85f670dce0defda284ab31966661a16312f9
-+  __TEXT.__swift5_types: 0x82c sha256:646061c87b152b33a1b5d78e31a1be2c16069e9543d4e6594813b524ac10f4bc
-+  __TEXT.__swift5_builtin: 0x410 sha256:5a20b2b8432f5d73e9d0c6515410ce623e1a93dea68a63e293959fecda09c1cc
-+  __TEXT.__swift5_protos: 0x68 sha256:b1b47bfc04ad419eac088eb0139596c90672e8a9eb3dcab905426cf2ebfee770
-+  __TEXT.__swift5_mpenum: 0x160 sha256:364f7ce10bbb1dc058bd1a726435729d7c6f3a39eb9b242ac8d99f6b5259cafa
-+  __TEXT.__swift5_capture: 0x558 sha256:8a115b68fce5e9e53191b73b6206c3a54714c44b8320445f366b92fbfd2162c8
-+  __TEXT.__swift_as_entry: 0x68 sha256:ea348b35e674efb0ef6320c6363a4876cfe207a5ba9db72dcf879083380b7071
-+  __TEXT.__swift_as_ret: 0x38 sha256:f8ff62cadd5d60db003a952542aabdfc74758c924ec47617ec49759356a5e7a8
-+  __TEXT.__swift_as_cont: 0x338 sha256:791bf9051e0dbb382ccb1fa8e5650da0ec6a1bdffbffb20f4638e723d06bdd2a
-+  __TEXT.__swift5_types2: 0x14 sha256:05ddd8877bab3cdaa2176947ba5bab3a0d3abbab03e38d7e8aefd553f629778a
-   __TEXT.__oslogstring: 0x13a sha256:e28ba207a06c76421a8a7bc04ef0ef303eb31a98c529a9393c63ecbc40cdff82
--  __TEXT.__unwind_info: 0x48f8 sha256:36691c90bafd749801dc708a2b15243c71992e8e9d2247cf3de370b7c4098a22
--  __TEXT.__eh_frame: 0x88fc sha256:2873d3542df1dc3775734c7026dd80f1258666ac9ec4abc62222b2f0637499ae
-+  __TEXT.__unwind_info: 0x51a0 sha256:4a9b5eaca7cec3edf282d05e363fc4b8b3fcddcf6673a0e2a9b3feffc0c1e508
-+  __TEXT.__eh_frame: 0x95cc sha256:98a1b250868b6ac4c389e22506c7deb8d1642c6e21623eb1f052085f2670f464
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4a8 sha256:1faf21290c0dd7dbf72e7efffe6b497a64ff68085acd93635f373076392185ef
--  __DATA_CONST.__objc_classlist: 0xa8 sha256:637e8861ac52fab578056161226beb8f9ed50d3e74dcf1a530b0715e248cad60
--  __DATA_CONST.__objc_protolist: 0x110 sha256:67f726cb06627dd3db9af0b1a52825d7140054ad2de104f69be70eec84b7fa09
-+  __DATA_CONST.__const: 0x4e8 sha256:84302225ed66daa152fdb3fa1e66985a3aa991da0988df13273dd0c4ef8828e4
-+  __DATA_CONST.__objc_classlist: 0xa8 sha256:48381a9f91aa767fff872f929958941f1a1d4b17dc9d63b2c6efafbb956a2ae1
-+  __DATA_CONST.__objc_protolist: 0x110 sha256:9b20385e94d315af939ad10e05ae27f227fe542f95c14a82cf6bded6b3e5dd26
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0xc88 sha256:b365403c730ab77e1a5cb780716d2dbdb8ed488aa4716b8d622d0086e31d2111
--  __DATA_CONST.__objc_protorefs: 0x88 sha256:0979ca4f28697655093b17b054e3b7c77563621a7edee4018b145e5ebeb62a01
-+  __DATA_CONST.__objc_selrefs: 0xc88 sha256:8ad4023578faaa13adcca1e78a853586618c076b2f7aa0ae4516ca9ec7785262
-+  __DATA_CONST.__objc_protorefs: 0x88 sha256:fc9f0e37823bf9be819b7fd214402fe6e8c7bf6e1410054d6db40084af1950e3
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xfa00 sha256:e6dff0b754c8e56a95116836aadfcf2adf078323e3dfc013174f161106eea3e5
--  __AUTH_CONST.__objc_const: 0x33e8 sha256:da9f80fbfb66d9a6573ddd2d535304acac8d367ac76e34effbc03427f8cf910a
--  __AUTH_CONST.__auth_got: 0x10c0 sha256:1e86afc67a97177fc1bb99dd14b34066386b507704ce0bfc3a3f6174bf8251a8
--  __AUTH.__data: 0x1418 sha256:c2b9741fbf29b9a47526b6f401807ca48f13702887228c013abb17f35a9ddec6
--  __DATA.__data: 0x24c0 sha256:2f89cac85bf280de57818d967171a8adb4e9003b3f486ef9f56fd16c9db399d7
--  __DATA.__bss: 0x18170 sha256:b7c315277a1de65bf6ac499933a4c2be17269ef11dad9c323744c2789d69a3f9
--  __DATA.__common: 0x620 sha256:7fbcfcd86bdfa943dbd68f67c3fcba6e7ab86fda2d14d28862c176bf18579fca
-+  __AUTH_CONST.__const: 0x11c30 sha256:cc60b4ca9fead3dcdbc7d709c89a3068d5a26b1b41150c5641789db83664f69b
-+  __AUTH_CONST.__objc_const: 0x33e8 sha256:942fa55279ce2adcb0da667c6ce5d35d5c2a8f87b13378710aa20749e5e81110
-+  __AUTH_CONST.__auth_got: 0x1120 sha256:5913f2321b0b2f2caccd56941518a30f46d1063e534cc2788f0402ccb01ecffc
-+  __AUTH.__data: 0x13d8 sha256:29bae54f98e3bee183e7e315145501afd2128816b38bfc0b737efab7c9ff13aa
-+  __DATA.__data: 0x2aa8 sha256:3e4637eb332f60a91cd18ae2cf9e8be39a79021b1a87451074492cef82b1157c
-+  __DATA.__bss: 0x21150 sha256:91f188ffeb10e08a70fc2c6eb89bbc1f40580b75477422dbd262fce4968a4af2
-+  __DATA.__common: 0x5a8 sha256:95438055654ed142a4bfe12fe65ff5fa5bdcb318fe4ae29bc1ec2a58366fedc6
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/Metal.framework/Metal
-   - /usr/lib/libSystem.B.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: 2666BF12-9083-38A8-AAB9-9B2203E449A8
 -  Functions: 6778
--  Symbols:   24694
+-  Symbols:   17895
 -  CStrings:  838
-+  UUID: BFE5B42A-D40C-31BC-AFA0-E2124239E72F
 +  Functions: 7556
-+  Symbols:   28839
++  Symbols:   20777
 +  CStrings:  873
- 
 Symbols:
 + _$s10Foundation11JSONEncoderC16OutputFormattingVAEs10SetAlgebraAAWlTm
 + _$s10Foundation19PropertyListEncoderC12outputFormatSo010NSPropertycF0VvsTj
@@ -114,14 +61,12 @@ Symbols:
 + _$s12ComputeGraph0B10DefinitionV12SimulateInfoV16elementsPerGroupSivpAETK
 + _$s12ComputeGraph0B10DefinitionV12SimulateInfoV16elementsPerGroupSivpAETk
 + _$s12ComputeGraph0B10DefinitionV12SimulateInfoV7prewarmAC07PrewarmE0VvM
-+ _$s12ComputeGraph0B10DefinitionV12SimulateInfoV7prewarmAC07PrewarmE0VvM.resume.0
++ _$s12ComputeGraph0B10DefinitionV12SimulateInfoV7prewarmAC07PrewarmE0VvM.resume
 + _$s12ComputeGraph0B10DefinitionV12SimulateInfoV7prewarmAC07PrewarmE0Vvg
 + _$s12ComputeGraph0B10DefinitionV12SimulateInfoV7prewarmAC07PrewarmE0VvpMV
 + _$s12ComputeGraph0B10DefinitionV12SimulateInfoV7prewarmAC07PrewarmE0Vvs
 + _$s12ComputeGraph0B10DefinitionV12SimulateInfoV8capacitySivpAETK
 + _$s12ComputeGraph0B10DefinitionV12SimulateInfoV8capacitySivpAETk
-+ _$s12ComputeGraph0B10DefinitionV15depthFirstVisit8inputsOfSaySiGAF_tFySiXEfU_TA.18
-+ _$s12ComputeGraph0B10DefinitionV15depthFirstVisit8inputsOfSaySiGAF_tFySiXEfU_TA.19
 + _$s12ComputeGraph0B10DefinitionV4NodeV5store5index10relocation2inSbSi_AA0adB0V8AssemblyV8LocationOSwtF
 + _$s12ComputeGraph0B12AssemblyPassO24removeDisabledStageNodesyA2CmFWC
 + _$s12ComputeGraph0B13DecodingErrorOACs0D0AAWL
@@ -145,7 +90,7 @@ Symbols:
 + _$s12ComputeGraph0B13DecodingErrorOwui
 + _$s12ComputeGraph0B13DecodingErrorOwup
 + _$s12ComputeGraph0B13StageAssemblyV7outputsSDySiAA0a4NodeB0V0D0V8LocationOGvM
-+ _$s12ComputeGraph0B13StageAssemblyV7outputsSDySiAA0a4NodeB0V0D0V8LocationOGvM.resume.0
++ _$s12ComputeGraph0B13StageAssemblyV7outputsSDySiAA0a4NodeB0V0D0V8LocationOGvM.resume
 + _$s12ComputeGraph0B13StageAssemblyV7outputsSDySiAA0a4NodeB0V0D0V8LocationOGvg
 + _$s12ComputeGraph0B13StageAssemblyV7outputsSDySiAA0a4NodeB0V0D0V8LocationOGvpMV
 + _$s12ComputeGraph0B13StageAssemblyV7outputsSDySiAA0a4NodeB0V0D0V8LocationOGvs
@@ -2548,17 +2493,17 @@ Symbols:
 + _$s12ComputeGraph0aB8AssemblyV04nodeB013functionTable13graphUniforms13namedBindings06sharedJ015constantBuffers06deviceM08textures6scopes17uniformBufferSize0qR5Index8emitters7systems10initialize7outputs6events7compute7textureAcA0a4NodeB0V_AA08FunctionF0VSgSDyAW4PortO7AddressVAW0C0V8LocationOGSDySSA4_14UniformBindingVGA10_SayAA0bR0VGA13_SayAA0B7TextureVGSayAA0B5ScopeVGS2iSDySiAA0b5StageC0VGA22_A22_A22_A22_A22_A22_tcfcfA8_
 + _$s12ComputeGraph0aB8AssemblyV04nodeB013functionTable13graphUniforms13namedBindings06sharedJ015constantBuffers06deviceM08textures6scopes17uniformBufferSize0qR5Index8emitters7systems10initialize7outputs6events7compute7textureAcA0a4NodeB0V_AA08FunctionF0VSgSDyAW4PortO7AddressVAW0C0V8LocationOGSDySSA4_14UniformBindingVGA10_SayAA0bR0VGA13_SayAA0B7TextureVGSayAA0B5ScopeVGS2iSDySiAA0b5StageC0VGA22_A22_A22_A22_A22_A22_tcfcfA9_
 + _$s12ComputeGraph0aB8AssemblyV13graphUniformsSDyAA0a4NodeB0V4PortO7AddressVAF0C0V8LocationOGvM
-+ _$s12ComputeGraph0aB8AssemblyV13graphUniformsSDyAA0a4NodeB0V4PortO7AddressVAF0C0V8LocationOGvM.resume.0
++ _$s12ComputeGraph0aB8AssemblyV13graphUniformsSDyAA0a4NodeB0V4PortO7AddressVAF0C0V8LocationOGvM.resume
 + _$s12ComputeGraph0aB8AssemblyV13graphUniformsSDyAA0a4NodeB0V4PortO7AddressVAF0C0V8LocationOGvg
 + _$s12ComputeGraph0aB8AssemblyV13graphUniformsSDyAA0a4NodeB0V4PortO7AddressVAF0C0V8LocationOGvpMV
 + _$s12ComputeGraph0aB8AssemblyV13graphUniformsSDyAA0a4NodeB0V4PortO7AddressVAF0C0V8LocationOGvs
 + _$s12ComputeGraph0aB8AssemblyV13namedBindingsSDySSAA0a4NodeB0V0C0V14UniformBindingVGvM
-+ _$s12ComputeGraph0aB8AssemblyV13namedBindingsSDySSAA0a4NodeB0V0C0V14UniformBindingVGvM.resume.0
++ _$s12ComputeGraph0aB8AssemblyV13namedBindingsSDySSAA0a4NodeB0V0C0V14UniformBindingVGvM.resume
 + _$s12ComputeGraph0aB8AssemblyV13namedBindingsSDySSAA0a4NodeB0V0C0V14UniformBindingVGvg
 + _$s12ComputeGraph0aB8AssemblyV13namedBindingsSDySSAA0a4NodeB0V0C0V14UniformBindingVGvpMV
 + _$s12ComputeGraph0aB8AssemblyV13namedBindingsSDySSAA0a4NodeB0V0C0V14UniformBindingVGvs
 + _$s12ComputeGraph0aB8AssemblyV14sharedBindingsSDySSAA0a4NodeB0V0C0V14UniformBindingVGvM
-+ _$s12ComputeGraph0aB8AssemblyV14sharedBindingsSDySSAA0a4NodeB0V0C0V14UniformBindingVGvM.resume.0
++ _$s12ComputeGraph0aB8AssemblyV14sharedBindingsSDySSAA0a4NodeB0V0C0V14UniformBindingVGvM.resume
 + _$s12ComputeGraph0aB8AssemblyV14sharedBindingsSDySSAA0a4NodeB0V0C0V14UniformBindingVGvg
 + _$s12ComputeGraph0aB8AssemblyV14sharedBindingsSDySSAA0a4NodeB0V0C0V14UniformBindingVGvpMV
 + _$s12ComputeGraph0aB8AssemblyV14sharedBindingsSDySSAA0a4NodeB0V0C0V14UniformBindingVGvs
@@ -2592,7 +2537,7 @@ Symbols:
 + _$s12ComputeGraph13Float4x3CoderVwstTm
 + _$s12ComputeGraph13RelocatedNodeV11relocationsACSayAA0adB0V8AssemblyV8LocationOG_tcfC
 + _$s12ComputeGraph13RelocatedNodeV11relocationsSayAA0adB0V8AssemblyV8LocationOGvM
-+ _$s12ComputeGraph13RelocatedNodeV11relocationsSayAA0adB0V8AssemblyV8LocationOGvM.resume.0
++ _$s12ComputeGraph13RelocatedNodeV11relocationsSayAA0adB0V8AssemblyV8LocationOGvM.resume
 + _$s12ComputeGraph13RelocatedNodeV11relocationsSayAA0adB0V8AssemblyV8LocationOGvg
 + _$s12ComputeGraph13RelocatedNodeV11relocationsSayAA0adB0V8AssemblyV8LocationOGvpMV
 + _$s12ComputeGraph13RelocatedNodeV11relocationsSayAA0adB0V8AssemblyV8LocationOGvs
@@ -3021,9 +2966,6 @@ Symbols:
 + _$ss6_merge3low3mid4high6buffer2bySbSpyxG_A3GSbx_xtKXEtKlF12ComputeGraph0g4NodeH0V4EdgeV_Tg5
 + _$sypSgWOhTm
 + ___swift_destroy_boxed_opaque_existential_0Tm
-+ ___swift_exist.box.addr_destructor.37
-+ ___swift_exist.box.addr_destructor.40
-+ ___swift_exist.box.addr_destructor.53
 + ___swift_memcpy161_8
 + ___swift_memcpy232_8
 + ___swift_memcpy376_8
@@ -3357,13 +3299,13 @@ Symbols:
 - _$s12ComputeGraph01_a4NodeB3_v1V4EdgeV2eeoiySbAE_AEtFZ
 - _$s12ComputeGraph01_a4NodeB3_v1V4EdgeV6source6targetAeA0acB0V4PortO7AddressV_AMtcfC
 - _$s12ComputeGraph01_a4NodeB3_v1V4EdgeV6sourceAA0acB0V4PortO7AddressVvM
-- _$s12ComputeGraph01_a4NodeB3_v1V4EdgeV6sourceAA0acB0V4PortO7AddressVvM.resume.0
+- _$s12ComputeGraph01_a4NodeB3_v1V4EdgeV6sourceAA0acB0V4PortO7AddressVvM.resume
 - _$s12ComputeGraph01_a4NodeB3_v1V4EdgeV6sourceAA0acB0V4PortO7AddressVvg
 - _$s12ComputeGraph01_a4NodeB3_v1V4EdgeV6sourceAA0acB0V4PortO7AddressVvpMV
 - _$s12ComputeGraph01_a4NodeB3_v1V4EdgeV6sourceAA0acB0V4PortO7AddressVvs
 - _$s12ComputeGraph01_a4NodeB3_v1V4EdgeV6source_6target_AESi_S3itcfC
 - _$s12ComputeGraph01_a4NodeB3_v1V4EdgeV6targetAA0acB0V4PortO7AddressVvM
-- _$s12ComputeGraph01_a4NodeB3_v1V4EdgeV6targetAA0acB0V4PortO7AddressVvM.resume.0
+- _$s12ComputeGraph01_a4NodeB3_v1V4EdgeV6targetAA0acB0V4PortO7AddressVvM.resume
 - _$s12ComputeGraph01_a4NodeB3_v1V4EdgeV6targetAA0acB0V4PortO7AddressVvg
 - _$s12ComputeGraph01_a4NodeB3_v1V4EdgeV6targetAA0acB0V4PortO7AddressVvpMV
 - _$s12ComputeGraph01_a4NodeB3_v1V4EdgeV6targetAA0acB0V4PortO7AddressVvs
@@ -3379,7 +3321,7 @@ Symbols:
 - _$s12ComputeGraph01_a4NodeB3_v1V4EdgeVwet
 - _$s12ComputeGraph01_a4NodeB3_v1V4EdgeVwst
 - _$s12ComputeGraph01_a4NodeB3_v1V4implAA0acB0VvM
-- _$s12ComputeGraph01_a4NodeB3_v1V4implAA0acB0VvM.resume.0
+- _$s12ComputeGraph01_a4NodeB3_v1V4implAA0acB0VvM.resume
 - _$s12ComputeGraph01_a4NodeB3_v1V4implAA0acB0Vvg
 - _$s12ComputeGraph01_a4NodeB3_v1V4implAA0acB0VvpMV
 - _$s12ComputeGraph01_a4NodeB3_v1V4implAA0acB0Vvs
@@ -3408,15 +3350,13 @@ Symbols:
 - _$s12ComputeGraph01_a4NodeB3_v1VyAA0acB0V0C0VSgSicipMV
 - _$s12ComputeGraph01_a4NodeB3_v1VyAcA0acB0VcfC
 - _$s12ComputeGraph0B10DefinitionV10OutputPortVyAeA0a4NodeB0V0E0O7AddressVcfC
-- _$s12ComputeGraph0B10DefinitionV15depthFirstVisit8inputsOfSaySiGAF_tFySiXEfU_TA.16
-- _$s12ComputeGraph0B10DefinitionV15depthFirstVisit8inputsOfSaySiGAF_tFySiXEfU_TA.17
 - _$s12ComputeGraph0B10DefinitionV4NodeV10definition4from2inAeA0dC0V_SayAA19ParameterRelocationVSgGSWtcfC
 - _$s12ComputeGraph0B10DefinitionV4NodeV5store5index10relocation2inSbSi_AA19ParameterRelocationVSwtF
 - _$s12ComputeGraph0B10DefinitionV9InputPortVyAeA0a4NodeB0V0E0O7AddressVcfC
 - _$s12ComputeGraph0B10DefinitionVACSEAAWL
 - _$s12ComputeGraph0B10DefinitionVACSEAAWl
 - _$s12ComputeGraph0B13StageAssemblyV7outputsSDySiAA19ParameterRelocationV8LocationOGvM
-- _$s12ComputeGraph0B13StageAssemblyV7outputsSDySiAA19ParameterRelocationV8LocationOGvM.resume.0
+- _$s12ComputeGraph0B13StageAssemblyV7outputsSDySiAA19ParameterRelocationV8LocationOGvM.resume
 - _$s12ComputeGraph0B13StageAssemblyV7outputsSDySiAA19ParameterRelocationV8LocationOGvg
 - _$s12ComputeGraph0B13StageAssemblyV7outputsSDySiAA19ParameterRelocationV8LocationOGvpMV
 - _$s12ComputeGraph0B13StageAssemblyV7outputsSDySiAA19ParameterRelocationV8LocationOGvs
@@ -3438,7 +3378,7 @@ Symbols:
 - _$s12ComputeGraph0a4NodeB0V0C10DefinitionV4KindO7swizzleyAGSo11MTLDataTypeV_AC15SwizzleChannelsVtcAGmFWC
 - _$s12ComputeGraph0a4NodeB0V0C10DefinitionV4KindO8functionyA2GmFWC
 - _$s12ComputeGraph0a4NodeB0V0C10DefinitionV6bundleSSSgvM
-- _$s12ComputeGraph0a4NodeB0V0C10DefinitionV6bundleSSSgvM.resume.0
+- _$s12ComputeGraph0a4NodeB0V0C10DefinitionV6bundleSSSgvM.resume
 - _$s12ComputeGraph0a4NodeB0V0C10DefinitionV6bundleSSSgvpfi
 - _$s12ComputeGraph0a4NodeB0V0C10DefinitionV6bundleSSSgvs
 - _$s12ComputeGraph0a4NodeB0V14PortDefinitionV_7pointer9structureAESS_AC07PointerE0V0H4TypeOSo09MTLStructI0CtAA9ParameterV0I5ErrorOYKc33_2CA6D8A3C637DDE3C29F90E2501EDC6BLlfC
@@ -3468,7 +3408,7 @@ Symbols:
 - _$s12ComputeGraph0aB10SimulationC10OutputInfoV07primaryD6Layout_Wz
 - _$s12ComputeGraph0aB10SimulationC10OutputInfoV09secondaryD6LayoutAA0a4NodeB0V09StructureG0VSgvgZ
 - _$s12ComputeGraph0aB10SimulationC10OutputInfoV09secondaryD6LayoutAA0a4NodeB0V09StructureG0VSgvpZMV
-- _$s12ComputeGraph0aB10SimulationC10parametersAA0aB8UniformsVvM.resume.0
+- _$s12ComputeGraph0aB10SimulationC10parametersAA0aB8UniformsVvM.resume
 - _$s12ComputeGraph0aB10SimulationC17parameterLocation8outputId4portAA19ParameterRelocationV0E0OSgSi_AA0B10DefinitionV10OutputInfoV05GroupL4PortOtF
 - _$s12ComputeGraph0aB10SimulationC9outputIdsSaySiGvg
 - _$s12ComputeGraph0aB10SimulationC9outputIdsSaySiGvpMV
@@ -3509,18 +3449,18 @@ Symbols:
 - _$s12ComputeGraph0aB8AssemblyV04nodeB013functionTable14sharedUniforms8uniforms05graphH005namedH007_proto_kH015constantBuffers06deviceN08textures6scopes17uniformBufferSize0rS5Index8emitters7systems10initialize7outputs6events7compute7textureAcA0a4NodeB0V_AA08FunctionF0VSgSDySSAA19ParameterRelocationVGSDyAA0B10DefinitionV9InputPortVA2_GSDyAY4PortO7AddressVA2_GA3_SDySSAA0B7UniformVGSayAA0bS0VGA19_SayAA0B7TextureVGSayAA0B5ScopeVGS2iSDySiAA0b5StageC0VGA28_A28_A28_A28_A28_A28_tcfcfA8_
 - _$s12ComputeGraph0aB8AssemblyV04nodeB013functionTable14sharedUniforms8uniforms05graphH005namedH007_proto_kH015constantBuffers06deviceN08textures6scopes17uniformBufferSize0rS5Index8emitters7systems10initialize7outputs6events7compute7textureAcA0a4NodeB0V_AA08FunctionF0VSgSDySSAA19ParameterRelocationVGSDyAA0B10DefinitionV9InputPortVA2_GSDyAY4PortO7AddressVA2_GA3_SDySSAA0B7UniformVGSayAA0bS0VGA19_SayAA0B7TextureVGSayAA0B5ScopeVGS2iSDySiAA0b5StageC0VGA28_A28_A28_A28_A28_A28_tcfcfA9_
 - _$s12ComputeGraph0aB8AssemblyV13graphUniformsSDyAA0a4NodeB0V4PortO7AddressVAA19ParameterRelocationVGvM
-- _$s12ComputeGraph0aB8AssemblyV13graphUniformsSDyAA0a4NodeB0V4PortO7AddressVAA19ParameterRelocationVGvM.resume.0
+- _$s12ComputeGraph0aB8AssemblyV13graphUniformsSDyAA0a4NodeB0V4PortO7AddressVAA19ParameterRelocationVGvM.resume
 - _$s12ComputeGraph0aB8AssemblyV13graphUniformsSDyAA0a4NodeB0V4PortO7AddressVAA19ParameterRelocationVGvg
 - _$s12ComputeGraph0aB8AssemblyV13graphUniformsSDyAA0a4NodeB0V4PortO7AddressVAA19ParameterRelocationVGvpMV
 - _$s12ComputeGraph0aB8AssemblyV13graphUniformsSDyAA0a4NodeB0V4PortO7AddressVAA19ParameterRelocationVGvs
 - _$s12ComputeGraph0aB8AssemblyV13namedUniformsSDySSAA19ParameterRelocationVGvM
-- _$s12ComputeGraph0aB8AssemblyV13namedUniformsSDySSAA19ParameterRelocationVGvM.resume.0
+- _$s12ComputeGraph0aB8AssemblyV13namedUniformsSDySSAA19ParameterRelocationVGvM.resume
 - _$s12ComputeGraph0aB8AssemblyV13namedUniformsSDySSAA19ParameterRelocationVGvs
 - _$s12ComputeGraph0aB8AssemblyV14sharedUniformsSDySSAA19ParameterRelocationVGvM
-- _$s12ComputeGraph0aB8AssemblyV14sharedUniformsSDySSAA19ParameterRelocationVGvM.resume.0
+- _$s12ComputeGraph0aB8AssemblyV14sharedUniformsSDySSAA19ParameterRelocationVGvM.resume
 - _$s12ComputeGraph0aB8AssemblyV14sharedUniformsSDySSAA19ParameterRelocationVGvs
 - _$s12ComputeGraph0aB8AssemblyV20_proto_namedUniformsSDySSAA0B7UniformVGvM
-- _$s12ComputeGraph0aB8AssemblyV20_proto_namedUniformsSDySSAA0B7UniformVGvM.resume.0
+- _$s12ComputeGraph0aB8AssemblyV20_proto_namedUniformsSDySSAA0B7UniformVGvM.resume
 - _$s12ComputeGraph0aB8AssemblyV20_proto_namedUniformsSDySSAA0B7UniformVGvg
 - _$s12ComputeGraph0aB8AssemblyV20_proto_namedUniformsSDySSAA0B7UniformVGvpMV
 - _$s12ComputeGraph0aB8AssemblyV20_proto_namedUniformsSDySSAA0B7UniformVGvs
@@ -3533,7 +3473,7 @@ Symbols:
 - _$s12ComputeGraph12TypeMismatchV_8expected5foundAcA14NodeDefinitionV_So07MTLDataC0VAItcfC
 - _$s12ComputeGraph13RelocatedNodeV11relocationsACSayAA19ParameterRelocationVG_tcfC
 - _$s12ComputeGraph13RelocatedNodeV11relocationsSayAA19ParameterRelocationVGvM
-- _$s12ComputeGraph13RelocatedNodeV11relocationsSayAA19ParameterRelocationVGvM.resume.0
+- _$s12ComputeGraph13RelocatedNodeV11relocationsSayAA19ParameterRelocationVGvM.resume
 - _$s12ComputeGraph13RelocatedNodeV11relocationsSayAA19ParameterRelocationVGvg
 - _$s12ComputeGraph13RelocatedNodeV11relocationsSayAA19ParameterRelocationVGvpMV
 - _$s12ComputeGraph13RelocatedNodeV11relocationsSayAA19ParameterRelocationVGvs
@@ -3677,9 +3617,6 @@ Symbols:
 - _$ss23_ContiguousArrayStorageCy12ComputeGraph19ParameterRelocationVSgGMd
 - _$ss7DecoderP12ComputeGraphE13stageRegistryAC05StageE0CSgvg
 - _$ss7DecoderP12ComputeGraphE13stageRegistryAC05StageE0CSgvpMV
-- ___swift_exist.box.addr_destructor.33
-- ___swift_exist.box.addr_destructor.36
-- ___swift_exist.box.addr_destructor.49
 - ___swift_memcpy113_8
 - ___swift_memcpy177_8
 - ___swift_memcpy200_8
@@ -3773,5 +3710,4 @@ CStrings:
 - "loadState(element) expects an elementState relocation."
 - "loadState(emitter) expects an emitterState relocation."
 - "loadState(group) expects a groupState relocation."
-
 ```

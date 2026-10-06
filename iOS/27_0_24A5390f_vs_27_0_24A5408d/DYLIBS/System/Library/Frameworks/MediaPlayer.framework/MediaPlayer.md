@@ -2,87 +2,41 @@
 
 > `/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x38cebc` | `0x38df44` | **`+0x1088`** |
+| `__AUTH_CONST.__objc_const` | `0x45cb0` | `0x46288` | **`+0x5d8`** |
+| `__TEXT.__objc_methlist` | `0x28b1c` | `0x28d54` | **`+0x238`** |
+| `__TEXT.__oslogstring` | `0x1a251` | `0x1a3fe` | **`+0x1ad`** |
+| `__TEXT.__cstring` | `0x31a3f` | `0x31be7` | **`+0x1a8`** |
+| `__AUTH.__objc_data` | `0xc348` | `0xc438` | **`+0xf0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x139b8` | `0x13a98` | **`+0xe0`** |
+| `__AUTH_CONST.__cfstring` | `0x27520` | `0x27580` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0xd1e0` | `0xd240` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0xd8e0` | `0xd930` | **`+0x50`** |
+| `__DATA.__objc_ivar` | `0x2d6c` | `0x2db8` | **`+0x4c`** |
+| `__TEXT.__const` | `0x14fc0` | `0x14ff8` | **`+0x38`** |
+| `__TEXT.__gcc_except_tab` | `0x1c41c` | `0x1c444` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0x30b0` | `0x30d0` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x8a0` | `0x8b8` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x1510` | `0x1528` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0xdb0` | `0xdc8` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
 -4026.100.79.0.0
--  __TEXT.__text: 0x38cebc
--  __TEXT.__objc_methlist: 0x28b1c
 +4026.110.1.0.0
-+  __TEXT.__text: 0x38df44
-+  __TEXT.__objc_methlist: 0x28d54
-   __TEXT.__dlopen_cstrs: 0x4bd
--  __TEXT.__const: 0x14fc0
-+  __TEXT.__const: 0x14ff8
-   __TEXT.__swift5_typeref: 0x18a
-   __TEXT.__swift5_capture: 0x108
-   __TEXT.__constg_swiftt: 0xf8
 
-   __TEXT.__swift_as_entry: 0x1c
-   __TEXT.__swift_as_ret: 0x1c
-   __TEXT.__swift_as_cont: 0x8
--  __TEXT.__cstring: 0x31a3f
-+  __TEXT.__cstring: 0x31be7
-   __TEXT.__swift5_proto: 0x14
--  __TEXT.__gcc_except_tab: 0x1c41c
--  __TEXT.__oslogstring: 0x1a251
-+  __TEXT.__gcc_except_tab: 0x1c444
-+  __TEXT.__oslogstring: 0x1a3fe
-   __TEXT.__ustring: 0x1ca
--  __TEXT.__unwind_info: 0xd1e0
-+  __TEXT.__unwind_info: 0xd240
-   __TEXT.__eh_frame: 0x3c0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xd8e0
--  __DATA_CONST.__objc_classlist: 0x1510
-+  __DATA_CONST.__const: 0xd930
-+  __DATA_CONST.__objc_classlist: 0x1528
-   __DATA_CONST.__objc_catlist: 0x108
-   __DATA_CONST.__objc_protolist: 0x428
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x139b8
-+  __DATA_CONST.__objc_selrefs: 0x13a98
-   __DATA_CONST.__objc_protorefs: 0xe0
--  __DATA_CONST.__objc_superrefs: 0xdb0
-+  __DATA_CONST.__objc_superrefs: 0xdc8
-   __DATA_CONST.__objc_arraydata: 0x8d8
--  __DATA_CONST.__got: 0x30b0
-+  __DATA_CONST.__got: 0x30d0
-   __AUTH_CONST.__const: 0xe858
--  __AUTH_CONST.__cfstring: 0x27520
--  __AUTH_CONST.__objc_const: 0x45cb0
-+  __AUTH_CONST.__cfstring: 0x27580
-+  __AUTH_CONST.__objc_const: 0x46288
-   __AUTH_CONST.__weak_auth_got: 0x60
--  __AUTH_CONST.__objc_intobj: 0x8a0
-+  __AUTH_CONST.__objc_intobj: 0x8b8
-   __AUTH_CONST.__objc_arrayobj: 0xf78
-   __AUTH_CONST.__objc_doubleobj: 0x60
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__auth_got: 0x2b38
--  __AUTH.__objc_data: 0xc348
-+  __AUTH.__objc_data: 0xc438
-   __AUTH.__data: 0x100
--  __DATA.__objc_ivar: 0x2d6c
-+  __DATA.__objc_ivar: 0x2db8
-   __DATA.__data: 0x3af8
-   __DATA.__bss: 0xe88
-   __DATA.__common: 0xab8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 17158
--  Symbols:   38948
+-  Symbols:   32352
 -  CStrings:  7417
 +  Functions: 17204
-+  Symbols:   39064
++  Symbols:   32446
 +  CStrings:  7427
- 
 Symbols:
 + +[MPCloudEntityUpdateRegistration allLibraryAlbumsRegistration]
 + -[MPCloudController registerForUpdatesWithRegistration:updateHandler:completionHandler:]
@@ -1013,29 +967,6 @@ Symbols:
 + ___88-[MPCloudController registerForUpdatesWithRegistration:updateHandler:completionHandler:]_block_invoke_2
 + ___block_descriptor_40_e8_32bs_e29_v16?0"ICCloudEntityUpdate"8ls32l8
 + ___block_descriptor_40_e8_32bs_e58_v24?0"ICCloudEntityUpdateRegistrationToken"8"NSError"16ls32l8
-+ _objc_msgSend$_hasXPCConnection
-+ _objc_msgSend$_icConfiguration
-+ _objc_msgSend$_initWithICPushMessage:
-+ _objc_msgSend$_initWithICUpdate:
-+ _objc_msgSend$_isServiceStarted
-+ _objc_msgSend$_locked_clearConnection
-+ _objc_msgSend$_locked_validateServer
-+ _objc_msgSend$allLibraryAlbumsConfiguration
-+ _objc_msgSend$channelID
-+ _objc_msgSend$channelIDs
-+ _objc_msgSend$contentType
-+ _objc_msgSend$goLiveDate
-+ _objc_msgSend$initWithChannelID:entityType:storeID:reason:expectedReleaseDate:
-+ _objc_msgSend$pushMessage
-+ _objc_msgSend$receivedDate
-+ _objc_msgSend$registerForUpdatesWithConfiguration:updateHandler:completionHandler:
-+ _objc_msgSend$relevanceBitmask
-+ _objc_msgSend$resubscribeReason
-+ _objc_msgSend$snapshotWithElapsedTime:duration:rate:atTimestamp:state:
-+ _objc_msgSend$storefront
-+ _objc_msgSend$unregisterForUpdatesToMonitoredEntityUsingToken:
-+ _objc_msgSend$unregisterUpdatesForChannelID:reason:
-+ _objc_msgSend$unsubscribeReason
 - -[MPMusicPlayerApplicationController _clearConnection]
 - -[MPMusicPlayerController _validateServer]
 - GCC_except_table10000
@@ -1871,7 +1802,6 @@ Symbols:
 - GCC_except_table9974
 - GCC_except_table9996
 - ___42-[MPMusicPlayerController _validateServer]_block_invoke
-- _objc_msgSend$_validateServer
 CStrings:
 + "<%@ %p channelID=%@ contentType=%ld storeID=%lld storefront=%@ goLiveDate=%@ relevanceBitmask=0x%llx receivedDate=%@>"
 + "<%@ %p channelID=%@ entityType=%ld storeID=%lld reason=%ld expectedReleaseDate=%@ observesAllLibraryAlbums=%d>"

@@ -2,147 +2,69 @@
 
 > `/System/Library/PrivateFrameworks/IntelligenceFlowRuntime.framework/IntelligenceFlowRuntime`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_types2`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb4f414` | `0xc55fd4` | **`+0x106bc0`** |
+| `__DATA.__bss` | `0x59e40` | `0x807d0` | **`+0x26990`** |
+| `__TEXT.__const` | `0x4fb28` | `0x63f86` | **`+0x1445e`** |
+| `__TEXT.__eh_frame` | `0x5bb88` | `0x680c0` | **`+0xc538`** |
+| `__AUTH.__data` | `0x4c60` | `0xa628` | **`+0x59c8`** |
+| `__TEXT.__unwind_info` | `0x1fed0` | `0x249f0` | **`+0x4b20`** |
+| `__DATA.__data` | `0xa678` | `0xe860` | **`+0x41e8`** |
+| `__AUTH_CONST.__const` | `0x4c600` | `0x4fda0` | **`+0x37a0`** |
+| `__TEXT.__swift5_typeref` | `0x17a8d` | `0x1ae1e` | **`+0x3391`** |
+| `__TEXT.__cstring` | `0x1b1f3` | `0x1da47` | **`+0x2854`** |
+| `__TEXT.__swift5_fieldmd` | `0x133d4` | `0x156dc` | **`+0x2308`** |
+| `__TEXT.__constg_swiftt` | `0x145f0` | `0x163fc` | **`+0x1e0c`** |
+| `__TEXT.__swift5_assocty` | `0xed0` | `0x2358` | **`+0x1488`** |
+| `__TEXT.__swift5_reflstr` | `0x108ed` | `0x11cbd` | **`+0x13d0`** |
+| `__TEXT.__swift5_proto` | `0x39ec` | `0x4d50` | **`+0x1364`** |
+| `__DATA.__common` | `0x2b8` | `0x15d0` | **`+0x1318`** |
+| `__TEXT.__swift5_capture` | `0x13248` | `0x14130` | **`+0xee8`** |
+| `__TEXT.__oslogstring` | `0x3c471` | `0x3d341` | **`+0xed0`** |
+| `__DATA_DIRTY.__bss` | `0x10600` | `0x10000` | **`-0x600`** |
+| `__AUTH_CONST.__auth_got` | `0xb528` | `0xbae0` | **`+0x5b8`** |
+| `__AUTH_CONST.__objc_const` | `0x112f0` | `0x11878` | **`+0x588`** |
+| `__TEXT.__swift_as_cont` | `0x461c` | `0x4a08` | **`+0x3ec`** |
+| `__TEXT.__swift5_types` | `0x166c` | `0x1908` | **`+0x29c`** |
+| `__DATA_DIRTY.__data` | `0x18860` | `0x18728` | **`-0x138`** |
+| `__TEXT.__swift_as_ret` | `0x2788` | `0x289c` | **`+0x114`** |
+| `__AUTH.__objc_data` | `0xfe0` | `0x10d0` | **`+0xf0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1a78` | `0x1b48` | **`+0xd0`** |
+| `__TEXT.__swift_as_entry` | `0x1f0c` | `0x1fc0` | **`+0xb4`** |
+| `__TEXT.__swift5_mpenum` | `0x1dc` | `0x164` | **`-0x78`** |
+| `__DATA_CONST.__const` | `0x298` | `0x2d8` | **`+0x40`** |
+| `__TEXT.__swift5_builtin` | `0x474` | `0x49c` | **`+0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x870` | `0x890` | **`+0x20`** |
+| `__TEXT.__swift5_protos` | `0x2d0` | `0x2e4` | **`+0x14`** |
+| `__DATA_DIRTY.__common` | `0x800` | `0x7f0` | **`-0x10`** |
+
+### Other Changes
 
 ```diff
 
 -3600.147.12.501.3
--  __TEXT.__text: 0xb4f414
 +3600.151.4.501.6
-+  __TEXT.__text: 0xc55fd4
-   __TEXT.__objc_methlist: 0x107c
--  __TEXT.__const: 0x4fb28
--  __TEXT.__constg_swiftt: 0x145f0
--  __TEXT.__swift5_typeref: 0x17a8d
--  __TEXT.__swift5_builtin: 0x474
--  __TEXT.__swift5_reflstr: 0x108ed
--  __TEXT.__swift5_fieldmd: 0x133d4
--  __TEXT.__swift5_assocty: 0xed0
--  __TEXT.__oslogstring: 0x3c471
--  __TEXT.__swift5_capture: 0x13248
--  __TEXT.__cstring: 0x1b1f3
--  __TEXT.__swift5_proto: 0x39ec
--  __TEXT.__swift5_types: 0x166c
--  __TEXT.__swift_as_entry: 0x1f0c
--  __TEXT.__swift_as_ret: 0x2788
--  __TEXT.__swift_as_cont: 0x461c
--  __TEXT.__swift5_protos: 0x2d0
--  __TEXT.__swift5_mpenum: 0x1dc
-+  __TEXT.__const: 0x63f86
-+  __TEXT.__cstring: 0x1da47
-+  __TEXT.__swift5_typeref: 0x1ae1e
-+  __TEXT.__swift5_reflstr: 0x11cbd
-+  __TEXT.__swift5_assocty: 0x2358
-+  __TEXT.__constg_swiftt: 0x163fc
-+  __TEXT.__swift5_fieldmd: 0x156dc
-+  __TEXT.__swift5_builtin: 0x49c
-+  __TEXT.__swift5_mpenum: 0x164
-+  __TEXT.__swift5_protos: 0x2e4
-+  __TEXT.__swift5_proto: 0x4d50
-+  __TEXT.__swift5_types: 0x1908
-+  __TEXT.__oslogstring: 0x3d341
-+  __TEXT.__swift5_capture: 0x14130
-+  __TEXT.__swift_as_entry: 0x1fc0
-+  __TEXT.__swift_as_ret: 0x289c
-+  __TEXT.__swift_as_cont: 0x4a08
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__unwind_info: 0x1fed0
--  __TEXT.__eh_frame: 0x5bb88
-+  __TEXT.__unwind_info: 0x249f0
-+  __TEXT.__eh_frame: 0x680c0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x298
--  __DATA_CONST.__objc_classlist: 0x870
-+  __DATA_CONST.__const: 0x2d8
-+  __DATA_CONST.__objc_classlist: 0x890
-   __DATA_CONST.__objc_protolist: 0x198
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1a78
-+  __DATA_CONST.__objc_selrefs: 0x1b48
-   __DATA_CONST.__objc_protorefs: 0xe8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x4c600
--  __AUTH_CONST.__objc_const: 0x112f0
--  __AUTH_CONST.__auth_got: 0xb528
--  __AUTH.__objc_data: 0xfe0
--  __AUTH.__data: 0x4c60
--  __DATA.__data: 0xa678
--  __DATA.__bss: 0x59e40
--  __DATA.__common: 0x2b8
-+  __AUTH_CONST.__const: 0x4fda0
-+  __AUTH_CONST.__objc_const: 0x11878
-+  __AUTH_CONST.__auth_got: 0xbae0
-+  __AUTH.__objc_data: 0x10d0
-+  __AUTH.__data: 0xa628
-+  __DATA.__data: 0xe860
-+  __DATA.__bss: 0x807d0
-+  __DATA.__common: 0x15d0
-   __DATA_DIRTY.__objc_data: 0x1e28
--  __DATA_DIRTY.__data: 0x18860
--  __DATA_DIRTY.__bss: 0x10600
--  __DATA_DIRTY.__common: 0x800
-+  __DATA_DIRTY.__data: 0x18728
-+  __DATA_DIRTY.__bss: 0x10000
-+  __DATA_DIRTY.__common: 0x7f0
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/CallKit.framework/CallKit
-   - /System/Library/Frameworks/Combine.framework/Combine
 
-   - /System/Library/Frameworks/_MediaIntents_AppIntents.framework/_MediaIntents_AppIntents
-   - /System/Library/PrivateFrameworks/AgentCanvasPersistence.framework/AgentCanvasPersistence
-   - /System/Library/PrivateFrameworks/AgentSessionKit.framework/AgentSessionKit
 +  - /System/Library/PrivateFrameworks/AlgorithmsInternal.framework/AlgorithmsInternal
-   - /System/Library/PrivateFrameworks/AppProtection.framework/AppProtection
-   - /System/Library/PrivateFrameworks/AppleIntelligenceReporting.framework/AppleIntelligenceReporting
-   - /System/Library/PrivateFrameworks/Archetype.framework/Archetype
 
-   - /System/Library/PrivateFrameworks/CampoServices.framework/CampoServices
-   - /System/Library/PrivateFrameworks/CarKit.framework/CarKit
-   - /System/Library/PrivateFrameworks/CollectionsInternal.framework/CollectionsInternal
 +  - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/CoreSpeechFoundation.framework/CoreSpeechFoundation
-   - /System/Library/PrivateFrameworks/DeviceExpertIntents.framework/DeviceExpertIntents
-   - /System/Library/PrivateFrameworks/DialogEngine.framework/DialogEngine
 
-   - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
-   - /System/Library/PrivateFrameworks/GenerativeModelsFoundation.framework/GenerativeModelsFoundation
-   - /System/Library/PrivateFrameworks/GenerativePartnerService.framework/GenerativePartnerService
 -  - /System/Library/PrivateFrameworks/GenerativeSearch.framework/GenerativeSearch
 -  - /System/Library/PrivateFrameworks/GenerativeSearchAdapter.framework/GenerativeSearchAdapter
-   - /System/Library/PrivateFrameworks/HybridSearch.framework/HybridSearch
+
 +  - /System/Library/PrivateFrameworks/HybridSearchAdapter.framework/HybridSearchAdapter
-   - /System/Library/PrivateFrameworks/IMCore.framework/IMCore
-   - /System/Library/PrivateFrameworks/IMDPersistence.framework/IMDPersistence
-   - /System/Library/PrivateFrameworks/IMFoundation.framework/IMFoundation
 
-   - /System/Library/PrivateFrameworks/TokenGenerationCore.framework/TokenGenerationCore
-   - /System/Library/PrivateFrameworks/ToolKit.framework/ToolKit
-   - /System/Library/PrivateFrameworks/VectorSearch.framework/VectorSearch
 +  - /System/Library/PrivateFrameworks/VoiceShortcutClient.framework/VoiceShortcutClient
-   - /System/Library/PrivateFrameworks/XPCDistributed.framework/XPCDistributed
-   - /System/Library/PrivateFrameworks/_DeviceExpertIntents_AppIntents.framework/_DeviceExpertIntents_AppIntents
-   - /System/Library/PrivateFrameworks/_FlowToolTypes_AppIntents.framework/_FlowToolTypes_AppIntents
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 55681
 -  Symbols:   723
 -  CStrings:  5916
 +  Functions: 63740
 +  Symbols:   741
 +  CStrings:  6151
- 
 Symbols:
 + _AnalyticsSendEvent
 + _CGImageSourceCopyPropertiesAtIndex

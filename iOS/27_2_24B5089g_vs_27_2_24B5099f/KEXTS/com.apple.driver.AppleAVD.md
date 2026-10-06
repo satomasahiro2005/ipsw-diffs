@@ -2,15 +2,20 @@
 
 > `com.apple.driver.AppleAVD`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x68a14` | `0x68a1c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -993.1.0.0.0
 +994.0.0.0.0
-   __TEXT.__os_log: 0x1d318
-   __TEXT.__cstring: 0x8588
-   __TEXT.__const: 0xf53cc
 Functions:
-~ __ZN18AppleAVDUserClient16processFrameDoneEjiijP16DecProfileParams : 1088 -> 1168
-~ sub_fffffe00087e4230 -> sub_fffffe00087bc050 : 132 -> 48
+~ __ZN18AppleAVDUserClient16processFrameDoneEjiijP16DecProfileParams : 1088 -> 1176
+~ sub_fffffff0086d1670 -> sub_fffffff0086d94c8 : 140 -> 56
 ~ __ZN22AppleAVDCommandPatcher19addFrameRefToMemoryEP22_userspaceMappedMemoryj : 320 -> 324
 ```

@@ -2,33 +2,24 @@
 
 > `/System/Library/PrivateFrameworks/BasebandTraceHelper.framework/BasebandTraceHelper`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5bb50` | `0x5b660` | **`-0x4f0`** |
+| `__TEXT.__gcc_except_tab` | `0x4ba0` | `0x488c` | **`-0x314`** |
+| `__TEXT.__unwind_info` | `0x1ac0` | `0x1a60` | **`-0x60`** |
+| `__TEXT.__cstring` | `0x13c3` | `0x13b0` | **`-0x13`** |
+| `__TEXT.__const` | `0x2e10` | `0x2e00` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
- 1585.0.0.0.0
--  __TEXT.__text: 0x5bb50
-+  __TEXT.__text: 0x5b660
-   __TEXT.__init_offsets: 0x38
--  __TEXT.__const: 0x2e10
--  __TEXT.__gcc_except_tab: 0x4ba0
-+  __TEXT.__const: 0x2e00
-+  __TEXT.__gcc_except_tab: 0x488c
-   __TEXT.__oslogstring: 0x36a1
--  __TEXT.__cstring: 0x13c3
--  __TEXT.__unwind_info: 0x1ac0
-+  __TEXT.__cstring: 0x13b0
-+  __TEXT.__unwind_info: 0x1a60
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 1217
--  Symbols:   2232
+-  Symbols:   2215
 -  CStrings:  617
-+  Symbols:   2230
++  Symbols:   2213
 +  CStrings:  616
- 
 Symbols:
 - _TelephonyBasebandWatchdogStartWithStackshot
 - _TelephonyBasebandWatchdogStop

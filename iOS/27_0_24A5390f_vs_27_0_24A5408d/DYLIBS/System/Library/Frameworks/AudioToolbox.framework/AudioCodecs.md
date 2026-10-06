@@ -2,52 +2,35 @@
 
 > `/System/Library/Frameworks/AudioToolbox.framework/AudioCodecs`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x68f0b8` | `0x696288` | **`+0x71d0`** |
+| `__TEXT.__const` | `0x33a34c` | `0x33e20c` | **`+0x3ec0`** |
+| `__AUTH_CONST.__const` | `0x100a8` | `0x10570` | **`+0x4c8`** |
+| `__TEXT.__oslogstring` | `0x1b80e` | `0x1bb02` | **`+0x2f4`** |
+| `__TEXT.__cstring` | `0xfca4` | `0xfe7c` | **`+0x1d8`** |
+| `__TEXT.__gcc_except_tab` | `0x11e88` | `0x11fcc` | **`+0x144`** |
+| `__TEXT.__unwind_info` | `0x9b90` | `0x9c68` | **`+0xd8`** |
+| `__AUTH_CONST.__cfstring` | `0x4580` | `0x45e0` | **`+0x60`** |
+| `__DATA_CONST.__const` | `0xd910` | `0xd930` | **`+0x20`** |
+
+### Other Changes
+
 ```diff
 
 -815.0.0.0.0
--  __TEXT.__text: 0x68f0b8
 +818.0.0.0.0
-+  __TEXT.__text: 0x696288
-   __TEXT.__realtime: 0x1254
--  __TEXT.__const: 0x33a34c
--  __TEXT.__cstring: 0xfca4
--  __TEXT.__gcc_except_tab: 0x11e88
--  __TEXT.__oslogstring: 0x1b80e
-+  __TEXT.__const: 0x33e20c
-+  __TEXT.__cstring: 0xfe7c
-+  __TEXT.__gcc_except_tab: 0x11fcc
-+  __TEXT.__oslogstring: 0x1bb02
-   __TEXT.__ustring: 0x20
--  __TEXT.__unwind_info: 0x9b90
-+  __TEXT.__unwind_info: 0x9c68
-   __TEXT.__eh_frame: 0x6a8
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0xd910
-+  __DATA_CONST.__const: 0xd930
-   __DATA_CONST.__got: 0x268
--  __AUTH_CONST.__const: 0x100a8
--  __AUTH_CONST.__cfstring: 0x4580
-+  __AUTH_CONST.__const: 0x10570
-+  __AUTH_CONST.__cfstring: 0x45e0
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__auth_got: 0xc50
-   __DATA.__data: 0x2dc
 
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-   - /System/Library/Frameworks/Security.framework/Security
-   - /System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore
 -  - /System/Library/PrivateFrameworks/Espresso.framework/Espresso
-   - /System/Library/PrivateFrameworks/caulk.framework/caulk
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
+
 -  Functions: 9743
 -  Symbols:   17064
--  CStrings:  3567
+-  CStrings:  3568
 +  Functions: 9829
 +  Symbols:   17174
-+  CStrings:  3594
- 
++  CStrings:  3595
 Symbols:
 + GCC_except_table100
 + GCC_except_table1000
@@ -2166,10 +2149,12 @@ CStrings:
 + "%25s:%-5d  Unexpected number of SFBs"
 + "%25s:%-5d WARNING: Error deserializing lossless extension."
 + "%25s:%-5d WARNING: Extension packet size mismatch."
++ "22:37:27"
 + "AACEnhancedLowDelaySBREncoder.h"
 + "ACLowDelayScalableLosslessDecoder"
 + "ACLowDelayScalableLosslessEncoder"
 + "Apple LLVM 21.0.0 (clang-2100.3.31.1) [+internal-os]"
++ "Aug  3 2026"
 + "CalculatePatch"
 + "Low Delay Scalable Lossless Decoder"
 + "Low Delay Scalable Lossless Encoder"
@@ -2181,6 +2166,8 @@ CStrings:
 + "res == 0"
 + "tBits == tBitsEst"
 + "writeLosslessExtension"
+- "01:11:16"
 - "Apple LLVM 21.0.0 (clang-2100.3.27.1) [+internal-os]"
+- "Jul 10 2026"
 - "bundle"
 ```

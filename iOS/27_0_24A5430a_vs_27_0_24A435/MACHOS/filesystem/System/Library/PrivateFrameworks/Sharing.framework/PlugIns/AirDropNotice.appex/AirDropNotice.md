@@ -2,19 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/Sharing.framework/PlugIns/AirDropNotice.appex/AirDropNotice`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x81ec` | `0x81f4` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 2131.10.1.2.11
--  __TEXT.__text: 0x81ec
-+  __TEXT.__text: 0x81f4
-   __TEXT.__auth_stubs: 0x810
-   __TEXT.__objc_stubs: 0x3c0
-   __TEXT.__objc_methlist: 0x258
+```text
 Functions:
 ~ sub_1000087fc : 680 -> 684
 ~ sub_1000090f8 -> sub_1000090fc : 356 -> 360

@@ -2,117 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/ConversationKit.framework/ConversationKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8e3540` | `0x8db950` | **`-0x7bf0`** |
+| `__DATA_DIRTY.__data` | `0x13c48` | `0x14d68` | **`+0x1120`** |
+| `__AUTH_CONST.__const` | `0x43128` | `0x42088` | **`-0x10a0`** |
+| `__DATA_DIRTY.__bss` | `0xbe50` | `0xcdd0` | **`+0xf80`** |
+| `__DATA.__bss` | `0x22b20` | `0x21d40` | **`-0xde0`** |
+| `__DATA_DIRTY.__objc_data` | `0xe8b8` | `0xf2a0` | **`+0x9e8`** |
+| `__DATA.__data` | `0xf750` | `0xee30` | **`-0x920`** |
+| `__AUTH.__objc_data` | `0x94d8` | `0x8c68` | **`-0x870`** |
+| `__TEXT.__swift5_capture` | `0x1218c` | `0x11a4c` | **`-0x740`** |
+| `__AUTH.__data` | `0x9708` | `0x90e8` | **`-0x620`** |
+| `__TEXT.__const` | `0x3e654` | `0x3ea84` | **`+0x430`** |
+| `__TEXT.__eh_frame` | `0x1b168` | `0x1ad9c` | **`-0x3cc`** |
+| `__AUTH_CONST.__objc_const` | `0x2b548` | `0x2b8f0` | **`+0x3a8`** |
+| `__TEXT.__swift5_typeref` | `0x31fa6` | `0x32322` | **`+0x37c`** |
+| `__TEXT.__swift5_reflstr` | `0x1f231` | `0x1f561` | **`+0x330`** |
+| `__TEXT.__oslogstring` | `0x223d1` | `0x22111` | **`-0x2c0`** |
+| `__TEXT.__constg_swiftt` | `0x1f51c` | `0x1f710` | **`+0x1f4`** |
+| `__TEXT.__swift5_fieldmd` | `0x17868` | `0x17a50` | **`+0x1e8`** |
+| `__DATA_DIRTY.__common` | `0x1088` | `0x1168` | **`+0xe0`** |
+| `__DATA.__common` | `0xd40` | `0xc68` | **`-0xd8`** |
+| `__TEXT.__cstring` | `0x1e460` | `0x1e500` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x5d70` | `0x5e08` | **`+0x98`** |
+| `__TEXT.__unwind_info` | `0x220b8` | `0x22148` | **`+0x90`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7280` | `0x72b0` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x5ef8` | `0x5f20` | **`+0x28`** |
+| `__TEXT.__objc_methlist` | `0xa638` | `0xa658` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x3668` | `0x3650` | **`-0x18`** |
+| `__TEXT.__swift5_assocty` | `0x2978` | `0x2990` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0x1c68` | `0x1c78` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x156c` | `0x1578` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0xe80` | `0xe88` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x3ac` | `0x3b4` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x8e3540
--  __TEXT.__objc_methlist: 0xa638
--  __TEXT.__const: 0x3e654
--  __TEXT.__cstring: 0x1e460
--  __TEXT.__oslogstring: 0x223d1
--  __TEXT.__swift5_typeref: 0x31fa6
--  __TEXT.__swift5_capture: 0x1218c
--  __TEXT.__constg_swiftt: 0x1f51c
--  __TEXT.__swift5_reflstr: 0x1f231
--  __TEXT.__swift5_fieldmd: 0x17868
-+  __TEXT.__text: 0x8db950
-+  __TEXT.__objc_methlist: 0xa658
-+  __TEXT.__const: 0x3ea84
-+  __TEXT.__cstring: 0x1e500
-+  __TEXT.__oslogstring: 0x22111
-+  __TEXT.__swift5_typeref: 0x32322
-+  __TEXT.__swift5_capture: 0x11a4c
-+  __TEXT.__constg_swiftt: 0x1f710
-+  __TEXT.__swift5_reflstr: 0x1f561
-+  __TEXT.__swift5_fieldmd: 0x17a50
-   __TEXT.__swift5_builtin: 0xaa0
--  __TEXT.__swift5_assocty: 0x2978
--  __TEXT.__swift5_proto: 0x1c68
--  __TEXT.__swift5_types: 0x156c
-+  __TEXT.__swift5_assocty: 0x2990
-+  __TEXT.__swift5_proto: 0x1c78
-+  __TEXT.__swift5_types: 0x1578
-   __TEXT.__swift_as_entry: 0x6d0
-   __TEXT.__swift_as_ret: 0x5bc
-   __TEXT.__swift_as_cont: 0xfc8
--  __TEXT.__swift5_protos: 0x3ac
-+  __TEXT.__swift5_protos: 0x3b4
-   __TEXT.__swift5_mpenum: 0x1d4
--  __TEXT.__unwind_info: 0x220b8
--  __TEXT.__eh_frame: 0x1b168
-+  __TEXT.__unwind_info: 0x22148
-+  __TEXT.__eh_frame: 0x1ad9c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x5d70
--  __DATA_CONST.__objc_classlist: 0xe80
-+  __DATA_CONST.__const: 0x5e08
-+  __DATA_CONST.__objc_classlist: 0xe88
-   __DATA_CONST.__objc_catlist: 0x70
-   __DATA_CONST.__objc_protolist: 0x758
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7280
-+  __DATA_CONST.__objc_selrefs: 0x72b0
-   __DATA_CONST.__objc_protorefs: 0x3c0
-   __DATA_CONST.__objc_superrefs: 0x10
--  __DATA_CONST.__got: 0x3668
--  __AUTH_CONST.__const: 0x43128
-+  __DATA_CONST.__got: 0x3650
-+  __AUTH_CONST.__const: 0x42088
-   __AUTH_CONST.__cfstring: 0x200
--  __AUTH_CONST.__objc_const: 0x2b548
--  __AUTH_CONST.__auth_got: 0x5ef8
--  __AUTH.__objc_data: 0x94d8
--  __AUTH.__data: 0x9708
-+  __AUTH_CONST.__objc_const: 0x2b8f0
-+  __AUTH_CONST.__auth_got: 0x5f20
-+  __AUTH.__objc_data: 0x8c68
-+  __AUTH.__data: 0x90e8
-   __DATA.__objc_ivar: 0x34
--  __DATA.__data: 0xf750
-+  __DATA.__data: 0xee30
-   __DATA.__objc_stublist: 0x10
--  __DATA.__bss: 0x22b20
--  __DATA.__common: 0xd40
--  __DATA_DIRTY.__objc_data: 0xe8b8
--  __DATA_DIRTY.__data: 0x13c48
--  __DATA_DIRTY.__bss: 0xbe50
--  __DATA_DIRTY.__common: 0x1088
-+  __DATA.__bss: 0x21d40
-+  __DATA.__common: 0xc68
-+  __DATA_DIRTY.__objc_data: 0xf2a0
-+  __DATA_DIRTY.__data: 0x14d68
-+  __DATA_DIRTY.__bss: 0xcdd0
-+  __DATA_DIRTY.__common: 0x1168
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
+-611.100.2.0.0
++613.100.1.0.0
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 67835
--  Symbols:   193858
--  CStrings:  4837
+-  Symbols:   109727
+-  CStrings:  4813
 +  Functions: 67792
-+  Symbols:   193805
-+  CStrings:  4836
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __DATA.__objc_ivar : content changed
-~ __DATA.__objc_stublist : content changed
++  Symbols:   109858
++  CStrings:  4812
 Symbols:
 + _$s10Foundation4DateVACSQAAWlTm
 + _$s10Foundation8CalendarV19_bridgeToObjectiveCSo10NSCalendarCyF
@@ -670,11 +609,6 @@ Symbols:
 + _associated conformance 15ConversationKit22ClarityUILegacyMailboxVs12IdentifiableAA2IDsADP_SH
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyAA4ViewPAAE7popover11isPresented16attachmentAnchor9arrowEdge7contentQrAA7BindingVySbG_AA017PopoverAttachmentJ0OAA0L0OSgqd__yctAaDRd__lFQOyACyAeAE23matchedTransitionSource2id2inQrqd___AA9NamespaceV2IDVtSHRd__lFQOyACy014CommunicationsB010IconButtonVyytGAA14_PaddingLayoutVG_SSQo_A3_G_AeAE010navigationR0yQrqd__AA010NavigationR0Rd__lFQOyACyAeAE29presentationCompactAdaptationyQrAA22PresentationAdaptationVFQOyAeAE8staticIf_4then4elseQrqd___qd_0_xXEqd_1_xXEtAA0E14InputPredicateRd__AaDRd_0_AaDRd_1_r1_lFQOyAZ06FTMenuE0V_AA8SolariumVAeAE22presentationBackgroundyQrqd__AA10ShapeStyleRd__lFQOyA17__AA5ColorVQo_A24_Qo__Qo_AA26_PreferenceWritingModifierVyAA23PreferredColorSchemeKeyVGG_AA014ZoomNavigationR0VQo_SgQo_AA32_EnvironmentKeyTransformModifierVySbGGAA14_OpacityEffectVGAaDHPA41_AaDHPqd0__AaDHD3_A37_HO_A40_AA0E8ModifierHPyHCHC_A43_AAA45_HPyHCHC
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBP014CommunicationsB0E15navigationTitleyQrAD019ClarityUINavigationF0VFQOyAA4ListVys5NeverOAA12TupleContentVyAA7ForEachVySay15ConversationKit0G15UILegacyMailboxVG10Foundation4UUIDVAcAE5badgeyQrSiFQOyAA08ModifiedL0VyAcAE11buttonStyleyQrqd__AA015PrimitiveButtonX0Rd__lFQOyAA0Z0VyAA5LabelVyAA4TextVAA5ImageVGG_AA017BorderedProminentzX0VQo_AA30_EnvironmentKeyWritingModifierVyAA5ColorVSgGG_Qo_G_AOySayAP0G11UIVoicemailVGSSAcAEAWyQrSiFQOyAA14NavigationLinkVyA3_yA5_AP0G15UIContactAvatarVGAKG_Qo_GQPGG_Qo_HO
-+ _objc_msgSend$setCalendar:
-+ _objc_msgSend$setDisplayedPropertyKeys:
-+ _objc_msgSend$setPredicateForSelectionOfContact:
-+ _objc_msgSend$setPredicateForSelectionOfProperty:
-+ _objc_msgSend$voicemailEnabled
 + _symbolic $s15ConversationKit31ClarityUILegacyMailboxProvidingP
 + _symbolic $s15ConversationKit38ClarityUILegacyMailboxProviderDelegateP
 + _symbolic SaySdG
@@ -1178,5 +1112,4 @@ CStrings:
 - "localParticipantCornerSize: localParticipant is not active with video, using .regular(corner: %s"
 - "localParticipantCornerSize: using .info(corner: %s) since isShowingControls=%{bool}d and isPreviewingLocalReaction=%{bool}d"
 - "localParticipantCornerSize: using .regular(corner: %s) since isShowingControls=false and isPreviewingLocalReaction=false"
-
 ```

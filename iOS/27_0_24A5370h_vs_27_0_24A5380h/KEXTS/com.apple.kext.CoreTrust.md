@@ -2,32 +2,30 @@
 
 > `com.apple.kext.CoreTrust`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0xad00` | `0xacd8` | **`-0x28`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__const: 0x6b78
--  __TEXT_EXEC.__text: 0xad00
-+  __TEXT_EXEC.__text: 0xacd8
-   __TEXT_EXEC.__auth_stubs: 0x220
-   __DATA.__data: 0xd8
-   __DATA.__common: 0x10
-Sections:
-~ __DATA.__data : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__auth_got : content changed
-~ __DATA_CONST.__auth_ptr : content changed
+-207.0.2.0.0
++207.0.4.0.0
 Functions:
-~ sub_fffffe0009b73370 -> sub_fffffe0009b73b30 : 292 -> 332
-~ sub_fffffe0009b73494 -> sub_fffffe0009b73c7c : 252 -> 292
-~ sub_fffffe0009b73590 -> sub_fffffe0009b73da0 : 72 -> 252
-~ sub_fffffe0009b735d8 -> sub_fffffe0009b73e9c : 164 -> 72
-~ sub_fffffe0009b73720 -> sub_fffffe0009b73f88 : 156 -> 164
-~ sub_fffffe0009b737bc -> sub_fffffe0009b7402c : 164 -> 156
-~ sub_fffffe0009b73860 -> sub_fffffe0009b740c8 : 156 -> 164
-~ sub_fffffe0009b73a34 -> sub_fffffe0009b742a4 : 196 -> 156
-~ sub_fffffe0009b73af8 -> sub_fffffe0009b74340 : 296 -> 196
-~ sub_fffffe0009b73d48 -> sub_fffffe0009b7452c : 340 -> 296
-~ sub_fffffe0009b74f10 -> sub_fffffe0009b756c8 : 2160 -> 2152
-~ sub_fffffe0009b77488 -> sub_fffffe0009b77c38 : 316 -> 288
-~ sub_fffffe0009b7cd10 -> sub_fffffe0009b7d4a4 : 1464 -> 1468
-
+~ sub_fffffff009b711f0 -> sub_fffffff009b719b0 : 292 -> 332
+~ sub_fffffff009b71314 -> sub_fffffff009b71afc : 252 -> 292
+~ sub_fffffff009b71410 -> sub_fffffff009b71c20 : 72 -> 252
+~ sub_fffffff009b71458 -> sub_fffffff009b71d1c : 164 -> 72
+~ sub_fffffff009b715a0 -> sub_fffffff009b71e08 : 156 -> 164
+~ sub_fffffff009b7163c -> sub_fffffff009b71eac : 164 -> 156
+~ sub_fffffff009b716e0 -> sub_fffffff009b71f48 : 156 -> 164
+~ sub_fffffff009b718b4 -> sub_fffffff009b72124 : 196 -> 156
+~ sub_fffffff009b71978 -> sub_fffffff009b721c0 : 296 -> 196
+~ sub_fffffff009b71bc8 -> sub_fffffff009b723ac : 340 -> 296
+~ sub_fffffff009b72d90 -> sub_fffffff009b73548 : 2160 -> 2152
+~ sub_fffffff009b75308 -> sub_fffffff009b75ab8 : 316 -> 288
+~ sub_fffffff009b7ab90 -> sub_fffffff009b7b324 : 1464 -> 1468
 ```

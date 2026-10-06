@@ -2,37 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/32023/Libraries/libLLVM.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x202f08c` | `0x2032c90` | **`+0x3c04`** |
+| `__DATA_CONST.__const` | `0x273420` | `0x276dc8` | **`+0x39a8`** |
+| `__TEXT.__cstring` | `0x11942b` | `0x1195d5` | **`+0x1aa`** |
+| `__TEXT.__const` | `0x4191230` | `0x41912a0` | **`+0x70`** |
+| `__TEXT.__unwind_info` | `0x2d468` | `0x2d448` | **`-0x20`** |
+| `__TEXT.__eh_frame` | `0x3800` | `0x3808` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 32023.921.6.0.0
--  __TEXT.__text: 0x202f08c
-+  __TEXT.__text: 0x2032c90
-   __TEXT.__init_offsets: 0x68c
--  __TEXT.__const: 0x4191230
--  __TEXT.__cstring: 0x11942b
-+  __TEXT.__const: 0x41912a0
-+  __TEXT.__cstring: 0x1195d5
-   __TEXT.__oslogstring: 0x181
--  __TEXT.__unwind_info: 0x2d468
--  __TEXT.__eh_frame: 0x3800
-+  __TEXT.__unwind_info: 0x2d448
-+  __TEXT.__eh_frame: 0x3808
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x273420
-+  __DATA_CONST.__const: 0x276dc8
-   __DATA_CONST.__weak_got: 0x598
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x66750
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libbz2.1.0.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 72829
 +  Functions: 72830
-   Symbols:   21900
+
 -  CStrings:  43512
 +  CStrings:  43543
- 
 CStrings:
 + "G18UnitAGEN"
 + "G18UnitCFU"

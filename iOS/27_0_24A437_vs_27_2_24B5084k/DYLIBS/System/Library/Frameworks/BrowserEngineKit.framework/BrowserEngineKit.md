@@ -2,15 +2,18 @@
 
 > `/System/Library/Frameworks/BrowserEngineKit.framework/BrowserEngineKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21554` | `0x2155c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -7625.1.29.10.1
--  __TEXT.__text: 0x1ff08
 +7625.2.1.1.0
-+  __TEXT.__text: 0x1ff10
-   __TEXT.__objc_methlist: 0x1a08
-   __TEXT.__const: 0x1166
-   __TEXT.__cstring: 0xc1c
 Functions:
-~ sub_1ae1a4c80 -> sub_1aee19c80 : 480 -> 488
+~ sub_1aeb4ec4c -> sub_1af7edc4c : 500 -> 508
 ```

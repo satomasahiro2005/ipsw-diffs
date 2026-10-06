@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MapsBlastDoorSupport.framework/MapsBlastDoorSupport`
 
-```diff
+### Section Size Changes
 
- 331.100.1.0.0
--  __TEXT.__text: 0x88b4
-+  __TEXT.__text: 0x88c4
-   __TEXT.__objc_methlist: 0x14
-   __TEXT.__const: 0x6f2
-   __TEXT.__swift5_typeref: 0x1bf
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x88b4` | `0x88c4` | **`+0x10`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_28e05f760 -> sub_28edad760 : 5032 -> 5048
+~ sub_28df33760 -> sub_28ec7a760 : 5032 -> 5048
 ```

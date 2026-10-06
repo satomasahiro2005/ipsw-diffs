@@ -2,60 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/WebPrivacy.framework/webprivacyd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x12cec` | `0x1600c` | **`+0x3320`** |
+| `__TEXT.__oslogstring` | `0xc60` | `0x127a` | **`+0x61a`** |
+| `__TEXT.__gcc_except_tab` | `0x1580` | `0x1a58` | **`+0x4d8`** |
+| `__TEXT.__objc_stubs` | `0x740` | `0xa20` | **`+0x2e0`** |
+| `__TEXT.__objc_methname` | `0x497` | `0x684` | **`+0x1ed`** |
+| `__TEXT.__unwind_info` | `0x980` | `0xb68` | **`+0x1e8`** |
+| `__TEXT.__cstring` | `0x4dc` | `0x6c1` | **`+0x1e5`** |
+| `__DATA_CONST.__const` | `0x920` | `0xae8` | **`+0x1c8`** |
+| `__TEXT.__auth_stubs` | `0x970` | `0xa80` | **`+0x110`** |
+| `__DATA_CONST.__cfstring` | `0x600` | `0x700` | **`+0x100`** |
+| `__TEXT.__dlopen_cstrs` | `—` | `0xc0` | **`+0xc0`** |
+| `__DATA.__objc_selrefs` | `0x1d0` | `0x288` | **`+0xb8`** |
+| `__DATA.__bss` | `0x48` | `0xd8` | **`+0x90`** |
+| `__DATA_CONST.__auth_got` | `0x4c8` | `0x550` | **`+0x88`** |
+| `__TEXT.__const` | `0x195` | `0x1ad` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x108` | `0x118` | **`+0x10`** |
+
+### Same-size Content Changes
 
 - `__DATA_CONST.__objc_intobj`
+
+### Other Changes
 
 ```diff
 
 -58.0.0.0.0
--  __TEXT.__text: 0x128a8
--  __TEXT.__auth_stubs: 0x970
--  __TEXT.__objc_stubs: 0x740
--  __TEXT.__const: 0x195
--  __TEXT.__gcc_except_tab: 0x1580
--  __TEXT.__cstring: 0x4dc
--  __TEXT.__oslogstring: 0xc60
--  __TEXT.__objc_methname: 0x497
--  __TEXT.__unwind_info: 0xaf0
--  __DATA_CONST.__const: 0x920
--  __DATA_CONST.__cfstring: 0x600
 +59.0.0.0.0
-+  __TEXT.__text: 0x15b04
-+  __TEXT.__auth_stubs: 0xa80
-+  __TEXT.__objc_stubs: 0xa20
-+  __TEXT.__const: 0x1ad
-+  __TEXT.__gcc_except_tab: 0x1a58
-+  __TEXT.__cstring: 0x6c1
-+  __TEXT.__oslogstring: 0x127a
-+  __TEXT.__dlopen_cstrs: 0xc0
-+  __TEXT.__objc_methname: 0x684
-+  __TEXT.__unwind_info: 0xd10
-+  __DATA_CONST.__const: 0xae8
-+  __DATA_CONST.__cfstring: 0x700
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_intobj: 0x18
--  __DATA_CONST.__auth_got: 0x4c8
--  __DATA_CONST.__got: 0x108
--  __DATA.__objc_selrefs: 0x1d0
-+  __DATA_CONST.__auth_got: 0x550
-+  __DATA_CONST.__got: 0x118
-+  __DATA.__objc_selrefs: 0x288
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+
 +  - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /System/Library/PrivateFrameworks/WebPrivacy.framework/WebPrivacy
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
+
 -  Functions: 462
 -  Symbols:   903
 -  CStrings:  205
 +  Functions: 538
 +  Symbols:   1054
 +  CStrings:  270
- 
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/SecurityFlagsBag.o
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/WebPrivacy/install/TempContent/Objects/WebPrivacy.build/Daemon.build/Objects-normal/arm64e/SecurityFlagsMonitor.o

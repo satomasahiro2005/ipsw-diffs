@@ -2,89 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/PhotosSwiftUICore.framework/PhotosSwiftUICore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x285f8c` | `0x288b78` | **`+0x2bec`** |
+| `__TEXT.__swift5_typeref` | `0x2ce54` | `0x2d6a4` | **`+0x850`** |
+| `__AUTH_CONST.__const` | `0x15ac0` | `0x15e98` | **`+0x3d8`** |
+| `__TEXT.__const` | `0x2a324` | `0x2a584` | **`+0x260`** |
+| `__DATA.__data` | `0x7408` | `0x7658` | **`+0x250`** |
+| `__AUTH.__data` | `0x1d00` | `0x1ab8` | **`-0x248`** |
+| `__TEXT.__swift5_reflstr` | `0xa99e` | `0xaabe` | **`+0x120`** |
+| `__TEXT.__swift5_fieldmd` | `0xab1c` | `0xac00` | **`+0xe4`** |
+| `__AUTH_CONST.__objc_const` | `0x9bb8` | `0x9c30` | **`+0x78`** |
+| `__TEXT.__eh_frame` | `0x52e0` | `0x5268` | **`-0x78`** |
+| `__TEXT.__swift5_capture` | `0x2c50` | `0x2cc4` | **`+0x74`** |
+| `__AUTH_CONST.__auth_got` | `0x36f0` | `0x3750` | **`+0x60`** |
+| `__TEXT.__constg_swiftt` | `0x154f4` | `0x15554` | **`+0x60`** |
+| `__TEXT.__oslogstring` | `0x14bf` | `0x151f` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0xbc28` | `0xbc88` | **`+0x60`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1f00` | `0x1f28` | **`+0x28`** |
+| `__DATA.__bss` | `0x9cb8` | `0x9cd8` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x1bd8` | `0x1bf8` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x1ae0` | `0x1af8` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x2434` | `0x2444` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0x117a0` | `0x117a8` | **`+0x8`** |
+| `__DATA_DIRTY.__objc_data` | `0x38f8` | `0x3900` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.235.0.0
--  __TEXT.__text: 0x26f974
--  __TEXT.__objc_methlist: 0x2434
--  __TEXT.__swift5_typeref: 0x2ce54
--  __TEXT.__const: 0x2a324
--  __TEXT.__constg_swiftt: 0x154f4
--  __TEXT.__swift5_reflstr: 0xa99e
 +916.40.110.0.0
-+  __TEXT.__text: 0x2724e0
-+  __TEXT.__objc_methlist: 0x2444
-+  __TEXT.__swift5_typeref: 0x2d6a4
-+  __TEXT.__const: 0x2a584
-+  __TEXT.__constg_swiftt: 0x15554
-+  __TEXT.__swift5_reflstr: 0xaabe
-   __TEXT.__swift5_assocty: 0x30c8
--  __TEXT.__swift5_fieldmd: 0xab1c
-+  __TEXT.__swift5_fieldmd: 0xac00
-   __TEXT.__swift5_builtin: 0x3ac
-   __TEXT.__cstring: 0x2a21
-   __TEXT.__swift5_proto: 0x1100
-   __TEXT.__swift5_types: 0xbe4
--  __TEXT.__oslogstring: 0x14bf
-+  __TEXT.__oslogstring: 0x151f
-   __TEXT.__swift5_protos: 0x100
-   __TEXT.__swift_as_entry: 0x54
--  __TEXT.__swift5_capture: 0x2c50
-+  __TEXT.__swift5_capture: 0x2cc4
-   __TEXT.__swift5_mpenum: 0x120
-   __TEXT.__swift_as_ret: 0x48
-   __TEXT.__swift_as_cont: 0x98
--  __TEXT.__unwind_info: 0xedf8
--  __TEXT.__eh_frame: 0x5328
-+  __TEXT.__unwind_info: 0xee68
-+  __TEXT.__eh_frame: 0x52b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1bd8
-+  __DATA_CONST.__const: 0x1bf8
-   __DATA_CONST.__objc_classlist: 0x328
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x1b0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1f00
-+  __DATA_CONST.__objc_selrefs: 0x1f28
-   __DATA_CONST.__objc_protorefs: 0xd8
--  __DATA_CONST.__got: 0x1ae0
--  __AUTH_CONST.__const: 0x15ac0
-+  __DATA_CONST.__got: 0x1af8
-+  __AUTH_CONST.__const: 0x15e98
-   __AUTH_CONST.__cfstring: 0x20
--  __AUTH_CONST.__objc_const: 0x9bb8
--  __AUTH_CONST.__auth_got: 0x36f0
-+  __AUTH_CONST.__objc_const: 0x9c30
-+  __AUTH_CONST.__auth_got: 0x3750
-   __AUTH.__objc_data: 0x7e8
--  __AUTH.__data: 0x1d00
--  __DATA.__data: 0x7408
-+  __AUTH.__data: 0x1ab8
-+  __DATA.__data: 0x7658
-   __DATA.__common: 0x20
--  __DATA_DIRTY.__objc_data: 0x38f8
--  __DATA_DIRTY.__data: 0x117a0
-+  __DATA_DIRTY.__objc_data: 0x3900
-+  __DATA_DIRTY.__data: 0x117a8
-   __DATA_DIRTY.__bss: 0x18cb0
-   __DATA_DIRTY.__common: 0x178
-   - /System/Library/Frameworks/AVKit.framework/AVKit
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 21917
--  Symbols:   6800
+-  Symbols:   6299
 -  CStrings:  382
 +  Functions: 22000
-+  Symbols:   6829
++  Symbols:   6324
 +  CStrings:  383
- 
 Symbols:
 + ___swift_memcpy168_8
 + ___swift_memcpy192_8
@@ -98,10 +55,6 @@ Symbols:
 + _get_witness_table 7SwiftUI4ViewRzlAA15ModifiedContentVyADy06PhotosA6UICore018OneUpChromeBarlessC0V0J4Body33_E565330C7B3A8F6C399A343A3010D7D2LLVyx_GAA30_EnvironmentKeyWritingModifierVyAA11ColorSchemeOGGAMyAE0hijC5ModelCSgGGAaBHPAqaBHPAkaBHPyHC_ApA0cZ0HPyHCHC_AuaWHPyHCHC
 + _get_witness_table 7SwiftUI4ViewRzlAA15ModifiedContentVyADyAA6VStackVyAA05TupleE0Vy06PhotosA6UICore018OneUpChromeBarlessC0V0L4Body33_E565330C7B3A8F6C399A343A3010D7D2LLV14SafeAreaSpacerVyx__G_AFyAHyAA6HStackVyAHyAQ_AFyADyADyADyADyAaBPAAE11environmentyQrqd__SgRld__C11Observation10ObservableRd__lFQOyADyAI0jklC8BadgeBarVAI25ElementVisibilityModifier014_AE1724C9C1694Q17C6022D128C3BA7D1ALLVG_AI0jK27SpatialPhotoBadgeStateModelCQo_AA14_PaddingLayoutVGA7_GA7_GA7_GGAQQPGG_ASyAHyAQ_AFyAHyAFyAHyAA6SpacerV_AtAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAtAEA17_A18_A19__Qrqd___Sbyqd___qd__tctSQRd__lFQOyADyADyADyADyADyADyADyAI0jkL13VideoControlsVA7_GA7_GAA13_OffsetEffectVGAA18_AnimationModifierVy12CoreGraphics7CGFloatVGGA32_GAA25_AppearanceActionModifierVGA36_G_SbQo__A31_Qo_QPGG_AFyAHyADyADyADyADyADyAI0jkL21MaskedLibraryScrubberVyxGA7_GA7_GA7_GA7_GA7_G_AI0jkL8DebugBarVQPGGQPGGAQQPGGQPGGAQQPGGAA01_yZ21RegionsIgnoringLayoutVGAA30_EnvironmentKeyWritingModifierVyAI0jklC5ModelCSgGGAaBHPA65_AaBHPA62_AaBHPyHC_A64_AA0C8ModifierHPyHCHC_A71_AAA73_HPyHCHC
 + _get_witness_table SkRz7ElementQzRs_SHR0_7SwiftUI4ViewR1_Si5IndexRtzr2_lAC19_ConditionalContentVyAHyq1_AC6VStackVyAC05TupleG0Vy06PhotosB6UICore0J17FeedItemSeparator33_098EF2F767BCB1F05A05F5A4AF0FFADELLV_q1_QPGGGAC08ModifiedG0Vyq1_AC16_OverlayModifierVyAUyAC7DividerVAC13_OffsetEffectVGGGGAcDHPAscDHPq1_AcDHD3__ArcDHPyHCHC_A2_AcDHPq1_AcDHD3__A1_AC0dZ0HPyHCHCHC
-+ _objc_msgSend$largeTitleDisplayMode
-+ _objc_msgSend$removeGestureRecognizer:
-+ _objc_msgSend$style
-+ _objc_msgSend$titleView
 + _symbolic Ig_
 + _symbolic So22UITapGestureRecognizerCSg
 + _symbolic _____7leading_AA8trailingt 12CoreGraphics7CGFloatV

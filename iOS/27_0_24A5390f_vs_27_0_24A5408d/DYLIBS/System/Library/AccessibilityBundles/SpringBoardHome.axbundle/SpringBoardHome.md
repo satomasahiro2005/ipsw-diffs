@@ -2,60 +2,32 @@
 
 > `/System/Library/AccessibilityBundles/SpringBoardHome.axbundle/SpringBoardHome`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x217b4` | `0x21bbc` | **`+0x408`** |
+| `__TEXT.__cstring` | `0x4fc8` | `0x514e` | **`+0x186`** |
+| `__AUTH_CONST.__cfstring` | `0x5e20` | `0x5e80` | **`+0x60`** |
+| `__DATA.__bss` | `0x140` | `0x158` | **`+0x18`** |
+| `__TEXT.__gcc_except_tab` | `0xb54` | `0xb6c` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x21d4` | `0x21e4` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0xff8` | `0x1000` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0xb50` | `0xb58` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3045.0.0.0.0
--  __TEXT.__text: 0x217b4
--  __TEXT.__objc_methlist: 0x21d4
 +3048.0.0.0.0
-+  __TEXT.__text: 0x21bbc
-+  __TEXT.__objc_methlist: 0x21e4
-   __TEXT.__dlopen_cstrs: 0x228
-   __TEXT.__const: 0x58
--  __TEXT.__gcc_except_tab: 0xb54
--  __TEXT.__cstring: 0x4fc8
-+  __TEXT.__gcc_except_tab: 0xb6c
-+  __TEXT.__cstring: 0x514e
-   __TEXT.__oslogstring: 0x1f0
--  __TEXT.__unwind_info: 0xb50
-+  __TEXT.__unwind_info: 0xb58
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__const: 0x7e0
-   __DATA_CONST.__objc_classlist: 0x430
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xff8
-+  __DATA_CONST.__objc_selrefs: 0x1000
-   __DATA_CONST.__objc_superrefs: 0x160
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x220
--  __AUTH_CONST.__cfstring: 0x5e20
-+  __AUTH_CONST.__cfstring: 0x5e80
-   __AUTH_CONST.__objc_const: 0x4b60
-   __AUTH_CONST.__objc_intobj: 0x90
-   __AUTH_CONST.__auth_got: 0x0
-
-   __AUTH.__data: 0x8
-   __DATA.__data: 0x28
-   __DATA.__common: 0x60
--  __DATA.__bss: 0x140
-+  __DATA.__bss: 0x158
-   __DATA_DIRTY.__objc_data: 0x2990
-   __DATA_DIRTY.__bss: 0x38
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 839
--  Symbols:   2254
+-  Symbols:   1861
 -  CStrings:  840
 +  Functions: 843
-+  Symbols:   2261
++  Symbols:   1867
 +  CStrings:  847
- 
 Symbols:
 + -[SBIconDragManagerAccessibility createNewFolderFromRecipientIcon:additionalIcons:inListModel:]
 + -[SBIconViewAccessibility _accessibilityVisibleIconListViews:]
@@ -116,7 +88,6 @@ Symbols:
 + _dropIndiciesIconIdentifier
 + _getkSBHIconChangeWidgetSizeToExtraLargeApplicationShortcutItemTypeSymbolLoc.ptr
 + _getkSBHIconChangeWidgetSizeToExtraLargePortraitApplicationShortcutItemTypeSymbolLoc.ptr
-+ _objc_msgSend$_accessibilityVisibleIconListViews:
 - -[SBIconDragManagerAccessibility createNewFolderFromRecipientIcon:grabbedIcon:inListModel:]
 - GCC_except_table108
 - GCC_except_table135

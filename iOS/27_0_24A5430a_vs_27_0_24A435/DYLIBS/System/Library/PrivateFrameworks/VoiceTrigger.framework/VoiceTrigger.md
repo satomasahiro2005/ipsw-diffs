@@ -2,18 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/VoiceTrigger.framework/VoiceTrigger`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd74a0` | `0xd74f8` | **`+0x58`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
 
-```diff
+### Other Changes
 
- 3600.26.1.0.0
--  __TEXT.__text: 0xd74a0
-+  __TEXT.__text: 0xd74f8
-   __TEXT.__objc_methlist: 0x3b54
-   __TEXT.__const: 0x1518
-   __TEXT.__dlopen_cstrs: 0x1cc
+```diff
 Functions:
 ~ __ZN11TSSATScorer5scoreEPKfj : 1048 -> 1060
 ~ __ZNK13TSHMMDetector27lengthNormalizedScorePhraseERKj : 472 -> 476
@@ -30,5 +31,9 @@ Functions:
 ~ __ZN8AccelFFT11zeroPadDataERK6NArrayIfE : 88 -> 92
 CStrings:
 + "Novalib gitrelno_unavailable Release Sat Aug  8 16:36:43 2026"
++ "Sat Aug  8 16:36:42 PDT 2026"
++ "Sat Aug  8 16:36:43 2026"
 - "Novalib gitrelno_unavailable Release Sat Aug  8 20:00:43 2026"
+- "Sat Aug  8 20:00:43 2026"
+- "Sat Aug  8 20:00:43 PDT 2026"
 ```

@@ -2,137 +2,65 @@
 
 > `/System/Library/PrivateFrameworks/SafariShared.framework/SafariShared`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x297bf8` | `0x29fe8c` | **`+0x8294`** |
+| `__TEXT.__cstring` | `0x22e87` | `0x233b7` | **`+0x530`** |
+| `__DATA.__bss` | `0x7220` | `0x7740` | **`+0x520`** |
+| `__TEXT.__const` | `0x97dd8` | `0x981f4` | **`+0x41c`** |
+| `__TEXT.__eh_frame` | `0x4e28` | `0x5218` | **`+0x3f0`** |
+| `__DATA.__data` | `0x52d8` | `0x5598` | **`+0x2c0`** |
+| `__AUTH_CONST.__objc_const` | `0x281d0` | `0x28470` | **`+0x2a0`** |
+| `__AUTH_CONST.__cfstring` | `0x1adc0` | `0x1afe0` | **`+0x220`** |
+| `__TEXT.__unwind_info` | `0xebc8` | `0xed50` | **`+0x188`** |
+| `__AUTH_CONST.__const` | `0xa4d8` | `0xa640` | **`+0x168`** |
+| `__TEXT.__objc_methlist` | `0x15dcc` | `0x15f34` | **`+0x168`** |
+| `__TEXT.__swift5_typeref` | `0x33f4` | `0x3524` | **`+0x130`** |
+| `__TEXT.__constg_swiftt` | `0x1f38` | `0x2050` | **`+0x118`** |
+| `__AUTH_CONST.__auth_got` | `0x2a38` | `0x2b38` | **`+0x100`** |
+| `__DATA_CONST.__objc_selrefs` | `0xbf68` | `0xc038` | **`+0xd0`** |
+| `__TEXT.__oslogstring` | `0x153f2` | `0x154b2` | **`+0xc0`** |
+| `__TEXT.__swift5_fieldmd` | `0x15c8` | `0x164c` | **`+0x84`** |
+| `__AUTH.__data` | `0x1750` | `0x17c0` | **`+0x70`** |
+| `__AUTH.__objc_data` | `0x7c18` | `0x7c88` | **`+0x70`** |
+| `__DATA_CONST.__const` | `0x164c8` | `0x16530` | **`+0x68`** |
+| `__DATA_CONST.__got` | `0x1f50` | `0x1fa8` | **`+0x58`** |
+| `__TEXT.__gcc_except_tab` | `0x1ea80` | `0x1ead0` | **`+0x50`** |
+| `__TEXT.__swift5_reflstr` | `0x1428` | `0x1458` | **`+0x30`** |
+| `__TEXT.__swift5_proto` | `0x3c0` | `0x3e8` | **`+0x28`** |
+| `__DATA.__objc_ivar` | `0x18fc` | `0x191c` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x2cc` | `0x2e8` | **`+0x1c`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x378` | `0x360` | **`-0x18`** |
+| `__DATA_CONST.__objc_arraydata` | `0xb18` | `0xb00` | **`-0x18`** |
+| `__TEXT.__swift5_assocty` | `0x438` | `0x450` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x118` | `0x12c` | **`+0x14`** |
+| `__TEXT.__swift5_types` | `0x17c` | `0x18c` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x170` | `0x17c` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0xcb0` | `0xcb8` | **`+0x8`** |
+| `__TEXT.__swift5_capture` | `0xc00` | `0xbfc` | **`-0x4`** |
+| `__TEXT.__swift_as_ret` | `0x160` | `0x164` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x297bf8
--  __TEXT.__objc_methlist: 0x15dcc
--  __TEXT.__const: 0x97dd8
--  __TEXT.__gcc_except_tab: 0x1ea80
--  __TEXT.__cstring: 0x22e87
-+  __TEXT.__text: 0x29fe8c
-+  __TEXT.__objc_methlist: 0x15f34
-+  __TEXT.__const: 0x981f4
-+  __TEXT.__gcc_except_tab: 0x1ead0
-+  __TEXT.__cstring: 0x233b7
-   __TEXT.__ustring: 0xcec0
--  __TEXT.__oslogstring: 0x153f2
-+  __TEXT.__oslogstring: 0x154b2
-   __TEXT.__dlopen_cstrs: 0x2b7
--  __TEXT.__swift5_typeref: 0x33f4
--  __TEXT.__swift5_fieldmd: 0x15c8
--  __TEXT.__constg_swiftt: 0x1f38
--  __TEXT.__swift5_builtin: 0x118
--  __TEXT.__swift5_reflstr: 0x1428
--  __TEXT.__swift5_assocty: 0x438
-+  __TEXT.__swift5_typeref: 0x3524
-+  __TEXT.__swift5_fieldmd: 0x164c
-+  __TEXT.__constg_swiftt: 0x2050
-+  __TEXT.__swift5_builtin: 0x12c
-+  __TEXT.__swift5_reflstr: 0x1458
-+  __TEXT.__swift5_assocty: 0x450
-   __TEXT.__swift5_protos: 0x38
--  __TEXT.__swift5_proto: 0x3c0
--  __TEXT.__swift5_types: 0x17c
--  __TEXT.__swift5_capture: 0xc00
--  __TEXT.__swift_as_entry: 0x170
--  __TEXT.__swift_as_ret: 0x160
--  __TEXT.__swift_as_cont: 0x2cc
-+  __TEXT.__swift5_proto: 0x3e8
-+  __TEXT.__swift5_types: 0x18c
-+  __TEXT.__swift5_capture: 0xbfc
-+  __TEXT.__swift_as_entry: 0x17c
-+  __TEXT.__swift_as_ret: 0x164
-+  __TEXT.__swift_as_cont: 0x2e8
-   __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__unwind_info: 0xebc8
--  __TEXT.__eh_frame: 0x4e28
-+  __TEXT.__unwind_info: 0xed50
-+  __TEXT.__eh_frame: 0x5218
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x164c8
--  __DATA_CONST.__objc_classlist: 0xcb0
-+  __DATA_CONST.__const: 0x16530
-+  __DATA_CONST.__objc_classlist: 0xcb8
-   __DATA_CONST.__objc_catlist: 0x90
-   __DATA_CONST.__objc_protolist: 0x2c8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0xbf68
-+  __DATA_CONST.__objc_selrefs: 0xc038
-   __DATA_CONST.__objc_protorefs: 0xc0
-   __DATA_CONST.__objc_superrefs: 0x958
--  __DATA_CONST.__objc_arraydata: 0xb18
--  __DATA_CONST.__got: 0x1f50
--  __AUTH_CONST.__const: 0xa4d8
--  __AUTH_CONST.__cfstring: 0x1adc0
--  __AUTH_CONST.__objc_const: 0x281d0
-+  __DATA_CONST.__objc_arraydata: 0xb00
-+  __DATA_CONST.__got: 0x1fa8
-+  __AUTH_CONST.__const: 0xa640
-+  __AUTH_CONST.__cfstring: 0x1afe0
-+  __AUTH_CONST.__objc_const: 0x28470
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x750
--  __AUTH_CONST.__objc_arrayobj: 0x378
-+  __AUTH_CONST.__objc_arrayobj: 0x360
-   __AUTH_CONST.__objc_dictobj: 0x140
-   __AUTH_CONST.__objc_doubleobj: 0xa0
--  __AUTH_CONST.__auth_got: 0x2a38
--  __AUTH.__objc_data: 0x7c18
--  __AUTH.__data: 0x1750
--  __DATA.__objc_ivar: 0x18fc
--  __DATA.__data: 0x52d8
--  __DATA.__bss: 0x7220
-+  __AUTH_CONST.__auth_got: 0x2b38
-+  __AUTH.__objc_data: 0x7c88
-+  __AUTH.__data: 0x17c0
-+  __DATA.__objc_ivar: 0x191c
-+  __DATA.__data: 0x5598
-+  __DATA.__bss: 0x7740
-   __DATA.__common: 0xa0
-   __DATA_DIRTY.__objc_data: 0x320
-   __DATA_DIRTY.__bss: 0x9
+-625.1.20.10.3
++625.1.22.10.3
 
-   - /System/Library/PrivateFrameworks/TokenGeneration.framework/TokenGeneration
-   - /System/Library/PrivateFrameworks/TokenGenerationCore.framework/TokenGenerationCore
-   - /System/Library/PrivateFrameworks/Trial.framework/Trial
 +  - /System/Library/PrivateFrameworks/UnilogCommonLibrary.framework/UnilogCommonLibrary
 +  - /System/Library/PrivateFrameworks/UnilogInstrumentation.framework/UnilogInstrumentation
 +  - /System/Library/PrivateFrameworks/UnilogSafariSearchLibrary.framework/UnilogSafariSearchLibrary
-   - /System/Library/PrivateFrameworks/UsageTracking.framework/UsageTracking
-   - /usr/lib/libCTGreenTeaLogger.dylib
-   - /usr/lib/libMobileGestalt.dylib
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
 +  - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 14342
--  Symbols:   38655
--  CStrings:  9269
+-  Symbols:   19198
+-  CStrings:  6080
 +  Functions: 14472
-+  Symbols:   38759
-+  CStrings:  9309
- 
-Sections:
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   19272
++  CStrings:  6103
 Symbols:
 + +[WBSHistoryController existingSharedHistoryControllerIfExists]
 + +[WBSPageTestController isRunningAutomaticPasswordChangeSubtest]
@@ -220,28 +148,6 @@ Symbols:
 + _featureTextQueue
 + _frenchLanguageTag
 + _keypath_get_selector_usesElementActionClassifier
-+ _objc_msgSend$_meetsMinimumContentThreshold:
-+ _objc_msgSend$_searchUsageRetentionStream
-+ _objc_msgSend$appForegroundLock
-+ _objc_msgSend$computeFeatureTextSynchronously
-+ _objc_msgSend$existingSharedHistoryControllerIfExists
-+ _objc_msgSend$highlightedRanges
-+ _objc_msgSend$initWithQueryString:
-+ _objc_msgSend$initWithTitle:subtitle:entityIDURLParameter:imageURLString:isAIItem:highlightedRanges:
-+ _objc_msgSend$isEndlessHistoryEnabled
-+ _objc_msgSend$languageCode
-+ _objc_msgSend$lastAppForegroundEmission
-+ _objc_msgSend$lock
-+ _objc_msgSend$safari_hostCompare:
-+ _objc_msgSend$searchViewAppearedBecauseOfEvent:forQueryID:usesLoweredSearchBar:isStartPageVisible:
-+ _objc_msgSend$searchViewAppearedBecauseOfEvent:isSafariReaderAvailable:forQueryID:usesLoweredSearchBar:isStartPageVisible:
-+ _objc_msgSend$setControlIDsSkippedDueToMatchingValue:
-+ _objc_msgSend$setIsStartPageVisible:
-+ _objc_msgSend$setLastAppForegroundEmission:
-+ _objc_msgSend$setOriginatingApp:
-+ _objc_msgSend$setUsesElementActionClassifier:
-+ _objc_msgSend$unlock
-+ _objc_msgSend$usesElementActionClassifier
 + _swift_stdlib_random
 + _symbolic SS3key_Say______pG5itemst 12SafariShared17WBSClusterManagerC4ItemP
 + _symbolic SaySJG
@@ -290,10 +196,6 @@ Symbols:
 - __shouldUseWordBasedMaxFeatureTextLength.excludedLanguagePrefixes
 - _get_type_metadata 15Synchronization5MutexVy15TokenGeneration0C9GeneratorCSgG noncopyable
 - _get_type_metadata 29GenerativeFunctionsFoundation9GenerableRzl15Synchronization5MutexVy12SafariShared18WBSAgentControllerC5State33_BB0CD2D0C8036A089F40018934D354B9LLVyx_GG noncopyable
-- _objc_msgSend$_removeDuplicatedURLs
-- _objc_msgSend$initWithTitle:subtitle:entityIDURLParameter:imageURLString:isAIItem:
-- _objc_msgSend$searchViewAppearedBecauseOfEvent:forQueryID:usesLoweredSearchBar:
-- _objc_msgSend$searchViewAppearedBecauseOfEvent:isSafariReaderAvailable:forQueryID:usesLoweredSearchBar:
 - _swift_runtimeSupportsNoncopyableTypes
 - _symbolic So36WBSMagicExtensionsDatabaseControllerCXDXMT
 - _symbolic _____ySSSgG s11_SetStorageC
@@ -354,5 +256,4 @@ CStrings:
 - "Skip embedding generation for `%@` since topic generator is not available."
 - "Total Score: %f [embedding: %f, intent: %f, host: %f, time: %f, intent1: %ld, intent2: %ld]  \n\t[%{private}@] \n\t[%{private}@]"
 - "URL,Title,Topic,TopicID,Summary,KeyWords,KeyPhrases,FeatureText,IsSample,HasEmbedding,featureTextForTopicGeneration,BookmarkID,PageLanguage,FeatureTextLength,Status"
-
 ```

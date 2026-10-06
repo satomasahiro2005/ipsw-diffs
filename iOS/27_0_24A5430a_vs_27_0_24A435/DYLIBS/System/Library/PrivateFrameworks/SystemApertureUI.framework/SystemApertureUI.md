@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/SystemApertureUI.framework/SystemApertureUI`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_1 : 20 -> 12

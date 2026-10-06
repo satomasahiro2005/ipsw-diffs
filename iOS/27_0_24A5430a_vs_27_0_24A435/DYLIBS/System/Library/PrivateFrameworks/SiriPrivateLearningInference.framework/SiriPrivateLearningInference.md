@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/SiriPrivateLearningInference.framework/SiriPrivateLearningInference`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x155c8c` | `0x155d10` | **`+0x84`** |
+| `__AUTH_CONST.__auth_got` | `0x1648` | `0x1640` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 3600.5.1.0.0
--  __TEXT.__text: 0x155c8c
-+  __TEXT.__text: 0x155d10
-   __TEXT.__objc_methlist: 0x36c
-   __TEXT.__const: 0x126c0
-   __TEXT.__cstring: 0x28c5
-
-   __AUTH_CONST.__const: 0x8c40
-   __AUTH_CONST.__cfstring: 0x760
-   __AUTH_CONST.__objc_const: 0x7388
--  __AUTH_CONST.__auth_got: 0x1648
-+  __AUTH_CONST.__auth_got: 0x1640
-   __AUTH.__objc_data: 0xc20
-   __AUTH.__data: 0x2e08
-   __DATA.__data: 0x2e78
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 7022
--  Symbols:   3018
-+  Symbols:   3017
-   CStrings:  678
- 
+-  Symbols:   2670
++  Symbols:   2669
 Symbols:
 - _objc_retain_x9
 Functions:

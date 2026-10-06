@@ -2,62 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/PhotoLibraryServicesCore.framework/PhotoLibraryServicesCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcb00c` | `0xcb61c` | **`+0x610`** |
+| `__TEXT.__cstring` | `0x15d39` | `0x15f4c` | **`+0x213`** |
+| `__AUTH_CONST.__cfstring` | `0x11ec0` | `0x12020` | **`+0x160`** |
+| `__TEXT.__oslogstring` | `0xb0b9` | `0xb0f7` | **`+0x3e`** |
+| `__TEXT.__objc_methlist` | `0x8304` | `0x833c` | **`+0x38`** |
+| `__AUTH_CONST.__const` | `0x35e8` | `0x35c8` | **`-0x20`** |
+| `__DATA_CONST.__const` | `0x3c60` | `0x3c40` | **`-0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4c80` | `0x4ca0` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x56fc` | `0x5710` | **`+0x14`** |
+| `__TEXT.__unwind_info` | `0x3468` | `0x3478` | **`+0x10`** |
+| `__AUTH_CONST.__objc_const` | `0xaa00` | `0xaa08` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -910.33.102.0.0
--  __TEXT.__text: 0xcb00c
--  __TEXT.__objc_methlist: 0x8304
 +912.0.111.0.0
-+  __TEXT.__text: 0xcb61c
-+  __TEXT.__objc_methlist: 0x833c
-   __TEXT.__const: 0x2324
-   __TEXT.__dlopen_cstrs: 0x19c
--  __TEXT.__gcc_except_tab: 0x56fc
--  __TEXT.__cstring: 0x15d39
--  __TEXT.__oslogstring: 0xb0b9
-+  __TEXT.__gcc_except_tab: 0x5710
-+  __TEXT.__cstring: 0x15f4c
-+  __TEXT.__oslogstring: 0xb0f7
-   __TEXT.__ustring: 0x4
--  __TEXT.__unwind_info: 0x3468
-+  __TEXT.__unwind_info: 0x3478
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3c60
-+  __DATA_CONST.__const: 0x3c40
-   __DATA_CONST.__objc_classlist: 0x408
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x160
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4c80
-+  __DATA_CONST.__objc_selrefs: 0x4ca0
-   __DATA_CONST.__objc_protorefs: 0xc8
-   __DATA_CONST.__objc_superrefs: 0x268
-   __DATA_CONST.__objc_arraydata: 0x420
-   __DATA_CONST.__got: 0xa48
--  __AUTH_CONST.__const: 0x35e8
--  __AUTH_CONST.__cfstring: 0x11ec0
--  __AUTH_CONST.__objc_const: 0xaa00
-+  __AUTH_CONST.__const: 0x35c8
-+  __AUTH_CONST.__cfstring: 0x12020
-+  __AUTH_CONST.__objc_const: 0xaa08
-   __AUTH_CONST.__objc_intobj: 0x918
-   __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__objc_dictobj: 0x50
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libperfcheck.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 3962
--  Symbols:   9425
+-  Symbols:   7890
 -  CStrings:  3658
 +  Functions: 3967
-+  Symbols:   9430
++  Symbols:   7891
 +  CStrings:  3670
- 
 Symbols:
 + -[PLPhotoLibraryPathManager _pathsToExcludeFromAllDCIMBackups]
 + -[PLPhotoLibraryPathManager _pathsToExcludeFromICloudDCIMBackups]
@@ -116,10 +89,6 @@ Symbols:
 + GCC_except_table3924
 + GCC_except_table3931
 + GCC_except_table3936
-+ _objc_msgSend$_pathsToExcludeFromAllDCIMBackups
-+ _objc_msgSend$_pathsToExcludeFromICloudDCIMBackups
-+ _objc_msgSend$isDCIM
-+ _objc_msgSend$waitUntilAllOperationsAreFinished
 - GCC_except_table3079
 - GCC_except_table3085
 - GCC_except_table3236

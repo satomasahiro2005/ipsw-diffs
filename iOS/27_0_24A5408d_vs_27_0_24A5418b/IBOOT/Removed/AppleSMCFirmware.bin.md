@@ -1,3 +1,5 @@
 ## AppleSMCFirmware.bin
 
-- `AppleSMCFirmware_H18_4-7372.2.6.v53.REL`
+- `tTxEhTTR_C`
+- `tTDPhTTRwC`
+- `AppleSMCFirmware_H17_2-7372.2.6.d93.REL`

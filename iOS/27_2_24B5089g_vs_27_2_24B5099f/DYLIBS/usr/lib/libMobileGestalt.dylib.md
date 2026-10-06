@@ -2,22 +2,25 @@
 
 > `/usr/lib/libMobileGestalt.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6c1e8` | `0x6c1f8` | **`+0x10`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -1622.40.10.0.0
--  __TEXT.__text: 0x6aa4c
 +1622.40.11.0.0
-+  __TEXT.__text: 0x6aa6c
-   __TEXT.__objc_methlist: 0x128
-   __TEXT.__const: 0xa798
-   __TEXT.__cstring: 0x1794d
 Functions:
-~ sub_1afd064ec -> sub_1af1944ec : 380 -> 400
-~ sub_1afd277bc -> sub_1af1b57d0 : 276 -> 288
+~ sub_1b0b8744c -> sub_1afb8644c : 380 -> 400
+~ sub_1b0ba8e80 -> sub_1afba7e94 : 288 -> 284
 CStrings:
 + "1CC7D4EA-4D31-4423-B97E-6D2D944D3F64"
 - "B8964785-2D0D-43ED-925B-475C2D894299"

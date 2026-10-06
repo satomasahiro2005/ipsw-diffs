@@ -2,14 +2,19 @@
 
 > `/usr/lib/libfire9.dylib`
 
-```diff
+### Section Size Changes
 
- 32.0.0.0.0
--  __TEXT.__text: 0x302628
-+  __TEXT.__text: 0x302ae8
-   __TEXT.__const: 0x9f758
-   __TEXT.__cstring: 0x1bd1a
-   __TEXT.__oslogstring: 0x1943e
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x302628` | `0x302ae8` | **`+0x4c0`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
+```diff
 Functions:
 ~ __ZN7BlueFin22Minnow5GllRpcParserImp11ParseMethodEhhPht : 17948 -> 17956
 ~ __ZN7BlueFin20GlMeSrdPacketManager13ParseAsicDataEPht : 3592 -> 3564
@@ -180,4 +185,7 @@ Functions:
 ~ __ZN7BlueFin14GlPeGlnTimeMgr22CheckGlonassStringTimeEhi : 936 -> 940
 ~ __ZN7BlueFin21GlPeSpecialTimeEvents18ScheduleTimeEventsERNS_15GlPeTimeManagerE : 2432 -> 2448
 ~ __ZN7BlueFin15GlPeTimeManagerC2EsPNS_11GlPeMsmtMgrEPNS_15GlPeRangeAidGenEPNS_10GlPeOscMgrERKNS_17GlPeSvIdConverterEPNS_14GlPeStartupMgrEPNS_15GlPeSvHealthMgrEPNS_11GlNvMemImplE : 4244 -> 4236
+CStrings:
++ "Aug  8 2026, 14:23:03"
+- "Aug  8 2026, 17:28:32"
 ```

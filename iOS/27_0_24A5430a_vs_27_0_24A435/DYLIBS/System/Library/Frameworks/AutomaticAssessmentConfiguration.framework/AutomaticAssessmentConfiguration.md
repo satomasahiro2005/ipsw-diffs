@@ -2,17 +2,18 @@
 
 > `/System/Library/Frameworks/AutomaticAssessmentConfiguration.framework/AutomaticAssessmentConfiguration`
 
-```diff
+### Section Size Changes
 
- 56.2.1.0.0
--  __TEXT.__text: 0x8800
-+  __TEXT.__text: 0x8810
-   __TEXT.__objc_methlist: 0xa7c
-   __TEXT.__const: 0x3ae
-   __TEXT.__cstring: 0x438
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8800` | `0x8810` | **`+0x10`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_246fea620 -> sub_2479be620 : 1288 -> 1292
-~ sub_246feacc0 -> sub_2479becc4 : 996 -> 1000
-~ sub_246febffc -> sub_2479c0004 : 648 -> 652
-~ sub_246fedd44 -> sub_2479c1d50 : 240 -> 244
+~ sub_246eae620 -> sub_247881620 : 1288 -> 1292
+~ sub_246eaecc0 -> sub_247881cc4 : 996 -> 1000
+~ sub_246eafffc -> sub_247883004 : 648 -> 652
+~ sub_246eb1d44 -> sub_247884d50 : 240 -> 244
 ```

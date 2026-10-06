@@ -2,97 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/CloudKitSharingManagement.framework/CloudKitSharingManagement`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1f534` | `0x205b0` | **`+0x107c`** |
+| `__TEXT.__unwind_info` | `0xcf8` | `0xd80` | **`+0x88`** |
+| `__TEXT.__eh_frame` | `0x1a28` | `0x1a80` | **`+0x58`** |
+| `__TEXT.__cstring` | `0x669` | `0x6a9` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x5f0` | `0x618` | **`+0x28`** |
+| `__DATA_CONST.__const` | `0xd8` | `0xf8` | **`+0x20`** |
+| `__TEXT.__const` | `0x3190` | `0x3170` | **`-0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x564` | `0x584` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x8c8` | `0x8d4` | **`+0xc`** |
+| `__DATA.__data` | `0xa90` | `0xa88` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x178` | `0x170` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x128` | `0x130` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0xbc5` | `0xbbf` | **`-0x6`** |
+| `__TEXT.__swift_as_entry` | `0x6c` | `0x70` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x68` | `0x6c` | **`+0x4`** |
+| `__TEXT.__oslogstring` | `0x3ad` | `0x3ab` | **`-0x2`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1f534
-+  __TEXT.__text: 0x205b0
-   __TEXT.__objc_methlist: 0x144
--  __TEXT.__const: 0x3190
--  __TEXT.__swift5_typeref: 0xbc5
--  __TEXT.__cstring: 0x669
-+  __TEXT.__const: 0x3170
-+  __TEXT.__swift5_typeref: 0xbbf
-+  __TEXT.__cstring: 0x6a9
-   __TEXT.__constg_swiftt: 0x7f0
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__swift5_reflstr: 0x564
--  __TEXT.__swift5_fieldmd: 0x8c8
-+  __TEXT.__swift5_reflstr: 0x584
-+  __TEXT.__swift5_fieldmd: 0x8d4
-   __TEXT.__swift5_assocty: 0xf0
-   __TEXT.__swift5_proto: 0x2d8
-   __TEXT.__swift5_types: 0xdc
-   __TEXT.__swift5_capture: 0xf0
--  __TEXT.__swift_as_entry: 0x6c
--  __TEXT.__swift_as_ret: 0x68
-+  __TEXT.__swift_as_entry: 0x70
-+  __TEXT.__swift_as_ret: 0x6c
-   __TEXT.__swift_as_cont: 0x8c
--  __TEXT.__oslogstring: 0x3ad
-+  __TEXT.__oslogstring: 0x3ab
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0xcf8
--  __TEXT.__eh_frame: 0x1a28
-+  __TEXT.__unwind_info: 0xd80
-+  __TEXT.__eh_frame: 0x1a80
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xd8
-+  __DATA_CONST.__const: 0xf8
-   __DATA_CONST.__objc_classlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x128
-+  __DATA_CONST.__objc_selrefs: 0x130
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__got: 0x178
-+  __DATA_CONST.__got: 0x170
-   __AUTH_CONST.__const: 0x19c8
-   __AUTH_CONST.__objc_const: 0x448
--  __AUTH_CONST.__auth_got: 0x5f0
-+  __AUTH_CONST.__auth_got: 0x618
-   __AUTH.__objc_data: 0x130
-   __AUTH.__data: 0x3a8
--  __DATA.__data: 0xa90
-+  __DATA.__data: 0xa88
-   __DATA.__bss: 0x5b00
-   __DATA_DIRTY.__objc_data: 0x50
-   __DATA_DIRTY.__data: 0x1e0
+-20.0.0.0.0
++22.1.0.0.0
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 981
--  Symbols:   592
+-  Symbols:   509
 -  CStrings:  62
 +  Functions: 1029
-+  Symbols:   4199
++  Symbols:   3104
 +  CStrings:  63
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
 Symbols:
 + _$s10Foundation12CharacterSetV22whitespacesAndNewlinesACvgZ
 + _$s10Foundation12CharacterSetVMa
@@ -2689,7 +2632,6 @@ Symbols:
 + _$sytWV
 + ___swift_get_extra_inhabitant_index.28Tm
 + ___swift_store_extra_inhabitant_index.29Tm
-+ _objc_msgSend$defaultContainer
 + _objc_release_x27
 + _objc_retain_x26
 + _objc_retain_x27
@@ -2702,5 +2644,4 @@ Symbols:
 - _swift_runtimeSupportsNoncopyableTypes
 CStrings:
 + "IDS Invitation reported as send but object is nil"
-
 ```

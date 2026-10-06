@@ -2,38 +2,35 @@
 
 > `/usr/libexec/photosfaced`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_entry`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x102dc0` | `0x102dc4` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__const`
 - `__TEXT.__const`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
 - `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
 - `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
 
-```diff
+### Other Changes
 
- 98.0.0.0.0
--  __TEXT.__text: 0xf5824
-+  __TEXT.__text: 0xf5834
-   __TEXT.__auth_stubs: 0x2430
-   __TEXT.__objc_stubs: 0x900
-   __TEXT.__objc_methlist: 0x224
+```text
 Functions:
-~ sub_10000b05c : 288 -> 276
-~ sub_100093ff0 -> sub_100093fe4 : 4976 -> 4980
-~ sub_1000a2104 -> sub_1000a20fc : 4976 -> 4980
-~ sub_1000b0c78 -> sub_1000b0c74 : 4976 -> 4980
-~ sub_1000bfee8 : 4976 -> 4980
-~ sub_1000e71e0 -> sub_1000e71e4 : 260 -> 272
+~ sub_10000b9f8 : 300 -> 276
+~ sub_10009cfd8 -> sub_10009cfc0 : 5016 -> 5020
+~ sub_1000ab634 -> sub_1000ab620 : 5016 -> 5020
+~ sub_1000ba6e4 -> sub_1000ba6d4 : 5016 -> 5020
+~ sub_1000c9ea8 -> sub_1000c9e9c : 5016 -> 5020
+~ sub_1000f37d4 -> sub_1000f37cc : 260 -> 272
 ```

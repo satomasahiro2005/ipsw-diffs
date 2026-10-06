@@ -2,56 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/SiriAppLaunchUIFramework.framework/SiriAppLaunchUIFramework`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc40c` | `0xc6ec` | **`+0x2e0`** |
+| `__TEXT.__oslogstring` | `0x24e` | `0x2bf` | **`+0x71`** |
+| `__TEXT.__const` | `0xb8a` | `0xbca` | **`+0x40`** |
+| `__TEXT.__swift5_typeref` | `0x7ce` | `0x802` | **`+0x34`** |
+| `__TEXT.__cstring` | `0xec` | `0x11b` | **`+0x2f`** |
+| `__AUTH_CONST.__auth_got` | `0x620` | `0x640` | **`+0x20`** |
+| `__DATA.__data` | `0x548` | `0x550` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.8.6.0.0
--  __TEXT.__text: 0xba04
 +3605.5.1.0.0
-+  __TEXT.__text: 0xbcd0
-   __TEXT.__objc_methlist: 0x3ac
--  __TEXT.__const: 0xb8a
--  __TEXT.__cstring: 0xec
-+  __TEXT.__const: 0xbca
-+  __TEXT.__cstring: 0x11b
-   __TEXT.__constg_swiftt: 0x3e4
--  __TEXT.__swift5_typeref: 0x7ce
-+  __TEXT.__swift5_typeref: 0x802
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_reflstr: 0x28d
-   __TEXT.__swift5_fieldmd: 0x2a8
 
-   __TEXT.__swift5_proto: 0x4c
-   __TEXT.__swift5_types: 0x38
-   __TEXT.__swift5_capture: 0x100
--  __TEXT.__oslogstring: 0x24e
--  __TEXT.__unwind_info: 0x4d8
-+  __TEXT.__oslogstring: 0x2bf
-+  __TEXT.__unwind_info: 0x4e0
-   __TEXT.__eh_frame: 0x48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x510
-   __AUTH_CONST.__objc_const: 0x510
--  __AUTH_CONST.__auth_got: 0x620
-+  __AUTH_CONST.__auth_got: 0x640
-   __AUTH.__objc_data: 0x168
-   __AUTH.__data: 0x4e8
--  __DATA.__data: 0x548
-+  __DATA.__data: 0x550
-   __DATA.__common: 0x18
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 356
--  Symbols:   359
+-  Symbols:   351
 -  CStrings:  15
-+  Symbols:   360
++  Symbols:   352
 +  CStrings:  17
- 
 Symbols:
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE16privacySensitiveyQrSbFQOyAA6VStackVyAA12TupleContentVyAA08ModifiedH0VyAJy24SiriAppLaunchUIFramework0k21SearchResultsBridgingC0VAA16_FlexFrameLayoutVGAA08_PaddingS0VG_AC07SnippetB0E15componentTapped12isNavigation7performQrSb_yyctFQOyAJyAJyAT012SashStandardC0VARGAA19_BackgroundModifierVyAA5ColorVGG_Qo_SgQPGG_Qo_HO
 + _objc_release_x24
@@ -67,9 +40,11 @@ Symbols:
 - _symbolic _____y_____y_____y__________G______yACyACy__________G_____y_____GG_Qo_SgQPGG 7SwiftUI6VStackV AA12TupleContentV AA08ModifiedE0V 24SiriAppLaunchUIFramework0H25SearchResultsBridgingViewV AA12_FrameLayoutV AA0N0P07SnippetB0E15componentTapped12isNavigation7performQrSb_yyctFQO AO012SashStandardN0V AA08_PaddingP0V AA19_BackgroundModifierV AA5ColorV
 - _symbolic _____y_____y_____y_____y__________G______yACyACy__________G_____y_____GG_Qo_SgQPGG_Qo_ 7SwiftUI4ViewPAAE16privacySensitiveyQrSbFQO AA6VStackV AA12TupleContentV AA08ModifiedH0V 24SiriAppLaunchUIFramework0k21SearchResultsBridgingC0V AA12_FrameLayoutV AC07SnippetB0E15componentTapped12isNavigation7performQrSb_yyctFQO AP012SashStandardC0V AA08_PaddingR0V AA19_BackgroundModifierV AA5ColorV
 Functions:
-~ sub_2a290d5c0 -> sub_2a6e0a5c0 : 60 -> 520
-~ sub_2a290d670 -> sub_2a6e0a83c : 100 -> 116
-~ sub_2a290f6c8 -> sub_2a6e0c8a4 : 2684 -> 2924
+~ sub_2a5ea297c -> sub_2ac15997c : 60 -> 540
+~ sub_2a5ea2a2c -> sub_2ac159c0c : 112 -> 128
+~ _OUTLINED_FUNCTION_7 : 24 -> 12
+~ _OUTLINED_FUNCTION_8 : 12 -> 24
+~ sub_2a5ea4c44 -> sub_2ac15be34 : 2784 -> 3024
 CStrings:
 + "AppSearchResultsBridgingView height callback: contentSize=%{public}f vcPreferred=%{public}f current=%{public}f"
 + "Contradictory frame constraints specified."

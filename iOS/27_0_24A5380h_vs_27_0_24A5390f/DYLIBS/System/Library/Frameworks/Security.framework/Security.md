@@ -2,97 +2,39 @@
 
 > `/System/Library/Frameworks/Security.framework/Security`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__dof_codesign`
-- `__TEXT.__dof_security_`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__lazy_load_got`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17ff10` | `0x180480` | **`+0x570`** |
+| `__TEXT.__oslogstring` | `0xf72c` | `0xf7ef` | **`+0xc3`** |
+| `__DATA.__data` | `0x2120` | `0x2180` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0x7cc0` | `0x7d14` | **`+0x54`** |
+| `__AUTH_CONST.__cfstring` | `0x17660` | `0x17620` | **`-0x40`** |
+| `__DATA_CONST.__const` | `0x14ea0` | `0x14ed8` | **`+0x38`** |
+| `__AUTH_CONST.__const` | `0x3f60` | `0x3f40` | **`-0x20`** |
+| `__TEXT.__cstring` | `0x19314` | `0x19301` | **`-0x13`** |
+| `__TEXT.__objc_methlist` | `0x6784` | `0x6794` | **`+0x10`** |
+| `__AUTH_CONST.__objc_const` | `0xa5e8` | `0xa5f0` | **`+0x8`** |
+| `__DATA.__bss` | `0xa20` | `0xa18` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x768` | `0x770` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0xf8` | `0x100` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x58` | `0x60` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x34c0` | `0x34b8` | **`-0x8`** |
+
+### Other Changes
 
 ```diff
 
 -62460.0.38.0.1
--  __TEXT.__text: 0x17ff10
 +62460.0.55.0.1
-+  __TEXT.__text: 0x180480
-   __TEXT.__lazy_helpers: 0x54
--  __TEXT.__objc_methlist: 0x6784
-+  __TEXT.__objc_methlist: 0x6794
-   __TEXT.__const: 0x17590
-   __TEXT.__dlopen_cstrs: 0xbc
--  __TEXT.__cstring: 0x19314
--  __TEXT.__gcc_except_tab: 0x7cc0
--  __TEXT.__oslogstring: 0xf72c
-+  __TEXT.__cstring: 0x19301
-+  __TEXT.__gcc_except_tab: 0x7d14
-+  __TEXT.__oslogstring: 0xf7ef
-   __TEXT.__ustring: 0x406
-   __TEXT.__dof_codesign: 0x1f2c
-   __TEXT.__dof_security_: 0x325
 
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x14ea0
-+  __DATA_CONST.__const: 0x14ed8
-   __DATA_CONST.__objc_classlist: 0x350
-   __DATA_CONST.__objc_catlist: 0x18
--  __DATA_CONST.__objc_protolist: 0xf8
-+  __DATA_CONST.__objc_protolist: 0x100
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x34c0
--  __DATA_CONST.__objc_protorefs: 0x58
-+  __DATA_CONST.__objc_selrefs: 0x34b8
-+  __DATA_CONST.__objc_protorefs: 0x60
-   __DATA_CONST.__objc_superrefs: 0x2f0
-   __DATA_CONST.__objc_arraydata: 0x100
--  __DATA_CONST.__got: 0x768
--  __AUTH_CONST.__const: 0x3f60
--  __AUTH_CONST.__cfstring: 0x17660
--  __AUTH_CONST.__objc_const: 0xa5e8
-+  __DATA_CONST.__got: 0x770
-+  __AUTH_CONST.__const: 0x3f40
-+  __AUTH_CONST.__cfstring: 0x17620
-+  __AUTH_CONST.__objc_const: 0xa5f0
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__lazy_load_got: 0x8
-   __AUTH_CONST.__objc_arrayobj: 0x120
-
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x48
-   __DATA.__objc_ivar: 0x670
--  __DATA.__data: 0x2120
--  __DATA.__bss: 0xa20
-+  __DATA.__data: 0x2180
-+  __DATA.__bss: 0xa18
-   __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0x190
-   __DATA_DIRTY.__data: 0x40
-
-   - /usr/lib/libcoretls_cfhelpers.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 7115
--  Symbols:   14806
+-  Symbols:   13615
 -  CStrings:  5729
 +  Functions: 7117
-+  Symbols:   14812
++  Symbols:   13623
 +  CStrings:  5733
- 
 Symbols:
 + GCC_except_table1035
 + GCC_except_table1428
@@ -429,7 +371,6 @@ Symbols:
 + ___block_descriptor_56_e8_32s40r48r_e20_v20?0B8"NSError"12ls32l8r40l8r48l8
 + _kSecPolicyAppleFDRProvisioning
 + _kSecPolicyAppleMacAppStoreReceipt
-+ _objc_msgSend$fixFiles:
 - +[SFAnalytics logConsumerProcessInfo]
 - GCC_except_table1038
 - GCC_except_table1431
@@ -757,9 +698,6 @@ Symbols:
 - ___37+[SFAnalytics logConsumerProcessInfo]_block_invoke_2
 - ___block_descriptor_48_e8_32s40r_e17_v16?0"NSError"8lr40l8s32l8
 - _logConsumerProcessInfo.onceToken
-- _objc_msgSend$environment
-- _objc_msgSend$logConsumerProcessInfo
-- _objc_msgSend$logRockwellFailureForEventNamed:withAttributes:
 CStrings:
 + " /* opcode %d */ "
 + "%{public}@ failed to fix our files: %@"

@@ -2,73 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/SiriPlaybackControlSupport.framework/SiriPlaybackControlSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x83764` | `0x85674` | **`+0x1f10`** |
+| `__TEXT.__oslogstring` | `0x5fac` | `0x616c` | **`+0x1c0`** |
+| `__AUTH_CONST.__const` | `0x8078` | `0x8150` | **`+0xd8`** |
+| `__TEXT.__const` | `0x4bf2` | `0x4ca2` | **`+0xb0`** |
+| `__TEXT.__swift5_typeref` | `0x1a2e` | `0x1ad4` | **`+0xa6`** |
+| `__TEXT.__constg_swiftt` | `0x1dc0` | `0x1e18` | **`+0x58`** |
+| `__TEXT.__swift5_capture` | `0x157c` | `0x15d0` | **`+0x54`** |
+| `__DATA.__data` | `0x1100` | `0x1138` | **`+0x38`** |
+| `__TEXT.__unwind_info` | `0x1e60` | `0x1e90` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4a0` | `0x4c0` | **`+0x20`** |
+| `__TEXT.__eh_frame` | `0x10f0` | `0x1110` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x21e0` | `0x2200` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xf68` | `0xf80` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0x314` | `0x31c` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x54` | `0x5c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3605.13.1.0.0
--  __TEXT.__text: 0x7fb98
 +3605.16.2.1.1
-+  __TEXT.__text: 0x819ec
-   __TEXT.__objc_methlist: 0x1a4
--  __TEXT.__const: 0x4bf2
--  __TEXT.__swift5_typeref: 0x1a2e
--  __TEXT.__swift5_capture: 0x157c
--  __TEXT.__oslogstring: 0x5fac
--  __TEXT.__swift5_fieldmd: 0x21e0
--  __TEXT.__constg_swiftt: 0x1dc0
-+  __TEXT.__const: 0x4ca2
-+  __TEXT.__swift5_typeref: 0x1ad4
-+  __TEXT.__swift5_capture: 0x15d0
-+  __TEXT.__oslogstring: 0x616c
-+  __TEXT.__swift5_fieldmd: 0x2200
-+  __TEXT.__constg_swiftt: 0x1e18
-   __TEXT.__swift5_builtin: 0x78
-   __TEXT.__swift5_reflstr: 0x1910
-   __TEXT.__swift5_assocty: 0x508
-   __TEXT.__cstring: 0x2697
--  __TEXT.__swift5_protos: 0x54
--  __TEXT.__swift5_proto: 0x314
-+  __TEXT.__swift5_protos: 0x5c
-+  __TEXT.__swift5_proto: 0x31c
-   __TEXT.__swift5_types: 0x180
-   __TEXT.__swift5_mpenum: 0x40
--  __TEXT.__unwind_info: 0x25e0
--  __TEXT.__eh_frame: 0x10f0
-+  __TEXT.__unwind_info: 0x2640
-+  __TEXT.__eh_frame: 0x1110
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x68
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4a0
-+  __DATA_CONST.__objc_selrefs: 0x4c0
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x8078
-+  __AUTH_CONST.__const: 0x8150
-   __AUTH_CONST.__objc_const: 0x1478
--  __AUTH_CONST.__auth_got: 0xf68
-+  __AUTH_CONST.__auth_got: 0xf80
-   __AUTH.__objc_data: 0x2a8
-   __AUTH.__data: 0x12a8
--  __DATA.__data: 0x1100
-+  __DATA.__data: 0x1138
-   __DATA.__common: 0xd8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4284
 -  Symbols:   1116
 -  CStrings:  691
 +  Functions: 4340
 +  Symbols:   1130
 +  CStrings:  695
- 
 Symbols:
 + _HMAccessoryCategoryTypeTelevisionSetTopBox
 + _HMAccessoryCategoryTypeTelevisionStreamingStick

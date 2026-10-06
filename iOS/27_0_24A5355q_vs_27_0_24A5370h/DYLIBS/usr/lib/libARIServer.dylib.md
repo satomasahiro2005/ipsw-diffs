@@ -2,46 +2,18 @@
 
 > `/usr/lib/libARIServer.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x28bc0` | `0x28b20` | **`-0xa0`** |
+
+### Other Changes
+
 ```diff
 
 -1632.0.0.0.0
--  __TEXT.__text: 0x28bc0 sha256:66557dec458d163212dffc3eff2bca1ff708dbb6bdcd6350a332c79f9ee8b909
--  __TEXT.__init_offsets: 0xc sha256:adeadd6f80776fbc75afce836a01b26bc9316b329d12e0203fe352b2c4354c69
 +1635.0.0.0.0
-+  __TEXT.__text: 0x28b20 sha256:d90142e17c0593c58293787b7e3e9915c4b40c63361437b1efa1473286199ec3
-+  __TEXT.__init_offsets: 0xc sha256:94468eae01811739057e93bf3e9e747190e1567af83aa8b7b491a6ec141940f5
-   __TEXT.__const: 0x3a00 sha256:77e961b442da1964dcfada5ddcf9dfbe0b2bfac6bf57a6b02cf2b173b77f3c43
--  __TEXT.__gcc_except_tab: 0x2288 sha256:7326ae7a71f90a0f792e0d3617aaa4560791ba019ce0634605871273386f8502
--  __TEXT.__cstring: 0x3617 sha256:1ccbf9e4790ddea7a7fed92cbb7daa85a6210208abdba1d5620f69023bf0739f
-+  __TEXT.__gcc_except_tab: 0x2288 sha256:e885a7993e18efeef07e122c479589aaa74d7716728efd9035715318b6f45d6d
-+  __TEXT.__cstring: 0x3617 sha256:4f73ebd1a228504be3214158f382db7dbbe038a492cb11706daf1d2091286266
-   __TEXT.__oslogstring: 0x2234 sha256:ed376d326a903fa0a63a25d242590c1f24e1e951899ecd80d5ef642d0cd3d91f
--  __TEXT.__unwind_info: 0xc50 sha256:82f46ea362ff49277b5eecbfaf1c5439c7fa558f4896263ba86b10d0440b4ba5
-+  __TEXT.__unwind_info: 0xc50 sha256:2c857399ed5347b1eab9f318b2cb92c77a44702fb835e54c96d06d6146a07be0
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x3c8 sha256:9f1dd2b9cd26e629e7fd8221c9474e380c335fb5c009a7a25ab17a70a6dc32e2
--  __DATA_CONST.__weak_got: 0x20 sha256:72377a7e382af70628982c6944702290fcb94c459a2dd587c33dca7293d9f839
-+  __DATA_CONST.__const: 0x3c8 sha256:988ca0204c65b43633354005b6d4fd1afa7d285536e29c131d7f4095cfc96a77
-+  __DATA_CONST.__weak_got: 0x20 sha256:f98fe2cb250e1562e63f15dfc17f0739b9772d8860d487e9290b408e38415573
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1200 sha256:6620373518551eada64eca8504f5b5685fafaeec00baf7ec04a6988b3bd7bc7e
--  __AUTH_CONST.__cfstring: 0x20 sha256:02d318171f969e8b8a4e9edc6e4991a5987def718fde0cd016a2ff7dc3e7879d
--  __AUTH_CONST.__weak_auth_got: 0x18 sha256:c4f685488ee12499860f131fd37a6f4fe49fe5255e7ca8c7761452c34ebde4a0
-+  __AUTH_CONST.__const: 0x1200 sha256:d1c70100fe7f33425ba888d04f82cfd6d3c18449f4ccb44b1fedbae198f0f816
-+  __AUTH_CONST.__cfstring: 0x20 sha256:131dff4fc063000a03f69bd17de80b07da91f6ea957b704e82ac04999ab3589c
-+  __AUTH_CONST.__weak_auth_got: 0x18 sha256:b896e58b37daaf2a7f592fc0e1e641ae5be291b98c2bb1bce9a8c26681571f63
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA_DIRTY.__data: 0x58 sha256:aab7aef8bf8e141514f0278bed949cc12ab7322a35948c1ed707afba3e763c33
-   __DATA_DIRTY.__common: 0x8358 sha256:6649088efcf142acee3c30951fa26d3eef8938309c6e982547d0cd1e3e4e2429
-
-   - /usr/lib/libTelephonyCapabilities.dylib
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
--  UUID: 74E6990B-B455-343F-9FE8-6A586DFD1EEC
-+  UUID: AA6686A4-2B57-3FB5-9A2D-C66540738DC8
-   Functions: 602
-   Symbols:   1683
-   CStrings:  530
 Symbols:
 + __ZNKSt3__113__format_spec8__parserIcE10__validateB9fqe220106ENS0_8__fieldsB9fqe220106EPKcj
 + __ZNKSt3__113__format_spec8__parserIcE31__get_parsed_std_specificationsB9fqe220106INS_20basic_format_contextINS_20back_insert_iteratorINS_8__format15__output_bufferIcEEEEcEEEENS0_23__parsed_specificationsIcEERT_
@@ -297,5 +269,4 @@ Symbols:
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeIiNS_10shared_ptrIN9AriHostRt13RtTransactionEEEEENS_22__unordered_map_hasherIiNS_4pairIKiS5_EENS_4hashIiEENS_8equal_toIiEEEENS_21__unordered_map_equalIiSA_SE_SC_EENS_9allocatorISA_EEE16__emplace_uniqueB9fqe220100IJRKNS_21piecewise_construct_tENS_5tupleIJRS9_EEENSP_IJEEEEEENS8_INS_15__hash_iteratorIPNS_11__hash_nodeIS6_PvEEEEbEEDpOT_ENKUlSQ_SO_OSR_OSS_E_clESQ_SO_S13_S14_
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeIiNS_4pairIjNS_10shared_ptrIN3Ari14AriClientProxyEEEEEEENS_22__unordered_map_hasherIiNS2_IKiS7_EENS_4hashIiEENS_8equal_toIiEEEENS_21__unordered_map_equalIiSB_SF_SD_EENS_9allocatorISB_EEE16__emplace_uniqueB9fqe220100IJRKNS_21piecewise_construct_tENS_5tupleIJRSA_EEENSQ_IJEEEEEENS2_INS_15__hash_iteratorIPNS_11__hash_nodeIS8_PvEEEEbEEDpOT_ENKUlSR_SP_OSS_OST_E_clESR_SP_S14_S15_
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeIiNS_4pairIjNS_4listINS_10shared_ptrIN3Ari14AriClientProxyEEENS_9allocatorIS7_EEEEEEEENS_22__unordered_map_hasherIiNS2_IKiSB_EENS_4hashIiEENS_8equal_toIiEEEENS_21__unordered_map_equalIiSF_SJ_SH_EENS8_ISF_EEE16__emplace_uniqueB9fqe220100IJRKNS_21piecewise_construct_tENS_5tupleIJRSE_EEENST_IJEEEEEENS2_INS_15__hash_iteratorIPNS_11__hash_nodeISC_PvEEEEbEEDpOT_ENKUlSU_SS_OSV_OSW_E_clESU_SS_S17_S18_
-
 ```

@@ -2,73 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/TextToSpeechMauiSupport.framework/TextToSpeechMauiSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x53d020` | `0x56a410` | **`+0x2d3f0`** |
+| `__TEXT.__const` | `0xdd0c8` | `0xc8900` | **`-0x147c8`** |
+| `__TEXT.__cstring` | `0x4856e` | `0x54cec` | **`+0xc77e`** |
+| `__TEXT.__gcc_except_tab` | `0x74a4` | `0x5ee8` | **`-0x15bc`** |
+| `__DATA_CONST.__const` | `0x11120` | `0x122a0` | **`+0x1180`** |
+| `__TEXT.__unwind_info` | `0xb830` | `0xaa08` | **`-0xe28`** |
+| `__AUTH_CONST.__const` | `0x129b8` | `0x12290` | **`-0x728`** |
+| `__TEXT.__eh_frame` | `0x1908` | `0x19a8` | **`+0xa0`** |
+| `__AUTH_CONST.__auth_got` | `0xe70` | `0xea8` | **`+0x38`** |
+| `__AUTH_CONST.__weak_auth_got` | `0x20` | `0x18` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x340` | `0x348` | **`+0x8`** |
+| `__DATA.__common` | `0x54` | `0x58` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -680.0.0.0.0
--  __TEXT.__text: 0x53d020
--  __TEXT.__const: 0xdd0c8
--  __TEXT.__cstring: 0x4856e
 +681.0.0.0.0
-+  __TEXT.__text: 0x56a410
-+  __TEXT.__const: 0xc8900
-+  __TEXT.__cstring: 0x54cec
-   __TEXT.__constg_swiftt: 0x888
-   __TEXT.__swift5_typeref: 0x795
-   __TEXT.__swift5_builtin: 0x1b8
 
-   __TEXT.__swift_as_cont: 0xbc
-   __TEXT.__oslogstring: 0xdbe
-   __TEXT.__swift5_mpenum: 0x8
-+  __TEXT.__gcc_except_tab: 0x5ee8
-   __TEXT.__ustring: 0x8
--  __TEXT.__gcc_except_tab: 0x74a4
--  __TEXT.__unwind_info: 0xb830
--  __TEXT.__eh_frame: 0x1908
-+  __TEXT.__unwind_info: 0xaa08
-+  __TEXT.__eh_frame: 0x19a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x11120
-+  __DATA_CONST.__const: 0x122a0
-   __DATA_CONST.__objc_classlist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
-   __DATA_CONST.__objc_selrefs: 0xd0
--  __DATA_CONST.__got: 0x340
--  __AUTH_CONST.__const: 0x129b8
-+  __DATA_CONST.__got: 0x348
-+  __AUTH_CONST.__const: 0x12290
-   __AUTH_CONST.__cfstring: 0x1e0
-   __AUTH_CONST.__objc_const: 0x590
--  __AUTH_CONST.__weak_auth_got: 0x20
--  __AUTH_CONST.__auth_got: 0xe70
-+  __AUTH_CONST.__weak_auth_got: 0x18
-+  __AUTH_CONST.__auth_got: 0xea8
-   __AUTH.__objc_data: 0xf0
-   __AUTH.__data: 0x4d0
-   __DATA.__data: 0x398
-   __DATA.__objc_stublist: 0x8
-   __DATA.__crash_info: 0x148
-   __DATA.__bss: 0xc70
--  __DATA.__common: 0x54
-+  __DATA.__common: 0x58
-   __DATA_DIRTY.__objc_data: 0xd0
-   __DATA_DIRTY.__data: 0x208
-   __DATA_DIRTY.__common: 0x20
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15448
--  Symbols:   18963
+-  Symbols:   18938
 -  CStrings:  12608
 +  Functions: 15080
-+  Symbols:   18762
++  Symbols:   18737
 +  CStrings:  10976
- 
 Symbols:
 + GCC_except_table11615
 + GCC_except_table11617

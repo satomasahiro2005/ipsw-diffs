@@ -42,20 +42,20 @@
 - `/System/Library/Carrier Bundles/iPhone/TMobile_Ting_US.bundle/CarrierCA.crt`
 - `/System/Library/Carrier Bundles/iPhone/TMobile_Ting_US.bundle/Info.plist`
 - `/System/Library/Carrier Bundles/iPhone/TMobile_Ting_US.bundle/carrier.plist`
-- `/System/Library/Carrier Bundles/iPhone/TMobile_Ting_US.bundle/overrides_V53_V54_V57.der.pri`
-- `/System/Library/Carrier Bundles/iPhone/TMobile_Ting_US.bundle/overrides_V53_V54_V57.plist`
+- `/System/Library/Carrier Bundles/iPhone/TMobile_Ting_US.bundle/overrides_D93_D94_D47_D48.der.pri`
+- `/System/Library/Carrier Bundles/iPhone/TMobile_Ting_US.bundle/overrides_D93_D94_D47_D48.plist`
 - `/System/Library/Carrier Bundles/iPhone/TMobile_Ting_US.bundle/signatures/common.plist`
-- `/System/Library/Carrier Bundles/iPhone/TMobile_Ting_US.bundle/signatures/overrides_V53_V54_V57.plist`
-- `/System/Library/Extensions/AGXMetalG18P.bundle/ei_rt.metallib`
-- `/System/Library/Extensions/AGXMetalG18P.bundle/metal_rt.metallib`
-- `/System/Library/Extensions/AGXMetalG18P.bundle/metal_rt_precise.metallib`
-- `/System/Library/Extensions/AGXMetalG18P.bundle/raytracing_rt.metallib`
-- `/System/Library/Extensions/AGXMetalG18P.bundle/tex_atomic_emu.metallib`
-- `/System/Library/Extensions/AGXMetalG18P.bundle/vft_rt.metallib`
+- `/System/Library/Carrier Bundles/iPhone/TMobile_Ting_US.bundle/signatures/overrides_D93_D94_D47_D48.plist`
+- `/System/Library/Extensions/AGXMetalG17P.bundle/ei_rt.metallib`
+- `/System/Library/Extensions/AGXMetalG17P.bundle/metal_rt.metallib`
+- `/System/Library/Extensions/AGXMetalG17P.bundle/metal_rt_precise.metallib`
+- `/System/Library/Extensions/AGXMetalG17P.bundle/raytracing_rt.metallib`
+- `/System/Library/Extensions/AGXMetalG17P.bundle/tex_atomic_emu.metallib`
+- `/System/Library/Extensions/AGXMetalG17P.bundle/vft_rt.metallib`
 - `/System/Library/Fonts/UnicodeSupport/NotoSansCanadianAboriginal-Regular.otf`
 - `/System/Library/Frameworks/FinanceKit.framework/Finance.momd/24A-455.omo`
-- `/System/Library/Frameworks/Vision.framework/faceliveness-ageverification-v1md3_fp16.bundle/H18.bundle/H18.e5`
-- `/System/Library/Frameworks/Vision.framework/faceliveness-ageverification-v1md3_fp16.bundle/H18.bundle/main/main_ane/model.hwx`
+- `/System/Library/Frameworks/Vision.framework/faceliveness-ageverification-v1md3_fp16.bundle/H17.bundle/H17.e5`
+- `/System/Library/Frameworks/Vision.framework/faceliveness-ageverification-v1md3_fp16.bundle/H17.bundle/main/main_ane/model.hwx`
 - `/System/Library/Frameworks/Vision.framework/faceliveness-ageverification-v1md3_fp16.bundle/faceliveness-ageverification-v1md3_fp16.mil`
 - `/System/Library/NearbyInteractionBundles/BTCSNeuralNetworkResources.bundle/Info.plist`
 - `/System/Library/NearbyInteractionBundles/BTCSNeuralNetworkResources.bundle/_CodeSignature/CodeDirectory`

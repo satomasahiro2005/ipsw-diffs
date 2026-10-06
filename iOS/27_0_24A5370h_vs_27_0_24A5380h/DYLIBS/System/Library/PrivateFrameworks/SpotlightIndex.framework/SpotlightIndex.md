@@ -2,99 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/SpotlightIndex.framework/SpotlightIndex`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4f8500` | `0x4f46d4` | **`-0x3e2c`** |
+| `__TEXT.__gcc_except_tab` | `0x41e4` | `0x37f0` | **`-0x9f4`** |
+| `__TEXT.__cstring` | `0x3574e` | `0x35d83` | **`+0x635`** |
+| `__DATA_CONST.__got` | `0x0` | `0x408` | **`+0x408`** |
+| `__DATA_DIRTY.__bss` | `0x3a728` | `0x3a9d8` | **`+0x2b0`** |
+| `__DATA.__bss` | `0x3850` | `0x3660` | **`-0x1f0`** |
+| `__TEXT.__unwind_info` | `0x6ab0` | `0x6950` | **`-0x160`** |
+| `__TEXT.__oslogstring` | `0x26d2d` | `0x26e41` | **`+0x114`** |
+| `__TEXT.__const` | `0xb28e` | `0xb1be` | **`-0xd0`** |
+| `__AUTH_CONST.__auth_got` | `0x1f98` | `0x2000` | **`+0x68`** |
+| `__AUTH_CONST.__const` | `0xa230` | `0xa270` | **`+0x40`** |
+| `__AUTH_CONST.__cfstring` | `0xf0e0` | `0xf100` | **`+0x20`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x18` | `0x30` | **`+0x18`** |
+| `__DATA.__common` | `0x18` | `—` | **`-0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0xc30` | `0xc48` | **`+0x18`** |
+| `__DATA_DIRTY.__common` | `0x24018` | `0x2402c` | **`+0x14`** |
+| `__DATA_CONST.__objc_arraydata` | `0x278` | `0x280` | **`+0x8`** |
+| `__DATA_DIRTY.__data` | `0x598` | `0x590` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__ustring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x4f8500
-+  __TEXT.__text: 0x4f46d4
-   __TEXT.__objc_methlist: 0xb04
--  __TEXT.__const: 0xb28e
--  __TEXT.__cstring: 0x3574e
--  __TEXT.__gcc_except_tab: 0x41e4
--  __TEXT.__oslogstring: 0x26d2d
-+  __TEXT.__const: 0xb1be
-+  __TEXT.__cstring: 0x35d83
-+  __TEXT.__gcc_except_tab: 0x37f0
-+  __TEXT.__oslogstring: 0x26e41
-   __TEXT.__ustring: 0x13f6
-   __TEXT.__dlopen_cstrs: 0x150
-   __TEXT.__dof_mds: 0x29b
--  __TEXT.__unwind_info: 0x6ab0
-+  __TEXT.__unwind_info: 0x6950
-   __TEXT.__eh_frame: 0x220
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+-2448.100.0.0.0
++2451.1.101.0.0
 
-   __DATA_CONST.__const: 0xa478
-   __DATA_CONST.__objc_classlist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xc30
-+  __DATA_CONST.__objc_selrefs: 0xc48
-   __DATA_CONST.__objc_superrefs: 0x70
--  __DATA_CONST.__objc_arraydata: 0x278
--  __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xa230
--  __AUTH_CONST.__cfstring: 0xf0e0
-+  __DATA_CONST.__objc_arraydata: 0x280
-+  __DATA_CONST.__got: 0x408
-+  __AUTH_CONST.__const: 0xa270
-+  __AUTH_CONST.__cfstring: 0xf100
-   __AUTH_CONST.__objc_const: 0x1508
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x120
--  __AUTH_CONST.__objc_doubleobj: 0x1b0
-   __AUTH_CONST.__objc_dictobj: 0x78
--  __AUTH_CONST.__objc_arrayobj: 0x18
-+  __AUTH_CONST.__objc_arrayobj: 0x30
-+  __AUTH_CONST.__objc_doubleobj: 0x1b0
-   __AUTH_CONST.__objc_floatobj: 0x10
--  __AUTH_CONST.__auth_got: 0x1f98
-+  __AUTH_CONST.__auth_got: 0x2000
-   __AUTH.__objc_data: 0x190
-   __AUTH.__data: 0x18d8
-   __DATA.__objc_ivar: 0x100
-   __DATA.__data: 0xe58
--  __DATA.__bss: 0x3850
--  __DATA.__common: 0x18
-+  __DATA.__bss: 0x3660
-   __DATA_DIRTY.__objc_data: 0x3c0
--  __DATA_DIRTY.__data: 0x598
--  __DATA_DIRTY.__bss: 0x3a728
--  __DATA_DIRTY.__common: 0x24018
-+  __DATA_DIRTY.__data: 0x590
-+  __DATA_DIRTY.__bss: 0x3a9d8
-+  __DATA_DIRTY.__common: 0x2402c
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreML.framework/CoreML
-
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 8504
--  Symbols:   22248
--  CStrings:  11953
+-  Symbols:   11744
+-  CStrings:  10370
 +  Functions: 8479
-+  Symbols:   22194
-+  CStrings:  11965
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__ustring : content changed
-~ __TEXT.__dof_mds : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   11708
++  CStrings:  10381
 Symbols:
 + GCC_except_table4116
 + GCC_except_table4809
@@ -279,9 +226,6 @@ Symbols:
 + _db_dryrun_lock
 + _db_longread_lock
 + _db_longread_unlock
-+ _objc_msgSend$newlineCharacterSet
-+ _objc_msgSend$rangeOfCharacterFromSet:
-+ _objc_msgSend$rangeOfString:options:
 + _tcmr
 + _utf8_byte_length.utf8_len_table
 + _utf8_byte_length_noerror.utf8_len_table
@@ -535,5 +479,4 @@ CStrings:
 - "lock->writer != pthread_self()"
 - "sdb2_rwlock.c"
 - "waiter->threadid"
-
 ```

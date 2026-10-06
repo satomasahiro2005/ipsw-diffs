@@ -2,31 +2,19 @@
 
 > `/System/Library/Frameworks/JournalingSuggestions.framework/JournalingSuggestions`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x62658` | `0x62690` | **`+0x38`** |
+| `__AUTH_CONST.__auth_got` | `0xf28` | `0xf20` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 417.0.0.0.0
--  __TEXT.__text: 0x62658
-+  __TEXT.__text: 0x62690
-   __TEXT.__objc_methlist: 0x27c
-   __TEXT.__const: 0x3960
-   __TEXT.__swift5_typeref: 0x21b2
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x3240
-   __AUTH_CONST.__objc_const: 0x678
--  __AUTH_CONST.__auth_got: 0xf28
-+  __AUTH_CONST.__auth_got: 0xf20
-   __AUTH.__objc_data: 0x6e8
-   __AUTH.__data: 0xe70
-   __DATA.__data: 0xf98
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 2314
--  Symbols:   5659
-+  Symbols:   5658
-   CStrings:  109
- 
+-  Symbols:   5592
++  Symbols:   5591
 Symbols:
 - _swift_retain_x9
 Functions:

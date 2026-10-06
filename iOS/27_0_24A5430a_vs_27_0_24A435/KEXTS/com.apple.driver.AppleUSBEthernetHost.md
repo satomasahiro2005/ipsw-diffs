@@ -2,13 +2,8 @@
 
 > `com.apple.driver.AppleUSBEthernetHost`
 
-```diff
+### Section Size Changes
 
- 167.0.0.0.0
-   __TEXT.__cstring: 0xbc4
--  __TEXT_EXEC.__text: 0x3cc4
-+  __TEXT_EXEC.__text: 0x3dbc
-   __TEXT_EXEC.__auth_stubs: 0x280
-   __DATA.__data: 0x188
-   __DATA.__common: 0x88
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x3cc4` | `0x3dbc` | **`+0xf8`** |

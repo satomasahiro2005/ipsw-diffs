@@ -2,20 +2,21 @@
 
 > `/System/Library/PrivateFrameworks/VoiceActions.framework/VoiceActions`
 
-```diff
+### Section Size Changes
 
- 99.0.0.0.0
--  __TEXT.__text: 0x1900e0
-+  __TEXT.__text: 0x190078
-   __TEXT.__objc_methlist: 0x1424
-   __TEXT.__const: 0xcd40
-   __TEXT.__cstring: 0x6bcd
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1900e0` | `0x190078` | **`-0x68`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2b531d528 -> sub_2b5230528 : 796 -> 784
-~ sub_2b5321098 -> sub_2b523408c : 2636 -> 2628
-~ sub_2b53281b4 -> sub_2b523b1a0 : 1444 -> 1436
-~ sub_2b534e4cc -> sub_2b52614b0 : 2088 -> 2076
-~ sub_2b534ecf4 -> sub_2b5261ccc : 3104 -> 3092
-~ sub_2b53636b0 -> sub_2b527667c : 2500 -> 2488
-~ sub_2b538a610 -> sub_2b529d5d0 : 2400 -> 2360
+~ sub_2b51b6528 -> sub_2b513a528 : 796 -> 784
+~ sub_2b51ba098 -> sub_2b513e08c : 2636 -> 2628
+~ sub_2b51c11b4 -> sub_2b51451a0 : 1444 -> 1436
+~ sub_2b51e74cc -> sub_2b516b4b0 : 2088 -> 2076
+~ sub_2b51e7cf4 -> sub_2b516bccc : 3104 -> 3092
+~ sub_2b51fc6b0 -> sub_2b518067c : 2500 -> 2488
+~ sub_2b5223610 -> sub_2b51a75d0 : 2400 -> 2360
 ```

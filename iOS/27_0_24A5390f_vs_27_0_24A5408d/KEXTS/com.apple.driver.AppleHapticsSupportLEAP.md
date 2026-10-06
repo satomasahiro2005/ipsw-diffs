@@ -2,35 +2,24 @@
 
 > `com.apple.driver.AppleHapticsSupportLEAP`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__const` | `0x7aa0` | `0x7440` | **`-0x660`** |
+| `__TEXT_EXEC.__text` | `0x3b780` | `0x3b8d8` | **`+0x158`** |
+| `__TEXT.__cstring` | `0x78b7` | `0x7811` | **`-0xa6`** |
+| `__TEXT.__os_log` | `0x985` | `0x9e6` | **`+0x61`** |
+
+### Other Changes
+
 ```diff
 
 -11.4.0.0.0
 +11.6.0.0.0
-   __TEXT.__const: 0x3e0
--  __TEXT.__cstring: 0x78b7
--  __TEXT.__os_log: 0x985
--  __TEXT_EXEC.__text: 0x3b780
-+  __TEXT.__cstring: 0x7811
-+  __TEXT.__os_log: 0x9e6
-+  __TEXT_EXEC.__text: 0x3b8d8
-   __TEXT_EXEC.__auth_stubs: 0x6c0
-   __DATA.__data: 0x6ac
-   __DATA.__common: 0x658
-   __DATA.__bss: 0xe60
-   __DATA_CONST.__mod_init_func: 0xf8
-   __DATA_CONST.__mod_term_func: 0x108
--  __DATA_CONST.__const: 0x7aa0
-+  __DATA_CONST.__const: 0x7440
-   __DATA_CONST.__weak_got: 0x90
-   __DATA_CONST.__kalloc_type: 0x1280
-   __DATA_CONST.__kalloc_var: 0x50
 
-   __DATA_CONST.__got: 0xf0
-   Functions: 1201
-   Symbols:   0
 -  CStrings:  1300
 +  CStrings:  1299
- 
 CStrings:
 + "12121122212111111121222222"
 + "1222221"

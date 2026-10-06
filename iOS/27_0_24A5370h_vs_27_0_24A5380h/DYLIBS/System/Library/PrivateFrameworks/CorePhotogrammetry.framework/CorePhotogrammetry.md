@@ -2,67 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/CorePhotogrammetry.framework/CorePhotogrammetry`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfa20ec` | `0xf09d70` | **`-0x9837c`** |
+| `__TEXT.__cstring` | `0x8325d` | `0x7e9a8` | **`-0x48b5`** |
+| `__TEXT.__unwind_info` | `0x327c0` | `0x323d0` | **`-0x3f0`** |
+| `__TEXT.__gcc_except_tab` | `0xa89b8` | `0xa8d58` | **`+0x3a0`** |
+| `__TEXT.__const` | `0x5623c` | `0x562bc` | **`+0x80`** |
+| `__TEXT.__eh_frame` | `0x7e0` | `0x860` | **`+0x80`** |
+| `__DATA.__common` | `0x148` | `0x130` | **`-0x18`** |
+| `__DATA_DIRTY.__common` | `0x260` | `0x278` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x1bc0` | `0x1bb8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xfa20ec
-+  __TEXT.__text: 0xf09d70
-   __TEXT.__init_offsets: 0xc
--  __TEXT.__gcc_except_tab: 0xa89b8
--  __TEXT.__cstring: 0x8325d
--  __TEXT.__const: 0x5623c
-+  __TEXT.__gcc_except_tab: 0xa8d58
-+  __TEXT.__const: 0x562bc
-+  __TEXT.__cstring: 0x7e9a8
-   __TEXT.__oslogstring: 0x4a2
--  __TEXT.__unwind_info: 0x327c0
--  __TEXT.__eh_frame: 0x7e0
-+  __TEXT.__unwind_info: 0x323d0
-+  __TEXT.__eh_frame: 0x860
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
-
-   __AUTH_CONST.__cfstring: 0x720
-   __AUTH_CONST.__weak_auth_got: 0xb0
-   __AUTH_CONST.__objc_intobj: 0x60
--  __AUTH_CONST.__auth_got: 0x1bc0
-+  __AUTH_CONST.__auth_got: 0x1bb8
-   __AUTH.__data: 0x38
-   __AUTH.__thread_vars: 0x60
-   __AUTH.__thread_bss: 0x8038
-   __DATA.__data: 0x4084
-   __DATA.__crash_info: 0x148
-   __DATA.__bss: 0x77d8
--  __DATA.__common: 0x148
--  __DATA_DIRTY.__common: 0x260
-+  __DATA.__common: 0x130
-+  __DATA_DIRTY.__common: 0x278
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/usd/libusd_ms.dylib
 -  Functions: 34223
 -  Symbols:   3247
--  CStrings:  5044
+-  CStrings:  4983
 +  Functions: 34117
 +  Symbols:   3246
-+  CStrings:  4988
- 
-Sections:
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
++  CStrings:  4927
 Symbols:
 - __ZNSt3__132__internal_log_hardening_failureEPKc
 CStrings:
@@ -122,5 +85,4 @@ CStrings:
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/string:3384: libc++ Hardening assertion __first <= __last failed: string::erase(first, last) called with invalid range\n"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/valarray:826: libc++ Hardening assertion __i < size() failed: valarray::operator[] index out of bounds\n"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/valarray:831: libc++ Hardening assertion __i < size() failed: valarray::operator[] index out of bounds\n"
-
 ```

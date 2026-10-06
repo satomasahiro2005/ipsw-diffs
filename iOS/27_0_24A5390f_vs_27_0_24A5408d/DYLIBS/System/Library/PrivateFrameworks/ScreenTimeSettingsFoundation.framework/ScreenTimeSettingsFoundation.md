@@ -2,121 +2,62 @@
 
 > `/System/Library/PrivateFrameworks/ScreenTimeSettingsFoundation.framework/ScreenTimeSettingsFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1aef9c` | `0x1db060` | **`+0x2c0c4`** |
+| `__TEXT.__oslogstring` | `0x9542` | `0xa312` | **`+0xdd0`** |
+| `__AUTH_CONST.__const` | `0x6b68` | `0x7918` | **`+0xdb0`** |
+| `__TEXT.__eh_frame` | `0x7d7c` | `0x8a50` | **`+0xcd4`** |
+| `__TEXT.__const` | `0x6a60` | `0x7600` | **`+0xba0`** |
+| `__DATA.__bss` | `0x3200` | `0x3c00` | **`+0xa00`** |
+| `__TEXT.__unwind_info` | `0x2cd0` | `0x3258` | **`+0x588`** |
+| `__TEXT.__swift5_typeref` | `0x4960` | `0x4dda` | **`+0x47a`** |
+| `__AUTH.__data` | `0x4c0` | `0x8d8` | **`+0x418`** |
+| `__TEXT.__constg_swiftt` | `0x3648` | `0x39cc` | **`+0x384`** |
+| `__TEXT.__swift5_capture` | `0x1074` | `0x13f4` | **`+0x380`** |
+| `__TEXT.__cstring` | `0x25c3` | `0x2933` | **`+0x370`** |
+| `__TEXT.__swift5_fieldmd` | `0x1eb8` | `0x2214` | **`+0x35c`** |
+| `__AUTH_CONST.__auth_got` | `0x2df8` | `0x3118` | **`+0x320`** |
+| `__TEXT.__swift5_reflstr` | `0x2048` | `0x2338` | **`+0x2f0`** |
+| `__AUTH_CONST.__objc_const` | `0x2618` | `0x28b0` | **`+0x298`** |
+| `__DATA.__data` | `0x13b8` | `0x1618` | **`+0x260`** |
+| `__DATA_DIRTY.__data` | `0x2ab8` | `0x2870` | **`-0x248`** |
+| `__AUTH.__objc_data` | `0x3f8` | `0x568` | **`+0x170`** |
+| `__DATA_CONST.__objc_selrefs` | `0xe78` | `0xf10` | **`+0x98`** |
+| `__TEXT.__swift_as_cont` | `0x3dc` | `0x46c` | **`+0x90`** |
+| `__TEXT.__objc_methlist` | `0x610` | `0x688` | **`+0x78`** |
+| `__TEXT.__swift5_proto` | `0x3f0` | `0x45c` | **`+0x6c`** |
+| `__TEXT.__swift5_assocty` | `0x338` | `0x3a0` | **`+0x68`** |
+| `__TEXT.__swift_as_entry` | `0x150` | `0x1b0` | **`+0x60`** |
+| `__TEXT.__swift_as_ret` | `0x1b4` | `0x208` | **`+0x54`** |
+| `__TEXT.__swift5_types` | `0x208` | `0x240` | **`+0x38`** |
+| `__DATA.__common` | `0x180` | `0x1b0` | **`+0x30`** |
+| `__DATA_DIRTY.__objc_data` | `0x668` | `0x640` | **`-0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x60` | `0x80` | **`+0x20`** |
+| `__TEXT.__swift5_protos` | `0x1a0` | `0x1b8` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0xc8` | `0xdc` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x108` | `0x118` | **`+0x10`** |
+| `__DATA_DIRTY.__common` | `0x1f0` | `0x1e8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -91.1.0.0.0
--  __TEXT.__text: 0x1aef9c
--  __TEXT.__objc_methlist: 0x610
--  __TEXT.__const: 0x6a60
--  __TEXT.__swift5_typeref: 0x4960
--  __TEXT.__swift5_fieldmd: 0x1eb8
--  __TEXT.__constg_swiftt: 0x3648
--  __TEXT.__swift5_reflstr: 0x2048
--  __TEXT.__swift5_builtin: 0xc8
--  __TEXT.__oslogstring: 0x9542
--  __TEXT.__cstring: 0x25c3
--  __TEXT.__swift5_assocty: 0x338
--  __TEXT.__swift5_protos: 0x1a0
--  __TEXT.__swift5_proto: 0x3f0
--  __TEXT.__swift5_types: 0x208
--  __TEXT.__swift_as_entry: 0x150
--  __TEXT.__swift_as_ret: 0x1b4
--  __TEXT.__swift_as_cont: 0x3dc
--  __TEXT.__swift5_capture: 0x1074
 +97.0.100.2.0
-+  __TEXT.__text: 0x1db060
-+  __TEXT.__objc_methlist: 0x688
-+  __TEXT.__const: 0x7600
-+  __TEXT.__swift5_typeref: 0x4dda
-+  __TEXT.__swift5_fieldmd: 0x2214
-+  __TEXT.__constg_swiftt: 0x39cc
-+  __TEXT.__swift5_reflstr: 0x2338
-+  __TEXT.__swift5_builtin: 0xdc
-+  __TEXT.__cstring: 0x2933
-+  __TEXT.__swift5_capture: 0x13f4
-+  __TEXT.__oslogstring: 0xa312
-+  __TEXT.__swift5_assocty: 0x3a0
-+  __TEXT.__swift5_protos: 0x1b8
-+  __TEXT.__swift5_proto: 0x45c
-+  __TEXT.__swift5_types: 0x240
-+  __TEXT.__swift_as_entry: 0x1b0
-+  __TEXT.__swift_as_ret: 0x208
-+  __TEXT.__swift_as_cont: 0x46c
-   __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__unwind_info: 0x2cd0
--  __TEXT.__eh_frame: 0x7d7c
-+  __TEXT.__unwind_info: 0x3258
-+  __TEXT.__eh_frame: 0x8a50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x2e8
--  __DATA_CONST.__objc_classlist: 0x108
-+  __DATA_CONST.__objc_classlist: 0x118
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xe78
-+  __DATA_CONST.__objc_selrefs: 0xf10
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x6b68
--  __AUTH_CONST.__cfstring: 0x60
--  __AUTH_CONST.__objc_const: 0x2618
--  __AUTH_CONST.__auth_got: 0x2df8
--  __AUTH.__objc_data: 0x3f8
--  __AUTH.__data: 0x4c0
--  __DATA.__data: 0x13b8
-+  __AUTH_CONST.__const: 0x7918
-+  __AUTH_CONST.__cfstring: 0x80
-+  __AUTH_CONST.__objc_const: 0x28b0
-+  __AUTH_CONST.__auth_got: 0x3118
-+  __AUTH.__objc_data: 0x568
-+  __AUTH.__data: 0x8d8
-+  __DATA.__data: 0x1618
-   __DATA.__objc_stublist: 0x8
--  __DATA.__bss: 0x3200
--  __DATA.__common: 0x180
--  __DATA_DIRTY.__objc_data: 0x668
--  __DATA_DIRTY.__data: 0x2ab8
-+  __DATA.__common: 0x1b0
-+  __DATA.__bss: 0x3c00
-+  __DATA_DIRTY.__objc_data: 0x640
-+  __DATA_DIRTY.__data: 0x2870
-   __DATA_DIRTY.__bss: 0x800
--  __DATA_DIRTY.__common: 0x1f0
-+  __DATA_DIRTY.__common: 0x1e8
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-   - /System/Library/Frameworks/CoreData.framework/CoreData
 
-   - /System/Library/Frameworks/ManagedSettings.framework/ManagedSettings
-   - /System/Library/Frameworks/Security.framework/Security
-   - /System/Library/Frameworks/UserNotifications.framework/UserNotifications
 +  - /System/Library/PrivateFrameworks/AppStoreDaemon.framework/AppStoreDaemon
-   - /System/Library/PrivateFrameworks/AppleMediaServices.framework/AppleMediaServices
-   - /System/Library/PrivateFrameworks/AskTo.framework/AskTo
-   - /System/Library/PrivateFrameworks/AskToCore.framework/AskToCore
 
-   - /System/Library/PrivateFrameworks/DeviceManagement.framework/DeviceManagement
-   - /System/Library/PrivateFrameworks/FamilyCircle.framework/FamilyCircle
-   - /System/Library/PrivateFrameworks/FamilyControlsObjC.framework/FamilyControlsObjC
 +  - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
-   - /System/Library/PrivateFrameworks/IconServices.framework/IconServices
-   - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
-   - /System/Library/PrivateFrameworks/ManagedSettingsObjC.framework/ManagedSettingsObjC
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3617
--  Symbols:   2113
+-  Symbols:   1708
 -  CStrings:  791
 +  Functions: 4040
-+  Symbols:   2239
++  Symbols:   1818
 +  CStrings:  855
- 
 Symbols:
 + _CKErrorDomain
 + _OBJC_CLASS_$_ASDAppStoreService
@@ -183,32 +124,6 @@ Symbols:
 + _associated conformance So11CKErrorCodeV10Foundation06_ErrorB8ProtocolSCSQ
 + _associated conformance So20MOBatchSettingsStoreC010ScreenTimeB10Foundation05BatchB7StoringAC07PrivacyB5GroupAcDP_AC0ibH0
 + _objc_claimAutoreleasedReturnValue
-+ _objc_msgSend$areAppRatingExceptionsAllowedForScreenTime
-+ _objc_msgSend$attributesByName
-+ _objc_msgSend$canonicalBundleIdentifier
-+ _objc_msgSend$defaultService
-+ _objc_msgSend$entity
-+ _objc_msgSend$fetchSharesInPersistentStore:error:
-+ _objc_msgSend$fetchSharesMatchingObjectIDs:error:
-+ _objc_msgSend$identifier
-+ _objc_msgSend$initWithLongLong:
-+ _objc_msgSend$initWithUnsignedLongLong:
-+ _objc_msgSend$isMe
-+ _objc_msgSend$migrationJournal
-+ _objc_msgSend$migrationUpdatesJournal
-+ _objc_msgSend$privacy
-+ _objc_msgSend$recordID
-+ _objc_msgSend$revokeAppConsentForAccountID:itemID:account:completionBlock:
-+ _objc_msgSend$setDateFormat:
-+ _objc_msgSend$setDenyAccessibilityAsk:
-+ _objc_msgSend$setDenySharedMediaLibraries:
-+ _objc_msgSend$setForceLimitAdTracking:
-+ _objc_msgSend$setTimeZone:
-+ _objc_msgSend$storeIdentifier
-+ _objc_msgSend$type
-+ _objc_msgSend$valueForKey:
-+ _objc_msgSend$zoneID
-+ _objc_msgSend$zoneName
 + _objc_opt_respondsToSelector
 + _swift_conformsToProtocol2
 + _swift_getFunctionTypeMetadata0
@@ -356,16 +271,6 @@ Symbols:
 - _associated conformance 28ScreenTimeSettingsFoundation0abC8PINStoreC16UpdatingPINCacheCs12IdentifiableAA2IDsAFP_SH
 - _associated conformance 28ScreenTimeSettingsFoundation16StorefrontClientC0eF5ErrorOSHAASQ
 - _associated conformance 28ScreenTimeSettingsFoundation24AMSStorefrontQuerySourceC0E5ErrorOSHAASQ
-- _objc_msgSend$ams_activeiTunesAccountForMediaType:
-- _objc_msgSend$ams_altDSID
-- _objc_msgSend$ams_sharedAccountStore
-- _objc_msgSend$bagForProfile:profileVersion:
-- _objc_msgSend$fetchEventsMatchingFetchRequest:
-- _objc_msgSend$fetchRequestForEvents
-- _objc_msgSend$initWithParentAccount:childDSID:bag:
-- _objc_msgSend$perform
-- _objc_msgSend$stringForKey:
-- _objc_msgSend$valuePromise
 - _symbolic $s28ScreenTimeSettingsFoundation24StorefrontClientProtocolP
 - _symbolic $s28ScreenTimeSettingsFoundation32AMSStorefrontQuerySourceProtocolP
 - _symbolic $s28ScreenTimeSettingsFoundation32ManagedChildMigrationRemediatingP

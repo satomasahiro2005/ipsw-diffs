@@ -2,77 +2,47 @@
 
 > `/System/Library/DataClassMigrators/SpringBoard.migrator/SpringBoard`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__gcc_except_tab`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xe4cc` | `0xebbc` | **`+0x6f0`** |
+| `__TEXT.__objc_stubs` | `0x19a0` | `0x1be0` | **`+0x240`** |
+| `__TEXT.__objc_methname` | `0x19e1` | `0x1b92` | **`+0x1b1`** |
+| `__TEXT.__oslogstring` | `0x139e` | `0x153e` | **`+0x1a0`** |
+| `__DATA.__objc_const` | `0xd28` | `0xdb8` | **`+0x90`** |
+| `__DATA.__objc_selrefs` | `0x7b8` | `0x848` | **`+0x90`** |
+| `__DATA.__objc_data` | `0x280` | `0x2d0` | **`+0x50`** |
+| `__TEXT.__auth_stubs` | `0x5e0` | `0x610` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x64c` | `0x67c` | **`+0x30`** |
+| `__TEXT.__objc_classname` | `0x11a` | `0x145` | **`+0x2b`** |
+| `__DATA_CONST.__cfstring` | `0xf20` | `0xf40` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x228` | `0x248` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x270` | `0x290` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x18bb` | `0x18d9` | **`+0x1e`** |
+| `__DATA_CONST.__auth_got` | `0x300` | `0x318` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x40` | `0x48` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_dictobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA.__data`
+- `__TEXT.__gcc_except_tab`
+
+### Other Changes
 
 ```diff
 
- 4636.115.0.0.0
--  __TEXT.__text: 0xe4cc
--  __TEXT.__auth_stubs: 0x5e0
--  __TEXT.__objc_stubs: 0x19a0
--  __TEXT.__objc_methlist: 0x64c
-+  __TEXT.__text: 0xebbc
-+  __TEXT.__auth_stubs: 0x610
-+  __TEXT.__objc_stubs: 0x1be0
-+  __TEXT.__objc_methlist: 0x67c
-   __TEXT.__const: 0x80
--  __TEXT.__cstring: 0x18bb
--  __TEXT.__objc_methname: 0x19e1
--  __TEXT.__oslogstring: 0x139e
--  __TEXT.__objc_classname: 0x11a
-+  __TEXT.__cstring: 0x18d9
-+  __TEXT.__objc_methname: 0x1b92
-+  __TEXT.__oslogstring: 0x153e
-+  __TEXT.__objc_classname: 0x145
-   __TEXT.__objc_methtype: 0x329
-   __TEXT.__gcc_except_tab: 0x14c
--  __TEXT.__unwind_info: 0x270
-+  __TEXT.__unwind_info: 0x290
-   __DATA_CONST.__const: 0x15f8
--  __DATA_CONST.__cfstring: 0xf20
--  __DATA_CONST.__objc_classlist: 0x40
-+  __DATA_CONST.__cfstring: 0xf40
-+  __DATA_CONST.__objc_classlist: 0x48
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-
-   __DATA_CONST.__objc_arraydata: 0x120
-   __DATA_CONST.__objc_dictobj: 0x28
-   __DATA_CONST.__objc_arrayobj: 0x30
--  __DATA_CONST.__auth_got: 0x300
--  __DATA_CONST.__got: 0x228
--  __DATA.__objc_const: 0xd28
--  __DATA.__objc_selrefs: 0x7b8
-+  __DATA_CONST.__auth_got: 0x318
-+  __DATA_CONST.__got: 0x248
-+  __DATA.__objc_const: 0xdb8
-+  __DATA.__objc_selrefs: 0x848
-   __DATA.__objc_ivar: 0x5c
--  __DATA.__objc_data: 0x280
-+  __DATA.__objc_data: 0x2d0
-   __DATA.__data: 0x128
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 642
 -  Symbols:   379
 -  CStrings:  692
 +  Functions: 647
 +  Symbols:   387
 +  CStrings:  717
- 
 Symbols:
 + _CATransform3DMakeTranslation
 + _CFPreferencesGetAppBooleanValue

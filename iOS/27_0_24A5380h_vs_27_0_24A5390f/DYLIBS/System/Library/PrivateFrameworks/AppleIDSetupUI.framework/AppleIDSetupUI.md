@@ -2,110 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/AppleIDSetupUI.framework/AppleIDSetupUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH.__objc_data`
-- `__DATA.__objc_stublist`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x186590` | `0x1876a0` | **`+0x1110`** |
+| `__AUTH_CONST.__const` | `0xa7f0` | `0xa920` | **`+0x130`** |
+| `__TEXT.__const` | `0xd6f4` | `0xd7f4` | **`+0x100`** |
+| `__TEXT.__swift5_typeref` | `0xee60` | `0xef10` | **`+0xb0`** |
+| `__TEXT.__cstring` | `0x4e29` | `0x4e89` | **`+0x60`** |
+| `__TEXT.__swift5_reflstr` | `0x3e52` | `0x3eb2` | **`+0x60`** |
+| `__TEXT.__swift5_fieldmd` | `0x3530` | `0x357c` | **`+0x4c`** |
+| `__TEXT.__swift5_capture` | `0x2c98` | `0x2cd8` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1d18` | `0x1d50` | **`+0x38`** |
+| `__AUTH_CONST.__objc_const` | `0x118e0` | `0x11908` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0x14d0` | `0x14f0` | **`+0x20`** |
+| `__TEXT.__oslogstring` | `0xb68d` | `0xb6ad` | **`+0x20`** |
+| `__TEXT.__constg_swiftt` | `0x5688` | `0x56a4` | **`+0x1c`** |
+| `__TEXT.__swift5_builtin` | `0x1b8` | `0x1cc` | **`+0x14`** |
+| `__AUTH.__data` | `0x3b10` | `0x3b20` | **`+0x10`** |
+| `__DATA.__data` | `0x5728` | `0x5718` | **`-0x10`** |
+| `__TEXT.__swift5_mpenum` | `0x10` | `0x20` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x2510` | `0x2508` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x56a8` | `0x56a0` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0x3ac` | `0x3b0` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -124.0.0.0.0
--  __TEXT.__text: 0x186590
 +125.0.0.0.0
-+  __TEXT.__text: 0x1876a0
-   __TEXT.__objc_methlist: 0x26cc
--  __TEXT.__const: 0xd6f4
--  __TEXT.__cstring: 0x4e29
-+  __TEXT.__const: 0xd7f4
-+  __TEXT.__cstring: 0x4e89
-   __TEXT.__gcc_except_tab: 0x58
--  __TEXT.__constg_swiftt: 0x5688
--  __TEXT.__swift5_typeref: 0xee60
--  __TEXT.__swift5_builtin: 0x1b8
--  __TEXT.__swift5_reflstr: 0x3e52
--  __TEXT.__swift5_fieldmd: 0x3530
-+  __TEXT.__constg_swiftt: 0x56a4
-+  __TEXT.__swift5_typeref: 0xef10
-+  __TEXT.__swift5_builtin: 0x1cc
-+  __TEXT.__swift5_reflstr: 0x3eb2
-+  __TEXT.__swift5_fieldmd: 0x357c
-   __TEXT.__swift5_assocty: 0xc20
-   __TEXT.__swift5_proto: 0x4b8
--  __TEXT.__swift5_types: 0x3ac
--  __TEXT.__oslogstring: 0xb68d
-+  __TEXT.__swift5_types: 0x3b0
-+  __TEXT.__oslogstring: 0xb6ad
-   __TEXT.__swift_as_entry: 0x458
-   __TEXT.__swift_as_ret: 0x424
-   __TEXT.__swift_as_cont: 0x8dc
--  __TEXT.__swift5_capture: 0x2c98
-+  __TEXT.__swift5_capture: 0x2cd8
-   __TEXT.__swift5_protos: 0x70
--  __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x56a8
-+  __TEXT.__swift5_mpenum: 0x20
-+  __TEXT.__unwind_info: 0x56a0
-   __TEXT.__eh_frame: 0xb0d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x218
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1d18
-+  __DATA_CONST.__objc_selrefs: 0x1d50
-   __DATA_CONST.__objc_protorefs: 0x120
-   __DATA_CONST.__objc_superrefs: 0x18
-   __DATA_CONST.__objc_arraydata: 0xb0
--  __DATA_CONST.__got: 0x14d0
--  __AUTH_CONST.__const: 0xa7f0
-+  __DATA_CONST.__got: 0x14f0
-+  __AUTH_CONST.__const: 0xa920
-   __AUTH_CONST.__cfstring: 0xae0
--  __AUTH_CONST.__objc_const: 0x118e0
-+  __AUTH_CONST.__objc_const: 0x11908
-   __AUTH_CONST.__objc_arrayobj: 0x48
--  __AUTH_CONST.__auth_got: 0x2510
-+  __AUTH_CONST.__auth_got: 0x2508
-   __AUTH.__objc_data: 0x5160
--  __AUTH.__data: 0x3b10
-+  __AUTH.__data: 0x3b20
-   __DATA.__objc_ivar: 0x50
--  __DATA.__data: 0x5728
-+  __DATA.__data: 0x5718
-   __DATA.__objc_stublist: 0x8
-   __DATA.__bss: 0x8168
-   __DATA.__common: 0x308
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7224
--  Symbols:   3859
+-  Symbols:   3174
 -  CStrings:  1278
 +  Functions: 7233
-+  Symbols:   3880
++  Symbols:   3188
 +  CStrings:  1281
- 
 Symbols:
 + _OBJC_CLASS_$_AAFAnalyticsEvent
 + _OBJC_CLASS_$_AAFAnalyticsReporter
@@ -116,13 +50,6 @@ Symbols:
 + ___swift_closure_destructor.43Tm
 + _get_enum_tag_for_layout_string 14AppleIDSetupUI18SignInOptionsEventO
 + _kAAFFlowIdString
-+ _objc_msgSend$initWithClientType:clientBundleId:clientName:
-+ _objc_msgSend$initWithEventName:eventCategory:initData:altDSID:
-+ _objc_msgSend$initWithTransport:
-+ _objc_msgSend$restorationIdentifier
-+ _objc_msgSend$sendEvent:
-+ _objc_msgSend$setAlwaysBounceVertical:
-+ _objc_msgSend$setRestorationIdentifier:
 + _symbolic SS6flowID_SS6methodSb17proxAuthAvailablet
 + _symbolic SS6flowID_Sb17proxAuthAvailableSi11optionCountt
 + _symbolic SS6flowID_t

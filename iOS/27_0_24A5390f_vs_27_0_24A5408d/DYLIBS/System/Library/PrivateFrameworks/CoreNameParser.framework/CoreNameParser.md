@@ -2,62 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/CoreNameParser.framework/CoreNameParser`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__cfstring` | `0x620` | `0x80a0` | **`+0x7a80`** |
+| `__DATA_CONST.__objc_arraydata` | `0x18` | `0x3eb8` | **`+0x3ea0`** |
+| `__TEXT.__ustring` | `0x3c` | `0x1618` | **`+0x15dc`** |
+| `__TEXT.__cstring` | `0x39f` | `0xc41` | **`+0x8a2`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x18` | `0x198` | **`+0x180`** |
+| `__TEXT.__text` | `0x5da0` | `0x5d0c` | **`-0x94`** |
+| `__AUTH_CONST.__objc_dictobj` | `0x28` | `0x78` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0xc8` | `0xb8` | **`-0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x500` | `0x4f0` | **`-0x10`** |
+| `__DATA_CONST.__const` | `0x100` | `0x108` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -14.0.0.0.0
--  __TEXT.__text: 0x5da0
 +15.0.0.0.0
-+  __TEXT.__text: 0x5d0c
-   __TEXT.__objc_methlist: 0x3dc
-   __TEXT.__const: 0x98
--  __TEXT.__cstring: 0x39f
-+  __TEXT.__cstring: 0xc41
-+  __TEXT.__ustring: 0x1618
-   __TEXT.__gcc_except_tab: 0xe8
--  __TEXT.__ustring: 0x3c
-   __TEXT.__unwind_info: 0x1f0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x100
-+  __DATA_CONST.__const: 0x108
-   __DATA_CONST.__objc_classlist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x500
-+  __DATA_CONST.__objc_selrefs: 0x4f0
-   __DATA_CONST.__objc_superrefs: 0x20
--  __DATA_CONST.__objc_arraydata: 0x18
--  __DATA_CONST.__got: 0xc8
-+  __DATA_CONST.__objc_arraydata: 0x3eb8
-+  __DATA_CONST.__got: 0xb8
-   __AUTH_CONST.__const: 0x160
--  __AUTH_CONST.__cfstring: 0x620
-+  __AUTH_CONST.__cfstring: 0x80a0
-   __AUTH_CONST.__objc_const: 0x528
--  __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__objc_dictobj: 0x28
-+  __AUTH_CONST.__objc_arrayobj: 0x198
-+  __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__objc_intobj: 0x48
-   __AUTH_CONST.__auth_got: 0x1f0
-   __DATA.__objc_ivar: 0x44
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 123
--  Symbols:   431
+-  Symbols:   284
 -  CStrings:  56
-+  Symbols:   428
++  Symbols:   283
 +  CStrings:  1036
- 
 Symbols:
 + _name_components_data
 - _OBJC_CLASS_$_NSData
 - _OBJC_CLASS_$_NSPropertyListSerialization
-- _objc_msgSend$initWithContentsOfFile:options:error:
-- _objc_msgSend$propertyListWithData:options:format:error:
 Functions:
 ~ -[NPNameComponentsData init] : 288 -> 112
 ~ -[NPNameParser namingTraditionForName:] : 1400 -> 1428

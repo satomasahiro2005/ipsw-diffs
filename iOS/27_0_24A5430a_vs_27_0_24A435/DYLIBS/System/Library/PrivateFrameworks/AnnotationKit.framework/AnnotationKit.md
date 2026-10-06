@@ -2,22 +2,23 @@
 
 > `/System/Library/PrivateFrameworks/AnnotationKit.framework/AnnotationKit`
 
-```diff
+### Section Size Changes
 
- 582.0.0.0.0
--  __TEXT.__text: 0xd52f0
-+  __TEXT.__text: 0xd5328
-   __TEXT.__objc_methlist: 0xf128
-   __TEXT.__cstring: 0x62fc
-   __TEXT.__const: 0xf60
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd52f0` | `0xd5328` | **`+0x38`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_251ced5fc -> sub_2527415fc : 376 -> 380
-~ sub_251cedecc -> sub_252741ed0 : 232 -> 236
-~ sub_251cedfb4 -> sub_252741fbc : 280 -> 284
-~ sub_251cee0cc -> sub_2527420d8 : 248 -> 252
-~ sub_251d48ad8 -> sub_25279cae8 : 2324 -> 2332
-~ sub_251d4955c -> sub_25279d574 : 1196 -> 1216
-~ sub_251d49f9c -> sub_25279dfc8 : 1116 -> 1124
-~ sub_251d6c0a8 -> sub_2527c00dc : 196 -> 204
-~ sub_251d841cc -> sub_2527d8208 : 10160 -> 10156
+~ sub_251bb75fc -> sub_25260a5fc : 376 -> 380
+~ sub_251bb7ecc -> sub_25260aed0 : 232 -> 236
+~ sub_251bb7fb4 -> sub_25260afbc : 280 -> 284
+~ sub_251bb80cc -> sub_25260b0d8 : 248 -> 252
+~ sub_251c12ad8 -> sub_252665ae8 : 2324 -> 2332
+~ sub_251c1355c -> sub_252666574 : 1196 -> 1216
+~ sub_251c13f9c -> sub_252666fc8 : 1116 -> 1124
+~ sub_251c360a8 -> sub_2526890dc : 196 -> 204
+~ sub_251c4e1cc -> sub_2526a1208 : 10160 -> 10156
 ```

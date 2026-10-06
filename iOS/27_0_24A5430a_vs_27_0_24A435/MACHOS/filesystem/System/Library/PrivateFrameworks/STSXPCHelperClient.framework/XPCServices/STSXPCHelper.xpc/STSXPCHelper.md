@@ -2,20 +2,21 @@
 
 > `/System/Library/PrivateFrameworks/STSXPCHelperClient.framework/XPCServices/STSXPCHelper.xpc/STSXPCHelper`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3a650` | `0x3a654` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__const`
 - `__TEXT.__objc_methlist`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
 
-```diff
+### Other Changes
 
- 6.0.15.0.0
--  __TEXT.__text: 0x3a650
-+  __TEXT.__text: 0x3a654
-   __TEXT.__auth_stubs: 0xb00
-   __TEXT.__delay_helper: 0x114
-   __TEXT.__objc_stubs: 0x46c0
+```text
 Functions:
 ~ sub_100008dc8 : 404 -> 408
 ```

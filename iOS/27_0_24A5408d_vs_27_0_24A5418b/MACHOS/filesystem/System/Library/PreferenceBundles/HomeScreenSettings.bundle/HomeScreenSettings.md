@@ -2,15 +2,14 @@
 
 > `/System/Library/PreferenceBundles/HomeScreenSettings.bundle/HomeScreenSettings`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -1214.0.0.0.0
 +1214.100.0.0.0
-   __TEXT.__text: 0x902c
-   __TEXT.__auth_stubs: 0xad0
-   __TEXT.__objc_stubs: 0x340
 ```

@@ -2,115 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/AppleMediaServices.framework/AppleMediaServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8b5dbc` | `0x8ba008` | **`+0x424c`** |
+| `__AUTH.__objc_data` | `0xb9e8` | `0xb290` | **`-0x758`** |
+| `__DATA_DIRTY.__objc_data` | `0x5660` | `0x5db8` | **`+0x758`** |
+| `__DATA_DIRTY.__data` | `0x2c30` | `0x2fc8` | **`+0x398`** |
+| `__DATA.__bss` | `0x26d60` | `0x270e0` | **`+0x380`** |
+| `__AUTH.__data` | `0x3858` | `0x3530` | **`-0x328`** |
+| `__TEXT.__cstring` | `0x30bd2` | `0x30e0c` | **`+0x23a`** |
+| `__AUTH_CONST.__const` | `0x3c960` | `0x3cb80` | **`+0x220`** |
+| `__TEXT.__oslogstring` | `0x38416` | `0x385a8` | **`+0x192`** |
+| `__TEXT.__const` | `0x60350` | `0x604c0` | **`+0x170`** |
+| `__TEXT.__eh_frame` | `0x1ffec` | `0x20134` | **`+0x148`** |
+| `__AUTH_CONST.__objc_const` | `0x41f28` | `0x42050` | **`+0x128`** |
+| `__TEXT.__swift5_fieldmd` | `0x7c44` | `0x7d60` | **`+0x11c`** |
+| `__TEXT.__swift5_reflstr` | `0x671e` | `0x681e` | **`+0x100`** |
+| `__TEXT.__objc_methlist` | `0x25484` | `0x25544` | **`+0xc0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x10648` | `0x106d0` | **`+0x88`** |
+| `__TEXT.__swift5_capture` | `0x779c` | `0x7810` | **`+0x74`** |
+| `__TEXT.__gcc_except_tab` | `0x54ec` | `0x547c` | **`-0x70`** |
+| `__TEXT.__unwind_info` | `0x16910` | `0x16980` | **`+0x70`** |
+| `__TEXT.__constg_swiftt` | `0x7b08` | `0x7b68` | **`+0x60`** |
+| `__AUTH_CONST.__cfstring` | `0x24300` | `0x24340` | **`+0x40`** |
+| `__TEXT.__swift5_typeref` | `0x907f` | `0x90bf` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0xd858` | `0xd888` | **`+0x30`** |
+| `__DATA.__objc_ivar` | `0x1a5c` | `0x1a78` | **`+0x1c`** |
+| `__TEXT.__swift5_proto` | `0x17b4` | `0x17d0` | **`+0x1c`** |
+| `__AUTH_CONST.__auth_got` | `0x27a8` | `0x27c0` | **`+0x18`** |
+| `__DATA.__data` | `0x91e4` | `0x91d8` | **`-0xc`** |
+| `__TEXT.__swift_as_cont` | `0x1a9c` | `0x1aa8` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `0xda8` | `0xdb4` | **`+0xc`** |
+| `__DATA.__common` | `0xb74` | `0xb6c` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x1b38` | `0x1b40` | **`+0x8`** |
+| `__DATA_DIRTY.__common` | `0xa0` | `0xa8` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x8f4` | `0x8fc` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0xafc` | `0xb00` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -10.1.11.2.1
--  __TEXT.__text: 0x86c764
 +10.1.13.2.1
-+  __TEXT.__text: 0x8706c4
-   __TEXT.__lazy_helpers: 0x42f4
--  __TEXT.__objc_methlist: 0x25484
--  __TEXT.__const: 0x63fd0
-+  __TEXT.__objc_methlist: 0x25544
-+  __TEXT.__const: 0x64140
-   __TEXT.__dlopen_cstrs: 0x990
--  __TEXT.__cstring: 0x30bd2
--  __TEXT.__swift5_typeref: 0x907f
--  __TEXT.__swift5_reflstr: 0x671e
-+  __TEXT.__cstring: 0x30e0c
-+  __TEXT.__swift5_typeref: 0x90bf
-+  __TEXT.__swift5_reflstr: 0x681e
-   __TEXT.__swift5_assocty: 0x13b0
--  __TEXT.__constg_swiftt: 0x7b08
-+  __TEXT.__constg_swiftt: 0x7b68
-   __TEXT.__swift5_builtin: 0x53c
--  __TEXT.__swift5_fieldmd: 0x7c44
--  __TEXT.__swift5_proto: 0x17b4
--  __TEXT.__swift5_types: 0x8f4
--  __TEXT.__swift_as_entry: 0xafc
--  __TEXT.__swift_as_ret: 0xda8
--  __TEXT.__swift_as_cont: 0x1a9c
--  __TEXT.__swift5_capture: 0x779c
-+  __TEXT.__swift5_fieldmd: 0x7d60
-+  __TEXT.__swift5_proto: 0x17d0
-+  __TEXT.__swift5_types: 0x8fc
-+  __TEXT.__swift_as_entry: 0xb00
-+  __TEXT.__swift_as_ret: 0xdb4
-+  __TEXT.__swift_as_cont: 0x1aa8
-+  __TEXT.__swift5_capture: 0x7810
-   __TEXT.__swift5_mpenum: 0xd4
-   __TEXT.__swift5_protos: 0x15c
--  __TEXT.__oslogstring: 0x38416
--  __TEXT.__gcc_except_tab: 0x54ec
-+  __TEXT.__oslogstring: 0x385a8
-+  __TEXT.__gcc_except_tab: 0x547c
-   __TEXT.__ustring: 0x204
--  __TEXT.__unwind_info: 0x1a9e8
--  __TEXT.__eh_frame: 0x2005c
-+  __TEXT.__unwind_info: 0x1a640
-+  __TEXT.__eh_frame: 0x201b4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xd838
-+  __DATA_CONST.__const: 0xd868
-   __DATA_CONST.__objc_classlist: 0x16c0
-   __DATA_CONST.__objc_catlist: 0xf0
-   __DATA_CONST.__objc_protolist: 0x4e8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x10648
-+  __DATA_CONST.__objc_selrefs: 0x106d0
-   __DATA_CONST.__objc_protorefs: 0x278
-   __DATA_CONST.__objc_superrefs: 0xd28
-   __DATA_CONST.__objc_arraydata: 0x5f8
--  __DATA_CONST.__got: 0x1b38
--  __AUTH_CONST.__const: 0x3c560
--  __AUTH_CONST.__cfstring: 0x24300
--  __AUTH_CONST.__objc_const: 0x41f28
-+  __DATA_CONST.__got: 0x1b40
-+  __AUTH_CONST.__const: 0x3c780
-+  __AUTH_CONST.__cfstring: 0x24340
-+  __AUTH_CONST.__objc_const: 0x42050
-   __AUTH_CONST.__lazy_load_got: 0x638
-   __AUTH_CONST.__objc_intobj: 0xd20
-   __AUTH_CONST.__objc_arrayobj: 0x180
-   __AUTH_CONST.__objc_dictobj: 0x118
--  __AUTH_CONST.__auth_got: 0x27a8
--  __AUTH.__objc_data: 0xb9e8
--  __AUTH.__data: 0x3858
--  __DATA.__objc_ivar: 0x1a5c
--  __DATA.__data: 0x91bc
--  __DATA.__common: 0xb74
-+  __AUTH_CONST.__auth_got: 0x27c0
-+  __AUTH.__objc_data: 0xb290
-+  __AUTH.__data: 0x3530
-+  __DATA.__objc_ivar: 0x1a78
-+  __DATA.__data: 0x91b0
-+  __DATA.__common: 0xb6c
-   __DATA_DIRTY.__objc_ivar: 0x72c
--  __DATA_DIRTY.__objc_data: 0x5660
--  __DATA_DIRTY.__data: 0x2c30
-+  __DATA_DIRTY.__objc_data: 0x5db8
-+  __DATA_DIRTY.__data: 0x2fc8
-   __DATA_DIRTY.__bss: 0x62e0
--  __DATA_DIRTY.__common: 0xa0
-+  __DATA_DIRTY.__common: 0xa8
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 35700
--  Symbols:   33929
+-  Functions: 35702
+-  Symbols:   27306
 -  CStrings:  9825
-+  Functions: 35824
-+  Symbols:   33975
++  Functions: 35826
++  Symbols:   27341
 +  CStrings:  9845
- 
 Symbols:
 + +[AMSDefaults cardEnrollmentWarmWindowCount]
 + +[AMSDefaults cardEnrollmentWarmWindowStart]
@@ -151,19 +94,6 @@ Symbols:
 + _associated conformance 18AppleMediaServices19SelfieConfigurationV17FaceIDCalibrationV10CodingKeys33_5876F864F6DA530D109B30F5992255AFLLOSHAASQ
 + _associated conformance 18AppleMediaServices19SelfieConfigurationV17FaceIDCalibrationV10CodingKeys33_5876F864F6DA530D109B30F5992255AFLLOs0H3KeyAAs23CustomStringConvertible
 + _associated conformance 18AppleMediaServices19SelfieConfigurationV17FaceIDCalibrationV10CodingKeys33_5876F864F6DA530D109B30F5992255AFLLOs0H3KeyAAs28CustomDebugStringConvertible
-+ _objc_msgSend$_bundleFactsLocked
-+ _objc_msgSend$_bundleInfoStringForKey:bundleIdentifier:record:
-+ _objc_msgSend$_resolveBundleURLLocked
-+ _objc_msgSend$_resolveBundleVersionLocked
-+ _objc_msgSend$_resolveClientVersionLocked
-+ _objc_msgSend$_resolveCodablePropertiesLocked
-+ _objc_msgSend$_resolveDescriptionPropertiesLocked
-+ _objc_msgSend$_resolveEqualityPropertiesLocked
-+ _objc_msgSend$_resolveExecutableNameLocked
-+ _objc_msgSend$_resolveLocalizedNameLocked
-+ _objc_msgSend$_resolvedStringValue:generator:
-+ _objc_msgSend$_resolvedURLValue:generator:
-+ _objc_msgSend$initWithBundleURLGenerator:executableNameGenerator:localizedNameGenerator:bundleVersionGenerator:clientVersionGenerator:
 + _symbolic _____ 18AppleMediaServices19SelfieConfigurationV17FaceIDCalibrationV
 + _symbolic _____ 18AppleMediaServices19SelfieConfigurationV17FaceIDCalibrationV10CodingKeys33_5876F864F6DA530D109B30F5992255AFLLO
 + _symbolic _____y_____G s22KeyedDecodingContainerV 18AppleMediaServices19SelfieConfigurationV17FaceIDCalibrationV10CodingKeys33_5876F864F6DA530D109B30F5992255AFLLO
@@ -178,8 +108,6 @@ Symbols:
 - ___block_descriptor_64_e8_32s40bs_e5_v8?0ls32l8u48l8s40l8
 - ___swift_memcpy295_8
 - ___swift_memcpy599_8
-- _objc_msgSend$_ensureAllPropertiesResolved
-- _objc_msgSend$_resolveRecordPropertiesIfNeededLocked
 CStrings:
 + " bytes); dropping"
 + "%{public}@: [%{public}@] Cannot schedule flush for container %{public}@ with style %{public}ld (no flush interval available)"

@@ -2,78 +2,58 @@
 
 > `/System/Library/Messages/PlugIns/iMessage.imservice/iMessage`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__cstring`
-- `__TEXT.__objc_methtype`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__objc_methname` | `0x1548e` | `0x1552e` | **`+0xa0`** |
+| `__TEXT.__text` | `0x10b510` | `0x10b58c` | **`+0x7c`** |
+| `__TEXT.__objc_stubs` | `0xee00` | `0xee40` | **`+0x40`** |
+| `__DATA.__objc_const` | `0x3db0` | `0x3de0` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x32a4` | `0x32bc` | **`+0x18`** |
+| `__DATA.__objc_selrefs` | `0x4248` | `0x4258` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x9918` | `0x9928` | **`+0x10`** |
+| `__TEXT.__oslogstring` | `0x1c65b` | `0x1c66b` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x270` | `0x274` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__cstring`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methtype`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -1491.100.1.2.11
--  __TEXT.__text: 0x10b510
 +1491.100.1.2.23
-+  __TEXT.__text: 0x10b58c
-   __TEXT.__auth_stubs: 0x2590
--  __TEXT.__objc_stubs: 0xee00
--  __TEXT.__objc_methlist: 0x32a4
-+  __TEXT.__objc_stubs: 0xee40
-+  __TEXT.__objc_methlist: 0x32bc
-   __TEXT.__const: 0x15f8
--  __TEXT.__gcc_except_tab: 0x9918
-+  __TEXT.__gcc_except_tab: 0x9928
-   __TEXT.__cstring: 0x3ebd
--  __TEXT.__oslogstring: 0x1c65b
-+  __TEXT.__oslogstring: 0x1c66b
-   __TEXT.__objc_classname: 0x7ef
--  __TEXT.__objc_methname: 0x1548e
-+  __TEXT.__objc_methname: 0x1552e
-   __TEXT.__objc_methtype: 0x355e
-   __TEXT.__ustring: 0x4
-   __TEXT.__swift5_typeref: 0xe26
 
-   __DATA_CONST.__auth_got: 0x12d8
-   __DATA_CONST.__got: 0x1360
-   __DATA_CONST.__auth_ptr: 0x330
--  __DATA.__objc_const: 0x3db0
--  __DATA.__objc_selrefs: 0x4248
--  __DATA.__objc_ivar: 0x270
-+  __DATA.__objc_const: 0x3de0
-+  __DATA.__objc_selrefs: 0x4258
-+  __DATA.__objc_ivar: 0x274
-   __DATA.__objc_data: 0xdc8
-   __DATA.__data: 0xe98
-   __DATA.__bss: 0x1070
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2455
 +  Functions: 2457
-   Symbols:   1000
+
 -  CStrings:  5373
 +  CStrings:  5378
- 
 CStrings:
 + "@128@0:8@16@24@32@40@48B56@60@68@76@84@92B100B104B108@112@120"
 + "PendingUpdate - needsDeliveryReceipt is %{BOOL}d for %@"

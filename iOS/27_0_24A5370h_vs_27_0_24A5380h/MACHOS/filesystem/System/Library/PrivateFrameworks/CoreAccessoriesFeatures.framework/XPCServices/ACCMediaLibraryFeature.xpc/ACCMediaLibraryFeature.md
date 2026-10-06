@@ -2,50 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/CoreAccessoriesFeatures.framework/XPCServices/ACCMediaLibraryFeature.xpc/ACCMediaLibraryFeature`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2a410` | `0x2a520` | **`+0x110`** |
+| `__TEXT.__oslogstring` | `0x59c6` | `0x5a1b` | **`+0x55`** |
+| `__DATA_CONST.__got` | `0x248` | `0x260` | **`+0x18`** |
+| `__TEXT.__gcc_except_tab` | `0x564` | `0x560` | **`-0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2a410
-+  __TEXT.__text: 0x2a520
-   __TEXT.__auth_stubs: 0x820
-   __TEXT.__objc_stubs: 0x4100
-   __TEXT.__objc_methlist: 0x2160
-   __TEXT.__cstring: 0x16bc
-   __TEXT.__const: 0x150
--  __TEXT.__gcc_except_tab: 0x564
-+  __TEXT.__gcc_except_tab: 0x560
-   __TEXT.__objc_methname: 0x5291
--  __TEXT.__oslogstring: 0x59c6
-+  __TEXT.__oslogstring: 0x5a1b
-   __TEXT.__objc_classname: 0x33c
-   __TEXT.__objc_methtype: 0xe7d
-   __TEXT.__ustring: 0xa
+-1196.0.0.502.1
++1203.0.0.0.0
 
-   __DATA_CONST.__objc_superrefs: 0x88
-   __DATA_CONST.__objc_intobj: 0x18
-   __DATA_CONST.__auth_got: 0x420
--  __DATA_CONST.__got: 0x248
-+  __DATA_CONST.__got: 0x260
-   __DATA.__objc_const: 0x3e10
-   __DATA.__objc_selrefs: 0x1348
-   __DATA.__objc_ivar: 0x278
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 859
--  Symbols:   6337
--  CStrings:  1681
-+  Symbols:   6338
-+  CStrings:  1682
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__data : content changed
+-  CStrings:  1540
++  CStrings:  1541
 Functions:
 ~ ___51-[ACCMediaLibraryShimInfo _sendRadioLibraryUpdates]_block_invoke : 236 -> 244
 ~ -[ACCMediaLibraryShimInfo dealloc] : 668 -> 656
@@ -60,5 +45,4 @@ Functions:
 ~ -[ACCMediaLibraryFeature confirmUpdate:library:lastRevision:updateCount:] : 184 -> 160
 CStrings:
 + "confirmUpdates: %@, library %@, revision %@, drained %lu update(s), waitlist now %lu"
-
 ```

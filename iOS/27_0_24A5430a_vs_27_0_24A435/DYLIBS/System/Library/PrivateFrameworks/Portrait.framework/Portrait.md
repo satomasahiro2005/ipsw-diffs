@@ -2,77 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/Portrait.framework/Portrait`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x88b78` | `0x985a0` | **`+0xfa28`** |
+| `__AUTH_CONST.__objc_const` | `0x1c670` | `0x1e5a8` | **`+0x1f38`** |
+| `__TEXT.__oslogstring` | `0x4b9a` | `0x5e30` | **`+0x1296`** |
+| `__TEXT.__objc_methlist` | `0x936c` | `0xa0c4` | **`+0xd58`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4ec8` | `0x5548` | **`+0x680`** |
+| `__AUTH.__objc_data` | `0x460` | `0x910` | **`+0x4b0`** |
+| `__TEXT.__cstring` | `0x4e42` | `0x52dd` | **`+0x49b`** |
+| `__AUTH_CONST.__cfstring` | `0x4d40` | `0x50a0` | **`+0x360`** |
+| `__TEXT.__unwind_info` | `0x1e98` | `0x21a0` | **`+0x308`** |
+| `__DATA.__objc_ivar` | `0x1778` | `0x1918` | **`+0x1a0`** |
+| `__TEXT.__gcc_except_tab` | `0x19e0` | `0x1af4` | **`+0x114`** |
+| `__AUTH_CONST.__const` | `0x380` | `0x460` | **`+0xe0`** |
+| `__DATA_CONST.__const` | `0x918` | `0x9c8` | **`+0xb0`** |
+| `__DATA.__bss` | `0x23c` | `0x2dc` | **`+0xa0`** |
+| `__DATA_CONST.__got` | `0x820` | `0x8b8` | **`+0x98`** |
+| `__TEXT.__const` | `0x20a70` | `0x20b00` | **`+0x90`** |
+| `__DATA_CONST.__objc_classlist` | `0x518` | `0x590` | **`+0x78`** |
+| `__DATA_CONST.__objc_superrefs` | `0x498` | `0x510` | **`+0x78`** |
+| `__AUTH_CONST.__objc_intobj` | `0xa98` | `0xaf8` | **`+0x60`** |
+| `__DATA_CONST.__objc_arraydata` | `0x718` | `0x758` | **`+0x40`** |
+
+### Other Changes
+
 ```diff
 
- 560.22.2.0.0
--  __TEXT.__text: 0x88b78
-+  __TEXT.__text: 0x985a0
-   __TEXT.__delay_helper: 0x264
--  __TEXT.__objc_methlist: 0x936c
--  __TEXT.__const: 0x20a70
--  __TEXT.__cstring: 0x4e42
--  __TEXT.__oslogstring: 0x4b9a
--  __TEXT.__gcc_except_tab: 0x19e0
-+  __TEXT.__objc_methlist: 0xa0c4
-+  __TEXT.__const: 0x20b00
-+  __TEXT.__cstring: 0x52dd
-+  __TEXT.__oslogstring: 0x5e30
-+  __TEXT.__gcc_except_tab: 0x1af4
-   __TEXT.__ustring: 0x30
--  __TEXT.__unwind_info: 0x1e98
-+  __TEXT.__unwind_info: 0x21a0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x918
--  __DATA_CONST.__objc_classlist: 0x518
-+  __DATA_CONST.__const: 0x9c8
-+  __DATA_CONST.__objc_classlist: 0x590
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0xa0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4ec8
-+  __DATA_CONST.__objc_selrefs: 0x5548
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_classrefs: 0x18
--  __DATA_CONST.__objc_superrefs: 0x498
--  __DATA_CONST.__objc_arraydata: 0x718
--  __DATA_CONST.__got: 0x820
--  __AUTH_CONST.__const: 0x380
--  __AUTH_CONST.__cfstring: 0x4d40
--  __AUTH_CONST.__objc_const: 0x1c670
--  __AUTH_CONST.__objc_intobj: 0xa98
-+  __DATA_CONST.__objc_superrefs: 0x510
-+  __DATA_CONST.__objc_arraydata: 0x758
-+  __DATA_CONST.__got: 0x8b8
-+  __AUTH_CONST.__const: 0x460
-+  __AUTH_CONST.__cfstring: 0x50a0
-+  __AUTH_CONST.__objc_const: 0x1e5a8
-+  __AUTH_CONST.__objc_intobj: 0xaf8
-   __AUTH_CONST.__objc_arrayobj: 0x180
-   __AUTH_CONST.__objc_doubleobj: 0x30
-   __AUTH_CONST.__objc_dictobj: 0xf0
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x460
--  __DATA.__objc_ivar: 0x1778
-+  __AUTH.__objc_data: 0x910
-+  __DATA.__objc_ivar: 0x1918
-   __DATA.__data: 0x7b0
-   __DATA_DIRTY.__objc_data: 0x2e90
-   __DATA_DIRTY.__bss: 0x8
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 3718
--  Symbols:   8429
+-  Symbols:   6461
 -  CStrings:  1385
 +  Functions: 4109
-+  Symbols:   9145
++  Symbols:   7003
 +  CStrings:  1518
- 
 Symbols:
 + +[PTCinematographyDetection(Private) _setFocusDistancesOfDetections:disparityBuffer:priorDetections:]
 + +[PTCinematographyPostcaptureRefinement maximumLookaheadDurationSecondsForFrameRate:]
@@ -619,180 +583,6 @@ Symbols:
 + _managerForSettings:downloadTimeout:initializationCallback:.onceToken
 + _maximumLookaheadDuration.onceToken
 + _maximumLookaheadDuration.sRackFocusDuration
-+ _objc_msgSend$_advanceToNextInputFrame
-+ _objc_msgSend$_copyFocusDetectionFromFrame:
-+ _objc_msgSend$_createSmootherAndFocuser
-+ _objc_msgSend$_currentInputFrame
-+ _objc_msgSend$_detectionByTrackIdentifier:fromArray:
-+ _objc_msgSend$_disparityForColorBuffer:focalLenIn35mmFilm:time:outputBuffer:
-+ _objc_msgSend$_disparityPixelBufferAtTime:
-+ _objc_msgSend$_enforcePipelineBufferCapWithLatestInputTime:
-+ _objc_msgSend$_ensureDisparityProvider
-+ _objc_msgSend$_focalLenIn35mmFilm
-+ _objc_msgSend$_focusDistanceForDetection:lockedDisparityBufferAddress:width:height:bytesPerRow:formatType:priorDetection:
-+ _objc_msgSend$_frameBeforeFrame:
-+ _objc_msgSend$_frameBeforeTime:
-+ _objc_msgSend$_hasFocusDistances
-+ _objc_msgSend$_initWithGeneration:frameTrack:tracks:
-+ _objc_msgSend$_initWithScript:generation:
-+ _objc_msgSend$_initializeInstanceSpecificResources
-+ _objc_msgSend$_internalizeGenerationFromChangesDictionary:
-+ _objc_msgSend$_invalidateFocusDistancesInFrame:
-+ _objc_msgSend$_invalidateFocusDistancesInFrames:
-+ _objc_msgSend$_invalidateFocusDistancesOfDetectionsInFrame:
-+ _objc_msgSend$_monocularDisparityProviderSettingsForQuality:
-+ _objc_msgSend$_moveAvailableFramesFromSmootherToFocuser
-+ _objc_msgSend$_priorInputFrame
-+ _objc_msgSend$_rackFocusDisparityForFrame:
-+ _objc_msgSend$_removeAvailableFramesFromFrameDetectionSmoother:
-+ _objc_msgSend$_resetToFrameIndex:
-+ _objc_msgSend$_setFocusDistancesAtTime:tolerance:usingDisparityBuffer:
-+ _objc_msgSend$_setFocusDistancesOfDetections:disparityBuffer:priorDetections:
-+ _objc_msgSend$_setFocusDistancesUsingDisparityBuffer:priorFrame:
-+ _objc_msgSend$_smoothDetectionsOfFramesInIndexRange:
-+ _objc_msgSend$_smoothDetectionsOfFramesInTimeRange:
-+ _objc_msgSend$_trackDecisionsInTimeRange:
-+ _objc_msgSend$_updateFastRackStartFocusDistancesAfterRemovingDecisionsAtOrderedTimes:
-+ _objc_msgSend$_updateFastRackStartIfNeededBeforeDecision:
-+ _objc_msgSend$_updateFastRackStartIfNeededBetweenDecision:previousDecision:
-+ _objc_msgSend$_updateFocusDistancesForAffectedDecisionsFromTime:originalNextDecision:
-+ _objc_msgSend$_updateFocusDistancesForFrame:priorFrame:
-+ _objc_msgSend$_updateFocusDistancesForFramesInIndexRange:
-+ _objc_msgSend$_updateFocusDistancesForFramesInTimeRange:
-+ _objc_msgSend$_updateFrameFocusDistancesAtTime:
-+ _objc_msgSend$_updateFrameFocusDistancesForDecision:
-+ _objc_msgSend$_updateFrameFocusDistancesForDecisions:indexRange:
-+ _objc_msgSend$_updateFrameFocusDistancesForDecisions:timeRange:
-+ _objc_msgSend$addFrameIndex:focusDistance:
-+ _objc_msgSend$addTime:focusDistance:
-+ _objc_msgSend$availabilityForParameters:
-+ _objc_msgSend$colorFeaturesOutput
-+ _objc_msgSend$createOperation:
-+ _objc_msgSend$date
-+ _objc_msgSend$decisionAtOrAfterTime:
-+ _objc_msgSend$defaultRenderingMetadataWithRenderVersion:
-+ _objc_msgSend$depthFeaturesOutput
-+ _objc_msgSend$dimensions
-+ _objc_msgSend$disparityForColorBuffer:focalLenIn35mmFilm:
-+ _objc_msgSend$disparityForColorBuffer:focalLenIn35mmFilm:outputBuffer:
-+ _objc_msgSend$disparityForColorBuffer:timedRenderingMetadata:time:outputBuffer:
-+ _objc_msgSend$disparityPrecompute
-+ _objc_msgSend$disparityProvider
-+ _objc_msgSend$disparitySettingsCacheKey:
-+ _objc_msgSend$downloadTimeout
-+ _objc_msgSend$endInputs
-+ _objc_msgSend$estimatedTimeRemaining
-+ _objc_msgSend$fastRackStartTimeForDecisionTime:previousDecisionTime:
-+ _objc_msgSend$finalFocusData
-+ _objc_msgSend$finalizeFrameTrack
-+ _objc_msgSend$finalizeWithFrameTimeline:frameStartTime:
-+ _objc_msgSend$finalized
-+ _objc_msgSend$focusDistanceAtTime:
-+ _objc_msgSend$focusDistanceAtTime:trackIdentifier:
-+ _objc_msgSend$focusDistances
-+ _objc_msgSend$forcePostCaptureCinematic
-+ _objc_msgSend$forceProcessNextFrame
-+ _objc_msgSend$formatDescription
-+ _objc_msgSend$frameAccumulator
-+ _objc_msgSend$frameIndexForTime:
-+ _objc_msgSend$frameTrack
-+ _objc_msgSend$generation
-+ _objc_msgSend$getMetricScaleFactorFor35mmFocalLength:
-+ _objc_msgSend$groupCount
-+ _objc_msgSend$groups
-+ _objc_msgSend$hasDisparityTrack
-+ _objc_msgSend$imageDescriptor
-+ _objc_msgSend$imageDimensionsWithWidth:height:
-+ _objc_msgSend$initWithDuration:frameCount:
-+ _objc_msgSend$initWithFrames:generation:
-+ _objc_msgSend$initWithGeneration:
-+ _objc_msgSend$initWithKeyOptions:valueOptions:capacity:
-+ _objc_msgSend$initWithMetalContext:disparitySize:colorSize:disparityPixelFormat:colorPixelFormat:
-+ _objc_msgSend$initWithParameters:
-+ _objc_msgSend$initWithQuality:globalMetadata:inputSize:
-+ _objc_msgSend$initWithQuality:globalMetadata:inputSize:temporalFilteringEnabled:
-+ _objc_msgSend$initWithScript:samplesAllDetections:
-+ _objc_msgSend$initWithScriptOptions:
-+ _objc_msgSend$initWithSettings:
-+ _objc_msgSend$initWithSettings:downloadTimeout:callback:
-+ _objc_msgSend$initWithSettings:downloadTimeout:initializationCallback:
-+ _objc_msgSend$initWithSettings:downloadTimeout:initializationCallback:prewarmOnly:
-+ _objc_msgSend$initWithState:totalExpectedBytes:totalWrittenBytes:estimatedTimeRemaining:error:
-+ _objc_msgSend$initWithStatus:
-+ _objc_msgSend$initWithStatus:lifetimeSeconds:
-+ _objc_msgSend$initWithTimeline:focusDistances:startTime:
-+ _objc_msgSend$initWithTimes:
-+ _objc_msgSend$initWithTrackDecisions:maximumRackPullTime:
-+ _objc_msgSend$initWithTrackDecisions:rackFocusOptions:focusPuller:detectionSmoother:
-+ _objc_msgSend$initializationStatus
-+ _objc_msgSend$inputSize
-+ _objc_msgSend$inputSource
-+ _objc_msgSend$isInput
-+ _objc_msgSend$isInputExpected
-+ _objc_msgSend$isObjectAlive
-+ _objc_msgSend$isRacking
-+ _objc_msgSend$keepInstanceAlive:forSeconds:
-+ _objc_msgSend$loadWithAsset:changesDictionary:options:completion:
-+ _objc_msgSend$longLongValue
-+ _objc_msgSend$managerForSettings:downloadTimeout:initializationCallback:
-+ _objc_msgSend$maxTimeDiffBeforeReset
-+ _objc_msgSend$maximumLookaheadDuration
-+ _objc_msgSend$missingSomeFocusDistances
-+ _objc_msgSend$monocularVideoPipeline
-+ _objc_msgSend$neededTrackIdentifiersAtTime:
-+ _objc_msgSend$networkDimensionsForSettings:
-+ _objc_msgSend$networkVariant
-+ _objc_msgSend$networkVariantForInputSource:renderVersion:
-+ _objc_msgSend$outputHeight
-+ _objc_msgSend$outputScale
-+ _objc_msgSend$outputWidth
-+ _objc_msgSend$overwriteRenderingVersion
-+ _objc_msgSend$pendingInputFrameTime
-+ _objc_msgSend$postcaptureQuality
-+ _objc_msgSend$prevColorFeaturesInput
-+ _objc_msgSend$prevDepthFeaturesInput
-+ _objc_msgSend$processExtrapolateWithColorRGBA:outDisparity:
-+ _objc_msgSend$processWithInDisparity:inColorRGBA:outDisparity:
-+ _objc_msgSend$renderVersion
-+ _objc_msgSend$renderingGlobals
-+ _objc_msgSend$requestedDimensions
-+ _objc_msgSend$resetState
-+ _objc_msgSend$resetStateIfNeededAtTime:
-+ _objc_msgSend$resourceStatusCache
-+ _objc_msgSend$setDisparityPrecompute:
-+ _objc_msgSend$setDisparityProvider:
-+ _objc_msgSend$setDownloadTimeout:
-+ _objc_msgSend$setFilterType:
-+ _objc_msgSend$setFinalized:
-+ _objc_msgSend$setForcePostCaptureCinematic:
-+ _objc_msgSend$setFrameAccumulator:
-+ _objc_msgSend$setInitializationProgressCallback:
-+ _objc_msgSend$setMissingSomeFocusDistances:
-+ _objc_msgSend$setNetworkVariant:
-+ _objc_msgSend$setOverwriteRenderingVersion:
-+ _objc_msgSend$setPostcaptureQuality:
-+ _objc_msgSend$setRequestedDimensions:
-+ _objc_msgSend$setStartFrameIndex:
-+ _objc_msgSend$setTemporalFilteringEnabled:
-+ _objc_msgSend$setTrackAccumulators:
-+ _objc_msgSend$setWithObject:
-+ _objc_msgSend$set_focalLenIn35mmFilm:
-+ _objc_msgSend$sortedArrayUsingComparator:
-+ _objc_msgSend$startFrameIndex
-+ _objc_msgSend$startTime
-+ _objc_msgSend$state
-+ _objc_msgSend$subTimelineWithRange:
-+ _objc_msgSend$supportedDimensions
-+ _objc_msgSend$supportedDimensionsForParameters:
-+ _objc_msgSend$temporalFilteringEnabled
-+ _objc_msgSend$timeForFrameIndex:
-+ _objc_msgSend$timeIntervalSinceNow
-+ _objc_msgSend$timeline
-+ _objc_msgSend$times
-+ _objc_msgSend$totalExpectedBytes
-+ _objc_msgSend$totalWrittenBytes
-+ _objc_msgSend$trackAccumulators
-+ _objc_msgSend$videoDimensions
 + _resourceStatusCache.onceToken
 + _resourceStatusCache.resourceStatusCache
 - GCC_except_table20

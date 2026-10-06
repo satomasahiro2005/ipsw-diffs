@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/HealthDomainsTools.framework/HealthDomainsTools`
 
-```diff
+### Section Size Changes
 
- 3600.12.16.0.0
--  __TEXT.__text: 0x1e23c
-+  __TEXT.__text: 0x1e248
-   __TEXT.__objc_methlist: 0x26c
-   __TEXT.__const: 0x1270
-   __TEXT.__swift5_typeref: 0x542
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e23c` | `0x1e248` | **`+0xc`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_267eec028 -> sub_282fc7028 : 680 -> 684
-~ sub_267efacb8 -> sub_282fd5cbc : 256 -> 264
+~ sub_267dce028 -> sub_282e96028 : 680 -> 684
+~ sub_267ddccb8 -> sub_282ea4cbc : 256 -> 264
 ```

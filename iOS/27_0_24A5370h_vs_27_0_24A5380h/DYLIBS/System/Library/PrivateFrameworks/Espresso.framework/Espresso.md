@@ -2,82 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/Espresso.framework/Espresso`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd19bd0` | `0xd1bacc` | **`+0x1efc`** |
+| `__TEXT.__oslogstring` | `0x7b2a` | `0x8a69` | **`+0xf3f`** |
+| `__TEXT.__gcc_except_tab` | `0xce2f8` | `0xce758` | **`+0x460`** |
+| `__TEXT.__cstring` | `0x54021` | `0x53eb1` | **`-0x170`** |
+| `__TEXT.__unwind_info` | `0x2c4f8` | `0x2c5b8` | **`+0xc0`** |
+| `__DATA.__bss` | `0x6790` | `0x6770` | **`-0x20`** |
+| `__DATA_DIRTY.__bss` | `0x2b8` | `0x2d8` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0xa80` | `0xa98` | **`+0x18`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xd19bd0
-+  __TEXT.__text: 0xd1bacc
-   __TEXT.__objc_methlist: 0x322c
-   __TEXT.__const: 0x5e8e2
--  __TEXT.__cstring: 0x54021
--  __TEXT.__gcc_except_tab: 0xce2f8
--  __TEXT.__oslogstring: 0x7b2a
--  __TEXT.__unwind_info: 0x2c4f8
-+  __TEXT.__cstring: 0x53eb1
-+  __TEXT.__gcc_except_tab: 0xce758
-+  __TEXT.__oslogstring: 0x8a69
-+  __TEXT.__unwind_info: 0x2c5b8
-   __TEXT.__eh_frame: 0x4b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+-3600.52.1.0.0
++3600.52.2.0.0
 
-   __DATA_CONST.__objc_selrefs: 0x24e8
-   __DATA_CONST.__objc_superrefs: 0x170
-   __DATA_CONST.__objc_arraydata: 0x298
--  __DATA_CONST.__got: 0xa80
-+  __DATA_CONST.__got: 0xa98
-   __AUTH_CONST.__const: 0x9f1f0
-   __AUTH_CONST.__cfstring: 0xa100
-   __AUTH_CONST.__objc_const: 0x8b90
-
-   __AUTH.__thread_bss: 0x400
-   __DATA.__objc_ivar: 0x5b8
-   __DATA.__data: 0x4c8
--  __DATA.__bss: 0x6790
-+  __DATA.__bss: 0x6770
-   __DATA.__common: 0x30
-   __DATA_DIRTY.__objc_data: 0x140
-   __DATA_DIRTY.__data: 0x90
--  __DATA_DIRTY.__bss: 0x2b8
-+  __DATA_DIRTY.__bss: 0x2d8
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 34654
--  Symbols:   87639
--  CStrings:  11685
+-  Symbols:   54426
+-  CStrings:  10394
 +  Functions: 34701
-+  Symbols:   87645
-+  CStrings:  11741
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   54429
++  CStrings:  10449
 Symbols:
 + __ZN4E5RT14E5CompilerImpl27PurgeE5BundlesForInputModelINSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEEEvRKT_
 + __ZN4E5RT14E5CompilerImpl7CompileINSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEEENS2_10unique_ptrINS_14ProgramLibraryENS2_14default_deleteISA_EEEERKT_RKNS_17E5CompilerOptionsE
@@ -142,5 +92,4 @@ CStrings:
 + "e5rt"
 + "remove_all() of path = %s failed with error code = %d\n"
 - "3600.52.1"
-
 ```

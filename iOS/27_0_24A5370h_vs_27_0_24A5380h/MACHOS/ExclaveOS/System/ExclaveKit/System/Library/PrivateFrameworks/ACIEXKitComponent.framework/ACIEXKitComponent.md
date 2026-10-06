@@ -2,74 +2,49 @@
 
 > `/System/ExclaveKit/System/Library/PrivateFrameworks/ACIEXKitComponent.framework/ACIEXKitComponent`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__objc_const` | `0x200` | `0x2b8` | **`+0xb8`** |
+| `__DATA.__data` | `0x750` | `0x7f0` | **`+0xa0`** |
+| `__TEXT.__text` | `0x22c44` | `0x22bd8` | **`-0x6c`** |
+| `__DATA_CONST.__const` | `0x1f98` | `0x1f40` | **`-0x58`** |
+| `__TEXT.__cstring` | `0x6b4` | `0x664` | **`-0x50`** |
+| `__TEXT.__objc_classname` | `0x87` | `0xc7` | **`+0x40`** |
+| `__TEXT.__constg_swiftt` | `0x89c` | `0x8d8` | **`+0x3c`** |
+| `__TEXT.__const` | `0x1c98` | `0x1cc8` | **`+0x30`** |
+| `__TEXT.__auth_stubs` | `0x620` | `0x640` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x14f4` | `0x1510` | **`+0x1c`** |
+| `__DATA_CONST.__auth_got` | `0x310` | `0x320` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x21c5` | `0x21d5` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x18` | `0x20` | **`+0x8`** |
+| `__TEXT.__objc_methname` | `0x1b` | `0x23` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x7e0` | `0x7e8` | **`+0x8`** |
+| `__TEXT.__swift5_typeref` | `0x41d` | `0x423` | **`+0x6`** |
+| `__TEXT.__swift5_types` | `0xd4` | `0xd8` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__TIGHTBEAM`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__got`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x22c44
--  __TEXT.__auth_stubs: 0x620
--  __TEXT.__const: 0x1c98
--  __TEXT.__cstring: 0x6b4
--  __TEXT.__objc_classname: 0x87
--  __TEXT.__objc_methname: 0x1b
-+  __TEXT.__text: 0x22bd8
-+  __TEXT.__auth_stubs: 0x640
-+  __TEXT.__const: 0x1cc8
-+  __TEXT.__cstring: 0x664
-+  __TEXT.__objc_classname: 0xc7
-+  __TEXT.__objc_methname: 0x23
-   __TEXT.__objc_methtype: 0x1
--  __TEXT.__constg_swiftt: 0x89c
--  __TEXT.__swift5_typeref: 0x41d
--  __TEXT.__swift5_reflstr: 0x21c5
--  __TEXT.__swift5_fieldmd: 0x14f4
-+  __TEXT.__constg_swiftt: 0x8d8
-+  __TEXT.__swift5_typeref: 0x423
-+  __TEXT.__swift5_reflstr: 0x21d5
-+  __TEXT.__swift5_fieldmd: 0x1510
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_proto: 0x1bc
--  __TEXT.__swift5_types: 0xd4
-+  __TEXT.__swift5_types: 0xd8
-   __TEXT.__swift5_assocty: 0x120
-   __TEXT.__swift5_protos: 0x14
--  __TEXT.__unwind_info: 0x7e0
-+  __TEXT.__unwind_info: 0x7e8
-   __TEXT.__eh_frame: 0x23f0
--  __DATA_CONST.__const: 0x1f98
--  __DATA_CONST.__objc_classlist: 0x18
-+  __DATA_CONST.__const: 0x1f40
-+  __DATA_CONST.__objc_classlist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x310
-+  __DATA_CONST.__auth_got: 0x320
-   __DATA_CONST.__got: 0xb8
-   __DATA_CONST.__auth_ptr: 0x100
--  __DATA.__objc_const: 0x200
--  __DATA.__data: 0x750
-+  __DATA.__objc_const: 0x2b8
-+  __DATA.__data: 0x7f0
-   __DATA.__TIGHTBEAM: 0x10
-   __DATA.__bss: 0x2600
-   - /System/ExclaveKit/System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /System/ExclaveKit/usr/lib/swift/libswiftObjectiveC.dylib
-   - /System/ExclaveKit/usr/lib/swift/libswift_Builtin_float.dylib
-   - /System/ExclaveKit/usr/lib/swift/libswiftos.dylib
 -  Functions: 608
 -  Symbols:   1616
 -  CStrings:  35
 +  Functions: 606
 +  Symbols:   1627
 +  CStrings:  36
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__TIGHTBEAM : content changed
 Symbols:
 + _$s17ACIEXKitComponent0aB14HandlerContextC7handlerAA0aB7Methods_pvpWvd
 + _$s17ACIEXKitComponent0aB14HandlerContextC7handlerAcA0aB7Methods_p_tcfCTq
@@ -98,5 +73,4 @@ CStrings:
 + "_TtC17ACIEXKitComponent31ACIEXKitComponentHandlerContext"
 + "handler"
 - "invalid handler object, does not conform to ACIEXKitComponentMethods"
-
 ```

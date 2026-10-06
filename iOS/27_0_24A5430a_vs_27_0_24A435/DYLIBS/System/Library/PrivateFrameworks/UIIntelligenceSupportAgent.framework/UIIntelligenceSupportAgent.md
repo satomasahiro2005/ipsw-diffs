@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/UIIntelligenceSupportAgent.framework/UIIntelligenceSupportAgent`
 
-```diff
+### Section Size Changes
 
- 9127.0.84.1.106
--  __TEXT.__text: 0x6fad8
-+  __TEXT.__text: 0x6fb08
-   __TEXT.__objc_methlist: 0x104
-   __TEXT.__const: 0x2eb0
-   __TEXT.__constg_swiftt: 0xc0c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6fad8` | `0x6fb08` | **`+0x30`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_2345d3cdc -> sub_234edbcdc : 688 -> 692
 ~ sub_2345f396c -> sub_234efb970 : 980 -> 992

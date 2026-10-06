@@ -2,101 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/VectorKit.framework/VectorKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd22404` | `0xd15cbc` | **`-0xc748`** |
+| `__DATA.__data` | `0x32220` | `0x32958` | **`+0x738`** |
+| `__DATA.__bss` | `0x24600` | `0x244d0` | **`-0x130`** |
+| `__AUTH_CONST.__const` | `0x89e78` | `0x89de8` | **`-0x90`** |
+| `__DATA_DIRTY.__bss` | `0x42438` | `0x424a8` | **`+0x70`** |
+| `__TEXT.__unwind_info` | `0x34338` | `0x342e0` | **`-0x58`** |
+| `__DATA_CONST.__const` | `0x2a100` | `0x2a148` | **`+0x48`** |
+| `__TEXT.__oslogstring` | `0x1116b` | `0x1113f` | **`-0x2c`** |
+| `__TEXT.__const` | `0x73c98` | `0x73cb8` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x68cbc` | `0x68ca8` | **`-0x14`** |
+
+### Other Changes
+
 ```diff
 
 -2037.30.5.14.1
--  __TEXT.__text: 0xd22404 sha256:e0281184bb0a2b60f41faf32938051ff1cb7ebb852f1ce05f2711e7f37639ecc
--  __TEXT.__objc_methlist: 0x1119c sha256:47150362a2813d26a31aba0704d08b90c6a2a76d0bb8608086955f6321aa7569
--  __TEXT.__const: 0x73c98 sha256:c87f3634da2f3387ad9bb35c19d9efaf16e425699afbb7e94d5a0ccaae124d1b
--  __TEXT.__gcc_except_tab: 0x68cbc sha256:9b4ca70ba115ef27e76e04649260769b19cf73d468fc9a647c6c938dbddcc7ec
--  __TEXT.__oslogstring: 0x1116b sha256:f5d0fd39787d39ecd748edbaf9fa6859468a7e78b92206ff756da71683337902
--  __TEXT.__cstring: 0x96b8f sha256:8cbf084d9f5df443d4d077c42c4316cd98761eb7a275b883264f4bc22bd04b78
 +2041.30.6.5.2
-+  __TEXT.__text: 0xd15cbc sha256:2c1bbf3244ce06bd979fe42c46ac2e20514e3d4ddc72a6aac56b8d168daf5c56
-+  __TEXT.__objc_methlist: 0x1119c sha256:8a48e7c8f1fda177405729b2a9f9a4959bd4e6a946d5333208d8ea6fc9c4e814
-+  __TEXT.__const: 0x73cb8 sha256:2e8a98c124d33b51932f7653e3a7db802f0049a6483c3e3cee9a3e125d0279a7
-+  __TEXT.__gcc_except_tab: 0x68ca8 sha256:ed314f7cca8d0262202e7e3dbc96124148241fb0e6dbb0c3131453f697c44e24
-+  __TEXT.__oslogstring: 0x1113f sha256:56855a58fd4e27522a3e05817cd691a1632a916f2ebdb41dc6449586d5ee3bc2
-+  __TEXT.__cstring: 0x96b8f sha256:2e93f1bfc7afb25ba4e7c4c34271b4f06ca096c27b4372980597a2ebbb436789
-   __TEXT.__ustring: 0xf8 sha256:d9d3b5d20f91696dae2fe70be5da23a4d587c6ed46e5d917a32caf9a4efede10
--  __TEXT.__unwind_info: 0x34338 sha256:f8c06fdf29550dfff41111ceeaadd8e078a9ae564a91abcec5429a98c963ad5c
-+  __TEXT.__unwind_info: 0x342e0 sha256:e17bf606cd9bdb6555a690ce784c7222509df27deec8f34d022148a0d266dd84
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2a100 sha256:728c2429945846e828dcac1af44facb052b99b930b7f3b7aa0285134c789f797
--  __DATA_CONST.__objc_classlist: 0x558 sha256:be792fd45e32d660b805950c80c5699e8529e5523672cfd2de1e91cac2ee4188
--  __DATA_CONST.__objc_catlist: 0x38 sha256:05595338b2401a2cd551f05086052b993f82c775d13707a158948479f54d60f9
--  __DATA_CONST.__objc_protolist: 0x140 sha256:9b587c7e4a7573bae7d0ee5d27fb8fec61787bb4ca706d467ec765af3c8fd921
-+  __DATA_CONST.__const: 0x2a148 sha256:0a61f803a3410166c71485896b819596a2c34c62f6bb61ca3b558ed5ef5eb103
-+  __DATA_CONST.__objc_classlist: 0x558 sha256:016e62f99feaf4e59c559d24be9b923b7f8580f369f395c5189f8d6a03303a9d
-+  __DATA_CONST.__objc_catlist: 0x38 sha256:66eddba950e29ed3411b673463a56501d2108e92031b651c87be983b2109bab5
-+  __DATA_CONST.__objc_protolist: 0x140 sha256:d98fead14352ab98d8c212cbbb8b882f5f4849722e3564a48c9edee6b23c0576
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x10 sha256:db089a9946ee2f440f1454b6bd081bc906524b106b3b9bd5745c567d00425fed
--  __DATA_CONST.__objc_selrefs: 0x9598 sha256:833e063578a2a1faa7f320d07dc79cb506953ba28612b2181ad6008b7e3c87d9
--  __DATA_CONST.__objc_superrefs: 0x500 sha256:1064030da751822f4696b1da0b2f96ff96fdc33158c6c9866a611aa491bef59b
--  __DATA_CONST.__objc_arraydata: 0x690 sha256:f437edf9074ba30ec28829094cf91dde532e2fe6bd06cdf37625a8a093a073cc
--  __DATA_CONST.__got: 0xa68 sha256:67eaa7a44ab71762da1e88ce57b3696f739f4dad0826b20f64be799cda49fe1a
--  __AUTH_CONST.__const: 0x89e78 sha256:a9e7363109e569ae21310b67f4819b4b4a81333ac0e09c5a62998dd15ac10d72
--  __AUTH_CONST.__cfstring: 0x8360 sha256:75682d27926eefd7851cc488f64b2146c8e463e67abb9930ea2e69793afc60f3
--  __AUTH_CONST.__objc_const: 0x1eee8 sha256:afb2ae905c4622505cfbfdb9b1699c850be34e4e1d1cbc4e15fd4c693b0958fa
--  __AUTH_CONST.__weak_auth_got: 0x30 sha256:fb650afcef226f005d6ec94eb0bb33028b7ba7b68ce8cfe4491360fe2916b9f5
--  __AUTH_CONST.__objc_intobj: 0x4c8 sha256:3a51cfbf0c3be0a7728fc7a30f2d8f1b560d73db968cb136d68a08fc6f0fe3da
--  __AUTH_CONST.__objc_arrayobj: 0x60 sha256:b7938aa9b7132b4a3f5e74bc28c20fd4fecc8f595b922a1c19e4aa6f80ec5870
--  __AUTH_CONST.__objc_doubleobj: 0x240 sha256:714cdf96ca772b6fd27e971bbf2434b9995833d6e6079406d9c4e92d73440299
--  __AUTH_CONST.__objc_dictobj: 0x50 sha256:bde5b8058f4ef234235b27486f9a6343db735ed89b468dde98a7234856a479d9
-+  __DATA_CONST.__weak_got: 0x10 sha256:c9b00cf8e5fdc159d5e0657836ccec0cbd1eddc62a50f4b3c9f634c56153dbb7
-+  __DATA_CONST.__objc_selrefs: 0x9598 sha256:cb5300cc706a698ea9fc246b1b3ef07484698492bd3a84229187c8992be830dd
-+  __DATA_CONST.__objc_superrefs: 0x500 sha256:0bea1c5858079a38c1b73b21047a166d319b5d0e4f0dd0244bbdb04b2f694e13
-+  __DATA_CONST.__objc_arraydata: 0x690 sha256:5d9bef071d26bb43f8195726c583ae3b9a92c737a5c381af71396b59376cb900
-+  __DATA_CONST.__got: 0xa68 sha256:a6c093d769e274f161044789854a635f1e612df105f7425e35035cba9e48cb08
-+  __AUTH_CONST.__const: 0x89de8 sha256:b87cc1bd07452342fac9f1be8b0b9dc0c3cfdc50a8269dc612df879791002a9f
-+  __AUTH_CONST.__cfstring: 0x8360 sha256:472dd2ddfa7434335464eedd625845edf46694b595b850a2b74c4e8b625c54a0
-+  __AUTH_CONST.__objc_const: 0x1eee8 sha256:34663f007bdda00f93e4d3ad108f244761d2f5b77794caf9d5bb5fa0c503db9e
-+  __AUTH_CONST.__weak_auth_got: 0x30 sha256:6aea13dc230d28b9ccdd9f016137ee25f6840c7b6ec8db116da1a924e2bcef7a
-+  __AUTH_CONST.__objc_intobj: 0x4c8 sha256:69f89c6dc4775ad598509619c72466618cc21c997a01bb43d200df1c215475c6
-+  __AUTH_CONST.__objc_arrayobj: 0x60 sha256:e42c49f7d9321575c2e54e8e52ba49e46631801f7a8471f3cea5610190964b94
-+  __AUTH_CONST.__objc_doubleobj: 0x240 sha256:2a2eee504f214f733a4066c19d6a15b98278bfdd28cade603686544a76eabff3
-+  __AUTH_CONST.__objc_dictobj: 0x50 sha256:d717efacaebe887c7bddd3ecf0f8047b0373f11a93014ad38d7d1072cdc0ca00
-   __AUTH_CONST.__auth_got: 0x19d8 sha256:de7ff8707ffc14943278f897c5d33da00bac8366aa1980c6f5f21f87f359c17a
--  __AUTH.__objc_data: 0x2210 sha256:c68bb6a97dbae105973f74552121fd2985918e746640bb49eb7c9c48d5a73b58
--  __AUTH.__data: 0x50 sha256:beb15ea238aef4ecfd7023ec81c35ef4c49e92e8cb4791bbfb91f1f74a6e84c8
--  __AUTH.__thread_vars: 0x270 sha256:9f157b7c725d406bf764bef9dd20f758398accf8166cd18976a3882fbd771f44
-+  __AUTH.__objc_data: 0x2210 sha256:49f72b4f62c34382fb09e017235b4e082fbb99454160ffcf488537aad831763b
-+  __AUTH.__data: 0x50 sha256:1fc5a11a1e2324a51e4fb42a46096afe7521322d0a4821432c5780b5b7e96cf1
-+  __AUTH.__thread_vars: 0x270 sha256:077b38bbd24be6c8136713bdd56b51da0079adcfa37ccb459cf1f2fa7465d612
-   __AUTH.__thread_data: 0x231 sha256:78007499562ba787222196bc222a9a35bae947df26e024ae143b088447be810c
-   __AUTH.__thread_bss: 0x180 sha256:a1a4f5721c1c4610af7f71078f3a68c330536d679803b0e0507ee8dc10c5dfca
-   __DATA.__objc_ivar: 0x2028 sha256:c694e2196bfe490fc0d52c0836f817bfabccbde1d5349aef2a210a26e9989464
--  __DATA.__data: 0x32220 sha256:462c6461e5480fd3e8b858b1d2c4224afe0400d9ad8e0662511aa30c3065bb2b
--  __DATA.__bss: 0x24600 sha256:74041e57fffed495e8ec794b7827535a35afcda6963b3c4c54958283e80f0896
--  __DATA_DIRTY.__objc_data: 0x1360 sha256:48d32d4603bb3cec0c9189aa00aac0e582ba053cd6ffadcd7a15369844e6190d
--  __DATA_DIRTY.__data: 0x1c sha256:1fd8e49ae03cb32d3d0ca0fe65c324632738f91e4c59fccadbc55429ae312829
--  __DATA_DIRTY.__bss: 0x42438 sha256:19d39dc83b54f6ffd3b846f5a84c4e6e195517369c6049e254d61816a519d735
-+  __DATA.__data: 0x32958 sha256:a5afdd857757dea76710f7d1b1458e49211e87e01d0f0a90ca5c40ca4e331b20
-+  __DATA.__bss: 0x244d0 sha256:f72635265a94ec57046229544e909622657ef4c28c9265cd3ef1cfd028abe1dc
-+  __DATA_DIRTY.__objc_data: 0x1360 sha256:05435abdab3084498f5117823d2572b38ca509de061e8a2e6a610be279ad1c70
-+  __DATA_DIRTY.__data: 0x1c sha256:77377fb4b441e4594ea5099486aa033f4e08777b3d4a17ca1479d43f4622d12b
-+  __DATA_DIRTY.__bss: 0x424a8 sha256:5863a3272494892a800cc526445a4dfa0ef7ce8af0646dfbaa0234e44c430fb4
-   - /System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libxml2.2.dylib
-   - /usr/lib/libz.1.dylib
--  UUID: C5881EDF-12DA-365E-9C80-062AEBE1BEF0
 -  Functions: 61161
--  Symbols:   169130
--  CStrings:  22803
-+  UUID: 82EF3660-653E-3851-81A4-07A31D7724E9
+-  Symbols:   99119
+-  CStrings:  21754
 +  Functions: 61147
-+  Symbols:   169117
-+  CStrings:  22802
- 
++  Symbols:   99115
++  CStrings:  21753
 Symbols:
 + GCC_except_table11791
 + GCC_except_table11828
@@ -4919,32 +4852,15 @@ Symbols:
 + GCC_except_table65667
 + GCC_except_table65686
 + GCC_except_table65697
-+ __OBJC_$_PROP_LIST_VKAnnotationTrackingCameraController.29141
-+ __ZGVZN2mdL27shadowMapRenderTargetFormatEvE19_renderTargetFormat.31996
 + __ZGVZZ52-[VKCameraController populateDebugNode:withOptions:]ENK3$_0clEvE13cached_result
 + __ZGVZZN2md13LightingLogic17writeLogicContextERKNS_10FrameStateERKNS_13CameraContextERKNS_16ElevationContextERKNS_12SceneContextERKNS_15SettingsContextERKNSt3__110shared_ptrIN3gss17StylesheetManagerINSI_15ScenePropertyIDEEEEERK23GEOLocationCoordinate2DRNS_20LightingLogicContextERKN3ggl6DeviceERK6CGSizeENK3$_0clEvE13cached_result
-+ __ZL17getTextDataStringPN2md10LabelStyleERKNSt3__112basic_stringIcNS2_11char_traitsIcEEN3geo17allocator_adapterIcN3mdm15zone_mallocatorEEEEEPSC_f.47694
-+ __ZL27GEOGetVectorKitVKMapViewLogv.35418
-+ __ZL27GEOGetVectorKitVKMapViewLogv.38175
-+ __ZL31kGEOLocationCoordinate2DInvalid.40320
-+ __ZL40commandBufferLocationsForRenderLayerTypeN2md20CartoRenderLayerTypeEPNS_29StandardCommandBufferSelectorE.14953
 + __ZN2md13LightingLogic17writeLogicContextERKNS_10FrameStateERKNS_13CameraContextERKNS_16ElevationContextERKNS_12SceneContextERKNS_15SettingsContextERKNSt3__110shared_ptrIN3gss17StylesheetManagerINSI_15ScenePropertyIDEEEEERK23GEOLocationCoordinate2DRNS_20LightingLogicContextERKN3ggl6DeviceERK6CGSize
 + __ZN2md17HeightMeshBuilder25createBlendedPositionDataERKN3geo8QuadTileERKNSt3__16vectorIN2gm6MatrixIfLi3ELi1EEENS5_9allocatorIS9_EEEERKNS1_14RigidTransformIddEERKNS6_INS1_3r3d10VertexFlagENSA_ISK_EEEEPKNS_15ElevationRasterERKNS5_10shared_ptrINS_13ImageResourceEEEPN3ggl16ResourceAccessorE
-+ __ZN2mdL15MapDataTypeListE.3167
-+ __ZN2mdL18kDefaultArrowColorE.37041
-+ __ZN2mdL19MapResourceTypeListE.3173
-+ __ZN2mdL19kDefaultCircleColorE.37040
-+ __ZN2mdL20MapEngineSettingListE.46479
-+ __ZN2mdL28TileSelectionTileSetTypeListE.44270
-+ __ZN3gdcL18ResourceSourceListE.56975
-+ __ZN3geoL26reverseSRGBGammaCorrectionE.13642
-+ __ZN3geoL5whiteE.24088
 + __ZN3ggl9VenueWall17MeshPipelineSetup24setTransformConstantDataERKNSt3__110shared_ptrINS_17ConstantDataTypedINS_4Tile9TransformEEEEE
 + __ZN3ggl9VenueWall17MeshPipelineSetup8setStateERKNSt3__110shared_ptrINS0_17MeshPipelineStateEEE
 + __ZN3ggl9VenueWall17MeshPipelineStateC1ERKNSt3__110shared_ptrINS_15VenueWallShaderEEERKNS_20ColorBufferOperationENS_18RenderTargetFormatEbNS_15AlphaToCoverageEj
 + __ZN3ggl9VenueWall24WallTopMeshPipelineStateC1ERKNSt3__110shared_ptrINS_18VenueWallTopShaderEEERKNS_20ColorBufferOperationENS_18RenderTargetFormatEbNS_15AlphaToCoverageEj
 + __ZN3ggl9VenueWall27WallEndCapMeshPipelineStateC1ERKNSt3__110shared_ptrINS_21VenueWallEndCapShaderEEERKNS_20ColorBufferOperationENS_18RenderTargetFormatEbNS_15AlphaToCoverageEj
-+ __ZN3gglL21pixelFormatPixelsSizeENS_11PixelFormatEmmm.50710
 + __ZNKRSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEE3strB9fqn220106Ev
 + __ZNKSt3__110__equal_toclB9fqn220106INS_12basic_stringIcNS_11char_traitsIcEEN3geo17allocator_adapterIcN3mdm15zone_mallocatorEEEEESA_EEbRKT_RKT0_
 + __ZNKSt3__111__copy_implclB9fqn220106INS_21__tree_const_iteratorINS_10shared_ptrIN2md3mun13MuninMetadataEEEPNS_11__tree_nodeIS7_PvEElEESC_NS_20back_insert_iteratorINS_6vectorIS7_NS_9allocatorIS7_EEEEEELi0EEENS_4pairIT_T1_EESK_T0_SL_
@@ -8291,7 +8207,6 @@ Symbols:
 + __ZNSt3__134__uninitialized_allocator_relocateB9fqn220106INS_9allocatorINS_4pairImNS_8functionIFN2gm6MatrixIfLi2ELi1EEEmEEEEEEEPS9_EEvRT_T0_SE_SE_
 + __ZNSt3__134__uninitialized_allocator_relocateB9fqn220106INS_9allocatorINS_7variantIJN2gm3BoxIdLi3EEENS3_6SphereIdLi3ENS_9enable_ifILb1EvEEEEN3geo11OrientedBoxIdLj3EddEEEEEEEPSD_EEvRT_T0_SI_SI_
 + __ZNSt3__135__uninitialized_allocator_copy_implB9fqe220106INS_9allocatorIN3esl11QuartzColorEEEPKS3_S6_PS3_EET2_RT_T0_T1_S8_
-+ __ZNSt3__135__uninitialized_allocator_copy_implB9fqe220106INS_9allocatorIN3esl11QuartzColorEEEPKS3_S6_PS3_EET2_RT_T0_T1_S8_.cold.1
 + __ZNSt3__135__uninitialized_allocator_copy_implB9fqn220106INS_9allocatorIN2md28TileGroupNotificationManager13CallbackEntryEEEPS4_S6_S6_EET2_RT_T0_T1_S7_
 + __ZNSt3__135__uninitialized_allocator_copy_implB9fqn220106INS_9allocatorIN2md3mun15CollectionPointEEEPKS4_S7_PS4_EET2_RT_T0_T1_S9_
 + __ZNSt3__135__uninitialized_allocator_copy_implB9fqn220106INS_9allocatorIN3gdc17DebugTreePropertyEEEPS3_S5_S5_EET2_RT_T0_T1_S6_
@@ -11775,25 +11690,6 @@ Symbols:
 + __ZNSt3__1ssB9fqn220106IcNS_11char_traitsIcEENS_9allocatorIcEEEEDaRKNS_12basic_stringIT_T0_T1_EESC_
 + __ZSt28__throw_bad_array_new_lengthB9fqe220106v
 + __ZSt28__throw_bad_array_new_lengthB9fqn220106v
-+ __ZZL21GEOGetVectorKitVLRLogvE3log.22732
-+ __ZZL21GEOGetVectorKitVLRLogvE9onceToken.22731
-+ __ZZL27GEOGetVectorKitVKMapViewLogvE3log.2196
-+ __ZZL27GEOGetVectorKitVKMapViewLogvE3log.35423
-+ __ZZL27GEOGetVectorKitVKMapViewLogvE3log.38195
-+ __ZZL27GEOGetVectorKitVKMapViewLogvE9onceToken.2194
-+ __ZZL27GEOGetVectorKitVKMapViewLogvE9onceToken.35421
-+ __ZZL27GEOGetVectorKitVKMapViewLogvE9onceToken.38193
-+ __ZZL28GEOGetGeoGLMetalSwapchainLogvE3log.50935
-+ __ZZL28GEOGetGeoGLMetalSwapchainLogvE9onceToken.50933
-+ __ZZL30GEOGetVectorKitTextureAtlasLogvE3log.17480
-+ __ZZL30GEOGetVectorKitTextureAtlasLogvE9onceToken.17478
-+ __ZZL32GEOGetVectorKitLabelHighlightLogvE3log.27594
-+ __ZZL32GEOGetVectorKitLabelHighlightLogvE3log.36470
-+ __ZZL32GEOGetVectorKitLabelHighlightLogvE9onceToken.27592
-+ __ZZL32GEOGetVectorKitLabelHighlightLogvE9onceToken.36468
-+ __ZZL9LoadARKitvE13loadPredicate.38824
-+ __ZZL9LoadARKitvE16frameworkLibrary.38831
-+ __ZZN2mdL27shadowMapRenderTargetFormatEvE19_renderTargetFormat.31997
 + __ZZN3ggl9VenueWallL49pipelineStateMeshPipelineConstantTransformBindingEvE10reflection
 + __ZZN3ggl9VenueWallL56pipelineStateWallTopMeshPipelineConstantTransformBindingEvE10reflection
 + __ZZN3ggl9VenueWallL59pipelineStateWallEndCapMeshPipelineConstantTransformBindingEvE10reflection
@@ -11976,206 +11872,6 @@ Symbols:
 + __ZZNSt3__112__hash_tableIyNS_4hashIyEENS_8equal_toIyEENS_9allocatorIyEEE16__emplace_uniqueB9fqn220106IJyEEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIyPvEEEEbEEDpOT_ENKUlRKyOyE_clESL_SM_
 + __ZZZ52-[VKCameraController populateDebugNode:withOptions:]ENK3$_0clEvE13cached_result
 + __ZZZN2md13LightingLogic17writeLogicContextERKNS_10FrameStateERKNS_13CameraContextERKNS_16ElevationContextERKNS_12SceneContextERKNS_15SettingsContextERKNSt3__110shared_ptrIN3gss17StylesheetManagerINSI_15ScenePropertyIDEEEEERK23GEOLocationCoordinate2DRNS_20LightingLogicContextERKN3ggl6DeviceERK6CGSizeENK3$_0clEvE13cached_result
-+ ___Block_byref_object_copy_.1227
-+ ___Block_byref_object_copy_.13.23564
-+ ___Block_byref_object_copy_.13227
-+ ___Block_byref_object_copy_.15.23581
-+ ___Block_byref_object_copy_.18.27105
-+ ___Block_byref_object_copy_.18094
-+ ___Block_byref_object_copy_.21.23584
-+ ___Block_byref_object_copy_.23578
-+ ___Block_byref_object_copy_.24.23587
-+ ___Block_byref_object_copy_.25033
-+ ___Block_byref_object_copy_.26513
-+ ___Block_byref_object_copy_.27102
-+ ___Block_byref_object_copy_.27260
-+ ___Block_byref_object_copy_.2877
-+ ___Block_byref_object_copy_.28878
-+ ___Block_byref_object_copy_.30558
-+ ___Block_byref_object_copy_.33826
-+ ___Block_byref_object_copy_.35441
-+ ___Block_byref_object_copy_.35703
-+ ___Block_byref_object_copy_.36421
-+ ___Block_byref_object_copy_.50519
-+ ___Block_byref_object_copy_.6619
-+ ___Block_byref_object_copy_.6945
-+ ___Block_byref_object_copy_.7.6948
-+ ___Block_byref_object_copy_.8485
-+ ___Block_byref_object_dispose_.1228
-+ ___Block_byref_object_dispose_.13228
-+ ___Block_byref_object_dispose_.14.23565
-+ ___Block_byref_object_dispose_.16.23582
-+ ___Block_byref_object_dispose_.18095
-+ ___Block_byref_object_dispose_.19.27106
-+ ___Block_byref_object_dispose_.22.23585
-+ ___Block_byref_object_dispose_.23579
-+ ___Block_byref_object_dispose_.25.23588
-+ ___Block_byref_object_dispose_.25034
-+ ___Block_byref_object_dispose_.26514
-+ ___Block_byref_object_dispose_.27103
-+ ___Block_byref_object_dispose_.27261
-+ ___Block_byref_object_dispose_.2878
-+ ___Block_byref_object_dispose_.28879
-+ ___Block_byref_object_dispose_.30559
-+ ___Block_byref_object_dispose_.33827
-+ ___Block_byref_object_dispose_.35442
-+ ___Block_byref_object_dispose_.35704
-+ ___Block_byref_object_dispose_.36422
-+ ___Block_byref_object_dispose_.50520
-+ ___Block_byref_object_dispose_.6620
-+ ___Block_byref_object_dispose_.6946
-+ ___Block_byref_object_dispose_.8.6949
-+ ___Block_byref_object_dispose_.8486
-+ ____ZL21GEOGetVectorKitVLRLogv_block_invoke.22734
-+ ____ZL27GEOGetVectorKitVKMapViewLogv_block_invoke.2202
-+ ____ZL27GEOGetVectorKitVKMapViewLogv_block_invoke.35426
-+ ____ZL27GEOGetVectorKitVKMapViewLogv_block_invoke.38198
-+ ____ZL28GEOGetGeoGLMetalSwapchainLogv_block_invoke.50941
-+ ____ZL30GEOGetVectorKitTextureAtlasLogv_block_invoke.17488
-+ ____ZL32GEOGetVectorKitLabelHighlightLogv_block_invoke.27597
-+ ____ZL32GEOGetVectorKitLabelHighlightLogv_block_invoke.36474
-+ ____ZL9LoadARKitv_block_invoke.38829
-+ ____registerStateCaptureCallbacks_block_invoke.18303
-+ ___block_descriptor_tmp.11.53949
-+ ___block_descriptor_tmp.11.56142
-+ ___block_descriptor_tmp.15.53955
-+ ___block_descriptor_tmp.17486
-+ ___block_descriptor_tmp.19.53961
-+ ___block_descriptor_tmp.19.56150
-+ ___block_descriptor_tmp.23.53967
-+ ___block_descriptor_tmp.27.53973
-+ ___block_descriptor_tmp.3.50567
-+ ___block_descriptor_tmp.3.51488
-+ ___block_descriptor_tmp.3.53939
-+ ___block_descriptor_tmp.3.56136
-+ ___block_descriptor_tmp.31.53979
-+ ___block_descriptor_tmp.35.53985
-+ ___block_descriptor_tmp.50559
-+ ___block_descriptor_tmp.51081
-+ ___block_descriptor_tmp.51480
-+ ___block_descriptor_tmp.53598
-+ ___block_descriptor_tmp.53931
-+ ___block_descriptor_tmp.54481
-+ ___block_descriptor_tmp.54802
-+ ___block_descriptor_tmp.55096
-+ ___block_descriptor_tmp.56132
-+ ___block_descriptor_tmp.7.50573
-+ ___block_literal_global.11259
-+ ___block_literal_global.1202
-+ ___block_literal_global.12042
-+ ___block_literal_global.12366
-+ ___block_literal_global.12916
-+ ___block_literal_global.13.15856
-+ ___block_literal_global.13.53947
-+ ___block_literal_global.13.56140
-+ ___block_literal_global.13612
-+ ___block_literal_global.13945
-+ ___block_literal_global.1412
-+ ___block_literal_global.14504
-+ ___block_literal_global.14611
-+ ___block_literal_global.15833
-+ ___block_literal_global.15942
-+ ___block_literal_global.17.15861
-+ ___block_literal_global.17.53953
-+ ___block_literal_global.17479
-+ ___block_literal_global.17739
-+ ___block_literal_global.1780
-+ ___block_literal_global.17851
-+ ___block_literal_global.18109
-+ ___block_literal_global.18297
-+ ___block_literal_global.19658
-+ ___block_literal_global.21.15866
-+ ___block_literal_global.21.53959
-+ ___block_literal_global.21.56148
-+ ___block_literal_global.21577
-+ ___block_literal_global.2195
-+ ___block_literal_global.22520
-+ ___block_literal_global.22963
-+ ___block_literal_global.23355
-+ ___block_literal_global.23573
-+ ___block_literal_global.24015
-+ ___block_literal_global.24545
-+ ___block_literal_global.24818
-+ ___block_literal_global.25.15871
-+ ___block_literal_global.25.53965
-+ ___block_literal_global.26459
-+ ___block_literal_global.26801
-+ ___block_literal_global.27124
-+ ___block_literal_global.27593
-+ ___block_literal_global.29.53971
-+ ___block_literal_global.2908
-+ ___block_literal_global.29780
-+ ___block_literal_global.31723
-+ ___block_literal_global.32127
-+ ___block_literal_global.32964
-+ ___block_literal_global.33.53977
-+ ___block_literal_global.33263
-+ ___block_literal_global.336.18489
-+ ___block_literal_global.3406
-+ ___block_literal_global.351.18493
-+ ___block_literal_global.35422
-+ ___block_literal_global.361.3068
-+ ___block_literal_global.36136
-+ ___block_literal_global.36469
-+ ___block_literal_global.37.53983
-+ ___block_literal_global.37124
-+ ___block_literal_global.37648
-+ ___block_literal_global.38194
-+ ___block_literal_global.38230
-+ ___block_literal_global.38500
-+ ___block_literal_global.38543
-+ ___block_literal_global.38825
-+ ___block_literal_global.398.18502
-+ ___block_literal_global.40324
-+ ___block_literal_global.416.18508
-+ ___block_literal_global.42796
-+ ___block_literal_global.44218
-+ ___block_literal_global.45.26488
-+ ___block_literal_global.45305
-+ ___block_literal_global.46683
-+ ___block_literal_global.48064
-+ ___block_literal_global.48361
-+ ___block_literal_global.4878
-+ ___block_literal_global.4935
-+ ___block_literal_global.5.15850
-+ ___block_literal_global.5.50565
-+ ___block_literal_global.5.51486
-+ ___block_literal_global.5.53937
-+ ___block_literal_global.5.56134
-+ ___block_literal_global.50290
-+ ___block_literal_global.50306
-+ ___block_literal_global.50538
-+ ___block_literal_global.50557
-+ ___block_literal_global.50679
-+ ___block_literal_global.50934
-+ ___block_literal_global.51079
-+ ___block_literal_global.51295
-+ ___block_literal_global.51478
-+ ___block_literal_global.524.18546
-+ ___block_literal_global.527.18550
-+ ___block_literal_global.53594
-+ ___block_literal_global.5376
-+ ___block_literal_global.53929
-+ ___block_literal_global.540.18558
-+ ___block_literal_global.54478
-+ ___block_literal_global.545.18562
-+ ___block_literal_global.54800
-+ ___block_literal_global.550.18566
-+ ___block_literal_global.55094
-+ ___block_literal_global.561.18574
-+ ___block_literal_global.56130
-+ ___block_literal_global.564.18578
-+ ___block_literal_global.572.18584
-+ ___block_literal_global.6612
-+ ___block_literal_global.6746
-+ ___block_literal_global.8200
-+ ___block_literal_global.9.50571
-+ ___block_literal_global.9299
-+ __getConfigStoreStringKeysForStateCapture.18305
-+ __registerStateCaptureCallbacks.18300
-+ __registerStateCaptureCallbacks.onceToken.18301
-+ __stateCaptureCallbackRegistration.18298
-+ _read_size.55729
 - GCC_except_table11754
 - GCC_except_table11805
 - GCC_except_table11842
@@ -16999,26 +16695,9 @@ Symbols:
 - GCC_except_table65675
 - GCC_except_table65694
 - GCC_except_table65713
-- __OBJC_$_PROP_LIST_VKAnnotationTrackingCameraController.29109
-- __ZGVZN2mdL27shadowMapRenderTargetFormatEvE19_renderTargetFormat.31967
 - __ZGVZZN2md13LightingLogic17writeLogicContextERKNS_10FrameStateERKNS_13CameraContextERKNS_16ElevationContextERKNS_12SceneContextERKNS_15SettingsContextERKNSt3__110shared_ptrIN3gss17StylesheetManagerINSI_15ScenePropertyIDEEEEERK23GEOLocationCoordinate2DRNS_20LightingLogicContextERKN3ggl6DeviceEENK3$_0clEvE13cached_result
-- __ZL17getTextDataStringPN2md10LabelStyleERKNSt3__112basic_stringIcNS2_11char_traitsIcEEN3geo17allocator_adapterIcN3mdm15zone_mallocatorEEEEEPSC_f.47640
-- __ZL27GEOGetVectorKitVKMapViewLogv.35389
-- __ZL27GEOGetVectorKitVKMapViewLogv.38146
-- __ZL31kGEOLocationCoordinate2DInvalid.40265
-- __ZL40commandBufferLocationsForRenderLayerTypeN2md20CartoRenderLayerTypeEPNS_29StandardCommandBufferSelectorE.14877
 - __ZN2md13LightingLogic17writeLogicContextERKNS_10FrameStateERKNS_13CameraContextERKNS_16ElevationContextERKNS_12SceneContextERKNS_15SettingsContextERKNSt3__110shared_ptrIN3gss17StylesheetManagerINSI_15ScenePropertyIDEEEEERK23GEOLocationCoordinate2DRNS_20LightingLogicContextERKN3ggl6DeviceE
 - __ZN2md17HeightMeshBuilder25createBlendedPositionDataERKN3geo8QuadTileERKNSt3__16vectorIN2gm6MatrixIfLi3ELi1EEENS5_9allocatorIS9_EEEERKNS1_14RigidTransformIddEEiPKNS_15ElevationRasterERKNS5_10shared_ptrINS_13ImageResourceEEEPN3ggl16ResourceAccessorE
-- __ZN2mdL15MapDataTypeListE.3074
-- __ZN2mdL18kDefaultArrowColorE.37012
-- __ZN2mdL19MapResourceTypeListE.3080
-- __ZN2mdL19kDefaultCircleColorE.37011
-- __ZN2mdL20MapEngineSettingListE.46426
-- __ZN2mdL28TileSelectionTileSetTypeListE.44215
-- __ZN3gdcL18ResourceSourceListE.56921
-- __ZN3geoL26reverseSRGBGammaCorrectionE.13566
-- __ZN3geoL5whiteE.24063
-- __ZN3gglL21pixelFormatPixelsSizeENS_11PixelFormatEmmm.50656
 - __ZNKRSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEE3strB9fqn220100Ev
 - __ZNKSt3__110__equal_toclB9fqn220100INS_12basic_stringIcNS_11char_traitsIcEEN3geo17allocator_adapterIcN3mdm15zone_mallocatorEEEEESA_EEbRKT_RKT0_
 - __ZNKSt3__110__function6__funcIZN3geo8internal23DispatchTaskQueuePolicy11barrierSyncIZN2md20DrapingTaskScheduler5resetEvE3$_0EEDaOT_EUlvE0_FvvEE7__cloneEPNS0_6__baseISD_EE
@@ -20380,7 +20059,6 @@ Symbols:
 - __ZNSt3__134__uninitialized_allocator_relocateB9fqn220100INS_9allocatorINS_4pairImNS_8functionIFN2gm6MatrixIfLi2ELi1EEEmEEEEEEEPS9_EEvRT_T0_SE_SE_
 - __ZNSt3__134__uninitialized_allocator_relocateB9fqn220100INS_9allocatorINS_7variantIJN2gm3BoxIdLi3EEENS3_6SphereIdLi3ENS_9enable_ifILb1EvEEEEN3geo11OrientedBoxIdLj3EddEEEEEEEPSD_EEvRT_T0_SI_SI_
 - __ZNSt3__135__uninitialized_allocator_copy_implB9fqe220100INS_9allocatorIN3esl11QuartzColorEEEPKS3_S6_PS3_EET2_RT_T0_T1_S8_
-- __ZNSt3__135__uninitialized_allocator_copy_implB9fqe220100INS_9allocatorIN3esl11QuartzColorEEEPKS3_S6_PS3_EET2_RT_T0_T1_S8_.cold.1
 - __ZNSt3__135__uninitialized_allocator_copy_implB9fqn220100INS_9allocatorIN2md28TileGroupNotificationManager13CallbackEntryEEEPS4_S6_S6_EET2_RT_T0_T1_S7_
 - __ZNSt3__135__uninitialized_allocator_copy_implB9fqn220100INS_9allocatorIN2md3mun15CollectionPointEEEPKS4_S7_PS4_EET2_RT_T0_T1_S9_
 - __ZNSt3__135__uninitialized_allocator_copy_implB9fqn220100INS_9allocatorIN3gdc17DebugTreePropertyEEEPS3_S5_S5_EET2_RT_T0_T1_S6_
@@ -23864,25 +23542,6 @@ Symbols:
 - __ZSt28__throw_bad_array_new_lengthB9fqn220100v
 - __ZTVNSt3__110__function6__funcIZN3geo8internal23DispatchTaskQueuePolicy11barrierSyncIZN2md20DrapingTaskScheduler5resetEvE3$_0EEDaOT_EUlvE0_FvvEEE
 - __ZTVNSt3__110__function6__funcIZN3geo8internal23DispatchTaskQueuePolicy11barrierSyncIZN2md20DrapingTaskScheduler5resetEvE3$_0EEDaOT_EUlvE_FvvEEE
-- __ZZL21GEOGetVectorKitVLRLogvE3log.22707
-- __ZZL21GEOGetVectorKitVLRLogvE9onceToken.22706
-- __ZZL27GEOGetVectorKitVKMapViewLogvE3log.2188
-- __ZZL27GEOGetVectorKitVKMapViewLogvE3log.35394
-- __ZZL27GEOGetVectorKitVKMapViewLogvE3log.38166
-- __ZZL27GEOGetVectorKitVKMapViewLogvE9onceToken.2186
-- __ZZL27GEOGetVectorKitVKMapViewLogvE9onceToken.35392
-- __ZZL27GEOGetVectorKitVKMapViewLogvE9onceToken.38164
-- __ZZL28GEOGetGeoGLMetalSwapchainLogvE3log.50881
-- __ZZL28GEOGetGeoGLMetalSwapchainLogvE9onceToken.50879
-- __ZZL30GEOGetVectorKitTextureAtlasLogvE3log.17405
-- __ZZL30GEOGetVectorKitTextureAtlasLogvE9onceToken.17403
-- __ZZL32GEOGetVectorKitLabelHighlightLogvE3log.27562
-- __ZZL32GEOGetVectorKitLabelHighlightLogvE3log.36441
-- __ZZL32GEOGetVectorKitLabelHighlightLogvE9onceToken.27560
-- __ZZL32GEOGetVectorKitLabelHighlightLogvE9onceToken.36439
-- __ZZL9LoadARKitvE13loadPredicate.38771
-- __ZZL9LoadARKitvE16frameworkLibrary.38778
-- __ZZN2mdL27shadowMapRenderTargetFormatEvE19_renderTargetFormat.31968
 - __ZZNSt3__112__hash_tableI14VKRouteEtaTypeNS_4hashIS1_EENS_8equal_toIS1_EENS_9allocatorIS1_EEE16__emplace_uniqueB9fqn220100IJRKS1_EEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIS1_PvEEEEbEEDpOT_ENKUlSB_SB_E_clESB_SB_
 - __ZZNSt3__112__hash_tableI14VKRouteEtaTypeNS_4hashIS1_EENS_8equal_toIS1_EENS_9allocatorIS1_EEE16__emplace_uniqueB9fqn220100IJS1_EEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIS1_PvEEEEbEEDpOT_ENKUlRKS1_OS1_E_clESM_SN_
 - __ZZNSt3__112__hash_tableIN2md12ARLogicEventENS_4hashIS2_EENS_8equal_toIS2_EENS_9allocatorIS2_EEE16__emplace_uniqueB9fqn220100IJS2_EEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIS2_PvEEEEbEEDpOT_ENKUlRKS2_OS2_E_clESN_SO_
@@ -24058,210 +23717,6 @@ Symbols:
 - __ZZNSt3__112__hash_tableIyNS_4hashIyEENS_8equal_toIyEENS_9allocatorIyEEE16__emplace_uniqueB9fqn220100IJRyEEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIyPvEEEEbEEDpOT_ENKUlRKyS9_E_clESM_S9_
 - __ZZNSt3__112__hash_tableIyNS_4hashIyEENS_8equal_toIyEENS_9allocatorIyEEE16__emplace_uniqueB9fqn220100IJyEEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIyPvEEEEbEEDpOT_ENKUlRKyOyE_clESL_SM_
 - __ZZZN2md13LightingLogic17writeLogicContextERKNS_10FrameStateERKNS_13CameraContextERKNS_16ElevationContextERKNS_12SceneContextERKNS_15SettingsContextERKNSt3__110shared_ptrIN3gss17StylesheetManagerINSI_15ScenePropertyIDEEEEERK23GEOLocationCoordinate2DRNS_20LightingLogicContextERKN3ggl6DeviceEENK3$_0clEvE13cached_result
-- ___Block_byref_object_copy_.1243
-- ___Block_byref_object_copy_.13.23539
-- ___Block_byref_object_copy_.13151
-- ___Block_byref_object_copy_.15.23556
-- ___Block_byref_object_copy_.18.27073
-- ___Block_byref_object_copy_.18019
-- ___Block_byref_object_copy_.21.23559
-- ___Block_byref_object_copy_.23553
-- ___Block_byref_object_copy_.24.23562
-- ___Block_byref_object_copy_.25009
-- ___Block_byref_object_copy_.26481
-- ___Block_byref_object_copy_.27070
-- ___Block_byref_object_copy_.27228
-- ___Block_byref_object_copy_.2869
-- ___Block_byref_object_copy_.28846
-- ___Block_byref_object_copy_.30527
-- ___Block_byref_object_copy_.33797
-- ___Block_byref_object_copy_.35412
-- ___Block_byref_object_copy_.35674
-- ___Block_byref_object_copy_.36392
-- ___Block_byref_object_copy_.50465
-- ___Block_byref_object_copy_.6532
-- ___Block_byref_object_copy_.6858
-- ___Block_byref_object_copy_.7.6861
-- ___Block_byref_object_copy_.8409
-- ___Block_byref_object_dispose_.1244
-- ___Block_byref_object_dispose_.13152
-- ___Block_byref_object_dispose_.14.23540
-- ___Block_byref_object_dispose_.16.23557
-- ___Block_byref_object_dispose_.18020
-- ___Block_byref_object_dispose_.19.27074
-- ___Block_byref_object_dispose_.22.23560
-- ___Block_byref_object_dispose_.23554
-- ___Block_byref_object_dispose_.25.23563
-- ___Block_byref_object_dispose_.25010
-- ___Block_byref_object_dispose_.26482
-- ___Block_byref_object_dispose_.27071
-- ___Block_byref_object_dispose_.27229
-- ___Block_byref_object_dispose_.2870
-- ___Block_byref_object_dispose_.28847
-- ___Block_byref_object_dispose_.30528
-- ___Block_byref_object_dispose_.33798
-- ___Block_byref_object_dispose_.35413
-- ___Block_byref_object_dispose_.35675
-- ___Block_byref_object_dispose_.36393
-- ___Block_byref_object_dispose_.50466
-- ___Block_byref_object_dispose_.6533
-- ___Block_byref_object_dispose_.6859
-- ___Block_byref_object_dispose_.8.6862
-- ___Block_byref_object_dispose_.8410
-- ____ZL21GEOGetVectorKitVLRLogv_block_invoke.22709
-- ____ZL27GEOGetVectorKitVKMapViewLogv_block_invoke.2194
-- ____ZL27GEOGetVectorKitVKMapViewLogv_block_invoke.35397
-- ____ZL27GEOGetVectorKitVKMapViewLogv_block_invoke.38169
-- ____ZL28GEOGetGeoGLMetalSwapchainLogv_block_invoke.50887
-- ____ZL30GEOGetVectorKitTextureAtlasLogv_block_invoke.17413
-- ____ZL32GEOGetVectorKitLabelHighlightLogv_block_invoke.27565
-- ____ZL32GEOGetVectorKitLabelHighlightLogv_block_invoke.36445
-- ____ZL9LoadARKitv_block_invoke.38776
-- ____registerStateCaptureCallbacks_block_invoke.18228
-- ___block_descriptor_tmp.11.53895
-- ___block_descriptor_tmp.11.56088
-- ___block_descriptor_tmp.15.53901
-- ___block_descriptor_tmp.17411
-- ___block_descriptor_tmp.19.53907
-- ___block_descriptor_tmp.19.56096
-- ___block_descriptor_tmp.23.53913
-- ___block_descriptor_tmp.27.53919
-- ___block_descriptor_tmp.3.50513
-- ___block_descriptor_tmp.3.51434
-- ___block_descriptor_tmp.3.53885
-- ___block_descriptor_tmp.3.56082
-- ___block_descriptor_tmp.31.53925
-- ___block_descriptor_tmp.35.53931
-- ___block_descriptor_tmp.50505
-- ___block_descriptor_tmp.51027
-- ___block_descriptor_tmp.51426
-- ___block_descriptor_tmp.53544
-- ___block_descriptor_tmp.53877
-- ___block_descriptor_tmp.54427
-- ___block_descriptor_tmp.54748
-- ___block_descriptor_tmp.55042
-- ___block_descriptor_tmp.56078
-- ___block_descriptor_tmp.7.50519
-- ___block_literal_global.11181
-- ___block_literal_global.11964
-- ___block_literal_global.1207
-- ___block_literal_global.12290
-- ___block_literal_global.12840
-- ___block_literal_global.13.15789
-- ___block_literal_global.13.53893
-- ___block_literal_global.13.56086
-- ___block_literal_global.13536
-- ___block_literal_global.13869
-- ___block_literal_global.1427
-- ___block_literal_global.14428
-- ___block_literal_global.14535
-- ___block_literal_global.15766
-- ___block_literal_global.15875
-- ___block_literal_global.17.15794
-- ___block_literal_global.17.53899
-- ___block_literal_global.17404
-- ___block_literal_global.17664
-- ___block_literal_global.1774
-- ___block_literal_global.17776
-- ___block_literal_global.18034
-- ___block_literal_global.18222
-- ___block_literal_global.19630
-- ___block_literal_global.21.15799
-- ___block_literal_global.21.53905
-- ___block_literal_global.21.56094
-- ___block_literal_global.21553
-- ___block_literal_global.2187
-- ___block_literal_global.22497
-- ___block_literal_global.22938
-- ___block_literal_global.23330
-- ___block_literal_global.23548
-- ___block_literal_global.23990
-- ___block_literal_global.24520
-- ___block_literal_global.24794
-- ___block_literal_global.25.15804
-- ___block_literal_global.25.53911
-- ___block_literal_global.26427
-- ___block_literal_global.26769
-- ___block_literal_global.27092
-- ___block_literal_global.27561
-- ___block_literal_global.29.53917
-- ___block_literal_global.2900
-- ___block_literal_global.29749
-- ___block_literal_global.31693
-- ___block_literal_global.32098
-- ___block_literal_global.32935
-- ___block_literal_global.33.53923
-- ___block_literal_global.3313
-- ___block_literal_global.33234
-- ___block_literal_global.336.18460
-- ___block_literal_global.351.18464
-- ___block_literal_global.35393
-- ___block_literal_global.361.2975
-- ___block_literal_global.36107
-- ___block_literal_global.36440
-- ___block_literal_global.37.53929
-- ___block_literal_global.37095
-- ___block_literal_global.37619
-- ___block_literal_global.38165
-- ___block_literal_global.38201
-- ___block_literal_global.38471
-- ___block_literal_global.38514
-- ___block_literal_global.38772
-- ___block_literal_global.398.18473
-- ___block_literal_global.40269
-- ___block_literal_global.416.18479
-- ___block_literal_global.42741
-- ___block_literal_global.44163
-- ___block_literal_global.45.26456
-- ___block_literal_global.45250
-- ___block_literal_global.46630
-- ___block_literal_global.4787
-- ___block_literal_global.48010
-- ___block_literal_global.48307
-- ___block_literal_global.4844
-- ___block_literal_global.5.15783
-- ___block_literal_global.5.50511
-- ___block_literal_global.5.51432
-- ___block_literal_global.5.53883
-- ___block_literal_global.5.56080
-- ___block_literal_global.50236
-- ___block_literal_global.50252
-- ___block_literal_global.50484
-- ___block_literal_global.50503
-- ___block_literal_global.50625
-- ___block_literal_global.50880
-- ___block_literal_global.51025
-- ___block_literal_global.51241
-- ___block_literal_global.51424
-- ___block_literal_global.524.18517
-- ___block_literal_global.527.18521
-- ___block_literal_global.5285
-- ___block_literal_global.53540
-- ___block_literal_global.53875
-- ___block_literal_global.540.18529
-- ___block_literal_global.54424
-- ___block_literal_global.545.18533
-- ___block_literal_global.54746
-- ___block_literal_global.550.18537
-- ___block_literal_global.55040
-- ___block_literal_global.56076
-- ___block_literal_global.561.18545
-- ___block_literal_global.564.18549
-- ___block_literal_global.572.18555
-- ___block_literal_global.6525
-- ___block_literal_global.6659
-- ___block_literal_global.8113
-- ___block_literal_global.9.50517
-- ___block_literal_global.9227
-- __getConfigStoreStringKeysForStateCapture.18230
-- __registerStateCaptureCallbacks.18225
-- __registerStateCaptureCallbacks.onceToken.18226
-- __stateCaptureCallbackRegistration.18223
-- _objc_msgSend$enableAllOptions
-- _read_size.55675
 CStrings:
-+ "/AppleInternal/Library/BuildRoots/4~CR63ugBKg6s6zxF-qZGt1kN2iqCLKssKZqBuFic/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/GeoStdLib/Optional.hpp"
-- "/AppleInternal/Library/BuildRoots/4~CQRBugBhAmt4Y4ZsDRxieWx2hyrl4O3XPqroXxI/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/local/include/GeoStdLib/Optional.hpp"
 - "[Banana][MaterialTextureManager] purging %p"
-
 ```

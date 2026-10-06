@@ -2,72 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/CMContinuityCaptureRemote.framework/CMContinuityCaptureRemote`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xafb40` | `0xae084` | **`-0x1abc`** |
+| `__TEXT.__oslogstring` | `0xb8cd` | `0xb27d` | **`-0x650`** |
+| `__TEXT.__cstring` | `0xa9c5` | `0xa7d5` | **`-0x1f0`** |
+| `__TEXT.__gcc_except_tab` | `0x3400` | `0x33bc` | **`-0x44`** |
+| `__AUTH_CONST.__cfstring` | `0x3d20` | `0x3ce0` | **`-0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x1058` | `0x1038` | **`-0x20`** |
+| `__AUTH_CONST.__const` | `0x15b8` | `0x15d8` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x2ad0` | `0x2ab0` | **`-0x20`** |
+| `__DATA_CONST.__got` | `0xba0` | `0xb88` | **`-0x18`** |
+| `__DATA.__common` | `0xf0` | `0xe0` | **`-0x10`** |
+| `__TEXT.__const` | `0x13e0` | `0x13d0` | **`-0x10`** |
+| `__AUTH_CONST.__objc_const` | `0xac90` | `0xac98` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x5fb4` | `0x5fbc` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -764.40.5.0.0
--  __TEXT.__text: 0xab5ac
--  __TEXT.__objc_methlist: 0x5fb4
--  __TEXT.__const: 0x13e0
--  __TEXT.__cstring: 0xa9c5
--  __TEXT.__oslogstring: 0xb8cd
--  __TEXT.__gcc_except_tab: 0x3400
 +764.40.7.0.0
-+  __TEXT.__text: 0xa9b20
-+  __TEXT.__objc_methlist: 0x5fbc
-+  __TEXT.__const: 0x13d0
-+  __TEXT.__cstring: 0xa7d5
-+  __TEXT.__oslogstring: 0xb27d
-+  __TEXT.__gcc_except_tab: 0x33bc
-   __TEXT.__dlopen_cstrs: 0x54
-   __TEXT.__swift5_typeref: 0x905
-   __TEXT.__swift5_capture: 0x69c
 
-   __TEXT.__swift5_proto: 0x54
-   __TEXT.__swift5_acfuncs: 0x64
-   __TEXT.__swift5_builtin: 0x28
--  __TEXT.__unwind_info: 0x3338
-+  __TEXT.__unwind_info: 0x3310
-   __TEXT.__eh_frame: 0x2488
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_superrefs: 0x1e8
-   __DATA_CONST.__objc_arraydata: 0x80
--  __DATA_CONST.__got: 0xba0
--  __AUTH_CONST.__const: 0x15b8
--  __AUTH_CONST.__cfstring: 0x3d20
--  __AUTH_CONST.__objc_const: 0xac90
-+  __DATA_CONST.__got: 0xb88
-+  __AUTH_CONST.__const: 0x15d8
-+  __AUTH_CONST.__cfstring: 0x3ce0
-+  __AUTH_CONST.__objc_const: 0xac98
-   __AUTH_CONST.__objc_intobj: 0x528
-   __AUTH_CONST.__objc_doubleobj: 0x40
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_arrayobj: 0x48
--  __AUTH_CONST.__auth_got: 0x1058
-+  __AUTH_CONST.__auth_got: 0x1038
-   __AUTH.__objc_data: 0x1c00
-   __AUTH.__data: 0x2c8
-   __DATA.__objc_ivar: 0x83c
-   __DATA.__data: 0x15b0
--  __DATA.__common: 0xf0
-+  __DATA.__common: 0xe0
-   __DATA_DIRTY.__objc_data: 0x140
-   __DATA_DIRTY.__bss: 0x38
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3185
 -  Symbols:   4614
 -  CStrings:  1877
 +  Functions: 3176
 +  Symbols:   4612
 +  CStrings:  1849
- 
 Symbols:
 + ___70-[CMContinuityCaptureXPCServerCCD listener:shouldAcceptNewConnection:]_block_invoke_3
 + ___70-[CMContinuityCaptureXPCServerCCD listener:shouldAcceptNewConnection:]_block_invoke_4

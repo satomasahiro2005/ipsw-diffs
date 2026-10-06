@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/WeatherAnalytics.framework/WeatherAnalytics`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_14 : 16 -> 20

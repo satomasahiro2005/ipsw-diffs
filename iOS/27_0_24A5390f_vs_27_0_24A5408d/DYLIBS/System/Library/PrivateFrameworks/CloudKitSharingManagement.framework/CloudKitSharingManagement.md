@@ -2,86 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/CloudKitSharingManagement.framework/CloudKitSharingManagement`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x205b0` | `0x24980` | **`+0x43d0`** |
+| `__DATA.__bss` | `0x5500` | `0x6300` | **`+0xe00`** |
+| `__TEXT.__const` | `0x3170` | `0x3818` | **`+0x6a8`** |
+| `__TEXT.__eh_frame` | `0x1a80` | `0x1d98` | **`+0x318`** |
+| `__AUTH_CONST.__const` | `0x19c8` | `0x1cc8` | **`+0x300`** |
+| `__TEXT.__unwind_info` | `0xd80` | `0xf30` | **`+0x1b0`** |
+| `__TEXT.__swift5_fieldmd` | `0x8d4` | `0xa20` | **`+0x14c`** |
+| `__TEXT.__swift5_typeref` | `0xbbf` | `0xcfb` | **`+0x13c`** |
+| `__TEXT.__constg_swiftt` | `0x7f0` | `0x904` | **`+0x114`** |
+| `__DATA.__data` | `0xa08` | `0xb10` | **`+0x108`** |
+| `__TEXT.__cstring` | `0x6a9` | `0x7a9` | **`+0x100`** |
+| `__TEXT.__oslogstring` | `0x3ab` | `0x47b` | **`+0xd0`** |
+| `__AUTH.__data` | `0x2b0` | `0x340` | **`+0x90`** |
+| `__TEXT.__swift5_reflstr` | `0x584` | `0x614` | **`+0x90`** |
+| `__TEXT.__swift5_proto` | `0x2d8` | `0x348` | **`+0x70`** |
+| `__DATA_CONST.__const` | `0xf8` | `0x128` | **`+0x30`** |
+| `__TEXT.__swift5_assocty` | `0xf0` | `0x120` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x618` | `0x638` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0xdc` | `0xfc` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x8c` | `0xa8` | **`+0x1c`** |
+| `__TEXT.__swift_as_entry` | `0x70` | `0x80` | **`+0x10`** |
+| `__TEXT.__swift_as_ret` | `0x6c` | `0x78` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
 -23.0.0.0.0
--  __TEXT.__text: 0x205b0
 +26.0.0.0.0
-+  __TEXT.__text: 0x24980
-   __TEXT.__objc_methlist: 0x144
--  __TEXT.__const: 0x3170
--  __TEXT.__swift5_typeref: 0xbbf
--  __TEXT.__cstring: 0x6a9
--  __TEXT.__constg_swiftt: 0x7f0
-+  __TEXT.__const: 0x3818
-+  __TEXT.__swift5_typeref: 0xcfb
-+  __TEXT.__cstring: 0x7a9
-+  __TEXT.__constg_swiftt: 0x904
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__swift5_reflstr: 0x584
--  __TEXT.__swift5_fieldmd: 0x8d4
--  __TEXT.__swift5_assocty: 0xf0
--  __TEXT.__swift5_proto: 0x2d8
--  __TEXT.__swift5_types: 0xdc
-+  __TEXT.__swift5_reflstr: 0x614
-+  __TEXT.__swift5_fieldmd: 0xa20
-+  __TEXT.__swift5_assocty: 0x120
-+  __TEXT.__swift5_proto: 0x348
-+  __TEXT.__swift5_types: 0xfc
-   __TEXT.__swift5_capture: 0xf0
--  __TEXT.__swift_as_entry: 0x70
--  __TEXT.__swift_as_ret: 0x6c
--  __TEXT.__swift_as_cont: 0x8c
--  __TEXT.__oslogstring: 0x3ab
-+  __TEXT.__swift_as_entry: 0x80
-+  __TEXT.__swift_as_ret: 0x78
-+  __TEXT.__swift_as_cont: 0xa8
-+  __TEXT.__oslogstring: 0x47b
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0xd80
--  __TEXT.__eh_frame: 0x1a80
-+  __TEXT.__unwind_info: 0xf30
-+  __TEXT.__eh_frame: 0x1d98
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xf8
-+  __DATA_CONST.__const: 0x128
-   __DATA_CONST.__objc_classlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x130
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__got: 0x170
--  __AUTH_CONST.__const: 0x19c8
-+  __AUTH_CONST.__const: 0x1cc8
-   __AUTH_CONST.__objc_const: 0x448
--  __AUTH_CONST.__auth_got: 0x618
-+  __AUTH_CONST.__auth_got: 0x638
-   __AUTH.__objc_data: 0x90
--  __AUTH.__data: 0x2b0
--  __DATA.__data: 0xa08
--  __DATA.__bss: 0x5500
-+  __AUTH.__data: 0x340
-+  __DATA.__data: 0xb10
-+  __DATA.__bss: 0x6300
-   __DATA_DIRTY.__objc_data: 0xf0
-   __DATA_DIRTY.__data: 0x348
-   __DATA_DIRTY.__bss: 0x600
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 1029
--  Symbols:   3133
+-  Symbols:   3104
 -  CStrings:  63
 +  Functions: 1173
-+  Symbols:   3502
++  Symbols:   3473
 +  CStrings:  74
- 
 Symbols:
 + _$s10Foundation14LocalizedErrorMp
 + _$s10Foundation14LocalizedErrorP10helpAnchorSSSgvgTq

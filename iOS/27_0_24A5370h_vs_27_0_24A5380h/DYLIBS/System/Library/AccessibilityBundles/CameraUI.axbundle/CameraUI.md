@@ -2,80 +2,42 @@
 
 > `/System/Library/AccessibilityBundles/CameraUI.axbundle/CameraUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e40c` | `0x18344` | **`-0x60c8`** |
+| `__AUTH_CONST.__objc_const` | `0x7dd0` | `0x5310` | **`-0x2ac0`** |
+| `__AUTH_CONST.__cfstring` | `0x5ca0` | `0x4560` | **`-0x1740`** |
+| `__TEXT.__cstring` | `0x4639` | `0x3443` | **`-0x11f6`** |
+| `__DATA_DIRTY.__objc_data` | `0x3340` | `0x2260` | **`-0x10e0`** |
+| `__TEXT.__objc_methlist` | `0x3734` | `0x267c` | **`-0x10b8`** |
+| `__AUTH.__objc_data` | `0xa00` | `0x320` | **`-0x6e0`** |
+| `__TEXT.__unwind_info` | `0xca0` | `0x900` | **`-0x3a0`** |
+| `__DATA_CONST.__objc_classlist` | `0x620` | `0x3c0` | **`-0x260`** |
+| `__TEXT.__gcc_except_tab` | `0x50c` | `0x378` | **`-0x194`** |
+| `__DATA_CONST.__objc_superrefs` | `0x250` | `0x158` | **`-0xf8`** |
+| `__AUTH_CONST.__const` | `0x640` | `0x580` | **`-0xc0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x15b8` | `0x1518` | **`-0xa0`** |
+| `__DATA_CONST.__const` | `0xb30` | `0xa98` | **`-0x98`** |
+| `__TEXT.__const` | `0x190` | `0x160` | **`-0x30`** |
+| `__TEXT.__oslogstring` | `0x39e` | `0x381` | **`-0x1d`** |
+| `__DATA_CONST.__got` | `0x2d0` | `0x2c0` | **`-0x10`** |
+| `__DATA.__bss` | `0x43` | `0x41` | **`-0x2`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1e40c
--  __TEXT.__objc_methlist: 0x3734
--  __TEXT.__const: 0x190
--  __TEXT.__gcc_except_tab: 0x50c
--  __TEXT.__cstring: 0x4639
--  __TEXT.__oslogstring: 0x39e
--  __TEXT.__unwind_info: 0xca0
-+  __TEXT.__text: 0x18344
-+  __TEXT.__objc_methlist: 0x267c
-+  __TEXT.__const: 0x160
-+  __TEXT.__gcc_except_tab: 0x378
-+  __TEXT.__cstring: 0x3443
-+  __TEXT.__oslogstring: 0x381
-+  __TEXT.__unwind_info: 0x900
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xb30
--  __DATA_CONST.__objc_classlist: 0x620
-+  __DATA_CONST.__const: 0xa98
-+  __DATA_CONST.__objc_classlist: 0x3c0
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x15b8
--  __DATA_CONST.__objc_superrefs: 0x250
-+  __DATA_CONST.__objc_selrefs: 0x1518
-+  __DATA_CONST.__objc_superrefs: 0x158
-   __DATA_CONST.__objc_arraydata: 0x48
--  __DATA_CONST.__got: 0x2d0
--  __AUTH_CONST.__const: 0x640
--  __AUTH_CONST.__cfstring: 0x5ca0
--  __AUTH_CONST.__objc_const: 0x7dd0
-+  __DATA_CONST.__got: 0x2c0
-+  __AUTH_CONST.__const: 0x580
-+  __AUTH_CONST.__cfstring: 0x4560
-+  __AUTH_CONST.__objc_const: 0x5310
-   __AUTH_CONST.__objc_intobj: 0xc0
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0xa00
-+  __AUTH.__objc_data: 0x320
-   __DATA.__objc_ivar: 0x11c
-   __DATA.__data: 0xc0
--  __DATA.__bss: 0x43
--  __DATA_DIRTY.__objc_data: 0x3340
-+  __DATA.__bss: 0x41
-+  __DATA_DIRTY.__objc_data: 0x2260
-   __DATA_DIRTY.__bss: 0x30
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
+-3039.1.0.0.0
++3042.0.0.0.0
 
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1162
--  Symbols:   4356
--  CStrings:  1539
+-  Symbols:   2553
+-  CStrings:  799
 +  Functions: 818
-+  Symbols:   3250
-+  CStrings:  1168
- 
-Sections:
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __DATA.__objc_ivar : content changed
-~ __DATA.__data : content changed
++  Symbols:   1830
++  CStrings:  614
 Symbols:
 + +[CAMScrollViewWithLayoutDelegateInSmartStylesAccessibility _accessibilityPerformValidations:]
 + +[CAMScrollViewWithLayoutDelegateInSmartStylesAccessibility(SafeCategory) safeCategoryBaseClass]
@@ -182,27 +144,6 @@ Symbols:
 + ___block_descriptor_49_e8_32w_e37_B16?0"UIAccessibilityCustomAction"8lw32l8
 + ___block_descriptor_57_e8_32s40r48r_e5_v8?0ls32l8r40l8r48l8
 + ___block_descriptor_65_e8_32s40r48r_e5_v8?0ls32l8r40l8r48l8
-+ _objc_msgSend$_axActionWithKey:axis:increment:
-+ _objc_msgSend$_axAdjustValueAlongAxis:increment:
-+ _objc_msgSend$_axAdjustValueWithIncrement:
-+ _objc_msgSend$_axCurrentStyleBadgeText
-+ _objc_msgSend$_axCurrentStyleDescription
-+ _objc_msgSend$_axCurrentValueDescription
-+ _objc_msgSend$_axDisplayStringForPadAxis:
-+ _objc_msgSend$_axFrontPIPVideoPreviewView
-+ _objc_msgSend$_axInstallAccessibilityActions
-+ _objc_msgSend$_axSiblingsOfClass:
-+ _objc_msgSend$_axStyleDescriptionLabelSiblings
-+ _objc_msgSend$_setAccessibilityCustomActionsBlock:
-+ _objc_msgSend$convertRect:toView:
-+ _objc_msgSend$frame
-+ _objc_msgSend$isHidden
-+ _objc_msgSend$setAccessibilityLabel:
-+ _objc_msgSend$setValue:notifyObserver:
-+ _objc_msgSend$sortUsingComparator:
-+ _objc_msgSend$subviews
-+ _objc_msgSend$superview
-+ _objc_msgSend$value
 - +[CAMApertureStatusIndicatorAccessibility _accessibilityPerformValidations:]
 - +[CAMApertureStatusIndicatorAccessibility(SafeCategory) safeCategoryBaseClass]
 - +[CAMApertureStatusIndicatorAccessibility(SafeCategory) safeCategoryTargetClassName]
@@ -1031,42 +972,6 @@ Symbols:
 - ___block_descriptor_40_e8_32r_e15_v32?08Q16^B24lr32l8
 - ___block_descriptor_48_e8_32r40w_e15_v32?08Q16^B24lr32l8w40l8
 - ___block_descriptor_48_e8_32w_e5_Q8?0lw32l8
-- _objc_msgSend$_axAdvancedFormatIndex
-- _objc_msgSend$_axAllowedFormats
-- _objc_msgSend$_axCameraExpandingControl
-- _objc_msgSend$_axCurrentCameraMode
-- _objc_msgSend$_axCurrentFlashValue
-- _objc_msgSend$_axCurrentFormatValue
-- _objc_msgSend$_axEncodingName:
-- _objc_msgSend$_axEssentialFormatIndex
-- _objc_msgSend$_axFramerateLabel
-- _objc_msgSend$_axFramerateTapped
-- _objc_msgSend$_axIsCurrentFormatEssential
-- _objc_msgSend$_axLocalizedStringForPhotoFormat:
-- _objc_msgSend$_axResolutionLabel
-- _objc_msgSend$_axResolutionTapped
-- _objc_msgSend$_axSeparatorLabel
-- _objc_msgSend$_axSetFramerateTapped:
-- _objc_msgSend$_axSetResolutionTapped:
-- _objc_msgSend$_axValueForLivePhotoMode:
-- _objc_msgSend$_setAccessibilityTraitsBlock:
-- _objc_msgSend$accessibilityElementIsFocused
-- _objc_msgSend$integerFormatter
-- _objc_msgSend$lowercaseString
-- _objc_msgSend$objectAtIndex:
-- _objc_msgSend$objectForKey:
-- _objc_msgSend$setAspectRatio:
-- _objc_msgSend$setControlDrawerExpanded:forReason:animated:
-- _objc_msgSend$setExpanded:
-- _objc_msgSend$setLivePhotoMode:
-- _objc_msgSend$setRAWMode:
-- _objc_msgSend$setSelectedMode:animated:
-- _objc_msgSend$setSharedLibraryMode:animated:
-- _objc_msgSend$setTimerDuration:
-- _objc_msgSend$setVideoStabilizationMode:animated:
-- _objc_msgSend$stringByReplacingOccurrencesOfString:withString:
-- _objc_msgSend$stringFromNumber:
-- _objc_msgSend$unsignedIntegerValue
 CStrings:
 + "%ld"
 + "@\"NSArray\"8@?0"
@@ -1307,5 +1212,4 @@ CStrings:
 - "video.mode"
 - "videoStabilizationMode"
 - "{?=\"allowPauseResume\"B\"showVisualIntelligenceGlow\"B\"centerSymbol\"q}"
-
 ```

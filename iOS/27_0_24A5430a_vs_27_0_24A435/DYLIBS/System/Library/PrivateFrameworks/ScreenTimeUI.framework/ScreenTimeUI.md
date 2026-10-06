@@ -2,17 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/ScreenTimeUI.framework/ScreenTimeUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6f444` | `0x6f460` | **`+0x1c`** |
+
+### Other Changes
+
 ```diff
 
 -655.0.106.0.0
--  __TEXT.__text: 0x6f444
 +655.0.107.0.0
-+  __TEXT.__text: 0x6f460
-   __TEXT.__objc_methlist: 0x1960
-   __TEXT.__const: 0x2e74
-   __TEXT.__cstring: 0x2d3a
 Functions:
-~ sub_2a1b879c0 -> sub_2a293a9c0 : 1044 -> 1056
-~ sub_2a1b8d3f4 -> sub_2a2940400 : 980 -> 992
-~ sub_2a1b8e840 -> sub_2a2941858 : 360 -> 364
+~ sub_2a1a7d9c0 -> sub_2a28389c0 : 1044 -> 1056
+~ sub_2a1a833f4 -> sub_2a283e400 : 980 -> 992
+~ sub_2a1a84840 -> sub_2a283f858 : 360 -> 364
 ```

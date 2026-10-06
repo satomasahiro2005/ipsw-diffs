@@ -2,22 +2,22 @@
 
 > `/System/Library/Extensions/AppleSkywalkAVB.kext/AppleSkywalkAVB`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x1088` | `0x10e4` | **`+0x5c`** |
+
+### Same-size Content Changes
 
 - `__DATA.__data`
+- `__DATA_CONST.__const`
 - `__DATA_CONST.__mod_init_func`
 - `__DATA_CONST.__mod_term_func`
-- `__DATA_CONST.__const`
 
-```diff
+### Other Changes
 
- 171.0.0.0.0
-   __TEXT.__cstring: 0xed
--  __TEXT_EXEC.__text: 0x1088
-+  __TEXT_EXEC.__text: 0x10e4
-   __TEXT_EXEC.__auth_stubs: 0x1e0
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x60
+```text
 Functions:
 ~ __ZN29AppleSkywalkAVBLegacyEthernet9MetaClassC1Ev : 72 -> 76
 ~ __ZN29AppleSkywalkAVBLegacyEthernetC2EPK11OSMetaClass : 52 -> 56

@@ -2,11 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/BatteryAlgorithms.framework/BatteryAlgorithms`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__unwind_info` | `0x2928` | `0x2920` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -155.0.0.0.0
 +156.0.0.0.0
-   __TEXT.__text: 0x833d0
-   __TEXT.__objc_methlist: 0xb04
-   __TEXT.__const: 0xab40
 ```

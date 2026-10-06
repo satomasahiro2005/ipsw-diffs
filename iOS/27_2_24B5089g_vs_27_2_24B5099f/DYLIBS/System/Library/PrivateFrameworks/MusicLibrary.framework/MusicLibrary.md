@@ -2,45 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/MusicLibrary.framework/MusicLibrary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3b84ec` | `0x3b86c0` | **`+0x1d4`** |
+| `__TEXT.__oslogstring` | `0x1e205` | `0x1e231` | **`+0x2c`** |
+| `__DATA_CONST.__const` | `0x9e60` | `0x9e88` | **`+0x28`** |
+| `__TEXT.__gcc_except_tab` | `0x14924` | `0x14930` | **`+0xc`** |
+| `__TEXT.__unwind_info` | `0x7378` | `0x7380` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -4026.200.17.0.0
--  __TEXT.__text: 0x3b1528
 +4026.200.21.0.0
-+  __TEXT.__text: 0x3b16fc
-   __TEXT.__objc_methlist: 0xe834
-   __TEXT.__const: 0x25d54
-   __TEXT.__dlopen_cstrs: 0x399
--  __TEXT.__gcc_except_tab: 0x14924
-+  __TEXT.__gcc_except_tab: 0x14930
-   __TEXT.__cstring: 0x75135
--  __TEXT.__oslogstring: 0x1e205
-+  __TEXT.__oslogstring: 0x1e231
-   __TEXT.__ustring: 0x210
--  __TEXT.__unwind_info: 0x84e8
-+  __TEXT.__unwind_info: 0x84f0
-   __TEXT.__eh_frame: 0x50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9e60
-+  __DATA_CONST.__const: 0x9e88
-   __DATA_CONST.__objc_classlist: 0x718
-   __DATA_CONST.__objc_catlist: 0x50
-   __DATA_CONST.__objc_protolist: 0xa8
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 8508
 -  Symbols:   14779
 -  CStrings:  7580
 +  Functions: 8509
 +  Symbols:   14781
 +  CStrings:  7581
- 
 Symbols:
 + GCC_except_table1709
 + GCC_except_table1724
@@ -998,9 +982,9 @@ Symbols:
 - GCC_except_table8151
 Functions:
 ~ ___91-[ML3MusicLibrary generateArtworkForRelativePath:sizes:qualityOfService:completionHandler:]_block_invoke : 184 -> 256
-~ ___91-[ML3MusicLibrary generateArtworkForRelativePath:sizes:qualityOfService:completionHandler:]_block_invoke_2 : 148 -> 168
+~ ___91-[ML3MusicLibrary generateArtworkForRelativePath:sizes:qualityOfService:completionHandler:]_block_invoke_2 : 160 -> 168
 + ___91-[ML3MusicLibrary generateArtworkForRelativePath:sizes:qualityOfService:completionHandler:]_block_invoke_3
-~ __ZN16ML3ImportSession9_addAlbumENSt3__110shared_ptrI13ML3ImportItemEEP26ML3AlbumGroupingIdentifierxS3_ : 19964 -> 20192
+~ __ZN16ML3ImportSession9_addAlbumENSt3__110shared_ptrI13ML3ImportItemEEP26ML3AlbumGroupingIdentifierxS3_ : 19984 -> 20212
 CStrings:
 + "Unsubscribing cloudChannelName='%{public}s'"
 ```

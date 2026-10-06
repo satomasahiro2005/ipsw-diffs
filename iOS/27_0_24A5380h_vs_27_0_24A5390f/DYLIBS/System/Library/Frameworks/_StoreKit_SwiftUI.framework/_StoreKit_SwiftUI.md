@@ -2,86 +2,29 @@
 
 > `/System/Library/Frameworks/_StoreKit_SwiftUI.framework/_StoreKit_SwiftUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x263dc8` | `0x264714` | **`+0x94c`** |
+| `__TEXT.__swift5_typeref` | `0x1aa66` | `0x1aafa` | **`+0x94`** |
+| `__TEXT.__unwind_info` | `0x9318` | `0x9328` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x2b58` | `0x2b60` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x1908` | `0x1910` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__TEXT.__cstring`
-- `__TEXT.__const`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+
+### Other Changes
 
 ```diff
 
 -816.0.38.0.0
--  __TEXT.__text: 0x263dc8
 +816.0.41.0.0
-+  __TEXT.__text: 0x264714
-   __TEXT.__objc_methlist: 0x404
-   __TEXT.__cstring: 0x5197
-   __TEXT.__const: 0x26554
-   __TEXT.__constg_swiftt: 0xf904
--  __TEXT.__swift5_typeref: 0x1aa66
-+  __TEXT.__swift5_typeref: 0x1aafa
-   __TEXT.__swift5_builtin: 0x154
-   __TEXT.__swift5_reflstr: 0x7f51
-   __TEXT.__swift5_fieldmd: 0x8b70
 
-   __TEXT.__swift_as_cont: 0x470
-   __TEXT.__swift5_protos: 0x8c
-   __TEXT.__swift5_mpenum: 0x68
--  __TEXT.__unwind_info: 0x9318
-+  __TEXT.__unwind_info: 0x9328
-   __TEXT.__eh_frame: 0x6b00
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0x3f8
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__got: 0x1908
-+  __DATA_CONST.__got: 0x1910
-   __AUTH_CONST.__const: 0x14a30
-   __AUTH_CONST.__cfstring: 0x19e0
-   __AUTH_CONST.__objc_const: 0x2220
--  __AUTH_CONST.__auth_got: 0x2b58
-+  __AUTH_CONST.__auth_got: 0x2b60
-   __AUTH.__objc_data: 0x1b0
-   __AUTH.__data: 0x5b38
-   __DATA.__objc_ivar: 0xc
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 16322
--  Symbols:   5738
-+  Symbols:   5740
-   CStrings:  642
- 
+-  Symbols:   5653
++  Symbols:   5655
 Symbols:
 + ___swift_closure_destructor.56Tm
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA5GroupVyAA012_ConditionalD0VyACyACyACyACyACy010_StoreKit_aB026PromotionalIconLoadingViewVyAA05EmptyL0VAH027AutomaticProductPlaceholderJ0VGAA24_BackgroundShapeModifierVyAA012Hierarchicalr5StyleS0VyAA04FillrU0VGAH013InAppPurchaseJ18FrameRoundedSquareVGGAA012_CompositingE6EffectVGAA13_ShadowEffectVGAA022_EnvironmentKeyWritingS0VyAA03AnyrU0VGGA6_yAA17EnvironmentValuesVAHE0wxyjzU0OGGACyACyACyACyACyACyAA5ImageVAA18_AspectRatioLayoutVGAA14_PaddingLayoutVGAH0wxyjzlS0VGAA012_EnvironmentquS0VyAA14LinearGradientVGGAA023AccessibilityAttachmentS0VGA9_GGGAH17PlatformConstantsO0zS033_85E09308F28BDFAEF0A3F2B14C88C96ELLVGAA0L0HPA39_AAA46_HPA38_AAA46_HPA16_AAA46_HPA10_AAA46_HPA4_AAA46_HPA1_AAA46_HPAzAA46_HPAoAA46_HPyHC_AyA0lS0HPyHCHC_A0_AAA47_HPyHCHC_A3_AAA47_HPyHCHC_A9_AAA47_HPyHCHC_A15_AAA47_HPyHCHC_A37_AAA46_HPA36_AAA46_HPA33_AAA46_HPA27_AAA46_HPA24_AAA46_HPA21_AAA46_HPA18_AAA46_HPyHC_A20_AAA47_HPyHCHC_A23_AAA47_HPyHCHC_A26_AAA47_HPyHCHC_A32_AAA47_HPyHCHC_A35_AAA47_HPyHCHC_A9_AAA47_HPyHCHCHC_HC_A44_AAA47_HPyHCHC

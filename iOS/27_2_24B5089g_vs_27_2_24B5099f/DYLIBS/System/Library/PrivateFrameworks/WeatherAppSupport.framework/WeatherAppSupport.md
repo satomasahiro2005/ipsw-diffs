@@ -2,92 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/WeatherAppSupport.framework/WeatherAppSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21d5e0` | `0x21f29c` | **`+0x1cbc`** |
+| `__DATA.__bss` | `0x15fa0` | `0x14820` | **`-0x1780`** |
+| `__DATA_DIRTY.__bss` | `0xac30` | `0xc3b0` | **`+0x1780`** |
+| `__DATA_DIRTY.__data` | `0x8a40` | `0x9768` | **`+0xd28`** |
+| `__DATA.__data` | `0x4100` | `0x37a0` | **`-0x960`** |
+| `__TEXT.__swift5_typeref` | `0xfc02` | `0xff32` | **`+0x330`** |
+| `__AUTH.__data` | `0x3a88` | `0x3810` | **`-0x278`** |
+| `__TEXT.__const` | `0x21ad4` | `0x21b94` | **`+0xc0`** |
+| `__AUTH_CONST.__objc_const` | `0x2790` | `0x2848` | **`+0xb8`** |
+| `__AUTH.__objc_data` | `0x440` | `0x3a0` | **`-0xa0`** |
+| `__DATA_DIRTY.__objc_data` | `0xa0` | `0x140` | **`+0xa0`** |
+| `__TEXT.__swift5_reflstr` | `0x5e1d` | `0x5ebd` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x8080` | `0x8100` | **`+0x80`** |
+| `__AUTH_CONST.__const` | `0x10588` | `0x10530` | **`-0x58`** |
+| `__TEXT.__swift5_fieldmd` | `0x88d8` | `0x8930` | **`+0x58`** |
+| `__TEXT.__constg_swiftt` | `0xb1a4` | `0xb1ec` | **`+0x48`** |
+| `__DATA_DIRTY.__common` | `0x350` | `0x380` | **`+0x30`** |
+| `__TEXT.__swift5_capture` | `0x147c` | `0x14a4` | **`+0x28`** |
+| `__TEXT.__eh_frame` | `0x40d0` | `0x40b8` | **`-0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x3658` | `0x3668` | **`+0x10`** |
+| `__DATA.__common` | `0x68` | `0x70` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x1b08` | `0x1b00` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x170` | `0x178` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0xb68` | `0xb6c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1470.0.0.0.0
--  __TEXT.__text: 0x209afc
 +1474.0.0.0.0
-+  __TEXT.__text: 0x20b5f8
-   __TEXT.__objc_methlist: 0x410
--  __TEXT.__const: 0x21ad4
--  __TEXT.__swift5_typeref: 0xfc02
-+  __TEXT.__const: 0x21b94
-+  __TEXT.__swift5_typeref: 0xff32
-   __TEXT.__oslogstring: 0x170a
-   __TEXT.__cstring: 0x3e010
--  __TEXT.__constg_swiftt: 0xb1a4
--  __TEXT.__swift5_reflstr: 0x5e1d
--  __TEXT.__swift5_fieldmd: 0x88d8
-+  __TEXT.__constg_swiftt: 0xb1ec
-+  __TEXT.__swift5_reflstr: 0x5ebd
-+  __TEXT.__swift5_fieldmd: 0x8930
-   __TEXT.__swift5_builtin: 0x26c
-   __TEXT.__swift5_assocty: 0x1d40
-   __TEXT.__swift5_proto: 0x1110
--  __TEXT.__swift5_types: 0xb68
-+  __TEXT.__swift5_types: 0xb6c
-   __TEXT.__swift5_protos: 0xec
--  __TEXT.__swift5_capture: 0x147c
-+  __TEXT.__swift5_capture: 0x14a4
-   __TEXT.__swift5_mpenum: 0x188
-   __TEXT.__swift5_types2: 0x8
-   __TEXT.__swift_as_entry: 0x68
-   __TEXT.__swift_as_ret: 0x60
-   __TEXT.__swift_as_cont: 0x78
--  __TEXT.__unwind_info: 0x9d18
--  __TEXT.__eh_frame: 0x40d0
-+  __TEXT.__unwind_info: 0x9d88
-+  __TEXT.__eh_frame: 0x40b8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x5a0
--  __DATA_CONST.__objc_classlist: 0x170
-+  __DATA_CONST.__objc_classlist: 0x178
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x488
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__got: 0x1b08
--  __AUTH_CONST.__const: 0x10588
--  __AUTH_CONST.__objc_const: 0x2790
--  __AUTH_CONST.__auth_got: 0x3658
--  __AUTH.__objc_data: 0x440
--  __AUTH.__data: 0x3a88
--  __DATA.__data: 0x4100
--  __DATA.__common: 0x68
--  __DATA_DIRTY.__objc_data: 0xa0
--  __DATA_DIRTY.__data: 0x8a40
--  __DATA_DIRTY.__bss: 0xac30
--  __DATA_DIRTY.__common: 0x350
-+  __DATA_CONST.__got: 0x1b00
-+  __AUTH_CONST.__const: 0x10530
-+  __AUTH_CONST.__objc_const: 0x2848
-+  __AUTH_CONST.__auth_got: 0x3668
-+  __AUTH.__objc_data: 0x3a0
-+  __AUTH.__data: 0x3810
-+  __DATA.__data: 0x37a0
-+  __DATA.__common: 0x70
-+  __DATA_DIRTY.__objc_data: 0x140
-+  __DATA_DIRTY.__data: 0x9768
-+  __DATA_DIRTY.__bss: 0xc3b0
-+  __DATA_DIRTY.__common: 0x380
-   - /System/Library/Frameworks/Charts.framework/Charts
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 14814
 -  Symbols:   4156
 +  Functions: 14842
 +  Symbols:   4171
-   CStrings:  2372
- 
 Symbols:
 + _OUTLINED_FUNCTION_152
 + _OUTLINED_FUNCTION_153

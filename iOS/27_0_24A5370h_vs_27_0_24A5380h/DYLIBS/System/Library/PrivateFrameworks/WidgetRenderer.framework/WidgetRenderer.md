@@ -2,113 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/WidgetRenderer.framework/WidgetRenderer`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x184ef8` | `0x187624` | **`+0x272c`** |
+| `__DATA_DIRTY.__data` | `0x83d0` | `0x9028` | **`+0xc58`** |
+| `__DATA_DIRTY.__bss` | `0x6310` | `0x6b90` | **`+0x880`** |
+| `__AUTH.__data` | `0x2bc8` | `0x24d8` | **`-0x6f0`** |
+| `__DATA.__bss` | `0x2f58` | `0x2938` | **`-0x620`** |
+| `__AUTH.__objc_data` | `0x2558` | `0x1fd8` | **`-0x580`** |
+| `__DATA_DIRTY.__objc_data` | `0x39a0` | `0x3f20` | **`+0x580`** |
+| `__DATA.__data` | `0x29b8` | `0x2500` | **`-0x4b8`** |
+| `__TEXT.__oslogstring` | `0x6a98` | `0x6c98` | **`+0x200`** |
+| `__TEXT.__const` | `0xc47c` | `0xc60c` | **`+0x190`** |
+| `__AUTH_CONST.__objc_const` | `0xb508` | `0xb680` | **`+0x178`** |
+| `__AUTH_CONST.__const` | `0x7c08` | `0x7d20` | **`+0x118`** |
+| `__TEXT.__swift5_typeref` | `0xaa1c` | `0xa912` | **`-0x10a`** |
+| `__TEXT.__unwind_info` | `0x3d40` | `0x3e20` | **`+0xe0`** |
+| `__TEXT.__constg_swiftt` | `0x7f7c` | `0x8034` | **`+0xb8`** |
+| `__DATA_DIRTY.__common` | `0x628` | `0x6d8` | **`+0xb0`** |
+| `__DATA.__common` | `0x2e8` | `0x240` | **`-0xa8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1628` | `0x16a8` | **`+0x80`** |
+| `__TEXT.__swift5_fieldmd` | `0x3d64` | `0x3de4` | **`+0x80`** |
+| `__TEXT.__swift5_reflstr` | `0x546e` | `0x54ee` | **`+0x80`** |
+| `__TEXT.__eh_frame` | `0x1fac` | `0x2024` | **`+0x78`** |
+| `__TEXT.__swift5_capture` | `0x2050` | `0x20a8` | **`+0x58`** |
+| `__AUTH_CONST.__auth_got` | `0x32a0` | `0x3280` | **`-0x20`** |
+| `__TEXT.__swift5_assocty` | `0x9c8` | `0x9e0` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x244` | `0x258` | **`+0x14`** |
+| `__TEXT.__swift5_proto` | `0x4cc` | `0x4e0` | **`+0x14`** |
+| `__DATA_CONST.__const` | `0x858` | `0x868` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x37c` | `0x388` | **`+0xc`** |
+| `__DATA_CONST.__got` | `0x1658` | `0x1660` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x2f0` | `0x2f8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x184ef8
-+  __TEXT.__text: 0x187624
-   __TEXT.__objc_methlist: 0x186c
--  __TEXT.__const: 0xc47c
-+  __TEXT.__const: 0xc60c
-   __TEXT.__cstring: 0x2aa4
--  __TEXT.__constg_swiftt: 0x7f7c
--  __TEXT.__swift5_typeref: 0xaa1c
--  __TEXT.__swift5_reflstr: 0x546e
--  __TEXT.__swift5_fieldmd: 0x3d64
--  __TEXT.__swift5_builtin: 0x244
--  __TEXT.__swift5_assocty: 0x9c8
--  __TEXT.__oslogstring: 0x6a98
--  __TEXT.__swift5_capture: 0x2050
--  __TEXT.__swift5_proto: 0x4cc
--  __TEXT.__swift5_types: 0x37c
-+  __TEXT.__constg_swiftt: 0x8034
-+  __TEXT.__swift5_typeref: 0xa912
-+  __TEXT.__swift5_reflstr: 0x54ee
-+  __TEXT.__swift5_fieldmd: 0x3de4
-+  __TEXT.__swift5_builtin: 0x258
-+  __TEXT.__swift5_assocty: 0x9e0
-+  __TEXT.__oslogstring: 0x6c98
-+  __TEXT.__swift5_capture: 0x20a8
-+  __TEXT.__swift5_proto: 0x4e0
-+  __TEXT.__swift5_types: 0x388
-   __TEXT.__swift5_protos: 0x70
-   __TEXT.__swift5_mpenum: 0x18
-   __TEXT.__swift_as_entry: 0x24
-   __TEXT.__swift_as_ret: 0x28
-   __TEXT.__swift_as_cont: 0x58
--  __TEXT.__unwind_info: 0x3d40
--  __TEXT.__eh_frame: 0x1fac
-+  __TEXT.__unwind_info: 0x3e20
-+  __TEXT.__eh_frame: 0x2024
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x858
--  __DATA_CONST.__objc_classlist: 0x2f0
-+  __DATA_CONST.__const: 0x868
-+  __DATA_CONST.__objc_classlist: 0x2f8
-   __DATA_CONST.__objc_protolist: 0x1b8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1628
-+  __DATA_CONST.__objc_selrefs: 0x16a8
-   __DATA_CONST.__objc_protorefs: 0xd0
-   __DATA_CONST.__objc_superrefs: 0x10
--  __DATA_CONST.__got: 0x1658
--  __AUTH_CONST.__const: 0x7c08
-+  __DATA_CONST.__got: 0x1660
-+  __AUTH_CONST.__const: 0x7d20
-   __AUTH_CONST.__cfstring: 0x180
--  __AUTH_CONST.__objc_const: 0xb508
--  __AUTH_CONST.__auth_got: 0x32a0
--  __AUTH.__objc_data: 0x2558
--  __AUTH.__data: 0x2bc8
-+  __AUTH_CONST.__objc_const: 0xb680
-+  __AUTH_CONST.__auth_got: 0x3280
-+  __AUTH.__objc_data: 0x1fd8
-+  __AUTH.__data: 0x24d8
-   __DATA.__objc_ivar: 0x18
--  __DATA.__data: 0x29b8
-+  __DATA.__data: 0x2500
-   __DATA.__objc_stublist: 0x8
--  __DATA.__bss: 0x2f58
--  __DATA.__common: 0x2e8
--  __DATA_DIRTY.__objc_data: 0x39a0
--  __DATA_DIRTY.__data: 0x83d0
--  __DATA_DIRTY.__bss: 0x6310
--  __DATA_DIRTY.__common: 0x628
-+  __DATA.__bss: 0x2938
-+  __DATA.__common: 0x240
-+  __DATA_DIRTY.__objc_data: 0x3f20
-+  __DATA_DIRTY.__data: 0x9028
-+  __DATA_DIRTY.__bss: 0x6b90
-+  __DATA_DIRTY.__common: 0x6d8
-   - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
-   - /System/Library/Frameworks/AppManagedFeatures.framework/AppManagedFeatures
-   - /System/Library/Frameworks/ClockKit.framework/ClockKit
+-727.0.0.0.0
++734.0.0.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6696
--  Symbols:   4889
--  CStrings:  708
+-  Symbols:   2793
+-  CStrings:  696
 +  Functions: 6750
-+  Symbols:   4929
-+  CStrings:  713
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __DATA.__objc_stublist : content changed
++  Symbols:   2799
++  CStrings:  701
 Symbols:
 + _NSStringFromCHSColorScheme
 + _NSStringFromCHSColorSchemes
@@ -133,28 +74,6 @@ Symbols:
 + _keypath_set.194Tm
 + _keypath_set.216Tm
 + _keypath_set.218Tm
-+ _objc_msgSend$allowsContentPreferredColorScheme
-+ _objc_msgSend$animationSettings
-+ _objc_msgSend$boolValue
-+ _objc_msgSend$chs_allowsContentPreferredColorSchemes
-+ _objc_msgSend$colorScheme
-+ _objc_msgSend$damping
-+ _objc_msgSend$delay
-+ _objc_msgSend$duration
-+ _objc_msgSend$getControlPointAtIndex:values:
-+ _objc_msgSend$initialVelocity
-+ _objc_msgSend$mass
-+ _objc_msgSend$observeAllowsContentPreferredColorSchemeWithBlock:
-+ _objc_msgSend$observeColorSchemeWithBlock:
-+ _objc_msgSend$observeSupportedAllowsContentPreferredColorSchemeValuesWithBlock:
-+ _objc_msgSend$observeSupportedColorSchemesWithBlock:
-+ _objc_msgSend$setAllowsContentPreferredColorScheme:
-+ _objc_msgSend$setColorScheme:
-+ _objc_msgSend$speed
-+ _objc_msgSend$stiffness
-+ _objc_msgSend$supportedAllowsContentPreferredColorSchemeValues
-+ _objc_msgSend$supportedColorSchemes
-+ _objc_msgSend$timingFunction
 + _symbolic _____ 14WidgetRenderer20TintAnimationFreezerC
 + _symbolic _____ 14WidgetRenderer22FreezableTintAnimationV
 + _symbolic _____ So14CHSColorSchemeV
@@ -181,12 +100,6 @@ Symbols:
 - _keypath_get.220Tm
 - _keypath_set.187Tm
 - _keypath_set.215Tm
-- _objc_msgSend$colorSchemePolicy
-- _objc_msgSend$initWithColorScheme:
-- _objc_msgSend$observeColorSchemePolicyWithBlock:
-- _objc_msgSend$observeSupportedColorSchemePoliciesWithBlock:
-- _objc_msgSend$setColorSchemePolicy:
-- _objc_msgSend$supportedColorSchemePolicies
 - _symbolic SaySo20CHSColorSchemePolicyCG
 - _symbolic Say_____G 7SwiftUI11ColorSchemeO
 - _symbolic So20CHSColorSchemePolicyC
@@ -216,5 +129,4 @@ CStrings:
 - "[%{public}s] Widget color scheme policy changed to: %{public}@"
 - "[%{public}s] config validation found error: Requested color scheme policy %{public}@ not in matching CHSConfiguredWidgetDescriptor id %{public}s."
 - "[%{public}s] requestedColorSchemePolicy changed to (%{public}@)"
-
 ```

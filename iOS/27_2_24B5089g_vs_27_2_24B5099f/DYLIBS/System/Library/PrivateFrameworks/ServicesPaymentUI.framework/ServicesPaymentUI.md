@@ -2,74 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/ServicesPaymentUI.framework/ServicesPaymentUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xba094` | `0xb9e14` | **`-0x280`** |
+| `__TEXT.__swift5_typeref` | `0x55f2` | `0x5648` | **`+0x56`** |
+| `__AUTH_CONST.__const` | `0x4c60` | `0x4c38` | **`-0x28`** |
+| `__AUTH_CONST.__objc_const` | `0x2510` | `0x2530` | **`+0x20`** |
+| `__TEXT.__oslogstring` | `0x2bc0` | `0x2be0` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x1f53` | `0x1f73` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x1a60` | `0x1a70` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0xc88` | `0xc78` | **`-0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x2548` | `0x2554` | **`+0xc`** |
+| `__AUTH.__data` | `0x1a08` | `0x1a10` | **`+0x8`** |
+| `__DATA.__common` | `0xc0` | `0xc8` | **`+0x8`** |
+| `__DATA_DIRTY.__objc_data` | `0x12a0` | `0x12a8` | **`+0x8`** |
+| `__TEXT.__constg_swiftt` | `0x27a0` | `0x27a8` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x2438` | `0x2430` | **`-0x8`** |
+| `__DATA_DIRTY.__common` | `0x80` | `0x79` | **`-0x7`** |
+
+### Other Changes
+
 ```diff
 
 -1.1.11.0.0
--  __TEXT.__text: 0xb4dec
 +1.1.14.0.0
-+  __TEXT.__text: 0xb4ba0
-   __TEXT.__objc_methlist: 0x97c
-   __TEXT.__const: 0x8764
--  __TEXT.__constg_swiftt: 0x27a0
--  __TEXT.__swift5_typeref: 0x55f2
--  __TEXT.__swift5_fieldmd: 0x2548
-+  __TEXT.__constg_swiftt: 0x27a8
-+  __TEXT.__swift5_typeref: 0x5648
-+  __TEXT.__swift5_fieldmd: 0x2554
-   __TEXT.__swift5_builtin: 0x8c
--  __TEXT.__swift5_reflstr: 0x1f53
-+  __TEXT.__swift5_reflstr: 0x1f73
-   __TEXT.__swift5_assocty: 0x6c0
-   __TEXT.__swift5_proto: 0x64c
-   __TEXT.__swift5_types: 0x240
--  __TEXT.__swift5_capture: 0xc88
-+  __TEXT.__swift5_capture: 0xc78
-   __TEXT.__swift_as_entry: 0x90
-   __TEXT.__swift_as_cont: 0x1f4
-   __TEXT.__swift_as_ret: 0xa8
-   __TEXT.__cstring: 0x1a48
--  __TEXT.__oslogstring: 0x2bc0
-+  __TEXT.__oslogstring: 0x2be0
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__unwind_info: 0x2d18
-+  __TEXT.__unwind_info: 0x2d10
-   __TEXT.__eh_frame: 0x3d70
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0xcf8
-   __DATA_CONST.__objc_protorefs: 0x98
-   __DATA_CONST.__got: 0xb98
--  __AUTH_CONST.__const: 0x4c60
--  __AUTH_CONST.__objc_const: 0x2510
--  __AUTH_CONST.__auth_got: 0x1a60
-+  __AUTH_CONST.__const: 0x4c38
-+  __AUTH_CONST.__objc_const: 0x2530
-+  __AUTH_CONST.__auth_got: 0x1a70
-   __AUTH.__objc_data: 0x6a8
--  __AUTH.__data: 0x1a08
-+  __AUTH.__data: 0x1a10
-   __DATA.__data: 0x27c8
--  __DATA.__common: 0xc0
--  __DATA_DIRTY.__objc_data: 0x12a0
-+  __DATA.__common: 0xc8
-+  __DATA_DIRTY.__objc_data: 0x12a8
-   __DATA_DIRTY.__data: 0x5d8
--  __DATA_DIRTY.__common: 0x80
-+  __DATA_DIRTY.__common: 0x79
-   __DATA_DIRTY.__bss: 0x180
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3125
 -  Symbols:   9754
 +  Functions: 3123
 +  Symbols:   9758
-   CStrings:  393
- 
 Symbols:
 + _$s17ServicesPaymentUI0B14SheetConstantsV6DeviceV25touchIDRequiresUserIntentSbvgZTf4d_n
 + _$s17ServicesPaymentUI0B19SheetViewControllerC27initialBiometricFooterState33_C6BE8422216CA333FAFA068087384088LLAA0b8ProgressJ0OvgTf4d_n

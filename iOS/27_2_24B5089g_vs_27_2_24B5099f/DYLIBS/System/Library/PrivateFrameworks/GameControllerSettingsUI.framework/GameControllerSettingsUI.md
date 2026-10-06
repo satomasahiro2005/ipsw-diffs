@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/GameControllerSettingsUI.framework/GameControllerSettingsUI`
 
-```diff
+### Section Size Changes
 
- 7.0.20.0.0
--  __TEXT.__text: 0x1bcec4
-+  __TEXT.__text: 0x1bceb8
-   __TEXT.__objc_methlist: 0x7bc
-   __TEXT.__const: 0x11184
-   __TEXT.__gcc_except_tab: 0x10
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1cb218` | `0x1cb20c` | **`-0xc`** |
+
+### Other Changes
+
+```diff
 Symbols:
 + _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVy24GameControllerSettingsUI18GCSUIGameViewModelCG_Tg504$s24fgh43UI09GCSUIGamec10CollectionB0C5gamesSayAA0E9kL17CGvgSbAF_AFtXEfU_Tf1nnc_n
 + _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVy24GameControllerSettingsUI18GCSUIGameViewModelCG_Tg504$s24fgh5UI013j21ListB0C5gamesSayAA0E9kL18CGvgSbAF_AFtXEfU0_Tf1nnc_n
@@ -60,7 +61,7 @@ Functions:
 ~ _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFs15ContiguousArrayVy24GameControllerSettingsUI29GCSUIBluetoothDeviceViewModelCG_Tg504$s24fgh5UI024jk24ListB0C7devicesSayAA0eF9lM18CGvgSbAF_AFtXEfU0_Tf1cn_n : 124 -> 128
 ~ _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFs15ContiguousArrayVy7SwiftUI7BindingVy022GameControllerSettingsG021GCSElementMappingViewVGG_Tg504$s24ijk33UI33GCSProfileSheetButtonMappingsn12V4bodyQrvg05f20D06PickerVyAE6HStacky16AE12TupleContenty46AE5ImageV_AE4TextVAE6SpacerVQPGSgGSSAE7ForEachy6SayAE7hy5AA017lm29I0VGGSSAIyAE012_ConditionalO0Y46AoKyAM_AOQPGGSgGGGA_cfU_A7_yXEfU_SbA__A_tXEfU_Tf1cn_n : 108 -> 112
 ~ _$sSr15_stableSortImpl2byySbx_xtKXE_tKFSo10GCSProfileC_Tg5 -> _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVySo10GCSProfileCG_Tg5 : 300 -> 308
-~ _$s24GameControllerSettingsUI21GCSUIDeviceAggregatorC18associateNewDevice33_E7D952A607E7799D68D4286AE0FC848CLLyyAA0E9ViewModelCF7doMergeL_3lhs3rhsSbAG_AGtF : 4936 -> 4884
+~ _$s24GameControllerSettingsUI21GCSUIDeviceAggregatorC18associateNewDevice33_E7D952A607E7799D68D4286AE0FC848CLLyyAA0E9ViewModelCF7doMergeL_3lhs3rhsSbAG_AGtF : 4976 -> 4924
 ~ _$sSr15_stableSortImpl2byySbx_xtKXE_tKF24GameControllerSettingsUI20GCSUIDeviceViewModelC_Tg5Tm -> _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVy24GameControllerSettingsUI20GCSUIDeviceViewModelCG_Tg5Tm : 292 -> 300
 ~ _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFs15ContiguousArrayVy24GameControllerSettingsUI20GCSUIBluetoothDeviceCG_Tg504$s24fgh4UI28j104DevicesManagerC08discoverF033_E13DBEDEA65D2D3E48A8972CE8067286LLyyYaFyyYacfU_yACYiYbXEfU_SSycfu1_SbAA0E6K11C_AGtXEfU3_Tf1cn_n : 124 -> 128
 ```

@@ -2,63 +2,31 @@
 
 > `/usr/lib/libAudioDSPCore.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5e1ec` | `0x51b64` | **`-0xc688`** |
+| `__TEXT.__realtime` | `0x14904` | `0xde50` | **`-0x6ab4`** |
+| `__TEXT.__cstring` | `0x36b0` | `0x276e` | **`-0xf42`** |
+| `__TEXT.__gcc_except_tab` | `0x5b9c` | `0x5c48` | **`+0xac`** |
+| `__TEXT.__unwind_info` | `0x1e00` | `0x1dd0` | **`-0x30`** |
+| `__TEXT.__const` | `0x14058` | `0x14048` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x8d8` | `0x8d0` | **`-0x8`** |
+
+### Other Changes
 
 ```diff
 
 -881.108.0.0.0
--  __TEXT.__text: 0x5e1ec
--  __TEXT.__realtime: 0x14904
 +881.112.0.0.0
-+  __TEXT.__text: 0x51b64
-+  __TEXT.__realtime: 0xde50
-   __TEXT.__objc_methlist: 0x14
--  __TEXT.__const: 0x14058
-+  __TEXT.__const: 0x14048
-   __TEXT.__dlopen_cstrs: 0x5a
--  __TEXT.__gcc_except_tab: 0x5b9c
--  __TEXT.__cstring: 0x36b0
-+  __TEXT.__gcc_except_tab: 0x5c48
-+  __TEXT.__cstring: 0x276e
-   __TEXT.__oslogstring: 0x34b5
--  __TEXT.__unwind_info: 0x1e00
-+  __TEXT.__unwind_info: 0x1dd0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __AUTH_CONST.__cfstring: 0x400
-   __AUTH_CONST.__objc_const: 0x90
-   __AUTH_CONST.__weak_auth_got: 0x100
--  __AUTH_CONST.__auth_got: 0x8d8
-+  __AUTH_CONST.__auth_got: 0x8d0
-   __DATA.__data: 0x8
-   __DATA.__bss: 0x110
-   __DATA_DIRTY.__objc_data: 0x50
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1230
--  Symbols:   2208
+-  Symbols:   2193
 -  CStrings:  779
 +  Functions: 1227
-+  Symbols:   2203
++  Symbols:   2188
 +  CStrings:  767
- 
 Symbols:
 + GCC_except_table1002
 + GCC_except_table1003

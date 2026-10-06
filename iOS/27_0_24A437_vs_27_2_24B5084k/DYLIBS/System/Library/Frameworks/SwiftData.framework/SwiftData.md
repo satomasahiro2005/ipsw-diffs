@@ -2,84 +2,45 @@
 
 > `/System/Library/Frameworks/SwiftData.framework/SwiftData`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1714d0` | `0x17aeec` | **`+0x9a1c`** |
+| `__TEXT.__eh_frame` | `0x9174` | `0x9354` | **`+0x1e0`** |
+| `__TEXT.__const` | `0xbb18` | `0xbce8` | **`+0x1d0`** |
+| `__AUTH_CONST.__const` | `0x66c0` | `0x6820` | **`+0x160`** |
+| `__TEXT.__unwind_info` | `0x4b28` | `0x4c40` | **`+0x118`** |
+| `__DATA.__bss` | `0xa7b0` | `0xa8b0` | **`+0x100`** |
+| `__TEXT.__constg_swiftt` | `0x5f24` | `0x5ff8` | **`+0xd4`** |
+| `__TEXT.__swift5_reflstr` | `0x28d1` | `0x299c` | **`+0xcb`** |
+| `__TEXT.__swift5_fieldmd` | `0x2ed0` | `0x2f84` | **`+0xb4`** |
+| `__TEXT.__swift5_typeref` | `0x42d0` | `0x4378` | **`+0xa8`** |
+| `__DATA_DIRTY.__data` | `0x4f68` | `0x4fd8` | **`+0x70`** |
+| `__TEXT.__cstring` | `0x6d6d` | `0x6ddd` | **`+0x70`** |
+| `__DATA.__data` | `0x1f18` | `0x1f78` | **`+0x60`** |
+| `__AUTH_CONST.__objc_const` | `0x47c0` | `0x4800` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8f0` | `0x918` | **`+0x28`** |
+| `__TEXT.__swift5_capture` | `0xb24` | `0xb40` | **`+0x1c`** |
+| `__AUTH.__data` | `0xbb0` | `0xba0` | **`-0x10`** |
+| `__TEXT.__swift5_types` | `0x2f4` | `0x300` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x19f8` | `0x1a00` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0xe80` | `0xe88` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x798` | `0x79c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -180.0.0.0.0
--  __TEXT.__text: 0x169e8c
 +183.0.0.0.0
-+  __TEXT.__text: 0x173704
-   __TEXT.__objc_methlist: 0x284
--  __TEXT.__cstring: 0x6d6d
--  __TEXT.__const: 0xbb18
--  __TEXT.__constg_swiftt: 0x5f24
--  __TEXT.__swift5_typeref: 0x42d0
--  __TEXT.__swift5_reflstr: 0x28d1
--  __TEXT.__swift5_fieldmd: 0x2ed0
-+  __TEXT.__cstring: 0x6ddd
-+  __TEXT.__const: 0xbce8
-+  __TEXT.__constg_swiftt: 0x5ff8
-+  __TEXT.__swift5_typeref: 0x4378
-+  __TEXT.__swift5_reflstr: 0x299c
-+  __TEXT.__swift5_fieldmd: 0x2f84
-   __TEXT.__swift5_builtin: 0x12c
-   __TEXT.__swift5_assocty: 0x8e0
--  __TEXT.__swift5_capture: 0xb24
--  __TEXT.__swift5_proto: 0x798
--  __TEXT.__swift5_types: 0x2f4
-+  __TEXT.__swift5_capture: 0xb40
-+  __TEXT.__swift5_proto: 0x79c
-+  __TEXT.__swift5_types: 0x300
-   __TEXT.__oslogstring: 0x1477
-   __TEXT.__swift5_protos: 0xcc
-   __TEXT.__swift5_mpenum: 0x54
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0x8
-   __TEXT.__swift_as_cont: 0x10
--  __TEXT.__unwind_info: 0x5d20
--  __TEXT.__eh_frame: 0x918c
-+  __TEXT.__unwind_info: 0x5e80
-+  __TEXT.__eh_frame: 0x9374
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x170
-   __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8f0
-+  __DATA_CONST.__objc_selrefs: 0x918
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__got: 0xe80
--  __AUTH_CONST.__const: 0x66c0
--  __AUTH_CONST.__objc_const: 0x47c0
--  __AUTH_CONST.__auth_got: 0x19f8
-+  __DATA_CONST.__got: 0xe88
-+  __AUTH_CONST.__const: 0x6820
-+  __AUTH_CONST.__objc_const: 0x4800
-+  __AUTH_CONST.__auth_got: 0x1a00
-   __AUTH.__objc_data: 0x2c8
--  __AUTH.__data: 0xbb0
--  __DATA.__data: 0x1f18
-+  __AUTH.__data: 0xba0
-+  __DATA.__data: 0x1f78
-   __DATA.__common: 0xf8
-   __DATA_DIRTY.__objc_data: 0x328
--  __DATA_DIRTY.__data: 0x4f68
-+  __DATA_DIRTY.__data: 0x4fd8
-   __DATA_DIRTY.__bss: 0x4190
-   __DATA_DIRTY.__common: 0x178
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 6841
--  Symbols:   2138
+-  Symbols:   1886
 -  CStrings:  645
 +  Functions: 6940
-+  Symbols:   2159
++  Symbols:   1902
 +  CStrings:  647
- 
 Symbols:
 + _NSPersistentStoreCoordinatorResourceBundlesForMigration
 + _NSSQLiteSEEKeychainItemOption
@@ -92,11 +53,6 @@ Symbols:
 + ___unnamed_20
 + ___unnamed_82
 + _get_enum_tag_for_layout_string Say9SwiftData20PersistentIdentifierVGAA12ModelContextCAA22RelationshipCollection_pSgIegggr_Sg
-+ _objc_msgSend$addObjectsFromArray:
-+ _objc_msgSend$allObjects
-+ _objc_msgSend$inverseRelationship
-+ _objc_msgSend$mutableSetValueForKey:
-+ _objc_msgSend$removeObject:
 + _symbolic SDySSSay_____GG 9SwiftData20PersistentIdentifierV
 + _symbolic SDy_____SDy_____ShyAAGGG 9SwiftData20PersistentIdentifierV s10AnyKeyPathC
 + _symbolic SS______t 9SwiftData6SchemaC6EntityC

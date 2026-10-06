@@ -2,48 +2,33 @@
 
 > `/usr/lib/system/libsystem_networkextension.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15800` | `0x16628` | **`+0xe28`** |
+| `__TEXT.__oslogstring` | `0x2d9a` | `0x2e90` | **`+0xf6`** |
+| `__DATA.__bss` | `0x618` | `0x668` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x398` | `0x3c0` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x1c0` | `0x1e0` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0xcf0` | `0xd10` | **`+0x20`** |
+| `__DATA_DIRTY.__bss` | `0x158` | `0x140` | **`-0x18`** |
+| `__DATA.__data` | `0x2c` | `0x28` | **`-0x4`** |
+| `__DATA_DIRTY.__data` | `0xc` | `0x10` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x15800
-+  __TEXT.__text: 0x16628
-   __TEXT.__const: 0x110
-   __TEXT.__cstring: 0x19e7
--  __TEXT.__oslogstring: 0x2d9a
--  __TEXT.__unwind_info: 0x398
-+  __TEXT.__oslogstring: 0x2e90
-+  __TEXT.__unwind_info: 0x3c0
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0xcf0
-+  __DATA_CONST.__const: 0xd10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1c0
-+  __AUTH_CONST.__const: 0x1e0
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__data: 0x2c
--  __DATA.__bss: 0x618
--  __DATA_DIRTY.__data: 0xc
--  __DATA_DIRTY.__bss: 0x158
-+  __DATA.__data: 0x28
-+  __DATA.__bss: 0x668
-+  __DATA_DIRTY.__data: 0x10
-+  __DATA_DIRTY.__bss: 0x140
-   __DATA_DIRTY.__common: 0x2
-   - /usr/lib/system/libcommonCrypto.dylib
-   - /usr/lib/system/libdispatch.dylib
+-2315.0.0.0.2
++2322.0.0.0.1
 
-   - /usr/lib/system/libsystem_sandbox.dylib
-   - /usr/lib/system/libsystem_trace.dylib
-   - /usr/lib/system/libxpc.dylib
 -  Functions: 271
--  Symbols:   666
+-  Symbols:   491
 -  CStrings:  539
 +  Functions: 277
-+  Symbols:   684
++  Symbols:   501
 +  CStrings:  545
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__cstring : content changed
 Symbols:
 + ___ne_copy_cached_bundle_identifier_for_uuid_plist_locked_block_invoke
 + ___ne_copy_cached_bundle_identifier_for_uuid_plist_locked_block_invoke_2
@@ -78,5 +63,4 @@ CStrings:
 + "UUID cache bin: size mismatch (header %u, file %lu)"
 + "UUID cache sandbox plist check failed"
 - "UUID cache sandbox check failed"
-
 ```

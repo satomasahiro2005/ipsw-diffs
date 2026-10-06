@@ -2,72 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/DiagnosticExtensionsDaemon.framework/DiagnosticExtensionsDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__objc_const` | `0x13b30` | `0x13ad0` | **`-0x60`** |
+| `__TEXT.__text` | `0x75f8c` | `0x75fe8` | **`+0x5c`** |
+| `__DATA_DIRTY.__objc_data` | `0x18e0` | `0x1890` | **`-0x50`** |
+| `__TEXT.__oslogstring` | `0x9908` | `0x98c8` | **`-0x40`** |
+| `__AUTH_CONST.__cfstring` | `0x5040` | `0x5020` | **`-0x20`** |
+| `__AUTH_CONST.__const` | `0xc20` | `0xc40` | **`+0x20`** |
+| `__DATA.__bss` | `0x1d0` | `0x1f0` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x2188` | `0x2198` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x6e8` | `0x6d8` | **`-0x10`** |
+| `__TEXT.__cstring` | `0x56f0` | `0x56e0` | **`-0x10`** |
+| `__TEXT.__objc_methlist` | `0x7054` | `0x7044` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x1cc8` | `0x1cd8` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x278` | `0x270` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3bc8` | `0x3bc0` | **`-0x8`** |
+| `__DATA.__objc_ivar` | `0x5f4` | `0x5f8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -224.0.0.0.0
--  __TEXT.__text: 0x739a0
--  __TEXT.__objc_methlist: 0x7054
 +225.0.0.0.0
-+  __TEXT.__text: 0x73a08
-+  __TEXT.__objc_methlist: 0x7044
-   __TEXT.__const: 0x362
--  __TEXT.__cstring: 0x56f0
-+  __TEXT.__cstring: 0x56e0
-   __TEXT.__gcc_except_tab: 0x1ac0
--  __TEXT.__oslogstring: 0x9908
-+  __TEXT.__oslogstring: 0x98c8
-   __TEXT.__ustring: 0xc
-   __TEXT.__constg_swiftt: 0x8c
-   __TEXT.__swift5_typeref: 0x48
 
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2188
--  __DATA_CONST.__objc_classlist: 0x278
-+  __DATA_CONST.__const: 0x2198
-+  __DATA_CONST.__objc_classlist: 0x270
-   __DATA_CONST.__objc_catlist: 0x38
-   __DATA_CONST.__objc_protolist: 0xe0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3bc8
-+  __DATA_CONST.__objc_selrefs: 0x3bc0
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__objc_superrefs: 0x1b0
-   __DATA_CONST.__objc_arraydata: 0x48
--  __DATA_CONST.__got: 0x6e8
--  __AUTH_CONST.__const: 0xc20
--  __AUTH_CONST.__cfstring: 0x5040
--  __AUTH_CONST.__objc_const: 0x13b30
-+  __DATA_CONST.__got: 0x6d8
-+  __AUTH_CONST.__const: 0xc40
-+  __AUTH_CONST.__cfstring: 0x5020
-+  __AUTH_CONST.__objc_const: 0x13ad0
-   __AUTH_CONST.__objc_arrayobj: 0x78
-   __AUTH_CONST.__objc_intobj: 0x360
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__auth_got: 0x6a0
-   __AUTH.__objc_data: 0x90
-   __AUTH.__data: 0x90
--  __DATA.__objc_ivar: 0x5f4
-+  __DATA.__objc_ivar: 0x5f8
-   __DATA.__data: 0xad0
--  __DATA_DIRTY.__objc_data: 0x18e0
-+  __DATA_DIRTY.__objc_data: 0x1890
-   __DATA_DIRTY.__data: 0x50
-   __DATA_DIRTY.__bss: 0x2a8
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 2932
 -  Symbols:   4297
 -  CStrings:  1791
 +  Functions: 2934
 +  Symbols:   4299
 +  CStrings:  1787
- 
 Symbols:
 + +[DEDSeedingFinisher(SecurityResearchDevice) isERMCommPageCheckCompiledIn]
 + -[DEDConfiguration protectedDefaults]

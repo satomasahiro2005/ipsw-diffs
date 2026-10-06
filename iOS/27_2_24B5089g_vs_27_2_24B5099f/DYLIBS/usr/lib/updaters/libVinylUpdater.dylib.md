@@ -2,28 +2,21 @@
 
 > `/usr/lib/updaters/libVinylUpdater.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0xaf2d` | `0xa6c3` | **`-0x86a`** |
+| `__TEXT.__text` | `0x4dc6c` | `0x4d590` | **`-0x6dc`** |
+| `__TEXT.__gcc_except_tab` | `0x47bc` | `0x47b4` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x1988` | `0x1990` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 178.0.0.0.0
--  __TEXT.__text: 0x4d248
-+  __TEXT.__text: 0x4cb78
-   __TEXT.__init_offsets: 0x48
-   __TEXT.__const: 0x53f1
--  __TEXT.__gcc_except_tab: 0x47bc
-+  __TEXT.__gcc_except_tab: 0x47b4
-   __TEXT.__oslogstring: 0x17c3
--  __TEXT.__cstring: 0xaf2d
-+  __TEXT.__cstring: 0xa6c3
-   __TEXT.__unwind_info: 0x1c48
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x9a8
-
-   - /usr/lib/libz.1.dylib
-   Functions: 1296
-   Symbols:   2145
 -  CStrings:  1365
 +  CStrings:  1279
- 
 CStrings:
 + "VinylRestore-178~9513"
 - "/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/VinylRestore/CommandDrivers/eUICCVinylICEValve.cpp"

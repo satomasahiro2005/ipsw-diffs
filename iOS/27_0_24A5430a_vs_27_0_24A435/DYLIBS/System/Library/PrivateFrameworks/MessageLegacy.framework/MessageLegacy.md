@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/MessageLegacy.framework/MessageLegacy`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_1 : 36 -> 16

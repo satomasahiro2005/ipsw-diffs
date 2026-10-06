@@ -2,24 +2,25 @@
 
 > `/usr/libexec/debugserver`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA.__objc_selrefs`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5ada4` | `0x5ae0c` | **`+0x68`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__init_offsets`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 1700.2.2.133.0
--  __TEXT.__text: 0x5ada4
-+  __TEXT.__text: 0x5ae0c
-   __TEXT.__auth_stubs: 0x1330
-   __TEXT.__objc_stubs: 0x3e0
-   __TEXT.__init_offsets: 0x10
+```text
 Functions:
 ~ sub_10001ccec : 1480 -> 1488
 ~ sub_10002e760 -> sub_10002e768 : 656 -> 660

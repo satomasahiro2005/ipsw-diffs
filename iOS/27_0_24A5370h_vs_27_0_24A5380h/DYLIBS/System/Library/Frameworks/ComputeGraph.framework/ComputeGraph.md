@@ -2,74 +2,32 @@
 
 > `/System/Library/Frameworks/ComputeGraph.framework/ComputeGraph`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1484cc` | `0x1482ac` | **`-0x220`** |
+| `__TEXT.__eh_frame` | `0x95cc` | `0x9584` | **`-0x48`** |
+| `__TEXT.__cstring` | `0x685c` | `0x682c` | **`-0x30`** |
+| `__TEXT.__const` | `0x1eb74` | `0x1eb54` | **`-0x20`** |
+| `__DATA.__data` | `0x2aa8` | `0x2a90` | **`-0x18`** |
+| `__TEXT.__swift5_typeref` | `0x45ae` | `0x4596` | **`-0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x1120` | `0x1128` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x51a0` | `0x5198` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1484cc
-+  __TEXT.__text: 0x1482ac
-   __TEXT.__objc_methlist: 0x12ac
--  __TEXT.__const: 0x1eb74
--  __TEXT.__swift5_typeref: 0x45ae
--  __TEXT.__cstring: 0x685c
-+  __TEXT.__const: 0x1eb54
-+  __TEXT.__swift5_typeref: 0x4596
-+  __TEXT.__cstring: 0x682c
-   __TEXT.__swift5_reflstr: 0x35b0
-   __TEXT.__swift5_assocty: 0xb88
-   __TEXT.__constg_swiftt: 0x4298
+-25.0.0.0.0
++27.0.0.0.0
 
-   __TEXT.__swift_as_cont: 0x338
-   __TEXT.__swift5_types2: 0x14
-   __TEXT.__oslogstring: 0x13a
--  __TEXT.__unwind_info: 0x51a0
--  __TEXT.__eh_frame: 0x95cc
-+  __TEXT.__unwind_info: 0x5198
-+  __TEXT.__eh_frame: 0x9584
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x11c30
-   __AUTH_CONST.__objc_const: 0x33e8
--  __AUTH_CONST.__auth_got: 0x1120
-+  __AUTH_CONST.__auth_got: 0x1128
-   __AUTH.__data: 0x13d8
--  __DATA.__data: 0x2aa8
-+  __DATA.__data: 0x2a90
-   __DATA.__bss: 0x21150
-   __DATA.__common: 0x5a8
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7556
--  Symbols:   28839
+-  Symbols:   20777
 -  CStrings:  873
 +  Functions: 7551
-+  Symbols:   28827
++  Symbols:   20767
 +  CStrings:  872
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__data : content changed
 Symbols:
 + _$s12ComputeGraph0a4NodeB0V0C0V4KindOSgWOe
 + _$s12ComputeGraph0a4NodeB0V22removeUnreachableNodesyyFSbAC4PortO7AddressV3key_SayAHG5valuet_tXEfU0_
@@ -99,5 +57,4 @@ CStrings:
 - "Group port mismatch: input "
 - "Type mismatch between input "
 - "mismatched ports: input "
-
 ```

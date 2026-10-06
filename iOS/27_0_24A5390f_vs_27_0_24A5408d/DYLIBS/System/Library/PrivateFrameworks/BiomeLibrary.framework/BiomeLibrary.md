@@ -2,76 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/BiomeLibrary.framework/BiomeLibrary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x753ffc` | `0x756610` | **`+0x2614`** |
+| `__AUTH_CONST.__cfstring` | `0x4b060` | `0x4b3a0` | **`+0x340`** |
+| `__AUTH_CONST.__objc_const` | `0xa2900` | `0xa2bf0` | **`+0x2f0`** |
+| `__TEXT.__objc_methlist` | `0x500dc` | `0x5039c` | **`+0x2c0`** |
+| `__TEXT.__cstring` | `0x4e720` | `0x4e8a6` | **`+0x186`** |
+| `__TEXT.__unwind_info` | `0xf778` | `0xf610` | **`-0x168`** |
+| `__AUTH.__objc_data` | `0xb080` | `0xb170` | **`+0xf0`** |
+| `__DATA_CONST.__const` | `0x1eb28` | `0x1eba8` | **`+0x80`** |
+| `__DATA_CONST.__objc_selrefs` | `0x12948` | `0x129a0` | **`+0x58`** |
+| `__DATA_CONST.__objc_arraydata` | `0xb218` | `0xb258` | **`+0x40`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x6660` | `0x6690` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0x9ad8` | `0x9af8` | **`+0x20`** |
+| `__TEXT.__const` | `0x47b8` | `0x47d8` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x22f8` | `0x2310` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x81f4` | `0x8204` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x1bf8` | `0x1c00` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1b28` | `0x1b30` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -435.0.0.0.0
--  __TEXT.__text: 0x753ffc
--  __TEXT.__objc_methlist: 0x500dc
--  __TEXT.__const: 0x47b8
 +436.6.0.0.0
-+  __TEXT.__text: 0x756610
-+  __TEXT.__objc_methlist: 0x5039c
-+  __TEXT.__const: 0x47d8
-   __TEXT.__swift5_typeref: 0x17e
-   __TEXT.__swift5_capture: 0x30
--  __TEXT.__cstring: 0x4e720
-+  __TEXT.__cstring: 0x4e8a6
-   __TEXT.__constg_swiftt: 0x5b8
-   __TEXT.__swift5_fieldmd: 0x210
-   __TEXT.__swift5_types: 0x84
-   __TEXT.__oslogstring: 0x47
--  __TEXT.__unwind_info: 0xf778
-+  __TEXT.__unwind_info: 0xf610
-   __TEXT.__eh_frame: 0x40
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1eb28
--  __DATA_CONST.__objc_classlist: 0x22f8
-+  __DATA_CONST.__const: 0x1eba8
-+  __DATA_CONST.__objc_classlist: 0x2310
-   __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x12948
-+  __DATA_CONST.__objc_selrefs: 0x129a0
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x1b28
--  __DATA_CONST.__objc_arraydata: 0xb218
--  __DATA_CONST.__got: 0x1bf8
--  __AUTH_CONST.__const: 0x9ad8
--  __AUTH_CONST.__cfstring: 0x4b060
--  __AUTH_CONST.__objc_const: 0xa2900
--  __AUTH_CONST.__objc_arrayobj: 0x6660
-+  __DATA_CONST.__objc_superrefs: 0x1b30
-+  __DATA_CONST.__objc_arraydata: 0xb258
-+  __DATA_CONST.__got: 0x1c00
-+  __AUTH_CONST.__const: 0x9af8
-+  __AUTH_CONST.__cfstring: 0x4b3a0
-+  __AUTH_CONST.__objc_const: 0xa2bf0
-+  __AUTH_CONST.__objc_arrayobj: 0x6690
-   __AUTH_CONST.__objc_intobj: 0x300
-   __AUTH_CONST.__auth_got: 0x3a0
--  __AUTH.__objc_data: 0xb080
-+  __AUTH.__objc_data: 0xb170
-   __AUTH.__data: 0x118
--  __DATA.__objc_ivar: 0x81f4
-+  __DATA.__objc_ivar: 0x8204
-   __DATA.__data: 0x328
-   __DATA.__bss: 0x18
-   __DATA_DIRTY.__objc_data: 0xb990
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 28633
--  Symbols:   60540
+-  Symbols:   52914
 -  CStrings:  9737
 +  Functions: 28688
-+  Symbols:   60636
++  Symbols:   53001
 +  CStrings:  9763
- 
 Symbols:
 + +[BMMailSearchUIEventIndexState columns]
 + +[BMMailSearchUIEventIndexState eventWithData:dataVersion:]
@@ -163,20 +128,9 @@ Symbols:
 + __OBJC_METACLASS_RO_$__BMDemoLibraryNode
 + __OBJC_METACLASS_RO_$__BMDemoScreenTimeLibraryNode
 + ___46+[BMMailSearchUIEventDimensionContext columns]_block_invoke
-+ _objc_msgSend$Demo
-+ _objc_msgSend$DisplayBacklight
-+ _objc_msgSend$configurationForDisplayBacklight
-+ _objc_msgSend$hasIsHdbEnabled
-+ _objc_msgSend$indexState
-+ _objc_msgSend$initWithIsHdbEnabled:
-+ _objc_msgSend$initWithSystemLocale:currentCountry:build:osType:productType:buildType:indexState:
-+ _objc_msgSend$isHdbEnabled
-+ _objc_msgSend$storeConfigurationForDisplayBacklight
-+ _objc_msgSend$syncPolicyForDisplayBacklight
 - -[BMMailSearchUIEventDimensionContext initWithSystemLocale:currentCountry:build:osType:productType:buildType:]
 - _OUTLINED_FUNCTION_46
 - __OBJC_$_INSTANCE_METHODS_BMMailSearchUIEventDimensionContext
-- _objc_msgSend$initWithSystemLocale:currentCountry:build:osType:productType:buildType:
 CStrings:
 + "2F0625EA-2AA8-4E4F-9D74-08DC4B224C2A"
 + "40EA0B69-E3F6-4DEE-8469-C41C48712829"

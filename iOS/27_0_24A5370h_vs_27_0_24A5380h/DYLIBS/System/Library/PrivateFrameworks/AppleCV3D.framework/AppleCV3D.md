@@ -2,70 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/AppleCV3D.framework/AppleCV3D`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ee41c4` | `0x1ec328c` | **`-0x20f38`** |
+| `__TEXT.__cstring` | `0xb9db4` | `0xb7822` | **`-0x2592`** |
+| `__TEXT.__gcc_except_tab` | `0x1091b4` | `0x107d70` | **`-0x1444`** |
+| `__TEXT.__const` | `0x16a300` | `0x16a160` | **`-0x1a0`** |
+| `__AUTH_CONST.__const` | `0x7c360` | `0x7c1e8` | **`-0x178`** |
+| `__TEXT.__eh_frame` | `0x1804` | `0x16d8` | **`-0x12c`** |
+| `__TEXT.__unwind_info` | `0x41b80` | `0x41c90` | **`+0x110`** |
+| `__TEXT.__oslogstring` | `0x12bb2` | `0x12c9b` | **`+0xe9`** |
+| `__DATA.__common` | `0x22d8` | `0x2378` | **`+0xa0`** |
+| `__DATA.__bss` | `0x14198` | `0x14138` | **`-0x60`** |
+| `__AUTH_CONST.__auth_got` | `0x1c70` | `0x1ca0` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x5b8` | `0x5d8` | **`+0x20`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1ee41c4
-+  __TEXT.__text: 0x1ec328c
-   __TEXT.__init_offsets: 0x8
--  __TEXT.__const: 0x16a300
--  __TEXT.__gcc_except_tab: 0x1091b4
--  __TEXT.__cstring: 0xb9db4
--  __TEXT.__oslogstring: 0x12bb2
--  __TEXT.__unwind_info: 0x41b80
--  __TEXT.__eh_frame: 0x1804
-+  __TEXT.__const: 0x16a160
-+  __TEXT.__gcc_except_tab: 0x107d70
-+  __TEXT.__cstring: 0xb7822
-+  __TEXT.__oslogstring: 0x12c9b
-+  __TEXT.__unwind_info: 0x41c90
-+  __TEXT.__eh_frame: 0x16d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
+-9.26.5.12.5
++9.26.6.16.5
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x28
-   __DATA_CONST.__objc_selrefs: 0x2e8
--  __DATA_CONST.__got: 0x5b8
--  __AUTH_CONST.__const: 0x7c360
-+  __DATA_CONST.__got: 0x5d8
-+  __AUTH_CONST.__const: 0x7c1e8
-   __AUTH_CONST.__cfstring: 0x1980
-   __AUTH_CONST.__weak_auth_got: 0x60
--  __AUTH_CONST.__auth_got: 0x1c70
-+  __AUTH_CONST.__auth_got: 0x1ca0
-   __AUTH.__data: 0x28
-   __AUTH.__thread_vars: 0x60
-   __AUTH.__thread_bss: 0x40
-   __DATA.__data: 0x8a28
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x14198
--  __DATA.__common: 0x22d8
-+  __DATA.__bss: 0x14138
-+  __DATA.__common: 0x2378
-   __DATA_DIRTY.__data: 0x18
-   __DATA_DIRTY.__bss: 0x18
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 49554
 -  Symbols:   2059
--  CStrings:  15446
+-  CStrings:  13857
 +  Functions: 49604
 +  Symbols:   2068
-+  CStrings:  15365
- 
-Sections:
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
++  CStrings:  13772
 Symbols:
 + __ZNKSt3__119bad_expected_accessIvE4whatEv
 + __ZTINSt3__119bad_expected_accessIvEE
@@ -1038,5 +1004,4 @@ CStrings:
 - "tracking resolution %u x %u, DOG features %{bool}d, disparity_fraction %g, max_features %u"
 - "two_view_rotation"
 - "x.size() == n_inliers"
-
 ```

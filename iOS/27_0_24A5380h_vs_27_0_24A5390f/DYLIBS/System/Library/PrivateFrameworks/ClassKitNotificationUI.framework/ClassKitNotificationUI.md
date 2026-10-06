@@ -2,74 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/ClassKitNotificationUI.framework/ClassKitNotificationUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x395c` | `0xa84` | **`-0x2ed8`** |
+| `__AUTH_CONST.__objc_const` | `0x860` | `0x350` | **`-0x510`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5f8` | `0x1e0` | **`-0x418`** |
+| `__TEXT.__objc_methlist` | `0x56c` | `0x23c` | **`-0x330`** |
+| `__AUTH.__objc_data` | `0x1e0` | `0xa0` | **`-0x140`** |
+| `__TEXT.__unwind_info` | `0x198` | `0xa8` | **`-0xf0`** |
+| `__DATA_CONST.__const` | `0x1a0` | `0xd8` | **`-0xc8`** |
+| `__DATA_CONST.__got` | `0x138` | `0x70` | **`-0xc8`** |
+| `__AUTH_CONST.__const` | `0x120` | `0x60` | **`-0xc0`** |
+| `__TEXT.__cstring` | `0x144` | `0xb8` | **`-0x8c`** |
+| `__TEXT.__const` | `0xc8` | `0x60` | **`-0x68`** |
+| `__DATA.__bss` | `0x68` | `0x10` | **`-0x58`** |
+| `__AUTH_CONST.__cfstring` | `0x60` | `0x20` | **`-0x40`** |
+| `__DATA.__objc_ivar` | `0x44` | `0xc` | **`-0x38`** |
+| `__DATA_CONST.__objc_classlist` | `0x30` | `0x10` | **`-0x20`** |
+| `__DATA_CONST.__objc_superrefs` | `0x20` | `0x8` | **`-0x18`** |
+| `__TEXT.__gcc_except_tab` | `0x28` | `0x14` | **`-0x14`** |
+
+### Other Changes
 
 ```diff
 
 -152.0.12.0.0
--  __TEXT.__text: 0x395c
--  __TEXT.__objc_methlist: 0x56c
--  __TEXT.__const: 0xc8
--  __TEXT.__cstring: 0x144
--  __TEXT.__gcc_except_tab: 0x28
 +152.0.13.0.0
-+  __TEXT.__text: 0xa84
-+  __TEXT.__objc_methlist: 0x23c
-+  __TEXT.__const: 0x60
-+  __TEXT.__cstring: 0xb8
-+  __TEXT.__gcc_except_tab: 0x14
-   __TEXT.__oslogstring: 0x94
--  __TEXT.__unwind_info: 0x198
-+  __TEXT.__unwind_info: 0xa8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1a0
--  __DATA_CONST.__objc_classlist: 0x30
-+  __DATA_CONST.__const: 0xd8
-+  __DATA_CONST.__objc_classlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5f8
-+  __DATA_CONST.__objc_selrefs: 0x1e0
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x20
--  __DATA_CONST.__got: 0x138
--  __AUTH_CONST.__const: 0x120
--  __AUTH_CONST.__cfstring: 0x60
--  __AUTH_CONST.__objc_const: 0x860
-+  __DATA_CONST.__objc_superrefs: 0x8
-+  __DATA_CONST.__got: 0x70
-+  __AUTH_CONST.__const: 0x60
-+  __AUTH_CONST.__cfstring: 0x20
-+  __AUTH_CONST.__objc_const: 0x350
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x1e0
--  __DATA.__objc_ivar: 0x44
-+  __AUTH.__objc_data: 0xa0
-+  __DATA.__objc_ivar: 0xc
-   __DATA.__data: 0x120
--  __DATA.__bss: 0x68
-+  __DATA.__bss: 0x10
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
+
 -  Functions: 106
 -  Symbols:   112
 -  CStrings:  12
 +  Functions: 26
 +  Symbols:   65
 +  CStrings:  7
- 
 Symbols:
 + _objc_retain_x23
 - _CGRectGetMidX

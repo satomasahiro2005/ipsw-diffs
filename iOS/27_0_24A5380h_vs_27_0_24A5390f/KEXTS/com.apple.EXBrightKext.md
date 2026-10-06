@@ -2,33 +2,24 @@
 
 > `com.apple.EXBrightKext`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA.__data`
-- `__DATA_CONST.__mod_init_func`
-- `__DATA_CONST.__mod_term_func`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__kalloc_type`
-- `__DATA_CONST.__auth_got`
-- `__DATA_CONST.__got`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x16818` | `0x16990` | **`+0x178`** |
+
+### Other Changes
 
 ```diff
 
 -2300.0.10.0.1
 +2300.0.18.502.1
-   __TEXT.__const: 0x118
-   __TEXT.__cstring: 0x4855
--  __TEXT_EXEC.__text: 0x16818
-+  __TEXT_EXEC.__text: 0x16990
-   __TEXT_EXEC.__auth_stubs: 0x700
-   __DATA.__data: 0xd8
-   __DATA.__common: 0x130
 Functions:
-~ sub_fffffe0009bac424 -> sub_fffffe0009bc8da4 : 664 -> 768
-~ sub_fffffe0009bac6bc -> sub_fffffe0009bc90a4 : 288 -> 300
-~ sub_fffffe0009bac7dc -> sub_fffffe0009bc91d0 : 544 -> 664
-~ sub_fffffe0009bacda0 -> sub_fffffe0009bc980c : 88 -> 100
-~ sub_fffffe0009bacdf8 -> sub_fffffe0009bc9870 : 88 -> 100
-~ sub_fffffe0009bad498 -> sub_fffffe0009bc9f1c : 944 -> 956
-~ sub_fffffe0009bb5988 -> sub_fffffe0009bd2418 : 524 -> 628
+~ sub_fffffff009baa2a4 -> sub_fffffff009bcea64 : 664 -> 768
+~ sub_fffffff009baa53c -> sub_fffffff009bced64 : 288 -> 300
+~ sub_fffffff009baa65c -> sub_fffffff009bcee90 : 544 -> 664
+~ sub_fffffff009baac20 -> sub_fffffff009bcf4cc : 88 -> 100
+~ sub_fffffff009baac78 -> sub_fffffff009bcf530 : 88 -> 100
+~ sub_fffffff009bab318 -> sub_fffffff009bcfbdc : 944 -> 956
+~ sub_fffffff009bb3808 -> sub_fffffff009bd80d8 : 524 -> 628
 ```

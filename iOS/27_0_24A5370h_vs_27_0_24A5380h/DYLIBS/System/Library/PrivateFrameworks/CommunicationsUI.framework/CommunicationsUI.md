@@ -2,109 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/CommunicationsUI.framework/CommunicationsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x30ecd4` | `0x316b98` | **`+0x7ec4`** |
+| `__TEXT.__swift5_typeref` | `0x30bf4` | `0x3109e` | **`+0x4aa`** |
+| `__TEXT.__const` | `0x22c54` | `0x22f04` | **`+0x2b0`** |
+| `__DATA_DIRTY.__data` | `0x368` | `0x578` | **`+0x210`** |
+| `__AUTH.__data` | `0x9998` | `0x9820` | **`-0x178`** |
+| `__TEXT.__cstring` | `0x467e` | `0x47de` | **`+0x160`** |
+| `__TEXT.__oslogstring` | `0x3a66` | `0x3bc6` | **`+0x160`** |
+| `__TEXT.__unwind_info` | `0xa3d0` | `0xa520` | **`+0x150`** |
+| `__DATA.__data` | `0xd448` | `0xd570` | **`+0x128`** |
+| `__AUTH_CONST.__const` | `0x150e8` | `0x15180` | **`+0x98`** |
+| `__AUTH_CONST.__objc_const` | `0x15630` | `0x156c8` | **`+0x98`** |
+| `__DATA_DIRTY.__bss` | `0x28` | `0xb0` | **`+0x88`** |
+| `__TEXT.__constg_swiftt` | `0xc284` | `0xc300` | **`+0x7c`** |
+| `__TEXT.__swift5_fieldmd` | `0x9300` | `0x937c` | **`+0x7c`** |
+| `__DATA.__bss` | `0x13b58` | `0x13ae8` | **`-0x70`** |
+| `__TEXT.__swift5_reflstr` | `0xab68` | `0xabd8` | **`+0x70`** |
+| `__TEXT.__objc_methlist` | `0x2f20` | `0x2f88` | **`+0x68`** |
+| `__DATA_DIRTY.__objc_data` | `0x128` | `0x178` | **`+0x50`** |
+| `__AUTH.__objc_data` | `0x65f0` | `0x65a8` | **`-0x48`** |
+| `__TEXT.__swift5_capture` | `0x4b40` | `0x4b88` | **`+0x48`** |
+| `__TEXT.__eh_frame` | `0x8184` | `0x81b4` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2798` | `0x27c0` | **`+0x28`** |
+| `__AUTH_CONST.__auth_got` | `0x4068` | `0x4078` | **`+0x10`** |
+| `__DATA.__common` | `0x699` | `0x6a9` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x13f8` | `0x1408` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x2330` | `0x2338` | **`+0x8`** |
+| `__TEXT.__swift5_assocty` | `0x1d10` | `0x1d08` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0x948` | `0x94c` | **`+0x4`** |
+| `__TEXT.__swift_as_cont` | `0x4c4` | `0x4c0` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x30ecd4
--  __TEXT.__objc_methlist: 0x2f20
--  __TEXT.__const: 0x22c54
--  __TEXT.__swift5_typeref: 0x30bf4
--  __TEXT.__constg_swiftt: 0xc284
-+  __TEXT.__text: 0x316b98
-+  __TEXT.__objc_methlist: 0x2f88
-+  __TEXT.__const: 0x22f04
-+  __TEXT.__swift5_typeref: 0x3109e
-+  __TEXT.__constg_swiftt: 0xc300
-   __TEXT.__swift5_builtin: 0x3d4
--  __TEXT.__swift5_reflstr: 0xab68
--  __TEXT.__swift5_fieldmd: 0x9300
--  __TEXT.__swift5_assocty: 0x1d10
-+  __TEXT.__swift5_reflstr: 0xabd8
-+  __TEXT.__swift5_fieldmd: 0x937c
-+  __TEXT.__swift5_assocty: 0x1d08
-   __TEXT.__swift5_proto: 0x9d0
--  __TEXT.__swift5_types: 0x948
--  __TEXT.__oslogstring: 0x3a66
--  __TEXT.__cstring: 0x467e
--  __TEXT.__swift5_capture: 0x4b40
-+  __TEXT.__swift5_types: 0x94c
-+  __TEXT.__oslogstring: 0x3bc6
-+  __TEXT.__cstring: 0x47de
-+  __TEXT.__swift5_capture: 0x4b88
-   __TEXT.__swift5_mpenum: 0x140
-   __TEXT.__swift5_protos: 0xd8
-   __TEXT.__swift_as_entry: 0x1bc
--  __TEXT.__swift_as_cont: 0x4c4
-   __TEXT.__swift_as_ret: 0x1a8
--  __TEXT.__unwind_info: 0xa3d0
--  __TEXT.__eh_frame: 0x8184
-+  __TEXT.__swift_as_cont: 0x4c0
-+  __TEXT.__unwind_info: 0xa520
-+  __TEXT.__eh_frame: 0x81b4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x13f8
-+  __DATA_CONST.__const: 0x1408
-   __DATA_CONST.__objc_classlist: 0x588
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x210
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2798
-+  __DATA_CONST.__objc_selrefs: 0x27c0
-   __DATA_CONST.__objc_protorefs: 0x110
--  __DATA_CONST.__got: 0x2330
--  __AUTH_CONST.__const: 0x150e8
--  __AUTH_CONST.__objc_const: 0x15630
--  __AUTH_CONST.__auth_got: 0x4068
--  __AUTH.__objc_data: 0x65f0
--  __AUTH.__data: 0x9998
--  __DATA.__data: 0xd448
-+  __DATA_CONST.__got: 0x2338
-+  __AUTH_CONST.__const: 0x15180
-+  __AUTH_CONST.__objc_const: 0x156c8
-+  __AUTH_CONST.__auth_got: 0x4078
-+  __AUTH.__objc_data: 0x65a8
-+  __AUTH.__data: 0x9820
-+  __DATA.__data: 0xd570
-   __DATA.__objc_stublist: 0x8
--  __DATA.__bss: 0x13b58
--  __DATA.__common: 0x699
--  __DATA_DIRTY.__objc_data: 0x128
--  __DATA_DIRTY.__data: 0x368
--  __DATA_DIRTY.__bss: 0x28
-+  __DATA.__bss: 0x13ae8
-+  __DATA.__common: 0x6a9
-+  __DATA_DIRTY.__objc_data: 0x178
-+  __DATA_DIRTY.__data: 0x578
-+  __DATA_DIRTY.__bss: 0xb0
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Combine.framework/Combine
+-143.100.11.2.1
++145.100.7.2.1
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 16369
--  Symbols:   10292
--  CStrings:  677
+-  Symbols:   6268
+-  CStrings:  675
 +  Functions: 16466
-+  Symbols:   10340
-+  CStrings:  691
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA.__objc_stublist : content changed
++  Symbols:   6299
++  CStrings:  689
 Symbols:
 + _OBJC_CLASS_$_UIAccessibilityCustomAction
 + __OBJC_$_INSTANCE_METHODS__TtC16CommunicationsUI32ContactAvatarTileAccessoryUIView(CommunicationsUI|CommunicationsUI1|CommunicationsUI2)
@@ -132,9 +76,6 @@ Symbols:
 + _get_witness_table 7SwiftUI6VStackVyAA12TupleContentVyAA012_ConditionalE0Vy014CommunicationsB033ContextCardConfirmationNumberViewVyAH0hI10HeaderLine022_D1E7DACA0202AE7BA0BB7O9D433478FBLLVGAA08ModifiedE0VyAmA14_PaddingLayoutVGG_APyAPyAPyAA6HStackVyAEyAPyAA4TextVAA31AccessibilityAttachmentModifierVGSg_AGyAGyAH13FlightPathArcVA2_GA2_GA0_QPGGAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA24_ForegroundStyleModifierVyAA22HierarchicalShapeStyleVGGARGAPyAPyAPyAPyAA0L0PAAE15dynamicTypeSizeyQrqd__SXRd__AA15DynamicTypeSizeO5BoundRtd__lFQOyAPyAPyAPyACyAEyAVyAEyA0__AA6SpacerVA0_QPGG_AVyAEyA0__A29_AXSgQPGGQPGGA12_GA18_GAA16_BlendModeEffectVG_s19PartialRangeThroughVyA25_GQo_AA23_CompositingGroupEffectVGA40_GAA14_OpacityEffectVGARGQPGGAAA21_HPyHC
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE16scrollIndicators_4axesQrAA25ScrollIndicatorVisibilityV_AA4AxisO3SetVtFQOyAcAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVy20CommunicationDetails0sgC0VyAPyAA012_ConditionalQ0VyAcAE14contentMargins__3forQrAA4EdgeOAJV_12CoreGraphics7CGFloatVSgAA0Q15MarginPlacementVtFQOyAcAE0dQ10BackgroundyQrAA0I0OFQOyAPyAPyAcAEAV__AWQrAZ_A2_A4_tFQOyAcAE20listHasStackBehaviorQryFQOyAA4ListVys5NeverOAPyAA5GroupVyAA05TupleQ0VyAcAE0L10TapGesture5count15coordinateSpace7performQrSi_qd__ySo7CGPointVctAA23CoordinateSpaceProtocolRd__lFQOyAPyAPy014CommunicationsB0024RecentsCallHistoryHeaderC0VAA19_BackgroundModifierVyA24_0C6Anchor33_0429C8C06193ABDF7834579B0E353E77LLVGGAA01_Q13ShapeModifierVyAA9RectangleVGG_AA21GlobalCoordinateSpaceVQo_Sg_AUy08ContactsB022ContactCardAllSectionsVA24_022RecentsParticipantListC0VGA24_018BlockUnblockReportC0VSgQPGGA24_24ContactCardStyleModifierVGG_Qo__Qo_AA21_TraitWritingModifierVyAA26ListSectionSpacingTraitKeyVGGAA30_EnvironmentKeyWritingModifierVyAA18ListSectionSpacingVSgGG_Qo__Qo_A74_GAA23_GeometryActionModifierVyA1_GGGA28_yAUyAPyAA14LinearGradientVAA30_SafeAreaRegionsIgnoringLayoutVGAA08_CALayerC0VySo15CABackdropLayerCGGGG_SaySo9CNContactCGQo__Qo_HO
 + _keypath_set.15Tm
-+ _objc_msgSend$accessibilityLabel
-+ _objc_msgSend$initWithName:actionHandler:
-+ _objc_msgSend$setDisableGlassPlatter:
 + _symbolic Say_____GytIegnr_ 16CommunicationsUI15ContextCardViewV14ReadTimingInfoV
 + _symbolic _____ 16CommunicationsUI18ControlMenuContentV
 + _symbolic _____ 16CommunicationsUI19CardFullyVisibleKey33_99E9F40D9D99A1B601FAD3BCC21853FDLLV
@@ -255,5 +196,4 @@ CStrings:
 + "phone.arrow.up.right.fill"
 + "showReadButton: layout %s"
 + "showReadButton: readProvider %s"
-
 ```

@@ -2,26 +2,19 @@
 
 > `/System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc260` | `0xc2d4` | **`+0x74`** |
+| `__TEXT.__cstring` | `0x247f` | `0x24cd` | **`+0x4e`** |
+
+### Other Changes
+
 ```diff
 
- 919.0.1.102.0
--  __TEXT.__text: 0xc260
-+  __TEXT.__text: 0xc2d4
-   __TEXT.__objc_methlist: 0x804
-   __TEXT.__const: 0x160
-   __TEXT.__gcc_except_tab: 0x13c8
--  __TEXT.__cstring: 0x247f
-+  __TEXT.__cstring: 0x24cd
-   __TEXT.__oslogstring: 0x4fb
-   __TEXT.__unwind_info: 0x6a0
-   __TEXT.__objc_stubs: 0x0
-
-   - /usr/lib/libobjc.A.dylib
-   Functions: 232
-   Symbols:   963
 -  CStrings:  407
 +  CStrings:  413
- 
 Functions:
 ~ sub_18ffac754 -> sub_18ff59754 : 184 -> 220
 ~ +[UTType(Accessory) _typeWithBluetoothProductID:vendorID:] : 1360 -> 1432

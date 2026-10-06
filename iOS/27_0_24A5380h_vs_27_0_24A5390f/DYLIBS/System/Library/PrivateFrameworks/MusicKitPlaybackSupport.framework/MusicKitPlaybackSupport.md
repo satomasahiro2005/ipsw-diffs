@@ -2,102 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/MusicKitPlaybackSupport.framework/MusicKitPlaybackSupport`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x39de4` | `0x7b834` | **`+0x41a50`** |
+| `__DATA.__bss` | `0x72f0` | `0x1d530` | **`+0x16240`** |
+| `__TEXT.__const` | `0x54a4` | `0x11164` | **`+0xbcc0`** |
+| `__AUTH_CONST.__const` | `0x3b70` | `0x7988` | **`+0x3e18`** |
+| `__DATA.__data` | `0x1578` | `0x5388` | **`+0x3e10`** |
+| `__TEXT.__swift5_fieldmd` | `0xec8` | `0x2e48` | **`+0x1f80`** |
+| `__TEXT.__eh_frame` | `0x130c` | `0x3224` | **`+0x1f18`** |
+| `__TEXT.__unwind_info` | `0x1518` | `0x3270` | **`+0x1d58`** |
+| `__TEXT.__swift5_typeref` | `0x117c` | `0x2d12` | **`+0x1b96`** |
+| `__TEXT.__constg_swiftt` | `0x9d8` | `0x1c78` | **`+0x12a0`** |
+| `__TEXT.__swift5_proto` | `0x37c` | `0xea8` | **`+0xb2c`** |
+| `__TEXT.__swift5_reflstr` | `0xc83` | `0x15a3` | **`+0x920`** |
+| `__TEXT.__swift5_mpenum` | `0x20` | `0x3fc` | **`+0x3dc`** |
+| `__TEXT.__cstring` | `0xd73` | `0x1023` | **`+0x2b0`** |
+| `__AUTH.__data` | `0x720` | `0x998` | **`+0x278`** |
+| `__TEXT.__swift5_types` | `0xf8` | `0x35c` | **`+0x264`** |
+| `__TEXT.__swift5_assocty` | `0x488` | `0x578` | **`+0xf0`** |
+| `__AUTH_CONST.__auth_got` | `0xb10` | `0xa50` | **`-0xc0`** |
+| `__DATA_CONST.__const` | `0xa8` | `0x120` | **`+0x78`** |
+| `__TEXT.__swift5_builtin` | `0x3c` | `0x8c` | **`+0x50`** |
+| `__AUTH_CONST.__objc_const` | `0x300` | `0x348` | **`+0x48`** |
+| `__DATA.__common` | `0x90` | `0x48` | **`-0x48`** |
+| `__TEXT.__swift5_capture` | `—` | `0x48` | **`+0x48`** |
+| `__DATA_DIRTY.__data` | `0x198` | `0x1a8` | **`+0x10`** |
+
+### Other Changes
 
 ```diff
 
 -4026.100.85.0.0
--  __TEXT.__text: 0x39de4
 +4026.100.89.0.0
-+  __TEXT.__text: 0x7b834
-   __TEXT.__objc_methlist: 0x214
--  __TEXT.__const: 0x54a4
--  __TEXT.__cstring: 0xd73
--  __TEXT.__swift5_typeref: 0x117c
--  __TEXT.__swift5_reflstr: 0xc83
--  __TEXT.__swift5_assocty: 0x488
--  __TEXT.__constg_swiftt: 0x9d8
--  __TEXT.__swift5_fieldmd: 0xec8
--  __TEXT.__swift5_proto: 0x37c
--  __TEXT.__swift5_types: 0xf8
-+  __TEXT.__const: 0x11164
-+  __TEXT.__swift5_typeref: 0x2d12
-+  __TEXT.__cstring: 0x1023
-+  __TEXT.__swift5_reflstr: 0x15a3
-+  __TEXT.__swift5_assocty: 0x578
-+  __TEXT.__constg_swiftt: 0x1c78
-+  __TEXT.__swift5_fieldmd: 0x2e48
-+  __TEXT.__swift5_builtin: 0x8c
-+  __TEXT.__swift5_mpenum: 0x3fc
-+  __TEXT.__swift5_proto: 0xea8
-+  __TEXT.__swift5_types: 0x35c
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__swift5_builtin: 0x3c
--  __TEXT.__swift5_mpenum: 0x20
-+  __TEXT.__swift5_capture: 0x48
-   __TEXT.__oslogstring: 0x324
-   __TEXT.__swift_as_entry: 0x48
-   __TEXT.__swift_as_ret: 0x40
-   __TEXT.__swift_as_cont: 0x13c
--  __TEXT.__unwind_info: 0x1518
--  __TEXT.__eh_frame: 0x130c
-+  __TEXT.__unwind_info: 0x3270
-+  __TEXT.__eh_frame: 0x3224
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xa8
-+  __DATA_CONST.__const: 0x120
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x178
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x3b70
--  __AUTH_CONST.__objc_const: 0x300
--  __AUTH_CONST.__auth_got: 0xb10
-+  __AUTH_CONST.__const: 0x7988
-+  __AUTH_CONST.__objc_const: 0x348
-+  __AUTH_CONST.__auth_got: 0xa50
-   __AUTH.__objc_data: 0xb0
--  __AUTH.__data: 0x720
--  __DATA.__data: 0x1578
--  __DATA.__bss: 0x72f0
--  __DATA.__common: 0x90
--  __DATA_DIRTY.__data: 0x198
-+  __AUTH.__data: 0x998
-+  __DATA.__data: 0x5388
-+  __DATA.__bss: 0x1d530
-+  __DATA.__common: 0x48
-+  __DATA_DIRTY.__data: 0x1a8
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/MusicKit.framework/MusicKit
-   - /System/Library/PrivateFrameworks/MusicKitInternal.framework/MusicKitInternal
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2584
--  Symbols:   804
+-  Symbols:   783
 -  CStrings:  135
 +  Functions: 5925
-+  Symbols:   1590
++  Symbols:   1569
 +  CStrings:  143
- 
 Symbols:
 + _OBJC_METACLASS_$__TtCs12_SwiftObject
 + __IVARS__TtC23MusicKitPlaybackSupport22PlaybackMusicItemField

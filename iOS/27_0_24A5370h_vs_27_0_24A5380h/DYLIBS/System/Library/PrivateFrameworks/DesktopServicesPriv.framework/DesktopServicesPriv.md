@@ -2,88 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/DesktopServicesPriv.framework/DesktopServicesPriv`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x188274` | `0x18a6b8` | **`+0x2444`** |
+| `__TEXT.__oslogstring` | `0x7ee2` | `0x85e0` | **`+0x6fe`** |
+| `__TEXT.__gcc_except_tab` | `0x25fa4` | `0x264a8` | **`+0x504`** |
+| `__TEXT.__unwind_info` | `0xbe38` | `0xbfb8` | **`+0x180`** |
+| `__TEXT.__const` | `0x8b35` | `0x8bed` | **`+0xb8`** |
+| `__AUTH_CONST.__const` | `0x9210` | `0x92b0` | **`+0xa0`** |
+| `__AUTH.__objc_data` | `0x1d60` | `0x1db0` | **`+0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x50` | `—` | **`-0x50`** |
+| `__TEXT.__objc_methlist` | `0x45fc` | `0x463c` | **`+0x40`** |
+| `__AUTH_CONST.__objc_const` | `0x7150` | `0x7180` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x622f` | `0x625a` | **`+0x2b`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2730` | `0x2758` | **`+0x28`** |
+| `__DATA.__bss` | `0x10e0` | `0x1100` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0xb18` | `0xb30` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x1118` | `0x1120` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x3e8` | `0x3ec` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x188274
--  __TEXT.__objc_methlist: 0x45fc
--  __TEXT.__gcc_except_tab: 0x25fa4
--  __TEXT.__const: 0x8b35
--  __TEXT.__cstring: 0x622f
--  __TEXT.__oslogstring: 0x7ee2
-+  __TEXT.__text: 0x18a6b8
-+  __TEXT.__objc_methlist: 0x463c
-+  __TEXT.__gcc_except_tab: 0x264a8
-+  __TEXT.__const: 0x8bed
-+  __TEXT.__cstring: 0x625a
-+  __TEXT.__oslogstring: 0x85e0
-   __TEXT.__ustring: 0x24
--  __TEXT.__unwind_info: 0xbe38
-+  __TEXT.__unwind_info: 0xbfb8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-1850.0.0.0.0
++1852.0.0.0.0
 
-   __DATA_CONST.__objc_protolist: 0x88
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x2730
-+  __DATA_CONST.__objc_selrefs: 0x2758
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__objc_superrefs: 0x1b0
-   __DATA_CONST.__objc_arraydata: 0x88
--  __DATA_CONST.__got: 0xb18
--  __AUTH_CONST.__const: 0x9210
-+  __DATA_CONST.__got: 0xb30
-+  __AUTH_CONST.__const: 0x92b0
-   __AUTH_CONST.__cfstring: 0x38c0
--  __AUTH_CONST.__objc_const: 0x7150
-+  __AUTH_CONST.__objc_const: 0x7180
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x138
-   __AUTH_CONST.__objc_arrayobj: 0x30
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x1118
--  __AUTH.__objc_data: 0x1d60
-+  __AUTH_CONST.__auth_got: 0x1120
-+  __AUTH.__objc_data: 0x1db0
-   __AUTH.__data: 0x30
--  __DATA.__objc_ivar: 0x3e8
-+  __DATA.__objc_ivar: 0x3ec
-   __DATA.__data: 0xc70
-   __DATA.__common: 0x121
--  __DATA.__bss: 0x10e0
--  __DATA_DIRTY.__objc_data: 0x50
-+  __DATA.__bss: 0x1100
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/FileProvider.framework/FileProvider
-
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 7590
--  Symbols:   23935
--  CStrings:  2237
+-  Symbols:   12314
+-  CStrings:  1767
 +  Functions: 7622
-+  Symbols:   24041
-+  CStrings:  2280
- 
-Sections:
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
++  Symbols:   12370
++  CStrings:  1810
 Symbols:
 + -[FIAnalyticsRecord initWithEventName:initialDictionary:]
 + -[FICopyOperation dsOperationOptions]
@@ -432,11 +384,6 @@ Symbols:
 + ___destroy_helper_block_ea8_32c88_ZTSKZZ45-[FIOperation fetchNodesAsyncFor:completion:]ENK4$_82clEvEUlP6FINodeP7NSErrorE_
 + ___destroy_helper_block_ea8_32c91_ZTSKZZ55-[FIOperation configureCompletionHandlers:fpOperation:]ENK4$_78clEbP7NSErrorEUlvE_
 + ___destroy_helper_block_ea8_32c93_ZTSKZZ33-[FIOperation executeDSOperation]ENK4$_46clE16NodeSuboperationP13OpaqueNodeRefEUlvE_
-+ _objc_msgSend$fileOperationKind
-+ _objc_msgSend$initWithEventName:initialDictionary:
-+ _objc_msgSend$initWithSourceItems:destinationItem:isDuplication:
-+ _objc_msgSend$initWithSourceNodes:destinationFolder:isDuplication:
-+ _objc_msgSend$isDuplication
 + _os_variant_has_internal_diagnostics
 - GCC_except_table1002
 - GCC_except_table1003
@@ -798,5 +745,4 @@ CStrings:
 - "Deferring All Providers Node open sync: %{public}@"
 - "Providers not yet loaded perform manual lookup for other"
 - "TCFURLInfo::TranslateCFError -- status: %{public}s\n\t CFError: %{public}@\n\t Backtrace:\n%{public}@"
-
 ```

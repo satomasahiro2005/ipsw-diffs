@@ -2,71 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/TypistFramework.framework/TypistFramework`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x43ae0` | `0x44838` | **`+0xd58`** |
+| `__TEXT.__cstring` | `0x5ac2` | `0x5c72` | **`+0x1b0`** |
+| `__AUTH_CONST.__cfstring` | `0x11820` | `0x11920` | **`+0x100`** |
+| `__TEXT.__objc_methlist` | `0x3a2c` | `0x3b04` | **`+0xd8`** |
+| `__AUTH_CONST.__objc_const` | `0x4be8` | `0x4ca8` | **`+0xc0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x25d0` | `0x2660` | **`+0x90`** |
+| `__TEXT.__const` | `0x422` | `0x462` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0xe90` | `0xeb0` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x2c8` | `0x2d8` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x6f8` | `0x700` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x538` | `0x540` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -499.1.0.0.0
--  __TEXT.__text: 0x425a4
--  __TEXT.__objc_methlist: 0x3a2c
--  __TEXT.__const: 0x422
 +501.0.0.0.0
-+  __TEXT.__text: 0x432e4
-+  __TEXT.__objc_methlist: 0x3b04
-+  __TEXT.__const: 0x462
-   __TEXT.__ustring: 0x13ea
--  __TEXT.__cstring: 0x5ac2
-+  __TEXT.__cstring: 0x5c72
-   __TEXT.__gcc_except_tab: 0xd34
-   __TEXT.__dlopen_cstrs: 0x6d
-   __TEXT.__oslogstring: 0xc
 
-   __TEXT.__swift5_fieldmd: 0x94
-   __TEXT.__swift5_proto: 0x4
-   __TEXT.__swift5_types: 0x10
--  __TEXT.__unwind_info: 0x11a0
-+  __TEXT.__unwind_info: 0x11c8
-   __TEXT.__eh_frame: 0x48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x25d0
-+  __DATA_CONST.__objc_selrefs: 0x2660
-   __DATA_CONST.__objc_superrefs: 0x120
-   __DATA_CONST.__objc_arraydata: 0x3c18
--  __DATA_CONST.__got: 0x538
-+  __DATA_CONST.__got: 0x540
-   __AUTH_CONST.__const: 0x788
--  __AUTH_CONST.__cfstring: 0x11820
--  __AUTH_CONST.__objc_const: 0x4be8
-+  __AUTH_CONST.__cfstring: 0x11920
-+  __AUTH_CONST.__objc_const: 0x4ca8
-   __AUTH_CONST.__objc_intobj: 0xbb8
-   __AUTH_CONST.__objc_arrayobj: 0x390
-   __AUTH_CONST.__objc_dictobj: 0x3e8
-   __AUTH_CONST.__objc_doubleobj: 0xa0
-   __AUTH_CONST.__objc_floatobj: 0x20
--  __AUTH_CONST.__auth_got: 0x6f8
-+  __AUTH_CONST.__auth_got: 0x700
-   __AUTH.__objc_data: 0xe08
-   __AUTH.__data: 0x28
--  __DATA.__objc_ivar: 0x2c8
-+  __DATA.__objc_ivar: 0x2d8
-   __DATA.__data: 0x1e8
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0x1b8
-
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 1379
 -  Symbols:   2377
 -  CStrings:  2295
 +  Functions: 1397
 +  Symbols:   2400
 +  CStrings:  2303
- 
 Symbols:
 + +[TypistKeyboardUtilities(MathUtilities) generateThumbArcPointForKeyCenter:reference:errorScale:overextensionRate:crampingRate:millimetresPerPoint:]
 + +[TypistKeyboardUtilities(MathUtilities) generateTwoThumbArcPointForKeyCenter:leftReference:rightReference:errorScale:overextensionRate:crampingRate:millimetresPerPoint:]

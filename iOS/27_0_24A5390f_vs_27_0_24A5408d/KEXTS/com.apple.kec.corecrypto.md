@@ -2,30 +2,25 @@
 
 > `com.apple.kec.corecrypto`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x6a0fc` | `0x6db98` | **`+0x3a9c`** |
+| `__TEXT.__cstring` | `0x4214` | `0x4479` | **`+0x265`** |
+| `__TEXT.__const` | `0x10140` | `0x10180` | **`+0x40`** |
+
+### Other Changes
+
 ```diff
 
 -2109.0.17.0.0
--  __TEXT.__cstring: 0x4214
--  __TEXT.__const: 0x10140
-+2109.0.22.0.0
-+  __TEXT.__cstring: 0x4479
-+  __TEXT.__const: 0x10180
-   __TEXT.__fips_hmacs: 0x20
--  __TEXT_EXEC.__text: 0x6a0fc
-+  __TEXT_EXEC.__text: 0x6db98
-   __TEXT_EXEC.__auth_stubs: 0x230
-   __DATA.__data: 0x29e0
-   __DATA.__bss: 0x27c0
-
-   __DATA_CONST.__auth_got: 0x118
-   __DATA_CONST.__got: 0x10
-   __DATA_CONST.__auth_ptr: 0x188
 -  Functions: 1942
++2109.0.22.0.0
 +  Functions: 1949
-   Symbols:   0
+
 -  CStrings:  347
 +  CStrings:  368
- 
 CStrings:
 + "FIPSPOST_KEXT [%llu] %s:%d: FAILED: ccmldsa_import_privkey: %d\n"
 + "FIPSPOST_KEXT [%llu] %s:%d: FAILED: ccmldsa_import_pubkey: %d\n"

@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/KeynoteQuicklook.framework/KeynoteQuicklook`
 
-```diff
+### Section Size Changes
 
- 488.0.0.0.0
--  __TEXT.__text: 0x121b84
-+  __TEXT.__text: 0x121b68
-   __TEXT.__init_offsets: 0x8
-   __TEXT.__objc_methlist: 0xd02c
-   __TEXT.__const: 0xbe28
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x121b84` | `0x121b68` | **`-0x1c`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2b97c8420 -> sub_2ba62a420 : 2416 -> 2384
-~ sub_2b9819d18 -> sub_2ba67bcf8 : 356 -> 360
+~ sub_2b96b4420 -> sub_2ba505420 : 2416 -> 2384
+~ sub_2b9705d18 -> sub_2ba556cf8 : 356 -> 360
 ```

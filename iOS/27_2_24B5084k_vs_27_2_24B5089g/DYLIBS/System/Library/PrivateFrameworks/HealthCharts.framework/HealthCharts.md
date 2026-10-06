@@ -2,80 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/HealthCharts.framework/HealthCharts`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15b080` | `0x16398c` | **`+0x890c`** |
+| `__AUTH_CONST.__const` | `0xd0f8` | `0xd2a0` | **`+0x1a8`** |
+| `__TEXT.__swift5_reflstr` | `0x11eb` | `0x131b` | **`+0x130`** |
+| `__TEXT.__swift5_typeref` | `0x2c1e` | `0x2d38` | **`+0x11a`** |
+| `__TEXT.__swift5_fieldmd` | `0x2d50` | `0x2e44` | **`+0xf4`** |
+| `__TEXT.__const` | `0x96e4` | `0x9764` | **`+0x80`** |
+| `__DATA.__bss` | `0x6478` | `0x6408` | **`-0x70`** |
+| `__TEXT.__cstring` | `0x51ff` | `0x526f` | **`+0x70`** |
+| `__TEXT.__swift5_capture` | `0x2b4c` | `0x2bb8` | **`+0x6c`** |
+| `__DATA.__data` | `0x3e58` | `0x3df8` | **`-0x60`** |
+| `__TEXT.__constg_swiftt` | `0x50ac` | `0x5054` | **`-0x58`** |
+| `__TEXT.__unwind_info` | `0x3130` | `0x3188` | **`+0x58`** |
+| `__TEXT.__swift5_mpenum` | `0x6c` | `0xb4` | **`+0x48`** |
+| `__AUTH_CONST.__auth_got` | `0x1a80` | `0x1ab0` | **`+0x30`** |
+| `__AUTH.__data` | `0x1c90` | `0x1cb8` | **`+0x28`** |
+| `__TEXT.__oslogstring` | `0x42f` | `0x44f` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x1140` | `0x1128` | **`-0x18`** |
+| `__TEXT.__eh_frame` | `0x1b14` | `0x1afc` | **`-0x18`** |
+| `__TEXT.__swift5_assocty` | `0xa48` | `0xa30` | **`-0x18`** |
+| `__TEXT.__swift5_builtin` | `0xc8` | `0xdc` | **`+0x14`** |
+| `__DATA.__common` | `0x80` | `0x88` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x718` | `0x710` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0x640` | `0x644` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.36.2.7
--  __TEXT.__text: 0x14f4d4
--  __TEXT.__const: 0x96e4
--  __TEXT.__constg_swiftt: 0x50ac
--  __TEXT.__swift5_typeref: 0x2c1e
--  __TEXT.__swift5_builtin: 0xc8
--  __TEXT.__swift5_reflstr: 0x11eb
--  __TEXT.__swift5_fieldmd: 0x2d50
--  __TEXT.__swift5_assocty: 0xa48
--  __TEXT.__swift5_capture: 0x2b4c
--  __TEXT.__swift5_proto: 0x718
--  __TEXT.__swift5_types: 0x640
--  __TEXT.__cstring: 0x51ff
--  __TEXT.__oslogstring: 0x42f
 +7027.1.45.2.4
-+  __TEXT.__text: 0x157d98
-+  __TEXT.__const: 0x9764
-+  __TEXT.__constg_swiftt: 0x5054
-+  __TEXT.__swift5_typeref: 0x2d38
-+  __TEXT.__swift5_builtin: 0xdc
-+  __TEXT.__swift5_reflstr: 0x131b
-+  __TEXT.__swift5_fieldmd: 0x2e44
-+  __TEXT.__swift5_assocty: 0xa30
-+  __TEXT.__swift5_capture: 0x2bb8
-+  __TEXT.__swift5_proto: 0x710
-+  __TEXT.__swift5_types: 0x644
-+  __TEXT.__cstring: 0x526f
-+  __TEXT.__oslogstring: 0x44f
-   __TEXT.__swift_as_entry: 0x44
-   __TEXT.__swift_as_ret: 0x40
-   __TEXT.__swift_as_cont: 0xdc
-   __TEXT.__swift5_protos: 0x30
--  __TEXT.__swift5_mpenum: 0x6c
--  __TEXT.__unwind_info: 0x3ce8
--  __TEXT.__eh_frame: 0x1b1c
-+  __TEXT.__swift5_mpenum: 0xb4
-+  __TEXT.__unwind_info: 0x3d58
-+  __TEXT.__eh_frame: 0x1b04
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x1e0
--  __DATA_CONST.__got: 0x1140
--  __AUTH_CONST.__const: 0xd0f8
-+  __DATA_CONST.__got: 0x1128
-+  __AUTH_CONST.__const: 0xd2a0
-   __AUTH_CONST.__objc_const: 0x368
--  __AUTH_CONST.__auth_got: 0x1a80
-+  __AUTH_CONST.__auth_got: 0x1ab0
-   __AUTH.__objc_data: 0x50
--  __AUTH.__data: 0x1c90
--  __DATA.__data: 0x3e58
--  __DATA.__common: 0x80
-+  __AUTH.__data: 0x1cb8
-+  __DATA.__data: 0x3df8
-+  __DATA.__common: 0x88
-   - /System/Library/Frameworks/Charts.framework/Charts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5235
 +  Functions: 5271
-   Symbols:   1346
+
 -  CStrings:  512
 +  CStrings:  515
- 
 Symbols:
 + ___swift_memcpy112_8
 + ___swift_memcpy120_8
@@ -88,8 +54,6 @@ Symbols:
 + _get_witness_table 16HealthChartsCore18IntervalChartValueRzAaBR_0B09Plottable5BoundRpzSdAERt_r0_lAC18BuilderConditionalVyAIyAC13RectangleMarkVAC0E7ContentPACE9clipShape_5styleQrqd___7SwiftUI9FillStyleVtAP0O0Rd__lFQOyAK_AP7CapsuleVQo_GAIyAmCEAN_AOQrqd___ARtApSRd__lFQOyAK_AP07RoundedK0VQo_AmCEAN_AOQrqd___ARtApSRd__lFQOyAK_AP06UnevenvK0VQo_GGAcLHPAwcLHPAkcLHPyHC_qd0__AcLHD3_AVHOHC_A2_AcLHPqd0__AcLHD3_AZHO_qd0__AcLHD3_A1_HOHCHC
 + _get_witness_table 6Charts18BuilderConditionalVyAA0B5TupleVyAA9AxisMarksVyAEyAA0E4TickVSg_AA0E8GridLineVSgACyAA0E4MarkPAAE15foregroundStyleyQrqd__7SwiftUI05ShapeL0Rd__lFQOyAoAE4fontyQrAQ4FontVSgFQOyAA0E10ValueLabelVys5NeverOG_Qo__AQ03AnyoL0VQo_A0_GQPGG_A6_SgQPGAGyAZGGAA0E7ContentHPA8_AAA11_HPA6_AAA11_HPyHC_A7_AAA11_HpA6_AAA11_HPyHC_HCHX_HC_A9_AAA11_HPyHCHC
 + _get_witness_table 7SwiftUI7ForEachVySaySi6offset_12HealthCharts26CategoryLevelMarkViewModelO7elementtGSiAA19_ConditionalContentVy0G005ChartO0PALE15foregroundStyleyQrqd__AA05ShapeR0Rd__lFQOyAL05PointJ0V_AA5ColorVQo_AL07BuilderN0VyAWyAnLEAOyQrqd__AaPRd__lFQOyAL09RectangleJ0V_ATQo_AnLE04clipS0_5styleQrqd___AA04FillR0VtAA0S0Rd__lFQOyAZ_AA7CapsuleVQo_GAWyAnLEA__A0_Qrqd___A2_tAAA3_Rd__lFQOyAZ_AA07RoundedW0VQo_AnLEA__A0_Qrqd___A2_tAAA3_Rd__lFQOyAZ_AA013UnevenRoundedW0VQo_GGGGAlMHpA16_AlMHpqd0__AlMHD3_AUHO_A15_AlMHPA7_AlMHPqd0__AlMHD3_AZHO_qd0__AlMHD3_A6_HOHC_A14_AlMHPqd0__AlMHD3_A10_HO_qd0__AlMHD3_A13_HOHCHCHC_HC
-+ _objc_msgSend$separatorColor
-+ _objc_msgSend$tertiaryLabelColor
 + _swift_retain_x15
 + _symbolic SaySdGSg
 + _symbolic SiSg
@@ -129,8 +93,6 @@ Symbols:
 - _get_witness_table 16HealthChartsCore18IntervalChartValueRzAaBR_0B09Plottable5BoundRpzSdAERt_r0_lAC18BuilderConditionalVyAIyAC13RectangleMarkVAC0E7ContentPACE9clipShape_5styleQrqd___7SwiftUI9FillStyleVtAP0O0Rd__lFQOyAK_AP7CapsuleVQo_GAmCEAN_AOQrqd___ARtApSRd__lFQOyAK_AP07RoundedK0VQo_GAcLHPAwcLHPAkcLHPyHC_qd0__AcLHD3_AVHOHC_qd0__AcLHD3_AZHOHC
 - _get_witness_table 6Charts18BuilderConditionalVyAA0B5TupleVyAA9AxisMarksVyAEyAA0E4TickVSg_AA0E8GridLineVSgAA0E4MarkPAAE4fontyQr7SwiftUI4FontVSgFQOyAA0E10ValueLabelVys5NeverOG_Qo_QPGG_A0_SgQPGAGyAXGGAA0E7ContentHPA2_AAA5_HPA0_AAA5_HPyHC_A1_AAA5_HpA0_AAA5_HPyHC_HCHX_HC_A3_AAA5_HPyHCHC
 - _get_witness_table 7SwiftUI7ForEachVySaySi6offset_12HealthCharts26CategoryLevelMarkViewModelO7elementtGSiAA19_ConditionalContentVy0G005ChartO0PALE15foregroundStyleyQrqd__AA05ShapeR0Rd__lFQOyAL05PointJ0V_AA5ColorVQo_AL07BuilderN0VyAWyAnLEAOyQrqd__AaPRd__lFQOyAL09RectangleJ0V_ATQo_AnLE04clipS0_5styleQrqd___AA04FillR0VtAA0S0Rd__lFQOyAZ_AA7CapsuleVQo_GAnLEA__A0_Qrqd___A2_tAAA3_Rd__lFQOyAZ_AA07RoundedW0VQo_GGGAlMHpA12_AlMHpqd0__AlMHD3_AUHO_A11_AlMHPA7_AlMHPqd0__AlMHD3_AZHO_qd0__AlMHD3_A6_HOHC_qd0__AlMHD3_A10_HOHCHC_HC
-- _objc_msgSend$imageWithTintColor:
-- _objc_msgSend$systemImageNamed:
 - _swift_retain_x12
 - _swift_retain_x5
 - _symbolic Si__________yAByABy_____yAA______Qo______yAD______Qo_G_____yAD______Qo_GAAGIegynr_ 6Charts13RectangleMarkV AA18BuilderConditionalV AA12ChartContentPAAE15foregroundStyleyQrqd__7SwiftUI05ShapeI0Rd__lFQO AI5ColorV AgAE04clipL0_5styleQrqd___AI04FillI0VtAI0L0Rd__lFQO AI7CapsuleV AgAEAM_ANQrqd___APtAiQRd__lFQO AI07RoundedB0V

@@ -2,80 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/PCCAgentClientCommon.framework/PCCAgentClientCommon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3c8730` | `0x3c3a24` | **`-0x4d0c`** |
+| `__DATA.__bss` | `0x5ed00` | `0x5d100` | **`-0x1c00`** |
+| `__TEXT.__const` | `0x379e8` | `0x36c18` | **`-0xdd0`** |
+| `__AUTH_CONST.__const` | `0x7748` | `0x6cf8` | **`-0xa50`** |
+| `__TEXT.__swift5_fieldmd` | `0xac94` | `0xa764` | **`-0x530`** |
+| `__TEXT.__eh_frame` | `0x18510` | `0x18078` | **`-0x498`** |
+| `__TEXT.__swift5_typeref` | `0x82ac` | `0x7ff2` | **`-0x2ba`** |
+| `__DATA.__data` | `0xc2a0` | `0xc018` | **`-0x288`** |
+| `__TEXT.__unwind_info` | `0x12030` | `0x11de8` | **`-0x248`** |
+| `__TEXT.__constg_swiftt` | `0x7d44` | `0x7b2c` | **`-0x218`** |
+| `__TEXT.__swift5_proto` | `0x3188` | `0x30a8` | **`-0xe0`** |
+| `__AUTH.__data` | `0x2ab8` | `0x2b58` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0xab41` | `0xaac1` | **`-0x80`** |
+| `__AUTH_CONST.__auth_got` | `0x948` | `0x900` | **`-0x48`** |
+| `__TEXT.__swift5_types` | `0xa30` | `0x9ec` | **`-0x44`** |
+| `__DATA_CONST.__objc_selrefs` | `0x40` | `0x50` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x7a57` | `0x7a67` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0x13328` | `0x13330` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -55.2.1.0.0
--  __TEXT.__text: 0x3b3db0
--  __TEXT.__const: 0x379e8
--  __TEXT.__swift5_typeref: 0x82ac
--  __TEXT.__cstring: 0xab41
--  __TEXT.__swift5_reflstr: 0x7a57
 +62.0.0.0.0
-+  __TEXT.__text: 0x3af14c
-+  __TEXT.__const: 0x36c18
-+  __TEXT.__swift5_typeref: 0x7ff2
-+  __TEXT.__cstring: 0xaac1
-+  __TEXT.__swift5_reflstr: 0x7a67
-   __TEXT.__swift5_assocty: 0xbb8
--  __TEXT.__constg_swiftt: 0x7d44
--  __TEXT.__swift5_fieldmd: 0xac94
-+  __TEXT.__constg_swiftt: 0x7b2c
-+  __TEXT.__swift5_fieldmd: 0xa764
-   __TEXT.__swift5_builtin: 0xc8
-   __TEXT.__swift5_mpenum: 0x60
--  __TEXT.__swift5_proto: 0x3188
--  __TEXT.__swift5_types: 0xa30
-+  __TEXT.__swift5_proto: 0x30a8
-+  __TEXT.__swift5_types: 0x9ec
-   __TEXT.__oslogstring: 0x70
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift_as_entry: 0x4
-   __TEXT.__swift_as_ret: 0x4
-   __TEXT.__swift_as_cont: 0x4
--  __TEXT.__unwind_info: 0x17720
--  __TEXT.__eh_frame: 0x18510
-+  __TEXT.__unwind_info: 0x17468
-+  __TEXT.__eh_frame: 0x18078
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__const: 0x5268
-   __DATA_CONST.__objc_classlist: 0xa0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x40
-+  __DATA_CONST.__objc_selrefs: 0x50
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x7748
-+  __AUTH_CONST.__const: 0x6cf8
-   __AUTH_CONST.__objc_const: 0x2940
--  __AUTH_CONST.__auth_got: 0x948
--  __AUTH.__data: 0x2ab8
--  __DATA.__data: 0xc2a0
-+  __AUTH_CONST.__auth_got: 0x900
-+  __AUTH.__data: 0x2b58
-+  __DATA.__data: 0xc018
-   __DATA_DIRTY.__objc_data: 0x550
--  __DATA_DIRTY.__data: 0x13328
-+  __DATA_DIRTY.__data: 0x13330
-   __DATA_DIRTY.__bss: 0x4400
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 28849
--  Symbols:   4559
+-  Symbols:   4551
 -  CStrings:  1668
 +  Functions: 28671
-+  Symbols:   4484
++  Symbols:   4474
 +  CStrings:  1665
- 
 Symbols:
 + _associated conformance 20PCCAgentClientCommon16TeardownStrategyO12CancelReasonOSHAASQ
-+ _objc_msgSend$code
-+ _objc_msgSend$domain
 + _objc_release_x24
 + _objc_release_x25
 + _swift_arrayInitWithTakeBackToFront

@@ -2,76 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/MobileMailUI.framework/MobileMailUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__oslogstring` | `0x2367` | `0x24b7` | **`+0x150`** |
+| `__TEXT.__text` | `0x4e92c` | `0x4e9a4` | **`+0x78`** |
+| `__TEXT.__gcc_except_tab` | `0x98c0` | `0x9890` | **`-0x30`** |
+| `__AUTH_CONST.__objc_const` | `0x7fd8` | `0x7ff8` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0xb48` | `0xb60` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4258` | `0x4270` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x5304` | `0x531c` | **`+0x18`** |
+| `__TEXT.__const` | `0x8514` | `0x8504` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x2a58` | `0x2a60` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x4dc` | `0x4e0` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -3901.200.34.0.0
--  __TEXT.__text: 0x4cc34
--  __TEXT.__objc_methlist: 0x5304
--  __TEXT.__gcc_except_tab: 0x98c0
--  __TEXT.__const: 0x8514
 +3901.200.41.0.0
-+  __TEXT.__text: 0x4ccac
-+  __TEXT.__objc_methlist: 0x531c
-+  __TEXT.__gcc_except_tab: 0x9890
-+  __TEXT.__const: 0x8504
-   __TEXT.__cstring: 0x342c
-   __TEXT.__ustring: 0x318
--  __TEXT.__oslogstring: 0x2367
-+  __TEXT.__oslogstring: 0x24b7
-   __TEXT.__dlopen_cstrs: 0x97
-   __TEXT.__swift5_typeref: 0x2a2
-   __TEXT.__swift5_capture: 0x128
 
-   __TEXT.__swift_as_entry: 0x14
-   __TEXT.__swift_as_ret: 0x18
-   __TEXT.__swift_as_cont: 0x28
--  __TEXT.__unwind_info: 0x2d18
-+  __TEXT.__unwind_info: 0x2d20
-   __TEXT.__eh_frame: 0x1b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x160
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4258
-+  __DATA_CONST.__objc_selrefs: 0x4270
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__objc_superrefs: 0x150
-   __DATA_CONST.__objc_arraydata: 0xe8
--  __DATA_CONST.__got: 0xb48
-+  __DATA_CONST.__got: 0xb60
-   __AUTH_CONST.__const: 0x730
-   __AUTH_CONST.__cfstring: 0x3140
--  __AUTH_CONST.__objc_const: 0x7fd8
-+  __AUTH_CONST.__objc_const: 0x7ff8
-   __AUTH_CONST.__objc_intobj: 0xf0
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__objc_doubleobj: 0x20
-
-   __AUTH_CONST.__auth_got: 0x898
-   __AUTH.__objc_data: 0xa60
-   __AUTH.__data: 0xe8
--  __DATA.__objc_ivar: 0x4dc
-+  __DATA.__objc_ivar: 0x4e0
-   __DATA.__data: 0x1158
-   __DATA.__common: 0x78
-   __DATA_DIRTY.__objc_data: 0xb38
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1764
--  Symbols:   5138
+-  Symbols:   3583
 -  CStrings:  678
 +  Functions: 1766
-+  Symbols:   5150
++  Symbols:   3591
 +  CStrings:  679
- 
 Symbols:
 + -[MFMessageContentView _committedDocumentMatchesContentURL:]
 + -[MFMessageContentView _discardFirstPaintGateState]
@@ -113,14 +75,6 @@ Symbols:
 + _NSURLErrorDomain
 + _OBJC_IVAR_$_MFMessageContentView._committedDocumentURL
 + _WKErrorDomain
-+ _objc_msgSend$_committedDocumentMatchesContentURL:
-+ _objc_msgSend$_committedURL
-+ _objc_msgSend$_discardFirstPaintGateState
-+ _objc_msgSend$_handleNavigationFailure:
-+ _objc_msgSend$cancelPendingContent
-+ _objc_msgSend$ef_hasScheme:
-+ _objc_msgSend$ef_match
-+ _objc_msgSend$errorWithDomain:code:userInfo:
 - -[MFWebViewLoadingController clearContent]
 - -[VIPManager allVIPEmailAddressesCriterion]
 - -[VIPManager criterionForEmailAddresses:]
@@ -153,10 +107,6 @@ Symbols:
 - GCC_except_table365
 - GCC_except_table366
 - GCC_except_table367
-- _objc_msgSend$clearContent
-- _objc_msgSend$initWithType:qualifier:expression:
-- _objc_msgSend$mf_copyIDNADecodedEmailAddress
-- _objc_msgSend$orCompoundCriterionWithCriteria:
 CStrings:
 + "<%{public}@: %p>: Canceling pending content: %@"
 + "<%{public}@: %p>: Message Content View did fail navigation, substituting error content: %{public}@"

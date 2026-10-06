@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/FinanceKit.framework/FinanceKit`
 
-```diff
+### Section Size Changes
 
- 376.0.1.0.0
--  __TEXT.__text: 0x7e7324
-+  __TEXT.__text: 0x7e7374
-   __TEXT.__objc_methlist: 0x4b8c
-   __TEXT.__const: 0x8bad8
-   __TEXT.__cstring: 0x1661e
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7e7324` | `0x7e7374` | **`+0x50`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1bdcffe64 -> sub_1be0b5e64 : 680 -> 684
 ~ sub_1bdd0c104 -> sub_1be0c2108 : 968 -> 972

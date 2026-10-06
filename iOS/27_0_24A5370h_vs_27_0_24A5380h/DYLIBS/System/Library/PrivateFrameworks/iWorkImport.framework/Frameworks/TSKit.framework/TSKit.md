@@ -2,56 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/TSKit.framework/TSKit`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0xa3d80
-+  __TEXT.__text: 0xa38c8
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__objc_methlist: 0x5f68
-   __TEXT.__const: 0xaff4
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa3d80` | `0xa38c8` | **`-0x4b8`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2b7d841d8 -> sub_2b8e781d8 : 336 -> 344
-~ sub_2b7d871d0 -> sub_2b8e7b1d8 : 176 -> 184
+~ sub_2b7c3f1d8 -> sub_2b8d3a1d8 : 336 -> 344
+~ sub_2b7c421d0 -> sub_2b8d3d1d8 : 176 -> 184
 ~ __ZNK3TSK8TreeNode18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 496 -> 480
-~ sub_2b7dbaa48 -> sub_2b8eaea48 : 304 -> 292
+~ sub_2b7c75a48 -> sub_2b8d70a48 : 304 -> 292
 ~ __ZNK3TSK23LocalCommandHistoryItem18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 408 -> 392
 ~ __ZNK3TSK24LocalCommandHistoryArray18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 244 -> 236
 ~ __ZNK3TSK31LocalCommandHistoryArraySegment18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 244 -> 236
 ~ __ZNK3TSK19LocalCommandHistory18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 464 -> 448
 ~ __ZNK3TSK15DocumentArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 1648 -> 1600
 ~ __ZNK3TSK24FormattingSymbolsArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 2240 -> 2232
-~ sub_2b7dc3670 -> sub_2b8eb75fc : 304 -> 292
+~ sub_2b7c7e670 -> sub_2b8d795fc : 304 -> 292
 ~ __ZNK3TSK22DocumentSupportArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 2012 -> 1924
 ~ __ZNK3TSK16ViewStateArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 456 -> 440
 ~ __ZNK3TSK14CommandArchive18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 696 -> 680
@@ -92,11 +63,10 @@ Functions:
 ~ __ZNK3TSK53DataReferenceRecord_ContainerUUIDToReferencedDataPair18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 556 -> 532
 ~ __ZNK3TSK19DataReferenceRecord18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 664 -> 640
 ~ __ZNK3TSK23PencilAnnotationUIState18_InternalSerializeEPhPN6google8protobuf2io19EpsCopyOutputStreamE : 788 -> 764
-~ sub_2b7ded178 -> sub_2b8ee0d00 : 152 -> 144
-~ sub_2b7ded210 -> sub_2b8ee0d90 : 276 -> 268
-~ sub_2b7e01efc -> sub_2b8ef5a74 : 1628 -> 1612
-~ sub_2b7e02a14 -> sub_2b8ef657c : 1496 -> 1480
+~ sub_2b7ca8178 -> sub_2b8da2d00 : 152 -> 144
+~ sub_2b7ca8210 -> sub_2b8da2d90 : 276 -> 268
+~ sub_2b7cbcefc -> sub_2b8db7a74 : 1628 -> 1612
+~ sub_2b7cbda14 -> sub_2b8db857c : 1496 -> 1480
 ~ __ZNK17TSKUIDStructTract10intersectsERKS_ : 252 -> 244
 ~ __ZNK17TSKUIDStructTract8containsERKS_ : 244 -> 236
-
 ```

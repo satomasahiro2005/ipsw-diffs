@@ -2,31 +2,29 @@
 
 > `/System/Library/Frameworks/CoreLocation.framework/XPCServices/maphelperservice.xpc/maphelperservice`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x12718` | `0x126a4` | **`-0x74`** |
+| `__TEXT.__gcc_except_tab` | `0x1374` | `0x136c` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -3183.0.0.0.0
--  __TEXT.__text: 0x12718
 +3185.0.6.0.1
-+  __TEXT.__text: 0x126a4
-   __TEXT.__auth_stubs: 0x720
-   __TEXT.__objc_stubs: 0xd80
-   __TEXT.__objc_methlist: 0x324
-   __TEXT.__const: 0x3b8
--  __TEXT.__gcc_except_tab: 0x1374
-+  __TEXT.__gcc_except_tab: 0x136c
-   __TEXT.__cstring: 0x1b11
-   __TEXT.__oslogstring: 0x673
-   __TEXT.__objc_classname: 0x8a
 Functions:
 ~ sub_100008db4 : 712 -> 696
 ~ sub_1000090ec -> sub_1000090dc : 372 -> 348

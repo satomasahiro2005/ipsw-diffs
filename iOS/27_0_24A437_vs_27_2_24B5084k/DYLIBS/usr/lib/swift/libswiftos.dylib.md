@@ -2,52 +2,29 @@
 
 > `/usr/lib/swift/libswiftos.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15c68` | `0x16088` | **`+0x420`** |
+| `__TEXT.__const` | `0x1910` | `0x1990` | **`+0x80`** |
+| `__AUTH_CONST.__auth_got` | `0x4c8` | `0x4e8` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x820` | `0x840` | **`+0x20`** |
+| `__TEXT.__swift5_typeref` | `0x5fa` | `0x610` | **`+0x16`** |
+| `__TEXT.__swift5_fieldmd` | `0x934` | `0x940` | **`+0xc`** |
+| `__TEXT.__swift5_mpenum` | `0x10` | `0x8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1090.0.0.0.0
--  __TEXT.__text: 0x15978
--  __TEXT.__const: 0x1910
 +1090.40.3.0.0
-+  __TEXT.__text: 0x15d98
-+  __TEXT.__const: 0x1990
-   __TEXT.__cstring: 0xb16
-   __TEXT.__constg_swiftt: 0x608
--  __TEXT.__swift5_typeref: 0x5fa
-+  __TEXT.__swift5_typeref: 0x610
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_reflstr: 0x693
--  __TEXT.__swift5_fieldmd: 0x934
-+  __TEXT.__swift5_fieldmd: 0x940
-   __TEXT.__swift5_types: 0xb8
-   __TEXT.__swift5_assocty: 0x1a0
--  __TEXT.__swift5_mpenum: 0x10
-+  __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_proto: 0xf8
-   __TEXT.__swift5_capture: 0x280
--  __TEXT.__unwind_info: 0x960
-+  __TEXT.__unwind_info: 0x980
-   __TEXT.__eh_frame: 0x328
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x1cb0
-   __AUTH_CONST.__objc_const: 0x128
--  __AUTH_CONST.__auth_got: 0x4c8
-+  __AUTH_CONST.__auth_got: 0x4e8
-   __DATA.__data: 0x50c
-   __DATA.__common: 0x1
-   __DATA_DIRTY.__data: 0x200
-
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 935
--  Symbols:   2246
+-  Symbols:   2245
 +  Functions: 941
-+  Symbols:   2261
-   CStrings:  118
- 
++  Symbols:   2260
 Symbols:
 + _$s2os14OSMetricBridgeV5group5label10dimensions4type5level4bins9intervals5flagsACySdGAA0B5GroupV_SSAA0B10DimensionsVAA0B4TypeOAA0B16StatisticalLevelOs5UInt8VSays6UInt64VGAVtcSdRszlufC
 + _$s2os14OSMetricBridgeV5group5label10dimensions4type5level4bins9intervals5flagsACys5Int64VGAA0B5GroupV_SSAA0B10DimensionsVAA0B4TypeOAA0B16StatisticalLevelOs5UInt8VSays6UInt64VGAXtcAMRszlufC

@@ -2,132 +2,72 @@
 
 > `/System/Library/PrivateFrameworks/AppleMediaServices.framework/AppleMediaServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x892964` | `0x8b5dbc` | **`+0x23458`** |
+| `__DATA.__bss` | `0x24350` | `0x26d60` | **`+0x2a10`** |
+| `__TEXT.__const` | `0x5e878` | `0x60350` | **`+0x1ad8`** |
+| `__TEXT.__cstring` | `0x2f425` | `0x30bd2` | **`+0x17ad`** |
+| `__TEXT.__eh_frame` | `0x1f1a0` | `0x1ffec` | **`+0xe4c`** |
+| `__AUTH_CONST.__const` | `0x3bc10` | `0x3c960` | **`+0xd50`** |
+| `__AUTH_CONST.__objc_const` | `0x41318` | `0x41f28` | **`+0xc10`** |
+| `__TEXT.__swift5_reflstr` | `0x5c83` | `0x671e` | **`+0xa9b`** |
+| `__TEXT.__swift5_fieldmd` | `0x72cc` | `0x7c44` | **`+0x978`** |
+| `__TEXT.__oslogstring` | `0x37b3f` | `0x38416` | **`+0x8d7`** |
+| `__TEXT.__swift5_typeref` | `0x8827` | `0x907f` | **`+0x858`** |
+| `__TEXT.__objc_methlist` | `0x24dfc` | `0x25484` | **`+0x688`** |
+| `__DATA.__data` | `0x8b60` | `0x91e4` | **`+0x684`** |
+| `__TEXT.__constg_swiftt` | `0x757c` | `0x7b08` | **`+0x58c`** |
+| `__AUTH_CONST.__cfstring` | `0x23e60` | `0x24300` | **`+0x4a0`** |
+| `__AUTH.__data` | `0x3438` | `0x3858` | **`+0x420`** |
+| `__AUTH.__objc_data` | `0xb6a8` | `0xb9e8` | **`+0x340`** |
+| `__DATA_CONST.__const` | `0xd538` | `0xd858` | **`+0x320`** |
+| `__DATA_CONST.__objc_selrefs` | `0x10340` | `0x10648` | **`+0x308`** |
+| `__TEXT.__swift5_proto` | `0x1660` | `0x17b4` | **`+0x154`** |
+| `__TEXT.__gcc_except_tab` | `0x53b8` | `0x54ec` | **`+0x134`** |
+| `__TEXT.__unwind_info` | `0x167e8` | `0x16910` | **`+0x128`** |
+| `__TEXT.__swift_as_cont` | `0x19c0` | `0x1a9c` | **`+0xdc`** |
+| `__TEXT.__lazy_helpers` | `0x424c` | `0x42f4` | **`+0xa8`** |
+| `__AUTH_CONST.__auth_got` | `0x2718` | `0x27a8` | **`+0x90`** |
+| `__TEXT.__swift5_types` | `0x870` | `0x8f4` | **`+0x84`** |
+| `__DATA_CONST.__got` | `0x1ac0` | `0x1b38` | **`+0x78`** |
+| `__TEXT.__swift5_assocty` | `0x1338` | `0x13b0` | **`+0x78`** |
+| `__TEXT.__swift5_capture` | `0x780c` | `0x779c` | **`-0x70`** |
+| `__TEXT.__swift_as_ret` | `0xd38` | `0xda8` | **`+0x70`** |
+| `__TEXT.__swift5_builtin` | `0x4d8` | `0x53c` | **`+0x64`** |
+| `__TEXT.__ustring` | `0x1b2` | `0x204` | **`+0x52`** |
+| `__DATA_CONST.__objc_classlist` | `0x1670` | `0x16c0` | **`+0x50`** |
+| `__TEXT.__swift_as_entry` | `0xab0` | `0xafc` | **`+0x4c`** |
+| `__AUTH_CONST.__objc_intobj` | `0xcf0` | `0xd20` | **`+0x30`** |
+| `__DATA_DIRTY.__data` | `0x2c00` | `0x2c30` | **`+0x30`** |
+| `__DATA.__objc_ivar` | `0x1a40` | `0x1a5c` | **`+0x1c`** |
+| `__DATA_DIRTY.__objc_ivar` | `0x710` | `0x72c` | **`+0x1c`** |
+| `__DATA_CONST.__objc_protolist` | `0x4d0` | `0x4e8` | **`+0x18`** |
+| `__DATA_CONST.__objc_protorefs` | `0x260` | `0x278` | **`+0x18`** |
+| `__TEXT.__swift5_mpenum` | `0xbc` | `0xd4` | **`+0x18`** |
+| `__AUTH_CONST.__lazy_load_got` | `0x628` | `0x638` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x62f0` | `0x62e0` | **`-0x10`** |
+| `__DATA.__common` | `0xb6c` | `0xb74` | **`+0x8`** |
+| `__DATA_CONST.__objc_catlist` | `0xe8` | `0xf0` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x154` | `0x15c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -10.0.60.2.4
--  __TEXT.__text: 0x84a888
--  __TEXT.__lazy_helpers: 0x424c
--  __TEXT.__objc_methlist: 0x24dfc
--  __TEXT.__const: 0x624f8
 +10.1.11.2.1
-+  __TEXT.__text: 0x86c764
-+  __TEXT.__lazy_helpers: 0x42f4
-+  __TEXT.__objc_methlist: 0x25484
-+  __TEXT.__const: 0x63fd0
-   __TEXT.__dlopen_cstrs: 0x990
--  __TEXT.__cstring: 0x2f425
--  __TEXT.__swift5_typeref: 0x8827
--  __TEXT.__swift5_reflstr: 0x5c83
--  __TEXT.__swift5_assocty: 0x1338
--  __TEXT.__constg_swiftt: 0x757c
--  __TEXT.__swift5_builtin: 0x4d8
--  __TEXT.__swift5_fieldmd: 0x72cc
--  __TEXT.__swift5_proto: 0x1660
--  __TEXT.__swift5_types: 0x870
--  __TEXT.__swift_as_entry: 0xab0
--  __TEXT.__swift_as_ret: 0xd38
--  __TEXT.__swift_as_cont: 0x19c0
--  __TEXT.__swift5_capture: 0x780c
--  __TEXT.__swift5_mpenum: 0xbc
--  __TEXT.__swift5_protos: 0x154
--  __TEXT.__oslogstring: 0x37b3f
--  __TEXT.__gcc_except_tab: 0x53b8
--  __TEXT.__ustring: 0x1b2
--  __TEXT.__unwind_info: 0x1a368
--  __TEXT.__eh_frame: 0x1f218
-+  __TEXT.__cstring: 0x30bd2
-+  __TEXT.__swift5_typeref: 0x907f
-+  __TEXT.__swift5_reflstr: 0x671e
-+  __TEXT.__swift5_assocty: 0x13b0
-+  __TEXT.__constg_swiftt: 0x7b08
-+  __TEXT.__swift5_builtin: 0x53c
-+  __TEXT.__swift5_fieldmd: 0x7c44
-+  __TEXT.__swift5_proto: 0x17b4
-+  __TEXT.__swift5_types: 0x8f4
-+  __TEXT.__swift_as_entry: 0xafc
-+  __TEXT.__swift_as_ret: 0xda8
-+  __TEXT.__swift_as_cont: 0x1a9c
-+  __TEXT.__swift5_capture: 0x779c
-+  __TEXT.__swift5_mpenum: 0xd4
-+  __TEXT.__swift5_protos: 0x15c
-+  __TEXT.__oslogstring: 0x38416
-+  __TEXT.__gcc_except_tab: 0x54ec
-+  __TEXT.__ustring: 0x204
-+  __TEXT.__unwind_info: 0x1a9e8
-+  __TEXT.__eh_frame: 0x2005c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xd518
--  __DATA_CONST.__objc_classlist: 0x1670
--  __DATA_CONST.__objc_catlist: 0xe8
--  __DATA_CONST.__objc_protolist: 0x4d0
-+  __DATA_CONST.__const: 0xd838
-+  __DATA_CONST.__objc_classlist: 0x16c0
-+  __DATA_CONST.__objc_catlist: 0xf0
-+  __DATA_CONST.__objc_protolist: 0x4e8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x10340
--  __DATA_CONST.__objc_protorefs: 0x260
-+  __DATA_CONST.__objc_selrefs: 0x10648
-+  __DATA_CONST.__objc_protorefs: 0x278
-   __DATA_CONST.__objc_superrefs: 0xd28
-   __DATA_CONST.__objc_arraydata: 0x5f8
--  __DATA_CONST.__got: 0x1ac0
--  __AUTH_CONST.__const: 0x3b810
--  __AUTH_CONST.__cfstring: 0x23e60
--  __AUTH_CONST.__objc_const: 0x41318
--  __AUTH_CONST.__lazy_load_got: 0x628
--  __AUTH_CONST.__objc_intobj: 0xcf0
-+  __DATA_CONST.__got: 0x1b38
-+  __AUTH_CONST.__const: 0x3c560
-+  __AUTH_CONST.__cfstring: 0x24300
-+  __AUTH_CONST.__objc_const: 0x41f28
-+  __AUTH_CONST.__lazy_load_got: 0x638
-+  __AUTH_CONST.__objc_intobj: 0xd20
-   __AUTH_CONST.__objc_arrayobj: 0x180
-   __AUTH_CONST.__objc_dictobj: 0x118
--  __AUTH_CONST.__auth_got: 0x2718
--  __AUTH.__objc_data: 0xb6a8
--  __AUTH.__data: 0x3438
--  __DATA.__objc_ivar: 0x1a40
--  __DATA.__data: 0x8b38
--  __DATA.__common: 0xb6c
--  __DATA_DIRTY.__objc_ivar: 0x710
-+  __AUTH_CONST.__auth_got: 0x27a8
-+  __AUTH.__objc_data: 0xb9e8
-+  __AUTH.__data: 0x3858
-+  __DATA.__objc_ivar: 0x1a5c
-+  __DATA.__data: 0x91bc
-+  __DATA.__common: 0xb74
-+  __DATA_DIRTY.__objc_ivar: 0x72c
-   __DATA_DIRTY.__objc_data: 0x5660
--  __DATA_DIRTY.__data: 0x2c00
--  __DATA_DIRTY.__bss: 0x62f0
-+  __DATA_DIRTY.__data: 0x2c30
-+  __DATA_DIRTY.__bss: 0x62e0
-   __DATA_DIRTY.__common: 0xa0
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
-+  - /System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-   - /System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 34753
--  Symbols:   33482
++  - /System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation
+
+-  Functions: 34755
+-  Symbols:   26935
 -  CStrings:  9595
-+  Functions: 35700
-+  Symbols:   33929
++  Functions: 35702
++  Symbols:   27306
 +  CStrings:  9825
- 
 Symbols:
 + +[ACAccount(AppleMediaServicesProject) ams_globalEphemeralAccountPropertiesForAccount:]
 + +[AMSCardEnrollment _startPassKitTimeoutForPromise:bag:bagKey:]
@@ -492,102 +432,6 @@ Symbols:
 + _get_enum_tag_for_layout_string 18AppleMediaServices25FairPlayDeviceIdentityBagV8CriteriaV11MatchResultO
 + _get_enum_tag_for_layout_string 18AppleMediaServices30AgeVerificationAccountIdentityO
 + _lazyLoadFlag$CoreVideo
-+ _objc_msgSend$_ams_isStorefrontCopyEligibleForMediaType:
-+ _objc_msgSend$_attributedStringForFlexListArrayElementValue:leading:trailing:styles:
-+ _objc_msgSend$_beginPresentToVisibleSignpost
-+ _objc_msgSend$_clearCachedResult
-+ _objc_msgSend$_clientBuildType
-+ _objc_msgSend$_computeShouldUseSPKPaymentSheet
-+ _objc_msgSend$_decorateReconfiguredRequest:originalTask:taskInfoOriginalResponse:originalProperties:compressRequestBody:redirect:completionHandler:
-+ _objc_msgSend$_emitBlindedSignatureTypeSignpostForType:privateInput:
-+ _objc_msgSend$_endPresentToVisibleSignpostWithSuccess:
-+ _objc_msgSend$_finishPromise:withImmutablePromiseResult:logDuplicateFinishes:
-+ _objc_msgSend$_isBagLoadURL:
-+ _objc_msgSend$_performCardRegistrationWithSignpostID:
-+ _objc_msgSend$_preconnectToImageHosts
-+ _objc_msgSend$_prewarmPaymentUIFramework
-+ _objc_msgSend$_reportMescalSigningFailure:request:bag:
-+ _objc_msgSend$_requestEncodingPromiseForPurchaseInfo:bag:
-+ _objc_msgSend$_resolveGUIDForURL:bag:regexesKey:
-+ _objc_msgSend$_resolvePaymentFrameworkClassWithResolver:phase:frameworkName:
-+ _objc_msgSend$_runAction:completionHandler:
-+ _objc_msgSend$_setResponseCookiesFromResponse:properties:
-+ _objc_msgSend$_shouldPrewarmPaymentFramework
-+ _objc_msgSend$_shouldSendGUIDForURL:patterns:schemes:
-+ _objc_msgSend$_simpleProfileAuthTokenForAccount:authKitUpdateResult:
-+ _objc_msgSend$_startCardDataTimeoutForPromise:
-+ _objc_msgSend$_startPassKitTimeoutForPromise:bag:bagKey:
-+ _objc_msgSend$addGUIDHeaderToRequest:matchingURL:bag:
-+ _objc_msgSend$addGUIDParameterToRequest:matchingURL:bag:preservingQueryEncoding:
-+ _objc_msgSend$ageEstimationServiceWithReply:
-+ _objc_msgSend$ageModelDownloadServiceWithReply:
-+ _objc_msgSend$ams_asynchronouslyRemoveAllCookies
-+ _objc_msgSend$ams_asynchronouslyRemoveCookies:
-+ _objc_msgSend$ams_asynchronouslyRemoveCookiesMatchingProperties:
-+ _objc_msgSend$ams_boolForEntitlement:
-+ _objc_msgSend$ams_hasPrivateAMSEntitlement
-+ _objc_msgSend$ams_recordTaskInfo:responseData:route:
-+ _objc_msgSend$asyncQueue
-+ _objc_msgSend$biometryType
-+ _objc_msgSend$buyRequestContentTypeOverride
-+ _objc_msgSend$cachedShouldUseSPKPaymentSheetPromise
-+ _objc_msgSend$canEvaluatePolicy:error:
-+ _objc_msgSend$checkRedirectFromURL:toURL:completionHandler:
-+ _objc_msgSend$decideWithRequestURL:randomDraw:
-+ _objc_msgSend$detached
-+ _objc_msgSend$diagnostic
-+ _objc_msgSend$downloadModelsWithReply:
-+ _objc_msgSend$evaluatePolicy:localizedReason:reply:
-+ _objc_msgSend$failureWithoutErrorError
-+ _objc_msgSend$finishPromise:withImmutablePromiseResult:
-+ _objc_msgSend$getCurrentPaymentPassIdentifierWithBag:
-+ _objc_msgSend$imageDownloadSession
-+ _objc_msgSend$initWithBag:logKey:
-+ _objc_msgSend$initWithDatabasePath:memoryConstrainedProcess:
-+ _objc_msgSend$initWithLocalValidationSuccess:
-+ _objc_msgSend$initWithMessage:level:
-+ _objc_msgSend$initWithProperties:samplingSource:
-+ _objc_msgSend$initWithReversePushEnabled:diagnostic:
-+ _objc_msgSend$invalidateCachedContext
-+ _objc_msgSend$isApplePayWalletRefreshedWithCompletionHandler:
-+ _objc_msgSend$isApplePayWalletRefreshedWithCountryCode:logKey:
-+ _objc_msgSend$isApplePayWalletRefreshedWithCountryCode:logKey:completion:
-+ _objc_msgSend$isExcludedMescalSigningError:
-+ _objc_msgSend$localValidation
-+ _objc_msgSend$localValidationResult
-+ _objc_msgSend$logsDisabledReasons
-+ _objc_msgSend$mediaRestrictionsRefreshForAccountID:reply:
-+ _objc_msgSend$modelsReadyWithReply:
-+ _objc_msgSend$needsRedirectCheckForRedirect:previousURL:targetURL:taskURL:
-+ _objc_msgSend$paymentServicesMerchantURLWithLogKey:completion:
-+ _objc_msgSend$preconnectToHostAtURL:
-+ _objc_msgSend$presentToVisibleIntervalActive
-+ _objc_msgSend$prewarmPaymentFrameworkEnabled
-+ _objc_msgSend$reloadAccountForAccountMediaType:
-+ _objc_msgSend$reversePushSamplingSource
-+ _objc_msgSend$routeForCompletedTaskWithSSEStream:ephemeralAccount:
-+ _objc_msgSend$routeForSSEEventWithEphemeralAccount:
-+ _objc_msgSend$secureRedirectURLFromURL:taskURL:toURL:logKey:
-+ _objc_msgSend$serviceIdentifierForResponse:taskInfo:
-+ _objc_msgSend$setCachedShouldUseSPKPaymentSheetPromise:
-+ _objc_msgSend$setDetached:
-+ _objc_msgSend$setImageDownloadSession:
-+ _objc_msgSend$setOptionFallbackVisible:
-+ _objc_msgSend$setOptionNoFailureUI:
-+ _objc_msgSend$setPresentToVisibleIntervalActive:
-+ _objc_msgSend$set_preconnect:
-+ _objc_msgSend$shouldAttemptApplePayWithAccount:options:countryCode:paymentNetworks:logKey:completion:
-+ _objc_msgSend$shouldAttemptApplePayWithCountryCode:paymentNetworks:logKey:completion:
-+ _objc_msgSend$storedDiagnostic
-+ _objc_msgSend$storedLevel
-+ _objc_msgSend$storedMessage
-+ _objc_msgSend$storedReversePushEnabled
-+ _objc_msgSend$tapToRadarUrlWithRadarTitle:radarDescription:classification:component:reproducibility:diagnosticExtensionIDs:
-+ _objc_msgSend$timeoutFromBagValue:defaultTimeout:
-+ _objc_msgSend$updateAutoEnrollmentIdentifierWithBag:
-+ _objc_msgSend$validResultFrom:error:reportingMisuseFor:
-+ _objc_msgSend$validResultFromSuccess:error:reportingMisuseFor:
-+ _objc_msgSend$verifyPasscode:localValidation:
 + _strtoull
 + _symbolic $s18AppleMediaServices20RestrictionOverridesP
 + _symbolic $s18AppleMediaServices21HARLoggingEnvironmentP
@@ -820,26 +664,6 @@ Symbols:
 - ___swift_closure_destructor.39Tm
 - ___swift_memcpy251_8
 - ___swift_memcpy73_8
-- _objc_msgSend$_flushAfterTransactionBlocks
-- _objc_msgSend$_performCardRegistration
-- _objc_msgSend$_resolveGUIDForRequest:bag:regexesKey:
-- _objc_msgSend$_serviceIdentifierForResponse:taskInfo:
-- _objc_msgSend$_setResponseCookiesFromResponse:taskInfo:
-- _objc_msgSend$_shouldAttemptAutoEnrollmentWithCountryCode:
-- _objc_msgSend$_shouldSendGUIDForRequest:patterns:schemes:
-- _objc_msgSend$addGUIDHeaderToRequest:bag:
-- _objc_msgSend$addGUIDParameterToRequest:bag:preservingQueryEncoding:
-- _objc_msgSend$ams_removeCookies:
-- _objc_msgSend$attestationWithAccount:options:error:
-- _objc_msgSend$attestationWithOptions:error:
-- _objc_msgSend$cacheSize
-- _objc_msgSend$paymentServicesMerchantURLWithCompletion:
-- _objc_msgSend$setCacheSize:
-- _objc_msgSend$setCacheSizeWithNumberOfKilobytes:
-- _objc_msgSend$shouldAttemptApplePayWithAccount:options:countryCode:paymentNetworks:completion:
-- _objc_msgSend$shouldAttemptApplePayWithCountryCode:paymentNetworks:completion:
-- _objc_msgSend$updateAutoEnrollmentIdentifier
-- _objc_msgSend$verifyProfileLockWithPasscode:
 - _symbolic _____ 18AppleMediaServices17BinaryResultModelO
 - _symbolic _____Iegr_ s12StaticStringV
 - _symbolic _____XDXMT 18AppleMediaServices24NearFieldSignpostManagerC

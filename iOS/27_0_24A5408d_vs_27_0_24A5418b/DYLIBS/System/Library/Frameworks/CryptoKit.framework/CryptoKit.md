@@ -2,58 +2,32 @@
 
 > `/System/Library/Frameworks/CryptoKit.framework/CryptoKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x86d44` | `0x86b88` | **`-0x1bc`** |
+| `__AUTH_CONST.__const` | `0x7e68` | `0x7d60` | **`-0x108`** |
+| `__TEXT.__eh_frame` | `0x7398` | `0x7348` | **`-0x50`** |
+| `__TEXT.__constg_swiftt` | `0x294c` | `0x2914` | **`-0x38`** |
+| `__TEXT.__const` | `0x8168` | `0x8138` | **`-0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0x1ff8` | `0x1fd8` | **`-0x20`** |
+| `__TEXT.__unwind_info` | `0x2948` | `0x2930` | **`-0x18`** |
+| `__TEXT.__swift5_reflstr` | `0x100f` | `0x101f` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0x1d62` | `0x1d56` | **`-0xc`** |
+| `__TEXT.__swift5_types` | `0x380` | `0x378` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -383.0.14.0.0
--  __TEXT.__text: 0x86d44
--  __TEXT.__const: 0x8168
--  __TEXT.__swift5_typeref: 0x1d62
--  __TEXT.__constg_swiftt: 0x294c
--  __TEXT.__swift5_reflstr: 0x100f
--  __TEXT.__swift5_fieldmd: 0x1ff8
 +383.2.1.0.0
-+  __TEXT.__text: 0x86b88
-+  __TEXT.__const: 0x8138
-+  __TEXT.__swift5_typeref: 0x1d56
-+  __TEXT.__constg_swiftt: 0x2914
-+  __TEXT.__swift5_reflstr: 0x101f
-+  __TEXT.__swift5_fieldmd: 0x1fd8
-   __TEXT.__swift5_builtin: 0x12c
-   __TEXT.__swift5_proto: 0x6f8
--  __TEXT.__swift5_types: 0x380
-+  __TEXT.__swift5_types: 0x378
-   __TEXT.__swift5_assocty: 0xeb8
-   __TEXT.__cstring: 0x59a
-   __TEXT.__swift5_protos: 0xb0
-   __TEXT.__swift5_capture: 0x90
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_types2: 0xc
--  __TEXT.__unwind_info: 0x2948
--  __TEXT.__eh_frame: 0x7398
-+  __TEXT.__unwind_info: 0x2930
-+  __TEXT.__eh_frame: 0x7348
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x78
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x7e68
-+  __AUTH_CONST.__const: 0x7d60
-   __AUTH_CONST.__objc_const: 0x358
-   __AUTH_CONST.__auth_got: 0xcf0
-   __AUTH.__data: 0x14e8
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 3147
--  Symbols:   1188
+-  Symbols:   1174
 +  Functions: 3140
-+  Symbols:   1186
-   CStrings:  40
- 
++  Symbols:   1172
 Symbols:
 - _symbolic _____ 9CryptoKit8InsecureO18UnauthenticatedAESO
 - _symbolic _____ 9CryptoKit8InsecureO23UnauthenticatedChaCha20V

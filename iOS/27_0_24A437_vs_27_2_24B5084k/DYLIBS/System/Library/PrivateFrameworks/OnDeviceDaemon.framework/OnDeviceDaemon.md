@@ -2,65 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/OnDeviceDaemon.framework/OnDeviceDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__oslogstring` | `—` | `0x196` | **`+0x196`** |
+| `__TEXT.__cstring` | `0x24f` | `0xef` | **`-0x160`** |
+| `__TEXT.__text` | `0x4f1c` | `0x4ff0` | **`+0xd4`** |
+| `__TEXT.__eh_frame` | `0x308` | `0x388` | **`+0x80`** |
+| `__DATA_DIRTY.__data` | `0x1c0` | `0x158` | **`-0x68`** |
+| `__AUTH_CONST.__const` | `0x318` | `0x368` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x488` | `0x440` | **`-0x48`** |
+| `__TEXT.__unwind_info` | `0x1c8` | `0x208` | **`+0x40`** |
+| `__DATA.__data` | `0x1f0` | `0x228` | **`+0x38`** |
+| `__TEXT.__swift5_capture` | `0x44` | `0x54` | **`+0x10`** |
+| `__TEXT.__const` | `0x3a0` | `0x398` | **`-0x8`** |
+| `__TEXT.__swift5_typeref` | `0x1b6` | `0x1b7` | **`+0x1`** |
+
+### Other Changes
+
 ```diff
 
 -3.0.59.0.0
--  __TEXT.__text: 0x4af8
 +3.1.10.0.0
-+  __TEXT.__text: 0x4c48
-   __TEXT.__objc_methlist: 0x104
--  __TEXT.__const: 0x3a0
--  __TEXT.__swift5_typeref: 0x1b6
-+  __TEXT.__const: 0x398
-+  __TEXT.__swift5_typeref: 0x1b7
-   __TEXT.__swift5_fieldmd: 0xfc
-   __TEXT.__constg_swiftt: 0x228
-   __TEXT.__swift5_reflstr: 0x9a
 
-   __TEXT.__swift5_protos: 0xc
-   __TEXT.__swift5_proto: 0x1c
-   __TEXT.__swift5_types: 0x24
--  __TEXT.__cstring: 0x24f
--  __TEXT.__swift5_capture: 0x44
--  __TEXT.__unwind_info: 0x218
--  __TEXT.__eh_frame: 0x308
-+  __TEXT.__cstring: 0xef
-+  __TEXT.__swift5_capture: 0x54
-+  __TEXT.__oslogstring: 0x196
-+  __TEXT.__unwind_info: 0x250
-+  __TEXT.__eh_frame: 0x388
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0xb0
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x318
-+  __AUTH_CONST.__const: 0x368
-   __AUTH_CONST.__objc_const: 0x220
--  __AUTH_CONST.__auth_got: 0x488
-+  __AUTH_CONST.__auth_got: 0x440
-   __AUTH.__objc_data: 0x50
-   __AUTH.__data: 0x140
--  __DATA.__data: 0x1f0
--  __DATA_DIRTY.__data: 0x1c0
-+  __DATA.__data: 0x228
-+  __DATA_DIRTY.__data: 0x158
-   __DATA_DIRTY.__bss: 0x80
-   __DATA_DIRTY.__common: 0x18
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 115
--  Symbols:   191
+-  Symbols:   189
 -  CStrings:  16
 +  Functions: 126
-+  Symbols:   199
++  Symbols:   197
 +  CStrings:  17
- 
 Symbols:
 + ___swift__destructor
 + ___swift_destroy_boxed_opaque_existential_0

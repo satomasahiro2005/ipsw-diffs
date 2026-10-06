@@ -2,15 +2,16 @@
 
 > `/System/Library/Frameworks/IdentityLookup.framework/IdentityLookup`
 
-```diff
+### Section Size Changes
 
- 1403.100.1.0.0
--  __TEXT.__text: 0x274e0
-+  __TEXT.__text: 0x274ec
-   __TEXT.__objc_methlist: 0x112c
-   __TEXT.__const: 0xda0
-   __TEXT.__oslogstring: 0xdbd
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x274e0` | `0x274ec` | **`+0xc`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2490ea9a4 -> sub_249acf9a4 : 2372 -> 2380
-~ sub_2490eb9c8 -> sub_249ad09d0 : 648 -> 652
+~ sub_248f979a4 -> sub_2499839a4 : 2372 -> 2380
+~ sub_248f989c8 -> sub_2499849d0 : 648 -> 652
 ```

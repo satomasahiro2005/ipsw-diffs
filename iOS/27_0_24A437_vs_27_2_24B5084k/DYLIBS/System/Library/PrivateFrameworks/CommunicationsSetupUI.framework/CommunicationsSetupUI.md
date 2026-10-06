@@ -2,115 +2,66 @@
 
 > `/System/Library/PrivateFrameworks/CommunicationsSetupUI.framework/CommunicationsSetupUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8f1ec` | `0x97fac` | **`+0x8dc0`** |
+| `__AUTH_CONST.__objc_const` | `0xd8c0` | `0xe208` | **`+0x948`** |
+| `__TEXT.__const` | `0x714` | `0xec4` | **`+0x7b0`** |
+| `__AUTH.__objc_data` | `0x1fb8` | `0x2430` | **`+0x478`** |
+| `__TEXT.__eh_frame` | `—` | `0x430` | **`+0x430`** |
+| `__TEXT.__swift5_typeref` | `0x2aa` | `0x66c` | **`+0x3c2`** |
+| `__AUTH_CONST.__const` | `0xdc9` | `0x1151` | **`+0x388`** |
+| `__AUTH_CONST.__auth_got` | `0x988` | `0xcb8` | **`+0x330`** |
+| `__DATA.__bss` | `0x980` | `0xca8` | **`+0x328`** |
+| `__TEXT.__unwind_info` | `0x29d0` | `0x2ce0` | **`+0x310`** |
+| `__TEXT.__constg_swiftt` | `0x18c` | `0x484` | **`+0x2f8`** |
+| `__TEXT.__cstring` | `0xc747` | `0xc9dc` | **`+0x295`** |
+| `__TEXT.__objc_methlist` | `0x8aac` | `0x8cec` | **`+0x240`** |
+| `__TEXT.__swift5_fieldmd` | `0x2b4` | `0x4c0` | **`+0x20c`** |
+| `__TEXT.__swift5_reflstr` | `0x473` | `0x633` | **`+0x1c0`** |
+| `__AUTH.__data` | `0xc0` | `0x258` | **`+0x198`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5bd0` | `0x5d58` | **`+0x188`** |
+| `__DATA.__data` | `0xf18` | `0x1050` | **`+0x138`** |
+| `__DATA_CONST.__got` | `0xb70` | `0xc58` | **`+0xe8`** |
+| `__TEXT.__oslogstring` | `0x653a` | `0x65ea` | **`+0xb0`** |
+| `__DATA_CONST.__const` | `0x14e0` | `0x1568` | **`+0x88`** |
+| `__TEXT.__swift5_assocty` | `0x60` | `0xc8` | **`+0x68`** |
+| `__TEXT.__swift5_capture` | `—` | `0x68` | **`+0x68`** |
+| `__AUTH_CONST.__cfstring` | `0xbb40` | `0xbba0` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0x4314` | `0x4364` | **`+0x50`** |
+| `__DATA.__common` | `0x30` | `0x78` | **`+0x48`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x44` | **`+0x44`** |
+| `__DATA_CONST.__objc_classlist` | `0x338` | `0x370` | **`+0x38`** |
+| `__TEXT.__swift5_types` | `0x20` | `0x50` | **`+0x30`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x20` | **`+0x20`** |
+| `__TEXT.__swift_as_ret` | `—` | `0x20` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x578` | `0x590` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `—` | `0x14` | **`+0x14`** |
+| `__TEXT.__swift5_proto` | `0x30` | `0x44` | **`+0x14`** |
+| `__DATA_CONST.__objc_superrefs` | `0x290` | `0x298` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `—` | `0x8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1570.100.1.0.0
--  __TEXT.__text: 0x8c3fc
--  __TEXT.__objc_methlist: 0x8aac
--  __TEXT.__cstring: 0xc747
--  __TEXT.__const: 0x714
--  __TEXT.__gcc_except_tab: 0x4314
--  __TEXT.__oslogstring: 0x653a
 +1576.200.41.0.0
-+  __TEXT.__text: 0x94bdc
-+  __TEXT.__objc_methlist: 0x8cec
-+  __TEXT.__cstring: 0xc9dc
-+  __TEXT.__const: 0xec4
-+  __TEXT.__gcc_except_tab: 0x4364
-+  __TEXT.__oslogstring: 0x65ea
-   __TEXT.__ustring: 0x1b4
-   __TEXT.__dlopen_cstrs: 0x62
--  __TEXT.__swift5_typeref: 0x2aa
--  __TEXT.__constg_swiftt: 0x18c
--  __TEXT.__swift5_fieldmd: 0x2b4
--  __TEXT.__swift5_proto: 0x30
--  __TEXT.__swift5_types: 0x20
--  __TEXT.__swift5_reflstr: 0x473
--  __TEXT.__swift5_assocty: 0x60
--  __TEXT.__unwind_info: 0x30e0
-+  __TEXT.__swift5_typeref: 0x66c
-+  __TEXT.__constg_swiftt: 0x484
-+  __TEXT.__swift5_fieldmd: 0x4c0
-+  __TEXT.__swift5_proto: 0x44
-+  __TEXT.__swift5_types: 0x50
-+  __TEXT.__swift5_reflstr: 0x633
-+  __TEXT.__swift5_assocty: 0xc8
-+  __TEXT.__swift5_builtin: 0x14
-+  __TEXT.__swift5_mpenum: 0x8
-+  __TEXT.__swift5_capture: 0x68
-+  __TEXT.__swift_as_entry: 0x20
-+  __TEXT.__swift_as_ret: 0x20
-+  __TEXT.__swift_as_cont: 0x44
-+  __TEXT.__unwind_info: 0x3488
-+  __TEXT.__eh_frame: 0x430
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x14e0
--  __DATA_CONST.__objc_classlist: 0x338
-+  __DATA_CONST.__const: 0x1568
-+  __DATA_CONST.__objc_classlist: 0x370
-   __DATA_CONST.__objc_catlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x130
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5bd0
-+  __DATA_CONST.__objc_selrefs: 0x5d58
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__objc_superrefs: 0x290
-+  __DATA_CONST.__objc_superrefs: 0x298
-   __DATA_CONST.__objc_arraydata: 0x98
--  __DATA_CONST.__got: 0xb70
--  __AUTH_CONST.__const: 0xdc9
--  __AUTH_CONST.__cfstring: 0xbb40
--  __AUTH_CONST.__objc_const: 0xd8c0
-+  __DATA_CONST.__got: 0xc58
-+  __AUTH_CONST.__const: 0x1151
-+  __AUTH_CONST.__cfstring: 0xbba0
-+  __AUTH_CONST.__objc_const: 0xe208
-   __AUTH_CONST.__objc_arrayobj: 0xc0
-   __AUTH_CONST.__objc_intobj: 0xc0
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x988
--  __AUTH.__objc_data: 0x1fb8
--  __AUTH.__data: 0xc0
--  __DATA.__objc_ivar: 0x578
--  __DATA.__data: 0xf18
--  __DATA.__common: 0x30
-+  __AUTH_CONST.__auth_got: 0xcb8
-+  __AUTH.__objc_data: 0x2430
-+  __AUTH.__data: 0x258
-+  __DATA.__objc_ivar: 0x590
-+  __DATA.__data: 0x1050
-+  __DATA.__common: 0x78
-   __DATA_DIRTY.__objc_data: 0xa0
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-+  - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/ContactsUI.framework/ContactsUI
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /usr/lib/swift/libswiftNaturalLanguage.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
++  - /System/Library/Frameworks/Contacts.framework/Contacts
+
 +  - /usr/lib/swift/libswiftObservation.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
-   - /usr/lib/swift/libswiftSpatial.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
+
 +  - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 3067
--  Symbols:   7378
+-  Symbols:   5196
 -  CStrings:  1794
 +  Functions: 3308
-+  Symbols:   7635
++  Symbols:   5406
 +  CStrings:  1819
- 
 Symbols:
 + -[CKSettingsMessagesController nameAndPhotoSharingCoordinator]
 + -[CKSettingsMessagesController setNameAndPhotoSharingCoordinator:]
@@ -278,53 +229,6 @@ Symbols:
 + _malloc
 + _malloc_size
 + _memmove
-+ _objc_msgSend$_dismissExistingOnboardingFlowThen:
-+ _objc_msgSend$_fetchMeContactForOnboarding
-+ _objc_msgSend$_localizedStringForKey:
-+ _objc_msgSend$_makeIntroAssetViewControllerForFaceTime
-+ _objc_msgSend$_nearestPresentingAncestor
-+ _objc_msgSend$_presentNicknameOnboardingControllerWithClass:
-+ _objc_msgSend$_primaryFaceTimeHandleForOnboarding
-+ _objc_msgSend$addSublayer:
-+ _objc_msgSend$configurationWithPaletteColors:
-+ _objc_msgSend$effectWithStyle:
-+ _objc_msgSend$familyName
-+ _objc_msgSend$fontDescriptor
-+ _objc_msgSend$fontDescriptorWithDesign:
-+ _objc_msgSend$fontDescriptorWithSymbolicTraits:
-+ _objc_msgSend$fontWithDescriptor:size:
-+ _objc_msgSend$givenName
-+ _objc_msgSend$imageForkedFromMeCard
-+ _objc_msgSend$initWithEffect:
-+ _objc_msgSend$initWithPresentingViewController:reloadBlock:context:
-+ _objc_msgSend$insertSubview:atIndex:
-+ _objc_msgSend$intrinsicContentSize
-+ _objc_msgSend$isHidden
-+ _objc_msgSend$layer
-+ _objc_msgSend$makeViewControllerWithUnknownDisplayName:primaryHandle:meContactProvider:
-+ _objc_msgSend$nameAndPhotoSharingCoordinator
-+ _objc_msgSend$nameAndPhotoSharingFooterText
-+ _objc_msgSend$nameAndPhotoSharingTapped
-+ _objc_msgSend$setColors:
-+ _objc_msgSend$setCornerCurve:
-+ _objc_msgSend$setCornerRadius:
-+ _objc_msgSend$setCustomIntroAssetViewController:
-+ _objc_msgSend$setCustomIntroDetailText:
-+ _objc_msgSend$setCustomIntroTitle:
-+ _objc_msgSend$setEndPoint:
-+ _objc_msgSend$setLocations:
-+ _objc_msgSend$setNameAndPhotoSharingCoordinator:
-+ _objc_msgSend$setOpacity:
-+ _objc_msgSend$setPriority:
-+ _objc_msgSend$setSharingAudience:
-+ _objc_msgSend$setStartPoint:
-+ _objc_msgSend$setType:
-+ _objc_msgSend$sharingAudience
-+ _objc_msgSend$sharingEnabled
-+ _objc_msgSend$specifierSummary
-+ _objc_msgSend$stringFromContact:style:
-+ _objc_msgSend$stringFromPersonNameComponents:
-+ _objc_msgSend$systemFontOfSize:weight:
 + _rewind
 + _sscanf
 + _swift_allocObject

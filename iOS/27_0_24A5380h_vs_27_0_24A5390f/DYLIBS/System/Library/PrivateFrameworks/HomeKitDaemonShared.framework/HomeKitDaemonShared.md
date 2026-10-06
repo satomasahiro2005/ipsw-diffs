@@ -2,92 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/HomeKitDaemonShared.framework/HomeKitDaemonShared`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_proto`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_superrefs`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__objc_ivar`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xaee8` | `0xc3e4` | **`+0x14fc`** |
+| `__AUTH_CONST.__const` | `0x130` | `0x288` | **`+0x158`** |
+| `__AUTH_CONST.__auth_got` | `0x350` | `0x460` | **`+0x110`** |
+| `__TEXT.__oslogstring` | `0x1925` | `0x19ef` | **`+0xca`** |
+| `__DATA.__data` | `0x5d8` | `0x678` | **`+0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x768` | `0x7b8` | **`+0x50`** |
+| `__TEXT.__const` | `0x2d0` | `0x320` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x2a0` | `0x2f0` | **`+0x50`** |
+| `__TEXT.__swift5_typeref` | `0x71` | `0xbf` | **`+0x4e`** |
+| `__DATA_CONST.__got` | `0x178` | `0x1a8` | **`+0x30`** |
+| `__AUTH_CONST.__objc_const` | `0x1910` | `0x1930` | **`+0x20`** |
+| `__TEXT.__constg_swiftt` | `0x84` | `0xa0` | **`+0x1c`** |
+| `__TEXT.__objc_methlist` | `0xbec` | `0xc04` | **`+0x18`** |
+| `__TEXT.__cstring` | `0x519` | `0x52b` | **`+0x12`** |
+| `__DATA_CONST.__objc_protolist` | `0x80` | `0x90` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `—` | `0x10` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x90` | `0xa0` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x10` | `0x18` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0xc` | `0x10` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -1484.2.0.0.0
--  __TEXT.__text: 0xaee8
--  __TEXT.__objc_methlist: 0xbec
--  __TEXT.__const: 0x2d0
--  __TEXT.__constg_swiftt: 0x84
--  __TEXT.__swift5_typeref: 0x71
--  __TEXT.__swift5_fieldmd: 0x90
--  __TEXT.__swift5_types: 0xc
 +1490.2.0.1.1
-+  __TEXT.__text: 0xc3e4
-+  __TEXT.__objc_methlist: 0xc04
-+  __TEXT.__const: 0x320
-+  __TEXT.__constg_swiftt: 0xa0
-+  __TEXT.__swift5_typeref: 0xbf
-+  __TEXT.__swift5_fieldmd: 0xa0
-+  __TEXT.__swift5_types: 0x10
-+  __TEXT.__oslogstring: 0x19ef
-+  __TEXT.__swift5_capture: 0x10
-+  __TEXT.__cstring: 0x52b
-   __TEXT.__swift5_reflstr: 0x33
-   __TEXT.__swift5_proto: 0x24
--  __TEXT.__cstring: 0x519
--  __TEXT.__oslogstring: 0x1925
--  __TEXT.__unwind_info: 0x2a0
-+  __TEXT.__unwind_info: 0x2f0
-   __TEXT.__eh_frame: 0x80
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__const: 0x330
-   __DATA_CONST.__objc_classlist: 0x48
-   __DATA_CONST.__objc_catlist: 0x10
--  __DATA_CONST.__objc_protolist: 0x80
-+  __DATA_CONST.__objc_protolist: 0x90
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x768
--  __DATA_CONST.__objc_protorefs: 0x10
-+  __DATA_CONST.__objc_selrefs: 0x7b8
-+  __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x38
--  __DATA_CONST.__got: 0x178
--  __AUTH_CONST.__const: 0x130
-+  __DATA_CONST.__got: 0x1a8
-+  __AUTH_CONST.__const: 0x288
-   __AUTH_CONST.__cfstring: 0x620
--  __AUTH_CONST.__objc_const: 0x1910
-+  __AUTH_CONST.__objc_const: 0x1930
-   __AUTH_CONST.__objc_intobj: 0x30
--  __AUTH_CONST.__auth_got: 0x350
-+  __AUTH_CONST.__auth_got: 0x460
-   __AUTH.__objc_data: 0x240
-   __AUTH.__data: 0xb0
-   __DATA.__objc_ivar: 0xe0
--  __DATA.__data: 0x5d8
-+  __DATA.__data: 0x678
-   __DATA.__bss: 0x490
-   __DATA_DIRTY.__objc_data: 0xf0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 252
--  Symbols:   761
+-  Symbols:   583
 -  CStrings:  164
 +  Functions: 286
-+  Symbols:   817
++  Symbols:   629
 +  CStrings:  169
- 
 Symbols:
 + _NSCocoaErrorDomain
 + _OBJC_CLASS_$_NSXPCConnection
@@ -114,16 +65,6 @@ Symbols:
 + _malloc_size
 + _memcpy
 + _memmove
-+ _objc_msgSend$code
-+ _objc_msgSend$domain
-+ _objc_msgSend$initWithMachServiceName:options:
-+ _objc_msgSend$interfaceWithProtocol:
-+ _objc_msgSend$invalidate
-+ _objc_msgSend$localizedDescription
-+ _objc_msgSend$processTagInfos:reply:
-+ _objc_msgSend$remoteObjectProxyWithErrorHandler:
-+ _objc_msgSend$scheduleSendBarrierBlock:
-+ _objc_msgSend$setRemoteObjectInterface:
 + _swift_allocObject
 + _swift_deallocObject
 + _swift_dynamicCast

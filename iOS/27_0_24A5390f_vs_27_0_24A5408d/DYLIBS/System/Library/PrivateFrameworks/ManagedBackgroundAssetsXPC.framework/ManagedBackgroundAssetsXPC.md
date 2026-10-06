@@ -2,69 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/ManagedBackgroundAssetsXPC.framework/ManagedBackgroundAssetsXPC`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x380a4` | `0x3cf18` | **`+0x4e74`** |
+| `__TEXT.__eh_frame` | `0x1fc0` | `0x2168` | **`+0x1a8`** |
+| `__AUTH_CONST.__const` | `0x2068` | `0x20b8` | **`+0x50`** |
+| `__TEXT.__const` | `0x3f28` | `0x3f78` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x220` | `0x258` | **`+0x38`** |
+| `__DATA.__data` | `0xba0` | `0xbc8` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0xf70` | `0xf98` | **`+0x28`** |
+| `__AUTH_CONST.__auth_got` | `0xaa0` | `0xac0` | **`+0x20`** |
+| `__DATA_DIRTY.__data` | `0xbe8` | `0xbd8` | **`-0x10`** |
+| `__TEXT.__constg_swiftt` | `0xeb0` | `0xea8` | **`-0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -2.0.32.0.0
--  __TEXT.__text: 0x380a4
 +2.0.35.1.0
-+  __TEXT.__text: 0x3cf18
-   __TEXT.__objc_methlist: 0x11c
--  __TEXT.__const: 0x3f28
--  __TEXT.__constg_swiftt: 0xeb0
-+  __TEXT.__const: 0x3f78
-+  __TEXT.__constg_swiftt: 0xea8
-   __TEXT.__swift5_typeref: 0x1186
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_reflstr: 0x7b0
 
-   __TEXT.__swift5_capture: 0x23c
-   __TEXT.__oslogstring: 0xb6a
-   __TEXT.__swift5_types2: 0x10
--  __TEXT.__unwind_info: 0xf70
--  __TEXT.__eh_frame: 0x1fc0
-+  __TEXT.__unwind_info: 0xf98
-+  __TEXT.__eh_frame: 0x2168
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xf0
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__got: 0x220
--  __AUTH_CONST.__const: 0x2068
-+  __DATA_CONST.__got: 0x258
-+  __AUTH_CONST.__const: 0x20b8
-   __AUTH_CONST.__objc_const: 0x840
--  __AUTH_CONST.__auth_got: 0xaa0
-+  __AUTH_CONST.__auth_got: 0xac0
-   __AUTH.__objc_data: 0xa0
-   __AUTH.__data: 0x390
--  __DATA.__data: 0xba0
-+  __DATA.__data: 0xbc8
-   __DATA.__bss: 0x5d80
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0x50
--  __DATA_DIRTY.__data: 0xbe8
-+  __DATA_DIRTY.__data: 0xbd8
-   __DATA_DIRTY.__bss: 0x1300
-   __DATA_DIRTY.__common: 0x18
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 1214
--  Symbols:   681
+-  Symbols:   671
 -  CStrings:  105
 +  Functions: 1220
-+  Symbols:   683
++  Symbols:   673
 +  CStrings:  107
- 
 Symbols:
 + ___swift_allocate_boxed_opaque_existential_0
 + ___swift_deallocate_boxed_opaque_existential_0

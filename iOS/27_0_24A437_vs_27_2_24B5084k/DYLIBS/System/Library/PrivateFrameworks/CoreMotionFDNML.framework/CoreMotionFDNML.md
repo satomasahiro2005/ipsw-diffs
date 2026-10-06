@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/CoreMotionFDNML.framework/CoreMotionFDNML`
 
-```diff
+### Section Size Changes
 
- 26.0.0.0.0
--  __TEXT.__text: 0x1bc54
-+  __TEXT.__text: 0x1bc68
-   __TEXT.__objc_methlist: 0x248
-   __TEXT.__gcc_except_tab: 0xfc8
-   __TEXT.__cstring: 0x65b
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1cd00` | `0x1cd14` | **`+0x14`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_257fb9bb4 -> sub_25d547bb4 : 168 -> 180
-~ sub_257fbb7e8 -> sub_25d5497f4 : 188 -> 196
+~ sub_25c85d0d4 -> sub_25ff5e0d4 : 168 -> 180
+~ sub_25c85ee14 -> sub_25ff5fe20 : 188 -> 196
 ```

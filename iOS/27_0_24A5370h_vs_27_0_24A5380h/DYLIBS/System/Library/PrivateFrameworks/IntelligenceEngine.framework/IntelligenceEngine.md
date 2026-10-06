@@ -2,36 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/IntelligenceEngine.framework/IntelligenceEngine`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x1a5e98
-+  __TEXT.__text: 0x1a5684
-   __TEXT.__init_offsets: 0x44
-   __TEXT.__objc_methlist: 0xbcc
-   __TEXT.__const: 0x3800
-   __TEXT.__cstring: 0xd5fe
--  __TEXT.__gcc_except_tab: 0x1bca8
-+  __TEXT.__gcc_except_tab: 0x1bca4
-   __TEXT.__oslogstring: 0x3a9
-   __TEXT.__unwind_info: 0x64c0
-   __TEXT.__objc_stubs: 0x0
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a5e98` | `0x1a5684` | **`-0x814`** |
+| `__TEXT.__gcc_except_tab` | `0x1bca8` | `0x1bca4` | **`-0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__16vectorIN4siri12intelligence17ExecStateResponseENS_9allocatorIS3_EEE5clearB9fqe220106Ev : 240 -> 212
 ~ __ZNSt3__16vectorIN4siri12intelligence8TestCaseENS_9allocatorIS3_EEE22__base_destruct_at_endB9fqe220106EPS3_ : 96 -> 84
@@ -132,5 +112,4 @@ Functions:
 ~ __ZN4siri12intelligenceL24ParseJsonValueToVariableERKN9rapidjson12GenericValueINS1_4UTF8IcEENS1_19MemoryPoolAllocatorINS1_12CrtAllocatorEEEEE : 936 -> 932
 ~ __ZN4YAML5Utils12_GLOBAL__N_126GetNextCodePointAndAdvanceERiRNSt3__111__wrap_iterIPKcEES7_ : 296 -> 280
 ~ __ZN6google8protobuf8internal16ReadSizeFallbackEPKcj : 120 -> 124
-
 ```

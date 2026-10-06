@@ -2,22 +2,23 @@
 
 > `/usr/libexec/safetyalertsd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfe18c` | `0xfe1a8` | **`+0x1c`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__const`
+- `__TEXT.__gcc_except_tab`
 - `__TEXT.__init_offsets`
 - `__TEXT.__objc_methlist`
-- `__TEXT.__gcc_except_tab`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
 
-```diff
+### Other Changes
 
- 70.0.20.0.0
--  __TEXT.__text: 0xfe18c
-+  __TEXT.__text: 0xfe1a8
-   __TEXT.__auth_stubs: 0x10b0
-   __TEXT.__objc_stubs: 0x3760
-   __TEXT.__init_offsets: 0x8
+```text
 Functions:
 ~ sub_100016734 : 2884 -> 2888
 ~ sub_100037290 -> sub_100037294 : 3060 -> 3072

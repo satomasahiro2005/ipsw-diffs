@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/BTCSEngine.framework/BTCSEngine`
 
-```diff
+### Section Size Changes
 
- 2700.51.1.3.0
--  __TEXT.__text: 0xb744
-+  __TEXT.__text: 0xb754
-   __TEXT.__objc_methlist: 0x270
-   __TEXT.__const: 0x26f
-   __TEXT.__gcc_except_tab: 0x630
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb744` | `0xb754` | **`+0x10`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN12CSEEnginePBR15measureFinePeakERKNSt3__16vectorIdNS0_9allocatorIdEEEEd : 3688 -> 3700
 ~ __ZNSt3__16vectorIdNS_9allocatorIdEEE6resizeEm : 284 -> 288

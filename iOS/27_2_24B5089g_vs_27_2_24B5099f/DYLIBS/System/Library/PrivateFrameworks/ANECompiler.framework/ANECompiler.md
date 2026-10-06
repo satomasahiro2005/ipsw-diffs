@@ -2,44 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/ANECompiler.framework/ANECompiler`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c7c038` | `0x1c7e2f8` | **`+0x22c0`** |
+| `__TEXT.__cstring` | `0x122f67` | `0x123517` | **`+0x5b0`** |
+| `__TEXT.__oslogstring` | `0x20dda` | `0x210b5` | **`+0x2db`** |
+| `__TEXT.__const` | `0xc6ebe` | `0xc710e` | **`+0x250`** |
+| `__TEXT.__gcc_except_tab` | `0xd7314` | `0xd7524` | **`+0x210`** |
+| `__AUTH_CONST.__const` | `0xb2b00` | `0xb2c00` | **`+0x100`** |
+| `__TEXT.__unwind_info` | `0x68be0` | `0x68c60` | **`+0x80`** |
+| `__DATA.__bss` | `0x215bd0` | `0x215bf0` | **`+0x20`** |
+
+### Other Changes
+
 ```diff
 
 -10.202.4.0.0
--  __TEXT.__text: 0x1c4cec0
 +10.203.3.0.0
-+  __TEXT.__text: 0x1c4f180
-   __TEXT.__init_offsets: 0x8
--  __TEXT.__const: 0xc6ebe
--  __TEXT.__cstring: 0x122f67
--  __TEXT.__oslogstring: 0x20dda
--  __TEXT.__gcc_except_tab: 0xd7314
--  __TEXT.__unwind_info: 0x82218
-+  __TEXT.__const: 0xc710e
-+  __TEXT.__cstring: 0x123517
-+  __TEXT.__oslogstring: 0x210b5
-+  __TEXT.__gcc_except_tab: 0xd7524
-+  __TEXT.__unwind_info: 0x822d0
-   __TEXT.__eh_frame: 0x2be4
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x5608
-   __DATA_CONST.__weak_got: 0x18
-   __DATA_CONST.__got: 0x1f0
--  __AUTH_CONST.__const: 0xb2b00
-+  __AUTH_CONST.__const: 0xb2c00
-   __AUTH_CONST.__cfstring: 0xa040
-   __AUTH_CONST.__weak_auth_got: 0x50
-   __AUTH_CONST.__auth_got: 0x1250
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libncurses.5.4.dylib
 -  Functions: 122967
 -  Symbols:   160760
 -  CStrings:  27501
 +  Functions: 122995
 +  Symbols:   160796
 +  CStrings:  27540
- 
 Symbols:
 + __ZN14Layer2TDMapper11SourceLayerC2IRNSt3__16vectorIPK12ZinIrOpLayerNS2_9allocatorIS6_EEEEEEOT_
 + __ZN6MirOpt29RemoveStaleCopiesBeforeConcatEP21ZinIrControlFlowGraphRK15ZinIrParametersb

@@ -2,78 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/MetadataUtilities.framework/MetadataUtilities`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5d938` | `0x73130` | **`+0x157f8`** |
+| `__TEXT.__const` | `0x3d72` | `0x5436` | **`+0x16c4`** |
+| `__TEXT.__cstring` | `0x724d` | `0x826f` | **`+0x1022`** |
+| `__DATA_CONST.__const` | `0x10e0` | `0x1c68` | **`+0xb88`** |
+| `__DATA.__data` | `0x2157c` | `0x21b34` | **`+0x5b8`** |
+| `__TEXT.__oslogstring` | `0x1a3a` | `0x1eb5` | **`+0x47b`** |
+| `__AUTH_CONST.__cfstring` | `0x4c80` | `0x5000` | **`+0x380`** |
+| `__AUTH_CONST.__const` | `0x8f8` | `0xb88` | **`+0x290`** |
+| `__TEXT.__unwind_info` | `0xcb0` | `0xee0` | **`+0x230`** |
+| `__AUTH_CONST.__auth_got` | `0xd88` | `0xe58` | **`+0xd0`** |
+| `__DATA.__bss` | `0x2e8` | `0x3a0` | **`+0xb8`** |
+| `__DATA_DIRTY.__bss` | `0x338` | `0x350` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x160` | `0x168` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2454.100.0.0.0
--  __TEXT.__text: 0x5d938
 +2459.102.0.0.0
-+  __TEXT.__text: 0x73130
-   __TEXT.__objc_methlist: 0x494
--  __TEXT.__const: 0x3d72
--  __TEXT.__cstring: 0x724d
--  __TEXT.__oslogstring: 0x1a3a
-+  __TEXT.__const: 0x5436
-+  __TEXT.__cstring: 0x826f
-+  __TEXT.__oslogstring: 0x1eb5
-   __TEXT.__ustring: 0x9a
-   __TEXT.__gcc_except_tab: 0x18
-   __TEXT.__dlopen_cstrs: 0x54
--  __TEXT.__unwind_info: 0xcb0
-+  __TEXT.__unwind_info: 0xee0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x10e0
-+  __DATA_CONST.__const: 0x1c68
-   __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x400
-   __DATA_CONST.__objc_superrefs: 0x58
-   __DATA_CONST.__objc_arraydata: 0x370
--  __DATA_CONST.__got: 0x160
--  __AUTH_CONST.__const: 0x8f8
--  __AUTH_CONST.__cfstring: 0x4c80
-+  __DATA_CONST.__got: 0x168
-+  __AUTH_CONST.__const: 0xb88
-+  __AUTH_CONST.__cfstring: 0x5000
-   __AUTH_CONST.__objc_const: 0x1178
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_dictobj: 0xf0
-   __AUTH_CONST.__objc_intobj: 0x18
--  __AUTH_CONST.__auth_got: 0xd88
-+  __AUTH_CONST.__auth_got: 0xe58
-   __AUTH.__objc_data: 0x2d0
-   __AUTH.__data: 0x30
-   __AUTH.__thread_vars: 0x18
-   __AUTH.__thread_bss: 0x28
-   __DATA.__objc_ivar: 0x148
--  __DATA.__data: 0x2157c
--  __DATA.__bss: 0x2e8
-+  __DATA.__data: 0x21b34
-+  __DATA.__bss: 0x3a0
-   __DATA.__common: 0x860
-   __DATA_DIRTY.__objc_data: 0xa0
-   __DATA_DIRTY.__data: 0x1b8
-   __DATA_DIRTY.__common: 0xe0
--  __DATA_DIRTY.__bss: 0x338
-+  __DATA_DIRTY.__bss: 0x350
 +  - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/CoreNLP.framework/CoreNLP
 
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 1446
--  Symbols:   2000
+-  Symbols:   1922
 -  CStrings:  1275
 +  Functions: 1658
-+  Symbols:   2227
++  Symbols:   2149
 +  CStrings:  1822
- 
 Symbols:
 + _CFBitVectorGetBitAtIndex
 + _CFBitVectorGetCountOfBit

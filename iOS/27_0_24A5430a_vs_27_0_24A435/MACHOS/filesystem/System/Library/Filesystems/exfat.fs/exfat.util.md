@@ -2,18 +2,19 @@
 
 > `/System/Library/Filesystems/exfat.fs/exfat.util`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x26bc` | `0x26c0` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 561.0.3.0.0
--  __TEXT.__text: 0x26bc
-+  __TEXT.__text: 0x26c0
-   __TEXT.__auth_stubs: 0x2c0
-   __TEXT.__const: 0x30
-   __TEXT.__cstring: 0xd76
+```text
 Functions:
 ~ sub_100001d90 : 256 -> 260
 ```

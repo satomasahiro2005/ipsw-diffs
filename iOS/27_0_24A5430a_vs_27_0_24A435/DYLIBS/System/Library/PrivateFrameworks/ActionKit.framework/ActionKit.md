@@ -2,59 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/ActionKit.framework/ActionKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x40dca8` | `0x40e0a0` | **`+0x3f8`** |
+| `__TEXT.__cstring` | `0x5401e` | `0x54085` | **`+0x67`** |
+| `__TEXT.__dlopen_cstrs` | `0x27a3` | `0x2809` | **`+0x66`** |
+| `__TEXT.__eh_frame` | `0x9f38` | `0x9f58` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x1e018` | `0x1e030` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0xe658` | `0xe670` | **`+0x18`** |
+| `__DATA.__bss` | `0xa1e8` | `0xa1f8` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x3e18` | `0x3e28` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0xf7e8` | `0xf7f0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 5037.109.0.0.0
--  __TEXT.__text: 0x40dca8
-+  __TEXT.__text: 0x40e0a0
-   __TEXT.__objc_methlist: 0x21b4c
-   __TEXT.__const: 0x2a9d8
--  __TEXT.__dlopen_cstrs: 0x27a3
--  __TEXT.__cstring: 0x5401e
-+  __TEXT.__dlopen_cstrs: 0x2809
-+  __TEXT.__cstring: 0x54085
-   __TEXT.__constg_swiftt: 0x1ec8
-   __TEXT.__swift5_typeref: 0x3e85
-   __TEXT.__swift5_builtin: 0x21c
-
-   __TEXT.__swift5_protos: 0x1c
-   __TEXT.__oslogstring: 0x6a00
-   __TEXT.__swift5_mpenum: 0x24
--  __TEXT.__gcc_except_tab: 0x3e18
-+  __TEXT.__gcc_except_tab: 0x3e28
-   __TEXT.__ustring: 0x4352
--  __TEXT.__unwind_info: 0xe658
--  __TEXT.__eh_frame: 0x9f38
-+  __TEXT.__unwind_info: 0xe670
-+  __TEXT.__eh_frame: 0x9f58
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1e018
-+  __DATA_CONST.__const: 0x1e030
-   __DATA_CONST.__objc_classlist: 0x1ac8
-   __DATA_CONST.__objc_nlclslist: 0x8
-   __DATA_CONST.__objc_catlist: 0x108
-   __DATA_CONST.__objc_protolist: 0x550
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xf7e8
-+  __DATA_CONST.__objc_selrefs: 0xf7f0
-   __DATA_CONST.__objc_protorefs: 0x1e8
-   __DATA_CONST.__objc_superrefs: 0xc90
-   __DATA_CONST.__objc_arraydata: 0xd88
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 24018
--  Symbols:   38158
+-  Symbols:   32361
 -  CStrings:  13237
 +  Functions: 24046
-+  Symbols:   38166
++  Symbols:   32368
 +  CStrings:  13241
- 
 Symbols:
 + GCC_except_table10028
 + GCC_except_table10377
@@ -349,7 +320,6 @@ Symbols:
 + ___getMTPArrangementClass_block_invoke
 + _audit_stringCommunicationsUICore
 + _getMTPArrangementClass.softClass
-+ _objc_msgSend$isMTACapableDevice
 + _swift_retain_x13
 - GCC_except_table10026
 - GCC_except_table10375

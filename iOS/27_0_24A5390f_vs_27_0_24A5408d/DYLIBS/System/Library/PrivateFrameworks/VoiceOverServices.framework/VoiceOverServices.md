@@ -2,65 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/VoiceOverServices.framework/VoiceOverServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x34bdc` | `0x35848` | **`+0xc6c`** |
+| `__AUTH_CONST.__cfstring` | `0x8f80` | `0x92a0` | **`+0x320`** |
+| `__TEXT.__cstring` | `0x73e1` | `0x7659` | **`+0x278`** |
+| `__AUTH_CONST.__const` | `0x3b80` | `0x3ca0` | **`+0x120`** |
+| `__DATA.__bss` | `0x988` | `0xa10` | **`+0x88`** |
+| `__AUTH_CONST.__objc_const` | `0x4400` | `0x4480` | **`+0x80`** |
+| `__TEXT.__objc_methlist` | `0x2f3c` | `0x2fb4` | **`+0x78`** |
+| `__DATA_CONST.__objc_selrefs` | `0x21d0` | `0x2238` | **`+0x68`** |
+| `__DATA.__data` | `0xe50` | `0xe70` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x2c8` | `0x2e8` | **`+0x20`** |
+| `__DATA_CONST.__objc_arraydata` | `0x170` | `0x190` | **`+0x20`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x138` | `0x150` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x770` | `0x778` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3237.1.0.0.0
--  __TEXT.__text: 0x34bdc
--  __TEXT.__objc_methlist: 0x2f3c
 +3240.3.0.0.0
-+  __TEXT.__text: 0x35848
-+  __TEXT.__objc_methlist: 0x2fb4
-   __TEXT.__dlopen_cstrs: 0xf0
-   __TEXT.__const: 0x80
-   __TEXT.__gcc_except_tab: 0x1b0
--  __TEXT.__cstring: 0x73e1
-+  __TEXT.__cstring: 0x7659
-   __TEXT.__oslogstring: 0x4c0
--  __TEXT.__unwind_info: 0x770
-+  __TEXT.__unwind_info: 0x778
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0xe0
-   __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x21d0
-+  __DATA_CONST.__objc_selrefs: 0x2238
-   __DATA_CONST.__objc_superrefs: 0xa8
--  __DATA_CONST.__objc_arraydata: 0x170
--  __DATA_CONST.__got: 0x2c8
--  __AUTH_CONST.__const: 0x3b80
--  __AUTH_CONST.__cfstring: 0x8f80
--  __AUTH_CONST.__objc_const: 0x4400
--  __AUTH_CONST.__objc_arrayobj: 0x138
-+  __DATA_CONST.__objc_arraydata: 0x190
-+  __DATA_CONST.__got: 0x2e8
-+  __AUTH_CONST.__const: 0x3ca0
-+  __AUTH_CONST.__cfstring: 0x92a0
-+  __AUTH_CONST.__objc_const: 0x4480
-+  __AUTH_CONST.__objc_arrayobj: 0x150
-   __AUTH_CONST.__objc_intobj: 0x150
-   __AUTH_CONST.__auth_got: 0x0
-   __DATA.__objc_ivar: 0x130
--  __DATA.__data: 0xe50
--  __DATA.__bss: 0x988
-+  __DATA.__data: 0xe70
-+  __DATA.__bss: 0xa10
-   __DATA_DIRTY.__objc_data: 0x8c0
-   __DATA_DIRTY.__bss: 0x12f0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1479
--  Symbols:   4297
+-  Symbols:   3325
 -  CStrings:  1213
 +  Functions: 1498
-+  Symbols:   4355
++  Symbols:   3370
 +  CStrings:  1238
- 
 Symbols:
 + +[VOSCommand Braille2DZoomIn]
 + +[VOSCommand Braille2DZoomOut]
@@ -112,19 +84,6 @@ Symbols:
 + _kVOTEventCommandBraille2DZoomOut
 + _kVOTEventCommandIntelligentScreenDescription
 + _kVOTEventCommandShowRecognitionOptions
-+ _objc_msgSend$Braille2DZoomIn
-+ _objc_msgSend$Braille2DZoomOut
-+ _objc_msgSend$BrailleShowImage
-+ _objc_msgSend$ImageRecognition
-+ _objc_msgSend$IntelligentScreenDescription
-+ _objc_msgSend$ShowRecognitionOptions
-+ _objc_msgSend$SwipeNavigation
-+ _objc_msgSend$_migrateRetiredImageExplorerCommandDefaults:resolver:
-+ _objc_msgSend$imageExplorerSeedKeyboardShortcutsDidMigrate
-+ _objc_msgSend$setImageExplorerSeedKeyboardShortcutsDidMigrate:
-+ _objc_msgSend$setVoiceOverSwipeNavigationStyle:
-+ _objc_msgSend$swipeNavigationStyleFormatter
-+ _objc_msgSend$voiceOverSwipeNavigationStyle
 + _swipeNavigationStyleFormatter.formatter
 + _swipeNavigationStyleFormatter.onceToken
 - GCC_except_table1262

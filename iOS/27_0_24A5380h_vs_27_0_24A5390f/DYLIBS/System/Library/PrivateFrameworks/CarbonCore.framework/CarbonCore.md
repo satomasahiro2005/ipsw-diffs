@@ -2,45 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/CarbonCore.framework/CarbonCore`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__weak_got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x342bc` | `0x34288` | **`-0x34`** |
+| `__AUTH_CONST.__auth_got` | `0xa48` | `0xa38` | **`-0x10`** |
+
+### Other Changes
 
 ```diff
 
 -1404.0.0.0.0
--  __TEXT.__text: 0x342bc
 +1405.0.0.0.0
-+  __TEXT.__text: 0x34288
-   __TEXT.__const: 0x24d0
-   __TEXT.__cstring: 0x20126
-   __TEXT.__oslogstring: 0x4801
 
-   __AUTH_CONST.__const: 0x1630
-   __AUTH_CONST.__cfstring: 0xba0
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__auth_got: 0xa48
-+  __AUTH_CONST.__auth_got: 0xa38
-   __AUTH.__data: 0x1e8
-   __DATA.__data: 0x2e8
-   __DATA.__crash_info: 0x148
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libicucore.A.dylib
-   Functions: 1099
 -  Symbols:   1608
 +  Symbols:   1606
-   CStrings:  4670
- 
 Symbols:
 - ___sprintf_chk
 - ___strcpy_chk

@@ -2,63 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/BiometricSupport.framework/BiometricSupport`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH.__objc_data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4ea48` | `0x4ebc8` | **`+0x180`** |
+| `__TEXT.__const` | `0x1394` | `0x13ec` | **`+0x58`** |
+| `__DATA.__data` | `0xc08` | `0xc30` | **`+0x28`** |
+| `__TEXT.__cstring` | `0x6fb1` | `0x6fcf` | **`+0x1e`** |
+| `__TEXT.__oslogstring` | `0x3733` | `0x3734` | **`+0x1`** |
+
+### Other Changes
 
 ```diff
 
 -575.0.0.0.0
--  __TEXT.__text: 0x4ea48
 +576.0.0.0.0
-+  __TEXT.__text: 0x4ebc8
-   __TEXT.__objc_methlist: 0x291c
--  __TEXT.__const: 0x1394
--  __TEXT.__cstring: 0x6fb1
--  __TEXT.__oslogstring: 0x3733
-+  __TEXT.__const: 0x13ec
-+  __TEXT.__cstring: 0x6fcf
-+  __TEXT.__oslogstring: 0x3734
-   __TEXT.__gcc_except_tab: 0x1048
-   __TEXT.__unwind_info: 0x1058
-   __TEXT.__objc_stubs: 0x0
 
-   __AUTH_CONST.__auth_got: 0x830
-   __AUTH.__objc_data: 0xf0
-   __DATA.__objc_ivar: 0x288
--  __DATA.__data: 0xc08
-+  __DATA.__data: 0xc30
-   __DATA.__common: 0x28
-   __DATA.__bss: 0x51
-   __DATA_DIRTY.__objc_data: 0x820
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2015
--  Symbols:   3371
+-  Symbols:   2744
 -  CStrings:  1234
 +  Functions: 2018
-+  Symbols:   3383
++  Symbols:   2756
 +  CStrings:  1235
- 
 Symbols:
 + ___der_key_last_mesa_auth
 + ___der_key_last_mesa_unlock

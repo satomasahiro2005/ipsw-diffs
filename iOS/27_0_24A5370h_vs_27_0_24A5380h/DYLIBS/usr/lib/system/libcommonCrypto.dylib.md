@@ -2,19 +2,16 @@
 
 > `/usr/lib/system/libcommonCrypto.dylib`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0xb418
-+  __TEXT.__text: 0xb428
-   __TEXT.__cstring: 0x2fc
-   __TEXT.__const: 0x24c
-   __TEXT.__oslogstring: 0x19
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__const : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb418` | `0xb428` | **`+0x10`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _CCHmac : 160 -> 168
 ~ _CCHmacInit : 180 -> 188
-
 ```

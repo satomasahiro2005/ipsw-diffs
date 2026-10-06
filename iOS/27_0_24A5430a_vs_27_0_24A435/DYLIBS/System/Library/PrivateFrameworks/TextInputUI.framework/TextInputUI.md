@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/TextInputUI.framework/TextInputUI`
 
-```diff
+### Section Size Changes
 
- 9127.0.84.1.113
--  __TEXT.__text: 0x135a5c
-+  __TEXT.__text: 0x135a98
-   __TEXT.__objc_methlist: 0xfeac
-   __TEXT.__dlopen_cstrs: 0x3f1
-   __TEXT.__const: 0x368e
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x135a5c` | `0x135a98` | **`+0x3c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_18fa760e8 -> sub_18fb0e0e8 : 364 -> 376
 ~ sub_18fa7af24 -> sub_18fb12f30 : 764 -> 784

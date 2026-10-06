@@ -2,93 +2,59 @@
 
 > `/System/Library/PrivateFrameworks/CoreSpeech.framework/corespeechd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x18605c` | `0x18652c` | **`+0x4d0`** |
+| `__TEXT.__oslogstring` | `0x274ba` | `0x27685` | **`+0x1cb`** |
+| `__TEXT.__objc_methname` | `0x47d34` | `0x47e93` | **`+0x15f`** |
+| `__DATA_CONST.__got` | `0x14c8` | `0x15c8` | **`+0x100`** |
+| `__DATA.__objc_const` | `0x2bab0` | `0x2b9c8` | **`-0xe8`** |
+| `__TEXT.__objc_stubs` | `0x228a0` | `0x22940` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0x31007` | `0x3109c` | **`+0x95`** |
+| `__DATA.__data` | `0x44a4` | `0x4444` | **`-0x60`** |
+| `__DATA.__objc_data` | `0x6450` | `0x6400` | **`-0x50`** |
+| `__TEXT.__objc_classname` | `0x396d` | `0x3928` | **`-0x45`** |
+| `__DATA.__objc_selrefs` | `0xd0e8` | `0xd128` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x6678` | `0x6638` | **`-0x40`** |
+| `__TEXT.__objc_methtype` | `0x96d8` | `0x9713` | **`+0x3b`** |
+| `__DATA_CONST.__cfstring` | `0x9720` | `0x9700` | **`-0x20`** |
+| `__DATA.__bss` | `0x720` | `0x710` | **`-0x10`** |
+| `__TEXT.__auth_stubs` | `0x1750` | `0x1760` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0xbc0` | `0xbc8` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0xa08` | `0xa00` | **`-0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x5b8` | `0x5b0` | **`-0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x838` | `0x830` | **`-0x8`** |
+| `__TEXT.__objc_methlist` | `0x1bc04` | `0x1bbfc` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x6018` | `0x6020` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_ivar`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__const`
+- `__TEXT.__gcc_except_tab`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x18605c
--  __TEXT.__auth_stubs: 0x1750
-+  __TEXT.__text: 0x18652c
-+  __TEXT.__auth_stubs: 0x1760
-   __TEXT.__lazy_helpers: 0x54
--  __TEXT.__objc_stubs: 0x228a0
--  __TEXT.__objc_methlist: 0x1bc04
-+  __TEXT.__objc_stubs: 0x22940
-+  __TEXT.__objc_methlist: 0x1bbfc
-   __TEXT.__dlopen_cstrs: 0x31a
-   __TEXT.__const: 0x3b0
-   __TEXT.__gcc_except_tab: 0x3274
--  __TEXT.__objc_methname: 0x47d34
--  __TEXT.__cstring: 0x31007
--  __TEXT.__oslogstring: 0x274ba
--  __TEXT.__objc_classname: 0x396d
--  __TEXT.__objc_methtype: 0x96d8
--  __TEXT.__unwind_info: 0x6018
--  __DATA_CONST.__const: 0x6678
--  __DATA_CONST.__cfstring: 0x9720
--  __DATA_CONST.__objc_classlist: 0xa08
-+  __TEXT.__objc_methname: 0x47e93
-+  __TEXT.__cstring: 0x3109c
-+  __TEXT.__oslogstring: 0x27685
-+  __TEXT.__objc_classname: 0x3928
-+  __TEXT.__objc_methtype: 0x9713
-+  __TEXT.__unwind_info: 0x6020
-+  __DATA_CONST.__const: 0x6638
-+  __DATA_CONST.__cfstring: 0x9700
-+  __DATA_CONST.__objc_classlist: 0xa00
-   __DATA_CONST.__objc_catlist: 0x28
--  __DATA_CONST.__objc_protolist: 0x5b8
-+  __DATA_CONST.__objc_protolist: 0x5b0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x100
--  __DATA_CONST.__objc_superrefs: 0x838
-+  __DATA_CONST.__objc_superrefs: 0x830
-   __DATA_CONST.__objc_intobj: 0xd38
-   __DATA_CONST.__objc_doubleobj: 0x80
-   __DATA_CONST.__objc_arraydata: 0x288
-   __DATA_CONST.__objc_arrayobj: 0x168
-   __DATA_CONST.__objc_dictobj: 0x348
-   __DATA_CONST.__objc_floatobj: 0x5b0
--  __DATA_CONST.__auth_got: 0xbc0
--  __DATA_CONST.__got: 0x14c8
-+  __DATA_CONST.__auth_got: 0xbc8
-+  __DATA_CONST.__got: 0x15c8
-   __DATA_CONST.__auth_ptr: 0x8
--  __DATA.__objc_const: 0x2bab0
--  __DATA.__objc_selrefs: 0xd0e8
-+  __DATA.__objc_const: 0x2b9c8
-+  __DATA.__objc_selrefs: 0xd128
-   __DATA.__objc_ivar: 0x21d0
--  __DATA.__objc_data: 0x6450
-+  __DATA.__objc_data: 0x6400
-   __DATA.__lazy_load_got: 0x8
--  __DATA.__data: 0x44a4
--  __DATA.__bss: 0x720
-+  __DATA.__data: 0x4444
-+  __DATA.__bss: 0x710
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+-3600.70.8.0.0
++3600.70.20.1.1
 
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 -  Functions: 10556
 -  Symbols:   1058
--  CStrings:  18829
+-  CStrings:  17361
 +  Functions: 10557
 +  Symbols:   1060
-+  CStrings:  18844
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_ivar : content changed
++  CStrings:  17377
 Symbols:
 + _LBSpeechRecognitionModeDescription
 + _OBJC_CLASS_$_CSPhraseSpotterEnabledMonitor
@@ -159,5 +125,4 @@ CStrings:
 - "kVTPreferencesPhraseSpotterEnabledDidChangeDarwinNotification"
 - "requestSampledForCollisionDetection:"
 - "v48@0:8@16q24@32@40"
-
 ```

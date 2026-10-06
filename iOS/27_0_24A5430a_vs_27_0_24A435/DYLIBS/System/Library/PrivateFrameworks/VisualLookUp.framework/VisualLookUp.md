@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/VisualLookUp.framework/VisualLookUp`
 
-```diff
+### Section Size Changes
 
- 6.0.13.0.0
--  __TEXT.__text: 0x4a98a4
-+  __TEXT.__text: 0x4a9e64
-   __TEXT.__objc_methlist: 0x4434
-   __TEXT.__const: 0x378a0
-   __TEXT.__cstring: 0x14039
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4a98a4` | `0x4a9e64` | **`+0x5c0`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_23bc267e8 -> sub_23c5437e8 : 968 -> 972
 ~ sub_23bc26e6c -> sub_23c543e70 : 2284 -> 2296

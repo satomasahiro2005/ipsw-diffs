@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/SiriNaturalLanguageGeneration.framework/SiriNaturalLanguageGeneration`
 
-```diff
+### Section Size Changes
 
- 3500.4.1.0.0
--  __TEXT.__text: 0x24578
-+  __TEXT.__text: 0x24558
-   __TEXT.__const: 0x2198
-   __TEXT.__swift5_typeref: 0xb82
-   __TEXT.__swift5_fieldmd: 0x98c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x24578` | `0x24558` | **`-0x20`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2a7ed2880 -> sub_2a7cf5880 : 1452 -> 1436
-~ sub_2a7ed3578 -> sub_2a7cf6568 : 320 -> 304
+~ sub_2a7d5e880 -> sub_2a7bf5880 : 1452 -> 1436
+~ sub_2a7d5f578 -> sub_2a7bf6568 : 320 -> 304
 ```

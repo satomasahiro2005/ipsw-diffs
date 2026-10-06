@@ -2,18 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/PrivateSearchCore.framework/PrivateSearchCore`
 
-```diff
+### Section Size Changes
 
- 4.0.0.0.0
--  __TEXT.__text: 0x29270
-+  __TEXT.__text: 0x29288
-   __TEXT.__const: 0x2032
-   __TEXT.__cstring: 0x465
-   __TEXT.__constg_swiftt: 0xb34
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x29270` | `0x29288` | **`+0x18`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_298ed329c -> sub_299c5d29c : 664 -> 668
-~ sub_298edc874 -> sub_299c66878 : 952 -> 948
-~ sub_298edd358 -> sub_299c67358 : 1304 -> 1308
-~ sub_298ede218 -> sub_299c6821c : 384 -> 388
-~ sub_298ee01d0 -> sub_299c6a1d8 : 756 -> 772
+~ sub_298db829c -> sub_299b4029c : 664 -> 668
+~ sub_298dc1874 -> sub_299b49878 : 952 -> 948
+~ sub_298dc2358 -> sub_299b4a358 : 1304 -> 1308
+~ sub_298dc3218 -> sub_299b4b21c : 384 -> 388
+~ sub_298dc51d0 -> sub_299b4d1d8 : 756 -> 772
 ```

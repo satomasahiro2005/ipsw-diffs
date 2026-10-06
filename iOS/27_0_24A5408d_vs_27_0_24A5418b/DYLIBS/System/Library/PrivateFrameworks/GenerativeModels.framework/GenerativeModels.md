@@ -2,44 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xce6e0` | `0xce9dc` | **`+0x2fc`** |
+| `__TEXT.__oslogstring` | `0x32b3` | `0x3403` | **`+0x150`** |
+| `__TEXT.__eh_frame` | `0x4ecc` | `0x4eec` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x3248` | `0x3258` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -291.6.0.5.101
--  __TEXT.__text: 0xce6e0
 +291.6.0.5.102
-+  __TEXT.__text: 0xce9dc
-   __TEXT.__objc_methlist: 0x4c0
-   __TEXT.__const: 0xb444
-   __TEXT.__constg_swiftt: 0x21bc
 
-   __TEXT.__swift5_proto: 0x93c
-   __TEXT.__swift5_types: 0x370
-   __TEXT.__swift5_protos: 0x20
--  __TEXT.__oslogstring: 0x32b3
-+  __TEXT.__oslogstring: 0x3403
-   __TEXT.__cstring: 0x29f3
-   __TEXT.__swift5_capture: 0xd5c
-   __TEXT.__swift_as_entry: 0x1a8
-   __TEXT.__swift_as_ret: 0x1bc
-   __TEXT.__swift_as_cont: 0x344
-   __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__unwind_info: 0x3248
--  __TEXT.__eh_frame: 0x4ecc
-+  __TEXT.__unwind_info: 0x3258
-+  __TEXT.__eh_frame: 0x4eec
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5899
 +  Functions: 5901
-   Symbols:   257
+
 -  CStrings:  494
 +  CStrings:  498
- 
 CStrings:
 + "shouldShowInstallationConsentScreen: consentNeededEuropeanUnion"
 + "shouldShowInstallationConsentScreen: consentNeededJapan — automatic installation regulated"

@@ -2,87 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/UnilogCoordination.framework/UnilogCoordination`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x12a9c` | `0x1b580` | **`+0x8ae4`** |
+| `__AUTH_CONST.__const` | `0xc00` | `0x1148` | **`+0x548`** |
+| `__TEXT.__eh_frame` | `0x1220` | `0x1720` | **`+0x500`** |
+| `__TEXT.__swift5_capture` | `0x1b8` | `0x4e8` | **`+0x330`** |
+| `__TEXT.__unwind_info` | `0x6e0` | `0x8c0` | **`+0x1e0`** |
+| `__TEXT.__const` | `0x1000` | `0x11d0` | **`+0x1d0`** |
+| `__TEXT.__swift5_typeref` | `0x62d` | `0x7c5` | **`+0x198`** |
+| `__AUTH.__data` | `0x128` | `0x2a0` | **`+0x178`** |
+| `__AUTH_CONST.__objc_const` | `0x810` | `0x920` | **`+0x110`** |
+| `__TEXT.__constg_swiftt` | `0x638` | `0x714` | **`+0xdc`** |
+| `__AUTH_CONST.__auth_got` | `0x738` | `0x808` | **`+0xd0`** |
+| `__TEXT.__cstring` | `0x277` | `0x1c1` | **`-0xb6`** |
+| `__TEXT.__oslogstring` | `0x6e` | `0x10e` | **`+0xa0`** |
+| `__TEXT.__swift5_reflstr` | `0x1e2` | `0x272` | **`+0x90`** |
+| `__TEXT.__swift_as_cont` | `0xf0` | `0x178` | **`+0x88`** |
+| `__DATA.__bss` | `0x1100` | `0x1080` | **`-0x80`** |
+| `__DATA.__data` | `0x8f0` | `0x968` | **`+0x78`** |
+| `__TEXT.__swift5_fieldmd` | `0x2f4` | `0x354` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0x138` | `0x188` | **`+0x50`** |
+| `__TEXT.__swift_as_entry` | `0x98` | `0xcc` | **`+0x34`** |
+| `__TEXT.__swift_as_ret` | `0x8c` | `0xb8` | **`+0x2c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x190` | `0x1a8` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x10` | `0x18` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x94` | `0x90` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2.1.0.0.0
--  __TEXT.__text: 0x12a9c
 +2.3.0.0.0
-+  __TEXT.__text: 0x1b580
-   __TEXT.__objc_methlist: 0x2b8
--  __TEXT.__const: 0x1000
--  __TEXT.__swift5_typeref: 0x62d
--  __TEXT.__cstring: 0x277
--  __TEXT.__constg_swiftt: 0x638
--  __TEXT.__swift5_reflstr: 0x1e2
--  __TEXT.__swift5_fieldmd: 0x2f4
--  __TEXT.__swift5_proto: 0x94
-+  __TEXT.__const: 0x11d0
-+  __TEXT.__swift5_typeref: 0x7c5
-+  __TEXT.__cstring: 0x1c1
-+  __TEXT.__constg_swiftt: 0x714
-+  __TEXT.__swift5_reflstr: 0x272
-+  __TEXT.__swift5_fieldmd: 0x354
-+  __TEXT.__swift5_proto: 0x90
-   __TEXT.__swift5_types: 0x44
--  __TEXT.__swift_as_entry: 0x98
--  __TEXT.__swift_as_ret: 0x8c
--  __TEXT.__swift_as_cont: 0xf0
-+  __TEXT.__swift_as_entry: 0xcc
-+  __TEXT.__swift_as_ret: 0xb8
-+  __TEXT.__swift_as_cont: 0x178
-   __TEXT.__swift5_protos: 0xc
-   __TEXT.__swift5_assocty: 0x48
--  __TEXT.__swift5_capture: 0x1b8
--  __TEXT.__oslogstring: 0x6e
--  __TEXT.__unwind_info: 0x6e0
--  __TEXT.__eh_frame: 0x1220
-+  __TEXT.__swift5_capture: 0x4e8
-+  __TEXT.__oslogstring: 0x10e
-+  __TEXT.__unwind_info: 0x8c0
-+  __TEXT.__eh_frame: 0x1720
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x88
--  __DATA_CONST.__objc_classlist: 0x10
-+  __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x68
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x190
-+  __DATA_CONST.__objc_selrefs: 0x1a8
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xc00
--  __AUTH_CONST.__objc_const: 0x810
--  __AUTH_CONST.__auth_got: 0x738
--  __AUTH.__objc_data: 0x138
--  __AUTH.__data: 0x128
--  __DATA.__data: 0x8f0
-+  __AUTH_CONST.__const: 0x1148
-+  __AUTH_CONST.__objc_const: 0x920
-+  __AUTH_CONST.__auth_got: 0x808
-+  __AUTH.__objc_data: 0x188
-+  __AUTH.__data: 0x2a0
-+  __DATA.__data: 0x968
-   __DATA.__common: 0x58
--  __DATA.__bss: 0x1100
-+  __DATA.__bss: 0x1080
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/swift/libswift_DarwinFoundation3.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 487
--  Symbols:   384
+-  Symbols:   365
 -  CStrings:  20
 +  Functions: 642
-+  Symbols:   442
++  Symbols:   420
 +  CStrings:  18
- 
 Symbols:
 + __DATA__TtC18UnilogCoordination25UnilogPipelineCoordinator
 + __IVARS__TtC18UnilogCoordination25UnilogPipelineCoordinator
@@ -95,10 +56,6 @@ Symbols:
 + __swiftImmortalRefCount
 + _get_enum_tag_for_layout_string 18UnilogCoordination0A19PipelineCoordinatorC15ConnectionErrorO
 + _memcpy
-+ _objc_msgSend$invalidate
-+ _objc_msgSend$remoteObjectProxyWithErrorHandler:
-+ _objc_msgSend$setInterruptionHandler:
-+ _objc_msgSend$setInvalidationHandler:
 + _objc_release_x9
 + _objc_retain_x9
 + _swift_cvw_enumFn_getEnumTag
@@ -149,7 +106,6 @@ Symbols:
 + _symbolic ytSgIeAgHr_
 + _type_layout_string 18UnilogCoordination0A19PipelineCoordinatorC15ConnectionErrorO
 - _associated conformance 18UnilogCoordination0A19PipelineCoordinatorV0B8XPCErrorOSHAASQ
-- _objc_msgSend$synchronousRemoteObjectProxyWithErrorHandler:
 - _symbolic ScCy_____Sg_____G 10Foundation4DateV s5NeverO
 - _symbolic _____ 18UnilogCoordination0A19PipelineCoordinatorV
 - _symbolic _____ 18UnilogCoordination0A19PipelineCoordinatorV0B8XPCErrorO

@@ -2,79 +2,40 @@
 
 > `/System/Library/VideoProcessors/NRFV4.bundle/NRFV4`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x27c54c` | `0x30de2c` | **`+0x918e0`** |
+| `__TEXT.__cstring` | `0x36baa` | `0x634a9` | **`+0x2c8ff`** |
+| `__TEXT.__oslogstring` | `0x21e64` | `0x47993` | **`+0x25b2f`** |
+| `__TEXT.__gcc_except_tab` | `0x1850` | `0x2024` | **`+0x7d4`** |
+| `__TEXT.__unwind_info` | `0x54d8` | `0x5bb8` | **`+0x6e0`** |
+| `__AUTH_CONST.__cfstring` | `0x15cc0` | `0x160c0` | **`+0x400`** |
+| `__AUTH_CONST.__objc_const` | `0x40208` | `0x402e8` | **`+0xe0`** |
+| `__DATA_CONST.__const` | `0x14d8` | `0x1558` | **`+0x80`** |
+| `__DATA_CONST.__objc_selrefs` | `0x77f0` | `0x7868` | **`+0x78`** |
+| `__TEXT.__const` | `0x103260` | `0x1032d8` | **`+0x78`** |
+| `__TEXT.__objc_methlist` | `0x14718` | `0x14770` | **`+0x58`** |
+| `__DATA_DIRTY.__common` | `0xf8` | `0x128` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0x9c0` | `0x9e0` | **`+0x20`** |
+| `__DATA.__common` | `0x44` | `0x58` | **`+0x14`** |
+| `__DATA.__objc_ivar` | `0x4420` | `0x4434` | **`+0x14`** |
+| `__DATA_CONST.__got` | `0xf90` | `0xf98` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -764.22.13.0.0
--  __TEXT.__text: 0x277760
--  __TEXT.__objc_methlist: 0x14718
--  __TEXT.__const: 0x103260
--  __TEXT.__cstring: 0x36baa
--  __TEXT.__oslogstring: 0x21e64
--  __TEXT.__gcc_except_tab: 0x1850
 +764.40.4.122.1
-+  __TEXT.__text: 0x308ce4
-+  __TEXT.__objc_methlist: 0x14770
-+  __TEXT.__const: 0x1032d8
-+  __TEXT.__cstring: 0x634a9
-+  __TEXT.__oslogstring: 0x47993
-+  __TEXT.__gcc_except_tab: 0x2024
-   __TEXT.__dlopen_cstrs: 0x10c
--  __TEXT.__unwind_info: 0xb318
-+  __TEXT.__unwind_info: 0xb978
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x14d8
-+  __DATA_CONST.__const: 0x1558
-   __DATA_CONST.__objc_classlist: 0xf28
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x110
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x77f0
-+  __DATA_CONST.__objc_selrefs: 0x7868
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0xbe8
-   __DATA_CONST.__objc_arraydata: 0xfe0
--  __DATA_CONST.__got: 0xf90
--  __AUTH_CONST.__const: 0x9c0
--  __AUTH_CONST.__cfstring: 0x15cc0
--  __AUTH_CONST.__objc_const: 0x40208
-+  __DATA_CONST.__got: 0xf98
-+  __AUTH_CONST.__const: 0x9e0
-+  __AUTH_CONST.__cfstring: 0x160c0
-+  __AUTH_CONST.__objc_const: 0x402e8
-   __AUTH_CONST.__objc_floatobj: 0x140
-   __AUTH_CONST.__objc_doubleobj: 0xa0
-   __AUTH_CONST.__objc_arrayobj: 0xd68
 
-   __AUTH_CONST.__objc_dictobj: 0x500
-   __AUTH_CONST.__auth_got: 0x880
-   __AUTH.__objc_data: 0x1220
--  __DATA.__objc_ivar: 0x4420
-+  __DATA.__objc_ivar: 0x4434
-   __DATA.__data: 0xcc8
--  __DATA.__common: 0x44
-+  __DATA.__common: 0x58
-   __DATA_DIRTY.__objc_data: 0x8570
-   __DATA_DIRTY.__bss: 0x178
--  __DATA_DIRTY.__common: 0xf8
-+  __DATA_DIRTY.__common: 0x128
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 15236
--  Symbols:   19070
+-  Symbols:   15748
 -  CStrings:  8999
 +  Functions: 16532
-+  Symbols:   19080
++  Symbols:   15740
 +  CStrings:  14986
- 
 Symbols:
 + -[CMISoftwareFlashRenderingProcessorV2 requiredMetalAllocatorMemorySize]
 + -[LCBBlock createMetalTexture:pixelFormat:width:height:arrayLength:]
@@ -114,32 +75,6 @@ Symbols:
 + _getIntParameter
 + _getValidatedLSCGainGrid
 + _kFigCaptureStreamMetadata_BayerBinningFactor
-+ _objc_msgSend$blemishType
-+ _objc_msgSend$correctionPatch
-+ _objc_msgSend$createCorrectionMapForLevel:filteredLCBsForLevel:correctionLUT:patchAtlas:previousLevel:config:error:
-+ _objc_msgSend$createMetalTexture:pixelFormat:width:height:arrayLength:
-+ _objc_msgSend$doRegistration
-+ _objc_msgSend$getLCBConfigForInputFrame:inputOriginWithinSensorInBayerPixels:inputDimensionsWithinSensorInBayerPixels:correctionEnabled:firstPixel:awb:
-+ _objc_msgSend$initWithFilteredLCBsBuf:correctionLUT:patchAtlas:
-+ _objc_msgSend$initWithKey:position:radius:defocusRadius:particleDistance:apertureRatio:focusLensPosition:oisShift:opticalCenter:detectionCount:blemishType:lastDetectionGravityVector:lastDetectionTimeStamp:shouldCorrect:correctionFeatures:correctionPatch:config:
-+ _objc_msgSend$largestOccupiedOffset
-+ _objc_msgSend$localizedFailureReason
-+ _objc_msgSend$maxCorrectionFeatureValue
-+ _objc_msgSend$minCorrectionFeatureValue
-+ _objc_msgSend$null
-+ _objc_msgSend$overlapDistanceScale
-+ _objc_msgSend$overlapModeForExtraction
-+ _objc_msgSend$patchAtlas
-+ _objc_msgSend$patchCorrectionEnabled
-+ _objc_msgSend$pyramidPositionForLevel:
-+ _objc_msgSend$registrationPolicy
-+ _objc_msgSend$runExtractorForEntries:neighbors:inputTexture:levelIndex:loresTexture:loresLevelIndex:config:lscMetadata:outPatchAtlas:error:
-+ _objc_msgSend$shareIntermediates
-+ _objc_msgSend$staticThreadgroupMemoryLength
-+ _objc_msgSend$temporalFilteringUpdateDatabase:detectionResultsForLevels:extractionSetForLevels:extractionResultsForLevels:patchAtlasesForLevels:config:didUpdateDatabase:error:
-+ _objc_msgSend$tileOverlapX
-+ _objc_msgSend$tileOverlapY
-+ _objc_msgSend$withDetectionCountIncrementedAndUpdatedFeatures:updatedRadius:updatedPatch:
 + _validateFocusPixelMapData
 - -[LCBCorrection createCorrectionMapForLevel:filteredLCBsForLevel:correctionLUT:previousLevel:config:error:]
 - -[LCBExtractor runExtractorForEntries:inputTexture:levelIndex:loresTexture:loresLevelIndex:config:lscMetadata:error:]
@@ -186,14 +121,6 @@ Symbols:
 - ___84-[H13FastRawScaleStage(Vision) runFaceDetectionOnPixelBuffer:withInputFrame:config:]_block_invoke_3
 - ___84-[H13FastRawScaleStage(Vision) runFaceDetectionOnPixelBuffer:withInputFrame:config:]_block_invoke_4
 - ___98-[DefringeStage defringePyramid:outputPyramid:chromaScratch:quadraBinningFactor:tuningParameters:]_block_invoke_2
-- _objc_msgSend$createCorrectionMapForLevel:filteredLCBsForLevel:correctionLUT:previousLevel:config:error:
-- _objc_msgSend$getLCBConfigForInputFrame:bounds:correctionEnabled:awb:
-- _objc_msgSend$initWithFilteredLCBsBuf:correctionLUT:
-- _objc_msgSend$initWithKey:position:radius:defocusRadius:particleDistance:apertureRatio:focusLensPosition:oisShift:opticalCenter:detectionCount:relativeToLens:lastDetectionGravityVector:lastDetectionTimeStamp:shouldCorrect:correctionFeatures:config:
-- _objc_msgSend$relativeToLens
-- _objc_msgSend$runExtractorForEntries:inputTexture:levelIndex:loresTexture:loresLevelIndex:config:lscMetadata:error:
-- _objc_msgSend$temporalFilteringUpdateDatabase:detectionResultsForLevels:extractionSetForLevels:extractionResultsForLevels:config:didUpdateDatabase:error:
-- _objc_msgSend$withDetectionCountIncrementedAndUpdatedFeatures:updatedRadius:
 - _objc_release_x11
 - _objc_release_x4
 CStrings:

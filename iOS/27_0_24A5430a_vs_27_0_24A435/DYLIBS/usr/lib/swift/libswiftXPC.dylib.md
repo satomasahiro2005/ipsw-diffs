@@ -2,14 +2,15 @@
 
 > `/usr/lib/swift/libswiftXPC.dylib`
 
-```diff
+### Section Size Changes
 
- 167.0.2.0.0
--  __TEXT.__text: 0x3ce64
-+  __TEXT.__text: 0x3ceac
-   __TEXT.__objc_methlist: 0x104
-   __TEXT.__const: 0x2818
-   __TEXT.__constg_swiftt: 0xab8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3ce64` | `0x3ceac` | **`+0x48`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s3XPC18XPCReceivedMessageV06encodeC0_8userInfo6isSyncAA13XPCDictionaryVx_SDys010CodingUserF3KeyVypGSbtKSERzlFZ : 5420 -> 5488
 ~ _$s3XPC16XPCCodableObjectV4fromACs7Decoder_p_tKcfC : 1032 -> 1036

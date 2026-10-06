@@ -2,76 +2,51 @@
 
 > `/usr/libexec/uarpassetmanagerd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2e098` | `0x2ef84` | **`+0xeec`** |
+| `__TEXT.__objc_methname` | `0x2f37` | `0x3094` | **`+0x15d`** |
+| `__TEXT.__cstring` | `0x2f99` | `0x30da` | **`+0x141`** |
+| `__TEXT.__objc_stubs` | `0x2840` | `0x2960` | **`+0x120`** |
+| `__DATA_CONST.__cfstring` | `0x2f00` | `0x2fc0` | **`+0xc0`** |
+| `__DATA_CONST.__const` | `0x2bb0` | `0x2c30` | **`+0x80`** |
+| `__DATA.__objc_selrefs` | `0xc18` | `0xc68` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x1494` | `0x14dc` | **`+0x48`** |
+| `__DATA.__objc_const` | `0x3090` | `0x30c0` | **`+0x30`** |
+| `__TEXT.__oslogstring` | `0x1989` | `0x19b8` | **`+0x2f`** |
+| `__TEXT.__auth_stubs` | `0x4d0` | `0x4e0` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x3e0` | `0x3f0` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x278` | `0x280` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x1a8` | `0x1b0` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x19c` | `0x1a0` | **`+0x4`** |
+| `__TEXT.__objc_methtype` | `0x894` | `0x897` | **`+0x3`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -1587.0.27.0.0
--  __TEXT.__text: 0x2e098
--  __TEXT.__auth_stubs: 0x4d0
--  __TEXT.__objc_stubs: 0x2840
--  __TEXT.__objc_methlist: 0x1494
--  __TEXT.__cstring: 0x2f99
--  __TEXT.__oslogstring: 0x1989
--  __TEXT.__objc_methname: 0x2f37
 +1587.2.2.0.0
-+  __TEXT.__text: 0x2ef84
-+  __TEXT.__auth_stubs: 0x4e0
-+  __TEXT.__objc_stubs: 0x2960
-+  __TEXT.__objc_methlist: 0x14dc
-+  __TEXT.__cstring: 0x30da
-+  __TEXT.__oslogstring: 0x19b8
-+  __TEXT.__objc_methname: 0x3094
-   __TEXT.__objc_classname: 0x341
--  __TEXT.__objc_methtype: 0x894
-+  __TEXT.__objc_methtype: 0x897
-   __TEXT.__gcc_except_tab: 0x11c
--  __TEXT.__unwind_info: 0x3e0
--  __DATA_CONST.__const: 0x2bb0
--  __DATA_CONST.__cfstring: 0x2f00
-+  __TEXT.__unwind_info: 0x3f0
-+  __DATA_CONST.__const: 0x2c30
-+  __DATA_CONST.__cfstring: 0x2fc0
-   __DATA_CONST.__objc_classlist: 0x98
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x60
 
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__objc_superrefs: 0x90
-   __DATA_CONST.__objc_intobj: 0x18
--  __DATA_CONST.__auth_got: 0x278
--  __DATA_CONST.__got: 0x1a8
--  __DATA.__objc_const: 0x3090
--  __DATA.__objc_selrefs: 0xc18
--  __DATA.__objc_ivar: 0x19c
-+  __DATA_CONST.__auth_got: 0x280
-+  __DATA_CONST.__got: 0x1b0
-+  __DATA.__objc_const: 0x30c0
-+  __DATA.__objc_selrefs: 0xc68
-+  __DATA.__objc_ivar: 0x1a0
-   __DATA.__objc_data: 0x5f0
-   __DATA.__data: 0x480
-   __DATA.__bss: 0x40
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 501
 -  Symbols:   1710
 -  CStrings:  1233
 +  Functions: 507
 +  Symbols:   1735
 +  CStrings:  1253
- 
 Symbols:
 + +[UARPAssetSubscriptioniCloud cacheSubdirectoryForContainerID:developmentEnvironment:]
 + +[UARPAssetSubscriptioniCloud developmentEnvironmentForContainerID:]

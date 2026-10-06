@@ -2,73 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/CDMFoundation.framework/CDMFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x274fcc` | `0x274ee0` | **`-0xec`** |
+| `__TEXT.__gcc_except_tab` | `0xb4ac` | `0xb52c` | **`+0x80`** |
+| `__AUTH_CONST.__cfstring` | `0x8160` | `0x81a0` | **`+0x40`** |
+| `__TEXT.__objc_methlist` | `0x8664` | `0x8684` | **`+0x20`** |
+| `__TEXT.__oslogstring` | `0x1dd56` | `0x1dd75` | **`+0x1f`** |
+| `__AUTH_CONST.__objc_intobj` | `0x660` | `0x678` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x7e80` | `0x7e98` | **`+0x18`** |
+| `__TEXT.__cstring` | `0x1ba45` | `0x1ba53` | **`+0xe`** |
+| `__AUTH_CONST.__objc_const` | `0x128c0` | `0x128c8` | **`+0x8`** |
+| `__DATA_CONST.__objc_arraydata` | `0x220` | `0x228` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x53f8` | `0x5400` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.31.10.0.0
--  __TEXT.__text: 0x274fcc
--  __TEXT.__objc_methlist: 0x8664
 +3600.31.14.0.0
-+  __TEXT.__text: 0x274ee0
-+  __TEXT.__objc_methlist: 0x8684
-   __TEXT.__const: 0xd370
-   __TEXT.__swift5_typeref: 0x423c
-   __TEXT.__swift5_fieldmd: 0x3d80
-   __TEXT.__constg_swiftt: 0x55d4
-   __TEXT.__swift5_protos: 0x98
--  __TEXT.__cstring: 0x1ba45
-+  __TEXT.__cstring: 0x1ba53
-   __TEXT.__swift5_types: 0x574
-   __TEXT.__swift5_proto: 0x9ac
-   __TEXT.__swift5_reflstr: 0x306a
--  __TEXT.__oslogstring: 0x1dd56
-+  __TEXT.__oslogstring: 0x1dd75
-   __TEXT.__swift5_assocty: 0x438
-   __TEXT.__swift5_capture: 0x196c
-   __TEXT.__swift5_builtin: 0xf0
 
-   __TEXT.__swift_as_entry: 0x23c
-   __TEXT.__swift_as_ret: 0x270
-   __TEXT.__swift_as_cont: 0x42c
--  __TEXT.__gcc_except_tab: 0xb4ac
-+  __TEXT.__gcc_except_tab: 0xb52c
-   __TEXT.__ustring: 0x17c
--  __TEXT.__unwind_info: 0x7e80
-+  __TEXT.__unwind_info: 0x7e98
-   __TEXT.__eh_frame: 0x7a10
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_protolist: 0x148
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x53f8
-+  __DATA_CONST.__objc_selrefs: 0x5400
-   __DATA_CONST.__objc_protorefs: 0x88
-   __DATA_CONST.__objc_superrefs: 0x408
--  __DATA_CONST.__objc_arraydata: 0x220
-+  __DATA_CONST.__objc_arraydata: 0x228
-   __DATA_CONST.__got: 0x26c8
-   __AUTH_CONST.__const: 0xc880
--  __AUTH_CONST.__cfstring: 0x8160
--  __AUTH_CONST.__objc_const: 0x128c0
-+  __AUTH_CONST.__cfstring: 0x81a0
-+  __AUTH_CONST.__objc_const: 0x128c8
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_arrayobj: 0xa8
--  __AUTH_CONST.__objc_intobj: 0x660
-+  __AUTH_CONST.__objc_intobj: 0x678
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__objc_floatobj: 0x20
-   __AUTH_CONST.__objc_doubleobj: 0x10
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 12839
--  Symbols:   11206
+-  Symbols:   8866
 -  CStrings:  4589
-+  Symbols:   11209
++  Symbols:   8869
 +  CStrings:  4592
- 
 Symbols:
 + +[CDMSiriVocabularyProtoSpanMatcher tokensWithinCharacterBudget:maxCharacters:]
 + -[CDMClient forceCleanup]
@@ -153,8 +113,6 @@ Symbols:
 + GCC_except_table719
 + GCC_except_table727
 + GCC_except_table765
-+ _objc_msgSend$forceCleanup
-+ _objc_msgSend$tokensWithinCharacterBudget:maxCharacters:
 - +[CDMBaseSpanMatchService trimTokenizerResponses:toMaxCharacters:]
 - GCC_except_table179
 - GCC_except_table184
@@ -235,8 +193,6 @@ Symbols:
 - GCC_except_table718
 - GCC_except_table726
 - GCC_except_table762
-- _objc_msgSend$setResponses:
-- _objc_msgSend$trimTokenizerResponses:toMaxCharacters:
 CStrings:
 + "%s [WARN]: SiriVocabulary span-match input %lu chars > limit %lu; truncating to %lu and skipping phonetic asrHypothesis before SEM (rdar://175985393)"
 + "SpeechInput supports turn taking but is not a recognized turn-taking candidate type, cannot post NLTRPCandidateMessage for CDM Setup failure callback"

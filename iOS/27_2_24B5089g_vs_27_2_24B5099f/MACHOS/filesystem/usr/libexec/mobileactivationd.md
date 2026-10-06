@@ -2,72 +2,51 @@
 
 > `/usr/libexec/mobileactivationd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x34c2bc` | `0x34c988` | **`+0x6cc`** |
+| `__TEXT.__cstring` | `0xeec2` | `0xf13f` | **`+0x27d`** |
+| `__DATA_CONST.__cfstring` | `0xd500` | `0xd620` | **`+0x120`** |
+| `__TEXT.__auth_stubs` | `0x1240` | `0x12f0` | **`+0xb0`** |
+| `__DATA_CONST.__auth_got` | `0x930` | `0x988` | **`+0x58`** |
+| `__TEXT.__gcc_except_tab` | `0x1b88` | `0x1bcc` | **`+0x44`** |
+| `__DATA_CONST.__const` | `0x1c4f8` | `0x1c528` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x1248` | `0x1258` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x4b0` | `0x4b8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__objc_arraydata`
 - `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
 -1145.40.5.0.0
--  __TEXT.__text: 0x34acd0
--  __TEXT.__auth_stubs: 0x1240
 +1145.40.5.502.1
-+  __TEXT.__text: 0x34b39c
-+  __TEXT.__auth_stubs: 0x12f0
-   __TEXT.__objc_stubs: 0x3240
-   __TEXT.__objc_methlist: 0x112c
-   __TEXT.__const: 0x60b63
--  __TEXT.__cstring: 0xeec2
-+  __TEXT.__cstring: 0xf13f
-   __TEXT.__objc_methname: 0x4044
-   __TEXT.__oslogstring: 0xf47
-   __TEXT.__objc_classname: 0x1a4
-   __TEXT.__objc_methtype: 0x1061
--  __TEXT.__gcc_except_tab: 0x1b88
-+  __TEXT.__gcc_except_tab: 0x1bcc
-   __TEXT.__dlopen_cstrs: 0x294
-   __TEXT.__ustring: 0x4
--  __TEXT.__unwind_info: 0x17a0
-+  __TEXT.__unwind_info: 0x17b8
-   __TEXT.__eh_frame: 0xa0
--  __DATA_CONST.__const: 0x1c4f8
--  __DATA_CONST.__cfstring: 0xd500
-+  __DATA_CONST.__const: 0x1c528
-+  __DATA_CONST.__cfstring: 0xd620
-   __DATA_CONST.__objc_classlist: 0x50
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x48
 
-   __DATA_CONST.__objc_intobj: 0x330
-   __DATA_CONST.__objc_arraydata: 0x608
-   __DATA_CONST.__objc_arrayobj: 0xa8
--  __DATA_CONST.__auth_got: 0x930
--  __DATA_CONST.__got: 0x4b0
-+  __DATA_CONST.__auth_got: 0x988
-+  __DATA_CONST.__got: 0x4b8
-   __DATA_CONST.__auth_ptr: 0x80
-   __DATA.__objc_const: 0x1900
-   __DATA.__objc_selrefs: 0x10c0
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/liblockdown.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1660
 -  Symbols:   4048
 -  CStrings:  3068
 +  Functions: 1664
 +  Symbols:   4063
 +  CStrings:  3081
- 
 Symbols:
 + _DRE_SYSTEM_DATA_MOUNT_PATH
 + _IOPSSetBatteryDateOfFirstUseWithPackDetails

@@ -2,39 +2,23 @@
 
 > `/System/Library/Frameworks/_USDKit_RealityKit.framework/_USDKit_RealityKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x11b9bc` | `0x11ba5c` | **`+0xa0`** |
+| `__TEXT.__eh_frame` | `0x6618` | `0x6658` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x3e40` | `0x3e50` | **`+0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x956c` | `0x9568` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
- 106.40.4.0.1
--  __TEXT.__text: 0x114d38
-+  __TEXT.__text: 0x114dd8
-   __TEXT.__objc_methlist: 0x5d4
-   __TEXT.__const: 0x6ac8
--  __TEXT.__gcc_except_tab: 0x956c
-+  __TEXT.__gcc_except_tab: 0x9568
-   __TEXT.__constg_swiftt: 0x1cd0
-   __TEXT.__swift5_typeref: 0x1c8b
-   __TEXT.__swift5_builtin: 0x104
-
-   __TEXT.__swift5_assocty: 0x1a0
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x4700
--  __TEXT.__eh_frame: 0x6780
-+  __TEXT.__unwind_info: 0x4710
-+  __TEXT.__eh_frame: 0x67b8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   - /usr/lib/usd/libusd_ms.dylib
 -  Functions: 3970
 -  Symbols:   10332
 +  Functions: 3972
 +  Symbols:   10333
-   CStrings:  1055
- 
 Symbols:
 + _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_Say18_USDKit_RealityKit17UsdStageComponentV15adjustParenting4root6tuplesy0eF06EntityC_SayAN_0D07SdfPathVtGtFZ0N6ParentL_VG_Tg505$s18_d1_e5Kit17ghi36V15adjustParenting4root6tuplesy0bC06n12C_SayAI_0A07op14VtGtFZSbAcdeFyx9_AMtFZ0K6Q13L_V_AOtXEfU0_Tf1nnc_n
 + _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVySS3key_12HdRealityKit0G13RKitMeshSwiftC19VertexAttributeInfoV5valuetG_Tg504$s12gh7Kit0A13jkl107C07processe11ForLowLevelE004geomE023materialBindingsPerFaceySo03OS_K8_mp_meshC_Says6UInt32VGtFSbSS3key_AC19mnO25V5valuet_SSAL_AnOttXEfU1_Tf1nnc_n

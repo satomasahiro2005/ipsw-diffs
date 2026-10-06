@@ -2,71 +2,31 @@
 
 > `/System/Library/PrivateFrameworks/PhotoAnalysis.framework/PhotoAnalysis`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2835a0` | `0x283a80` | **`+0x4e0`** |
+| `__DATA_CONST.__const` | `0x1e68` | `0x1ee8` | **`+0x80`** |
+| `__TEXT.__cstring` | `0x10605` | `0x105f3` | **`-0x12`** |
+| `__AUTH_CONST.__auth_got` | `0x2438` | `0x2440` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4b80` | `0x4b88` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x6154` | `0x615c` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x1870` | `0x186c` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -910.33.102.0.0
--  __TEXT.__text: 0x2835a0
--  __TEXT.__objc_methlist: 0x6154
 +912.0.111.0.0
-+  __TEXT.__text: 0x283a80
-+  __TEXT.__objc_methlist: 0x615c
-   __TEXT.__const: 0xdb40
-   __TEXT.__constg_swiftt: 0x4634
-   __TEXT.__swift5_typeref: 0x3f4b
 
-   __TEXT.__swift5_fieldmd: 0x4580
-   __TEXT.__swift5_builtin: 0x1f4
-   __TEXT.__swift5_assocty: 0x750
--  __TEXT.__cstring: 0x10605
-+  __TEXT.__cstring: 0x105f3
-   __TEXT.__swift5_capture: 0x3500
-   __TEXT.__oslogstring: 0x158ef
-   __TEXT.__swift5_proto: 0x7d0
-
-   __TEXT.__swift_as_cont: 0x1c20
-   __TEXT.__swift5_protos: 0x78
-   __TEXT.__swift5_mpenum: 0x70
--  __TEXT.__gcc_except_tab: 0x1870
-+  __TEXT.__gcc_except_tab: 0x186c
-   __TEXT.__ustring: 0x6
-   __TEXT.__unwind_info: 0x9908
-   __TEXT.__eh_frame: 0x18b74
-
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1e68
-+  __DATA_CONST.__const: 0x1ee8
-   __DATA_CONST.__objc_classlist: 0x6d0
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x1d0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4b80
-+  __DATA_CONST.__objc_selrefs: 0x4b88
-   __DATA_CONST.__objc_protorefs: 0xd0
-   __DATA_CONST.__objc_superrefs: 0x220
-   __DATA_CONST.__objc_arraydata: 0x100
-
-   __AUTH_CONST.__objc_intobj: 0x780
-   __AUTH_CONST.__objc_arrayobj: 0x138
-   __AUTH_CONST.__objc_floatobj: 0x20
--  __AUTH_CONST.__auth_got: 0x2438
-+  __AUTH_CONST.__auth_got: 0x2440
-   __AUTH.__objc_data: 0x1070
-   __AUTH.__data: 0x23d0
-   __DATA.__objc_ivar: 0x52c
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9727
--  Symbols:   8425
+-  Symbols:   6389
 -  CStrings:  3213
 +  Functions: 9733
-+  Symbols:   8433
++  Symbols:   6396
 +  CStrings:  3214
- 
 Symbols:
 + -[PHAWallpaperSuggestionUpgradeSession _withStateQueue:]
 + GCC_except_table1060
@@ -124,8 +84,6 @@ Symbols:
 + ___block_descriptor_64_e8_32s40s48bs56r_e44_v24?0"PRSPosterConfiguration"8"NSError"16ls48l8s32l8r56l8s40l8
 + ___block_descriptor_72_e8_32s40s48s56bs64r_e5_v8?0ls32l8r64l8s40l8s56l8s48l8
 + _dispatch_queue_set_specific
-+ _objc_msgSend$_withStateQueue:
-+ _objc_msgSend$fetchAssociatedHomeScreenPosterConfigurationUUID:completion:
 - GCC_except_table1054
 - GCC_except_table1106
 - GCC_except_table1120
@@ -175,7 +133,6 @@ Symbols:
 - _OBJC_IVAR_$_PHAWallpaperSuggestionUpgradeSession._queue
 - ___block_descriptor_56_e8_32s40s48bs_e39_B32?0"PRSPosterConfiguration"8Q16^B24ls48l8s32l8s40l8
 - ___block_descriptor_56_e8_32s40s48r_e5_v8?0ls32l8s40l8r48l8
-- _objc_msgSend$indexOfObjectPassingTest:
 CStrings:
 + "B16@?0@\"NSURL\"8"
 + "B8@?0"

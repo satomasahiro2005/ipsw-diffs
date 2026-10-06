@@ -2,29 +2,24 @@
 
 > `/usr/lib/libETLSAHDynamic.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2258` | `0x2514` | **`+0x2bc`** |
+| `__TEXT.__cstring` | `0x7fe` | `0x95d` | **`+0x15f`** |
+
+### Other Changes
+
 ```diff
 
 -1585.0.0.0.0
--  __TEXT.__text: 0x2250
 +1594.0.0.0.0
-+  __TEXT.__text: 0x250c
-   __TEXT.__const: 0x40
--  __TEXT.__cstring: 0x7fe
--  __TEXT.__unwind_info: 0x110
-+  __TEXT.__cstring: 0x95d
-+  __TEXT.__unwind_info: 0x108
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x80
-   __AUTH_CONST.__auth_got: 0x0
 
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   Functions: 41
 -  Symbols:   54
 -  CStrings:  67
 +  Symbols:   55
 +  CStrings:  75
- 
 Symbols:
 + __ETLDebugPrintBinaryVerbose
 Functions:
@@ -35,8 +30,8 @@ Functions:
 ~ _ETLSAHCommandCreateHelloResponseExt : 108 -> 176
 ~ _ETLSAHGetDebugRecordCount : 420 -> 476
 ~ _ETLSAHGetDebugRecordCount64Bit : 416 -> 472
-~ _ETLSAHGetRecordEx : 556 -> 652
-~ _ETLSAHGetRecordEx64Bit : 568 -> 664
+~ _ETLSAHGetRecordEx : 560 -> 656
+~ _ETLSAHGetRecordEx64Bit : 572 -> 668
 CStrings:
 + "Command buffer has invalid length %u, which is less than the size of the command header (%zu)\n"
 + "Couldn't allocate memory for memory read buffer\n"

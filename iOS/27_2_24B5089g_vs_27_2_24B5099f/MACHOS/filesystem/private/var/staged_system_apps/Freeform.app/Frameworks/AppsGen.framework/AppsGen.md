@@ -2,62 +2,43 @@
 
 > `/private/var/staged_system_apps/Freeform.app/Frameworks/AppsGen.framework/AppsGen`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__eh_frame` | `0xe8b8` | `0xe910` | **`+0x58`** |
+| `__TEXT.__text` | `0x1668f8` | `0x166934` | **`+0x3c`** |
+| `__TEXT.__unwind_info` | `0x68a0` | `0x68b0` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x568` | `0x560` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
 - `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -656.40.6.0.0
--  __TEXT.__text: 0x15740c
 +656.40.8.0.0
-+  __TEXT.__text: 0x157448
-   __TEXT.__auth_stubs: 0x24c0
-   __TEXT.__objc_stubs: 0x920
-   __TEXT.__objc_methlist: 0x35c
 
-   __TEXT.__swift_as_ret: 0x4d8
-   __TEXT.__swift_as_cont: 0xa60
-   __TEXT.__swift5_mpenum: 0xc0
--  __TEXT.__unwind_info: 0x7b88
--  __TEXT.__eh_frame: 0xe8c8
-+  __TEXT.__unwind_info: 0x7b98
-+  __TEXT.__eh_frame: 0xe920
-   __DATA_CONST.__const: 0x14938
-   __DATA_CONST.__cfstring: 0xa0
-   __DATA_CONST.__objc_classlist: 0x70
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x50
-   __DATA_CONST.__auth_got: 0x1268
--  __DATA_CONST.__got: 0x568
-+  __DATA_CONST.__got: 0x560
-   __DATA_CONST.__auth_ptr: 0x9b0
-   __DATA.__objc_const: 0x1640
-   __DATA.__objc_selrefs: 0x360
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8623
 -  Symbols:   25102
 +  Functions: 8624
 +  Symbols:   25101
-   CStrings:  982
- 
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/Freeform/install/TempContent/Objects/AppsGen.build/AppsGen.build/Objects-normal/arm64e/Provenance-f54197c86824a9e4a6eed9584ae8125d.o
 + _$s10Foundation4DateV2geoiySbAC_ACtFZ

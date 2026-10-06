@@ -2,118 +2,70 @@
 
 > `/usr/libexec/Moments.framework/Moments`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x78e48` | `0x796ec` | **`+0x8a4`** |
+| `__DATA_DIRTY.__objc_data` | `0x3c0` | `0xaa0` | **`+0x6e0`** |
+| `__AUTH.__objc_data` | `0x2080` | `0x1a68` | **`-0x618`** |
+| `__TEXT.__objc_methname` | `0x1059c` | `0x106bd` | **`+0x121`** |
+| `__AUTH_CONST.__objc_const` | `0xb828` | `0xb8f0` | **`+0xc8`** |
+| `__TEXT.__cstring` | `0xe5ee` | `0xe69e` | **`+0xb0`** |
+| `__AUTH_CONST.__cfstring` | `0x10c20` | `0x10cc0` | **`+0xa0`** |
+| `__TEXT.__objc_methlist` | `0x6d24` | `0x6db4` | **`+0x90`** |
+| `__TEXT.__objc_stubs` | `0x89a0` | `0x8a20` | **`+0x80`** |
+| `__TEXT.__constg_swiftt` | `0x3cc` | `0x410` | **`+0x44`** |
+| `__TEXT.__const` | `0x1008` | `0x1048` | **`+0x40`** |
+| `__AUTH.__data` | `0x2b0` | `0x2e0` | **`+0x30`** |
+| `__DATA_DIRTY.__data` | `0x30` | `0x60` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x34c0` | `0x34e8` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x19d0` | `0x19f8` | **`+0x28`** |
+| `__TEXT.__objc_classname` | `0xaad` | `0xacd` | **`+0x20`** |
+| `__TEXT.__objc_methtype` | `0x1b75` | `0x1b95` | **`+0x20`** |
+| `__TEXT.__oslogstring` | `0x5683` | `0x5664` | **`-0x1f`** |
+| `__TEXT.__swift5_fieldmd` | `0x5a8` | `0x5c4` | **`+0x1c`** |
+| `__TEXT.__swift5_reflstr` | `0x4a6` | `0x4c0` | **`+0x1a`** |
+| `__DATA.__data` | `0xef0` | `0xed8` | **`-0x18`** |
+| `__AUTH_CONST.__const` | `0x810` | `0x820` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x68` | `0x78` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x40` | `0x50` | **`+0x10`** |
+| `__TEXT.__auth_stubs` | `0x12a0` | `0x12b0` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0x2f1` | `0x2fd` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x960` | `0x968` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x320` | `0x328` | **`+0x8`** |
+| `__DATA_DIRTY.__bss` | `0x20` | `0x24` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0x4c` | `0x50` | **`+0x4`** |
+
+### Same-size Content Changes
+
 - `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_intobj`
 - `__AUTH_CONST.__objc_dictobj`
+- `__AUTH_CONST.__objc_intobj`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_catlist`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+
+### Other Changes
 
 ```diff
 
 -502.0.5.0.0
--  __TEXT.__text: 0x76944
--  __TEXT.__objc_methlist: 0x6d24
--  __TEXT.__cstring: 0xe5ee
--  __TEXT.__const: 0x1008
--  __TEXT.__oslogstring: 0x5683
 +502.0.8.0.0
-+  __TEXT.__text: 0x771b8
-+  __TEXT.__objc_methlist: 0x6db4
-+  __TEXT.__cstring: 0xe69e
-+  __TEXT.__const: 0x1048
-+  __TEXT.__oslogstring: 0x5664
-   __TEXT.__gcc_except_tab: 0x430
--  __TEXT.__swift5_typeref: 0x2f1
--  __TEXT.__constg_swiftt: 0x3cc
--  __TEXT.__swift5_reflstr: 0x4a6
--  __TEXT.__swift5_fieldmd: 0x5a8
-+  __TEXT.__swift5_typeref: 0x2fd
-+  __TEXT.__constg_swiftt: 0x410
-+  __TEXT.__swift5_reflstr: 0x4c0
-+  __TEXT.__swift5_fieldmd: 0x5c4
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_assocty: 0x90
-   __TEXT.__swift5_proto: 0x5c
--  __TEXT.__swift5_types: 0x4c
-+  __TEXT.__swift5_types: 0x50
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0x22b8
-+  __TEXT.__unwind_info: 0x2308
-   __TEXT.__eh_frame: 0xb10
--  __TEXT.__objc_stubs: 0x89a0
--  __TEXT.__auth_stubs: 0x12a0
--  __TEXT.__objc_classname: 0xaad
--  __TEXT.__objc_methname: 0x1059c
--  __TEXT.__objc_methtype: 0x1b75
-+  __TEXT.__objc_stubs: 0x8a20
-+  __TEXT.__auth_stubs: 0x12b0
-+  __TEXT.__objc_classname: 0xacd
-+  __TEXT.__objc_methname: 0x106bd
-+  __TEXT.__objc_methtype: 0x1b95
-   __DATA_CONST.__const: 0x3470
--  __DATA_CONST.__objc_classlist: 0x320
-+  __DATA_CONST.__objc_classlist: 0x328
-   __DATA_CONST.__objc_catlist: 0x38
--  __DATA_CONST.__objc_protolist: 0x68
-+  __DATA_CONST.__objc_protolist: 0x78
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x34c0
--  __DATA_CONST.__objc_protorefs: 0x40
-+  __DATA_CONST.__objc_selrefs: 0x34e8
-+  __DATA_CONST.__objc_protorefs: 0x50
-   __DATA_CONST.__objc_superrefs: 0x288
-   __DATA_CONST.__objc_arraydata: 0x470
-   __DATA_CONST.__got: 0x858
--  __AUTH_CONST.__const: 0x810
--  __AUTH_CONST.__cfstring: 0x10c20
--  __AUTH_CONST.__objc_const: 0xb828
-+  __AUTH_CONST.__const: 0x820
-+  __AUTH_CONST.__cfstring: 0x10cc0
-+  __AUTH_CONST.__objc_const: 0xb8f0
-   __AUTH_CONST.__objc_arrayobj: 0xd8
-   __AUTH_CONST.__objc_intobj: 0x570
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x960
--  __AUTH.__objc_data: 0x2080
--  __AUTH.__data: 0x2b0
-+  __AUTH_CONST.__auth_got: 0x968
-+  __AUTH.__objc_data: 0x1a68
-+  __AUTH.__data: 0x2e0
-   __DATA.__objc_ivar: 0x844
--  __DATA.__data: 0xef0
-+  __DATA.__data: 0xed8
-   __DATA.__common: 0x18
--  __DATA_DIRTY.__objc_data: 0x3c0
--  __DATA_DIRTY.__data: 0x30
--  __DATA_DIRTY.__bss: 0x20
-+  __DATA_DIRTY.__objc_data: 0xaa0
-+  __DATA_DIRTY.__data: 0x60
-+  __DATA_DIRTY.__bss: 0x24
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreLocation.framework/CoreLocation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3045
 -  Symbols:   8152
 -  CStrings:  5342
 +  Functions: 3071
 +  Symbols:   8213
 +  CStrings:  5356
- 
 Symbols:
 + +[MOFilePersistenceManager configSnapshotWithEventRetentionSeconds:]
 + -[MOFilePersistenceManager donateEventBundles:events:prediction:configSnapshot:error:]

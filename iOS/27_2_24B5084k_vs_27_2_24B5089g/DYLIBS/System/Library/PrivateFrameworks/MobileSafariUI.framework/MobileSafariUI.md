@@ -2,108 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/MobileSafariUI.framework/MobileSafariUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2eedf4` | `0x2f1504` | **`+0x2710`** |
+| `__AUTH_CONST.__objc_const` | `0x33470` | `0x33808` | **`+0x398`** |
+| `__DATA_DIRTY.__data` | `0x12e8` | `0x15d8` | **`+0x2f0`** |
+| `__TEXT.__constg_swiftt` | `0x1f38` | `0x20f0` | **`+0x1b8`** |
+| `__TEXT.__const` | `0x4e60` | `0x5010` | **`+0x1b0`** |
+| `__TEXT.__swift5_typeref` | `0x6499` | `0x6607` | **`+0x16e`** |
+| `__DATA.__bss` | `0x3ae0` | `0x39c0` | **`-0x120`** |
+| `__AUTH_CONST.__const` | `0x8930` | `0x8a40` | **`+0x110`** |
+| `__DATA_DIRTY.__bss` | `0xb90` | `0xca0` | **`+0x110`** |
+| `__TEXT.__objc_methlist` | `0x24db4` | `0x24e9c` | **`+0xe8`** |
+| `__TEXT.__gcc_except_tab` | `0x1f60c` | `0x1f6d0` | **`+0xc4`** |
+| `__TEXT.__swift5_fieldmd` | `0x1000` | `0x10c0` | **`+0xc0`** |
+| `__DATA_DIRTY.__objc_data` | `0x4640` | `0x46e0` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x102a8` | `0x10338` | **`+0x90`** |
+| `__DATA_CONST.__objc_selrefs` | `0x187b8` | `0x18830` | **`+0x78`** |
+| `__DATA.__data` | `0x9be8` | `0x9c28` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x10ae4` | `0x10b14` | **`+0x30`** |
+| `__TEXT.__swift5_reflstr` | `0x1100` | `0x1130` | **`+0x30`** |
+| `__AUTH.__data` | `0x1160` | `0x1180` | **`+0x20`** |
+| `__AUTH.__objc_data` | `0x3330` | `0x3350` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x2df0` | `0x2e10` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0xa20` | `0xa40` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x160` | `0x174` | **`+0x14`** |
+| `__DATA_CONST.__got` | `0x3810` | `0x3820` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x2528` | `0x2538` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x200` | `0x210` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `0xc` | `0x1c` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x20dc` | `0x20e4` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -625.2.4.1.0
--  __TEXT.__text: 0x2d85c0
--  __TEXT.__objc_methlist: 0x24db4
--  __TEXT.__const: 0x4e60
--  __TEXT.__gcc_except_tab: 0x1f60c
--  __TEXT.__cstring: 0x10ae4
 +625.2.5.10.1
-+  __TEXT.__text: 0x2dab74
-+  __TEXT.__objc_methlist: 0x24e9c
-+  __TEXT.__const: 0x5010
-+  __TEXT.__gcc_except_tab: 0x1f6d0
-+  __TEXT.__cstring: 0x10b14
-   __TEXT.__dlopen_cstrs: 0x7e6
-   __TEXT.__oslogstring: 0xb26f
-   __TEXT.__ustring: 0x11da
--  __TEXT.__swift5_typeref: 0x6499
--  __TEXT.__constg_swiftt: 0x1f38
--  __TEXT.__swift5_reflstr: 0x1100
--  __TEXT.__swift5_fieldmd: 0x1000
-+  __TEXT.__swift5_typeref: 0x6607
-+  __TEXT.__constg_swiftt: 0x20f0
-+  __TEXT.__swift5_reflstr: 0x1130
-+  __TEXT.__swift5_fieldmd: 0x10c0
-   __TEXT.__swift5_builtin: 0x1cc
-   __TEXT.__swift5_assocty: 0x560
--  __TEXT.__swift5_capture: 0x2528
--  __TEXT.__swift5_proto: 0x200
--  __TEXT.__swift5_types: 0x160
-+  __TEXT.__swift5_capture: 0x2538
-+  __TEXT.__swift5_proto: 0x210
-+  __TEXT.__swift5_types: 0x174
-   __TEXT.__swift_as_entry: 0x110
-   __TEXT.__swift_as_ret: 0x150
-   __TEXT.__swift_as_cont: 0x2ac
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__swift5_protos: 0xc
--  __TEXT.__unwind_info: 0x12430
-+  __TEXT.__swift5_protos: 0x1c
-+  __TEXT.__unwind_info: 0x124f0
-   __TEXT.__eh_frame: 0x3834
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x9938
--  __DATA_CONST.__objc_classlist: 0xa20
-+  __DATA_CONST.__objc_classlist: 0xa40
-   __DATA_CONST.__objc_catlist: 0xb0
-   __DATA_CONST.__objc_protolist: 0xbe8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x187b8
-+  __DATA_CONST.__objc_selrefs: 0x18830
-   __DATA_CONST.__objc_protorefs: 0x1f0
-   __DATA_CONST.__objc_superrefs: 0x690
-   __DATA_CONST.__objc_arraydata: 0x368
--  __DATA_CONST.__got: 0x3810
--  __AUTH_CONST.__const: 0x8930
-+  __DATA_CONST.__got: 0x3820
-+  __AUTH_CONST.__const: 0x8a40
-   __AUTH_CONST.__cfstring: 0xdd80
--  __AUTH_CONST.__objc_const: 0x33470
-+  __AUTH_CONST.__objc_const: 0x33808
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x498
-   __AUTH_CONST.__objc_dictobj: 0xc8
-   __AUTH_CONST.__objc_arrayobj: 0x2b8
-   __AUTH_CONST.__objc_doubleobj: 0x80
--  __AUTH_CONST.__auth_got: 0x2df0
--  __AUTH.__objc_data: 0x3330
--  __AUTH.__data: 0x1160
--  __DATA.__objc_ivar: 0x20dc
--  __DATA.__data: 0x9be8
-+  __AUTH_CONST.__auth_got: 0x2e10
-+  __AUTH.__objc_data: 0x3350
-+  __AUTH.__data: 0x1180
-+  __DATA.__objc_ivar: 0x20e4
-+  __DATA.__data: 0x9c28
-   __DATA.__objc_stublist: 0x10
-   __DATA.__common: 0xa1
--  __DATA_DIRTY.__objc_data: 0x4640
--  __DATA_DIRTY.__data: 0x12e8
--  __DATA_DIRTY.__bss: 0xb90
-+  __DATA_DIRTY.__objc_data: 0x46e0
-+  __DATA_DIRTY.__data: 0x15d8
-+  __DATA_DIRTY.__bss: 0xca0
-   __DATA_DIRTY.__common: 0x48
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/BrowserKit.framework/BrowserKit
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 16283
--  Symbols:   33072
+-  Symbols:   23044
 -  CStrings:  3286
 +  Functions: 16332
-+  Symbols:   33132
++  Symbols:   23092
 +  CStrings:  3287
- 
 Symbols:
 + -[BrowserController foregroundReturnAnalyticsTracker]
 + -[TabCollectionViewManager evaluatePostponedSnapshotInvalidations]
@@ -172,18 +116,6 @@ Symbols:
 + ___109-[TabController _closeTabs:animated:allowAddingToRecentlyClosedTabs:keepWebViewAlive:showAutoCloseTabsAlert:]_block_invoke_3
 + ___29-[TabController _detachTabs:]_block_invoke
 + ___39-[BrowserController didEnterBackground]_block_invoke_3
-+ _objc_msgSend$browserControllerDidBecomeActiveWithActiveTabUUID:
-+ _objc_msgSend$browserControllerDidEnterBackground
-+ _objc_msgSend$didCloseReplacedTabs:
-+ _objc_msgSend$didCommitInteractivelyInsertedTab
-+ _objc_msgSend$didInsertReplacedTab:
-+ _objc_msgSend$didResolveForegroundReturn:awayDuration:
-+ _objc_msgSend$didResolveSearchOrTypedURLNavigationIntent
-+ _objc_msgSend$donateApplePayPurchaseCompleted
-+ _objc_msgSend$evaluatePostponedSnapshotInvalidations
-+ _objc_msgSend$foregroundReturnAnalyticsTracker
-+ _objc_msgSend$securityRestrictionMode
-+ _objc_msgSend$setSecurityRestrictionMode:
 + _symbolic $s14MobileSafariUI19CurrentDateProviderP
 + _symbolic $s14MobileSafariUI28ForegroundReturnEventLoggingP
 + _symbolic $s14MobileSafariUI28ForegroundReturnRateLimitingP

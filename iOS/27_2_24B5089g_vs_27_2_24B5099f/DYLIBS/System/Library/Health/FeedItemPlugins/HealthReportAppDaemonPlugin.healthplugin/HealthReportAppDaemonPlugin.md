@@ -2,94 +2,53 @@
 
 > `/System/Library/Health/FeedItemPlugins/HealthReportAppDaemonPlugin.healthplugin/HealthReportAppDaemonPlugin`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x40ac0` | `0x47b4c` | **`+0x708c`** |
+| `__AUTH_CONST.__auth_got` | `0x1cb0` | `0x1358` | **`-0x958`** |
+| `__TEXT.__eh_frame` | `0x1618` | `0x1f38` | **`+0x920`** |
+| `__TEXT.__cstring` | `0xc04` | `0x464` | **`-0x7a0`** |
+| `__DATA.__data` | `0xef0` | `0x9a8` | **`-0x548`** |
+| `__TEXT.__oslogstring` | `0xd61` | `0x11d1` | **`+0x470`** |
+| `__TEXT.__unwind_info` | `0xa18` | `0xd60` | **`+0x348`** |
+| `__TEXT.__const` | `0x119c` | `0x131c` | **`+0x180`** |
+| `__DATA.__bss` | `0x1780` | `0x1630` | **`-0x150`** |
+| `__TEXT.__swift5_typeref` | `0x565` | `0x6b5` | **`+0x150`** |
+| `__AUTH_CONST.__const` | `0x738` | `0x7e8` | **`+0xb0`** |
+| `__AUTH.__data` | `0xa30` | `0xad0` | **`+0xa0`** |
+| `__TEXT.__swift_as_cont` | `0xfc` | `0x180` | **`+0x84`** |
+| `__DATA_CONST.__objc_selrefs` | `0x30` | `0xa0` | **`+0x70`** |
+| `__TEXT.__swift5_capture` | `0xec` | `0x158` | **`+0x6c`** |
+| `__TEXT.__constg_swiftt` | `0x620` | `0x684` | **`+0x64`** |
+| `__AUTH.__objc_data` | `0x138` | `0x188` | **`+0x50`** |
+| `__AUTH_CONST.__objc_const` | `0x8a8` | `0x8f8` | **`+0x50`** |
+| `__TEXT.__swift_as_ret` | `0x8c` | `0xd4` | **`+0x48`** |
+| `__TEXT.__swift_as_entry` | `0x6c` | `0xa8` | **`+0x3c`** |
+| `__TEXT.__swift5_reflstr` | `0x40b` | `0x43b` | **`+0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0x50c` | `0x530` | **`+0x24`** |
+| `__TEXT.__swift5_assocty` | `0x80` | `0x98` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0xc0` | `0xb4` | **`-0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x48` | `0x50` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -7027.1.45.2.4
--  __TEXT.__text: 0x3e2f8
--  __TEXT.__const: 0x119c
--  __TEXT.__constg_swiftt: 0x620
--  __TEXT.__swift5_typeref: 0x565
--  __TEXT.__swift5_reflstr: 0x40b
--  __TEXT.__swift5_fieldmd: 0x50c
--  __TEXT.__oslogstring: 0xd61
--  __TEXT.__swift5_capture: 0xec
--  __TEXT.__cstring: 0xc04
 +7027.1.54.2.3
-+  __TEXT.__text: 0x44790
-+  __TEXT.__const: 0x131c
-+  __TEXT.__constg_swiftt: 0x684
-+  __TEXT.__swift5_typeref: 0x6b5
-+  __TEXT.__swift5_reflstr: 0x43b
-+  __TEXT.__swift5_fieldmd: 0x530
-+  __TEXT.__swift5_capture: 0x158
-+  __TEXT.__oslogstring: 0x11d1
-   __TEXT.__swift5_types: 0x70
--  __TEXT.__swift_as_entry: 0x6c
--  __TEXT.__swift_as_ret: 0x8c
--  __TEXT.__swift_as_cont: 0xfc
--  __TEXT.__swift5_proto: 0xc0
-+  __TEXT.__swift_as_entry: 0xa8
-+  __TEXT.__swift_as_ret: 0xd4
-+  __TEXT.__swift_as_cont: 0x180
-+  __TEXT.__cstring: 0x464
-+  __TEXT.__swift5_proto: 0xb4
-   __TEXT.__swift5_types2: 0x4
--  __TEXT.__swift5_assocty: 0x80
-+  __TEXT.__swift5_assocty: 0x98
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__unwind_info: 0xd50
--  __TEXT.__eh_frame: 0x1618
-+  __TEXT.__unwind_info: 0x1048
-+  __TEXT.__eh_frame: 0x1f40
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xb8
--  __DATA_CONST.__objc_classlist: 0x48
-+  __DATA_CONST.__objc_classlist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x30
-+  __DATA_CONST.__objc_selrefs: 0xa0
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x738
--  __AUTH_CONST.__objc_const: 0x8a8
--  __AUTH_CONST.__auth_got: 0x1cb0
--  __AUTH.__objc_data: 0x138
--  __AUTH.__data: 0xa30
--  __DATA.__data: 0xef0
-+  __AUTH_CONST.__const: 0x7e8
-+  __AUTH_CONST.__objc_const: 0x8f8
-+  __AUTH_CONST.__auth_got: 0x1358
-+  __AUTH.__objc_data: 0x188
-+  __AUTH.__data: 0xad0
-+  __DATA.__data: 0x9a8
-   __DATA.__common: 0x50
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/PrivateFrameworks/HealthReportPlatform.framework/HealthReportPlatform
-   - /System/Library/PrivateFrameworks/HealthReportUI.framework/HealthReportUI
-   - /System/Library/PrivateFrameworks/HealthTopics.framework/HealthTopics
 -  - /System/Library/PrivateFrameworks/HealthTopicsCore.framework/HealthTopicsCore
-   - /System/Library/PrivateFrameworks/HealthUI.framework/HealthUI
-   - /System/Library/PrivateFrameworks/HealthUtilities.framework/HealthUtilities
-+  - /System/Library/PrivateFrameworks/Sleep.framework/Sleep
-   - /System/Library/PrivateFrameworks/SurveyKit.framework/SurveyKit
-   - /System/Library/PrivateFrameworks/SurveyKitUI.framework/SurveyKitUI
-   - /usr/lib/libSystem.B.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/PrivateFrameworks/Sleep.framework/Sleep
+
 -  Functions: 778
 -  Symbols:   170
 -  CStrings:  116
 +  Functions: 919
 +  Symbols:   192
 +  CStrings:  106
- 
 Symbols:
 + _HKCategoryTypeIdentifierAppleStandHour
 + _HKIsFitnessTrackingEnabled

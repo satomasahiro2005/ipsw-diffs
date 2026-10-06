@@ -2,20 +2,22 @@
 
 > `/System/Library/AccessibilityBundles/SpeakThis.axuiservice/SpeakThis`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x378` | `0x380` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__swift5_typeref`
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_arrayobj: 0x30
-   __DATA_CONST.__objc_dictobj: 0x28
-   __DATA_CONST.__auth_got: 0x698
--  __DATA_CONST.__got: 0x378
-+  __DATA_CONST.__got: 0x380
-   __DATA_CONST.__auth_ptr: 0x88
-   __DATA.__objc_const: 0x21d0
-   __DATA.__objc_selrefs: 0x17d0
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__cstring : content changed
-
+-3232.3.0.0.0
++3234.5.0.0.0
 ```

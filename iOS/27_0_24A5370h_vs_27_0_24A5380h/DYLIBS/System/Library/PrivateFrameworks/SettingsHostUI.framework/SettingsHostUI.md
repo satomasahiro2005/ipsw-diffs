@@ -2,82 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/SettingsHostUI.framework/SettingsHostUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__swift5_typeref` | `0xcbb` | `0xdd7` | **`+0x11c`** |
+| `__TEXT.__oslogstring` | `0x842` | `0x7b2` | **`-0x90`** |
+| `__TEXT.__const` | `0x988` | `0x928` | **`-0x60`** |
+| `__TEXT.__text` | `0x17418` | `0x17470` | **`+0x58`** |
+| `__AUTH_CONST.__auth_got` | `0xa78` | `0xa28` | **`-0x50`** |
+| `__AUTH_CONST.__const` | `0x6a0` | `0x6f0` | **`+0x50`** |
+| `__DATA_DIRTY.__data` | `0x7c0` | `0x770` | **`-0x50`** |
+| `__DATA.__data` | `0x368` | `0x3a8` | **`+0x40`** |
+| `__TEXT.__swift5_capture` | `0x37c` | `0x3ac` | **`+0x30`** |
+| `__DATA.__bss` | `0x50` | `0x40` | **`-0x10`** |
+| `__TEXT.__swift5_reflstr` | `0xd0` | `0xc1` | **`-0xf`** |
+| `__TEXT.__swift5_fieldmd` | `0x140` | `0x134` | **`-0xc`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x17418
-+  __TEXT.__text: 0x17470
-   __TEXT.__objc_methlist: 0x3c8
--  __TEXT.__const: 0x988
--  __TEXT.__swift5_typeref: 0xcbb
-+  __TEXT.__const: 0x928
-+  __TEXT.__swift5_typeref: 0xdd7
-   __TEXT.__constg_swiftt: 0x788
--  __TEXT.__swift5_reflstr: 0xd0
-+  __TEXT.__swift5_reflstr: 0xc1
-   __TEXT.__swift5_assocty: 0x90
--  __TEXT.__swift5_fieldmd: 0x140
-+  __TEXT.__swift5_fieldmd: 0x134
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_proto: 0x20
-   __TEXT.__swift5_types: 0x30
--  __TEXT.__swift5_capture: 0x37c
-+  __TEXT.__swift5_capture: 0x3ac
-   __TEXT.__cstring: 0x68f
--  __TEXT.__oslogstring: 0x842
-+  __TEXT.__oslogstring: 0x7b2
-   __TEXT.__unwind_info: 0x520
-   __TEXT.__eh_frame: 0x218
-   __TEXT.__objc_stubs: 0x0
+-27.0.20.100.0
++2027.0.2.0.0
 
-   __DATA_CONST.__objc_selrefs: 0x300
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x6a0
-+  __AUTH_CONST.__const: 0x6f0
-   __AUTH_CONST.__objc_const: 0x19e8
--  __AUTH_CONST.__auth_got: 0xa78
-+  __AUTH_CONST.__auth_got: 0xa28
-   __AUTH.__objc_data: 0x48
-   __AUTH.__data: 0xa0
--  __DATA.__data: 0x368
--  __DATA.__bss: 0x50
-+  __DATA.__data: 0x3a8
-+  __DATA.__bss: 0x40
-   __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0x68
--  __DATA_DIRTY.__data: 0x7c0
-+  __DATA_DIRTY.__data: 0x770
-   __DATA_DIRTY.__bss: 0x430
-   __DATA_DIRTY.__common: 0x18
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 426
--  Symbols:   609
+-  Symbols:   419
 -  CStrings:  57
 +  Functions: 425
-+  Symbols:   610
++  Symbols:   417
 +  CStrings:  56
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
 Symbols:
 + _get_witness_table 12SettingsHost0A22AutomationIdentifiableRzSHRzl7SwiftUI15ModifiedContentVyAEyAEyAC4ViewPACE20accessibilityElement8childrenQrAC26AccessibilityChildBehaviorV_tFQOyAEyAEyAgCE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAC06_UnaryI7AdaptorVyAC012_ConditionalH0VyAQyAQy0abF00A10ListToggleVAQyAgCE11buttonStyleyQrqd__AC015PrimitiveButtonY0Rd__lFQOyAC6ButtonVyAR0aV5LabelVG_AC016BorderlessButtonY0VQo_AgCEAUyQrqd__AcVRd__lFQOyA__AC020NavigationLinkButtonY0Vys5NeverOGQo_GGAQyAC14NavigationLinkVyAZA6_GAQyAgCEAUyQrqd__AcVRd__lFQOyAXyAC03AnyI0VG_A1_Qo_AgCEAUyQrqd__AcVRd__lFQOyA16__A7_Qo_GGGAQyA12_yA15_A6_GA15_GGG_xQo_AC25_AppearanceActionModifierVGAC21_TraitWritingModifierVyAC26IsSelectionEnabledTraitKeyVGG_Qo_AC0M18AttachmentModifierVGAC32_EnvironmentKeyTransformModifierVySbGGAC30_EnvironmentKeyWritingModifierVyAC10VisibilityOGGAcFHPA43_AcFHPA39_AcFHPqd__AcFHD2_A36_HO_A38_AC0I8ModifierHPyHCHC_A42_ACA50_HPyHCHC_A48_ACA50_HPyHCHC
 + _symbolic _____yAAyAAy_____yAAyAAy_____y_____y_____yACyACy_____ACy_____y_____y_____G______Qo______yAG______y_____GQo_GGACy_____yAfKGACy_____yAEy_____G_AHQo______yAS_ALQo_GGGACyAPyArKGARGGG_xQo______G_____y_____GG_Qo______G_____ySbGG_____y_____GG 7SwiftUI15ModifiedContentV AA4ViewPAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQO AeAE3tag_15includeOptionalQrqd___SbtSHRd__lFQO AA06_UnaryE7AdaptorV AA012_ConditionalD0V 012SettingsHostB00R10ListToggleV AeAE11buttonStyleyQrqd__AA015PrimitiveButtonW0Rd__lFQO AA0Y0V AP0rT5LabelV AA010BorderlessyW0V AeAEASyQrqd__AaTRd__lFQO AA014NavigationLinkyW0V s5NeverO AA14NavigationLinkV AeAEASyQrqd__AaTRd__lFQO AA03AnyE0V AeAEASyQrqd__AaTRd__lFQO AA25_AppearanceActionModifierV AA21_TraitWritingModifierV AA26IsSelectionEnabledTraitKeyV AA0I18AttachmentModifierV AA32_EnvironmentKeyTransformModifierV AA30_EnvironmentKeyWritingModifierV AA10VisibilityO
@@ -101,5 +55,4 @@ Symbols:
 - _symbolic _____y_____y__________y_____y_____G______y_____GQo_GABy_____yAeHG_____yADy_____G_AIQo_G_G 7SwiftUI19_ConditionalContentV7StorageO AC 012SettingsHostB00F10ListToggleV AA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonL0Rd__lFQO AA0N0V AF0fH5LabelV AA014NavigationLinknL0V s5NeverO AA0pQ0V AjAEAKyQrqd__AaLRd__lFQO AA03AnyJ0V
 CStrings:
 - "Accessing Environment<%s>'s value outside of being installed on a View. This will always read the default value and will not update."
-
 ```

@@ -2,28 +2,20 @@
 
 > `/usr/lib/libindus.dylib`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x1502b0
-+  __TEXT.__text: 0x150314
-   __TEXT.__const: 0x5520
-   __TEXT.__gcc_except_tab: 0x492c
-   __TEXT.__cstring: 0x294e4
-   __TEXT.__oslogstring: 0xb
--  __TEXT.__unwind_info: 0x1f08
-+  __TEXT.__unwind_info: 0x1f00
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x3d8
-   __DATA_CONST.__weak_got: 0x8
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__cstring : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1502b0` | `0x150314` | **`+0x64`** |
+| `__TEXT.__unwind_info` | `0x1f08` | `0x1f00` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
+```diff
 Functions:
 ~ __Z18GN_AGPS_Set_Eph_ElP14GN_AGPS_Eph_El : 564 -> 556
 ~ __Z16Debug_Log_NonVolbP8s_NV_Ram : 7576 -> 7580
@@ -57,5 +49,4 @@ Functions:
 CStrings:
 + "Jun 23 2026"
 - "Jun 12 2026"
-
 ```

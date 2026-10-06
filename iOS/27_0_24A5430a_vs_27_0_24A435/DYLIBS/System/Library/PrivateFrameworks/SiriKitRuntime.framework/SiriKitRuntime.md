@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SiriKitRuntime.framework/SiriKitRuntime`
 
-```diff
+### Section Size Changes
 
- 3600.28.13.0.0
--  __TEXT.__text: 0x474040
-+  __TEXT.__text: 0x4740a4
-   __TEXT.__objc_methlist: 0x16c4
-   __TEXT.__const: 0x15e54
-   __TEXT.__cstring: 0xe584
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x474040` | `0x4740a4` | **`+0x64`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$ss20_ArrayBufferProtocolPsE15replaceSubrange_4with10elementsOfySnySiG_Siqd__ntSlRd__7ElementQyd__AGRtzlFs01_aB0Vy14SiriKitRuntime8FlowTaskCG_s010CollectionH3OneVyANGTg5Tf4nngn_n : 364 -> 376
 ~ _$sSTsE7flatMapySay7ElementQyd__Gqd__ABQzKXEKSTRd__lFShy11SiriKitFlow11IntentTopicVG_Say0dE7Runtime06RemoteF13PluginPackageCGTg5 : 1220 -> 1216

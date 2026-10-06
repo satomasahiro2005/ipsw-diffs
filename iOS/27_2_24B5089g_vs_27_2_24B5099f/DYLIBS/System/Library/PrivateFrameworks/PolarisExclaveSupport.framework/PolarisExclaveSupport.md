@@ -2,29 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/PolarisExclaveSupport.framework/PolarisExclaveSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__data` | `0xd98` | `—` | **`-0xd98`** |
+| `__DATA_DIRTY.__data` | `0x2cd0` | `0x3a68` | **`+0xd98`** |
+| `__AUTH.__objc_data` | `0x98` | `—` | **`-0x98`** |
+| `__DATA_DIRTY.__objc_data` | `0x3c0` | `0x458` | **`+0x98`** |
+| `__TEXT.__text` | `0xbd608` | `0xbd610` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
-
- 256.0.5.0.0
--  __TEXT.__text: 0xb9458
-+  __TEXT.__text: 0xb9460
-   __TEXT.__const: 0x6060
-   __TEXT.__constg_swiftt: 0x2584
-   __TEXT.__swift5_typeref: 0x240a
-
-   __AUTH_CONST.__const: 0x2f78
-   __AUTH_CONST.__objc_const: 0x3700
-   __AUTH_CONST.__auth_got: 0x1070
--  __AUTH.__objc_data: 0x98
--  __AUTH.__data: 0xd98
-   __DATA.__data: 0xec0
-   __DATA.__common: 0x18
--  __DATA_DIRTY.__objc_data: 0x3c0
--  __DATA_DIRTY.__data: 0x2cd0
-+  __DATA_DIRTY.__objc_data: 0x458
-+  __DATA_DIRTY.__data: 0x3a68
-   __DATA_DIRTY.__common: 0x1c0
-   __DATA_DIRTY.__bss: 0x80
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 Symbols:
 + _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVy14PolarisRuntime3KeyOys6UInt32VGG_Tg504$s21f180ExclaveSupport17GraphDeploymentEKC07computeE4Hash33_C085B2DDFEFCF374264101B0DC824D5ELL6graphs7writers7readers8clientIdSays6UInt64VGShy0A7Runtime0D0VG_ShyAM6WriterVGShyAM6ReaderVGs6i9VtFZSbAM3H15OyAXG_A_tXEfU2_Tf1nnc_nTm
 + _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFySryADGzKXEfU_s15ContiguousArrayVy14PolarisRuntime5GraphVG_Tg504$s21f16ExclaveSupport17H182DeploymentEKC07computeE4Hash33_C085B2DDFEFCF374264101B0DC824D5ELL6graphs7writers7readers8clientIdSays6UInt64VGShy0A7Runtime0D0VG_ShyAM6WriterVGShyAM6ReaderVGs6UInt32VtFZSbAO_AOtXEfU_Tf1nnc_n
@@ -37,6 +27,6 @@ Symbols:
 - _$sSr15_stableSortImpl2byySbx_xtKXE_tKF14PolarisRuntime6WriterV_Tg504$s21e156ExclaveSupport17GraphDeploymentEKC07computeE4Hash33_C085B2DDFEFCF374264101B0DC824D5ELL6graphs7writers7readers8clientIdSays6UInt64VGShy0A7Runtime0D0VG_ShyAM6G42VGShyAM6ReaderVGs6UInt32VtFZSbAR_ARtXEfU3_Tf1cn_n
 - _$ss13_UnsafeBitsetV027_withTemporaryUninitializedB09wordCount4bodyxSi_xABq_YKXEtq_YKs5ErrorR_r0_lFZxSryAB4WordVGq_YKXEfU_s10_NativeSetVy14PolarisRuntime5GraphVG_s5NeverOTg506$ss10_kl33V6filteryAByxGSbxqd__YKXEqd__YKs5i12Rd__lFADs13_ab14Vqd__YKXEfU_14m8Runtime5o4V_s5P4OTG5AOxSbq_Ri_zRi0_zRi__Ri0__r0_lyAnQIsgndzr_Tf1nc_nTm
 Functions:
-~ _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFs15ContiguousArrayVy14PolarisRuntime3KeyOys6UInt32VGG_Tg504$s21f180ExclaveSupport17GraphDeploymentEKC07computeE4Hash33_C085B2DDFEFCF374264101B0DC824D5ELL6graphs7writers7readers8clientIdSays6UInt64VGShy0A7Runtime0D0VG_ShyAM6WriterVGShyAM6ReaderVGs6i9VtFZSbAM3H15OyAXG_A_tXEfU0_Tf1cn_nTm : 156 -> 160
-~ _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFs15ContiguousArrayVy14PolarisRuntime6ReaderVG_Tg504$s21f170ExclaveSupport17GraphDeploymentEKC07computeE4Hash33_C085B2DDFEFCF374264101B0DC824D5ELL6graphs7writers7readers8clientIdSays6UInt64VGShy0A7Runtime0D0VG_ShyAM6WriterVGShyAM6H28VGs6UInt32VtFZSbAU_AUtXEfU4_Tf1cn_nTm : 176 -> 180
+~ _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFs15ContiguousArrayVy14PolarisRuntime3KeyOys6UInt32VGG_Tg504$s21f180ExclaveSupport17GraphDeploymentEKC07computeE4Hash33_C085B2DDFEFCF374264101B0DC824D5ELL6graphs7writers7readers8clientIdSays6UInt64VGShy0A7Runtime0D0VG_ShyAM6WriterVGShyAM6ReaderVGs6i9VtFZSbAM3H15OyAXG_A_tXEfU0_Tf1cn_nTm : 176 -> 180
+~ _$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFs15ContiguousArrayVy14PolarisRuntime6ReaderVG_Tg504$s21f170ExclaveSupport17GraphDeploymentEKC07computeE4Hash33_C085B2DDFEFCF374264101B0DC824D5ELL6graphs7writers7readers8clientIdSays6UInt64VGShy0A7Runtime0D0VG_ShyAM6WriterVGShyAM6H28VGs6UInt32VtFZSbAU_AUtXEfU4_Tf1cn_nTm : 196 -> 200
 ```

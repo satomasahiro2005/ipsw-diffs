@@ -2,104 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/PowerlogLiteOperators.framework/PowerlogLiteOperators`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4dcf2c` | `0x4f65e8` | **`+0x196bc`** |
+| `__AUTH_CONST.__cfstring` | `0x75ba0` | `0x781a0` | **`+0x2600`** |
+| `__TEXT.__cstring` | `0x5efd9` | `0x60733` | **`+0x175a`** |
+| `__AUTH_CONST.__objc_const` | `0x373c8` | `0x38a50` | **`+0x1688`** |
+| `__TEXT.__objc_methlist` | `0x2e594` | `0x2f71c` | **`+0x1188`** |
+| `__TEXT.__oslogstring` | `0x15a25` | `0x167b9` | **`+0xd94`** |
+| `__DATA_CONST.__objc_arraydata` | `0x16680` | `0x16d00` | **`+0x680`** |
+| `__DATA_CONST.__objc_selrefs` | `0x14818` | `0x14da8` | **`+0x590`** |
+| `__DATA_CONST.__const` | `0x9478` | `0x9730` | **`+0x2b8`** |
+| `__AUTH.__objc_data` | `0x29e0` | `0x2c10` | **`+0x230`** |
+| `__TEXT.__unwind_info` | `0x8248` | `0x8478` | **`+0x230`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x2fa0` | `0x30d8` | **`+0x138`** |
+| `__DATA.__objc_ivar` | `0x1ed0` | `0x1f94` | **`+0xc4`** |
+| `__DATA_DIRTY.__objc_data` | `0x3e68` | `0x3f08` | **`+0xa0`** |
+| `__DATA_DIRTY.__bss` | `0x46e8` | `0x4778` | **`+0x90`** |
+| `__DATA_DIRTY.__objc_ivar` | `0x1310` | `0x1388` | **`+0x78`** |
+| `__DATA_CONST.__got` | `0x1b30` | `0x1b78` | **`+0x48`** |
+| `__DATA_CONST.__objc_classlist` | `0xa28` | `0xa70` | **`+0x48`** |
+| `__DATA_CONST.__objc_superrefs` | `0xb00` | `0xb48` | **`+0x48`** |
+| `__AUTH_CONST.__objc_dictobj` | `0x50a0` | `0x50c8` | **`+0x28`** |
+| `__AUTH_CONST.__objc_intobj` | `0x6e58` | `0x6e70` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x1948` | `0x1958` | **`+0x10`** |
+| `__TEXT.__const` | `0x2cc0` | `0x2cb0` | **`-0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x2d5c` | `0x2d68` | **`+0xc`** |
+
+### Other Changes
+
 ```diff
 
- 3486.2.4.0.0
--  __TEXT.__text: 0x4dcf2c
--  __TEXT.__objc_methlist: 0x2e594
--  __TEXT.__const: 0x2cc0
-+  __TEXT.__text: 0x4f65e8
-+  __TEXT.__objc_methlist: 0x2f71c
-+  __TEXT.__const: 0x2cb0
-   __TEXT.__swift5_typeref: 0x710
-   __TEXT.__constg_swiftt: 0x544
-   __TEXT.__swift5_reflstr: 0x4de
-
-   __TEXT.__swift5_types: 0x54
-   __TEXT.__swift5_assocty: 0x30
-   __TEXT.__swift5_builtin: 0x3c
--  __TEXT.__cstring: 0x5efd9
-+  __TEXT.__cstring: 0x60733
-   __TEXT.__swift5_capture: 0x73c
-   __TEXT.__swift5_protos: 0xc
-   __TEXT.__swift_as_entry: 0x64
-   __TEXT.__swift_as_ret: 0x6c
-   __TEXT.__swift_as_cont: 0xd0
--  __TEXT.__oslogstring: 0x15a25
-+  __TEXT.__oslogstring: 0x167b9
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__gcc_except_tab: 0x2d5c
-+  __TEXT.__gcc_except_tab: 0x2d68
-   __TEXT.__ustring: 0x22
--  __TEXT.__unwind_info: 0x8248
-+  __TEXT.__unwind_info: 0x8478
-   __TEXT.__eh_frame: 0x16d8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9478
--  __DATA_CONST.__objc_classlist: 0xa28
-+  __DATA_CONST.__const: 0x9730
-+  __DATA_CONST.__objc_classlist: 0xa70
-   __DATA_CONST.__objc_nlclslist: 0x268
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0xa0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x14818
-+  __DATA_CONST.__objc_selrefs: 0x14da8
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0xb00
--  __DATA_CONST.__objc_arraydata: 0x16680
--  __DATA_CONST.__got: 0x1b30
-+  __DATA_CONST.__objc_superrefs: 0xb48
-+  __DATA_CONST.__objc_arraydata: 0x16d00
-+  __DATA_CONST.__got: 0x1b78
-   __AUTH_CONST.__const: 0x2a58
--  __AUTH_CONST.__cfstring: 0x75ba0
--  __AUTH_CONST.__objc_const: 0x373c8
-+  __AUTH_CONST.__cfstring: 0x781a0
-+  __AUTH_CONST.__objc_const: 0x38a50
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__objc_intobj: 0x6e58
--  __AUTH_CONST.__objc_arrayobj: 0x2fa0
--  __AUTH_CONST.__objc_dictobj: 0x50a0
-+  __AUTH_CONST.__objc_intobj: 0x6e70
-+  __AUTH_CONST.__objc_arrayobj: 0x30d8
-+  __AUTH_CONST.__objc_dictobj: 0x50c8
-   __AUTH_CONST.__objc_doubleobj: 0x1310
--  __AUTH_CONST.__auth_got: 0x1948
--  __AUTH.__objc_data: 0x29e0
-+  __AUTH_CONST.__auth_got: 0x1958
-+  __AUTH.__objc_data: 0x2c10
-   __AUTH.__data: 0x668
--  __DATA.__objc_ivar: 0x1ed0
-+  __DATA.__objc_ivar: 0x1f94
-   __DATA.__data: 0x10f8
-   __DATA.__common: 0x1f8
--  __DATA_DIRTY.__objc_ivar: 0x1310
--  __DATA_DIRTY.__objc_data: 0x3e68
-+  __DATA_DIRTY.__objc_ivar: 0x1388
-+  __DATA_DIRTY.__objc_data: 0x3f08
-   __DATA_DIRTY.__data: 0x728
--  __DATA_DIRTY.__bss: 0x46e8
-+  __DATA_DIRTY.__bss: 0x4778
-   __DATA_DIRTY.__common: 0xb8
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 19473
--  Symbols:   31896
+-  Symbols:   25344
 -  CStrings:  19489
 +  Functions: 19875
-+  Symbols:   32554
++  Symbols:   25867
 +  CStrings:  19863
- 
 Symbols:
 + +[AWDMETRICSKCellularPowerLogDcsPerfStates binType]
 + +[AWDMETRICSKCellularPowerLogNRAntennaElement antennaElementsType]
@@ -643,141 +584,6 @@ Symbols:
 + _kPLIOReportAgentEventBackwardNameMultitouch2Touch
 + _kPLScreenStateAgentEventBackwardNameBacklightStateChangeX
 + _kPLScreenStateAgentEventForwardNameScreenStateX
-+ _objc_msgSend$HDRHeadroomX
-+ _objc_msgSend$accountForegroundWithMainPrecedence
-+ _objc_msgSend$addAntennaElements:
-+ _objc_msgSend$addKCellularPowerLogDcsPerfStates:
-+ _objc_msgSend$addKCellularPowerLogNRAntennaElement:
-+ _objc_msgSend$addKCellularPowerLogNRDCEvent:
-+ _objc_msgSend$addKCellularPowerLogNRmmWaveBeamID:
-+ _objc_msgSend$afkEndpointsX
-+ _objc_msgSend$afkRoleForService:properties:
-+ _objc_msgSend$antennaElementsAtIndex:
-+ _objc_msgSend$antennaElementsCount
-+ _objc_msgSend$appliedDrxdMs
-+ _objc_msgSend$backlightFilterTimerX
-+ _objc_msgSend$bandGroup
-+ _objc_msgSend$batteryPackConfigDataLogged
-+ _objc_msgSend$cbDisplayClientX
-+ _objc_msgSend$cellGroup
-+ _objc_msgSend$cleanUpAFKInterfacesX
-+ _objc_msgSend$clearAntennaElements
-+ _objc_msgSend$clearKCellularPowerLogDcsPerfStates
-+ _objc_msgSend$clearKCellularPowerLogNRAntennaElements
-+ _objc_msgSend$clearKCellularPowerLogNRDCEvents
-+ _objc_msgSend$clearKCellularPowerLogNRmmWaveBeamIDs
-+ _objc_msgSend$copyCoreBrightnessPropertyForKeyX:
-+ _objc_msgSend$displayConfiguration
-+ _objc_msgSend$displayIdentifierX
-+ _objc_msgSend$displayStateX
-+ _objc_msgSend$displayValueForLayout:
-+ _objc_msgSend$enrichedSnapshotFromChargerService:
-+ _objc_msgSend$enrichedSnapshotFromPackService:
-+ _objc_msgSend$entryEventBackwardDefinitionAPLStatsX
-+ _objc_msgSend$entryEventBackwardDefinitionBacklightStateChangeX
-+ _objc_msgSend$entryEventBackwardDefinitionRebalance
-+ _objc_msgSend$entryEventBackwardDefinitionShelfLifeModeAutoEntry
-+ _objc_msgSend$entryEventBackwardDefinitionShelfLifeModeExitCounters
-+ _objc_msgSend$entryEventForwardDefinitionDisplayX
-+ _objc_msgSend$entryEventForwardScreenStateX
-+ _objc_msgSend$entryEventPointDefinitionDisplayX
-+ _objc_msgSend$entryKeyPack0
-+ _objc_msgSend$entryKeyPack1
-+ _objc_msgSend$fillInBuiltinDisplayBrightnessParametersX:
-+ _objc_msgSend$forDisplayX
-+ _objc_msgSend$fusePackCurrentAccumulators:fusedAccumulator:fusedCount:
-+ _objc_msgSend$handleAFKInterfaceIOServiceCallbackX:
-+ _objc_msgSend$handleAFKInterfaceMsgX:
-+ _objc_msgSend$handleBrightnessClientNotificationX:withValue:
-+ _objc_msgSend$handleDisplayCallbackX:
-+ _objc_msgSend$hardwareIdentifier
-+ _objc_msgSend$hasAppliedDrxdMs
-+ _objc_msgSend$hasBandGroup
-+ _objc_msgSend$hasCellGroup
-+ _objc_msgSend$iokitBacklightDCPSEC
-+ _objc_msgSend$isSecondaryDisplay:
-+ _objc_msgSend$isSecondaryDisplayIdentifier:
-+ _objc_msgSend$kCellularPowerLogDcsPerfStatesAtIndex:
-+ _objc_msgSend$kCellularPowerLogDcsPerfStatesCount
-+ _objc_msgSend$kCellularPowerLogNRAntennaElementAtIndex:
-+ _objc_msgSend$kCellularPowerLogNRAntennaElementsCount
-+ _objc_msgSend$kCellularPowerLogNRDCEventAtIndex:
-+ _objc_msgSend$kCellularPowerLogNRDCEventsCount
-+ _objc_msgSend$kCellularPowerLogNRmmWaveBeamIDAtIndex:
-+ _objc_msgSend$kCellularPowerLogNRmmWaveBeamIDsCount
-+ _objc_msgSend$lastBuiltinDisplayBrightnessX
-+ _objc_msgSend$lastBuiltinDisplayLuxX
-+ _objc_msgSend$lastBuiltinDisplaySliderValueX
-+ _objc_msgSend$lastBuiltinDisplayTimeX
-+ _objc_msgSend$lastDisplayLayoutContainsLockScreenX
-+ _objc_msgSend$lastDisplayLayoutX
-+ _objc_msgSend$lastDisplayXLayoutEntries
-+ _objc_msgSend$lastLayoutMonitorEntriesX
-+ _objc_msgSend$lastMainLayoutEntries
-+ _objc_msgSend$lastScreenStateDisplay
-+ _objc_msgSend$lastScreenStateDisplayX
-+ _objc_msgSend$lastScreenStateEntriesX
-+ _objc_msgSend$logDisplayAPLX
-+ _objc_msgSend$logEventBackwardBacklightStateChangeX:
-+ _objc_msgSend$logEventBackwardRebalanceWithRawData:hwBypassByChargerID:
-+ _objc_msgSend$logEventForwardDisplayXWithRawData:withDate:
-+ _objc_msgSend$logEventForwardScreenStateX:
-+ _objc_msgSend$logShelfLifeModeFromBatteryData:autoEntryTableName:exitCountersTableName:
-+ _objc_msgSend$logShelfLifeModeWithRawData:
-+ _objc_msgSend$logTrustedBatteryHealthForPack:toTableName:
-+ _objc_msgSend$modernDisplayObserverX
-+ _objc_msgSend$pendingBacklightEntryDateX
-+ _objc_msgSend$pendingBacklightEntryX
-+ _objc_msgSend$prevRebalanceErrorFlags
-+ _objc_msgSend$prevRebalanceNotRebalancingReason
-+ _objc_msgSend$primaryDisplayHWID
-+ _objc_msgSend$secondaryCADisplay
-+ _objc_msgSend$secondaryDisplayHWID
-+ _objc_msgSend$secondaryDisplayRef
-+ _objc_msgSend$serialNumber2
-+ _objc_msgSend$setAfkEndpointsX:
-+ _objc_msgSend$setApplicationNotificationX:
-+ _objc_msgSend$setBacklightFilterTimerX:
-+ _objc_msgSend$setBatteryPackConfigDataLogged:
-+ _objc_msgSend$setCbDisplayClientX:
-+ _objc_msgSend$setDisplayCallbackX:
-+ _objc_msgSend$setDisplayIdentifier:
-+ _objc_msgSend$setDisplayIdentifierX:
-+ _objc_msgSend$setDisplayLuxX:
-+ _objc_msgSend$setDisplayStateX:
-+ _objc_msgSend$setDisplaymNitsX:
-+ _objc_msgSend$setForDisplayX:
-+ _objc_msgSend$setHDRHeadroomX:
-+ _objc_msgSend$setIsDisplayOnNowX:
-+ _objc_msgSend$setLastBuiltinDisplayBrightnessX:
-+ _objc_msgSend$setLastBuiltinDisplayLuxX:
-+ _objc_msgSend$setLastBuiltinDisplaySliderValueX:
-+ _objc_msgSend$setLastBuiltinDisplayTimeX:
-+ _objc_msgSend$setLastDisplayLayoutContainsLockScreenX:
-+ _objc_msgSend$setLastDisplayLayoutX:
-+ _objc_msgSend$setLastDisplayXLayoutEntries:
-+ _objc_msgSend$setLastForegroundAppAPLX:
-+ _objc_msgSend$setLastLayoutMonitorEntriesX:
-+ _objc_msgSend$setLastMainLayoutEntries:
-+ _objc_msgSend$setLastScreenStateDisplay:
-+ _objc_msgSend$setLastScreenStateDisplayX:
-+ _objc_msgSend$setLastScreenStateEntriesX:
-+ _objc_msgSend$setModernDisplayObserverX:
-+ _objc_msgSend$setPendingBacklightEntryDateX:
-+ _objc_msgSend$setPendingBacklightEntryX:
-+ _objc_msgSend$setPrevRebalanceErrorFlags:
-+ _objc_msgSend$setPrevRebalanceNotRebalancingReason:
-+ _objc_msgSend$setPrimaryDisplayHWID:
-+ _objc_msgSend$setScreenstateCallbackX:
-+ _objc_msgSend$setSecondaryDisplayHWID:
-+ _objc_msgSend$setSecondaryDisplayRef:
-+ _objc_msgSend$setSerialNumber2:
-+ _objc_msgSend$setShelfLifeModeLogged:
-+ _objc_msgSend$setupModernCoreBrightnessClientXForCADisplay:
-+ _objc_msgSend$sharedBacklightForDisplay:
-+ _objc_msgSend$shelfLifeModeLogged
-+ _objc_msgSend$uniqueId
-+ _objc_msgSend$updateLastForegroundAppAPLX:
 + _objc_setProperty_atomic_copy
 - GCC_except_table136
 - GCC_except_table140

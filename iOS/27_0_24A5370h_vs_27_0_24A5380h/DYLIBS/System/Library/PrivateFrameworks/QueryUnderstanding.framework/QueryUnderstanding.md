@@ -2,45 +2,23 @@
 
 > `/System/Library/PrivateFrameworks/QueryUnderstanding.framework/QueryUnderstanding`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0xf55` | `0xe22` | **`-0x133`** |
+| `__TEXT.__text` | `0x70a0` | `0x6fcc` | **`-0xd4`** |
+| `__TEXT.__const` | `0xb0` | `0xa8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x70a0
-+  __TEXT.__text: 0x6fcc
-   __TEXT.__objc_methlist: 0x754
--  __TEXT.__const: 0xb0
--  __TEXT.__cstring: 0xf55
-+  __TEXT.__const: 0xa8
-+  __TEXT.__cstring: 0xe22
-   __TEXT.__oslogstring: 0x59a
-   __TEXT.__gcc_except_tab: 0x94c
-   __TEXT.__unwind_info: 0x2b0
+-3600.31.9.1.1
++3600.31.13.0.0
 
-   - /usr/lib/libobjc.A.dylib
-   Functions: 143
-   Symbols:   735
--  CStrings:  296
-+  CStrings:  295
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+-  CStrings:  255
++  CStrings:  254
 Symbols:
 + __ZNSt12length_errorC1B9fqe220106EPKc
 + __ZNSt3__119__allocate_at_leastB9fqe220106INS_9allocatorIfEENS_16allocator_traitsIS2_EEEENS_19__allocation_resultINT0_7pointerENS6_9size_typeEEERT_m
@@ -67,5 +45,4 @@ Functions:
 ~ -[U2HeadWrapper mapLogitsToLabels:queryString:queryID:intentHint:tokens:subtokenLenForTokens:subtokens:] : 2360 -> 2252
 CStrings:
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/__vector/vector.h:414: libc++ Hardening assertion __n < size() failed: vector[] index out of bounds\n"
-
 ```

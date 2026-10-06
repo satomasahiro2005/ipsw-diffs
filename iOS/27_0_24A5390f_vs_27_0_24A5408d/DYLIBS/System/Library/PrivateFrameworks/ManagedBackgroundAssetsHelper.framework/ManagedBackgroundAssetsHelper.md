@@ -2,91 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/ManagedBackgroundAssetsHelper.framework/ManagedBackgroundAssetsHelper`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1b16f8` | `0x1bb0fc` | **`+0x9a04`** |
+| `__TEXT.__oslogstring` | `0x9555` | `0x9bf5` | **`+0x6a0`** |
+| `__TEXT.__eh_frame` | `0x108c8` | `0x10c18` | **`+0x350`** |
+| `__TEXT.__const` | `0x14c50` | `0x14cb0` | **`+0x60`** |
+| `__AUTH_CONST.__const` | `0x7570` | `0x75c0` | **`+0x50`** |
+| `__TEXT.__cstring` | `0x43dc` | `0x442c` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x5cd8` | `0x5d28` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x1380` | `0x13b8` | **`+0x38`** |
+| `__DATA.__data` | `0x3178` | `0x31b0` | **`+0x38`** |
+| `__DATA_CONST.__got` | `0x790` | `0x7c8` | **`+0x38`** |
+| `__TEXT.__swift_as_cont` | `0xbb8` | `0xbc8` | **`+0x10`** |
+| `__TEXT.__swift5_typeref` | `0x4fd2` | `0x4fe0` | **`+0xe`** |
+| `__TEXT.__swift_as_ret` | `0x468` | `0x470` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x334` | `0x338` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2.0.32.0.0
--  __TEXT.__text: 0x1b16f8
 +2.0.35.1.0
-+  __TEXT.__text: 0x1bb0fc
-   __TEXT.__objc_methlist: 0x1e4
--  __TEXT.__const: 0x14c50
-+  __TEXT.__const: 0x14cb0
-   __TEXT.__constg_swiftt: 0x30b8
--  __TEXT.__swift5_typeref: 0x4fd2
-+  __TEXT.__swift5_typeref: 0x4fe0
-   __TEXT.__swift5_reflstr: 0x1d88
-   __TEXT.__swift5_fieldmd: 0x396c
-   __TEXT.__swift5_builtin: 0xa0
 
-   __TEXT.__swift5_proto: 0x110c
-   __TEXT.__swift5_types: 0x478
-   __TEXT.__swift5_types2: 0x20
--  __TEXT.__cstring: 0x43dc
--  __TEXT.__oslogstring: 0x9555
-+  __TEXT.__cstring: 0x442c
-+  __TEXT.__oslogstring: 0x9bf5
-   __TEXT.__swift5_capture: 0x14c
--  __TEXT.__swift_as_entry: 0x334
--  __TEXT.__swift_as_ret: 0x468
--  __TEXT.__swift_as_cont: 0xbb8
-+  __TEXT.__swift_as_entry: 0x338
-+  __TEXT.__swift_as_ret: 0x470
-+  __TEXT.__swift_as_cont: 0xbc8
-   __TEXT.__swift5_mpenum: 0x30
-   __TEXT.__swift5_protos: 0x14
-   __TEXT.__swift5_acfuncs: 0x438
--  __TEXT.__unwind_info: 0x5cd8
--  __TEXT.__eh_frame: 0x108c8
-+  __TEXT.__unwind_info: 0x5d28
-+  __TEXT.__eh_frame: 0x10c18
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x3d8
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__got: 0x790
--  __AUTH_CONST.__const: 0x7570
-+  __DATA_CONST.__got: 0x7c8
-+  __AUTH_CONST.__const: 0x75c0
-   __AUTH_CONST.__objc_const: 0x1618
--  __AUTH_CONST.__auth_got: 0x1380
-+  __AUTH_CONST.__auth_got: 0x13b8
-   __AUTH.__objc_data: 0x180
-   __AUTH.__data: 0x858
--  __DATA.__data: 0x3178
-+  __DATA.__data: 0x31b0
-   __DATA.__bss: 0x1dad0
-   __DATA.__common: 0x68
-   __DATA_DIRTY.__objc_data: 0x3b0
-
-   __DATA_DIRTY.__bss: 0x4500
-   __DATA_DIRTY.__common: 0x98
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 +  - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /System/Library/PrivateFrameworks/CoreALD.framework/CoreALD
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/ManagedBackgroundAssetsHelperFetching.framework/ManagedBackgroundAssetsHelperFetching
 +  - /System/Library/PrivateFrameworks/ManagedBackgroundAssetsRelay.framework/ManagedBackgroundAssetsRelay
-   - /System/Library/PrivateFrameworks/ManagedBackgroundAssetsXPC.framework/ManagedBackgroundAssetsXPC
-   - /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices
-   - /System/Library/PrivateFrameworks/SpaceAttribution.framework/SpaceAttribution
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5744
--  Symbols:   2224
+-  Symbols:   2127
 -  CStrings:  864
 +  Functions: 5761
-+  Symbols:   2227
++  Symbols:   2130
 +  CStrings:  878
- 
 Symbols:
 + ___swift_deallocate_boxed_opaque_existential_0
 + ___swift_get_extra_inhabitant_index.569Tm

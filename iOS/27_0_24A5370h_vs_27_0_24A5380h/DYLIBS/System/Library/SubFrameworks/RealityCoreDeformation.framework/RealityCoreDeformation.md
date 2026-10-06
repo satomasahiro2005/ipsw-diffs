@@ -2,85 +2,28 @@
 
 > `/System/Library/SubFrameworks/RealityCoreDeformation.framework/RealityCoreDeformation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2dd5c` | `0x2d6ac` | **`-0x6b0`** |
+| `__DATA_CONST.__const` | `0xd8` | `0x98` | **`-0x40`** |
+| `__DATA.__data` | `0xaa0` | `0xa70` | **`-0x30`** |
+| `__TEXT.__unwind_info` | `0x8d0` | `0x8a8` | **`-0x28`** |
+| `__TEXT.__const` | `0x3000` | `0x3020` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x2923` | `0x2933` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2dd5c
-+  __TEXT.__text: 0x2d6ac
-   __TEXT.__objc_methlist: 0x100c
--  __TEXT.__const: 0x3000
-+  __TEXT.__const: 0x3020
-   __TEXT.__constg_swiftt: 0x1044
-   __TEXT.__swift5_typeref: 0xa94
-   __TEXT.__swift5_reflstr: 0x1154
-   __TEXT.__swift5_fieldmd: 0x137c
-   __TEXT.__swift5_builtin: 0xdc
-   __TEXT.__swift5_assocty: 0x1d0
--  __TEXT.__cstring: 0x2923
-+  __TEXT.__cstring: 0x2933
-   __TEXT.__oslogstring: 0x252
-   __TEXT.__swift5_proto: 0xd4
-   __TEXT.__swift5_types: 0x144
+-23.0.2.0.0
++23.0.3.0.0
 
-   __TEXT.__swift_as_entry: 0xc
-   __TEXT.__swift_as_ret: 0x18
-   __TEXT.__swift_as_cont: 0x34
--  __TEXT.__unwind_info: 0x8d0
-+  __TEXT.__unwind_info: 0x8a8
-   __TEXT.__eh_frame: 0xbc0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xd8
-+  __DATA_CONST.__const: 0x98
-   __DATA_CONST.__objc_classlist: 0x88
-   __DATA_CONST.__objc_protolist: 0xe0
-   __DATA_CONST.__objc_imageinfo: 0x8
-
-   __AUTH_CONST.__objc_const: 0x24d0
-   __AUTH_CONST.__auth_got: 0x610
-   __AUTH.__data: 0x1000
--  __DATA.__data: 0xaa0
-+  __DATA.__data: 0xa70
-   __DATA.__bss: 0x1380
-   __DATA.__common: 0x20
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1145
--  Symbols:   4178
+-  Symbols:   3201
 +  Functions: 1106
-+  Symbols:   4110
-   CStrings:  195
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_reflstr : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_types2 : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__data : content changed
++  Symbols:   3152
 Symbols:
 - _$s22RealityCoreDeformation17CanaryDescriptionC11multipliers7options7modulus12moduloOffsetAcA015_Proto_LowLevelcE3_v1V6BufferV_AI15SemanticOptionsVS2itcfC
 - _$s22RealityCoreDeformation17CanaryDescriptionC11multipliers7options7modulus12moduloOffsetAcA015_Proto_LowLevelcE3_v1V6BufferV_AI15SemanticOptionsVS2itcfCTj
@@ -131,5 +74,4 @@ Symbols:
 - _$s22RealityCoreDeformation17CanaryDescriptionCMo
 - _$s22RealityCoreDeformation17CanaryDescriptionCMu
 - _$s22RealityCoreDeformation17CanaryDescriptionCfd
-
 ```

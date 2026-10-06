@@ -2,76 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/PhotoLibraryServicesCore.framework/PhotoLibraryServicesCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcce40` | `0xce04c` | **`+0x120c`** |
+| `__TEXT.__oslogstring` | `0xb37a` | `0xb4d5` | **`+0x15b`** |
+| `__AUTH_CONST.__cfstring` | `0x122e0` | `0x12380` | **`+0xa0`** |
+| `__TEXT.__gcc_except_tab` | `0x57cc` | `0x5860` | **`+0x94`** |
+| `__AUTH_CONST.__const` | `0x3660` | `0x36d0` | **`+0x70`** |
+| `__TEXT.__objc_methlist` | `0x8364` | `0x83d4` | **`+0x70`** |
+| `__TEXT.__cstring` | `0x162ab` | `0x16311` | **`+0x66`** |
+| `__AUTH_CONST.__objc_const` | `0xaa00` | `0xaa50` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4cc8` | `0x4d18` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x34d8` | `0x3518` | **`+0x40`** |
+| `__DATA.__bss` | `0xe28` | `0xe38` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0xa48` | `0xa58` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xe50` | `0xe58` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x678` | `0x67c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -916.45.110.0.0
--  __TEXT.__text: 0xc8078
--  __TEXT.__objc_methlist: 0x8364
 +916.51.202.0.0
-+  __TEXT.__text: 0xc9254
-+  __TEXT.__objc_methlist: 0x83d4
-   __TEXT.__const: 0x23cc
-   __TEXT.__dlopen_cstrs: 0x19c
--  __TEXT.__gcc_except_tab: 0x57cc
--  __TEXT.__cstring: 0x162ab
--  __TEXT.__oslogstring: 0xb37a
-+  __TEXT.__gcc_except_tab: 0x5860
-+  __TEXT.__cstring: 0x16311
-+  __TEXT.__oslogstring: 0xb4d5
-   __TEXT.__ustring: 0x4
--  __TEXT.__unwind_info: 0x42a0
-+  __TEXT.__unwind_info: 0x42e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x160
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4cc8
-+  __DATA_CONST.__objc_selrefs: 0x4d18
-   __DATA_CONST.__objc_protorefs: 0xc8
-   __DATA_CONST.__objc_superrefs: 0x268
-   __DATA_CONST.__objc_arraydata: 0x428
--  __DATA_CONST.__got: 0xa48
--  __AUTH_CONST.__const: 0x3660
--  __AUTH_CONST.__cfstring: 0x122e0
--  __AUTH_CONST.__objc_const: 0xaa00
-+  __DATA_CONST.__got: 0xa58
-+  __AUTH_CONST.__const: 0x36d0
-+  __AUTH_CONST.__cfstring: 0x12380
-+  __AUTH_CONST.__objc_const: 0xaa50
-   __AUTH_CONST.__objc_intobj: 0x930
-   __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_arrayobj: 0x2a0
--  __AUTH_CONST.__auth_got: 0xe50
-+  __AUTH_CONST.__auth_got: 0xe58
-   __AUTH.__objc_data: 0xa0
--  __DATA.__objc_ivar: 0x678
-+  __DATA.__objc_ivar: 0x67c
-   __DATA.__data: 0x10e0
-   __DATA_DIRTY.__objc_data: 0x27b0
-   __DATA_DIRTY.__data: 0x8
-
-   - /System/Library/Frameworks/VideoToolbox.framework/VideoToolbox
-   - /System/Library/Frameworks/_LocationEssentials.framework/_LocationEssentials
-   - /System/Library/PrivateFrameworks/AppSupport.framework/AppSupport
 +  - /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit
-   - /System/Library/PrivateFrameworks/CMPhoto.framework/CMPhoto
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/PhotoFoundation.framework/PhotoFoundation
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libperfcheck.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 3988
 -  Symbols:   7930
 -  CStrings:  3704
 +  Functions: 4006
 +  Symbols:   7956
 +  CStrings:  3713
- 
 Symbols:
 + +[PLAppPrivateData _isOptedIntoLibraryPrivateDataCreationTracking]
 + -[PLAppPrivateData clearWasCreatedFlag]

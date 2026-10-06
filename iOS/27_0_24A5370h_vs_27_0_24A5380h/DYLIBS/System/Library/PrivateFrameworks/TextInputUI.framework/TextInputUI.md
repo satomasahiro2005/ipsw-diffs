@@ -2,129 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/TextInputUI.framework/TextInputUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x12a35c` | `0x12d03c` | **`+0x2ce0`** |
+| `__AUTH_CONST.__objc_const` | `0x189b8` | `0x18d48` | **`+0x390`** |
+| `__TEXT.__oslogstring` | `0x585b` | `0x5b1f` | **`+0x2c4`** |
+| `__TEXT.__objc_methlist` | `0xf574` | `0xf7f4` | **`+0x280`** |
+| `__TEXT.__cstring` | `0xd8c3` | `0xdabf` | **`+0x1fc`** |
+| `__DATA_CONST.__const` | `0x77a0` | `0x7930` | **`+0x190`** |
+| `__DATA_CONST.__objc_selrefs` | `0x9d08` | `0x9e68` | **`+0x160`** |
+| `__TEXT.__dlopen_cstrs` | `0x207` | `0x315` | **`+0x10e`** |
+| `__AUTH_CONST.__cfstring` | `0xe4a0` | `0xe560` | **`+0xc0`** |
+| `__TEXT.__unwind_info` | `0x4008` | `0x40c0` | **`+0xb8`** |
+| `__DATA_DIRTY.__objc_data` | `0x2028` | `0x20c0` | **`+0x98`** |
+| `__DATA_CONST.__got` | `0x1480` | `0x14b0` | **`+0x30`** |
+| `__DATA_DIRTY.__data` | `0x2a8` | `0x2d8` | **`+0x30`** |
+| `__AUTH.__data` | `0x9b8` | `0x990` | **`-0x28`** |
+| `__DATA.__objc_ivar` | `0x1158` | `0x117c` | **`+0x24`** |
+| `__TEXT.__const` | `0x3600` | `0x3620` | **`+0x20`** |
+| `__DATA.__bss` | `0x2d40` | `0x2d50` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x6d8` | `0x6e8` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x440` | `0x450` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x4e0` | `0x4f0` | **`+0x10`** |
+| `__AUTH.__objc_data` | `0x3880` | `0x3888` | **`+0x8`** |
+| `__DATA.__common` | `0x281` | `0x288` | **`+0x7`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__ustring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x12a35c
--  __TEXT.__objc_methlist: 0xf574
--  __TEXT.__const: 0x3600
--  __TEXT.__dlopen_cstrs: 0x207
-+  __TEXT.__text: 0x12d03c
-+  __TEXT.__objc_methlist: 0xf7f4
-+  __TEXT.__dlopen_cstrs: 0x315
-+  __TEXT.__const: 0x3620
-   __TEXT.__swift5_typeref: 0x1964
-   __TEXT.__swift5_capture: 0x4f8
--  __TEXT.__cstring: 0xd8c3
-+  __TEXT.__cstring: 0xdabf
-   __TEXT.__constg_swiftt: 0x17b8
-   __TEXT.__swift5_reflstr: 0xca5
-   __TEXT.__swift5_assocty: 0x2f0
-   __TEXT.__swift5_fieldmd: 0xcd4
-   __TEXT.__swift5_builtin: 0x154
--  __TEXT.__oslogstring: 0x585b
-+  __TEXT.__oslogstring: 0x5b1f
-   __TEXT.__swift5_proto: 0x150
-   __TEXT.__swift5_types: 0x128
-   __TEXT.__swift_as_entry: 0x60
-   __TEXT.__swift_as_ret: 0x70
-   __TEXT.__swift_as_cont: 0x134
--  __TEXT.__swift5_protos: 0xc
-   __TEXT.__swift5_mpenum: 0x1c
-+  __TEXT.__swift5_protos: 0xc
-   __TEXT.__ustring: 0x254
--  __TEXT.__unwind_info: 0x4008
-+  __TEXT.__unwind_info: 0x40c0
-   __TEXT.__eh_frame: 0x1884
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x77a0
--  __DATA_CONST.__objc_classlist: 0x6d8
-+  __DATA_CONST.__const: 0x7930
-+  __DATA_CONST.__objc_classlist: 0x6e8
-   __DATA_CONST.__objc_catlist: 0x50
-   __DATA_CONST.__objc_protolist: 0x268
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x9d08
-+  __DATA_CONST.__objc_selrefs: 0x9e68
-   __DATA_CONST.__objc_protorefs: 0x80
--  __DATA_CONST.__objc_superrefs: 0x440
-+  __DATA_CONST.__objc_superrefs: 0x450
-   __DATA_CONST.__objc_arraydata: 0x9b0
--  __DATA_CONST.__got: 0x1480
-+  __DATA_CONST.__got: 0x14b0
-   __AUTH_CONST.__const: 0x2ac8
--  __AUTH_CONST.__cfstring: 0xe4a0
--  __AUTH_CONST.__objc_const: 0x189b8
-+  __AUTH_CONST.__cfstring: 0xe560
-+  __AUTH_CONST.__objc_const: 0x18d48
-   __AUTH_CONST.__objc_intobj: 0x3c0
-   __AUTH_CONST.__objc_arrayobj: 0x240
-   __AUTH_CONST.__objc_doubleobj: 0x170
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__objc_floatobj: 0xe0
-   __AUTH_CONST.__auth_got: 0x1b98
--  __AUTH.__objc_data: 0x3880
--  __AUTH.__data: 0x9b8
--  __DATA.__objc_ivar: 0x1158
-+  __AUTH.__objc_data: 0x3888
-+  __AUTH.__data: 0x990
-+  __DATA.__objc_ivar: 0x117c
-   __DATA.__data: 0x27e8
--  __DATA.__bss: 0x2d40
--  __DATA.__common: 0x281
--  __DATA_DIRTY.__objc_data: 0x2028
--  __DATA_DIRTY.__data: 0x2a8
--  __DATA_DIRTY.__bss: 0x4e0
-+  __DATA.__bss: 0x2d50
-+  __DATA.__common: 0x288
-+  __DATA_DIRTY.__objc_data: 0x20c0
-+  __DATA_DIRTY.__data: 0x2d8
-+  __DATA_DIRTY.__bss: 0x4f0
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+-9127.0.71.1.101
++9127.0.75.1.101
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6630
--  Symbols:   19803
--  CStrings:  4445
+-  Symbols:   10412
+-  CStrings:  2647
 +  Functions: 6698
-+  Symbols:   20023
-+  CStrings:  4478
- 
-Sections:
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_reflstr : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__ustring : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_floatobj : content changed
-~ __DATA.__data : content changed
++  Symbols:   10525
++  CStrings:  2674
 Symbols:
 + +[TUIPasteboardSnapshot generalPasteboardSnapshot]
 + +[TUIPasteboardSnapshot itemsForPasteboard:]
@@ -259,73 +180,6 @@ Symbols:
 + _getQLThumbnailGenerationRequestClass.softClass
 + _getQLThumbnailGeneratorClass.softClass
 + _getSFCredentialProviderExtensionManagerClass.softClass
-+ _objc_msgSend$UIImage
-+ _objc_msgSend$URLValue
-+ _objc_msgSend$_labelForAttributedResult:requiresDisambiguation:
-+ _objc_msgSend$baseDomainForURL:
-+ _objc_msgSend$buildSplitRowInfo
-+ _objc_msgSend$candidatesForPasteboard:image:label:sourceApp:
-+ _objc_msgSend$conformsToType:
-+ _objc_msgSend$contactFirstName
-+ _objc_msgSend$containsItemOfType:
-+ _objc_msgSend$containsOnlyType:
-+ _objc_msgSend$contentTitle
-+ _objc_msgSend$createCandidatesFromPasteboardWithContext:pasteboard:completion:
-+ _objc_msgSend$dockItemLayoutType
-+ _objc_msgSend$errorWithDomain:code:userInfo:
-+ _objc_msgSend$fetchEnabledCredentialProviderBundleIDsWithCompletion:
-+ _objc_msgSend$fileContentType
-+ _objc_msgSend$firstAvailableThumbnailFromItemAtIndex:completion:
-+ _objc_msgSend$generalPasteboardSnapshot
-+ _objc_msgSend$generateBestRepresentationForRequest:completionHandler:
-+ _objc_msgSend$generatePasteCandidatesWithContext:pasteboard:completion:
-+ _objc_msgSend$getAllExtensionsWithCompletion:
-+ _objc_msgSend$givenName
-+ _objc_msgSend$imageValue
-+ _objc_msgSend$initWithFileAtURL:size:scale:representationTypes:
-+ _objc_msgSend$initWithPasteboard:
-+ _objc_msgSend$initWithPasteboard:contentTitle:thumbnailImage:sourceApp:contentIdentifier:
-+ _objc_msgSend$initWithRepresentations:itemProvider:
-+ _objc_msgSend$isChina
-+ _objc_msgSend$isDynamic
-+ _objc_msgSend$isWebBrowser
-+ _objc_msgSend$isWebBrowserWithBundleID:
-+ _objc_msgSend$itemsForPasteboard:
-+ _objc_msgSend$keyboardHorizontalSizeClass
-+ _objc_msgSend$keyboardVerticalSizeClass
-+ _objc_msgSend$keysOnlyMultiplierTotal
-+ _objc_msgSend$layoutTypeIsVisibleKey:
-+ _objc_msgSend$originatorBundleID
-+ _objc_msgSend$originatorIsCredentialProviderForPasteboard:completion:
-+ _objc_msgSend$originatorIsWebBrowserForPasteboard:
-+ _objc_msgSend$originatorLocalizedName
-+ _objc_msgSend$pasteboardContentAlreadyInsertedForContext:pasteboard:
-+ _objc_msgSend$pasteboardIsRecent:
-+ _objc_msgSend$pasteboardThumbnailImageWithCompletion:
-+ _objc_msgSend$pasteboardTitle
-+ _objc_msgSend$personNameComponentsFromString:
-+ _objc_msgSend$primaryType
-+ _objc_msgSend$quickLookThumbnailForURL:contentType:completion:
-+ _objc_msgSend$representations
-+ _objc_msgSend$saveTimestamp
-+ _objc_msgSend$setContentType:
-+ _objc_msgSend$setDockItemLayoutType:
-+ _objc_msgSend$setIsKeyboardMinorEdgeWidth:
-+ _objc_msgSend$setKeyboardHorizontalSizeClass:
-+ _objc_msgSend$setKeyboardVerticalSizeClass:
-+ _objc_msgSend$setKeysOnlyMultiplierTotal:
-+ _objc_msgSend$setRowSizes:
-+ _objc_msgSend$sf_bundleIdentifierForContainingApp
-+ _objc_msgSend$shadowOffset
-+ _objc_msgSend$sharedGenerator
-+ _objc_msgSend$sharedManager
-+ _objc_msgSend$shouldGenerateCandidateForContext:pasteboard:completion:
-+ _objc_msgSend$sizeAdjustedForDockLayoutType:useSplitHeight:
-+ _objc_msgSend$stringByDeletingPathExtension
-+ _objc_msgSend$thumbnailImageWithCompletion:
-+ _objc_msgSend$typeIdentifiers
-+ _objc_msgSend$typeWithIdentifier:
-+ _objc_msgSend$updateForDockItemLayoutType:
 - +[TUIRecentPasteCandidate contentIdentifierForPasteboard:]
 - +[TUIRecentPasteCandidate displayTextFromRawText:image:imageCount:]
 - -[TUIRecentPasteCandidate displayText]
@@ -346,33 +200,6 @@ Symbols:
 - _OBJC_IVAR_$_TUIRecentPasteCellContentView._labelGroup
 - _UTTypeUTF8PlainText
 - ___39-[TUIKeyplaneView updateSplitProgress:]_block_invoke_5
-- _objc_msgSend$URL
-- _objc_msgSend$URLWithDataRepresentation:relativeToURL:
-- _objc_msgSend$_captionBaselineDistance
-- _objc_msgSend$_labelForAttributedResult:
-- _objc_msgSend$absoluteString
-- _objc_msgSend$contentIdentifierForPasteboard:
-- _objc_msgSend$createCandidatesFromPasteboardWithContext:
-- _objc_msgSend$dataForPasteboardType:inItemSet:
-- _objc_msgSend$decodeInt64ForKey:
-- _objc_msgSend$displayTextFromRawText:image:imageCount:
-- _objc_msgSend$encodeInt64:forKey:
-- _objc_msgSend$fileURLWithPath:
-- _objc_msgSend$firstBaselineAnchor
-- _objc_msgSend$firstItem
-- _objc_msgSend$generatePasteCandidatesWithContext:completion:
-- _objc_msgSend$hasColors
-- _objc_msgSend$hasImages
-- _objc_msgSend$hasURLs
-- _objc_msgSend$images
-- _objc_msgSend$indexSetWithIndex:
-- _objc_msgSend$initWithPasteboard:text:thumbnailImage:imageCount:sourceName:
-- _objc_msgSend$isFileURL
-- _objc_msgSend$lastBaselineAnchor
-- _objc_msgSend$originatorIsPasswordManager
-- _objc_msgSend$pasteboardContentAlreadyInsertedForContext:
-- _objc_msgSend$pasteboardIsRecent
-- _objc_msgSend$scheme
 CStrings:
 + "<%@: contentTitle=%@ sourceApp=%@ thumbnailImage=%@>"
 + "<%@: itemCount=%lu hasStrings=%@ hasWebURLs=%@ hasFiles=%@ hasImages=%@>"
@@ -415,5 +242,4 @@ CStrings:
 - "recentPasteDisplayText"
 - "recentPasteSubtitleText"
 - "recentPasteThumbnailImage"
-
 ```

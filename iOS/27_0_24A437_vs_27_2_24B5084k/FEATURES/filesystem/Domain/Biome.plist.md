@@ -4,9 +4,6 @@
 
 ```diff
 
- 		<key>DevelopmentPhase</key>
- 		<string>FeatureComplete</string>
- 	</dict>
 +	<key>TimeTravelDeviceRotation</key>
 +	<dict>
 +		<key>DevelopmentPhase</key>
@@ -27,8 +24,5 @@
 +		<key>DevelopmentPhase</key>
 +		<string>FeatureComplete</string>
 +	</dict>
- </dict>
- </plist>
- 
 
 ```

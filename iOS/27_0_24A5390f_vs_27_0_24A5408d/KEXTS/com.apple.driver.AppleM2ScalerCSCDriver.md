@@ -2,41 +2,32 @@
 
 > `com.apple.driver.AppleM2ScalerCSCDriver`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x24df3` | `0x2515b` | **`+0x368`** |
+| `__DATA_CONST.__const` | `0x2ae30` | `0x2abf0` | **`-0x240`** |
+| `__DATA_CONST.__kalloc_var` | `0x1310` | `0x13b0` | **`+0xa0`** |
+| `__TEXT.__const` | `0xc3000` | `0xc3090` | **`+0x90`** |
+| `__DATA_CONST.__kalloc_type` | `0x4f00` | `0x4e80` | **`-0x80`** |
+| `__DATA.__bss` | `0x2184` | `0x2134` | **`-0x50`** |
+| `__DATA.__common` | `0x2788` | `0x2738` | **`-0x50`** |
+| `__DATA_CONST.__mod_init_func` | `0x6a8` | `0x698` | **`-0x10`** |
+| `__DATA_CONST.__mod_term_func` | `0x680` | `0x670` | **`-0x10`** |
+| `__TEXT_EXEC.__text` | `0x13ba60` | `0x13ba50` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -200.57.0.0.0
--  __TEXT.__const: 0xc3000
--  __TEXT.__cstring: 0x24df3
--  __TEXT_EXEC.__text: 0x13ba60
-+200.62.1.0.0
-+  __TEXT.__const: 0xc3090
-+  __TEXT.__cstring: 0x2515b
-+  __TEXT_EXEC.__text: 0x13ba50
-   __TEXT_EXEC.__auth_stubs: 0xbd0
-   __DATA.__data: 0x22388
--  __DATA.__common: 0x2788
--  __DATA.__bss: 0x2184
--  __DATA_CONST.__mod_init_func: 0x6a8
--  __DATA_CONST.__mod_term_func: 0x680
--  __DATA_CONST.__const: 0x2ae30
--  __DATA_CONST.__kalloc_type: 0x4f00
--  __DATA_CONST.__kalloc_var: 0x1310
-+  __DATA.__common: 0x2738
-+  __DATA.__bss: 0x2134
-+  __DATA_CONST.__mod_init_func: 0x698
-+  __DATA_CONST.__mod_term_func: 0x670
-+  __DATA_CONST.__const: 0x2abf0
-+  __DATA_CONST.__kalloc_type: 0x4e80
-+  __DATA_CONST.__kalloc_var: 0x13b0
-   __DATA_CONST.__auth_got: 0x5e8
-   __DATA_CONST.__got: 0xb0
-   __DATA_CONST.__auth_ptr: 0x88
 -  Functions: 10278
++200.62.1.0.0
 +  Functions: 10261
-   Symbols:   0
+
 -  CStrings:  3690
 +  CStrings:  3704
- 
 CStrings:
 + " >>>> Client %d (%p) (%s) filters %p, Scaling filters %p\n"
 + "\"[%s] \" \"MailBox[%d] credit return_inc check failed on wake\\n\" @%s:%d"

@@ -2,122 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/ContentKit.framework/ContentKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x20e330` | `0x20c698` | **`-0x1c98`** |
+| `__TEXT.__cstring` | `0x1a9f0` | `0x1a190` | **`-0x860`** |
+| `__TEXT.__ustring` | `0x9e0` | `0xfd0` | **`+0x5f0`** |
+| `__AUTH.__objc_data` | `0x2478` | `0x2300` | **`-0x178`** |
+| `__DATA_DIRTY.__objc_data` | `0x2878` | `0x29f0` | **`+0x178`** |
+| `__AUTH_CONST.__const` | `0xc8d0` | `0xc9f0` | **`+0x120`** |
+| `__AUTH_CONST.__cfstring` | `0x12500` | `0x12560` | **`+0x60`** |
+| `__TEXT.__swift5_capture` | `0x236c` | `0x23cc` | **`+0x60`** |
+| `__TEXT.__swift5_reflstr` | `0x123b` | `0x128b` | **`+0x50`** |
+| `__DATA.__data` | `0x3a2c` | `0x39ec` | **`-0x40`** |
+| `__DATA_DIRTY.__data` | `0xd0` | `0x110` | **`+0x40`** |
+| `__AUTH.__data` | `0x1740` | `0x1710` | **`-0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x23f0` | `0x23c0` | **`-0x30`** |
+| `__AUTH_CONST.__objc_const` | `0x16988` | `0x169b8` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0x18f8` | `0x1928` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x81c8` | `0x81f8` | **`+0x30`** |
+| `__TEXT.__swift5_typeref` | `0x263c` | `0x2616` | **`-0x26`** |
+| `__TEXT.__objc_methlist` | `0xcbcc` | `0xcbec` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x6388` | `0x63a0` | **`+0x18`** |
+| `__TEXT.__eh_frame` | `0xa9f8` | `0xaa10` | **`+0x18`** |
+| `__TEXT.__swift5_fieldmd` | `0x1c4c` | `0x1c64` | **`+0x18`** |
+| `__TEXT.__oslogstring` | `0x5ac6` | `0x5ad9` | **`+0x13`** |
+| `__TEXT.__swift_as_ret` | `0x4ec` | `0x4f4` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x8f0` | `0x8f4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x20e330
-+  __TEXT.__text: 0x20c698
-   __TEXT.__delay_helper: 0xdc
--  __TEXT.__objc_methlist: 0xcbcc
-+  __TEXT.__objc_methlist: 0xcbec
-   __TEXT.__const: 0x9a94
-   __TEXT.__dlopen_cstrs: 0x19e9
--  __TEXT.__cstring: 0x1a9f0
--  __TEXT.__swift5_typeref: 0x263c
--  __TEXT.__oslogstring: 0x5ac6
-+  __TEXT.__cstring: 0x1a190
-+  __TEXT.__swift5_typeref: 0x2616
-+  __TEXT.__oslogstring: 0x5ad9
-   __TEXT.__constg_swiftt: 0x1a7c
--  __TEXT.__swift5_reflstr: 0x123b
--  __TEXT.__swift5_fieldmd: 0x1c4c
-+  __TEXT.__swift5_reflstr: 0x128b
-+  __TEXT.__swift5_fieldmd: 0x1c64
-   __TEXT.__swift5_builtin: 0xb4
-   __TEXT.__swift5_assocty: 0x468
-   __TEXT.__swift5_protos: 0x1c
-   __TEXT.__swift5_proto: 0x698
-   __TEXT.__swift5_types: 0x218
--  __TEXT.__swift5_capture: 0x236c
-+  __TEXT.__swift5_capture: 0x23cc
-   __TEXT.__swift_as_entry: 0x360
--  __TEXT.__swift_as_ret: 0x4ec
-+  __TEXT.__swift_as_ret: 0x4f4
-   __TEXT.__swift_as_cont: 0x908
-   __TEXT.__swift5_mpenum: 0x30
-   __TEXT.__gcc_except_tab: 0x2958
--  __TEXT.__ustring: 0x9e0
--  __TEXT.__unwind_info: 0x81c8
--  __TEXT.__eh_frame: 0xa9f8
-+  __TEXT.__ustring: 0xfd0
-+  __TEXT.__unwind_info: 0x81f8
-+  __TEXT.__eh_frame: 0xaa10
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x6388
-+  __DATA_CONST.__const: 0x63a0
-   __DATA_CONST.__objc_classlist: 0x770
-   __DATA_CONST.__objc_catlist: 0x128
-   __DATA_CONST.__objc_protolist: 0xf8
+-5028.0.21.0.0
++5032.5.0.0.0
 
-   __DATA_CONST.__objc_protorefs: 0x48
-   __DATA_CONST.__objc_superrefs: 0x4b0
-   __DATA_CONST.__objc_arraydata: 0x1490
--  __DATA_CONST.__got: 0x18f8
--  __AUTH_CONST.__const: 0xc8d0
--  __AUTH_CONST.__cfstring: 0x12500
--  __AUTH_CONST.__objc_const: 0x16988
-+  __DATA_CONST.__got: 0x1928
-+  __AUTH_CONST.__const: 0xc9f0
-+  __AUTH_CONST.__cfstring: 0x12560
-+  __AUTH_CONST.__objc_const: 0x169b8
-   __AUTH_CONST.__objc_intobj: 0x1ef0
-   __AUTH_CONST.__objc_arrayobj: 0xf0
-   __AUTH_CONST.__objc_dictobj: 0x168
--  __AUTH_CONST.__auth_got: 0x23f0
--  __AUTH.__objc_data: 0x2478
--  __AUTH.__data: 0x1740
--  __DATA.__objc_ivar: 0x8f0
--  __DATA.__data: 0x3a2c
-+  __AUTH_CONST.__auth_got: 0x23c0
-+  __AUTH.__objc_data: 0x2300
-+  __AUTH.__data: 0x1710
-+  __DATA.__objc_ivar: 0x8f4
-+  __DATA.__data: 0x39ec
-   __DATA.__bss: 0xdd98
-   __DATA.__common: 0x10
--  __DATA_DIRTY.__objc_data: 0x2878
--  __DATA_DIRTY.__data: 0xd0
-+  __DATA_DIRTY.__objc_data: 0x29f0
-+  __DATA_DIRTY.__data: 0x110
-   __DATA_DIRTY.__bss: 0x440
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 12728
--  Symbols:   27039
--  CStrings:  6997
+-  Symbols:   11865
+-  CStrings:  4678
 +  Functions: 12735
-+  Symbols:   27062
-+  CStrings:  7020
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
++  Symbols:   11870
++  CStrings:  4707
 Symbols:
 + +[WFContentItem(Utilities) errorAllowsCoercionFallback:]
 + +[WFMessageContentItem coercions]
@@ -314,10 +240,6 @@ Symbols:
 + ___block_descriptor_32_e51_q24?0"NSAttributedString"8"NSAttributedString"16l
 + ___block_descriptor_32_e56_32?0"WFMessageContentItem"8"WFCoercionContext"16^24l
 + ___block_descriptor_56_e8_32s40bs_e33_v32?08"NSString"16"NSError"24ls32l8u48l8s40l8
-+ _objc_msgSend$entityIdentifier
-+ _objc_msgSend$errorAllowsCoercionFallback:
-+ _objc_msgSend$initWithContent:conversationID:recipientContactIDs:recipients:senderContactID:senderHandles:entityIdentifier:
-+ _objc_msgSend$localizedStandardCompare:
 + _symbolic _____ 10ContentKit27WFOnScreenContextOutputTypeO08HydratedG4InfoV
 + _type_layout_string 10ContentKit27WFOnScreenContextOutputTypeO08HydratedG4InfoV
 - +[WFContentItem(Utilities) errorIsBadCoercionError:]
@@ -507,10 +429,6 @@ Symbols:
 - GCC_except_table941
 - GCC_except_table942
 - _WFTypeCheckObject
-- _objc_msgSend$enableMultiLibraryMode
-- _objc_msgSend$errorIsBadCoercionError:
-- _objc_msgSend$initWithContent:conversationID:recipientContactIDs:recipients:senderContactID:senderHandles:
-- _objc_msgSend$wfObjectOfClass:forKeyPath:
 - _symbolic _____ 10ContentKit33WFAskLLMOnDeviceModelSystemPromptO
 - _symbolic _____Sg 10Foundation6LocaleV12LanguageCodeV
 - _symbolic _____Sg 10Foundation6LocaleV6ScriptV
@@ -632,5 +550,4 @@ CStrings:
 - "the user language"
 - "“%1$@” couldn't be opened because the %2$@ is locked."
 - "“%@” couldn't be opened because an unknown error occurred."
-
 ```

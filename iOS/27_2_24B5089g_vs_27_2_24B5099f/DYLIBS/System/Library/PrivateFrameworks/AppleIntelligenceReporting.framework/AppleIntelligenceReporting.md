@@ -2,62 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/AppleIntelligenceReporting.framework/AppleIntelligenceReporting`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7f154` | `0x7f5cc` | **`+0x478`** |
+| `__AUTH_CONST.__auth_got` | `0x17e0` | `0x17f8` | **`+0x18`** |
+| `__TEXT.__swift5_fieldmd` | `0x3960` | `0x3978` | **`+0x18`** |
+| `__TEXT.__const` | `0xf7bc` | `0xf7cc` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x247e` | `0x248e` | **`+0x10`** |
+| `__AUTH_CONST.__const` | `0x6ad8` | `0x6ae0` | **`+0x8`** |
+| `__TEXT.__eh_frame` | `0x36e8` | `0x36e4` | **`-0x4`** |
+| `__TEXT.__swift5_mpenum` | `0x2a0` | `0x2a4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -232.40.14.502.1
--  __TEXT.__text: 0x7a91c
--  __TEXT.__const: 0xf7bc
 +232.40.17.0.0
-+  __TEXT.__text: 0x7ad74
-+  __TEXT.__const: 0xf7cc
-   __TEXT.__swift5_typeref: 0x2fa7
-   __TEXT.__oslogstring: 0x5eb
-   __TEXT.__constg_swiftt: 0x24dc
--  __TEXT.__swift5_reflstr: 0x247e
--  __TEXT.__swift5_fieldmd: 0x3960
-+  __TEXT.__swift5_reflstr: 0x248e
-+  __TEXT.__swift5_fieldmd: 0x3978
-   __TEXT.__cstring: 0x1986
-   __TEXT.__swift5_proto: 0xf38
-   __TEXT.__swift5_types: 0x404
-   __TEXT.__swift5_protos: 0x10
-   __TEXT.__swift5_assocty: 0x1b0
-   __TEXT.__swift5_builtin: 0x3c
--  __TEXT.__swift5_mpenum: 0x2a0
-+  __TEXT.__swift5_mpenum: 0x2a4
-   __TEXT.__swift5_capture: 0x170
-   __TEXT.__swift_as_entry: 0xc
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x20
--  __TEXT.__unwind_info: 0x3ab8
--  __TEXT.__eh_frame: 0x36e8
-+  __TEXT.__unwind_info: 0x3ac0
-+  __TEXT.__eh_frame: 0x36e4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x30
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x6ad8
-+  __AUTH_CONST.__const: 0x6ae0
-   __AUTH_CONST.__objc_const: 0x650
--  __AUTH_CONST.__auth_got: 0x17e0
-+  __AUTH_CONST.__auth_got: 0x17f8
-   __DATA.__data: 0x2740
-   __DATA.__common: 0x30
-   __DATA_DIRTY.__objc_data: 0x50
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 5390
 -  Symbols:   14904
 +  Functions: 5391
 +  Symbols:   14910
-   CStrings:  219
- 
 Symbols:
 + _$s26AppleIntelligenceReporting0aB14InferenceEventV15routingDecisionSSSgvgTm
 + _$s26AppleIntelligenceReporting17InferenceMetadataV15routingDecisionSSSgvM

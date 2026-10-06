@@ -2,26 +2,22 @@
 
 > `/usr/lib/libswiftPrespecialized.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__const` | `0x3b34d8` | `0x3b8920` | **`+0x5448`** |
+| `__AUTH_CONST.__const` | `0x74aa8` | `0x74208` | **`-0x8a0`** |
+| `__DATA_CONST.__ptrhashtabkey` | `0x32a20` | `0x32678` | **`-0x3a8`** |
+| `__DATA_CONST.__ptrhashtab` | `0x1ef88` | `0x1ed18` | **`-0x270`** |
+| `__AUTH.__data` | `0xd4b18` | `0xd49b0` | **`-0x168`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__text: 0x0
-   __TEXT.__lldb_no_nlist: 0x0
--  __DATA_CONST.__const: 0x3b34f0
--  __DATA_CONST.__ptrhashtab: 0x1ef88
--  __DATA_CONST.__ptrhashtabkey: 0x32a20
--  __AUTH_CONST.__const: 0x74aa8
--  __AUTH.__data: 0xd4b18
-+  __DATA_CONST.__const: 0x3b8938
-+  __DATA_CONST.__ptrhashtab: 0x1ed18
-+  __DATA_CONST.__ptrhashtabkey: 0x32678
-+  __AUTH_CONST.__const: 0x74208
-+  __AUTH.__data: 0xd49b0
-   - /usr/lib/libSystem.B.dylib
-   Functions: 0
--  Symbols:   188436
-+  Symbols:   189364
-   CStrings:  0
- 
+-  Symbols:   188434
++  Symbols:   189362
 Symbols:
 + _$s017_MediaIntents_AppB017AudioSearchEntityV10SortByEnumOMn
 + _$s09HealthAppA13DaemonSupport0aB13LaunchHistoryOMn
@@ -4679,5 +4675,4 @@ Symbols:
 - ___unnamed_atom_8145
 - ___unnamed_atom_8146
 - ___vfx_script_comAppleVfxSiribloomDefault_trigger_12
-
 ```

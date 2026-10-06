@@ -2,14 +2,15 @@
 
 > `/usr/lib/system/libsystem_darwin.dylib`
 
-```diff
+### Section Size Changes
 
- 1786.0.3.0.0
--  __TEXT.__text: 0x65d8
-+  __TEXT.__text: 0x6624
-   __TEXT.__const: 0xa0
-   __TEXT.__cstring: 0x1ec3
-   __TEXT.__oslogstring: 0x8d4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x65d8` | `0x6624` | **`+0x4c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _OUTLINED_FUNCTION_0 : 64 -> 20
 ~ _os_subcommand_main : 792 -> 796

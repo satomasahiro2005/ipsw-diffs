@@ -2,17 +2,19 @@
 
 > `/System/Library/AccessibilityBundles/DisplayAndBrightnessSettings.axbundle/DisplayAndBrightnessSettings`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc68` | `0xc48` | **`-0x20`** |
+| `__TEXT.__const` | `—` | `0x8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3050.3.1.0.0
--  __TEXT.__text: 0xbe4
 +3050.3.5.0.0
-+  __TEXT.__text: 0xbc4
-   __TEXT.__objc_methlist: 0x25c
-+  __TEXT.__const: 0x8
-   __TEXT.__cstring: 0x3eb
-   __TEXT.__unwind_info: 0xc8
-   __TEXT.__objc_stubs: 0x0
 Functions:
-~ -[DBSColorTemperatureSliderTableCellAccessibility accessibilityValue] : 332 -> 300
+~ -[DBSColorTemperatureSliderTableCellAccessibility accessibilityValue] : 344 -> 312
 ```

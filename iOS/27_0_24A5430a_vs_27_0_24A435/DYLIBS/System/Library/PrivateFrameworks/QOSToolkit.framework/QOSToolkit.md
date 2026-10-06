@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/QOSToolkit.framework/QOSToolkit`
 
-```diff
+### Section Size Changes
 
- 2025.1.0.0.0
--  __TEXT.__text: 0x21d30
-+  __TEXT.__text: 0x21d34
-   __TEXT.__objc_methlist: 0x208
-   __TEXT.__const: 0x2ea0
-   __TEXT.__gcc_except_tab: 0x38
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21d30` | `0x21d34` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_29af3b808 -> sub_29bcc8808 : 1116 -> 1120
+~ sub_29ae20808 -> sub_29bbab808 : 1116 -> 1120
 ```

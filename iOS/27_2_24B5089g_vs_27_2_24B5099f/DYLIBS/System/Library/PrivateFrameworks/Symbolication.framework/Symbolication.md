@@ -2,76 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/Symbolication.framework/Symbolication`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__data` | `0xd18` | `0x80` | **`-0xc98`** |
+| `__DATA_DIRTY.__data` | `0x50` | `0xce8` | **`+0xc98`** |
+| `__AUTH.__objc_data` | `0x680` | `—` | **`-0x680`** |
+| `__DATA_DIRTY.__objc_data` | `0x17c0` | `0x1e40` | **`+0x680`** |
+| `__TEXT.__text` | `0xbc2cc` | `0xbc834` | **`+0x568`** |
+| `__TEXT.__cstring` | `0x11308` | `0x113f8` | **`+0xf0`** |
+| `__AUTH_CONST.__cfstring` | `0xdbc0` | `0xdc20` | **`+0x60`** |
+| `__AUTH_CONST.__objc_const` | `0xcc20` | `0xcc80` | **`+0x60`** |
+| `__TEXT.__objc_methlist` | `0x6a00` | `0x6a38` | **`+0x38`** |
+| `__DATA_CONST.__objc_selrefs` | `0x39f0` | `0x3a10` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x5990` | `0x59a8` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0xdac` | `0xdb4` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x2dc0` | `0x2dc8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -64578.100.1.0.0
--  __TEXT.__text: 0xb9504
--  __TEXT.__objc_methlist: 0x6a00
 +64578.132.1.0.0
-+  __TEXT.__text: 0xb9a6c
-+  __TEXT.__objc_methlist: 0x6a38
-   __TEXT.__const: 0x316
--  __TEXT.__gcc_except_tab: 0x5990
--  __TEXT.__cstring: 0x11308
-+  __TEXT.__gcc_except_tab: 0x59a8
-+  __TEXT.__cstring: 0x113f8
-   __TEXT.__oslogstring: 0x199c
-   __TEXT.__ustring: 0x24
-   __TEXT.__swift5_typeref: 0x402
 
-   __TEXT.__swift5_reflstr: 0x311
-   __TEXT.__swift5_fieldmd: 0x2a8
-   __TEXT.__swift5_types: 0x14
--  __TEXT.__unwind_info: 0x3478
-+  __TEXT.__unwind_info: 0x3488
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x39f0
-+  __DATA_CONST.__objc_selrefs: 0x3a10
-   __DATA_CONST.__objc_superrefs: 0x218
-   __DATA_CONST.__objc_arraydata: 0x8f8
-   __DATA_CONST.__got: 0x4a0
-   __AUTH_CONST.__const: 0x12f8
--  __AUTH_CONST.__cfstring: 0xdbc0
--  __AUTH_CONST.__objc_const: 0xcc20
-+  __AUTH_CONST.__cfstring: 0xdc20
-+  __AUTH_CONST.__objc_const: 0xcc80
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x120
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_intobj: 0x48
-   __AUTH_CONST.__auth_got: 0x10e8
--  __AUTH.__objc_data: 0x680
-   __AUTH.__thread_vars: 0x30
-   __AUTH.__thread_bss: 0x8
--  __DATA.__objc_ivar: 0xdac
--  __DATA.__data: 0xd18
-+  __DATA.__objc_ivar: 0xdb4
-+  __DATA.__data: 0x80
-   __DATA.__common: 0x101
--  __DATA_DIRTY.__objc_data: 0x17c0
--  __DATA_DIRTY.__data: 0x50
-+  __DATA_DIRTY.__objc_data: 0x1e40
-+  __DATA_DIRTY.__data: 0xce8
-   __DATA_DIRTY.__crash_info: 0x148
-   __DATA_DIRTY.__bss: 0xc8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 3381
 -  Symbols:   6147
 -  CStrings:  2907
 +  Functions: 3387
 +  Symbols:   6156
 +  CStrings:  2912
- 
 Symbols:
 + -[VMUObjectIdentifier libswiftCoreSymbolOwner]
 + -[VMUTask isSimulator]

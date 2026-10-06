@@ -2,14 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/SFSymbols.framework/CoreGlyphsPrivate.bundle/CoreGlyphsPrivate`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x40` | `0x48` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -204.0.0.0.0
 +204.0.0.1.0
-   __TEXT.__text: 0x0
--  __TEXT.__const: 0x40
-+  __TEXT.__const: 0x48
-   - /usr/lib/libSystem.B.dylib
-   Functions: 0
-   Symbols:   2
 ```

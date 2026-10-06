@@ -2,122 +2,60 @@
 
 > `/System/Library/PrivateFrameworks/Message.framework/Message`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xaf76c8` | `0xb00d64` | **`+0x969c`** |
+| `__TEXT.__gcc_except_tab` | `0x36a70` | `0x3701c` | **`+0x5ac`** |
+| `__AUTH_CONST.__const` | `0xac760` | `0xaccb8` | **`+0x558`** |
+| `__TEXT.__eh_frame` | `0x1861c` | `0x18954` | **`+0x338`** |
+| `__DATA.__bss` | `0x53640` | `0x53950` | **`+0x310`** |
+| `__TEXT.__oslogstring` | `0x27c80` | `0x27eb0` | **`+0x230`** |
+| `__TEXT.__swift5_capture` | `0x3377c` | `0x33968` | **`+0x1ec`** |
+| `__TEXT.__const` | `0x6b608` | `0x6b7e8` | **`+0x1e0`** |
+| `__AUTH.__data` | `0xb3f8` | `0xb5c8` | **`+0x1d0`** |
+| `__TEXT.__unwind_info` | `0x1ea28` | `0x1ebe8` | **`+0x1c0`** |
+| `__TEXT.__swift5_fieldmd` | `0x153a4` | `0x15508` | **`+0x164`** |
+| `__TEXT.__cstring` | `0x31366` | `0x314c6` | **`+0x160`** |
+| `__TEXT.__swift5_reflstr` | `0xf240` | `0xf370` | **`+0x130`** |
+| `__TEXT.__swift5_typeref` | `0x10c02` | `0x10d0c` | **`+0x10a`** |
+| `__AUTH_CONST.__cfstring` | `0x18660` | `0x18700` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x15448` | `0x154c8` | **`+0x80`** |
+| `__AUTH_CONST.__auth_got` | `0x40f8` | `0x4090` | **`-0x68`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb858` | `0xb8c0` | **`+0x68`** |
+| `__TEXT.__objc_methlist` | `0x1444c` | `0x144ac` | **`+0x60`** |
+| `__TEXT.__constg_swiftt` | `0xda18` | `0xda74` | **`+0x5c`** |
+| `__AUTH_CONST.__objc_const` | `0x230d0` | `0x23118` | **`+0x48`** |
+| `__DATA.__data` | `0xe918` | `0xe948` | **`+0x30`** |
+| `__DATA.__common` | `0xea9` | `0xec9` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x2e90` | `0x2eb0` | **`+0x20`** |
+| `__TEXT.__swift5_assocty` | `0x1d20` | `0x1d38` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0x2a20` | `0x2a38` | **`+0x18`** |
+| `__TEXT.__swift5_mpenum` | `0x7e8` | `0x7f0` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x182c` | `0x1834` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__ustring`
+
+### Other Changes
 
 ```diff
 
 -3901.100.1.2.14
--  __TEXT.__text: 0xadd5d8
--  __TEXT.__objc_methlist: 0x1444c
--  __TEXT.__gcc_except_tab: 0x36a70
--  __TEXT.__const: 0x6b608
--  __TEXT.__cstring: 0x31366
--  __TEXT.__oslogstring: 0x27c80
--  __TEXT.__ustring: 0x23ca
 +3901.200.34.0.0
-+  __TEXT.__text: 0xae6a84
-+  __TEXT.__objc_methlist: 0x144ac
-+  __TEXT.__const: 0x6b7e8
-+  __TEXT.__gcc_except_tab: 0x3701c
-+  __TEXT.__cstring: 0x314c6
-   __TEXT.__dlopen_cstrs: 0xae
--  __TEXT.__swift5_typeref: 0x10c02
--  __TEXT.__swift5_capture: 0x3377c
--  __TEXT.__constg_swiftt: 0xda18
-+  __TEXT.__oslogstring: 0x27eb0
-+  __TEXT.__ustring: 0x23ca
-+  __TEXT.__swift5_typeref: 0x10d0c
-+  __TEXT.__swift5_capture: 0x33968
-+  __TEXT.__constg_swiftt: 0xda74
-+  __TEXT.__swift5_reflstr: 0xf370
-+  __TEXT.__swift5_fieldmd: 0x15508
-   __TEXT.__swift5_builtin: 0xd70
--  __TEXT.__swift5_reflstr: 0xf240
--  __TEXT.__swift5_fieldmd: 0x153a4
--  __TEXT.__swift5_assocty: 0x1d20
--  __TEXT.__swift5_proto: 0x2a20
--  __TEXT.__swift5_types: 0x182c
--  __TEXT.__swift5_mpenum: 0x7e8
-+  __TEXT.__swift5_assocty: 0x1d38
-+  __TEXT.__swift5_proto: 0x2a38
-+  __TEXT.__swift5_types: 0x1834
-+  __TEXT.__swift5_mpenum: 0x7f0
-   __TEXT.__swift5_protos: 0x6c
-   __TEXT.__swift_as_entry: 0x8
-   __TEXT.__swift_as_ret: 0x8
-   __TEXT.__swift_as_cont: 0xc
--  __TEXT.__unwind_info: 0x321a0
--  __TEXT.__eh_frame: 0x18624
-+  __TEXT.__unwind_info: 0x32488
-+  __TEXT.__eh_frame: 0x1895c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x15448
-+  __DATA_CONST.__const: 0x154c8
-   __DATA_CONST.__objc_classlist: 0xb68
-   __DATA_CONST.__objc_catlist: 0x70
-   __DATA_CONST.__objc_protolist: 0x540
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0xb858
-+  __DATA_CONST.__objc_selrefs: 0xb8c0
-   __DATA_CONST.__objc_protorefs: 0x1b8
-   __DATA_CONST.__objc_superrefs: 0x678
-   __DATA_CONST.__objc_arraydata: 0xeb8
--  __DATA_CONST.__got: 0x2e90
--  __AUTH_CONST.__const: 0xac760
--  __AUTH_CONST.__cfstring: 0x18660
--  __AUTH_CONST.__objc_const: 0x230d0
-+  __DATA_CONST.__got: 0x2eb0
-+  __AUTH_CONST.__const: 0xaccb8
-+  __AUTH_CONST.__cfstring: 0x18700
-+  __AUTH_CONST.__objc_const: 0x23118
-   __AUTH_CONST.__weak_auth_got: 0x20
--  __AUTH_CONST.__objc_arrayobj: 0xb10
-   __AUTH_CONST.__objc_intobj: 0x9a8
-+  __AUTH_CONST.__objc_arrayobj: 0xb10
-   __AUTH_CONST.__objc_dictobj: 0x78
--  __AUTH_CONST.__auth_got: 0x40f8
-+  __AUTH_CONST.__auth_got: 0x4090
-   __AUTH.__objc_data: 0x6418
--  __AUTH.__data: 0xb3f8
-+  __AUTH.__data: 0xb5c8
-   __DATA.__objc_ivar: 0x1388
--  __DATA.__data: 0xe918
-+  __DATA.__data: 0xe948
-   __DATA.__crash_info: 0x148
--  __DATA.__common: 0xea9
-+  __DATA.__common: 0xec9
-   __DATA_DIRTY.__objc_data: 0xa50
-   __DATA_DIRTY.__bss: 0x310
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /System/Library/PrivateFrameworks/Synapse.framework/Synapse
 -  - /System/Library/PrivateFrameworks/Trial.framework/Trial
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libParallelCompression.dylib
-   - /usr/lib/libSystem.B.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswift_DarwinFoundation2.dylib
 +  - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 48496
--  Symbols:   26245
+-  Symbols:   21326
 -  CStrings:  8525
 +  Functions: 48698
-+  Symbols:   26293
++  Symbols:   21364
 +  CStrings:  8545
- 
 Symbols:
 + +[MailAccount accountWithObjectID:]
 + +[MailAccount flushAllMessageStoreBodyDataCaches]
@@ -194,26 +132,6 @@ Symbols:
 + _associated conformance 12NIOIMAPCore213SortCriterionOSHAASQ
 + _associated conformance 7Message12MailboxRowIDVs27ExpressibleByIntegerLiteralAA0gH4TypesADP_s01_ef7BuiltingH0
 + _messageForFragment
-+ _objc_msgSend$_fixHMERecipientsWithHeaders:
-+ _objc_msgSend$accountObjectID
-+ _objc_msgSend$accountWithObjectID:
-+ _objc_msgSend$copyFirstHeaderForKey:
-+ _objc_msgSend$copyFirstNonDecodedHeaderForKey:
-+ _objc_msgSend$ef_containsData:
-+ _objc_msgSend$ef_match
-+ _objc_msgSend$ef_prefix:
-+ _objc_msgSend$flushAllCaches
-+ _objc_msgSend$flushAllMessageStoreBodyDataCaches
-+ _objc_msgSend$flushAllMessageStoreCaches
-+ _objc_msgSend$initAsEphemeralID:representedObjectID:
-+ _objc_msgSend$localizedStringWithFormat:
-+ _objc_msgSend$mapTableWithKeyOptions:valueOptions:
-+ _objc_msgSend$mf_isSMIMEError
-+ _objc_msgSend$mf_stringByEscapingHTMLCodes
-+ _objc_msgSend$notifyOfAccountRemovedFromIndex:
-+ _objc_msgSend$representedObjectID
-+ _objc_msgSend$resolvedPolicyForIMAPHost:
-+ _objc_msgSend$searchableMessageForBaseMessage:htmlContent:hasCompleteData:isEncrypted:includeEncryptedBody:
 + _swift_release_x11
 + _symbolic SDy__________G 16IMAP2Persistence15OpaqueMailboxIDV AA13SearchRequestV15RangesToExcludeV
 + _symbolic SDy__________y_____GG 16IMAP2Persistence15OpaqueMailboxIDV 12NIOIMAPCore228MessageIdentifierSetNonEmptyV AD3UIDV
@@ -294,16 +212,6 @@ Symbols:
 - _associated conformance 12IMAP2Helpers15MillisecondDateVSHAASQ
 - _associated conformance 12NIOIMAPCore211MailboxDataO10SearchSortVSHAASQ
 - _associated conformance 12NIOIMAPCore225FetchModificationResponseVSHAASQ
-- _objc_msgSend$_indexMessage:includeBody:indexingType:
-- _objc_msgSend$booleanValue
-- _objc_msgSend$client
-- _objc_msgSend$csAccountTypeString
-- _objc_msgSend$defaultPolicy
-- _objc_msgSend$initWithRepresentedObjectID:
-- _objc_msgSend$isPartOfExistingThread
-- _objc_msgSend$levelForFactor:withNamespaceName:
-- _objc_msgSend$searchableMessageAttachmentsForBaseMessage:includeEncryptedBody:
-- _objc_msgSend$searchableMessageUpdateForBaseMessage:
 - _symbolic SDy__________G 12NIOIMAPCore211MailboxNameV 16IMAP2Persistence13SearchRequestV15RangesToExcludeV
 - _symbolic SDy__________y_____GG 12NIOIMAPCore211MailboxNameV AA28MessageIdentifierSetNonEmptyV AA3UIDV
 - _symbolic Say_____G 11EmailDaemon17SearchableMessageV0A7AddressV

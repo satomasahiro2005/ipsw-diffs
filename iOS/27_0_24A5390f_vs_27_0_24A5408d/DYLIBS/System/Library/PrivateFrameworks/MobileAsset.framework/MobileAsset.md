@@ -2,70 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8c500` | `0x8e060` | **`+0x1b60`** |
+| `__TEXT.__cstring` | `0x13ae2` | `0x13e91` | **`+0x3af`** |
+| `__AUTH_CONST.__cfstring` | `0xfdc0` | `0x10120` | **`+0x360`** |
+| `__AUTH_CONST.__objc_const` | `0xa970` | `0xac90` | **`+0x320`** |
+| `__TEXT.__oslogstring` | `0xb975` | `0xbba3` | **`+0x22e`** |
+| `__TEXT.__objc_methlist` | `0x6d74` | `0x6f64` | **`+0x1f0`** |
+| `__AUTH.__objc_data` | `0xb40` | `0xbe0` | **`+0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3808` | `0x38a8` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x1f20` | `0x1f88` | **`+0x68`** |
+| `__TEXT.__gcc_except_tab` | `0x1338` | `0x1394` | **`+0x5c`** |
+| `__DATA_CONST.__const` | `0x2758` | `0x27a0` | **`+0x48`** |
+| `__DATA.__objc_ivar` | `0x90c` | `0x92c` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x478` | `0x488` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x280` | `0x290` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x248` | `0x258` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -2215.0.16.0.0
--  __TEXT.__text: 0x8c500
--  __TEXT.__objc_methlist: 0x6d74
 +2215.0.20.0.0
-+  __TEXT.__text: 0x8e060
-+  __TEXT.__objc_methlist: 0x6f64
-   __TEXT.__const: 0x2c4
--  __TEXT.__cstring: 0x13ae2
--  __TEXT.__oslogstring: 0xb975
--  __TEXT.__gcc_except_tab: 0x1338
--  __TEXT.__unwind_info: 0x1f20
-+  __TEXT.__cstring: 0x13e91
-+  __TEXT.__oslogstring: 0xbba3
-+  __TEXT.__gcc_except_tab: 0x1394
-+  __TEXT.__unwind_info: 0x1f88
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2758
--  __DATA_CONST.__objc_classlist: 0x280
-+  __DATA_CONST.__const: 0x27a0
-+  __DATA_CONST.__objc_classlist: 0x290
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x38
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3808
-+  __DATA_CONST.__objc_selrefs: 0x38a8
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__objc_superrefs: 0x248
-+  __DATA_CONST.__objc_superrefs: 0x258
-   __DATA_CONST.__objc_arraydata: 0x350
--  __DATA_CONST.__got: 0x478
-+  __DATA_CONST.__got: 0x488
-   __AUTH_CONST.__const: 0x7e0
--  __AUTH_CONST.__cfstring: 0xfdc0
--  __AUTH_CONST.__objc_const: 0xa970
-+  __AUTH_CONST.__cfstring: 0x10120
-+  __AUTH_CONST.__objc_const: 0xac90
-   __AUTH_CONST.__objc_arrayobj: 0x108
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_intobj: 0x2e8
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0xb40
--  __DATA.__objc_ivar: 0x90c
-+  __AUTH.__objc_data: 0xbe0
-+  __DATA.__objc_ivar: 0x92c
-   __DATA.__data: 0x358
-   __DATA.__crash_info: 0x148
-   __DATA.__bss: 0x1c8
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 3066
--  Symbols:   6197
+-  Symbols:   5021
 -  CStrings:  2826
 +  Functions: 3106
-+  Symbols:   6282
++  Symbols:   5091
 +  CStrings:  2858
- 
 Symbols:
 + +[MAAutoAssetMigrationInfo supportsSecureCoding]
 + +[MAAutoAssetMigrationResults supportsSecureCoding]
@@ -137,21 +106,6 @@ Symbols:
 + ___52+[MAAutoAssetSet preinstalledAssetMigrationResults:]_block_invoke
 + ___block_descriptor_48_e8_32r40r_e42_v24?0"SUCoreConnectMessage"8"NSError"16lr32l8r40l8
 + _kMobileAssetPreferencesInternalVariantAsSeed
-+ _objc_msgSend$addFailedMigratedInfo:
-+ _objc_msgSend$addSuccessfullyMigratedInfo:
-+ _objc_msgSend$arrayIsEqual:to:
-+ _objc_msgSend$errorIsEqual:to:
-+ _objc_msgSend$failedMigratedAssetInfo
-+ _objc_msgSend$infoFromDescriptor:
-+ _objc_msgSend$infoFromDescriptor:withError:
-+ _objc_msgSend$migrationError
-+ _objc_msgSend$migrationSucceeded
-+ _objc_msgSend$setAssetSpecifier:
-+ _objc_msgSend$setAssetType:
-+ _objc_msgSend$setMigrationError:
-+ _objc_msgSend$setMigrationSucceeded:
-+ _objc_msgSend$setupErrors
-+ _objc_msgSend$successfullyMigratedAssetInfo
 CStrings:
 + "AssetMigrationInfo: { Type: %@ | Specifier: %@ | Version: %@ | MigrationSucceeded: %@ |  MigrationError: %@}\n"
 + "InternalVariantAsSeed"

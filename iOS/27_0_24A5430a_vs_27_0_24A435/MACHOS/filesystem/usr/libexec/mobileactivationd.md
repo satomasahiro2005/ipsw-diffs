@@ -2,19 +2,16 @@
 
 > `/usr/libexec/mobileactivationd`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
 
+### Other Changes
+
 ```diff
 
-   - /usr/lib/liblockdown.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 1660
 -  Symbols:   4049
 +  Symbols:   4048
-   CStrings:  3067
- 
 Symbols:
 - _OUTLINED_FUNCTION_18
 CStrings:

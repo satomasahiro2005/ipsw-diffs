@@ -2,80 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/AXMediaUtilities.framework/AXMediaUtilities`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd4554` | `0xd6480` | **`+0x1f2c`** |
+| `__AUTH_CONST.__cfstring` | `0xcc60` | `0xcdc0` | **`+0x160`** |
+| `__TEXT.__oslogstring` | `0x5420` | `0x5529` | **`+0x109`** |
+| `__TEXT.__objc_methlist` | `0xb534` | `0xb61c` | **`+0xe8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6238` | `0x6300` | **`+0xc8`** |
+| `__TEXT.__cstring` | `0xa6aa` | `0xa772` | **`+0xc8`** |
+| `__AUTH_CONST.__objc_const` | `0x143a8` | `0x14448` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x3578` | `0x35a0` | **`+0x28`** |
+| `__TEXT.__const` | `0x166c` | `0x168c` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0xe78` | `0xe90` | **`+0x18`** |
+| `__TEXT.__gcc_except_tab` | `0x58b8` | `0x58d0` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0xec4` | `0xed0` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0xf00` | `0xf08` | **`+0x8`** |
+| `__DATA.__data` | `0xe30` | `0xe38` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -184.0.0.0.0
--  __TEXT.__text: 0xd4554
--  __TEXT.__objc_methlist: 0xb534
--  __TEXT.__const: 0x166c
 +186.0.0.0.0
-+  __TEXT.__text: 0xd6480
-+  __TEXT.__objc_methlist: 0xb61c
-+  __TEXT.__const: 0x168c
-   __TEXT.__dlopen_cstrs: 0xc72
-   __TEXT.__swift5_typeref: 0x2f0
--  __TEXT.__cstring: 0xa6aa
-+  __TEXT.__cstring: 0xa772
-   __TEXT.__swift5_reflstr: 0x25d
-   __TEXT.__swift5_assocty: 0xc0
-   __TEXT.__constg_swiftt: 0x3f8
 
-   __TEXT.__swift5_builtin: 0x50
-   __TEXT.__swift5_proto: 0x8c
-   __TEXT.__swift5_types: 0x30
--  __TEXT.__gcc_except_tab: 0x58b8
--  __TEXT.__oslogstring: 0x5420
-+  __TEXT.__gcc_except_tab: 0x58d0
-+  __TEXT.__oslogstring: 0x5529
-   __TEXT.__ustring: 0x422
--  __TEXT.__unwind_info: 0x3578
-+  __TEXT.__unwind_info: 0x35a0
-   __TEXT.__eh_frame: 0x390
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_protolist: 0xd0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6238
-+  __DATA_CONST.__objc_selrefs: 0x6300
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__objc_superrefs: 0x418
-   __DATA_CONST.__objc_arraydata: 0x6b8
--  __DATA_CONST.__got: 0xe78
-+  __DATA_CONST.__got: 0xe90
-   __AUTH_CONST.__const: 0x1d28
--  __AUTH_CONST.__cfstring: 0xcc60
--  __AUTH_CONST.__objc_const: 0x143a8
-+  __AUTH_CONST.__cfstring: 0xcdc0
-+  __AUTH_CONST.__objc_const: 0x14448
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0xab0
-   __AUTH_CONST.__objc_doubleobj: 0x290
-   __AUTH_CONST.__objc_arrayobj: 0x240
-   __AUTH_CONST.__objc_dictobj: 0x78
--  __AUTH_CONST.__auth_got: 0xf00
-+  __AUTH_CONST.__auth_got: 0xf08
-   __AUTH.__objc_data: 0x3db0
-   __AUTH.__data: 0x78
--  __DATA.__objc_ivar: 0xec4
--  __DATA.__data: 0xe30
-+  __DATA.__objc_ivar: 0xed0
-+  __DATA.__data: 0xe38
-   __DATA.__bss: 0x1d20
-   __DATA.__common: 0x80
-   __DATA_DIRTY.__objc_data: 0x2d0
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4745
--  Symbols:   11183
+-  Symbols:   8747
 -  CStrings:  2500
 +  Functions: 4764
-+  Symbols:   11231
++  Symbols:   8774
 +  CStrings:  2513
- 
 Symbols:
 + -[AXMBrailleEdgeDetectorOptions edgeLuminanceThreshold]
 + -[AXMBrailleEdgeDetectorOptions flatLuminanceThreshold]
@@ -350,31 +308,6 @@ Symbols:
 + ___83-[AXMScreenGrabber grabScreenWithRect:orientation:displayID:options:metrics:error:]_block_invoke
 + _kCIInputBackgroundImageKey
 + _kCIInputRadiusKey
-+ _objc_msgSend$_analyzeImage:
-+ _objc_msgSend$_compositedLuminanceOfPixel:overBackground:
-+ _objc_msgSend$_displayForID:
-+ _objc_msgSend$_flatImageNormalizationBoundsForStats:outMin:outMax:
-+ _objc_msgSend$_flattenTransparency:overWhite:
-+ _objc_msgSend$_generateResultFromEdgeDetectedImage:canvasDescription:invert:threshold:panOrigin:zoom:
-+ _objc_msgSend$_generateResultFromFlatImage:canvasDescription:invert:threshold:normalizeMin:normalizeMax:panOrigin:zoom:
-+ _objc_msgSend$_luminanceRangeInData:canvas:rect:outMin:outMax:
-+ _objc_msgSend$_pinsFromData:canvas:normalizeMin:normalizeMax:threshold:invert:
-+ _objc_msgSend$_processImage:analaysisOptions:stats:
-+ _objc_msgSend$_quantizeLuminance:toPinHeightCount:invert:threshold:
-+ _objc_msgSend$_renderImage:ontoCanvas:panOrigin:zoom:contentRect:
-+ _objc_msgSend$assetTimeZone
-+ _objc_msgSend$colorWithRed:green:blue:alpha:
-+ _objc_msgSend$dataWithCapacity:
-+ _objc_msgSend$edgeLuminanceThreshold
-+ _objc_msgSend$flatLuminanceThreshold
-+ _objc_msgSend$grabScreenWithRect:orientation:displayID:options:metrics:error:
-+ _objc_msgSend$imageWithColor:
-+ _objc_msgSend$isExternal
-+ _objc_msgSend$localCreationDate
-+ _objc_msgSend$setAssetTimeZone:
-+ _objc_msgSend$setIncludeTrashedAssets:
-+ _objc_msgSend$setIsExternal:
-+ _objc_msgSend$timeZoneForSecondsFromGMT:
 - -[AXMBrailleEdgeDetectorOptions luminanceThreshold]
 - -[AXMBrailleEdgeDetectorOptions setLuminanceThreshold:]
 - -[AXMBrailleEdgesDetectorNode _generateResultFromImage:canvasDescription:invert:luminanceThreshold:]
@@ -621,10 +554,6 @@ Symbols:
 - GCC_except_table993
 - _OBJC_IVAR_$_AXMBrailleEdgeDetectorOptions._luminanceThreshold
 - ___73-[AXMScreenGrabber grabScreenWithRect:orientation:options:metrics:error:]_block_invoke
-- _objc_msgSend$_generateResultFromImage:canvasDescription:invert:luminanceThreshold:
-- _objc_msgSend$_mapLuminance:toDiscreteNumber:invert:threshold:
-- _objc_msgSend$_processImage:analaysisOptions:
-- _objc_msgSend$luminanceThreshold
 CStrings:
 + "    edgeLuminanceThreshold: %.2f\n"
 + "    flatLuminanceThreshold: %.2f\n"

@@ -2,51 +2,29 @@
 
 > `/System/Library/VideoEncoders/AppleProResHWEncoder.videoencoder`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__gcc_except_tab`
-- `__DATA_CONST.__weak_got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__weak_auth_got`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x20820` | `0x209c8` | **`+0x1a8`** |
+| `__AUTH_CONST.__cfstring` | `0x360` | `0x4a0` | **`+0x140`** |
+| `__TEXT.__cstring` | `0x1403` | `0x1491` | **`+0x8e`** |
+| `__TEXT.__oslogstring` | `0x40f4` | `0x4151` | **`+0x5d`** |
+| `__TEXT.__unwind_info` | `0x448` | `0x440` | **`-0x8`** |
+
+### Other Changes
 
 ```diff
 
 -600.38.0.0.0
--  __TEXT.__text: 0x20820
 +600.45.0.0.0
-+  __TEXT.__text: 0x209c8
-   __TEXT.__const: 0x746f0
-   __TEXT.__gcc_except_tab: 0x310
--  __TEXT.__cstring: 0x1403
--  __TEXT.__oslogstring: 0x40f4
--  __TEXT.__unwind_info: 0x448
-+  __TEXT.__cstring: 0x1491
-+  __TEXT.__oslogstring: 0x4151
-+  __TEXT.__unwind_info: 0x440
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__weak_got: 0x8
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x188
--  __AUTH_CONST.__cfstring: 0x360
-+  __AUTH_CONST.__cfstring: 0x4a0
-   __AUTH_CONST.__weak_auth_got: 0x40
-   __AUTH_CONST.__auth_got: 0x598
-   __DATA.__data: 0xb
 
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-   - /System/Library/Frameworks/IOSurface.framework/IOSurface
-   - /System/Library/Frameworks/VideoToolbox.framework/VideoToolbox
 -  - /System/Library/PrivateFrameworks/CMCaptureCore.framework/CMCaptureCore
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   Functions: 494
+
 -  Symbols:   603
 -  CStrings:  403
 +  Symbols:   593
 +  CStrings:  414
- 
 Symbols:
 - _kFigCaptureStreamMetadata_AGC
 - _kFigCaptureStreamMetadata_AWBComboBGain

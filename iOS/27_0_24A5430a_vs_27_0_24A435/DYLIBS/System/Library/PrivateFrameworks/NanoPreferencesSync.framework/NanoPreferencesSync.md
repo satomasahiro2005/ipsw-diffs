@@ -2,24 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/NanoPreferencesSync.framework/NanoPreferencesSync`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9e18` | `0x9e14` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
- 332.0.0.0.0
--  __TEXT.__text: 0x9e18
-+  __TEXT.__text: 0x9e14
-   __TEXT.__objc_methlist: 0x75c
-   __TEXT.__cstring: 0xacc
-   __TEXT.__const: 0xa0
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 292
--  Symbols:   723
+-  Symbols:   585
 +  Functions: 293
-+  Symbols:   724
-   CStrings:  161
- 
++  Symbols:   586
 Symbols:
 + _OUTLINED_FUNCTION_13
 Functions:

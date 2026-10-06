@@ -2,8 +2,12 @@
 
 > `/System/Library/Frameworks/CoreImage.framework/coreui_archive_bin.metallib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__reflection`
-- `__TEXT.__compute`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__compute` | `0xe190` | `0xe1a0` | **`+0x10`** |
+
+### Same-size Content Changes
+
 - `__TEXT.__metallib`

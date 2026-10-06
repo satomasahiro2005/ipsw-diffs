@@ -2,32 +2,33 @@
 
 > `/System/Library/Assistant/FlowDelegatePlugins/InformationFlowPlugin.bundle/InformationFlowPlugin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb8554` | `0xb8570` | **`+0x1c`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__const`
 - `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
 - `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
 
-```diff
+### Other Changes
 
- 3600.38.8.11.2
--  __TEXT.__text: 0xb8554
-+  __TEXT.__text: 0xb8570
-   __TEXT.__auth_stubs: 0x4ef0
-   __TEXT.__objc_stubs: 0x2420
-   __TEXT.__objc_methlist: 0x26c
+```text
 Functions:
 ~ _$s11SiriKitFlow5ParseO16DirectInvocationV011InformationC6PluginE3get12protoMessagexSgSS_t21InternalSwiftProtobuf0K0RzlF : 1448 -> 1452
 ~ _$s21InformationFlowPlugin0a7RoutingB0C7execute07SiriKitB015ExecuteResponseVyYaFTY0_ : 16612 -> 16624

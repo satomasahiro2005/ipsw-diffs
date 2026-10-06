@@ -2,30 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/DialogEngine.framework/catutil`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x61e5c` | `0x61b5c` | **`-0x300`** |
+| `__TEXT.__unwind_info` | `0x1a78` | `0x1a70` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__cstring`
+- `__TEXT.__eh_frame`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__init_offsets`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x61e5c
-+  __TEXT.__text: 0x61b5c
-   __TEXT.__auth_stubs: 0x16d0
-   __TEXT.__objc_stubs: 0xe0
-   __TEXT.__init_offsets: 0x8
-
-   __TEXT.__gcc_except_tab: 0x6b8c
-   __TEXT.__cstring: 0x5e94
-   __TEXT.__objc_methname: 0xab
--  __TEXT.__unwind_info: 0x1a78
-+  __TEXT.__unwind_info: 0x1a70
-   __TEXT.__eh_frame: 0x48
-   __DATA_CONST.__const: 0xa08
-   __DATA_CONST.__objc_imageinfo: 0x8
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA.__objc_selrefs : content changed
+-3600.23.3.0.0
++3600.23.4.0.0
 Functions:
 ~ sub_1000061bc : 176 -> 156
 ~ sub_100006d44 -> sub_100006d30 : 740 -> 704
@@ -75,5 +74,4 @@ Functions:
 CStrings:
 + "3600.23.4"
 - "3600.23.3"
-
 ```

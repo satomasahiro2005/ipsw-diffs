@@ -2,50 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/CoreMediaStream.framework/CoreMediaStream`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcd3e0` | `0xcd52c` | **`+0x14c`** |
+| `__TEXT.__oslogstring` | `0xef38` | `0xef85` | **`+0x4d`** |
+| `__AUTH_CONST.__cfstring` | `0x87e0` | `0x8800` | **`+0x20`** |
+| `__TEXT.__cstring` | `0xa4b5` | `0xa4ca` | **`+0x15`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4078` | `0x4080` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x2d40` | `0x2d48` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.235.0.0
--  __TEXT.__text: 0xca304
 +916.40.110.0.0
-+  __TEXT.__text: 0xca450
-   __TEXT.__objc_methlist: 0x8240
-   __TEXT.__const: 0x1b8
--  __TEXT.__cstring: 0xa4b5
-+  __TEXT.__cstring: 0xa4ca
-   __TEXT.__gcc_except_tab: 0x2770
--  __TEXT.__oslogstring: 0xef38
--  __TEXT.__unwind_info: 0x34e0
-+  __TEXT.__oslogstring: 0xef85
-+  __TEXT.__unwind_info: 0x34e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x40
-   __DATA_CONST.__objc_protolist: 0xe0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4078
-+  __DATA_CONST.__objc_selrefs: 0x4080
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x220
-   __DATA_CONST.__got: 0x4e8
-   __AUTH_CONST.__const: 0x870
--  __AUTH_CONST.__cfstring: 0x87e0
-+  __AUTH_CONST.__cfstring: 0x8800
-   __AUTH_CONST.__objc_const: 0x9bf0
-   __AUTH_CONST.__objc_intobj: 0x48
-   __AUTH_CONST.__auth_got: 0x0
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 3615
--  Symbols:   7429
+-  Symbols:   5786
 -  CStrings:  2278
 +  Functions: 3616
-+  Symbols:   7431
++  Symbols:   5787
 +  CStrings:  2280
- 
 Symbols:
 + GCC_except_table2611
 + GCC_except_table2613
@@ -112,7 +92,6 @@ Symbols:
 + GCC_except_table3599
 + GCC_except_table3603
 + __logNonSuccessResponse
-+ _objc_msgSend$valueForHTTPHeaderField:
 - GCC_except_table2608
 - GCC_except_table2612
 - GCC_except_table2614

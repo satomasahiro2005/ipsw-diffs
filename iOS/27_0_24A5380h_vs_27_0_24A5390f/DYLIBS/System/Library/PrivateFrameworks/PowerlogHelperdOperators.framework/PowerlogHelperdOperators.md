@@ -2,96 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/PowerlogHelperdOperators.framework/PowerlogHelperdOperators`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_nlclslist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1d6d48` | `0x1d96a8` | **`+0x2960`** |
+| `__AUTH_CONST.__objc_const` | `0x157a8` | `0x15ac8` | **`+0x320`** |
+| `__TEXT.__objc_methlist` | `0x10738` | `0x10928` | **`+0x1f0`** |
+| `__DATA_CONST.__objc_selrefs` | `0xab28` | `0xac90` | **`+0x168`** |
+| `__AUTH_CONST.__cfstring` | `0x33480` | `0x335c0` | **`+0x140`** |
+| `__TEXT.__cstring` | `0x26160` | `0x26211` | **`+0xb1`** |
+| `__TEXT.__unwind_info` | `0x3aa0` | `0x3b30` | **`+0x90`** |
+| `__TEXT.__gcc_except_tab` | `0x247c` | `0x24e8` | **`+0x6c`** |
+| `__AUTH.__objc_data` | `0xaa0` | `0xaf0` | **`+0x50`** |
+| `__DATA.__objc_ivar` | `0x1598` | `0x15cc` | **`+0x34`** |
+| `__DATA_CONST.__const` | `0x4428` | `0x4448` | **`+0x20`** |
+| `__TEXT.__oslogstring` | `0x14a6b` | `0x14a8b` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x2880` | `0x2898` | **`+0x18`** |
+| `__DATA.__bss` | `0x20b0` | `0x2098` | **`-0x18`** |
+| `__DATA_CONST.__got` | `0xf40` | `0xf50` | **`+0x10`** |
+| `__TEXT.__const` | `0x6e0` | `0x6f0` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xdf0` | `0xdf8` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x380` | `0x388` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x2c0` | `0x2c8` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -3486.0.46.502.1
--  __TEXT.__text: 0x1d6d48
--  __TEXT.__objc_methlist: 0x10738
--  __TEXT.__const: 0x6e0
--  __TEXT.__cstring: 0x26160
--  __TEXT.__oslogstring: 0x14a6b
--  __TEXT.__gcc_except_tab: 0x247c
 +3486.0.81.502.4
-+  __TEXT.__text: 0x1d96a8
-+  __TEXT.__objc_methlist: 0x10928
-+  __TEXT.__const: 0x6f0
-+  __TEXT.__cstring: 0x26211
-+  __TEXT.__oslogstring: 0x14a8b
-+  __TEXT.__gcc_except_tab: 0x24e8
-   __TEXT.__ustring: 0x10
--  __TEXT.__unwind_info: 0x3aa0
-+  __TEXT.__unwind_info: 0x3b30
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4428
--  __DATA_CONST.__objc_classlist: 0x380
-+  __DATA_CONST.__const: 0x4448
-+  __DATA_CONST.__objc_classlist: 0x388
-   __DATA_CONST.__objc_nlclslist: 0x108
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0xab28
-+  __DATA_CONST.__objc_selrefs: 0xac90
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x2c0
-+  __DATA_CONST.__objc_superrefs: 0x2c8
-   __DATA_CONST.__objc_arraydata: 0x15990
--  __DATA_CONST.__got: 0xf40
-+  __DATA_CONST.__got: 0xf50
-   __AUTH_CONST.__const: 0x1a20
--  __AUTH_CONST.__cfstring: 0x33480
--  __AUTH_CONST.__objc_const: 0x157a8
-+  __AUTH_CONST.__cfstring: 0x335c0
-+  __AUTH_CONST.__objc_const: 0x15ac8
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__objc_intobj: 0x2880
-+  __AUTH_CONST.__objc_intobj: 0x2898
-   __AUTH_CONST.__objc_dictobj: 0x3a20
-   __AUTH_CONST.__objc_doubleobj: 0xb90
-   __AUTH_CONST.__objc_arrayobj: 0x2e38
--  __AUTH_CONST.__auth_got: 0xdf0
--  __AUTH.__objc_data: 0xaa0
--  __DATA.__objc_ivar: 0x1598
-+  __AUTH_CONST.__auth_got: 0xdf8
-+  __AUTH.__objc_data: 0xaf0
-+  __DATA.__objc_ivar: 0x15cc
-   __DATA.__data: 0x580
--  __DATA.__bss: 0x20b0
-+  __DATA.__bss: 0x2098
-   __DATA.__common: 0x74
-   __DATA_DIRTY.__objc_data: 0x1860
-   __DATA_DIRTY.__data: 0x10
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 8520
--  Symbols:   15920
+-  Symbols:   11569
 -  CStrings:  8908
 +  Functions: 8565
-+  Symbols:   16015
++  Symbols:   11637
 +  CStrings:  8920
- 
 Symbols:
 + +[PLBatteryAgent entryEventBackwardDefinitionRebalance]
 + +[PLBatteryAgent fusePackCurrentAccumulators:fusedAccumulator:fusedCount:]
@@ -217,42 +164,6 @@ Symbols:
 + _kPLBatteryAgentEventBackwardNameSocLimit
 + _modelDynamicDisplayPowerFromAPL:withRootNodeID:.classDebugEnabled
 + _modelDynamicDisplayPowerFromAPL:withRootNodeID:.defaultOnce
-+ _objc_msgSend$_bufferAnimationInterval:forBucketKey:
-+ _objc_msgSend$_primeSystemAgents
-+ _objc_msgSend$_processBatchForBucketKey:
-+ _objc_msgSend$_runFullSetup
-+ _objc_msgSend$addForegroundTimeAtDate:withNewLayoutElementsArray:forScreenContext:
-+ _objc_msgSend$addGlitchWithDuration:scrollDuration:glitchCount:isScrollStart:
-+ _objc_msgSend$beginDate
-+ _objc_msgSend$contextAppsOnScreen
-+ _objc_msgSend$contextPiPModeApps
-+ _objc_msgSend$displayEntryKey
-+ _objc_msgSend$entryEventBackwardDefinitionChargerData
-+ _objc_msgSend$firstMatchInString:options:range:
-+ _objc_msgSend$flushForegroundTimeAtDate:
-+ _objc_msgSend$fullSetupCompleted
-+ _objc_msgSend$globalDisplayState
-+ _objc_msgSend$handleDisplayCallback:forScreenContext:
-+ _objc_msgSend$handleScreenStateCallback:forScreenContext:
-+ _objc_msgSend$initOperatorDependanciesSynchronously
-+ _objc_msgSend$initWithEntryKey:withDate:capacity:
-+ _objc_msgSend$initWithScreenIndex:screenStateEntryKey:displayEntryKey:storage:
-+ _objc_msgSend$logEventBackwardChargerDataWithRawData:
-+ _objc_msgSend$modelDisplayPowerFromIOMFB:withRootNodeID:
-+ _objc_msgSend$modelDynamicDisplayPowerFromAPL:withRootNodeID:
-+ _objc_msgSend$nonFirstFrameContributedGlitchTimeRatioAdjustedMsPerS
-+ _objc_msgSend$recomputeGlobalUnionSets
-+ _objc_msgSend$screenActive
-+ _objc_msgSend$screenActiveOrAOD
-+ _objc_msgSend$screenContexts
-+ _objc_msgSend$screenStateEntryKey
-+ _objc_msgSend$setAnimationHitchTotalAnimationDuration:weightedGlitchRatioSum:
-+ _objc_msgSend$setFullSetupCompleted:
-+ _objc_msgSend$setGlobalDisplayState:
-+ _objc_msgSend$setMusicPlayerForeground:
-+ _objc_msgSend$setTransaction:
-+ _objc_msgSend$startedSetUp
-+ _objc_msgSend$unionOfAnimationIntervals:
 + _objc_retain_x9
 + _parseBuildVersion
 - -[PLAppTimeService addForegroundTimeAtDate:withNewLayoutElementsArray:]
@@ -312,15 +223,6 @@ Symbols:
 - _handleDisplayCallback:.defaultOnce
 - _modelDynamicDisplayPowerFromAPL:.classDebugEnabled
 - _modelDynamicDisplayPowerFromAPL:.defaultOnce
-- _objc_msgSend$addForegroundTimeAtDate:withNewLayoutElementsArray:
-- _objc_msgSend$addGlitchWithDuration:scrollDuration:glitchCount:isScrollStart:glitchRatio:animationDuration:
-- _objc_msgSend$chunkAppsOnScreenAtDate:
-- _objc_msgSend$entryKeyPLScreenStateAgentScreenState
-- _objc_msgSend$handleScreenStateCallback:
-- _objc_msgSend$modelDisplayPowerFromIOMFB:
-- _objc_msgSend$modelDynamicDisplayPowerFromAPL:
-- _objc_msgSend$resetLayoutElementsPLEntryArray:withNowDate:
-- _objc_msgSend$updatePiPModeAppsSet:withAppRole:
 - _setUpForMonitoring.onceToken
 CStrings:
 + "-[PLAppTimeService handleDisplayCallback:forScreenContext:]"

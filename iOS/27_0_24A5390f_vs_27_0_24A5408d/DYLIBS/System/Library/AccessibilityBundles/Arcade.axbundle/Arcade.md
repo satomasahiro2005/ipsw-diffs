@@ -2,58 +2,35 @@
 
 > `/System/Library/AccessibilityBundles/Arcade.axbundle/Arcade`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa89c` | `0xa374` | **`-0x528`** |
+| `__AUTH_CONST.__objc_const` | `0x77d0` | `0x7470` | **`-0x360`** |
+| `__AUTH.__objc_data` | `0x4290` | `0x40b0` | **`-0x1e0`** |
+| `__TEXT.__cstring` | `0x36db` | `0x3574` | **`-0x167`** |
+| `__AUTH_CONST.__cfstring` | `0x3980` | `0x3840` | **`-0x140`** |
+| `__TEXT.__objc_methlist` | `0x2784` | `0x265c` | **`-0x128`** |
+| `__DATA_CONST.__objc_classlist` | `0x6a8` | `0x678` | **`-0x30`** |
+| `__DATA_CONST.__const` | `0x168` | `0x140` | **`-0x28`** |
+| `__TEXT.__unwind_info` | `0x5b8` | `0x590` | **`-0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0x530` | `0x518` | **`-0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x200` | `0x1f0` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3045.0.0.0.0
--  __TEXT.__text: 0xa89c
--  __TEXT.__objc_methlist: 0x2784
 +3048.0.0.0.0
-+  __TEXT.__text: 0xa374
-+  __TEXT.__objc_methlist: 0x265c
-   __TEXT.__const: 0x20
-   __TEXT.__gcc_except_tab: 0x54
--  __TEXT.__cstring: 0x36db
-+  __TEXT.__cstring: 0x3574
-   __TEXT.__ustring: 0xc
--  __TEXT.__unwind_info: 0x5b8
-+  __TEXT.__unwind_info: 0x590
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x168
--  __DATA_CONST.__objc_classlist: 0x6a8
-+  __DATA_CONST.__const: 0x140
-+  __DATA_CONST.__objc_classlist: 0x678
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x530
--  __DATA_CONST.__objc_superrefs: 0x200
-+  __DATA_CONST.__objc_selrefs: 0x518
-+  __DATA_CONST.__objc_superrefs: 0x1f0
-   __DATA_CONST.__got: 0x140
-   __AUTH_CONST.__const: 0x100
--  __AUTH_CONST.__cfstring: 0x3980
--  __AUTH_CONST.__objc_const: 0x77d0
-+  __AUTH_CONST.__cfstring: 0x3840
-+  __AUTH_CONST.__objc_const: 0x7470
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x4290
-+  __AUTH.__objc_data: 0x40b0
-   __DATA.__bss: 0x12
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 663
--  Symbols:   1982
+-  Symbols:   1853
 -  CStrings:  496
 +  Functions: 643
-+  Symbols:   1929
++  Symbols:   1802
 +  CStrings:  486
- 
 Symbols:
 + GCC_except_table133
 + GCC_except_table143
@@ -114,8 +91,6 @@ Symbols:
 - __OBJC_METACLASS_RO_$___AnnotationCollectionViewCellAccessibility_super
 - ___77-[AnnotationCollectionViewCellAccessibility _accessibilityPerformLinkAction:]_block_invoke
 - ___block_descriptor_40_e8_32s_e5_v8?0ls32l8
-- _objc_msgSend$_axLinkLabel
-- _objc_msgSend$accessibilityLinkLabelTapped
 CStrings:
 - "AccountActionSectionFooterViewAccessibility"
 - "AccountDetailCollectionViewCellAccessibility"

@@ -2,123 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/IntelligentRoutingDaemon.framework/IntelligentRoutingDaemon`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb71a8` | `0xbaac0` | **`+0x3918`** |
+| `__DATA.__bss` | `0x4000` | `0x4500` | **`+0x500`** |
+| `__TEXT.__const` | `0x3340` | `0x3670` | **`+0x330`** |
+| `__DATA_DIRTY.__data` | `0x900` | `0xba0` | **`+0x2a0`** |
+| `__TEXT.__eh_frame` | `0x1590` | `0x17a8` | **`+0x218`** |
+| `__DATA_DIRTY.__objc_data` | `0x2460` | `0x2668` | **`+0x208`** |
+| `__AUTH.__data` | `0x468` | `0x2d0` | **`-0x198`** |
+| `__AUTH.__objc_data` | `0xdb8` | `0xc20` | **`-0x198`** |
+| `__TEXT.__swift5_typeref` | `0xe90` | `0xfbe` | **`+0x12e`** |
+| `__DATA.__data` | `0x1950` | `0x1a58` | **`+0x108`** |
+| `__AUTH_CONST.__const` | `0x2340` | `0x2428` | **`+0xe8`** |
+| `__TEXT.__unwind_info` | `0x2b38` | `0x2c08` | **`+0xd0`** |
+| `__TEXT.__constg_swiftt` | `0xef0` | `0xf74` | **`+0x84`** |
+| `__DATA_DIRTY.__bss` | `0x2c0` | `0x340` | **`+0x80`** |
+| `__AUTH_CONST.__objc_const` | `0xebb8` | `0xec20` | **`+0x68`** |
+| `__TEXT.__swift5_assocty` | `0x120` | `0x168` | **`+0x48`** |
+| `__TEXT.__swift5_fieldmd` | `0xf04` | `0xf48` | **`+0x44`** |
+| `__TEXT.__swift5_builtin` | `0xc8` | `0x104` | **`+0x3c`** |
+| `__TEXT.__objc_methlist` | `0x776c` | `0x77a4` | **`+0x38`** |
+| `__TEXT.__oslogstring` | `0x5d42` | `0x5d7a` | **`+0x38`** |
+| `__DATA_CONST.__got` | `0x1188` | `0x11b8` | **`+0x30`** |
+| `__TEXT.__swift5_proto` | `0x24c` | `0x278` | **`+0x2c`** |
+| `__DATA_CONST.__objc_protolist` | `0x140` | `0x168` | **`+0x28`** |
+| `__DATA_CONST.__objc_protorefs` | `0x38` | `0x58` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x42a0` | `0x42c0` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0xd3f` | `0xd5f` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xdd8` | `0xde8` | **`+0x10`** |
+| `__AUTH_CONST.__objc_doubleobj` | `0xf0` | `0xe0` | **`-0x10`** |
+| `__TEXT.__cstring` | `0xaf9d` | `0xafad` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x120` | `0x130` | **`+0x10`** |
+| `__DATA.__common` | `0x20` | `0x18` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x4b0` | `0x4b8` | **`+0x8`** |
+| `__DATA_DIRTY.__common` | `—` | `0x2` | **`+0x2`** |
+
+### Other Changes
 
 ```diff
 
 -125.0.9.0.0
--  __TEXT.__text: 0xb71a8
--  __TEXT.__objc_methlist: 0x776c
--  __TEXT.__const: 0x3340
--  __TEXT.__cstring: 0xaf9d
--  __TEXT.__oslogstring: 0x5d42
 +125.0.12.0.0
-+  __TEXT.__text: 0xbaac0
-+  __TEXT.__objc_methlist: 0x77a4
-+  __TEXT.__const: 0x3670
-+  __TEXT.__cstring: 0xafad
-+  __TEXT.__oslogstring: 0x5d7a
-   __TEXT.__gcc_except_tab: 0x1670
--  __TEXT.__swift5_typeref: 0xe90
--  __TEXT.__swift5_fieldmd: 0xf04
--  __TEXT.__constg_swiftt: 0xef0
--  __TEXT.__swift5_builtin: 0xc8
--  __TEXT.__swift5_reflstr: 0xd3f
--  __TEXT.__swift5_assocty: 0x120
-+  __TEXT.__swift5_typeref: 0xfbe
-+  __TEXT.__swift5_fieldmd: 0xf48
-+  __TEXT.__constg_swiftt: 0xf74
-+  __TEXT.__swift5_builtin: 0x104
-+  __TEXT.__swift5_reflstr: 0xd5f
-+  __TEXT.__swift5_assocty: 0x168
-   __TEXT.__swift5_protos: 0x2c
--  __TEXT.__swift5_proto: 0x24c
--  __TEXT.__swift5_types: 0x120
-+  __TEXT.__swift5_proto: 0x278
-+  __TEXT.__swift5_types: 0x130
-   __TEXT.__swift5_capture: 0x220
-   __TEXT.__swift_as_entry: 0x74
-   __TEXT.__swift_as_ret: 0x64
-   __TEXT.__swift_as_cont: 0x64
--  __TEXT.__unwind_info: 0x2b38
--  __TEXT.__eh_frame: 0x1590
-+  __TEXT.__unwind_info: 0x2c08
-+  __TEXT.__eh_frame: 0x17a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x1ce0
--  __DATA_CONST.__objc_classlist: 0x4b0
-+  __DATA_CONST.__objc_classlist: 0x4b8
-   __DATA_CONST.__objc_catlist: 0x30
--  __DATA_CONST.__objc_protolist: 0x140
-+  __DATA_CONST.__objc_protolist: 0x168
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x42a0
--  __DATA_CONST.__objc_protorefs: 0x38
-+  __DATA_CONST.__objc_selrefs: 0x42c0
-+  __DATA_CONST.__objc_protorefs: 0x58
-   __DATA_CONST.__objc_superrefs: 0x2b0
-   __DATA_CONST.__objc_arraydata: 0x98
--  __DATA_CONST.__got: 0x1188
--  __AUTH_CONST.__const: 0x2340
-+  __DATA_CONST.__got: 0x11b8
-+  __AUTH_CONST.__const: 0x2428
-   __AUTH_CONST.__cfstring: 0x6680
--  __AUTH_CONST.__objc_const: 0xebb8
-+  __AUTH_CONST.__objc_const: 0xec20
-   __AUTH_CONST.__objc_arrayobj: 0xc0
-   __AUTH_CONST.__objc_intobj: 0x3d8
--  __AUTH_CONST.__objc_doubleobj: 0xf0
--  __AUTH_CONST.__auth_got: 0xdd8
--  __AUTH.__objc_data: 0xdb8
--  __AUTH.__data: 0x468
-+  __AUTH_CONST.__objc_doubleobj: 0xe0
-+  __AUTH_CONST.__auth_got: 0xde8
-+  __AUTH.__objc_data: 0xc20
-+  __AUTH.__data: 0x2d0
-   __DATA.__objc_ivar: 0x960
--  __DATA.__data: 0x1950
--  __DATA.__bss: 0x4000
--  __DATA.__common: 0x20
--  __DATA_DIRTY.__objc_data: 0x2460
--  __DATA_DIRTY.__data: 0x900
--  __DATA_DIRTY.__bss: 0x2c0
-+  __DATA.__data: 0x1a58
-+  __DATA.__bss: 0x4500
-+  __DATA.__common: 0x18
-+  __DATA_DIRTY.__objc_data: 0x2668
-+  __DATA_DIRTY.__data: 0xba0
-+  __DATA_DIRTY.__bss: 0x340
-+  __DATA_DIRTY.__common: 0x2
-   - /System/Library/Frameworks/AVRouting.framework/AVRouting
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4279
--  Symbols:   11064
+-  Symbols:   9176
 +  Functions: 4339
-+  Symbols:   11247
-   CStrings:  1526
- 
++  Symbols:   9355
 Symbols:
 + -[IRMiLoProvider addLabelWithName:forCandidate:]
 + _$s24IntelligentRoutingDaemon13HomeSuggesterC11isSameSpace5event04sameH10TimestampsSbAA0D5EventV_ShySdGtFZTf4nnd_n
@@ -303,12 +235,6 @@ Symbols:
 + _associated conformance So18ULLabelMetadataKeyas20_SwiftNewtypeWrapperSCs35_HasCustomAnyHashableRepresentation
 + _associated conformance So23IRAVOutputDeviceSubTypeVSHSCSQ
 + _flat unique So20ULLabelMetadataValue_p
-+ _objc_msgSend$addLabelWithName:forCandidate:
-+ _objc_msgSend$addMetadata:
-+ _objc_msgSend$initWithBool:
-+ _objc_msgSend$initWithInteger:
-+ _objc_msgSend$labelMiLoIfNeededWithCandidate:newMiLoLabel:lastMiLoLabel:shouldLabelEventWithMilo:
-+ _objc_msgSend$labelWithName:contextLayer:candidate:
 + _swift_retain_x19
 + _symbolic Su
 + _symbolic _____ 24IntelligentRoutingDaemon13HomeSuggesterC17AccessoryIdentity33_CE9D1C47C16A7A3D70D1132677D80138LLV
@@ -342,8 +268,6 @@ Symbols:
 - _$ss18_DictionaryStorageCySo22IRHomeSuggestionTargetC24IntelligentRoutingDaemon04HomeD5ScoreVGMd
 - _$ss22__RawDictionaryStorageC4find_9hashValues10_HashTableV6BucketV6bucket_Sb5foundtx_SitSHRzlFSo22IRHomeSuggestionTargetC_Tg5
 - _$ss22__RawDictionaryStorageC4findys10_HashTableV6BucketV6bucket_Sb5foundtxSHRzlFSo22IRHomeSuggestionTargetC_Tg5
-- _objc_msgSend$addLabelWithName:
-- _objc_msgSend$labelMiLoIfNeededWithNewMiLoLabel:lastMiLoLabel:shouldLabelEventWithMilo:
 - _symbolic _____ySo22IRHomeSuggestionTargetC_____G s18_DictionaryStorageC 24IntelligentRoutingDaemon19HomeSuggestionScoreV
 CStrings:
 + "%s[%@], [ErrorId - MiLo provider error - add label with name for candidate] Cannot call addLabelWithName:forCandidate: with more than 1 context layer: %@"

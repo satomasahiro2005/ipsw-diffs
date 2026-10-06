@@ -2,85 +2,58 @@
 
 > `/usr/libexec/diskimagesiod`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e242c` | `0x1ebdb4` | **`+0x9988`** |
+| `__TEXT.__const` | `0x14137` | `0x17397` | **`+0x3260`** |
+| `__TEXT.__cstring` | `0x162ae` | `0x172ec` | **`+0x103e`** |
+| `__TEXT.__gcc_except_tab` | `0x1b744` | `0x1bbc4` | **`+0x480`** |
+| `__TEXT.__unwind_info` | `0xdcb0` | `0xdf68` | **`+0x2b8`** |
+| `__DATA_CONST.__const` | `0x38448` | `0x38548` | **`+0x100`** |
+| `__TEXT.__auth_stubs` | `0x2350` | `0x2450` | **`+0x100`** |
+| `__DATA_CONST.__auth_got` | `0x11c0` | `0x1240` | **`+0x80`** |
+| `__DATA_CONST.__got` | `0x5b8` | `0x628` | **`+0x70`** |
+| `__TEXT.__objc_methname` | `0x793a` | `0x78e1` | **`-0x59`** |
+| `__TEXT.__objc_stubs` | `0x68a0` | `0x6860` | **`-0x40`** |
+| `__TEXT.__objc_methlist` | `0x3a34` | `0x3a1c` | **`-0x18`** |
+| `__TEXT.__objc_methtype` | `0x2811` | `0x27fa` | **`-0x17`** |
+| `__DATA.__objc_selrefs` | `0x1f18` | `0x1f08` | **`-0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_typeref`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1e242c
--  __TEXT.__auth_stubs: 0x2350
--  __TEXT.__objc_stubs: 0x68a0
--  __TEXT.__objc_methlist: 0x3a34
--  __TEXT.__gcc_except_tab: 0x1b744
--  __TEXT.__const: 0x14137
--  __TEXT.__cstring: 0x162ae
-+  __TEXT.__text: 0x1ebdb4
-+  __TEXT.__auth_stubs: 0x2450
-+  __TEXT.__objc_stubs: 0x6860
-+  __TEXT.__objc_methlist: 0x3a1c
-+  __TEXT.__gcc_except_tab: 0x1bbc4
-+  __TEXT.__const: 0x17397
-+  __TEXT.__cstring: 0x172ec
-   __TEXT.__oslogstring: 0x2dab
--  __TEXT.__objc_methname: 0x793a
-+  __TEXT.__objc_methname: 0x78e1
-   __TEXT.__objc_classname: 0x667
--  __TEXT.__objc_methtype: 0x2811
-+  __TEXT.__objc_methtype: 0x27fa
-   __TEXT.__constg_swiftt: 0x60
-   __TEXT.__swift5_typeref: 0x58
-   __TEXT.__swift5_fieldmd: 0x10
-   __TEXT.__swift5_types: 0x4
-   __TEXT.__ustring: 0x13c
--  __TEXT.__unwind_info: 0xdcb0
-+  __TEXT.__unwind_info: 0xdf68
-   __TEXT.__eh_frame: 0xf0
--  __DATA_CONST.__const: 0x38448
-+  __DATA_CONST.__const: 0x38548
-   __DATA_CONST.__cfstring: 0x4c40
-   __DATA_CONST.__objc_classlist: 0x248
-   __DATA_CONST.__objc_catlist: 0x10
+-593.0.0.0.1
++596.0.0.0.0
 
-   __DATA_CONST.__objc_arraydata: 0xa0
-   __DATA_CONST.__objc_dictobj: 0x28
-   __DATA_CONST.__objc_arrayobj: 0x30
--  __DATA_CONST.__auth_got: 0x11c0
--  __DATA_CONST.__got: 0x5b8
-+  __DATA_CONST.__auth_got: 0x1240
-+  __DATA_CONST.__got: 0x628
-   __DATA_CONST.__auth_ptr: 0x48
-   __DATA.__objc_const: 0x5a18
--  __DATA.__objc_selrefs: 0x1f18
-+  __DATA.__objc_selrefs: 0x1f08
-   __DATA.__objc_ivar: 0x318
-   __DATA.__objc_data: 0x1750
-   __DATA.__data: 0xde0
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/local/lib/libcurl.4.dylib
 -  Functions: 11270
 -  Symbols:   782
--  CStrings:  4637
+-  CStrings:  3975
 +  Functions: 11425
 +  Symbols:   800
-+  CStrings:  4697
- 
-Sections:
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
++  CStrings:  4035
 Symbols:
 + __ZNKSt13runtime_error4whatEv
 + __ZNSt13runtime_errorC2EPKc
@@ -179,5 +152,4 @@ CStrings:
 - "failWithDIException:description:error:"
 - "nilWithDIException:description:error:"
 - "void crypto::details::unset_futures_errors_reporter<std::ranges::transform_view<std::ranges::ref_view<container_it<std::__deque_iterator<FileLocalAsync::promise_io_t, FileLocalAsync::promise_io_t *, FileLocalAsync::promise_io_t &, FileLocalAsync::promise_io_t **, long>>>, (lambda at /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/DiskImages2/app/backends/file.cpp:1093:24)>::__iterator<false>>::report_errors(int) [It = std::ranges::transform_view<std::ranges::ref_view<container_it<std::__deque_iterator<FileLocalAsync::promise_io_t, FileLocalAsync::promise_io_t *, FileLocalAsync::promise_io_t &, FileLocalAsync::promise_io_t **, long>>>, (lambda at /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/DiskImages2/app/backends/file.cpp:1093:24)>::__iterator<false>]"
-
 ```

@@ -2,85 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/FitnessWorkoutPlan.framework/FitnessWorkoutPlan`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1bd8e4` | `0x1bff34` | **`+0x2650`** |
+| `__DATA_DIRTY.__bss` | `0x3500` | `0x3b80` | **`+0x680`** |
+| `__TEXT.__swift5_typeref` | `0x12fea` | `0x13622` | **`+0x638`** |
+| `__DATA_DIRTY.__data` | `0x1370` | `0x17f0` | **`+0x480`** |
+| `__DATA.__bss` | `0x2d7a8` | `0x2d428` | **`-0x380`** |
+| `__TEXT.__const` | `0x1e294` | `0x1e494` | **`+0x200`** |
+| `__DATA.__data` | `0x7678` | `0x7488` | **`-0x1f0`** |
+| `__AUTH.__data` | `0x1780` | `0x15a0` | **`-0x1e0`** |
+| `__AUTH_CONST.__const` | `0xd680` | `0xd6e8` | **`+0x68`** |
+| `__TEXT.__swift5_fieldmd` | `0x5ad8` | `0x5b28` | **`+0x50`** |
+| `__TEXT.__constg_swiftt` | `0x6994` | `0x69dc` | **`+0x48`** |
+| `__TEXT.__swift5_reflstr` | `0x3c94` | `0x3cb4` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x5e70` | `0x5e90` | **`+0x20`** |
+| `__TEXT.__swift5_proto` | `0x1838` | `0x1850` | **`+0x18`** |
+| `__TEXT.__swift5_capture` | `0x1f90` | `0x1fa0` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x18f0` | `0x18f8` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x714` | `0x71c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1bd8e4
--  __TEXT.__const: 0x1e294
--  __TEXT.__swift5_typeref: 0x12fea
--  __TEXT.__swift5_capture: 0x1f90
--  __TEXT.__constg_swiftt: 0x6994
--  __TEXT.__swift5_reflstr: 0x3c94
-+  __TEXT.__text: 0x1bff34
-+  __TEXT.__const: 0x1e494
-+  __TEXT.__swift5_typeref: 0x13622
-+  __TEXT.__swift5_capture: 0x1fa0
-+  __TEXT.__constg_swiftt: 0x69dc
-+  __TEXT.__swift5_reflstr: 0x3cb4
-   __TEXT.__swift5_assocty: 0xa50
--  __TEXT.__swift5_fieldmd: 0x5ad8
-+  __TEXT.__swift5_fieldmd: 0x5b28
-   __TEXT.__swift5_builtin: 0x50
--  __TEXT.__swift5_proto: 0x1838
--  __TEXT.__swift5_types: 0x714
-+  __TEXT.__swift5_proto: 0x1850
-+  __TEXT.__swift5_types: 0x71c
-   __TEXT.__cstring: 0x1c5e
-   __TEXT.__swift_as_entry: 0xe0
-   __TEXT.__swift_as_ret: 0x1c0
-   __TEXT.__swift_as_cont: 0x284
-   __TEXT.__oslogstring: 0x1a3
-   __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__unwind_info: 0x5e70
-+  __TEXT.__unwind_info: 0x5e90
-   __TEXT.__eh_frame: 0x78f8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
+-2027.0.117.0.2
++2027.0.124.0.3
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x68
-   __DATA_CONST.__got: 0xcb8
--  __AUTH_CONST.__const: 0xd680
-+  __AUTH_CONST.__const: 0xd6e8
-   __AUTH_CONST.__objc_const: 0x240
--  __AUTH_CONST.__auth_got: 0x18f0
--  __AUTH.__data: 0x1780
--  __DATA.__data: 0x7678
--  __DATA.__bss: 0x2d7a8
-+  __AUTH_CONST.__auth_got: 0x18f8
-+  __AUTH.__data: 0x15a0
-+  __DATA.__data: 0x7488
-+  __DATA.__bss: 0x2d428
-   __DATA.__common: 0x78
--  __DATA_DIRTY.__data: 0x1370
--  __DATA_DIRTY.__bss: 0x3500
-+  __DATA_DIRTY.__data: 0x17f0
-+  __DATA_DIRTY.__bss: 0x3b80
-   __DATA_DIRTY.__common: 0x20
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8496
--  Symbols:   3911
+-  Symbols:   3264
 +  Functions: 8521
-+  Symbols:   3927
-   CStrings:  226
- 
-Sections:
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__objc_const : content changed
++  Symbols:   3278
 Symbols:
 + _associated conformance 18FitnessWorkoutPlan23TrainerPreferenceActionO23ViewDidAppearCodingKeys33_10C9AE6F728B2C7355A69C32E937329ELLOs0J3KeyAAs23CustomStringConvertible
 + _associated conformance 18FitnessWorkoutPlan23TrainerPreferenceActionO23ViewDidAppearCodingKeys33_10C9AE6F728B2C7355A69C32E937329ELLOs0J3KeyAAs28CustomDebugStringConvertible
@@ -196,5 +150,4 @@ Symbols:
 - _symbolic _____y_____y_____y_____y_____y__________G_____G_____y_____y_____y_____y_____y_____y_____ySay_____GSSADy_____y_____y_____yADyADyADyADyADyAF_____G_____G_____y_____GG_____G_____y_____yAV__________yAVA1_GGGGG_Qo_______Qo_ASGGG_Qo_SgG_Qo_______Qo__Qo______G_ADy_____ASGSgQPGG 7SwiftUI6VStackV AA12TupleContentV AA7SectionV AA08ModifiedE0V AA5LabelV AA4TextV AA5ImageV AA31AccessibilityAttachmentModifierV AA4ViewPAAE20scrollBounceBehavior_4axesQrAA06ScrollpQ0V_AA4AxisO3SetVtFQO AsAE0o6TargetQ0yQrqd__AA0svQ0Rd__lFQO AsAE0O10Indicators_AUQrAA0S19IndicatorVisibilityV_A_tFQO AA0sN0V AsAE0oV6Layout9isEnabledQrSb_tFQO AA9LazyHGridV AA7ForEachV 18FitnessWorkoutPlan21WorkoutPlanMusicGenreV AsAE11buttonStyleyQrqd__AA11ButtonStyleRd__lFQO AsAE22containerRelativeFrame_5count4span7spacing9alignmentQrA__S2i12CoreGraphics7CGFloatVAA9AlignmentVtFQO AA6ButtonV AA010_FlexFrameZ0V AA08_PaddingZ0V AA01_e5ShapeM0V AA7CapsuleV AA06_FrameZ0V AA011_BackgroundM0V AA017StrokeBorderShapeN0V AA5ColorV AA06_ShapeN0V A13_30WorkoutPlanCreationButtonStyleV AA0n7AlignedsvQ0V AA05EmptyN0V AA7DividerV
 - _symbolic _____y_____y_____y_____y_____y_____ySay_____GSS_____y_____y_____y_____yAFyAFyAFyAFyAFy__________G_____G_____y_____GG_____G_____y_____yAN__________yAnUGGGGG_Qo_______Qo_AKGGG_Qo_SgG_Qo_______Qo_ 7SwiftUI4ViewPAAE20scrollTargetBehavioryQrqd__AA06ScrolleF0Rd__lFQO AcAE0D10Indicators_4axesQrAA0G19IndicatorVisibilityV_AA4AxisO3SetVtFQO AA0gC0V AcAE0dE6Layout9isEnabledQrSb_tFQO AA9LazyHGridV AA7ForEachV 18FitnessWorkoutPlan0vW10MusicGenreV AA15ModifiedContentV AcAE11buttonStyleyQrqd__AA11ButtonStyleRd__lFQO AcAE22containerRelativeFrame_5count4span7spacing9alignmentQrAM_S2i12CoreGraphics7CGFloatVAA9AlignmentVtFQO AA6ButtonV AA4TextV AA010_FlexFrameN0V AA08_PaddingN0V AA21_ContentShapeModifierV AA7CapsuleV AA06_FrameN0V AA19_BackgroundModifierV AA017StrokeBorderShapeC0V AA5ColorV AA06_ShapeC0V AV0vW19CreationButtonStyleV AA0c7AlignedgeF0V
 - _symbolic _____y_____y_____y_____y_____y_____y_____ySay_____GSS_____y_____y_____y_____yAFyAFyAFyAFyAFy__________G_____G_____y_____GG_____G_____y_____yAN__________yAnUGGGGG_Qo_______Qo_AKGGG_Qo_SgG_Qo_______Qo__Qo_ 7SwiftUI4ViewPAAE20scrollBounceBehavior_4axesQrAA06ScrolleF0V_AA4AxisO3SetVtFQO AcAE0d6TargetF0yQrqd__AA0hkF0Rd__lFQO AcAE0D10Indicators_AEQrAA0H19IndicatorVisibilityV_AKtFQO AA0hC0V AcAE0dK6Layout9isEnabledQrSb_tFQO AA9LazyHGridV AA7ForEachV 18FitnessWorkoutPlan0wX10MusicGenreV AA15ModifiedContentV AcAE11buttonStyleyQrqd__AA11ButtonStyleRd__lFQO AcAE22containerRelativeFrame_5count4span7spacing9alignmentQrAK_S2i12CoreGraphics7CGFloatVAA9AlignmentVtFQO AA6ButtonV AA4TextV AA010_FlexFrameO0V AA08_PaddingO0V AA21_ContentShapeModifierV AA7CapsuleV AA06_FrameO0V AA19_BackgroundModifierV AA017StrokeBorderShapeC0V AA5ColorV AA06_ShapeC0V AY0wX19CreationButtonStyleV AA0c7AlignedhkF0V
-
 ```

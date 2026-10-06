@@ -2,35 +2,33 @@
 
 > `/usr/sbin/netstat`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0xf2c1` | `0xf8c1` | **`+0x600`** |
+| `__TEXT.__text` | `0x1b288` | `0x1b728` | **`+0x4a0`** |
+| `__DATA.__bss` | `0xabd8` | `0xac10` | **`+0x38`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -755.0.0.0.0
--  __TEXT.__text: 0x1b210
 +757.0.0.0.0
-+  __TEXT.__text: 0x1b6b0
-   __TEXT.__auth_stubs: 0x4e0
--  __TEXT.__cstring: 0xf2c1
-+  __TEXT.__cstring: 0xf8c1
-   __TEXT.__const: 0x3d8
-   __TEXT.__unwind_info: 0x268
-   __DATA_CONST.__const: 0x14b8
 
-   __DATA.__common: 0x6b0
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libpcap.A.dylib
 -  Functions: 124
 -  Symbols:   269
 -  CStrings:  2381
 +  Functions: 125
 +  Symbols:   272
 +  CStrings:  2434
- 
 Symbols:
 + _print_ipsec_fastpath
 + ipsec_stats.pfastpath_in

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ExchangeSync.framework/Frameworks/DAEAS.framework/DAEAS`
 
-```diff
+### Section Size Changes
 
- 2079.0.1.0.0
--  __TEXT.__text: 0x941d8
-+  __TEXT.__text: 0x941e0
-   __TEXT.__objc_methlist: 0xa5c4
-   __TEXT.__const: 0x700
-   __TEXT.__gcc_except_tab: 0xb70
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x941d8` | `0x941e0` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[ASWBXMLToXMLConverter _consumeBytes] : 4120 -> 4128
 ```

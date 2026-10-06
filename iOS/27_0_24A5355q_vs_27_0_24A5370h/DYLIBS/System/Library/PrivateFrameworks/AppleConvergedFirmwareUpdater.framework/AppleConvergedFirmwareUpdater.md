@@ -2,61 +2,28 @@
 
 > `/System/Library/PrivateFrameworks/AppleConvergedFirmwareUpdater.framework/AppleConvergedFirmwareUpdater`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4bc38` | `0x4bdd4` | **`+0x19c`** |
+| `__DATA_CONST.__const` | `0xcd0` | `0xce0` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0xc80` | `0xc88` | **`+0x8`** |
+| `__TEXT.__const` | `0xe570` | `0xe578` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x1070` | `0x1078` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x2e90` | `0x2e8c` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -466.0.0.0.0
--  __TEXT.__text: 0x4bc38 sha256:deb9236145af6c40e3830c08b1cdf032f0b90c98065f2bb4638c14d087602a9c
--  __TEXT.__const: 0xe570 sha256:e5b7795cba2827d00d039153d93ad146b6c61d955f82970447953cbadaaa6880
--  __TEXT.__gcc_except_tab: 0x2e90 sha256:025744ebed133eb6cf7322d0e2d7f82cc72d0ab609e6750e533db32f0c756ed8
 +467.0.0.0.0
-+  __TEXT.__text: 0x4bdd4 sha256:13a6e69d85cb60613fc8c6a43fc91a95ca0fcacedc92a153421053be16bc1c8d
-+  __TEXT.__const: 0xe578 sha256:3e57f7600ebfab793ddeb91754f797e786f9e00e583962e46ba89d0d9b061b85
-+  __TEXT.__gcc_except_tab: 0x2e8c sha256:ffc24176a211fd30b3c72022fd91e2d7f3ef09cb1463986f8a96b27df8938a1e
-   __TEXT.__cstring: 0x90fa sha256:6e34e7ea0c96bb20bc59e7831b4c8e0f268e4537e63a29701eafd5a442be3ef8
-   __TEXT.__oslogstring: 0x7526 sha256:28d4c393f4b6622a21ba248e0f73e84f2011caff3f63e95c2fbfe9a0fea5be2f
--  __TEXT.__unwind_info: 0x1070 sha256:cf51be5088ccd035ca3fa13dcb120b52125f97fd9ed6ece35dc6276f134db385
-+  __TEXT.__unwind_info: 0x1078 sha256:74396a7e66d9bde61bc55b3c73ab14730fb0dd038f2ee932995076079dffaf48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0xcd0 sha256:1ab6577de2dde9977825f7f2d033cfbc7ab61ba5cbb1ac5fad472ed7ec2a7dd8
-+  __DATA_CONST.__const: 0xce0 sha256:68dd86c5669ec9d84e469f5afc19377ecc21669526b58ce6b9165f38954f8854
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x18 sha256:cf55e5924873feff31584779c244e78fe0c9b377cb2b8fbd32166c1fd3f55e61
--  __DATA_CONST.__objc_selrefs: 0x18 sha256:0f83a808cdd74cb880e86b237e6fb9b7d96872f698441e48459d7156e554a9e2
-+  __DATA_CONST.__weak_got: 0x18 sha256:04276a084f45e3bc1a7c8442624000637a22d3d5339c636ed774899691133658
-+  __DATA_CONST.__objc_selrefs: 0x18 sha256:d70e4115fb9a592174d727523eec38c6b1167f0c7850c9ae9c1ec184ba0ce7a5
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x14c0 sha256:dc9f1e0b590402041b0e51e297646e9abda20b2244f3ee935f90b6e92a1fe507
--  __AUTH_CONST.__cfstring: 0xb40 sha256:29a9059c658179bf88443ef2d585803efa68f5e2add649e06b43800bcb83ecce
--  __AUTH_CONST.__weak_auth_got: 0x28 sha256:60984a8326f8b913c0b74c8d6a8de7089c97872c2c27c97ec7455598c2560625
-+  __AUTH_CONST.__const: 0x14c0 sha256:e52b88a2470049a0b97eb7250d87001def523aa2a93fe10ed69946b03f626e9f
-+  __AUTH_CONST.__cfstring: 0xb40 sha256:470bd04cd8bc3849b370500d1047f2cfc21c162dddb5a570ff57f09f8505df0c
-+  __AUTH_CONST.__weak_auth_got: 0x28 sha256:e838b15dac6aeeceff1558c451cbba20e9e73e3a8f22aa87ff7588feb5717c52
-   __AUTH_CONST.__auth_got: 0x668 sha256:b8883734e15688eb76e149e782b649a1cb93e3d651423484cc2b2a3594154aa8
--  __AUTH.__thread_vars: 0x18 sha256:c65f0a695c1f4c85ff87d41ad6fa51b8c684a122def6c25532902a47c7a623ec
-+  __AUTH.__thread_vars: 0x18 sha256:c1d492d01713b188a36d00c4b45699074f2e50b60b7480dae6cd97497aaae8a3
-   __AUTH.__thread_bss: 0x20 sha256:66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925
--  __DATA.__data: 0x28 sha256:b6005621b99109e7761c488cdceff65796dcf483100f8bfe0279fd3d9e41eece
-+  __DATA.__data: 0x28 sha256:c674137eb3c442acc90477ced39afa260c83be8ed6ad40630090a581c8e36739
-   __DATA.__bss: 0x68 sha256:39f37f8d1931b3bdf767e7510dd69509fbf23af1f7654933d0a4d291cbdd4418
--  __DATA_DIRTY.__bss: 0xc80 sha256:5a312281df4bd8dfbb4d4a94ad0bf44d01bb8cfced1206b90e21b4ca0568cdb1
-+  __DATA_DIRTY.__bss: 0xc88 sha256:125cc4a765aed3bc28e10bff1aae4242c403bd65680a71e30036da1592a40f0d
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/Security.framework/Security
 
-   - /usr/lib/libamsupport.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  UUID: 21B27667-FD49-3FE5-8A8F-AB7B96A5B35F
 -  Functions: 1348
--  Symbols:   3536
-+  UUID: 76B08C3A-8B87-3110-8F2A-ABD3F91926EC
+-  Symbols:   1871
 +  Functions: 1350
-+  Symbols:   3540
-   CStrings:  1744
- 
++  Symbols:   1875
 Symbols:
 + __ZN11ACFULogging3logE12ACFULogLevelPKc
 + __ZN11ACFULogging7initLogEPK14__CFDictionaryPFvPv12ACFULogLevelPKcES3_
@@ -94,7 +61,6 @@ Symbols:
 + __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEE15__init_buf_ptrsB9nqe220106Ev
 + __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B9nqe220106Ej
 + __ZNSt3__116__if_likely_elseB9nqe220106IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSC_EEESD_SG_EUlvE0_EEvbT_T0_
-+ __ZNSt3__116__if_likely_elseB9nqe220106IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSC_EEESD_SG_EUlvE0_EEvbT_T0_.cold.1
 + __ZNSt3__116__pad_and_outputB9nqe220106IcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_
 + __ZNSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B9nqe220106Ev
 + __ZNSt3__118condition_variable10wait_untilB9nqe220106INS_6chrono12system_clockENS2_8durationIxNS_5ratioILl1ELl1000000EEEEEEENS_9cv_statusERNS_11unique_lockINS_5mutexEEERKNS2_10time_pointIT_T0_EE
@@ -189,7 +155,6 @@ Symbols:
 - __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEE15__init_buf_ptrsB9nqe220100Ev
 - __ZNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B9nqe220100Ej
 - __ZNSt3__116__if_likely_elseB9nqe220100IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSC_EEESD_SG_EUlvE0_EEvbT_T0_
-- __ZNSt3__116__if_likely_elseB9nqe220100IZNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS5_IS7_EEE12emplace_backIJRKS7_EEERS7_DpOT_EUlvE_ZNSA_IJSC_EEESD_SG_EUlvE0_EEvbT_T0_.cold.1
 - __ZNSt3__116__pad_and_outputB9nqe220100IcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_
 - __ZNSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B9nqe220100Ev
 - __ZNSt3__118condition_variable10wait_untilB9nqe220100INS_6chrono12system_clockENS2_8durationIxNS_5ratioILl1ELl1000000EEEEEEENS_9cv_statusERNS_11unique_lockINS_5mutexEEERKNS2_10time_pointIT_T0_EE
@@ -248,5 +213,4 @@ Symbols:
 - __ZNSt3__1lsB9nqe220100INS_11char_traitsIcEEEERNS_13basic_ostreamIcT_EES6_RKNS_8__iom_t4IcEE
 - __ZNSt3__1plB9nqe220100IcNS_11char_traitsIcEENS_9allocatorIcEEEENS_12basic_stringIT_T0_T1_EERKS9_PKS6_
 - __ZSt28__throw_bad_array_new_lengthB9nqe220100v
-
 ```

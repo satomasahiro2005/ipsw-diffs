@@ -2,89 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/HeartHealthUI.framework/HeartHealthUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x23f6c` | `0x1c7a4` | **`-0x77c8`** |
+| `__TEXT.__const` | `0xf64` | `0xb88` | **`-0x3dc`** |
+| `__AUTH.__data` | `0xa28` | `0x690` | **`-0x398`** |
+| `__AUTH_CONST.__const` | `0x8c8` | `0x630` | **`-0x298`** |
+| `__DATA.__bss` | `0xf20` | `0xca0` | **`-0x280`** |
+| `__TEXT.__swift5_fieldmd` | `0x664` | `0x4b4` | **`-0x1b0`** |
+| `__TEXT.__unwind_info` | `0x730` | `0x5b0` | **`-0x180`** |
+| `__DATA.__data` | `0x988` | `0x810` | **`-0x178`** |
+| `__TEXT.__constg_swiftt` | `0x61c` | `0x4a4` | **`-0x178`** |
+| `__TEXT.__swift5_reflstr` | `0x5cb` | `0x483` | **`-0x148`** |
+| `__TEXT.__swift5_typeref` | `0x82e` | `0x701` | **`-0x12d`** |
+| `__TEXT.__swift5_capture` | `0x154` | `0xd0` | **`-0x84`** |
+| `__TEXT.__swift5_assocty` | `0x1e0` | `0x168` | **`-0x78`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa0` | `0x70` | **`-0x30`** |
+| `__TEXT.__cstring` | `0xe8` | `0xba` | **`-0x2e`** |
+| `__TEXT.__swift5_types` | `0x78` | `0x54` | **`-0x24`** |
+| `__AUTH_CONST.__auth_got` | `0x910` | `0x8f0` | **`-0x20`** |
+| `__TEXT.__swift5_proto` | `0x80` | `0x6c` | **`-0x14`** |
+| `__TEXT.__objc_methtype` | `0x0` | `—` | **`-0x0`** |
+
+### Other Changes
+
 ```diff
 
 -7027.0.52.2.6
--  __TEXT.__text: 0x23f6c sha256:151ffb7c9a7a92b3063a9038c3f3afeeca09ad1f21a151e82f2ce6b85254c418
--  __TEXT.__const: 0xf64 sha256:0c6f97f982e7947e20e042dd76c16d40068fbb9d96fb5a5d5371eb0defd4cf8a
--  __TEXT.__constg_swiftt: 0x61c sha256:937597448bdc58a13d24a4555f7a3bb22209cbc32302137095910c8a951701b4
--  __TEXT.__swift5_typeref: 0x82e sha256:bc5090e3afdd534b4446208642d281a20a65c14a794bdb2d1f77a867d107cec6
--  __TEXT.__swift5_builtin: 0x28 sha256:bcc92590f528ce59705b45154298d2a5efa4e0377ae9e3ccbeeca1d9801056be
--  __TEXT.__swift5_reflstr: 0x5cb sha256:bbfe93535bb25adbb8d3bdd4b11c7f33f35f392d29331fbed2323e86f2339f68
--  __TEXT.__swift5_fieldmd: 0x664 sha256:614e76939caa1763bd794ddd796d989e4de229feec0271c3c17c2ea64d406217
--  __TEXT.__swift5_assocty: 0x1e0 sha256:f79db2204c853ac624fa86954e1838e0fd0fe7d935f4b0677fa0c44af85eb8a1
--  __TEXT.__swift5_proto: 0x80 sha256:806c0056c3b7ec84e50770dd09b7a578846f65ecc6d05ef5ac45ecd69413da18
--  __TEXT.__swift5_types: 0x78 sha256:233c0729c45059593b3735280ec825d3a19a3198afcc2049fd6d5937a316c57d
--  __TEXT.__swift5_protos: 0x4 sha256:676ac63fb648562c44b9186441bc58ed90a19310f73fb503e2019794c795e0cb
--  __TEXT.__swift5_capture: 0x154 sha256:74f7e8ca2eed03e5547ef856271973ea1223d02e36e2f9c8e92ea56a25276c8b
--  __TEXT.__cstring: 0xe8 sha256:9f8711ff20e240e8713eb8db16b117c855a90355c6447f84e4e3724e59db3c7d
--  __TEXT.__unwind_info: 0x730 sha256:4baf99ed33d35d07871fe4c5caaf315a1eea13daae72950ba376d42c6606fbea
 +7027.0.60.2.2
-+  __TEXT.__text: 0x1c7a4 sha256:11d23d3f301b4130f9d97c411a3de4cab94ba354f1ddc010788888f5bef716b2
-+  __TEXT.__const: 0xb88 sha256:1dd4466393385761a313cae1f7cfb23690427cf25613a6379f7af6f6c0e0edb5
-+  __TEXT.__constg_swiftt: 0x4a4 sha256:34a4fa9d61ac2aa8dae930b41d76ea8ef2bda51b922cdc16c5943dec113a1404
-+  __TEXT.__swift5_typeref: 0x701 sha256:fc8beb91d06f8b1f9e8bdad20a50fe368d4707ac30196fdb920fa8b5116bd53f
-+  __TEXT.__swift5_reflstr: 0x483 sha256:ec4b5685aad9170195803eb525d83b41124f0f177a639be430f5e348ecc3aced
-+  __TEXT.__swift5_fieldmd: 0x4b4 sha256:cc00048dcd9f5f74ad16b39232a3b5b041d80980c95461a5f342ede0cc9d7467
-+  __TEXT.__swift5_builtin: 0x28 sha256:45451c5a2eabdbd88d17a11df8b90dfb1eaec1a634a59d69182f17bf0c216ed0
-+  __TEXT.__swift5_assocty: 0x168 sha256:86a26bccd4be32b919a00d6df1ded0bd71c31959a5cff4ea5753cfd51dc9dee4
-+  __TEXT.__swift5_proto: 0x6c sha256:1a28360027c62fbdee09b3fe36e64556634bfe8577af687d72332d0712ce115a
-+  __TEXT.__swift5_types: 0x54 sha256:75a022516ad59a1d50626957d56077f6af37982fe66a78797c6894193dacf85d
-+  __TEXT.__swift5_protos: 0x4 sha256:c8235585e895fceb378e7f47653a50a6bbfe86a976aa2fed00a6d8409ce4d005
-+  __TEXT.__cstring: 0xba sha256:b2cc04d8d9db176c184dab8cdfdf75e66d100849abe438f0f18144d4e2f17292
-+  __TEXT.__swift5_capture: 0xd0 sha256:19b79fa3bc61192d8d0bb7803fa84d876f5974bf4bf20c2ee970795056c2d081
-+  __TEXT.__unwind_info: 0x5b0 sha256:e8cd662a9e8424a90e896870ae1aa625b939c6ea38379adfed38a649a618ff20
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
--  __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x88 sha256:b707241545a346265aab1ffb32ff64b55bf8f8dc1b56a46ef33ce3d15db11d33
--  __DATA_CONST.__objc_classlist: 0x8 sha256:26af4a2886d3bdb68b1b817bc918fcbce1878db431dfbb500541b7e53787b2f8
-+  __DATA_CONST.__objc_classlist: 0x8 sha256:42ba661041164109bf243e4f37735fe45d6a3a23f15c8eb2facb31b330c95fdd
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0xa0 sha256:a6d54287a33a3670e5607365ba9b19d3880748fc935707488683dd31bdc85cda
-+  __DATA_CONST.__objc_selrefs: 0x70 sha256:d43a15c180f97ce931560caa27e0494946bc4c018daa647a724222e1f7c24e89
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x8c8 sha256:edb1f3cd3585791ba94fb88fa0e824562abf821a9a59051726f9202559283f8f
--  __AUTH_CONST.__objc_const: 0x90 sha256:1ca827183a1f267d8ba05bd4dc95113bab5103493562bc1b206c42f95fc08078
--  __AUTH_CONST.__auth_got: 0x910 sha256:270d7c32555268f578b5c79e665937b2bbe3eee44f88a39c5961c9ce3982a1eb
--  __AUTH.__data: 0xa28 sha256:a322c1b6ac85f588ea5ef65fe4a95b6409b28b612674de008cf034c4835014d0
--  __DATA.__data: 0x988 sha256:e3341c3186e13ce5b81511d3aa442c73c704a38f108b73cb41e1ae3490ceb346
--  __DATA.__bss: 0xf20 sha256:3dfad550a5e1cd92b601651c5d77b3577d128d449b54d05073501b846b2a24af
-+  __AUTH_CONST.__const: 0x630 sha256:a0bc42ebab0d5aed8489981cc9781f8ff1aec357b79d0d6752b84d9459cadb35
-+  __AUTH_CONST.__objc_const: 0x90 sha256:8013b54054cfb0200efe4ccc1633a514a16045e7d9150e4f8260b6a837661e65
-+  __AUTH_CONST.__auth_got: 0x8f0 sha256:2f329134686a44ee0362fd0c8b5d071e38bade32a5389e31282f64f565e76759
-+  __AUTH.__data: 0x690 sha256:3c2b3d007611e76643f89c452cd34e5629c24793cab45ea87831df21016f9525
-+  __DATA.__data: 0x810 sha256:1d830c8af4ff60b1ec36350ea25d99c4247d5d040d8d2c9acbe28011ebb9039e
-+  __DATA.__bss: 0xca0 sha256:df66d6e43afb0468eda3149e5eaaffda44271cf157a9d9ea4ff6b6dafccb030c
-   __DATA.__common: 0x10 sha256:374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb
--  __DATA_DIRTY.__data: 0x98 sha256:59d896ed2260dd9a3e5c20e6237dd051ec5fe072704152906bb5be23b52a91c5
-+  __DATA_DIRTY.__data: 0x98 sha256:4b45aa8facb627e6a90de9f09bcd7706596b72797d85ecb28f30370e5b34554c
-   - /System/Library/Frameworks/Charts.framework/Charts
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/HealthKit.framework/HealthKit
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-+  - /System/Library/PrivateFrameworks/HealthArchivableViews.framework/HealthArchivableViews
-   - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: BAD2195D-1AFF-33D4-BAA1-131608622F33
++  - /System/Library/PrivateFrameworks/HealthArchivableViews.framework/HealthArchivableViews
+
 -  Functions: 720
--  Symbols:   353
+-  Symbols:   273
 -  CStrings:  6
-+  UUID: 63F1F32C-7CC4-3E15-9897-660A36080F8A
 +  Functions: 555
-+  Symbols:   285
++  Symbols:   238
 +  CStrings:  5
- 
 Symbols:
-+ _get_witness_table qd0__7SwiftUI4ViewHD3_AaBP6ChartsE10chartYAxis7contentQrqd__yXE_tAD11AxisContentRd__lFQOyAcDE0E6YScale6domain4typeQrqd___AD9ScaleTypeVSgtAD0M6DomainRd__lFQOyAcDE0E5XAxisAFQrqd__yXE_tAdGRd__lFQOyAcDE0E6XScaleAiJQrqd___AMtAdNRd__lFQOyAD5ChartVyAA05TupleI0VyAD0rI0PADE7opacityyQrSdFQOy21HealthArchivableViews014HeartRateBasicR0V_Qo__0xuB00xY11AverageLineVSgAA012_ConditionalI0VyA0_0xY24HighlightedBreathePointsVA0_0xY24HighlightedWorkoutPointsVGSgQPGG_SNy10Foundation4DateVGQo__AD0H5MarksVyAD18BuilderConditionalVyAD07BuilderS0VyAD0H8GridLineV_AD0H4TickVA22_yAD0H4MarkPADE6offset1x1yQr12CoreGraphics7CGFloatV_A36_tFQOyAD0H10ValueLabelVyAA4TextVG_Qo_A42_GSgQPGA24_yA26__A28_A42_QPGGGQo__SNySiGQo__A24_yA20_yA30_ADE15foregroundStyleyQrqd__AA10ShapeStyleRd__lFQOyA22_yA38_yAA08ModifiedI0VyA40_AA13_OffsetEffectVGGA41_GSg_AA5ColorVQo_G_A20_yA41_GSgQPGQo_HO.9
++ _get_witness_table qd0__7SwiftUI4ViewHD3_AaBP6ChartsE10chartYAxis7contentQrqd__yXE_tAD11AxisContentRd__lFQOyAcDE0E6YScale6domain4typeQrqd___AD9ScaleTypeVSgtAD0M6DomainRd__lFQOyAcDE0E5XAxisAFQrqd__yXE_tAdGRd__lFQOyAcDE0E6XScaleAiJQrqd___AMtAdNRd__lFQOyAD5ChartVyAA05TupleI0VyAD0rI0PADE7opacityyQrSdFQOy21HealthArchivableViews014HeartRateBasicR0V_Qo__0xuB00xY11AverageLineVSgAA012_ConditionalI0VyA0_0xY24HighlightedBreathePointsVA0_0xY24HighlightedWorkoutPointsVGSgQPGG_SNy10Foundation4DateVGQo__AD0H5MarksVyAD18BuilderConditionalVyAD07BuilderS0VyAD0H8GridLineV_AD0H4TickVA22_yAD0H4MarkPADE6offset1x1yQr12CoreGraphics7CGFloatV_A36_tFQOyAD0H10ValueLabelVyAA4TextVG_Qo_A42_GSgQPGA24_yA26__A28_A42_QPGGGQo__SNySiGQo__A24_yA20_yA30_ADE15foregroundStyleyQrqd__AA10ShapeStyleRd__lFQOyA22_yA38_yAA08ModifiedI0VyA40_AA13_OffsetEffectVGGA41_GSg_AA5ColorVQo_G_A20_yA41_GSgQPGQo_HO
 + _objc_retain_x9
 + _swift_release_x28
 + _symbolic _____ 9HealthKit26HeartRateSummaryStatisticsV
@@ -92,10 +50,6 @@ Symbols:
 - __Block_copy
 - __Block_release
 - __NSConcreteStackBlock
-- ___swift_closure_destructor.12
-- ___swift_closure_destructor.2
-- ___swift_closure_destructor.5
-- ___swift_closure_destructor.9
 - _associated conformance 13HeartHealthUI0A12RateAXBucketVs12IdentifiableAA2IDsADP_SH
 - _associated conformance 13HeartHealthUI0A12RateBPMRangeVs12IdentifiableAA2IDsADP_SH
 - _associated conformance 13HeartHealthUI0A13RateChartDataVs12IdentifiableAA2IDsADP_SH
@@ -104,14 +58,8 @@ Symbols:
 - _block_copy_helper
 - _block_descriptor
 - _block_destroy_helper
-- _get_witness_table 7SwiftUI7ForEachVySay011HeartHealthB00E14RateHourlyDataVG10Foundation4DateVAA19_ConditionalContentVyACySayAD0eg5ChartI0VGAjCySayAD0eG8BPMRangeVGAH4UUIDV6Charts0nM0PAUE15foregroundStyleyQrqd__AA05ShapeS0Rd__lFQOyAwUE12cornerRadius_5styleQr12CoreGraphics7CGFloatV_AA013RoundedCornerS0OtFQOyAU7BarMarkV_Qo__AA5ColorVQo_GGA6_GGAuVHpA13_AuVHpA12_AuVHpA11_AuVHpqd0__AuVHD3_A10_HO_HC_HC_A6_AuVHPyHCHC_HC.3
-- _get_witness_table qd0__7SwiftUI4ViewHD3_AaBP6ChartsE10chartYAxis7contentQrqd__yXE_tAD11AxisContentRd__lFQOyAcDE0E6YScale6domain4typeQrqd___AD9ScaleTypeVSgtAD0M6DomainRd__lFQOyAcDE0E5XAxisAFQrqd__yXE_tAdGRd__lFQOyAcDE0E6XScaleAiJQrqd___AMtAdNRd__lFQOyAD5ChartVyAA05TupleI0VyAD0rI0PADE7opacityyQrSdFQOy011HeartHealthB00u9RateBasicR0V_Qo__AX0uW11AverageLineVSgAA012_ConditionalI0VyAX0uW24HighlightedBreathePointsVAX0uW24HighlightedWorkoutPointsVGSgQPGG_SNy10Foundation4DateVGQo__AD0H5MarksVyAD18BuilderConditionalVyAD07BuilderS0VyAD0h4GridZ0V_AD0H4TickVA21_yAD0H4MarkPADE6offset1x1yQr12CoreGraphics7CGFloatV_A35_tFQOyAD0H10ValueLabelVyAA4TextVG_Qo_A41_GSgQPGA23_yA25__A27_A41_QPGGGQo__SNySiGQo__A23_yA19_yA29_ADE15foregroundStyleyQrqd__AA10ShapeStyleRd__lFQOyA21_yA37_yAA08ModifiedI0VyA39_AA13_OffsetEffectVGGA40_GSg_AA5ColorVQo_G_A19_yA40_GSgQPGQo_HO.9
-- _objc_msgSend$bucketIndex
-- _objc_msgSend$dateInterval
-- _objc_msgSend$enumerateBucketsWithBlock:
-- _objc_msgSend$heartRatesInBeatsPerMinute
-- _objc_msgSend$numberOfBuckets
-- _objc_msgSend$sessionUUID
+- _get_witness_table 7SwiftUI7ForEachVySay011HeartHealthB00E14RateHourlyDataVG10Foundation4DateVAA19_ConditionalContentVyACySayAD0eg5ChartI0VGAjCySayAD0eG8BPMRangeVGAH4UUIDV6Charts0nM0PAUE15foregroundStyleyQrqd__AA05ShapeS0Rd__lFQOyAwUE12cornerRadius_5styleQr12CoreGraphics7CGFloatV_AA013RoundedCornerS0OtFQOyAU7BarMarkV_Qo__AA5ColorVQo_GGA6_GGAuVHpA13_AuVHpA12_AuVHpA11_AuVHpqd0__AuVHD3_A10_HO_HC_HC_A6_AuVHPyHCHC_HC
+- _get_witness_table qd0__7SwiftUI4ViewHD3_AaBP6ChartsE10chartYAxis7contentQrqd__yXE_tAD11AxisContentRd__lFQOyAcDE0E6YScale6domain4typeQrqd___AD9ScaleTypeVSgtAD0M6DomainRd__lFQOyAcDE0E5XAxisAFQrqd__yXE_tAdGRd__lFQOyAcDE0E6XScaleAiJQrqd___AMtAdNRd__lFQOyAD5ChartVyAA05TupleI0VyAD0rI0PADE7opacityyQrSdFQOy011HeartHealthB00u9RateBasicR0V_Qo__AX0uW11AverageLineVSgAA012_ConditionalI0VyAX0uW24HighlightedBreathePointsVAX0uW24HighlightedWorkoutPointsVGSgQPGG_SNy10Foundation4DateVGQo__AD0H5MarksVyAD18BuilderConditionalVyAD07BuilderS0VyAD0h4GridZ0V_AD0H4TickVA21_yAD0H4MarkPADE6offset1x1yQr12CoreGraphics7CGFloatV_A35_tFQOyAD0H10ValueLabelVyAA4TextVG_Qo_A41_GSgQPGA23_yA25__A27_A41_QPGGGQo__SNySiGQo__A23_yA19_yA29_ADE15foregroundStyleyQrqd__AA10ShapeStyleRd__lFQOyA21_yA37_yAA08ModifiedI0VyA39_AA13_OffsetEffectVGGA40_GSg_AA5ColorVQo_G_A19_yA40_GSgQPGQo_HO
 - _objc_release_x25
 - _objc_retain_x1
 - _objc_retain_x25
@@ -141,5 +89,4 @@ Symbols:
 - _type_layout_string 13HeartHealthUI0A14RateDaySummaryV
 CStrings:
 - "HeartHealthUI/HeartRateBasicChart.swift"
-
 ```

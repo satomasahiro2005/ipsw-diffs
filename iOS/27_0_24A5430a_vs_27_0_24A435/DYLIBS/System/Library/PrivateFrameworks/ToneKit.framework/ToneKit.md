@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ToneKit.framework/ToneKit`
 
-```diff
+### Section Size Changes
 
- 675.0.0.0.0
--  __TEXT.__text: 0x26b50
-+  __TEXT.__text: 0x26b54
-   __TEXT.__objc_methlist: 0x33b4
-   __TEXT.__cstring: 0x19ab
-   __TEXT.__const: 0xf8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x26b50` | `0x26b54` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[TKVibrationRecorderTouchSurfaceRecordedDataWrapper _prepareRecordedDataBufferForStoringEnoughElementsForRecordingDuration:] : 160 -> 164
 ```

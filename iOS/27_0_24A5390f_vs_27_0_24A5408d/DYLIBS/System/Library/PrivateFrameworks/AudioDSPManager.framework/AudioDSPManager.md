@@ -2,60 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/AudioDSPManager.framework/AudioDSPManager`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbed20` | `0xbe264` | **`-0xabc`** |
+| `__TEXT.__const` | `0xf248` | `0xef98` | **`-0x2b0`** |
+| `__TEXT.__cstring` | `0x6730` | `0x6500` | **`-0x230`** |
+| `__AUTH_CONST.__const` | `0x7fd8` | `0x7ed0` | **`-0x108`** |
+| `__TEXT.__unwind_info` | `0x3bd0` | `0x3ba0` | **`-0x30`** |
+| `__TEXT.__oslogstring` | `0x3bb3` | `0x3b89` | **`-0x2a`** |
+
+### Other Changes
+
 ```diff
 
 -241.108.0.0.0
--  __TEXT.__text: 0xbed20
 +241.110.0.0.0
-+  __TEXT.__text: 0xbe264
-   __TEXT.__realtime: 0x170
-   __TEXT.__init_offsets: 0x10
-   __TEXT.__objc_methlist: 0x7c8
--  __TEXT.__const: 0xf248
-+  __TEXT.__const: 0xef98
-   __TEXT.__dlopen_cstrs: 0x54
-   __TEXT.__swift5_typeref: 0x27f8
-   __TEXT.__swift5_fieldmd: 0x18fc
 
-   __TEXT.__swift5_types: 0x228
-   __TEXT.__swift5_reflstr: 0x149c
-   __TEXT.__swift5_assocty: 0x548
--  __TEXT.__cstring: 0x6730
-+  __TEXT.__cstring: 0x6500
-   __TEXT.__swift_as_entry: 0x50
-   __TEXT.__swift_as_ret: 0x44
-   __TEXT.__swift_as_cont: 0x64
-
-   __TEXT.__swift5_mpenum: 0x54
-   __TEXT.__swift5_capture: 0x2cc
-   __TEXT.__gcc_except_tab: 0x7158
--  __TEXT.__oslogstring: 0x3bb3
--  __TEXT.__unwind_info: 0x3bd0
-+  __TEXT.__oslogstring: 0x3b89
-+  __TEXT.__unwind_info: 0x3ba0
-   __TEXT.__eh_frame: 0x3618
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0x578
-   __DATA_CONST.__objc_superrefs: 0x18
-   __DATA_CONST.__got: 0x5c0
--  __AUTH_CONST.__const: 0x7fd8
-+  __AUTH_CONST.__const: 0x7ed0
-   __AUTH_CONST.__cfstring: 0xfc0
-   __AUTH_CONST.__objc_const: 0x1078
-   __AUTH_CONST.__weak_auth_got: 0x20
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3612
--  Symbols:   4487
+-  Symbols:   4350
 -  CStrings:  1238
 +  Functions: 3598
-+  Symbols:   4454
++  Symbols:   4317
 +  CStrings:  1233
- 
 Symbols:
 + GCC_except_table1001
 + GCC_except_table1009

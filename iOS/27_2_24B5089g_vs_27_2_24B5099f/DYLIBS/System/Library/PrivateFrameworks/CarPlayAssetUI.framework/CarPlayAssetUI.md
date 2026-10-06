@@ -2,90 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/CarPlayAssetUI.framework/CarPlayAssetUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1601c4` | `0x15f78c` | **`-0xa38`** |
+| `__AUTH_CONST.__const` | `0x6970` | `0x6700` | **`-0x270`** |
+| `__TEXT.__const` | `0xdc74` | `0xda44` | **`-0x230`** |
+| `__DATA.__bss` | `0xaa70` | `0xa880` | **`-0x1f0`** |
+| `__TEXT.__cstring` | `0x1a57` | `0x18b7` | **`-0x1a0`** |
+| `__TEXT.__constg_swiftt` | `0x4a7c` | `0x48f8` | **`-0x184`** |
+| `__TEXT.__oslogstring` | `0x1705` | `0x1887` | **`+0x182`** |
+| `__TEXT.__swift5_typeref` | `0xefb4` | `0xee40` | **`-0x174`** |
+| `__AUTH_CONST.__auth_got` | `0x2828` | `0x26b8` | **`-0x170`** |
+| `__TEXT.__swift5_capture` | `0x186c` | `0x17b0` | **`-0xbc`** |
+| `__TEXT.__unwind_info` | `0x4808` | `0x4750` | **`-0xb8`** |
+| `__AUTH.__data` | `0x4140` | `0x40c8` | **`-0x78`** |
+| `__DATA.__data` | `0x69a8` | `0x6930` | **`-0x78`** |
+| `__TEXT.__swift5_fieldmd` | `0x2ec0` | `0x2e5c` | **`-0x64`** |
+| `__TEXT.__swift5_reflstr` | `0x2bb3` | `0x2b68` | **`-0x4b`** |
+| `__TEXT.__eh_frame` | `0x2060` | `0x2020` | **`-0x40`** |
+| `__DATA.__common` | `0x338` | `0x308` | **`-0x30`** |
+| `__TEXT.__swift5_assocty` | `0x1190` | `0x1160` | **`-0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1238` | `0x1218` | **`-0x20`** |
+| `__DATA_CONST.__const` | `0xcc0` | `0xcb0` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x1050` | `0x1040` | **`-0x10`** |
+| `__TEXT.__swift5_proto` | `0x58c` | `0x57c` | **`-0x10`** |
+| `__TEXT.__swift5_types` | `0x3a4` | `0x394` | **`-0x10`** |
+| `__TEXT.__swift_as_cont` | `0x64` | `0x5c` | **`-0x8`** |
+| `__TEXT.__swift_as_entry` | `0x38` | `0x30` | **`-0x8`** |
+| `__TEXT.__swift5_protos` | `0x24` | `0x20` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -509.4.2.0.0
--  __TEXT.__text: 0x15475c
 +509.8.0.0.0
-+  __TEXT.__text: 0x153e68
-   __TEXT.__objc_methlist: 0x150c
--  __TEXT.__const: 0xdc74
--  __TEXT.__constg_swiftt: 0x4a7c
--  __TEXT.__swift5_typeref: 0xefb4
-+  __TEXT.__const: 0xda44
-+  __TEXT.__constg_swiftt: 0x48f8
-+  __TEXT.__swift5_typeref: 0xee40
-   __TEXT.__swift5_builtin: 0x140
--  __TEXT.__swift5_reflstr: 0x2bb3
--  __TEXT.__swift5_fieldmd: 0x2ec0
--  __TEXT.__swift5_assocty: 0x1190
--  __TEXT.__swift5_capture: 0x186c
--  __TEXT.__oslogstring: 0x1705
--  __TEXT.__swift5_proto: 0x58c
--  __TEXT.__swift5_types: 0x3a4
--  __TEXT.__cstring: 0x1a57
--  __TEXT.__swift5_protos: 0x24
--  __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__swift_as_entry: 0x38
-+  __TEXT.__swift5_reflstr: 0x2b68
-+  __TEXT.__swift5_fieldmd: 0x2e5c
-+  __TEXT.__swift5_assocty: 0x1160
-+  __TEXT.__swift5_capture: 0x17b0
-+  __TEXT.__oslogstring: 0x1887
-+  __TEXT.__swift5_proto: 0x57c
-+  __TEXT.__swift5_types: 0x394
-+  __TEXT.__swift5_protos: 0x20
-+  __TEXT.__cstring: 0x18b7
-+  __TEXT.__swift_as_entry: 0x30
-   __TEXT.__swift_as_ret: 0x28
--  __TEXT.__swift_as_cont: 0x64
--  __TEXT.__unwind_info: 0x5d28
--  __TEXT.__eh_frame: 0x2060
-+  __TEXT.__swift_as_cont: 0x5c
-+  __TEXT.__swift5_mpenum: 0x20
-+  __TEXT.__unwind_info: 0x5c90
-+  __TEXT.__eh_frame: 0x2020
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xcc0
-+  __DATA_CONST.__const: 0xcb0
-   __DATA_CONST.__objc_classlist: 0x98
-   __DATA_CONST.__objc_protolist: 0x1c0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1238
-+  __DATA_CONST.__objc_selrefs: 0x1218
-   __DATA_CONST.__objc_protorefs: 0xe0
--  __DATA_CONST.__got: 0x1050
--  __AUTH_CONST.__const: 0x6970
-+  __DATA_CONST.__got: 0x1040
-+  __AUTH_CONST.__const: 0x6700
-   __AUTH_CONST.__objc_const: 0x2800
--  __AUTH_CONST.__auth_got: 0x2828
-+  __AUTH_CONST.__auth_got: 0x26b8
-   __AUTH.__objc_data: 0xa88
--  __AUTH.__data: 0x4140
--  __DATA.__data: 0x69a8
--  __DATA.__common: 0x338
-+  __AUTH.__data: 0x40c8
-+  __DATA.__data: 0x6930
-+  __DATA.__common: 0x308
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7951
 -  Symbols:   19069
 -  CStrings:  262
 +  Functions: 7856
 +  Symbols:   18830
 +  CStrings:  257
- 
 Symbols:
 + _$s10Foundation4UUIDVACSHAAWl
 + _$s12CarPlayAsset11TaggedValueV03rawE0q_vpMV

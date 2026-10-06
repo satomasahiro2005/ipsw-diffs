@@ -2,16 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/AccessibilitySettingsUI.framework/AccessibilitySettingsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x152758` | `0x152778` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x3ab8` | `0x3ac0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3245.7.1.0.0
--  __TEXT.__text: 0x1453f0
 +3245.8.2.0.0
-+  __TEXT.__text: 0x145410
-   __TEXT.__objc_methlist: 0x81c
-   __TEXT.__const: 0xd598
-   __TEXT.__constg_swiftt: 0x43f8
 Functions:
-~ sub_251ac8d38 -> sub_251d56d38 : 692 -> 916
-~ sub_251adfb3c -> sub_251d6dc1c : 2012 -> 1820
+~ sub_254391a3c -> sub_2545bda3c : 712 -> 936
+~ sub_2543a97ec -> sub_2545d58cc : 2088 -> 1896
 ```

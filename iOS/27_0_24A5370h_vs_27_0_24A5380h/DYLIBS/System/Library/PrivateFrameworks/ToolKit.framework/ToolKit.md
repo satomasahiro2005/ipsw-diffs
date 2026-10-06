@@ -2,96 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/ToolKit.framework/ToolKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x998c0` | `0x93640` | **`-0x6280`** |
+| `__DATA_DIRTY.__bss` | `0x41100` | `0x47380` | **`+0x6280`** |
+| `__DATA_DIRTY.__data` | `0x10c68` | `0x12c68` | **`+0x2000`** |
+| `__DATA.__data` | `0x10ff0` | `0xfb90` | **`-0x1460`** |
+| `__AUTH.__data` | `0x3428` | `0x28b8` | **`-0xb70`** |
+| `__TEXT.__text` | `0x4cd7d8` | `0x4cdab0` | **`+0x2d8`** |
+| `__TEXT.__const` | `0x7ac68` | `0x7acd8` | **`+0x70`** |
+| `__DATA.__common` | `0x988` | `0x920` | **`-0x68`** |
+| `__DATA_DIRTY.__common` | `0x9e0` | `0xa48` | **`+0x68`** |
+| `__AUTH.__objc_data` | `0x98` | `0x48` | **`-0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x360` | `0x3b0` | **`+0x50`** |
+| `__TEXT.__cstring` | `0x9254` | `0x9224` | **`-0x30`** |
+| `__TEXT.__swift5_reflstr` | `0x9377` | `0x93a7` | **`+0x30`** |
+| `__TEXT.__swift5_typeref` | `0x1467e` | `0x146a8` | **`+0x2a`** |
+| `__TEXT.__swift5_fieldmd` | `0x13d14` | `0x13d2c` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x5a0` | `0x5b4` | **`+0x14`** |
+| `__TEXT.__eh_frame` | `0x32848` | `0x32838` | **`-0x10`** |
+| `__TEXT.__swift5_mpenum` | `0x328` | `0x330` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0xa78` | `0xa80` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x1aaf0` | `0x1aaf8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x4cd7d8
-+  __TEXT.__text: 0x4cdab0
-   __TEXT.__objc_methlist: 0x228
--  __TEXT.__const: 0x7ac68
--  __TEXT.__swift5_typeref: 0x1467e
-+  __TEXT.__const: 0x7acd8
-+  __TEXT.__swift5_typeref: 0x146a8
-   __TEXT.__constg_swiftt: 0xee9c
--  __TEXT.__swift5_builtin: 0x5a0
--  __TEXT.__swift5_reflstr: 0x9377
--  __TEXT.__swift5_fieldmd: 0x13d14
-+  __TEXT.__swift5_builtin: 0x5b4
-+  __TEXT.__swift5_reflstr: 0x93a7
-+  __TEXT.__swift5_fieldmd: 0x13d2c
-   __TEXT.__swift5_assocty: 0x29a0
--  __TEXT.__cstring: 0x9254
-+  __TEXT.__cstring: 0x9224
-   __TEXT.__swift5_proto: 0x6eb0
-   __TEXT.__swift5_types: 0x1868
-   __TEXT.__swift5_capture: 0x34e4
--  __TEXT.__swift5_mpenum: 0x328
-+  __TEXT.__swift5_mpenum: 0x330
-   __TEXT.__swift5_protos: 0x8c
-   __TEXT.__swift_as_entry: 0x5d0
-   __TEXT.__swift_as_ret: 0x6dc
--  __TEXT.__swift_as_cont: 0xa78
-+  __TEXT.__swift_as_cont: 0xa80
-   __TEXT.__oslogstring: 0x407c
--  __TEXT.__unwind_info: 0x1aaf0
--  __TEXT.__eh_frame: 0x32848
-+  __TEXT.__unwind_info: 0x1aaf8
-+  __TEXT.__eh_frame: 0x32838
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-5028.0.21.0.0
++5032.5.0.0.0
 
-   __AUTH_CONST.__const: 0x2bcb0
-   __AUTH_CONST.__objc_const: 0x1c68
-   __AUTH_CONST.__auth_got: 0x27b8
--  __AUTH.__objc_data: 0x98
--  __AUTH.__data: 0x3428
--  __DATA.__data: 0x10ff0
--  __DATA.__bss: 0x998c0
--  __DATA.__common: 0x988
--  __DATA_DIRTY.__objc_data: 0x360
--  __DATA_DIRTY.__data: 0x10c68
--  __DATA_DIRTY.__bss: 0x41100
--  __DATA_DIRTY.__common: 0x9e0
-+  __AUTH.__objc_data: 0x48
-+  __AUTH.__data: 0x28b8
-+  __DATA.__data: 0xfb90
-+  __DATA.__bss: 0x93640
-+  __DATA.__common: 0x920
-+  __DATA_DIRTY.__objc_data: 0x3b0
-+  __DATA_DIRTY.__data: 0x12c68
-+  __DATA_DIRTY.__bss: 0x47380
-+  __DATA_DIRTY.__common: 0xa48
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 44656
--  Symbols:   32331
+-  Symbols:   10287
 -  CStrings:  1711
 +  Functions: 44650
-+  Symbols:   32297
++  Symbols:   10286
 +  CStrings:  1710
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
 Symbols:
 + _get_enum_tag_for_layout_string 7ToolKit0A15InvocationErrorO
 + _symbolic SS16bundleIdentifier_SS06actionB0t
@@ -100,5 +48,4 @@ Symbols:
 - _swift_willThrowTypedImpl
 CStrings:
 - "ToolKit/ToolInvocation+LinkServices.swift"
-
 ```

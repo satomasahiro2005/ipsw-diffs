@@ -2,79 +2,47 @@
 
 > `/usr/libexec/NANDTaskScheduler`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__unwind_info`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf904` | `0xfdb4` | **`+0x4b0`** |
+| `__TEXT.__oslogstring` | `0x2fcf` | `0x30f5` | **`+0x126`** |
+| `__TEXT.__objc_methname` | `0x15fe` | `0x16b2` | **`+0xb4`** |
+| `__DATA_CONST.__cfstring` | `0xa80` | `0xb20` | **`+0xa0`** |
+| `__TEXT.__objc_stubs` | `0x1600` | `0x16a0` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0x12b4` | `0x1323` | **`+0x6f`** |
+| `__DATA.__objc_selrefs` | `0x6d8` | `0x700` | **`+0x28`** |
+| `__DATA_CONST.__objc_intobj` | `0x18` | `0x30` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x1c0` | `0x1d0` | **`+0x10`** |
+| `__DATA.__common` | `0x68` | `0x70` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -849.0.5.0.0
--  __TEXT.__text: 0xf904
 +849.0.11.0.0
-+  __TEXT.__text: 0xfdb4
-   __TEXT.__auth_stubs: 0x810
--  __TEXT.__objc_stubs: 0x1600
-+  __TEXT.__objc_stubs: 0x16a0
-   __TEXT.__objc_methlist: 0x4c4
-   __TEXT.__const: 0x1b0
-   __TEXT.__gcc_except_tab: 0x294
--  __TEXT.__cstring: 0x12b4
--  __TEXT.__objc_methname: 0x15fe
--  __TEXT.__oslogstring: 0x2fcf
-+  __TEXT.__cstring: 0x1323
-+  __TEXT.__objc_methname: 0x16b2
-+  __TEXT.__oslogstring: 0x30f5
-   __TEXT.__objc_classname: 0xed
-   __TEXT.__objc_methtype: 0x352
-   __TEXT.__unwind_info: 0x310
-   __DATA_CONST.__const: 0x690
--  __DATA_CONST.__cfstring: 0xa80
-+  __DATA_CONST.__cfstring: 0xb20
-   __DATA_CONST.__objc_classlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   __DATA_CONST.__objc_superrefs: 0x28
-   __DATA_CONST.__objc_arraydata: 0x40
-   __DATA_CONST.__objc_arrayobj: 0x48
--  __DATA_CONST.__objc_intobj: 0x18
-+  __DATA_CONST.__objc_intobj: 0x30
-   __DATA_CONST.__auth_got: 0x418
--  __DATA_CONST.__got: 0x1c0
-+  __DATA_CONST.__got: 0x1d0
-   __DATA_CONST.__auth_ptr: 0x8
-   __DATA.__objc_const: 0xb10
--  __DATA.__objc_selrefs: 0x6d8
-+  __DATA.__objc_selrefs: 0x700
-   __DATA.__objc_ivar: 0x28
-   __DATA.__objc_data: 0x1e0
-   __DATA.__data: 0x618
-   __DATA.__bss: 0x59
--  __DATA.__common: 0x68
-+  __DATA.__common: 0x70
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 249
 -  Symbols:   199
 -  CStrings:  753
 +  Symbols:   201
 +  CStrings:  771
- 
 Symbols:
 + _OBJC_CLASS_$_BGSystemTaskProgressMetrics
 + _OBJC_CLASS_$_NSNumber

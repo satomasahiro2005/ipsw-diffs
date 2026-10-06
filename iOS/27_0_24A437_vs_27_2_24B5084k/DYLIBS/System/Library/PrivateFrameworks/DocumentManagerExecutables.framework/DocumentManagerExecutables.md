@@ -2,107 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/DocumentManagerExecutables.framework/DocumentManagerExecutables`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7c3674` | `0x7d2494` | **`+0xee20`** |
+| `__AUTH_CONST.__const` | `0x3df30` | `0x3ecd0` | **`+0xda0`** |
+| `__TEXT.__swift5_capture` | `0x1095c` | `0x10ef8` | **`+0x59c`** |
+| `__TEXT.__oslogstring` | `0x15bec` | `0x1607c` | **`+0x490`** |
+| `__TEXT.__const` | `0x29ee4` | `0x2a1f4` | **`+0x310`** |
+| `__TEXT.__swift5_typeref` | `0x18944` | `0x18c54` | **`+0x310`** |
+| `__DATA.__bss` | `0x21788` | `0x21a08` | **`+0x280`** |
+| `__TEXT.__unwind_info` | `0x18c38` | `0x18ea0` | **`+0x268`** |
+| `__DATA.__data` | `0xd320` | `0xd560` | **`+0x240`** |
+| `__TEXT.__constg_swiftt` | `0x1c328` | `0x1c524` | **`+0x1fc`** |
+| `__DATA_DIRTY.__objc_data` | `0xd438` | `0xd5c0` | **`+0x188`** |
+| `__TEXT.__swift5_fieldmd` | `0xf12c` | `0xf248` | **`+0x11c`** |
+| `__TEXT.__cstring` | `0x290d2` | `0x291e2` | **`+0x110`** |
+| `__DATA_DIRTY.__data` | `0xa2c8` | `0xa1d8` | **`-0xf0`** |
+| `__AUTH_CONST.__objc_const` | `0x2c7a8` | `0x2c888` | **`+0xe0`** |
+| `__TEXT.__swift5_reflstr` | `0x11798` | `0x11878` | **`+0xe0`** |
+| `__AUTH.__objc_data` | `0x12198` | `0x12230` | **`+0x98`** |
+| `__TEXT.__objc_methlist` | `0x11094` | `0x11124` | **`+0x90`** |
+| `__DATA_CONST.__objc_selrefs` | `0x9dc8` | `0x9e30` | **`+0x68`** |
+| `__DATA_CONST.__const` | `0x5d38` | `0x5d90` | **`+0x58`** |
+| `__TEXT.__eh_frame` | `0xa6d4` | `0xa714` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x4598` | `0x45d0` | **`+0x38`** |
+| `__AUTH.__data` | `0x9b20` | `0x9b40` | **`+0x20`** |
+| `__TEXT.__swift5_proto` | `0x1614` | `0x1630` | **`+0x1c`** |
+| `__DATA_CONST.__got` | `0x2b50` | `0x2b68` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x1ee8` | `0x1f00` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x960` | `0x974` | **`+0x14`** |
+| `__TEXT.__swift5_types` | `0x10bc` | `0x10d0` | **`+0x14`** |
+| `__TEXT.__gcc_except_tab` | `0x8b4` | `0x8a8` | **`-0xc`** |
+| `__TEXT.__swift5_protos` | `0x1b4` | `0x1b8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -401.0.0.0.0
--  __TEXT.__text: 0x78a480
--  __TEXT.__objc_methlist: 0x11094
--  __TEXT.__const: 0x29ee4
--  __TEXT.__gcc_except_tab: 0x8b4
--  __TEXT.__cstring: 0x290d2
--  __TEXT.__oslogstring: 0x15bec
 +401.1.5.0.0
-+  __TEXT.__text: 0x798bc8
-+  __TEXT.__objc_methlist: 0x11124
-+  __TEXT.__const: 0x2a1f4
-+  __TEXT.__gcc_except_tab: 0x8a8
-+  __TEXT.__cstring: 0x291e2
-+  __TEXT.__oslogstring: 0x1607c
-   __TEXT.__ustring: 0x74
--  __TEXT.__constg_swiftt: 0x1c328
--  __TEXT.__swift5_typeref: 0x18944
--  __TEXT.__swift5_builtin: 0x960
--  __TEXT.__swift5_reflstr: 0x11798
--  __TEXT.__swift5_fieldmd: 0xf12c
--  __TEXT.__swift5_assocty: 0x1ee8
--  __TEXT.__swift5_proto: 0x1614
--  __TEXT.__swift5_types: 0x10bc
--  __TEXT.__swift5_capture: 0x1095c
--  __TEXT.__swift5_protos: 0x1b4
-+  __TEXT.__constg_swiftt: 0x1c524
-+  __TEXT.__swift5_typeref: 0x18c54
-+  __TEXT.__swift5_builtin: 0x974
-+  __TEXT.__swift5_reflstr: 0x11878
-+  __TEXT.__swift5_fieldmd: 0xf248
-+  __TEXT.__swift5_assocty: 0x1f00
-+  __TEXT.__swift5_proto: 0x1630
-+  __TEXT.__swift5_types: 0x10d0
-+  __TEXT.__swift5_capture: 0x10ef8
-+  __TEXT.__swift5_protos: 0x1b8
-   __TEXT.__swift_as_entry: 0x304
-   __TEXT.__swift_as_cont: 0x650
-   __TEXT.__swift5_mpenum: 0xdc
-   __TEXT.__swift_as_ret: 0x32c
--  __TEXT.__unwind_info: 0x1fda0
--  __TEXT.__eh_frame: 0xa6f4
-+  __TEXT.__unwind_info: 0x20090
-+  __TEXT.__eh_frame: 0xa734
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x5d38
-+  __DATA_CONST.__const: 0x5d90
-   __DATA_CONST.__objc_classlist: 0x1020
-   __DATA_CONST.__objc_catlist: 0x228
-   __DATA_CONST.__objc_nlcatlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x908
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x9dc8
-+  __DATA_CONST.__objc_selrefs: 0x9e30
-   __DATA_CONST.__objc_protorefs: 0x4b8
-   __DATA_CONST.__objc_superrefs: 0x158
-   __DATA_CONST.__objc_arraydata: 0x90
--  __DATA_CONST.__got: 0x2b50
--  __AUTH_CONST.__const: 0x3df30
-+  __DATA_CONST.__got: 0x2b68
-+  __AUTH_CONST.__const: 0x3ecd0
-   __AUTH_CONST.__cfstring: 0x1dc0
--  __AUTH_CONST.__objc_const: 0x2c7a8
-+  __AUTH_CONST.__objc_const: 0x2c888
-   __AUTH_CONST.__objc_intobj: 0x2b8
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_arrayobj: 0x60
--  __AUTH_CONST.__auth_got: 0x4598
--  __AUTH.__objc_data: 0x12198
--  __AUTH.__data: 0x9b20
-+  __AUTH_CONST.__auth_got: 0x45d0
-+  __AUTH.__objc_data: 0x12230
-+  __AUTH.__data: 0x9b40
-   __DATA.__objc_ivar: 0x408
--  __DATA.__data: 0xd320
-+  __DATA.__data: 0xd560
-   __DATA.__objc_stublist: 0x30
-   __DATA.__common: 0x648
--  __DATA_DIRTY.__objc_data: 0xd438
--  __DATA_DIRTY.__data: 0xa2c8
-+  __DATA_DIRTY.__objc_data: 0xd5c0
-+  __DATA_DIRTY.__data: 0xa1d8
-   __DATA_DIRTY.__bss: 0x4e80
-   __DATA_DIRTY.__common: 0x5c8
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 45309
--  Symbols:   83878
+-  Symbols:   80191
 -  CStrings:  4726
 +  Functions: 45609
-+  Symbols:   84289
++  Symbols:   80590
 +  CStrings:  4748
- 
 Symbols:
 + -[DOCSplitBrowserViewController splitViewControllerDidCollapse:]
 + _$s15Synchronization5MutexVAARi_zrlE8withLockyqd__qd__xzYuqd_0_YKYTXEqd_0_YKs5ErrorRd_0_Ri_d__r0_lF6$deferL_yysAERd_0_Ri_zRi_d__r_0_lF
@@ -673,18 +620,6 @@ Symbols:
 + ___swift_closure_destructor.99Tm
 + _associated conformance 26DocumentManagerExecutables022DOCProviderDomainStateB0C7UseCaseOSHAASQ
 + _associated conformance 26DocumentManagerExecutables17DOCOperationAlertV5LevelOyx_GSHAASQ
-+ _objc_msgSend$beginLaunchAttemptForHostIdentifier:
-+ _objc_msgSend$dismiss
-+ _objc_msgSend$finishLaunchAttempt
-+ _objc_msgSend$inlineRenameOverlay
-+ _objc_msgSend$itemSize
-+ _objc_msgSend$navigationBarActionForActionIdentifier:
-+ _objc_msgSend$pickerDismissButton
-+ _objc_msgSend$providerDomainForDomain:
-+ _objc_msgSend$setHidesSharedBackground:
-+ _objc_msgSend$setStageChangedHandler:
-+ _objc_msgSend$sharedGuard
-+ _objc_msgSend$tagEditorContainer
 + _symbolic $s26DocumentManagerExecutables24AlertPresentingOperationP
 + _symbolic Say_____G So11CFStringRefa
 + _symbolic Say_____ySo16FIOperationReplyC_GG 26DocumentManagerExecutables17DOCOperationAlertV6ButtonV

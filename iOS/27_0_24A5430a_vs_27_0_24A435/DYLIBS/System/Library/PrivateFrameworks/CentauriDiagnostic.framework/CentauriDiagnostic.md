@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CentauriDiagnostic.framework/CentauriDiagnostic`
 
-```diff
+### Section Size Changes
 
- 128.0.0.0.0
--  __TEXT.__text: 0x6488
-+  __TEXT.__text: 0x6480
-   __TEXT.__objc_methlist: 0x1e4
-   __TEXT.__const: 0xa1
-   __TEXT.__cstring: 0x193e
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6488` | `0x6480` | **`-0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[CDFSubsystemDiagnostics init] : 316 -> 308
 ```

@@ -2,20 +2,23 @@
 
 > `/System/Library/Filesystems/apfs.fs/sm_stats`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x44540` | `0x44520` | **`-0x20`** |
+| `__TEXT.__unwind_info` | `0x728` | `0x730` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+
+### Other Changes
 
 ```diff
 
 -3288.40.14.0.0
--  __TEXT.__text: 0x43fa8
 +3288.40.17.0.0
-+  __TEXT.__text: 0x43f88
-   __TEXT.__auth_stubs: 0x730
-   __TEXT.__cstring: 0xce46
-   __TEXT.__const: 0x1c8
 ```

@@ -2,14 +2,9 @@
 
 > `/System/Library/PrivateFrameworks/MediaLibraryCore.framework/MediaLibraryCore`
 
-```diff
+### Section Size Changes
 
-   __AUTH_CONST.__cfstring: 0xea0
-   __AUTH_CONST.__weak_auth_got: 0xf8
-   __AUTH_CONST.__auth_got: 0x9b0
--  __DATA_DIRTY.__bss: 0x1e58
-+  __DATA_DIRTY.__bss: 0x1e88
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/PrivateFrameworks/DAAPKit.framework/DAAPKit
-   - /usr/lib/libSystem.B.dylib
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__bss` | `0x1e58` | `0x1e88` | **`+0x30`** |
+| `__DATA.__bss` | `0xc48` | `0xc28` | **`-0x20`** |

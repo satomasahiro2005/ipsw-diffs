@@ -2,94 +2,43 @@
 
 > `/System/Library/Frameworks/ImageIO.framework/ImageIO`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4fdcb8` | `0x5028a4` | **`+0x4bec`** |
+| `__DATA.__bss` | `0x2fc30` | `0x30e40` | **`+0x1210`** |
+| `__TEXT.__const` | `0x49530` | `0x49ed0` | **`+0x9a0`** |
+| `__TEXT.__cstring` | `0xa5f3e` | `0xa667d` | **`+0x73f`** |
+| `__AUTH_CONST.__const` | `0x4ee80` | `0x4f290` | **`+0x410`** |
+| `__TEXT.__unwind_info` | `0x13668` | `0x13880` | **`+0x218`** |
+| `__TEXT.__eh_frame` | `0x908c` | `0x9214` | **`+0x188`** |
+| `__DATA.__data` | `0x64b0` | `0x65f0` | **`+0x140`** |
+| `__TEXT.__gcc_except_tab` | `0x2284c` | `0x2298c` | **`+0x140`** |
+| `__TEXT.__swift5_typeref` | `0x3c68` | `0x3d88` | **`+0x120`** |
+| `__TEXT.__swift5_reflstr` | `0x4fb5` | `0x50a5` | **`+0xf0`** |
+| `__TEXT.__swift5_assocty` | `0x1c00` | `0x1cd8` | **`+0xd8`** |
+| `__TEXT.__constg_swiftt` | `0x260c` | `0x26a4` | **`+0x98`** |
+| `__TEXT.__swift5_proto` | `0x1604` | `0x1694` | **`+0x90`** |
+| `__AUTH_CONST.__cfstring` | `0x35f60` | `0x35fe0` | **`+0x80`** |
+| `__TEXT.__swift5_fieldmd` | `0x79f4` | `0x7a54` | **`+0x60`** |
+| `__TEXT.__swift5_types` | `0x478` | `0x490` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x2f70` | `0x2f78` | **`+0x8`** |
+| `__DATA_CONST.__const` | `0x4b810` | `0x4b818` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2847.1.0.0.0
--  __TEXT.__text: 0x4fdcb8
 +2851.0.0.0.0
-+  __TEXT.__text: 0x5028a4
-   __TEXT.__objc_methlist: 0xd58
--  __TEXT.__const: 0x49530
--  __TEXT.__gcc_except_tab: 0x2284c
--  __TEXT.__cstring: 0xa5f3e
-+  __TEXT.__const: 0x49ed0
-+  __TEXT.__gcc_except_tab: 0x2298c
-+  __TEXT.__cstring: 0xa667d
-   __TEXT.__oslogstring: 0x17
--  __TEXT.__constg_swiftt: 0x260c
--  __TEXT.__swift5_typeref: 0x3c68
-+  __TEXT.__constg_swiftt: 0x26a4
-+  __TEXT.__swift5_typeref: 0x3d88
-   __TEXT.__swift5_builtin: 0x154
--  __TEXT.__swift5_fieldmd: 0x79f4
--  __TEXT.__swift5_reflstr: 0x4fb5
--  __TEXT.__swift5_assocty: 0x1c00
--  __TEXT.__swift5_proto: 0x1604
--  __TEXT.__swift5_types: 0x478
-+  __TEXT.__swift5_fieldmd: 0x7a54
-+  __TEXT.__swift5_reflstr: 0x50a5
-+  __TEXT.__swift5_assocty: 0x1cd8
-+  __TEXT.__swift5_proto: 0x1694
-+  __TEXT.__swift5_types: 0x490
-   __TEXT.__swift5_protos: 0x3c
-   __TEXT.__swift5_capture: 0x210
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_cont: 0x10
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__ustring: 0x30
--  __TEXT.__unwind_info: 0x13668
--  __TEXT.__eh_frame: 0x908c
-+  __TEXT.__unwind_info: 0x13880
-+  __TEXT.__eh_frame: 0x9214
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4b810
-+  __DATA_CONST.__const: 0x4b818
-   __DATA_CONST.__objc_classlist: 0x60
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   __DATA_CONST.__objc_superrefs: 0x40
-   __DATA_CONST.__objc_arraydata: 0x470
-   __DATA_CONST.__got: 0xaa8
--  __AUTH_CONST.__const: 0x4ee80
--  __AUTH_CONST.__cfstring: 0x35f60
-+  __AUTH_CONST.__const: 0x4f290
-+  __AUTH_CONST.__cfstring: 0x35fe0
-   __AUTH_CONST.__objc_const: 0x11d0
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__objc_intobj: 0x6d8
-   __AUTH_CONST.__objc_floatobj: 0x10
-   __AUTH_CONST.__objc_dictobj: 0x78
--  __AUTH_CONST.__auth_got: 0x2f70
-+  __AUTH_CONST.__auth_got: 0x2f78
-   __AUTH.__objc_data: 0x370
-   __AUTH.__data: 0x15d8
-   __AUTH.__thread_vars: 0x18
-   __AUTH.__thread_bss: 0x1
-   __DATA.__objc_ivar: 0xa4
--  __DATA.__data: 0x64b0
--  __DATA.__bss: 0x2fc30
-+  __DATA.__data: 0x65f0
-+  __DATA.__bss: 0x30e40
-   __DATA.__common: 0x2270
-   __DATA_DIRTY.__data: 0x3b0
-   __DATA_DIRTY.__crash_info: 0x148
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_StringProcessing.dylib
 -  Functions: 23003
--  Symbols:   24645
+-  Symbols:   24337
 -  CStrings:  18195
 +  Functions: 23178
-+  Symbols:   24716
++  Symbols:   24408
 +  CStrings:  18232
- 
 Symbols:
 + GCC_except_table139
 + GCC_except_table148

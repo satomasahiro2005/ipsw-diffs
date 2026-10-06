@@ -2,125 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/ReplicatorEngine.framework/ReplicatorEngine`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a8304` | `0x1b1a34` | **`+0x9730`** |
+| `__AUTH_CONST.__const` | `0xa358` | `0xab58` | **`+0x800`** |
+| `__DATA.__bss` | `0x105a0` | `0x10920` | **`+0x380`** |
+| `__TEXT.__const` | `0xb8c8` | `0xbb18` | **`+0x250`** |
+| `__TEXT.__swift5_capture` | `0x23b0` | `0x25c8` | **`+0x218`** |
+| `__TEXT.__eh_frame` | `0x5598` | `0x53bc` | **`-0x1dc`** |
+| `__TEXT.__unwind_info` | `0x42b0` | `0x4458` | **`+0x1a8`** |
+| `__DATA_DIRTY.__data` | `0x8e0` | `0x9f0` | **`+0x110`** |
+| `__TEXT.__swift5_typeref` | `0x3ac2` | `0x3b9a` | **`+0xd8`** |
+| `__TEXT.__constg_swiftt` | `0x4168` | `0x421c` | **`+0xb4`** |
+| `__TEXT.__swift5_fieldmd` | `0x34ac` | `0x34fc` | **`+0x50`** |
+| `__AUTH.__data` | `0x4c08` | `0x4bc8` | **`-0x40`** |
+| `__TEXT.__cstring` | `0x1aba` | `0x1afa` | **`+0x40`** |
+| `__AUTH_CONST.__objc_const` | `0x4928` | `0x4908` | **`-0x20`** |
+| `__TEXT.__oslogstring` | `0x7f0d` | `0x7eed` | **`-0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x29ef` | `0x29cf` | **`-0x20`** |
+| `__TEXT.__swift5_proto` | `0x93c` | `0x958` | **`+0x1c`** |
+| `__DATA.__data` | `0x2b38` | `0x2b48` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x478` | `0x468` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1628` | `0x1630` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x394` | `0x39c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1a8304
-+  __TEXT.__text: 0x1b1a34
-   __TEXT.__objc_methlist: 0x424
--  __TEXT.__const: 0xb8c8
--  __TEXT.__cstring: 0x1aba
-+  __TEXT.__const: 0xbb18
-+  __TEXT.__cstring: 0x1afa
-   __TEXT.__gcc_except_tab: 0x19c
--  __TEXT.__oslogstring: 0x7f0d
--  __TEXT.__swift5_typeref: 0x3ac2
--  __TEXT.__constg_swiftt: 0x4168
--  __TEXT.__swift5_reflstr: 0x29ef
--  __TEXT.__swift5_fieldmd: 0x34ac
-+  __TEXT.__oslogstring: 0x7eed
-+  __TEXT.__swift5_typeref: 0x3b9a
-+  __TEXT.__constg_swiftt: 0x421c
-+  __TEXT.__swift5_reflstr: 0x29cf
-+  __TEXT.__swift5_fieldmd: 0x34fc
-   __TEXT.__swift5_builtin: 0x8c
-   __TEXT.__swift5_assocty: 0x408
--  __TEXT.__swift5_proto: 0x93c
--  __TEXT.__swift5_types: 0x394
--  __TEXT.__swift5_capture: 0x23b0
-+  __TEXT.__swift5_proto: 0x958
-+  __TEXT.__swift5_types: 0x39c
-+  __TEXT.__swift5_capture: 0x25c8
-   __TEXT.__swift_as_entry: 0x14
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0x28
-   __TEXT.__swift5_protos: 0xa0
-   __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__unwind_info: 0x42b0
--  __TEXT.__eh_frame: 0x5598
-+  __TEXT.__unwind_info: 0x4458
-+  __TEXT.__eh_frame: 0x53bc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x478
-+  __DATA_CONST.__const: 0x468
-   __DATA_CONST.__objc_classlist: 0x1e8
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
+-168.0.0.0.0
++172.0.0.0.0
 
-   __DATA_CONST.__objc_protorefs: 0x40
-   __DATA_CONST.__objc_superrefs: 0x18
-   __DATA_CONST.__got: 0x728
--  __AUTH_CONST.__const: 0xa358
-+  __AUTH_CONST.__const: 0xab58
-   __AUTH_CONST.__cfstring: 0x1e0
--  __AUTH_CONST.__objc_const: 0x4928
--  __AUTH_CONST.__auth_got: 0x1628
-+  __AUTH_CONST.__objc_const: 0x4908
-+  __AUTH_CONST.__auth_got: 0x1630
-   __AUTH.__objc_data: 0x5f0
--  __AUTH.__data: 0x4c08
-+  __AUTH.__data: 0x4bc8
-   __DATA.__objc_ivar: 0xc
--  __DATA.__data: 0x2b38
--  __DATA.__bss: 0x105a0
-+  __DATA.__data: 0x2b48
-+  __DATA.__bss: 0x10920
-   __DATA.__common: 0x1a0
-   __DATA_DIRTY.__objc_data: 0x1f8
--  __DATA_DIRTY.__data: 0x8e0
-+  __DATA_DIRTY.__data: 0x9f0
-   __DATA_DIRTY.__common: 0x28
-   __DATA_DIRTY.__bss: 0x680
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /System/Library/PrivateFrameworks/BackgroundSystemTasks.framework/BackgroundSystemTasks
-   - /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard
-   - /System/Library/PrivateFrameworks/CoreUtils.framework/CoreUtils
 -  - /System/Library/PrivateFrameworks/LocalStatusKit.framework/LocalStatusKit
 -  - /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
 -  - /System/Library/PrivateFrameworks/NanoRegistry.framework/NanoRegistry
-   - /System/Library/PrivateFrameworks/PowerLog.framework/PowerLog
--  - /System/Library/PrivateFrameworks/Rapport.framework/Rapport
-   - /System/Library/PrivateFrameworks/ReplicatorDependencies.framework/ReplicatorDependencies
-   - /System/Library/PrivateFrameworks/SymptomDiagnosticReporter.framework/SymptomDiagnosticReporter
-   - /System/Library/PrivateFrameworks/SystemWake.framework/SystemWake
--  - /System/Library/PrivateFrameworks/UserManagement.framework/UserManagement
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libcompression.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+-  - /System/Library/PrivateFrameworks/Rapport.framework/Rapport
+
+-  - /System/Library/PrivateFrameworks/UserManagement.framework/UserManagement
+
 -  Functions: 6604
--  Symbols:   3777
--  CStrings:  682
+-  Symbols:   1916
+-  CStrings:  667
 +  Functions: 6811
-+  Symbols:   3936
-+  CStrings:  683
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   1937
++  CStrings:  668
 Symbols:
 + ___swift_closure_destructor.186Tm
 + ___swift_closure_destructor.189Tm
@@ -199,5 +127,4 @@ CStrings:
 - "Restored %{public}ld record metadata items"
 - "Restoring metadata"
 - "recordMetadata: "
-
 ```

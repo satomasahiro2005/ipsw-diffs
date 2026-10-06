@@ -2,87 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/Welcome.framework/Welcome`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x50c50` | `0x51cac` | **`+0x105c`** |
+| `__TEXT.__swift5_typeref` | `0x6260` | `0x6308` | **`+0xa8`** |
+| `__TEXT.__const` | `0x2f64` | `0x2fa4` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x10d8` | `0x1110` | **`+0x38`** |
+| `__TEXT.__cstring` | `0x6d8` | `0x708` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0x1b90` | `0x1bb8` | **`+0x28`** |
+| `__DATA.__data` | `0x1b80` | `0x1ba0` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x1138` | `0x1150` | **`+0x18`** |
+| `__TEXT.__swift5_capture` | `0x4b4` | `0x4cc` | **`+0x18`** |
+| `__TEXT.__swift5_reflstr` | `0x738` | `0x748` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0xb7c` | `0xb88` | **`+0xc`** |
+| `__DATA_CONST.__got` | `0x7c8` | `0x7d0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x50c50
-+  __TEXT.__text: 0x51cac
-   __TEXT.__objc_methlist: 0x70
--  __TEXT.__const: 0x2f64
-+  __TEXT.__const: 0x2fa4
-   __TEXT.__constg_swiftt: 0x17b0
--  __TEXT.__swift5_typeref: 0x6260
-+  __TEXT.__swift5_typeref: 0x6308
-   __TEXT.__swift5_builtin: 0x28
--  __TEXT.__swift5_reflstr: 0x738
--  __TEXT.__swift5_fieldmd: 0xb7c
-+  __TEXT.__swift5_reflstr: 0x748
-+  __TEXT.__swift5_fieldmd: 0xb88
-   __TEXT.__swift5_types: 0x108
-   __TEXT.__oslogstring: 0x1c4
--  __TEXT.__swift5_capture: 0x4b4
--  __TEXT.__cstring: 0x6d8
-+  __TEXT.__swift5_capture: 0x4cc
-+  __TEXT.__cstring: 0x708
-   __TEXT.__swift5_assocty: 0x400
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_protos: 0xc
+-30.2.0.0.0
++31.0.0.0.0
 
-   __TEXT.__swift_as_entry: 0x18
-   __TEXT.__swift_as_ret: 0x18
-   __TEXT.__swift_as_cont: 0x3c
--  __TEXT.__unwind_info: 0x10d8
-+  __TEXT.__unwind_info: 0x1110
-   __TEXT.__eh_frame: 0x7ac
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x1f8
--  __DATA_CONST.__got: 0x7c8
--  __AUTH_CONST.__const: 0x1b90
-+  __DATA_CONST.__got: 0x7d0
-+  __AUTH_CONST.__const: 0x1bb8
-   __AUTH_CONST.__objc_const: 0x2f8
--  __AUTH_CONST.__auth_got: 0x1138
-+  __AUTH_CONST.__auth_got: 0x1150
-   __AUTH.__objc_data: 0x118
-   __AUTH.__data: 0xa78
--  __DATA.__data: 0x1b80
-+  __DATA.__data: 0x1ba0
-   __DATA.__common: 0xd
-   __DATA.__bss: 0x2428
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1826
--  Symbols:   1828
+-  Symbols:   1019
 -  CStrings:  57
 +  Functions: 1839
-+  Symbols:   1842
++  Symbols:   1025
 +  CStrings:  58
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
 Symbols:
 + _CTFontGetLeading
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyACyACyAA012_ConditionalD0VyAEyAEyAA4TextVAGGAGGAEyACyAgA30_EnvironmentKeyWritingModifierVyAA13OpenURLActionVGGAOGGAA016_ForegroundStyleJ0VyAA017HierarchicalShapeN0VGGAA16_FlexFrameLayoutVGAKyAA0F9AlignmentOGGAA023AccessibilityAttachmentJ0VGAA4ViewHPA2_AAA6_HPAzAA6_HPAwAA6_HPAqAA6_HPAiAA6_HPAhAA6_HPAgAA6_HPyHC_AgAA6_HPyHCHC_AgAA6_HPyHCHC_ApAA6_HPAoAA6_HPAgAA6_HPyHC_AnA0wJ0HPyHCHC_AoAA6_HPAgAA6_HPyHC_AnAA7_HPyHCHCHCHC_AvAA7_HPyHCHC_AyAA7_HPyHCHC_A1_AAA7_HPyHCHC_A4_AAA7_HPyHCHC
@@ -110,5 +59,4 @@ Symbols:
 - _symbolic _____y_____yxG_____y_____GG 7SwiftUI15ModifiedContentV AA6VStackV AA30_ContainerValueWritingModifierV 7Welcome0J8ViewKindO
 CStrings:
 + "Welcome/WelcomeFeatureList.swift"
-
 ```

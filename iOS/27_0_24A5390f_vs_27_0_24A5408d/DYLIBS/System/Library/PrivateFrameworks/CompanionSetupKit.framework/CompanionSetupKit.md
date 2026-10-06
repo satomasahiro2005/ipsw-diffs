@@ -2,122 +2,61 @@
 
 > `/System/Library/PrivateFrameworks/CompanionSetupKit.framework/CompanionSetupKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x40b1bc` | `0x429090` | **`+0x1ded4`** |
+| `__TEXT.__eh_frame` | `0x35618` | `0x36c38` | **`+0x1620`** |
+| `__DATA.__bss` | `0x45300` | `0x46290` | **`+0xf90`** |
+| `__TEXT.__const` | `0x2d240` | `0x2e090` | **`+0xe50`** |
+| `__TEXT.__oslogstring` | `0x8a75` | `0x9325` | **`+0x8b0`** |
+| `__AUTH_CONST.__const` | `0x18968` | `0x191e8` | **`+0x880`** |
+| `__TEXT.__unwind_info` | `0x127b0` | `0x12da0` | **`+0x5f0`** |
+| `__TEXT.__cstring` | `0xb93d` | `0xbe4d` | **`+0x510`** |
+| `__TEXT.__swift5_reflstr` | `0x7b3e` | `0x7f9e` | **`+0x460`** |
+| `__TEXT.__swift5_capture` | `0x370c` | `0x3a30` | **`+0x324`** |
+| `__TEXT.__swift5_fieldmd` | `0x90ac` | `0x93b0` | **`+0x304`** |
+| `__TEXT.__swift5_typeref` | `0x9880` | `0x9b3c` | **`+0x2bc`** |
+| `__DATA.__data` | `0x8ab8` | `0x8cd0` | **`+0x218`** |
+| `__TEXT.__constg_swiftt` | `0x6990` | `0x6b1c` | **`+0x18c`** |
+| `__TEXT.__swift_as_cont` | `0x3634` | `0x37a0` | **`+0x16c`** |
+| `__TEXT.__objc_methlist` | `0x108c` | `0xf8c` | **`-0x100`** |
+| `__TEXT.__swift_as_entry` | `0x10ec` | `0x1184` | **`+0x98`** |
+| `__AUTH.__objc_data` | `0x1c90` | `0x1d20` | **`+0x90`** |
+| `__AUTH_CONST.__auth_got` | `0x2528` | `0x25b8` | **`+0x90`** |
+| `__TEXT.__swift5_assocty` | `0x1510` | `0x15a0` | **`+0x90`** |
+| `__TEXT.__swift_as_ret` | `0x15d4` | `0x1658` | **`+0x84`** |
+| `__AUTH_CONST.__objc_const` | `0x7110` | `0x7190` | **`+0x80`** |
+| `__TEXT.__swift5_proto` | `0x2290` | `0x230c` | **`+0x7c`** |
+| `__DATA_CONST.__const` | `0x11e8` | `0x1250` | **`+0x68`** |
+| `__TEXT.__swift5_builtin` | `0x294` | `0x2d0` | **`+0x3c`** |
+| `__AUTH.__data` | `0x5520` | `0x5558` | **`+0x38`** |
+| `__TEXT.__swift5_types` | `0xa90` | `0xabc` | **`+0x2c`** |
+| `__DATA_CONST.__got` | `0x1318` | `0x1338` | **`+0x20`** |
+| `__TEXT.__swift5_mpenum` | `0xd0` | `0xec` | **`+0x1c`** |
+| `__DATA.__common` | `0x3c8` | `0x3e0` | **`+0x18`** |
+| `__DATA_CONST.__objc_protolist` | `0x118` | `0x108` | **`-0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x80` | `0x78` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x18b8` | `0x18c0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -524.0.38.0.0
--  __TEXT.__text: 0x40b1bc
--  __TEXT.__objc_methlist: 0x108c
--  __TEXT.__const: 0x2d240
--  __TEXT.__swift5_typeref: 0x9880
--  __TEXT.__constg_swiftt: 0x6990
--  __TEXT.__swift5_reflstr: 0x7b3e
--  __TEXT.__swift5_fieldmd: 0x90ac
--  __TEXT.__swift5_builtin: 0x294
--  __TEXT.__swift5_assocty: 0x1510
--  __TEXT.__swift5_proto: 0x2290
--  __TEXT.__swift5_types: 0xa90
--  __TEXT.__cstring: 0xb93d
--  __TEXT.__swift5_capture: 0x370c
--  __TEXT.__oslogstring: 0x8a75
 +524.0.56.0.0
-+  __TEXT.__text: 0x429090
-+  __TEXT.__objc_methlist: 0xf8c
-+  __TEXT.__const: 0x2e090
-+  __TEXT.__swift5_typeref: 0x9b3c
-+  __TEXT.__constg_swiftt: 0x6b1c
-+  __TEXT.__swift5_reflstr: 0x7f9e
-+  __TEXT.__swift5_fieldmd: 0x93b0
-+  __TEXT.__swift5_builtin: 0x2d0
-+  __TEXT.__swift5_assocty: 0x15a0
-+  __TEXT.__swift5_proto: 0x230c
-+  __TEXT.__swift5_types: 0xabc
-+  __TEXT.__cstring: 0xbe4d
-+  __TEXT.__swift5_capture: 0x3a30
-+  __TEXT.__oslogstring: 0x9325
-   __TEXT.__swift5_protos: 0x30
--  __TEXT.__swift_as_entry: 0x10ec
--  __TEXT.__swift_as_cont: 0x3634
--  __TEXT.__swift5_mpenum: 0xd0
--  __TEXT.__swift_as_ret: 0x15d4
-+  __TEXT.__swift_as_entry: 0x1184
-+  __TEXT.__swift_as_cont: 0x37a0
-+  __TEXT.__swift5_mpenum: 0xec
-+  __TEXT.__swift_as_ret: 0x1658
-   __TEXT.__gcc_except_tab: 0x14c
--  __TEXT.__unwind_info: 0x127b0
--  __TEXT.__eh_frame: 0x35618
-+  __TEXT.__unwind_info: 0x12da0
-+  __TEXT.__eh_frame: 0x36c38
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x11e8
-+  __DATA_CONST.__const: 0x1250
-   __DATA_CONST.__objc_classlist: 0x278
-   __DATA_CONST.__objc_catlist: 0x30
--  __DATA_CONST.__objc_protolist: 0x118
-+  __DATA_CONST.__objc_protolist: 0x108
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x18b8
--  __DATA_CONST.__objc_protorefs: 0x80
-+  __DATA_CONST.__objc_selrefs: 0x18c0
-+  __DATA_CONST.__objc_protorefs: 0x78
-   __DATA_CONST.__objc_superrefs: 0x38
-   __DATA_CONST.__objc_arraydata: 0x28
--  __DATA_CONST.__got: 0x1318
--  __AUTH_CONST.__const: 0x18968
-+  __DATA_CONST.__got: 0x1338
-+  __AUTH_CONST.__const: 0x191e8
-   __AUTH_CONST.__cfstring: 0x220
--  __AUTH_CONST.__objc_const: 0x7110
-+  __AUTH_CONST.__objc_const: 0x7190
-   __AUTH_CONST.__objc_intobj: 0x48
-   __AUTH_CONST.__objc_arrayobj: 0x78
--  __AUTH_CONST.__auth_got: 0x2528
--  __AUTH.__objc_data: 0x1c90
--  __AUTH.__data: 0x5520
-+  __AUTH_CONST.__auth_got: 0x25b8
-+  __AUTH.__objc_data: 0x1d20
-+  __AUTH.__data: 0x5558
-   __DATA.__objc_ivar: 0x48
--  __DATA.__data: 0x8ab8
--  __DATA.__bss: 0x45300
--  __DATA.__common: 0x3c8
-+  __DATA.__data: 0x8cd0
-+  __DATA.__bss: 0x46290
-+  __DATA.__common: 0x3e0
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 
-   - /System/Library/PrivateFrameworks/AppleMediaServices.framework/AppleMediaServices
-   - /System/Library/PrivateFrameworks/AppleMediaServicesUI.framework/AppleMediaServicesUI
-   - /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
 +  - /System/Library/PrivateFrameworks/AttentionAwareness.framework/AttentionAwareness
-   - /System/Library/PrivateFrameworks/AudioPasscode.framework/AudioPasscode
-   - /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit
-   - /System/Library/PrivateFrameworks/AuthKitUI.framework/AuthKitUI
 
-   - /System/Library/PrivateFrameworks/IdleTimerServices.framework/IdleTimerServices
-   - /System/Library/PrivateFrameworks/InternationalSupport.framework/InternationalSupport
-   - /System/Library/PrivateFrameworks/IntlPreferences.framework/IntlPreferences
 +  - /System/Library/PrivateFrameworks/MDMClientLibrary.framework/MDMClientLibrary
-   - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
-   - /System/Library/PrivateFrameworks/MediaExperience.framework/MediaExperience
-   - /System/Library/PrivateFrameworks/MobileActivation.framework/MobileActivation
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 18015
--  Symbols:   5545
+-  Symbols:   4935
 -  CStrings:  2333
 +  Functions: 18453
-+  Symbols:   5643
++  Symbols:   5015
 +  CStrings:  2414
- 
 Symbols:
 + _IOHIDEventGetIntegerValue
 + _IOHIDEventSystemClientActivate
@@ -174,24 +113,6 @@ Symbols:
 + _keypath_get.83Tm
 + _keypath_set.21Tm
 + _keypath_set.23Tm
-+ _objc_msgSend$boolForKey:
-+ _objc_msgSend$eventMask
-+ _objc_msgSend$iconURLForSize:
-+ _objc_msgSend$initWithAppleAccount:store:
-+ _objc_msgSend$installedMDMProfileIdentifier
-+ _objc_msgSend$invalidateWithError:
-+ _objc_msgSend$isStandalone6G
-+ _objc_msgSend$isTeslaEnrolled
-+ _objc_msgSend$knownNetworkProfilesInSameLanAsCurrentNetwork
-+ _objc_msgSend$resetAttentionLostTimeoutWithError:
-+ _objc_msgSend$resumeWithError:
-+ _objc_msgSend$setAttentionLostTimeout:
-+ _objc_msgSend$setConfiguration:shouldReset:
-+ _objc_msgSend$setEventHandlerWithQueue:block:
-+ _objc_msgSend$setEventMask:
-+ _objc_msgSend$setIdentifier:
-+ _objc_msgSend$sharedConfiguration
-+ _objc_msgSend$sharedSession
 + _swift_asyncLet_begin
 + _swift_asyncLet_finish
 + _swift_asyncLet_get

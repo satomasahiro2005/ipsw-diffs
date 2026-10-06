@@ -2,62 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/AppleBasebandManager.framework/AppleBasebandManager`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x28bc8` | `0x28a60` | **`-0x168`** |
+| `__TEXT.__cstring` | `0x5045` | `0x50ba` | **`+0x75`** |
+| `__DATA_CONST.__const` | `0x1e38` | `0x1e70` | **`+0x38`** |
+| `__DATA.__data` | `0x3ac` | `0x3b4` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x4390` | `0x438c` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1563.0.0.0.0
--  __TEXT.__text: 0x28bc8 sha256:2671f1f3f1d24081eae9dcd2b548fe9317329ad7df8b721e65d3f8e154609520
--  __TEXT.__init_offsets: 0x2c sha256:36c8f142e8bc1397813a27ca236b0226b20a6d6a2ed9ac520a00e7ef612b03a6
 +1570.0.0.0.0
-+  __TEXT.__text: 0x28a60 sha256:766d769123a4ead0537022d068c85010548a0096938228000d201b2d72aafa18
-+  __TEXT.__init_offsets: 0x2c sha256:59799dfd80a1c93668e3dc76a8656b23fb07a4efad7d645be7c666db46641c04
-   __TEXT.__const: 0x1ae0 sha256:fb45811a5d0fbaa117eca3c4eec7bbb7892f7bd163aeb45f9d7eb501ea48f372
--  __TEXT.__gcc_except_tab: 0x4390 sha256:7c2bb7c453338246fbd13282fcda60ec3ee110782866d89f3db0ed928e959b4c
--  __TEXT.__cstring: 0x5045 sha256:5ad179d47ce8ff6ba6054d28756bb8d71b18310452b5c849d9aee69363760029
-+  __TEXT.__gcc_except_tab: 0x438c sha256:27d37014c2373b1c51dbee57dedc3c33624edff9b9ccccd3d07bb5a034cb1cad
-+  __TEXT.__cstring: 0x50ba sha256:dc969fd299f61656f6299628a14cd025728a83edd16dcdc41f5c79b84956a390
-   __TEXT.__oslogstring: 0x257 sha256:69c6248aa6848ed9e3f6bb4948f7a58f4bcf8201f37b793e44e96abc4ad3a1c5
--  __TEXT.__unwind_info: 0x1100 sha256:73112588359412adffe48e682b2b3be5606f8136001906001e8405efc90fe828
-+  __TEXT.__unwind_info: 0x1100 sha256:d85397505a7b5c37457ec00d901b67d1fbfcc551f27e1993de4b59ac8eeb6354
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x1e38 sha256:98679ce81cb60e30a0d5936f3832ca071b036ddfb2369ac7022a4de4865f3fa7
-+  __DATA_CONST.__const: 0x1e70 sha256:dadcde215e6180c058e0be504d614bb1ae4ae0a72b9f29c0c6e2a9dc7090591e
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x10 sha256:db089a9946ee2f440f1454b6bd081bc906524b106b3b9bd5745c567d00425fed
--  __DATA_CONST.__got: 0xf8 sha256:37b8d49ffc5b641a5b4b476adc5ec058d15bdd430bc8fc116941b131eca23bc7
--  __AUTH_CONST.__const: 0x1670 sha256:5a7eba5308773fc9f4131f30d91340ea61662f3d47a76285d549a109f1d9dd05
--  __AUTH_CONST.__cfstring: 0x40 sha256:7b121ce52c9b082bf1e2c8183b75b48f6be6ae82ca09653c27aa676c0bbffa3a
--  __AUTH_CONST.__weak_auth_got: 0x10 sha256:290149e422ec40b0273600157a594a1152f2acf9916597016a24319850a9d2db
-+  __DATA_CONST.__weak_got: 0x10 sha256:c9b00cf8e5fdc159d5e0657836ccec0cbd1eddc62a50f4b3c9f634c56153dbb7
-+  __DATA_CONST.__got: 0xf8 sha256:4f24a5868c90c11086d3d1c9d15326cf776cdd0a4ccc34d77c7ecf3c9ad8890a
-+  __AUTH_CONST.__const: 0x1670 sha256:5a0a0c176a3bf1f5a876bb2606505b4ca09ce08d3f54bb17bf4f5e8f6dbb8131
-+  __AUTH_CONST.__cfstring: 0x40 sha256:6fcc7bbf85a249c681262ff5af179c117f61939c0cdf19f8e83d894b8fc95933
-+  __AUTH_CONST.__weak_auth_got: 0x10 sha256:16d48afe2d513063a6e0119d2076e9337577d960dbdb68166dd7f58bdd236fd1
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__data: 0x3ac sha256:79028373bfe02bb6dc30f92b4d40f329b1be48cf232a67c71fa2713ecf62a82b
-+  __DATA.__data: 0x3b4 sha256:a716ae794cc378b7fd1c3fca06bcb831421afb41d543cdb685960371bb6d1904
-   __DATA_DIRTY.__data: 0x158 sha256:21a88a574df5b174f73ebc71009c30b382857549f255846a5c6e13189c28cf59
-   __DATA_DIRTY.__bss: 0x108 sha256:44b8aa4d28701168922acf61435ea4bb442f97b0b14ad7a2510ed68874ee2a72
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  UUID: FF597F04-E20A-34BB-9BAC-BE83725A8406
 -  Functions: 628
--  Symbols:   2907
--  CStrings:  1090
-+  UUID: 0AA4A98C-66F8-33BB-85C7-4F42DB9C8E1C
+-  Symbols:   2178
+-  CStrings:  1088
 +  Functions: 627
-+  Symbols:   2912
-+  CStrings:  1096
- 
++  Symbols:   2183
++  CStrings:  1094
 Symbols:
-+ _.str.105
-+ _.str.113
-+ _.str.114
-+ _.str.24
-+ _.str.27
-+ _.str.83
 + __ZN3abm18kTraceMultiChannelE
 + __ZN3abm23kKeyMultiChannelEnabledE
 + __ZN3abm30kCADataRateIndicationChannelIdE
@@ -123,14 +91,6 @@ Symbols:
 + __ZNSt3__18__invokeB9fqe220106IJRU13block_pointerFvN12TelephonyXPC6ResultEN3xpc4dictEES2_S4_EEENS_20__invoke_result_implIvJDpT_EE4typeEDpOS9_
 + __ZSt28__throw_bad_array_new_lengthB9fqe220106v
 + __ZZNSt3__16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEN3abm6client19EventCallbackFilterEEENS_19__map_value_compareIS7_NS_4pairIKS7_SA_EENS_4lessIS7_EEEENS5_ISF_EEE16__emplace_uniqueB9fqe220106IJRKNS_21piecewise_construct_tENS_5tupleIJRSE_EEENSP_IJEEEEEENSD_INS_15__tree_iteratorISB_PNS_11__tree_nodeISB_PvEElEEbEEDpOT_ENKUlSQ_SO_OSR_OSS_E_clESQ_SO_S13_S14_
-+ ___block_descriptor_tmp.52
-+ ___block_literal_global.54
-- _.str.101
-- _.str.109
-- _.str.110
-- _.str.23
-- _.str.26
-- _.str.81
 - __ZN12capabilities5trace22supportedModemFeaturesEv
 - __ZN12capabilities5traceanENS0_12ModemFeatureES1_
 - __ZN3abm26getActiveTraceChannelCountEv
@@ -191,8 +151,6 @@ Symbols:
 - __ZNSt3__18__invokeB9fqe220100IJRU13block_pointerFvN12TelephonyXPC6ResultEN3xpc4dictEES2_S4_EEENS_20__invoke_result_implIvJDpT_EE4typeEDpOS9_
 - __ZSt28__throw_bad_array_new_lengthB9fqe220100v
 - __ZZNSt3__16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEN3abm6client19EventCallbackFilterEEENS_19__map_value_compareIS7_NS_4pairIKS7_SA_EENS_4lessIS7_EEEENS5_ISF_EEE16__emplace_uniqueB9fqe220100IJRKNS_21piecewise_construct_tENS_5tupleIJRSE_EEENSP_IJEEEEEENSD_INS_15__tree_iteratorISB_PNS_11__tree_nodeISB_PvEElEEbEEDpOT_ENKUlSQ_SO_OSR_OSS_E_clESQ_SO_S13_S14_
-- ___block_descriptor_tmp.51
-- ___block_literal_global.53
 CStrings:
 + "AppleBasebandManager-AppleBasebandServices_Manager-1570"
 + "AppleBasebandServices_Manager-1570"
@@ -204,5 +162,4 @@ CStrings:
 + "duration_seconds"
 - "AppleBasebandManager-AppleBasebandServices_Manager-1563"
 - "AppleBasebandServices_Manager-1563"
-
 ```

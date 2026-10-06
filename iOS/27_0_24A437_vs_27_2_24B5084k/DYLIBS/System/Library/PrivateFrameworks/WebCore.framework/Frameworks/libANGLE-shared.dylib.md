@@ -2,54 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/WebCore.framework/Frameworks/libANGLE-shared.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0x83f00` | `0x83680` | **`-0x880`** |
+| `__TEXT.__text` | `0x259344` | `0x2595c4` | **`+0x280`** |
+| `__TEXT.__cstring` | `0x4488a` | `0x44674` | **`-0x216`** |
+| `__DATA.__data` | `0x26050` | `0x25ef0` | **`-0x160`** |
+| `__DATA_CONST.__const` | `0x12fe8` | `0x12f58` | **`-0x90`** |
+| `__DATA_DIRTY.__common` | `0x540` | `0x588` | **`+0x48`** |
+| `__TEXT.__gcc_except_tab` | `0x2b44` | `0x2b34` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x9278` | `0x9268` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -625.1.29.10.29
--  __TEXT.__text: 0x24d2c0
--  __TEXT.__const: 0x83f00
--  __TEXT.__cstring: 0x4488a
--  __TEXT.__gcc_except_tab: 0x2b44
 +625.2.4.1.0
-+  __TEXT.__text: 0x24d51c
-+  __TEXT.__const: 0x83680
-+  __TEXT.__cstring: 0x44674
-+  __TEXT.__gcc_except_tab: 0x2b34
-   __TEXT.__oslogstring: 0xf
--  __TEXT.__unwind_info: 0x95d8
-+  __TEXT.__unwind_info: 0x95c0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0x12fe8
-+  __DATA_CONST.__const: 0x12f58
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x7c8
-   __DATA_CONST.__got: 0x0
 
-   __AUTH_CONST.__cfstring: 0x9c0
-   __AUTH_CONST.__weak_auth_got: 0x30
-   __AUTH_CONST.__auth_got: 0x6c0
--  __DATA.__data: 0x26050
-+  __DATA.__data: 0x25ef0
-   __DATA.__common: 0x35c
-   __DATA_DIRTY.__data: 0xc70
-   __DATA_DIRTY.__bss: 0x1a0
--  __DATA_DIRTY.__common: 0x540
-+  __DATA_DIRTY.__common: 0x588
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 9073
--  Symbols:   13485
+-  Symbols:   13236
 -  CStrings:  7010
 +  Functions: 9070
-+  Symbols:   13477
++  Symbols:   13228
 +  CStrings:  7005
- 
 Symbols:
 + __ZN2gl10FromGLenumINS_20FramebufferParameterEEET_j
 + __ZN2gl12_GLOBAL__N_134ValidES3ExtensionFormatCombinationEjjj

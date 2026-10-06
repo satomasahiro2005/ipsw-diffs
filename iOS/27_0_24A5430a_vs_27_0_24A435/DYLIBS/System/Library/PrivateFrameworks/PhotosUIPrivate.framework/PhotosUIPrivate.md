@@ -2,120 +2,64 @@
 
 > `/System/Library/PrivateFrameworks/PhotosUIPrivate.framework/PhotosUIPrivate`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x58aec4` | `0x5ab904` | **`+0x20a40`** |
+| `__TEXT.__eh_frame` | `0x7408` | `0x89f8` | **`+0x15f0`** |
+| `__AUTH_CONST.__const` | `0x17a10` | `0x188d0` | **`+0xec0`** |
+| `__TEXT.__cstring` | `0x34b80` | `0x35731` | **`+0xbb1`** |
+| `__TEXT.__const` | `0x19740` | `0x1a248` | **`+0xb08`** |
+| `__TEXT.__unwind_info` | `0x182c8` | `0x18c40` | **`+0x978`** |
+| `__TEXT.__swift5_typeref` | `0x16768` | `0x170ba` | **`+0x952`** |
+| `__AUTH_CONST.__objc_const` | `0x858f0` | `0x86100` | **`+0x810`** |
+| `__DATA.__bss` | `0x18110` | `0x188d0` | **`+0x7c0`** |
+| `__TEXT.__swift5_capture` | `0x4d5c` | `0x52b8` | **`+0x55c`** |
+| `__TEXT.__oslogstring` | `0x14e37` | `0x15348` | **`+0x511`** |
+| `__AUTH_CONST.__cfstring` | `0x269a0` | `0x26e60` | **`+0x4c0`** |
+| `__DATA.__data` | `0x14268` | `0x14618` | **`+0x3b0`** |
+| `__TEXT.__objc_methlist` | `0x5057c` | `0x5091c` | **`+0x3a0`** |
+| `__TEXT.__swift5_reflstr` | `0x8667` | `0x89f7` | **`+0x390`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2a6e0` | `0x2aa20` | **`+0x340`** |
+| `__TEXT.__gcc_except_tab` | `0x8878` | `0x8b3c` | **`+0x2c4`** |
+| `__TEXT.__swift5_fieldmd` | `0x70c8` | `0x7300` | **`+0x238`** |
+| `__TEXT.__constg_swiftt` | `0xac04` | `0xadd0` | **`+0x1cc`** |
+| `__AUTH.__data` | `0x4fb8` | `0x5178` | **`+0x1c0`** |
+| `__DATA_CONST.__const` | `0xc450` | `0xc5f0` | **`+0x1a0`** |
+| `__AUTH_CONST.__auth_got` | `0x54e0` | `0x5658` | **`+0x178`** |
+| `__TEXT.__swift_as_cont` | `0x588` | `0x6c8` | **`+0x140`** |
+| `__DATA_CONST.__got` | `0x5760` | `0x5898` | **`+0x138`** |
+| `__AUTH.__objc_data` | `0x19180` | `0x192b0` | **`+0x130`** |
+| `__TEXT.__swift_as_ret` | `0x264` | `0x2fc` | **`+0x98`** |
+| `__TEXT.__swift_as_entry` | `0x264` | `0x2d4` | **`+0x70`** |
+| `__DATA.__objc_ivar` | `0x5ce0` | `0x5d28` | **`+0x48`** |
+| `__TEXT.__swift5_assocty` | `0x18d0` | `0x1918` | **`+0x48`** |
+| `__DATA_CONST.__objc_arraydata` | `0x15f8` | `0x1630` | **`+0x38`** |
+| `__TEXT.__swift5_proto` | `0xc04` | `0xc3c` | **`+0x38`** |
+| `__AUTH_CONST.__objc_intobj` | `0x1638` | `0x1668` | **`+0x30`** |
+| `__DATA_DIRTY.__data` | `0x220` | `0x250` | **`+0x30`** |
+| `__TEXT.__swift5_builtin` | `0x708` | `0x730` | **`+0x28`** |
+| `__TEXT.__swift5_types` | `0x774` | `0x790` | **`+0x1c`** |
+| `__DATA_DIRTY.__objc_data` | `0x22c0` | `0x22d8` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x1e48` | `0x1e58` | **`+0x10`** |
+| `__DATA.__common` | `0x358` | `0x360` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x1428` | `0x1430` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x8` | `0x10` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.234.0.0
--  __TEXT.__text: 0x58aec4
--  __TEXT.__objc_methlist: 0x5057c
--  __TEXT.__const: 0x19740
 +912.0.235.0.0
-+  __TEXT.__text: 0x5ab904
-+  __TEXT.__objc_methlist: 0x5091c
-+  __TEXT.__const: 0x1a248
-   __TEXT.__dlopen_cstrs: 0x69b
--  __TEXT.__swift5_typeref: 0x16768
--  __TEXT.__constg_swiftt: 0xac04
--  __TEXT.__swift5_builtin: 0x708
--  __TEXT.__swift5_reflstr: 0x8667
--  __TEXT.__swift5_fieldmd: 0x70c8
--  __TEXT.__swift5_assocty: 0x18d0
--  __TEXT.__swift5_capture: 0x4d5c
--  __TEXT.__swift5_proto: 0xc04
--  __TEXT.__swift5_types: 0x774
--  __TEXT.__oslogstring: 0x14e37
--  __TEXT.__cstring: 0x34b80
--  __TEXT.__swift_as_entry: 0x264
--  __TEXT.__swift_as_ret: 0x264
--  __TEXT.__swift_as_cont: 0x588
-+  __TEXT.__swift5_typeref: 0x170ba
-+  __TEXT.__constg_swiftt: 0xadd0
-+  __TEXT.__swift5_builtin: 0x730
-+  __TEXT.__swift5_reflstr: 0x89f7
-+  __TEXT.__swift5_fieldmd: 0x7300
-+  __TEXT.__swift5_assocty: 0x1918
-+  __TEXT.__swift5_capture: 0x52b8
-+  __TEXT.__swift5_proto: 0xc3c
-+  __TEXT.__swift5_types: 0x790
-+  __TEXT.__oslogstring: 0x15348
-+  __TEXT.__cstring: 0x35731
-+  __TEXT.__swift_as_entry: 0x2d4
-+  __TEXT.__swift_as_ret: 0x2fc
-+  __TEXT.__swift_as_cont: 0x6c8
-   __TEXT.__swift5_protos: 0x74
--  __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__gcc_except_tab: 0x8878
-+  __TEXT.__swift5_mpenum: 0x10
-+  __TEXT.__gcc_except_tab: 0x8b3c
-   __TEXT.__ustring: 0x146
--  __TEXT.__unwind_info: 0x182c8
--  __TEXT.__eh_frame: 0x7408
-+  __TEXT.__unwind_info: 0x18c40
-+  __TEXT.__eh_frame: 0x89f8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xc450
--  __DATA_CONST.__objc_classlist: 0x1e48
-+  __DATA_CONST.__const: 0xc5f0
-+  __DATA_CONST.__objc_classlist: 0x1e58
-   __DATA_CONST.__objc_catlist: 0x1b0
-   __DATA_CONST.__objc_catlist2: 0x10
--  __DATA_CONST.__objc_protolist: 0x1428
-+  __DATA_CONST.__objc_protolist: 0x1430
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2a6e0
-+  __DATA_CONST.__objc_selrefs: 0x2aa20
-   __DATA_CONST.__objc_protorefs: 0x508
-   __DATA_CONST.__objc_superrefs: 0x10f0
-   __DATA_CONST.__vfx_script_tbl: 0x10
--  __DATA_CONST.__objc_arraydata: 0x15f8
--  __DATA_CONST.__got: 0x5760
--  __AUTH_CONST.__const: 0x17a10
--  __AUTH_CONST.__cfstring: 0x269a0
--  __AUTH_CONST.__objc_const: 0x858f0
-+  __DATA_CONST.__objc_arraydata: 0x1630
-+  __DATA_CONST.__got: 0x5898
-+  __AUTH_CONST.__const: 0x188d0
-+  __AUTH_CONST.__cfstring: 0x26e60
-+  __AUTH_CONST.__objc_const: 0x86100
-   __AUTH_CONST.__objc_arrayobj: 0xed0
--  __AUTH_CONST.__objc_intobj: 0x1638
-+  __AUTH_CONST.__objc_intobj: 0x1668
-   __AUTH_CONST.__objc_dictobj: 0x398
-   __AUTH_CONST.__objc_doubleobj: 0x210
--  __AUTH_CONST.__auth_got: 0x54e0
--  __AUTH.__objc_data: 0x19180
--  __AUTH.__data: 0x4fb8
--  __DATA.__objc_ivar: 0x5ce0
--  __DATA.__data: 0x14268
-+  __AUTH_CONST.__auth_got: 0x5658
-+  __AUTH.__objc_data: 0x192b0
-+  __AUTH.__data: 0x5178
-+  __DATA.__objc_ivar: 0x5d28
-+  __DATA.__data: 0x14618
-   __DATA.__objc_stublist: 0x28
--  __DATA.__common: 0x358
--  __DATA_DIRTY.__objc_data: 0x22c0
--  __DATA_DIRTY.__data: 0x220
-+  __DATA.__common: 0x360
-+  __DATA_DIRTY.__objc_data: 0x22d8
-+  __DATA_DIRTY.__data: 0x250
-   __DATA_DIRTY.__bss: 0x10
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 41801
--  Symbols:   67620
+-  Symbols:   49118
 -  CStrings:  8030
 +  Functions: 42678
-+  Symbols:   67978
++  Symbols:   49370
 +  CStrings:  8122
- 
 Symbols:
 + +[PUPhotoEditEffectsSupport _setTextureStyleWithPreset:intensity:grain:forCompositionController:]
 + +[PUPhotoEditEffectsSupport updateCompositionController:withTexturePreset:intensity:grain:]
@@ -863,115 +807,6 @@ Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA4ViewPAAE9animation_4bodyQrAA9AnimationVSg_qd__AA011PlaceholderdE0VyxGXEtAaDRd__lFQOyACyACyACyAA6ZStackVyAA05TupleD0VyAeAEAF_AGQrAJ_qd__AMXEtAaDRd__lFQOy15PhotosUIPrivate27PUPhotoStyleUnifiedControlsC05ColorQ033_567B04E452D00D382DBBCD37BC34CF3ALLV_ACyALyAWGAA14_OpacityEffectVGQo__AeAEAF_AGQrAJ_qd__AMXEtAaDRd__lFQOyAT07TextureQ0AVLLV_ACyALyA2_GAZGQo_QPGGAA12_FrameLayoutVGAA12_ScaleEffectVGAA13_OffsetEffectVG_ACyALyA16_GAZGQo_AA23_CompositingGroupEffectVGAA21_TraitWritingModifierVyAA18TransitionTraitKeyVGGAA30_EnvironmentKeyWritingModifierVySo0N21EditLayoutOrientationVGGAaDHPA28_AaDHPA22_AaDHPqd0__AaDHD3_A19_HO_A21_AA0E8ModifierHPyHCHC_A27_AAA35_HPyHCHC_A33_AAA35_HPyHCHC
 + _get_witness_table 7SwiftUI19_ConditionalContentVyAA6ZStackVyAA05TupleD0VyAA08ModifiedD0VyAA6VStackVyAA6SpacerVGAA12_FrameLayoutVG_AIyAA16ScrollViewReaderVyAA0M0PAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAU12PhotosUIEditE43photoStyleTextureIntensityValueLabelYOffsetyQrSdFQOyAIyAY05PhotovW7ControlVAA30_EnvironmentKeyWritingModifierVyAA5ColorVSgGG_Qo__AY05PhotoV11ControlModeOQo_GAA08_PaddingK0VGQPGGAIyAA6HStackVyAGyAIyAY16ExpandableSliderVAA15_HiddenModifierVG_A12_QPGGA2_yAA0K9DirectionOGGGAaTHPA17_AaTHPyHC_A30_AaTHPA26_AaTHPyHC_A29_AA0M8ModifierHPyHCHCHC
 + _get_witness_table 7SwiftUI4FormVyAA12TupleContentVyAA7SectionVyAA4TextVAEyAA6ToggleVyAIG_A2LSgQPGAA9EmptyViewVG_AA0J0PAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA08ModifiedE0VyAGyAisAE12labelsHiddenQryFQOyAsAE11pickerStyleyQrqd__AA06PickerS0Rd__lFQOyAA0T0VyAI15PhotosUIPrivate0T24AdditionalSelectionStateC17DownscalingTargetOAA7ForEachVySayA6_GSiAsAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAI_A6_Qo_GG_AA06InlinetS0VQo__Qo_AA012_ConditionalE0VyAA6VStackVyAIGAPGGAA25_AppearanceActionModifierVG_A6_Qo_SgAGyAisAEAYQryFQOyAsAEAZyQrqd__AAA_Rd__lFQOyA1_yAISo34PXPhotosFileProviderEncodingPolicyVA8_ySayA32_GSiAsAEA10__A11_Qrqd___SbtSHRd__lFQOyAI_A32_Qo_GG_A16_Qo__Qo_AIGSgQPGGAaRHPyHC
-+ _objc_msgSend$_confirmProvenanceWarning:completionHandler:
-+ _objc_msgSend$_importItemsContainProvenanceData:completionHandler:
-+ _objc_msgSend$_isCinematicCapableRegularVideo
-+ _objc_msgSend$_isCinematicCapableVideo
-+ _objc_msgSend$_onCinematicResourceDownloadDidComplete:error:
-+ _objc_msgSend$_precomputePCCAnalytics
-+ _objc_msgSend$_presentProvenanceImportWarningForItems:completionHandler:
-+ _objc_msgSend$_presentProvenanceSensitiveEditsDetectedAlertForActivity:withCompletionHandler:
-+ _objc_msgSend$_removeProvenanceInformativeOverlayForAssetViewModel:
-+ _objc_msgSend$_setTextureStyleWithPreset:intensity:grain:forCompositionController:
-+ _objc_msgSend$_toggleProvenanceCompareForCurrentAsset
-+ _objc_msgSend$_updateProvenanceCompareTapGestureRecognizer
-+ _objc_msgSend$_updateProvenanceImageOverride
-+ _objc_msgSend$_updateProvenanceOverlayView
-+ _objc_msgSend$acknowledgeFailureForAsset:
-+ _objc_msgSend$addInformativeOverlayForAsset:toView:visibleImage:animated:
-+ _objc_msgSend$adjustmentKeys
-+ _objc_msgSend$allowAnimatedResizeForNextInvalidation
-+ _objc_msgSend$assetHasCinematicDepthEnabled:queue:handler:
-+ _objc_msgSend$beginProvenanceRevealResizeAnimation
-+ _objc_msgSend$canIncludeProvenanceByDefault
-+ _objc_msgSend$canRenderTextureStylesOnComposition:
-+ _objc_msgSend$cancelFetchingForAsset:
-+ _objc_msgSend$cinematicCapableVideoConsideredAsCinematic:videoDepthEnabled:
-+ _objc_msgSend$cinematicResourceLoadAlert
-+ _objc_msgSend$cinematicVideoUseRefinedCinematography
-+ _objc_msgSend$classicStandardVideo
-+ _objc_msgSend$compareTapGestureRecognizerForAsset:tapHandler:
-+ _objc_msgSend$compositionControllerWithoutSource:
-+ _objc_msgSend$confirmProvenanceSensitiveEditsForFetchResult:additionalSelectionState:completionHandler:
-+ _objc_msgSend$convertToCinematicVideo
-+ _objc_msgSend$defaultFormat
-+ _objc_msgSend$displayOverrideImage:imageData:
-+ _objc_msgSend$downloadCinematicResourcesIfNeededWithCompletionHandler:
-+ _objc_msgSend$downloadResourcesForAsset:progressHandler:completion:
-+ _objc_msgSend$drawInRect:blendMode:alpha:
-+ _objc_msgSend$enableCinematicEverywhere
-+ _objc_msgSend$excludeProvenance
-+ _objc_msgSend$fetcherStateForAsset:
-+ _objc_msgSend$fontDescriptorWithDesign:
-+ _objc_msgSend$forceProvenanceMetadataBaking
-+ _objc_msgSend$geometryBasedAdjustmentIdentifiers
-+ _objc_msgSend$grainIntensity
-+ _objc_msgSend$hasReachedImageLoadedStateForAsset:
-+ _objc_msgSend$imageDataForAsset:
-+ _objc_msgSend$imageForAsset:
-+ _objc_msgSend$imageTileViewController:delegateForGestureRecognizer:
-+ _objc_msgSend$imageTileViewControllerViewForAttachingGestureRecognizers:
-+ _objc_msgSend$initWithIncludeAllPhotosData:includeLocationData:includeLivePhotoData:includeProvenanceData:
-+ _objc_msgSend$initWithIncludeLocation:includeCaption:includeKeywords:includeProvenance:userEncodingPolicy:
-+ _objc_msgSend$initWithSize:format:
-+ _objc_msgSend$invalidatePrimaryContentTiles
-+ _objc_msgSend$isCinematicCapableRegularVideo
-+ _objc_msgSend$isCinematicCapableVideo
-+ _objc_msgSend$isCinematicResourceDownloadCancelled
-+ _objc_msgSend$isDisplayingProvenanceForAsset:
-+ _objc_msgSend$isDownloadingCinematicResources
-+ _objc_msgSend$isViewingProvenance
-+ _objc_msgSend$loadResourceForAsset:networkAccessAllowed:requireLocalResources:forceRunAsUnadjustedAsset:progressHandler:resultHandler:
-+ _objc_msgSend$loadResourceForAsset:requireLocalResources:forceRunAsUnadjustedAsset:resultHandler:
-+ _objc_msgSend$markInformativeCompareDiscoveredForAsset:
-+ _objc_msgSend$metadataViewControllerForAsset:
-+ _objc_msgSend$modifyPortraitVideoAdjustment:
-+ _objc_msgSend$oneUpActionsControllerDidRequestShowProvenanceMetadata
-+ _objc_msgSend$overlayHostView
-+ _objc_msgSend$performToggleProvenanceShowMetadataAction
-+ _objc_msgSend$performToggleProvenanceViewerAction
-+ _objc_msgSend$provenanceOverlayController
-+ _objc_msgSend$provenanceState
-+ _objc_msgSend$provenanceViewerState
-+ _objc_msgSend$provenanceViewerStateChanged
-+ _objc_msgSend$reloadItemAtIndexPath:dataSource:
-+ _objc_msgSend$removeInformativeOverlayForAsset:fromView:animated:
-+ _objc_msgSend$removeOverlayViewForAsset:fromView:animated:
-+ _objc_msgSend$requestOriginalAVAssetForPHAsset:networkAccessAllowed:completion:
-+ _objc_msgSend$scanAssetsForProvenanceData:atEnd:
-+ _objc_msgSend$setAllowAnimatedResizeForNextInvalidation:
-+ _objc_msgSend$setCellEffect:
-+ _objc_msgSend$setCinematicResourceLoadAlert:
-+ _objc_msgSend$setCinematicVideoUseRefinedCinematography:
-+ _objc_msgSend$setErrors:forMediaType:
-+ _objc_msgSend$setExcludeProvenance:
-+ _objc_msgSend$setForceProvenanceMetadataBaking:
-+ _objc_msgSend$setGrainIntensity:
-+ _objc_msgSend$setGrainIntensityValue:
-+ _objc_msgSend$setInitialImage:forAsset:
-+ _objc_msgSend$setIsCinematicResourceDownloadCancelled:
-+ _objc_msgSend$setIsDownloadingCinematicResources:
-+ _objc_msgSend$setOnGrainIntensityValueChanged:
-+ _objc_msgSend$setProvenanceViewerState:
-+ _objc_msgSend$setProvenanceViewerStateChanged:
-+ _objc_msgSend$setShouldExcludeProvenanceDataInAllItemSources:
-+ _objc_msgSend$setShouldStripProvenance:
-+ _objc_msgSend$setSimulateCinematicResourceLoading:
-+ _objc_msgSend$setTextureIntensityValue:
-+ _objc_msgSend$setTextureStyleBottomLayout:
-+ _objc_msgSend$setUseNewStylesThumbnailsBehavior:
-+ _objc_msgSend$shouldExcludeProvenanceDataInAllItemSources
-+ _objc_msgSend$shouldIncludeProvenance
-+ _objc_msgSend$showGlobalProvenanceExclusionSwitch
-+ _objc_msgSend$simulateCinematicResourceLoading
-+ _objc_msgSend$snappableWidgetIdentifier
-+ _objc_msgSend$statusForAsset:
-+ _objc_msgSend$textureStyleAdjustmentController
-+ _objc_msgSend$textureStyleBottomLayout
-+ _objc_msgSend$updateCompositionController:withTexturePreset:intensity:grain:
-+ _objc_msgSend$updateEnabledInteractions
-+ _objc_msgSend$updateInformativeOverlayLayoutForView:
-+ _objc_msgSend$useNewStylesThumbnailsBehavior
 + _symbolic IeAgH_
 + _symbolic IeghH_
 + _symbolic SDy__________G 12PhotosUIEdit23PhotoStyleTextureEffectV7VariantO AC
@@ -1610,9 +1445,6 @@ Symbols:
 - ___swift_closure_destructor.68Tm
 - _get_witness_table 7SwiftUI15ModifiedContentVyACyACyAA4ViewPAAE9animation_4bodyQrAA9AnimationVSg_qd__AA011PlaceholderdE0VyxGXEtAaDRd__lFQOyACyACyACyAA6ZStackVyAeAEAF_AGQrAJ_qd__AMXEtAaDRd__lFQOy15PhotosUIPrivate27PUPhotoStyleUnifiedControlsC05ColorP033_567B04E452D00D382DBBCD37BC34CF3ALLV_ACyALyAUGAA14_OpacityEffectVGQo_GAA12_FrameLayoutVGAA06_ScaleZ0VGAA07_OffsetZ0VG_ACyALyA8_GAXGQo_AA017_CompositingGroupZ0VGAA21_TraitWritingModifierVyAA18TransitionTraitKeyVGGAA30_EnvironmentKeyWritingModifierVySo0M21EditLayoutOrientationVGGAaDHPA20_AaDHPA14_AaDHPqd0__AaDHD3_A11_HO_A13_AA0E8ModifierHPyHCHC_A19_AAA27_HPyHCHC_A25_AAA27_HPyHCHC
 - _get_witness_table 7SwiftUI4FormVyAA12TupleContentVyAA7SectionVyAA4TextVAEyAA6ToggleVyAIG_ALQPGAA9EmptyViewVG_AA0J0PAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA08ModifiedE0VyAGyAirAE12labelsHiddenQryFQOyArAE11pickerStyleyQrqd__AA06PickerS0Rd__lFQOyAA0T0VyAI15PhotosUIPrivate0T24AdditionalSelectionStateC17DownscalingTargetOAA7ForEachVySayA5_GSiArAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAI_A5_Qo_GG_AA06InlinetS0VQo__Qo_AA012_ConditionalE0VyAA6VStackVyAIGAOGGAA25_AppearanceActionModifierVG_A5_Qo_SgAGyAirAEAXQryFQOyArAEAYyQrqd__AaZRd__lFQOyA0_yAISo34PXPhotosFileProviderEncodingPolicyVA7_ySayA31_GSiArAEA9__A10_Qrqd___SbtSHRd__lFQOyAI_A31_Qo_GG_A15_Qo__Qo_AIGSgQPGGAaQHPyHC
-- _objc_msgSend$initWithIncludeAllPhotosData:includeLocationData:includeLivePhotoData:
-- _objc_msgSend$initWithIncludeLocation:includeCaption:includeKeywords:userEncodingPolicy:
-- _objc_msgSend$standardVideo
 - _symbolic _____yAAyAAy_____yAAyAAyAAy_____y_____y______AAy_____yACG_____GQo_G_____G_____G_____G_AAyADyAOGAFGQo______G_____y_____GG_____y_____GG 7SwiftUI15ModifiedContentV AA4ViewPAAE9animation_4bodyQrAA9AnimationVSg_qd__AA011PlaceholderdE0VyxGXEtAaDRd__lFQO AA6ZStackV AeAEAF_AGQrAJ_qd__AMXEtAaDRd__lFQO 15PhotosUIPrivate27PUPhotoStyleUnifiedControlsC05ColorP033_567B04E452D00D382DBBCD37BC34CF3ALLV AL AA14_OpacityEffectV AA12_FrameLayoutV AA06_ScaleZ0V AA07_OffsetZ0V AA017_CompositingGroupZ0V AA21_TraitWritingModifierV AA18TransitionTraitKeyV AA30_EnvironmentKeyWritingModifierV So0M21EditLayoutOrientationV
 - _symbolic _____yAAyAAy_____y_____y______AAy_____yACG_____GQo_G_____G_____G_____G 7SwiftUI15ModifiedContentV AA6ZStackV AA4ViewPAAE9animation_4bodyQrAA9AnimationVSg_qd__AA011PlaceholderdF0VyxGXEtAaFRd__lFQO 15PhotosUIPrivate27PUPhotoStyleUnifiedControlsC05ColorP033_567B04E452D00D382DBBCD37BC34CF3ALLV AN AA14_OpacityEffectV AA12_FrameLayoutV AA06_ScaleZ0V AA07_OffsetZ0V
 - _symbolic _____yAAy_____yAAyAAyAAy_____y_____y______AAy_____yACG_____GQo_G_____G_____G_____G_AAyADyAOGAFGQo______G_____y_____GG 7SwiftUI15ModifiedContentV AA4ViewPAAE9animation_4bodyQrAA9AnimationVSg_qd__AA011PlaceholderdE0VyxGXEtAaDRd__lFQO AA6ZStackV AeAEAF_AGQrAJ_qd__AMXEtAaDRd__lFQO 15PhotosUIPrivate27PUPhotoStyleUnifiedControlsC05ColorP033_567B04E452D00D382DBBCD37BC34CF3ALLV AL AA14_OpacityEffectV AA12_FrameLayoutV AA06_ScaleZ0V AA07_OffsetZ0V AA017_CompositingGroupZ0V AA21_TraitWritingModifierV AA18TransitionTraitKeyV

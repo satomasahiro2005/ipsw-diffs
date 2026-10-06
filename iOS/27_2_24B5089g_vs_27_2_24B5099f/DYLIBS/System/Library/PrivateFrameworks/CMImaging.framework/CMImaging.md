@@ -2,84 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/CMImaging.framework/CMImaging`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2318c0` | `0x1f696c` | **`-0x3af54`** |
+| `__TEXT.__cstring` | `0x3cd6a` | `0x23553` | **`-0x19817`** |
+| `__TEXT.__oslogstring` | `0x1c0e3` | `0x4caa` | **`-0x17439`** |
+| `__AUTH_CONST.__cfstring` | `0x94c0` | `0x8f80` | **`-0x540`** |
+| `__TEXT.__gcc_except_tab` | `0x17f4` | `0x14a8` | **`-0x34c`** |
+| `__TEXT.__unwind_info` | `0x3cc8` | `0x3ad8` | **`-0x1f0`** |
+| `__DATA.__common` | `0x330` | `0x1e0` | **`-0x150`** |
+| `__AUTH_CONST.__objc_const` | `0x27ad8` | `0x27c00` | **`+0x128`** |
+| `__DATA_DIRTY.__common` | `0x210` | `0x140` | **`-0xd0`** |
+| `__TEXT.__const` | `0x70c0` | `0x7180` | **`+0xc0`** |
+| `__TEXT.__objc_methlist` | `0x112e4` | `0x1135c` | **`+0x78`** |
+| `__DATA_CONST.__const` | `0x1b40` | `0x1ba0` | **`+0x60`** |
+| `__AUTH.__objc_data` | `—` | `0x50` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0xe78` | `0xec8` | **`+0x50`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7890` | `0x78b0` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xc60` | `0xc48` | **`-0x18`** |
+| `__DATA.__bss` | `0xe8` | `0xd8` | **`-0x10`** |
+| `__DATA.__objc_ivar` | `0x2038` | `0x2048` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x208` | `0x1f8` | **`-0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x768` | `0x770` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x5d0` | `0x5d8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -764.40.5.0.0
--  __TEXT.__text: 0x22bfac
--  __TEXT.__objc_methlist: 0x112e4
--  __TEXT.__const: 0x70c0
--  __TEXT.__oslogstring: 0x1c0e3
--  __TEXT.__cstring: 0x3cd6a
--  __TEXT.__gcc_except_tab: 0x17f4
 +764.40.7.0.0
-+  __TEXT.__text: 0x1f0fac
-+  __TEXT.__objc_methlist: 0x1135c
-+  __TEXT.__cstring: 0x23553
-+  __TEXT.__const: 0x7180
-+  __TEXT.__gcc_except_tab: 0x14a8
-+  __TEXT.__oslogstring: 0x4caa
-   __TEXT.__dlopen_cstrs: 0x50
--  __TEXT.__unwind_info: 0x6b28
-+  __TEXT.__unwind_info: 0x6918
-   __TEXT.__eh_frame: 0x700
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1b40
--  __DATA_CONST.__objc_classlist: 0x768
-+  __DATA_CONST.__const: 0x1ba0
-+  __DATA_CONST.__objc_classlist: 0x770
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x1d8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7890
-+  __DATA_CONST.__objc_selrefs: 0x78b0
-   __DATA_CONST.__objc_protorefs: 0x30
--  __DATA_CONST.__objc_superrefs: 0x5d0
-+  __DATA_CONST.__objc_superrefs: 0x5d8
-   __DATA_CONST.__objc_arraydata: 0x6a8
--  __DATA_CONST.__got: 0xe78
-+  __DATA_CONST.__got: 0xec8
-   __AUTH_CONST.__const: 0xc30
--  __AUTH_CONST.__cfstring: 0x94c0
--  __AUTH_CONST.__objc_const: 0x27ad8
-+  __AUTH_CONST.__cfstring: 0x8f80
-+  __AUTH_CONST.__objc_const: 0x27c00
-   __AUTH_CONST.__objc_intobj: 0xfc0
-   __AUTH_CONST.__objc_arrayobj: 0x138
-   __AUTH_CONST.__objc_floatobj: 0xd0
-   __AUTH_CONST.__objc_dictobj: 0xa0
-   __AUTH_CONST.__objc_doubleobj: 0x1300
--  __AUTH_CONST.__auth_got: 0xc60
--  __DATA.__objc_ivar: 0x2038
-+  __AUTH_CONST.__auth_got: 0xc48
-+  __AUTH.__objc_data: 0x50
-+  __DATA.__objc_ivar: 0x2048
-   __DATA.__data: 0x11950
--  __DATA.__common: 0x330
-+  __DATA.__common: 0x1e0
-   __DATA_DIRTY.__objc_data: 0x4a10
-   __DATA_DIRTY.__data: 0x1650
--  __DATA_DIRTY.__common: 0x210
--  __DATA_DIRTY.__bss: 0x208
-+  __DATA_DIRTY.__common: 0x140
-+  __DATA_DIRTY.__bss: 0x1f8
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  Functions: 10056
+-  Functions: 10057
 -  Symbols:   11401
 -  CStrings:  7078
-+  Functions: 9593
++  Functions: 9594
 +  Symbols:   11372
 +  CStrings:  4367
- 
 Symbols:
 + +[CMIStylesMetadataInterpolator initialize]
 + -[CMILCBDatabase distortion]

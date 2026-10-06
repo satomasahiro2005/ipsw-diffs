@@ -2,111 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/ManagedBackgroundAssetsHelper.framework/ManagedBackgroundAssetsHelper`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a23bc` | `0x1b1918` | **`+0xf55c`** |
+| `__DATA.__bss` | `0x1c910` | `0x1dad0` | **`+0x11c0`** |
+| `__TEXT.__const` | `0x13ca4` | `0x14c50` | **`+0xfac`** |
+| `__TEXT.__eh_frame` | `0xf9c8` | `0x10940` | **`+0xf78`** |
+| `__TEXT.__unwind_info` | `0x53f8` | `0x5ce0` | **`+0x8e8`** |
+| `__TEXT.__oslogstring` | `0x8d65` | `0x9555` | **`+0x7f0`** |
+| `__AUTH_CONST.__const` | `0x7148` | `0x7570` | **`+0x428`** |
+| `__TEXT.__swift5_typeref` | `0x4ce1` | `0x4fd2` | **`+0x2f1`** |
+| `__DATA_DIRTY.__data` | `0x1fb8` | `0x2288` | **`+0x2d0`** |
+| `__TEXT.__cstring` | `0x412c` | `0x43dc` | **`+0x2b0`** |
+| `__TEXT.__constg_swiftt` | `0x2ef0` | `0x30b8` | **`+0x1c8`** |
+| `__AUTH.__data` | `0xa10` | `0x858` | **`-0x1b8`** |
+| `__TEXT.__swift5_fieldmd` | `0x37cc` | `0x396c` | **`+0x1a0`** |
+| `__DATA.__data` | `0x2fe8` | `0x3178` | **`+0x190`** |
+| `__DATA_DIRTY.__objc_data` | `0x280` | `0x400` | **`+0x180`** |
+| `__AUTH.__objc_data` | `0x260` | `0x130` | **`-0x130`** |
+| `__TEXT.__swift5_reflstr` | `0x1c78` | `0x1d88` | **`+0x110`** |
+| `__AUTH_CONST.__objc_const` | `0x1528` | `0x1618` | **`+0xf0`** |
+| `__TEXT.__swift_as_cont` | `0xb08` | `0xbb8` | **`+0xb0`** |
+| `__TEXT.__swift5_proto` | `0x107c` | `0x110c` | **`+0x90`** |
+| `__DATA_DIRTY.__bss` | `0x4480` | `0x4500` | **`+0x80`** |
+| `__TEXT.__swift5_acfuncs` | `0x3d4` | `0x438` | **`+0x64`** |
+| `__TEXT.__swift5_capture` | `0x10c` | `0x14c` | **`+0x40`** |
+| `__TEXT.__swift_as_entry` | `0x300` | `0x334` | **`+0x34`** |
+| `__TEXT.__swift_as_ret` | `0x434` | `0x468` | **`+0x34`** |
+| `__TEXT.__swift5_assocty` | `0x3a0` | `0x3d0` | **`+0x30`** |
+| `__TEXT.__swift5_types` | `0x44c` | `0x478` | **`+0x2c`** |
+| `__AUTH_CONST.__auth_got` | `0x1388` | `0x13a8` | **`+0x20`** |
+| `__DATA.__common` | `0x48` | `0x68` | **`+0x20`** |
+| `__DATA_DIRTY.__common` | `0xb8` | `0x98` | **`-0x20`** |
+| `__DATA_CONST.__const` | `0xa8` | `0xb8` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x788` | `0x798` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0xa8` | `0xb0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1a23bc
-+  __TEXT.__text: 0x1b1918
-   __TEXT.__objc_methlist: 0x1e4
--  __TEXT.__const: 0x13ca4
--  __TEXT.__constg_swiftt: 0x2ef0
--  __TEXT.__swift5_typeref: 0x4ce1
-+  __TEXT.__const: 0x14c50
-+  __TEXT.__constg_swiftt: 0x30b8
-+  __TEXT.__swift5_typeref: 0x4fd2
-+  __TEXT.__swift5_reflstr: 0x1d88
-+  __TEXT.__swift5_fieldmd: 0x396c
-   __TEXT.__swift5_builtin: 0xa0
--  __TEXT.__swift5_reflstr: 0x1c78
--  __TEXT.__swift5_fieldmd: 0x37cc
--  __TEXT.__swift5_assocty: 0x3a0
--  __TEXT.__swift5_proto: 0x107c
--  __TEXT.__swift5_types: 0x44c
-+  __TEXT.__swift5_assocty: 0x3d0
-+  __TEXT.__swift5_proto: 0x110c
-+  __TEXT.__swift5_types: 0x478
-   __TEXT.__swift5_types2: 0x20
--  __TEXT.__cstring: 0x412c
--  __TEXT.__oslogstring: 0x8d65
--  __TEXT.__swift5_capture: 0x10c
--  __TEXT.__swift_as_entry: 0x300
--  __TEXT.__swift_as_ret: 0x434
--  __TEXT.__swift_as_cont: 0xb08
-+  __TEXT.__cstring: 0x43dc
-+  __TEXT.__oslogstring: 0x9555
-+  __TEXT.__swift5_capture: 0x14c
-+  __TEXT.__swift_as_entry: 0x334
-+  __TEXT.__swift_as_ret: 0x468
-+  __TEXT.__swift_as_cont: 0xbb8
-   __TEXT.__swift5_mpenum: 0x30
-   __TEXT.__swift5_protos: 0x14
--  __TEXT.__swift5_acfuncs: 0x3d4
--  __TEXT.__unwind_info: 0x53f8
--  __TEXT.__eh_frame: 0xf9c8
-+  __TEXT.__swift5_acfuncs: 0x438
-+  __TEXT.__unwind_info: 0x5ce0
-+  __TEXT.__eh_frame: 0x10940
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xa8
--  __DATA_CONST.__objc_classlist: 0xa8
-+  __DATA_CONST.__const: 0xb8
-+  __DATA_CONST.__objc_classlist: 0xb0
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x3e0
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__got: 0x788
--  __AUTH_CONST.__const: 0x7148
--  __AUTH_CONST.__objc_const: 0x1528
--  __AUTH_CONST.__auth_got: 0x1388
--  __AUTH.__objc_data: 0x260
--  __AUTH.__data: 0xa10
--  __DATA.__data: 0x2fe8
--  __DATA.__bss: 0x1c910
--  __DATA.__common: 0x48
--  __DATA_DIRTY.__objc_data: 0x280
--  __DATA_DIRTY.__data: 0x1fb8
--  __DATA_DIRTY.__bss: 0x4480
--  __DATA_DIRTY.__common: 0xb8
-+  __DATA_CONST.__got: 0x798
-+  __AUTH_CONST.__const: 0x7570
-+  __AUTH_CONST.__objc_const: 0x1618
-+  __AUTH_CONST.__auth_got: 0x13a8
-+  __AUTH.__objc_data: 0x130
-+  __AUTH.__data: 0x858
-+  __DATA.__data: 0x3178
-+  __DATA.__bss: 0x1dad0
-+  __DATA.__common: 0x68
-+  __DATA_DIRTY.__objc_data: 0x400
-+  __DATA_DIRTY.__data: 0x2288
-+  __DATA_DIRTY.__bss: 0x4500
-+  __DATA_DIRTY.__common: 0x98
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
+-2.0.27.0.0
++2.0.30.0.0
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5472
--  Symbols:   2314
--  CStrings:  833
+-  Symbols:   2068
+-  CStrings:  828
 +  Functions: 5744
-+  Symbols:   2384
-+  CStrings:  869
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_types2 : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
++  Symbols:   2128
++  CStrings:  864
 Symbols:
 + __DATA__TtC29ManagedBackgroundAssetsHelper26DeferredStatusUpdateRecord
 + __DATA__TtCO29ManagedBackgroundAssetsHelper11Schema1_1_015AssetPackRecord
@@ -261,5 +207,4 @@ CStrings:
 - "A process handle couldn’t be created for the app with the bundle ID “%{public}s”: %{public}@"
 - "Report finished download of asset pack with global ID: %{public}s version: %lu with error coding: %{public}s"
 - "The staging directory for the app with the bundle ID “%{public}s” won’t be removed because that app is currently running."
-
 ```

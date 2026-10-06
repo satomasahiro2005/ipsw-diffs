@@ -2,48 +2,47 @@
 
 > `com.apple.driver.AppleS8000DWI`
 
-```diff
+### Section Size Changes
 
- 140.0.0.0.0
-   __TEXT.__const: 0x8
-   __TEXT.__cstring: 0x20f
--  __TEXT_EXEC.__text: 0x1808
-+  __TEXT_EXEC.__text: 0x188c
-   __TEXT_EXEC.__auth_stubs: 0x1a0
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x88
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x1808` | `0x188c` | **`+0x84`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_fffffe00093e9d60 -> sub_fffffe0009462010 : 72 -> 76
-~ sub_fffffe00093e9db0 -> sub_fffffe0009462064 : 52 -> 56
-~ sub_fffffe00093e9de4 -> sub_fffffe000946209c : 52 -> 56
-~ sub_fffffe00093e9e28 -> sub_fffffe00094620e4 : 68 -> 72
-~ sub_fffffe00093e9e94 -> sub_fffffe0009462154 : 72 -> 76
-~ sub_fffffe00093e9edc -> sub_fffffe00094621a0 : 104 -> 108
-~ sub_fffffe00093e9f58 -> sub_fffffe0009462220 : 88 -> 92
-~ sub_fffffe00093e9fb0 -> sub_fffffe000946227c : 88 -> 92
+~ sub_fffffff0093f1ea0 -> sub_fffffff009466780 : 72 -> 76
+~ sub_fffffff0093f1ef0 -> sub_fffffff0094667d4 : 52 -> 56
+~ sub_fffffff0093f1f24 -> sub_fffffff00946680c : 52 -> 56
+~ sub_fffffff0093f1f68 -> sub_fffffff009466854 : 68 -> 72
+~ sub_fffffff0093f1fd4 -> sub_fffffff0094668c4 : 72 -> 76
+~ sub_fffffff0093f201c -> sub_fffffff009466910 : 104 -> 108
+~ sub_fffffff0093f2098 -> sub_fffffff009466990 : 88 -> 92
+~ sub_fffffff0093f20f0 -> sub_fffffff0094669ec : 88 -> 92
 ~ __ZN13AppleS8000DWI5startEP9IOService : 1720 -> 1724
-~ sub_fffffe00093ea6f0 -> sub_fffffe00094629c4 : 584 -> 588
-~ sub_fffffe00093ea94c -> sub_fffffe0009462c24 : 88 -> 92
-~ sub_fffffe00093ea9b8 -> sub_fffffe0009462c94 : 88 -> 92
-~ sub_fffffe00093eaa10 -> sub_fffffe0009462cf0 : 512 -> 516
+~ sub_fffffff0093f2830 -> sub_fffffff009467134 : 584 -> 588
+~ sub_fffffff0093f2a8c -> sub_fffffff009467394 : 88 -> 92
+~ sub_fffffff0093f2af8 -> sub_fffffff009467404 : 88 -> 92
+~ sub_fffffff0093f2b50 -> sub_fffffff009467460 : 512 -> 516
 ~ __ZN13AppleS8000DWI16_waitTransactionEj : 156 -> 160
 ~ __ZN13AppleS8000DWI8sendWLEDEjbj : 252 -> 256
-~ sub_fffffe00093eade0 -> sub_fffffe00094630cc : 72 -> 76
-~ sub_fffffe00093eae30 -> sub_fffffe0009463120 : 52 -> 56
-~ sub_fffffe00093eae64 -> sub_fffffe0009463158 : 52 -> 56
-~ sub_fffffe00093eaea8 -> sub_fffffe00094631a0 : 68 -> 72
-~ sub_fffffe00093eaf14 -> sub_fffffe0009463210 : 72 -> 76
-~ sub_fffffe00093eaf5c -> sub_fffffe000946325c : 104 -> 108
-~ sub_fffffe00093eafc4 -> sub_fffffe00094632c8 : 88 -> 92
-~ sub_fffffe00093eb03c -> sub_fffffe0009463344 : 124 -> 128
-~ sub_fffffe00093eb0b8 -> sub_fffffe00094633c4 : 72 -> 76
-~ sub_fffffe00093eb108 -> sub_fffffe0009463418 : 52 -> 56
-~ sub_fffffe00093eb13c -> sub_fffffe0009463450 : 52 -> 56
-~ sub_fffffe00093eb180 -> sub_fffffe0009463498 : 68 -> 72
-~ sub_fffffe00093eb1ec -> sub_fffffe0009463508 : 72 -> 76
-~ sub_fffffe00093eb234 -> sub_fffffe0009463554 : 104 -> 108
-~ sub_fffffe00093eb29c -> sub_fffffe00094635c0 : 88 -> 92
-~ sub_fffffe00093eb33c -> sub_fffffe0009463664 : 124 -> 128
-~ sub_fffffe00093eb3d0 -> sub_fffffe00094636fc : 208 -> 212
-~ sub_fffffe00093eb4a0 -> sub_fffffe00094637d0 : 68 -> 72
+~ sub_fffffff0093f2f20 -> sub_fffffff00946783c : 72 -> 76
+~ sub_fffffff0093f2f70 -> sub_fffffff009467890 : 52 -> 56
+~ sub_fffffff0093f2fa4 -> sub_fffffff0094678c8 : 52 -> 56
+~ sub_fffffff0093f2fe8 -> sub_fffffff009467910 : 68 -> 72
+~ sub_fffffff0093f3054 -> sub_fffffff009467980 : 72 -> 76
+~ sub_fffffff0093f309c -> sub_fffffff0094679cc : 104 -> 108
+~ sub_fffffff0093f3104 -> sub_fffffff009467a38 : 88 -> 92
+~ sub_fffffff0093f317c -> sub_fffffff009467ab4 : 124 -> 128
+~ sub_fffffff0093f31f8 -> sub_fffffff009467b34 : 72 -> 76
+~ sub_fffffff0093f3248 -> sub_fffffff009467b88 : 52 -> 56
+~ sub_fffffff0093f327c -> sub_fffffff009467bc0 : 52 -> 56
+~ sub_fffffff0093f32c0 -> sub_fffffff009467c08 : 68 -> 72
+~ sub_fffffff0093f332c -> sub_fffffff009467c78 : 72 -> 76
+~ sub_fffffff0093f3374 -> sub_fffffff009467cc4 : 104 -> 108
+~ sub_fffffff0093f33dc -> sub_fffffff009467d30 : 88 -> 92
+~ sub_fffffff0093f347c -> sub_fffffff009467dd4 : 124 -> 128
+~ sub_fffffff0093f3510 -> sub_fffffff009467e6c : 208 -> 212
+~ sub_fffffff0093f35e0 -> sub_fffffff009467f40 : 68 -> 72
 ```

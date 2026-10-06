@@ -2,45 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/CoreMotionAlgorithms.framework/CoreMotionAlgorithms`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1b49a4` | `0x1b55bc` | **`+0xc18`** |
+| `__AUTH_CONST.__const` | `0xb7f0` | `0xb890` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0x13425` | `0x1346e` | **`+0x49`** |
+| `__TEXT.__unwind_info` | `0x5610` | `0x5648` | **`+0x38`** |
+| `__TEXT.__const` | `0x58a0` | `0x58d0` | **`+0x30`** |
+| `__TEXT.__gcc_except_tab` | `0x4334` | `0x4350` | **`+0x1c`** |
+
+### Other Changes
+
 ```diff
 
 -3185.0.6.0.3
--  __TEXT.__text: 0x1ae948
 +3186.0.12.0.0
-+  __TEXT.__text: 0x1af50c
-   __TEXT.__objc_methlist: 0x9b4
--  __TEXT.__const: 0x58a0
--  __TEXT.__gcc_except_tab: 0x4334
--  __TEXT.__cstring: 0x13425
-+  __TEXT.__const: 0x58d0
-+  __TEXT.__gcc_except_tab: 0x4350
-+  __TEXT.__cstring: 0x1346e
-   __TEXT.__oslogstring: 0x5cdd
-   __TEXT.__ustring: 0xce
--  __TEXT.__unwind_info: 0x5b18
-+  __TEXT.__unwind_info: 0x5b48
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0x7f0
-   __DATA_CONST.__objc_superrefs: 0x20
-   __DATA_CONST.__got: 0x138
--  __AUTH_CONST.__const: 0xb7f0
-+  __AUTH_CONST.__const: 0xb890
-   __AUTH_CONST.__cfstring: 0xa20
-   __AUTH_CONST.__objc_const: 0x17c0
-   __AUTH_CONST.__weak_auth_got: 0x18
+-  Functions: 5804
++  Functions: 5820
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
--  Functions: 5800
-+  Functions: 5816
-   Symbols:   292
 -  CStrings:  4128
 +  CStrings:  4131
- 
 CStrings:
 + "distanceCalibratedPedometer"
 + "inHandDoubleTapBaseDetectorReset"

@@ -2,5 +2,14 @@
 
 > `/System/Library/SystemConfiguration/EAPOLController.bundle/EAPOLController`
 
-Sections:
-~ __TEXT.__const : content changed
+### Same-size Content Changes
+
+- `__TEXT.__const`
+
+### Other Changes
+
+```diff
+
+-382.0.0.0.0
++384.0.0.0.0
+```

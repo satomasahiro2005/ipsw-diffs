@@ -2,63 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/SeymourSharePlay.framework/SeymourSharePlay`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x43ed8` | `0x43ee4` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0xbc8` | `0xbd0` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -2027.0.124.0.3
--  __TEXT.__text: 0x43ed8
 +2027.0.134.0.0
-+  __TEXT.__text: 0x43ee4
-   __TEXT.__objc_methlist: 0x154
-   __TEXT.__const: 0x11e0
-   __TEXT.__swift5_typeref: 0xb34
 
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0xb00
-   __AUTH_CONST.__objc_const: 0x720
--  __AUTH_CONST.__auth_got: 0xbc8
-+  __AUTH_CONST.__auth_got: 0xbd0
-   __AUTH.__objc_data: 0xa0
-   __AUTH.__data: 0x710
-   __DATA.__data: 0x820
-
-   - /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf
-   - /System/Library/PrivateFrameworks/MessageDispatch.framework/MessageDispatch
-   - /System/Library/PrivateFrameworks/MessageDispatchCore.framework/MessageDispatchCore
 -  - /System/Library/PrivateFrameworks/SeymourClient.framework/SeymourClient
-   - /System/Library/PrivateFrameworks/SeymourClientFoundation.framework/SeymourClientFoundation
--  - /System/Library/PrivateFrameworks/SeymourClientServices.framework/SeymourClientServices
-   - /System/Library/PrivateFrameworks/SeymourCore.framework/SeymourCore
-   - /System/Library/PrivateFrameworks/SeymourCoreFoundation.framework/SeymourCoreFoundation
-   - /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities
 
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 783
--  Symbols:   446
-+  Symbols:   447
-   CStrings:  161
- 
+-  - /System/Library/PrivateFrameworks/SeymourClientServices.framework/SeymourClientServices
+
+-  Symbols:   428
++  Symbols:   429
 Symbols:
 + _associated conformance 11SeymourCore22MultiUserGroupActivityVyxG0E10Activities0eF00A9SharePlayAE0eF8MetadataVRszrlSE
 + _associated conformance 11SeymourCore22MultiUserGroupActivityVyxG0E10Activities0eF00A9SharePlayAE0eF8MetadataVRszrlSe
@@ -100,5 +63,5 @@ Symbols:
 - _symbolic _____yyt_____G15eventTaskHandle_t 13SeymourClient10TaskHandleC s5NeverO
 - _symbolic _____yyt_____G20observerSubscription_t 13SeymourClient10TaskHandleC s5NeverO
 Functions:
-~ sub_2a201064c -> sub_2a345e56c : 924 -> 936
+~ sub_2a1ee864c -> sub_2a32ea56c : 924 -> 936
 ```

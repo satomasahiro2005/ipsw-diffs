@@ -2,26 +2,27 @@
 
 > `/System/ExclaveKit/System/Library/PrivateFrameworks/MockCoreAudioDeviceComponent.framework/MockCoreAudioDeviceComponent`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x33b38` | `0x33c9c` | **`+0x164`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 95.0.0.0.0
--  __TEXT.__text: 0x33b38
-+  __TEXT.__text: 0x33c9c
-   __TEXT.__auth_stubs: 0x790
-   __TEXT.__const: 0x8b40
-   __TEXT.__cstring: 0xe19
+```text
 Functions:
 ~ _opus_packet_parse_impl : 888 -> 892
 ~ _anti_collapse : 840 -> 844

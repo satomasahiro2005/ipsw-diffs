@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/TrustKit.framework/TrustKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3bc9c` | `0x3bcc8` | **`+0x2c`** |
+| `__AUTH_CONST.__auth_got` | `0xa00` | `0x9f8` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 95.0.0.0.0
--  __TEXT.__text: 0x3bc9c
-+  __TEXT.__text: 0x3bcc8
-   __TEXT.__objc_methlist: 0x2b8
-   __TEXT.__const: 0x4628
-   __TEXT.__swift5_typeref: 0xfcc
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x31c8
-   __AUTH_CONST.__objc_const: 0x2170
--  __AUTH_CONST.__auth_got: 0xa00
-+  __AUTH_CONST.__auth_got: 0x9f8
-   __AUTH.__objc_data: 0x120
-   __AUTH.__data: 0x2d8
-   __DATA.__data: 0xa48
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 1558
--  Symbols:   859
-+  Symbols:   858
-   CStrings:  231
- 
+-  Symbols:   817
++  Symbols:   816
 Symbols:
 - _swift_release_x25
 Functions:

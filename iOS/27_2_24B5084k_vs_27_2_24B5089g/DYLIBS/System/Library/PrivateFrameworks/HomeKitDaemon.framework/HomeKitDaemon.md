@@ -2,116 +2,61 @@
 
 > `/System/Library/PrivateFrameworks/HomeKitDaemon.framework/HomeKitDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15bc9ec` | `0x15c2150` | **`+0x5764`** |
+| `__TEXT.__oslogstring` | `0x2a3884` | `0x2a4629` | **`+0xda5`** |
+| `__AUTH_CONST.__objc_const` | `0x138e30` | `0x139728` | **`+0x8f8`** |
+| `__TEXT.__cstring` | `0x7fb64` | `0x7f527` | **`-0x63d`** |
+| `__TEXT.__unwind_info` | `0x3b988` | `0x3bf98` | **`+0x610`** |
+| `__TEXT.__objc_methlist` | `0xa289c` | `0xa2df4` | **`+0x558`** |
+| `__AUTH_CONST.__cfstring` | `0x642e0` | `0x63f40` | **`-0x3a0`** |
+| `__AUTH_CONST.__const` | `0x346c8` | `0x34958` | **`+0x290`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3eb98` | `0x3ee10` | **`+0x278`** |
+| `__TEXT.__gcc_except_tab` | `0x298a8` | `0x29b04` | **`+0x25c`** |
+| `__TEXT.__eh_frame` | `0x39504` | `0x39724` | **`+0x220`** |
+| `__AUTH.__objc_data` | `0x209c0` | `0x20b20` | **`+0x160`** |
+| `__TEXT.__swift5_capture` | `0x71ac` | `0x7290` | **`+0xe4`** |
+| `__TEXT.__const` | `0x30664` | `0x3073c` | **`+0xd8`** |
+| `__TEXT.__swift5_typeref` | `0x1013a` | `0x101bc` | **`+0x82`** |
+| `__TEXT.__constg_swiftt` | `0xdedc` | `0xdf5c` | **`+0x80`** |
+| `__DATA.__objc_ivar` | `0x9f14` | `0x9f90` | **`+0x7c`** |
+| `__DATA_CONST.__got` | `0x9c88` | `0x9d00` | **`+0x78`** |
+| `__TEXT.__swift5_fieldmd` | `0xe6b4` | `0xe710` | **`+0x5c`** |
+| `__TEXT.__swift5_reflstr` | `0xe9e5` | `0xea35` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0x5388` | `0x53d0` | **`+0x48`** |
+| `__DATA_CONST.__const` | `0x1e0f0` | `0x1e130` | **`+0x40`** |
+| `__TEXT.__swift_as_cont` | `0x3180` | `0x31bc` | **`+0x3c`** |
+| `__AUTH_CONST.__objc_dictobj` | `0x20a8` | `0x20d0` | **`+0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x5090` | `0x50b0` | **`+0x20`** |
+| `__DATA_CONST.__objc_superrefs` | `0x36e8` | `0x3708` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x4068` | `0x4080` | **`+0x18`** |
+| `__TEXT.__swift_as_ret` | `0x1824` | `0x183c` | **`+0x18`** |
+| `__DATA.__bss` | `0x395f0` | `0x39600` | **`+0x10`** |
+| `__DATA.__data` | `0x25a40` | `0x25a50` | **`+0x10`** |
+| `__DATA_CONST.__objc_arraydata` | `0x33d0` | `0x33e0` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0x4868` | `0x4878` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0x1420` | `0x142c` | **`+0xc`** |
+| `__DATA.__common` | `0x1350` | `0x1358` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x1ee0` | `0x1ee4` | **`+0x4`** |
+| `__TEXT.__swift5_protos` | `0x230` | `0x234` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0xc0c` | `0xc10` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -1514.0.0.0.1
--  __TEXT.__text: 0x1548914
--  __TEXT.__objc_methlist: 0xa289c
 +1516.0.0.0.0
-+  __TEXT.__text: 0x154dcd4
-+  __TEXT.__objc_methlist: 0xa2df4
-   __TEXT.__dlopen_cstrs: 0x130
--  __TEXT.__const: 0x30664
--  __TEXT.__cstring: 0x7fb64
--  __TEXT.__swift5_typeref: 0x1013a
--  __TEXT.__swift5_fieldmd: 0xe6b4
--  __TEXT.__constg_swiftt: 0xdedc
-+  __TEXT.__const: 0x3073c
-+  __TEXT.__cstring: 0x7f527
-+  __TEXT.__swift5_typeref: 0x101bc
-+  __TEXT.__swift5_fieldmd: 0xe710
-+  __TEXT.__constg_swiftt: 0xdf5c
-   __TEXT.__swift5_builtin: 0x58c
--  __TEXT.__swift5_reflstr: 0xe9e5
-+  __TEXT.__swift5_reflstr: 0xea35
-   __TEXT.__swift5_assocty: 0x19c8
--  __TEXT.__oslogstring: 0x2a3884
--  __TEXT.__swift5_protos: 0x230
--  __TEXT.__swift5_proto: 0x1ee0
--  __TEXT.__swift5_types: 0xc0c
--  __TEXT.__swift_as_entry: 0x1420
--  __TEXT.__swift_as_ret: 0x1824
--  __TEXT.__swift_as_cont: 0x3180
--  __TEXT.__swift5_capture: 0x71ac
-+  __TEXT.__oslogstring: 0x2a4629
-+  __TEXT.__swift5_protos: 0x234
-+  __TEXT.__swift5_proto: 0x1ee4
-+  __TEXT.__swift5_types: 0xc10
-+  __TEXT.__swift_as_entry: 0x142c
-+  __TEXT.__swift_as_ret: 0x183c
-+  __TEXT.__swift_as_cont: 0x31bc
-+  __TEXT.__swift5_capture: 0x7290
-   __TEXT.__swift5_mpenum: 0xa8
--  __TEXT.__gcc_except_tab: 0x298a8
--  __TEXT.__unwind_info: 0x47a00
--  __TEXT.__eh_frame: 0x3953c
-+  __TEXT.__gcc_except_tab: 0x29b04
-+  __TEXT.__unwind_info: 0x47300
-+  __TEXT.__eh_frame: 0x3975c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1e0f0
--  __DATA_CONST.__objc_classlist: 0x5090
-+  __DATA_CONST.__const: 0x1e130
-+  __DATA_CONST.__objc_classlist: 0x50b0
-   __DATA_CONST.__objc_catlist: 0x370
-   __DATA_CONST.__objc_protolist: 0x28f8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3eb98
-+  __DATA_CONST.__objc_selrefs: 0x3ee10
-   __DATA_CONST.__objc_protorefs: 0xa60
--  __DATA_CONST.__objc_superrefs: 0x36e8
--  __DATA_CONST.__objc_arraydata: 0x33d0
--  __DATA_CONST.__got: 0x9c88
--  __AUTH_CONST.__const: 0x346c8
--  __AUTH_CONST.__cfstring: 0x642e0
--  __AUTH_CONST.__objc_const: 0x138e30
-+  __DATA_CONST.__objc_superrefs: 0x3708
-+  __DATA_CONST.__objc_arraydata: 0x33e0
-+  __DATA_CONST.__got: 0x9d00
-+  __AUTH_CONST.__const: 0x34958
-+  __AUTH_CONST.__cfstring: 0x63f40
-+  __AUTH_CONST.__objc_const: 0x139728
-   __AUTH_CONST.__weak_auth_got: 0x10
--  __AUTH_CONST.__objc_intobj: 0x4068
-+  __AUTH_CONST.__objc_intobj: 0x4080
-   __AUTH_CONST.__objc_arrayobj: 0x960
-   __AUTH_CONST.__objc_doubleobj: 0x250
--  __AUTH_CONST.__objc_dictobj: 0x20a8
-+  __AUTH_CONST.__objc_dictobj: 0x20d0
-   __AUTH_CONST.__objc_floatobj: 0x10
--  __AUTH_CONST.__auth_got: 0x5388
--  __AUTH.__objc_data: 0x209c0
-+  __AUTH_CONST.__auth_got: 0x53d0
-+  __AUTH.__objc_data: 0x20b20
-   __AUTH.__data: 0xbc58
--  __DATA.__objc_ivar: 0x9f14
--  __DATA.__data: 0x25a40
--  __DATA.__common: 0x1350
-+  __DATA.__objc_ivar: 0x9f90
-+  __DATA.__data: 0x25a50
-+  __DATA.__common: 0x1358
-   __DATA_DIRTY.__objc_data: 0x16d08
--  __DATA_DIRTY.__data: 0x4868
-+  __DATA_DIRTY.__data: 0x4878
-   __DATA_DIRTY.__bss: 0x3c00
-   __DATA_DIRTY.__common: 0x1b8
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 76722
--  Symbols:   131930
+-  Symbols:   104581
 -  CStrings:  59199
 +  Functions: 76909
-+  Symbols:   132207
++  Symbols:   104786
 +  CStrings:  59213
- 
 Symbols:
 + +[HMDCameraProfileSettingsManager _mergedRecordingEventTriggersFromRequested:existing:]
 + +[HMDCameraProfileVideoSensorSettingsModel supportsSecureCoding]
@@ -2723,135 +2668,6 @@ Symbols:
 + _logCategory._hmf_once_v3038
 + _logCategory._hmf_once_v320
 + _logCategory._hmf_once_v466
-+ _objc_msgSend$_allVideoSensorUUIDs
-+ _objc_msgSend$_applyClipIdentityToOperation:
-+ _objc_msgSend$_canShowDynamicIsland
-+ _objc_msgSend$_clipMinimumSupportedVersion
-+ _objc_msgSend$_closeAllStreamsWithReason:
-+ _objc_msgSend$_closeStream:reason:error:allowRetry:
-+ _objc_msgSend$_configureRecordingSessionForStream:
-+ _objc_msgSend$_coordinateRecordingSessionForTrigger:contributingSensorUUIDs:
-+ _objc_msgSend$_createRecordingSessionForStream:generalConfiguration:
-+ _objc_msgSend$_currentContributingSensorUUIDs
-+ _objc_msgSend$_disableDirectCharacteristicNotificationsForAllConnectionsWithBundleIdentifier:
-+ _objc_msgSend$_forwardRecordingSessionForTrigger:withLoadBalancerDecision:deviceFilter:sessionCoordinationLogEvent:contributingSensorUUIDs:retryAttemptNumber:
-+ _objc_msgSend$_handleNotificationConnectionDeactivated:
-+ _objc_msgSend$_handleStartFailureForStream:error:callerRetriesFailedStart:
-+ _objc_msgSend$_hasActiveRecordingSessionByCameraUUIDString
-+ _objc_msgSend$_isAnyStreamRecording
-+ _objc_msgSend$_isProxControlEnabledForAccessory:
-+ _objc_msgSend$_isStartAttempt:validForStream:
-+ _objc_msgSend$_loadBalanceRecordingSessionForTrigger:contributingSensorUUIDs:
-+ _objc_msgSend$_makeStreamForVideoSensorUUID:triggerType:contributingSensorUUIDs:locale:
-+ _objc_msgSend$_markProxPairingUserConsentForDescription:
-+ _objc_msgSend$_mergedRecordingEventTriggersFromRequested:existing:
-+ _objc_msgSend$_openBulkSendSessionForStream:generalConfiguration:startAttemptToken:reportStart:
-+ _objc_msgSend$_prepareRecordingSessionsForTrigger:locale:contributingSensorUUIDs:reason:
-+ _objc_msgSend$_prepareRecordingSessionsForTrigger:locale:contributingSensorUUIDs:reason:completionCallback:
-+ _objc_msgSend$_previousGenerativeAnalysisResultsForVideoSensorUUID:
-+ _objc_msgSend$_pruneGenerativeAnalysisResultsToCurrentVideoSensors
-+ _objc_msgSend$_recordProxPairingPairSetupOutcomeForSessionID:certificationStatus:isCommissionedOverNFCWithoutPower:m1ToM4DurationMS:m1ToM4Completed:m1ToM4Error:m5ToM6DurationMS:m5ToM6Completed:m5ToM6Error:tokenAuthDurationMS:tokenAuthCompleted:tokenAuthError:pairSetupEndToEndError:persistToCoreData:
-+ _objc_msgSend$_recordingEventTriggersForAnyVideoSensorOfCamera:
-+ _objc_msgSend$_removeSpentStreams
-+ _objc_msgSend$_removeStream:reason:
-+ _objc_msgSend$_resetRecordingSessionForStream:error:allowRetry:
-+ _objc_msgSend$_resetRetryContextForStream:reason:
-+ _objc_msgSend$_resetRetryContextsWithReason:
-+ _objc_msgSend$_setPreviousGenerativeAnalysisResults:forVideoSensorUUID:
-+ _objc_msgSend$_shouldRetryStream:
-+ _objc_msgSend$_startReadingForStream:session:
-+ _objc_msgSend$_startRetryTimerForStream:
-+ _objc_msgSend$_startStreams:reason:completionCallback:
-+ _objc_msgSend$_stopBulkSendSessionInitiatorIfUnusedIgnoringStream:
-+ _objc_msgSend$_streamForBulkSendSessionReader:
-+ _objc_msgSend$_streamForRecordingSession:
-+ _objc_msgSend$_streamForRetryTimer:
-+ _objc_msgSend$_streamForVideoSensorUUID:
-+ _objc_msgSend$_streamPassingTest:
-+ _objc_msgSend$_submitRecordingSessionLogEvent:withError:
-+ _objc_msgSend$_terminatePreAddDataSource:reason:error:
-+ _objc_msgSend$_triggeringSensorUUIDs
-+ _objc_msgSend$_unregisterAccessory:
-+ _objc_msgSend$_updateOperationsStateDump
-+ _objc_msgSend$_videoSensorUUID
-+ _objc_msgSend$_videoSensorUUIDsToRecordIndividually
-+ _objc_msgSend$activeRecordingSessionCountByCameraUUIDString
-+ _objc_msgSend$activityZonesForVideoSensorUUID:
-+ _objc_msgSend$addNotificationRegistrationForConnection:includesAppleMediaAccessories:
-+ _objc_msgSend$addPendingBulkSendSessionOpenWithConfiguration:callback:
-+ _objc_msgSend$areActivityZonesIncludedForSignificantEventDetectionForVideoSensorUUID:
-+ _objc_msgSend$atHomeLocationChangedTimestamp
-+ _objc_msgSend$atHomeLocationUpdateReason
-+ _objc_msgSend$beginStartAttempt
-+ _objc_msgSend$bulkSendSessionReader
-+ _objc_msgSend$bulletinTitle:andMessage:interruptionLevel:shouldIgnoreDoNotDisturb:actionURL:forAccessory:attributePath:value:fields:
-+ _objc_msgSend$cancelPendingSessionOpen
-+ _objc_msgSend$clipMinimumSupportedVersion
-+ _objc_msgSend$consentedBeforeStartSessionID
-+ _objc_msgSend$createMediaSourceGroupSessionWithGroupID:mediaSource:delegateQueue:
-+ _objc_msgSend$createUploaderWithZoneName:localZone:clipUUID:startDate:targetFragmentDuration:quality:allowZeroDurationClip:workQueue:clipMinimumSupportedVersion:logIdentifier:
-+ _objc_msgSend$didLoseGroupSession
-+ _objc_msgSend$endStartAttempt
-+ _objc_msgSend$eventBulletinTitle:andMessage:interruptionLevel:shouldIgnoreDoNotDisturb:actionURL:forAccessory:eventPath:eventFields:customFields:
-+ _objc_msgSend$existingOrNewFabricData
-+ _objc_msgSend$hasWorkInFlight
-+ _objc_msgSend$homeLocationInformation
-+ _objc_msgSend$initWithClipUUID:startDate:targetFragmentDuration:quality:allowZeroDurationClip:localZone:workQueue:clipMinimumSupportedVersion:logIdentifier:
-+ _objc_msgSend$initWithClipUUID:startDate:targetFragmentDuration:quality:allowZeroDurationClip:localZone:workQueue:clipMinimumSupportedVersion:logIdentifier:encryptionManager:factory:
-+ _objc_msgSend$initWithConfiguration:callback:
-+ _objc_msgSend$initWithHomePresence:userPresence:update:causingDevice:presenceStateChange:
-+ _objc_msgSend$initWithState:changedTimestamp:
-+ _objc_msgSend$initWithVideoSensorUUID:
-+ _objc_msgSend$initWithVideoSensorUUID:activityZones:activityZonesIncludedForSignificantEventDetection:recordingEventTriggers:
-+ _objc_msgSend$initWithVideoSensorUUID:triggerType:triggeringSensorUUIDs:locale:workQueue:
-+ _objc_msgSend$initWithWorkQueue:services:logIdentifier:timerProvider:
-+ _objc_msgSend$initWithWorkQueue:videoStreamInterface:delegate:timerProvider:
-+ _objc_msgSend$invalidateStartAttempt
-+ _objc_msgSend$isCurrentStartAttempt:
-+ _objc_msgSend$isPresenceStateChange
-+ _objc_msgSend$isPrimaryVideoSensorUUID:
-+ _objc_msgSend$isSentToAccessory
-+ _objc_msgSend$isSessionOpenInProgressForVideoSensorUUID:
-+ _objc_msgSend$isStartInProgress
-+ _objc_msgSend$isStoppingBulkSendSessionReader
-+ _objc_msgSend$isSubscribedToAppleMediaAccessoryStateForConnection:
-+ _objc_msgSend$isUsingCamera
-+ _objc_msgSend$makeInstanceWithClipUUID:startDate:targetFragmentDuration:quality:allowZeroDurationClip:zoneName:workQueue:videoSensorUUID:clipMinimumSupportedVersion:logIdentifier:
-+ _objc_msgSend$markUserConsentGivenForSessionID:
-+ _objc_msgSend$messagePayloadForStartRecordingSessionWithTriggerType:contributingSensorUUIDs:
-+ _objc_msgSend$notificationTrigger:didObserveTriggerType:changeToActive:contributingSensorUUIDs:
-+ _objc_msgSend$openBulkSendSessionWithAccessory:configuration:callback:
-+ _objc_msgSend$openNewSessionWithConfiguration:callback:
-+ _objc_msgSend$openSessionMetadata
-+ _objc_msgSend$operationsStateDump
-+ _objc_msgSend$playAccessorySetupTapHapticWithCompletionHandler:
-+ _objc_msgSend$postMatterBulletinForAccessory:title:message:interruptionLevel:shouldIgnoreDoNotDisturb:actionURL:logEventTopic:
-+ _objc_msgSend$previousGenerativeAnalysisResultsByVideoSensorUUID
-+ _objc_msgSend$recordingEventTriggersForVideoSensorUUID:
-+ _objc_msgSend$recordingSession
-+ _objc_msgSend$recordsVideoSensorUUID:
-+ _objc_msgSend$retryContext
-+ _objc_msgSend$sessionConfiguration
-+ _objc_msgSend$setBulkSendSessionReader:
-+ _objc_msgSend$setClipMinimumSupportedVersion:
-+ _objc_msgSend$setConsentedBeforeStartSessionID:
-+ _objc_msgSend$setLocationManager:
-+ _objc_msgSend$setOperationsStateDump:
-+ _objc_msgSend$setRecordingSession:
-+ _objc_msgSend$setRetryContext:
-+ _objc_msgSend$setSentToAccessory:
-+ _objc_msgSend$setStartAttemptGeneration:
-+ _objc_msgSend$setStartInProgress:
-+ _objc_msgSend$setStoppingBulkSendSessionReader:
-+ _objc_msgSend$setTriggeringSensorUUIDs:
-+ _objc_msgSend$setUserConsented:
-+ _objc_msgSend$startAttemptGeneration
-+ _objc_msgSend$streamSnapshotCaptureDidFailToGetLastSnapshot:
-+ _objc_msgSend$triggeringSensorUUIDs
-+ _objc_msgSend$updateLatestReportWithReason:changedTimestamp:
-+ _objc_msgSend$updateState:withReason:changedTimestamp:
-+ _objc_msgSend$userConsented
-+ _objc_msgSend$videoSensorStreams
 + _symbolic $s13HomeKitDaemon36MediaSourceGroupSessionOwnerObserver33_5DA0B52E8B894B65D40A151D4A7B3DC2LLP
 + _symbolic SDySS_____G 13HomeKitDaemon17WeakOwnerObserver33_5DA0B52E8B894B65D40A151D4A7B3DC2LLV
 + _symbolic SaySo16HMDSFrameKeyInfoCG
@@ -5278,63 +5094,6 @@ Symbols:
 - _logCategory._hmf_once_v3027
 - _logCategory._hmf_once_v318
 - _logCategory._hmf_once_v551
-- _objc_msgSend$_closeCurrentSessionsWithReason:
-- _objc_msgSend$_closeCurrentSessionsWithReason:error:
-- _objc_msgSend$_configureRecordingSession:withTrigger:
-- _objc_msgSend$_coordinateRecordingSessionForTrigger:
-- _objc_msgSend$_createRecordingSessionWithGeneralConfiguration:locale:
-- _objc_msgSend$_disableNotificationsForClient:
-- _objc_msgSend$_forwardRecordingSessionForTrigger:withLoadBalancerDecision:deviceFilter:sessionCoordinationLogEvent:retryAttemptNumber:
-- _objc_msgSend$_isProxDynamicIslandHostInstalled
-- _objc_msgSend$_launchProxControlSurfaceForHome:accessory:playHaptic:
-- _objc_msgSend$_loadBalanceRecordingSessionForTrigger:
-- _objc_msgSend$_prepareRecordingSessionForTrigger:locale:reason:
-- _objc_msgSend$_prepareRecordingSessionForTrigger:locale:reason:completionCallback:
-- _objc_msgSend$_proxControlModeForAccessory:
-- _objc_msgSend$_recordProxPairingPairSetupFailureForSessionID:m1ToM4DurationMS:m1ToM4Completed:m1ToM4Error:m5ToM6DurationMS:m5ToM6Completed:m5ToM6Error:tokenAuthDurationMS:tokenAuthCompleted:tokenAuthError:error:
-- _objc_msgSend$_resetCurrentRecordingSession:
-- _objc_msgSend$_resetRetryContextWithReason:
-- _objc_msgSend$_startReadingFromBulkSendSession:
-- _objc_msgSend$_startRecordingSessionForTrigger:locale:reason:generalConfiguration:completionCallback:
-- _objc_msgSend$_startSessionRetryTimer
-- _objc_msgSend$_submitRecordingSessionLogEventWithError:
-- _objc_msgSend$addNotificationRegistrationForClientIdentifier:includesAppleMediaAccessories:
-- _objc_msgSend$addPendingBulkSendSessionCallback:
-- _objc_msgSend$appleAccessoryPersistentErrorTitle:message:errorCode:accessory:
-- _objc_msgSend$bulletinTitle:andMessage:interruptionLevel:shouldIgnoreDoNotDisturb:forAccessory:attributePath:value:fields:
-- _objc_msgSend$createMediaSourceGroupSessionWithGroupID:mediaSource:
-- _objc_msgSend$createUploaderWithZoneName:localZone:clipUUID:startDate:targetFragmentDuration:quality:allowZeroDurationClip:workQueue:logIdentifier:
-- _objc_msgSend$currentBulkSendSessionReader
-- _objc_msgSend$currentRecordingSession
-- _objc_msgSend$currentSessionLocale
-- _objc_msgSend$eventBulletinTitle:andMessage:interruptionLevel:shouldIgnoreDoNotDisturb:forAccessory:eventPath:eventFields:customFields:
-- _objc_msgSend$hasActiveRecordingSessionByCameraUUIDString
-- _objc_msgSend$initWithClipUUID:startDate:targetFragmentDuration:quality:allowZeroDurationClip:localZone:workQueue:logIdentifier:
-- _objc_msgSend$initWithClipUUID:startDate:targetFragmentDuration:quality:allowZeroDurationClip:localZone:workQueue:logIdentifier:encryptionManager:factory:
-- _objc_msgSend$initWithHomePresence:userPresence:update:causingDevice:
-- _objc_msgSend$initWithVideoSensorUUID:activityZones:activityZonesIncludedForSignificantEventDetection:
-- _objc_msgSend$initWithWorkQueue:videoStreamInterface:delegate:
-- _objc_msgSend$insertBulletinForMatterEventWithAccessory:eventPath:eventFields:customFields:
-- _objc_msgSend$interruptionLevelForAppleAccessoryPersistentErrorCode:shouldIgnoreDoNotDisturb:
-- _objc_msgSend$interruptionLevelForAppleAccessoryTransientErrorCode:shouldIgnoreDoNotDisturb:
-- _objc_msgSend$isClientIdentifierSubscribedToAppleMediaAccessoryState:
-- _objc_msgSend$makeInstanceWithClipUUID:startDate:targetFragmentDuration:quality:allowZeroDurationClip:zoneName:workQueue:logIdentifier:
-- _objc_msgSend$messageForAppleAccessoryTransientErrorCode:accessory:
-- _objc_msgSend$messagePayloadForStartRecordingSessionWithTriggerType:
-- _objc_msgSend$notificationTrigger:didObserveTriggerType:changeToActive:
-- _objc_msgSend$openBulkSendSessionWithAccessory:callback:
-- _objc_msgSend$openNewSessionWithCallback:
-- _objc_msgSend$postMatterBulletinForAccessory:title:message:interruptionLevel:shouldIgnoreDoNotDisturb:logEventTopic:
-- _objc_msgSend$sessionRetryContext
-- _objc_msgSend$sessionRetryTimer
-- _objc_msgSend$setCurrentBulkSendSessionReader:
-- _objc_msgSend$setCurrentRecordingSession:
-- _objc_msgSend$setCurrentSessionLocale:
-- _objc_msgSend$setSessionRetryContext:
-- _objc_msgSend$setSessionRetryTimer:
-- _objc_msgSend$severity
-- _objc_msgSend$titleForAppleAccessoryTransientErrorCode:accessory:
-- _objc_msgSend$updateState:withReason:
 - _symbolic SaySo035MTRAppleAccessoryErrorsClusterAppleB21PersistentErrorStructCG
 - _symbolic _____ySuG s11_SetStorageC
 - _symbolic _____ySuG s23_ContiguousArrayStorageC

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CoreIK.framework/CoreIK`
 
-```diff
+### Section Size Changes
 
- 271.0.1.0.0
--  __TEXT.__text: 0x6ec60
-+  __TEXT.__text: 0x6ed4c
-   __TEXT.__const: 0x2138
-   __TEXT.__cstring: 0x28392
-   __TEXT.__oslogstring: 0x112c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6ec60` | `0x6ed4c` | **`+0xec`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN3FIK7Segment14setEulerLimitsERKNS_11EulerLimitsEb : 2676 -> 2688
 ~ __ZNSt3__16vectorIjNS_9allocatorIjEEE6resizeEm : 284 -> 288

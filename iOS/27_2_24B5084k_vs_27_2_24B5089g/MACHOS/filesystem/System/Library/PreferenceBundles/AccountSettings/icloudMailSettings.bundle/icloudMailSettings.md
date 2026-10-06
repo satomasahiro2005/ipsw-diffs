@@ -2,100 +2,60 @@
 
 > `/System/Library/PreferenceBundles/AccountSettings/icloudMailSettings.bundle/icloudMailSettings`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xffd84` | `0x100bac` | **`+0xe28`** |
+| `__TEXT.__swift5_typeref` | `0x12412` | `0x12bfa` | **`+0x7e8`** |
+| `__TEXT.__constg_swiftt` | `0x41fc` | `0x4428` | **`+0x22c`** |
+| `__TEXT.__const` | `0xe274` | `0xe354` | **`+0xe0`** |
+| `__TEXT.__auth_stubs` | `0x2e90` | `0x2ef0` | **`+0x60`** |
+| `__DATA.__data` | `0x9d88` | `0x9dd8` | **`+0x50`** |
+| `__DATA_CONST.__auth_got` | `0x1758` | `0x1788` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x3e58` | `0x3e80` | **`+0x28`** |
+| `__DATA_CONST.__auth_ptr` | `0x1070` | `0x1090` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0xa40` | `0xa60` | **`+0x20`** |
+| `__DATA.__bss` | `0xea50` | `0xea60` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x1328` | `0x1324` | **`-0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA.__objc_stublist`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_classlist`
 - `__TEXT.__cstring`
-- `__TEXT.__swift5_reflstr`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
 - `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_fieldmd`
 - `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_mpenum`
 - `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_reflstr`
 - `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__objc_stublist`
+
+### Other Changes
 
 ```diff
 
 -2027.0.5.0.0
--  __TEXT.__text: 0xf6e7c
--  __TEXT.__auth_stubs: 0x2e90
 +2027.1.1.0.0
-+  __TEXT.__text: 0xf7c28
-+  __TEXT.__auth_stubs: 0x2ef0
-   __TEXT.__objc_stubs: 0x15e0
-   __TEXT.__objc_methlist: 0x5a8
--  __TEXT.__const: 0xe274
-+  __TEXT.__const: 0xe354
-   __TEXT.__gcc_except_tab: 0x28
-   __TEXT.__cstring: 0x30fc
-   __TEXT.__oslogstring: 0x2236
-   __TEXT.__objc_methname: 0x2083
-   __TEXT.__objc_classname: 0xc12
-   __TEXT.__objc_methtype: 0x4d6
--  __TEXT.__swift5_typeref: 0x12412
-+  __TEXT.__swift5_typeref: 0x12bfa
-   __TEXT.__swift5_reflstr: 0x1f92
-   __TEXT.__swift5_assocty: 0x818
--  __TEXT.__constg_swiftt: 0x41fc
-+  __TEXT.__constg_swiftt: 0x4428
-   __TEXT.__swift5_fieldmd: 0x2db0
-   __TEXT.__swift5_builtin: 0x78
--  __TEXT.__swift5_capture: 0x1328
-+  __TEXT.__swift5_capture: 0x1324
-   __TEXT.__swift5_proto: 0x700
-   __TEXT.__swift5_types: 0x358
-   __TEXT.__swift_as_entry: 0x24
 
-   __TEXT.__swift_as_cont: 0x24
-   __TEXT.__swift5_mpenum: 0x10
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__unwind_info: 0x51a0
-+  __TEXT.__unwind_info: 0x51d8
-   __TEXT.__eh_frame: 0x1f88
-   __DATA_CONST.__const: 0x98c0
-   __DATA_CONST.__cfstring: 0x440
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__auth_got: 0x1758
--  __DATA_CONST.__got: 0xa40
--  __DATA_CONST.__auth_ptr: 0x1070
-+  __DATA_CONST.__auth_got: 0x1788
-+  __DATA_CONST.__got: 0xa60
-+  __DATA_CONST.__auth_ptr: 0x1090
-   __DATA.__objc_const: 0x38e8
-   __DATA.__objc_selrefs: 0x6b8
-   __DATA.__objc_ivar: 0x38
-   __DATA.__objc_data: 0xce0
--  __DATA.__data: 0x9d88
-+  __DATA.__data: 0x9dd8
-   __DATA.__objc_stublist: 0xa0
-   __DATA.__common: 0x170
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6279
 -  Symbols:   16581
 -  CStrings:  1029
 +  Functions: 6306
 +  Symbols:   16658
 +  CStrings:  1030
- 
 Symbols:
 + _$s18icloudMailSettings14MSRuleBaseViewV03getF7ElementyQrAC08RuleFormH0Oyx_GF
 + _$s18icloudMailSettings14MSRuleBaseViewV03getF7ElementyQrAC08RuleFormH0Oyx_GFMXX

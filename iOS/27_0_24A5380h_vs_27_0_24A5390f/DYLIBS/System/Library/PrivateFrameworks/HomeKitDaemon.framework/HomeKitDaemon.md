@@ -2,151 +2,70 @@
 
 > `/System/Library/PrivateFrameworks/HomeKitDaemon.framework/HomeKitDaemon`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_floatobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x150fb50` | `0x1534df8` | **`+0x252a8`** |
+| `__DATA.__bss` | `0x34b10` | `0x39180` | **`+0x4670`** |
+| `__TEXT.__const` | `0x2c78c` | `0x2f548` | **`+0x2dbc`** |
+| `__TEXT.__oslogstring` | `0x291fbe` | `0x293e39` | **`+0x1e7b`** |
+| `__TEXT.__eh_frame` | `0x36fd4` | `0x386b0` | **`+0x16dc`** |
+| `__AUTH_CONST.__objc_const` | `0x132c88` | `0x133888` | **`+0xc00`** |
+| `__DATA.__data` | `0x24760` | `0x251b0` | **`+0xa50`** |
+| `__AUTH_CONST.__const` | `0x32ae8` | `0x33500` | **`+0xa18`** |
+| `__TEXT.__swift5_typeref` | `0xefaa` | `0xf934` | **`+0x98a`** |
+| `__TEXT.__cstring` | `0x7badf` | `0x7c368` | **`+0x889`** |
+| `__TEXT.__objc_methlist` | `0x9f444` | `0x9fba4` | **`+0x760`** |
+| `__AUTH.__data` | `0xaaf8` | `0xb158` | **`+0x660`** |
+| `__TEXT.__swift5_fieldmd` | `0xd81c` | `0xde4c` | **`+0x630`** |
+| `__TEXT.__constg_swiftt` | `0xd2f4` | `0xd8b0` | **`+0x5bc`** |
+| `__TEXT.__swift5_reflstr` | `0xd8f5` | `0xdd75` | **`+0x480`** |
+| `__TEXT.__unwind_info` | `0x3ab18` | `0x3a6f0` | **`-0x428`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3d5b0` | `0x3d980` | **`+0x3d0`** |
+| `__AUTH.__objc_data` | `0x1f578` | `0x1f8d0` | **`+0x358`** |
+| `__AUTH_CONST.__cfstring` | `0x624c0` | `0x62740` | **`+0x280`** |
+| `__TEXT.__gcc_except_tab` | `0x290f0` | `0x29348` | **`+0x258`** |
+| `__TEXT.__swift5_proto` | `0x1ca0` | `0x1ed4` | **`+0x234`** |
+| `__DATA.__common` | `0x1108` | `0x1268` | **`+0x160`** |
+| `__TEXT.__swift5_capture` | `0x6b64` | `0x6c78` | **`+0x114`** |
+| `__AUTH_CONST.__auth_got` | `0x5090` | `0x5168` | **`+0xd8`** |
+| `__DATA_CONST.__got` | `0x9920` | `0x99d8` | **`+0xb8`** |
+| `__TEXT.__swift_as_cont` | `0x303c` | `0x30d8` | **`+0x9c`** |
+| `__TEXT.__swift5_assocty` | `0x1860` | `0x18f0` | **`+0x90`** |
+| `__DATA.__objc_ivar` | `0x9bc8` | `0x9c50` | **`+0x88`** |
+| `__TEXT.__swift5_types` | `0xb18` | `0xb94` | **`+0x7c`** |
+| `__TEXT.__swift_as_ret` | `0x1724` | `0x179c` | **`+0x78`** |
+| `__DATA_DIRTY.__objc_data` | `0x16e50` | `0x16de0` | **`-0x70`** |
+| `__DATA_CONST.__objc_protolist` | `0x28a0` | `0x28f8` | **`+0x58`** |
+| `__TEXT.__ustring` | `—` | `0x54` | **`+0x54`** |
+| `__TEXT.__swift_as_entry` | `0x135c` | `0x13a8` | **`+0x4c`** |
+| `__DATA_CONST.__const` | `0x1daf0` | `0x1db20` | **`+0x30`** |
+| `__DATA_CONST.__objc_protorefs` | `0xa30` | `0xa60` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0x4f38` | `0x4f58` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x3f90` | `0x3fa8` | **`+0x18`** |
+| `__DATA_CONST.__objc_superrefs` | `0x3670` | `0x3680` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x3d10` | `0x3d00` | **`-0x10`** |
+| `__DATA_DIRTY.__data` | `0x4820` | `0x4830` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `0x220` | `0x228` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -1484.2.0.0.0
--  __TEXT.__text: 0x150fb50
--  __TEXT.__objc_methlist: 0x9f444
 +1490.2.0.1.1
-+  __TEXT.__text: 0x1534df8
-+  __TEXT.__objc_methlist: 0x9fba4
-   __TEXT.__dlopen_cstrs: 0x130
--  __TEXT.__const: 0x2c78c
--  __TEXT.__cstring: 0x7badf
--  __TEXT.__swift5_typeref: 0xefaa
--  __TEXT.__swift5_fieldmd: 0xd81c
--  __TEXT.__constg_swiftt: 0xd2f4
-+  __TEXT.__const: 0x2f548
-+  __TEXT.__cstring: 0x7c368
-+  __TEXT.__swift5_typeref: 0xf934
-+  __TEXT.__swift5_fieldmd: 0xde4c
-+  __TEXT.__constg_swiftt: 0xd8b0
-   __TEXT.__swift5_builtin: 0x4ec
--  __TEXT.__swift5_reflstr: 0xd8f5
--  __TEXT.__swift5_assocty: 0x1860
--  __TEXT.__oslogstring: 0x291fbe
--  __TEXT.__swift5_protos: 0x220
--  __TEXT.__swift5_proto: 0x1ca0
--  __TEXT.__swift5_types: 0xb18
--  __TEXT.__swift_as_entry: 0x135c
--  __TEXT.__swift_as_ret: 0x1724
--  __TEXT.__swift_as_cont: 0x303c
--  __TEXT.__swift5_capture: 0x6b64
-+  __TEXT.__swift5_reflstr: 0xdd75
-+  __TEXT.__swift5_assocty: 0x18f0
-+  __TEXT.__oslogstring: 0x293e39
-+  __TEXT.__swift5_protos: 0x228
-+  __TEXT.__swift5_proto: 0x1ed4
-+  __TEXT.__swift5_types: 0xb94
-+  __TEXT.__swift_as_entry: 0x13a8
-+  __TEXT.__swift_as_ret: 0x179c
-+  __TEXT.__swift_as_cont: 0x30d8
-+  __TEXT.__swift5_capture: 0x6c78
-   __TEXT.__swift5_mpenum: 0xa0
--  __TEXT.__gcc_except_tab: 0x290f0
--  __TEXT.__unwind_info: 0x3ab18
--  __TEXT.__eh_frame: 0x36fd4
-+  __TEXT.__gcc_except_tab: 0x29348
-+  __TEXT.__ustring: 0x54
-+  __TEXT.__unwind_info: 0x3a6f0
-+  __TEXT.__eh_frame: 0x386b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1daf0
--  __DATA_CONST.__objc_classlist: 0x4f38
-+  __DATA_CONST.__const: 0x1db20
-+  __DATA_CONST.__objc_classlist: 0x4f58
-   __DATA_CONST.__objc_catlist: 0x370
--  __DATA_CONST.__objc_protolist: 0x28a0
-+  __DATA_CONST.__objc_protolist: 0x28f8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3d5b0
--  __DATA_CONST.__objc_protorefs: 0xa30
--  __DATA_CONST.__objc_superrefs: 0x3670
-+  __DATA_CONST.__objc_selrefs: 0x3d980
-+  __DATA_CONST.__objc_protorefs: 0xa60
-+  __DATA_CONST.__objc_superrefs: 0x3680
-   __DATA_CONST.__objc_arraydata: 0x33d0
--  __DATA_CONST.__got: 0x9920
--  __AUTH_CONST.__const: 0x32ae8
--  __AUTH_CONST.__cfstring: 0x624c0
--  __AUTH_CONST.__objc_const: 0x132c88
-+  __DATA_CONST.__got: 0x99d8
-+  __AUTH_CONST.__const: 0x33500
-+  __AUTH_CONST.__cfstring: 0x62740
-+  __AUTH_CONST.__objc_const: 0x133888
-   __AUTH_CONST.__weak_auth_got: 0x10
--  __AUTH_CONST.__objc_intobj: 0x3f90
-+  __AUTH_CONST.__objc_intobj: 0x3fa8
-   __AUTH_CONST.__objc_arrayobj: 0x960
-   __AUTH_CONST.__objc_doubleobj: 0x1e0
-   __AUTH_CONST.__objc_dictobj: 0x20a8
-   __AUTH_CONST.__objc_floatobj: 0x10
--  __AUTH_CONST.__auth_got: 0x5090
--  __AUTH.__objc_data: 0x1f578
--  __AUTH.__data: 0xaaf8
--  __DATA.__objc_ivar: 0x9bc8
--  __DATA.__data: 0x24760
--  __DATA.__bss: 0x34b10
--  __DATA.__common: 0x1108
--  __DATA_DIRTY.__objc_data: 0x16e50
--  __DATA_DIRTY.__data: 0x4820
--  __DATA_DIRTY.__bss: 0x3d10
-+  __AUTH_CONST.__auth_got: 0x5168
-+  __AUTH.__objc_data: 0x1f8d0
-+  __AUTH.__data: 0xb158
-+  __DATA.__objc_ivar: 0x9c50
-+  __DATA.__data: 0x251b0
-+  __DATA.__bss: 0x39180
-+  __DATA.__common: 0x1268
-+  __DATA_DIRTY.__objc_data: 0x16de0
-+  __DATA_DIRTY.__data: 0x4830
-+  __DATA_DIRTY.__bss: 0x3d00
-   __DATA_DIRTY.__common: 0x1b8
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AVRouting.framework/AVRouting
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Accounts.framework/Accounts
+
 +  - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-   - /System/Library/Frameworks/CloudKit.framework/CloudKit
-   - /System/Library/Frameworks/Contacts.framework/Contacts
 
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 +  - /System/Library/Frameworks/CoreHaptics.framework/CoreHaptics
-   - /System/Library/Frameworks/CoreLocation.framework/CoreLocation
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-   - /System/Library/Frameworks/CoreMotion.framework/CoreMotion
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 74361
--  Symbols:   129349
+-  Symbols:   102603
 -  CStrings:  57961
 +  Functions: 75207
-+  Symbols:   129890
++  Symbols:   103033
 +  CStrings:  58113
- 
 Symbols:
 + +[HMDAccessorySetupManager _proxControlDisplayStateForLayout:]
 + +[HMDDeviceController deviceControllerForCurrentDeviceWithNotificationCenter:]
@@ -2917,179 +2836,6 @@ Symbols:
 + _logCategory._hmf_once_v331
 + _logCategory._hmf_once_v94
 + _logCategory._hmf_once_v959
-+ _objc_msgSend$_allEnabledResidentsAtMinimumChannelMigrationVersion
-+ _objc_msgSend$_auditAccount
-+ _objc_msgSend$_beginCurrentSessionTeardown
-+ _objc_msgSend$_clearCurrentSessionStateWithError:
-+ _objc_msgSend$_clientStreamWithIdentifier:
-+ _objc_msgSend$_completeQueuedRequestsOnWorkQueue:
-+ _objc_msgSend$_deprovisionThenDisableRecordingForCamera:completion:
-+ _objc_msgSend$_entryForSessionBeingStopped:
-+ _objc_msgSend$_evaluateLocalDeprecationPolicyFromIDSCapabilityWithReason:
-+ _objc_msgSend$_handleIDSCapabilityQueryResult:error:reason:
-+ _objc_msgSend$_handleProxControlDisplayStateChanged:
-+ _objc_msgSend$_handleSharedUserFabricDataSetupTimerFired
-+ _objc_msgSend$_handleUpdatedAccount
-+ _objc_msgSend$_isNFCMFiTokenHashUnverifiedError:
-+ _objc_msgSend$_isProxDynamicIslandHostInstalled
-+ _objc_msgSend$_launchProxControlForHome:accessory:trigger:
-+ _objc_msgSend$_markNFCServerNotCertified:
-+ _objc_msgSend$_playProxControlSuccessHaptic
-+ _objc_msgSend$_postProxControlNotificationBulletinForHome:accessory:
-+ _objc_msgSend$_provideTapTimeMFiTokenToNFCServer:
-+ _objc_msgSend$_proxControlDisplayStateForLayout:
-+ _objc_msgSend$_proxControlModeForAccessory:
-+ _objc_msgSend$_readDiagnosticCharacteristicsIfNeeded
-+ _objc_msgSend$_reclaimQuotaThenRetryOrDisableRecordingForCamera:completion:
-+ _objc_msgSend$_registerForAccountNotifications
-+ _objc_msgSend$_relayIdentifyAccessoryToResidentForMessage:
-+ _objc_msgSend$_sessionFinishedStopping:
-+ _objc_msgSend$_setUpCamerasForHome:completion:
-+ _objc_msgSend$_shouldSuppressNFCTapForTagIdentifier:
-+ _objc_msgSend$_showControlDynamicIslandForHome:accessory:
-+ _objc_msgSend$_startTapTimeMFiTokenRollForSession:
-+ _objc_msgSend$_updateLastPairedTagWithSetupError:
-+ _objc_msgSend$_updateUserRecordName
-+ _objc_msgSend$_updateWithAccount:
-+ _objc_msgSend$accessorySettingsLocalMessageHandler:permittedKeyPaths:accessoryUUID:message:
-+ _objc_msgSend$advanceToLaunchingWithCompletionHandler:
-+ _objc_msgSend$allResidentsCapable
-+ _objc_msgSend$backlightState
-+ _objc_msgSend$beginStopping
-+ _objc_msgSend$callStackSymbols
-+ _objc_msgSend$cameraClipCaptioningEligibilityDidChangeForMonitor:
-+ _objc_msgSend$capabilitiesForHardware
-+ _objc_msgSend$check
-+ _objc_msgSend$clipCaptionLocale
-+ _objc_msgSend$cloudKitMetadataInitializedFuture
-+ _objc_msgSend$commitPrewarmDiscovery
-+ _objc_msgSend$conditionsFromPredicate:features:
-+ _objc_msgSend$configurationForDefaultMainDisplayMonitor
-+ _objc_msgSend$configureHAPSwiftExtensions
-+ _objc_msgSend$createPlayerWithPattern:error:
-+ _objc_msgSend$createSharedUserFabricSetupTimer
-+ _objc_msgSend$currentLayout
-+ _objc_msgSend$currentSetupTagIdentifier
-+ _objc_msgSend$currentTapTagIdentifier
-+ _objc_msgSend$decrementPendingOps
-+ _objc_msgSend$dequeueAvailableOnboardedParticipants
-+ _objc_msgSend$deviceControllerForCurrentDeviceWithNotificationCenter:
-+ _objc_msgSend$deviceControllerForDevice:accountRegistry:notificationCenter:
-+ _objc_msgSend$displayLayoutMonitor
-+ _objc_msgSend$elements
-+ _objc_msgSend$eligibilityDataSource
-+ _objc_msgSend$encodeSwiftExtensionsUsingCoder:
-+ _objc_msgSend$endWithCompletionHandler:
-+ _objc_msgSend$evaluateLocalDeprecationPolicyFromIDSCapabilityWithReason:
-+ _objc_msgSend$evaluationReason
-+ _objc_msgSend$fetchExistingOwnerUserRecordIDForHome:
-+ _objc_msgSend$fetchExistingUserRecordIDForUser:home:
-+ _objc_msgSend$hapMessageBindingForMessage:
-+ _objc_msgSend$hapSwiftExtensions
-+ _objc_msgSend$hmdTest_allModernTransports
-+ _objc_msgSend$hmdTest_injectIncomingMessageDictionary:fromID:
-+ _objc_msgSend$initAndReturnError:
-+ _objc_msgSend$initHAPSwiftExtensions
-+ _objc_msgSend$initSwiftExtensionsWithLogEventSubmitter:logEventDispatcher:dateProvider:uptimeProvider:counterStoragePath:flagsManager:featureFlags:keyCountProvider:userDefaults:fileManager:
-+ _objc_msgSend$initWithCloudShareService:coreData:
-+ _objc_msgSend$initWithContentsOfURL:error:
-+ _objc_msgSend$initWithDarwinNotificationProvider:queue:
-+ _objc_msgSend$initWithDevice:accountRegistry:notificationCenter:
-+ _objc_msgSend$initWithHomeUUID:policy:priorPolicy:evaluationReason:isPrimary:allResidentsCapable:numCapableDevices:numIncapableDevices:
-+ _objc_msgSend$initWithIdentifier:handles:devices:notificationCenter:
-+ _objc_msgSend$initWithIdentifier:handles:devices:notificationCenter:featuresDataSource:communicationTrustHandler:
-+ _objc_msgSend$initWithMessageDispatcher:accountManager:notificationSettingsProvider:logEventDispatcher:dateProvider:uptimeProvider:counterStoragePath:flagsManager:radarInitiator:featureFlags:keyCountProvider:userDefaults:fileManager:
-+ _objc_msgSend$initWithMessageDispatcher:dataSource:
-+ _objc_msgSend$initWithMetricsManager:configuringStateController:diagnosticInfoController:currentAccessorySetupMetricDispatcher:accessoryBrowser:featuresDataSource:
-+ _objc_msgSend$initWithMobileGestaltClient:featuresDataSource:eligibilityDataSource:
-+ _objc_msgSend$initWithObjectModel:notificationCenter:
-+ _objc_msgSend$initWithPredictionTargetUUID:targetServiceUUID:targetGroupUUID:targetGroupType:predictionType:predictionScore:predictionReason:
-+ _objc_msgSend$initWithSession:pendingOps:
-+ _objc_msgSend$initWithShareService:homeManager:cloudTransform:coreData:modelSelectionBlock:
-+ _objc_msgSend$initWithSummary:title:noteworthiness:locale:clipUUID:
-+ _objc_msgSend$initWithToken:uuidData:
-+ _objc_msgSend$initWithWorkQueue:homeManager:
-+ _objc_msgSend$initWithWorkQueue:homeManager:xpcMessageTransport:messageDispatcher:alertHandleProvider:nfcTagXPCListener:proximityEventListener:deviceLockStateDataSource:
-+ _objc_msgSend$initWithWorkQueue:videoStreamInterface:delegate:
-+ _objc_msgSend$isEligibleForCameraClipCaptioning
-+ _objc_msgSend$isNodeReady:inHome:logger:
-+ _objc_msgSend$isNotCertified
-+ _objc_msgSend$lastNotifiedMediaSessionState
-+ _objc_msgSend$lastPairedTagIdentifier
-+ _objc_msgSend$lastPairedTime
-+ _objc_msgSend$loadAliroVersionInMemoryForHomeManager:
-+ _objc_msgSend$localComputedDeprecationPolicy
-+ _objc_msgSend$makeNetMonitorWithNetAddress:
-+ _objc_msgSend$modernTransport
-+ _objc_msgSend$nfcPrewarming
-+ _objc_msgSend$numCameraAccessoriesClipCaptioningEnabled
-+ _objc_msgSend$numCapableDevices
-+ _objc_msgSend$numIncapableDevices
-+ _objc_msgSend$numberOfMediaAccessoriesInHome
-+ _objc_msgSend$pendingOps
-+ _objc_msgSend$pendingSharedUserFabricForceFetch
-+ _objc_msgSend$placeholderDeviceControllerWithIdentifier:accountRegistry:notificationCenter:
-+ _objc_msgSend$policyChanged
-+ _objc_msgSend$predicatesFromConditions:features:
-+ _objc_msgSend$predictionRefreshBurstThrottle
-+ _objc_msgSend$predictionRefreshDailyThrottle
-+ _objc_msgSend$prepareForPairing
-+ _objc_msgSend$prewarmNFCDiscoveryForPayload:
-+ _objc_msgSend$prewarmRecoveryInFlight
-+ _objc_msgSend$priorPolicy
-+ _objc_msgSend$proxControlDisplayState
-+ _objc_msgSend$proxDynamicIslandManager
-+ _objc_msgSend$readAndSaveAliroVersionFromSESForHomeManager:
-+ _objc_msgSend$readingDiagnosticCharacteristics
-+ _objc_msgSend$removeObjectIdenticalTo:
-+ _objc_msgSend$resumedFromPrewarm
-+ _objc_msgSend$rollContext
-+ _objc_msgSend$scheduleSharedUserFabricDataSetupWithForceFetch:
-+ _objc_msgSend$service:account:incomingMessage:fromID:context:
-+ _objc_msgSend$sessionsBeingStopped
-+ _objc_msgSend$setCurrentSetupTagIdentifier:
-+ _objc_msgSend$setCurrentTapTagIdentifier:
-+ _objc_msgSend$setDisplayLayoutMonitor:
-+ _objc_msgSend$setHapSwiftExtensions:
-+ _objc_msgSend$setLastNotifiedMediaSessionState:
-+ _objc_msgSend$setLastPairedTagIdentifier:
-+ _objc_msgSend$setLastPairedTime:
-+ _objc_msgSend$setLastProxControlShownTime:
-+ _objc_msgSend$setLocalComputedDeprecationPolicy:
-+ _objc_msgSend$setNfcPrewarming:
-+ _objc_msgSend$setNotCertified:
-+ _objc_msgSend$setPendingOps:
-+ _objc_msgSend$setPendingSharedUserFabricForceFetch:
-+ _objc_msgSend$setPrewarmRecoveryInFlight:
-+ _objc_msgSend$setProxControlDisplayState:
-+ _objc_msgSend$setReadingDiagnosticCharacteristics:
-+ _objc_msgSend$setResetHandler:
-+ _objc_msgSend$setResumedFromPrewarm:
-+ _objc_msgSend$setRollContext:
-+ _objc_msgSend$setSharedUserFabricSetupTimer:
-+ _objc_msgSend$setStopCalled:
-+ _objc_msgSend$setTapTimeMFiSession:
-+ _objc_msgSend$setTransitionHandler:
-+ _objc_msgSend$setUpCamerasWithCompletion:
-+ _objc_msgSend$setUuidData:
-+ _objc_msgSend$sharedUserFabricSetupTimer
-+ _objc_msgSend$shouldUseLocal
-+ _objc_msgSend$sortedArrayWithOptions:usingComparator:
-+ _objc_msgSend$startAtTime:error:
-+ _objc_msgSend$startControlWithAccessoryName:categoryType:deepLinkURL:completionHandler:
-+ _objc_msgSend$startPrewarmDiscoveringNFCAccessoryServer
-+ _objc_msgSend$stopCalled
-+ _objc_msgSend$stopPrewarmNFCDiscovery
-+ _objc_msgSend$supportsHaptics
-+ _objc_msgSend$swiftEncodeHAPWithCoder:isXPCTransport:isEntitledForSPIAccess:
-+ _objc_msgSend$swiftTransactionAccessoryUpdatedWithResult:
-+ _objc_msgSend$synchronizeStateForProcessInfo:
-+ _objc_msgSend$tapTimeMFiSession
-+ _objc_msgSend$totalCameraAccessoriesClipCaptioningEnabled
-+ _objc_msgSend$totalClipCaptioningEnabledHomes
-+ _objc_msgSend$triggerProcessMemoryWarning
-+ _objc_msgSend$userWithMergeID:includingPendingUsers:
-+ _objc_msgSend$uuidData
 + _symbolic $s11ActivityKit0A10AttributesP
 + _symbolic $s13HomeKitDaemon23ResidentStreamingClientP
 + _symbolic $s13HomeKitDaemon26ResidentStreamingTransportP
@@ -5672,68 +5418,6 @@ Symbols:
 - _logCategory._hmf_once_v332
 - _logCategory._hmf_once_v92
 - _logCategory._hmf_once_v923
-- _objc_msgSend$__initWithMessageDispatcher:dataSource:accessoryBrowser:
-- _objc_msgSend$_checkForRemotePeers
-- _objc_msgSend$_clearSessionBeingStopped
-- _objc_msgSend$_clientStreamWithIdentiifer:
-- _objc_msgSend$_completeQuededRequestsOnWorkQueue:
-- _objc_msgSend$_createNFCEventStreamWithName:workQueue:
-- _objc_msgSend$_evaluateLocalDeprecationPolicyFromIDSCapability
-- _objc_msgSend$_handleIDSCapabilityQueryResult:error:
-- _objc_msgSend$_handleLockStateChanged
-- _objc_msgSend$_launchProxControlForHome:accessory:
-- _objc_msgSend$_markUnpairedAccessoryNotCertifiedForServer:
-- _objc_msgSend$_processTestModeUpdateHomeLocation:error:
-- _objc_msgSend$_relayIdentifyAccessorytoResidentForMessage:
-- _objc_msgSend$_startTapTimeMFiTokenRollWithToken:uuidData:
-- _objc_msgSend$_tearDownSessionIfUnused
-- _objc_msgSend$avcSessionBeingStopped
-- _objc_msgSend$dequeueAvailableOnboadedParticipants
-- _objc_msgSend$evaluateLocalDeprecationPolicyFromIDSCapability
-- _objc_msgSend$fieldEventStream
-- _objc_msgSend$firstNameFromName:
-- _objc_msgSend$initSwiftExtensionsWithLogEventSubmitter:logEventDispatcher:dateProvider:uptimeProvider:counterStoragePath:flagsManager:userDefaults:featureFlags:
-- _objc_msgSend$initWithCloudShareService:
-- _objc_msgSend$initWithIdentifier:handles:devices:featuresDataSource:communicationTrustHandler:
-- _objc_msgSend$initWithLogEventSubmitter:dailyScheduler:dateProvider:
-- _objc_msgSend$initWithMessageDispatcher:accountManager:notificationSettingsProvider:logEventDispatcher:dateProvider:uptimeProvider:counterStoragePath:flagsManager:radarInitiator:userDefaults:fileManager:featureFlags:
-- _objc_msgSend$initWithMessageDispatcher:dataSource:accessoryBrowser:
-- _objc_msgSend$initWithMetricsManager:configuringStateController:diagnosticInfoController:currentAccessorySetupMetricDispatcher:featuresDataSource:
-- _objc_msgSend$initWithMobileGestaltClient:featuresDataSource:
-- _objc_msgSend$initWithPredictionTargetUUID:targetServiceUUID:targetGroupUUID:targetGroupType:predictionType:predictionScore:
-- _objc_msgSend$initWithShareService:homeManager:cloudTransform:modelSelectionBlock:
-- _objc_msgSend$initWithSummary:title:noteworthiness:clipUUID:
-- _objc_msgSend$initWithWorkQueue:homeManager:nfcEventListener:
-- _objc_msgSend$initWithWorkQueue:homeManager:nfcEventListener:xpcMessageTransport:messageDispatcher:alertHandleProvider:nfcTagXPCListener:proximityEventListener:deviceLockStateDataSource:
-- _objc_msgSend$initWithWorkQueue:videoStreamInterface:delegate:delegateQueue:
-- _objc_msgSend$isBackgroundTagReadingAvailable
-- _objc_msgSend$lastSetupDismissalTime
-- _objc_msgSend$lockStateNotifyToken
-- _objc_msgSend$nfcEventListener
-- _objc_msgSend$nfcEventStream:didReceiveEvent:
-- _objc_msgSend$numberOfMediaAccessoriesnHome
-- _objc_msgSend$pendingTapTimeMFiRollContext
-- _objc_msgSend$pendingTapTimeMFiToken
-- _objc_msgSend$pendingTapTimeMFiTokenUUID
-- _objc_msgSend$personNameComponentsFromString:
-- _objc_msgSend$proxyCardEventStream
-- _objc_msgSend$readAliroVersionIntoMemoryOnHomeManager:
-- _objc_msgSend$readAndSaveAliroVersionFromSESOnHomeManager:completionHandler:
-- _objc_msgSend$registerForNPSPreferenceChanges
-- _objc_msgSend$remoteParticipants
-- _objc_msgSend$setAvcSessionBeingStopped:
-- _objc_msgSend$setFieldEventStream:
-- _objc_msgSend$setLastSetupDismissalTime:
-- _objc_msgSend$setLockStateNotifyToken:
-- _objc_msgSend$setPendingTapTimeMFiRollContext:
-- _objc_msgSend$setPendingTapTimeMFiToken:
-- _objc_msgSend$setPendingTapTimeMFiTokenUUID:
-- _objc_msgSend$setProxyCardEventStream:
-- _objc_msgSend$setStyle:
-- _objc_msgSend$sharedHardwareManager:
-- _objc_msgSend$sharedHome
-- _objc_msgSend$stringFromPersonNameComponents:
-- _objc_msgSend$supportsReceivingRemoteCameraStream
 - _symbolic SDySSSo8HMEEventCG
 - _symbolic SaySSGyc
 - _symbolic ScCySDySSSo8HMEEventCG______pG s5ErrorP

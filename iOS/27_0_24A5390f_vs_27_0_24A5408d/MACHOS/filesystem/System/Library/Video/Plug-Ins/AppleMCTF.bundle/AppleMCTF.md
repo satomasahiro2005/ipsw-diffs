@@ -2,55 +2,37 @@
 
 > `/System/Library/Video/Plug-Ins/AppleMCTF.bundle/AppleMCTF`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__unwind_info`
-- `__DATA.__objc_selrefs`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x86914` | `0x87bb0` | **`+0x129c`** |
+| `__TEXT.__cstring` | `0x2837c` | `0x286c9` | **`+0x34d`** |
+| `__DATA_CONST.__const` | `0x53b0` | `0x5430` | **`+0x80`** |
+| `__DATA_CONST.__cfstring` | `0x940` | `0x980` | **`+0x40`** |
+| `__TEXT.__const` | `0x22a08` | `0x229e8` | **`-0x20`** |
+| `__DATA.__bss` | `0x8d0` | `0x8d8` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA.__objc_selrefs`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__init_offsets`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -913.29.1.0.0
--  __TEXT.__text: 0x86914
 +913.43.1.0.0
-+  __TEXT.__text: 0x87bb0
-   __TEXT.__auth_stubs: 0xd70
-   __TEXT.__objc_stubs: 0x20
-   __TEXT.__init_offsets: 0x4
--  __TEXT.__cstring: 0x2837c
--  __TEXT.__const: 0x22a08
-+  __TEXT.__cstring: 0x286c9
-+  __TEXT.__const: 0x229e8
-   __TEXT.__gcc_except_tab: 0x628
-   __TEXT.__objc_methname: 0xb
-   __TEXT.__unwind_info: 0x670
--  __DATA_CONST.__const: 0x53b0
--  __DATA_CONST.__cfstring: 0x940
-+  __DATA_CONST.__const: 0x5430
-+  __DATA_CONST.__cfstring: 0x980
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__auth_got: 0x6c8
-   __DATA_CONST.__got: 0x3c0
-   __DATA_CONST.__auth_ptr: 0x10
-   __DATA.__objc_selrefs: 0x8
-   __DATA.__data: 0xa0
--  __DATA.__bss: 0x8d0
-+  __DATA.__bss: 0x8d8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
-   - /System/Library/Frameworks/CoreVideo.framework/CoreVideo
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 668
 +  Functions: 672
-   Symbols:   341
--  CStrings:  3426
-+  CStrings:  3443
- 
+
+-  CStrings:  3427
++  CStrings:  3444
 CStrings:
 + "%lld %d AVE %s: %s Enter %d %d %p %d %d %d %p"
 + "%lld %d AVE %s: %s Enter %d %d %p %d %d %d %p\n"
@@ -74,6 +56,7 @@ CStrings:
 + "%lld %d AVE %s: %s:%d %s | wrong params, %d %p %d %d %d\n"
 + "%lld %d AVE %s: fail to send PS %p %p %d, dropping frame"
 + "%lld %d AVE %s: fail to send PS %p %p %d, dropping frame\n"
++ "21:54:42"
 + "913.43.1"
 + "AVE_MCTFFnumChangeResetMCTF"
 + "AVE_MCTFGatingType"
@@ -86,6 +69,7 @@ CStrings:
 + "AVE_Prop_MCTF_GetMCTFPreFiltAdjType"
 + "AVE_Prop_MCTF_SetMCTFGatingType"
 + "AVE_Prop_MCTF_SetMCTFPreFiltAdjType"
++ "Aug  5 2026"
 + "MCTFGatingType"
 + "MCTFGatingType = %d\n"
 + "MCTFPreFiltAdjType"
@@ -113,8 +97,10 @@ CStrings:
 - "%lld %d AVE %s: %s:%d %s | wrong params, %p %d %d %d %p\n"
 - "%lld %d AVE %s: %s::%s:%d %s | fail to send PS %p %p"
 - "%lld %d AVE %s: %s::%s:%d %s | fail to send PS %p %p\n"
+- "21:39:53"
 - "913.29.1"
 - "AVE_MCTF_GetGatingType"
 - "AVE_MCTF_GetPreFiltAdjType"
+- "Jul 14 2026"
 - "psData != __null && eDevType > AVE_DevType_None && eDevType < AVE_DevType_Max && eWorkMode > AVE_MCTF_WorkMode_None && eWorkMode < AVE_MCTF_WorkMode_Max && eLatencyMode > AVE_MCTF_Mode_Invalid && eLatencyMode < AVE_MCTF_Mode_Max"
 ```

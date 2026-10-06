@@ -2,30 +2,27 @@
 
 > `/System/Library/NanoTimeKit/FaceBundles/KaleidoscopeFaceBundle.bundle/KaleidoscopeFaceBundle`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14404` | `0x143f0` | **`-0x14`** |
+| `__TEXT.__gcc_except_tab` | `0x5e0` | `0x5dc` | **`-0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 29.0.0.0.0
--  __TEXT.__text: 0x14404
-+  __TEXT.__text: 0x143f0
-   __TEXT.__auth_stubs: 0x920
-   __TEXT.__objc_stubs: 0x38a0
-   __TEXT.__objc_methlist: 0x15b8
--  __TEXT.__gcc_except_tab: 0x5e0
-+  __TEXT.__gcc_except_tab: 0x5dc
-   __TEXT.__const: 0x3c0
-   __TEXT.__cstring: 0xae3
-   __TEXT.__objc_methname: 0x4421
+```text
 Functions:
 ~ _NTKGeneratePathFromInterestingness : 7336 -> 7308
 ~ _NTKKaleidoscopeAnalyzeDominance : 1852 -> 1856

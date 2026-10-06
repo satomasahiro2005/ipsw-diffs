@@ -2,87 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/RelevanceServices.framework/RelevanceServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf7d4` | `0x124a8` | **`+0x2cd4`** |
+| `__AUTH_CONST.__objc_const` | `0x710` | `0x928` | **`+0x218`** |
+| `__TEXT.__const` | `0xb10` | `0xce0` | **`+0x1d0`** |
+| `__TEXT.__eh_frame` | `0x1e0` | `0x370` | **`+0x190`** |
+| `__TEXT.__swift5_typeref` | `0x37e` | `0x502` | **`+0x184`** |
+| `__TEXT.__constg_swiftt` | `0x364` | `0x4a0` | **`+0x13c`** |
+| `__AUTH_CONST.__auth_got` | `0x670` | `0x7a0` | **`+0x130`** |
+| `__AUTH_CONST.__const` | `0x730` | `0x848` | **`+0x118`** |
+| `__DATA.__data` | `0x418` | `0x518` | **`+0x100`** |
+| `__TEXT.__swift5_fieldmd` | `0x348` | `0x420` | **`+0xd8`** |
+| `__TEXT.__unwind_info` | `0x510` | `0x5d8` | **`+0xc8`** |
+| `__AUTH.__data` | `0x250` | `0x2f8` | **`+0xa8`** |
+| `__DATA_DIRTY.__data` | `—` | `0xa8` | **`+0xa8`** |
+| `__TEXT.__oslogstring` | `0x1d3` | `0x143` | **`-0x90`** |
+| `__DATA_CONST.__got` | `0x1e8` | `0x250` | **`+0x68`** |
+| `__TEXT.__cstring` | `0x7f8` | `0x7a8` | **`-0x50`** |
+| `__TEXT.__swift5_reflstr` | `0x390` | `0x3d9` | **`+0x49`** |
+| `__DATA_CONST.__const` | `0x118` | `0x140` | **`+0x28`** |
+| `__DATA.__common` | `0x98` | `0x80` | **`-0x18`** |
+| `__TEXT.__swift5_builtin` | `0x3c` | `0x50` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x38` | `0x48` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x3c` | `0x4c` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x88` | `0x7c` | **`-0xc`** |
+| `__TEXT.__swift5_protos` | `0xc` | `0x14` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -243.0.0.0.0
--  __TEXT.__text: 0xefa0
 +248.1.0.0.0
-+  __TEXT.__text: 0x11b34
-   __TEXT.__objc_methlist: 0x268
--  __TEXT.__const: 0xb10
--  __TEXT.__cstring: 0x7f8
--  __TEXT.__constg_swiftt: 0x364
--  __TEXT.__swift5_typeref: 0x37e
--  __TEXT.__swift5_builtin: 0x3c
--  __TEXT.__swift5_types: 0x3c
--  __TEXT.__swift5_fieldmd: 0x348
--  __TEXT.__swift5_reflstr: 0x390
--  __TEXT.__oslogstring: 0x1d3
--  __TEXT.__swift5_capture: 0x88
--  __TEXT.__swift5_protos: 0xc
-+  __TEXT.__const: 0xce0
-+  __TEXT.__cstring: 0x7a8
-+  __TEXT.__constg_swiftt: 0x4a0
-+  __TEXT.__swift5_typeref: 0x502
-+  __TEXT.__swift5_builtin: 0x50
-+  __TEXT.__swift5_reflstr: 0x3d9
-+  __TEXT.__swift5_fieldmd: 0x420
-+  __TEXT.__swift5_types: 0x4c
-+  __TEXT.__oslogstring: 0x143
-+  __TEXT.__swift5_capture: 0x7c
-+  __TEXT.__swift5_protos: 0x14
-   __TEXT.__swift5_proto: 0x58
-   __TEXT.__swift_as_entry: 0x18
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift5_assocty: 0x78
--  __TEXT.__unwind_info: 0x678
--  __TEXT.__eh_frame: 0x1e0
-+  __TEXT.__unwind_info: 0x770
-+  __TEXT.__eh_frame: 0x370
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x118
--  __DATA_CONST.__objc_classlist: 0x38
-+  __DATA_CONST.__const: 0x140
-+  __DATA_CONST.__objc_classlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x1e0
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__got: 0x1e8
--  __AUTH_CONST.__const: 0x730
-+  __DATA_CONST.__got: 0x250
-+  __AUTH_CONST.__const: 0x848
-   __AUTH_CONST.__cfstring: 0x40
--  __AUTH_CONST.__objc_const: 0x710
--  __AUTH_CONST.__auth_got: 0x670
-+  __AUTH_CONST.__objc_const: 0x928
-+  __AUTH_CONST.__auth_got: 0x7a0
-   __AUTH.__objc_data: 0x400
--  __AUTH.__data: 0x250
--  __DATA.__data: 0x418
--  __DATA.__common: 0x98
-+  __AUTH.__data: 0x2f8
-+  __DATA.__data: 0x518
-+  __DATA.__common: 0x80
-+  __DATA_DIRTY.__data: 0xa8
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 472
 -  Symbols:   349
 -  CStrings:  60
 +  Functions: 544
 +  Symbols:   397
 +  CStrings:  57
- 
 Symbols:
 + __DATA__TtC17RelevanceServices15StateDumpBuffer
 + __DATA__TtC17RelevanceServices17StateDumpRegistry

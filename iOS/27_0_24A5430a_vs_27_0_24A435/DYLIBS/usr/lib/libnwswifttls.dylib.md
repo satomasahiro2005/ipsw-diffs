@@ -2,14 +2,15 @@
 
 > `/usr/lib/libnwswifttls.dylib`
 
-```diff
+### Section Size Changes
 
- 171.0.15.0.0
--  __TEXT.__text: 0xf9624
-+  __TEXT.__text: 0xf9530
-   __TEXT.__objc_methlist: 0x53c
-   __TEXT.__const: 0x71d4
-   __TEXT.__cstring: 0x1776
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf9624` | `0xf9530` | **`-0xf4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$s10Foundation4DataV15_RepresentationO5bytess7RawSpanVvg : 188 -> 192
 ~ _$sSasSQRzlE2eeoiySbSayxG_ABtFZ15SwiftTLSLibrary9ExtensionO12PreSharedKeyO11OfferedPSKsV11PSKIdentityV_Tt1g5 : 504 -> 500

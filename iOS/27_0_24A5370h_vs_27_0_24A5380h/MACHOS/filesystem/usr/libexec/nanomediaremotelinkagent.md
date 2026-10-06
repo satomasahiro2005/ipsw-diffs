@@ -2,15 +2,16 @@
 
 > `/usr/libexec/nanomediaremotelinkagent`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x458` | `0x490` | **`+0x38`** |
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_superrefs: 0x130
-   __DATA_CONST.__objc_intobj: 0x18
-   __DATA_CONST.__auth_got: 0x758
--  __DATA_CONST.__got: 0x458
-+  __DATA_CONST.__got: 0x490
-   __DATA.__objc_const: 0x56b8
-   __DATA.__objc_selrefs: 0x1718
-   __DATA.__objc_ivar: 0x394
-
+-2024.100.44.0.0
++2024.100.46.0.0
 ```

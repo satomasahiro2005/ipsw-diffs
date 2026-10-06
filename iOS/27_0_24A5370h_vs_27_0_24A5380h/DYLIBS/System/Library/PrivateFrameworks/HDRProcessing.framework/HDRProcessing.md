@@ -2,78 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/HDRProcessing.framework/HDRProcessing`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x190` | `0x410` | **`+0x280`** |
+| `__DATA_DIRTY.__objc_data` | `0xa00` | `0x780` | **`-0x280`** |
+| `__TEXT.__text` | `0xa74e4` | `0xa757c` | **`+0x98`** |
+| `__AUTH_CONST.__cfstring` | `0x5400` | `0x5440` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x8593` | `0x85c5` | **`+0x32`** |
+| `__TEXT.__unwind_info` | `0x15c0` | `0x15e8` | **`+0x28`** |
+| `__AUTH_CONST.__objc_const` | `0x7de0` | `0x7e00` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x670` | `0x678` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0xb80` | `0xb84` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__oslogstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xa74e4
-+  __TEXT.__text: 0xa757c
-   __TEXT.__objc_methlist: 0x2548
-   __TEXT.__const: 0x4bf8
-   __TEXT.__gcc_except_tab: 0x25ac
-   __TEXT.__oslogstring: 0xf1a0
--  __TEXT.__cstring: 0x8593
--  __TEXT.__unwind_info: 0x15c0
-+  __TEXT.__cstring: 0x85c5
-+  __TEXT.__unwind_info: 0x15e8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x670
-+  __DATA_CONST.__const: 0x678
-   __DATA_CONST.__objc_classlist: 0x128
-   __DATA_CONST.__objc_protolist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
+-1.513.1.0.0
++1.514.1.0.0
 
-   __DATA_CONST.__objc_arraydata: 0x40
-   __DATA_CONST.__got: 0x2d0
-   __AUTH_CONST.__const: 0x200
--  __AUTH_CONST.__cfstring: 0x5400
--  __AUTH_CONST.__objc_const: 0x7de0
-+  __AUTH_CONST.__cfstring: 0x5440
-+  __AUTH_CONST.__objc_const: 0x7e00
-   __AUTH_CONST.__weak_auth_got: 0x20
-   __AUTH_CONST.__objc_intobj: 0x60
-   __AUTH_CONST.__objc_arrayobj: 0x90
-   __AUTH_CONST.__auth_got: 0x568
--  __AUTH.__objc_data: 0x190
--  __DATA.__objc_ivar: 0xb80
-+  __AUTH.__objc_data: 0x410
-+  __DATA.__objc_ivar: 0xb84
-   __DATA.__data: 0x940
-   __DATA.__common: 0x30
-   __DATA.__bss: 0x3228
-   __DATA_DIRTY.__objc_ivar: 0xe8
--  __DATA_DIRTY.__objc_data: 0xa00
-+  __DATA_DIRTY.__objc_data: 0x780
-   __DATA_DIRTY.__data: 0x4
-   __DATA_DIRTY.__common: 0xb430
-   __DATA_DIRTY.__bss: 0x510
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
-   Functions: 1336
--  Symbols:   4551
--  CStrings:  2205
-+  Symbols:   4553
-+  CStrings:  2209
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__oslogstring : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __DATA.__data : content changed
+-  Symbols:   2907
+-  CStrings:  1533
++  Symbols:   2909
++  CStrings:  1535
 Symbols:
 + _OBJC_IVAR_$_HDRProcessor._displayReflectionRatio
 + _kHDRProcessingDisplayReflectionRatioKey
@@ -1132,5 +1089,4 @@ CStrings:
 - " [1.513.1] hcrUseSystemBrightnessForProContent changes to: %s"
 - " [1.513.1] hdrMaxBrightnessInNits was forced to %f!"
 - " [1.513.1] sdrMaxBrightnessInNits was forced to %f!"
-
 ```

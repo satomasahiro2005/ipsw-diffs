@@ -2,77 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/GeoAnalytics.framework/GeoAnalytics`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x98d38` | `0x99f18` | **`+0x11e0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x43a8` | `0x4420` | **`+0x78`** |
+| `__DATA_CONST.__const` | `0x7d00` | `0x7d48` | **`+0x48`** |
+| `__TEXT.__objc_methlist` | `0x26e4` | `0x272c` | **`+0x48`** |
+| `__AUTH_CONST.__cfstring` | `0x14800` | `0x14840` | **`+0x40`** |
+| `__TEXT.__cstring` | `0xef5d` | `0xef90` | **`+0x33`** |
+| `__AUTH_CONST.__const` | `0x37b8` | `0x37d8` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x10e0` | `0x1100` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x1d88` | `0x1da0` | **`+0x18`** |
+| `__DATA_CONST.__objc_arraydata` | `0xed0` | `0xee0` | **`+0x10`** |
+| `__DATA.__bss` | `0x120` | `0x128` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x6d8` | `0x6e0` | **`+0x8`** |
+| `__DATA_DIRTY.__bss` | `0x178` | `0x170` | **`-0x8`** |
+| `__TEXT.__const` | `0x764` | `0x76c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2075.31.6.17.9
--  __TEXT.__text: 0x979d8
--  __TEXT.__objc_methlist: 0x26e4
--  __TEXT.__const: 0x764
 +2075.34.9.3.1
-+  __TEXT.__text: 0x98bb8
-+  __TEXT.__objc_methlist: 0x272c
-+  __TEXT.__const: 0x76c
-   __TEXT.__dlopen_cstrs: 0x126
-   __TEXT.__swift5_typeref: 0x4e
-   __TEXT.__swift5_capture: 0x24
 
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_types: 0x8
-   __TEXT.__gcc_except_tab: 0x6bc
--  __TEXT.__cstring: 0xef5d
-+  __TEXT.__cstring: 0xef90
-   __TEXT.__oslogstring: 0x10ca
--  __TEXT.__unwind_info: 0x13e8
-+  __TEXT.__unwind_info: 0x1410
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7d00
-+  __DATA_CONST.__const: 0x7d48
-   __DATA_CONST.__objc_classlist: 0x128
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x43a8
-+  __DATA_CONST.__objc_selrefs: 0x4420
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0xb8
--  __DATA_CONST.__objc_arraydata: 0xed0
--  __DATA_CONST.__got: 0x6d8
--  __AUTH_CONST.__const: 0x37b8
--  __AUTH_CONST.__cfstring: 0x14800
-+  __DATA_CONST.__objc_arraydata: 0xee0
-+  __DATA_CONST.__got: 0x6e0
-+  __AUTH_CONST.__const: 0x37d8
-+  __AUTH_CONST.__cfstring: 0x14840
-   __AUTH_CONST.__objc_const: 0x33b8
--  __AUTH_CONST.__objc_intobj: 0x1d88
-+  __AUTH_CONST.__objc_intobj: 0x1da0
-   __AUTH_CONST.__objc_dictobj: 0x4b0
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__objc_arrayobj: 0x378
-
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0x960
-   __DATA_DIRTY.__data: 0x10
--  __DATA_DIRTY.__bss: 0x178
-+  __DATA_DIRTY.__bss: 0x170
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 1645
--  Symbols:   5268
+-  Symbols:   3387
 -  CStrings:  2826
 +  Functions: 1656
-+  Symbols:   5292
++  Symbols:   3401
 +  CStrings:  2828
- 
 Symbols:
 + +[GEOAPPortal captureUserAction:target:value:jetVersionId:]
 + +[GEOAPPortal(UserActionCodeGen) captureAccountSessionlessUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:]
@@ -225,45 +186,6 @@ Symbols:
 + ___68-[GEOAPSharedStateData setHasMapSettingsMinFasterRouteTimeSavingsS:]_block_invoke
 + _captureUserAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:modelInfoProviders:additionalStates:completionQueue:completionBlock:.onceToken
 + _captureUserAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:modelInfoProviders:additionalStates:completionQueue:completionBlock:.runningInMapsApp
-+ _objc_msgSend$captureAccountSessionlessUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$captureArpPrivacyWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$captureCarplayUserActionWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$captureCuratedCollectionsSessionlessUserActionTargetPairRedactedCCStateWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$captureCuratedCollectionsSessionlessUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$captureCuratedCollectionsShortUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$captureEnterMapsShortUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$captureFamiliarRoutesOnlyWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$captureMapViewEngagementWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$captureMuninCameraUserActionShortOnlyWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$captureMuninUserActionShortOnlyWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$captureNearbyTransitShortUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$captureOfflineSessionlessUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$captureOfflineShortUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$capturePlaceCardRevealWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$capturePredExSessionlessUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$capturePredExShortUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$capturePriorityPlacecardActionShortUserActionsWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$capturePriorityShortUserActionsWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$captureRapSessionlessUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$captureRapShortAndSessionlessUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$captureRapUserActionShortOnlyWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$captureSessionlessUserActionWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$captureStandardShortWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$captureStartEndNavWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$captureTransitShortUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$captureUGCSessionlessUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$captureUGCShortUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$captureUserAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:modelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$captureVisualIntelligenceShortUserActionsWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-+ _objc_msgSend$hasMapSettingsDefaultToFasterRoute
-+ _objc_msgSend$hasMapSettingsMinFasterRouteTimeSavingsS
-+ _objc_msgSend$jetMetadata
-+ _objc_msgSend$mapSettingsDefaultToFasterRoute
-+ _objc_msgSend$mapSettingsMinFasterRouteTimeSavingsS
-+ _objc_msgSend$setBundleVersionId:
-+ _objc_msgSend$setDefaultToFasterRoute:
-+ _objc_msgSend$setJetMetadata:
-+ _objc_msgSend$setMinFasterRouteTimeSavingsS:
 - +[GEOAPPortal(UserActionCodeGen) captureAccountSessionlessUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:]
 - +[GEOAPPortal(UserActionCodeGen) captureArpPrivacyWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:]
 - +[GEOAPPortal(UserActionCodeGen) captureCarplayUserActionWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:]
@@ -401,35 +323,6 @@ Symbols:
 - ___273+[GEOAPPortal(UserActionCodeGen) captureCuratedCollectionsSessionlessUserActionTargetPairRedactedCCStateWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:]_block_invoke
 - _captureUserAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:modelInfoProviders:additionalStates:completionQueue:completionBlock:.onceToken
 - _captureUserAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:modelInfoProviders:additionalStates:completionQueue:completionBlock:.runningInMapsApp
-- _objc_msgSend$captureAccountSessionlessUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$captureArpPrivacyWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$captureCarplayUserActionWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$captureCuratedCollectionsSessionlessUserActionTargetPairRedactedCCStateWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$captureCuratedCollectionsSessionlessUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$captureCuratedCollectionsShortUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$captureEnterMapsShortUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$captureFamiliarRoutesOnlyWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$captureMapViewEngagementWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$captureMuninCameraUserActionShortOnlyWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$captureMuninUserActionShortOnlyWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$captureNearbyTransitShortUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$captureOfflineSessionlessUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$captureOfflineShortUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$capturePlaceCardRevealWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$capturePredExSessionlessUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$capturePredExShortUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$capturePriorityPlacecardActionShortUserActionsWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$capturePriorityShortUserActionsWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$captureRapSessionlessUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$captureRapShortAndSessionlessUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$captureRapUserActionShortOnlyWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$captureSessionlessUserActionWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$captureStandardShortWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$captureStartEndNavWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$captureTransitShortUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$captureUGCSessionlessUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$captureUGCShortUserActionTargetPairWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
-- _objc_msgSend$captureVisualIntelligenceShortUserActionsWithAction:target:value:moduleType:moduleMetadata:classification:richProviderId:sessionSnapshot:dataModelInfoProviders:additionalStates:completionQueue:completionBlock:
 CStrings:
 + "+[GEOAPPortal(UserActionCodeGen) captureUserAction:target:value:moduleType:moduleMetadata:classification:richProviderId:jetVersionId:sessionSnapshot:modelInfoProviders:additionalStates:completionQueue:completionBlock:]"
 + "JetMetadata"

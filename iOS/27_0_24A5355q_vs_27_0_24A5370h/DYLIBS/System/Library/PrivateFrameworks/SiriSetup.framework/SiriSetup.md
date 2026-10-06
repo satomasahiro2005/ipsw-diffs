@@ -2,131 +2,61 @@
 
 > `/System/Library/PrivateFrameworks/SiriSetup.framework/SiriSetup`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2d4454` | `0x2ee720` | **`+0x1a2cc`** |
+| `__TEXT.__swift5_typeref` | `0x24cb0` | `0x295ba` | **`+0x490a`** |
+| `__TEXT.__const` | `0x1a164` | `0x1ba28` | **`+0x18c4`** |
+| `__DATA.__bss` | `0x108a8` | `0x11b48` | **`+0x12a0`** |
+| `__TEXT.__cstring` | `0xa70c` | `0xb6c5` | **`+0xfb9`** |
+| `__AUTH_CONST.__const` | `0x115a0` | `0x124b8` | **`+0xf18`** |
+| `__DATA.__data` | `0x8278` | `0x8c80` | **`+0xa08`** |
+| `__TEXT.__constg_swiftt` | `0xa7b4` | `0xb0b0` | **`+0x8fc`** |
+| `__TEXT.__eh_frame` | `0x86a4` | `0x8e7c` | **`+0x7d8`** |
+| `__TEXT.__swift5_fieldmd` | `0x68b8` | `0x6e48` | **`+0x590`** |
+| `__AUTH.__data` | `0x6108` | `0x6688` | **`+0x580`** |
+| `__TEXT.__unwind_info` | `0xa2b8` | `0xa820` | **`+0x568`** |
+| `__TEXT.__swift5_reflstr` | `0x714b` | `0x767b` | **`+0x530`** |
+| `__AUTH_CONST.__objc_const` | `0x8f60` | `0x93e8` | **`+0x488`** |
+| `__TEXT.__oslogstring` | `0x2932` | `0x2ba2` | **`+0x270`** |
+| `__TEXT.__swift5_capture` | `0x31e0` | `0x3444` | **`+0x264`** |
+| `__AUTH.__objc_data` | `0x61e0` | `0x63e8` | **`+0x208`** |
+| `__TEXT.__swift5_assocty` | `0x1688` | `0x17f0` | **`+0x168`** |
+| `__AUTH_CONST.__auth_got` | `0x2ce8` | `0x2e40` | **`+0x158`** |
+| `__DATA_CONST.__got` | `0x17b8` | `0x1888` | **`+0xd0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2170` | `0x2218` | **`+0xa8`** |
+| `__TEXT.__swift5_proto` | `0x8ec` | `0x984` | **`+0x98`** |
+| `__TEXT.__swift5_types` | `0x710` | `0x78c` | **`+0x7c`** |
+| `__TEXT.__objc_methlist` | `0x20c0` | `0x2128` | **`+0x68`** |
+| `__DATA_CONST.__const` | `0x2168` | `0x21b8` | **`+0x50`** |
+| `__DATA.__common` | `0x518` | `0x560` | **`+0x48`** |
+| `__TEXT.__swift_as_entry` | `0x254` | `0x284` | **`+0x30`** |
+| `__TEXT.__swift5_builtin` | `0x230` | `0x258` | **`+0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x418` | `0x438` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x4f8` | `0x518` | **`+0x20`** |
+| `__TEXT.__swift5_mpenum` | `0x20` | `0x28` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0xa8` | `0xb0` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x28c` | `0x294` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3600.56.14.1.5
--  __TEXT.__text: 0x2d4454 sha256:9430c0d2fbd0c2e9e43ae3425cfe74dce3659077ae95dc22b04b1da1c503735b
--  __TEXT.__objc_methlist: 0x20c0 sha256:916122db9a2c959fe8e1f8b5606591769cdea1b1a7af2049a7932fa72fcf9616
--  __TEXT.__const: 0x1a164 sha256:8eb07069d2fc7b4bc587e5b36c668c1587bf4f46dc3442eec8f8ee5e75ea8b1a
--  __TEXT.__cstring: 0xa70c sha256:022c264fb749c39908f8afb482fec8c612054585dc0c36bde9fc4c869d87e490
 +3600.62.13.1.1
-+  __TEXT.__text: 0x2ee720 sha256:6415ae6776b2aa885feddf5c63cec0b0cabfd73dcb8322ba844bd93f106fb5df
-+  __TEXT.__objc_methlist: 0x2128 sha256:9ac1c96f9abc304db577e982e5f43cf0cf6527a027d33987675b4e90befaf78a
-+  __TEXT.__const: 0x1ba28 sha256:f5c2bda049d6e3de21c869b39bb53961b53c1f86da21ff04da6f619efe474755
-+  __TEXT.__cstring: 0xb6c5 sha256:385e357e5d7d7e6a09b4373fffd42ec6eec97a3c49817cd62eff382e3b047664
-   __TEXT.__gcc_except_tab: 0x30 sha256:8c18580df3a8f5b0a86235958161bab3cc81963d2ca34023038cd80cfda892a4
-   __TEXT.__dlopen_cstrs: 0xaf sha256:2614d68483992ef93797ddcd0b0df00b6b42b3bd10ba102911a60cb014ab2617
--  __TEXT.__oslogstring: 0x2932 sha256:ed4557f45bae24e268fb8ce2e1ad1142628c047d02559dfaeb74fe8fcf962714
--  __TEXT.__swift5_typeref: 0x24cb0 sha256:4f0e83c6d00ad58e2b9e6639b445589cf0c22a3c6336d8ec71f5bb5c13f59fad
--  __TEXT.__swift5_capture: 0x31e0 sha256:9416a6cff41af7140695315becb0d920bf24cd6369914aee433d9c1b5d60b785
--  __TEXT.__constg_swiftt: 0xa7b4 sha256:0d9fa0d291fa9598c4f21472e70ae261a0a8b419b01f03664dbbf662f85c9b38
--  __TEXT.__swift5_reflstr: 0x714b sha256:0b5a33f67a879d8633103e4d25c64639fce8aa377670560bb014378bf0b4d749
--  __TEXT.__swift5_fieldmd: 0x68b8 sha256:dc328c9edf7fb71f47f83ee4646e2396d9635313fc37d81b3a06201b67fd8b98
--  __TEXT.__swift5_builtin: 0x230 sha256:6ee34667e58f753167aa9d347e8f183ecc3cbef655dcf4ac30a2c931d16d4a50
--  __TEXT.__swift5_assocty: 0x1688 sha256:23159c916ce9f6f1f884c25fde7cd43a4d16fd3b3cbd238244faa30fbea33fb2
--  __TEXT.__swift5_proto: 0x8ec sha256:7291c74c16ba21830f4bb147ee337b95f5b6fb6dfddc8670ebfa52be45e3788a
--  __TEXT.__swift5_types: 0x710 sha256:3cec514846bff5d2db23d6f31b2e038769f012e82cd8222c7e12712ad30f01ba
--  __TEXT.__swift5_protos: 0xa8 sha256:5d5577c8fc5bbdb1b298c9acfd32c87c5a6f99f1596135031519784856b7df47
--  __TEXT.__swift_as_entry: 0x254 sha256:8b77dfbe113b65e37e73e52312bad5cc19a8bf6817593fe5cc1bbce9c8e6e262
--  __TEXT.__swift_as_ret: 0x28c sha256:37e9eecc41d7b0629d5bf6f4d4e0d12d6afe406d3a9ac5016068e2b9efa60933
--  __TEXT.__swift_as_cont: 0x4f8 sha256:423e7398353ecafbdfb1f0e2ca0731320bf60e63c99ced465c51facfc0394596
--  __TEXT.__swift5_mpenum: 0x20 sha256:9ad04402c75185aca4a652fdc1191fd36c38d79d7cc3c13ca52c1eb918031bf2
--  __TEXT.__unwind_info: 0xa2b8 sha256:7ccf063b914909987dcc488fa130bd63c64938922fc7d0678f3771424374ee5d
--  __TEXT.__eh_frame: 0x86a4 sha256:fec2562f64bff2a60c6cbc63801e5be6101f6f7d09ec9872fb14306b7b63a27e
-+  __TEXT.__oslogstring: 0x2ba2 sha256:344287f845ea5422c9fb361a307028d298c762c9ceaf139daf0ad22594b9d126
-+  __TEXT.__swift5_typeref: 0x295ba sha256:aa32c75f1796582c4f58d4b09d37a429305ebb2e6f06d56b05f11197c2325ec6
-+  __TEXT.__swift5_capture: 0x3444 sha256:68583de28be8dd9f2a6c5ff92aa5d646e52d891c856592254a3bfeba373ab91a
-+  __TEXT.__constg_swiftt: 0xb0b0 sha256:3af9d871ffa4fe7d78f3ebfe275946b415cd5a7b887ebc3fcfa0830ff9ada2ee
-+  __TEXT.__swift5_reflstr: 0x767b sha256:600ba703533000ed55839999805ddb3b01a60b6c6c8e64ed1390f74d829031df
-+  __TEXT.__swift5_fieldmd: 0x6e48 sha256:e997510aa1575044e8cdfc2d10268fb9617304189203343e800869e35b218903
-+  __TEXT.__swift5_builtin: 0x258 sha256:d73a8e2f2957010ea15cd2cae2eea01d5e02b21f420cbcc6f7cdeecab99f0d45
-+  __TEXT.__swift5_assocty: 0x17f0 sha256:fd59602a0a24c3717850f1a1b138b287b88f59020d748ea26a52c48588862cb5
-+  __TEXT.__swift5_proto: 0x984 sha256:1fae2c2d1e820b04e5e870f7474bf62461671b606fd11d621e350cbb87c45ee1
-+  __TEXT.__swift5_types: 0x78c sha256:66be2d910895e39b607f3aac4ad5c0b509e71f5eb574ccc09536f9e9180cb5b5
-+  __TEXT.__swift5_protos: 0xb0 sha256:36673cfeb980a85d892fa855f85dc23be0f23212d0a3d49a2bfd1af4d7b54143
-+  __TEXT.__swift_as_entry: 0x284 sha256:fbf158c7a834c80602d3c9ed416c64a9ab2df2c16ec3813b134bea5d378dfce4
-+  __TEXT.__swift_as_ret: 0x294 sha256:fdfbc275c5e653036f1d81a73650c0ee26c0c5d4d8ef48a05fecaaa703329777
-+  __TEXT.__swift_as_cont: 0x518 sha256:524d17facf424ad7edb651f76d29028a78e84ef5a7a66dcafac9bdce07b54609
-+  __TEXT.__swift5_mpenum: 0x28 sha256:7ad754c3ddec2de21f281b55e6ebd70a19b44dcd7b61914a70bc2819b8936aa1
-+  __TEXT.__unwind_info: 0xa820 sha256:35cfc0ea40f829f81ca0068bb45dde76d95c1670fdd4ff64b4da69812164bb61
-+  __TEXT.__eh_frame: 0x8e7c sha256:a19289bce0cd0491654c9233068fc6a0fce19b229b2e1742d24e550d547e9b4e
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2168 sha256:e922acb1281e5e74983e4ad96461d8a44ba556dc5fcf33d2c9d2b943fa2d84ab
--  __DATA_CONST.__objc_classlist: 0x418 sha256:bd4d7b403eb85eb7c88234979f334ff92331fc11f6fe7b0f3ebf7ea08d3c147c
--  __DATA_CONST.__objc_catlist: 0x8 sha256:af64bff536b23153327f7876358775a7786655820d372656e6506d124b47ba99
--  __DATA_CONST.__objc_protolist: 0x138 sha256:ea7f5fefe07e401d4c2e8fbc3751dd0956146fe02470ef97986b5b54a9414c9a
-+  __DATA_CONST.__const: 0x21b8 sha256:db4ff15f55816c11d321c7eef82837f5467acd93c611af819f698d7fcfc0260e
-+  __DATA_CONST.__objc_classlist: 0x438 sha256:f806b721ce9c7c07efcc3edcca62b343d43be4d9df205f2cacdad0a065bf3fa2
-+  __DATA_CONST.__objc_catlist: 0x8 sha256:34be8e4d14c4a64b68dc43e404d798707c16583d2c809486616c15922787f07a
-+  __DATA_CONST.__objc_protolist: 0x138 sha256:9dba0ca0f8e2a1f4f99a89b47a656704096ec038a2e7ec598cc99e68f2b18622
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0x2170 sha256:0e89c0ad89e113af3986d72c5f288cb94ba4f6522d00e31c56c83a65108d4472
--  __DATA_CONST.__objc_protorefs: 0x98 sha256:b528abcd26a11266388cac6ce56aa0c5564710d80f28eec3116e470d6a7d6c32
--  __DATA_CONST.__objc_superrefs: 0x50 sha256:b4eb2811a05dd64ec1e8fc1833aa21db0e4e215e50f8f775967573fe602439b3
--  __DATA_CONST.__got: 0x17b8 sha256:30ac7b68aec6d62ba0ccd1644376eb76e98d8c3ce5d5ff61e4f90e267e3ca085
--  __AUTH_CONST.__const: 0x115a0 sha256:2da41f62db5aa9cee4418cf3cbded7bdd2e9a6bb8e8f1ea6249533fe81a96d13
--  __AUTH_CONST.__cfstring: 0x1b60 sha256:80a6a7b8f2b9f669a01bfcf1c7211124ddf89911988d42bc2d668911e36d538f
--  __AUTH_CONST.__objc_const: 0x8f60 sha256:a321c38865a6c70fc87cd6f831467cc2ca7bf3a366ac889dd131a69280c6ab52
--  __AUTH_CONST.__objc_intobj: 0x18 sha256:e87d82058885437a63ebcb5c07cc5f936b5b15dd4c9c5178f198ab05c91ac4cf
--  __AUTH_CONST.__auth_got: 0x2ce8 sha256:e44b50fc8cfa9d1ff2018ca982c8ffb1c2d3ebc4aa53f3160e1f65d26cfbae20
--  __AUTH.__objc_data: 0x61e0 sha256:0bb71113bafc39319cc548b16f1218d51be904a3a5691720400fd5055906ea56
--  __AUTH.__data: 0x6108 sha256:dac068b622a9d9dd3e10979f159e0f75b341e549e7bd728bcf0147171c6fc2a9
-+  __DATA_CONST.__objc_selrefs: 0x2218 sha256:ba4e1e916dd866ab121b4f92498282316785e36eede40b7c2453dbdaf447cce8
-+  __DATA_CONST.__objc_protorefs: 0x98 sha256:ded32b6e6443ecab1d37a86efebef656bb035735eeb2a7e554446f43eef07dbc
-+  __DATA_CONST.__objc_superrefs: 0x50 sha256:10f2a1ac9fab771c5142dc4ea5b3f78eada4b62fcb9492a7205642107c0438d5
-+  __DATA_CONST.__got: 0x1888 sha256:62ea45cdd469beb03dabbf37df8257ce38c6a5f4c5e2bc3ed38ba349432c7235
-+  __AUTH_CONST.__const: 0x124b8 sha256:56269e05c0def2f18df450685355f041ade3f9425f6eaaa97036895d85ed5a5f
-+  __AUTH_CONST.__cfstring: 0x1b60 sha256:9509f7e752af7130f45605f3efe5d835734353870acf5080ef0a88d11982033b
-+  __AUTH_CONST.__objc_const: 0x93e8 sha256:092457caccc394ef65c472006a297836f093b635530eec2d0859e4c9d2690e2c
-+  __AUTH_CONST.__objc_intobj: 0x18 sha256:c370325886d7d75286317f484622799cd9e9a98c806514ae065d2d883738f1b0
-+  __AUTH_CONST.__auth_got: 0x2e40 sha256:4a0c67ddbb0a011279890bc38d54d545ba24f0903e936fc8fda23b36a22822f4
-+  __AUTH.__objc_data: 0x63e8 sha256:d170f7bf19f47db4e337ccbef52bbb6e07eced55ee3184aeb6ac0a172e03a151
-+  __AUTH.__data: 0x6688 sha256:10888db53868820e527f7cace1243bc3b9090ffb3e0dfc316f235339ec040b97
-   __DATA.__objc_ivar: 0x70 sha256:65abbb44f2f7b936611ffdc3b9143ff8c01705e3476443a7bdc32f0eb7832f10
--  __DATA.__data: 0x8278 sha256:cbeea5b4154c54d8ecda9e026b1a70ee17e66c69d660ebb70fe120078707dca7
--  __DATA.__objc_stublist: 0x8 sha256:1136dbfb480a7e862a6f9ed0abedd9ec48cc1b2cf0bc62087044a0104b0e5cf5
--  __DATA.__bss: 0x108a8 sha256:89e9dd22040096b0db1305253d6a0267d8507fa3a92dd80c6edaf075ce17334d
--  __DATA.__common: 0x518 sha256:5cad8b3db8fbb29e0cabbd785e1e3449ebcd5b04544cde14c93812a93860cc47
--  __DATA_DIRTY.__objc_data: 0x128 sha256:4a6ca5baa856f578f0d43f27a231780d382553065f18850e22d049b53a563994
--  __DATA_DIRTY.__data: 0x28 sha256:36476d21fb33c8fdb89b2e93f4cf2381385119d6a73a16f6100d81a47d913f7d
-+  __DATA.__data: 0x8c80 sha256:d79257f36dd417b0cd5803a614f9dcd655062889129d733f25accabe1cc7f9c8
-+  __DATA.__objc_stublist: 0x8 sha256:40f4d02abcb644615461d29ba7bb75a9a1eb619f457dc9f0e5a2b35c2ee06c95
-+  __DATA.__bss: 0x11b48 sha256:c06c7cbf37d8afca3f9066375a492019f76ecb0d4586129e4cbffdbc3895831b
-+  __DATA.__common: 0x560 sha256:49a28074f77667d03ee25c87c88bbe7ccba834fb8b9c0b09db7b70035c8a703e
-+  __DATA_DIRTY.__objc_data: 0x128 sha256:691cd0210efdfee54db71fae80fa6dbf9de5378b4053514892e613822e501fae
-+  __DATA_DIRTY.__data: 0x28 sha256:e9a1a4f1f88ba66ef7fcd0b3afc6926b2f12c1a3d1fdcb95ee9d162952f3696e
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AVKit.framework/AVKit
+
 +  - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/Contacts.framework/Contacts
 
-   - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
-   - /System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog
-   - /System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit
 -  - /System/Library/PrivateFrameworks/PreferencesExtended.framework/PreferencesExtended
-   - /System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer
-   - /System/Library/PrivateFrameworks/PrototypeTools.framework/PrototypeTools
-   - /System/Library/PrivateFrameworks/ProxCardKit.framework/ProxCardKit
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: 20830DA9-026F-3BFF-B74C-96204EB55AC4
 -  Functions: 17552
--  Symbols:   51055
--  CStrings:  1675
-+  UUID: 3BB2881C-DB64-317B-9DA6-5132A75E4A6F
+-  Symbols:   37291
+-  CStrings:  1451
 +  Functions: 18073
-+  Symbols:   53769
-+  CStrings:  1730
- 
++  Symbols:   39276
++  CStrings:  1506
 Symbols:
 + _$s10Foundation12CharacterSetV22whitespacesAndNewlinesACvgZ
 + _$s10Foundation23LocalizedStringResourceV9SiriSetupE18LocalizableLinwoodO30expressiveVoiceComingSoonLabelACvgZ
@@ -863,7 +793,6 @@ Symbols:
 + _$s7SwiftUI5StateVySay9SiriSetup27RestrictAccessAppPickerViewV7Section33_67102BE38CDDE06F33628242513EBB2FLLVGGMd
 + _$s7SwiftUI5StateVySay9SiriSetup27RestrictAccessAppPickerViewV7Section33_67102BE38CDDE06F33628242513EBB2FLLVGGSgWOeTm
 + _$s7SwiftUI5StateVySay9SiriSetup27RestrictAccessAppPickerViewV7Section33_67102BE38CDDE06F33628242513EBB2FLLVGGSgWOyTm
-+ _$s7SwiftUI6ButtonVA2A4TextVRszrlE_6actionACyAEG10Foundation23LocalizedStringResourceV_yyctcfcAEyXEfU_TA.112
 + _$s7SwiftUI6ButtonVyAA15ModifiedContentVyAEyAA5ImageVAA24_ForegroundStyleModifierVyAA5ColorVGGAA022_EnvironmentKeyWritingI0VyAA4FontVSgGGGACyxGAA4ViewAAWL
 + _$s7SwiftUI6ButtonVyAA15ModifiedContentVyAEyAA5ImageVAA24_ForegroundStyleModifierVyAA5ColorVGGAA022_EnvironmentKeyWritingI0VyAA4FontVSgGGGMR
 + _$s7SwiftUI6ButtonVyAA15ModifiedContentVyAEyAA5ImageVAA24_ForegroundStyleModifierVyAA5ColorVGGAA022_EnvironmentKeyWritingI0VyAA4FontVSgGGGMd
@@ -893,7 +822,6 @@ Symbols:
 + _$s7SwiftUI6PickerVyAA4TextVSSAA7ForEachVySaySSGSSAA4ViewPAAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAE_SSQo_GGMR
 + _$s7SwiftUI6PickerVyAA4TextVSSAA7ForEachVySaySSGSSAA4ViewPAAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAE_SSQo_GGMd
 + _$s7SwiftUI6PickerVyAA4TextVSbAA12TupleContentVyAA4ViewPAAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAE_SbQo__ALQPGGACyxq_q0_GAahAWlTm
-+ _$s7SwiftUI6ToggleVA2A4TextVRszrlE_4isOnACyAEG10Foundation23LocalizedStringResourceV_AA7BindingVySbGtcfcAEyXEfU_TA.30
 + _$s7SwiftUI6ToggleVyAA4TextVGACyxGAA4ViewAAWlTm
 + _$s7SwiftUI6VStackVyAA12TupleContentVy9SiriSetup11OrbGlowViewV_ACyAEyAA08ModifiedE0VyAA6HStackVyAEyAA4TextV_AA6SpacerVAJyAJyAA4MenuVyAJyALyAEyAN_AJyAJyAJyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA016_ForegroundStyleT0VyAA5ColorVGGAVyAA19SymbolRenderingModeVSgGGQPGGA4_GAA7ForEachVySayAF19VoiceSelectionStoreC11DialectInfoVGSSAA6ButtonVyANGGGA4_GAA01_qr9TransformT0VySbGGQPGGAA12_FrameLayoutVG_AJyAJyALyA15_ySaySi6offset_So11AFVoiceInfoC7elementtGSSSgAF05VoiceX6ButtonVGGA34_GAA010_AnimationT0VyA41_GGQPGGAJyAJyACyAEyACyAEyALyAEyAN_ApF28DisabledSliderTrackInfoLabelVSgQPGG_AA012_ConditionalE0VyAJyAA6SliderVyAA05EmptyJ0VA63_GAVyAA08AnyShapeW0VSgGGAF19DisabledSliderTrackVGQPGG_A74_QPGGA34_GAA14_PaddingLayoutVGAJyACyAEyAN_AJyAnA16_FixedSizeLayoutVGQPGGA34_GQPGGMR
 + _$s7SwiftUI6VStackVyAA12TupleContentVy9SiriSetup11OrbGlowViewV_ACyAEyAA08ModifiedE0VyAA6HStackVyAEyAA4TextV_AA6SpacerVAJyAJyAA4MenuVyAJyALyAEyAN_AJyAJyAJyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA016_ForegroundStyleT0VyAA5ColorVGGAVyAA19SymbolRenderingModeVSgGGQPGGA4_GAA7ForEachVySayAF19VoiceSelectionStoreC11DialectInfoVGSSAA6ButtonVyANGGGA4_GAA01_qr9TransformT0VySbGGQPGGAA12_FrameLayoutVG_AJyAJyALyA15_ySaySi6offset_So11AFVoiceInfoC7elementtGSSSgAF05VoiceX6ButtonVGGA34_GAA010_AnimationT0VyA41_GGQPGGAJyAJyACyAEyACyAEyALyAEyAN_ApF28DisabledSliderTrackInfoLabelVSgQPGG_AA012_ConditionalE0VyAJyAA6SliderVyAA05EmptyJ0VA63_GAVyAA08AnyShapeW0VSgGGAF19DisabledSliderTrackVGQPGG_A74_QPGGA34_GAA14_PaddingLayoutVGAJyACyAEyAN_AJyAnA16_FixedSizeLayoutVGQPGGA34_GQPGGMd
@@ -1400,8 +1328,6 @@ Symbols:
 + _$s9SiriSetup0aB5StageV11coordinatorA2C11CoordinatorC_tcfCTm
 + _$s9SiriSetup0aB5StageV11coordinatorA2C11CoordinatorC_tcfcAFycfu_
 + _$s9SiriSetup0aB5StageV11coordinatorA2C11CoordinatorC_tcfcAFycfu_TA
-+ _$s9SiriSetup0aB5StageV11coordinatorA2C11CoordinatorC_tcfcAFycfu_TA.2
-+ _$s9SiriSetup0aB5StageV11coordinatorA2C11CoordinatorC_tcfcAFycfu_TA.48
 + _$s9SiriSetup0aB5StageV4bodyQrvg7SwiftUI4ViewPAEE7toolbar7contentQrqd__yXE_tAE14ToolbarContentRd__lFQOyAgEE21navigationDestination3for11destinationQrqd__m_qd_0_qd__ctSHRd__AeFRd_0_r0_lFQOyAE03AnyG0V_AA8PageTypeOAOQo__AE0J4ItemVyytAE6ButtonVyAE07DefaultT5LabelVGGSgQo_yXEfU_A_yXEfU0_AYyXEfU_yyScMYccfU_
 + _$s9SiriSetup0aB5StageV7optionsA2C7OptionsC_tcfcAC11CoordinatorCycfu_
 + _$s9SiriSetup0aB5StageV7optionsA2C7OptionsC_tcfcAC11CoordinatorCycfu_TA
@@ -1429,7 +1355,6 @@ Symbols:
 + _$s9SiriSetup10DataSource_pMd
 + _$s9SiriSetup11OrbGlowViewV_7SwiftUI6VStackVyAD12TupleContentVyAD08ModifiedJ0VyAD6HStackVyAHyAD4TextV_AD6SpacerVAJyAJyAD4MenuVyAJyALyAHyAN_AJyAJyAJyAD5ImageVAD30_EnvironmentKeyWritingModifierVyAD4FontVSgGGAD016_ForegroundStyleT0VyAD5ColorVGGAVyAD19SymbolRenderingModeVSgGGQPGGA4_GAD7ForEachVySayAA19VoiceSelectionStoreC11DialectInfoVGSSAD6ButtonVyANGGGA4_GAD01_qr9TransformT0VySbGGQPGGAD12_FrameLayoutVG_AJyAJyALyA15_ySaySi6offset_So11AFVoiceInfoC7elementtGSSSgAA05VoiceX6ButtonVGGA34_GAD010_AnimationT0VyA41_GGQPGGAJyAJyAFyAHyAFyAHyALyAHyAN_ApA28DisabledSliderTrackInfoLabelVSgQPGG_AD012_ConditionalJ0VyAJyAD6SliderVyAD05EmptyE0VA63_GAVyAD08AnyShapeW0VSgGGAA19DisabledSliderTrackVGQPGG_A74_QPGGA34_GAD14_PaddingLayoutVGAJyAFyAHyAN_AJyAnD16_FixedSizeLayoutVGQPGGA34_GtMR
 + _$s9SiriSetup11OrbGlowViewV_7SwiftUI6VStackVyAD12TupleContentVyAD08ModifiedJ0VyAD6HStackVyAHyAD4TextV_AD6SpacerVAJyAJyAD4MenuVyAJyALyAHyAN_AJyAJyAJyAD5ImageVAD30_EnvironmentKeyWritingModifierVyAD4FontVSgGGAD016_ForegroundStyleT0VyAD5ColorVGGAVyAD19SymbolRenderingModeVSgGGQPGGA4_GAD7ForEachVySayAA19VoiceSelectionStoreC11DialectInfoVGSSAD6ButtonVyANGGGA4_GAD01_qr9TransformT0VySbGGQPGGAD12_FrameLayoutVG_AJyAJyALyA15_ySaySi6offset_So11AFVoiceInfoC7elementtGSSSgAA05VoiceX6ButtonVGGA34_GAD010_AnimationT0VyA41_GGQPGGAJyAJyAFyAHyAFyAHyALyAHyAN_ApA28DisabledSliderTrackInfoLabelVSgQPGG_AD012_ConditionalJ0VyAJyAD6SliderVyAD05EmptyE0VA63_GAVyAD08AnyShapeW0VSgGGAA19DisabledSliderTrackVGQPGG_A74_QPGGA34_GAD14_PaddingLayoutVGAJyAFyAHyAN_AJyAnD16_FixedSizeLayoutVGQPGGA34_GtMd
-+ _$s9SiriSetup12CarouselView33_84D13E1A91AF36ADDF3267D968F26E51LLV19carouselPageButtonsQrvgyycADcfu_yycfu0_TA.77
 + _$s9SiriSetup12VoiceCatalogO12languageBaseyS2SFZ
 + _$s9SiriSetup12VoiceCatalogO30expressiveVoicesAcrossDialects15forLanguageCode6readerSaySo11AFVoiceInfoCGSS_AA09AssistantC10MapReading_ptFZ
 + _$s9SiriSetup12VoiceCatalogO30expressiveVoicesAcrossDialects15forLanguageCode6readerSaySo11AFVoiceInfoCGSS_AA09AssistantC10MapReading_ptFZTf4nen_n
@@ -1476,7 +1401,7 @@ Symbols:
 + _$s9SiriSetup14StringsContextC23localizedTrainingPhraseyS2SFTj
 + _$s9SiriSetup14StringsContextC23localizedTrainingPhraseyS2SFTq
 + _$s9SiriSetup15LocalDataSourceC03allA15LanguageOptionsSaySSGvM
-+ _$s9SiriSetup15LocalDataSourceC03allA15LanguageOptionsSaySSGvM.resume.0
++ _$s9SiriSetup15LocalDataSourceC03allA15LanguageOptionsSaySSGvM.resume
 + _$s9SiriSetup15LocalDataSourceC03allA15LanguageOptionsSaySSGvMTj
 + _$s9SiriSetup15LocalDataSourceC03allA15LanguageOptionsSaySSGvMTq
 + _$s9SiriSetup15LocalDataSourceC03allA15LanguageOptionsSaySSGvg
@@ -1490,7 +1415,7 @@ Symbols:
 + _$s9SiriSetup15LocalDataSourceC03allA15LanguageOptionsSaySSGvsTm
 + _$s9SiriSetup15LocalDataSourceC03allA15LanguageOptionsSaySSGvsTq
 + _$s9SiriSetup15LocalDataSourceC11appOpenModeAA0a3AppgH0OvM
-+ _$s9SiriSetup15LocalDataSourceC11appOpenModeAA0a3AppgH0OvM.resume.0
++ _$s9SiriSetup15LocalDataSourceC11appOpenModeAA0a3AppgH0OvM.resume
 + _$s9SiriSetup15LocalDataSourceC11appOpenModeAA0a3AppgH0OvMTj
 + _$s9SiriSetup15LocalDataSourceC11appOpenModeAA0a3AppgH0OvMTq
 + _$s9SiriSetup15LocalDataSourceC11appOpenModeAA0a3AppgH0Ovg
@@ -1534,7 +1459,7 @@ Symbols:
 + _$s9SiriSetup15LocalDataSourceC12languageCode021bestSupportedLanguageG014enrollmentMode04siriJ7Options20canSkipVoiceTraining9viewStyle13isSATEnrolled0u9FirstTimeB003hasQ14ProfileInCloud0M7Enabled14setupDismissed011recognizeMyQ7Enabled19voiceTriggerEnabled29voiceTriggerRepromptCompleted07compactQ16TriggerAvailable07compactQ26TriggerDisclosurePresented0M13InCallEnabled0mD13SharingStatus0mQ00M6Volume08requiresQ9Selection08requiresJ9Selection019showMultitriggerForB024appleIntelligenceEnabled23shouldShowSummarization25shouldShowImageGeneration34visualIntelligenceCameraRestricted28areGenerativeModelsAvailable0M12Availability014deviceSupportsQ7Trigger21deviceHasCameraButton27lastShownCoordinatorVersion18assistantPresented09assistantQ16TriggerPresentedACSSSg_SSAA0ab10EnrollmentL0OSaySSGSgSbAA04ViewT0OSgS11bSo06AFSiriD18SharingOptInStatusVSo11AFVoiceInfoCSgSfSgS4bSgS4bSo18AFSiriAvailabilityCSgS2bSDyAA8PageTypeOAA0aB5StageV11CoordinatorC7VersionOGS2btcfcfA9_
 + _$s9SiriSetup15LocalDataSourceC17_siriAvailability33_7BDE236F1EE5FFF7073A1B1A5C2A27AALLSo06AFSiriG0CSgvpWvd
 + _$s9SiriSetup15LocalDataSourceC20siriLocaleHasGoodFitSbvM
-+ _$s9SiriSetup15LocalDataSourceC20siriLocaleHasGoodFitSbvM.resume.0
++ _$s9SiriSetup15LocalDataSourceC20siriLocaleHasGoodFitSbvM.resume
 + _$s9SiriSetup15LocalDataSourceC20siriLocaleHasGoodFitSbvMTj
 + _$s9SiriSetup15LocalDataSourceC20siriLocaleHasGoodFitSbvMTq
 + _$s9SiriSetup15LocalDataSourceC20siriLocaleHasGoodFitSbvg
@@ -1547,7 +1472,7 @@ Symbols:
 + _$s9SiriSetup15LocalDataSourceC20siriLocaleHasGoodFitSbvsTq
 + _$s9SiriSetup15LocalDataSourceCAA0dE0A2aDP03allA15LanguageOptionsSaySSGvgTW
 + _$s9SiriSetup15LocalDataSourceCAA0dE0A2aDP11appOpenModeAA0a3AppgH0OvMTW
-+ _$s9SiriSetup15LocalDataSourceCAA0dE0A2aDP11appOpenModeAA0a3AppgH0OvMTW.resume.0
++ _$s9SiriSetup15LocalDataSourceCAA0dE0A2aDP11appOpenModeAA0a3AppgH0OvMTW.resume
 + _$s9SiriSetup15LocalDataSourceCAA0dE0A2aDP11appOpenModeAA0a3AppgH0OvgTW
 + _$s9SiriSetup15LocalDataSourceCAA0dE0A2aDP11appOpenModeAA0a3AppgH0OvsTW
 + _$s9SiriSetup15LocalDataSourceCAA0dE0A2aDP20siriLocaleHasGoodFitSbvgTW
@@ -1695,7 +1620,6 @@ Symbols:
 + _$s9SiriSetup19DisabledSliderTrackV13unfilledColor_WZ
 + _$s9SiriSetup19DisabledSliderTrackV13unfilledColor_WZTm
 + _$s9SiriSetup19DisabledSliderTrackV13unfilledColor_Wz
-+ _$s9SiriSetup19DisabledSliderTrackV4bodyQrvg7SwiftUI4ViewPAEE5frame8minWidth05idealL003maxL00K6Height0mO00nO09alignmentQr12CoreGraphics7CGFloatVSg_A5sE9AlignmentVtFQOyAE6ZStackVyAE12TupleContentVyAgEEAH5width6heightAOQrAS_AsUtFQOyAE06_ShapeI0VyAE7CapsuleVAE5ColorVG_Qo__A7_AgEE6offset1x1yQrAR_ARtFQOyA7__Qo_QPGG_Qo_AE13GeometryProxyVcfU_TA.9
 + _$s9SiriSetup19LinwoodUpgradeIntroV011shouldOfferC5OptInSbvg
 + _$s9SiriSetup19LinwoodUpgradeIntroV011shouldOfferC5OptInSbvpMV
 + _$s9SiriSetup19LinwoodUpgradeIntroV012$shouldOfferC5OptInAA5InputVySbGvg
@@ -1789,15 +1713,6 @@ Symbols:
 + _$s9SiriSetup20VoiceTrainingServiceC12prepareRetry33_61BA71C4F39164E7292EE64053877F44LLSbyYaFTY2_
 + _$s9SiriSetup20VoiceTrainingServiceC12prepareRetry33_61BA71C4F39164E7292EE64053877F44LLSbyYaFTu
 + _$s9SiriSetup20VoiceTrainingServiceC12prepareRetry33_61BA71C4F39164E7292EE64053877F44LLSbyYaFTv_r
-+ _$s9SiriSetup20VoiceTrainingServiceC14AVVCRetryCount33_61BA71C4F39164E7292EE64053877F44LLSivsyyXEfU_TA.273
-+ _$s9SiriSetup20VoiceTrainingServiceC14AVVCRetryCount33_61BA71C4F39164E7292EE64053877F44LLSivsyyXEfU_TA.348
-+ _$s9SiriSetup20VoiceTrainingServiceC14enrollmentMode33_61BA71C4F39164E7292EE64053877F44LLAA0ab10EnrollmentG0OSgvsyyXEfU_TA.333
-+ _$s9SiriSetup20VoiceTrainingServiceC16badMicRetryCount33_61BA71C4F39164E7292EE64053877F44LLSivsyyXEfU_TA.272
-+ _$s9SiriSetup20VoiceTrainingServiceC16badMicRetryCount33_61BA71C4F39164E7292EE64053877F44LLSivsyyXEfU_TA.347
-+ _$s9SiriSetup20VoiceTrainingServiceC16myriadAdvertiser33_61BA71C4F39164E7292EE64053877F44LLAA06MyriadG0CSgvsyyXEfU_TA.336
-+ _$s9SiriSetup20VoiceTrainingServiceC17audioGuideEnabled33_61BA71C4F39164E7292EE64053877F44LLSbvsyyXEfU_TA.334
-+ _$s9SiriSetup20VoiceTrainingServiceC18lastPlayedTryAgain33_61BA71C4F39164E7292EE64053877F44LLAA0D5StateOvsyyXEfU_TA.268
-+ _$s9SiriSetup20VoiceTrainingServiceC18lastPlayedTryAgain33_61BA71C4F39164E7292EE64053877F44LLAA0D5StateOvsyyXEfU_TA.335
 + _$s9SiriSetup20VoiceTrainingServiceC18listenForUtterance33_61BA71C4F39164E7292EE64053877F44LLSo31SRSTrainingManagerSessionStatusV6status_Sb7successtyYaF
 + _$s9SiriSetup20VoiceTrainingServiceC18listenForUtterance33_61BA71C4F39164E7292EE64053877F44LLSo31SRSTrainingManagerSessionStatusV6status_Sb7successtyYaFTQ1_
 + _$s9SiriSetup20VoiceTrainingServiceC18listenForUtterance33_61BA71C4F39164E7292EE64053877F44LLSo31SRSTrainingManagerSessionStatusV6status_Sb7successtyYaFTY0_
@@ -1823,8 +1738,6 @@ Symbols:
 + _$s9SiriSetup20VoiceTrainingServiceC19showTooNoisyOverlay33_61BA71C4F39164E7292EE64053877F44LLyyYaFTY5_
 + _$s9SiriSetup20VoiceTrainingServiceC19showTooNoisyOverlay33_61BA71C4F39164E7292EE64053877F44LLyyYaFTY6_
 + _$s9SiriSetup20VoiceTrainingServiceC19showTooNoisyOverlay33_61BA71C4F39164E7292EE64053877F44LLyyYaFTu
-+ _$s9SiriSetup20VoiceTrainingServiceC19voiceProfileManager33_61BA71C4F39164E7292EE64053877F44LLSo08SRSVoicegH0CSgvsyyXEfU_TA.330
-+ _$s9SiriSetup20VoiceTrainingServiceC19voiceTriggerEnabled33_61BA71C4F39164E7292EE64053877F44LLAA6OutputVySbGSgvsyyXEfU_TA.332
 + _$s9SiriSetup20VoiceTrainingServiceC20prepareNextUtterance33_61BA71C4F39164E7292EE64053877F44LLSbyYaF
 + _$s9SiriSetup20VoiceTrainingServiceC20prepareNextUtterance33_61BA71C4F39164E7292EE64053877F44LLSbyYaFTQ1_
 + _$s9SiriSetup20VoiceTrainingServiceC20prepareNextUtterance33_61BA71C4F39164E7292EE64053877F44LLSbyYaFTQ2_
@@ -1837,11 +1750,6 @@ Symbols:
 + _$s9SiriSetup20VoiceTrainingServiceC20prepareNextUtterance33_61BA71C4F39164E7292EE64053877F44LLSbyYaFTY7_
 + _$s9SiriSetup20VoiceTrainingServiceC20prepareNextUtterance33_61BA71C4F39164E7292EE64053877F44LLSbyYaFTY9_
 + _$s9SiriSetup20VoiceTrainingServiceC20prepareNextUtterance33_61BA71C4F39164E7292EE64053877F44LLSbyYaFTu
-+ _$s9SiriSetup20VoiceTrainingServiceC22currentAudioHintPlayed33_61BA71C4F39164E7292EE64053877F44LLSbSgvsyyXEfU_TA.282
-+ _$s9SiriSetup20VoiceTrainingServiceC23analyticsEnrollmentMode33_61BA71C4F39164E7292EE64053877F44LLSo40SIRISETUPSchemaSIRISETUPEnrollmentUIModeVSgvsyyXEfU_TA.331
-+ _$s9SiriSetup20VoiceTrainingServiceC23isRetryingCurrentPhrase33_61BA71C4F39164E7292EE64053877F44LLSbvsyyXEfU_TA.271
-+ _$s9SiriSetup20VoiceTrainingServiceC23isRetryingCurrentPhrase33_61BA71C4F39164E7292EE64053877F44LLSbvsyyXEfU_TA.281
-+ _$s9SiriSetup20VoiceTrainingServiceC26enrollmentMarkedSuccessful33_61BA71C4F39164E7292EE64053877F44LLSbvsyyXEfU_TA.329
 + _$s9SiriSetup20ZeroPhraseBoundariesV11phraseStart10containingS2d_tF
 + _$s9SiriSetup20ZeroPhraseBoundariesVAA0D16BoundaryProviderA2aDP11phraseStart10containingS2d_tFTW
 + _$s9SiriSetup20ZeroPhraseBoundariesVAA0D16BoundaryProviderAAMc
@@ -1928,7 +1836,7 @@ Symbols:
 + _$s9SiriSetup23ConversationPickerStyleV4body7contentQr7SwiftUI21_ViewModifier_ContentVyACG_tFAF0J0PAFE12labelsHiddenQryFQOyAkFE06pickerE0yQrqd__AF0dE0Rd__lFQOyAI_AF06InlinedE0VQo__Qo_yXEfU_TA
 + _$s9SiriSetup23ConversationPickerStyleV4body7contentQr7SwiftUI21_ViewModifier_ContentVyACG_tFQOMQ
 + _$s9SiriSetup23ConversationPickerStyleV5styleAA017KeepConversationsD0V0E0OvM
-+ _$s9SiriSetup23ConversationPickerStyleV5styleAA017KeepConversationsD0V0E0OvM.resume.0
++ _$s9SiriSetup23ConversationPickerStyleV5styleAA017KeepConversationsD0V0E0OvM.resume
 + _$s9SiriSetup23ConversationPickerStyleV5styleAA017KeepConversationsD0V0E0Ovg
 + _$s9SiriSetup23ConversationPickerStyleV5styleAA017KeepConversationsD0V0E0OvpMV
 + _$s9SiriSetup23ConversationPickerStyleV5styleAA017KeepConversationsD0V0E0Ovs
@@ -2120,7 +2028,6 @@ Symbols:
 + _$s9SiriSetup25AssistantSettingsMainViewV14siriAppSection33_A51A35E5EF6057669F62C97ED0BE8624LLQrvg7SwiftUI12TupleContentVyAF14NavigationLinkVyAF07LabeledU0VyAF4TextVANGs5NeverOG_ARQPGyXEfU_AOyXEfU_ANyXEfU_TA
 + _$s9SiriSetup25AssistantSettingsMainViewV14siriAppSection33_A51A35E5EF6057669F62C97ED0BE8624LLQrvg7SwiftUI12TupleContentVyAF14NavigationLinkVyAF07LabeledU0VyAF4TextVANGs5NeverOG_ARQPGyXEfU_AOyXEfU_TA
 + _$s9SiriSetup25AssistantSettingsMainViewV14siriAppSection33_A51A35E5EF6057669F62C97ED0BE8624LLQrvg7SwiftUI12TupleContentVyAF14NavigationLinkVyAF07LabeledU0VyAF4TextVANGs5NeverOG_ARQPGyXEfU_TA
-+ _$s9SiriSetup25AssistantSettingsMainViewV16enablementButton33_A51A35E5EF6057669F62C97ED0BE8624LL5title6actionQrSS_yyctF7SwiftUI0F0PAHE12contentShape_6eoFillQrqd___SbtAH0V0Rd__lFQOyAH6HStackVyAH12TupleContentVyAH4TextV_AH6SpacerVQPGG_AH9RectangleVQo_yXEfU_TA.146
 + _$s9SiriSetup25AssistantSettingsMainViewV17placardFooterText33_A51A35E5EF6057669F62C97ED0BE8624LL10Foundation16AttributedStringVSgvg
 + _$s9SiriSetup25AssistantSettingsMainViewV26languageMismatchFooterText33_A51A35E5EF6057669F62C97ED0BE8624LL14deviceLanguage04siriT010Foundation16AttributedStringVSS_SStF
 + _$s9SiriSetup25AssistantSettingsMainViewV33shouldShowExpressiveVoicesSection33_A51A35E5EF6057669F62C97ED0BE8624LLSbvg
@@ -2403,7 +2310,7 @@ Symbols:
 + _$s9SiriSetup30MainAssistantSettingsViewModelC08handleOnE17ExperienceOpenURLy0E00ejK9URLActionV6ResultVAG5InputVYaFTY4_
 + _$s9SiriSetup30MainAssistantSettingsViewModelC08handleOnE17ExperienceOpenURLy0E00ejK9URLActionV6ResultVAG5InputVYaFTY5_
 + _$s9SiriSetup30MainAssistantSettingsViewModelC09appAccessE9ProvidingAA03AppieJ0_pSgvM
-+ _$s9SiriSetup30MainAssistantSettingsViewModelC09appAccessE9ProvidingAA03AppieJ0_pSgvM.resume.0
++ _$s9SiriSetup30MainAssistantSettingsViewModelC09appAccessE9ProvidingAA03AppieJ0_pSgvM.resume
 + _$s9SiriSetup30MainAssistantSettingsViewModelC09appAccessE9ProvidingAA03AppieJ0_pSgvMTj
 + _$s9SiriSetup30MainAssistantSettingsViewModelC09appAccessE9ProvidingAA03AppieJ0_pSgvMTq
 + _$s9SiriSetup30MainAssistantSettingsViewModelC09appAccessE9ProvidingAA03AppieJ0_pSgvg
@@ -2434,7 +2341,7 @@ Symbols:
 + _$s9SiriSetup30MainAssistantSettingsViewModelC23restrictAccessProviding13afPreferencesAcA08RestrictiJ0_p_So13AFPreferencesCSgtcfc
 + _$s9SiriSetup30MainAssistantSettingsViewModelC23restrictAccessProviding13afPreferencesAcA08RestrictiJ0_p_So13AFPreferencesCSgtcfcTf4ngn_n
 + _$s9SiriSetup30MainAssistantSettingsViewModelC23restrictAccessProvidingAA08RestrictiJ0_pSgvM
-+ _$s9SiriSetup30MainAssistantSettingsViewModelC23restrictAccessProvidingAA08RestrictiJ0_pSgvM.resume.0
++ _$s9SiriSetup30MainAssistantSettingsViewModelC23restrictAccessProvidingAA08RestrictiJ0_pSgvM.resume
 + _$s9SiriSetup30MainAssistantSettingsViewModelC23restrictAccessProvidingAA08RestrictiJ0_pSgvMTj
 + _$s9SiriSetup30MainAssistantSettingsViewModelC23restrictAccessProvidingAA08RestrictiJ0_pSgvMTq
 + _$s9SiriSetup30MainAssistantSettingsViewModelC23restrictAccessProvidingAA08RestrictiJ0_pSgvg
@@ -2463,7 +2370,6 @@ Symbols:
 + _$s9SiriSetup30MainAssistantSettingsViewModelC28keepConversationsDisplayTextSSvgTj
 + _$s9SiriSetup30MainAssistantSettingsViewModelC28keepConversationsDisplayTextSSvgTq
 + _$s9SiriSetup30MainAssistantSettingsViewModelC28keepConversationsDisplayTextSSvpMV
-+ _$s9SiriSetup30MainAssistantSettingsViewModelCfdyyScMYcXEfU_TA.89
 + _$s9SiriSetup30VisualIntelligenceSettingsViewV03$s9a7Setup30cdeF107V31isHighlightToImageSearchEnabled33_B945AD63120B5A63CD475D05BBD85292LL5StatefMp_20_initialStoredValue_fMu_01_opqrstU0LL7SwiftUI9LazyStateVySbGvgZSbycfU_
 + _$s9SiriSetup30VisualIntelligenceSettingsViewV18deepLinkIdentifierSSvg
 + _$s9SiriSetup30VisualIntelligenceSettingsViewV18deepLinkIdentifierSSvpMV
@@ -2517,8 +2423,6 @@ Symbols:
 + _$s9SiriSetup33CompactVoiceTriggerDisclosurePageVAA0G4TypeO0G4ViewAaeFP18hidesNavigationBarSbvgTW
 + _$s9SiriSetup34AssistantLanguageValueListItemViewVWOb
 + _$s9SiriSetup34AssistantLanguageValueListItemViewVWOc
-+ _$s9SiriSetup34SettingsExternalAISectionViewModelC20shouldShowEntryPointSbvsyyXEfU_TA.33
-+ _$s9SiriSetup34SettingsExternalAISectionViewModelC23shouldDisableEntryPointSbvsyyXEfU_TA.32
 + _$s9SiriSetup5InputV_13pageConditionACyxGs7KeyPathCyAA10DataSource_pxG_SbxctcfcfA0_SbxcfU_SaySSG_TG5
 + _$s9SiriSetup6OutputV010initializeC7Storage4from8pageType5labelyAA0c7SessionE0C_AA04PageH0OSStF
 + _$s9SiriSetup6OutputV10StorageRef33_8F1FDDF2BAF251193015C7D159409174LLC7storageAA018DataSourcePropertyD0Cyxs24ReferenceWritableKeyPathCyAA0lM0_pxGGvpWvd
@@ -2559,8 +2463,7 @@ Symbols:
 + _$s9SiriSetup8DefaultsC03allA15LanguageOptionsSaySSGvpMV
 + _$s9SiriSetup8DefaultsC07siriAppC033_0DBB1D26A5D4DD173E26FB512EEDC829LLSo06NSUserC0CSgvpWvd
 + _$s9SiriSetup8DefaultsC11appOpenModeAA0a3AppeF0OvM
-+ _$s9SiriSetup8DefaultsC11appOpenModeAA0a3AppeF0OvM.resume.0
-+ _$s9SiriSetup8DefaultsC11appOpenModeAA0a3AppeF0OvM.resume.1
++ _$s9SiriSetup8DefaultsC11appOpenModeAA0a3AppeF0OvM.resume
 + _$s9SiriSetup8DefaultsC11appOpenModeAA0a3AppeF0OvMTj
 + _$s9SiriSetup8DefaultsC11appOpenModeAA0a3AppeF0OvMTq
 + _$s9SiriSetup8DefaultsC11appOpenModeAA0a3AppeF0Ovg
@@ -2599,7 +2502,7 @@ Symbols:
 + _$s9SiriSetup8DefaultsC44languageDialectsHaveAvailableExpressiveVoice6readerSbAA09AssistantI10MapReading_p_tFfA_
 + _$s9SiriSetup8DefaultsCAA10DataSourceA2aDP03allA15LanguageOptionsSaySSGvgTW
 + _$s9SiriSetup8DefaultsCAA10DataSourceA2aDP11appOpenModeAA0a3AppgH0OvMTW
-+ _$s9SiriSetup8DefaultsCAA10DataSourceA2aDP11appOpenModeAA0a3AppgH0OvMTW.resume.0
++ _$s9SiriSetup8DefaultsCAA10DataSourceA2aDP11appOpenModeAA0a3AppgH0OvMTW.resume
 + _$s9SiriSetup8DefaultsCAA10DataSourceA2aDP11appOpenModeAA0a3AppgH0OvgTW
 + _$s9SiriSetup8DefaultsCAA10DataSourceA2aDP11appOpenModeAA0a3AppgH0OvsTW
 + _$s9SiriSetup8DefaultsCAA10DataSourceA2aDP20siriLocaleHasGoodFitSbvgTW
@@ -2746,37 +2649,26 @@ Symbols:
 + _$ss23_ContiguousArrayStorageCySaySo11AFVoiceInfoCGGMd
 + _$ss6_merge3low3mid4high6buffer2bySbSpyxG_A3GSbx_xtKXEtKlF9SiriSetup19VoiceSelectionStoreC11DialectInfoV_Tg503$s9g7Setup19ijk70C21loadForExpressiveSeed33_19E6FA3AD39B2A5B1B3EBB3077FD021ALLyyFSbAC11lM11V_AGtXEfU1_Tf1nnnnc_nTm
 + _$ss6_merge3low3mid4high6buffer2bySbSpyxG_A3GSbx_xtKXEtKlFSS_Tg5152$s9SiriSetup27RestrictAccessAppPickerViewV19groupAlphabetically33_67102BE38CDDE06F33628242513EBB2FLLySayAC7SectionAELLVGSayAA0cdE4InfoVGFZSbSS_SStXEfU0_Tf1nnnnc_n
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.157
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.157TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.157Tu
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.239
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.239TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.239Tu
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.30
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.30TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.30Tu
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.312
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.312TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.312Tu
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.327
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.327TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.327Tu
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.50
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.50TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.50Tu
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.57
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.57TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.57Tu
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.67
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.67TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.67Tu
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.74
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.74TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.74Tu
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.85
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.85TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.85Tu
-+ _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.97
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.97TQ0_
 + _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.97Tu
 + _AFPreferencesSupportedLanguages
@@ -2796,55 +2688,16 @@ Symbols:
 + __METACLASS_DATA__TtC9SiriSetupP33_7BDE236F1EE5FFF7073A1B1A5C2A27AA20StubSiriAvailability
 + __METACLASS_DATA__TtC9SiriSetupP33_93A418D5E016C598A69B1B830E5288FB19ResourceBundleClass
 + __PROPERTIES__TtC9SiriSetupP33_7BDE236F1EE5FFF7073A1B1A5C2A27AA20StubSiriAvailability
-+ ___swift__destructor.35
-+ ___swift_closure_destructor.118
-+ ___swift_closure_destructor.138
 + ___swift_closure_destructor.144Tm
-+ ___swift_closure_destructor.148
-+ ___swift_closure_destructor.151
-+ ___swift_closure_destructor.155
-+ ___swift_closure_destructor.160
-+ ___swift_closure_destructor.163
-+ ___swift_closure_destructor.183
-+ ___swift_closure_destructor.192
 + ___swift_closure_destructor.22Tm
-+ ___swift_closure_destructor.233
-+ ___swift_closure_destructor.237
-+ ___swift_closure_destructor.258
 + ___swift_closure_destructor.27Tm
 + ___swift_closure_destructor.28Tm
-+ ___swift_closure_destructor.296
-+ ___swift_closure_destructor.300
 + ___swift_closure_destructor.300Tm
-+ ___swift_closure_destructor.306
 + ___swift_closure_destructor.306Tm
-+ ___swift_closure_destructor.310
-+ ___swift_closure_destructor.315
-+ ___swift_closure_destructor.321
-+ ___swift_closure_destructor.325
-+ ___swift_closure_destructor.350
-+ ___swift_closure_destructor.357
-+ ___swift_closure_destructor.364
-+ ___swift_closure_destructor.367
-+ ___swift_closure_destructor.371
-+ ___swift_closure_destructor.374
 + ___swift_closure_destructor.38Tm
 + ___swift_closure_destructor.48Tm
 + ___swift_closure_destructor.4Tm
-+ ___swift_closure_destructor.83
-+ ___swift_closure_destructor.88
 + ___swift_closure_destructor.93Tm
-+ ___swift_exist.box.addr_destructor.103
-+ ___swift_exist.box.addr_destructor.112
-+ ___swift_exist.box.addr_destructor.125
-+ ___swift_exist.box.addr_destructor.128
-+ ___swift_exist.box.addr_destructor.138
-+ ___swift_exist.box.addr_destructor.146
-+ ___swift_exist.box.addr_destructor.164
-+ ___swift_exist.box.addr_destructor.167
-+ ___swift_exist.box.addr_destructor.173
-+ ___swift_exist.box.addr_destructor.39
-+ ___swift_exist.box.addr_destructor.83
 + ___swift_memcpy33_8
 + ___unnamed_10
 + ___unnamed_16
@@ -2872,88 +2725,28 @@ Symbols:
 + _associated conformance 9SiriSetup30AppKeepConversationsTTLOptionsOSLAASQ
 + _associated conformance 9SiriSetup30VisualIntelligenceSettingsViewV7SwiftUI0F0AA4BodyAdEP_AdE
 + _associated conformance So23AFSiriOrchestrationModeVs12CaseIterable9SiriSetup8AllCasessACP_Sl
-+ _block_copy_helper.185
-+ _block_copy_helper.188
-+ _block_copy_helper.194
-+ _block_copy_helper.260
-+ _block_copy_helper.302
-+ _block_copy_helper.317
-+ _block_copy_helper.352
-+ _block_copy_helper.56
-+ _block_copy_helper.61
-+ _block_copy_helper.67
-+ _block_copy_helper.73
-+ _block_descriptor.187
-+ _block_descriptor.190
-+ _block_descriptor.196
-+ _block_descriptor.262
-+ _block_descriptor.304
-+ _block_descriptor.319
-+ _block_descriptor.354
-+ _block_descriptor.58
-+ _block_descriptor.63
-+ _block_descriptor.69
-+ _block_descriptor.75
-+ _block_destroy_helper.186
-+ _block_destroy_helper.189
-+ _block_destroy_helper.195
-+ _block_destroy_helper.261
-+ _block_destroy_helper.303
-+ _block_destroy_helper.318
-+ _block_destroy_helper.353
-+ _block_destroy_helper.57
-+ _block_destroy_helper.62
-+ _block_destroy_helper.68
-+ _block_destroy_helper.74
 + _get_enum_tag_for_layout_string 9SiriSetup18PlacardFooterStateO
-+ _get_witness_table 7SwiftUI12TupleContentVyAA08ModifiedD0VyAA16SubscriptionViewVySo20NSNotificationCenterC10FoundationE9PublisherVAGyAlA0G0PAAE7gesture_9includingQrqd___AA11GestureMaskVtAA0N0Rd__lFQOyAnAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAEyAA5GroupVyAA012_ConditionalD0VyAZyAEyAEy9SiriSetup019CarouselVideoPlayerG0VAA18_AspectRatioLayoutVGAA12_FrameLayoutVGAEyA1_AA16_FlexFrameLayoutVGGA_0x6DeviceyzG0VGGAA19_BackgroundModifierVyAA14GeometryReaderVyAnAEAtuV_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAEyAA5ColorVAA25_AppearanceActionModifierVG_12CoreGraphics7CGFloatVQo_GGG_SiQo__AA06_EndedN0VyAA08_ChangedN0VyAA04DragN0VGGQo_GGAA30_SafeAreaRegionsIgnoringLayoutVG_AEyAEyAEyAnAEAO_APQrqd___ARtAaSRd__lFQOyAEyAXyAZyAEyAA6VStackVyACyAEyA48_yAEyA_0x15PageDescriptionG0VAA30_EnvironmentKeyWritingModifierVyA_0X14PageTransitionVGGGAA14_OpacityEffectVG_AEyAA6SpacerVA6_GAEyAEyA_0X13PhraseOverlayVAA16_FixedSizeLayoutVGAA14_PaddingLayoutVGSgA63_A_0W11PageButtonsVQPGGA9_GAEyA48_yACyA72__A60_AEyA48_yA_0x13PageIndicatorG0VGA59_GA62_SgA74_QPGGA70_GGGAA16_OverlayModifierVyA19_yAEyAA06_ShapeG0VyAA9RectangleVA21_GAA26_PreferenceWritingModifierVyA_16ContainerSizeKeyVGGGGG_A40_Qo_AA21_TraitWritingModifierVyAA18TransitionTraitKeyVGGAA25_PreferenceActionModifierVyA98_So6CGSizeVSQA25_yHCg0_GGA_0X15ToolbarModifier33_489BB693BFC14EDADD1885B3917AEC81LLVGSgQPGAaMHPA46_AaMHPA43_AaMHPyHC_A45_AA0G8ModifierHPyHCHC_A121_AaMHpA120_AaMHPA116_AaMHPA110_AaMHPqd0__AaMHD3_A104_HO_A109_AAA123_HPyHCHC_A115_AAA123_HPyHCHC_A119_AAA123_HPyHCHC_HCHX_HC.106
-+ _get_witness_table 7SwiftUI15ModifiedContentVyAA14GeometryReaderVyACyAA6ZStackVyAA05TupleD0VyACyAA10_ShapeViewVyAA7CapsuleVAA5ColorVGAA12_FrameLayoutVG_AsCyAsA13_OffsetEffectVGQPGGAA05_FlexmN0VGGARGAA0J0HPA0_AAA2_HPyHC_ArA0J8ModifierHPyHCHC.4
-+ _get_witness_table 7SwiftUI15ModifiedContentVyAA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonG0Rd__lFQOyAA0I0VyAA07LabeledD0VyAA5LabelVyAA4TextV9SiriSetup018SelectionCheckmarkE0VGAOGG_AA014NavigationLinkiG0Vys5NeverOGQo_AA19_BackgroundModifierVyAA0qR0VyAA05EmptyE0VAA012_ConditionalD0VyAE8SettingsE04emitQ34EventOnAppearForApplicationSetting37associatedApplicationBundleIdentifier5title09localizedQ10Components04deepR0QrSS_10Foundation23LocalizedStringResourceVSayA16_GA14_3URLVtFQOyAEA8_E22settingsListAppearanceQryFQOyAeAE15navigationTitleyQrAOFQOyAP023AssistantLanguageDetailE0V_Qo__Qo__Qo_A25_GGGGAaDHPqd0__AaDHD3_A_HO_A29_AA0eU0HPyHCHC.6
-+ _get_witness_table 7SwiftUI15ModifiedContentVyACyAA4ViewPAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyACyACyAA6HStackVyAA05TupleD0VyAA4TextV_AA6SpacerVAeAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAeAE11pickerStyleyQrqd__AA06PickerU0Rd__lFQOyAeAE12labelsHiddenQryFQOyAA0V0VyAOSSAA7ForEachVySaySSGSSAeAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAO_SSQo_GG_Qo__AA04MenuvU0VQo__SSQo_QPGGAA14_PaddingLayoutVGAA16_FlexFrameLayoutVG_Qo_AA0I18AttachmentModifierVGAA25_AppearanceActionModifierVGAaDHPA22_AaDHPqd__AaDHD2_A19_HO_A21_AA0E8ModifierHPyHCHC_A24_AAA26_HPyHCHC.61
-+ _get_witness_table 7SwiftUI15ModifiedContentVyACyAA4ViewPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA5GroupVyAA012_ConditionalD0VyAOyAA6ZStackVyAA05TupleD0VyACyAA06_ShapeE0VyAA9RectangleVAA5ColorVGAA30_SafeAreaRegionsIgnoringLayoutVG_AA6VStackVyAMyAOy9SiriSetup08CarouselE033_84D13E1A91AF36ADDF3267D968F26E51LLVAA08ProgressE0VyAA05EmptyE0VA11_GGGGQPGGAQyA14_GGAQyASyA1__A14_QPGGGG_Qo_AA25_AppearanceActionModifierVGA26_GAaDHPA27_AaDHPqd__AaDHD2_A24_HO_A26_AA0E8ModifierHPyHCHC_A26_AAA29_HPyHCHC.37
-+ _get_witness_table 7SwiftUI15ModifiedContentVyACyACyACyACyAA4TextVAA30_EnvironmentKeyWritingModifierVyAE4CaseOSgGGAA016_ForegroundStyleI0VyAA5ColorVGGAA14_PaddingLayoutVGATGAA011_BackgroundI0VyAA10_ShapeViewVyAA7CapsuleVAPGGGAA0R0HPAvAA4_HPAuAA4_HPArAA4_HPAlAA4_HPAeAA4_HPyHC_AkA0rI0HPyHCHC_AqAA5_HPyHCHC_AtAA5_HPyHCHC_AtAA5_HPyHCHC_A2_AAA5_HPyHCHC.5
-+ _get_witness_table 7SwiftUI15NavigationStackVySay9SiriSetup8PageTypeOGAA4ViewPAAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAiAE21navigationDestination3for11destinationQrqd__m_qd_0_qd__ctSHRd__AaHRd_0_r0_lFQOyAA03AnyI0V_AfQQo__AA0L4ItemVyytAA6ButtonVyAA07DefaultT5LabelVGGSgQo_GAaHHPyHC.81
-+ _get_witness_table 7SwiftUI19_ConditionalContentVy9SiriSetup24CustomVoiceSelectionViewVAA5GroupVyACyACyAD0hi4ProxJ0VAA08ModifiedD0VyAD014LegacySettingshI0VAA30_SafeAreaRegionsIgnoringLayoutVGGAD0hi7WelcomeJ0VGGGAA0J0HPAfaXHPyHC_AvaXHPAuaXHPAraXHPAjaXHPyHC_AqaXHPAnaXHPyHC_ApA0J8ModifierHPyHCHCHC_AtaXHPyHCHC_HCHC.46
-+ _get_witness_table 7SwiftUI19_ConditionalContentVyAA7SectionVyAA4TextVAA4ViewPAAE12labelsHiddenQryFQOyAiAE11pickerStyleyQrqd__AA06PickerK0Rd__lFQOyAA01_g9Modifier_D0Vy9SiriSetup012ConversationlK0VG_AA06InlinelK0VQo__Qo_AGGAiAEAKyQrqd__AaLRd__lFQOyAR_AA04MenulK0VQo_GAaHHPAwaHHPAgaHHPyHC_qd__AaHHD2_AVHOAgaHHPyHCHC_qd0__AaHHD3_AZHOHC.25
-+ _get_witness_table 7SwiftUI4ListVys5NeverOAA12TupleContentVy9SiriSetup23KeepConversationsPickerV_AJQPGGAA4ViewHPyHC.38
-+ _get_witness_table 7SwiftUI4ViewRzSHR_AaBR0_r1_lAA15ModifiedContentVyAA6PickerVyxq_q0_G9SiriSetup012ConversationF5StyleVGAaBHPAgaBHPyHC_AjA0C8ModifierHPyHCHC.26
-+ _get_witness_table 7SwiftUI4ViewRzlAA19_ConditionalContentVyAaBP8SettingsE48emitNavigationEventOnAppearForApplicationSetting010associatedM16BundleIdentifier5title09localizedH10Components8deepLinkQrSS_10Foundation23LocalizedStringResourceVSayANGAL3URLVtFQOyx_Qo_xGAaBHPqd__AaBHD2_ARHO_xAaBHD1_HC.5
-+ _get_witness_table 7SwiftUI4ViewRzlAA4ListVys5NeverOxGAaBHPyHC.6
-+ _get_witness_table 7SwiftUI5GroupVyAA19_ConditionalContentVyAEy9SiriSetup22VoiceSelectionProxViewVAA08ModifiedE0VyAF014LegacySettingshI0VAA30_SafeAreaRegionsIgnoringLayoutVGGAF0hi7WelcomeK0VGGAA0K0HPAsaUHPApaUHPAhaUHPyHC_AoaUHPAlaUHPyHC_AnA0K8ModifierHPyHCHCHC_AraUHPyHCHC_HC.45
-+ _get_witness_table 7SwiftUI7AnyViewVAA0D0HPyHC.30
-+ _get_witness_table 9SiriSetup0A12SettingsViewRzl7SwiftUI19_ConditionalContentVyAC0D0P0C0E48emitNavigationEventOnAppearForApplicationSetting010associatedO16BundleIdentifier5title09localizedJ10Components8deepLinkQrSS_10Foundation23LocalizedStringResourceVSayAPGAN3URLVtFQOyAgHE22settingsListAppearanceQryFQOyAgCE15navigationTitleyQrAC4TextVFQOyx_Qo__Qo__Qo_AYGAcFHPqd__AcFHD2_AZHO_qd__AcFHD2_AYHOHC.4
-+ _get_witness_table 9SiriSetup0A17SettingsContainerVyAA23KeepConversationsPickerVG7SwiftUI4ViewHPyHC.17
-+ _get_witness_table 9SiriSetup11WelcomeViewV7SwiftUI0D0HPyHC.5
-+ _get_witness_table 9SiriSetup8PageTypeO0C4ViewRzl7SwiftUI15ModifiedContentVyAGyAGyAGyAGyAGyAE0E0PAEE17toolbarVisibility_3forQrAE0K0O_AE16ToolbarPlacementVdtFQOyAGyxAE30_SafeAreaRegionsIgnoringLayoutVG_Qo_AE26_PreferenceWritingModifierVyAE23PreferredColorSchemeKeyVGGAE012_EnvironmentzuV0VyAC08CompleteC6ActionVGGA_ySayACGGGA_yAA14StringsContextCGGA_yAA0aB14EnrollmentModeOGGAE017_AppearanceActionV0VGAeHHPA14_AeHHPA10_AeHHPA6_AeHHPA3_AeHHPAyeHHPqd__AeHHD2_ASHO_AxE0eV0HPyHCHC_A2_AEA18_HPyHCHC_A5_AEA18_HPyHCHC_A9_AEA18_HPyHCHC_A13_AEA18_HPyHCHC_A16_AEA18_HPyHCHC.82
-+ _get_witness_table 9SiriSetup8PageTypeO0C4ViewRzlAC0cE9ContainerVy_xGAA0cF0HPyHC.84
-+ _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE5sheet11isPresented9onDismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAA15ModifiedContentVy9SiriSetup07WelcomeC0VAA30_SafeAreaRegionsIgnoringLayoutVG_AcAE19presentationDetentsyQrShyAA18PresentationDetentVGFQOyAS_Qo_Qo_HO.49
-+ _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE5sheet11isPresented9onDismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE7toolbarAGQrqd__yXE_tAA14ToolbarContentRd__lFQOyAA08ModifiedR0Vy9SiriSetup0T17SettingsContainerVyAA7SectionVyAA4TextVAA05TupleR0VyAUyAUyAA7ForEachVySayAV21RestrictAccessAppInfoVGSSAA5LabelVyA0_AUyAUyAA5ImageVAA12_FrameLayoutVGAA11_ClipEffectVyAA16RoundedRectangleVGGGGAA21_TraitWritingModifierVyAA16OnDeleteTraitKeyVGGA24_yAA24IsDeleteDisabledTraitKeyVGG_AA6ButtonVyA0_GSgQPGA0_GGAA30_EnvironmentKeyWritingModifierVyAIyAA8EditModeOGSgGG_AA012_ConditionalR0VyA2_yAA0Q4ItemVyytAUyA34_yA11_GAA31AccessibilityAttachmentModifierVGG_AaSPAAE26sharedBackgroundVisibilityyQrAA10VisibilityOFQOyA51_yytAUyA34_yAUyAUyA11_AA24_ForegroundStyleModifierVyAA5ColorVGGA41_yAA4FontVSgGGGA54_GG_Qo_QPGA51_yytA35_GGSgQo__Qo__AV023RestrictAccessAppPickerC0VQo_HO.13
-+ _get_witness_table qd0__7SwiftUI4ViewHD4_AaBPAAE5alert_11isPresented7actions7messageQrAA4TextV_AA7BindingVySbGqd__yXEqd_0_yXEtAaBRd__AaBRd_0_r0_lFQOyAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA15ModifiedContentVyAA6PickerVyAI9SiriSetup30AppKeepConversationsTTLOptionsOSgAA05TupleQ0VyAcAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAI_AZQo__A3_A3_QPGGAW012ConversationR5StyleVG_Qo__A0_yAA6ButtonVyAIG_A12_QPGAA012_ConditionalQ0VyA2IGQo_HO.24
-+ _get_witness_table qd0__7SwiftUI4ViewHD5_AaBPAAE5alert_11isPresented7actions7messageQrqd___AA7BindingVySbGqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAcAE5sheet4item9onDismiss7contentQrAIyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lFQOyAcAEAklmNQrAP_AQqd_0_qd__ctsARRd__AaBRd_0_r0_lFQOyAcAEAkemNQrAJ_AQqd__yctAaBRd__lFQOyAcAE18confirmationDialog_AE15titleVisibilityAfGQrAA4TextV_AjA0S0Oqd__yXEqd_0_yXEtAaBRd__AaBRd_0_r0_lFQOyAcAEAdeNQrAJ_AA5AlertVyXEtFQOyAC8SettingsE41settingsFeatureDescriptionNavigationTitleyQrAVFQOyAcAE21navigationDestinationAE11destinationQrAJ_qd__yXEtAaBRd__lFQOyAcAEA1_3forA2_Qrqd__m_qd_0_qd__ctSHRd__AaBRd_0_r0_lFQOyACA_E0W14ListAppearanceQryFQOyAA15ModifiedContentVyAA19_ConditionalContentVyACA_E04emitZ34EventOnAppearForApplicationSetting37associatedApplicationBundleIdentifier0R009localizedZ10Components8deepLinkQrSS_10Foundation23LocalizedStringResourceVSayA16_GA14_3URLVtFQOyAcAEAkemNQrAJ_AQqd__yctAaBRd__lFQOyAA4ListVys5NeverOAA12TupleContentVyAA7SectionVyAA05EmptyC0VA_0vxyC0VA8_yA6_yAvA30_EnvironmentKeyWritingModifierVyAA13OpenURLActionVGG9SiriSetup019AssetDownloadFooterC0VGSgGSg_A8_yA25_yA8_yA8_yA27_yA29_A6_yAA6ButtonVyA6_yAA6HStackVyA25_yAV_AA6SpacerVQPGGAA21_ContentShapeModifierVyAA9RectangleVGGGAA24_ForegroundStyleModifierVyAA5ColorVGGAVGA27_yA29_AA14LabeledContentVyA2VGAVGGA8_yA29_A29_GGSg_A66_SgQPGA27_yA29_A65_A29_GGA27_yA29_A25_yAA0Z4LinkVyA69_A23_GSg_A81_A81_A80_yAVA23_GQPGA8_yA37_AVGGA27_yA29_AcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE0L6Change2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA6ToggleVyAVG_SbQo__Qo_AVGSgA25_yA27_yA29_AcAEAkemNQrAJ_AQqd__yctAaBRd__lFQOyAcAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyA46_yA69_G_AA0Z15LinkButtonStyleVyA23_GQo__A38_022SiriSetupContactPickerC0VQo_A29_G_A27_yAVA25_yA81__A81_QPGA29_GSgQPGSgA25_yA25_yA6_yA27_y024GenerativePartnerServiceB0033ExternalAISettingsEntryPointLabelC0V06headerC0QryFZQOy_Qo_A80_yA121_A23_GA121_06footerC0QryFZQOy_Qo_GAA32_EnvironmentKeyTransformModifierVySbGGSg_A27_yA29_A83_A29_GAcAEAkemNQrAJ_AQqd__yctAaBRd__lFQOyA27_yA29_A25_yA83__A83_QPGA37_G_AA0Z5StackVyAA0Z4PathVAcAE7toolbarANQrqd__yXE_tAA14ToolbarContentRd__lFQOyA38_07PrivacyC0V_AA11ToolbarItemVyytA46_yAA18DefaultButtonLabelVGGQo_GQo_SgQPGSg_A27_yA29_A83_AVGSgQPGA27_yA29_A46_yAVGA29_GA27_yA29_A59_A29_GSgQPGG_A151_Qo__Qo_A165_GAA25_AppearanceActionModifierVG_Qo__A38_04SiriV11DestinationOA8_yA8_yA8_yA8_yA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAE15navigationTitleyQrAVFQOyA38_07TalkingvC0V_Qo__Qo__Qo_A178_GA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA38_017AssistantLanguageC0V_Qo__Qo__Qo_A184_GGA8_yA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA38_0v14VoiceSelectionC0V_Qo__Qo__Qo_A191_GA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA38_13SiriResponsesV_Qo__Qo__Qo_A197_GGGA8_yA8_yA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA38_07SiriAppV0O07OpensTovC0V_Qo__Qo__Qo_A207_GA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA203_017KeepConversationsvC0V_Qo__Qo__Qo_A213_GGA8_yA8_yA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA38_09AppAccessvC0V_Qo__Qo__Qo_A220_GA29_GA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA38_07AppClipvC0V_Qo__Qo__Qo_A227_GGGGA8_yA8_yA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA38_016AssistantHistoryC0V_Qo__Qo__Qo_A236_GA119_017GenerativePartnerv5PanelC0VGA8_yA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA38_018VisualIntelligencevC0V_Qo__Qo__Qo_A245_GA8_yA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA38_014RestrictAccessC0V_Qo__Qo__Qo_A251_GA29_GGGGQo__A193_SgQo__Qo__Qo__A25_yA159__A159_QPGAVQo__A38_20SiriDisablementSheetVQo__A38_14SiriSetupStageV11CoordinatorCA269_Qo__A271_A269_Qo__SSA263_AVQo_HO.14
-+ _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE18toolbarColorScheme_3forQrAA0eF0OSg_AA16ToolbarPlacementVdtFQOyAcAE29navigationBarTitleDisplayModeyQrAA010NavigationK4ItemV0lmN0OFQOyAcAE0jL0yQrAA18LocalizedStringKeyVFQOyAA15ModifiedContentVyATyATyAcAE0D07contentQrqd__yXE_tAA0hU0Rd__lFQOyAA6ZStackVyAA05TupleU0VyATyAA0E0VAA30_SafeAreaRegionsIgnoringLayoutVG_AA6VStackVyA_yA6_yA_y9SiriSetup07OrbGlowC0V_A6_yA_yATyAA6HStackVyA_yAA4TextV_AA6SpacerVATyATyAA4MenuVyATyA11_yA_yA13__ATyATyATyAA5ImageVAA012_EnvironmentS15WritingModifierVyAA4FontVSgGGAA24_ForegroundStyleModifierVyA1_GGA21_yAA015SymbolRenderingN0VSgGGQPGGA29_GAA7ForEachVySayA7_19VoiceSelectionStoreC11DialectInfoVGSSAA6ButtonVyA13_GGGA29_GAA012_EnvironmentS17TransformModifierVySbGGQPGGAA12_FrameLayoutVG_ATyATyA11_yA40_ySaySi6offset_So11AFVoiceInfoC7elementtGSSSgA7_05VoiceE6ButtonVGGA59_GAA18_AnimationModifierVyA66_GGQPGGATyATyA6_yA_yA6_yA_yA11_yA_yA13__A15_A7_28DisabledSliderTrackInfoLabelVSgQPGG_AA012_ConditionalU0VyATyAA6SliderVyAA05EmptyC0VA88_GA21_yAA13AnyShapeStyleVSgGGA7_19DisabledSliderTrackVGQPGG_A99_QPGGA59_GAA14_PaddingLayoutVGATyA6_yA_yA13__ATyA13_AA16_FixedSizeLayoutVGQPGGA59_GQPGG_A15_QPGGQPGG_AA0hP0VyytATyA47_yAA18DefaultButtonLabelVGA54_GGQo_A7_21AssetDownloadModifierVGAA25_AppearanceActionModifierVGA130_G_Qo__Qo__Qo_HO.9
-+ _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOy9SiriSetup0I17SettingsContainerVyAA12TupleContentVyAA7SectionVyAA4TextVAcAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE12labelsHiddenQryFQOyAcAE11pickerStyleyQrqd__AA06PickerX0Rd__lFQOyAA0Y0VyARSo24AFUseDeviceSpeakerForTTSVANyAcAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAR_A0_Qo_Sg_A4_A3_QPGG_AA06InlineyX0VQo__Qo__A0_Qo_ARG_APyAA05EmptyC0VAcAEAstU_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA6ToggleVyARG_SbQo_ARGSgA20_APyARA18_ARGAPyArNyA18__A18_SgQPGA14_GSgAJ021MessagingLanguageListC0VAPyArcAEAstU_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAVQryFQOyAcAEAWyQrqd__AaXRd__lFQOyAZyArJ0I9ResponsesV13CarAudioRoute33_74CA3B7196D9BA3639E80CD0E65DFC2ELLOANyAcAEA1__A2_Qrqd___SbtSHRd__lFQOyAR_A32_Qo__A33_SgA33_QPGG_A8_Qo__Qo__A32_Qo_AA6VStackVyANyAR_ANyAA6SpacerV_ARQPGSgQPGGGSgQPGG_Qo_HO.4
-+ _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOy9SiriSetup0I17SettingsContainerVyAA7SectionVyAA05EmptyC0VAA6ToggleVyAA4TextVGATGG_Qo_HO.4
-+ _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOy9SiriSetup0I17SettingsContainerVyAA7SectionVyAA05EmptyC0VAA7ForEachVySayAJ09AppAccessQ4InfoVGSSAA14NavigationLinkVyAA5LabelVyAA4TextVAA15ModifiedContentVyA1_yAA5ImageVAA12_FrameLayoutVGAA11_ClipEffectVyAA16RoundedRectangleVGGGAA012_ConditionalY0VyAC0K0E04emitt13EventOnAppearO18ApplicationSetting37associatedApplicationBundleIdentifier5title09localizedT10Components04deepU0QrSS_10Foundation23LocalizedStringResourceVSayA24_GA22_3URLVtFQOyACA16_E22settingsListAppearanceQryFQOyAcAE15navigationTitleyQrA_FQOyAJ0qr6DetailC0V_Qo__Qo__Qo_A33_GGGAPGG_Qo_HO.7
-+ _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOy9SiriSetup0I17SettingsContainerVyAA7SectionVyAA05EmptyC0VAcAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE12labelsHiddenQryFQOyAcAE11pickerStyleyQrqd__AA06PickerV0Rd__lFQOyAA0W0VyAA4TextVSbAA12TupleContentVyAcAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAZ_SbQo__A3_QPGG_AA06InlinewV0VQo__Qo__SbQo_AZGG_Qo_HO.16
-+ _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA15NavigationStackVyAA0I4PathVAcAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAcAE29navigationBarTitleDisplayModeyQrAA0iQ4ItemV0rsT0OFQOyAcAE0pR0yQrAA4TextVFQOyAA5GroupVyAA012_ConditionalO0VyAA08ProgressC0VyAA05EmptyC0VA4_GAA4ListVys5NeverOAA7ForEachVySay9SiriSetup023RestrictAccessAppPickerC0V7Section33_67102BE38CDDE06F33628242513EBB2FLLVGSSAAA15_VyAXA11_ySayA12_21RestrictAccessAppInfoVGSSAA08ModifiedO0VyAcAE12onTapGesture5count7performQrSi_yyctFQOyA24_yAA6HStackVyAA05TupleO0VyA24_yA24_yAA5ImageVAA24_ForegroundStyleModifierVyAA5ColorVGGAA30_EnvironmentKeyWritingModifierVyA33_5ScaleOGG_A24_yA24_yA33_AA12_FrameLayoutVGAA11_ClipEffectVyAA16RoundedRectangleVGGAxA6SpacerVQPGGAA01_O13ShapeModifierVyAA9RectangleVGG_Qo_AA21_TraitWritingModifierVyAA25ListRowBackgroundTraitKeyVGGGA4_GGGGG_Qo__Qo__A31_yAA0nU0VyytAA6ButtonVyA33_GG_AaPPAAE26sharedBackgroundVisibilityyQrAA10VisibilityOFQOyA81_yytA83_yA24_yA39_A41_yAA4FontVSgGGGG_Qo_QPGQo_G_Qo_HO.8
-+ _objc_msgSend$URLForResource:withExtension:subdirectory:localization:
-+ _objc_msgSend$engine
-+ _objc_msgSend$getMessageWithoutConfirmationEnabled
-+ _objc_msgSend$hostTimeForSeconds:
-+ _objc_msgSend$initWithContentsOfURL:
-+ _objc_msgSend$initWithHostTime:
-+ _objc_msgSend$isRunning
-+ _objc_msgSend$localizedNameForSiriLanguage:inDisplayLanguage:
-+ _objc_msgSend$objectForKey:
-+ _objc_msgSend$playAtTime:
-+ _objc_msgSend$preferredLanguages
-+ _objc_msgSend$readIntoBuffer:frameCount:error:
-+ _objc_msgSend$setBool:forKey:
-+ _objc_msgSend$setFrameLength:
-+ _objc_msgSend$setFramePosition:
-+ _objc_msgSend$setMessageWithoutConfirmationEnabled:
-+ _objc_msgSend$systemGray5Color
-+ _objc_msgSend$volume
++ _get_witness_table 7SwiftUI15ModifiedContentVyAA14GeometryReaderVyACyAA6ZStackVyAA05TupleD0VyACyAA10_ShapeViewVyAA7CapsuleVAA5ColorVGAA12_FrameLayoutVG_AsCyAsA13_OffsetEffectVGQPGGAA05_FlexmN0VGGARGAA0J0HPA0_AAA2_HPyHC_ArA0J8ModifierHPyHCHC
++ _get_witness_table 7SwiftUI15ModifiedContentVyAA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonG0Rd__lFQOyAA0I0VyAA07LabeledD0VyAA5LabelVyAA4TextV9SiriSetup018SelectionCheckmarkE0VGAOGG_AA014NavigationLinkiG0Vys5NeverOGQo_AA19_BackgroundModifierVyAA0qR0VyAA05EmptyE0VAA012_ConditionalD0VyAE8SettingsE04emitQ34EventOnAppearForApplicationSetting37associatedApplicationBundleIdentifier5title09localizedQ10Components04deepR0QrSS_10Foundation23LocalizedStringResourceVSayA16_GA14_3URLVtFQOyAEA8_E22settingsListAppearanceQryFQOyAeAE15navigationTitleyQrAOFQOyAP023AssistantLanguageDetailE0V_Qo__Qo__Qo_A25_GGGGAaDHPqd0__AaDHD3_A_HO_A29_AA0eU0HPyHCHC
++ _get_witness_table 7SwiftUI15ModifiedContentVyACyAA4ViewPAAE20accessibilityElement8childrenQrAA26AccessibilityChildBehaviorV_tFQOyACyACyAA6HStackVyAA05TupleD0VyAA4TextV_AA6SpacerVAeAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAeAE11pickerStyleyQrqd__AA06PickerU0Rd__lFQOyAeAE12labelsHiddenQryFQOyAA0V0VyAOSSAA7ForEachVySaySSGSSAeAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAO_SSQo_GG_Qo__AA04MenuvU0VQo__SSQo_QPGGAA14_PaddingLayoutVGAA16_FlexFrameLayoutVG_Qo_AA0I18AttachmentModifierVGAA25_AppearanceActionModifierVGAaDHPA22_AaDHPqd__AaDHD2_A19_HO_A21_AA0E8ModifierHPyHCHC_A24_AAA26_HPyHCHC
++ _get_witness_table 7SwiftUI15ModifiedContentVyACyACyACyACyAA4TextVAA30_EnvironmentKeyWritingModifierVyAE4CaseOSgGGAA016_ForegroundStyleI0VyAA5ColorVGGAA14_PaddingLayoutVGATGAA011_BackgroundI0VyAA10_ShapeViewVyAA7CapsuleVAPGGGAA0R0HPAvAA4_HPAuAA4_HPArAA4_HPAlAA4_HPAeAA4_HPyHC_AkA0rI0HPyHCHC_AqAA5_HPyHCHC_AtAA5_HPyHCHC_AtAA5_HPyHCHC_A2_AAA5_HPyHCHC
++ _get_witness_table 7SwiftUI19_ConditionalContentVyAA7SectionVyAA4TextVAA4ViewPAAE12labelsHiddenQryFQOyAiAE11pickerStyleyQrqd__AA06PickerK0Rd__lFQOyAA01_g9Modifier_D0Vy9SiriSetup012ConversationlK0VG_AA06InlinelK0VQo__Qo_AGGAiAEAKyQrqd__AaLRd__lFQOyAR_AA04MenulK0VQo_GAaHHPAwaHHPAgaHHPyHC_qd__AaHHD2_AVHOAgaHHPyHCHC_qd0__AaHHD3_AZHOHC
++ _get_witness_table 7SwiftUI4ListVys5NeverOAA12TupleContentVy9SiriSetup23KeepConversationsPickerV_AJQPGGAA4ViewHPyHC
++ _get_witness_table 7SwiftUI4ViewRzSHR_AaBR0_r1_lAA15ModifiedContentVyAA6PickerVyxq_q0_G9SiriSetup012ConversationF5StyleVGAaBHPAgaBHPyHC_AjA0C8ModifierHPyHCHC
++ _get_witness_table 7SwiftUI4ViewRzlAA19_ConditionalContentVyAaBP8SettingsE48emitNavigationEventOnAppearForApplicationSetting010associatedM16BundleIdentifier5title09localizedH10Components8deepLinkQrSS_10Foundation23LocalizedStringResourceVSayANGAL3URLVtFQOyx_Qo_xGAaBHPqd__AaBHD2_ARHO_xAaBHD1_HC
++ _get_witness_table 7SwiftUI7AnyViewVAA0D0HPyHC
++ _get_witness_table 9SiriSetup0A12SettingsViewRzl7SwiftUI19_ConditionalContentVyAC0D0P0C0E48emitNavigationEventOnAppearForApplicationSetting010associatedO16BundleIdentifier5title09localizedJ10Components8deepLinkQrSS_10Foundation23LocalizedStringResourceVSayAPGAN3URLVtFQOyAgHE22settingsListAppearanceQryFQOyAgCE15navigationTitleyQrAC4TextVFQOyx_Qo__Qo__Qo_AYGAcFHPqd__AcFHD2_AZHO_qd__AcFHD2_AYHOHC
++ _get_witness_table 9SiriSetup0A17SettingsContainerVyAA23KeepConversationsPickerVG7SwiftUI4ViewHPyHC
++ _get_witness_table 9SiriSetup8PageTypeO0C4ViewRzl7SwiftUI15ModifiedContentVyAGyAGyAGyAGyAGyAE0E0PAEE17toolbarVisibility_3forQrAE0K0O_AE16ToolbarPlacementVdtFQOyAGyxAE30_SafeAreaRegionsIgnoringLayoutVG_Qo_AE26_PreferenceWritingModifierVyAE23PreferredColorSchemeKeyVGGAE012_EnvironmentzuV0VyAC08CompleteC6ActionVGGA_ySayACGGGA_yAA14StringsContextCGGA_yAA0aB14EnrollmentModeOGGAE017_AppearanceActionV0VGAeHHPA14_AeHHPA10_AeHHPA6_AeHHPA3_AeHHPAyeHHPqd__AeHHD2_ASHO_AxE0eV0HPyHCHC_A2_AEA18_HPyHCHC_A5_AEA18_HPyHCHC_A9_AEA18_HPyHCHC_A13_AEA18_HPyHCHC_A16_AEA18_HPyHCHC
++ _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE5sheet11isPresented9onDismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE7toolbarAGQrqd__yXE_tAA14ToolbarContentRd__lFQOyAA08ModifiedR0Vy9SiriSetup0T17SettingsContainerVyAA7SectionVyAA4TextVAA05TupleR0VyAUyAUyAA7ForEachVySayAV21RestrictAccessAppInfoVGSSAA5LabelVyA0_AUyAUyAA5ImageVAA12_FrameLayoutVGAA11_ClipEffectVyAA16RoundedRectangleVGGGGAA21_TraitWritingModifierVyAA16OnDeleteTraitKeyVGGA24_yAA24IsDeleteDisabledTraitKeyVGG_AA6ButtonVyA0_GSgQPGA0_GGAA30_EnvironmentKeyWritingModifierVyAIyAA8EditModeOGSgGG_AA012_ConditionalR0VyA2_yAA0Q4ItemVyytAUyA34_yA11_GAA31AccessibilityAttachmentModifierVGG_AaSPAAE26sharedBackgroundVisibilityyQrAA10VisibilityOFQOyA51_yytAUyA34_yAUyAUyA11_AA24_ForegroundStyleModifierVyAA5ColorVGGA41_yAA4FontVSgGGGA54_GG_Qo_QPGA51_yytA35_GGSgQo__Qo__AV023RestrictAccessAppPickerC0VQo_HO
++ _get_witness_table qd0__7SwiftUI4ViewHD4_AaBPAAE5alert_11isPresented7actions7messageQrAA4TextV_AA7BindingVySbGqd__yXEqd_0_yXEtAaBRd__AaBRd_0_r0_lFQOyAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA15ModifiedContentVyAA6PickerVyAI9SiriSetup30AppKeepConversationsTTLOptionsOSgAA05TupleQ0VyAcAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAI_AZQo__A3_A3_QPGGAW012ConversationR5StyleVG_Qo__A0_yAA6ButtonVyAIG_A12_QPGAA012_ConditionalQ0VyA2IGQo_HO
++ _get_witness_table qd0__7SwiftUI4ViewHD5_AaBPAAE5alert_11isPresented7actions7messageQrqd___AA7BindingVySbGqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAcAE5sheet4item9onDismiss7contentQrAIyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lFQOyAcAEAklmNQrAP_AQqd_0_qd__ctsARRd__AaBRd_0_r0_lFQOyAcAEAkemNQrAJ_AQqd__yctAaBRd__lFQOyAcAE18confirmationDialog_AE15titleVisibilityAfGQrAA4TextV_AjA0S0Oqd__yXEqd_0_yXEtAaBRd__AaBRd_0_r0_lFQOyAcAEAdeNQrAJ_AA5AlertVyXEtFQOyAC8SettingsE41settingsFeatureDescriptionNavigationTitleyQrAVFQOyAcAE21navigationDestinationAE11destinationQrAJ_qd__yXEtAaBRd__lFQOyAcAEA1_3forA2_Qrqd__m_qd_0_qd__ctSHRd__AaBRd_0_r0_lFQOyACA_E0W14ListAppearanceQryFQOyAA15ModifiedContentVyAA19_ConditionalContentVyACA_E04emitZ34EventOnAppearForApplicationSetting37associatedApplicationBundleIdentifier0R009localizedZ10Components8deepLinkQrSS_10Foundation23LocalizedStringResourceVSayA16_GA14_3URLVtFQOyAcAEAkemNQrAJ_AQqd__yctAaBRd__lFQOyAA4ListVys5NeverOAA12TupleContentVyAA7SectionVyAA05EmptyC0VA_0vxyC0VA8_yA6_yAvA30_EnvironmentKeyWritingModifierVyAA13OpenURLActionVGG9SiriSetup019AssetDownloadFooterC0VGSgGSg_A8_yA25_yA8_yA8_yA27_yA29_A6_yAA6ButtonVyA6_yAA6HStackVyA25_yAV_AA6SpacerVQPGGAA21_ContentShapeModifierVyAA9RectangleVGGGAA24_ForegroundStyleModifierVyAA5ColorVGGAVGA27_yA29_AA14LabeledContentVyA2VGAVGGA8_yA29_A29_GGSg_A66_SgQPGA27_yA29_A65_A29_GGA27_yA29_A25_yAA0Z4LinkVyA69_A23_GSg_A81_A81_A80_yAVA23_GQPGA8_yA37_AVGGA27_yA29_AcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE0L6Change2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA6ToggleVyAVG_SbQo__Qo_AVGSgA25_yA27_yA29_AcAEAkemNQrAJ_AQqd__yctAaBRd__lFQOyAcAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyA46_yA69_G_AA0Z15LinkButtonStyleVyA23_GQo__A38_022SiriSetupContactPickerC0VQo_A29_G_A27_yAVA25_yA81__A81_QPGA29_GSgQPGSgA25_yA25_yA6_yA27_y024GenerativePartnerServiceB0033ExternalAISettingsEntryPointLabelC0V06headerC0QryFZQOy_Qo_A80_yA121_A23_GA121_06footerC0QryFZQOy_Qo_GAA32_EnvironmentKeyTransformModifierVySbGGSg_A27_yA29_A83_A29_GAcAEAkemNQrAJ_AQqd__yctAaBRd__lFQOyA27_yA29_A25_yA83__A83_QPGA37_G_AA0Z5StackVyAA0Z4PathVAcAE7toolbarANQrqd__yXE_tAA14ToolbarContentRd__lFQOyA38_07PrivacyC0V_AA11ToolbarItemVyytA46_yAA18DefaultButtonLabelVGGQo_GQo_SgQPGSg_A27_yA29_A83_AVGSgQPGA27_yA29_A46_yAVGA29_GA27_yA29_A59_A29_GSgQPGG_A151_Qo__Qo_A165_GAA25_AppearanceActionModifierVG_Qo__A38_04SiriV11DestinationOA8_yA8_yA8_yA8_yA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAE15navigationTitleyQrAVFQOyA38_07TalkingvC0V_Qo__Qo__Qo_A178_GA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA38_017AssistantLanguageC0V_Qo__Qo__Qo_A184_GGA8_yA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA38_0v14VoiceSelectionC0V_Qo__Qo__Qo_A191_GA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA38_13SiriResponsesV_Qo__Qo__Qo_A197_GGGA8_yA8_yA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA38_07SiriAppV0O07OpensTovC0V_Qo__Qo__Qo_A207_GA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA203_017KeepConversationsvC0V_Qo__Qo__Qo_A213_GGA8_yA8_yA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA38_09AppAccessvC0V_Qo__Qo__Qo_A220_GA29_GA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA38_07AppClipvC0V_Qo__Qo__Qo_A227_GGGGA8_yA8_yA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA38_016AssistantHistoryC0V_Qo__Qo__Qo_A236_GA119_017GenerativePartnerv5PanelC0VGA8_yA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA38_018VisualIntelligencevC0V_Qo__Qo__Qo_A245_GA8_yA8_yACA_EA9_A10_A11_A12_A13_QrSS_A16_A17_A19_tFQOyACA_EA4_QryFQOyAcAEA174_yQrAVFQOyA38_014RestrictAccessC0V_Qo__Qo__Qo_A251_GA29_GGGGQo__A193_SgQo__Qo__Qo__A25_yA159__A159_QPGAVQo__A38_20SiriDisablementSheetVQo__A38_14SiriSetupStageV11CoordinatorCA269_Qo__A271_A269_Qo__SSA263_AVQo_HO
++ _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE18toolbarColorScheme_3forQrAA0eF0OSg_AA16ToolbarPlacementVdtFQOyAcAE29navigationBarTitleDisplayModeyQrAA010NavigationK4ItemV0lmN0OFQOyAcAE0jL0yQrAA18LocalizedStringKeyVFQOyAA15ModifiedContentVyATyATyAcAE0D07contentQrqd__yXE_tAA0hU0Rd__lFQOyAA6ZStackVyAA05TupleU0VyATyAA0E0VAA30_SafeAreaRegionsIgnoringLayoutVG_AA6VStackVyA_yA6_yA_y9SiriSetup07OrbGlowC0V_A6_yA_yATyAA6HStackVyA_yAA4TextV_AA6SpacerVATyATyAA4MenuVyATyA11_yA_yA13__ATyATyATyAA5ImageVAA012_EnvironmentS15WritingModifierVyAA4FontVSgGGAA24_ForegroundStyleModifierVyA1_GGA21_yAA015SymbolRenderingN0VSgGGQPGGA29_GAA7ForEachVySayA7_19VoiceSelectionStoreC11DialectInfoVGSSAA6ButtonVyA13_GGGA29_GAA012_EnvironmentS17TransformModifierVySbGGQPGGAA12_FrameLayoutVG_ATyATyA11_yA40_ySaySi6offset_So11AFVoiceInfoC7elementtGSSSgA7_05VoiceE6ButtonVGGA59_GAA18_AnimationModifierVyA66_GGQPGGATyATyA6_yA_yA6_yA_yA11_yA_yA13__A15_A7_28DisabledSliderTrackInfoLabelVSgQPGG_AA012_ConditionalU0VyATyAA6SliderVyAA05EmptyC0VA88_GA21_yAA13AnyShapeStyleVSgGGA7_19DisabledSliderTrackVGQPGG_A99_QPGGA59_GAA14_PaddingLayoutVGATyA6_yA_yA13__ATyA13_AA16_FixedSizeLayoutVGQPGGA59_GQPGG_A15_QPGGQPGG_AA0hP0VyytATyA47_yAA18DefaultButtonLabelVGA54_GGQo_A7_21AssetDownloadModifierVGAA25_AppearanceActionModifierVGA130_G_Qo__Qo__Qo_HO
++ _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOy9SiriSetup0I17SettingsContainerVyAA12TupleContentVyAA7SectionVyAA4TextVAcAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE12labelsHiddenQryFQOyAcAE11pickerStyleyQrqd__AA06PickerX0Rd__lFQOyAA0Y0VyARSo24AFUseDeviceSpeakerForTTSVANyAcAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAR_A0_Qo_Sg_A4_A3_QPGG_AA06InlineyX0VQo__Qo__A0_Qo_ARG_APyAA05EmptyC0VAcAEAstU_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA6ToggleVyARG_SbQo_ARGSgA20_APyARA18_ARGAPyArNyA18__A18_SgQPGA14_GSgAJ021MessagingLanguageListC0VAPyArcAEAstU_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAVQryFQOyAcAEAWyQrqd__AaXRd__lFQOyAZyArJ0I9ResponsesV13CarAudioRoute33_74CA3B7196D9BA3639E80CD0E65DFC2ELLOANyAcAEA1__A2_Qrqd___SbtSHRd__lFQOyAR_A32_Qo__A33_SgA33_QPGG_A8_Qo__Qo__A32_Qo_AA6VStackVyANyAR_ANyAA6SpacerV_ARQPGSgQPGGGSgQPGG_Qo_HO
++ _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOy9SiriSetup0I17SettingsContainerVyAA7SectionVyAA05EmptyC0VAA6ToggleVyAA4TextVGATGG_Qo_HO
++ _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOy9SiriSetup0I17SettingsContainerVyAA7SectionVyAA05EmptyC0VAA7ForEachVySayAJ09AppAccessQ4InfoVGSSAA14NavigationLinkVyAA5LabelVyAA4TextVAA15ModifiedContentVyA1_yAA5ImageVAA12_FrameLayoutVGAA11_ClipEffectVyAA16RoundedRectangleVGGGAA012_ConditionalY0VyAC0K0E04emitt13EventOnAppearO18ApplicationSetting37associatedApplicationBundleIdentifier5title09localizedT10Components04deepU0QrSS_10Foundation23LocalizedStringResourceVSayA24_GA22_3URLVtFQOyACA16_E22settingsListAppearanceQryFQOyAcAE15navigationTitleyQrA_FQOyAJ0qr6DetailC0V_Qo__Qo__Qo_A33_GGGAPGG_Qo_HO
++ _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOy9SiriSetup0I17SettingsContainerVyAA7SectionVyAA05EmptyC0VAcAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE12labelsHiddenQryFQOyAcAE11pickerStyleyQrqd__AA06PickerV0Rd__lFQOyAA0W0VyAA4TextVSbAA12TupleContentVyAcAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAZ_SbQo__A3_QPGG_AA06InlinewV0VQo__Qo__SbQo_AZGG_Qo_HO
++ _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA15NavigationStackVyAA0I4PathVAcAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAcAE29navigationBarTitleDisplayModeyQrAA0iQ4ItemV0rsT0OFQOyAcAE0pR0yQrAA4TextVFQOyAA5GroupVyAA012_ConditionalO0VyAA08ProgressC0VyAA05EmptyC0VA4_GAA4ListVys5NeverOAA7ForEachVySay9SiriSetup023RestrictAccessAppPickerC0V7Section33_67102BE38CDDE06F33628242513EBB2FLLVGSSAAA15_VyAXA11_ySayA12_21RestrictAccessAppInfoVGSSAA08ModifiedO0VyAcAE12onTapGesture5count7performQrSi_yyctFQOyA24_yAA6HStackVyAA05TupleO0VyA24_yA24_yAA5ImageVAA24_ForegroundStyleModifierVyAA5ColorVGGAA30_EnvironmentKeyWritingModifierVyA33_5ScaleOGG_A24_yA24_yA33_AA12_FrameLayoutVGAA11_ClipEffectVyAA16RoundedRectangleVGGAxA6SpacerVQPGGAA01_O13ShapeModifierVyAA9RectangleVGG_Qo_AA21_TraitWritingModifierVyAA25ListRowBackgroundTraitKeyVGGGA4_GGGGG_Qo__Qo__A31_yAA0nU0VyytAA6ButtonVyA33_GG_AaPPAAE26sharedBackgroundVisibilityyQrAA10VisibilityOFQOyA81_yytA83_yA24_yA39_A41_yAA4FontVSgGGGG_Qo_QPGQo_G_Qo_HO
 + _swift_isClassType
 + _symbolic $s9SiriSetup22PhraseBoundaryProviderP
 + _symbolic $s9SiriSetup23RestrictAccessProvidingP
@@ -3662,11 +3455,9 @@ Symbols:
 - _$s7SwiftUI4ViewPAAE5sheet4item9onDismiss7contentQrAA7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lFQOyAcAEAdefGQrAK_ALqd_0_qd__ctsAMRd__AaBRd_0_r0_lFQOyAcAEAD11isPresentedAfGQrAIySbG_ALqd__yctAaBRd__lFQOyAcAE18confirmationDialog_AN15titleVisibility7actions7messageQrAA4TextV_AoA0P0Oqd__yXEqd_0_yXEtAaBRd__AaBRd_0_r0_lFQOyAcAE5alertAnGQrAO_AA5AlertVyXEtFQOyAC8SettingsE41settingsFeatureDescriptionNavigationTitleyQrAUFQOyAcAE21navigationDestinationAN11destinationQrAO_qd__yXEtAaBRd__lFQOyAcAEA1_3forA2_Qrqd__m_qd_0_qd__ctSHRd__AaBRd_0_r0_lFQOyACA_E0W14ListAppearanceQryFQOyAA15ModifiedContentVyAA4ListVys5NeverOAA12TupleContentVyAcAEAdnfGQrAO_ALqd__yctAaBRd__lFQOyAA7SectionVyAA05EmptyC0VA_0vxyC0V9SiriSetup019AssetDownloadFooterC0VSgG_AA0Z5StackVyAA0Z4PathVAcAE7toolbarAGQrqd__yXE_tAA14ToolbarContentRd__lFQOyA19_07PrivacyC0V_AA11ToolbarItemVyytAA6ButtonVyAA18DefaultButtonLabelVGGQo_GQo_Sg_AA19_ConditionalContentVyA12_yA45_yA45_yA14_yA16_A6_yA35_yA6_yAA6HStackVyA12_yAU_AA6SpacerVQPGGAA21_ContentShapeModifierVyAA9RectangleVGGGAA24_ForegroundStyleModifierVyAA5ColorVGGAUGA14_yA16_AA14LabeledContentVyA2UGAUGGA45_yA16_A16_GGSg_A65_SgQPGA14_yA16_A64_A16_GGA14_yA16_A12_yAA0Z4LinkVyA68_A10_GSg_A80_A80_A79_yAUA10_GA79_yAU19PreferencesExtended021PreferencesControllerC0VGSgQPGA16_GA14_yA16_AcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE0F6Change2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA6ToggleVyAUG_SbQo__Qo_AUGSgA12_yA14_yA16_A82_A16_GSg_A14_yA16_AcAEAdnfGQrAO_ALqd__yctAaBRd__lFQOyAcAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyA35_yA68_G_AA0Z15LinkButtonStyleVyA10_GQo__A19_022SiriSetupContactPickerC0VQo_A16_GQPGSgA12_yA6_yA14_y024GenerativePartnerServiceB0033ExternalAISettingsEntryPointLabelC0V06headerC0QryFZQOy_Qo_A79_yA123_A10_GA123_06footerC0QryFZQOy_Qo_GAA32_EnvironmentKeyTransformModifierVySbGGSg_AcAEAdnfGQrAO_ALqd__yctAaBRd__lFQOyA14_yA16_A12_yA82__A82_QPGA6_yAuA30_EnvironmentKeyWritingModifierVyAA13OpenURLActionVGGG_A41_Qo_QPGSgA14_yA16_A35_yAUGA16_GA14_yA16_A58_A16_GSgQPGGAA25_AppearanceActionModifierVG_Qo__A19_04SiriV11DestinationOA45_yA45_yA45_yA45_yA6_yACA_EA4_QryFQOyAcAE15navigationTitleyQrAUFQOyA19_07TalkingvC0V_Qo__Qo_A153_GA6_yACA_EA4_QryFQOyAcAEA158_yQrAUFQOyA19_017AssistantLanguageC0V_Qo__Qo_A153_GGA45_yA6_yACA_EA4_QryFQOyAcAEA158_yQrAUFQOyA19_0v14VoiceSelectionC0V_Qo__Qo_A153_GA6_yACA_EA4_QryFQOyAcAEA158_yQrAUFQOyA19_13SiriResponsesV_Qo__Qo_A153_GGGA45_yA45_yA6_yACA_EA4_QryFQOyAcAEA158_yQrAUFQOyA19_07SiriAppvC0V_Qo__Qo_A153_GA6_yACA_EA4_QryFQOyAcAEA158_yQrAUFQOyA19_09AppAccessvC0V_Qo__Qo_A153_GGA45_yA6_yACA_EA4_QryFQOyAcAEA158_yQrAUFQOyA19_07AppClipvC0V_Qo__Qo_A153_GA6_yACA_EA4_QryFQOyAcAEA158_yQrAUFQOyA19_016AssistantHistoryC0V_Qo__Qo_A153_GGGGA121_017GenerativePartnerv5PanelC0VGQo__A174_SgQo__Qo__Qo__A12_yA146__A146_QPGAUQo__A19_20SiriDisablementSheetVQo__A19_14SiriSetupStageV11CoordinatorCA220_Qo__A222_A220_Qo_Md
 - _$s7SwiftUI4ViewPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE12labelsHiddenQryFQOyAcAE11pickerStyleyQrqd__AA06PickerK0Rd__lFQOyAA0L0VyAA4TextV9SiriSetup30AppKeepConversationsTTLOptionsOSgAA12TupleContentVyAcAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAM_APQo__A2VQPGG_AA06InlinelK0VQo__Qo__AQQo_MR
 - _$s7SwiftUI4ViewPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE12labelsHiddenQryFQOyAcAE11pickerStyleyQrqd__AA06PickerK0Rd__lFQOyAA0L0VyAA4TextV9SiriSetup30AppKeepConversationsTTLOptionsOSgAA12TupleContentVyAcAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAM_APQo__A2VQPGG_AA06InlinelK0VQo__Qo__AQQo_Md
-- _$s7SwiftUI6ButtonVA2A4TextVRszrlE_6actionACyAEG10Foundation23LocalizedStringResourceV_yyctcfcAEyXEfU_TA.109
 - _$s7SwiftUI6PickerVyAA4TextV9SiriSetup30AppKeepConversationsTTLOptionsOSgAA12TupleContentVyAA4ViewPAAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAE_AHQo__A2PQPGGACyxq_q0_GAalAWL
 - _$s7SwiftUI6PickerVyAA4TextV9SiriSetup30AppKeepConversationsTTLOptionsOSgAA12TupleContentVyAA4ViewPAAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAE_AHQo__A2PQPGGMR
 - _$s7SwiftUI6PickerVyAA4TextV9SiriSetup30AppKeepConversationsTTLOptionsOSgAA12TupleContentVyAA4ViewPAAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAE_AHQo__A2PQPGGMd
-- _$s7SwiftUI6ToggleVA2A4TextVRszrlE_4isOnACyAEG10Foundation23LocalizedStringResourceV_AA7BindingVySbGtcfcAEyXEfU_TA.31
 - _$s7SwiftUI6VStackVyAA12TupleContentVy9SiriSetup11OrbGlowViewV_ACyAEyAA08ModifiedE0VyAA6HStackVyAEyAA4TextV_AA6SpacerVAJyAJyAA4MenuVyAJyALyAEyAN_AJyAJyAJyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA016_ForegroundStyleT0VyAA5ColorVGGAVyAA19SymbolRenderingModeVSgGGQPGGA4_GAA7ForEachVySayAF19VoiceSelectionStoreC11DialectInfoVGSSAA6ButtonVyANGGGA4_GAA01_qr9TransformT0VySbGGQPGGAA12_FrameLayoutVG_AJyAJyALyA15_ySaySi6offset_So11AFVoiceInfoC7elementtGSSSgAF05VoiceX6ButtonVGGA34_GAA010_AnimationT0VyA41_GGQPGGAJyAJyACyAEyACyAEyAN_AA012_ConditionalE0VyAJyAA6SliderVyAA05EmptyJ0VA58_GAVyAA08AnyShapeW0VSgGGAF19DisabledSliderTrackVGQPGG_A69_QPGGA34_GAA14_PaddingLayoutVGAJyACyAEyAN_AJyAnA16_FixedSizeLayoutVGQPGGA34_GQPGGMR
 - _$s7SwiftUI6VStackVyAA12TupleContentVy9SiriSetup11OrbGlowViewV_ACyAEyAA08ModifiedE0VyAA6HStackVyAEyAA4TextV_AA6SpacerVAJyAJyAA4MenuVyAJyALyAEyAN_AJyAJyAJyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA016_ForegroundStyleT0VyAA5ColorVGGAVyAA19SymbolRenderingModeVSgGGQPGGA4_GAA7ForEachVySayAF19VoiceSelectionStoreC11DialectInfoVGSSAA6ButtonVyANGGGA4_GAA01_qr9TransformT0VySbGGQPGGAA12_FrameLayoutVG_AJyAJyALyA15_ySaySi6offset_So11AFVoiceInfoC7elementtGSSSgAF05VoiceX6ButtonVGGA34_GAA010_AnimationT0VyA41_GGQPGGAJyAJyACyAEyACyAEyAN_AA012_ConditionalE0VyAJyAA6SliderVyAA05EmptyJ0VA58_GAVyAA08AnyShapeW0VSgGGAF19DisabledSliderTrackVGQPGG_A69_QPGGA34_GAA14_PaddingLayoutVGAJyACyAEyAN_AJyAnA16_FixedSizeLayoutVGQPGGA34_GQPGGMd
 - _$s7SwiftUI6VStackVyAA12TupleContentVy9SiriSetup11OrbGlowViewV_ACyAEyAA08ModifiedE0VyAA6HStackVyAEyAA4TextV_AA6SpacerVAJyAJyAA4MenuVyAJyALyAEyAN_AJyAJyAJyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA016_ForegroundStyleT0VyAA5ColorVGGAVyAA19SymbolRenderingModeVSgGGQPGGA4_GAA7ForEachVySayAF19VoiceSelectionStoreC11DialectInfoVGSSAA6ButtonVyANGGGA4_GAA01_qr9TransformT0VySbGGQPGGAA12_FrameLayoutVG_AJyAJyALyA15_ySaySi6offset_So11AFVoiceInfoC7elementtGSSSgAF05VoiceX6ButtonVGGA34_GAA010_AnimationT0VyA41_GGQPGGAJyAJyACyAEyACyAEyAN_AA012_ConditionalE0VyAJyAA6SliderVyAA05EmptyJ0VA58_GAVyAA08AnyShapeW0VSgGGAF19DisabledSliderTrackVGQPGG_A69_QPGGA34_GAA14_PaddingLayoutVGAJyACyAEyAN_AJyAnA16_FixedSizeLayoutVGQPGGA34_GQPGG_APtMR
@@ -3911,7 +3702,6 @@ Symbols:
 - _$s9SiriSetup0aB5StageVWOh
 - _$s9SiriSetup11OrbGlowViewV_7SwiftUI6VStackVyAD12TupleContentVyAD08ModifiedJ0VyAD6HStackVyAHyAD4TextV_AD6SpacerVAJyAJyAD4MenuVyAJyALyAHyAN_AJyAJyAJyAD5ImageVAD30_EnvironmentKeyWritingModifierVyAD4FontVSgGGAD016_ForegroundStyleT0VyAD5ColorVGGAVyAD19SymbolRenderingModeVSgGGQPGGA4_GAD7ForEachVySayAA19VoiceSelectionStoreC11DialectInfoVGSSAD6ButtonVyANGGGA4_GAD01_qr9TransformT0VySbGGQPGGAD12_FrameLayoutVG_AJyAJyALyA15_ySaySi6offset_So11AFVoiceInfoC7elementtGSSSgAA05VoiceX6ButtonVGGA34_GAD010_AnimationT0VyA41_GGQPGGAJyAJyAFyAHyAFyAHyAN_AD012_ConditionalJ0VyAJyAD6SliderVyAD05EmptyE0VA58_GAVyAD08AnyShapeW0VSgGGAA19DisabledSliderTrackVGQPGG_A69_QPGGA34_GAD14_PaddingLayoutVGAJyAFyAHyAN_AJyAnD16_FixedSizeLayoutVGQPGGA34_GtMR
 - _$s9SiriSetup11OrbGlowViewV_7SwiftUI6VStackVyAD12TupleContentVyAD08ModifiedJ0VyAD6HStackVyAHyAD4TextV_AD6SpacerVAJyAJyAD4MenuVyAJyALyAHyAN_AJyAJyAJyAD5ImageVAD30_EnvironmentKeyWritingModifierVyAD4FontVSgGGAD016_ForegroundStyleT0VyAD5ColorVGGAVyAD19SymbolRenderingModeVSgGGQPGGA4_GAD7ForEachVySayAA19VoiceSelectionStoreC11DialectInfoVGSSAD6ButtonVyANGGGA4_GAD01_qr9TransformT0VySbGGQPGGAD12_FrameLayoutVG_AJyAJyALyA15_ySaySi6offset_So11AFVoiceInfoC7elementtGSSSgAA05VoiceX6ButtonVGGA34_GAD010_AnimationT0VyA41_GGQPGGAJyAJyAFyAHyAFyAHyAN_AD012_ConditionalJ0VyAJyAD6SliderVyAD05EmptyE0VA58_GAVyAD08AnyShapeW0VSgGGAA19DisabledSliderTrackVGQPGG_A69_QPGGA34_GAD14_PaddingLayoutVGAJyAFyAHyAN_AJyAnD16_FixedSizeLayoutVGQPGGA34_GtMd
-- _$s9SiriSetup12CarouselView33_84D13E1A91AF36ADDF3267D968F26E51LLV19carouselPageButtonsQrvgyycADcfu_yycfu0_TA.73
 - _$s9SiriSetup13EducationViewV11siriEnabledSbvpACTk
 - _$s9SiriSetup15LocalDataSourceC12languageCode021bestSupportedLanguageG014enrollmentMode04siriJ7Options20canSkipVoiceTraining9viewStyle13isSATEnrolled0u9FirstTimeB003hasQ14ProfileInCloud0M7Enabled14setupDismissed011recognizeMyQ7Enabled19voiceTriggerEnabled29voiceTriggerRepromptCompleted07compactQ16TriggerAvailable07compactQ26TriggerDisclosurePresented0M13InCallEnabled0mD13SharingStatus0mQ00M6Volume08requiresQ9Selection08requiresJ9Selection019showMultitriggerForB024appleIntelligenceEnabled23shouldShowSummarization25shouldShowImageGeneration34visualIntelligenceCameraRestricted28areGenerativeModelsAvailable0M12Availability014deviceSupportsQ7Trigger21deviceHasCameraButton27lastShownCoordinatorVersion18assistantPresented09assistantQ16TriggerPresentedACSSSg_SSAA0ab10EnrollmentL0OSaySSGSgSbAA04ViewT0OSgS11bSo06AFSiriD18SharingOptInStatusVSo11AFVoiceInfoCSgSfSgS4bSgS4bSo18AFSiriAvailabilityCS2bSDyAA8PageTypeOAA0aB5StageV11CoordinatorC7VersionOGS2btcfC
 - _$s9SiriSetup15LocalDataSourceC12languageCode021bestSupportedLanguageG014enrollmentMode04siriJ7Options20canSkipVoiceTraining9viewStyle13isSATEnrolled0u9FirstTimeB003hasQ14ProfileInCloud0M7Enabled14setupDismissed011recognizeMyQ7Enabled19voiceTriggerEnabled29voiceTriggerRepromptCompleted07compactQ16TriggerAvailable07compactQ26TriggerDisclosurePresented0M13InCallEnabled0mD13SharingStatus0mQ00M6Volume08requiresQ9Selection08requiresJ9Selection019showMultitriggerForB024appleIntelligenceEnabled23shouldShowSummarization25shouldShowImageGeneration34visualIntelligenceCameraRestricted28areGenerativeModelsAvailable0M12Availability014deviceSupportsQ7Trigger21deviceHasCameraButton27lastShownCoordinatorVersion18assistantPresented09assistantQ16TriggerPresentedACSSSg_SSAA0ab10EnrollmentL0OSaySSGSgSbAA04ViewT0OSgS11bSo06AFSiriD18SharingOptInStatusVSo11AFVoiceInfoCSgSfSgS4bSgS4bSo18AFSiriAvailabilityCS2bSDyAA8PageTypeOAA0aB5StageV11CoordinatorC7VersionOGS2btcfCTj
@@ -3957,7 +3747,6 @@ Symbols:
 - _$s9SiriSetup19DisabledSliderTrackV13unfilledColor33_9154209AE2895F0877947FCC901D6EB5LL_WZ
 - _$s9SiriSetup19DisabledSliderTrackV13unfilledColor33_9154209AE2895F0877947FCC901D6EB5LL_WZTm
 - _$s9SiriSetup19DisabledSliderTrackV13unfilledColor33_9154209AE2895F0877947FCC901D6EB5LL_Wz
-- _$s9SiriSetup19DisabledSliderTrackV4bodyQrvg7SwiftUI4ViewPAEE5frame8minWidth05idealL003maxL00K6Height0mO00nO09alignmentQr12CoreGraphics7CGFloatVSg_A5sE9AlignmentVtFQOyAE6ZStackVyAE12TupleContentVyAgEEAH5width6heightAOQrAS_AsUtFQOyAE06_ShapeI0VyAE7CapsuleVAE5ColorVG_Qo__A7_AgEE6offset1x1yQrAR_ARtFQOyA7__Qo_QPGG_Qo_AE13GeometryProxyVcfU_TA.8
 - _$s9SiriSetup19LinwoodUpgradeIntroV11coordinator11siriVariant0G12Availability02isA8Eligible14enrollmentMode08selectedA10Experience0G7Enabled07linwoodP00Q14WaitlistStatus12completePageAcA0aB5StageV11CoordinatorC_AA5InputVyAA0aH0OGASySo06AFSiriI0CGASySbGASyAA0ab10EnrollmentM0OGAA0U7ContextVyAA08SelectedaO0OGAA6OutputVySbGA9_A8_y16GenerativeModels016GenerativeModelsI0V08EnhancedarS0OSgG7SwiftUI11EnvironmentVyAA0U4TypeO08CompleteU6ActionVGtcfC
 - _$s9SiriSetup19LinwoodUpgradeIntroV11coordinator11siriVariant0G12Availability02isA8Eligible14enrollmentMode08selectedA10Experience0G7Enabled07linwoodP00Q14WaitlistStatus12completePageAcA0aB5StageV11CoordinatorC_AA5InputVyAA0aH0OGASySo06AFSiriI0CGASySbGASyAA0ab10EnrollmentM0OGAA0U7ContextVyAA08SelectedaO0OGAA6OutputVySbGA9_A8_y16GenerativeModels016GenerativeModelsI0V08EnhancedarS0OSgG7SwiftUI11EnvironmentVyAA0U4TypeO08CompleteU6ActionVGtcfcfA0_
 - _$s9SiriSetup19LinwoodUpgradeIntroV11coordinator11siriVariant0G12Availability02isA8Eligible14enrollmentMode08selectedA10Experience0G7Enabled07linwoodP00Q14WaitlistStatus12completePageAcA0aB5StageV11CoordinatorC_AA5InputVyAA0aH0OGASySo06AFSiriI0CGASySbGASyAA0ab10EnrollmentM0OGAA0U7ContextVyAA08SelectedaO0OGAA6OutputVySbGA9_A8_y16GenerativeModels016GenerativeModelsI0V08EnhancedarS0OSgG7SwiftUI11EnvironmentVyAA0U4TypeO08CompleteU6ActionVGtcfcfA1_
@@ -4029,16 +3818,11 @@ Symbols:
 - _$s9SiriSetup20VoiceTrainingServiceC08continueD033_61BA71C4F39164E7292EE64053877F44LLyyYaFTY5_
 - _$s9SiriSetup20VoiceTrainingServiceC08continueD033_61BA71C4F39164E7292EE64053877F44LLyyYaFTY7_
 - _$s9SiriSetup20VoiceTrainingServiceC08continueD033_61BA71C4F39164E7292EE64053877F44LLyyYaFTY9_
-- _$s9SiriSetup20VoiceTrainingServiceC14AVVCRetryCount33_61BA71C4F39164E7292EE64053877F44LLSivsyyXEfU_TA.373
-- _$s9SiriSetup20VoiceTrainingServiceC14AVVCRetryCount33_61BA71C4F39164E7292EE64053877F44LLSivsyyXEfU_TA.378
-- _$s9SiriSetup20VoiceTrainingServiceC14enrollmentMode33_61BA71C4F39164E7292EE64053877F44LLAA0ab10EnrollmentG0OSgvsyyXEfU_TA.354
 - _$s9SiriSetup20VoiceTrainingServiceC14startListening33_61BA71C4F39164E7292EE64053877F44LLyyYaFTu
 - _$s9SiriSetup20VoiceTrainingServiceC14startListening33_61BA71C4F39164E7292EE64053877F44LLyyYaFyyYacfU_
 - _$s9SiriSetup20VoiceTrainingServiceC14startListening33_61BA71C4F39164E7292EE64053877F44LLyyYaFyyYacfU_TA
-- _$s9SiriSetup20VoiceTrainingServiceC14startListening33_61BA71C4F39164E7292EE64053877F44LLyyYaFyyYacfU_TA.253
 - _$s9SiriSetup20VoiceTrainingServiceC14startListening33_61BA71C4F39164E7292EE64053877F44LLyyYaFyyYacfU_TA.253TQ0_
 - _$s9SiriSetup20VoiceTrainingServiceC14startListening33_61BA71C4F39164E7292EE64053877F44LLyyYaFyyYacfU_TA.253Tu
-- _$s9SiriSetup20VoiceTrainingServiceC14startListening33_61BA71C4F39164E7292EE64053877F44LLyyYaFyyYacfU_TA.362
 - _$s9SiriSetup20VoiceTrainingServiceC14startListening33_61BA71C4F39164E7292EE64053877F44LLyyYaFyyYacfU_TA.362TQ0_
 - _$s9SiriSetup20VoiceTrainingServiceC14startListening33_61BA71C4F39164E7292EE64053877F44LLyyYaFyyYacfU_TA.362Tu
 - _$s9SiriSetup20VoiceTrainingServiceC14startListening33_61BA71C4F39164E7292EE64053877F44LLyyYaFyyYacfU_TATQ0_
@@ -4048,19 +3832,6 @@ Symbols:
 - _$s9SiriSetup20VoiceTrainingServiceC14startListening33_61BA71C4F39164E7292EE64053877F44LLyyYaFyyYacfU_TY2_
 - _$s9SiriSetup20VoiceTrainingServiceC14startListening33_61BA71C4F39164E7292EE64053877F44LLyyYaFyyYacfU_Tu
 - _$s9SiriSetup20VoiceTrainingServiceC14startListening33_61BA71C4F39164E7292EE64053877F44LLyyYaFyyYacfU_Tv_r
-- _$s9SiriSetup20VoiceTrainingServiceC16badMicRetryCount33_61BA71C4F39164E7292EE64053877F44LLSivsyyXEfU_TA.372
-- _$s9SiriSetup20VoiceTrainingServiceC16badMicRetryCount33_61BA71C4F39164E7292EE64053877F44LLSivsyyXEfU_TA.377
-- _$s9SiriSetup20VoiceTrainingServiceC16myriadAdvertiser33_61BA71C4F39164E7292EE64053877F44LLAA06MyriadG0CSgvsyyXEfU_TA.357
-- _$s9SiriSetup20VoiceTrainingServiceC17audioGuideEnabled33_61BA71C4F39164E7292EE64053877F44LLSbvsyyXEfU_TA.355
-- _$s9SiriSetup20VoiceTrainingServiceC18lastPlayedTryAgain33_61BA71C4F39164E7292EE64053877F44LLAA0D5StateOvsyyXEfU_TA.262
-- _$s9SiriSetup20VoiceTrainingServiceC18lastPlayedTryAgain33_61BA71C4F39164E7292EE64053877F44LLAA0D5StateOvsyyXEfU_TA.356
-- _$s9SiriSetup20VoiceTrainingServiceC19voiceProfileManager33_61BA71C4F39164E7292EE64053877F44LLSo08SRSVoicegH0CSgvsyyXEfU_TA.351
-- _$s9SiriSetup20VoiceTrainingServiceC19voiceTriggerEnabled33_61BA71C4F39164E7292EE64053877F44LLAA6OutputVySbGSgvsyyXEfU_TA.353
-- _$s9SiriSetup20VoiceTrainingServiceC22currentAudioHintPlayed33_61BA71C4F39164E7292EE64053877F44LLSbSgvsyyXEfU_TA.268
-- _$s9SiriSetup20VoiceTrainingServiceC23analyticsEnrollmentMode33_61BA71C4F39164E7292EE64053877F44LLSo40SIRISETUPSchemaSIRISETUPEnrollmentUIModeVSgvsyyXEfU_TA.352
-- _$s9SiriSetup20VoiceTrainingServiceC23isRetryingCurrentPhrase33_61BA71C4F39164E7292EE64053877F44LLSbvsyyXEfU_TA.267
-- _$s9SiriSetup20VoiceTrainingServiceC23isRetryingCurrentPhrase33_61BA71C4F39164E7292EE64053877F44LLSbvsyyXEfU_TA.371
-- _$s9SiriSetup20VoiceTrainingServiceC26enrollmentMarkedSuccessful33_61BA71C4F39164E7292EE64053877F44LLSbvsyyXEfU_TA.327
 - _$s9SiriSetup20VoiceTrainingServiceC26startListeningForUtterance33_61BA71C4F39164E7292EE64053877F44LLyyYaF
 - _$s9SiriSetup20VoiceTrainingServiceC26startListeningForUtterance33_61BA71C4F39164E7292EE64053877F44LLyyYaFTQ1_
 - _$s9SiriSetup20VoiceTrainingServiceC26startListeningForUtterance33_61BA71C4F39164E7292EE64053877F44LLyyYaFTQ3_
@@ -4137,7 +3908,6 @@ Symbols:
 - _$s9SiriSetup25AssistantSettingsMainViewV12mainSections33_A51A35E5EF6057669F62C97ED0BE8624LLQrvgAA019AssetDownloadFooterF0VSgyXEfU0_yycfU_
 - _$s9SiriSetup25AssistantSettingsMainViewV12mainSections33_A51A35E5EF6057669F62C97ED0BE8624LLQrvgAA019AssetDownloadFooterF0VSgyXEfU0_yycfU_TA
 - _$s9SiriSetup25AssistantSettingsMainViewV14siriAppSection33_A51A35E5EF6057669F62C97ED0BE8624LLQrvg7SwiftUI14NavigationLinkVyAF4TextVs5NeverOGyXEfU_AJyXEfU_
-- _$s9SiriSetup25AssistantSettingsMainViewV16enablementButton33_A51A35E5EF6057669F62C97ED0BE8624LL5title6actionQrSS_yyctF7SwiftUI0F0PAHE12contentShape_6eoFillQrqd___SbtAH0V0Rd__lFQOyAH6HStackVyAH12TupleContentVyAH4TextV_AH6SpacerVQPGG_AH9RectangleVQo_yXEfU_TA.144
 - _$s9SiriSetup25AssistantSettingsMainViewV7placard33_A51A35E5EF6057669F62C97ED0BE8624LL0D00d18FeatureDescriptionF0Vvg
 - _$s9SiriSetup25AssistantSettingsMainViewV8mainBody33_A51A35E5EF6057669F62C97ED0BE8624LLQrvg7SwiftUI19_ConditionalContentVyAHyAHyAHyAA0adF0PAAE04siriD9ModifiersQryFQOyAA07TalkingdF0V_Qo_AjAEAKQryFQOyAA0c8LanguageF0V_Qo_GAHyAjAEAKQryFQOyAA0d14VoiceSelectionF0V_Qo_AjAEAKQryFQOyAA0A9ResponsesV_Qo_GGAHyAHyAjAEAKQryFQOyAA0a3AppdF0V_Qo_AjAEAKQryFQOyAA09AppAccessdF0V_Qo_GAHyAjAEAKQryFQOyAA07AppClipdF0V_Qo_AjAEAKQryFQOyAA0c7HistoryF0V_Qo_GGG024GenerativePartnerServiceR0017GenerativePartnerd5PanelF0VGAA0aD11DestinationOcfU0_
 - _$s9SiriSetup25AssistantSettingsMainViewV8mainBody33_A51A35E5EF6057669F62C97ED0BE8624LLQrvg7SwiftUI19_ConditionalContentVyAHyAHyAHyAA0adF0PAAE04siriD9ModifiersQryFQOyAA07TalkingdF0V_Qo_AjAEAKQryFQOyAA0c8LanguageF0V_Qo_GAHyAjAEAKQryFQOyAA0d14VoiceSelectionF0V_Qo_AjAEAKQryFQOyAA0A9ResponsesV_Qo_GGAHyAHyAjAEAKQryFQOyAA0a3AppdF0V_Qo_AjAEAKQryFQOyAA09AppAccessdF0V_Qo_GAHyAjAEAKQryFQOyAA07AppClipdF0V_Qo_AjAEAKQryFQOyAA0c7HistoryF0V_Qo_GGG024GenerativePartnerServiceR0017GenerativePartnerd5PanelF0VGAA0aD11DestinationOcfU0_TA
@@ -4184,7 +3954,7 @@ Symbols:
 - _$s9SiriSetup30MainAssistantSettingsViewModelC09appAccessE9Providing13afPreferencesAcA03AppieJ0_p_So13AFPreferencesCSgtcfcyAA0A18AssetDownloadStateOcfU_
 - _$s9SiriSetup30MainAssistantSettingsViewModelC09appAccessE9Providing13afPreferencesAcA03AppieJ0_p_So13AFPreferencesCSgtcfcyAA0A18AssetDownloadStateOcfU_TA
 - _$s9SiriSetup30MainAssistantSettingsViewModelC09appAccessE9ProvidingAA03AppieJ0_pvM
-- _$s9SiriSetup30MainAssistantSettingsViewModelC09appAccessE9ProvidingAA03AppieJ0_pvM.resume.0
+- _$s9SiriSetup30MainAssistantSettingsViewModelC09appAccessE9ProvidingAA03AppieJ0_pvM.resume
 - _$s9SiriSetup30MainAssistantSettingsViewModelC09appAccessE9ProvidingAA03AppieJ0_pvMTj
 - _$s9SiriSetup30MainAssistantSettingsViewModelC09appAccessE9ProvidingAA03AppieJ0_pvMTq
 - _$s9SiriSetup30MainAssistantSettingsViewModelC09appAccessE9ProvidingAA03AppieJ0_pvg
@@ -4195,11 +3965,8 @@ Symbols:
 - _$s9SiriSetup30MainAssistantSettingsViewModelC09appAccessE9ProvidingAA03AppieJ0_pvs
 - _$s9SiriSetup30MainAssistantSettingsViewModelC09appAccessE9ProvidingAA03AppieJ0_pvsTj
 - _$s9SiriSetup30MainAssistantSettingsViewModelC09appAccessE9ProvidingAA03AppieJ0_pvsTq
-- _$s9SiriSetup30MainAssistantSettingsViewModelCfdyyScMYcXEfU_TA.71
 - _$s9SiriSetup34AssistantLanguageValueListItemViewVWObTm
 - _$s9SiriSetup34AssistantLanguageValueListItemViewVWOcTm
-- _$s9SiriSetup34SettingsExternalAISectionViewModelC20shouldShowEntryPointSbvsyyXEfU_TA.32
-- _$s9SiriSetup34SettingsExternalAISectionViewModelC23shouldDisableEntryPointSbvsyyXEfU_TA.31
 - _$s9SiriSetup5InputVyAA0A7VariantOGMaTm
 - _$s9SiriSetup6OutputVySo11AFVoiceInfoCSgGWOc
 - _$s9SiriSetup7StringsO9localized_6gender12languageCode10phraseType11localDevice06targetK0S2S_So13AFVoiceGenderVSSSgAA09SRSPhraseI0OSgAA0kI0OAQSgtFZ
@@ -4232,136 +3999,43 @@ Symbols:
 - _$ss12_ArrayBufferV20_consumeAndCreateNew14bufferIsUnique15minimumCapacity13growForAppendAByxGSb_SiSbtFSS5label_9SiriSetup14ReadDataSource_p6sourcet_Tg5Tm
 - _$ss22_ContiguousArrayBufferV20_consumeAndCreateNew14bufferIsUnique15minimumCapacity13growForAppendAByxGSb_SiSbtFSay9SiriSetup18WritableDataSource_pG_Tg5
 - _$ss6_merge3low3mid4high6buffer2bySbSpyxG_A3GSbx_xtKXEtKlF9SiriSetup19VoiceSelectionStoreC11DialectInfoV_Tg503$s9g7Setup19ijk61C12loadDialects33_19E6FA3AD39B2A5B1B3EBB3077FD021ALLyyFSbAC11lM11V_AGtXEfU0_Tf1nnnnc_n
-- _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.108
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.108TQ0_
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.108Tu
-- _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.155
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.155TQ0_
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.155Tu
-- _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.258
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.258TQ0_
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.258Tu
-- _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.28
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.28TQ0_
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.28Tu
-- _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.310
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.310TQ0_
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.310Tu
-- _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.325
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.325TQ0_
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.325Tu
-- _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.33
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.33TQ0_
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.33Tu
-- _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.367
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.367TQ0_
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.367Tu
-- _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.53
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.53TQ0_
 - _$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.53Tu
 - ___swift_closure_destructor.102Tm
-- ___swift_closure_destructor.106
-- ___swift_closure_destructor.119
-- ___swift_closure_destructor.133
-- ___swift_closure_destructor.136
-- ___swift_closure_destructor.139
 - ___swift_closure_destructor.142Tm
-- ___swift_closure_destructor.146
-- ___swift_closure_destructor.149
-- ___swift_closure_destructor.153
-- ___swift_closure_destructor.158
-- ___swift_closure_destructor.161
-- ___swift_closure_destructor.181
-- ___swift_closure_destructor.190
-- ___swift_closure_destructor.251
-- ___swift_closure_destructor.256
-- ___swift_closure_destructor.294
-- ___swift_closure_destructor.298
 - ___swift_closure_destructor.298Tm
-- ___swift_closure_destructor.304
 - ___swift_closure_destructor.304Tm
-- ___swift_closure_destructor.308
-- ___swift_closure_destructor.313
-- ___swift_closure_destructor.319
-- ___swift_closure_destructor.323
-- ___swift_closure_destructor.342
-- ___swift_closure_destructor.365
-- ___swift_closure_destructor.380
-- ___swift_closure_destructor.387
-- ___swift_closure_destructor.390
-- ___swift_closure_destructor.394
-- ___swift_closure_destructor.397
-- ___swift_closure_destructor.401
-- ___swift_closure_destructor.404
-- ___swift_closure_destructor.60
-- ___swift_closure_destructor.70
-- ___swift_closure_destructor.84
-- ___swift_closure_destructor.89
 - ___swift_closure_destructor.90Tm
-- ___swift_closure_destructor.98
-- ___swift_exist.box.addr_destructor.106
-- ___swift_exist.box.addr_destructor.119
-- ___swift_exist.box.addr_destructor.122
-- ___swift_exist.box.addr_destructor.132
-- ___swift_exist.box.addr_destructor.140
-- ___swift_exist.box.addr_destructor.149
-- ___swift_exist.box.addr_destructor.152
-- ___swift_exist.box.addr_destructor.155
-- ___swift_exist.box.addr_destructor.37
-- ___swift_exist.box.addr_destructor.77
-- ___swift_exist.box.addr_destructor.91
 - ___unnamed_14
 - ___unnamed_17
 - ___unnamed_19
 - ___unnamed_8
 - _associated conformance 9SiriSetup0A15AppSettingsViewV7SwiftUI0E0AA4BodyAdEP_AdE
-- _block_copy_helper.183
-- _block_copy_helper.186
-- _block_copy_helper.192
-- _block_copy_helper.300
-- _block_copy_helper.315
-- _block_copy_helper.344
-- _block_copy_helper.382
-- _block_copy_helper.55
-- _block_copy_helper.66
-- _block_descriptor.185
-- _block_descriptor.188
-- _block_descriptor.194
-- _block_descriptor.302
-- _block_descriptor.317
-- _block_descriptor.346
-- _block_descriptor.384
-- _block_descriptor.57
-- _block_descriptor.68
-- _block_destroy_helper.184
-- _block_destroy_helper.187
-- _block_destroy_helper.193
-- _block_destroy_helper.301
-- _block_destroy_helper.316
-- _block_destroy_helper.345
-- _block_destroy_helper.383
-- _block_destroy_helper.56
-- _block_destroy_helper.67
-- _get_witness_table 7SwiftUI12TupleContentVyAA08ModifiedD0VyAA16SubscriptionViewVySo20NSNotificationCenterC10FoundationE9PublisherVAGyAlA0G0PAAE7gesture_9includingQrqd___AA11GestureMaskVtAA0N0Rd__lFQOyAnAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAEyAA5GroupVyAA012_ConditionalD0VyAZyAEyAEy9SiriSetup019CarouselVideoPlayerG0VAA18_AspectRatioLayoutVGAA12_FrameLayoutVGAEyA1_AA16_FlexFrameLayoutVGGA_0x6DeviceyzG0VGGAA19_BackgroundModifierVyAA14GeometryReaderVyAnAEAtuV_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAEyAA5ColorVAA25_AppearanceActionModifierVG_12CoreGraphics7CGFloatVQo_GGG_SiQo__AA06_EndedN0VyAA08_ChangedN0VyAA04DragN0VGGQo_GGAA30_SafeAreaRegionsIgnoringLayoutVG_AEyAEyAEyAnAEAO_APQrqd___ARtAaSRd__lFQOyAEyAXyAZyAEyAA6VStackVyACyAEyA48_yAEyA_0x15PageDescriptionG0VAA30_EnvironmentKeyWritingModifierVyA_0X14PageTransitionVGGGAA14_OpacityEffectVG_AEyAA6SpacerVA6_GAEyAEyA_0X13PhraseOverlayVAA16_FixedSizeLayoutVGAA14_PaddingLayoutVGSgA63_A_0W11PageButtonsVQPGGA9_GAEyA48_yACyA72__A60_AEyA48_yA_0x13PageIndicatorG0VGA59_GA62_SgA74_QPGGA70_GGGAA16_OverlayModifierVyA19_yAEyAA06_ShapeG0VyAA9RectangleVA21_GAA26_PreferenceWritingModifierVyA_16ContainerSizeKeyVGGGGG_A40_Qo_AA21_TraitWritingModifierVyAA18TransitionTraitKeyVGGAA25_PreferenceActionModifierVyA98_So6CGSizeVSQA25_yHCg0_GGA_0X15ToolbarModifier33_489BB693BFC14EDADD1885B3917AEC81LLVGSgQPGAaMHPA46_AaMHPA43_AaMHPyHC_A45_AA0G8ModifierHPyHCHC_A121_AaMHpA120_AaMHPA116_AaMHPA110_AaMHPqd0__AaMHD3_A104_HO_A109_AAA123_HPyHCHC_A115_AAA123_HPyHCHC_A119_AAA123_HPyHCHC_HCHX_HC.100
-- _get_witness_table 7SwiftUI15ModifiedContentVy9SiriSetup11WelcomeViewVAA30_SafeAreaRegionsIgnoringLayoutVGAA0H0HPAfaJHPyHC_AhA0H8ModifierHPyHCHC.21
-- _get_witness_table 7SwiftUI15ModifiedContentVyAA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonG0Rd__lFQOyAA0I0VyAA07LabeledD0VyAA5LabelVyAA4TextV9SiriSetup018SelectionCheckmarkE0VGAOGG_AA014NavigationLinkiG0Vys5NeverOGQo_AA19_BackgroundModifierVyAA0qR0VyAA05EmptyE0VACyAE8SettingsE22settingsListAppearanceQryFQOyAeAE15navigationTitleyQrAOFQOyAP023AssistantLanguageDetailE0V_Qo__Qo_AA01_z6ActionU0VGGGGAaDHPqd0__AaDHD3_A_HO_A17_AA0eU0HPyHCHC.5
-- _get_witness_table 7SwiftUI15ModifiedContentVyACyAA14GeometryReaderVyACyAA6ZStackVyAA05TupleD0VyACyAA10_ShapeViewVyAA7CapsuleVAA5ColorVGAA12_FrameLayoutVG_AsCyAsA13_OffsetEffectVGQPGGAA05_FlexmN0VGGARGAA31AccessibilityAttachmentModifierVGAA0J0HPA1_AAA5_HPA0_AAA5_HPyHC_ArA0jT0HPyHCHC_A3_AAA6_HPyHCHC.4
-- _get_witness_table 7SwiftUI15ModifiedContentVyACyAA4ViewPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA5GroupVyAA012_ConditionalD0VyAOyAA6ZStackVyAA05TupleD0VyACyAA06_ShapeE0VyAA9RectangleVAA5ColorVGAA30_SafeAreaRegionsIgnoringLayoutVG_AA6VStackVyAMyAOy9SiriSetup08CarouselE033_84D13E1A91AF36ADDF3267D968F26E51LLVAA08ProgressE0VyAA05EmptyE0VA11_GGGGQPGGAQyA14_GGAQyASyA1__A14_QPGGGG_Qo_AA25_AppearanceActionModifierVGA26_GAaDHPA27_AaDHPqd__AaDHD2_A24_HO_A26_AA0E8ModifierHPyHCHC_A26_AAA29_HPyHCHC.33
-- _get_witness_table 7SwiftUI15NavigationStackVySay9SiriSetup8PageTypeOGAA4ViewPAAE7toolbar7contentQrqd__yXE_tAA14ToolbarContentRd__lFQOyAiAE21navigationDestination3for11destinationQrqd__m_qd_0_qd__ctSHRd__AaHRd_0_r0_lFQOyAA03AnyI0V_AfQQo__AA0L4ItemVyytAA6ButtonVyAA07DefaultT5LabelVGGSgQo_GAaHHPyHC.78
-- _get_witness_table 7SwiftUI19_ConditionalContentVy9SiriSetup24CustomVoiceSelectionViewVAA5GroupVyACyACyAD0hi4ProxJ0VAA08ModifiedD0VyAD014LegacySettingshI0VAA30_SafeAreaRegionsIgnoringLayoutVGGAD0hi7WelcomeJ0VGGGAA0J0HPAfaXHPyHC_AvaXHPAuaXHPAraXHPAjaXHPyHC_AqaXHPAnaXHPyHC_ApA0J8ModifierHPyHCHCHC_AtaXHPyHCHC_HCHC.42
-- _get_witness_table 7SwiftUI4ViewRzlAA4ListVys5NeverOxGAaBHPyHC.4
-- _get_witness_table 7SwiftUI5GroupVyAA19_ConditionalContentVyAEy9SiriSetup22VoiceSelectionProxViewVAA08ModifiedE0VyAF014LegacySettingshI0VAA30_SafeAreaRegionsIgnoringLayoutVGGAF0hi7WelcomeK0VGGAA0K0HPAsaUHPApaUHPAhaUHPyHC_AoaUHPAlaUHPyHC_AnA0K8ModifierHPyHCHCHC_AraUHPyHCHC_HC.41
-- _get_witness_table 9SiriSetup0A12SettingsViewRzl7SwiftUI15ModifiedContentVyAC0D0P0C0E22settingsListAppearanceQryFQOyAgCE15navigationTitleyQrAC4TextVFQOyx_Qo__Qo_AC01_K14ActionModifierVGAcFHPqd__AcFHD2_ANHO_ApC0dP0HPyHCHC.3
-- _get_witness_table 9SiriSetup11WelcomeViewV7SwiftUI0D0HPyHC.2
-- _get_witness_table 9SiriSetup8PageTypeO0C4ViewRzl7SwiftUI15ModifiedContentVyAGyAGyAGyAGyAGyAGyxAE30_SafeAreaRegionsIgnoringLayoutVGAE26_PreferenceWritingModifierVyAE23PreferredColorSchemeKeyVGGAE012_EnvironmentupQ0VyAC08CompleteC6ActionVGGARySayACGGGARyAA14StringsContextCGGARyAA0aB14EnrollmentModeOGGAE011_AppearancexQ0VGAE0E0HPA5_AEA9_HPA1_AEA9_HPAyEA9_HPAvEA9_HPApEA9_HPAjEA9_HPxAcDHD1_AEA9_HI1__AiE0eQ0HPyHCHC_AoEA10_HPyHCHC_AuEA10_HPyHCHC_AxEA10_HPyHCHC_A0_AEA10_HPyHCHC_A4_AEA10_HPyHCHC_A7_AEA10_HPyHCHC.79
-- _get_witness_table 9SiriSetup8PageTypeO0C4ViewRzlAC0cE9ContainerVy_xGAA0cF0HPyHC.81
-- _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE5sheet11isPresented9onDismiss7contentQrAA7BindingVySbG_yycSgqd__yctAaBRd__lFQOyAA15ModifiedContentVy9SiriSetup07WelcomeC0VAA30_SafeAreaRegionsIgnoringLayoutVG_AcAE19presentationDetentsyQrShyAA18PresentationDetentVGFQOyAS_Qo_Qo_HO.45
-- _get_witness_table qd0__7SwiftUI4ViewHD4_AaBPAAE5alert_11isPresented7actions7messageQrAA4TextV_AA7BindingVySbGqd__yXEqd_0_yXEtAaBRd__AaBRd_0_r0_lFQOyAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOy9SiriSetup0P17SettingsContainerVyAA12TupleContentVyAA7SectionVyAicAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE12labelsHiddenQryFQOyAcAE11pickerStyleyQrqd__AA11PickerStyleRd__lFQOyAA6PickerVyAISbAWyAcAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAI_SbQo__A8_QPGG_AA17InlinePickerStyleVQo__Qo__SbQo_AIG_AYyAicAEAZA_A0__Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEA1_QryFQOyAcAEA2_yQrqd__AAA3_Rd__lFQOyA5_yAiS30AppKeepConversationsTTLOptionsOSgAWyAcAEA6__A7_Qrqd___SbtSHRd__lFQOyAI_A18_Qo__A20_A20_QPGG_A12_Qo__Qo__A19_Qo_AIGQPGG_Qo__AWyAA6ButtonVyAIG_A32_QPGAA012_ConditionalU0VyA2IGQo_HO.5
-- _get_witness_table qd0__7SwiftUI4ViewHD5_AaBPAAE5alert_11isPresented7actions7messageQrqd___AA7BindingVySbGqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAcAE5sheet4item9onDismiss7contentQrAIyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lFQOyAcAEAklmNQrAP_AQqd_0_qd__ctsARRd__AaBRd_0_r0_lFQOyAcAEAkemNQrAJ_AQqd__yctAaBRd__lFQOyAcAE18confirmationDialog_AE15titleVisibilityAfGQrAA4TextV_AjA0S0Oqd__yXEqd_0_yXEtAaBRd__AaBRd_0_r0_lFQOyAcAEAdeNQrAJ_AA5AlertVyXEtFQOyAC8SettingsE41settingsFeatureDescriptionNavigationTitleyQrAVFQOyAcAE21navigationDestinationAE11destinationQrAJ_qd__yXEtAaBRd__lFQOyAcAEA1_3forA2_Qrqd__m_qd_0_qd__ctSHRd__AaBRd_0_r0_lFQOyACA_E0W14ListAppearanceQryFQOyAA15ModifiedContentVyAA4ListVys5NeverOAA12TupleContentVyAcAEAkemNQrAJ_AQqd__yctAaBRd__lFQOyAA7SectionVyAA05EmptyC0VA_0vxyC0V9SiriSetup019AssetDownloadFooterC0VSgG_AA0Z5StackVyAA0Z4PathVAcAE7toolbarANQrqd__yXE_tAA14ToolbarContentRd__lFQOyA19_07PrivacyC0V_AA11ToolbarItemVyytAA6ButtonVyAA18DefaultButtonLabelVGGQo_GQo_Sg_AA19_ConditionalContentVyA12_yA45_yA45_yA14_yA16_A6_yA35_yA6_yAA6HStackVyA12_yAV_AA6SpacerVQPGGAA21_ContentShapeModifierVyAA9RectangleVGGGAA24_ForegroundStyleModifierVyAA5ColorVGGAVGA14_yA16_AA14LabeledContentVyA2VGAVGGA45_yA16_A16_GGSg_A65_SgQPGA14_yA16_A64_A16_GGA14_yA16_A12_yAA0Z4LinkVyA68_A10_GSg_A80_A80_A79_yAVA10_GA79_yAV19PreferencesExtended021PreferencesControllerC0VGSgQPGA16_GA14_yA16_AcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE0L6Change2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA6ToggleVyAVG_SbQo__Qo_AVGSgA12_yA14_yA16_A82_A16_GSg_A14_yA16_AcAEAkemNQrAJ_AQqd__yctAaBRd__lFQOyAcAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyA35_yA68_G_AA0Z15LinkButtonStyleVyA10_GQo__A19_022SiriSetupContactPickerC0VQo_A16_GQPGSgA12_yA6_yA14_y024GenerativePartnerServiceB0033ExternalAISettingsEntryPointLabelC0V06headerC0QryFZQOy_Qo_A79_yA123_A10_GA123_06footerC0QryFZQOy_Qo_GAA32_EnvironmentKeyTransformModifierVySbGGSg_AcAEAkemNQrAJ_AQqd__yctAaBRd__lFQOyA14_yA16_A12_yA82__A82_QPGA6_yAvA30_EnvironmentKeyWritingModifierVyAA13OpenURLActionVGGG_A41_Qo_QPGSgA14_yA16_A35_yAVGA16_GA14_yA16_A58_A16_GSgQPGGAA25_AppearanceActionModifierVG_Qo__A19_04SiriV11DestinationOA45_yA45_yA45_yA45_yA6_yACA_EA4_QryFQOyAcAE15navigationTitleyQrAVFQOyA19_07TalkingvC0V_Qo__Qo_A153_GA6_yACA_EA4_QryFQOyAcAEA158_yQrAVFQOyA19_017AssistantLanguageC0V_Qo__Qo_A153_GGA45_yA6_yACA_EA4_QryFQOyAcAEA158_yQrAVFQOyA19_0v14VoiceSelectionC0V_Qo__Qo_A153_GA6_yACA_EA4_QryFQOyAcAEA158_yQrAVFQOyA19_13SiriResponsesV_Qo__Qo_A153_GGGA45_yA45_yA6_yACA_EA4_QryFQOyAcAEA158_yQrAVFQOyA19_07SiriAppvC0V_Qo__Qo_A153_GA6_yACA_EA4_QryFQOyAcAEA158_yQrAVFQOyA19_09AppAccessvC0V_Qo__Qo_A153_GGA45_yA6_yACA_EA4_QryFQOyAcAEA158_yQrAVFQOyA19_07AppClipvC0V_Qo__Qo_A153_GA6_yACA_EA4_QryFQOyAcAEA158_yQrAVFQOyA19_016AssistantHistoryC0V_Qo__Qo_A153_GGGGA121_017GenerativePartnerv5PanelC0VGQo__A174_SgQo__Qo__Qo__A12_yA146__A146_QPGAVQo__A19_20SiriDisablementSheetVQo__A19_14SiriSetupStageV11CoordinatorCA220_Qo__A222_A220_Qo__SSA214_AVQo_HO.13
-- _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE18toolbarColorScheme_3forQrAA0eF0OSg_AA16ToolbarPlacementVdtFQOyAcAE29navigationBarTitleDisplayModeyQrAA010NavigationK4ItemV0lmN0OFQOyAcAE0jL0yQrAA18LocalizedStringKeyVFQOyAA15ModifiedContentVyATyATyAcAE0D07contentQrqd__yXE_tAA0hU0Rd__lFQOyAA6ZStackVyAA05TupleU0VyATyAA0E0VAA30_SafeAreaRegionsIgnoringLayoutVG_AA6VStackVyA_yA6_yA_y9SiriSetup07OrbGlowC0V_A6_yA_yATyAA6HStackVyA_yAA4TextV_AA6SpacerVATyATyAA4MenuVyATyA11_yA_yA13__ATyATyATyAA5ImageVAA012_EnvironmentS15WritingModifierVyAA4FontVSgGGAA24_ForegroundStyleModifierVyA1_GGA21_yAA015SymbolRenderingN0VSgGGQPGGA29_GAA7ForEachVySayA7_19VoiceSelectionStoreC11DialectInfoVGSSAA6ButtonVyA13_GGGA29_GAA012_EnvironmentS17TransformModifierVySbGGQPGGAA12_FrameLayoutVG_ATyATyA11_yA40_ySaySi6offset_So11AFVoiceInfoC7elementtGSSSgA7_05VoiceE6ButtonVGGA59_GAA18_AnimationModifierVyA66_GGQPGGATyATyA6_yA_yA6_yA_yA13__AA012_ConditionalU0VyATyAA6SliderVyAA05EmptyC0VA83_GA21_yAA13AnyShapeStyleVSgGGA7_19DisabledSliderTrackVGQPGG_A94_QPGGA59_GAA14_PaddingLayoutVGATyA6_yA_yA13__ATyA13_AA16_FixedSizeLayoutVGQPGGA59_GQPGG_A15_QPGGQPGG_AA0hP0VyytATyA47_yAA18DefaultButtonLabelVGA54_GGQo_A7_21AssetDownloadModifierVGAA25_AppearanceActionModifierVGA125_G_Qo__Qo__Qo_HO.9
-- _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOy9SiriSetup0I17SettingsContainerVyAA12TupleContentVyAA7SectionVyAA4TextVAcAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE12labelsHiddenQryFQOyAcAE11pickerStyleyQrqd__AA06PickerX0Rd__lFQOyAA0Y0VyARSo24AFUseDeviceSpeakerForTTSVANyAcAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAR_A0_Qo_Sg_A4_A3_QPGG_AA06InlineyX0VQo__Qo__A0_Qo_ARG_APyAA05EmptyC0VAcAEAstU_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA6ToggleVyARG_SbQo_ARGSgA19_ANyAPyArNyA18__A18_SgQPGARG_AJ021MessagingLanguageListC0VQPGSgAPyArcAEAstU_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAVQryFQOyAcAEAWyQrqd__AaXRd__lFQOyAZyArJ0I9ResponsesV13CarAudioRoute33_74CA3B7196D9BA3639E80CD0E65DFC2ELLOANyAcAEA1__A2_Qrqd___SbtSHRd__lFQOyAR_A32_Qo__A33_SgA33_QPGG_A8_Qo__Qo__A32_Qo_AA6VStackVyANyAR_ANyAA6SpacerV_ARQPGSgQPGGGSgQPGG_Qo_HO.4
-- _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOy9SiriSetup0I17SettingsContainerVyAA7SectionVyAA05EmptyC0VAA7ForEachVySayAJ09AppAccessQ4InfoVGSSAA14NavigationLinkVyAA5LabelVyAA4TextVAA15ModifiedContentVyA1_yAA5ImageVAA12_FrameLayoutVGAA11_ClipEffectVyAA16RoundedRectangleVGGGA1_yAC0K0E22settingsListAppearanceQryFQOyAcAE15navigationTitleyQrA_FQOyAJ0qr6DetailC0V_Qo__Qo_AA25_AppearanceActionModifierVGGGAPGG_Qo_HO.7
-- _objc_msgSend$scheduleFile:atTime:completionHandler:
+- _get_witness_table 7SwiftUI15ModifiedContentVyAA4ViewPAAE11buttonStyleyQrqd__AA015PrimitiveButtonG0Rd__lFQOyAA0I0VyAA07LabeledD0VyAA5LabelVyAA4TextV9SiriSetup018SelectionCheckmarkE0VGAOGG_AA014NavigationLinkiG0Vys5NeverOGQo_AA19_BackgroundModifierVyAA0qR0VyAA05EmptyE0VACyAE8SettingsE22settingsListAppearanceQryFQOyAeAE15navigationTitleyQrAOFQOyAP023AssistantLanguageDetailE0V_Qo__Qo_AA01_z6ActionU0VGGGGAaDHPqd0__AaDHD3_A_HO_A17_AA0eU0HPyHCHC
+- _get_witness_table 7SwiftUI15ModifiedContentVyACyAA14GeometryReaderVyACyAA6ZStackVyAA05TupleD0VyACyAA10_ShapeViewVyAA7CapsuleVAA5ColorVGAA12_FrameLayoutVG_AsCyAsA13_OffsetEffectVGQPGGAA05_FlexmN0VGGARGAA31AccessibilityAttachmentModifierVGAA0J0HPA1_AAA5_HPA0_AAA5_HPyHC_ArA0jT0HPyHCHC_A3_AAA6_HPyHCHC
+- _get_witness_table 9SiriSetup0A12SettingsViewRzl7SwiftUI15ModifiedContentVyAC0D0P0C0E22settingsListAppearanceQryFQOyAgCE15navigationTitleyQrAC4TextVFQOyx_Qo__Qo_AC01_K14ActionModifierVGAcFHPqd__AcFHD2_ANHO_ApC0dP0HPyHCHC
+- _get_witness_table 9SiriSetup8PageTypeO0C4ViewRzl7SwiftUI15ModifiedContentVyAGyAGyAGyAGyAGyAGyxAE30_SafeAreaRegionsIgnoringLayoutVGAE26_PreferenceWritingModifierVyAE23PreferredColorSchemeKeyVGGAE012_EnvironmentupQ0VyAC08CompleteC6ActionVGGARySayACGGGARyAA14StringsContextCGGARyAA0aB14EnrollmentModeOGGAE011_AppearancexQ0VGAE0E0HPA5_AEA9_HPA1_AEA9_HPAyEA9_HPAvEA9_HPApEA9_HPAjEA9_HPxAcDHD1_AEA9_HI1__AiE0eQ0HPyHCHC_AoEA10_HPyHCHC_AuEA10_HPyHCHC_AxEA10_HPyHCHC_A0_AEA10_HPyHCHC_A4_AEA10_HPyHCHC_A7_AEA10_HPyHCHC
+- _get_witness_table qd0__7SwiftUI4ViewHD4_AaBPAAE5alert_11isPresented7actions7messageQrAA4TextV_AA7BindingVySbGqd__yXEqd_0_yXEtAaBRd__AaBRd_0_r0_lFQOyAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOy9SiriSetup0P17SettingsContainerVyAA12TupleContentVyAA7SectionVyAicAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE12labelsHiddenQryFQOyAcAE11pickerStyleyQrqd__AA11PickerStyleRd__lFQOyAA6PickerVyAISbAWyAcAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAI_SbQo__A8_QPGG_AA17InlinePickerStyleVQo__Qo__SbQo_AIG_AYyAicAEAZA_A0__Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEA1_QryFQOyAcAEA2_yQrqd__AAA3_Rd__lFQOyA5_yAiS30AppKeepConversationsTTLOptionsOSgAWyAcAEA6__A7_Qrqd___SbtSHRd__lFQOyAI_A18_Qo__A20_A20_QPGG_A12_Qo__Qo__A19_Qo_AIGQPGG_Qo__AWyAA6ButtonVyAIG_A32_QPGAA012_ConditionalU0VyA2IGQo_HO
+- _get_witness_table qd0__7SwiftUI4ViewHD5_AaBPAAE5alert_11isPresented7actions7messageQrqd___AA7BindingVySbGqd_0_yXEqd_1_yXEtSyRd__AaBRd_0_AaBRd_1_r1_lFQOyAcAE5sheet4item9onDismiss7contentQrAIyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lFQOyAcAEAklmNQrAP_AQqd_0_qd__ctsARRd__AaBRd_0_r0_lFQOyAcAEAkemNQrAJ_AQqd__yctAaBRd__lFQOyAcAE18confirmationDialog_AE15titleVisibilityAfGQrAA4TextV_AjA0S0Oqd__yXEqd_0_yXEtAaBRd__AaBRd_0_r0_lFQOyAcAEAdeNQrAJ_AA5AlertVyXEtFQOyAC8SettingsE41settingsFeatureDescriptionNavigationTitleyQrAVFQOyAcAE21navigationDestinationAE11destinationQrAJ_qd__yXEtAaBRd__lFQOyAcAEA1_3forA2_Qrqd__m_qd_0_qd__ctSHRd__AaBRd_0_r0_lFQOyACA_E0W14ListAppearanceQryFQOyAA15ModifiedContentVyAA4ListVys5NeverOAA12TupleContentVyAcAEAkemNQrAJ_AQqd__yctAaBRd__lFQOyAA7SectionVyAA05EmptyC0VA_0vxyC0V9SiriSetup019AssetDownloadFooterC0VSgG_AA0Z5StackVyAA0Z4PathVAcAE7toolbarANQrqd__yXE_tAA14ToolbarContentRd__lFQOyA19_07PrivacyC0V_AA11ToolbarItemVyytAA6ButtonVyAA18DefaultButtonLabelVGGQo_GQo_Sg_AA19_ConditionalContentVyA12_yA45_yA45_yA14_yA16_A6_yA35_yA6_yAA6HStackVyA12_yAV_AA6SpacerVQPGGAA21_ContentShapeModifierVyAA9RectangleVGGGAA24_ForegroundStyleModifierVyAA5ColorVGGAVGA14_yA16_AA14LabeledContentVyA2VGAVGGA45_yA16_A16_GGSg_A65_SgQPGA14_yA16_A64_A16_GGA14_yA16_A12_yAA0Z4LinkVyA68_A10_GSg_A80_A80_A79_yAVA10_GA79_yAV19PreferencesExtended021PreferencesControllerC0VGSgQPGA16_GA14_yA16_AcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE0L6Change2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA6ToggleVyAVG_SbQo__Qo_AVGSgA12_yA14_yA16_A82_A16_GSg_A14_yA16_AcAEAkemNQrAJ_AQqd__yctAaBRd__lFQOyAcAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyA35_yA68_G_AA0Z15LinkButtonStyleVyA10_GQo__A19_022SiriSetupContactPickerC0VQo_A16_GQPGSgA12_yA6_yA14_y024GenerativePartnerServiceB0033ExternalAISettingsEntryPointLabelC0V06headerC0QryFZQOy_Qo_A79_yA123_A10_GA123_06footerC0QryFZQOy_Qo_GAA32_EnvironmentKeyTransformModifierVySbGGSg_AcAEAkemNQrAJ_AQqd__yctAaBRd__lFQOyA14_yA16_A12_yA82__A82_QPGA6_yAvA30_EnvironmentKeyWritingModifierVyAA13OpenURLActionVGGG_A41_Qo_QPGSgA14_yA16_A35_yAVGA16_GA14_yA16_A58_A16_GSgQPGGAA25_AppearanceActionModifierVG_Qo__A19_04SiriV11DestinationOA45_yA45_yA45_yA45_yA6_yACA_EA4_QryFQOyAcAE15navigationTitleyQrAVFQOyA19_07TalkingvC0V_Qo__Qo_A153_GA6_yACA_EA4_QryFQOyAcAEA158_yQrAVFQOyA19_017AssistantLanguageC0V_Qo__Qo_A153_GGA45_yA6_yACA_EA4_QryFQOyAcAEA158_yQrAVFQOyA19_0v14VoiceSelectionC0V_Qo__Qo_A153_GA6_yACA_EA4_QryFQOyAcAEA158_yQrAVFQOyA19_13SiriResponsesV_Qo__Qo_A153_GGGA45_yA45_yA6_yACA_EA4_QryFQOyAcAEA158_yQrAVFQOyA19_07SiriAppvC0V_Qo__Qo_A153_GA6_yACA_EA4_QryFQOyAcAEA158_yQrAVFQOyA19_09AppAccessvC0V_Qo__Qo_A153_GGA45_yA6_yACA_EA4_QryFQOyAcAEA158_yQrAVFQOyA19_07AppClipvC0V_Qo__Qo_A153_GA6_yACA_EA4_QryFQOyAcAEA158_yQrAVFQOyA19_016AssistantHistoryC0V_Qo__Qo_A153_GGGGA121_017GenerativePartnerv5PanelC0VGQo__A174_SgQo__Qo__Qo__A12_yA146__A146_QPGAVQo__A19_20SiriDisablementSheetVQo__A19_14SiriSetupStageV11CoordinatorCA220_Qo__A222_A220_Qo__SSA214_AVQo_HO
+- _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE18toolbarColorScheme_3forQrAA0eF0OSg_AA16ToolbarPlacementVdtFQOyAcAE29navigationBarTitleDisplayModeyQrAA010NavigationK4ItemV0lmN0OFQOyAcAE0jL0yQrAA18LocalizedStringKeyVFQOyAA15ModifiedContentVyATyATyAcAE0D07contentQrqd__yXE_tAA0hU0Rd__lFQOyAA6ZStackVyAA05TupleU0VyATyAA0E0VAA30_SafeAreaRegionsIgnoringLayoutVG_AA6VStackVyA_yA6_yA_y9SiriSetup07OrbGlowC0V_A6_yA_yATyAA6HStackVyA_yAA4TextV_AA6SpacerVATyATyAA4MenuVyATyA11_yA_yA13__ATyATyATyAA5ImageVAA012_EnvironmentS15WritingModifierVyAA4FontVSgGGAA24_ForegroundStyleModifierVyA1_GGA21_yAA015SymbolRenderingN0VSgGGQPGGA29_GAA7ForEachVySayA7_19VoiceSelectionStoreC11DialectInfoVGSSAA6ButtonVyA13_GGGA29_GAA012_EnvironmentS17TransformModifierVySbGGQPGGAA12_FrameLayoutVG_ATyATyA11_yA40_ySaySi6offset_So11AFVoiceInfoC7elementtGSSSgA7_05VoiceE6ButtonVGGA59_GAA18_AnimationModifierVyA66_GGQPGGATyATyA6_yA_yA6_yA_yA13__AA012_ConditionalU0VyATyAA6SliderVyAA05EmptyC0VA83_GA21_yAA13AnyShapeStyleVSgGGA7_19DisabledSliderTrackVGQPGG_A94_QPGGA59_GAA14_PaddingLayoutVGATyA6_yA_yA13__ATyA13_AA16_FixedSizeLayoutVGQPGGA59_GQPGG_A15_QPGGQPGG_AA0hP0VyytATyA47_yAA18DefaultButtonLabelVGA54_GGQo_A7_21AssetDownloadModifierVGAA25_AppearanceActionModifierVGA125_G_Qo__Qo__Qo_HO
+- _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOy9SiriSetup0I17SettingsContainerVyAA12TupleContentVyAA7SectionVyAA4TextVAcAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAE12labelsHiddenQryFQOyAcAE11pickerStyleyQrqd__AA06PickerX0Rd__lFQOyAA0Y0VyARSo24AFUseDeviceSpeakerForTTSVANyAcAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAR_A0_Qo_Sg_A4_A3_QPGG_AA06InlineyX0VQo__Qo__A0_Qo_ARG_APyAA05EmptyC0VAcAEAstU_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA6ToggleVyARG_SbQo_ARGSgA19_ANyAPyArNyA18__A18_SgQPGARG_AJ021MessagingLanguageListC0VQPGSgAPyArcAEAstU_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAcAEAVQryFQOyAcAEAWyQrqd__AaXRd__lFQOyAZyArJ0I9ResponsesV13CarAudioRoute33_74CA3B7196D9BA3639E80CD0E65DFC2ELLOANyAcAEA1__A2_Qrqd___SbtSHRd__lFQOyAR_A32_Qo__A33_SgA33_QPGG_A8_Qo__Qo__A32_Qo_AA6VStackVyANyAR_ANyAA6SpacerV_ARQPGSgQPGGGSgQPGG_Qo_HO
+- _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOy9SiriSetup0I17SettingsContainerVyAA7SectionVyAA05EmptyC0VAA7ForEachVySayAJ09AppAccessQ4InfoVGSSAA14NavigationLinkVyAA5LabelVyAA4TextVAA15ModifiedContentVyA1_yAA5ImageVAA12_FrameLayoutVGAA11_ClipEffectVyAA16RoundedRectangleVGGGA1_yAC0K0E22settingsListAppearanceQryFQOyAcAE15navigationTitleyQrA_FQOyAJ0qr6DetailC0V_Qo__Qo_AA25_AppearanceActionModifierVGGGAPGG_Qo_HO
 - _swift_retain_x11
 - _symbolic _____ 9SiriSetup03$s9A127Setup0039ExpressiveVoiceSelectionViewswift_jrGEmfMX385_0_33_233247337FFA4236A8E2B36EA3096FB4Ll7PreviewfMf_15PreviewRegistryfMu_V
 - _symbolic _____ 9SiriSetup03$s9a9Setup0039A114EnablementChoicePageViewswift_jrGEmfMX109_0_33_76E113AA7609449D44481AC9F289EE6CLl7PreviewfMf_15PreviewRegistryfMu_V
@@ -4643,5 +4317,4 @@ CStrings:
 - "messages_settings_migration"
 - "settings-navigation://com.apple.Settings.Siri/SIRI_APP_SETTINGS_ID"
 - "startListeningForUtterance()"
-
 ```

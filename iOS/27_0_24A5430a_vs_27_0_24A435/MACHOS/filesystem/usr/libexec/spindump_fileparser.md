@@ -2,25 +2,26 @@
 
 > `/usr/libexec/spindump_fileparser`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc312c` | `0xc316c` | **`+0x40`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 448.0.0.0.0
--  __TEXT.__text: 0xc312c
-+  __TEXT.__text: 0xc316c
-   __TEXT.__auth_stubs: 0x1410
-   __TEXT.__objc_stubs: 0x4480
-   __TEXT.__objc_methlist: 0xa04
+```text
 Functions:
 ~ sub_100033504 : 6964 -> 6988
 ~ sub_10003e080 -> sub_10003e098 : 5988 -> 6020

@@ -2,72 +2,42 @@
 
 > `/System/Library/PrivateFrameworks/SiriInstrumentationEx.framework/SiriInstrumentationEx`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c7f5c` | `0x2132bc` | **`+0x4b360`** |
+| `__AUTH_CONST.__objc_const` | `0x1c2e0` | `0x252a0` | **`+0x8fc0`** |
+| `__TEXT.__objc_methlist` | `0x128b4` | `0x188b4` | **`+0x6000`** |
+| `__DATA.__bss` | `0x63580` | `0x66580` | **`+0x3000`** |
+| `__TEXT.__const` | `0x54814` | `0x57214` | **`+0x2a00`** |
+| `__AUTH_CONST.__cfstring` | `0x4200` | `0x6620` | **`+0x2420`** |
+| `__TEXT.__cstring` | `0x3ae1` | `0x5d57` | **`+0x2276`** |
+| `__AUTH.__objc_data` | `0x6270` | `0x8070` | **`+0x1e00`** |
+| `__TEXT.__unwind_info` | `0x8360` | `0x9810` | **`+0x14b0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1a9e0` | `0x1bd20` | **`+0x1340`** |
+| `__DATA.__objc_ivar` | `0x1314` | `0x194c` | **`+0x638`** |
+| `__DATA_CONST.__const` | `0x778` | `0xbb0` | **`+0x438`** |
+| `__DATA_CONST.__objc_classlist` | `0x9d8` | `0xcd8` | **`+0x300`** |
+| `__DATA_CONST.__objc_superrefs` | `0x9d8` | `0xcd8` | **`+0x300`** |
+| `__DATA_CONST.__got` | `0x1140` | `0x1390` | **`+0x250`** |
+| `__TEXT.__swift5_proto` | `0x31ac` | `0x332c` | **`+0x180`** |
+| `__DATA.__data` | `0xa48` | `0xa70` | **`+0x28`** |
+| `__AUTH_CONST.__auth_got` | `0x248` | `0x258` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3600.69.7.0.0
--  __TEXT.__text: 0x1c7f5c sha256:b9e6eebb11b964c0f8360998a3bf40e01bdfe364587a4e6c85c12111475276c8
--  __TEXT.__objc_methlist: 0x128b4 sha256:a950cf3ba3c2588bc38338d9164c1942bfffa1054190ef0aec78e26b05d38f16
--  __TEXT.__const: 0x54814 sha256:e819646a2255ed2790662b66d5d432b7e582d7ec54c02237df004ab823b51584
--  __TEXT.__constg_swiftt: 0xc sha256:c9953d73d79a881b58cb18e67345adb2a90772e114afef3e8e30f3adc5a66822
--  __TEXT.__swift5_proto: 0x31ac sha256:c9f6f673516304b77462853121d2c40506126ef483767e900b74e992add5a177
--  __TEXT.__swift5_typeref: 0xa sha256:bab5bb7398cd8372d6ed3ce360ee370f482100494bee389a2ea050248dfefd0a
--  __TEXT.__cstring: 0x3ae1 sha256:2817ff67192393e5858c424061e50e15f3bfafc6090810ada3e28d06befdea50
--  __TEXT.__unwind_info: 0x8360 sha256:ea9f3a3e3634e96561524a4daa0485fe2ebdc1b98a48b533bde912572d3944e7
 +3600.77.1.0.0
-+  __TEXT.__text: 0x2132bc sha256:9eba1ffb470ef908f510a70ddcf38f52ebe5d82a0655937172c4d23e102b504c
-+  __TEXT.__objc_methlist: 0x188b4 sha256:6ba8ff9b90468583e5e3a739d9ba4982209430200f7e0cbae803a2fc74a4a125
-+  __TEXT.__const: 0x57214 sha256:f2196dc7a1ef5b34e398efcaa54f0892d3e7e530fa409e87d0dbb34f259cd0ba
-+  __TEXT.__constg_swiftt: 0xc sha256:5bcf93d880290745b1ec7a12454cb1959c3de0f54bd03f760f13c37a109e7c52
-+  __TEXT.__swift5_proto: 0x332c sha256:b27ac1fcb5d7977470e345f0590da2c6edede2fee693117799198f52fa399b45
-+  __TEXT.__swift5_typeref: 0xa sha256:6d0998f0f9702dd71ab42ed943d0f6d80e4192ba3ff8dc4103bdbf3404c3ef2d
-+  __TEXT.__cstring: 0x5d57 sha256:796c9d364efc843aeea1d1d29516f36cde69f3bdce2ed26b49fd03c60657cc2c
-+  __TEXT.__unwind_info: 0x9810 sha256:fe3380c3699f06d15931542c2533d3c35c1f110ab9f36867a9945693fdbfb093
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x778 sha256:024a4c476c5ccf12f32aa6f8e42ad9a5db6b540dc14e841886543b24c19570cb
--  __DATA_CONST.__objc_classlist: 0x9d8 sha256:913da10612fd6f55392daebf233bb1d8bd300d2fd6b18ed2b8daf814625c301a
-+  __DATA_CONST.__const: 0xbb0 sha256:142f81f0a7e6d0c40f2623f5f8f0c8b159bc3ef15c17ea1b3641b82f82639be2
-+  __DATA_CONST.__objc_classlist: 0xcd8 sha256:0cce91e45ce91c93ca6e874b2ccb06877d6380781482d37e239160e5c9e146cf
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0x1a9e0 sha256:2e1ecae4ef68c9f9879ef20df4d7633d53470e8835884712363e34f723006e04
--  __DATA_CONST.__objc_superrefs: 0x9d8 sha256:557cfa1b256d72a09d0b1a0e25b3d078b4058cb70a92dbc3fab687b39233574e
--  __DATA_CONST.__got: 0x1140 sha256:632c231665d345b8577ef0e4a51be6de427d7c3b5f36c2edb305f02b35f42e53
--  __AUTH_CONST.__cfstring: 0x4200 sha256:ee40b73df2e5969bd78516c6fea084e64c02f6ff2711d991da2d1057dd784ecb
--  __AUTH_CONST.__objc_const: 0x1c2e0 sha256:7e4459b2efb6579c333447b74ed784f2e2b4535b10f6a8d3e0ea0301973fc841
--  __AUTH_CONST.__auth_got: 0x248 sha256:62ec1707572ac5078d31a687a5d23de0c6d2a58d3462efb7039957548a7986cc
--  __AUTH.__objc_data: 0x6270 sha256:6fe4bfe9016f2898a7ba246c9b73efc07bc4217cec21d2d4d19dffadd32c4616
--  __DATA.__objc_ivar: 0x1314 sha256:178e595d7687247d7b3bb71a7c9c2f27e8d727181e189467de8dbed134d29285
--  __DATA.__data: 0xa48 sha256:1afc4dc9a7aecbfbce4a992cf570812b46d677b0148b9ef646c38fe9d01c6b01
--  __DATA.__bss: 0x63580 sha256:6f21c68792b92ca2c083ea7651db69d1b8ed8e7f131d09ff1bc893c9bd30e7fc
-+  __DATA_CONST.__objc_selrefs: 0x1bd20 sha256:895dd6818f349684cd99d2f5384974a398b66266b388ab888fe3fa75a3931833
-+  __DATA_CONST.__objc_superrefs: 0xcd8 sha256:b155ffb8ce6d175f88245e4e1d496068b9e17d62d6581d43fe03ec6d6e28f121
-+  __DATA_CONST.__got: 0x1390 sha256:4c9797920cb7ffab02b85447b0564b76069211a4d3fa326533daf6ed9ee038a7
-+  __AUTH_CONST.__cfstring: 0x6620 sha256:73b7b1a452997a52868c8a36c001b44bc0f5304af86c9bffda2ec53e940ba881
-+  __AUTH_CONST.__objc_const: 0x252a0 sha256:e0c042957e2f48f9318972331c87075a5d3da990b273d010332ba15b9d37b0dd
-+  __AUTH_CONST.__auth_got: 0x258 sha256:bd50e12c55dda3ee443c1cb6d71c7bcf6351c4ec96f7bc8d6adec015d1192eea
-+  __AUTH.__objc_data: 0x8070 sha256:d8edb2fe0e1291d359a0d7de3ad4a17e0c2fd0f18a12b6cf989a47d875fd2cca
-+  __DATA.__objc_ivar: 0x194c sha256:a580adc7ca6a527788b06cf10bc24d97108ae523f7ac1b587ab862a56b6e02cf
-+  __DATA.__data: 0xa70 sha256:94049167a48f2b58339027d4b615f28476f091940b88c70d007946de382463e9
-+  __DATA.__bss: 0x66580 sha256:e0660a80b6861cfd4f5c93b47fa8ea599effdfb96a4056dc25aba5e3753434d5
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
--  UUID: AD36A504-0227-38E8-9DF9-79B7379261A2
 -  Functions: 12880
--  Symbols:   29661
--  CStrings:  1060
-+  UUID: B939636E-9AEE-31DF-9F16-F4E57F6CF658
+-  Symbols:   9910
+-  CStrings:  532
 +  Functions: 15070
-+  Symbols:   35011
-+  CStrings:  1638
- 
++  Symbols:   12943
++  CStrings:  821
 Symbols:
 + -[ASRSchemaASRFirstAppleFoundationModelOutputTokenReceived deleteExists]
 + -[ASRSchemaASRFirstAppleFoundationModelOutputTokenReceived dictionaryRepresentation]
@@ -3103,292 +3073,6 @@ Symbols:
 + __OBJC_METACLASS_RO_$_STSchemaSTGeoServicesSubSearch
 + __OBJC_METACLASS_RO_$_STSchemaSTGeoServicesSubSearchResult
 + __OBJC_METACLASS_RO_$_STSchemaSTSpotlightIndexProcessingMetric
-+ _objc_msgSend$activeRuntimeSwitched
-+ _objc_msgSend$addAppNotifications:
-+ _objc_msgSend$addPersonTypes:
-+ _objc_msgSend$addPolicies:
-+ _objc_msgSend$addSubSearchResults:
-+ _objc_msgSend$addSubSearches:
-+ _objc_msgSend$appNotifications
-+ _objc_msgSend$arbitrationReason
-+ _objc_msgSend$areIFPAssetsInstalled
-+ _objc_msgSend$assistantServiceLoadedTimestampInNs
-+ _objc_msgSend$assistantServiceSpawnTimestampInNs
-+ _objc_msgSend$backboneResponseLatenciesInMs
-+ _objc_msgSend$cellularLqm
-+ _objc_msgSend$cellularRat
-+ _objc_msgSend$classificationResult
-+ _objc_msgSend$classifierOutcome
-+ _objc_msgSend$clearAppNotifications
-+ _objc_msgSend$clearPersonTypes
-+ _objc_msgSend$clearPolicies
-+ _objc_msgSend$clearSubSearchResults
-+ _objc_msgSend$clearSubSearches
-+ _objc_msgSend$conditionFailure
-+ _objc_msgSend$contactRecipients
-+ _objc_msgSend$contextPredictorFalseNegativeDetected
-+ _objc_msgSend$cpId
-+ _objc_msgSend$determinationMethod
-+ _objc_msgSend$deviceRegionInfo
-+ _objc_msgSend$didFallBackToMinimalRendering
-+ _objc_msgSend$directResponseType
-+ _objc_msgSend$earlyExitReason
-+ _objc_msgSend$eligibilityCheckRuntime
-+ _objc_msgSend$eligibilityType
-+ _objc_msgSend$entityHydrationInfo
-+ _objc_msgSend$executionCategory
-+ _objc_msgSend$executorActionPoisoningClassifierSkipped
-+ _objc_msgSend$filterType
-+ _objc_msgSend$firstAppleFoundationModelOutputTokenReceived
-+ _objc_msgSend$functionCallCount
-+ _objc_msgSend$geoSubSearchId
-+ _objc_msgSend$goalCompletionInferenceGenerated
-+ _objc_msgSend$goalCompletionInferenceMetadata
-+ _objc_msgSend$goalCompletionScore
-+ _objc_msgSend$goalCompletionStatus
-+ _objc_msgSend$hasForcedBackgroundMode
-+ _objc_msgSend$hasInvalidSpeechProfileEntities
-+ _objc_msgSend$hasPriorityNotifications
-+ _objc_msgSend$hasSpecifiedMailAccount
-+ _objc_msgSend$hasToolKitDispatch
-+ _objc_msgSend$hasVendedSnippet
-+ _objc_msgSend$ifpExpertLoadActivationParametersInBillions
-+ _objc_msgSend$ifpExpertLoadCacheHitCount
-+ _objc_msgSend$ifpExpertLoadCacheMissCount
-+ _objc_msgSend$ifpExpertLoadLatencySeconds
-+ _objc_msgSend$ifpExpertSelectionInitialPromptLatencySeconds
-+ _objc_msgSend$imageSource
-+ _objc_msgSend$indexProcessingMetrics
-+ _objc_msgSend$interfaceType
-+ _objc_msgSend$ipiClassifierSkipped
-+ _objc_msgSend$isAnnounceRequest
-+ _objc_msgSend$isCatchMeUp
-+ _objc_msgSend$isContentHidden
-+ _objc_msgSend$isContextRequired
-+ _objc_msgSend$isDeviceIFPEligible
-+ _objc_msgSend$isEarlyExit
-+ _objc_msgSend$isForegrounded
-+ _objc_msgSend$isIntelligentConnectivityEnabled
-+ _objc_msgSend$isLocationAvailable
-+ _objc_msgSend$isLocationSharingReprompt
-+ _objc_msgSend$isNCBVQUpdate
-+ _objc_msgSend$isNewConversation
-+ _objc_msgSend$isOsdCanarySampled
-+ _objc_msgSend$isReadLatest
-+ _objc_msgSend$isSameAppAsLastAnnouncement
-+ _objc_msgSend$isSearchAlongRoute
-+ _objc_msgSend$isSiriAppRequest
-+ _objc_msgSend$isSiriKitFallback
-+ _objc_msgSend$isSpeechProfileRejected
-+ _objc_msgSend$isSpeechProfileUsed
-+ _objc_msgSend$kgImages
-+ _objc_msgSend$longAnnouncementCount
-+ _objc_msgSend$longLongValue
-+ _objc_msgSend$lqm
-+ _objc_msgSend$mailApplication
-+ _objc_msgSend$mailCreateOrUpdateDraftInvoked
-+ _objc_msgSend$mailSendDraftInvoked
-+ _objc_msgSend$minutesToFirstNewCapability
-+ _objc_msgSend$modelInferenceContext
-+ _objc_msgSend$nonContactRecipients
-+ _objc_msgSend$notificationCount
-+ _objc_msgSend$notificationSummaryCount
-+ _objc_msgSend$notificationsPrepareNotificationsInvoked
-+ _objc_msgSend$notificationsPrepareNotificationsResult
-+ _objc_msgSend$numActivatedNCBVQEntities
-+ _objc_msgSend$numAudioFiles
-+ _objc_msgSend$numEntitiesFallenBack
-+ _objc_msgSend$numEntitiesRenderedFully
-+ _objc_msgSend$numEntitiesRetrieved
-+ _objc_msgSend$numberWithLongLong:
-+ _objc_msgSend$originatingRuntime
-+ _objc_msgSend$osdDetectionReported
-+ _objc_msgSend$osdMinConsecutiveSpeechThresholdInMs
-+ _objc_msgSend$osdModelVersion
-+ _objc_msgSend$osdSilenceProbabilityThreshold
-+ _objc_msgSend$osdSpeechStartTimeInMs
-+ _objc_msgSend$overriddenResponseTier1
-+ _objc_msgSend$phoneCallHistoryRetrievalContext
-+ _objc_msgSend$phoneContactFavoriteHandlesRetrievalContext
-+ _objc_msgSend$phoneEmergencyContactsRetrievalContext
-+ _objc_msgSend$phoneFaceTimeLinkGenerationContext
-+ _objc_msgSend$phoneIDSLookupContext
-+ _objc_msgSend$phoneSanitizationContext
-+ _objc_msgSend$phoneSearchCallHistoryOrVoicemailInvoked
-+ _objc_msgSend$phoneStartCallInvoked
-+ _objc_msgSend$phyMode
-+ _objc_msgSend$policies
-+ _objc_msgSend$predictionContext
-+ _objc_msgSend$primaryNetworkInterface
-+ _objc_msgSend$processCompleteness
-+ _objc_msgSend$rat
-+ _objc_msgSend$recipients
-+ _objc_msgSend$recoveryReason
-+ _objc_msgSend$referenceAudioEndTimeInNs
-+ _objc_msgSend$retrainerType
-+ _objc_msgSend$rnfSwitches
-+ _objc_msgSend$runtime
-+ _objc_msgSend$samRequestAPI
-+ _objc_msgSend$serverBatchedRequestsCount
-+ _objc_msgSend$setActiveRuntimeSwitched:
-+ _objc_msgSend$setAppNotifications:
-+ _objc_msgSend$setArbitrationReason:
-+ _objc_msgSend$setAreIFPAssetsInstalled:
-+ _objc_msgSend$setAssistantServiceLoadedTimestampInNs:
-+ _objc_msgSend$setAssistantServiceSpawnTimestampInNs:
-+ _objc_msgSend$setBackboneResponseLatenciesInMs:
-+ _objc_msgSend$setCellularLqm:
-+ _objc_msgSend$setCellularRat:
-+ _objc_msgSend$setClassificationResult:
-+ _objc_msgSend$setClassifierOutcome:
-+ _objc_msgSend$setConditionFailure:
-+ _objc_msgSend$setContactRecipients:
-+ _objc_msgSend$setContextPredictorFalseNegativeDetected:
-+ _objc_msgSend$setCpId:
-+ _objc_msgSend$setDeterminationMethod:
-+ _objc_msgSend$setDeviceRegionInfo:
-+ _objc_msgSend$setDidFallBackToMinimalRendering:
-+ _objc_msgSend$setDirectResponseType:
-+ _objc_msgSend$setEarlyExitReason:
-+ _objc_msgSend$setEligibilityCheckRuntime:
-+ _objc_msgSend$setEligibilityType:
-+ _objc_msgSend$setEntityHydrationInfo:
-+ _objc_msgSend$setExecutionCategory:
-+ _objc_msgSend$setExecutorActionPoisoningClassifierSkipped:
-+ _objc_msgSend$setFilterType:
-+ _objc_msgSend$setFirstAppleFoundationModelOutputTokenReceived:
-+ _objc_msgSend$setFunctionCallCount:
-+ _objc_msgSend$setGeoSubSearchId:
-+ _objc_msgSend$setGoalCompletionInferenceGenerated:
-+ _objc_msgSend$setGoalCompletionInferenceMetadata:
-+ _objc_msgSend$setGoalCompletionScore:
-+ _objc_msgSend$setGoalCompletionStatus:
-+ _objc_msgSend$setHasForcedBackgroundMode:
-+ _objc_msgSend$setHasInvalidSpeechProfileEntities:
-+ _objc_msgSend$setHasPriorityNotifications:
-+ _objc_msgSend$setHasSpecifiedMailAccount:
-+ _objc_msgSend$setHasToolKitDispatch:
-+ _objc_msgSend$setHasVendedSnippet:
-+ _objc_msgSend$setIfpExpertLoadActivationParametersInBillions:
-+ _objc_msgSend$setIfpExpertLoadCacheHitCount:
-+ _objc_msgSend$setIfpExpertLoadCacheMissCount:
-+ _objc_msgSend$setIfpExpertLoadLatencySeconds:
-+ _objc_msgSend$setIfpExpertSelectionInitialPromptLatencySeconds:
-+ _objc_msgSend$setImageSource:
-+ _objc_msgSend$setIndexProcessingMetrics:
-+ _objc_msgSend$setInterfaceType:
-+ _objc_msgSend$setIpiClassifierSkipped:
-+ _objc_msgSend$setIsAnnounceRequest:
-+ _objc_msgSend$setIsCatchMeUp:
-+ _objc_msgSend$setIsContentHidden:
-+ _objc_msgSend$setIsContextRequired:
-+ _objc_msgSend$setIsDeviceIFPEligible:
-+ _objc_msgSend$setIsEarlyExit:
-+ _objc_msgSend$setIsForegrounded:
-+ _objc_msgSend$setIsIntelligentConnectivityEnabled:
-+ _objc_msgSend$setIsLocationAvailable:
-+ _objc_msgSend$setIsLocationSharingReprompt:
-+ _objc_msgSend$setIsNCBVQUpdate:
-+ _objc_msgSend$setIsNewConversation:
-+ _objc_msgSend$setIsOsdCanarySampled:
-+ _objc_msgSend$setIsReadLatest:
-+ _objc_msgSend$setIsSameAppAsLastAnnouncement:
-+ _objc_msgSend$setIsSearchAlongRoute:
-+ _objc_msgSend$setIsSiriAppRequest:
-+ _objc_msgSend$setIsSiriKitFallback:
-+ _objc_msgSend$setIsSpeechProfileRejected:
-+ _objc_msgSend$setIsSpeechProfileUsed:
-+ _objc_msgSend$setKgImages:
-+ _objc_msgSend$setLongAnnouncementCount:
-+ _objc_msgSend$setLqm:
-+ _objc_msgSend$setMailApplication:
-+ _objc_msgSend$setMailCreateOrUpdateDraftInvoked:
-+ _objc_msgSend$setMailSendDraftInvoked:
-+ _objc_msgSend$setMinutesToFirstNewCapability:
-+ _objc_msgSend$setModelInferenceContext:
-+ _objc_msgSend$setNonContactRecipients:
-+ _objc_msgSend$setNotificationCount:
-+ _objc_msgSend$setNotificationSummaryCount:
-+ _objc_msgSend$setNotificationsPrepareNotificationsInvoked:
-+ _objc_msgSend$setNotificationsPrepareNotificationsResult:
-+ _objc_msgSend$setNumActivatedNCBVQEntities:
-+ _objc_msgSend$setNumAudioFiles:
-+ _objc_msgSend$setNumEntitiesFallenBack:
-+ _objc_msgSend$setNumEntitiesRenderedFully:
-+ _objc_msgSend$setNumEntitiesRetrieved:
-+ _objc_msgSend$setOriginatingRuntime:
-+ _objc_msgSend$setOsdDetectionReported:
-+ _objc_msgSend$setOsdMinConsecutiveSpeechThresholdInMs:
-+ _objc_msgSend$setOsdModelVersion:
-+ _objc_msgSend$setOsdSilenceProbabilityThreshold:
-+ _objc_msgSend$setOsdSpeechStartTimeInMs:
-+ _objc_msgSend$setOverriddenResponseTier1:
-+ _objc_msgSend$setPhoneCallHistoryRetrievalContext:
-+ _objc_msgSend$setPhoneContactFavoriteHandlesRetrievalContext:
-+ _objc_msgSend$setPhoneEmergencyContactsRetrievalContext:
-+ _objc_msgSend$setPhoneFaceTimeLinkGenerationContext:
-+ _objc_msgSend$setPhoneIDSLookupContext:
-+ _objc_msgSend$setPhoneSanitizationContext:
-+ _objc_msgSend$setPhoneSearchCallHistoryOrVoicemailInvoked:
-+ _objc_msgSend$setPhoneStartCallInvoked:
-+ _objc_msgSend$setPhyMode:
-+ _objc_msgSend$setPolicies:
-+ _objc_msgSend$setPredictionContext:
-+ _objc_msgSend$setPrimaryNetworkInterface:
-+ _objc_msgSend$setProcessCompleteness:
-+ _objc_msgSend$setRat:
-+ _objc_msgSend$setRecipients:
-+ _objc_msgSend$setRecoveryReason:
-+ _objc_msgSend$setReferenceAudioEndTimeInNs:
-+ _objc_msgSend$setRetrainerType:
-+ _objc_msgSend$setRnfSwitches:
-+ _objc_msgSend$setRuntime:
-+ _objc_msgSend$setSamRequestAPI:
-+ _objc_msgSend$setServerBatchedRequestsCount:
-+ _objc_msgSend$setSiriAppResumeCount:
-+ _objc_msgSend$setSkimmerInferenceContext:
-+ _objc_msgSend$setSkipReason:
-+ _objc_msgSend$setSpeakerIdEmbeddingGenerated:
-+ _objc_msgSend$setSpeakerSimilarityScore:
-+ _objc_msgSend$setSpeakerSimilarityThreshold:
-+ _objc_msgSend$setStGeoServicesSearchContext:
-+ _objc_msgSend$setSubSearchResults:
-+ _objc_msgSend$setSubSearches:
-+ _objc_msgSend$setTargetAudioEndTimeInNs:
-+ _objc_msgSend$setTargetAudioStartTimeInNs:
-+ _objc_msgSend$setTargetRuntime:
-+ _objc_msgSend$setTargetSpeakerSpeechEvaluated:
-+ _objc_msgSend$setThreadSummaryCount:
-+ _objc_msgSend$setToolKitDispatchCount:
-+ _objc_msgSend$setTotalResultCount:
-+ _objc_msgSend$setTriggeringToolName:
-+ _objc_msgSend$setUnreadableNotificationCount:
-+ _objc_msgSend$setUserResponseMode:
-+ _objc_msgSend$setWarmupContext:
-+ _objc_msgSend$setWifiRadioTech:
-+ _objc_msgSend$setWirelessStateReported:
-+ _objc_msgSend$siriAppResumeCount
-+ _objc_msgSend$skimmerInferenceContext
-+ _objc_msgSend$skipReason
-+ _objc_msgSend$speakerIdEmbeddingGenerated
-+ _objc_msgSend$speakerSimilarityScore
-+ _objc_msgSend$speakerSimilarityThreshold
-+ _objc_msgSend$stGeoServicesSearchContext
-+ _objc_msgSend$subSearchResults
-+ _objc_msgSend$subSearches
-+ _objc_msgSend$targetAudioEndTimeInNs
-+ _objc_msgSend$targetAudioStartTimeInNs
-+ _objc_msgSend$targetRuntime
-+ _objc_msgSend$targetSpeakerSpeechEvaluated
-+ _objc_msgSend$threadSummaryCount
-+ _objc_msgSend$toolKitDispatchCount
-+ _objc_msgSend$totalResultCount
-+ _objc_msgSend$triggeringToolName
-+ _objc_msgSend$unreadableNotificationCount
-+ _objc_msgSend$userResponseMode
-+ _objc_msgSend$warmupContext
-+ _objc_msgSend$wifiRadioTech
-+ _objc_msgSend$wirelessStateReported
 + _objc_retain_x27
 - _OUTLINED_FUNCTION_15
 - _OUTLINED_FUNCTION_16
@@ -3682,5 +3366,4 @@ CStrings:
 + "userResponseMode"
 + "warmupContext"
 + "wifiRadioTech"
-
 ```

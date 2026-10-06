@@ -2,15 +2,12 @@
 
 > `/System/Library/PrivateFrameworks/CiderAudioServer.framework/CiderAudioServer`
 
+### Other Changes
+
 ```diff
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 433
--  Symbols:   993
+-  Symbols:   970
 +  Symbols:   189
-   CStrings:  180
- 
 Symbols:
 - +[CiderService IsSimulatedDevice:]
 - +[CiderService ServiceIsRunning]
@@ -793,27 +790,4 @@ Symbols:
 - ___block_descriptor_48_e5_v8?0l
 - ___block_literal_global
 - ___clang_call_terminate
-- _objc_msgSend$UTF8String
-- _objc_msgSend$activate
-- _objc_msgSend$bytes
-- _objc_msgSend$errorWithDomain:code:userInfo:
-- _objc_msgSend$getPropertyDataSize:withInAddress:withInQualifierData:withReply:
-- _objc_msgSend$getPropertyData_Arithmetic:withInAddress:withInQualifierData:withReply:
-- _objc_msgSend$getPropertyData_Boolean:withInAddress:
-- _objc_msgSend$getPropertyData_NSHelper:withInAddress:withClass:
-- _objc_msgSend$initWithMachServiceName:
-- _objc_msgSend$interfaceWithProtocol:
-- _objc_msgSend$invalidate
-- _objc_msgSend$length
-- _objc_msgSend$numberWithUnsignedInt:
-- _objc_msgSend$resume
-- _objc_msgSend$setDelegate:
-- _objc_msgSend$setExportedInterface:
-- _objc_msgSend$setExportedObject:
-- _objc_msgSend$setInterruptionHandler:
-- _objc_msgSend$setInvalidationHandler:
-- _objc_msgSend$setPropertyDataPrivileged_Arithmetic:withInAddress:withInQualifierData:withInData:withReply:
-- _objc_msgSend$setPropertyDataPrivileged_NSHelper:withInAddress:withInData:
-- _objc_msgSend$stringWithCString:encoding:
-- _objc_msgSend$unsignedIntValue
 ```

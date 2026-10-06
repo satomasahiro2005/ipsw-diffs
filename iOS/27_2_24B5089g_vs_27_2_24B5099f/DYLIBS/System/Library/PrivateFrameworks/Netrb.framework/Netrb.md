@@ -2,16 +2,11 @@
 
 > `/System/Library/PrivateFrameworks/Netrb.framework/Netrb`
 
-```diff
+### Section Size Changes
 
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x280
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__data: 0x380
--  __DATA_DIRTY.__bss: 0x60
-+  __DATA_DIRTY.__data: 0x380
-+  __DATA_DIRTY.__bss: 0x68
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /usr/lib/libSystem.B.dylib
-   Functions: 158
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__data` | `0x380` | `—` | **`-0x380`** |
+| `__DATA_DIRTY.__data` | `—` | `0x380` | **`+0x380`** |
+| `__DATA.__bss` | `0x50` | `0x48` | **`-0x8`** |
+| `__DATA_DIRTY.__bss` | `0x60` | `0x68` | **`+0x8`** |

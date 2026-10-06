@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MenstrualAlgorithmsInternal.framework/MenstrualAlgorithmsInternal`
 
-```diff
+### Section Size Changes
 
- 151.0.0.0.0
--  __TEXT.__text: 0x615d8
-+  __TEXT.__text: 0x61654
-   __TEXT.__objc_methlist: 0x1258
-   __TEXT.__const: 0x14fc
-   __TEXT.__gcc_except_tab: 0x4590
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x615d8` | `0x61654` | **`+0x7c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__16vectorIdNS_9allocatorIdEEE18__insert_with_sizeB9fqn220106INS_17_ClassicAlgPolicyENS_11__wrap_iterIPfEES8_EENS6_IPdEENS6_IPKdEET0_T1_l : 548 -> 568
 ~ __ZNSt3__110__function6__funcIMN11Nightingale31wristTemperatureInputValidation31wristTemperatureInputCheckItemsEFNS_4pairIbfEERKNS_6vectorIfNS_9allocatorIfEEEEifEFS6_RS4_SC_ifEEclESF_SC_OiOf : 52 -> 56

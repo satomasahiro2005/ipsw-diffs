@@ -2,86 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/SiriMessagesUI.framework/SiriMessagesUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc90f8` | `0xcc7e8` | **`+0x36f0`** |
+| `__DATA_DIRTY.__bss` | `0x980` | `0xd80` | **`+0x400`** |
+| `__DATA.__bss` | `0x6398` | `0x61a8` | **`-0x1f0`** |
+| `__TEXT.__const` | `0x7d74` | `0x7f54` | **`+0x1e0`** |
+| `__TEXT.__swift5_typeref` | `0x10f5c` | `0x110e2` | **`+0x186`** |
+| `__DATA_DIRTY.__data` | `0x2410` | `0x2540` | **`+0x130`** |
+| `__AUTH_CONST.__const` | `0x54e0` | `0x55e0` | **`+0x100`** |
+| `__TEXT.__constg_swiftt` | `0x2e60` | `0x2f20` | **`+0xc0`** |
+| `__AUTH.__data` | `0x2c88` | `0x2d28` | **`+0xa0`** |
+| `__TEXT.__swift5_fieldmd` | `0x1e34` | `0x1ec0` | **`+0x8c`** |
+| `__TEXT.__unwind_info` | `0x2b18` | `0x2ba0` | **`+0x88`** |
+| `__TEXT.__swift5_reflstr` | `0x1d25` | `0x1d9b` | **`+0x76`** |
+| `__AUTH_CONST.__auth_got` | `0x22b0` | `0x2300` | **`+0x50`** |
+| `__TEXT.__oslogstring` | `0x446a` | `0x44ba` | **`+0x50`** |
+| `__TEXT.__swift5_assocty` | `0xab0` | `0xaf8` | **`+0x48`** |
+| `__TEXT.__swift5_capture` | `0xff0` | `0x1030` | **`+0x40`** |
+| `__TEXT.__eh_frame` | `0x27d4` | `0x280c` | **`+0x38`** |
+| `__DATA.__data` | `0x3480` | `0x3450` | **`-0x30`** |
+| `__DATA.__common` | `0x1f0` | `0x1d0` | **`-0x20`** |
+| `__DATA_DIRTY.__common` | `0x58` | `0x78` | **`+0x20`** |
+| `__TEXT.__swift5_builtin` | `0xdc` | `0xf0` | **`+0x14`** |
+| `__TEXT.__swift5_proto` | `0x368` | `0x378` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x234` | `0x240` | **`+0xc`** |
+| `__TEXT.__cstring` | `0xc1d` | `0xc1b` | **`-0x2`** |
+
+### Other Changes
+
 ```diff
 
 -3605.15.1.0.0
--  __TEXT.__text: 0xbff90
 +3605.17.1.1.1
-+  __TEXT.__text: 0xc339c
-   __TEXT.__objc_methlist: 0x57c
--  __TEXT.__const: 0x7d74
--  __TEXT.__constg_swiftt: 0x2e60
--  __TEXT.__swift5_typeref: 0x10f5c
--  __TEXT.__swift5_builtin: 0xdc
--  __TEXT.__swift5_reflstr: 0x1d25
--  __TEXT.__swift5_fieldmd: 0x1e34
--  __TEXT.__swift5_assocty: 0xab0
--  __TEXT.__swift5_capture: 0xff0
--  __TEXT.__oslogstring: 0x446a
--  __TEXT.__swift5_proto: 0x368
--  __TEXT.__swift5_types: 0x234
-+  __TEXT.__const: 0x7f54
-+  __TEXT.__constg_swiftt: 0x2f20
-+  __TEXT.__swift5_typeref: 0x110e2
-+  __TEXT.__swift5_builtin: 0xf0
-+  __TEXT.__swift5_reflstr: 0x1d9b
-+  __TEXT.__swift5_fieldmd: 0x1ec0
-+  __TEXT.__swift5_assocty: 0xaf8
-+  __TEXT.__swift5_capture: 0x1030
-+  __TEXT.__oslogstring: 0x44ba
-+  __TEXT.__swift5_proto: 0x378
-+  __TEXT.__swift5_types: 0x240
-   __TEXT.__swift_as_entry: 0xcc
-   __TEXT.__swift_as_ret: 0xc8
-   __TEXT.__swift_as_cont: 0x174
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__cstring: 0xc1d
-+  __TEXT.__cstring: 0xc1b
-   __TEXT.__swift5_protos: 0x30
--  __TEXT.__unwind_info: 0x3700
--  __TEXT.__eh_frame: 0x27dc
-+  __TEXT.__unwind_info: 0x37c8
-+  __TEXT.__eh_frame: 0x2814
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0x7a8
-   __DATA_CONST.__objc_protorefs: 0x78
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x54e0
-+  __AUTH_CONST.__const: 0x55e0
-   __AUTH_CONST.__objc_const: 0x1840
--  __AUTH_CONST.__auth_got: 0x22b0
-+  __AUTH_CONST.__auth_got: 0x2300
-   __AUTH.__objc_data: 0x8c8
--  __AUTH.__data: 0x2c88
--  __DATA.__data: 0x3480
--  __DATA.__common: 0x1f0
-+  __AUTH.__data: 0x2d28
-+  __DATA.__data: 0x3450
-+  __DATA.__common: 0x1d0
-   __DATA_DIRTY.__objc_data: 0x1b0
--  __DATA_DIRTY.__data: 0x2410
--  __DATA_DIRTY.__bss: 0x980
--  __DATA_DIRTY.__common: 0x58
-+  __DATA_DIRTY.__data: 0x2540
-+  __DATA_DIRTY.__bss: 0xd80
-+  __DATA_DIRTY.__common: 0x78
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4736
--  Symbols:   2298
+-  Symbols:   2117
 -  CStrings:  389
 +  Functions: 4806
-+  Symbols:   2308
++  Symbols:   2127
 +  CStrings:  391
- 
 Symbols:
 + ___swift_closure_destructor.16Tm
 + _associated conformance 14SiriMessagesUI31AutoSendCancelCarPlayButtonViewV05SwiftC00J0AA4BodyAdEP_AdE

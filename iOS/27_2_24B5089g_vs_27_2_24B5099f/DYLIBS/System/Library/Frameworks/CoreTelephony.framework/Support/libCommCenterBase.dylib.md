@@ -2,57 +2,31 @@
 
 > `/System/Library/Frameworks/CoreTelephony.framework/Support/libCommCenterBase.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd3718` | `0xd3060` | **`-0x6b8`** |
+| `__TEXT.__cstring` | `0x14af1` | `0x148df` | **`-0x212`** |
+| `__TEXT.__oslogstring` | `0x2849` | `0x26f1` | **`-0x158`** |
+| `__DATA_CONST.__const` | `0x7700` | `0x7658` | **`-0xa8`** |
+| `__AUTH_CONST.__const` | `0x143b8` | `0x14380` | **`-0x38`** |
+| `__TEXT.__gcc_except_tab` | `0x13e44` | `0x13e24` | **`-0x20`** |
+| `__AUTH_CONST.__auth_got` | `0xc48` | `0xc38` | **`-0x10`** |
+| `__TEXT.__const` | `0xce50` | `0xce40` | **`-0x10`** |
+| `__TEXT.__unwind_info` | `0x4e88` | `0x4e80` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -13496.3.0.0.0
--  __TEXT.__text: 0xd16b4
 +13498.0.0.0.0
-+  __TEXT.__text: 0xd0ffc
-   __TEXT.__init_offsets: 0x20
-   __TEXT.__objc_methlist: 0x110
--  __TEXT.__const: 0xce50
--  __TEXT.__cstring: 0x14af1
--  __TEXT.__gcc_except_tab: 0x13e44
--  __TEXT.__oslogstring: 0x2849
--  __TEXT.__unwind_info: 0x5500
-+  __TEXT.__const: 0xce40
-+  __TEXT.__cstring: 0x148df
-+  __TEXT.__gcc_except_tab: 0x13e24
-+  __TEXT.__oslogstring: 0x26f1
-+  __TEXT.__unwind_info: 0x54f0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7700
-+  __DATA_CONST.__const: 0x7658
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   __DATA_CONST.__objc_selrefs: 0x188
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__got: 0x218
--  __AUTH_CONST.__const: 0x143b8
-+  __AUTH_CONST.__const: 0x14380
-   __AUTH_CONST.__cfstring: 0x2ce0
-   __AUTH_CONST.__objc_const: 0x200
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__auth_got: 0xc48
-+  __AUTH_CONST.__auth_got: 0xc38
-   __DATA.__objc_ivar: 0x8
-   __DATA.__data: 0x70
-   __DATA_DIRTY.__objc_data: 0x50
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 5751
 -  Symbols:   9438
 -  CStrings:  4501
 +  Symbols:   9435
 +  CStrings:  4467
- 
 Symbols:
 + ___TUAssertTrigger
 - _TelephonyUtilIsOversteerEnabled
@@ -84,7 +58,7 @@ Functions:
 ~ __ZN10subscriber20isSimPresentAndValidENS_8SimStateE : 88 -> 64
 ~ __ZNK12BasicSimInfo22isEmptyEsimCapableCardEv : 116 -> 92
 ~ __ZN12OTASPService20sendOTASPSuccessToUIEv : 516 -> 448
-~ __ZN10LineParser15parseFromStreamEPKN3ctu11OsLogLoggerERNSt3__113basic_istreamIcNS4_11char_traitsIcEEEENS4_8functionIFvRKNS4_12basic_stringIcS7_NS4_9allocatorIcEEEEEEE : 2336 -> 2264
+~ __ZN10LineParser15parseFromStreamEPKN3ctu11OsLogLoggerERNSt3__113basic_istreamIcNS4_11char_traitsIcEEEENS4_8functionIFvRKNS4_12basic_stringIcS7_NS4_9allocatorIcEEEEEEE : 2356 -> 2284
 ~ __Z18isXLAT464InterfacePKc : 184 -> 168
 ~ __Z20getCLAT46IPv6AddressPKcRjPhRS0_ : 608 -> 588
 ~ __ZN9DataUtils27loadPlistFromBundleResourceEPKN3ctu11OsLogLoggerEPKc : 460 -> 396

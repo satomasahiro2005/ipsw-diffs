@@ -2,23 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/TextToSpeechKonaSupport.framework/Frameworks/chsrom.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x101ec` | `0x1021c` | **`+0x30`** |
+
+### Other Changes
+
 ```diff
 
- 681.0.0.0.0
--  __TEXT.__text: 0x101ec
-+  __TEXT.__text: 0x1021c
-   __TEXT.__init_offsets: 0x4
-   __TEXT.__const: 0xb2b01
-   __TEXT.__cstring: 0x1b7
-
-   __DATA.__common: 0x330
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 619
 +  Functions: 620
-   Symbols:   831
-   CStrings:  47
- 
 Functions:
 ~ _getToneFromPinyin : 112 -> 124
 ~ __ZN8SpecDict12outputPinyinEP12WordPropertyPKcS3_Pcj : 768 -> 804

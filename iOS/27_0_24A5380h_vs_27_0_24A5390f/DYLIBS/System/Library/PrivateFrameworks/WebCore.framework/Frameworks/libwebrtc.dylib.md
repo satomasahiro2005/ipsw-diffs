@@ -2,95 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/WebCore.framework/Frameworks/libwebrtc.dylib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH.__data`
-- `__AUTH.__thread_vars`
-- `__DATA.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0xa7440` | `0x6fef8` | **`-0x37548`** |
+| `__TEXT.__text` | `0xacca9c` | `0xaac6a4` | **`-0x203f8`** |
+| `__DATA.__bss` | `0x3176c` | `0x3bf60` | **`+0xa7f4`** |
+| `__TEXT.__cstring` | `0x5655a` | `0x55f47` | **`-0x613`** |
+| `__AUTH_CONST.__const` | `0x20750` | `0x20170` | **`-0x5e0`** |
+| `__DATA.__common` | `0x1ed10` | `0x1f020` | **`+0x310`** |
+| `__DATA_CONST.__const` | `0x15da8` | `0x15e90` | **`+0xe8`** |
+| `__TEXT.__eh_frame` | `0xd00` | `0xc38` | **`-0xc8`** |
+| `__TEXT.__unwind_info` | `0x10cf0` | `0x10db0` | **`+0xc0`** |
+| `__DATA_DIRTY.__bss` | `0x20c0` | `0x2160` | **`+0xa0`** |
+| `__AUTH_CONST.__objc_const` | `0x35d8` | `0x3548` | **`-0x90`** |
+| `__DATA_DIRTY.__objc_data` | `0xa50` | `0xa00` | **`-0x50`** |
+| `__AUTH_CONST.__auth_got` | `0xa50` | `0xa18` | **`-0x38`** |
+| `__DATA_CONST.__got` | `0x2c0` | `0x298` | **`-0x28`** |
+| `__TEXT.__gcc_except_tab` | `0x1898` | `0x1880` | **`-0x18`** |
+| `__TEXT.__objc_methlist` | `0x14e4` | `0x14cc` | **`-0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x108` | `0x100` | **`-0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x888` | `0x880` | **`-0x8`** |
+| `__DATA_DIRTY.__data` | `0xf8` | `0xf0` | **`-0x8`** |
+
+### Other Changes
 
 ```diff
 
 -625.1.22.10.3
--  __TEXT.__text: 0xacca9c
--  __TEXT.__objc_methlist: 0x14e4
--  __TEXT.__const: 0xa7440
--  __TEXT.__cstring: 0x5655a
--  __TEXT.__gcc_except_tab: 0x1898
--  __TEXT.__unwind_info: 0x10cf0
--  __TEXT.__eh_frame: 0xd00
 +625.1.24.10.1
-+  __TEXT.__text: 0xaac6a4
-+  __TEXT.__objc_methlist: 0x14cc
-+  __TEXT.__const: 0x6fef8
-+  __TEXT.__cstring: 0x55f47
-+  __TEXT.__gcc_except_tab: 0x1880
-+  __TEXT.__unwind_info: 0x10db0
-+  __TEXT.__eh_frame: 0xc38
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x15da8
--  __DATA_CONST.__objc_classlist: 0x108
-+  __DATA_CONST.__const: 0x15e90
-+  __DATA_CONST.__objc_classlist: 0x100
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x888
-+  __DATA_CONST.__objc_selrefs: 0x880
-   __DATA_CONST.__objc_superrefs: 0xa8
-   __DATA_CONST.__objc_arraydata: 0x40
--  __DATA_CONST.__got: 0x2c0
--  __AUTH_CONST.__const: 0x20750
-+  __DATA_CONST.__got: 0x298
-+  __AUTH_CONST.__const: 0x20170
-   __AUTH_CONST.__cfstring: 0x360
--  __AUTH_CONST.__objc_const: 0x35d8
-+  __AUTH_CONST.__objc_const: 0x3548
-   __AUTH_CONST.__weak_auth_got: 0x48
-   __AUTH_CONST.__objc_intobj: 0x78
-   __AUTH_CONST.__objc_dictobj: 0xa0
--  __AUTH_CONST.__auth_got: 0xa50
-+  __AUTH_CONST.__auth_got: 0xa18
-   __AUTH.__data: 0x98
-   __AUTH.__thread_vars: 0x60
-   __AUTH.__thread_bss: 0x18
-   __DATA.__objc_ivar: 0x250
-   __DATA.__data: 0x1df0
--  __DATA.__bss: 0x3176c
--  __DATA.__common: 0x1ed10
--  __DATA_DIRTY.__objc_data: 0xa50
--  __DATA_DIRTY.__data: 0xf8
--  __DATA_DIRTY.__bss: 0x20c0
-+  __DATA.__bss: 0x3bf60
-+  __DATA.__common: 0x1f020
-+  __DATA_DIRTY.__objc_data: 0xa00
-+  __DATA_DIRTY.__data: 0xf0
-+  __DATA_DIRTY.__bss: 0x2160
-   __DATA_DIRTY.__common: 0x468
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 18488
--  Symbols:   23818
+-  Symbols:   23612
 -  CStrings:  9089
 +  Functions: 18368
-+  Symbols:   23808
++  Symbols:   23603
 +  CStrings:  9078
- 
 Symbols:
 + __ZGVZN4absl12_GLOBAL__N_19CrcEngineEvE6engine
 + __ZGVZN4absl12crc_internal21SupportsArmCRC32PMULLEvE10feat_pmull
@@ -2512,7 +2460,6 @@ Symbols:
 - _mfqe_partition
 - _motion_search_method
 - _ms_qindex_thresh
-- _objc_msgSend$av1Decoder
 - _od_ec_decode_bool_q15
 - _od_ec_decode_cdf_q15
 - _parse_decode_block

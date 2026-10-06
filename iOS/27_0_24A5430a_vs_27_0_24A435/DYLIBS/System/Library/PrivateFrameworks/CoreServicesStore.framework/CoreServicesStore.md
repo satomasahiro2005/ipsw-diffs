@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CoreServicesStore.framework/CoreServicesStore`
 
-```diff
+### Section Size Changes
 
- 1517.0.1.0.0
--  __TEXT.__text: 0x2c06c
-+  __TEXT.__text: 0x2c080
-   __TEXT.__objc_methlist: 0x85c
-   __TEXT.__const: 0x1e0
-   __TEXT.__gcc_except_tab: 0x3ba8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2c06c` | `0x2c080` | **`+0x14`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __CSStoreCreateDataWithUnitNoCopy : 524 -> 528
 ~ __ZNSt3__16vectorIjNS_9allocatorIjEEE24__emplace_back_slow_pathIJRjEEEPjDpOT_ : 184 -> 176

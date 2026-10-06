@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ABMHelper.framework/ABMHelper`
 
-```diff
+### Section Size Changes
 
- 1585.0.0.0.0
--  __TEXT.__text: 0x1cb430
-+  __TEXT.__text: 0x1cb514
-   __TEXT.__init_offsets: 0x160
-   __TEXT.__objc_methlist: 0x14
-   __TEXT.__const: 0x7100
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1cb430` | `0x1cb514` | **`+0xe4`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN14INTTraceEngine15sendConfig_syncEN8dispatch5groupENSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEbbb : 3064 -> 3068
 ~ __ZNSt3__16vectorINS_9sub_matchIPKcEENS_9allocatorIS4_EEE6assignEmRKS4_ : 460 -> 476

@@ -2,109 +2,51 @@
 
 > `/System/Library/Frameworks/AppIntents.framework/AppIntents`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4d67dc` | `0x4e9488` | **`+0x12cac`** |
+| `__TEXT.__eh_frame` | `0x2e568` | `0x2fea0` | **`+0x1938`** |
+| `__TEXT.__unwind_info` | `0x16708` | `0x17388` | **`+0xc80`** |
+| `__AUTH_CONST.__const` | `0x27f88` | `0x28598` | **`+0x610`** |
+| `__TEXT.__swift5_capture` | `0x6cc4` | `0x6f34` | **`+0x270`** |
+| `__TEXT.__const` | `0x352c0` | `0x354b0` | **`+0x1f0`** |
+| `__TEXT.__oslogstring` | `0x6b89` | `0x6d59` | **`+0x1d0`** |
+| `__TEXT.__swift5_typeref` | `0x13235` | `0x133db` | **`+0x1a6`** |
+| `__TEXT.__swift_as_ret` | `0x18d0` | `0x19a8` | **`+0xd8`** |
+| `__TEXT.__cstring` | `0x6e8d` | `0x6f4d` | **`+0xc0`** |
+| `__TEXT.__swift_as_entry` | `0x16e4` | `0x1790` | **`+0xac`** |
+| `__DATA.__bss` | `0x3fbc0` | `0x3fc40` | **`+0x80`** |
+| `__TEXT.__swift5_fieldmd` | `0xb7a4` | `0xb81c` | **`+0x78`** |
+| `__TEXT.__swift5_reflstr` | `0x8a6c` | `0x8adc` | **`+0x70`** |
+| `__AUTH_CONST.__auth_got` | `0x2370` | `0x23d8` | **`+0x68`** |
+| `__TEXT.__constg_swiftt` | `0x136e8` | `0x1373c` | **`+0x54`** |
+| `__DATA.__data` | `0xf318` | `0xf2d0` | **`-0x48`** |
+| `__AUTH.__data` | `0x8e80` | `0x8e60` | **`-0x20`** |
+| `__DATA_CONST.__got` | `0x17d0` | `0x17f0` | **`+0x20`** |
+| `__DATA_DIRTY.__data` | `0x4870` | `0x4890` | **`+0x20`** |
+| `__TEXT.__swift5_builtin` | `0x5dc` | `0x5f0` | **`+0x14`** |
+| `__TEXT.__swift5_types` | `0xe34` | `0xe40` | **`+0xc`** |
+| `__TEXT.__swift_as_cont` | `0x268c` | `0x2698` | **`+0xc`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2498` | `0x24a0` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x1e8` | `0x1f0` | **`+0x8`** |
+| `__DATA.__common` | `0x309` | `0x310` | **`+0x7`** |
+| `__TEXT.__swift5_proto` | `0x2990` | `0x2994` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x4d67dc
-+  __TEXT.__text: 0x4e9488
-   __TEXT.__objc_methlist: 0x171c
-   __TEXT.__dlopen_cstrs: 0xf7
--  __TEXT.__const: 0x352c0
--  __TEXT.__constg_swiftt: 0x136e8
--  __TEXT.__swift5_typeref: 0x13235
--  __TEXT.__swift5_reflstr: 0x8a6c
--  __TEXT.__swift5_fieldmd: 0xb7a4
--  __TEXT.__swift5_builtin: 0x5dc
-+  __TEXT.__const: 0x354b0
-+  __TEXT.__constg_swiftt: 0x1373c
-+  __TEXT.__swift5_typeref: 0x133db
-+  __TEXT.__swift5_reflstr: 0x8adc
-+  __TEXT.__swift5_fieldmd: 0xb81c
-+  __TEXT.__swift5_builtin: 0x5f0
-   __TEXT.__swift5_assocty: 0x5270
--  __TEXT.__swift5_proto: 0x2990
--  __TEXT.__swift5_types: 0xe34
-+  __TEXT.__swift5_proto: 0x2994
-+  __TEXT.__swift5_types: 0xe40
-   __TEXT.__swift5_protos: 0x4d8
--  __TEXT.__swift_as_entry: 0x16e4
--  __TEXT.__swift_as_cont: 0x268c
--  __TEXT.__oslogstring: 0x6b89
--  __TEXT.__swift_as_ret: 0x18d0
--  __TEXT.__cstring: 0x6e8d
--  __TEXT.__swift5_mpenum: 0x1e8
--  __TEXT.__swift5_capture: 0x6cc4
-+  __TEXT.__swift_as_entry: 0x1790
-+  __TEXT.__swift_as_cont: 0x2698
-+  __TEXT.__oslogstring: 0x6d59
-+  __TEXT.__swift_as_ret: 0x19a8
-+  __TEXT.__cstring: 0x6f4d
-+  __TEXT.__swift5_mpenum: 0x1f0
-+  __TEXT.__swift5_capture: 0x6f34
-   __TEXT.__gcc_except_tab: 0x174
--  __TEXT.__unwind_info: 0x16708
--  __TEXT.__eh_frame: 0x2e568
-+  __TEXT.__unwind_info: 0x17388
-+  __TEXT.__eh_frame: 0x2fea0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-301.0.42.7.0
++301.0.43.6.0
 
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0xf8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2498
-+  __DATA_CONST.__objc_selrefs: 0x24a0
-   __DATA_CONST.__objc_protorefs: 0x60
-   __DATA_CONST.__objc_superrefs: 0x38
--  __DATA_CONST.__got: 0x17d0
--  __AUTH_CONST.__const: 0x27f88
-+  __DATA_CONST.__got: 0x17f0
-+  __AUTH_CONST.__const: 0x28598
-   __AUTH_CONST.__cfstring: 0x220
-   __AUTH_CONST.__objc_const: 0x53c0
--  __AUTH_CONST.__auth_got: 0x2370
-+  __AUTH_CONST.__auth_got: 0x23d8
-   __AUTH.__objc_data: 0x8c0
--  __AUTH.__data: 0x8e80
-+  __AUTH.__data: 0x8e60
-   __DATA.__objc_ivar: 0x6c
--  __DATA.__data: 0xf318
--  __DATA.__bss: 0x3fbc0
--  __DATA.__common: 0x309
-+  __DATA.__data: 0xf2d0
-+  __DATA.__bss: 0x3fc40
-+  __DATA.__common: 0x310
-   __DATA_DIRTY.__objc_data: 0x4e0
--  __DATA_DIRTY.__data: 0x4870
-+  __DATA_DIRTY.__data: 0x4890
-   __DATA_DIRTY.__bss: 0x7ce0
-   __DATA_DIRTY.__common: 0x208
-   - /System/Library/Frameworks/ActivityKit.framework/ActivityKit
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 36234
--  Symbols:   37133
--  CStrings:  1241
+-  Symbols:   8051
+-  CStrings:  1223
 +  Functions: 36499
-+  Symbols:   37282
-+  CStrings:  1252
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   8084
++  CStrings:  1234
 Symbols:
 + _OUTLINED_FUNCTION_555
 + _OUTLINED_FUNCTION_556
@@ -134,7 +76,6 @@ Symbols:
 + ___swift_closure_destructor.65Tm
 + ___swift_closure_destructor.86Tm
 + _get_enum_tag_for_layout_string 10AppIntents22ResolvedParameterQueryO
-+ _objc_msgSend$displayRepresentationComponents
 + _symbolic SDy2ID_____Qz_____GSg s12IdentifiableP 10AppIntents21DisplayRepresentationV
 + _symbolic SayxGSDy2ID_____Qz_____G______pIeghHgozo_ s12IdentifiableP 10AppIntents21DisplayRepresentationV s5ErrorP
 + _symbolic SayxG_____SaySo7LNValueCG______pIeghHgnozo_ 10AppIntents31_AsyncIntentItemIteratorOptionsV s5ErrorP
@@ -184,5 +125,4 @@ CStrings:
 + "UnionValue parameter %s: member %s query failed, skipping: %s"
 + "displayRepresentations(for:) override threw, falling back to per-instance representation: %s"
 + "key value "
-
 ```

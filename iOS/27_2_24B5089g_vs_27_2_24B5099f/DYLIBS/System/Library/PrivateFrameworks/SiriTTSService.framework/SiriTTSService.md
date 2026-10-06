@@ -2,86 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/SiriTTSService.framework/SiriTTSService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e16d0` | `0x1e2410` | **`+0xd40`** |
+| `__AUTH_CONST.__const` | `0x175c0` | `0x177b0` | **`+0x1f0`** |
+| `__TEXT.__swift5_capture` | `0x3a6c` | `0x3b4c` | **`+0xe0`** |
+| `__TEXT.__oslogstring` | `0x759e` | `0x765e` | **`+0xc0`** |
+| `__TEXT.__cstring` | `0xd9cd` | `0xda7d` | **`+0xb0`** |
+| `__TEXT.__swift5_typeref` | `0x45c5` | `0x4669` | **`+0xa4`** |
+| `__TEXT.__unwind_info` | `0x9930` | `0x98e0` | **`-0x50`** |
+| `__TEXT.__objc_methlist` | `0x6880` | `0x68c8` | **`+0x48`** |
+| `__TEXT.__eh_frame` | `0x86dc` | `0x86a0` | **`-0x3c`** |
+| `__AUTH_CONST.__objc_const` | `0x11db8` | `0x11de8` | **`+0x30`** |
+| `__DATA.__data` | `0x3c10` | `0x3be0` | **`-0x30`** |
+| `__TEXT.__const` | `0x10490` | `0x104c0` | **`+0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x2000` | `0x2028` | **`+0x28`** |
+| `__DATA_DIRTY.__data` | `0x7718` | `0x76f8` | **`-0x20`** |
+| `__DATA_DIRTY.__objc_data` | `0x4c88` | `0x4ca8` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x40f7` | `0x4117` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2460` | `0x2478` | **`+0x18`** |
+| `__TEXT.__swift5_fieldmd` | `0x4de0` | `0x4df8` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0xbd0` | `0xbe0` | **`+0x10`** |
+| `__TEXT.__constg_swiftt` | `0x7f04` | `0x7f14` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3605.33.1.1.1
--  __TEXT.__text: 0x1d33dc
--  __TEXT.__objc_methlist: 0x6880
--  __TEXT.__const: 0x10490
 +3605.41.1.0.0
-+  __TEXT.__text: 0x1d4098
-+  __TEXT.__objc_methlist: 0x68c8
-+  __TEXT.__const: 0x104c0
-   __TEXT.__dlopen_cstrs: 0x56
--  __TEXT.__cstring: 0xd9cd
--  __TEXT.__swift5_typeref: 0x45c5
--  __TEXT.__oslogstring: 0x759e
--  __TEXT.__swift5_capture: 0x3a6c
--  __TEXT.__swift5_reflstr: 0x40f7
-+  __TEXT.__cstring: 0xda7d
-+  __TEXT.__swift5_typeref: 0x4669
-+  __TEXT.__oslogstring: 0x765e
-+  __TEXT.__swift5_capture: 0x3b4c
-+  __TEXT.__swift5_reflstr: 0x4117
-   __TEXT.__swift5_assocty: 0x578
--  __TEXT.__constg_swiftt: 0x7f04
--  __TEXT.__swift5_fieldmd: 0x4de0
-+  __TEXT.__constg_swiftt: 0x7f14
-+  __TEXT.__swift5_fieldmd: 0x4df8
-   __TEXT.__swift5_builtin: 0x384
-   __TEXT.__swift5_protos: 0x68
-   __TEXT.__swift5_proto: 0xc98
 
-   __TEXT.__swift_as_ret: 0xd4
-   __TEXT.__gcc_except_tab: 0x3bd0
-   __TEXT.__unwind_info: 0xbd00
--  __TEXT.__eh_frame: 0x86e4
-+  __TEXT.__eh_frame: 0x86a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_protolist: 0xa0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2460
-+  __DATA_CONST.__objc_selrefs: 0x2478
-   __DATA_CONST.__objc_protorefs: 0x60
-   __DATA_CONST.__objc_superrefs: 0x250
--  __DATA_CONST.__got: 0xbd0
--  __AUTH_CONST.__const: 0x175c0
-+  __DATA_CONST.__got: 0xbe0
-+  __AUTH_CONST.__const: 0x177b0
-   __AUTH_CONST.__cfstring: 0x1080
--  __AUTH_CONST.__objc_const: 0x11db8
-+  __AUTH_CONST.__objc_const: 0x11de8
-   __AUTH_CONST.__weak_auth_got: 0x28
--  __AUTH_CONST.__auth_got: 0x2000
-+  __AUTH_CONST.__auth_got: 0x2028
-   __AUTH.__objc_data: 0x2848
-   __AUTH.__data: 0x9a0
-   __DATA.__objc_ivar: 0x2f4
--  __DATA.__data: 0x3c10
-+  __DATA.__data: 0x3be0
-   __DATA.__common: 0x348
--  __DATA_DIRTY.__objc_data: 0x4c88
--  __DATA_DIRTY.__data: 0x7718
-+  __DATA_DIRTY.__objc_data: 0x4ca8
-+  __DATA_DIRTY.__data: 0x76f8
-   __DATA_DIRTY.__bss: 0x480
-   __DATA_DIRTY.__common: 0x168
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 16410
+-  Functions: 16411
 -  Symbols:   6380
 -  CStrings:  2090
-+  Functions: 16425
++  Functions: 16426
 +  Symbols:   6390
 +  CStrings:  2098
- 
 Symbols:
 + -[SiriTTSSpeechRequest(SwiftProxy) disableFallbackVoice]
 + -[SiriTTSSpeechRequest(SwiftProxy) setDisableFallbackVoice:]

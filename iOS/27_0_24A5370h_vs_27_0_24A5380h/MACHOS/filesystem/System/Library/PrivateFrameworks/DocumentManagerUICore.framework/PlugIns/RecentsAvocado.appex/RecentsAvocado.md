@@ -2,70 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/DocumentManagerUICore.framework/PlugIns/RecentsAvocado.appex/RecentsAvocado`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1990c` | `0x195c0` | **`-0x34c`** |
+| `__TEXT.__objc_methname` | `0x3010` | `0x3040` | **`+0x30`** |
+| `__TEXT.__objc_stubs` | `0x1280` | `0x12a0` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x749` | `0x729` | **`-0x20`** |
+| `__DATA.__data` | `0xc40` | `0xc30` | **`-0x10`** |
+| `__TEXT.__const` | `0xa18` | `0xa08` | **`-0x10`** |
+| `__DATA.__objc_selrefs` | `0xad0` | `0xad8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift5_types`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1990c
-+  __TEXT.__text: 0x195c0
-   __TEXT.__auth_stubs: 0x13e0
--  __TEXT.__objc_stubs: 0x1280
-+  __TEXT.__objc_stubs: 0x12a0
-   __TEXT.__objc_methlist: 0xb2c
--  __TEXT.__const: 0xa18
-+  __TEXT.__const: 0xa08
-   __TEXT.__swift5_typeref: 0x8f7
-   __TEXT.__swift5_fieldmd: 0x448
-   __TEXT.__constg_swiftt: 0x2a8
-   __TEXT.__objc_classname: 0x263
--  __TEXT.__objc_methname: 0x3010
-+  __TEXT.__objc_methname: 0x3040
-   __TEXT.__objc_methtype: 0xcf8
--  __TEXT.__swift5_reflstr: 0x749
-+  __TEXT.__swift5_reflstr: 0x729
-   __TEXT.__swift5_builtin: 0x50
-   __TEXT.__cstring: 0x520
-   __TEXT.__swift5_assocty: 0x78
+-392.0.0.0.0
++394.0.0.0.0
 
-   __DATA_CONST.__got: 0x388
-   __DATA_CONST.__auth_ptr: 0x2b8
-   __DATA.__objc_const: 0x1648
--  __DATA.__objc_selrefs: 0xad0
-+  __DATA.__objc_selrefs: 0xad8
-   __DATA.__objc_data: 0x3e0
--  __DATA.__data: 0xc40
-+  __DATA.__data: 0xc30
-   __DATA.__bss: 0x7a0
-   __DATA.__common: 0x18
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 432
 +  Functions: 431
-   Symbols:   236
+
 -  CStrings:  652
 +  CStrings:  653
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_data : content changed
 CStrings:
 + "invalidateIntrinsicContentSize"
 + "isUpdatingLayout"
@@ -76,5 +58,4 @@ CStrings:
 - "labelContainerLeadingConstraint"
 - "labelContainerTopConstraint"
 - "labelContainerTrailingConstraint"
-
 ```

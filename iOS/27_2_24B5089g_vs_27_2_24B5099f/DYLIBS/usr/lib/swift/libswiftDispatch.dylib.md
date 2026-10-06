@@ -2,19 +2,11 @@
 
 > `/usr/lib/swift/libswiftDispatch.dylib`
 
-```diff
+### Section Size Changes
 
-   __AUTH_CONST.__const: 0x1a40
-   __AUTH_CONST.__objc_const: 0x1f8
-   __AUTH_CONST.__auth_got: 0x5c0
--  __DATA.__data: 0x460
-+  __DATA.__data: 0x450
-   __DATA.__common: 0x1
--  __DATA_DIRTY.__data: 0x368
--  __DATA_DIRTY.__bss: 0xb00
-+  __DATA_DIRTY.__data: 0x370
-+  __DATA_DIRTY.__bss: 0xc00
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA.__bss` | `0x2c80` | `0x2b80` | **`-0x100`** |
+| `__DATA_DIRTY.__bss` | `0xb00` | `0xc00` | **`+0x100`** |
+| `__DATA.__data` | `0x460` | `0x450` | **`-0x10`** |
+| `__DATA_DIRTY.__data` | `0x368` | `0x370` | **`+0x8`** |

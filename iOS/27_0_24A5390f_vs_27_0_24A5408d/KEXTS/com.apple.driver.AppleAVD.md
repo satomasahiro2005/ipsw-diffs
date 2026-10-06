@@ -2,37 +2,33 @@
 
 > `com.apple.driver.AppleAVD`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__os_log` | `0x1b1cb` | `0x1b321` | **`+0x156`** |
+| `__TEXT_EXEC.__text` | `0x5ff10` | `0x5fe18` | **`-0xf8`** |
+| `__TEXT.__cstring` | `0x7d1b` | `0x7cfe` | **`-0x1d`** |
+
+### Other Changes
+
 ```diff
 
 -991.0.0.0.0
--  __TEXT.__os_log: 0x1b1cb
--  __TEXT.__cstring: 0x7d1b
 +993.1.0.0.0
-+  __TEXT.__os_log: 0x1b321
-+  __TEXT.__cstring: 0x7cfe
-   __TEXT.__const: 0xcc129
--  __TEXT_EXEC.__text: 0x5ff10
-+  __TEXT_EXEC.__text: 0x5fe18
-   __TEXT_EXEC.__auth_stubs: 0x6f0
-   __DATA.__data: 0x1334
-   __DATA.__common: 0x78
 
-   __DATA_CONST.__auth_ptr: 0x10
-   Functions: 2162
-   Symbols:   0
 -  CStrings:  1771
 +  CStrings:  1772
- 
 Functions:
 ~ __ZN25AppleAVDFrameParamManager15wakeIfAvailableEv : 168 -> 112
 ~ __ZN25AppleAVDFrameParamManager15resetFrameQslotEii : 232 -> 332
 ~ __ZN25AppleAVDFrameParamManager20checkForAvailabilityEj : 228 -> 252
 ~ __ZN17AppleAVDScheduler9addWaiterEj : 188 -> 192
 ~ __ZN17AppleAVDScheduler12removeWaiterEj : 220 -> 232
-~ __ZN17AppleAVDScheduler24getHighestPriorityWaiterEv : 84 -> 124
+~ __ZN17AppleAVDScheduler18scheduleNextWaiterEv : 84 -> 124
 ~ __os_log_internal : 13980 -> 13320
 ~ __ZN8AppleAVD4initEP12OSDictionary : 916 -> 944
-~ __ZN8AppleAVD12powerCoreOffEj24eAppleAvdIOPMPowerStates -> sub_fffffe00086b6740 : 532 -> 460
+~ sub_fffffff008657e7c -> sub_fffffff008657330 : 532 -> 460
 ~ __ZN13PriorityQueueC2EPvP14CAvdRegisterIO : 408 -> 400
 ~ __ZN22AppleAVDCommandPatcher9mapMemoryEjy11eAvdMemType11eAvdMapTypebbbyyhP20_avd_client_mem_info : 1044 -> 1308
 ~ __ZN22AppleAVDCommandPatcher11unmapMemoryEP20_avd_client_mem_infob : 828 -> 900

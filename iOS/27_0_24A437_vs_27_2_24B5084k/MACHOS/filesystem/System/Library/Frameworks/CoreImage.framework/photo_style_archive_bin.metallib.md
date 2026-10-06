@@ -2,7 +2,7 @@
 
 > `/System/Library/Frameworks/CoreImage.framework/photo_style_archive_bin.metallib`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__compute`
 - `__TEXT.__descriptor`

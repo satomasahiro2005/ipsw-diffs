@@ -2,96 +2,59 @@
 
 > `/System/Library/AccessibilityBundles/AXImageExplorerServer.axuiservice/AXImageExplorerServer`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift5_protos`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x548b0` | `0x56e38` | **`+0x2588`** |
+| `__DATA.__data` | `0x1e20` | `0x1fc0` | **`+0x1a0`** |
+| `__TEXT.__oslogstring` | `0x1419` | `0x1509` | **`+0xf0`** |
+| `__TEXT.__auth_stubs` | `0x2a40` | `0x2b00` | **`+0xc0`** |
+| `__DATA_CONST.__const` | `0x11f0` | `0x1160` | **`-0x90`** |
+| `__TEXT.__cstring` | `0x128b` | `0x12fb` | **`+0x70`** |
+| `__DATA_CONST.__auth_got` | `0x1528` | `0x1588` | **`+0x60`** |
+| `__TEXT.__swift5_typeref` | `0x6c12` | `0x6c60` | **`+0x4e`** |
+| `__TEXT.__unwind_info` | `0x1200` | `0x1240` | **`+0x40`** |
+| `__TEXT.__constg_swiftt` | `0x8d0` | `0x904` | **`+0x34`** |
+| `__TEXT.__swift5_fieldmd` | `0x5d4` | `0x608` | **`+0x34`** |
+| `__DATA_CONST.__got` | `0x9d8` | `0x9f8` | **`+0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x6a7` | `0x6c7` | **`+0x20`** |
+| `__TEXT.__eh_frame` | `0x2494` | `0x2484` | **`-0x10`** |
+| `__DATA_CONST.__auth_ptr` | `0x7e0` | `0x7e8` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x1b8` | `0x1c0` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x78` | `0x7c` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
 - `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
+- `__TEXT.__const`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -3245.7.1.0.0
--  __TEXT.__text: 0x510f4
--  __TEXT.__auth_stubs: 0x2a40
 +3245.8.2.0.0
-+  __TEXT.__text: 0x535b0
-+  __TEXT.__auth_stubs: 0x2b00
-   __TEXT.__objc_stubs: 0xc00
-   __TEXT.__objc_methlist: 0x41c
-   __TEXT.__const: 0x2804
--  __TEXT.__constg_swiftt: 0x8d0
--  __TEXT.__swift5_typeref: 0x6c12
-+  __TEXT.__constg_swiftt: 0x904
-+  __TEXT.__swift5_typeref: 0x6c60
-   __TEXT.__swift5_builtin: 0x64
--  __TEXT.__swift5_reflstr: 0x6a7
--  __TEXT.__swift5_fieldmd: 0x5d4
-+  __TEXT.__swift5_reflstr: 0x6c7
-+  __TEXT.__swift5_fieldmd: 0x608
-   __TEXT.__swift5_assocty: 0x258
--  __TEXT.__cstring: 0x128b
-+  __TEXT.__cstring: 0x12fb
-   __TEXT.__swift5_capture: 0x41c
-   __TEXT.__swift5_proto: 0xcc
--  __TEXT.__swift5_types: 0x78
-+  __TEXT.__swift5_types: 0x7c
-   __TEXT.__objc_classname: 0x225
-   __TEXT.__objc_methname: 0x14c1
-   __TEXT.__objc_methtype: 0x681
--  __TEXT.__oslogstring: 0x1419
-+  __TEXT.__oslogstring: 0x1509
-   __TEXT.__swift_as_entry: 0x88
-   __TEXT.__swift_as_ret: 0xb8
--  __TEXT.__swift_as_cont: 0x1b8
-+  __TEXT.__swift_as_cont: 0x1c0
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0x1580
--  __TEXT.__eh_frame: 0x2494
--  __DATA_CONST.__const: 0x11f0
-+  __TEXT.__unwind_info: 0x15b0
-+  __TEXT.__eh_frame: 0x2484
-+  __DATA_CONST.__const: 0x1160
-   __DATA_CONST.__objc_classlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x20
--  __DATA_CONST.__auth_got: 0x1528
--  __DATA_CONST.__got: 0x9d8
--  __DATA_CONST.__auth_ptr: 0x7e0
-+  __DATA_CONST.__auth_got: 0x1588
-+  __DATA_CONST.__got: 0x9f8
-+  __DATA_CONST.__auth_ptr: 0x7e8
-   __DATA.__objc_const: 0xa20
-   __DATA.__objc_selrefs: 0x4f8
-   __DATA.__objc_data: 0x340
--  __DATA.__data: 0x1e20
-+  __DATA.__data: 0x1fc0
-   __DATA.__common: 0x18
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1331
 -  Symbols:   261
 -  CStrings:  478
 +  Functions: 1339
 +  Symbols:   265
 +  CStrings:  483
- 
 Symbols:
 + _AVAudioSessionCategoryRecord
 + _swift_cvw_initEnumMetadataMultiPayloadWithLayoutString

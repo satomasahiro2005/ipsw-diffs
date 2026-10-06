@@ -2,63 +2,48 @@
 
 > `/System/Library/Messages/PlugIns/SMS.imservice/SMS`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x10b6c` | `0x10aa4` | **`-0xc8`** |
+| `__TEXT.__objc_stubs` | `0x2b40` | `0x2ac0` | **`-0x80`** |
+| `__TEXT.__objc_methname` | `0x492e` | `0x48c7` | **`-0x67`** |
+| `__DATA.__objc_selrefs` | `0x1048` | `0x1028` | **`-0x20`** |
+| `__DATA_CONST.__got` | `0x3f8` | `0x3e0` | **`-0x18`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x10b6c
-+  __TEXT.__text: 0x10aa4
-   __TEXT.__auth_stubs: 0x8b0
--  __TEXT.__objc_stubs: 0x2b40
-+  __TEXT.__objc_stubs: 0x2ac0
-   __TEXT.__objc_methlist: 0xdbc
-   __TEXT.__const: 0x178
-   __TEXT.__gcc_except_tab: 0x1178
-   __TEXT.__cstring: 0x650
--  __TEXT.__objc_methname: 0x492e
-+  __TEXT.__objc_methname: 0x48c7
-   __TEXT.__oslogstring: 0x1e4b
-   __TEXT.__objc_classname: 0x247
-   __TEXT.__objc_methtype: 0x1b2f
+-1483.100.10.2.4
++1486.100.5.2.1
 
-   __DATA_CONST.__objc_arraydata: 0x60
-   __DATA_CONST.__objc_dictobj: 0x78
-   __DATA_CONST.__auth_got: 0x468
--  __DATA_CONST.__got: 0x3f8
-+  __DATA_CONST.__got: 0x3e0
-   __DATA_CONST.__auth_ptr: 0x20
-   __DATA.__objc_const: 0x1180
--  __DATA.__objc_selrefs: 0x1048
-+  __DATA.__objc_selrefs: 0x1028
-   __DATA.__objc_ivar: 0x58
-   __DATA.__objc_data: 0x3d0
-   __DATA.__data: 0x418
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 222
 -  Symbols:   309
--  CStrings:  1104
+-  CStrings:  1026
 +  Symbols:   307
-+  CStrings:  1100
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_intobj : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
++  CStrings:  1022
 Symbols:
 - _IMChatPropertyNeedsInitialHidingForUPIMessages
 - _OBJC_CLASS_$_IMDBroadcastController
@@ -69,5 +54,4 @@ CStrings:
 - "chat:propertiesUpdated:"
 - "isBlackholed"
 - "sharedProvider"
-
 ```

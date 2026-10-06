@@ -2,54 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/UARPKit.framework/UARPKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x143f0` | `0x14998` | **`+0x5a8`** |
+| `__AUTH_CONST.__objc_const` | `0x1e90` | `0x1f80` | **`+0xf0`** |
+| `__TEXT.__objc_methlist` | `0x14f8` | `0x15a0` | **`+0xa8`** |
+| `__AUTH_CONST.__cfstring` | `0xb40` | `0xbc0` | **`+0x80`** |
+| `__TEXT.__cstring` | `0x1dea` | `0x1e26` | **`+0x3c`** |
+| `__DATA_CONST.__objc_selrefs` | `0xd88` | `0xdc0` | **`+0x38`** |
+| `__DATA.__objc_ivar` | `0x18c` | `0x1a0` | **`+0x14`** |
+| `__TEXT.__unwind_info` | `0x420` | `0x428` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1587.0.27.0.0
--  __TEXT.__text: 0x143f0
--  __TEXT.__objc_methlist: 0x14f8
 +1587.2.2.0.0
-+  __TEXT.__text: 0x14998
-+  __TEXT.__objc_methlist: 0x15a0
-   __TEXT.__const: 0x90
--  __TEXT.__cstring: 0x1dea
-+  __TEXT.__cstring: 0x1e26
-   __TEXT.__gcc_except_tab: 0x3bc
-   __TEXT.__oslogstring: 0x8a3
--  __TEXT.__unwind_info: 0x420
-+  __TEXT.__unwind_info: 0x428
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x38
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xd88
-+  __DATA_CONST.__objc_selrefs: 0xdc0
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x50
-   __DATA_CONST.__got: 0xd8
--  __AUTH_CONST.__cfstring: 0xb40
--  __AUTH_CONST.__objc_const: 0x1e90
-+  __AUTH_CONST.__cfstring: 0xbc0
-+  __AUTH_CONST.__objc_const: 0x1f80
-   __AUTH_CONST.__auth_got: 0x0
-   __AUTH.__objc_data: 0x1e0
--  __DATA.__objc_ivar: 0x18c
-+  __DATA.__objc_ivar: 0x1a0
-   __DATA.__data: 0x2a0
-   __DATA_DIRTY.__objc_data: 0x190
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 518
--  Symbols:   1020
+-  Symbols:   778
 -  CStrings:  249
 +  Functions: 532
-+  Symbols:   1043
++  Symbols:   799
 +  CStrings:  253
- 
 Symbols:
 + -[UARPDevice transportDomain]
 + -[UARPDevice(FeatureSupport) setDeviceTransportDomain:]
@@ -85,8 +63,6 @@ Symbols:
 + _OBJC_IVAR_$_UARPDeviceConfiguration._productNumber
 + _OBJC_IVAR_$_UARPHostEndpointProperties._assetIdentifier
 + _OBJC_IVAR_$_UARPHostEndpointProperties._transportDomain
-+ _objc_msgSend$setTransportDomain:
-+ _objc_msgSend$transportDomain
 + _objc_sync_enter
 + _objc_sync_exit
 - GCC_except_table100

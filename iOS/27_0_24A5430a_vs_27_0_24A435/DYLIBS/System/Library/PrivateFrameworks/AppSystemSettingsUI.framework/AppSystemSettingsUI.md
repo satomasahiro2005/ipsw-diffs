@@ -2,18 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/AppSystemSettingsUI.framework/AppSystemSettingsUI`
 
-```diff
+### Section Size Changes
 
- 2027.0.7.0.0
--  __TEXT.__text: 0x46864
-+  __TEXT.__text: 0x46880
-   __TEXT.__objc_methlist: 0xfec
-   __TEXT.__const: 0x1bd8
-   __TEXT.__gcc_except_tab: 0x360
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x46864` | `0x46880` | **`+0x1c`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_252fdb1d0 -> sub_253a341d0 : 424 -> 428
-~ sub_252fdb550 -> sub_253a34554 : 380 -> 392
-~ sub_252fe0954 -> sub_253a39964 : 556 -> 560
-~ sub_252fe1cb0 -> sub_253a3acc4 : 584 -> 588
-~ sub_252fe70b4 -> sub_253a400cc : 352 -> 356
+~ sub_252ea51d0 -> sub_2538fd1d0 : 424 -> 428
+~ sub_252ea5550 -> sub_2538fd554 : 380 -> 392
+~ sub_252eaa954 -> sub_253902964 : 556 -> 560
+~ sub_252eabcb0 -> sub_253903cc4 : 584 -> 588
+~ sub_252eb10b4 -> sub_2539090cc : 352 -> 356
 ```

@@ -2,78 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/Welcome.framework/Welcome`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x53760` | `0x59858` | **`+0x60f8`** |
+| `__TEXT.__swift5_typeref` | `0x6468` | `0x65a0` | **`+0x138`** |
+| `__TEXT.__const` | `0x30d4` | `0x31d4` | **`+0x100`** |
+| `__AUTH_CONST.__const` | `0x1c80` | `0x1d78` | **`+0xf8`** |
+| `__TEXT.__swift5_capture` | `0x520` | `0x5c8` | **`+0xa8`** |
+| `__DATA.__bss` | `0x24b8` | `0x2558` | **`+0xa0`** |
+| `__TEXT.__constg_swiftt` | `0x1800` | `0x18a0` | **`+0xa0`** |
+| `__DATA.__data` | `0x1c38` | `0x1ca8` | **`+0x70`** |
+| `__TEXT.__eh_frame` | `0x8b4` | `0x844` | **`-0x70`** |
+| `__TEXT.__unwind_info` | `0x11d0` | `0x1240` | **`+0x70`** |
+| `__TEXT.__swift5_fieldmd` | `0xbc8` | `0xc20` | **`+0x58`** |
+| `__TEXT.__swift5_reflstr` | `0x768` | `0x7a8` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x738` | `0x768` | **`+0x30`** |
+| `__TEXT.__swift5_assocty` | `0x418` | `0x430` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x7e8` | `0x7f0` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x120` | `0x124` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0x10c` | `0x110` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -32.0.0.0.0
--  __TEXT.__text: 0x53760
 +33.0.0.0.0
-+  __TEXT.__text: 0x59858
-   __TEXT.__objc_methlist: 0x70
--  __TEXT.__const: 0x30d4
--  __TEXT.__constg_swiftt: 0x1800
--  __TEXT.__swift5_typeref: 0x6468
-+  __TEXT.__const: 0x31d4
-+  __TEXT.__constg_swiftt: 0x18a0
-+  __TEXT.__swift5_typeref: 0x65a0
-   __TEXT.__swift5_builtin: 0x28
--  __TEXT.__swift5_reflstr: 0x768
--  __TEXT.__swift5_fieldmd: 0xbc8
--  __TEXT.__swift5_types: 0x10c
-+  __TEXT.__swift5_reflstr: 0x7a8
-+  __TEXT.__swift5_fieldmd: 0xc20
-+  __TEXT.__swift5_types: 0x110
-   __TEXT.__oslogstring: 0x1c4
--  __TEXT.__swift5_capture: 0x520
--  __TEXT.__cstring: 0x738
--  __TEXT.__swift5_assocty: 0x418
-+  __TEXT.__swift5_capture: 0x5c8
-+  __TEXT.__cstring: 0x768
-+  __TEXT.__swift5_assocty: 0x430
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_protos: 0xc
--  __TEXT.__swift5_proto: 0x120
-+  __TEXT.__swift5_proto: 0x124
-   __TEXT.__swift_as_entry: 0x1c
-   __TEXT.__swift_as_ret: 0x1c
-   __TEXT.__swift_as_cont: 0x44
--  __TEXT.__unwind_info: 0x11d0
--  __TEXT.__eh_frame: 0x8b4
-+  __TEXT.__unwind_info: 0x1240
-+  __TEXT.__eh_frame: 0x844
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x1f8
--  __DATA_CONST.__got: 0x7e8
--  __AUTH_CONST.__const: 0x1c80
-+  __DATA_CONST.__got: 0x7f0
-+  __AUTH_CONST.__const: 0x1d78
-   __AUTH_CONST.__objc_const: 0x2f8
-   __AUTH_CONST.__auth_got: 0x1168
-   __AUTH.__objc_data: 0x118
-   __AUTH.__data: 0xb00
--  __DATA.__data: 0x1c38
-+  __DATA.__data: 0x1ca8
-   __DATA.__common: 0xd
--  __DATA.__bss: 0x24b8
-+  __DATA.__bss: 0x2558
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AVKit.framework/AVKit
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1888
--  Symbols:   1100
+-  Symbols:   1041
 -  CStrings:  59
 +  Functions: 1963
-+  Symbols:   1106
++  Symbols:   1047
 +  CStrings:  60
- 
 Symbols:
 + _associated conformance 7Welcome0A21ViewDualTwoColumnBodyVyxq_q0_G7SwiftUI0B0AA0F0AeFP_AeF
 + _get_witness_table 7SwiftUI4ViewRzAaBR_AaBR0_AaBR1_r2_lAA19_ConditionalContentVyAA14GeometryReaderVyADy7Welcome0hC17DualTwoColumnBodyVyxq0_q1_GAG0hciL0Vyxq0_q1_GGGAFyADyAG0hcjkL0Vyxq1_GAaBPAAE20scrollBounceBehavior_4axesQrAA06ScrollnO0V_AA4AxisO3SetVtFQOyAA08ModifiedE0VyA1_yADyA1_yADyAsAE11safeAreaBar4edge9alignment7spacing7contentQrAA12VerticalEdgeO_AA19HorizontalAlignmentV12CoreGraphics7CGFloatVSgqd__yXEtAaBRd__lFQOyAA6VStackVyAA05TupleE0VyA1_yq_AA30_ContainerValueWritingModifierVyAG0hC4KindOGGSg_AA0qC0VyA1_yA1_yA1_yA16_yA18_yAA7ForEachVyAA24ForEachSubviewCollectionVyADyA1_yAA7SubviewVAA14_PaddingLayoutVGA36_GGA33_2IDVA37_G_A1_yA1_yAG0H6FooterVyq1_GA23_GAA01_F14ActionModifierVyA13_GGSgQPGGA35_GAA16_FlexFrameLayoutVGA55_GGQPGG_A49_Qo_A60_GAA05_SafeV21RegionsIgnoringLayoutVGA62_GA55_GAA04SafeV15PaddingModifierVG_Qo_GGGAaBHPAoaBHPyHC_A73_AaBHPyHCHC

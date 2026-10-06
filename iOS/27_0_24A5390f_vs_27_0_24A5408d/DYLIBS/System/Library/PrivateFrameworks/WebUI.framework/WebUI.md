@@ -2,66 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/WebUI.framework/WebUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x33094` | `0x33438` | **`+0x3a4`** |
+| `__DATA_CONST.__const` | `0xfc0` | `0xfe8` | **`+0x28`** |
+| `__AUTH_CONST.__objc_const` | `0x1f68` | `0x1f88` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x5a0` | `0x5b0` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0xe30` | `0xe40` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x118` | `0x11c` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -625.1.24.10.1
--  __TEXT.__text: 0x33094
 +625.1.29.10.3
-+  __TEXT.__text: 0x33438
-   __TEXT.__objc_methlist: 0x14b4
-   __TEXT.__const: 0xd40
--  __TEXT.__gcc_except_tab: 0x5a0
-+  __TEXT.__gcc_except_tab: 0x5b0
-   __TEXT.__cstring: 0x16b6
-   __TEXT.__oslogstring: 0x5ad
-   __TEXT.__ustring: 0x9a6
 
-   __TEXT.__swift_as_entry: 0xb8
-   __TEXT.__swift_as_ret: 0x114
-   __TEXT.__swift_as_cont: 0x178
--  __TEXT.__unwind_info: 0xe30
-+  __TEXT.__unwind_info: 0xe40
-   __TEXT.__eh_frame: 0x1960
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xfc0
-+  __DATA_CONST.__const: 0xfe8
-   __DATA_CONST.__objc_classlist: 0x90
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x70
-
-   __DATA_CONST.__got: 0x5f0
-   __AUTH_CONST.__const: 0xd10
-   __AUTH_CONST.__cfstring: 0xe80
--  __AUTH_CONST.__objc_const: 0x1f68
-+  __AUTH_CONST.__objc_const: 0x1f88
-   __AUTH_CONST.__objc_intobj: 0x48
-   __AUTH_CONST.__objc_arrayobj: 0x60
-   __AUTH_CONST.__auth_got: 0x960
-   __AUTH.__objc_data: 0x90
-   __AUTH.__data: 0x1d8
--  __DATA.__objc_ivar: 0x118
-+  __DATA.__objc_ivar: 0x11c
-   __DATA.__data: 0x658
-   __DATA.__bss: 0xbe0
-   __DATA_DIRTY.__objc_data: 0x6e8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 994
--  Symbols:   1859
+-  Symbols:   1331
 +  Functions: 999
-+  Symbols:   1866
-   CStrings:  185
- 
++  Symbols:   1338
 Symbols:
 + GCC_except_table109
 + GCC_except_table113

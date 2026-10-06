@@ -2,23 +2,23 @@
 
 > `/System/Library/PrivateFrameworks/DiagnosticsReporterServices.framework/DiagnosticsReporterServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2133c` | `0x21264` | **`-0xd8`** |
+| `__TEXT.__cstring` | `0xc1b` | `0xc0b` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -1056.2.1.0.0
--  __TEXT.__text: 0x20550
 +1056.40.5.0.0
-+  __TEXT.__text: 0x20478
-   __TEXT.__objc_methlist: 0x334
-   __TEXT.__const: 0x10d2
--  __TEXT.__cstring: 0xc1b
-+  __TEXT.__cstring: 0xc0b
-   __TEXT.__constg_swiftt: 0x4d8
-   __TEXT.__swift5_typeref: 0x4fa
-   __TEXT.__swift5_fieldmd: 0x3f0
 Functions:
-~ sub_21ff8c13c -> sub_21ffb513c : 3856 -> 3792
-~ sub_21ff8fb6c -> sub_21ffb8b2c : 1628 -> 1600
-~ sub_21ff90448 -> sub_21ffb93ec : 144 -> 120
-~ sub_21ff9f6a4 -> sub_21ffc8630 : 2444 -> 2396
-~ sub_21ffa3bac -> sub_21ffccb08 : 1664 -> 1612
+~ sub_2238b22c8 -> sub_225ae42c8 : 3896 -> 3832
+~ sub_2238b5eb0 -> sub_225ae7e70 : 1688 -> 1660
+~ sub_2238b67c8 -> sub_225ae876c : 144 -> 120
+~ sub_2238c6004 -> sub_225af7f90 : 2464 -> 2416
+~ sub_2238ca6dc -> sub_225afc638 : 1724 -> 1672
 ```

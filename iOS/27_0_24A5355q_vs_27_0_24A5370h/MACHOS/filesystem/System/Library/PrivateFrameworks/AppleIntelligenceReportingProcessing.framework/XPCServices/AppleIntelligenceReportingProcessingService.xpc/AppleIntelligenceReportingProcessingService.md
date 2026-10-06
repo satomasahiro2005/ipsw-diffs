@@ -2,188 +2,60 @@
 
 > `/System/Library/PrivateFrameworks/AppleIntelligenceReportingProcessing.framework/XPCServices/AppleIntelligenceReportingProcessingService.xpc/AppleIntelligenceReportingProcessingService`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd9318` | `0xdd224` | **`+0x3f0c`** |
+| `__TEXT.__eh_frame` | `0x54a8` | `0x5718` | **`+0x270`** |
+| `__TEXT.__const` | `0x6136` | `0x6216` | **`+0xe0`** |
+| `__TEXT.__swift5_typeref` | `0x24a8` | `0x2578` | **`+0xd0`** |
+| `__DATA_CONST.__const` | `0x8e10` | `0x8ec0` | **`+0xb0`** |
+| `__TEXT.__cstring` | `0x48a3` | `0x4953` | **`+0xb0`** |
+| `__TEXT.__unwind_info` | `0x2d30` | `0x2de0` | **`+0xb0`** |
+| `__TEXT.__constg_swiftt` | `0x1e00` | `0x1e88` | **`+0x88`** |
+| `__TEXT.__swift5_fieldmd` | `0x2dc0` | `0x2e24` | **`+0x64`** |
+| `__DATA.__data` | `0x3878` | `0x38a8` | **`+0x30`** |
+| `__TEXT.__auth_stubs` | `0x2d20` | `0x2d40` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0x1698` | `0x16a8` | **`+0x10`** |
+| `__DATA_CONST.__auth_ptr` | `0xbf0` | `0xc00` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x2aad` | `0x2abd` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0xe8` | `0xf4` | **`+0xc`** |
+| `__TEXT.__swift_as_ret` | `0x138` | `0x144` | **`+0xc`** |
+| `__TEXT.__swift5_proto` | `0x3d0` | `0x3d8` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x3c` | `0x44` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x1c0` | `0x1c8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_classlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift_as_cont`
+
+### Other Changes
+
 ```diff
 
 -194.0.0.0.0
--  __TEXT.__text: 0xd9318 sha256:478bbf1a3bd0f52d0bacd11b5a0aa287785eea4484307e60d23b18c9138140d0
--  __TEXT.__auth_stubs: 0x2d20 sha256:6cd074624c30cf55b4eb2aabac467a6097d76ece6d3a101c2eed5eab07d210e2
--  __TEXT.__objc_stubs: 0x1980 sha256:f7849f27ed48d9f275bda6e6e9267d8653e7dc03053d77696cb843b649991450
--  __TEXT.__const: 0x6136 sha256:b896a6745ba774e25ae962034b768707791d6be541114f04b0bc3c5c0515c139
--  __TEXT.__swift5_typeref: 0x24a8 sha256:a6fd79669590e089cfcb4f2d6643ab9970c8dde494eb0219f23eb9c910aa8e9f
--  __TEXT.__cstring: 0x48a3 sha256:68b609efce6555a7e9c4cb7b4475189521f4114b94e16a56ac453ccd8f0e7ec2
--  __TEXT.__swift5_entry: 0x8 sha256:785f5aed0a29f474d9f16582a83aa2781108b0e627623a83b66fba7d1f74bd49
--  __TEXT.__constg_swiftt: 0x1e00 sha256:c1f9ee91d9436c8d7012d619866a2a523837598fe5e1cc2a702a5ce8bc3d8de4
--  __TEXT.__swift5_builtin: 0x28 sha256:e245ea89e0acf8db0a385e6bae3ea6c72ae719e6d6745dde1dc6ca499d2db17c
--  __TEXT.__swift5_types: 0x1c0 sha256:5eb7741a0633e063112c759c0ffe4115f8f2b3b583aa468fa3666b45275bb05e
 +200.0.0.0.0
-+  __TEXT.__text: 0xdd224 sha256:624312f974228d2230886dd4d69405394e1a7d19912029ce301ae82e385de4f7
-+  __TEXT.__auth_stubs: 0x2d40 sha256:9f822011f7beac99b581d9b85a786e1846a284db67fdefb51d589ff7fce3edef
-+  __TEXT.__objc_stubs: 0x1980 sha256:770ca2732611c63564cc21f8e33994e9e0f37b1fbf59acf81e2e156db2fb622a
-+  __TEXT.__const: 0x6216 sha256:3d22426cc4e1435706028007e0d5bca87f636b3530ca99a49c2ba377e72f9148
-+  __TEXT.__swift5_typeref: 0x2578 sha256:57c5cae1a7ca52ae1a76055495adbc54162c20f28c03f4d26a46b7fb7d818389
-+  __TEXT.__cstring: 0x4953 sha256:28fbd243756e2426935bd18e50e0c66a865f3ed54c87cf9825e399b10d050176
-+  __TEXT.__swift5_entry: 0x8 sha256:8b927a8b609a76a3161e15c454a63d81daf41f715320dc6829dc4b841ee578bc
-+  __TEXT.__constg_swiftt: 0x1e88 sha256:9bce1c606049396df9849e20dc6cf0bcd92af41b93454be15b0f4e60bfdb660a
-+  __TEXT.__swift5_builtin: 0x28 sha256:12a870f4afed7d624c11f288a857ae4d94ae89d10bad0c840d9f4894974d0d3e
-+  __TEXT.__swift5_types: 0x1c8 sha256:e23de6545ed7667f8dfcd992c05f64bfa6f8ba520326936b9c2e80885e00c9b9
-   __TEXT.__oslogstring: 0x478e sha256:6c0b8e5368733339a2ca58fca0e0d1b48af53a7114ca4864c2590c73924b862d
--  __TEXT.__swift5_reflstr: 0x2aad sha256:dad0bed03c8a8e67a843c322549c2f2fa2c46a96ed10920358a1b95316c70d9f
--  __TEXT.__swift5_assocty: 0x1b0 sha256:bab5fbd1a46220aa2b4f5a439d7c1b2894d26bf857686c88a04d91acef232548
--  __TEXT.__swift5_fieldmd: 0x2dc0 sha256:d50a9421c156bd8873f35110e9905f874a851467ad815fbb1a46c99c2c9c44e9
-+  __TEXT.__swift5_reflstr: 0x2abd sha256:348c036e82e8ba64f1fa172177eb1de2238d2d3411e4871c20bd8de2a91713ed
-+  __TEXT.__swift5_assocty: 0x1b0 sha256:6cde7d668ed4b422e58f1523796b9d04511604a98b33233c35f872800a0c4774
-+  __TEXT.__swift5_fieldmd: 0x2e24 sha256:af90694bb286aaad25fd9fe1ac6ef98e6570d1a6542b45095aa96a447c3e7bb7
-   __TEXT.__objc_methname: 0x1bd5 sha256:8af57cb6d5329843faa3d5869eee1fe1fb80abb6216789b7244f348d850b8201
-   __TEXT.__objc_methtype: 0x2e sha256:b57f957a87d101eb63c4364945d749bf7e07a98818d49696f9265ab93c807b73
-   __TEXT.__objc_classname: 0x5d8 sha256:2f376797ac60dfdd53a67b03c54c8e5600de54d02ad167af76d31ea49e415847
--  __TEXT.__swift5_protos: 0x3c sha256:7c99ddc1db01a2c8b5c6908082a110e3e64dfda39927d52421254651aef158ae
--  __TEXT.__swift5_proto: 0x3d0 sha256:72087a4626d0c616d4d26cf24e689ce24d6ebf4e890ef73c29a112ebe1b03ec6
--  __TEXT.__swift_as_entry: 0xe8 sha256:811642df13ac3a63f801698dd9149a50f3f0494742ac1de111a860b82311c8ce
--  __TEXT.__swift_as_ret: 0x138 sha256:1f35a87b56cd002543022c1fe903ca3495e016bac56f4e7133a088f4f8ce81c1
--  __TEXT.__swift_as_cont: 0x208 sha256:ca3e203443094ba190f20b9f219d33b4dc821f39de4eb7c026cc7fc9a8152026
--  __TEXT.__swift5_capture: 0x2260 sha256:f5848e53e3334ce2a129a2015e710e8319b1903a8b46600b00151937ade29c5d
--  __TEXT.__swift5_mpenum: 0x8 sha256:d23dcb668faa39ee2421b3ea59195e30c833e975edb786364adf907507bae95e
--  __TEXT.__unwind_info: 0x2d30 sha256:75f8a756ad758430f60460bef6f51931a4911398fdd6a1e2ec6debf057d2126d
--  __TEXT.__eh_frame: 0x54a8 sha256:da166c5dd187246eb9631497e8f42b416c2c6fe0093e22cba8d114f37668334f
--  __DATA_CONST.__const: 0x8e10 sha256:fe91d82954f567e890af1731373cb8f73b115824bfe691b908781208a5216d0f
--  __DATA_CONST.__cfstring: 0x7e0 sha256:279d1de909f1886f25a0c6863b3e0eeac710591c8f26de92151ed7f890d7606b
--  __DATA_CONST.__objc_classlist: 0x98 sha256:21f267f0aefc2202af67856fa85aac1beefb6c551be21f86d5ea344f592fa7ca
-+  __TEXT.__swift5_protos: 0x44 sha256:86006ede53acf4a33a27c12db40c3c47f9f5e05ace12542a875b208afc8706cd
-+  __TEXT.__swift5_proto: 0x3d8 sha256:336f78b402d805eef09515c4f362f9ce20820936e8807603775410ad4cdb4b08
-+  __TEXT.__swift_as_entry: 0xf4 sha256:d76437ced9a22347a5b5a6fba8b620060564551ad52daaf0c62c6635071c34d6
-+  __TEXT.__swift_as_ret: 0x144 sha256:df83c6acc902953cbdbe137eb18c36bd8791d1009497ac39744bdb86adca6237
-+  __TEXT.__swift_as_cont: 0x208 sha256:56675e2df0164063c35c50df38f2506baf21154038aacf9fc7bf69d4c3c02fcd
-+  __TEXT.__swift5_capture: 0x2260 sha256:8bc78d2e34a2cff5d676f3439b5abc21db361dea7447b4a78fb66e18a8079b32
-+  __TEXT.__swift5_mpenum: 0x8 sha256:52db258bd64626a85a27958695c73b256f4566f336a3b01b8c8a5605587847f7
-+  __TEXT.__unwind_info: 0x2de0 sha256:7c1084876184ed370907c94bfbc8734ff66f9f79b19b97d78f1b4c2bdc058baa
-+  __TEXT.__eh_frame: 0x5718 sha256:78c947485dbe81f317ceb721696472269e048187530c2b293b19643868d1dde9
-+  __DATA_CONST.__const: 0x8ec0 sha256:e8fc3a44b61a43b7cccd33e8ed8bc51074f8cc0d79748e73fbad516e1822757a
-+  __DATA_CONST.__cfstring: 0x7e0 sha256:19664554dfc4287ebee3ea5ae3605e365ec847c39840d75aa713de2e731efff3
-+  __DATA_CONST.__objc_classlist: 0x98 sha256:d9a22f0013730bce0c880acbe86acb23138abddb9b96c9babc3fca55c9158b15
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:885ce8037a15de89b0ceb0054c31fc3de725513307f685be388961916dadcdb0
--  __DATA_CONST.__auth_got: 0x1698 sha256:d287b1cc70496dc026b052e0adfca899bf9000990dea8c4b9211252c48e4a334
--  __DATA_CONST.__got: 0xad8 sha256:b3073760934c4bdacb6840b4ec87a2037d39ffc56644ae6d75291b9625aaf533
--  __DATA_CONST.__auth_ptr: 0xbf0 sha256:3c34743c7368f0f1446ea0e70462fef4010c547915988dc70abccd78596aaf82
--  __DATA.__objc_const: 0x1750 sha256:5a4af79c09dd41e77c62b535c6d7d89cdc3de84a1c59559f0da4c8dd63a04f36
--  __DATA.__objc_selrefs: 0x660 sha256:b86f8046e0640ed7f510635a677bebb4f8d0d5b222043be994683c318706b9a0
--  __DATA.__objc_data: 0xf0 sha256:a5a512f9ed36c2204e6dd91acafcc79d39228e1a86f56bb1d5a2a970b0f10afb
--  __DATA.__data: 0x3878 sha256:4f74f2d95cff421a58cb6cdd31c0f6cf8e2f90f811085af1bbb6372074dd9386
-+  __DATA_CONST.__auth_got: 0x16a8 sha256:2b00f7b9ee33d534a1af26e66664a70d709a69d3bae20a0f35b50c8a3f35aefd
-+  __DATA_CONST.__got: 0xad8 sha256:afad73e0efdad30b6fab11c1567d2c14cc87caa56a38913771c5c2a93e38d730
-+  __DATA_CONST.__auth_ptr: 0xc00 sha256:37c62cc899aaa0f1b1d72783f5cfe0049a848b3132014f2a4cffb3b1c6f60687
-+  __DATA.__objc_const: 0x1750 sha256:d6b46eadab66f630a87dce224bc0f17e0446e72e8bbfffd90d8658669e6d5344
-+  __DATA.__objc_selrefs: 0x660 sha256:5811463acf4dee36269f643257d0dc739f66967485297892732c2e4375954ad2
-+  __DATA.__objc_data: 0xf0 sha256:394bb789246791b127ae3676aa5b7bb1093916eadab9f9dcd05f05fb9b50aa06
-+  __DATA.__data: 0x38a8 sha256:f15ac3deac720ded3012657e026916e7f24340bcb97d0ae2b377703ea1c74bb5
-   __DATA.__common: 0x198 sha256:c76903cde8580d1c809ac5352aab33af5a310ad05126294d66e06db880c463ed
--  __DATA.__bss: 0x7390 sha256:0c283bc89a699ed77d195fc817f3b8d09b4b82567ee0dac2592ffb6ea4aec06d
-+  __DATA.__bss: 0x7390 sha256:bee359dd9b4c39965081c1f8f69ba58c9690b06351c414ea5d9f16bef604a961
-   - /AppleInternal/Library/Frameworks/TapToRadarKit.framework/TapToRadarKit
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: 89803754-E6DE-3C6E-AC1A-E91B58A34028
 -  Functions: 6141
--  Symbols:   41096
--  CStrings:  1171
-+  UUID: EB09043A-9BA0-3E60-A25A-4F017F48D720
+-  Symbols:   10484
+-  CStrings:  1079
 +  Functions: 6220
-+  Symbols:   41608
-+  CStrings:  1175
- 
++  Symbols:   10601
++  CStrings:  1083
 Symbols:
-+ $s43AppleIntelligenceReportingProcessingService0aB18BiomeEventSequenceC13AsyncIteratorV10setupErrors0L0_pSgvM.resume.0
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/DerivedSources/
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AnalyticsEvent.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AppleIntelligenceBiomeEventSequence.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AppleIntelligenceReportingProcessingError.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AppleIntelligenceReportingProcessingService.swiftmodule
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AppleIntelligenceReportingProcessingService_vers.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AssetBringUpErrorExtractor.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AssetBringUpState.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AssetBringUpStateEvent.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AssetBringUpStateProcessor.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AssetDeliveryProcessor.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AssetDeliveryState.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AssetDeliveryStateReader.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AssetDeliverySubsystemError.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AvailabilityChangeEvent.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AvailabilityDetailedStatusEvent.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/BiomeEventReader.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/BiomeEventReading.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/BiomeEvents.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/BuddyEvent.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/BuddyProcessor.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/CAEncoder.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/Constants.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/CoreAnalyticsUploader.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/CoreAnalyticsUploading.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/DataCollector.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/DataCollectorInternal.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/DependencyInjection.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/DependencyInjectionXPC.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/FactoryAssetTypes.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/FeatureFlag.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/FileManagerProvider.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/FileManagerProviding.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/Hashing.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/InferenceEvent.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/InvocationEvent.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/InvocationProcessor.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/Logging.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/MockSoftwareUpdateServices.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/MockUserDefaults.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/NumericalExtensions.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/SELFEventProcessors.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/SELFProcessingError.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/SELFUploader.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/SELFUploading.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/SELFWrapperFactory.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/Service.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/SoftwareUpdateServicesProvider.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/SoftwareUpdateServicesProviding.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/SubsystemTimingEvent.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/SysctlProvider.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/SysctlProviding.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/TapToRadarFiler.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/TapToRadarFiling.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/TapToRadarManager.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/Time.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/UAFAssetAggregation.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/UAFDailyStatusEvent.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/UAFDailyStatusReader.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/UAFDailyStatusReading.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/UnifiedAssetFrameworkReporter.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/UnifiedAssetFrameworkReporting.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/UserDefaultsProvider.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/UserDefaultsProviding.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/main.o
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Sources/AppleIntelligenceReportingExecutables/AppleIntelligenceReporting/Utils/
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Sources/AppleIntelligenceReportingExecutables/AppleIntelligenceReportingProcessing/
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Sources/AppleIntelligenceReportingExecutables/AppleIntelligenceReportingProcessing/DataCollector/
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Sources/AppleIntelligenceReportingExecutables/AppleIntelligenceReportingProcessing/DataProcessing/
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Sources/AppleIntelligenceReportingExecutables/AppleIntelligenceReportingProcessing/DataProcessing/AssetBringUpProcessing/
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Sources/AppleIntelligenceReportingExecutables/AppleIntelligenceReportingProcessing/DataProcessing/AssetDeliveryProcessing/
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Sources/AppleIntelligenceReportingExecutables/AppleIntelligenceReportingProcessing/DataProcessing/BuddyProcessing/
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Sources/AppleIntelligenceReportingExecutables/AppleIntelligenceReportingProcessing/DataProcessing/CoreAnalytics/
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Sources/AppleIntelligenceReportingExecutables/AppleIntelligenceReportingProcessing/DataProcessing/InvocationProcessing/
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Sources/AppleIntelligenceReportingExecutables/AppleIntelligenceReportingProcessing/DataUploading/OnDevice/
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Sources/AppleIntelligenceReportingExecutables/AppleIntelligenceReportingProcessing/Runtime/
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Sources/AppleIntelligenceReportingExecutables/AppleIntelligenceReportingProcessing/Utils/
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Sources/AppleIntelligenceReportingExecutables/SideEffects/Biome/
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Sources/AppleIntelligenceReportingExecutables/SideEffects/Biome/EventReader/
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Sources/AppleIntelligenceReportingExecutables/SideEffects/Biome/EventReporter/
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Sources/AppleIntelligenceReportingExecutables/SideEffects/CoreAnalytics/
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Sources/AppleIntelligenceReportingExecutables/SideEffects/FileManager/
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Sources/AppleIntelligenceReportingExecutables/SideEffects/SELF/
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Sources/AppleIntelligenceReportingExecutables/SideEffects/SoftwareUpdateServices/
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Sources/AppleIntelligenceReportingExecutables/SideEffects/Sysctl/
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Sources/AppleIntelligenceReportingExecutables/SideEffects/TapToRadar/
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Sources/AppleIntelligenceReportingExecutables/SideEffects/UnifiedAssetFramework/
-+ /Library/Caches/com.apple.xbs/8B7A5B49-E0C6-4B30-B115-1EB3B3634F10/TemporaryDirectory.NRCx2S/Sources/AppleIntelligenceReportingExecutables/SideEffects/UserDefaults/
++ $s43AppleIntelligenceReportingProcessingService0aB18BiomeEventSequenceC13AsyncIteratorV10setupErrors0L0_pSgvM.resume
 + _$s27IntelligencePlatformLibrary05AppleA18ReportingEventTypeOACSQAAWl
 + _$s27IntelligencePlatformLibrary05AppleA18ReportingEventTypeOSgML
 + _$s43AppleIntelligenceReportingProcessingService013AssetDeliveryD0Mp
@@ -311,94 +183,6 @@ Symbols:
 + _symbolic _____ 43AppleIntelligenceReportingProcessingService22SUInformationConstantsO
 + _symbolic ______pSg s5ErrorP
 + _symbolic _____ySS3key_SS5valuetG s23_ContiguousArrayStorageC
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/DerivedSources/
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AnalyticsEvent.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AppleIntelligenceBiomeEventSequence.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AppleIntelligenceReportingProcessingError.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AppleIntelligenceReportingProcessingService.swiftmodule
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AppleIntelligenceReportingProcessingService_vers.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AssetBringUpErrorExtractor.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AssetBringUpState.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AssetBringUpStateEvent.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AssetBringUpStateProcessor.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AssetDeliveryProcessor.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AssetDeliveryState.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AssetDeliveryStateReader.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AssetDeliverySubsystemError.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AvailabilityChangeEvent.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/AvailabilityDetailedStatusEvent.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/BiomeEventReader.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/BiomeEventReading.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/BiomeEvents.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/BuddyEvent.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/BuddyProcessor.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/CAEncoder.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/Constants.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/CoreAnalyticsUploader.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/CoreAnalyticsUploading.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/DataCollector.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/DataCollectorInternal.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/DependencyInjection.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/DependencyInjectionXPC.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/FactoryAssetTypes.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/FeatureFlag.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/FileManagerProvider.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/FileManagerProviding.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/Hashing.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/InferenceEvent.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/InvocationEvent.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/InvocationProcessor.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/Logging.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/MockSoftwareUpdateServices.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/MockUserDefaults.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/NumericalExtensions.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/SELFEventProcessors.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/SELFProcessingError.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/SELFUploader.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/SELFUploading.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/SELFWrapperFactory.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/Service.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/SoftwareUpdateServicesProvider.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/SoftwareUpdateServicesProviding.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/SubsystemTimingEvent.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/SysctlProvider.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/SysctlProviding.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/TapToRadarFiler.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/TapToRadarFiling.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/TapToRadarManager.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/Time.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/UAFAssetAggregation.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/UAFDailyStatusEvent.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/UAFDailyStatusReader.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/UAFDailyStatusReading.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/UnifiedAssetFrameworkReporter.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/UnifiedAssetFrameworkReporting.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/UserDefaultsProvider.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/UserDefaultsProviding.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Binaries/AppleIntelligenceReportingExecutables/install/TempContent/Objects/AppleIntelligenceReporting.build/AppleIntelligenceReportingProcessingService.build/Objects-normal/arm64e/main.o
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Sources/AppleIntelligenceReportingExecutables/AppleIntelligenceReporting/Utils/
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Sources/AppleIntelligenceReportingExecutables/AppleIntelligenceReportingProcessing/
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Sources/AppleIntelligenceReportingExecutables/AppleIntelligenceReportingProcessing/DataCollector/
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Sources/AppleIntelligenceReportingExecutables/AppleIntelligenceReportingProcessing/DataProcessing/
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Sources/AppleIntelligenceReportingExecutables/AppleIntelligenceReportingProcessing/DataProcessing/AssetBringUpProcessing/
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Sources/AppleIntelligenceReportingExecutables/AppleIntelligenceReportingProcessing/DataProcessing/AssetDeliveryProcessing/
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Sources/AppleIntelligenceReportingExecutables/AppleIntelligenceReportingProcessing/DataProcessing/BuddyProcessing/
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Sources/AppleIntelligenceReportingExecutables/AppleIntelligenceReportingProcessing/DataProcessing/CoreAnalytics/
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Sources/AppleIntelligenceReportingExecutables/AppleIntelligenceReportingProcessing/DataProcessing/InvocationProcessing/
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Sources/AppleIntelligenceReportingExecutables/AppleIntelligenceReportingProcessing/DataUploading/OnDevice/
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Sources/AppleIntelligenceReportingExecutables/AppleIntelligenceReportingProcessing/Runtime/
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Sources/AppleIntelligenceReportingExecutables/AppleIntelligenceReportingProcessing/Utils/
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Sources/AppleIntelligenceReportingExecutables/SideEffects/Biome/
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Sources/AppleIntelligenceReportingExecutables/SideEffects/Biome/EventReader/
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Sources/AppleIntelligenceReportingExecutables/SideEffects/Biome/EventReporter/
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Sources/AppleIntelligenceReportingExecutables/SideEffects/CoreAnalytics/
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Sources/AppleIntelligenceReportingExecutables/SideEffects/FileManager/
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Sources/AppleIntelligenceReportingExecutables/SideEffects/SELF/
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Sources/AppleIntelligenceReportingExecutables/SideEffects/SoftwareUpdateServices/
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Sources/AppleIntelligenceReportingExecutables/SideEffects/Sysctl/
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Sources/AppleIntelligenceReportingExecutables/SideEffects/TapToRadar/
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Sources/AppleIntelligenceReportingExecutables/SideEffects/UnifiedAssetFramework/
-- /Library/Caches/com.apple.xbs/16A94703-67EC-4FA7-BBFB-4654234065A2/TemporaryDirectory.cTvsUC/Sources/AppleIntelligenceReportingExecutables/SideEffects/UserDefaults/
 - _$s27IntelligencePlatformLibrary05AppleA23ReportingMobileAssetLogV0fG14AtomicInstanceVAESHAAWlTm
 - _$s43AppleIntelligenceReportingProcessingService17PSUSDeterminePairVMaTm
 - _$s43AppleIntelligenceReportingProcessingService19InvocationProcessorC26getNumberOfCompletedEvents3forSayAA0F12StepMetadataVGSS_tFA2HcfU_
@@ -417,5 +201,4 @@ CStrings:
 + "com.apple.siri.enhanced"
 + "specialEvent.SoftwareUpdateMetadata"
 - "[SUControllerPSUSState"
-
 ```

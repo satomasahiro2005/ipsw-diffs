@@ -2,88 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/Pasteboard.framework/Support/pasted`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c838` | `0x1d1ac` | **`+0x974`** |
+| `__TEXT.__objc_methname` | `0x515a` | `0x5331` | **`+0x1d7`** |
+| `__TEXT.__objc_stubs` | `0x4520` | `0x4640` | **`+0x120`** |
+| `__TEXT.__oslogstring` | `0x21a4` | `0x2267` | **`+0xc3`** |
+| `__TEXT.__cstring` | `0x1d94` | `0x1e09` | **`+0x75`** |
+| `__TEXT.__gcc_except_tab` | `0x714` | `0x778` | **`+0x64`** |
+| `__DATA_CONST.__cfstring` | `0x18e0` | `0x1940` | **`+0x60`** |
+| `__DATA.__objc_const` | `0x2eb0` | `0x2f00` | **`+0x50`** |
+| `__DATA.__objc_selrefs` | `0x1368` | `0x13b0` | **`+0x48`** |
+| `__TEXT.__objc_methtype` | `0xda6` | `0xdd7` | **`+0x31`** |
+| `__TEXT.__objc_methlist` | `0x13d8` | `0x1408` | **`+0x30`** |
+| `__DATA_CONST.__const` | `0x1400` | `0x1420` | **`+0x20`** |
+| `__TEXT.__auth_stubs` | `0xda0` | `0xdc0` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x708` | `0x720` | **`+0x18`** |
+| `__DATA_CONST.__auth_got` | `0x6e8` | `0x6f8` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x4b8` | `0x4c8` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x178` | `0x180` | **`+0x8`** |
+| `__DATA_CONST.__objc_arraydata` | `0xf0` | `0xf8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_data`
+- `__DATA.__thread_vars`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA.__objc_data`
-- `__DATA.__data`
-- `__DATA.__thread_vars`
+- `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -9127.0.78.0.0
--  __TEXT.__text: 0x1c838
--  __TEXT.__auth_stubs: 0xda0
--  __TEXT.__objc_stubs: 0x4520
--  __TEXT.__objc_methlist: 0x13d8
 +9127.0.84.1.102
-+  __TEXT.__text: 0x1d1ac
-+  __TEXT.__auth_stubs: 0xdc0
-+  __TEXT.__objc_stubs: 0x4640
-+  __TEXT.__objc_methlist: 0x1408
-   __TEXT.__const: 0x198
--  __TEXT.__objc_methname: 0x515a
-+  __TEXT.__objc_methname: 0x5331
-   __TEXT.__objc_classname: 0x520
--  __TEXT.__cstring: 0x1d94
--  __TEXT.__objc_methtype: 0xda6
--  __TEXT.__gcc_except_tab: 0x714
--  __TEXT.__oslogstring: 0x21a4
-+  __TEXT.__cstring: 0x1e09
-+  __TEXT.__objc_methtype: 0xdd7
-+  __TEXT.__gcc_except_tab: 0x778
-+  __TEXT.__oslogstring: 0x2267
-   __TEXT.__ustring: 0x20
--  __TEXT.__unwind_info: 0x708
--  __DATA_CONST.__const: 0x1400
--  __DATA_CONST.__cfstring: 0x18e0
-+  __TEXT.__unwind_info: 0x720
-+  __DATA_CONST.__const: 0x1420
-+  __DATA_CONST.__cfstring: 0x1940
-   __DATA_CONST.__objc_classlist: 0x108
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x68
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0xd0
--  __DATA_CONST.__objc_arraydata: 0xf0
-+  __DATA_CONST.__objc_arraydata: 0xf8
-   __DATA_CONST.__objc_arrayobj: 0xa8
-   __DATA_CONST.__objc_dictobj: 0x50
-   __DATA_CONST.__objc_intobj: 0x120
-   __DATA_CONST.__objc_floatobj: 0x10
--  __DATA_CONST.__auth_got: 0x6e8
--  __DATA_CONST.__got: 0x4b8
--  __DATA.__objc_const: 0x2eb0
--  __DATA.__objc_selrefs: 0x1368
--  __DATA.__objc_ivar: 0x178
-+  __DATA_CONST.__auth_got: 0x6f8
-+  __DATA_CONST.__got: 0x4c8
-+  __DATA.__objc_const: 0x2f00
-+  __DATA.__objc_selrefs: 0x13b0
-+  __DATA.__objc_ivar: 0x180
-   __DATA.__objc_data: 0xa50
-   __DATA.__data: 0x4e8
-   __DATA.__thread_vars: 0x30
 
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 510
 -  Symbols:   379
 -  CStrings:  1367
 +  Functions: 514
 +  Symbols:   383
 +  CStrings:  1387
- 
 Symbols:
 + _OBJC_CLASS_$_BKSHIDEventDeferringNamespacePredicate
 + _OBJC_CLASS_$_FBSDisplayMonitor

@@ -2,130 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/MobileSafariUI.framework/MobileSafariUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_doubleobj`
-- `__AUTH.__data`
-- `__DATA.__objc_stublist`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2d7dc4` | `0x2da14c` | **`+0x2388`** |
+| `__DATA.__bss` | `0x30c0` | `0x33c0` | **`+0x300`** |
+| `__TEXT.__oslogstring` | `0xab4f` | `0xadef` | **`+0x2a0`** |
+| `__TEXT.__gcc_except_tab` | `0x1f1c0` | `0x1f3dc` | **`+0x21c`** |
+| `__AUTH_CONST.__objc_const` | `0x32c58` | `0x32e70` | **`+0x218`** |
+| `__TEXT.__const` | `0x43b0` | `0x4550` | **`+0x1a0`** |
+| `__TEXT.__objc_methlist` | `0x24a5c` | `0x24bb4` | **`+0x158`** |
+| `__DATA_CONST.__objc_selrefs` | `0x18498` | `0x185a8` | **`+0x110`** |
+| `__TEXT.__unwind_info` | `0xfb48` | `0xfc38` | **`+0xf0`** |
+| `__TEXT.__cstring` | `0x106a4` | `0x10714` | **`+0x70`** |
+| `__AUTH_CONST.__const` | `0x80f8` | `0x8160` | **`+0x68`** |
+| `__DATA_CONST.__const` | `0x97f8` | `0x9850` | **`+0x58`** |
+| `__AUTH.__objc_data` | `0x30f0` | `0x3140` | **`+0x50`** |
+| `__TEXT.__swift5_typeref` | `0x5dd9` | `0x5e23` | **`+0x4a`** |
+| `__DATA.__data` | `0x9898` | `0x98d8` | **`+0x40`** |
+| `__DATA_DIRTY.__data` | `0x12c0` | `0x12f0` | **`+0x30`** |
+| `__TEXT.__swift5_assocty` | `0x4c8` | `0x4f8` | **`+0x30`** |
+| `__TEXT.__constg_swiftt` | `0x1c84` | `0x1cb0` | **`+0x2c`** |
+| `__DATA_CONST.__got` | `0x3678` | `0x36a0` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0xdd40` | `0xdd60` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x20a4` | `0x20c4` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0xd78` | `0xd94` | **`+0x1c`** |
+| `__TEXT.__swift5_proto` | `0x1b0` | `0x1c8` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x1b8` | `0x1cc` | **`+0x14`** |
+| `__DATA_CONST.__objc_classlist` | `0x9e8` | `0x9f0` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x688` | `0x690` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x130` | `0x134` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -625.1.22.10.3
--  __TEXT.__text: 0x2d7dc4
--  __TEXT.__objc_methlist: 0x24a5c
--  __TEXT.__const: 0x43b0
--  __TEXT.__gcc_except_tab: 0x1f1c0
--  __TEXT.__cstring: 0x106a4
 +625.1.24.10.1
-+  __TEXT.__text: 0x2da14c
-+  __TEXT.__objc_methlist: 0x24bb4
-+  __TEXT.__const: 0x4550
-+  __TEXT.__gcc_except_tab: 0x1f3dc
-+  __TEXT.__cstring: 0x10714
-   __TEXT.__dlopen_cstrs: 0x7e6
--  __TEXT.__oslogstring: 0xab4f
-+  __TEXT.__oslogstring: 0xadef
-   __TEXT.__ustring: 0x11da
--  __TEXT.__swift5_typeref: 0x5dd9
--  __TEXT.__constg_swiftt: 0x1c84
--  __TEXT.__swift5_builtin: 0x1b8
-+  __TEXT.__swift5_typeref: 0x5e23
-+  __TEXT.__constg_swiftt: 0x1cb0
-+  __TEXT.__swift5_builtin: 0x1cc
-   __TEXT.__swift5_reflstr: 0xf60
--  __TEXT.__swift5_fieldmd: 0xd78
--  __TEXT.__swift5_assocty: 0x4c8
--  __TEXT.__swift5_proto: 0x1b0
--  __TEXT.__swift5_types: 0x130
-+  __TEXT.__swift5_fieldmd: 0xd94
-+  __TEXT.__swift5_assocty: 0x4f8
-+  __TEXT.__swift5_proto: 0x1c8
-+  __TEXT.__swift5_types: 0x134
-   __TEXT.__swift5_capture: 0x22a8
-   __TEXT.__swift_as_entry: 0xb0
-   __TEXT.__swift_as_ret: 0xd8
-   __TEXT.__swift_as_cont: 0x160
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_protos: 0xc
--  __TEXT.__unwind_info: 0xfb48
-+  __TEXT.__unwind_info: 0xfc38
-   __TEXT.__eh_frame: 0x239c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x97f8
--  __DATA_CONST.__objc_classlist: 0x9e8
-+  __DATA_CONST.__const: 0x9850
-+  __DATA_CONST.__objc_classlist: 0x9f0
-   __DATA_CONST.__objc_catlist: 0xb0
-   __DATA_CONST.__objc_protolist: 0xbd0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x18498
-+  __DATA_CONST.__objc_selrefs: 0x185a8
-   __DATA_CONST.__objc_protorefs: 0x1d8
--  __DATA_CONST.__objc_superrefs: 0x688
-+  __DATA_CONST.__objc_superrefs: 0x690
-   __DATA_CONST.__objc_arraydata: 0x368
--  __DATA_CONST.__got: 0x3678
--  __AUTH_CONST.__const: 0x80f8
--  __AUTH_CONST.__cfstring: 0xdd40
--  __AUTH_CONST.__objc_const: 0x32c58
-+  __DATA_CONST.__got: 0x36a0
-+  __AUTH_CONST.__const: 0x8160
-+  __AUTH_CONST.__cfstring: 0xdd60
-+  __AUTH_CONST.__objc_const: 0x32e70
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x4c8
-   __AUTH_CONST.__objc_dictobj: 0xc8
-   __AUTH_CONST.__objc_arrayobj: 0x2b8
-   __AUTH_CONST.__objc_doubleobj: 0x80
-   __AUTH_CONST.__auth_got: 0x2ba0
--  __AUTH.__objc_data: 0x30f0
-+  __AUTH.__objc_data: 0x3140
-   __AUTH.__data: 0xd50
--  __DATA.__objc_ivar: 0x20a4
--  __DATA.__data: 0x9898
-+  __DATA.__objc_ivar: 0x20c4
-+  __DATA.__data: 0x98d8
-   __DATA.__objc_stublist: 0x10
--  __DATA.__bss: 0x30c0
-+  __DATA.__bss: 0x33c0
-   __DATA.__common: 0xa1
-   __DATA_DIRTY.__objc_data: 0x4640
--  __DATA_DIRTY.__data: 0x12c0
-+  __DATA_DIRTY.__data: 0x12f0
-   __DATA_DIRTY.__bss: 0xb90
-   __DATA_DIRTY.__common: 0x48
-   - /System/Library/Frameworks/Accounts.framework/Accounts
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15847
--  Symbols:   32735
+-  Symbols:   22791
 -  CStrings:  3245
 +  Functions: 15889
-+  Symbols:   32815
++  Symbols:   22844
 +  CStrings:  3254
- 
 Symbols:
 + -[BookmarkImporter _getBookmarksDataclassEnabledWithCompletionHandler:]
 + -[BookmarkImporter _importBuiltinBookmarksIfNeeded]
@@ -315,40 +236,6 @@ Symbols:
 + _associated conformance So21NSAttributedStringKeyaSHSCSQ
 + _associated conformance So21NSAttributedStringKeyas20_SwiftNewtypeWrapperSCSY
 + _associated conformance So21NSAttributedStringKeyas20_SwiftNewtypeWrapperSCs35_HasCustomAnyHashableRepresentation
-+ _objc_msgSend$_checkForUnsupportedAutoCompletedGoogleSuggestionsKeyboardInputModes
-+ _objc_msgSend$_enabledSectionIdentifiersUsingTrialState
-+ _objc_msgSend$_getBookmarksDataclassEnabledWithCompletionHandler:
-+ _objc_msgSend$_importBuiltinBookmarksIfNeeded
-+ _objc_msgSend$_indexToDropDragItems:atEndOfSection:
-+ _objc_msgSend$_pinnedTabs
-+ _objc_msgSend$_scheduleBuiltinBookmarkImportAfterMigrationFinishes
-+ _objc_msgSend$addDidFinishNavigationHandler:
-+ _objc_msgSend$automationDeletedDistributedNotificationName
-+ _objc_msgSend$automationDeletedDistributedNotificationURLKey
-+ _objc_msgSend$bookmarksPendingFeatureTextBackfill:shouldResetStuckBookmarks:foundBookmarksNeedingBackfill:
-+ _objc_msgSend$characterSetWithCharactersInString:
-+ _objc_msgSend$configurationWithPointSize:weight:
-+ _objc_msgSend$configureWithTransparentBackground
-+ _objc_msgSend$didCommitNavigation:
-+ _objc_msgSend$linkPreviewProviderShouldPresentOpenInBackgroundAsOpenToSide
-+ _objc_msgSend$localMigrationState
-+ _objc_msgSend$pm_defaults
-+ _objc_msgSend$postFeedbackForSearchEngineChoiceForQueryID:endpoint:
-+ _objc_msgSend$prewarm
-+ _objc_msgSend$safari_containsCJKCharacters
-+ _objc_msgSend$safari_lastObjectPassingTest:
-+ _objc_msgSend$setCompactAppearance:
-+ _objc_msgSend$setLargeTitleTextAttributes:
-+ _objc_msgSend$setScrollEdgeAppearance:
-+ _objc_msgSend$setStandardAppearance:
-+ _objc_msgSend$setSymbolOffset:
-+ _objc_msgSend$setTitleTextAttributes:
-+ _objc_msgSend$setUsesElementActionClassifier:
-+ _objc_msgSend$setWasOpenedInBackground:
-+ _objc_msgSend$sf_alternateLabelColor
-+ _objc_msgSend$updateNavigationBarTitleColor
-+ _objc_msgSend$userDidSelectOption:summaryText:readerTextUsedForSummarization:associateWithAppleAccount:presentingViewController:
-+ _objc_msgSend$usesPopoverForCompletions
 + _symbolic _____ So21NSAttributedStringKeya
 + _symbolic ______ypt So21NSAttributedStringKeya
 + _symbolic _____y______yptG s23_ContiguousArrayStorageC So21NSAttributedStringKeya
@@ -492,13 +379,6 @@ Symbols:
 - ___block_descriptor_40_e8_32w_e5_B8?0lw32l8
 - ___block_descriptor_56_e8_32s40s48s_e19_"WKNavigation"8?0ls32l8s40l8s48l8
 - ___block_descriptor_64_e8_32s40s48bs56r_e32_v16?0"PageLoadTestStatistics"8lr56l8s32l8s48l8s40l8
-- _objc_msgSend$_traitCollectionWithVibrancy:
-- _objc_msgSend$bookmarksPendingFeatureTextBackfill:
-- _objc_msgSend$initWithSymbolName:
-- _objc_msgSend$linkPreviewProviderShouldHideOpenInBackgroundAction
-- _objc_msgSend$setIsHostedAsPopover:
-- _objc_msgSend$setShouldApplyBlendMode:
-- _objc_msgSend$sf_alternateUserInterfaceStyle
 CStrings:
 + "B16@?0@\"SFTabSwitcherItem\"8"
 + "Deferring built-in bookmark import until CloudKit bookmark migration finishes"

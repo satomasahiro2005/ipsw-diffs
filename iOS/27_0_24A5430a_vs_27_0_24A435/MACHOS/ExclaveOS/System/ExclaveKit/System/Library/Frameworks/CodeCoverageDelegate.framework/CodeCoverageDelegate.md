@@ -2,6 +2,8 @@
 
 > `/System/ExclaveKit/System/Library/Frameworks/CodeCoverageDelegate.framework/CodeCoverageDelegate`
 
+### Other Changes
+
 ```diff
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/ExclavePlatform_extra_exclavekit/install/TempContent/Objects/CodeCoverageDelegate.build/CodeCoverageDelegate_ek.build/Objects-normal/arm64e/CodeCoverageDelegate-564cc7d1fedddc9ad2487c177956a240.o

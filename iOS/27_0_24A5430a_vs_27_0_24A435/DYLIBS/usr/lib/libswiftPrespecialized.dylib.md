@@ -2,26 +2,21 @@
 
 > `/usr/lib/libswiftPrespecialized.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__const` | `0x3c10c0` | `0x3c4ae8` | **`+0x3a28`** |
+| `__AUTH_CONST.__const` | `0x74088` | `0x74110` | **`+0x88`** |
+| `__DATA_CONST.__ptrhashtabkey` | `0x325d0` | `0x325e8` | **`+0x18`** |
+| `__DATA_CONST.__ptrhashtab` | `0x1eca8` | `0x1ecb8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
- 0.0.0.0.0
-   __TEXT.__text: 0x0
-   __TEXT.__lldb_no_nlist: 0x0
--  __DATA_CONST.__const: 0x3c10c0
--  __DATA_CONST.__ptrhashtab: 0x1eca8
--  __DATA_CONST.__ptrhashtabkey: 0x325d0
--  __AUTH_CONST.__const: 0x74088
-+  __DATA_CONST.__const: 0x3c4ae8
-+  __DATA_CONST.__ptrhashtab: 0x1ecb8
-+  __DATA_CONST.__ptrhashtabkey: 0x325e8
-+  __AUTH_CONST.__const: 0x74110
-   __AUTH.__data: 0xd4590
-   - /usr/lib/libSystem.B.dylib
-   Functions: 0
 -  Symbols:   190794
 +  Symbols:   191491
-   CStrings:  0
- 
 Symbols:
 + _$s015_PhotosUI_SwiftB025ProvenanceProcessingErrorOMn
 + _$s015_PhotosUI_SwiftB026ProvenanceProcessingPolicyOMn

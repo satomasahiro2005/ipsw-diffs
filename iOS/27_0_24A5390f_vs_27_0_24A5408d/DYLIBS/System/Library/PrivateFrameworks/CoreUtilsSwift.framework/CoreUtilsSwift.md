@@ -2,85 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/CoreUtilsSwift.framework/CoreUtilsSwift`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8c89c` | `0x92050` | **`+0x57b4`** |
+| `__DATA.__bss` | `0x4490` | `0x4f90` | **`+0xb00`** |
+| `__TEXT.__const` | `0x48e4` | `0x4f54` | **`+0x670`** |
+| `__TEXT.__eh_frame` | `0x61e8` | `0x6640` | **`+0x458`** |
+| `__AUTH_CONST.__const` | `0x3560` | `0x3838` | **`+0x2d8`** |
+| `__TEXT.__cstring` | `0xb9f` | `0xd8f` | **`+0x1f0`** |
+| `__TEXT.__unwind_info` | `0x2870` | `0x2a20` | **`+0x1b0`** |
+| `__TEXT.__swift5_typeref` | `0x1604` | `0x174c` | **`+0x148`** |
+| `__TEXT.__constg_swiftt` | `0x1a50` | `0x1b50` | **`+0x100`** |
+| `__TEXT.__swift5_fieldmd` | `0x1218` | `0x12d8` | **`+0xc0`** |
+| `__DATA.__data` | `0x1558` | `0x15d0` | **`+0x78`** |
+| `__TEXT.__swift5_capture` | `0x814` | `0x874` | **`+0x60`** |
+| `__TEXT.__swift5_proto` | `0x2a4` | `0x2fc` | **`+0x58`** |
+| `__TEXT.__swift_as_cont` | `0x17c` | `0x1c0` | **`+0x44`** |
+| `__AUTH_CONST.__auth_got` | `0x1610` | `0x1638` | **`+0x28`** |
+| `__DATA_DIRTY.__data` | `0x1010` | `0xff8` | **`-0x18`** |
+| `__TEXT.__swift5_builtin` | `0xa0` | `0xb4` | **`+0x14`** |
+| `__TEXT.__swift5_types` | `0x1bc` | `0x1d0` | **`+0x14`** |
+| `__TEXT.__swift5_reflstr` | `0xa8d` | `0xa9d` | **`+0x10`** |
+| `__TEXT.__swift_as_entry` | `0xf8` | `0x108` | **`+0x10`** |
+| `__AUTH.__data` | `0x400` | `0x408` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x20` | `0x28` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0xf0` | `0xf8` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x2c` | `0x30` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -900.55.0.0.0
--  __TEXT.__text: 0x8c89c
 +900.58.0.0.0
-+  __TEXT.__text: 0x92050
-   __TEXT.__objc_methlist: 0x14c
--  __TEXT.__const: 0x48e4
--  __TEXT.__swift5_typeref: 0x1604
--  __TEXT.__constg_swiftt: 0x1a50
--  __TEXT.__swift5_reflstr: 0xa8d
--  __TEXT.__swift5_fieldmd: 0x1218
--  __TEXT.__swift5_builtin: 0xa0
-+  __TEXT.__const: 0x4f54
-+  __TEXT.__swift5_typeref: 0x174c
-+  __TEXT.__constg_swiftt: 0x1b50
-+  __TEXT.__swift5_reflstr: 0xa9d
-+  __TEXT.__swift5_fieldmd: 0x12d8
-+  __TEXT.__swift5_builtin: 0xb4
-   __TEXT.__swift5_assocty: 0x588
--  __TEXT.__cstring: 0xb9f
--  __TEXT.__swift5_capture: 0x814
--  __TEXT.__swift5_proto: 0x2a4
--  __TEXT.__swift5_types: 0x1bc
--  __TEXT.__swift_as_entry: 0xf8
--  __TEXT.__swift_as_ret: 0xf0
--  __TEXT.__swift_as_cont: 0x17c
--  __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__swift5_protos: 0x2c
-+  __TEXT.__cstring: 0xd8f
-+  __TEXT.__swift5_capture: 0x874
-+  __TEXT.__swift5_proto: 0x2fc
-+  __TEXT.__swift5_types: 0x1d0
-+  __TEXT.__swift_as_entry: 0x108
-+  __TEXT.__swift_as_ret: 0xf8
-+  __TEXT.__swift_as_cont: 0x1c0
-+  __TEXT.__swift5_mpenum: 0x28
-+  __TEXT.__swift5_protos: 0x30
-   __TEXT.__oslogstring: 0x9d0
--  __TEXT.__unwind_info: 0x2870
--  __TEXT.__eh_frame: 0x61e8
-+  __TEXT.__unwind_info: 0x2a20
-+  __TEXT.__eh_frame: 0x6640
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0x1e8
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x3560
-+  __AUTH_CONST.__const: 0x3838
-   __AUTH_CONST.__objc_const: 0x1af0
--  __AUTH_CONST.__auth_got: 0x1610
-+  __AUTH_CONST.__auth_got: 0x1638
-   __AUTH.__objc_data: 0x48
--  __AUTH.__data: 0x400
--  __DATA.__data: 0x1558
--  __DATA.__bss: 0x4490
-+  __AUTH.__data: 0x408
-+  __DATA.__data: 0x15d0
-+  __DATA.__bss: 0x4f90
-   __DATA_DIRTY.__objc_data: 0x140
--  __DATA_DIRTY.__data: 0x1010
-+  __DATA_DIRTY.__data: 0xff8
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/Combine.framework/Combine
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_DarwinFoundation2.dylib
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 2777
--  Symbols:   989
+-  Symbols:   952
 -  CStrings:  160
 +  Functions: 2916
-+  Symbols:   1020
++  Symbols:   983
 +  CStrings:  170
- 
 Symbols:
 + ___swift_closure_destructor.37Tm
 + ___unnamed_17

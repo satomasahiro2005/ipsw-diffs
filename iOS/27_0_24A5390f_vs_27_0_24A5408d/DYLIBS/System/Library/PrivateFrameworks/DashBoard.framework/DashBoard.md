@@ -2,106 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/DashBoard.framework/DashBoard`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2fc43c` | `0x306004` | **`+0x9bc8`** |
+| `__TEXT.__oslogstring` | `0x1791c` | `0x1911c` | **`+0x1800`** |
+| `__TEXT.__cstring` | `0xdb27` | `0xde67` | **`+0x340`** |
+| `__DATA.__bss` | `0x9468` | `0x96c8` | **`+0x260`** |
+| `__TEXT.__const` | `0xd644` | `0xd874` | **`+0x230`** |
+| `__AUTH_CONST.__objc_const` | `0x52e18` | `0x52fd8` | **`+0x1c0`** |
+| `__AUTH_CONST.__const` | `0xcac0` | `0xcc70` | **`+0x1b0`** |
+| `__TEXT.__swift5_typeref` | `0xba88` | `0xbbf8` | **`+0x170`** |
+| `__TEXT.__objc_methlist` | `0x179dc` | `0x17adc` | **`+0x100`** |
+| `__AUTH.__objc_data` | `0xeaf0` | `0xebc0` | **`+0xd0`** |
+| `__TEXT.__eh_frame` | `0x46cc` | `0x461c` | **`-0xb0`** |
+| `__DATA.__data` | `0xa510` | `0xa5b0` | **`+0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0xd090` | `0xd130` | **`+0xa0`** |
+| `__TEXT.__swift5_capture` | `0x2f5c` | `0x2ffc` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x98c0` | `0x9960` | **`+0xa0`** |
+| `__DATA_CONST.__got` | `0x2eb0` | `0x2f40` | **`+0x90`** |
+| `__TEXT.__swift5_reflstr` | `0x54c7` | `0x5557` | **`+0x90`** |
+| `__TEXT.__constg_swiftt` | `0x724c` | `0x72b0` | **`+0x64`** |
+| `__TEXT.__swift5_fieldmd` | `0x4454` | `0x44b8` | **`+0x64`** |
+| `__DATA.__common` | `0x3b0` | `0x3d8` | **`+0x28`** |
+| `__AUTH_CONST.__auth_got` | `0x36d8` | `0x36f8` | **`+0x20`** |
+| `__AUTH_CONST.__cfstring` | `0x86e0` | `0x8700` | **`+0x20`** |
+| `__AUTH.__data` | `0x3718` | `0x3730` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x970` | `0x988` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x370` | `0x384` | **`+0x14`** |
+| `__TEXT.__swift5_proto` | `0x4c4` | `0x4d4` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x654` | `0x660` | **`+0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0xb48` | `0xb50` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x1fc` | `0x1f4` | **`-0x8`** |
+| `__TEXT.__swift_as_entry` | `0x138` | `0x130` | **`-0x8`** |
+| `__TEXT.__swift_as_ret` | `0x11c` | `0x114` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -580.0.0.0.0
--  __TEXT.__text: 0x2fc43c
--  __TEXT.__objc_methlist: 0x179dc
--  __TEXT.__const: 0xd644
--  __TEXT.__cstring: 0xdb27
 +581.7.1.0.0
-+  __TEXT.__text: 0x306004
-+  __TEXT.__objc_methlist: 0x17adc
-+  __TEXT.__const: 0xd874
-+  __TEXT.__cstring: 0xde67
-   __TEXT.__gcc_except_tab: 0x1a5c
--  __TEXT.__oslogstring: 0x1791c
--  __TEXT.__swift5_typeref: 0xba88
--  __TEXT.__constg_swiftt: 0x724c
--  __TEXT.__swift5_reflstr: 0x54c7
--  __TEXT.__swift5_fieldmd: 0x4454
--  __TEXT.__swift5_capture: 0x2f5c
--  __TEXT.__swift5_types: 0x654
--  __TEXT.__swift5_assocty: 0x970
--  __TEXT.__swift5_proto: 0x4c4
-+  __TEXT.__oslogstring: 0x1911c
-+  __TEXT.__swift5_typeref: 0xbbf8
-+  __TEXT.__constg_swiftt: 0x72b0
-+  __TEXT.__swift5_reflstr: 0x5557
-+  __TEXT.__swift5_fieldmd: 0x44b8
-+  __TEXT.__swift5_capture: 0x2ffc
-+  __TEXT.__swift5_types: 0x660
-+  __TEXT.__swift5_assocty: 0x988
-+  __TEXT.__swift5_proto: 0x4d4
-   __TEXT.__swift5_protos: 0x50
--  __TEXT.__swift5_builtin: 0x370
--  __TEXT.__swift_as_entry: 0x138
--  __TEXT.__swift_as_ret: 0x11c
--  __TEXT.__swift_as_cont: 0x1fc
-+  __TEXT.__swift5_builtin: 0x384
-+  __TEXT.__swift_as_entry: 0x130
-+  __TEXT.__swift_as_ret: 0x114
-+  __TEXT.__swift_as_cont: 0x1f4
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x98c0
--  __TEXT.__eh_frame: 0x46cc
-+  __TEXT.__unwind_info: 0x9960
-+  __TEXT.__eh_frame: 0x461c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x3850
--  __DATA_CONST.__objc_classlist: 0xb48
-+  __DATA_CONST.__objc_classlist: 0xb50
-   __DATA_CONST.__objc_catlist: 0xd0
-   __DATA_CONST.__objc_protolist: 0xb18
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xd090
-+  __DATA_CONST.__objc_selrefs: 0xd130
-   __DATA_CONST.__objc_protorefs: 0x538
-   __DATA_CONST.__objc_superrefs: 0x4b0
-   __DATA_CONST.__objc_arraydata: 0x178
--  __DATA_CONST.__got: 0x2eb0
--  __AUTH_CONST.__const: 0xcac0
--  __AUTH_CONST.__cfstring: 0x86e0
--  __AUTH_CONST.__objc_const: 0x52e18
-+  __DATA_CONST.__got: 0x2f40
-+  __AUTH_CONST.__const: 0xcc70
-+  __AUTH_CONST.__cfstring: 0x8700
-+  __AUTH_CONST.__objc_const: 0x52fd8
-   __AUTH_CONST.__objc_intobj: 0x348
-   __AUTH_CONST.__objc_arrayobj: 0x1c8
-   __AUTH_CONST.__objc_doubleobj: 0xc0
-   __AUTH_CONST.__objc_dictobj: 0x78
--  __AUTH_CONST.__auth_got: 0x36d8
--  __AUTH.__objc_data: 0xeaf0
--  __AUTH.__data: 0x3718
-+  __AUTH_CONST.__auth_got: 0x36f8
-+  __AUTH.__objc_data: 0xebc0
-+  __AUTH.__data: 0x3730
-   __DATA.__objc_ivar: 0x12a8
--  __DATA.__data: 0xa510
--  __DATA.__bss: 0x9468
--  __DATA.__common: 0x3b0
-+  __DATA.__data: 0xa5b0
-+  __DATA.__bss: 0x96c8
-+  __DATA.__common: 0x3d8
-   __DATA_DIRTY.__objc_data: 0xba0
-   __DATA_DIRTY.__data: 0x1f8
-   __DATA_DIRTY.__bss: 0x180
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15528
--  Symbols:   19475
+-  Symbols:   14447
 -  CStrings:  3617
 +  Functions: 15622
-+  Symbols:   19524
++  Symbols:   14486
 +  CStrings:  3702
- 
 Symbols:
 + -[DBProcessMonitor removeObserver:]
 + -[DBStatusBarViewController _setupPunchThroughLauncherIfNeeded]
@@ -130,17 +79,6 @@ Symbols:
 + ___swift_closure_destructor.33Tm
 + _get_witness_table 10CAFCombine11CAFObservedRzSo18CAFObservableCacheRz10ObservableAaBP_8ObservedQZRszlSo24CAFInteriorAmbientLightsCAaBHpyHC
 + _keypath_get_selector_interiorAmbientLights
-+ _objc_msgSend$_performBlockAfterCATransactionCommits:
-+ _objc_msgSend$_setupPunchThroughLauncherIfNeeded
-+ _objc_msgSend$activationState
-+ _objc_msgSend$currentOwner
-+ _objc_msgSend$hasCurrentOwner
-+ _objc_msgSend$initWithThemeAssetDocument:vehicle:
-+ _objc_msgSend$setCurrentOwner:
-+ _objc_msgSend$setPunchthroughLauncher:
-+ _objc_msgSend$sharedApplication
-+ _objc_msgSend$supportsAmbientLightSync
-+ _objc_msgSend$themeDataWithAmbientLightSyncEnabled:
 + _symbolic SS_So6UIViewCSgt
 + _symbolic So11CAFLightingC
 + _symbolic So11NSHashTableCySo13UIWindowSceneCG
@@ -163,7 +101,6 @@ Symbols:
 - ___swift_closure_destructor.13Tm
 - ___swift_closure_destructor.29Tm
 - ___swift_closure_destructor.98Tm
-- _objc_msgSend$initWithThemeAssetDocument:
 CStrings:
 + ", windowScene=nil"
 + "C2 animations WOULD BE SUSPENDED after %s: app is suspended and no observed screen-based scene is foreground. New C2 animations will not start or complete until this clears."

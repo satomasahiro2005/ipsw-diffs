@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/SpriteKit.framework/SpriteKit`
 
-```diff
+### Section Size Changes
 
- 53.0.2.0.0
--  __TEXT.__text: 0xcb958
-+  __TEXT.__text: 0xcb9a8
-   __TEXT.__objc_methlist: 0x8dc8
-   __TEXT.__const: 0x43fd8
-   __TEXT.__gcc_except_tab: 0x13d24
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcb958` | `0xcb9a8` | **`+0x50`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__16vectorI5TokenNS_9allocatorIS1_EEE24__emplace_back_slow_pathIJS1_EEEPS1_DpOT_ : 228 -> 224
 ~ -[SKTileMapNode updateTileGroupsAtX:y:] : 3880 -> 3912

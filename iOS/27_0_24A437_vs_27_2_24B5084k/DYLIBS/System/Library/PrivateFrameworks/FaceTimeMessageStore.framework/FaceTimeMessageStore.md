@@ -2,116 +2,63 @@
 
 > `/System/Library/PrivateFrameworks/FaceTimeMessageStore.framework/FaceTimeMessageStore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x177360` | `0x1b3fcc` | **`+0x3cc6c`** |
+| `__DATA.__bss` | `0xe3e0` | `0x12a60` | **`+0x4680`** |
+| `__TEXT.__eh_frame` | `0xda0c` | `0x10704` | **`+0x2cf8`** |
+| `__TEXT.__const` | `0x100e0` | `0x12d00` | **`+0x2c20`** |
+| `__AUTH_CONST.__const` | `0xbd20` | `0xdac8` | **`+0x1da8`** |
+| `__TEXT.__unwind_info` | `0x62a0` | `0x72e8` | **`+0x1048`** |
+| `__TEXT.__oslogstring` | `0x950b` | `0xa4db` | **`+0xfd0`** |
+| `__TEXT.__swift5_typeref` | `0x4b84` | `0x575e` | **`+0xbda`** |
+| `__TEXT.__constg_swiftt` | `0x41f8` | `0x4b28` | **`+0x930`** |
+| `__AUTH.__data` | `0x1c0` | `0xa20` | **`+0x860`** |
+| `__TEXT.__swift5_fieldmd` | `0x33ec` | `0x3c30` | **`+0x844`** |
+| `__DATA.__data` | `0x1990` | `0x2140` | **`+0x7b0`** |
+| `__TEXT.__swift5_capture` | `0x28fc` | `0x2f00` | **`+0x604`** |
+| `__TEXT.__swift5_reflstr` | `0x21bd` | `0x273d` | **`+0x580`** |
+| `__AUTH_CONST.__objc_const` | `0x54d8` | `0x5998` | **`+0x4c0`** |
+| `__TEXT.__cstring` | `0x2057` | `0x2397` | **`+0x340`** |
+| `__AUTH_CONST.__auth_got` | `0x1850` | `0x1ae0` | **`+0x290`** |
+| `__TEXT.__swift5_proto` | `0xd1c` | `0xf98` | **`+0x27c`** |
+| `__TEXT.__swift_as_cont` | `0x80c` | `0x9e4` | **`+0x1d8`** |
+| `__TEXT.__swift5_assocty` | `0x6a0` | `0x7f0` | **`+0x150`** |
+| `__TEXT.__swift_as_ret` | `0x468` | `0x550` | **`+0xe8`** |
+| `__TEXT.__swift_as_entry` | `0x454` | `0x528` | **`+0xd4`** |
+| `__DATA_CONST.__objc_selrefs` | `0x17a8` | `0x1858` | **`+0xb0`** |
+| `__TEXT.__swift5_types` | `0x3c4` | `0x45c` | **`+0x98`** |
+| `__DATA.__common` | `0xa8` | `0x128` | **`+0x80`** |
+| `__DATA_CONST.__const` | `0x748` | `0x7b0` | **`+0x68`** |
+| `__DATA_DIRTY.__objc_data` | `0xe20` | `0xe78` | **`+0x58`** |
+| `__DATA_DIRTY.__data` | `0x4c50` | `0x4ca0` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x15d0` | `0x15a0` | **`-0x30`** |
+| `__TEXT.__swift5_protos` | `0xb0` | `0xdc` | **`+0x2c`** |
+| `__DATA_CONST.__objc_classlist` | `0x158` | `0x170` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x190` | `0x1a4` | **`+0x14`** |
+| `__DATA_CONST.__objc_protolist` | `0x110` | `0x108` | **`-0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0xa8` | `0xa0` | **`-0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x3c` | `0x44` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1620.100.1.2.24
--  __TEXT.__text: 0x166168
--  __TEXT.__objc_methlist: 0x15d0
--  __TEXT.__const: 0x100e0
--  __TEXT.__constg_swiftt: 0x41f8
--  __TEXT.__swift5_typeref: 0x4b84
--  __TEXT.__swift5_builtin: 0x190
--  __TEXT.__swift5_reflstr: 0x21bd
--  __TEXT.__swift5_fieldmd: 0x33ec
--  __TEXT.__swift5_assocty: 0x6a0
--  __TEXT.__swift5_proto: 0xd1c
--  __TEXT.__swift5_types: 0x3c4
--  __TEXT.__cstring: 0x2057
--  __TEXT.__oslogstring: 0x950b
--  __TEXT.__swift5_capture: 0x28fc
--  __TEXT.__swift5_mpenum: 0x3c
--  __TEXT.__swift5_protos: 0xb0
--  __TEXT.__swift_as_entry: 0x454
--  __TEXT.__swift_as_ret: 0x468
--  __TEXT.__swift_as_cont: 0x80c
--  __TEXT.__unwind_info: 0x73a8
--  __TEXT.__eh_frame: 0xda2c
 +1626.200.53.0.0
-+  __TEXT.__text: 0x19fe7c
-+  __TEXT.__objc_methlist: 0x15a0
-+  __TEXT.__const: 0x12d00
-+  __TEXT.__constg_swiftt: 0x4b28
-+  __TEXT.__swift5_typeref: 0x575e
-+  __TEXT.__swift5_builtin: 0x1a4
-+  __TEXT.__swift5_reflstr: 0x273d
-+  __TEXT.__swift5_fieldmd: 0x3c30
-+  __TEXT.__swift5_assocty: 0x7f0
-+  __TEXT.__swift5_proto: 0xf98
-+  __TEXT.__swift5_types: 0x45c
-+  __TEXT.__cstring: 0x2397
-+  __TEXT.__oslogstring: 0xa4db
-+  __TEXT.__swift5_capture: 0x2f00
-+  __TEXT.__swift5_mpenum: 0x44
-+  __TEXT.__swift5_protos: 0xdc
-+  __TEXT.__swift_as_entry: 0x528
-+  __TEXT.__swift_as_ret: 0x550
-+  __TEXT.__swift_as_cont: 0x9e4
-+  __TEXT.__unwind_info: 0x86f8
-+  __TEXT.__eh_frame: 0x1071c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x748
--  __DATA_CONST.__objc_classlist: 0x158
-+  __DATA_CONST.__const: 0x7b0
-+  __DATA_CONST.__objc_classlist: 0x170
-   __DATA_CONST.__objc_catlist: 0x10
--  __DATA_CONST.__objc_protolist: 0x110
-+  __DATA_CONST.__objc_protolist: 0x108
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x17a8
--  __DATA_CONST.__objc_protorefs: 0xa8
-+  __DATA_CONST.__objc_selrefs: 0x1858
-+  __DATA_CONST.__objc_protorefs: 0xa0
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xbd20
--  __AUTH_CONST.__objc_const: 0x54d8
--  __AUTH_CONST.__auth_got: 0x1850
-+  __AUTH_CONST.__const: 0xdac8
-+  __AUTH_CONST.__objc_const: 0x5998
-+  __AUTH_CONST.__auth_got: 0x1ae0
-   __AUTH.__objc_data: 0x318
--  __AUTH.__data: 0x1c0
--  __DATA.__data: 0x1990
--  __DATA.__common: 0xa8
--  __DATA_DIRTY.__objc_data: 0xe20
--  __DATA_DIRTY.__data: 0x4c50
-+  __AUTH.__data: 0xa20
-+  __DATA.__data: 0x2140
-+  __DATA.__common: 0x128
-+  __DATA_DIRTY.__objc_data: 0xe78
-+  __DATA_DIRTY.__data: 0x4ca0
-   __DATA_DIRTY.__bss: 0xab00
-   __DATA_DIRTY.__common: 0x498
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 
-   - /System/Library/PrivateFrameworks/CallsXPC.framework/CallsXPC
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/FTServices.framework/FTServices
 +  - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/IDS.framework/IDS
-   - /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf
-   - /System/Library/PrivateFrameworks/LinkMetadata.framework/LinkMetadata
-   - /System/Library/PrivateFrameworks/MessagesBlastDoorSupport.framework/MessagesBlastDoorSupport
-   - /System/Library/PrivateFrameworks/TCC.framework/TCC
-   - /System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities
-+  - /System/Library/PrivateFrameworks/TrustKit.framework/TrustKit
-   - /System/Library/PrivateFrameworks/VisualVoicemail.framework/VisualVoicemail
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /System/Library/PrivateFrameworks/TrustKit.framework/TrustKit
+
 -  Functions: 9921
--  Symbols:   3153
+-  Symbols:   2707
 -  CStrings:  865
 +  Functions: 11462
-+  Symbols:   3453
++  Symbols:   2983
 +  CStrings:  939
- 
 Symbols:
 + _CFNotificationCenterPostNotification
 + _CFNotificationCenterRemoveObserver
@@ -232,31 +179,6 @@ Symbols:
 + _bzero
 + _keypath_get_selector_mailboxTypeV2
 + _keypath_get_selector_spamVerdictData
-+ _objc_msgSend$deleteObject:
-+ _objc_msgSend$doubleValue
-+ _objc_msgSend$initWithIdentifier:
-+ _objc_msgSend$interval
-+ _objc_msgSend$isValidJSONObject:
-+ _objc_msgSend$mailboxTypeV2
-+ _objc_msgSend$minDurationBetweenInstances
-+ _objc_msgSend$priority
-+ _objc_msgSend$requiresExternalPower
-+ _objc_msgSend$requiresNetworkConnectivity
-+ _objc_msgSend$scheduleAfter
-+ _objc_msgSend$setInterval:
-+ _objc_msgSend$setMailboxTypeV2:
-+ _objc_msgSend$setMinDurationBetweenInstances:
-+ _objc_msgSend$setPriority:
-+ _objc_msgSend$setRequiresExternalPower:
-+ _objc_msgSend$setRequiresNetworkConnectivity:
-+ _objc_msgSend$setScheduleAfter:
-+ _objc_msgSend$setSpamVerdictData:
-+ _objc_msgSend$setTrySchedulingBefore:
-+ _objc_msgSend$spamVerdictData
-+ _objc_msgSend$submitTaskRequest:error:
-+ _objc_msgSend$synchronize
-+ _objc_msgSend$taskRequestForIdentifier:
-+ _objc_msgSend$trySchedulingBefore
 + _objc_retain_x10
 + _swift_asyncLet_begin
 + _swift_asyncLet_finish
@@ -446,7 +368,6 @@ Symbols:
 - ___swift_closure_destructor.63Tm
 - ___swift_project_boxed_opaque_existential_0Tm
 - _flat unique 18TelephonyUtilities24DarwinNotificationCenter_p
-- _objc_msgSend$postWithNotificationName:
 - _symbolic $s20FaceTimeMessageStore014LocalAndStoredC9AdditionsP
 - _symbolic Say_____G 20FaceTimeMessageStore07FTLocalC0C
 - _symbolic Si______t 21InternalSwiftProtobuf8_NameMapV0D11DescriptionO

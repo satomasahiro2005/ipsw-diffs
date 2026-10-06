@@ -2,107 +2,66 @@
 
 > `/System/Library/PrivateFrameworks/SiriCrossDeviceArbitration.framework/SiriCrossDeviceArbitration`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2f934` | `0x3d49c` | **`+0xdb68`** |
+| `__TEXT.__oslogstring` | `0x55b0` | `0x77f8` | **`+0x2248`** |
+| `__AUTH_CONST.__objc_const` | `0x5338` | `0x6bb0` | **`+0x1878`** |
+| `__TEXT.__cstring` | `0x5dd1` | `0x72eb` | **`+0x151a`** |
+| `__TEXT.__objc_methlist` | `0x310c` | `0x3d94` | **`+0xc88`** |
+| `__AUTH_CONST.__cfstring` | `0x2ea0` | `0x3940` | **`+0xaa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1e10` | `0x2448` | **`+0x638`** |
+| `__AUTH.__objc_data` | `—` | `0x500` | **`+0x500`** |
+| `__DATA_CONST.__const` | `0x1068` | `0x1518` | **`+0x4b0`** |
+| `__TEXT.__unwind_info` | `0xe30` | `0x1220` | **`+0x3f0`** |
+| `__AUTH_CONST.__const` | `0x2c0` | `0x578` | **`+0x2b8`** |
+| `__DATA.__data` | `0x5d0` | `0x778` | **`+0x1a8`** |
+| `__AUTH_CONST.__auth_got` | `0x438` | `0x578` | **`+0x140`** |
+| `__DATA.__bss` | `0x1b0` | `0x2f0` | **`+0x140`** |
+| `__TEXT.__const` | `0x1a8` | `0x2e8` | **`+0x140`** |
+| `__DATA.__objc_ivar` | `0x4fc` | `0x630` | **`+0x134`** |
+| `__TEXT.__gcc_except_tab` | `0x3ac` | `0x48c` | **`+0xe0`** |
+| `__DATA_CONST.__got` | `0x2e8` | `0x3b0` | **`+0xc8`** |
+| `__DATA_CONST.__objc_classlist` | `0x148` | `0x1c8` | **`+0x80`** |
+| `__TEXT.__eh_frame` | `—` | `0x70` | **`+0x70`** |
+| `__DATA_CONST.__objc_superrefs` | `0x128` | `0x188` | **`+0x60`** |
+| `__TEXT.__swift5_typeref` | `—` | `0x5f` | **`+0x5f`** |
+| `__TEXT.__constg_swiftt` | `—` | `0x54` | **`+0x54`** |
+| `__TEXT.__dlopen_cstrs` | `0x118` | `0x15c` | **`+0x44`** |
+| `__TEXT.__swift5_fieldmd` | `—` | `0x28` | **`+0x28`** |
+| `__DATA_CONST.__objc_protolist` | `0x78` | `0x98` | **`+0x20`** |
+| `__TEXT.__swift5_assocty` | `—` | `0x18` | **`+0x18`** |
+| `__TEXT.__swift5_reflstr` | `—` | `0x18` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `—` | `0x14` | **`+0x14`** |
+| `__DATA_CONST.__objc_protorefs` | `—` | `0x10` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `—` | `0x10` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `—` | `0x4` | **`+0x4`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x4` | **`+0x4`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x4` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `—` | `0x4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3600.49.15.0.0
--  __TEXT.__text: 0x2ecf0
--  __TEXT.__objc_methlist: 0x310c
--  __TEXT.__const: 0x1a8
--  __TEXT.__dlopen_cstrs: 0x118
--  __TEXT.__gcc_except_tab: 0x3ac
--  __TEXT.__oslogstring: 0x55b0
--  __TEXT.__cstring: 0x5dd1
--  __TEXT.__unwind_info: 0x1128
 +3605.22.1.0.0
-+  __TEXT.__text: 0x3c354
-+  __TEXT.__objc_methlist: 0x3d94
-+  __TEXT.__const: 0x2e8
-+  __TEXT.__dlopen_cstrs: 0x15c
-+  __TEXT.__constg_swiftt: 0x54
-+  __TEXT.__swift5_typeref: 0x5f
-+  __TEXT.__swift5_builtin: 0x14
-+  __TEXT.__swift5_types: 0x8
-+  __TEXT.__cstring: 0x72eb
-+  __TEXT.__swift5_capture: 0x10
-+  __TEXT.__swift5_reflstr: 0x18
-+  __TEXT.__swift5_fieldmd: 0x28
-+  __TEXT.__swift_as_entry: 0x4
-+  __TEXT.__swift_as_ret: 0x4
-+  __TEXT.__swift_as_cont: 0x4
-+  __TEXT.__swift5_assocty: 0x18
-+  __TEXT.__swift5_proto: 0x4
-+  __TEXT.__gcc_except_tab: 0x48c
-+  __TEXT.__oslogstring: 0x77f8
-+  __TEXT.__unwind_info: 0x1608
-+  __TEXT.__eh_frame: 0x70
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1068
--  __DATA_CONST.__objc_classlist: 0x148
--  __DATA_CONST.__objc_protolist: 0x78
-+  __DATA_CONST.__const: 0x1518
-+  __DATA_CONST.__objc_classlist: 0x1c8
-+  __DATA_CONST.__objc_protolist: 0x98
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1e10
--  __DATA_CONST.__objc_superrefs: 0x128
-+  __DATA_CONST.__objc_selrefs: 0x2448
-+  __DATA_CONST.__objc_protorefs: 0x10
-+  __DATA_CONST.__objc_superrefs: 0x188
-   __DATA_CONST.__objc_arraydata: 0x60
--  __DATA_CONST.__got: 0x2e8
--  __AUTH_CONST.__const: 0x2c0
--  __AUTH_CONST.__cfstring: 0x2ea0
--  __AUTH_CONST.__objc_const: 0x5338
-+  __DATA_CONST.__got: 0x3b0
-+  __AUTH_CONST.__const: 0x578
-+  __AUTH_CONST.__cfstring: 0x3940
-+  __AUTH_CONST.__objc_const: 0x6bb0
-   __AUTH_CONST.__objc_intobj: 0x108
-   __AUTH_CONST.__objc_dictobj: 0x78
--  __AUTH_CONST.__auth_got: 0x438
--  __DATA.__objc_ivar: 0x4fc
--  __DATA.__data: 0x5d0
-+  __AUTH_CONST.__auth_got: 0x578
-+  __AUTH.__objc_data: 0x500
-+  __DATA.__objc_ivar: 0x630
-+  __DATA.__data: 0x778
-   __DATA_DIRTY.__objc_data: 0xcd0
-   __DATA_DIRTY.__bss: 0x8
-   __DATA_DIRTY.__common: 0x10
 
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
 +  - /System/Library/Frameworks/Security.framework/Security
-   - /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
-   - /System/Library/PrivateFrameworks/SiriAnalytics.framework/SiriAnalytics
-   - /System/Library/PrivateFrameworks/SiriCrossDeviceArbitrationFeedback.framework/SiriCrossDeviceArbitrationFeedback
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
 +  - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
-   - /usr/lib/swift/libswiftMetal.dylib
 
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 +  - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 1241
--  Symbols:   3061
+-  Symbols:   2314
 -  CStrings:  1054
 +  Functions: 1598
-+  Symbols:   3891
++  Symbols:   2992
 +  CStrings:  1309
- 
 Symbols:
 + +[SCDACoordinator(ElectionLedger) mintElectionIdentity]
 + +[SCDADeviceRoutingPriority bestSiriDeviceRoutingTargetInCandidates:winnerDeviceClass:domain:]
@@ -788,172 +747,6 @@ Symbols:
 + _kSCDAHoldQueueKey
 + _kSCDAMonitorQueueKey
 + _mach_continuous_time
-+ _objc_msgSend$_armTimeoutTimer
-+ _objc_msgSend$_clearPendingStandby
-+ _objc_msgSend$_configureConnection:
-+ _objc_msgSend$_deliverDecision:on:identity:didWin:outcome:source:reason:detail:registeredAt:
-+ _objc_msgSend$_endPendingStandbyAnnouncingWon:
-+ _objc_msgSend$_engageRoutingTargetHoldIfEligible
-+ _objc_msgSend$_engageRoutingTargetStandbyForGeneration:
-+ _objc_msgSend$_entryForIdentity:
-+ _objc_msgSend$_evaluateTimeouts
-+ _objc_msgSend$_evictEntry:
-+ _objc_msgSend$_initSharedObserver
-+ _objc_msgSend$_initWithConnection:requiresPeerVerification:
-+ _objc_msgSend$_initWithLedger:listener:requiresPeerEntitlement:
-+ _objc_msgSend$_initiateEmergencyCall
-+ _objc_msgSend$_isTornDownSynchronized
-+ _objc_msgSend$_ledgerPublisher
-+ _objc_msgSend$_listener
-+ _objc_msgSend$_maybeEngageRoutingTargetStandby
-+ _objc_msgSend$_parkWaiter:forIdentity:existingEntry:
-+ _objc_msgSend$_parkWaiterForIdentity:entry:reason:detail:deliverOn:completion:
-+ _objc_msgSend$_pruneActivationKinds
-+ _objc_msgSend$_pruneHistory
-+ _objc_msgSend$_publishElectionOutcomeWithDidWin:provisional:
-+ _objc_msgSend$_publishProvisionalResolutionWithLost:
-+ _objc_msgSend$_receiver
-+ _objc_msgSend$_registerActivationKind:forIdentity:
-+ _objc_msgSend$_releaseOnQueue:
-+ _objc_msgSend$_releaseOnQueue:suppressNotification:
-+ _objc_msgSend$_requestReplayOverConnection:
-+ _objc_msgSend$_resolveCurrentElectionIdentityAsLostWithReason:
-+ _objc_msgSend$_resolveEntry:withOutcome:didWin:observed:
-+ _objc_msgSend$_resolveEntry:withOutcome:didWin:observed:source:
-+ _objc_msgSend$_resolvePendingStandbyAsWon:
-+ _objc_msgSend$_resolveProvisionalEntry:withResult:
-+ _objc_msgSend$_runSyncOnMonitorQueue:
-+ _objc_msgSend$_startWatchdogOnQueue
-+ _objc_msgSend$_startWithLedger:listener:requiresPeerEntitlement:
-+ _objc_msgSend$_stateSnapshot
-+ _objc_msgSend$_tagElectionWithIdentity:origin:
-+ _objc_msgSend$_verifyPeer:
-+ _objc_msgSend$announceStandbyDidBegin
-+ _objc_msgSend$announceStandbyDidEndAsWon:
-+ _objc_msgSend$anonymousListener
-+ _objc_msgSend$appendString:
-+ _objc_msgSend$array
-+ _objc_msgSend$arrayWithCapacity:
-+ _objc_msgSend$auditToken
-+ _objc_msgSend$callbackQueue
-+ _objc_msgSend$cancelAnyHold
-+ _objc_msgSend$candidates
-+ _objc_msgSend$candidatesFromReplies:
-+ _objc_msgSend$candidatesFromReplies:nameResolver:
-+ _objc_msgSend$candidatesFromResults:
-+ _objc_msgSend$clearPublishedElectionData
-+ _objc_msgSend$componentsJoinedByString:
-+ _objc_msgSend$currentConnection
-+ _objc_msgSend$deadlineContinuousNanos
-+ _objc_msgSend$debugDeviceDescription
-+ _objc_msgSend$decisionBlock
-+ _objc_msgSend$decisionForElection:reason:detail:deliverOn:completion:
-+ _objc_msgSend$decodeBoolForKey:
-+ _objc_msgSend$decodeInt32ForKey:
-+ _objc_msgSend$decodeInt64ForKey:
-+ _objc_msgSend$delegate
-+ _objc_msgSend$deliverOutcome:provisional:
-+ _objc_msgSend$deliveryQueue
-+ _objc_msgSend$detail
-+ _objc_msgSend$deviceClassesFromElectionData:
-+ _objc_msgSend$deviceClassesInCandidates:
-+ _objc_msgSend$deviceNameResolver
-+ _objc_msgSend$dictionary
-+ _objc_msgSend$didWin
-+ _objc_msgSend$electionId
-+ _objc_msgSend$electionLedger
-+ _objc_msgSend$encodeBool:forKey:
-+ _objc_msgSend$encodeInt32:forKey:
-+ _objc_msgSend$encodeInt64:forKey:
-+ _objc_msgSend$endpoint
-+ _objc_msgSend$engageHoldIfEligibleInCandidates:generation:onRelease:
-+ _objc_msgSend$evaluateAndHoldIfNeededWithEligibility:generation:expectedSenderIdsId:onRelease:
-+ _objc_msgSend$handleRoutingTargetReleaseWithLost:
-+ _objc_msgSend$holdWatchdogTimeout
-+ _objc_msgSend$identity
-+ _objc_msgSend$identityWithRawValue:
-+ _objc_msgSend$idsDeviceID
-+ _objc_msgSend$idsIdentifier
-+ _objc_msgSend$init
-+ _objc_msgSend$initWithClock:decisionTimeout:promotionWindow:
-+ _objc_msgSend$initWithDelegate:
-+ _objc_msgSend$initWithIdentity:
-+ _objc_msgSend$initWithIdentity:electionId:didWin:candidates:resolvedAtContinuousNanos:
-+ _objc_msgSend$initWithIdsIdentifier:goodnessScore:deviceClass:productType:isWinner:isLocalDevice:deviceGroup:userConfidence:pHash:deviceName:
-+ _objc_msgSend$initWithIdsIdentifier:goodnessScore:deviceClass:productType:isWinner:isLocalDevice:deviceGroup:userConfidence:pHash:deviceName:roomName:
-+ _objc_msgSend$initWithListenerEndpoint:
-+ _objc_msgSend$initWithMachServiceName:
-+ _objc_msgSend$initWithMachServiceName:options:
-+ _objc_msgSend$initWithRawValue:
-+ _objc_msgSend$interfaceWithProtocol:
-+ _objc_msgSend$isDeviceSelectionEnabled
-+ _objc_msgSend$isElectionLedgerEnabled
-+ _objc_msgSend$isEqualToArray:
-+ _objc_msgSend$isHolding
-+ _objc_msgSend$isLocalDevice
-+ _objc_msgSend$isLocalEligibleRoutingTargetInCandidates:
-+ _objc_msgSend$isMonitorDataSiriDeviceRoutingEnabled
-+ _objc_msgSend$isWinner
-+ _objc_msgSend$isWinnerDecidedLocallyWithoutElectionInCandidates:
-+ _objc_msgSend$myriadMonitorTimeOutInterval
-+ _objc_msgSend$namesForIdsDeviceUniqueIdentifier:
-+ _objc_msgSend$onRelease
-+ _objc_msgSend$orderedSet
-+ _objc_msgSend$outcome
-+ _objc_msgSend$publishElectionDataFromReplies:generation:
-+ _objc_msgSend$publishOutcome:provisional:
-+ _objc_msgSend$publishProvisionalResolutionForElectionId:result:
-+ _objc_msgSend$rawValue
-+ _objc_msgSend$recordOutcome:
-+ _objc_msgSend$recordProvisionalOutcome:
-+ _objc_msgSend$registeredAtContinuousNanos
-+ _objc_msgSend$releaseHoldAsWon:fromSenderIdsId:
-+ _objc_msgSend$releaseHoldLocallyWithResult:
-+ _objc_msgSend$releaseHoldWithResult:fromSenderIdsId:
-+ _objc_msgSend$remoteObjectProxyWithErrorHandler:
-+ _objc_msgSend$removeObjectAtIndex:
-+ _objc_msgSend$removeObjectsInRange:
-+ _objc_msgSend$replayRetainedOutcomesWithReply:
-+ _objc_msgSend$resolveProvisionalOutcomeForElectionId:holdResult:
-+ _objc_msgSend$resolveProvisionalOutcomeForElectionId:result:
-+ _objc_msgSend$resolvedAtContinuousNanos
-+ _objc_msgSend$resume
-+ _objc_msgSend$roomName
-+ _objc_msgSend$scdaStandbyDidBegin
-+ _objc_msgSend$scdaStandbyDidEndAsWon:
-+ _objc_msgSend$set
-+ _objc_msgSend$setClasses:forSelector:argumentIndex:ofReply:
-+ _objc_msgSend$setDeadlineContinuousNanos:
-+ _objc_msgSend$setDecisionBlock:
-+ _objc_msgSend$setDelegate:
-+ _objc_msgSend$setDeliveryQueue:
-+ _objc_msgSend$setDetail:
-+ _objc_msgSend$setExpectedSenderIdsId:
-+ _objc_msgSend$setExportedInterface:
-+ _objc_msgSend$setExportedObject:
-+ _objc_msgSend$setIdsDeviceID:
-+ _objc_msgSend$setOnRelease:
-+ _objc_msgSend$setOutcome:
-+ _objc_msgSend$setRegisteredAtContinuousNanos:
-+ _objc_msgSend$setRemoteObjectInterface:
-+ _objc_msgSend$setResolvedAtContinuousNanos:
-+ _objc_msgSend$setWithArray:
-+ _objc_msgSend$setWithCapacity:
-+ _objc_msgSend$sharedLedger
-+ _objc_msgSend$sharedMonitor
-+ _objc_msgSend$sharedObserver
-+ _objc_msgSend$shortValue
-+ _objc_msgSend$shouldAdvertiseEmergencyContinuation
-+ _objc_msgSend$signedAdjustedBoostForGoodnessScoreContext:
-+ _objc_msgSend$siriDeviceRoutingMode
-+ _objc_msgSend$sortUsingComparator:
-+ _objc_msgSend$startObserving
-+ _objc_msgSend$stopObserving
-+ _objc_msgSend$stringWithString:
-+ _objc_msgSend$toDictionary
-+ _objc_msgSend$unsignedShortValue
-+ _objc_msgSend$waiters
-+ _objc_msgSend$winnerIdsIdentifierInCandidates:
 + _objc_opt_self
 + _objc_retain_x7
 + _sharedLedger.onceToken
@@ -1034,20 +827,6 @@ Symbols:
 - ___42-[SCDACoordinator resetMyriadCoordinator:]_block_invoke
 - ___block_descriptor_80_e8_32s40s48s56s64s72s_e5_v8?0ls32l8s40l8s48l8s56l8s64l8s72l8
 - _getWPHeySiriKeyManufacturerData
-- _objc_msgSend$_writeElectionDataToDefaults
-- _objc_msgSend$heySiri:foundDevice:withInfo:
-- _objc_msgSend$myriadCoordinator:didAddAdvertisement:toSession:
-- _objc_msgSend$myriadCoordinator:didEnterState:fromState:
-- _objc_msgSend$myriadCoordinator:didReceiveAdvertisement:
-- _objc_msgSend$myriadCoordinator:willStartAdvertisingUsingData:
-- _objc_msgSend$myriadCoordinator:willStartAdvertisingWithSlowDownInterval:
-- _objc_msgSend$myriadCoordinatorBTLEDidEndAdvertising:
-- _objc_msgSend$myriadCoordinatorBTLEDidEndScanning:
-- _objc_msgSend$myriadCoordinatorBTLEDidStartAdvertising:
-- _objc_msgSend$myriadCoordinatorBTLEDidStartScanning:
-- _objc_msgSend$myriadCoordinatorIsAdvertisingEmergency:
-- _objc_msgSend$myriadCoordinatorOverallTimerCancelled:
-- _objc_msgSend$stateAsString:
 CStrings:
 + "\n    waiting: %@ for %llums"
 + "\n  identity=%llu state=%@"

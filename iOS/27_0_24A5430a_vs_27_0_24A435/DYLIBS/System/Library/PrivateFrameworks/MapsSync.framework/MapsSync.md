@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MapsSync.framework/MapsSync`
 
-```diff
+### Section Size Changes
 
- 188.30.6.12.8
--  __TEXT.__text: 0x16402c
-+  __TEXT.__text: 0x1640cc
-   __TEXT.__objc_methlist: 0x413c
-   __TEXT.__const: 0x4808
-   __TEXT.__oslogstring: 0x84
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x16402c` | `0x1640cc` | **`+0xa0`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1c7d8b3d0 -> sub_1ca16d3d0 : 272 -> 280
 ~ sub_1c7d94980 -> sub_1ca176988 : 360 -> 364

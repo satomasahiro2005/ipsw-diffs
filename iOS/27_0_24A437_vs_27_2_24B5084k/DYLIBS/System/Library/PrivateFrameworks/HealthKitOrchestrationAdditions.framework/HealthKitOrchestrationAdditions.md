@@ -2,80 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/HealthKitOrchestrationAdditions.framework/HealthKitOrchestrationAdditions`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xae78` | `0xc564` | **`+0x16ec`** |
+| `__DATA.__data` | `0x80` | `0x248` | **`+0x1c8`** |
+| `__TEXT.__eh_frame` | `0x350` | `0x500` | **`+0x1b0`** |
+| `__TEXT.__const` | `0x89a` | `0xa18` | **`+0x17e`** |
+| `__AUTH_CONST.__const` | `0x639` | `0x7a1` | **`+0x168`** |
+| `__TEXT.__constg_swiftt` | `0x234` | `0x368` | **`+0x134`** |
+| `__DATA.__bss` | `0x500` | `0x600` | **`+0x100`** |
+| `__TEXT.__swift5_typeref` | `0x29c` | `0x372` | **`+0xd6`** |
+| `__TEXT.__unwind_info` | `0x3b8` | `0x450` | **`+0x98`** |
+| `__TEXT.__swift5_fieldmd` | `0x158` | `0x1d4` | **`+0x7c`** |
+| `__AUTH_CONST.__objc_const` | `0x220` | `0x290` | **`+0x70`** |
+| `__AUTH_CONST.__auth_got` | `0x570` | `0x5d0` | **`+0x60`** |
+| `__TEXT.__swift5_reflstr` | `0x133` | `0x175` | **`+0x42`** |
+| `__TEXT.__cstring` | `0x25d` | `0x29d` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x80` | `0xa8` | **`+0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0x28` | `0x40` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0xd0` | `0xe8` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `—` | `0x14` | **`+0x14`** |
+| `__TEXT.__swift5_builtin` | `0x78` | `0x8c` | **`+0x14`** |
+| `__DATA_CONST.__objc_protolist` | `—` | `0x10` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x70` | `0x80` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x30` | `0x3c` | **`+0xc`** |
+| `__DATA_CONST.__objc_protorefs` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x4` | `0xc` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -7027.0.72.2.7
--  __TEXT.__text: 0xa904
--  __TEXT.__const: 0x89a
--  __TEXT.__cstring: 0x25d
--  __TEXT.__swift5_typeref: 0x29c
 +7027.1.36.2.7
-+  __TEXT.__text: 0xbf5c
-+  __TEXT.__objc_methlist: 0x14
-+  __TEXT.__const: 0xa18
-+  __TEXT.__swift5_typeref: 0x372
-+  __TEXT.__swift5_fieldmd: 0x1d4
-+  __TEXT.__constg_swiftt: 0x368
-+  __TEXT.__swift5_reflstr: 0x175
-+  __TEXT.__swift5_builtin: 0x8c
-+  __TEXT.__swift5_assocty: 0xe8
-+  __TEXT.__swift5_protos: 0xc
-+  __TEXT.__swift5_proto: 0x80
-+  __TEXT.__swift5_types: 0x3c
-+  __TEXT.__cstring: 0x29d
-   __TEXT.__swift5_capture: 0x188
--  __TEXT.__swift5_reflstr: 0x133
--  __TEXT.__swift5_assocty: 0xd0
--  __TEXT.__swift5_fieldmd: 0x158
--  __TEXT.__constg_swiftt: 0x234
--  __TEXT.__swift5_builtin: 0x78
-   __TEXT.__oslogstring: 0x19b
--  __TEXT.__swift5_protos: 0x4
--  __TEXT.__swift5_proto: 0x70
--  __TEXT.__swift5_types: 0x30
-   __TEXT.__swift_as_entry: 0x8
-   __TEXT.__swift_as_ret: 0x8
-   __TEXT.__swift_as_cont: 0x8
--  __TEXT.__unwind_info: 0x478
--  __TEXT.__eh_frame: 0x350
-+  __TEXT.__unwind_info: 0x518
-+  __TEXT.__eh_frame: 0x500
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x80
-+  __DATA_CONST.__const: 0xa8
-   __DATA_CONST.__objc_classlist: 0x8
-+  __DATA_CONST.__objc_protolist: 0x10
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x28
-+  __DATA_CONST.__objc_selrefs: 0x40
-+  __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x639
--  __AUTH_CONST.__objc_const: 0x220
--  __AUTH_CONST.__auth_got: 0x570
--  __DATA.__data: 0x80
-+  __AUTH_CONST.__const: 0x7a1
-+  __AUTH_CONST.__objc_const: 0x290
-+  __AUTH_CONST.__auth_got: 0x5d0
-+  __DATA.__data: 0x248
-   __DATA_DIRTY.__data: 0x3e8
-   __DATA_DIRTY.__bss: 0x900
-   __DATA_DIRTY.__common: 0x30
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 318
--  Symbols:   205
+-  Symbols:   200
 -  CStrings:  15
 +  Functions: 365
-+  Symbols:   235
++  Symbols:   227
 +  CStrings:  16
- 
 Symbols:
 + _OBJC_CLASS_$_HKKeyValueDomain
 + __IVARS__TtC31HealthKitOrchestrationAdditions28HKKeyValueDomainObserverShim
@@ -88,9 +56,6 @@ Symbols:
 + ___unnamed_4
 + ___unnamed_7
 + _flat unique So24HKKeyValueDomainObserver_p
-+ _objc_msgSend$didUpdateKeyValueDomain:
-+ _objc_msgSend$startObservation:
-+ _objc_msgSend$stopObservation:
 + _swift_cvw_allocateGenericValueMetadataWithLayoutString
 + _swift_cvw_initWithTake
 + _swift_cvw_instantiateLayoutString

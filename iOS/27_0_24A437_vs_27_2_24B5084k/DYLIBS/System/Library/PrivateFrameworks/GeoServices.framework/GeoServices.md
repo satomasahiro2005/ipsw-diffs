@@ -2,111 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/GeoServices.framework/GeoServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2bb76d4` | `0x2bd150c` | **`+0x19e38`** |
+| `__AUTH_CONST.__objc_const` | `0x18de98` | `0x18f288` | **`+0x13f0`** |
+| `__TEXT.__objc_methlist` | `0xe4aac` | `0xe591c` | **`+0xe70`** |
+| `__TEXT.__const` | `0x1f7fbc` | `0x1f8924` | **`+0x968`** |
+| `__TEXT.__unwind_info` | `0xa1d50` | `0xa2630` | **`+0x8e0`** |
+| `__AUTH_CONST.__cfstring` | `0xb0c00` | `0xb14a0` | **`+0x8a0`** |
+| `__TEXT.__cstring` | `0xba7eb` | `0xbaf1a` | **`+0x72f`** |
+| `__TEXT.__gcc_except_tab` | `0x99bb0` | `0x9a0ec` | **`+0x53c`** |
+| `__AUTH_CONST.__const` | `0x118b10` | `0x118f28` | **`+0x418`** |
+| `__DATA.__bss` | `0x1d3208` | `0x1d35f8` | **`+0x3f0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x37db8` | `0x380d0` | **`+0x318`** |
+| `__TEXT.__swift5_reflstr` | `0x4fe6d` | `0x5014d` | **`+0x2e0`** |
+| `__AUTH.__objc_data` | `0x397c8` | `0x39a48` | **`+0x280`** |
+| `__DATA.__data` | `0x3d030` | `0x3d1e8` | **`+0x1b8`** |
+| `__TEXT.__swift5_fieldmd` | `0x4e534` | `0x4e6dc` | **`+0x1a8`** |
+| `__DATA_CONST.__const` | `0x1adb8` | `0x1aeb0` | **`+0xf8`** |
+| `__DATA.__objc_ivar` | `0x14b58` | `0x14c48` | **`+0xf0`** |
+| `__TEXT.__eh_frame` | `0x8c7b4` | `0x8c6d4` | **`-0xe0`** |
+| `__TEXT.__swift5_capture` | `0x1e42c` | `0x1e4bc` | **`+0x90`** |
+| `__TEXT.__constg_swiftt` | `0x2d278` | `0x2d2f0` | **`+0x78`** |
+| `__TEXT.__swift5_typeref` | `0x2e7ca` | `0x2e830` | **`+0x66`** |
+| `__DATA_CONST.__got` | `0x61c8` | `0x6208` | **`+0x40`** |
+| `__DATA_CONST.__objc_classlist` | `0x6668` | `0x66a8` | **`+0x40`** |
+| `__DATA_CONST.__objc_superrefs` | `0x5d20` | `0x5d60` | **`+0x40`** |
+| `__TEXT.__oslogstring` | `0x2801a` | `0x28057` | **`+0x3d`** |
+| `__AUTH.__data` | `0x15be0` | `0x15c00` | **`+0x20`** |
+| `__TEXT.__swift5_proto` | `0xed90` | `0xedb0` | **`+0x20`** |
+| `__TEXT.__swift5_assocty` | `0xb588` | `0xb5a0` | **`+0x18`** |
+| `__DATA_DIRTY.__data` | `0x4e20` | `0x4e10` | **`-0x10`** |
+| `__TEXT.__swift5_types` | `0x5274` | `0x5284` | **`+0x10`** |
+| `__TEXT.__swift5_mpenum` | `0x14c` | `0x150` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2075.30.6.12.12
--  __TEXT.__text: 0x2aeba98
--  __TEXT.__objc_methlist: 0xe4aac
--  __TEXT.__const: 0x1f7fbc
--  __TEXT.__cstring: 0xba7eb
--  __TEXT.__gcc_except_tab: 0x99bb0
 +2075.31.6.17.9
-+  __TEXT.__text: 0x2b044a4
-+  __TEXT.__objc_methlist: 0xe591c
-+  __TEXT.__const: 0x1f8924
-+  __TEXT.__cstring: 0xbaf1a
-+  __TEXT.__gcc_except_tab: 0x9a0ec
-   __TEXT.__dlopen_cstrs: 0x289
--  __TEXT.__swift5_typeref: 0x2e7ca
--  __TEXT.__swift5_capture: 0x1e42c
--  __TEXT.__constg_swiftt: 0x2d278
--  __TEXT.__swift5_reflstr: 0x4fe6d
--  __TEXT.__swift5_fieldmd: 0x4e534
-+  __TEXT.__swift5_typeref: 0x2e830
-+  __TEXT.__swift5_capture: 0x1e4bc
-+  __TEXT.__constg_swiftt: 0x2d2f0
-+  __TEXT.__swift5_reflstr: 0x5014d
-+  __TEXT.__swift5_fieldmd: 0x4e6dc
-   __TEXT.__swift5_builtin: 0x9ec
--  __TEXT.__swift5_assocty: 0xb588
--  __TEXT.__swift5_proto: 0xed90
--  __TEXT.__swift5_types: 0x5274
-+  __TEXT.__swift5_assocty: 0xb5a0
-+  __TEXT.__swift5_proto: 0xedb0
-+  __TEXT.__swift5_types: 0x5284
-   __TEXT.__swift_as_entry: 0x7dc
-   __TEXT.__swift_as_ret: 0x724
-   __TEXT.__swift_as_cont: 0x110c
--  __TEXT.__oslogstring: 0x2801a
-   __TEXT.__swift5_protos: 0x214
--  __TEXT.__swift5_mpenum: 0x14c
-+  __TEXT.__oslogstring: 0x28057
-+  __TEXT.__swift5_mpenum: 0x150
-   __TEXT.__swift5_types2: 0x28
-   __TEXT.__ustring: 0x152
--  __TEXT.__unwind_info: 0xc2a18
--  __TEXT.__eh_frame: 0x8c83c
-+  __TEXT.__unwind_info: 0xc2a48
-+  __TEXT.__eh_frame: 0x8c764
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1adb8
--  __DATA_CONST.__objc_classlist: 0x6668
-+  __DATA_CONST.__const: 0x1aeb0
-+  __DATA_CONST.__objc_classlist: 0x66a8
-   __DATA_CONST.__objc_catlist: 0xc8
-   __DATA_CONST.__objc_protolist: 0x960
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x18
--  __DATA_CONST.__objc_selrefs: 0x37db8
-+  __DATA_CONST.__objc_selrefs: 0x380d0
-   __DATA_CONST.__objc_protorefs: 0x280
--  __DATA_CONST.__objc_superrefs: 0x5d20
-+  __DATA_CONST.__objc_superrefs: 0x5d60
-   __DATA_CONST.__objc_arraydata: 0x1cc8
--  __DATA_CONST.__got: 0x61c8
--  __AUTH_CONST.__const: 0x118b10
--  __AUTH_CONST.__cfstring: 0xb0c00
--  __AUTH_CONST.__objc_const: 0x18de98
-+  __DATA_CONST.__got: 0x6208
-+  __AUTH_CONST.__const: 0x118f28
-+  __AUTH_CONST.__cfstring: 0xb14a0
-+  __AUTH_CONST.__objc_const: 0x18f288
-   __AUTH_CONST.__weak_auth_got: 0x40
-   __AUTH_CONST.__objc_intobj: 0xd68
-   __AUTH_CONST.__objc_arrayobj: 0x570
-   __AUTH_CONST.__objc_dictobj: 0x78
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__auth_got: 0x39d8
--  __AUTH.__objc_data: 0x397c8
--  __AUTH.__data: 0x15be0
--  __DATA.__objc_ivar: 0x14b58
--  __DATA.__data: 0x3d030
-+  __AUTH.__objc_data: 0x39a48
-+  __AUTH.__data: 0x15c00
-+  __DATA.__objc_ivar: 0x14c48
-+  __DATA.__data: 0x3d1e8
-   __DATA.__common: 0x438
-   __DATA_DIRTY.__objc_data: 0x5c30
--  __DATA_DIRTY.__data: 0x4e20
-+  __DATA_DIRTY.__data: 0x4e10
-   __DATA_DIRTY.__bss: 0x68f8
-   __DATA_DIRTY.__common: 0xb0
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 182242
--  Symbols:   212679
+-  Symbols:   196336
 -  CStrings:  29526
 +  Functions: 182625
-+  Symbols:   213258
++  Symbols:   196880
 +  CStrings:  29600
- 
 Symbols:
 + +[GEOComposedGuidanceLandmark supportsSecureCoding]
 + +[GEODisplaySize isValid:]
@@ -11791,43 +11735,6 @@ Symbols:
 + _associated conformance 11GeoServices8ProtobufV16DodgeballOptionsV5IVars33_5FD703D20FBEEC00408A3E6074B57A32LLV6FieldsVSHAASQ
 + _associated conformance 11GeoServices8ProtobufV16DodgeballOptionsVSHAASQ
 + _get_enum_tag_for_layout_string 11GeoServices10GEOPBFieldOyAA8ProtobufV16DodgeballOptionsVG
-+ _objc_msgSend$_fetchPossibleTerritoriesForLocation:maximumEdgeDistance:retryCount:responseQueue:responseBlock:
-+ _objc_msgSend$addMultipleShowcaseMetadata:
-+ _objc_msgSend$clearMultipleShowcaseMetadatas
-+ _objc_msgSend$displaySize
-+ _objc_msgSend$dodgeballOptions
-+ _objc_msgSend$expectedTimeOfDeparture
-+ _objc_msgSend$hasExpectedTimeOfDeparture
-+ _objc_msgSend$initWithEnrouteNotice:enrouteNoticeIndex:legIndex:guidanceLandmarkAnnotation:onRoute:
-+ _objc_msgSend$initWithUnsafeTerritoryData:originCoordinate:nearestEdgeCoordinate:isWithinRadius:nameDB:iso3to2Mapping:
-+ _objc_msgSend$multipleShowcaseMetadataAtIndex:
-+ _objc_msgSend$multipleShowcaseMetadatasCount
-+ _objc_msgSend$setAccessoryCircular:
-+ _objc_msgSend$setAccessoryCorner:
-+ _objc_msgSend$setAccessoryInline:
-+ _objc_msgSend$setAccessoryRectangular:
-+ _objc_msgSend$setDefaultToFasterRoute:
-+ _objc_msgSend$setDisplaySize:
-+ _objc_msgSend$setDisplayString:
-+ _objc_msgSend$setDodgeballOptions:
-+ _objc_msgSend$setExtraLarge:
-+ _objc_msgSend$setExtraLargePortrait:
-+ _objc_msgSend$setFamily:
-+ _objc_msgSend$setIsPreview:
-+ _objc_msgSend$setLarge:
-+ _objc_msgSend$setMedium:
-+ _objc_msgSend$setMinFasterRouteTimeSavingsS:
-+ _objc_msgSend$setRelevance:
-+ _objc_msgSend$setSmall:
-+ _objc_msgSend$setSupportsLandmarkGuidance:
-+ _objc_msgSend$setWidgetConfiguration:
-+ _objc_msgSend$setWidgetConfigurationState:
-+ _objc_msgSend$setWidgetProperties:
-+ _objc_msgSend$setWidgetTimelineEntries:
-+ _objc_msgSend$widgetConfiguration
-+ _objc_msgSend$widgetConfigurationState
-+ _objc_msgSend$widgetProperties
-+ _objc_msgSend$widgetTimelineEntries
 + _symbolic So19GEODodgeballOptionsC
 + _symbolic _____ 11GeoServices17DirectionsServiceC22FasterRoutePreferencesV
 + _symbolic _____ 11GeoServices8ProtobufV16DodgeballOptionsV
@@ -22993,8 +22900,6 @@ Symbols:
 - ___swift_memcpy496_8
 - ___swift_memcpy520_8
 - ___swift_memcpy60_8
-- _objc_msgSend$_fetchPossibleTerritoriesForLocation:retryCount:responseQueue:responseBlock:
-- _objc_msgSend$initWithUnsafeTerritoryData:nameDB:iso3to2Mapping:
 CStrings:
 + "B24@?0@\"GEOTerritoryRegulatoryInfo\"8@\"NSDictionary\"16"
 + "CLIENT_REVISION_CAN_HANDLE_DISPLAY_SINGLE_ORGANIC_RESULT_WITH_ENRICHMENT_DUPE"

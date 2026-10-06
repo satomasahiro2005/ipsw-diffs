@@ -2,80 +2,48 @@
 
 > `/usr/libexec/cameraispd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__auth_ptr`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7ce40` | `0x7e754` | **`+0x1914`** |
+| `__DATA.__data` | `0x3bdde0` | `0x3be2c0` | **`+0x4e0`** |
+| `__TEXT.__cstring` | `0x77aa` | `0x7c83` | **`+0x4d9`** |
+| `__DATA_CONST.__cfstring` | `0x2bc0` | `0x3060` | **`+0x4a0`** |
+| `__TEXT.__objc_stubs` | `0xf80` | `0x11e0` | **`+0x260`** |
+| `__TEXT.__objc_methname` | `0x1295` | `0x13f2` | **`+0x15d`** |
+| `__TEXT.__gcc_except_tab` | `0x18e0` | `0x1a2c` | **`+0x14c`** |
+| `__DATA.__objc_selrefs` | `0x4f8` | `0x590` | **`+0x98`** |
+| `__DATA_CONST.__const` | `0x9a28` | `0x9ac0` | **`+0x98`** |
+| `__TEXT.__unwind_info` | `0x1248` | `0x12c0` | **`+0x78`** |
+| `__TEXT.__auth_stubs` | `0x1f20` | `0x1f90` | **`+0x70`** |
+| `__DATA_CONST.__got` | `0xc98` | `0xcd8` | **`+0x40`** |
+| `__DATA_CONST.__auth_got` | `0xfa0` | `0xfd8` | **`+0x38`** |
+| `__DATA.__common` | `0xf` | `0x10` | **`+0x1`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_const`
 - `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
- 20.77.0.0.0
--  __TEXT.__text: 0x7ce40
--  __TEXT.__auth_stubs: 0x1f20
--  __TEXT.__objc_stubs: 0xf80
-+  __TEXT.__text: 0x7e754
-+  __TEXT.__auth_stubs: 0x1f90
-+  __TEXT.__objc_stubs: 0x11e0
-   __TEXT.__objc_methlist: 0x270
--  __TEXT.__gcc_except_tab: 0x18e0
-+  __TEXT.__gcc_except_tab: 0x1a2c
-   __TEXT.__const: 0x2c18
--  __TEXT.__cstring: 0x77aa
-+  __TEXT.__cstring: 0x7c83
-   __TEXT.__oslogstring: 0x5fd3
--  __TEXT.__objc_methname: 0x1295
-+  __TEXT.__objc_methname: 0x13f2
-   __TEXT.__objc_classname: 0x88
-   __TEXT.__objc_methtype: 0x1067
--  __TEXT.__unwind_info: 0x1248
--  __DATA_CONST.__const: 0x9a28
--  __DATA_CONST.__cfstring: 0x2bc0
-+  __TEXT.__unwind_info: 0x12c0
-+  __DATA_CONST.__const: 0x9ac0
-+  __DATA_CONST.__cfstring: 0x3060
-   __DATA_CONST.__objc_classlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
-
-   __DATA_CONST.__objc_intobj: 0x78
-   __DATA_CONST.__objc_arraydata: 0x10
-   __DATA_CONST.__objc_arrayobj: 0x30
--  __DATA_CONST.__auth_got: 0xfa0
--  __DATA_CONST.__got: 0xc98
-+  __DATA_CONST.__auth_got: 0xfd8
-+  __DATA_CONST.__got: 0xcd8
-   __DATA_CONST.__auth_ptr: 0x50
-   __DATA.__objc_const: 0x5c8
--  __DATA.__objc_selrefs: 0x4f8
-+  __DATA.__objc_selrefs: 0x590
-   __DATA.__objc_ivar: 0x38
-   __DATA.__objc_data: 0xf0
--  __DATA.__data: 0x3bdde0
--  __DATA.__common: 0xf
-+  __DATA.__data: 0x3be2c0
-+  __DATA.__common: 0x10
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libtailspin.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 1561
 -  Symbols:   918
 -  CStrings:  1844
 +  Functions: 1578
 +  Symbols:   933
 +  CStrings:  1916
- 
 Symbols:
 + _AnalyticsSendEventLazy
 + _IOSurfaceGetBytesPerRow

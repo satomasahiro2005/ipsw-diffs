@@ -2,89 +2,44 @@
 
 > `/System/Library/PrivateFrameworks/HomeKitMatter.framework/HomeKitMatter`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x186be8` | `0x1815cc` | **`-0x561c`** |
+| `__TEXT.__oslogstring` | `0x508b3` | `0x4f5a5` | **`-0x130e`** |
+| `__AUTH_CONST.__cfstring` | `0x7060` | `0x6ce0` | **`-0x380`** |
+| `__TEXT.__cstring` | `0x7103` | `0x6e9e` | **`-0x265`** |
+| `__DATA_CONST.__objc_selrefs` | `0x71f0` | `0x7098` | **`-0x158`** |
+| `__TEXT.__gcc_except_tab` | `0x3150` | `0x302c` | **`-0x124`** |
+| `__AUTH_CONST.__objc_const` | `0x10318` | `0x10238` | **`-0xe0`** |
+| `__DATA_CONST.__const` | `0x49c8` | `0x48f0` | **`-0xd8`** |
+| `__TEXT.__objc_methlist` | `0xadc4` | `0xad0c` | **`-0xb8`** |
+| `__AUTH.__objc_data` | `0x1ef0` | `0x1e50` | **`-0xa0`** |
+| `__DATA_DIRTY.__objc_data` | `0xc80` | `0xd20` | **`+0xa0`** |
+| `__DATA.__bss` | `0x4c8` | `0x478` | **`-0x50`** |
+| `__DATA_DIRTY.__bss` | `0x88` | `0xd8` | **`+0x50`** |
+| `__AUTH_CONST.__objc_intobj` | `0x1788` | `0x1740` | **`-0x48`** |
+| `__TEXT.__unwind_info` | `0x3178` | `0x3140` | **`-0x38`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x180` | `0x168` | **`-0x18`** |
+| `__DATA.__objc_ivar` | `0xb78` | `0xb64` | **`-0x14`** |
+| `__DATA_CONST.__got` | `0xa08` | `0x9f8` | **`-0x10`** |
+| `__DATA_CONST.__objc_arraydata` | `0x248` | `0x240` | **`-0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x318` | `0x310` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x186be8
--  __TEXT.__objc_methlist: 0xadc4
-+  __TEXT.__text: 0x1815cc
-+  __TEXT.__objc_methlist: 0xad0c
-   __TEXT.__const: 0x298
-   __TEXT.__dlopen_cstrs: 0x58
--  __TEXT.__gcc_except_tab: 0x3150
--  __TEXT.__cstring: 0x7103
--  __TEXT.__oslogstring: 0x508b3
-+  __TEXT.__gcc_except_tab: 0x302c
-+  __TEXT.__cstring: 0x6e9e
-+  __TEXT.__oslogstring: 0x4f5a5
-   __TEXT.__ustring: 0x68
--  __TEXT.__unwind_info: 0x3178
-+  __TEXT.__unwind_info: 0x3140
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x49c8
-+  __DATA_CONST.__const: 0x48f0
-   __DATA_CONST.__objc_classlist: 0x458
-   __DATA_CONST.__objc_catlist: 0x50
-   __DATA_CONST.__objc_protolist: 0x138
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x71f0
-+  __DATA_CONST.__objc_selrefs: 0x7098
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__objc_superrefs: 0x318
--  __DATA_CONST.__objc_arraydata: 0x248
--  __DATA_CONST.__got: 0xa08
-+  __DATA_CONST.__objc_superrefs: 0x310
-+  __DATA_CONST.__objc_arraydata: 0x240
-+  __DATA_CONST.__got: 0x9f8
-   __AUTH_CONST.__const: 0x1140
--  __AUTH_CONST.__cfstring: 0x7060
--  __AUTH_CONST.__objc_const: 0x10318
--  __AUTH_CONST.__objc_intobj: 0x1788
--  __AUTH_CONST.__objc_arrayobj: 0x180
-+  __AUTH_CONST.__cfstring: 0x6ce0
-+  __AUTH_CONST.__objc_const: 0x10238
-+  __AUTH_CONST.__objc_intobj: 0x1740
-+  __AUTH_CONST.__objc_arrayobj: 0x168
-   __AUTH_CONST.__objc_doubleobj: 0x60
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x1ef0
--  __DATA.__objc_ivar: 0xb78
-+  __AUTH.__objc_data: 0x1e50
-+  __DATA.__objc_ivar: 0xb64
-   __DATA.__data: 0xea0
--  __DATA.__bss: 0x4c8
--  __DATA_DIRTY.__objc_data: 0xc80
--  __DATA_DIRTY.__bss: 0x88
-+  __DATA.__bss: 0x478
-+  __DATA_DIRTY.__objc_data: 0xd20
-+  __DATA_DIRTY.__bss: 0xd8
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
+-1479.0.0.1.0
++1484.2.0.0.0
 
-   - /System/Library/PrivateFrameworks/UARPKit.framework/UARPKit
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 4494
--  Symbols:   15495
--  CStrings:  6783
+-  Symbols:   7395
+-  CStrings:  5884
 +  Functions: 4477
-+  Symbols:   15383
-+  CStrings:  6643
- 
-Sections:
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __DATA.__data : content changed
++  Symbols:   7341
++  CStrings:  5772
 Symbols:
 + +[HMMTRBeaconProtectionKey bpkFromMatterFabricRawIPK:compressedFabricId:error:]
 + +[HMMTRBeaconProtectionKey compressedFabricIdFromRootPublicKey:fabricID:error:]
@@ -246,18 +201,6 @@ Symbols:
 + _kDefaultOtaProviderEndpoint
 + _logCategory._hmf_once_t1361
 + _logCategory._hmf_once_v1362
-+ _objc_msgSend$_cancelBonjourBrowser
-+ _objc_msgSend$_filterAccessoryServersUnpairedFromStorageAmongServers:completion:
-+ _objc_msgSend$_reconcileBonjourBrowser
-+ _objc_msgSend$bpkFromTLK:error:
-+ _objc_msgSend$hkdfSHA256DeriveKeyFromIKM:salt:info:outputByteCount:error:
-+ _objc_msgSend$init:server:queue:
-+ _objc_msgSend$initWithServer:softwareUpdateProvider:timeInterval:requestParams:queue:
-+ _objc_msgSend$makeAttestationDataStoreWithURL:
-+ _objc_msgSend$replayPresentCommissionableNodeDiscriminatorsToServer:
-+ _objc_msgSend$startOtaProviderSchedulerTimer:queue:
-+ _objc_msgSend$subdataWithRange:
-+ _objc_msgSend$tlkFromIKM:error:
 - -[HMMTRAccessoryServer diagnosticsEventDelegate]
 - -[HMMTRAccessoryServer setDiagnosticsEventDelegate:]
 - -[HMMTRAccessoryServer setDiagnosticsEventHandler:]
@@ -472,58 +415,6 @@ Symbols:
 - _logCategory._hmf_once_t20
 - _logCategory._hmf_once_v1360
 - _logCategory._hmf_once_v21
-- _objc_msgSend$_handleDiagnosticsEvent:
-- _objc_msgSend$_preWarmCommissioningSession
-- _objc_msgSend$_processEvent:
-- _objc_msgSend$_readPastEventsFromAccessory:forClusters:
-- _objc_msgSend$addTimeInterval:
-- _objc_msgSend$diagnosticsEventDelegate
-- _objc_msgSend$errorCountOfThreadNetworkDiagnostics:
-- _objc_msgSend$errorCountOfWiFiNetworkDiagnostics:
-- _objc_msgSend$handleDiagnosticsEvents:forAccessory:
-- _objc_msgSend$init:server:endpoint:queue:
-- _objc_msgSend$initWithServer:softwareUpdateProvider:timeInterval:endpoint:requestParams:queue:
-- _objc_msgSend$initWithValues:
-- _objc_msgSend$localeWithLocaleIdentifier:
-- _objc_msgSend$packetCountOfThreadNetworkDiagnostics:
-- _objc_msgSend$packetCountOfWiFiNetworkDiagnostics:
-- _objc_msgSend$readAttributeBeaconLostCountWithParams:
-- _objc_msgSend$readAttributeBeaconRxCountWithParams:
-- _objc_msgSend$readAttributeBootReasonWithParams:
-- _objc_msgSend$readAttributeChannelNumberWithParams:
-- _objc_msgSend$readAttributeChannelWithParams:
-- _objc_msgSend$readAttributeOverrunCountWithParams:
-- _objc_msgSend$readAttributePacketMulticastRxCountWithParams:
-- _objc_msgSend$readAttributePacketMulticastTxCountWithParams:
-- _objc_msgSend$readAttributePacketUnicastRxCountWithParams:
-- _objc_msgSend$readAttributePacketUnicastTxCountWithParams:
-- _objc_msgSend$readAttributeRebootCountWithParams:
-- _objc_msgSend$readAttributeRxBroadcastCountWithParams:
-- _objc_msgSend$readAttributeRxErrFcsCountWithParams:
-- _objc_msgSend$readAttributeRxErrInvalidSrcAddrCountWithParams:
-- _objc_msgSend$readAttributeRxErrNoFrameCountWithParams:
-- _objc_msgSend$readAttributeRxErrOtherCountWithParams:
-- _objc_msgSend$readAttributeRxErrSecCountWithParams:
-- _objc_msgSend$readAttributeRxErrUnknownNeighborCountWithParams:
-- _objc_msgSend$readAttributeRxTotalCountWithParams:
-- _objc_msgSend$readAttributeRxUnicastCountWithParams:
-- _objc_msgSend$readAttributeTotalOperationalHoursWithParams:
-- _objc_msgSend$readAttributeTxBroadcastCountWithParams:
-- _objc_msgSend$readAttributeTxDirectMaxRetryExpiryCountWithParams:
-- _objc_msgSend$readAttributeTxErrAbortCountWithParams:
-- _objc_msgSend$readAttributeTxErrBusyChannelCountWithParams:
-- _objc_msgSend$readAttributeTxErrCcaCountWithParams:
-- _objc_msgSend$readAttributeTxIndirectMaxRetryExpiryCountWithParams:
-- _objc_msgSend$readAttributeTxTotalCountWithParams:
-- _objc_msgSend$readAttributeTxUnicastCountWithParams:
-- _objc_msgSend$readAttributeUpTimeWithParams:
-- _objc_msgSend$readEventsWithEndpointID:clusterID:eventID:params:queue:completion:
-- _objc_msgSend$resetCountsWithExpectedValues:expectedValueInterval:completion:
-- _objc_msgSend$setDiagnosticsEventDelegate:
-- _objc_msgSend$setLocale:
-- _objc_msgSend$setMinEventNumber:
-- _objc_msgSend$startOtaProviderSchedulerTimer:endpoint:queue:
-- _objc_msgSend$timeZoneForSecondsFromGMT:
 CStrings:
 + "CompressedFabric"
 + "Deferred Matter commissioning attempt failed; replaying present commissionable nodes to retry"
@@ -663,5 +554,4 @@ CStrings:
 - "wifiNetwork_PacketTxUnicastCount"
 - "yyyy-MM-dd' 'HH:mm:ss-ZZZZZ"
 - "\xf0\xd2\xf0\xf0\xf01с"
-
 ```

@@ -2,101 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/NeutrinoCore.framework/NeutrinoCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x310f64` | `0x314798` | **`+0x3834`** |
+| `__AUTH_CONST.__objc_const` | `0x36110` | `0x36938` | **`+0x828`** |
+| `__TEXT.__cstring` | `0x3dae2` | `0x3e181` | **`+0x69f`** |
+| `__AUTH_CONST.__cfstring` | `0x1ca00` | `0x1cf00` | **`+0x500`** |
+| `__TEXT.__objc_methlist` | `0x20474` | `0x2083c` | **`+0x3c8`** |
+| `__TEXT.__oslogstring` | `0x5489` | `0x5741` | **`+0x2b8`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb338` | `0xb488` | **`+0x150`** |
+| `__DATA.__data` | `0x3898` | `0x3958` | **`+0xc0`** |
+| `__AUTH.__objc_data` | `0x50` | `0xf0` | **`+0xa0`** |
+| `__TEXT.__gcc_except_tab` | `0x7f8c` | `0x8004` | **`+0x78`** |
+| `__DATA.__objc_ivar` | `0x1970` | `0x19c8` | **`+0x58`** |
+| `__DATA_CONST.__const` | `0x3f78` | `0x3fc0` | **`+0x48`** |
+| `__TEXT.__unwind_info` | `0x84f0` | `0x8538` | **`+0x48`** |
+| `__TEXT.__dlopen_cstrs` | `—` | `0x45` | **`+0x45`** |
+| `__DATA_CONST.__got` | `0x2200` | `0x2220` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x10c8` | `0x10e0` | **`+0x18`** |
+| `__DATA.__bss` | `0x1280` | `0x1290` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x15b8` | `0x15c8` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x4f0` | `0x500` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x1f0` | `0x1f8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.234.0.0
--  __TEXT.__text: 0x310f64
--  __TEXT.__objc_methlist: 0x20474
 +912.0.235.0.0
-+  __TEXT.__text: 0x314798
-+  __TEXT.__objc_methlist: 0x2083c
-   __TEXT.__const: 0x2918
-+  __TEXT.__dlopen_cstrs: 0x45
-   __TEXT.__swift5_typeref: 0x3e7
-   __TEXT.__swift5_reflstr: 0x93
-   __TEXT.__swift5_assocty: 0xa8
 
-   __TEXT.__swift5_fieldmd: 0x178
-   __TEXT.__swift5_proto: 0x7c
-   __TEXT.__swift5_types: 0x2c
--  __TEXT.__cstring: 0x3dae2
-+  __TEXT.__cstring: 0x3e181
-   __TEXT.__swift5_capture: 0x210
--  __TEXT.__gcc_except_tab: 0x7f8c
--  __TEXT.__oslogstring: 0x5489
-+  __TEXT.__gcc_except_tab: 0x8004
-+  __TEXT.__oslogstring: 0x5741
-   __TEXT.__ustring: 0x2e
--  __TEXT.__unwind_info: 0x84f0
-+  __TEXT.__unwind_info: 0x8538
-   __TEXT.__eh_frame: 0x448
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3f78
--  __DATA_CONST.__objc_classlist: 0x15b8
-+  __DATA_CONST.__const: 0x3fc0
-+  __DATA_CONST.__objc_classlist: 0x15c8
-   __DATA_CONST.__objc_catlist: 0xa8
--  __DATA_CONST.__objc_protolist: 0x4f0
-+  __DATA_CONST.__objc_protolist: 0x500
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb338
-+  __DATA_CONST.__objc_selrefs: 0xb488
-   __DATA_CONST.__objc_protorefs: 0x98
-   __DATA_CONST.__objc_superrefs: 0xfe8
-   __DATA_CONST.__objc_arraydata: 0xae0
--  __DATA_CONST.__got: 0x2200
-+  __DATA_CONST.__got: 0x2220
-   __AUTH_CONST.__const: 0x4e80
--  __AUTH_CONST.__cfstring: 0x1ca00
--  __AUTH_CONST.__objc_const: 0x36110
-+  __AUTH_CONST.__cfstring: 0x1cf00
-+  __AUTH_CONST.__objc_const: 0x36938
-   __AUTH_CONST.__weak_auth_got: 0x18
-   __AUTH_CONST.__objc_intobj: 0x8d0
-   __AUTH_CONST.__objc_dictobj: 0x348
-   __AUTH_CONST.__objc_doubleobj: 0x210
-   __AUTH_CONST.__objc_floatobj: 0x70
-   __AUTH_CONST.__objc_arrayobj: 0xf0
--  __AUTH_CONST.__auth_got: 0x10c8
--  __AUTH.__objc_data: 0x50
--  __DATA.__objc_ivar: 0x1970
--  __DATA.__data: 0x3898
-+  __AUTH_CONST.__auth_got: 0x10e0
-+  __AUTH.__objc_data: 0xf0
-+  __DATA.__objc_ivar: 0x19c8
-+  __DATA.__data: 0x3958
-   __DATA.__crash_info: 0x148
-   __DATA_DIRTY.__objc_data: 0xd8e0
-   __DATA_DIRTY.__data: 0x8
--  __DATA_DIRTY.__bss: 0x1f0
-+  __DATA_DIRTY.__bss: 0x1f8
-   __DATA_DIRTY.__common: 0x40
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-
-   - /System/Library/PrivateFrameworks/CMPhoto.framework/CMPhoto
-   - /System/Library/PrivateFrameworks/PhotoFoundation.framework/PhotoFoundation
-   - /System/Library/PrivateFrameworks/PhotosFormats.framework/PhotosFormats
 +  - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 11708
--  Symbols:   25161
+-  Symbols:   20451
 -  CStrings:  7174
 +  Functions: 11773
-+  Symbols:   25331
++  Symbols:   20580
 +  CStrings:  7240
- 
 Symbols:
 + +[NUVideoUtilities metadataTrackContainsTextureStyleData:]
 + +[_NUTextureStylePersonInstanceProperties personInstancePropertiesFromDictionary:error:]
@@ -630,47 +575,6 @@ Symbols:
 + _kCMPhotoCustomMetadataTypeURN_Provenance_ProcessedImage
 + _kCMPhotoCustomMetadataTypeURN_Provenance_UnprocessedImage
 + _kMetadataIdentifier_TextureStyleInfo
-+ _objc_msgSend$_loadPersonInstanceMaskMetadata
-+ _objc_msgSend$_loadTextureStylesProperties:error:
-+ _objc_msgSend$captureMode
-+ _objc_msgSend$captureType
-+ _objc_msgSend$embedProvenanceData
-+ _objc_msgSend$filmGrainSeed
-+ _objc_msgSend$hardwareModel
-+ _objc_msgSend$hasProvenanceData
-+ _objc_msgSend$instanceMaskReferenceKey
-+ _objc_msgSend$linearHighKey
-+ _objc_msgSend$maskSize
-+ _objc_msgSend$metadataTrackContainsTextureStyleData:
-+ _objc_msgSend$numberOfPersons
-+ _objc_msgSend$opaquePersonInfo
-+ _objc_msgSend$personInstancePropertiesFromDictionary:error:
-+ _objc_msgSend$personInstances
-+ _objc_msgSend$portType
-+ _objc_msgSend$revertUsingOriginal
-+ _objc_msgSend$setCaptureMode:
-+ _objc_msgSend$setCaptureType:
-+ _objc_msgSend$setFilmGrainSeed:
-+ _objc_msgSend$setHardwareModel:
-+ _objc_msgSend$setHasProvenanceData:
-+ _objc_msgSend$setInstanceMaskReferenceKey:
-+ _objc_msgSend$setLinearHighKey:
-+ _objc_msgSend$setMaskSize:
-+ _objc_msgSend$setNumberOfPersons:
-+ _objc_msgSend$setOpaquePersonInfo:
-+ _objc_msgSend$setPersonInstances:
-+ _objc_msgSend$setPortType:
-+ _objc_msgSend$setRevertUsingOriginal:
-+ _objc_msgSend$setTextureStyleProperties:
-+ _objc_msgSend$setTextureStylesProperties:
-+ _objc_msgSend$setVideoFacesInfoData:
-+ _objc_msgSend$setVideoOpaquePersonsInfo:
-+ _objc_msgSend$textureStyleProperties
-+ _objc_msgSend$textureStylePropertiesFromImageMetadata:auxImageMetadata:error:
-+ _objc_msgSend$textureStylesProperties
-+ _objc_msgSend$unsignedShortValue
-+ _objc_msgSend$videoFacesInfoData
-+ _objc_msgSend$videoOpaquePersonsInfo
 - GCC_except_table10176
 - GCC_except_table10177
 - GCC_except_table10183

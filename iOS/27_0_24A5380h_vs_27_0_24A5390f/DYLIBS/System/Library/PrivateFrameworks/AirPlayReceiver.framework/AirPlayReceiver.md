@@ -2,85 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/AirPlayReceiver.framework/AirPlayReceiver`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH.__objc_data`
-- `__DATA_DIRTY.__objc_data`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17d6b4` | `0x17bd68` | **`-0x194c`** |
+| `__TEXT.__cstring` | `0x33c71` | `0x3304b` | **`-0xc26`** |
+| `__AUTH_CONST.__cfstring` | `0xbbe0` | `0xba40` | **`-0x1a0`** |
+| `__DATA_CONST.__const` | `0x20b0` | `0x2020` | **`-0x90`** |
+| `__DATA.__data` | `0x17d20` | `0x17cb0` | **`-0x70`** |
+| `__AUTH_CONST.__const` | `0x9460` | `0x9400` | **`-0x60`** |
+| `__AUTH_CONST.__auth_got` | `0x1e58` | `0x1e30` | **`-0x28`** |
+| `__AUTH_CONST.__objc_intobj` | `—` | `0x18` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x16a0` | `0x1688` | **`-0x18`** |
+| `__DATA.__bss` | `0x5f8` | `0x5e8` | **`-0x10`** |
+| `__TEXT.__gcc_except_tab` | `0x848` | `0x838` | **`-0x10`** |
+| `__DATA_CONST.__got` | `0x980` | `0x988` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -980.67.2.0.0
--  __TEXT.__text: 0x17d6b4
 +980.71.1.0.0
-+  __TEXT.__text: 0x17bd68
-   __TEXT.__objc_methlist: 0xaec
-   __TEXT.__const: 0x275a9
-   __TEXT.__dlopen_cstrs: 0xad
--  __TEXT.__gcc_except_tab: 0x848
--  __TEXT.__cstring: 0x33c71
-+  __TEXT.__gcc_except_tab: 0x838
-+  __TEXT.__cstring: 0x3304b
-   __TEXT.__oslogstring: 0x2eb
--  __TEXT.__unwind_info: 0x16a0
-+  __TEXT.__unwind_info: 0x1688
-   __TEXT.__eh_frame: 0x128
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x20b0
-+  __DATA_CONST.__const: 0x2020
-   __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
 
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x48
-   __DATA_CONST.__objc_arraydata: 0x10
--  __DATA_CONST.__got: 0x980
--  __AUTH_CONST.__const: 0x9460
--  __AUTH_CONST.__cfstring: 0xbbe0
-+  __DATA_CONST.__got: 0x988
-+  __AUTH_CONST.__const: 0x9400
-+  __AUTH_CONST.__cfstring: 0xba40
-   __AUTH_CONST.__objc_const: 0x1550
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x1e58
-+  __AUTH_CONST.__objc_intobj: 0x18
-+  __AUTH_CONST.__auth_got: 0x1e30
-   __AUTH.__objc_data: 0x280
-   __DATA.__objc_ivar: 0x174
--  __DATA.__data: 0x17d20
--  __DATA.__bss: 0x5f8
-+  __DATA.__data: 0x17cb0
-+  __DATA.__bss: 0x5e8
-   __DATA.__common: 0xa80
-   __DATA_DIRTY.__objc_data: 0xf0
-   __DATA_DIRTY.__data: 0x310
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1708
--  Symbols:   3924
+-  Symbols:   3590
 -  CStrings:  5250
 +  Functions: 1701
-+  Symbols:   3910
++  Symbols:   3576
 +  CStrings:  5189
- 
 Symbols:
 + GCC_except_table100
 + GCC_except_table104

@@ -2,113 +2,61 @@
 
 > `/System/Library/PrivateFrameworks/CipherML.framework/CipherML`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1dd764` | `0x206258` | **`+0x28af4`** |
+| `__DATA.__bss` | `0x141f8` | `0x15300` | **`+0x1108`** |
+| `__TEXT.__eh_frame` | `0x13574` | `0x145fc` | **`+0x1088`** |
+| `__TEXT.__const` | `0x121c0` | `0x130a0` | **`+0xee0`** |
+| `__TEXT.__swift5_typeref` | `0x34b4` | `0x3b3c` | **`+0x688`** |
+| `__TEXT.__oslogstring` | `0x31db` | `0x370b` | **`+0x530`** |
+| `__TEXT.__unwind_info` | `0x7d98` | `0x8268` | **`+0x4d0`** |
+| `__AUTH_CONST.__const` | `0x64b0` | `0x6900` | **`+0x450`** |
+| `__DATA.__data` | `0x25d8` | `0x29a8` | **`+0x3d0`** |
+| `__AUTH_CONST.__objc_const` | `0x3c08` | `0x3f50` | **`+0x348`** |
+| `__AUTH.__data` | `0x1380` | `0x15e0` | **`+0x260`** |
+| `__TEXT.__constg_swiftt` | `0x340c` | `0x366c` | **`+0x260`** |
+| `__TEXT.__swift5_reflstr` | `0x2baf` | `0x2da4` | **`+0x1f5`** |
+| `__TEXT.__swift5_fieldmd` | `0x368c` | `0x3860` | **`+0x1d4`** |
+| `__TEXT.__cstring` | `0x3798` | `0x38d6` | **`+0x13e`** |
+| `__TEXT.__swift5_assocty` | `0x408` | `0x510` | **`+0x108`** |
+| `__TEXT.__swift_as_cont` | `0xcc8` | `0xdb4` | **`+0xec`** |
+| `__DATA_CONST.__const` | `0x1000` | `0x10d8` | **`+0xd8`** |
+| `__AUTH_CONST.__auth_got` | `0x1970` | `0x1a38` | **`+0xc8`** |
+| `__AUTH.__objc_data` | `0x48` | `0xe8` | **`+0xa0`** |
+| `__DATA_CONST.__got` | `0x8e8` | `0x988` | **`+0xa0`** |
+| `__TEXT.__swift5_capture` | `0x10a0` | `0x1134` | **`+0x94`** |
+| `__TEXT.__swift5_proto` | `0xd20` | `0xda8` | **`+0x88`** |
+| `__DATA_CONST.__objc_selrefs` | `0xc88` | `0xcc8` | **`+0x40`** |
+| `__DATA_DIRTY.__data` | `0x6320` | `0x6360` | **`+0x40`** |
+| `__TEXT.__swift5_builtin` | `0xb4` | `0xf0` | **`+0x3c`** |
+| `__TEXT.__swift5_types` | `0x3dc` | `0x40c` | **`+0x30`** |
+| `__TEXT.__swift_as_ret` | `0x4f4` | `0x51c` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0xb00` | `0xb20` | **`+0x20`** |
+| `__DATA.__common` | `0x30` | `0x50` | **`+0x20`** |
+| `__TEXT.__swift_as_entry` | `0x46c` | `0x48c` | **`+0x20`** |
+| `__DATA_CONST.__objc_classlist` | `0x190` | `0x1a8` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x14ec` | `0x1504` | **`+0x18`** |
+| `__DATA_DIRTY.__objc_data` | `0xb98` | `0xba0` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0xd8` | `0xdc` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -383.0.24.0.0
--  __TEXT.__text: 0x1ca8c8
--  __TEXT.__objc_methlist: 0x14ec
--  __TEXT.__const: 0x121c0
--  __TEXT.__cstring: 0x3798
--  __TEXT.__oslogstring: 0x31db
 +383.40.11.0.0
-+  __TEXT.__text: 0x1f2458
-+  __TEXT.__objc_methlist: 0x1504
-+  __TEXT.__const: 0x130a0
-+  __TEXT.__cstring: 0x38d6
-+  __TEXT.__oslogstring: 0x370b
-   __TEXT.__gcc_except_tab: 0x59c
-   __TEXT.__dlopen_cstrs: 0x64
--  __TEXT.__swift5_typeref: 0x34b4
--  __TEXT.__constg_swiftt: 0x340c
--  __TEXT.__swift5_reflstr: 0x2baf
--  __TEXT.__swift5_fieldmd: 0x368c
--  __TEXT.__swift5_builtin: 0xb4
--  __TEXT.__swift5_assocty: 0x408
--  __TEXT.__swift5_proto: 0xd20
--  __TEXT.__swift5_types: 0x3dc
--  __TEXT.__swift5_capture: 0x10a0
--  __TEXT.__swift_as_entry: 0x46c
--  __TEXT.__swift_as_ret: 0x4f4
--  __TEXT.__swift_as_cont: 0xcc8
-+  __TEXT.__swift5_typeref: 0x3b3c
-+  __TEXT.__constg_swiftt: 0x366c
-+  __TEXT.__swift5_reflstr: 0x2da4
-+  __TEXT.__swift5_fieldmd: 0x3860
-+  __TEXT.__swift5_builtin: 0xf0
-+  __TEXT.__swift5_assocty: 0x510
-+  __TEXT.__swift5_proto: 0xda8
-+  __TEXT.__swift5_types: 0x40c
-+  __TEXT.__swift5_capture: 0x1134
-+  __TEXT.__swift_as_entry: 0x48c
-+  __TEXT.__swift_as_ret: 0x51c
-+  __TEXT.__swift_as_cont: 0xdb4
-   __TEXT.__swift5_mpenum: 0x50
-   __TEXT.__swift5_protos: 0x28
--  __TEXT.__unwind_info: 0x97b8
--  __TEXT.__eh_frame: 0x1357c
-+  __TEXT.__unwind_info: 0xa280
-+  __TEXT.__eh_frame: 0x14604
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1000
--  __DATA_CONST.__objc_classlist: 0x190
-+  __DATA_CONST.__const: 0x10d8
-+  __DATA_CONST.__objc_classlist: 0x1a8
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xc88
-+  __DATA_CONST.__objc_selrefs: 0xcc8
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__objc_superrefs: 0x68
--  __DATA_CONST.__got: 0x8e8
--  __AUTH_CONST.__const: 0x64b0
--  __AUTH_CONST.__cfstring: 0xb00
--  __AUTH_CONST.__objc_const: 0x3c08
--  __AUTH_CONST.__auth_got: 0x1970
--  __AUTH.__objc_data: 0x48
--  __AUTH.__data: 0x1380
--  __DATA.__objc_ivar: 0xd8
--  __DATA.__data: 0x25d8
--  __DATA.__common: 0x30
--  __DATA_DIRTY.__objc_data: 0xb98
--  __DATA_DIRTY.__data: 0x6320
-+  __DATA_CONST.__got: 0x988
-+  __AUTH_CONST.__const: 0x6900
-+  __AUTH_CONST.__cfstring: 0xb20
-+  __AUTH_CONST.__objc_const: 0x3f50
-+  __AUTH_CONST.__auth_got: 0x1a38
-+  __AUTH.__objc_data: 0xe8
-+  __AUTH.__data: 0x15e0
-+  __DATA.__objc_ivar: 0xdc
-+  __DATA.__data: 0x29a8
-+  __DATA.__common: 0x50
-+  __DATA_DIRTY.__objc_data: 0xba0
-+  __DATA_DIRTY.__data: 0x6360
-   __DATA_DIRTY.__bss: 0x5c08
-   __DATA_DIRTY.__common: 0x1d8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /System/Library/PrivateFrameworks/GRPCCoreInternal.framework/GRPCCoreInternal
-   - /System/Library/PrivateFrameworks/GRPCProtobufInternal.framework/GRPCProtobufInternal
-   - /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf
 +  - /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
-   - /System/Library/PrivateFrameworks/PegasusAPI.framework/PegasusAPI
-   - /System/Library/PrivateFrameworks/PegasusKit.framework/PegasusKit
-   - /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 9968
--  Symbols:   21173
+-  Symbols:   20878
 -  CStrings:  573
 +  Functions: 10426
-+  Symbols:   22181
++  Symbols:   21878
 +  CStrings:  600
- 
 Symbols:
 + -[CMLUseCaseGroup preparedKeyReserveEnabled]
 + -[CMLUseCaseGroup setPreparedKeyReserveEnabled:]
@@ -1142,14 +1090,6 @@ Symbols:
 + _associated conformance So20NSFileProtectionTypeaSHSCSQ
 + _associated conformance So20NSFileProtectionTypeas20_SwiftNewtypeWrapperSCSY
 + _associated conformance So20NSFileProtectionTypeas20_SwiftNewtypeWrapperSCs35_HasCustomAnyHashableRepresentation
-+ _objc_msgSend$_setPrivacyProxyStrictFailClosed:
-+ _objc_msgSend$containsValueForKey:
-+ _objc_msgSend$createFileAtPath:contents:attributes:
-+ _objc_msgSend$fileExistsAtPath:
-+ _objc_msgSend$preparedKeyReserveEnabled
-+ _objc_msgSend$setAttributes:ofItemAtPath:error:
-+ _objc_msgSend$setPreparedKeyReserveEnabled:
-+ _objc_msgSend$setRequiresProtectionClass:
 + _swift_retain_x1
 + _symbolic $ss21_ObjectiveCBridgeableP
 + _symbolic SbyYbc

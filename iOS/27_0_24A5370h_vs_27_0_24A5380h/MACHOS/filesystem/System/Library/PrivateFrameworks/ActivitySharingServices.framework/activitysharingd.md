@@ -2,6 +2,7 @@
 
 > `/System/Library/PrivateFrameworks/ActivitySharingServices.framework/activitysharingd`
 
-Sections:
-~ __TEXT.__eh_frame : content changed
-~ __DATA.__objc_selrefs : content changed
+### Same-size Content Changes
+
+- `__DATA.__objc_selrefs`
+- `__TEXT.__eh_frame`

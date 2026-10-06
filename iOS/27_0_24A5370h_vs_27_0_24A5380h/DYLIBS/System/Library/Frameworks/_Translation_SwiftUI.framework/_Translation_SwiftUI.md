@@ -2,65 +2,36 @@
 
 > `/System/Library/Frameworks/_Translation_SwiftUI.framework/_Translation_SwiftUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9054` | `0x9238` | **`+0x1e4`** |
+| `__TEXT.__eh_frame` | `0x1dc` | `0x234` | **`+0x58`** |
+| `__TEXT.__const` | `0x6b8` | `0x6c8` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x2f8` | `0x308` | **`+0x10`** |
+| `__TEXT.__swift_as_cont` | `0x10` | `0x8` | **`-0x8`** |
+| `__TEXT.__swift_as_entry` | `0x4` | `0x8` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x4` | `0x8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x9054
-+  __TEXT.__text: 0x9238
-   __TEXT.__objc_methlist: 0x14c
--  __TEXT.__const: 0x6b8
-+  __TEXT.__const: 0x6c8
-   __TEXT.__constg_swiftt: 0x534
-   __TEXT.__swift5_typeref: 0x629
-   __TEXT.__swift5_reflstr: 0x1fa
+-384.1.0.0.0
++384.3.0.0.0
 
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift5_capture: 0xcc
-   __TEXT.__oslogstring: 0x3e8
--  __TEXT.__swift_as_entry: 0x4
--  __TEXT.__swift_as_ret: 0x4
--  __TEXT.__swift_as_cont: 0x10
--  __TEXT.__unwind_info: 0x2f8
--  __TEXT.__eh_frame: 0x1dc
-+  __TEXT.__swift_as_entry: 0x8
-+  __TEXT.__swift_as_ret: 0x8
-+  __TEXT.__swift_as_cont: 0x8
-+  __TEXT.__unwind_info: 0x308
-+  __TEXT.__eh_frame: 0x234
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 220
--  Symbols:   355
-+  Symbols:   353
-   CStrings:  31
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
+-  Symbols:   304
++  Symbols:   303
 Symbols:
 - __swift_implicitisolationactor_to_executor_cast
 Functions:
-~ sub_248aa3988 -> sub_24d1e7988 : 528 -> 524
-~ sub_248aa3b98 -> sub_24d1e7b94 : 2464 -> 2576
-~ sub_248aa4538 -> sub_24d1e85a4 : 256 -> 444
-~ sub_248aa4638 -> sub_24d1e8760 : 264 -> 292
-~ sub_248aa4740 -> sub_24d1e8884 : 132 -> 292
-~ sub_248aa47c4 -> sub_24d1e89a8 : 240 -> 100
-~ sub_248aa72d4 -> sub_24d1eb42c : 8 -> 204
-~ __swift_implicitisolationactor_to_executor_cast -> sub_24d1eb4f8 : 64 -> 8
-
+~ sub_248969988 -> sub_24d0ad988 : 528 -> 524
+~ sub_248969b98 -> sub_24d0adb94 : 2464 -> 2576
+~ sub_24896a538 -> sub_24d0ae5a4 : 256 -> 444
+~ sub_24896a638 -> sub_24d0ae760 : 264 -> 292
+~ sub_24896a740 -> sub_24d0ae884 : 132 -> 292
+~ sub_24896a7c4 -> sub_24d0ae9a8 : 240 -> 100
+~ sub_24896d2d4 -> sub_24d0b142c : 8 -> 204
+~ __swift_implicitisolationactor_to_executor_cast -> sub_24d0b14f8 : 64 -> 8
 ```

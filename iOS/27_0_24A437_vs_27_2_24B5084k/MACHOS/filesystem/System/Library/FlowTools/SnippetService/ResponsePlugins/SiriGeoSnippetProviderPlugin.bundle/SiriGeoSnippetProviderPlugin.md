@@ -2,105 +2,64 @@
 
 > `/System/Library/FlowTools/SnippetService/ResponsePlugins/SiriGeoSnippetProviderPlugin.bundle/SiriGeoSnippetProviderPlugin`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x51c6c` | `0x55854` | **`+0x3be8`** |
+| `__DATA.__bss` | `0x3f00` | `0x4100` | **`+0x200`** |
+| `__TEXT.__const` | `0x2ee8` | `0x3088` | **`+0x1a0`** |
+| `__TEXT.__auth_stubs` | `0x1c10` | `0x1da0` | **`+0x190`** |
+| `__DATA_CONST.__const` | `0x1f90` | `0x20e0` | **`+0x150`** |
+| `__TEXT.__oslogstring` | `0x149c` | `0x15b0` | **`+0x114`** |
+| `__DATA_CONST.__auth_got` | `0xe10` | `0xed8` | **`+0xc8`** |
+| `__TEXT.__swift5_reflstr` | `0xa6f` | `0xaff` | **`+0x90`** |
+| `__TEXT.__swift5_fieldmd` | `0xbf4` | `0xc7c` | **`+0x88`** |
+| `__TEXT.__objc_stubs` | `0x1060` | `0x10e0` | **`+0x80`** |
+| `__DATA.__common` | `0x158` | `0xe0` | **`-0x78`** |
+| `__TEXT.__constg_swiftt` | `0x810` | `0x87c` | **`+0x6c`** |
+| `__TEXT.__objc_methname` | `0x996` | `0x9fc` | **`+0x66`** |
+| `__TEXT.__cstring` | `0xab8` | `0xb18` | **`+0x60`** |
+| `__DATA_CONST.__got` | `0x688` | `0x6e0` | **`+0x58`** |
+| `__TEXT.__swift5_typeref` | `0xd86` | `0xdca` | **`+0x44`** |
+| `__DATA_CONST.__auth_ptr` | `0x5e8` | `0x628` | **`+0x40`** |
+| `__TEXT.__swift5_builtin` | `0x28` | `0x64` | **`+0x3c`** |
+| `__TEXT.__unwind_info` | `0xc88` | `0xc58` | **`-0x30`** |
+| `__DATA.__data` | `0xff8` | `0x1020` | **`+0x28`** |
+| `__DATA.__objc_selrefs` | `0x418` | `0x438` | **`+0x20`** |
+| `__TEXT.__swift5_assocty` | `0x138` | `0x150` | **`+0x18`** |
+| `__DATA_CONST.__objc_classrefs` | `—` | `0x10` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x22c` | `0x23c` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0xd4` | `0xe0` | **`+0xc`** |
+
+### Same-size Content Changes
+
 - `__DATA.__objc_const`
 - `__DATA.__objc_data`
+- `__DATA_CONST.__objc_classlist`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -3600.36.19.0.0
--  __TEXT.__text: 0x4f918
--  __TEXT.__auth_stubs: 0x1c10
--  __TEXT.__objc_stubs: 0x1060
--  __TEXT.__const: 0x2ee8
--  __TEXT.__swift5_typeref: 0xd86
--  __TEXT.__oslogstring: 0x149c
--  __TEXT.__cstring: 0xab8
--  __TEXT.__constg_swiftt: 0x810
 +3605.11.2.0.0
-+  __TEXT.__text: 0x53240
-+  __TEXT.__auth_stubs: 0x1da0
-+  __TEXT.__objc_stubs: 0x10e0
-+  __TEXT.__const: 0x3088
-+  __TEXT.__swift5_typeref: 0xdca
-+  __TEXT.__oslogstring: 0x15b0
-+  __TEXT.__cstring: 0xb18
-+  __TEXT.__constg_swiftt: 0x87c
-   __TEXT.__objc_classname: 0x2d1
--  __TEXT.__swift5_fieldmd: 0xbf4
--  __TEXT.__swift5_types: 0xd4
-+  __TEXT.__swift5_fieldmd: 0xc7c
-+  __TEXT.__swift5_builtin: 0x64
-+  __TEXT.__swift5_reflstr: 0xaff
-+  __TEXT.__swift5_assocty: 0x150
-+  __TEXT.__swift5_proto: 0x23c
-+  __TEXT.__swift5_types: 0xe0
-   __TEXT.__swift_as_entry: 0x84
-   __TEXT.__swift_as_ret: 0x68
-   __TEXT.__swift_as_cont: 0x80
--  __TEXT.__swift5_reflstr: 0xa6f
--  __TEXT.__swift5_proto: 0x22c
--  __TEXT.__swift5_assocty: 0x138
--  __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_mpenum: 0x1c
--  __TEXT.__objc_methname: 0x996
-+  __TEXT.__objc_methname: 0x9fc
-   __TEXT.__objc_methtype: 0x30
-   __TEXT.__swift5_capture: 0x40
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__unwind_info: 0x10e8
-+  __TEXT.__unwind_info: 0x1110
-   __TEXT.__eh_frame: 0xaf8
--  __DATA_CONST.__const: 0x1f90
-+  __DATA_CONST.__const: 0x20e0
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0xe10
--  __DATA_CONST.__got: 0x688
--  __DATA_CONST.__auth_ptr: 0x5e8
-+  __DATA_CONST.__objc_classrefs: 0x10
-+  __DATA_CONST.__auth_got: 0xed8
-+  __DATA_CONST.__got: 0x6e0
-+  __DATA_CONST.__auth_ptr: 0x628
-   __DATA.__objc_const: 0x590
--  __DATA.__objc_selrefs: 0x418
-+  __DATA.__objc_selrefs: 0x438
-   __DATA.__objc_data: 0x1f8
--  __DATA.__data: 0xff8
--  __DATA.__common: 0x158
-+  __DATA.__data: 0x1020
-+  __DATA.__common: 0xe0
-   - /System/Library/Frameworks/CoreLocation.framework/CoreLocation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/GeoToolbox.framework/GeoToolbox
 
-   - /System/Library/Frameworks/_GeoToolbox_AppIntents.framework/_GeoToolbox_AppIntents
-   - /System/Library/Frameworks/_LocationEssentials.framework/_LocationEssentials
-   - /System/Library/PrivateFrameworks/AppIntentsServices.framework/AppIntentsServices
 +  - /System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices
-   - /System/Library/PrivateFrameworks/DialogEngine.framework/DialogEngine
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/FlowToolsSnippetService.framework/FlowToolsSnippetService
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1361
 -  Symbols:   4360
 -  CStrings:  309
 +  Functions: 1378
 +  Symbols:   4475
 +  CStrings:  319
- 
 Symbols:
 + $s28SiriGeoSnippetProviderPlugin15PlaceAttributesV16directionsOriginSo22CLLocationCoordinate2DVSgvM.resume
 + $s28SiriGeoSnippetProviderPlugin15PlaceAttributesV16hoursDescriptionSSSgvM.resume

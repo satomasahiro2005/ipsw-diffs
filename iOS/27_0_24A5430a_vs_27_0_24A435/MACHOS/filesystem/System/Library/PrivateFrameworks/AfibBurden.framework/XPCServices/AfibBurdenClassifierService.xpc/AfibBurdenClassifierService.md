@@ -2,21 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/AfibBurden.framework/XPCServices/AfibBurdenClassifierService.xpc/AfibBurdenClassifierService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__unwind_info`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1272c` | `0x1273c` | **`+0x10`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__const`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
 
-```diff
+### Other Changes
 
- 20.0.0.0.0
--  __TEXT.__text: 0x1272c
-+  __TEXT.__text: 0x1273c
-   __TEXT.__auth_stubs: 0x7d0
-   __TEXT.__objc_stubs: 0x7e0
-   __TEXT.__objc_methlist: 0x554
+```text
 Functions:
 ~ sub_100008dc8 : 184 -> 188
 ~ sub_10000d84c -> sub_10000d850 : 284 -> 288

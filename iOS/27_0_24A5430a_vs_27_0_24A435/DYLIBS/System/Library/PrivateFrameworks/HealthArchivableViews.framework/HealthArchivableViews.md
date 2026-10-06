@@ -2,110 +2,70 @@
 
 > `/System/Library/PrivateFrameworks/HealthArchivableViews.framework/HealthArchivableViews`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9eb0` | `0x2a408` | **`+0x20558`** |
+| `__TEXT.__const` | `0x454` | `0x1364` | **`+0xf10`** |
+| `__DATA.__bss` | `0x238` | `0xfe8` | **`+0xdb0`** |
+| `__AUTH_CONST.__objc_const` | `0x90` | `0xb88` | **`+0xaf8`** |
+| `__AUTH_CONST.__const` | `0x2f8` | `0xc58` | **`+0x960`** |
+| `__DATA.__data` | `0x460` | `0xd58` | **`+0x8f8`** |
+| `__AUTH_CONST.__auth_got` | `0x5a0` | `0xe88` | **`+0x8e8`** |
+| `__TEXT.__unwind_info` | `0x280` | `0xae8` | **`+0x868`** |
+| `__TEXT.__eh_frame` | `—` | `0x81c` | **`+0x81c`** |
+| `__DATA_CONST.__got` | `0x0` | `0x810` | **`+0x810`** |
+| `__TEXT.__cstring` | `0x1f4` | `0x906` | **`+0x712`** |
+| `__TEXT.__oslogstring` | `—` | `0x6f3` | **`+0x6f3`** |
+| `__TEXT.__swift5_typeref` | `0x2e0` | `0x85e` | **`+0x57e`** |
+| `__TEXT.__objc_methlist` | `—` | `0x4dc` | **`+0x4dc`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8` | `0x438` | **`+0x430`** |
+| `__TEXT.__constg_swiftt` | `0x204` | `0x5b0` | **`+0x3ac`** |
+| `__AUTH.__objc_data` | `—` | `0x378` | **`+0x378`** |
+| `__TEXT.__swift5_reflstr` | `0xab` | `0x3f3` | **`+0x348`** |
+| `__AUTH_CONST.__cfstring` | `—` | `0x300` | **`+0x300`** |
+| `__TEXT.__swift5_fieldmd` | `0x11c` | `0x3d0` | **`+0x2b4`** |
+| `__AUTH.__data` | `0x228` | `0x438` | **`+0x210`** |
+| `__TEXT.__swift5_capture` | `0x74` | `0x20c` | **`+0x198`** |
+| `__DATA_CONST.__const` | `0xa0` | `0x1f0` | **`+0x150`** |
+| `__TEXT.__swift5_assocty` | `0x60` | `0x108` | **`+0xa8`** |
+| `__TEXT.__gcc_except_tab` | `—` | `0x7c` | **`+0x7c`** |
+| `__TEXT.__swift5_proto` | `0x10` | `0x7c` | **`+0x6c`** |
+| `__DATA.__objc_ivar` | `—` | `0x60` | **`+0x60`** |
+| `__DATA_CONST.__objc_classlist` | `0x8` | `0x40` | **`+0x38`** |
+| `__TEXT.__swift5_types` | `0x20` | `0x54` | **`+0x34`** |
+| `__DATA_CONST.__objc_protolist` | `—` | `0x28` | **`+0x28`** |
+| `__TEXT.__swift5_builtin` | `—` | `0x28` | **`+0x28`** |
+| `__TEXT.__swift_as_cont` | `—` | `0x24` | **`+0x24`** |
+| `__DATA_CONST.__objc_superrefs` | `—` | `0x20` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `—` | `0x18` | **`+0x18`** |
+| `__TEXT.__swift_as_entry` | `—` | `0x18` | **`+0x18`** |
+| `__TEXT.__swift_as_ret` | `—` | `0x14` | **`+0x14`** |
+| `__DATA_CONST.__objc_protorefs` | `—` | `0x10` | **`+0x10`** |
+| `__DATA.__common` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `—` | `0x8` | **`+0x8`** |
+| `__TEXT.__objc_methtype` | `—` | `0x0` | **`+0x0`** |
+
+### Other Changes
+
 ```diff
 
- 7027.0.72.2.7
--  __TEXT.__text: 0x9eb0
--  __TEXT.__swift5_typeref: 0x2e0
--  __TEXT.__swift5_capture: 0x74
--  __TEXT.__swift5_reflstr: 0xab
--  __TEXT.__swift5_assocty: 0x60
--  __TEXT.__const: 0x454
--  __TEXT.__constg_swiftt: 0x204
--  __TEXT.__swift5_fieldmd: 0x11c
--  __TEXT.__cstring: 0x1f4
--  __TEXT.__swift5_proto: 0x10
--  __TEXT.__swift5_types: 0x20
--  __TEXT.__unwind_info: 0x280
-+  __TEXT.__text: 0x2a408
-+  __TEXT.__objc_methlist: 0x4dc
-+  __TEXT.__const: 0x1364
-+  __TEXT.__gcc_except_tab: 0x7c
-+  __TEXT.__cstring: 0x906
-+  __TEXT.__oslogstring: 0x6f3
-+  __TEXT.__swift5_typeref: 0x85e
-+  __TEXT.__swift5_capture: 0x20c
-+  __TEXT.__constg_swiftt: 0x5b0
-+  __TEXT.__swift5_reflstr: 0x3f3
-+  __TEXT.__swift5_assocty: 0x108
-+  __TEXT.__swift5_fieldmd: 0x3d0
-+  __TEXT.__swift5_builtin: 0x28
-+  __TEXT.__swift5_proto: 0x7c
-+  __TEXT.__swift5_types: 0x54
-+  __TEXT.__swift_as_entry: 0x18
-+  __TEXT.__swift_as_cont: 0x24
-+  __TEXT.__swift_as_ret: 0x14
-+  __TEXT.__swift5_protos: 0x8
-+  __TEXT.__unwind_info: 0xae8
-+  __TEXT.__eh_frame: 0x81c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0xa0
--  __DATA_CONST.__objc_classlist: 0x8
-+  __TEXT.__objc_methtype: 0x0
-+  __DATA_CONST.__const: 0x1f0
-+  __DATA_CONST.__objc_classlist: 0x40
-+  __DATA_CONST.__objc_protolist: 0x28
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8
--  __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x2f8
--  __AUTH_CONST.__objc_const: 0x90
--  __AUTH_CONST.__auth_got: 0x5a0
--  __AUTH.__data: 0x228
--  __DATA.__data: 0x460
-+  __DATA_CONST.__objc_selrefs: 0x438
-+  __DATA_CONST.__objc_protorefs: 0x10
-+  __DATA_CONST.__objc_superrefs: 0x20
-+  __DATA_CONST.__got: 0x810
-+  __AUTH_CONST.__const: 0xc58
-+  __AUTH_CONST.__cfstring: 0x300
-+  __AUTH_CONST.__objc_const: 0xb88
-+  __AUTH_CONST.__objc_intobj: 0x18
-+  __AUTH_CONST.__auth_got: 0xe88
-+  __AUTH.__objc_data: 0x378
-+  __AUTH.__data: 0x438
-+  __DATA.__objc_ivar: 0x60
-+  __DATA.__data: 0xd58
-+  __DATA.__common: 0x8
-   - /System/Library/Frameworks/Charts.framework/Charts
-   - /System/Library/Frameworks/ClockKit.framework/ClockKit
 +  - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 +  - /System/Library/Frameworks/CoreText.framework/CoreText
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/HealthKit.framework/HealthKit
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
 
-   - /System/Library/Frameworks/WidgetKit.framework/WidgetKit
-   - /System/Library/PrivateFrameworks/HealthUtilities.framework/HealthUtilities
-   - /System/Library/PrivateFrameworks/HeartRateCoordinator.framework/HeartRateCoordinator
 +  - /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
 
-   - /usr/lib/swift/libswiftMetal.dylib
-   - /usr/lib/swift/libswiftOSLog.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
 +  - /usr/lib/swift/libswiftObservation.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
-   - /usr/lib/swift/libswiftSpatial.dylib
+
 +  - /usr/lib/swift/libswiftSynchronization.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 223
--  Symbols:   144
+-  Symbols:   143
 -  CStrings:  11
 +  Functions: 916
-+  Symbols:   711
++  Symbols:   611
 +  CStrings:  105
- 
 Symbols:
 + +[HAVFakeHeartRateGenerator sharedGenerator]
 + +[HAVHeartRateDailyRangeTextProvider supportsSecureCoding]
@@ -419,105 +379,6 @@ Symbols:
 + _objc_enumerationMutation
 + _objc_initWeak
 + _objc_loadWeakRetained
-+ _objc_msgSend$_applyHeartRateData:
-+ _objc_msgSend$_attributedStringWithOtherAttributesFromStyle:
-+ _objc_msgSend$_notifyConsumers
-+ _objc_msgSend$_registerConsumerOnMain:
-+ _objc_msgSend$_relativeStaleTimeAttributedStringWithStyle:dateStyle:timestamp:
-+ _objc_msgSend$_scheduleNextStaleUpdate
-+ _objc_msgSend$_sessionAttributedTextForIndex:withStyle:
-+ _objc_msgSend$_startIfNeeded
-+ _objc_msgSend$_startSessionWithDate:
-+ _objc_msgSend$_stopTimer
-+ _objc_msgSend$_switchDataSource:
-+ _objc_msgSend$_tick
-+ _objc_msgSend$_update
-+ _objc_msgSend$activityCacheIndex
-+ _objc_msgSend$addAttribute:value:range:
-+ _objc_msgSend$addCallback:forOwner:
-+ _objc_msgSend$addObject:
-+ _objc_msgSend$allDayStatistics
-+ _objc_msgSend$allObjects
-+ _objc_msgSend$allValues
-+ _objc_msgSend$appendAttributedString:
-+ _objc_msgSend$arrayWithCapacity:
-+ _objc_msgSend$bundleForClass:
-+ _objc_msgSend$cachedHeartRate
-+ _objc_msgSend$confidenceLevel
-+ _objc_msgSend$copy
-+ _objc_msgSend$count
-+ _objc_msgSend$countByEnumeratingWithState:objects:count:
-+ _objc_msgSend$countUnit
-+ _objc_msgSend$currentCalendar
-+ _objc_msgSend$currentDevice
-+ _objc_msgSend$date
-+ _objc_msgSend$dateByAddingTimeInterval:
-+ _objc_msgSend$dateWithTimeIntervalSinceNow:
-+ _objc_msgSend$decodeBoolForKey:
-+ _objc_msgSend$decodeDoubleForKey:
-+ _objc_msgSend$dictionary
-+ _objc_msgSend$dictionaryWithObjects:forKeys:count:
-+ _objc_msgSend$doubleValue
-+ _objc_msgSend$doubleValueForUnit:
-+ _objc_msgSend$drawInRect:
-+ _objc_msgSend$encodeBool:forKey:
-+ _objc_msgSend$encodeDouble:forKey:
-+ _objc_msgSend$executeQuery:
-+ _objc_msgSend$hashTableWithOptions:
-+ _objc_msgSend$heartRate
-+ _objc_msgSend$heartRateCoordinatorDidUpdateHeartRate:
-+ _objc_msgSend$imageNamed:inBundle:compatibleWithTraitCollection:
-+ _objc_msgSend$imageWithActions:
-+ _objc_msgSend$init
-+ _objc_msgSend$initPrivate
-+ _objc_msgSend$initWithDelegate:onQueue:
-+ _objc_msgSend$initWithDouble:
-+ _objc_msgSend$initWithPlaceholder:
-+ _objc_msgSend$initWithQuantityType:quantitySamplePredicate:options:completionHandler:
-+ _objc_msgSend$initWithShowsBPMSuffix:fontWeight:isPlaceholder:
-+ _objc_msgSend$initWithSize:
-+ _objc_msgSend$initWithString:
-+ _objc_msgSend$initWithString:attributes:
-+ _objc_msgSend$initWithSuiteName:
-+ _objc_msgSend$initWithSuiteName:key:defaultValue:onChange:
-+ _objc_msgSend$initWithUpdateHandler:
-+ _objc_msgSend$invalidate
-+ _objc_msgSend$isMainThread
-+ _objc_msgSend$isStale
-+ _objc_msgSend$lastHeartRateTimestamp
-+ _objc_msgSend$length
-+ _objc_msgSend$localizedStringForKey:value:table:
-+ _objc_msgSend$localizedStringWithFormat:
-+ _objc_msgSend$maximumQuantity
-+ _objc_msgSend$metricsWithDevice:identitySizeClass:
-+ _objc_msgSend$minimumQuantity
-+ _objc_msgSend$minuteUnit
-+ _objc_msgSend$numberWithDouble:
-+ _objc_msgSend$opportunisticUpdatesEnabled
-+ _objc_msgSend$predicateForSamplesWithStartDate:endDate:options:
-+ _objc_msgSend$quantityTypeForIdentifier:
-+ _objc_msgSend$recentHistoryForDuration:interval:
-+ _objc_msgSend$registerConsumer:
-+ _objc_msgSend$removeCallbackForOwner:
-+ _objc_msgSend$removeObjectForKey:
-+ _objc_msgSend$reverseObjectEnumerator
-+ _objc_msgSend$scaledValue:
-+ _objc_msgSend$scheduledTimerWithTimeInterval:repeats:block:
-+ _objc_msgSend$setObject:forKeyedSubscript:
-+ _objc_msgSend$setOpportunisticUpdatesEnabled:
-+ _objc_msgSend$sharedCoordinator
-+ _objc_msgSend$sharedGenerator
-+ _objc_msgSend$startOfDayForDate:
-+ _objc_msgSend$stopQuery:
-+ _objc_msgSend$stringValue
-+ _objc_msgSend$stringWithFormat:
-+ _objc_msgSend$systemFontOfSize:weight:
-+ _objc_msgSend$systemRedColor
-+ _objc_msgSend$textProviderWithDate:style:units:
-+ _objc_msgSend$timeIntervalSinceDate:
-+ _objc_msgSend$timestamp
-+ _objc_msgSend$unitDividedByUnit:
-+ _objc_msgSend$valueWithNonretainedObject:
 + _objc_msgSendSuper2
 + _objc_opt_class
 + _objc_release

@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/_MusicKit_SwiftUI.framework/_MusicKit_SwiftUI`
 
-```diff
+### Section Size Changes
 
- 4026.110.3.0.0
--  __TEXT.__text: 0x32308
-+  __TEXT.__text: 0x32310
-   __TEXT.__objc_methlist: 0x62c
-   __TEXT.__const: 0x3524
-   __TEXT.__cstring: 0x1487
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x32308` | `0x32310` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_2162e4808 -> sub_216ac2808 : 1728 -> 1720
 ~ sub_2162e55cc -> sub_216ac35c4 : 2960 -> 2976

@@ -2,81 +2,36 @@
 
 > `/System/Library/AccessibilityBundles/SpringBoard.axbundle/SpringBoard`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_DIRTY.__objc_data` | `0x4c90` | `0x5550` | **`+0x8c0`** |
+| `__AUTH.__objc_data` | `0x1450` | `0xc30` | **`-0x820`** |
+| `__TEXT.__text` | `0x3a0b0` | `0x3a1f0` | **`+0x140`** |
+| `__AUTH_CONST.__objc_const` | `0xb810` | `0xb930` | **`+0x120`** |
+| `__TEXT.__cstring` | `0xa9b4` | `0xaa04` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x4e34` | `0x4e7c` | **`+0x48`** |
+| `__AUTH_CONST.__cfstring` | `0xbee0` | `0xbf20` | **`+0x40`** |
+| `__DATA_DIRTY.__bss` | `0x88` | `0xb8` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0x7d0` | `0x7f0` | **`+0x20`** |
+| `__DATA.__bss` | `0xf8` | `0xe0` | **`-0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x9b0` | `0x9c0` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x1338` | `0x1348` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x3a0b0
--  __TEXT.__objc_methlist: 0x4e34
-+  __TEXT.__text: 0x3a1f0
-+  __TEXT.__objc_methlist: 0x4e7c
-   __TEXT.__dlopen_cstrs: 0x98
-   __TEXT.__const: 0xc8
-   __TEXT.__gcc_except_tab: 0xa34
--  __TEXT.__cstring: 0xa9b4
-+  __TEXT.__cstring: 0xaa04
-   __TEXT.__oslogstring: 0x72a
--  __TEXT.__unwind_info: 0x1338
-+  __TEXT.__unwind_info: 0x1348
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0xe18
--  __DATA_CONST.__objc_classlist: 0x9b0
-+  __DATA_CONST.__objc_classlist: 0x9c0
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x25d8
+-3039.1.0.0.0
++3042.0.0.0.0
 
-   __DATA_CONST.__objc_superrefs: 0x3f8
-   __DATA_CONST.__objc_arraydata: 0x30
-   __DATA_CONST.__got: 0x5e0
--  __AUTH_CONST.__const: 0x7d0
--  __AUTH_CONST.__cfstring: 0xbee0
--  __AUTH_CONST.__objc_const: 0xb810
-+  __AUTH_CONST.__const: 0x7f0
-+  __AUTH_CONST.__cfstring: 0xbf20
-+  __AUTH_CONST.__objc_const: 0xb930
-   __AUTH_CONST.__objc_intobj: 0xf0
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x1450
-+  __AUTH.__objc_data: 0xc30
-   __DATA.__objc_ivar: 0x68
-   __DATA.__data: 0x248
-   __DATA.__common: 0x11
--  __DATA.__bss: 0xf8
--  __DATA_DIRTY.__objc_data: 0x4c90
-+  __DATA.__bss: 0xe0
-+  __DATA_DIRTY.__objc_data: 0x5550
-   __DATA_DIRTY.__data: 0x4
--  __DATA_DIRTY.__bss: 0x88
-+  __DATA_DIRTY.__bss: 0xb8
-   - /System/Library/Frameworks/Accessibility.framework/Accessibility
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1627
--  Symbols:   6436
--  CStrings:  3210
+-  Symbols:   3895
+-  CStrings:  1683
 +  Functions: 1632
-+  Symbols:   6459
-+  CStrings:  3214
- 
-Sections:
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __DATA.__data : content changed
++  Symbols:   3912
++  CStrings:  1685
 Symbols:
 + +[SBChargingAlertElementAccessibility _accessibilityPerformValidations:]
 + +[SBChargingAlertElementAccessibility(SafeCategory) safeCategoryBaseClass]
@@ -128,7 +83,6 @@ Symbols:
 + ___63-[SpringBoardAccessibility _accessibilitySoftwareMimicKeyboard]_block_invoke_2
 + __accessibilitySoftwareMimicKeyboard.numberPadClass
 + __accessibilitySoftwareMimicKeyboard.onceToken
-+ _objc_msgSend$_accessibilityFindDescendant:shouldStopAtLeafNodes:
 - +[SBPowerAlertElementAccessibility _accessibilityPerformValidations:]
 - +[SBPowerAlertElementAccessibility(SafeCategory) safeCategoryBaseClass]
 - +[SBPowerAlertElementAccessibility(SafeCategory) safeCategoryTargetClassName]
@@ -162,7 +116,6 @@ Symbols:
 - __OBJC_CLASS_RO_$___SBPowerAlertElementAccessibility_super
 - __OBJC_METACLASS_RO_$_SBPowerAlertElementAccessibility
 - __OBJC_METACLASS_RO_$___SBPowerAlertElementAccessibility_super
-- _objc_msgSend$_accessibilityIsSoftwareKeyboardMimic
 CStrings:
 + "SBChargingAlertElement"
 + "SBChargingAlertElementAccessibility"
@@ -172,5 +125,4 @@ CStrings:
 - "SBPowerAlertElement"
 - "SBPowerAlertElementAccessibility"
 - "viewController"
-
 ```

@@ -2,76 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/SpotlightDaemon.framework/SpotlightDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc463c` | `0xc5d04` | **`+0x16c8`** |
+| `__TEXT.__cstring` | `0x991b` | `0x9c05` | **`+0x2ea`** |
+| `__AUTH_CONST.__objc_const` | `0x6128` | `0x63a8` | **`+0x280`** |
+| `__AUTH_CONST.__cfstring` | `0x7fa0` | `0x81a0` | **`+0x200`** |
+| `__TEXT.__oslogstring` | `0xd359` | `0xd4c0` | **`+0x167`** |
+| `__TEXT.__gcc_except_tab` | `0x4a1c` | `0x48e4` | **`-0x138`** |
+| `__AUTH.__objc_data` | `0x140` | `0x230` | **`+0xf0`** |
+| `__TEXT.__objc_methlist` | `0x4bd4` | `0x4c6c` | **`+0x98`** |
+| `__TEXT.__unwind_info` | `0x2900` | `0x2988` | **`+0x88`** |
+| `__AUTH_CONST.__const` | `0x1328` | `0x13a8` | **`+0x80`** |
+| `__DATA_CONST.__const` | `0x47b0` | `0x4810` | **`+0x60`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3d18` | `0x3d68` | **`+0x50`** |
+| `__DATA.__bss` | `0x160` | `0x1a8` | **`+0x48`** |
+| `__TEXT.__const` | `0x3e8` | `0x410` | **`+0x28`** |
+| `__DATA.__objc_ivar` | `0x540` | `0x558` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0xbf8` | `0xc10` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x1b0` | `0x1c8` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x1120` | `0x1130` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x138` | `0x148` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -2459.105.0.0.0
--  __TEXT.__text: 0xc21e4
--  __TEXT.__objc_methlist: 0x4bd4
--  __TEXT.__const: 0x3e8
--  __TEXT.__cstring: 0x991b
--  __TEXT.__gcc_except_tab: 0x4a1c
--  __TEXT.__oslogstring: 0xd359
 +2465.1.2.0.0
-+  __TEXT.__text: 0xc37d8
-+  __TEXT.__objc_methlist: 0x4c6c
-+  __TEXT.__const: 0x410
-+  __TEXT.__cstring: 0x9c05
-+  __TEXT.__gcc_except_tab: 0x48e4
-+  __TEXT.__oslogstring: 0xd4c0
-   __TEXT.__dlopen_cstrs: 0x4a
--  __TEXT.__unwind_info: 0x3488
-+  __TEXT.__unwind_info: 0x3508
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x47b0
--  __DATA_CONST.__objc_classlist: 0x1b0
-+  __DATA_CONST.__const: 0x4810
-+  __DATA_CONST.__objc_classlist: 0x1c8
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3d18
-+  __DATA_CONST.__objc_selrefs: 0x3d68
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x138
-+  __DATA_CONST.__objc_superrefs: 0x148
-   __DATA_CONST.__objc_arraydata: 0x310
--  __DATA_CONST.__got: 0xbf8
--  __AUTH_CONST.__const: 0x1328
--  __AUTH_CONST.__cfstring: 0x7fa0
--  __AUTH_CONST.__objc_const: 0x6128
-+  __DATA_CONST.__got: 0xc10
-+  __AUTH_CONST.__const: 0x13a8
-+  __AUTH_CONST.__cfstring: 0x81a0
-+  __AUTH_CONST.__objc_const: 0x63a8
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_arrayobj: 0x3a8
-   __AUTH_CONST.__objc_intobj: 0x228
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x1120
--  __AUTH.__objc_data: 0x140
--  __DATA.__objc_ivar: 0x540
-+  __AUTH_CONST.__auth_got: 0x1130
-+  __AUTH.__objc_data: 0x230
-+  __DATA.__objc_ivar: 0x558
-   __DATA.__data: 0x418
-   __DATA.__common: 0x4
-   __DATA_DIRTY.__objc_data: 0xfa0
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libutil.dylib
 -  Functions: 3378
--  Symbols:   6750
+-  Symbols:   5048
 -  CStrings:  2701
 +  Functions: 3412
-+  Symbols:   6830
++  Symbols:   5118
 +  CStrings:  2736
- 
 Symbols:
 + +[CSAccessMetricsRegistry sharedRegistry]
 + +[CSAccessMetricsReporter reportAccessForClient:target:kind:]
@@ -227,21 +194,6 @@ Symbols:
 + _logForCSLogCategoryDonationTracing
 + _logForCSLogCategoryDonationTracing.onceToken
 + _logForCSLogCategoryDonationTracing.sDonationTracingLog
-+ _objc_msgSend$_processIndexDataForBundle:protectionClass:personaID:options:items:itemsText:itemsHTML:clientState:expectedClientState:clientStateName:donationTimestamp:donationXPCTraceID:deletes:completionHandler:
-+ _objc_msgSend$claimFirstSightOfClient:target:kind:
-+ _objc_msgSend$indexFromBundle:fromClient:personaID:options:items:itemsText:itemsHTML:clientState:expectedClientState:clientStateName:donationTimestamp:donationXPCTraceID:deletes:canCreateNewIndex:completionHandler:
-+ _objc_msgSend$indexFromBundle:fromClient:protectionClass:personaID:options:items:itemsText:itemsHTML:clientState:expectedClientState:clientStateName:donationTimestamp:donationXPCTraceID:deletes:canCreateNewIndex:completionHandler:
-+ _objc_msgSend$initWithClient:target:kind:
-+ _objc_msgSend$lossCount
-+ _objc_msgSend$lossEndUnixDate
-+ _objc_msgSend$lossStartUnixDate
-+ _objc_msgSend$numberWithUnsignedChar:
-+ _objc_msgSend$predicateFrameworkGenerated
-+ _objc_msgSend$predicateSearchToolGenerated
-+ _objc_msgSend$reportAccessForClient:target:kind:
-+ _objc_msgSend$setTarget:
-+ _objc_msgSend$sharedRegistry
-+ _objc_msgSend$unixDate
 + _sharedRegistry.onceToken
 + _sharedRegistry.sharedInstance
 + _syslogDateString
@@ -354,11 +306,6 @@ Symbols:
 - ___block_descriptor_40_e8_32s_e37_v24?0Q8"OSLogEventStreamPosition"16ls32l8
 - ___block_descriptor_72_e8_32s40s48s56r64r_e5_v8?0lr56l8r64l8s32l8s40l8s48l8
 - ___collectSpotlightLogs_block_invoke_2
-- _objc_msgSend$_processIndexDataForBundle:protectionClass:personaID:options:items:itemsText:itemsHTML:clientState:expectedClientState:clientStateName:donationTimestamp:deletes:completionHandler:
-- _objc_msgSend$dateByAddingTimeInterval:
-- _objc_msgSend$indexFromBundle:fromClient:personaID:options:items:itemsText:itemsHTML:clientState:expectedClientState:clientStateName:donationTimestamp:deletes:canCreateNewIndex:completionHandler:
-- _objc_msgSend$indexFromBundle:fromClient:protectionClass:personaID:options:items:itemsText:itemsHTML:clientState:expectedClientState:clientStateName:donationTimestamp:deletes:canCreateNewIndex:completionHandler:
-- _objc_msgSend$truncateAtOffset:error:
 CStrings:
 + "### BEGIN slice=[%@, %@]\n"
 + "### END status=%s events=%llu lossEvents=%llu lossMessages=%llu%s writeFailures=%llu\n"

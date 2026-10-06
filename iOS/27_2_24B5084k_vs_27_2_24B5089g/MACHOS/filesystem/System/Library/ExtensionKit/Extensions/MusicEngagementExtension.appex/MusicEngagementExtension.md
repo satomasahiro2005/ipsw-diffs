@@ -2,102 +2,64 @@
 
 > `/System/Library/ExtensionKit/Extensions/MusicEngagementExtension.appex/MusicEngagementExtension`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_reflstr`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_types`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4defb8` | `0x4e0884` | **`+0x18cc`** |
+| `__DATA.__objc_const` | `0x15e10` | `0x15a98` | **`-0x378`** |
+| `__DATA_CONST.__const` | `0x32198` | `0x32268` | **`+0xd0`** |
+| `__TEXT.__const` | `0x2a850` | `0x2a898` | **`+0x48`** |
+| `__TEXT.__swift5_capture` | `0x9244` | `0x9284` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x107a8` | `0x107e0` | **`+0x38`** |
+| `__TEXT.__objc_methname` | `0x10e65` | `0x10e85` | **`+0x20`** |
+| `__TEXT.__cstring` | `0xbf34` | `0xbf44` | **`+0x10`** |
+| `__TEXT.__eh_frame` | `0x15ec4` | `0x15eb4` | **`-0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0xdd60` | `0xdd6c` | **`+0xc`** |
+| `__DATA.__objc_data` | `0x8128` | `0x8130` | **`+0x8`** |
+| `__TEXT.__constg_swiftt` | `0x10e64` | `0x10e6c` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_selrefs`
+- `__DATA.__objc_stublist`
+- `__DATA_CONST.__auth_got`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__got`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__auth_got`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_selrefs`
-- `__DATA.__data`
-- `__DATA.__objc_stublist`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_reflstr`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
 
 ```diff
 
 -4026.210.13.1.0
--  __TEXT.__text: 0x4b62c0
 +4026.200.16.0.0
-+  __TEXT.__text: 0x4b7b78
-   __TEXT.__auth_stubs: 0x9ab0
-   __TEXT.__objc_stubs: 0xcd80
-   __TEXT.__objc_methlist: 0x3d34
-   __TEXT.__swift5_typeref: 0x1b112
--  __TEXT.__const: 0x2a850
--  __TEXT.__cstring: 0xbf34
--  __TEXT.__constg_swiftt: 0x10e64
-+  __TEXT.__const: 0x2a898
-+  __TEXT.__cstring: 0xbf44
-+  __TEXT.__constg_swiftt: 0x10e6c
-   __TEXT.__swift5_reflstr: 0xc5f2
--  __TEXT.__swift5_fieldmd: 0xdd60
-+  __TEXT.__swift5_fieldmd: 0xdd6c
-   __TEXT.__swift5_proto: 0x1954
-   __TEXT.__swift5_types: 0xfd4
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__objc_classname: 0x2b1f
--  __TEXT.__objc_methname: 0x10e65
-+  __TEXT.__objc_methname: 0x10e85
-   __TEXT.__objc_methtype: 0x2d68
--  __TEXT.__swift5_capture: 0x9244
-+  __TEXT.__swift5_capture: 0x9284
-   __TEXT.__oslogstring: 0x8f58
-   __TEXT.__swift_as_entry: 0x878
-   __TEXT.__swift_as_ret: 0x7b0
 
-   __TEXT.__swift5_protos: 0x128
-   __TEXT.__swift5_mpenum: 0x1b8
-   __TEXT.__ustring: 0xec
--  __TEXT.__unwind_info: 0x14058
--  __TEXT.__eh_frame: 0x15eec
--  __DATA_CONST.__const: 0x32198
-+  __TEXT.__unwind_info: 0x140c8
-+  __TEXT.__eh_frame: 0x15ed4
-+  __DATA_CONST.__const: 0x32268
-   __DATA_CONST.__cfstring: 0x120
-   __DATA_CONST.__objc_classlist: 0x500
-   __DATA_CONST.__objc_catlist: 0xd0
-
-   __DATA_CONST.__auth_got: 0x4d60
-   __DATA_CONST.__got: 0x36e0
-   __DATA_CONST.__auth_ptr: 0x40f0
--  __DATA.__objc_const: 0x15e10
-+  __DATA.__objc_const: 0x15a98
-   __DATA.__objc_selrefs: 0x3f68
-   __DATA.__objc_ivar: 0x5c
--  __DATA.__objc_data: 0x8128
-+  __DATA.__objc_data: 0x8130
-   __DATA.__data: 0x174f8
-   __DATA.__objc_stublist: 0x18
-   __DATA.__common: 0x4448
-
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 23849
 -  Symbols:   60954
 -  CStrings:  5227
 +  Functions: 23889
 +  Symbols:   61014
 +  CStrings:  5228
- 
 Symbols:
 + $s7LyricsX21LayerPropertyAnimatorC5delaySdvM.resume
 + $s7LyricsX25SpringAnimationParametersV8duration12CoreGraphics7CGFloatVSgvM.resume

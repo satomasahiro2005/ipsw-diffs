@@ -2,55 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/GPUToolsReplay.framework/GPUToolsReplay`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x41c2f0` | `0x41ccd0` | **`+0x9e0`** |
+| `__TEXT.__gcc_except_tab` | `0x16a80` | `0x16acc` | **`+0x4c`** |
+| `__TEXT.__const` | `0xa528` | `0xa558` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6818` | `0x6820` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x59f0` | `0x59f8` | **`+0x8`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -2027.0.35.0.0
--  __TEXT.__text: 0x41c2f0
 +2027.0.37.0.0
-+  __TEXT.__text: 0x41ccd0
-   __TEXT.__init_offsets: 0x10
-   __TEXT.__objc_methlist: 0x7c6c
--  __TEXT.__const: 0xa528
-+  __TEXT.__const: 0xa558
-   __TEXT.__oslogstring: 0x184f
-   __TEXT.__cstring: 0x10dc8c
--  __TEXT.__gcc_except_tab: 0x16a80
-+  __TEXT.__gcc_except_tab: 0x16acc
-   __TEXT.__ustring: 0x4f6
--  __TEXT.__unwind_info: 0x59f0
-+  __TEXT.__unwind_info: 0x59f8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x190
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6818
-+  __DATA_CONST.__objc_selrefs: 0x6820
-   __DATA_CONST.__objc_protorefs: 0xc0
-   __DATA_CONST.__objc_superrefs: 0x270
-   __DATA_CONST.__objc_arraydata: 0xba0
-
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 7354
--  Symbols:   12086
+-  Symbols:   9286
 +  Functions: 7358
-+  Symbols:   12091
-   CStrings:  18390
- 
++  Symbols:   9290
 Symbols:
 + _DYTraceDecode_MTL4ComputeCommandEncoder_copyIndirectCommandBuffer_sourceRange_destination_destinationIndex
 + _DYTraceDecode_MTL4ComputeCommandEncoder_optimizeIndirectCommandBuffer_withRange
 + _DYTraceDecode_MTL4ComputeCommandEncoder_resetCommandsInBuffer_withRange
 + _GTCaptureArchive_confinedSeparateFilePath
-+ _objc_msgSend$setInputDimensions:atBufferIndex:
 CStrings:
 + "/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/GPUToolsDevice/GPUTools/GTMTLCapture/net/GTCaptureArchive.c:719"
 + "/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/GPUToolsDevice/GPUTools/GTMTLCapture/replayer/GTTraceFbuf2Func_mtl.c.inl:10054"

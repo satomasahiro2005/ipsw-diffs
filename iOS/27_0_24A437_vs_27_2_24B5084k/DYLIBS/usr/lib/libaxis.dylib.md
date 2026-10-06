@@ -2,44 +2,31 @@
 
 > `/usr/lib/libaxis.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x55aff8` | `0x544c90` | **`-0x16368`** |
+| `__TEXT.__gcc_except_tab` | `0x48888` | `0x47194` | **`-0x16f4`** |
+| `__TEXT.__unwind_info` | `0x11c00` | `0x116c0` | **`-0x540`** |
+| `__TEXT.__cstring` | `0x1678a` | `0x16b08` | **`+0x37e`** |
+| `__DATA.__bss` | `0x13ee8` | `0x13ea8` | **`-0x40`** |
+| `__DATA.__data` | `0x1838` | `0x1858` | **`+0x20`** |
+| `__TEXT.__const` | `0xf854` | `0xf874` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x1a8` | `0x1b8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -8.1.11.0.0
--  __TEXT.__text: 0x5532f0
--  __TEXT.__const: 0xf854
--  __TEXT.__gcc_except_tab: 0x48888
--  __TEXT.__cstring: 0x1678a
--  __TEXT.__unwind_info: 0x12850
 +8.1.13.0.0
-+  __TEXT.__text: 0x53cf68
-+  __TEXT.__const: 0xf874
-+  __TEXT.__gcc_except_tab: 0x47194
-+  __TEXT.__cstring: 0x16b08
-+  __TEXT.__unwind_info: 0x12300
-   __TEXT.__eh_frame: 0x88
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0xc0
-   __DATA_CONST.__weak_got: 0x680
--  __DATA_CONST.__got: 0x1a8
-+  __DATA_CONST.__got: 0x1b8
-   __AUTH_CONST.__const: 0x9138
-   __AUTH_CONST.__weak_auth_got: 0x450
-   __AUTH_CONST.__auth_got: 0x0
 
-   __AUTH.__thread_vars: 0x288
-   __AUTH.__thread_data: 0x10
-   __AUTH.__thread_bss: 0x180
--  __DATA.__data: 0x1838
-+  __DATA.__data: 0x1858
-   __DATA.__common: 0x8
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 10038
 +  Functions: 9906
-   Symbols:   2776
+
 -  CStrings:  1932
 +  CStrings:  1961
- 
 CStrings:
 + " (cycle visits "
 + " (face "

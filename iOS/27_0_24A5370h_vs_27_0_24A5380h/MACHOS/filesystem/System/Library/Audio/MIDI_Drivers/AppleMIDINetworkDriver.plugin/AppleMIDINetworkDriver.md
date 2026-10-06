@@ -2,25 +2,27 @@
 
 > `/System/Library/Audio/MIDI Drivers/AppleMIDINetworkDriver.plugin/AppleMIDINetworkDriver`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x39174` | `0x39150` | **`-0x24`** |
+| `__TEXT.__gcc_except_tab` | `0x39ec` | `0x39e8` | **`-0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x39174
-+  __TEXT.__text: 0x39150
-   __TEXT.__realtime: 0x5a4
-   __TEXT.__auth_stubs: 0x1080
-   __TEXT.__objc_stubs: 0x1e0
--  __TEXT.__gcc_except_tab: 0x39ec
-+  __TEXT.__gcc_except_tab: 0x39e8
-   __TEXT.__const: 0x4a8
-   __TEXT.__oslogstring: 0x1d79
-   __TEXT.__cstring: 0x13d8
-Sections:
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__data : content changed
+-329.0.0.0.0
++330.0.0.0.0
 Functions:
 ~ sub_1518 : 240 -> 232
 ~ sub_2604 -> sub_25fc : 1152 -> 1156
@@ -55,5 +57,4 @@ Functions:
 ~ sub_35984 -> sub_35980 : 1260 -> 1240
 ~ sub_37690 -> sub_37678 : 2976 -> 2968
 ~ sub_39748 -> sub_39728 : 588 -> 584
-
 ```

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CoreRecognition.framework/CoreRecognition`
 
-```diff
+### Section Size Changes
 
- 446.13.100.0.0
--  __TEXT.__text: 0x5b3cc
-+  __TEXT.__text: 0x5b334
-   __TEXT.__objc_methlist: 0x23ec
-   __TEXT.__const: 0x744
-   __TEXT.__cstring: 0x4b5f
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5b3cc` | `0x5b334` | **`-0x98`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZN3CNNC2EP6CorpusP17NetworkParameters : 8764 -> 8784
 ~ __ZNSt3__16vectorIfNS_9allocatorIfEEE6resizeEm : 284 -> 288

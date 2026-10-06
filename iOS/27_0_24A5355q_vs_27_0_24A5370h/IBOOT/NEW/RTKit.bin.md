@@ -1,75 +1,41 @@
 ## RTKit.bin
 
-- `(SOCD) ERROR:Panic counter is about to overflow`
-- `(SOCD) ERROR:failed to read socd region`
-- `smc/stacks.cpp`
-- `(SOCD) ERROR:Failed to create socd handle. Storage index %u, result %d`
-- `(SOCD) ERROR:Failed to initialize the SOCD container. Storage index %u, result %d`
-- `%s:%d Bad write offset=0x%X`
-- `%s:%d Bad Read offset=0x%X error:0x%x`
-- `c/ppm_task.cpp`
-- `smc/thermal/componentController/thermalPressurePassThruCC.cpp`
-- `(SOCD) ERROR:failed to fill socd region %d`
-- `smc/sys_task.cpp`
-- `iBoot: failed to read Fixture Mode GPIO`
-- `smc/socd.cpp`
-- `(SOCD) ERROR:Failed to write event counters`
-- `smc/utils/accum.cpp`
-- `(SOCD) ERROR:failed to read socd region %d`
-- `smc/thermal/acsk/sensorInput.cpp`
-- `(SOCD) ERROR:Failed to load socd container, result: %d`
-- `%s: %s:%d: %s, Invalid CloakingCC cloakingMode  %d`
-- `%s:%d Invalid parameter range[%d] or data = NULL`
-- `(SOCD) ERROR:Failed to allocate a region buffer`
-- `smc/thermal/componentController/displayPwrCC.cpp`
-- `(SOCD) ERROR:Failed to read event counters`
-- `F.sensor array 0 - 1 is %d`
-- `%s:%d Invalid handle`
-- `spmi status: rd trans=%llu recovered=%u failed=%u, wr trans=%llu recovered=%u failed=%u, last_mbse=%c%c%c%c`
-- `%s: %s:%d: %s, Undefined Thermal Level input %d`
-- `%s:%d Invalid index[%d]`
-- `(SOCD) ERROR:failed to write socd region %d`
-- `smc/spmi.cpp`
-- `spmi status (err=0x%08x): id = 0x%02x, write at 0x%04x, len=%lu, retry=%u`
-- `systask heartbeat time-out after %lld ms`
-- `callback && list`
-- `spreadsheet ver(*10) %d`
-- `target/v53/target.cpp`
-- `%s:%d Invalid parameter range[%d]`
-- `(SOCD) ERROR:Failed to initialize socd container, result %d`
-- `(SOCD) ERROR:Unkown report type %d`
-- `(SOCD) ERROR:Unknown SOCD storage type: %d`
-- `smc/thermal/componentController/pmgrInterfaceComponentDriver.cpp`
-- `/SDKROOT/usr/local/standalone/firmware/acsk/V1_0/include/lookUpMatrix.h`
-- `%s: %s:%d: %s, SMC BSC failure, %c%c%c%c %c%c%c%c`
-- `rtkptd.cpp`
-- `smc/smc_watchdog.cpp`
-- `Invalid display type %d`
-- `%s: %s:%d: %s, Undefined Thermal pressure input %d`
-- `smc/unilog.cpp`
-- `(SOCD) ERROR:failed to fill socd region`
-- `smc/sys_mgmt.cpp`
-- `%s: %s:%d: %s, error: registry is full`
-- `%s: %s:%d: 0x%llx, 0x%llx`
-- `(SOCD) ERROR:AP wdt counter is about to overflow`
-- `%s: %s:%d: %lld %s %lld`
-- `idx < list_size`
-- `smc/systemctl.cpp`
-- `smc/thermal/componentController/cloakingCC.cpp`
-- `target/base/iphone18/pmu_target.cpp`
-- `%s: %s:%d: `
-- `smc/smcmain.cpp`
-- `%s: %s:%d: %s, error: callback or list is NULL`
-- `systemctl: reboot (%d)`
-- `Invalid baseband type %d`
-- `smc/thermal/componentController/basebandCC.cpp`
-- `smc/smc_init.cpp`
-- `smc/thermal/cltm.cpp`
-- `/SDKROOT/usr/local/standalone/firmware/acsk/V1_0/include/lookUpTable.h`
-- `S.sensor array 0 - 8 is %d, %d, %d, %d, %d, %d, %d, %d`
-- `(SOCD) ERROR:Failed to allocate a region instance. Storage index %u`
-- `(SOCD) ERROR:failed to write socd region`
-- `range_param_check`
-- `spmi status (err=0x%08x): id = 0x%02x, read at 0x%04x, len=%lu, retry=%u`
-- `%s:%d Range =%d info not found`
-- `smc/thermal/componentController/budgetInterfaceDriver.cpp`
+- `RS: TX: RS_EVT_ACCESSORY_DETACHED; loadFirmware(RX)`
+- `RS: TX: RS_EVT_FW_DOWNLOADED: device untethered; start poutUntethered timer for %llu ms`
+- `RS: RX: RS_EVT_DEAD_ACCESSORY_CLEARED; invoke poutTriggerSet`
+- `RS: TX: RS_EVT_POUT_BELOW_THRESHOLD; Ironbull cloak not available; wait for CHC`
+- `RS: TX: RS_EVT_WAIKATO_MITIGATION_READY; do nothing`
+- `RS: %s: poutTrig:    pass: (t=%d,os=%d,cap=%d,c=%d) . (ibcs=%d | nch=%d | >minpwr=%d) (Pout:%d)`
+- `RS: RX: RS_EVT_POUT_ABOVE_THRESHOLD; poutTriggerSet`
+- `RS: TX: RS_EVT_WAIKATO_MITIGATION_NOT_READY; swapToRxMode`
+- `RS: TX: RS_EVT_POUT_CAPABLE`
+- `RS: RX: RS_EVT_WAIKATO_MITIGATION_READY; invoke poutTriggerSet`
+- `RS: RX: RS_EVT_DEVICE_UNTETHERED; invoke poutTriggerSet`
+- `RS: RX: RS_EVT_DEAD_ACCESSORY_DETECTED; invoke poutTriggerSet`
+- `RS: TX: RS_EVT_ROLE_SWAP_REQUEST_RECEIVED; FW Sent Rsp: Reject(%d); stay in TX mode`
+- `RS: TX: RS_EVT_DEAD_ACCESSORY_DETECTED: Pout(%d)>=Thrsld(%d); stay in TX mode`
+- `RS: RX: RS_EVT_FW_DOWNLOADED received; invoke poutTriggerSet`
+- `RS: RX: RS_EVT_POUT_CAPABLE; invoke poutTriggerSet`
+- `RS: RX: RS_EVT_ACCESSORY_ATTACHED`
+- `RS: RX: RS_EVT_ACCESSORY_UNTETHERED; invoke poutTriggerSet`
+- `RS: RX: RS_EVT_DEVICE_TETHERED; invoke poutTriggerSet`
+- `Inductive pwr_prof_change cleared`
+- `RS: %s: %s: acc dead: loadFirmware(TX)`
+- `RS: RX: RS_EVT_ACCESSORY_DETACHED`
+- `RS: TX: RS_EVT_DEVICE_UNTETHERED: start poutUntethered timer for %llu ms`
+- `RS: TX: RS_EVT_TX_FW_SUSPENDED (Idle); swapToRxMode`
+- `RS: TX: RS_EVT_TX_CHIME_HONESTY_COMPLETED; Pout=%d; IBCloakAvailable;=%d`
+- `RS: RX: RS_EVT_ROLE_SWAP_REQUEST_SENT; Rcvd PTx Rsp: Reject(%d); stay in RX mode`
+- `RS: TX: RS_EVT_ACCESSORY_ATTACHED`
+- `RS: TX: RS_EVT_DEAD_ACCESSORY_DETECTED: Pout(%d)<Thrsld(%d); swapToRxMode`
+- `RS: TX: RS_EVT_DEAD_ACCESSORY_DETECTED;  wait for CHC`
+- `RS: TX: RS_EVT_DEVICE_TETHERED: cancel poutUntethered timer (%llu)`
+- `RS: TX: RS_EVT_POUT_BELOW_THRESHOLD; Ironbull cloak not available; swapToRxMode`
+- `RS: TX: RS_EVT_HLOS_BOOTED`
+- `RS: %s: poutTrig: pending: (t=%d,os=%d,cap=%d,c=%d) . (ibcs=%d | nch=%d | >minpwr=%d) (Pout:%d)`
+- `nductiveRoleSwap.cpp`
+- `RS: RX: RS_EVT_ROLE_SWAP_REQUEST_SENT; Rcvd PTx Rsp: Accept; loadFirmware(TX)`
+- `RS: RX: RS_EVT_WAIKATO_MITIGATION_NOT_READY; invoke poutTriggerSet`
+- `RS: RX: RS_EVT_HLOS_BOOTED; invoke poutTriggerSet`
+- `RS: TX: CHC: Pout(%d)<Thrsld(%d) AND Ironbull cloak not available; swapToRxMode`
+- `RS: TX: RS_EVT_ROLE_SWAP_REQUEST_RECEIVED; FW Sent Rsp: Accept; loadFirmware(RX)`

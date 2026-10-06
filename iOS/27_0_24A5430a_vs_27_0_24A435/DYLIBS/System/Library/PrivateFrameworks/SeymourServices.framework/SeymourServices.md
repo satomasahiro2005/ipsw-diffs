@@ -2,12 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/SeymourServices.framework/SeymourServices`
 
-```diff
+### Section Size Changes
 
- 2027.0.146.1.4
--  __TEXT.__text: 0x9a66b0
-+  __TEXT.__text: 0x9a6860
-   __TEXT.__objc_methlist: 0x13c4
-   __TEXT.__const: 0x29130
-   __TEXT.__constg_swiftt: 0xb13c
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x9a66b0` | `0x9a6860` | **`+0x1b0`** |

@@ -2,15 +2,14 @@
 
 > `/System/Library/PrivateFrameworks/BookLibraryCore.framework/Support/bookassetd`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -2306.0.0.0.0
 +2309.0.0.0.0
-   __TEXT.__text: 0xe1014
-   __TEXT.__auth_stubs: 0xdb0
-   __TEXT.__objc_stubs: 0xd240
 ```

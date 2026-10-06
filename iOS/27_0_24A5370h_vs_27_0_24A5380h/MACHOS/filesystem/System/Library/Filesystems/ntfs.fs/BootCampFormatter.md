@@ -2,17 +2,20 @@
 
 > `/System/Library/Filesystems/ntfs.fs/BootCampFormatter`
 
-```diff
+### Section Size Changes
 
--  __TEXT.__text: 0x16da8
-+  __TEXT.__text: 0x16dac
-   __TEXT.__auth_stubs: 0x2f0
-   __TEXT.__const: 0x2028
-   __TEXT.__cstring: 0x5812
-Sections:
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA.__data : content changed
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x16da8` | `0x16dac` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_10000637c : 396 -> 392
 ~ sub_1000086dc -> sub_1000086d8 : 1772 -> 1764
@@ -27,5 +30,4 @@ Functions:
 ~ sub_100012408 -> sub_100012424 : 212 -> 196
 ~ sub_100014c5c -> sub_100014c68 : 1304 -> 1288
 ~ sub_100015b04 -> sub_100015b00 : 388 -> 396
-
 ```

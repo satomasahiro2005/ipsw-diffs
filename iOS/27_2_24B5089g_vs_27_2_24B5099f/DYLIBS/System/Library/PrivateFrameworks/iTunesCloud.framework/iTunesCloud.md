@@ -2,68 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/iTunesCloud.framework/iTunesCloud`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3cc900` | `0x3cce4c` | **`+0x54c`** |
+| `__TEXT.__oslogstring` | `0x22515` | `0x226ce` | **`+0x1b9`** |
+| `__AUTH_CONST.__objc_const` | `0x31a40` | `0x31ab8` | **`+0x78`** |
+| `__TEXT.__cstring` | `0x17c21` | `0x17c74` | **`+0x53`** |
+| `__TEXT.__objc_methlist` | `0x189a4` | `0x189f4` | **`+0x50`** |
+| `__AUTH_CONST.__cfstring` | `0x18b60` | `0x18ba0` | **`+0x40`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa650` | `0xa688` | **`+0x38`** |
+| `__DATA_CONST.__const` | `0x7490` | `0x74c0` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x6b68` | `0x6b78` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x24e0` | `0x24e8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -4026.200.17.0.0
--  __TEXT.__text: 0x3c410c
--  __TEXT.__objc_methlist: 0x189a4
 +4026.200.21.0.0
-+  __TEXT.__text: 0x3c4640
-+  __TEXT.__objc_methlist: 0x189f4
-   __TEXT.__const: 0x225f8
-   __TEXT.__dlopen_cstrs: 0x4cf
-   __TEXT.__gcc_except_tab: 0x2b70
--  __TEXT.__cstring: 0x17c21
--  __TEXT.__oslogstring: 0x22515
-+  __TEXT.__cstring: 0x17c74
-+  __TEXT.__oslogstring: 0x226ce
-   __TEXT.__ustring: 0x8e
--  __TEXT.__unwind_info: 0x83b0
-+  __TEXT.__unwind_info: 0x83d0
-   __TEXT.__eh_frame: 0x50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7490
-+  __DATA_CONST.__const: 0x74c0
-   __DATA_CONST.__objc_classlist: 0xdd0
-   __DATA_CONST.__objc_catlist: 0x78
-   __DATA_CONST.__objc_protolist: 0x300
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa650
-+  __DATA_CONST.__objc_selrefs: 0xa688
-   __DATA_CONST.__objc_protorefs: 0xc8
-   __DATA_CONST.__objc_superrefs: 0xc00
-   __DATA_CONST.__objc_arraydata: 0x498
-   __DATA_CONST.__got: 0x1090
-   __AUTH_CONST.__const: 0x18658
--  __AUTH_CONST.__cfstring: 0x18b60
--  __AUTH_CONST.__objc_const: 0x31a40
-+  __AUTH_CONST.__cfstring: 0x18ba0
-+  __AUTH_CONST.__objc_const: 0x31ab8
-   __AUTH_CONST.__objc_intobj: 0x480
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__objc_dictobj: 0x258
-   __AUTH_CONST.__auth_got: 0xa68
-   __AUTH.__objc_data: 0x230
--  __DATA.__objc_ivar: 0x24e0
-+  __DATA.__objc_ivar: 0x24e8
-   __DATA.__data: 0x30d0
-   __DATA.__common: 0xb88
-   __DATA_DIRTY.__objc_data: 0x87f0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 10201
 -  Symbols:   17903
 -  CStrings:  5510
 +  Functions: 10210
 +  Symbols:   17916
 +  CStrings:  5516
- 
 Symbols:
 + -[ICCloudChannelRegistrationAvailability maxAllowedCloudChannelRegistrations]
 + -[ICCloudClientAPNSChannelManager _postCloudChannelRegistrationConfigurationChanged:]

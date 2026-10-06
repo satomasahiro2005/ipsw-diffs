@@ -2,38 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/OnDeviceStorageCore.framework/OnDeviceStorageCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17a288` | `0x17a2f4` | **`+0x6c`** |
+
+### Other Changes
+
 ```diff
 
 -3.1.12.0.0
--  __TEXT.__text: 0x173bcc
 +3.1.15.0.0
-+  __TEXT.__text: 0x173c38
-   __TEXT.__const: 0x16410
-   __TEXT.__cstring: 0x6b0e
-   __TEXT.__constg_swiftt: 0x39b8
 Functions:
-~ sub_1c2bf4e64 -> sub_1c1bf8e64 : 1188 -> 1192
-~ sub_1c2bf5b74 -> sub_1c1bf9b78 : 292 -> 304
-~ sub_1c2c90ac8 -> sub_1c1c94ad8 : 3728 -> 3760
-~ sub_1c2c91958 -> sub_1c1c95988 : 3752 -> 3784
-~ sub_1c2c92800 -> sub_1c1c96850 : 3808 -> 3820
-~ sub_1c2c945cc -> sub_1c1c98628 : 3868 -> 3876
-~ sub_1c2c954e8 -> sub_1c1c9954c : 3844 -> 3852
-~ sub_1c2c963ec -> sub_1c1c9a458 : 3884 -> 3892
-~ sub_1c2c97318 -> sub_1c1c9b38c : 3772 -> 3780
-~ sub_1c2c981d4 -> sub_1c1c9c250 : 3924 -> 3912
-~ sub_1c2c99128 -> sub_1c1c9d198 : 3892 -> 3868
-~ sub_1c2c9a05c -> sub_1c1c9e0b4 : 3880 -> 3876
-~ sub_1c2c9af84 -> sub_1c1c9efd8 : 3772 -> 3808
-~ sub_1c2cb20d4 -> sub_1c1cb614c : 2040 -> 2060
-~ sub_1c2cb28cc -> sub_1c1cb6958 : 1972 -> 1988
-~ sub_1c2cf9bfc -> sub_1c1cfdc98 : 1368 -> 1372
-~ sub_1c2d12278 -> sub_1c1d16318 : 1508 -> 1496
-~ sub_1c2d12874 -> sub_1c1d16908 : 1592 -> 1580
-~ sub_1c2d12eac -> sub_1c1d16f34 : 1592 -> 1580
-~ sub_1c2d134e4 -> sub_1c1d17560 : 1592 -> 1580
-~ sub_1c2d13b1c -> sub_1c1d17b8c : 1472 -> 1448
-~ sub_1c2d140dc -> sub_1c1d18134 : 1420 -> 1428
-~ sub_1c2d25298 -> sub_1c1d292f8 : 1440 -> 1448
-~ sub_1c2d37d08 -> sub_1c1d3bd70 : 108 -> 112
+~ sub_1c39f1644 -> sub_1c2a24644 : 1188 -> 1192
+~ sub_1c39f2370 -> sub_1c2a25374 : 292 -> 304
+~ sub_1c3a8ffbc -> sub_1c2ac2fcc : 3768 -> 3800
+~ sub_1c3a90e74 -> sub_1c2ac3ea4 : 3792 -> 3824
+~ sub_1c3a91d44 -> sub_1c2ac4d94 : 3848 -> 3860
+~ sub_1c3a93b60 -> sub_1c2ac6bbc : 3908 -> 3916
+~ sub_1c3a94aa4 -> sub_1c2ac7b08 : 3884 -> 3892
+~ sub_1c3a959d0 -> sub_1c2ac8a3c : 3924 -> 3932
+~ sub_1c3a96924 -> sub_1c2ac9998 : 3812 -> 3820
+~ sub_1c3a97808 -> sub_1c2aca884 : 3964 -> 3952
+~ sub_1c3a98784 -> sub_1c2acb7f4 : 3932 -> 3908
+~ sub_1c3a996e0 -> sub_1c2acc738 : 3920 -> 3916
+~ sub_1c3a9a630 -> sub_1c2acd684 : 3812 -> 3848
+~ sub_1c3ab1c5c -> sub_1c2ae4cd4 : 2060 -> 2080
+~ sub_1c3ab2468 -> sub_1c2ae54f4 : 1992 -> 2008
+~ sub_1c3afae58 -> sub_1c2b2def4 : 1368 -> 1372
+~ sub_1c3b138cc -> sub_1c2b4696c : 1512 -> 1500
+~ sub_1c3b13ecc -> sub_1c2b46f60 : 1596 -> 1584
+~ sub_1c3b14508 -> sub_1c2b47590 : 1596 -> 1584
+~ sub_1c3b14b44 -> sub_1c2b47bc0 : 1596 -> 1584
+~ sub_1c3b15180 -> sub_1c2b481f0 : 1476 -> 1452
+~ sub_1c3b15744 -> sub_1c2b4879c : 1424 -> 1432
+~ sub_1c3b26edc -> sub_1c2b59f3c : 1444 -> 1452
+~ sub_1c3b39f4c -> sub_1c2b6cfb4 : 108 -> 112
 ```

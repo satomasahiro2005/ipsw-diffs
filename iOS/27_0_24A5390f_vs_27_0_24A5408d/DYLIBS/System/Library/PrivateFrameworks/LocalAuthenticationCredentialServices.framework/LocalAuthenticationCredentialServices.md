@@ -2,15 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/LocalAuthenticationCredentialServices.framework/LocalAuthenticationCredentialServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x18c20` | `0x18c60` | **`+0x40`** |
+
+### Other Changes
+
 ```diff
 
 -2319.0.46.0.0
--  __TEXT.__text: 0x18c20
 +2319.0.63.0.0
-+  __TEXT.__text: 0x18c60
-   __TEXT.__objc_methlist: 0x6bc
-   __TEXT.__const: 0x290
-   __TEXT.__gcc_except_tab: 0x84
 Functions:
 ~ _OUTLINED_FUNCTION_8 : 8 -> 12
 ~ _OUTLINED_FUNCTION_9 : 12 -> 28

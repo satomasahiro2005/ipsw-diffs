@@ -2,17 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/AccessibilityAudit.framework/Support/axauditd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x368` | `0x378` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__gcc_except_tab`
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_arraydata: 0xd0
-   __DATA_CONST.__objc_arrayobj: 0x60
-   __DATA_CONST.__auth_got: 0x518
--  __DATA_CONST.__got: 0x368
-+  __DATA_CONST.__got: 0x378
-   __DATA.__objc_const: 0xc18
-   __DATA.__objc_selrefs: 0xd20
-   __DATA.__objc_ivar: 0x88
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-
+-192.1.0.0.0
++192.2.0.0.0
 ```

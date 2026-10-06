@@ -2,15 +2,18 @@
 
 > `/System/Library/Frameworks/AudioAccessoryKit.framework/AudioAccessoryKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x11ca0` | `0x11ca4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -40.41.1.1.7
--  __TEXT.__text: 0x11ca0
 +40.41.1.1.10
-+  __TEXT.__text: 0x11ca4
-   __TEXT.__objc_methlist: 0x164
-   __TEXT.__const: 0xe10
-   __TEXT.__constg_swiftt: 0x324
 Functions:
-~ sub_246fb0518 -> sub_247984518 : 756 -> 760
+~ sub_246e74518 -> sub_247847518 : 756 -> 760
 ```

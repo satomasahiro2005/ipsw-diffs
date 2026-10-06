@@ -2,88 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/AssetMetricsCoreV2.framework/AssetMetricsCoreV2`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8dd60` | `0x8d53c` | **`-0x824`** |
+| `__DATA.__bss` | `0x6780` | `0x6680` | **`-0x100`** |
+| `__DATA_DIRTY.__bss` | `0x900` | `0xa00` | **`+0x100`** |
+| `__AUTH.__objc_data` | `0x398` | `0x2d0` | **`-0xc8`** |
+| `__AUTH_CONST.__objc_const` | `0x1608` | `0x1550` | **`-0xb8`** |
+| `__TEXT.__cstring` | `0x5b3f` | `0x5acf` | **`-0x70`** |
+| `__TEXT.__swift5_typeref` | `0x1850` | `0x17fa` | **`-0x56`** |
+| `__AUTH_CONST.__const` | `0x4fc0` | `0x4f70` | **`-0x50`** |
+| `__TEXT.__constg_swiftt` | `0x1a34` | `0x19f8` | **`-0x3c`** |
+| `__TEXT.__objc_methlist` | `0x38` | `—` | **`-0x38`** |
+| `__AUTH.__data` | `0xfa8` | `0xf80` | **`-0x28`** |
+| `__TEXT.__eh_frame` | `0x3dd0` | `0x3df8` | **`+0x28`** |
+| `__TEXT.__swift5_fieldmd` | `0x24a4` | `0x247c` | **`-0x28`** |
+| `__TEXT.__const` | `0x5f8e` | `0x5f6e` | **`-0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x22de` | `0x22be` | **`-0x20`** |
+| `__TEXT.__unwind_info` | `0x2878` | `0x2858` | **`-0x20`** |
+| `__DATA.__data` | `0xef0` | `0xed8` | **`-0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x8f0` | `0x8d8` | **`-0x18`** |
+| `__TEXT.__swift5_capture` | `0x614` | `0x604` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xf38` | `0xf30` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0xd8` | `0xd0` | **`-0x8`** |
+| `__DATA_DIRTY.__data` | `0xda8` | `0xdb0` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x234` | `0x230` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3605.12.1.0.0
--  __TEXT.__text: 0x889cc
--  __TEXT.__objc_methlist: 0x38
--  __TEXT.__const: 0x5f8e
--  __TEXT.__swift5_typeref: 0x1850
 +3605.15.1.0.0
-+  __TEXT.__text: 0x881f0
-+  __TEXT.__const: 0x5f6e
-+  __TEXT.__swift5_typeref: 0x17fa
-   __TEXT.__oslogstring: 0x1712
--  __TEXT.__cstring: 0x5b3f
--  __TEXT.__swift5_capture: 0x614
--  __TEXT.__swift5_reflstr: 0x22de
-+  __TEXT.__cstring: 0x5acf
-+  __TEXT.__swift5_capture: 0x604
-+  __TEXT.__swift5_reflstr: 0x22be
-   __TEXT.__swift5_assocty: 0x520
--  __TEXT.__constg_swiftt: 0x1a34
--  __TEXT.__swift5_fieldmd: 0x24a4
-+  __TEXT.__constg_swiftt: 0x19f8
-+  __TEXT.__swift5_fieldmd: 0x247c
-   __TEXT.__swift5_builtin: 0x50
-   __TEXT.__swift5_proto: 0x400
--  __TEXT.__swift5_types: 0x234
-+  __TEXT.__swift5_types: 0x230
-   __TEXT.__swift_as_entry: 0x164
-   __TEXT.__swift_as_ret: 0x13c
-   __TEXT.__swift_as_cont: 0x154
-   __TEXT.__swift5_protos: 0x30
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x2f00
--  __TEXT.__eh_frame: 0x3dd8
-+  __TEXT.__unwind_info: 0x2ee0
-+  __TEXT.__eh_frame: 0x3e00
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x380
--  __DATA_CONST.__objc_classlist: 0xd8
-+  __DATA_CONST.__objc_classlist: 0xd0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x8f0
-+  __DATA_CONST.__objc_selrefs: 0x8d8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x4fc0
-+  __AUTH_CONST.__const: 0x4f70
-   __AUTH_CONST.__cfstring: 0x2000
--  __AUTH_CONST.__objc_const: 0x1608
--  __AUTH_CONST.__auth_got: 0xf38
--  __AUTH.__objc_data: 0x398
--  __AUTH.__data: 0xfa8
--  __DATA.__data: 0xef0
-+  __AUTH_CONST.__objc_const: 0x1550
-+  __AUTH_CONST.__auth_got: 0xf30
-+  __AUTH.__objc_data: 0x2d0
-+  __AUTH.__data: 0xf80
-+  __DATA.__data: 0xed8
-   __DATA.__common: 0x140
-   __DATA_DIRTY.__objc_data: 0x140
--  __DATA_DIRTY.__data: 0xda8
-+  __DATA_DIRTY.__data: 0xdb0
-   __DATA_DIRTY.__common: 0x48
--  __DATA_DIRTY.__bss: 0x900
-+  __DATA_DIRTY.__bss: 0xa00
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/UIKit.framework/UIKit
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4554
 -  Symbols:   8522
 -  CStrings:  760
 +  Functions: 4529
 +  Symbols:   8487
 +  CStrings:  758
- 
 Symbols:
 + _$s10Foundation4DateV2geoiySbAC_ACtFZ
 + _$sSo20BMStreamVirtualTableC6stream7useCase6schema25publisherBlockWithOptions015acceptPublisherK0ABSo0A4BaseC_So05BMUseF10IdentifieraSo11BMSQLSchemaCSo12BPSPublisherCyyXlGSo011BMPublisherK0CcSbtcfcTO

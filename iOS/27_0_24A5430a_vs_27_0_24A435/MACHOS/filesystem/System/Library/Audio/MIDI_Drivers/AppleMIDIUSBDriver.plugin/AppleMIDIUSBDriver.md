@@ -2,22 +2,23 @@
 
 > `/System/Library/Audio/MIDI Drivers/AppleMIDIUSBDriver.plugin/AppleMIDIUSBDriver`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1eed8` | `0x1ef08` | **`+0x30`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
 - `__TEXT.__gcc_except_tab`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA.__data`
 
-```diff
+### Other Changes
 
- 333.0.0.0.0
--  __TEXT.__text: 0x1eed8
-+  __TEXT.__text: 0x1ef08
-   __TEXT.__realtime: 0x4c4
-   __TEXT.__auth_stubs: 0x770
-   __TEXT.__gcc_except_tab: 0xdbc
+```text
 Functions:
 ~ sub_888 : 1256 -> 1260
 ~ sub_3db8 -> sub_3dbc : 1384 -> 1392

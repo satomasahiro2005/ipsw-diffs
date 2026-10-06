@@ -2,56 +2,33 @@
 
 > `/System/Library/AccessibilityBundles/MusicRecognition.axbundle/MusicRecognition`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__objc_const` | `0x2d0` | `0x3f0` | **`+0x120`** |
+| `__TEXT.__text` | `0x2ec` | `0x3bc` | **`+0xd0`** |
+| `__AUTH.__objc_data` | `0x190` | `0x230` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0x156` | `0x1ae` | **`+0x58`** |
+| `__TEXT.__objc_methlist` | `0xa4` | `0xec` | **`+0x48`** |
+| `__AUTH_CONST.__cfstring` | `0x160` | `0x1a0` | **`+0x40`** |
+| `__DATA_CONST.__objc_classlist` | `0x28` | `0x38` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x8` | `0x10` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x80` | `0x88` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2ec
--  __TEXT.__objc_methlist: 0xa4
--  __TEXT.__cstring: 0x156
--  __TEXT.__unwind_info: 0x80
-+  __TEXT.__text: 0x3bc
-+  __TEXT.__objc_methlist: 0xec
-+  __TEXT.__cstring: 0x1ae
-+  __TEXT.__unwind_info: 0x88
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x40
--  __DATA_CONST.__objc_classlist: 0x28
-+  __DATA_CONST.__objc_classlist: 0x38
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x90
--  __DATA_CONST.__objc_superrefs: 0x8
-+  __DATA_CONST.__objc_superrefs: 0x10
-   __DATA_CONST.__got: 0x20
-   __AUTH_CONST.__const: 0x60
--  __AUTH_CONST.__cfstring: 0x160
--  __AUTH_CONST.__objc_const: 0x2d0
-+  __AUTH_CONST.__cfstring: 0x1a0
-+  __AUTH_CONST.__objc_const: 0x3f0
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x190
-+  __AUTH.__objc_data: 0x230
-   __DATA.__bss: 0x10
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+-3039.1.0.0.0
++3042.0.0.0.0
 
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 13
--  Symbols:   92
--  CStrings:  24
+-  Symbols:   67
+-  CStrings:  14
 +  Functions: 17
-+  Symbols:   110
-+  CStrings:  28
- 
-Sections:
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
++  Symbols:   81
++  CStrings:  16
 Symbols:
 + +[ActivityListeningViewAccessibility _accessibilityPerformValidations:]
 + +[ActivityListeningViewAccessibility(SafeCategory) safeCategoryBaseClass]
@@ -102,5 +79,4 @@ CStrings:
 + "MusicRecognition.AmbientListeningView"
 - "ListeningViewAccessibility"
 - "MusicRecognition.ListeningView"
-
 ```

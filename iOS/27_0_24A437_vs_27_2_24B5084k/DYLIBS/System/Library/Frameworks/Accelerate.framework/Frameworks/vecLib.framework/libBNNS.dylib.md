@@ -2,48 +2,33 @@
 
 > `/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBNNS.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1158ff8` | `0x114b174` | **`-0xde84`** |
+| `__TEXT.__cstring` | `0x63f2f` | `0x61020` | **`-0x2f0f`** |
+| `__TEXT.__unwind_info` | `0x1be18` | `0x1c318` | **`+0x500`** |
+| `__TEXT.__eh_frame` | `0xdf50` | `0xdda0` | **`-0x1b0`** |
+| `__TEXT.__const` | `0x632bc` | `0x6333c` | **`+0x80`** |
+| `__TEXT.__oslogstring` | `0x40e` | `0x3a6` | **`-0x68`** |
+| `__DATA_CONST.__const` | `0x6e68` | `0x6e18` | **`-0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x2e998` | `0x2e9c4` | **`+0x2c`** |
+| `__AUTH_CONST.__auth_got` | `0xb78` | `0xb60` | **`-0x18`** |
+
+### Other Changes
+
 ```diff
 
 -2212.2.1.0.0
--  __TEXT.__text: 0x1147c80
--  __TEXT.__const: 0x6323c
--  __TEXT.__gcc_except_tab: 0x2e994
--  __TEXT.__cstring: 0x63f2f
--  __TEXT.__oslogstring: 0x40e
--  __TEXT.__unwind_info: 0x22428
--  __TEXT.__eh_frame: 0xe008
 +2212.40.10.0.0
-+  __TEXT.__text: 0x1139cf4
-+  __TEXT.__const: 0x632bc
-+  __TEXT.__gcc_except_tab: 0x2e9c0
-+  __TEXT.__cstring: 0x61020
-+  __TEXT.__oslogstring: 0x3a6
-+  __TEXT.__unwind_info: 0x223e0
-+  __TEXT.__eh_frame: 0xddd0
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x6e68
-+  __DATA_CONST.__const: 0x6e18
-   __DATA_CONST.__weak_got: 0x10
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x3b0c0
-   __AUTH_CONST.__cfstring: 0x440
-   __AUTH_CONST.__weak_auth_got: 0x50
--  __AUTH_CONST.__auth_got: 0xb78
-+  __AUTH_CONST.__auth_got: 0xb60
-   __AUTH.__data: 0x2240
-   __DATA.__data: 0x2878
-   __DATA.__common: 0x10a0
 
-   - /System/Library/PrivateFrameworks/MIL.framework/MIL
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
--  Functions: 39534
+-  Functions: 39529
 -  Symbols:   830
 -  CStrings:  9107
-+  Functions: 39521
++  Functions: 39516
 +  Symbols:   827
 +  CStrings:  8846
- 
 Symbols:
 - _atoi
 - _strlcat

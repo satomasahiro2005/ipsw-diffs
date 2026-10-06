@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SeymourServicesCore.framework/SeymourServicesCore`
 
-```diff
+### Section Size Changes
 
- 2027.0.146.1.4
--  __TEXT.__text: 0x5b3bc
-+  __TEXT.__text: 0x5b3e0
-   __TEXT.__objc_methlist: 0x104
-   __TEXT.__const: 0x4b90
-   __TEXT.__swift5_typeref: 0x1c78
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5b3bc` | `0x5b3e0` | **`+0x24`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_22d9a5990 -> sub_22e244990 : 680 -> 684
 ~ sub_22d9b0010 -> sub_22e24f014 : 6780 -> 6804

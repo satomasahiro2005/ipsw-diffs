@@ -4,16 +4,10 @@
 
 ```diff
 
- 		<key>DevelopmentPhase</key>
- 		<string>FeatureComplete</string>
- 	</dict>
++	</dict>
 +	<key>sb_remote_dictation_enablement</key>
 +	<dict>
 +		<key>DevelopmentPhase</key>
 +		<string>FeatureComplete</string>
-+	</dict>
- 	<key>stickers_suggestions_all_languages</key>
- 	<dict>
- 		<key>Enabled</key>
 
 ```

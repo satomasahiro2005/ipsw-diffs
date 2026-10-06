@@ -2,83 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/PhotosFormats.framework/PhotosFormats`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xde05c` | `0xdf970` | **`+0x1914`** |
+| `__AUTH_CONST.__objc_const` | `0x15380` | `0x156a8` | **`+0x328`** |
+| `__TEXT.__objc_methlist` | `0xcfc0` | `0xd1e8` | **`+0x228`** |
+| `__TEXT.__oslogstring` | `0x7954` | `0x7b40` | **`+0x1ec`** |
+| `__AUTH.__objc_data` | `0x7a0` | `0x840` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x3580` | `0x35e8` | **`+0x68`** |
+| `__DATA_CONST.__objc_selrefs` | `0x64f0` | `0x6550` | **`+0x60`** |
+| `__AUTH_CONST.__cfstring` | `0xcc80` | `0xccc0` | **`+0x40`** |
+| `__TEXT.__gcc_except_tab` | `0x2da4` | `0x2ddc` | **`+0x38`** |
+| `__DATA_CONST.__got` | `0x17a0` | `0x17d0` | **`+0x30`** |
+| `__TEXT.__cstring` | `0xe147` | `0xe177` | **`+0x30`** |
+| `__DATA.__objc_ivar` | `0xd8c` | `0xdb0` | **`+0x24`** |
+| `__DATA.__bss` | `0x1270` | `0x1250` | **`-0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x900` | `0x918` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x590` | `0x5a0` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x3c0` | `0x3d0` | **`+0x10`** |
+| `__DATA_CONST.__const` | `0x2b18` | `0x2b20` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.235.0.0
--  __TEXT.__text: 0xd9ce4
--  __TEXT.__objc_methlist: 0xcfc0
 +916.40.110.0.0
-+  __TEXT.__text: 0xdb550
-+  __TEXT.__objc_methlist: 0xd1e8
-   __TEXT.__const: 0x33a0
-   __TEXT.__dlopen_cstrs: 0x1b7
--  __TEXT.__cstring: 0xe147
-+  __TEXT.__cstring: 0xe177
-   __TEXT.__constg_swiftt: 0xa0
-   __TEXT.__swift5_typeref: 0xeb
-   __TEXT.__swift5_reflstr: 0x162
-   __TEXT.__swift5_fieldmd: 0xf4
-   __TEXT.__swift5_proto: 0x2c
-   __TEXT.__swift5_types: 0x10
--  __TEXT.__gcc_except_tab: 0x2da4
--  __TEXT.__oslogstring: 0x7954
-+  __TEXT.__gcc_except_tab: 0x2ddc
-+  __TEXT.__oslogstring: 0x7b40
-   __TEXT.__ustring: 0x44
--  __TEXT.__unwind_info: 0x41b0
-+  __TEXT.__unwind_info: 0x4240
-   __TEXT.__eh_frame: 0x380
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2b18
--  __DATA_CONST.__objc_classlist: 0x590
-+  __DATA_CONST.__const: 0x2b20
-+  __DATA_CONST.__objc_classlist: 0x5a0
-   __DATA_CONST.__objc_protolist: 0x110
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x64f0
-+  __DATA_CONST.__objc_selrefs: 0x6550
-   __DATA_CONST.__objc_protorefs: 0x10
--  __DATA_CONST.__objc_superrefs: 0x3c0
-+  __DATA_CONST.__objc_superrefs: 0x3d0
-   __DATA_CONST.__objc_arraydata: 0x800
--  __DATA_CONST.__got: 0x17a0
-+  __DATA_CONST.__got: 0x17d0
-   __AUTH_CONST.__const: 0x1da8
--  __AUTH_CONST.__cfstring: 0xcc80
--  __AUTH_CONST.__objc_const: 0x15380
-+  __AUTH_CONST.__cfstring: 0xccc0
-+  __AUTH_CONST.__objc_const: 0x156a8
-   __AUTH_CONST.__weak_auth_got: 0x20
--  __AUTH_CONST.__objc_intobj: 0x900
-+  __AUTH_CONST.__objc_intobj: 0x918
-   __AUTH_CONST.__objc_arrayobj: 0x348
-   __AUTH_CONST.__objc_doubleobj: 0x1b0
-   __AUTH_CONST.__objc_dictobj: 0x208
-   __AUTH_CONST.__auth_got: 0x10e8
--  __AUTH.__objc_data: 0x7a0
-+  __AUTH.__objc_data: 0x840
-   __AUTH.__data: 0xd0
--  __DATA.__objc_ivar: 0xd8c
-+  __DATA.__objc_ivar: 0xdb0
-   __DATA.__data: 0xe58
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0x3020
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5090
--  Symbols:   12022
+-  Symbols:   9739
 -  CStrings:  2616
 +  Functions: 5138
-+  Symbols:   12115
++  Symbols:   9819
 +  CStrings:  2625
- 
 Symbols:
 + +[PFImageMetadataChangePolicySetStarRating policyWithStarRating:]
 + +[PFImageMetadataChangePolicySetStarRating supportsSecureCoding]
@@ -385,21 +343,6 @@ Symbols:
 + _kCMPhotoDecompressionOption_ApplyTransform
 + _kCMPhotoDecompressionOption_MaxPixelSize
 + _kCMPhotoProvenanceResult_CertificateChainData
-+ _objc_msgSend$addStarRating:toAVMetadata:
-+ _objc_msgSend$addTitle:toAVMetadata:
-+ _objc_msgSend$customStarRating
-+ _objc_msgSend$customTitle
-+ _objc_msgSend$setCertificateChainDERData:
-+ _objc_msgSend$setCustomStarRating:
-+ _objc_msgSend$setCustomTitle:
-+ _objc_msgSend$setShouldStripRating:
-+ _objc_msgSend$setShouldStripTitle:
-+ _objc_msgSend$setStarRating:
-+ _objc_msgSend$setTitle:
-+ _objc_msgSend$shouldStripRating
-+ _objc_msgSend$shouldStripTitle
-+ _objc_msgSend$starRating
-+ _objc_msgSend$starRatingItem
 - -[PFContentProvenanceResourceInfo developmentStatus]
 - -[PFContentProvenanceResourceInfo timestampStatus]
 - -[PFImageMetadataBuilder setPeopleNames:]
@@ -625,8 +568,6 @@ Symbols:
 - _OBJC_IVAR_$_PFMetadataBuilder._peopleNames
 - ___block_descriptor_88_e8_32s40r48r56r64r72r80r_e5_v8?0lr40l8s32l8r48l8r56l8r64l8r72l8r80l8
 - _kCGImagePropertyIPTCExtPersonInImage
-- _objc_msgSend$combinedKeywordsAndPeople
-- _objc_msgSend$peopleNames
 CStrings:
 + "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/local/include/boost/geometry/index/detail/exception.hpp"
 + "Adding star rating to video"

@@ -2,5 +2,14 @@
 
 > `/usr/bin/vm_stat`
 
-Sections:
-~ __TEXT.__const : content changed
+### Same-size Content Changes
+
+- `__TEXT.__const`
+
+### Other Changes
+
+```diff
+
+-1068.0.0.0.0
++1070.0.0.0.0
+```

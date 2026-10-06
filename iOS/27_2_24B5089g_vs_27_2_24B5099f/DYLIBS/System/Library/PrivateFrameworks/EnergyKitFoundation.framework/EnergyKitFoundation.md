@@ -2,87 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/EnergyKitFoundation.framework/EnergyKitFoundation`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x12ed88` | `0x12fbc8` | **`+0xe40`** |
+| `__DATA.__bss` | `0xd100` | `0xd3e0` | **`+0x2e0`** |
+| `__TEXT.__const` | `0x8a02` | `0x8bc2` | **`+0x1c0`** |
+| `__AUTH.__objc_data` | `0x5f0` | `0x6a0` | **`+0xb0`** |
+| `__AUTH_CONST.__const` | `0x4160` | `0x4200` | **`+0xa0`** |
+| `__AUTH_CONST.__objc_const` | `0x2590` | `0x2630` | **`+0xa0`** |
+| `__TEXT.__swift5_fieldmd` | `0x2884` | `0x28f8` | **`+0x74`** |
+| `__DATA_CONST.__const` | `0x13b8` | `0x1408` | **`+0x50`** |
+| `__TEXT.__constg_swiftt` | `0x20fc` | `0x2144` | **`+0x48`** |
+| `__TEXT.__unwind_info` | `0x2638` | `0x2680` | **`+0x48`** |
+| `__TEXT.__swift5_assocty` | `0x5a0` | `0x5d0` | **`+0x30`** |
+| `__AUTH.__data` | `0x1160` | `0x1188` | **`+0x28`** |
+| `__TEXT.__swift5_typeref` | `0x14ee` | `0x1514` | **`+0x26`** |
+| `__DATA_DIRTY.__bss` | `0xf88` | `0xfa8` | **`+0x20`** |
+| `__DATA.__data` | `0xf40` | `0xf58` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x300` | `0x318` | **`+0x18`** |
+| `__TEXT.__swift5_proto` | `0x638` | `0x650` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa08` | `0xa18` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x100` | `0x108` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x274` | `0x27c` | **`+0x8`** |
+| `__TEXT.__swift5_reflstr` | `0x1f74` | `0x1f72` | **`-0x2`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -506.0.0.0.0
--  __TEXT.__text: 0x12dfc0
--  __TEXT.__objc_methlist: 0x300
--  __TEXT.__const: 0x8a02
--  __TEXT.__swift5_typeref: 0x14ee
--  __TEXT.__swift5_reflstr: 0x1f74
--  __TEXT.__swift5_assocty: 0x5a0
--  __TEXT.__constg_swiftt: 0x20fc
--  __TEXT.__swift5_fieldmd: 0x2884
 +510.0.0.0.0
-+  __TEXT.__text: 0x12ee00
-+  __TEXT.__objc_methlist: 0x318
-+  __TEXT.__const: 0x8bc2
-+  __TEXT.__swift5_typeref: 0x1514
-+  __TEXT.__swift5_reflstr: 0x1f72
-+  __TEXT.__swift5_assocty: 0x5d0
-+  __TEXT.__constg_swiftt: 0x2144
-+  __TEXT.__swift5_fieldmd: 0x28f8
-   __TEXT.__cstring: 0x381d
--  __TEXT.__swift5_proto: 0x638
--  __TEXT.__swift5_types: 0x274
-+  __TEXT.__swift5_proto: 0x650
-+  __TEXT.__swift5_types: 0x27c
-   __TEXT.__swift5_protos: 0x1c
-   __TEXT.__oslogstring: 0x55b
-   __TEXT.__swift5_capture: 0x8d0
-   __TEXT.__swift5_builtin: 0x28
--  __TEXT.__unwind_info: 0x5dc0
-+  __TEXT.__unwind_info: 0x5e60
-   __TEXT.__eh_frame: 0x3490
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x13b8
--  __DATA_CONST.__objc_classlist: 0x100
-+  __DATA_CONST.__const: 0x1408
-+  __DATA_CONST.__objc_classlist: 0x108
-   __DATA_CONST.__objc_protolist: 0x20
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa08
-+  __DATA_CONST.__objc_selrefs: 0xa18
-   __DATA_CONST.__objc_protorefs: 0x10
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x4160
--  __AUTH_CONST.__objc_const: 0x2590
-+  __AUTH_CONST.__const: 0x4200
-+  __AUTH_CONST.__objc_const: 0x2630
-   __AUTH_CONST.__auth_got: 0xf78
--  __AUTH.__objc_data: 0x5f0
--  __AUTH.__data: 0x1160
--  __DATA.__data: 0xf40
-+  __AUTH.__objc_data: 0x6a0
-+  __AUTH.__data: 0x1188
-+  __DATA.__data: 0xf58
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0xea8
-   __DATA_DIRTY.__data: 0x13d8
-   __DATA_DIRTY.__common: 0x100
--  __DATA_DIRTY.__bss: 0xf88
-+  __DATA_DIRTY.__bss: 0xfa8
-   - /System/Library/Frameworks/CoreData.framework/CoreData
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 5840
 -  Symbols:   12519
 +  Functions: 5877
 +  Symbols:   12629
-   CStrings:  592
- 
 Symbols:
 + _$s10Foundation4DateV2geoiySbAC_ACtFZ
 + _$s10Foundation4DateV2leoiySbAC_ACtFZ

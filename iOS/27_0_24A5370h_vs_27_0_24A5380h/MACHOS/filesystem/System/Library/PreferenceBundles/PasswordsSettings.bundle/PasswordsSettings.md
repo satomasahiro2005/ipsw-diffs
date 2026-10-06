@@ -2,27 +2,33 @@
 
 > `/System/Library/PreferenceBundles/PasswordsSettings.bundle/PasswordsSettings`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x123d8` | `0x123d0` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x123d8
-+  __TEXT.__text: 0x123d0
-   __TEXT.__auth_stubs: 0xec0
-   __TEXT.__objc_stubs: 0xb00
-   __TEXT.__objc_methlist: 0x2d4
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA.__objc_data : content changed
+-7625.1.20.10.3
++7625.1.22.10.3
 Functions:
 ~ sub_70e0 : 432 -> 428
 ~ sub_cc34 -> sub_cc30 : 876 -> 872
-
 ```

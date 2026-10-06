@@ -2,21 +2,22 @@
 
 > `/System/Library/PrivateFrameworks/MobileMailUI.framework/MobileMailUI`
 
-```diff
+### Section Size Changes
 
- 3901.100.1.2.14
--  __TEXT.__text: 0x4ec5c
-+  __TEXT.__text: 0x4ec7c
-   __TEXT.__objc_methlist: 0x5314
-   __TEXT.__gcc_except_tab: 0x9938
-   __TEXT.__cstring: 0x349c
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4ec5c` | `0x4ec7c` | **`+0x20`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_28fb391f8 -> sub_2915741f8 : 812 -> 816
-~ sub_28fb39648 -> sub_29157464c : 256 -> 260
-~ sub_28fb3ae44 -> sub_291575e4c : 2084 -> 2088
-~ sub_28fb3b668 -> sub_291576674 : 2468 -> 2472
-~ sub_28fb3c460 -> sub_291577470 : 400 -> 404
-~ sub_28fb3c5f0 -> sub_291577604 : 68 -> 72
-~ sub_28fb3d410 -> sub_291578428 : 260 -> 264
-~ sub_28fb3f33c -> sub_29157a358 : 264 -> 268
+~ sub_28fa0d1f8 -> sub_2914481f8 : 812 -> 816
+~ sub_28fa0d648 -> sub_29144864c : 256 -> 260
+~ sub_28fa0ee44 -> sub_291449e4c : 2084 -> 2088
+~ sub_28fa0f668 -> sub_29144a674 : 2468 -> 2472
+~ sub_28fa10460 -> sub_29144b470 : 400 -> 404
+~ sub_28fa105f0 -> sub_29144b604 : 68 -> 72
+~ sub_28fa11410 -> sub_29144c428 : 260 -> 264
+~ sub_28fa1333c -> sub_29144e358 : 264 -> 268
 ```

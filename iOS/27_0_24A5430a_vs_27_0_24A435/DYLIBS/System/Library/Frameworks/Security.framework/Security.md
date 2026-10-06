@@ -2,55 +2,29 @@
 
 > `/System/Library/Frameworks/Security.framework/Security`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x180f80` | `0x1815bc` | **`+0x63c`** |
+| `__AUTH_CONST.__cfstring` | `0x17720` | `0x17800` | **`+0xe0`** |
+| `__TEXT.__cstring` | `0x193cf` | `0x19482` | **`+0xb3`** |
+| `__DATA_CONST.__const` | `0x15350` | `0x15360` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x5fd0` | `0x5fd8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -62460.2.2.0.0
--  __TEXT.__text: 0x180f80
 +62460.2.3.0.0
-+  __TEXT.__text: 0x1815bc
-   __TEXT.__lazy_helpers: 0x54
-   __TEXT.__objc_methlist: 0x67bc
-   __TEXT.__const: 0x1b9d0
-   __TEXT.__dlopen_cstrs: 0xbc
--  __TEXT.__cstring: 0x193cf
-+  __TEXT.__cstring: 0x19482
-   __TEXT.__gcc_except_tab: 0x7d8c
-   __TEXT.__oslogstring: 0xf8d9
-   __TEXT.__ustring: 0x406
-   __TEXT.__dof_codesign: 0x1f2c
-   __TEXT.__dof_security_: 0x325
--  __TEXT.__unwind_info: 0x5fd0
-+  __TEXT.__unwind_info: 0x5fd8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x15350
-+  __DATA_CONST.__const: 0x15360
-   __DATA_CONST.__objc_classlist: 0x350
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x100
 
-   __DATA_CONST.__objc_arraydata: 0x100
-   __DATA_CONST.__got: 0x770
-   __AUTH_CONST.__const: 0x3f80
--  __AUTH_CONST.__cfstring: 0x17720
-+  __AUTH_CONST.__cfstring: 0x17800
-   __AUTH_CONST.__objc_const: 0xa5f8
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__lazy_load_got: 0x8
-
-   - /usr/lib/libcoretls_cfhelpers.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 7129
--  Symbols:   14851
+-  Symbols:   13661
 -  CStrings:  5748
 +  Functions: 7134
-+  Symbols:   14858
++  Symbols:   13668
 +  CStrings:  5755
- 
 Symbols:
 + GCC_except_table5892
 + GCC_except_table5901

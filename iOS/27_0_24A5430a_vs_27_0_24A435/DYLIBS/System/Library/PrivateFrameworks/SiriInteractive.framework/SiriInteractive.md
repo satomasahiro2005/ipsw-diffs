@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/SiriInteractive.framework/SiriInteractive`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_7 -> _OUTLINED_FUNCTION_52 : 24 -> 16

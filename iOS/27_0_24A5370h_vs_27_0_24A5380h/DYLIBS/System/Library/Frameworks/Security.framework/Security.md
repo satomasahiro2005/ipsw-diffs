@@ -2,79 +2,27 @@
 
 > `/System/Library/Frameworks/Security.framework/Security`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17fbdc` | `0x17ff10` | **`+0x334`** |
+| `__DATA_CONST.__got` | `0x710` | `0x768` | **`+0x58`** |
+| `__AUTH_CONST.__const` | `0x3f30` | `0x3f60` | **`+0x30`** |
+| `__DATA_DIRTY.__bss` | `0x278` | `0x280` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x5f98` | `0x5fa0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x17fbdc
-+  __TEXT.__text: 0x17ff10
-   __TEXT.__lazy_helpers: 0x54
-   __TEXT.__objc_methlist: 0x6784
-   __TEXT.__const: 0x17590
+-62460.0.22.0.0
++62460.0.38.0.1
 
-   __TEXT.__ustring: 0x406
-   __TEXT.__dof_codesign: 0x1f2c
-   __TEXT.__dof_security_: 0x325
--  __TEXT.__unwind_info: 0x5f98
-+  __TEXT.__unwind_info: 0x5fa0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_protorefs: 0x58
-   __DATA_CONST.__objc_superrefs: 0x2f0
-   __DATA_CONST.__objc_arraydata: 0x100
--  __DATA_CONST.__got: 0x710
--  __AUTH_CONST.__const: 0x3f30
-+  __DATA_CONST.__got: 0x768
-+  __AUTH_CONST.__const: 0x3f60
-   __AUTH_CONST.__cfstring: 0x17660
-   __AUTH_CONST.__objc_const: 0xa5e8
-   __AUTH_CONST.__weak_auth_got: 0x28
-
-   __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0x190
-   __DATA_DIRTY.__data: 0x40
--  __DATA_DIRTY.__bss: 0x278
-+  __DATA_DIRTY.__bss: 0x280
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/libcoretls_cfhelpers.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 7111
--  Symbols:   21076
+-  Symbols:   13611
 +  Functions: 7115
-+  Symbols:   21084
-   CStrings:  8734
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__dof_codesign : content changed
-~ __TEXT.__dof_security_ : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__lazy_load_got : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   13615
 Symbols:
 + GCC_except_table6160
 + GCC_except_table6168
@@ -418,5 +366,4 @@ Symbols:
 - _PORT_Alloc
 - _PORT_ZAlloc
 - _sec_asn1d_zalloc
-
 ```

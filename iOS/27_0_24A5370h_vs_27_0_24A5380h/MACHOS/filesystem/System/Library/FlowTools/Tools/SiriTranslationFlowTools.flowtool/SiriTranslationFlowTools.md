@@ -2,75 +2,50 @@
 
 > `/System/Library/FlowTools/Tools/SiriTranslationFlowTools.flowtool/SiriTranslationFlowTools`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x144c` | `0x2ad4` | **`+0x1688`** |
+| `__TEXT.__auth_stubs` | `0x360` | `0x4f0` | **`+0x190`** |
+| `__TEXT.__cstring` | `0x3c` | `0x192` | **`+0x156`** |
+| `__DATA_CONST.__const` | `0x80` | `0x1c8` | **`+0x148`** |
+| `__TEXT.__eh_frame` | `0x118` | `0x260` | **`+0x148`** |
+| `__DATA_CONST.__auth_got` | `0x1b8` | `0x280` | **`+0xc8`** |
+| `__TEXT.__unwind_info` | `0xd0` | `0x120` | **`+0x50`** |
+| `__DATA.__data` | `0xe8` | `0x128` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x58` | `0x98` | **`+0x40`** |
+| `__TEXT.__const` | `0x180` | `0x1b8` | **`+0x38`** |
+| `__TEXT.__swift5_typeref` | `0x43` | `0x77` | **`+0x34`** |
+| `__DATA.__bss` | `0x100` | `0x120` | **`+0x20`** |
+| `__DATA_CONST.__auth_ptr` | `0x58` | `0x78` | **`+0x20`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__objc_classlist`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_types`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x144c
--  __TEXT.__auth_stubs: 0x360
-+  __TEXT.__text: 0x2ad4
-+  __TEXT.__auth_stubs: 0x4f0
-   __TEXT.__objc_stubs: 0x20
--  __TEXT.__const: 0x180
-+  __TEXT.__const: 0x1b8
-   __TEXT.__objc_classname: 0x36
-   __TEXT.__objc_methname: 0x53
-   __TEXT.__objc_methtype: 0x1
-   __TEXT.__constg_swiftt: 0x48
--  __TEXT.__swift5_typeref: 0x43
-+  __TEXT.__swift5_typeref: 0x77
-   __TEXT.__swift5_reflstr: 0x28
-   __TEXT.__swift5_fieldmd: 0x34
--  __TEXT.__cstring: 0x3c
-+  __TEXT.__cstring: 0x192
-   __TEXT.__swift5_proto: 0x8
-   __TEXT.__swift5_types: 0x4
-   __TEXT.__swift_as_entry: 0x14
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0x4
--  __TEXT.__unwind_info: 0xd0
--  __TEXT.__eh_frame: 0x118
--  __DATA_CONST.__const: 0x80
-+  __TEXT.__unwind_info: 0x120
-+  __TEXT.__eh_frame: 0x260
-+  __DATA_CONST.__const: 0x1c8
-   __DATA_CONST.__objc_classlist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__auth_got: 0x1b8
--  __DATA_CONST.__got: 0x58
--  __DATA_CONST.__auth_ptr: 0x58
-+  __DATA_CONST.__auth_got: 0x280
-+  __DATA_CONST.__got: 0x98
-+  __DATA_CONST.__auth_ptr: 0x78
-   __DATA.__objc_const: 0xf8
-   __DATA.__objc_selrefs: 0x8
--  __DATA.__data: 0xe8
--  __DATA.__bss: 0x100
-+  __DATA.__data: 0x128
-+  __DATA.__bss: 0x120
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/FlowToolTypes.framework/FlowToolTypes
-   - /usr/lib/libSystem.B.dylib
+-3600.10.1.0.0
++3600.10.2.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 41
 -  Symbols:   51
 -  CStrings:  6
 +  Functions: 55
 +  Symbols:   64
 +  CStrings:  13
- 
-Sections:
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
 Symbols:
 + ___chkstk_darwin
 + __swiftEmptyArrayStorage
@@ -101,5 +76,4 @@ CStrings:
 + "guangzhoucantonese"
 + "hongkongcantonese"
 + "taiwanesemandarin"
-
 ```

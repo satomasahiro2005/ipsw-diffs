@@ -2,39 +2,32 @@
 
 > `Firmware/txm.iphoneos.release.im4p`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__auth_ptr`
-- `__TEXT_BOOT_EXEC.__text`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x490b8` | `0x49238` | **`+0x180`** |
+| `__TEXT.__cstring` | `0x63ce` | `0x64ca` | **`+0xfc`** |
+| `__TEXT.__const` | `0xff28` | `0xff88` | **`+0x60`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__const`
+- `__TEXT_BOOT_EXEC.__text`
+
+### Other Changes
 
 ```diff
 
 -217.0.0.0.0
--  __TEXT.__cstring: 0x63ce
--  __TEXT.__const: 0xff28
-+217.0.1.0.0
-+  __TEXT.__cstring: 0x64ca
-+  __TEXT.__const: 0xff88
-   __TEXT.__binname: 0x40
-   __TEXT.__chain_starts: 0x14
-   __DATA_CONST.__const: 0xd198
-   __DATA_CONST.__auth_ptr: 0x70
--  __TEXT_EXEC.__text: 0x490b8
-+  __TEXT_EXEC.__text: 0x49238
-   __TEXT_EXEC.__exc: 0x8a0
-   __TEXT_BOOT_EXEC.__text: 0x4060
-   __TEXT_BOOT_EXEC.__bootcode: 0x278
-   __DATA.__data: 0x2d0
-   __DATA.__common: 0xf80
-   __DATA.__bss: 0x598
 -  Functions: 1089
++217.0.1.0.0
 +  Functions: 1090
-   Symbols:   1
+
 -  CStrings:  728
 +  CStrings:  734
- 
 CStrings:
 + "@(#)VERSION:Code Signing Monitor Image4 Module Version 7.0.0: Fri Jul 10 21:20:27 PDT 2026; root:AppleImage4_txm-374~3979/libimage4_TXM/RELEASE_ARM64E"
 + "Code Signing Monitor Image4 Module Version 7.0.0: Fri Jul 10 21:20:27 PDT 2026; root:AppleImage4_txm-374~3979/libimage4_TXM/RELEASE_ARM64E"

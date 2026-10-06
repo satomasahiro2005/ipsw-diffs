@@ -2,105 +2,65 @@
 
 > `/System/ExclaveKit/System/Library/PrivateFrameworks/TokenGenerationInference.framework/TokenGenerationInference`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x95c38` | `0x97a30` | **`+0x1df8`** |
+| `__DATA_CONST.__const` | `0x61b0` | `0x5df8` | **`-0x3b8`** |
+| `__TEXT.__swift5_capture` | `0xd78` | `0xc08` | **`-0x170`** |
+| `__TEXT.__oslogstring` | `0x1d8f` | `0x1edf` | **`+0x150`** |
+| `__TEXT.__eh_frame` | `0x54d0` | `0x5578` | **`+0xa8`** |
+| `__TEXT.__swift5_typeref` | `0x1928` | `0x19a4` | **`+0x7c`** |
+| `__TEXT.__auth_stubs` | `0x21c0` | `0x2220` | **`+0x60`** |
+| `__TEXT.__const` | `0x3ab0` | `0x3b10` | **`+0x60`** |
+| `__TEXT.__cstring` | `0x1a66` | `0x1ac6` | **`+0x60`** |
+| `__TEXT.__unwind_info` | `0x2358` | `0x23a0` | **`+0x48`** |
+| `__TEXT.__constg_swiftt` | `0x2538` | `0x2570` | **`+0x38`** |
+| `__DATA_CONST.__auth_got` | `0x10f8` | `0x1128` | **`+0x30`** |
+| `__TEXT.__swift5_reflstr` | `0x1e0e` | `0x1e3e` | **`+0x30`** |
+| `__DATA.__objc_const` | `0x34f8` | `0x34d8` | **`-0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x1fb0` | `0x1fcc` | **`+0x1c`** |
+| `__TEXT.__objc_methname` | `0x1bc8` | `0x1bb8` | **`-0x10`** |
+| `__TEXT.__swift_as_cont` | `0x250` | `0x25c` | **`+0xc`** |
+| `__DATA.__common` | `0x1c8` | `0x1c0` | **`-0x8`** |
+| `__DATA.__data` | `0x41e8` | `0x41f0` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x418` | `0x410` | **`-0x8`** |
+| `__TEXT.__swift_as_entry` | `0x114` | `0x11c` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x12c` | `0x134` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `0x7c` | `0x80` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_selrefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_proto`
+- `__TEXT.__swift5_types`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x95c38
--  __TEXT.__auth_stubs: 0x21c0
-+  __TEXT.__text: 0x97a30
-+  __TEXT.__auth_stubs: 0x2220
-   __TEXT.__objc_stubs: 0x5e0
-   __TEXT.__objc_methlist: 0x2f4
--  __TEXT.__const: 0x3ab0
--  __TEXT.__cstring: 0x1a66
-+  __TEXT.__const: 0x3b10
-+  __TEXT.__cstring: 0x1ac6
-   __TEXT.__gcc_except_tab: 0xd80
--  __TEXT.__objc_methname: 0x1bc8
--  __TEXT.__oslogstring: 0x1d8f
-+  __TEXT.__objc_methname: 0x1bb8
-+  __TEXT.__oslogstring: 0x1edf
-   __TEXT.__objc_classname: 0xb54
-   __TEXT.__objc_methtype: 0x102f
--  __TEXT.__swift5_typeref: 0x1928
--  __TEXT.__swift5_reflstr: 0x1e0e
-+  __TEXT.__swift5_typeref: 0x19a4
-+  __TEXT.__swift5_reflstr: 0x1e3e
-   __TEXT.__swift5_assocty: 0x138
--  __TEXT.__constg_swiftt: 0x2538
--  __TEXT.__swift5_fieldmd: 0x1fb0
-+  __TEXT.__constg_swiftt: 0x2570
-+  __TEXT.__swift5_fieldmd: 0x1fcc
-   __TEXT.__swift5_proto: 0x350
-   __TEXT.__swift5_types: 0x230
--  __TEXT.__swift5_protos: 0x7c
--  __TEXT.__swift5_capture: 0xd78
--  __TEXT.__swift_as_entry: 0x114
--  __TEXT.__swift_as_ret: 0x12c
--  __TEXT.__swift_as_cont: 0x250
-+  __TEXT.__swift5_protos: 0x80
-+  __TEXT.__swift5_capture: 0xc08
-+  __TEXT.__swift_as_entry: 0x11c
-+  __TEXT.__swift_as_ret: 0x134
-+  __TEXT.__swift_as_cont: 0x25c
-   __TEXT.__swift5_builtin: 0x3c
-   __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__unwind_info: 0x2358
--  __TEXT.__eh_frame: 0x54d0
--  __DATA_CONST.__const: 0x61b0
-+  __TEXT.__unwind_info: 0x23a0
-+  __TEXT.__eh_frame: 0x5578
-+  __DATA_CONST.__const: 0x5df8
-   __DATA_CONST.__cfstring: 0x260
-   __DATA_CONST.__objc_classlist: 0x180
-   __DATA_CONST.__objc_protolist: 0x18
+-294.0.7.0.0
++297.0.6.0.0
 
-   __DATA_CONST.__objc_selrefs: 0x1f8
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x18
--  __DATA_CONST.__auth_got: 0x10f8
--  __DATA_CONST.__got: 0x418
-+  __DATA_CONST.__auth_got: 0x1128
-+  __DATA_CONST.__got: 0x410
-   __DATA_CONST.__auth_ptr: 0x648
--  __DATA.__objc_const: 0x34f8
-+  __DATA.__objc_const: 0x34d8
-   __DATA.__objc_ivar: 0x4c
-   __DATA.__objc_data: 0x4d0
--  __DATA.__data: 0x41e8
-+  __DATA.__data: 0x41f0
-   __DATA.__bss: 0x308
--  __DATA.__common: 0x1c8
-+  __DATA.__common: 0x1c0
-   - /System/ExclaveKit/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/ExclaveKit/System/Library/Frameworks/EXMobileAssetLoader.framework/EXMobileAssetLoader
-   - /System/ExclaveKit/System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /System/ExclaveKit/usr/lib/swift/libswift_Builtin_float.dylib
-   - /System/ExclaveKit/usr/lib/swift/libswift_Concurrency.dylib
-   - /System/ExclaveKit/usr/lib/swift/libswiftos.dylib
 -  Functions: 2534
--  Symbols:   20380
--  CStrings:  630
+-  Symbols:   6915
+-  CStrings:  601
 +  Functions: 2519
-+  Symbols:   20334
-+  CStrings:  637
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_data : content changed
++  Symbols:   6947
++  CStrings:  608
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/TokenGenerationInference_exclavekit/install/TempContent/Objects/TokenGeneration.build/TokenGenerationInference_exclave.build/Objects-normal/arm64e/DictationStreamingDecodeControlTokens.o
 + DictationStreamingDecodeControlTokens.swift
@@ -224,5 +184,4 @@ CStrings:
 + "run loop ended with logits.count=%ld but expected %ld; tokensTotal=%ld — %{public}s"
 - "Reached end of MODLanguageModel.run loop but found no decoding result"
 - "delegates"
-
 ```

@@ -2,39 +2,28 @@
 
 > `/System/Library/PrivateFrameworks/CardioHealth.framework/CardioHealth`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x1906` | `0xed` | **`-0x1819`** |
+| `__TEXT.__text` | `0xe4fc` | `0xd26c` | **`-0x1290`** |
+| `__TEXT.__gcc_except_tab` | `0x3b4` | `0x3ac` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x2a0` | `0x2a8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xe4fc
-+  __TEXT.__text: 0xd26c
-   __TEXT.__const: 0x550
--  __TEXT.__gcc_except_tab: 0x3b4
--  __TEXT.__cstring: 0x1906
-+  __TEXT.__gcc_except_tab: 0x3ac
-+  __TEXT.__cstring: 0xed
-   __TEXT.__oslogstring: 0x25ac
--  __TEXT.__unwind_info: 0x2a0
-+  __TEXT.__unwind_info: 0x2a8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
+-3169.4.0.0.0
++3176.0.0.0.0
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libxml2.2.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 102
 -  Symbols:   87
--  CStrings:  114
+-  CStrings:  112
 +  Functions: 103
 +  Symbols:   86
-+  CStrings:  96
- 
-Sections:
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
++  CStrings:  94
 Symbols:
 - __ZNSt3__132__internal_log_hardening_failureEPKc
 CStrings:
@@ -56,5 +45,4 @@ CStrings:
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/deque:1565: libc++ Hardening assertion !empty() failed: deque::front called on an empty deque\n"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/deque:1577: libc++ Hardening assertion !empty() failed: deque::back called on an empty deque\n"
 - "/AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.Internal.sdk/usr/include/c++/v1/deque:2199: libc++ Hardening assertion !empty() failed: deque::pop_front called on an empty deque\n"
-
 ```

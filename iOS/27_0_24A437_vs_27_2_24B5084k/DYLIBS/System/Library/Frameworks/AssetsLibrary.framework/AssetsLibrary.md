@@ -2,23 +2,21 @@
 
 > `/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa28c` | `0xa27c` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.235.0.0
--  __TEXT.__text: 0x9f74
 +916.40.110.0.0
-+  __TEXT.__text: 0x9f64
-   __TEXT.__objc_methlist: 0xae4
-   __TEXT.__dlopen_cstrs: 0x43
-   __TEXT.__const: 0x68
 
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   Functions: 306
--  Symbols:   976
-+  Symbols:   975
-   CStrings:  84
- 
+-  Symbols:   721
++  Symbols:   720
 Symbols:
 - _PUTGetCurrentAccess
 Functions:

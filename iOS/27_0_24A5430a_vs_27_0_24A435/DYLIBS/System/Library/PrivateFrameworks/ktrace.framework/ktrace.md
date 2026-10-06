@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ktrace.framework/ktrace`
 
-```diff
+### Section Size Changes
 
- 706.0.2.0.0
--  __TEXT.__text: 0xc7810
-+  __TEXT.__text: 0xc78b8
-   __TEXT.__objc_methlist: 0x458
-   __TEXT.__const: 0x5f52
-   __TEXT.__cstring: 0x6bd4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc7810` | `0xc78b8` | **`+0xa8`** |
+
+### Other Changes
+
+```diff
 Symbols:
 + _swift_release_x11
 - _swift_release_x10

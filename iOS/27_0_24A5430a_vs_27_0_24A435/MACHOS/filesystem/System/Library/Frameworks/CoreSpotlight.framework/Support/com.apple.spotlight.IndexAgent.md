@@ -2,20 +2,21 @@
 
 > `/System/Library/Frameworks/CoreSpotlight.framework/Support/com.apple.spotlight.IndexAgent`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x238a0` | `0x238a8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__const`
 - `__TEXT.__objc_methlist`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
 
-```diff
+### Other Changes
 
- 2459.105.0.0.0
--  __TEXT.__text: 0x238a0
-+  __TEXT.__text: 0x238a8
-   __TEXT.__auth_stubs: 0x1850
-   __TEXT.__objc_stubs: 0x2800
-   __TEXT.__objc_methlist: 0xecc
+```text
 Functions:
 ~ sub_10001eb90 : 924 -> 932
 ```

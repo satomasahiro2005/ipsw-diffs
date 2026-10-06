@@ -2,24 +2,19 @@
 
 > `/usr/lib/system/libdyld.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__cstring` | `0x4cb5` | `0x4d20` | **`+0x6b`** |
+| `__TEXT.__text` | `0x1ce38` | `0x1ce24` | **`-0x14`** |
+
+### Other Changes
+
 ```diff
 
- 27062.0.0.0.0
--  __TEXT.__text: 0x1ce38
-+  __TEXT.__text: 0x1ce24
-   __TEXT.__const: 0x32c
--  __TEXT.__cstring: 0x4cb5
-+  __TEXT.__cstring: 0x4d20
-   __TEXT.__gcc_except_tab: 0x20
-   __TEXT.__unwind_info: 0xd98
-   __TEXT.__auth_stubs: 0x0
-
-   - /usr/lib/system/libxpc.dylib
-   Functions: 852
-   Symbols:   1078
 -  CStrings:  540
 +  CStrings:  548
- 
 Functions:
 ~ __ZNK6mach_o12Architecture8baseNameEv : 76 -> 96
 ~ ___clang_call_terminate : 28 -> 24

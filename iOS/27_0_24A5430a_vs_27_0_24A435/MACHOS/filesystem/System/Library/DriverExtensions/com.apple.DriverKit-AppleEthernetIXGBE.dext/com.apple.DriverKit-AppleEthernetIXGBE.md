@@ -2,18 +2,19 @@
 
 > `/System/Library/DriverExtensions/com.apple.DriverKit-AppleEthernetIXGBE.dext/com.apple.DriverKit-AppleEthernetIXGBE`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2df44` | `0x2df58` | **`+0x14`** |
+
+### Same-size Content Changes
 
 - `__DATA_CONST.__const`
 
-```diff
+### Other Changes
 
- 171.0.0.0.0
--  __TEXT.__text: 0x2df44
-+  __TEXT.__text: 0x2df58
-   __TEXT.__auth_stubs: 0x580
-   __TEXT.__const: 0xd38
-   __TEXT.__cstring: 0x4871
+```diff
 Symbols:
 + /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/ApplePCINetworking_driverkit/install/TempContent/Objects/ApplePCINetworking.build/AppleEthernetIXGBE.build/Objects-normal/arm64e/DriverKit_AppleEthernetIXGBE-664845e16e1f98953c8ff22b1b879c55.o
 - /Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Binaries/ApplePCINetworking_driverkit/install/TempContent/Objects/ApplePCINetworking.build/AppleEthernetIXGBE.build/Objects-normal/arm64e/DriverKit_AppleEthernetIXGBE-fb5b6a81e72a1b91f696df52913891e9.o

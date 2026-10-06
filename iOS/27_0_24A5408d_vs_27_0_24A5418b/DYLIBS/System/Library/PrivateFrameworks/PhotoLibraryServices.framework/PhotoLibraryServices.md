@@ -2,68 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/PhotoLibraryServices.framework/PhotoLibraryServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x74f6ec` | `0x750200` | **`+0xb14`** |
+| `__TEXT.__oslogstring` | `0x84f21` | `0x84fd9` | **`+0xb8`** |
+| `__TEXT.__eh_frame` | `0xfd8` | `0x1078` | **`+0xa0`** |
+| `__TEXT.__cstring` | `0x6d10d` | `0x6d14d` | **`+0x40`** |
+| `__TEXT.__objc_methlist` | `0x45a04` | `0x45a2c` | **`+0x28`** |
+| `__AUTH_CONST.__objc_const` | `0x701a0` | `0x701c0` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x168b0` | `0x168d0` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x25340` | `0x25350` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.111.0.0
--  __TEXT.__text: 0x74f6ec
 +912.0.232.0.0
-+  __TEXT.__text: 0x750200
-   __TEXT.__delay_stubs: 0x40
-   __TEXT.__delay_helper: 0xa4
--  __TEXT.__objc_methlist: 0x45a04
-+  __TEXT.__objc_methlist: 0x45a2c
-   __TEXT.__const: 0x72d0
-   __TEXT.__dlopen_cstrs: 0xb28
-   __TEXT.__swift5_typeref: 0x11de
--  __TEXT.__cstring: 0x6d10d
-+  __TEXT.__cstring: 0x6d14d
-   __TEXT.__swift5_capture: 0x150c
-   __TEXT.__constg_swiftt: 0x2b0
-   __TEXT.__swift5_builtin: 0x8c
 
-   __TEXT.__swift5_assocty: 0xa8
-   __TEXT.__swift5_proto: 0x88
-   __TEXT.__swift5_types: 0x40
--  __TEXT.__oslogstring: 0x84f21
-+  __TEXT.__oslogstring: 0x84fd9
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__gcc_except_tab: 0x20488
-   __TEXT.__ustring: 0xa3a
--  __TEXT.__unwind_info: 0x168b0
--  __TEXT.__eh_frame: 0xfd8
-+  __TEXT.__unwind_info: 0x168d0
-+  __TEXT.__eh_frame: 0x1078
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-
-   __DATA_CONST.__objc_protolist: 0x760
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x25340
-+  __DATA_CONST.__objc_selrefs: 0x25350
-   __DATA_CONST.__objc_protorefs: 0xc8
-   __DATA_CONST.__objc_superrefs: 0x1590
-   __DATA_CONST.__objc_arraydata: 0x1dc0
-   __DATA_CONST.__got: 0x5188
-   __AUTH_CONST.__const: 0x9ca8
-   __AUTH_CONST.__cfstring: 0x53760
--  __AUTH_CONST.__objc_const: 0x701a0
-+  __AUTH_CONST.__objc_const: 0x701c0
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x53b8
-   __AUTH_CONST.__objc_arrayobj: 0x14e8
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 29264
--  Symbols:   64985
+-  Symbols:   48534
 -  CStrings:  21900
 +  Functions: 29274
-+  Symbols:   64989
++  Symbols:   48536
 +  CStrings:  21903
- 
 Symbols:
 + -[PLCPLSettings isVisualIntelligenceDefaultLibrary]
 + -[PLCloudPhotoLibraryManager _enforcePrefetchModeForVisualIntelligenceLibraryIfNeededWithCPLSettings:]
@@ -1340,9 +1304,6 @@ Symbols:
 + GCC_except_table9983
 + GCC_except_table9985
 + GCC_except_table9988
-+ _objc_msgSend$_enforcePrefetchModeForVisualIntelligenceLibraryIfNeededWithCPLSettings:
-+ _objc_msgSend$initWithLexemeID:type:category:unvalidatedText:unvalidatedIdentifier:
-+ _objc_msgSend$isVisualIntelligenceDefaultLibrary
 - GCC_except_table10055
 - GCC_except_table10060
 - GCC_except_table10064
@@ -2616,7 +2577,6 @@ Symbols:
 - GCC_except_table9981
 - GCC_except_table9984
 - GCC_except_table9986
-- _objc_msgSend$initWithLexemeID:type:category:text:identifier:
 CStrings:
 + "Failed to enforce the download-originals prefetch mode on the Visual Intelligence library: %@"
 + "Inserted primary lexeme has neither content nor identifier"

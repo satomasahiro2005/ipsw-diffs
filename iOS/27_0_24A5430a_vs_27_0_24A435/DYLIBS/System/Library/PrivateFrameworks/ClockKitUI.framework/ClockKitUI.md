@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ClockKitUI.framework/ClockKitUI`
 
-```diff
+### Section Size Changes
 
- 2483.523.0.4.0
--  __TEXT.__text: 0x38704
-+  __TEXT.__text: 0x3871c
-   __TEXT.__objc_methlist: 0x4864
-   __TEXT.__const: 0x80e6
-   __TEXT.__gcc_except_tab: 0x4e8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x38704` | `0x3871c` | **`+0x18`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __CLKUIRawImageGenerateMipmapsSRGB8 : 480 -> 508
 ~ -[UIView(ClockKitUI) _updateFilter:amount:] : 1172 -> 1176

@@ -2,22 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/SpotlightServices.framework/SpotlightServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x15f69c` | `0x15f6cc` | **`+0x30`** |
+
+### Other Changes
+
 ```diff
 
- 2459.105.0.0.0
--  __TEXT.__text: 0x15f69c
-+  __TEXT.__text: 0x15f6cc
-   __TEXT.__objc_methlist: 0xe628
-   __TEXT.__const: 0x2df8
-   __TEXT.__cstring: 0x3a8ba
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 6435
--  Symbols:   14843
-+  Symbols:   14844
-   CStrings:  7929
- 
+-  Symbols:   11465
++  Symbols:   11466
 Symbols:
 + _OUTLINED_FUNCTION_13
 Functions:

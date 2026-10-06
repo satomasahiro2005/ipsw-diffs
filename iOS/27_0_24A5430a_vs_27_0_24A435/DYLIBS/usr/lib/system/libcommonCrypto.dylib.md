@@ -2,14 +2,15 @@
 
 > `/usr/lib/system/libcommonCrypto.dylib`
 
-```diff
+### Section Size Changes
 
- 600041.0.0.0.0
--  __TEXT.__text: 0xb428
-+  __TEXT.__text: 0xb434
-   __TEXT.__cstring: 0x2fc
-   __TEXT.__const: 0x24c
-   __TEXT.__oslogstring: 0x19
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb428` | `0xb434` | **`+0xc`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _ccClearCryptor : 236 -> 244
 ~ _CCECCryptorTwinDiversifyKey : 268 -> 272

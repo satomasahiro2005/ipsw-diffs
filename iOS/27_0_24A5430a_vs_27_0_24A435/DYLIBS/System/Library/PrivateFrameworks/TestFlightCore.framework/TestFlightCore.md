@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/TestFlightCore.framework/TestFlightCore`
 
-```diff
+### Section Size Changes
 
- 4.5.14.0.0
--  __TEXT.__text: 0x518b8
-+  __TEXT.__text: 0x518bc
-   __TEXT.__objc_methlist: 0x2d54
-   __TEXT.__const: 0x1f94
-   __TEXT.__cstring: 0x21ea
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x518b8` | `0x518bc` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2ae4241fc -> sub_2af21c1fc : 340 -> 344
+~ sub_2ae3101fc -> sub_2af1061fc : 340 -> 344
 ```

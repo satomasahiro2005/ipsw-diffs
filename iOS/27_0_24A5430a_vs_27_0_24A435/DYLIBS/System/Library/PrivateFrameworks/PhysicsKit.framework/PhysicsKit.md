@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/PhysicsKit.framework/PhysicsKit`
 
-```diff
+### Section Size Changes
 
- 43.0.1.0.0
--  __TEXT.__text: 0x3ade8
-+  __TEXT.__text: 0x3ae4c
-   __TEXT.__objc_methlist: 0x15c4
-   __TEXT.__gcc_except_tab: 0x2598
-   __TEXT.__const: 0x1b64
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3ade8` | `0x3ae4c` | **`+0x64`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__16vectorI14b2FixtureProxyNS_9allocatorIS1_EEE6resizeEm : 284 -> 288
 ~ __ZN13b2DynamicTree10InsertLeafEi : 912 -> 920

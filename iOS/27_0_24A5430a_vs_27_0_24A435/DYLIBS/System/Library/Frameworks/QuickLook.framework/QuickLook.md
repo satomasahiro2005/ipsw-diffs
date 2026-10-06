@@ -2,14 +2,15 @@
 
 > `/System/Library/Frameworks/QuickLook.framework/QuickLook`
 
-```diff
+### Section Size Changes
 
- 1034.0.0.0.0
--  __TEXT.__text: 0xdddb4
-+  __TEXT.__text: 0xdddb8
-   __TEXT.__delay_helper: 0x948
-   __TEXT.__objc_methlist: 0xb894
-   __TEXT.__const: 0x3b94
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xdddb4` | `0xdddb8` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_24af144d8 -> sub_24b9004d8 : 236 -> 240
+~ sub_24adc14d8 -> sub_24b7b44d8 : 236 -> 240
 ```

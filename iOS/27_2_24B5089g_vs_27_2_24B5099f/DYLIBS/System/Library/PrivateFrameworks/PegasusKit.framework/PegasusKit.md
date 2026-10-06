@@ -2,66 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/PegasusKit.framework/PegasusKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1067cc` | `0x107e74` | **`+0x16a8`** |
+| `__TEXT.__oslogstring` | `0x32ef` | `0x34af` | **`+0x1c0`** |
+| `__DATA.__bss` | `0x2aa0` | `0x2ba0` | **`+0x100`** |
+| `__TEXT.__swift5_reflstr` | `0x263d` | `0x270d` | **`+0xd0`** |
+| `__TEXT.__cstring` | `0x30b1` | `0x3121` | **`+0x70`** |
+| `__TEXT.__swift5_fieldmd` | `0x20f4` | `0x2160` | **`+0x6c`** |
+| `__TEXT.__const` | `0x69a0` | `0x69e0` | **`+0x40`** |
+| `__TEXT.__eh_frame` | `0x7118` | `0x7140` | **`+0x28`** |
+| `__TEXT.__swift5_capture` | `0x4324` | `0x433c` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x31e8` | `0x3200` | **`+0x18`** |
+| `__TEXT.__swift5_typeref` | `0x320a` | `0x3218` | **`+0xe`** |
+| `__AUTH_CONST.__auth_got` | `0x1d30` | `0x1d38` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x2a0` | `0x2a8` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x53c` | `0x540` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3605.23.1.1.1
--  __TEXT.__text: 0xf9a98
 +3605.26.1.0.0
-+  __TEXT.__text: 0xfb088
-   __TEXT.__objc_methlist: 0x508
--  __TEXT.__const: 0x69a0
--  __TEXT.__swift5_typeref: 0x320a
-+  __TEXT.__const: 0x69e0
-+  __TEXT.__swift5_typeref: 0x3218
-   __TEXT.__constg_swiftt: 0x302c
--  __TEXT.__swift5_reflstr: 0x263d
--  __TEXT.__swift5_fieldmd: 0x20f4
-+  __TEXT.__swift5_reflstr: 0x270d
-+  __TEXT.__swift5_fieldmd: 0x2160
-   __TEXT.__swift5_builtin: 0x78
--  __TEXT.__cstring: 0x30b1
--  __TEXT.__oslogstring: 0x32ef
--  __TEXT.__swift5_proto: 0x2a0
-+  __TEXT.__cstring: 0x3121
-+  __TEXT.__oslogstring: 0x34af
-+  __TEXT.__swift5_proto: 0x2a8
-   __TEXT.__swift5_types: 0x1d4
-   __TEXT.__swift5_protos: 0xb0
--  __TEXT.__swift5_capture: 0x4324
-+  __TEXT.__swift5_capture: 0x433c
-   __TEXT.__swift_as_entry: 0x24c
-   __TEXT.__swift_as_ret: 0x2ac
--  __TEXT.__swift_as_cont: 0x53c
-+  __TEXT.__swift_as_cont: 0x540
-   __TEXT.__swift5_assocty: 0x2d8
-   __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__unwind_info: 0x3928
--  __TEXT.__eh_frame: 0x7118
-+  __TEXT.__unwind_info: 0x3960
-+  __TEXT.__eh_frame: 0x7140
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0xc258
-   __AUTH_CONST.__objc_const: 0x2990
--  __AUTH_CONST.__auth_got: 0x1d30
-+  __AUTH_CONST.__auth_got: 0x1d38
-   __AUTH.__objc_data: 0x50
-   __AUTH.__data: 0x150
-   __DATA.__data: 0xc98
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  Functions: 5929
+-  Functions: 5930
 -  Symbols:   1703
 -  CStrings:  600
-+  Functions: 5951
++  Functions: 5952
 +  Symbols:   1713
 +  CStrings:  609
- 
 Symbols:
 + _OUTLINED_FUNCTION_427
 + _OUTLINED_FUNCTION_428

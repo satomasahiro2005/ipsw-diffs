@@ -2,61 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/CoreLocationProtobuf.framework/CoreLocationProtobuf`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8a9d0` | `0x96b14` | **`+0xc144`** |
+| `__AUTH_CONST.__objc_const` | `0xe330` | `0xfad0` | **`+0x17a0`** |
+| `__TEXT.__objc_methlist` | `0xa78c` | `0xb6c4` | **`+0xf38`** |
+| `__AUTH_CONST.__cfstring` | `0x49e0` | `0x5120` | **`+0x740`** |
+| `__AUTH.__objc_data` | `0x1e0` | `0x640` | **`+0x460`** |
+| `__TEXT.__cstring` | `0x28f9` | `0x2d20` | **`+0x427`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3568` | `0x3950` | **`+0x3e8`** |
+| `__TEXT.__unwind_info` | `0x1380` | `0x1518` | **`+0x198`** |
+| `__DATA.__objc_ivar` | `0xac4` | `0xbcc` | **`+0x108`** |
+| `__DATA_CONST.__const` | `0x5a8` | `0x660` | **`+0xb8`** |
+| `__DATA_DIRTY.__objc_data` | `0x1d10` | `0x1c70` | **`-0xa0`** |
+| `__DATA_CONST.__got` | `0x2d8` | `0x338` | **`+0x60`** |
+| `__DATA_CONST.__objc_classlist` | `0x318` | `0x378` | **`+0x60`** |
+| `__DATA_CONST.__objc_superrefs` | `0x318` | `0x378` | **`+0x60`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x8a9d0
--  __TEXT.__objc_methlist: 0xa78c
-+  __TEXT.__text: 0x96b14
-+  __TEXT.__objc_methlist: 0xb6c4
-   __TEXT.__const: 0x50
--  __TEXT.__cstring: 0x28f9
--  __TEXT.__unwind_info: 0x1380
-+  __TEXT.__cstring: 0x2d20
-+  __TEXT.__unwind_info: 0x1518
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x5a8
--  __DATA_CONST.__objc_classlist: 0x318
-+  __DATA_CONST.__const: 0x660
-+  __DATA_CONST.__objc_classlist: 0x378
-   __DATA_CONST.__objc_protolist: 0x8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3568
--  __DATA_CONST.__objc_superrefs: 0x318
--  __DATA_CONST.__got: 0x2d8
--  __AUTH_CONST.__cfstring: 0x49e0
--  __AUTH_CONST.__objc_const: 0xe330
-+  __DATA_CONST.__objc_selrefs: 0x3950
-+  __DATA_CONST.__objc_superrefs: 0x378
-+  __DATA_CONST.__got: 0x338
-+  __AUTH_CONST.__cfstring: 0x5120
-+  __AUTH_CONST.__objc_const: 0xfad0
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x1e0
--  __DATA.__objc_ivar: 0xac4
-+  __AUTH.__objc_data: 0x640
-+  __DATA.__objc_ivar: 0xbcc
-   __DATA.__data: 0x60
--  __DATA_DIRTY.__objc_data: 0x1d10
-+  __DATA_DIRTY.__objc_data: 0x1c70
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
+-168.0.0.0.0
++169.0.0.0.0
+
 -  Functions: 3608
--  Symbols:   9067
--  CStrings:  1225
+-  Symbols:   5167
+-  CStrings:  634
 +  Functions: 3933
-+  Symbols:   9885
-+  CStrings:  1341
- 
-Sections:
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA.__data : content changed
++  Symbols:   5654
++  CStrings:  692
 Symbols:
 + -[CLPIndoorEvent hasProximityAccessoryMeta]
 + -[CLPIndoorEvent hasProximityAccessoryMotion]
@@ -545,24 +522,6 @@ Symbols:
 + __OBJC_METACLASS_RO_$_CLPProximityTriggerInfoEvent
 + __OBJC_METACLASS_RO_$_CLPProximityVIOPoseEvent
 + __OBJC_METACLASS_RO_$_CLPProximityVehicularStateEvent
-+ _objc_msgSend$addPoseMatrix:
-+ _objc_msgSend$clearPoseMatrixs
-+ _objc_msgSend$poseMatrixAtIndex:
-+ _objc_msgSend$poseMatrixsCount
-+ _objc_msgSend$setProximityAccessoryMeta:
-+ _objc_msgSend$setProximityAccessoryMotion:
-+ _objc_msgSend$setProximityAlertRaised:
-+ _objc_msgSend$setProximityGPSTile:
-+ _objc_msgSend$setProximityLOI:
-+ _objc_msgSend$setProximityLastVisitLocation:
-+ _objc_msgSend$setProximityMonitoredDeviceCount:
-+ _objc_msgSend$setProximityPOIType:
-+ _objc_msgSend$setProximityRangeMeasurement:
-+ _objc_msgSend$setProximityReunionLocation:
-+ _objc_msgSend$setProximityScanLocation:
-+ _objc_msgSend$setProximityTriggerInfo:
-+ _objc_msgSend$setProximityVIOPose:
-+ _objc_msgSend$setProximityVehicularState:
 CStrings:
 + "DEVICE_PDR"
 + "HEADSET"
@@ -622,5 +581,4 @@ CStrings:
 + "track_score"
 + "trackingState"
 + "useCase"
-
 ```

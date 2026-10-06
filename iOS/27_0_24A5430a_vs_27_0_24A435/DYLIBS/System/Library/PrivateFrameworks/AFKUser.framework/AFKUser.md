@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/AFKUser.framework/AFKUser`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_0 : 16 -> 32

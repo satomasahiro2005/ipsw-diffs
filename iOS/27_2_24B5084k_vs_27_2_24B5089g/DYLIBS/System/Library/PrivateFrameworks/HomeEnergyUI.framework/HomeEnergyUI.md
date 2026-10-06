@@ -2,74 +2,36 @@
 
 > `/System/Library/PrivateFrameworks/HomeEnergyUI.framework/HomeEnergyUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x262a4c` | `0x265578` | **`+0x2b2c`** |
+| `__TEXT.__swift5_typeref` | `0x234d8` | `0x230d0` | **`-0x408`** |
+| `__DATA_DIRTY.__data` | `0x56a0` | `0x55a0` | **`-0x100`** |
+| `__AUTH_CONST.__const` | `0x8180` | `0x80b8` | **`-0xc8`** |
+| `__DATA.__data` | `0x4930` | `0x49d0` | **`+0xa0`** |
+| `__TEXT.__swift5_reflstr` | `0x555a` | `0x54fa` | **`-0x60`** |
+| `__TEXT.__swift5_capture` | `0x1410` | `0x13b4` | **`-0x5c`** |
+| `__TEXT.__const` | `0x10720` | `0x106f0` | **`-0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0x4714` | `0x46e4` | **`-0x30`** |
+| `__TEXT.__unwind_info` | `0x5ac0` | `0x5a90` | **`-0x30`** |
+| `__AUTH_CONST.__auth_got` | `0x2d40` | `0x2d20` | **`-0x20`** |
+| `__TEXT.__cstring` | `0xc7d5` | `0xc7e5` | **`+0x10`** |
+| `__TEXT.__oslogstring` | `0x58ea` | `0x58fa` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x1590` | `0x1588` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -504.0.0.0.0
--  __TEXT.__text: 0x24d694
 +506.0.0.0.0
-+  __TEXT.__text: 0x25024c
-   __TEXT.__objc_methlist: 0x23c
--  __TEXT.__const: 0x10720
-+  __TEXT.__const: 0x106f0
-   __TEXT.__constg_swiftt: 0x4dd0
--  __TEXT.__swift5_typeref: 0x234d8
--  __TEXT.__swift5_fieldmd: 0x4714
-+  __TEXT.__swift5_typeref: 0x230d0
-+  __TEXT.__swift5_fieldmd: 0x46e4
-   __TEXT.__swift5_builtin: 0xc8
--  __TEXT.__swift5_reflstr: 0x555a
--  __TEXT.__oslogstring: 0x58ea
--  __TEXT.__cstring: 0xc7d5
-+  __TEXT.__swift5_reflstr: 0x54fa
-+  __TEXT.__oslogstring: 0x58fa
-+  __TEXT.__cstring: 0xc7e5
-   __TEXT.__swift5_assocty: 0xee8
-   __TEXT.__swift5_proto: 0x5bc
-   __TEXT.__swift5_types: 0x410
--  __TEXT.__swift5_capture: 0x1410
-+  __TEXT.__swift5_capture: 0x13b4
-   __TEXT.__swift_as_entry: 0x430
-   __TEXT.__swift_as_ret: 0x428
-   __TEXT.__swift_as_cont: 0x8a4
-   __TEXT.__swift5_protos: 0x30
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x7190
-+  __TEXT.__unwind_info: 0x7138
-   __TEXT.__eh_frame: 0xa50c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x490
-   __DATA_CONST.__objc_protorefs: 0x38
--  __DATA_CONST.__got: 0x1590
--  __AUTH_CONST.__const: 0x8180
-+  __DATA_CONST.__got: 0x1588
-+  __AUTH_CONST.__const: 0x80b8
-   __AUTH_CONST.__objc_const: 0x2ad8
--  __AUTH_CONST.__auth_got: 0x2d40
-+  __AUTH_CONST.__auth_got: 0x2d20
-   __AUTH.__objc_data: 0x3e8
-   __AUTH.__data: 0x32e8
--  __DATA.__data: 0x4930
-+  __DATA.__data: 0x49d0
-   __DATA.__common: 0x7c8
-   __DATA_DIRTY.__objc_data: 0x298
--  __DATA_DIRTY.__data: 0x56a0
-+  __DATA_DIRTY.__data: 0x55a0
-   __DATA_DIRTY.__bss: 0x4fb0
-   __DATA_DIRTY.__common: 0x228
-   - /System/Library/Frameworks/Charts.framework/Charts
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7913
--  Symbols:   3160
+-  Symbols:   3043
 +  Functions: 7893
-+  Symbols:   3152
-   CStrings:  1430
- 
++  Symbols:   3035
 Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA4ViewP6ChartsE10chartXAxis7contentQrqd__yXE_tAF04AxisD0Rd__lFQOyAeFE0G9PlotStyleAHQrqd__AF05ChartkD0Vc_tAaDRd__lFQOyAF0M0VyAA05TupleD0VyAF0mD0PAFE6offset1x1yQr12CoreGraphics7CGFloatV_AXtFQOyArFE010foregroundL0yQrqd__AA05ShapeL0Rd__lFQOyAF13RectangleMarkV_AA03AnytL0VQo__Qo__AA7ForEachVySay010HomeEnergyB016FeaturedIntervalVG10Foundation4UUIDVArFE23accessibilityIdentifieryQrSSFQOyArFEAstUQrAX_AXtFQOyArFE10annotation8position9alignment7spacingAHQrAF18AnnotationPositionV_AA9AlignmentVAXSgqd__yXEtAaDRd__lFQOyArFE12cornerRadius_5styleQrAX_AA013RoundedCornerL0OtFQOyArFE20rectangleCornerRadii_A25_QrAA0U11CornerRadiiV_A27_tFQOyA3__Qo__Qo__AA0E8ThatFitsVyAPyACyACyACyACyACyAA5ImageVSgAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGA7_17PinnedDynamicSize33_0A0CA896445239EE917525219C059F9BLLVGAA16_BlendModeEffectVGAA011_ForegroundL8ModifierVyAA5ColorVGGAA31AccessibilityAttachmentModifierVG_A55_QPGGQo__Qo__Qo_GArFE04lineL0yQrAA06StrokeL0VFQOyArFEAYyQrqd__AaZRd__lFQOyAF04RuleV0V_A55_Qo__Qo_QPGG_AE9WidgetKitE16widgetAccentableyQrSbFQOyACyAlA12_FrameLayoutVG_Qo_Qo__AfIPAFE16compositingLayerA25_Qrqd__AA011PlaceholderdE0VyxGXE_tAaDRd__lFQOyAF0J5MarksVyAF18BuilderConditionalVyAF0J10ValueLabelVyACyACyACyACyAeAE4boldyQrSbFQOyACyACyAA4TextVA47_GA39_yA96_4CaseOSgGG_Qo_A56_GAA14_PaddingLayoutVGA106_GAA16_FixedSizeLayoutVGGAF07BuilderN0VyAF0jV0PAFEAstUQrAX_AXtFQOyA116_AFEAYyQrqd__AaZRd__lFQOyAF0J8GridLineV_AA08_OpacitytL0VyAA012HierarchicaltL8ModifierVyA55_GGQo__Qo_Sg_A114_yA116_AFEAstUQrAX_AXtFQOyA116_AFEAYyQrqd__AaZRd__lFQOyAF0J4TickV_A124_Qo__Qo__A116_AFEAstUQrAX_AXtFQOyA93_yACyA97_A110_GG_Qo_QPGSgQPGGSgG_AEA76_EA77_yQrSbFQOyA86_yA140_G_Qo_Qo_Qo_A106_GAaDHPqd0__AaDHD3_A144_HO_A106_AA0E8ModifierHPyHCHC
 + _symbolic _____yAAyAAyAAy_____yAAyAAy__________G_____y_____SgGG_Qo______y_____GG_____GAOG_____G 7SwiftUI15ModifiedContentV AA4ViewPAAE4boldyQrSbFQO AA4TextV 010HomeEnergyB017PinnedDynamicSize33_0A0CA896445239EE917525219C059F9BLLV AA30_EnvironmentKeyWritingModifierV AH4CaseO AA016_ForegroundStyleU0V AA5ColorV AA14_PaddingLayoutV AA06_FixedL6LayoutV

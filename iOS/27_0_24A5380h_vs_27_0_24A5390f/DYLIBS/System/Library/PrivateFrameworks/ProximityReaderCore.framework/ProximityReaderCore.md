@@ -2,114 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/ProximityReaderCore.framework/ProximityReaderCore`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__swift5_protos`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__AUTH_CONST.__cfstring`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1398d0` | `0x1449ec` | **`+0xb11c`** |
+| `__TEXT.__oslogstring` | `0x36d6` | `0x3c86` | **`+0x5b0`** |
+| `__TEXT.__eh_frame` | `0x672c` | `0x6b24` | **`+0x3f8`** |
+| `__AUTH_CONST.__const` | `0x12d10` | `0x130c8` | **`+0x3b8`** |
+| `__TEXT.__const` | `0x1f5d8` | `0x1f948` | **`+0x370`** |
+| `__TEXT.__swift5_typeref` | `0x6666` | `0x68d2` | **`+0x26c`** |
+| `__AUTH.__data` | `0x31e8` | `0x3438` | **`+0x250`** |
+| `__AUTH_CONST.__objc_const` | `0x4268` | `0x4488` | **`+0x220`** |
+| `__TEXT.__constg_swiftt` | `0x5f4c` | `0x613c` | **`+0x1f0`** |
+| `__TEXT.__unwind_info` | `0x5898` | `0x5a40` | **`+0x1a8`** |
+| `__TEXT.__swift5_fieldmd` | `0x6b8c` | `0x6cb0` | **`+0x124`** |
+| `__TEXT.__cstring` | `0x652c` | `0x664c` | **`+0x120`** |
+| `__AUTH.__objc_data` | `0x19c0` | `0x1ac8` | **`+0x108`** |
+| `__TEXT.__swift5_capture` | `0x8d8` | `0x9dc` | **`+0x104`** |
+| `__DATA.__bss` | `0x3bbe0` | `0x3bcc0` | **`+0xe0`** |
+| `__DATA.__data` | `0x2fd0` | `0x30b0` | **`+0xe0`** |
+| `__TEXT.__swift5_reflstr` | `0x3aa2` | `0x3b72` | **`+0xd0`** |
+| `__TEXT.__swift_as_cont` | `0x1e4` | `0x224` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x17b8` | `0x17e8` | **`+0x30`** |
+| `__TEXT.__swift_as_entry` | `0x160` | `0x190` | **`+0x30`** |
+| `__TEXT.__swift_as_ret` | `0x120` | `0x14c` | **`+0x2c`** |
+| `__TEXT.__swift5_types` | `0x93c` | `0x958` | **`+0x1c`** |
+| `__DATA_CONST.__objc_classlist` | `0x1a0` | `0x1b0` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x1ca0` | `0x1cb0` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa58` | `0xa60` | **`+0x8`** |
+| `__TEXT.__objc_methlist` | `0x1150` | `0x1158` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -150.30.1.0.0
--  __TEXT.__text: 0x1398d0
--  __TEXT.__objc_methlist: 0x1150
--  __TEXT.__const: 0x1f5d8
--  __TEXT.__cstring: 0x652c
--  __TEXT.__swift5_typeref: 0x6666
--  __TEXT.__constg_swiftt: 0x5f4c
--  __TEXT.__swift5_reflstr: 0x3aa2
--  __TEXT.__swift5_fieldmd: 0x6b8c
--  __TEXT.__swift5_proto: 0x1ca0
--  __TEXT.__swift5_types: 0x93c
 +150.32.0.0.0
-+  __TEXT.__text: 0x1449ec
-+  __TEXT.__objc_methlist: 0x1158
-+  __TEXT.__const: 0x1f948
-+  __TEXT.__cstring: 0x664c
-+  __TEXT.__swift5_typeref: 0x68d2
-+  __TEXT.__constg_swiftt: 0x613c
-+  __TEXT.__swift5_reflstr: 0x3b72
-+  __TEXT.__swift5_fieldmd: 0x6cb0
-+  __TEXT.__swift5_proto: 0x1cb0
-+  __TEXT.__swift5_types: 0x958
-   __TEXT.__swift5_assocty: 0x648
-   __TEXT.__swift5_builtin: 0x334
-   __TEXT.__swift5_mpenum: 0x64
--  __TEXT.__oslogstring: 0x36d6
-+  __TEXT.__oslogstring: 0x3c86
-   __TEXT.__swift5_protos: 0x40
--  __TEXT.__swift5_capture: 0x8d8
--  __TEXT.__swift_as_entry: 0x160
--  __TEXT.__swift_as_ret: 0x120
--  __TEXT.__swift_as_cont: 0x1e4
--  __TEXT.__unwind_info: 0x5898
--  __TEXT.__eh_frame: 0x672c
-+  __TEXT.__swift5_capture: 0x9dc
-+  __TEXT.__swift_as_entry: 0x190
-+  __TEXT.__swift_as_ret: 0x14c
-+  __TEXT.__swift_as_cont: 0x224
-+  __TEXT.__unwind_info: 0x5a40
-+  __TEXT.__eh_frame: 0x6b24
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x5d8
--  __DATA_CONST.__objc_classlist: 0x1a0
-+  __DATA_CONST.__objc_classlist: 0x1b0
-   __DATA_CONST.__objc_protolist: 0x130
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa58
-+  __DATA_CONST.__objc_selrefs: 0xa60
-   __DATA_CONST.__objc_protorefs: 0xe8
-   __DATA_CONST.__objc_superrefs: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x12d10
-+  __AUTH_CONST.__const: 0x130c8
-   __AUTH_CONST.__cfstring: 0x20
--  __AUTH_CONST.__objc_const: 0x4268
--  __AUTH_CONST.__auth_got: 0x17b8
--  __AUTH.__objc_data: 0x19c0
--  __AUTH.__data: 0x31e8
-+  __AUTH_CONST.__objc_const: 0x4488
-+  __AUTH_CONST.__auth_got: 0x17e8
-+  __AUTH.__objc_data: 0x1ac8
-+  __AUTH.__data: 0x3438
-   __DATA.__objc_ivar: 0x4
--  __DATA.__data: 0x2fd0
--  __DATA.__bss: 0x3bbe0
-+  __DATA.__data: 0x30b0
-+  __DATA.__bss: 0x3bcc0
-   __DATA.__common: 0x2b0
-   __DATA_DIRTY.__data: 0x170
-   __DATA_DIRTY.__bss: 0x20
 
-   - /System/Library/PrivateFrameworks/BarcodeSupport.framework/BarcodeSupport
-   - /System/Library/PrivateFrameworks/CoreIDV.framework/CoreIDV
-   - /System/Library/PrivateFrameworks/CoreTime.framework/CoreTime
 -  - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
-   - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
-   - /System/Library/PrivateFrameworks/OSEligibility.framework/OSEligibility
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8862
--  Symbols:   3653
+-  Symbols:   3455
 -  CStrings:  1103
 +  Functions: 9007
-+  Symbols:   3715
++  Symbols:   3509
 +  CStrings:  1134
- 
 Symbols:
 + _OBJC_CLASS_$_WiFiAwareDataSessionConfig
 + _OBJC_CLASS_$_WiFiAwareDevicesStore
@@ -149,22 +87,6 @@ Symbols:
 + _kSecAttrKeyType
 + _kSecAttrKeyTypeECSECPrimeRandom
 + _kSecOidCommonName
-+ _objc_msgSend$activatePairingModeWithConfig:delegate:completionHandler:
-+ _objc_msgSend$deactivate
-+ _objc_msgSend$deviceID
-+ _objc_msgSend$generateVoucherForPairingMode:completionHandler:
-+ _objc_msgSend$initSecureConnectionWithPairedDevice:configuration:
-+ _objc_msgSend$initWithDomain:code:userInfo:
-+ _objc_msgSend$initWithPairingConfig:delegate:
-+ _objc_msgSend$initWithPairingMode:pairingMetadata:
-+ _objc_msgSend$initWithServiceType:
-+ _objc_msgSend$pairWithDiscoveryResult:
-+ _objc_msgSend$pairedUUID
-+ _objc_msgSend$password
-+ _objc_msgSend$removeAllPairedDevicesFor:completionHandler:
-+ _objc_msgSend$setPairingSetupMode:
-+ _objc_msgSend$setPasswordVoucherToken:
-+ _objc_msgSend$token
 + _objc_release_x9
 + _sec_identity_create
 + _sec_protocol_metadata_create_secret
@@ -235,14 +157,6 @@ Symbols:
 - _associated conformance 19ProximityReaderCore11FeatureFlagOSHAASQ
 - _associated conformance 19ProximityReaderCore26CustomerActivityAttributesV12ContentStateV0G0O30ConnectionManagementCodingKeys33_F6ED9DBC254F1A55BCA084C4E206223CLLOs0K3KeyAAs23CustomStringConvertible
 - _associated conformance 19ProximityReaderCore26CustomerActivityAttributesV12ContentStateV0G0O30ConnectionManagementCodingKeys33_F6ED9DBC254F1A55BCA084C4E206223CLLOs0K3KeyAAs28CustomDebugStringConvertible
-- _objc_msgSend$configuration
-- _objc_msgSend$discoveryMode
-- _objc_msgSend$initWithDiscoveryResult:serviceType:serviceSpecificInfo:
-- _objc_msgSend$initWithPairingConfiguration:usingPairingDelegate:usingPairingPINCode:
-- _objc_msgSend$initWithSupportedPairSetupMethods:pairingCachingEnabled:
-- _objc_msgSend$setPairingCachingEnabled:
-- _objc_msgSend$setPairingMetadata:
-- _objc_msgSend$setPairingMethod:
 - _sec_identity_copy_SPAKE2PLUSV1_registration_record
 - _sec_identity_copy_SPAKE2PLUSV1_server_password_verifier
 - _sec_identity_create_client_SPAKE2PLUSV1_identity

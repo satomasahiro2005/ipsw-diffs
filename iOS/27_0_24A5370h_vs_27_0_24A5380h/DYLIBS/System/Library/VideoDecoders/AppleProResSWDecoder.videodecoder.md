@@ -2,59 +2,29 @@
 
 > `/System/Library/VideoDecoders/AppleProResSWDecoder.videodecoder`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x56f70` | `0x62860` | **`+0xb8f0`** |
+| `__AUTH_CONST.__const` | `0xe70` | `0x870` | **`-0x600`** |
+| `__DATA.__bss` | `0xbf0` | `0xef0` | **`+0x300`** |
+| `__TEXT.__eh_frame` | `0x550` | `0x3b8` | **`-0x198`** |
+| `__TEXT.__gcc_except_tab` | `0x4c0` | `0x638` | **`+0x178`** |
+| `__TEXT.__unwind_info` | `0x670` | `0x710` | **`+0xa0`** |
+| `__AUTH_CONST.__auth_got` | `0x3a0` | `0x3a8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x56f70
-+  __TEXT.__text: 0x62860
-   __TEXT.__const: 0x696e8
--  __TEXT.__gcc_except_tab: 0x4c0
-+  __TEXT.__gcc_except_tab: 0x638
-   __TEXT.__cstring: 0x4f3
-   __TEXT.__oslogstring: 0x120
--  __TEXT.__unwind_info: 0x670
--  __TEXT.__eh_frame: 0x550
-+  __TEXT.__unwind_info: 0x710
-+  __TEXT.__eh_frame: 0x3b8
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x658
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
-   __DATA_CONST.__objc_arraydata: 0x30
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xe70
-+  __AUTH_CONST.__const: 0x870
-   __AUTH_CONST.__cfstring: 0x460
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x18
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x3a0
-+  __AUTH_CONST.__auth_got: 0x3a8
-   __DATA.__data: 0x168
--  __DATA.__bss: 0xbf0
-+  __DATA.__bss: 0xef0
-   __DATA.__common: 0x1
-   __DATA_DIRTY.__bss: 0x8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+-50204.0.0.0.0
++60623.0.0.0.0
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 850
--  Symbols:   2101
+-  Symbols:   999
 +  Functions: 1024
-+  Symbols:   2464
-   CStrings:  96
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __DATA.__data : content changed
++  Symbols:   1144
 Symbols:
 + GCC_except_table13
 + GCC_except_table16
@@ -211,5 +181,4 @@ Symbols:
 - GCC_except_table20
 - _OUTLINED_FUNCTION_7
 - __ZN12SliceDecoder6decodeERK17SliceDecodeParams
-
 ```

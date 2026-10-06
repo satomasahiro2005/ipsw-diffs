@@ -2,105 +2,53 @@
 
 > `/System/Library/PrivateFrameworks/MagnifierSupport.framework/MagnifierSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3cda0c` | `0x3daf9c` | **`+0xd590`** |
+| `__TEXT.__cstring` | `0xdf68` | `0xec18` | **`+0xcb0`** |
+| `__TEXT.__eh_frame` | `0x12b7c` | `0x133c4` | **`+0x848`** |
+| `__AUTH_CONST.__const` | `0x18898` | `0x18cc0` | **`+0x428`** |
+| `__TEXT.__oslogstring` | `0x67de` | `0x6b9e` | **`+0x3c0`** |
+| `__TEXT.__const` | `0x214e0` | `0x21830` | **`+0x350`** |
+| `__AUTH_CONST.__objc_const` | `0x128d8` | `0x12bc8` | **`+0x2f0`** |
+| `__TEXT.__unwind_info` | `0xbd38` | `0xc010` | **`+0x2d8`** |
+| `__TEXT.__swift5_reflstr` | `0xd567` | `0xd777` | **`+0x210`** |
+| `__TEXT.__constg_swiftt` | `0xb50c` | `0xb704` | **`+0x1f8`** |
+| `__TEXT.__swift5_capture` | `0x501c` | `0x5210` | **`+0x1f4`** |
+| `__AUTH.__data` | `0x61b8` | `0x6328` | **`+0x170`** |
+| `__AUTH.__objc_data` | `0x79c0` | `0x7b18` | **`+0x158`** |
+| `__TEXT.__swift5_typeref` | `0x19034` | `0x1917e` | **`+0x14a`** |
+| `__DATA.__bss` | `0x1aa28` | `0x1ab58` | **`+0x130`** |
+| `__TEXT.__swift5_fieldmd` | `0x9468` | `0x9584` | **`+0x11c`** |
+| `__DATA.__data` | `0x94e0` | `0x9580` | **`+0xa0`** |
+| `__TEXT.__swift_as_cont` | `0xdc4` | `0xe40` | **`+0x7c`** |
+| `__AUTH_CONST.__auth_got` | `0x38b8` | `0x3918` | **`+0x60`** |
+| `__DATA_CONST.__got` | `0x23c8` | `0x2400` | **`+0x38`** |
+| `__TEXT.__swift_as_entry` | `0x504` | `0x52c` | **`+0x28`** |
+| `__TEXT.__swift_as_ret` | `0x57c` | `0x598` | **`+0x1c`** |
+| `__DATA_CONST.__const` | `0x9e8` | `0x9f8` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4298` | `0x42a8` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x638` | `0x640` | **`+0x8`** |
+| `__DATA_DIRTY.__data` | `0x24f0` | `0x24f8` | **`+0x8`** |
+| `__DATA_DIRTY.__objc_data` | `0x3ab0` | `0x3ab8` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0xe70` | `0xe78` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x7e0` | `0x7e8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -283.0.0.0.0
--  __TEXT.__text: 0x3cda0c
 +286.0.0.0.0
-+  __TEXT.__text: 0x3daf9c
-   __TEXT.__objc_methlist: 0x5b24
--  __TEXT.__const: 0x214e0
--  __TEXT.__constg_swiftt: 0xb50c
--  __TEXT.__swift5_typeref: 0x19034
--  __TEXT.__swift5_reflstr: 0xd567
--  __TEXT.__swift5_fieldmd: 0x9468
-+  __TEXT.__const: 0x21830
-+  __TEXT.__constg_swiftt: 0xb704
-+  __TEXT.__swift5_typeref: 0x1917e
-+  __TEXT.__swift5_reflstr: 0xd777
-+  __TEXT.__swift5_fieldmd: 0x9584
-   __TEXT.__swift5_builtin: 0x49c
-   __TEXT.__swift5_assocty: 0x1978
--  __TEXT.__cstring: 0xdf68
--  __TEXT.__swift5_capture: 0x501c
--  __TEXT.__swift5_proto: 0xe70
--  __TEXT.__swift5_types: 0x7e0
--  __TEXT.__swift_as_entry: 0x504
--  __TEXT.__swift_as_cont: 0xdc4
--  __TEXT.__swift_as_ret: 0x57c
--  __TEXT.__oslogstring: 0x67de
-+  __TEXT.__cstring: 0xec18
-+  __TEXT.__swift5_capture: 0x5210
-+  __TEXT.__swift5_proto: 0xe78
-+  __TEXT.__swift5_types: 0x7e8
-+  __TEXT.__swift_as_entry: 0x52c
-+  __TEXT.__swift_as_cont: 0xe40
-+  __TEXT.__swift_as_ret: 0x598
-+  __TEXT.__oslogstring: 0x6b9e
-   __TEXT.__swift5_protos: 0xa4
-   __TEXT.__swift5_mpenum: 0x9c
-   __TEXT.__gcc_except_tab: 0xcc8
--  __TEXT.__unwind_info: 0xbd38
--  __TEXT.__eh_frame: 0x12b7c
-+  __TEXT.__unwind_info: 0xc010
-+  __TEXT.__eh_frame: 0x133c4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9e8
--  __DATA_CONST.__objc_classlist: 0x638
-+  __DATA_CONST.__const: 0x9f8
-+  __DATA_CONST.__objc_classlist: 0x640
-   __DATA_CONST.__objc_catlist: 0x20
-   __DATA_CONST.__objc_protolist: 0x2c8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x18
--  __DATA_CONST.__objc_selrefs: 0x4298
-+  __DATA_CONST.__objc_selrefs: 0x42a8
-   __DATA_CONST.__objc_protorefs: 0x150
-   __DATA_CONST.__objc_superrefs: 0x40
--  __DATA_CONST.__got: 0x23c8
--  __AUTH_CONST.__const: 0x18898
-+  __DATA_CONST.__got: 0x2400
-+  __AUTH_CONST.__const: 0x18cc0
-   __AUTH_CONST.__cfstring: 0x180
--  __AUTH_CONST.__objc_const: 0x128d8
-+  __AUTH_CONST.__objc_const: 0x12bc8
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_doubleobj: 0x50
--  __AUTH_CONST.__auth_got: 0x38b8
--  __AUTH.__objc_data: 0x79c0
--  __AUTH.__data: 0x61b8
-+  __AUTH_CONST.__auth_got: 0x3918
-+  __AUTH.__objc_data: 0x7b18
-+  __AUTH.__data: 0x6328
-   __DATA.__objc_ivar: 0x11c
--  __DATA.__data: 0x94e0
-+  __DATA.__data: 0x9580
-   __DATA.__objc_stublist: 0x30
--  __DATA.__bss: 0x1aa28
-+  __DATA.__bss: 0x1ab58
-   __DATA.__common: 0x9b0
--  __DATA_DIRTY.__objc_data: 0x3ab0
--  __DATA_DIRTY.__data: 0x24f0
-+  __DATA_DIRTY.__objc_data: 0x3ab8
-+  __DATA_DIRTY.__data: 0x24f8
-   __DATA_DIRTY.__bss: 0x2520
-   __DATA_DIRTY.__common: 0x348
-   - /System/Library/Frameworks/ARKit.framework/ARKit
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 16528
--  Symbols:   7635
+-  Symbols:   6202
 -  CStrings:  1849
 +  Functions: 16710
-+  Symbols:   7652
++  Symbols:   6218
 +  CStrings:  1878
- 
 Symbols:
 + _AXAIWhiteGloveLoggingEnabled
 + _UIAccessibilityTokenDynamicContentAnnouncement
@@ -125,9 +73,6 @@ Symbols:
 + _keypath_set.154Tm
 + _keypath_set.312Tm
 + _memcmp
-+ _objc_msgSend$applicationState
-+ _objc_msgSend$initWithBool:
-+ _objc_msgSend$systemUptime
 + _symbolic So16UIViewControllerCm
 + _symbolic So34AVCaptureDeviceRotationCoordinatorC
 + _symbolic _____ 16MagnifierSupport25MFParentalApprovalManagerC
@@ -171,8 +116,6 @@ Symbols:
 - _keypath_get.55Tm
 - _keypath_set.121Tm
 - _keypath_set.270Tm
-- _objc_msgSend$isKindOfClass:
-- _objc_msgSend$menu
 - _symbolic _____Sg 24AccessibilityUIUtilities20AXStoredViewModifierV
 - _symbolic _____yAAy__________y_____GG_____G_AAyAAy_____y_____y_____y_____y_____y__________y_____yAAy_____y_____y_____yAAyAAy_____yAIyAJyAAy_____yAAyAB_____GSSG_____y_____yAAyAB_____y_____GGGGG_AAyAIyAJy_____ySaySi6offset______7elementtGSiAJyAAyAPyAAyAAy__________G_____GSiG_____G______yAJyAAyAAy_____A9_G_____G_AMQPGGSgAAyAMA9_GSgQPGG_ASQPGGA9_GQPGGG_____ySSGGACyABGG_Qo__Qo__SayA3_GQo_A17_G_SbQo_GG_Qo_A43_G_AAy_____A12_GQPGGA7_G_____Gt 7SwiftUI15ModifiedContentV AA5ColorV AA24_BackgroundStyleModifierV AA8MaterialV AA30_SafeAreaRegionsIgnoringLayoutV AA6VStackV AA05TupleD0V AA012_ConditionalD0V AA4ViewP24AccessibilityUIUtilitiesE013axApplyStoredH0yQrSSFQO AA16ArrangedViews_v0V AA6SpacerV AA06ScrollR6ReaderV AsAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQO AsAEA0_A1_A2__Qrqd___Sbyqd___qd__tctSQRd__lFQO AsAE23scrollDismissesKeyboardyQrAA27ScrollDismissesKeyboardModeVFQO AsAE19defaultScrollAnchoryQrAA9UnitPointVSgFQO AA06ScrollR0V AA6IDViewV AA06_FrameN0V AA01_fH0V AA14GeometryReaderV AA018_PreferenceWritingH0V 16MagnifierSupport25ScrollOffsetPreferenceKeyV AA7ForEachV A22_10MAGMessageV A22_19AnimatedMessageCellV AA010_FlexFrameN0V AA08_PaddingN0V AA0s10AttachmentH0V AA6HStackV A22_22OpenWifiSettingsButtonV AA017_AppearanceActionH0V AA016_CoordinateSpaceH0V A22_21IntelligentInputFieldV AA14_OpacityEffectV
 - _symbolic _____yAAy_____y_____AAy_____y_____y_____y_____y_____y_____yAAyAAy__________y_____GG_____G_AAyAAy_____yAEy_____y_____y_____y__________y_____yAAy_____y_____y_____yAAyAAy_____yAMyAEyAAy_____yAAyAF_____GSSG_____y_____yAAyAF_____y_____GGGGG_AAyAMyAEy_____ySaySi6offset______7elementtGSiAEyAAyASyAAyAAy__________G_____GSiG_____G______yAEyAAyAAy_____A12_G_____G_APQPGGSgAAyAPA12_GSgQPGG_AVQPGGA12_GQPGGG_____ySSGGAGyAFGG_Qo__Qo__SayA6_GQo_A20_G_SbQo_GG_Qo_A46_G_AAy_____A15_GQPGGA10_G_____GQPGG_AEy_____yytAAy_____A55_GGSg_A59_yytAAy_____A55_GGQPGQo__SSQo__Qo__Qo_AKGGA20_GAYy_____GG 7SwiftUI15ModifiedContentV AA15NavigationStackV AA0E4PathV AA4ViewPAAE17toolbarBackground_3forQrAA10VisibilityO_AA16ToolbarPlacementVdtFQO AiAE29navigationBarTitleDisplayModeyQrAA0eP4ItemV0qrS0OFQO AiAE0oQ0yQrqd__SyRd__lFQO AiAE0I07contentQrqd__yXE_tAA0mD0Rd__lFQO AA6ZStackV AA05TupleD0V AA5ColorV AA01_J13StyleModifierV AA8MaterialV AA30_SafeAreaRegionsIgnoringLayoutV AA6VStackV AA012_ConditionalD0V AI24AccessibilityUIUtilitiesE013axApplyStoredZ0yQrSSFQO AA16ArrangedViews_v0V AA6SpacerV AA06ScrollH6ReaderV AiAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQO AiAEA21_A22_A23__Qrqd___Sbyqd___qd__tctSQRd__lFQO AiAE23scrollDismissesKeyboardyQrAA023ScrollDismissesKeyboardS0VFQO AiAE19defaultScrollAnchoryQrAA9UnitPointVSgFQO AA06ScrollH0V AA6IDViewV AA12_FrameLayoutV AA01_jZ0V AA14GeometryReaderV AA018_PreferenceWritingZ0V 16MagnifierSupport25ScrollOffsetPreferenceKeyV AA7ForEachV A43_10MAGMessageV A43_19AnimatedMessageCellV AA16_FlexFrameLayoutV AA14_PaddingLayoutV AA023AccessibilityAttachmentZ0V AA6HStackV A43_22OpenWifiSettingsButtonV AA017_AppearanceActionZ0V AA016_CoordinateSpaceZ0V A43_21IntelligentInputFieldV AA14_OpacityEffectV AA0mT0V A43_20TranscriptBackButtonV A43_24TranscriptCollapseButtonV AA09PreferredX9SchemeKeyV

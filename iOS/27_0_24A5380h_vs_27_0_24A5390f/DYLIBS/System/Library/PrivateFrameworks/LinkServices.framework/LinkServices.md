@@ -2,140 +2,69 @@
 
 > `/System/Library/PrivateFrameworks/LinkServices.framework/LinkServices`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_assocty`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_arraydata`
-- `__AUTH_CONST.__lazy_load_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__DATA_DIRTY.__data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14ce00` | `0x161ca8` | **`+0x14ea8`** |
+| `__AUTH_CONST.__objc_const` | `0x152b8` | `0x16628` | **`+0x1370`** |
+| `__TEXT.__eh_frame` | `0x6910` | `0x7870` | **`+0xf60`** |
+| `__AUTH_CONST.__const` | `0x6be8` | `0x7960` | **`+0xd78`** |
+| `__TEXT.__const` | `0x7e88` | `0x8898` | **`+0xa10`** |
+| `__AUTH.__data` | `0xcb8` | `0x1650` | **`+0x998`** |
+| `__TEXT.__oslogstring` | `0x71f7` | `0x799e` | **`+0x7a7`** |
+| `__TEXT.__unwind_info` | `0x64a8` | `0x6ba8` | **`+0x700`** |
+| `__TEXT.__cstring` | `0xbb3d` | `0xc1b3` | **`+0x676`** |
+| `__TEXT.__constg_swiftt` | `0x1a4c` | `0x207c` | **`+0x630`** |
+| `__TEXT.__objc_methlist` | `0xa850` | `0xaddc` | **`+0x58c`** |
+| `__TEXT.__swift5_typeref` | `0x2d24` | `0x3250` | **`+0x52c`** |
+| `__TEXT.__swift5_fieldmd` | `0x126c` | `0x1664` | **`+0x3f8`** |
+| `__TEXT.__swift5_capture` | `0x1248` | `0x15b8` | **`+0x370`** |
+| `__DATA_DIRTY.__objc_data` | `0x1ca8` | `0x1fa0` | **`+0x2f8`** |
+| `__AUTH_CONST.__cfstring` | `0x8400` | `0x8680` | **`+0x280`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4db0` | `0x5010` | **`+0x260`** |
+| `__TEXT.__gcc_except_tab` | `0x1e10` | `0x2064` | **`+0x254`** |
+| `__DATA.__data` | `0x2fe4` | `0x31e0` | **`+0x1fc`** |
+| `__TEXT.__swift5_reflstr` | `0xe31` | `0x1001` | **`+0x1d0`** |
+| `__DATA_CONST.__const` | `0x2620` | `0x27e0` | **`+0x1c0`** |
+| `__DATA.__bss` | `0x4c38` | `0x4de8` | **`+0x1b0`** |
+| `__DATA_CONST.__objc_classlist` | `0x798` | `0x840` | **`+0xa8`** |
+| `__AUTH.__objc_data` | `0x3920` | `0x39a8` | **`+0x88`** |
+| `__AUTH_CONST.__auth_got` | `0x1648` | `0x16d0` | **`+0x88`** |
+| `__TEXT.__swift_as_cont` | `0x110` | `0x198` | **`+0x88`** |
+| `__TEXT.__swift_as_entry` | `0x88` | `0x100` | **`+0x78`** |
+| `__TEXT.__swift_as_ret` | `0xac` | `0x120` | **`+0x74`** |
+| `__DATA_CONST.__got` | `0x1838` | `0x1898` | **`+0x60`** |
+| `__TEXT.__swift5_types` | `0x198` | `0x1f8` | **`+0x60`** |
+| `__TEXT.__dlopen_cstrs` | `0x507` | `0x565` | **`+0x5e`** |
+| `__TEXT.__swift5_proto` | `0x334` | `0x370` | **`+0x3c`** |
+| `__DATA_CONST.__objc_protolist` | `0x1b8` | `0x1e8` | **`+0x30`** |
+| `__DATA.__objc_ivar` | `0xab4` | `0xae0` | **`+0x2c`** |
+| `__DATA_CONST.__objc_protorefs` | `0xe0` | `0x108` | **`+0x28`** |
+| `__DATA.__common` | `0x640` | `0x658` | **`+0x18`** |
+| `__TEXT.__swift5_protos` | `0x4c` | `0x64` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x1e0` | `0x1f4` | **`+0x14`** |
+| `__DATA_CONST.__objc_superrefs` | `0x5e0` | `0x5f0` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x1b8` | `0x1c8` | **`+0x10`** |
+| `__TEXT.__swift5_mpenum` | `0x50` | `0x58` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -301.0.43.6.0
--  __TEXT.__text: 0x14ce00
 +301.0.45.4.101
-+  __TEXT.__text: 0x161ca8
-   __TEXT.__lazy_helpers: 0x54
--  __TEXT.__objc_methlist: 0xa850
--  __TEXT.__dlopen_cstrs: 0x507
--  __TEXT.__const: 0x7e88
--  __TEXT.__constg_swiftt: 0x1a4c
--  __TEXT.__swift5_typeref: 0x2d24
--  __TEXT.__swift5_builtin: 0x1e0
--  __TEXT.__swift5_reflstr: 0xe31
--  __TEXT.__swift5_fieldmd: 0x126c
-+  __TEXT.__objc_methlist: 0xaddc
-+  __TEXT.__dlopen_cstrs: 0x565
-+  __TEXT.__const: 0x8898
-+  __TEXT.__constg_swiftt: 0x207c
-+  __TEXT.__swift5_typeref: 0x3250
-+  __TEXT.__swift5_builtin: 0x1f4
-+  __TEXT.__swift5_reflstr: 0x1001
-+  __TEXT.__swift5_fieldmd: 0x1664
-   __TEXT.__swift5_assocty: 0x460
--  __TEXT.__swift5_capture: 0x1248
--  __TEXT.__cstring: 0xbb3d
--  __TEXT.__swift5_proto: 0x334
--  __TEXT.__swift5_types: 0x198
--  __TEXT.__swift5_protos: 0x4c
--  __TEXT.__oslogstring: 0x71f7
--  __TEXT.__swift_as_entry: 0x88
--  __TEXT.__swift_as_ret: 0xac
--  __TEXT.__swift_as_cont: 0x110
--  __TEXT.__swift5_mpenum: 0x50
--  __TEXT.__gcc_except_tab: 0x1e10
--  __TEXT.__unwind_info: 0x64a8
--  __TEXT.__eh_frame: 0x6910
-+  __TEXT.__swift5_capture: 0x15b8
-+  __TEXT.__cstring: 0xc1b3
-+  __TEXT.__swift5_proto: 0x370
-+  __TEXT.__swift5_types: 0x1f8
-+  __TEXT.__swift5_protos: 0x64
-+  __TEXT.__oslogstring: 0x799e
-+  __TEXT.__swift_as_entry: 0x100
-+  __TEXT.__swift_as_ret: 0x120
-+  __TEXT.__swift_as_cont: 0x198
-+  __TEXT.__swift5_mpenum: 0x58
-+  __TEXT.__gcc_except_tab: 0x2064
-+  __TEXT.__unwind_info: 0x6ba8
-+  __TEXT.__eh_frame: 0x7870
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2620
--  __DATA_CONST.__objc_classlist: 0x798
-+  __DATA_CONST.__const: 0x27e0
-+  __DATA_CONST.__objc_classlist: 0x840
-   __DATA_CONST.__objc_catlist: 0x128
--  __DATA_CONST.__objc_protolist: 0x1b8
-+  __DATA_CONST.__objc_protolist: 0x1e8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4db0
--  __DATA_CONST.__objc_protorefs: 0xe0
--  __DATA_CONST.__objc_superrefs: 0x5e0
-+  __DATA_CONST.__objc_selrefs: 0x5010
-+  __DATA_CONST.__objc_protorefs: 0x108
-+  __DATA_CONST.__objc_superrefs: 0x5f0
-   __DATA_CONST.__objc_arraydata: 0x38
--  __DATA_CONST.__got: 0x1838
--  __AUTH_CONST.__const: 0x6be8
--  __AUTH_CONST.__cfstring: 0x8400
--  __AUTH_CONST.__objc_const: 0x152b8
-+  __DATA_CONST.__got: 0x1898
-+  __AUTH_CONST.__const: 0x7960
-+  __AUTH_CONST.__cfstring: 0x8680
-+  __AUTH_CONST.__objc_const: 0x16628
-   __AUTH_CONST.__lazy_load_got: 0x8
-   __AUTH_CONST.__objc_intobj: 0x78
-   __AUTH_CONST.__objc_arrayobj: 0x30
--  __AUTH_CONST.__auth_got: 0x1648
--  __AUTH.__objc_data: 0x3920
--  __AUTH.__data: 0xcb8
--  __DATA.__objc_ivar: 0xab4
--  __DATA.__data: 0x2fe4
--  __DATA.__bss: 0x4c38
--  __DATA.__common: 0x640
--  __DATA_DIRTY.__objc_data: 0x1ca8
-+  __AUTH_CONST.__auth_got: 0x16d0
-+  __AUTH.__objc_data: 0x39a8
-+  __AUTH.__data: 0x1650
-+  __DATA.__objc_ivar: 0xae0
-+  __DATA.__data: 0x31e0
-+  __DATA.__bss: 0x4de8
-+  __DATA.__common: 0x658
-+  __DATA_DIRTY.__objc_data: 0x1fa0
-   __DATA_DIRTY.__data: 0x328
--  __DATA_DIRTY.__bss: 0x1b8
-+  __DATA_DIRTY.__bss: 0x1c8
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/AppIntentsTypeSupport.framework/AppIntentsTypeSupport
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
 +  - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-+  - /usr/lib/swift/libswiftCoreAudio.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
-   - /usr/lib/swift/libswiftCoreLocation.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
++  - /usr/lib/swift/libswiftCoreAudio.dylib
+
 -  Functions: 9748
--  Symbols:   11059
+-  Symbols:   8914
 -  CStrings:  2020
 +  Functions: 10347
-+  Symbols:   11473
++  Symbols:   9265
 +  CStrings:  2098
- 
 Symbols:
 + +[LNActionExecutor _ln_appProtectionStateProviderOverride]
 + +[LNActionExecutor _ln_setAppProtectionStateProviderOverride:]
@@ -565,70 +494,6 @@ Symbols:
 + _isTranscriptDonationQuotaOverrideEnabled
 + _notify_cancel
 + _notify_register_dispatch
-+ _objc_msgSend$_enqueueGetConnectionInterfaceWithOptions:completionHandler:
-+ _objc_msgSend$_handleRestrictionDenyError:forOperation:
-+ _objc_msgSend$_ln_appProtectionStateProviderOverride
-+ _objc_msgSend$_ln_resolveExtensionRestrictionTargetBundleIdentifier
-+ _objc_msgSend$_requestAppProtectionUnlockWithCompletion:
-+ _objc_msgSend$_runConnectionRestrictionCheckThenOpenInterfaceWithOptions:completionHandler:
-+ _objc_msgSend$_runOperationRestrictionCheckBeforeStartingOperation:
-+ _objc_msgSend$_startQueuedOperation:
-+ _objc_msgSend$applicationState
-+ _objc_msgSend$assistantDefinedSchemas
-+ _objc_msgSend$authorizationCache
-+ _objc_msgSend$checkConnectionRestrictionsForBundleIdentifier:completion:
-+ _objc_msgSend$checkOperationRestrictionsForBundleIdentifier:completion:
-+ _objc_msgSend$checkOperationRestrictionsForBundleIdentifier:reply:
-+ _objc_msgSend$connection:requestUnlockForAppProtectionWithReply:
-+ _objc_msgSend$decodedActionMetadataArrayFromJSONArray:error:
-+ _objc_msgSend$decodedActionMetadataFromJSON:error:
-+ _objc_msgSend$decodedActionMetadataMapFromJSONMap:error:
-+ _objc_msgSend$decodedActionMetadataSchemaMapFromJSONMap:error:
-+ _objc_msgSend$decodedEntityMetadataArrayFromJSONArray:error:
-+ _objc_msgSend$decodedEntityMetadataFromJSON:error:
-+ _objc_msgSend$decodedEntityMetadataMapFromJSONMap:error:
-+ _objc_msgSend$decodedEntityMetadataSchemaMapFromJSONMap:error:
-+ _objc_msgSend$decodedEnumMetadataArrayFromJSONArray:error:
-+ _objc_msgSend$decodedEnumMetadataMapFromJSONMap:error:
-+ _objc_msgSend$decodedEnumMetadataSchemaMapFromJSONMap:error:
-+ _objc_msgSend$decodedQueryMetadataArrayFromJSONArray:error:
-+ _objc_msgSend$decodedQueryMetadataFromJSON:error:
-+ _objc_msgSend$decodedQueryMetadataMapFromJSONMap:error:
-+ _objc_msgSend$decodedQueryMetadataSchemaMapFromJSONMap:error:
-+ _objc_msgSend$dictionaryWithCapacity:
-+ _objc_msgSend$entityForBundleIdentifier:withEntityIdentifier:waitForIndexing:error:
-+ _objc_msgSend$entityForBundleIdentifier:withEntityIdentifier:waitForIndexing:reply:
-+ _objc_msgSend$enums
-+ _objc_msgSend$executor:updateOpensIntentRequest:
-+ _objc_msgSend$extensionRestrictionTargetResolverOverride
-+ _objc_msgSend$forCurrentProcess
-+ _objc_msgSend$initWithIdentifier:bundleIdentifier:frameworkBundles:waitForIndexing:
-+ _objc_msgSend$initWithIdentifier:opensIntent:
-+ _objc_msgSend$initWithIntents:entities:queries:enums:
-+ _objc_msgSend$initWithPolicyChangeHandler:
-+ _objc_msgSend$invalidateAppProtectionAuthorization
-+ _objc_msgSend$isAppProtectionAuthorized
-+ _objc_msgSend$isLSRestrictedDistributedNotificationsEnabled
-+ _objc_msgSend$isRegistryEntitlementEnforced
-+ _objc_msgSend$isRestricted
-+ _objc_msgSend$isTranscriptDonationQuotaEnabled
-+ _objc_msgSend$ln_attributionBundleIdentifier
-+ _objc_msgSend$monitorWithPolicyChangeHandler:
-+ _objc_msgSend$opensIntent
-+ _objc_msgSend$postNotificationName:object:userInfo:
-+ _objc_msgSend$queries
-+ _objc_msgSend$recordAppProtectionAuthorization
-+ _objc_msgSend$removeObserver:name:object:
-+ _objc_msgSend$requestPoliciesForBundleIdentifiers:completionHandler:
-+ _objc_msgSend$restrictionCheck
-+ _objc_msgSend$restrictionReason
-+ _objc_msgSend$restrictionTargetBundleIdentifier
-+ _objc_msgSend$searchForQuery:error:
-+ _objc_msgSend$searchForQuery:reply:
-+ _objc_msgSend$shouldInvalidateAssertionAfterDonationForAction:
-+ _objc_msgSend$subscribeForOperationRestrictionInvalidationsWithReply:
-+ _objc_msgSend$unarchivedObjectOfClasses:fromData:error:
-+ _objc_msgSend$waitForIndexing
 + _shouldInvalidateAssertionAfterDonationForAction:.multiStepStartingSchemas
 + _shouldInvalidateAssertionAfterDonationForAction:.onceToken
 + _swift_defaultActor_deallocate
@@ -890,7 +755,6 @@ Symbols:
 - ___block_descriptor_48_e8_32r40r_e38_v24?0"LNActionMetadata"8"NSError"16lr32l8r40l8
 - ___block_descriptor_48_e8_32r40r_e38_v24?0"LNEntityMetadata"8"NSError"16lr32l8r40l8
 - ___block_descriptor_56_e8_32s40s48bs_e30_v24?0"NSNumber"8"NSError"16ls32l8s40l8s48l8
-- _objc_msgSend$initWithIdentifier:bundleIdentifier:frameworkBundles:
 CStrings:
 + "%{public}@ Releasing stale assertion from completed operation %{public}@"
 + "%{public}@ Restriction check allow %{public}@ for op %{public}@"

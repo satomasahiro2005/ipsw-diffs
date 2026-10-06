@@ -2,98 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/SiriSetup.framework/SiriSetup`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x348440` | `0x34c1cc` | **`+0x3d8c`** |
+| `__AUTH_CONST.__objc_const` | `0x92e0` | `0x96d0` | **`+0x3f0`** |
+| `__TEXT.__const` | `0x1d808` | `0x1da68` | **`+0x260`** |
+| `__AUTH.__data` | `0x5a20` | `0x5bf8` | **`+0x1d8`** |
+| `__TEXT.__swift5_fieldmd` | `0x7484` | `0x7638` | **`+0x1b4`** |
+| `__TEXT.__swift5_reflstr` | `0x83d1` | `0x8541` | **`+0x170`** |
+| `__TEXT.__swift5_typeref` | `0x2ca48` | `0x2cb74` | **`+0x12c`** |
+| `__DATA.__data` | `0x7f70` | `0x8050` | **`+0xe0`** |
+| `__TEXT.__unwind_info` | `0xb2b0` | `0xb378` | **`+0xc8`** |
+| `__TEXT.__constg_swiftt` | `0xb958` | `0xba18` | **`+0xc0`** |
+| `__TEXT.__cstring` | `0xc569` | `0xc609` | **`+0xa0`** |
+| `__TEXT.__oslogstring` | `0x37d2` | `0x3869` | **`+0x97`** |
+| `__AUTH_CONST.__auth_got` | `0x2e30` | `0x2eb0` | **`+0x80`** |
+| `__DATA.__bss` | `0x11a00` | `0x11a70` | **`+0x70`** |
+| `__AUTH_CONST.__const` | `0x13850` | `0x138b0` | **`+0x60`** |
+| `__TEXT.__eh_frame` | `0x9514` | `0x9574` | **`+0x60`** |
+| `__TEXT.__swift5_capture` | `0x37f8` | `0x3838` | **`+0x40`** |
+| `__DATA_CONST.__objc_classlist` | `0x458` | `0x468` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2110` | `0x2120` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x7fc` | `0x80c` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0xa3c` | `0xa40` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3605.24.1.1.2
--  __TEXT.__text: 0x32c3f4
 +3605.26.3.0.0
-+  __TEXT.__text: 0x3300ac
-   __TEXT.__objc_methlist: 0x1f88
--  __TEXT.__const: 0x1d808
--  __TEXT.__cstring: 0xc569
-+  __TEXT.__const: 0x1da68
-+  __TEXT.__cstring: 0xc609
-   __TEXT.__gcc_except_tab: 0x40
-   __TEXT.__dlopen_cstrs: 0x125
--  __TEXT.__oslogstring: 0x37d2
--  __TEXT.__swift5_typeref: 0x2ca48
--  __TEXT.__swift5_capture: 0x37f8
--  __TEXT.__constg_swiftt: 0xb958
--  __TEXT.__swift5_reflstr: 0x83d1
--  __TEXT.__swift5_fieldmd: 0x7484
-+  __TEXT.__oslogstring: 0x3869
-+  __TEXT.__swift5_typeref: 0x2cb74
-+  __TEXT.__swift5_capture: 0x3838
-+  __TEXT.__constg_swiftt: 0xba18
-+  __TEXT.__swift5_reflstr: 0x8541
-+  __TEXT.__swift5_fieldmd: 0x7638
-   __TEXT.__swift5_builtin: 0x294
-   __TEXT.__swift5_assocty: 0x18d8
--  __TEXT.__swift5_proto: 0xa3c
--  __TEXT.__swift5_types: 0x7fc
-+  __TEXT.__swift5_proto: 0xa40
-+  __TEXT.__swift5_types: 0x80c
-   __TEXT.__swift5_protos: 0xc8
-   __TEXT.__swift_as_entry: 0x2b8
-   __TEXT.__swift_as_ret: 0x2cc
-   __TEXT.__swift_as_cont: 0x554
-   __TEXT.__swift5_mpenum: 0x54
--  __TEXT.__unwind_info: 0xe6f0
--  __TEXT.__eh_frame: 0x954c
-+  __TEXT.__unwind_info: 0xe7d0
-+  __TEXT.__eh_frame: 0x95a4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x23c0
--  __DATA_CONST.__objc_classlist: 0x458
-+  __DATA_CONST.__objc_classlist: 0x468
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x108
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2110
-+  __DATA_CONST.__objc_selrefs: 0x2120
-   __DATA_CONST.__objc_protorefs: 0x80
-   __DATA_CONST.__objc_superrefs: 0x50
-   __DATA_CONST.__got: 0x1838
--  __AUTH_CONST.__const: 0x13850
-+  __AUTH_CONST.__const: 0x138b0
-   __AUTH_CONST.__cfstring: 0x1b60
--  __AUTH_CONST.__objc_const: 0x92e0
-+  __AUTH_CONST.__objc_const: 0x96d0
-   __AUTH_CONST.__objc_intobj: 0x18
--  __AUTH_CONST.__auth_got: 0x2e30
-+  __AUTH_CONST.__auth_got: 0x2eb0
-   __AUTH.__objc_data: 0x4188
--  __AUTH.__data: 0x5a20
-+  __AUTH.__data: 0x5bf8
-   __DATA.__objc_ivar: 0x70
--  __DATA.__data: 0x7f70
-+  __DATA.__data: 0x8050
-   __DATA.__objc_stublist: 0x8
-   __DATA.__common: 0x4e8
-   __DATA_DIRTY.__objc_data: 0x2918
 
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftObservation.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
 -  - /usr/lib/swift/libswiftRegexBuilder.dylib
-   - /usr/lib/swift/libswiftSceneKit.dylib
-   - /usr/lib/swift/libswiftSpatial.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 19380
--  Symbols:   42350
+-  Symbols:   41540
 -  CStrings:  1697
 +  Functions: 19477
-+  Symbols:   42597
++  Symbols:   41785
 +  CStrings:  1702
- 
 Symbols:
 + _$s10Foundation4DateVSgWOd
 + _$s7SwiftUI12TimelineViewVA2A0D0R_rlE_7contentACyxq_Gx_q_AC7ContextVyAA011EveryMinuteC8ScheduleVs5NeverO_Gctcfcq_AHyxq__GcfU_AA09AnimationcI0V_AA15ModifiedContentVyARyAA6ZStackVyAA05TupleM0VyAA14RadialGradientV_ARy9SiriSetup011OrbParticleD0VAA11_MaskEffectVyAXGGARyAaDPAAE05colorW0_9isEnabledQrAA6ShaderV_SbtFQOyAA5ColorV_Qo_AA08_OpacityW0VGARyA11_AA010_BlendModeW0VGQPGGAA017_CompositingGroupW0VGA1_yARyAxA05_BlurW0VGGGTg5Tm
@@ -418,8 +367,6 @@ Symbols:
 + _exp2f
 + _get_witness_table 7SwiftUI15ModifiedContentVyACyAA6ZStackVyAA05TupleD0VyACyAA5ColorVAA30_SafeAreaRegionsIgnoringLayoutVG_ACyAA6VStackVyAGyAA6SpacerV_9SiriSetup28ExpressiveVoiceSelectionViewVAPQPGGAA13_OffsetEffectVGQPGGAA08_PaddingL0VGAA06_InsetT8ModifierVyACyACyACyAA0T0PAAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQOyAA6ButtonVyACyACyAA4TextVAA010_FlexFrameL0VGAA026_InsettableBackgroundShapeY0VyAiA7CapsuleVGGG_AA16PlainButtonStyleVQo_AA023AccessibilityAttachmentY0VGA0_GA0_GGGAAA4_HPA1_AAA4_HPAzAA4_HPyHC_A0_AA0tY0HPyHCHC_A30_AAA32_HPyHCHC
 + _log2
-+ _objc_msgSend$setViewControllers:animated:
-+ _objc_msgSend$viewControllers
 + _symbolic SaySSGz_Xx
 + _symbolic SaySfG
 + _symbolic SaySiG

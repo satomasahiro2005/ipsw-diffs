@@ -2,109 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/DeviceConfiguration.framework/DeviceConfiguration`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb1d8c` | `0xcaadc` | **`+0x18d50`** |
+| `__TEXT.__oslogstring` | `0x1aeb` | `0x3324` | **`+0x1839`** |
+| `__DATA.__bss` | `0xab00` | `0xbb00` | **`+0x1000`** |
+| `__TEXT.__const` | `0xa9f8` | `0xb568` | **`+0xb70`** |
+| `__TEXT.__eh_frame` | `0x817c` | `0x8c60` | **`+0xae4`** |
+| `__TEXT.__unwind_info` | `0x2ea8` | `0x3268` | **`+0x3c0`** |
+| `__AUTH_CONST.__const` | `0x5ae0` | `0x5e58` | **`+0x378`** |
+| `__AUTH_CONST.__objc_const` | `0x2900` | `0x2be0` | **`+0x2e0`** |
+| `__TEXT.__swift5_typeref` | `0x25a7` | `0x2812` | **`+0x26b`** |
+| `__AUTH.__data` | `0x270` | `0x4c8` | **`+0x258`** |
+| `__TEXT.__cstring` | `0x15f8` | `0x17f8` | **`+0x200`** |
+| `__DATA.__data` | `0x1460` | `0x1658` | **`+0x1f8`** |
+| `__TEXT.__constg_swiftt` | `0x1e10` | `0x1fe4` | **`+0x1d4`** |
+| `__TEXT.__swift5_fieldmd` | `0x1bb4` | `0x1d18` | **`+0x164`** |
+| `__TEXT.__swift5_reflstr` | `0x10a8` | `0x1208` | **`+0x160`** |
+| `__AUTH.__objc_data` | `0x350` | `0x3f0` | **`+0xa0`** |
+| `__TEXT.__swift5_capture` | `0xa44` | `0xae4` | **`+0xa0`** |
+| `__TEXT.__swift5_proto` | `0x6e8` | `0x768` | **`+0x80`** |
+| `__TEXT.__swift5_assocty` | `0x4f0` | `0x560` | **`+0x70`** |
+| `__TEXT.__swift_as_cont` | `0x578` | `0x5dc` | **`+0x64`** |
+| `__DATA.__common` | `0x8` | `0x68` | **`+0x60`** |
+| `__AUTH_CONST.__auth_got` | `0xee8` | `0xf40` | **`+0x58`** |
+| `__TEXT.__swift_as_entry` | `0x2fc` | `0x340` | **`+0x44`** |
+| `__TEXT.__swift5_acfuncs` | `0x294` | `0x2d0` | **`+0x3c`** |
+| `__DATA_CONST.__const` | `0x168` | `0x198` | **`+0x30`** |
+| `__TEXT.__swift_as_ret` | `0x300` | `0x330` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0x340` | `0x360` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x238` | `0x254` | **`+0x1c`** |
+| `__DATA_CONST.__objc_classlist` | `0xf0` | `0x108` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x664` | `0x67c` | **`+0x18`** |
+| `__DATA_DIRTY.__objc_data` | `0x888` | `0x898` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `0x34` | `0x38` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -27.0.0.0.0
--  __TEXT.__text: 0xb1d8c
--  __TEXT.__objc_methlist: 0x664
--  __TEXT.__const: 0xa9f8
--  __TEXT.__cstring: 0x15f8
--  __TEXT.__swift5_typeref: 0x25a7
--  __TEXT.__swift5_capture: 0xa44
--  __TEXT.__constg_swiftt: 0x1e10
--  __TEXT.__swift5_reflstr: 0x10a8
--  __TEXT.__swift5_fieldmd: 0x1bb4
--  __TEXT.__oslogstring: 0x1aeb
 +29.2.6.0.0
-+  __TEXT.__text: 0xcaadc
-+  __TEXT.__objc_methlist: 0x67c
-+  __TEXT.__const: 0xb568
-+  __TEXT.__cstring: 0x17f8
-+  __TEXT.__swift5_typeref: 0x2812
-+  __TEXT.__swift5_capture: 0xae4
-+  __TEXT.__constg_swiftt: 0x1fe4
-+  __TEXT.__swift5_reflstr: 0x1208
-+  __TEXT.__swift5_fieldmd: 0x1d18
-+  __TEXT.__oslogstring: 0x3324
-   __TEXT.__swift5_builtin: 0xc8
--  __TEXT.__swift5_assocty: 0x4f0
--  __TEXT.__swift5_protos: 0x34
--  __TEXT.__swift5_proto: 0x6e8
--  __TEXT.__swift5_types: 0x238
--  __TEXT.__swift_as_entry: 0x2fc
--  __TEXT.__swift_as_ret: 0x300
--  __TEXT.__swift_as_cont: 0x578
--  __TEXT.__swift5_acfuncs: 0x294
-+  __TEXT.__swift5_assocty: 0x560
-+  __TEXT.__swift5_protos: 0x38
-+  __TEXT.__swift5_proto: 0x768
-+  __TEXT.__swift5_types: 0x254
-+  __TEXT.__swift_as_entry: 0x340
-+  __TEXT.__swift_as_ret: 0x330
-+  __TEXT.__swift_as_cont: 0x5dc
-+  __TEXT.__swift5_acfuncs: 0x2d0
-   __TEXT.__swift5_mpenum: 0x50
--  __TEXT.__unwind_info: 0x2ea8
--  __TEXT.__eh_frame: 0x817c
-+  __TEXT.__unwind_info: 0x3268
-+  __TEXT.__eh_frame: 0x8c60
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x168
--  __DATA_CONST.__objc_classlist: 0xf0
-+  __DATA_CONST.__const: 0x198
-+  __DATA_CONST.__objc_classlist: 0x108
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x340
-+  __DATA_CONST.__objc_selrefs: 0x360
-   __DATA_CONST.__objc_protorefs: 0x50
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x5ae0
-+  __AUTH_CONST.__const: 0x5e58
-   __AUTH_CONST.__cfstring: 0xa0
--  __AUTH_CONST.__objc_const: 0x2900
--  __AUTH_CONST.__auth_got: 0xee8
--  __AUTH.__objc_data: 0x350
--  __AUTH.__data: 0x270
--  __DATA.__data: 0x1460
--  __DATA.__bss: 0xab00
--  __DATA.__common: 0x8
--  __DATA_DIRTY.__objc_data: 0x888
-+  __AUTH_CONST.__objc_const: 0x2be0
-+  __AUTH_CONST.__auth_got: 0xf40
-+  __AUTH.__objc_data: 0x3f0
-+  __AUTH.__data: 0x4c8
-+  __DATA.__data: 0x1658
-+  __DATA.__bss: 0xbb00
-+  __DATA.__common: 0x68
-+  __DATA_DIRTY.__objc_data: 0x898
-   __DATA_DIRTY.__data: 0x1de8
-   __DATA_DIRTY.__bss: 0x2a00
-   __DATA_DIRTY.__common: 0x1a0
 
-   - /System/Library/Frameworks/LightweightCodeRequirements.framework/LightweightCodeRequirements
-   - /System/Library/PrivateFrameworks/BackgroundSystemTasks.framework/BackgroundSystemTasks
-   - /System/Library/PrivateFrameworks/StorageContainersPrivate.framework/StorageContainersPrivate
 +  - /System/Library/PrivateFrameworks/UserManagement.framework/UserManagement
-   - /System/Library/PrivateFrameworks/XPCDistributed.framework/XPCDistributed
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 3511
--  Symbols:   1289
+-  Symbols:   1229
 -  CStrings:  271
 +  Functions: 3753
-+  Symbols:   1355
++  Symbols:   1290
 +  CStrings:  378
- 
 Symbols:
 + _OBJC_CLASS_$_UMUser
 + _OBJC_CLASS_$_UMUserManager
@@ -142,11 +91,6 @@ Symbols:
 + _associated conformance 19DeviceConfiguration27AsyncPrivateUserServerActorCs12IdentifiableAA2IDsADP_SH
 + _generic environment 19DeviceConfiguration19AsyncPrivateUserXPCRz11Distributed01_G9ActorStubRzl
 + _generic environment 19DeviceConfiguration19AsyncPrivateUserXPCRzl
-+ _objc_msgSend$allUsers
-+ _objc_msgSend$description
-+ _objc_msgSend$gid
-+ _objc_msgSend$sharedManager
-+ _objc_msgSend$uid
 + _swift_release_x12
 + _symbolic $s19DeviceConfiguration19AsyncPrivateUserXPCP
 + _symbolic Say_____G 19DeviceConfiguration11UserManagerV0C0V

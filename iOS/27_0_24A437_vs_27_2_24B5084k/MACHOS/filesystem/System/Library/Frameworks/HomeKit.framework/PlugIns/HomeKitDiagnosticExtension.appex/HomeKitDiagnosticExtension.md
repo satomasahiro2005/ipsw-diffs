@@ -2,78 +2,53 @@
 
 > `/System/Library/Frameworks/HomeKit.framework/PlugIns/HomeKitDiagnosticExtension.appex/HomeKitDiagnosticExtension`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__gcc_except_tab`
-- `__DATA_CONST.__objc_classlist`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2473c` | `0x25eb4` | **`+0x1778`** |
+| `__DATA_CONST.__cfstring` | `0x23a0` | `0x29a0` | **`+0x600`** |
+| `__TEXT.__oslogstring` | `0x4cd3` | `0x503b` | **`+0x368`** |
+| `__TEXT.__cstring` | `0x1bec` | `0x1ef6` | **`+0x30a`** |
+| `__TEXT.__objc_stubs` | `0x3aa0` | `0x3d60` | **`+0x2c0`** |
+| `__TEXT.__objc_methname` | `0x3ed3` | `0x3fe8` | **`+0x115`** |
+| `__DATA.__objc_selrefs` | `0x12f8` | `0x13a8` | **`+0xb0`** |
+| `__TEXT.__ustring` | `—` | `0x54` | **`+0x54`** |
+| `__DATA_CONST.__const` | `0x838` | `0x878` | **`+0x40`** |
+| `__TEXT.__auth_stubs` | `0x990` | `0x9b0` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x748` | `0x760` | **`+0x18`** |
+| `__DATA_CONST.__auth_got` | `0x4d8` | `0x4e8` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
 - `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_protolist`
 - `__DATA_CONST.__objc_protorefs`
 - `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_const`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
 -1493.1.5.1.1
--  __TEXT.__text: 0x23c30
--  __TEXT.__auth_stubs: 0x990
--  __TEXT.__objc_stubs: 0x3aa0
 +1514.0.0.0.1
-+  __TEXT.__text: 0x25378
-+  __TEXT.__auth_stubs: 0x9b0
-+  __TEXT.__objc_stubs: 0x3d60
-   __TEXT.__objc_methlist: 0x1f9c
-   __TEXT.__const: 0xe0
-   __TEXT.__gcc_except_tab: 0x8fc
--  __TEXT.__cstring: 0x1bec
--  __TEXT.__oslogstring: 0x4cd3
--  __TEXT.__objc_methname: 0x3ed3
-+  __TEXT.__cstring: 0x1ef6
-+  __TEXT.__oslogstring: 0x503b
-+  __TEXT.__objc_methname: 0x3fe8
-   __TEXT.__objc_classname: 0x891
-   __TEXT.__objc_methtype: 0x63e
--  __TEXT.__unwind_info: 0x960
--  __DATA_CONST.__const: 0x838
--  __DATA_CONST.__cfstring: 0x23a0
-+  __TEXT.__ustring: 0x54
-+  __TEXT.__unwind_info: 0x978
-+  __DATA_CONST.__const: 0x878
-+  __DATA_CONST.__cfstring: 0x29a0
-   __DATA_CONST.__objc_classlist: 0x200
-   __DATA_CONST.__objc_catlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x68
 
-   __DATA_CONST.__objc_intobj: 0xf0
-   __DATA_CONST.__objc_arraydata: 0x18
-   __DATA_CONST.__objc_arrayobj: 0x30
--  __DATA_CONST.__auth_got: 0x4d8
-+  __DATA_CONST.__auth_got: 0x4e8
-   __DATA_CONST.__got: 0x448
-   __DATA.__objc_const: 0x4598
--  __DATA.__objc_selrefs: 0x12f8
-+  __DATA.__objc_selrefs: 0x13a8
-   __DATA.__objc_ivar: 0x118
-   __DATA.__objc_data: 0x1400
-   __DATA.__data: 0x4e0
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 628
 -  Symbols:   301
 -  CStrings:  1598
 +  Functions: 634
 +  Symbols:   303
 +  CStrings:  1683
- 
 Symbols:
 + _HMAccessoryTransportTypesToString
 + _HMResidentDeviceStatusDescription

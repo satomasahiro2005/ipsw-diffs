@@ -2,15 +2,9 @@
 
 > `/usr/lib/libReverseProxyDevice.dylib`
 
-```diff
+### Section Size Changes
 
-   __AUTH_CONST.__cfstring: 0x9e0
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__data: 0x110
-   __DATA.__data: 0x4
-+  __DATA_DIRTY.__data: 0x110
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /usr/lib/libMobileGestalt.dylib
-```
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__data` | `0x110` | `—` | **`-0x110`** |
+| `__DATA_DIRTY.__data` | `—` | `0x110` | **`+0x110`** |

@@ -2,87 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/APTransport.framework/APTransport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb3f88` | `0xb5504` | **`+0x157c`** |
+| `__TEXT.__cstring` | `0x2f86d` | `0x3004f` | **`+0x7e2`** |
+| `__DATA.__data` | `0x1580` | `0x14a0` | **`-0xe0`** |
+| `__DATA_DIRTY.__data` | `0xbd0` | `0xcb0` | **`+0xe0`** |
+| `__AUTH.__objc_data` | `0x1e0` | `0x140` | **`-0xa0`** |
+| `__AUTH_CONST.__cfstring` | `0x6520` | `0x65c0` | **`+0xa0`** |
+| `__DATA_DIRTY.__objc_data` | `0x230` | `0x2d0` | **`+0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1b38` | `0x1b90` | **`+0x58`** |
+| `__DATA_CONST.__const` | `0x3d10` | `0x3d60` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x2cc8` | `0x2d10` | **`+0x48`** |
+| `__AUTH_CONST.__const` | `0x2db8` | `0x2dd8` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x60` | `0x78` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x3e8` | `0x400` | **`+0x18`** |
+| `__DATA.__bss` | `0x148` | `0x138` | **`-0x10`** |
+| `__DATA_DIRTY.__bss` | `0x2b8` | `0x2c8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xb3f88
-+  __TEXT.__text: 0xb5504
-   __TEXT.__objc_methlist: 0x1cf4
-   __TEXT.__const: 0x418
-   __TEXT.__gcc_except_tab: 0x9d8
--  __TEXT.__cstring: 0x2f86d
-+  __TEXT.__cstring: 0x3004f
-   __TEXT.__dlopen_cstrs: 0x1f3
-   __TEXT.__oslogstring: 0x31c
--  __TEXT.__unwind_info: 0x2cc8
-+  __TEXT.__unwind_info: 0x2d10
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3d10
-+  __DATA_CONST.__const: 0x3d60
-   __DATA_CONST.__objc_classlist: 0x68
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x68
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1b38
-+  __DATA_CONST.__objc_selrefs: 0x1b90
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x60
-   __DATA_CONST.__objc_arraydata: 0x30
--  __DATA_CONST.__got: 0x3e8
--  __AUTH_CONST.__const: 0x2db8
--  __AUTH_CONST.__cfstring: 0x6520
-+  __DATA_CONST.__got: 0x400
-+  __AUTH_CONST.__const: 0x2dd8
-+  __AUTH_CONST.__cfstring: 0x65c0
-   __AUTH_CONST.__objc_const: 0x2498
-   __AUTH_CONST.__objc_arrayobj: 0x48
--  __AUTH_CONST.__objc_intobj: 0x60
-+  __AUTH_CONST.__objc_intobj: 0x78
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x1e0
-+  __AUTH.__objc_data: 0x140
-   __AUTH.__data: 0x2c0
-   __DATA.__objc_ivar: 0x18c
--  __DATA.__data: 0x1580
--  __DATA.__bss: 0x148
--  __DATA_DIRTY.__objc_data: 0x230
--  __DATA_DIRTY.__data: 0xbd0
--  __DATA_DIRTY.__bss: 0x2b8
-+  __DATA.__data: 0x14a0
-+  __DATA.__bss: 0x138
-+  __DATA_DIRTY.__objc_data: 0x2d0
-+  __DATA_DIRTY.__data: 0xcb0
-+  __DATA_DIRTY.__bss: 0x2c8
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
+-980.63.2.0.0
++980.67.2.0.0
 
-   - /System/Library/PrivateFrameworks/WiFiPeerToPeer.framework/WiFiPeerToPeer
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 5314
--  Symbols:   13651
--  CStrings:  5308
+-  Symbols:   4363
+-  CStrings:  4502
 +  Functions: 5342
-+  Symbols:   13736
-+  CStrings:  5354
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH.__data : content changed
++  Symbols:   4384
++  CStrings:  4543
 Symbols:
 + GCC_except_table40
 + _APCarPlayHelperGetTypeID
@@ -100,17 +52,6 @@ Symbols:
 + _fsync
 + _kAPTransportTrafficCaptureCreationOption_CaptureDirectory
 + _localtime_r
-+ _objc_msgSend$attributesOfItemAtPath:error:
-+ _objc_msgSend$createDirectoryAtPath:withIntermediateDirectories:attributes:error:
-+ _objc_msgSend$hasSuffix:
-+ _objc_msgSend$localInfrastructureThroughputCapacityRatio
-+ _objc_msgSend$localThroughputCapacityMbps
-+ _objc_msgSend$performanceForecast
-+ _objc_msgSend$removeObjectAtIndex:
-+ _objc_msgSend$signalStrength
-+ _objc_msgSend$sortUsingComparator:
-+ _objc_msgSend$unavailabilityLatencyCeilingMs
-+ _objc_msgSend$unsignedIntegerValue
 + _rename
 + _strerror
 + _strftime
@@ -170,5 +111,4 @@ CStrings:
 - "APTransportTrafficCaptureStopSession_block_invoke"
 - "OSStatus APTransportTrafficCaptureStartSession(APTransportTrafficCaptureRef, const char *, CFDictionaryRef)_block_invoke"
 - "[%{ptr}] Start session for %s %s (err: %#m)\n"
-
 ```

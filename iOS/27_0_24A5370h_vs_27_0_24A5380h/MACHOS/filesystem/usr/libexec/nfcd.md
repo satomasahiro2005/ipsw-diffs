@@ -2,96 +2,60 @@
 
 > `/usr/libexec/nfcd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1e5bf4` | `0x1e677c` | **`+0xb88`** |
+| `__DATA_CONST.__cfstring` | `0x11760` | `0x112a0` | **`-0x4c0`** |
+| `__DATA.__objc_const` | `0x14bd8` | `0x14e48` | **`+0x270`** |
+| `__TEXT.__oslogstring` | `0x2016b` | `0x2038d` | **`+0x222`** |
+| `__DATA_CONST.__got` | `0x838` | `0x9f8` | **`+0x1c0`** |
+| `__TEXT.__cstring` | `0x2287e` | `0x226d3` | **`-0x1ab`** |
+| `__TEXT.__objc_stubs` | `0xdde0` | `0xdf20` | **`+0x140`** |
+| `__DATA.__objc_data` | `0x3e80` | `0x3f20` | **`+0xa0`** |
+| `__TEXT.__objc_methlist` | `0x9cd4` | `0x9d6c` | **`+0x98`** |
+| `__TEXT.__const` | `0x13bc` | `0x144c` | **`+0x90`** |
+| `__TEXT.__objc_methname` | `0x157d0` | `0x1585d` | **`+0x8d`** |
+| `__TEXT.__auth_stubs` | `0x1820` | `0x1860` | **`+0x40`** |
+| `__DATA_CONST.__objc_intobj` | `0x7bc0` | `0x7bf0` | **`+0x30`** |
+| `__DATA.__objc_ivar` | `0x1104` | `0x112c` | **`+0x28`** |
+| `__TEXT.__objc_classname` | `0x1d22` | `0x1d44` | **`+0x22`** |
+| `__DATA.__bss` | `0x2a0` | `0x2c0` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0xcb8` | `0xcd8` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x2c30` | `0x2c50` | **`+0x20`** |
+| `__TEXT.__objc_methtype` | `0x4de2` | `0x4dfe` | **`+0x1c`** |
+| `__DATA.__objc_selrefs` | `0x4b78` | `0x4b60` | **`-0x18`** |
+| `__DATA_CONST.__const` | `0x9a18` | `0x9a00` | **`-0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x640` | `0x650` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x470` | `0x480` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1e5bf4
--  __TEXT.__auth_stubs: 0x1820
-+  __TEXT.__text: 0x1e677c
-+  __TEXT.__auth_stubs: 0x1860
-   __TEXT.__delay_stubs: 0x500
-   __TEXT.__delay_helper: 0x16f4
--  __TEXT.__objc_stubs: 0xdde0
--  __TEXT.__objc_methlist: 0x9cd4
--  __TEXT.__const: 0x13bc
--  __TEXT.__cstring: 0x2287e
--  __TEXT.__oslogstring: 0x2016b
--  __TEXT.__objc_classname: 0x1d22
--  __TEXT.__objc_methname: 0x157d0
--  __TEXT.__objc_methtype: 0x4de2
--  __TEXT.__unwind_info: 0x2c30
--  __DATA_CONST.__const: 0x9a18
--  __DATA_CONST.__cfstring: 0x11760
--  __DATA_CONST.__objc_classlist: 0x640
-+  __TEXT.__objc_stubs: 0xdf20
-+  __TEXT.__objc_methlist: 0x9d6c
-+  __TEXT.__const: 0x144c
-+  __TEXT.__cstring: 0x226d3
-+  __TEXT.__oslogstring: 0x2038d
-+  __TEXT.__objc_classname: 0x1d44
-+  __TEXT.__objc_methname: 0x1585d
-+  __TEXT.__objc_methtype: 0x4dfe
-+  __TEXT.__unwind_info: 0x2c50
-+  __DATA_CONST.__const: 0x9a00
-+  __DATA_CONST.__cfstring: 0x112a0
-+  __DATA_CONST.__objc_classlist: 0x650
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0x388
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x1d8
--  __DATA_CONST.__objc_superrefs: 0x470
--  __DATA_CONST.__objc_intobj: 0x7bc0
-+  __DATA_CONST.__objc_superrefs: 0x480
-+  __DATA_CONST.__objc_intobj: 0x7bf0
-   __DATA_CONST.__objc_arraydata: 0x1e38
-   __DATA_CONST.__objc_dictobj: 0x1018
-   __DATA_CONST.__objc_arrayobj: 0x318
--  __DATA_CONST.__auth_got: 0xcb8
--  __DATA_CONST.__got: 0x838
-+  __DATA_CONST.__auth_got: 0xcd8
-+  __DATA_CONST.__got: 0x9f8
-   __DATA_CONST.__auth_ptr: 0x18
--  __DATA.__objc_const: 0x14bd8
--  __DATA.__objc_selrefs: 0x4b78
--  __DATA.__objc_ivar: 0x1104
--  __DATA.__objc_data: 0x3e80
-+  __DATA.__objc_const: 0x14e48
-+  __DATA.__objc_selrefs: 0x4b60
-+  __DATA.__objc_ivar: 0x112c
-+  __DATA.__objc_data: 0x3f20
-   __DATA.__data: 0x2b34
--  __DATA.__bss: 0x2a0
-+  __DATA.__bss: 0x2c0
-   __DATA.__common: 0x18
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMotion.framework/CoreMotion
+-370.37.0.0.0
++370.38.2.0.0
 
-   - /System/Library/PrivateFrameworks/CPMS.framework/CPMS
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/CoreDuetContext.framework/CoreDuetContext
 +  - /System/Library/PrivateFrameworks/CoreTime.framework/CoreTime
-   - /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
-   - /System/Library/PrivateFrameworks/HID.framework/HID
-   - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
 
-   - /usr/lib/libTelephonyBasebandDynamic.dylib
-   - /usr/lib/libnfshared.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 4257
 -  Symbols:   666
--  CStrings:  13853
+-  CStrings:  11378
 +  Functions: 4269
 +  Symbols:   669
-+  CStrings:  13801
- 
-Sections:
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __DATA_CONST.__objc_dictobj : content changed
-~ __DATA_CONST.__objc_arrayobj : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__data : content changed
++  CStrings:  11365
 Symbols:
 + _CFAbsoluteTimeGetCurrent
 + _NSSystemClockDidChangeNotification
@@ -200,5 +164,4 @@ CStrings:
 - "setPollingMask:tagConfig:"
 - "setSecureElement:alwaysOn:"
 - "theResponse != nil"
-
 ```

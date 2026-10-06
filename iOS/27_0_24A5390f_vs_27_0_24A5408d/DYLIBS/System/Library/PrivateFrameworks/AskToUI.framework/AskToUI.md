@@ -2,96 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/AskToUI.framework/AskToUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x91f8c` | `0x97598` | **`+0x560c`** |
+| `__DATA.__bss` | `0x4528` | `0x56b8` | **`+0x1190`** |
+| `__TEXT.__const` | `0x5358` | `0x5eb6` | **`+0xb5e`** |
+| `__TEXT.__swift5_typeref` | `0x924a` | `0x9c2a` | **`+0x9e0`** |
+| `__AUTH_CONST.__const` | `0x3ba0` | `0x4258` | **`+0x6b8`** |
+| `__DATA.__data` | `0x2300` | `0x25a0` | **`+0x2a0`** |
+| `__TEXT.__swift5_fieldmd` | `0x1504` | `0x171c` | **`+0x218`** |
+| `__TEXT.__constg_swiftt` | `0x1c48` | `0x1ddc` | **`+0x194`** |
+| `__TEXT.__swift5_reflstr` | `0x14f2` | `0x1672` | **`+0x180`** |
+| `__TEXT.__unwind_info` | `0x1ed0` | `0x2048` | **`+0x178`** |
+| `__TEXT.__cstring` | `0x1969` | `0x1a09` | **`+0xa0`** |
+| `__TEXT.__swift5_proto` | `0x230` | `0x2bc` | **`+0x8c`** |
+| `__TEXT.__swift5_capture` | `0xbdc` | `0xc54` | **`+0x78`** |
+| `__TEXT.__oslogstring` | `0x1c13` | `0x1be3` | **`-0x30`** |
+| `__TEXT.__swift5_types` | `0x180` | `0x1ac` | **`+0x2c`** |
+| `__AUTH_CONST.__auth_got` | `0x1950` | `0x1978` | **`+0x28`** |
+| `__TEXT.__swift5_builtin` | `0x78` | `0xa0` | **`+0x28`** |
+| `__TEXT.__swift5_mpenum` | `—` | `0x24` | **`+0x24`** |
+| `__TEXT.__eh_frame` | `0x3024` | `0x3044` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x998` | `0x980` | **`-0x18`** |
+| `__TEXT.__swift5_assocty` | `0x450` | `0x468` | **`+0x18`** |
+| `__AUTH.__data` | `0x1370` | `0x1380` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x738` | `0x730` | **`-0x8`** |
+| `__TEXT.__swift_as_cont` | `0x1dc` | `0x1d4` | **`-0x8`** |
+| `__TEXT.__swift_as_ret` | `0xbc` | `0xb4` | **`-0x8`** |
+| `__TEXT.__swift_as_entry` | `0xdc` | `0xd8` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -93.0.0.0.0
--  __TEXT.__text: 0x91f8c
 +96.0.0.0.0
-+  __TEXT.__text: 0x97598
-   __TEXT.__objc_methlist: 0x4cc
--  __TEXT.__const: 0x5358
--  __TEXT.__constg_swiftt: 0x1c48
--  __TEXT.__swift5_typeref: 0x924a
--  __TEXT.__swift5_builtin: 0x78
--  __TEXT.__swift5_reflstr: 0x14f2
--  __TEXT.__swift5_fieldmd: 0x1504
--  __TEXT.__cstring: 0x1969
--  __TEXT.__swift5_capture: 0xbdc
--  __TEXT.__oslogstring: 0x1c13
--  __TEXT.__swift5_assocty: 0x450
--  __TEXT.__swift5_proto: 0x230
--  __TEXT.__swift5_types: 0x180
--  __TEXT.__swift_as_entry: 0xdc
--  __TEXT.__swift_as_ret: 0xbc
--  __TEXT.__swift_as_cont: 0x1dc
-+  __TEXT.__const: 0x5eb6
-+  __TEXT.__constg_swiftt: 0x1ddc
-+  __TEXT.__swift5_typeref: 0x9c2a
-+  __TEXT.__swift5_fieldmd: 0x171c
-+  __TEXT.__swift5_builtin: 0xa0
-+  __TEXT.__swift5_reflstr: 0x1672
-+  __TEXT.__swift5_assocty: 0x468
-   __TEXT.__swift5_protos: 0x30
--  __TEXT.__unwind_info: 0x1ed0
--  __TEXT.__eh_frame: 0x3024
-+  __TEXT.__swift5_proto: 0x2bc
-+  __TEXT.__swift5_types: 0x1ac
-+  __TEXT.__cstring: 0x1a09
-+  __TEXT.__swift5_capture: 0xc54
-+  __TEXT.__oslogstring: 0x1be3
-+  __TEXT.__swift_as_entry: 0xd8
-+  __TEXT.__swift_as_ret: 0xb4
-+  __TEXT.__swift_as_cont: 0x1d4
-+  __TEXT.__swift5_mpenum: 0x24
-+  __TEXT.__unwind_info: 0x2048
-+  __TEXT.__eh_frame: 0x3044
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x90
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x738
-+  __DATA_CONST.__objc_selrefs: 0x730
-   __DATA_CONST.__objc_protorefs: 0x50
--  __DATA_CONST.__got: 0x998
--  __AUTH_CONST.__const: 0x3ba0
-+  __DATA_CONST.__got: 0x980
-+  __AUTH_CONST.__const: 0x4258
-   __AUTH_CONST.__objc_const: 0x12f8
--  __AUTH_CONST.__auth_got: 0x1950
-+  __AUTH_CONST.__auth_got: 0x1978
-   __AUTH.__objc_data: 0x8d8
--  __AUTH.__data: 0x1370
--  __DATA.__data: 0x2300
-+  __AUTH.__data: 0x1380
-+  __DATA.__data: 0x25a0
-   __DATA.__objc_stublist: 0x8
--  __DATA.__bss: 0x4528
-+  __DATA.__bss: 0x56b8
-   __DATA.__common: 0x1a0
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/Combine.framework/Combine
-
-   - /System/Library/PrivateFrameworks/AuthKitUI.framework/AuthKitUI
-   - /System/Library/PrivateFrameworks/FamilyCircle.framework/FamilyCircle
-   - /System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit
 -  - /System/Library/PrivateFrameworks/ScreenTimeCore.framework/ScreenTimeCore
-   - /System/Library/PrivateFrameworks/ScreenTimeSettingsServices.framework/ScreenTimeSettingsServices
-   - /System/Library/PrivateFrameworks/ScreenTimeUI.framework/ScreenTimeUI
-   - /usr/lib/libSystem.B.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2516
--  Symbols:   1558
+-  Symbols:   1383
 -  CStrings:  282
 +  Functions: 2691
-+  Symbols:   1635
++  Symbols:   1461
 +  CStrings:  284
- 
 Symbols:
 + ___swift_closure_destructor.70Tm
 + ___swift_memcpy17_8
@@ -227,7 +183,6 @@ Symbols:
 - _get_witness_table 7SwiftUI15ModifiedContentVyAA4ViewPAAE11buttonStyleyQrqd__AA06ButtonG0Rd__lFQOyAA0H0VyAA4TextVG_05AskToB0014MessagesBubblehG0VQo_AA32_EnvironmentKeyTransformModifierVySbGGAaDHPqd0__AaDHD3_APHO_AsA0eQ0HPyHCHC
 - _get_witness_table 7SwiftUI19_ConditionalContentVyACyACyAA4ViewPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAeAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA08ModifiedD0VyAPyAPyAA6VStackVyACyACy05AskToB0011LinkLoadingE0VAS0sE0VGAA6HStackVyAA05TupleD0VyAA6SpacerV_APyAPyAA5ImageVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA24_ForegroundStyleModifierVyAA5ColorVGGA2_QPGGGGAA16_FlexFrameLayoutVGAA23_GeometryActionModifierVySo6CGSizeVA28_SQ12CoreGraphicsyHCg_GGAA24_BackgroundStyleModifierVyA15_GG_Qo__SbQo_APyAA6ZStackVyA0_yAPyAA5GroupVyACyACyACyAA05EmptyE0VAS04IconE0VGACyAPyAS06AvatarE0VAA31AccessibilityAttachmentModifierVGA43_GGAPyAPyA4_AA18_AspectRatioLayoutVGA50_GGGAA12_FrameLayoutVG_ARyA0_yA2__AZyA0_yA2__APyAPyA45_A61_GAA13_ShadowEffectVGQPGGQPGGSgQPGGA61_GGAPyA39_yA0_yA51__A71_QPGGA61_GGAPyA39_yA0_yA45__A71_QPGGA61_GGAaDHPA79_AaDHPA75_AaDHPqd0__AaDHD3_A37_HO_A74_AaDHPA73_AaDHPyHC_A61_AA0E8ModifierHPyHCHCHC_A78_AaDHPA77_AaDHPyHC_A61_AAA84_HPyHCHCHC_A82_AaDHPA81_AaDHPyHC_A61_AAA84_HPyHCHCHC
 - _get_witness_table qd0__7SwiftUI4ViewHD4_AaBPAAE5sheet4item9onDismiss7contentQrAA7BindingVyqd__SgG_yycSgqd_0_qd__cts12IdentifiableRd__AaBRd_0_r0_lFQOyAcAEAD11isPresentedAfGQrAIySbG_ALqd__yctAaBRd__lFQOyAcAEAdefGQrAK_ALqd_0_qd__ctsAMRd__AaBRd_0_r0_lFQOyAcAE5alert_AN10presenting7actions7messageQrAA18LocalizedStringKeyV_AOqd_1_Sgqd__qd_1_XEqd_0_qd_1_XEtAaBRd__AaBRd_0_r1_lFQOyAA012SubscriptionC0VySq7CombineE9PublisherVys6ResultOy9AskToCore10ATResponseCs5Error_pG_GAcAE0F14GeometryChange3for2of6actionQrqd__m_qd__AA13GeometryProxyVcyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVyA15_yA15_yA15_yAcAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAA6VStackVyAA12TupleContentVyAA19_ConditionalContentVyA23_yAA5GroupVyA25_y0xyB0028QuestionVisualRepresentationC0V_A27_yA15_yA30_012QuestionTextC0VAA14_PaddingLayoutVGA34_GQPGGGA15_yAA6HStackVyA40_GA36_GG_A27_yA30_06StatusC0VA15_yA27_yA27_yA27_yA27_yA43_yA25_yAA6SpacerV_AcAE11buttonStyleyQrqd__AA11ButtonStyleRd__lFQOyAA6ButtonVyAA4TextVG_A30_25MessagesBubbleButtonStyleVQo_A50_QPGGSgAA05EmptyC0VGA27_yA65_A27_yA27_yA30_22PostAnswerActionButtonVA68_GSgA65_GGGA27_yA27_yA65_A65_GA27_yA27_yA27_yA27_yA60_A48_GA27_yA43_yA25_yA15_yA30_20InlineResponseButtonVAA012_EnvironmentS17TransformModifierVySbGG_A81_QPGGA15_yAcAEA51_yQrqd__AAA52_Rd__lFQOyAcAE9menuStyleyQrqd__AA9MenuStyleRd__lFQOyAA4MenuVyA43_yA25_yA56__A50_A15_yA15_yA15_yA15_yAA5ImageVAA012_EnvironmentS15WritingModifierVySiSgGGA91_yAA4FontVSgGGA91_yA89_5ScaleOGGA91_yAA5ColorVSgGGQPGGAA7ForEachVySay0xY014ATAnswerChoiceCGSSA57_GG_AA15ButtonMenuStyleVQo__A59_Qo_A80_GGGA43_yA25_yA81__A27_yA15_yA60_A80_GA15_yA30_23ResponseExtensionButtonVA80_GGQPGGGA71_GGGA65_GA36_GGQPGG_Qo_A36_GA36_GAA19_BackgroundModifierVyA106_GGAA30_SafeAreaRegionsIgnoringLayoutVG_So6CGSizeVA153_SQ0Z8GraphicsyHCg0_Qo_G_A57_A56_A6_Qo__A30_27ResponseExtensionLaunchInfoV013AAAFoundationB0016AAFExtensionHostC0VyA30_24ResponseExtensionContextCA115_GQo__AA03AnyC0VQo__A30_021CommLimitsReviewSheetC5ModelCA30_21CommLimitsReviewSheetVQo_HO
-- _objc_msgSend$systemFillColor
 - _symbolic ___________y_____y__________GADGt 7AskToUI32QuestionVisualRepresentationViewV 05SwiftC019_ConditionalContentV AD08ModifiedJ0V AA0d4TextG0V AD14_PaddingLayoutV
 - _symbolic _____yAAyAAyAAy_____y_____yACy__________G_____y_____y______AAyAAy__________y_____SgGG_____y_____GGAIQPGGGG_____G_____y_____A_SQ12CoreGraphicsyHCg_GG_____yAQGG_____G 7SwiftUI15ModifiedContentV AA6VStackV AA012_ConditionalD0V 05AskToB015LinkLoadingViewV AH0iK0V AA6HStackV AA05TupleD0V AA6SpacerV AA5ImageV AA30_EnvironmentKeyWritingModifierV AA4FontV AA016_ForegroundStyleS0V AA5ColorV AA16_FlexFrameLayoutV AA015_GeometryActionS0V So6CGSizeV AA011_BackgroundvS0V AA14_TaskModifier2V
 - _symbolic _____yAAyAAyAAy_____y_____y_____y_____yABy_____yACy______ADyAAy__________GAGGQPGGGAAy_____yALGAHGG_ADy_____AAyADyADyADyADyANyACy___________y_____y_____G______Qo_ASQPGGSg_____GADyA0_ADyADy_____A2_GSgA0_GGGADyADyA0_A0_GADyADyADyADyAxRGADyANyACyAAy__________ySbGG_A13_QPGGAAy_____y_____y_____yANyACyAU_AsAyAAyAAyAAy__________ySiSgGGA18_y_____SgGGA18_y_____GGA18_y_____SgGGQPGG_____ySay_____GSSAVGG______Qo__AWQo_A12_GGGANyACyA13__ADyAAyAXA12_GAAy_____A12_GGQPGGGA5_GGGA0_GAHGGQPGG_Qo_AHGAHG_____yA30_GG_____G 7SwiftUI15ModifiedContentV AA4ViewPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQO AA6VStackV AA05TupleD0V AA012_ConditionalD0V AA5GroupV 05AskToB0028QuestionVisualRepresentationE0V AT0q4TextE0V AA14_PaddingLayoutV AA6HStackV AT06StatusE0V AA6SpacerV AeAE11buttonStyleyQrqd__AA11ButtonStyleRd__lFQO AA6ButtonV AA0T0V AT25MessagesBubbleButtonStyleV AA05EmptyE0V AT22PostAnswerActionButtonV AT20InlineResponseButtonV AA32_EnvironmentKeyTransformModifierV AeAEA5_yQrqd__AAA6_Rd__lFQO AeAE9menuStyleyQrqd__AA9MenuStyleRd__lFQO AA4MenuV AA5ImageV AA30_EnvironmentKeyWritingModifierV AA4FontV A26_5ScaleO AA5ColorV AA7ForEachV 0oP014ATAnswerChoiceC AA15ButtonMenuStyleV AT23ResponseExtensionButtonV AA19_BackgroundModifierV AA024_SafeAreaRegionsIgnoringV0V

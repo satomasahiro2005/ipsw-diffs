@@ -2,111 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/PosterBoard.framework/PosterBoard`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2742a4` | `0x279c78` | **`+0x59d4`** |
+| `__TEXT.__oslogstring` | `0x1e04a` | `0x1ea9a` | **`+0xa50`** |
+| `__AUTH_CONST.__objc_const` | `0x3daa0` | `0x3e268` | **`+0x7c8`** |
+| `__TEXT.__gcc_except_tab` | `0x4624` | `0x4c60` | **`+0x63c`** |
+| `__TEXT.__cstring` | `0x144e5` | `0x14745` | **`+0x260`** |
+| `__AUTH_CONST.__cfstring` | `0xc300` | `0xc4c0` | **`+0x1c0`** |
+| `__AUTH_CONST.__const` | `0x9250` | `0x9350` | **`+0x100`** |
+| `__TEXT.__unwind_info` | `0x6c18` | `0x6d10` | **`+0xf8`** |
+| `__TEXT.__objc_methlist` | `0xeee4` | `0xefbc` | **`+0xd8`** |
+| `__TEXT.__const` | `0x73e4` | `0x7314` | **`-0xd0`** |
+| `__DATA.__data` | `0x62a0` | `0x6360` | **`+0xc0`** |
+| `__AUTH.__objc_data` | `0x3b38` | `0x3bf0` | **`+0xb8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x9c30` | `0x9ce8` | **`+0xb8`** |
+| `__TEXT.__swift5_typeref` | `0x89b6` | `0x8a56` | **`+0xa0`** |
+| `__DATA_CONST.__const` | `0x5210` | `0x52a8` | **`+0x98`** |
+| `__TEXT.__swift5_capture` | `0x25d4` | `0x2624` | **`+0x50`** |
+| `__TEXT.__swift5_reflstr` | `0x4b6e` | `0x4bbd` | **`+0x4f`** |
+| `__TEXT.__swift5_fieldmd` | `0x3090` | `0x30c4` | **`+0x34`** |
+| `__AUTH.__data` | `0xfc0` | `0xff0` | **`+0x30`** |
+| `__TEXT.__constg_swiftt` | `0x6234` | `0x6260` | **`+0x2c`** |
+| `__AUTH_CONST.__objc_intobj` | `0x90` | `0xa8` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x2458` | `0x2468` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x1084` | `0x1090` | **`+0xc`** |
+| `__DATA_CONST.__got` | `0x1db0` | `0x1db8` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x748` | `0x750` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x6c8` | `0x6d0` | **`+0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0x2c8` | `0x2d0` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x240` | `0x244` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -350.1.100.0.0
--  __TEXT.__text: 0x2742a4
--  __TEXT.__objc_methlist: 0xeee4
--  __TEXT.__const: 0x73e4
--  __TEXT.__gcc_except_tab: 0x4624
--  __TEXT.__cstring: 0x144e5
--  __TEXT.__oslogstring: 0x1e04a
 +355.0.5.0.0
-+  __TEXT.__text: 0x279c78
-+  __TEXT.__objc_methlist: 0xefbc
-+  __TEXT.__const: 0x7314
-+  __TEXT.__gcc_except_tab: 0x4c60
-+  __TEXT.__cstring: 0x14745
-+  __TEXT.__oslogstring: 0x1ea9a
-   __TEXT.__dlopen_cstrs: 0x2c6
-   __TEXT.__ustring: 0xe
--  __TEXT.__swift5_typeref: 0x89b6
--  __TEXT.__constg_swiftt: 0x6234
-+  __TEXT.__swift5_typeref: 0x8a56
-+  __TEXT.__constg_swiftt: 0x6260
-   __TEXT.__swift5_builtin: 0x1cc
--  __TEXT.__swift5_reflstr: 0x4b6e
--  __TEXT.__swift5_fieldmd: 0x3090
-+  __TEXT.__swift5_reflstr: 0x4bbd
-+  __TEXT.__swift5_fieldmd: 0x30c4
-   __TEXT.__swift5_assocty: 0x5d8
-   __TEXT.__swift5_proto: 0x244
--  __TEXT.__swift5_types: 0x240
--  __TEXT.__swift5_capture: 0x25d4
-+  __TEXT.__swift5_types: 0x244
-+  __TEXT.__swift5_capture: 0x2624
-   __TEXT.__swift5_protos: 0x68
-   __TEXT.__swift_as_entry: 0x58
-   __TEXT.__swift_as_ret: 0x34
-   __TEXT.__swift_as_cont: 0xe0
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x6c18
-+  __TEXT.__unwind_info: 0x6d10
-   __TEXT.__eh_frame: 0x1a38
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x5210
--  __DATA_CONST.__objc_classlist: 0x748
-+  __DATA_CONST.__const: 0x52a8
-+  __DATA_CONST.__objc_classlist: 0x750
-   __DATA_CONST.__objc_catlist: 0xf0
--  __DATA_CONST.__objc_protolist: 0x6c8
-+  __DATA_CONST.__objc_protolist: 0x6d0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x9c30
--  __DATA_CONST.__objc_protorefs: 0x2c8
-+  __DATA_CONST.__objc_selrefs: 0x9ce8
-+  __DATA_CONST.__objc_protorefs: 0x2d0
-   __DATA_CONST.__objc_superrefs: 0x3e0
-   __DATA_CONST.__objc_arraydata: 0x140
--  __DATA_CONST.__got: 0x1db0
--  __AUTH_CONST.__const: 0x9250
--  __AUTH_CONST.__cfstring: 0xc300
--  __AUTH_CONST.__objc_const: 0x3daa0
-+  __DATA_CONST.__got: 0x1db8
-+  __AUTH_CONST.__const: 0x9350
-+  __AUTH_CONST.__cfstring: 0xc4c0
-+  __AUTH_CONST.__objc_const: 0x3e268
-   __AUTH_CONST.__objc_arrayobj: 0xa8
-   __AUTH_CONST.__objc_doubleobj: 0x20
--  __AUTH_CONST.__objc_intobj: 0x90
-+  __AUTH_CONST.__objc_intobj: 0xa8
-   __AUTH_CONST.__objc_dictobj: 0xa0
--  __AUTH_CONST.__auth_got: 0x2458
--  __AUTH.__objc_data: 0x3b38
--  __AUTH.__data: 0xfc0
--  __DATA.__objc_ivar: 0x1084
--  __DATA.__data: 0x62a0
-+  __AUTH_CONST.__auth_got: 0x2468
-+  __AUTH.__objc_data: 0x3bf0
-+  __AUTH.__data: 0xff0
-+  __DATA.__objc_ivar: 0x1090
-+  __DATA.__data: 0x6360
-   __DATA.__bss: 0x2f48
-   __DATA.__common: 0x130
-   __DATA_DIRTY.__objc_data: 0x6e98
 
-   - /usr/lib/swift/libswiftAVFoundation.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
-   - /usr/lib/swift/libswiftAppleArchive.dylib
 -  - /usr/lib/swift/libswiftCallKit.dylib
-   - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10841
--  Symbols:   15123
+-  Symbols:   11074
 -  CStrings:  3968
 +  Functions: 10929
-+  Symbols:   15185
++  Symbols:   11118
 +  CStrings:  4016
- 
 Symbols:
 + +[PBFPosterExtensionDataStoreMigrator mostUpToDateAvailableDataStoreVersionAtBaseURL:]
 + +[PBFPosterModelStoreCoordinator storeCoordinatorClassForType:]
@@ -183,30 +126,6 @@ Symbols:
 + ___swift_closure_destructor.681Tm
 + ___swift_closure_destructor.81Tm
 + ___unnamed_17
-+ _objc_msgSend$_executeMigration:migrationDescriptor:completion:
-+ _objc_msgSend$_lock_mergeConfigurations:ontoBase:
-+ _objc_msgSend$_migrateConfigurationsWithAdditionalSessionUserInfo:timeoutInterval:
-+ _objc_msgSend$activeExtensionInstances
-+ _objc_msgSend$backgroundScheduler
-+ _objc_msgSend$canBeServicedWithoutExtension
-+ _objc_msgSend$completionHandlerAdapterWithDefaultValue:
-+ _objc_msgSend$configVersion
-+ _objc_msgSend$configurationMigrationTimeoutInterval
-+ _objc_msgSend$copyWithFrostLevel:
-+ _objc_msgSend$globalAsyncScheduler
-+ _objc_msgSend$homeScreenConfigVersionForPath:
-+ _objc_msgSend$initWithDefaultInstanceIdentifier:
-+ _objc_msgSend$migrateLockScreenToPhotosWallpaperWithImageData:homeScreenImageData:error:
-+ _objc_msgSend$mostUpToDateAvailableDataStoreVersionAtBaseURL:
-+ _objc_msgSend$performConfigurationMigrations:budget:
-+ _objc_msgSend$posterUpdateHomeScreenPosterWithImageAtURL:
-+ _objc_msgSend$posterUpdateLockScreenPosterWithImageAtURL:
-+ _objc_msgSend$preferredFrostLevel
-+ _objc_msgSend$providerWithBackgroundConcurrencyLimit:
-+ _objc_msgSend$significantEventsCounterForPosterWithIdentifier:
-+ _objc_msgSend$staging_fetchPosterSignificantEventsCounterForPosterUUID:completionHandler:
-+ _objc_msgSend$storeCoordinatorClassForType:
-+ _objc_msgSend$timeoutAfter:scheduler:cleanup:
 + _symbolic So12NSCountedSetC
 + _symbolic _____ 11PosterBoard14BlockAssertionC
 + _symbolic _____SgXw 11PosterBoard0A20GalleryAssetProviderC
@@ -257,12 +176,6 @@ Symbols:
 - __swift_FORCE_LOAD_$_swiftCallKit
 - __swift_FORCE_LOAD_$_swiftCallKit_$_PosterBoard
 - _get_enum_tag_for_layout_string 7SwiftUI11EnvironmentV7ContentOySo6CGSizeV_G
-- _objc_msgSend$_migrateConfigurations
-- _objc_msgSend$_migrateConfigurationsWithAdditionalSessionUserInfo:
-- _objc_msgSend$backgroundSnapshot
-- _objc_msgSend$cachedConfigurationsWithError:
-- _objc_msgSend$defaultProvider
-- _objc_msgSend$setObject:atIndexedSubscript:
 - _type_layout_string 11PosterBoard0A21GalleryAssetProvidingRzlAA20ThumbnailPreviewView33_CCF1049FF886DF369E238D7CEAD3F5D3LLVyxG
 CStrings:
 + "-[PBFPosterExtensionStoreCoordinator _correctPermissionsForURL:excludeFromBackup:]> failed to correct exclude from backup state for file %@: %{public}@"

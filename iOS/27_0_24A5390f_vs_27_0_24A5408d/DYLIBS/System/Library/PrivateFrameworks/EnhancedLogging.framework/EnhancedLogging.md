@@ -2,89 +2,49 @@
 
 > `/System/Library/PrivateFrameworks/EnhancedLogging.framework/EnhancedLogging`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3f9dc` | `0x46dd4` | **`+0x73f8`** |
+| `__DATA.__bss` | `0x6680` | `0x7980` | **`+0x1300`** |
+| `__AUTH_CONST.__const` | `0x5388` | `0x5e68` | **`+0xae0`** |
+| `__TEXT.__const` | `0x3cf4` | `0x4764` | **`+0xa70`** |
+| `__TEXT.__cstring` | `0xd5b` | `0x106b` | **`+0x310`** |
+| `__TEXT.__eh_frame` | `0x1510` | `0x17d0` | **`+0x2c0`** |
+| `__TEXT.__swift5_fieldmd` | `0xe4c` | `0x108c` | **`+0x240`** |
+| `__DATA.__data` | `0xc80` | `0xe78` | **`+0x1f8`** |
+| `__TEXT.__unwind_info` | `0x1200` | `0x13f8` | **`+0x1f8`** |
+| `__TEXT.__swift5_capture` | `0x1234` | `0x13f4` | **`+0x1c0`** |
+| `__AUTH.__data` | `0x138` | `0x2d8` | **`+0x1a0`** |
+| `__TEXT.__swift5_typeref` | `0x1170` | `0x12fe` | **`+0x18e`** |
+| `__TEXT.__constg_swiftt` | `0x85c` | `0x9e8` | **`+0x18c`** |
+| `__TEXT.__oslogstring` | `0xaaa` | `0xc0a` | **`+0x160`** |
+| `__TEXT.__swift5_reflstr` | `0xb58` | `0xc58` | **`+0x100`** |
+| `__AUTH_CONST.__objc_const` | `0x1688` | `0x1720` | **`+0x98`** |
+| `__TEXT.__swift5_proto` | `0x334` | `0x3cc` | **`+0x98`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6e8` | `0x778` | **`+0x90`** |
+| `__TEXT.__objc_methlist` | `0xcb8` | `0xd2c` | **`+0x74`** |
+| `__AUTH_CONST.__auth_got` | `0x968` | `0x9d8` | **`+0x70`** |
+| `__DATA_CONST.__got` | `0x270` | `0x2b8` | **`+0x48`** |
+| `__TEXT.__swift5_types` | `0xec` | `0x11c` | **`+0x30`** |
+| `__TEXT.__swift5_builtin` | `0x50` | `0x78` | **`+0x28`** |
+| `__AUTH_CONST.__cfstring` | `0x280` | `0x2a0` | **`+0x20`** |
+| `__TEXT.__swift5_mpenum` | `—` | `0x10` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -251.0.0.0.0
--  __TEXT.__text: 0x3f9dc
--  __TEXT.__objc_methlist: 0xcb8
--  __TEXT.__const: 0x3cf4
--  __TEXT.__cstring: 0xd5b
--  __TEXT.__constg_swiftt: 0x85c
--  __TEXT.__swift5_typeref: 0x1170
--  __TEXT.__swift5_builtin: 0x50
--  __TEXT.__swift5_reflstr: 0xb58
--  __TEXT.__swift5_fieldmd: 0xe4c
--  __TEXT.__swift5_types: 0xec
 +267.2.3.0.0
-+  __TEXT.__text: 0x46dd4
-+  __TEXT.__objc_methlist: 0xd2c
-+  __TEXT.__const: 0x4764
-+  __TEXT.__cstring: 0x106b
-+  __TEXT.__constg_swiftt: 0x9e8
-+  __TEXT.__swift5_typeref: 0x12fe
-+  __TEXT.__swift5_builtin: 0x78
-+  __TEXT.__swift5_reflstr: 0xc58
-+  __TEXT.__swift5_fieldmd: 0x108c
-+  __TEXT.__swift5_types: 0x11c
-   __TEXT.__swift5_assocty: 0x2a0
--  __TEXT.__swift5_proto: 0x334
--  __TEXT.__swift5_capture: 0x1234
--  __TEXT.__oslogstring: 0xaaa
-+  __TEXT.__swift5_proto: 0x3cc
-+  __TEXT.__swift5_capture: 0x13f4
-+  __TEXT.__oslogstring: 0xc0a
-   __TEXT.__swift_as_entry: 0x34
-   __TEXT.__swift_as_ret: 0x34
-   __TEXT.__swift_as_cont: 0x8c
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__unwind_info: 0x1200
--  __TEXT.__eh_frame: 0x1510
-+  __TEXT.__swift5_mpenum: 0x10
-+  __TEXT.__unwind_info: 0x13f8
-+  __TEXT.__eh_frame: 0x17d0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x78
-   __DATA_CONST.__objc_protolist: 0x60
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6e8
-+  __DATA_CONST.__objc_selrefs: 0x778
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__objc_superrefs: 0x38
--  __DATA_CONST.__got: 0x270
--  __AUTH_CONST.__const: 0x5388
--  __AUTH_CONST.__cfstring: 0x280
--  __AUTH_CONST.__objc_const: 0x1688
--  __AUTH_CONST.__auth_got: 0x968
-+  __DATA_CONST.__got: 0x2b8
-+  __AUTH_CONST.__const: 0x5e68
-+  __AUTH_CONST.__cfstring: 0x2a0
-+  __AUTH_CONST.__objc_const: 0x1720
-+  __AUTH_CONST.__auth_got: 0x9d8
-   __AUTH.__objc_data: 0x120
--  __AUTH.__data: 0x138
-+  __AUTH.__data: 0x2d8
-   __DATA.__objc_ivar: 0x6c
--  __DATA.__data: 0xc80
--  __DATA.__bss: 0x6680
-+  __DATA.__data: 0xe78
-+  __DATA.__bss: 0x7980
-   __DATA.__common: 0x60
-   __DATA_DIRTY.__objc_data: 0x320
-   __DATA_DIRTY.__data: 0x2b0
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 2091
--  Symbols:   1056
+-  Symbols:   907
 -  CStrings:  156
 +  Functions: 2318
-+  Symbols:   1129
++  Symbols:   961
 +  CStrings:  176
- 
 Symbols:
 + _OBJC_CLASS_$_NSDistributedNotificationCenter
 + _OBJC_CLASS_$_NSError
@@ -138,25 +98,6 @@ Symbols:
 + _get_enum_tag_for_layout_string 15EnhancedLogging10EncryptionO
 + _get_enum_tag_for_layout_string 15EnhancedLogging20EncryptionDescriptorO
 + _get_enum_tag_for_layout_string 15EnhancedLogging20EncryptionDescriptorO17ConstructionErrorO
-+ _objc_msgSend$addObserverForName:object:queue:usingBlock:
-+ _objc_msgSend$defaultCenter
-+ _objc_msgSend$didDeliverTerminalCallback
-+ _objc_msgSend$error
-+ _objc_msgSend$getErrorWithSessionID:completionHandler:
-+ _objc_msgSend$handleXpcInterruption
-+ _objc_msgSend$initWithContainerIdentifier:environment:
-+ _objc_msgSend$initWithDomain:code:userInfo:
-+ _objc_msgSend$initWithSuiteName:
-+ _objc_msgSend$objectForKey:
-+ _objc_msgSend$observeUploadStateNotification
-+ _objc_msgSend$reconnect
-+ _objc_msgSend$removeObserver:
-+ _objc_msgSend$setDidDeliverTerminalCallback:
-+ _objc_msgSend$setUploadStateObserver:
-+ _objc_msgSend$status
-+ _objc_msgSend$stopObservingUploadStateNotification
-+ _objc_msgSend$stringForKey:
-+ _objc_msgSend$uploadStateObserver
 + _os_variant_has_internal_content
 + _swift_cvw_initEnumMetadataMultiPayloadWithLayoutString
 + _swift_cvw_multiPayloadEnumGeneric_destructiveInjectEnumTag

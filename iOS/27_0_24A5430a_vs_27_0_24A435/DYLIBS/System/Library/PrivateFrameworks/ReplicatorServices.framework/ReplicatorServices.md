@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/ReplicatorServices.framework/ReplicatorServices`
 
-```diff
+### Section Size Changes
 
- 176.0.0.0.0
--  __TEXT.__text: 0x11f4a4
-+  __TEXT.__text: 0x11f528
-   __TEXT.__objc_methlist: 0x968
-   __TEXT.__const: 0xc848
-   __TEXT.__cstring: 0x1e03
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x11f4a4` | `0x11f528` | **`+0x84`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1b706b118 -> sub_1b741c118 : 616 -> 620
 ~ sub_1b7070a68 -> sub_1b7421a6c : 720 -> 728

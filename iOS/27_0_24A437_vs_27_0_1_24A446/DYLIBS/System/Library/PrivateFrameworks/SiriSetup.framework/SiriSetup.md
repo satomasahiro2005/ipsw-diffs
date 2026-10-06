@@ -2,93 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/SiriSetup.framework/SiriSetup`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3451cc` | `0x3462c0` | **`+0x10f4`** |
+| `__AUTH.__objc_data` | `0x4110` | `0x41f0` | **`+0xe0`** |
+| `__AUTH_CONST.__objc_const` | `0x9340` | `0x93c0` | **`+0x80`** |
+| `__TEXT.__const` | `0x1da04` | `0x1d994` | **`-0x70`** |
+| `__TEXT.__cstring` | `0xc78f` | `0xc7ef` | **`+0x60`** |
+| `__TEXT.__constg_swiftt` | `0xb728` | `0xb77c` | **`+0x54`** |
+| `__AUTH.__data` | `0x5aa0` | `0x5af0` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x1fb8` | `0x2008` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0xb4e8` | `0xb538` | **`+0x50`** |
+| `__TEXT.__swift5_reflstr` | `0x84ca` | `0x850a` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0x13710` | `0x136e8` | **`-0x28`** |
+| `__TEXT.__swift5_fieldmd` | `0x7674` | `0x769c` | **`+0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2180` | `0x21a0` | **`+0x20`** |
+| `__DATA_DIRTY.__data` | `0x2910` | `0x2930` | **`+0x20`** |
+| `__DATA_CONST.__got` | `0x1898` | `0x18b0` | **`+0x18`** |
+| `__TEXT.__swift5_typeref` | `0x2d354` | `0x2d362` | **`+0xe`** |
+| `__AUTH_CONST.__auth_got` | `0x2e40` | `0x2e48` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x458` | `0x460` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x800` | `0x804` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3600.62.43.11.103
--  __TEXT.__text: 0x328b7c
--  __TEXT.__objc_methlist: 0x1fb8
--  __TEXT.__const: 0x1da04
--  __TEXT.__cstring: 0xc78f
 +3600.62.43.11.104
-+  __TEXT.__text: 0x329c20
-+  __TEXT.__objc_methlist: 0x2008
-+  __TEXT.__const: 0x1d994
-+  __TEXT.__cstring: 0xc7ef
-   __TEXT.__gcc_except_tab: 0x30
-   __TEXT.__dlopen_cstrs: 0xaf
-   __TEXT.__oslogstring: 0x35d2
--  __TEXT.__swift5_typeref: 0x2d354
-+  __TEXT.__swift5_typeref: 0x2d362
-   __TEXT.__swift5_capture: 0x36d8
--  __TEXT.__constg_swiftt: 0xb728
--  __TEXT.__swift5_reflstr: 0x84ca
--  __TEXT.__swift5_fieldmd: 0x7674
-+  __TEXT.__constg_swiftt: 0xb77c
-+  __TEXT.__swift5_reflstr: 0x850a
-+  __TEXT.__swift5_fieldmd: 0x769c
-   __TEXT.__swift5_builtin: 0x2bc
-   __TEXT.__swift5_assocty: 0x1910
-   __TEXT.__swift5_proto: 0xa68
--  __TEXT.__swift5_types: 0x800
-+  __TEXT.__swift5_types: 0x804
-   __TEXT.__swift5_protos: 0xc8
-   __TEXT.__swift_as_entry: 0x2d0
-   __TEXT.__swift_as_ret: 0x2f4
-   __TEXT.__swift_as_cont: 0x5ac
-   __TEXT.__swift5_mpenum: 0x54
--  __TEXT.__unwind_info: 0xe930
-+  __TEXT.__unwind_info: 0xe9b8
-   __TEXT.__eh_frame: 0x9bdc
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x23f0
--  __DATA_CONST.__objc_classlist: 0x458
-+  __DATA_CONST.__objc_classlist: 0x460
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x128
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2180
-+  __DATA_CONST.__objc_selrefs: 0x21a0
-   __DATA_CONST.__objc_protorefs: 0x90
-   __DATA_CONST.__objc_superrefs: 0x50
--  __DATA_CONST.__got: 0x1898
--  __AUTH_CONST.__const: 0x13710
-+  __DATA_CONST.__got: 0x18b0
-+  __AUTH_CONST.__const: 0x136e8
-   __AUTH_CONST.__cfstring: 0x1b60
--  __AUTH_CONST.__objc_const: 0x9340
-+  __AUTH_CONST.__objc_const: 0x93c0
-   __AUTH_CONST.__objc_intobj: 0x18
--  __AUTH_CONST.__auth_got: 0x2e40
--  __AUTH.__objc_data: 0x4110
--  __AUTH.__data: 0x5aa0
-+  __AUTH_CONST.__auth_got: 0x2e48
-+  __AUTH.__objc_data: 0x41f0
-+  __AUTH.__data: 0x5af0
-   __DATA.__objc_ivar: 0x70
-   __DATA.__data: 0x8050
-   __DATA.__objc_stublist: 0x8
-   __DATA.__common: 0x4b8
-   __DATA_DIRTY.__objc_data: 0x2908
--  __DATA_DIRTY.__data: 0x2910
-+  __DATA_DIRTY.__data: 0x2930
-   __DATA_DIRTY.__bss: 0x1830
-   __DATA_DIRTY.__common: 0x158
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 19466
 -  Symbols:   41922
 -  CStrings:  1700
 +  Functions: 19489
 +  Symbols:   41971
 +  CStrings:  1702
- 
 Symbols:
 + _$s7SwiftUI12TimelineViewVA2A0D0R_rlE_7contentACyxq_Gx_q_AC7ContextVyAA011EveryMinuteC8ScheduleVs5NeverO_Gctcfcq_AHyxq__GcfU_AA09AnimationcI0V_AA15ModifiedContentVyARyAA6ZStackVyAA05TupleM0VyAA14RadialGradientV_ARy9SiriSetup011OrbParticleD0VAA11_MaskEffectVyAXGGARyAaDPAAE05colorW0_9isEnabledQrAA6ShaderV_SbtFQOyAA5ColorV_Qo_AA08_OpacityW0VGARyA11_AA010_BlendModeW0VGQPGGAA017_CompositingGroupW0VGA2_GTg5Tm
 + _$s7SwiftUI12TimelineViewVA2A0D0R_rlE_7contentACyxq_Gx_q_AC7ContextVyAA011EveryMinuteC8ScheduleVs5NeverO_Gctcfcq_AHyxq__GcfU_AA09AnimationcI0V_AA15ModifiedContentVyARyARyARyAA4TextVAA30_EnvironmentKeyWritingModifierVyAA0N9AlignmentOGGAVyAA5ColorVSgGGAA16_FixedSizeLayoutVGAA01_n8RendererdR0Vy9SiriSetup08CombinednX0VGGTg5

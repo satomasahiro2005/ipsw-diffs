@@ -2,38 +2,24 @@
 
 > `com.apple.kec.corecrypto`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__fips_hmacs`
-- `__DATA.__data`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__auth_got`
-- `__DATA_CONST.__got`
-- `__DATA_CONST.__auth_ptr`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x69da4` | `0x6a0fc` | **`+0x358`** |
+| `__TEXT.__cstring` | `0x3f2c` | `0x4214` | **`+0x2e8`** |
+
+### Other Changes
 
 ```diff
 
 -2109.0.11.0.0
--  __TEXT.__cstring: 0x3f2c
-+2109.0.17.0.0
-+  __TEXT.__cstring: 0x4214
-   __TEXT.__const: 0x10140
-   __TEXT.__fips_hmacs: 0x20
--  __TEXT_EXEC.__text: 0x69da4
-+  __TEXT_EXEC.__text: 0x6a0fc
-   __TEXT_EXEC.__auth_stubs: 0x230
-   __DATA.__data: 0x29e0
-   __DATA.__bss: 0x27c0
-
-   __DATA_CONST.__auth_got: 0x118
-   __DATA_CONST.__got: 0x10
-   __DATA_CONST.__auth_ptr: 0x188
 -  Functions: 1944
++2109.0.17.0.0
 +  Functions: 1942
-   Symbols:   0
+
 -  CStrings:  337
 +  CStrings:  347
- 
 CStrings:
 + "FIPSPOST_KEXT [%llu] %s:%d: FAILED: [PCT] CCMLDSA_KEYGEN_PAIRWISE_CHECK: unexpected FAILURE: %d\n"
 + "FIPSPOST_KEXT [%llu] %s:%d: FAILED: [PCT] CCMLDSA_KEYGEN_PAIRWISE_CHECK: unexpected SUCCESS\n"

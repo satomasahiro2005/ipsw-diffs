@@ -2,111 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/PhotoLibraryServices.framework/PhotoLibraryServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x749104` | `0x74f6ec` | **`+0x65e8`** |
+| `__TEXT.__oslogstring` | `0x843c9` | `0x84f21` | **`+0xb58`** |
+| `__TEXT.__cstring` | `0x6c94b` | `0x6d10d` | **`+0x7c2`** |
+| `__AUTH_CONST.__cfstring` | `0x532a0` | `0x53760` | **`+0x4c0`** |
+| `__DATA.__bss` | `0x3570` | `0x3880` | **`+0x310`** |
+| `__TEXT.__gcc_except_tab` | `0x20224` | `0x20488` | **`+0x264`** |
+| `__TEXT.__objc_methlist` | `0x457fc` | `0x45a04` | **`+0x208`** |
+| `__AUTH_CONST.__objc_const` | `0x70040` | `0x701a0` | **`+0x160`** |
+| `__TEXT.__const` | `0x7170` | `0x72d0` | **`+0x160`** |
+| `__DATA_CONST.__objc_selrefs` | `0x25238` | `0x25340` | **`+0x108`** |
+| `__TEXT.__unwind_info` | `0x167e8` | `0x168b0` | **`+0xc8`** |
+| `__AUTH_CONST.__const` | `0x9c00` | `0x9ca8` | **`+0xa8`** |
+| `__DATA_CONST.__const` | `0x16768` | `0x16808` | **`+0xa0`** |
+| `__DATA_CONST.__objc_arraydata` | `0x1d30` | `0x1dc0` | **`+0x90`** |
+| `__AUTH_CONST.__objc_intobj` | `0x5358` | `0x53b8` | **`+0x60`** |
+| `__DATA_CONST.__got` | `0x5130` | `0x5188` | **`+0x58`** |
+| `__TEXT.__swift5_typeref` | `0x1188` | `0x11de` | **`+0x56`** |
+| `__AUTH.__objc_data` | `0x133f0` | `0x13440` | **`+0x50`** |
+| `__TEXT.__eh_frame` | `0xf88` | `0xfd8` | **`+0x50`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x14a0` | `0x14e8` | **`+0x48`** |
+| `__TEXT.__swift5_assocty` | `0x78` | `0xa8` | **`+0x30`** |
+| `__AUTH_CONST.__objc_dictobj` | `0x2f8` | `0x320` | **`+0x28`** |
+| `__TEXT.__constg_swiftt` | `0x290` | `0x2b0` | **`+0x20`** |
+| `__TEXT.__swift5_fieldmd` | `0x200` | `0x21c` | **`+0x1c`** |
+| `__TEXT.__swift5_proto` | `0x70` | `0x88` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x78` | `0x8c` | **`+0x14`** |
+| `__AUTH_CONST.__auth_got` | `0x2a70` | `0x2a80` | **`+0x10`** |
+| `__DATA.__data` | `0x6fc4` | `0x6fd4` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x3e18` | `0x3e28` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x1518` | `0x150c` | **`-0xc`** |
+| `__DATA_CONST.__objc_classlist` | `0x23e0` | `0x23e8` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x1588` | `0x1590` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x3c` | `0x40` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -910.33.102.0.0
--  __TEXT.__text: 0x749104
 +912.0.111.0.0
-+  __TEXT.__text: 0x74f6ec
-   __TEXT.__delay_stubs: 0x40
-   __TEXT.__delay_helper: 0xa4
--  __TEXT.__objc_methlist: 0x457fc
--  __TEXT.__const: 0x7170
-+  __TEXT.__objc_methlist: 0x45a04
-+  __TEXT.__const: 0x72d0
-   __TEXT.__dlopen_cstrs: 0xb28
--  __TEXT.__swift5_typeref: 0x1188
--  __TEXT.__cstring: 0x6c94b
--  __TEXT.__swift5_capture: 0x1518
--  __TEXT.__constg_swiftt: 0x290
--  __TEXT.__swift5_builtin: 0x78
-+  __TEXT.__swift5_typeref: 0x11de
-+  __TEXT.__cstring: 0x6d10d
-+  __TEXT.__swift5_capture: 0x150c
-+  __TEXT.__constg_swiftt: 0x2b0
-+  __TEXT.__swift5_builtin: 0x8c
-   __TEXT.__swift5_reflstr: 0x196
--  __TEXT.__swift5_assocty: 0x78
--  __TEXT.__swift5_fieldmd: 0x200
--  __TEXT.__swift5_proto: 0x70
--  __TEXT.__swift5_types: 0x3c
--  __TEXT.__oslogstring: 0x843c9
-+  __TEXT.__swift5_fieldmd: 0x21c
-+  __TEXT.__swift5_assocty: 0xa8
-+  __TEXT.__swift5_proto: 0x88
-+  __TEXT.__swift5_types: 0x40
-+  __TEXT.__oslogstring: 0x84f21
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__gcc_except_tab: 0x20224
-+  __TEXT.__gcc_except_tab: 0x20488
-   __TEXT.__ustring: 0xa3a
--  __TEXT.__unwind_info: 0x167e8
--  __TEXT.__eh_frame: 0xf88
-+  __TEXT.__unwind_info: 0x168b0
-+  __TEXT.__eh_frame: 0xfd8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x16768
--  __DATA_CONST.__objc_classlist: 0x23e0
-+  __DATA_CONST.__const: 0x16808
-+  __DATA_CONST.__objc_classlist: 0x23e8
-   __DATA_CONST.__objc_catlist: 0xf8
-   __DATA_CONST.__objc_protolist: 0x760
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0x25238
-+  __DATA_CONST.__objc_selrefs: 0x25340
-   __DATA_CONST.__objc_protorefs: 0xc8
--  __DATA_CONST.__objc_superrefs: 0x1588
--  __DATA_CONST.__objc_arraydata: 0x1d30
--  __DATA_CONST.__got: 0x5130
--  __AUTH_CONST.__const: 0x9c00
--  __AUTH_CONST.__cfstring: 0x532a0
--  __AUTH_CONST.__objc_const: 0x70040
-+  __DATA_CONST.__objc_superrefs: 0x1590
-+  __DATA_CONST.__objc_arraydata: 0x1dc0
-+  __DATA_CONST.__got: 0x5188
-+  __AUTH_CONST.__const: 0x9ca8
-+  __AUTH_CONST.__cfstring: 0x53760
-+  __AUTH_CONST.__objc_const: 0x701a0
-   __AUTH_CONST.__weak_auth_got: 0x28
--  __AUTH_CONST.__objc_intobj: 0x5358
--  __AUTH_CONST.__objc_arrayobj: 0x14a0
-+  __AUTH_CONST.__objc_intobj: 0x53b8
-+  __AUTH_CONST.__objc_arrayobj: 0x14e8
-   __AUTH_CONST.__objc_doubleobj: 0x180
--  __AUTH_CONST.__objc_dictobj: 0x2f8
-+  __AUTH_CONST.__objc_dictobj: 0x320
-   __AUTH_CONST.__objc_floatobj: 0x40
--  __AUTH_CONST.__auth_got: 0x2a70
--  __AUTH.__objc_data: 0x133f0
-+  __AUTH_CONST.__auth_got: 0x2a80
-+  __AUTH.__objc_data: 0x13440
-   __AUTH.__data: 0x1e8
--  __DATA.__objc_ivar: 0x3e18
--  __DATA.__data: 0x6fc4
-+  __DATA.__objc_ivar: 0x3e28
-+  __DATA.__data: 0x6fd4
-   __DATA.__crash_info: 0x148
--  __DATA.__bss: 0x3570
-+  __DATA.__bss: 0x3880
-   __DATA.__common: 0x4
-   __DATA_DIRTY.__objc_data: 0x3520
-   __DATA_DIRTY.__data: 0x50
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 29167
--  Symbols:   64866
+-  Symbols:   48448
 -  CStrings:  21830
 +  Functions: 29264
-+  Symbols:   64985
++  Symbols:   48534
 +  CStrings:  21900
- 
 Symbols:
 + +[PLAutoBugCapture captureSearchLeoStoreOpenFailureWithError:completion:]
 + +[PLBackgroundJobCriteria criteriaForAssetResourceUploadExtensionRunnerWorkerWithSubIdentifier:options:]
@@ -1711,62 +1657,6 @@ Symbols:
 + _associated conformance So44PLAssetResourceUploadJobConfigurationOptionsas20_SwiftNewtypeWrapperSCSY
 + _associated conformance So44PLAssetResourceUploadJobConfigurationOptionsas20_SwiftNewtypeWrapperSCs35_HasCustomAnyHashableRepresentation
 + _kMSASConnectionErrorDomain
-+ _objc_msgSend$_addPersonOrPet:withFetchHelper:rankingScore:faceInfo:thumbnailMap:
-+ _objc_msgSend$_addPersonsAndPetsFromAsset:withFetchHelper:thumbnailMap:
-+ _objc_msgSend$_baseURLsFromExtensionRecord:error:
-+ _objc_msgSend$_clientErrorWithCode:debugDescription:
-+ _objc_msgSend$_clientErrorWithCode:debugDescription:unsanitizedError:
-+ _objc_msgSend$_containsValidExtensionForApplicationRecord:extensionPointLabel:error:
-+ _objc_msgSend$_containsValidExtensionFromExtensionRecord:extensionPointLabel:error:
-+ _objc_msgSend$_createSharedStreamCollectionShareAssetsWithOriginalAssetUUIDs:withBatchCommentText:cloudBatchID:adjustmentBakeInOptionsDictionary:metadataCopyOptionsDictionary:collectionShare:library:completionHandler:
-+ _objc_msgSend$_enabledJobConfigurationsForProcessingInLibrary:
-+ _objc_msgSend$_fallBackTapToRadarWithTitle:description:radarComponent:customBundleID:
-+ _objc_msgSend$_inq_resolvePendingInvalidationsForLibraryURLs:
-+ _objc_msgSend$_isStaleInProgressScopeChange:forCurrentMigrationState:
-+ _objc_msgSend$_legacyBaseURLFromExtensionRecord:error:
-+ _objc_msgSend$_prepareDatabaseForOTAAssetsPhaseWithLibrary:
-+ _objc_msgSend$_prepareToDeactivateFromOperationWithInvalidationError:
-+ _objc_msgSend$_registerMomentGenerationTransaction:
-+ _objc_msgSend$_runStripConversionForFileAtURL:isVideo:options:error:
-+ _objc_msgSend$_stripMetadataFromSharedStreamFileAtURL:isVideo:originalAsset:stripLocation:error:
-+ _objc_msgSend$_tapToRadarKitDraftWithTitle:description:radarComponent:isUserInitiated:displayReason:parameters:attachments:
-+ _objc_msgSend$_updateBackupExclusionPathsAfterDirectoriesRemoved
-+ _objc_msgSend$_urlsFromExtensionRecord:error:
-+ _objc_msgSend$_validInfoDictionaryFromExtensionRecord:extensionPointLabel:error:
-+ _objc_msgSend$addCommonLexemeForPersonOrPet:fetchHelper:score:
-+ _objc_msgSend$captureSearchLeoStoreOpenFailureWithError:completion:
-+ _objc_msgSend$containsValidExtensionFromAuditToken:extensionPointLabel:error:
-+ _objc_msgSend$containsValidExtensionFromBundleIdentifier:extensionPointLabel:error:
-+ _objc_msgSend$containsValidExtensionFromBundleRecord:extensionPointLabel:error:
-+ _objc_msgSend$criteriaForAssetResourceUploadExtensionRunnerWorkerWithSubIdentifier:options:
-+ _objc_msgSend$criteriaForAssetResourceUploadJobWorkerWithSubIdentifier:options:
-+ _objc_msgSend$delay
-+ _objc_msgSend$discardDownloadedResource:
-+ _objc_msgSend$fileRadarUserNotificationWithHeader:message:radarTitle:radarDescription:radarComponent:diagnosticTTRType:parameters:attachments:extensionItem:
-+ _objc_msgSend$generateWithIncrementalDataTransaction:
-+ _objc_msgSend$initRelativeToScopedIdentifier:identifier:
-+ _objc_msgSend$jsonOCRTextLinesFromDocumentObservation:withTextFound:
-+ _objc_msgSend$libraryCreateOptionsFromAppPrivateDataForLibraryURL:
-+ _objc_msgSend$newShortLivedLibraryWithName:bundle:requiredState:
-+ _objc_msgSend$newShortLivedLibraryWithName:libraryRole:bundle:requiredState:
-+ _objc_msgSend$optionsForBackgroundJobCriterionWithPhotoLibrary:
-+ _objc_msgSend$performIndexMaintenance
-+ _objc_msgSend$persistLibraryCreateOptions:toAppPrivateDataForLibraryURL:error:
-+ _objc_msgSend$policyWithLocation:
-+ _objc_msgSend$policyWithPolicies:
-+ _objc_msgSend$removeDirectoriesForFeatureDataclasses:
-+ _objc_msgSend$replaceItemAtURL:withItemAtURL:backupItemName:options:resultingItemURL:error:
-+ _objc_msgSend$resultWithConfiguration:delay:
-+ _objc_msgSend$scopedIdentifiersFromArrayOfUnknownIdentifiers:withScopeIdentifier:
-+ _objc_msgSend$setConfiguration:
-+ _objc_msgSend$setDelay:
-+ _objc_msgSend$setDiagnosticExtensionParameters:
-+ _objc_msgSend$sharePosts
-+ _objc_msgSend$shouldCopyLocationData
-+ _objc_msgSend$spotlightTextLinesFromDocumentObservation:withTextFound:
-+ _objc_msgSend$subIdentifier
-+ _objc_msgSend$tapToRadarWithTitle:description:radarComponent:isUserInitiated:displayReason:parameters:attachments:
-+ _objc_msgSend$volumeWillUnmount:
 + _osMigrationTransferableResourcePredicate.onceToken
 + _osMigrationTransferableResourcePredicate.predicate
 + _spotlightTextLinesFromDocumentObservation:withTextFound:.disableOCRDonationWorkaround
@@ -3298,29 +3188,6 @@ Symbols:
 - ___block_descriptor_88_e8_32s40s48s56s64s72r_e5_v8?0ls32l8s40l8s48l8s56l8r72l8s64l8
 - ___swift_closure_destructor.17Tm
 - ___unnamed_5
-- _objc_msgSend$_addPerson:withFetchHelper:rankingScore:faceInfo:thumbnailMap:
-- _objc_msgSend$_addPersonsFromAsset:withFetchHelper:thumbnailMap:
-- _objc_msgSend$_addPet:withFetchHelper:rankingScore:faceInfo:thumbnailMap:
-- _objc_msgSend$_baseURLFromExtensionRecord:
-- _objc_msgSend$_containsValidExtensionForApplicationRecord:extensionPointLabel:
-- _objc_msgSend$_containsValidExtensionFromExtensionRecord:extensionPointLabel:
-- _objc_msgSend$_createSharedStreamCollectionShareAssetsWithOriginalAssetUUIDs:withBatchCommentText:cloudBatchID:adjustmentBakeInOptionsDictionary:collectionShare:library:completionHandler:
-- _objc_msgSend$_enabledJobConfigurationRequest
-- _objc_msgSend$_enabledJobConfigurationsForProcessingInLibrary:delay:
-- _objc_msgSend$_fallBackTapToRadarWithTitle:description:radarComponent:
-- _objc_msgSend$_prepareDatabaseForOTAAssetsPhase
-- _objc_msgSend$_tapToRadarKitDraftWithTitle:description:radarComponent:isUserInitiated:displayReason:attachments:
-- _objc_msgSend$_updateBackupExclusionPathsAfterRemoveCPLDirectory
-- _objc_msgSend$_validInfoDictionaryFromExtensionRecord:extensionPointLabel:
-- _objc_msgSend$containsValidExtensionFromAuditToken:extensionPointLabel:
-- _objc_msgSend$containsValidExtensionFromBundleIdentifier:extensionPointLabel:
-- _objc_msgSend$containsValidExtensionFromBundleRecord:extensionPointLabel:
-- _objc_msgSend$criteriaForAssetResourceUploadExtensionRunnerWorkerDeveloperModeEnabled:
-- _objc_msgSend$criteriaForAssetResourceUploadJobWorkerDeveloperModeEnabled:
-- _objc_msgSend$initWithVolumeURL:
-- _objc_msgSend$jsonOCRTextLinesFromDocumentObservation:
-- _objc_msgSend$scopedIdentifiersFromArrayOfUnknownIdentifiers:
-- _objc_msgSend$spotlightTextLinesFromDocumentObservation:
 - _spotlightTextLinesFromDocumentObservation:.disableOCRDonationWorkaround
 - _spotlightTextLinesFromDocumentObservation:.onceToken
 - _symbolic Say_____G 20PhotoLibraryServices30PLAssetResourceUploadWorkItemsC

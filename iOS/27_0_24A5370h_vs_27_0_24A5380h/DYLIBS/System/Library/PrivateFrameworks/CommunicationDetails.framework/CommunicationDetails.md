@@ -2,86 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/CommunicationDetails.framework/CommunicationDetails`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xaad98` | `0xaaf60` | **`+0x1c8`** |
+| `__DATA.__data` | `0x30e9` | `0x3139` | **`+0x50`** |
+| `__AUTH_CONST.__objc_const` | `0x3fd8` | `0x3ff8` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x1730` | `0x1748` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x15f0` | `0x1600` | **`+0x10`** |
+| `__AUTH.__data` | `0x2438` | `0x2430` | **`-0x8`** |
+| `__AUTH_CONST.__const` | `0x4ed8` | `0x4ee0` | **`+0x8`** |
+| `__DATA.__common` | `0x150` | `0x148` | **`-0x8`** |
+| `__DATA_DIRTY.__common` | `0x20` | `0x28` | **`+0x8`** |
+| `__TEXT.__constg_swiftt` | `0x4234` | `0x423c` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x2af8` | `0x2b00` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xaad98
--  __TEXT.__objc_methlist: 0x1730
-+  __TEXT.__text: 0xaaf60
-+  __TEXT.__objc_methlist: 0x1748
-   __TEXT.__const: 0x852c
--  __TEXT.__constg_swiftt: 0x4234
-+  __TEXT.__constg_swiftt: 0x423c
-   __TEXT.__swift5_typeref: 0x62a6
-   __TEXT.__swift5_builtin: 0x1cc
-   __TEXT.__swift5_reflstr: 0x300b
+-1483.100.10.2.4
++1486.100.5.2.1
 
-   __TEXT.__oslogstring: 0x1227
-   __TEXT.__swift5_protos: 0x34
-   __TEXT.__swift5_mpenum: 0x50
--  __TEXT.__unwind_info: 0x2af8
-+  __TEXT.__unwind_info: 0x2b00
-   __TEXT.__eh_frame: 0x26f4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_classlist: 0x188
-   __DATA_CONST.__objc_protolist: 0x1f0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x15f0
-+  __DATA_CONST.__objc_selrefs: 0x1600
-   __DATA_CONST.__objc_protorefs: 0xf8
-   __DATA_CONST.__got: 0xa78
--  __AUTH_CONST.__const: 0x4ed8
--  __AUTH_CONST.__objc_const: 0x3fd8
-+  __AUTH_CONST.__const: 0x4ee0
-+  __AUTH_CONST.__objc_const: 0x3ff8
-   __AUTH_CONST.__auth_got: 0x1760
-   __AUTH.__objc_data: 0x2948
--  __AUTH.__data: 0x2438
--  __DATA.__data: 0x30e9
-+  __AUTH.__data: 0x2430
-+  __DATA.__data: 0x3139
-   __DATA.__bss: 0x58a8
--  __DATA.__common: 0x150
-+  __DATA.__common: 0x148
-   __DATA_DIRTY.__objc_data: 0x598
-   __DATA_DIRTY.__data: 0x510
--  __DATA_DIRTY.__common: 0x20
-+  __DATA_DIRTY.__common: 0x28
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/ContactsUI.framework/ContactsUI
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4255
--  Symbols:   14983
+-  Symbols:   10299
 +  Functions: 4257
-+  Symbols:   14990
-   CStrings:  239
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift5_fieldmd : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH.__objc_data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   10304
 Symbols:
 + _$s20CommunicationDetails0B22ViewControllerDelegateP07detailscD9DidAppearyyAA0bcD0CF
 + _$s20CommunicationDetails0B22ViewControllerDelegateP07detailscD9DidAppearyyAA0bcD0CFTj
@@ -105,5 +52,4 @@ Functions:
 ~ _$sSa13_copyContents12initializings16IndexingIteratorVySayxGG_SitSryxG_tF20CommunicationDetails0G10TabBarViewC0h7SegmentJ0C_Tg5 : 416 -> 412
 ~ _$sSa13_copyContents12initializings16IndexingIteratorVySayxGG_SitSryxG_tFSo9CNContactC_Tg5 : 432 -> 428
 ~ _$ss6_merge3low3mid4high6buffer2bySbSpyxG_A3GSbx_xtKXEtKlF20CommunicationDetails15QuickActionViewC10ButtonTypeO_Tg5 : 700 -> 692
-
 ```

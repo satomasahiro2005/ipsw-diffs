@@ -2,35 +2,27 @@
 
 > `/System/Library/PrivateFrameworks/SiriTTS.framework/SiriTTS`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x82ebc4` | `0x82e99c` | **`-0x228`** |
+| `__TEXT.__unwind_info` | `0x184e0` | `0x18600` | **`+0x120`** |
+| `__TEXT.__cstring` | `0x6e6c4` | `0x6e66f` | **`-0x55`** |
+| `__TEXT.__oslogstring` | `0xa038` | `0x9feb` | **`-0x4d`** |
+| `__TEXT.__gcc_except_tab` | `0x3bcf4` | `0x3bcb0` | **`-0x44`** |
+
+### Other Changes
+
 ```diff
 
 -3600.81.1.0.0
--  __TEXT.__text: 0x82ebc4
 +3600.83.1.11.1
-+  __TEXT.__text: 0x82e99c
-   __TEXT.__objc_methlist: 0x20
-   __TEXT.__const: 0xe4564
--  __TEXT.__cstring: 0x6e6c4
--  __TEXT.__gcc_except_tab: 0x3bcf4
--  __TEXT.__oslogstring: 0xa038
-+  __TEXT.__cstring: 0x6e66f
-+  __TEXT.__gcc_except_tab: 0x3bcb0
-+  __TEXT.__oslogstring: 0x9feb
-   __TEXT.__ustring: 0x494
--  __TEXT.__unwind_info: 0x184e0
-+  __TEXT.__unwind_info: 0x18600
-   __TEXT.__eh_frame: 0x208
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libxml2.2.dylib
-   Functions: 22414
--  Symbols:   33876
+-  Symbols:   33859
 -  CStrings:  17033
-+  Symbols:   33877
++  Symbols:   33860
 +  CStrings:  17030
- 
 Symbols:
 + GCC_except_table1000
 + GCC_except_table1009

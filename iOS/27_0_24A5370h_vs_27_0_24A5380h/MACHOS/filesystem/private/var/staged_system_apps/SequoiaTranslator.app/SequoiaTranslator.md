@@ -2,73 +2,50 @@
 
 > `/private/var/staged_system_apps/SequoiaTranslator.app/SequoiaTranslator`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2faa28` | `0x2faf0c` | **`+0x4e4`** |
+| `__TEXT.__oslogstring` | `0xdabb` | `0xdafb` | **`+0x40`** |
+| `__TEXT.__auth_stubs` | `0x8000` | `0x8020` | **`+0x20`** |
+| `__DATA_CONST.__auth_got` | `0x4008` | `0x4018` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x8b88` | `0x8b90` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__cstring`
+- `__TEXT.__eh_frame`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2faa28
--  __TEXT.__auth_stubs: 0x8000
-+  __TEXT.__text: 0x2faf0c
-+  __TEXT.__auth_stubs: 0x8020
-   __TEXT.__objc_stubs: 0x79a0
-   __TEXT.__objc_methlist: 0x38e4
-   __TEXT.__const: 0x1fc74
+-384.1.0.0.0
++384.3.0.0.0
 
-   __TEXT.__objc_methname: 0x114c1
-   __TEXT.__objc_methtype: 0x4675
-   __TEXT.__swift5_capture: 0x41fc
--  __TEXT.__oslogstring: 0xdabb
-+  __TEXT.__oslogstring: 0xdafb
-   __TEXT.__swift_as_entry: 0x244
-   __TEXT.__swift_as_ret: 0x1e4
-   __TEXT.__swift_as_cont: 0x524
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__swift5_protos: 0x84
-   __TEXT.__swift5_mpenum: 0x2c
--  __TEXT.__unwind_info: 0x8b88
-+  __TEXT.__unwind_info: 0x8b90
-   __TEXT.__eh_frame: 0x8454
-   __DATA_CONST.__const: 0x12118
-   __DATA_CONST.__cfstring: 0x20
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x150
-   __DATA_CONST.__objc_superrefs: 0x8
--  __DATA_CONST.__auth_got: 0x4008
-+  __DATA_CONST.__auth_got: 0x4018
-   __DATA_CONST.__got: 0x2020
-   __DATA_CONST.__auth_ptr: 0x32a0
-   __DATA.__objc_const: 0xda80
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 13059
 -  Symbols:   3810
--  CStrings:  4553
+-  CStrings:  4518
 +  Symbols:   3812
-+  CStrings:  4554
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_entry : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA_CONST.__auth_ptr : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__data : content changed
-~ __DATA.__bss : content changed
-~ __DATA.__common : content changed
++  CStrings:  4519
 Symbols:
 + _$s13TranslationUI13LanguageModelV10modalitiesSo25_LTLanguageStatusModalityVvg
 + _$sSo25_LTLanguageStatusModalityV13TranslationUIE12hasSpeechOutSbvg
@@ -103,5 +80,4 @@ CStrings:
 + "2026-06-29 22:16:17"
 - "%s: traditional Translate pair not installed"
 - "2026-06-17 23:48:48"
-
 ```

@@ -2,99 +2,57 @@
 
 > `/System/Library/PrivateFrameworks/HealthDomainsUI.framework/HealthDomainsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4718` | `0xc7e8` | **`+0x80d0`** |
+| `__AUTH_CONST.__objc_const` | `0x120` | `0x708` | **`+0x5e8`** |
+| `__AUTH.__objc_data` | `—` | `0x508` | **`+0x508`** |
+| `__AUTH_CONST.__const` | `0x360` | `0x850` | **`+0x4f0`** |
+| `__TEXT.__objc_methlist` | `—` | `0x4cc` | **`+0x4cc`** |
+| `__DATA_CONST.__objc_selrefs` | `0x68` | `0x518` | **`+0x4b0`** |
+| `__DATA.__data` | `0x1b8` | `0x560` | **`+0x3a8`** |
+| `__AUTH_CONST.__auth_got` | `0x310` | `0x690` | **`+0x380`** |
+| `__TEXT.__const` | `0x4d4` | `0x7e4` | **`+0x310`** |
+| `__TEXT.__constg_swiftt` | `0x260` | `0x560` | **`+0x300`** |
+| `__TEXT.__cstring` | `0x56` | `0x2e6` | **`+0x290`** |
+| `__TEXT.__unwind_info` | `0x188` | `0x3e8` | **`+0x260`** |
+| `__TEXT.__swift5_typeref` | `0x138` | `0x356` | **`+0x21e`** |
+| `__DATA.__bss` | `0x380` | `0x590` | **`+0x210`** |
+| `__TEXT.__swift5_capture` | `—` | `0x168` | **`+0x168`** |
+| `__TEXT.__swift5_fieldmd` | `0x198` | `0x2f8` | **`+0x160`** |
+| `__TEXT.__swift5_reflstr` | `0xe9` | `0x1f9` | **`+0x110`** |
+| `__AUTH.__data` | `0x130` | `0x220` | **`+0xf0`** |
+| `__TEXT.__eh_frame` | `—` | `0x80` | **`+0x80`** |
+| `__DATA_CONST.__objc_protolist` | `—` | `0x40` | **`+0x40`** |
+| `__TEXT.__swift5_assocty` | `0x18` | `0x50` | **`+0x38`** |
+| `__DATA_CONST.__objc_classlist` | `0x10` | `0x40` | **`+0x30`** |
+| `__TEXT.__swift5_types` | `0x20` | `0x4c` | **`+0x2c`** |
+| `__DATA_CONST.__objc_protorefs` | `—` | `0x20` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x88` | `0x98` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x1c` | `0x2c` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `0x10` | `0xc` | **`-0x4`** |
+| `__TEXT.__objc_methtype` | `—` | `0x0` | **`+0x0`** |
+
+### Other Changes
+
 ```diff
 
 -7027.0.52.2.6
--  __TEXT.__text: 0x4718 sha256:a5e82c43257f2e5b7bb3a48f11954c538f55f0feaf692b29c582d3dcd15f44ab
--  __TEXT.__const: 0x4d4 sha256:2a13a723a464079b14134bc091424921102b73853d6c2eddcb2d9db72155593e
--  __TEXT.__swift5_typeref: 0x138 sha256:fb6eb7152bd4dcec0feeb1d5b57f10f0ed3282d21cdc157b457e917b849c9dc9
--  __TEXT.__swift5_reflstr: 0xe9 sha256:e8954b05767eb85a4af4958fb2972d5d1205ea2393ae1dac500d0acb31f12bc8
--  __TEXT.__swift5_assocty: 0x18 sha256:4a810d6eb003ba07bf6722e1c2c3950eece791c1acbc17aea1d5aafb22b6b380
--  __TEXT.__constg_swiftt: 0x260 sha256:a536377e93cd403d43e87d3ad9c75ce82ad6e961b92019281b470fb61adb17b7
--  __TEXT.__swift5_fieldmd: 0x198 sha256:9b2f1b52d8177e0d6839b0766afb55f4af235929b09ae083c75c8ce0fc09fb8b
--  __TEXT.__swift5_builtin: 0x14 sha256:00007dd5a1c3a2ed129f087681e2cdb9db32117932dd89674520250e72c01424
--  __TEXT.__swift5_mpenum: 0x14 sha256:592334487dc8e6e6a2537f9817dcf85a0dd4fc06a021f4c2dad520e3f8293666
--  __TEXT.__swift5_proto: 0x1c sha256:df137611d033e568a05eaeb43a9d118a30f8edee4f549e814bbfe46ceb8d52f9
--  __TEXT.__swift5_types: 0x20 sha256:413a09425eff63296d79af702c0a6a3ac7c63ead1e095cfeec027ab242660d73
 +7027.0.60.2.2
-+  __TEXT.__text: 0xc7e8 sha256:74b8d34b2daa214aa76d1d05fad1be80725d2976ce2b57b33e5d621aeb57a670
-+  __TEXT.__objc_methlist: 0x4cc sha256:eee6c2f46b8726be7997b02d298e67983ece76cb1ce9508fdceab0f87023d4be
-+  __TEXT.__const: 0x7e4 sha256:e35e344880a3f6ccfd42622b1b6892d1c74bd92a0305c733e1b8197490f9c041
-+  __TEXT.__swift5_typeref: 0x356 sha256:c44fee6af356a78af9d26ad192057b134621362b7c99123eb280775d87920136
-+  __TEXT.__swift5_capture: 0x168 sha256:499954f582f402fa93f59046e7c99b18e76baa2c1538117c4bc1b0c265cb33a8
-+  __TEXT.__constg_swiftt: 0x560 sha256:bb109765405abcb9741296febede1b0b928d05acd41c99b47c08691c394add0a
-+  __TEXT.__swift5_reflstr: 0x1f9 sha256:d1590faa35a8d211c4bc7ac411f33a0280e7a655c92c13d68a7ef03effab63a3
-+  __TEXT.__swift5_fieldmd: 0x2f8 sha256:a1c034603b7b36f0fff1f6a504966052571d7cc1c50d82e9b7eca164eba86a78
-+  __TEXT.__swift5_assocty: 0x50 sha256:4884e812dee19b648cfb4026a479b1ccba64ea3548aec1e42b2eeda08c48b059
-+  __TEXT.__cstring: 0x2e6 sha256:d28e17f06d42bf8de3563079c48d060428a45b278c40a5c938e8a78c7e6a9815
-+  __TEXT.__swift5_proto: 0x2c sha256:db54c54213646ec208b847f294068559d391569ef17ce95a1ea457cf15783e3a
-+  __TEXT.__swift5_types: 0x4c sha256:64c27a7395a941326d07f9b42b32e35dfd3c1bcc6cd1aa421d1b39c06d04128c
-+  __TEXT.__swift5_builtin: 0x14 sha256:37c0f6fa20f744f7ce5ae02f23dc6d77bf4ee3429b4c5d4a005845415ffdd0aa
-+  __TEXT.__swift5_mpenum: 0x14 sha256:fa4110d32d5f70a8e57479715a07a85700ddbea4964ff866d7070672d6e45409
-   __TEXT.__oslogstring: 0x1e sha256:305df87c0ea8ff946b2597e28afc53bb9996289f8bbc1954ac82ceb26d3c373c
--  __TEXT.__cstring: 0x56 sha256:849e1b230e0531b5057d67bd275a6ef705c5481fe1515af0adc8936ab88a8218
--  __TEXT.__swift5_protos: 0x10 sha256:f04918ff68b1ea9a0336ab869abcf5877ad345558916fec6080423f858c65590
--  __TEXT.__unwind_info: 0x188 sha256:294afc838eb16feb9db8a94182ac8cf269493d6c070629886da1f61d01e5813f
-+  __TEXT.__swift5_protos: 0xc sha256:ce50a9f0ca52e8fe8d007c33371b535d7d81fddb1f29cfc62978bc88b5e192e5
-+  __TEXT.__unwind_info: 0x3e8 sha256:edc1c50898c4b219cb04c8e1434097384b1ea6091b6f637b25b859f5f0e81556
-+  __TEXT.__eh_frame: 0x80 sha256:bead2493054edd7a12294b854fb3285c8fb9661fe776604a7898be90a23e6aff
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
--  __DATA_CONST.__const: 0x88 sha256:b707241545a346265aab1ffb32ff64b55bf8f8dc1b56a46ef33ce3d15db11d33
--  __DATA_CONST.__objc_classlist: 0x10 sha256:84bea021cde83e887677bcd3f338f22bbb6d17a45c0d176f46d6b5383148febd
-+  __TEXT.__objc_methtype: 0x0
-+  __DATA_CONST.__const: 0x98 sha256:08b7885a1ee27a72ec67f7e2b6895a6d76282541d1829256ddc8a4bd34f05303
-+  __DATA_CONST.__objc_classlist: 0x40 sha256:9123d015cabc37e25b5e6d1b4b6b57cb7d017a8a9f2cc9c62113d97adb0a9c2b
-+  __DATA_CONST.__objc_protolist: 0x40 sha256:f03afb9341e62ad626b79158f6ae9da8745b93643b69fc40f7e6046e1674befb
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0x68 sha256:32b3bbe55c4cb60963175deb9871e490ce4dce18f9e5466392755c0f8f16db85
-+  __DATA_CONST.__objc_selrefs: 0x518 sha256:b27230da97c472212c37cc7d847110ae0a3e4cd885dd9b360b61d213c85bff86
-+  __DATA_CONST.__objc_protorefs: 0x20 sha256:10d77f8277940fcd886a2bbc2017424f7c27f85dedac7ed631ebb80747b2ff93
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x360 sha256:c47d8d353a8240a12e2bc9358f1efc3d7e8815b135141fc3f8dbe22e58fd2762
--  __AUTH_CONST.__objc_const: 0x120 sha256:686f9b4b75d8f4d7ac770a02ada1726e7bb7e7c14f8645715eb69904cc3f54e5
--  __AUTH_CONST.__auth_got: 0x310 sha256:0c37ddc45244523ca3b841e3ea85e147a1d35c6ae1cd767e8c30dabf057516fd
--  __AUTH.__data: 0x130 sha256:ec428b4b92adb9026920ade86e60b8e970573d1b2c50e916d66c504e9b17c266
--  __DATA.__data: 0x1b8 sha256:360d579dbd14759b41afdf7fb5e80c0101e15150ae401d59f92a1e32d129f7cb
--  __DATA.__bss: 0x380 sha256:d54f02b97ed5bc2a642756268b41d4b8f7a077e73224e1580d22436834a14db5
-+  __AUTH_CONST.__const: 0x850 sha256:063758cbbbc1db7dd4762f9b44ae13aabe8c23eb011a3769b23fbc02b62cabd8
-+  __AUTH_CONST.__objc_const: 0x708 sha256:df99ff35fea4471eb6ef26b3754144e832e5ea55e98443b46f57b25f43edb44b
-+  __AUTH_CONST.__auth_got: 0x690 sha256:065cc6b2b996ca729f6aa0208e13ac4b494dd0d74a4c4df6053d08b0c11da865
-+  __AUTH.__objc_data: 0x508 sha256:6337d425925741a586029df9fcf2740bb7226f23f5b848657320ba07f9071c01
-+  __AUTH.__data: 0x220 sha256:68f3fd0f14075dedff3ec5de62f95816798fb0a4a85f0b0e8d9e47cea3cd674e
-+  __DATA.__data: 0x560 sha256:d41416249c8cf6015409d83d60bc0ef3709b0817cf5d8d147f8bda9ebe0cf2e5
-+  __DATA.__bss: 0x590 sha256:5e796fbf009f80334fea0839be003bfbcc320f4dcacdfa2f53c6ca00c7d99e8c
-   __DATA.__common: 0x78 sha256:6edd9f6f9cc92cded36e6c4a580933f9c9f1b90562b46903b806f21902a1a54f
 +  - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/DeveloperToolsSupport.framework/DeveloperToolsSupport
-   - /System/Library/Frameworks/Foundation.framework/Foundation
 
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/PrivateFrameworks/HealthDomains.framework/HealthDomains
-   - /System/Library/PrivateFrameworks/HealthFoundationUI.framework/HealthFoundationUI
 +  - /System/Library/PrivateFrameworks/HealthUtilities.framework/HealthUtilities
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftCore.dylib
 
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
 +  - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: 6A75EE35-7B55-39E7-B8C9-CA3D0974A296
+
 -  Functions: 171
--  Symbols:   180
+-  Symbols:   155
 -  CStrings:  4
-+  UUID: 3C95C379-CB01-3BAF-AFC4-0A8DB16A751C
 +  Functions: 386
-+  Symbols:   458
++  Symbols:   320
 +  CStrings:  20
- 
 Symbols:
 + _CGRectGetWidth
 + _OBJC_CLASS_$_UIAlertAction
@@ -173,11 +131,7 @@ Symbols:
 + __OBJC_PROTOCOL_$_UISplitViewControllerDelegate
 + __OBJC_PROTOCOL_$_UITabBarControllerDelegate
 + __PROTOCOLS__TtCO15HealthDomainsUI7Gallery16TabBarController
-+ __PROTOCOLS__TtCO15HealthDomainsUI7Gallery16TabBarController.1
 + ___swift_closure_destructor
-+ ___swift_closure_destructor.2
-+ ___swift_closure_destructor.5
-+ ___swift_closure_destructor.8
 + ___swift_closure_destructorTm
 + ___swift_instantiateGenericMetadata
 + ___swift_memcpy0_1
@@ -190,80 +144,6 @@ Symbols:
 + _associated conformance 15HealthDomainsUI7GalleryO4ItemVSHAASQ
 + _objc_allocWithZone
 + _objc_autoreleaseReturnValue
-+ _objc_msgSend$actionWithTitle:style:handler:
-+ _objc_msgSend$addAction:
-+ _objc_msgSend$addSubview:
-+ _objc_msgSend$alertControllerWithTitle:message:preferredStyle:
-+ _objc_msgSend$bottomAnchor
-+ _objc_msgSend$centerXAnchor
-+ _objc_msgSend$centerYAnchor
-+ _objc_msgSend$clearColor
-+ _objc_msgSend$collectionView
-+ _objc_msgSend$constraintEqualToAnchor:
-+ _objc_msgSend$constraintGreaterThanOrEqualToSystemSpacingAfterAnchor:multiplier:
-+ _objc_msgSend$constraintGreaterThanOrEqualToSystemSpacingBelowAnchor:multiplier:
-+ _objc_msgSend$constraintLessThanOrEqualToSystemSpacingAfterAnchor:multiplier:
-+ _objc_msgSend$constraintLessThanOrEqualToSystemSpacingBelowAnchor:multiplier:
-+ _objc_msgSend$contentView
-+ _objc_msgSend$dequeueReusableCellWithIdentifier:forIndexPath:
-+ _objc_msgSend$dequeueReusableCellWithReuseIdentifier:forIndexPath:
-+ _objc_msgSend$deselectRowAtIndexPath:animated:
-+ _objc_msgSend$frame
-+ _objc_msgSend$init
-+ _objc_msgSend$initWithNibName:bundle:
-+ _objc_msgSend$initWithSearchResultsController:
-+ _objc_msgSend$initWithStyle:
-+ _objc_msgSend$initWithTabs:
-+ _objc_msgSend$initWithTitle:image:tag:
-+ _objc_msgSend$layer
-+ _objc_msgSend$leadingAnchor
-+ _objc_msgSend$navigationItem
-+ _objc_msgSend$presentViewController:animated:completion:
-+ _objc_msgSend$registerClass:forCellReuseIdentifier:
-+ _objc_msgSend$registerClass:forCellWithReuseIdentifier:
-+ _objc_msgSend$removeFromSuperview
-+ _objc_msgSend$safeAreaLayoutGuide
-+ _objc_msgSend$searchBar
-+ _objc_msgSend$searchResultsController
-+ _objc_msgSend$setActive:
-+ _objc_msgSend$setBackgroundColor:
-+ _objc_msgSend$setDefinesPresentationContext:
-+ _objc_msgSend$setDelegate:
-+ _objc_msgSend$setEstimatedItemSize:
-+ _objc_msgSend$setHidden:
-+ _objc_msgSend$setHidesSearchBarWhenScrolling:
-+ _objc_msgSend$setMaximumContentSizeCategory:
-+ _objc_msgSend$setMinimumContentSizeCategory:
-+ _objc_msgSend$setMinimumLineSpacing:
-+ _objc_msgSend$setNumberOfLines:
-+ _objc_msgSend$setPriority:
-+ _objc_msgSend$setSearchController:
-+ _objc_msgSend$setSearchResultsUpdater:
-+ _objc_msgSend$setSectionInset:
-+ _objc_msgSend$setShadowOffset:
-+ _objc_msgSend$setShadowOpacity:
-+ _objc_msgSend$setShadowRadius:
-+ _objc_msgSend$setSize:
-+ _objc_msgSend$setTabBarItem:
-+ _objc_msgSend$setText:
-+ _objc_msgSend$setTitle:
-+ _objc_msgSend$setTranslatesAutoresizingMaskIntoConstraints:
-+ _objc_msgSend$setViewControllers:
-+ _objc_msgSend$showDetailViewController:sender:
-+ _objc_msgSend$showViewController:sender:
-+ _objc_msgSend$size
-+ _objc_msgSend$subviews
-+ _objc_msgSend$superview
-+ _objc_msgSend$tabBar
-+ _objc_msgSend$tabBarItem
-+ _objc_msgSend$tableView
-+ _objc_msgSend$text
-+ _objc_msgSend$textLabel
-+ _objc_msgSend$title
-+ _objc_msgSend$topAnchor
-+ _objc_msgSend$trailingAnchor
-+ _objc_msgSend$view
-+ _objc_msgSend$viewControllers
 + _objc_msgSendSuper2
 + _objc_release
 + _objc_release_x24
@@ -362,5 +242,4 @@ CStrings:
 + "init(nibName:bundle:)"
 + "init(style:)"
 + "init(tabs:)"
-
 ```

@@ -2,10 +2,12 @@
 
 > `Firmware/txm.iphoneos.release.im4p`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
 - `__TEXT_BOOT_EXEC.__text`
+
+### Other Changes
 
 ```diff
 CStrings:

@@ -2,6 +2,8 @@
 
 > `/System/Library/Assistant/Suggestions/InferenceBridge/SiriSuggestionsInferenceBridge.bundle/SiriSuggestionsInferenceBridge`
 
+### Other Changes
+
 ```text
 Functions:
 ~ sub_5540 : 28 -> 12

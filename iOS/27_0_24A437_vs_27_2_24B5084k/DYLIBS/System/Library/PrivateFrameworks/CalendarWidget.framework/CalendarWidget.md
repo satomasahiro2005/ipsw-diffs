@@ -2,68 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/CalendarWidget.framework/CalendarWidget`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf9838` | `0xfbaf4` | **`+0x22bc`** |
+| `__TEXT.__swift5_typeref` | `0x188ca` | `0x18a6e` | **`+0x1a4`** |
+| `__DATA.__data` | `0xe00` | `0xeb8` | **`+0xb8`** |
+| `__AUTH_CONST.__auth_got` | `0x1650` | `0x16b0` | **`+0x60`** |
+| `__TEXT.__const` | `0xa134` | `0xa194` | **`+0x60`** |
+| `__AUTH_CONST.__const` | `0x2ab0` | `0x2b00` | **`+0x50`** |
+| `__DATA_DIRTY.__data` | `0x62a8` | `0x6258` | **`-0x50`** |
+| `__TEXT.__swift5_capture` | `0x598` | `0x5c8` | **`+0x30`** |
+| `__TEXT.__unwind_info` | `0x1d60` | `0x1d90` | **`+0x30`** |
+| `__DATA.__bss` | `0xda0` | `0xd90` | **`-0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x2a37` | `0x2a27` | **`-0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x2978` | `0x296c` | **`-0xc`** |
+
+### Other Changes
+
 ```diff
 
 -415.0.100.0.0
--  __TEXT.__text: 0xf1ad0
 +415.1.5.0.0
-+  __TEXT.__text: 0xf3b7c
-   __TEXT.__objc_methlist: 0x7a0
--  __TEXT.__const: 0xa134
-+  __TEXT.__const: 0xa194
-   __TEXT.__constg_swiftt: 0x2e94
--  __TEXT.__swift5_typeref: 0x188ca
--  __TEXT.__swift5_fieldmd: 0x2978
-+  __TEXT.__swift5_typeref: 0x18a6e
-+  __TEXT.__swift5_fieldmd: 0x296c
-   __TEXT.__swift5_builtin: 0xc8
--  __TEXT.__swift5_reflstr: 0x2a37
-+  __TEXT.__swift5_reflstr: 0x2a27
-   __TEXT.__swift5_assocty: 0x948
--  __TEXT.__swift5_capture: 0x598
-+  __TEXT.__swift5_capture: 0x5c8
-   __TEXT.__swift5_proto: 0x318
-   __TEXT.__swift5_types: 0x278
-   __TEXT.__cstring: 0x3b02
 
-   __TEXT.__swift_as_entry: 0x20
-   __TEXT.__swift_as_ret: 0x20
-   __TEXT.__swift5_protos: 0x14
--  __TEXT.__unwind_info: 0x28b8
-+  __TEXT.__unwind_info: 0x28f0
-   __TEXT.__eh_frame: 0x6a4
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_selrefs: 0x540
-   __DATA_CONST.__objc_protorefs: 0x38
-   __DATA_CONST.__got: 0x930
--  __AUTH_CONST.__const: 0x2ab0
-+  __AUTH_CONST.__const: 0x2b00
-   __AUTH_CONST.__objc_const: 0x22b0
--  __AUTH_CONST.__auth_got: 0x1650
-+  __AUTH_CONST.__auth_got: 0x16b0
-   __AUTH.__objc_data: 0x4a0
-   __AUTH.__data: 0x6c0
--  __DATA.__data: 0xe00
-+  __DATA.__data: 0xeb8
-   __DATA.__common: 0x88
-   __DATA_DIRTY.__objc_data: 0x6d0
--  __DATA_DIRTY.__data: 0x62a8
-+  __DATA_DIRTY.__data: 0x6258
-   __DATA_DIRTY.__bss: 0x5400
-   __DATA_DIRTY.__common: 0x2a8
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3406
--  Symbols:   2027
+-  Symbols:   1930
 +  Functions: 3418
-+  Symbols:   2036
-   CStrings:  252
- 
++  Symbols:   1939
 Symbols:
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA4ViewPAAE19containerBackground3for9alignment7contentQrAA09ContainerG9PlacementV_AA9AlignmentVqd__yXEtAaDRd__lFQOyAA5GroupVyAA012_ConditionalD0VyACyAE9WidgetKitE9widgetURLyQr10Foundation0S0VSgFQOy13CalendarUIKit09CUIKMonthE0V_Qo_AA14_PaddingLayoutVGAA14GeometryReaderVyA_GGG_AA06_ShapeE0VyAA9RectangleVAA0G5StyleVGQo_AA30_EnvironmentKeyWritingModifierVyAT0U0VGGAaDHPqd0__AaDHD3_A15_HO_A20_AA0E8ModifierHPyHCHC
 + _get_witness_table 7SwiftUI15ModifiedContentVyAA4ViewPAAE19containerBackground3for9alignment7contentQrAA09ContainerG9PlacementV_AA9AlignmentVqd__yXEtAaDRd__lFQOyAE9WidgetKitE9widgetURLyQr10Foundation0Q0VSgFQOyAA5GroupVyAA012_ConditionalD0VyACy13CalendarUIKit08CUIKDateE0VAA14_PaddingLayoutVGAA14GeometryReaderVyAZGGG_Qo__AA06_ShapeE0VyAA9RectangleVAA0G5StyleVGQo_AA30_EnvironmentKeyWritingModifierVyAP0U0VGGAaDHPqd0__AaDHD3_A15_HO_A20_AA0E8ModifierHPyHCHC

@@ -2,16 +2,17 @@
 
 > `/System/Library/PrivateFrameworks/DormancyCore.framework/DormancyCore`
 
-```diff
+### Section Size Changes
 
- 27.0.60.0.0
--  __TEXT.__text: 0x2d49c
-+  __TEXT.__text: 0x2d4c8
-   __TEXT.__objc_methlist: 0xe4
-   __TEXT.__const: 0x3f2c
-   __TEXT.__cstring: 0x923
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2d49c` | `0x2d4c8` | **`+0x2c`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_25fd00440 -> sub_2616ff440 : 732 -> 756
-~ sub_25fd0071c -> sub_2616ff734 : 1076 -> 1092
-~ sub_25fd01630 -> sub_261700658 : 340 -> 344
+~ sub_25fbcf440 -> sub_2615db440 : 732 -> 756
+~ sub_25fbcf71c -> sub_2615db734 : 1076 -> 1092
+~ sub_25fbd0630 -> sub_2615dc658 : 340 -> 344
 ```

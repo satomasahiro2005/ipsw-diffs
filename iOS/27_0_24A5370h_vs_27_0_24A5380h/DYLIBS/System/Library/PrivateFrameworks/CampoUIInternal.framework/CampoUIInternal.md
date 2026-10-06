@@ -2,163 +2,76 @@
 
 > `/System/Library/PrivateFrameworks/CampoUIInternal.framework/CampoUIInternal`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x416dd0` | `0x44a5ec` | **`+0x3381c`** |
+| `__DATA_DIRTY.__data` | `—` | `0x10578` | **`+0x10578`** |
+| `__AUTH.__data` | `0xc918` | `0x3a08` | **`-0x8f10`** |
+| `__DATA_DIRTY.__bss` | `—` | `0x8470` | **`+0x8470`** |
+| `__DATA.__bss` | `0x1ccb8` | `0x14ed0` | **`-0x7de8`** |
+| `__DATA.__data` | `0xdd6c` | `0x7b30` | **`-0x623c`** |
+| `__DATA_DIRTY.__objc_data` | `—` | `0x2938` | **`+0x2938`** |
+| `__AUTH.__objc_data` | `0x3b10` | `0x12f0` | **`-0x2820`** |
+| `__TEXT.__swift5_typeref` | `0x315ac` | `0x2fbdc` | **`-0x19d0`** |
+| `__TEXT.__eh_frame` | `0x1cc70` | `0x1e388` | **`+0x1718`** |
+| `__AUTH_CONST.__const` | `0x1bec8` | `0x1d248` | **`+0x1380`** |
+| `__TEXT.__const` | `0x23fb0` | `0x25070` | **`+0x10c0`** |
+| `__TEXT.__oslogstring` | `0x10759` | `0x1174f` | **`+0xff6`** |
+| `__TEXT.__unwind_info` | `0x10a30` | `0x11638` | **`+0xc08`** |
+| `__AUTH_CONST.__objc_const` | `0x10630` | `0x110b8` | **`+0xa88`** |
+| `__TEXT.__cstring` | `0xfdc8` | `0x10757` | **`+0x98f`** |
+| `__TEXT.__swift5_reflstr` | `0xaac2` | `0xb362` | **`+0x8a0`** |
+| `__TEXT.__constg_swiftt` | `0xa4d4` | `0xacbc` | **`+0x7e8`** |
+| `__TEXT.__swift5_fieldmd` | `0x9838` | `0x9fa0` | **`+0x768`** |
+| `__TEXT.__swift5_capture` | `0x76f0` | `0x7db8` | **`+0x6c8`** |
+| `__DATA_DIRTY.__common` | `—` | `0x470` | **`+0x470`** |
+| `__DATA.__common` | `0x6a8` | `0x290` | **`-0x418`** |
+| `__AUTH_CONST.__auth_got` | `0x58d0` | `0x5c58` | **`+0x388`** |
+| `__TEXT.__objc_methlist` | `0x7408` | `0x75c0` | **`+0x1b8`** |
+| `__DATA_CONST.__got` | `0x3600` | `0x3768` | **`+0x168`** |
+| `__TEXT.__gcc_except_tab` | `0xc2c` | `0xd84` | **`+0x158`** |
+| `__DATA_CONST.__objc_selrefs` | `0x4e50` | `0x4f68` | **`+0x118`** |
+| `__TEXT.__swift5_assocty` | `0x1a10` | `0x1b18` | **`+0x108`** |
+| `__TEXT.__swift_as_cont` | `0x1098` | `0x1194` | **`+0xfc`** |
+| `__TEXT.__swift_as_entry` | `0x954` | `0xa08` | **`+0xb4`** |
+| `__TEXT.__swift_as_ret` | `0x9c8` | `0xa70` | **`+0xa8`** |
+| `__TEXT.__swift5_types` | `0xa3c` | `0xaa8` | **`+0x6c`** |
+| `__TEXT.__swift5_proto` | `0xee4` | `0xf28` | **`+0x44`** |
+| `__AUTH_CONST.__cfstring` | `0x16a0` | `0x16e0` | **`+0x40`** |
+| `__DATA_CONST.__objc_classlist` | `0x5c8` | `0x608` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x15b8` | `0x15f0` | **`+0x38`** |
+| `__DATA.__objc_ivar` | `0x358` | `0x35c` | **`+0x4`** |
+| `__TEXT.__swift5_protos` | `0xe8` | `0xec` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x416dd0
-+  __TEXT.__text: 0x44a5ec
-   __TEXT.__delay_helper: 0x14c
--  __TEXT.__objc_methlist: 0x7408
--  __TEXT.__const: 0x23fb0
-+  __TEXT.__objc_methlist: 0x75c0
-+  __TEXT.__const: 0x25070
-   __TEXT.__dlopen_cstrs: 0x13d
--  __TEXT.__constg_swiftt: 0xa4d4
--  __TEXT.__swift5_typeref: 0x315ac
--  __TEXT.__swift5_fieldmd: 0x9838
-+  __TEXT.__constg_swiftt: 0xacbc
-+  __TEXT.__swift5_typeref: 0x2fbdc
-   __TEXT.__swift5_builtin: 0x2e4
--  __TEXT.__swift5_reflstr: 0xaac2
--  __TEXT.__swift5_assocty: 0x1a10
--  __TEXT.__swift5_capture: 0x76f0
--  __TEXT.__oslogstring: 0x10759
--  __TEXT.__cstring: 0xfdc8
--  __TEXT.__swift5_protos: 0xe8
--  __TEXT.__swift5_proto: 0xee4
--  __TEXT.__swift5_types: 0xa3c
--  __TEXT.__swift_as_entry: 0x954
--  __TEXT.__swift_as_ret: 0x9c8
--  __TEXT.__swift_as_cont: 0x1098
-+  __TEXT.__swift5_reflstr: 0xb362
-+  __TEXT.__swift5_fieldmd: 0x9fa0
-+  __TEXT.__swift5_assocty: 0x1b18
-+  __TEXT.__cstring: 0x10757
-+  __TEXT.__swift5_proto: 0xf28
-+  __TEXT.__swift5_types: 0xaa8
-+  __TEXT.__swift5_capture: 0x7db8
-+  __TEXT.__oslogstring: 0x1174f
-+  __TEXT.__swift5_protos: 0xec
-+  __TEXT.__swift_as_entry: 0xa08
-+  __TEXT.__swift_as_ret: 0xa70
-+  __TEXT.__swift_as_cont: 0x1194
-   __TEXT.__swift5_mpenum: 0xa4
--  __TEXT.__gcc_except_tab: 0xc2c
--  __TEXT.__unwind_info: 0x10a30
--  __TEXT.__eh_frame: 0x1cc70
-+  __TEXT.__gcc_except_tab: 0xd84
-+  __TEXT.__unwind_info: 0x11638
-+  __TEXT.__eh_frame: 0x1e388
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x15b8
--  __DATA_CONST.__objc_classlist: 0x5c8
-+  __DATA_CONST.__const: 0x15f0
-+  __DATA_CONST.__objc_classlist: 0x608
-   __DATA_CONST.__objc_catlist: 0xa0
-   __DATA_CONST.__objc_protolist: 0x350
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x4e50
-+  __DATA_CONST.__objc_selrefs: 0x4f68
-   __DATA_CONST.__objc_protorefs: 0x150
-   __DATA_CONST.__objc_superrefs: 0x88
--  __DATA_CONST.__got: 0x3600
--  __AUTH_CONST.__const: 0x1bec8
--  __AUTH_CONST.__cfstring: 0x16a0
--  __AUTH_CONST.__objc_const: 0x10630
-+  __DATA_CONST.__got: 0x3768
-+  __AUTH_CONST.__const: 0x1d248
-+  __AUTH_CONST.__cfstring: 0x16e0
-+  __AUTH_CONST.__objc_const: 0x110b8
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__objc_intobj: 0x18
--  __AUTH_CONST.__auth_got: 0x58d0
--  __AUTH.__objc_data: 0x3b10
--  __AUTH.__data: 0xc918
--  __DATA.__objc_ivar: 0x358
--  __DATA.__data: 0xdd6c
--  __DATA.__common: 0x6a8
--  __DATA.__bss: 0x1ccb8
-+  __AUTH_CONST.__auth_got: 0x5c58
-+  __AUTH.__objc_data: 0x12f0
-+  __AUTH.__data: 0x3a08
-+  __DATA.__objc_ivar: 0x35c
-+  __DATA.__data: 0x7b30
-+  __DATA.__bss: 0x14ed0
-+  __DATA.__common: 0x290
-+  __DATA_DIRTY.__objc_data: 0x2938
-+  __DATA_DIRTY.__data: 0x10578
-+  __DATA_DIRTY.__common: 0x470
-+  __DATA_DIRTY.__bss: 0x8470
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AVRouting.framework/AVRouting
+-67.4.100.0.0
++73.0.5.102.0
 
-   - /System/Library/Frameworks/Photos.framework/Photos
-   - /System/Library/Frameworks/PhotosUI.framework/PhotosUI
-   - /System/Library/Frameworks/QuartzCore.framework/QuartzCore
 -  - /System/Library/Frameworks/QuickLookThumbnailing.framework/QuickLookThumbnailing
-   - /System/Library/Frameworks/Security.framework/Security
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-   - /System/Library/Frameworks/Symbols.framework/Symbols
 
-   - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
-   - /System/Library/PrivateFrameworks/GenerativePartnerService.framework/GenerativePartnerService
-   - /System/Library/PrivateFrameworks/GenerativePartnerServiceUI.framework/GenerativePartnerServiceUI
 -  - /System/Library/PrivateFrameworks/GenerativeSearch.framework/GenerativeSearch
 -  - /System/Library/PrivateFrameworks/GenerativeSearchAdapter.framework/GenerativeSearchAdapter
-   - /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
+
 +  - /System/Library/PrivateFrameworks/HybridSearch.framework/HybridSearch
 +  - /System/Library/PrivateFrameworks/HybridSearchAdapter.framework/HybridSearchAdapter
-   - /System/Library/PrivateFrameworks/LinkMetadata.framework/LinkMetadata
-   - /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
-   - /System/Library/PrivateFrameworks/PhotosUICore.framework/PhotosUICore
 
-   - /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation
-   - /System/Library/PrivateFrameworks/SiriKitInvocation.framework/SiriKitInvocation
-   - /System/Library/PrivateFrameworks/SiriModes.framework/SiriModes
 +  - /System/Library/PrivateFrameworks/SiriSetup.framework/SiriSetup
-   - /System/Library/PrivateFrameworks/SiriSharedUI.framework/SiriSharedUI
-   - /System/Library/PrivateFrameworks/SiriTTSService.framework/SiriTTSService
-   - /System/Library/PrivateFrameworks/SiriUI.framework/SiriUI
 
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
 +  - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAVFoundation.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
 
-   - /usr/lib/swift/libswiftQuartzCore.dylib
-   - /usr/lib/swift/libswiftSceneKit.dylib
-   - /usr/lib/swift/libswiftSpatial.dylib
 +  - /usr/lib/swift/libswiftSpriteKit.dylib
-   - /usr/lib/swift/libswiftSynchronization.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 24560
--  Symbols:   30735
--  CStrings:  2663
+-  Symbols:   9155
+-  CStrings:  2482
 +  Functions: 25513
-+  Symbols:   31849
-+  CStrings:  2781
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
++  Symbols:   9402
++  CStrings:  2598
 Symbols:
 + +[AFSpeechRequestOptions(BlockAttending) speechRequestOptionsBlockAttending]
 + -[CampoUIDefaultSiriChatActiveConnectionService clearContextWithInvocationContext:]
@@ -405,47 +318,6 @@ Symbols:
 + _kCGImageSourceCreateThumbnailFromImageAlways
 + _kCGImageSourceCreateThumbnailWithTransform
 + _kCGImageSourceThumbnailMaxPixelSize
-+ _objc_msgSend$_dispatchedForceAudioSessionActiveWithCompletionWrapper:
-+ _objc_msgSend$_isEyesFreeRequest
-+ _objc_msgSend$_setStateFeedbackPlaybackBarrierEnabled:
-+ _objc_msgSend$_startRequestWithFinalOptions:explicitReferences:externalProviderID:invocationContext:presentationContext:completion:
-+ _objc_msgSend$_startRequestWithText:turnIdentifier:explicitReferences:invocationContext:externalProviderID:completion:
-+ _objc_msgSend$_startSpeechRequestWithOptions:invocationContext:completion:
-+ _objc_msgSend$_ttsResultOverridingBarrierRejection:error:
-+ _objc_msgSend$buttonUpTimestamp
-+ _objc_msgSend$cancelSpeechSynthesisImmediately
-+ _objc_msgSend$cancelStateFeedback
-+ _objc_msgSend$clearContextWithInvocationContext:
-+ _objc_msgSend$desiredOrchestrationMode
-+ _objc_msgSend$disengageStateFeedbackPlaybackBarrier
-+ _objc_msgSend$engageStateFeedbackPlaybackBarrier
-+ _objc_msgSend$initWithCGImage:
-+ _objc_msgSend$initWithIdentifier:bundleIdentifier:pid:pidVersion:
-+ _objc_msgSend$linwoodEverAvailable
-+ _objc_msgSend$localizedNameOfOutputVoiceWithIdentifier:inDisplayLanguage:
-+ _objc_msgSend$notifyReadyToPresentUIWithCommand:
-+ _objc_msgSend$outputVoiceIdentifierForLanguageCode:voiceName:
-+ _objc_msgSend$realToken
-+ _objc_msgSend$registeredTypeIdentifiers
-+ _objc_msgSend$resumeSessionId
-+ _objc_msgSend$resumeSessionWithId:invocationContext:
-+ _objc_msgSend$resumeSessionWithInvocationContext:
-+ _objc_msgSend$scheduleAutoDismissalPostSystemUIResponse:
-+ _objc_msgSend$setAccessibilityIdentifier:
-+ _objc_msgSend$setBlockAttending:
-+ _objc_msgSend$setInvocationContext:
-+ _objc_msgSend$setTargetWindow:
-+ _objc_msgSend$setTreatCancellationAsSynthesisCompletionForInteractionBarrier:
-+ _objc_msgSend$signingIdentifier
-+ _objc_msgSend$siriAvailability
-+ _objc_msgSend$siriSession:didUpdateResponseMode:
-+ _objc_msgSend$siriSessionUserEngagementBarrierEngaged
-+ _objc_msgSend$startRequestWithOptions:explicitReferences:externalProviderID:invocationContext:presentationContext:completion:
-+ _objc_msgSend$startRequestWithOptions:invocationContext:
-+ _objc_msgSend$startRequestWithOptions:invocationContext:completion:
-+ _objc_msgSend$streamingConsumerDidDetectFollowUpForStreamId:
-+ _objc_msgSend$suggestedName
-+ _objc_msgSend$voiceNamesForOutputLanguageCode:gender:
 + _swift_release_x10
 + _swift_release_x11
 + _symbolic $s15CampoUIInternal15VoiceInputOwnerP
@@ -1122,18 +994,6 @@ Symbols:
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE15dynamicTypeSizeyQrAA07DynamiceF0OFQOyAA15ModifiedContentVyAHyAHyAHyAA24ButtonStyleConfigurationV5LabelVAA30_EnvironmentKeyWritingModifierVyAA4FontVSgGGAA011_ForegroundK9Modifier2VyAA5ColorVAWGGANyAA19SymbolRenderingModeVSgGGANyAA8MaterialVSgGG_Qo_HO
 - _kCGImagePropertyOrientation
 - _kCMPhotoCompressionOption_ImageOrientation
-- _objc_msgSend$_startRequestWithFinalOptions:explicitReferences:externalProviderID:invocationSource:presentationContext:completion:
-- _objc_msgSend$_startRequestWithText:turnIdentifier:explicitReferences:invocationSource:externalProviderID:completion:
-- _objc_msgSend$_startSpeechRequestWithOptions:invocationSource:completion:
-- _objc_msgSend$generateBestRepresentationForRequest:completionHandler:
-- _objc_msgSend$initWithFileAtURL:size:scale:representationTypes:
-- _objc_msgSend$secondarySystemBackgroundColor
-- _objc_msgSend$setIconMode:
-- _objc_msgSend$sharedGenerator
-- _objc_msgSend$startProcessingChunksWithCompletionHandler:
-- _objc_msgSend$startRequestWithOptions:explicitReferences:externalProviderID:invocationSource:presentationContext:completion:
-- _objc_msgSend$startRequestWithOptions:invocationSource:
-- _objc_msgSend$startRequestWithOptions:invocationSource:completion:
 - _swift_runtimeSupportsNoncopyableTypes
 - _symbolic BAytSg______pIeNghHgILrzo_ s5ErrorP
 - _symbolic BAyt______pIeNghHgILrzo_ s5ErrorP
@@ -1675,5 +1535,4 @@ CStrings:
 - "init(sessionIdentifier:context:connectionInvalidationToken:connectionProvider:presentationProvider:punchoutHandler:responseModeIsAlwaysSilent:)"
 - "legacySiri"
 - "\xf0\xf0\xd1"
-
 ```

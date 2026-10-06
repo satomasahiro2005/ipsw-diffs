@@ -2,18 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/FontServices.framework/libType1Scaler.dylib`
 
-```diff
+### Section Size Changes
 
- 61.0.0.0.0
--  __TEXT.__text: 0x34bf4
-+  __TEXT.__text: 0x34c30
-   __TEXT.__const: 0xb2c
-   __TEXT.__cstring: 0xd90
-   __TEXT.__gcc_except_tab: 0x19b4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x34bf4` | `0x34c30` | **`+0x3c`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_263604608 -> sub_26430c608 : 2612 -> 2624
-~ sub_2636080ec -> sub_2643100f8 : 252 -> 256
-~ sub_263609434 -> sub_264311444 : 20236 -> 20268
-~ sub_2636141d4 -> sub_26431c204 : 460 -> 464
-~ sub_26361f4c4 -> sub_2643274f8 : 1672 -> 1680
+~ sub_2634e6608 -> sub_2641e8608 : 2612 -> 2624
+~ sub_2634ea0ec -> sub_2641ec0f8 : 252 -> 256
+~ sub_2634eb434 -> sub_2641ed444 : 20236 -> 20268
+~ sub_2634f61d4 -> sub_2641f8204 : 460 -> 464
+~ sub_2635014c4 -> sub_2642034f8 : 1672 -> 1680
 ```

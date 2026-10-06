@@ -2,58 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/Espresso.framework/Espresso`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd1ed1c` | `0xd1ecb4` | **`-0x68`** |
+| `__AUTH.__objc_data` | `0x26c0` | `0x2670` | **`-0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x140` | `0x190` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x2c480` | `0x2c460` | **`-0x20`** |
+| `__TEXT.__gcc_except_tab` | `0xce8d4` | `0xce8c0` | **`-0x14`** |
+| `__DATA.__bss` | `0x67b0` | `0x67b8` | **`+0x8`** |
+| `__DATA_DIRTY.__bss` | `0x2a8` | `0x2a0` | **`-0x8`** |
+| `__DATA.__data` | `0x4c8` | `0x4c4` | **`-0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__cstring`
+
+### Other Changes
 
 ```diff
 
 -3605.2.4.0.0
--  __TEXT.__text: 0xcf5c74
 +3605.2.5.0.0
-+  __TEXT.__text: 0xcf5c0c
-   __TEXT.__objc_methlist: 0x322c
-   __TEXT.__const: 0x5e822
-   __TEXT.__cstring: 0x54029
--  __TEXT.__gcc_except_tab: 0xce8d4
-+  __TEXT.__gcc_except_tab: 0xce8c0
-   __TEXT.__oslogstring: 0x8a8c
--  __TEXT.__unwind_info: 0x2f068
-+  __TEXT.__unwind_info: 0x2f048
-   __TEXT.__eh_frame: 0x4b0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __AUTH_CONST.__objc_dictobj: 0x28
-   __AUTH_CONST.__objc_doubleobj: 0x40
-   __AUTH_CONST.__auth_got: 0x2678
--  __AUTH.__objc_data: 0x26c0
-+  __AUTH.__objc_data: 0x2670
-   __AUTH.__data: 0x198
-   __AUTH.__thread_vars: 0x18
-   __AUTH.__thread_bss: 0x400
-   __DATA.__objc_ivar: 0x5b8
--  __DATA.__data: 0x4c8
-+  __DATA.__data: 0x4c4
-   __DATA.__common: 0x30
--  __DATA_DIRTY.__objc_data: 0x140
-+  __DATA_DIRTY.__objc_data: 0x190
-   __DATA_DIRTY.__data: 0x90
--  __DATA_DIRTY.__bss: 0x2a8
-+  __DATA_DIRTY.__bss: 0x2a0
-   __DATA_DIRTY.__common: 0x8
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 34705
--  Symbols:   55310
+-  Symbols:   54439
 +  Functions: 34702
-+  Symbols:   55305
-   CStrings:  10472
- 
++  Symbols:   54434
 Symbols:
 + GCC_except_table17224
 + GCC_except_table17243

@@ -2,25 +2,23 @@
 
 > `/System/Library/Frameworks/OpenGLES.framework/libGLProgrammability.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x137f90` | `0x137f18` | **`-0x78`** |
+| `__TEXT.__unwind_info` | `0x1850` | `0x1848` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x137f90
-+  __TEXT.__text: 0x137f18
-   __TEXT.__const: 0xb030
-   __TEXT.__cstring: 0xd298
-   __TEXT.__oslogstring: 0x3
--  __TEXT.__unwind_info: 0x1850
-+  __TEXT.__unwind_info: 0x1848
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x4e28
-   __DATA_CONST.__got: 0x0
-Sections:
-~ __TEXT.__cstring : content changed
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
+-24.0.1.0.0
++24.0.2.0.0
 Functions:
 ~ _PPParserMacroGetReplaceString : 336 -> 332
 ~ _PPParserValidateName : 1500 -> 1496
@@ -54,5 +52,4 @@ CStrings:
 + "Jun 27 2026"
 - "17:20:13"
 - "Jun  9 2026"
-
 ```

@@ -2,27 +2,22 @@
 
 > `/usr/lib/libswiftPrespecialized.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__const` | `0x505250` | `0x50b730` | **`+0x64e0`** |
+| `__AUTH.__data` | `0xd1020` | `0xd0d68` | **`-0x2b8`** |
+| `__AUTH_CONST.__const` | `0x5efb8` | `0x5eed0` | **`-0xe8`** |
+| `__DATA_CONST.__ptrhashtabkey` | `0x31150` | `0x310d0` | **`-0x80`** |
+| `__DATA_CONST.__ptrhashtab` | `0x1df10` | `0x1dec0` | **`-0x50`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__text: 0x0
-   __TEXT.__cstring: 0x4a
-   __TEXT.__lldb_no_nlist: 0x0
--  __DATA_CONST.__const: 0x505250
--  __DATA_CONST.__ptrhashtab: 0x1df10
--  __DATA_CONST.__ptrhashtabkey: 0x31150
--  __AUTH_CONST.__const: 0x5efb8
--  __AUTH.__data: 0xd1020
-+  __DATA_CONST.__const: 0x50b730
-+  __DATA_CONST.__ptrhashtab: 0x1dec0
-+  __DATA_CONST.__ptrhashtabkey: 0x310d0
-+  __AUTH_CONST.__const: 0x5eed0
-+  __AUTH.__data: 0xd0d68
-   - /usr/lib/libSystem.B.dylib
-   Functions: 0
 -  Symbols:   201021
 +  Symbols:   202660
-   CStrings:  9
- 
 Symbols:
 + _$s09HealthAppA6Daemon32PinnedContentStateSyncEntityBaseCMn
 + _$s09HealthAppA6Daemon35LoggingPinnedContentStateSyncEntityCMn

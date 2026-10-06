@@ -2,67 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/CoreAnalytics.framework/Support/analyticsd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1442a8` | `0x144f18` | **`+0xc70`** |
+| `__TEXT.__gcc_except_tab` | `0x17794` | `0x178b8` | **`+0x124`** |
+| `__TEXT.__cstring` | `0x16215` | `0x162b5` | **`+0xa0`** |
+| `__TEXT.__oslogstring` | `0x1af99` | `0x1b039` | **`+0xa0`** |
+| `__TEXT.__unwind_info` | `0x8608` | `0x8650` | **`+0x48`** |
+| `__TEXT.__eh_frame` | `0x398` | `0x3d8` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0xadc8` | `0xade8` | **`+0x20`** |
+| `__TEXT.__const` | `0xa464` | `0xa474` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_got`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__objc_arraydata`
+- `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_dictobj`
+- `__DATA_CONST.__objc_intobj`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_superrefs`
+- `__TEXT.__constg_swiftt`
 - `__TEXT.__init_offsets`
 - `__TEXT.__objc_methlist`
-- `__TEXT.__constg_swiftt`
 - `__TEXT.__swift5_proto`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__objc_dictobj`
-- `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__auth_got`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__data`
+
+### Other Changes
 
 ```diff
 
 -577.40.5.0.0
--  __TEXT.__text: 0x141734
 +577.40.7.0.0
-+  __TEXT.__text: 0x1423a0
-   __TEXT.__auth_stubs: 0x1e60
-   __TEXT.__objc_stubs: 0x2cc0
-   __TEXT.__init_offsets: 0x24
-   __TEXT.__objc_methlist: 0xb9c
--  __TEXT.__gcc_except_tab: 0x17794
--  __TEXT.__const: 0xa464
--  __TEXT.__cstring: 0x16215
--  __TEXT.__oslogstring: 0x1af99
-+  __TEXT.__gcc_except_tab: 0x178b8
-+  __TEXT.__const: 0xa474
-+  __TEXT.__cstring: 0x162b5
-+  __TEXT.__oslogstring: 0x1b039
-   __TEXT.__objc_methname: 0x2f83
-   __TEXT.__objc_classname: 0x20a
-   __TEXT.__objc_methtype: 0x1879
 
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_proto: 0x4
-   __TEXT.__swift5_types: 0x14
--  __TEXT.__unwind_info: 0x9cf8
--  __TEXT.__eh_frame: 0x3a8
--  __DATA_CONST.__const: 0xadc8
-+  __TEXT.__unwind_info: 0x9d40
-+  __TEXT.__eh_frame: 0x3e0
-+  __DATA_CONST.__const: 0xade8
-   __DATA_CONST.__cfstring: 0xd40
-   __DATA_CONST.__objc_classlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x58
-
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 6410
 +  Functions: 6418
-   Symbols:   734
+
 -  CStrings:  4139
 +  CStrings:  4141
- 
 Symbols:
 + _swift_release_x19
 - _swift_release_x20

@@ -2,91 +2,39 @@
 
 > `/System/Library/PrivateFrameworks/GPUToolsReplay.framework/GPUToolsReplay`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x41c03c` | `0x4221f4` | **`+0x61b8`** |
+| `__TEXT.__cstring` | `0x10dd73` | `0x10e354` | **`+0x5e1`** |
+| `__TEXT.__gcc_except_tab` | `0x16d08` | `0x1705c` | **`+0x354`** |
+| `__AUTH_CONST.__cfstring` | `0xfc20` | `0xfe80` | **`+0x260`** |
+| `__TEXT.__const` | `0xa438` | `0xa518` | **`+0xe0`** |
+| `__TEXT.__oslogstring` | `0x18d1` | `0x1967` | **`+0x96`** |
+| `__AUTH_CONST.__objc_const` | `0xc100` | `0xc190` | **`+0x90`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6870` | `0x68d8` | **`+0x68`** |
+| `__DATA_CONST.__got` | `0x928` | `0x988` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0x19f0` | `0x1a40` | **`+0x50`** |
+| `__DATA_CONST.__const` | `0x33e070` | `0x33e0c0` | **`+0x50`** |
+| `__TEXT.__objc_methlist` | `0x7d44` | `0x7d94` | **`+0x50`** |
+| `__TEXT.__unwind_info` | `0x5aa8` | `0x5af0` | **`+0x48`** |
+| `__DATA.__bss` | `0x1528` | `0x1530` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x298` | `0x2a0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x41c03c
-+  __TEXT.__text: 0x4221f4
-   __TEXT.__init_offsets: 0x10
--  __TEXT.__objc_methlist: 0x7d44
--  __TEXT.__const: 0xa438
--  __TEXT.__oslogstring: 0x18d1
--  __TEXT.__cstring: 0x10dd73
--  __TEXT.__gcc_except_tab: 0x16d08
-+  __TEXT.__objc_methlist: 0x7d94
-+  __TEXT.__const: 0xa518
-+  __TEXT.__oslogstring: 0x1967
-+  __TEXT.__cstring: 0x10e354
-+  __TEXT.__gcc_except_tab: 0x1705c
-   __TEXT.__ustring: 0x4f6
--  __TEXT.__unwind_info: 0x5aa8
-+  __TEXT.__unwind_info: 0x5af0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x33e070
--  __DATA_CONST.__objc_classlist: 0x298
-+  __DATA_CONST.__const: 0x33e0c0
-+  __DATA_CONST.__objc_classlist: 0x2a0
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0x1a0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6870
-+  __DATA_CONST.__objc_selrefs: 0x68d8
-   __DATA_CONST.__objc_protorefs: 0xd0
-   __DATA_CONST.__objc_superrefs: 0x278
-   __DATA_CONST.__objc_arraydata: 0xba0
--  __DATA_CONST.__got: 0x928
-+  __DATA_CONST.__got: 0x988
-   __AUTH_CONST.__const: 0x1aa8
--  __AUTH_CONST.__cfstring: 0xfc20
--  __AUTH_CONST.__objc_const: 0xc100
-+  __AUTH_CONST.__cfstring: 0xfe80
-+  __AUTH_CONST.__objc_const: 0xc190
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x738
-   __AUTH_CONST.__objc_arrayobj: 0x270
-   __AUTH_CONST.__objc_dictobj: 0x820
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__auth_got: 0xe78
--  __AUTH.__objc_data: 0x19f0
-+  __AUTH.__objc_data: 0x1a40
-   __AUTH.__thread_vars: 0x78
-   __AUTH.__thread_bss: 0x1088
-   __DATA.__objc_ivar: 0x7ac
-   __DATA.__data: 0x2668
--  __DATA.__bss: 0x1528
-+  __DATA.__bss: 0x1530
-   __DATA.__common: 0x51
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+-2027.0.31.0.0
++2027.0.33.0.0
 
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 7386
--  Symbols:   18661
--  CStrings:  20496
+-  Symbols:   9350
+-  CStrings:  18424
 +  Functions: 7412
-+  Symbols:   18737
-+  CStrings:  20546
- 
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH.__thread_vars : content changed
-~ __DATA.__data : content changed
++  Symbols:   9387
++  CStrings:  18453
 Symbols:
 + +[GTProfileErrors errorWithCode:underlyingError:]
 + +[GTProfileErrors informativeTextForCode:]
@@ -419,21 +367,6 @@ Symbols:
 + ___block_descriptor_72_e8_32s40s_e28_v16?0"<MTLCommandBuffer>"8ls32l8s40l8
 + ___block_descriptor_88_e8_32s40s48bs56r64r72r80r_e22_v16?0"NSDictionary"8ls48l8r56l8s32l8r64l8r72l8r80l8s40l8
 + _agxps_gpu_get_rev
-+ _objc_msgSend$blockFactors
-+ _objc_msgSend$compressionMetadata
-+ _objc_msgSend$copyFromTensor:sourceOrigin:sourceDimensions:sourcePlane:toTensor:destinationOrigin:destinationDimensions:destinationPlane:
-+ _objc_msgSend$errorWithCode:underlyingError:
-+ _objc_msgSend$flushCompressionMetadata
-+ _objc_msgSend$getBytes:strides:fromSliceOrigin:sliceDimensions:plane:
-+ _objc_msgSend$getValue:
-+ _objc_msgSend$informativeTextForCode:
-+ _objc_msgSend$messageTextForCode:
-+ _objc_msgSend$newTensorWithDescriptor:attachments:error:
-+ _objc_msgSend$planeType
-+ _objc_msgSend$replaceSliceOrigin:sliceDimensions:plane:withBytes:strides:
-+ _objc_msgSend$setAuxiliaryPlanes:
-+ _objc_msgSend$setBuffer:offset:forPlane:
-+ _objc_msgSend$valueWithBytes:objCType:
 - GCC_except_table1059
 - GCC_except_table1068
 - GCC_except_table1080
@@ -884,5 +817,4 @@ CStrings:
 - "/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/GPUToolsDevice/GPUTools/GTMTLCapture/replayer/GTTraceFbuf2Func_mtl.c.inl:9977"
 - "/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/GPUToolsDevice/GPUTools/GTMTLCapture/trackers/GTResourceBinding.m:2964"
 - "/Library/Caches/com.apple.xbs/<UUID>/TemporaryDirectory.<TMP>/Sources/GPUToolsDevice/GPUTools/GTMTLCapture/trackers/GTResourceTracker.c:230"
-
 ```

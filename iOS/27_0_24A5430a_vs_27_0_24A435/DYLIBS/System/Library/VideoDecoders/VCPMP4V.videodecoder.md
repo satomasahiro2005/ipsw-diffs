@@ -2,20 +2,16 @@
 
 > `/System/Library/VideoDecoders/VCPMP4V.videodecoder`
 
-```diff
+### Section Size Changes
 
- 746.2.0.0.0
--  __TEXT.__text: 0x21138
-+  __TEXT.__text: 0x211c4
-   __TEXT.__const: 0x15550
-   __TEXT.__gcc_except_tab: 0x28
-   __TEXT.__cstring: 0xa9
-   __TEXT.__unwind_info: 0x2c8
--  __TEXT.__eh_frame: 0x50
-+  __TEXT.__eh_frame: 0xa0
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0xd8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x21138` | `0x211c4` | **`+0x8c`** |
+| `__TEXT.__eh_frame` | `0x50` | `0xa0` | **`+0x50`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __Z12IDct8x8smartPhiPsiiS_ : 1204 -> 1208
 ~ __Z15Y420ToY422_yuvsPhS_S_PittttiS_S_ : 268 -> 276

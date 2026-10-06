@@ -2,101 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/TokenGenerationInference.framework/TokenGenerationInference`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2a9d18` | `0x2b6700` | **`+0xc9e8`** |
+| `__TEXT.__eh_frame` | `0x1b668` | `0x1bb38` | **`+0x4d0`** |
+| `__TEXT.__unwind_info` | `0x9dd0` | `0xa278` | **`+0x4a8`** |
+| `__TEXT.__oslogstring` | `0xbab0` | `0xbdd0` | **`+0x320`** |
+| `__AUTH_CONST.__objc_const` | `0x8000` | `0x81f0` | **`+0x1f0`** |
+| `__TEXT.__cstring` | `0x752a` | `0x76ea` | **`+0x1c0`** |
+| `__TEXT.__const` | `0xfba0` | `0xfd10` | **`+0x170`** |
+| `__TEXT.__swift5_reflstr` | `0x5359` | `0x5499` | **`+0x140`** |
+| `__AUTH.__data` | `0x2340` | `0x2448` | **`+0x108`** |
+| `__TEXT.__swift5_fieldmd` | `0x5100` | `0x51e4` | **`+0xe4`** |
+| `__TEXT.__gcc_except_tab` | `0x88d0` | `0x8970` | **`+0xa0`** |
+| `__AUTH_CONST.__const` | `0x9300` | `0x9390` | **`+0x90`** |
+| `__DATA.__data` | `0x19b0` | `0x1a38` | **`+0x88`** |
+| `__TEXT.__constg_swiftt` | `0x49b4` | `0x4a30` | **`+0x7c`** |
+| `__AUTH.__objc_data` | `0x5b0` | `0x600` | **`+0x50`** |
+| `__TEXT.__swift5_typeref` | `0x3ff4` | `0x4022` | **`+0x2e`** |
+| `__DATA_DIRTY.__data` | `0x6338` | `0x6360` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0xeb0` | `0xed0` | **`+0x20`** |
+| `__DATA.__common` | `0xe8` | `0x100` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0xa74` | `0xa84` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x494` | `0x4a0` | **`+0xc`** |
+| `__AUTH_CONST.__auth_got` | `0x38d8` | `0x38e0` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x338` | `0x340` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x610` | `0x618` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0xe24` | `0xe2c` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x67c` | `0x684` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0xb0` | `0xb4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -301.1.0.5.0
--  __TEXT.__text: 0x2a9d18
--  __TEXT.__objc_methlist: 0xa74
--  __TEXT.__const: 0xfba0
--  __TEXT.__cstring: 0x752a
--  __TEXT.__gcc_except_tab: 0x88d0
--  __TEXT.__oslogstring: 0xbab0
--  __TEXT.__constg_swiftt: 0x49b4
--  __TEXT.__swift5_typeref: 0x3ff4
 +301.6.0.5.101
-+  __TEXT.__text: 0x2b6700
-+  __TEXT.__objc_methlist: 0xa84
-+  __TEXT.__const: 0xfd10
-+  __TEXT.__cstring: 0x76ea
-+  __TEXT.__gcc_except_tab: 0x8970
-+  __TEXT.__oslogstring: 0xbdd0
-+  __TEXT.__constg_swiftt: 0x4a30
-+  __TEXT.__swift5_typeref: 0x4022
-   __TEXT.__swift5_builtin: 0x140
--  __TEXT.__swift5_reflstr: 0x5359
--  __TEXT.__swift5_fieldmd: 0x5100
-+  __TEXT.__swift5_reflstr: 0x5499
-+  __TEXT.__swift5_fieldmd: 0x51e4
-   __TEXT.__swift5_proto: 0x720
--  __TEXT.__swift5_types: 0x494
-+  __TEXT.__swift5_types: 0x4a0
-   __TEXT.__swift5_types2: 0xc
-   __TEXT.__swift_as_entry: 0x4f4
--  __TEXT.__swift_as_ret: 0x67c
--  __TEXT.__swift_as_cont: 0xe24
-+  __TEXT.__swift_as_ret: 0x684
-+  __TEXT.__swift_as_cont: 0xe2c
-   __TEXT.__swift5_assocty: 0x240
-   __TEXT.__swift5_capture: 0x974
-   __TEXT.__swift5_mpenum: 0x8c
-   __TEXT.__swift5_protos: 0x90
--  __TEXT.__unwind_info: 0x9dd0
--  __TEXT.__eh_frame: 0x1b668
-+  __TEXT.__unwind_info: 0xa278
-+  __TEXT.__eh_frame: 0x1bb38
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
-   __DATA_CONST.__const: 0x288
--  __DATA_CONST.__objc_classlist: 0x338
-+  __DATA_CONST.__objc_classlist: 0x340
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x20
--  __DATA_CONST.__objc_selrefs: 0x610
-+  __DATA_CONST.__objc_selrefs: 0x618
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x58
--  __DATA_CONST.__got: 0xeb0
--  __AUTH_CONST.__const: 0x9300
-+  __DATA_CONST.__got: 0xed0
-+  __AUTH_CONST.__const: 0x9390
-   __AUTH_CONST.__cfstring: 0x540
--  __AUTH_CONST.__objc_const: 0x8000
-+  __AUTH_CONST.__objc_const: 0x81f0
-   __AUTH_CONST.__weak_auth_got: 0x28
--  __AUTH_CONST.__auth_got: 0x38d8
--  __AUTH.__objc_data: 0x5b0
--  __AUTH.__data: 0x2340
--  __DATA.__objc_ivar: 0xb0
--  __DATA.__data: 0x19b0
-+  __AUTH_CONST.__auth_got: 0x38e0
-+  __AUTH.__objc_data: 0x600
-+  __AUTH.__data: 0x2448
-+  __DATA.__objc_ivar: 0xb4
-+  __DATA.__data: 0x1a38
-   __DATA.__bss: 0x9990
--  __DATA.__common: 0xe8
-+  __DATA.__common: 0x100
-   __DATA_DIRTY.__objc_data: 0x928
--  __DATA_DIRTY.__data: 0x6338
-+  __DATA_DIRTY.__data: 0x6360
-   __DATA_DIRTY.__bss: 0x1250
-   __DATA_DIRTY.__common: 0x290
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7712
--  Symbols:   19384
+-  Symbols:   19224
 -  CStrings:  1420
 +  Functions: 7774
-+  Symbols:   19496
++  Symbols:   19335
 +  CStrings:  1441
- 
 Symbols:
 + +[TGIE5ANESessionObjC sendStartSignalForResource:useEnergyEfficientMode:assetIdentifier:emitsResidencyTelemetry:]
 + -[TGIE5ANESessionObjC initWithResourceURL:useEnergyEfficientMode:assetIdentifier:emitsResidencyTelemetry:]
@@ -301,8 +251,6 @@ Symbols:
 + __ZNK11IFPSwizzler12getAllocSizeEv
 + __ZNK11IFPSwizzler16getSlotsPerLayerEv
 + _mincore
-+ _objc_msgSend$initWithResourceURL:useEnergyEfficientMode:assetIdentifier:emitsResidencyTelemetry:
-+ _objc_msgSend$sendStartSignalForResource:useEnergyEfficientMode:assetIdentifier:emitsResidencyTelemetry:
 + _objc_retain_x25
 + _symbolic Si8resident_Si5totaltSg
 + _symbolic _____ 11CacheExpert0A7ManagerC14ExecutionStatsV
@@ -411,7 +359,6 @@ Symbols:
 - _$ss17_NativeDictionaryV7_delete2atys10_HashTableV6BucketV_tF10Foundation4UUIDV_24TokenGenerationInference18DeadlineDispatcherCTg5
 - _$ss22_ContiguousArrayBufferV20_consumeAndCreateNew14bufferIsUnique15minimumCapacity13growForAppendAByxGSb_SiSbtF24TokenGenerationInference26TwoStageSpeculativeDecoderC0P9WithNodes33_997C69FF02F080FB13F8B8AFFD1FC4ECLLV_Tg5Tm
 - _$ss6ResultOy11CacheExpert06CachedC3RefCs5Error_pGWOe
-- _objc_msgSend$sendStartSignalForResource:useEnergyEfficientMode:assetIdentifier:
 - _symbolic _____Sg 11CacheExpert0A7ManagerC14OperationStatsV
 - _symbolic _____SgXw 24TokenGenerationInference11DenseBufferC
 CStrings:

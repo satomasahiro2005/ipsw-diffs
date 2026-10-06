@@ -2,6 +2,8 @@
 
 > `/System/Library/ExtensionKit/Extensions/MusicUIEngagementExtension.appex/MusicUIEngagementExtension`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_21 : 12 -> 8

@@ -2,21 +2,24 @@
 
 > `/System/Library/PrivateFrameworks/AppConduit.framework/Support/appconduitd`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x3f8` | `0x410` | **`+0x18`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+- `__TEXT.__gcc_except_tab`
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_doubleobj: 0x10
-   __DATA_CONST.__objc_arrayobj: 0x90
-   __DATA_CONST.__auth_got: 0x508
--  __DATA_CONST.__got: 0x3f8
-+  __DATA_CONST.__got: 0x410
-   __DATA_CONST.__auth_ptr: 0x8
-   __DATA.__objc_const: 0x8ae8
-   __DATA.__objc_selrefs: 0x25e8
-Sections:
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__cstring : content changed
+-403.0.0.0.0
++405.0.0.0.0
 CStrings:
 + "Jun 26 2026"
 - "Jun  9 2026"
-
 ```

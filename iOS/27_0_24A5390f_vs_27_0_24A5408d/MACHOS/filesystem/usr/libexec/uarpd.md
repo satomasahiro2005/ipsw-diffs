@@ -2,92 +2,59 @@
 
 > `/usr/libexec/uarpd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xa164c` | `0xa4384` | **`+0x2d38`** |
+| `__TEXT.__oslogstring` | `0x8f0f` | `0x9566` | **`+0x657`** |
+| `__TEXT.__objc_methname` | `0xf1f2` | `0xf557` | **`+0x365`** |
+| `__DATA.__objc_const` | `0x105e8` | `0x108f0` | **`+0x308`** |
+| `__TEXT.__cstring` | `0xadf9` | `0xb0ce` | **`+0x2d5`** |
+| `__TEXT.__objc_stubs` | `0xa520` | `0xa7a0` | **`+0x280`** |
+| `__DATA_CONST.__cfstring` | `0x5400` | `0x5580` | **`+0x180`** |
+| `__TEXT.__objc_methlist` | `0x86a8` | `0x8820` | **`+0x178`** |
+| `__DATA.__objc_selrefs` | `0x3160` | `0x3218` | **`+0xb8`** |
+| `__TEXT.__unwind_info` | `0x2378` | `0x23f0` | **`+0x78`** |
+| `__TEXT.__objc_methtype` | `0x2a72` | `0x2acd` | **`+0x5b`** |
+| `__DATA.__objc_data` | `0x3c50` | `0x3ca0` | **`+0x50`** |
+| `__TEXT.__auth_stubs` | `0xa20` | `0xa70` | **`+0x50`** |
+| `__DATA.__objc_ivar` | `0xb30` | `0xb70` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x1110` | `0x10e0` | **`-0x30`** |
+| `__DATA_CONST.__objc_intobj` | `0x3d8` | `0x408` | **`+0x30`** |
+| `__TEXT.__objc_classname` | `0x1cf6` | `0x1d20` | **`+0x2a`** |
+| `__DATA_CONST.__auth_got` | `0x520` | `0x548` | **`+0x28`** |
+| `__TEXT.__gcc_except_tab` | `0x19c` | `0x1c4` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0x640` | `0x658` | **`+0x18`** |
+| `__DATA_CONST.__objc_classlist` | `0x608` | `0x610` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x5f0` | `0x5f8` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA_CONST.__objc_arraydata`
 - `__DATA_CONST.__objc_arrayobj`
+- `__DATA_CONST.__objc_catlist`
 - `__DATA_CONST.__objc_dictobj`
-- `__DATA.__data`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -1587.0.27.0.0
--  __TEXT.__text: 0xa164c
--  __TEXT.__auth_stubs: 0xa20
--  __TEXT.__objc_stubs: 0xa520
--  __TEXT.__objc_methlist: 0x86a8
--  __TEXT.__objc_methname: 0xf1f2
--  __TEXT.__objc_classname: 0x1cf6
--  __TEXT.__cstring: 0xadf9
--  __TEXT.__objc_methtype: 0x2a72
 +1587.2.2.0.0
-+  __TEXT.__text: 0xa4384
-+  __TEXT.__auth_stubs: 0xa70
-+  __TEXT.__objc_stubs: 0xa7a0
-+  __TEXT.__objc_methlist: 0x8820
-+  __TEXT.__objc_methname: 0xf557
-+  __TEXT.__objc_classname: 0x1d20
-+  __TEXT.__cstring: 0xb0ce
-+  __TEXT.__objc_methtype: 0x2acd
-   __TEXT.__const: 0x140
--  __TEXT.__oslogstring: 0x8f0f
--  __TEXT.__gcc_except_tab: 0x19c
--  __TEXT.__unwind_info: 0x2378
--  __DATA_CONST.__const: 0x1110
--  __DATA_CONST.__cfstring: 0x5400
--  __DATA_CONST.__objc_classlist: 0x608
-+  __TEXT.__gcc_except_tab: 0x1c4
-+  __TEXT.__oslogstring: 0x9566
-+  __TEXT.__unwind_info: 0x23f0
-+  __DATA_CONST.__const: 0x10e0
-+  __DATA_CONST.__cfstring: 0x5580
-+  __DATA_CONST.__objc_classlist: 0x610
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x30
--  __DATA_CONST.__objc_superrefs: 0x5f0
--  __DATA_CONST.__objc_intobj: 0x3d8
-+  __DATA_CONST.__objc_superrefs: 0x5f8
-+  __DATA_CONST.__objc_intobj: 0x408
-   __DATA_CONST.__objc_arraydata: 0x70
-   __DATA_CONST.__objc_arrayobj: 0x30
-   __DATA_CONST.__objc_dictobj: 0x28
--  __DATA_CONST.__auth_got: 0x520
--  __DATA_CONST.__got: 0x640
--  __DATA.__objc_const: 0x105e8
--  __DATA.__objc_selrefs: 0x3160
--  __DATA.__objc_ivar: 0xb30
--  __DATA.__objc_data: 0x3c50
-+  __DATA_CONST.__auth_got: 0x548
-+  __DATA_CONST.__got: 0x658
-+  __DATA.__objc_const: 0x108f0
-+  __DATA.__objc_selrefs: 0x3218
-+  __DATA.__objc_ivar: 0xb70
-+  __DATA.__objc_data: 0x3ca0
-   __DATA.__data: 0x548
-   __DATA.__bss: 0x1178
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-+  - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
-   - /System/Library/Frameworks/Network.framework/Network
-   - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/CoreDiagnostics.framework/CoreDiagnostics
 
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libpcap.A.dylib
++  - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+
 -  Functions: 3928
 -  Symbols:   229
 -  CStrings:  4921
 +  Functions: 3977
 +  Symbols:   237
 +  CStrings:  5002
- 
 Symbols:
 + _IOPMAssertionCreateWithName
 + _IOPMAssertionRelease

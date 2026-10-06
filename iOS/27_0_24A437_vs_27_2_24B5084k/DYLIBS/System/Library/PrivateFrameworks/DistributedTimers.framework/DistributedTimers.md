@@ -2,20 +2,23 @@
 
 > `/System/Library/PrivateFrameworks/DistributedTimers.framework/DistributedTimers`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2f50c` | `0x2f56c` | **`+0x60`** |
+
+### Other Changes
+
 ```diff
 
 -524.0.56.0.0
--  __TEXT.__text: 0x2d964
 +524.10.88.0.0
-+  __TEXT.__text: 0x2d9c4
-   __TEXT.__objc_methlist: 0x3ac
-   __TEXT.__const: 0x42e8
-   __TEXT.__cstring: 0x4c1
 Functions:
-~ sub_25d660cbc -> sub_261276cbc : 1180 -> 1196
-~ sub_25d661158 -> sub_261277168 : 1188 -> 1204
-~ sub_25d6615fc -> sub_26127761c : 1188 -> 1204
-~ sub_25d661aa0 -> sub_261277ad0 : 1180 -> 1196
-~ sub_25d661f3c -> sub_261277f7c : 1180 -> 1196
-~ sub_25d66cbdc -> sub_261282c2c : 1160 -> 1176
+~ sub_25ff71f3c -> sub_263f34f3c : 1180 -> 1196
+~ sub_25ff723d8 -> sub_263f353e8 : 1188 -> 1204
+~ sub_25ff7287c -> sub_263f3589c : 1188 -> 1204
+~ sub_25ff72d20 -> sub_263f35d50 : 1180 -> 1196
+~ sub_25ff731bc -> sub_263f361fc : 1180 -> 1196
+~ sub_25ff7e730 -> sub_263f41780 : 1160 -> 1176
 ```

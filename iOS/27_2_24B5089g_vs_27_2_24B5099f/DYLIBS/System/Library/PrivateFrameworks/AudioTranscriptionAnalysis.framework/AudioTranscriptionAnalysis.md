@@ -2,18 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/AudioTranscriptionAnalysis.framework/AudioTranscriptionAnalysis`
 
-```diff
+### Section Size Changes
 
- 30.4.0.0.0
--  __TEXT.__text: 0x71d9c
-+  __TEXT.__text: 0x71dec
-   __TEXT.__objc_methlist: 0x1d80
-   __TEXT.__const: 0x2c86
-   __TEXT.__cstring: 0x5123
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x75a04` | `0x75a54` | **`+0x50`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_256d1559c -> sub_25611d59c : 7356 -> 7408
-~ sub_256d1ac08 -> sub_256122c3c : 260 -> 272
-~ sub_256d1eb04 -> sub_256126b44 : 6876 -> 6884
-~ sub_256d2dfb0 -> sub_256135ff8 : 212 -> 216
-~ sub_256d2eb4c -> sub_256136b98 : 236 -> 240
+~ sub_259af933c -> sub_258f5a33c : 7452 -> 7504
+~ sub_259afed1c -> sub_258f5fd50 : 260 -> 272
+~ sub_259b02e28 -> sub_258f63e68 : 6964 -> 6972
+~ sub_259b12e5c -> sub_258f73ea4 : 212 -> 216
+~ sub_259b13a14 -> sub_258f74a60 : 236 -> 240
 ```

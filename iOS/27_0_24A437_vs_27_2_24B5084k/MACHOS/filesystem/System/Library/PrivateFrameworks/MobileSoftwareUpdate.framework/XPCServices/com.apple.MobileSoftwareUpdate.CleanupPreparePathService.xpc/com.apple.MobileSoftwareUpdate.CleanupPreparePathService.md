@@ -2,13 +2,12 @@
 
 > `/System/Library/PrivateFrameworks/MobileSoftwareUpdate.framework/XPCServices/com.apple.MobileSoftwareUpdate.CleanupPreparePathService.xpc/com.apple.MobileSoftwareUpdate.CleanupPreparePathService`
 
+### Other Changes
+
 ```diff
 
 -2718.0.18.0.0
 +2718.40.13.0.0
-   __TEXT.__text: 0x294b8
-   __TEXT.__auth_stubs: 0x1650
-   __TEXT.__objc_stubs: 0x37c0
 Symbols:
 + /AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/lib/libUpdateMetrics.a(UMEventCheckpoint.o)
 + /AppleInternal/Library/BuildRoots/<BUILDROOT>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/lib/libUpdateMetrics.a(UMEventCleanup.o)

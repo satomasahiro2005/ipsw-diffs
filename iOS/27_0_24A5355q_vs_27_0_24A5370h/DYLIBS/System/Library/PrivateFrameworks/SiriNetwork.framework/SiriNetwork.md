@@ -2,114 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/SiriNetwork.framework/SiriNetwork`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x132974` | `0x13795c` | **`+0x4fe8`** |
+| `__AUTH_CONST.__const` | `0x9db0` | `0xa578` | **`+0x7c8`** |
+| `__DATA.__bss` | `0x5380` | `0x5a00` | **`+0x680`** |
+| `__TEXT.__oslogstring` | `0xa5f7` | `0xaa37` | **`+0x440`** |
+| `__TEXT.__const` | `0x8c50` | `0x9070` | **`+0x420`** |
+| `__TEXT.__cstring` | `0x1c13` | `0x1f83` | **`+0x370`** |
+| `__TEXT.__swift5_reflstr` | `0x43f8` | `0x4638` | **`+0x240`** |
+| `__TEXT.__unwind_info` | `0x50d8` | `0x5300` | **`+0x228`** |
+| `__TEXT.__swift5_fieldmd` | `0x356c` | `0x3744` | **`+0x1d8`** |
+| `__TEXT.__constg_swiftt` | `0x55bc` | `0x573c` | **`+0x180`** |
+| `__AUTH_CONST.__objc_const` | `0xc1c0` | `0xc330` | **`+0x170`** |
+| `__DATA_DIRTY.__objc_data` | `0x1730` | `0x1868` | **`+0x138`** |
+| `__DATA.__data` | `0x1498` | `0x15a8` | **`+0x110`** |
+| `__TEXT.__swift5_typeref` | `0x329e` | `0x3396` | **`+0xf8`** |
+| `__TEXT.__objc_methlist` | `0x275c` | `0x282c` | **`+0xd0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x17b0` | `0x1858` | **`+0xa8`** |
+| `__TEXT.__swift5_assocty` | `0x380` | `0x410` | **`+0x90`** |
+| `__TEXT.__eh_frame` | `0x8420` | `0x84a0` | **`+0x80`** |
+| `__TEXT.__swift5_capture` | `0x2a80` | `0x2af0` | **`+0x70`** |
+| `__AUTH_CONST.__auth_got` | `0x19c0` | `0x1a00` | **`+0x40`** |
+| `__TEXT.__swift5_proto` | `0x41c` | `0x450` | **`+0x34`** |
+| `__DATA_CONST.__const` | `0x560` | `0x580` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0x6bc` | `0x6d8` | **`+0x1c`** |
+| `__DATA_CONST.__got` | `0x978` | `0x988` | **`+0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x108` | `0x118` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0x3890` | `0x3880` | **`-0x10`** |
+| `__TEXT.__swift5_types` | `0x22c` | `0x23c` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x80` | `0x88` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x324` | `0x32c` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x354` | `0x358` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3600.27.5.0.0
--  __TEXT.__text: 0x132974 sha256:19ddf1c3bd1807f865a6380777f797cdb27c3d0ada2494e15af73d0781d1fe58
--  __TEXT.__objc_methlist: 0x275c sha256:a8a19abad58e0642846189283eba111e256ec48adc2edf434520bb90a852a206
--  __TEXT.__const: 0x8c50 sha256:e6383f7892f6f05fa2db9aaed29b9135b0ff48d626f95c895c262d570e7b8b31
--  __TEXT.__cstring: 0x1c13 sha256:ad20c26aa8f4c34e3197aabf76b2f079ec0d95035c5f16ac6c914777697db248
--  __TEXT.__constg_swiftt: 0x55bc sha256:b08879419a5621989f55e89258b40e8b93e1968391ce36adc44f45ce9a625e1c
--  __TEXT.__swift5_typeref: 0x329e sha256:4ac46ae2a59cf2e4be08f9e3bb268203075691c0c322af3b2bdeea7daa885dc2
--  __TEXT.__swift5_reflstr: 0x43f8 sha256:eb8f08abd880d1692b3b2f34a64d04dd84b0464b43078b0dd414841d5010ebbf
--  __TEXT.__swift5_fieldmd: 0x356c sha256:284a8fedada2de1570744ecf77b53f6f0f511ce51141d6fd6021c767d031fd53
--  __TEXT.__swift5_builtin: 0x168 sha256:200499ae30e20c3a0bb83d4c9667a23606bbcdc6f8229953fb70a417f473e24e
--  __TEXT.__swift5_assocty: 0x380 sha256:555ecad2e1c0d50ae7837b07d932ff444b4ee15370984fe08b23711201fe42d9
--  __TEXT.__swift5_capture: 0x2a80 sha256:f885647c879118968cf9e815a9c7b192311e3272c2e8cfce9d8854203918c27d
--  __TEXT.__oslogstring: 0xa5f7 sha256:89ef30e2ffebf4ab7a6f82bfa9b6cca89319ebd5309bcab1fd463e6ce27d4eb2
--  __TEXT.__swift5_proto: 0x41c sha256:c171ae91bd8ddf8192d505716ebab79f0c713602505c8847367e0d5155832544
--  __TEXT.__swift5_types: 0x22c sha256:5124749f248ff0534d34c83a850bcf441fac4f3ed757bb089ed059f85ba3b380
--  __TEXT.__swift5_mpenum: 0x44 sha256:d3ae01b271a4615bba3b51b43c11b9d1f400d1fe9fec5d3bf118a5b551f01ced
--  __TEXT.__swift5_protos: 0xc8 sha256:f2d13f87eb51eb1e0251a01d46800d65ca13ec4fd0e916eb769318951fa7f920
--  __TEXT.__swift_as_entry: 0x354 sha256:4d6c10ebf2f7e36c8ff0e2dc598ef7c4a534a2f60f99fdc0641b6952d660d73d
--  __TEXT.__swift_as_ret: 0x324 sha256:20f8e8c0617dabf1609898fbf51b9455fe37b5009a5c2fe86fed0da42dd7eda8
--  __TEXT.__swift_as_cont: 0x6bc sha256:ded9867ff4d6a9e14d66b089025d35d73448f8db379e3328b75384b690fa5bcf
--  __TEXT.__swift5_acfuncs: 0x14 sha256:3ed38499e7f757a4f8935321036361ca0ccee7bc61e251648bd68092dcf8f520
--  __TEXT.__unwind_info: 0x50d8 sha256:19a8ef1e47f3f5115572b2988477bbec070fa8a3296318c9e310536199732a00
--  __TEXT.__eh_frame: 0x8420 sha256:f0092d1ceda34125949c34416e2691318fa78ec92c633f2634052d71b2b1f845
 +3600.30.2.0.0
-+  __TEXT.__text: 0x13795c sha256:815e5f2ef0cb735490d482a3832916c34f00f082103ff434aa2349a3dc769fce
-+  __TEXT.__objc_methlist: 0x282c sha256:c485ce1954335c4ef6537f3ad9be952e105b7cc00c9093147678fb6b65be6093
-+  __TEXT.__const: 0x9070 sha256:4f56d0c607d6de81ae64fc173dd125fa98f065c7f5e5c183fe83671b22595981
-+  __TEXT.__cstring: 0x1f83 sha256:11a2ec1a06f309d23f4d9b54aa6711fc668a0d6f05e126e202439a999ec0939c
-+  __TEXT.__constg_swiftt: 0x573c sha256:0e829133ea0692adfec0d6f33ca4f47fa470fe2f2459552c158c938c14b4bbde
-+  __TEXT.__swift5_typeref: 0x3396 sha256:9d92463ca9fed979f6e3ff04442cf9816104ddee446d907fe22d5ca3b3e196aa
-+  __TEXT.__swift5_reflstr: 0x4638 sha256:1f0d53655735779770a3853e9ee886ce750156a42921fbaa61515f0fab2be5cd
-+  __TEXT.__swift5_fieldmd: 0x3744 sha256:ad6187f20ba35148e48c05f30a4cbbedaca5c1464a8d7e398b453fce2c7e433b
-+  __TEXT.__swift5_builtin: 0x168 sha256:37ef30ab1b2a0d97888c1fb43353e6aeeeb4dfde38d449ae05886b6692d271b0
-+  __TEXT.__swift5_assocty: 0x410 sha256:43d779b2c2e1497b346623c351600e2af1f3479fcf6375151e77ddb1623ebc19
-+  __TEXT.__swift5_capture: 0x2af0 sha256:cd28812a894226fcff0da006b98aadf2769fd696e5cb6dc26387e14aea92256e
-+  __TEXT.__oslogstring: 0xaa37 sha256:9320eae2a3910896021543816b58e107e697a132031fd92ab85c7db187ea6cbb
-+  __TEXT.__swift5_proto: 0x450 sha256:3ec1a45c83681f13f174f079300353f01bcda930d049504062971b20336f048f
-+  __TEXT.__swift5_types: 0x23c sha256:78b3e256a5698f5d6b459e9748747a24314db62bb18f6751077efc148144769a
-+  __TEXT.__swift5_mpenum: 0x44 sha256:f84936fa873bccf3a37a4370db2a21d8841318f0e5486800fbc5539ef2cb1dad
-+  __TEXT.__swift5_protos: 0xc8 sha256:a7a494fddbb1066a8b6bb4758dc6a1d345fecdb2c6071db2cf18e29768187bc7
-+  __TEXT.__swift_as_entry: 0x358 sha256:564b083aeefbeee7e38ff4400f5021102786abae8953aa5407fc24cd0253b5d5
-+  __TEXT.__swift_as_ret: 0x32c sha256:535f3e73a1bd48cee0be53637769589e1855e1184b10e6ed21b8b4a53ae8d8b4
-+  __TEXT.__swift_as_cont: 0x6d8 sha256:87e9fa1165bee486d1c12fac10bccc2f0c9590a780267ad947874601688536fd
-+  __TEXT.__swift5_acfuncs: 0x14 sha256:bc012dc43997f270940ef212744e2a693d5bb9265b91e393af661c20c6003a5d
-+  __TEXT.__unwind_info: 0x5300 sha256:57978fd2e7e15a4fabd6b14488f0f72569e047857edcbb66283b9c50d86f1cba
-+  __TEXT.__eh_frame: 0x84a0 sha256:4f021b4c62fe8c0f18ca879e2847e2c6053c084fd16192bbcad4d39f972e6b7e
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x560 sha256:47caff2f7ae62df89c109dc84403efaefda4afccea01d1aa65a0477831e58b81
--  __DATA_CONST.__objc_classlist: 0x1c8 sha256:f680c91b6fcdde894218a64665302b5a7246b9907e9fde0b29983d8e985e60fe
--  __DATA_CONST.__objc_catlist: 0xc0 sha256:cc644504f7678540fe3d44490fa621c9e93d858f550cffed85eca717d2b0f0b9
--  __DATA_CONST.__objc_protolist: 0x108 sha256:b629a62905b51755ec0e93e138613d83aa3c3ff9282923da0ba50f9b8b4712ce
-+  __DATA_CONST.__const: 0x580 sha256:f0ea03fbf4a20ec96b2bb5039e0029d8e77bc6cc12db801faf190bdba83eff83
-+  __DATA_CONST.__objc_classlist: 0x1c8 sha256:59de91cf94ad087e16c76c71a054a4f886500740f1fb654eb3ee3ba4a832ddd8
-+  __DATA_CONST.__objc_catlist: 0xc0 sha256:d740d208693049eb24868b91b8378b7db3344d6beb26a16ef6f70a7aa355b104
-+  __DATA_CONST.__objc_protolist: 0x118 sha256:4a68280c10f656beb73353a84d40e59054cd79980d73263e593e2d1fc5e10f01
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:ce857dcadc2529f941104469975d60698ea3610a86c121e7b4aee224cd0c59ea
--  __DATA_CONST.__objc_selrefs: 0x17b0 sha256:6a3ae07b7c3997ccfe1b32fa7030a5b5503a346dc06d206011bf5876d6e5b2f9
--  __DATA_CONST.__objc_protorefs: 0x80 sha256:21e5f247275d097d28a0d540220a19b5e92193e197421fd2bfbf3d79bb9db41b
--  __DATA_CONST.__objc_superrefs: 0x50 sha256:c8f76a0186e3b2c004a964b7497328f249e49ef5807b141df755cd4ff6985239
--  __DATA_CONST.__got: 0x978 sha256:0d5337b314f0992dfaa40b2a354b0a09c36e77f624e855d7190585c593a9e69d
--  __AUTH_CONST.__const: 0x9db0 sha256:535e4315277c27fcd7b9a620abe17ed842ad2047030a00d6305aedf3bb8c4f3e
--  __AUTH_CONST.__cfstring: 0x260 sha256:f32a0a3d0caf51821efb267c6a59b3f2b57383936d3203ddc4f45e3f490cdff6
--  __AUTH_CONST.__objc_const: 0xc1c0 sha256:3dfeffb090c652fa21593325de90f25bd2743126eeacbf6cff0b63506c0790a6
--  __AUTH_CONST.__auth_got: 0x19c0 sha256:accbbd5b1d011687769150ed2455578f5b7fb560d4c7a02934fe9c09c7152053
--  __AUTH.__objc_data: 0x8f0 sha256:4eabed05a3c015f50dd8a78551c07a667e2f2f7e38c24fdc23e8b38c3f893211
--  __AUTH.__data: 0x1ac8 sha256:9c227aa85df80f9eea44f04a4be82dfdf8b1b0198fe54a8ce59b4fab6e6ec511
-+  __DATA_CONST.__objc_selrefs: 0x1858 sha256:56970fcc46aa31fe90eb3a9974d4538a7d037efd60fdc5847ee9e4409a16b156
-+  __DATA_CONST.__objc_protorefs: 0x88 sha256:462e6e981e1f31ce2fa56a69b5ae4baa0caf82988a0492837e30cec4ab890ca3
-+  __DATA_CONST.__objc_superrefs: 0x50 sha256:c9dfbd84548ef54c85a5dd454a8c257c86ec936d013061fb81480cc29aced219
-+  __DATA_CONST.__got: 0x988 sha256:ae400e1a1eecb12173444176cd4279dc4d3d73025483e2a65830b25ceeea6e8e
-+  __AUTH_CONST.__const: 0xa578 sha256:ca59878b01725b3b902dfdf00e614970b7670937f73dc4f8bd0202e1519dfe8d
-+  __AUTH_CONST.__cfstring: 0x260 sha256:a0cfc28aea7bfbd93f6aff3578cdb5d2a9133486ebf3399790d9aa156e2549ab
-+  __AUTH_CONST.__objc_const: 0xc330 sha256:c3b818e4d0dc11a42d1796fe5a064b1bb6712a09f69ad0a03a41c6b1ef4a0a2d
-+  __AUTH_CONST.__auth_got: 0x1a00 sha256:16cc39e093d21650607a4fe4ccbbb56b1219575378edea7fbe80a96e9096033f
-+  __AUTH.__objc_data: 0x8f0 sha256:c556ac2a8b24840862269138e337d7f9d8689f74cb9e07c6b09bbd523a4acfd5
-+  __AUTH.__data: 0x1ac8 sha256:f7f6eae992d97dc1496803d292e086289ee956aacd19d571b43ec79a196965a1
-   __DATA.__objc_ivar: 0x1ac sha256:f4f878a1a8146e8d1579b1f8e5e5fe51fb1149b07f5bd08a3789c38e8a92ffe8
--  __DATA.__data: 0x1498 sha256:ec1cbc03244f8106c2f4084c9280777deef9f9d04e165c6cce6e68cc27484976
--  __DATA.__bss: 0x5380 sha256:d66755f47375c792b3a06c4d6b7fc2df13d2251b606d722d03d3f5fb5e05d11f
-+  __DATA.__data: 0x15a8 sha256:d4c36450879b4c8a377f6171ba1d2dd5dbfdd7a8a28b61fdf97e0ccb35e533da
-+  __DATA.__bss: 0x5a00 sha256:46e2096b907947368d310929303a04005b39c4a278e3a7de2225c355b4522694
-   __DATA.__common: 0x100 sha256:5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1
--  __DATA_DIRTY.__objc_data: 0x1730 sha256:5f7692c837f5c0bd11ab182eee201d775602a77ab5ba5917788fd2ee60bc9098
--  __DATA_DIRTY.__data: 0x3890 sha256:bf0784e40b779e3681de6447bb336a31406b654b0ee1a04844479465ff98d344
-+  __DATA_DIRTY.__objc_data: 0x1868 sha256:8281eba41a165ba298bb9d73ecd80a54193ed31398b190d2132eb0ed0e2e709d
-+  __DATA_DIRTY.__data: 0x3880 sha256:c183ef47aa912be96a67d344db9f28e27c8564ddcfc0b300ddc5364b89e15f38
-   __DATA_DIRTY.__bss: 0x1c30 sha256:ebe8655785c201100ab9946becaef9925a93ab70abc28881ab102d843ba61513
-   __DATA_DIRTY.__common: 0x218 sha256:7d73a488b95b99a42237504643b79aa49c55a9aad3cd97e58518f093d3e095df
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
--  UUID: 86473D56-D84C-36CE-A7EF-4A9C15E98196
 -  Functions: 9009
--  Symbols:   28394
--  CStrings:  794
-+  UUID: 63EF9729-3360-38D8-A0E7-4B1B754127F3
+-  Symbols:   14719
+-  CStrings:  775
 +  Functions: 9230
-+  Symbols:   29084
-+  CStrings:  848
- 
++  Symbols:   15100
++  CStrings:  829
 Symbols:
 + -[SNNetworkManager carrierName]
 + -[SNNetworkManager signalStrengthMeasurements]
@@ -178,7 +118,7 @@ Symbols:
 + _$s11SiriNetwork0B7ManagerC013updatePrimaryB9Interface03forF4TypeySo19nw_interface_type_ta_tF
 + _$s11SiriNetwork0B7ManagerC07primaryB9Interface04fromE4Type17isPersonalHotspotAA07PrimarybE0OSo19nw_interface_type_ta_SbtFZ
 + _$s11SiriNetwork0B7ManagerC11carrierNameSSSgvM
-+ _$s11SiriNetwork0B7ManagerC11carrierNameSSSgvM.resume.0
++ _$s11SiriNetwork0B7ManagerC11carrierNameSSSgvM.resume
 + _$s11SiriNetwork0B7ManagerC11carrierNameSSSgvMTj
 + _$s11SiriNetwork0B7ManagerC11carrierNameSSSgvg
 + _$s11SiriNetwork0B7ManagerC11carrierNameSSSgvgTj
@@ -225,7 +165,7 @@ Symbols:
 + _$s11SiriNetwork0B7ManagerC25primaryInterfaceEvaluatorSo20OS_nw_path_evaluator_pSgvpWvd
 + _$s11SiriNetwork0B7ManagerC25primaryInterfaceEvaluatorSo20OS_nw_path_evaluator_pSgvsTq
 + _$s11SiriNetwork0B7ManagerC26signalStrengthMeasurementsSo08CTSignaleF0CSgvM
-+ _$s11SiriNetwork0B7ManagerC26signalStrengthMeasurementsSo08CTSignaleF0CSgvM.resume.0
++ _$s11SiriNetwork0B7ManagerC26signalStrengthMeasurementsSo08CTSignaleF0CSgvM.resume
 + _$s11SiriNetwork0B7ManagerC26signalStrengthMeasurementsSo08CTSignaleF0CSgvMTj
 + _$s11SiriNetwork0B7ManagerC26signalStrengthMeasurementsSo08CTSignaleF0CSgvMTq
 + _$s11SiriNetwork0B7ManagerC26signalStrengthMeasurementsSo08CTSignaleF0CSgvg
@@ -407,26 +347,6 @@ Symbols:
 + _$s11SiriNetwork35MessageCenterConnectionMetricsStoreC30resetFailureStateForNewRequest3forySS_tYaFTY4_
 + _$s11SiriNetwork35MessageCenterConnectionMetricsStoreC30resetFailureStateForNewRequest3forySS_tYaFTq
 + _$s11SiriNetwork35MessageCenterConnectionMetricsStoreC30resetFailureStateForNewRequest3forySS_tYaFTu
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.136
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.155
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.181
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.189
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.197
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.225
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.65
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.79
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.87
-+ _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.98
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.132
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.151
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.177
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.185
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.193
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.221
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.61
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.75
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.83
-+ _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.94
 + _$s2os18OSLogInterpolationV06appendC0_7privacyySo8NSObjectCyXA_AA0B7PrivacyVtFAGSgycfu_
 + _$s7Network10NWEndpointO04SiriA029MessageCenterEndpointProtocolA2dEP9osVersionSSSgvgTW
 + _$s7Network10NWEndpointO04SiriA0E9osVersionSSSgvg
@@ -486,71 +406,16 @@ Symbols:
 + __OBJC_$_PROTOCOL_REFS_CoreTelephonyClientCellularUsagePolicyDelegate
 + __OBJC_LABEL_PROTOCOL_$_CoreTelephonyClientCellularUsagePolicyDelegate
 + __OBJC_PROTOCOL_$_CoreTelephonyClientCellularUsagePolicyDelegate
-+ ___swift_closure_destructor.100
-+ ___swift_closure_destructor.116
-+ ___swift_closure_destructor.130
-+ ___swift_closure_destructor.146
-+ ___swift_closure_destructor.149
-+ ___swift_closure_destructor.175
-+ ___swift_closure_destructor.182
-+ ___swift_closure_destructor.195
-+ ___swift_closure_destructor.205
-+ ___swift_closure_destructor.213
-+ ___swift_closure_destructor.223
-+ ___swift_closure_destructor.227
-+ ___swift_closure_destructor.230
 + ___swift_closure_destructor.44Tm
-+ ___swift_closure_destructor.7
-+ ___swift_closure_destructor.85
-+ ___swift_closure_destructor.96
-+ ___swift_exist.box.addr_destructor.106
-+ ___swift_exist.box.addr_destructor.219
-+ ___swift_exist.box.addr_destructor.236
 + _associated conformance 11SiriNetwork07PrimaryB9InterfaceOSHAASQ
 + _associated conformance 11SiriNetwork07PrimaryB9InterfaceOs12CaseIterableAA8AllCasessADP_Sl
 + _associated conformance 11SiriNetwork11CellularLQMOSHAASQ
 + _associated conformance 11SiriNetwork11CellularLQMOs12CaseIterableAA8AllCasessADP_Sl
 + _associated conformance 11SiriNetwork11CellularRATOSHAASQ
 + _associated conformance 11SiriNetwork11CellularRATOs12CaseIterableAA8AllCasessADP_Sl
-+ _block_copy_helper.29
-+ _block_copy_helper.33
-+ _block_copy_helper.39
-+ _block_copy_helper.52
-+ _block_copy_helper.56
-+ _block_copy_helper.67
-+ _block_copy_helper.9
-+ _block_descriptor.11
-+ _block_descriptor.31
-+ _block_descriptor.35
-+ _block_descriptor.41
-+ _block_descriptor.54
-+ _block_descriptor.58
-+ _block_descriptor.69
-+ _block_destroy_helper.10
-+ _block_destroy_helper.30
-+ _block_destroy_helper.34
-+ _block_destroy_helper.40
-+ _block_destroy_helper.53
-+ _block_destroy_helper.57
-+ _block_destroy_helper.68
 + _get_enum_tag_for_layout_string 11SiriNetwork13WiFiRadioTechO
 + _nw_interface_get_type
 + _nw_parameters_set_prohibited_netagent_classes
-+ _objc_msgSend$NANData
-+ _objc_msgSend$carrierName
-+ _objc_msgSend$currentKnownNetworkProfile
-+ _objc_msgSend$enhancedLinkQuality
-+ _objc_msgSend$getSignalStrengthMeasurements:completion:
-+ _objc_msgSend$intelligentConnectivityWithError:
-+ _objc_msgSend$isCurrentlyOnPersonalHotspot
-+ _objc_msgSend$isPersonalHotspot
-+ _objc_msgSend$legacyInfo
-+ _objc_msgSend$maxPHYModeDescription
-+ _objc_msgSend$metricType
-+ _objc_msgSend$networkName
-+ _objc_msgSend$refreshCellMonitor:completion:
-+ _objc_msgSend$registrationDisplayStatus
-+ _objc_msgSend$signalStrengthMeasurements
 + _symbolic SS6domain_SS4typet
 + _symbolic SS7phyMode_t
 + _symbolic Say_____G 11SiriNetwork07PrimaryB9InterfaceO
@@ -574,59 +439,7 @@ Symbols:
 - _$s11SiriNetwork0B7ManagerC11carrierNameSSSgvpWvd
 - _$s11SiriNetwork0B7ManagerC27dataServiceDescriptorUpdateyyFyyYbcfU_
 - _$s11SiriNetwork32MessageCenterConnectionAnalyticsC17clearFailureState33_216A160545084EB6577F28FA5BC18059LLyyF
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.123
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.134
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.153
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.179
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.187
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.195
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.213
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.223
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.66
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.80
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.88
-- _$s2os14OSLogArgumentsV6appendyySSycFySpys5UInt8VGz_SpySo8NSObjectCSgGSgzSpyypGSgztcfU_TA.99
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.119
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.130
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.149
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.175
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.183
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.191
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.209
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.219
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.62
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.76
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.84
-- _$s2os18OSLogInterpolationV06appendC0_5align7privacyySSyXA_AA0B15StringAlignmentVAA0B7PrivacyVtFSSycfu_TA.95
-- ___swift_closure_destructor.125
-- ___swift_closure_destructor.132
-- ___swift_closure_destructor.151
-- ___swift_closure_destructor.164
-- ___swift_closure_destructor.178
-- ___swift_closure_destructor.181
-- ___swift_closure_destructor.189
-- ___swift_closure_destructor.193
-- ___swift_closure_destructor.201
-- ___swift_closure_destructor.207
-- ___swift_closure_destructor.214
-- ___swift_closure_destructor.217
-- ___swift_closure_destructor.221
-- ___swift_closure_destructor.231
-- ___swift_closure_destructor.28
 - ___swift_closure_destructor.28Tm
-- ___swift_closure_destructor.74
-- ___swift_exist.box.addr_destructor.104
-- ___swift_exist.box.addr_destructor.218
-- ___swift_exist.box.addr_destructor.234
-- _block_copy_helper.30
-- _block_copy_helper.36
-- _block_copy_helper.40
-- _block_descriptor.32
-- _block_descriptor.38
-- _block_descriptor.42
-- _block_destroy_helper.31
-- _block_destroy_helper.37
-- _block_destroy_helper.41
 CStrings:
 + "%s browseResultsChangedHandler %s"
 + "ABORT"
@@ -684,5 +497,4 @@ CStrings:
 + "kCTRegistrationStatusNotRegistered"
 + "kCTRegistrationStatusRegistered"
 - "MessageCenter Analytics: clearing failure state on ready for connectionId: %s"
-
 ```

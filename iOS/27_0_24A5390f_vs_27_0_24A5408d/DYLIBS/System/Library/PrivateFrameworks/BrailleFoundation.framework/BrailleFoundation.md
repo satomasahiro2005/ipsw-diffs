@@ -2,98 +2,51 @@
 
 > `/System/Library/PrivateFrameworks/BrailleFoundation.framework/BrailleFoundation`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6842c` | `0x69534` | **`+0x1108`** |
+| `__TEXT.__const` | `0xc7f0` | `0xc890` | **`+0xa0`** |
+| `__TEXT.__eh_frame` | `0x2dd8` | `0x2e60` | **`+0x88`** |
+| `__TEXT.__swift5_typeref` | `0x277b` | `0x27cb` | **`+0x50`** |
+| `__AUTH_CONST.__auth_got` | `0xc78` | `0xcc0` | **`+0x48`** |
+| `__AUTH_CONST.__cfstring` | `0x740` | `0x780` | **`+0x40`** |
+| `__TEXT.__unwind_info` | `0x2010` | `0x2050` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0x5a30` | `0x5a68` | **`+0x38`** |
+| `__DATA.__data` | `0x20d0` | `0x2108` | **`+0x38`** |
+| `__AUTH_CONST.__objc_const` | `0xe70` | `0xea0` | **`+0x30`** |
+| `__TEXT.__swift5_reflstr` | `0x16bd` | `0x16ed` | **`+0x30`** |
+| `__TEXT.__swift5_fieldmd` | `0x2a04` | `0x2a28` | **`+0x24`** |
+| `__TEXT.__cstring` | `0xdb6` | `0xdd8` | **`+0x22`** |
+| `__DATA_CONST.__got` | `0x3c8` | `0x3e8` | **`+0x20`** |
+| `__TEXT.__objc_methlist` | `0x3ec` | `0x404` | **`+0x18`** |
+| `__TEXT.__swift5_capture` | `0x298` | `0x2ac` | **`+0x14`** |
+| `__DATA_CONST.__objc_selrefs` | `0x300` | `0x310` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0x918` | `0x920` | **`+0x8`** |
+| `__TEXT.__constg_swiftt` | `0x1fb4` | `0x1fbc` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0xe4` | `0xec` | **`+0x8`** |
+| `__TEXT.__swift_as_entry` | `0x118` | `0x120` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x144` | `0x14c` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x68` | `0x6c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -462.0.0.0.0
--  __TEXT.__text: 0x6842c
--  __TEXT.__objc_methlist: 0x3ec
--  __TEXT.__const: 0xc7f0
--  __TEXT.__swift5_typeref: 0x277b
--  __TEXT.__cstring: 0xdb6
--  __TEXT.__swift5_reflstr: 0x16bd
 +465.0.0.0.0
-+  __TEXT.__text: 0x69534
-+  __TEXT.__objc_methlist: 0x404
-+  __TEXT.__const: 0xc890
-+  __TEXT.__swift5_typeref: 0x27cb
-+  __TEXT.__cstring: 0xdd8
-+  __TEXT.__swift5_reflstr: 0x16ed
-   __TEXT.__swift5_assocty: 0x1a0
--  __TEXT.__constg_swiftt: 0x1fb4
--  __TEXT.__swift5_fieldmd: 0x2a04
-+  __TEXT.__constg_swiftt: 0x1fbc
-+  __TEXT.__swift5_fieldmd: 0x2a28
-   __TEXT.__swift5_builtin: 0x118
-   __TEXT.__swift5_mpenum: 0x80
-   __TEXT.__swift5_protos: 0x28
-   __TEXT.__swift5_proto: 0xae4
-   __TEXT.__swift5_types: 0x304
--  __TEXT.__swift_as_entry: 0x118
--  __TEXT.__swift_as_ret: 0x144
-+  __TEXT.__swift_as_entry: 0x120
-+  __TEXT.__swift_as_ret: 0x14c
-   __TEXT.__oslogstring: 0x3
--  __TEXT.__swift_as_cont: 0xe4
--  __TEXT.__swift5_capture: 0x298
--  __TEXT.__unwind_info: 0x2010
--  __TEXT.__eh_frame: 0x2dd8
-+  __TEXT.__swift_as_cont: 0xec
-+  __TEXT.__swift5_capture: 0x2ac
-+  __TEXT.__unwind_info: 0x2050
-+  __TEXT.__eh_frame: 0x2e60
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x18
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x300
-+  __DATA_CONST.__objc_selrefs: 0x310
-   __DATA_CONST.__objc_superrefs: 0x10
--  __DATA_CONST.__got: 0x3c8
--  __AUTH_CONST.__const: 0x5a30
--  __AUTH_CONST.__cfstring: 0x740
--  __AUTH_CONST.__objc_const: 0xe70
--  __AUTH_CONST.__auth_got: 0xc78
-+  __DATA_CONST.__got: 0x3e8
-+  __AUTH_CONST.__const: 0x5a68
-+  __AUTH_CONST.__cfstring: 0x780
-+  __AUTH_CONST.__objc_const: 0xea0
-+  __AUTH_CONST.__auth_got: 0xcc0
-   __AUTH.__data: 0x48
--  __DATA.__objc_ivar: 0x68
--  __DATA.__data: 0x20d0
-+  __DATA.__objc_ivar: 0x6c
-+  __DATA.__data: 0x2108
-   __DATA.__bss: 0x15a90
-   __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_data: 0x140
--  __DATA_DIRTY.__data: 0x918
-+  __DATA_DIRTY.__data: 0x920
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/PrivateFrameworks/AXCoreUtilities.framework/AXCoreUtilities
-
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftObservation.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
 +  - /usr/lib/swift/libswiftRegexBuilder.dylib
-   - /usr/lib/swift/libswiftSynchronization.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
+
 +  - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 3077
--  Symbols:   10551
+-  Symbols:   10489
 -  CStrings:  127
 +  Functions: 3099
-+  Symbols:   10618
++  Symbols:   10555
 +  CStrings:  129
- 
 Symbols:
 + -[BRLElement categoryOrder]
 + -[BRLElement setCategoryOrder:]
@@ -159,7 +112,6 @@ Symbols:
 + ___swift_memcpy75_8
 + _keypath_get.102Tm
 + _keypath_get.117Tm
-+ _objc_msgSend$categoryOrder
 + _objc_setProperty_nonatomic_copy
 + _symbolic Say_____G 15AXCoreUtilities27BrailleCollapsingLabelStateO
 + _symbolic ScSySay_____GG 15AXCoreUtilities31BrailleCollapsingLabelStateItemV

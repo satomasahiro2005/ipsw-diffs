@@ -2,104 +2,55 @@
 
 > `/System/Library/PrivateFrameworks/TextToSpeechBundleSupport.framework/TextToSpeechBundleSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__objc_const` | `0xcc0` | `0x8f0` | **`-0x3d0`** |
+| `__TEXT.__gcc_except_tab` | `0xab4` | `0x6f0` | **`-0x3c4`** |
+| `__TEXT.__eh_frame` | `0xc48` | `0xe50` | **`+0x208`** |
+| `__TEXT.__objc_methlist` | `0x4d8` | `0x2e4` | **`-0x1f4`** |
+| `__DATA_CONST.__objc_selrefs` | `0x468` | `0x2a8` | **`-0x1c0`** |
+| `__TEXT.__oslogstring` | `0xc37` | `0xaae` | **`-0x189`** |
+| `__TEXT.__text` | `0x1d01c` | `0x1ced0` | **`-0x14c`** |
+| `__TEXT.__const` | `0xe10` | `0xd10` | **`-0x100`** |
+| `__AUTH_CONST.__const` | `0x770` | `0x690` | **`-0xe0`** |
+| `__DATA_CONST.__const` | `0x1e8` | `0x120` | **`-0xc8`** |
+| `__TEXT.__unwind_info` | `0x730` | `0x6b8` | **`-0x78`** |
+| `__AUTH.__objc_data` | `0x190` | `0x140` | **`-0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x188` | `0x138` | **`-0x50`** |
+| `__AUTH_CONST.__auth_got` | `0xaf0` | `0xab0` | **`-0x40`** |
+| `__DATA.__objc_ivar` | `0x80` | `0x48` | **`-0x38`** |
+| `__DATA_CONST.__got` | `0x2a0` | `0x270` | **`-0x30`** |
+| `__TEXT.__constg_swiftt` | `0x3d4` | `0x3fc` | **`+0x28`** |
+| `__DATA.__data` | `0x128` | `0x148` | **`+0x20`** |
+| `__TEXT.__swift_as_cont` | `0xb8` | `0xd4` | **`+0x1c`** |
+| `__TEXT.__swift5_typeref` | `0x308` | `0x320` | **`+0x18`** |
+| `__DATA.__bss` | `0x790` | `0x7a0` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x40` | `0x30` | **`-0x10`** |
+| `__DATA_DIRTY.__data` | `0x238` | `0x248` | **`+0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x255` | `0x265` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x1f0` | `0x1fc` | **`+0xc`** |
+| `__TEXT.__ustring` | `0xc` | `—` | **`-0xc`** |
+| `__TEXT.__cstring` | `0x4ca` | `0x4bf` | **`-0xb`** |
+| `__DATA_CONST.__objc_superrefs` | `0x18` | `0x10` | **`-0x8`** |
+| `__DATA_DIRTY.__bss` | `0x1c0` | `0x1b8` | **`-0x8`** |
+| `__TEXT.__swift_as_ret` | `0x54` | `0x58` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -720.0.0.0.0
--  __TEXT.__text: 0x1d01c
--  __TEXT.__objc_methlist: 0x4d8
--  __TEXT.__const: 0xe10
-+723.1.0.0.0
-+  __TEXT.__text: 0x1ced0
-+  __TEXT.__objc_methlist: 0x2e4
-+  __TEXT.__const: 0xd10
-   __TEXT.__dlopen_cstrs: 0x6a
--  __TEXT.__cstring: 0x4ca
--  __TEXT.__oslogstring: 0xc37
--  __TEXT.__swift5_typeref: 0x308
-+  __TEXT.__cstring: 0x4bf
-+  __TEXT.__oslogstring: 0xaae
-+  __TEXT.__swift5_typeref: 0x320
-   __TEXT.__swift5_capture: 0xd0
--  __TEXT.__swift5_reflstr: 0x255
-+  __TEXT.__swift5_reflstr: 0x265
-   __TEXT.__swift5_assocty: 0x30
--  __TEXT.__constg_swiftt: 0x3d4
--  __TEXT.__swift5_fieldmd: 0x1f0
-+  __TEXT.__constg_swiftt: 0x3fc
-+  __TEXT.__swift5_fieldmd: 0x1fc
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_mpenum: 0x8
-   __TEXT.__swift5_proto: 0x40
-   __TEXT.__swift5_types: 0x2c
-   __TEXT.__swift_as_entry: 0x54
--  __TEXT.__swift_as_ret: 0x54
--  __TEXT.__swift_as_cont: 0xb8
--  __TEXT.__gcc_except_tab: 0xab4
--  __TEXT.__ustring: 0xc
--  __TEXT.__unwind_info: 0x730
--  __TEXT.__eh_frame: 0xc48
-+  __TEXT.__swift_as_ret: 0x58
-+  __TEXT.__swift_as_cont: 0xd4
-+  __TEXT.__gcc_except_tab: 0x6f0
-+  __TEXT.__unwind_info: 0x6b8
-+  __TEXT.__eh_frame: 0xe50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1e8
--  __DATA_CONST.__objc_classlist: 0x40
-+  __DATA_CONST.__const: 0x120
-+  __DATA_CONST.__objc_classlist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x468
--  __DATA_CONST.__objc_superrefs: 0x18
--  __DATA_CONST.__got: 0x2a0
--  __AUTH_CONST.__const: 0x770
-+  __DATA_CONST.__objc_selrefs: 0x2a8
-+  __DATA_CONST.__objc_superrefs: 0x10
-+  __DATA_CONST.__got: 0x270
-+  __AUTH_CONST.__const: 0x690
-   __AUTH_CONST.__cfstring: 0x200
--  __AUTH_CONST.__objc_const: 0xcc0
-+  __AUTH_CONST.__objc_const: 0x8f0
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__auth_got: 0xaf0
--  __AUTH.__objc_data: 0x190
-+  __AUTH_CONST.__auth_got: 0xab0
-+  __AUTH.__objc_data: 0x140
-   __AUTH.__data: 0xb0
--  __DATA.__objc_ivar: 0x80
--  __DATA.__data: 0x128
-+  __DATA.__objc_ivar: 0x48
-+  __DATA.__data: 0x148
-   __DATA.__objc_stublist: 0x8
--  __DATA.__bss: 0x790
--  __DATA_DIRTY.__objc_data: 0x188
--  __DATA_DIRTY.__data: 0x238
-+  __DATA.__bss: 0x7a0
-+  __DATA_DIRTY.__objc_data: 0x138
-+  __DATA_DIRTY.__data: 0x248
-   __DATA_DIRTY.__common: 0x38
--  __DATA_DIRTY.__bss: 0x1c0
 -  - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-+  __DATA_DIRTY.__bss: 0x1b8
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
++723.1.0.0.0
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 467
--  Symbols:   809
+-  Symbols:   694
 -  CStrings:  112
 +  Functions: 423
-+  Symbols:   635
++  Symbols:   564
 +  CStrings:  97
- 
 Symbols:
 + -[TTSSynthesizerWrapper .cxx_construct]
 + -[TTSSynthesizerWrapper loadVoiceResourceData:mimeType:error:]
@@ -151,10 +102,6 @@ Symbols:
 + __ZTSZZ55-[TTSSynthesizerWrapper synthesizeText:callback:error:]EUb_E3$_1
 + __ZTVNSt3__110__function6__funcIZ70-[TTSSynthesizerWrapper initWithVoicePath:frontendResourcePath:error:]E3$_0FvRKNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS7_IS9_EEEEEEE
 + __ZTVNSt3__110__function6__funcIZZ55-[TTSSynthesizerWrapper synthesizeText:callback:error:]EUb_E3$_1FiN14TTSSynthesizer15CallbackMessageEEEE
-+ _objc_msgSend$initWithContentsOfURL:
-+ _objc_msgSend$loadVoiceResourceData:mimeType:error:
-+ _objc_msgSend$phonemeSequenceCallback
-+ _objc_msgSend$unloadAllVoiceResourcesWithError:
 + _objc_setProperty_nonatomic_copy
 + _symbolic SDyS2SG
 + _symbolic SaySSG
@@ -342,54 +289,6 @@ Symbols:
 - __os_log_error_impl
 - _dispatch_sync
 - _objc_alloc
-- _objc_msgSend$UTF8String
-- _objc_msgSend$_neuralStyles
-- _objc_msgSend$_setProsodyParameters
-- _objc_msgSend$bufferConverter
-- _objc_msgSend$cStringUsingEncoding:
-- _objc_msgSend$convertToBuffer:error:withInputFromBlock:
-- _objc_msgSend$currentNeuralStyle
-- _objc_msgSend$delegate
-- _objc_msgSend$engineFormat
-- _objc_msgSend$hasPrefix:
-- _objc_msgSend$indexOfObjectPassingTest:
-- _objc_msgSend$initFromFormat:toFormat:
-- _objc_msgSend$initStandardFormatWithSampleRate:channels:
-- _objc_msgSend$initWithCommonFormat:sampleRate:channels:interleaved:
-- _objc_msgSend$initWithName:vector:
-- _objc_msgSend$initWithPCMFormat:bufferListNoCopy:deallocator:
-- _objc_msgSend$initWithPCMFormat:frameCapacity:
-- _objc_msgSend$insertObject:atIndex:
-- _objc_msgSend$isEqualToString:
-- _objc_msgSend$language
-- _objc_msgSend$lengthOfBytesUsingEncoding:
-- _objc_msgSend$numberWithBool:
-- _objc_msgSend$objectAtIndexedSubscript:
-- _objc_msgSend$orderedSet
-- _objc_msgSend$outputFormat
-- _objc_msgSend$regexForString:atStart:
-- _objc_msgSend$removeObject:
-- _objc_msgSend$removeObjectAtIndex:
-- _objc_msgSend$reset
-- _objc_msgSend$resourceData
-- _objc_msgSend$resourceString
-- _objc_msgSend$setCurrentNeuralStyle:
-- _objc_msgSend$setNeuralStyles:
-- _objc_msgSend$setPrimeMethod:
-- _objc_msgSend$setSiriVoiceResource:
-- _objc_msgSend$setSynthesizer:
-- _objc_msgSend$setSynthesizing:
-- _objc_msgSend$siri:didGenerateBuffer:
-- _objc_msgSend$siri:didGenerateMarkers:count:
-- _objc_msgSend$siriDidEndSynthesis:successfully:
-- _objc_msgSend$siriDidReceivePhonemeSequence:
-- _objc_msgSend$siriDidStartSynthesis:
-- _objc_msgSend$siriVoiceResource
-- _objc_msgSend$synthesisQueue
-- _objc_msgSend$synthesizer
-- _objc_msgSend$unloadVoiceResource:
-- _objc_msgSend$utf16RangeFromUTF8Range:chars:size:
-- _objc_msgSend$voiceResources
 - _objc_storeWeak
 CStrings:
 + "Exception loading voice resource"

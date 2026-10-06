@@ -2,76 +2,28 @@
 
 > `/System/Library/PrivateFrameworks/Tungsten.framework/Tungsten`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfb564` | `0xfb7ec` | **`+0x288`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7ea8` | `0x7ec0` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x11c08` | `0x11c20` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0xe60` | `0xe70` | **`+0x10`** |
+| `__AUTH_CONST.__objc_const` | `0x22c40` | `0x22c48` | **`+0x8`** |
+| `__TEXT.__cstring` | `0xd758` | `0xd75b` | **`+0x3`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xfb564
--  __TEXT.__objc_methlist: 0x11c08
-+  __TEXT.__text: 0xfb7ec
-+  __TEXT.__objc_methlist: 0x11c20
-   __TEXT.__const: 0x39c0
-   __TEXT.__constg_swiftt: 0x244
-   __TEXT.__swift5_typeref: 0x125e
+-910.21.101.0.0
++910.27.103.0.0
 
-   __TEXT.__swift5_types: 0x1c
-   __TEXT.__swift5_fieldmd: 0x7c8
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__cstring: 0xd758
-+  __TEXT.__cstring: 0xd75b
-   __TEXT.__gcc_except_tab: 0x3504
-   __TEXT.__oslogstring: 0x25bb
-   __TEXT.__ustring: 0x3c
-
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x2d0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7ea8
-+  __DATA_CONST.__objc_selrefs: 0x7ec0
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__objc_superrefs: 0x6d0
-   __DATA_CONST.__objc_arraydata: 0xb18
--  __DATA_CONST.__got: 0xe60
-+  __DATA_CONST.__got: 0xe70
-   __AUTH_CONST.__const: 0xd98
-   __AUTH_CONST.__cfstring: 0x7ce0
--  __AUTH_CONST.__objc_const: 0x22c40
-+  __AUTH_CONST.__objc_const: 0x22c48
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x2010
-   __AUTH_CONST.__objc_arrayobj: 0x78
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6739
--  Symbols:   20890
+-  Symbols:   11622
 +  Functions: 6740
-+  Symbols:   20893
-   CStrings:  2890
- 
-Sections:
-~ __TEXT.__const : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_typeref : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __TEXT.__unwind_info : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH.__objc_data : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__objc_ivar : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   11623
 Symbols:
 + -[PXGView px_backgroundColor]
 + GCC_except_table5270
@@ -108,7 +60,6 @@ Symbols:
 + GCC_except_table5791
 + ___block_descriptor_124_e8_32s40s48s56s64s72s_e204_v200?0I8q12B20{_PXLayoutGeometry=q{CGPoint=dd}{CGSize=dd}{CGAffineTransform=dddddd}fq{CGRect={CGPoint=dd}{CGSize=dd}}{CGSize=dd}}24^{?={?=ddd}}176^{?=f{?=(?={?=ffff}[4f])}ffffSCf{?=[4]}}184^{?=CCfqSC}192ls32l8s40l8s48l8s56l8s64l8s72l8
 + ___block_descriptor_57_e8_32s40s_e101_v40?0{_PXGSpriteIndexRange=II}8^{?={?=ddd}}16^{?=f{?=(?={?=ffff}[4f])}ffffSCf{?=[4]}}24^{?=CCfqSC}32ls32l8s40l8
-+ _objc_msgSend$itemsLayout:cornerRadiusForAccessoryItem:
 - GCC_except_table5269
 - GCC_except_table5290
 - GCC_except_table5324
@@ -169,5 +120,4 @@ Functions:
 CStrings:
 + "v200@?0I8q12B20{_PXLayoutGeometry=q{CGPoint=dd}{CGSize=dd}{CGAffineTransform=dddddd}fq{CGRect={CGPoint=dd}{CGSize=dd}}{CGSize=dd}}24^{?={?=ddd}}176^{?=f{?=(?={?=ffff}[4f])}ffffSCf{?=[4]}}184^{?=CCfqSC}192"
 - "v196@?0I8q12{_PXLayoutGeometry=q{CGPoint=dd}{CGSize=dd}{CGAffineTransform=dddddd}fq{CGRect={CGPoint=dd}{CGSize=dd}}{CGSize=dd}}20^{?={?=ddd}}172^{?=f{?=(?={?=ffff}[4f])}ffffSCf{?=[4]}}180^{?=CCfqSC}188"
-
 ```

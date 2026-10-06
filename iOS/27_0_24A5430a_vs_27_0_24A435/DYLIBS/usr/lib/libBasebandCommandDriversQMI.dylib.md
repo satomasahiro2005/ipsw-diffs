@@ -2,29 +2,22 @@
 
 > `/usr/lib/libBasebandCommandDriversQMI.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x101180` | `0x101318` | **`+0x198`** |
+| `__TEXT.__cstring` | `0x3ec4` | `0x3efd` | **`+0x39`** |
+
+### Other Changes
+
 ```diff
 
- 1585.0.0.0.0
--  __TEXT.__text: 0x101180
-+  __TEXT.__text: 0x101318
-   __TEXT.__init_offsets: 0x8
-   __TEXT.__const: 0x7960
-   __TEXT.__gcc_except_tab: 0x1343c
--  __TEXT.__cstring: 0x3ec4
-+  __TEXT.__cstring: 0x3efd
-   __TEXT.__oslogstring: 0x245a
-   __TEXT.__unwind_info: 0x6e50
-   __TEXT.__eh_frame: 0x138
-
-   - /usr/lib/libobjc.A.dylib
-   Functions: 5135
-   Symbols:   7524
 -  CStrings:  1031
 +  CStrings:  1033
- 
 Functions:
 ~ __ZN5boost8signals26detail11auto_bufferINS_7variantINS_10shared_ptrIvEEJNS1_23foreign_void_shared_ptrEEEENS1_15store_n_objectsILj10EEENS1_19default_grow_policyENSt3__19allocatorIS7_EEE9push_backERKS7_ : 272 -> 368
-~ sub_2be6e41e8 -> sub_2bf573248 : 52 -> 60
+~ sub_2be6091e8 -> sub_2bf487248 : 52 -> 60
 ~ __ZNSt3__16vectorINS_9sub_matchIPKcEENS_9allocatorIS4_EEE6assignEmRKS4_ : 460 -> 476
 ~ __ZNSt3__16vectorINS_9sub_matchIPKcEENS_9allocatorIS4_EEE6resizeEmRKS4_ : 396 -> 420
 ~ __ZNSt3__16vectorINS_7__stateIcEENS_9allocatorIS2_EEE24__emplace_back_slow_pathIJS2_EEEPS2_DpOT_ : 384 -> 380

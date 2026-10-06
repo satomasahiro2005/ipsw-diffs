@@ -2,20 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/PolarisBufferService.framework/PolarisBufferService`
 
-```diff
+### Section Size Changes
 
- 256.0.5.0.0
--  __TEXT.__text: 0x5d25c
-+  __TEXT.__text: 0x5d288
-   __TEXT.__const: 0x171c
-   __TEXT.__gcc_except_tab: 0x2d80
-   __TEXT.__cstring: 0x7ab9
-   __TEXT.__oslogstring: 0xa961
--  __TEXT.__unwind_info: 0x1d98
-+  __TEXT.__unwind_info: 0x1d90
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_methname: 0x0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5d25c` | `0x5d288` | **`+0x2c`** |
+| `__TEXT.__unwind_info` | `0x1d98` | `0x1d90` | **`-0x8`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
+```diff
 Functions:
 ~ __ZN15PSBufferService11AtomicDeque23InitializeIntoRawBufferEPhj : 260 -> 268
 ~ __ZN15PSBufferService11AtomicDeque22FindMissingNodeInQueueERj : 180 -> 176
@@ -30,4 +30,7 @@ Functions:
 ~ _ps_atomic_ringbuffer_init : 332 -> 336
 ~ _ps_atomic_ringbuffer_writer_acquire_entry : 368 -> 356
 ~ _ps_atomic_ringbuffer_reader_acquire_entry : 276 -> 288
+CStrings:
++ "16:12:08"
+- "19:12:59"
 ```

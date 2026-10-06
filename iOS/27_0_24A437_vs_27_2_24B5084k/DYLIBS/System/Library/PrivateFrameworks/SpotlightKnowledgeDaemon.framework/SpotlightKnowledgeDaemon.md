@@ -2,125 +2,69 @@
 
 > `/System/Library/PrivateFrameworks/SpotlightKnowledgeDaemon.framework/SpotlightKnowledgeDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x48c78c` | `0x4ad888` | **`+0x210fc`** |
+| `__TEXT.__oslogstring` | `0x1186e` | `0x1296e` | **`+0x1100`** |
+| `__TEXT.__eh_frame` | `0x14680` | `0x152a8` | **`+0xc28`** |
+| `__AUTH_CONST.__const` | `0x18b40` | `0x19588` | **`+0xa48`** |
+| `__TEXT.__cstring` | `0x159f3` | `0x1622e` | **`+0x83b`** |
+| `__TEXT.__swift5_reflstr` | `0x880d` | `0x8d1a` | **`+0x50d`** |
+| `__TEXT.__const` | `0x17418` | `0x178f8` | **`+0x4e0`** |
+| `__DATA.__data` | `0x3a70` | `0x3ed0` | **`+0x460`** |
+| `__TEXT.__swift5_typeref` | `0xe9b2` | `0xedea` | **`+0x438`** |
+| `__TEXT.__swift5_fieldmd` | `0x8d4c` | `0x9130` | **`+0x3e4`** |
+| `__TEXT.__objc_methlist` | `0x9968` | `0x9600` | **`-0x368`** |
+| `__AUTH_CONST.__objc_const` | `0x186f0` | `0x183c0` | **`-0x330`** |
+| `__TEXT.__unwind_info` | `0xc878` | `0xcba0` | **`+0x328`** |
+| `__TEXT.__constg_swiftt` | `0x8dc8` | `0x90b8` | **`+0x2f0`** |
+| `__DATA.__bss` | `0xf900` | `0xfb80` | **`+0x280`** |
+| `__AUTH_CONST.__cfstring` | `0x9420` | `0x9260` | **`-0x1c0`** |
+| `__AUTH.__data` | `0x2a28` | `0x2bb8` | **`+0x190`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5f88` | `0x5e60` | **`-0x128`** |
+| `__AUTH_CONST.__auth_got` | `0x36f0` | `0x37e8` | **`+0xf8`** |
+| `__TEXT.__swift5_capture` | `0x37e8` | `0x38c4` | **`+0xdc`** |
+| `__DATA_CONST.__got` | `0x2260` | `0x2338` | **`+0xd8`** |
+| `__AUTH.__objc_data` | `0x1788` | `0x16e8` | **`-0xa0`** |
+| `__DATA.__objc_ivar` | `0xbd8` | `0xb6c` | **`-0x6c`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x5e8` | `0x588` | **`-0x60`** |
+| `__TEXT.__gcc_except_tab` | `0x5aac` | `0x5a58` | **`-0x54`** |
+| `__DATA_CONST.__const` | `0x35b8` | `0x3570` | **`-0x48`** |
+| `__DATA_DIRTY.__data` | `0xc338` | `0xc2f8` | **`-0x40`** |
+| `__AUTH_CONST.__objc_intobj` | `0x9d8` | `0x9a8` | **`-0x30`** |
+| `__TEXT.__swift5_proto` | `0x107c` | `0x10ac` | **`+0x30`** |
+| `__TEXT.__swift5_types` | `0x8bc` | `0x8e8` | **`+0x2c`** |
+| `__DATA.__common` | `0xc0` | `0xe0` | **`+0x20`** |
+| `__DATA_DIRTY.__common` | `0x3a0` | `0x380` | **`-0x20`** |
+| `__TEXT.__swift5_assocty` | `0x1398` | `0x13b0` | **`+0x18`** |
+| `__DATA_CONST.__objc_arraydata` | `0x8a0` | `0x890` | **`-0x10`** |
+| `__DATA_CONST.__objc_protolist` | `0x1e8` | `0x1f8` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x4e8` | `0x4d8` | **`-0x10`** |
+| `__DATA_DIRTY.__bss` | `0x8900` | `0x88f0` | **`-0x10`** |
+| `__DATA_DIRTY.__objc_data` | `0x3ef0` | `0x3f00` | **`+0x10`** |
+| `__TEXT.__swift5_protos` | `0x274` | `0x280` | **`+0xc`** |
+| `__DATA_CONST.__objc_catlist` | `0x30` | `0x28` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x970` | `0x968` | **`-0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0xb8` | `0xc0` | **`+0x8`** |
+| `__TEXT.__swift5_types2` | `—` | `0x4` | **`+0x4`** |
+| `__TEXT.__swift_as_cont` | `0x574` | `0x578` | **`+0x4`** |
+| `__TEXT.__swift_as_ret` | `0x4d4` | `0x4d8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2459.105.0.0.0
--  __TEXT.__text: 0x46dbfc
--  __TEXT.__objc_methlist: 0x9968
--  __TEXT.__const: 0x17418
--  __TEXT.__oslogstring: 0x1186e
--  __TEXT.__gcc_except_tab: 0x5aac
--  __TEXT.__cstring: 0x159f3
 +2465.1.2.0.0
-+  __TEXT.__text: 0x48df90
-+  __TEXT.__objc_methlist: 0x9600
-+  __TEXT.__const: 0x178f8
-+  __TEXT.__oslogstring: 0x1296e
-+  __TEXT.__cstring: 0x1622e
-+  __TEXT.__gcc_except_tab: 0x5a58
-   __TEXT.__dlopen_cstrs: 0x5e
--  __TEXT.__swift5_typeref: 0xe9b2
--  __TEXT.__constg_swiftt: 0x8dc8
-+  __TEXT.__swift5_typeref: 0xedea
-+  __TEXT.__constg_swiftt: 0x90b8
-   __TEXT.__swift5_builtin: 0x244
--  __TEXT.__swift5_reflstr: 0x880d
--  __TEXT.__swift5_fieldmd: 0x8d4c
--  __TEXT.__swift5_assocty: 0x1398
--  __TEXT.__swift5_capture: 0x37e8
--  __TEXT.__swift5_proto: 0x107c
--  __TEXT.__swift5_types: 0x8bc
-+  __TEXT.__swift5_reflstr: 0x8d1a
-+  __TEXT.__swift5_fieldmd: 0x9130
-+  __TEXT.__swift5_assocty: 0x13b0
-+  __TEXT.__swift5_capture: 0x38c4
-+  __TEXT.__swift5_proto: 0x10ac
-+  __TEXT.__swift5_types: 0x8e8
-   __TEXT.__swift_as_entry: 0x488
--  __TEXT.__swift_as_ret: 0x4d4
--  __TEXT.__swift_as_cont: 0x574
--  __TEXT.__swift5_protos: 0x274
-+  __TEXT.__swift_as_ret: 0x4d8
-+  __TEXT.__swift_as_cont: 0x578
-+  __TEXT.__swift5_protos: 0x280
-   __TEXT.__swift5_mpenum: 0x94
--  __TEXT.__unwind_info: 0xf620
--  __TEXT.__eh_frame: 0x146a0
-+  __TEXT.__swift5_types2: 0x4
-+  __TEXT.__unwind_info: 0xfa38
-+  __TEXT.__eh_frame: 0x152d0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x35b8
--  __DATA_CONST.__objc_classlist: 0x970
--  __DATA_CONST.__objc_catlist: 0x30
--  __DATA_CONST.__objc_protolist: 0x1e8
-+  __DATA_CONST.__const: 0x3570
-+  __DATA_CONST.__objc_classlist: 0x968
-+  __DATA_CONST.__objc_catlist: 0x28
-+  __DATA_CONST.__objc_protolist: 0x1f8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5f88
--  __DATA_CONST.__objc_protorefs: 0xb8
--  __DATA_CONST.__objc_superrefs: 0x4e8
--  __DATA_CONST.__objc_arraydata: 0x8a0
--  __DATA_CONST.__got: 0x2260
--  __AUTH_CONST.__const: 0x18b40
--  __AUTH_CONST.__cfstring: 0x9420
--  __AUTH_CONST.__objc_const: 0x186f0
-+  __DATA_CONST.__objc_selrefs: 0x5e60
-+  __DATA_CONST.__objc_protorefs: 0xc0
-+  __DATA_CONST.__objc_superrefs: 0x4d8
-+  __DATA_CONST.__objc_arraydata: 0x890
-+  __DATA_CONST.__got: 0x2338
-+  __AUTH_CONST.__const: 0x19588
-+  __AUTH_CONST.__cfstring: 0x9260
-+  __AUTH_CONST.__objc_const: 0x183c0
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__objc_intobj: 0x9d8
--  __AUTH_CONST.__objc_arrayobj: 0x5e8
-+  __AUTH_CONST.__objc_intobj: 0x9a8
-+  __AUTH_CONST.__objc_arrayobj: 0x588
-   __AUTH_CONST.__objc_dictobj: 0x280
-   __AUTH_CONST.__objc_doubleobj: 0x20
--  __AUTH_CONST.__auth_got: 0x36f0
--  __AUTH.__objc_data: 0x1788
--  __AUTH.__data: 0x2a28
--  __DATA.__objc_ivar: 0xbd8
--  __DATA.__data: 0x3a70
--  __DATA.__common: 0xc0
--  __DATA_DIRTY.__objc_data: 0x3ef0
--  __DATA_DIRTY.__data: 0xc338
--  __DATA_DIRTY.__bss: 0x8900
--  __DATA_DIRTY.__common: 0x3a0
-+  __AUTH_CONST.__auth_got: 0x37e8
-+  __AUTH.__objc_data: 0x16e8
-+  __AUTH.__data: 0x2bb8
-+  __DATA.__objc_ivar: 0xb6c
-+  __DATA.__data: 0x3ed0
-+  __DATA.__common: 0xe0
-+  __DATA_DIRTY.__objc_data: 0x3f00
-+  __DATA_DIRTY.__data: 0xc2f8
-+  __DATA_DIRTY.__bss: 0x88f0
-+  __DATA_DIRTY.__common: 0x380
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreML.framework/CoreML
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 16556
--  Symbols:   14306
+-  Symbols:   11664
 -  CStrings:  3680
 +  Functions: 16737
-+  Symbols:   14226
++  Symbols:   11613
 +  CStrings:  3753
- 
 Symbols:
 + -[SKDDefaultsProvider onlineLocationsMaxAge]
 + -[SKDLocationProcessor referenceDateForRecord:]
@@ -164,27 +108,6 @@ Symbols:
 + ___swift_memcpy656_8
 + __si_exported_XXH3_64bits
 + _associated conformance 24SpotlightKnowledgeDaemon15FeatureMigratorV22ModelSelectionProviderC12StoredStatusOSHAASQ
-+ _objc_msgSend$categorySample
-+ _objc_msgSend$classification
-+ _objc_msgSend$entityType
-+ _objc_msgSend$generationDate
-+ _objc_msgSend$hasDay
-+ _objc_msgSend$hasEndDate
-+ _objc_msgSend$hasStartDate
-+ _objc_msgSend$isGLPAmbientSensingActivityEnabled
-+ _objc_msgSend$isGLPMessageIndexingEnabled
-+ _objc_msgSend$isGLPNoteIndexingEnabled
-+ _objc_msgSend$onlineLocationsMaxAge
-+ _objc_msgSend$overnightVitalsSummary
-+ _objc_msgSend$resourceGenerationWithUseCase:error:
-+ _objc_msgSend$setBool:forKey:
-+ _objc_msgSend$setReason:
-+ _objc_msgSend$setRequiresNetworkConnectivity:
-+ _objc_msgSend$shouldLookupOnlineLocationsForRecord:
-+ _objc_msgSend$sleepDaySummary
-+ _objc_msgSend$stateOfMindSample
-+ _objc_msgSend$statistics
-+ _objc_msgSend$timeIntervalSinceNow
 + _optionalAttributes.onceLocOptionalToken
 + _optionalAttributes.sLocOptionalAttributes
 + _swift_release_x13
@@ -403,56 +326,6 @@ Symbols:
 - ___swift_memcpy156_8
 - ___swift_memcpy392_8
 - ___swift_memcpy648_8
-- _objc_msgSend$_additionalQuery
-- _objc_msgSend$_backgroundQuery
-- _objc_msgSend$_cleanupQuery
-- _objc_msgSend$_excludedQuery
-- _objc_msgSend$_includedQuery
-- _objc_msgSend$_invalidVersionQuery
-- _objc_msgSend$_notExcludedQuery
-- _objc_msgSend$_notIncludedQuery
-- _objc_msgSend$_runCSProcessingForTask:queryString:queryContext:batchProcessedBlock:batchUpdatedBlock:cancelBlock:
-- _objc_msgSend$_updatesQuery
-- _objc_msgSend$_versionQuery
-- _objc_msgSend$additionalQueries
-- _objc_msgSend$breadcrumbsTask
-- _objc_msgSend$canRun
-- _objc_msgSend$commonInitWithName:
-- _objc_msgSend$errorAttributeKey
-- _objc_msgSend$events
-- _objc_msgSend$finishedTextQueries
-- _objc_msgSend$flags
-- _objc_msgSend$ignoreExternalBundles
-- _objc_msgSend$ignoreInternalBundles
-- _objc_msgSend$isPipelineStateTransitionContentLoggingEnabled
-- _objc_msgSend$isPipelineStateTransitionLoggingEnabled
-- _objc_msgSend$isPostInstall
-- _objc_msgSend$journalAttributeKey
-- _objc_msgSend$keyphraseTask
-- _objc_msgSend$postInstall
-- _objc_msgSend$processAttributesWithJobContext:group:cancelBlock:
-- _objc_msgSend$queryForEvent:
-- _objc_msgSend$queryForTask:event:
-- _objc_msgSend$queryRecordIncludesAttributes:
-- _objc_msgSend$queryRecordNumberValueForKey:
-- _objc_msgSend$requestCSProcessingWithProtectionClasses:task:batchProcessedBlock:batchUpdatedBlock:cancelBlock:
-- _objc_msgSend$setAdditionalQueries:
-- _objc_msgSend$setOptionalAttributes:
-- _objc_msgSend$setPostInstall:
-- _objc_msgSend$setProcessorFlags:
-- _objc_msgSend$setRequiresBuddyComplete:
-- _objc_msgSend$setScheduleAfter:
-- _objc_msgSend$setSupportedEvent:
-- _objc_msgSend$setTrySchedulingBefore:
-- _objc_msgSend$setVersionValue:
-- _objc_msgSend$shouldProcessAttributes
-- _objc_msgSend$startTextQueries
-- _objc_msgSend$supportsEvent:
-- _objc_msgSend$supportsEvent:record:bundleID:
-- _objc_msgSend$tasks
-- _objc_msgSend$trackingAttributes
-- _objc_msgSend$versionAttributeKey
-- _objc_msgSend$withQueries
 - _sharedManager.sSharedManager
 - _symbolic Si3key_Si5valuet
 - _symbolic _____ 24SpotlightKnowledgeDaemon15FeatureMigratorV14ModelSelectionV

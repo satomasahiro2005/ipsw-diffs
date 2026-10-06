@@ -2,57 +2,29 @@
 
 > `/System/Library/PrivateFrameworks/Scandium.framework/Scandium`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__weak_got`
-- `__DATA_CONST.__objc_selrefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x312e4` | `0x31398` | **`+0xb4`** |
+| `__TEXT.__oslogstring` | `0xc70` | `0xcb3` | **`+0x43`** |
+| `__AUTH_CONST.__auth_got` | `0x3f8` | `0x3f0` | **`-0x8`** |
+| `__TEXT.__const` | `0x3b5c` | `0x3b64` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x2854` | `0x2850` | **`-0x4`** |
+
+### Other Changes
 
 ```diff
 
 -95.0.0.0.0
--  __TEXT.__text: 0x312e4
 +96.0.0.0.0
-+  __TEXT.__text: 0x31398
-   __TEXT.__objc_methlist: 0xe0
--  __TEXT.__const: 0x3b5c
--  __TEXT.__gcc_except_tab: 0x2854
--  __TEXT.__oslogstring: 0xc70
-+  __TEXT.__const: 0x3b64
-+  __TEXT.__gcc_except_tab: 0x2850
-+  __TEXT.__oslogstring: 0xcb3
-   __TEXT.__cstring: 0x2202
-   __TEXT.__unwind_info: 0xf70
-   __TEXT.__objc_stubs: 0x0
 
-   __AUTH_CONST.__cfstring: 0x1300
-   __AUTH_CONST.__objc_const: 0x260
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__auth_got: 0x3f8
-+  __AUTH_CONST.__auth_got: 0x3f0
-   __AUTH.__objc_data: 0x50
-   __DATA.__objc_ivar: 0x2c
-   __DATA.__bss: 0x20
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 785
--  Symbols:   1265
+-  Symbols:   1233
 -  CStrings:  497
 +  Functions: 786
-+  Symbols:   1264
++  Symbols:   1232
 +  CStrings:  498
- 
 Symbols:
 - __ZNSt3__16__sortIRNS_6__lessIffEEPfEEvT0_S5_T_
 Functions:

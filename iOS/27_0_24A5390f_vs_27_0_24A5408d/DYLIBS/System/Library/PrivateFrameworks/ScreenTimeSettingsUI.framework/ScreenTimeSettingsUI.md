@@ -2,109 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework/ScreenTimeSettingsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1270a8` | `0x12a0c8` | **`+0x3020`** |
+| `__TEXT.__cstring` | `0xd6e5` | `0xe475` | **`+0xd90`** |
+| `__AUTH_CONST.__cfstring` | `0xb5c0` | `0xbd40` | **`+0x780`** |
+| `__TEXT.__objc_methlist` | `0xc63c` | `0xc7b4` | **`+0x178`** |
+| `__AUTH_CONST.__objc_const` | `0x25f50` | `0x26078` | **`+0x128`** |
+| `__AUTH.__objc_data` | `0x5170` | `0x5270` | **`+0x100`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6f90` | `0x7060` | **`+0xd0`** |
+| `__TEXT.__oslogstring` | `0x60e3` | `0x6173` | **`+0x90`** |
+| `__TEXT.__unwind_info` | `0x3d30` | `0x3dc0` | **`+0x90`** |
+| `__AUTH_CONST.__auth_got` | `0x1858` | `0x18d8` | **`+0x80`** |
+| `__DATA_CONST.__const` | `0x2748` | `0x27c0` | **`+0x78`** |
+| `__TEXT.__const` | `0x3d44` | `0x3da4` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0x1228` | `0x127c` | **`+0x54`** |
+| `__AUTH_CONST.__const` | `0x2f88` | `0x2fd8` | **`+0x50`** |
+| `__DATA_CONST.__got` | `0x14a0` | `0x14d8` | **`+0x38`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x150` | `0x180` | **`+0x30`** |
+| `__TEXT.__constg_swiftt` | `0x1544` | `0x1570` | **`+0x2c`** |
+| `__AUTH.__data` | `0xa38` | `0xa58` | **`+0x20`** |
+| `__DATA.__data` | `0x2838` | `0x2858` | **`+0x20`** |
+| `__DATA_CONST.__objc_arraydata` | `0x328` | `0x348` | **`+0x20`** |
+| `__TEXT.__swift5_typeref` | `0x43ce` | `0x43e4` | **`+0x16`** |
+| `__DATA_CONST.__objc_classlist` | `0x7a0` | `0x7b0` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0xb28` | `0xb38` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0xc3c` | `0xc4c` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x608` | `0x610` | **`+0x8`** |
+| `__TEXT.__eh_frame` | `0x2030` | `0x2038` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0xd14` | `0xd18` | **`+0x4`** |
+| `__TEXT.__swift5_types` | `0x104` | `0x108` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -649.0.0.0.0
--  __TEXT.__text: 0x1270a8
--  __TEXT.__objc_methlist: 0xc63c
--  __TEXT.__const: 0x3d44
--  __TEXT.__cstring: 0xd6e5
--  __TEXT.__oslogstring: 0x60e3
--  __TEXT.__gcc_except_tab: 0x1228
 +655.0.101.0.0
-+  __TEXT.__text: 0x12a0c8
-+  __TEXT.__objc_methlist: 0xc7b4
-+  __TEXT.__const: 0x3da4
-+  __TEXT.__cstring: 0xe475
-+  __TEXT.__oslogstring: 0x6173
-+  __TEXT.__gcc_except_tab: 0x127c
-   __TEXT.__dlopen_cstrs: 0x10a
--  __TEXT.__swift5_typeref: 0x43ce
--  __TEXT.__constg_swiftt: 0x1544
-+  __TEXT.__swift5_typeref: 0x43e4
-+  __TEXT.__constg_swiftt: 0x1570
-   __TEXT.__swift5_reflstr: 0xb00
--  __TEXT.__swift5_fieldmd: 0xc3c
-+  __TEXT.__swift5_fieldmd: 0xc4c
-   __TEXT.__swift5_builtin: 0xa0
-   __TEXT.__swift5_assocty: 0x308
--  __TEXT.__swift5_capture: 0xb28
-+  __TEXT.__swift5_capture: 0xb38
-   __TEXT.__swift5_proto: 0xe8
--  __TEXT.__swift5_types: 0x104
-+  __TEXT.__swift5_types: 0x108
-   __TEXT.__swift5_protos: 0x1c
-   __TEXT.__swift_as_entry: 0x94
-   __TEXT.__swift_as_ret: 0x88
-   __TEXT.__swift_as_cont: 0x234
--  __TEXT.__unwind_info: 0x3d30
--  __TEXT.__eh_frame: 0x2030
-+  __TEXT.__unwind_info: 0x3dc0
-+  __TEXT.__eh_frame: 0x2038
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x2748
--  __DATA_CONST.__objc_classlist: 0x7a0
-+  __DATA_CONST.__const: 0x27c0
-+  __DATA_CONST.__objc_classlist: 0x7b0
-   __DATA_CONST.__objc_catlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x210
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6f90
-+  __DATA_CONST.__objc_selrefs: 0x7060
-   __DATA_CONST.__objc_protorefs: 0x80
--  __DATA_CONST.__objc_superrefs: 0x608
--  __DATA_CONST.__objc_arraydata: 0x328
--  __DATA_CONST.__got: 0x14a0
--  __AUTH_CONST.__const: 0x2f88
--  __AUTH_CONST.__cfstring: 0xb5c0
--  __AUTH_CONST.__objc_const: 0x25f50
-+  __DATA_CONST.__objc_superrefs: 0x610
-+  __DATA_CONST.__objc_arraydata: 0x348
-+  __DATA_CONST.__got: 0x14d8
-+  __AUTH_CONST.__const: 0x2fd8
-+  __AUTH_CONST.__cfstring: 0xbd40
-+  __AUTH_CONST.__objc_const: 0x26078
-   __AUTH_CONST.__objc_intobj: 0x918
--  __AUTH_CONST.__objc_arrayobj: 0x150
-+  __AUTH_CONST.__objc_arrayobj: 0x180
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__objc_dictobj: 0x258
--  __AUTH_CONST.__auth_got: 0x1858
--  __AUTH.__objc_data: 0x5170
--  __AUTH.__data: 0xa38
--  __DATA.__objc_ivar: 0xd14
--  __DATA.__data: 0x2838
-+  __AUTH_CONST.__auth_got: 0x18d8
-+  __AUTH.__objc_data: 0x5270
-+  __AUTH.__data: 0xa58
-+  __DATA.__objc_ivar: 0xd18
-+  __DATA.__data: 0x2858
-   __DATA.__bss: 0x1e40
-   __DATA.__common: 0xc0
-   __DATA_DIRTY.__objc_data: 0x9b0
 
-   - /System/Library/PrivateFrameworks/FamilyCircle.framework/FamilyCircle
-   - /System/Library/PrivateFrameworks/FamilyControlsObjC.framework/FamilyControlsObjC
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
 +  - /System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels
-   - /System/Library/PrivateFrameworks/IconFoundation.framework/IconFoundation
-   - /System/Library/PrivateFrameworks/IconServices.framework/IconServices
-   - /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6277
--  Symbols:   11358
+-  Symbols:   8453
 -  CStrings:  2177
 +  Functions: 6330
-+  Symbols:   11435
++  Symbols:   8505
 +  CStrings:  2240
- 
 Symbols:
 + -[STContentPrivacyAccessibilityRestrictionsDetailController _confirmationAlertMessageKey]
 + -[STContentPrivacyAccessibilityRestrictionsDetailController _isExplicitLanguageBlocked]
@@ -159,32 +104,6 @@ Symbols:
 + ___block_descriptor_40_e8_32bs_e23_v16?0"UIAlertAction"8ls32l8
 + ___block_descriptor_41_e8_32w_e5_v8?0lw32l8
 + ___block_descriptor_49_e8_32bs40w_e5_v8?0lw40l8s32l8
-+ _objc_msgSend$_confirmationAlertMessageKey
-+ _objc_msgSend$_currentSiriPickerOption
-+ _objc_msgSend$_isExplicitLanguageBlocked
-+ _objc_msgSend$_isMathResultsBlocked
-+ _objc_msgSend$_isSiriAIAvailable
-+ _objc_msgSend$_isSiriAIBlocked
-+ _objc_msgSend$_isTargetChild
-+ _objc_msgSend$_isWritingToolsBlocked
-+ _objc_msgSend$_radioGroupSpecifierWithName:footerText:showsLearnMoreLink:item:
-+ _objc_msgSend$_shouldShowConfirmationAlert
-+ _objc_msgSend$_showConfirmationAlertWithCompletion:
-+ _objc_msgSend$_siriTwoOptionPickerSpecifier
-+ _objc_msgSend$_topLevelSpecifierWithAction:name:viewableWhenRestrictionsDisabled:
-+ _objc_msgSend$_webContentSpecifierForSiriAI:
-+ _objc_msgSend$allowedSiriVersionFooterHidden
-+ _objc_msgSend$isAccessibilityAskAllowed
-+ _objc_msgSend$isAccessibilityAskAllowedForUserDSID:error:
-+ _objc_msgSend$isAvailableInCurrentLocale
-+ _objc_msgSend$localizedModel
-+ _objc_msgSend$lock
-+ _objc_msgSend$prefetch
-+ _objc_msgSend$saveAccessibilityAskIsAllowed:error:
-+ _objc_msgSend$setAccessibilityAskAllowed:forUserDSID:error:
-+ _objc_msgSend$setIsAccessibilityAskAllowed:
-+ _objc_msgSend$siriAIIsHidden
-+ _objc_msgSend$unlock
 + _symbolic _____ 20ScreenTimeSettingsUI30STAccessibilityAskAvailabilityC
 + _symbolic _____Sg 10Foundation6LocaleV12LanguageCodeV
 + _symbolic _____XMT 20ScreenTimeSettingsUI30STAccessibilityAskAvailabilityC
@@ -192,7 +111,6 @@ Symbols:
 - GCC_except_table119
 - GCC_except_table20
 - ___block_descriptor_145_e8_32s40s48s56s64s72s80s88s96s104s112s120bs_e5_v8?0ls32l8s40l8s48l8s56l8s64l8s72l8s80l8s88l8s96l8s104l8s120l8s112l8
-- _objc_msgSend$_radioGroupSpecifierWithName:footerText:item:
 CStrings:
 + "AADC_AccessibilityRestrictionsSpecifierName"
 + "ACCESSIBILITY_RESTRICTIONS"

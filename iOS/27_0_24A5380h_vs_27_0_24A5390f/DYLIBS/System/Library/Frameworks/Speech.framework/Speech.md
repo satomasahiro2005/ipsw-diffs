@@ -2,121 +2,47 @@
 
 > `/System/Library/Frameworks/Speech.framework/Speech`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_builtin`
-- `__TEXT.__swift5_assocty`
-- `__TEXT.__swift5_proto`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__swift5_mpenum`
-- `__TEXT.__gcc_except_tab`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__cfstring`
-- `__AUTH_CONST.__objc_dictobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x22b844` | `0x22dcc8` | **`+0x2484`** |
+| `__TEXT.__eh_frame` | `0x14124` | `0x14420` | **`+0x2fc`** |
+| `__TEXT.__unwind_info` | `0x9ae8` | `0x9ba8` | **`+0xc0`** |
+| `__TEXT.__oslogstring` | `0x4ff5` | `0x50a2` | **`+0xad`** |
+| `__AUTH_CONST.__const` | `0x111e0` | `0x11270` | **`+0x90`** |
+| `__TEXT.__swift5_reflstr` | `0x51ab` | `0x523b` | **`+0x90`** |
+| `__TEXT.__const` | `0xfa20` | `0xfaa0` | **`+0x80`** |
+| `__TEXT.__swift5_fieldmd` | `0x4200` | `0x4264` | **`+0x64`** |
+| `__TEXT.__swift_as_cont` | `0x14e4` | `0x1530` | **`+0x4c`** |
+| `__AUTH_CONST.__objc_const` | `0xe6a0` | `0xe6e8` | **`+0x48`** |
+| `__TEXT.__swift5_typeref` | `0x6d0a` | `0x6d52` | **`+0x48`** |
+| `__TEXT.__constg_swiftt` | `0x4b38` | `0x4b6c` | **`+0x34`** |
+| `__TEXT.__cstring` | `0x9a5f` | `0x9a8f` | **`+0x30`** |
+| `__TEXT.__objc_methlist` | `0x4ffc` | `0x501c` | **`+0x20`** |
+| `__TEXT.__swift_as_ret` | `0xb1c` | `0xb3c` | **`+0x20`** |
+| `__DATA.__data` | `0x3368` | `0x3380` | **`+0x18`** |
+| `__TEXT.__swift5_capture` | `0x41bc` | `0x41a4` | **`-0x18`** |
+| `__TEXT.__swift5_acfuncs` | `0x5a0` | `0x5b4` | **`+0x14`** |
+| `__TEXT.__swift_as_entry` | `0xac8` | `0xadc` | **`+0x14`** |
+| `__AUTH_CONST.__auth_got` | `0x1c08` | `0x1c18` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x30b0` | `0x30c0` | **`+0x10`** |
+| `__DATA_DIRTY.__data` | `0x61b8` | `0x61c8` | **`+0x10`** |
+| `__TEXT.__swift5_types` | `0x3d0` | `0x3d4` | **`+0x4`** |
+
+### Other Changes
 
 ```diff
 
 -3600.66.1.0.0
--  __TEXT.__text: 0x22b844
--  __TEXT.__objc_methlist: 0x4ffc
--  __TEXT.__const: 0xfa20
--  __TEXT.__swift5_typeref: 0x6d0a
--  __TEXT.__constg_swiftt: 0x4b38
--  __TEXT.__swift5_reflstr: 0x51ab
--  __TEXT.__swift5_fieldmd: 0x4200
 +3600.74.1.0.0
-+  __TEXT.__text: 0x22dcc8
-+  __TEXT.__objc_methlist: 0x501c
-+  __TEXT.__const: 0xfaa0
-+  __TEXT.__swift5_typeref: 0x6d52
-+  __TEXT.__constg_swiftt: 0x4b6c
-+  __TEXT.__swift5_reflstr: 0x523b
-+  __TEXT.__swift5_fieldmd: 0x4264
-   __TEXT.__swift5_builtin: 0x104
-   __TEXT.__swift5_assocty: 0xa88
--  __TEXT.__cstring: 0x9a5f
-+  __TEXT.__cstring: 0x9a8f
-   __TEXT.__swift5_proto: 0x988
--  __TEXT.__swift5_types: 0x3d0
--  __TEXT.__oslogstring: 0x4ff5
--  __TEXT.__swift5_capture: 0x41bc
--  __TEXT.__swift5_acfuncs: 0x5a0
--  __TEXT.__swift_as_entry: 0xac8
--  __TEXT.__swift_as_ret: 0xb1c
--  __TEXT.__swift_as_cont: 0x14e4
-+  __TEXT.__swift5_types: 0x3d4
-+  __TEXT.__oslogstring: 0x50a2
-+  __TEXT.__swift5_capture: 0x41a4
-+  __TEXT.__swift5_acfuncs: 0x5b4
-+  __TEXT.__swift_as_entry: 0xadc
-+  __TEXT.__swift_as_ret: 0xb3c
-+  __TEXT.__swift_as_cont: 0x1530
-   __TEXT.__swift5_protos: 0x68
-   __TEXT.__swift5_mpenum: 0x10
-   __TEXT.__gcc_except_tab: 0x8d4
--  __TEXT.__unwind_info: 0x9ae8
--  __TEXT.__eh_frame: 0x14124
-+  __TEXT.__unwind_info: 0x9ba8
-+  __TEXT.__eh_frame: 0x14420
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x1a0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x30b0
-+  __DATA_CONST.__objc_selrefs: 0x30c0
-   __DATA_CONST.__objc_protorefs: 0xf8
-   __DATA_CONST.__objc_superrefs: 0x238
-   __DATA_CONST.__objc_arraydata: 0x118
-   __DATA_CONST.__got: 0xf68
--  __AUTH_CONST.__const: 0x111e0
-+  __AUTH_CONST.__const: 0x11270
-   __AUTH_CONST.__cfstring: 0x47e0
--  __AUTH_CONST.__objc_const: 0xe6a0
-+  __AUTH_CONST.__objc_const: 0xe6e8
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_arrayobj: 0x18
-   __AUTH_CONST.__objc_intobj: 0xf0
--  __AUTH_CONST.__auth_got: 0x1c08
-+  __AUTH_CONST.__auth_got: 0x1c18
-   __AUTH.__objc_data: 0x510
-   __AUTH.__data: 0xd00
-   __DATA.__objc_ivar: 0x628
--  __DATA.__data: 0x3368
-+  __DATA.__data: 0x3380
-   __DATA.__common: 0x68
-   __DATA.__bss: 0xe010
-   __DATA_DIRTY.__objc_data: 0x2610
--  __DATA_DIRTY.__data: 0x61b8
-+  __DATA_DIRTY.__data: 0x61c8
-   __DATA_DIRTY.__bss: 0x2130
-   __DATA_DIRTY.__common: 0x3d8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 15349
--  Symbols:   27327
+-  Symbols:   26162
 -  CStrings:  1465
 +  Functions: 15394
-+  Symbols:   27399
++  Symbols:   26233
 +  CStrings:  1469
- 
 Symbols:
 + +[SFUtilities localeIdentifiersForGeneralASRLanguageCodes:allSupportedLanguages:]
 + GCC_except_table1190
@@ -245,8 +171,6 @@ Symbols:
 + ___swift_memcpy40_8
 + _dispatch_assert_queue_not$V2
 + _dispatch_async_and_wait
-+ _objc_msgSend$localeIdentifiersForGeneralASRLanguageCodes:allSupportedLanguages:
-+ _objc_msgSend$releaseConnectionWithReply:
 + _symbolic ScTy___________pG 6Speech0A16RecognizerWorkerC24GatheredRecognitionStats33_3A51C6E57EFAFC297966DF6A99AFC775LLV s5ErrorP
 + _symbolic ScTy___________pGSg 6Speech0A16RecognizerWorkerC24GatheredRecognitionStats33_3A51C6E57EFAFC297966DF6A99AFC775LLV s5ErrorP
 + _symbolic So21EARRecognitionMetricsC
@@ -311,7 +235,6 @@ Symbols:
 - ___swift_closure_destructor.212Tm
 - ___swift_closure_destructor.53Tm
 - ___swift_closure_destructor.89Tm
-- _objc_msgSend$localeIdentifiersForGeneralASRLanguageCode:
 CStrings:
 + "%s No valid asset set resolved from name %@, usage %@, removing stale entry."
 + "Failed to gather recognition stats: %@"

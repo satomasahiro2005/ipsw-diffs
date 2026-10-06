@@ -2,15 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/AccessibilitySharedUISupport.framework/AccessibilitySharedUISupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1f3eb4` | `0x1f3ed4` | **`+0x20`** |
+
+### Other Changes
+
 ```diff
 
 -591.4.1.0.0
--  __TEXT.__text: 0x1e50a0
 +591.4.2.0.0
-+  __TEXT.__text: 0x1e50c0
-   __TEXT.__objc_methlist: 0x222c
-   __TEXT.__const: 0x158d8
-   __TEXT.__dlopen_cstrs: 0x3a4
 Functions:
-~ sub_251c5410c -> sub_251ee210c : 7776 -> 7808
+~ sub_2545279a4 -> sub_2547539a4 : 7828 -> 7860
 ```

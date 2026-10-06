@@ -2,23 +2,18 @@
 
 > `/System/Library/PrivateFrameworks/SiriFlowEnvironment.framework/SiriFlowEnvironment`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x28b94` | `0x28b9c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 3600.1.3.0.0
--  __TEXT.__text: 0x28b94
-+  __TEXT.__text: 0x28b9c
-   __TEXT.__objc_methlist: 0x5c
-   __TEXT.__const: 0x2538
-   __TEXT.__gcc_except_tab: 0x34
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1747
 +  Functions: 1748
-   Symbols:   3160
-   CStrings:  88
- 
 Functions:
 + _OUTLINED_FUNCTION_38
 ~ _OUTLINED_FUNCTION_30 : 36 -> 24

@@ -2,23 +2,26 @@
 
 > `/System/Library/Audio/MIDI Drivers/AppleIDAMDriver.plugin/AppleIDAMDriver`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c34c` | `0x1c334` | **`-0x18`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -333.0.0.0.0
--  __TEXT.__text: 0x1c008
 +333.201.0.0.0
-+  __TEXT.__text: 0x1bfe8
-   __TEXT.__realtime: 0x4c4
-   __TEXT.__auth_stubs: 0x780
-   __TEXT.__const: 0x290
 Functions:
-~ sub_17670 : 1204 -> 1176
-~ sub_18aac -> sub_18a90 : 64 -> 68
-~ sub_1ac34 -> sub_1ac1c : 1392 -> 1384
+~ sub_178c0 : 1204 -> 1176
+~ sub_18cfc -> sub_18ce0 : 64 -> 76
+~ sub_1aee0 -> sub_1aed0 : 1392 -> 1384
 ```

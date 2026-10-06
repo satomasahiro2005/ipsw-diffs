@@ -2,83 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/CloudKitDaemon.framework/CloudKitDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3ec364` | `0x3ede34` | **`+0x1ad0`** |
+| `__TEXT.__cstring` | `0x2b11e` | `0x2b395` | **`+0x277`** |
+| `__TEXT.__oslogstring` | `0x32f64` | `0x330f8` | **`+0x194`** |
+| `__AUTH_CONST.__cfstring` | `0x238e0` | `0x23a20` | **`+0x140`** |
+| `__TEXT.__gcc_except_tab` | `0xc894` | `0xc988` | **`+0xf4`** |
+| `__AUTH_CONST.__objc_const` | `0x4ae60` | `0x4af20` | **`+0xc0`** |
+| `__TEXT.__objc_methlist` | `0x3177c` | `0x31834` | **`+0xb8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x13100` | `0x13180` | **`+0x80`** |
+| `__TEXT.__unwind_info` | `0xd1b8` | `0xd210` | **`+0x58`** |
+| `__DATA_CONST.__const` | `0x9a18` | `0x9a68` | **`+0x50`** |
+| `__AUTH_CONST.__const` | `0x53a8` | `0x5388` | **`-0x20`** |
+| `__DATA_DIRTY.__objc_ivar` | `0x1978` | `0x1984` | **`+0xc`** |
+| `__TEXT.__const` | `0x4e08` | `0x4e10` | **`+0x8`** |
+| `__DATA.__objc_ivar` | `0x1a90` | `0x1a94` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2720.14.0.0.0
--  __TEXT.__text: 0x3d9030
--  __TEXT.__objc_methlist: 0x3177c
--  __TEXT.__const: 0x4e08
 +2720.15.0.0.0
-+  __TEXT.__text: 0x3daaa0
-+  __TEXT.__objc_methlist: 0x31834
-+  __TEXT.__const: 0x4e10
-   __TEXT.__swift5_typeref: 0x21a1
--  __TEXT.__oslogstring: 0x32f64
-+  __TEXT.__oslogstring: 0x330f8
-   __TEXT.__swift5_capture: 0x918
-   __TEXT.__constg_swiftt: 0x1ac0
-   __TEXT.__swift5_reflstr: 0x1136
 
-   __TEXT.__swift_as_ret: 0x16c
-   __TEXT.__swift_as_cont: 0x23c
-   __TEXT.__swift5_protos: 0x38
--  __TEXT.__cstring: 0x2b11e
-+  __TEXT.__cstring: 0x2b395
-   __TEXT.__swift5_mpenum: 0x1c
--  __TEXT.__gcc_except_tab: 0xc894
-+  __TEXT.__gcc_except_tab: 0xc988
-   __TEXT.__ustring: 0x2c
--  __TEXT.__unwind_info: 0xecb0
-+  __TEXT.__unwind_info: 0xed08
-   __TEXT.__eh_frame: 0x3ba8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9a18
-+  __DATA_CONST.__const: 0x9a68
-   __DATA_CONST.__objc_classlist: 0x14f0
-   __DATA_CONST.__objc_catlist: 0x148
-   __DATA_CONST.__objc_protolist: 0x220
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x13100
-+  __DATA_CONST.__objc_selrefs: 0x13180
-   __DATA_CONST.__objc_protorefs: 0xa0
-   __DATA_CONST.__objc_superrefs: 0x13c8
-   __DATA_CONST.__objc_arraydata: 0x1558
-   __DATA_CONST.__got: 0x2090
--  __AUTH_CONST.__const: 0x53a8
--  __AUTH_CONST.__cfstring: 0x238e0
--  __AUTH_CONST.__objc_const: 0x4ae60
-+  __AUTH_CONST.__const: 0x5388
-+  __AUTH_CONST.__cfstring: 0x23a20
-+  __AUTH_CONST.__objc_const: 0x4af20
-   __AUTH_CONST.__objc_intobj: 0xcd8
-   __AUTH_CONST.__objc_arrayobj: 0x390
-   __AUTH_CONST.__objc_dictobj: 0xbe0
-   __AUTH_CONST.__auth_got: 0x2310
-   __AUTH.__objc_data: 0x5410
-   __AUTH.__data: 0x5d8
--  __DATA.__objc_ivar: 0x1a90
-+  __DATA.__objc_ivar: 0x1a94
-   __DATA.__data: 0x1ef0
-   __DATA.__common: 0xa0
--  __DATA_DIRTY.__objc_ivar: 0x1978
-+  __DATA_DIRTY.__objc_ivar: 0x1984
-   __DATA_DIRTY.__objc_data: 0x83c8
-   __DATA_DIRTY.__data: 0x2248
-   __DATA_DIRTY.__bss: 0x3880
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 20972
 +  Functions: 20995
-   Symbols:   3030
+
 -  CStrings:  8514
 +  CStrings:  8528
- 
 CStrings:
 + "Couldn't decrypt ancestor share %@: %@"
 + "Couldn't decrypt the share PCS for fetched zone %@: %@"

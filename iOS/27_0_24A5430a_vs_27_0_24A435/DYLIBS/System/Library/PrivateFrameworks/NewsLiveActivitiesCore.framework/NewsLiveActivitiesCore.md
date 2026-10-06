@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/NewsLiveActivitiesCore.framework/NewsLiveActivitiesCore`
 
-```diff
+### Section Size Changes
 
- 5934.3.0.0.0
--  __TEXT.__text: 0x1a5e3c
-+  __TEXT.__text: 0x1a5e6c
-   __TEXT.__objc_methlist: 0x2cc
-   __TEXT.__const: 0x23978
-   __TEXT.__swift5_typeref: 0xb66a
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1a5e3c` | `0x1a5e6c` | **`+0x30`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_2005e03fc -> sub_200c873fc : 1284 -> 1288
 ~ sub_2005e90dc -> sub_200c900e0 : 320 -> 324

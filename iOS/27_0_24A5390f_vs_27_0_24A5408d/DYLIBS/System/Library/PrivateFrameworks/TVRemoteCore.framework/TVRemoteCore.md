@@ -2,56 +2,34 @@
 
 > `/System/Library/PrivateFrameworks/TVRemoteCore.framework/TVRemoteCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x487b4` | `0x48670` | **`-0x144`** |
+| `__TEXT.__const` | `0x2a0` | `0x240` | **`-0x60`** |
+| `__TEXT.__cstring` | `0x3784` | `0x372c` | **`-0x58`** |
+| `__TEXT.__oslogstring` | `0x6b4c` | `0x6b90` | **`+0x44`** |
+| `__AUTH_CONST.__cfstring` | `0x4aa0` | `0x4a60` | **`-0x40`** |
+| `__TEXT.__gcc_except_tab` | `0xafc` | `0xb14` | **`+0x18`** |
+| `__DATA_CONST.__objc_arraydata` | `0x120` | `0x110` | **`-0x10`** |
+| `__TEXT.__objc_methlist` | `0x64e0` | `0x64d0` | **`-0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3098` | `0x3090` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x1218` | `0x1210` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -627.0.19.0.0
--  __TEXT.__text: 0x487b4
 +627.0.28.0.0
-+  __TEXT.__text: 0x48670
-   __TEXT.__lazy_helpers: 0x580
--  __TEXT.__objc_methlist: 0x64e0
--  __TEXT.__const: 0x2a0
--  __TEXT.__oslogstring: 0x6b4c
--  __TEXT.__cstring: 0x3784
--  __TEXT.__gcc_except_tab: 0xafc
--  __TEXT.__unwind_info: 0x1218
-+  __TEXT.__objc_methlist: 0x64d0
-+  __TEXT.__const: 0x240
-+  __TEXT.__oslogstring: 0x6b90
-+  __TEXT.__cstring: 0x372c
-+  __TEXT.__gcc_except_tab: 0xb14
-+  __TEXT.__unwind_info: 0x1210
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0xd8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3098
-+  __DATA_CONST.__objc_selrefs: 0x3090
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x210
--  __DATA_CONST.__objc_arraydata: 0x120
-+  __DATA_CONST.__objc_arraydata: 0x110
-   __DATA_CONST.__got: 0x470
-   __AUTH_CONST.__const: 0x480
--  __AUTH_CONST.__cfstring: 0x4aa0
-+  __AUTH_CONST.__cfstring: 0x4a60
-   __AUTH_CONST.__objc_const: 0x9f88
-   __AUTH_CONST.__lazy_load_got: 0x80
-   __AUTH_CONST.__objc_intobj: 0x288
-
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2138
--  Symbols:   4768
+-  Symbols:   3705
 -  CStrings:  1301
 +  Functions: 2139
-+  Symbols:   4765
++  Symbols:   3704
 +  CStrings:  1299
- 
 Symbols:
 + -[TVRCRPCompanionLinkClientWrapper _toggleCaptions:completion:]
 + GCC_except_table103
@@ -68,7 +46,6 @@ Symbols:
 + GCC_except_table90
 + GCC_except_table97
 + ___63-[TVRCRPCompanionLinkClientWrapper _toggleCaptions:completion:]_block_invoke
-+ _objc_msgSend$_toggleCaptions:completion:
 - -[TVRCMediaEventsManager supportedCaptionEvents]
 - -[TVRCRPCompanionLinkClientWrapper toggleCaptions:]
 - -[TVRCRapportMediaEventsManager supportedCaptionEvents]
@@ -85,9 +62,6 @@ Symbols:
 - GCC_except_table77
 - GCC_except_table88
 - GCC_except_table91
-- _objc_msgSend$currentSetting
-- _objc_msgSend$supportedCaptionEvents
-- _objc_msgSend$toggleCaptions:
 CStrings:
 + "Caption toggle send failed. error=%{public}@"
 + "Ignoring caption toggle event; current caption state is unknown. %@"

@@ -2,14 +2,15 @@
 
 > `/usr/lib/libform.5.4.dylib`
 
-```diff
+### Section Size Changes
 
- 81.0.0.0.0
--  __TEXT.__text: 0x8750
-+  __TEXT.__text: 0x8754
-   __TEXT.__const: 0x339
-   __TEXT.__cstring: 0x19
-   __TEXT.__unwind_info: 0x298
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x8750` | `0x8754` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2bff26fc4 -> sub_2c1f1bfc4 : 580 -> 584
+~ sub_2bfe4bfc4 -> sub_2c1e45fc4 : 580 -> 584
 ```

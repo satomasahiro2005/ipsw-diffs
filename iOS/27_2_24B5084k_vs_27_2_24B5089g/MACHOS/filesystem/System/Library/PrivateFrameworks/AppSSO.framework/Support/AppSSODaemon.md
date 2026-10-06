@@ -2,15 +2,14 @@
 
 > `/System/Library/PrivateFrameworks/AppSSO.framework/Support/AppSSODaemon`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -643.40.23.0.0
 +643.40.27.0.0
-   __TEXT.__text: 0x7e58
-   __TEXT.__auth_stubs: 0x4c0
-   __TEXT.__objc_stubs: 0x14a0
 ```

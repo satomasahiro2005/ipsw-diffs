@@ -2,15 +2,18 @@
 
 > `/usr/lib/swift/libswift_RegexParser.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x818e0` | `0x81894` | **`-0x4c`** |
+
+### Other Changes
+
 ```diff
 
 -6.4.0.27.101
--  __TEXT.__text: 0x818e0
 +6.4.0.31.4
-+  __TEXT.__text: 0x81894
-   __TEXT.__swift5_typeref: 0xc08
-   __TEXT.__const: 0x5da8
-   __TEXT.__swift5_capture: 0x258
 Functions:
 ~ _$s12_RegexParser0B0V13lexQuantBoundAA3ASTV4AtomV6NumberVSgyF : 996 -> 988
 ~ _$s12_RegexParser0B0V9lexNumberyAA3ASTV4AtomV0D0VSgAA9RadixKindOF : 1540 -> 1528

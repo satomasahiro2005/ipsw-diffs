@@ -2,9 +2,11 @@
 
 > `/System/Library/PrivateFrameworks/GenerativeExperiencesUI.framework/GenerativeExperiencesUI`
 
+### Other Changes
+
 ```text
 Functions:
-~ sub_266e074a4 -> sub_267b264a4 : 12 -> 24
-~ sub_266e074bc -> sub_267b264c8 : 16 -> 12
-~ sub_266e074dc -> sub_267b264e4 : 24 -> 16
+~ sub_266ce94a4 -> sub_267a024a4 : 12 -> 24
+~ sub_266ce94bc -> sub_267a024c8 : 16 -> 12
+~ sub_266ce94dc -> sub_267a024e4 : 24 -> 16
 ```

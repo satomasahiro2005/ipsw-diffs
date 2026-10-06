@@ -2,22 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/RenderBox.framework/archive.metallib`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__fragment` | `0xaa9e0` | `0xaabe0` | **`+0x200`** |
+| `__TEXT.__visible` | `0x117f0` | `0x118d0` | **`+0xe0`** |
+| `__TEXT.__vertex` | `0xb5c0` | `0xb610` | **`+0x50`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__metallib`
 - `__TEXT.__reflection`
-
-```diff
-
-   __TEXT.__metallib: 0x9aa0
-   __TEXT.__descriptor: 0x1140
--  __TEXT.__fragment: 0xa7170
--  __TEXT.__visible: 0x110f0
--  __TEXT.__vertex: 0xb110
-+  __TEXT.__fragment: 0xa72a0
-+  __TEXT.__visible: 0x11190
-+  __TEXT.__vertex: 0xb160
-   __TEXT.__reflection: 0x13120
-   Functions: 0
-   Symbols:   0
-```

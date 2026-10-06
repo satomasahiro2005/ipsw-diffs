@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/HealthOrchestration.framework/HealthOrchestration`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbd8d8` | `0xbd9a0` | **`+0xc8`** |
+| `__AUTH_CONST.__auth_got` | `0xd88` | `0xd80` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 7027.0.72.2.7
--  __TEXT.__text: 0xbd8d8
-+  __TEXT.__text: 0xbd9a0
-   __TEXT.__objc_methlist: 0x3d4
-   __TEXT.__const: 0x9028
-   __TEXT.__cstring: 0x99c
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x82e0
-   __AUTH_CONST.__objc_const: 0x3ca0
--  __AUTH_CONST.__auth_got: 0xd88
-+  __AUTH_CONST.__auth_got: 0xd80
-   __AUTH.__objc_data: 0x90
-   __AUTH.__data: 0xab0
-   __DATA.__data: 0x1568
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 4987
--  Symbols:   1490
-+  Symbols:   1489
-   CStrings:  124
- 
+-  Symbols:   1450
++  Symbols:   1449
 Symbols:
 - _swift_release_x10
 Functions:

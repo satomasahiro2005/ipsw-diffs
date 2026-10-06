@@ -2,29 +2,23 @@
 
 > `/usr/lib/libBasebandCommandDriversARI.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc1670` | `0xc14f4` | **`-0x17c`** |
+| `__TEXT.__gcc_except_tab` | `0xe298` | `0xe288` | **`-0x10`** |
+
+### Same-size Content Changes
+
+- `__TEXT.__cstring`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xc1670
-+  __TEXT.__text: 0xc14f4
-   __TEXT.__init_offsets: 0x14
-   __TEXT.__const: 0x8580
-   __TEXT.__cstring: 0x35ef
--  __TEXT.__gcc_except_tab: 0xe298
-+  __TEXT.__gcc_except_tab: 0xe288
-   __TEXT.__oslogstring: 0x26ef
-   __TEXT.__unwind_info: 0x39f8
-   __TEXT.__auth_stubs: 0x0
-Sections:
-~ __TEXT.__init_offsets : content changed
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA.__data : content changed
+-1570.0.0.0.0
++1576.0.0.0.0
 Functions:
 ~ __ZNSt3__111basic_regexIcNS_12regex_traitsIcEEE23__parse_expression_termIPKcEET_S7_S7_PNS_20__bracket_expressionIcS2_EE : 1380 -> 1332
 ~ __ZNSt3__111basic_regexIcNS_12regex_traitsIcEEE25__parse_equivalence_classIPKcEET_S7_S7_PNS_20__bracket_expressionIcS2_EE : 668 -> 628
@@ -45,5 +39,4 @@ Functions:
 CStrings:
 + "AppleBasebandManager-AppleBasebandServices_Manager-1576"
 - "AppleBasebandManager-AppleBasebandServices_Manager-1570"
-
 ```

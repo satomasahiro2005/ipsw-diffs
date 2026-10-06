@@ -2,15 +2,18 @@
 
 > `/System/Library/Frameworks/CoreTelephony.framework/Support/libCommCenterKCommandDrivers.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14a29c` | `0x14a38c` | **`+0xf0`** |
+
+### Other Changes
+
 ```diff
 
 -13487.6.0.0.0
--  __TEXT.__text: 0x14a29c
 +13487.7.0.0.0
-+  __TEXT.__text: 0x14a38c
-   __TEXT.__const: 0x1acf4
-   __TEXT.__gcc_except_tab: 0x16abc
-   __TEXT.__cstring: 0x5fe7
 Functions:
 ~ ____ZN3ice6detail17wrapEventCallbackIZNS_6Client15setEventHandlerI26PartialActiveCommandDriver29IBIPartialActiveCommandDrivervJEEEvNS2_5EventENSt3__110shared_ptrIT_EEMT0_FT1_DpT2_EEUlvE_vEEN8dispatch5blockIU13block_pointerFiP16dispatch_group_sEEENS7_17integral_constantIiLi0EEEOS9__block_invoke : 184 -> 188
 ~ ____ZN3ice6detail12wrapCallbackIZNS_6Client13regIndicationI26PartialActiveCommandDriver29IBIPartialActiveCommandDrivervJPKhjEEEvjNSt3__110shared_ptrIT_EEMT0_FT1_DpT2_EEUlS7_jE_vEEN8dispatch5blockIU13block_pointerFiPhjEEENS8_17integral_constantIiLi2EEEOSA__block_invoke : 212 -> 216

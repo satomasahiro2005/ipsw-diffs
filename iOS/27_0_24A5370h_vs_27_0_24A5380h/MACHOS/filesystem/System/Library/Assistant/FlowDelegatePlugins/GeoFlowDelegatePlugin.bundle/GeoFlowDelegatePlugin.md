@@ -2,96 +2,60 @@
 
 > `/System/Library/Assistant/FlowDelegatePlugins/GeoFlowDelegatePlugin.bundle/GeoFlowDelegatePlugin`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xb20e4` | `0xb2d00` | **`+0xc1c`** |
+| `__DATA.__bss` | `0x9c80` | `0xa080` | **`+0x400`** |
+| `__TEXT.__const` | `0x82c8` | `0x8588` | **`+0x2c0`** |
+| `__DATA_CONST.__const` | `0x5568` | `0x5690` | **`+0x128`** |
+| `__TEXT.__eh_frame` | `0x5874` | `0x590c` | **`+0x98`** |
+| `__TEXT.__unwind_info` | `0x2a18` | `0x2a70` | **`+0x58`** |
+| `__TEXT.__swift5_typeref` | `0x22ae` | `0x2304` | **`+0x56`** |
+| `__DATA.__data` | `0x4da8` | `0x4df8` | **`+0x50`** |
+| `__TEXT.__swift5_fieldmd` | `0x236c` | `0x23bc` | **`+0x50`** |
+| `__TEXT.__constg_swiftt` | `0x2b1c` | `0x2b5c` | **`+0x40`** |
+| `__TEXT.__swift5_reflstr` | `0x1e04` | `0x1e34` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x3714` | `0x3734` | **`+0x20`** |
+| `__TEXT.__swift5_proto` | `0x534` | `0x554` | **`+0x20`** |
+| `__TEXT.__auth_stubs` | `0x35d0` | `0x35c0` | **`-0x10`** |
+| `__DATA_CONST.__auth_got` | `0x1af0` | `0x1ae8` | **`-0x8`** |
+| `__DATA_CONST.__auth_ptr` | `0xd88` | `0xd90` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x8f8` | `0x900` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x278` | `0x280` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_assocty`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+- `__TEXT.__swift_as_ret`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xb20e4
--  __TEXT.__auth_stubs: 0x35d0
-+  __TEXT.__text: 0xb2d00
-+  __TEXT.__auth_stubs: 0x35c0
-   __TEXT.__objc_stubs: 0xae0
-   __TEXT.__objc_methlist: 0x348
--  __TEXT.__const: 0x82c8
--  __TEXT.__cstring: 0x3714
--  __TEXT.__swift5_typeref: 0x22ae
-+  __TEXT.__const: 0x8588
-+  __TEXT.__cstring: 0x3734
-+  __TEXT.__swift5_typeref: 0x2304
-   __TEXT.__swift5_capture: 0x70c
-   __TEXT.__oslogstring: 0x27e9
-   __TEXT.__objc_methtype: 0x39c
--  __TEXT.__swift5_reflstr: 0x1e04
-+  __TEXT.__swift5_reflstr: 0x1e34
-   __TEXT.__swift5_assocty: 0x8b0
-   __TEXT.__objc_classname: 0xd61
-   __TEXT.__objc_methname: 0xd53
--  __TEXT.__constg_swiftt: 0x2b1c
--  __TEXT.__swift5_fieldmd: 0x236c
-+  __TEXT.__constg_swiftt: 0x2b5c
-+  __TEXT.__swift5_fieldmd: 0x23bc
-   __TEXT.__swift5_builtin: 0x168
-   __TEXT.__swift5_mpenum: 0x58
--  __TEXT.__swift5_proto: 0x534
--  __TEXT.__swift5_types: 0x278
-+  __TEXT.__swift5_proto: 0x554
-+  __TEXT.__swift5_types: 0x280
-   __TEXT.__swift_as_entry: 0x3a8
-   __TEXT.__swift_as_ret: 0x3fc
-   __TEXT.__swift_as_cont: 0x3c8
-   __TEXT.__swift5_protos: 0x20
--  __TEXT.__unwind_info: 0x2a18
--  __TEXT.__eh_frame: 0x5874
--  __DATA_CONST.__const: 0x5568
-+  __TEXT.__unwind_info: 0x2a70
-+  __TEXT.__eh_frame: 0x590c
-+  __DATA_CONST.__const: 0x5690
-   __DATA_CONST.__objc_classlist: 0x170
-   __DATA_CONST.__objc_protolist: 0xa8
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x58
--  __DATA_CONST.__auth_got: 0x1af0
--  __DATA_CONST.__got: 0x8f8
--  __DATA_CONST.__auth_ptr: 0xd88
-+  __DATA_CONST.__auth_got: 0x1ae8
-+  __DATA_CONST.__got: 0x900
-+  __DATA_CONST.__auth_ptr: 0xd90
-   __DATA.__objc_const: 0x3df0
-   __DATA.__objc_selrefs: 0x408
-   __DATA.__objc_data: 0x5a8
--  __DATA.__data: 0x4da8
--  __DATA.__bss: 0x9c80
-+  __DATA.__data: 0x4df8
-+  __DATA.__bss: 0xa080
-   __DATA.__common: 0x230
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreLocation.framework/CoreLocation
+-3600.36.4.0.0
++3600.36.10.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3427
--  Symbols:   28626
--  CStrings:  881
+-  Symbols:   10493
+-  CStrings:  878
 +  Functions: 3461
-+  Symbols:   28901
-+  CStrings:  883
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_capture : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA.__objc_const : content changed
-~ __DATA.__objc_selrefs : content changed
-~ __DATA.__objc_data : content changed
-~ __DATA.__common : content changed
++  Symbols:   10586
++  CStrings:  880
 Symbols:
 + $s21GeoFlowDelegatePlugin0A10DataModelsO022PlaceDisambiguationMapE5ModelV12tapURLStringSSvM.resume
 + _$s10Foundation4DataVACSEAAWL
@@ -213,5 +177,4 @@ Symbols:
 CStrings:
 + "singlePlaceInform"
 + "tapURLString"
-
 ```

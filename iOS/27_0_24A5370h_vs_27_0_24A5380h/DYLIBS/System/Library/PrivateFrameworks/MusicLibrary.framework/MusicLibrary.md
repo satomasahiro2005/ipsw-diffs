@@ -2,94 +2,35 @@
 
 > `/System/Library/PrivateFrameworks/MusicLibrary.framework/MusicLibrary`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x2080` | `0x3070` | **`+0xff0`** |
+| `__DATA_DIRTY.__objc_data` | `0x25d0` | `0x15e0` | **`-0xff0`** |
+| `__TEXT.__text` | `0x3b3c0c` | `0x3b4984` | **`+0xd78`** |
+| `__TEXT.__cstring` | `0x74be4` | `0x74db0` | **`+0x1cc`** |
+| `__TEXT.__gcc_except_tab` | `0x143ac` | `0x144ec` | **`+0x140`** |
+| `__AUTH_CONST.__cfstring` | `0x28620` | `0x28700` | **`+0xe0`** |
+| `__TEXT.__oslogstring` | `0x1d587` | `0x1d65c` | **`+0xd5`** |
+| `__DATA_CONST.__const` | `0x9d28` | `0x9dc8` | **`+0xa0`** |
+| `__DATA_CONST.__got` | `0xb28` | `0xb38` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x72f8` | `0x72e8` | **`-0x10`** |
+| `__DATA_CONST.__objc_arraydata` | `0x1410` | `0x1418` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x3b3c0c
-+  __TEXT.__text: 0x3b4984
-   __TEXT.__objc_methlist: 0xe714
-   __TEXT.__const: 0x25d4c
-   __TEXT.__dlopen_cstrs: 0x2d1
--  __TEXT.__gcc_except_tab: 0x143ac
--  __TEXT.__cstring: 0x74be4
--  __TEXT.__oslogstring: 0x1d587
-+  __TEXT.__gcc_except_tab: 0x144ec
-+  __TEXT.__cstring: 0x74db0
-+  __TEXT.__oslogstring: 0x1d65c
-   __TEXT.__ustring: 0x210
--  __TEXT.__unwind_info: 0x72f8
-+  __TEXT.__unwind_info: 0x72e8
-   __TEXT.__eh_frame: 0x50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9d28
-+  __DATA_CONST.__const: 0x9dc8
-   __DATA_CONST.__objc_classlist: 0x708
-   __DATA_CONST.__objc_catlist: 0x50
-   __DATA_CONST.__objc_protolist: 0xa8
+-4026.100.68.0.0
++4026.100.72.0.0
 
-   __DATA_CONST.__objc_selrefs: 0x7008
-   __DATA_CONST.__objc_protorefs: 0x30
-   __DATA_CONST.__objc_superrefs: 0x520
--  __DATA_CONST.__objc_arraydata: 0x1410
--  __DATA_CONST.__got: 0xb28
-+  __DATA_CONST.__objc_arraydata: 0x1418
-+  __DATA_CONST.__got: 0xb38
-   __AUTH_CONST.__const: 0x19420
--  __AUTH_CONST.__cfstring: 0x28620
-+  __AUTH_CONST.__cfstring: 0x28700
-   __AUTH_CONST.__objc_const: 0x159f0
-   __AUTH_CONST.__weak_auth_got: 0x20
-   __AUTH_CONST.__objc_arrayobj: 0x22c8
-
-   __AUTH_CONST.__objc_dictobj: 0xf0
-   __AUTH_CONST.__objc_doubleobj: 0x20
-   __AUTH_CONST.__auth_got: 0xff0
--  __AUTH.__objc_data: 0x2080
-+  __AUTH.__objc_data: 0x3070
-   __AUTH.__data: 0x118
-   __DATA.__objc_ivar: 0xf2c
-   __DATA.__data: 0x1708
-   __DATA.__bss: 0xe40
-   __DATA.__common: 0xb20
--  __DATA_DIRTY.__objc_data: 0x25d0
-+  __DATA_DIRTY.__objc_data: 0x15e0
-   __DATA_DIRTY.__data: 0x80
-   __DATA_DIRTY.__bss: 0x10d0
-   __DATA_DIRTY.__common: 0x38
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 8468
--  Symbols:   25933
--  CStrings:  12679
+-  Symbols:   14711
+-  CStrings:  7516
 +  Functions: 8472
-+  Symbols:   25948
-+  CStrings:  12697
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__const : content changed
-~ __TEXT.__eh_frame : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__data : content changed
++  Symbols:   14721
++  CStrings:  7527
 Symbols:
 + GCC_except_table1130
 + GCC_except_table1141
@@ -1271,5 +1212,4 @@ CStrings:
 - "SELECT album, sort_album, feed_url, rowid, grouping_key, album_artist_pid, season_number, all_compilations, user_rating, liked_state, album_year, (CASE WHEN season_number > 0 THEN season_number ELSE IFNULL(sort_album, album) END), contains_classical_work, user_rating_is_derived, sync_id, classical_experience_available, store_id, liked_state_changed_date, cloud_library_id, editorial_notes, date_released, is_prerelease, release_event_aux_info, album_type, content_timestamp, expected_release_date  FROM album "
 - "SELECT album, sort_album, feed_url, user_rating, liked_state, all_compilations, season_number, representative_item_pid, grouping_key, album_year, contains_classical_work, user_rating_is_derived, sync_id, classical_experience_available, liked_state_changed_date, store_id, cloud_library_id, album_artist_pid, editorial_notes, date_released, is_prerelease, release_event_aux_info, album_type, content_timestamp, expected_release_date FROM album WHERE album_pid=?"
 - "SELECT album, sort_album, feed_url, user_rating, liked_state, liked_state_changed_date, all_compilations, season_number, representative_item_pid, grouping_key, album_year, contains_classical_work, user_rating_is_derived, sync_id, store_id, cloud_library_id, classical_experience_available, album_artist_pid, editorial_notes, date_released, is_prerelease, release_event_aux_info, album_type, content_timestamp, expected_release_date FROM album WHERE album_pid=?"
-
 ```

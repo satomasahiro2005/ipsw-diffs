@@ -2,118 +2,54 @@
 
 > `/System/Library/PrivateFrameworks/Email.framework/Email`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xd3e58` | `0xd6ea0` | **`+0x3048`** |
+| `__DATA.__bss` | `0x1ce0` | `0x23c0` | **`+0x6e0`** |
+| `__TEXT.__const` | `0x14bc` | `0x18bc` | **`+0x400`** |
+| `__DATA_DIRTY.__objc_data` | `0x3470` | `0x3808` | **`+0x398`** |
+| `__AUTH.__objc_data` | `0x470` | `0x1b0` | **`-0x2c0`** |
+| `__AUTH_CONST.__const` | `0x1bb0` | `0x1e40` | **`+0x290`** |
+| `__TEXT.__oslogstring` | `0x6583` | `0x67a3` | **`+0x220`** |
+| `__TEXT.__swift5_fieldmd` | `0x4c4` | `0x610` | **`+0x14c`** |
+| `__TEXT.__unwind_info` | `0x8008` | `0x8140` | **`+0x138`** |
+| `__TEXT.__eh_frame` | `0x200` | `0x328` | **`+0x128`** |
+| `__TEXT.__cstring` | `0xc0cf` | `0xc1df` | **`+0x110`** |
+| `__TEXT.__gcc_except_tab` | `0x1ad64` | `0x1ae48` | **`+0xe4`** |
+| `__TEXT.__swift5_reflstr` | `0x32f` | `0x40f` | **`+0xe0`** |
+| `__TEXT.__constg_swiftt` | `0x464` | `0x538` | **`+0xd4`** |
+| `__AUTH_CONST.__cfstring` | `0xa360` | `0xa420` | **`+0xc0`** |
+| `__TEXT.__swift5_typeref` | `0x3cc` | `0x486` | **`+0xba`** |
+| `__DATA.__data` | `0x2978` | `0x2a28` | **`+0xb0`** |
+| `__AUTH_CONST.__objc_const` | `0x16d88` | `0x16e08` | **`+0x80`** |
+| `__TEXT.__objc_methlist` | `0xcfac` | `0xd02c` | **`+0x80`** |
+| `__AUTH_CONST.__auth_got` | `0xb20` | `0xb88` | **`+0x68`** |
+| `__TEXT.__swift5_proto` | `0xf8` | `0x130` | **`+0x38`** |
+| `__DATA_CONST.__got` | `0xc70` | `0xc98` | **`+0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0x6248` | `0x6270` | **`+0x28`** |
+| `__DATA_DIRTY.__data` | `0x230` | `0x250` | **`+0x20`** |
+| `__TEXT.__ustring` | `0x154` | `0x170` | **`+0x1c`** |
+| `__TEXT.__swift5_types` | `0x68` | `0x7c` | **`+0x14`** |
+| `__DATA_CONST.__const` | `0x4598` | `0x45a8` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0xac0` | `0xad0` | **`+0x10`** |
+| `__TEXT.__swift5_capture` | `0x38` | `0x48` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x580` | `0x588` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xd3e58
--  __TEXT.__objc_methlist: 0xcfac
--  __TEXT.__gcc_except_tab: 0x1ad64
--  __TEXT.__const: 0x14bc
--  __TEXT.__cstring: 0xc0cf
--  __TEXT.__oslogstring: 0x6583
-+  __TEXT.__text: 0xd6ea0
-+  __TEXT.__objc_methlist: 0xd02c
-+  __TEXT.__gcc_except_tab: 0x1ae48
-+  __TEXT.__const: 0x18bc
-+  __TEXT.__cstring: 0xc1df
-+  __TEXT.__oslogstring: 0x67a3
-   __TEXT.__dlopen_cstrs: 0x10a
--  __TEXT.__ustring: 0x154
--  __TEXT.__swift5_typeref: 0x3cc
--  __TEXT.__constg_swiftt: 0x464
-+  __TEXT.__ustring: 0x170
-+  __TEXT.__swift5_typeref: 0x486
-+  __TEXT.__constg_swiftt: 0x538
-   __TEXT.__swift5_builtin: 0xa0
--  __TEXT.__swift5_reflstr: 0x32f
--  __TEXT.__swift5_fieldmd: 0x4c4
-+  __TEXT.__swift5_reflstr: 0x40f
-+  __TEXT.__swift5_fieldmd: 0x610
-   __TEXT.__swift5_assocty: 0x120
--  __TEXT.__swift5_proto: 0xf8
--  __TEXT.__swift5_types: 0x68
--  __TEXT.__swift5_capture: 0x38
-+  __TEXT.__swift5_proto: 0x130
-+  __TEXT.__swift5_types: 0x7c
-+  __TEXT.__swift5_capture: 0x48
-   __TEXT.__swift5_protos: 0x4
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x8008
--  __TEXT.__eh_frame: 0x200
-+  __TEXT.__unwind_info: 0x8140
-+  __TEXT.__eh_frame: 0x328
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4598
--  __DATA_CONST.__objc_classlist: 0x580
-+  __DATA_CONST.__const: 0x45a8
-+  __DATA_CONST.__objc_classlist: 0x588
-   __DATA_CONST.__objc_catlist: 0x78
-   __DATA_CONST.__objc_protolist: 0x340
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x6248
-+  __DATA_CONST.__objc_selrefs: 0x6270
-   __DATA_CONST.__objc_protorefs: 0x118
-   __DATA_CONST.__objc_superrefs: 0x478
-   __DATA_CONST.__objc_arraydata: 0x1e8
--  __DATA_CONST.__got: 0xc70
--  __AUTH_CONST.__const: 0x1bb0
--  __AUTH_CONST.__cfstring: 0xa360
--  __AUTH_CONST.__objc_const: 0x16d88
-+  __DATA_CONST.__got: 0xc98
-+  __AUTH_CONST.__const: 0x1e40
-+  __AUTH_CONST.__cfstring: 0xa420
-+  __AUTH_CONST.__objc_const: 0x16e08
-   __AUTH_CONST.__objc_intobj: 0x348
-   __AUTH_CONST.__objc_arrayobj: 0x108
-   __AUTH_CONST.__objc_dictobj: 0x50
--  __AUTH_CONST.__auth_got: 0xb20
--  __AUTH.__objc_data: 0x470
-+  __AUTH_CONST.__auth_got: 0xb88
-+  __AUTH.__objc_data: 0x1b0
-   __AUTH.__data: 0x158
-   __DATA.__objc_ivar: 0xc44
--  __DATA.__data: 0x2978
--  __DATA.__bss: 0x1ce0
--  __DATA_DIRTY.__objc_data: 0x3470
--  __DATA_DIRTY.__data: 0x230
--  __DATA_DIRTY.__bss: 0xac0
-+  __DATA.__data: 0x2a28
-+  __DATA.__bss: 0x23c0
-+  __DATA_DIRTY.__objc_data: 0x3808
-+  __DATA_DIRTY.__data: 0x250
-+  __DATA_DIRTY.__bss: 0xad0
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-   - /System/Library/Frameworks/Contacts.framework/Contacts
+-3893.100.7.0.0
++3895.100.17.2.1
 
-   - /usr/lib/swift/libswift_DarwinFoundation1.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 5026
--  Symbols:   18331
--  CStrings:  3433
+-  Symbols:   8894
+-  CStrings:  2130
 +  Functions: 5136
-+  Symbols:   18405
-+  CStrings:  3455
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA.__objc_ivar : content changed
++  Symbols:   8936
++  CStrings:  2147
 Symbols:
 + -[EMDiagnosticInfoGatherer downloadLimitDiagnosticsWithCompletionHandler:]
 + -[EMDiagnosticInfoGatherer(DonationVisualizationDebugging) donationVisualizationDataWithCompletionHandler:]
@@ -147,12 +83,6 @@ Symbols:
 + _associated conformance 5Email26EMDownloadLimitDiagnosticsV7AccountV10CodingKeys33_3EAB6CF011A973CBB1484E4E568085C7LLOSHAASQ
 + _associated conformance 5Email26EMDownloadLimitDiagnosticsV7AccountV10CodingKeys33_3EAB6CF011A973CBB1484E4E568085C7LLOs0F3KeyAAs23CustomStringConvertible
 + _associated conformance 5Email26EMDownloadLimitDiagnosticsV7AccountV10CodingKeys33_3EAB6CF011A973CBB1484E4E568085C7LLOs0F3KeyAAs28CustomDebugStringConvertible
-+ _objc_msgSend$currentUserParticipant
-+ _objc_msgSend$donationVisualizationDataWithCompletionHandler:
-+ _objc_msgSend$donationVisualizationMessageDetailsForDatabaseID:completionHandler:
-+ _objc_msgSend$downloadLimitDiagnosticsWithCompletionHandler:
-+ _objc_msgSend$groupList
-+ _objc_msgSend$phoneNumber
 + _swift_initStackObject
 + _swift_setDeallocating
 + _symbolic Say_____G 5Email26EMDownloadLimitDiagnosticsV7AccountV
@@ -211,5 +141,4 @@ CStrings:
 - "HasCompletedAppleIntelligenceOnboarding"
 - "ReplyTo address Request %@ for recipient:%@ hmeAddress:%@"
 - "Unable to create a secure connection to the server (”%1$@” %2$@)."
-
 ```

@@ -2,64 +2,32 @@
 
 > `/System/Library/PrivateFrameworks/ProactiveSupport.framework/ProactiveSupport`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5f914` | `0x5f010` | **`-0x904`** |
+| `__AUTH_CONST.__const` | `0xcc0` | `0xf80` | **`+0x2c0`** |
+| `__DATA_CONST.__const` | `0x19e0` | `0x1840` | **`-0x1a0`** |
+| `__TEXT.__cstring` | `0x5fd3` | `0x607e` | **`+0xab`** |
+| `__TEXT.__gcc_except_tab` | `0x17e0` | `0x1754` | **`-0x8c`** |
+| `__AUTH_CONST.__cfstring` | `0x4440` | `0x4400` | **`-0x40`** |
+| `__TEXT.__unwind_info` | `0x19e8` | `0x19c0` | **`-0x28`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2228` | `0x2220` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -423.0.1.0.0
--  __TEXT.__text: 0x5d788
 +424.0.0.0.0
-+  __TEXT.__text: 0x5ce78
-   __TEXT.__objc_methlist: 0x3c44
-   __TEXT.__const: 0xd0c
-   __TEXT.__objc_databytes: 0x1
 
-   __TEXT.__swift_as_entry: 0xc
-   __TEXT.__swift_as_ret: 0x10
-   __TEXT.__swift_as_cont: 0xc
--  __TEXT.__cstring: 0x5fd3
--  __TEXT.__gcc_except_tab: 0x17e0
-+  __TEXT.__cstring: 0x607e
-+  __TEXT.__gcc_except_tab: 0x1754
-   __TEXT.__oslogstring: 0x42fc
-   __TEXT.__ustring: 0x13c
--  __TEXT.__unwind_info: 0x1ef0
-+  __TEXT.__unwind_info: 0x1ed0
-   __TEXT.__eh_frame: 0x450
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x19e0
-+  __DATA_CONST.__const: 0x1840
-   __DATA_CONST.__objc_classlist: 0x338
-   __DATA_CONST.__objc_catlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x48
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2228
-+  __DATA_CONST.__objc_selrefs: 0x2220
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x218
-   __DATA_CONST.__objc_arraydata: 0x18
-   __DATA_CONST.__got: 0x620
--  __AUTH_CONST.__const: 0xcc0
--  __AUTH_CONST.__cfstring: 0x4440
-+  __AUTH_CONST.__const: 0xf80
-+  __AUTH_CONST.__cfstring: 0x4400
-   __AUTH_CONST.__objc_const: 0x6aa0
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x18
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
 -  Functions: 1907
--  Symbols:   4449
+-  Symbols:   3687
 -  CStrings:  1061
 +  Functions: 1903
-+  Symbols:   4434
++  Symbols:   3672
 +  CStrings:  1064
- 
 Symbols:
 + -[_PASLPReaderV1 _decodeDictionaryKeyValue:errMsg:context:handleString:]
 + -[_PASLPReaderV1 _decodeValue:errMsg:context:handleBoolean:handleTaggedInt:handleBoxedInt:handleTaggedFloat:handleBoxedFloat:handleDate:handleData:handleString:handleDict:handleArray:]

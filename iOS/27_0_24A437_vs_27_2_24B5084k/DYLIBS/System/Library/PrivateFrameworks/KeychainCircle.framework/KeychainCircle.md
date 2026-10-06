@@ -2,76 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/KeychainCircle.framework/KeychainCircle`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x298f4` | `0x29b18` | **`+0x224`** |
+| `__AUTH_CONST.__objc_const` | `0x2c10` | `0x2d90` | **`+0x180`** |
+| `__AUTH_CONST.__cfstring` | `0x3a80` | `0x3b60` | **`+0xe0`** |
+| `__TEXT.__cstring` | `0x36fb` | `0x37c6` | **`+0xcb`** |
+| `__AUTH.__objc_data` | `0x5a0` | `0x640` | **`+0xa0`** |
+| `__TEXT.__objc_methlist` | `0x1e2c` | `0x1ebc` | **`+0x90`** |
+| `__DATA.__data` | `0x320` | `0x380` | **`+0x60`** |
+| `__DATA_DIRTY.__objc_data` | `0xf0` | `0xa0` | **`-0x50`** |
+| `__DATA_CONST.__const` | `0x1288` | `0x12c0` | **`+0x38`** |
+| `__AUTH_CONST.__const` | `0x1e0` | `0x200` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0x7f0` | `0x810` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x1200` | `0x121c` | **`+0x1c`** |
+| `__DATA.__bss` | `0x170` | `0x180` | **`+0x10`** |
+| `__DATA_CONST.__objc_superrefs` | `0x88` | `0x98` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x214` | `0x21c` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x2e8` | `0x2f0` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0xa8` | `0xb0` | **`+0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x38` | `0x40` | **`+0x8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1078` | `0x1080` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -62460.2.3.0.0
--  __TEXT.__text: 0x28f58
 +62460.40.49.502.1
-+  __TEXT.__text: 0x29134
-   __TEXT.__lazy_helpers: 0x1a4
--  __TEXT.__objc_methlist: 0x1e2c
-+  __TEXT.__objc_methlist: 0x1ebc
-   __TEXT.__const: 0xe0
-   __TEXT.__dlopen_cstrs: 0xae
--  __TEXT.__gcc_except_tab: 0x1200
--  __TEXT.__cstring: 0x36fb
-+  __TEXT.__gcc_except_tab: 0x121c
-+  __TEXT.__cstring: 0x37c6
-   __TEXT.__oslogstring: 0x3ac2
-   __TEXT.__ustring: 0x32
--  __TEXT.__unwind_info: 0x990
-+  __TEXT.__unwind_info: 0x9b8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x1288
--  __DATA_CONST.__objc_classlist: 0xa8
-+  __DATA_CONST.__const: 0x12c0
-+  __DATA_CONST.__objc_classlist: 0xb0
-   __DATA_CONST.__objc_catlist: 0x20
--  __DATA_CONST.__objc_protolist: 0x38
-+  __DATA_CONST.__objc_protolist: 0x40
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1078
-+  __DATA_CONST.__objc_selrefs: 0x1080
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x88
--  __DATA_CONST.__got: 0x2e8
--  __AUTH_CONST.__const: 0x1e0
--  __AUTH_CONST.__cfstring: 0x3a80
--  __AUTH_CONST.__objc_const: 0x2c10
-+  __DATA_CONST.__objc_superrefs: 0x98
-+  __DATA_CONST.__got: 0x2f0
-+  __AUTH_CONST.__const: 0x200
-+  __AUTH_CONST.__cfstring: 0x3b60
-+  __AUTH_CONST.__objc_const: 0x2d90
-   __AUTH_CONST.__lazy_load_got: 0x28
-   __AUTH_CONST.__objc_intobj: 0x60
-   __AUTH_CONST.__auth_got: 0x840
--  __AUTH.__objc_data: 0x5a0
--  __DATA.__objc_ivar: 0x214
--  __DATA.__data: 0x320
--  __DATA_DIRTY.__objc_data: 0xf0
-+  __AUTH.__objc_data: 0x640
-+  __DATA.__objc_ivar: 0x21c
-+  __DATA.__data: 0x380
-+  __DATA_DIRTY.__objc_data: 0xa0
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 779
--  Symbols:   2241
+-  Symbols:   1853
 -  CStrings:  797
 +  Functions: 786
-+  Symbols:   2276
++  Symbols:   1886
 +  CStrings:  804
- 
 Symbols:
 + +[AAFAnalyticsEventSecurity reporterRTCAdapter]
 + +[AAFAnalyticsEventSecurity setReporterRTCAdapter:]
@@ -125,11 +92,6 @@ Symbols:
 + _kSecurityRTCFieldMachineRecordAllowed
 + _kSecurityRTCFieldStableIDDuplicateDeviceCount
 + _kSecurityRTCFieldStableTrustedDeviceIDInclusionEnabled
-+ _objc_msgSend$initWithMetrics:session:eventName:
-+ _objc_msgSend$initWithMetrics:session:eventName:canSendMetrics:
-+ _objc_msgSend$initWithSession:eventName:
-+ _objc_msgSend$reporterRTCAdapter
-+ _objc_msgSend$sessionInfoWithAltDSID:flowID:deviceSessionID:
 + _reporterRTCAdapter.defaultAdapter
 + _reporterRTCAdapter.onceToken
 + _sendEvent:.onceToken
@@ -155,9 +117,6 @@ Symbols:
 - ___52+[SecurityAnalyticsReporterRTC rtcAnalyticsReporter]_block_invoke
 - _kSecurityRTCEventNameTDLDuplicateStableID
 - _metricsAreEnabled
-- _objc_msgSend$areTestsEnabled
-- _objc_msgSend$initWithKeychainCircleMetrics:altDSID:flowID:deviceSessionID:eventName:testsAreEnabled:canSendMetrics:category:
-- _objc_msgSend$rtcAnalyticsReporter
 - _rtcAnalyticsReporter.onceToken
 - _rtcAnalyticsReporter.rtcReporter
 CStrings:

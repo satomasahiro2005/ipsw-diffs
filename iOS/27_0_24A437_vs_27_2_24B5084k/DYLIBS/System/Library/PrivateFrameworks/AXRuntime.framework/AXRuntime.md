@@ -2,67 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/AXRuntime.framework/AXRuntime`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4e6dc` | `0x4e78c` | **`+0xb0`** |
+| `__TEXT.__oslogstring` | `0x16f9` | `0x1792` | **`+0x99`** |
+| `__TEXT.__cstring` | `0x5dc3` | `0x5d92` | **`-0x31`** |
+| `__TEXT.__gcc_except_tab` | `0xba0` | `0xb7c` | **`-0x24`** |
+| `__AUTH_CONST.__const` | `0xbc8` | `0xba8` | **`-0x20`** |
+| `__DATA_DIRTY.__bss` | `0x2f8` | `0x2d8` | **`-0x20`** |
+| `__TEXT.__unwind_info` | `0x1390` | `0x13b0` | **`+0x20`** |
+| `__AUTH_CONST.__objc_intobj` | `0x1650` | `0x1668` | **`+0x18`** |
+| `__TEXT.__dlopen_cstrs` | `0x31a` | `0x303` | **`-0x17`** |
+| `__DATA.__bss` | `0x308` | `0x318` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xab0` | `0xab8` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x2e8` | `0x2e0` | **`-0x8`** |
+| `__TEXT.__objc_methlist` | `0x3954` | `0x395c` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3240.9.0.0.0
--  __TEXT.__text: 0x4ce04
--  __TEXT.__objc_methlist: 0x3954
 +3245.7.1.0.0
-+  __TEXT.__text: 0x4cea8
-+  __TEXT.__objc_methlist: 0x395c
-   __TEXT.__const: 0x458
--  __TEXT.__dlopen_cstrs: 0x31a
--  __TEXT.__gcc_except_tab: 0xba0
--  __TEXT.__oslogstring: 0x16f9
--  __TEXT.__cstring: 0x5dc3
-+  __TEXT.__dlopen_cstrs: 0x303
-+  __TEXT.__gcc_except_tab: 0xb7c
-+  __TEXT.__oslogstring: 0x1792
-+  __TEXT.__cstring: 0x5d92
-   __TEXT.__ustring: 0x4
--  __TEXT.__unwind_info: 0x1788
-+  __TEXT.__unwind_info: 0x1798
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_selrefs: 0x2440
-   __DATA_CONST.__objc_superrefs: 0xa8
-   __DATA_CONST.__objc_arraydata: 0xc0
--  __DATA_CONST.__got: 0x2e8
--  __AUTH_CONST.__const: 0xbc8
-+  __DATA_CONST.__got: 0x2e0
-+  __AUTH_CONST.__const: 0xba8
-   __AUTH_CONST.__cfstring: 0x5120
-   __AUTH_CONST.__objc_const: 0x3a28
--  __AUTH_CONST.__objc_intobj: 0x1650
-+  __AUTH_CONST.__objc_intobj: 0x1668
-   __AUTH_CONST.__objc_arrayobj: 0x90
-   __AUTH_CONST.__objc_doubleobj: 0x20
--  __AUTH_CONST.__auth_got: 0xab0
-+  __AUTH_CONST.__auth_got: 0xab8
-   __AUTH.__objc_data: 0x640
-   __DATA.__objc_ivar: 0x240
-   __DATA.__data: 0x8c0
-   __DATA.__common: 0x30
-   __DATA_DIRTY.__objc_data: 0x2d0
-   __DATA_DIRTY.__data: 0x50
--  __DATA_DIRTY.__bss: 0x2f8
-+  __DATA_DIRTY.__bss: 0x2d8
-   __DATA_DIRTY.__common: 0x10
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1652
--  Symbols:   4031
+-  Symbols:   3258
 -  CStrings:  952
 +  Functions: 1653
-+  Symbols:   4030
++  Symbols:   3257
 +  CStrings:  963
- 
 Symbols:
 + +[AXUIElement uiApplicationAtCoordinate:displayId:]
 + GCC_except_table1179
@@ -112,9 +82,6 @@ Symbols:
 + ___getCADisplayClass_block_invoke
 + _audit_stringQuartzCore
 + _getCADisplayClass.softClass
-+ _objc_msgSend$displays
-+ _objc_msgSend$tag
-+ _objc_msgSend$uiApplicationAtCoordinate:displayId:
 + _os_signpost_id_generate
 - GCC_except_table1178
 - GCC_except_table1330
@@ -166,12 +133,9 @@ Symbols:
 - __displayMonitor.onceToken
 - _audit_stringFrontBoardServices
 - _getFBSDisplayMonitorClass.softClass
-- _objc_msgSend$connectedIdentities
-- _objc_msgSend$isCarDisplay
-- _objc_msgSend$name
 Functions:
-~ __allDisplayTypes : 332 -> 472
-~ __AXElementForAXUIElementUniqueId : 224 -> 200
+~ __allDisplayTypes : 344 -> 484
+~ __AXElementForAXUIElementUniqueId : 236 -> 212
 ~ _AXUIElementCopyAttributeValueRecursive : 1696 -> 1644
 + __AXIPCToPidTimedOut
 ~ _AXUIElementCopyParameterizedAttributeValueRecursive : 2068 -> 2028
@@ -179,22 +143,22 @@ Functions:
 ~ _AXUIElementCopyMultipleAttributeValues : 1792 -> 1740
 ~ _AXUIElementPerformFencedActionWithValue : 920 -> 868
 ~ _AXUIElementPerformAction : 632 -> 580
-~ _cfAttributedStringUnserialize : 2132 -> 2104
+~ _cfAttributedStringUnserialize : 2156 -> 2128
 - ____displayMonitor_block_invoke
-~ -[AXRemoteElement _accessibilitySortedElementsWithin] : 72 -> 104
-~ -[AXRemoteElement accessibilityElements] : 396 -> 424
+~ -[AXRemoteElement _accessibilitySortedElementsWithin] : 84 -> 104
+~ -[AXRemoteElement accessibilityElements] : 408 -> 436
 ~ +[AXUIElement applyElementAttributeCacheScheme:] : 1600 -> 1612
-~ +[AXUIElement uiApplicationAtCoordinate:] : 144 -> 8
+~ +[AXUIElement uiApplicationAtCoordinate:] : 156 -> 8
 + +[AXUIElement uiApplicationAtCoordinate:displayId:]
 ~ -[AXUIElement _cachedValueForAttribute:] : 172 -> 368
-~ -[AXUIElement arrayWithAXAttribute:] : 360 -> 584
-~ -[AXUIElement valueArrayWithAXAttributes:] : 368 -> 588
-~ -[AXElement parentGroup] : 8 -> 32
+~ -[AXUIElement arrayWithAXAttribute:] : 372 -> 596
+~ -[AXUIElement valueArrayWithAXAttributes:] : 380 -> 600
+~ -[AXElement parentGroup] : 8 -> 44
 ~ -[AXElement setParentGroup:] : 8 -> 12
-~ -[AXElement .cxx_destruct] : 116 -> 124
+~ -[AXElement .cxx_destruct] : 128 -> 136
 ~ -[AXElementGroup dealloc] : 344 -> 72
-~ -[AXElementGroup parentGroup] : 20 -> 40
-~ -[AXElementGroup .cxx_destruct] : 148 -> 164
+~ -[AXElementGroup parentGroup] : 20 -> 52
+~ -[AXElementGroup .cxx_destruct] : 160 -> 176
 CStrings:
 + "!1"
 + "AXAttributeCacheLookup"

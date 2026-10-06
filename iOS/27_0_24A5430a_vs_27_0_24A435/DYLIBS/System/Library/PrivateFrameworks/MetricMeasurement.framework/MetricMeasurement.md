@@ -2,6 +2,8 @@
 
 > `/System/Library/PrivateFrameworks/MetricMeasurement.framework/MetricMeasurement`
 
+### Other Changes
+
 ```text
 Functions:
 ~ _OUTLINED_FUNCTION_1 : 12 -> 20

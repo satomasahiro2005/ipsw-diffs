@@ -2,22 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/SensingAlgsTouchButtonHost.framework/SensingAlgsTouchButtonHost`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6d20` | `0x6d60` | **`+0x40`** |
+| `__TEXT.__cstring` | `0x39f` | `0x3a3` | **`+0x4`** |
+| `__TEXT.__gcc_except_tab` | `0x690` | `0x68c` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
 -114.0.0.0.0
--  __TEXT.__text: 0x6bc0
 +114.1.0.0.0
-+  __TEXT.__text: 0x6c00
-   __TEXT.__objc_methlist: 0x6c8
-   __TEXT.__const: 0x30a
--  __TEXT.__gcc_except_tab: 0x690
-+  __TEXT.__gcc_except_tab: 0x68c
-   __TEXT.__oslogstring: 0x1002
--  __TEXT.__cstring: 0x39f
-+  __TEXT.__cstring: 0x3a3
-   __TEXT.__unwind_info: 0x300
-   __TEXT.__eh_frame: 0x38
-   __TEXT.__objc_stubs: 0x0
 Functions:
 ~ -[SASInterfaceTouchButtonHost handleInputStream:] : 2696 -> 2736
 ~ _OUTLINED_FUNCTION_34 : 20 -> 12

@@ -2,71 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/GameKitServices.framework/GameKitServices`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x76e28` | `0x77100` | **`+0x2d8`** |
+| `__TEXT.__oslogstring` | `0x11809` | `0x118e9` | **`+0xe0`** |
+| `__DATA_CONST.__objc_arraydata` | `0xb8` | `0xf8` | **`+0x40`** |
+| `__DATA_CONST.__got` | `0x328` | `0x358` | **`+0x30`** |
+| `__TEXT.__cstring` | `0x6a55` | `0x6a7d` | **`+0x28`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x60` | `0x78` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0xfb8` | `0xfc8` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x76e28
-+  __TEXT.__text: 0x77100
-   __TEXT.__objc_methlist: 0x2ed8
-   __TEXT.__const: 0x1958
-   __TEXT.__gcc_except_tab: 0x81c
--  __TEXT.__cstring: 0x6a55
--  __TEXT.__oslogstring: 0x11809
--  __TEXT.__unwind_info: 0xfb8
-+  __TEXT.__cstring: 0x6a7d
-+  __TEXT.__oslogstring: 0x118e9
-+  __TEXT.__unwind_info: 0xfc8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-2235.52.1.11.1
++2235.55.1.0.0
 
-   __DATA_CONST.__objc_selrefs: 0x1bf8
-   __DATA_CONST.__objc_protorefs: 0x8
-   __DATA_CONST.__objc_superrefs: 0x108
--  __DATA_CONST.__objc_arraydata: 0xb8
--  __DATA_CONST.__got: 0x328
-+  __DATA_CONST.__objc_arraydata: 0xf8
-+  __DATA_CONST.__got: 0x358
-   __AUTH_CONST.__const: 0x190
-   __AUTH_CONST.__cfstring: 0x20a0
-   __AUTH_CONST.__objc_const: 0x4d70
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x90
-   __AUTH_CONST.__objc_doubleobj: 0x40
--  __AUTH_CONST.__objc_arrayobj: 0x60
-+  __AUTH_CONST.__objc_arrayobj: 0x78
-   __AUTH_CONST.__auth_got: 0x9b8
-   __DATA.__objc_ivar: 0x4f4
-   __DATA.__data: 0x638
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libz.1.dylib
 -  Functions: 1606
--  Symbols:   5266
--  CStrings:  2145
 +  Functions: 1614
-+  Symbols:   5284
-+  CStrings:  2150
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__gcc_except_tab : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__auth_got : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
+
+-  CStrings:  1885
++  CStrings:  1890
 CStrings:
 + " [%s] %s:%d Failed to allocate NSUnarchiver"
 + " [%s] %s:%d Failed to super init instance"
@@ -77,5 +36,4 @@ CStrings:
 + "Jun 27 2026"
 - "22:09:21"
 - "Jun 18 2026"
-
 ```

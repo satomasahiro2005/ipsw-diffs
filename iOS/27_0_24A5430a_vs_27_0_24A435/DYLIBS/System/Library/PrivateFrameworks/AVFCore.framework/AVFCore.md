@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/AVFCore.framework/AVFCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1c9db4` | `0x1c9de0` | **`+0x2c`** |
+| `__AUTH_CONST.__auth_got` | `0x2048` | `0x2040` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
- 2450.77.1.1.0
--  __TEXT.__text: 0x1c9db4
-+  __TEXT.__text: 0x1c9de0
-   __TEXT.__delay_helper: 0x1bc
-   __TEXT.__objc_methlist: 0x1c144
-   __TEXT.__cstring: 0x26f43
-
-   __AUTH_CONST.__objc_arrayobj: 0x360
-   __AUTH_CONST.__objc_doubleobj: 0x30
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x2048
-+  __AUTH_CONST.__auth_got: 0x2040
-   __AUTH.__objc_data: 0x8e88
-   __AUTH.__data: 0x1f0
-   __DATA.__objc_ivar: 0x27e0
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 12084
--  Symbols:   28391
-+  Symbols:   28390
-   CStrings:  4306
- 
+-  Symbols:   23941
++  Symbols:   23940
 Symbols:
 - _swift_release_x9
 Functions:

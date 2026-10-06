@@ -2,54 +2,26 @@
 
 > `/System/Library/PrivateFrameworks/ProximityUI.framework/ProximityUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x6e0` | `—` | **`-0x6e0`** |
+| `__DATA_DIRTY.__objc_data` | `—` | `0x6e0` | **`+0x6e0`** |
+| `__TEXT.__text` | `0x328b0` | `0x32598` | **`-0x318`** |
+| `__TEXT.__gcc_except_tab` | `0x4aa4` | `0x4aa0` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x328b0
-+  __TEXT.__text: 0x32598
-   __TEXT.__objc_methlist: 0x2010
-   __TEXT.__const: 0x690
--  __TEXT.__gcc_except_tab: 0x4aa4
-+  __TEXT.__gcc_except_tab: 0x4aa0
-   __TEXT.__cstring: 0x1854
-   __TEXT.__oslogstring: 0x3447
-   __TEXT.__unwind_info: 0x11a8
+-557.0.0.0.0
++560.0.0.0.0
 
-   __AUTH_CONST.__objc_const: 0x4058
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__auth_got: 0x0
--  __AUTH.__objc_data: 0x6e0
-   __DATA.__objc_ivar: 0x344
-   __DATA.__data: 0x318
-   __DATA.__bss: 0x48
-+  __DATA_DIRTY.__objc_data: 0x6e0
-   - /System/Library/Frameworks/ARKit.framework/ARKit
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 1104
--  Symbols:   3811
+-  Symbols:   1802
 +  Functions: 1103
-+  Symbols:   3809
-   CStrings:  658
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__weak_got : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__got : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_const : content changed
-~ __AUTH_CONST.__weak_auth_got : content changed
-~ __DATA.__data : content changed
++  Symbols:   1801
 Symbols:
 - _OUTLINED_FUNCTION_11
 Functions:
@@ -99,5 +71,4 @@ Functions:
 ~ __ZNSt3__134__uninitialized_allocator_relocateB9fqe220106INS_9allocatorIN8cnmatrix8CNMatrixILj3ELj1EdEEEEPS4_EEvRT_T0_S9_S9_.cold.1 : 92 -> 76
 ~ __ZNSt3__134__uninitialized_allocator_relocateB9fqe220106INS_9allocatorIN30RoseSyntheticApertureFiltering23InternalExpectedAoAMeasEEEPS3_EEvRT_T0_S8_S8_.cold.1 : 76 -> 68
 ~ __ZNSt3__134__uninitialized_allocator_relocateB9fqe220106INS_9allocatorIN8cnmatrix8CNMatrixILj2ELj1EdEEEEPS4_EEvRT_T0_S9_S9_.cold.1 : 92 -> 76
-
 ```

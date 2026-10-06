@@ -2,46 +2,33 @@
 
 > `/System/Library/CoreServices/VoiceOverTouch.app/scrod`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__got`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbcec` | `0xbd0c` | **`+0x20`** |
+| `__TEXT.__auth_stubs` | `0x720` | `0x730` | **`+0x10`** |
+| `__DATA_CONST.__auth_got` | `0x3a0` | `0x3a8` | **`+0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__got`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
- 329.0.0.0.0
--  __TEXT.__text: 0xbcec
--  __TEXT.__auth_stubs: 0x720
-+  __TEXT.__text: 0xbd0c
-+  __TEXT.__auth_stubs: 0x730
-   __TEXT.__objc_stubs: 0x1aa0
-   __TEXT.__objc_methlist: 0x850
-   __TEXT.__const: 0x70
-
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x30
--  __DATA_CONST.__auth_got: 0x3a0
-+  __DATA_CONST.__auth_got: 0x3a8
-   __DATA_CONST.__got: 0x318
-   __DATA.__objc_const: 0xac8
-   __DATA.__objc_selrefs: 0x8d8
-
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   Functions: 159
 -  Symbols:   224
 +  Symbols:   225
-   CStrings:  526
- 
 Symbols:
 + _AXDeviceIsViridian
 Functions:

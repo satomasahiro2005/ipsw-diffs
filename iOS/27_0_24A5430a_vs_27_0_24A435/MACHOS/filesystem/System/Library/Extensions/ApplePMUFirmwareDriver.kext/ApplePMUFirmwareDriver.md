@@ -2,23 +2,22 @@
 
 > `/System/Library/Extensions/ApplePMUFirmwareDriver.kext/ApplePMUFirmwareDriver`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x288c` | `0x2940` | **`+0xb4`** |
+
+### Same-size Content Changes
 
 - `__DATA.__data`
+- `__DATA_CONST.__const`
 - `__DATA_CONST.__mod_init_func`
 - `__DATA_CONST.__mod_term_func`
-- `__DATA_CONST.__const`
 
-```diff
+### Other Changes
 
- 7.0.0.0.0
-   __TEXT.__const: 0x18
-   __TEXT.__cstring: 0x854
--  __TEXT_EXEC.__text: 0x288c
-+  __TEXT_EXEC.__text: 0x2940
-   __TEXT_EXEC.__auth_stubs: 0x1b0
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x60
+```text
 Functions:
 ~ __ZN32ApplePMUFirmwareDriverUserClient9MetaClassC1Ev : 72 -> 76
 ~ __ZN32ApplePMUFirmwareDriverUserClientC2EPK11OSMetaClass : 52 -> 56

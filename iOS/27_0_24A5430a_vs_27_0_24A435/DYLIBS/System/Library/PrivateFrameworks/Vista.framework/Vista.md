@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/Vista.framework/Vista`
 
-```diff
+### Section Size Changes
 
- 20.0.0.0.0
--  __TEXT.__text: 0x826c8
-+  __TEXT.__text: 0x826b4
-   __TEXT.__objc_methlist: 0x35a4
-   __TEXT.__const: 0x1590
-   __TEXT.__gcc_except_tab: 0xaa30
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x826c8` | `0x826b4` | **`-0x14`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ -[VSTProxyRenderer renderTargetDescriptorWithResolutionOptions:extents:] : 904 -> 900
 ~ __ZNSt3__114__thread_proxyB9fqe220106INS_5tupleIJNS_10unique_ptrINS_15__thread_structENS_14default_deleteIS3_EEEEMN3vst10controller10ServerImplEFvvEPS9_EEEEEPvSE_ : 140 -> 144

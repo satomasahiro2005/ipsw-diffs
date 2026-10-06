@@ -2,54 +2,26 @@
 
 > `/usr/lib/libBasebandCommandDriversMIPC.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x87a20` | `0x87a7c` | **`+0x5c`** |
+| `__TEXT.__cstring` | `0x1af2` | `0x1aff` | **`+0xd`** |
+| `__DATA.__data` | `0x290` | `0x298` | **`+0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x792c` | `0x7934` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1563.0.0.0.0
--  __TEXT.__text: 0x87a20 sha256:cfd559e5eec0ac7b36323c02c1edd443fa48207d23507e86961cc061268b8225
--  __TEXT.__init_offsets: 0x24 sha256:a33e8e7bbc7382041024a0cc38054a97779d9f6a1055c69c2ed2739aa62129e8
 +1570.0.0.0.0
-+  __TEXT.__text: 0x87a7c sha256:16939ccbb7a2c14ee54b4b8f71fa22dbcc65ff25941ab41aa00d99395ae9f993
-+  __TEXT.__init_offsets: 0x24 sha256:060ed984c32c0263902ba222e84b09cba331ffa679a06faf5a796ea5917ebc13
-   __TEXT.__const: 0xa3f0 sha256:dae96f231e14dcfefef5a60d0328683d03e2e476beeea04de926ac0ad91fe4f5
--  __TEXT.__gcc_except_tab: 0x792c sha256:742cd2728533261081c9ffa16bcb88e653542bd93b85b5f4e61ba8123aa09cc8
--  __TEXT.__cstring: 0x1af2 sha256:7bf3b24f4c1bfd66a75545c14b97f53797e6086970295de75dae720d16ae07ed
-+  __TEXT.__gcc_except_tab: 0x7934 sha256:1be979e1c36775795ecabff9e0eb492a745987f2b64a1f9279ed4abf4b1d0c31
-+  __TEXT.__cstring: 0x1aff sha256:7f237ef1b74cfe93e788e575b8abe5398e504d58e13a84e2472693df524809dd
-   __TEXT.__oslogstring: 0x1f47 sha256:f5ce34ae3fed996c90f6463e264abc348b30ffdfeea0e466dc861d8977c79b44
--  __TEXT.__unwind_info: 0x22d8 sha256:31f3dc89c622258b6ebe2cce230126ede16a2b2246e09029b441f884fd8283f3
-+  __TEXT.__unwind_info: 0x22d8 sha256:2a640c299f715d219d53ff2eb8c498a95e2365ea0554cb8420db8977cb2a251d
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0x4e0 sha256:617645990f1ba2bf7183837ea2c60cbd4eca1b253870082ae2d72ebb68b7affe
-+  __DATA_CONST.__const: 0x4e0 sha256:27ccacc3597530bd1adc97f9086628cd51b52673bda3f885836472a022303ae9
-   __DATA_CONST.__objc_imageinfo: 0x8 sha256:59fc9e64071aa89b9247d029e0b37ebe0fe9fc5434efb8e67b0b36435fb494cf
--  __DATA_CONST.__weak_got: 0x28 sha256:8072b682cda58933e107fd17d235002bab371ddc8d09cc11c81d7870e3610e08
--  __DATA_CONST.__got: 0x398 sha256:0a99be2c797de5629a23c9cff9fd899f11ef18c63ed3fee3f0e63eb7f78bc5d3
--  __AUTH_CONST.__const: 0x3f40 sha256:e62cebd9a5e00dc283d76c739454216b9e3a085ff234d42c7cbd52673e6e71c8
--  __AUTH_CONST.__cfstring: 0x20 sha256:6cf17be3d353841efee73cf8a0988f5962cf0dbf75c96f096e332e5f4e86c89a
--  __AUTH_CONST.__weak_auth_got: 0x10 sha256:290149e422ec40b0273600157a594a1152f2acf9916597016a24319850a9d2db
-+  __DATA_CONST.__weak_got: 0x28 sha256:cfaba385878fc5ac4652380453a73209cefe20afd119b48108598b10d9695cfa
-+  __DATA_CONST.__got: 0x398 sha256:2d1f845f1751225fa85afc2cd66fd203360073f67511c1622ccfec92056eecc2
-+  __AUTH_CONST.__const: 0x3f40 sha256:cd999326f6e749c3b5f8867ef44e4b4cf9569f4c6823d7eafaae4a03fdca66e4
-+  __AUTH_CONST.__cfstring: 0x20 sha256:e187c5a613e0d9aa372b1dafb8fdd18ea2369550ca5620695af987cf4180fd92
-+  __AUTH_CONST.__weak_auth_got: 0x10 sha256:16d48afe2d513063a6e0119d2076e9337577d960dbdb68166dd7f58bdd236fd1
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__data: 0x290 sha256:624567013a1f69d19e402c8e226753b53227db21839840460d20cca8aa55d590
-+  __DATA.__data: 0x298 sha256:b557ecd895e211a7e796191c77c3d72f9ae022272defb20625e29d6f7c9d0d74
-   __DATA.__common: 0x40 sha256:f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b
-   __DATA_DIRTY.__data: 0x8 sha256:af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc
-   __DATA_DIRTY.__bss: 0x230 sha256:738c079dff6c9b77a0891ac42db1cabcab933a672b14aed8ecfcf94c0e77bb40
 
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
--  UUID: 9AD50227-B2B9-3829-AA60-FE659D05B7FE
-+  UUID: 07FE35B8-D487-3CB0-B71F-52735EB9DBBD
-   Functions: 1513
--  Symbols:   4927
--  CStrings:  565
-+  Symbols:   4928
-+  CStrings:  566
- 
+-  Symbols:   3231
+-  CStrings:  559
++  Symbols:   3232
++  CStrings:  560
 Symbols:
 + __ZN3abm5trace18kTraceMultiChannelE
 + __ZNKSt3__113__format_spec8__parserIcE31__get_parsed_std_specificationsB9fqe220106INS_20basic_format_contextINS_20back_insert_iteratorINS_8__format15__output_bufferIcEEEEcEEEENS0_23__parsed_specificationsIcEERT_
@@ -290,7 +262,6 @@ Symbols:
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeIN5trace7LogModeEN4mipc24mipc_log_mode_const_enumEEENS_22__unordered_map_hasherIS3_NS_4pairIKS3_S5_EENS_4hashIS3_EENS_8equal_toIS3_EEEENS_21__unordered_map_equalIS3_SA_SE_SC_EENS_9allocatorISA_EEE16__emplace_uniqueB9fqe220106IJRKSA_EEENS8_INS_15__hash_iteratorIPNS_11__hash_nodeIS6_PvEEEEbEEDpOT_ENKUlRS9_SN_E_clESY_SN_
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeIN5trace8LogLevelEN4mipc28mipc_filter_level_const_enumEEENS_22__unordered_map_hasherIS3_NS_4pairIKS3_S5_EENS_4hashIS3_EENS_8equal_toIS3_EEEENS_21__unordered_map_equalIS3_SA_SE_SC_EENS_9allocatorISA_EEE16__emplace_uniqueB9fqe220106IJRKSA_EEENS8_INS_15__hash_iteratorIPNS_11__hash_nodeIS6_PvEEEEbEEDpOT_ENKUlRS9_SN_E_clESY_SN_
 + __ZZNSt3__112__hash_tableINS_17__hash_value_typeIhNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEENS_22__unordered_map_hasherIhNS_4pairIKhS7_EENS_4hashIhEENS_8equal_toIhEEEENS_21__unordered_map_equalIhSC_SG_SE_EENS5_ISC_EEE16__emplace_uniqueB9fqe220106IJRKSC_EEENSA_INS_15__hash_iteratorIPNS_11__hash_nodeIS8_PvEEEEbEEDpOT_ENKUlRSB_SO_E_clESZ_SO_
-+ ___block_literal_global.54
 - __ZNKSt3__113__format_spec8__parserIcE31__get_parsed_std_specificationsB9fqe220100INS_20basic_format_contextINS_20back_insert_iteratorINS_8__format15__output_bufferIcEEEEcEEEENS0_23__parsed_specificationsIcEERT_
 - __ZNSt12length_errorC1B9fqe220100EPKc
 - __ZNSt12out_of_rangeC1B9fqe220100EPKc
@@ -529,10 +500,8 @@ Symbols:
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeIN5trace7LogModeEN4mipc24mipc_log_mode_const_enumEEENS_22__unordered_map_hasherIS3_NS_4pairIKS3_S5_EENS_4hashIS3_EENS_8equal_toIS3_EEEENS_21__unordered_map_equalIS3_SA_SE_SC_EENS_9allocatorISA_EEE16__emplace_uniqueB9fqe220100IJRKSA_EEENS8_INS_15__hash_iteratorIPNS_11__hash_nodeIS6_PvEEEEbEEDpOT_ENKUlRS9_SN_E_clESY_SN_
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeIN5trace8LogLevelEN4mipc28mipc_filter_level_const_enumEEENS_22__unordered_map_hasherIS3_NS_4pairIKS3_S5_EENS_4hashIS3_EENS_8equal_toIS3_EEEENS_21__unordered_map_equalIS3_SA_SE_SC_EENS_9allocatorISA_EEE16__emplace_uniqueB9fqe220100IJRKSA_EEENS8_INS_15__hash_iteratorIPNS_11__hash_nodeIS6_PvEEEEbEEDpOT_ENKUlRS9_SN_E_clESY_SN_
 - __ZZNSt3__112__hash_tableINS_17__hash_value_typeIhNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEENS_22__unordered_map_hasherIhNS_4pairIKhS7_EENS_4hashIhEENS_8equal_toIhEEEENS_21__unordered_map_equalIhSC_SG_SE_EENS5_ISC_EEE16__emplace_uniqueB9fqe220100IJRKSC_EEENSA_INS_15__hash_iteratorIPNS_11__hash_nodeIS8_PvEEEEbEEDpOT_ENKUlRSB_SO_E_clESZ_SO_
-- ___block_literal_global.53
 CStrings:
 + "AppleBasebandManager-AppleBasebandServices_Manager-1570"
 + "MultiChannel"
 - "AppleBasebandManager-AppleBasebandServices_Manager-1563"
-
 ```

@@ -2,105 +2,66 @@
 
 > `/private/var/staged_system_apps/Podcasts.app/Frameworks/NowPlayingUI.framework/NowPlayingUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcef7c` | `0xd6354` | **`+0x73d8`** |
+| `__TEXT.__swift5_typeref` | `0xf835` | `0x10369` | **`+0xb34`** |
+| `__DATA.__data` | `0x7b70` | `0x7f30` | **`+0x3c0`** |
+| `__TEXT.__const` | `0x9678` | `0x99e8` | **`+0x370`** |
+| `__TEXT.__oslogstring` | `0x2319` | `0x252f` | **`+0x216`** |
+| `__DATA_CONST.__const` | `0x4770` | `0x4900` | **`+0x190`** |
+| `__DATA.__bss` | `0x44b8` | `0x45e8` | **`+0x130`** |
+| `__TEXT.__constg_swiftt` | `0x3004` | `0x30cc` | **`+0xc8`** |
+| `__TEXT.__unwind_info` | `0x2b58` | `0x2c20` | **`+0xc8`** |
+| `__TEXT.__swift5_capture` | `0x1498` | `0x1558` | **`+0xc0`** |
+| `__DATA.__objc_const` | `0x3238` | `0x31a8` | **`-0x90`** |
+| `__DATA.__objc_data` | `0xbc0` | `0xb40` | **`-0x80`** |
+| `__TEXT.__swift5_fieldmd` | `0x2228` | `0x22a8` | **`+0x80`** |
+| `__TEXT.__eh_frame` | `0x2154` | `0x20fc` | **`-0x58`** |
+| `__TEXT.__cstring` | `0x11c0` | `0x1180` | **`-0x40`** |
+| `__TEXT.__objc_classname` | `0x903` | `0x8c3` | **`-0x40`** |
+| `__DATA_CONST.__got` | `0x1330` | `0x1308` | **`-0x28`** |
+| `__TEXT.__swift5_assocty` | `0x6f0` | `0x718` | **`+0x28`** |
+| `__TEXT.__objc_stubs` | `0x10a0` | `0x1080` | **`-0x20`** |
+| `__TEXT.__swift5_reflstr` | `0x2d18` | `0x2d38` | **`+0x20`** |
+| `__DATA.__common` | `0x198` | `0x188` | **`-0x10`** |
+| `__TEXT.__auth_stubs` | `0x52f0` | `0x5300` | **`+0x10`** |
+| `__TEXT.__objc_methname` | `0x2b8d` | `0x2b7d` | **`-0x10`** |
+| `__DATA.__objc_selrefs` | `0x680` | `0x678` | **`-0x8`** |
+| `__DATA.__objc_stublist` | `0x8` | `—` | **`-0x8`** |
+| `__DATA_CONST.__auth_got` | `0x2980` | `0x2988` | **`+0x8`** |
+| `__DATA_CONST.__auth_ptr` | `0x1568` | `0x1570` | **`+0x8`** |
+| `__TEXT.__swift5_proto` | `0x1e8` | `0x1f0` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x200` | `0x208` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x128` | `0x120` | **`-0x8`** |
+| `__TEXT.__swift_as_ret` | `0x70` | `0x6c` | **`-0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_protorefs`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_builtin`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift_as_entry`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0xcef7c
--  __TEXT.__auth_stubs: 0x52f0
--  __TEXT.__objc_stubs: 0x10a0
-+  __TEXT.__text: 0xd6354
-+  __TEXT.__auth_stubs: 0x5300
-+  __TEXT.__objc_stubs: 0x1080
-   __TEXT.__objc_methlist: 0x4e4
--  __TEXT.__const: 0x9678
--  __TEXT.__cstring: 0x11c0
--  __TEXT.__objc_classname: 0x903
--  __TEXT.__objc_methname: 0x2b8d
--  __TEXT.__swift5_typeref: 0xf835
--  __TEXT.__constg_swiftt: 0x3004
--  __TEXT.__swift5_fieldmd: 0x2228
-+  __TEXT.__const: 0x99e8
-+  __TEXT.__cstring: 0x1180
-+  __TEXT.__objc_classname: 0x8c3
-+  __TEXT.__objc_methname: 0x2b7d
-+  __TEXT.__swift5_typeref: 0x10369
-+  __TEXT.__constg_swiftt: 0x30cc
-+  __TEXT.__swift5_fieldmd: 0x22a8
-   __TEXT.__swift5_builtin: 0xb4
--  __TEXT.__swift5_reflstr: 0x2d18
--  __TEXT.__swift5_assocty: 0x6f0
--  __TEXT.__swift5_capture: 0x1498
--  __TEXT.__swift5_proto: 0x1e8
--  __TEXT.__swift5_types: 0x200
-+  __TEXT.__swift5_reflstr: 0x2d38
-+  __TEXT.__swift5_assocty: 0x718
-+  __TEXT.__swift5_capture: 0x1558
-+  __TEXT.__swift5_proto: 0x1f0
-+  __TEXT.__swift5_types: 0x208
-   __TEXT.__objc_methtype: 0x6a9
-   __TEXT.__swift5_protos: 0x10
--  __TEXT.__oslogstring: 0x2319
-+  __TEXT.__oslogstring: 0x252f
-   __TEXT.__swift_as_entry: 0x74
--  __TEXT.__swift_as_ret: 0x70
--  __TEXT.__swift_as_cont: 0x128
-+  __TEXT.__swift_as_ret: 0x6c
-+  __TEXT.__swift_as_cont: 0x120
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__unwind_info: 0x2b58
--  __TEXT.__eh_frame: 0x2154
--  __DATA_CONST.__const: 0x4770
-+  __TEXT.__unwind_info: 0x2c20
-+  __TEXT.__eh_frame: 0x20fc
-+  __DATA_CONST.__const: 0x4900
-   __DATA_CONST.__cfstring: 0x20
-   __DATA_CONST.__objc_classlist: 0xf8
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x78
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x40
--  __DATA_CONST.__auth_got: 0x2980
--  __DATA_CONST.__got: 0x1330
--  __DATA_CONST.__auth_ptr: 0x1568
--  __DATA.__objc_const: 0x3238
--  __DATA.__objc_selrefs: 0x680
--  __DATA.__objc_data: 0xbc0
--  __DATA.__data: 0x7b70
--  __DATA.__objc_stublist: 0x8
--  __DATA.__bss: 0x44b8
--  __DATA.__common: 0x198
-+  __DATA_CONST.__auth_got: 0x2988
-+  __DATA_CONST.__got: 0x1308
-+  __DATA_CONST.__auth_ptr: 0x1570
-+  __DATA.__objc_const: 0x31a8
-+  __DATA.__objc_selrefs: 0x678
-+  __DATA.__objc_data: 0xb40
-+  __DATA.__data: 0x7f30
-+  __DATA.__bss: 0x45e8
-+  __DATA.__common: 0x188
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
+-4027.100.70.0.0
++4027.100.75.0.0
 
-   - @rpath/PodcastsTranscripts.framework/PodcastsTranscripts
-   - @rpath/ShelfKit.framework/ShelfKit
-   - @rpath/ShelfKitCollectionViews.framework/ShelfKitCollectionViews
 -  Functions: 3970
--  Symbols:   2539
+-  Symbols:   2223
 +  Functions: 4053
-+  Symbols:   2587
-   CStrings:  769
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
++  Symbols:   2263
 Symbols:
 + ___swift_get_extra_inhabitant_indexTm
 + ___swift_store_extra_inhabitant_indexTm
@@ -271,5 +232,4 @@ CStrings:
 - "podcasts.nowPlaying.upsellBanner"
 - "setAccessibilityIdentifier:"
 - "setImage:"
-
 ```

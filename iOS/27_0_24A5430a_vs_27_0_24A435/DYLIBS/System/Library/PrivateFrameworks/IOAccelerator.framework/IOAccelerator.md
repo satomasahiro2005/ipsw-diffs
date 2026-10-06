@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/IOAccelerator.framework/IOAccelerator`
 
-```diff
+### Section Size Changes
 
- 491.0.0.0.0
--  __TEXT.__text: 0x42b4
-+  __TEXT.__text: 0x42ac
-   __TEXT.__objc_methlist: 0x68
-   __TEXT.__const: 0x8
-   __TEXT.__cstring: 0x516
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x42b4` | `0x42ac` | **`-0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _IOAccelContextSubmitDataBuffersExt2 : 456 -> 448
 ```

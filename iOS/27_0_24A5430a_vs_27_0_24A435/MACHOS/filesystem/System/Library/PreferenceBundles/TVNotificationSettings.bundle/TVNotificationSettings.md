@@ -2,21 +2,22 @@
 
 > `/System/Library/PreferenceBundles/TVNotificationSettings.bundle/TVNotificationSettings`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x5614` | `0x5618` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA_CONST.__const`
 - `__TEXT.__constg_swiftt`
 - `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA.__data`
 
-```diff
+### Other Changes
 
- 1145.1.3.0.0
--  __TEXT.__text: 0x5614
-+  __TEXT.__text: 0x5618
-   __TEXT.__auth_stubs: 0x690
-   __TEXT.__objc_stubs: 0x280
-   __TEXT.__objc_methlist: 0x50
+```text
 Functions:
 ~ sub_5e48 : 352 -> 356
 ```

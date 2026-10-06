@@ -2,58 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/AddressBookLegacy.framework/AddressBookLegacy`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x78770` | `0x78cc8` | **`+0x558`** |
+| `__TEXT.__oslogstring` | `0x2eff` | `0x306b` | **`+0x16c`** |
+| `__TEXT.__cstring` | `0x26ff0` | `0x2708d` | **`+0x9d`** |
+| `__AUTH_CONST.__cfstring` | `0xde40` | `0xde80` | **`+0x40`** |
+| `__AUTH_CONST.__auth_got` | `0x1148` | `0x1170` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0xf00` | `0xf20` | **`+0x20`** |
+| `__DATA.__bss` | `0x3b0` | `0x3c8` | **`+0x18`** |
+| `__TEXT.__unwind_info` | `0x1aa8` | `0x1ac0` | **`+0x18`** |
+| `__DATA.__data` | `0x2c8` | `0x2d0` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -12877.100.1.0.0
--  __TEXT.__text: 0x766d4
 +12880.200.11.0.0
-+  __TEXT.__text: 0x76c20
-   __TEXT.__objc_methlist: 0x307c
-   __TEXT.__const: 0x371
--  __TEXT.__cstring: 0x26ff0
--  __TEXT.__oslogstring: 0x2eff
-+  __TEXT.__cstring: 0x2708d
-+  __TEXT.__oslogstring: 0x306b
-   __TEXT.__gcc_except_tab: 0x644
-   __TEXT.__dlopen_cstrs: 0xb8
-   __TEXT.__ustring: 0x24c
--  __TEXT.__unwind_info: 0x23f8
-+  __TEXT.__unwind_info: 0x2428
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_superrefs: 0x100
-   __DATA_CONST.__objc_arraydata: 0x48
-   __DATA_CONST.__got: 0x5d8
--  __AUTH_CONST.__const: 0xf00
--  __AUTH_CONST.__cfstring: 0xde40
-+  __AUTH_CONST.__const: 0xf20
-+  __AUTH_CONST.__cfstring: 0xde80
-   __AUTH_CONST.__objc_const: 0x4cb0
-   __AUTH_CONST.__objc_doubleobj: 0x60
-   __AUTH_CONST.__objc_intobj: 0x120
-   __AUTH_CONST.__objc_arrayobj: 0x48
--  __AUTH_CONST.__auth_got: 0x1148
-+  __AUTH_CONST.__auth_got: 0x1170
-   __AUTH.__objc_data: 0xbe0
-   __DATA.__objc_ivar: 0x400
--  __DATA.__data: 0x2c8
-+  __DATA.__data: 0x2d0
-   __DATA.__common: 0x4
-   __DATA_DIRTY.__objc_data: 0x410
-   __DATA_DIRTY.__data: 0x168
-
-   - /usr/lib/libicucore.A.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 2633
--  Symbols:   5451
+-  Symbols:   4442
 -  CStrings:  2552
 +  Functions: 2645
-+  Symbols:   5468
++  Symbols:   4459
 +  CStrings:  2562
- 
 Symbols:
 + _ABMigrationGateBegin
 + _ABMigrationGateEnd

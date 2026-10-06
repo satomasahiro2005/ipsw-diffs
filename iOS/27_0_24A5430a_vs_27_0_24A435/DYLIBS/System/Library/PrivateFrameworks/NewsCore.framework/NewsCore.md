@@ -2,31 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/NewsCore.framework/NewsCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3e7ff4` | `0x3e8098` | **`+0xa4`** |
+| `__AUTH_CONST.__auth_got` | `0x1e28` | `0x1e18` | **`-0x10`** |
+
+### Other Changes
+
 ```diff
 
- 5934.3.0.0.0
--  __TEXT.__text: 0x3e7ff4
-+  __TEXT.__text: 0x3e8098
-   __TEXT.__objc_methlist: 0x34ed0
-   __TEXT.__const: 0xd5d8
-   __TEXT.__swift5_typeref: 0x4082
-
-   __AUTH_CONST.__objc_intobj: 0x13f8
-   __AUTH_CONST.__objc_dictobj: 0xc30
-   __AUTH_CONST.__objc_doubleobj: 0x120
--  __AUTH_CONST.__auth_got: 0x1e28
-+  __AUTH_CONST.__auth_got: 0x1e18
-   __AUTH.__objc_data: 0x6a0
-   __AUTH.__data: 0x910
-   __DATA.__objc_ivar: 0x4530
-
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
-   Functions: 24320
--  Symbols:   44420
-+  Symbols:   44418
-   CStrings:  10468
- 
+-  Symbols:   37511
++  Symbols:   37509
 Symbols:
 - _swift_release_x10
 - _swift_retain_x10

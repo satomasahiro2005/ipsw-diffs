@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/FindMyBase.framework/FindMyBase`
 
-```diff
+### Section Size Changes
 
- 106.30.6.14.10
--  __TEXT.__text: 0xab344
-+  __TEXT.__text: 0xab3e0
-   __TEXT.__objc_methlist: 0x184
-   __TEXT.__const: 0x6de4
-   __TEXT.__constg_swiftt: 0x1dac
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xab344` | `0xab3e0` | **`+0x9c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1d27097d8 -> sub_1d2ce97d8 : 212 -> 216
 ~ sub_1d270d320 -> sub_1d2ced324 : 4432 -> 4464

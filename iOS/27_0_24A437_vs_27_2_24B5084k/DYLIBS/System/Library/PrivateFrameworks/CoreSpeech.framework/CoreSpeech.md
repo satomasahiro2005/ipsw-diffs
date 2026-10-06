@@ -2,90 +2,47 @@
 
 > `/System/Library/PrivateFrameworks/CoreSpeech.framework/CoreSpeech`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14d1ec` | `0x14ab68` | **`-0x2684`** |
+| `__TEXT.__objc_methlist` | `0x1508c` | `0x14eb4` | **`-0x1d8`** |
+| `__AUTH_CONST.__const` | `0x1f60` | `0x1e20` | **`-0x140`** |
+| `__TEXT.__cstring` | `0x28ec2` | `0x28db4` | **`-0x10e`** |
+| `__TEXT.__oslogstring` | `0x20308` | `0x2022c` | **`-0xdc`** |
+| `__AUTH_CONST.__objc_const` | `0x21458` | `0x21380` | **`-0xd8`** |
+| `__AUTH_CONST.__cfstring` | `0x96c0` | `0x9620` | **`-0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0xaea8` | `0xae18` | **`-0x90`** |
+| `__TEXT.__unwind_info` | `0x5010` | `0x4f80` | **`-0x90`** |
+| `__DATA.__data` | `0x3a74` | `0x3a14` | **`-0x60`** |
+| `__DATA_DIRTY.__objc_data` | `0x1770` | `0x1720` | **`-0x50`** |
+| `__TEXT.__gcc_except_tab` | `0x3230` | `0x3270` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0x4258` | `0x4230` | **`-0x28`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x108` | `0x120` | **`+0x18`** |
+| `__AUTH_CONST.__auth_got` | `0xda8` | `0xda0` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0x1b40` | `0x1b38` | **`-0x8`** |
+| `__DATA_CONST.__objc_arraydata` | `0x3e8` | `0x3f0` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x868` | `0x860` | **`-0x8`** |
+| `__DATA_CONST.__objc_protolist` | `0x4e8` | `0x4e0` | **`-0x8`** |
+| `__DATA_CONST.__objc_protorefs` | `0xa0` | `0x98` | **`-0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x6a0` | `0x698` | **`-0x8`** |
+| `__DATA_DIRTY.__bss` | `0x158` | `0x150` | **`-0x8`** |
+| `__DATA.__objc_ivar` | `0x1998` | `0x199c` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -3600.70.47.11.1
--  __TEXT.__text: 0x148c54
 +3605.23.1.0.0
-+  __TEXT.__text: 0x146630
-   __TEXT.__lazy_helpers: 0x54
--  __TEXT.__objc_methlist: 0x1508c
-+  __TEXT.__objc_methlist: 0x14eb4
-   __TEXT.__const: 0x42c
-   __TEXT.__dlopen_cstrs: 0x1e0
--  __TEXT.__gcc_except_tab: 0x3230
--  __TEXT.__cstring: 0x28ec2
--  __TEXT.__oslogstring: 0x20308
--  __TEXT.__unwind_info: 0x6320
-+  __TEXT.__gcc_except_tab: 0x3270
-+  __TEXT.__cstring: 0x28db4
-+  __TEXT.__oslogstring: 0x2022c
-+  __TEXT.__unwind_info: 0x6260
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4258
--  __DATA_CONST.__objc_classlist: 0x868
-+  __DATA_CONST.__const: 0x4230
-+  __DATA_CONST.__objc_classlist: 0x860
-   __DATA_CONST.__objc_catlist: 0x40
--  __DATA_CONST.__objc_protolist: 0x4e8
-+  __DATA_CONST.__objc_protolist: 0x4e0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__objc_selrefs: 0xaea8
--  __DATA_CONST.__objc_protorefs: 0xa0
--  __DATA_CONST.__objc_superrefs: 0x6a0
--  __DATA_CONST.__objc_arraydata: 0x3e8
--  __DATA_CONST.__got: 0x1b40
--  __AUTH_CONST.__const: 0x1f60
--  __AUTH_CONST.__cfstring: 0x96c0
--  __AUTH_CONST.__objc_const: 0x21458
-+  __DATA_CONST.__objc_selrefs: 0xae18
-+  __DATA_CONST.__objc_protorefs: 0x98
-+  __DATA_CONST.__objc_superrefs: 0x698
-+  __DATA_CONST.__objc_arraydata: 0x3f0
-+  __DATA_CONST.__got: 0x1b38
-+  __AUTH_CONST.__const: 0x1e20
-+  __AUTH_CONST.__cfstring: 0x9620
-+  __AUTH_CONST.__objc_const: 0x21380
-   __AUTH_CONST.__weak_auth_got: 0x28
-   __AUTH_CONST.__lazy_load_got: 0x8
-   __AUTH_CONST.__objc_intobj: 0x9a8
-   __AUTH_CONST.__objc_doubleobj: 0xb0
-   __AUTH_CONST.__objc_dictobj: 0x3c0
-   __AUTH_CONST.__objc_floatobj: 0x4f0
--  __AUTH_CONST.__objc_arrayobj: 0x108
--  __AUTH_CONST.__auth_got: 0xda8
-+  __AUTH_CONST.__objc_arrayobj: 0x120
-+  __AUTH_CONST.__auth_got: 0xda0
-   __AUTH.__objc_data: 0x3ca0
--  __DATA.__objc_ivar: 0x1998
--  __DATA.__data: 0x3a74
-+  __DATA.__objc_ivar: 0x199c
-+  __DATA.__data: 0x3a14
-   __DATA.__common: 0x10
--  __DATA_DIRTY.__objc_data: 0x1770
-+  __DATA_DIRTY.__objc_data: 0x1720
-   __DATA_DIRTY.__data: 0xc0
--  __DATA_DIRTY.__bss: 0x158
-+  __DATA_DIRTY.__bss: 0x150
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 8197
--  Symbols:   17978
+-  Symbols:   14246
 -  CStrings:  5613
 +  Functions: 8147
-+  Symbols:   17897
++  Symbols:   14188
 +  CStrings:  5597
- 
 Symbols:
 + -[CSAttSiriAudioSessionStateClient dispatchStateChangedFrom:to:hostTime:]
 + -[CSAttSiriAudioSessionStateClient setTtsEndHostTime:]
@@ -257,14 +214,6 @@ Symbols:
 + ___59-[CSVoiceTriggerAssetHandlerMac _handleTriggerAssetRefresh]_block_invoke
 + ___69-[CSAttSiriMitigationAssetProvider getMitigationAssetWithCompletion:]_block_invoke
 + ___block_descriptor_64_e8_32s40s48r56w_e29_v24?0"CSAsset"8"NSError"16lw56l8s32l8s40l8r48l8
-+ _objc_msgSend$_handleTriggerAssetRefresh
-+ _objc_msgSend$_isHearstRouted
-+ _objc_msgSend$_isPhoneCallActive
-+ _objc_msgSend$clearLogFilesInDirectory:matchingPatterns:exceedNumber:
-+ _objc_msgSend$compileAndUpdateDeviceCachesWithAsset:assetType:endpointId:
-+ _objc_msgSend$dispatchStateChangedFrom:to:hostTime:
-+ _objc_msgSend$notifyRequestCompletionAtHostTime:
-+ _objc_msgSend$voiceIdXPCConnectionDidInvalidate:
 - +[SpeechModelTrainingClient initialize]
 - -[CSAttSiriAudioSessionStateClient dispatchStateChangedFrom:to:]
 - -[CSVoiceTriggerAPModeSuspendPolicyIOS _isHearstRoutedAndWithNoPhoneCall]
@@ -492,37 +441,6 @@ Symbols:
 - ___92-[SpeechModelTrainingClient buildPhoneticMatchWithLanguage:saveIntermediateFsts:completion:]_block_invoke_2
 - ___block_descriptor_40_e8_32bs_e30_v24?0"NSString"8"NSError"16ls32l8
 - ___block_descriptor_40_e8_32bs_e34_v24?0"NSDictionary"8"NSError"16ls32l8
-- _objc_msgSend$_isHearstRoutedAndWithNoPhoneCall
-- _objc_msgSend$_serviceProxyWithErrorHandler:
-- _objc_msgSend$_tearDownBuiltInVoiceTrigger
-- _objc_msgSend$buildPhoneticMatchWithLanguage:saveIntermediateFsts:completion:
-- _objc_msgSend$buildSpeechProfileForLanguage:
-- _objc_msgSend$clearLogFilesInDirectory:matchingPattern:exceedNumber:
-- _objc_msgSend$dispatchStateChangedFrom:to:
-- _objc_msgSend$extractBundledOovs:appLmDataFileSandboxExtension:appBundleId:completion:
-- _objc_msgSend$generateAudioWithTexts:language:completion:
-- _objc_msgSend$generateConfusionPairsWithUUID:parameters:language:task:samplingRate:recognizedNbest:recognizedText:correctedText:selectedAlternatives:completion:
-- _objc_msgSend$generateConfusionPairsWithUUID:parameters:language:task:samplingRate:recognizedTokens:recognizedText:correctedText:selectedAlternatives:completion:
-- _objc_msgSend$isSiriDSPTurnedOn
-- _objc_msgSend$notifyRequestCompletion
-- _objc_msgSend$sharedAVSystemController
-- _objc_msgSend$stringByStandardizingPath
-- _objc_msgSend$trainAllAppLMWithLanguage:
-- _objc_msgSend$trainAllAppLMWithLanguage:completion:
-- _objc_msgSend$trainAppLMWithLanguage:configuration:appBundleId:appLmDataFile:appLmDataFileSandboxExtension:
-- _objc_msgSend$trainAppLMWithLanguage:configuration:appBundleId:appLmDataFile:appLmDataFileSandboxExtension:completion:
-- _objc_msgSend$trainAppLMWithLanguage:configuration:appBundleId:appLmDataFile:appLmModelFile:appLmDataFileSandboxExtension:
-- _objc_msgSend$trainAppLMWithLanguage:configuration:appBundleId:appLmDataFile:appLmModelFile:appLmDataFileSandboxExtension:completion:
-- _objc_msgSend$trainGlobalNNLMwithFidesSessionURL:completion:
-- _objc_msgSend$trainPartialAllAppLMWithLanguage:
-- _objc_msgSend$trainPartialAllAppLMWithLanguage:completion:
-- _objc_msgSend$trainPersonalizedLMWithLanguage:configuration:asset:directory:completion:
-- _objc_msgSend$trainPersonalizedLMWithLanguage:configuration:asset:fides:activity:completion:
-- _objc_msgSend$trainPersonalizedLMWithLanguage:configuration:fides:activity:completion:
-- _objc_msgSend$trainPersonalizedLMWithLanguage:configuration:fides:write:completion:
-- _objc_msgSend$upperCaseString:withReply:
-- _objc_msgSend$wakeUpWithCompletion:
-- _objc_msgSend$xpcExitClean
 - _sLog
 CStrings:
 + "%s Client %{public}p connection disconnected, notifying xpc listener"

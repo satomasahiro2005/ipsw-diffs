@@ -1,0 +1,22 @@
+## AppleLatticeSupport
+
+> `/usr/libexec/AppleLatticeSupport.framework/AppleLatticeSupport`
+
+### Other Changes
+
+```diff
+
+-179.0.0.0.0
++182.0.0.0.0
+Symbols:
++ __ZNSt12length_errorC1B9fqe220106EPKc
++ __ZNSt3__110unique_ptrIN12_GLOBAL__N_113LatticeClientENS_14default_deleteIS2_EEE5resetB9fqe220106EPS2_
++ __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE20__throw_length_errorB9fqe220106Ev
++ __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE22__init_internal_bufferB9fqe220106Em
++ __ZNSt3__120__throw_length_errorB9fqe220106EPKc
+- __ZNSt12length_errorC1B9fqe220100EPKc
+- __ZNSt3__110unique_ptrIN12_GLOBAL__N_113LatticeClientENS_14default_deleteIS2_EEE5resetB9fqe220100EPS2_
+- __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE20__throw_length_errorB9fqe220100Ev
+- __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE22__init_internal_bufferB9fqe220100Em
+- __ZNSt3__120__throw_length_errorB9fqe220100EPKc
+```

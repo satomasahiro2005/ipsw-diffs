@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/BrightnessControl.framework/BrightnessControl`
 
-```diff
+### Section Size Changes
 
- 2300.2.9.0.0
--  __TEXT.__text: 0x1b454
-+  __TEXT.__text: 0x1b45c
-   __TEXT.__objc_methlist: 0x13d4
-   __TEXT.__const: 0x4020
-   __TEXT.__gcc_except_tab: 0x4c0
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1b454` | `0x1b45c` | **`+0x8`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _getUserForNits : 136 -> 140
-~ sub_255b96b70 -> sub_25672fb74 : 356 -> 360
+~ sub_255a60b70 -> sub_2565f8b74 : 356 -> 360
 ```

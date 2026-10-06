@@ -2,15 +2,16 @@
 
 > `/System/Library/PrivateFrameworks/Cosmo.framework/Cosmo`
 
-```diff
+### Section Size Changes
 
- 5.40.1.0.0
--  __TEXT.__text: 0x8364c
-+  __TEXT.__text: 0x835b8
-   __TEXT.__objc_methlist: 0x104
-   __TEXT.__const: 0x47a8
-   __TEXT.__cstring: 0x17cf
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x86f68` | `0x86ed4` | **`-0x94`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_25c0b92c4 -> sub_25f86a2c4 : 1832 -> 1752
-~ sub_25c0c86ec -> sub_25f87969c : 388 -> 320
+~ sub_25ebb4880 -> sub_2628f2880 : 1852 -> 1772
+~ sub_25ebc42f4 -> sub_2629022a4 : 388 -> 320
 ```

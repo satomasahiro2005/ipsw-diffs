@@ -2,86 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/SpringBoardHome.framework/SpringBoardHome`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x393358` | `0x393d78` | **`+0xa20`** |
+| `__AUTH.__objc_data` | `0xb990` | `0xb670` | **`-0x320`** |
+| `__DATA_DIRTY.__objc_data` | `0x1590` | `0x18b0` | **`+0x320`** |
+| `__TEXT.__oslogstring` | `0xf560` | `0xf710` | **`+0x1b0`** |
+| `__AUTH_CONST.__cfstring` | `0x16f00` | `0x16f60` | **`+0x60`** |
+| `__TEXT.__cstring` | `0x18c93` | `0x18cd3` | **`+0x40`** |
+| `__TEXT.__gcc_except_tab` | `0x4364` | `0x43a4` | **`+0x40`** |
+| `__TEXT.__objc_methlist` | `0x3edbc` | `0x3edfc` | **`+0x40`** |
+| `__AUTH.__data` | `0xcb0` | `0xc80` | **`-0x30`** |
+| `__AUTH_CONST.__const` | `0x7940` | `0x7960` | **`+0x20`** |
+| `__AUTH_CONST.__objc_const` | `0x59100` | `0x59120` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1cc18` | `0x1cc38` | **`+0x20`** |
+| `__DATA_DIRTY.__data` | `0x60` | `0x80` | **`+0x20`** |
+| `__TEXT.__unwind_info` | `0xfa40` | `0xfa60` | **`+0x20`** |
+| `__DATA.__data` | `0x9790` | `0x9788` | **`-0x8`** |
+| `__DATA_CONST.__const` | `0x9ed8` | `0x9ed0` | **`-0x8`** |
+| `__DATA.__objc_ivar` | `0x3dc4` | `0x3dc8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -226.2.5.0.0
--  __TEXT.__text: 0x37b7d4
--  __TEXT.__objc_methlist: 0x3edbc
 +226.2.7.201.0
-+  __TEXT.__text: 0x37c1b8
-+  __TEXT.__objc_methlist: 0x3edfc
-   __TEXT.__const: 0x7fd4
--  __TEXT.__cstring: 0x18c93
--  __TEXT.__gcc_except_tab: 0x4364
--  __TEXT.__oslogstring: 0xf560
-+  __TEXT.__cstring: 0x18cd3
-+  __TEXT.__gcc_except_tab: 0x43a4
-+  __TEXT.__oslogstring: 0xf710
-   __TEXT.__dlopen_cstrs: 0xb84
-   __TEXT.__ustring: 0x476
-   __TEXT.__constg_swiftt: 0x12e8
 
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0x8
-   __TEXT.__swift_as_cont: 0xc
--  __TEXT.__unwind_info: 0x13168
-+  __TEXT.__unwind_info: 0x13190
-   __TEXT.__eh_frame: 0xeb0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x9ed8
-+  __DATA_CONST.__const: 0x9ed0
-   __DATA_CONST.__objc_classlist: 0x1320
-   __DATA_CONST.__objc_catlist: 0x120
-   __DATA_CONST.__objc_protolist: 0xbc0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1cc18
-+  __DATA_CONST.__objc_selrefs: 0x1cc38
-   __DATA_CONST.__objc_protorefs: 0x1a8
-   __DATA_CONST.__objc_superrefs: 0xe90
-   __DATA_CONST.__objc_arraydata: 0x6e0
-   __DATA_CONST.__got: 0x2478
--  __AUTH_CONST.__const: 0x7940
--  __AUTH_CONST.__cfstring: 0x16f00
--  __AUTH_CONST.__objc_const: 0x59100
-+  __AUTH_CONST.__const: 0x7960
-+  __AUTH_CONST.__cfstring: 0x16f60
-+  __AUTH_CONST.__objc_const: 0x59120
-   __AUTH_CONST.__objc_intobj: 0x648
-   __AUTH_CONST.__objc_doubleobj: 0xf0
-   __AUTH_CONST.__objc_arrayobj: 0x258
-   __AUTH_CONST.__objc_dictobj: 0x140
-   __AUTH_CONST.__auth_got: 0x1da8
--  __AUTH.__objc_data: 0xb990
--  __AUTH.__data: 0xcb0
--  __DATA.__objc_ivar: 0x3dc4
--  __DATA.__data: 0x9790
-+  __AUTH.__objc_data: 0xb670
-+  __AUTH.__data: 0xc80
-+  __DATA.__objc_ivar: 0x3dc8
-+  __DATA.__data: 0x9788
-   __DATA.__common: 0x78
--  __DATA_DIRTY.__objc_data: 0x1590
--  __DATA_DIRTY.__data: 0x60
-+  __DATA_DIRTY.__objc_data: 0x18b0
-+  __DATA_DIRTY.__data: 0x80
-   __DATA_DIRTY.__bss: 0x18
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 24832
--  Symbols:   45997
+-  Symbols:   33708
 -  CStrings:  4590
 +  Functions: 24840
-+  Symbols:   46013
++  Symbols:   33718
 +  CStrings:  4598
- 
 Symbols:
 + -[SBIconDragContext addIconHiddenForDropAnimation:]
 + -[SBIconDragContext isIconHiddenForDropAnimation:]
@@ -107,13 +62,6 @@ Symbols:
 + ___69-[SBIconDragManager iconView:item:willAnimateDragCancelWithAnimator:]_block_invoke_7
 + ___78-[SBIconDragManager _sourceIconViewForDragItem:inDragContext:primaryIconView:]_block_invoke
 + ___block_descriptor_32_e25_16?0"SBIconListModel"8l
-+ _objc_msgSend$_dismissPageManagementIfPresented:
-+ _objc_msgSend$_sourceIconViewForDragItem:inDragContext:primaryIconView:
-+ _objc_msgSend$_updateAttributedApp
-+ _objc_msgSend$addIconHiddenForDropAnimation:
-+ _objc_msgSend$descriptionForObject:
-+ _objc_msgSend$dismissWidgetAddSheetIfPresentedAndClearAnimated:
-+ _objc_msgSend$isIconHiddenForDropAnimation:
 - -[SBIconDragManager configureIconView:]
 - GCC_except_table227
 - GCC_except_table292
@@ -128,7 +76,6 @@ Symbols:
 - ___39-[SBIconDragManager configureIconView:]_block_invoke
 - ___51-[SBIconDragManager iconViewWillBeginDrag:session:]_block_invoke_3
 - ___block_descriptor_56_e8_32s40s48s_e33_v24?0"<SBIconDragPreview>"8^B16ls32l8s40l8s48l8
-- _objc_msgSend$configureIconView:
 CStrings:
 + "@16@?0@\"SBIconListModel\"8"
 + "Page visibility changing: list %{public}@ hidden %{public}d -> %{public}d, byUser: %{public}d, hiddenDate: %{public}@"

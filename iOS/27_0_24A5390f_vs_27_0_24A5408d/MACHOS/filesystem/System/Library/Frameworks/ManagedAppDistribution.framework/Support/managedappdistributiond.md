@@ -2,110 +2,67 @@
 
 > `/System/Library/Frameworks/ManagedAppDistribution.framework/Support/managedappdistributiond`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_entry`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift5_protos`
-- `__TEXT.__eh_frame`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x6e5e34` | `0x6d7a48` | **`-0xe3ec`** |
+| `__TEXT.__objc_methname` | `0x85b5` | `0x6ad5` | **`-0x1ae0`** |
+| `__DATA.__objc_const` | `0x8600` | `0x6f00` | **`-0x1700`** |
+| `__TEXT.__objc_stubs` | `0x5ae0` | `0x48c0` | **`-0x1220`** |
+| `__TEXT.__objc_methlist` | `0x23cc` | `0x141c` | **`-0xfb0`** |
+| `__DATA_CONST.__cfstring` | `0xae0` | `0x60` | **`-0xa80`** |
+| `__TEXT.__cstring` | `0xf9cd` | `0xf25d` | **`-0x770`** |
+| `__DATA.__objc_selrefs` | `0x1ea8` | `0x17f0` | **`-0x6b8`** |
+| `__TEXT.__objc_methtype` | `0x1ec5` | `0x18e5` | **`-0x5e0`** |
+| `__DATA.__objc_data` | `0x2448` | `0x1ea8` | **`-0x5a0`** |
+| `__TEXT.__auth_stubs` | `0x7520` | `0x7060` | **`-0x4c0`** |
+| `__DATA_CONST.__const` | `0x2f4a8` | `0x2f008` | **`-0x4a0`** |
+| `__TEXT.__oslogstring` | `0x160f2` | `0x15d82` | **`-0x370`** |
+| `__TEXT.__gcc_except_tab` | `0x50c` | `0x220` | **`-0x2ec`** |
+| `__DATA.__bss` | `0x2ec50` | `0x2ef30` | **`+0x2e0`** |
+| `__DATA_CONST.__auth_got` | `0x3aa0` | `0x3840` | **`-0x260`** |
+| `__TEXT.__objc_classname` | `0x1f76` | `0x1db6` | **`-0x1c0`** |
+| `__TEXT.__const` | `0x3fe60` | `0x3ffb0` | **`+0x150`** |
+| `__DATA.__data` | `0x11038` | `0x10f48` | **`-0xf0`** |
+| `__DATA.__objc_ivar` | `0xcc` | `—` | **`-0xcc`** |
+| `__DATA_CONST.__objc_classlist` | `0x390` | `0x300` | **`-0x90`** |
+| `__DATA_CONST.__got` | `0x1fd8` | `0x1f58` | **`-0x80`** |
+| `__DATA_CONST.__objc_superrefs` | `0x78` | `—` | **`-0x78`** |
+| `__TEXT.__unwind_info` | `0x12520` | `0x124d0` | **`-0x50`** |
+| `__TEXT.__constg_swiftt` | `0x7578` | `0x75b8` | **`+0x40`** |
+| `__TEXT.__swift5_typeref` | `0x6560` | `0x659c` | **`+0x3c`** |
+| `__DATA_CONST.__objc_intobj` | `0x18` | `—` | **`-0x18`** |
+| `__DATA_CONST.__objc_protolist` | `0x190` | `0x178` | **`-0x18`** |
+| `__TEXT.__swift5_proto` | `0x19d8` | `0x19f0` | **`+0x18`** |
+| `__TEXT.__swift_as_ret` | `0x19d8` | `0x19e4` | **`+0xc`** |
+| `__DATA_CONST.__objc_protorefs` | `0xd0` | `0xc8` | **`-0x8`** |
+| `__TEXT.__swift5_types` | `0xa78` | `0xa80` | **`+0x8`** |
+| `__TEXT.__swift_as_cont` | `0x3558` | `0x3554` | **`-0x4`** |
+
+### Same-size Content Changes
+
 - `__DATA_CONST.__auth_ptr`
+- `__TEXT.__eh_frame`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_protos`
+- `__TEXT.__swift_as_entry`
+
+### Other Changes
 
 ```diff
 
 -4.0.39.0.0
--  __TEXT.__text: 0x6e5e34
--  __TEXT.__auth_stubs: 0x7520
--  __TEXT.__objc_stubs: 0x5ae0
--  __TEXT.__objc_methlist: 0x23cc
--  __TEXT.__const: 0x3fe60
 +4.0.44.0.0
-+  __TEXT.__text: 0x6d7a48
-+  __TEXT.__auth_stubs: 0x7060
-+  __TEXT.__objc_stubs: 0x48c0
-+  __TEXT.__objc_methlist: 0x141c
-+  __TEXT.__const: 0x3ffb0
-   __TEXT.__swift5_entry: 0x8
--  __TEXT.__cstring: 0xf9cd
--  __TEXT.__objc_methname: 0x85b5
--  __TEXT.__oslogstring: 0x160f2
--  __TEXT.__objc_classname: 0x1f76
--  __TEXT.__objc_methtype: 0x1ec5
--  __TEXT.__gcc_except_tab: 0x50c
-+  __TEXT.__cstring: 0xf25d
-+  __TEXT.__objc_classname: 0x1db6
-+  __TEXT.__objc_methtype: 0x18e5
-   __TEXT.__dlopen_cstrs: 0xc8
--  __TEXT.__constg_swiftt: 0x7578
--  __TEXT.__swift5_typeref: 0x6560
--  __TEXT.__swift5_proto: 0x19d8
--  __TEXT.__swift5_types: 0xa78
-+  __TEXT.__gcc_except_tab: 0x220
-+  __TEXT.__objc_methname: 0x6ad5
-+  __TEXT.__constg_swiftt: 0x75b8
-+  __TEXT.__swift5_typeref: 0x659c
-+  __TEXT.__oslogstring: 0x15d82
-+  __TEXT.__swift5_proto: 0x19f0
-+  __TEXT.__swift5_types: 0xa80
-   __TEXT.__swift_as_entry: 0xc38
--  __TEXT.__swift_as_ret: 0x19d8
--  __TEXT.__swift_as_cont: 0x3558
-+  __TEXT.__swift_as_ret: 0x19e4
-+  __TEXT.__swift_as_cont: 0x3554
-   __TEXT.__swift5_protos: 0x88
--  __TEXT.__unwind_info: 0x12520
-+  __TEXT.__unwind_info: 0x124d0
-   __TEXT.__eh_frame: 0x3a178
--  __DATA_CONST.__const: 0x2f4a8
--  __DATA_CONST.__cfstring: 0xae0
--  __DATA_CONST.__objc_classlist: 0x390
--  __DATA_CONST.__objc_protolist: 0x190
-+  __DATA_CONST.__const: 0x2f008
-+  __DATA_CONST.__cfstring: 0x60
-+  __DATA_CONST.__objc_classlist: 0x300
-+  __DATA_CONST.__objc_protolist: 0x178
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_protorefs: 0xd0
--  __DATA_CONST.__objc_superrefs: 0x78
--  __DATA_CONST.__objc_intobj: 0x18
--  __DATA_CONST.__auth_got: 0x3aa0
--  __DATA_CONST.__got: 0x1fd8
-+  __DATA_CONST.__objc_protorefs: 0xc8
-+  __DATA_CONST.__auth_got: 0x3840
-+  __DATA_CONST.__got: 0x1f58
-   __DATA_CONST.__auth_ptr: 0x5e60
--  __DATA.__objc_const: 0x8600
--  __DATA.__objc_selrefs: 0x1ea8
--  __DATA.__objc_ivar: 0xcc
--  __DATA.__objc_data: 0x2448
--  __DATA.__data: 0x11038
--  __DATA.__bss: 0x2ec50
-+  __DATA.__objc_const: 0x6f00
-+  __DATA.__objc_selrefs: 0x17f0
-+  __DATA.__objc_data: 0x1ea8
-+  __DATA.__data: 0x10f48
-+  __DATA.__bss: 0x2ef30
-   __DATA.__common: 0xef0
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/AdAttributionKit.framework/AdAttributionKit
 
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities
-   - /System/Library/PrivateFrameworks/AppInstallationMetrics.framework/AppInstallationMetrics
 +  - /System/Library/PrivateFrameworks/AppStoreUtilities.framework/AppStoreUtilities
-   - /System/Library/PrivateFrameworks/AppleKeyStore.framework/AppleKeyStore
-   - /System/Library/PrivateFrameworks/AppleMediaServices.framework/AppleMediaServices
-   - /System/Library/PrivateFrameworks/AppleMediaServicesKitInternal.framework/AppleMediaServicesKitInternal
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 16941
 -  Symbols:   3348
 -  CStrings:  4583
 +  Functions: 16573
 +  Symbols:   3265
 +  CStrings:  4061
- 
 Symbols:
 + _$s14MarketplaceKit45ConfirmationSheetInstallProgressConfigurationV6itemID14openButtonText04donekL006resumekL002isA0ACs6UInt64V_S3SSbtcfC
 + _ASUSQLEntityPropertyPersistentID

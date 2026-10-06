@@ -2,72 +2,48 @@
 
 > `/usr/libexec/safetyalertsd`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__init_offsets`
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfdb50` | `0xfe188` | **`+0x638`** |
+| `__TEXT.__oslogstring` | `0x432c5` | `0x4359a` | **`+0x2d5`** |
+| `__TEXT.__gcc_except_tab` | `0xeed4` | `0xef60` | **`+0x8c`** |
+| `__TEXT.__unwind_info` | `0x43d0` | `0x4408` | **`+0x38`** |
+| `__DATA_CONST.__const` | `0x89d8` | `0x89b8` | **`-0x20`** |
+| `__DATA_CONST.__got` | `0x5b8` | `0x5c8` | **`+0x10`** |
+| `__TEXT.__auth_stubs` | `0x10c0` | `0x10b0` | **`-0x10`** |
+| `__DATA_CONST.__auth_got` | `0x870` | `0x868` | **`-0x8`** |
+| `__TEXT.__cstring` | `0x7a52` | `0x7a5a` | **`+0x8`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
 - `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
 - `__DATA_CONST.__objc_arraydata`
 - `__DATA_CONST.__objc_arrayobj`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
-- `__DATA.__data`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__const`
+- `__TEXT.__init_offsets`
+- `__TEXT.__objc_methlist`
+
+### Other Changes
 
 ```diff
 
 -70.0.17.0.0
--  __TEXT.__text: 0xfdb50
--  __TEXT.__auth_stubs: 0x10c0
 +70.0.19.0.0
-+  __TEXT.__text: 0xfe188
-+  __TEXT.__auth_stubs: 0x10b0
-   __TEXT.__objc_stubs: 0x3760
-   __TEXT.__init_offsets: 0x8
-   __TEXT.__objc_methlist: 0xb9c
-   __TEXT.__const: 0x9870
--  __TEXT.__cstring: 0x7a52
--  __TEXT.__gcc_except_tab: 0xeed4
--  __TEXT.__oslogstring: 0x432c5
-+  __TEXT.__cstring: 0x7a5a
-+  __TEXT.__gcc_except_tab: 0xef60
-+  __TEXT.__oslogstring: 0x4359a
-   __TEXT.__objc_methname: 0x3e58
-   __TEXT.__objc_classname: 0x1e9
-   __TEXT.__objc_methtype: 0x1cdf
-   __TEXT.__ustring: 0x18
--  __TEXT.__unwind_info: 0x43d0
--  __DATA_CONST.__const: 0x89d8
-+  __TEXT.__unwind_info: 0x4408
-+  __DATA_CONST.__const: 0x89b8
-   __DATA_CONST.__cfstring: 0x72c0
-   __DATA_CONST.__objc_classlist: 0x48
-   __DATA_CONST.__objc_protolist: 0x58
 
-   __DATA_CONST.__objc_intobj: 0x120
-   __DATA_CONST.__objc_arraydata: 0x10
-   __DATA_CONST.__objc_arrayobj: 0x30
--  __DATA_CONST.__auth_got: 0x870
--  __DATA_CONST.__got: 0x5b8
-+  __DATA_CONST.__auth_got: 0x868
-+  __DATA_CONST.__got: 0x5c8
-   __DATA_CONST.__auth_ptr: 0x10
-   __DATA.__objc_const: 0x1248
-   __DATA.__objc_selrefs: 0x1260
-
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libcompression.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 3602
 -  Symbols:   470
 -  CStrings:  5100
 +  Functions: 3605
 +  Symbols:   469
 +  CStrings:  5108
- 
 Symbols:
 - _dispatch_after
 CStrings:

@@ -2,15 +2,16 @@
 
 > `/System/Library/NanoTimeKit/FaceBundles/NTKRenegadeFaceBundleCompanion.bundle/NTKRenegadeFaceBundleCompanion`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__DATA_CONST.__got` | `0x138` | `0x158` | **`+0x20`** |
+
+### Other Changes
+
 ```diff
 
-   __DATA_CONST.__objc_arrayobj: 0x78
-   __DATA_CONST.__objc_doubleobj: 0xa0
-   __DATA_CONST.__auth_got: 0x2f0
--  __DATA_CONST.__got: 0x138
-+  __DATA_CONST.__got: 0x158
-   __DATA.__objc_const: 0x19e8
-   __DATA.__objc_selrefs: 0xbe8
-   __DATA.__objc_ivar: 0x118
-
+-2483.493.1.0.0
++2483.503.0.0.0
 ```

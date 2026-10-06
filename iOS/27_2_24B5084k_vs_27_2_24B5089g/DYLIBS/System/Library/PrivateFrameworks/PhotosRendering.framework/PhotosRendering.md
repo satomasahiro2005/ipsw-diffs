@@ -2,88 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/PhotosRendering.framework/PhotosRendering`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x41a80` | `0x548c0` | **`+0x12e40`** |
+| `__DATA.__bss` | `0x3900` | `0x5410` | **`+0x1b10`** |
+| `__TEXT.__const` | `0x4a60` | `0x5a70` | **`+0x1010`** |
+| `__TEXT.__swift5_typeref` | `0x158d` | `0x2391` | **`+0xe04`** |
+| `__AUTH_CONST.__const` | `0x47c8` | `0x5258` | **`+0xa90`** |
+| `__TEXT.__constg_swiftt` | `0x1d8c` | `0x2784` | **`+0x9f8`** |
+| `__DATA.__data` | `0x2798` | `0x3168` | **`+0x9d0`** |
+| `__AUTH.__data` | `0x1388` | `0x1bd8` | **`+0x850`** |
+| `__TEXT.__eh_frame` | `0x1d98` | `0x2330` | **`+0x598`** |
+| `__TEXT.__unwind_info` | `0x1770` | `0x1c88` | **`+0x518`** |
+| `__TEXT.__cstring` | `0xeb2` | `0x13a2` | **`+0x4f0`** |
+| `__TEXT.__swift5_fieldmd` | `0x1b64` | `0x1f88` | **`+0x424`** |
+| `__TEXT.__swift5_assocty` | `0x6c8` | `0xab8` | **`+0x3f0`** |
+| `__AUTH_CONST.__objc_const` | `0x1258` | `0x1588` | **`+0x330`** |
+| `__TEXT.__objc_methlist` | `0xdbc` | `0xfc4` | **`+0x208`** |
+| `__TEXT.__swift5_reflstr` | `0xbfc` | `0xdad` | **`+0x1b1`** |
+| `__TEXT.__swift5_proto` | `0x34c` | `0x448` | **`+0xfc`** |
+| `__TEXT.__swift5_capture` | `0x2a4` | `0x210` | **`-0x94`** |
+| `__DATA_CONST.__const` | `0x150` | `0x1e0` | **`+0x90`** |
+| `__DATA_CONST.__objc_selrefs` | `0xe10` | `0xea0` | **`+0x90`** |
+| `__AUTH_CONST.__auth_got` | `0x940` | `0x9c0` | **`+0x80`** |
+| `__TEXT.__swift5_types` | `0x280` | `0x2dc` | **`+0x5c`** |
+| `__TEXT.__swift5_protos` | `0x64` | `0xb0` | **`+0x4c`** |
+| `__DATA_CONST.__objc_protolist` | `0x1f0` | `0x230` | **`+0x40`** |
+| `__DATA_CONST.__objc_protorefs` | `0xf8` | `0x118` | **`+0x20`** |
+| `__TEXT.__swift5_builtin` | `0x17c` | `0x190` | **`+0x14`** |
+
+### Other Changes
+
 ```diff
 
 -916.40.110.0.0
--  __TEXT.__text: 0x3f8d0
--  __TEXT.__objc_methlist: 0xdbc
--  __TEXT.__const: 0x4a60
--  __TEXT.__swift5_typeref: 0x158d
--  __TEXT.__cstring: 0xeb2
--  __TEXT.__swift5_reflstr: 0xbfc
--  __TEXT.__swift5_assocty: 0x6c8
--  __TEXT.__constg_swiftt: 0x1d8c
--  __TEXT.__swift5_fieldmd: 0x1b64
--  __TEXT.__swift5_builtin: 0x17c
 +916.45.110.0.0
-+  __TEXT.__text: 0x51c4c
-+  __TEXT.__objc_methlist: 0xfc4
-+  __TEXT.__const: 0x5a70
-+  __TEXT.__swift5_typeref: 0x2391
-+  __TEXT.__cstring: 0x13a2
-+  __TEXT.__swift5_capture: 0x210
-+  __TEXT.__swift5_reflstr: 0xdad
-+  __TEXT.__swift5_assocty: 0xab8
-+  __TEXT.__constg_swiftt: 0x2784
-+  __TEXT.__swift5_fieldmd: 0x1f88
-+  __TEXT.__swift5_builtin: 0x190
-   __TEXT.__swift5_mpenum: 0x20
--  __TEXT.__swift5_protos: 0x64
--  __TEXT.__swift5_proto: 0x34c
--  __TEXT.__swift5_types: 0x280
--  __TEXT.__swift5_capture: 0x2a4
-+  __TEXT.__swift5_protos: 0xb0
-+  __TEXT.__swift5_proto: 0x448
-+  __TEXT.__swift5_types: 0x2dc
-   __TEXT.__oslogstring: 0x84
-   __TEXT.__swift_as_entry: 0x10
-   __TEXT.__swift_as_ret: 0xc
-   __TEXT.__swift_as_cont: 0x1c
--  __TEXT.__unwind_info: 0x1cb0
--  __TEXT.__eh_frame: 0x1d98
-+  __TEXT.__unwind_info: 0x2270
-+  __TEXT.__eh_frame: 0x2330
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x150
-+  __DATA_CONST.__const: 0x1e0
-   __DATA_CONST.__objc_classlist: 0x18
--  __DATA_CONST.__objc_protolist: 0x1f0
-+  __DATA_CONST.__objc_protolist: 0x230
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xe10
--  __DATA_CONST.__objc_protorefs: 0xf8
-+  __DATA_CONST.__objc_selrefs: 0xea0
-+  __DATA_CONST.__objc_protorefs: 0x118
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x47c8
--  __AUTH_CONST.__objc_const: 0x1258
--  __AUTH_CONST.__auth_got: 0x940
-+  __AUTH_CONST.__const: 0x5258
-+  __AUTH_CONST.__objc_const: 0x1588
-+  __AUTH_CONST.__auth_got: 0x9c0
-   __AUTH.__objc_data: 0xe0
--  __AUTH.__data: 0x1388
--  __DATA.__data: 0x2798
-+  __AUTH.__data: 0x1bd8
-+  __DATA.__data: 0x3168
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0xf0
-   __DATA_DIRTY.__data: 0x50
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2890
--  Symbols:   1519
+-  Symbols:   1258
 -  CStrings:  100
 +  Functions: 3642
-+  Symbols:   1862
++  Symbols:   1589
 +  CStrings:  129
- 
 Symbols:
 + _NUPixelPointFromCGPoint
 + _OBJC_CLASS_$_NUChannelArrayFormat
@@ -309,27 +271,6 @@ Symbols:
 + _flat unique So15NUMediaMetadata_p
 + _generic environment 15PhotosRendering10AnyChannelRzl
 + _get_enum_tag_for_layout_string 15PhotosRendering11RenderMediaV8MetadataO
-+ _objc_msgSend$computePipelineWithProcessor:error:
-+ _objc_msgSend$geometryByCroppingToScaledRect:
-+ _objc_msgSend$geometryByTranslatingOriginBy:
-+ _objc_msgSend$geometryByUpdatingDuration:
-+ _objc_msgSend$geometryByUpdatingScale:
-+ _objc_msgSend$image
-+ _objc_msgSend$initWithAVMetadataItems:identifier:
-+ _objc_msgSend$initWithCGImageMetadata:identifier:
-+ _objc_msgSend$initWithCGImageProperties:identifier:
-+ _objc_msgSend$initWithDescriptor:validatedDefaultValue:
-+ _objc_msgSend$initWithItemFormat:
-+ _objc_msgSend$initWithWrappedFormat:
-+ _objc_msgSend$itemFormat
-+ _objc_msgSend$metadataPipelineWithProcessor:error:
-+ _objc_msgSend$renderPipelineWithProcessor:error:
-+ _objc_msgSend$sampleMode
-+ _objc_msgSend$scaleForImageSize:
-+ _objc_msgSend$setSampleMode:
-+ _objc_msgSend$setScale:
-+ _objc_msgSend$time
-+ _objc_msgSend$wrappedFormat
 + _swift_getExtendedExistentialTypeMetadata
 + _swift_getExtendedExistentialTypeMetadata_unique
 + _swift_getKeyPath
@@ -524,15 +465,6 @@ Symbols:
 - _flat unique So15NUVideoMetadata_p
 - _flat unique So19NUAuxiliaryMetadata_p
 - _get_enum_tag_for_layout_string 15PhotosRendering5MediaV8MetadataO
-- _objc_msgSend$__swift_setObject:forKeyedSubscript:
-- _objc_msgSend$compare:
-- _objc_msgSend$initWithDescriptor:defaultValue:
-- _objc_msgSend$initWithDictionary:
-- _objc_msgSend$initWithMajor:minor:
-- _objc_msgSend$initWithName:
-- _objc_msgSend$major
-- _objc_msgSend$minor
-- _objc_msgSend$removeObjectForKey:
 - _swift_unexpectedError
 - _symbolic $s15PhotosRendering11MediaFormatP
 - _symbolic $s15PhotosRendering5MediaV11AttachmentsV13AttachmentKeyP

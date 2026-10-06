@@ -2,101 +2,50 @@
 
 > `/System/Library/PrivateFrameworks/IntelligenceFlowContextRuntime.framework/IntelligenceFlowContextRuntime`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1022e0` | `0x1087bc` | **`+0x64dc`** |
+| `__TEXT.__oslogstring` | `0x3457` | `0x3a00` | **`+0x5a9`** |
+| `__DATA_DIRTY.__data` | `0x2dc0` | `0x3168` | **`+0x3a8`** |
+| `__TEXT.__eh_frame` | `0x8270` | `0x8598` | **`+0x328`** |
+| `__DATA.__bss` | `0x1670` | `0x13f0` | **`-0x280`** |
+| `__DATA.__data` | `0xe70` | `0xc90` | **`-0x1e0`** |
+| `__AUTH_CONST.__const` | `0x50a0` | `0x5230` | **`+0x190`** |
+| `__TEXT.__const` | `0x4a90` | `0x4930` | **`-0x160`** |
+| `__DATA_DIRTY.__bss` | `0xc80` | `0xd80` | **`+0x100`** |
+| `__TEXT.__swift5_capture` | `0x162c` | `0x172c` | **`+0x100`** |
+| `__AUTH.__data` | `0x640` | `0x558` | **`-0xe8`** |
+| `__TEXT.__unwind_info` | `0x2ef0` | `0x2fa8` | **`+0xb8`** |
+| `__AUTH_CONST.__auth_got` | `0x25b0` | `0x2658` | **`+0xa8`** |
+| `__TEXT.__swift5_reflstr` | `0xd8a` | `0xcf1` | **`-0x99`** |
+| `__DATA_CONST.__got` | `0xfd0` | `0x1030` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0x398` | `0x348` | **`-0x50`** |
+| `__DATA_DIRTY.__objc_data` | `0x4a0` | `0x4f0` | **`+0x50`** |
+| `__TEXT.__swift5_fieldmd` | `0x124c` | `0x1204` | **`-0x48`** |
+| `__TEXT.__constg_swiftt` | `0x1a9c` | `0x1a6c` | **`-0x30`** |
+| `__AUTH_CONST.__objc_const` | `0x1d80` | `0x1d60` | **`-0x20`** |
+| `__TEXT.__cstring` | `0x1ccc` | `0x1cec` | **`+0x20`** |
+| `__TEXT.__swift5_typeref` | `0x2b2c` | `0x2b10` | **`-0x1c`** |
+| `__TEXT.__swift_as_cont` | `0x64c` | `0x65c` | **`+0x10`** |
+| `__TEXT.__swift5_proto` | `0x204` | `0x1f8` | **`-0xc`** |
+| `__TEXT.__swift_as_ret` | `0x3b4` | `0x3c0` | **`+0xc`** |
+| `__TEXT.__swift_as_entry` | `0x38c` | `0x394` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x1e8` | `0x1e4` | **`-0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1022e0
-+  __TEXT.__text: 0x1087bc
-   __TEXT.__objc_methlist: 0x6cc
--  __TEXT.__const: 0x4a90
--  __TEXT.__swift5_typeref: 0x2b2c
--  __TEXT.__swift5_fieldmd: 0x124c
--  __TEXT.__constg_swiftt: 0x1a9c
-+  __TEXT.__const: 0x4930
-+  __TEXT.__swift5_typeref: 0x2b10
-+  __TEXT.__swift5_fieldmd: 0x1204
-+  __TEXT.__constg_swiftt: 0x1a6c
-   __TEXT.__swift5_builtin: 0xdc
--  __TEXT.__swift5_reflstr: 0xd8a
-+  __TEXT.__swift5_reflstr: 0xcf1
-   __TEXT.__swift5_assocty: 0x220
-   __TEXT.__swift5_protos: 0x40
--  __TEXT.__swift5_proto: 0x204
--  __TEXT.__swift5_types: 0x1e8
--  __TEXT.__cstring: 0x1ccc
--  __TEXT.__oslogstring: 0x3457
--  __TEXT.__swift_as_entry: 0x38c
--  __TEXT.__swift_as_ret: 0x3b4
--  __TEXT.__swift_as_cont: 0x64c
--  __TEXT.__swift5_capture: 0x162c
-+  __TEXT.__swift5_proto: 0x1f8
-+  __TEXT.__swift5_types: 0x1e4
-+  __TEXT.__cstring: 0x1cec
-+  __TEXT.__oslogstring: 0x3a00
-+  __TEXT.__swift_as_entry: 0x394
-+  __TEXT.__swift_as_ret: 0x3c0
-+  __TEXT.__swift_as_cont: 0x65c
-+  __TEXT.__swift5_capture: 0x172c
-   __TEXT.__swift5_mpenum: 0x18
--  __TEXT.__unwind_info: 0x2ef0
--  __TEXT.__eh_frame: 0x8270
-+  __TEXT.__unwind_info: 0x2fa8
-+  __TEXT.__eh_frame: 0x8598
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
+-3600.144.5.501.3
++3600.147.12.501.3
 
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0xab8
-   __DATA_CONST.__objc_protorefs: 0x58
--  __DATA_CONST.__got: 0xfd0
--  __AUTH_CONST.__const: 0x50a0
-+  __DATA_CONST.__got: 0x1030
-+  __AUTH_CONST.__const: 0x5230
-   __AUTH_CONST.__cfstring: 0xc0
--  __AUTH_CONST.__objc_const: 0x1d80
--  __AUTH_CONST.__auth_got: 0x25b0
--  __AUTH.__objc_data: 0x398
--  __AUTH.__data: 0x640
--  __DATA.__data: 0xe70
--  __DATA.__bss: 0x1670
-+  __AUTH_CONST.__objc_const: 0x1d60
-+  __AUTH_CONST.__auth_got: 0x2658
-+  __AUTH.__objc_data: 0x348
-+  __AUTH.__data: 0x558
-+  __DATA.__data: 0xc90
-+  __DATA.__bss: 0x13f0
-   __DATA.__common: 0x30
--  __DATA_DIRTY.__objc_data: 0x4a0
--  __DATA_DIRTY.__data: 0x2dc0
--  __DATA_DIRTY.__bss: 0xc80
-+  __DATA_DIRTY.__objc_data: 0x4f0
-+  __DATA_DIRTY.__data: 0x3168
-+  __DATA_DIRTY.__bss: 0xd80
-   __DATA_DIRTY.__common: 0x88
-   - /System/Library/Frameworks/Accelerate.framework/Accelerate
-   - /System/Library/Frameworks/AppIntents.framework/AppIntents
-
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 4780
 +  Functions: 4846
-   Symbols:   327
--  CStrings:  375
-+  CStrings:  389
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH_CONST.__cfstring : content changed
+
+-  CStrings:  369
++  CStrings:  383
 Symbols:
 + _OBJC_CLASS_$_NSError
 + _swift_deallocBox
@@ -123,5 +72,4 @@ CStrings:
 - "[UserContextFetcher] No usable target window after retries for bundle=%{public}s"
 - "[UserContextFetcher] Screenshot was requested for window %s but not received"
 - "fetchUserContext starting for %{public}s, screenshot=%{bool}d"
-
 ```

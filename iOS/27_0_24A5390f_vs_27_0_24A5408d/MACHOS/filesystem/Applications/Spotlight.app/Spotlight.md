@@ -2,15 +2,14 @@
 
 > `/Applications/Spotlight.app/Spotlight`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
 - `__TEXT.__const`
+
+### Other Changes
 
 ```diff
 
 -236.0.11.100.0
 +236.0.21.100.0
-   __TEXT.__text: 0xe9c
-   __TEXT.__auth_stubs: 0x310
-   __TEXT.__objc_stubs: 0x300
 ```

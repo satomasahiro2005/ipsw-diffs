@@ -2,125 +2,53 @@
 
 > `/System/Library/Frameworks/SensorKit.framework/SensorKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x44cc8` | `0x45bd4` | **`+0xf0c`** |
+| `__AUTH_CONST.__const` | `0x13d8` | `0x15e0` | **`+0x208`** |
+| `__AUTH_CONST.__objc_const` | `0xa828` | `0xa688` | **`-0x1a0`** |
+| `__TEXT.__objc_methlist` | `0x56cc` | `0x55d4` | **`-0xf8`** |
+| `__TEXT.__swift5_capture` | `0xc0` | `0x158` | **`+0x98`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2248` | `0x21b8` | **`-0x90`** |
+| `__AUTH_CONST.__auth_got` | `0x748` | `0x7d0` | **`+0x88`** |
+| `__TEXT.__cstring` | `0x5c36` | `0x5baf` | **`-0x87`** |
+| `__DATA_CONST.__const` | `0x12f8` | `0x1280` | **`-0x78`** |
+| `__AUTH_CONST.__cfstring` | `0x5d20` | `0x5cc0` | **`-0x60`** |
+| `__AUTH.__objc_data` | `0x1788` | `0x1738` | **`-0x50`** |
+| `__TEXT.__const` | `0x1ae8` | `0x1a98` | **`-0x50`** |
+| `__DATA_CONST.__got` | `0x448` | `0x480` | **`+0x38`** |
+| `__TEXT.__eh_frame` | `0x398` | `0x368` | **`-0x30`** |
+| `__TEXT.__gcc_except_tab` | `0x8c8` | `0x898` | **`-0x30`** |
+| `__TEXT.__swift5_typeref` | `0x8ca` | `0x8f8` | **`+0x2e`** |
+| `__DATA_DIRTY.__bss` | `0x160` | `0x180` | **`+0x20`** |
+| `__DATA.__objc_ivar` | `0x658` | `0x640` | **`-0x18`** |
+| `__DATA.__bss` | `0x2d48` | `0x2d38` | **`-0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x404` | `0x410` | **`+0xc`** |
+| `__TEXT.__swift5_reflstr` | `0x14a` | `0x155` | **`+0xb`** |
+| `__DATA.__data` | `0x11d8` | `0x11d0` | **`-0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x2a8` | `0x2a0` | **`-0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x250` | `0x248` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0x1650` | `0x1658` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x1c` | `0x20` | **`+0x4`** |
+| `__TEXT.__oslogstring` | `0x4dd3` | `0x4dd4` | **`+0x1`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x44cc8
--  __TEXT.__objc_methlist: 0x56cc
-+  __TEXT.__text: 0x45bd4
-+  __TEXT.__objc_methlist: 0x55d4
-   __TEXT.__dlopen_cstrs: 0x95
--  __TEXT.__const: 0x1ae8
--  __TEXT.__swift5_typeref: 0x8ca
--  __TEXT.__cstring: 0x5c36
--  __TEXT.__swift5_capture: 0xc0
-+  __TEXT.__const: 0x1a98
-+  __TEXT.__swift5_typeref: 0x8f8
-+  __TEXT.__cstring: 0x5baf
-+  __TEXT.__swift5_capture: 0x158
-   __TEXT.__constg_swiftt: 0x62c
-   __TEXT.__swift5_builtin: 0x28
--  __TEXT.__swift5_reflstr: 0x14a
--  __TEXT.__swift5_fieldmd: 0x404
-+  __TEXT.__swift5_reflstr: 0x155
-+  __TEXT.__swift5_fieldmd: 0x410
-   __TEXT.__swift5_assocty: 0x2b8
--  __TEXT.__oslogstring: 0x4dd3
-+  __TEXT.__oslogstring: 0x4dd4
-   __TEXT.__swift5_proto: 0x1c0
-   __TEXT.__swift5_types: 0x88
-   __TEXT.__swift_as_entry: 0x1c
--  __TEXT.__swift_as_ret: 0x1c
-+  __TEXT.__swift_as_ret: 0x20
-   __TEXT.__swift_as_cont: 0x3c
-   __TEXT.__swift5_protos: 0xc
--  __TEXT.__gcc_except_tab: 0x8c8
--  __TEXT.__unwind_info: 0x1650
--  __TEXT.__eh_frame: 0x398
-+  __TEXT.__gcc_except_tab: 0x898
-+  __TEXT.__unwind_info: 0x1658
-+  __TEXT.__eh_frame: 0x368
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x12f8
--  __DATA_CONST.__objc_classlist: 0x2a8
-+  __DATA_CONST.__const: 0x1280
-+  __DATA_CONST.__objc_classlist: 0x2a0
-   __DATA_CONST.__objc_catlist: 0x38
-   __DATA_CONST.__objc_protolist: 0x160
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2248
-+  __DATA_CONST.__objc_selrefs: 0x21b8
-   __DATA_CONST.__objc_protorefs: 0xc0
--  __DATA_CONST.__objc_superrefs: 0x250
-+  __DATA_CONST.__objc_superrefs: 0x248
-   __DATA_CONST.__objc_arraydata: 0x5e0
--  __DATA_CONST.__got: 0x448
--  __AUTH_CONST.__const: 0x13d8
--  __AUTH_CONST.__cfstring: 0x5d20
--  __AUTH_CONST.__objc_const: 0xa828
-+  __DATA_CONST.__got: 0x480
-+  __AUTH_CONST.__const: 0x15e0
-+  __AUTH_CONST.__cfstring: 0x5cc0
-+  __AUTH_CONST.__objc_const: 0xa688
-   __AUTH_CONST.__objc_arrayobj: 0x5e8
-   __AUTH_CONST.__objc_doubleobj: 0x20
--  __AUTH_CONST.__auth_got: 0x748
--  __AUTH.__objc_data: 0x1788
-+  __AUTH_CONST.__auth_got: 0x7d0
-+  __AUTH.__objc_data: 0x1738
-   __AUTH.__data: 0x328
--  __DATA.__objc_ivar: 0x658
--  __DATA.__data: 0x11d8
--  __DATA.__bss: 0x2d48
-+  __DATA.__objc_ivar: 0x640
-+  __DATA.__data: 0x11d0
-+  __DATA.__bss: 0x2d38
-   __DATA.__common: 0x18
-   __DATA_DIRTY.__objc_ivar: 0xc
-   __DATA_DIRTY.__objc_data: 0x370
--  __DATA_DIRTY.__bss: 0x160
-+  __DATA_DIRTY.__bss: 0x180
-   __DATA_DIRTY.__common: 0x18
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMedia.framework/CoreMedia
+-1027.0.0.0.0
++1036.0.0.0.0
 
-   - /usr/lib/swift/libswiftObjectiveC.dylib
-   - /usr/lib/swift/libswiftObservation.dylib
-   - /usr/lib/swift/libswiftQuartzCore.dylib
 +  - /usr/lib/swift/libswiftSynchronization.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+
 -  Functions: 2317
--  Symbols:   6847
--  CStrings:  1891
+-  Symbols:   4031
+-  CStrings:  1147
 +  Functions: 2330
-+  Symbols:   6799
-+  CStrings:  1881
- 
-Sections:
-~ __TEXT.__constg_swiftt : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH.__data : content changed
-~ __DATA_DIRTY.__objc_data : content changed
++  Symbols:   3997
++  CStrings:  1140
 Symbols:
 + GCC_except_table32
 + ___conditionsForOpticalSample_block_invoke
@@ -206,20 +134,6 @@ Symbols:
 - _class_getInstanceSize
 - _get_witness_table 9SensorKit06SRDataA0RzlAA23SRFetchResponseSequenceVy6SampleQzGSciHPyHC
 - _get_witness_table 9SensorKit06SRDataA0RzlAA23SRFetchResponseSequenceVySo16SRDeletionRecordCGSciHPyHC
-- _objc_msgSend$addSampleToBuffer:
-- _objc_msgSend$buffer
-- _objc_msgSend$bufferSizeLimit
-- _objc_msgSend$fetch:fetchResultHandler:fetchFailedWithErrorHandler:
-- _objc_msgSend$fetchRequest
-- _objc_msgSend$getSampleFromBuffer
-- _objc_msgSend$hasStoredSamples
-- _objc_msgSend$initWithReader:fetchRequest:
-- _objc_msgSend$initWithReader:fetchRequest:bufferSize:
-- _objc_msgSend$isReadyToEmitSamples
-- _objc_msgSend$nextResultWithCompletionHandler:
-- _objc_msgSend$reader
-- _objc_msgSend$removeObjectAtIndex:
-- _objc_msgSend$updateFetchRequestFromSample
 - _sizeOfFetchResult
 - _symbolic ScCySo13SRFetchResultCSg______pG s5ErrorP
 - _symbolic So13SRFetchResultCSg
@@ -240,5 +154,4 @@ CStrings:
 - "_createCheckedThrowingContinuation(_:)"
 - "fetchRequest"
 - "reader"
-
 ```

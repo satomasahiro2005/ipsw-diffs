@@ -4,9 +4,6 @@
 
 ```diff
 
- 		<key>State</key>
- 		<string>deprecated</string>
- 	</dict>
 +	<key>DemoDynamic</key>
 +	<dict>
 +		<key>Attributes</key>
@@ -23,8 +20,5 @@
 +		<key>State</key>
 +		<string>dynamic</string>
 +	</dict>
- 	<key>DemoEnabled</key>
- 	<dict>
- 		<key>Attributes</key>
 
 ```

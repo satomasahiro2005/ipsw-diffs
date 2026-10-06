@@ -2,73 +2,37 @@
 
 > `/System/Library/Frameworks/EventKit.framework/EventKit`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH.__objc_data` | `0x3520` | `0x1db8` | **`-0x1768`** |
+| `__DATA_DIRTY.__objc_data` | `0x1bd0` | `0x3338` | **`+0x1768`** |
+| `__DATA_DIRTY.__data` | `0x8` | `0x910` | **`+0x908`** |
+| `__AUTH.__data` | `0xf08` | `0x610` | **`-0x8f8`** |
+| `__TEXT.__oslogstring` | `0xf1b4` | `0xf234` | **`+0x80`** |
+| `__TEXT.__text` | `0x1a3eb8` | `0x1a3e40` | **`-0x78`** |
+| `__TEXT.__objc_methlist` | `0x15b9c` | `0x15bcc` | **`+0x30`** |
+| `__DATA.__bss` | `0x4770` | `0x4750` | **`-0x20`** |
+| `__DATA_DIRTY.__bss` | `0x588` | `0x5a0` | **`+0x18`** |
+| `__DATA.__data` | `0x28e0` | `0x28f0` | **`+0x10`** |
+| `__DATA_CONST.__objc_selrefs` | `0xaee8` | `0xaef8` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1428` | `0x1430` | **`+0x8`** |
+| `__TEXT.__unwind_info` | `0x67c0` | `0x67c8` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1976.1.3.0.0
--  __TEXT.__text: 0x1997a8
--  __TEXT.__objc_methlist: 0x15b9c
 +1976.2.2.0.0
-+  __TEXT.__text: 0x199730
-+  __TEXT.__objc_methlist: 0x15bcc
-   __TEXT.__cstring: 0xbdbf
-   __TEXT.__const: 0x4870
--  __TEXT.__oslogstring: 0xf1b4
-+  __TEXT.__oslogstring: 0xf234
-   __TEXT.__gcc_except_tab: 0x3950
-   __TEXT.__dlopen_cstrs: 0x400
-   __TEXT.__ustring: 0x1a0
 
-   __TEXT.__swift_as_ret: 0xec
-   __TEXT.__swift_as_cont: 0x1a8
-   __TEXT.__swift5_mpenum: 0x60
--  __TEXT.__unwind_info: 0x83a8
-+  __TEXT.__unwind_info: 0x83b8
-   __TEXT.__eh_frame: 0x261c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0xa0
-   __DATA_CONST.__objc_protolist: 0x258
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xaee8
-+  __DATA_CONST.__objc_selrefs: 0xaef8
-   __DATA_CONST.__objc_protorefs: 0x70
-   __DATA_CONST.__objc_superrefs: 0x538
-   __DATA_CONST.__objc_arraydata: 0x5d8
-
-   __AUTH_CONST.__objc_arrayobj: 0x1f8
-   __AUTH_CONST.__objc_dictobj: 0x1b8
-   __AUTH_CONST.__objc_doubleobj: 0x100
--  __AUTH_CONST.__auth_got: 0x1428
--  __AUTH.__objc_data: 0x3520
--  __AUTH.__data: 0xf08
-+  __AUTH_CONST.__auth_got: 0x1430
-+  __AUTH.__objc_data: 0x1db8
-+  __AUTH.__data: 0x610
-   __DATA.__objc_ivar: 0xd88
--  __DATA.__data: 0x28e0
-+  __DATA.__data: 0x28f0
-   __DATA.__common: 0x68
--  __DATA_DIRTY.__objc_data: 0x1bd0
--  __DATA_DIRTY.__data: 0x8
--  __DATA_DIRTY.__bss: 0x588
-+  __DATA_DIRTY.__objc_data: 0x3338
-+  __DATA_DIRTY.__data: 0x910
-+  __DATA_DIRTY.__bss: 0x5a0
-   __DATA_DIRTY.__common: 0x30
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 10703
 -  Symbols:   13284
 -  CStrings:  2672
 +  Functions: 10709
 +  Symbols:   13291
 +  CStrings:  2673
- 
 Symbols:
 + -[EKEventStore realAuthorizationStatusForEntityType:]
 + -[EKFrozenReminderObject shouldCheckExistenceBeforeRefresh]

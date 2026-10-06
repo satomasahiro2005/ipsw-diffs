@@ -2,27 +2,30 @@
 
 > `/System/Library/Frameworks/LocalAuthentication.framework/Support/MechanismPlugins/MechPasscode.bundle/MechPasscode`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__unwind_info`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__cfstring`
-- `__DATA_CONST.__objc_intobj`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x14450` | `0x14490` | **`+0x40`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__DATA.__objc_const`
 - `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_intobj`
+- `__TEXT.__const`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -2319.0.46.0.0
--  __TEXT.__text: 0x14450
 +2319.0.63.0.0
-+  __TEXT.__text: 0x14490
-   __TEXT.__auth_stubs: 0x520
-   __TEXT.__objc_stubs: 0xec0
-   __TEXT.__objc_methlist: 0x2b8
 Functions:
 ~ sub_58ac : 8 -> 12
 ~ sub_58b4 -> sub_58b8 : 12 -> 28

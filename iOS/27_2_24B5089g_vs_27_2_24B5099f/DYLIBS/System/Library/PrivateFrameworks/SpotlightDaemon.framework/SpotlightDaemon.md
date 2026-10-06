@@ -2,84 +2,46 @@
 
 > `/System/Library/PrivateFrameworks/SpotlightDaemon.framework/SpotlightDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc5f44` | `0xca118` | **`+0x41d4`** |
+| `__TEXT.__cstring` | `0x9c86` | `0x9e7f` | **`+0x1f9`** |
+| `__TEXT.__oslogstring` | `0xd4dc` | `0xd686` | **`+0x1aa`** |
+| `__TEXT.__gcc_except_tab` | `0x48e4` | `0x4a80` | **`+0x19c`** |
+| `__AUTH_CONST.__objc_const` | `0x63a8` | `0x6540` | **`+0x198`** |
+| `__TEXT.__objc_methlist` | `0x4c84` | `0x4e04` | **`+0x180`** |
+| `__DATA_CONST.__const` | `0x4810` | `0x4980` | **`+0x170`** |
+| `__DATA_CONST.__objc_selrefs` | `0x3d88` | `0x3ee0` | **`+0x158`** |
+| `__TEXT.__unwind_info` | `0x2988` | `0x2a68` | **`+0xe0`** |
+| `__TEXT.__dlopen_cstrs` | `0x4a` | `0xf4` | **`+0xaa`** |
+| `__AUTH.__objc_data` | `0x230` | `0x280` | **`+0x50`** |
+| `__AUTH_CONST.__cfstring` | `0x8200` | `0x8240` | **`+0x40`** |
+| `__AUTH_CONST.__const` | `0x13a8` | `0x13e8` | **`+0x40`** |
+| `__DATA.__bss` | `0x148` | `0x178` | **`+0x30`** |
+| `__DATA_CONST.__got` | `0xc10` | `0xc38` | **`+0x28`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x3a8` | `0x3c0` | **`+0x18`** |
+| `__DATA_DIRTY.__bss` | `0x738` | `0x750` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x558` | `0x56c` | **`+0x14`** |
+| `__AUTH_CONST.__auth_got` | `0x1130` | `0x1138` | **`+0x8`** |
+| `__DATA_CONST.__objc_arraydata` | `0x310` | `0x318` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x1c8` | `0x1d0` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x148` | `0x150` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2465.1.3.0.0
--  __TEXT.__text: 0xc3a00
--  __TEXT.__objc_methlist: 0x4c84
 +2465.1.7.0.0
-+  __TEXT.__text: 0xc7ab4
-+  __TEXT.__objc_methlist: 0x4e04
-   __TEXT.__const: 0x410
--  __TEXT.__cstring: 0x9c86
--  __TEXT.__gcc_except_tab: 0x48e4
--  __TEXT.__oslogstring: 0xd4dc
--  __TEXT.__dlopen_cstrs: 0x4a
--  __TEXT.__unwind_info: 0x3508
-+  __TEXT.__cstring: 0x9e7f
-+  __TEXT.__gcc_except_tab: 0x4a80
-+  __TEXT.__oslogstring: 0xd686
-+  __TEXT.__dlopen_cstrs: 0xf4
-+  __TEXT.__unwind_info: 0x3618
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4810
--  __DATA_CONST.__objc_classlist: 0x1c8
-+  __DATA_CONST.__const: 0x4980
-+  __DATA_CONST.__objc_classlist: 0x1d0
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x50
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x8
--  __DATA_CONST.__objc_selrefs: 0x3d88
-+  __DATA_CONST.__objc_selrefs: 0x3ee0
-   __DATA_CONST.__objc_protorefs: 0x8
--  __DATA_CONST.__objc_superrefs: 0x148
--  __DATA_CONST.__objc_arraydata: 0x310
--  __DATA_CONST.__got: 0xc10
--  __AUTH_CONST.__const: 0x13a8
--  __AUTH_CONST.__cfstring: 0x8200
--  __AUTH_CONST.__objc_const: 0x63a8
-+  __DATA_CONST.__objc_superrefs: 0x150
-+  __DATA_CONST.__objc_arraydata: 0x318
-+  __DATA_CONST.__got: 0xc38
-+  __AUTH_CONST.__const: 0x13e8
-+  __AUTH_CONST.__cfstring: 0x8240
-+  __AUTH_CONST.__objc_const: 0x6540
-   __AUTH_CONST.__weak_auth_got: 0x10
--  __AUTH_CONST.__objc_arrayobj: 0x3a8
-+  __AUTH_CONST.__objc_arrayobj: 0x3c0
-   __AUTH_CONST.__objc_intobj: 0x228
-   __AUTH_CONST.__objc_dictobj: 0x28
--  __AUTH_CONST.__auth_got: 0x1130
--  __AUTH.__objc_data: 0x230
--  __DATA.__objc_ivar: 0x558
-+  __AUTH_CONST.__auth_got: 0x1138
-+  __AUTH.__objc_data: 0x280
-+  __DATA.__objc_ivar: 0x56c
-   __DATA.__data: 0x410
-   __DATA.__common: 0x4
-   __DATA_DIRTY.__objc_data: 0xfa0
-   __DATA_DIRTY.__data: 0x160
--  __DATA_DIRTY.__bss: 0x738
-+  __DATA_DIRTY.__bss: 0x750
-   __DATA_DIRTY.__common: 0x18
-   - /System/Library/Frameworks/Contacts.framework/Contacts
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libutil.dylib
 -  Functions: 3413
 -  Symbols:   5119
 -  CStrings:  2739
 +  Functions: 3469
 +  Symbols:   5209
 +  CStrings:  2762
- 
 Symbols:
 + -[CSBundleFilterEscalatedIdentifiers .cxx_destruct]
 + -[CSBundleFilterEscalatedIdentifiers excludedAppBundleIdentifiers]

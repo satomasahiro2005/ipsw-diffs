@@ -2,71 +2,37 @@
 
 > `/System/Library/PrivateFrameworks/iTunesCloud.framework/iTunesCloud`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3c9cac` | `0x3ca22c` | **`+0x580`** |
+| `__AUTH_CONST.__objc_const` | `0x31728` | `0x31880` | **`+0x158`** |
+| `__TEXT.__objc_methlist` | `0x187cc` | `0x188a4` | **`+0xd8`** |
+| `__TEXT.__cstring` | `0x17a42` | `0x17ae4` | **`+0xa2`** |
+| `__TEXT.__oslogstring` | `0x22336` | `0x223bb` | **`+0x85`** |
+| `__AUTH_CONST.__cfstring` | `0x18a80` | `0x18ae0` | **`+0x60`** |
+| `__DATA_CONST.__objc_selrefs` | `0xa570` | `0xa5c8` | **`+0x58`** |
+| `__TEXT.__unwind_info` | `0x6b10` | `0x6b30` | **`+0x20`** |
+| `__TEXT.__gcc_except_tab` | `0x2b50` | `0x2b6c` | **`+0x1c`** |
+| `__DATA.__objc_ivar` | `0x24a8` | `0x24bc` | **`+0x14`** |
+| `__DATA_CONST.__const` | `0x7448` | `0x7458` | **`+0x10`** |
+| `__TEXT.__const` | `0x225e8` | `0x225f8` | **`+0x10`** |
+| `__DATA_CONST.__got` | `0x1088` | `0x1090` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -4026.110.1.0.0
--  __TEXT.__text: 0x3c14e4
--  __TEXT.__objc_methlist: 0x187cc
--  __TEXT.__const: 0x225e8
 +4026.200.13.0.0
-+  __TEXT.__text: 0x3c1a5c
-+  __TEXT.__objc_methlist: 0x188a4
-+  __TEXT.__const: 0x225f8
-   __TEXT.__dlopen_cstrs: 0x4cf
--  __TEXT.__gcc_except_tab: 0x2b50
--  __TEXT.__cstring: 0x17a42
--  __TEXT.__oslogstring: 0x22336
-+  __TEXT.__gcc_except_tab: 0x2b6c
-+  __TEXT.__cstring: 0x17ae4
-+  __TEXT.__oslogstring: 0x223bb
-   __TEXT.__ustring: 0x8e
--  __TEXT.__unwind_info: 0x8350
-+  __TEXT.__unwind_info: 0x8378
-   __TEXT.__eh_frame: 0x50
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7448
-+  __DATA_CONST.__const: 0x7458
-   __DATA_CONST.__objc_classlist: 0xdd0
-   __DATA_CONST.__objc_catlist: 0x78
-   __DATA_CONST.__objc_protolist: 0x300
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xa570
-+  __DATA_CONST.__objc_selrefs: 0xa5c8
-   __DATA_CONST.__objc_protorefs: 0xc8
-   __DATA_CONST.__objc_superrefs: 0xc00
-   __DATA_CONST.__objc_arraydata: 0x498
--  __DATA_CONST.__got: 0x1088
-+  __DATA_CONST.__got: 0x1090
-   __AUTH_CONST.__const: 0x18638
--  __AUTH_CONST.__cfstring: 0x18a80
--  __AUTH_CONST.__objc_const: 0x31728
-+  __AUTH_CONST.__cfstring: 0x18ae0
-+  __AUTH_CONST.__objc_const: 0x31880
-   __AUTH_CONST.__objc_intobj: 0x480
-   __AUTH_CONST.__objc_arrayobj: 0x48
-   __AUTH_CONST.__objc_dictobj: 0x258
-   __AUTH_CONST.__auth_got: 0xa68
-   __AUTH.__objc_data: 0x5640
--  __DATA.__objc_ivar: 0x24a8
-+  __DATA.__objc_ivar: 0x24bc
-   __DATA.__data: 0x31a0
-   __DATA.__common: 0xb88
-   __DATA_DIRTY.__objc_data: 0x33e0
 
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libsqlite3.dylib
 -  Functions: 10164
--  Symbols:   21444
+-  Symbols:   17844
 -  CStrings:  5496
 +  Functions: 10179
-+  Symbols:   21475
++  Symbols:   17868
 +  CStrings:  5500
- 
 Symbols:
 + +[ICCloudEntityUpdateRegistrationToken supportsSecureCoding]
 + -[ICCloudChannelRegistrationAvailability _updateCloudChannelConfigurationUsingBag:source:]
@@ -308,19 +274,6 @@ Symbols:
 + ___block_descriptor_48_e8_32r40r_e64_v32?0"NSNumber"8"ICLibraryAuthServiceClientTokenStatus"16^B24lr32l8r40l8
 + ___block_descriptor_49_e8_32s40r_e64_v32?0"NSNumber"8"ICLibraryAuthServiceClientTokenStatus"16^B24ls32l8r40l8
 + __handleAccountAuthenticationDidFinishNotification
-+ _objc_msgSend$_handleAccountAuthenticationDidFinishNotification
-+ _objc_msgSend$_initWithUUID:
-+ _objc_msgSend$_shouldIncrementFailureCountForError:
-+ _objc_msgSend$_updateCloudChannelConfigurationUsingBag:source:
-+ _objc_msgSend$_updateEntriesForExternalAccountsChanges:
-+ _objc_msgSend$allowRecoveryRefresh
-+ _objc_msgSend$cloudChannelSubscriptionsRegistrationOffsetsChanged:
-+ _objc_msgSend$initWithTimeIntervalSinceReferenceDate:
-+ _objc_msgSend$musicChannelSubscriptionsFetchWindowEndSeconds
-+ _objc_msgSend$musicChannelSubscriptionsFetchWindowStartSeconds
-+ _objc_msgSend$registrationFetchEndOffsetSeconds
-+ _objc_msgSend$registrationFetchStartOffsetSeconds
-+ _objc_msgSend$setAllowRecoveryRefresh:
 - -[ICCloudChannelRegistrationAvailability _commitAvailability:source:]
 - -[ICCloudEntityUpdateRegistrationToken _initInternal]
 - -[ICLibraryAuthServiceClientTokenProvider _shouldStopBackgroundRefreshForError:]
@@ -537,12 +490,6 @@ Symbols:
 - ___75-[ICLibraryAuthServiceClientTokenProvider _updateEntriesForAccountsChanges]_block_invoke_2
 - ___block_descriptor_41_e8_32r_e64_v32?0"NSNumber"8"ICLibraryAuthServiceClientTokenStatus"16^B24lr32l8
 - ___block_descriptor_56_e8_32s40r48r_e64_v32?0"NSNumber"8"ICLibraryAuthServiceClientTokenStatus"16^B24lr40l8r48l8s32l8
-- _objc_msgSend$_commitAvailability:source:
-- _objc_msgSend$_initInternal
-- _objc_msgSend$_shouldStopBackgroundRefreshForError:
-- _objc_msgSend$_updateEntriesForAccountsChanges
-- _objc_msgSend$setShouldExcludeFromBackgroundRefresh:
-- _objc_msgSend$shouldExcludeFromBackgroundRefresh
 CStrings:
 + "%{public}@ Allowing recovery refresh for account %{public}@"
 + "%{public}@ Clearing error state for account %{public}@ that was pending privacy acceptance"

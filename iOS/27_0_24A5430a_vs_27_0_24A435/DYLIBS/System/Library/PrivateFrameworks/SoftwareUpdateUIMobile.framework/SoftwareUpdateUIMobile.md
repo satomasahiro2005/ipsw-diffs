@@ -2,18 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/SoftwareUpdateUIMobile.framework/SoftwareUpdateUIMobile`
 
-```diff
+### Section Size Changes
 
- 772.0.20.0.0
--  __TEXT.__text: 0x7ccc8
-+  __TEXT.__text: 0x7ccdc
-   __TEXT.__objc_methlist: 0x2864
-   __TEXT.__const: 0x450
-   __TEXT.__cstring: 0x4a27
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x7ccc8` | `0x7ccdc` | **`+0x14`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_2abd4d760 -> sub_2acb30760 : 12640 -> 12644
-~ sub_2abd51cd8 -> sub_2acb34cdc : 256 -> 260
-~ sub_2abd51e44 -> sub_2acb34e4c : 436 -> 440
-~ sub_2abd520b0 -> sub_2acb350bc : 256 -> 260
-~ sub_2abd522b8 -> sub_2acb352c8 : 1536 -> 1540
+~ sub_2abc39760 -> sub_2aca1a760 : 12640 -> 12644
+~ sub_2abc3dcd8 -> sub_2aca1ecdc : 256 -> 260
+~ sub_2abc3de44 -> sub_2aca1ee4c : 436 -> 440
+~ sub_2abc3e0b0 -> sub_2aca1f0bc : 256 -> 260
+~ sub_2abc3e2b8 -> sub_2aca1f2c8 : 1536 -> 1540
 ```

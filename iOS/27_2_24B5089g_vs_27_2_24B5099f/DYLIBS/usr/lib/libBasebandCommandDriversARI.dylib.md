@@ -2,56 +2,35 @@
 
 > `/usr/lib/libBasebandCommandDriversARI.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xc1624` | `0xbd77c` | **`-0x3ea8`** |
+| `__TEXT.__gcc_except_tab` | `0xe288` | `0xde9c` | **`-0x3ec`** |
+| `__TEXT.__const` | `0x8580` | `0x84b0` | **`-0xd0`** |
+| `__TEXT.__cstring` | `0x35f8` | `0x352d` | **`-0xcb`** |
+| `__TEXT.__unwind_info` | `0x39f8` | `0x3938` | **`-0xc0`** |
+| `__DATA.__data` | `0x220` | `0x1c0` | **`-0x60`** |
+| `__AUTH_CONST.__const` | `0x7010` | `0x6fc0` | **`-0x50`** |
+| `__DATA_DIRTY.__data` | `0xf0` | `0xa0` | **`-0x50`** |
+| `__DATA.__common` | `0x40` | `—` | **`-0x40`** |
+| `__TEXT.__oslogstring` | `0x26ef` | `0x26bd` | **`-0x32`** |
+| `__AUTH_CONST.__cfstring` | `0xa0` | `0x80` | **`-0x20`** |
+| `__DATA_CONST.__got` | `0x670` | `0x660` | **`-0x10`** |
+| `__DATA_DIRTY.__bss` | `0x110` | `0x100` | **`-0x10`** |
+| `__TEXT.__init_offsets` | `0x14` | `0x8` | **`-0xc`** |
+
+### Other Changes
+
 ```diff
 
- 1594.0.0.0.0
--  __TEXT.__text: 0xbf6c4
--  __TEXT.__init_offsets: 0x14
--  __TEXT.__const: 0x8580
--  __TEXT.__cstring: 0x35f8
--  __TEXT.__gcc_except_tab: 0xe288
--  __TEXT.__oslogstring: 0x26ef
--  __TEXT.__unwind_info: 0x3c10
-+  __TEXT.__text: 0xbb998
-+  __TEXT.__init_offsets: 0x8
-+  __TEXT.__const: 0x84b0
-+  __TEXT.__cstring: 0x352d
-+  __TEXT.__gcc_except_tab: 0xde9c
-+  __TEXT.__oslogstring: 0x26bd
-+  __TEXT.__unwind_info: 0x3b38
-   __TEXT.__auth_stubs: 0x0
-   __DATA_CONST.__const: 0x13b0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__weak_got: 0x10
--  __DATA_CONST.__got: 0x670
--  __AUTH_CONST.__const: 0x7010
--  __AUTH_CONST.__cfstring: 0xa0
-+  __DATA_CONST.__got: 0x660
-+  __AUTH_CONST.__const: 0x6fc0
-+  __AUTH_CONST.__cfstring: 0x80
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__auth_got: 0x0
--  __DATA.__data: 0x220
--  __DATA.__common: 0x40
--  __DATA_DIRTY.__data: 0xf0
--  __DATA_DIRTY.__bss: 0x110
-+  __DATA.__data: 0x1c0
-+  __DATA_DIRTY.__data: 0xa0
-+  __DATA_DIRTY.__bss: 0x100
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreMotion.framework/CoreMotion
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-
-   - /usr/lib/libTelephonyUtilDynamic.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 2232
 -  Symbols:   4722
 -  CStrings:  864
 +  Functions: 2209
 +  Symbols:   4682
 +  CStrings:  850
- 
 Symbols:
 + __ZN3ctu2cf11CFSharedRefIK10__CFStringED2Ev
 - GCC_except_table237

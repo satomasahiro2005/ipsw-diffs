@@ -2,29 +2,19 @@
 
 > `com.apple.driver.AppleSMCWirelessCharger`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x11028` | `0x10fdc` | **`-0x4c`** |
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__const: 0x60
-   __TEXT.__cstring: 0x377d
-   __TEXT.__os_log: 0x5f0
--  __TEXT_EXEC.__text: 0x11028
-+  __TEXT_EXEC.__text: 0x10fdc
-   __TEXT_EXEC.__auth_stubs: 0x5e0
-   __DATA.__data: 0xcd
-   __DATA.__common: 0x90
-Sections:
-~ __TEXT.__cstring : content changed
-~ __DATA.__data : content changed
-~ __DATA_CONST.__mod_init_func : content changed
-~ __DATA_CONST.__mod_term_func : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__kalloc_type : content changed
-~ __DATA_CONST.__kalloc_var : content changed
-~ __DATA_CONST.__auth_got : content changed
-~ __DATA_CONST.__got : content changed
-~ __DATA_CONST.__auth_ptr : content changed
+-153.0.0.0.0
++155.0.0.502.1
 Functions:
-~ sub_fffffe00096879fc -> sub_fffffe0009687d3c : 1164 -> 1156
-~ sub_fffffe000968878c -> sub_fffffe0009688ac4 : 4304 -> 4236
-
+~ sub_fffffff009686cfc -> sub_fffffff00968775c : 1164 -> 1156
+~ sub_fffffff009687a8c -> sub_fffffff0096884e4 : 4304 -> 4236
 ```

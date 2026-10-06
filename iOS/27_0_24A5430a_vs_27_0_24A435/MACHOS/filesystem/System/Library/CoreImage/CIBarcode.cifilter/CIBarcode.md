@@ -2,12 +2,14 @@
 
 > `/System/Library/CoreImage/CIBarcode.cifilter/CIBarcode`
 
-### Sections with Same Size but Changed Content
+### Same-size Content Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__unwind_info`
 - `__DATA_CONST.__const`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```text
 Functions:

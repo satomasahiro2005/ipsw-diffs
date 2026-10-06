@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/PromotedContentUI.framework/PromotedContentUI`
 
-```diff
+### Section Size Changes
 
- 557.1.33.0.0
--  __TEXT.__text: 0x1960a0
-+  __TEXT.__text: 0x1961d4
-   __TEXT.__objc_methlist: 0x20c4
-   __TEXT.__const: 0xe974
-   __TEXT.__constg_swiftt: 0x79b8
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1960a0` | `0x1961d4` | **`+0x134`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1c266cfac -> sub_1c2b68fac : 1192 -> 1196
 ~ sub_1c266f340 -> sub_1c2b6b344 : 836 -> 844

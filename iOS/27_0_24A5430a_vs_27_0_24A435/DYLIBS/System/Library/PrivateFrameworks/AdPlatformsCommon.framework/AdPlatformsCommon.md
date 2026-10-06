@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/AdPlatformsCommon.framework/AdPlatformsCommon`
 
-```diff
+### Section Size Changes
 
- 557.1.33.0.0
--  __TEXT.__text: 0xf87d4
-+  __TEXT.__text: 0xf88e4
-   __TEXT.__objc_methlist: 0x2cb4
-   __TEXT.__const: 0x14598
-   __TEXT.__cstring: 0x611f
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xf87d4` | `0xf88e4` | **`+0x110`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1cb658ba8 -> sub_1cbb6dba8 : 5144 -> 5240
 ~ sub_1cb65a0fc -> sub_1cbb6f15c : 2924 -> 2944

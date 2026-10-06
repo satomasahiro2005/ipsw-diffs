@@ -2,71 +2,48 @@
 
 > `/System/Library/PrivateFrameworks/NearbySessions.framework/XPCServices/com.apple.SharePlay.NearbyInvitationsService.xpc/com.apple.SharePlay.NearbyInvitationsService`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__swift5_entry`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_fieldmd`
-- `__TEXT.__swift5_capture`
-- `__TEXT.__swift_as_entry`
-- `__TEXT.__swift_as_cont`
-- `__TEXT.__swift5_mpenum`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__auth_ptr`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xcc808` | `0xcc4c8` | **`-0x340`** |
+| `__TEXT.__eh_frame` | `0x5110` | `0x50c0` | **`-0x50`** |
+| `__TEXT.__auth_stubs` | `0x2700` | `0x2710` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x2d00` | `0x2cf0` | **`-0x10`** |
+| `__DATA_CONST.__auth_got` | `0x1388` | `0x1390` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x538` | `0x530` | **`-0x8`** |
+| `__TEXT.__swift_as_ret` | `0x164` | `0x15c` | **`-0x8`** |
+
+### Same-size Content Changes
+
 - `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_data`
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__auth_ptr`
+- `__DATA_CONST.__const`
+- `__TEXT.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__swift5_capture`
+- `__TEXT.__swift5_entry`
+- `__TEXT.__swift5_fieldmd`
+- `__TEXT.__swift5_mpenum`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
+- `__TEXT.__swift_as_entry`
+
+### Other Changes
 
 ```diff
 
 -301.100.1.0.0
--  __TEXT.__text: 0xcc808
--  __TEXT.__auth_stubs: 0x2700
 +303.100.1.0.0
-+  __TEXT.__text: 0xcc4c8
-+  __TEXT.__auth_stubs: 0x2710
-   __TEXT.__objc_stubs: 0xe80
-   __TEXT.__objc_methlist: 0xa18
-   __TEXT.__const: 0x5400
 
-   __TEXT.__swift5_protos: 0x34
-   __TEXT.__swift5_proto: 0x35c
-   __TEXT.__swift_as_entry: 0x184
--  __TEXT.__swift_as_ret: 0x164
-+  __TEXT.__swift_as_ret: 0x15c
-   __TEXT.__swift_as_cont: 0x304
-   __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x2d00
--  __TEXT.__eh_frame: 0x5110
-+  __TEXT.__unwind_info: 0x2cf0
-+  __TEXT.__eh_frame: 0x50c0
-   __DATA_CONST.__const: 0x4670
-   __DATA_CONST.__objc_classlist: 0xc8
-   __DATA_CONST.__objc_catlist2: 0x10
-   __DATA_CONST.__objc_protolist: 0xd0
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_protorefs: 0x70
--  __DATA_CONST.__auth_got: 0x1388
--  __DATA_CONST.__got: 0x538
-+  __DATA_CONST.__auth_got: 0x1390
-+  __DATA_CONST.__got: 0x530
-   __DATA_CONST.__auth_ptr: 0x800
-   __DATA.__objc_const: 0x2400
-   __DATA.__objc_selrefs: 0x7c0
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 3745
 -  Symbols:   8887
 +  Functions: 3743
 +  Symbols:   8885
-   CStrings:  961
- 
 Symbols:
 + $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.209TQ0_
 + $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.209Tu

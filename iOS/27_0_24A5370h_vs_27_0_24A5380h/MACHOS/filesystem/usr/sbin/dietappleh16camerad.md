@@ -2,19 +2,26 @@
 
 > `/usr/sbin/dietappleh16camerad`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1ab3c` | `0x1ab20` | **`-0x1c`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__cfstring`
+- `__DATA_CONST.__const`
+- `__TEXT.__cstring`
+- `__TEXT.__unwind_info`
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1ab3c
-+  __TEXT.__text: 0x1ab20
-   __TEXT.__auth_stubs: 0xe90
-   __TEXT.__objc_stubs: 0x4e0
-   __TEXT.__const: 0x15b0
-Sections:
-~ __TEXT.__cstring : content changed
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA_CONST.__cfstring : content changed
-~ __DATA.__objc_selrefs : content changed
+-6.12.2.0.0
++6.14.1.0.0
 Functions:
 ~ sub_1000100a8 : 1760 -> 1772
 ~ sub_100016740 -> sub_10001674c : 212 -> 192
@@ -22,5 +29,4 @@ Functions:
 CStrings:
 + "6.14.1"
 - "6.12.2"
-
 ```

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/CarPlayAssetUI.framework/CarPlayAssetUI`
 
-```diff
+### Section Size Changes
 
- 499.1.0.0.0
--  __TEXT.__text: 0x3bb71c
-+  __TEXT.__text: 0x3bb840
-   __TEXT.__objc_methlist: 0x150c
-   __TEXT.__const: 0x7cac4
-   __TEXT.__cstring: 0x7437
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x3bb71c` | `0x3bb840` | **`+0x124`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ _$sSr15_stableSortImpl2byySbx_xtKXE_tKFySryxGz_SiztKXEfU_14CarPlayAssetUI12AnyCodingKeyV_Tg504$s14efg50UI11_LuaEncoderC14KeyedContainerC6stringSSvgSbAA12ijK9V_AHtcfu_Tf1nnncn_n : 864 -> 868
 ~ _$sSTsE21_copySequenceContents12initializing8IteratorQz_SitSry7ElementQzG_tFSDySS14CarPlayAssetUI17LocalNotificationVG_Tg5 : 464 -> 468

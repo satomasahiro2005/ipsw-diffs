@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/DownloadAssertions.framework/DownloadAssertions`
 
-```diff
+### Section Size Changes
 
- 4.0.0.0.0
--  __TEXT.__text: 0x19ccc
-+  __TEXT.__text: 0x19cd0
-   __TEXT.__objc_methlist: 0x200
-   __TEXT.__const: 0x1968
-   __TEXT.__swift5_typeref: 0x814
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x19ccc` | `0x19cd0` | **`+0x4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_25fd42728 -> sub_261741728 : 736 -> 740
+~ sub_25fc11728 -> sub_26161d728 : 736 -> 740
 ```

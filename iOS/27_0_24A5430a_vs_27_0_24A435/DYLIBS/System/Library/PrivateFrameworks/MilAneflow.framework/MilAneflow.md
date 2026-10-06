@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/MilAneflow.framework/MilAneflow`
 
-```diff
+### Section Size Changes
 
- 1.104.0.0.0
--  __TEXT.__text: 0x120908
-+  __TEXT.__text: 0x120994
-   __TEXT.__init_offsets: 0xc
-   __TEXT.__const: 0x13f8a
-   __TEXT.__cstring: 0x3325
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x120908` | `0x120994` | **`+0x8c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ __ZNSt3__16vectorIyNS_9allocatorIyEEE18__insert_with_sizeB9fqe220106INS_17_ClassicAlgPolicyEPKyS7_EENS_11__wrap_iterIPyEENS8_IS7_EET0_T1_l : 516 -> 532
 ~ __ZN12ANEMachineIR10Validators14ValidateNeConvERKN3MIL11IROperationENS_9OpsetNameE : 4424 -> 4420

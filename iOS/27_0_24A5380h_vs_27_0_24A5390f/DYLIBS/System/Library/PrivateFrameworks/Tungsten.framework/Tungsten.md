@@ -2,93 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/Tungsten.framework/Tungsten`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__const`
-- `__TEXT.__constg_swiftt`
-- `__TEXT.__swift5_typeref`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__eh_frame`
-- `__DATA_CONST.__const`
-- `__DATA_CONST.__objc_classlist`
-- `__DATA_CONST.__objc_catlist`
-- `__DATA_CONST.__objc_protolist`
-- `__DATA_CONST.__objc_protorefs`
-- `__DATA_CONST.__objc_superrefs`
-- `__DATA_CONST.__objc_arraydata`
-- `__DATA_CONST.__got`
-- `__AUTH_CONST.__const`
-- `__AUTH_CONST.__weak_auth_got`
-- `__AUTH_CONST.__objc_intobj`
-- `__AUTH_CONST.__objc_arrayobj`
-- `__AUTH.__objc_data`
-- `__AUTH.__data`
-- `__DATA.__data`
-- `__DATA_DIRTY.__objc_data`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xfb7ec` | `0xfcb9c` | **`+0x13b0`** |
+| `__AUTH_CONST.__objc_const` | `0x22c48` | `0x22cd0` | **`+0x88`** |
+| `__TEXT.__objc_methlist` | `0x11c20` | `0x11c90` | **`+0x70`** |
+| `__DATA_CONST.__objc_selrefs` | `0x7ec0` | `0x7f28` | **`+0x68`** |
+| `__TEXT.__unwind_info` | `0x4620` | `0x4658` | **`+0x38`** |
+| `__TEXT.__cstring` | `0xd75b` | `0xd782` | **`+0x27`** |
+| `__AUTH_CONST.__cfstring` | `0x7ce0` | `0x7d00` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x1298` | `0x12a8` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x19e4` | `0x19f0` | **`+0xc`** |
+
+### Other Changes
 
 ```diff
 
 -910.27.103.0.0
--  __TEXT.__text: 0xfb7ec
--  __TEXT.__objc_methlist: 0x11c20
 +910.33.102.0.0
-+  __TEXT.__text: 0xfcb9c
-+  __TEXT.__objc_methlist: 0x11c90
-   __TEXT.__const: 0x39c0
-   __TEXT.__constg_swiftt: 0x244
-   __TEXT.__swift5_typeref: 0x125e
 
-   __TEXT.__swift5_types: 0x1c
-   __TEXT.__swift5_fieldmd: 0x7c8
-   __TEXT.__swift5_protos: 0x8
--  __TEXT.__cstring: 0xd75b
-+  __TEXT.__cstring: 0xd782
-   __TEXT.__gcc_except_tab: 0x3504
-   __TEXT.__oslogstring: 0x25bb
-   __TEXT.__ustring: 0x3c
--  __TEXT.__unwind_info: 0x4620
-+  __TEXT.__unwind_info: 0x4658
-   __TEXT.__eh_frame: 0x304
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-
-   __DATA_CONST.__objc_catlist: 0x28
-   __DATA_CONST.__objc_protolist: 0x2d0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x7ec0
-+  __DATA_CONST.__objc_selrefs: 0x7f28
-   __DATA_CONST.__objc_protorefs: 0x28
-   __DATA_CONST.__objc_superrefs: 0x6d0
-   __DATA_CONST.__objc_arraydata: 0xb18
-   __DATA_CONST.__got: 0xe70
-   __AUTH_CONST.__const: 0xd98
--  __AUTH_CONST.__cfstring: 0x7ce0
--  __AUTH_CONST.__objc_const: 0x22c48
-+  __AUTH_CONST.__cfstring: 0x7d00
-+  __AUTH_CONST.__objc_const: 0x22cd0
-   __AUTH_CONST.__weak_auth_got: 0x10
-   __AUTH_CONST.__objc_intobj: 0x2010
-   __AUTH_CONST.__objc_arrayobj: 0x78
--  __AUTH_CONST.__auth_got: 0x1298
-+  __AUTH_CONST.__auth_got: 0x12a8
-   __AUTH.__objc_data: 0x4fd0
-   __AUTH.__data: 0x338
--  __DATA.__objc_ivar: 0x19e4
-+  __DATA.__objc_ivar: 0x19f0
-   __DATA.__data: 0x2768
-   __DATA.__bss: 0x1ba0
-   __DATA.__common: 0x20
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 6740
--  Symbols:   15033
+-  Symbols:   11623
 -  CStrings:  1892
 +  Functions: 6753
-+  Symbols:   15057
++  Symbols:   11639
 +  CStrings:  1893
- 
 Symbols:
 + -[PXGDecoratingLayout _updateAdditionalDecorators]
 + -[PXGItemsLayout addAdditionalDecorator:]
@@ -264,14 +204,6 @@ Symbols:
 + _PXUpdateFlagsInvalidate
 + ___55-[PXGAXGroupAccessibilityElement accessibilityElements]_block_invoke
 + ___55-[PXGAXGroupAccessibilityElement accessibilityElements]_block_invoke_2
-+ _objc_msgSend$_axScrollElementToVisibleForUserInfo:
-+ _objc_msgSend$_updateAdditionalDecorators
-+ _objc_msgSend$additionalDecorators
-+ _objc_msgSend$didMoveToItemsLayout:
-+ _objc_msgSend$hasPlaceholderForSpriteIndex:
-+ _objc_msgSend$itemsDidChange:
-+ _objc_msgSend$px_layoutDirection
-+ _objc_msgSend$scrollRectToVisible:animated:
 - GCC_except_table1052
 - GCC_except_table1080
 - GCC_except_table1177

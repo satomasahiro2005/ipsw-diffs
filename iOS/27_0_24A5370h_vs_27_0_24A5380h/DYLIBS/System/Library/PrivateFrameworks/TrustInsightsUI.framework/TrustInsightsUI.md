@@ -2,108 +2,45 @@
 
 > `/System/Library/PrivateFrameworks/TrustInsightsUI.framework/TrustInsightsUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1aa20` | `0x1b2e0` | **`+0x8c0`** |
+| `__TEXT.__swift5_typeref` | `0xdee` | `0xf2a` | **`+0x13c`** |
+| `__TEXT.__const` | `0xd84` | `0xe54` | **`+0xd0`** |
+| `__TEXT.__cstring` | `0xcf2` | `0xc32` | **`-0xc0`** |
+| `__TEXT.__oslogstring` | `0xb5` | `0x175` | **`+0xc0`** |
+| `__DATA.__data` | `0x838` | `0x878` | **`+0x40`** |
+| `__AUTH.__data` | `0xa48` | `0xa80` | **`+0x38`** |
+| `__TEXT.__constg_swiftt` | `0x848` | `0x878` | **`+0x30`** |
+| `__TEXT.__swift5_reflstr` | `0x389` | `0x3b9` | **`+0x30`** |
+| `__AUTH_CONST.__const` | `0xaf0` | `0xb18` | **`+0x28`** |
+| `__AUTH_CONST.__objc_const` | `0xa48` | `0xa68` | **`+0x20`** |
+| `__DATA.__bss` | `0x500` | `0x520` | **`+0x20`** |
+| `__AUTH_CONST.__auth_got` | `0x7d0` | `0x7b8` | **`-0x18`** |
+| `__TEXT.__unwind_info` | `0x7c8` | `0x7e0` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x1f8` | `0x1e8` | **`-0x10`** |
+| `__TEXT.__swift5_capture` | `0x17c` | `0x18c` | **`+0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x400` | `0x40c` | **`+0xc`** |
+| `__DATA_CONST.__const` | `0x98` | `0x90` | **`-0x8`** |
+| `__TEXT.__eh_frame` | `0xd88` | `0xd80` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x1aa20
-+  __TEXT.__text: 0x1b2e0
-   __TEXT.__objc_methlist: 0x1f4
--  __TEXT.__const: 0xd84
--  __TEXT.__cstring: 0xcf2
--  __TEXT.__swift5_typeref: 0xdee
--  __TEXT.__constg_swiftt: 0x848
--  __TEXT.__swift5_fieldmd: 0x400
-+  __TEXT.__const: 0xe54
-+  __TEXT.__cstring: 0xc32
-+  __TEXT.__swift5_typeref: 0xf2a
-+  __TEXT.__constg_swiftt: 0x878
-+  __TEXT.__swift5_fieldmd: 0x40c
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_types: 0x70
-   __TEXT.__swift_as_entry: 0x3c
-   __TEXT.__swift_as_ret: 0x34
-   __TEXT.__swift_as_cont: 0xb4
--  __TEXT.__swift5_reflstr: 0x389
-+  __TEXT.__swift5_reflstr: 0x3b9
-   __TEXT.__swift5_assocty: 0x60
-   __TEXT.__swift5_proto: 0x24
--  __TEXT.__swift5_capture: 0x17c
-+  __TEXT.__swift5_capture: 0x18c
-+  __TEXT.__oslogstring: 0x175
-   __TEXT.__swift5_protos: 0x4
--  __TEXT.__oslogstring: 0xb5
--  __TEXT.__unwind_info: 0x7c8
--  __TEXT.__eh_frame: 0xd88
-+  __TEXT.__unwind_info: 0x7e0
-+  __TEXT.__eh_frame: 0xd80
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x98
-+  __DATA_CONST.__const: 0x90
-   __DATA_CONST.__objc_classlist: 0x58
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
-   __DATA_CONST.__objc_selrefs: 0x250
-   __DATA_CONST.__objc_protorefs: 0x18
--  __DATA_CONST.__got: 0x1f8
--  __AUTH_CONST.__const: 0xaf0
--  __AUTH_CONST.__objc_const: 0xa48
--  __AUTH_CONST.__auth_got: 0x7d0
-+  __DATA_CONST.__got: 0x1e8
-+  __AUTH_CONST.__const: 0xb18
-+  __AUTH_CONST.__objc_const: 0xa68
-+  __AUTH_CONST.__auth_got: 0x7b8
-   __AUTH.__objc_data: 0x308
--  __AUTH.__data: 0xa48
--  __DATA.__data: 0x838
--  __DATA.__bss: 0x500
-+  __AUTH.__data: 0xa80
-+  __DATA.__data: 0x878
-+  __DATA.__bss: 0x520
-   __DATA.__common: 0x178
-   - /System/Library/Frameworks/CoreServices.framework/CoreServices
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/SwiftUI.framework/SwiftUI
-   - /System/Library/Frameworks/UIKit.framework/UIKit
-   - /System/Library/PrivateFrameworks/CoreODI.framework/CoreODI
--  - /System/Library/PrivateFrameworks/CoreODIEssentials.framework/CoreODIEssentials
-   - /System/Library/PrivateFrameworks/IconServices.framework/IconServices
-   - /System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit
-   - /System/Library/PrivateFrameworks/_IconServices_SwiftUI.framework/_IconServices_SwiftUI
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/swift/libswiftAccelerate.dylib
--  - /usr/lib/swift/libswiftCompression.dylib
-   - /usr/lib/swift/libswiftCore.dylib
-   - /usr/lib/swift/libswiftCoreAudio.dylib
-   - /usr/lib/swift/libswiftCoreFoundation.dylib
+-27.0.44.0.0
++27.0.49.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
+-  - /System/Library/PrivateFrameworks/CoreODIEssentials.framework/CoreODIEssentials
+
+-  - /usr/lib/swift/libswiftCompression.dylib
+
 -  Functions: 549
--  Symbols:   496
+-  Symbols:   388
 +  Functions: 565
-+  Symbols:   499
-   CStrings:  67
- 
-Sections:
-~ __TEXT.__objc_methlist : content changed
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_types : content changed
-~ __TEXT.__swift_as_entry : content changed
-~ __TEXT.__swift_as_ret : content changed
-~ __TEXT.__swift_as_cont : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_selrefs : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __AUTH.__objc_data : content changed
++  Symbols:   389
 Symbols:
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE29navigationBarTitleDisplayModeyQrAA010NavigationJ4ItemV0klM0OFQOyAcAE0iK0yQrqd__SyRd__lFQOyAA4ListVys5NeverOAA12TupleContentVyAA7SectionVyAA05EmptyC0VAA08ModifiedS0VyAA6ToggleVyAA4TextVGAA32_EnvironmentKeyTransformModifierVySbGGA3_G_AWyA3_AA7ForEachVySaySi6offset_7CoreODI12ConsentStateV8LogEntryV7elementtGSiAA6VStackVyAUyA3__A3_QPGGGSgA3_GQPGG_SSQo__Qo__Qo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBPAAE4task4name8priority4file4line_QrSSSg_ScPSSSiyyYaYAcntFQOyAcAE29navigationBarTitleDisplayModeyQrAA010NavigationJ4ItemV0klM0OFQOyAcAE0iK0yQrqd__SyRd__lFQOyAA4ListVys5NeverOAA12TupleContentVyAA7SectionVyAA05EmptyC0VAA6ToggleVyAA4TextVGAUyA1__AA08ModifiedS0VyAA4LinkVyA1_GAA14_PaddingLayoutVGSgQPGG_AWyA1_AA7ForEachVySay013TrustInsightsB06TargetVGSSAA0nY0VyA16_9TargetRowVA16_012TargetDetailC0VGGSgA1_GQPGG_SSQo__Qo__Qo_HO
@@ -163,5 +100,4 @@ CStrings:
 - "Error updating consent: "
 - "Error updating state: "
 - "update(consentState:) invoked with: "
-
 ```

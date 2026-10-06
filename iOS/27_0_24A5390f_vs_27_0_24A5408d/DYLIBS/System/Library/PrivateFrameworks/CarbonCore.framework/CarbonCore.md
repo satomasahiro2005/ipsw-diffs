@@ -2,47 +2,33 @@
 
 > `/System/Library/PrivateFrameworks/CarbonCore.framework/CarbonCore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x34288` | `0x33d8c` | **`-0x4fc`** |
+| `__TEXT.__cstring` | `0x20126` | `0x2008b` | **`-0x9b`** |
+| `__AUTH_CONST.__cfstring` | `0xba0` | `0xb20` | **`-0x80`** |
+| `__TEXT.__oslogstring` | `0x4801` | `0x4794` | **`-0x6d`** |
+| `__AUTH_CONST.__const` | `0x1630` | `0x1610` | **`-0x20`** |
+| `__DATA_CONST.__const` | `0xf0d8` | `0xf0c8` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xa38` | `0xa30` | **`-0x8`** |
+| `__TEXT.__gcc_except_tab` | `0x230` | `0x228` | **`-0x8`** |
+| `__TEXT.__unwind_info` | `0xd08` | `0xd00` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -1405.0.0.0.0
--  __TEXT.__text: 0x34288
 +1406.0.0.0.0
-+  __TEXT.__text: 0x33d8c
-   __TEXT.__const: 0x24d0
--  __TEXT.__cstring: 0x20126
--  __TEXT.__oslogstring: 0x4801
--  __TEXT.__gcc_except_tab: 0x230
--  __TEXT.__unwind_info: 0xd08
-+  __TEXT.__cstring: 0x2008b
-+  __TEXT.__oslogstring: 0x4794
-+  __TEXT.__gcc_except_tab: 0x228
-+  __TEXT.__unwind_info: 0xd00
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0xf0d8
-+  __DATA_CONST.__const: 0xf0c8
-   __DATA_CONST.__weak_got: 0x8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1630
--  __AUTH_CONST.__cfstring: 0xba0
-+  __AUTH_CONST.__const: 0x1610
-+  __AUTH_CONST.__cfstring: 0xb20
-   __AUTH_CONST.__weak_auth_got: 0x18
--  __AUTH_CONST.__auth_got: 0xa38
-+  __AUTH_CONST.__auth_got: 0xa30
-   __AUTH.__data: 0x1e8
-   __DATA.__data: 0x2e8
-   __DATA.__crash_info: 0x148
 
-   - /usr/lib/libbsm.0.dylib
-   - /usr/lib/libc++.1.dylib
-   - /usr/lib/libicucore.A.dylib
 -  Functions: 1099
 -  Symbols:   1606
 -  CStrings:  4670
 +  Functions: 1093
 +  Symbols:   1599
 +  CStrings:  4662
- 
 Symbols:
 - __XCacheableSetWithStringKey
 - __ZN11SCCacheable16SetWithStringKeyEjPKcmj

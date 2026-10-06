@@ -2,28 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/MobileBluetooth.framework/MobileBluetooth`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x2e648` | `0x2e744` | **`+0xfc`** |
+| `__AUTH.__data` | `—` | `0x68` | **`+0x68`** |
+| `__DATA_DIRTY.__data` | `0x1e8` | `0x180` | **`-0x68`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x2e648
-+  __TEXT.__text: 0x2e744
-   __TEXT.__const: 0xc8
-   __TEXT.__oslogstring: 0x69d9
-   __TEXT.__cstring: 0x33de
-
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__cfstring: 0x40
-   __AUTH_CONST.__auth_got: 0x0
-+  __AUTH.__data: 0x68
-   __DATA.__common: 0x2a00
--  __DATA_DIRTY.__data: 0x1e8
-+  __DATA_DIRTY.__data: 0x180
-   __DATA_DIRTY.__common: 0x3730
-   __DATA_DIRTY.__bss: 0x38
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-Sections:
-~ __TEXT.__unwind_info : content changed
-~ __DATA_CONST.__const : content changed
-~ __AUTH_CONST.__cfstring : content changed
+-2700.41.1.1.0
++2700.43.0.0.0
 Functions:
 ~ __localBTAccessoryManagerAddCallbacks : 348 -> 364
 ~ __localBTLocalDeviceAddCallbacks : 204 -> 220
@@ -45,5 +37,4 @@ Functions:
 ~ __localBTLocalDeviceAddStatsCallbacks : 192 -> 208
 ~ __localBTPairingAgentAddCallbacks : 180 -> 192
 ~ __localBTPairingAgentGetUserData : 120 -> 132
-
 ```

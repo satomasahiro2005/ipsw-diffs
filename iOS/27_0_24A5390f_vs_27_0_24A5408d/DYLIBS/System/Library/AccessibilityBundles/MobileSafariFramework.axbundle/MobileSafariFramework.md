@@ -2,48 +2,29 @@
 
 > `/System/Library/AccessibilityBundles/MobileSafariFramework.axbundle/MobileSafariFramework`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__cfstring` | `0x3880` | `0x38e0` | **`+0x60`** |
+| `__TEXT.__cstring` | `0x2c7b` | `0x2cd3` | **`+0x58`** |
+| `__TEXT.__text` | `0xca8c` | `0xcad8` | **`+0x4c`** |
+| `__DATA_CONST.__objc_selrefs` | `0x758` | `0x768` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x558` | `0x550` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -3045.0.0.0.0
--  __TEXT.__text: 0xca8c
 +3048.0.0.0.0
-+  __TEXT.__text: 0xcad8
-   __TEXT.__objc_methlist: 0x15ec
-   __TEXT.__const: 0x78
-   __TEXT.__gcc_except_tab: 0x348
--  __TEXT.__cstring: 0x2c7b
-+  __TEXT.__cstring: 0x2cd3
-   __TEXT.__oslogstring: 0x1d5
--  __TEXT.__unwind_info: 0x558
-+  __TEXT.__unwind_info: 0x550
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__const: 0x360
-   __DATA_CONST.__objc_classlist: 0x378
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x758
-+  __DATA_CONST.__objc_selrefs: 0x768
-   __DATA_CONST.__objc_superrefs: 0x108
-   __DATA_CONST.__got: 0x0
-   __AUTH_CONST.__const: 0x140
--  __AUTH_CONST.__cfstring: 0x3880
-+  __AUTH_CONST.__cfstring: 0x38e0
-   __AUTH_CONST.__objc_const: 0x3e70
-   __AUTH_CONST.__objc_intobj: 0x18
-   __AUTH_CONST.__auth_got: 0x0
-
-   - /usr/lib/libAccessibility.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 426
--  Symbols:   1329
+-  Symbols:   1148
 -  CStrings:  527
 +  Functions: 428
-+  Symbols:   1333
++  Symbols:   1150
 +  CStrings:  530
- 
 Symbols:
 + -[MainButtonAccessibility accessibilityLabel]
 + GCC_except_table126
@@ -62,8 +43,6 @@ Symbols:
 + GCC_except_table95
 + ___48-[SFStepperAccessibility accessibilityDecrement]_block_invoke
 + ___48-[SFStepperAccessibility accessibilityIncrement]_block_invoke
-+ _objc_msgSend$decrementButtonActionHandler
-+ _objc_msgSend$incrementButtonActionHandler
 - -[SFStepperAccessibility _accessibilityLoadAccessibilityInformation]
 - GCC_except_table124
 - GCC_except_table129

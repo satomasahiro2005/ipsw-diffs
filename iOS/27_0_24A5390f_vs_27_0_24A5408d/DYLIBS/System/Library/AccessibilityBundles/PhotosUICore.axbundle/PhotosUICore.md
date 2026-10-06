@@ -2,56 +2,34 @@
 
 > `/System/Library/AccessibilityBundles/PhotosUICore.axbundle/PhotosUICore`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x18260` | `0x1893c` | **`+0x6dc`** |
+| `__TEXT.__oslogstring` | `0x17` | `0x273` | **`+0x25c`** |
+| `__AUTH_CONST.__cfstring` | `0x49c0` | `0x4a20` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0x67c` | `0x6c4` | **`+0x48`** |
+| `__TEXT.__cstring` | `0x39d3` | `0x3a00` | **`+0x2d`** |
+| `__DATA_CONST.__const` | `0x7c8` | `0x7f0` | **`+0x28`** |
+| `__TEXT.__const` | `0x48` | `0x60` | **`+0x18`** |
+| `__TEXT.__objc_methlist` | `0x2858` | `0x2870` | **`+0x18`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1238` | `0x1248` | **`+0x10`** |
+| `__TEXT.__unwind_info` | `0x8c0` | `0x8d0` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
 -3045.0.0.0.0
--  __TEXT.__text: 0x18260
--  __TEXT.__objc_methlist: 0x2858
--  __TEXT.__const: 0x48
--  __TEXT.__gcc_except_tab: 0x67c
--  __TEXT.__cstring: 0x39d3
--  __TEXT.__oslogstring: 0x17
--  __TEXT.__unwind_info: 0x8c0
 +3048.0.0.0.0
-+  __TEXT.__text: 0x1893c
-+  __TEXT.__objc_methlist: 0x2870
-+  __TEXT.__const: 0x60
-+  __TEXT.__gcc_except_tab: 0x6c4
-+  __TEXT.__cstring: 0x3a00
-+  __TEXT.__oslogstring: 0x273
-+  __TEXT.__unwind_info: 0x8d0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7c8
-+  __DATA_CONST.__const: 0x7f0
-   __DATA_CONST.__objc_classlist: 0x3f8
-   __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1238
-+  __DATA_CONST.__objc_selrefs: 0x1248
-   __DATA_CONST.__objc_protorefs: 0x20
-   __DATA_CONST.__objc_superrefs: 0x1a8
-   __DATA_CONST.__got: 0x208
-   __AUTH_CONST.__const: 0x200
--  __AUTH_CONST.__cfstring: 0x49c0
-+  __AUTH_CONST.__cfstring: 0x4a20
-   __AUTH_CONST.__objc_const: 0x4f88
-   __AUTH_CONST.__objc_intobj: 0x48
-   __AUTH_CONST.__auth_got: 0x0
 
-   - /usr/lib/libAXSafeCategoryBundle.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 763
--  Symbols:   2165
+-  Symbols:   1757
 -  CStrings:  648
 +  Functions: 766
-+  Symbols:   2175
++  Symbols:   1765
 +  CStrings:  657
- 
 Symbols:
 + -[AXPhotosGroupAccessibilityElement _axStoryCurrentPhotoLabel]
 + -[AXPhotosGroupAccessibilityElement _axVisibleStoryClipLayoutInDescendants]
@@ -90,8 +68,6 @@ Symbols:
 + ___75-[AXPhotosGroupAccessibilityElement _axVisibleStoryClipLayoutInDescendants]_block_invoke
 + ___block_descriptor_40_e8_32r_e50_v32?0"AXPhotosGroupAccessibilityElement"8Q16^B24lr32l8
 + __os_log_impl
-+ _objc_msgSend$_axStoryCurrentPhotoLabel
-+ _objc_msgSend$_axVisibleStoryClipLayoutInDescendants
 - GCC_except_table116
 - GCC_except_table118
 - GCC_except_table178

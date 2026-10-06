@@ -2,53 +2,38 @@
 
 > `/Applications/iCloud.app/iCloud`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__objc_methlist`
-- `__TEXT.__const`
-- `__TEXT.__gcc_except_tab`
-- `__TEXT.__unwind_info`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__objc_methname` | `0x459b` | `0x471b` | **`+0x180`** |
+| `__TEXT.__text` | `0x16c78` | `0x16d80` | **`+0x108`** |
+| `__TEXT.__oslogstring` | `0x1c7c` | `0x1cab` | **`+0x2f`** |
+| `__DATA_CONST.__cfstring` | `0x2340` | `0x2360` | **`+0x20`** |
+| `__TEXT.__cstring` | `0x2cba` | `0x2ccb` | **`+0x11`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
+- `__DATA.__objc_const`
+- `__DATA.__objc_selrefs`
 - `__DATA_CONST.__const`
 - `__DATA_CONST.__objc_arraydata`
 - `__DATA_CONST.__objc_dictobj`
-- `__DATA.__objc_const`
-- `__DATA.__objc_selrefs`
-- `__DATA.__data`
+- `__TEXT.__const`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+
+### Other Changes
 
 ```diff
 
 -2710.114.0.0.0
--  __TEXT.__text: 0x16c78
 +2710.116.0.0.0
-+  __TEXT.__text: 0x16d80
-   __TEXT.__auth_stubs: 0x5b0
-   __TEXT.__objc_stubs: 0x3320
-   __TEXT.__objc_methlist: 0x10b0
-   __TEXT.__const: 0xd0
-   __TEXT.__gcc_except_tab: 0x53c
--  __TEXT.__cstring: 0x2cba
--  __TEXT.__objc_methname: 0x459b
--  __TEXT.__oslogstring: 0x1c7c
-+  __TEXT.__cstring: 0x2ccb
-+  __TEXT.__objc_methname: 0x471b
-+  __TEXT.__oslogstring: 0x1cab
-   __TEXT.__objc_classname: 0x122
-   __TEXT.__objc_methtype: 0x1069
-   __TEXT.__ustring: 0x2a0
-   __TEXT.__unwind_info: 0x438
-   __DATA_CONST.__const: 0x748
--  __DATA_CONST.__cfstring: 0x2340
-+  __DATA_CONST.__cfstring: 0x2360
-   __DATA_CONST.__objc_classlist: 0x40
-   __DATA_CONST.__objc_catlist: 0x8
-   __DATA_CONST.__objc_protolist: 0x38
 
-   - /usr/lib/libobjc.A.dylib
-   Functions: 298
-   Symbols:   230
 -  CStrings:  1220
 +  CStrings:  1222
- 
 Functions:
 ~ sub_1000030c8 : 1168 -> 1220
 ~ sub_100009174 -> sub_1000091a8 : 680 -> 720

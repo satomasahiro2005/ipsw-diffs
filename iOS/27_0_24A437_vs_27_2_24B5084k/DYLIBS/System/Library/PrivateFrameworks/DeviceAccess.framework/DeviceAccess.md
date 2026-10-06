@@ -2,80 +2,43 @@
 
 > `/System/Library/PrivateFrameworks/DeviceAccess.framework/DeviceAccess`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x54c00` | `0x56e38` | **`+0x2238`** |
+| `__TEXT.__cstring` | `0xa223` | `0xa793` | **`+0x570`** |
+| `__AUTH_CONST.__objc_const` | `0x8070` | `0x8510` | **`+0x4a0`** |
+| `__AUTH_CONST.__cfstring` | `0x3680` | `0x3860` | **`+0x1e0`** |
+| `__TEXT.__objc_methlist` | `0x46e4` | `0x48bc` | **`+0x1d8`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1fa8` | `0x2078` | **`+0xd0`** |
+| `__AUTH.__objc_data` | `0x98` | `0x138` | **`+0xa0`** |
+| `__DATA.__objc_ivar` | `0x71c` | `0x764` | **`+0x48`** |
+| `__TEXT.__unwind_info` | `0x1410` | `0x1458` | **`+0x48`** |
+| `__TEXT.__gcc_except_tab` | `0x1330` | `0x1370` | **`+0x40`** |
+| `__DATA_CONST.__const` | `0xe80` | `0xea8` | **`+0x28`** |
+| `__AUTH_CONST.__const` | `0x6d0` | `0x6f0` | **`+0x20`** |
+| `__DATA_CONST.__objc_arraydata` | `0x48` | `0x68` | **`+0x20`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x18` | `0x30` | **`+0x18`** |
+| `__DATA.__bss` | `0x2f0` | `0x300` | **`+0x10`** |
+| `__DATA_CONST.__objc_classlist` | `0x1f0` | `0x200` | **`+0x10`** |
+| `__AUTH_CONST.__auth_got` | `0xc20` | `0xc28` | **`+0x8`** |
+| `__DATA_CONST.__got` | `0x538` | `0x540` | **`+0x8`** |
+| `__DATA_CONST.__objc_superrefs` | `0x188` | `0x190` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2700.34.0.0.0
--  __TEXT.__text: 0x531e0
--  __TEXT.__objc_methlist: 0x46e4
 +2701.2.0.0.0
-+  __TEXT.__text: 0x553dc
-+  __TEXT.__objc_methlist: 0x48bc
-   __TEXT.__const: 0x908
--  __TEXT.__cstring: 0xa223
--  __TEXT.__gcc_except_tab: 0x1330
-+  __TEXT.__cstring: 0xa793
-+  __TEXT.__gcc_except_tab: 0x1370
-   __TEXT.__constg_swiftt: 0x3b8
-   __TEXT.__swift5_typeref: 0x25a
-   __TEXT.__swift5_builtin: 0x3c
 
-   __TEXT.__swift5_proto: 0x14
-   __TEXT.__swift5_protos: 0x8
-   __TEXT.__swift5_capture: 0x1c
--  __TEXT.__unwind_info: 0x1a20
-+  __TEXT.__unwind_info: 0x1a80
-   __TEXT.__eh_frame: 0x4d0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xe80
--  __DATA_CONST.__objc_classlist: 0x1f0
-+  __DATA_CONST.__const: 0xea8
-+  __DATA_CONST.__objc_classlist: 0x200
-   __DATA_CONST.__objc_catlist: 0x10
-   __DATA_CONST.__objc_protolist: 0x70
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1fa8
-+  __DATA_CONST.__objc_selrefs: 0x2078
-   __DATA_CONST.__objc_protorefs: 0x38
--  __DATA_CONST.__objc_superrefs: 0x188
--  __DATA_CONST.__objc_arraydata: 0x48
--  __DATA_CONST.__got: 0x538
--  __AUTH_CONST.__const: 0x6d0
--  __AUTH_CONST.__cfstring: 0x3680
--  __AUTH_CONST.__objc_const: 0x8070
-+  __DATA_CONST.__objc_superrefs: 0x190
-+  __DATA_CONST.__objc_arraydata: 0x68
-+  __DATA_CONST.__got: 0x540
-+  __AUTH_CONST.__const: 0x6f0
-+  __AUTH_CONST.__cfstring: 0x3860
-+  __AUTH_CONST.__objc_const: 0x8510
-+  __AUTH_CONST.__objc_arrayobj: 0x30
-   __AUTH_CONST.__objc_intobj: 0x90
--  __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__auth_got: 0xc20
--  __AUTH.__objc_data: 0x98
-+  __AUTH_CONST.__auth_got: 0xc28
-+  __AUTH.__objc_data: 0x138
-   __AUTH.__data: 0x90
--  __DATA.__objc_ivar: 0x71c
-+  __DATA.__objc_ivar: 0x764
-   __DATA.__data: 0xc08
-   __DATA.__common: 0x8
-   __DATA_DIRTY.__objc_data: 0x1298
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 2302
--  Symbols:   3960
+-  Symbols:   3351
 -  CStrings:  1519
 +  Functions: 2358
-+  Symbols:   4045
++  Symbols:   3425
 +  CStrings:  1566
- 
 Symbols:
 + +[DAExtension extensionPointForType:]
 + +[DASession migrateAppAccessFromBundleID:toBundleID:migratedCount:error:]
@@ -176,18 +139,6 @@ Symbols:
 + ___73+[DASession migrateAppAccessFromBundleID:toBundleID:migratedCount:error:]_block_invoke
 + ___block_descriptor_40_e8_32r_e5_v8?0lr32l8
 + _dyld_get_active_platform
-+ _objc_msgSend$SDKDictionary
-+ _objc_msgSend$alwaysRunningOverride
-+ _objc_msgSend$destination
-+ _objc_msgSend$extensionFlags
-+ _objc_msgSend$extensionPointForIdentifier:platform:
-+ _objc_msgSend$extensionType
-+ _objc_msgSend$initWithDictionary:
-+ _objc_msgSend$pathExtension
-+ _objc_msgSend$sandboxProfileName
-+ _objc_msgSend$setEncrypt:
-+ _objc_msgSend$setSandboxProfileName:
-+ _objc_msgSend$unsignedLongLongValue
 - -[DAExtension alwaysRunningOverride]
 - -[DAExtension setAlwaysRunningOverride:]
 - -[DAExtension setName:]
@@ -213,7 +164,6 @@ Symbols:
 - GCC_except_table87
 - GCC_except_table90
 - _OBJC_IVAR_$_DAEventExtension._capabilityFlag
-- _objc_msgSend$setCapabilityFlag:
 CStrings:
 + "### Empty extension point declaration for '%@'"
 + "### Empty extension point definition"

@@ -2,26 +2,27 @@
 
 > `/System/Library/Siri/DM/SiriSuggestions/Owners/CalendarSuggestions.bundle/CalendarSuggestions`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4d50` | `0x4d54` | **`+0x4`** |
+
+### Same-size Content Changes
+
+- `__DATA.__data`
 - `__TEXT.__const`
 - `__TEXT.__constg_swiftt`
+- `__TEXT.__eh_frame`
 - `__TEXT.__swift5_typeref`
+- `__TEXT.__swift_as_cont`
 - `__TEXT.__swift_as_entry`
 - `__TEXT.__swift_as_ret`
-- `__TEXT.__swift_as_cont`
 - `__TEXT.__unwind_info`
-- `__TEXT.__eh_frame`
-- `__DATA.__data`
 
-```diff
+### Other Changes
 
- 3600.18.9.11.1
--  __TEXT.__text: 0x4d50
-+  __TEXT.__text: 0x4d54
-   __TEXT.__auth_stubs: 0x460
-   __TEXT.__const: 0x720
-   __TEXT.__objc_classname: 0xe9
+```text
 Functions:
 ~ sub_14e0 : 1284 -> 1288
 ~ sub_2e58 -> sub_2e5c : 20 -> 12

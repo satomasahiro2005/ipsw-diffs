@@ -2,76 +2,40 @@
 
 > `/System/Library/PrivateFrameworks/SurveyKitDaemon.framework/SurveyKitDaemon`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x79608` | `0x79e00` | **`+0x7f8`** |
+| `__TEXT.__oslogstring` | `0x1615` | `0x151d` | **`-0xf8`** |
+| `__TEXT.__cstring` | `0xb5d` | `0xb0d` | **`-0x50`** |
+| `__TEXT.__eh_frame` | `0x33a0` | `0x3368` | **`-0x38`** |
+| `__TEXT.__const` | `0x2160` | `0x2180` | **`+0x20`** |
+| `__DATA_CONST.__objc_selrefs` | `0x5c8` | `0x5b0` | **`-0x18`** |
+| `__TEXT.__unwind_info` | `0x17e0` | `0x17c8` | **`-0x18`** |
+| `__AUTH_CONST.__auth_got` | `0x1958` | `0x1948` | **`-0x10`** |
+| `__TEXT.__swift5_fieldmd` | `0x6ac` | `0x6b8` | **`+0xc`** |
+| `__DATA.__data` | `0x1008` | `0x1000` | **`-0x8`** |
+| `__DATA_CONST.__got` | `0xd28` | `0xd20` | **`-0x8`** |
+| `__TEXT.__swift5_capture` | `0x8e4` | `0x8e8` | **`+0x4`** |
+
+### Same-size Content Changes
 
 - `__TEXT.__swift5_reflstr`
+
+### Other Changes
 
 ```diff
 
 -7027.1.45.2.4
--  __TEXT.__text: 0x741d0
 +7027.1.54.2.3
-+  __TEXT.__text: 0x74924
-   __TEXT.__objc_methlist: 0x604
--  __TEXT.__const: 0x2160
--  __TEXT.__oslogstring: 0x1615
--  __TEXT.__cstring: 0xb5d
-+  __TEXT.__const: 0x2180
-+  __TEXT.__oslogstring: 0x151d
-+  __TEXT.__cstring: 0xb0d
-   __TEXT.__constg_swiftt: 0x8d0
-   __TEXT.__swift5_typeref: 0xca2
-   __TEXT.__swift5_builtin: 0x28
-   __TEXT.__swift5_reflstr: 0x7d6
--  __TEXT.__swift5_fieldmd: 0x6ac
-+  __TEXT.__swift5_fieldmd: 0x6b8
-   __TEXT.__swift5_assocty: 0x2e0
-   __TEXT.__swift5_proto: 0x168
-   __TEXT.__swift5_types: 0xa4
--  __TEXT.__swift5_capture: 0x8e4
-+  __TEXT.__swift5_capture: 0x8e8
-   __TEXT.__swift5_protos: 0x10
-   __TEXT.__swift_as_entry: 0x114
-   __TEXT.__swift_as_ret: 0xe4
-   __TEXT.__swift_as_cont: 0x2d0
--  __TEXT.__unwind_info: 0x1d40
--  __TEXT.__eh_frame: 0x33a0
-+  __TEXT.__unwind_info: 0x1d38
-+  __TEXT.__eh_frame: 0x3368
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
 
-   __DATA_CONST.__objc_classlist: 0x40
-   __DATA_CONST.__objc_protolist: 0x80
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x5c8
-+  __DATA_CONST.__objc_selrefs: 0x5b0
-   __DATA_CONST.__objc_protorefs: 0x48
--  __DATA_CONST.__got: 0xd28
-+  __DATA_CONST.__got: 0xd20
-   __AUTH_CONST.__const: 0x2258
-   __AUTH_CONST.__objc_const: 0x8a8
--  __AUTH_CONST.__auth_got: 0x1958
-+  __AUTH_CONST.__auth_got: 0x1948
-   __AUTH.__objc_data: 0x168
-   __AUTH.__data: 0x190
--  __DATA.__data: 0x1008
-+  __DATA.__data: 0x1000
-   __DATA.__common: 0x98
-   __DATA_DIRTY.__objc_data: 0x308
-   __DATA_DIRTY.__data: 0x10b8
-
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 1782
 -  Symbols:   681
 -  CStrings:  141
 +  Functions: 1783
 +  Symbols:   680
 +  CStrings:  130
- 
 Symbols:
 - _OBJC_CLASS_$__HKBehavior
 CStrings:

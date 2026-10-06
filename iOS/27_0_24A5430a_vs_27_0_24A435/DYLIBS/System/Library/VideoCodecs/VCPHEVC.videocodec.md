@@ -2,47 +2,32 @@
 
 > `/System/Library/VideoCodecs/VCPHEVC.videocodec`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x132684` | `0x14eae8` | **`+0x1c464`** |
+| `__TEXT.__cstring` | `0x214d6` | `0x2a6fc` | **`+0x9226`** |
+| `__TEXT.__oslogstring` | `—` | `0x56c8` | **`+0x56c8`** |
+| `__DATA_CONST.__const` | `0xd0` | `0x5b8` | **`+0x4e8`** |
+| `__TEXT.__const` | `0x10dd4` | `0x10b04` | **`-0x2d0`** |
+| `__TEXT.__gcc_except_tab` | `0xfdc` | `0x1074` | **`+0x98`** |
+| `__TEXT.__unwind_info` | `0x16e0` | `0x1778` | **`+0x98`** |
+| `__AUTH_CONST.__auth_got` | `0x720` | `0x788` | **`+0x68`** |
+| `__TEXT.__eh_frame` | `0x128` | `0x160` | **`+0x38`** |
+| `__AUTH_CONST.__const` | `0x1188` | `0x11a0` | **`+0x18`** |
+| `__DATA.__bss` | `0x1a0` | `0x1b0` | **`+0x10`** |
+
+### Other Changes
+
 ```diff
 
- 374.7.0.0.0
--  __TEXT.__text: 0x132684
--  __TEXT.__const: 0x10dd4
--  __TEXT.__cstring: 0x214d6
--  __TEXT.__gcc_except_tab: 0xfdc
-+  __TEXT.__text: 0x14eae8
-+  __TEXT.__const: 0x10b04
-+  __TEXT.__cstring: 0x2a6fc
-+  __TEXT.__gcc_except_tab: 0x1074
-+  __TEXT.__oslogstring: 0x56c8
-   __TEXT.__ustring: 0x20
--  __TEXT.__unwind_info: 0x16e0
--  __TEXT.__eh_frame: 0x128
-+  __TEXT.__unwind_info: 0x1778
-+  __TEXT.__eh_frame: 0x160
-   __TEXT.__auth_stubs: 0x0
--  __DATA_CONST.__const: 0xd0
-+  __DATA_CONST.__const: 0x5b8
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0x1188
-+  __AUTH_CONST.__const: 0x11a0
-   __AUTH_CONST.__cfstring: 0x9a0
-   __AUTH_CONST.__weak_auth_got: 0x50
--  __AUTH_CONST.__auth_got: 0x720
-+  __AUTH_CONST.__auth_got: 0x788
-   __DATA_DIRTY.__data: 0x34
-   __DATA_DIRTY.__bss: 0x38
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-
-   - /System/Library/PrivateFrameworks/IOSurfaceAccelerator.framework/IOSurfaceAccelerator
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libc++.1.dylib
 -  Functions: 2440
 -  Symbols:   411
 -  CStrings:  168
 +  Functions: 2461
 +  Symbols:   425
 +  CStrings:  1372
- 
 Symbols:
 + __os_log_default
 + __os_log_impl

@@ -2,96 +2,52 @@
 
 > `/System/Library/PrivateFrameworks/HeartHealth.framework/HeartHealth`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x26e08` | `0x291c4` | **`+0x23bc`** |
+| `__TEXT.__cstring` | `0x361a` | `0x381a` | **`+0x200`** |
+| `__TEXT.__const` | `0x2f8` | `0x488` | **`+0x190`** |
+| `__DATA.__bss` | `0x2c0` | `0x440` | **`+0x180`** |
+| `__TEXT.__swift5_reflstr` | `0x57` | `0x1d1` | **`+0x17a`** |
+| `__TEXT.__swift5_typeref` | `0x29` | `0x18b` | **`+0x162`** |
+| `__AUTH_CONST.__const` | `0x390` | `0x4f0` | **`+0x160`** |
+| `__TEXT.__oslogstring` | `0x17d4` | `0x18d4` | **`+0x100`** |
+| `__DATA_CONST.__objc_selrefs` | `0x1be0` | `0x1cd0` | **`+0xf0`** |
+| `__TEXT.__constg_swiftt` | `0x90` | `0x17c` | **`+0xec`** |
+| `__TEXT.__unwind_info` | `0xbe0` | `0xcc8` | **`+0xe8`** |
+| `__AUTH_CONST.__auth_got` | `0x4e8` | `0x5c0` | **`+0xd8`** |
+| `__AUTH_CONST.__cfstring` | `0x2ce0` | `0x2d80` | **`+0xa0`** |
+| `__TEXT.__swift5_fieldmd` | `0x74` | `0x104` | **`+0x90`** |
+| `__DATA_CONST.__got` | `0x5f0` | `0x678` | **`+0x88`** |
+| `__AUTH_CONST.__objc_const` | `0x5e68` | `0x5ee8` | **`+0x80`** |
+| `__TEXT.__objc_methlist` | `0x2fec` | `0x305c` | **`+0x70`** |
+| `__AUTH.__data` | `0xa8` | `0xf0` | **`+0x48`** |
+| `__DATA.__data` | `0x928` | `0x970` | **`+0x48`** |
+| `__DATA_CONST.__const` | `0xd40` | `0xd80` | **`+0x40`** |
+| `__TEXT.__eh_frame` | `0x70` | `0xb0` | **`+0x40`** |
+| `__TEXT.__swift5_capture` | `—` | `0x28` | **`+0x28`** |
+| `__TEXT.__swift5_assocty` | `0x18` | `0x30` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x314` | `0x320` | **`+0xc`** |
+| `__TEXT.__swift5_proto` | `0x14` | `0x20` | **`+0xc`** |
+| `__TEXT.__swift5_types` | `0xc` | `0x14` | **`+0x8`** |
+| `__TEXT.__swift5_protos` | `—` | `0x4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
- 7027.0.72.2.7
--  __TEXT.__text: 0x26e08
--  __TEXT.__objc_methlist: 0x2fec
--  __TEXT.__const: 0x2f8
--  __TEXT.__oslogstring: 0x17d4
--  __TEXT.__cstring: 0x361a
-+  __TEXT.__text: 0x291c4
-+  __TEXT.__objc_methlist: 0x305c
-+  __TEXT.__const: 0x488
-+  __TEXT.__oslogstring: 0x18d4
-+  __TEXT.__cstring: 0x381a
-   __TEXT.__gcc_except_tab: 0x190
--  __TEXT.__constg_swiftt: 0x90
--  __TEXT.__swift5_typeref: 0x29
-+  __TEXT.__constg_swiftt: 0x17c
-+  __TEXT.__swift5_typeref: 0x18b
-   __TEXT.__swift5_builtin: 0x14
--  __TEXT.__swift5_types: 0xc
--  __TEXT.__swift5_reflstr: 0x57
--  __TEXT.__swift5_assocty: 0x18
--  __TEXT.__swift5_fieldmd: 0x74
--  __TEXT.__swift5_proto: 0x14
--  __TEXT.__unwind_info: 0xbe0
--  __TEXT.__eh_frame: 0x70
-+  __TEXT.__swift5_types: 0x14
-+  __TEXT.__swift5_reflstr: 0x1d1
-+  __TEXT.__swift5_fieldmd: 0x104
-+  __TEXT.__swift5_proto: 0x20
-+  __TEXT.__swift5_capture: 0x28
-+  __TEXT.__swift5_assocty: 0x30
-+  __TEXT.__swift5_protos: 0x4
-+  __TEXT.__unwind_info: 0xcc8
-+  __TEXT.__eh_frame: 0xb0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xd40
-+  __DATA_CONST.__const: 0xd80
-   __DATA_CONST.__objc_classlist: 0x210
-   __DATA_CONST.__objc_catlist: 0x30
-   __DATA_CONST.__objc_protolist: 0xc0
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x1be0
-+  __DATA_CONST.__objc_selrefs: 0x1cd0
-   __DATA_CONST.__objc_protorefs: 0x68
-   __DATA_CONST.__objc_superrefs: 0x1a0
-   __DATA_CONST.__objc_arraydata: 0x28
--  __DATA_CONST.__got: 0x5f0
--  __AUTH_CONST.__const: 0x390
--  __AUTH_CONST.__cfstring: 0x2ce0
--  __AUTH_CONST.__objc_const: 0x5e68
-+  __DATA_CONST.__got: 0x678
-+  __AUTH_CONST.__const: 0x4f0
-+  __AUTH_CONST.__cfstring: 0x2d80
-+  __AUTH_CONST.__objc_const: 0x5ee8
-   __AUTH_CONST.__objc_intobj: 0x120
-   __AUTH_CONST.__objc_arrayobj: 0x18
--  __AUTH_CONST.__auth_got: 0x4e8
-+  __AUTH_CONST.__auth_got: 0x5c0
-   __AUTH.__objc_data: 0xf00
--  __AUTH.__data: 0xa8
--  __DATA.__objc_ivar: 0x314
--  __DATA.__data: 0x928
-+  __AUTH.__data: 0xf0
-+  __DATA.__objc_ivar: 0x320
-+  __DATA.__data: 0x970
-   __DATA.__common: 0x20
-   __DATA_DIRTY.__objc_data: 0x550
-   __DATA_DIRTY.__bss: 0x38
-
-   - /usr/lib/swift/libswiftCoreLocation.dylib
-   - /usr/lib/swift/libswiftDispatch.dylib
-   - /usr/lib/swift/libswiftObjectiveC.dylib
 +  - /usr/lib/swift/libswiftObservation.dylib
-   - /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
-   - /usr/lib/swift/libswiftXPC.dylib
-   - /usr/lib/swift/libswift_Builtin_float.dylib
+
 +  - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
+
 -  Functions: 1227
--  Symbols:   2979
+-  Symbols:   2386
 -  CStrings:  506
 +  Functions: 1324
-+  Symbols:   3076
++  Symbols:   2455
 +  CStrings:  517
- 
 Symbols:
 + +[HKHRHypertensionNotificationsFeatureAvailabilityRequirements _analysisForFeatureIdentifier:featureFlagIsEnabled:]
 + +[HKHRHypertensionNotificationsFeatureAvailabilityRequirements _backgroundDeliveryForFeatureIdentifier:featureFlagIsEnabled:]
@@ -145,42 +101,6 @@ Symbols:
 + _associated conformance 11HeartHealth0A23RatePreferencesProviderVAA0acD9ProvidingAA0acD8SequenceAaDP_Sci
 + _get_witness_table 11Observation12ObservationsVy11HeartHealth0C15RatePreferencesVs5NeverOGSciHPyHC
 + _objc_allocWithZone
-+ _objc_msgSend$_analysisForFeatureIdentifier:featureFlagIsEnabled:
-+ _objc_msgSend$_backgroundDeliveryForFeatureIdentifier:featureFlagIsEnabled:
-+ _objc_msgSend$_basePromotionRequirementsForFeatureIdentifier:featureFlagIsEnabled:
-+ _objc_msgSend$_baseUsageWithFeatureOnRequirementIncluded:forFeatureIdentifier:featureFlagIsEnabled:
-+ _objc_msgSend$_countryRequirementWithIsOnboardingRecordPresent:
-+ _objc_msgSend$_dtdrEducationVisibilityForFeatureIdentifier:featureFlagIsEnabled:
-+ _objc_msgSend$_dtdrStatusVisibilityForFeatureIdentifier:featureFlagIsEnabled:
-+ _objc_msgSend$_featureDeviceCapabilityForFeatureIdentifier:
-+ _objc_msgSend$_featureFlagEnabledForFeatureIdentifier:
-+ _objc_msgSend$_localCountryIsSupportedRequirementForFeatureIdentifier:
-+ _objc_msgSend$_notificationSettingsVisibilityForFeatureIdentifier:featureFlagIsEnabled:
-+ _objc_msgSend$_onboardingInitiationForFeatureIdentifier:featureFlagIsEnabled:
-+ _objc_msgSend$_onboardingRecordRequirement
-+ _objc_msgSend$_pregnancyAdjustmentEligibilityForFeatureIdentifier:featureFlagIsEnabled:
-+ _objc_msgSend$_promotionForFeatureIdentifier:featureFlagIsEnabled:
-+ _objc_msgSend$_remoteCountryIsSupportedRequirementForFeatureIdentifier:isSupportedIfCountryListMissing:
-+ _objc_msgSend$_requirementsByContextForFeatureIdentifier:
-+ _objc_msgSend$_settingsVisibilityWithFeatureOnboarded:forFeatureIdentifier:featureFlagIsEnabled:
-+ _objc_msgSend$_setupVersionManagersWithIsOnboardingRecordPresent:
-+ _objc_msgSend$_sharedFeatureIdentifier
-+ _objc_msgSend$_usageForFeatureIdentifier:featureFlagIsEnabled:
-+ _objc_msgSend$areRegionAndWatchSupportedVersionsMismatched
-+ _objc_msgSend$areRegionAndWatchSupportedVersionsMismatchedWithV1Evaluation:v2Evaluation:isOnboardingRecordPresent:
-+ _objc_msgSend$domain
-+ _objc_msgSend$enableGreenLightMeasurementsDuringTheaterModeKey
-+ _objc_msgSend$enableGreenLightMeasurementsKey
-+ _objc_msgSend$featureFlagIsEnabled:
-+ _objc_msgSend$featureStatusWithError:
-+ _objc_msgSend$features
-+ _objc_msgSend$hermitV2
-+ _objc_msgSend$init
-+ _objc_msgSend$initWithFeatureIdentifier:healthStore:
-+ _objc_msgSend$initWithFeatureIdentifier:healthStore:countryCodeSource:
-+ _objc_msgSend$isAppleWatch
-+ _objc_msgSend$lastModifiedPreferencesDateKey
-+ _objc_msgSend$stringValue
 + _swift_cvw_assignWithCopy
 + _swift_cvw_assignWithTake
 + _swift_cvw_destroy
@@ -238,14 +158,6 @@ Symbols:
 - +[HKHRHypertensionNotificationsFeatureAvailabilityRequirements settingsUserInteractionRequirementIdentifiers]
 - +[HKHRHypertensionNotificationsFeatureAvailabilityRequirements settingsVisibilityRequirementIdentifiersWithFeatureOnboarded:]
 - +[HKHRHypertensionNotificationsFeatureAvailabilityRequirements usageRequirementIdentifiers]
-- _objc_msgSend$_basePromotionRequirements
-- _objc_msgSend$_baseUsageWithFeatureOnRequirementIncluded:
-- _objc_msgSend$_dtdrEducationVisibility
-- _objc_msgSend$_dtdrStatusVisibility
-- _objc_msgSend$_hypertensionIdentifier
-- _objc_msgSend$_notificationSettingsVisibility
-- _objc_msgSend$_settingsUserInteractionEnabled
-- _objc_msgSend$_settingsVisibilityWithFeatureOnboarded:
 CStrings:
 + "(01)00195951129969"
 + "(01)00195951129976"

@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/SEService.framework/SEService`
 
-```diff
+### Section Size Changes
 
- 70.39.1.0.0
--  __TEXT.__text: 0x114224
-+  __TEXT.__text: 0x1142f4
-   __TEXT.__objc_methlist: 0x3ccc
-   __TEXT.__const: 0x18930
-   __TEXT.__gcc_except_tab: 0x1ab4
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x114224` | `0x1142f4` | **`+0xd0`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_23f23a14c -> sub_23fb7614c : 600 -> 604
 ~ sub_23f23cfe0 -> sub_23fb78fe4 : 1224 -> 1308

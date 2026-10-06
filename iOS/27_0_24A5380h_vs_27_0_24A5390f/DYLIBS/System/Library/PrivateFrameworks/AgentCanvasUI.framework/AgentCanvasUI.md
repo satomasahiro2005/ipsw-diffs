@@ -2,140 +2,72 @@
 
 > `/System/Library/PrivateFrameworks/AgentCanvasUI.framework/AgentCanvasUI`
 
-### Sections with Same Size but Changed Content
+### Section Size Changes
 
-- `__TEXT.__swift5_protos`
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x183c3c` | `0x1733dc` | **`-0x10860`** |
+| `__TEXT.__swift5_typeref` | `0x100c4` | `0xb6fe` | **`-0x49c6`** |
+| `__AUTH_CONST.__const` | `0x87c0` | `0x7668` | **`-0x1158`** |
+| `__TEXT.__cstring` | `0x5046` | `0x421f` | **`-0xe27`** |
+| `__DATA_DIRTY.__data` | `0x6760` | `0x5ae0` | **`-0xc80`** |
+| `__DATA.__bss` | `0x51a0` | `0x5800` | **`+0x660`** |
+| `__AUTH.__data` | `0x1478` | `0x19f0` | **`+0x578`** |
+| `__DATA_DIRTY.__bss` | `0x48b0` | `0x43b0` | **`-0x500`** |
+| `__DATA.__data` | `0x2808` | `0x2bf8` | **`+0x3f0`** |
+| `__TEXT.__const` | `0xdb24` | `0xd734` | **`-0x3f0`** |
+| `__TEXT.__swift5_capture` | `0x2014` | `0x1c60` | **`-0x3b4`** |
+| `__TEXT.__eh_frame` | `0x6e68` | `0x71f8` | **`+0x390`** |
+| `__AUTH_CONST.__objc_const` | `0x2ee8` | `0x31f0` | **`+0x308`** |
+| `__AUTH_CONST.__auth_got` | `0x3830` | `0x3ab8` | **`+0x288`** |
+| `__TEXT.__constg_swiftt` | `0x4528` | `0x4710` | **`+0x1e8`** |
+| `__TEXT.__oslogstring` | `0x2c37` | `0x2a7f` | **`-0x1b8`** |
+| `__TEXT.__unwind_info` | `0x51c0` | `0x5020` | **`-0x1a0`** |
+| `__DATA_CONST.__got` | `0x1dc8` | `0x1f30` | **`+0x168`** |
+| `__DATA_CONST.__objc_selrefs` | `0xb88` | `0xc60` | **`+0xd8`** |
+| `__DATA_CONST.__const` | `0x4a8` | `0x530` | **`+0x88`** |
+| `__TEXT.__objc_methlist` | `0xaa8` | `0xb30` | **`+0x88`** |
+| `__TEXT.__swift5_reflstr` | `0x3bd4` | `0x3b54` | **`-0x80`** |
+| `__TEXT.__swift5_assocty` | `0xdb0` | `0xe10` | **`+0x60`** |
+| `__AUTH.__objc_data` | `0x3e0` | `0x430` | **`+0x50`** |
+| `__DATA.__common` | `0x38` | `0x78` | **`+0x40`** |
+| `__TEXT.__swift5_builtin` | `0x104` | `0x140` | **`+0x3c`** |
+| `__TEXT.__swift5_fieldmd` | `0x3608` | `0x3640` | **`+0x38`** |
+| `__DATA_DIRTY.__objc_data` | `0x870` | `0x848` | **`-0x28`** |
+| `__DATA_CONST.__objc_classlist` | `0x118` | `0x138` | **`+0x20`** |
+| `__TEXT.__swift5_types` | `0x3c4` | `0x3e4` | **`+0x20`** |
+| `__TEXT.__swift_as_entry` | `0x230` | `0x24c` | **`+0x1c`** |
+| `__DATA_DIRTY.__common` | `0xa9` | `0x90` | **`-0x19`** |
+| `__TEXT.__swift5_proto` | `0x4a8` | `0x4bc` | **`+0x14`** |
+| `__TEXT.__swift_as_cont` | `0x2ac` | `0x2c0` | **`+0x14`** |
+| `__DATA_CONST.__objc_protolist` | `0x108` | `0x118` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x88` | `0x90` | **`+0x8`** |
+| `__TEXT.__swift5_mpenum` | `0x8` | `0x10` | **`+0x8`** |
+| `__TEXT.__swift_as_ret` | `0x230` | `0x238` | **`+0x8`** |
+
+### Other Changes
 
 ```diff
 
 -73.0.5.102.0
--  __TEXT.__text: 0x183c3c
--  __TEXT.__objc_methlist: 0xaa8
--  __TEXT.__const: 0xdb24
--  __TEXT.__swift5_typeref: 0x100c4
--  __TEXT.__swift5_capture: 0x2014
--  __TEXT.__constg_swiftt: 0x4528
--  __TEXT.__swift5_builtin: 0x104
--  __TEXT.__swift5_reflstr: 0x3bd4
--  __TEXT.__swift5_fieldmd: 0x3608
--  __TEXT.__swift5_assocty: 0xdb0
--  __TEXT.__swift5_proto: 0x4a8
--  __TEXT.__swift5_types: 0x3c4
--  __TEXT.__swift_as_entry: 0x230
--  __TEXT.__swift_as_ret: 0x230
--  __TEXT.__swift_as_cont: 0x2ac
 +73.0.12.0.0
-+  __TEXT.__text: 0x1733dc
-+  __TEXT.__objc_methlist: 0xb30
-+  __TEXT.__const: 0xd734
-+  __TEXT.__constg_swiftt: 0x4710
-+  __TEXT.__swift5_typeref: 0xb6fe
-+  __TEXT.__swift5_builtin: 0x140
-+  __TEXT.__swift5_reflstr: 0x3b54
-+  __TEXT.__swift5_fieldmd: 0x3640
-+  __TEXT.__swift5_assocty: 0xe10
-+  __TEXT.__swift5_proto: 0x4bc
-+  __TEXT.__swift5_types: 0x3e4
-+  __TEXT.__swift5_capture: 0x1c60
-+  __TEXT.__swift_as_entry: 0x24c
-+  __TEXT.__swift_as_ret: 0x238
-+  __TEXT.__swift_as_cont: 0x2c0
-   __TEXT.__swift5_protos: 0x24
--  __TEXT.__cstring: 0x5046
--  __TEXT.__oslogstring: 0x2c37
--  __TEXT.__swift5_mpenum: 0x8
--  __TEXT.__unwind_info: 0x51c0
--  __TEXT.__eh_frame: 0x6e68
-+  __TEXT.__cstring: 0x421f
-+  __TEXT.__oslogstring: 0x2a7f
-+  __TEXT.__swift5_mpenum: 0x10
-+  __TEXT.__unwind_info: 0x5020
-+  __TEXT.__eh_frame: 0x71f8
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x4a8
--  __DATA_CONST.__objc_classlist: 0x118
--  __DATA_CONST.__objc_protolist: 0x108
-+  __DATA_CONST.__const: 0x530
-+  __DATA_CONST.__objc_classlist: 0x138
-+  __DATA_CONST.__objc_protolist: 0x118
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xb88
--  __DATA_CONST.__objc_protorefs: 0x88
--  __DATA_CONST.__got: 0x1dc8
--  __AUTH_CONST.__const: 0x87c0
--  __AUTH_CONST.__objc_const: 0x2ee8
--  __AUTH_CONST.__auth_got: 0x3830
--  __AUTH.__objc_data: 0x3e0
--  __AUTH.__data: 0x1478
--  __DATA.__data: 0x2808
--  __DATA.__bss: 0x51a0
--  __DATA.__common: 0x38
--  __DATA_DIRTY.__objc_data: 0x870
--  __DATA_DIRTY.__data: 0x6760
--  __DATA_DIRTY.__bss: 0x48b0
--  __DATA_DIRTY.__common: 0xa9
-+  __DATA_CONST.__objc_selrefs: 0xc60
-+  __DATA_CONST.__objc_protorefs: 0x90
-+  __DATA_CONST.__got: 0x1f30
-+  __AUTH_CONST.__const: 0x7668
-+  __AUTH_CONST.__objc_const: 0x31f0
-+  __AUTH_CONST.__auth_got: 0x3ab8
-+  __AUTH.__objc_data: 0x430
-+  __AUTH.__data: 0x19f0
-+  __DATA.__data: 0x2bf8
-+  __DATA.__bss: 0x5800
-+  __DATA.__common: 0x78
-+  __DATA_DIRTY.__objc_data: 0x848
-+  __DATA_DIRTY.__data: 0x5ae0
-+  __DATA_DIRTY.__bss: 0x43b0
-+  __DATA_DIRTY.__common: 0x90
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-   - /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+
 +  - /System/Library/Frameworks/CoreHaptics.framework/CoreHaptics
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/FoundationModels.framework/FoundationModels
-   - /System/Library/Frameworks/Metal.framework/Metal
 
-   - /System/Library/PrivateFrameworks/AssistantUICore.framework/AssistantUICore
-   - /System/Library/PrivateFrameworks/AsyncAlgorithmsInternal.framework/AsyncAlgorithmsInternal
-   - /System/Library/PrivateFrameworks/CollectionsInternal.framework/CollectionsInternal
 -  - /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
-   - /System/Library/PrivateFrameworks/DesignLibrary.framework/DesignLibrary
-   - /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags
-   - /System/Library/PrivateFrameworks/Feedback.framework/Feedback
 
-   - /System/Library/PrivateFrameworks/GenerativeAssistantUI.framework/GenerativeAssistantUI
-   - /System/Library/PrivateFrameworks/GenerativePartnerService.framework/GenerativePartnerService
-   - /System/Library/PrivateFrameworks/GenerativePartnerServiceUI.framework/GenerativePartnerServiceUI
 -  - /System/Library/PrivateFrameworks/IconServices.framework/IconServices
-   - /System/Library/PrivateFrameworks/IntelligenceFlow.framework/IntelligenceFlow
+
 +  - /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf
-   - /System/Library/PrivateFrameworks/LinkMetadata.framework/LinkMetadata
-   - /System/Library/PrivateFrameworks/LinkServices.framework/LinkServices
-   - /System/Library/PrivateFrameworks/MediaRemote.framework/MediaRemote
 
-   - /System/Library/PrivateFrameworks/SiriAppIntents.framework/SiriAppIntents
-   - /System/Library/PrivateFrameworks/SiriReaderServices.framework/SiriReaderServices
-   - /System/Library/PrivateFrameworks/SiriUIFoundation.framework/SiriUIFoundation
 +  - /System/Library/PrivateFrameworks/SiriUtilities.framework/SiriUtilities
-   - /System/Library/PrivateFrameworks/SnippetKit.framework/SnippetKit
-   - /System/Library/PrivateFrameworks/SnippetUI.framework/SnippetUI
-   - /System/Library/PrivateFrameworks/ToolKit.framework/ToolKit
 
-   - /usr/lib/swift/libswift_StringProcessing.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 8449
--  Symbols:   3221
+-  Symbols:   2993
 -  CStrings:  700
 +  Functions: 8159
-+  Symbols:   3174
++  Symbols:   2928
 +  CStrings:  581
- 
 Symbols:
 + _CHHapticDynamicParameterIDHapticIntensityControl
 + _CHHapticEventParameterIDHapticIntensity
@@ -220,31 +152,6 @@ Symbols:
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBP17AgentCanvasUICoreE13snippetBorder_12cornerRadiusQrSb_12CoreGraphics7CGFloatVtFQOyAA15ModifiedContentVyAA5GroupVyAA012_ConditionalO0VyAKyAKy0deB0032CachingTransformingPluginSnippetC0VyAP05EmptyU12HostingModel33_38140D1B2FC0017CB93F207B8B7A7C2BLLVGAA30_EnvironmentKeyWritingModifierVyAP07DecodeduX0OSgGGAA16_FlexFrameLayoutVGAP25CitationSourceFallbackRowATLLVGGA3_G_Qo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBP17AgentCanvasUICoreE17campoDebugOverlay_14additionalInfo5color9alignment8isActiveQrSSyXK_SSSgAA5ColorVAA9AlignmentVSbtFQOyAA15ModifiedContentVyAPyAA6HStackVyAA05TupleS0VyAcAE11buttonStyleyQrqd__AA015PrimitiveButtonW0Rd__lFQOyAA0Y0VyAPyAA4TextVAA16_FlexFrameLayoutVGG_AA08BorderedyW0VQo_Sg_AcAEAUyQrqd__AaVRd__lFQOyA2__AA017BorderedProminentyW0VQo_SgQPGGAA32_EnvironmentKeyTransformModifierVySbGGAA30_EnvironmentKeyWritingModifierVyAA11ControlSizeOGG_Qo_HO
 + _get_witness_table qd__7SwiftUI4ViewHD2_AaBP17AgentCanvasUICoreE19viewLoadingBehavioryQrAD0chI0OFQOyAA06ScrollC0VyAA15ModifiedContentVyAKyAA6VStackVyAA7ForEachVySayAD21SourceAttributionInfoVGAQ0deB008CitationP3Row33_38140D1B2FC0017CB93F207B8B7A7C2BLLVGGAA16_FlexFrameLayoutVGAA14_PaddingLayoutVGG_Qo_HO
-+ _objc_msgSend$capabilitiesForHardware
-+ _objc_msgSend$createPlayerWithPattern:error:
-+ _objc_msgSend$dateFromString:
-+ _objc_msgSend$impactOccurred
-+ _objc_msgSend$initAndReturnError:
-+ _objc_msgSend$initWithEventType:parameters:relativeTime:
-+ _objc_msgSend$initWithEventType:parameters:relativeTime:duration:
-+ _objc_msgSend$initWithEvents:parameterCurves:error:
-+ _objc_msgSend$initWithEvents:parameters:error:
-+ _objc_msgSend$initWithParameterID:controlPoints:relativeTime:
-+ _objc_msgSend$initWithParameterID:value:
-+ _objc_msgSend$initWithRelativeTime:value:
-+ _objc_msgSend$initWithStyle:
-+ _objc_msgSend$localizedStringFromDate:dateStyle:timeStyle:
-+ _objc_msgSend$scale
-+ _objc_msgSend$screen
-+ _objc_msgSend$setAssociatedApplicationBundleIdentifier:
-+ _objc_msgSend$setAutoShutdownEnabled:
-+ _objc_msgSend$setFormatOptions:
-+ _objc_msgSend$setResetHandler:
-+ _objc_msgSend$setStoppedHandler:
-+ _objc_msgSend$setTimeZone:
-+ _objc_msgSend$startAndReturnError:
-+ _objc_msgSend$startAtTime:error:
-+ _objc_msgSend$supportsHaptics
 + _swift_release_x2
 + _swift_task_localValuePop
 + _swift_task_localValuePush
@@ -445,13 +352,6 @@ Symbols:
 - _get_witness_table qd0__7SwiftUI4ViewHD3_AaBPAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA15ModifiedContentVyAA5GroupVyAA012_ConditionalI0VyAA5ImageVAA5ColorVGGAA12_FrameLayoutVG_SSQo_HO
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBP17AgentCanvasUICoreE13snippetBorder_12cornerRadiusQrSb_12CoreGraphics7CGFloatVtFQOyAA15ModifiedContentVyAA5GroupVyAA012_ConditionalO0VyAKy0deB0032CachingTransformingPluginSnippetC0VyAP05EmptyU12HostingModel33_38140D1B2FC0017CB93F207B8B7A7C2BLLVGAA16_FlexFrameLayoutVGAP25CitationSourceFallbackRowATLLVGGAXG_Qo_HO
 - _get_witness_table qd__7SwiftUI4ViewHD2_AaBP17AgentCanvasUICoreE17campoDebugOverlay_14additionalInfo5color9alignment8isActiveQrSSyXK_SSSgAA5ColorVAA9AlignmentVSbtFQOyAA15ModifiedContentVyAA6HStackVyAA05TupleS0VyAcAE11buttonStyleyQrqd__AA015PrimitiveButtonW0Rd__lFQOyAA0Y0VyAPyAA4TextVAA16_FlexFrameLayoutVGG_AA08BorderedyW0VQo_Sg_AcAEAUyQrqd__AaVRd__lFQOyA2__AA017BorderedProminentyW0VQo_SgQPGGAA30_EnvironmentKeyWritingModifierVyAA11ControlSizeOGG_Qo_HO
-- _objc_msgSend$dismissViewControllerAnimated:completion:
-- _objc_msgSend$getImageForImageDescriptor:completion:
-- _objc_msgSend$initWithBundleIdentifier:
-- _objc_msgSend$initWithInteger:
-- _objc_msgSend$initWithSize:scale:
-- _objc_msgSend$setModalPresentationStyle:
-- _objc_msgSend$stringValue
 - _swift_release_x12
 - _symbolic G0R2_
 - _symbolic Ieg_

@@ -2,19 +2,19 @@
 
 > `/System/Library/PrivateFrameworks/SafetyMonitorUI.framework/SafetyMonitorUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x17408c` | `0x174058` | **`-0x34`** |
+| `__TEXT.__swift5_typeref` | `0x1c61e` | `0x1c610` | **`-0xe`** |
+
+### Other Changes
+
 ```diff
 
 -1119.0.0.0.0
--  __TEXT.__text: 0x17408c
 +1122.0.0.0.0
-+  __TEXT.__text: 0x174058
-   __TEXT.__objc_methlist: 0xb84
-   __TEXT.__const: 0xbc44
--  __TEXT.__swift5_typeref: 0x1c61e
-+  __TEXT.__swift5_typeref: 0x1c610
-   __TEXT.__swift5_capture: 0x1b70
-   __TEXT.__constg_swiftt: 0x3a40
-   __TEXT.__swift5_reflstr: 0x2a61
 Symbols:
 + _get_witness_table 15SafetyMonitorUI20DestinationProvidingRzl05SwiftC015ModifiedContentVyAC4ViewPACE20accessibilityElement8childrenQrAC26AccessibilityChildBehaviorV_tFQOyAEyAEyAEyAgCE17toolbarBackground_3forQrAC10VisibilityO_AC16ToolbarPlacementVdtFQOyAEyAC6ZStackVyAEyAA0d9StaticMapI13Representable33_C9A023BFDCF99C831CE677E11CA69BDBLLVAC30_SafeAreaRegionsIgnoringLayoutVGGAC06_InsetI8ModifierVyAEyAEyAEyAC6HStackVyAC05TupleH0VyAEyAC6VStackVyAC012_ConditionalH0VyA4_yAA17LocationTitleTextV_AEyAEyAEyAC4TextVAC0M18AttachmentModifierVGAC30_EnvironmentKeyWritingModifierVyAC4FontVSgGGA17_ySiSgGGQPGSgAEyAEyA12_SgA14_GAC24_ForegroundStyleModifierVyAC22HierarchicalShapeStyleVGGGGAC16_FlexFrameLayoutVG_AEyAgCE11buttonStyleyQrqd__AC20PrimitiveButtonStyleRd__lFQOyAEyAC6ButtonVyA12_GA14_G_AC28BorderedProminentButtonStyleVQo_A17_yAC11ControlSizeOGGSgQPGGAC14_PaddingLayoutVGA39_GAC01_Q13StyleModifierVyAC13AnyShapeStyleVGGGG_Qo_AC12_FrameLayoutVGA62_yAC5ColorVGGAC11_ClipEffectVyAC16RoundedRectangleVGG_Qo_A14_GAcFHPqd__AcFHD2_A83_HO_A14_AC0I8ModifierHPyHCHC
 + _symbolic _____yAAyAAy_____yAAy_____yAAy__________GG_____yAAyAAyAAy_____y_____yAAy_____y_____yAIy______AAyAAyAAy__________G_____y_____SgGGAPySiSgGGQPGSgAAyAAyAMSgANG_____y_____GGGG_____G_AAy_____yAAy_____yAMGANG______Qo_APy_____GGSgQPGG_____GA6_G_____y_____GGGG_Qo______GA22_y_____GG_____y_____GG 7SwiftUI15ModifiedContentV AA4ViewPAAE17toolbarBackground_3forQrAA10VisibilityO_AA16ToolbarPlacementVdtFQO AA6ZStackV 013SafetyMonitorB0020DestinationStaticMapE13Representable33_C9A023BFDCF99C831CE677E11CA69BDBLLV AA30_SafeAreaRegionsIgnoringLayoutV AA06_InsetE8ModifierV AA6HStackV AA05TupleD0V AA6VStackV AA012_ConditionalD0V AN17LocationTitleTextV AA4TextV AA31AccessibilityAttachmentModifierV AA30_EnvironmentKeyWritingModifierV AA4FontV AA24_ForegroundStyleModifierV AA22HierarchicalShapeStyleV AA16_FlexFrameLayoutV AeAE11buttonStyleyQrqd__AA20PrimitiveButtonStyleRd__lFQO AA6ButtonV AA28BorderedProminentButtonStyleV AA11ControlSizeO AA14_PaddingLayoutV AA01_G13StyleModifierV AA13AnyShapeStyleV AA12_FrameLayoutV AA5ColorV AA11_ClipEffectV AA16RoundedRectangleV

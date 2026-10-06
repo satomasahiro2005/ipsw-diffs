@@ -2,64 +2,63 @@
 
 > `com.apple.driver.usb.IOUSBHostHIDDevice`
 
-```diff
+### Section Size Changes
 
- 1617.0.12.0.0
-   __TEXT.__cstring: 0xac4
-   __TEXT.__os_log: 0x9af
--  __TEXT_EXEC.__text: 0x71d8
-+  __TEXT_EXEC.__text: 0x729c
-   __TEXT_EXEC.__auth_stubs: 0x240
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x60
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x71d8` | `0x729c` | **`+0xc4`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_fffffe000a6e4ad0 -> sub_fffffe000a7c82b0 : 72 -> 76
-~ sub_fffffe000a6e4b20 -> sub_fffffe000a7c8304 : 52 -> 56
-~ sub_fffffe000a6e4b54 -> sub_fffffe000a7c833c : 52 -> 56
-~ sub_fffffe000a6e4b98 -> sub_fffffe000a7c8384 : 68 -> 72
-~ sub_fffffe000a6e4c04 -> sub_fffffe000a7c83f4 : 72 -> 76
-~ sub_fffffe000a6e4c4c -> sub_fffffe000a7c8440 : 104 -> 108
-~ sub_fffffe000a6e4cc8 -> sub_fffffe000a7c84c0 : 88 -> 92
-~ sub_fffffe000a6e4d20 -> sub_fffffe000a7c851c : 88 -> 92
+~ sub_fffffff00a6eb050 -> sub_fffffff00a7cac70 : 72 -> 76
+~ sub_fffffff00a6eb0a0 -> sub_fffffff00a7cacc4 : 52 -> 56
+~ sub_fffffff00a6eb0d4 -> sub_fffffff00a7cacfc : 52 -> 56
+~ sub_fffffff00a6eb118 -> sub_fffffff00a7cad44 : 68 -> 72
+~ sub_fffffff00a6eb184 -> sub_fffffff00a7cadb4 : 72 -> 76
+~ sub_fffffff00a6eb1cc -> sub_fffffff00a7cae00 : 104 -> 108
+~ sub_fffffff00a6eb248 -> sub_fffffff00a7cae80 : 88 -> 92
+~ sub_fffffff00a6eb2a0 -> sub_fffffff00a7caedc : 88 -> 92
 ~ __ZN25AppleUSBHostBulkHIDDevice11handleStartEP9IOService : 1312 -> 1316
-~ sub_fffffe000a6e5340 -> sub_fffffe000a7c8b44 : 80 -> 84
-~ sub_fffffe000a6e53a0 -> sub_fffffe000a7c8ba8 : 72 -> 76
-~ sub_fffffe000a6e53f0 -> sub_fffffe000a7c8bfc : 52 -> 56
-~ sub_fffffe000a6e5424 -> sub_fffffe000a7c8c34 : 52 -> 56
-~ sub_fffffe000a6e5468 -> sub_fffffe000a7c8c7c : 68 -> 72
-~ sub_fffffe000a6e54d4 -> sub_fffffe000a7c8cec : 72 -> 76
-~ sub_fffffe000a6e551c -> sub_fffffe000a7c8d38 : 104 -> 108
-~ sub_fffffe000a6e5598 -> sub_fffffe000a7c8db8 : 88 -> 92
-~ sub_fffffe000a6e55f0 -> sub_fffffe000a7c8e14 : 88 -> 92
+~ sub_fffffff00a6eb8c0 -> sub_fffffff00a7cb504 : 80 -> 84
+~ sub_fffffff00a6eb920 -> sub_fffffff00a7cb568 : 72 -> 76
+~ sub_fffffff00a6eb970 -> sub_fffffff00a7cb5bc : 52 -> 56
+~ sub_fffffff00a6eb9a4 -> sub_fffffff00a7cb5f4 : 52 -> 56
+~ sub_fffffff00a6eb9e8 -> sub_fffffff00a7cb63c : 68 -> 72
+~ sub_fffffff00a6eba54 -> sub_fffffff00a7cb6ac : 72 -> 76
+~ sub_fffffff00a6eba9c -> sub_fffffff00a7cb6f8 : 104 -> 108
+~ sub_fffffff00a6ebb18 -> sub_fffffff00a7cb778 : 88 -> 92
+~ sub_fffffff00a6ebb70 -> sub_fffffff00a7cb7d4 : 88 -> 92
 ~ __ZN18IOUSBHostHIDDevice5startEP9IOService : 4488 -> 4492
-~ sub_fffffe000a6e67d0 -> sub_fffffe000a7c9ffc : 152 -> 156
-~ sub_fffffe000a6e6868 -> sub_fffffe000a7ca098 : 268 -> 272
-~ sub_fffffe000a6e6974 -> sub_fffffe000a7ca1a8 : 460 -> 464
+~ sub_fffffff00a6ecd50 -> sub_fffffff00a7cc9bc : 152 -> 156
+~ sub_fffffff00a6ecde8 -> sub_fffffff00a7cca58 : 268 -> 272
+~ sub_fffffff00a6ecef4 -> sub_fffffff00a7ccb68 : 460 -> 464
 ~ __ZN18IOUSBHostHIDDevice11setPropertyEPK8OSSymbolP8OSObject : 832 -> 836
 ~ __ZN18IOUSBHostHIDDevice11handleStartEP9IOService : 2736 -> 2740
-~ sub_fffffe000a6e7a74 -> sub_fffffe000a7cb2b4 : 104 -> 108
-~ sub_fffffe000a6e7adc -> sub_fffffe000a7cb320 : 104 -> 108
-~ sub_fffffe000a6e7b44 -> sub_fffffe000a7cb38c : 104 -> 108
-~ sub_fffffe000a6e7bac -> sub_fffffe000a7cb3f8 : 416 -> 420
+~ sub_fffffff00a6edff4 -> sub_fffffff00a7cdc74 : 104 -> 108
+~ sub_fffffff00a6ee05c -> sub_fffffff00a7cdce0 : 104 -> 108
+~ sub_fffffff00a6ee0c4 -> sub_fffffff00a7cdd4c : 104 -> 108
+~ sub_fffffff00a6ee12c -> sub_fffffff00a7cddb8 : 416 -> 420
 ~ __ZNK18IOUSBHostHIDDevice19newLocationIDNumberEv : 428 -> 432
-~ sub_fffffe000a6e7ef8 -> sub_fffffe000a7cb74c : 168 -> 172
-~ sub_fffffe000a6e7fa0 -> sub_fffffe000a7cb7f8 : 168 -> 172
-~ sub_fffffe000a6e8048 -> sub_fffffe000a7cb8a4 : 168 -> 172
+~ sub_fffffff00a6ee478 -> sub_fffffff00a7ce10c : 168 -> 172
+~ sub_fffffff00a6ee520 -> sub_fffffff00a7ce1b8 : 168 -> 172
+~ sub_fffffff00a6ee5c8 -> sub_fffffff00a7ce264 : 168 -> 172
 ~ __ZNK18IOUSBHostHIDDevice19newReportDescriptorEPP18IOMemoryDescriptor : 520 -> 524
 ~ __ZN18IOUSBHostHIDDevice9getReportEP18IOMemoryDescriptor15IOHIDReportTypej : 828 -> 832
-~ sub_fffffe000a6e8644 -> sub_fffffe000a7cbeac : 928 -> 932
+~ sub_fffffff00a6eebc4 -> sub_fffffff00a7ce86c : 928 -> 932
 ~ __ZN18IOUSBHostHIDDevice9setReportEP18IOMemoryDescriptor15IOHIDReportTypejjP15IOHIDCompletion : 1764 -> 1768
-~ sub_fffffe000a6e90fc -> sub_fffffe000a7cc96c : 364 -> 368
-~ sub_fffffe000a6e9268 -> sub_fffffe000a7ccadc : 352 -> 356
+~ sub_fffffff00a6ef67c -> sub_fffffff00a7cf32c : 364 -> 368
+~ sub_fffffff00a6ef7e8 -> sub_fffffff00a7cf49c : 352 -> 356
 ~ __ZNK18IOUSBHostHIDDevice23newReportIntervalNumberEv : 624 -> 628
-~ sub_fffffe000a6e9670 -> sub_fffffe000a7cceec : 356 -> 360
+~ sub_fffffff00a6efbf0 -> sub_fffffff00a7cf8ac : 356 -> 360
 ~ __ZNK18IOUSBHostHIDDevice16getStringAtIndexEht : 672 -> 676
-~ sub_fffffe000a6e9a74 -> sub_fffffe000a7cd2f8 : 552 -> 556
+~ sub_fffffff00a6efff4 -> sub_fffffff00a7cfcb8 : 552 -> 556
 ~ __ZNK18IOUSBHostHIDDevice21getHidDescriptorGatedEhhPhPj : 2296 -> 2300
 ~ __ZN18IOUSBHostHIDDevice22readInterruptPipeAsyncEv : 744 -> 748
 ~ __ZN18IOUSBHostHIDDevice27readInterruptPipeAsyncGatedEv : 1940 -> 1944
 ~ __ZN18IOUSBHostHIDDevice21interruptReadCompleteEPvij : 1780 -> 1784
 ~ __ZN18IOUSBHostHIDDevice14interruptRetryEP18IOTimerEventSource : 904 -> 908
-~ sub_fffffe000a6ebaf4 -> sub_fffffe000a7cf390 : 192 -> 196
-~ sub_fffffe000a6ebbc4 -> sub_fffffe000a7cf464 : 80 -> 84
+~ sub_fffffff00a6f2074 -> sub_fffffff00a7d1d50 : 192 -> 196
+~ sub_fffffff00a6f2144 -> sub_fffffff00a7d1e24 : 80 -> 84
 ```

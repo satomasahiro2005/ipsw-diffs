@@ -2,14 +2,15 @@
 
 > `/System/Library/PrivateFrameworks/HomeDataModel.framework/HomeDataModel`
 
-```diff
+### Section Size Changes
 
- 1241.1.7.1.3
--  __TEXT.__text: 0xbdeef0
-+  __TEXT.__text: 0xbdf04c
-   __TEXT.__lazy_helpers: 0x54
-   __TEXT.__objc_methlist: 0x26a4
-   __TEXT.__const: 0x61b60
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0xbdeef0` | `0xbdf04c` | **`+0x15c`** |
+
+### Other Changes
+
+```text
 Functions:
 ~ sub_1da26893c -> sub_1da9bc93c : 3912 -> 3920
 ~ sub_1da26ce98 -> sub_1da9c0ea0 : 2404 -> 2380

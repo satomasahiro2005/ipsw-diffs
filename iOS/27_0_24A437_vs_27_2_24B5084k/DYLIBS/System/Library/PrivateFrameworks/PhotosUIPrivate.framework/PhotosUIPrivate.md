@@ -2,120 +2,65 @@
 
 > `/System/Library/PrivateFrameworks/PhotosUIPrivate.framework/PhotosUIPrivate`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__AUTH_CONST.__objc_const` | `0x86100` | `0x83ee8` | **`-0x2218`** |
+| `__DATA.__bss` | `0x188d0` | `0x1a020` | **`+0x1750`** |
+| `__TEXT.__objc_methlist` | `0x5091c` | `0x4f6bc` | **`-0x1260`** |
+| `__TEXT.__eh_frame` | `0x89f8` | `0x9c10` | **`+0x1218`** |
+| `__AUTH_CONST.__cfstring` | `0x26e60` | `0x25e00` | **`-0x1060`** |
+| `__AUTH_CONST.__const` | `0x188d0` | `0x19648` | **`+0xd78`** |
+| `__TEXT.__cstring` | `0x35731` | `0x34b0a` | **`-0xc27`** |
+| `__DATA_CONST.__objc_selrefs` | `0x2aa20` | `0x2a188` | **`-0x898`** |
+| `__TEXT.__const` | `0x1a248` | `0x1a9e8` | **`+0x7a0`** |
+| `__TEXT.__text` | `0x5ab904` | `0x5ab1a8` | **`-0x75c`** |
+| `__TEXT.__swift5_capture` | `0x52b8` | `0x57c8` | **`+0x510`** |
+| `__TEXT.__constg_swiftt` | `0xadd0` | `0xb0a4` | **`+0x2d4`** |
+| `__TEXT.__gcc_except_tab` | `0x8b3c` | `0x8934` | **`-0x208`** |
+| `__AUTH.__objc_data` | `0x192b0` | `0x190d0` | **`-0x1e0`** |
+| `__DATA.__objc_ivar` | `0x5d28` | `0x5b5c` | **`-0x1cc`** |
+| `__TEXT.__unwind_info` | `0x18c40` | `0x18df8` | **`+0x1b8`** |
+| `__TEXT.__swift5_typeref` | `0x170ba` | `0x17262` | **`+0x1a8`** |
+| `__TEXT.__swift_as_cont` | `0x6c8` | `0x820` | **`+0x158`** |
+| `__DATA_CONST.__objc_arraydata` | `0x1630` | `0x14f8` | **`-0x138`** |
+| `__TEXT.__oslogstring` | `0x15348` | `0x15466` | **`+0x11e`** |
+| `__AUTH_CONST.__objc_intobj` | `0x1668` | `0x1560` | **`-0x108`** |
+| `__TEXT.__swift5_fieldmd` | `0x7300` | `0x73f8` | **`+0xf8`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0xed0` | `0xde0` | **`-0xf0`** |
+| `__TEXT.__swift5_proto` | `0xc3c` | `0xd00` | **`+0xc4`** |
+| `__TEXT.__swift_as_ret` | `0x2fc` | `0x3b8` | **`+0xbc`** |
+| `__AUTH.__data` | `0x5178` | `0x5218` | **`+0xa0`** |
+| `__DATA_DIRTY.__objc_data` | `0x22d8` | `0x2238` | **`-0xa0`** |
+| `__DATA_CONST.__objc_classlist` | `0x1e58` | `0x1e08` | **`-0x50`** |
+| `__DATA_CONST.__objc_superrefs` | `0x10f0` | `0x10a8` | **`-0x48`** |
+| `__TEXT.__swift5_protos` | `0x74` | `0xa8` | **`+0x34`** |
+| `__DATA.__data` | `0x14618` | `0x14648` | **`+0x30`** |
+| `__TEXT.__swift_as_entry` | `0x2d4` | `0x300` | **`+0x2c`** |
+| `__DATA_CONST.__const` | `0xc5f0` | `0xc5c8` | **`-0x28`** |
+| `__AUTH_CONST.__auth_got` | `0x5658` | `0x5670` | **`+0x18`** |
+| `__DATA_CONST.__got` | `0x5898` | `0x58b0` | **`+0x18`** |
+| `__TEXT.__swift5_assocty` | `0x1918` | `0x1930` | **`+0x18`** |
+| `__TEXT.__swift5_builtin` | `0x730` | `0x744` | **`+0x14`** |
+| `__DATA_CONST.__objc_protolist` | `0x1430` | `0x1420` | **`-0x10`** |
+| `__TEXT.__swift5_reflstr` | `0x89f7` | `0x8a07` | **`+0x10`** |
+| `__DATA_CONST.__objc_catlist` | `0x1b0` | `0x1b8` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x790` | `0x794` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -912.0.235.0.0
--  __TEXT.__text: 0x5823e0
--  __TEXT.__objc_methlist: 0x5091c
--  __TEXT.__const: 0x1a248
 +916.40.110.0.0
-+  __TEXT.__text: 0x58134c
-+  __TEXT.__objc_methlist: 0x4f6bc
-+  __TEXT.__const: 0x1a9e8
-   __TEXT.__dlopen_cstrs: 0x69b
--  __TEXT.__swift5_typeref: 0x170ba
--  __TEXT.__constg_swiftt: 0xadd0
--  __TEXT.__swift5_builtin: 0x730
--  __TEXT.__swift5_reflstr: 0x89f7
--  __TEXT.__swift5_fieldmd: 0x7300
--  __TEXT.__swift5_assocty: 0x1918
--  __TEXT.__swift5_capture: 0x52b8
--  __TEXT.__swift5_proto: 0xc3c
--  __TEXT.__swift5_types: 0x790
--  __TEXT.__oslogstring: 0x15348
--  __TEXT.__cstring: 0x35731
--  __TEXT.__swift_as_entry: 0x2d4
--  __TEXT.__swift_as_ret: 0x2fc
--  __TEXT.__swift_as_cont: 0x6c8
--  __TEXT.__swift5_protos: 0x74
-+  __TEXT.__swift5_typeref: 0x17262
-+  __TEXT.__constg_swiftt: 0xb0a4
-+  __TEXT.__swift5_builtin: 0x744
-+  __TEXT.__swift5_reflstr: 0x8a07
-+  __TEXT.__swift5_fieldmd: 0x73f8
-+  __TEXT.__swift5_assocty: 0x1930
-+  __TEXT.__cstring: 0x34b0a
-+  __TEXT.__swift5_capture: 0x57c8
-+  __TEXT.__swift5_proto: 0xd00
-+  __TEXT.__swift5_types: 0x794
-+  __TEXT.__swift5_protos: 0xa8
-+  __TEXT.__swift_as_entry: 0x300
-+  __TEXT.__swift_as_ret: 0x3b8
-+  __TEXT.__swift_as_cont: 0x820
-+  __TEXT.__oslogstring: 0x15466
-   __TEXT.__swift5_mpenum: 0x10
--  __TEXT.__gcc_except_tab: 0x8b3c
-+  __TEXT.__gcc_except_tab: 0x8934
-   __TEXT.__ustring: 0x146
--  __TEXT.__unwind_info: 0x1e390
--  __TEXT.__eh_frame: 0x8a18
-+  __TEXT.__unwind_info: 0x1e458
-+  __TEXT.__eh_frame: 0x9c30
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xc5f0
--  __DATA_CONST.__objc_classlist: 0x1e58
--  __DATA_CONST.__objc_catlist: 0x1b0
-+  __DATA_CONST.__const: 0xc5c8
-+  __DATA_CONST.__objc_classlist: 0x1e08
-+  __DATA_CONST.__objc_catlist: 0x1b8
-   __DATA_CONST.__objc_catlist2: 0x10
--  __DATA_CONST.__objc_protolist: 0x1430
-+  __DATA_CONST.__objc_protolist: 0x1420
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x2aa20
-+  __DATA_CONST.__objc_selrefs: 0x2a188
-   __DATA_CONST.__objc_protorefs: 0x508
--  __DATA_CONST.__objc_superrefs: 0x10f0
-+  __DATA_CONST.__objc_superrefs: 0x10a8
-   __DATA_CONST.__vfx_script_tbl: 0x10
--  __DATA_CONST.__objc_arraydata: 0x1630
--  __DATA_CONST.__got: 0x5898
--  __AUTH_CONST.__const: 0x188d0
--  __AUTH_CONST.__cfstring: 0x26e60
--  __AUTH_CONST.__objc_const: 0x86100
--  __AUTH_CONST.__objc_arrayobj: 0xed0
--  __AUTH_CONST.__objc_intobj: 0x1668
-+  __DATA_CONST.__objc_arraydata: 0x14f8
-+  __DATA_CONST.__got: 0x58b0
-+  __AUTH_CONST.__const: 0x19648
-+  __AUTH_CONST.__cfstring: 0x25e00
-+  __AUTH_CONST.__objc_const: 0x83ee8
-+  __AUTH_CONST.__objc_arrayobj: 0xde0
-+  __AUTH_CONST.__objc_intobj: 0x1560
-   __AUTH_CONST.__objc_dictobj: 0x398
-   __AUTH_CONST.__objc_doubleobj: 0x210
--  __AUTH_CONST.__auth_got: 0x5658
--  __AUTH.__objc_data: 0x192b0
--  __AUTH.__data: 0x5178
--  __DATA.__objc_ivar: 0x5d28
--  __DATA.__data: 0x14618
-+  __AUTH_CONST.__auth_got: 0x5670
-+  __AUTH.__objc_data: 0x190d0
-+  __AUTH.__data: 0x5218
-+  __DATA.__objc_ivar: 0x5b5c
-+  __DATA.__data: 0x14648
-   __DATA.__objc_stublist: 0x28
-   __DATA.__common: 0x360
--  __DATA_DIRTY.__objc_data: 0x22d8
-+  __DATA_DIRTY.__objc_data: 0x2238
-   __DATA_DIRTY.__data: 0x250
-   __DATA_DIRTY.__bss: 0x10
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 42678
--  Symbols:   67978
+-  Symbols:   49370
 -  CStrings:  8122
 +  Functions: 42607
-+  Symbols:   67241
++  Symbols:   48829
 +  CStrings:  7989
- 
 Symbols:
 + +[PUActivityItemSourceConfiguration _shouldAlwaysStripProvenanceForActivityType:]
 + +[PUPhotoEditLayoutSupport editAIToolHasWideMediaLayoutForView:]
@@ -972,168 +917,6 @@ Symbols:
 + _method_exchangeImplementations
 + _method_getImplementation
 + _method_getTypeEncoding
-+ _objc_msgSend$_addSplitViewControllerAsChild
-+ _objc_msgSend$_albumPickerHasContent
-+ _objc_msgSend$_baseConfiguration
-+ _objc_msgSend$_baselineAlignedGlyphAttributedStringWithName:
-+ _objc_msgSend$_baselineCompositionControllerForComposition:
-+ _objc_msgSend$_cachedBaselineContextMatching:
-+ _objc_msgSend$_configureIntelligenceWhatsNew
-+ _objc_msgSend$_configureWhatsNewWithoutIntelligence
-+ _objc_msgSend$_configureWhatsNewWithoutIntelligenceOrSharedAlbums
-+ _objc_msgSend$_contentRegionForPageRect:atIndexPath:
-+ _objc_msgSend$_contentRegionMatchesPageRectAtIndexPath:
-+ _objc_msgSend$_currentAssetIsSharedAlbumAsset
-+ _objc_msgSend$_dismissProvenanceViewerController:animated:completionHandler:
-+ _objc_msgSend$_draggableCurrentAsset
-+ _objc_msgSend$_editSpinnerBarButtonContentView
-+ _objc_msgSend$_excludedMenuActionTypes
-+ _objc_msgSend$_fetchAlbumPickerHasContent
-+ _objc_msgSend$_fetchHasAnySharedAlbum
-+ _objc_msgSend$_finalizeProvenanceViewerControllerDismiss
-+ _objc_msgSend$_frameForHostedAccessoryView
-+ _objc_msgSend$_fullConfiguration
-+ _objc_msgSend$_handleFailedDelayedExportForSharedAlbum:didCancel:error:sender:
-+ _objc_msgSend$_handleHorizontalSizeClassChange
-+ _objc_msgSend$_handleSizeClassChange
-+ _objc_msgSend$_hasBottomBar
-+ _objc_msgSend$_imageConfiguration
-+ _objc_msgSend$_imageConfigurationForSelectedState:
-+ _objc_msgSend$_invalidateBaselineCacheIfKeyFrameChangedForComposition:
-+ _objc_msgSend$_invalidateCropCanvasConstraintsIfOutfillReservationChanged
-+ _objc_msgSend$_isConfiguringAdoptedTileControllers
-+ _objc_msgSend$_isDragOutEnabled
-+ _objc_msgSend$_livePhotoKeyFrameTimeForComposition:
-+ _objc_msgSend$_maskShiftedForOutfillOrigin:postInpaintExtent:
-+ _objc_msgSend$_maximumCardHeight
-+ _objc_msgSend$_modalHostForToolController:
-+ _objc_msgSend$_presentProvenanceViewerController:
-+ _objc_msgSend$_provenanceViewerController
-+ _objc_msgSend$_reevaluateVisualIntelligenceSupportIfNeeded
-+ _objc_msgSend$_reservesSpaceForOutfillStatusView
-+ _objc_msgSend$_resolveBaselineMaskContextForComposition:completion:
-+ _objc_msgSend$_resolveReviewAsset:coordinationURL:attempt:completionHandler:
-+ _objc_msgSend$_resumeMaskOverlayIfGeneration:
-+ _objc_msgSend$_reviewAssetRequestCanceled
-+ _objc_msgSend$_reviewAssetRequestCompletionHandler
-+ _objc_msgSend$_saveDuplicateAlertMessageForAsset:isSaveInProgress:
-+ _objc_msgSend$_selectProcessedProvenanceReplacementsForRemovedAssets:
-+ _objc_msgSend$_selectedConfiguration
-+ _objc_msgSend$_selectedTintedGlassConfiguration
-+ _objc_msgSend$_setFloatingInfoPanelContentInteractionEnabled:
-+ _objc_msgSend$_setIsConfiguringAdoptedTileControllers:
-+ _objc_msgSend$_setMaskOverlayHiddenForSuspension:
-+ _objc_msgSend$_setProvenanceViewerController:
-+ _objc_msgSend$_setReviewAssetRequestCanceled:
-+ _objc_msgSend$_setReviewAssetRequestCompletionHandler:
-+ _objc_msgSend$_setTitleAlignment:
-+ _objc_msgSend$_shouldAlwaysStripProvenanceForActivityType:
-+ _objc_msgSend$_shouldShowPickerChrome
-+ _objc_msgSend$_shouldShowTopLevelDeleteButtonForContributedSharedAlbumAsset
-+ _objc_msgSend$_shouldShowTopLevelDeleteButtonForCurrentAssetWithActionMenuVisible:
-+ _objc_msgSend$_showSavedSharedAlbumAssetInLibrary:
-+ _objc_msgSend$_suspendMaskOverlay
-+ _objc_msgSend$_switchToRedEye
-+ _objc_msgSend$_undimFloatingInfoPanelAnimated:
-+ _objc_msgSend$_unselectedConfiguration
-+ _objc_msgSend$_updateCancelButton
-+ _objc_msgSend$_updateContentMinimumHeight
-+ _objc_msgSend$_updateDragOutInteraction
-+ _objc_msgSend$_updateSelectionStatusBarButtonItem:shouldShowPickerChrome:
-+ _objc_msgSend$_updateStatusViewPlatter
-+ _objc_msgSend$_updateVideoPlaybackStartTimeSeekingToHighlight:
-+ _objc_msgSend$_wantsDeleteActionInActionMenu
-+ _objc_msgSend$_wantsSaveToLibraryActionInActionMenu
-+ _objc_msgSend$angelPhotoLibrary
-+ _objc_msgSend$applyUserTransformWithScale:normalizedTranslation:
-+ _objc_msgSend$baselineCompositionController
-+ _objc_msgSend$baselineContextCache
-+ _objc_msgSend$bookmarksDataSectionManagerForLibrary:options:
-+ _objc_msgSend$buttonWithImageNamed:selectedImageNamed:accessibilityLabel:
-+ _objc_msgSend$cachedBaselineLivePhotoKeyFrameTime
-+ _objc_msgSend$canIncludeRatingByDefault
-+ _objc_msgSend$cancelActiveSimpleActionWithActionType:
-+ _objc_msgSend$cancelIfPossible
-+ _objc_msgSend$configureWithAsset:searchQueryMatchInfo:searchContextualVideoThumbnailIdentifier:
-+ _objc_msgSend$contentMinimumHeightConstraint
-+ _objc_msgSend$createAnchorForScrollingToContentEdges:padding:
-+ _objc_msgSend$currentAssetContentFrameInWindow
-+ _objc_msgSend$customIdentifierForViewController:
-+ _objc_msgSend$dragOutInteraction
-+ _objc_msgSend$editAIToolHasWideMediaLayoutForView:
-+ _objc_msgSend$enableFullWidthContentForWideAspectRatios
-+ _objc_msgSend$excludeRating
-+ _objc_msgSend$fetchAssetsMatchingStableHashFromAsset:inShare:options:completionHandler:
-+ _objc_msgSend$fetchProcessedProvenanceReplacementWithOptions:
-+ _objc_msgSend$fetchSharedAlbumsInPhotoLibrary:allowPending:
-+ _objc_msgSend$focusingViewForInteraction
-+ _objc_msgSend$frameOfAssetInWindow
-+ _objc_msgSend$hasAppliedVISupport
-+ _objc_msgSend$hasEditsOnTopOfOutfill
-+ _objc_msgSend$initWithContainer:center:
-+ _objc_msgSend$initWithDataSourceManager:mediaProvider:initialSelectedAssetUUIDs:additionalSelectionState:options:photoLibrary:presentingGridPreferredColumnCount:useLowMemoryMode:
-+ _objc_msgSend$initWithIncludeLocation:includeCaption:includeKeywords:includeRating:includeProvenance:userEncodingPolicy:
-+ _objc_msgSend$initWithView:parameters:target:
-+ _objc_msgSend$isFavoriteCustomSettingsIdentifier:
-+ _objc_msgSend$isResolvingReviewAssetForEditAction
-+ _objc_msgSend$lastAppliedVISupported
-+ _objc_msgSend$layout:shouldInitiallyZoomToFillForItemAtIndexPath:
-+ _objc_msgSend$modalHostToolControllerTag
-+ _objc_msgSend$modifyGenerativeEditsAdjustment:
-+ _objc_msgSend$oneUpBarsControllerShouldHideStatusBarWhenShowingAccessoryView:
-+ _objc_msgSend$oneUpPresentationPreferredModalPresentationStyle:
-+ _objc_msgSend$operationIdentifiers
-+ _objc_msgSend$performActionForChromeActionMenuItem:withValue:sender:presentationSource:
-+ _objc_msgSend$presentSharedAlbumAddAssetsError:sharedAlbum:inPresentationEnvironment:completionHandler:
-+ _objc_msgSend$providedCollectionCount
-+ _objc_msgSend$pu_hostedAccessoryHitTest:withEvent:
-+ _objc_msgSend$pu_installHostedAccessoryHitTestOverride
-+ _objc_msgSend$px_fetchHasUserAlbumsOrFolders
-+ _objc_msgSend$px_fetchIsEmpty
-+ _objc_msgSend$px_isProvenanceProcessingActionable
-+ _objc_msgSend$px_isSharedAlbumAssetContributedByCurrentUser
-+ _objc_msgSend$px_isSharedAlbumAssetCopiedToLibrary
-+ _objc_msgSend$px_setPocketPreferredUserInterfaceStyle:forEdges:
-+ _objc_msgSend$redoActionName
-+ _objc_msgSend$removeOperationWithIdentifier:error:
-+ _objc_msgSend$requestID
-+ _objc_msgSend$resultForError:fallbackResult:
-+ _objc_msgSend$setAllowsTypeSelect:
-+ _objc_msgSend$setBaselineCompositionController:
-+ _objc_msgSend$setBaselineContextCache:
-+ _objc_msgSend$setCachedBaselineLivePhotoKeyFrameTime:
-+ _objc_msgSend$setCenterTitleContentOffset:
-+ _objc_msgSend$setContentInteractionEnabled:
-+ _objc_msgSend$setContentMinimumHeightConstraint:
-+ _objc_msgSend$setDragOutInteraction:
-+ _objc_msgSend$setExcludeRating:
-+ _objc_msgSend$setHasAppliedVISupport:
-+ _objc_msgSend$setHasBottomBar:
-+ _objc_msgSend$setHostContentFrame:
-+ _objc_msgSend$setInitialImage:
-+ _objc_msgSend$setIsFavorite:customSettingsIdentifier:title:
-+ _objc_msgSend$setIsResolvingReviewAssetForEditAction:
-+ _objc_msgSend$setLastAppliedVISupported:
-+ _objc_msgSend$setLowMemoryMode:
-+ _objc_msgSend$setPinnedTrailingGroup:
-+ _objc_msgSend$setProvidedCollectionCount:
-+ _objc_msgSend$setRequestID:
-+ _objc_msgSend$setShouldExcludeRatingInAllItemSources:
-+ _objc_msgSend$setShouldStripRating:
-+ _objc_msgSend$setUseModelDrivenFloatingInfoPanel:
-+ _objc_msgSend$setUserAffineTransform:asUserZoom:
-+ _objc_msgSend$shouldExcludeRatingInAllItemSources
-+ _objc_msgSend$shouldIncludeRating
-+ _objc_msgSend$showActionRequiredWithCancel
-+ _objc_msgSend$sortsAssetsByCaptureDate
-+ _objc_msgSend$startTimedProgressWithExpectedDuration:
-+ _objc_msgSend$tilingViewControllerTransitionKeepsTilingViewBehindHostViewOverlays:
-+ _objc_msgSend$toolPickerFrameInView:
-+ _objc_msgSend$transitionToViewController:animated:
-+ _objc_msgSend$undimAnimated:
-+ _objc_msgSend$undoActionName
-+ _objc_msgSend$useLegacyOneUpDeleteButtonPlacementForSharedAlbumAssets
-+ _objc_msgSend$useModelDrivenFloatingInfoPanel
 + _pu_installHostedAccessoryHitTestOverride.onceToken
 + _symbolic $s15PhotosUIPrivate18CropIntentProtocolP
 + _symbolic $s15PhotosUIPrivate20RotateIntentProtocolP
@@ -2585,364 +2368,6 @@ Symbols:
 - _get_witness_table 7SwiftUI4FormVyAA12TupleContentVyAA7SectionVyAA4TextVAEyAA6ToggleVyAIG_A2LSgQPGAA9EmptyViewVG_AA0J0PAAE8onChange2of7initial_Qrqd___Sbyqd___qd__tctSQRd__lFQOyAA08ModifiedE0VyAGyAisAE12labelsHiddenQryFQOyAsAE11pickerStyleyQrqd__AA06PickerS0Rd__lFQOyAA0T0VyAI15PhotosUIPrivate0T24AdditionalSelectionStateC17DownscalingTargetOAA7ForEachVySayA6_GSiAsAE3tag_15includeOptionalQrqd___SbtSHRd__lFQOyAI_A6_Qo_GG_AA06InlinetS0VQo__Qo_AA012_ConditionalE0VyAA6VStackVyAIGAPGGAA25_AppearanceActionModifierVG_A6_Qo_SgAGyAisAEAYQryFQOyAsAEAZyQrqd__AAA_Rd__lFQOyA1_yAISo34PXPhotosFileProviderEncodingPolicyVA8_ySayA32_GSiAsAEA10__A11_Qrqd___SbtSHRd__lFQOyAI_A32_Qo_GG_A16_Qo__Qo_AIGSgQPGGAaRHPyHC
 - _get_witness_table 7SwiftUI6HStackVyAA12TupleContentVyAA6SpacerV_AA08ModifiedE0VyAIyAIy15PhotosUIPrivate28StoryTransitionPreviewPlayer33_242D7D8008C7D3C577649B60D54B7408LLVAA18_AspectRatioLayoutVGAA010_FlexFrameX0VGAA11_ClipEffectVyAA16RoundedRectangleVGGAGQPGGAA4ViewHPyHC
 - _heightForWidth:.onceToken
-- _objc_msgSend$_assetItemsForAssetsFetchResult:
-- _objc_msgSend$_assetOwnerCommentSection
-- _objc_msgSend$_attributedCommentTitleForTitle:controlState:
-- _objc_msgSend$_attributedStringForComments:color:isVideo:
-- _objc_msgSend$_attributionStringForComment:ofAsset:
-- _objc_msgSend$_avPlayer
-- _objc_msgSend$_canPostCommentWithText:localizedFailureDescription:
-- _objc_msgSend$_commentStringForComment:
-- _objc_msgSend$_commentText
-- _objc_msgSend$_commentTitleAttributes
-- _objc_msgSend$_commentsButtonWithTitle:
-- _objc_msgSend$_commentsDidChange:
-- _objc_msgSend$_configureAppleIntelligenceWhatsNew
-- _objc_msgSend$_configureChinaSpecificNonAppleIntelligenceWhatsNew
-- _objc_msgSend$_configureNonAppleIntelligenceWhatsNew
-- _objc_msgSend$_contentRegionForPageRect:
-- _objc_msgSend$_contentRegionMatchesPageRect
-- _objc_msgSend$_currentChange
-- _objc_msgSend$_currentEntryView
-- _objc_msgSend$_defaultAttributes
-- _objc_msgSend$_disabledCommentTitleColor
-- _objc_msgSend$_fetchContent
-- _objc_msgSend$_forceContentToMatchContainerFrame
-- _objc_msgSend$_handlePluginButton:
-- _objc_msgSend$_handleToolbarToolButton:
-- _objc_msgSend$_handleViewModel:didChange:
-- _objc_msgSend$_heightForComment:forWidth:forInterfaceOrientation:
-- _objc_msgSend$_installInEditRevertTransitionSnapshot
-- _objc_msgSend$_invalidateAVPlayer
-- _objc_msgSend$_invalidateCurrentPlaybackTimeAndDuration
-- _objc_msgSend$_invalidatePlayPauseState
-- _objc_msgSend$_isAssetOwnerSectionVisible
-- _objc_msgSend$_isInEditRevertTransitionSnapshotVisible
-- _objc_msgSend$_isVideoAsset
-- _objc_msgSend$_lastLineBaseline
-- _objc_msgSend$_likeCommentSection
-- _objc_msgSend$_likesDidChange:
-- _objc_msgSend$_needsUpdateAVPlayer
-- _objc_msgSend$_needsUpdateCurrentPlaybackTimeAndDuration
-- _objc_msgSend$_needsUpdatePlayPauseState
-- _objc_msgSend$_needsUpdateTableViewScrollPosition
-- _objc_msgSend$_newToolButtonForTool:
-- _objc_msgSend$_numberOfLikesAndComments
-- _objc_msgSend$_observerQueue
-- _objc_msgSend$_orderedFetchOptions
-- _objc_msgSend$_ownerStringForAsset:owner:
-- _objc_msgSend$_performInEditRevertWithToolButton:
-- _objc_msgSend$_postCommentSection
-- _objc_msgSend$_postCommentWithText:completionHandler:
-- _objc_msgSend$_removeProvenanceInformativeOverlayForAssetViewModel:
-- _objc_msgSend$_scrollToComment:animated:
-- _objc_msgSend$_selectionIndicatorType
-- _objc_msgSend$_setAVPlayer:
-- _objc_msgSend$_setCurrentPlaybackTime:
-- _objc_msgSend$_setCurrentPlaybackTimeDidChange:
-- _objc_msgSend$_setIndicatorInsetAdjustmentBehavior:
-- _objc_msgSend$_setIsPostingComment:postButton:
-- _objc_msgSend$_setMaximumAccessoryToolbarHeight:
-- _objc_msgSend$_setMaximumToolbarHeight:
-- _objc_msgSend$_setNeedsUpdateAVPlayer:
-- _objc_msgSend$_setNeedsUpdateCurrentPlaybackTimeAndDuration:
-- _objc_msgSend$_setNeedsUpdatePlayPauseState:
-- _objc_msgSend$_setNeedsUpdateTableViewScrollPosition:
-- _objc_msgSend$_setPlayPauseState:
-- _objc_msgSend$_setPlayPauseStateDidChange:
-- _objc_msgSend$_setPlaybackDuration:
-- _objc_msgSend$_setPlaybackDurationDidChange:
-- _objc_msgSend$_setTimeObservationToken:
-- _objc_msgSend$_showApproachingQuotaLimitMessage
-- _objc_msgSend$_startObservingAVPlayer
-- _objc_msgSend$_stopObservingAVPlayer
-- _objc_msgSend$_synthesizedAttributedString:withWordWrapping:
-- _objc_msgSend$_tableDataController
-- _objc_msgSend$_tableView
-- _objc_msgSend$_textCommentSection
-- _objc_msgSend$_timeObservationToken
-- _objc_msgSend$_toggleCommentsVisibility
-- _objc_msgSend$_toggleProvenanceCompareForCurrentAsset
-- _objc_msgSend$_toolTypeForToolWithTag:
-- _objc_msgSend$_uninstallInEditRevertTransitionSnapshotAnimated:
-- _objc_msgSend$_updateAVPlayerIfNeeded
-- _objc_msgSend$_updateCancelButtonAnimated:
-- _objc_msgSend$_updateCommentsButton:withTitle:
-- _objc_msgSend$_updateCommentsIcon:
-- _objc_msgSend$_updateContent
-- _objc_msgSend$_updateCurrentPlaybackTimeAndDurationIfNeeded
-- _objc_msgSend$_updateFirstResponder
-- _objc_msgSend$_updateMoreButtonAnimated:
-- _objc_msgSend$_updatePlayPauseStateIfNeeded
-- _objc_msgSend$_updateProvenanceCompareTapGestureRecognizer
-- _objc_msgSend$_updateProvenanceImageOverride
-- _objc_msgSend$_updateProvenanceOverlayView
-- _objc_msgSend$_updateSelectionStatusBarButtonItem:
-- _objc_msgSend$_updateTableDataController
-- _objc_msgSend$accessoryTileViewControllerWillHideToolbarWhenShowingAccessoryView:
-- _objc_msgSend$acknowledgeFailureForAsset:
-- _objc_msgSend$addAttributes:range:
-- _objc_msgSend$addComment:toAsset:completionHandler:
-- _objc_msgSend$addInformativeOverlayForAsset:toView:visibleImage:animated:
-- _objc_msgSend$addedDate
-- _objc_msgSend$allowAnimatedResizeForNextInvalidation
-- _objc_msgSend$alwaysShowTabBar
-- _objc_msgSend$anyoneWithTheLinkAccessPermissionAlsoSetsAnonymous
-- _objc_msgSend$assetAtSimpleIndexPath:
-- _objc_msgSend$assetFetchResult
-- _objc_msgSend$available
-- _objc_msgSend$baseConfiguration
-- _objc_msgSend$beginProvenanceRevealResizeAnimation
-- _objc_msgSend$bookmarksDataSectionManagerForLibrary:
-- _objc_msgSend$boundingRectWithSize:options:context:
-- _objc_msgSend$buttonForTool:showingLabel:selectionIndicatorType:spec:
-- _objc_msgSend$buttonWithImageNamed:selectedImageNamed:accessibilityLabel:spec:
-- _objc_msgSend$canBeDeletedByUser
-- _objc_msgSend$cancelFetchingForAsset:
-- _objc_msgSend$cleanupStatus
-- _objc_msgSend$clearText
-- _objc_msgSend$commentAttributionDateFont
-- _objc_msgSend$commentAttributionNameFont
-- _objc_msgSend$commentDate
-- _objc_msgSend$commentEntryFont
-- _objc_msgSend$commentSendButtonFont
-- _objc_msgSend$commentText
-- _objc_msgSend$commentTextFont
-- _objc_msgSend$commentsTableDataController:didChangeEditing:
-- _objc_msgSend$commentsTableDataController:presentViewController:
-- _objc_msgSend$commentsTableDataController:tableViewDidScroll:
-- _objc_msgSend$compareTapGestureRecognizerForAsset:tapHandler:
-- _objc_msgSend$constraintsForSelectionIndicatorType:buttonImageView:selectionIndicator:
-- _objc_msgSend$copyPresetAction
-- _objc_msgSend$createActivitySharingControllerWithContext:selectedAssetIndexSet:showPreviewsAsStack:
-- _objc_msgSend$currentIndex
-- _objc_msgSend$currentPlaybackTimeDidChange
-- _objc_msgSend$currentToolControllerIsScrolling
-- _objc_msgSend$disabledToolAlertMessage
-- _objc_msgSend$disabledToolAlertTitle
-- _objc_msgSend$displayOverrideImage:imageData:
-- _objc_msgSend$documentRange
-- _objc_msgSend$editMenuEnabled
-- _objc_msgSend$editToolbarButtonSize
-- _objc_msgSend$enableSideCommentsInLandscape
-- _objc_msgSend$ensureLayoutForRange:
-- _objc_msgSend$enumerateAttributesInRange:options:usingBlock:
-- _objc_msgSend$fetchCommentsForAsset:options:
-- _objc_msgSend$fetchContributorForComment:options:
-- _objc_msgSend$fetchContributorsForAsset:options:
-- _objc_msgSend$fetchLikesForAsset:options:
-- _objc_msgSend$fetcherStateForAsset:
-- _objc_msgSend$forceSymbolUsage
-- _objc_msgSend$fullConfiguration
-- _objc_msgSend$fullName
-- _objc_msgSend$genEditRAW
-- _objc_msgSend$hasNoAssets
-- _objc_msgSend$hasReachedImageLoadedStateForAsset:
-- _objc_msgSend$hasText
-- _objc_msgSend$heightForComment:ofAsset:forWidth:forInterfaceOrientation:
-- _objc_msgSend$heightOfLikeCellWithComments:forWidth:isVideo:forInterfaceOrientation:
-- _objc_msgSend$heightOfOwnerCellWithAsset:owner:forWidth:forInterfaceOrientation:
-- _objc_msgSend$hideScrubberWhenShowingAccessoryView
-- _objc_msgSend$imageConfiguration
-- _objc_msgSend$imageConfigurationForSelectedState:
-- _objc_msgSend$imageDataForAsset:
-- _objc_msgSend$imageForAsset:
-- _objc_msgSend$imagePickerPhotoLibrary
-- _objc_msgSend$imageTileViewController:delegateForGestureRecognizer:
-- _objc_msgSend$imageTileViewControllerViewForAttachingGestureRecognizers:
-- _objc_msgSend$inEditRevertTransitionSnapshot
-- _objc_msgSend$initWithAssetViewModel:
-- _objc_msgSend$initWithDataSourceManager:mediaProvider:initialSelectedAssetUUIDs:additionalSelectionState:options:photoLibrary:presentingGridPreferredColumnCount:
-- _objc_msgSend$initWithIncludeLocation:includeCaption:includeKeywords:includeProvenance:userEncodingPolicy:
-- _objc_msgSend$initWithStyle:reuseIdentifier:isVideo:
-- _objc_msgSend$initWithTableView:
-- _objc_msgSend$initialAssetsFetchResult
-- _objc_msgSend$invalidatePrimaryContentTiles
-- _objc_msgSend$isAudio
-- _objc_msgSend$isCaption
-- _objc_msgSend$isDisplayingProvenanceForAsset:
-- _objc_msgSend$isMyComment
-- _objc_msgSend$isSelectedBlock
-- _objc_msgSend$isShowingPlayPauseButton
-- _objc_msgSend$isShowingPlayPauseButtonInBars
-- _objc_msgSend$isTopToolbarButton
-- _objc_msgSend$isViewingProvenance
-- _objc_msgSend$justInsertedCommentUUID
-- _objc_msgSend$layout:shouldInitiallyZoomToFillForItemAtIndexPath:contentSize:viewportSize:
-- _objc_msgSend$likeFont
-- _objc_msgSend$logEngagementEventForAsset:engagementType:numberOfAssetsEngaged:sourceLocation:
-- _objc_msgSend$lowSelectionCountDefaultColumnCount
-- _objc_msgSend$markInformativeCompareDiscoveredForAsset:
-- _objc_msgSend$maxCharactersPerComment
-- _objc_msgSend$maxCommentsPerAsset
-- _objc_msgSend$maximumAccessoryToolbarHeight
-- _objc_msgSend$maximumAccessoryToolbarHeightChanged
-- _objc_msgSend$maximumToolbarHeight
-- _objc_msgSend$maximumToolbarHeightChanged
-- _objc_msgSend$metadataViewControllerForAsset:
-- _objc_msgSend$minimumHeight
-- _objc_msgSend$minimumVisibleCommentedContentHeight
-- _objc_msgSend$numberOfSectionsInTableView:
-- _objc_msgSend$objectID
-- _objc_msgSend$oneUpActionsControllerDidRequestShowProvenanceMetadata
-- _objc_msgSend$oneUpActionsControllerToggleCommentsVisibility:
-- _objc_msgSend$oneUpBarsController:shouldHideStatusBarWhenShowingAccessoryViewForAssetReference:
-- _objc_msgSend$outfillStatus
-- _objc_msgSend$overlayHostView
-- _objc_msgSend$pastePresetAction
-- _objc_msgSend$performToggleCommentsActionAndBeginEditing:
-- _objc_msgSend$performToggleProvenanceShowMetadataAction
-- _objc_msgSend$photoCommentEntryViewDidBeginEditing:
-- _objc_msgSend$photoCommentEntryViewDidEndEditing:
-- _objc_msgSend$photoCommentEntryViewHeightDidChange:
-- _objc_msgSend$photoCommentEntryViewShouldEndEditing:
-- _objc_msgSend$photoCommentEntryViewWillBeginEditing:
-- _objc_msgSend$photoEditingAdjustmentsModeLabelFont
-- _objc_msgSend$playPauseBarItemsController:didChange:
-- _objc_msgSend$playPauseStateDidChange
-- _objc_msgSend$playbackDurationDidChange
-- _objc_msgSend$postButton
-- _objc_msgSend$preferredContentSizeDidChangeForChildContentContainer:
-- _objc_msgSend$preferredHeight
-- _objc_msgSend$provenanceOverlayController
-- _objc_msgSend$provenanceViewerState
-- _objc_msgSend$provenanceViewerStateChanged
-- _objc_msgSend$px_attributedStringWithHTMLString:defaultAttributes:
-- _objc_msgSend$px_displayType
-- _objc_msgSend$px_isScrolledAtEdge:tolerance:
-- _objc_msgSend$px_localizedAttributedStringForLikesFromUser:otherPeopleFullNames:isVideo:defaultTextAttributes:emphasizedTextAttributes:
-- _objc_msgSend$px_localizedAttributedStringForPostAttributionOfAssetWithDisplayType:postedByUserOrSubjectWithFullName:atDate:nameAttributes:dateAttributes:
-- _objc_msgSend$px_oneUpPresentation
-- _objc_msgSend$px_preferredFontForTextStyle:maxContentSizeCategory:withSymbolicTraits:
-- _objc_msgSend$px_setPocketPreferredUserInterfaceStyleForVerticalEdges:
-- _objc_msgSend$px_stringWithFormat:defaultAttributes:arguments:
-- _objc_msgSend$radarAction
-- _objc_msgSend$reframeStatus
-- _objc_msgSend$refresh
-- _objc_msgSend$reloadItemAtIndexPath:dataSource:
-- _objc_msgSend$reloadRowsAtIndexPaths:withRowAnimation:
-- _objc_msgSend$removeComments:fromAsset:completionHandler:
-- _objc_msgSend$removeInformativeOverlayForAsset:fromView:animated:
-- _objc_msgSend$removeOverlayViewForAsset:fromView:animated:
-- _objc_msgSend$selectedColor
-- _objc_msgSend$selectedTintedGlassConfiguration
-- _objc_msgSend$selectedToolbarIconGlyphName
-- _objc_msgSend$selectionIndicator
-- _objc_msgSend$selectionIndicatorImageForType:
-- _objc_msgSend$setActivity:
-- _objc_msgSend$setActivityCompletion:
-- _objc_msgSend$setAddRemoveVideoLayer:
-- _objc_msgSend$setAllowAnimatedResizeForNextInvalidation:
-- _objc_msgSend$setAllowPlayableContentLoading:
-- _objc_msgSend$setAlwaysAllowKeyPhotoEditing:
-- _objc_msgSend$setAnimated:
-- _objc_msgSend$setApplyPerspectiveTransformDuringVitality:
-- _objc_msgSend$setAttributedTitle:forState:
-- _objc_msgSend$setAuxiliaryLinkActionHandler:
-- _objc_msgSend$setAvailable:
-- _objc_msgSend$setBounceDelay:
-- _objc_msgSend$setBounceInitialVelocity:
-- _objc_msgSend$setBounceSpringDamping:
-- _objc_msgSend$setComment:
-- _objc_msgSend$setCropShowOutfillEffectView:
-- _objc_msgSend$setCurrentToolControllerIsScrolling:
-- _objc_msgSend$setDataDetectorTypes:
-- _objc_msgSend$setDebuggingTitleType:
-- _objc_msgSend$setDisabledToolRevertAlert:
-- _objc_msgSend$setDynamicSeekTolerance:
-- _objc_msgSend$setEditMenuEnabled:
-- _objc_msgSend$setEditingAccessoryType:
-- _objc_msgSend$setEnablePerfTTRButton:
-- _objc_msgSend$setGenEditRAW:
-- _objc_msgSend$setGlobalFooterVisibility:
-- _objc_msgSend$setHorizontalAlignment:
-- _objc_msgSend$setInEditRevertTransitionSnapshot:
-- _objc_msgSend$setInitialAssetsFetchResult:
-- _objc_msgSend$setInitialImage:forAsset:
-- _objc_msgSend$setInteractiveMode:
-- _objc_msgSend$setIsSelectedBlock:
-- _objc_msgSend$setIsTopToolbarButton:
-- _objc_msgSend$setJustInsertedCommentUUID:
-- _objc_msgSend$setLeftScrubberRate:
-- _objc_msgSend$setLivePhotoMinimumOverlappingDuration:
-- _objc_msgSend$setMagnifierRevealPreviewScale:
-- _objc_msgSend$setMaximumAccessoryToolbarHeight:
-- _objc_msgSend$setMaximumToolbarHeight:
-- _objc_msgSend$setMinimumDistanceToUnfreeze:
-- _objc_msgSend$setNavigatedAssetReference:
-- _objc_msgSend$setNonStitchingFadeDuration:
-- _objc_msgSend$setNumberColumnsInDefaultGrid:
-- _objc_msgSend$setNumberOfColumnsInWideGrid:
-- _objc_msgSend$setOwnerString:
-- _objc_msgSend$setPreviewRevealProgressToFreezeMagnifier:
-- _objc_msgSend$setProvenanceViewerState:
-- _objc_msgSend$setProvenanceViewerStateChanged:
-- _objc_msgSend$setRightScrubberRate:
-- _objc_msgSend$setScrollsToTop:
-- _objc_msgSend$setSelectedColor:
-- _objc_msgSend$setSelectionIndicator:
-- _objc_msgSend$setSelectionIndicatorType:
-- _objc_msgSend$setShouldAlwaysBadge:
-- _objc_msgSend$setShouldBeginEditingAfterShowingComments:
-- _objc_msgSend$setShouldConstraintDpadValuesToGrid:
-- _objc_msgSend$setShouldUseCompactCommentSeparators:
-- _objc_msgSend$setShouldWorkAround124016315:
-- _objc_msgSend$setShouldWorkAround124981589:
-- _objc_msgSend$setShowPreviewsAsStack:
-- _objc_msgSend$setShowReframedBadge:
-- _objc_msgSend$setShowTimelineScrubbers:
-- _objc_msgSend$setShowVideoSearchHighlightLabel:
-- _objc_msgSend$setShowingPlayPauseButtonInBars:
-- _objc_msgSend$setSimulateDisabledCommentButtonState:
-- _objc_msgSend$setSimulateGlobalFooterImportantInformationUpdates:
-- _objc_msgSend$setStitchingFadeDuration:
-- _objc_msgSend$setString:
-- _objc_msgSend$setTextureStyleBottomLayout:
-- _objc_msgSend$setTitleTapAction:
-- _objc_msgSend$setToolLabel:
-- _objc_msgSend$setTtrButtonDurationThreshold:
-- _objc_msgSend$setUseAspectTiles:
-- _objc_msgSend$setUseFrameBlending:
-- _objc_msgSend$setUsePhotosStack:
-- _objc_msgSend$setUserLikes:
-- _objc_msgSend$setUsesCompactSeparators:
-- _objc_msgSend$setUsesHierarchicalColor:
-- _objc_msgSend$setVideoAutoplayThreshold:
-- _objc_msgSend$setVitalityFeatherScale:
-- _objc_msgSend$setVitalityMaskBlur:
-- _objc_msgSend$setVitalityUseInsetLimiting:
-- _objc_msgSend$sharedCache
-- _objc_msgSend$shouldBeginEditingAfterShowingComments
-- _objc_msgSend$shouldInitiallyZoomContentWithSize:toFillViewWithSize:forAssetMediaType:userInterfaceIdiom:
-- _objc_msgSend$shouldUseCompactCommentSeparators
-- _objc_msgSend$showActionRequiredWithCancelWithShowText:
-- _objc_msgSend$showPreviewsAsStack
-- _objc_msgSend$showStatusViewRateLimitWarning
-- _objc_msgSend$showsLabelsForToolButtons
-- _objc_msgSend$simulateDisabledCommentButtonState
-- _objc_msgSend$startTimedProgressWithExpectedDuration:showText:
-- _objc_msgSend$systemDarkGrayColor
-- _objc_msgSend$systemGray2Color
-- _objc_msgSend$systemMidGrayColor
-- _objc_msgSend$tableView:heightForRowAtIndexPath:
-- _objc_msgSend$textContainerInset
-- _objc_msgSend$textContentManager
-- _objc_msgSend$textEntryView
-- _objc_msgSend$textureStyleBottomLayout
-- _objc_msgSend$toolControllerDidFinish:
-- _objc_msgSend$toolLabel
-- _objc_msgSend$toolbarGlyphUsesHierarchicalColor
-- _objc_msgSend$toolbarIconAccessibilityLabel
-- _objc_msgSend$trimmedText
-- _objc_msgSend$updateContentForAsset:owner:
-- _objc_msgSend$updateEnabledInteractions
-- _objc_msgSend$updateInformativeOverlayLayoutForView:
-- _objc_msgSend$usesCompactSeparators
-- _objc_msgSend$usesHierarchicalColor
-- _objc_msgSend$usesStandaloneSelectionStashReview
-- _objc_msgSend$versionIdentifier
-- _objc_msgSend$youLikeFont
-- _objc_msgSend$zoomDisabledSelectionCountThreshold
 - _photoEditingCropInnerLineColor.color
 - _photoEditingCropInnerLineColor.onceToken
 - _photoEditingNotchButtonBackgroundColor.color

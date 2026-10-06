@@ -2,20 +2,23 @@
 
 > `/System/Library/PrivateFrameworks/IntelligencePlatformCore.framework/knowledgeconstructiond`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__const` | `0xb6` | `0xc6` | **`+0x10`** |
+
+### Same-size Content Changes
+
+- `__DATA.__objc_selrefs`
+- `__DATA_CONST.__const`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__swift5_entry`
+
+### Other Changes
+
 ```diff
 
-   __TEXT.__text: 0x240
-   __TEXT.__auth_stubs: 0x100
-   __TEXT.__objc_stubs: 0x20
--  __TEXT.__const: 0xb6
-+  __TEXT.__const: 0xc6
-   __TEXT.__cstring: 0x71
-   __TEXT.__swift5_entry: 0x8
-   __TEXT.__oslogstring: 0x20
-Sections:
-~ __TEXT.__swift5_entry : content changed
-~ __TEXT.__constg_swiftt : content changed
-~ __DATA_CONST.__const : content changed
-~ __DATA.__objc_selrefs : content changed
-
+-185.0.0.0.0
++186.0.1.0.0
 ```

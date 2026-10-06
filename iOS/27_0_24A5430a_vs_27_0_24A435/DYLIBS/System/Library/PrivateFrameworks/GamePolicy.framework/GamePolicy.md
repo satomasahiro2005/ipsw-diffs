@@ -2,24 +2,20 @@
 
 > `/System/Library/PrivateFrameworks/GamePolicy.framework/GamePolicy`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x1422c` | `0x14234` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
- 4.0.7.0.0
--  __TEXT.__text: 0x1422c
-+  __TEXT.__text: 0x14234
-   __TEXT.__objc_methlist: 0xa90
-   __TEXT.__const: 0x908
-   __TEXT.__cstring: 0x8ee
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 782
--  Symbols:   766
+-  Symbols:   669
 +  Functions: 781
-+  Symbols:   765
-   CStrings:  88
- 
++  Symbols:   668
 Symbols:
 - _OUTLINED_FUNCTION_3
 Functions:

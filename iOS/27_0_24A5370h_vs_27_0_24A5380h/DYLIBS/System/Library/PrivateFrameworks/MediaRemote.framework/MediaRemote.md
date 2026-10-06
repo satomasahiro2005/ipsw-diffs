@@ -2,93 +2,41 @@
 
 > `/System/Library/PrivateFrameworks/MediaRemote.framework/MediaRemote`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x315894` | `0x315d6c` | **`+0x4d8`** |
+| `__TEXT.__oslogstring` | `0xe4ad` | `0xe921` | **`+0x474`** |
+| `__TEXT.__gcc_except_tab` | `0x6724` | `0x6338` | **`-0x3ec`** |
+| `__AUTH_CONST.__cfstring` | `0x24660` | `0x248c0` | **`+0x260`** |
+| `__TEXT.__cstring` | `0x2dc15` | `0x2dd34` | **`+0x11f`** |
+| `__AUTH_CONST.__objc_const` | `0x47ca0` | `0x47d90` | **`+0xf0`** |
+| `__DATA_DIRTY.__bss` | `0x520` | `0x5c8` | **`+0xa8`** |
+| `__AUTH.__objc_data` | `0x8660` | `0x8700` | **`+0xa0`** |
+| `__DATA_DIRTY.__objc_data` | `0x2e40` | `0x2da0` | **`-0xa0`** |
+| `__DATA.__bss` | `0xa00` | `0x978` | **`-0x88`** |
+| `__DATA_CONST.__const` | `0xba40` | `0xbac8` | **`+0x88`** |
+| `__TEXT.__objc_methlist` | `0x2c6a0` | `0x2c708` | **`+0x68`** |
+| `__TEXT.__unwind_info` | `0xbe08` | `0xbdb0` | **`-0x58`** |
+| `__DATA_CONST.__objc_selrefs` | `0xf8b0` | `0xf8d8` | **`+0x28`** |
+| `__DATA_CONST.__got` | `0x14b0` | `0x14c8` | **`+0x18`** |
+| `__DATA.__objc_ivar` | `0x33c4` | `0x33d0` | **`+0xc`** |
+| `__TEXT.__const` | `0x690` | `0x698` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x315894
--  __TEXT.__objc_methlist: 0x2c6a0
--  __TEXT.__const: 0x690
--  __TEXT.__cstring: 0x2dc15
--  __TEXT.__oslogstring: 0xe4ad
--  __TEXT.__gcc_except_tab: 0x6724
-+  __TEXT.__text: 0x315d6c
-+  __TEXT.__objc_methlist: 0x2c708
-+  __TEXT.__const: 0x698
-+  __TEXT.__cstring: 0x2dd34
-+  __TEXT.__oslogstring: 0xe921
-+  __TEXT.__gcc_except_tab: 0x6338
-   __TEXT.__dlopen_cstrs: 0x777
-   __TEXT.__ustring: 0x7b8
--  __TEXT.__unwind_info: 0xbe08
-+  __TEXT.__unwind_info: 0xbdb0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0xba40
-+  __DATA_CONST.__const: 0xbac8
-   __DATA_CONST.__objc_classlist: 0x1210
-   __DATA_CONST.__objc_catlist: 0x78
-   __DATA_CONST.__objc_protolist: 0x260
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xf8b0
-+  __DATA_CONST.__objc_selrefs: 0xf8d8
-   __DATA_CONST.__objc_protorefs: 0x88
-   __DATA_CONST.__objc_superrefs: 0x1038
-   __DATA_CONST.__objc_arraydata: 0x260
--  __DATA_CONST.__got: 0x14b0
-+  __DATA_CONST.__got: 0x14c8
-   __AUTH_CONST.__const: 0x3460
--  __AUTH_CONST.__cfstring: 0x24660
--  __AUTH_CONST.__objc_const: 0x47ca0
-+  __AUTH_CONST.__cfstring: 0x248c0
-+  __AUTH_CONST.__objc_const: 0x47d90
-   __AUTH_CONST.__objc_arrayobj: 0x180
-   __AUTH_CONST.__objc_intobj: 0x4f8
-   __AUTH_CONST.__objc_dictobj: 0x50
-   __AUTH_CONST.__objc_doubleobj: 0x10
-   __AUTH_CONST.__auth_got: 0xbc0
--  __AUTH.__objc_data: 0x8660
--  __DATA.__objc_ivar: 0x33c4
-+  __AUTH.__objc_data: 0x8700
-+  __DATA.__objc_ivar: 0x33d0
-   __DATA.__data: 0x1ce0
--  __DATA.__bss: 0xa00
-+  __DATA.__bss: 0x978
-   __DATA.__common: 0x8
--  __DATA_DIRTY.__objc_data: 0x2e40
-+  __DATA_DIRTY.__objc_data: 0x2da0
-   __DATA_DIRTY.__data: 0x48
--  __DATA_DIRTY.__bss: 0x520
-+  __DATA_DIRTY.__bss: 0x5c8
-   - /System/Library/Frameworks/AVFAudio.framework/AVFAudio
-   - /System/Library/Frameworks/AVRouting.framework/AVRouting
-   - /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+-4026.100.68.0.0
++4026.110.75.1.0
 
-   - /usr/lib/libMobileGestalt.dylib
-   - /usr/lib/libSystem.B.dylib
-   - /usr/lib/libobjc.A.dylib
 -  Functions: 21005
--  Symbols:   57714
--  CStrings:  11275
+-  Symbols:   30218
+-  CStrings:  6723
 +  Functions: 20997
-+  Symbols:   57721
-+  CStrings:  11325
- 
-Sections:
-~ __DATA_CONST.__objc_classlist : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__const : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __DATA.__data : content changed
-~ __DATA_DIRTY.__data : content changed
++  Symbols:   30222
++  CStrings:  6754
 Symbols:
 + +[MRIRRoute _parsedCandidateIdentifier:]
 + -[MRAVConcreteRoutingDiscoverySession _maybeScheduleReload]
@@ -165,29 +113,6 @@ Symbols:
 + _externalDeviceArtificialConnectionDelay.__interval
 + _externalDeviceArtificialConnectionDelay.__once
 + _kMRMediaRemotePushTokensUserInfoKey
-+ _objc_msgSend$_addCallbacksForSession:
-+ _objc_msgSend$_currentVisibleEndpointsForSession:
-+ _objc_msgSend$_currentVisibleOutputDevicesForSession:
-+ _objc_msgSend$_maybeScheduleReload
-+ _objc_msgSend$_parsedCandidateIdentifier:
-+ _objc_msgSend$_removeCallbacksForSession:
-+ _objc_msgSend$airplayProtocolUID
-+ _objc_msgSend$canStartNativePlayback
-+ _objc_msgSend$clientAlwaysAllowUpdatesStates
-+ _objc_msgSend$protocolIdentifier
-+ _objc_msgSend$reevaluateAlwaysAllowUpdatesForSession:
-+ _objc_msgSend$searchEndpointsForGroupUID:timeout:details:queue:completion:
-+ _objc_msgSend$searchEndpointsWithPredicate:timeout:details:queue:completion:
-+ _objc_msgSend$searchOutputDevices:protocolUID:timeout:details:queue:completion:
-+ _objc_msgSend$setCarCount:
-+ _objc_msgSend$setDesktopCount:
-+ _objc_msgSend$setGamingConsoleCount:
-+ _objc_msgSend$setLaptopCount:
-+ _objc_msgSend$setPhoneCount:
-+ _objc_msgSend$setProtocolIdentifier:
-+ _objc_msgSend$setTabletCount:
-+ _objc_msgSend$setWearableCount:
-+ _objc_msgSend$setWebCount:
 + _remoteSessionDefaultAssertionInterval.__interval
 + _remoteSessionDefaultAssertionInterval.__once
 - -[MRAVConcreteRoutingDiscoverySession _onQueue_setTargetAudioSessionID:]
@@ -263,16 +188,6 @@ Symbols:
 - ___block_descriptor_96_e8_32r40r48r56r64r72r80r88r_e45_v32?0"MRAVOutputDevice"8I16I20"NSString"24lr32l8r40l8r48l8r56l8r64l8r72l8r80l8r88l8
 - _externalDeviceArtificalConnectionDelay.__interval
 - _externalDeviceArtificalConnectionDelay.__once
-- _objc_msgSend$_onQueue_setTargetAudioSessionID:
-- _objc_msgSend$transferCallbacksFromSession:toSession:
-- _objc_msgSend$transferEndpointsAddedCallbacksFromSession:toSession:
-- _objc_msgSend$transferEndpointsChangedCallbacksFromSession:toSession:
-- _objc_msgSend$transferEndpointsModifiedCallbacksFromSession:toSession:
-- _objc_msgSend$transferEndpointsRemovedCallbacksFromSession:toSession:
-- _objc_msgSend$transferOutputDevicesAddedCallbacksFromSession:toSession:
-- _objc_msgSend$transferOutputDevicesChangedCallbacksFromSession:toSession:
-- _objc_msgSend$transferOutputDevicesModifiedCallbacksFromSession:toSession:
-- _objc_msgSend$transferOutputDevicesRemovedCallbacksFromSession:toSession:
 CStrings:
 + " protocolName: %@"
 + " protocolUID: %@"
@@ -331,5 +246,4 @@ CStrings:
 - "[MRAVVolumeClientEndpoint] VolumeClientOutputDevices: %@"
 - "externalDeviceArtificalConnectionDelay"
 - "now_playing_agent"
-
 ```

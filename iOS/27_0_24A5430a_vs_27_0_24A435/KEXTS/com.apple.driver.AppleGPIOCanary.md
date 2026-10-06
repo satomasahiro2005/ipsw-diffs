@@ -2,26 +2,26 @@
 
 > `com.apple.driver.AppleGPIOCanary`
 
-```diff
+### Section Size Changes
 
- 66.0.0.0.0
-   __TEXT.__cstring: 0xee
--  __TEXT_EXEC.__text: 0x7f8
-+  __TEXT_EXEC.__text: 0x828
-   __TEXT_EXEC.__auth_stubs: 0x120
-   __DATA.__data: 0xc8
-   __DATA.__common: 0x38
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT_EXEC.__text` | `0x7f8` | `0x828` | **`+0x30`** |
+
+### Other Changes
+
+```text
 Functions:
-~ sub_fffffe0008b90de0 -> sub_fffffe0008be5200 : 72 -> 76
-~ sub_fffffe0008b90e30 -> sub_fffffe0008be5254 : 52 -> 56
-~ sub_fffffe0008b90e64 -> sub_fffffe0008be528c : 52 -> 56
-~ sub_fffffe0008b90ea8 -> sub_fffffe0008be52d4 : 68 -> 72
-~ sub_fffffe0008b90f14 -> sub_fffffe0008be5344 : 72 -> 76
-~ sub_fffffe0008b90f5c -> sub_fffffe0008be5390 : 104 -> 108
-~ sub_fffffe0008b90fd8 -> sub_fffffe0008be5410 : 88 -> 92
-~ sub_fffffe0008b91030 -> sub_fffffe0008be546c : 88 -> 92
-~ sub_fffffe0008b91088 -> sub_fffffe0008be54c8 : 224 -> 228
-~ sub_fffffe0008b91168 -> sub_fffffe0008be55ac : 844 -> 848
-~ sub_fffffe0008b914bc -> sub_fffffe0008be5904 : 80 -> 84
-~ sub_fffffe0008b915a0 -> sub_fffffe0008be59ec : 56 -> 60
+~ sub_fffffff008baca60 -> sub_fffffff008bfe0c0 : 72 -> 76
+~ sub_fffffff008bacab0 -> sub_fffffff008bfe114 : 52 -> 56
+~ sub_fffffff008bacae4 -> sub_fffffff008bfe14c : 52 -> 56
+~ sub_fffffff008bacb28 -> sub_fffffff008bfe194 : 68 -> 72
+~ sub_fffffff008bacb94 -> sub_fffffff008bfe204 : 72 -> 76
+~ sub_fffffff008bacbdc -> sub_fffffff008bfe250 : 104 -> 108
+~ sub_fffffff008bacc58 -> sub_fffffff008bfe2d0 : 88 -> 92
+~ sub_fffffff008baccb0 -> sub_fffffff008bfe32c : 88 -> 92
+~ sub_fffffff008bacd08 -> sub_fffffff008bfe388 : 224 -> 228
+~ sub_fffffff008bacde8 -> sub_fffffff008bfe46c : 844 -> 848
+~ sub_fffffff008bad13c -> sub_fffffff008bfe7c4 : 80 -> 84
+~ sub_fffffff008bad220 -> sub_fffffff008bfe8ac : 56 -> 60
 ```

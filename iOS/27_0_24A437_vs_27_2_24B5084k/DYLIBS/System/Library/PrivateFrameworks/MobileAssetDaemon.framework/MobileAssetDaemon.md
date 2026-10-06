@@ -2,74 +2,38 @@
 
 > `/System/Library/PrivateFrameworks/MobileAssetDaemon.framework/MobileAssetDaemon`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__oslogstring` | `0x5efed` | `0x5b01d` | **`-0x3fd0`** |
+| `__TEXT.__text` | `0x264558` | `0x261198` | **`-0x33c0`** |
+| `__AUTH_CONST.__cfstring` | `0x32d00` | `0x33220` | **`+0x520`** |
+| `__TEXT.__cstring` | `0x3f6e6` | `0x3fb57` | **`+0x471`** |
+| `__TEXT.__gcc_except_tab` | `0xd83c` | `0xd518` | **`-0x324`** |
+| `__DATA_CONST.__objc_arraydata` | `0xf00` | `0x1020` | **`+0x120`** |
+| `__TEXT.__objc_methlist` | `0x12d9c` | `0x12dd4` | **`+0x38`** |
+| `__AUTH_CONST.__objc_arrayobj` | `0x360` | `0x390` | **`+0x30`** |
+| `__DATA_CONST.__objc_selrefs` | `0xaff0` | `0xb018` | **`+0x28`** |
+| `__TEXT.__unwind_info` | `0x4888` | `0x48b0` | **`+0x28`** |
+| `__DATA.__bss` | `0x560` | `0x580` | **`+0x20`** |
+| `__DATA_CONST.__const` | `0x3230` | `0x3210` | **`-0x20`** |
+| `__TEXT.__const` | `0x159a` | `0x158a` | **`-0x10`** |
+| `__AUTH_CONST.__auth_got` | `0x1238` | `0x1230` | **`-0x8`** |
+
+### Other Changes
+
 ```diff
 
 -2215.0.20.0.0
--  __TEXT.__text: 0x260194
--  __TEXT.__objc_methlist: 0x12d9c
--  __TEXT.__const: 0x159a
--  __TEXT.__cstring: 0x3f6e6
--  __TEXT.__oslogstring: 0x5efed
--  __TEXT.__gcc_except_tab: 0xd83c
 +2215.40.18.0.0
-+  __TEXT.__text: 0x25cdcc
-+  __TEXT.__objc_methlist: 0x12dd4
-+  __TEXT.__const: 0x158a
-+  __TEXT.__cstring: 0x3fb57
-+  __TEXT.__oslogstring: 0x5b01d
-+  __TEXT.__gcc_except_tab: 0xd518
-   __TEXT.__dlopen_cstrs: 0x5a
-   __TEXT.__constg_swiftt: 0xf0
-   __TEXT.__swift5_typeref: 0x146
 
-   __TEXT.__swift5_assocty: 0x48
-   __TEXT.__swift5_builtin: 0x14
-   __TEXT.__swift5_proto: 0x24
--  __TEXT.__unwind_info: 0x59e8
-+  __TEXT.__unwind_info: 0x5a10
-   __TEXT.__eh_frame: 0x10c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x3230
-+  __DATA_CONST.__const: 0x3210
-   __DATA_CONST.__objc_classlist: 0x498
-   __DATA_CONST.__objc_catlist: 0x18
-   __DATA_CONST.__objc_protolist: 0xb8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0xaff0
-+  __DATA_CONST.__objc_selrefs: 0xb018
-   __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__objc_superrefs: 0x360
--  __DATA_CONST.__objc_arraydata: 0xf00
-+  __DATA_CONST.__objc_arraydata: 0x1020
-   __DATA_CONST.__got: 0x12a0
-   __AUTH_CONST.__const: 0x1080
--  __AUTH_CONST.__cfstring: 0x32d00
-+  __AUTH_CONST.__cfstring: 0x33220
-   __AUTH_CONST.__objc_const: 0x191a8
--  __AUTH_CONST.__objc_arrayobj: 0x360
-+  __AUTH_CONST.__objc_arrayobj: 0x390
-   __AUTH_CONST.__objc_intobj: 0x13c8
-   __AUTH_CONST.__objc_dictobj: 0x2d0
--  __AUTH_CONST.__auth_got: 0x1238
-+  __AUTH_CONST.__auth_got: 0x1230
-   __AUTH.__objc_data: 0x918
-   __AUTH.__data: 0xc0
-   __DATA.__objc_ivar: 0x1830
-
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 7316
--  Symbols:   16525
+-  Symbols:   11496
 -  CStrings:  11025
 +  Functions: 7327
-+  Symbols:   16538
++  Symbols:   11506
 +  CStrings:  11063
- 
 Symbols:
 + -[DownloadInfo summary]
 + -[MADAutoAssetControlManager _firstAssetTypeForSelectors:]
@@ -119,13 +83,6 @@ Symbols:
 + ____MADLogSpacedDateFormatter_block_invoke
 + ___block_descriptor_40_e8_32s_e19_"NSDictionary"8?0ls32l8
 + _isDownloadErrorNetworkConnectivityError
-+ _objc_msgSend$_firstAssetTypeForSelectors:
-+ _objc_msgSend$_newEntriesBlockForSelectors:
-+ _objc_msgSend$_newSelectorsForAtomicEntries:
-+ _objc_msgSend$_newSelectorsForSetEntries:
-+ _objc_msgSend$setConciseLoggingMessages:
-+ _objc_msgSend$setDebugLoggingMessages:
-+ _objc_msgSend$setMigrationDate:
 - -[MADAutoAssetControlManager action_RemoveQueuedClient:error:]
 - -[MADAutoAssetControlManager action_RouteClientClosed:error:]
 - GCC_except_table191
@@ -164,10 +121,6 @@ Symbols:
 - _MAPreferencesIsVerboseLoggingEnabled
 - ___block_descriptor_32_e20_v24?0Q8"NSError"16l
 - ___block_descriptor_41_e8_32s_e19_"NSDictionary"8?0ls32l8
-- _objc_msgSend$action_RemoveQueuedClient:error:
-- _objc_msgSend$action_RouteClientClosed:error:
-- _objc_msgSend$initWithClientID:
-- _objc_msgSend$logOptions
 CStrings:
 + "\n!_NOTIF:%{public}@ {%{public}@:postNotificationName}\n!_NOTIF:(%{public}@) un-posted notification:%{public}@\n!_NOTIF:(%{public}@) assetType:%{public}@%{public}@\n!_NOTIF:%{public}@"
 + "\n#_%@:(%@) basePatch:%@"

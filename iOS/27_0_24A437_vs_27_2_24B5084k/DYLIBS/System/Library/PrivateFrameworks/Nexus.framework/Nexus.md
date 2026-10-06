@@ -2,100 +2,58 @@
 
 > `/System/Library/PrivateFrameworks/Nexus.framework/Nexus`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x12d640` | `0x171804` | **`+0x441c4`** |
+| `__DATA.__bss` | `0x14dc8` | `0x19368` | **`+0x45a0`** |
+| `__TEXT.__eh_frame` | `0x918c` | `0xc764` | **`+0x35d8`** |
+| `__TEXT.__const` | `0xd0c0` | `0xfb10` | **`+0x2a50`** |
+| `__AUTH_CONST.__const` | `0xa608` | `0xbf50` | **`+0x1948`** |
+| `__TEXT.__unwind_info` | `0x4208` | `0x5790` | **`+0x1588`** |
+| `__TEXT.__swift5_fieldmd` | `0x3108` | `0x3a50` | **`+0x948`** |
+| `__AUTH.__data` | `0x1920` | `0x2260` | **`+0x940`** |
+| `__DATA.__data` | `0x2870` | `0x3130` | **`+0x8c0`** |
+| `__AUTH_CONST.__objc_const` | `0x2450` | `0x2c10` | **`+0x7c0`** |
+| `__TEXT.__swift5_typeref` | `0x344e` | `0x3be8` | **`+0x79a`** |
+| `__TEXT.__cstring` | `0x357c` | `0x3c2c` | **`+0x6b0`** |
+| `__TEXT.__constg_swiftt` | `0x229c` | `0x28d8` | **`+0x63c`** |
+| `__TEXT.__swift5_reflstr` | `0x253e` | `0x2b6e` | **`+0x630`** |
+| `__TEXT.__oslogstring` | `0x3c1f` | `0x416f` | **`+0x550`** |
+| `__TEXT.__swift_as_cont` | `0x628` | `0x934` | **`+0x30c`** |
+| `__TEXT.__swift5_capture` | `0x1fec` | `0x22c8` | **`+0x2dc`** |
+| `__TEXT.__swift5_assocty` | `0x828` | `0xaf8` | **`+0x2d0`** |
+| `__AUTH.__objc_data` | `0x3e0` | `0x668` | **`+0x288`** |
+| `__AUTH_CONST.__auth_got` | `0x1560` | `0x17a8` | **`+0x248`** |
+| `__TEXT.__swift5_proto` | `0xa90` | `0xcbc` | **`+0x22c`** |
+| `__TEXT.__swift_as_ret` | `0x2b0` | `0x418` | **`+0x168`** |
+| `__DATA_CONST.__objc_selrefs` | `0x470` | `0x578` | **`+0x108`** |
+| `__TEXT.__swift_as_entry` | `0x298` | `0x394` | **`+0xfc`** |
+| `__TEXT.__objc_methlist` | `0x164` | `0x244` | **`+0xe0`** |
+| `__TEXT.__swift5_types` | `0x31c` | `0x3c4` | **`+0xa8`** |
+| `__DATA_CONST.__const` | `0x330` | `0x3a8` | **`+0x78`** |
+| `__DATA.__common` | `0xd0` | `0x100` | **`+0x30`** |
+| `__DATA_CONST.__objc_classlist` | `0x78` | `0xa8` | **`+0x30`** |
+| `__TEXT.__swift5_builtin` | `0x168` | `0x17c` | **`+0x14`** |
+| `__DATA_CONST.__objc_protolist` | `0x20` | `0x30` | **`+0x10`** |
+| `__DATA_CONST.__objc_protorefs` | `0x10` | `0x18` | **`+0x8`** |
+
+### Other Changes
+
 ```diff
 
 -900.58.0.0.0
--  __TEXT.__text: 0x1224d0
--  __TEXT.__objc_methlist: 0x164
--  __TEXT.__const: 0xd0c0
--  __TEXT.__cstring: 0x357c
--  __TEXT.__swift5_typeref: 0x344e
--  __TEXT.__swift5_reflstr: 0x253e
--  __TEXT.__swift5_assocty: 0x828
--  __TEXT.__constg_swiftt: 0x229c
--  __TEXT.__swift5_builtin: 0x168
 +910.21.0.0.0
-+  __TEXT.__text: 0x162e68
-+  __TEXT.__objc_methlist: 0x244
-+  __TEXT.__const: 0xfb10
-+  __TEXT.__constg_swiftt: 0x28d8
-+  __TEXT.__swift5_typeref: 0x3be8
-+  __TEXT.__swift5_builtin: 0x17c
-+  __TEXT.__swift5_reflstr: 0x2b6e
-+  __TEXT.__swift5_fieldmd: 0x3a50
-+  __TEXT.__swift5_assocty: 0xaf8
-+  __TEXT.__swift5_proto: 0xcbc
-+  __TEXT.__swift5_types: 0x3c4
-+  __TEXT.__cstring: 0x3c2c
-   __TEXT.__swift5_mpenum: 0x140
--  __TEXT.__swift5_fieldmd: 0x3108
--  __TEXT.__swift5_proto: 0xa90
--  __TEXT.__swift5_types: 0x31c
--  __TEXT.__oslogstring: 0x3c1f
--  __TEXT.__swift5_capture: 0x1fec
--  __TEXT.__swift_as_entry: 0x298
--  __TEXT.__swift_as_ret: 0x2b0
--  __TEXT.__swift_as_cont: 0x628
-+  __TEXT.__oslogstring: 0x416f
-+  __TEXT.__swift5_capture: 0x22c8
-+  __TEXT.__swift_as_entry: 0x394
-+  __TEXT.__swift_as_ret: 0x418
-+  __TEXT.__swift_as_cont: 0x934
-   __TEXT.__swift5_protos: 0x3c
--  __TEXT.__unwind_info: 0x4cf8
--  __TEXT.__eh_frame: 0x9194
-+  __TEXT.__unwind_info: 0x6130
-+  __TEXT.__eh_frame: 0xc76c
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x330
--  __DATA_CONST.__objc_classlist: 0x78
-+  __DATA_CONST.__const: 0x3a8
-+  __DATA_CONST.__objc_classlist: 0xa8
-   __DATA_CONST.__objc_catlist: 0x8
--  __DATA_CONST.__objc_protolist: 0x20
-+  __DATA_CONST.__objc_protolist: 0x30
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x470
--  __DATA_CONST.__objc_protorefs: 0x10
-+  __DATA_CONST.__objc_selrefs: 0x578
-+  __DATA_CONST.__objc_protorefs: 0x18
-   __DATA_CONST.__got: 0x0
--  __AUTH_CONST.__const: 0xa608
-+  __AUTH_CONST.__const: 0xbf50
-   __AUTH_CONST.__cfstring: 0x40
--  __AUTH_CONST.__objc_const: 0x2450
--  __AUTH_CONST.__auth_got: 0x1560
--  __AUTH.__objc_data: 0x3e0
--  __AUTH.__data: 0x1920
--  __DATA.__data: 0x2870
--  __DATA.__common: 0xd0
-+  __AUTH_CONST.__objc_const: 0x2c10
-+  __AUTH_CONST.__auth_got: 0x17a8
-+  __AUTH.__objc_data: 0x668
-+  __AUTH.__data: 0x2260
-+  __DATA.__data: 0x3130
-+  __DATA.__common: 0x100
-   - /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
-   - /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-+  - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
-   - /System/Library/Frameworks/Foundation.framework/Foundation
-   - /System/Library/Frameworks/Network.framework/Network
-   - /System/Library/PrivateFrameworks/CoreUtils.framework/CoreUtils
 
-   - /usr/lib/swift/libswift_Builtin_float.dylib
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
++  - /System/Library/Frameworks/CryptoKit.framework/CryptoKit
+
 -  Functions: 5496
--  Symbols:   1693
+-  Symbols:   1573
 -  CStrings:  828
 +  Functions: 6793
-+  Symbols:   1960
++  Symbols:   1815
 +  CStrings:  899
- 
 Symbols:
 + _NSPOSIXErrorDomain
 + _NSURLContentModificationDateKey
@@ -206,31 +164,6 @@ Symbols:
 + _associated conformance So16NSURLResourceKeyas20_SwiftNewtypeWrapperSCs35_HasCustomAnyHashableRepresentation
 + _flat unique So19NSURLProtocolClient_p
 + _keypath_getTm
-+ _objc_msgSend$URLProtocol:didFailWithError:
-+ _objc_msgSend$URLProtocol:didLoadData:
-+ _objc_msgSend$URLProtocol:didReceiveResponse:cacheStoragePolicy:
-+ _objc_msgSend$URLProtocolDidFinishLoading:
-+ _objc_msgSend$client
-+ _objc_msgSend$contentsOfDirectoryAtURL:includingPropertiesForKeys:options:error:
-+ _objc_msgSend$defaultManager
-+ _objc_msgSend$defaultSessionConfiguration
-+ _objc_msgSend$deletePath:dispatchQueue:completionHandler:
-+ _objc_msgSend$deletePath:error:
-+ _objc_msgSend$initForWritingToURL:totalLength:dispatchQueue:
-+ _objc_msgSend$initWithRequest:cachedResponse:client:
-+ _objc_msgSend$initWithURL:
-+ _objc_msgSend$initWithURL:MIMEType:expectedContentLength:textEncodingName:
-+ _objc_msgSend$initWithURL:statusCode:HTTPVersion:headerFields:
-+ _objc_msgSend$lastPathComponent
-+ _objc_msgSend$pathExtension
-+ _objc_msgSend$propertyForKey:inRequest:
-+ _objc_msgSend$renameWithOldPath:newPath:dispatchQueue:completionHandler:
-+ _objc_msgSend$request
-+ _objc_msgSend$sessionWithConfiguration:
-+ _objc_msgSend$setProperty:forKey:inRequest:
-+ _objc_msgSend$setProtocolClasses:
-+ _objc_msgSend$stringByDeletingPathExtension
-+ _objc_msgSend$validatedFilename:error:
 + _swift_deallocUninitializedObject
 + _swift_task_future_wait_throwing
 + _swift_unknownObjectWeakAssign

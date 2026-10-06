@@ -2,45 +2,30 @@
 
 > `/System/Library/PrivateFrameworks/IPTelephony.framework/Support/libIPTelephony.dylib`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x4ab92c` | `0x4abc04` | **`+0x2d8`** |
+| `__TEXT.__oslogstring` | `0x4cd37` | `0x4cdca` | **`+0x93`** |
+| `__TEXT.__cstring` | `0x140b7` | `0x14117` | **`+0x60`** |
+| `__TEXT.__gcc_except_tab` | `0x41ec8` | `0x41f00` | **`+0x38`** |
+| `__DATA.__common` | `0xa8` | `0xc0` | **`+0x18`** |
+| `__TEXT.__init_offsets` | `0x1a4` | `0x1a8` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
 -2764.0.0.0.0
--  __TEXT.__text: 0x4ab92c
--  __TEXT.__init_offsets: 0x1a4
 +2765.0.0.0.0
-+  __TEXT.__text: 0x4abc04
-+  __TEXT.__init_offsets: 0x1a8
-   __TEXT.__objc_methlist: 0x74c
-   __TEXT.__const: 0x1f9fc
--  __TEXT.__gcc_except_tab: 0x41ec8
--  __TEXT.__cstring: 0x140b7
--  __TEXT.__oslogstring: 0x4cd37
-+  __TEXT.__gcc_except_tab: 0x41f00
-+  __TEXT.__cstring: 0x14117
-+  __TEXT.__oslogstring: 0x4cdca
-   __TEXT.__unwind_info: 0x181e0
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
 
-   __AUTH.__objc_data: 0x140
-   __DATA.__objc_ivar: 0x4c
-   __DATA.__data: 0x2c8
--  __DATA.__common: 0xa8
-+  __DATA.__common: 0xc0
-   __DATA.__bss: 0x14
-   __DATA_DIRTY.__objc_data: 0xf0
-   __DATA_DIRTY.__data: 0x2d0
-
-   - /usr/lib/libobjc.A.dylib
-   - /usr/lib/libprotobuf-lite.dylib
-   - /usr/lib/libxml2.2.dylib
 -  Functions: 16438
--  Symbols:   25127
+-  Symbols:   24907
 -  CStrings:  8702
 +  Functions: 16439
-+  Symbols:   25130
++  Symbols:   24910
 +  CStrings:  8704
- 
 Symbols:
 + __GLOBAL__sub_I_SipRegistrationMetrics.cpp
 + __ZN22SipRegistrationMetrics39kReasonIPSecCompletionEnforcementFailedE

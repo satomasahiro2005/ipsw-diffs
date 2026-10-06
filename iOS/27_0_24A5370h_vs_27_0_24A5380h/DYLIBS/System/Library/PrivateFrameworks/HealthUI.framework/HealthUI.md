@@ -2,126 +2,56 @@
 
 > `/System/Library/PrivateFrameworks/HealthUI.framework/HealthUI`
 
+### Section Size Changes
+
+| Section | Old | New | Δ |
+| :-- | --: | --: | --: |
+| `__TEXT.__text` | `0x43c3f0` | `0x44b090` | **`+0xeca0`** |
+| `__AUTH_CONST.__const` | `0x84b8` | `0x8bf0` | **`+0x738`** |
+| `__TEXT.__swift5_capture` | `0x1150` | `0x14a4` | **`+0x354`** |
+| `__TEXT.__eh_frame` | `0x3058` | `0x3388` | **`+0x330`** |
+| `__TEXT.__unwind_info` | `0xf110` | `0xf368` | **`+0x258`** |
+| `__AUTH_CONST.__objc_const` | `0x66040` | `0x66280` | **`+0x240`** |
+| `__TEXT.__cstring` | `0x2312f` | `0x2330f` | **`+0x1e0`** |
+| `__TEXT.__objc_methlist` | `0x3b27c` | `0x3b3c4` | **`+0x148`** |
+| `__TEXT.__swift5_reflstr` | `0x3066` | `0x31a6` | **`+0x140`** |
+| `__DATA_CONST.__got` | `0x3768` | `0x3850` | **`+0xe8`** |
+| `__TEXT.__oslogstring` | `0x7385` | `0x7455` | **`+0xd0`** |
+| `__DATA.__data` | `0x8220` | `0x82d8` | **`+0xb8`** |
+| `__DATA_DIRTY.__objc_data` | `0x15e0` | `0x1680` | **`+0xa0`** |
+| `__DATA_CONST.__objc_selrefs` | `0x18a10` | `0x18aa0` | **`+0x90`** |
+| `__TEXT.__swift5_typeref` | `0x3488` | `0x3516` | **`+0x8e`** |
+| `__TEXT.__swift5_fieldmd` | `0x3078` | `0x3100` | **`+0x88`** |
+| `__AUTH.__objc_data` | `0x18368` | `0x183e0` | **`+0x78`** |
+| `__TEXT.__const` | `0x8d44` | `0x8db4` | **`+0x70`** |
+| `__AUTH_CONST.__auth_got` | `0x3078` | `0x30d8` | **`+0x60`** |
+| `__TEXT.__constg_swiftt` | `0x4e84` | `0x4ec8` | **`+0x44`** |
+| `__TEXT.__swift_as_cont` | `0x11c` | `0x158` | **`+0x3c`** |
+| `__TEXT.__gcc_except_tab` | `0x23a4` | `0x23d4` | **`+0x30`** |
+| `__AUTH.__data` | `0x2628` | `0x2640` | **`+0x18`** |
+| `__DATA_CONST.__const` | `0x7978` | `0x7990` | **`+0x18`** |
+| `__TEXT.__swift_as_ret` | `0x6c` | `0x84` | **`+0x18`** |
+| `__TEXT.__swift_as_entry` | `0x7c` | `0x90` | **`+0x14`** |
+| `__DATA.__bss` | `0x70c0` | `0x70b0` | **`-0x10`** |
+| `__DATA.__common` | `0x250` | `0x260` | **`+0x10`** |
+| `__DATA_DIRTY.__bss` | `0x48` | `0x58` | **`+0x10`** |
+| `__DATA.__objc_ivar` | `0x4054` | `0x405c` | **`+0x8`** |
+| `__DATA_CONST.__objc_classlist` | `0x21a8` | `0x21b0` | **`+0x8`** |
+| `__TEXT.__swift5_types` | `0x3f0` | `0x3f4` | **`+0x4`** |
+
+### Other Changes
+
 ```diff
 
--  __TEXT.__text: 0x43c3f0
--  __TEXT.__objc_methlist: 0x3b27c
--  __TEXT.__cstring: 0x2312f
--  __TEXT.__const: 0x8d44
--  __TEXT.__gcc_except_tab: 0x23a4
--  __TEXT.__oslogstring: 0x7385
-+  __TEXT.__text: 0x44b090
-+  __TEXT.__objc_methlist: 0x3b3c4
-+  __TEXT.__const: 0x8db4
-+  __TEXT.__gcc_except_tab: 0x23d4
-+  __TEXT.__cstring: 0x2330f
-+  __TEXT.__oslogstring: 0x7455
-   __TEXT.__ustring: 0x56
-   __TEXT.__dlopen_cstrs: 0x367
--  __TEXT.__swift5_typeref: 0x3488
--  __TEXT.__constg_swiftt: 0x4e84
--  __TEXT.__swift5_reflstr: 0x3066
--  __TEXT.__swift5_fieldmd: 0x3078
-+  __TEXT.__constg_swiftt: 0x4ec8
-+  __TEXT.__swift5_typeref: 0x3516
-   __TEXT.__swift5_builtin: 0x2f8
--  __TEXT.__swift5_mpenum: 0x38
-+  __TEXT.__swift5_reflstr: 0x31a6
-+  __TEXT.__swift5_fieldmd: 0x3100
-   __TEXT.__swift5_assocty: 0x7e8
-   __TEXT.__swift5_proto: 0x39c
--  __TEXT.__swift5_types: 0x3f0
--  __TEXT.__swift5_capture: 0x1150
-+  __TEXT.__swift5_types: 0x3f4
-+  __TEXT.__swift5_capture: 0x14a4
-   __TEXT.__swift5_protos: 0x6c
--  __TEXT.__swift_as_entry: 0x7c
--  __TEXT.__swift_as_ret: 0x6c
--  __TEXT.__swift_as_cont: 0x11c
--  __TEXT.__unwind_info: 0xf110
--  __TEXT.__eh_frame: 0x3058
-+  __TEXT.__swift_as_entry: 0x90
-+  __TEXT.__swift_as_ret: 0x84
-+  __TEXT.__swift_as_cont: 0x158
-+  __TEXT.__swift5_mpenum: 0x38
-+  __TEXT.__unwind_info: 0xf368
-+  __TEXT.__eh_frame: 0x3388
-   __TEXT.__objc_stubs: 0x0
-   __TEXT.__auth_stubs: 0x0
-   __TEXT.__objc_classname: 0x0
-   __TEXT.__objc_methname: 0x0
-   __TEXT.__objc_methtype: 0x0
--  __DATA_CONST.__const: 0x7978
--  __DATA_CONST.__objc_classlist: 0x21a8
-+  __DATA_CONST.__const: 0x7990
-+  __DATA_CONST.__objc_classlist: 0x21b0
-   __DATA_CONST.__objc_catlist: 0x2a8
-   __DATA_CONST.__objc_protolist: 0x6c8
-   __DATA_CONST.__objc_imageinfo: 0x8
--  __DATA_CONST.__objc_selrefs: 0x18a10
-+  __DATA_CONST.__objc_selrefs: 0x18aa0
-   __DATA_CONST.__objc_protorefs: 0x188
-   __DATA_CONST.__objc_superrefs: 0x1870
-   __DATA_CONST.__objc_arraydata: 0x2080
--  __DATA_CONST.__got: 0x3768
--  __AUTH_CONST.__const: 0x84b8
-+  __DATA_CONST.__got: 0x3850
-+  __AUTH_CONST.__const: 0x8bf0
-   __AUTH_CONST.__cfstring: 0x1e9c0
--  __AUTH_CONST.__objc_const: 0x66040
-+  __AUTH_CONST.__objc_const: 0x66280
-   __AUTH_CONST.__objc_intobj: 0x2a00
-   __AUTH_CONST.__objc_doubleobj: 0x330
-   __AUTH_CONST.__objc_arrayobj: 0xf60
-   __AUTH_CONST.__objc_dictobj: 0xc8
--  __AUTH_CONST.__auth_got: 0x3078
--  __AUTH.__objc_data: 0x18368
--  __AUTH.__data: 0x2628
--  __DATA.__objc_ivar: 0x4054
--  __DATA.__data: 0x8220
--  __DATA.__bss: 0x70c0
--  __DATA.__common: 0x250
--  __DATA_DIRTY.__objc_data: 0x15e0
--  __DATA_DIRTY.__bss: 0x48
-+  __AUTH_CONST.__auth_got: 0x30d8
-+  __AUTH.__objc_data: 0x183e0
-+  __AUTH.__data: 0x2640
-+  __DATA.__objc_ivar: 0x405c
-+  __DATA.__data: 0x82d8
-+  __DATA.__bss: 0x70b0
-+  __DATA.__common: 0x260
-+  __DATA_DIRTY.__objc_data: 0x1680
-+  __DATA_DIRTY.__bss: 0x58
-   - /System/Library/Frameworks/AVFoundation.framework/AVFoundation
-   - /System/Library/Frameworks/Accounts.framework/Accounts
-   - /System/Library/Frameworks/ClockKit.framework/ClockKit
+-7027.0.60.2.2
++7027.0.64.0.0
 
-   - /usr/lib/swift/libswift_Concurrency.dylib
-   - /usr/lib/swift/libswiftos.dylib
-   - /usr/lib/swift/libswiftsimd.dylib
 -  Functions: 26132
--  Symbols:   67025
--  CStrings:  9205
+-  Symbols:   35603
+-  CStrings:  5300
 +  Functions: 26351
-+  Symbols:   67238
-+  CStrings:  9219
- 
-Sections:
-~ __TEXT.__swift5_builtin : content changed
-~ __TEXT.__swift5_mpenum : content changed
-~ __TEXT.__swift5_assocty : content changed
-~ __TEXT.__swift5_proto : content changed
-~ __TEXT.__swift5_protos : content changed
-~ __DATA_CONST.__objc_catlist : content changed
-~ __DATA_CONST.__objc_protolist : content changed
-~ __DATA_CONST.__objc_protorefs : content changed
-~ __DATA_CONST.__objc_superrefs : content changed
-~ __DATA_CONST.__objc_arraydata : content changed
-~ __AUTH_CONST.__cfstring : content changed
-~ __AUTH_CONST.__objc_intobj : content changed
-~ __AUTH_CONST.__objc_doubleobj : content changed
-~ __AUTH_CONST.__objc_arrayobj : content changed
-~ __AUTH_CONST.__objc_dictobj : content changed
++  Symbols:   35635
++  CStrings:  5314
 Symbols:
 + +[HKSettingsAuthorizationFactory authorizationViewControllerWithSource:sourceAuthorizationController:healthStore:shareDescription:updateDescription:researchStudyUsageDescription:storedDataViewControllerProvider:backgroundAppRefreshStatusProvider:]
 + -[HKAuthorizationSettingsViewController _rebuildReadingTypeOrdering]
@@ -159,29 +89,6 @@ Symbols:
 + ___swift_closure_destructor.18Tm
 + ___swift_closure_destructor.67Tm
 + ___swift_closure_destructor.74Tm
-+ _objc_msgSend$_clampEnabledReadingSubtypeModesToParents
-+ _objc_msgSend$_frameForWeekView:atOriginY:
-+ _objc_msgSend$_readingWindowForType:exceedsLimitedWindowStartingAt:
-+ _objc_msgSend$_rebuildReadingTypeOrdering
-+ _objc_msgSend$_recomputeReadingOrderingAndSections
-+ _objc_msgSend$_setAuthorizationStatuses:completion:
-+ _objc_msgSend$_shouldHideDocumentRowInReadingSection
-+ _objc_msgSend$_stagedReadingModeForType:
-+ _objc_msgSend$_updateAuthorizationStatusWithTypes:completion:
-+ _objc_msgSend$authorizationControllerDidReloadDocumentAuthorizations:
-+ _objc_msgSend$commitAuthorizationStatusesForTypes:
-+ _objc_msgSend$commitAuthorizationStatusesWithCompletion:
-+ _objc_msgSend$enabledSubtypesForType:inSection:
-+ _objc_msgSend$objectTypeForDisplayType:
-+ _objc_msgSend$setAdoptedTableViewUsesAutomaticContentInsetAdjustment:
-+ _objc_msgSend$setAuthorizationStatuses:authorizationModes:modeInfos:forBundleIdentifier:options:completion:
-+ _objc_msgSend$setCellLayoutMarginsFollowReadableWidth:
-+ _objc_msgSend$setEnabled:forTypes:inSection:commit:
-+ _objc_msgSend$setResearchStudyUsageDescription:
-+ _objc_msgSend$setSectionHeaderTopPadding:
-+ _objc_msgSend$setShouldCommitOnFinish:
-+ _objc_msgSend$setTitleStyle:
-+ _objc_msgSend$shouldCommitOnFinish
 + _swift_release_x12
 + _symbolic SaySo12HKObjectTypeCG
 + _symbolic SaySo18NSLayoutConstraintCG
@@ -206,12 +113,6 @@ Symbols:
 - ___swift_closure_destructor.13Tm
 - _get_type_metadata 15Synchronization5MutexVy8HealthUI016Xoroshiro256StarF033_C2E9D1CDEE51921DD7A4542007EFF122LLVG noncopyable
 - _get_type_metadata 15Synchronization5MutexVyScTyyts5NeverOGSgG noncopyable
-- _objc_msgSend$_commitAuthorizationStatuses:authorizationModes:modeInfo:
-- _objc_msgSend$_setAuthorizationStatuses:
-- _objc_msgSend$_updateAuthorizationStatusWithTypes:
-- _objc_msgSend$commitAuthorizationStatusForType:
-- _objc_msgSend$isTranslucent
-- _objc_msgSend$setAuthorizationStatuses:authorizationModes:modeInfo:forBundleIdentifier:options:completion:
 - _swift_runtimeSupportsNoncopyableTypes
 - _symbolic _____Sg 9HealthKit27HKPreferredWorkoutZoneStoreV
 CStrings:
@@ -233,5 +134,4 @@ CStrings:
 + "queryEarliestSampleDate(for:healthStore:)"
 - "Failed to fetch cycling power zone config: %@"
 - "v32@?0@\"_HKAuthorizationModeInfo\"8@\"NSDictionary\"16^B24"
-
 ```
